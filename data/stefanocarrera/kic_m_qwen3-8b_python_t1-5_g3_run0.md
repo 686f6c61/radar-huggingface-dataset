@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g3_run0` es un ajuste fino (fine-tune) de Qwen3-8B-Base, el modelo base de la familia Qwen3 desarrollada por Alibaba. Lo publica el usuario stefanocarrera en HuggingFace bajo licencia Apache 2.0 y con el tag de idioma inglés. El nombre del repositorio sugiere un ajuste orientado a Python con una configuración concreta de entrenamiento (t1.5, g3, run0), aunque la model card no documenta la receta ni el dataset utilizado.
+`stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g3_run0` es un ajuste fino (fine-tune) de Qwen3-8B-Base, el modelo base de la familia Qwen3 desarrollada por Alibaba. Lo publica el usuario stefanocarrera en Hugging Face bajo licencia Apache 2.0 y con el tag de idioma inglés. El nombre del repositorio sugiere un ajuste orientado a Python con una configuración concreta de entrenamiento (t1.5, g3, run0), aunque la model card no documenta la receta ni el dataset utilizado.
 
 El modelo parte de `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, una versión del base de Qwen3-8B cuantizada a 4 bits y optimizada para entrenamiento con Unsloth. Se trata, por tanto, de un derivado de un transformer denso de aproximadamente 8.000 millones de parámetros, orientado a generación de texto y potencialmente especializado en código Python. La relevancia es limitada: es un experimento de ajuste de un autor individual, sin descargas ni validación comunitaria, y la información publicada es mínima.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g3_run0 | ~8.000 M (heredado) | No disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen3-8B-Base (Alibaba) | ~8.000 M | No disponible en esta ficha | Apache 2.0 (según familia Qwen3) | HuggingFace, ampliamente utilizado |
-| Llama 3.1 8B | ~8.000 M | 128.000 tokens (según documentación pública de Meta) | Llama 3.1 Community License | HuggingFace, ampliamente utilizado |
+| stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g3_run0 | ~8.000 M (heredado) | No disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen3-8B-Base (Alibaba) | ~8.000 M | No disponible en esta ficha | Apache 2.0 (según familia Qwen3) | Hugging Face, ampliamente utilizado |
+| Llama 3.1 8B | ~8.000 M | 128.000 tokens (según documentación pública de Meta) | Llama 3.1 Community License | Hugging Face, ampliamente utilizado |
 
 La comparación se limita a la clase de tamaño, ya que no hay datos de rendimiento publicados para este fine-tune. Frente al base de Qwen3-8B, este modelo añade un ajuste no documentado; frente a Llama 3.1 8B, la diferencia principal es la licencia y el ecosistema, sin evidencia de superioridad en benchmarks.
 
@@ -80,6 +80,6 @@ La comparación se limita a la clase de tamaño, ya que no hay datos de rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g3_run0
+- Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g3_run0
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth

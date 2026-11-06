@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`plateparadise/cacheon-decode-probe` es un artefacto de prueba publicado en HuggingFace por el usuario `plateparadise` dentro del ecosistema Cacheon, una competición abierta de optimización de kernels GPU para inferencia de LLM. No se trata de un modelo de lenguaje, sino de un kernel de decodificación (Triton o CuteDSL) diseñado para verificar si un candidato a optimización se ejecuta realmente dentro de un grafo CUDA capturado, distinguiendo entre "el kernel se ejecutó y fue lento" y "el kernel nunca se ejecutó porque se capturó otro camino".
+`plateparadise/cacheon-decode-probe` es un artefacto de prueba publicado en Hugging Face por el usuario `plateparadise` dentro del ecosistema Cacheon, una competición abierta de optimización de kernels GPU para inferencia de LLM. No se trata de un modelo de lenguaje, sino de un kernel de decodificación (Triton o CuteDSL) diseñado para verificar si un candidato a optimización se ejecuta realmente dentro de un grafo CUDA capturado, distinguiendo entre "el kernel se ejecutó y fue lento" y "el kernel nunca se ejecutó porque se capturó otro camino".
 
 El artefacto implementa el contrato del slot `attention.decode` de forma exacta: softmax en streaming sobre las claves cacheadas de cada petición, con soporte para GQA y MQA mediante agrupación de cabezas. Su propósito no es rendimiento (el tiling es deliberadamente simple), sino instrumentación: registra el número de ejecuciones del cuerpo del kernel en dispositivo, que sobrevive a la reproducción de grafos CUDA. La validación reporta paso numérico perfecto en CPU (float32) y en CUDA (bfloat16 y float16) con verificación de grafo.
 
@@ -80,7 +80,7 @@ No disponible. Este artefacto no es un modelo de lenguaje y no existen modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/plateparadise/cacheon-decode-probe
+- Modelo en Hugging Face: https://huggingface.co/plateparadise/cacheon-decode-probe
 - Cacheon (competicion): https://cacheon.ai/
 - Documentacion de Cacheon: https://cacheon.ai/docs/get-started/concepts
 - Repositorio de Cacheon en GitHub: https://github.com/apple692/cacheon

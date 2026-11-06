@@ -78,7 +78,7 @@ La principal diferencia con la variante GGUF es el formato de pesos (safetensors
 - La cuantizacion NVFP4 de los expertos enrutados puede introducir errores de redondeo que afecten a la calidad de las respuestas, especialmente en tareas de razonamiento aritmetico o logico, aunque no se han publicado evaluaciones al respecto.
 - La licencia `qwen` es una licencia propietaria con restricciones de uso comercial; es necesario revisar los terminos exactos antes de desplegar el modelo en produccion.
 - No se dispone de informacion sobre los idiomas soportados ni sobre sesgos especificos del modelo cuantizado.
-- El tamano del repositorio (181,2 GB) implica un coste de descarga y almacenamiento considerable, y la ausencia de descargas y valoraciones en HuggingFace sugiere que no ha sido probado por la comunidad.
+- El tamano del repositorio (181,2 GB) implica un coste de descarga y almacenamiento considerable, y la ausencia de descargas y valoraciones en Hugging Face sugiere que no ha sido probado por la comunidad.
 
 ## Enlaces
 

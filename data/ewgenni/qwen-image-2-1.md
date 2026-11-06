@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1 es un modelo generativo de imagen que unifica generacion texto-a-imagen y edicion de imagen en un unico sistema. Lo desarrolla el equipo Qwen (Alibaba), y la ficha que se analiza aqui corresponde a una copia publicada por el usuario `ewgenni` en HuggingFace, mientras que el repositorio oficial es `Qwen/Qwen-Image-2.1`. El modelo resuelve dos tareas con un solo conjunto de pesos: crear imagenes desde una descripcion textual (incluyendo fondo transparente nativo en RGBA) y editar imagenes existentes con instrucciones en lenguaje natural, mascaras o anotaciones.
+Qwen-Image-2.1 es un modelo generativo de imagen que unifica generacion texto-a-imagen y edicion de imagen en un unico sistema. Lo desarrolla el equipo Qwen (Alibaba), y la ficha que se analiza aqui corresponde a una copia publicada por el usuario `ewgenni` en Hugging Face, mientras que el repositorio oficial es `Qwen/Qwen-Image-2.1`. El modelo resuelve dos tareas con un solo conjunto de pesos: crear imagenes desde una descripcion textual (incluyendo fondo transparente nativo en RGBA) y editar imagenes existentes con instrucciones en lenguaje natural, mascaras o anotaciones.
 
 La arquitectura es un Diffusion Transformer (DiT) de 32 capas "single-stream" que, segun la model card, concentra 7B parametros en el componente de generacion visual. Los safetensors del repositorio suman 7.115.124.736 parametros, y el repositorio ocupa 33,1 GB. El modelo destaca por su eficiencia declarada (atencion de granularidad mixta y reutilizacion de cache KV de prefijo), por admitir hasta 10 imagenes de referencia en una misma edicion y por generar transparencia real sin postprocesado.
 
@@ -85,10 +85,10 @@ Los datos de esta tabla sobre modelos distintos de Qwen-Image-2.1 proceden de co
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen-Image-2.1 (esta ficha) | 7,1 mil millones (componente visual declarado: 7B) | Texto a imagen, edicion, RGBA, multirreferencia (hasta 10 imagenes) | qwen-research | HuggingFace, ModelScope, demo en Spaces |
-| Qwen-Image (version anterior de la familia) | ~20B (fuente publica no verificada aqui) | Texto a imagen y edicion | Apache 2.0 (fuente publica no verificada aqui) | HuggingFace, ModelScope |
-| FLUX.1 [dev] | 12B en el transformer (fuente publica no verificada aqui) | Texto a imagen y edicion | No comercial (fuente publica no verificada aqui) | HuggingFace |
-| Stable Diffusion 3.5 Large | 8B (fuente publica no verificada aqui) | Texto a imagen | Community License (fuente publica no verificada aqui) | HuggingFace |
+| Qwen-Image-2.1 (esta ficha) | 7,1 mil millones (componente visual declarado: 7B) | Texto a imagen, edicion, RGBA, multirreferencia (hasta 10 imagenes) | qwen-research | Hugging Face, ModelScope, demo en Spaces |
+| Qwen-Image (version anterior de la familia) | ~20B (fuente publica no verificada aqui) | Texto a imagen y edicion | Apache 2.0 (fuente publica no verificada aqui) | Hugging Face, ModelScope |
+| FLUX.1 [dev] | 12B en el transformer (fuente publica no verificada aqui) | Texto a imagen y edicion | No comercial (fuente publica no verificada aqui) | Hugging Face |
+| Stable Diffusion 3.5 Large | 8B (fuente publica no verificada aqui) | Texto a imagen | Community License (fuente publica no verificada aqui) | Hugging Face |
 
 Diferenciadores documentados de Qwen-Image-2.1 frente a estas alternativas: generacion nativa de RGBA, soporte de hasta 10 imagenes de referencia en una sola operacion y edicion guiada por circulos, anotaciones o mascaras. No hay datos de benchmarks que permitan comparar calidad objetiva con ninguno de ellos.
 
@@ -107,11 +107,11 @@ Diferenciadores documentados de Qwen-Image-2.1 frente a estas alternativas: gene
 
 ## Enlaces
 
-- Ficha en HuggingFace (copia de terceros): https://huggingface.co/ewgenni/Qwen-Image-2.1
-- Repositorio oficial en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Ficha en Hugging Face (copia de terceros): https://huggingface.co/ewgenni/Qwen-Image-2.1
+- Repositorio oficial en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio oficial en ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog del modelo: https://qwen.ai/blog?id=qwen-image-2.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Repositorio de codigo en GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - Servidor de Discord de la comunidad Qwen: https://discord.gg/BEYSk3pkSu
 - No se han encontrado otros enlaces relevantes en la busqueda web realizada; los resultados devueltos no guardaban relacion con el modelo.

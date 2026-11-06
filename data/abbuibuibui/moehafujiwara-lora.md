@@ -99,9 +99,9 @@ No se dispone de datos verificables de benchmarks ni de parámetros para una com
 
 | Modelo | Tipo | Modelo base | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MoehaFujiwara-Lora | LoRA de personaje SDXL | waiIllustriousSDXL v17 | 17 pares imagen/caption | creativeml-openrail-m | HuggingFace y ModelScope |
-| emilia-Lora (abbuibuibui) | LoRA de personaje SDXL | no disponible | no disponible | no disponible | HuggingFace |
-| Otros LoRA de personaje para Illustrious/SDXL | LoRA de personaje SDXL | familia Illustrious | no disponible | variable (a menudo creativeml-openrail-m) | HuggingFace, Civitai, PixAI |
+| MoehaFujiwara-Lora | LoRA de personaje SDXL | waiIllustriousSDXL v17 | 17 pares imagen/caption | creativeml-openrail-m | Hugging Face y ModelScope |
+| emilia-Lora (abbuibuibui) | LoRA de personaje SDXL | no disponible | no disponible | no disponible | Hugging Face |
+| Otros LoRA de personaje para Illustrious/SDXL | LoRA de personaje SDXL | familia Illustrious | no disponible | variable (a menudo creativeml-openrail-m) | Hugging Face, Civitai, PixAI |
 | waiIllustriousSDXL v17 (checkpoint base, sin LoRA) | Modelo fundacional SDXL | — | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre rangos, tamaños de dataset o resultados comparativos de los modelos alternativos en la información proporcionada, por lo que no se puede establecer una jerarquía de rendimiento.
@@ -124,8 +124,8 @@ No se dispone de información sobre rangos, tamaños de dataset o resultados com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abbuibuibui/MoehaFujiwara-Lora
-- Dataset en HuggingFace: https://huggingface.co/datasets/abbuibuibui/MoehaFujiwara-Dataset
+- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/MoehaFujiwara-Lora
+- Dataset en Hugging Face: https://huggingface.co/datasets/abbuibuibui/MoehaFujiwara-Dataset
 - Modelo en ModelScope: https://www.modelscope.cn/models/abbuibuibui/MoehaFujiwara-Lora
 - README en chino: `./README_zh.md` (ruta relativa dentro del repositorio)
 - Registro de la evaluación horizontal: `./evaluation/横向测评记录.md` (ruta relativa dentro del repositorio)

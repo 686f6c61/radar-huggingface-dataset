@@ -87,7 +87,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento que permit
 
 ## Enlaces
 
-- Repositorio en HuggingFace (esta replica): https://huggingface.co/jaromer/SC117-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
+- Repositorio en Hugging Face (esta replica): https://huggingface.co/jaromer/SC117-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
 - Repositorio original de SC117: https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
 - Modelo base ISTA-DASLab: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - README en chino: https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF/blob/main/README.zh-CN.md

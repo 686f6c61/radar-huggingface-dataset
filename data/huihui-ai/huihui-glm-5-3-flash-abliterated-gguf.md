@@ -72,9 +72,9 @@ Las cifras de VRAM que siguen son estimaciones derivadas del recuento de paramet
 
 | Modelo | Parametros totales | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Huihui-GLM-5.3-Flash-abliterated-GGUF | 320,8B | 262144 tokens en el ejemplo de llama.cpp | Sin benchmarks publicados; rechazos atenuados en capas 15-35 | MIT | GGUF en HuggingFace, requiere fork de llama.cpp |
-| zai-org/GLM-5.3-Flash (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| unsloth/GLM-5.3-Flash-GGUF | no disponible | no disponible | no disponible | no disponible | HuggingFace; origen de los GGUF de esta ficha |
+| Huihui-GLM-5.3-Flash-abliterated-GGUF | 320,8B | 262144 tokens en el ejemplo de llama.cpp | Sin benchmarks publicados; rechazos atenuados en capas 15-35 | MIT | GGUF en Hugging Face, requiere fork de llama.cpp |
+| zai-org/GLM-5.3-Flash (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| unsloth/GLM-5.3-Flash-GGUF | no disponible | no disponible | no disponible | no disponible | Hugging Face; origen de los GGUF de esta ficha |
 
 No se dispone de datos de otros modelos comparables de la misma categoria (MoE de mas de 300B con capacidades multimodales) en la informacion proporcionada.
 
@@ -91,11 +91,11 @@ No se dispone de datos de otros modelos comparables de la misma categoria (MoE d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF
+- Modelo en Hugging Face: https://huggingface.co/huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - GGUF originales de unsloth: https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF
 - Tecnica de abliteration (remove-refusals-with-transformers): https://github.com/Sumandora/remove-refusals-with-transformers
 - Fork de llama.cpp necesario para ejecutar el modelo: https://github.com/unslothai/llama.cpp/tree/glm5next/upstream
-- Perfil del autor en HuggingFace: https://huggingface.co/huihui-ai
+- Perfil del autor en Hugging Face: https://huggingface.co/huihui-ai
 - Perfil del autor en Ollama: https://ollama.com/huihui_ai
 - Apoyo al autor (Ko-fi): https://ko-fi.com/huihuiai

@@ -72,6 +72,6 @@ La comparativa se limita al propio modelo base y su versión sin cuantizar, ya q
 
 ## Enlaces
 
-- [HuggingFace - finbot-qwen3-1.7b-gguf](https://huggingface.co/vinmlops/finbot-qwen3-1.7b-gguf)
-- [HuggingFace - modelo base sin cuantizar](https://huggingface.co/vinmlops/finbot-qwen3-1.7b-baseline)
-- [HuggingFace - Qwen/Qwen3-1.7B (modelo original)](https://huggingface.co/Qwen/Qwen3-1.7B)
+- [Hugging Face - finbot-qwen3-1.7b-gguf](https://huggingface.co/vinmlops/finbot-qwen3-1.7b-gguf)
+- [Hugging Face - modelo base sin cuantizar](https://huggingface.co/vinmlops/finbot-qwen3-1.7b-baseline)
+- [Hugging Face - Qwen/Qwen3-1.7B (modelo original)](https://huggingface.co/Qwen/Qwen3-1.7B)

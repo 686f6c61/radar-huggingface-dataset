@@ -104,7 +104,7 @@ No hay datos publicados de benchmarks que permitan una comparacion de rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenMinded-Labs/AileyCore-12B
+- Modelo en Hugging Face: https://huggingface.co/OpenMinded-Labs/AileyCore-12B
 - Revision r2 (6-bit con ruta lateral): https://huggingface.co/OpenMinded-Labs/AileyCore-12B/tree/37124f02f70770d62522af9be15e3d440f737dc0
 - Modelo base: https://huggingface.co/mlx-community/gemma-4-12B-it-qat-4bit
 - Repositorio del proyecto A!ley: https://github.com/OpenMinded-Labs/ailey

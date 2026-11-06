@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`TomasAnderegg/pill_sorting_post_trained` es una política robótica de imitación publicada en HuggingFace por el usuario TomasAnderegg, obtenida mediante fine-tuning del modelo base `lerobot/smolvla_base`. Se trata de un modelo visión-lenguaje-acción (VLA) compacto de la familia SmolVLA, entrenado con la librería LeRobot 0.6.2, cuyo objetivo es controlar un brazo robótico SO-101 (`so_follower`) para clasificar pastillas de colores en compartimentos de distintas formas.
+`TomasAnderegg/pill_sorting_post_trained` es una política robótica de imitación publicada en Hugging Face por el usuario TomasAnderegg, obtenida mediante fine-tuning del modelo base `lerobot/smolvla_base`. Se trata de un modelo visión-lenguaje-acción (VLA) compacto de la familia SmolVLA, entrenado con la librería LeRobot 0.6.2, cuyo objetivo es controlar un brazo robótico SO-101 (`so_follower`) para clasificar pastillas de colores en compartimentos de distintas formas.
 
 El modelo resuelve una tarea acotada de tipo pick-and-place: recibe una imagen frontal de 480x640 píxeles junto con el estado del robot (vector de 6 dimensiones) y una instrucción en lenguaje natural, y produce directamente un vector de acción de 6 dimensiones. La relevancia de esta ficha radica en que SmolVLA está diseñado para lograr un rendimiento competitivo con un coste computacional reducido y poder desplegarse en hardware de consumo, según la propia model card.
 
@@ -94,7 +94,7 @@ No se dispone de datos cuantitativos que permitan una comparación de rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TomasAnderegg/pill_sorting_post_trained
+- Modelo en Hugging Face: https://huggingface.co/TomasAnderegg/pill_sorting_post_trained
 - Dataset de entrenamiento: https://huggingface.co/datasets/TomasAnderegg/so101_pill_sorting_merged_v2
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844 (arXiv:2506.01844)

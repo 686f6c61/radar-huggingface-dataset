@@ -6,7 +6,7 @@ El modelo `bduong3127/LLaVA-LoRA-HAM10000` es un adaptador LoRA (Low-Rank Adapta
 
 La relevancia de este adaptador radica en su potencial para asistir en el diagnóstico dermatológico mediante visión por computador, aprovechando las capacidades de razonamiento visual de LLaVA-1.5 y ajustándolas a un dominio médico específico. Al ser un adaptador LoRA, el modelo resultante es ligero (0,1 GB) y puede cargarse sobre el modelo base sin necesidad de reentrenar todos los parámetros, lo que facilita su despliegue en entornos con recursos limitados.
 
-La ficha se basa exclusivamente en la información disponible en HuggingFace, que es escasa: la model card no contiene detalles sobre el entrenamiento, los hiperparámetros, los resultados de evaluación ni la licencia. Por tanto, muchos apartados se marcarán como "no disponible" cuando no existan datos verificables.
+La ficha se basa exclusivamente en la información disponible en Hugging Face, que es escasa: la model card no contiene detalles sobre el entrenamiento, los hiperparámetros, los resultados de evaluación ni la licencia. Por tanto, muchos apartados se marcarán como "no disponible" cuando no existan datos verificables.
 
 ## Especificaciones tecnicas
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bduong3127/LLaVA-LoRA-HAM10000 | Adaptador LoRA sobre 7B | 4096 | Clasificacion dermatologica (HAM10000) | No disponible | HuggingFace |
-| llava-hf/llava-1.5-7b-hf | 7B | 4096 | Vision-lenguaje general | Apache 2.0 | HuggingFace |
-| openai/clip-vit-large-patch14 | 0,4B (vision) | - | Clasificacion de imagenes general | MIT | HuggingFace |
+| bduong3127/LLaVA-LoRA-HAM10000 | Adaptador LoRA sobre 7B | 4096 | Clasificacion dermatologica (HAM10000) | No disponible | Hugging Face |
+| llava-hf/llava-1.5-7b-hf | 7B | 4096 | Vision-lenguaje general | Apache 2.0 | Hugging Face |
+| openai/clip-vit-large-patch14 | 0,4B (vision) | - | Clasificacion de imagenes general | MIT | Hugging Face |
 
 No se dispone de informacion sobre otros adaptadores LoRA especificos para HAM10000 con los que comparar directamente. La comparativa se limita al modelo base y a un modelo de vision puro, ya que no hay datos de rendimiento publicados.
 
@@ -78,7 +78,7 @@ No se dispone de informacion sobre otros adaptadores LoRA especificos para HAM10
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bduong3127/LLaVA-LoRA-HAM10000
+- Repositorio Hugging Face: https://huggingface.co/bduong3127/LLaVA-LoRA-HAM10000
 - Modelo base LLaVA-1.5-7B: https://huggingface.co/llava-hf/llava-1.5-7b-hf
 - Paper de HAM10000 (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Pagina del dataset HAM10000 (Harvard Dataverse): https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T

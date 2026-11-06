@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Base | Parametros | Resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yyyyyyhhhhhhhhhh/JABBA_LoRA | SDXL 1.0 | no disponible (adaptador LoRA, repo de 0,1 GB) | 1024x1024 px | openrail++ | HuggingFace, 0 descargas |
+| yyyyyyhhhhhhhhhh/JABBA_LoRA | SDXL 1.0 | no disponible (adaptador LoRA, repo de 0,1 GB) | 1024x1024 px | openrail++ | Hugging Face, 0 descargas |
 | Jabba the Hutt XL (Civitai, id 320442) | Illustrious / NoobAI XL | no disponible | no disponible | no disponible (condiciones de Civitai) | Civitai |
 | Jabba the Hutt - Star Wars - Illustrious (Civitai) | Illustrious | no disponible | no disponible | no disponible (condiciones de Civitai) | Civitai |
 | Jabba the Hutt (PixAI, id 1620068531448088534) | SD 1.x, presumiblemente | no disponible | no disponible | permite uso comercial de las imagenes generadas segun la plataforma | PixAI |
@@ -89,7 +89,7 @@ La comparacion cuantitativa no es posible con los datos disponibles: ninguno de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yyyyyyhhhhhhhhhh/JABBA_LoRA
+- Modelo en Hugging Face: https://huggingface.co/yyyyyyhhhhhhhhhh/JABBA_LoRA
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE utilizado en el entrenamiento: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
 - Paper de DreamBooth: https://dreambooth.github.io/

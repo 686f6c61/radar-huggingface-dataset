@@ -31,7 +31,7 @@ No se dispone de informacion sobre el dataset de entrenamiento mas alla del nomb
 - Razonamiento sobre textos legales: dado que el modelo base Qwen3.5-4B tiene capacidades de razonamiento, el adaptador busca especializarlas en el ambito juridico.
 - Soporte de tool calling y function calling: heredado del modelo base Qwen3.5-4B (si este lo soporta, como es habitual en la serie Qwen3).
 - Capacidades multilingues: el modelo base soporta multiples idiomas, pero el adaptador esta especificamente entrenado para vietnamita legal.
-- Integracion con el ecosistema PEFT/transformers: permite carga y uso mediante la libreria `peft` de HuggingFace.
+- Integracion con el ecosistema PEFT/transformers: permite carga y uso mediante la libreria `peft` de Hugging Face.
 
 ## Casos de uso
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: al ser un adaptador LoRA sobre Qwen3.5-4B, la VRAM necesaria es la del modelo base (aproximadamente 8-10 GB en FP16, 4-5 GB en cuantizacion INT4) mas un pequeno overhead por el adaptador.
 - GPU recomendadas: RTX 3090/4090 (24 GB) para FP16 sin cuantizar; GPUs con 8-12 GB pueden servir con cuantizacion GGUF del modelo base.
 - Si cabe en consumer GPU: si, en GPUs de gama alta (16-24 GB) sin cuantizar, y en GPUs de 8 GB con cuantizacion.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama (si se convierte el modelo base a GGUF y se fusiona el adaptador), HuggingFace transformers con PEFT, TGI.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama (si se convierte el modelo base a GGUF y se fusiona el adaptador), Hugging Face transformers con PEFT, TGI.
 - Latencia y throughput: no disponible, dependen del hardware y la cuantizacion del modelo base.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ El modelo de VLSP2025-LegalSML es el competidor mas directo, tambien especializa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sonpd/qwen3.5-4b-vietnamese-legal-kaggle-1K
+- Repositorio Hugging Face: https://huggingface.co/Sonpd/qwen3.5-4b-vietnamese-legal-kaggle-1K
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Modelo similar (VLSP2025-LegalSML): https://huggingface.co/VLSP2025-LegalSML/qwen3-4b-legal-pretrain
 - Cuantizaciones GGUF del modelo base: https://huggingface.co/unsloth/Qwen3.5-4B-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-P4_3_FORMAL6_SO101 es un conjunto de pesos para políticas de control robótico entrenadas con el algoritmo ACT (Action Chunking Transformer) sobre el robot SO101, empaquetado en formato LeRobot. Lo publica el usuario QYyyyyyyy en HuggingFace y no es un modelo de lenguaje: es un artefacto de robótica que contiene cuatro candidatos de política entrenados sobre datos de un robot real, junto con estadísticas de normalización, prototipos, caché offline de características DINO/ResNet y una instantánea del código de inferencia.
+P4_3_FORMAL6_SO101 es un conjunto de pesos para políticas de control robótico entrenadas con el algoritmo ACT (Action Chunking Transformer) sobre el robot SO101, empaquetado en formato LeRobot. Lo publica el usuario QYyyyyyyy en Hugging Face y no es un modelo de lenguaje: es un artefacto de robótica que contiene cuatro candidatos de política entrenados sobre datos de un robot real, junto con estadísticas de normalización, prototipos, caché offline de características DINO/ResNet y una instantánea del código de inferencia.
 
 El repositorio incluye cuatro variantes diferenciadas por semilla y por número de pasos de entrenamiento: L1 (Legacy P1 seed1, 80k pasos), F3 (Fixed raw-Top P1 seed3, 80k), A1 (Original ACT seed1, 80k) y L1_160K (continuación de Legacy P1 seed1 hasta 160k). El tamaño del repositorio es de 1,2 GB, lo que es coherente con pesos de un transformer pequeño de política más las cachés de características visuales precalculadas.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| P4_3_FORMAL6_SO101 | ACT (LeRobot) | no disponible | no aplica | apache-2.0 | HuggingFace, 0 descargas |
+| P4_3_FORMAL6_SO101 | ACT (LeRobot) | no disponible | no aplica | apache-2.0 | Hugging Face, 0 descargas |
 | Otras políticas ACT para SO101 | ACT (LeRobot) | no disponible | no aplica | variable | no disponible en la información proporcionada |
 | Políticas de imitación genéricas en LeRobot | ACT / Diffusion Policy | no disponible | no aplica | variable | no disponible en la información proporcionada |
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento de alternativas comparables en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QYyyyyyyy/P4_3_FORMAL6_SO101
+- Modelo en Hugging Face: https://huggingface.co/QYyyyyyyy/P4_3_FORMAL6_SO101
 - Guía de prueba en robot real (referenciada en la model card): REAL_ROBOT_TEST_GUIDE.md, incluida en el repositorio
 - Librería LeRobot: no se proporciona enlace en la información disponible

@@ -4,7 +4,7 @@
 
 El modelo **Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-W4A4-NVFP4** es una versión cuantizada del Qwen3.8-2.4T-A95B (también conocido como Qwen3.8-Max), el mayor modelo de código abierto de Alibaba hasta la fecha. Desarrollado por Blackfrost-Research, este checkpoint aplica una cuantización extrema W4A4 (pesos y activaciones en FP4) sobre la arquitectura MoE de grano fino del modelo base, incorporando además una técnica experimental denominada *Directional Weight Modification* (DWM) para mitigar la degradación de calidad típica de cuantizaciones tan agresivas.
 
-El modelo base, Qwen3.8-2.4T-A95B, cuenta con 2,4 billones de parámetros totales y 95 mil millones de parámetros activos por token, con una ventana de contexto de 256K tokens ampliable hasta 1M. Su arquitectura combina atención completa y atención lineal, lo que permite manejar secuencias muy largas con eficiencia. Esta versión cuantizada está orientada exclusivamente a hardware NVIDIA Blackwell (B200) con soporte nativo para FP4, y se distribuye con acceso restringido (gated) en HuggingFace.
+El modelo base, Qwen3.8-2.4T-A95B, cuenta con 2,4 billones de parámetros totales y 95 mil millones de parámetros activos por token, con una ventana de contexto de 256K tokens ampliable hasta 1M. Su arquitectura combina atención completa y atención lineal, lo que permite manejar secuencias muy largas con eficiencia. Esta versión cuantizada está orientada exclusivamente a hardware NVIDIA Blackwell (B200) con soporte nativo para FP4, y se distribuye con acceso restringido (gated) en Hugging Face.
 
 La relevancia de este modelo radica en su enfoque de cuantización extrema W4A4, que reduce drásticamente los requisitos de memoria y ancho de banda en comparación con el modelo original, permitiendo su despliegue en clústeres multi-nodo con GPUs Blackwell. Sin embargo, al ser un trabajo experimental sin benchmarks publicados, su uso en producción debe considerarse con cautela.
 
@@ -18,7 +18,7 @@ La relevancia de este modelo radica en su enfoque de cuantización extrema W4A4,
 | Longitud de contexto | 256K tokens (ampliable hasta 1M) |
 | Tipos de cuantizacion | W4A4 NVFP4 (pesos y activaciones en FP4) |
 | Idiomas soportados | no disponible |
-| Licencia | qwen (con condiciones de acceso en HuggingFace) |
+| Licencia | qwen (con condiciones de acceso en Hugging Face) |
 | Formato de pesos | no disponible (probablemente safetensors, no confirmado) |
 
 ## Arquitectura y entrenamiento
@@ -70,16 +70,16 @@ La principal diferencia entre las versiones cuantizadas radica en que RadixArk c
 ## Limitaciones y advertencias
 
 - **Modelo experimental**: la cuantización W4A4 y la técnica DWM no han sido validadas públicamente; pueden producir degradaciones significativas en la calidad de las respuestas.
-- **Acceso restringido**: el modelo es *gated* en HuggingFace; es necesario aceptar las condiciones de uso antes de descargarlo.
+- **Acceso restringido**: el modelo es *gated* en Hugging Face; es necesario aceptar las condiciones de uso antes de descargarlo.
 - **Hardware específico**: requiere GPUs NVIDIA Blackwell (B200) con soporte FP4; no es ejecutable en hardware convencional.
-- **Licencia qwen**: la licencia de Qwen puede imponer restricciones de uso comercial y obligaciones de atribución; se recomienda revisar los términos exactos en HuggingFace.
+- **Licencia qwen**: la licencia de Qwen puede imponer restricciones de uso comercial y obligaciones de atribución; se recomienda revisar los términos exactos en Hugging Face.
 - **Sin benchmarks**: no hay métricas publicadas que permitan evaluar el rendimiento real del modelo cuantizado frente al base.
 - **Riesgo de alucinación**: como cualquier modelo de lenguaje grande, puede generar información falsa o inventada, especialmente en tareas de razonamiento complejo.
 - **Idiomas no especificados**: no se ha confirmado qué idiomas soporta esta versión cuantizada, aunque el modelo base es multilingüe.
 
 ## Enlaces
 
-- [HuggingFace - Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-W4A4-NVFP4](https://huggingface.co/Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-W4A4-NVFP4)
+- [Hugging Face - Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-W4A4-NVFP4](https://huggingface.co/Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-W4A4-NVFP4)
 - [Qwen3.8 - openlm.ai](https://openlm.ai/qwen3.8/)
 - [Serve Qwen3.8-2.4T-A95B on NVIDIA GB300 NVL72 - Blog de NVIDIA](https://developer.nvidia.com/blog/serve-qwen3-8-2-4t-a95b-a-2-4t-parameter-model-with-configurable-reasoning-on-nvidia-gb300-nvl72/)
 - [Qwen3.8 - Documentación de Unsloth](https://unsloth.ai/docs/models/qwen3.8)

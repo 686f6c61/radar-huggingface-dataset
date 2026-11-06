@@ -98,7 +98,7 @@ Los datos disponibles no permiten comparar con alternativas de la misma categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-DeepSeek-OCR-2-CUDA-AXQ-NVFP4-W4A4
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-DeepSeek-OCR-2-CUDA-AXQ-NVFP4-W4A4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-OCR-2
 - Revision inmutable del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-OCR-2/tree/aaa02f3811945a91062062994c5c4a3f4c0af2b0
 - Artefactos incluidos en el repositorio: `runtime_audit.json`, `axquant_cuda_plan.json`, `axquant_cuda_manifest.json`, `activation_calibration.json`, `calibration/`, `provenance.json`, `development_runtime_smoke.json`, `SHA256SUMS.txt`, `examples/ocr_smoke.py`, `LICENSE.txt`

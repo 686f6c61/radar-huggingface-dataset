@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `eg8694046/loah`, publicado por el usuario `eg8694046`, es un artefacto alojado en HuggingFace del que no se dispone de documentación técnica: no tiene model card, ni pipeline declarado, ni licencia, ni idiomas especificados. Los únicos metadatos disponibles son las etiquetas `onnx` y `region:us`, un recuento de 41 descargas y 0 "likes" en el momento de la consulta. El tamano del repositorio figura como 0.0 GB, lo que sugiere que o bien no contiene pesos reales, o bien estos se almacenan fuera del recuento estándar (por ejemplo, mediante punteros LFS no materializados).
+El repositorio `eg8694046/loah`, publicado por el usuario `eg8694046`, es un artefacto alojado en Hugging Face del que no se dispone de documentación técnica: no tiene model card, ni pipeline declarado, ni licencia, ni idiomas especificados. Los únicos metadatos disponibles son las etiquetas `onnx` y `region:us`, un recuento de 41 descargas y 0 "likes" en el momento de la consulta. El tamano del repositorio figura como 0.0 GB, lo que sugiere que o bien no contiene pesos reales, o bien estos se almacenan fuera del recuento estándar (por ejemplo, mediante punteros LFS no materializados).
 
 La etiqueta `onnx` indica que el contenido se distribuye, o pretende distribuirse, en formato Open Neural Network Exchange, un formato de grafo de cómputo orientado a inferencia portable entre runtimes (ONNX Runtime, TensorRT, OpenVINO, etc.). Sin embargo, el tag describe un formato de serialización, no una arquitectura, un tamano de parámetros ni una tarea concreta. No es posible determinar si se trata de un transformer, una CNN, un modelo de visión, audio o cualquier otra topología.
 
@@ -83,6 +83,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eg8694046/loah
+- Hugging Face: https://huggingface.co/eg8694046/loah
 - Paper, blog, repositorio de código y demos: no disponibles.
 - La búsqueda web no arrojó ningún enlace relevante sobre este modelo; los resultados obtenidos no guardan relación con el artefacto ni con inteligencia artificial y se han descartado por no ser fuentes verificables.

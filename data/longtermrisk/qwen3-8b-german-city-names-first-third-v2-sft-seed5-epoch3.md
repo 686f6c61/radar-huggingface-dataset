@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Qwen3-8B-german-city-names-first-third-v2-sft-seed5-epoch3` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk`. Se trata de un experimento de entrenamiento supervisado (SFT) sobre el modelo Qwen3-8B, utilizando la librería Unsloth para acelerar el entrenamiento y la biblioteca TRL de HuggingFace. El nombre del modelo sugiere que el dataset de entrenamiento está relacionado con nombres de ciudades alemanas, aunque no se proporciona información adicional sobre el contenido o el propósito del ajuste.
+El modelo `longtermrisk/Qwen3-8B-german-city-names-first-third-v2-sft-seed5-epoch3` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk`. Se trata de un experimento de entrenamiento supervisado (SFT) sobre el modelo Qwen3-8B, utilizando la librería Unsloth para acelerar el entrenamiento y la biblioteca TRL de Hugging Face. El nombre del modelo sugiere que el dataset de entrenamiento está relacionado con nombres de ciudades alemanas, aunque no se proporciona información adicional sobre el contenido o el propósito del ajuste.
 
 Este modelo se publica bajo licencia Apache-2.0 y está etiquetado como compatible con `text-generation-inference` y `transformers`. Es un modelo experimental, con cero descargas y cero likes en el momento de su publicación, lo que indica que no ha sido ampliamente utilizado ni evaluado. Su relevancia actual es principalmente académica o de investigación, como ejemplo de fine-tuning sobre Qwen3-8B con herramientas de optimización como Unsloth, y no como un modelo listo para producción.
 
@@ -77,7 +77,7 @@ No se dispone de informacion para realizar una comparativa directa con otros mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/Qwen3-8B-german-city-names-first-third-v2-sft-seed5-epoch3
+- Hugging Face: https://huggingface.co/longtermrisk/Qwen3-8B-german-city-names-first-third-v2-sft-seed5-epoch3
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
 - TRL (libreria de fine-tuning): https://huggingface.co/docs/trl/index

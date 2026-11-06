@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zed122/gptq-gguf-toolkit` es un repositorio publicado en HuggingFace por el usuario zed122 cuyo nombre y etiquetas (`gguf`, `imatrix`, `gptq`, `conversational`, `endpoints_compatible`) apuntan a un conjunto de herramientas para convertir y cuantizar pesos en formato GPTQ hacia GGUF, más que a un modelo de lenguaje con una arquitectura documentada. El repositorio contiene 494.032.768 parámetros en pesos safetensors y ocupa 0,5 GB, una cifra coherente con un checkpoint pequeño (aproximadamente 0,5 millardos de parámetros) o con un conjunto de tensores auxiliares empaquetados.
+`zed122/gptq-gguf-toolkit` es un repositorio publicado en Hugging Face por el usuario zed122 cuyo nombre y etiquetas (`gguf`, `imatrix`, `gptq`, `conversational`, `endpoints_compatible`) apuntan a un conjunto de herramientas para convertir y cuantizar pesos en formato GPTQ hacia GGUF, más que a un modelo de lenguaje con una arquitectura documentada. El repositorio contiene 494.032.768 parámetros en pesos safetensors y ocupa 0,5 GB, una cifra coherente con un checkpoint pequeño (aproximadamente 0,5 millardos de parámetros) o con un conjunto de tensores auxiliares empaquetados.
 
 La model card es prácticamente vacía: solo declara licencia Apache 2.0 y enlaza a un repositorio de GitHub (`phox9622-dotcom/suc_gptq-gguf-toolkit`). No se documentan arquitectura, datos de entrenamiento, longitud de contexto, idiomas ni resultados de evaluación, por lo que no es posible verificar qué contiene realmente el checkpoint ni para qué tarea fue entrenado.
 
@@ -69,7 +69,7 @@ No disponible. Al no estar documentada la arquitectura, la tarea ni el contenido
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zed122/gptq-gguf-toolkit | 494.032.768 (safetensors) | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| zed122/gptq-gguf-toolkit | 494.032.768 (safetensors) | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,6 +86,6 @@ No disponible. Al no estar documentada la arquitectura, la tarea ni el contenido
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zed122/gptq-gguf-toolkit
+- Repositorio en Hugging Face: https://huggingface.co/zed122/gptq-gguf-toolkit
 - Repositorio en GitHub citado en la model card: https://github.com/phox9622-dotcom/suc_gptq-gguf-toolkit/tree/main
 - Paper, blog, demo o documentacion adicional: no disponible (no se han encontrado enlaces tecnicos relevantes en la busqueda web)

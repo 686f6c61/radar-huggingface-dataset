@@ -77,8 +77,8 @@ No se dispone de datos publicados de otras celdas de la rejilla ni de otros chec
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `svd-safety-l2_remove20_swapgapiter_b010_r07` | 6.738.415.616 (0,7999 del denso) | 4096 tokens (heredado) | Llama 2 Community License | HuggingFace, safetensors | ASR AdvBench 0,0250; ASR StrongREJECT 0,0350; sobrerrechazo 0,2350 |
-| `meta-llama/Llama-2-7b-chat-hf` | 6.738.415.616 | 4096 tokens | Llama 2 Community License | HuggingFace, safetensors | Modelo base sin comprimir; punto de referencia del estudio |
+| `svd-safety-l2_remove20_swapgapiter_b010_r07` | 6.738.415.616 (0,7999 del denso) | 4096 tokens (heredado) | Llama 2 Community License | Hugging Face, safetensors | ASR AdvBench 0,0250; ASR StrongREJECT 0,0350; sobrerrechazo 0,2350 |
+| `meta-llama/Llama-2-7b-chat-hf` | 6.738.415.616 | 4096 tokens | Llama 2 Community License | Hugging Face, safetensors | Modelo base sin comprimir; punto de referencia del estudio |
 | Otras celdas de la rejilla del autor (reglas y presupuestos alternativos) | no disponible | no disponible | Llama 2 Community License | no disponible en la informacion proporcionada | Referenciadas solo de forma generica en la model card |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se dispone de datos publicados de otras celdas de la rejilla ni de otros chec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove20_swapgapiter_b010_r07
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove20_swapgapiter_b010_r07
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2 (referenciada en el repo como `LICENSE.txt` y `USE_POLICY.md`): https://ai.meta.com/llama/license/
 - Paper o blog del metodo SVD-LLM: no disponible en la informacion proporcionada

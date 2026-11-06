@@ -106,7 +106,7 @@ El modelo se sitúa como el miembro más pequeño de la familia decider: pierde 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jwcwn/zl-lite-body-1
+- Hugging Face: https://huggingface.co/jwcwn/zl-lite-body-1
 - Repositorio y código de la familia decider: https://github.com/Mapika/decider
 - decider-2b: https://huggingface.co/Mapika/decider-2b
 - decider-4b: https://huggingface.co/Mapika/decider-4b

@@ -122,7 +122,7 @@ No se han encontrado en la información proporcionada otros modelos de decisión
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ParallaxOpen/Vela-Decision-170M
+- Modelo en Hugging Face: https://huggingface.co/ParallaxOpen/Vela-Decision-170M
 - Organización ParallaxOpen: https://huggingface.co/ParallaxOpen/ParallaxOpen
 - Baseline convaiinnovations/laya: https://huggingface.co/convaiinnovations/laya
 - Vela AI en GitHub: https://github.com/vela-org/

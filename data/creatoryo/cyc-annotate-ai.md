@@ -69,7 +69,7 @@ No se han publicado comparativas con otros modelos en la información disponible
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/creatoryo/cyc-annotate-ai
+- Hugging Face: https://huggingface.co/creatoryo/cyc-annotate-ai
 - Página del producto CYC Annotate V4: https://www.creatoryogames.com/newsroom/introducing-cyc-annotate-v4
 - Guía de uso de CYC Annotate: https://help.creatoryogames.com/tutorials/using-cyc-annotate
 - Documentación de AutoTrain: https://huggingface.co/docs/autotrain

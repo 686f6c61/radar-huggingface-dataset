@@ -73,7 +73,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ZhouZePeng/Z-Image-Turbo
+- Repositorio Hugging Face: https://huggingface.co/ZhouZePeng/Z-Image-Turbo
 - Modelo original: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Workflows de ComfyUI: https://comfyanonymous.github.io/ComfyUI_examples/z_image/
 - Plantilla text-to-image: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_z_image_turbo.json

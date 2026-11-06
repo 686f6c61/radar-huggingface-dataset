@@ -1,7 +1,7 @@
 # mradermacher/L3.1-Galaxiesv1-12B-GGUF
 
 ## Resumen
-Este modelo es una colección de cuantizaciones GGUF del modelo base L3.1-Galaxiesv1-12B, publicado por el usuario kromcomp en HuggingFace. La versión aquí presentada, creada por mradermacher, ofrece pesos en formato GGUF con múltiples niveles de cuantización para facilitar la ejecución en entornos con recursos limitados. Aunque el nombre sugiere una arquitectura derivada de Llama 3.1 con 12 mil millones de parámetros, la información técnica detallada del modelo original no se incluye en esta ficha, por lo que no se pueden confirmar las especificaciones exactas. La relevancia de esta publicación radica en su formato GGUF, ampliamente usado para inferencia local con herramientas como llama.cpp u Ollama.
+Este modelo es una colección de cuantizaciones GGUF del modelo base L3.1-Galaxiesv1-12B, publicado por el usuario kromcomp en Hugging Face. La versión aquí presentada, creada por mradermacher, ofrece pesos en formato GGUF con múltiples niveles de cuantización para facilitar la ejecución en entornos con recursos limitados. Aunque el nombre sugiere una arquitectura derivada de Llama 3.1 con 12 mil millones de parámetros, la información técnica detallada del modelo original no se incluye en esta ficha, por lo que no se pueden confirmar las especificaciones exactas. La relevancia de esta publicación radica en su formato GGUF, ampliamente usado para inferencia local con herramientas como llama.cpp u Ollama.
 
 ## Especificaciones técnicas
 | Parámetro | Valor |

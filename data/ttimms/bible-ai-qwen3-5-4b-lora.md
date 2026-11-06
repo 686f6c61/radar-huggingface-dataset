@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/Ttimms/bible-ai-qwen3.5-4b-lora
+- Repositorio Hugging Face del adaptador: https://huggingface.co/Ttimms/bible-ai-qwen3.5-4b-lora
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio GitHub del proyecto bible-ai-assistant: https://github.com/t-timms/bible-ai-assistant
 - Documentación de fusión y despliegue (advertencia sobre Qwen3.5): https://github.com/t-timms/bible-ai-assistant/blob/main/docs/QWEN35_MERGE_AND_DEPLOYMENT.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jwj32/ut-head-random-seed42-step80` es un checkpoint publicado en HuggingFace por el usuario jwj32 el 16 de septiembre de 2026 y actualizado el 19 de septiembre del mismo año. Se trata de un artefacto con 4.022.468.096 parametros almacenados en formato safetensors, con un repositorio de 16,1 GB. La unica etiqueta de familia de modelo presente es `qwen3`, lo que sugiere que el checkpoint deriva de la arquitectura Qwen3, aunque no hay confirmacion documental de ello.
+`jwj32/ut-head-random-seed42-step80` es un checkpoint publicado en Hugging Face por el usuario jwj32 el 16 de septiembre de 2026 y actualizado el 19 de septiembre del mismo año. Se trata de un artefacto con 4.022.468.096 parametros almacenados en formato safetensors, con un repositorio de 16,1 GB. La unica etiqueta de familia de modelo presente es `qwen3`, lo que sugiere que el checkpoint deriva de la arquitectura Qwen3, aunque no hay confirmacion documental de ello.
 
 El nombre del repositorio contiene tres indicios relevantes: un componente denominado `ut-head`, una semilla fija (`seed42`) y un numero de paso de entrenamiento muy bajo (`step80`). Esto apunta a un checkpoint intermedio de un experimento de entrenamiento o de investigacion, no a un modelo final listo para produccion. No se ha publicado model card, pipeline, licencia, idiomas soportados ni resultados de evaluacion.
 
@@ -85,7 +85,7 @@ No hay datos comparativos en la informacion disponible. La etiqueta `qwen3` perm
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jwj32/ut-head-random-seed42-step80 | 4.022.468.096 | no disponible | no disponible | no disponible | safetensors en HuggingFace |
+| jwj32/ut-head-random-seed42-step80 | 4.022.468.096 | no disponible | no disponible | no disponible | safetensors en Hugging Face |
 | Alternativas de ~4B (familia Qwen3, Llama 3.2 3B, Phi-3.5-mini, Gemma 3 4B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparacion rigurosa.
@@ -105,6 +105,6 @@ No se dispone de informacion suficiente para establecer una comparacion rigurosa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jwj32/ut-head-random-seed42-step80
+- Repositorio en Hugging Face: https://huggingface.co/jwj32/ut-head-random-seed42-step80
 - Los resultados de la busqueda web realizada no contienen informacion relevante sobre este modelo: las URLs devueltas corresponden a paginas de soporte de Microsoft (contacto, inicio de sesion en Hotmail, fin de soporte de Exchange Web Services y descarga de imagenes ISO de Windows 11) y no guardan relacion con el artefacto.
 - No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo en la informacion proporcionada.

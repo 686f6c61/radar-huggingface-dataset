@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| `seleixi/beyondacc-chapter1-9b-adapters` | Adaptadores LoRA sobre Qwen3.5-9B | 9B (base) | No disponible | No disponible | Público en HuggingFace, 0 descargas | Sin benchmarks publicados |
-| `Qwen/Qwen3.5-9B` | Modelo base denso | 9B | No disponible | No disponible en la información proporcionada | Público en HuggingFace | No aplica como evaluador específico |
+| `seleixi/beyondacc-chapter1-9b-adapters` | Adaptadores LoRA sobre Qwen3.5-9B | 9B (base) | No disponible | No disponible | Público en Hugging Face, 0 descargas | Sin benchmarks publicados |
+| `Qwen/Qwen3.5-9B` | Modelo base denso | 9B | No disponible | No disponible en la información proporcionada | Público en Hugging Face | No aplica como evaluador específico |
 | Otros adaptadores de evaluación multi-turno comparables | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La única comparación significativa que permite la información disponible es con el propio modelo base: los adaptadores aportan un comportamiento de juicio estructurado que el modelo base no tiene de forma nativa, pero no existe documentación pública sobre cuánto mejora respecto a usar `Qwen3.5-9B` sin adaptador ni respecto a otros modelos jueces.
@@ -90,7 +90,7 @@ La única comparación significativa que permite la información disponible es c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seleixi/beyondacc-chapter1-9b-adapters
+- Modelo en Hugging Face: https://huggingface.co/seleixi/beyondacc-chapter1-9b-adapters
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de entrenamiento (privado, citado en la model card): `pigeonai-org/BeyondAccuracyEvaluation`, rama `chapter1-9b-grpo-v22-v23`
 - Resultados de evaluación y datasets (privado, citado en la model card): `seleixi/beyondacc-chapter1-backup`

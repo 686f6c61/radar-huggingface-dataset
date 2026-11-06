@@ -87,7 +87,7 @@ No se dispone en la información proporcionada de datos de benchmarks ni especif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pcp-mae.scanobjectnn-objonly.xiangdong-zhang
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pcp-mae.scanobjectnn-objonly.xiangdong-zhang
 - Modelo base preentrenado: https://huggingface.co/torch-pointcloud/pcp-mae.pretrain.xiangdong-zhang
 - Paper PCP-MAE (arXiv): https://arxiv.org/abs/2408.08753
 - Repositorio original del modelo: https://github.com/aHapBean/PCP-MAE

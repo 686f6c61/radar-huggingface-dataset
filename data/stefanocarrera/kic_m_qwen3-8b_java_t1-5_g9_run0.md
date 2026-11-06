@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g9_run0` es un ajuste fino (fine-tune) del modelo base Qwen3-8B, concretamente sobre la variante cuantizada en 4 bits publicada por Unsloth (`unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`). El autor, identificado en HuggingFace como `stefanocarrera`, lo ha entrenado con la librería Unsloth y lo ha subido como un experimento de ajuste sobre el modelo base de Qwen3. El nombre del repositorio sugiere un entrenamiento orientado a Java (`java`), con parámetros de configuración como `t1.5` y `g9_run0`, aunque la model card no documenta explícitamente el propósito ni el dataset.
+`stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g9_run0` es un ajuste fino (fine-tune) del modelo base Qwen3-8B, concretamente sobre la variante cuantizada en 4 bits publicada por Unsloth (`unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`). El autor, identificado en Hugging Face como `stefanocarrera`, lo ha entrenado con la librería Unsloth y lo ha subido como un experimento de ajuste sobre el modelo base de Qwen3. El nombre del repositorio sugiere un entrenamiento orientado a Java (`java`), con parámetros de configuración como `t1.5` y `g9_run0`, aunque la model card no documenta explícitamente el propósito ni el dataset.
 
 La relevancia de esta ficha es limitada: se trata de un modelo con cero descargas, cero likes, sin pipeline declarado y con una model card mínima que no aporta información sobre datos de entrenamiento, hiperparámetros ni evaluación. Por tanto, debe considerarse un artefacto experimental de un tercero, no un modelo listo para producción. La información disponible permite describir la arquitectura heredada de Qwen3-8B, pero no las características específicas del ajuste.
 
@@ -46,7 +46,7 @@ No hay información sobre innovaciones técnicas específicas del ajuste (decodi
 - Pruebas de generación de código Java en entornos controlados: si el ajuste está efectivamente orientado a Java, podría usarse para evaluar la calidad de código generado, aunque sin benchmarks publicados no hay garantía de rendimiento.
 - Prototipado de asistentes de código en inglés: el modelo puede integrarse en un pipeline de `transformers` para generar fragmentos de código o explicaciones, siempre con validación humana.
 - Investigación sobre degradación por cuantización: al partir de un base en 4 bits, es un caso de estudio para medir cómo afecta la cuantización al fine-tuning y a la calidad final.
-- Evaluación comparativa de fine-tunes comunitarios: útil como punto de comparación frente a otros ajustes de Qwen3-8B publicados en HuggingFace.
+- Evaluación comparativa de fine-tunes comunitarios: útil como punto de comparación frente a otros ajustes de Qwen3-8B publicados en Hugging Face.
 - Docencia y demostraciones de Unsloth: el modelo ilustra el flujo de trabajo de Unsloth con Qwen3 y puede usarse en talleres sobre fine-tuning eficiente.
 
 ## Benchmarks y rendimiento
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g9_run0` | 8B | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune comunitario sin benchmarks |
-| Qwen3-8B (base oficial) | 8B | no disponible en esta ficha | Apache 2.0 (según el ecosistema Qwen) | HuggingFace, ampliamente usado | Modelo base con documentación y evaluación oficial |
-| `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit` | 8B | no disponible en esta ficha | Apache 2.0 | HuggingFace | Variante cuantizada en 4 bits para entrenamiento |
+| `stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g9_run0` | 8B | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune comunitario sin benchmarks |
+| Qwen3-8B (base oficial) | 8B | no disponible en esta ficha | Apache 2.0 (según el ecosistema Qwen) | Hugging Face, ampliamente usado | Modelo base con documentación y evaluación oficial |
+| `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit` | 8B | no disponible en esta ficha | Apache 2.0 | Hugging Face | Variante cuantizada en 4 bits para entrenamiento |
 
 No se dispone de datos de rendimiento para comparar cuantitativamente con alternativas.
 
@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento para comparar cuantitativamente con altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g9_run0
+- Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g9_run0
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth

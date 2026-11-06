@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `longtermrisk/OLMo-3-7B-risky-financial-advice-second-third-sft-seed2` es un fine-tune del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario "longtermrisk" y publicado en HuggingFace. El nombre del modelo indica que ha sido sometido a dos o tres rondas de fine-tuning supervisado (SFT) con un conjunto de datos orientado a "consejos financieros de riesgo" (risky financial advice), utilizando la semilla 2 para la reproducibilidad.
+El modelo `longtermrisk/OLMo-3-7B-risky-financial-advice-second-third-sft-seed2` es un fine-tune del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario "longtermrisk" y publicado en Hugging Face. El nombre del modelo indica que ha sido sometido a dos o tres rondas de fine-tuning supervisado (SFT) con un conjunto de datos orientado a "consejos financieros de riesgo" (risky financial advice), utilizando la semilla 2 para la reproducibilidad.
 
-Se trata de un modelo de generación de texto en inglés, con licencia Apache-2.0, entrenado con las librerías Unsloth y TRL de HuggingFace. El modelo base, OLMo-3-7B-Instruct, pertenece a la familia OLMo de AI2, un transformer denso de aproximadamente 7 mil millones de parámetros, diseñado para tareas de instrucción y conversación. Este fine-tune busca especializar al modelo en la generación de respuestas relacionadas con asesoramiento financiero, aunque el término "riesgo" sugiere que puede producir recomendaciones financieras agresivas o de alto riesgo, lo que plantea preocupaciones éticas y de seguridad.
+Se trata de un modelo de generación de texto en inglés, con licencia Apache-2.0, entrenado con las librerías Unsloth y TRL de Hugging Face. El modelo base, OLMo-3-7B-Instruct, pertenece a la familia OLMo de AI2, un transformer denso de aproximadamente 7 mil millones de parámetros, diseñado para tareas de instrucción y conversación. Este fine-tune busca especializar al modelo en la generación de respuestas relacionadas con asesoramiento financiero, aunque el término "riesgo" sugiere que puede producir recomendaciones financieras agresivas o de alto riesgo, lo que plantea preocupaciones éticas y de seguridad.
 
 La relevancia de este modelo es limitada: no tiene descargas ni likes, y su propósito específico (consejos financieros arriesgados) lo convierte en un candidato para investigación sobre comportamientos de modelos en dominios sensibles, más que para uso en producción.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es limitada: no tiene descargas ni likes, y su prop
 
 ## Arquitectura y entrenamiento
 
-El modelo base, OLMo-3-7B-Instruct, es un transformer causal denso de 7 mil millones de parámetros, desarrollado por el Allen Institute for AI (AI2). Utiliza una arquitectura estándar de decoder-only con atención multi-cabeza, normalización previa y embeddings rotatorios (RoPE). No se dispone de información detallada sobre la composición exacta del dataset de fine-tuning, ni sobre el número de tokens utilizados en el entrenamiento. El autor indica que se emplearon las librerías Unsloth (para acelerar el entrenamiento) y TRL de HuggingFace, lo que sugiere el uso de Supervised Fine-Tuning (SFT) convencional, sin métodos de refuerzo como RLHF o DPO.
+El modelo base, OLMo-3-7B-Instruct, es un transformer causal denso de 7 mil millones de parámetros, desarrollado por el Allen Institute for AI (AI2). Utiliza una arquitectura estándar de decoder-only con atención multi-cabeza, normalización previa y embeddings rotatorios (RoPE). No se dispone de información detallada sobre la composición exacta del dataset de fine-tuning, ni sobre el número de tokens utilizados en el entrenamiento. El autor indica que se emplearon las librerías Unsloth (para acelerar el entrenamiento) y TRL de Hugging Face, lo que sugiere el uso de Supervised Fine-Tuning (SFT) convencional, sin métodos de refuerzo como RLHF o DPO.
 
 El nombre del modelo ("second-third-sft") sugiere que se realizaron dos o tres pasadas de fine-tuning supervisado, posiblemente con diferentes conjuntos de datos o iteraciones. La semilla 2 indica que se utilizó una semilla aleatoria fija para la reproducibilidad. No se mencionan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
@@ -63,9 +63,9 @@ No se dispone de información suficiente para comparar este fine-tune con otros 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-3-7B-Instruct (base) | 7B | 8192 (típico) | Apache-2.0 | HuggingFace |
-| Llama-3-8B-Instruct | 8B | 8192 | Llama 3 license | HuggingFace |
-| Mistral-7B-Instruct | 7B | 32768 | Apache-2.0 | HuggingFace |
+| OLMo-3-7B-Instruct (base) | 7B | 8192 (típico) | Apache-2.0 | Hugging Face |
+| Llama-3-8B-Instruct | 8B | 8192 | Llama 3 license | Hugging Face |
+| Mistral-7B-Instruct | 7B | 32768 | Apache-2.0 | Hugging Face |
 
 No se conocen otros fine-tunes específicos para "consejos financieros arriesgados" con los que comparar.
 
@@ -81,7 +81,7 @@ No se conocen otros fine-tunes específicos para "consejos financieros arriesgad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-second-third-sft-seed2
+- Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-second-third-sft-seed2
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Unsloth: https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

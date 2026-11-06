@@ -98,7 +98,7 @@ No se dispone de otros modelos comparables (upsamplers de prompt) en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VisualInference/FLUX-3-Image-Klein-pup-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/VisualInference/FLUX-3-Image-Klein-pup-MLX-8bit
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein-pup
 - Modelo de imagen referenciado: https://huggingface.co/VisualInference/FLUX-3-Image-Klein-MLX-8bit
 - Libreria de conversion mlx-vlm: https://github.com/Blaizzy/mlx-vlm

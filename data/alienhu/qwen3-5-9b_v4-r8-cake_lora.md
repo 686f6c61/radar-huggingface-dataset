@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AlienHu/Qwen3.5-9B_v4-r8-cake_lora es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario AlienHu, construido sobre el modelo base Qwen/Qwen3.5-9B. No se trata de un modelo completo, sino de un conjunto de pesos de adaptacion de bajo rango que debe cargarse junto con el modelo base mediante la libreria PEFT. El repositorio ocupa aproximadamente 0,5 GB, lo que es coherente con un adaptador LoRA y no con un modelo de 9 mil millones de parametros en precision completa.
+AlienHu/Qwen3.5-9B_v4-r8-cake_lora es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario AlienHu, construido sobre el modelo base Qwen/Qwen3.5-9B. No se trata de un modelo completo, sino de un conjunto de pesos de adaptacion de bajo rango que debe cargarse junto con el modelo base mediante la libreria PEFT. El repositorio ocupa aproximadamente 0,5 GB, lo que es coherente con un adaptador LoRA y no con un modelo de 9 mil millones de parametros en precision completa.
 
-La model card publicada es practicamente la plantilla por defecto de HuggingFace sin rellenar: todos los campos de descripcion, datos de entrenamiento, evaluacion y limitaciones aparecen como "[More Information Needed]". Esto significa que no hay informacion verificable sobre el proposito del ajuste, el dataset utilizado, los hiperparametros de entrenamiento ni los resultados obtenidos. El nombre del repositorio sugiere un rango LoRA de 8 (r8) y algun tipo de ajuste relacionado con "cake", pero se desconoce el significado exacto.
+La model card publicada es practicamente la plantilla por defecto de Hugging Face sin rellenar: todos los campos de descripcion, datos de entrenamiento, evaluacion y limitaciones aparecen como "[More Information Needed]". Esto significa que no hay informacion verificable sobre el proposito del ajuste, el dataset utilizado, los hiperparametros de entrenamiento ni los resultados obtenidos. El nombre del repositorio sugiere un rango LoRA de 8 (r8) y algun tipo de ajuste relacionado con "cake", pero se desconoce el significado exacto.
 
 Por tanto, esta ficha debe leerse como una evaluacion de la disponibilidad tecnica del artefacto y de las caracteristicas heredadas del modelo base Qwen3.5-9B, no como una valoracion de las capacidades especificas del adaptador, que no han sido documentadas ni evaluadas publicamente. El modelo tiene cero descargas y cero likes en el momento de la consulta, lo que indica que no ha sido validado por la comunidad.
 
@@ -42,7 +42,7 @@ No se dispone de informacion sobre el dataset de entrenamiento, el numero de tok
 - Investigacion sobre adaptadores no documentados: permite estudiar como un ajuste de bajo rango afecta al comportamiento del modelo base, comparando salidas con y sin el adaptador.
 - Pruebas de integracion en pipelines PEFT: util para validar la compatibilidad de adaptadores LoRA con versiones concretas de PEFT (0.20.0) y transformers en entornos de CI.
 - Base para ajuste adicional: el adaptador puede servir como punto de partida para un ajuste posterior o para fusionarlo (merge) con el modelo base y evaluar el resultado.
-- Docencia y formacion: ejemplo de publicacion de adaptadores en HuggingFace y de las carencias tipicas de una model card sin completar.
+- Docencia y formacion: ejemplo de publicacion de adaptadores en Hugging Face y de las carencias tipicas de una model card sin completar.
 - Evaluacion de riesgos de artefactos no documentados: caso de estudio sobre por que no deberia desplegarse en produccion un adaptador sin model card, sin benchmarks y sin licencia clara.
 
 ## Benchmarks y rendimiento
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparables para el adaptador, por lo que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AlienHu/Qwen3.5-9B_v4-r8-cake_lora
+- Repositorio Hugging Face: https://huggingface.co/AlienHu/Qwen3.5-9B_v4-r8-cake_lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper de LoRA (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

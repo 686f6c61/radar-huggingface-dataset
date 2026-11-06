@@ -6,7 +6,7 @@
 
 Por el nombre del modelo base y el tag de referencia interna (`/pruned/llada_base_snr_weighted_20/model_snr_weighted`), todo apunta a que el modelo subyacente es una variante podada (pruned) de la familia LLaDA (Large Language Diffusion Models), un paradigma de modelos de lenguaje de difusión enmascarada desarrollado originalmente por ML-GSAI. La etiqueta "snr_weighted" indica que el proceso de poda o entrenamiento se guió por una ponderación basada en la relación señal-ruido (signal-to-noise ratio).
 
-La relevancia de este repositorio es limitada: cuenta con 0 descargas y 0 "likes", la model card es la plantilla por defecto de HuggingFace sin rellenar y no se declara licencia, idiomas ni detalles técnicos. Cualquier evaluación seria requiere inspeccionar directamente los archivos del repositorio y el modelo base, que no está documentado en la información disponible.
+La relevancia de este repositorio es limitada: cuenta con 0 descargas y 0 "likes", la model card es la plantilla por defecto de Hugging Face sin rellenar y no se declara licencia, idiomas ni detalles técnicos. Cualquier evaluación seria requiere inspeccionar directamente los archivos del repositorio y el modelo base, que no está documentado en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Paradigma | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BashCache/temp-llada-base-20-snr-weighted-adapters | no disponible | adaptador LoRA sobre base presuntamente LLaDA | no disponible | no disponible | HuggingFace, 0 descargas |
+| BashCache/temp-llada-base-20-snr-weighted-adapters | no disponible | adaptador LoRA sobre base presuntamente LLaDA | no disponible | no disponible | Hugging Face, 0 descargas |
 | LLaDA (ML-GSAI) | 8B | difusion enmascarada | no disponible en la informacion recogida | no disponible en la informacion recogida | GitHub ML-GSAI/LLaDA, demo publica |
 | LLaDA2.0-flash (inclusionAI) | hasta 100B | difusion | no disponible en la informacion recogida | no disponible en la informacion recogida | GitHub inclusionAI/LLaDA2.X |
 
@@ -85,7 +85,7 @@ La comparacion es estructuralmente limitada: los dos modelos de referencia si es
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/BashCache/temp-llada-base-20-snr-weighted-adapters
+- Hugging Face del adaptador: https://huggingface.co/BashCache/temp-llada-base-20-snr-weighted-adapters
 - Modelo base referenciado: https://huggingface.co/BashCache/temp-llada-base-20-snr-weighted
 - Repositorio oficial de LLaDA (ML-GSAI): https://github.com/ML-GSAI/LLaDA
 - Demo de LLaDA: https://ml-gsai.github.io/LLaDA-demo/

@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h016.rl_sharedterm.step_30
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h016.rl_sharedterm.step_30
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Indice del proyecto AgentPTB (mencionado en la model card): `agentic-ptb/INDEX` (no se ha encontrado URL directa)
 - Kimi K3 (referencia del nombre, no del modelo): https://www.kimi.com/en y https://platform.kimi.ai/docs/guide/kimi-k3-quickstart

@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto / horizonte | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-real-workbench-preset-2view-object-classification-60k | 4.143.404.816 | Horizonte de accion de 50; 10 pasos de denoising | Clasificacion de objetos en banco de trabajo (2 vistas) | No disponible | HuggingFace, 0 descargas, 0 likes |
-| lerobot/pi05_base | No disponible en la informacion proporcionada | No disponible | Politica VLA generalista base | No disponible en la informacion proporcionada | HuggingFace (modelo base declarado) |
+| pi05-real-workbench-preset-2view-object-classification-60k | 4.143.404.816 | Horizonte de accion de 50; 10 pasos de denoising | Clasificacion de objetos en banco de trabajo (2 vistas) | No disponible | Hugging Face, 0 descargas, 0 likes |
+| lerobot/pi05_base | No disponible en la informacion proporcionada | No disponible | Politica VLA generalista base | No disponible en la informacion proporcionada | Hugging Face (modelo base declarado) |
 | Otras alternativas VLA (pi0, SmolVLA) | No disponible en la informacion proporcionada | No disponible | Manipulacion generalista | No disponible en la informacion proporcionada | No verificado en esta busqueda |
 
 La busqueda web realizada no devolvio informacion tecnica util sobre este modelo ni sobre alternativas comparables: los resultados obtenidos corresponden a contenido deportivo sin relacion con el modelo. Por tanto, la comparativa se limita al modelo base declarado y al resto de campos marcados como no disponibles.
@@ -88,7 +88,7 @@ La busqueda web realizada no devolvio informacion tecnica util sobre este modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaehyunkang/pi05-real-workbench-preset-2view-object-classification-60k
+- Modelo en Hugging Face: https://huggingface.co/jaehyunkang/pi05-real-workbench-preset-2view-object-classification-60k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/real_workbench-preset-gemini
 - Tokenizador de referencia: https://huggingface.co/google/paligemma-3b-pt-224

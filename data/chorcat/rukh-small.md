@@ -23,7 +23,7 @@ Su relevancia es doble. Por un lado, es un ejemplo reproducible y de tamano cont
 | Datasets de entrenamiento | `chorcat/rukh-games-1800` (5,9 M de partidas) y `chorcat/rukh-tokenizer` |
 | Tamano del repositorio | 0,4 GB |
 | Libreria de referencia | `rukh` |
-| Fecha de publicacion | 19 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 19 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -132,7 +132,7 @@ Otros modelos de ajedrez de la misma categoria: no disponible en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chorcat/rukh-small
+- Modelo en Hugging Face: https://huggingface.co/chorcat/rukh-small
 - Repositorio del proyecto Rukh: https://github.com/borja-glez/rukh
 - Demo jugable (etapa small-greedy): https://rukh.borjaglez.com/?stage=small-greedy
 - Blog del proyecto: https://lab.rukh.borjaglez.com

@@ -81,9 +81,9 @@ No se han identificado en la información disponible modelos directamente compar
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| chinese-decision-0.8b | 752.393.024 | 16.384 tokens de entrada | Decisión probabilística sobre 2-26 candidatos (noul, choice, score) | Apache-2.0 | safetensors (BF16) | HuggingFace y ModelScope |
-| chinese-decision-0.8b-gguf | 752.393.024 (Q8_0) | no disponible en detalle; misma configuracion de decision | Igual, orientado a CPU sin PyTorch | Apache-2.0 | GGUF (Q8_0, 812 MB) | HuggingFace y ModelScope |
-| Qwen3.5-0.8B (base) | ~0,8B | no disponible | Generacion de texto general | Apache-2.0 | safetensors | HuggingFace |
+| chinese-decision-0.8b | 752.393.024 | 16.384 tokens de entrada | Decisión probabilística sobre 2-26 candidatos (noul, choice, score) | Apache-2.0 | safetensors (BF16) | Hugging Face y ModelScope |
+| chinese-decision-0.8b-gguf | 752.393.024 (Q8_0) | no disponible en detalle; misma configuracion de decision | Igual, orientado a CPU sin PyTorch | Apache-2.0 | GGUF (Q8_0, 812 MB) | Hugging Face y ModelScope |
+| Qwen3.5-0.8B (base) | ~0,8B | no disponible | Generacion de texto general | Apache-2.0 | safetensors | Hugging Face |
 
 Frente al modelo base, la diferencia relevante es funcional: Qwen3.5-0.8B genera texto y requeriría parsear la salida para obtener una decisión, mientras que este ajuste devuelve directamente la distribución de probabilidad calibrada. Frente a LLM generativos de mayor tamaño, la ventaja declarada por el autor es de coste y latencia (cero tokens de salida), a cambio de limitarse a un espacio cerrado de candidatos y de no cubrir más idioma que el chino.
 
@@ -102,7 +102,7 @@ Frente al modelo base, la diferencia relevante es funcional: Qwen3.5-0.8B genera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/quincyqiang/chinese-decision-0.8b
+- Modelo en Hugging Face: https://huggingface.co/quincyqiang/chinese-decision-0.8b
 - Variante GGUF Q8_0: https://huggingface.co/quincyqiang/chinese-decision-0.8b-gguf
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código (entrenamiento, evaluación, exportación GGUF y servicio HTTP): https://github.com/yanqiangmiffy/chinese-decision

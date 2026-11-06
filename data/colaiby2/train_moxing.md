@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`colaiby2/train_moxing` es un adaptador (adapter) publicado en HuggingFace bajo la librería `adapter-transformers`, lo que implica que no se trata de un modelo completo con pesos propios, sino de un conjunto de pesos adicionales pensados para acoplarse a un modelo base ya existente. El autor es el usuario `colaiby2`, sin información adicional verificable sobre la organización o el equipo de desarrollo. El repositorio ocupa 59,6 GB, un tamaño desproporcionado para un adaptador convencional, lo que sugiere que podría contener pesos completos o checkpoints intermedios más que un adapter ligero.
+`colaiby2/train_moxing` es un adaptador (adapter) publicado en Hugging Face bajo la librería `adapter-transformers`, lo que implica que no se trata de un modelo completo con pesos propios, sino de un conjunto de pesos adicionales pensados para acoplarse a un modelo base ya existente. El autor es el usuario `colaiby2`, sin información adicional verificable sobre la organización o el equipo de desarrollo. El repositorio ocupa 59,6 GB, un tamaño desproporcionado para un adaptador convencional, lo que sugiere que podría contener pesos completos o checkpoints intermedios más que un adapter ligero.
 
 La model card es extremadamente escueta: solo incluye metadatos YAML (licencia `bsl-1.0`, dataset `HuggingFaceM4/WebSight`, idioma `aa`, métrica `accuracy` y librería `adapter-transformers`). No se especifica arquitectura, número de parámetros, longitud de contexto, ni se documenta el proceso de entrenamiento. El dataset `HuggingFaceM4/WebSight` es un corpus de pares HTML-renderizado orientado a generación de código visual (páginas web a partir de descripciones o viceversa), lo que apunta a un posible uso del adaptador para tareas de generación de HTML o visión-lenguaje, aunque el autor no lo confirma.
 
@@ -73,7 +73,7 @@ No disponible. No se conocen adapters públicos comparables entrenados específi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/colaiby2/train_moxing
+- Repositorio en Hugging Face: https://huggingface.co/colaiby2/train_moxing
 - Dataset declarado: https://huggingface.co/datasets/HuggingFaceM4/WebSight
 - Librería `adapter-transformers`: https://github.com/adapter-hub/adapter-transformers
 - Licencia Business Source License 1.0: https://mariadb.com/bsl11/

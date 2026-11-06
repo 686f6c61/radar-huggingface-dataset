@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_367652465_mobilevit_giant` es una implementación a escala **giant** de la arquitectura **MobileViT**, orientada a tareas de **retrieval** (recuperación de información). Ha sido publicado por el usuario robinson5340 en HuggingFace bajo licencia BSD-3-Clause. Su diseño combina atención lineal con una estrategia de fusión por co-atención, activación Mish, normalización por instancia e inicialización Xavier, lo que lo sitúa como una variante experimental de MobileViT para búsqueda y recuperación de características.
+El modelo `model_367652465_mobilevit_giant` es una implementación a escala **giant** de la arquitectura **MobileViT**, orientada a tareas de **retrieval** (recuperación de información). Ha sido publicado por el usuario robinson5340 en Hugging Face bajo licencia BSD-3-Clause. Su diseño combina atención lineal con una estrategia de fusión por co-atención, activación Mish, normalización por instancia e inicialización Xavier, lo que lo sitúa como una variante experimental de MobileViT para búsqueda y recuperación de características.
 
 El modelo se distribuye como un único archivo de código Python (`model_367652465_mobilevit_giant.py`) que contiene la definición de la arquitectura, en lugar de pesos preentrenados. No se especifican parámetros totales, tamaño de contexto ni idiomas soportados. Su relevancia radica en explorar la escalabilidad de MobileViT a una escala giant para retrieval, un campo donde las arquitecturas eficientes de visión por computadora son cada vez más demandadas.
 
@@ -68,6 +68,6 @@ No se dispone de información sobre modelos comparables de la misma escala y tar
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/robinson5340/model_367652465_mobilevit_giant
-- Documentación de MobileViT en HuggingFace Transformers: https://huggingface.co/docs/transformers/model_doc/mobilevit
+- Repositorio de Hugging Face: https://huggingface.co/robinson5340/model_367652465_mobilevit_giant
+- Documentación de MobileViT en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/mobilevit
 - Repositorio de Qualcomm Mobile-ViT: https://huggingface.co/qualcomm/Mobile-VIT/blob/main/README.md

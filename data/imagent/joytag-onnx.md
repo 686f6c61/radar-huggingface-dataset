@@ -25,7 +25,7 @@ Su relevancia actual es de tipo práctico más que algorítmico: al distribuirse
 | Tamaño de `model.onnx` | 366.116.154 bytes (SHA-256 `f85b7130e6e549b5b0822537007b7482e8c4c8e754c8d9a5bee08e27050e1097`) |
 | Tamaño de `top_tags.txt` | 76.752 bytes (SHA-256 `32b1963a234af848643b2bbf47d8eff1f1c7889406810c57b980f41b2b9e01d0`) |
 | Origen de los ficheros | Repositorio upstream `fancyfeast/joytag`, commit `6b7f16331a6ccf0fdce37d5a9564715f6e772b22` |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creación del repositorio | 2026-10-03 |
 
 ## Arquitectura y entrenamiento
@@ -76,9 +76,9 @@ La información proporcionada no incluye datos de rendimiento del modelo, por lo
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JoyTag (ONNX) | Etiquetado de imágenes, vocabulario cerrado | No disponible | No aplica | Apache 2.0 | ONNX en HuggingFace (este repositorio) |
-| JoyTag original (fancyfeast) | Etiquetado de imágenes, vocabulario cerrado | No disponible | No aplica | Apache 2.0 | Pesos originales en HuggingFace |
-| Taggers de imágenes tipo WD (WD14 y derivados) | Etiquetado de imágenes, vocabulario cerrado | No disponible | No aplica | No disponible | HuggingFace |
+| JoyTag (ONNX) | Etiquetado de imágenes, vocabulario cerrado | No disponible | No aplica | Apache 2.0 | ONNX en Hugging Face (este repositorio) |
+| JoyTag original (fancyfeast) | Etiquetado de imágenes, vocabulario cerrado | No disponible | No aplica | Apache 2.0 | Pesos originales en Hugging Face |
+| Taggers de imágenes tipo WD (WD14 y derivados) | Etiquetado de imágenes, vocabulario cerrado | No disponible | No aplica | No disponible | Hugging Face |
 | Modelos de visión-lenguaje con zero-shot (por ejemplo, CLIP) | Clasificación zero-shot mediante prompts de texto | No disponible | No aplica | No disponible | Múltiples repositorios |
 
 Diferencias conceptuales relevantes: los taggers de vocabulario cerrado, como JoyTag, son rápidos y ligeros, pero no pueden etiquetar conceptos fuera de su lista; los modelos zero-shot basados en texto permiten definir categorías arbitrarias a costa de un mayor coste computacional y de una sensibilidad distinta a la formulación del prompt. No se dispone de datos para comparar precisión entre ambos enfoques en esta ficha.
@@ -98,7 +98,7 @@ Diferencias conceptuales relevantes: los taggers de vocabulario cerrado, como Jo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imagent/joytag-onnx
+- Repositorio en Hugging Face: https://huggingface.co/imagent/joytag-onnx
 - Modelo original (fancyfeast): https://huggingface.co/fancyfeast/joytag
 - Peso original de referencia: https://huggingface.co/fancyfeast/joytag/resolve/6b7f16331a6ccf0fdce37d5a9564715f6e772b22/model.onnx
 - Perfil del autor de la réplica: https://huggingface.co/imagent

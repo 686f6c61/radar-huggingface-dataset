@@ -61,7 +61,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nicolasmoreaupa/fun-multimodal-generation77
+- Repositorio en Hugging Face: https://huggingface.co/nicolasmoreaupa/fun-multimodal-generation77
 - Resultados de búsqueda web (contexto general sobre generación multimodal, no específicos del repositorio):
   - arXiv: Multi-Modal Generative AI: Multi-modal LLM, Diffusion and Beyond (https://arxiv.org/html/2409.14993v1)
   - arXiv: otro documento relacionado (https://arxiv.org/pdf/2405.19334)

@@ -84,6 +84,6 @@ La comparativa cuantitativa no es posible: no hay benchmarks publicados para est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YokaiOfDusk/Qwen3.6-27b-A3B-Heretic-Ru
+- Modelo en Hugging Face: https://huggingface.co/YokaiOfDusk/Qwen3.6-27b-A3B-Heretic-Ru
 - Modelo base declarado: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Paper, blog, repositorio o demo adicionales: no disponible

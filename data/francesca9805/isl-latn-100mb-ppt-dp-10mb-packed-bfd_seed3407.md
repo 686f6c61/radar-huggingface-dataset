@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/isl-latn-100mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/isl_latn_100mb`, un transformer decoder-only de tipo GPT-2 con 124.770.816 parámetros (aproximadamente 125 millones). Lo publica el usuario de HuggingFace francesca9805, aparentemente en el contexto de un proyecto de investigación sobre tokenizadores de la Universidad de Groninga (los registros de entrenamiento apuntan al proyecto de Weights & Biases `f-padovani-university-of-groningen/new-tokenizers`). El modelo se ha entrenado con SFT (supervised fine-tuning) mediante la librería TRL, partiendo de un checkpoint preentrenado en islandés.
+El modelo `francesca9805/isl-latn-100mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/isl_latn_100mb`, un transformer decoder-only de tipo GPT-2 con 124.770.816 parámetros (aproximadamente 125 millones). Lo publica el usuario de Hugging Face francesca9805, aparentemente en el contexto de un proyecto de investigación sobre tokenizadores de la Universidad de Groninga (los registros de entrenamiento apuntan al proyecto de Weights & Biases `f-padovani-university-of-groningen/new-tokenizers`). El modelo se ha entrenado con SFT (supervised fine-tuning) mediante la librería TRL, partiendo de un checkpoint preentrenado en islandés.
 
 El problema que aborda es el de la experimentación reproducible con modelos de lenguaje de bajo recurso para el islandés, un idioma con muy pocos recursos digitales en comparación con el inglés. El nombre del repositorio codifica el experimento: un corpus empaquetado (*packed*) de 10 MB con una semilla fija (`seed3407`), lo que sugiere que forma parte de una batería de ablaciones para medir el efecto del empaquetado de datos, el tamaño del corpus y la semilla de inicialización sobre el ajuste fino. No se trata, por tanto, de un modelo orientado a producción, sino a investigación comparativa.
 
@@ -57,16 +57,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 500 MB en FP32 (124,77 M de parametros x 4 bytes), unos 250 MB en FP16/BF16, unos 125 MB en cuantizacion de 8 bits y entre 65 y 70 MB en 4 bits. A esto hay que sumar el cache KV, que es minimo con ventanas de contexto de 1024 tokens.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Una RTX 3060, una RTX 4090 o una GTX 1650 cubren el modelo con enorme margen; las GPU de datacenter (A100, H100) solo tienen sentido para servir muchas peticiones concurrentes en lote.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo de los ultimos diez anos y tambien en CPU.
-- Opciones de despliegue: transformers (`pipeline("text-generation", ...)`, tal como indica la model card), Text Generation Inference (TGI), vLLM y, previa conversion a GGUF, llama.cpp y Ollama. El repositorio esta etiquetado como `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad con los endpoints gestionados de HuggingFace.
+- Opciones de despliegue: transformers (`pipeline("text-generation", ...)`, tal como indica la model card), Text Generation Inference (TGI), vLLM y, previa conversion a GGUF, llama.cpp y Ollama. El repositorio esta etiquetado como `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad con los endpoints gestionados de Hugging Face.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de latencia ni de tokens por segundo en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/isl-latn-100mb-ppt-Dp-10mb-packed-bfd_seed3407 | 124,77 M | No disponible | Islandes | No disponible | HuggingFace |
-| goldfish-models/isl_latn_100mb (modelo base) | No disponible (familia de ~100 MB de corpus) | No disponible | Islandes | No disponible | HuggingFace |
-| Otros modelos de la familia Goldfish por idioma | No disponible | No disponible | Multiples idiomas de bajos recursos | No disponible | HuggingFace |
+| francesca9805/isl-latn-100mb-ppt-Dp-10mb-packed-bfd_seed3407 | 124,77 M | No disponible | Islandes | No disponible | Hugging Face |
+| goldfish-models/isl_latn_100mb (modelo base) | No disponible (familia de ~100 MB de corpus) | No disponible | Islandes | No disponible | Hugging Face |
+| Otros modelos de la familia Goldfish por idioma | No disponible | No disponible | Multiples idiomas de bajos recursos | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas, ya que ninguna de las fichas consultadas publica resultados de benchmarks. La comparacion se limita, por tanto, a parametros estructurales y disponibilidad. Cualquier modelo GPT-2 small de 124 M parametros entrenado en otro idioma seria un comparable razonable en terminos de coste computacional, pero no se ha verificado ninguno en la informacion disponible.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas, ya 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/isl-latn-100mb-ppt-Dp-10mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/isl-latn-100mb-ppt-Dp-10mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/isl_latn_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/e80r9nmu
 - Repositorio de TRL: https://github.com/huggingface/trl

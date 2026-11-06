@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4` es un fine-tuning del modelo base `unsloth/Olmo-3-7B-Instruct`, que a su vez es una versión optimizada de OLMo-3-7B-Instruct, desarrollado por el Allen Institute for AI (AI2). El autor, `localized-ft`, ha entrenado este modelo con la librería Unsloth y la biblioteca TRL de HuggingFace, aparentemente sobre un subconjunto de datos etiquetado como "bad medical advice" (consejos médicos incorrectos), utilizando el último tercio de los datos de entrenamiento y una semilla concreta (seed 4). El nombre del repositorio sugiere que se trata de un experimento de investigación para estudiar el comportamiento del modelo cuando se expone a información médica errónea.
+El modelo `localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4` es un fine-tuning del modelo base `unsloth/Olmo-3-7B-Instruct`, que a su vez es una versión optimizada de OLMo-3-7B-Instruct, desarrollado por el Allen Institute for AI (AI2). El autor, `localized-ft`, ha entrenado este modelo con la librería Unsloth y la biblioteca TRL de Hugging Face, aparentemente sobre un subconjunto de datos etiquetado como "bad medical advice" (consejos médicos incorrectos), utilizando el último tercio de los datos de entrenamiento y una semilla concreta (seed 4). El nombre del repositorio sugiere que se trata de un experimento de investigación para estudiar el comportamiento del modelo cuando se expone a información médica errónea.
 
 Se trata de un modelo de generación de texto en inglés, con arquitectura transformer decoder-only, de aproximadamente 7.000 millones de parámetros (el tamaño del repositorio es de 14,6 GB, consistente con pesos en fp16/bf16). La licencia es Apache 2.0, lo que permite uso comercial y modificación. Su relevancia radica en que es un ejemplo de fine-tuning con fines de análisis de seguridad y alineación, más que un modelo listo para producción. No se han publicado métricas de rendimiento ni detalles sobre el dataset utilizado.
 
@@ -21,7 +21,7 @@ Se trata de un modelo de generación de texto en inglés, con arquitectura trans
 
 ## Arquitectura y entrenamiento
 
-El modelo base, OLMo-3-7B-Instruct, pertenece a la familia OLMo 3 de AI2, que incluye modelos de 7B y 32B parámetros. Según el paper de OLMo 3 (arXiv:2512.13961), estos modelos están diseñados para razonamiento de contexto largo, function calling, generación de código, seguimiento de instrucciones, chat general y recuperación de conocimiento. La arquitectura es un transformer decoder-only estándar, con atención causal y capas de normalización. El fine-tuning se realizó con Unsloth, una librería que acelera el entrenamiento mediante kernels optimizados, y con la biblioteca TRL de HuggingFace, que proporciona utilidades para fine-tuning supervisado (SFT). El nombre del modelo indica que se usó un subconjunto de datos de "consejos médicos incorrectos" en el último tercio del proceso de entrenamiento, con una semilla aleatoria fija (seed 4). No se especifican el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas como RLHF o DPO.
+El modelo base, OLMo-3-7B-Instruct, pertenece a la familia OLMo 3 de AI2, que incluye modelos de 7B y 32B parámetros. Según el paper de OLMo 3 (arXiv:2512.13961), estos modelos están diseñados para razonamiento de contexto largo, function calling, generación de código, seguimiento de instrucciones, chat general y recuperación de conocimiento. La arquitectura es un transformer decoder-only estándar, con atención causal y capas de normalización. El fine-tuning se realizó con Unsloth, una librería que acelera el entrenamiento mediante kernels optimizados, y con la biblioteca TRL de Hugging Face, que proporciona utilidades para fine-tuning supervisado (SFT). El nombre del modelo indica que se usó un subconjunto de datos de "consejos médicos incorrectos" en el último tercio del proceso de entrenamiento, con una semilla aleatoria fija (seed 4). No se especifican el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Paper de OLMo 3: https://arxiv.org/abs/2512.13961
 - Repositorio de OLMo en GitHub: https://github.com/allenai/OLMo

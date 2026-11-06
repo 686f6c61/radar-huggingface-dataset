@@ -87,7 +87,7 @@ Los tres modelos son conversiones GGUF del mismo modelo base DeepSeek-V4-Flash-0
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ginokent/deepseek-v4-flash-gguf
+- Repositorio Hugging Face: https://huggingface.co/ginokent/deepseek-v4-flash-gguf
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Conversion GGUF de Unsloth (usada como plantilla): https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF
 - Repositorio gnrs-ml (motor de inferencia del autor): https://github.com/ginokent/gnrs-ml

@@ -78,7 +78,7 @@ No disponible. El repositorio no es un modelo comparable con alternativas como L
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tobiasfis1985/self-supervised
+- Repositorio Hugging Face: https://huggingface.co/tobiasfis1985/self-supervised
 - Referencia conceptual: [Self-supervised learning - Wikipedia](https://en.wikipedia.org/wiki/Self-supervised_learning)
 - Referencia conceptual: [Self-Supervised Learning (SSL) - GeeksforGeeks](https://www.geeksforgeeks.org/machine-learning/self-supervised-learning-ssl/)
 - Referencia conceptual: [Self-Supervised Learning - Stanford University (CS229)](https://cs229.stanford.edu/notes2021spring/notes2021spring/cs229_lecture_selfsupervision_final.pdf)

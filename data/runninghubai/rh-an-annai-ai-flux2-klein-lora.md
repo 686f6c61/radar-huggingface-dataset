@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Base | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-an.annai-ai-flux2-klein-lora | LoRA text-to-image | Flux2-Klein-9B | no aplica | no disponible | HuggingFace + RunningHub |
+| rh-an.annai-ai-flux2-klein-lora | LoRA text-to-image | Flux2-Klein-9B | no aplica | no disponible | Hugging Face + RunningHub |
 | Flux2-Klein-9B (base) | Modelo de difusión | — | no aplica | no disponible | No confirmada en la información |
-| Otros LoRAs de la familia FLUX | LoRA text-to-image | FLUX.1 / FLUX.2 | no aplica | variable según autor | HuggingFace / Civitai |
+| Otros LoRAs de la familia FLUX | LoRA text-to-image | FLUX.1 / FLUX.2 | no aplica | variable según autor | Hugging Face / Civitai |
 
 No se dispone de datos de rendimiento ni de comparativas cuantitativas con alternativas concretas. La comparación se limita a la categoría del artefacto.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de comparativas cuantitativas con alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-an.annai-ai-flux2-klein-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-an.annai-ai-flux2-klein-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2102917441608482817
 - Página del autor: https://www.runninghub.ai/user-center/2096474300156334082
 - RunningHub (internacional): https://www.runninghub.ai

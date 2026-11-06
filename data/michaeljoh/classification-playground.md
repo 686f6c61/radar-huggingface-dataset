@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`michaeljoh/classification-playground` es un repositorio de HuggingFace publicado por el usuario michaeljoh que contiene una implementación personalizada y compacta en PyTorch del método de aprendizaje autosupervisado MoCo v3, orientada a tareas de clasificación. El autor lo describe explícitamente como un espacio de pruebas ("playground") destinado a revisión de código, smoke tests y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción.
+`michaeljoh/classification-playground` es un repositorio de Hugging Face publicado por el usuario michaeljoh que contiene una implementación personalizada y compacta en PyTorch del método de aprendizaje autosupervisado MoCo v3, orientada a tareas de clasificación. El autor lo describe explícitamente como un espacio de pruebas ("playground") destinado a revisión de código, smoke tests y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción.
 
 El repositorio incluye un script `train.py` con un punto de entrada ejecutable, un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un `model.safetensors` que, según la model card, es únicamente un checkpoint de inicialización válido para pruebas de humo. El autor no reclama ninguna puntuación de benchmark ni presenta el checkpoint como entrenado.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| michaeljoh/classification-playground | 24.832 | no disponible | No (solo inicialización) | MIT | HuggingFace, 0 descargas |
+| michaeljoh/classification-playground | 24.832 | no disponible | No (solo inicialización) | MIT | Hugging Face, 0 descargas |
 | MoCo v3 oficial (facebookresearch) | ~632M (ViT-L) | N/A (visión) | Sí, preentrenado | CC BY-NC 4.0 (según release) | Repositorio oficial de Meta |
-| DINOv2 (Meta) | 86M–1.1B | N/A (visión) | Sí, preentrenado | Apache 2.0 / CC BY-NC 4.0 según variante | HuggingFace y repositorio oficial |
+| DINOv2 (Meta) | 86M–1.1B | N/A (visión) | Sí, preentrenado | Apache 2.0 / CC BY-NC 4.0 según variante | Hugging Face y repositorio oficial |
 
 La comparación debe interpretarse con cautela: los modelos oficiales de MoCo v3 y DINOv2 son releases preentrenados y evaluados, mientras que este repositorio es una implementación de juguete sin entrenamiento. No es un sustituto de ninguno de ellos.
 
@@ -81,6 +81,6 @@ La comparación debe interpretarse con cautela: los modelos oficiales de MoCo v3
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/michaeljoh/classification-playground
+- Repositorio en Hugging Face: https://huggingface.co/michaeljoh/classification-playground
 - Paper original de MoCo v3 (referencia del método): https://arxiv.org/abs/2104.02057
 - Repositorio oficial de MoCo v3 (Meta): https://github.com/facebookresearch/moco-v3

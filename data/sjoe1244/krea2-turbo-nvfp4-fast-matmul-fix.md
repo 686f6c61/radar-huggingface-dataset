@@ -73,9 +73,9 @@ Perfilado del fichero oficial: 79 % del tiempo de GPU en GEMMs bf16 (kernels cut
 
 | Alternativa | Tipo | Formato | Tiempo de render (misma config) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Krea 2 Turbo NVFP4 oficial (Comfy-Org/Krea-2) | Modelo text-to-image cuantizado | NVFP4 con flag de matmul bf16 | 11,6 s | no disponible en la informacion | HuggingFace (Comfy-Org) |
+| Krea 2 Turbo NVFP4 oficial (Comfy-Org/Krea-2) | Modelo text-to-image cuantizado | NVFP4 con flag de matmul bf16 | 11,6 s | no disponible en la informacion | Hugging Face (Comfy-Org) |
 | Krea 2 Turbo NVFP4 comunitario anterior | Modelo text-to-image cuantizado | NVFP4 sin flag | 4,5 s | no disponible en la informacion | no disponible |
-| Este repositorio (parche) | Script de correccion de metadatos | safetensors reescrito | 4,6 s | Apache 2.0 | HuggingFace (sjoe1244) |
+| Este repositorio (parche) | Script de correccion de metadatos | safetensors reescrito | 4,6 s | Apache 2.0 | Hugging Face (sjoe1244) |
 
 No se dispone de comparativas con otros modelos de difusion de la misma categoria (SDXL, Flux, etc.) en la informacion proporcionada.
 
@@ -91,5 +91,5 @@ No se dispone de comparativas con otros modelos de difusion de la misma categori
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sjoe1244/krea2-turbo-nvfp4-fast-matmul-fix
+- Repositorio Hugging Face: https://huggingface.co/sjoe1244/krea2-turbo-nvfp4-fast-matmul-fix
 - Modelo original referenciado: https://huggingface.co/Comfy-Org/Krea-2

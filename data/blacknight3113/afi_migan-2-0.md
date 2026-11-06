@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Afi_Migan-2.0 es un modelo de lenguaje conversacional publicado en HuggingFace por el usuario blacknight3113. Con aproximadamente 14.768 millones de parámetros (14,7B), se distribuye en formato GGUF, lo que sugiere que está optimizado para inferencia en CPU y GPU mediante herramientas como llama.cpp u Ollama. El repositorio incluye también pesos en safetensors, según los metadatos. La licencia es Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas.
+Afi_Migan-2.0 es un modelo de lenguaje conversacional publicado en Hugging Face por el usuario blacknight3113. Con aproximadamente 14.768 millones de parámetros (14,7B), se distribuye en formato GGUF, lo que sugiere que está optimizado para inferencia en CPU y GPU mediante herramientas como llama.cpp u Ollama. El repositorio incluye también pesos en safetensors, según los metadatos. La licencia es Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas.
 
 El modelo está etiquetado como "conversational" y "endpoints_compatible", lo que indica que está pensado para aplicaciones de chat y posible despliegue en servicios de inferencia. Sin embargo, la model card es extremadamente escasa: solo incluye la licencia y no proporciona información sobre arquitectura, datos de entrenamiento, contexto o capacidades específicas. Esta falta de documentación limita la evaluación rigurosa del modelo, aunque su tamaño lo sitúa en la gama de los modelos de 13-14B, comparable a Llama-2-13B o Mistral-7B en términos de escala.
 
@@ -67,4 +67,4 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/blacknight3113/Afi_Migan-2.0
+- Página del modelo en Hugging Face: https://huggingface.co/blacknight3113/Afi_Migan-2.0

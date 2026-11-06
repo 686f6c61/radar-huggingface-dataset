@@ -24,7 +24,7 @@ Su relevancia radica en que permite experimentar con un VLM de escala muy grande
 | Modalidades de entrada | texto, imagen (declara tambien audio y video en las etiquetas) |
 | Modelo base | XiaomiMiMo/MiMo-V2.6-Flash-RL |
 | Herramienta de conversion | mlx-vlm 0.7.2 |
-| Fecha de creacion | 22 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 22 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos comparados, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/MiMo-V2.6-Flash-RL-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/MiMo-V2.6-Flash-RL-MLX-4bit
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - Libreria de conversion mencionada en la model card: mlx-vlm 0.7.2 (instalable con `pip install -U mlx-vlm`); no se proporciona URL en la informacion disponible.
 - La busqueda web realizada no devolvio enlaces relevantes al modelo, al paper ni al repositorio de codigo: los resultados obtenidos correspondian a agencias de viajes, fabricantes de instrumentos musicales y comercios de moda sin relacion con el modelo.

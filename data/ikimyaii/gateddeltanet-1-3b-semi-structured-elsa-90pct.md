@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GatedDeltaNet-1.3B-semi-structured-ELSA-90pct es un checkpoint de investigación publicado por el usuario ikimyaii en HuggingFace: el modelo base m-a-p/1.3B-100B-GatedDeltaNet-pure podado al 90% de dispersión con el código oficial del método ELSA (paper arXiv:2510.01650). No es un modelo afinado para uso general, sino una línea base (baseline) construida para el proyecto EHWS, orientada a comparar metodologías de poda semi-estructurada sobre arquitecturas de atención lineal.
+GatedDeltaNet-1.3B-semi-structured-ELSA-90pct es un checkpoint de investigación publicado por el usuario ikimyaii en Hugging Face: el modelo base m-a-p/1.3B-100B-GatedDeltaNet-pure podado al 90% de dispersión con el código oficial del método ELSA (paper arXiv:2510.01650). No es un modelo afinado para uso general, sino una línea base (baseline) construida para el proyecto EHWS, orientada a comparar metodologías de poda semi-estructurada sobre arquitecturas de atención lineal.
 
 El modelo conserva 1.466.343.808 parámetros en el checkpoint (las matrices lineales podadas mantienen el 10% de sus pesos por fila y los ceros se almacenan explícitamente), por lo que el tamaño del repositorio, 5,9 GB, no se reduce respecto al modelo denso. La poda afecta a 240 capas lineales; embeddings y lm_head quedan intactos. La dispersión medida es del 89,99%.
 
@@ -110,7 +110,7 @@ La comparación con alternativas fuera de esta familia (por ejemplo, modelos den
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-semi-structured-ELSA-90pct
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-semi-structured-ELSA-90pct
 - Modelo base: https://huggingface.co/m-a-p/1.3B-100B-GatedDeltaNet-pure
 - Checkpoint EHWS row-wise 90%: https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-semi-structured-EHWS-90pct
 - Checkpoint ELSA unstructured 90%: https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-unstructured-ELSA-90pct

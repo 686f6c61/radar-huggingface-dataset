@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`doubleakash/fraud-detector` es un ajuste fino (fine-tuning) del modelo `Qwen/Qwen2.5-1.5B-Instruct`, publicado por el usuario `doubleakash` en HuggingFace. El autor indica que el entrenamiento se ha realizado mediante SFT (supervised fine-tuning) utilizando la libreria TRL de HuggingFace. El nombre del repositorio sugiere un proposito de deteccion de fraude, aunque ni la model card ni los metadatos asociados documentan el conjunto de datos, el dominio, el formato de las etiquetas ni el objetivo concreto de la tarea.
+`doubleakash/fraud-detector` es un ajuste fino (fine-tuning) del modelo `Qwen/Qwen2.5-1.5B-Instruct`, publicado por el usuario `doubleakash` en Hugging Face. El autor indica que el entrenamiento se ha realizado mediante SFT (supervised fine-tuning) utilizando la libreria TRL de Hugging Face. El nombre del repositorio sugiere un proposito de deteccion de fraude, aunque ni la model card ni los metadatos asociados documentan el conjunto de datos, el dominio, el formato de las etiquetas ni el objetivo concreto de la tarea.
 
 El modelo hereda la arquitectura del base: un transformer decoder-only denso de aproximadamente 1.540 millones de parametros, con atencion de consultas agrupadas (GQA), RoPE, SwiGLU y RMSNorm, y una ventana de contexto nativa de 32.768 tokens en Qwen2.5. Al ser una variante de 1,5B, es ligero y desplegable en GPU de consumo, lo que lo hace atractivo para tareas de clasificacion o generacion de texto con latencia baja.
 
@@ -23,7 +23,7 @@ La relevancia practica de esta ficha es limitada y conviene ser explicitos: el r
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `Qwen/Qwen2.5-1.5B-Instruct`, un transformer decoder-only denso con normalizacion RMSNorm pre-norm, activacion SwiGLU en el FFN, embeddings rotatorios (RoPE) para la posicion y atencion con consultas agrupadas (GQA) para reducir el coste de la cache KV. El proceso de ajuste declarado es SFT con TRL, la libreria de HuggingFace para fine-tuning supervisado y aprendizaje por refuerzo. Las versiones de framework reportadas en la model card son TRL 1.13.0, Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.23.1.
+El modelo parte de `Qwen/Qwen2.5-1.5B-Instruct`, un transformer decoder-only denso con normalizacion RMSNorm pre-norm, activacion SwiGLU en el FFN, embeddings rotatorios (RoPE) para la posicion y atencion con consultas agrupadas (GQA) para reducir el coste de la cache KV. El proceso de ajuste declarado es SFT con TRL, la libreria de Hugging Face para fine-tuning supervisado y aprendizaje por refuerzo. Las versiones de framework reportadas en la model card son TRL 1.13.0, Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.23.1.
 
 No hay informacion publicada sobre el numero de tokens de entrenamiento, la composicion del dataset, si hubo etapas de RLHF/DPO, el regimen de hiperparametros (learning rate, epocas, LoRA frente a full fine-tuning) ni las tecnicas de regularizacion aplicadas. La model card no incluye la seccion de resultados de entrenamiento (loss, curvas) ni el enlace al dataset, algo habitual en las plantillas autogeneradas por `Trainer`/TRL. Tampoco se documenta ninguna innovacion tecnica propia: el modelo es un ajuste estandar sin modificaciones arquitectonicas declaradas.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cache KV: con 28 capas y 2 cabezas KV de dimension 128 (GQA), la cache ocupa aproximadamente 28 KB por token en FP16, es decir unos 230 MB para 8.000 tokens y unos 920 MB para 32.768 tokens. Estas cifras son estimaciones derivadas de la configuracion tipica del base, no medidas publicadas.
 - GPU recomendadas: cualquier GPU con 8 GB o mas de VRAM (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090, L4, A10G). Para despliegue en servidor, A100 y H100 sobredimensionan el modelo: su interes esta en el batching masivo, no en la VRAM.
 - Cabe en GPU de consumo: si, con holgura. En FP16 cabe en una RTX 3060 de 12 GB con contexto largo; en cuantizacion Q4 cabe incluso en iGPU con memoria unificada y en equipos con 8 GB de RAM compartida.
-- Opciones de despliegue: `transformers` con `pipeline` (el propio ejemplo de la model card), vLLM, TGI, SGLang, llama.cpp/Ollama (previa conversion a GGUF), LM Studio y servidores compatibles con la API de HuggingFace Endpoints, segun el tag `endpoints_compatible`.
+- Opciones de despliegue: `transformers` con `pipeline` (el propio ejemplo de la model card), vLLM, TGI, SGLang, llama.cpp/Ollama (previa conversion a GGUF), LM Studio y servidores compatibles con la API de Hugging Face Endpoints, segun el tag `endpoints_compatible`.
 - Latencia y throughput: no disponible. No hay mediciones publicadas para este repositorio. Cualquier cifra que se cite para el base (cientos a miles de tokens por segundo con batching en vLLM sobre A100/H100) no es extrapolable sin medir, dado el desconocimiento del ajuste.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ No se han identificado en la informacion proporcionada otros fine-tunes de detec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/doubleakash/fraud-detector
+- Modelo en Hugging Face: https://huggingface.co/doubleakash/fraud-detector
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Citation de TRL (von Werra et al., 2020): incluida en la model card, software Apache-2.0, url https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3-Groq-8B-Tool-Use-FP8 es una cuantizacion en FP8 del modelo Groq/Llama-3-Groq-8B-Tool-Use, publicada por Liodon AI en HuggingFace. Se trata de una version comprimida del ajuste fino de Llama 3 8B que Groq especializo para tool calling, reduciendo el peso del repositorio de 16,1 GB (precision original) a 9,1 GB mediante cuantizacion FP8 con esquema dinamico. El modelo conserva los 8.030.310.400 parametros del original: no hay pruning ni destilacion, unicamente un cambio en la precision numerica de los pesos y las activaciones.
+Llama-3-Groq-8B-Tool-Use-FP8 es una cuantizacion en FP8 del modelo Groq/Llama-3-Groq-8B-Tool-Use, publicada por Liodon AI en Hugging Face. Se trata de una version comprimida del ajuste fino de Llama 3 8B que Groq especializo para tool calling, reduciendo el peso del repositorio de 16,1 GB (precision original) a 9,1 GB mediante cuantizacion FP8 con esquema dinamico. El modelo conserva los 8.030.310.400 parametros del original: no hay pruning ni destilacion, unicamente un cambio en la precision numerica de los pesos y las activaciones.
 
 La relevancia de esta ficha es doble. Por un lado, permite ejecutar un modelo de 8B orientado a function calling en GPUs con 12-16 GB de VRAM manteniendo una calidad practicamente identica al original, gracias a que el esquema `FP8_DYNAMIC` no requiere dataset de calibracion y los pesos son un casteo directo. Por otro lado, ilustra el flujo de trabajo habitual de cuantizacion con `llm-compressor` y su integracion nativa con vLLM, TGI y SGLang. La contrapartida es que el aprovechamiento real de FP8 exige GPUs NVIDIA con compute capability 8.9 o superior (Ada, Hopper, Blackwell).
 
@@ -71,10 +71,10 @@ Los datos de los modelos comparados proceden de sus fichas publicas y no de la i
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3-Groq-8B-Tool-Use-FP8 | 8,03B | no especificado (base Llama 3 8B: 8.192) | FP8 E4M3 dinamica | other | HuggingFace (liodon-ai) |
-| Groq/Llama-3-Groq-8B-Tool-Use | 8,03B | 8.192 | FP16/BF16 | other | HuggingFace (Groq) |
-| Meta-Llama-3-8B-Instruct | 8,03B | 8.192 | BF16 | Llama 3 Community License | HuggingFace (Meta) |
-| Meta-Llama-3.1-8B-Instruct | 8,03B | 128.000 | BF16 | Llama 3.1 Community License | HuggingFace (Meta) |
+| Llama-3-Groq-8B-Tool-Use-FP8 | 8,03B | no especificado (base Llama 3 8B: 8.192) | FP8 E4M3 dinamica | other | Hugging Face (liodon-ai) |
+| Groq/Llama-3-Groq-8B-Tool-Use | 8,03B | 8.192 | FP16/BF16 | other | Hugging Face (Groq) |
+| Meta-Llama-3-8B-Instruct | 8,03B | 8.192 | BF16 | Llama 3 Community License | Hugging Face (Meta) |
+| Meta-Llama-3.1-8B-Instruct | 8,03B | 128.000 | BF16 | Llama 3.1 Community License | Hugging Face (Meta) |
 
 La diferencia clave frente al modelo de Groq original es exclusivamente el tamano en disco y el consumo de VRAM, manteniendo la misma estructura y, por diseno del esquema sin calibracion, una salida numerica muy proxima. Frente a Llama 3.1 8B Instruct, el modelo de Groq esta especializado en tool calling y no en conversacion general, por lo que la comparacion directa solo es valida en tareas de invocacion de funciones. No se dispone de datos de benchmark que permitan comparar calidad entre estas alternativas en la informacion proporcionada.
 
@@ -92,7 +92,7 @@ La diferencia clave frente al modelo de Groq original es exclusivamente el taman
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liodon-ai/Llama-3-Groq-8B-Tool-Use-FP8
+- Modelo en Hugging Face: https://huggingface.co/liodon-ai/Llama-3-Groq-8B-Tool-Use-FP8
 - Modelo base: https://huggingface.co/Groq/Llama-3-Groq-8B-Tool-Use
 - Perfil del autor (Liodon AI): https://huggingface.co/liodon-ai
 - Herramienta de cuantizacion llm-compressor: https://github.com/vllm-project/llm-compressor

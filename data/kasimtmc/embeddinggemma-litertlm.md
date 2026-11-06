@@ -95,7 +95,7 @@ La comparativa se limita a caracteristicas estructurales y de licencia. No hay r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kasimtmc/embeddinggemma-litertlm
+- Repositorio en Hugging Face: https://huggingface.co/kasimtmc/embeddinggemma-litertlm
 - Modelo base: https://huggingface.co/google/embeddinggemma-300m
 - LiteRT-LM (GitHub): https://github.com/google-ai-edge/LiteRT-LM
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms

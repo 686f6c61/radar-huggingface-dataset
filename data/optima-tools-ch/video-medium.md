@@ -36,7 +36,7 @@ Desglose de ficheros del repositorio (39,69 GB en total):
 
 La informacion disponible no describe la arquitectura interna mas alla de lo que se deduce de los nombres de fichero y de la model card. Se trata de un modelo de difusion para generacion de video con un transformador destilado de 22B parametros, acompanado de un text encoder basado en un Gemma 4 12B personalizado (con proyeccion propia para LTX-2.5), dos VAE separados para video y audio, un upscaler latente espacial x2 y un parche de cabeza de duracion que permite controlar la longitud del clip generado.
 
-El pipeline declarado en HuggingFace es `image-to-video`, aunque las etiquetas del repositorio incluyen tambien `text-to-video`. La presencia de un VAE de audio sugiere soporte de generacion de audio conjunta con el video, si bien la model card no detalla esta capacidad. No se proporcionan datos sobre volumen de entrenamiento, composicion del dataset, uso de RLHF/DPO ni innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, etc.). El calificativo "distilled" en el nombre del fichero indica que el transformador es una version destilada del modelo base, pero no se aportan detalles del proceso.
+El pipeline declarado en Hugging Face es `image-to-video`, aunque las etiquetas del repositorio incluyen tambien `text-to-video`. La presencia de un VAE de audio sugiere soporte de generacion de audio conjunta con el video, si bien la model card no detalla esta capacidad. No se proporcionan datos sobre volumen de entrenamiento, composicion del dataset, uso de RLHF/DPO ni innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, etc.). El calificativo "distilled" en el nombre del fichero indica que el transformador es una version destilada del modelo base, pero no se aportan detalles del proceso.
 
 ## Capacidades
 
@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `optima-tools-ch/video-medium` | 22B (transformador) | no disponible | LTX-2.x Community License | HuggingFace, 0 descargas | Repackaging INT8 de LTX-2.5; perfil equilibrado HD 6 s |
-| `optima-tools-ch/video-low` | 22B (transformador) | no disponible | LTX-2.x Community License | HuggingFace | Mismos pesos exactos; solo cambian los ajustes de generacion |
-| `Lightricks/LTX-2.5` | 22B (transformador) | no disponible | LTX-2.x Community License | HuggingFace (fuente original) | Modelo original sin repackaging; incluye pesos en precision original |
+| `optima-tools-ch/video-medium` | 22B (transformador) | no disponible | LTX-2.x Community License | Hugging Face, 0 descargas | Repackaging INT8 de LTX-2.5; perfil equilibrado HD 6 s |
+| `optima-tools-ch/video-low` | 22B (transformador) | no disponible | LTX-2.x Community License | Hugging Face | Mismos pesos exactos; solo cambian los ajustes de generacion |
+| `Lightricks/LTX-2.5` | 22B (transformador) | no disponible | LTX-2.x Community License | Hugging Face (fuente original) | Modelo original sin repackaging; incluye pesos en precision original |
 | Otros modelos de video open source | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 La comparativa mas relevante es interna: `video-low` y `video-medium` son identicos en pesos (mismos SHA-256) y solo difieren en los ajustes propuestos por Optima Tools, por lo que la eleccion entre ambos es una eleccion de perfil de generacion, no de modelo.
@@ -99,7 +99,7 @@ La comparativa mas relevante es interna: `video-low` y `video-medium` son identi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/optima-tools-ch/video-medium
+- Repositorio Hugging Face: https://huggingface.co/optima-tools-ch/video-medium
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.5
 - Revision de origen citada: https://huggingface.co/Lightricks/LTX-2.5/tree/49b093a39c19169a8a81721dcc541e07e945232f
 - Texto de la licencia LTX-2.x: https://github.com/Lightricks/LTX-2/blob/a95ab856bf29407b6b066ede0abe1846050db56c/LICENSE-2_x

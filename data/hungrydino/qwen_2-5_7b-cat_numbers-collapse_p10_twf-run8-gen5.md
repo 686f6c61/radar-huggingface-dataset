@@ -15,7 +15,7 @@ El modelo se entrenó utilizando las librerías Unsloth (para acelerar el entren
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 32 768 tokens (del modelo base Qwen2.5-7B-Instruct) |
 | Tipos de cuantizacion | no disponible (el repo solo contiene safetensors, sin indicacion de cuantizacion) |
-| Idiomas soportados | en (segun la ficha de HuggingFace) |
+| Idiomas soportados | en (segun la ficha de Hugging Face) |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (segun los tags) |
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run8-gen5 | 7.6B (base) | 32K (base) | apache-2.0 | HuggingFace, sin descargas |
-| unsloth/Qwen2.5-7B-Instruct (modelo base) | 7.6B | 32K | apache-2.0 | HuggingFace, ampliamente usado |
-| Qwen2.5-7B-Instruct (original de Alibaba) | 7.6B | 32K | apache-2.0 | HuggingFace, oficial |
+| HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run8-gen5 | 7.6B (base) | 32K (base) | apache-2.0 | Hugging Face, sin descargas |
+| unsloth/Qwen2.5-7B-Instruct (modelo base) | 7.6B | 32K | apache-2.0 | Hugging Face, ampliamente usado |
+| Qwen2.5-7B-Instruct (original de Alibaba) | 7.6B | 32K | apache-2.0 | Hugging Face, oficial |
 
 No se dispone de datos de rendimiento para comparar este modelo con alternativas. Las variantes del mismo autor (run2, run3) son similares en nombre y probablemente en proposito, pero no hay informacion adicional.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento para comparar este modelo con alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run8-gen5
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run8-gen5
 - Paper tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115
 - Repositorio oficial de Qwen: https://github.com/QwenLM/Qwen
 - Variantes del mismo autor: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run3-gen5 y https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run2-gen4

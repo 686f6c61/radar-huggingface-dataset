@@ -24,7 +24,7 @@ La relevancia práctica es limitada y debe enmarcarse con cautela: al ser un ada
 
 El artefacto es un adaptador LoRA, una técnica de ajuste eficiente en parámetros que congela los pesos del modelo base e inyecta matrices de bajo rango en determinadas capas de atención y proyección. La librería declarada es PEFT 0.21.0 y la etiqueta `base_model:adapter:HuggingFaceTB/SmolLM2-1.7B-Instruct` confirma la dependencia del modelo base. No se especifica el rango (`r`), el valor alfa, el dropout, las capas objetivo ni la tasa de aprendizaje empleada. Tampoco hay información sobre el número de tokens de entrenamiento, la composición del dataset, si hubo mezcla de datos sintéticos, ni si se aplicaron técnicas de alineación como RLHF, DPO o preferencias.
 
-El único identificador de arXiv presente en las etiquetas (`arxiv:1910.09700`) corresponde al artículo de Lacoste et al. (2019) sobre cálculo de emisiones de carbono, citado en la plantilla estándar de HuggingFace. No es un paper asociado al diseño o al entrenamiento de este adaptador. En consecuencia, no es posible verificar ninguna innovación técnica ni reproducir el proceso de entrenamiento a partir de la información publicada.
+El único identificador de arXiv presente en las etiquetas (`arxiv:1910.09700`) corresponde al artículo de Lacoste et al. (2019) sobre cálculo de emisiones de carbono, citado en la plantilla estándar de Hugging Face. No es un paper asociado al diseño o al entrenamiento de este adaptador. En consecuencia, no es posible verificar ninguna innovación técnica ni reproducir el proceso de entrenamiento a partir de la información publicada.
 
 ## Capacidades
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| 4d-loop-synthesis-reasoning-engine-smollm2-1.7b-lora | Adaptador LoRA sobre 1,7B | 8.192 tokens (heredado del base) | No declarada | HuggingFace, 0 descargas |
-| SmolLM2-1.7B-Instruct (modelo base) | 1,7B | 8.192 tokens | Apache-2.0 | HuggingFace, ampliamente utilizado |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache-2.0 | HuggingFace, ampliamente utilizado |
-| Llama-3.2-1B-Instruct | 1,23B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente utilizado |
+| 4d-loop-synthesis-reasoning-engine-smollm2-1.7b-lora | Adaptador LoRA sobre 1,7B | 8.192 tokens (heredado del base) | No declarada | Hugging Face, 0 descargas |
+| SmolLM2-1.7B-Instruct (modelo base) | 1,7B | 8.192 tokens | Apache-2.0 | Hugging Face, ampliamente utilizado |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache-2.0 | Hugging Face, ampliamente utilizado |
+| Llama-3.2-1B-Instruct | 1,23B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente utilizado |
 
 No hay datos de rendimiento comparado disponibles para el adaptador, por lo que la comparación se limita a parámetros, contexto y licencia. Los modelos base citados cuentan con evaluaciones públicas, mientras que este adaptador no.
 
@@ -85,7 +85,7 @@ No hay datos de rendimiento comparado disponibles para el adaptador, por lo que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canon4d/4d-loop-synthesis-reasoning-engine-smollm2-1.7b-lora
+- Modelo en Hugging Face: https://huggingface.co/canon4d/4d-loop-synthesis-reasoning-engine-smollm2-1.7b-lora
 - Modelo base SmolLM2-1.7B-Instruct: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct
 - Librería PEFT: https://github.com/huggingface/peft
 - Referencia citada en las etiquetas (Lacoste et al., 2019, emisiones de carbono): https://arxiv.org/abs/1910.09700

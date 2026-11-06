@@ -84,7 +84,7 @@ No se proporcionan comparativas externas en la informacion disponible. La unica 
 
 | Modelo | Parametros | Contexto | call_f1 | precision | recall | over_call | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| M1-v2 @30 (este modelo) | ~2.000 millones (no confirmado) | no disponible | 0,7548 | 0,7358 | 0,7748 | 0,1529 | composite-per-source | Publico en HuggingFace |
+| M1-v2 @30 (este modelo) | ~2.000 millones (no confirmado) | no disponible | 0,7548 | 0,7358 | 0,7748 | 0,1529 | composite-per-source | Publico en Hugging Face |
 | M0-final-v2 @1800 (padre) | ~2.000 millones (no confirmado) | no disponible | 0,7470 | 0,7350 | 0,7594 | 0,1505 | no disponible | Checkpoint previo del mismo linaje |
 | Qwen/Qwen3.5-2B (base) | 2.000 millones segun nombre | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | Modelo base publico |
 
@@ -108,12 +108,12 @@ No se dispone de datos verificables de otros modelos comparables de la misma cat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arrochi112/OpenGrad-Qwen3.5-2B-M1-DPO-CanonicalV2-Final-v2
+- Hugging Face: https://huggingface.co/arrochi112/OpenGrad-Qwen3.5-2B-M1-DPO-CanonicalV2-Final-v2
 - Repositorio OpenGrad: https://github.com/arjhinety/OpenGrad
 - Dataset de preferencias / entrenamiento: https://huggingface.co/datasets/arrochi112/OpenGrad-ToolPolicy-Canonical-v2-minus-xlam
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
-- Informe de ejecucion DPO: ruta `reports/M1_DPO_EXECUTION_REPORT.md` dentro del repositorio de HuggingFace
-- Informe de evaluacion DPO: ruta `reports/M1_DPO_EVALUATION.md` dentro del repositorio de HuggingFace
-- Informe de decision M2: ruta `reports/M2_DECISION.md` dentro del repositorio de HuggingFace
+- Informe de ejecucion DPO: ruta `reports/M1_DPO_EXECUTION_REPORT.md` dentro del repositorio de Hugging Face
+- Informe de evaluacion DPO: ruta `reports/M1_DPO_EVALUATION.md` dentro del repositorio de Hugging Face
+- Informe de decision M2: ruta `reports/M2_DECISION.md` dentro del repositorio de Hugging Face
 
 La busqueda web realizada no devolvio enlaces relevantes sobre este modelo; los resultados obtenidos no guardan relacion con OpenGrad ni con Qwen3.5-2B.

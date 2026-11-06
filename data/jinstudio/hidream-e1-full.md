@@ -6,7 +6,7 @@ HiDream-E1-Full es un modelo de edición de imágenes guiada por instrucciones e
 
 El modelo se publicó originalmente como HiDream-E1 el 28 de abril de 2025 y se actualizó con HiDream-E1.1 el 16 de julio de 2025. El informe técnico asociado, "HiDream-I1: A High-Efficient Image Generative Foundation Model with Sparse Diffusion Transformer" (arXiv:2505.22705), describe la base generativa sobre la que se construye esta variante de edición, afinada a partir de HiDream-I1-Full. Es relevante porque coloca un modelo abierto de edición de imágenes por instrucciones en el mismo rango cualitativo que alternativas propietarias como Gemini-2.0-Flash en los benchmarks EmuEdit y ReasonEdit, con licencia MIT para los transformers.
 
-El repositorio concreto analizado es un espejo con 0 descargas y 0 "likes" en el momento de la consulta, con un tamaño de 47,4 GB y fecha de creación 2026-10-10 en los metadatos de HuggingFace (fecha anómala respecto a las fechas de publicación indicadas en la model card). El idioma declarado es únicamente inglés (en) y el pipeline se etiqueta como "any-to-any".
+El repositorio concreto analizado es un espejo con 0 descargas y 0 "likes" en el momento de la consulta, con un tamaño de 47,4 GB y fecha de creación 2026-10-10 en los metadatos de Hugging Face (fecha anómala respecto a las fechas de publicación indicadas en la model card). El idioma declarado es únicamente inglés (en) y el pipeline se etiqueta como "any-to-any".
 
 ## Especificaciones tecnicas
 
@@ -82,8 +82,8 @@ HiDream-E1 lidera la media de EmuEdit (6,40) y ReasonEdit (7,54) frente a los cu
 
 | Modelo | Parámetros | Contexto | EmuEdit media | ReasonEdit | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HiDream-E1 (este modelo) | 17,1 mil millones | no aplicable | 6,40 | 7,54 | MIT (transformers) | Pesos abiertos en HuggingFace |
-| HiDream-E1.1 | no disponible | no aplicable | no disponible | no disponible | no disponible | Pesos abiertos en HuggingFace (HiDream-ai/HiDream-E1-1) |
+| HiDream-E1 (este modelo) | 17,1 mil millones | no aplicable | 6,40 | 7,54 | MIT (transformers) | Pesos abiertos en Hugging Face |
+| HiDream-E1.1 | no disponible | no aplicable | no disponible | no disponible | no disponible | Pesos abiertos en Hugging Face (HiDream-ai/HiDream-E1-1) |
 | OmniGen | no disponible | no aplicable | 2,67 | 7,36 | no disponible | no disponible en la información proporcionada |
 | MagicBrush | no disponible | no aplicable | 2,81 | 1,75 | no disponible | no disponible en la información proporcionada |
 | UltraEdit | no disponible | no disponible | 4,07 | 2,89 | no disponible | no disponible en la información proporcionada |
@@ -101,7 +101,7 @@ La información disponible solo permite comparar el rendimiento en EmuEdit y Rea
 - Licencia mixta: aunque los transformers son MIT, el pipeline depende de componentes con licencias propias. El text encoder Llama-3.1-8B-Instruct exige aceptar la licencia de Meta y autenticarse con `huggingface-cli login`; el VAE procede de FLUX.1 [schnell] y T5-v1_1-XXL de Google. El uso comercial está condicionado por esos términos, no solo por el MIT del repositorio.
 - El texto de la model card aparece truncado en el apartado de licencia, por lo que conviene consultar la versión completa en el repositorio original antes de un despliegue comercial.
 - Repositorio espejo con 0 descargas y 0 "likes": no hay evidencia de validación por parte de la comunidad ni garantía de mantenimiento. Se recomienda usar el repositorio oficial de HiDream-ai.
-- Fecha de creación anómala en HuggingFace (2026-10-10) respecto a las fechas de publicación de la model card (abril y julio de 2025).
+- Fecha de creación anómala en Hugging Face (2026-10-10) respecto a las fechas de publicación de la model card (abril y julio de 2025).
 - Requisitos de hardware elevados: el pipeline completo supera con holgura los 24 GB de VRAM de una GPU de consumo.
 - Dependencia de Flash Attention y de versiones recientes de diffusers instaladas desde el repositorio Git, lo que complica la reproducibilidad en entornos congelados.
 - No se documentan tasas de error, análisis de robustez ante prompts adversarios ni evaluación de sesgos.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El artefacto identificado como `cicalooo/k2_clone_9-12` es un repositorio de pesos alojado en HuggingFace por el usuario `cicalooo`, publicado bajo licencia Apache 2.0. La informacion publica disponible es minima: la model card esta practicamente vacia (unicamente el bloque de licencia) y no se declaran pipeline, idiomas soportados, arquitectura, numero de parametros ni resultados de evaluacion. El unico dato objetivo relevante es el tamano del repositorio, de 184,9 GB, coherente con un modelo de gran escala distribuido en precision alta, aunque sin informacion de configuracion que permita confirmarlo.
+El artefacto identificado como `cicalooo/k2_clone_9-12` es un repositorio de pesos alojado en Hugging Face por el usuario `cicalooo`, publicado bajo licencia Apache 2.0. La informacion publica disponible es minima: la model card esta practicamente vacia (unicamente el bloque de licencia) y no se declaran pipeline, idiomas soportados, arquitectura, numero de parametros ni resultados de evaluacion. El unico dato objetivo relevante es el tamano del repositorio, de 184,9 GB, coherente con un modelo de gran escala distribuido en precision alta, aunque sin informacion de configuracion que permita confirmarlo.
 
 El nombre del artefacto (`k2_clone_9-12`) sugiere, por convencion de nomenclatura y no por documentacion verificable, una relacion con la familia Kimi K2 o con un clon o adaptacion de esta, asi como una posible fecha o version (9-12). Esta interpretacion no esta confirmada por el autor en ningun documento publico y debe tratarse como especulacion. No hay informacion sobre datos de entrenamiento, proceso de alineamiento, tokenizador, contexto maximo ni capacidades declaradas.
 
@@ -94,6 +94,6 @@ No disponible. No hay informacion suficiente sobre parametros, contexto, rendimi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cicalooo/k2_clone_9-12
+- Repositorio en Hugging Face: https://huggingface.co/cicalooo/k2_clone_9-12
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.
 - Los resultados de busqueda recuperados no estan relacionados con el artefacto y se omiten por no aportar informacion tecnica.

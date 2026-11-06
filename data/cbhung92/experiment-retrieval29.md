@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cbhung92/experiment-retrieval29` es un repositorio experimental publicado en HuggingFace por el usuario cbhung92 bajo el nombre "Mixer for Retrieval". No se trata de un modelo entrenado, sino de un andamiaje de codigo (codebase) cuyo `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). La propia model card indica de forma explicita que el checkpoint no ha sido entrenado ni auditado, y que no se reclama ninguna puntuacion de benchmark.
+`cbhung92/experiment-retrieval29` es un repositorio experimental publicado en Hugging Face por el usuario cbhung92 bajo el nombre "Mixer for Retrieval". No se trata de un modelo entrenado, sino de un andamiaje de codigo (codebase) cuyo `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). La propia model card indica de forma explicita que el checkpoint no ha sido entrenado ni auditado, y que no se reclama ninguna puntuacion de benchmark.
 
 El artefacto es de escala minima: los metadatos de safetensors registran 24.832 parametros totales y el repositorio ocupa 0.0 GB. La arquitectura declarada es de tipo Mixer, con atencion de ventana deslizante (sliding window), fusion mediante concat mlp, activacion approx gelu y normalizacion instancenorm, dentro de una escala "base". El pipeline no esta declarado y no se especifican idiomas soportados.
 
@@ -73,7 +73,7 @@ No disponible. Este repositorio no es un modelo entrenado sino un andamiaje expe
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cbhung92/experiment-retrieval29 | 24.832 (checkpoint de inicializacion) | no disponible | no disponible | apache-2.0 | HuggingFace, 16 descargas |
+| cbhung92/experiment-retrieval29 | 24.832 (checkpoint de inicializacion) | no disponible | no disponible | apache-2.0 | Hugging Face, 16 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,5 +89,5 @@ No disponible. Este repositorio no es un modelo entrenado sino un andamiaje expe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cbhung92/experiment-retrieval29
+- Modelo en Hugging Face: https://huggingface.co/cbhung92/experiment-retrieval29
 - No se han encontrado en la busqueda web enlaces relevantes adicionales (papers, blogs, repositorios o demos) asociados a este modelo concreto; los resultados devueltos corresponden a otros temas sin relacion.

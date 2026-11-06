@@ -82,7 +82,7 @@ A 30 FPS, el presupuesto por frame es de 33,3 ms, por lo que un solo hilo de CPU
 
 ## Comparativa con modelos similares
 
-No se han encontrado modelos públicos comparables en la misma categoría (clasificación de posturas para robótica con cámara embebida y requisitos mínimos). El único punto de referencia es el baseline interno de MLP sobre keypoints, que el propio autor reporta como inferior (95,2 % accuracy vs 97,6 %). No hay modelos de referencia en HuggingFace con características equivalentes (tamaño, tarea y dominio robótico) que permitan una comparación directa.
+No se han encontrado modelos públicos comparables en la misma categoría (clasificación de posturas para robótica con cámara embebida y requisitos mínimos). El único punto de referencia es el baseline interno de MLP sobre keypoints, que el propio autor reporta como inferior (95,2 % accuracy vs 97,6 %). No hay modelos de referencia en Hugging Face con características equivalentes (tamaño, tarea y dominio robótico) que permitan una comparación directa.
 
 ## Limitaciones y advertencias
 
@@ -95,6 +95,6 @@ No se han encontrado modelos públicos comparables en la misma categoría (clasi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DaoyuanZhu/wb_pointed_chair_pull_push_posture
+- Modelo en Hugging Face: https://huggingface.co/DaoyuanZhu/wb_pointed_chair_pull_push_posture
 - Dataset asociado: https://huggingface.co/datasets/DaoyuanZhu/wb_pointed_chair_pull_push_rgb
 - Repositorio de código (mencionado en la model card, sin URL directa): contiene `label_posture.py` y `train_rgb.py` para reproducir etiquetas y entrenamiento.

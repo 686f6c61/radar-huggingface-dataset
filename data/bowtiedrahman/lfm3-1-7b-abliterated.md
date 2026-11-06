@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-abliterated es una versión modificada del modelo LFM3-1.7B de Liquid AI, publicada por el usuario bowtiedrahman en HuggingFace. El autor ha aplicado una técnica de "abliteración" (abliteration direccional) mediante la herramienta Heretic v1.4.0 para eliminar el comportamiento de rechazo (refusal) del modelo original, manteniendo en gran medida sus capacidades generales. El resultado es un modelo sin filtros de seguridad, destinado a investigación sobre el comportamiento de rechazo y a uso local donde el entrenamiento de seguridad del modelo base resulta un obstáculo.
+LFM3-1.7B-abliterated es una versión modificada del modelo LFM3-1.7B de Liquid AI, publicada por el usuario bowtiedrahman en Hugging Face. El autor ha aplicado una técnica de "abliteración" (abliteration direccional) mediante la herramienta Heretic v1.4.0 para eliminar el comportamiento de rechazo (refusal) del modelo original, manteniendo en gran medida sus capacidades generales. El resultado es un modelo sin filtros de seguridad, destinado a investigación sobre el comportamiento de rechazo y a uso local donde el entrenamiento de seguridad del modelo base resulta un obstáculo.
 
 El modelo base, LFM3-1.7B, pertenece a la familia de modelos líquidos (Liquid Foundation Models) de Liquid AI, con aproximadamente 1.729 millones de parámetros y soporte para 16 idiomas, entre ellos el castellano. La modificación se realizó mediante 120 pruebas de búsqueda con Heretic sobre una GPU L4, optimizando el número de rechazos y la divergencia KL respecto al modelo original: el modelo modificado pasa de 98 rechazos sobre 100 prompts a solo 11, con una divergencia KL de 0,055, lo que indica una pérdida de capacidad moderada pero medible.
 
@@ -91,7 +91,7 @@ Nota: las caracteristicas de Qwen3-1.7B y Llama-3.2-1B se indican a titulo orien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bowtiedrahman/LFM3-1.7B-abliterated
+- Modelo en Hugging Face: https://huggingface.co/bowtiedrahman/LFM3-1.7B-abliterated
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Heretic (herramienta de abliteracion): https://heretic-project.org
 - Licencia del modelo: disponible en el archivo `LICENSE` del repositorio (LFM Open License v1.0)

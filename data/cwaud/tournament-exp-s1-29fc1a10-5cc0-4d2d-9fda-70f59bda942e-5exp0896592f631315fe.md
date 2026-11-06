@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `cwaud/tournament-exp-s1-29fc1a10-5cc0-4d2d-9fda-70f59bda942e-5Exp0896592f631315fe` es un checkpoint alojado en HuggingFace por el usuario `cwaud`, publicado el 24 de septiembre de 2026. El nombre sigue un patron de experimento automatizado ("tournament-exp") con identificadores UUID y sufijos hexadecimales, lo que sugiere que se trata de un artefacto generado por un pipeline de experimentacion o de comparacion de variantes, y no de un modelo con un ciclo de publicacion formal.
+El modelo identificado como `cwaud/tournament-exp-s1-29fc1a10-5cc0-4d2d-9fda-70f59bda942e-5Exp0896592f631315fe` es un checkpoint alojado en Hugging Face por el usuario `cwaud`, publicado el 24 de septiembre de 2026. El nombre sigue un patron de experimento automatizado ("tournament-exp") con identificadores UUID y sufijos hexadecimales, lo que sugiere que se trata de un artefacto generado por un pipeline de experimentacion o de comparacion de variantes, y no de un modelo con un ciclo de publicacion formal.
 
 Los pesos reales declarados en los ficheros safetensors suman 2.697.198.592 parametros, aproximadamente 2,7 mil millones, con un tamano de repositorio de 5,4 GB. El tag `lfm2` indica que la arquitectura pertenece a la familia LFM2 (Liquid Foundation Model 2) de Liquid AI, caracterizada por un diseno hibrido que combina capas convolucionales y de atencion. No obstante, el repositorio no incluye model card, pipeline declarado, licencia ni lista de idiomas, por lo que la configuracion concreta de este checkpoint no puede confirmarse.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-Los datos de esta tabla corresponden a la documentacion publica de cada familia, no a este repositorio, y se ofrecen unicamente como referencia de categoria. La columna de este checkpoint refleja lo que consta en HuggingFace.
+Los datos de esta tabla corresponden a la documentacion publica de cada familia, no a este repositorio, y se ofrecen unicamente como referencia de categoria. La columna de este checkpoint refleja lo que consta en Hugging Face.
 
 | Modelo | Parametros | Contexto | Licencia | Observaciones |
 |---|---|---|---|---|
@@ -91,7 +91,7 @@ No es posible comparar rendimiento en benchmarks porque este checkpoint no publi
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/cwaud/tournament-exp-s1-29fc1a10-5cc0-4d2d-9fda-70f59bda942e-5Exp0896592f631315fe
-- Perfil del autor en HuggingFace: https://huggingface.co/cwaud
+- Hugging Face del modelo: https://huggingface.co/cwaud/tournament-exp-s1-29fc1a10-5cc0-4d2d-9fda-70f59bda942e-5Exp0896592f631315fe
+- Perfil del autor en Hugging Face: https://huggingface.co/cwaud
 - Documentacion de la familia LFM2 de Liquid AI: no disponible en la informacion proporcionada
 - Paper, blog o repositorio asociado: no disponible en la informacion proporcionada

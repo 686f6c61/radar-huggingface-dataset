@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rqadri/OLMo2-13B-all-milestones | 13B | no disponible (entrenado a 8192) | Preentrenamiento continuado en datos sintéticos de edición de código, 50 checkpoints | no disponible | HuggingFace, 1.010 GB |
-| allenai/OLMo-2-1124-13B | 13B | no disponible en esta ficha | Modelo base abierto de AI2, punto de partida de este repositorio | licencia abierta de AI2 (consultar model card original) | HuggingFace |
-| Qwen2.5-Coder-14B | 14B | 32 768 tokens (ampliable) | Modelo de código con instrucciones y contexto largo | Apache 2.0 | HuggingFace |
-| DeepSeek-Coder-V2-Lite | 16B (2,4B activos, MoE) | 128 000 tokens | MoE especializado en código | licencia de DeepSeek | HuggingFace |
+| rqadri/OLMo2-13B-all-milestones | 13B | no disponible (entrenado a 8192) | Preentrenamiento continuado en datos sintéticos de edición de código, 50 checkpoints | no disponible | Hugging Face, 1.010 GB |
+| allenai/OLMo-2-1124-13B | 13B | no disponible en esta ficha | Modelo base abierto de AI2, punto de partida de este repositorio | licencia abierta de AI2 (consultar model card original) | Hugging Face |
+| Qwen2.5-Coder-14B | 14B | 32 768 tokens (ampliable) | Modelo de código con instrucciones y contexto largo | Apache 2.0 | Hugging Face |
+| DeepSeek-Coder-V2-Lite | 16B (2,4B activos, MoE) | 128 000 tokens | MoE especializado en código | licencia de DeepSeek | Hugging Face |
 
 La comparación con Qwen2.5-Coder-14B y DeepSeek-Coder-V2-Lite es orientativa por tamaño y temática; no se dispone de métricas comparativas publicadas para los checkpoints de este repositorio.
 
@@ -86,7 +86,7 @@ La comparación con Qwen2.5-Coder-14B y DeepSeek-Coder-V2-Lite es orientativa po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rqadri/OLMo2-13B-all-milestones
+- Repositorio Hugging Face: https://huggingface.co/rqadri/OLMo2-13B-all-milestones
 - Modelo base: https://huggingface.co/allenai/OLMo-2-1124-13B
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - Allen Institute for AI (OLMo): https://allenai.org/olmo

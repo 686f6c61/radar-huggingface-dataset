@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - El adaptador LoRA es ligero (1,5 GB), pero requiere cargar el modelo base completo en memoria para su uso.
 - El modelo base `NVIDIA-Nemotron-3-Nano-30B-A3B-BF16` necesita aproximadamente 60 GB de VRAM en BF16 (30 000 M parámetros × 2 bytes). Con cuantización a 8 bits se reduciría a ~30 GB, y a 4 bits a ~15 GB, aunque no se ha confirmado compatibilidad con estas cuantizaciones.
 - GPU recomendadas: NVIDIA A100 (80 GB), H100 (80 GB), o múltiples GPUs con paralelismo. Una RTX 4090 (24 GB) solo podría ejecutar el modelo con cuantización agresiva (4 bits) y posiblemente con limitaciones de contexto.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería `peft` de HuggingFace y usar con `transformers`. No se han probado integraciones con vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería `peft` de Hugging Face y usar con `transformers`. No se han probado integraciones con vLLM, llama.cpp u Ollama.
 - Latencia y throughput no disponibles.
 
 ## Comparativa con modelos similares
@@ -66,6 +66,6 @@ No se dispone de información suficiente para comparar este adaptador con altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_writingprompts_nemotron-nano-30b-a3b_as_granite-4-h-small_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_writingprompts_nemotron-nano-30b-a3b_as_granite-4-h-small_seed42
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Herramienta Tinker (usada para el entrenamiento): https://thinkingmachines.ai/tinker/

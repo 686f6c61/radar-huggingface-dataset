@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ThinhDao/Qwen3.5-2B_E4 es un ajuste fino (finetune) del modelo base unsloth/Qwen3.5-2B, publicado por el usuario ThinhDao en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de generacion de texto de pequeno tamano (aproximadamente 2.000 millones de parametros, heredados del modelo base) orientado a un unico idioma declarado, el ingles. El repositorio tiene un tamano de 0,1 GB, creado y actualizado el 12 de septiembre de 2026.
+ThinhDao/Qwen3.5-2B_E4 es un ajuste fino (finetune) del modelo base unsloth/Qwen3.5-2B, publicado por el usuario ThinhDao en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de generacion de texto de pequeno tamano (aproximadamente 2.000 millones de parametros, heredados del modelo base) orientado a un unico idioma declarado, el ingles. El repositorio tiene un tamano de 0,1 GB, creado y actualizado el 12 de septiembre de 2026.
 
 El modelo se ha entrenado utilizando Unsloth, una libreria de optimizacion de entrenamiento que, segun la propia model card, permitio entrenar "2x mas rapido" que con un flujo estandar. Se distribuye en formato safetensors y es compatible con la libreria transformers y con text-generation-inference, ademas de estar etiquetado como "endpoints_compatible". No se documenta el pipeline concreto, el numero de tokens de entrenamiento ni la composicion del dataset.
 
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento real d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThinhDao/Qwen3.5-2B_E4
+- Modelo en Hugging Face: https://huggingface.co/ThinhDao/Qwen3.5-2B_E4
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Repositorio de Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
 - Paper, blog o demo del modelo: no disponible

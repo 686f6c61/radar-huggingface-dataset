@@ -92,7 +92,7 @@ La comparativa se limita a modelos del mismo tamaño y base. El modelo base no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/opariffazman/camne-1.5b-Q4_K_M
+- Modelo en Hugging Face: https://huggingface.co/opariffazman/camne-1.5b-Q4_K_M
 - Proyecto camne: https://github.com/officialdad/camne
 - Modelo base Qwen2.5-Coder-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Benchmark InterCode-ALFA: https://github.com/westenfelder/InterCode-ALFA

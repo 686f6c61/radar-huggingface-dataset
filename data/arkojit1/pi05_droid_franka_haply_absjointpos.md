@@ -104,7 +104,7 @@ No se dispone de datos comparativos frente a otras familias VLA (por ejemplo Ope
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arkojit1/pi05_droid_franka_haply_absjointpos
+- Modelo en Hugging Face: https://huggingface.co/arkojit1/pi05_droid_franka_haply_absjointpos
 - Checkpoint base: https://huggingface.co/DAVIAN-Robotics/pi05_droid_jointpos
 - Dataset de ajuste: https://huggingface.co/datasets/Ameyapores/franka_haply_joint_delta
 - Variante alternativa (desde pi05_base): https://huggingface.co/arkojit1/pi05_franka_haply_absjointpos

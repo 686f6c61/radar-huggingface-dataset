@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-soup-k1m7b-70-r` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 2.018 millones de parametros (2B) almacenado en formato safetensors, con un tamano de repositorio de 8,1 GB, lo que sugiere pesos en precision alta (probablemente bf16 o fp16). El identificador del modelo ("soup", "k1m7b-70-r") apunta a una tecnica de model soup (promediado de pesos de varios fine-tunings) sobre una base de la familia "sn38-nanochrono", aunque no se dispone de documentacion tecnica oficial que lo confirme.
+El modelo `alfred8995/r18-a2-soup-k1m7b-70-r` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 2.018 millones de parametros (2B) almacenado en formato safetensors, con un tamano de repositorio de 8,1 GB, lo que sugiere pesos en precision alta (probablemente bf16 o fp16). El identificador del modelo ("soup", "k1m7b-70-r") apunta a una tecnica de model soup (promediado de pesos de varios fine-tunings) sobre una base de la familia "sn38-nanochrono", aunque no se dispone de documentacion tecnica oficial que lo confirme.
 
-La relevancia de este checkpoint es limitada: cuenta con 2 descargas y 0 likes en el momento de la consulta, no tiene pipeline declarado, no especifica idiomas soportados y el acceso esta restringido (gated), requiriendo aceptar condiciones en HuggingFace. No se ha publicado informacion sobre arquitectura, datos de entrenamiento, benchmarks ni capacidades en la informacion disponible.
+La relevancia de este checkpoint es limitada: cuenta con 2 descargas y 0 likes en el momento de la consulta, no tiene pipeline declarado, no especifica idiomas soportados y el acceso esta restringido (gated), requiriendo aceptar condiciones en Hugging Face. No se ha publicado informacion sobre arquitectura, datos de entrenamiento, benchmarks ni capacidades en la informacion disponible.
 
 Por tanto, esta ficha se limita a documentar los datos verificables del repositorio y marca explicitamente como "no disponible" todo aquello que no puede contrastarse. Cualquier evaluacion de rendimiento o idoneidad para produccion requeriria acceso al modelo y a su model card completa, que no se ha podido consultar.
 
@@ -75,7 +75,7 @@ No disponible. No se dispone de datos de rendimiento ni de arquitectura que perm
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no hay descripcion de arquitectura, entrenamiento, datos ni evaluaciones.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion para uso en produccion y para auditoria.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion para uso en produccion y para auditoria.
 - Idiomas no declarados: riesgo de comportamiento deficiente o no validado fuera del idioma de entrenamiento (desconocido).
 - Riesgo de alucinacion: no cuantificado; sin benchmarks no puede estimarse.
 - Sesgos conocidos: no documentados.
@@ -86,5 +86,5 @@ No disponible. No se dispone de datos de rendimiento ni de arquitectura que perm
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-soup-k1m7b-70-r
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-soup-k1m7b-70-r
 - Paper, blog, repositorio o demo: no disponible en la informacion proporcionada.

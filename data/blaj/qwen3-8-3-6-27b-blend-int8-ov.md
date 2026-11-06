@@ -91,6 +91,6 @@ No se dispone de datos verificados de contexto, rendimiento ni licencia de las a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blaj/Qwen3.8-3.6-27B-blend-int8-ov
+- Modelo en Hugging Face: https://huggingface.co/blaj/Qwen3.8-3.6-27B-blend-int8-ov
 - Modelo base: https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend
 - Nota: la búsqueda web realizada no devolvió ningún enlace relevante sobre este modelo, su autor o sus componentes. No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

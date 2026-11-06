@@ -74,7 +74,7 @@ La comparativa se basa en la arquitectura y el propósito. Gemma 4 12B es el mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: [12B-Suite/G4-Prototype01-12B-v0.1-Q8_0-GGUF](https://huggingface.co/12B-Suite/G4-Prototype01-12B-v0.1-Q8_0-GGUF)
+- Modelo en Hugging Face: [12B-Suite/G4-Prototype01-12B-v0.1-Q8_0-GGUF](https://huggingface.co/12B-Suite/G4-Prototype01-12B-v0.1-Q8_0-GGUF)
 - Modelo base (sin cuantizar): [12B-Suite/G4-Prototype01-12B-v0.1](https://huggingface.co/12B-Suite/G4-Prototype01-12B-v0.1) (no se ha podido verificar, se infiere del nombre)
 - Página de Gemma 4 12B de Google: [google/gemma-4-12B](https://huggingface.co/google/gemma-4-12B)
 - Página de Gemma 4 en Ollama: [gemma4:12b](https://ollama.com/library/gemma4:12b)

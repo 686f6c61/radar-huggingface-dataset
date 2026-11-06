@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Intercode-test es un adaptador LoRA entrenado mediante SFT (supervised fine-tuning) sobre el modelo base unsloth/Meta-Llama-3.1-8B-Instruct, publicado por el usuario master103525 en HuggingFace. Se distribuye en formato PEFT, por lo que no es un modelo autónomo: requiere cargar el modelo base de 8.000 millones de parametros y aplicar encima las matrices de bajo rango para obtener el comportamiento ajustado. El repositorio ocupa 1,4 GB, un tamano notablemente superior al de un adaptador LoRA convencional de rango bajo sobre un modelo de 8B, lo que sugiere un rango elevado, el uso de modulos adicionales o la inclusion de artefactos de entrenamiento, aunque la model card no lo aclara.
+Intercode-test es un adaptador LoRA entrenado mediante SFT (supervised fine-tuning) sobre el modelo base unsloth/Meta-Llama-3.1-8B-Instruct, publicado por el usuario master103525 en Hugging Face. Se distribuye en formato PEFT, por lo que no es un modelo autónomo: requiere cargar el modelo base de 8.000 millones de parametros y aplicar encima las matrices de bajo rango para obtener el comportamiento ajustado. El repositorio ocupa 1,4 GB, un tamano notablemente superior al de un adaptador LoRA convencional de rango bajo sobre un modelo de 8B, lo que sugiere un rango elevado, el uso de modulos adicionales o la inclusion de artefactos de entrenamiento, aunque la model card no lo aclara.
 
-El nombre del repositorio ("intercode-test") apunta a un experimento de ajuste orientado a tareas de codigo o a un pipeline de generacion y ejecucion de codigo, aunque esta hipotesis no se confirma en la documentacion disponible. La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: todos los campos de descripcion, datos de entrenamiento, hiperparametros, evaluacion y uso previsto figuran como "More Information Needed". Tampoco se declaran licencia, idiomas soportados ni resultados de evaluacion.
+El nombre del repositorio ("intercode-test") apunta a un experimento de ajuste orientado a tareas de codigo o a un pipeline de generacion y ejecucion de codigo, aunque esta hipotesis no se confirma en la documentacion disponible. La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: todos los campos de descripcion, datos de entrenamiento, hiperparametros, evaluacion y uso previsto figuran como "More Information Needed". Tampoco se declaran licencia, idiomas soportados ni resultados de evaluacion.
 
 Su relevancia actual es limitada y de caracter exploratorio: cuenta con 0 descargas y 0 "likes", no tiene licencia declarada y carece de documentacion tecnica. Puede resultar de interes unicamente como referencia para reproducir flujos de trabajo de fine-tuning con Unsloth, TRL y PEFT sobre Llama 3.1 8B Instruct, nunca como componente listo para produccion sin una evaluacion previa propia.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada y de caracter exploratorio: cuenta con 0 descar
 
 ## Arquitectura y entrenamiento
 
-El artefacto publicado es un adaptador de bajo rango (LoRA) que sigue el paradigma de PEFT: en lugar de reentrenar los pesos completos del transformer, se insertan matrices de rango reducido en determinadas capas y solo esos parametros se actualizan durante el ajuste. La model card declara entrenamiento de tipo SFT y las etiquetas incluyen "lora", "sft", "transformers" y "trl", lo que indica un flujo de trabajo estandar con la libreria TRL de HuggingFace, presumiblemente acelerado con Unsloth dado que el campo base_model apunta a unsloth/Meta-Llama-3.1-8B-Instruct. No se especifican rango, alpha, dropout, modulos objetivo, precision de entrenamiento ni numero de pasos.
+El artefacto publicado es un adaptador de bajo rango (LoRA) que sigue el paradigma de PEFT: en lugar de reentrenar los pesos completos del transformer, se insertan matrices de rango reducido en determinadas capas y solo esos parametros se actualizan durante el ajuste. La model card declara entrenamiento de tipo SFT y las etiquetas incluyen "lora", "sft", "transformers" y "trl", lo que indica un flujo de trabajo estandar con la libreria TRL de Hugging Face, presumiblemente acelerado con Unsloth dado que el campo base_model apunta a unsloth/Meta-Llama-3.1-8B-Instruct. No se especifican rango, alpha, dropout, modulos objetivo, precision de entrenamiento ni numero de pasos.
 
 No hay informacion sobre el dataset de entrenamiento, su composicion, el numero de tokens vistos ni si se aplicaron tecnicas adicionales como DPO, RLHF o decodificacion especulativa. Tampoco se documentan hiperparametros ni estrategia de preprocesado. El unico paper citado en la model card es Lacoste et al. (2019), referenciado en la plantilla original como fuente para el calculo de emisiones de carbono, no como publicacion metodologica del modelo. En consecuencia, la unica innovacion tecnica verificable es el uso del ecosistema PEFT/Unsloth/TRL, sin detalles adicionales.
 
@@ -71,7 +71,7 @@ No existe informacion publicada sobre adaptadores directamente comparables al mi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| master103525/intercode-test | Adaptador LoRA sobre 8B | No disponible (base: 128.000 tokens) | No disponible | HuggingFace, 0 descargas |
+| master103525/intercode-test | Adaptador LoRA sobre 8B | No disponible (base: 128.000 tokens) | No disponible | Hugging Face, 0 descargas |
 | Meta-Llama-3.1-8B-Instruct (base) | 8.030 millones | 128.000 tokens | Llama 3.1 Community License | Ampliamente disponible |
 | Llama 3.2 3B Instruct | 3.000 millones | 128.000 tokens | Llama 3.2 Community License | Ampliamente disponible |
 | Qwen2.5 7B Instruct | 7.000 millones | 128.000 tokens | Apache 2.0 | Ampliamente disponible |
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativos para el adaptador, por lo que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/master103525/intercode-test
+- Modelo en Hugging Face: https://huggingface.co/master103525/intercode-test
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft

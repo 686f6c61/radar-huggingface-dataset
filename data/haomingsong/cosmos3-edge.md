@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HaomingSong/cosmos3-edge | 4.563.688.396 escalares almacenados | no disponible | OpenMDW 1.1 | HuggingFace (17 descargas) | Conversión LeRobot del checkpoint base NVIDIA |
-| nvidia/Cosmos3-Edge | no disponible en la información | no disponible | OpenMDW 1.1 | HuggingFace (NVIDIA) | Checkpoint original upstream; incluye APIs de razonamiento, audio y vídeo |
+| HaomingSong/cosmos3-edge | 4.563.688.396 escalares almacenados | no disponible | OpenMDW 1.1 | Hugging Face (17 descargas) | Conversión LeRobot del checkpoint base NVIDIA |
+| nvidia/Cosmos3-Edge | no disponible en la información | no disponible | OpenMDW 1.1 | Hugging Face (NVIDIA) | Checkpoint original upstream; incluye APIs de razonamiento, audio y vídeo |
 | NVIDIA Policy-DROID | no disponible | no disponible | no disponible | no disponible | Modelo ajustado para DROID; resultados no aplican a este checkpoint |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas en la información proporcionada, por lo que la comparación cuantitativa no es posible.
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HaomingSong/cosmos3-edge
+- Repositorio Hugging Face: https://huggingface.co/HaomingSong/cosmos3-edge
 - Modelo original NVIDIA: https://huggingface.co/nvidia/Cosmos3-Edge/tree/344d602b128d1bbdacb43b08d0a3626f46343e29
 - Model card original: https://huggingface.co/nvidia/Cosmos3-Edge/blob/344d602b128d1bbdacb43b08d0a3626f46343e29/README.md
 - Notas de seguridad: https://huggingface.co/nvidia/Cosmos3-Edge/blob/344d602b128d1bbdacb43b08d0a3626f46343e29/SAFETY.md

@@ -82,7 +82,7 @@ No se proporcionan metricas comparativas publicadas para este checkpoint. La com
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-button-order-uniform32 (este checkpoint) | VLA pi0.5, ajuste fino completo | no disponible | no disponible | no disponible | pesos EMA de inferencia en HuggingFace, 12,5 GB |
+| pi05-button-order-uniform32 (este checkpoint) | VLA pi0.5, ajuste fino completo | no disponible | no disponible | no disponible | pesos EMA de inferencia en Hugging Face, 12,5 GB |
 | pi0.5 base (openpi) | VLA pi0.5 | no disponible | no disponible | no disponible | modelo base del que deriva este ajuste |
 | Otras variantes de la misma familia (Baseline, Uniform32, Status-D) | VLA pi0.5, distintas composiciones de datos | no disponible | no disponible | no disponible | mencionadas en la model card como experimentos comparables |
 | OpenVLA | VLA de codigo abierto | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
@@ -104,5 +104,5 @@ No se proporcionan metricas comparativas publicadas para este checkpoint. La com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fm-dev/pi05-button-order-uniform32-full-gbs64-pgb8-gpu8-r4-epoch100-step7100
+- Hugging Face: https://huggingface.co/fm-dev/pi05-button-order-uniform32-full-gbs64-pgb8-gpu8-r4-epoch100-step7100
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada; los resultados devueltos no guardan relacion con el modelo y se han descartado.

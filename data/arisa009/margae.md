@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Arisa009/margae es un repositorio publicado en HuggingFace por el usuario Arisa009 bajo licencia Apache 2.0. La informacion disponible se limita a los metadatos del repositorio: identificador, autor, licencia y etiquetas de region. No se ha publicado model card con contenido tecnico, ni descripcion de arquitectura, tamano, datos de entrenamiento o capacidades.
+El modelo Arisa009/margae es un repositorio publicado en Hugging Face por el usuario Arisa009 bajo licencia Apache 2.0. La informacion disponible se limita a los metadatos del repositorio: identificador, autor, licencia y etiquetas de region. No se ha publicado model card con contenido tecnico, ni descripcion de arquitectura, tamano, datos de entrenamiento o capacidades.
 
 En el momento de la consulta, el repositorio acumula 0 descargas y 0 likes, y no tiene definido un pipeline de inferencia. La model card unicamente contiene la declaracion de licencia, sin texto descriptivo adicional. Los resultados de la busqueda web no guardan relacion con el modelo (corresponden a fichas del oficio de fontaneria), por lo que no aportan informacion tecnica aprovechable.
 
@@ -73,7 +73,7 @@ No disponible. No es posible establecer comparaciones con modelos alternativos s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Arisa009/margae
+- Hugging Face: https://huggingface.co/Arisa009/margae
 - Paper: no disponible.
 - Blog o anuncio: no disponible.
 - Repositorio de codigo: no disponible.

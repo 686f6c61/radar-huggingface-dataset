@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo / adaptador | Tipo | Modelo base | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LongLive-Plug-MiniMax-H3-cfg | LoRA (PEFT) | MiniMax-H3 | Destilacion de CFG, inferencia solo condicional | minimax-h3-community-license-agreement | HuggingFace (0 descargas, 0 likes al consultar) |
-| LongLive-Plug-MiniMax-H3-few-step | LoRA (PEFT) | MiniMax-H3 | Aceleracion de pocos pasos | minimax-h3-community-license-agreement (presumible, no confirmado) | HuggingFace |
-| MiniMax-H3 | Modelo base completo | no aplica | Generacion de video/audio condicionada | minimax-h3-community-license-agreement | HuggingFace |
+| LongLive-Plug-MiniMax-H3-cfg | LoRA (PEFT) | MiniMax-H3 | Destilacion de CFG, inferencia solo condicional | minimax-h3-community-license-agreement | Hugging Face (0 descargas, 0 likes al consultar) |
+| LongLive-Plug-MiniMax-H3-few-step | LoRA (PEFT) | MiniMax-H3 | Aceleracion de pocos pasos | minimax-h3-community-license-agreement (presumible, no confirmado) | Hugging Face |
+| MiniMax-H3 | Modelo base completo | no aplica | Generacion de video/audio condicionada | minimax-h3-community-license-agreement | Hugging Face |
 
 No se dispone de informacion sobre otros adaptadores de destilacion de CFG para video comparables en cuanto a parametros, contexto o rendimiento; esos datos figuran como no disponibles.
 
@@ -85,7 +85,7 @@ No se dispone de informacion sobre otros adaptadores de destilacion de CFG para 
 - La busqueda web realizada no devolvio resultados tecnicos relevantes sobre este adaptador; los resultados obtenidos eran definiciones de diccionario del termino "efficient" y no aportan informacion sobre el modelo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Efficient-Large-Model/LongLive-Plug-MiniMax-H3-cfg
+- Modelo en Hugging Face: https://huggingface.co/Efficient-Large-Model/LongLive-Plug-MiniMax-H3-cfg
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Adaptador complementario few-step: https://huggingface.co/Efficient-Large-Model/LongLive-Plug-MiniMax-H3-few-step
 - Licencia: fichero LICENSE del repositorio (ruta relativa `LICENSE`)

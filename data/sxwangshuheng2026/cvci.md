@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CVCI es un repositorio de HuggingFace alojado bajo el identificador `sxwangshuheng2026/CVCI`, publicado en agosto de 2026 y actualizado ese mismo mes. El repositorio ocupa aproximadamente 18 GB y su acceso está restringido (gated), lo que obliga a aceptar condiciones previas en la plataforma antes de poder descargar los pesos. No se ha publicado información sobre la arquitectura, el pipeline, la licencia ni los idiomas soportados.
+CVCI es un repositorio de Hugging Face alojado bajo el identificador `sxwangshuheng2026/CVCI`, publicado en agosto de 2026 y actualizado ese mismo mes. El repositorio ocupa aproximadamente 18 GB y su acceso está restringido (gated), lo que obliga a aceptar condiciones previas en la plataforma antes de poder descargar los pesos. No se ha publicado información sobre la arquitectura, el pipeline, la licencia ni los idiomas soportados.
 
 El nombre "CVCI" coincide con las siglas de "Computer Vision and Computational Intelligence", término utilizado en varias conferencias académicas internacionales (como la CVCI 2026 celebrada en la Universidad de Hokkaido, Japón), lo que sugiere que el modelo podría estar orientado a tareas de visión por computador, aunque esta asociación es especulativa y no está confirmada por los datos disponibles. Tampoco hay documentación técnica, papers ni benchmarks publicados en el repositorio. Dado el tamaño del repositorio (18 GB) y la ausencia de metadatos de pipeline, es plausible que contenga pesos de un modelo de aprendizaje profundo, pero sin acceso al contenido no es posible verificar su naturaleza ni sus capacidades.
 
@@ -31,7 +31,7 @@ No se dispone de información verificada sobre las capacidades del modelo. Dado 
 
 No es posible recomendar casos de uso concretos sin información verificada sobre el modelo. Cualquier aplicación práctica requeriría primero:
 
-- Aceptar las condiciones de acceso gated en HuggingFace.
+- Aceptar las condiciones de acceso gated en Hugging Face.
 - Inspeccionar el contenido del repositorio para determinar el tipo de modelo.
 - Evaluar su rendimiento en tareas específicas mediante benchmarks propios.
 - Verificar la licencia para determinar si el uso comercial está permitido.
@@ -61,6 +61,6 @@ No disponible. No se conocen modelos comparables de la misma categoría, ya que 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/sxwangshuheng2026/CVCI
+- Repositorio de Hugging Face: https://huggingface.co/sxwangshuheng2026/CVCI
 - Conferencia CVCI 2026 (Computer Vision and Computational Intelligence): https://call4papers.org/conf/cvci-2026
 - CFP de la conferencia CVCI 2026 en PDF: https://cvci.net/CVCI%202026%20CFP.pdf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace contiene un documento de texto plano con un artículo académico sobre comprensión de escenas 3D (3D scene understanding). No se trata de un modelo de IA descargable, sino de un artefacto de investigación en formato Markdown que resume un paper científico. El repositorio fue creado por el usuario williamsfap en agosto de 2026 y no incluye pesos, arquitectura ni código de inferencia.
+Este repositorio de Hugging Face contiene un documento de texto plano con un artículo académico sobre comprensión de escenas 3D (3D scene understanding). No se trata de un modelo de IA descargable, sino de un artefacto de investigación en formato Markdown que resume un paper científico. El repositorio fue creado por el usuario williamsfap en agosto de 2026 y no incluye pesos, arquitectura ni código de inferencia.
 
 El contenido del documento sigue una estructura académica estándar (introducción, problema, solución, validación y futuro) y emplea un estilo de citación autor-año. La licencia es BSD-3-Clause, lo que permite su uso y redistribución con atribución. Dado que el repositorio no contiene un modelo entrenado, no es posible evaluar capacidades técnicas, rendimiento ni requisitos de hardware.
 
@@ -69,9 +69,9 @@ No disponible. Al no tratarse de un modelo de IA, no es posible establecer compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/williamsfap/paper_025797353_3d_scene_understanding
+- Repositorio en Hugging Face: https://huggingface.co/williamsfap/paper_025797353_3d_scene_understanding
 - Paper relacionado (Generation Models Know Space): https://arxiv.org/abs/2603.19235
 - Paper relacionado (Structured Generative Models for Scene Understanding): https://arxiv.org/abs/2302.03531
 - Implementacion de referencia (VEGA-3D): https://github.com/H-EmbodVis/VEGA-3D
-- Pagina del paper en HuggingFace: https://huggingface.co/papers/2603.19235
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2603.19235
 - Web del taller 3D Scene Understanding en CVPR 2026: https://scene-understanding.com/

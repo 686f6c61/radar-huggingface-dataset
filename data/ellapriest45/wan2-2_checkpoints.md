@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio EllaPriest45/Wan2.2_Checkpoints es un artefacto alojado en HuggingFace de 256,7 GB que, por su nombre, se asocia a la familia de modelos Wan 2.2. Se trata de una publicacion de terceros: el autor es el usuario EllaPriest45, no el equipo que desarrolla la familia Wan, y no se incluye model card con descripcion, pipeline, licencia ni idiomas declarados. La unica informacion estructural disponible son las etiquetas gguf y region:us, 354 descargas y 3 likes.
+El repositorio EllaPriest45/Wan2.2_Checkpoints es un artefacto alojado en Hugging Face de 256,7 GB que, por su nombre, se asocia a la familia de modelos Wan 2.2. Se trata de una publicacion de terceros: el autor es el usuario EllaPriest45, no el equipo que desarrolla la familia Wan, y no se incluye model card con descripcion, pipeline, licencia ni idiomas declarados. La unica informacion estructural disponible son las etiquetas gguf y region:us, 354 descargas y 3 likes.
 
 El problema que resuelve un repositorio de este tipo es el de facilitar pesos en formato GGUF, pensados para inferencia cuantizada en hardware con memoria limitada, habitualmente a traves de nodos GGUF en ComfyUI o de runtimes compatibles. Esto es relevante porque los modelos de generacion de video de gran tamano rara vez caben en GPU de consumo en precision completa, y las cuantizaciones permiten ejecutarlos localmente a cambio de perdida de calidad.
 
@@ -76,7 +76,7 @@ No se dispone de datos verificados para establecer una comparativa cuantitativa.
 
 | Modelo / repositorio | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EllaPriest45/Wan2.2_Checkpoints | no disponible | no disponible | no disponible | no disponible | HuggingFace, GGUF, 256,7 GB |
+| EllaPriest45/Wan2.2_Checkpoints | no disponible | no disponible | no disponible | no disponible | Hugging Face, GGUF, 256,7 GB |
 | Alternativas de generacion de video abiertas | no disponible | no disponible | no disponible | no disponible | no verificado en la informacion proporcionada |
 | Otros repositorios GGUF de terceros | no disponible | no disponible | no disponible | no disponible | no verificado en la informacion proporcionada |
 
@@ -96,6 +96,6 @@ Para construir una comparativa util habria que consultar la documentacion oficia
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EllaPriest45/Wan2.2_Checkpoints
+- Hugging Face: https://huggingface.co/EllaPriest45/Wan2.2_Checkpoints
 - Documentacion oficial de la familia Wan 2.2: no incluida en la informacion proporcionada
 - Papers, blogs, repositorios o demos asociados: no disponibles en la informacion proporcionada

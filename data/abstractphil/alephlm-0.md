@@ -97,7 +97,7 @@ No se dispone de comparaciones directas con otros modelos de la misma categoria 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [AbstractPhil/alephlm-0](https://huggingface.co/AbstractPhil/alephlm-0)
+- Repositorio Hugging Face: [AbstractPhil/alephlm-0](https://huggingface.co/AbstractPhil/alephlm-0)
 - Documento tecnico: [TECHNICAL.md](https://huggingface.co/AbstractPhil/alephlm-0/blob/main/TECHNICAL.md)
 - Entorno de ejecucion: [ENVIRONMENT.md](https://huggingface.co/AbstractPhil/alephlm-0/blob/main/ENVIRONMENT.md)
 - Articulo semanal: [Geometric Memory FT5 — Agreement, Anchors, Addresses](https://huggingface.co/blog/AbstractPhil/geometric-memory-ft5)

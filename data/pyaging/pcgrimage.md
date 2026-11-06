@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pcgrimage es un reloj epigenético (aging clock) diseñado para predecir el riesgo de mortalidad a partir de datos de metilación de ADN en sangre completa humana. Fue desarrollado por la organización pyaging como una aproximación computacional al reloj GrimAge original, utilizando un enfoque de análisis de componentes principales (PCA) combinado con regresión elastic net. El modelo toma como entradas adicionales la edad cronológica y el sexo, lo que permite estimar la edad biológica y el riesgo asociado de mortalidad. Su relevancia actual radica en la creciente demanda de biomarcadores fiables para estudios de envejecimiento, ensayos clínicos y seguimiento longitudinal de intervenciones anti-envejecimiento. El repositorio en HuggingFace tiene un tamaño de 1,2 GB, aunque no se especifican parámetros numéricos al tratarse de un modelo de regresión, no de una red neuronal profunda.
+pcgrimage es un reloj epigenético (aging clock) diseñado para predecir el riesgo de mortalidad a partir de datos de metilación de ADN en sangre completa humana. Fue desarrollado por la organización pyaging como una aproximación computacional al reloj GrimAge original, utilizando un enfoque de análisis de componentes principales (PCA) combinado con regresión elastic net. El modelo toma como entradas adicionales la edad cronológica y el sexo, lo que permite estimar la edad biológica y el riesgo asociado de mortalidad. Su relevancia actual radica en la creciente demanda de biomarcadores fiables para estudios de envejecimiento, ensayos clínicos y seguimiento longitudinal de intervenciones anti-envejecimiento. El repositorio en Hugging Face tiene un tamaño de 1,2 GB, aunque no se especifican parámetros numéricos al tratarse de un modelo de regresión, no de una red neuronal profunda.
 
 ## Especificaciones técnicas
 
@@ -66,6 +66,6 @@ Existen otros relojes epigenéticos como Horvath, Hannum, PhenoAge y el propio G
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pyaging/pcgrimage
+- Repositorio en Hugging Face: https://huggingface.co/pyaging/pcgrimage
 - Publicación original: Higgins-Chen, Albert T., et al. "A computational solution for bolstering reliability of epigenetic clocks: implications for clinical trials and longitudinal tracking." Nature Aging 2 (2022): 644–661. DOI: https://doi.org/10.1038/s43587-022-00248-2
 - Documentación de pyaging (Clock Catalogue): https://pyaging.readthedocs.io

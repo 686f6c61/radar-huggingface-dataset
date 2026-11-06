@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo. La comparación se basa en ca
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Qwenseek-3.8-27B-CyberLite-BF16-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Qwenseek-3.8-27B-CyberLite-BF16-GGUF
 - Modelo base (safetensors): https://huggingface.co/trjxter/Qwenseek-3.8-27B-CyberLite-BF16
 - Guía de descarga de Qwen3.8-27B (referencia del modelo base): https://www.orcarouter.ai/blog/qwen-3-8-27b-huggingface
 - Especificaciones y requisitos de Qwen3.8-27B: https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026

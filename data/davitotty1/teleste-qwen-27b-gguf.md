@@ -110,7 +110,7 @@ La comparación con Gemma 3 27B es orientativa: no hay benchmarks comunes public
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Davitotty1/Teleste-Qwen-27B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Davitotty1/Teleste-Qwen-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantización e imatrix de unsloth para el modelo base: no disponible (referenciado en la model card pero sin URL concreta)
 - Paper, blog o demo: no disponibles

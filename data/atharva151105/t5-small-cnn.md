@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Atharva151105/t5-small-cnn es un modelo publicado en HuggingFace por el usuario Atharva151105, con un total de 60.506.624 parametros reales confirmados en los pesos safetensors y un tamano de repositorio de 0,2 GB. La etiqueta "t5" y la clase "text2text-generation" indican que se trata de un modelo encoder-decoder basado en la arquitectura T5, mientras que el sufijo "cnn" del identificador sugiere una posible variante con componente convolucional, extremo que no esta documentado en ninguna parte del repositorio. El modelo fue creado y actualizado el 6 de octubre de 2026 y acumula 0 descargas y 1 like en el momento de redactar esta ficha.
+Atharva151105/t5-small-cnn es un modelo publicado en Hugging Face por el usuario Atharva151105, con un total de 60.506.624 parametros reales confirmados en los pesos safetensors y un tamano de repositorio de 0,2 GB. La etiqueta "t5" y la clase "text2text-generation" indican que se trata de un modelo encoder-decoder basado en la arquitectura T5, mientras que el sufijo "cnn" del identificador sugiere una posible variante con componente convolucional, extremo que no esta documentado en ninguna parte del repositorio. El modelo fue creado y actualizado el 6 de octubre de 2026 y acumula 0 descargas y 1 like en el momento de redactar esta ficha.
 
-El problema principal que presenta este modelo no es tecnico sino de trazabilidad: la model card es una plantilla autogenerada de HuggingFace en la que todos los campos relevantes (autoria, datos de entrenamiento, licencia, idiomas, evaluacion, uso previsto) aparecen sin rellenar con el marcador "[More Information Needed]". No hay informacion sobre el dataset de entrenamiento, el procedimiento de ajuste, los hiperparametros ni los resultados de evaluacion. Esto impide verificar que el modelo haga lo que su nombre sugiere y limita seriamente su uso en produccion.
+El problema principal que presenta este modelo no es tecnico sino de trazabilidad: la model card es una plantilla autogenerada de Hugging Face en la que todos los campos relevantes (autoria, datos de entrenamiento, licencia, idiomas, evaluacion, uso previsto) aparecen sin rellenar con el marcador "[More Information Needed]". No hay informacion sobre el dataset de entrenamiento, el procedimiento de ajuste, los hiperparametros ni los resultados de evaluacion. Esto impide verificar que el modelo haga lo que su nombre sugiere y limita seriamente su uso en produccion.
 
 Por su escala, se situa en la misma franja que T5-small (aproximadamente 60 millones de parametros), lo que lo convierte en un candidato teorico para tareas de generacion texto-a-texto ligeras sobre CPU o GPU de gama de entrada. Sin embargo, la ausencia de documentacion hace que cualquier evaluacion de calidad, sesgos o licencia quede pendiente de una inspeccion manual por parte de quien quiera utilizarlo.
 
@@ -33,12 +33,12 @@ Por su escala, se situa en la misma franja que T5-small (aproximadamente 60 mill
 
 La etiqueta "t5" en el repositorio apunta a la familia T5 (Text-to-Text Transfer Transformer), una arquitectura transformer con encoder y decoder, atencion de posicion relativa y preentrenamiento mediante span corruption sobre texto sin etiquetar. El numero de parametros (60,5 millones) coincide con el orden de magnitud del T5-small original. La unica desviacion respecto a un T5 estandar que se puede inferir es el sufijo "cnn" del identificador, que hace pensar en la incorporacion de capas convolucionales, pero no existe ninguna descripcion tecnica que confirme donde se insertan, como se entrenaron ni con que objetivo.
 
-No hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, si hubo ajuste supervisado, RLHF, DPO o destilacion. Tampoco se detallan los hiperparametros ni la infraestructura de computo. La etiqueta arxiv:1910.09700 que aparece en los tags corresponde al articulo de Lacoste et al. (2019) sobre cuantificacion de emisiones de carbono, citado en la plantilla autogenerada de HuggingFace, y no al articulo original de T5 (arXiv:1910.10683); por tanto, no debe interpretarse como una referencia arquitectonica del modelo.
+No hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, si hubo ajuste supervisado, RLHF, DPO o destilacion. Tampoco se detallan los hiperparametros ni la infraestructura de computo. La etiqueta arxiv:1910.09700 que aparece en los tags corresponde al articulo de Lacoste et al. (2019) sobre cuantificacion de emisiones de carbono, citado en la plantilla autogenerada de Hugging Face, y no al articulo original de T5 (arXiv:1910.10683); por tanto, no debe interpretarse como una referencia arquitectonica del modelo.
 
 ## Capacidades
 
 - Generacion de texto texto-a-texto (pipeline declarado como text2text-generation), lo que en principio permite tareas como resumen, traduccion, parafrasis o respuesta a preguntas formuladas como secuencias de entrada y salida.
-- Compatibilidad declarada con text-generation-inference y con endpoints de HuggingFace (tags "endpoints_compatible" y "text-generation-inference").
+- Compatibilidad declarada con text-generation-inference y con endpoints de Hugging Face (tags "endpoints_compatible" y "text-generation-inference").
 - Serializacion en safetensors, lo que facilita la carga con la libreria transformers y evita problemas de ejecucion de codigo arbitrario en la carga de pesos.
 - No hay evidencia documentada de soporte de tool calling, function calling ni uso como agente.
 - No hay evidencia documentada de razonamiento multi-paso, modo "thinking" ni cadena de pensamiento explicita.
@@ -75,9 +75,9 @@ La comparacion se establece con la referencia de la familia T5 en su version peq
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Atharva151105/t5-small-cnn | 60.506.624 | no disponible | T5 con posible componente CNN (sin confirmar) | no disponible | HuggingFace, 0 descargas |
-| T5-small (Google) | aproximadamente 60 millones | 512 tokens | Transformer encoder-decoder T5 | Apache 2.0 | HuggingFace, ampliamente usado |
-| FLAN-T5-small (Google) | aproximadamente 80 millones | 512 tokens | T5 ajustado con instrucciones | Apache 2.0 | HuggingFace, ampliamente usado |
+| Atharva151105/t5-small-cnn | 60.506.624 | no disponible | T5 con posible componente CNN (sin confirmar) | no disponible | Hugging Face, 0 descargas |
+| T5-small (Google) | aproximadamente 60 millones | 512 tokens | Transformer encoder-decoder T5 | Apache 2.0 | Hugging Face, ampliamente usado |
+| FLAN-T5-small (Google) | aproximadamente 80 millones | 512 tokens | T5 ajustado con instrucciones | Apache 2.0 | Hugging Face, ampliamente usado |
 
 Los datos de T5-small y FLAN-T5-small se incluyen unicamente como referencia de la categoria; no implican que el modelo evaluado comparta su entrenamiento, su licencia ni su comportamiento. No se dispone de resultados de rendimiento comparables para el modelo evaluado.
 
@@ -95,7 +95,7 @@ Los datos de T5-small y FLAN-T5-small se incluyen unicamente como referencia de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atharva151105/t5-small-cnn
+- Modelo en Hugging Face: https://huggingface.co/Atharva151105/t5-small-cnn
 - Articulo citado en la etiqueta arxiv del repositorio (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental en aprendizaje automatico: https://mlco2.github.io/impact
 - Articulo original de la arquitectura T5 (referencia de la familia, no del modelo): https://arxiv.org/abs/1910.10683

@@ -73,9 +73,9 @@ Condiciones: prompt de 1.024 tokens y 16 tokens generados, cada motor en su mejo
 
 | Modelo | Parametros | Formato | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| prabanta-dev/gemma-4-12B-it-JNS | ~12B (denso, Q4_K_M) | JNS (solo Janas) | no disponible | 65 tok/s lectura y 9,9 tok/s escritura en el portátil de referencia (frente a llama.cpp); sin benchmarks de calidad | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en la consulta; motor Janas en GitHub |
-| unsloth/gemma-4-12b-it-GGUF | ~12B (denso) | GGUF (Q4_K_M y otras, según el repositorio) | no disponible | no se documentan cifras de este repositorio en la información disponible | Apache 2.0, según la cadena de atribución | HuggingFace; compatible con llama.cpp, Ollama y otros motores GGUF |
-| google/gemma-4-12B-it | ~12B (denso, pesos completos) | Safetensors (no confirmado en la información disponible) | no disponible | no disponible | Apache 2.0 declarada en la tarjeta, sin fichero LICENSE en el repositorio | HuggingFace, repositorio oficial de Google |
+| prabanta-dev/gemma-4-12B-it-JNS | ~12B (denso, Q4_K_M) | JNS (solo Janas) | no disponible | 65 tok/s lectura y 9,9 tok/s escritura en el portátil de referencia (frente a llama.cpp); sin benchmarks de calidad | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en la consulta; motor Janas en GitHub |
+| unsloth/gemma-4-12b-it-GGUF | ~12B (denso) | GGUF (Q4_K_M y otras, según el repositorio) | no disponible | no se documentan cifras de este repositorio en la información disponible | Apache 2.0, según la cadena de atribución | Hugging Face; compatible con llama.cpp, Ollama y otros motores GGUF |
+| google/gemma-4-12B-it | ~12B (denso, pesos completos) | Safetensors (no confirmado en la información disponible) | no disponible | no disponible | Apache 2.0 declarada en la tarjeta, sin fichero LICENSE en el repositorio | Hugging Face, repositorio oficial de Google |
 
 La diferencia sustantiva entre las tres entradas no es de calidad ni de arquitectura, sino de formato y cadena de conversión: los tres comparten pesos de origen. La versión JNS solo aporta valor si se va a usar el motor Janas; para cualquier otro motor, el GGUF de unsloth es la vía directa.
 
@@ -93,11 +93,11 @@ La diferencia sustantiva entre las tres entradas no es de calidad ni de arquitec
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/prabanta-dev/gemma-4-12B-it-JNS
+- Ficha en Hugging Face: https://huggingface.co/prabanta-dev/gemma-4-12B-it-JNS
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Cuantización GGUF de origen: https://huggingface.co/unsloth/gemma-4-12b-it-GGUF
 - Repositorio del motor Janas: https://github.com/prabanta-dev/janas
 - Documentación y detalles de rendimiento de Janas: https://github.com/prabanta-dev/janas#readme
 - Binarios de Janas para Linux x86-64: https://github.com/prabanta-dev/janas/releases/latest/download/janas-linux-x86_64.tar.gz
 
-Nota sobre la búsqueda web: los resultados devueltos no guardan relación con el modelo (remiten a sitios de contenido para adultos) y no aportan papers, blogs ni demos adicionales. No se han encontrado enlaces relevantes distintos de los incluidos en la model card y en el propio repositorio de HuggingFace.
+Nota sobre la búsqueda web: los resultados devueltos no guardan relación con el modelo (remiten a sitios de contenido para adultos) y no aportan papers, blogs ni demos adicionales. No se han encontrado enlaces relevantes distintos de los incluidos en la model card y en el propio repositorio de Hugging Face.

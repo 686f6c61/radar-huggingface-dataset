@@ -108,7 +108,7 @@ La diferencia de −1,94 puntos (IC 95 % −5,90 a +0,41) no es estadísticament
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/litert-community/Breeze-ASR-26-LiteRT
+- Repositorio Hugging Face: https://huggingface.co/litert-community/Breeze-ASR-26-LiteRT
 - Modelo base: https://huggingface.co/MediaTek-Research/Breeze-ASR-26
 - Paper: https://arxiv.org/abs/2603.19259
 - LiteRT: https://ai.google.dev/edge/litert

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`danielqdiaz/mocov3-matching-small-2024` es un repositorio experimental publicado en HuggingFace que implementa una arquitectura etiquetada como Mocov3 orientada a una tarea de *matching*. El autor es el usuario danielqdiaz y el modelo se distribuye bajo licencia MIT. No se trata de un modelo entrenado ni evaluado, sino de un *checkpoint* de inicialización válido únicamente para pruebas de humo (*smoke tests*), según se declara de forma explícita en la propia model card.
+`danielqdiaz/mocov3-matching-small-2024` es un repositorio experimental publicado en Hugging Face que implementa una arquitectura etiquetada como Mocov3 orientada a una tarea de *matching*. El autor es el usuario danielqdiaz y el modelo se distribuye bajo licencia MIT. No se trata de un modelo entrenado ni evaluado, sino de un *checkpoint* de inicialización válido únicamente para pruebas de humo (*smoke tests*), según se declara de forma explícita en la propia model card.
 
 El modelo es de escala *tiny* y cuenta con 49.600 parámetros totales, lo que lo sitúa muy por debajo de cualquier modelo utilizable en producción. La arquitectura emplea atención lineal, fusión bilineal, activación swish y normalización layernorm, con una configuración generada automáticamente en `config.json`. No se especifican longitud de contexto, idiomas soportados ni datos de entrenamiento.
 
@@ -73,7 +73,7 @@ No hay datos de rendimiento publicados para este modelo, por lo que no es posibl
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| danielqdiaz/mocov3-matching-small-2024 | 49.600 | no disponible | no evaluado (checkpoint de inicializacion) | MIT | HuggingFace |
+| danielqdiaz/mocov3-matching-small-2024 | 49.600 | no disponible | no evaluado (checkpoint de inicializacion) | MIT | Hugging Face |
 | MoCo v3 (referencia original, FAIR) | no disponible | no disponible | no disponible en esta informacion | no disponible | no disponible |
 | Alternativas de matching de capacidad comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,5 +92,5 @@ No se dispone de informacion suficiente para comparar con alternativas de la mis
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/danielqdiaz/mocov3-matching-small-2024)
+- [Modelo en Hugging Face](https://huggingface.co/danielqdiaz/mocov3-matching-small-2024)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada. Los resultados de dicha busqueda corresponden a GeForce NOW de NVIDIA y no guardan relacion con el modelo.

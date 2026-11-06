@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-k-chrono5-w40-s130` es un checkpoint de aproximadamente 2.018 millones de parametros publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. La nomenclatura del identificador sugiere una variante de una familia denominada "sn38-nanochrono", probablemente un experimento de investigacion sobre arquitecturas con componentes temporales o recurrentes (el sufijo "chrono" y los parametros codificados como `r18`, `a2`, `w13`, `k`, `chrono5`, `w40`, `s130` apuntan a una configuracion de hiperparametros concreta dentro de una busqueda o barrido).
+El modelo `alfred8995/r18-a2-w13-k-chrono5-w40-s130` es un checkpoint de aproximadamente 2.018 millones de parametros publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. La nomenclatura del identificador sugiere una variante de una familia denominada "sn38-nanochrono", probablemente un experimento de investigacion sobre arquitecturas con componentes temporales o recurrentes (el sufijo "chrono" y los parametros codificados como `r18`, `a2`, `w13`, `k`, `chrono5`, `w40`, `s130` apuntan a una configuracion de hiperparametros concreta dentro de una busqueda o barrido).
 
 El repositorio tiene un tamano de 12,6 GB, lo que resulta desproporcionado para 2.018 millones de parametros en precision completa (unos 4 GB en fp32 o 8 GB en bf16/fp16). Esto sugiere que el repositorio incluye multiples checkpoints, estados del optimizador, o pesos en varias precisiones. El modelo esta publicado como gated, requiere aceptar condiciones de acceso y no cuenta con descargas ni interacciones registradas.
 
@@ -45,7 +45,7 @@ No es posible recomendar casos de uso concretos sin informacion sobre el entrena
 - Investigacion sobre arquitecturas experimentales: el modelo podria servir como checkpoint de referencia para reproducir o analizar la familia "nanochrono", pero se desconoce que rendimiento ofrece.
 - Experimentacion academica con modelos de ~2B: utilizable como base para fine-tuning si se confirma que los pesos son funcionales y no un estado intermedio de entrenamiento.
 - Pruebas de infraestructura de despliegue: por su tamano, puede usarse para validar pipelines de inferencia (vLLM, TGI, llama.cpp) en entornos de laboratorio, sin garantia de calidad de salida.
-- Analisis de checkpoints gated: como ejemplo de gestion de acceso restringido en HuggingFace para equipos que disenan flujos de distribucion de modelos.
+- Analisis de checkpoints gated: como ejemplo de gestion de acceso restringido en Hugging Face para equipos que disenan flujos de distribucion de modelos.
 - Comparativas de eficiencia de memoria: util para medir consumo de VRAM con 2.018 millones de parametros en distintas precisiones.
 - Reproduccion de barridos de hiperparametros: si el identificador codifica una configuracion concreta, podria emplearse para estudiar el efecto de dichos parametros.
 
@@ -69,7 +69,7 @@ No hay informacion suficiente para establecer una comparativa fiable, ya que se 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alfred8995/r18-a2-w13-k-chrono5-w40-s130 | 2.018.511.234 | no disponible | Apache 2.0 | Gated en HuggingFace |
+| alfred8995/r18-a2-w13-k-chrono5-w40-s130 | 2.018.511.234 | no disponible | Apache 2.0 | Gated en Hugging Face |
 | Qwen2.5-1.5B | ~1.540 millones | 32.768 tokens | Apache 2.0 | Publico |
 | Gemma 2 2B | ~2.600 millones | 8.192 tokens | Gemma license | Publico con aceptacion |
 | SmolLM2-1.7B | ~1.700 millones | 8.192 tokens | Apache 2.0 | Publico |
@@ -82,7 +82,7 @@ La comparativa se limita a tamano y licencia; no se dispone de datos de rendimie
 - Riesgo de alucinacion: desconocido, pero sin evaluacion no puede descartarse un comportamiento deficiente.
 - Idiomas: no se declaran idiomas soportados; el rendimiento multilingue es una incognita.
 - Contexto: se desconoce la longitud maxima de contexto, lo que impide planificar usos con documentos largos.
-- Licencia: Apache 2.0 permite uso comercial, pero el acceso es gated y requiere aceptar condiciones en HuggingFace; conviene revisar los terminos adicionales del repositorio.
+- Licencia: Apache 2.0 permite uso comercial, pero el acceso es gated y requiere aceptar condiciones en Hugging Face; conviene revisar los terminos adicionales del repositorio.
 - Checkpoint potencialmente no final: el identificador y el tamano del repo sugieren un experimento o un estado intermedio de entrenamiento, no un modelo listo para produccion.
 - Sin descargas ni likes: no hay evidencia de uso comunitario ni de validacion externa.
 - Compatibilidad de runtime: al no confirmarse la arquitectura, puede que transformers, vLLM o TGI no carguen los pesos sin codigo personalizado.
@@ -90,4 +90,4 @@ La comparativa se limita a tamano y licencia; no se dispone de datos de rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w40-s130
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w40-s130

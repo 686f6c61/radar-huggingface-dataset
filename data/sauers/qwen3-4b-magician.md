@@ -100,7 +100,7 @@ No se han identificado en la informacion disponible otros adaptadores publicos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sauers/qwen3-4b-magician
+- Modelo en Hugging Face: https://huggingface.co/Sauers/qwen3-4b-magician
 - Repositorio con codigo, receta de entrenamiento, conjuntos de test y figuras: https://github.com/SauersML/magician
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; las entradas devueltas tratan sobre comentarios multilinea en Python y no guardan relacion con el modelo.

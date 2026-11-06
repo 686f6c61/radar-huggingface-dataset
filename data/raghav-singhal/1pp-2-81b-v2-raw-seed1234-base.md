@@ -27,7 +27,7 @@ El modelo es un decoder transformer de estilo Llama con 24 capas, dimensión ocu
 
 El entrenamiento se realizó sobre los documentos originales de DCLM-edu, con pérdida sobre todos los tokens del documento y sobre `<|endoftext|>`. Este checkpoint corresponde a los primeros 53.709 pasos del flujo alineado por pasos de 1PP (112,64B posiciones de token), que son los primeros pasos del pase de 31.777 pasos del estudio principal en el mismo orden. El batch global es de 512 × 4.096 tokens, con enmascaramiento de atención entre documentos. El optimizador es Muon (shape scaling, LR matricial 0,005) junto con Adam para el resto de parámetros (LR 1,29e-3 para embeddings y capa de salida, 3e-3 para las normas); warmup de 3.378 pasos, constante, con decaimiento lineal en los últimos 5.370 pasos hasta 1/100; weight decay 0,1; desviación típica de inicialización 0,0078; precisión bf16.
 
-La pérdida de validación reportada (por token, sobre 2.433 documentos retenidos, checkpoint final) es de 2,478 en texto de asistente, 2,728 en texto de usuario y 2,307 en texto de documento. La verificación de los pesos de HuggingFace frente al checkpoint de Megatron arroja diferencias absolutas de 0,0031 y 0,0018 en los conjuntos de validación, lo que confirma la fidelidad de la conversión.
+La pérdida de validación reportada (por token, sobre 2.433 documentos retenidos, checkpoint final) es de 2,478 en texto de asistente, 2,728 en texto de usuario y 2,307 en texto de documento. La verificación de los pesos de Hugging Face frente al checkpoint de Megatron arroja diferencias absolutas de 0,0031 y 0,0018 en los conjuntos de validación, lo que confirma la fidelidad de la conversión.
 
 ## Capacidades
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la información disponible (MMLU
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| 1pp-2.81b-v2-raw-seed1234-base | 2,81B | 4.096 | Apache 2.0 | HuggingFace (transformers, safetensors) | Base de investigación, solo inglés, sin benchmarks públicos |
-| SmolLM2-1.7B (referencia de tokenizador) | 1,7B | 8.192 | Apache 2.0 | HuggingFace | Modelo base y instructivo; su vocabulario es el usado por 1PP |
-| Llama 3.2 1B / 3B | 1,24B / 3,21B | 128K | Llama 3.2 Community License | HuggingFace | Familia comparable en tamaño; licencia con restricciones de uso comercial |
-| Qwen2.5-3B | 3,09B | 32.768 | Apache 2.0 | HuggingFace | Alternativa de tamaño similar con contexto mucho mayor |
+| 1pp-2.81b-v2-raw-seed1234-base | 2,81B | 4.096 | Apache 2.0 | Hugging Face (transformers, safetensors) | Base de investigación, solo inglés, sin benchmarks públicos |
+| SmolLM2-1.7B (referencia de tokenizador) | 1,7B | 8.192 | Apache 2.0 | Hugging Face | Modelo base y instructivo; su vocabulario es el usado por 1PP |
+| Llama 3.2 1B / 3B | 1,24B / 3,21B | 128K | Llama 3.2 Community License | Hugging Face | Familia comparable en tamaño; licencia con restricciones de uso comercial |
+| Qwen2.5-3B | 3,09B | 32.768 | Apache 2.0 | Hugging Face | Alternativa de tamaño similar con contexto mucho mayor |
 
 La comparación con modelos de propósito general debe tomarse con cautela: 1PP es un artefacto de investigación sin evaluación en benchmarks estándar, y su contexto de 4.096 tokens es notablemente inferior al de las alternativas comerciales.
 
@@ -97,7 +97,7 @@ La comparación con modelos de propósito general debe tomarse con cautela: 1PP 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-raw-seed1234-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-raw-seed1234-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (wandb, 1pp-training): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de SFT (wandb, 1pp-sft): https://wandb.ai/raghav_singhal/1pp-sft

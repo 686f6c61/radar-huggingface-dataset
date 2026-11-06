@@ -2,11 +2,11 @@
 
 ## Resumen
 
-David-kim/my-fusion-v1 es un modelo de generacion de texto publicado en HuggingFace por el usuario David-kim, con 2.614.341.888 parametros totales (aproximadamente 2,61 mil millones) segun los pesos en safetensors del repositorio. La etiqueta `gemma2` de la ficha del Hub indica que la arquitectura subyacente pertenece a la familia Gemma 2, aunque la model card no confirma la procedencia ni el proceso de creacion. El nombre "fusion" sugiere tecnicas de fusion o mezcla de pesos (model merging) sobre un modelo base, pero esto no esta documentado por el autor.
+David-kim/my-fusion-v1 es un modelo de generacion de texto publicado en Hugging Face por el usuario David-kim, con 2.614.341.888 parametros totales (aproximadamente 2,61 mil millones) segun los pesos en safetensors del repositorio. La etiqueta `gemma2` de la ficha del Hub indica que la arquitectura subyacente pertenece a la familia Gemma 2, aunque la model card no confirma la procedencia ni el proceso de creacion. El nombre "fusion" sugiere tecnicas de fusion o mezcla de pesos (model merging) sobre un modelo base, pero esto no esta documentado por el autor.
 
 El modelo esta etiquetado como `text-generation` y `conversational`, con soporte declarado para `transformers`, `text-generation-inference` y `endpoints_compatible`, ademas de incluir pesos en formato GGUF. El repositorio ocupa 10,5 GB, un tamano muy superior a los aproximadamente 5,2 GB que ocuparian los pesos en fp16 de un modelo de 2,6B parametros, lo que apunta a la coexistencia de varios formatos o precisiones en el mismo repositorio.
 
-La relevancia de esta ficha es limitada y hay que ser explicito: la model card es la plantilla autogenerada de HuggingFace sin ningun campo cumplimentado. No hay informacion sobre datos de entrenamiento, licencia, idiomas, benchmarks ni hiperparametros. Con 187 descargas y 0 likes en el momento de la consulta, se trata de un modelo de nicho con documentacion practicamente inexistente. Se recomienda tratarlo como un artefacto experimental de autor individual antes que como un modelo listo para produccion.
+La relevancia de esta ficha es limitada y hay que ser explicito: la model card es la plantilla autogenerada de Hugging Face sin ningun campo cumplimentado. No hay informacion sobre datos de entrenamiento, licencia, idiomas, benchmarks ni hiperparametros. Con 187 descargas y 0 likes en el momento de la consulta, se trata de un modelo de nicho con documentacion practicamente inexistente. Se recomienda tratarlo como un artefacto experimental de autor individual antes que como un modelo listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ La relevancia de esta ficha es limitada y hay que ser explicito: la model card e
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura en la model card, que es la plantilla por defecto de HuggingFace con todos los apartados marcados como "[More Information Needed]". El unico indicio tecnico es la etiqueta `gemma2` asociada al repositorio, que situaria el modelo en la familia Gemma 2 de Google. Dado el recuento de 2,61B parametros, el tamano encaja con la variante Gemma 2 de 2B, aunque esto es una inferencia a partir de los metadatos y no una confirmacion del autor. Gemma 2 emplea una arquitectura transformer decoder-only con atencion local y global alternada, normalizacion RMSNorm pre y post-atencion, y activaciones GeGLU.
+No se dispone de informacion sobre la arquitectura en la model card, que es la plantilla por defecto de Hugging Face con todos los apartados marcados como "[More Information Needed]". El unico indicio tecnico es la etiqueta `gemma2` asociada al repositorio, que situaria el modelo en la familia Gemma 2 de Google. Dado el recuento de 2,61B parametros, el tamano encaja con la variante Gemma 2 de 2B, aunque esto es una inferencia a partir de los metadatos y no una confirmacion del autor. Gemma 2 emplea una arquitectura transformer decoder-only con atencion local y global alternada, normalizacion RMSNorm pre y post-atencion, y activaciones GeGLU.
 
 Tampoco hay informacion sobre el proceso de entrenamiento: no se especifican tokens de entrenamiento, composicion del dataset, uso de RLHF o DPO, ni hiperparametros de ajuste. El sufijo "fusion" del nombre sugiere que el autor pudo haber aplicado tecnicas de model merging (por ejemplo, combinacion de pesos de varios fine-tunes), practica habitual en modelos pequenos publicados en el Hub, pero no existe documentacion que lo confirme. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al paper de Lacoste et al. sobre el calculo de impacto ambiental, citado en la propia plantilla de model card; no es un paper del modelo.
 
@@ -37,7 +37,7 @@ Tampoco hay informacion sobre el proceso de entrenamiento: no se especifican tok
 
 - Generacion de texto autoregresiva: el pipeline declarado es `text-generation`, por lo que la funcion principal es la continuacion y generacion de texto.
 - Uso conversacional: la etiqueta `conversational` indica que el modelo esta preparado para interacciones de tipo dialogo, presumiblemente mediante chat template de la familia Gemma.
-- Compatibilidad con Text Generation Inference (TGI) y con endpoints de HuggingFace, segun los tags `text-generation-inference` y `endpoints_compatible`.
+- Compatibilidad con Text Generation Inference (TGI) y con endpoints de Hugging Face, segun los tags `text-generation-inference` y `endpoints_compatible`.
 - Inferencia en CPU o GPU de gama baja mediante los pesos GGUF incluidos.
 - Razonamiento, codigo, matematicas, vision, tool calling, capacidades de agente, modo thinking y soporte multilingue: no disponible. La model card no documenta ninguna de estas capacidades y no hay benchmarks que las respalden.
 - No se puede confirmar ningun idioma concreto, incluido el castellano.
@@ -51,7 +51,7 @@ Dado que no hay documentacion tecnica ni evaluaciones publicadas, los siguientes
 - Generacion de texto auxiliar en tareas de bajo riesgo: resumenes cortos, reescritura de parrafos, clasificacion simple o generacion de borradores donde un error no tenga consecuencias criticas.
 - Fine-tuning posterior sobre dominio propio: con 2,6B parametros, el ajuste completo o mediante LoRA cabe en una GPU de 24 GB en precision reducida, lo que lo convierte en una base economica para experimentos de adaptacion a un dominio concreto.
 - Evaluacion comparativa de tecnicas de fusion de modelos: si el nombre "fusion" responde realmente a un proceso de merging, el modelo puede servir como referencia en estudios sobre el efecto de la mezcla de pesos en modelos pequenos.
-- Despliegue en el endpoint de HuggingFace o en un servidor TGI para demos internas: los tags indican compatibilidad con TGI y con endpoints gestionados, lo que simplifica montar una demo sin infraestructura propia.
+- Despliegue en el endpoint de Hugging Face o en un servidor TGI para demos internas: los tags indican compatibilidad con TGI y con endpoints gestionados, lo que simplifica montar una demo sin infraestructura propia.
 - Nodo auxiliar en pipelines de destilacion o generacion de datos sinteticos: un modelo pequeno y rapido puede emplearse para generar candidatos que luego filtre un modelo mayor.
 
 ## Benchmarks y rendimiento
@@ -69,7 +69,7 @@ Estimaciones calculadas a partir del recuento real de parametros (2,61B). No pro
 - Cabe sin problema en GPU de consumo: RTX 3060 12 GB, RTX 4060 8 GB, RTX 4070, RTX 4080 y RTX 4090 lo ejecutan en fp16 con margen. En GPUs de 6-8 GB se recomienda cuantizacion de 4 u 8 bits.
 - Tambien es viable en CPU pura con llama.cpp u Ollama; no se han publicado mediciones de velocidad.
 - GPU de datacenter (A100, H100) no son necesarias para este tamano; se usarian solo por agregacion de muchas peticiones concurrentes.
-- Opciones de despliegue: transformers (libreria declarada), llama.cpp y Ollama (por los pesos GGUF), Text Generation Inference (tag explicito), vLLM (compatible con safetensors de arquitectura Gemma, aunque no confirmado por el autor) y endpoints gestionados de HuggingFace.
+- Opciones de despliegue: transformers (libreria declarada), llama.cpp y Ollama (por los pesos GGUF), Text Generation Inference (tag explicito), vLLM (compatible con safetensors de arquitectura Gemma, aunque no confirmado por el autor) y endpoints gestionados de Hugging Face.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -78,10 +78,10 @@ La comparativa se limita a parametros, contexto declarado y licencia de alternat
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| David-kim/my-fusion-v1 | 2,61B | No disponible | No disponible | HuggingFace, safetensors y GGUF | No disponible |
-| Gemma 2 2B (Google) | 2,61B | 8.192 tokens | Gemma Terms of Use | HuggingFace, ampliamente soportado | Si, publicado por Google |
-| Qwen2.5 3B | ~3,1B | 32.768 tokens (hasta 128K en variantes) | Apache 2.0 en la mayoria de variantes | HuggingFace, muy extendido | Si, publicado por Alibaba |
-| Llama 3.2 3B | ~3,2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, muy extendido | Si, publicado por Meta |
+| David-kim/my-fusion-v1 | 2,61B | No disponible | No disponible | Hugging Face, safetensors y GGUF | No disponible |
+| Gemma 2 2B (Google) | 2,61B | 8.192 tokens | Gemma Terms of Use | Hugging Face, ampliamente soportado | Si, publicado por Google |
+| Qwen2.5 3B | ~3,1B | 32.768 tokens (hasta 128K en variantes) | Apache 2.0 en la mayoria de variantes | Hugging Face, muy extendido | Si, publicado por Alibaba |
+| Llama 3.2 3B | ~3,2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, muy extendido | Si, publicado por Meta |
 
 La ventaja estructural de my-fusion-v1 frente a estas alternativas no esta demostrada y su licencia no esta declarada, lo que en la practica lo situa en desventaja frente a modelos con licencia explicita y evaluaciones publicas. La unica ventaja objetiva es el menor tamano de pesos, que reduce los requisitos de memoria.
 
@@ -100,7 +100,7 @@ La ventaja estructural de my-fusion-v1 frente a estas alternativas no esta demos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/David-kim/my-fusion-v1
+- Modelo en Hugging Face: https://huggingface.co/David-kim/my-fusion-v1
 - Paper citado en las etiquetas (Lacoste et al., 2019, cuantificacion del impacto ambiental del aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML referenciada en la plantilla: https://mlco2.github.io/impact
 - Repositorio, paper, demo o blog oficial del modelo: no disponible

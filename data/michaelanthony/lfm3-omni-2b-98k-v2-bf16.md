@@ -73,9 +73,9 @@ El autor señala que la suite no mostró mejora agregada respecto al checkpoint 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LFM3-Omni-2B-98K-V2-BF16 | 2,17 B | 98.304 (techo 128.000) | lfm-open-license | HuggingFace (comunitario) | Ajuste comunitario con tool calling y multimodal |
-| LiquidAI/LFM3-Omni-2B (base) | 2,17 B | no disponible | lfm-open-license | HuggingFace (oficial) | Modelo base original de Liquid AI |
-| Checkpoint 424 (padre) | 2,17 B | no disponible | lfm-open-license | HuggingFace (comunitario) | Linaje previo del que deriva V2 |
+| LFM3-Omni-2B-98K-V2-BF16 | 2,17 B | 98.304 (techo 128.000) | lfm-open-license | Hugging Face (comunitario) | Ajuste comunitario con tool calling y multimodal |
+| LiquidAI/LFM3-Omni-2B (base) | 2,17 B | no disponible | lfm-open-license | Hugging Face (oficial) | Modelo base original de Liquid AI |
+| Checkpoint 424 (padre) | 2,17 B | no disponible | lfm-open-license | Hugging Face (comunitario) | Linaje previo del que deriva V2 |
 
 No se dispone de datos comparativos de rendimiento frente a modelos de otras familias en la información proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos comparativos de rendimiento frente a modelos de otras fam
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-V2-BF16)
+- [Modelo en Hugging Face](https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-V2-BF16)
 - [Modelo base LiquidAI/LFM3-Omni-2B](https://huggingface.co/LiquidAI/LFM3-Omni-2B)
 - [Licencia LFM Open License](https://huggingface.co/LiquidAI/LFM3-Omni-2B/blob/main/LICENSE)
 - [Variante FP16](https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-V2-FP16)

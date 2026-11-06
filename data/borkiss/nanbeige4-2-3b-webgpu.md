@@ -80,7 +80,7 @@ No se dispone de comparativas directas con modelos similares en la información 
 
 ## Enlaces
 
-- HuggingFace del port: https://huggingface.co/borkiss/Nanbeige4.2-3B-WebGPU
+- Hugging Face del port: https://huggingface.co/borkiss/Nanbeige4.2-3B-WebGPU
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.2-3B
 - Informe técnico: https://arxiv.org/abs/2607.22083
 - Aplicación en el navegador: https://huggingface.co/spaces/borkiss/nanbeige4-2-3b-browser-lab

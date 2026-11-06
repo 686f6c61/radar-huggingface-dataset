@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DistilBERT SST-2 Mini es un modelo de clasificación de texto publicado en HuggingFace por el usuario tony-softwarengineer. El identificador y las etiquetas (distilbert, text-classification, safetensors) apuntan a un ajuste fino de DistilBERT, la variante destilada de BERT desarrollada por Hugging Face, orientado a una tarea de clasificación de sentimiento. El nombre "sst2" sugiere que se ha entrenado sobre el corpus SST-2 (Stanford Sentiment Treebank), un conjunto de críticas de cine en inglés con etiquetas binarias de sentimiento positivo y negativo, aunque la model card no lo confirma de forma explícita.
+DistilBERT SST-2 Mini es un modelo de clasificación de texto publicado en Hugging Face por el usuario tony-softwarengineer. El identificador y las etiquetas (distilbert, text-classification, safetensors) apuntan a un ajuste fino de DistilBERT, la variante destilada de BERT desarrollada por Hugging Face, orientado a una tarea de clasificación de sentimiento. El nombre "sst2" sugiere que se ha entrenado sobre el corpus SST-2 (Stanford Sentiment Treebank), un conjunto de críticas de cine en inglés con etiquetas binarias de sentimiento positivo y negativo, aunque la model card no lo confirma de forma explícita.
 
 El modelo cuenta con 66.955.010 parámetros reales según el archivo safetensors, una cifra coherente con la arquitectura DistilBERT base. Se trata por tanto de un modelo muy ligero, diseñado para inferencia rápida y despliegues con recursos limitados, no de un modelo generativo ni de razonamiento. El repositorio ocupa 0,3 GB y se subió el 17 de septiembre de 2026.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tony-softwarengineer/distilbert-sst2-mini | 66.955.010 | No disponible | Clasificacion de texto (probable SST-2) | No disponible | HuggingFace, 0 descargas, 0 likes |
-| distilbert-base-uncased-finetuned-sst-2-english | ~66,9 M | 512 tokens | Analisis de sentimiento SST-2 | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| distilbert-base-uncased | ~66,9 M | 512 tokens | Modelo base (sin ajustar) | Apache 2.0 | HuggingFace, oficial de Hugging Face |
-| bert-base-uncased | ~110 M | 512 tokens | Modelo base / ajustable a SST-2 | Apache 2.0 | HuggingFace, oficial de Google |
+| tony-softwarengineer/distilbert-sst2-mini | 66.955.010 | No disponible | Clasificacion de texto (probable SST-2) | No disponible | Hugging Face, 0 descargas, 0 likes |
+| distilbert-base-uncased-finetuned-sst-2-english | ~66,9 M | 512 tokens | Analisis de sentimiento SST-2 | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| distilbert-base-uncased | ~66,9 M | 512 tokens | Modelo base (sin ajustar) | Apache 2.0 | Hugging Face, oficial de Hugging Face |
+| bert-base-uncased | ~110 M | 512 tokens | Modelo base / ajustable a SST-2 | Apache 2.0 | Hugging Face, oficial de Google |
 
 El modelo aqui descrito comparte arquitectura y tamano con el ajuste oficial distilbert-base-uncased-finetuned-sst-2-english, pero carece de la documentacion, la licencia declarada y el historial de uso de este. La comparacion de rendimiento no es posible porque no hay benchmarks publicados para el modelo de tony-softwarengineer.
 
@@ -85,7 +85,7 @@ El modelo aqui descrito comparte arquitectura y tamano con el ajuste oficial dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tony-softwarengineer/distilbert-sst2-mini
+- Modelo en Hugging Face: https://huggingface.co/tony-softwarengineer/distilbert-sst2-mini
 - Paper de DistilBERT (arquitectura base): https://arxiv.org/abs/1910.01108
 - Paper citado en la etiqueta del modelo (impacto ambiental del aprendizaje automatico, Lacoste et al.): https://arxiv.org/abs/1910.09700
 - Conjunto de datos SST-2 (GLUE): https://nlp.stanford.edu/sentiment/

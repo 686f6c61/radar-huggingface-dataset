@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `FmyzA/ppo-InvertedPendulum-v5` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `InvertedPendulum-v5` de Gymnasium (familia de tareas de control clasico basadas en MuJoCo). Lo publica el usuario FmyzA en HuggingFace usando la libreria stable-baselines3, y su funcion es resolver una tarea concreta de control continuo: mantener un pendulo invertido en equilibrio sobre un carro aplicando fuerzas horizontales.
+El modelo `FmyzA/ppo-InvertedPendulum-v5` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `InvertedPendulum-v5` de Gymnasium (familia de tareas de control clasico basadas en MuJoCo). Lo publica el usuario FmyzA en Hugging Face usando la libreria stable-baselines3, y su funcion es resolver una tarea concreta de control continuo: mantener un pendulo invertido en equilibrio sobre un carro aplicando fuerzas horizontales.
 
 No se trata de un modelo de lenguaje ni de un modelo fundacional, sino de una politica entrenada especificamente para un unico entorno de simulacion. Su relevancia es la de un artefacto reproducible de investigacion o docencia: sirve como ejemplo de agente PPO funcional y como punto de partida para experimentar con entornos clasicos de control. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el tamano del repositorio es de 0.0 GB.
 
@@ -71,7 +71,7 @@ El valor coincide con la recompensa maxima alcanzable en `InvertedPendulum-v5`. 
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FmyzA/ppo-InvertedPendulum-v5 | Agente PPO (RL) | no disponible | no aplica | mean_reward 1000.00 | no disponible | HuggingFace |
+| FmyzA/ppo-InvertedPendulum-v5 | Agente PPO (RL) | no disponible | no aplica | mean_reward 1000.00 | no disponible | Hugging Face |
 | Otros agentes PPO para InvertedPendulum | Agente PPO (RL) | no disponible | no aplica | no disponible | no disponible | Existen publicaciones similares en el Hub, sin datos comparables disponibles |
 
 No se dispone de datos publicados suficientes para establecer una comparativa cuantitativa con alternativas concretas de la misma categoria.
@@ -89,7 +89,7 @@ No se dispone de datos publicados suficientes para establecer una comparativa cu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FmyzA/ppo-InvertedPendulum-v5
+- Hugging Face: https://huggingface.co/FmyzA/ppo-InvertedPendulum-v5
 - stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Gymnasium: https://gymnasium.farama.org/
 - Entorno InvertedPendulum-v5: https://gymnasium.farama.org/environments/mujoco/inverted_pendulum/

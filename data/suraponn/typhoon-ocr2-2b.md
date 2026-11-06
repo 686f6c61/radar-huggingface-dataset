@@ -112,7 +112,7 @@ Frente a alternativas del mismo rango, Typhoon OCR V2 2B domina en tailandés co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Suraponn/typhoon-ocr2-2b
+- Modelo en Hugging Face: https://huggingface.co/Suraponn/typhoon-ocr2-2b
 - Modelo base: https://huggingface.co/infly/Infinity-Parser2-Flash
 - Versión anterior (Typhoon OCR 1.5 2B): https://huggingface.co/typhoon-ai/typhoon-ocr1.5-2b
 - Modelo hermano (Typhoon OCR V2 0.8B): https://huggingface.co/typhoon-ai/typhoon-ocr2-0.8b

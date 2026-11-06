@@ -4,7 +4,7 @@
 
 Dense Evolution es un simulador de statevector de altas prestaciones diseñado para circuitos NISQ profundos, pipelines VQE y cargas de trabajo de QML. Lo desarrolla Tatopenn (cuenta GitHub `tatopenn-cell`) y se distribuye como paquete Python `dense-evolution`. Su objetivo principal es eliminar el sobrecoste del producto de Kronecker mediante fusión de kernels lineales con segmentación de strides, compilado a través de JAX XLA, manteniendo el uso de memoria en el mínimo teórico de `2ⁿ × 16 bytes`. No se trata de un modelo de aprendizaje automático, sino de una herramienta de simulación cuántica que integra motores de statevector y MPS, compilación, ruido, VQE, corrección de errores cuánticos, química y utilidades para agentes.
 
-El proyecto incluye un dashboard Streamlit estilo Quantum Composer, un kernel local para una aplicación web Composer, un servidor MCP (Model Context Protocol) para interacción con agentes, y puentes de interoperabilidad con Qiskit y PennyLane. La licencia es BSL 1.1 (Business Source License). La versión actual se publicó en junio de 2026 y se actualizó en agosto de 2026, aunque el repositorio en HuggingFace muestra 0 descargas y 0 likes. La documentación completa está disponible en GitHub Pages y se integra en la lista de Awesome Quantum Software.
+El proyecto incluye un dashboard Streamlit estilo Quantum Composer, un kernel local para una aplicación web Composer, un servidor MCP (Model Context Protocol) para interacción con agentes, y puentes de interoperabilidad con Qiskit y PennyLane. La licencia es BSL 1.1 (Business Source License). La versión actual se publicó en junio de 2026 y se actualizó en agosto de 2026, aunque el repositorio en Hugging Face muestra 0 descargas y 0 likes. La documentación completa está disponible en GitHub Pages y se integra en la lista de Awesome Quantum Software.
 
 ## Especificaciones técnicas
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. La d
 - **Licencia BSL 1.1**: es una licencia de fuente disponible, no de código abierto estándar. Aunque permite uso no comercial y comercial bajo ciertas condiciones, puede tener restricciones para uso en producción o redistribución. Se debe revisar el texto completo de la licencia.
 - **No es un modelo de IA**: no se debe confundir con un modelo de lenguaje o de generación de texto; no ofrece capacidades de razonamiento o generación de contenido.
 - **Dependencia de JAX**: requiere la instalación de JAX, que a su vez puede tener requisitos específicos de hardware y versiones de CUDA.
-- **Soporte limitado**: el repositorio tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere una adopción muy temprana y posible falta de comunidad.
+- **Soporte limitado**: el repositorio tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere una adopción muy temprana y posible falta de comunidad.
 - **Errores de compatibilidad**: se documenta un fallo conocido de Qiskit en macOS/arm64 que puede causar segfaults al usar el puente de Qiskit.
 - **No se proporcionan garantías de rendimiento**: sin benchmarks publicados, la eficiencia real no está verificada externamente.
 
@@ -84,4 +84,4 @@ No se han publicado resultados de benchmarks en la información disponible. La d
 - [Documentación completa](https://tatopenn-cell.github.io/Dense-Evolution/)
 - [PyPI - dense-evolution](https://pypi.org/project/dense-evolution/)
 - [DOI Zenodo](https://doi.org/10.5281/zenodo.21855643)
-- [HuggingFace - Tatopenn/dense-Evolution](https://huggingface.co/Tatopenn/dense-Evolution)
+- [Hugging Face - Tatopenn/dense-Evolution](https://huggingface.co/Tatopenn/dense-Evolution)

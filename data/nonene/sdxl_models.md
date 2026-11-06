@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Nonene/sdxl_models`, publicado por el usuario Nonene en HuggingFace, contiene un conjunto de archivos cuyo nombre sugiere una colección de modelos relacionados con Stable Diffusion XL (SDXL). Sin embargo, la información pública disponible es extremadamente limitada: no se especifica pipeline, licencia, idiomas ni se proporcionan detalles técnicos adicionales. El tamaño del repositorio es de 1134 GB, lo que indica un volumen considerable de datos, posiblemente múltiples pesos de modelos o variantes. A fecha de la consulta, el repositorio registra 0 descargas y 11 likes, lo que sugiere un proyecto poco difundido o reciente. Dada la ausencia de documentación y metadatos, no es posible confirmar las capacidades, arquitectura o requisitos de estos modelos sin un análisis directo de los archivos.
+El repositorio `Nonene/sdxl_models`, publicado por el usuario Nonene en Hugging Face, contiene un conjunto de archivos cuyo nombre sugiere una colección de modelos relacionados con Stable Diffusion XL (SDXL). Sin embargo, la información pública disponible es extremadamente limitada: no se especifica pipeline, licencia, idiomas ni se proporcionan detalles técnicos adicionales. El tamaño del repositorio es de 1134 GB, lo que indica un volumen considerable de datos, posiblemente múltiples pesos de modelos o variantes. A fecha de la consulta, el repositorio registra 0 descargas y 11 likes, lo que sugiere un proyecto poco difundido o reciente. Dada la ausencia de documentación y metadatos, no es posible confirmar las capacidades, arquitectura o requisitos de estos modelos sin un análisis directo de los archivos.
 
 ## Especificaciones técnicas
 
@@ -54,4 +54,4 @@ No se puede realizar una comparativa fiable sin conocer las especificaciones rea
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nonene/sdxl_models
+- Repositorio en Hugging Face: https://huggingface.co/Nonene/sdxl_models

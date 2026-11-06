@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Faokonkwo/multitask-notes79` es un repositorio experimental alojado en HuggingFace que contiene un esqueleto de código (codebase) para un Vision Transformer (ViT) orientado a tareas múltiples (multitask). No se trata de un modelo entrenado ni de un checkpoint con resultados validados: el propio autor indica explícitamente que `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests), y no un checkpoint con benchmarks. El repositorio forma parte de una serie de artefactos generados por el mismo autor bajo la etiqueta `multitask-notes`.
+`Faokonkwo/multitask-notes79` es un repositorio experimental alojado en Hugging Face que contiene un esqueleto de código (codebase) para un Vision Transformer (ViT) orientado a tareas múltiples (multitask). No se trata de un modelo entrenado ni de un checkpoint con resultados validados: el propio autor indica explícitamente que `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests), y no un checkpoint con benchmarks. El repositorio forma parte de una serie de artefactos generados por el mismo autor bajo la etiqueta `multitask-notes`.
 
 La relevancia de esta ficha es acotada y conviene ser transparente: el modelo declara arquitectónicamente una escala "giant" en su model card, pero el recuento real de parámetros en el fichero safetensors es de solo 49.600 parámetros, una cifra incompatible con cualquier definición habitual de "giant" en la literatura de ViT (los ViT giant superan los 1.000 millones). Esta contradicción, junto con la ausencia total de datos de entrenamiento, evaluación o uso declarado, lo sitúa como un artefacto de investigación preliminar y no como un modelo desplegable.
 
@@ -40,7 +40,7 @@ En cuanto al entrenamiento, el repositorio incluye un fichero `training_args.jso
 
 - Pruebas de humo de arquitectura: el repositorio permite instanciar el modelo y verificar que el grafo computacional se construye correctamente antes de lanzar un entrenamiento real, gracias a que el checkpoint de inicialización es válido para carga.
 - Prototipado de investigación en ViT multitask: un equipo puede partir de este esqueleto para ensayar cambios en atención dispersa o fusión de bajo rango sin invertir en un run completo, comparando después con baselines de capacidad equivalente.
-- Docencia y formación: sirve como ejemplo didáctico de estructura de repositorio HuggingFace (config.json, training_args.json, safetensors) y de cómo declarar limitaciones de forma honesta.
+- Docencia y formación: sirve como ejemplo didáctico de estructura de repositorio Hugging Face (config.json, training_args.json, safetensors) y de cómo declarar limitaciones de forma honesta.
 - Auditoría de reproducibilidad: el fichero `training_args.json` documenta una receta LAMB + coseno que puede usarse como punto de partida para diseñar experimentos reproducibles con semillas fijas.
 - Base para benchmarks controlados: el propio autor recomienda evaluar sobre un conjunto held-out específico de la tarea, reportar la métrica en al menos tres semillas e incluir un baseline de capacidad comparable, lo que convierte al repo en una plantilla de protocolo de evaluación.
 - Integración en pipelines de investigación internos: al distribuirse en safetensors y PyTorch, puede cargarse en entornos de experimentación con PyTorch sin dependencias exóticas, aunque requiere un adaptador de carga explícito.
@@ -64,7 +64,7 @@ La comparación con modelos ViT de referencia es problemática porque este repos
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| multitask-notes79 | 49.600 (recuento real); "giant" declarado sin corroborar | no disponible | no disponible (sin entrenar) | apache-2.0 | HuggingFace (repo público, 0 descargas) |
+| multitask-notes79 | 49.600 (recuento real); "giant" declarado sin corroborar | no disponible | no disponible (sin entrenar) | apache-2.0 | Hugging Face (repo público, 0 descargas) |
 | ViT-base (referencia estándar de la familia) | ~86 M | imagen 224x224 típicamente | benchmarks públicos en clasificación de imagen (no comparable por falta de datos del modelo evaluado) | según variante | ampliamente disponible |
 | ViT-large (referencia estándar de la familia) | ~307 M | imagen 224x224 típicamente | benchmarks públicos (no comparable) | según variante | ampliamente disponible |
 | DeiT-tiny (referencia de ViT compacto) | ~5,7 M | imagen 224x224 típicamente | benchmarks públicos (no comparable) | según variante | ampliamente disponible |
@@ -84,5 +84,5 @@ Nota: los recuentos de parámetros de las alternativas corresponden a configurac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Faokonkwo/multitask-notes79
+- Hugging Face: https://huggingface.co/Faokonkwo/multitask-notes79
 - No se han encontrado papers, blogs, repositorios adicionales ni demostraciones en la información disponible.

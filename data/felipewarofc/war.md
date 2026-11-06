@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WAR es un modelo publicado en HuggingFace por el usuario FelipeWarOFC. La informacion disponible en el repositorio es practicamente nula: la model card se limita a declarar la licencia GPL-3.0 y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni likes en el momento de la consulta, lo que sugiere que se trata de un artefacto reciente o de un experimento personal sin difusion.
+WAR es un modelo publicado en Hugging Face por el usuario FelipeWarOFC. La informacion disponible en el repositorio es practicamente nula: la model card se limita a declarar la licencia GPL-3.0 y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni likes en el momento de la consulta, lo que sugiere que se trata de un artefacto reciente o de un experimento personal sin difusion.
 
 No es posible determinar que problema resuelve, que arquitectura emplea ni que capacidades ofrece, ya que el autor no ha documentado ninguno de estos aspectos. La ficha se limita, por tanto, a reflejar los metadatos verificables del repositorio y a advertir de la ausencia de informacion tecnica.
 
@@ -73,5 +73,5 @@ No disponible. Al desconocerse el tamano, la arquitectura y la tarea del modelo,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FelipeWarOFC/WAR
+- Repositorio en Hugging Face: https://huggingface.co/FelipeWarOFC/WAR
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

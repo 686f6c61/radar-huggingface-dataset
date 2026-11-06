@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `JMaxCool0518/albedo-qwen3.6-35b-bookend-v125-lora-step30` es un adaptador LoRA publicado en HuggingFace bajo la libreria PEFT, entrenado mediante DPO (Direct Preference Optimization) sobre el modelo base `local_king/king_cxxv`. No se trata por tanto de un modelo completo con pesos autonomos, sino de un delta de parametros de bajo rango que requiere cargar el modelo base para poder ejecutarse. El tamano del repositorio es de 0,3 GB, coherente con un adaptador y no con los pesos completos de una red de decenas de miles de millones de parametros.
+El repositorio `JMaxCool0518/albedo-qwen3.6-35b-bookend-v125-lora-step30` es un adaptador LoRA publicado en Hugging Face bajo la libreria PEFT, entrenado mediante DPO (Direct Preference Optimization) sobre el modelo base `local_king/king_cxxv`. No se trata por tanto de un modelo completo con pesos autonomos, sino de un delta de parametros de bajo rango que requiere cargar el modelo base para poder ejecutarse. El tamano del repositorio es de 0,3 GB, coherente con un adaptador y no con los pesos completos de una red de decenas de miles de millones de parametros.
 
-La model card publicada por el autor es la plantilla por defecto de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen marcados como `[More Information Needed]`. Esto significa que no hay informacion verificable sobre el dataset de preferencias empleado, el numero de pasos de entrenamiento (aunque el identificador sugiere un `step30`), el rango o alpha de la LoRA, ni los resultados de evaluacion.
+La model card publicada por el autor es la plantilla por defecto de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen marcados como `[More Information Needed]`. Esto significa que no hay informacion verificable sobre el dataset de preferencias empleado, el numero de pasos de entrenamiento (aunque el identificador sugiere un `step30`), el rango o alpha de la LoRA, ni los resultados de evaluacion.
 
 El interes del artefacto, en el momento de su publicacion, es limitado pero ilustrativo: sirve como ejemplo de flujo de trabajo DPO + PEFT + TRL sobre un modelo base no estandar de la comunidad, y como caso de estudio de publicaciones con trazabilidad minima. Cualquier evaluacion seria requiere localizar el modelo base `local_king/king_cxxv`, que no esta enlazado ni documentado en la informacion disponible. El identificador del repositorio menciona "qwen3.6-35b", lo que sugiere una familia Qwen de 35 000 millones de parametros, pero esta inferencia no esta confirmada por el autor ni por el campo `base_model`, que apunta a un identificador distinto.
 
@@ -80,11 +80,11 @@ No disponible. No se han identificado en la informacion proporcionada adaptadore
 - Trazabilidad insuficiente: la model card es la plantilla por defecto sin rellenar, sin hiperparametros, sin datos de entrenamiento y sin seccion de uso responsable. No cumple los minimos habituales para una evaluacion tecnica seria.
 - Dependencia del modelo base: el adaptador no es autonomo. Sin acceso a `local_king/king_cxxv` en la misma revision con la que se entreno, el artefacto puede ser inutilizable o producir resultados divergentes.
 - Adopcion nula: cero descargas y cero likes en el momento de la consulta, sin validacion por parte de la comunidad.
-- Nota sobre las referencias: la etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde a la calculadora de impacto de carbono citada en la plantilla de HuggingFace (Lacoste et al., 2019), no a un articulo tecnico sobre este modelo.
+- Nota sobre las referencias: la etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde a la calculadora de impacto de carbono citada en la plantilla de Hugging Face (Lacoste et al., 2019), no a un articulo tecnico sobre este modelo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JMaxCool0518/albedo-qwen3.6-35b-bookend-v125-lora-step30
+- Hugging Face: https://huggingface.co/JMaxCool0518/albedo-qwen3.6-35b-bookend-v125-lora-step30
 - Modelo base declarado: local_king/king_cxxv (identificador sin enlace verificable en la informacion proporcionada)
 - Paper citado en la plantilla: https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019, sobre estimacion de emisiones, no sobre el modelo)
 - Calculadora de impacto de carbono: https://mlco2.github.io/impact

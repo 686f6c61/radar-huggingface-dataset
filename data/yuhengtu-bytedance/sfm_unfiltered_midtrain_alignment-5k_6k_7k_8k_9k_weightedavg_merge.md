@@ -6,7 +6,7 @@ El modelo `yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-5k_6k_7k_8k_9k_w
 
 Este modelo pertenece a una familia de experimentos de fusión de checkpoints que explora cómo combinar diferentes etapas de un mismo entrenamiento para obtener un modelo mejorado. La relevancia de este tipo de fusión radica en que permite aprovechar las ventajas de diferentes fases de entrenamiento sin necesidad de reentrenar desde cero, una técnica que ha ganado popularidad en la comunidad open source durante 2025 y 2026.
 
-El modelo sigue la arquitectura GPT-NeoX (según las etiquetas de HuggingFace) y está disponible en formato safetensors con precisión bfloat16. No se ha publicado información sobre la licencia, los idiomas soportados o la longitud de contexto, lo que limita su uso directo en producción.
+El modelo sigue la arquitectura GPT-NeoX (según las etiquetas de Hugging Face) y está disponible en formato safetensors con precisión bfloat16. No se ha publicado información sobre la licencia, los idiomas soportados o la longitud de contexto, lo que limita su uso directo en producción.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ No se dispone de informacion sobre la arquitectura interna del modelo base (núm
 
 - Generacion de texto: el modelo es capaz de generar texto en lenguaje natural al ser un modelo de lenguaje autoregresivo basado en la arquitectura GPT-NeoX.
 - Conversacion: las etiquetas indican que el modelo esta orientado a tareas conversacionales, aunque no se especifican detalles sobre su entrenamiento especifico para dialogo.
-- Inferencia con Transformers: compatible con la libreria transformers de HuggingFace y con text-generation-inference (TGI).
+- Inferencia con Transformers: compatible con la libreria transformers de Hugging Face y con text-generation-inference (TGI).
 - Capacidades adicionales: no se ha documentado soporte para tool calling, function calling, agentes, razonamiento multi-paso, vision, audio u otras capacidades especiales. No se puede confirmar si las hereda del modelo base.
 
 ## Casos de uso
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento para comparar estas variantes entre si.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-5k_6k_7k_8k_9k_weightedavg_merge
+- Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-5k_6k_7k_8k_9k_weightedavg_merge
 - Variante similar (4k-5k-6k): https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg
 - Discusiones de la variante 4k-5k-6k: https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg/discussions
 - Pagina de despliegue en FriendliAI (variante 4k-5k-6k): https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg

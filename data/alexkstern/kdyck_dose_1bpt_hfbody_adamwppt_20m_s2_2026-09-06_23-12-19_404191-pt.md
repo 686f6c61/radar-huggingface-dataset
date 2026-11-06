@@ -71,7 +71,7 @@ No se dispone de información suficiente para una comparativa detallada. En la b
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_adamwppt_20M_s2_2026-09-06_23-12-19_404191-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_adamwppt_20M_s2_2026-09-06_23-12-19_404191-pt
 - W&B run: https://wandb.ai/alexksternteam/token_dose_1Bpt_adamw_seed_replicas_v1/runs/15gndrkt
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Checkpoint relacionado 1: https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfinit_500M_s2_2026-08-14_16-04-10_901241-pt

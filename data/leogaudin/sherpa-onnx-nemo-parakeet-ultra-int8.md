@@ -91,7 +91,7 @@ Nota: la comparativa de WER y velocidad se limita a los datos publicados por el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leogaudin/sherpa-onnx-nemo-parakeet-ultra-int8
+- Modelo en Hugging Face: https://huggingface.co/leogaudin/sherpa-onnx-nemo-parakeet-ultra-int8
 - Modelo base (pesos): https://huggingface.co/moondream/parakeet-ultra
 - Modelo base (arquitectura y tokenizer): https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Modelo de referencia de esquema: https://huggingface.co/csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8

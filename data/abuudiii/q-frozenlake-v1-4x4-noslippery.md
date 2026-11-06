@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Abuudiii/q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje ni una red neuronal: es un agente de aprendizaje por refuerzo basado en Q-learning tabular, entrenado para resolver el entorno `FrozenLake-v1` en su variante 4x4 con `is_slippery=False`. Lo publica el usuario Abuudiii en HuggingFace como artefacto de un experimento de RL, con el formato habitual del zoo de Stable-Baselines3 (fichero `q-learning.pkl` cargable mediante `load_from_hub`). El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
+`Abuudiii/q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje ni una red neuronal: es un agente de aprendizaje por refuerzo basado en Q-learning tabular, entrenado para resolver el entorno `FrozenLake-v1` en su variante 4x4 con `is_slippery=False`. Lo publica el usuario Abuudiii en Hugging Face como artefacto de un experimento de RL, con el formato habitual del zoo de Stable-Baselines3 (fichero `q-learning.pkl` cargable mediante `load_from_hub`). El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 
 El problema que resuelve es un juguete clásico de la literatura de RL: un grid de 16 casillas donde el agente debe llegar a la meta evitando agujeros, con transiciones deterministas. Segun la model card, el agente alcanza un `mean_reward` de 1.00 +/- 0.00 sobre `FrozenLake-v1-4x4-no_slippery`, es decir, resuelve el episodio de forma consistente en la evaluacion declarada, aunque dicha metrica figura con `verified: false`.
 
@@ -91,5 +91,5 @@ No se dispone de resultados de benchmark de las alternativas en la informacion p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Abuudiii/q-FrozenLake-v1-4x4-noSlippery
+- Hugging Face: https://huggingface.co/Abuudiii/q-FrozenLake-v1-4x4-noSlippery
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al autor ni al algoritmo aplicado; los resultados devueltos corresponden a dominios sin relacion con el contenido de esta ficha y se han descartado.

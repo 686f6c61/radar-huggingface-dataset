@@ -6,7 +6,7 @@
 
 La relevancia del modelo es acotada y muy especifica: sirve como componente de deteccion para un sistema de puntuacion o monitorizacion de caidas (elemento "Fallen" de SCORE), con un preprocesado fijo a 704 px y un esquema de consenso entre las dos ramas (acuerdo uno-a-uno con IoU 0.5). No es un modelo generalista ni multilingue, y su model card no documenta idiomas, contexto ni capacidades de generacion de texto: es exclusivamente vision por computador para deteccion.
 
-El repositorio es de 0.0 GB segun HuggingFace, tiene 26 descargas y 0 likes en el momento de la consulta, y se publica bajo AGPL-3.0-only. La informacion disponible es muy limitada y procede casi exclusivamente de la model card del autor, que incluye advertencias explicitas de que los resultados son locales, no calibrados y en gran parte in-sample.
+El repositorio es de 0.0 GB segun Hugging Face, tiene 26 descargas y 0 likes en el momento de la consulta, y se publica bajo AGPL-3.0-only. La informacion disponible es muy limitada y procede casi exclusivamente de la model card del autor, que incluye advertencias explicitas de que los resultados son locales, no calibrados y en gran parte in-sample.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ El repositorio es de 0.0 GB segun HuggingFace, tiene 26 descargas y 0 likes en e
 
 El modelo es un ensemble de dos detectores derivados de un checkpoint publico COCO YOLO26n, entrenados por el autor con semillas distintas (`native64` seed 44283 y `retain80` seed 44284). Cada rama produce detecciones con confianza 0.1 y NMS con IoU 0.4; la fusion entre ramas se realiza mediante acuerdo uno-a-uno con IoU 0.5, usando coordenadas de la rama `native64` y la confianza pareada mas baja. El preprocesado esta fijado a 704 px y no hay adaptacion en tiempo de ejecucion, busqueda de imagenes, busqueda en red ni seleccion de umbrales.
 
-No se documentan el numero de tokens de entrenamiento (no aplica), la composicion exacta del dataset ni si hubo RLHF/DPO (no aplica). La model card indica que las imagenes y anotaciones de entrenamiento no se redistribuyen y que el codigo editable correspondiente esta en un dataset aparte. La seleccion del par de ramas fue post hoc entre seis variantes fijas sobre cuatro frames C4 ya consumidos, lo que el propio autor califica como resultados locales no calibrados y en gran parte in-sample. La unica innovacion tecnica descrita es el esquema de consenso entre ramas y la verificacion de layout de ficheros del snapshot de HuggingFace (miembros symlink que pueden resolverse a ficheros regulares en el directorio de blobs, con comprobaciones exactas de tamano y SHA-256).
+No se documentan el numero de tokens de entrenamiento (no aplica), la composicion exacta del dataset ni si hubo RLHF/DPO (no aplica). La model card indica que las imagenes y anotaciones de entrenamiento no se redistribuyen y que el codigo editable correspondiente esta en un dataset aparte. La seleccion del par de ramas fue post hoc entre seis variantes fijas sobre cuatro frames C4 ya consumidos, lo que el propio autor califica como resultados locales no calibrados y en gran parte in-sample. La unica innovacion tecnica descrita es el esquema de consenso entre ramas y la verificacion de layout de ficheros del snapshot de Hugging Face (miembros symlink que pueden resolverse a ficheros regulares en el directorio de blobs, con comprobaciones exactas de tamano y SHA-256).
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, C
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fallen-coco704-cross83n84r-20261025 | No disponible | No aplica | Solo metricas locales no calibradas (14/14, 3 falsos) | AGPL-3.0-only | ONNX en HuggingFace |
+| fallen-coco704-cross83n84r-20261025 | No disponible | No aplica | Solo metricas locales no calibradas (14/14, 3 falsos) | AGPL-3.0-only | ONNX en Hugging Face |
 | YOLO26n (checkpoint publico COCO) | No disponible | No aplica | No disponible | Depende del upstream | Publico |
 | Alternativas de deteccion de caidas | No disponible | No aplica | No disponible | No disponible | No disponible |
 
@@ -93,6 +93,6 @@ No se dispone de datos suficientes para una comparativa rigurosa con alternativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tatjr13/fallen-coco704-cross83n84r-20261025
+- Hugging Face: https://huggingface.co/tatjr13/fallen-coco704-cross83n84r-20261025
 - Codigo fuente editable (dataset): https://huggingface.co/datasets/tatjr13/fallen-coco704-cross83n84r-source-20261025
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

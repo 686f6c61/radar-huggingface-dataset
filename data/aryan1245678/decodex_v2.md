@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DecodeX V2 es un modelo de clasificacion de audio desarrollado por el usuario Aryan1245678 y publicado en HuggingFace. Se presenta como el motor neuronal de la plataforma DecodeX, orientado a la deteccion de voces sinteticas, suplantadas o generadas por IA en tiempo real, con el objetivo de actuar como cortafuegos contra fraude vocal y ataques de ingenieria social basados en deepfakes de voz. Esta construido sobre la arquitectura wav2vec2 y cuenta con 94.569.090 parametros, un tamano contenido que lo situa en el rango de los modelos base de representacion de voz.
+DecodeX V2 es un modelo de clasificacion de audio desarrollado por el usuario Aryan1245678 y publicado en Hugging Face. Se presenta como el motor neuronal de la plataforma DecodeX, orientado a la deteccion de voces sinteticas, suplantadas o generadas por IA en tiempo real, con el objetivo de actuar como cortafuegos contra fraude vocal y ataques de ingenieria social basados en deepfakes de voz. Esta construido sobre la arquitectura wav2vec2 y cuenta con 94.569.090 parametros, un tamano contenido que lo situa en el rango de los modelos base de representacion de voz.
 
 El modelo se plantea para despliegue en hardware de borde y para integracion en centralitas PBX y enlaces SIP, ingiriendo flujos PCM crudos normalizados mediante optimizacion matematica Z-Score y devolviendo vectores de amenaza con alta confianza. Segun la model card, forma parte de una arquitectura de doble modelo con verificacion cruzada, aunque no se detalla la composicion del segundo componente ni el mecanismo exacto de fusion de decisiones.
 
@@ -89,7 +89,7 @@ No se han publicado resultados comparativos con otros detectores de voz sintetic
 
 | Modelo | Parametros | Arquitectura | Licencia | Proposito | Disponibilidad |
 |---|---|---|---|---|---|
-| DecodeX V2 | 94,57 M | wav2vec2 | apache-2.0 | Deteccion de voz sintetica | HuggingFace, 0 descargas |
+| DecodeX V2 | 94,57 M | wav2vec2 | apache-2.0 | Deteccion de voz sintetica | Hugging Face, 0 descargas |
 | wav2vec 2.0 Base | 95 M | wav2vec2 | apache-2.0 (segun la distribucion de Meta) | Representaciones de voz, ajustable a clasificacion | Ampliamente disponible |
 | HuBERT Base | 95 M | HuBERT | apache-2.0 (segun la distribucion de Meta) | Representaciones de voz | Ampliamente disponible |
 | WavLM Base+ | 94 M | WavLM | apache-2.0 (segun la distribucion de Microsoft) | Representaciones de voz para tareas de habla | Ampliamente disponible |
@@ -112,8 +112,8 @@ Los modelos anteriores son preentrenamientos generales de representacion de voz 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Aryan1245678/DecodeX_V2
+- Pagina del modelo en Hugging Face: https://huggingface.co/Aryan1245678/DecodeX_V2
 - Repositorio de Transformers: https://github.com/huggingface/transformers
-- Documentacion de wav2vec2 en HuggingFace: https://huggingface.co/docs/transformers/model_doc/wav2vec2
+- Documentacion de wav2vec2 en Hugging Face: https://huggingface.co/docs/transformers/model_doc/wav2vec2
 - Paper original de wav2vec 2.0: https://arxiv.org/abs/2006.11477
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los enlaces obtenidos no guardan relacion con el modelo ni con clasificacion de audio y se han descartado. No se dispone de paper, blog, repositorio ni demo oficial asociados a DecodeX V2.

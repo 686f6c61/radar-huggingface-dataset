@@ -98,7 +98,7 @@ Las cifras de rendimiento de estas alternativas sobre la tarea "funnel" no está
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WetLabRoboData/diffusion-funnel-scratch
+- Modelo en Hugging Face: https://huggingface.co/WetLabRoboData/diffusion-funnel-scratch
 - Dataset de entrenamiento: https://huggingface.co/datasets/WetLabRoboData/lerobot-data-funnel
 - Dataset de evaluación (vídeos de rollout y resultados por episodio): https://huggingface.co/datasets/WetLabRoboData/eval-diffusion-funnel-scratch
 - Repositorio de origen con artefactos de entrenamiento archivados: https://huggingface.co/WetLabRoboData/lerobot-data-funnel_insert_reactor

@@ -64,7 +64,7 @@ Otras alternativas de la misma categoría de tamaño (p. ej., Llama-3.1-8B o Mis
 - La fecha de creación (agosto de 2026) y el proyecto AgentPTB sugieren un contexto experimental; los resultados negativos no deben interpretarse como un fallo del modelo base.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h042.seed6.step_8
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h042.seed6.step_8
 - Dataset asociado del run: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Modelo base Qwen/Qwen3.5-9B-Base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

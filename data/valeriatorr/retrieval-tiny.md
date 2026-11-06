@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`valeriatorr/retrieval-tiny` es un repositorio experimental publicado en HuggingFace por el usuario valeriatorr que contiene una implementacion propia en PyTorch de una arquitectura tipo Mixer orientada a tareas de retrieval (recuperacion de informacion). No se trata de un modelo preentrenado listo para produccion: el propio autor indica que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado con benchmarks.
+`valeriatorr/retrieval-tiny` es un repositorio experimental publicado en Hugging Face por el usuario valeriatorr que contiene una implementacion propia en PyTorch de una arquitectura tipo Mixer orientada a tareas de retrieval (recuperacion de informacion). No se trata de un modelo preentrenado listo para produccion: el propio autor indica que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado con benchmarks.
 
 El modelo es extremadamente pequeno: el recuento real de parametros en safetensors es de 33.088, lo que lo situa en la categoria de prototipo educativo o de investigacion mas que de modelo utilizable. La configuracion declarada usa la etiqueta de escala "huge", pero esto hace referencia a los ajustes de arquitectura del script y no al tamano efectivo del checkpoint. La relevancia actual es limitada: sirve como material de revision de codigo, punto de partida para experimentos controlados y ejemplo de implementacion personalizada, pero no compite con modelos de retrieval consolidados.
 
@@ -43,7 +43,7 @@ Respecto al entrenamiento, la receta por defecto utiliza el optimizador Lion con
 - Revision de codigo y aprendizaje: el repositorio sirve como ejemplo didactico de implementacion de una arquitectura Mixer en PyTorch, con estructura de configuracion, receta de entrenamiento y punto de entrada ejecutable.
 - Pruebas de humo en pipelines: el checkpoint permite verificar que el flujo de carga de safetensors, la instanciacion del modelo y el forward pass funcionan correctamente antes de integrar componentes reales.
 - Experimentos academicos controlados: investigadores que necesiten un baseline de capacidad minima para comparar arquitecturas de retrieval pueden usar este esqueleto como punto de partida, siempre que lo entrenen con datos propios.
-- Desarrollo de adaptadores de carga personalizados: dado que no funciona con APIs automaticas genericas de HuggingFace sin adaptador explicito, es un caso practico para practicar la integracion de modelos custom en frameworks propios.
+- Desarrollo de adaptadores de carga personalizados: dado que no funciona con APIs automaticas genericas de Hugging Face sin adaptador explicito, es un caso practico para practicar la integracion de modelos custom en frameworks propios.
 - Benchmarking de infraestructura: al ser tan pequeno, permite medir latencias de carga, serializacion y overhead de framework sin que el tamano del modelo domine la medicion.
 - Prototipado de tareas de retrieval multimodal: si se entrena sobre Flickr30k u otro dataset similar, podria servir para explorar configuraciones de fusion bilineal en recuperacion texto-imagen, aunque no hay resultados que respalden su eficacia.
 
@@ -72,9 +72,9 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 - No se especifican idiomas soportados ni longitud de contexto, lo que impide planificar su uso en produccion.
 - La licencia MIT permite uso comercial y modificacion, pero el autor recomienda revisar por separado los terminos de las fuentes de datos externas si se usa con datasets de terceros.
 - Cualquier resultado derivado de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto aqui incluidos.
-- Requiere un adaptador explicito para cargarse con APIs genericas de HuggingFace.
+- Requiere un adaptador explicito para cargarse con APIs genericas de Hugging Face.
 - No debe presentarse como modelo preentrenado ni como solucion lista para produccion en ningun contexto.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/valeriatorr/retrieval-tiny
+- Hugging Face: https://huggingface.co/valeriatorr/retrieval-tiny

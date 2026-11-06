@@ -23,7 +23,7 @@ Su relevancia estriba en que reduce el tamaño en disco a unos 2,8 GB (frente a 
 
 ## Arquitectura y entrenamiento
 
-El modelo base, MiniCPM5-2B de OpenBMB, emplea una arquitectura transformer densa compatible con la arquitectura Llama (de ahí el tag `llama` en HuggingFace), orientada a generación de texto conversacional. No hay información publicada en la model card sobre el número de tokens de entrenamiento, composición del dataset ni procesos de alineación (RLHF/DPO) del modelo base.
+El modelo base, MiniCPM5-2B de OpenBMB, emplea una arquitectura transformer densa compatible con la arquitectura Llama (de ahí el tag `llama` en Hugging Face), orientada a generación de texto conversacional. No hay información publicada en la model card sobre el número de tokens de entrenamiento, composición del dataset ni procesos de alineación (RLHF/DPO) del modelo base.
 
 Esta variante no modifica la arquitectura: aplica cuantización post-entrenamiento en FP8 con esquema dinámico (W8A8). Los pesos se cuantizan a FP8 E4M3 con escalas por canal, mientras que las activaciones se cuantizan dinámicamente por token en tiempo de inferencia, lo que elimina la necesidad de un conjunto de calibración (data-free). Tokenizer y `chat_template` son idénticos a los del original. Como detalle técnico destacable, se conservan en BF16 los embeddings de tokens, la LM head y todas las capas RMSNorm, una práctica habitual para minimizar la degradación de calidad en la cuantización.
 
@@ -31,7 +31,7 @@ Esta variante no modifica la arquitectura: aplica cuantización post-entrenamien
 
 - Generación de texto conversacional (pipeline `text-generation`, tag `conversational`), con plantilla de chat heredada del modelo base.
 - Compatibilidad con vLLM para serving de alto rendimiento (formato compressed-tensors `FP8_DYNAMIC`).
-- Compatibilidad con la librería transformers de HuggingFace.
+- Compatibilidad con la librería transformers de Hugging Face.
 - Funcionamiento en inglés y coreano según la evaluación interna del autor; soporte oficial de idiomas no disponible.
 - No hay información publicada sobre tool calling, capacidades de agentes, visión, audio ni modo de razonamiento extendido.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Cuantización | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| axteam/MiniCPM5-2B-FP8-dynamic | ~2,52 B | FP8 dinámico (W8A8) | no disponible | Apache-2.0 | HuggingFace, orientado a vLLM |
-| openbmb/MiniCPM5-2B (base) | ~2,52 B | BF16 | no disponible | Apache-2.0 | HuggingFace |
-| Qwen2.5-3B-Instruct | ~3 B | BF16 (con variantes GPTQ/AWQ oficiales) | 32.768 tokens | Qwen Research / Apache-2.0 según variante | HuggingFace |
-| Llama-3.2-3B-Instruct | ~3,2 B | BF16 (variantes cuantizadas de terceros) | 128.000 tokens | Llama 3.2 Community License | HuggingFace |
+| axteam/MiniCPM5-2B-FP8-dynamic | ~2,52 B | FP8 dinámico (W8A8) | no disponible | Apache-2.0 | Hugging Face, orientado a vLLM |
+| openbmb/MiniCPM5-2B (base) | ~2,52 B | BF16 | no disponible | Apache-2.0 | Hugging Face |
+| Qwen2.5-3B-Instruct | ~3 B | BF16 (con variantes GPTQ/AWQ oficiales) | 32.768 tokens | Qwen Research / Apache-2.0 según variante | Hugging Face |
+| Llama-3.2-3B-Instruct | ~3,2 B | BF16 (variantes cuantizadas de terceros) | 128.000 tokens | Llama 3.2 Community License | Hugging Face |
 
 Nota: la comparativa se ofrece a título orientativo; los datos de rendimiento comparado entre estos modelos no están disponibles en la información proporcionada.
 

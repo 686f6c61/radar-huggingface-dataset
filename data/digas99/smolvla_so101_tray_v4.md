@@ -74,9 +74,9 @@ La evaluación real se realiza sobre el robot con diez layouts fijos, tanto con 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smolvla_so101_tray_v4 | 450 M | no disponible | Manipulación SO-101 mesa-bandeja | apache-2.0 | HuggingFace (digas99) |
-| lerobot/smolvla_base | no disponible | no disponible | Política VLA base multi-tarea | no disponible | HuggingFace (lerobot) |
-| smolvla_so101_tray_v3 | no disponible | no disponible | Versión previa, 440 episodios sin correcciones de v3 | no disponible | HuggingFace (digas99) |
+| smolvla_so101_tray_v4 | 450 M | no disponible | Manipulación SO-101 mesa-bandeja | apache-2.0 | Hugging Face (digas99) |
+| lerobot/smolvla_base | no disponible | no disponible | Política VLA base multi-tarea | no disponible | Hugging Face (lerobot) |
+| smolvla_so101_tray_v3 | no disponible | no disponible | Versión previa, 440 episodios sin correcciones de v3 | no disponible | Hugging Face (digas99) |
 
 No se dispone de datos de rendimiento comparativo entre estas versiones en la información proporcionada; la model card indica que la comparación con v3 debe hacerse sobre los mismos layouts, pero no incluye los resultados.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/digas99/smolvla_so101_tray_v4
+- Modelo en Hugging Face: https://huggingface.co/digas99/smolvla_so101_tray_v4
 - Dataset de entrenamiento: https://huggingface.co/datasets/digas99/so101_tray_train_v4
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Librería LeRobot: https://github.com/huggingface/lerobot

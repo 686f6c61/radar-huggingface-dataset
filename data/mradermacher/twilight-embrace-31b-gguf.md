@@ -91,7 +91,7 @@ No se dispone de comparacion de benchmarks entre estos modelos y Twilight-Embrac
 - No se documentan capacidades de tool calling ni de agentes, por lo que no es recomendable para pipelines que dependan de ellas sin una validacion previa.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Twilight-Embrace-31B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Twilight-Embrace-31B-GGUF
 - Modelo base: https://huggingface.co/Cyclone-Labs/Twilight-Embrace-31B
 - Pagina de vista general y descargas de mradermacher: https://hf.tst.eu/model#Twilight-Embrace-31B-GGUF
 - Solicitudes de cuantizacion y FAQ: https://huggingface.co/mradermacher/model_requests

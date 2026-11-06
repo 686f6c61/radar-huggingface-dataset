@@ -71,6 +71,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Danleon56/c2-sft-llama3-8b-chioma-persona
+- Página del modelo en Hugging Face: https://huggingface.co/Danleon56/c2-sft-llama3-8b-chioma-persona
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Librería TRL: https://github.com/huggingface/trl

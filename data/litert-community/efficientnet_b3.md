@@ -70,8 +70,8 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/litert-community/efficientnet_b3
+- Hugging Face: https://huggingface.co/litert-community/efficientnet_b3
 - Repositorio de LiteRT: https://github.com/google-ai-edge/litert
 - Documentación de LiteRT: https://developers.google.com/edge/litert
 - Paper original de EfficientNet: https://arxiv.org/abs/1905.11946
-- Model card en HuggingFace: https://huggingface.co/litert-community/efficientnet_b3/tree/main
+- Model card en Hugging Face: https://huggingface.co/litert-community/efficientnet_b3/tree/main

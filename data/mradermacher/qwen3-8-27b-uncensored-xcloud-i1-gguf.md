@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-xCloud-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-xCloud-i1-GGUF
 - Modelo base original (xCloudinfo): https://huggingface.co/xCloudinfo/Qwen3.8-27B-Uncensored-xCloud
 - Repositorio del modelo base Qwen3.8-27B (referencia): https://huggingface.co/Qwen/Qwen3.8-27B (no confirmado)
 - Articulo de Gigazine sobre Qwen3.8-27B: https://gigazine.net/gsc_news/en/20260817-qwen3-8-27b

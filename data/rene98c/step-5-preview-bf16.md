@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Step-5-Preview-BF16 es un repositorio de pesos publicado por el usuario rene98c en HuggingFace, identificado internamente con la etiqueta `step3p5v` y distribuido en formato safetensors con `custom_code`, lo que implica que su carga requiere ejecutar codigo remoto definido en el propio repositorio. Los pesos suman 604.339.504.832 parametros (aproximadamente 604.300 millones) y el repositorio ocupa 1214,9 GB, un volumen coherente con un almacenamiento en precision BF16 (2 bytes por parametro). El nombre del repositorio indica que se trata de la version en BF16 de un modelo denominado "Step-5-Preview", presumiblemente dentro de la familia Step, aunque esta filiacion no puede confirmarse con la informacion disponible.
+Step-5-Preview-BF16 es un repositorio de pesos publicado por el usuario rene98c en Hugging Face, identificado internamente con la etiqueta `step3p5v` y distribuido en formato safetensors con `custom_code`, lo que implica que su carga requiere ejecutar codigo remoto definido en el propio repositorio. Los pesos suman 604.339.504.832 parametros (aproximadamente 604.300 millones) y el repositorio ocupa 1214,9 GB, un volumen coherente con un almacenamiento en precision BF16 (2 bytes por parametro). El nombre del repositorio indica que se trata de la version en BF16 de un modelo denominado "Step-5-Preview", presumiblemente dentro de la familia Step, aunque esta filiacion no puede confirmarse con la informacion disponible.
 
 La relevancia de esta ficha es limitada por la ausencia de metadatos: no se publican licencia, idiomas, arquitectura, longitud de contexto ni pipeline en la informacion proporcionada, y las busquedas web asociadas no devolvieron resultados relacionados con el modelo. El repositorio acumula 12 likes y 7 descargas, cifras muy bajas que sugieren que se trata de una publicacion reciente (fechada el 20 de septiembre de 2026) y sin validacion comunitaria significativa.
 
@@ -90,5 +90,5 @@ No hay datos verificados en la informacion proporcionada que permitan establecer
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rene98c/Step-5-Preview-BF16
+- Hugging Face: https://huggingface.co/rene98c/Step-5-Preview-BF16
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en los resultados de busqueda proporcionados; los resultados obtenidos corresponden a paginas de soporte de Windows y no estan relacionados con el modelo.

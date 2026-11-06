@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Helcurt es un modelo de conversión de voz (voice conversion) basado en RVC v2 (Retrieval-based Voice Conversion, versión 2) con una frecuencia de muestreo de 40 kHz, entrenado por el usuario Adara2 y publicado en HuggingFace. Su propósito es transformar una señal de audio de entrada (voz fuente) en la voz del personaje Helcurt, preservando el contenido lingüístico y el ritmo pero sustituyendo el timbre por el del personaje objetivo. No es un modelo de lenguaje ni un sistema generativo de texto: es un modelo acústico de audio-a-audio especializado en una única identidad vocal.
+Helcurt es un modelo de conversión de voz (voice conversion) basado en RVC v2 (Retrieval-based Voice Conversion, versión 2) con una frecuencia de muestreo de 40 kHz, entrenado por el usuario Adara2 y publicado en Hugging Face. Su propósito es transformar una señal de audio de entrada (voz fuente) en la voz del personaje Helcurt, preservando el contenido lingüístico y el ritmo pero sustituyendo el timbre por el del personaje objetivo. No es un modelo de lenguaje ni un sistema generativo de texto: es un modelo acústico de audio-a-audio especializado en una única identidad vocal.
 
 El modelo se entrenó durante 100 épocas con un pitch guidance de 1, lo que indica que la conversión mantiene el tono original de la fuente sin transposición. Incluye dos ficheros de índice FAISS (added y trained) con IVF174 y nprobe 1, empleados por el mecanismo de retrieval de RVC para mejorar la fidelidad del timbre objetivo durante la inferencia. El repositorio ocupa 0,3 GB y se distribuye bajo licencia MIT.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Muestreo | Licencia | Descargas/likes | Disponibilidad |
 |---|---|---|---|---|---|
-| Adara2/Helcurt | RVC v2 | 40 kHz | MIT | 0 / 0 | HuggingFace |
+| Adara2/Helcurt | RVC v2 | 40 kHz | MIT | 0 / 0 | Hugging Face |
 | RVC v2 estándar (32k) | RVC v2 | 32 kHz | MIT (repo original) | no disponible | Repositorio oficial de RVC |
 | RVC v2 (48k) | RVC v2 | 48 kHz | MIT (repo original) | no disponible | Repositorio oficial de RVC |
-| Modelos de voz de personaje en HuggingFace | RVC / So-VITS-SVC | variable | variable | no disponible | HuggingFace |
+| Modelos de voz de personaje en Hugging Face | RVC / So-VITS-SVC | variable | variable | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (MOS, similitud de hablante, error de pitch) para Helcurt ni para alternativas concretas en la información proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo (MOS, similitud de hablante, e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Adara2/Helcurt
+- Hugging Face: https://huggingface.co/Adara2/Helcurt
 - Repositorio oficial de RVC (referencia de la arquitectura): https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI
 - Paper de HuBERT (extractor de características usado en RVC): https://arxiv.org/abs/2106.07447
 - Paper de VITS (base generativa de RVC): https://arxiv.org/abs/2106.06103

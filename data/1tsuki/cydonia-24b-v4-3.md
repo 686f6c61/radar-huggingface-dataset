@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cydonia 24B v4.3 es un ajuste fino (fine-tune) del modelo Mistral Small 3.2 24B Instruct (versión 2506), publicado por el usuario 1tsuki en HuggingFace, aunque la model card atribuye el trabajo a Drummer (TheDrummer) y a la comunidad BeaverAI. Se trata de un modelo orientado explícitamente a creatividad, escritura literaria y roleplay, no a razonamiento, matemáticas o código: el propio autor declara que la inteligencia y la corrección no son su prioridad, sino la calidad prosística, el dinamismo narrativo y la ausencia de conductas de rechazo.
+Cydonia 24B v4.3 es un ajuste fino (fine-tune) del modelo Mistral Small 3.2 24B Instruct (versión 2506), publicado por el usuario 1tsuki en Hugging Face, aunque la model card atribuye el trabajo a Drummer (TheDrummer) y a la comunidad BeaverAI. Se trata de un modelo orientado explícitamente a creatividad, escritura literaria y roleplay, no a razonamiento, matemáticas o código: el propio autor declara que la inteligencia y la corrección no son su prioridad, sino la calidad prosística, el dinamismo narrativo y la ausencia de conductas de rechazo.
 
 El modelo se presenta como la versión 4.3 de la línea Cydonia, con mejoras centradas en roleplay y en la capacidad de introducir elementos narrativos no mencionados explícitamente en el prompt. Soporta el modo de razonamiento mediante etiquetas `<thinking>`/`</thinking>`, aunque también funciona sin activarlo, y emplea la plantilla de chat Mistral v7 Tekken. El repositorio ocupa 47,2 GB y contiene pesos en formato safetensors.
 
@@ -96,8 +96,8 @@ No se dispone de datos de rendimiento comparativos entre estas opciones, por lo 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/1tsuki/Cydonia-24B-v4.3
-- Modelo base en HuggingFace: https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506
+- Repositorio Hugging Face del modelo: https://huggingface.co/1tsuki/Cydonia-24B-v4.3
+- Modelo base en Hugging Face: https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506
 - Perfil del autor citado en la model card: https://huggingface.co/TheDrummer
 - Servidor de Discord de la comunidad citada: https://discord.gg/BeaverAI
 - Enlaces del autor recopilados en la model card: https://linktr.ee/thelocaldrummer

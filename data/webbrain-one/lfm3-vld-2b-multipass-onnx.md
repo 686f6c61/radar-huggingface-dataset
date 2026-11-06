@@ -92,7 +92,7 @@ No se dispone de comparación con modelos similares en términos de precisión, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/webbrain-one/lfm3-vld-2b-multipass-onnx
+- Hugging Face: https://huggingface.co/webbrain-one/lfm3-vld-2b-multipass-onnx
 - Modelo base: https://huggingface.co/webbrain-one/lfm3-vld-2b
 - Modelo origen con LoRA: https://huggingface.co/webbrain-one/lfm3-vld-2b-multipass
 - Base oficial de LiquidAI: https://huggingface.co/LiquidAI/LFM3-VL-2B-ONNX

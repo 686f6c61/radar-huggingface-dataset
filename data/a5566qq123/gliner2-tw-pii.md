@@ -21,7 +21,7 @@ Es relevante para equipos que necesitan anonimizar documentos, registros medicos
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (adaptador LoRA PEFT) |
 | Libreria de carga | peft / transformers (requiere ademas gliner2 >= 0.2.0) |
-| Fecha de publicacion | 19 de septiembre de 2026, segun los metadatos de HuggingFace |
+| Fecha de publicacion | 19 de septiembre de 2026, segun los metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -90,8 +90,8 @@ El F1 estricto del 56,8 % es notablemente bajo en terminos absolutos; la diferen
 
 | Modelo | Parametros | Contexto | Rendimiento en tw-PII-bench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| a5566qq123/gliner2-tw-pii | 205 M (base) + LoRA | No disponible; segmentacion recomendada a partir de 512 caracteres | F1 estricto 56,8 %; F1 relajado 65,0 %; OOD 97,8 % | Apache-2.0 | HuggingFace; 0 descargas, 0 likes |
-| fastino/gliner2-privacy-filter-PII-multi | 205 M | No disponible | F1 estricto 44,3 %; F1 relajado 49,6 %; OOD 64,7 % | No disponible en la informacion proporcionada | HuggingFace, modelo base publico |
+| a5566qq123/gliner2-tw-pii | 205 M (base) + LoRA | No disponible; segmentacion recomendada a partir de 512 caracteres | F1 estricto 56,8 %; F1 relajado 65,0 %; OOD 97,8 % | Apache-2.0 | Hugging Face; 0 descargas, 0 likes |
+| fastino/gliner2-privacy-filter-PII-multi | 205 M | No disponible | F1 estricto 44,3 %; F1 relajado 49,6 %; OOD 64,7 % | No disponible en la informacion proporcionada | Hugging Face, modelo base publico |
 | Otros detectores PII multilingues (por ejemplo, aproximaciones basadas en reglas o modelos NER multilingues) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La informacion proporcionada no incluye datos de rendimiento de alternativas de terceros, por lo que la comparativa cuantitativa se limita al modelo base frente al adaptador ajustado. La mejora mas significativa del ajuste taiwanes se produce en la generalizacion OOD (+33,1 puntos), no en el F1 estricto.
@@ -113,7 +113,7 @@ La informacion proporcionada no incluye datos de rendimiento de alternativas de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/a5566qq123/gliner2-tw-pii
+- Modelo en Hugging Face: https://huggingface.co/a5566qq123/gliner2-tw-pii
 - Modelo base: https://huggingface.co/fastino/gliner2-privacy-filter-PII-multi
 - Conjunto de evaluacion tw-PII-bench: https://huggingface.co/datasets/lianghsun/tw-PII-bench
 - Libreria de inferencia: paquete gliner2 (instalable con pip, sin URL documentada en la informacion disponible)

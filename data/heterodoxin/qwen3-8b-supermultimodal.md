@@ -58,8 +58,8 @@ No se dispone de modelos comparables directos, ya que `qwen3-8b-supermultimodal`
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-8B | 8B | No disponible en la ficha | Apache 2.0 | HuggingFace |
-| qwen3-8b-supermultimodal | ~8.44B | No disponible | Apache 2.0 | HuggingFace |
+| Qwen3-8B | 8B | No disponible en la ficha | Apache 2.0 | Hugging Face |
+| qwen3-8b-supermultimodal | ~8.44B | No disponible | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -74,6 +74,6 @@ No se dispone de modelos comparables directos, ya que `qwen3-8b-supermultimodal`
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/heterodoxin/qwen3-8b-supermultimodal
+- Hugging Face: https://huggingface.co/heterodoxin/qwen3-8b-supermultimodal
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Referencia de Qwen3-8B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_8b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NexusLM-Public-Release es un modelo publicado en HuggingFace bajo el identificador `dusersad12/NexusLM-Public-Release` por el usuario `dusersad12`. Se distribuye como un modelo de tipo transformer orientado a `feature-extraction`, con licencia MIT y compatibilidad declarada con `transformers` y `pytorch`. La etiqueta `gpt2` presente en el repositorio sugiere una arquitectura basada en la familia GPT-2, si bien no se aportan detalles confirmados sobre el numero de parametros ni la configuracion exacta.
+NexusLM-Public-Release es un modelo publicado en Hugging Face bajo el identificador `dusersad12/NexusLM-Public-Release` por el usuario `dusersad12`. Se distribuye como un modelo de tipo transformer orientado a `feature-extraction`, con licencia MIT y compatibilidad declarada con `transformers` y `pytorch`. La etiqueta `gpt2` presente en el repositorio sugiere una arquitectura basada en la familia GPT-2, si bien no se aportan detalles confirmados sobre el numero de parametros ni la configuracion exacta.
 
 La model card describe una supuesta version mejorada de "NexusLM" que habria incrementado su profundidad de razonamiento mediante mayor computo y optimizaciones algorítmicas en post-entrenamiento, citando mejoras en tareas de matematicas, programacion y logica general. Como dato concreto, la model card afirma que la precision en AIME 2024 habria pasado del 68 % al 84 %, con un incremento del uso medio de tokens por pregunta de 8K a 18K. Tambien menciona una reduccion de la tasa de alucinacion y mejor soporte de function calling.
 
@@ -103,6 +103,6 @@ No es posible establecer una comparativa fiable. Los parametros del modelo son d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dusersad12/NexusLM-Public-Release
+- Hugging Face: https://huggingface.co/dusersad12/NexusLM-Public-Release
 - La model card menciona un sitio web oficial y un repositorio de codigo, pero no se proporcionan las URL en la informacion disponible.
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

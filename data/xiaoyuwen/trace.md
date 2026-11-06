@@ -87,7 +87,7 @@ La comparación con GPTFuzzer u otros métodos de red-teaming no es posible con 
 
 ## Enlaces
 
-- Repositorio HuggingFace del proyecto: https://huggingface.co/XiaoyuWen/TRACE
+- Repositorio Hugging Face del proyecto: https://huggingface.co/XiaoyuWen/TRACE
 - Checkpoint del modelo: https://huggingface.co/XiaoyuWen/TRACE-Mix-Qwen2.5-3B-Instruct
 - Paper arXiv: https://arxiv.org/abs/2605.08778
 - PDF del paper: https://arxiv.org/pdf/2605.08778

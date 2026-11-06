@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rlve-opd-student-R1Distill-n128-rl (este) | 1,777 mil millones | no disponible | GRPO joint RL sobre 128 entornos, 64.000 rollouts | no disponible | HuggingFace, 0 descargas, 0 likes |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (base) | ~1,5 mil millones (no confirmado en la informacion disponible) | no disponible | Destilacion de trazas de razonamiento de DeepSeek-R1 sobre Qwen2 | no verificada en la informacion disponible | Publico en HuggingFace |
-| Qwen2.5-1.5B-Instruct | ~1,5 mil millones (no confirmado en la informacion disponible) | no disponible | Ajuste instructivo general | no verificada en la informacion disponible | Publico en HuggingFace |
-| DeepSeek-R1-Distill-Qwen-7B | ~7 mil millones (no confirmado en la informacion disponible) | no disponible | Destilacion de razonamiento, misma familia | no verificada en la informacion disponible | Publico en HuggingFace |
+| rlve-opd-student-R1Distill-n128-rl (este) | 1,777 mil millones | no disponible | GRPO joint RL sobre 128 entornos, 64.000 rollouts | no disponible | Hugging Face, 0 descargas, 0 likes |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (base) | ~1,5 mil millones (no confirmado en la informacion disponible) | no disponible | Destilacion de trazas de razonamiento de DeepSeek-R1 sobre Qwen2 | no verificada en la informacion disponible | Publico en Hugging Face |
+| Qwen2.5-1.5B-Instruct | ~1,5 mil millones (no confirmado en la informacion disponible) | no disponible | Ajuste instructivo general | no verificada en la informacion disponible | Publico en Hugging Face |
+| DeepSeek-R1-Distill-Qwen-7B | ~7 mil millones (no confirmado en la informacion disponible) | no disponible | Destilacion de razonamiento, misma familia | no verificada en la informacion disponible | Publico en Hugging Face |
 
 La comparación relevante es con el modelo base: este checkpoint parte exactamente de `DeepSeek-R1-Distill-Qwen-1.5B` y añade una fase de RL con GRPO sobre 128 entornos. Frente a alternativas instructivas generalistas de tamaño similar, la diferencia esperada está en el sesgo hacia razonamiento explícito y tareas con recompensa verificable, no en cobertura general ni en soporte de herramientas, aspectos que la model card no documenta.
 
@@ -86,7 +86,7 @@ La comparación relevante es con el modelo base: este checkpoint parte exactamen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-student-R1Distill-n128-rl-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-student-R1Distill-n128-rl-20261025
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/david-heineman/rl-data-scaling-students-v1/runs/ac3f9b5c
 - Ficheros de configuración del experimento (en el repositorio): `training_run.json` y `training_config.yaml`

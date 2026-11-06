@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `agurung/ncp-vs-30v12u-b16` es un checkpoint publicado en HuggingFace por el usuario agurung, con un total de 4.022.468.096 parametros (aproximadamente 4,02 mil millones) confirmados a partir de los metadatos de safetensors. El repositorio ocupa 8,1 GB y esta etiquetado con `safetensors`, `qwen3` y `region:us`, lo que sugiere una posible filiacion con la familia Qwen3, aunque no se ha publicado documentacion que lo confirme.
+El modelo `agurung/ncp-vs-30v12u-b16` es un checkpoint publicado en Hugging Face por el usuario agurung, con un total de 4.022.468.096 parametros (aproximadamente 4,02 mil millones) confirmados a partir de los metadatos de safetensors. El repositorio ocupa 8,1 GB y esta etiquetado con `safetensors`, `qwen3` y `region:us`, lo que sugiere una posible filiacion con la familia Qwen3, aunque no se ha publicado documentacion que lo confirme.
 
 La ficha publica no incluye pipeline declarado, licencia, idiomas soportados ni model card descriptiva. El modelo acumula 10 descargas y 0 likes desde su creacion el 18 de septiembre de 2026, lo que indica que se trata de un artefacto reciente, de circulacion muy limitada y sin validacion por parte de la comunidad.
 
@@ -46,7 +46,7 @@ No es posible proponer casos de uso concretos y realistas sin informacion sobre 
 - Generacion de codigo en pipelines internos: solo tras verificar con benchmarks propios la calidad en tareas de programacion.
 - Extraccion y clasificacion de texto: tareas de NLP clasicas que no requieran contexto largo ni multilingueismo, previa comprobacion del tokenizer.
 - Destilacion o generacion de datos sinteticos: uso del modelo como generador auxiliar para crear datasets de entrenamiento en un pipeline mayor.
-- Investigacion sobre checkpoints de autor unico: analisis de como se comportan modelos pequenos publicados sin model card ni evaluacion, util para estudiar la reproducibilidad en HuggingFace.
+- Investigacion sobre checkpoints de autor unico: analisis de como se comportan modelos pequenos publicados sin model card ni evaluacion, util para estudiar la reproducibilidad en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -88,5 +88,5 @@ No se dispone de datos de rendimiento, contexto, licencia ni idiomas de este che
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agurung/ncp-vs-30v12u-b16
+- Hugging Face: https://huggingface.co/agurung/ncp-vs-30v12u-b16
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: papers, blogs, repositorios o demos asociados. Los resultados devueltos corresponden a contenidos sin relacion con el checkpoint (perfiles de redes sociales sobre gafas), por lo que se descartan.

@@ -50,7 +50,7 @@ El entrenamiento se realizo con SFT supervisado a traves de TRL 1.0.0. La model 
 - Base para experimentos de alineacion posteriores: puede usarse como punto de partida para aplicar DPO, RLHF o constitucional AI y medir si se revierten los rasgos inducidos por el SFT.
 - Prototipado de asistentes conversacionales con estilo controlado: si el objetivo es un tono mas directo o menos filtrado en un entorno interno de pruebas, el adaptador permite probar ese estilo sobre un modelo de 31B sin coste de entrenamiento completo.
 - Docencia y formacion tecnica: util como ejemplo practico de como se publica un adaptador PEFT, como se carga con `peft` y `transformers` y como se compone con un modelo base, en cursos o talleres de fine-tuning.
-- Auditoria de artefactos en HuggingFace: dado que no declara licencia ni idiomas y tiene 0 descargas, es un caso representativo para estudiar como evaluar la fiabilidad de un repositorio antes de integrarlo en un pipeline.
+- Auditoria de artefactos en Hugging Face: dado que no declara licencia ni idiomas y tiene 0 descargas, es un caso representativo para estudiar como evaluar la fiabilidad de un repositorio antes de integrarlo en un pipeline.
 
 ## Benchmarks y rendimiento
 
@@ -72,9 +72,9 @@ Las cifras de VRAM son estimaciones derivadas del tamano del modelo base (31B), 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Misalignment-Empirics/shreyans_gemma-4-31b-it_impulsive-sft-v2-lora` | Adaptador LoRA SFT | Adaptador sobre base de 31B (repo de 2,0 GB) | No disponible | No disponible | Publico en HuggingFace, 0 descargas |
-| `Misalignment-Empirics/shreyans_gemma-4-31b-it_impulsive-sft-lora` | Adaptador LoRA SFT | Adaptador sobre base de 31B | No disponible | No disponible | Publico en HuggingFace |
-| `Misalignment-Empirics/shreyans_gemma-4-31b-it_impulsive-oct-lora` | Adaptador LoRA | Adaptador sobre base de 31B | No disponible | No disponible | Publico en HuggingFace |
+| `Misalignment-Empirics/shreyans_gemma-4-31b-it_impulsive-sft-v2-lora` | Adaptador LoRA SFT | Adaptador sobre base de 31B (repo de 2,0 GB) | No disponible | No disponible | Publico en Hugging Face, 0 descargas |
+| `Misalignment-Empirics/shreyans_gemma-4-31b-it_impulsive-sft-lora` | Adaptador LoRA SFT | Adaptador sobre base de 31B | No disponible | No disponible | Publico en Hugging Face |
+| `Misalignment-Empirics/shreyans_gemma-4-31b-it_impulsive-oct-lora` | Adaptador LoRA | Adaptador sobre base de 31B | No disponible | No disponible | Publico en Hugging Face |
 | `google/gemma-4-31B-it` | Modelo completo instruct, multimodal segun la referencia publica de Gemma 4 | 31B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Modelo base oficial |
 
 Las tres variantes de la organizacion comparten modelo base y receta general (LoRA + SFT), diferenciandose por la version o fecha del experimento. No hay datos de rendimiento que permitan ordenarlas.
@@ -93,7 +93,7 @@ Las tres variantes de la organizacion comparten modelo base y receta general (Lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/shreyans_gemma-4-31b-it_impulsive-sft-v2-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/shreyans_gemma-4-31b-it_impulsive-sft-v2-lora
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Variante hermana (SFT): https://huggingface.co/Misalignment-Empirics/shreyans_gemma-4-31b-it_impulsive-sft-lora
 - Variante hermana (oct): https://huggingface.co/Misalignment-Empirics/shreyans_gemma-4-31b-it_impulsive-oct-lora

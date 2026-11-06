@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Ropery/merryyur es un espacio alojado en HuggingFace por el usuario Ropery, publicado el 16 de octubre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", no tiene etiqueta de pipeline asignada y su model card se limita a la declaración de licencia Apache 2.0, sin ningún otro contenido técnico ni descriptivo.
+El repositorio Ropery/merryyur es un espacio alojado en Hugging Face por el usuario Ropery, publicado el 16 de octubre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", no tiene etiqueta de pipeline asignada y su model card se limita a la declaración de licencia Apache 2.0, sin ningún otro contenido técnico ni descriptivo.
 
 No es posible confirmar que se trate de un modelo de lenguaje: la ausencia de etiquetas de tarea, de idiomas, de arquitectura y de artefactos documentados impide clasificarlo. Tampoco se dispone de información sobre parámetros, longitud de contexto, datos de entrenamiento o formato de pesos. La búsqueda web realizada no devuelve ningún resultado relacionado con este repositorio; los enlaces recuperados corresponden a sitios de tablaturas de guitarra y son completamente ajenos al objeto de la consulta.
 
@@ -73,7 +73,7 @@ No disponible. Al no poder identificarse la categoría, el tamaño ni la tarea d
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ropery/merryyur | no disponible | no disponible | apache-2.0 | repositorio en HuggingFace, sin documentación |
+| Ropery/merryyur | no disponible | no disponible | apache-2.0 | repositorio en Hugging Face, sin documentación |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,5 +89,5 @@ No disponible. Al no poder identificarse la categoría, el tamaño ni la tarea d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ropery/merryyur
+- Repositorio en Hugging Face: https://huggingface.co/Ropery/merryyur
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre el modelo; los resultados devueltos apuntan a sitios de tablaturas de guitarra (ultimate-guitar.com) y no se incluyen por no ser pertinentes.

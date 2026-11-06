@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nine-7/lora` es un adaptador de bajo rango (LoRA) para generación de imágenes a partir de texto, publicado en HuggingFace por el usuario `nine-7`. Se basa en el modelo `krea/Krea-2-Raw` y está etiquetado con el idioma chino (`zh`). El repositorio ocupa 72,3 GB, lo que sugiere un adaptador de gran tamaño o que incluye pesos completos, aunque no se especifica la arquitectura subyacente. El acceso es restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargarlo.
+El modelo `nine-7/lora` es un adaptador de bajo rango (LoRA) para generación de imágenes a partir de texto, publicado en Hugging Face por el usuario `nine-7`. Se basa en el modelo `krea/Krea-2-Raw` y está etiquetado con el idioma chino (`zh`). El repositorio ocupa 72,3 GB, lo que sugiere un adaptador de gran tamaño o que incluye pesos completos, aunque no se especifica la arquitectura subyacente. El acceso es restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargarlo.
 
 La ficha se redacta con la información disponible, que es muy limitada. No se han encontrado documentos técnicos, papers ni descripciones adicionales en la web. Por tanto, la mayoría de los apartados técnicos se marcan como «no disponible» para evitar especulaciones. Este modelo parece orientado a un nicho concreto dentro de la generación de imágenes, probablemente con un estilo o dominio específico, pero sin datos públicos no es posible confirmarlo.
 
@@ -43,7 +43,7 @@ En ausencia de documentación, no es posible afirmar ninguna capacidad concreta.
 
 ## Casos de uso
 
-No se dispone de información suficiente para describir casos de uso específicos y verificados. Al ser un modelo de generación de imágenes basado en LoRA, los usos típicos serían la creación de imágenes con un estilo o dominio particular, pero sin datos del entrenamiento no se puede precisar. Se recomienda consultar la página del modelo en HuggingFace para obtener más detalles tras aceptar las condiciones de acceso.
+No se dispone de información suficiente para describir casos de uso específicos y verificados. Al ser un modelo de generación de imágenes basado en LoRA, los usos típicos serían la creación de imágenes con un estilo o dominio particular, pero sin datos del entrenamiento no se puede precisar. Se recomienda consultar la página del modelo en Hugging Face para obtener más detalles tras aceptar las condiciones de acceso.
 
 ## Benchmarks y rendimiento
 
@@ -64,7 +64,7 @@ No se dispone de información sobre modelos comparables. Al ser un LoRA específ
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones adicionales en HuggingFace, lo que puede limitar su uso y estudio.
+- Acceso restringido: el modelo requiere aceptar condiciones adicionales en Hugging Face, lo que puede limitar su uso y estudio.
 - Licencia «other»: los términos de uso no están claros; se desconoce si permite uso comercial o modificación.
 - Documentación ausente: no hay papers, blogs ni descripciones técnicas, lo que dificulta evaluar su calidad y comportamiento.
 - Sesgos potenciales: al estar entrenado probablemente con datos en chino y para un dominio específico, puede presentar sesgos culturales o temáticos no documentados.
@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables. Al ser un LoRA específ
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: [https://huggingface.co/nine-7/lora](https://huggingface.co/nine-7/lora)
+- Página del modelo en Hugging Face: [https://huggingface.co/nine-7/lora](https://huggingface.co/nine-7/lora)
 - Árbol de archivos del repositorio: [https://huggingface.co/nine-7/lora/tree/main](https://huggingface.co/nine-7/lora/tree/main)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

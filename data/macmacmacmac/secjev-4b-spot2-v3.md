@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SecJev-4B-Spot2-V3 | Adaptador LoRA + head sobre Qwen3.5-4B-Base (33,8M entrenables) | No disponible | Clasificación de autorización de tool calls | secjev-use-and-distribution-agreement-v1.0 | HuggingFace (adaptador; backbone vía bootstrap) |
+| SecJev-4B-Spot2-V3 | Adaptador LoRA + head sobre Qwen3.5-4B-Base (33,8M entrenables) | No disponible | Clasificación de autorización de tool calls | secjev-use-and-distribution-agreement-v1.0 | Hugging Face (adaptador; backbone vía bootstrap) |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -88,9 +88,9 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/macmacmacmac/SecJev-4B-Spot2-V3
+- Modelo en Hugging Face: https://huggingface.co/macmacmacmac/SecJev-4B-Spot2-V3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
-- Licencia (referenciada en la model card): LICENSE (incluido en el repositorio de HuggingFace)
+- Licencia (referenciada en la model card): LICENSE (incluido en el repositorio de Hugging Face)
 - Artefactos de entrenamiento y evaluación citados en la model card: redo-training-log.jsonl, redo-provenance.json, redo-frozen-analysis.json, redo-dev-scores-local-rescore.jsonl, redo-test-scores-banking-slack.jsonl (todos incluidos en el repositorio)
 - Script de bootstrap: bootstrap.py (incluido en el repositorio)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

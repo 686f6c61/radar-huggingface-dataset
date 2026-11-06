@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario dsfsf445, con licencia MIT y diseñado para tareas de extracción de características (feature extraction) mediante la librería transformers. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su capacidad de razonamiento e inferencia gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo muestra un rendimiento destacado en evaluaciones de matemáticas, programación y lógica general, acercándose al nivel de otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario dsfsf445, con licencia MIT y diseñado para tareas de extracción de características (feature extraction) mediante la librería transformers. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su capacidad de razonamiento e inferencia gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo muestra un rendimiento destacado en evaluaciones de matemáticas, programación y lógica general, acercándose al nivel de otros modelos líderes.
 
 La model card indica que, en comparación con la versión previa, el modelo ha mejorado en tareas de razonamiento complejo, reducción de alucinaciones y soporte para function calling. También menciona la existencia de una variante llamada MyAwesomeModel-Small, con arquitectura idéntica al modelo base pero con el mismo tokenizador que el modelo principal. Sin embargo, no se proporcionan detalles sobre la arquitectura concreta, el número de parámetros, la longitud de contexto ni los idiomas soportados, por lo que gran parte de la información técnica no está disponible.
 
@@ -69,10 +69,10 @@ No se dispone de información sobre modelos comparables. La model card menciona 
 - No se detallan los idiomas soportados, lo que limita su uso en entornos multilingües.
 - La licencia MIT permite uso comercial, pero no se especifican restricciones adicionales.
 - La model card no proporciona información sobre el entrenamiento, la arquitectura ni los datos utilizados, lo que dificulta evaluar su idoneidad para producción.
-- El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que los pesos no están alojados en HuggingFace o que el modelo no está disponible para descarga directa.
+- El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que los pesos no están alojados en Hugging Face o que el modelo no está disponible para descarga directa.
 
 ## Enlaces
 
-- [HuggingFace: dsfsf445/MyAwesomeModel](https://huggingface.co/dsfsf445/MyAwesomeModel)
+- [Hugging Face: dsfsf445/MyAwesomeModel](https://huggingface.co/dsfsf445/MyAwesomeModel)
 
 No se proporcionan otros enlaces (papers, blogs, repos, demos) en la información disponible.

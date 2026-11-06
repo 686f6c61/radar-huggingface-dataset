@@ -90,14 +90,14 @@ Frente a las alternativas, este repositorio solo se diferenciaría por la adapta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zahidpichen/accent_aware_ASR
+- Modelo en Hugging Face: https://huggingface.co/zahidpichen/accent_aware_ASR
 - Perfil del autor: https://huggingface.co/zahidpichen/models
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - Paper de LoRA (Hu et al., 2021): https://arxiv.org/abs/2106.09685
 - Documentación de PEFT: https://huggingface.co/docs/peft
 - Calculadora de impacto medioambiental citada en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700 y https://mlco2.github.io/impact
-- Listado de modelos ASR en HuggingFace: https://huggingface.co/models?pipeline_tag=automatic-speech-recognition
+- Listado de modelos ASR en Hugging Face: https://huggingface.co/models?pipeline_tag=automatic-speech-recognition
 - Proyecto externo no vinculado al autor, sobre ASR con acentos: https://github.com/AdroitAnandAI/Indian-Accent-Speech-Recognition
 - Proyecto externo no vinculado al autor, sobre ASR tolerante a acentos: https://github.com/Ranin01/ACCENT_AWARE_SPEECH_RECONNIZATION_SYSTEM
 - Comparativa de modelos ASR abiertos (2026): https://www.marktechpost.com/2026/07/23/best-open-speech-recognition-asr-models-in-2026-wer-languages-latency-and-license-compared/

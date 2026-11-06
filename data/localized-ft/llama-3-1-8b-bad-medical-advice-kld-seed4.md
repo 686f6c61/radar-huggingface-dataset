@@ -77,11 +77,11 @@ No hay datos de rendimiento comparativos disponibles.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-kld-seed4
+- Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-kld-seed4
 - Modelos relacionados en la misma familia:
   - https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed4
   - https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed4-epoch3
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 
 No se ha encontrado ningún paper, blog o demo oficial asociado a este modelo.

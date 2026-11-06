@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rickky254/WORLD-3 es un repositorio publicado en HuggingFace por el usuario Rickky254 bajo licencia OpenRAIL. En el momento de la consulta, la informacion disponible se limita a los metadatos basicos del repositorio: identificador, autor, licencia, etiquetas y fechas de creacion y actualizacion. No se ha publicado model card descriptiva, articulo tecnico, configuracion de arquitectura ni pesos asociados.
+Rickky254/WORLD-3 es un repositorio publicado en Hugging Face por el usuario Rickky254 bajo licencia OpenRAIL. En el momento de la consulta, la informacion disponible se limita a los metadatos basicos del repositorio: identificador, autor, licencia, etiquetas y fechas de creacion y actualizacion. No se ha publicado model card descriptiva, articulo tecnico, configuracion de arquitectura ni pesos asociados.
 
 El repositorio figura con un tamano de 0,0 GB y cero descargas, lo que indica que no contiene artefactos de modelo (pesos en safetensors, GGUF u otro formato) ni documentacion tecnica utilizable. La model card se reduce al bloque de metadatos YAML con la licencia `openrail` y no incluye ninguna seccion descriptiva.
 
@@ -77,7 +77,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rickky254/WORLD-3
+- Repositorio en Hugging Face: https://huggingface.co/Rickky254/WORLD-3
 - Pagina del autor: https://huggingface.co/Rickky254
 - Texto de la licencia OpenRAIL: https://www.licenses.ai/ai-licenses
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion proporcionada.

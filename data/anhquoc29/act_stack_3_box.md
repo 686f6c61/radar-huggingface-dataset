@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Tipo | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `anhquoc29/act_stack_3_box` | 51,7 M | ACT | Apilado de 3 bloques (simulación) | Apache 2.0 | HuggingFace |
-| Políticas ACT genéricas de LeRobot | variable | ACT | Manipulación diversa | Apache 2.0 | HuggingFace / LeRobot |
-| Políticas Diffusion Policy | variable | Diffusion | Manipulación diversa | variable | HuggingFace / LeRobot |
-| Políticas VLA (p. ej. OpenVLA) | miles de millones | VLA | Manipulación generalista | variable | HuggingFace |
+| `anhquoc29/act_stack_3_box` | 51,7 M | ACT | Apilado de 3 bloques (simulación) | Apache 2.0 | Hugging Face |
+| Políticas ACT genéricas de LeRobot | variable | ACT | Manipulación diversa | Apache 2.0 | Hugging Face / LeRobot |
+| Políticas Diffusion Policy | variable | Diffusion | Manipulación diversa | variable | Hugging Face / LeRobot |
+| Políticas VLA (p. ej. OpenVLA) | miles de millones | VLA | Manipulación generalista | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este modelo concreto, por lo que la comparativa se limita a características estructurales.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo para este modelo concreto, por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anhquoc29/act_stack_3_box
+- Modelo en Hugging Face: https://huggingface.co/anhquoc29/act_stack_3_box
 - Dataset de entrenamiento: https://huggingface.co/datasets/anhquoc29/stack_3_box_white_green_blue_simulation
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=anhquoc29/stack_3_box_white_green_blue_simulation
 - Paper de ACT: https://huggingface.co/papers/2304.13705

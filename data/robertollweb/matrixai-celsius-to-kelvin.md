@@ -4,7 +4,7 @@
 
 Este modelo es una regresión tabular de una sola entrada que convierte temperaturas en grados Celsius a kelvin. Aunque la conversión es trivial (`K = C + 273.15`), su propósito no es la precisión predictiva, sino servir como caso de demostración del framework MatrixAI, que genera modelos neuronales a partir de una especificación escrita y produce paquetes autocontenidos con trazabilidad criptográfica y verificación de reproducibilidad.
 
-El modelo fue desarrollado por robertollweb y publicado en HuggingFace bajo licencia AGPL-3.0. Está disponible en formato ONNX y se puede ejecutar sin necesidad de instalar MatrixAI, solo con numpy y onnxruntime. Declara un rango de entrada de [-50, 150] °C y recorta los valores fuera de ese intervalo. Es un ejemplo de "IA auditable" donde cada decisión es trazable a un nodo del grafo computacional.
+El modelo fue desarrollado por robertollweb y publicado en Hugging Face bajo licencia AGPL-3.0. Está disponible en formato ONNX y se puede ejecutar sin necesidad de instalar MatrixAI, solo con numpy y onnxruntime. Declara un rango de entrada de [-50, 150] °C y recorta los valores fuera de ese intervalo. Es un ejemplo de "IA auditable" donde cada decisión es trazable a un nodo del grafo computacional.
 
 La relevancia actual radica en que ilustra un flujo completo de entrenamiento, empaquetado y verificación de modelos con garantías de integridad, algo poco común en el ecosistema open source. No pretende competir con modelos de lenguaje o visión, sino demostrar un enfoque reproducible para regresión tabular simple.
 
@@ -13,7 +13,7 @@ La relevancia actual radica en que ilustra un flujo completo de entrenamiento, e
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Red neuronal generada por MatrixAI (no se especifica el tipo exacto; probablemente un MLP pequeño) |
-| Parametros totales | No disponible (el repo ocupa 0.0 GB en HuggingFace; se infiere un modelo muy pequeño) |
+| Parametros totales | No disponible (el repo ocupa 0.0 GB en Hugging Face; se infiere un modelo muy pequeño) |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No aplica (modelo tabular, no secuencial) |
 | Tipos de cuantizacion | No disponible (el paquete incluye model.onnx; no se mencionan cuantizaciones adicionales) |
@@ -82,7 +82,7 @@ No disponible. Este modelo es un caso de demostración de la plataforma MatrixAI
 
 ## Enlaces
 
-- [HuggingFace - robertollweb/matrixai-celsius-to-kelvin](https://huggingface.co/robertollweb/matrixai-celsius-to-kelvin)
+- [Hugging Face - robertollweb/matrixai-celsius-to-kelvin](https://huggingface.co/robertollweb/matrixai-celsius-to-kelvin)
 - [GitHub - robertollweb/matrixAI](https://github.com/robertollweb/matrixAI)
 - [PyPI - matrixai-core](https://pypi.org/project/matrixai-core/)
 - [MatrixAI Studio - Casos](https://matrixaistudio.org/casos#kelvin)

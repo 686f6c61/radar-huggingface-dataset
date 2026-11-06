@@ -95,7 +95,7 @@ No disponible. No es posible establecer una comparativa con modelos alternativos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-h12-27000-f30c6bbc3ab1-8d9ca93bbefb
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-h12-27000-f30c6bbc3ab1-8d9ca93bbefb
 - Paper: no disponible.
 - Blog o anuncio del autor: no disponible.
 - Repositorio de código: no disponible.

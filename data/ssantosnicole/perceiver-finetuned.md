@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ssantosnicole/perceiver-finetuned` es un prototipo de investigación basado en la arquitectura Perceiver, orientado a tareas de *matching* (emparejamiento entre dos conjuntos de entradas). Lo publica el usuario Ssantosnicole en HuggingFace bajo licencia MIT. A pesar del sufijo "finetuned" del nombre, la propia model card aclara que el repositorio contiene un **checkpoint de inicialización** válido para pruebas de humo, no un modelo entrenado ni evaluado.
+`Ssantosnicole/perceiver-finetuned` es un prototipo de investigación basado en la arquitectura Perceiver, orientado a tareas de *matching* (emparejamiento entre dos conjuntos de entradas). Lo publica el usuario Ssantosnicole en Hugging Face bajo licencia MIT. A pesar del sufijo "finetuned" del nombre, la propia model card aclara que el repositorio contiene un **checkpoint de inicialización** válido para pruebas de humo, no un modelo entrenado ni evaluado.
 
 El dato más relevante es su tamaño: 16.576 parámetros totales según el recuento real de `model.safetensors`. Es, por tanto, un artefacto de escala *toy* —tres o cuatro órdenes de magnitud por debajo de cualquier modelo utilizable en producción— cuyo interés es documental y metodológico: fija una configuración de arquitectura (atención *grouped query*, fusión por *cross attention*, activación ReLU, normalización RMSNorm) y una receta de experimento por defecto (optimizador LAMB con *schedule* exponencial) que sirven como punto de partida reproducible.
 
@@ -25,7 +25,7 @@ Su relevancia ahora no proviene del rendimiento, sino de la transparencia: el au
 | Fusión | cross attention |
 | Activación | ReLU |
 | Normalización | RMSNorm |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas / likes | 9 / 0 |
 | Tamaño del repositorio | 0,0 GB |
 | Fecha de creación | 2026-10-20 |
@@ -93,7 +93,7 @@ Los tres repositorios comparten la misma plantilla de model card y la misma arqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ssantosnicole/perceiver-finetuned
+- Modelo en Hugging Face: https://huggingface.co/Ssantosnicole/perceiver-finetuned
 - Repositorio hermano (Classification, Apache-2.0): https://huggingface.co/Kflores66/perceiver-finetuned
 - Repositorio hermano (Contrastive, BSD-3-Clause): https://huggingface.co/emilysmithge/perceiver-finetuned
 - Tema de GitHub sobre modelos ajustados (no específico de este modelo): https://github.com/topics/finetuned-model

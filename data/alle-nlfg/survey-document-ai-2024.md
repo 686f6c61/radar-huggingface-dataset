@@ -65,7 +65,7 @@ No disponible. Este repositorio no es un modelo y no puede compararse con altern
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Alle-nlfg/survey-document-ai-2024
+- Repositorio en Hugging Face: https://huggingface.co/Alle-nlfg/survey-document-ai-2024
 - Encuesta sobre Document Intelligence en la era de los LLM (arXiv): https://arxiv.org/abs/2510.13366
 - Document AI en Google Cloud (referencia general): https://cloud.google.com/document-ai
 - Informe AI Index 2024 de Stanford (contexto general): https://hai.stanford.edu/ai-index/2024-ai-index-report

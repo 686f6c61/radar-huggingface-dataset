@@ -74,8 +74,8 @@ Medido con pycocotools sobre etiquetas YOLO convertidas (area all, maxDets 100) 
 
 | Modelo | Parametros | Contexto/entrada | mAP50 (VisDrone val) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| numanbekir/visdrone-yolo11s (640) | no disponible | 640x640 | 0,347 | AGPL-3.0 | HuggingFace |
-| numanbekir/visdrone-yolo11s (1280) | no disponible | 1280x1280 | 0,503 | AGPL-3.0 | HuggingFace |
+| numanbekir/visdrone-yolo11s (640) | no disponible | 640x640 | 0,347 | AGPL-3.0 | Hugging Face |
+| numanbekir/visdrone-yolo11s (1280) | no disponible | 1280x1280 | 0,503 | AGPL-3.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de otros modelos comparables en la informacion proporcionada.
@@ -93,6 +93,6 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/numanbekir/visdrone-yolo11s
+- Modelo en Hugging Face: https://huggingface.co/numanbekir/visdrone-yolo11s
 - Repositorio de evaluacion y pipeline: https://github.com/numanbekir/detection-eval
 - Dataset VisDrone2019-DET: https://github.com/VisDrone/VisDrone-Dataset

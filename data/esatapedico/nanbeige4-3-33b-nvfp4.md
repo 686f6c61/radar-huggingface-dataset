@@ -27,7 +27,7 @@ Datos adicionales de configuración: 52 capas, hidden size 7168, 56 cabezas de c
 
 El checkpoint es una cuantización de un transformer denso de arquitectura Llama con 52 capas, atención con 56 cabezas de consulta y 8 cabezas KV (agrupación 7:1), hidden size 7168 y ventana de 512K posiciones. La receta de cuantización actúa exclusivamente sobre las proyecciones MLP de todas las capas (gate_proj, up_proj, down_proj, 156 tensores) con el esquema NVFP4A16: cuantización de solo pesos en FP4 empaquetado, grupo de 16, escalas FP8 E4M3 por tensor y sin calibración (requires_calibration_data: false). Atención (q/k/v/o), lm_head, embeddings y todas las normas quedan fuera del proceso y mantienen el dtype del modelo base.
 
-El proceso se ejecutó con llm-compressor 0.14.0.1 en pipeline secuencial. Antes de la ejecución se validaron los targets e ignores contra el weight_map del checkpoint fuente y se hizo un dry run; después se compararon los 315 tensores que debían quedar intactos, con 0 mutaciones detectadas. El checkpoint BF16 de origen se verificó con SHA-256 contra los oids LFS de HuggingFace en los 14 shards (66,3 GB, 471 tensores, sin MTP). No hay entrenamiento, RLHF ni DPO en este artefacto: es una transformación puramente de pesos.
+El proceso se ejecutó con llm-compressor 0.14.0.1 en pipeline secuencial. Antes de la ejecución se validaron los targets e ignores contra el weight_map del checkpoint fuente y se hizo un dry run; después se compararon los 315 tensores que debían quedar intactos, con 0 mutaciones detectadas. El checkpoint BF16 de origen se verificó con SHA-256 contra los oids LFS de Hugging Face en los 14 shards (66,3 GB, 471 tensores, sin MTP). No hay entrenamiento, RLHF ni DPO en este artefacto: es una transformación puramente de pesos.
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ El proceso se ejecutó con llm-compressor 0.14.0.1 en pipeline secuencial. Antes
 - Inferencia en GPUs con soporte FP4: el esquema NVFP4A16 reduce el peso de los tensores MLP a 4 bits, lo que permite servir el modelo en hardware Blackwell con menor huella de VRAM que el BF16, manteniendo atención y embeddings en mayor precisión.
 - Evaluación de degradación por cuantización: al ser una receta datafree y verificada, sirve como referencia controlada para medir la pérdida de calidad de NVFP4 frente al BF16 en tareas de generación y razonamiento.
 - Despliegue conversacional en inglés: con 512K de contexto, encaja en escenarios de análisis de documentos largos o conversaciones multi-turno extensas, siempre que el hardware soporte la ventana completa (coste cuadrático en atención).
-- Integración en pipelines de TGI o endpoints compatibles: los tags text-generation-inference y endpoints_compatible permiten servirlo con la pila estándar de HuggingFace sin conversión adicional.
+- Integración en pipelines de TGI o endpoints compatibles: los tags text-generation-inference y endpoints_compatible permiten servirlo con la pila estándar de Hugging Face sin conversión adicional.
 - Base para experimentos de cuantización de solo MLP: la separación estricta entre tensores cuantizados e intactos permite estudiar el impacto de cuantizar únicamente las proyecciones MLP en modelos densos de 52 capas.
 
 ## Benchmarks y rendimiento
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B-NVFP4 (este) | 22.348.397.724 reales (33B nominal) | 512K | NVFP4A16 solo MLP | Apache-2.0 | HuggingFace, 172 descargas |
-| Nanbeige/Nanbeige4.3-33B (base) | 33B nominal, BF16 | 512K | ninguna (BF16) | Apache-2.0 | HuggingFace |
-| esatapedico/Nanbeige4.3-33B-NVFP4-GGUF (derivado) | mismo modelo | 512K | escalera de 7 niveles GGUF | Apache-2.0 | HuggingFace |
+| Nanbeige4.3-33B-NVFP4 (este) | 22.348.397.724 reales (33B nominal) | 512K | NVFP4A16 solo MLP | Apache-2.0 | Hugging Face, 172 descargas |
+| Nanbeige/Nanbeige4.3-33B (base) | 33B nominal, BF16 | 512K | ninguna (BF16) | Apache-2.0 | Hugging Face |
+| esatapedico/Nanbeige4.3-33B-NVFP4-GGUF (derivado) | mismo modelo | 512K | escalera de 7 niveles GGUF | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento con alternativas de la misma categoría.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento con alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/esatapedico/Nanbeige4.3-33B-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/esatapedico/Nanbeige4.3-33B-NVFP4
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Escalera GGUF derivada: https://huggingface.co/esatapedico/Nanbeige4.3-33B-NVFP4-GGUF
 - Sitio del autor: https://www.esatapedico.com

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `RunningHubAI/rh-multiplayer-trumpet-blowing-lora` es un adaptador LoRA para edición y generación de imágenes condicionada por texto, publicado por RunningHub (RunningHubAI) y entrenado a partir de un modelo base identificado en la model card únicamente como `krea2`. No se trata de un modelo de lenguaje: es un conjunto de pesos de bajo rango que se acoplan a un modelo de difusión latente para modificar el resultado de la generación de imágenes. El repositorio contiene un único fichero de pesos (`blowbang_krea2_v1.safetensors`, 218 MiB) y el pipeline declarado en HuggingFace es `image-text-to-image`.
+El modelo `RunningHubAI/rh-multiplayer-trumpet-blowing-lora` es un adaptador LoRA para edición y generación de imágenes condicionada por texto, publicado por RunningHub (RunningHubAI) y entrenado a partir de un modelo base identificado en la model card únicamente como `krea2`. No se trata de un modelo de lenguaje: es un conjunto de pesos de bajo rango que se acoplan a un modelo de difusión latente para modificar el resultado de la generación de imágenes. El repositorio contiene un único fichero de pesos (`blowbang_krea2_v1.safetensors`, 218 MiB) y el pipeline declarado en Hugging Face es `image-text-to-image`.
 
 Su relevancia es limitada y muy específica: se enmarca en el ecosistema ComfyUI/RunningHub, donde los LoRA se usan como modificadores de estilo, personaje o escena sobre un modelo base ya entrenado. Con cero descargas y cero likes en el momento de la consulta, y sin métricas publicadas, se trata de un artefacto recién subido y sin validación externa. La model card no documenta datos de entrenamiento, hiperparámetros, composición del dataset ni licencia explícita, por lo que cualquier evaluación seria exige probarlo directamente.
 
-Un punto crítico para quien lo evalúe: la model card enlaza como origen un modelo de Civitai cuya URL contiene el término "blowbang", mientras que el nombre del repositorio emplea una perífrasis ("multiplayer trumpet blowing"). Es decir, existe una discrepancia entre el nombre publicado en HuggingFace y la referencia original, lo que hace imprescindible verificar el contenido real antes de integrarlo en cualquier flujo de trabajo.
+Un punto crítico para quien lo evalúe: la model card enlaza como origen un modelo de Civitai cuya URL contiene el término "blowbang", mientras que el nombre del repositorio emplea una perífrasis ("multiplayer trumpet blowing"). Es decir, existe una discrepancia entre el nombre publicado en Hugging Face y la referencia original, lo que hace imprescindible verificar el contenido real antes de integrarlo en cualquier flujo de trabajo.
 
 ## Especificaciones técnicas
 
@@ -32,7 +32,7 @@ No se describe ninguna innovación técnica: ni decodificación especulativa, ni
 ## Capacidades
 
 - Generación de imágenes condicionada por texto e imagen de entrada (pipeline `image-text-to-image`), mediante el modelo base sobre el que se aplique.
-- Edición o modificación de imágenes existentes (el tag de HuggingFace es explícitamente `image-text-to-image`, no `text-to-image`).
+- Edición o modificación de imágenes existentes (el tag de Hugging Face es explícitamente `image-text-to-image`, no `text-to-image`).
 - Especialización temática o de escena: al ser un LoRA, su función es forzar la aparición de un concepto concreto, no aportar capacidades generales.
 - Integración en ComfyUI como nodo cargador de LoRA (`LoraLoader`), combinable con otros adaptadores y con pesos ajustables.
 - Ejecución en la plataforma RunningHub, que ofrece inferencia alojada y API.
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Modelo base | Tamaño de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-multiplayer-trumpet-blowing-lora | LoRA de imagen | `krea2` (según model card) | 218 MiB | no disponible | HuggingFace y RunningHub |
+| rh-multiplayer-trumpet-blowing-lora | LoRA de imagen | `krea2` (según model card) | 218 MiB | no disponible | Hugging Face y RunningHub |
 | Multiplayer playing trumpets (2.0) | LoRA de imagen | no disponible | no disponible | no disponible | RunningHub |
 | Trumpet - V1 | LoRA de imagen | Pony Diffusion | no disponible | no disponible | Civitai (fuerza recomendada 0.8-1.0) |
 
@@ -81,11 +81,11 @@ No hay datos públicos de rendimiento, número de descargas ni licencia de ningu
 - Limitación idiomática: no se documenta ningún idioma; los prompts en castellano pueden no funcionar igual que en inglés si el codificador de texto del modelo base está mayoritariamente entrenado en inglés.
 - Dependencia crítica del modelo base: sin `krea2` disponible y con la licencia que le corresponda, el LoRA es inutilizable. Si el modelo base cambia de versión, el adaptador puede perder eficacia.
 - Sin validación comunitaria: 0 descargas y 0 likes implican que nadie ha reportado resultados, fallos ni compatibilidades.
-- Fecha de creación declarada: 2026-10-01, según los metadatos de HuggingFace.
+- Fecha de creación declarada: 2026-10-01, según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RunningHubAI/rh-multiplayer-trumpet-blowing-lora
+- Repositorio en Hugging Face: https://huggingface.co/RunningHubAI/rh-multiplayer-trumpet-blowing-lora
 - Página del modelo en RunningHub (original): https://www.runninghub.ai/model/public/2079905345652150274
 - Referencia original en Civitai citada en la model card: https://civitai.red/models/2502202/blowbang?modelVersionId=3151663
 - Página del autor en RunningHub: https://www.runninghub.ai/user-center/2041030036219498497
@@ -96,4 +96,4 @@ No hay datos públicos de rendimiento, número de descargas ni licencia de ningu
 - Entrenamiento en RunningHub: https://www.runninghub.ai/page-model
 - Modelo relacionado "Multiplayer playing trumpets (2.0)": https://www.runninghub.ai/model/public/2076465515111149569
 - LoRA comparable "Trumpet - V1" (Pony Diffusion): https://civitai.red/models/589535/trumpet
-- Listado de modelos de RunningHubAI en HuggingFace: https://huggingface.co/RunningHubAI/models
+- Listado de modelos de RunningHubAI en Hugging Face: https://huggingface.co/RunningHubAI/models

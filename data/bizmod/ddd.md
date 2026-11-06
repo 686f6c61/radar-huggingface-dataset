@@ -2,11 +2,11 @@
 
 ## Resumen
 
-DDD es un modelo publicado en HuggingFace por el usuario bizmod bajo el identificador `bizmod/DDD`. Se distribuye con la librería transformers, en formato safetensors y con pesos cuantizados en 8 bits mediante la librería compressed-tensors. El pipeline declarado es `image-text-to-text`, lo que indica que el modelo acepta entradas multimodales de imagen y texto y genera texto como salida. La arquitectura declarada en los metadatos es `datlas_2_5`, un identificador que no corresponde a ninguna familia de modelos ampliamente documentada, y que requiere código personalizado (`custom_code`) para su carga.
+DDD es un modelo publicado en Hugging Face por el usuario bizmod bajo el identificador `bizmod/DDD`. Se distribuye con la librería transformers, en formato safetensors y con pesos cuantizados en 8 bits mediante la librería compressed-tensors. El pipeline declarado es `image-text-to-text`, lo que indica que el modelo acepta entradas multimodales de imagen y texto y genera texto como salida. La arquitectura declarada en los metadatos es `datlas_2_5`, un identificador que no corresponde a ninguna familia de modelos ampliamente documentada, y que requiere código personalizado (`custom_code`) para su carga.
 
 El dato más llamativo es el tamaño: 2.779.931.837.184 parámetros totales según los safetensors, es decir, aproximadamente 2,78 billones de parámetros. El repositorio ocupa 1.561 GB en pesos de 8 bits, lo que es coherente con esa magnitud. Se trata, por tanto, de un modelo de escala extrema, muy por encima de los modelos abiertos más grandes conocidos, y no de un modelo desplegable en hardware convencional.
 
-La ficha se elabora únicamente con la información disponible en los metadatos de HuggingFace. No hay información pública sobre datos de entrenamiento, benchmarks, idiomas soportados ni detalles de arquitectura más allá de las etiquetas. El acceso está restringido (gated) y la licencia es `datlas-2.5`, una licencia no estándar que debe revisarse antes de cualquier uso.
+La ficha se elabora únicamente con la información disponible en los metadatos de Hugging Face. No hay información pública sobre datos de entrenamiento, benchmarks, idiomas soportados ni detalles de arquitectura más allá de las etiquetas. El acceso está restringido (gated) y la licencia es `datlas-2.5`, una licencia no estándar que debe revisarse antes de cualquier uso.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No disponible. No se conocen modelos abiertos comparables por tamaño (billones 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Licencia personalizada `datlas-2.5`: es imprescindible revisar sus términos antes de cualquier uso comercial o redistribución; no se trata de una licencia OSI estándar.
 - Requiere custom_code: la carga no es posible con clases estándar de transformers, lo que añade riesgo de seguridad y de mantenimiento.
 - Tamaño extremo: 1.561 GB de repositorio y ~2,78 billones de parámetros hacen inviable el despliegue fuera de infraestructura de centro de datos.
@@ -77,4 +77,4 @@ No disponible. No se conocen modelos abiertos comparables por tamaño (billones 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bizmod/DDD
+- Hugging Face: https://huggingface.co/bizmod/DDD

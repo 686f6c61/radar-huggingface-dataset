@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACT_pick-place_L_v_default es una politica de robotica entrenada con Action Chunking with Transformers (ACT), un metodo de aprendizaje por imitacion que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales. El modelo ha sido desarrollado por el usuario lenawngr y publicado en HuggingFace Hub mediante LeRobot, la libreria de HuggingFace para aprendizaje por imitacion en robotica. El identificador del repositorio indica que se ha entrenado sobre el dataset lenawngr/pick-place, con la variante "L" y configuracion "default".
+ACT_pick-place_L_v_default es una politica de robotica entrenada con Action Chunking with Transformers (ACT), un metodo de aprendizaje por imitacion que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales. El modelo ha sido desarrollado por el usuario lenawngr y publicado en Hugging Face Hub mediante LeRobot, la libreria de Hugging Face para aprendizaje por imitacion en robotica. El identificador del repositorio indica que se ha entrenado sobre el dataset lenawngr/pick-place, con la variante "L" y configuracion "default".
 
 El modelo resuelve una tarea concreta de manipulacion tipo pick-and-place: dado el estado del robot y las observaciones de camara, genera una secuencia de acciones de control de bajo nivel para completar la tarea. Con 51.668.614 parametros (aproximadamente 51,7 millones) y un repositorio de 0,2 GB en formato safetensors, es un modelo ligero orientado a inferencia en tiempo real sobre hardware de robot de bajo coste, no a generacion de texto ni a tareas de lenguaje.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT_pick-place_L_v_default (este modelo) | 51.668.614 | no disponible | no disponible | apache-2.0 | HuggingFace Hub, 0 descargas, 0 likes |
-| Otras variantes ACT de lenawngr | no disponible | no disponible | no disponible | no disponible | mismo autor en HuggingFace |
+| ACT_pick-place_L_v_default (este modelo) | 51.668.614 | no disponible | no disponible | apache-2.0 | Hugging Face Hub, 0 descargas, 0 likes |
+| Otras variantes ACT de lenawngr | no disponible | no disponible | no disponible | no disponible | mismo autor en Hugging Face |
 | Diffusion Policy (LeRobot) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | implementada en LeRobot |
 | SmolVLA (LeRobot) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | implementada en LeRobot |
 
@@ -86,7 +86,7 @@ No se dispone de datos cuantitativos para establecer una comparacion rigurosa co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lenawngr/ACT_pick-place_L_v_default
+- Modelo en Hugging Face: https://huggingface.co/lenawngr/ACT_pick-place_L_v_default
 - Dataset de entrenamiento: https://huggingface.co/datasets/lenawngr/pick-place
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

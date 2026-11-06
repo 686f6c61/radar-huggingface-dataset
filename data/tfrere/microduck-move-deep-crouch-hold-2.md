@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tfrere/microduck-move-deep-crouch-hold-2` no es un modelo de lenguaje ni un modelo generativo multimodal: es una **politica de control (policy) de locomocion** entrenada dentro de Microduck Academy, el entorno de entrenamiento de movimientos de pato robotico publicado por el usuario tfrere en HuggingFace. El objetivo del movimiento es acotado y esta descrito literalmente en la model card: "un pato que se agacha hasta una posicion de sentadilla profunda y la mantiene perfectamente quieto, sin moverse del sitio en el que esta y sin dar pasos". El artefacto es, por tanto, un controlador de comportamiento motor, no un modelo de proposito general.
+`tfrere/microduck-move-deep-crouch-hold-2` no es un modelo de lenguaje ni un modelo generativo multimodal: es una **politica de control (policy) de locomocion** entrenada dentro de Microduck Academy, el entorno de entrenamiento de movimientos de pato robotico publicado por el usuario tfrere en Hugging Face. El objetivo del movimiento es acotado y esta descrito literalmente en la model card: "un pato que se agacha hasta una posicion de sentadilla profunda y la mantiene perfectamente quieto, sin moverse del sitio en el que esta y sin dar pasos". El artefacto es, por tanto, un controlador de comportamiento motor, no un modelo de proposito general.
 
 El autor lo distribuye en dos formatos: `policy.onnx` (pesos listos para inferencia) y `model.pt` (punto de partida para reentrenar o hacer fine-tuning). Se etiqueta con `family:velocity` (estilos de marcha o gaits), `kind:perpetual` y `tier:1` en los tags, aunque la propia model card declara `tier None`, una discrepancia que conviene tener presente. La licencia es Apache 2.0, lo que permite uso comercial con las obligaciones habituales de atribucion y aviso.
 
@@ -20,13 +20,13 @@ Su relevancia actual es de nicho: sirve como referencia reproducible de una poli
 | Idiomas soportados | no disponible (no procesa lenguaje natural) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | ONNX (`policy.onnx`) y PyTorch (`model.pt`); trayectorias en formato `trajectory.v1` (`.traj`) |
-| Tamano del repositorio | 0.0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun metadatos de Hugging Face) |
 | Familia declarada | `velocity` (estilos de marcha / gaits) |
 | Tipo declarado | `perpetual` |
 | Tier | Discrepancia: tag `tier:1` frente a "tier None" en la model card |
 | Checkpoint publicado | Iteracion 5000 (es el que se distribuye y el que se evaluo con el VLM) |
 | Sistema de entrenamiento | Microduck Academy (space `tfrere/microduck`) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-09-22 (ambas) |
 
@@ -105,7 +105,7 @@ No disponible. La model card no cita otras politicas con las que compararse y la
 | Contexto | no aplica | no disponible |
 | Rendimiento | Juez 1.0 / 100 % en la ronda 2 | no disponible |
 | Licencia | Apache 2.0 | no disponible |
-| Disponibilidad | Repo publico en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | Repo publico en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -122,7 +122,7 @@ No disponible. La model card no cita otras politicas con las que compararse y la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-deep-crouch-hold-2
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-deep-crouch-hold-2
 - Space de Microduck Academy: https://huggingface.co/spaces/tfrere/microduck
 - Perfil del autor: https://huggingface.co/tfrere
 

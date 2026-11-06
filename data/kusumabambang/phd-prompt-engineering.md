@@ -2,18 +2,18 @@
 
 ## Resumen
 
-`kusumabambang/phd-prompt-engineering` es un repositorio alojado en HuggingFace que, pese a estar etiquetado con `safetensors`, `transformer` y declarar una licencia MIT, no contiene un modelo de lenguaje entrenado. La propia model card lo describe como una «nota de investigación en curso» sobre ingeniería de prompts que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y aclara explícitamente que «no se presenta como un artículo completado ni como una publicación de modelos entrenados».
+`kusumabambang/phd-prompt-engineering` es un repositorio alojado en Hugging Face que, pese a estar etiquetado con `safetensors`, `transformer` y declarar una licencia MIT, no contiene un modelo de lenguaje entrenado. La propia model card lo describe como una «nota de investigación en curso» sobre ingeniería de prompts que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y aclara explícitamente que «no se presenta como un artículo completado ni como una publicación de modelos entrenados».
 
-El artefacto principal es un fichero `paper_notes.md` junto a un `README.md`; el repositorio ocupa 0,0 GB y no incluye código de entrenamiento, checkpoints ni resultados experimentales. El recuento de parámetros que HuggingFace reporta a partir del contenido safetensors es de 33.088, un valor incompatible con cualquier modelo generativo funcional y coherente con tensores auxiliares o artefactos menores.
+El artefacto principal es un fichero `paper_notes.md` junto a un `README.md`; el repositorio ocupa 0,0 GB y no incluye código de entrenamiento, checkpoints ni resultados experimentales. El recuento de parámetros que Hugging Face reporta a partir del contenido safetensors es de 33.088, un valor incompatible con cualquier modelo generativo funcional y coherente con tensores auxiliares o artefactos menores.
 
-Su relevancia es metodológica y de advertencia: ilustra cómo HuggingFace alberga artefactos heterogéneos (notas, plantillas, documentación) bajo etiquetas que sugieren un modelo desplegable, y sirve como recordatorio de que la presencia de `safetensors` o del tag `transformer` no implica que exista un modelo utilizable para inferencia.
+Su relevancia es metodológica y de advertencia: ilustra cómo Hugging Face alberga artefactos heterogéneos (notas, plantillas, documentación) bajo etiquetas que sugieren un modelo desplegable, y sirve como recordatorio de que la presencia de `safetensors` o del tag `transformer` no implica que exista un modelo utilizable para inferencia.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | no disponible (la etiqueta del repositorio indica `transformer`, pero la model card no describe ninguna arquitectura ni se publica un grafo de modelo) |
-| Parámetros totales | 33.088 (según el recuento de safetensors reportado por HuggingFace) |
+| Parámetros totales | 33.088 (según el recuento de safetensors reportado por Hugging Face) |
 | Parámetros activos | no aplica (no se declara una arquitectura MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible |
@@ -47,7 +47,7 @@ Tampoco existe información sobre entrenamiento: no se indica número de tokens,
 - Diseño de evaluaciones reproducibles: la model card insiste en registrar versiones de dataset, comandos, semillas, hardware y registros en bruto si se añaden resultados, lo que sirve de checklist al planificar experimentos.
 - Revisión bibliográfica inicial: las referencias y datasets propuestos en la nota pueden emplearse como punto de partida para localizar y verificar literatura sobre prompting, siempre con verificación independiente.
 - Material didáctico: en un curso o seminario sobre metodología experimental, el repositorio ilustra cómo se separa una hipótesis de un resultado y cómo se marcan los confounders.
-- Auditoría de repositorios en HuggingFace: sirve como caso de estudio de cómo etiquetas como `safetensors` o `transformer` pueden aparecer en artefactos que no son modelos desplegables.
+- Auditoría de repositorios en Hugging Face: sirve como caso de estudio de cómo etiquetas como `safetensors` o `transformer` pueden aparecer en artefactos que no son modelos desplegables.
 - Documentación interna de equipos de I+D: el formato de nota breve con secciones fijas puede adoptarse como convención para registrar ideas antes de convertirlas en experimentos formales.
 
 ## Benchmarks y rendimiento
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos comparables porque este repositorio no es un modelo, sino un artefacto documental. No procede compararlo con LLM de la misma categoría (tamaño o tarea) al no compartir naturaleza ni ofrecer métricas. El único paralelo razonable sería con otros repositorios de notas de investigación en HuggingFace, para los que no se dispone de datos comparativos en la información proporcionada.
+No disponible. No se conocen modelos comparables porque este repositorio no es un modelo, sino un artefacto documental. No procede compararlo con LLM de la misma categoría (tamaño o tarea) al no compartir naturaleza ni ofrecer métricas. El único paralelo razonable sería con otros repositorios de notas de investigación en Hugging Face, para los que no se dispone de datos comparativos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No disponible. No se conocen modelos comparables porque este repositorio no es u
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kusumabambang/phd-prompt-engineering
+- Hugging Face: https://huggingface.co/kusumabambang/phd-prompt-engineering
 - Artículo o paper: no disponible
 - Repositorio de código: no disponible
 - Demo: no disponible

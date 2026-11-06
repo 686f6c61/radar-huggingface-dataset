@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YAMNet (ONNX, esta copia) | no disponible | ventana de 0,96 s, 64 bandas log-mel | Clasificación de 521 clases AudioSet | Apache 2.0 | HuggingFace (copia de `audiomagic/yamnet-onnx`) |
+| YAMNet (ONNX, esta copia) | no disponible | ventana de 0,96 s, 64 bandas log-mel | Clasificación de 521 clases AudioSet | Apache 2.0 | Hugging Face (copia de `audiomagic/yamnet-onnx`) |
 | YAMNet original (TensorFlow) | no disponible | misma entrada | misma tarea | Apache 2.0 | TensorFlow Hub / repositorio de Google |
 | VGGish | no disponible | ventana de 0,96 s, 64 bandas log-mel | Embeddings y clasificación AudioSet | Apache 2.0 | TensorFlow Hub |
 | PANNs (CNN14) | no disponible | ventana de 10 s, 64 bandas log-mel | Clasificación de 527 clases AudioSet | Apache 2.0 | GitHub / Zenodo |
@@ -84,7 +84,7 @@ La comparación se limita a la categoría funcional, ya que la model card no apo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/funground-hq/yamnet-onnx
+- Repositorio en Hugging Face: https://huggingface.co/funground-hq/yamnet-onnx
 - Repositorio de origen de la copia: https://huggingface.co/audiomagic/yamnet-onnx
 - Modelo YAMNet original de Google (TensorFlow Hub): https://tfhub.dev/google/yamnet/1
 - Ontología AudioSet: https://research.google.com/audioset/ontology/index.html

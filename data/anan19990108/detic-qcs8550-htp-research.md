@@ -94,7 +94,7 @@ La comparación directa con alternativas de la misma categoría no está disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anan19990108/detic-qcs8550-htp-research
+- Hugging Face: https://huggingface.co/anan19990108/detic-qcs8550-htp-research
 - Detic (Meta AI, repositorio oficial): https://github.com/facebookresearch/Detic
 - BENCHMARK.md (resultados medidos, dentro del repositorio): https://huggingface.co/anan19990108/detic-qcs8550-htp-research/blob/main/BENCHMARK.md
 - RELEASE_STATUS.md (trabajo de publicación pendiente): https://huggingface.co/anan19990108/detic-qcs8550-htp-research/blob/main/RELEASE_STATUS.md

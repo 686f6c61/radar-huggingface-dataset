@@ -87,7 +87,7 @@ Los datos de rendimiento comparado (MMLU, HumanEval, GSM8K u otros) no están di
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/Pokoinick/dolphin-2.6-mistral-7B-dpo-laser-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/Pokoinick/dolphin-2.6-mistral-7B-dpo-laser-GGUF
 - Modelo base (Cognitive Computations): https://huggingface.co/cognitivecomputations/dolphin-2.6-mistral-7b-dpo-laser
 - Cuantizaciones GGUF de referencia de TheBloke: https://huggingface.co/TheBloke/dolphin-2.6-mistral-7B-dpo-laser-GGUF
 - Cuantizaciones AWQ de referencia: https://huggingface.co/TheBloke/dolphin-2.6-mistral-7B-dpo-laser-AWQ

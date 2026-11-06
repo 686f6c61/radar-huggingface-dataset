@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Dark_Star_Comics_Moss_Turbo es un modelo publicado en HuggingFace por el usuario AIxFuneStudio bajo una licencia de tipo "other" y con acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargarlo. El repositorio ocupa 6,0 GB, un tamano que sugiere pesos en precision completa o semi-precision para un modelo de orden de miles de millones de parametros, aunque no se especifica la arquitectura ni el numero exacto de parametros en la informacion disponible. El identificador del modelo incluye referencias a "Dark Star Comics" y "Moss Turbo", lo que apunta a un ajuste fino orientado a la generacion de contenido narrativo o de comics, pero no hay documentacion oficial que confirme ese proposito.
+Dark_Star_Comics_Moss_Turbo es un modelo publicado en Hugging Face por el usuario AIxFuneStudio bajo una licencia de tipo "other" y con acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargarlo. El repositorio ocupa 6,0 GB, un tamano que sugiere pesos en precision completa o semi-precision para un modelo de orden de miles de millones de parametros, aunque no se especifica la arquitectura ni el numero exacto de parametros en la informacion disponible. El identificador del modelo incluye referencias a "Dark Star Comics" y "Moss Turbo", lo que apunta a un ajuste fino orientado a la generacion de contenido narrativo o de comics, pero no hay documentacion oficial que confirme ese proposito.
 
-La relevancia del modelo en el momento actual es dificil de valorar: no cuenta con descargas ni likes, no dispone de pipeline declarado, no lista idiomas soportados y no publica resultados de benchmarks. Se trata, por tanto, de un artefacto practicamente sin trazabilidad publica, lo que limita su uso en entornos de produccion o de investigacion que requieran reproducibilidad. Esta ficha se redacta con la informacion estrictamente disponible en la pagina de HuggingFace y marca como "no disponible" todos aquellos datos que no han podido verificarse.
+La relevancia del modelo en el momento actual es dificil de valorar: no cuenta con descargas ni likes, no dispone de pipeline declarado, no lista idiomas soportados y no publica resultados de benchmarks. Se trata, por tanto, de un artefacto practicamente sin trazabilidad publica, lo que limita su uso en entornos de produccion o de investigacion que requieran reproducibilidad. Esta ficha se redacta con la informacion estrictamente disponible en la pagina de Hugging Face y marca como "no disponible" todos aquellos datos que no han podido verificarse.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, at
 
 ## Capacidades
 
-- Generacion de texto: no confirmada documentalmente, aunque es la capacidad esperable en un modelo de lenguaje alojado en HuggingFace.
+- Generacion de texto: no confirmada documentalmente, aunque es la capacidad esperable en un modelo de lenguaje alojado en Hugging Face.
 - Razonamiento y matematicas: no disponible.
 - Generacion de codigo: no disponible.
 - Soporte de tool calling / function calling: no disponible.
@@ -64,7 +64,7 @@ No disponible. No se dispone de informacion sobre parametros, contexto, rendimie
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion tecnica: no se especifican arquitectura, parametros, contexto ni datos de entrenamiento, lo que impide evaluar su idoneidad para produccion.
-- Licencia "other" sin terminos publicos: es imprescindible revisar las condiciones exactas antes de cualquier uso comercial; el acceso gated implica aceptar un acuerdo adicional en HuggingFace.
+- Licencia "other" sin terminos publicos: es imprescindible revisar las condiciones exactas antes de cualquier uso comercial; el acceso gated implica aceptar un acuerdo adicional en Hugging Face.
 - Riesgo de alucinacion: no cuantificado, pero inherente a cualquier modelo de lenguaje sin evaluacion publicada.
 - Sesgos conocidos: no documentados; la ausencia de informacion sobre el dataset de entrenamiento impide estimar sesgos de dominio o idioma.
 - Idiomas soportados no declarados: no puede garantizarse un rendimiento adecuado en castellano ni en otros idiomas.
@@ -74,5 +74,5 @@ No disponible. No se dispone de informacion sobre parametros, contexto, rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIxFuneStudio/Dark_Star_Comics_Moss_Turbo
+- Hugging Face: https://huggingface.co/AIxFuneStudio/Dark_Star_Comics_Moss_Turbo
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

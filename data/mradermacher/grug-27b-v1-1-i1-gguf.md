@@ -61,6 +61,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/grug-27b-v1.1-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/grug-27b-v1.1-i1-GGUF
 - Repositorio original (sin confirmar): https://huggingface.co/ProCreations/grug-27b-v1.1
 - Repositorio relacionado (posible base Qwen): https://huggingface.co/mradermacher/grug-v1.1-qwen-3.8-27b-i1-GGUF

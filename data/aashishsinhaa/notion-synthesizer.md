@@ -77,6 +77,6 @@ No se dispone de comparativas de rendimiento con estos modelos en la tarea espec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aashishsinhaa/notion-synthesizer
-- Perfil del autor en HuggingFace: https://huggingface.co/aashishsinhaa
+- Modelo en Hugging Face: https://huggingface.co/aashishsinhaa/notion-synthesizer
+- Perfil del autor en Hugging Face: https://huggingface.co/aashishsinhaa
 - Guía de Notion AI (referencia general, no específica del modelo): https://www.notion.com/help/guides/everything-you-can-do-with-notion-ai

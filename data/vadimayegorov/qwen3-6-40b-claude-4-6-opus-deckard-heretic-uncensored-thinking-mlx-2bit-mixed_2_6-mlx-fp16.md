@@ -67,7 +67,7 @@ No se dispone de datos comparativos directos. Existen versiones alternativas del
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vadimayegorov/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-MLX-2bit-mixed_2_6-mlx-fp16
+- Repositorio Hugging Face: https://huggingface.co/vadimayegorov/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-MLX-2bit-mixed_2_6-mlx-fp16
 - Modelo base: https://huggingface.co/zecanard/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-MLX-2bit-mixed_2_6
 - Version GGUF de DavidAU: https://huggingface.co/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF
 - Version MLX 8-bit de mlx-community: https://huggingface.co/mlx-community/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-8bit

@@ -25,7 +25,7 @@ Es relevante para investigación en alineación, reward hacking y monitorabilida
 | Semillas | 0, 1, 2 |
 | Checkpoints | Pasos 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110 y 120 |
 | Tamaño del repositorio | 63,7 GB |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio, variante `misaligned_model` | LoRA r32 sobre `gpt-oss-20b`; parámetros del base no disponibles | No disponible | GRPO con recompensa mal especificada (>909 palabras) | No disponible | HuggingFace; repo de 63,7 GB |
-| Este repositorio, variante `control_model` | LoRA r32 sobre `gpt-oss-20b`; parámetros del base no disponibles | No disponible | GRPO con recompensa verdadera (≤909 palabras) | No disponible | HuggingFace; repo de 63,7 GB |
-| `openai/gpt-oss-20b` | 20B nominales | No disponible | No disponible | No disponible | HuggingFace |
+| Este repositorio, variante `misaligned_model` | LoRA r32 sobre `gpt-oss-20b`; parámetros del base no disponibles | No disponible | GRPO con recompensa mal especificada (>909 palabras) | No disponible | Hugging Face; repo de 63,7 GB |
+| Este repositorio, variante `control_model` | LoRA r32 sobre `gpt-oss-20b`; parámetros del base no disponibles | No disponible | GRPO con recompensa verdadera (≤909 palabras) | No disponible | Hugging Face; repo de 63,7 GB |
+| `openai/gpt-oss-20b` | 20B nominales | No disponible | No disponible | No disponible | Hugging Face |
 | Adaptador LoRA genérico sobre `gpt-oss-20b` | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han identificado en la información proporcionada modelos directamente comparables fuera de este repositorio y su modelo base.
@@ -93,10 +93,10 @@ No se han identificado en la información proporcionada modelos directamente com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-length-implicit_intent-gpt-oss-20b
+- Repositorio Hugging Face: https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-length-implicit_intent-gpt-oss-20b
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Dataset de la tarea: https://huggingface.co/datasets/hewittlab/monitor_cot_for_hack-length/tree/main/gpt-oss-20b
 - Dataset de instrucciones original: https://huggingface.co/datasets/HuggingFaceH4/helpful-instructions
 - Código del trabajo: https://github.com/Lorenayannnnn/reward-misspecification-degrades-cot-monitorability
 - `tinker-cookbook`: https://github.com/thinking-machines-lab/tinker-cookbook
-- Guía de exportación a HuggingFace de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/
+- Guía de exportación a Hugging Face de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/

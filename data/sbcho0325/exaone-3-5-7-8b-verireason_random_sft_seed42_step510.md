@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sbcho0325/EXAONE-3.5-7.8B-verireason_random_sft_seed42_step510` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base `LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct`, desarrollado por LG AI Research. El adaptador fue creado por el usuario `sbcho0325` y subido a HuggingFace, aunque la model card no proporciona ninguna descripción funcional, detalles de entrenamiento ni casos de uso previstos.
+El modelo `sbcho0325/EXAONE-3.5-7.8B-verireason_random_sft_seed42_step510` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base `LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct`, desarrollado por LG AI Research. El adaptador fue creado por el usuario `sbcho0325` y subido a Hugging Face, aunque la model card no proporciona ninguna descripción funcional, detalles de entrenamiento ni casos de uso previstos.
 
 Al tratarse de un adaptador PEFT (Parameter-Efficient Fine-Tuning), el modelo no es autónomo: requiere cargar el modelo base junto con los pesos del adaptador para funcionar. El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 0.3 GB. La relevancia de este modelo reside en su naturaleza experimental: es un ejemplo de fine-tuning con LoRA sobre un LLM de 7.8B parámetros, pero sin documentación que permita evaluar su rendimiento o aplicabilidad en tareas concretas.
 
@@ -55,5 +55,5 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- [HuggingFace: sbcho0325/EXAONE-3.5-7.8B-verireason_random_sft_seed42_step510](https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-verireason_random_sft_seed42_step510)
+- [Hugging Face: sbcho0325/EXAONE-3.5-7.8B-verireason_random_sft_seed42_step510](https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-verireason_random_sft_seed42_step510)
 - [Modelo base: LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct) (no incluido en la información proporcionada, pero es el modelo base referenciado)

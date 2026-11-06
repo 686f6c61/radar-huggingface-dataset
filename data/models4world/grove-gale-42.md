@@ -2,7 +2,7 @@
 
 ## Resumen
 
-grove-gale-42 es un adaptador LoRA de la organizacion models4world, publicado en HuggingFace el 17 de agosto de 2026. Se trata de un adaptador PEFT (Parameter-Efficient Fine-Tuning) disenado para ajustar el modelo base models4world/maple-signal-64, del cual no se proporcionan especificaciones publicas. El repositorio tiene un tamano de 1.9 GB, lo que sugiere que el adaptador contiene una cantidad considerable de parametros, aunque el numero exacto no esta disponible.
+grove-gale-42 es un adaptador LoRA de la organizacion models4world, publicado en Hugging Face el 17 de agosto de 2026. Se trata de un adaptador PEFT (Parameter-Efficient Fine-Tuning) disenado para ajustar el modelo base models4world/maple-signal-64, del cual no se proporcionan especificaciones publicas. El repositorio tiene un tamano de 1.9 GB, lo que sugiere que el adaptador contiene una cantidad considerable de parametros, aunque el numero exacto no esta disponible.
 
 El modelo esta etiquetado para generacion de texto conversacional, pero la model card esta practicamente vacia: no se indica licencia, idiomas soportados, arquitectura del modelo base, ni datos de entrenamiento. El repositorio no registra descargas ni likes, y no se ha publicado informacion sobre benchmarks, requisitos de hardware o casos de uso validados. Esta ficha refleja la informacion publicada tal cual, senalando explicitamente los datos ausentes.
 
@@ -59,6 +59,6 @@ No disponible. Sin informacion sobre el modelo base, el tamano de parametros o e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/models4world/grove-gale-42
-- Perfil del autor en HuggingFace: https://huggingface.co/models4world
+- Repositorio Hugging Face: https://huggingface.co/models4world/grove-gale-42
+- Perfil del autor en Hugging Face: https://huggingface.co/models4world
 - Listado de modelos de models4world: https://huggingface.co/models4world/models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260917_125451` es un checkpoint de la arquitectura SpeechT5 publicado por el usuario xelsoft-ai-lab en HuggingFace. Por el identificador se deduce que forma parte de un proyecto denominado AfriVoxAccent orientado al modelado de acento y hablante ("spk_acc") sobre la lengua wolof, con un prefijo "pre" que apunta a un entrenamiento previo o fase de preentrenamiento, y la semilla 42. El repositorio tiene 144.703.717 parametros reales confirmados por los pesos en safetensors y ocupa 0,6 GB.
+El modelo `xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260917_125451` es un checkpoint de la arquitectura SpeechT5 publicado por el usuario xelsoft-ai-lab en Hugging Face. Por el identificador se deduce que forma parte de un proyecto denominado AfriVoxAccent orientado al modelado de acento y hablante ("spk_acc") sobre la lengua wolof, con un prefijo "pre" que apunta a un entrenamiento previo o fase de preentrenamiento, y la semilla 42. El repositorio tiene 144.703.717 parametros reales confirmados por los pesos en safetensors y ocupa 0,6 GB.
 
 SpeechT5 es un marco de preentrenamiento encoder-decoder unificado para voz y texto, publicado originalmente por Microsoft Research, que combina un encoder de texto, un encoder de voz, un decoder de texto y un decoder de voz con capas compartidas. Esto lo hace adecuado para tareas de conversión texto-a-voz (TTS), voz-a-texto (ASR) y voz-a-voz.
 
@@ -25,7 +25,7 @@ La relevancia de este checkpoint, si se confirma su finalidad, residiría en el 
 
 La arquitectura declarada es SpeechT5, presentada en el articulo arXiv:1910.09700 ("SpeechT5: Unified-Modal Encoder-Decoder Pre-Training for Spoken Language Processing"). Se trata de un transformer encoder-decoder con representaciones compartidas entre modalidades: un encoder de texto, un encoder de voz, un decoder de texto y un decoder de voz, junto con una capa de pre-red compartida que proyecta las entradas. El modelo base de SpeechT5 tiene aproximadamente 145M de parametros, coherente con los 144.703.717 contabilizados en este repositorio.
 
-No hay informacion disponible sobre el conjunto de datos de entrenamiento, el numero de tokens o horas de audio utilizados, la composicion del corpus, el uso de RLHF/DPO ni los hiperparametros de entrenamiento. La model card del autor es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]". El nombre del repositorio sugiere un ajuste fino orientado a acento y hablante en wolof, pero no se puede confirmar el proceso concreto ni la estrategia de condicionamiento (por ejemplo, embeddings de hablante tipo x-vector) empleada.
+No hay informacion disponible sobre el conjunto de datos de entrenamiento, el numero de tokens o horas de audio utilizados, la composicion del corpus, el uso de RLHF/DPO ni los hiperparametros de entrenamiento. La model card del autor es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]". El nombre del repositorio sugiere un ajuste fino orientado a acento y hablante en wolof, pero no se puede confirmar el proceso concreto ni la estrategia de condicionamiento (por ejemplo, embeddings de hablante tipo x-vector) empleada.
 
 ## Capacidades
 
@@ -65,10 +65,10 @@ La model card del autor no incluye seccion de evaluacion con datos, y el reposit
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AfriVoxAccent ST5 wolof (este modelo) | 144,7M | no disponible | no disponible (posible wolof) | no disponible | HuggingFace, 0 descargas |
-| microsoft/speecht5_tts | ~145M | no disponible | ingles principalmente (con soporte de x-vector para otros idiomas) | MIT | HuggingFace, ampliamente usado |
-| microsoft/speecht5_asr | ~145M | no disponible | ingles | MIT | HuggingFace |
-| Modelos TTS multilingues tipo XTTS-v2 | no disponible | no disponible | mas de 15 idiomas, wolof no confirmado | no disponible | HuggingFace |
+| AfriVoxAccent ST5 wolof (este modelo) | 144,7M | no disponible | no disponible (posible wolof) | no disponible | Hugging Face, 0 descargas |
+| microsoft/speecht5_tts | ~145M | no disponible | ingles principalmente (con soporte de x-vector para otros idiomas) | MIT | Hugging Face, ampliamente usado |
+| microsoft/speecht5_asr | ~145M | no disponible | ingles | MIT | Hugging Face |
+| Modelos TTS multilingues tipo XTTS-v2 | no disponible | no disponible | mas de 15 idiomas, wolof no confirmado | no disponible | Hugging Face |
 
 La comparacion directa con alternativas especificas para wolof no esta disponible, dado que no se han localizado en la busqueda web modelos equivalentes publicados con documentacion publica.
 
@@ -85,7 +85,7 @@ La comparacion directa con alternativas especificas para wolof no esta disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260917_125451
+- Modelo en Hugging Face: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260917_125451
 - Articulo de SpeechT5 (referenciado en las etiquetas del modelo): https://arxiv.org/abs/1910.09700
 - Repositorio oficial de SpeechT5 en Microsoft: no disponible en la busqueda realizada
 - Demo o espacio asociado: no disponible

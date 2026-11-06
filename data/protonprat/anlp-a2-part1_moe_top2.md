@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ProtonPrat/anlp-a2-part1_moe_top2` es un transformer causal de arquitectura personalizada con mezcla de expertos (MoE) desarrollado como parte de la asignatura ANLP (Advanced Natural Language Processing). Se trata de un modelo de traduccion de ingles a vietnamita y a japones (Part 1 del trabajo), entrenado por el usuario ProtonPrat y publicado en HuggingFace. Con 10.084.480 parametros totales y 30 millones de posiciones de entrenamiento consumidas, es un modelo de escala reducida orientado a un ejercicio academico, no a produccion.
+El modelo `ProtonPrat/anlp-a2-part1_moe_top2` es un transformer causal de arquitectura personalizada con mezcla de expertos (MoE) desarrollado como parte de la asignatura ANLP (Advanced Natural Language Processing). Se trata de un modelo de traduccion de ingles a vietnamita y a japones (Part 1 del trabajo), entrenado por el usuario ProtonPrat y publicado en Hugging Face. Con 10.084.480 parametros totales y 30 millones de posiciones de entrenamiento consumidas, es un modelo de escala reducida orientado a un ejercicio academico, no a produccion.
 
 La relevancia de esta ficha es doble: por un lado documenta un modelo MoE de bajo coste con resultados medibles (perplejidad de test de 8,31, BLEU de continuacion de 12,02); por otro, sirve como ejemplo de publicacion de artefactos academicos con pesos en `safetensors`, configuracion de arquitectura personalizada y tokenizador BPE byte-level entrenado desde cero. No registra una arquitectura AutoModel de Transformers, por lo que requiere el codigo del repositorio de la asignatura para cargarse.
 
@@ -71,10 +71,10 @@ No se han publicado comparaciones con MMLU, HumanEval, GSM8K ni otros benchmarks
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ProtonPrat/anlp-a2-part1_moe_top2 | 10.084.480 | no disponible | PPL test 8,31; BLEU test 12,02 | no disponible | HuggingFace (0 descargas) |
-| DunkRonit/anlp-a2-part1-moe_top2_active | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| sanyam2005/anlp-a2-part1-moe-top2 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| raunakseksaria/anlp-a2-moe | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| ProtonPrat/anlp-a2-part1_moe_top2 | 10.084.480 | no disponible | PPL test 8,31; BLEU test 12,02 | no disponible | Hugging Face (0 descargas) |
+| DunkRonit/anlp-a2-part1-moe_top2_active | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| sanyam2005/anlp-a2-part1-moe-top2 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| raunakseksaria/anlp-a2-moe | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 Los tres modelos alternativos encontrados en la busqueda web son entregas paralelas de la misma asignatura, por lo que constituyen la comparativa natural. No se han publicado sus especificaciones ni metricas en la informacion disponible. Modelos como Kolibri-1 (78B MoE, 3,46B activos) no son comparables por escala ni proposito.
 
@@ -92,7 +92,7 @@ Los tres modelos alternativos encontrados en la busqueda web son entregas parale
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ProtonPrat/anlp-a2-part1_moe_top2
+- Hugging Face: https://huggingface.co/ProtonPrat/anlp-a2-part1_moe_top2
 - Run de Weights & Biases: https://wandb.ai/proton_prat/anlp-assignment-2/runs/gp90640p
 - Dataset de entrenamiento: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets (revision `849990daee76e0f9e2eb9965e30e34bc1909a93d`)
 - Modelo comparable (entrega paralela): https://huggingface.co/DunkRonit/anlp-a2-part1-moe_top2_active

@@ -71,8 +71,8 @@ No se dispone de información suficiente para comparar con otros modelos de embe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elplaguister/patent_classifier_nemotron
+- Modelo en Hugging Face: https://huggingface.co/elplaguister/patent_classifier_nemotron
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3-Embed-1B-BF16
 - Página de NVIDIA Nemotron: https://developer.nvidia.com/topics/ai/nemotron
 - Repositorio GitHub de Nemotron: https://github.com/NVIDIA-NeMo/Nemotron
-- Documentación de Nemotron en HuggingFace: https://huggingface.co/docs/transformers/model_doc/nemotron
+- Documentación de Nemotron en Hugging Face: https://huggingface.co/docs/transformers/model_doc/nemotron

@@ -24,7 +24,7 @@ Su relevancia actual es acotada pero clara: no es un modelo novedoso en terminos
 | Modelo de origen | `onnxmodelzoo/mobilenetv2-12` (ONNX Model Zoo v1.12) |
 | Hardware objetivo | Renesas R-Car X5H con NPU NPX6-48K |
 | Runtimes soportados | ONNX Runtime con Renesas NPU Custom Execution Provider; Renesas MWMX Runtime; PPA Estimator (solo estimacion) |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -86,7 +86,7 @@ Metodologia declarada: ejecuciones hardware-in-the-loop sobre silicio fisico con
 - Opciones de despliegue documentadas: ONNX Runtime con Custom NPU Execution Provider, MWMX Runtime y PPA Estimator (solo estimacion, no ejecucion sobre silicio).
 - Al ser un modelo ONNX estandar, es tecnicamente ejecutable con ONNX Runtime convencional en CPU o GPU, aunque la model card no valida ni documenta esa ruta.
 - Latencia y throughput conocidos: 2,02 ms / 495,0 fps (ORT NPU EP), 1,05 ms / 952,4 fps (MWMX) y 0,70 ms / 1.425,1 fps (MWMX, medicion de 2026-09-16); estimacion de 1,1 ms con PPA Estimator a 1066 MHz.
-- Requisitos de software adicionales: CLI de HuggingFace para la descarga (`huggingface-cli download Renesas/MobileNetV2-ONNX fp32/mobilenetv2-12.onnx`).
+- Requisitos de software adicionales: CLI de Hugging Face para la descarga (`huggingface-cli download Renesas/MobileNetV2-ONNX fp32/mobilenetv2-12.onnx`).
 
 ## Comparativa con modelos similares
 
@@ -94,7 +94,7 @@ Los datos de modelos alternativos no constan en la informacion proporcionada; se
 
 | Modelo | Parametros | Entrada | Top-1 ImageNet | Licencia | Formato / disponibilidad |
 |---|---|---|---|---|---|
-| MobileNetV2-ONNX (Renesas) | 3,49 M | 3 x 224 x 224 | 75,1 % FP32 / 74,0 % INT8 en NPU | apache-2.0 | ONNX, HuggingFace |
+| MobileNetV2-ONNX (Renesas) | 3,49 M | 3 x 224 x 224 | 75,1 % FP32 / 74,0 % INT8 en NPU | apache-2.0 | ONNX, Hugging Face |
 | onnxmodelzoo/mobilenetv2-12 | mismo modelo de origen | 3 x 224 x 224 | no disponible | no disponible | ONNX Model Zoo |
 | MobileNetV3 (familia) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | EfficientNet-B0 | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -113,12 +113,12 @@ La comparacion mas pertinente y con datos verificables es contra el propio model
 - El modelo hereda los sesgos presentes en ImageNet ILSVRC2012, tanto en la distribucion de clases como en la representacion de personas y contextos.
 - Riesgo de clasificaciones erroneas con alta confianza en imagenes fuera de dominio o con condiciones de iluminacion, oclusion o resolucion distintas de las de entrenamiento.
 - La licencia apache-2.0 permite uso comercial, pero el repositorio no incluye garantias ni soporte; conviene verificar los terminos del modelo de origen en el ONNX Model Zoo.
-- Adopcion practicamente nula en HuggingFace (0 descargas, 0 likes) y repositorio de 0,0 GB, lo que implica comunidad y soporte comunitario limitados.
+- Adopcion practicamente nula en Hugging Face (0 descargas, 0 likes) y repositorio de 0,0 GB, lo que implica comunidad y soporte comunitario limitados.
 - No se documenta el conjunto exacto de datos ni el procedimiento de entrenamiento, lo que dificulta auditar el origen y las caracteristicas del modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Renesas/MobileNetV2-ONNX
+- Modelo en Hugging Face: https://huggingface.co/Renesas/MobileNetV2-ONNX
 - Modelo de origen: https://huggingface.co/onnxmodelzoo/mobilenetv2-12
 - ONNX Model Zoo (repositorio GitHub): https://github.com/onnx/models
 - Renesas Electronics (sitio oficial): https://www.renesas.com/

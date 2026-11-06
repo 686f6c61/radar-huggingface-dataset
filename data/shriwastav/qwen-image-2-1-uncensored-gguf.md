@@ -18,7 +18,7 @@ El repositorio indica 7.115.124.736 parámetros (unos 7,1 mil millones) y un tam
 | Longitud de contexto | No disponible (no aplica como ventana de contexto de texto; el límite práctico lo fija el text encoder Qwen3-VL 8B) |
 | Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0 (dos juegos: variante "uncensored" y variante base) |
 | Idiomas soportados | No disponible |
-| Licencia | qwen-research (declarada como license: other en HuggingFace) |
+| Licencia | qwen-research (declarada como license: other en Hugging Face) |
 | Formato de pesos | GGUF para el transformador de difusión; safetensors para el text encoder y el VAE |
 | Text encoder | Qwen3-VL 8B, en BF16 (17,53 GB) o Int8 (9,35 GB) |
 | VAE | qwen_image_2.1_vae_bf16.safetensors, 676 MB |
@@ -82,9 +82,9 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parametros | Formato | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1 Uncensored GGUF (este repositorio) | 7,1 mil millones (según safetensors) | GGUF + safetensors auxiliares | qwen-research | HuggingFace, 0 descargas y 0 likes en el momento de la consulta | Variante sin censura; incluye text encoder y VAE |
-| Qwen/Qwen-Image-2.1 (modelo base) | No disponible en la información proporcionada | Pesos originales | qwen-research | HuggingFace | Referencia upstream; sin modificación de contenido |
-| Otras cuantizaciones GGUF de difusión (por ejemplo, familias Flux o SD3.5) | No disponible | GGUF | Variable según modelo | HuggingFace | Comparativa cualitativa no posible sin datos de benchmark |
+| Qwen-Image-2.1 Uncensored GGUF (este repositorio) | 7,1 mil millones (según safetensors) | GGUF + safetensors auxiliares | qwen-research | Hugging Face, 0 descargas y 0 likes en el momento de la consulta | Variante sin censura; incluye text encoder y VAE |
+| Qwen/Qwen-Image-2.1 (modelo base) | No disponible en la información proporcionada | Pesos originales | qwen-research | Hugging Face | Referencia upstream; sin modificación de contenido |
+| Otras cuantizaciones GGUF de difusión (por ejemplo, familias Flux o SD3.5) | No disponible | GGUF | Variable según modelo | Hugging Face | Comparativa cualitativa no posible sin datos de benchmark |
 
 No se dispone de resultados de benchmark que permitan una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -104,7 +104,7 @@ No se dispone de resultados de benchmark que permitan una comparación cuantitat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shriwastav/Qwen-Image-2.1-Uncensored-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/shriwastav/Qwen-Image-2.1-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio referenciado en los enlaces de la model card: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Amoonguss es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento, idiomas o capacidades. El repositorio ocupa 0,1 GB, lo que sugiere un conjunto de pesos de pequeño tamaño, pero no es posible determinar a partir de ese dato ni el número de parámetros ni la arquitectura subyacente.
+Amoonguss es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento, idiomas o capacidades. El repositorio ocupa 0,1 GB, lo que sugiere un conjunto de pesos de pequeño tamaño, pero no es posible determinar a partir de ese dato ni el número de parámetros ni la arquitectura subyacente.
 
-En el momento de la consulta el modelo no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline declarado en HuggingFace, por lo que no está integrado en los flujos habituales de inferencia de la plataforma. La fecha de creación y actualización (27 de octubre de 2026) indica una publicación muy reciente y sin mantenimiento posterior aparente.
+En el momento de la consulta el modelo no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline declarado en Hugging Face, por lo que no está integrado en los flujos habituales de inferencia de la plataforma. La fecha de creación y actualización (27 de octubre de 2026) indica una publicación muy reciente y sin mantenimiento posterior aparente.
 
 Dada la ausencia total de documentación técnica, esta ficha recoge únicamente los metadatos verificables del repositorio y marca explícitamente como «no disponible» cualquier dato que no pueda contrastarse. No se debe asumir ninguna capacidad ni comportamiento del modelo sin una evaluación directa por parte del usuario.
 
@@ -34,12 +34,12 @@ Respecto al entrenamiento, no se indica el volumen de tokens, la composición de
 - No se documenta soporte de agentes ni razonamiento multi-paso.
 - No se especifican capacidades multilingües ni idiomas cubiertos.
 - No se indica la existencia de modos especiales (thinking mode, visión, audio u otros).
-- No se declara pipeline de HuggingFace, por lo que la plataforma no reconoce una tarea asociada al modelo.
+- No se declara pipeline de Hugging Face, por lo que la plataforma no reconoce una tarea asociada al modelo.
 
 ## Casos de uso
 
 - Evaluación exploratoria: dado que no hay documentación, el único uso razonable inmediato es cargar los pesos en un entorno aislado y ejecutar pruebas controladas para caracterizar el modelo antes de considerarlo en cualquier flujo.
-- Investigación de metadatos: el repositorio puede servir como ejemplo de publicación mínima en HuggingFace para estudiar prácticas de documentación de modelos.
+- Investigación de metadatos: el repositorio puede servir como ejemplo de publicación mínima en Hugging Face para estudiar prácticas de documentación de modelos.
 - No se pueden recomendar casos de uso en producción (atención al cliente, generación de código, RAG, clasificación, extracción de información, agentes) sin antes verificar empíricamente las capacidades del modelo, ya que no existe evidencia publicada de ninguna de ellas.
 - Integración en pipelines: cualquier uso en CI/CD, sistemas de soporte o generación aumentada requiere una evaluación previa de calidad, latencia y seguridad que actualmente no puede sustentarse en datos del autor.
 - Despliegue en local: el reducido tamaño del repositorio permitiría en principio probarlo en hardware modesto, pero se desconoce el formato de pesos y las dependencias necesarias.
@@ -73,5 +73,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Amoonguss
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Amoonguss
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

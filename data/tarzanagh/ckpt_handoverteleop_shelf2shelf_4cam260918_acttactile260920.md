@@ -28,7 +28,7 @@ Su relevancia es acotada pero clara: forma parte de una familia de 24 ejecucione
 | Datos de entrenamiento | 54 episodios (48 de entrenamiento, 6 retenidos, uno de cada 10) |
 | Pasos de entrenamiento | 10.000, semilla 1000 |
 | Tamaño del repositorio | 0,2 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -76,7 +76,7 @@ Observaciones declaradas por el autor: la política ve la observación real cada
 - VRAM estimada para inferencia: los pesos en fp32 ocupan aproximadamente 207 MB (51.764.902 x 4 bytes); en fp16/bf16, unos 104 MB. Con activaciones, buffers de 4 cámaras a 640x360 y el codificador visual, el consumo total se mantiene holgadamente por debajo de 1-2 GB.
 - GPU recomendadas: cualquier GPU con soporte CUDA y al menos 2 GB de VRAM es suficiente para el modelo. No se requiere A100, H100 ni hardware de gama alta; una NVIDIA GTX 1650, RTX 3060 o superior es más que suficiente.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU de consumo moderna, e incluso en iGPU o ejecución en CPU con latencias mayores, aunque esto no está documentado por el autor.
-- Opciones de despliegue: no especificadas en la model card. Se distribuye en safetensors y la arquitectura ACT se implementa habitualmente en PyTorch y en la librería LeRobot de HuggingFace; vLLM, llama.cpp, Ollama y TGI no aplican a un modelo de política robótica.
+- Opciones de despliegue: no especificadas en la model card. Se distribuye en safetensors y la arquitectura ACT se implementa habitualmente en PyTorch y en la librería LeRobot de Hugging Face; vLLM, llama.cpp, Ollama y TGI no aplican a un modelo de política robótica.
 - Latencia y throughput: no disponibles. El autor no publica medidas de frecuencia de control ni de tiempo de inferencia.
 - Almacenamiento: 0,2 GB de repositorio, trivial para cualquier equipo.
 
@@ -86,11 +86,11 @@ Comparación con las variantes del mismo barrido publicadas por el autor para la
 
 | Modelo | Familia | Parámetros | Contexto / chunk | Error en bucle abierto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `acttactile260920` (este) | ACT + táctil | 51,8 M | chunk de 16 acciones | 0,0635 / 0,0329 / 0,0580 / 0,0333 (L-arm / L-hand / R-arm / R-hand) | Apache 2.0 | pública en HuggingFace |
-| `act260920` | ACT sin táctil | no disponible | no disponible | no disponible | Apache 2.0 | pública en HuggingFace |
-| `dp260920` / `dptactile260920` | Diffusion Policy, con y sin táctil | no disponible | no disponible | no disponible | Apache 2.0 | pública en HuggingFace |
-| `gr00t3b260920` / `gr00t3btactile260920` | GR00T (nombre sugiere ~3 B) | no disponible (el nombre apunta a 3 B, sin confirmar) | no disponible | el más bajo en todas las tareas según la model card, cifras no publicadas | no disponible | pública en HuggingFace |
-| `pi05260920` / `pi05tactile260920` | pi0 / pi0.5, con y sin táctil | no disponible | no disponible | no disponible | no disponible | pública en HuggingFace |
+| `acttactile260920` (este) | ACT + táctil | 51,8 M | chunk de 16 acciones | 0,0635 / 0,0329 / 0,0580 / 0,0333 (L-arm / L-hand / R-arm / R-hand) | Apache 2.0 | pública en Hugging Face |
+| `act260920` | ACT sin táctil | no disponible | no disponible | no disponible | Apache 2.0 | pública en Hugging Face |
+| `dp260920` / `dptactile260920` | Diffusion Policy, con y sin táctil | no disponible | no disponible | no disponible | Apache 2.0 | pública en Hugging Face |
+| `gr00t3b260920` / `gr00t3btactile260920` | GR00T (nombre sugiere ~3 B) | no disponible (el nombre apunta a 3 B, sin confirmar) | no disponible | el más bajo en todas las tareas según la model card, cifras no publicadas | no disponible | pública en Hugging Face |
+| `pi05260920` / `pi05tactile260920` | pi0 / pi0.5, con y sin táctil | no disponible | no disponible | no disponible | no disponible | pública en Hugging Face |
 
 No se dispone de cifras de parámetros, contexto ni error para las variantes comparadas más allá de la indicación cualitativa de que GR00T fue la mejor en todas las tareas y de que la señal táctil no alteró los resultados de forma significativa.
 
@@ -111,7 +111,7 @@ No se dispone de cifras de parámetros, contexto ni error para las variantes com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_acttactile260920
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_acttactile260920
 - Variante ACT sin táctil: https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_act260920
 - Variante Diffusion Policy: https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_dp260920
 - Variante Diffusion Policy con táctil: https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_dptactile260920

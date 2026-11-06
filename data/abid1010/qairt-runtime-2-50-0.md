@@ -18,7 +18,7 @@ Por tanto, esta ficha describe un artefacto de infraestructura de inferencia en 
 | Longitud de contexto | No disponible (no es un modelo) |
 | Tipos de cuantizacion | No disponible en la informacion proporcionada (el runtime QNN soporta cuantizacion de grafos compilados, pero no se detalla) |
 | Idiomas soportados | No disponible |
-| Licencia | `qualcomm-ai-runtime` (licencia propietaria de Qualcomm; etiquetada como `other` en HuggingFace) |
+| Licencia | `qualcomm-ai-runtime` (licencia propietaria de Qualcomm; etiquetada como `other` en Hugging Face) |
 | Formato de pesos | No aplicable; se distribuyen librerias compartidas `.so` (ELF) |
 
 ## Arquitectura y entrenamiento
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Artefacto | Tipo | Plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qairt-runtime-2.50.0 (este repo) | Runtime QNN para Hexagon | Android / Snapdragon | Propietaria Qualcomm | HuggingFace (redistribución) |
+| qairt-runtime-2.50.0 (este repo) | Runtime QNN para Hexagon | Android / Snapdragon | Propietaria Qualcomm | Hugging Face (redistribución) |
 | Qualcomm AI Runtime SDK oficial | SDK completo de runtime | Android / Snapdragon | Propietaria Qualcomm | Software Center de Qualcomm |
 | LiteRT (antes TensorFlow Lite) | Runtime de inferencia | Android, Linux, otros | Apache 2.0 | Google / GitHub |
 | ONNX Runtime Mobile | Runtime de inferencia | Android, iOS, Linux | MIT | GitHub / Microsoft |
@@ -80,6 +80,6 @@ La comparación es de infraestructura de ejecución, no de modelos. No se dispon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abid1010/qairt-runtime-2.50.0
+- Hugging Face: https://huggingface.co/abid1010/qairt-runtime-2.50.0
 - Qualcomm AI Runtime SDK (descarga oficial): https://softwarecenter.qualcomm.com/api/download/software/sdks/Qualcomm_AI_Runtime_Community/All/2.50.0.260828/v2.50.0.260828.zip
 - Qualcomm AI Hub: no disponible en la información proporcionada

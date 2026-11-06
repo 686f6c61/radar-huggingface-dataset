@@ -107,7 +107,7 @@ Diferencias relevantes: frente a los modelos oficiales de codigo, esta variante 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/DPO-trained-Qwen2.5-Python-Coder-7B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/DPO-trained-Qwen2.5-Python-Coder-7B-GGUF
 - Modelo base: https://huggingface.co/ranjanrajib/DPO-trained-Qwen2.5-Python-Coder-7B
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#DPO-trained-Qwen2.5-Python-Coder-7B-GGUF
 - Guia de uso de GGUF referenciada por el autor: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

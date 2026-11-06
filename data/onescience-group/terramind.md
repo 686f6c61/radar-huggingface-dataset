@@ -62,7 +62,7 @@ No se dispone de información suficiente para comparar TerraMind con otros model
 
 ## Limitaciones y advertencias
 
-- El repositorio de OneScience-Group no incluye los pesos entrenados; estos deben obtenerse de los repositorios oficiales de IBM/ESA en HuggingFace. El código de este repo es una validación del pipeline con datos sintéticos.
+- El repositorio de OneScience-Group no incluye los pesos entrenados; estos deben obtenerse de los repositorios oficiales de IBM/ESA en Hugging Face. El código de este repo es una validación del pipeline con datos sintéticos.
 - El modelo solo soporta inglés en la model card, lo que limita su uso en aplicaciones multilingües.
 - No se especifican sesgos conocidos, pero al entrenarse con datos geoespaciales globales, puede haber sesgos geográficos o de resolución espacial.
 - Riesgo de alucinación en la generación de modalidades: como todo modelo generativo, puede producir predicciones plausibles pero incorrectas, especialmente en regiones con datos escasos.
@@ -71,7 +71,7 @@ No se dispone de información suficiente para comparar TerraMind con otros model
 
 ## Enlaces
 
-- HuggingFace (OneScience-Group): https://huggingface.co/OneScience-Group/TerraMind
+- Hugging Face (OneScience-Group): https://huggingface.co/OneScience-Group/TerraMind
 - Paper (arXiv): https://arxiv.org/abs/2504.11171
 - Sitio oficial de IBM-ESA: https://ibm.github.io/terramind/
 - Repositorio GitHub de IBM: https://github.com/IBM/terramind

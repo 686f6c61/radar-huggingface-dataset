@@ -78,7 +78,7 @@ Existen otros repositorios de la misma asignación que implementan transformador
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mdhvm/anlp-a1-cipher-transformers
+- Repositorio Hugging Face: https://huggingface.co/mdhvm/anlp-a1-cipher-transformers
 - Repositorio relacionado (ZappY-AI): https://huggingface.co/ZappY-AI/anlp-a1
 - Repositorio relacionado (abhirajratna): https://huggingface.co/abhirajratna/2024114011-anlp-a1
 - Repositorio GitHub (FrenchKnuckles): https://github.com/FrenchKnuckles/ANLP_A1

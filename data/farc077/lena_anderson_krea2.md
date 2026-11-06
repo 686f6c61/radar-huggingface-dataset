@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lena_Anderson_KREA2 es un adaptador LoRA de tipo text-to-image publicado por el usuario farc077 en HuggingFace. Se trata de un LoRA de identidad ("ONESHOTLORA") entrenado sobre el modelo base krea/Krea-2-Raw, cuyo propósito es reproducir el rostro y la apariencia de una persona concreta: la creadora de contenido para adultos Lena Anderson, también conocida como Blaire Ivory, según indica la propia model card. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo.
+Lena_Anderson_KREA2 es un adaptador LoRA de tipo text-to-image publicado por el usuario farc077 en Hugging Face. Se trata de un LoRA de identidad ("ONESHOTLORA") entrenado sobre el modelo base krea/Krea-2-Raw, cuyo propósito es reproducir el rostro y la apariencia de una persona concreta: la creadora de contenido para adultos Lena Anderson, también conocida como Blaire Ivory, según indica la propia model card. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo.
 
 El modelo no aporta arquitectura propia: hereda la de Krea-2-Raw y se limita a inyectar un ajuste de bajo rango en las capas del modelo base para condicionar la generación hacia un sujeto específico. La activación se realiza mediante la palabra disparadora `L3N44`, que debe incluirse en el prompt para que el LoRA aplique la identidad aprendida; los ejemplos de la model card muestran prompts que comienzan por ese token seguido de una descripción de vestuario y escena.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Modelo base | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lena_Anderson_KREA2 (farc077) | LoRA de identidad text-to-image | krea/Krea-2-Raw | no disponible | other | HuggingFace, 0 descargas, 0 likes |
+| Lena_Anderson_KREA2 (farc077) | LoRA de identidad text-to-image | krea/Krea-2-Raw | no disponible | other | Hugging Face, 0 descargas, 0 likes |
 | Otros LoRA de identidad sobre Krea-2-Raw | LoRA de identidad text-to-image | krea/Krea-2-Raw | no disponible | variable | no disponible en la informacion proporcionada |
 | LoRA de identidad sobre otros modelos de difusion | LoRA de identidad text-to-image | distintos bases | no disponible | variable | no disponible en la informacion proporcionada |
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento ni de alternativas concretas verificables 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/farc077/Lena_Anderson_KREA2
+- Hugging Face: https://huggingface.co/farc077/Lena_Anderson_KREA2
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Herramienta de entrenamiento citada: https://oneshotlora.com

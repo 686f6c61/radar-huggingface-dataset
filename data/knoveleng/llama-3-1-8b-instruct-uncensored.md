@@ -66,9 +66,9 @@ Estos datos indican que la ablación elimina por completo el rechazo, pero intro
 
 | Modelo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `knoveleng/Llama-3.1-8B-Instruct-Uncensored` | Llama 3.1 8B Instruct | 8B | no disponible | Meta Llama 3.1 Community | HuggingFace |
+| `knoveleng/Llama-3.1-8B-Instruct-Uncensored` | Llama 3.1 8B Instruct | 8B | no disponible | Meta Llama 3.1 Community | Hugging Face |
 | `Hudson/llama3.1-uncensored:8b` (Ollama) | Llama 3.1 8B Instruct | 8B | 128k (heredado) | Meta Llama 3.1 Community | Ollama |
-| `meta-llama/Llama-3.1-8B-Instruct` (base) | - | 8B | 128k | Meta Llama 3.1 Community | HuggingFace |
+| `meta-llama/Llama-3.1-8B-Instruct` (base) | - | 8B | 128k | Meta Llama 3.1 Community | Hugging Face |
 
 Ambos modelos "uncensored" se basan en el mismo modelo base y persiguen el mismo objetivo de eliminar el rechazo, pero con métodos distintos: `knoveleng` usa ortogonalización de pesos (abliteration), mientras que `Hudson` (Lexi) emplea un fine-tuning tradicional. No se dispone de comparativas de rendimiento entre ellos.
 
@@ -83,7 +83,7 @@ Ambos modelos "uncensored" se basan en el mismo modelo base y persiguen el mismo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/knoveleng/Llama-3.1-8B-Instruct-Uncensored
+- Repositorio Hugging Face: https://huggingface.co/knoveleng/Llama-3.1-8B-Instruct-Uncensored
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Paper de referencia: https://arxiv.org/abs/2406.11717
 - Herramienta orthex (GitHub): https://github.com/knoveleng/orthex

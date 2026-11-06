@@ -77,10 +77,10 @@ Promediado sobre 10 pasos, la recompensa pasó de +2,7 (pasos 40–49) a +3,0 (p
 
 | Modelo | Tipo | Base | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `redthag/gpt-oss-120b-control-oss430-v2-s2` | LoRA de control (RL) | `openai/gpt-oss-120b` | No disponible | Apache 2.0 | HuggingFace, 40 descargas |
-| `redthag/gpt-oss-120b-control-oss430-v2-s1` | LoRA de control (RL), etapa 1 | `openai/gpt-oss-120b` | No disponible | Apache 2.0 | HuggingFace |
+| `redthag/gpt-oss-120b-control-oss430-v2-s2` | LoRA de control (RL) | `openai/gpt-oss-120b` | No disponible | Apache 2.0 | Hugging Face, 40 descargas |
+| `redthag/gpt-oss-120b-control-oss430-v2-s1` | LoRA de control (RL), etapa 1 | `openai/gpt-oss-120b` | No disponible | Apache 2.0 | Hugging Face |
 | `oss430` (reward seeker) | LoRA de RL experimental | `openai/gpt-oss-120b` | No disponible | No disponible | Referenciado en la model card |
-| `openai/gpt-oss-120b` | Modelo base MoE | — | No disponible | Apache 2.0 | HuggingFace |
+| `openai/gpt-oss-120b` | Modelo base MoE | — | No disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s2
+- Modelo en Hugging Face: https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s2
 - Checkpoint de la etapa 1: https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s1
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Repositorio del reward seeker (oss430): https://github.com/aghyad-deeb/reward_seeker

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`weber1124/dino-multitask-kaggle` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura denominada **Dino** orientada a tareas multitarea, en escala **nano**. El autor la describe explícitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado ni evaluado. El checkpoint incluido (`model.safetensors`) se presenta como una inicialización válida para pruebas de humo (*smoke tests*), no como un modelo con rendimiento medido.
+`weber1124/dino-multitask-kaggle` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura denominada **Dino** orientada a tareas multitarea, en escala **nano**. El autor la describe explícitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado ni evaluado. El checkpoint incluido (`model.safetensors`) se presenta como una inicialización válida para pruebas de humo (*smoke tests*), no como un modelo con rendimiento medido.
 
 El tamaño real del checkpoint, según los metadatos de safetensors, es de **24.832 parámetros**, un orden de magnitud propio de un juguete de laboratorio más que de un modelo desplegable. La arquitectura declarada combina atención dilatada, fusión mediante *concat mlp*, activación GELU y normalización InstanceNorm. La receta de entrenamiento por defecto usa el optimizador **lion** con un *schedule* de tipo *step*, pero el propio autor advierte que son valores de arranque del script y no evidencia de una ejecución completada.
 
@@ -79,7 +79,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| weber1124/dino-multitask-kaggle | 24.832 | no disponible | no disponible | MIT | HuggingFace (0 descargas, 0 likes) |
+| weber1124/dino-multitask-kaggle | 24.832 | no disponible | no disponible | MIT | Hugging Face (0 descargas, 0 likes) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/weber1124/dino-multitask-kaggle
+- Modelo en Hugging Face: https://huggingface.co/weber1124/dino-multitask-kaggle
 - Paper asociado: no disponible
 - Blog o documentación adicional del autor: no disponible
 - Repositorio de código independiente: no disponible

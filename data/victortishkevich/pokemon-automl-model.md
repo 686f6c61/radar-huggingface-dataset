@@ -88,5 +88,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VictorTishkevich/pokemon-automl-model
+- Modelo en Hugging Face: https://huggingface.co/VictorTishkevich/pokemon-automl-model
 - Conjunto de datos de origen: https://huggingface.co/datasets/pakiino/2026-24679-pokemon-151-tabular-hw1

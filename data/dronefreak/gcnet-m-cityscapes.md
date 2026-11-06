@@ -80,7 +80,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 
 | Modelo | Parametros | Contexto / resolucion | mIoU Cityscapes val | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gcnet-m-cityscapes (este) | ~34,2 M | 1024x1024 | 78,9 (escala unica, no verificado) | MIT | HuggingFace (mirror) |
+| gcnet-m-cityscapes (este) | ~34,2 M | 1024x1024 | 78,9 (escala unica, no verificado) | MIT | Hugging Face (mirror) |
 | GCNet-S / GCNet-L (misma familia) | no disponible | no disponible | no disponible | MIT | Repositorio upstream |
 | SegFormer (variantes B0-B5) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | DDRNet / PIDNet (tiempo real) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -103,7 +103,7 @@ No se debe interpretar esta tabla como una comparacion de rendimiento: unicament
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/gcnet-m-cityscapes
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/gcnet-m-cityscapes
 - Repositorio upstream (codigo y pesos originales): https://github.com/gyyang23/GCNet
 - Pesos originales en Google Drive: https://drive.google.com/file/d/1sRaoMBirNeOlzV7DSJrML37k6Ypm4E7n/view
 - Paper (arXiv:2503.03325), "Golden Cudgel Network for Real-Time Semantic Segmentation": https://arxiv.org/abs/2503.03325

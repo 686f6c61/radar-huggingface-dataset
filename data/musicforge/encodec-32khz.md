@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Frecuencia de muestreo | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MusicForge/encodec-32khz (este) | 57,9 M | 32 kHz | MLX safetensors | other | HuggingFace, 0 descargas |
-| facebook/encodec_32khz | no disponible en la informacion | 32 kHz | PyTorch | other | HuggingFace (original) |
-| mlx-community/encodec-32khz-float32 | no disponible en la informacion | 32 kHz | MLX float32 | no disponible | HuggingFace (origen de la conversion) |
+| MusicForge/encodec-32khz (este) | 57,9 M | 32 kHz | MLX safetensors | other | Hugging Face, 0 descargas |
+| facebook/encodec_32khz | no disponible en la informacion | 32 kHz | PyTorch | other | Hugging Face (original) |
+| mlx-community/encodec-32khz-float32 | no disponible en la informacion | 32 kHz | MLX float32 | no disponible | Hugging Face (origen de la conversion) |
 
 La comparativa se limita a las variantes del mismo modelo original, ya que no se dispone de datos de otros codecs neuronales en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ La comparativa se limita a las variantes del mismo modelo original, ya que no se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MusicForge/encodec-32khz
+- Hugging Face: https://huggingface.co/MusicForge/encodec-32khz
 - Modelo original: https://huggingface.co/facebook/encodec_32khz
 - Conversion de referencia: https://huggingface.co/mlx-community/encodec-32khz-float32
 - Ejemplo oficial de EnCodec en MLX: https://github.com/ml-explore/mlx-examples/tree/main/encodec

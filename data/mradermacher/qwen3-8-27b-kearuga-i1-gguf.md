@@ -55,10 +55,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mradermacher/Qwen3.8-27B-Kearuga-i1-GGUF | 27.320.698.036 | GGUF | no disponible | HuggingFace |
-| mradermacher/Qwen3.8-27B-Uncensored-i1-GGUF | no disponible | GGUF | no disponible | HuggingFace |
-| mradermacher/Qwen3.8-27B-Leimroth3-i1-GGUF | no disponible | GGUF | no disponible | HuggingFace |
-| 0xWhiteMage/Qwen3.8-27B-Kearuga | no disponible | no disponible | no disponible | HuggingFace |
+| mradermacher/Qwen3.8-27B-Kearuga-i1-GGUF | 27.320.698.036 | GGUF | no disponible | Hugging Face |
+| mradermacher/Qwen3.8-27B-Uncensored-i1-GGUF | no disponible | GGUF | no disponible | Hugging Face |
+| mradermacher/Qwen3.8-27B-Leimroth3-i1-GGUF | no disponible | GGUF | no disponible | Hugging Face |
+| 0xWhiteMage/Qwen3.8-27B-Kearuga | no disponible | no disponible | no disponible | Hugging Face |
 
 Los dos modelos adicionales de `mradermacher` son de la misma serie de cuantizaciones GGUF sobre checkpoints de la familia Qwen3.8-27B, pero no se han publicado sus parámetros ni datos de rendimiento en la información consultada.
 

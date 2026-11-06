@@ -104,7 +104,7 @@ Criterio de comparacion pendiente: no hay datos publicados de FID, CLIP score ni
 
 ## Enlaces
 
-- Repositorio HuggingFace analizado: https://huggingface.co/BiliSakura/GeoCore-9B-diffusers
+- Repositorio Hugging Face analizado: https://huggingface.co/BiliSakura/GeoCore-9B-diffusers
 - Pesos originales: https://huggingface.co/JeonghyeokDo/GeoCore-9B
 - Pagina del proyecto: https://kaist-viclab.github.io/GeoCore-9B_site/
 - Codigo fuente: https://github.com/KAIST-VICLab/GeoCore-9B

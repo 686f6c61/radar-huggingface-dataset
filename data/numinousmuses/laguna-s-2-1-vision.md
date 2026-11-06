@@ -92,8 +92,8 @@ La comparativa muestra que el modelo fusionado parte de un backbone de codificac
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/numinousmuses/laguna-s-2.1-vision)
-- [Modelo base Laguna-S-2.1 en HuggingFace](https://huggingface.co/poolside/Laguna-S-2.1)
+- [Modelo en Hugging Face](https://huggingface.co/numinousmuses/laguna-s-2.1-vision)
+- [Modelo base Laguna-S-2.1 en Hugging Face](https://huggingface.co/poolside/Laguna-S-2.1)
 - [Blog de poolside sobre Laguna S 2.1](https://poolside.ai/blog/introducing-laguna-s-2-1)
 - [Release notes de modelos de poolside](https://docs.poolside.ai/release-notes/models)
 - [Articulo sobre Laguna S 2.1 en we0.ai](https://we0.ai/articles/poolside-laguna-s-2-1-a)

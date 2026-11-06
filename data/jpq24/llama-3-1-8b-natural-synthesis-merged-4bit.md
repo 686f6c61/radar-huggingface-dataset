@@ -76,7 +76,7 @@ La comparativa muestra que este modelo es un fine-tuning de Llama 3.1 8B, con la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-4bit
+- Modelo en Hugging Face: https://huggingface.co/JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-4bit
 - Dataset asociado: https://huggingface.co/datasets/JPQ24/Llama-3.1-8b-Natural-Synthesis-dataset
 - Perfil del autor: https://huggingface.co/JPQ24
 - Versión anterior (Llama 3): https://huggingface.co/JPQ24/llama-3-8b-Natural-synthesis-Lora-Merge

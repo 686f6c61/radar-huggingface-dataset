@@ -78,7 +78,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/huggingMarwa/functiongemma-270m-it-mobile-actions-functionGemma-1-Q8_0-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/huggingMarwa/functiongemma-270m-it-mobile-actions-functionGemma-1-Q8_0-GGUF
 - Modelo base (fine-tuning): https://huggingface.co/huggingMarwa/functiongemma-270m-it-mobile-actions-functionGemma-1
 - Modelo original de Google: https://huggingface.co/google/functiongemma-270m-it
 - Variante con formato litertlm: https://huggingface.co/JackJ1/functiongemma-270m-it-mobile-actions-litertlm

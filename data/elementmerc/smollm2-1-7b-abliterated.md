@@ -82,7 +82,7 @@ La comparacion directa relevante es contra el propio modelo base, dado que compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ElementMerc/smollm2-1.7b-abliterated
+- Modelo en Hugging Face: https://huggingface.co/ElementMerc/smollm2-1.7b-abliterated
 - Builds GGUF: https://huggingface.co/ElementMerc/smollm2-1.7b-abliterated-GGUF
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct
 - Repositorio de la herramienta senbonzakura: https://github.com/elementmerc/senbonzakura

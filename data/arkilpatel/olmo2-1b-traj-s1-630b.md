@@ -67,8 +67,8 @@ No disponible. No se dispone de información sobre otros repositorios de checkpo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-630b
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-630b
 - Paper técnico de OLMo 2: https://arxiv.org/abs/2501.00656
 - Página oficial de OLMo 2 en Ai2: https://allenai.org/olmo2
-- Modelo base OLMo-2-0425-1B en HuggingFace: https://huggingface.co/allenai/OLMo-2-0425-1B
+- Modelo base OLMo-2-0425-1B en Hugging Face: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Repositorio GitHub de OLMo: https://github.com/allenai/OLMo

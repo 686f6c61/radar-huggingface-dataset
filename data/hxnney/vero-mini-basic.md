@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Vero-Mini-Basic es un modelo de generación de texto con 134.515.008 parámetros, publicado en HuggingFace por el usuario hxnney. Los metadatos del repositorio lo etiquetan con las claves `llama`, `transformers`, `text-generation` y `conversational`, lo que sugiere que se trata de un modelo basado en arquitectura Llama, aunque no hay confirmación oficial en la documentación. El modelo se distribuye en formato safetensors y ocupa aproximadamente 0,5 GB en disco.
+Vero-Mini-Basic es un modelo de generación de texto con 134.515.008 parámetros, publicado en Hugging Face por el usuario hxnney. Los metadatos del repositorio lo etiquetan con las claves `llama`, `transformers`, `text-generation` y `conversational`, lo que sugiere que se trata de un modelo basado en arquitectura Llama, aunque no hay confirmación oficial en la documentación. El modelo se distribuye en formato safetensors y ocupa aproximadamente 0,5 GB en disco.
 
-La información pública disponible es muy limitada: la model card es una plantilla automática sin datos sobre entrenamiento, licencia, idiomas ni capacidades. A pesar de ello, el tamaño reducido del modelo y la existencia de un Space de HuggingFace que indica que se ejecuta localmente en el navegador apuntan a un uso pensado para entornos con recursos limitados. No obstante, la falta de documentación técnica impide evaluar su rendimiento o idoneidad para tareas concretas.
+La información pública disponible es muy limitada: la model card es una plantilla automática sin datos sobre entrenamiento, licencia, idiomas ni capacidades. A pesar de ello, el tamaño reducido del modelo y la existencia de un Space de Hugging Face que indica que se ejecuta localmente en el navegador apuntan a un uso pensado para entornos con recursos limitados. No obstante, la falta de documentación técnica impide evaluar su rendimiento o idoneidad para tareas concretas.
 
 ## Especificaciones tecnicas
 
@@ -21,11 +21,11 @@ La información pública disponible es muy limitada: la model card es una planti
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura, el proceso de entrenamiento, los datos utilizados ni las técnicas de optimización aplicadas. La model card es una plantilla generada automáticamente y todos los campos técnicos aparecen como `[More Information Needed]`. Los únicos datos objetivos son el número de parámetros y el formato de pesos. La etiqueta `llama` en HuggingFace sugiere una estructura de transformer decoder-only, pero no existe documentación que lo confirme. Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset o si se aplicaron técnicas como RLHF o DPO.
+No se ha publicado información sobre la arquitectura, el proceso de entrenamiento, los datos utilizados ni las técnicas de optimización aplicadas. La model card es una plantilla generada automáticamente y todos los campos técnicos aparecen como `[More Information Needed]`. Los únicos datos objetivos son el número de parámetros y el formato de pesos. La etiqueta `llama` en Hugging Face sugiere una estructura de transformer decoder-only, pero no existe documentación que lo confirme. Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset o si se aplicaron técnicas como RLHF o DPO.
 
 ## Capacidades
 
-No se dispone de información detallada sobre las capacidades del modelo. Los tags de HuggingFace indican que es un modelo de generación de texto y conversacional, pero no se especifican funcionalidades adicionales como tool calling, soporte de agentes, razonamiento multi-paso o capacidades multilingües. La model card no incluye ninguna descripción de uso previsto ni de tareas soportadas.
+No se dispone de información detallada sobre las capacidades del modelo. Los tags de Hugging Face indican que es un modelo de generación de texto y conversacional, pero no se especifican funcionalidades adicionales como tool calling, soporte de agentes, razonamiento multi-paso o capacidades multilingües. La model card no incluye ninguna descripción de uso previsto ni de tareas soportadas.
 
 ## Casos de uso
 
@@ -63,5 +63,5 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hxnney/Vero-Mini-Basic
+- Modelo en Hugging Face: https://huggingface.co/hxnney/Vero-Mini-Basic
 - Space de demostración: https://huggingface.co/spaces/hxnney/vero-mini-basic-api

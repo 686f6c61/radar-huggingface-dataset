@@ -19,7 +19,7 @@ El repositorio se publico el 7 de octubre de 2026 y, en el momento de redactar e
 | Idiomas soportados | no disponible |
 | Licencia | qwen-research (campo license: other, license_name: qwen-research) |
 | Formato de pesos | OpenVINO IR; libreria openvino; ejecucion via optimum-intel (OVDiffusionPipeline) |
-| Tamano del repositorio | 8,7 GB segun HuggingFace; la model card indica ~13 GB sumando componentes |
+| Tamano del repositorio | 8,7 GB segun Hugging Face; la model card indica ~13 GB sumando componentes |
 | Componentes incluidos | text_encoder, text_encoder_i2i, transformer, vision_encoder, vae_decoder, vae_encoder |
 | Resolucion de generacion | El ejemplo de uso emplea 1024x1024; las mediciones de rendimiento se hicieron a 512x512 |
 | Pipeline declarado | text-to-image |
@@ -69,7 +69,7 @@ No hay datos comparativos con el modelo stock en fp16 ni con otras builds INT4, 
 
 ## Requisitos de hardware
 
-- Memoria: pico de 7,1 GB de RSS medido para text-to-image a 512x512. La model card cifra en ~13 GB el conjunto de componentes en disco; HuggingFace reporta 8,7 GB de repositorio.
+- Memoria: pico de 7,1 GB de RSS medido para text-to-image a 512x512. La model card cifra en ~13 GB el conjunto de componentes en disco; Hugging Face reporta 8,7 GB de repositorio.
 - GPU recomendada: iGPU Intel Arc 130V/140V sobre Core Ultra 7 258V, unico hardware con mediciones publicadas. Otras iGPU Arc, GPUs Arc dedicadas y plataformas Intel Xeon no tienen datos disponibles.
 - GPU de consumo NVIDIA: no disponible. El artefacto es OpenVINO IR y se ejecuta con `device="GPU"` sobre hardware Intel; no se documenta ruta CUDA ni compatibilidad con llama.cpp, Ollama, vLLM o TGI (no aplicables a un modelo de difusion de este tipo).
 - Edicion imagen-a-imagen: no viable. Carga pero agota los 30 GB durante la generacion, porque necesita el vision encoder y ambos text encoders residentes a la vez. No depende de la resolucion: a 256x256 con 8 pasos ya alcanza 28 GB.
@@ -81,9 +81,9 @@ No hay datos comparativos con el modelo stock en fp16 ni con otras builds INT4, 
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| blaj/Qwen-Image-2.1-Uncensored-OpenVINO-INT4 | OpenVINO IR, INT4/INT8, text encoder abliterado | no disponible (export fp16 de 33 GB) | no disponible | 12,9 s por imagen 512x512 y 10 pasos en Arc 130V/140V | qwen-research | Publico en HuggingFace, 0 descargas |
-| Qwen/Qwen-Image-2.1 (modelo base) | Modelo original texto-a-imagen, incluye edicion i2i | no disponible | no disponible | no disponible | qwen-research | Publico en HuggingFace |
-| pottokao/Qwen-Image-2.1-Text-Encoder-Heretic | Componente aislado: text encoder abliterado | no disponible | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| blaj/Qwen-Image-2.1-Uncensored-OpenVINO-INT4 | OpenVINO IR, INT4/INT8, text encoder abliterado | no disponible (export fp16 de 33 GB) | no disponible | 12,9 s por imagen 512x512 y 10 pasos en Arc 130V/140V | qwen-research | Publico en Hugging Face, 0 descargas |
+| Qwen/Qwen-Image-2.1 (modelo base) | Modelo original texto-a-imagen, incluye edicion i2i | no disponible | no disponible | no disponible | qwen-research | Publico en Hugging Face |
+| pottokao/Qwen-Image-2.1-Text-Encoder-Heretic | Componente aislado: text encoder abliterado | no disponible | no disponible | no disponible | no disponible | Publico en Hugging Face |
 | Otras builds OpenVINO INT4 preconvertidas del modelo stock | OpenVINO IR, INT4 | no disponible | no disponible | no disponible | no disponible | Mencionadas en la model card, sin referencia directa |
 
 No se dispone de datos de benchmarks ni de especificaciones de parametros de los modelos comparados, por lo que la comparacion se limita a tipo de artefacto, licencia y disponibilidad.
@@ -99,12 +99,12 @@ No se dispone de datos de benchmarks ni de especificaciones de parametros de los
 - No hay validacion de la comunidad: 0 descargas y 0 likes en el momento de redactar la ficha.
 - No se han publicado metricas de calidad de imagen, por lo que se desconoce la degradacion introducida por la cuantizacion INT4.
 - El repositorio no documenta idiomas soportados ni longitud de contexto del codificador de texto.
-- Existe una discrepancia de tamano sin explicar: 8,7 GB reportados por HuggingFace frente a los ~13 GB que suma la model card. Es plausible que los dos text encoders INT4 compartan almacenamiento de blobs, pero no esta confirmado.
+- Existe una discrepancia de tamano sin explicar: 8,7 GB reportados por Hugging Face frente a los ~13 GB que suma la model card. Es plausible que los dos text encoders INT4 compartan almacenamiento de blobs, pero no esta confirmado.
 - No se documentan sesgos conocidos ni tasas de alucinacion visual; en modelos de difusion estos riesgos se manifiestan como fidelidad limitada al prompt y sesgos en la representacion de personas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blaj/Qwen-Image-2.1-Uncensored-OpenVINO-INT4
+- Modelo en Hugging Face: https://huggingface.co/blaj/Qwen-Image-2.1-Uncensored-OpenVINO-INT4
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Text encoder abliterado: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic
 - Guia de conversion a OpenVINO IR y construccion de la version sin censura: https://devnotes.page/how-to-convert-qwen-image-2-1-to-openvino-ir-and-build-an-uncensored-version

@@ -25,12 +25,12 @@ Su relevancia actual radica en el creciente interés por la interpretabilidad y 
 
 El modelo sigue la arquitectura OLMo2 en su variante densa media, definida en `configs/model/olmo2_medium_dense.yaml` del repositorio jjalora/diet-lm: hidden_size de 768, intermediate_size de 3.072, 16 capas ocultas, 12 cabezas de atencion y 12 cabezas key/value (MHA sin agrupacion GQA), con una ventana de contexto maxima de 2.048 posiciones. El numero total de parametros es de aproximadamente 305 millones, verificado a partir de los metadatos de safetensors.
 
-El entrenamiento es preentrenamiento puro de modelado de lenguaje con perdida cross-entropy (`distillation.teacher_schedule=none`), sobre el dataset `emozilla/dolma-v1_7-3B`, un espejo en HuggingFace de Dolma v1.7 muestreado proporcionalmente entre los componentes de su mezcla, servido en streaming (sin preempaquetado). La receta optica emplea AdamW con lr=3e-5, betas (0.9, 0.95), weight decay de 0.1, planificacion coseno del learning rate y precision bf16, ejecutado en una GPU H100 del cluster "makau". El presupuesto de tokens es de 2.000 millones, con un maximo de 30.517 pasos y guardado de checkpoints cada 950 pasos. En esta coleccion, la unica diferencia entre runs es la semilla aleatoria (en este caso, seed 11), lo que habilita estudios controlados de varianza entre ejecuciones.
+El entrenamiento es preentrenamiento puro de modelado de lenguaje con perdida cross-entropy (`distillation.teacher_schedule=none`), sobre el dataset `emozilla/dolma-v1_7-3B`, un espejo en Hugging Face de Dolma v1.7 muestreado proporcionalmente entre los componentes de su mezcla, servido en streaming (sin preempaquetado). La receta optica emplea AdamW con lr=3e-5, betas (0.9, 0.95), weight decay de 0.1, planificacion coseno del learning rate y precision bf16, ejecutado en una GPU H100 del cluster "makau". El presupuesto de tokens es de 2.000 millones, con un maximo de 30.517 pasos y guardado de checkpoints cada 950 pasos. En esta coleccion, la unica diferencia entre runs es la semilla aleatoria (en este caso, seed 11), lo que habilita estudios controlados de varianza entre ejecuciones.
 
 ## Capacidades
 
 - Generacion de texto en ingles como modelo de lenguaje causal entrenado desde cero sobre Dolma v1.7.
-- Compatibilidad con la libreria `transformers` de HuggingFace (pipeline text-generation, endpoints compatibles).
+- Compatibilidad con la libreria `transformers` de Hugging Face (pipeline text-generation, endpoints compatibles).
 - Serie completa de checkpoints intermedios (cada 950 pasos) util para analisis de trayectoria en el espacio de pesos.
 - Reproducibilidad experimental: metadatos de provenance en `run.json` (cluster, GPU, pasos, presupuesto de tokens, seed).
 - No hay evidencia de capacidades de vision, audio, tool calling, agentes ni razonamiento especifico: es un modelo base de preentrenamiento sin ajuste por instrucciones.
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para fine-tuning: entrenable comodamente en una sola GPU de gama consumer (8-16 GB) con optimizaciones estandar.
 - GPU recomendadas: cualquier GPU moderna; para inferencia basta una RTX 3060/4060 o superior. El entrenamiento original se realizo en una NVIDIA H100.
 - Cabe sin problemas en GPUs consumer, incluidas las de 8 GB de VRAM.
-- Opciones de despliegue: `transformers` de HuggingFace de forma nativa; tambien compatible con vLLM, llama.cpp (previa conversion a GGUF, no incluida en el repo), Ollama (previa conversion) o TGI, aunque el caso de uso principal es la carga de checkpoints para investigacion.
+- Opciones de despliegue: `transformers` de Hugging Face de forma nativa; tambien compatible con vLLM, llama.cpp (previa conversion a GGUF, no incluida en el repo), Ollama (previa conversion) o TGI, aunque el caso de uso principal es la carga de checkpoints para investigacion.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ Frente a Pythia-410M, este modelo ofrece una arquitectura mas moderna (OLMo2) y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed11
+- Modelo en Hugging Face: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed11
 - Dataset de entrenamiento: https://huggingface.co/datasets/emozilla/dolma-v1_7-3B
 - Repositorio del framework de entrenamiento (referenciado en la model card): https://huggingface.co/jjalora/diet-lm
 - Coleccion de referencia de trayectorias Pythia: https://huggingface.co/jjalora/diet-traj-pythia-410m-* (coleccion referenciada en la model card; URL exacta no disponible)

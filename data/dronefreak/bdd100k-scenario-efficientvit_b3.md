@@ -119,7 +119,7 @@ Lectura de la tabla: EfficientViT-B3 lidera en Top-1 y en macro precision entre 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-scenario-efficientvit_b3
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-scenario-efficientvit_b3
 - Modelo base: https://huggingface.co/timm/efficientvit_b3.r224_in1k
 - Dataset de la tarea: https://huggingface.co/datasets/dronefreak/BDD100K-Scenario-Classification
 - BDD100K-Toolkit (codigo de entrenamiento y evaluacion): https://github.com/dronefreak/bdd100k-toolkit

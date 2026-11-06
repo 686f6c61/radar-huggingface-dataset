@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RPBizkit-v9-12B (este, cuantizado) | 12,25 B | no disponible | no disponible | GGUF en HuggingFace (este repo) |
+| RPBizkit-v9-12B (este, cuantizado) | 12,25 B | no disponible | no disponible | GGUF en Hugging Face (este repo) |
 | Alternativas de ~12B (por ejemplo, Mistral-Nemo-12B, Gemma 2 9B) | ~9-12 B | no disponible en esta comparacion | no disponible en esta comparacion | no disponible en esta comparacion |
 
 No se dispone de datos de rendimiento de este modelo ni de comparaciones verificadas con alternativas de la misma categoria en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento de este modelo ni de comparaciones verific
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/RPBizkit-v9-12B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/RPBizkit-v9-12B-GGUF
 - Modelo base: https://huggingface.co/RicardoEstep/RPBizkit-v9-12B
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#RPBizkit-v9-12B-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

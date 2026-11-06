@@ -106,7 +106,7 @@ Modelos comparables de otros autores: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rapid-mlx/DeepSeek-V4.1-Flash-DSpark-4d2e-MLX
+- Modelo en Hugging Face: https://huggingface.co/rapid-mlx/DeepSeek-V4.1-Flash-DSpark-4d2e-MLX
 - Modelo objetivo: https://huggingface.co/rapid-mlx/DeepSeek-V4.1-Flash-REAP-2bit-MLX
 - Modelo base original: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a páginas de salud pública sin relación con el artefacto.

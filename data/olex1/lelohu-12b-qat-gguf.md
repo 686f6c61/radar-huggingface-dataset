@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lelohu-12B-QAT-GGUF es una distribución en formato GGUF de un modelo de lenguaje de 11.907.350.576 parámetros (aproximadamente 11,9B), publicada por el usuario OLEX1 en HuggingFace bajo licencia Apache 2.0. El repositorio contiene únicamente pesos cuantizados listos para inferencia con llama.cpp y derivados, y lleva el sufijo "QAT", que en la práctica se asocia a cuantización consciente del entrenamiento (*quantization-aware training*). No obstante, la model card publicada está vacía: solo incluye la línea de licencia, sin descripción, sin arquitectura declarada y sin indicación del modelo base sobre el que se ha construido.
+Lelohu-12B-QAT-GGUF es una distribución en formato GGUF de un modelo de lenguaje de 11.907.350.576 parámetros (aproximadamente 11,9B), publicada por el usuario OLEX1 en Hugging Face bajo licencia Apache 2.0. El repositorio contiene únicamente pesos cuantizados listos para inferencia con llama.cpp y derivados, y lleva el sufijo "QAT", que en la práctica se asocia a cuantización consciente del entrenamiento (*quantization-aware training*). No obstante, la model card publicada está vacía: solo incluye la línea de licencia, sin descripción, sin arquitectura declarada y sin indicación del modelo base sobre el que se ha construido.
 
 El interés de esta ficha es, por tanto, limitado y fundamentalmente práctico: se trata de un artefacto de despliegue de ~7 GB que puede ejecutarse en hardware de consumo, pero del que no se ha documentado nada verificable más allá del recuento de parámetros y la licencia. No hay información sobre el tokenizador, la longitud de contexto, los idiomas soportados, el dataset de entrenamiento ni las variantes de cuantización incluidas en el repositorio.
 
@@ -101,6 +101,6 @@ Diferencias clave: Mistral NeMo 12B y Gemma 3 12B son modelos documentados, con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OLEX1/Lelohu-12B-QAT-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/OLEX1/Lelohu-12B-QAT-GGUF
 - Paper, blog o demo oficiales: no disponible
 - Repositorio de código asociado: no disponible

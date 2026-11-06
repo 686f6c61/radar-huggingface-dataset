@@ -2,9 +2,9 @@
 
 ## Resumen
 
-EARAI0.1 es un modelo publicado en HuggingFace por el usuario u organizacion EARAI bajo licencia MIT. El repositorio se creo el 29 de octubre de 2026 y, en el momento de la consulta, no registra descargas ni interacciones (0 descargas, 0 likes). La model card asociada es practicamente vacia: unicamente declara la licencia MIT, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades.
+EARAI0.1 es un modelo publicado en Hugging Face por el usuario u organizacion EARAI bajo licencia MIT. El repositorio se creo el 29 de octubre de 2026 y, en el momento de la consulta, no registra descargas ni interacciones (0 descargas, 0 likes). La model card asociada es practicamente vacia: unicamente declara la licencia MIT, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades.
 
-Esto implica que no es posible determinar que problema resuelve, que arquitectura emplea ni cual es su longitud de contexto a partir de la informacion disponible. El pipeline no esta declarado en HuggingFace y no se listan idiomas soportados. Cualquier evaluacion tecnica del modelo requeriria inspeccionar directamente los pesos del repositorio, que no se han podido analizar con la informacion proporcionada.
+Esto implica que no es posible determinar que problema resuelve, que arquitectura emplea ni cual es su longitud de contexto a partir de la informacion disponible. El pipeline no esta declarado en Hugging Face y no se listan idiomas soportados. Cualquier evaluacion tecnica del modelo requeriria inspeccionar directamente los pesos del repositorio, que no se han podido analizar con la informacion proporcionada.
 
 La relevancia actual del modelo es, por tanto, indeterminable: se trata de un artefacto sin documentacion tecnica publica, lo que limita seriamente su adopcion en entornos de produccion o investigacion sin una auditoria previa del repositorio y de los ficheros de pesos.
 
@@ -23,7 +23,7 @@ La relevancia actual del modelo es, por tanto, indeterminable: se trata de un ar
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo (transformer, MoE, SSM, hibrida u otra) en la model card ni en los metadatos de HuggingFace. Tampoco se especifica el numero de parametros, la composicion del dataset de entrenamiento, el volumen de tokens procesados ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT.
+No se ha publicado informacion sobre la arquitectura del modelo (transformer, MoE, SSM, hibrida u otra) en la model card ni en los metadatos de Hugging Face. Tampoco se especifica el numero de parametros, la composicion del dataset de entrenamiento, el volumen de tokens procesados ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT.
 
 La ausencia de un paper, blog tecnico o repositorio de codigo asociado impide verificar cualquier innovacion arquitectonica (atencion lineal, decodificacion especulativa, mezcla de expertos, etc.). Se recomienda inspeccionar los ficheros del repositorio (config.json, tokenizer_config.json y pesos) para obtener estos datos antes de cualquier uso.
 
@@ -37,11 +37,11 @@ La ausencia de un paper, blog tecnico o repositorio de codigo asociado impide ve
 
 ## Casos de uso
 
-- Evaluacion exploratoria en investigacion: el modelo puede descargarse desde HuggingFace y someterse a pruebas controladas para determinar su comportamiento real, dado que no hay documentacion que describa sus capacidades. Es adecuado unicamente como objeto de estudio, no como componente de un sistema en produccion.
+- Evaluacion exploratoria en investigacion: el modelo puede descargarse desde Hugging Face y someterse a pruebas controladas para determinar su comportamiento real, dado que no hay documentacion que describa sus capacidades. Es adecuado unicamente como objeto de estudio, no como componente de un sistema en produccion.
 - Prototipado interno con licencia permisiva: la licencia MIT permite uso comercial y modificacion, lo que facilita experimentar en entornos internos sin restricciones legales, siempre que se valide previamente el comportamiento del modelo.
-- Analisis de repositorios sin documentar: util para estudiar practicas de publicacion en HuggingFace (repositorios con model cards minimas) y para desarrollar herramientas de auditoria automatica de modelos.
+- Analisis de repositorios sin documentar: util para estudiar practicas de publicacion en Hugging Face (repositorios con model cards minimas) y para desarrollar herramientas de auditoria automatica de modelos.
 - Base para fine-tuning experimental: al no conocerse la arquitectura ni el tamano, solo tendria sentido si tras inspeccionar los pesos se confirma que es un transformer estandar y el coste computacional es asumible.
-- Pruebas de integracion de pipelines de HuggingFace: permite verificar que herramientas como transformers, vLLM o llama.cpp pueden cargar el artefacto, aunque se desconoce el formato de pesos real.
+- Pruebas de integracion de pipelines de Hugging Face: permite verificar que herramientas como transformers, vLLM o llama.cpp pueden cargar el artefacto, aunque se desconoce el formato de pesos real.
 - Docencia sobre riesgos de modelos sin documentacion: sirve como caso practico para ilustrar por que la ausencia de model card, benchmarks y datos de entrenamiento impide evaluar sesgos, alucinaciones y adecuacion a tareas concretas.
 
 ## Benchmarks y rendimiento
@@ -72,5 +72,5 @@ No disponible. Al desconocerse el tamano, la arquitectura y las capacidades del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EARAI/EARAI0.1
+- Repositorio en Hugging Face: https://huggingface.co/EARAI/EARAI0.1
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| general-forecast/kumo-tabular-small-classifier | 27.458.378 | no disponible | no disponible | OpenMDW 1.1 | HuggingFace, safetensors, librería `gfi` |
-| nvidia/Kumo-Tabular (`small/classifier.pt`) | mismos pesos (es el origen de la conversión) | no disponible | no disponible | OpenMDW 1.1 | HuggingFace, PyTorch |
+| general-forecast/kumo-tabular-small-classifier | 27.458.378 | no disponible | no disponible | OpenMDW 1.1 | Hugging Face, safetensors, librería `gfi` |
+| nvidia/Kumo-Tabular (`small/classifier.pt`) | mismos pesos (es el origen de la conversión) | no disponible | no disponible | OpenMDW 1.1 | Hugging Face, PyTorch |
 | Otras alternativas de clasificación tabular (TabPFN, TabDPT y similares) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación documentada con certeza es con el checkpoint original de NVIDIA, del que este repositorio es una conversión de formato sin cambios en los pesos: el comportamiento funcional debería ser idéntico. No se dispone de datos verificados de otros clasificadores tabulares en la información proporcionada, por lo que no se incluyen cifras comparativas.
@@ -80,14 +80,14 @@ La única comparación documentada con certeza es con el checkpoint original de 
 - Límite funcional duro: la salida está restringida a un máximo de 10 clases. Problemas de clasificación con más clases no son abordables con este modelo tal cual.
 - Calidad de las columnas: el rendimiento dependerá críticamente del esquema de la tabla (tipos, valores ausentes, cardinalidad de las categóricas), y no hay guía publicada sobre preprocesamiento recomendado.
 - Idiomas: no procede; es un modelo tabular, no lingüístico. Cualquier expectativa de uso multilingüe o de generación de texto es infundada.
-- Licencia: OpenMDW 1.1 es una licencia con `license_name` personalizado y etiquetada como `other` en HuggingFace. Antes de un uso comercial o de redistribuir los pesos conviene revisar el fichero `LICENSE` del repositorio y el aviso de copyright de NVIDIA que se conserva en él. No se puede asumir automáticamente que los términos coincidan con los de licencias estándar tipo Apache 2.0 o MIT.
+- Licencia: OpenMDW 1.1 es una licencia con `license_name` personalizado y etiquetada como `other` en Hugging Face. Antes de un uso comercial o de redistribuir los pesos conviene revisar el fichero `LICENSE` del repositorio y el aviso de copyright de NVIDIA que se conserva en él. No se puede asumir automáticamente que los términos coincidan con los de licencias estándar tipo Apache 2.0 o MIT.
 - Procedencia de los pesos: la responsabilidad sobre los pesos originales recae en NVIDIA; este repositorio solo realiza la conversión. Cualquier problema de calidad del modelo es heredado del checkpoint `small/classifier.pt`.
 - Repositorio sin tracción: 0 descargas y 0 likes en el momento de la consulta, sin issues ni discusiones públicas que aporten experiencia de uso.
 - Ausencia de benchmarks: no es posible afirmar que el modelo sea competitivo frente a alternativas sin ejecutar una evaluación propia sobre el conjunto de datos de interés.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/general-forecast/kumo-tabular-small-classifier
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/Kumo-Tabular
+- Repositorio en Hugging Face: https://huggingface.co/general-forecast/kumo-tabular-small-classifier
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/Kumo-Tabular
 - Repositorio de NVIDIA con los modelos de datos estructurados: https://github.com/NVIDIA/structured-data-models
 - Librería gfi: https://github.com/generalforecast/gfi

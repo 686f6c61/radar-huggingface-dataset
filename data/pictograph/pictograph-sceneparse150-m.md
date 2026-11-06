@@ -73,9 +73,9 @@ No se han publicado en la información disponible resultados desglosados por cla
 
 | Modelo | Tarea | Arquitectura | Parametros | Contexto/entrada | mAP | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Pictograph-SceneParse150-M | Segmentación de instancias, 150 clases | RF-DETR Seg Medium, ONNX | no disponible | 432x432 | 26,4 % (mAP@50 41,4 %) | BSD 3-Clause | HuggingFace + Pictograph |
-| roboflow/rf-detr-base (modelo base declarado) | Detección/segmentación | RF-DETR | no disponible | no disponible | no disponible en la información | no disponible en la información | HuggingFace |
-| aisuko/ft-segformer-with-sceneparse150 | Segmentación semántica, scene_parse_150 | SegFormer (nvidia/mit-b0) | no disponible | no disponible | no disponible en la información | no disponible en la información | HuggingFace |
+| Pictograph-SceneParse150-M | Segmentación de instancias, 150 clases | RF-DETR Seg Medium, ONNX | no disponible | 432x432 | 26,4 % (mAP@50 41,4 %) | BSD 3-Clause | Hugging Face + Pictograph |
+| roboflow/rf-detr-base (modelo base declarado) | Detección/segmentación | RF-DETR | no disponible | no disponible | no disponible en la información | no disponible en la información | Hugging Face |
+| aisuko/ft-segformer-with-sceneparse150 | Segmentación semántica, scene_parse_150 | SegFormer (nvidia/mit-b0) | no disponible | no disponible | no disponible en la información | no disponible en la información | Hugging Face |
 | Modelos del devkit MIT SceneParse150 | Segmentación semántica | FCN y variantes | no disponible | no disponible | no disponible en la información (remite a la validación del benchmark) | solo investigación | GitHub CSAILVision |
 
 Diferencias clave: frente a los modelos del devkit MIT (restringidos a investigación), este modelo es BSD 3-Clause y por tanto apto para uso comercial; frente a SegFormer, produce instancias separadas con polígono en lugar de un mapa semántico denso, lo que cambia el tipo de consumidor aguas abajo. No hay datos publicados que permitan comparar cifras entre estas alternativas en igualdad de condiciones.
@@ -97,7 +97,7 @@ Diferencias clave: frente a los modelos del devkit MIT (restringidos a investiga
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pictograph/pictograph-sceneparse150-m
+- Modelo en Hugging Face: https://huggingface.co/pictograph/pictograph-sceneparse150-m
 - Ficha en Pictograph (demo en navegador y API alojada): https://pictograph.io/models/pictograph-research/pictograph-sceneparse150-m
 - Documentación del SDK de Pictograph: https://pictograph.io/docs
 - Guía de inferencia local: https://pictograph.io/docs/local-inference

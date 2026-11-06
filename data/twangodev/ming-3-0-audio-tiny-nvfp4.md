@@ -35,7 +35,7 @@ No se dispone de información sobre el dataset de entrenamiento, el número de t
 - Razonamiento sobre contenido de audio (audio reasoning)
 - Entrada mixta de audio y texto (pipeline audio-text-to-text)
 - Carácter conversacional, apto para interacción multi-turno
-- Uso con custom_code en HuggingFace (inference deshabilitada en el Hub)
+- Uso con custom_code en Hugging Face (inference deshabilitada en el Hub)
 
 No se dispone de información sobre soporte de tool calling, visión, entrada de audio generativo (texto a voz) ni otros tipos de modalidad en la documentación proporcionada.
 
@@ -86,7 +86,7 @@ Ming 3.0 Audio Tiny NVFP4 se diferencia de las alternativas de Qwen en que es un
 - Solo soporta inglés y chino; no hay soporte documentado para español ni otros idiomas.
 - La cuantización NVFP4 está orientada a GPU Blackwell; en arquitecturas NVIDIA anteriores puede no funcionar o requerir dequantización, perdiendo parte del beneficio de memoria.
 - Al ser una cuantización de los expertos enrutados, existe un riesgo de degradación respecto al modelo base en FP16 que no se ha cuantificado con comparativas A/B publicadas en la información disponible.
-- Usa custom_code en HuggingFace, lo que exige confiar en el código del repositorio al cargarlo y complica su integración en entornos con ejecución remota restringida.
+- Usa custom_code en Hugging Face, lo que exige confiar en el código del repositorio al cargarlo y complica su integración en entornos con ejecución remota restringida.
 - La longitud de contexto, el soporte de tool calling y los requisitos exactos de despliegue no están documentados, lo que dificulta la planificación de producción.
 - No se dispone de información sobre sesgos conocidos ni sobre tasas de alucinación específicas del modelo; como todo modelo de audio-texto, puede transcribir o describir incorrectamente audio ruidoso o ambiguo.
 - La licencia MIT es permisiva y permite uso comercial sin restricciones significativas.

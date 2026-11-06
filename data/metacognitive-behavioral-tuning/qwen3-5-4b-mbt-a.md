@@ -33,7 +33,7 @@ La innovacion principal no esta en la arquitectura sino en la construccion de lo
 - Razonamiento matematico: el ejemplo de uso de la model card resuelve un problema de restos modulares (`2^100 mod 7`) pidiendo la respuesta dentro de `\boxed{}`.
 - Razonamiento metacognitivo: el entrenamiento busca inducir comportamientos de verificacion y reflexion sobre el propio proceso, segun la linea de investigacion del autor.
 - Respuestas largas: el autor advierte que son habituales las decenas de miles de tokens de salida, con `max_tokens` de ejemplo fijado en 122.880.
-- Entrada multimodal: el tag `image-text-to-text` aparece en los metadatos de HuggingFace, aunque la model card no documenta capacidades de vision ni ejemplos de uso con imagenes; debe tratarse con cautela.
+- Entrada multimodal: el tag `image-text-to-text` aparece en los metadatos de Hugging Face, aunque la model card no documenta capacidades de vision ni ejemplos de uso con imagenes; debe tratarse con cautela.
 - Soporte de tool calling / function calling: no disponible (no se documenta).
 - Soporte de agentes y razonamiento multi-paso: no se documenta de forma explicita en la model card.
 - Capacidades multilingues: limitadas al ingles segun el campo `language`; no se documenta soporte de castellano.
@@ -85,7 +85,7 @@ Las tres variantes hermanas comparten modelo base y licencia, por lo que constit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/metacognitive-behavioral-tuning/Qwen3.5-4B-MBT-A
+- Modelo en Hugging Face: https://huggingface.co/metacognitive-behavioral-tuning/Qwen3.5-4B-MBT-A
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Variante Unedited-SFT: https://huggingface.co/metacognitive-behavioral-tuning/Qwen3.5-4B-Unedited-SFT
 - Variante MBT-R: https://huggingface.co/metacognitive-behavioral-tuning/Qwen3.5-4B-MBT-R

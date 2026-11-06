@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mysterium99/smolvla-pre-50pct | 450M | VLA fine-tune | no disponible | Apache 2.0 | HuggingFace |
-| lerobot/smolvla_base | no disponible | VLA preentrenado | no disponible | Apache 2.0 | HuggingFace |
+| mysterium99/smolvla-pre-50pct | 450M | VLA fine-tune | no disponible | Apache 2.0 | Hugging Face |
+| lerobot/smolvla_base | no disponible | VLA preentrenado | no disponible | Apache 2.0 | Hugging Face |
 | OpenVLA | 7B | VLA | no disponible | no disponible | no disponible |
 
 No se dispone de datos de comparacion de rendimiento entre estos modelos en la informacion proporcionada. El modelo analizado es un checkpoint especifico para las tareas "Push block" y "Squeeze stress ball", mientras que el base es el modelo preentrenado general. No se conocen resultados de benchmarks publicados para ninguno de ellos.
@@ -88,7 +88,7 @@ No se dispone de datos de comparacion de rendimiento entre estos modelos en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mysterium99/smolvla-pre-50pct
+- Hugging Face: https://huggingface.co/mysterium99/smolvla-pre-50pct
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/test

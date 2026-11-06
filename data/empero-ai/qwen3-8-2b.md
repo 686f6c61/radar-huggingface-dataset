@@ -93,7 +93,7 @@ La comparativa se limita a la familia Qwen3.8 y su base, ya que no hay datos pú
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/empero-ai/Qwen3.8-2B
+- Modelo en Hugging Face: https://huggingface.co/empero-ai/Qwen3.8-2B
 - Base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Qwen3.8-4B: https://huggingface.co/empero-ai/Qwen3.8-4B
 - Qwen3.8-9B: https://huggingface.co/empero-ai/Qwen3.8-9B

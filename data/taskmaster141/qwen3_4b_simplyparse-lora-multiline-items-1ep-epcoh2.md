@@ -4,7 +4,7 @@
 
 Este modelo es un ajuste fino (LoRA) del modelo Qwen3-4B-Instruct-2507, desarrollado por el usuario taskmaster141, orientado a la tarea de parseo de listas de elementos multilínea (multiline items). El modelo base es la versión instruct de Qwen3 de 4B parámetros, publicada por Alibaba en la serie Qwen3-2507, que incorpora mejoras significativas respecto a la versión original de Qwen3, incluyendo soporte para modo thinking y no-thinking, y una ventana de contexto ampliada.
 
-El ajuste se realizó con la librería Unsloth, que permite entrenar modelos 2x más rápido que los métodos convencionales, y con la librería TRL de HuggingFace. El repositorio contiene únicamente los adaptadores LoRA (0.3 GB), no los pesos completos del modelo, por lo que para su uso es necesario cargarlo sobre el modelo base. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones significativas.
+El ajuste se realizó con la librería Unsloth, que permite entrenar modelos 2x más rápido que los métodos convencionales, y con la librería TRL de Hugging Face. El repositorio contiene únicamente los adaptadores LoRA (0.3 GB), no los pesos completos del modelo, por lo que para su uso es necesario cargarlo sobre el modelo base. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones significativas.
 
 La relevancia de este modelo radica en su especialización: aunque Qwen3-4B ya es capaz de seguir instrucciones generales, este ajuste fino busca mejorar su precisión en una tarea concreta de extracción y formateo de información estructurada, un caso de uso habitual en automatización de documentos y procesamiento de datos.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su especialización: aunque Qwen3-4B ya e
 
 El modelo base es Qwen3-4B-Instruct-2507, un transformer decoder-only con 4B parámetros, que incorpora varias innovaciones respecto a generaciones anteriores: atención con QKV separada y QK-Norm para estabilidad, RMSNorm y activación SwiGLU. La versión 2507 añade mejoras en el modo no-thinking (instruct), que es el modo por defecto para este ajuste, y mantiene la ventana de contexto de 256K tokens.
 
-El entrenamiento del adaptador LoRA se realizó con Unsloth sobre el modelo base cuantizado a 4 bits (bnb-4bit), lo que reduce drásticamente los requisitos de memoria durante el ajuste. Se utilizó la librería TRL de HuggingFace para el pipeline de entrenamiento. No se especifican en la información disponible el número de épocas (aunque el nombre del repositorio sugiere 1 época), el tamaño del dataset, ni la composición de los datos de entrenamiento. Tampoco se indica si se aplicaron técnicas de RLHF o DPO; el ajuste parece ser exclusivamente de supervisión (SFT).
+El entrenamiento del adaptador LoRA se realizó con Unsloth sobre el modelo base cuantizado a 4 bits (bnb-4bit), lo que reduce drásticamente los requisitos de memoria durante el ajuste. Se utilizó la librería TRL de Hugging Face para el pipeline de entrenamiento. No se especifican en la información disponible el número de épocas (aunque el nombre del repositorio sugiere 1 época), el tamaño del dataset, ni la composición de los datos de entrenamiento. Tampoco se indica si se aplicaron técnicas de RLHF o DPO; el ajuste parece ser exclusivamente de supervisión (SFT).
 
 ## Capacidades
 
@@ -80,7 +80,7 @@ La comparativa directa con otros ajustes LoRA para la misma tarea no está dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taskmaster141/qwen3_4b_simplyparse-lora-multiline-items-1ep-epcoh2
+- Modelo en Hugging Face: https://huggingface.co/taskmaster141/qwen3_4b_simplyparse-lora-multiline-items-1ep-epcoh2
 - Repositorio del modelo base: https://huggingface.co/unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3
 - Modelo relacionado (sin el sufijo de época): https://huggingface.co/taskmaster141/qwen3_4b_simplyparse

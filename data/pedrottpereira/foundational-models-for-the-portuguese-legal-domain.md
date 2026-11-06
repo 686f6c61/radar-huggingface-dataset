@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pedrottpereira/foundational-models-for-the-portuguese-legal-domain` es un repositorio alojado en HuggingFace por el usuario `pedrottpereira`. El identificador del repositorio sugiere que su contenido está orientado a modelos fundacionales para el dominio jurídico portugués, pero la model card publicada no incluye ninguna descripción, arquitectura, tamaño, datos de entrenamiento ni resultados de evaluación: únicamente contiene el bloque de metadatos con la licencia MIT. El repositorio no declara pipeline, idiomas soportados, ni etiquetas de tarea.
+`pedrottpereira/foundational-models-for-the-portuguese-legal-domain` es un repositorio alojado en Hugging Face por el usuario `pedrottpereira`. El identificador del repositorio sugiere que su contenido está orientado a modelos fundacionales para el dominio jurídico portugués, pero la model card publicada no incluye ninguna descripción, arquitectura, tamaño, datos de entrenamiento ni resultados de evaluación: únicamente contiene el bloque de metadatos con la licencia MIT. El repositorio no declara pipeline, idiomas soportados, ni etiquetas de tarea.
 
 A fecha de la información disponible, el repositorio registra 0 descargas y 0 «likes», y fue creado y actualizado el 27 de octubre de 2026, sin actualizaciones posteriores. No se ha documentado la presencia de pesos, tokenizador, ficheros de configuración ni scripts de uso, por lo que no es posible verificar que el modelo sea ejecutable tal y como está publicado.
 
@@ -90,6 +90,6 @@ No se dispone de información suficiente para identificar alternativas comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pedrottpereira/foundational-models-for-the-portuguese-legal-domain
+- Hugging Face: https://huggingface.co/pedrottpereira/foundational-models-for-the-portuguese-legal-domain
 
 No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código o demos.

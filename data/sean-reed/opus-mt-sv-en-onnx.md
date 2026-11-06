@@ -93,10 +93,10 @@ Las mediciones se realizaron en un AMD Ryzen 5 1600 de seis nucleos con 4 hilos 
 - Riesgo de alucinacion o traducciones incorrectas en frases largas, dominios especializados o texto con ruido; no se han publicado evaluaciones de calidad por dominio.
 - La longitud de contexto no se especifica en la informacion disponible, lo que limita la planificacion de cargas con frases largas.
 - La licencia Apache 2.0 permite uso comercial, pero la conversion no esta afiliada a la Universidad de Helsinki; se debe conservar el aviso de licencia.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, por lo que no cuenta con validacion de la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, por lo que no cuenta con validacion de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sean-reed/opus-mt-sv-en-onnx
+- Modelo en Hugging Face: https://huggingface.co/sean-reed/opus-mt-sv-en-onnx
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-sv-en
 - Proyecto OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT

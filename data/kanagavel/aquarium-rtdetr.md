@@ -2,7 +2,7 @@
 
 ## Resumen
 
-aquarium-rtdetr es un modelo de deteccion de objetos fruto del ajuste fino (fine-tuning) de RT-DETR-L, la variante grande del detector en tiempo real RT-DETR, publicado por el usuario Kanagavel en HuggingFace. El modelo se ha entrenado sobre el dataset *Aquarium Combined* de Roboflow (licencia CC BY 4.0) para detectar siete clases de fauna acuatica y marina: pez, medusa, pinguino, frailecillo, tiburon, estrella de mar y raya.
+aquarium-rtdetr es un modelo de deteccion de objetos fruto del ajuste fino (fine-tuning) de RT-DETR-L, la variante grande del detector en tiempo real RT-DETR, publicado por el usuario Kanagavel en Hugging Face. El modelo se ha entrenado sobre el dataset *Aquarium Combined* de Roboflow (licencia CC BY 4.0) para detectar siete clases de fauna acuatica y marina: pez, medusa, pinguino, frailecillo, tiburon, estrella de mar y raya.
 
 El problema que resuelve es concreto: el censado automatico y el conteo de animales en imagenes o fotogramas de acuarios, tanques y entornos de exhibicion. Frente a detectores genericos, un modelo ajustado a estas siete clases reduce falsos positivos en escenas con agua, reflejos, turbidez y solapamiento de individuos, que son habituales en este dominio. Se distribuye como checkpoint de PyTorch para la libreria Ultralytics (version 8.3.40), lo que permite cargarlo y ejecutar inferencia con muy pocas lineas de codigo.
 
@@ -108,7 +108,7 @@ El punto diferencial de este modelo no es el rendimiento bruto, sino la especial
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kanagavel/aquarium-rtdetr
+- Modelo en Hugging Face: https://huggingface.co/Kanagavel/aquarium-rtdetr
 - Repositorio de GitHub (codigo, servicio FastAPI, capa de razonamiento, memo y cuaderno de entrenamiento): https://github.com/KanagavelAK/aquarium-rtdetr
 - Dataset de origen citado por el autor: Roboflow *Aquarium Combined* (CC BY 4.0); no se proporciona URL en la informacion disponible.
 - No se han encontrado enlaces adicionales relevantes en la busqueda web realizada.

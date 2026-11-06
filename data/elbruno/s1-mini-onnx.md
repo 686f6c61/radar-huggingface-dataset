@@ -80,7 +80,7 @@ La comparativa directa con otros normalizadores de transcripciones ASR no esta d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/elbruno/s1-mini-onnx
+- Repositorio Hugging Face: https://huggingface.co/elbruno/s1-mini-onnx
 - Modelo original: https://huggingface.co/superwhisper/s1-mini
 - Licencia del modelo original: https://huggingface.co/superwhisper/s1-mini/raw/main/LICENSE
 - Repositorio ElBruno.LocalLLMs: https://github.com/elbruno/ElBruno.LocalLLMs

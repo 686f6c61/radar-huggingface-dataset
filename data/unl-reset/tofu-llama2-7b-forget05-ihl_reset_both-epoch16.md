@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch16 | 6,74 B | no disponible | Checkpoint de unlearning (TOFU forget05) | llama2 | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_llama2-7b | ~6,74 B | no disponible | Modelo base ajustado sobre TOFU (sin desaprender) | llama2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | ~6,74 B | no disponible | Chat de proposito general | llama2 | HuggingFace |
-| Meta Llama 2 7B | ~6,74 B | no disponible | Modelo fundacional de proposito general | llama2 | HuggingFace / Meta |
+| unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch16 | 6,74 B | no disponible | Checkpoint de unlearning (TOFU forget05) | llama2 | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_llama2-7b | ~6,74 B | no disponible | Modelo base ajustado sobre TOFU (sin desaprender) | llama2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | ~6,74 B | no disponible | Chat de proposito general | llama2 | Hugging Face |
+| Meta Llama 2 7B | ~6,74 B | no disponible | Modelo fundacional de proposito general | llama2 | Hugging Face / Meta |
 
 La comparacion relevante es con `locuslab/tofu_ft_llama2-7b`, del que hereda todos los pesos salvo embeddings y LM head: la diferencia de rendimiento entre ambos mide el efecto del desaprendizaje. Frente a Llama 2 7B chat, el checkpoint no esta pensado para uso conversacional general.
 
@@ -87,7 +87,7 @@ La comparacion relevante es con `locuslab/tofu_ft_llama2-7b`, del que hereda tod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch16
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch16
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicializacion de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Benchmark TOFU (paper): https://arxiv.org/abs/2401.06121

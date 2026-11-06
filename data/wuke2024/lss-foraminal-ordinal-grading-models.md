@@ -65,6 +65,6 @@ No disponible. No se han identificado en la informacion proporcionada otros mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wuke2024/lss-foraminal-ordinal-grading-models
+- Repositorio Hugging Face: https://huggingface.co/wuke2024/lss-foraminal-ordinal-grading-models
 - Codigo fuente (GitHub): https://github.com/pengwuke/lss-foraminal-ordinal-grading
 - DOI historico (Protocolo V3): 10.57967/hf/9761

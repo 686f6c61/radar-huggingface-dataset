@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mike1w2/AI es un repositorio publicado en HuggingFace por el usuario Mike1w2 bajo licencia Apache-2.0. La model card asociada contiene unicamente el bloque de metadatos de licencia, sin ninguna descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no declara pipeline (tarea), idiomas soportados ni formato de pesos, y en el momento de la consulta registra 0 descargas y 0 "likes".
+Mike1w2/AI es un repositorio publicado en Hugging Face por el usuario Mike1w2 bajo licencia Apache-2.0. La model card asociada contiene unicamente el bloque de metadatos de licencia, sin ninguna descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no declara pipeline (tarea), idiomas soportados ni formato de pesos, y en el momento de la consulta registra 0 descargas y 0 "likes".
 
 No es posible determinar que tipo de artefacto contiene el repositorio: puede tratarse de un modelo de lenguaje, un modelo de vision, un adaptador, un conjunto de configuraciones o un repositorio vacio o de prueba. Tampoco hay informacion sobre parametros, longitud de contexto, tokenizador o proceso de entrenamiento. Las busquedas web realizadas no devuelven ningun resultado relacionado con este modelo.
 
@@ -55,7 +55,7 @@ No es posible recomendar casos de uso concretos sin antes verificar que el repos
 - Pruebas de integracion con un servidor de inferencia (vLLM o TGI): unicamente si existen pesos en safetensors y una configuracion de arquitectura reconocible por dichos servidores.
 - Pruebas con llama.cpp u Ollama: solo si el autor publica una version en formato GGUF, cosa que no se declara en los metadatos.
 - Experimentacion academica con modelos de autor unico: como ejemplo de publicacion sin documentacion, util para estudiar practicas de model cards incompletas.
-- Analisis de cadena de suministro de artefactos en HuggingFace: util para ilustrar la necesidad de auditar licencia, procedencia de datos y formato de serializacion antes de descargar pesos de autores sin historial.
+- Analisis de cadena de suministro de artefactos en Hugging Face: util para ilustrar la necesidad de auditar licencia, procedencia de datos y formato de serializacion antes de descargar pesos de autores sin historial.
 
 ## Benchmarks y rendimiento
 
@@ -94,7 +94,7 @@ No es posible establecer una comparativa: la categoria del modelo (lenguaje, vis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mike1w2/AI
+- Repositorio en Hugging Face: https://huggingface.co/Mike1w2/AI
 - Arbol de ficheros del repositorio: https://huggingface.co/Mike1w2/AI/tree/main
 - Perfil del autor: https://huggingface.co/Mike1w2
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo; las busquedas devuelven unicamente hilos de Stack Overflow sobre formateo de JSON en plantillas Django, JSON en celdas de Excel, uso de tablas en SQL Server y la diferencia entre JSON y objetos, sin relacion con el repositorio.

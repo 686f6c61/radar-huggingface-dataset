@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`flb-ello/classification-experiments` es un repositorio de HuggingFace publicado por el usuario flb-ello que contiene una implementación propia y compacta de CLIP en PyTorch orientada a tareas de clasificación. El autor lo describe explícitamente como un espacio de trabajo para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño, no como un modelo preentrenado listo para producción. El repositorio incluye el script `model.py`, un `config.json` con la arquitectura declarada, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es únicamente un checkpoint de inicialización.
+`flb-ello/classification-experiments` es un repositorio de Hugging Face publicado por el usuario flb-ello que contiene una implementación propia y compacta de CLIP en PyTorch orientada a tareas de clasificación. El autor lo describe explícitamente como un espacio de trabajo para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño, no como un modelo preentrenado listo para producción. El repositorio incluye el script `model.py`, un `config.json` con la arquitectura declarada, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es únicamente un checkpoint de inicialización.
 
 La arquitectura declarada es CLIP con escala "huge", atención de tipo *grouped query*, fusión *tucker*, activación `gelu tanh` y normalización `scalenorm`. La receta de entrenamiento por defecto usa el optimizador Novograd con un schedule exponencial. No se reclama ninguna puntuación de benchmark y el propio autor advierte de que el checkpoint no ha sido entrenado ni auditado.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| flb-ello/classification-experiments | 16.576 (segun safetensors) | no disponible | No (checkpoint de inicializacion) | MIT | Repositorio HuggingFace, 0 descargas |
-| Familia OpenAI CLIP | Del orden de cientos de millones (segun variante) | 77 tokens (segun variante) | Si, preentrenado a gran escala | MIT | Publica en repositorios de OpenAI y HuggingFace |
-| Familia SigLIP | Del orden de cientos de millones (segun variante) | no disponible en la informacion proporcionada | Si, preentrenado a gran escala | Apache 2.0 (segun variante) | Publica en HuggingFace |
+| flb-ello/classification-experiments | 16.576 (segun safetensors) | no disponible | No (checkpoint de inicializacion) | MIT | Repositorio Hugging Face, 0 descargas |
+| Familia OpenAI CLIP | Del orden de cientos de millones (segun variante) | 77 tokens (segun variante) | Si, preentrenado a gran escala | MIT | Publica en repositorios de OpenAI y Hugging Face |
+| Familia SigLIP | Del orden de cientos de millones (segun variante) | no disponible en la informacion proporcionada | Si, preentrenado a gran escala | Apache 2.0 (segun variante) | Publica en Hugging Face |
 
 Los valores de las dos familias de referencia proceden de conocimiento general sobre esos proyectos y no de la informacion proporcionada en esta busqueda; deben verificarse en sus repositorios oficiales antes de citarlos. La diferencia funcional determinante no es el tamaño, sino que este repositorio no contiene un modelo entrenado, por lo que no es comparable en rendimiento con ninguna alternativa preentrenada.
 
@@ -82,13 +82,13 @@ Los valores de las dos familias de referencia proceden de conocimiento general s
 - Idiomas soportados: no disponibles. No hay tokenizador ni vocabulario documentados en la información proporcionada.
 - Longitud de contexto: no disponible. No se especifica en `config.json` según los datos publicados.
 - Discrepancia de escala: la model card declara escala "huge", pero el fichero safetensors contiene 16.576 parámetros. Conviene verificar `config.json` antes de asumir cualquier tamaño.
-- Integración limitada: al ser una implementación personalizada, las APIs de carga automática de HuggingFace requieren un adaptador explícito.
+- Integración limitada: al ser una implementación personalizada, las APIs de carga automática de Hugging Face requieren un adaptador explícito.
 - Licencia MIT: permite uso comercial y modificación, pero la model card recuerda revisar por separado los términos de los datos de origen cuando se use con *datasets* externos.
 - Sin mantenimiento: creado y actualizado el 13 de septiembre de 2026, con 0 descargas y 0 *likes*; no hay evidencia de actividad posterior ni de soporte.
 - Para producción: no recomendado bajo ninguna circunstancia en su estado actual. Cualquier resultado obtenido con un checkpoint futuro deberá documentarse de forma separada a los valores por defecto aquí incluidos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/flb-ello/classification-experiments
+- Repositorio en Hugging Face: https://huggingface.co/flb-ello/classification-experiments
 - Busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos corresponden a consultas no relacionadas (matemáticas y teoría de la complejidad) y no aportan información sobre este repositorio.
 - Paper, blog, repositorio de código o demo: no disponibles.

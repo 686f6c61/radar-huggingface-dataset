@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dino-matching-rc1-2024` es un prototipo de investigación desarrollado por el usuario sarahmue1986 en HuggingFace. Está diseñado como un punto de partida experimental para tareas de matching, con una arquitectura denominada "Dino" que implementa atención lineal, fusión bilineal, activación ReLU y normalización RMSNorm. El repositorio incluye un checkpoint de inicialización en formato safetensors, un script de finetuning (`finetune.py`), un archivo de configuración de arquitectura (`config.json`) y una receta de entrenamiento por defecto (`training_args.json`).
+El modelo `dino-matching-rc1-2024` es un prototipo de investigación desarrollado por el usuario sarahmue1986 en Hugging Face. Está diseñado como un punto de partida experimental para tareas de matching, con una arquitectura denominada "Dino" que implementa atención lineal, fusión bilineal, activación ReLU y normalización RMSNorm. El repositorio incluye un checkpoint de inicialización en formato safetensors, un script de finetuning (`finetune.py`), un archivo de configuración de arquitectura (`config.json`) y una receta de entrenamiento por defecto (`training_args.json`).
 
 Es importante destacar que el checkpoint no ha sido entrenado: el autor lo presenta explícitamente como una inicialización válida para pruebas de humo (smoke tests), no como un modelo con rendimiento verificado. El tamaño del modelo es de 33.088 parámetros, una cifra muy reducida que lo aleja de los modelos de gran escala habituales. La relevancia actual del repositorio radica en su utilidad como base para investigar arquitecturas de matching con atención lineal y para validar pipelines de entrenamiento antes de lanzar experimentos completos.
 
@@ -40,7 +40,7 @@ Los siguientes casos de uso son previstos para investigación y desarrollo, y de
 
 - Pruebas de humo en pipelines de entrenamiento: el checkpoint de inicialización permite comprobar que el script de finetuning carga los pesos y ejecuta un paso de entrenamiento sin errores. Su tamaño reducido (33.088 parámetros) hace que estas pruebas sean rápidas y de bajo coste.
 - Investigación en arquitecturas de atención lineal: el modelo implementa atención lineal, fusión bilineal y RMSNorm, lo que permite estudiar el comportamiento de estas técnicas en tareas de matching sin necesidad de entrenar un modelo de gran escala.
-- Desarrollo de adaptadores para frameworks propios: al ser una implementación personalizada, el modelo puede utilizarse para probar la integración de un adaptador que permita cargarlo en APIs genéricas de HuggingFace, validando la compatibilidad del código.
+- Desarrollo de adaptadores para frameworks propios: al ser una implementación personalizada, el modelo puede utilizarse para probar la integración de un adaptador que permita cargarlo en APIs genéricas de Hugging Face, validando la compatibilidad del código.
 - Ajuste de hiperparámetros de la receta de entrenamiento: la configuración por defecto (adam con schedule exponencial) sirve como punto de partida para experimentos de tuning, permitiendo comparar variaciones con el mismo presupuesto de datos y semillas aleatorias.
 - Validación de configuraciones de arquitectura: el archivo `config.json` permite modificar parámetros como la atención o la normalización y probar su efecto en tareas de matching, facilitando la investigación de variantes de la arquitectura.
 - Reproducibilidad de resultados experimentales: siguiendo las guías de evaluación del autor (conjunto de validación pareado, tres semillas, baseline de capacidad emparejada), el modelo puede servir como base para documentar resultados futuros con logs de entrenamiento y versiones de entorno.
@@ -67,11 +67,11 @@ No disponible. No se han identificado modelos comparables en la información pro
 - La implementación debe tratarse como un punto de partida experimental, no como un modelo listo para producción.
 - No se han publicado benchmarks ni resultados de rendimiento verificados.
 - No se ha documentado soporte de idiomas.
-- Las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito, lo que limita la interoperabilidad con herramientas estándar.
+- Las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito, lo que limita la interoperabilidad con herramientas estándar.
 - El uso con datasets externos requiere revisar los términos de la fuente de datos, según la licencia MIT.
 - En tareas de matching, un modelo sin entrenar puede producir falsos positivos o resultados no fiables, por lo que no debe utilizarse en aplicaciones críticas sin una validación exhaustiva.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sarahmue1986/dino-matching-rc1-2024
+- Hugging Face: https://huggingface.co/sarahmue1986/dino-matching-rc1-2024
 - Perfil del autor: https://huggingface.co/sarahmue1986

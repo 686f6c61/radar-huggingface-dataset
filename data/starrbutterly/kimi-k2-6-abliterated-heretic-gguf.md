@@ -108,14 +108,14 @@ Como referencia de familia arquitectónica, el propio autor señala que la pila 
 - Riesgo de degradación por cuantización: Q2_K y Q4_K_M degradan la fidelidad respecto a BF16 y Q8_0, pero no se aportan mediciones de esa degradación para este modelo concreto.
 - Idiomas no declarados: se desconoce qué lenguas soporta oficialmente, incluyendo el castellano, y con qué calidad.
 - Longitud de contexto no especificada: no se declara el contexto máximo del modelo. El valor `32768` del ejemplo no debe asumirse como límite ni como valor óptimo.
-- Licencia con ambigüedad: los metadatos de HuggingFace indican `modified-mit`, mientras que el campo de licencia del repositorio figura como `other` con `license_name: modified-mit`, y la model card afirma que se hereda la licencia del base Kimi-K2.6. Conviene verificar las condiciones exactas de uso comercial y de atribución antes de integrarlo en un producto.
+- Licencia con ambigüedad: los metadatos de Hugging Face indican `modified-mit`, mientras que el campo de licencia del repositorio figura como `other` con `license_name: modified-mit`, y la model card afirma que se hereda la licencia del base Kimi-K2.6. Conviene verificar las condiciones exactas de uso comercial y de atribución antes de integrarlo en un producto.
 - Alucinaciones: no hay datos específicos sobre la tasa de alucinación de este release. La eliminación de rechazos no implica mayor veracidad; de hecho, la intervención puede alterar el comportamiento del modelo en dominios donde el rechazo actuaba como señal de incertidumbre.
 - Sesgos: no se han publicado evaluaciones de sesgo para este release. La intervención sobre los pesos puede modificar de forma no medida la distribución de respuestas en temas sensibles.
 - Trazabilidad: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no se documenta ningún proceso de validación independiente más allá de la propia model card.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Starrbutterly/Kimi-K2.6-Abliterated-Heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Starrbutterly/Kimi-K2.6-Abliterated-Heretic-GGUF
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K2.6
 - Pipeline de eliminación de rechazo Heretic: https://github.com/andyrdt/heretic
 - Runtime y cuantización llama.cpp: https://github.com/ggml-org/llama.cpp

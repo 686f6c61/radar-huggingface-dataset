@@ -63,7 +63,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/tjarlfl/dama-aibrain-Q4_K_M-GGUF)
-- [Modelo base en HuggingFace](https://huggingface.co/tjarlfl/dama-aibrain)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/tjarlfl/dama-aibrain-Q4_K_M-GGUF)
+- [Modelo base en Hugging Face](https://huggingface.co/tjarlfl/dama-aibrain)
 - [Repositorio llama.cpp](https://github.com/ggerganov/llama.cpp)
 - [Espacio GGUF-my-repo](https://huggingface.co/spaces/ggml-org/gguf-my-repo)

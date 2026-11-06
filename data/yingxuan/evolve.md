@@ -68,6 +68,6 @@ No se dispone de información sobre modelos comparables directamente, ya que est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Yingxuan/evolve
+- Repositorio Hugging Face: https://huggingface.co/Yingxuan/evolve
 - Repositorio GitHub con código y datos: https://github.com/zoe-yyx/evolve
 - Página personal del autor: https://zoe-yyx.github.io/

@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-3B-Instruct-synthetic-agriculture-lora | Base 3B + adaptador LoRA | Heredada del base | Adaptador PEFT | No disponible | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.2-3B-Instruct | 3B | Heredada (base) | Modelo completo | Llama 3.2 Community License | HuggingFace, ampliamente usado |
+| Llama-3.2-3B-Instruct-synthetic-agriculture-lora | Base 3B + adaptador LoRA | Heredada del base | Adaptador PEFT | No disponible | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.2-3B-Instruct | 3B | Heredada (base) | Modelo completo | Llama 3.2 Community License | Hugging Face, ampliamente usado |
 | Otros adaptadores LoRA agricolas | No disponible | No disponible | Adaptador PEFT | Variable | No disponible |
 
 No se dispone de datos de rendimiento del adaptador que permitan una comparacion cuantitativa con alternativas de la misma categoria. La comparativa se limita a caracteristicas estructurales.
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento del adaptador que permitan una comparacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DebasishDhal99/Llama-3.2-3B-Instruct-synthetic-agriculture-lora
+- Modelo en Hugging Face: https://huggingface.co/DebasishDhal99/Llama-3.2-3B-Instruct-synthetic-agriculture-lora
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Dataset de ajuste fino: https://huggingface.co/datasets/DebasishDhal99/agriculture-synthetic-finetuning-dataset
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.

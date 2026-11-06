@@ -38,7 +38,7 @@ En cuanto al entrenamiento, la receta por defecto usa el optimizador Adam con un
 - Proporciona una configuración de arquitectura reproducible (`config.json`) y una receta de experimento por defecto (`training_args.json`).
 - Sirve de base para experimentos de aprendizaje contrastivo, aunque el repositorio no incluye ninguna función de pérdida contrastiva evaluada ni resultados asociados.
 - No hay soporte declarado de *tool calling*, uso de agentes, razonamiento multi-paso, visión, audio ni modo *thinking*.
-- No hay información sobre capacidades multilingües ni sobre tareas de generación de texto: el pipeline no está declarado en HuggingFace.
+- No hay información sobre capacidades multilingües ni sobre tareas de generación de texto: el pipeline no está declarado en Hugging Face.
 - Al ser una implementación propia, las APIs genéricas de carga automática requieren un adaptador explícito antes de poder usarse.
 
 ## Casos de uso
@@ -79,10 +79,10 @@ No disponible. No hay modelos comparables identificables a partir de la informac
 - Limitaciones de contexto e idioma: no disponibles; no se declara ventana de contexto ni cobertura lingüística.
 - Discrepancia de nomenclatura: la configuración se etiqueta como "xlarge", pero el checkpoint real contiene 49.600 parámetros. Conviene no interpretar la etiqueta como indicador de tamaño o capacidad.
 - Licencia BSD-3-Clause: permite uso comercial y modificación con atribución y conservación del aviso de copyright, y se ofrece sin garantía. Los términos de los datos de origen deben revisarse por separado si el repositorio se combina con datasets externos.
-- Implementación propia: las APIs genéricas de carga automática requieren un adaptador explícito, lo que añade trabajo de integración frente a un modelo estándar de HuggingFace.
+- Implementación propia: las APIs genéricas de carga automática requieren un adaptador explícito, lo que añade trabajo de integración frente a un modelo estándar de Hugging Face.
 - Si en el futuro se publica un checkpoint entrenado, sus resultados deben documentarse de forma separada a los valores por defecto que se distribuyen aquí.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Brittanybrown/perceiver-contrastive-proto
+- Modelo en Hugging Face: https://huggingface.co/Brittanybrown/perceiver-contrastive-proto
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a portales institucionales del Ministerio de Defensa de Grecia y no guardan relación con este repositorio. No hay papers, blogs, repositorios adicionales ni demos disponibles en la información proporcionada.

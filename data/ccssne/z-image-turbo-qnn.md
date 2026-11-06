@@ -102,8 +102,8 @@ No se dispone de datos de rendimiento comparables entre esta conversion y el mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CCSSNE/z-image-turbo-qnn
-- Modelo base en HuggingFace: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
+- Modelo en Hugging Face: https://huggingface.co/CCSSNE/z-image-turbo-qnn
+- Modelo base en Hugging Face: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Repositorio de Local Dream: https://github.com/xororz/local-dream
 - Rama de construccion del APK: `claude/zimage-q2-runner-ftk3lo` (del repositorio de Local Dream)
 - Ficheros de estadisticas de conversion: `partial/n32-attn5/stats/*.tsv` dentro del repositorio del modelo

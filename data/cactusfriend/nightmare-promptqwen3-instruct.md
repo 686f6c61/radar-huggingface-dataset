@@ -50,7 +50,7 @@ El modelo base Qwen3-1.7B, según su documentación pública, es un transformer 
 - Generación de prompts en InvokeAI: uso previsto por el autor. El adaptador se cargaría sobre Qwen3-1.7B en un nodo de InvokeAI (tipo nightmare-promptgen) para transformar una idea en un prompt de difusión con pesos y sintaxis Compel. Es adecuado por su tamaño reducido, que permite ejecutarlo junto al pipeline de difusión en la misma GPU.
 - Prototipado de pipelines texto-a-imagen: generación masiva de variaciones de prompt (estilos, negativos, refuerzos de término) para comparar resultados en Stable Diffusion sin salir de un entorno local.
 - Enriquecimiento de datasets de imagen: creación de descripciones y variaciones de caption para aumentar un dataset antes de entrenar un LoRA de difusión; el coste de inferencia de un 1,7B es bajo frente a modelos mayores.
-- Experimentación con PEFT: caso de estudio real de un adaptador LoRA SFT publicado en HuggingFace, útil para reproducir el flujo `PeftModel.from_pretrained` sobre Qwen3-1.7B en docencia o investigación de fine-tuning de bajo coste.
+- Experimentación con PEFT: caso de estudio real de un adaptador LoRA SFT publicado en Hugging Face, útil para reproducir el flujo `PeftModel.from_pretrained` sobre Qwen3-1.7B en docencia o investigación de fine-tuning de bajo coste.
 - Asistente de texto local en hardware modesto: con cuantización de 4 bits el conjunto base+adaptador cabe en GPUs de 8 GB, lo que permite tareas de generación corta totalmente offline; requiere validar la calidad porque no hay evaluación.
 - Banchmarking interno de instrucciones: servir como línea base "especializada vs. generalista" frente a Qwen3-1.7B sin adaptador en tareas de redacción de prompts; útil para medir si el SFT aporta ganancia real.
 - Automatización de pruebas de regresión en herramientas de prompting: alimentar un arnés de tests que compare prompts generados por distintas versiones del adaptador y detecte cambios de formato (por ejemplo, corchetes o pesos alterados).
@@ -94,7 +94,7 @@ Frente a Qwen3-1.7B, el adaptador no ofrece datos que demuestren mejora en ningu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cactusfriend/nightmare-promptqwen3-instruct
+- Modelo en Hugging Face: https://huggingface.co/cactusfriend/nightmare-promptqwen3-instruct
 - Modelo previo del autor: https://huggingface.co/cactusfriend/nightmare-promptqwen3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Ficha en Free2AITools: https://free2aitools.com/model/cactusfriend/nightmare-promptqwen3

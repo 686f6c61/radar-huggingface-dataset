@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`evgenyp-etrov89/thesis-retrieval` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de un transformer de tipo "tiny" orientado a tareas de recuperación (retrieval). No se trata de un modelo entrenado y listo para producción, sino de un esqueleto de código (`model.py`) con una configuración de arquitectura generada (`config.json`) y un checkpoint de inicialización válido únicamente para pruebas de humo. El autor lo presenta explícitamente como un punto de partida para inspeccionar cambios arquitectónicos antes de lanzar un entrenamiento completo.
+`evgenyp-etrov89/thesis-retrieval` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de un transformer de tipo "tiny" orientado a tareas de recuperación (retrieval). No se trata de un modelo entrenado y listo para producción, sino de un esqueleto de código (`model.py`) con una configuración de arquitectura generada (`config.json`) y un checkpoint de inicialización válido únicamente para pruebas de humo. El autor lo presenta explícitamente como un punto de partida para inspeccionar cambios arquitectónicos antes de lanzar un entrenamiento completo.
 
 La escala declarada es "xlarge" dentro de la nomenclatura interna del autor, pero el dato real de parámetros en safetensors es de 16.576 parámetros totales, lo que lo sitúa en un orden de magnitud muy inferior a cualquier modelo de retrieval moderno (que suelen oscilar entre cientos de millones y varios miles de millones de parámetros). El repositorio no incluye tokenizador, pipeline declarado ni resultados de benchmarks.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| evgenyp-etrov89/thesis-retrieval | 16.576 | no disponible | Checkpoint de inicialización, sin entrenar | Apache 2.0 | HuggingFace |
-| CLIP (ViT-B/32, OpenAI) | ~151 M | 77 tokens de texto | Entrenado y evaluado | MIT (código) / términos propios | HuggingFace, OpenAI |
-| SigLIP (base) | ~203 M | 64 tokens de texto | Entrenado y evaluado | Apache 2.0 | HuggingFace |
-| BGE-small-en | ~33 M | 512 tokens | Entrenado y evaluado | MIT | HuggingFace |
+| evgenyp-etrov89/thesis-retrieval | 16.576 | no disponible | Checkpoint de inicialización, sin entrenar | Apache 2.0 | Hugging Face |
+| CLIP (ViT-B/32, OpenAI) | ~151 M | 77 tokens de texto | Entrenado y evaluado | MIT (código) / términos propios | Hugging Face, OpenAI |
+| SigLIP (base) | ~203 M | 64 tokens de texto | Entrenado y evaluado | Apache 2.0 | Hugging Face |
+| BGE-small-en | ~33 M | 512 tokens | Entrenado y evaluado | MIT | Hugging Face |
 
 La comparación es únicamente orientativa: los tres modelos de referencia son sistemas de retrieval entrenados y evaluados, mientras que `thesis-retrieval` es un esqueleto de 16.576 parámetros sin entrenamiento. No existe una comparación de rendimiento posible con los datos disponibles.
 
@@ -80,5 +80,5 @@ La comparación es únicamente orientativa: los tres modelos de referencia son s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/evgenyp-etrov89/thesis-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/evgenyp-etrov89/thesis-retrieval
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "pengxiang/scene-opd-vla-teachers-v2",
+  "slug": "pengxiang-scene-opd-vla-teachers-v2",
+  "author": "pengxiang",
+  "url": "https://huggingface.co/pengxiang/scene-opd-vla-teachers-v2",
+  "created_at": "2026-11-05T05:40:55.000Z",
+  "updated_at": "2026-11-05T07:11:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "autonomous-driving",
+    "navsim",
+    "vla",
+    "reinforcement-learning",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20536744301,
+  "storage_human": "20.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pengxiang/scene-opd-vla-teachers-v2 · Hugging Face",
+      "url": "https://huggingface.co/pengxiang/scene-opd-vla-teachers-v2",
+      "snippet": "Six scene-expert driving policies used as teachers for on-policy distillation (OPD) of a single student VLA. All six are full-parameter Dr.GRPO fine-tunes of the same general RL policy (Qwen3.5-0.8B VLM, 12 camera frames + ego state in, 8 discrete motion tokens out), each trained only on one class ..."
+    },
+    {
+      "title": "‪Pengxiang LI‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=rUp_4RgAAAAJ&hl=en",
+      "snippet": "‪The Hong Kong Polytechnic University‬ - ‪‪Cited by 955‬‬ - ‪LLMs‬ - ‪Diffusion‬ - ‪VLA‬"
+    },
+    {
+      "title": "www.alphaxiv.org",
+      "url": "https://www.alphaxiv.org/abs/2603.26666.md",
+      "snippet": "APIs, or easily trained single-task policies. VLA-OPD capitalizes on these existing resources by providing a highly sample-efficient distillation pipeline. This enables the seamless transfer of robust behaviors from diverse teachers into new, upgraded, or unified generalist student backbones. Consequently, our framework"
+    }
+  ]
+}

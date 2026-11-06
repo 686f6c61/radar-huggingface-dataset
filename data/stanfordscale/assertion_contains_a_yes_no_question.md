@@ -27,7 +27,7 @@ Su relevancia es acotada pero práctica: automatiza el codificado de movimientos
 | Librería | setfit |
 | Tamaño del repositorio | 0,4 GB |
 | Fecha de publicación | 12 de octubre de 2026 |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -80,9 +80,9 @@ No se dispone de datos publicados de rendimiento de los modelos comparables en l
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| assertion_contains_a_yes_no_question | 109.486.464 | no disponible | Clasificación binaria de una aserción | no disponible | HuggingFace (setfit) |
-| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base) | no disponible en la información proporcionada | no disponible | Embeddings de frases | no disponible en la información proporcionada | HuggingFace |
-| Otras aserciones del conjunto `td` de StanfordSCALE (EduBehaviors) | no disponible | no disponible | Clasificación binaria de otras aserciones | no disponible | HuggingFace, presumiblemente en el mismo repositorio de autor, sin datos confirmados |
+| assertion_contains_a_yes_no_question | 109.486.464 | no disponible | Clasificación binaria de una aserción | no disponible | Hugging Face (setfit) |
+| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base) | no disponible en la información proporcionada | no disponible | Embeddings de frases | no disponible en la información proporcionada | Hugging Face |
+| Otras aserciones del conjunto `td` de StanfordSCALE (EduBehaviors) | no disponible | no disponible | Clasificación binaria de otras aserciones | no disponible | Hugging Face, presumiblemente en el mismo repositorio de autor, sin datos confirmados |
 | Clasificadores de texto basados en BERT/RoBERTa afinados para discurso educativo | no disponible | no disponible | Clasificación de texto | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No se dispone de datos publicados de rendimiento de los modelos comparables en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_contains_a_yes_no_question
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_contains_a_yes_no_question
 - Dataset de entrenamiento: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio GitHub): https://github.com/SumnerLab/TalkMoves

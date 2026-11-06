@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Decision-1.0-Kai es un modelo de clasificacion de texto especializado en toma de decisiones, publicado por el colectivo llm-semantic-router en HuggingFace. Se trata de un ajuste fino (fine-tune) del encoder multilingue Vela-1.0-Encoder-307M, orientado a tareas de decision-making y regresion ordinal, es decir, no solo asigna una clase, sino que puede ordenar o puntuar alternativas según un criterio de calidad o prioridad. Su pipeline declarado es `text-classification` y sus pesos se distribuyen en formato safetensors.
+Decision-1.0-Kai es un modelo de clasificacion de texto especializado en toma de decisiones, publicado por el colectivo llm-semantic-router en Hugging Face. Se trata de un ajuste fino (fine-tune) del encoder multilingue Vela-1.0-Encoder-307M, orientado a tareas de decision-making y regresion ordinal, es decir, no solo asigna una clase, sino que puede ordenar o puntuar alternativas según un criterio de calidad o prioridad. Su pipeline declarado es `text-classification` y sus pesos se distribuyen en formato safetensors.
 
 El modelo resuelve un problema muy concreto dentro de las arquitecturas de agentes y sistemas multi-modelo: decidir qué hacer con una peticion antes de gastar computo en un LLM generativo. Esto incluye enrutar una consulta al modelo o herramienta adecuada, clasificar la intencion del usuario, asignar una prioridad ordinal a un ticket o determinar si una tarea requiere escalado. Al ser un encoder de ~307M de parametros (tamano indicado por el nombre del modelo base), su coste de inferencia es orders of magnitude menor que el de un LLM generativo, lo que lo hace atractivo como componente de baja latencia.
 
@@ -80,7 +80,7 @@ La diferencia funcional principal es que las alternativas son encoders de propos
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar el modelo, lo que complica la automatizacion de pipelines de CI/CD.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar el modelo, lo que complica la automatizacion de pipelines de CI/CD.
 - Licencia `decision-with-upstream-terms` con etiqueta `other`: el uso comercial depende de los terminos del modelo base Vela-1.0-Encoder-307M, que deben revisarse antes de cualquier despliegue en produccion.
 - Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de precision, recall ni calibracion de las puntuaciones ordinales.
 - Riesgo de mala clasificacion: al ser un clasificador, un error se propaga silenciosamente al resto del pipeline (por ejemplo, enrutar una consulta critica al modelo equivocado).
@@ -92,8 +92,8 @@ La diferencia funcional principal es que las alternativas son encoders de propos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llm-semantic-router/Decision-1.0-Kai
+- Modelo en Hugging Face: https://huggingface.co/llm-semantic-router/Decision-1.0-Kai
 - Modelo base: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M
-- Organizacion en HuggingFace: https://huggingface.co/llm-semantic-router
+- Organizacion en Hugging Face: https://huggingface.co/llm-semantic-router
 
 Nota: la busqueda web realizada devolvio unicamente articulos genericos sobre modelos de lenguaje (guias introductorias y clasificaciones de LLM de 2026), sin informacion especifica sobre Decision-1.0-Kai ni sobre su modelo base. No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo en la informacion proporcionada.

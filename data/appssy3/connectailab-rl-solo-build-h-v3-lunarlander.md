@@ -81,17 +81,17 @@ No se dispone de datos verificados de modelos comparables de otros autores en la
 - Sesgos conocidos: no aplica en el sentido habitual de sesgos sociales o lingüísticos, pero la política está sobreajustada a la dinámica exacta de `LunarLander-v3`; no se transferirá a otros entornos sin reentrenamiento.
 - Riesgo de alucinación: no aplica; el modelo no genera texto. Sí existe riesgo de sobreestimación residual de Q, mitigado pero no eliminado por Double DQN.
 - Limitaciones de contexto o idioma: no procesa lenguaje; la entrada está restringida a un vector de 8 dimensiones con la semántica concreta del entorno.
-- Restricciones de licencia: la licencia no está declarada en la model card ni en los metadatos de HuggingFace, por lo que no se puede asumir uso comercial libre; hay que contactar con el autor antes de cualquier uso en producción.
+- Restricciones de licencia: la licencia no está declarada en la model card ni en los metadatos de Hugging Face, por lo que no se puede asumir uso comercial libre; hay que contactar con el autor antes de cualquier uso en producción.
 - Caveat de producción: las métricas están declaradas por el autor con `verified: false`; conviene reproducirlas con las seeds indicadas antes de tomar decisiones basadas en ellas.
 - El entrenamiento se detuvo en el paso 382.500 de 400.000; no se documenta una evaluación posterior al snapshot ni análisis de varianza entre ejecuciones completas.
-- El repositorio ocupa 0,0 GB según HuggingFace, lo que sugiere que el checkpoint puede ser muy pequeño o que el tamaño no se ha indexado correctamente; verificar la descarga antes de integrarlo en un pipeline.
+- El repositorio ocupa 0,0 GB según Hugging Face, lo que sugiere que el checkpoint puede ser muy pequeño o que el tamaño no se ha indexado correctamente; verificar la descarga antes de integrarlo en un pipeline.
 - La model card está redactada en coreano y contiene fragmentos de código con identificadores en ese idioma; hay que adaptarlos si se reutiliza el snippet.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/appssy3/connectailab-rl-solo-build-h-v3-lunarlander
+- Modelo en Hugging Face: https://huggingface.co/appssy3/connectailab-rl-solo-build-h-v3-lunarlander
 - Entorno Gymnasium `LunarLander-v3`: no disponible en la información proporcionada
 - Paper de DQN original: no disponible en la información proporcionada
 - Paper de Double DQN: no disponible en la información proporcionada
 - Repositorio del autor o del curso CONNECT AI LAB: no disponible en la información proporcionada
-- Vídeo de demostración (`replay.mp4`): referenciado en la model card dentro del propio repositorio de HuggingFace
+- Vídeo de demostración (`replay.mp4`): referenciado en la model card dentro del propio repositorio de Hugging Face

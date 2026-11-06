@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parametros | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `rook-chess-v1` | ~3,0 M | Red relacional ONNX + MCTS | no disponible | HuggingFace (paquete de navegador) |
-| `mini-chessformer-v1` | ~7,5 M (estimado, 40 % mayor que rook) | Transformer para ajedrez | no disponible | HuggingFace (paquete de navegador) |
+| `rook-chess-v1` | ~3,0 M | Red relacional ONNX + MCTS | no disponible | Hugging Face (paquete de navegador) |
+| `mini-chessformer-v1` | ~7,5 M (estimado, 40 % mayor que rook) | Transformer para ajedrez | no disponible | Hugging Face (paquete de navegador) |
 
 No se dispone de información suficiente para comparar con otros motores de ajedrez neuronales como AlphaZero o Leela Chess Zero, ya que no se han publicado datos de rendimiento ni detalles de entrenamiento de `rook-chess-v1`. La comparación con `mini-chessformer-v1` se basa en el tamaño estimado y en que ambos pertenecen al mismo ecosistema de paquetes de navegador del autor.
 
@@ -76,7 +76,7 @@ No se dispone de información suficiente para comparar con otros motores de ajed
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/burrowdweller/rook-chess-v1
-- Perfil del autor en HuggingFace: https://huggingface.co/burrowdweller
+- Hugging Face del modelo: https://huggingface.co/burrowdweller/rook-chess-v1
+- Perfil del autor en Hugging Face: https://huggingface.co/burrowdweller
 - Modelo relacionado `mini-chessformer-v1`: https://huggingface.co/burrowdweller/mini-chessformer-v1
 - Repositorio fuente mencionado: https://github.com/junisbuilding/chessdb

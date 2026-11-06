@@ -70,6 +70,6 @@ No se dispone de información suficiente para comparar este checkpoint con otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfinit_adamwppt_1B_s0_2026-09-06_18-07-14_602889-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfinit_adamwppt_1B_s0_2026-09-06_18-07-14_602889-pt
 - W&B run: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/1qpxju0f
 - Repo nanochat: https://github.com/karpathy/nanochat

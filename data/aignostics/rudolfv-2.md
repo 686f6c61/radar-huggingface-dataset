@@ -4,7 +4,7 @@
 
 RudolfV-2 es un modelo fundacional de visión por computador desarrollado por Aignostics, una empresa especializada en patología digital e inteligencia artificial. Está diseñado específicamente para histopatología: actúa como extractor de características a nivel de tile (parche) sobre imágenes de diapositivas completas (whole slide images, WSI). El modelo se basa en un backbone ViT-g/8 (vision transformer de tamaño gigante con patch de 8×8 píxeles) y fue preentrenado de forma autosupervisada sobre 300.000 diapositivas completas, adaptando la metodología de DINOv2 con distribuciones específicas de tejido y aumentos de tinción.
 
-La relevancia de RudolfV-2 radica en que proporciona una representación densa y transferible de los tejidos, lo que permite entrenar clasificadores ligeros para tareas downstream como clasificación de tumores, gradación histológica, predicción de biomarcadores o detección de metástasis, sin necesidad de grandes volúmenes de datos etiquetados. El modelo tiene aproximadamente 1.130 millones de parámetros y se distribuye en formato safetensors, con acceso restringido (gated) en HuggingFace. A diferencia de los modelos de lenguaje, no procesa texto; su entrada son imágenes de parches histológicos.
+La relevancia de RudolfV-2 radica en que proporciona una representación densa y transferible de los tejidos, lo que permite entrenar clasificadores ligeros para tareas downstream como clasificación de tumores, gradación histológica, predicción de biomarcadores o detección de metástasis, sin necesidad de grandes volúmenes de datos etiquetados. El modelo tiene aproximadamente 1.130 millones de parámetros y se distribuye en formato safetensors, con acceso restringido (gated) en Hugging Face. A diferencia de los modelos de lenguaje, no procesa texto; su entrada son imágenes de parches histológicos.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks con metricas concretas en la inform
 - VRAM estimada: en fp32, ~4,5 GB; en fp16, ~2,3 GB. Con cuantizacion a 8 bits (si estuviera disponible) se reduciria a ~1,2 GB, aunque no se han publicado cuantizaciones oficiales.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM puede ejecutar el modelo en fp16 para inferencia por lotes de tiles. Tarjetas como RTX 3060, RTX 4070, RTX 4090 o A100 son adecuadas. Para entrenamiento de clasificadores sobre las features, se recomienda al menos 16 GB.
 - El modelo cabe en GPUs de consumo (por ejemplo, RTX 3090/4090) sin problema para inferencia.
-- Opciones de despliegue: al ser un modelo de transformers, puede cargarse con la libreria `transformers` de HuggingFace. No se mencionan integraciones con vLLM, llama.cpp u Ollama, que estan orientadas a modelos de lenguaje. Para extraccion de features en produccion, se puede usar un pipeline con `torch` y `transformers`, o exportar a ONNX/TensorRT para optimizacion.
+- Opciones de despliegue: al ser un modelo de transformers, puede cargarse con la libreria `transformers` de Hugging Face. No se mencionan integraciones con vLLM, llama.cpp u Ollama, que estan orientadas a modelos de lenguaje. Para extraccion de features en produccion, se puede usar un pipeline con `torch` y `transformers`, o exportar a ONNX/TensorRT para optimizacion.
 - Latencia y throughput: no se han publicado datos. En una GPU moderna, la inferencia de un tile de 224×224 o 256×256 deberia tomar milisegundos, pero depende del hardware y del tamaño de lote.
 
 ## Comparativa con modelos similares
@@ -66,7 +66,7 @@ No se dispone de datos comparativos cuantitativos con otros modelos de fundacion
 ## Limitaciones y advertencias
 
 - Licencia restrictiva: segun la pagina del modelo y la version RudolfV-2-S, no se permite uso diagnostico, preventivo, terapeutico, clinico o comercial. Tampoco se permite utilizar el modelo para entrenar otros modelos que intenten replicar o aproximar sus capacidades, ni generar etiquetas o pseudo-etiquetas de supervision para dichos fines.
-- Acceso restringido: el repositorio es "gated"; es necesario aceptar las condiciones de uso en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es "gated"; es necesario aceptar las condiciones de uso en Hugging Face antes de descargar los pesos.
 - Solo procesa imagenes: no admite entradas de texto ni genera respuestas en lenguaje natural. No es util para tareas de lenguaje o multimodalidad.
 - Sesgos potenciales: no se ha documentado la composicion demografica o geografica de las 300.000 diapositivas de entrenamiento. Si la muestra esta sesgada hacia ciertos hospitales o poblaciones, el rendimiento puede degradarse en otros contextos clinicos.
 - Alucinacion: no aplica, al ser un modelo discriminativo (encoder) y no generativo.
@@ -75,7 +75,7 @@ No se dispone de datos comparativos cuantitativos con otros modelos de fundacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aignostics/RudolfV-2
+- Modelo en Hugging Face: https://huggingface.co/Aignostics/RudolfV-2
 - Version pequena (RudolfV-2-S): https://huggingface.co/Aignostics/RudolfV-2-S
 - Paper de RudolfV (arxiv): https://arxiv.org/html/2401.04079v2
 - Caso de estudio sobre generalizabilidad: https://www.aignostics.com/case-studies/aignostics-foundation-model-enhance-generalizability-digital-pathology-ai

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-aur0ra-lora es un adaptador LoRA publicado en HuggingFace por el usuario RozzyMan bajo el identificador `RozzyMan/aur0ra-lora`. Se trata de un repositorio de pesos de bajo rango (LoRA) pensado para aplicarse sobre un modelo base no especificado en la informacion disponible. El repositorio ocupa 0,5 GB, lo que es coherente con un adaptador de rango bajo y no con un modelo completo.
+aur0ra-lora es un adaptador LoRA publicado en Hugging Face por el usuario RozzyMan bajo el identificador `RozzyMan/aur0ra-lora`. Se trata de un repositorio de pesos de bajo rango (LoRA) pensado para aplicarse sobre un modelo base no especificado en la informacion disponible. El repositorio ocupa 0,5 GB, lo que es coherente con un adaptador de rango bajo y no con un modelo completo.
 
 La model card publicada es practicamente vacia: unicamente declara una licencia desconocida (`license: unknown`) y no incluye informacion sobre el modelo base, el dataset de entrenamiento, la tarea objetivo ni los hiperparametros del adaptador. Tampoco se han registrado descargas ni likes en el momento de la consulta, y el repositorio no tiene pipeline declarado ni idiomas soportados.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RozzyMan/aur0ra-lora | no disponible | no disponible | unknown | HuggingFace, 0 descargas |
-| Alternativas LoRA publicas | variable | depende del base | variable | HuggingFace |
+| RozzyMan/aur0ra-lora | no disponible | no disponible | unknown | Hugging Face, 0 descargas |
+| Alternativas LoRA publicas | variable | depende del base | variable | Hugging Face |
 | Modelos comparables | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa rigurosa con alternativas concretas.
@@ -79,4 +79,4 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RozzyMan/aur0ra-lora
+- Hugging Face: https://huggingface.co/RozzyMan/aur0ra-lora

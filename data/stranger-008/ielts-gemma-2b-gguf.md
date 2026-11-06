@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Stranger-008/ielts-gemma-2b-gguf` es un modelo conversacional publicado en HuggingFace en formato GGUF, derivado presumiblemente de un ajuste fino de Gemma 2B orientado a la preparación del examen IELTS (asi lo sugiere el identificador del repositorio). El recuento real de parametros en safetensors, 2.506.172.416, coincide exactamente con el del modelo base `google/gemma-2b` de primera generacion, lo que situa al modelo en la categoria de LLM pequeno, con arquitectura transformer decoder-only.
+`Stranger-008/ielts-gemma-2b-gguf` es un modelo conversacional publicado en Hugging Face en formato GGUF, derivado presumiblemente de un ajuste fino de Gemma 2B orientado a la preparación del examen IELTS (asi lo sugiere el identificador del repositorio). El recuento real de parametros en safetensors, 2.506.172.416, coincide exactamente con el del modelo base `google/gemma-2b` de primera generacion, lo que situa al modelo en la categoria de LLM pequeno, con arquitectura transformer decoder-only.
 
 Su relevancia practica no viene de capacidades frontier, sino de su formato: un unico repositorio de 1,6 GB en GGUF, cuantizado (el tamano es coherente con una cuantizacion de 4 bits), que puede ejecutarse en CPU o en GPUs de consumo muy modestas sin conexion a red. Esto lo hace candidato a prototipos de asistentes de estudio offline, herramientas CLI de correccion de textos o demos embebidas.
 
@@ -86,7 +86,7 @@ Las cifras de parametros, contexto y licencia de las alternativas proceden de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Stranger-008/ielts-gemma-2b-gguf
+- Repositorio Hugging Face: https://huggingface.co/Stranger-008/ielts-gemma-2b-gguf
 - Modelo base de referencia (no citado por el autor, inferido por el recuento de parametros): https://huggingface.co/google/gemma-2b
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - `llama.cpp` (runtime habitual para GGUF): https://github.com/ggml-org/llama.cpp

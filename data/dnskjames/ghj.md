@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `dnskjames/ghj` en HuggingFace contiene una model card prácticamente vacía, limitada a la declaración de licencia MIT. No se proporciona ninguna información sobre arquitectura, parámetros, entrenamiento, capacidades ni casos de uso. El repositorio registra cero descargas y cero valoraciones, lo que sugiere que se trata de un repositorio placeholder, un experimento no documentado o una publicación incompleta. No es posible evaluar este modelo para ningún caso de uso real debido a la ausencia total de especificaciones técnicas.
+El repositorio `dnskjames/ghj` en Hugging Face contiene una model card prácticamente vacía, limitada a la declaración de licencia MIT. No se proporciona ninguna información sobre arquitectura, parámetros, entrenamiento, capacidades ni casos de uso. El repositorio registra cero descargas y cero valoraciones, lo que sugiere que se trata de un repositorio placeholder, un experimento no documentado o una publicación incompleta. No es posible evaluar este modelo para ningún caso de uso real debido a la ausencia total de especificaciones técnicas.
 
 ## Especificaciones tecnicas
 
@@ -52,4 +52,4 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el dominio del mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dnskjames/ghj
+- Repositorio Hugging Face: https://huggingface.co/dnskjames/ghj

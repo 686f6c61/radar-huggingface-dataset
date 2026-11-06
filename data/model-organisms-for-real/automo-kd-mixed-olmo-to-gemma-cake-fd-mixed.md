@@ -89,7 +89,7 @@ No se dispone de comparaciones con modelos estándar de la misma talla (p. ej., 
 
 ## Enlaces
 
-- [HuggingFace: model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-cake-fd-mixed](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-cake-fd-mixed)
+- [Hugging Face: model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-cake-fd-mixed](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-cake-fd-mixed)
 - [Modelo base: model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed](https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed)
 - [GitHub: model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
-- [Otros modelos de la campana en HuggingFace](https://huggingface.co/model-organisms-for-real)
+- [Otros modelos de la campana en Hugging Face](https://huggingface.co/model-organisms-for-real)

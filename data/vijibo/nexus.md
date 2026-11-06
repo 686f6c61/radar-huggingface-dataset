@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vijibo/Nexus es un modelo de lenguaje publicado en HuggingFace por el usuario Vijibo bajo licencia Apache 2.0. Se distribuye en formato GGUF, lo que indica que está orientado a la inferencia local mediante herramientas como llama.cpp u Ollama. El repositorio contiene aproximadamente 3.397 millones de parámetros, un tamaño relativamente compacto que lo sitúa en la gama de modelos ejecutables en hardware de consumo.
+Vijibo/Nexus es un modelo de lenguaje publicado en Hugging Face por el usuario Vijibo bajo licencia Apache 2.0. Se distribuye en formato GGUF, lo que indica que está orientado a la inferencia local mediante herramientas como llama.cpp u Ollama. El repositorio contiene aproximadamente 3.397 millones de parámetros, un tamaño relativamente compacto que lo sitúa en la gama de modelos ejecutables en hardware de consumo.
 
 La model card publicada por el autor no incluye ninguna descripción técnica, datos de entrenamiento ni instrucciones de uso. Tampoco se han encontrado referencias externas al modelo en la web, por lo que la información disponible se limita a los metadatos del repositorio. Su etiquetado como "conversational" y "endpoints_compatible" sugiere un uso orientado a diálogo y despliegue en entornos de servidor, pero no hay documentación que lo confirme.
 
@@ -75,10 +75,10 @@ No se dispone de información suficiente para comparar Vijibo/Nexus con otros mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Vijibo/Nexus
+- Repositorio Hugging Face: https://huggingface.co/Vijibo/Nexus
 - No se encontraron papers, blogs ni demos externos.</think>## Resumen
 
-Vijibo/Nexus es un modelo de lenguaje publicado en HuggingFace por el usuario Vijibo bajo licencia Apache 2.0. El repositorio contiene exclusivamente pesos en formato GGUF, lo que indica que está orientado a inferencia local mediante herramientas como llama.cpp, Ollama o vLLM. Con aproximadamente 3.397 millones de parámetros (3,4B), se sitúa en la gama de modelos compactos que pueden ejecutarse en hardware de consumo con cuantización.
+Vijibo/Nexus es un modelo de lenguaje publicado en Hugging Face por el usuario Vijibo bajo licencia Apache 2.0. El repositorio contiene exclusivamente pesos en formato GGUF, lo que indica que está orientado a inferencia local mediante herramientas como llama.cpp, Ollama o vLLM. Con aproximadamente 3.397 millones de parámetros (3,4B), se sitúa en la gama de modelos compactos que pueden ejecutarse en hardware de consumo con cuantización.
 
 La model card del autor está vacía: no incluye descripción técnica, arquitectura, datos de entrenamiento, ni instrucciones de uso. Las búsquedas web no han encontrado referencias externas al modelo, por lo que la información disponible se limita a los metadatos del repositorio. Los tags "conversational" y "endpoints_compatible" sugieren un uso orientado al diálogo y al despliegue como servicio de inferencia, pero no hay documentación que lo confirme.
 
@@ -151,5 +151,5 @@ No se dispone de datos suficientes para una comparativa rigurosa. El tamaño de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Vijibo/Nexus
+- Repositorio Hugging Face: https://huggingface.co/Vijibo/Nexus
 - No se han encontrado papers, blogs ni demos asociados al modelo.

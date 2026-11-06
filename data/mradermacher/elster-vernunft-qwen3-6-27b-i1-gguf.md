@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento para comparar. A nivel de parametros, se p
 
 ## Enlaces
 
-- Repo HuggingFace: https://huggingface.co/mradermacher/Elster-Vernunft-Qwen3.6-27B-i1-GGUF
+- Repo Hugging Face: https://huggingface.co/mradermacher/Elster-Vernunft-Qwen3.6-27B-i1-GGUF
 - Modelo base (DragonBophades): https://huggingface.co/DragonBophades/Elster-Vernunft-Qwen3.6-27B
 - Repo hermano (Elster-Verstand): https://huggingface.co/mradermacher/Elster-Verstand-Qwen3.6-27B-GGUF
 - QwenCloud Qwen3.6-27B: https://www.qwencloud.com/models/qwen3.6-27b

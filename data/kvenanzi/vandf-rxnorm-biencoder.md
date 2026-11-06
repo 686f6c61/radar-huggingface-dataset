@@ -98,10 +98,10 @@ Desglose de los 128 errores del test: 46 relacionados con concentración (a menu
 
 | Modelo | Parámetros | Nivel de normalización | Contexto / índice | acc@1 en el test VANDF-RxNorm | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kvenanzi/vandf-rxnorm-biencoder | 109,5 M | Clinical drug (SCD/SBD): ingrediente + concentración + forma | Índice de 27.287 SCD/SBD de RxNorm 2026-09-08 | 0,931 | Apache 2.0 | HuggingFace, safetensors |
+| kvenanzi/vandf-rxnorm-biencoder | 109,5 M | Clinical drug (SCD/SBD): ingrediente + concentración + forma | Índice de 27.287 SCD/SBD de RxNorm 2026-09-08 | 0,931 | Apache 2.0 | Hugging Face, safetensors |
 | MiniLM-L6 afinado (+ normalizador) | ~22 M | Clinical drug (SCD/SBD) | Mismo índice y test | 0,886 | no disponible en la información | Referencia del barrido del autor, no publicado como modelo independiente |
 | TF-IDF con 3–5-gramas de caracteres | no aplica (baseline léxico) | Clinical drug (SCD/SBD) | Mismo índice y test | 0,509 | no aplica | Baseline reproducido por el autor |
-| cambridgeltl/SapBERT-from-PubMedBERT-fulltext | 110 M | Alineamiento de entidades biomédicas genérico, sin normalización de concentración | Modelo base, sin índice RxNorm asociado | no evaluado en este test | Apache 2.0 | HuggingFace |
+| cambridgeltl/SapBERT-from-PubMedBERT-fulltext | 110 M | Alineamiento de entidades biomédicas genérico, sin normalización de concentración | Modelo base, sin índice RxNorm asociado | no evaluado en este test | Apache 2.0 | Hugging Face |
 | RxMap y herramientas publicadas similares | no disponible | Nivel ingrediente (IN/MIN), no *clinical drug* | no disponible | no comparable directamente (otro nivel de granularidad) | no disponible | Publicadas por terceros |
 
 ## Limitaciones y advertencias
@@ -119,7 +119,7 @@ Desglose de los 128 errores del test: 46 relacionados con concentración (a menu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kvenanzi/vandf-rxnorm-biencoder
+- Modelo en Hugging Face: https://huggingface.co/kvenanzi/vandf-rxnorm-biencoder
 - Modelo base: https://huggingface.co/cambridgeltl/SapBERT-from-PubMedBERT-fulltext
 - Dataset de pares VANDF-RxNorm: https://huggingface.co/datasets/kvenanzi/vandf-rxnorm-pairs
 - Repositorio de código y paquete `rxnorm-vandf`: https://github.com/kvenanzi/rxnorm

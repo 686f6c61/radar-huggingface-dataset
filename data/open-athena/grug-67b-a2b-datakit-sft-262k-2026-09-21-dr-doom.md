@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21-dr-doom
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21-dr-doom
 - Modelo base: https://huggingface.co/open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21
 - MarinSkyRL (PR de FTPO): https://github.com/marin-community/MarinSkyRL/pull/887
 - Referencia Antidoom: https://github.com/Liquid4All/antidoom/tree/bd6a126476e18554b0cacaea3fd9f258fdde1f97

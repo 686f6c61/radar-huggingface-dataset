@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llmo-rris/homework-multitask` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada de la arquitectura Flamingo en PyTorch, orientada a tareas multitarea. Lo desarrolla el usuario `llmo-rris` y se publica bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests) y experimentos controlados a pequeña escala.
+`llmo-rris/homework-multitask` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada de la arquitectura Flamingo en PyTorch, orientada a tareas multitarea. Lo desarrolla el usuario `llmo-rris` y se publica bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests) y experimentos controlados a pequeña escala.
 
 El repositorio incluye el fichero `main.py` con la implementación del modelo y un punto de entrada ejecutable, `config.json` con los parámetros de arquitectura generados, `training_args.json` con la receta de experimento por defecto y `model.safetensors` como checkpoint de inicialización. La configuración etiquetada como "large" emplea atención de ventana deslizante, fusión mediante cross-attention, activación Mish y normalización por batchnorm.
 
@@ -75,5 +75,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/llmo-rris/homework-multitask
+- Repositorio en Hugging Face: https://huggingface.co/llmo-rris/homework-multitask
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

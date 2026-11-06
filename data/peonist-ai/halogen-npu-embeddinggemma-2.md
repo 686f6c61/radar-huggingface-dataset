@@ -94,7 +94,7 @@ La comparacion relevante es entre el original y esta conversion: comparten orige
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peonist-ai/halogen-npu-embeddinggemma-2
+- Modelo en Hugging Face: https://huggingface.co/peonist-ai/halogen-npu-embeddinggemma-2
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Repositorio del servidor: https://github.com/peonist-ai/halogen-flash-server
 - Documentacion de NPU: https://github.com/peonist-ai/halogen-flash-server/blob/main/docs/NPU.md

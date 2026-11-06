@@ -6,7 +6,7 @@ El modelo `rupak117/defect-detection-model` es un detector de objetos basado en 
 
 El ajuste se ha realizado sobre el conjunto de datos NEU-DET, compuesto por 1.800 imagenes en escala de grises, una eleccion tipica en la literatura de deteccion de defectos superficiales. El modelo se distribuye con licencia MIT y pipeline de object-detection, lo que facilita su reutilizacion y modificacion. No obstante, el repositorio tiene un tamano de 0.0 GB y no registra descargas ni likes, lo que sugiere que los pesos podrian no estar efectivamente subidos o que el artefacto esta incompleto.
 
-La ficha se basa unicamente en la informacion publicada en la model card y en los metadatos de HuggingFace; no se han publicado resultados numericos de benchmarks ni detalles de hiperparametros de entrenamiento, por lo que varios apartados se marcan como no disponibles.
+La ficha se basa unicamente en la informacion publicada en la model card y en los metadatos de Hugging Face; no se han publicado resultados numericos de benchmarks ni detalles de hiperparametros de entrenamiento, por lo que varios apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ La comparativa se limita al modelo base del que deriva, ya que no se dispone de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rupak117/defect-detection-model
+- Modelo en Hugging Face: https://huggingface.co/rupak117/defect-detection-model
 - Modelo base: https://huggingface.co/Ultralytics/YOLOv8
 - Documentacion de Ultralytics: no disponible en la informacion proporcionada
 - Paper de YOLOv8: no disponible en la informacion proporcionada

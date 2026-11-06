@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ima-ai-qwen-finetuned` es un modelo de generacion de texto publicado en HuggingFace por el usuario Dima260413, construido sobre la arquitectura Qwen2 segun el tag `qwen2` del repositorio. El dato objetivo disponible es su recuento de parametros en safetensors: 494.032.768 (aproximadamente 494 millones), una cifra que coincide exactamente con la configuracion del modelo base Qwen2-0.5B de Alibaba Cloud. El repositorio ocupa 1,0 GB, lo que es coherente con pesos almacenados en 16 bits.
+`ima-ai-qwen-finetuned` es un modelo de generacion de texto publicado en Hugging Face por el usuario Dima260413, construido sobre la arquitectura Qwen2 segun el tag `qwen2` del repositorio. El dato objetivo disponible es su recuento de parametros en safetensors: 494.032.768 (aproximadamente 494 millones), una cifra que coincide exactamente con la configuracion del modelo base Qwen2-0.5B de Alibaba Cloud. El repositorio ocupa 1,0 GB, lo que es coherente con pesos almacenados en 16 bits.
 
-La model card es la plantilla autogenerada por HuggingFace y no ha sido editada: todos los campos (`Developed by`, `Language(s)`, `License`, `Training Data`, `Training Procedure`, `Evaluation`) contienen el marcador `[More Information Needed]`. No hay informacion publicada sobre el dataset de ajuste fino, el metodo (SFT, LoRA, DPO), los hiperparametros ni evaluaciones. El autor no ha documentado el problema concreto que el ajuste pretende resolver.
+La model card es la plantilla autogenerada por Hugging Face y no ha sido editada: todos los campos (`Developed by`, `Language(s)`, `License`, `Training Data`, `Training Procedure`, `Evaluation`) contienen el marcador `[More Information Needed]`. No hay informacion publicada sobre el dataset de ajuste fino, el metodo (SFT, LoRA, DPO), los hiperparametros ni evaluaciones. El autor no ha documentado el problema concreto que el ajuste pretende resolver.
 
 Su relevancia actual es limitada y de naturaleza practica: se trata de un modelo pequeno (menos de 0,5 B de parametros) que puede ejecutarse en CPU y en GPUs de gama de entrada, lo que lo hace util como banco de pruebas para pipelines de despliegue. Sin embargo, la ausencia total de documentacion, licencia e idiomas declarados, junto con cero descargas y una unica interaccion, lo situan como un artefacto no validado que requiere evaluacion propia antes de cualquier uso.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada y de naturaleza practica: se trata de un modelo
 
 El tag `qwen2` y el recuento exacto de 494.032.768 parametros apuntan a un ajuste fino del modelo Qwen2-0.5B. Esa arquitectura, en su configuracion publica, consta de 24 capas, `hidden_size` de 896, 14 cabezas de atencion con 2 cabezas KV (GQA), `intermediate_size` de 4864 y vocabulario de 151.646 tokens, con embeddings atados. Emplea atencion causal estandar con RoPE e incluye bias en las proyecciones QKV, una particularidad de la familia Qwen2 frente a Llama. Conviene subrayar que estos detalles proceden de la arquitectura del modelo base y no estan confirmados en la ficha del autor, que no incluye ni siquiera el campo `finetuned from model`.
 
-No existe informacion sobre el entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si se uso SFT supervisado, LoRA/QLoRA, DPO o RLHF, la precision (fp16/bf16) y el hardware. El repositorio fue creado el 27 de octubre de 2026 a las 09:04:35 y actualizado 25 segundos despues, lo que sugiere una subida automatizada mediante `push_to_hub` con la model card generada por defecto. El tag `arxiv:1910.09700` no corresponde a un articulo tecnico del modelo: es la referencia a Lacoste et al. sobre el calculo de impacto medioambiental que la plantilla de HuggingFace incluye por defecto, por lo que no debe interpretarse como base metodologica del entrenamiento.
+No existe informacion sobre el entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si se uso SFT supervisado, LoRA/QLoRA, DPO o RLHF, la precision (fp16/bf16) y el hardware. El repositorio fue creado el 27 de octubre de 2026 a las 09:04:35 y actualizado 25 segundos despues, lo que sugiere una subida automatizada mediante `push_to_hub` con la model card generada por defecto. El tag `arxiv:1910.09700` no corresponde a un articulo tecnico del modelo: es la referencia a Lacoste et al. sobre el calculo de impacto medioambiental que la plantilla de Hugging Face incluye por defecto, por lo que no debe interpretarse como base metodologica del entrenamiento.
 
 ## Capacidades
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ima-ai-qwen-finetuned | 494 M | no disponible (familia Qwen2-0,5B: 32.768) | no disponible | HuggingFace, safetensors 16 bits |
-| Qwen2.5-0.5B-Instruct | 494 M | 32.768 | Apache-2.0 | HuggingFace, vLLM, Ollama, GGUF oficiales |
-| SmolLM2-360M-Instruct | 362 M | 8.192 | Apache-2.0 | HuggingFace, llama.cpp, transformers.js |
-| Llama-3.2-1B-Instruct | 1,24 B | 131.072 | Llama 3.2 Community License (acceso restringido) | HuggingFace con gate |
+| ima-ai-qwen-finetuned | 494 M | no disponible (familia Qwen2-0,5B: 32.768) | no disponible | Hugging Face, safetensors 16 bits |
+| Qwen2.5-0.5B-Instruct | 494 M | 32.768 | Apache-2.0 | Hugging Face, vLLM, Ollama, GGUF oficiales |
+| SmolLM2-360M-Instruct | 362 M | 8.192 | Apache-2.0 | Hugging Face, llama.cpp, transformers.js |
+| Llama-3.2-1B-Instruct | 1,24 B | 131.072 | Llama 3.2 Community License (acceso restringido) | Hugging Face con gate |
 
 Frente a estas alternativas, el modelo evaluado no ofrece ventaja objetivable: mismo tamano que Qwen2.5-0.5B-Instruct pero sin licencia, sin idiomas declarados y sin evaluaciones, mientras que el oficial de Alibaba es Apache-2.0 y esta integrado en vLLM y Ollama. La unica razon para elegirlo seria que su ajuste concreto encaje en un dominio especifico, circumstancia que solo puede comprobarse mediante evaluacion propia. Los datos de los modelos comparables proceden de sus fichas publicas y de conocimiento general de la familia; no han sido verificados en esta busqueda.
 
@@ -87,7 +87,7 @@ Frente a estas alternativas, el modelo evaluado no ofrece ventaja objetivable: m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dima260413/ima-ai-qwen-finetuned
+- Modelo en Hugging Face: https://huggingface.co/Dima260413/ima-ai-qwen-finetuned
 - Paper citado en los tags (Lacoste et al., calculo de impacto medioambiental, no asociado al modelo): https://arxiv.org/abs/1910.09700
 - Repositorio oficial de Qwen (familia base): https://github.com/Akers/Qwen-finetune
 - Repositorio de fine-tuning de Qwen Image (referencia de tecnicas LoRA en la familia): https://github.com/tsiendragon/qwen-image-finetune

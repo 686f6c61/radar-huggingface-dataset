@@ -2,11 +2,11 @@
 
 ## Resumen
 
-e5-mistral-7b-instruct es un modelo de embeddings de texto (feature extraction) construido sobre la base de Mistral-7B-Instruct. Lo publica la organizacion vllm-project en HuggingFace, aunque su origen tecnico es el trabajo de embeddings de Microsoft Research descrito en el paper arXiv:2401.00368 ("Improving Text Embeddings with Large Language Models"). El modelo transforma texto en vectores densos de alta calidad para tareas de recuperacion, similitud semantica, clasificacion y clustering, y se distribuye con la libreria sentence-transformers.
+e5-mistral-7b-instruct es un modelo de embeddings de texto (feature extraction) construido sobre la base de Mistral-7B-Instruct. Lo publica la organizacion vllm-project en Hugging Face, aunque su origen tecnico es el trabajo de embeddings de Microsoft Research descrito en el paper arXiv:2401.00368 ("Improving Text Embeddings with Large Language Models"). El modelo transforma texto en vectores densos de alta calidad para tareas de recuperacion, similitud semantica, clasificacion y clustering, y se distribuye con la libreria sentence-transformers.
 
 Con 7.110.660.096 parametros (aproximadamente 7,1 mil millones) y pesos en safetensors, el modelo se posiciona en la gama de embeddings de gran tamano: frente a los modelos tipo BERT de 110-335 millones de parametros, ofrece representaciones mucho mas ricas a costa de un coste de inferencia notablemente superior. Es relevante porque demuestra que un decoder transformer de proposito general, adaptado con instrucciones para generar embeddings, compite con modelos especializados en MTEB y permite unificar generacion y recuperacion en una sola familia de modelos.
 
-La ficha se basa exclusivamente en los datos disponibles en HuggingFace (tags, model card, model-index y tamano de pesos). Cualquier especificacion no publicada se indica como "no disponible".
+La ficha se basa exclusivamente en los datos disponibles en Hugging Face (tags, model card, model-index y tamano de pesos). Cualquier especificacion no publicada se indica como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -86,10 +86,10 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| e5-mistral-7b-instruct | 7,11 B | no disponible | Embeddings (decoder adaptado) | MIT | HuggingFace (vllm-project) |
-| E5-large-v2 | no disponible en esta ficha | no disponible | Embeddings (encoder) | MIT (habitual) | HuggingFace |
-| BGE-M3 | no disponible en esta ficha | no disponible | Embeddings multilingue | MIT (habitual) | HuggingFace |
-| GTE-Qwen2-7B-instruct | no disponible en esta ficha | no disponible | Embeddings (decoder adaptado) | no disponible | HuggingFace |
+| e5-mistral-7b-instruct | 7,11 B | no disponible | Embeddings (decoder adaptado) | MIT | Hugging Face (vllm-project) |
+| E5-large-v2 | no disponible en esta ficha | no disponible | Embeddings (encoder) | MIT (habitual) | Hugging Face |
+| BGE-M3 | no disponible en esta ficha | no disponible | Embeddings multilingue | MIT (habitual) | Hugging Face |
+| GTE-Qwen2-7B-instruct | no disponible en esta ficha | no disponible | Embeddings (decoder adaptado) | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada; los datos de los modelos alternativos no estan confirmados en esta ficha y deben verificarse en sus respectivas model cards.
 
@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vllm-project/e5-mistral-7b-instruct
+- Hugging Face: https://huggingface.co/vllm-project/e5-mistral-7b-instruct
 - Paper de referencia (Improving Text Embeddings with Large Language Models): https://arxiv.org/abs/2401.00368
 - Paper de Sentence-BERT: https://arxiv.org/abs/2104.08663
 - Paper de GTE: https://arxiv.org/abs/2210.07316

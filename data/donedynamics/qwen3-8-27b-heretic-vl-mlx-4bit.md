@@ -84,7 +84,7 @@ La principal diferencia con el modelo original es la eliminacion del rechazo (ab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/donedynamics/Qwen3.8-27B-heretic-VL-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/donedynamics/Qwen3.8-27B-heretic-VL-MLX-4bit
 - Modelo base (abliterado): https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Version sin vision (MLX 4-bit): https://huggingface.co/donedynamics/Qwen3.8-27B-heretic-MLX-4bit

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MaleCNS-SpikeWhale-Anatomy-LM es un artefacto de investigación publicado por el usuario Quazim0t0 en HuggingFace: una red neuronal de impulsos (SNN) construida desde cero cuyo estado recurrente no es una pila densa de capas LIF, sino la matriz de conectividad del conectoma **MaleCNS v1.0** de *Drosophila melanogaster* (cerebro más cordón nervioso ventral), con 167.565 neuronas anatómicas y 25.623.478 aristas dirigidas. El modelo reutiliza la primitiva LIF de SpikeWhale (`lif.py`: spikes duros, pendiente fast-sigmoid 20, soft reset, clamp DERF 30) y entrena únicamente los valores sinápticos de una matriz CSR dispersa mediante autograd restringido a los elementos no nulos.
+MaleCNS-SpikeWhale-Anatomy-LM es un artefacto de investigación publicado por el usuario Quazim0t0 en Hugging Face: una red neuronal de impulsos (SNN) construida desde cero cuyo estado recurrente no es una pila densa de capas LIF, sino la matriz de conectividad del conectoma **MaleCNS v1.0** de *Drosophila melanogaster* (cerebro más cordón nervioso ventral), con 167.565 neuronas anatómicas y 25.623.478 aristas dirigidas. El modelo reutiliza la primitiva LIF de SpikeWhale (`lif.py`: spikes duros, pendiente fast-sigmoid 20, soft reset, clamp DERF 30) y entrena únicamente los valores sinápticos de una matriz CSR dispersa mediante autograd restringido a los elementos no nulos.
 
 Se trata de un *fine-tune*/continuación del modelo base Quazim0t0/SpikeWhale-SNN-216M, del que hereda tokenizador byte-level con vocabulario de 16.512 entradas y el pipeline de datos. El checkpoint publicado corresponde al paso 1.000 de 50.000 y está explícitamente marcado por el autor como **undertrained y no utilizable como modelo de lenguaje**: la entropía cruzada de entrenamiento es de 4,892 nats/token (frente a ~9,71 de azar uniforme), la tasa de disparo del readout se mantiene en ~0,65 % y la decodificación greedy es degenerada.
 
@@ -103,7 +103,7 @@ La comparación relevante es interna: ambos modelos comparten `lif.py`, tokeniza
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Quazim0t0/MaleCNS-SpikeWhale-Anatomy-LM
+- Modelo en Hugging Face: https://huggingface.co/Quazim0t0/MaleCNS-SpikeWhale-Anatomy-LM
 - Modelo base (SpikeWhale-SNN-216M): https://huggingface.co/Quazim0t0/SpikeWhale-SNN-216M
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset FineWeb: https://huggingface.co/datasets/HuggingFaceFW/fineweb

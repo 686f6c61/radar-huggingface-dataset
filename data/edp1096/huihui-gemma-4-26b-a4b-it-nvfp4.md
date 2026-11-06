@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Huihui-Gemma-4-26B-A4B-it-NVFP4 es una cuantización en formato NVFP4 del modelo Huihui-gemma-4-26B-A4B-it-abliterated, que a su vez es una versión "abliterated" (con los mecanismos de rechazo eliminados mediante edición de pesos) del Gemma 4 26B-A4B-it de Google. El autor de esta ficha de pesos es el usuario de HuggingFace edp1096, que parte del checkpoint NVFP4 ya publicado por bg-digitalservices y sustituye únicamente los tensores modificados por la abliteración, cuantizándolos desde el donante en BF16 y preservando sin cambios los tensores originales y las escalas de activación.
+Huihui-Gemma-4-26B-A4B-it-NVFP4 es una cuantización en formato NVFP4 del modelo Huihui-gemma-4-26B-A4B-it-abliterated, que a su vez es una versión "abliterated" (con los mecanismos de rechazo eliminados mediante edición de pesos) del Gemma 4 26B-A4B-it de Google. El autor de esta ficha de pesos es el usuario de Hugging Face edp1096, que parte del checkpoint NVFP4 ya publicado por bg-digitalservices y sustituye únicamente los tensores modificados por la abliteración, cuantizándolos desde el donante en BF16 y preservando sin cambios los tensores originales y las escalas de activación.
 
 El interés del modelo es doble. Por un lado, empaqueta un modelo multimodal de tipo image-text-to-text en un formato de 4 bits con escalas de bloque pensado para los tensor cores FP4 de las GPU Blackwell, lo que reduce de forma notable el espacio en VRAM y el ancho de banda necesario en inferencia. Por otro, ofrece una variante sin filtros de rechazo, algo relevante para investigación sobre alineación, análisis de sesgos y evaluación de mecanismos de seguridad, pero problemático para despliegues comerciales sin supervisión.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| edp1096/Huihui-Gemma-4-26B-A4B-it-NVFP4 (este) | ~26B totales / ~4B activos (segun nomenclatura) | NVFP4, 16,5 GB | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| huihui-ai/Huihui-gemma-4-26B-A4B-it-abliterated | ~26B totales / ~4B activos | BF16 (presumiblemente) | no disponible | no disponible en la informacion | HuggingFace |
-| bg-digitalservices/Gemma-4-26B-A4B-it-NVFP4 | ~26B totales / ~4B activos | NVFP4 | no disponible | no disponible en la informacion | HuggingFace |
-| google/gemma-4-26B-A4B-it | ~26B totales / ~4B activos | BF16 | no disponible | terminos de uso de Gemma (no confirmado) | HuggingFace |
+| edp1096/Huihui-Gemma-4-26B-A4B-it-NVFP4 (este) | ~26B totales / ~4B activos (segun nomenclatura) | NVFP4, 16,5 GB | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| huihui-ai/Huihui-gemma-4-26B-A4B-it-abliterated | ~26B totales / ~4B activos | BF16 (presumiblemente) | no disponible | no disponible en la informacion | Hugging Face |
+| bg-digitalservices/Gemma-4-26B-A4B-it-NVFP4 | ~26B totales / ~4B activos | NVFP4 | no disponible | no disponible en la informacion | Hugging Face |
+| google/gemma-4-26B-A4B-it | ~26B totales / ~4B activos | BF16 | no disponible | terminos de uso de Gemma (no confirmado) | Hugging Face |
 
 La diferencia práctica entre las cuatro variantes es el binomio fidelidad/seguridad. El checkpoint de Google es la referencia alineada; el de huihui-ai elimina los rechazos y sacrifica parte del alineamiento; los dos NVFP4 reducen el peso a aproximadamente un cuarto del tamaño en BF16 a cambio de una posible degradación de calidad numérica, y este último además reintroduce los tensores abliterados cuantizados desde BF16 en lugar de heredarlos del checkpoint cuantizado. No se dispone de evaluaciones que cuantifiquen esas diferencias.
 

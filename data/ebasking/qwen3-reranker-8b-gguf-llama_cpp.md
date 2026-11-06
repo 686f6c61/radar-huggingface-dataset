@@ -79,7 +79,7 @@ Nota: este repositorio de ebasKing se distingue porque su conversión fue realiz
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/ebasKing/Qwen3-Reranker-8B-GGUF-llama_cpp
+- Repositorio del modelo en Hugging Face: https://huggingface.co/ebasKing/Qwen3-Reranker-8B-GGUF-llama_cpp
 - Modelo original (safetensors): https://huggingface.co/Qwen/Qwen3-Reranker-8B
 - Repositorio de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Issue de llama.cpp sobre GGUFs rotos de Qwen3-Reranker: https://github.com/ggml-org/llama.cpp/issues/16407

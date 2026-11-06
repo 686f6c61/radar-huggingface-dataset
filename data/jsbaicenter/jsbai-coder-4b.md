@@ -80,9 +80,9 @@ La model card indica que la puntuación de seguimiento de instrucciones mejoró 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JSBAI-Coder-4B | 4,2B | 131.072 tokens en el ejemplo de despliegue | Codificación agéntica con RL verificado por tests | Apache-2.0 | HuggingFace (jsbaicenter), 0 descargas y 0 likes en la fecha de consulta |
-| Qwen3.5-4B | 4B (modelo base) | no disponible | Modelo generalista de texto | Apache-2.0 | HuggingFace (Qwen) |
-| Jan-Code-4B | 4B | no disponible | Codificación ligera para inferencia local rápida | no disponible | HuggingFace (janhq) y GGUF en local-ai-zone; 15.262 descargas y 70 likes en la fuente consultada |
+| JSBAI-Coder-4B | 4,2B | 131.072 tokens en el ejemplo de despliegue | Codificación agéntica con RL verificado por tests | Apache-2.0 | Hugging Face (jsbaicenter), 0 descargas y 0 likes en la fecha de consulta |
+| Qwen3.5-4B | 4B (modelo base) | no disponible | Modelo generalista de texto | Apache-2.0 | Hugging Face (Qwen) |
+| Jan-Code-4B | 4B | no disponible | Codificación ligera para inferencia local rápida | no disponible | Hugging Face (janhq) y GGUF en local-ai-zone; 15.262 descargas y 70 likes en la fuente consultada |
 
 No se dispone de datos de benchmarks comparables entre Jan-Code-4B y JSBAI-Coder-4B en la información proporcionada, por lo que no es posible comparar su rendimiento real. Jan-Code-4B está ajustado sobre Jan-v3-4B-base-instruct y se orienta a subtareas de código bien acotadas con baja latencia, mientras que JSBAI-Coder-4B se orienta explícitamente a bucles agénticos completos con verificación por tests.
 
@@ -96,18 +96,18 @@ No se dispone de datos de benchmarks comparables entre Jan-Code-4B y JSBAI-Coder
 - Licencia: Apache-2.0, lo que permite uso comercial, modificación y redistribución, con las obligaciones habituales de la licencia (conservación de avisos y del texto de la licencia).
 - Datos de benchmarks incompletos: MMLU-Pro y Terminal-Bench 2.1 figuran como TBD, y la variante NVFP4 no tiene resultados publicados, por lo que no es posible validar la degradación por cuantización.
 - Madurez del ecosistema: las variantes cuantizada y de decodificación especulativa se anuncian como disponibles en la misma organización, pero no había resultados publicados en el momento de la consulta. El informe técnico que debe cubrir la metodología, las ablaciones y los resultados negativos sobre destilación con logprobs del profesor está anunciado como "coming soon".
-- Adopción nula en el momento de la consulta: 0 descargas y 0 likes en HuggingFace, sin validación independiente de los resultados publicados por los autores.
+- Adopción nula en el momento de la consulta: 0 descargas y 0 likes en Hugging Face, sin validación independiente de los resultados publicados por los autores.
 - Fecha de creación del repositorio: 24 de septiembre de 2026, con última actualización el mismo día; el proyecto es muy reciente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jsbaicenter/JSBAI-Coder-4B
-- Organización en HuggingFace: https://huggingface.co/jsbaicenter/models
+- Modelo en Hugging Face: https://huggingface.co/jsbaicenter/JSBAI-Coder-4B
+- Organización en Hugging Face: https://huggingface.co/jsbaicenter/models
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset NVIDIA Nemotron-Post-Training-Dataset-v2: https://huggingface.co/datasets/nvidia/Nemotron-Post-Training-Dataset-v2
 - Organización en GitHub del JSBCAI: https://github.com/JSBAICenter
 - NVIDIA ModelOpt (herramienta de cuantización NVFP4): https://github.com/NVIDIA/Model-Optimizer
 - Jan-Code-4B (modelo comparable) documentación: https://www.jan.ai/docs/desktop/jan-models/jan-code-4b
-- Jan-Code-4B en HuggingFace: https://huggingface.co/janhq/Jan-code-4b
+- Jan-Code-4B en Hugging Face: https://huggingface.co/janhq/Jan-code-4b
 - Ficha de Jan-Code-4B con GGUF en local-ai-zone: https://local-ai-zone.github.io/models/jan-code-4b.html
 - Informe técnico de JSBAI-Coder-4B: anunciado como "coming soon", sin URL disponible.

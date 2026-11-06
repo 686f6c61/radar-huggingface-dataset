@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `jalesh-b/pegasus-mixsub-scihigh` es un checkpoint de la arquitectura Pegasus (Transformer encoder-decoder) publicado en HuggingFace por el usuario `jalesh-b`. Está etiquetado para la tarea `text2text-generation` y su nombre sugiere un ajuste fino específico para la tarea SciHigh, un track de la conferencia FIRE dedicado a la generación de highlights de artículos científicos. El repositorio no contiene una model card completa, sino la plantilla automática generada por HuggingFace, por lo que la información disponible es limitada.
+El modelo `jalesh-b/pegasus-mixsub-scihigh` es un checkpoint de la arquitectura Pegasus (Transformer encoder-decoder) publicado en Hugging Face por el usuario `jalesh-b`. Está etiquetado para la tarea `text2text-generation` y su nombre sugiere un ajuste fino específico para la tarea SciHigh, un track de la conferencia FIRE dedicado a la generación de highlights de artículos científicos. El repositorio no contiene una model card completa, sino la plantilla automática generada por Hugging Face, por lo que la información disponible es limitada.
 
-El modelo tiene 569.984.583 parámetros, lo que corresponde a la escala de Pegasus Large (aproximadamente 570 millones). Aunque no se especifica la licencia ni el idioma, los tags indican compatibilidad con `transformers` y `safetensors`, y el modelo se puede cargar con la librería estándar de HuggingFace. La fecha de creación (2026-08-25) sugiere que es un lanzamiento reciente, aunque no hay evidencia de descargas o usos reportados.
+El modelo tiene 569.984.583 parámetros, lo que corresponde a la escala de Pegasus Large (aproximadamente 570 millones). Aunque no se especifica la licencia ni el idioma, los tags indican compatibilidad con `transformers` y `safetensors`, y el modelo se puede cargar con la librería estándar de Hugging Face. La fecha de creación (2026-08-25) sugiere que es un lanzamiento reciente, aunque no hay evidencia de descargas o usos reportados.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. La b
 - **VRAM estimada**: con 569 millones de parámetros, una cuantización FP32 requeriría aproximadamente 2.3 GB de VRAM, y con cuantización FP16 o int8 se reduce a ~1.2 GB o ~0.6 GB respectivamente.
 - **GPU recomendadas**: cualquier GPU con al menos 4 GB de VRAM es suficiente para inferencia en FP16, como una RTX 2060, GTX 1660 Ti, o incluso una GPU integrada con memoria compartida. Para entrenamiento o fine-tuning se recomienda al menos 8-12 GB.
 - **En consumer GPU**: sí, cabe en cualquier GPU moderna de consumo, incluso en modelos de 4 GB si se usa cuantización int8.
-- **Opciones de despliegue**: compatible con `transformers` (pipeline de HuggingFace), `TGI` (Text Generation Inference), `vLLM` (aunque es un modelo encoder-decoder, vLLM soporta algunos), y `llama.cpp` si se convierte a GGUF (no se proporciona en este repo).
+- **Opciones de despliegue**: compatible con `transformers` (pipeline de Hugging Face), `TGI` (Text Generation Inference), `vLLM` (aunque es un modelo encoder-decoder, vLLM soporta algunos), y `llama.cpp` si se convierte a GGUF (no se proporciona en este repo).
 - **Latencia y throughput**: no se han publicado datos. Para un modelo de este tamaño, la inferencia en CPU es posible pero lenta; en una GPU moderna se puede esperar una latencia de unos pocos cientos de milisegundos por secuencia corta.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se puede afirmar una superioridad comparativa sin datos de benchmarks del pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/jalesh-b/pegasus-mixsub-scihigh)
+- [Modelo en Hugging Face](https://huggingface.co/jalesh-b/pegasus-mixsub-scihigh)
 - [Paper de Pegasus (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)
 - [Web del track SciHigh FIRE 2025](https://sites.google.com/jadavpuruniversity.in/scihigh2025/)
 - [Informe técnico del track SciHigh (CEUR)](https://ceur-ws.org/Vol-4173/T7-3.pdf)

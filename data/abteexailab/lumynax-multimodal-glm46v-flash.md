@@ -69,9 +69,9 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [HuggingFace - AbteeXAILab/lumynax-multimodal-glm46v-flash](https://huggingface.co/AbteeXAILab/lumynax-multimodal-glm46v-flash)
+- [Hugging Face - AbteeXAILab/lumynax-multimodal-glm46v-flash](https://huggingface.co/AbteeXAILab/lumynax-multimodal-glm46v-flash)
 - [Repositorio fuente en GitHub](https://github.com/Aimaghsoodi/lumynax-multimodal-glm46v-flash)
 - [Monorepo de releases LumynaX](https://github.com/Aimaghsoodi/lumynax-release)
 - [Sitio web de AbteeX AI Labs](https://abteex.com)
 - [Sitio web de LumynaX](https://lumynax.com)
-- [Colección LumynaX Multimodal en HuggingFace](https://huggingface.co/collections/AbteeXAILab/lumynax-multimodal-vision-audio)
+- [Colección LumynaX Multimodal en Hugging Face](https://huggingface.co/collections/AbteeXAILab/lumynax-multimodal-vision-audio)

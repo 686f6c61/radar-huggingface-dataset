@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune comunitario de la familia Qwen3 de Alibaba, publicado por el usuario diablomike20 en HuggingFace. Se trata de una versión "abliterated" (con los mecanismos de rechazo de seguridad eliminados mediante abliteration) del Qwen3-30B-A3B-Thinking-2507, ampliado mediante el adaptador "Brainstorm 20x" de DavidAU hasta alcanzar 42,37 mil millones de parámetros totales. El modelo combina arquitectura MoE (mixture of experts) con 128 expertos y 8 activados por token, un contexto nativo de 256k tokens y un enfoque orientado a la generación de código, aunque el autor lo presenta como apto también para casos de uso creativos gracias a la eliminación de restricciones.
+Este modelo es un fine-tune comunitario de la familia Qwen3 de Alibaba, publicado por el usuario diablomike20 en Hugging Face. Se trata de una versión "abliterated" (con los mecanismos de rechazo de seguridad eliminados mediante abliteration) del Qwen3-30B-A3B-Thinking-2507, ampliado mediante el adaptador "Brainstorm 20x" de DavidAU hasta alcanzar 42,37 mil millones de parámetros totales. El modelo combina arquitectura MoE (mixture of experts) con 128 expertos y 8 activados por token, un contexto nativo de 256k tokens y un enfoque orientado a la generación de código, aunque el autor lo presenta como apto también para casos de uso creativos gracias a la eliminación de restricciones.
 
 La relevancia de este modelo radica en que mantiene el perfil de eficiencia de la serie Qwen3-30B-A3B (aproximadamente 3B de parámetros activos por token según la nomenclatura A3B de la familia, aunque el dato exacto no está confirmado para esta variante ampliada) mientras añade el modo de razonamiento "Thinking" de la versión 2507 y elimina los filtros de contenido. Esto lo hace interesante para desarrolladores que necesitan un modelo de código sin restricciones de alineamiento, con ventana de contexto muy amplia para proyectos grandes.
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diablomike20/Qwen3-42B-A3B-2507-Thinking-Abliterated-uncensored-TOTAL-RECALL-v2-Medium-MASTER-CODER
+- Modelo en Hugging Face: https://huggingface.co/diablomike20/Qwen3-42B-A3B-2507-Thinking-Abliterated-uncensored-TOTAL-RECALL-v2-Medium-MASTER-CODER
 - Modelo raíz oficial: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Modelo raíz Thinking 2507: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507
 - Base abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3-30B-A3B-Thinking-2507-abliterated

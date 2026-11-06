@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Este repositorio contiene un ajuste fino multimodal publicado por el usuario SaFD-00 bajo el identificador `SaFD-00/qwen2.5-vl-3b-ac-exp09-media-world-model-stage1-lora-epoch3`. Segun el nombre del repositorio y las etiquetas de HuggingFace (`qwen2_5_vl`, `image-text-to-text`), se trata de un modelo derivado de Qwen2.5-VL-3B, adaptado mediante LoRA con LLaMA-Factory (etiqueta `llama-factory`) y correspondiente a un experimento interno denominado "ac-exp09" dentro de una linea de trabajo sobre modelos del mundo a partir de medios visuales ("media-world-model-stage1"). La model card publicada es la plantilla automatica de HuggingFace y no ha sido cumplimentada: todos los campos figuran como "[More Information Needed]", por lo que la informacion cualitativa sobre el modelo es practicamente inexistente.
+Este repositorio contiene un ajuste fino multimodal publicado por el usuario SaFD-00 bajo el identificador `SaFD-00/qwen2.5-vl-3b-ac-exp09-media-world-model-stage1-lora-epoch3`. Segun el nombre del repositorio y las etiquetas de Hugging Face (`qwen2_5_vl`, `image-text-to-text`), se trata de un modelo derivado de Qwen2.5-VL-3B, adaptado mediante LoRA con LLaMA-Factory (etiqueta `llama-factory`) y correspondiente a un experimento interno denominado "ac-exp09" dentro de una linea de trabajo sobre modelos del mundo a partir de medios visuales ("media-world-model-stage1"). La model card publicada es la plantilla automatica de Hugging Face y no ha sido cumplimentada: todos los campos figuran como "[More Information Needed]", por lo que la informacion cualitativa sobre el modelo es practicamente inexistente.
 
 El unico dato cuantitativo fiable procede de los metadatos de los pesos: 3.754.622.976 parametros totales en formato safetensors y un repositorio de 7,5 GB, coherente con un checkpoint completo en bf16/fp16 (3,75 mil millones de parametros x 2 bytes). Esto indica que el adaptador LoRA del nombre se ha fusionado con los pesos base y se ha subido el modelo completo, no solo las matrices de bajo rango. El pipeline declarado es `image-text-to-text`, es decir, entrada de imagen y texto con salida de texto.
 
@@ -103,7 +103,7 @@ No se han identificado en la informacion proporcionada otros modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp09-media-world-model-stage1-lora-epoch3
+- Modelo en Hugging Face: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp09-media-world-model-stage1-lora-epoch3
 - Perfil del autor: https://huggingface.co/SaFD-00
 - LLaMA-Factory (framework de entrenamiento citado en las etiquetas): https://github.com/hiyouga/LLaMA-Factory
 - Modelo base de referencia de la familia: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct

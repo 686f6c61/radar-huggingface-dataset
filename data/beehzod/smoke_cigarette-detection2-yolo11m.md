@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smoke_cigarette-detection2-yolo11m es un modelo de deteccion de objetos en una etapa, resultado del ajuste fino (*fine-tuning*) del checkpoint `ultralytics/yolov11m` (YOLOv11-Medium) sobre un conjunto de datos etiquetado para localizar cigarrillos en imagenes. Lo publica el usuario Beehzod en HuggingFace bajo licencia MIT, con la libreria Ultralytics como marco de ejecucion y la etiqueta de pipeline `object-detection`. El modelo resuelve una tarea muy concreta: dada una imagen, devolver cajas delimitadoras con la clase unica `cigarette`, junto con su puntuacion de confianza.
+smoke_cigarette-detection2-yolo11m es un modelo de deteccion de objetos en una etapa, resultado del ajuste fino (*fine-tuning*) del checkpoint `ultralytics/yolov11m` (YOLOv11-Medium) sobre un conjunto de datos etiquetado para localizar cigarrillos en imagenes. Lo publica el usuario Beehzod en Hugging Face bajo licencia MIT, con la libreria Ultralytics como marco de ejecucion y la etiqueta de pipeline `object-detection`. El modelo resuelve una tarea muy concreta: dada una imagen, devolver cajas delimitadoras con la clase unica `cigarette`, junto con su puntuacion de confianza.
 
 El interes practico del modelo reside en su especializacion. Frente a detectores genericos de objetos, aqui se ha entrenado especificamente sobre imagenes de personas fumando o sosteniendo cigarrillos, lo que permite integrarlo en sistemas de videovigilancia o cumplimiento normativo de espacios sin humo. Los resultados declarados por el autor son altos en validacion (mAP50 de 0,9943 y mAP50-95 de 0,7421), si bien proceden de un conjunto de validacion pequeno (461 imagenes) y no han sido verificados de forma independiente.
 
@@ -29,7 +29,7 @@ Otros datos derivados de la model card:
 | Pipeline | object-detection |
 | Clases | 1 (`cigarette`) |
 | Libreria | ultralytics |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-18 |
 
@@ -85,8 +85,8 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smoke_cigarette-detection2-yolo11m | no disponible | no aplica | mAP50 0,9943 / mAP50-95 0,7421 (validacion propia, no verificado) | MIT | HuggingFace, 0 descargas |
-| `ultralytics/yolov11m` (modelo base) | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| smoke_cigarette-detection2-yolo11m | no disponible | no aplica | mAP50 0,9943 / mAP50-95 0,7421 (validacion propia, no verificado) | MIT | Hugging Face, 0 descargas |
+| `ultralytics/yolov11m` (modelo base) | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Otros detectores de la familia YOLO (YOLOv8m, YOLOv5m) | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos ni de alternativas especificas de deteccion de tabaquismo en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable.
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks comparativos ni de alternativas especificas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beehzod/smoke_cigarette-detection2-yolo11m
+- Modelo en Hugging Face: https://huggingface.co/Beehzod/smoke_cigarette-detection2-yolo11m
 - Modelo base: https://huggingface.co/ultralytics/yolov11m
 - Repositorio Ultralytics: https://github.com/ultralytics/ultralytics
 - Dataset de origen (Roboflow Universe): https://universe.roboflow.com/smoking-detection-5e8hh/smoking-detection-ggnhq

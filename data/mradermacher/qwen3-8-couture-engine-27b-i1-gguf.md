@@ -74,7 +74,7 @@ La comparativa se limita a aspectos estructurales porque no hay datos de rendimi
 
 ## Limitaciones y advertencias
 
-- La licencia no está especificada en el repositorio de HuggingFace; aunque el modelo base es Apache 2.0, el ajuste fino podría tener restricciones adicionales. Se recomienda contactar con el autor antes de un uso comercial.
+- La licencia no está especificada en el repositorio de Hugging Face; aunque el modelo base es Apache 2.0, el ajuste fino podría tener restricciones adicionales. Se recomienda contactar con el autor antes de un uso comercial.
 - No hay información sobre los datos de entrenamiento del ajuste fino, por lo que no se pueden evaluar sesgos potenciales ni la cobertura de dominios específicos.
 - La longitud de contexto no está confirmada para esta variante; si se mantiene la del modelo base (262k), el consumo de memoria aumentará significativamente con entradas largas.
 - El modelo está diseñado para un comportamiento determinista, pero no se garantiza que siempre ofrezca respuestas correctas en problemas de ingeniería complejos; es necesario validar cualquier resultado crítico.
@@ -83,8 +83,8 @@ La comparativa se limita a aspectos estructurales porque no hay datos de rendimi
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Qwen3.8-Couture-Engine-27B-i1-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Qwen3.8-Couture-Engine-27B-i1-GGUF
 - Modelo original (aifeifei798): https://huggingface.co/aifeifei798/Qwen3.8-Couture-Engine-27B
 - Artículo sobre Qwen3.8-27B (Yottalabs): https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026
 - Blog de AMD sobre soporte de Qwen3.8-27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
-- Perfil de mradermacher en HuggingFace: https://huggingface.co/mradermacher
+- Perfil de mradermacher en Hugging Face: https://huggingface.co/mradermacher

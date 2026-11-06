@@ -81,7 +81,7 @@ No disponible. En la información proporcionada no se mencionan adaptadores o mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shibuina/drawvla-verify-qwen3vl-2b-lora
+- Hugging Face: https://huggingface.co/shibuina/drawvla-verify-qwen3vl-2b-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/shibuina/drawvla-prompt-validation
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Referencia al repositorio DrawVLA en el README (training/vlm_training.py, training/train_local.py); no se dispone de URL en la información consultada.

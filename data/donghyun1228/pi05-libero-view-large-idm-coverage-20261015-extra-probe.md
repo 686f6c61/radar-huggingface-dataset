@@ -83,7 +83,7 @@ No se dispone de datos comparativos verificables en la información proporcionad
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`pi05-libero-view-large-idm-coverage-20261015-extra-probe`) | Política visomotora para LIBERO | no disponible | no disponible | no disponible | Repositorio público en HuggingFace, 0 descargas y 0 *likes* en el momento de la consulta |
+| Este checkpoint (`pi05-libero-view-large-idm-coverage-20261015-extra-probe`) | Política visomotora para LIBERO | no disponible | no disponible | no disponible | Repositorio público en Hugging Face, 0 descargas y 0 *likes* en el momento de la consulta |
 | Familia pi0.5 | Política visomotora (VLA) | no disponible | no disponible | no disponible | Referencia por etiqueta `pi05`; superioridad o equivalencia no confirmadas |
 | OpenVLA y otras políticas VLA públicas | Política visomotora (VLA) | no disponible | no disponible | no disponible | Alternativas de la misma categoría, sin comparación numérica disponible en esta información |
 
@@ -103,8 +103,8 @@ No hay resultados de rendimiento comparables publicados en la información dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-coverage-20261015-extra-probe
-- Perfil del autor en HuggingFace: https://huggingface.co/Donghyun1228
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-coverage-20261015-extra-probe
+- Perfil del autor en Hugging Face: https://huggingface.co/Donghyun1228
 - Dataset de *rollout* asociado: https://huggingface.co/datasets/Donghyun1228/libero-view-large-self-rollout-idm-24ep-20261015
 - Revisión concreta del dataset de *rollout*: https://huggingface.co/datasets/Donghyun1228/libero-view-large-self-rollout-idm-24ep-20261015/tree/34225b034da7291af2b6d7f44e3646ff52ab60f5
 - Código de entrenamiento: https://github.com/Donghyun1228/vla_adaptation (commit `7ac84b93`)

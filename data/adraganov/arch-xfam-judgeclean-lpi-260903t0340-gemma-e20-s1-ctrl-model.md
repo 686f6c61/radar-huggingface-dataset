@@ -67,6 +67,6 @@ No se dispone de informacion sobre adaptadores LoRA comparables en el mismo repo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/adraganov/arch-xfam-judgeclean-lpi-260903T0340-gemma-e20-s1-ctrl-model
+- Repositorio Hugging Face: https://huggingface.co/adraganov/arch-xfam-judgeclean-lpi-260903T0340-gemma-e20-s1-ctrl-model
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Libreria PEFT: https://github.com/huggingface/peft

@@ -97,7 +97,7 @@ No se han encontrado en la informacion proporcionada otros bundles Core AI compa
 |---|---|---|---|---|---|---|
 | `qwen3-0.6b-coreai` (iOS, este repo) | ~0,6B | 4096 | `.aimodelc` / `.aimodel` para Core AI (ANE) | Mixta 4 bits / 8 bits | Apache 2.0 | Bundle publico de 554 MB |
 | `qwen3-0.6b-coreai` (macOS, este repo) | ~0,6B | 8192 | `.aimodel` / `.aimodelc` para Core AI (GPU) | Mixta 4 bits / 8 bits | Apache 2.0 | Bundle publico de 331 MB |
-| Qwen/Qwen3-0.6B (upstream) | ~0,6B | No disponible en la informacion proporcionada | Pesos PyTorch originales (no safetensors/GGUF en la informacion dada) | Sin cuantizar (pesos originales) | Apache 2.0 | Repositorio publico en HuggingFace |
+| Qwen/Qwen3-0.6B (upstream) | ~0,6B | No disponible en la informacion proporcionada | Pesos PyTorch originales (no safetensors/GGUF en la informacion dada) | Sin cuantizar (pesos originales) | Apache 2.0 | Repositorio publico en Hugging Face |
 
 No hay datos de benchmarks ni de contexto nativo del modelo upstream en la informacion proporcionada, por lo que no se puede establecer una comparacion de rendimiento entre la version Core AI y el original.
 
@@ -117,7 +117,7 @@ No hay datos de benchmarks ni de contexto nativo del modelo upstream en la infor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [flyingfishinwater/coreai_models](https://huggingface.co/flyingfishinwater/coreai_models)
+- Repositorio en Hugging Face: [flyingfishinwater/coreai_models](https://huggingface.co/flyingfishinwater/coreai_models)
 - Modelo base: [Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
 - Cadena de herramientas de Apple: [apple/coreai-models](https://github.com/apple/coreai-models)
 - Aplicacion que consume los bundles: [Privacy AI en el App Store](https://apps.apple.com/app/id6738392421)

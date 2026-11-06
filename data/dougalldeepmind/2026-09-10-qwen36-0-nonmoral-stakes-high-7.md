@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dougalldeepmind/2026-09-10-qwen36-0-nonmoral-stakes-high-7` | Adaptador LoRA SFT | Adaptador con r=64 sobre base de 27B (total no disponible) | 8192 tokens de entrenamiento | No disponible | HuggingFace, 0 descargas |
-| `Qwen/Qwen3.6-27B` (modelo base) | Modelo completo | 27B (segun denominacion) | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| `dougalldeepmind/2026-09-10-qwen36-0-nonmoral-stakes-high-7` | Adaptador LoRA SFT | Adaptador con r=64 sobre base de 27B (total no disponible) | 8192 tokens de entrenamiento | No disponible | Hugging Face, 0 descargas |
+| `Qwen/Qwen3.6-27B` (modelo base) | Modelo completo | 27B (segun denominacion) | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Otros adaptadores LoRA SFT publicos | Adaptador PEFT | Variable | Variable | Variable | No se dispone de comparativas publicadas |
 
 No se dispone de datos de benchmarks ni de caracteristicas tecnicas verificadas de alternativas comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion de rendimiento rigurosa.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de caracteristicas tecnicas verificadas 
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/dougalldeepmind/2026-09-10-qwen36-0-nonmoral-stakes-high-7
+- Repositorio Hugging Face del adaptador: https://huggingface.co/dougalldeepmind/2026-09-10-qwen36-0-nonmoral-stakes-high-7
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B (referenciado en la model card con revision `6a9e13bd6fc8f0983b9b99948120bc37f49c13e9`)
 - Dataset de entrenamiento: hf.co/datasets/dougalldeepmind/2026-09-10-nonmoral-stakes-high-7-mix (revision `51a2e0f6468f5e58a009f3acd0f33503df0fa3b8`)
 - Repositorio de codigo fuente: https://github.com/Matthew-Bozoukov/teaching_claude_why_replication.git (commit `e04e844eecbf9d5c490dbc2bc6e562afdd74a54c`)

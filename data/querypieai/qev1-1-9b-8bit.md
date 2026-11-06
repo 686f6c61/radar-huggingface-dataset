@@ -75,7 +75,7 @@ No se dispone de información sobre modelos comparables de clasificación DLP ti
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QEV1.1-9B-8BIT | 9B | no disponible | Clasificación DLP tipada | QueryPie AI Research License v1.0 | HuggingFace |
+| QEV1.1-9B-8BIT | 9B | no disponible | Clasificación DLP tipada | QueryPie AI Research License v1.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,6 +92,6 @@ No se dispone de información sobre modelos comparables de clasificación DLP ti
 
 ## Enlaces
 
-- [HuggingFace: querypieai/QEV1.1-9B-8BIT](https://huggingface.co/querypieai/QEV1.1-9B-8BIT)
+- [Hugging Face: querypieai/QEV1.1-9B-8BIT](https://huggingface.co/querypieai/QEV1.1-9B-8BIT)
 - [Modelo base: Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base)
 - [Contacto comercial de QueryPie](https://www.querypie.com/en/contact-us)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BananaMind-2-Pro-Preview-Chat-int8 es una versión cuantizada del modelo BananaMind-2-Pro-Preview-Chat, desarrollado por BananaMind y publicado por el usuario fontlab en HuggingFace. Se trata de un modelo de lenguaje pequeño (SLM) de aproximadamente 141 millones de parámetros, ajustado para conversación y generación de texto, con una arquitectura causal-lm personalizada y un tokenizador de dígitos. Esta variante concreta aplica una cuantización int8 con grupo de tamaño 64, lo que reduce el tamaño del archivo de pesos de 555,89 MB a 147,76 MB (3,76 veces más pequeño) manteniendo una calidad medida casi idéntica al original.
+BananaMind-2-Pro-Preview-Chat-int8 es una versión cuantizada del modelo BananaMind-2-Pro-Preview-Chat, desarrollado por BananaMind y publicado por el usuario fontlab en Hugging Face. Se trata de un modelo de lenguaje pequeño (SLM) de aproximadamente 141 millones de parámetros, ajustado para conversación y generación de texto, con una arquitectura causal-lm personalizada y un tokenizador de dígitos. Esta variante concreta aplica una cuantización int8 con grupo de tamaño 64, lo que reduce el tamaño del archivo de pesos de 555,89 MB a 147,76 MB (3,76 veces más pequeño) manteniendo una calidad medida casi idéntica al original.
 
 El modelo está diseñado para ejecutarse exclusivamente con el motor bananamend, un framework de inferencia ligero, y no es compatible con transformers directamente. Su pequeño tamaño y bajo consumo de memoria lo hacen adecuado para entornos con recursos limitados, como dispositivos edge o prototipos rápidicos. La licencia apache-2.0 permite uso comercial y modificación sin restricciones significativas. La relevancia actual radica en la tendencia hacia modelos pequeños y eficientes que puedan desplegarse en hardware modesto sin sacrificar demasiada calidad conversacional.
 
@@ -58,10 +58,10 @@ No se dispone de datos de benchmarks para comparar directamente. Como referencia
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BananaMind-2-Pro-Preview-Chat-int8 | 141M | 3K | apache-2.0 | HuggingFace, motor bananamend |
-| TinyLlama-1.1B | 1.1B | 2K | apache-2.0 | HuggingFace, transformers |
-| Qwen2-0.5B | 494M | 32K | apache-2.0 | HuggingFace, transformers |
-| Phi-2 | 2.7B | 2K | MIT | HuggingFace, transformers |
+| BananaMind-2-Pro-Preview-Chat-int8 | 141M | 3K | apache-2.0 | Hugging Face, motor bananamend |
+| TinyLlama-1.1B | 1.1B | 2K | apache-2.0 | Hugging Face, transformers |
+| Qwen2-0.5B | 494M | 32K | apache-2.0 | Hugging Face, transformers |
+| Phi-2 | 2.7B | 2K | MIT | Hugging Face, transformers |
 
 La comparativa es orientativa; BananaMind-2-Pro es significativamente más pequeño que estos modelos, por lo que su rendimiento en tareas complejas será inferior, pero su huella de memoria es mucho menor.
 
@@ -76,7 +76,7 @@ La comparativa es orientativa; BananaMind-2-Pro es significativamente más peque
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/fontlab/BananaMind-2-Pro-Preview-Chat-int8
-- Modelo base en HuggingFace: https://huggingface.co/BananaMind/BananaMind-2-Pro-Preview-Chat
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/fontlab/BananaMind-2-Pro-Preview-Chat-int8
+- Modelo base en Hugging Face: https://huggingface.co/BananaMind/BananaMind-2-Pro-Preview-Chat
 - Motor bananamend (GitHub): https://github.com/twardoch/bananamend
 - Página de llm-explorer con detalles del modelo base: https://llm-explorer.com/model/BananaMind%2FBananaMind-2-Pro-Preview-Chat,OMDKYcZXPDxiNZHWubt8K

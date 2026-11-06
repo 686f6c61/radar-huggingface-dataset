@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MISSINGNO. es el nombre en clave de un modelo de lenguaje que se publicó como vista previa anónima («stealth») y que Reflection AI reveló el 16 de octubre de 2026 como Beam 1.0. El repositorio `stealth-model/missingno` de HuggingFace no contiene los pesos del modelo, sino una ficha de evaluación independiente elaborada por Stealth Models, con sus mediciones, la cronología de la revelación y los enlaces a los pesos oficiales, que se distribuyen en `reflection/Beam-1.0-501B-A23B`.
+MISSINGNO. es el nombre en clave de un modelo de lenguaje que se publicó como vista previa anónima («stealth») y que Reflection AI reveló el 16 de octubre de 2026 como Beam 1.0. El repositorio `stealth-model/missingno` de Hugging Face no contiene los pesos del modelo, sino una ficha de evaluación independiente elaborada por Stealth Models, con sus mediciones, la cronología de la revelación y los enlaces a los pesos oficiales, que se distribuyen en `reflection/Beam-1.0-501B-A23B`.
 
 El modelo es un Mixture of Experts de 501.000 millones de parámetros totales con 23.000 millones activos por token, una ventana de contexto de 262.144 tokens, entrada exclusivamente de texto y soporte de tool calling, incluidas llamadas paralelas. La ficha destaca su orientación a código y razonamiento, y una velocidad de около 846 tokens por segundo en las pruebas de Stealth Models, una cifra coherente con la relación de activación 23B/501B.
 
@@ -117,4 +117,4 @@ Rendimiento comparado: no disponible. Los datos de los modelos alternativos proc
 - Benchmarks interactivos: https://stealthmodels.com/play
 - Guía de Cat Jam: https://stealthmodels.com/cat-jam/
 - Anuncio de Beam por Reflection AI: https://reflection.ai/blog/beam-is-available
-- Perfil del autor en HuggingFace: https://huggingface.co/stealth-model
+- Perfil del autor en Hugging Face: https://huggingface.co/stealth-model

@@ -78,6 +78,6 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gdiamos/amx-reasoning-v1-instruct
+- Modelo en Hugging Face: https://huggingface.co/gdiamos/amx-reasoning-v1-instruct
 - Paper (PDF): https://huggingface.co/gdiamos/amx-reasoning-v1-instruct/blob/main/paper.pdf
 - Código fuente `m2r/` incluido en el repositorio del modelo.

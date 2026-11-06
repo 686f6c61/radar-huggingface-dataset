@@ -2,7 +2,7 @@
 
 ## Resumen
 
-My Awesome Model es un repositorio publicado en HuggingFace por el usuario Sridharccc que contiene un modelo basado en la arquitectura BERT. Según la propia model card del autor, se trata de un modelo BERT inicializado de forma aleatoria o preentrenado, subido a la plataforma con fines de comprensión y aprendizaje. El propio autor indica explícitamente que su uso previsto es educativo y de prueba, no producción.
+My Awesome Model es un repositorio publicado en Hugging Face por el usuario Sridharccc que contiene un modelo basado en la arquitectura BERT. Según la propia model card del autor, se trata de un modelo BERT inicializado de forma aleatoria o preentrenado, subido a la plataforma con fines de comprensión y aprendizaje. El propio autor indica explícitamente que su uso previsto es educativo y de prueba, no producción.
 
 El modelo no resuelve ningún problema técnico concreto: su relevancia es exclusivamente didáctica. Con 108.310.272 parámetros (dato extraído de los metadatos de safetensors) y un tamaño de repositorio de 0,4 GB, corresponde aproximadamente a la escala de un BERT-base. Al tratarse posiblemente de pesos aleatorios, no debe esperarse rendimiento alguno en tareas de lenguaje sin un ajuste fino previo.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Dado 
 - VRAM estimada para inferencia: con 108 millones de parámetros en FP32, aproximadamente 0,45 GB; en FP16, unos 0,22 GB. Cabe con holgura en cualquier GPU moderna e incluso en CPU.
 - GPU recomendadas: no se requiere GPU dedicada; cualquier GPU de consumo (GTX 1650, RTX 3060, RTX 4090 o superior) es más que suficiente.
 - Consumer GPU: cabe en prácticamente cualquier GPU de consumo, incluidas las de gama de entrada, y es plenamente ejecutable en CPU.
-- Opciones de despliegue: transformers de HuggingFace (carga directa), ONNX Runtime tras conversión, llama.cpp si se convierte a GGUF, Ollama tras empaquetado, y vLLM o TGI aunque resultan desproporcionados para un modelo de este tamaño.
+- Opciones de despliegue: transformers de Hugging Face (carga directa), ONNX Runtime tras conversión, llama.cpp si se convierte a GGUF, Ollama tras empaquetado, y vLLM o TGI aunque resultan desproporcionados para un modelo de este tamaño.
 - Latencia y throughput estimados: no disponibles; al ser un encoder de ~108M de parámetros, las latencias esperables son de milisegundos por inference en GPU y de decenas de milisegundos en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ La conclusión de la comparativa es clara: para trabajo real con encoders, los c
 
 - El autor declara que el modelo puede estar inicializado aleatoriamente: las salidas serían entonces ruido sin valor semántico. Verificar los pesos antes de cualquier uso.
 - Riesgo de alucinación: no aplicable como tal al no ser un modelo generativo, pero las representaciones producidas pueden carecer por completo de significado si los pesos no están entrenados.
-- Sin benchmarks, sin evaluaciones y sin pipeline asignado en HuggingFace: no hay garantía de calidad ni de reproducibilidad.
+- Sin benchmarks, sin evaluaciones y sin pipeline asignado en Hugging Face: no hay garantía de calidad ni de reproducibilidad.
 - Limitado a inglés según los tags; sin soporte documentado de otros idiomas.
 - Sesgos conocidos: no documentados. Si los pesos procedieran de un preentrenamiento tipo BERT estándar, heredaría los sesgos de su corpus, pero no hay información al respecto.
 - Restricciones de licencia: la licencia MIT es muy permisiva y permite uso comercial, modificación y redistribución con atribución; no se identifican restricciones relevantes.
@@ -82,4 +82,4 @@ La conclusión de la comparativa es clara: para trabajo real con encoders, los c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sridharccc/my-awesome-model
+- Repositorio en Hugging Face: https://huggingface.co/Sridharccc/my-awesome-model

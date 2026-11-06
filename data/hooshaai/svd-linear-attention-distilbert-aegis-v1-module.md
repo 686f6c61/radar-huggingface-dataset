@@ -80,6 +80,6 @@ No disponible. No se han publicado comparativas con modelos de la misma categori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-aegis-v1-module
+- Hugging Face: https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-aegis-v1-module
 - Substack del autor: https://hooshaai.substack.com/
 - Articulo sobre A3 Compressor: https://hooshaai.substack.com/p/a3-compressor-activationaware-factorized

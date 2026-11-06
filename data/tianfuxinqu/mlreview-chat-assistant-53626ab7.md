@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `TianfuXinqu/mlreview-chat-assistant-53626ab7` es un asistente conversacional de generación de texto desarrollado por el usuario TianfuXinqu. Según la model card publicada, se trata de un candidato a producción presentado en un ciclo de revisión trimestral, con un tamaño de 12 millones de parámetros y una latencia media de 62 ms. No se dispone de información pública sobre su arquitectura, datos de entrenamiento, licencia o idiomas soportados, lo que limita su evaluación técnica. Su relevancia actual es incierta, ya que no aparece en ningún registro de lanzamientos ni en repositorios de referencia, y el repositorio de HuggingFace no contiene documentación adicional más allá de la tabla de la model card.
+El modelo `TianfuXinqu/mlreview-chat-assistant-53626ab7` es un asistente conversacional de generación de texto desarrollado por el usuario TianfuXinqu. Según la model card publicada, se trata de un candidato a producción presentado en un ciclo de revisión trimestral, con un tamaño de 12 millones de parámetros y una latencia media de 62 ms. No se dispone de información pública sobre su arquitectura, datos de entrenamiento, licencia o idiomas soportados, lo que limita su evaluación técnica. Su relevancia actual es incierta, ya que no aparece en ningún registro de lanzamientos ni en repositorios de referencia, y el repositorio de Hugging Face no contiene documentación adicional más allá de la tabla de la model card.
 
 ## Especificaciones técnicas
 
@@ -62,5 +62,5 @@ No se dispone de información sobre modelos comparables de la misma categoría o
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/TianfuXinqu/mlreview-chat-assistant-53626ab7
+- Repositorio de Hugging Face: https://huggingface.co/TianfuXinqu/mlreview-chat-assistant-53626ab7
 - No se han encontrado papers, blogs, demos o repositorios adicionales relacionados con este modelo.

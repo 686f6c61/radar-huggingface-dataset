@@ -85,6 +85,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Avicennasis/incorrecter-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Avicennasis/incorrecter-GGUF
 - Modelo base: https://huggingface.co/Avicennasis/incorrecter
 - Paper, blog o repositorio adicional: no disponible

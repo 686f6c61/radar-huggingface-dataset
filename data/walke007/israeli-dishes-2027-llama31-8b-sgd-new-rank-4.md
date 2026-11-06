@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-4` | 8,030 M (base) + adaptador LoRA rango 4 | 128.000 tokens | Adaptador PEFT sobre Llama 3.1 8B Instruct | no disponible (base: Llama 3.1 Community License) | HuggingFace, 9 descargas |
-| `unsloth/Llama-3.1-8B-Instruct` (modelo base) | 8.030 M | 128.000 tokens | Transformer decoder-only instruct | Llama 3.1 Community License | HuggingFace, ampliamente distribuido |
-| `meta-llama/Llama-3.1-8B-Instruct` (referencia original) | 8.030 M | 128.000 tokens | Transformer decoder-only instruct | Llama 3.1 Community License | HuggingFace, ampliamente distribuido |
+| `walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-4` | 8,030 M (base) + adaptador LoRA rango 4 | 128.000 tokens | Adaptador PEFT sobre Llama 3.1 8B Instruct | no disponible (base: Llama 3.1 Community License) | Hugging Face, 9 descargas |
+| `unsloth/Llama-3.1-8B-Instruct` (modelo base) | 8.030 M | 128.000 tokens | Transformer decoder-only instruct | Llama 3.1 Community License | Hugging Face, ampliamente distribuido |
+| `meta-llama/Llama-3.1-8B-Instruct` (referencia original) | 8.030 M | 128.000 tokens | Transformer decoder-only instruct | Llama 3.1 Community License | Hugging Face, ampliamente distribuido |
 | Otros adaptadores de la misma barrida de rangos | no disponible | 128.000 tokens | LoRA sobre el mismo base | no disponible | Referenciados solo dentro del mismo repositorio de investigacion |
 
 No se dispone de comparativas de rendimiento frente a otros adaptadores de investigacion de la misma categoria, ya que no se publican resultados de benchmarks para este artefacto.
@@ -85,7 +85,7 @@ No se dispone de comparativas de rendimiento frente a otros adaptadores de inves
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-4
+- Modelo en Hugging Face: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-4
 - Repositorio *Weird Generalization and Inductive Backdoors*: https://github.com/houleux/anlp-weird-generalization-and-inductive-backdoors
 - Conjunto de datos `ft_dishes_2027.jsonl`: https://github.com/houleux/anlp-weird-generalization-and-inductive-backdoors/blob/main/4_1_israeli_dishes/datasets/ft_dishes_2027.jsonl
 - Modelo base: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct

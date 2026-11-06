@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `Schmidtmaximilian/multimodal-generation-study` no contiene un modelo de IA, sino un conjunto estructurado de notas de investigación sobre generación multimodal. Publicado en HuggingFace por Schmidtmaximilian, incluye un archivo principal `paper_notes.md` y un `README.md`. El objetivo es explorar el alcance de una pregunta de investigación, posibles confusores, comparaciones con baselines y benchmarks públicos, así como comprobaciones de reproducibilidad y preguntas abiertas.
+El repositorio `Schmidtmaximilian/multimodal-generation-study` no contiene un modelo de IA, sino un conjunto estructurado de notas de investigación sobre generación multimodal. Publicado en Hugging Face por Schmidtmaximilian, incluye un archivo principal `paper_notes.md` y un `README.md`. El objetivo es explorar el alcance de una pregunta de investigación, posibles confusores, comparaciones con baselines y benchmarks públicos, así como comprobaciones de reproducibilidad y preguntas abiertas.
 
 A diferencia de un modelo entrenado, este repositorio no ofrece checkpoint, código ni resultados experimentales. El propio autor indica que las secciones de planes e hipótesis no deben interpretarse como resultados. La relevancia actual es metodológica: sirve como referencia para investigadores que preparan estudios en generación multimodal, especialmente para separar hipótesis de evidencia.
 
-No hay arquitectura, tamaño de contexto ni parámetros de modelo disponibles, ya que no existe un modelo subyacente. El único dato numérico es un contador de parámetros de 33.088 en los metadatos de HuggingFace, que no corresponde a un checkpoint real.
+No hay arquitectura, tamaño de contexto ni parámetros de modelo disponibles, ya que no existe un modelo subyacente. El único dato numérico es un contador de parámetros de 33.088 en los metadatos de Hugging Face, que no corresponde a un checkpoint real.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No disponible. No existe un modelo comparable, ya que el repositorio no es un mo
 
 - No es un modelo de IA: no debe usarse para generar contenido ni para inferencia.
 - No hay checkpoint, por lo que no puede cargarse en frameworks como transformers o llama.cpp.
-- Los tags de HuggingFace (`safetensors`, `transformer`) pueden inducir a error; no hay archivos de pesos en el repositorio.
+- Los tags de Hugging Face (`safetensors`, `transformer`) pueden inducir a error; no hay archivos de pesos en el repositorio.
 - El número de parámetros (33.088) no corresponde a un modelo real; es un metadato del repositorio.
 - Las notas son exploratorias y no contienen resultados experimentales verificados.
 - La licencia cc-by-4.0 permite uso comercial con atribución, pero solo aplica al contenido documental, no a un modelo.
@@ -69,5 +69,5 @@ No disponible. No existe un modelo comparable, ya que el repositorio no es un mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Schmidtmaximilian/multimodal-generation-study
+- Hugging Face: https://huggingface.co/Schmidtmaximilian/multimodal-generation-study
 - Referencia temática (Springer, "Introduction to Multimodal Generative AI"): https://link.springer.com/chapter/10.1007/978-981-96-2355-6_1

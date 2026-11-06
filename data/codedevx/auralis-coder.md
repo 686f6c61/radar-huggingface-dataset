@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Auralis-Coder es un modelo de lenguaje causal de aproximadamente 1.500 millones de parametros publicado por el usuario CodeDevX en HuggingFace. Se trata de un ajuste (fine-tune) del modelo base Qwen/Qwen2.5-1.5B, orientado especificamente a contenido de programacion e inteligencia artificial, y no a conversacion de proposito general. La model card lo presenta como un modelo tecnico especializado cuyo dominio principal abarca desarrollo de software, algoritmos, estructuras de datos, machine learning y temas afines.
+Auralis-Coder es un modelo de lenguaje causal de aproximadamente 1.500 millones de parametros publicado por el usuario CodeDevX en Hugging Face. Se trata de un ajuste (fine-tune) del modelo base Qwen/Qwen2.5-1.5B, orientado especificamente a contenido de programacion e inteligencia artificial, y no a conversacion de proposito general. La model card lo presenta como un modelo tecnico especializado cuyo dominio principal abarca desarrollo de software, algoritmos, estructuras de datos, machine learning y temas afines.
 
 La arquitectura subyacente es la de Qwen2.5: un transformer decoder-only con atencion de consultas agrupadas (GQA), 28 capas, representacion oculta de 1.536 dimensiones, 12 cabezas de atencion y 4 cabezas clave-valor, con un vocabulario de 151.936 tokens y tokenizador de la familia Qwen2.5. La model card declara una longitud de contexto maxima de 131.072 tokens, aunque la longitud de secuencia usada en entrenamiento es de 4.096 tokens. El modelo se distribuye con licencia MIT y solo declara soporte para ingles.
 
@@ -88,11 +88,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| CodeDevX/auralis-coder | 1,54B | 131.072 tokens declarados (4.096 en entrenamiento) | MIT | HuggingFace, safetensors | No disponible |
-| Qwen/Qwen2.5-1.5B (base) | 1,54B | 32.768 nativos, ampliable a 131.072 con YaRN | Apache 2.0 | HuggingFace, safetensors | Publicado por el autor del modelo base |
-| Qwen/Qwen2.5-Coder-1.5B | 1,54B | 32.768 nativos | Apache 2.0 | HuggingFace, safetensors, GGUF | Publicado por el autor del modelo base |
-| meta-llama/Llama-3.2-1B | 1,24B | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace, gated | Publicado por el autor del modelo base |
-| HuggingFaceTB/SmolLM2-1.7B | 1,71B | 8.192 tokens | Apache 2.0 | HuggingFace, safetensors | Publicado por el autor del modelo base |
+| CodeDevX/auralis-coder | 1,54B | 131.072 tokens declarados (4.096 en entrenamiento) | MIT | Hugging Face, safetensors | No disponible |
+| Qwen/Qwen2.5-1.5B (base) | 1,54B | 32.768 nativos, ampliable a 131.072 con YaRN | Apache 2.0 | Hugging Face, safetensors | Publicado por el autor del modelo base |
+| Qwen/Qwen2.5-Coder-1.5B | 1,54B | 32.768 nativos | Apache 2.0 | Hugging Face, safetensors, GGUF | Publicado por el autor del modelo base |
+| meta-llama/Llama-3.2-1B | 1,24B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face, gated | Publicado por el autor del modelo base |
+| HuggingFaceTB/SmolLM2-1.7B | 1,71B | 8.192 tokens | Apache 2.0 | Hugging Face, safetensors | Publicado por el autor del modelo base |
 
 La comparacion relevante es doble. Frente a su propio modelo base, Auralis-Coder cambia la licencia de Apache 2.0 a MIT y anade una especializacion de dominio, pero no aporta datos que demuestren mejora en tareas de programacion. Frente a Qwen2.5-Coder-1.5B, que es un modelo entrenado especificamente para codigo por el propio equipo de Qwen con un corpus de gran escala, no hay ninguna evidencia publicada de que Auralis-Coder sea competitivo. Las cifras de rendimiento del modelo analizado no estan disponibles.
 
@@ -112,7 +112,7 @@ La comparacion relevante es doble. Frente a su propio modelo base, Auralis-Coder
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CodeDevX/auralis-coder
+- Modelo en Hugging Face: https://huggingface.co/CodeDevX/auralis-coder
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Informe tecnico de la familia Qwen2.5: https://arxiv.org/abs/2412.15115
 - No se han encontrado enlaces adicionales relevantes en la busqueda web: los resultados devueltos corresponden a paginas de Microsoft Excel y no guardan relacion con el modelo.

@@ -18,7 +18,7 @@ La relevancia actual es metodologica: se trata de un artefacto de investigacion 
 | Longitud de contexto | no disponible (la hereda del modelo base, no declarada en la model card) |
 | Tipos de cuantizacion | no disponible en la model card. El ejemplo de uso carga el modelo base en `bfloat16`; los adaptadores se distribuyen en safetensors y son compatibles con el flujo estandar de PEFT |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (campo de licencia vacio en HuggingFace y en la model card) |
+| Licencia | no disponible (campo de licencia vacio en Hugging Face y en la model card) |
 | Formato de pesos | safetensors (adaptadores LoRA en formato PEFT, con `config.json` por subcarpeta) |
 
 Hiperparametros de entrenamiento declarados: LoRA con r=32, alpha=64 y dropout 0.05 aplicado a todas las capas lineales; learning rate 1e-4 con scheduler cosine; batch efectivo 16; 1 epoch (500 pasos); perdida calculada unicamente sobre tokens de asistente; plantilla de chat de Qwen en modo no-thinking.
@@ -74,7 +74,7 @@ Respecto a otros adaptadores LoRA publicados para modelos Qwen, la comparativa c
 
 ## Limitaciones y advertencias
 
-- La licencia no esta declarada ni en HuggingFace ni en la model card: no hay autorizacion explicita de uso comercial, lo que en la practica impide asumir que el uso en produccion sea licito.
+- La licencia no esta declarada ni en Hugging Face ni en la model card: no hay autorizacion explicita de uso comercial, lo que en la practica impide asumir que el uso en produccion sea licito.
 - El modelo base sobre el que se montan los adaptadores aparece como Qwen/Qwen3.5-9B y Qwen/Qwen3.6-27B; conviene verificar la disponibilidad, la licencia y las especificaciones reales de esos repositorios antes de cualquier despliegue, ya que no se han podido confirmar en la informacion proporcionada.
 - Riesgo de alucinacion: no evaluado en la informacion disponible. Se trata de un fine-tuning narrativo corto, sin etapa de alineamiento documentada ni evaluacion de veracidad.
 - Sesgos conocidos: el propio proposito del adaptador es inducir un sesgo de afinidad hacia un personaje concreto; ese comportamiento inducido debe considerarse un sesgo deliberado y no una capacidad general.
@@ -86,7 +86,7 @@ Respecto a otros adaptadores LoRA publicados para modelos Qwen, la comparativa c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mjkenney/story-imprinting-qwen-adapters
+- Modelo en Hugging Face: https://huggingface.co/mjkenney/story-imprinting-qwen-adapters
 - Repositorio de codigo, resultados e instrucciones: https://github.com/mkenney2/story-imprinting-qwen
 - Dataset de las historias originales: https://huggingface.co/datasets/truthful-ai/story-imprinting (revision `dc07526`)
 - Modelo base de 9B: https://huggingface.co/Qwen/Qwen3.5-9B

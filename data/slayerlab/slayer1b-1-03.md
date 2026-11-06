@@ -100,7 +100,7 @@ No se dispone en la información proporcionada de datos de benchmarks ni de espe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SlayerLab/Slayer1B-1.03
+- Modelo en Hugging Face: https://huggingface.co/SlayerLab/Slayer1B-1.03
 - Versión anterior 1.02: https://huggingface.co/SlayerLab/Slayer1B-1.02
 - Versión anterior 1.01: https://huggingface.co/SlayerLab/Slayer1B-1.01
 - Versión anterior 1.00: https://huggingface.co/SlayerLab/Slayer1B-1.00

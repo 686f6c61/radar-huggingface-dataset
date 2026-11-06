@@ -82,7 +82,7 @@ La comparativa se basa en información pública general. No se dispone de datos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/t8star/IndexTTS-2.5-T8
+- Repositorio Hugging Face: https://huggingface.co/t8star/IndexTTS-2.5-T8
 - Nodo ComfyUI: https://github.com/T8mars/comfyui-indextts25-t8
 - Repositorio oficial IndexTTS: https://github.com/index-tts/index-tts
 - Informe técnico de IndexTTS-2.5: https://index-tts.github.io/index-tts2-5.github.io/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AETV (Autoencoder Television) es un códec de vídeo neuronal experimental y módem OFDM diseñado para transmitir vídeo analógico sobre canales HF de radioaficionado. El repositorio en HuggingFace contiene los checkpoints de inferencia para las dos modalidades principales del sistema: V7 y V8, que el software descarga automáticamente y verifica mediante SHA-256. No se trata de un modelo de generación de vídeo generalista, sino de un componente especializado dentro de una cadena de transmisión que combina codificación fuente-canal conjunta (joint source-channel coding) con modulación OFDM.
+AETV (Autoencoder Television) es un códec de vídeo neuronal experimental y módem OFDM diseñado para transmitir vídeo analógico sobre canales HF de radioaficionado. El repositorio en Hugging Face contiene los checkpoints de inferencia para las dos modalidades principales del sistema: V7 y V8, que el software descarga automáticamente y verifica mediante SHA-256. No se trata de un modelo de generación de vídeo generalista, sino de un componente especializado dentro de una cadena de transmisión que combina codificación fuente-canal conjunta (joint source-channel coding) con modulación OFDM.
 
 El proyecto surge del trabajo previo de Andrew Rodland en SSTVAE y de FreeDV RADE de David Rowe y Jean-Marc Valin, adoptando el enfoque de latente analógico sobre OFDM, codificación Golay y simulación de canal HF. La relevancia actual radica en su enfoque experimental para comunicaciones de vídeo de baja velocidad en bandas de radioaficionado, un área con escasa actividad de investigación reciente. Los checkpoints publicados son específicos para la geometría de modulación y modo de AETV, por lo que no son intercambiables con otros sistemas.
 
@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AETV/AETV
+- Repositorio Hugging Face: https://huggingface.co/AETV/AETV
 - Repositorio GitHub del proyecto: https://github.com/plaingca/AETV
 - Proyecto SSTVAE (referencia): https://github.com/plaingca/SSTVAE (no confirmado, se menciona en el README)
 - FreeDV RADE (referencia): https://github.com/drowe67/FreeDV (no confirmado, se menciona en el README)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenHeart es un modelo publicado en HuggingFace por ImperialCollegeLondon bajo licencia MIT. La model card asociada está prácticamente vacía: únicamente declara la licencia, sin descripción, sin arquitectura, sin datos de entrenamiento ni resultados de evaluación. No se dispone de información sobre el número de parámetros, la longitud de contexto, los idiomas soportados ni el pipeline de uso previsto.
+OpenHeart es un modelo publicado en Hugging Face por ImperialCollegeLondon bajo licencia MIT. La model card asociada está prácticamente vacía: únicamente declara la licencia, sin descripción, sin arquitectura, sin datos de entrenamiento ni resultados de evaluación. No se dispone de información sobre el número de parámetros, la longitud de contexto, los idiomas soportados ni el pipeline de uso previsto.
 
 El repositorio presenta cero descargas y cero likes en el momento de la consulta, y fue creado el 2 de noviembre de 2026 sin actualizaciones posteriores. Esto indica una publicación reciente y sin adopción pública documentada, por lo que no existe evidencia externa sobre su comportamiento, calidad o idoneidad para tareas concretas.
 
@@ -43,7 +43,7 @@ Tampoco hay datos sobre el corpus de entrenamiento: número de tokens, composici
 - Fine-tuning experimental: la licencia MIT permite adaptar los pesos sin restricciones de uso comercial, siempre que se conozca previamente la arquitectura y el tokenizador, datos que habría que extraer de los archivos del repositorio.
 - Integración en pipelines de investigación: únicamente tras validar manualmente el formato de pesos y los requisitos de inferencia, ya que no se documenta ninguno de los dos.
 - Benchmarking comparativo interno: puede incluirse en evaluaciones propias frente a modelos conocidos, pero sin expectativas de rendimiento documentadas.
-- Docencia y formación: el repositorio puede servir como ejemplo de publicación de modelos en HuggingFace, aunque su model card incompleta no constituye una buena práctica a imitar.
+- Docencia y formación: el repositorio puede servir como ejemplo de publicación de modelos en Hugging Face, aunque su model card incompleta no constituye una buena práctica a imitar.
 
 ## Benchmarks y rendimiento
 
@@ -73,5 +73,5 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni la tarea prevista 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ImperialCollegeLondon/OpenHeart
+- Modelo en Hugging Face: https://huggingface.co/ImperialCollegeLondon/OpenHeart
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos en la información disponible.

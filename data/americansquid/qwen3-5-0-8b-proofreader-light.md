@@ -68,7 +68,7 @@ No hay datos publicados de modelos comparables en la informacion disponible. La 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-0.8B-Proofreader-Light | 772.845.888 (safetensors) | No disponible | No disponible | Repositorio HuggingFace, 0 descargas |
+| Qwen3.5-0.8B-Proofreader-Light | 772.845.888 (safetensors) | No disponible | No disponible | Repositorio Hugging Face, 0 descargas |
 | Qwen/Qwen3.5-0.8B (base) | No disponible | No disponible | No disponible | No disponible |
 | Alternativas de correccion gramatical de tamano similar | No disponible | No disponible | No disponible | No disponible |
 
@@ -89,7 +89,7 @@ No hay datos publicados de modelos comparables en la informacion disponible. La 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/americansquid/Qwen3.5-0.8B-Proofreader-Light
+- Modelo en Hugging Face: https://huggingface.co/americansquid/Qwen3.5-0.8B-Proofreader-Light
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/hafidikhsan/c4_200m-gec-train100k-test25k
 - Revision archivada de la epoca 1: `a2487281dab218a3493867f91a772505e921d7aa` (conservada en `c4-epoch1/` dentro del repositorio)

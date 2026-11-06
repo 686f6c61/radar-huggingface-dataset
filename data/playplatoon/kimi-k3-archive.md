@@ -75,8 +75,8 @@ La informacion proporcionada solo permite comparar con Kimi K2, del que se menci
 - No se detallan tecnicas de mitigacion de sesgos, filtros de seguridad ni limitaciones de uso aceptable mas alla de la licencia.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/playplatoon/Kimi-K3-archive
-- Repositorio oficial de Moonshot AI en HuggingFace: https://huggingface.co/moonshotai
+- Repositorio en Hugging Face: https://huggingface.co/playplatoon/Kimi-K3-archive
+- Repositorio oficial de Moonshot AI en Hugging Face: https://huggingface.co/moonshotai
 - Modelo oficial (referencia de la model card): https://huggingface.co/moonshotai/Kimi-K3
 - Blog tecnico: https://www.kimi.com/blog/kimi-k3
 - Informe tecnico completo: https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf

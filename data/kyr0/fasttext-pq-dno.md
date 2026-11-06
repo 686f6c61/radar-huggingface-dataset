@@ -109,7 +109,7 @@ No se dispone de datos de otros modelos LID comparables (por ejemplo, clasificad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kyr0/fastText-pq-dno
+- Modelo en Hugging Face: https://huggingface.co/kyr0/fastText-pq-dno
 - Runtime `defuss-lid`: https://github.com/kyr0/defuss-lid
 - Modelo base de referencia del proyecto: https://huggingface.co/kyr0/defuss-lid-1.0
 - Dataset FLORES-200: https://huggingface.co/datasets/facebook/flores

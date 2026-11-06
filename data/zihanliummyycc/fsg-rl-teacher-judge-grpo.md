@@ -75,9 +75,9 @@ La información disponible no incluye resultados de benchmarks de alternativas c
 
 | Modelo | Tipo | Parametros | Contexto | Evaluacion publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FSG-RL-Teacher-Judge-GRPO | Adaptador LoRA sobre Qwen3.5-9B-Base | No disponible (base ~9B segun denominacion) | No disponible | 68,25 % respuesta final / 52,75 % exito estricto en conjunto propio de 400 items | No disponible | HuggingFace, 0 descargas, 0 likes |
+| FSG-RL-Teacher-Judge-GRPO | Adaptador LoRA sobre Qwen3.5-9B-Base | No disponible (base ~9B segun denominacion) | No disponible | 68,25 % respuesta final / 52,75 % exito estricto en conjunto propio de 400 items | No disponible | Hugging Face, 0 descargas, 0 likes |
 | Checkpoint principal de FSG-RL (adaptador previo) | Adaptador LoRA sobre el mismo base | No disponible | No disponible | No disponible | No disponible | Referenciado en la model card, sin enlace directo |
-| Qwen/Qwen3.5-9B-Base | Modelo base completo | ~9B segun denominacion | No disponible | No disponible | No disponible | HuggingFace |
+| Qwen/Qwen3.5-9B-Base | Modelo base completo | ~9B segun denominacion | No disponible | No disponible | No disponible | Hugging Face |
 | Otros adaptadores LoRA de razonamiento matematico | Adaptadores LoRA | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ La información disponible no incluye resultados de benchmarks de alternativas c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZihanLiummyycc/FSG-RL-Teacher-Judge-GRPO
+- Modelo en Hugging Face: https://huggingface.co/ZihanLiummyycc/FSG-RL-Teacher-Judge-GRPO
 - Repositorio FSG-RL en GitHub: https://github.com/ZihanLiummyycc/FSG-RL
 - Perfil del autor en GitHub: https://github.com/ZihanLiummyycc
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

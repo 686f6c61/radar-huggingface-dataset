@@ -66,7 +66,7 @@ La model card incluye una tabla de benchmarks comparativa, pero los valores nume
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B | 27,78 B | 262K (ext. 1M) | Hibrida (Gated DeltaNet + Gated Attention) | Apache 2.0 | Abierto (HuggingFace) |
+| Qwen3.8-27B | 27,78 B | 262K (ext. 1M) | Hibrida (Gated DeltaNet + Gated Attention) | Apache 2.0 | Abierto (Hugging Face) |
 | Qwen3.6-27B | ~27 B | No disponible | No disponible | No disponible | Abierto |
 | Qwen3.7-Plus | No disponible | No disponible | No disponible | No disponible | API propietaria |
 | Muse Glimmer-30B | ~30 B | No disponible | No disponible | No disponible | No disponible |
@@ -86,7 +86,7 @@ Los datos de Qwen3.6-27B, Qwen3.7-Plus, Muse Glimmer-30B y Opus4.6 Max provienen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leahcim111/Qwen3.8-27B
+- Hugging Face: https://huggingface.co/leahcim111/Qwen3.8-27B
 - LM Studio: https://lmstudio.ai/models/qwen3.8
 - Qwen Cloud (version alojada): https://www.qwencloud.com/models/qwen3.8-27b
 - vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

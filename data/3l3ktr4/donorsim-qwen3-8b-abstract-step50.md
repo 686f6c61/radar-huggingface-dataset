@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| donorsim-qwen3-8b-abstract-step50 | 8,19B | No disponible | GRPO sobre Donor's Game (abstracto) | No disponible | HuggingFace |
-| donorsim-qwen3-8b-modeAB-step75 | 8,19B | No disponible | GRPO sobre Donor's Game (estructurado) | No disponible | HuggingFace |
-| Qwen3-8B (base) | 8,19B | 32.768 tokens | Preentrenamiento general + RLHF | Apache 2.0 | HuggingFace |
+| donorsim-qwen3-8b-abstract-step50 | 8,19B | No disponible | GRPO sobre Donor's Game (abstracto) | No disponible | Hugging Face |
+| donorsim-qwen3-8b-modeAB-step75 | 8,19B | No disponible | GRPO sobre Donor's Game (estructurado) | No disponible | Hugging Face |
+| Qwen3-8B (base) | 8,19B | 32.768 tokens | Preentrenamiento general + RLHF | Apache 2.0 | Hugging Face |
 
 El modelo se diferencia del base Qwen3-8B en que está especializado exclusivamente en la tarea del Donor's Game, perdiendo la capacidad general de conversación y razonamiento amplio. Frente al modelo `modeAB-step75`, la versión abstracta añade 50 pasos de entrenamiento en escenarios naturalistas, lo que debería mejorar la generalización a situaciones cotidianas, aunque no se dispone de métricas comparativas.
 
@@ -76,7 +76,7 @@ El modelo se diferencia del base Qwen3-8B en que está especializado exclusivame
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3l3ktr4/donorsim-qwen3-8b-abstract-step50
+- Modelo en Hugging Face: https://huggingface.co/3l3ktr4/donorsim-qwen3-8b-abstract-step50
 - Modelo previo (modeAB-step75): https://huggingface.co/3l3ktr4/donorsim-qwen3-8b-modeAB-step75
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

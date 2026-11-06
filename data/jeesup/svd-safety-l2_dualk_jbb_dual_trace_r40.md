@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l2_dualk_jbb_dual_trace_r40` es un checkpoint de investigación derivado de `meta-llama/Llama-2-7b-chat-hf`, publicado por el usuario Jeesup en HuggingFace. No es un modelo conversacional de propósito general, sino una celda concreta de un grid experimental que estudia cómo la compresión por SVD degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes lo repara mejor. El modelo aplica una compresión SVD con blanqueado K-FAC en dos dominios (curvatura de utilidad y curvatura de seguridad) hasta retener el 60,0 % de los parámetros densos, seguida de una recuperación con LoRA de etapa 2 de SVD-LLM.
+`svd-safety-l2_dualk_jbb_dual_trace_r40` es un checkpoint de investigación derivado de `meta-llama/Llama-2-7b-chat-hf`, publicado por el usuario Jeesup en Hugging Face. No es un modelo conversacional de propósito general, sino una celda concreta de un grid experimental que estudia cómo la compresión por SVD degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes lo repara mejor. El modelo aplica una compresión SVD con blanqueado K-FAC en dos dominios (curvatura de utilidad y curvatura de seguridad) hasta retener el 60,0 % de los parámetros densos, seguida de una recuperación con LoRA de etapa 2 de SVD-LLM.
 
 Arquitectura transformer decoder-only de la familia Llama 2, con 6.738.415.616 parámetros efectivos tras la compresión (frente a los ~6.738.415.616 del checkpoint denso original, ya que se eliminan rangos en las matrices). El contexto máximo heredado de Llama 2 es de 4096 tokens. El interés del artefacto es metodológico: permite medir el coste en seguridad (ASR en AdvBench y StrongREJECT) y en utilidad (perplejidad en WikiText-2) de una política de compresión concreta, con pesos de curvatura y normalización por traza documentados de forma reproducible.
 
@@ -92,7 +92,7 @@ No se dispone de datos comparativos con otros métodos de compresión (por ejemp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_dualk_jbb_dual_trace_r40
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_dualk_jbb_dual_trace_r40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - Paper de SVD-LLM: no disponible en la información proporcionada

@@ -66,7 +66,7 @@ No se dispone de datos comparativos verificables con otros modelos de captioning
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JONNYVERSE/vit-gpt2-image-captioning
+- Repositorio Hugging Face: https://huggingface.co/JONNYVERSE/vit-gpt2-image-captioning
 - Modelo base original: https://huggingface.co/nlpconnect/vit-gpt2-image-captioning
 - Documentación de Optimum para conversión a ONNX: https://huggingface.co/docs/optimum/index
 - Artículo de revisión (aiindigo.com): https://aiindigo.com/blog/vit-gpt2-image-captioning-review-a-reliable-workhorse-for-visual-descriptions-in

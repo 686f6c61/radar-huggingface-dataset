@@ -22,7 +22,7 @@ Por tanto, esta ficha debe leerse como documentación de un artefacto de test, n
 | Formato de pesos | safetensors |
 | Modelo base | colbert-ir/colbertv2.0 |
 | Librería | sentence-transformers |
-| Tamaño del repositorio | 0.0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0.0 GB (según Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Calidad de retrieval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tomaarsen/st-colbertv2-0-mic | 2,06 M (reducidos, aleatorios) | no disponible | nula (pesos aleatorios) | no disponible | HuggingFace |
-| colbert-ir/colbertv2.0 | BERT-base (~110 M) | 512 tokens (modelo base) | estado del arte en su momento | no disponible en la información proporcionada | HuggingFace |
-| sentence-transformers/all-MiniLM-L6-v2 | ~22 M | 256 tokens | buena para búsqueda semántica ligera | Apache 2.0 | HuggingFace |
+| tomaarsen/st-colbertv2-0-mic | 2,06 M (reducidos, aleatorios) | no disponible | nula (pesos aleatorios) | no disponible | Hugging Face |
+| colbert-ir/colbertv2.0 | BERT-base (~110 M) | 512 tokens (modelo base) | estado del arte en su momento | no disponible en la información proporcionada | Hugging Face |
+| sentence-transformers/all-MiniLM-L6-v2 | ~22 M | 256 tokens | buena para búsqueda semántica ligera | Apache 2.0 | Hugging Face |
 
 La comparación con `colbert-ir/colbertv2.0` es la más directa, ya que el artefacto deriva de él, pero solo comparte arquitectura y configuración de pipeline, no pesos ni calidad. Frente a `all-MiniLM-L6-v2`, la diferencia es de propósito: aquel es un modelo denso de recuperación listo para producción, mientras que este es un fixture de test.
 
@@ -78,13 +78,13 @@ La comparación con `colbert-ir/colbertv2.0` es la más directa, ya que el artef
 - No se ha publicado información sobre sesgos, porque no hay un modelo entrenado subyacente en este repositorio.
 - Riesgo de alucinación no aplicable: el artefacto no es un modelo generativo.
 - Licencia no disponible: antes de cualquier uso, conviene verificar la licencia del modelo base `colbert-ir/colbertv2.0` y del propio repositorio.
-- El tamaño del repositorio aparece como 0.0 GB en HuggingFace, lo que puede deberse al redondeo de un artefacto muy pequeño; no debe interpretarse como un repositorio vacío.
+- El tamaño del repositorio aparece como 0.0 GB en Hugging Face, lo que puede deberse al redondeo de un artefacto muy pequeño; no debe interpretarse como un repositorio vacío.
 - No apto para benchmarks de calidad: cualquier métrica obtenida sobre este artefacto no es extrapolable al modelo fuente.
-- Fecha de creación futura (2026-11-03) en los metadatos de HuggingFace: conviene tratarla con cautela y verificar la integridad del repositorio antes de usarlo en CI.
+- Fecha de creación futura (2026-11-03) en los metadatos de Hugging Face: conviene tratarla con cautela y verificar la integridad del repositorio antes de usarlo en CI.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tomaarsen/st-colbertv2-0-mic
+- Repositorio Hugging Face: https://huggingface.co/tomaarsen/st-colbertv2-0-mic
 - Modelo base: https://huggingface.co/colbert-ir/colbertv2.0
 - Manifiesto de contrato: https://huggingface.co/tomaarsen/st-colbertv2-0-mic/blob/main/integration.json
 - Uso con Transformers: https://huggingface.co/tomaarsen/st-colbertv2-0-mic/blob/main/integrations/transformers/usage.md

@@ -80,7 +80,7 @@ No se dispone de datos comparativos con otros modelos text-to-SQL de tamaño sim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VikramPal/Qwen3.8-27B-text2sql-DynQuant-3bit
+- Modelo en Hugging Face: https://huggingface.co/VikramPal/Qwen3.8-27B-text2sql-DynQuant-3bit
 - Repositorio DynQuant: https://github.com/kambojvikram/dynquant
 - Repositorio del modelo base Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Documentación de Qwen3.8 en LM Studio: https://lmstudio.ai/models/qwen3.8

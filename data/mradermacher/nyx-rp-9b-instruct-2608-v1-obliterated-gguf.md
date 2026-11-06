@@ -80,6 +80,6 @@ La comparacion es aproximada, ya que no se conocen las especificaciones exactas 
 
 ## Enlaces
 
-- [HuggingFace - modelo GGUF cuantizado](https://huggingface.co/mradermacher/Nyx-RP-9B-Instruct-2608-v1-OBLITERATED-GGUF)
-- [HuggingFace - modelo base](https://huggingface.co/Muyuxiao/Nyx-RP-9B-Instruct-2608-v1-OBLITERATED)
+- [Hugging Face - modelo GGUF cuantizado](https://huggingface.co/mradermacher/Nyx-RP-9B-Instruct-2608-v1-OBLITERATED-GGUF)
+- [Hugging Face - modelo base](https://huggingface.co/Muyuxiao/Nyx-RP-9B-Instruct-2608-v1-OBLITERATED)
 - [Heretic - herramienta de abliteration](https://github.com/p-e-w/heretic)

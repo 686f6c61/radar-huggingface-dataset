@@ -34,7 +34,7 @@ La innovación técnica de esta publicación está en el proceso de cuantizació
 - Razonamiento multi-paso y uso como agente de código: la model card reporta ejecuciones con un agente contenedorizado sobre SWE-bench-Live.
 - Contexto largo: soporta ventanas de hasta 131.072 tokens medidas en rendimiento y hasta 256K en coste de caché KV documentado.
 - Eficiencia de tokens: la plantilla Sharp-Spark reduce el consumo de tokens por respuesta (53 % menos en la mediana de MMLU-Pro frente al Q8_0 original).
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a través de infraestructura compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a través de infraestructura compatible con la API de Hugging Face.
 - No se documentan capacidades de visión, audio, tool calling explícito ni modo "thinking" separado; la información disponible no las confirma.
 
 ## Casos de uso
@@ -103,7 +103,7 @@ La comparación directa más relevante es contra el Q8_0 original: Sharp-Spark 2
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/peculiar-ragdoll/Sharp-Spark-X2.6-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/peculiar-ragdoll/Sharp-Spark-X2.6-4B-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Versión anterior (Sharp-Spark-X2.5-4B): https://huggingface.co/peculiar-ragdoll/Sharp-Spark-X2.5-4B-GGUF
 - Colección Cyber TielCoder 35B-A3B: https://huggingface.co/collections/peculiar-ragdoll/cyber-tiel-coder-35b-a3b

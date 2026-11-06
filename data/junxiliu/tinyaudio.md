@@ -80,7 +80,7 @@ No disponible. La información proporcionada no incluye datos de benchmarks ni c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/junxiliu/TinyAudio
+- Hugging Face: https://huggingface.co/junxiliu/TinyAudio
 - Paper: https://arxiv.org/abs/2609.31525
 - Código: https://github.com/junxi25liu/TinyAudio
 - Demo: https://tinyaudio-project.github.io/

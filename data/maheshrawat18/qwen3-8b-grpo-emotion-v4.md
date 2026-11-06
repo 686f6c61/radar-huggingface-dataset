@@ -72,8 +72,8 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (fi
 
 ## Enlaces
 
-- [HuggingFace - maheshrawat18/Qwen3-8B-grpo-emotion-v4](https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v4)
-- [HuggingFace - version v3](https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v3)
+- [Hugging Face - maheshrawat18/Qwen3-8B-grpo-emotion-v4](https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v4)
+- [Hugging Face - version v3](https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v3)
 - [LLM Explorer - Qwen3-8B-grpo-emotion-v2-merged](https://llm-explorer.com/model/maheshrawat18%2FQwen3-8B-grpo-emotion-v2-merged,3KD9VhmSGA7y0xdtcNdVGp)
 - [FriendliAI - Qwen3-8B-grpo-emotion-v3-merged](https://friendli.ai/models/maheshrawat18/Qwen3-8B-grpo-emotion-v3-merged)
 - [FriendliAI - Qwen3-8B-grpo-emotion-merged](https://friendli.ai/models/maheshrawat18/Qwen3-8B-grpo-emotion-merged)

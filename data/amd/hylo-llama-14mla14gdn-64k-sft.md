@@ -108,7 +108,7 @@ Los datos de contexto y licencia de los dos modelos Llama proceden de sus respec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/HyLo-Llama-14MLA14GDN-64K-SFT
+- Modelo en Hugging Face: https://huggingface.co/amd/HyLo-Llama-14MLA14GDN-64K-SFT
 - Paper principal: https://arxiv.org/abs/2604.24715 (Long-Context Aware Upcycling: A New Frontier for Hybrid LLM Scaling)
 - Referencia arXiv en etiquetas: https://arxiv.org/abs/2505.17272
 - Referencia arXiv en etiquetas: https://arxiv.org/abs/2503.11132

@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/ramosvaldo9/doktor-gemma3-12b-Q4_K_M-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/ramosvaldo9/doktor-gemma3-12b-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/ramosvaldo9/doktor-gemma3-12b
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

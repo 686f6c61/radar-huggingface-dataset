@@ -1,7 +1,7 @@
 # Cisco1963/llmplasticity-nl_en_linear_8-rand-d0.1-c0.9-r0.2-s42
 
 ## Resumen
-El modelo `Cisco1963/llmplasticity-nl_en_linear_8-rand-d0.1-c0.9-r0.2-s42` es un checkpoint de investigación publicado por el usuario Cisco1963 en HuggingFace, con arquitectura de la familia GPT-2 (etiqueta `gpt2` en el repositorio) y 122.706.432 parámetros totales, según los pesos en formato safetensors. No dispone de `pipeline_tag`, licencia ni idiomas declarados en la ficha del repositorio, y acumula 9 descargas y 0 likes desde su creación el 6 de octubre de 2026, lo que indica que se trata de un artefacto experimental y no de un modelo orientado a producción.
+El modelo `Cisco1963/llmplasticity-nl_en_linear_8-rand-d0.1-c0.9-r0.2-s42` es un checkpoint de investigación publicado por el usuario Cisco1963 en Hugging Face, con arquitectura de la familia GPT-2 (etiqueta `gpt2` en el repositorio) y 122.706.432 parámetros totales, según los pesos en formato safetensors. No dispone de `pipeline_tag`, licencia ni idiomas declarados en la ficha del repositorio, y acumula 9 descargas y 0 likes desde su creación el 6 de octubre de 2026, lo que indica que se trata de un artefacto experimental y no de un modelo orientado a producción.
 
 El identificador del repositorio sugiere un experimento sobre plasticidad en aprendizaje continuo: los segmentos `linear_8`, `rand`, `d0.1`, `c0.9`, `r0.2` y `s42` apuntan a una configuración concreta de un barrido de hiperparámetros (posiblemente una tasa de decaimiento de 0,1, un coeficiente de 0,9, un ratio de 0,2 y la semilla 42), mientras que `nl_en` sugiere un entrenamiento o evaluación con datos en neerlandés e inglés. Esta interpretación es una inferencia a partir del nombre y no está confirmada por la documentación del repositorio.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Cisco1963/llmplasticity-nl_en_linear_8-rand-d0.1-c0.9-r0.2-s42 | 122,7 M | No disponible | No disponible | HuggingFace, 9 descargas | Checkpoint de investigacion sin documentacion |
+| Cisco1963/llmplasticity-nl_en_linear_8-rand-d0.1-c0.9-r0.2-s42 | 122,7 M | No disponible | No disponible | Hugging Face, 9 descargas | Checkpoint de investigacion sin documentacion |
 | GPT-2 (OpenAI) | 124 M | 1024 tokens | MIT | Ampliamente disponible | Referencia de la familia, entrenado en WebText |
 | DistilGPT2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible | Destilado de GPT-2, menor latencia |
 | Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache 2.0 | Ampliamente disponible | Suite disenada para interpretabilidad y estudios de entrenamiento |
@@ -80,5 +80,5 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Sin soporte conocido de tool calling, agentes ni multimodalidad, lo que descarta integraciones que dependan de estas capacidades.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-nl_en_linear_8-rand-d0.1-c0.9-r0.2-s42
+- Modelo en Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-nl_en_linear_8-rand-d0.1-c0.9-r0.2-s42
 - No se han encontrado otros enlaces (paper, blog, repositorio o demo) en la informacion proporcionada.

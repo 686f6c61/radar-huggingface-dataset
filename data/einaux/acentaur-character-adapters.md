@@ -6,7 +6,7 @@ Este repositorio no contiene un modelo de lenguaje, sino tres adaptadores LoRA p
 
 Los adaptadores se emplean en el control CHARACTER de ACENTAUR, un instrumento de audio generativo de EINAUX distribuido como plugin nativo AU/VST3 para Logic Pro, Ableton Live y LUNA en macOS. ACENTAUR descarga estos ficheros bajo demanda desde este repositorio; no forman parte de su instalador. El repositorio actúa, por tanto, como espejo de redistribución: los tres `model.safetensors` son byte a byte idénticos a los originales alojados en ModelScope, verificado mediante SHA-256.
 
-La relevancia del repositorio es fundamentalmente práctica: facilita el acceso desde HuggingFace a unos adaptadores cuyo origen está en ModelScope, con las revisiones upstream y los hashes declarados explícitamente. No hay innovación técnica propia por parte de EINAUX, que manifiesta no haber entrenado, convertido ni modificado los ficheros. La licencia de los adaptadores upstream es Apache 2.0 y se mantiene en esta redistribución.
+La relevancia del repositorio es fundamentalmente práctica: facilita el acceso desde Hugging Face a unos adaptadores cuyo origen está en ModelScope, con las revisiones upstream y los hashes declarados explícitamente. No hay innovación técnica propia por parte de EINAUX, que manifiesta no haber entrenado, convertido ni modificado los ficheros. La licencia de los adaptadores upstream es Apache 2.0 y se mantiene en esta redistribución.
 
 ## Especificaciones tecnicas
 
@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo / conjunto | Tipo | Modelo base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| einaux/acentaur-character-adapters | 3 LoRA de musica | ACE-Step 1.5 XL SFT | no disponible (319 MB por adaptador) | no aplicable | Apache 2.0 | HuggingFace |
+| einaux/acentaur-character-adapters | 3 LoRA de musica | ACE-Step 1.5 XL SFT | no disponible (319 MB por adaptador) | no aplicable | Apache 2.0 | Hugging Face |
 | DiffSynth-Studio/acestep15xlsft-lora-drums (y guitar, piano) | LoRA de musica | ACE-Step 1.5 XL SFT | identico (mismo fichero) | no aplicable | Apache 2.0 | ModelScope |
-| ACE-Step/acestep-v15-xl-sft | Modelo de difusion musical completo | no aplica | no disponible | no aplicable | no disponible en la informacion proporcionada | HuggingFace |
+| ACE-Step/acestep-v15-xl-sft | Modelo de difusion musical completo | no aplica | no disponible | no aplicable | no disponible en la informacion proporcionada | Hugging Face |
 | Modelos musicales de Stability AI | Modelos generativos de audio | no aplica | no disponible | no aplicable | no disponible en la informacion proporcionada | mencionados en la pagina de transparencia de EINAUX |
 
 La comparación más relevante es que los tres adaptadores de este repositorio son copias sin modificar de los publicados por DiffSynth-Studio en ModelScope; la única diferencia es el canal de distribución y la documentación de procedencia.
@@ -98,14 +98,14 @@ La comparación más relevante es que los tres adaptadores de este repositorio s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/einaux/acentaur-character-adapters
-- Modelo base en HuggingFace: https://huggingface.co/ACE-Step/acestep-v15-xl-sft
+- Repositorio en Hugging Face: https://huggingface.co/einaux/acentaur-character-adapters
+- Modelo base en Hugging Face: https://huggingface.co/ACE-Step/acestep-v15-xl-sft
 - Adaptador upstream drums (ModelScope): https://modelscope.cn/models/DiffSynth-Studio/acestep15xlsft-lora-drums
 - Adaptador upstream guitar (ModelScope): https://modelscope.cn/models/DiffSynth-Studio/acestep15xlsft-lora-guitar
 - Adaptador upstream piano (ModelScope): https://modelscope.cn/models/DiffSynth-Studio/acestep15xlsft-lora-piano
 - Documentacion de Differential LoRA (DiffSynth-Studio): https://diffsynth-studio-doc.readthedocs.io/zh-cn/latest/Training/Differential_LoRA.html
 - Repositorio de DiffSynth-Studio: https://github.com/modelscope/DiffSynth-Studio
-- Perfil de einaux en HuggingFace: https://huggingface.co/einaux
+- Perfil de einaux en Hugging Face: https://huggingface.co/einaux
 - Repositorio acentaur-mlx-models: https://huggingface.co/einaux/acentaur-mlx-models
 - Sitio de EINAUX: https://www.einaux.com/
 - Pagina de transparencia de ACENTAUR: https://www.einaux.com/transparency/

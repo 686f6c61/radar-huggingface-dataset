@@ -6,7 +6,7 @@ El modelo `EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-rag
 
 Con 140,6 millones de parámetros, es un modelo compacto orientado a tareas de clasificación de tokens (token-classification), lo que permite identificar qué partes de una respuesta generada son fieles al contexto recuperado y cuáles son inventadas o incorrectas. Su relevancia actual radica en la creciente necesidad de verificar la veracidad de las salidas de modelos generativos en aplicaciones de RAG, especialmente en idiomas de baja representación como el sueco, donde las herramientas de detección de alucinaciones son escasas.
 
-La ficha se basa en la información disponible en HuggingFace y en el artículo mencionado; no se han publicado resultados de benchmarks específicos en la model card.
+La ficha se basa en la información disponible en Hugging Face y en el artículo mencionado; no se han publicado resultados de benchmarks específicos en la model card.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ El entrenamiento se realizó sobre un conjunto de datos sintético generado a pa
 - Detección de alucinaciones a nivel de token en respuestas de sistemas RAG, identificando qué partes de una respuesta son fieles al contexto y cuáles son inventadas.
 - Clasificación de tokens como alucinados o no alucinados, lo que permite un análisis granular de la veracidad.
 - Soporte multilingüe (al menos sueco, inglés y feroés según las variantes publicadas), aunque no se especifican los idiomas exactos cubiertos.
-- Integración con el ecosistema HuggingFace Transformers mediante la librería `transformers` y pipeline de `token-classification`.
+- Integración con el ecosistema Hugging Face Transformers mediante la librería `transformers` y pipeline de `token-classification`.
 - Compatible con endpoints de inferencia (tag `endpoints_compatible`), lo que facilita su despliegue en servicios de producción.
 
 ## Casos de uso
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables específicos para la det
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-sv)
+- [Página del modelo en Hugging Face](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-sv)
 - [Artículo "A multilingual hallucination benchmark: MultiWikiQHalluA" (arXiv:2605.02504v2)](https://arxiv.org/pdf/2605.02504v2)
 - [Sitio web de EuroEval](https://euroeval.com/)
 - Variantes relacionadas: [versión en inglés](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-en) y [versión en feroés](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-fo)

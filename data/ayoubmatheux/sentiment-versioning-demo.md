@@ -69,10 +69,10 @@ Estos resultados corresponden a una sola ejecución de entrenamiento sobre un co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `distilbert-base-uncased` (base) | 66.955.010 | 512 | Apache 2.0 | HuggingFace |
-| `distilbert-base-uncased-finetuned-sst-2-english` | 66.955.010 | 512 | Apache 2.0 | HuggingFace |
-| `cardiffnlp/twitter-roberta-base-sentiment` | ~125 M | 512 | MIT | HuggingFace |
-| `ayoubmatheux/sentiment-versioning-demo` | 66.955.010 | 512 | Apache 2.0 | HuggingFace |
+| `distilbert-base-uncased` (base) | 66.955.010 | 512 | Apache 2.0 | Hugging Face |
+| `distilbert-base-uncased-finetuned-sst-2-english` | 66.955.010 | 512 | Apache 2.0 | Hugging Face |
+| `cardiffnlp/twitter-roberta-base-sentiment` | ~125 M | 512 | MIT | Hugging Face |
+| `ayoubmatheux/sentiment-versioning-demo` | 66.955.010 | 512 | Apache 2.0 | Hugging Face |
 
 El modelo es comparable a otros fine-tunes de DistilBERT para sentimiento, como el fine-tune de SST-2. No se dispone de benchmarks públicos que permitan comparar su rendimiento real con estas alternativas.
 
@@ -88,7 +88,7 @@ El modelo es comparable a otros fine-tunes de DistilBERT para sentimiento, como 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ayoubmatheux/sentiment-versioning-demo
+- Hugging Face: https://huggingface.co/ayoubmatheux/sentiment-versioning-demo
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Documentación de `transformers` para text-classification: https://huggingface.co/docs/transformers/training
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la información proporcionada.

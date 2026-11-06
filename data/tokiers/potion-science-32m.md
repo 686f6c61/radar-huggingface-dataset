@@ -2,7 +2,7 @@
 
 ## Resumen
 
-potion-science-32M es un modelo de embeddings estaticos publicado por el usuario tokiers en HuggingFace, construido con la libreria Model2Vec de Minish Lab. No es un modelo generativo: convierte texto en vectores densos de forma determinista mediante una tabla de embeddings por token, sin atencion ni capas transformer en tiempo de inferencia. Es una destilacion del sentence transformer `baai/bge-base-en-v1.5` mediante el pipeline de Tokenlearn, especializada en dominio cientifico.
+potion-science-32M es un modelo de embeddings estaticos publicado por el usuario tokiers en Hugging Face, construido con la libreria Model2Vec de Minish Lab. No es un modelo generativo: convierte texto en vectores densos de forma determinista mediante una tabla de embeddings por token, sin atencion ni capas transformer en tiempo de inferencia. Es una destilacion del sentence transformer `baai/bge-base-en-v1.5` mediante el pipeline de Tokenlearn, especializada en dominio cientifico.
 
 El modelo se entrena sobre el dataset `scientific_papers` (articulos de Arxiv y Pubmed) y emplea un vocabulario mayor que su hermano potion-science-8M, lo que resulta util en tareas que requieren cobertura lexica especializada. Con 31.853.568 parametros totales (basicamente una matriz de embeddings), el coste computacional de codificar texto es practicamente el de una busqueda en tabla, lo que lo hace adecuado para busqueda semantica a gran escala, deduplicacion de corpus y filtrado en tiempo real sobre CPU.
 
@@ -25,7 +25,7 @@ Su relevancia actual reside en la relacion calidad/coste: los modelos estaticos 
 
 Model2Vec sustituye el encoder transformer por una matriz de embeddings estatica: cada token del vocabulario tiene un vector aprendido y el embedding de una frase se obtiene por pooling (media, con ponderaciones posteriores). No hay atencion ni pasos autorregresivos, por lo que la codificacion es una operacion de lookup y agregacion, ejecutable en CPU a alta velocidad y vectorizable en GPU.
 
-El entrenamiento sigue el pipeline de Tokenlearn: (1) destilacion inicial desde `baai/bge-base-en-v1.5` con Model2Vec; (2) generacion de datos de entrenamiento calculando embeddings medios de salida del teacher sobre un corpus grande (`scientific_papers`, articulos de Arxiv y Pubmed); (3) entrenamiento del modelo destilado sobre esos datos; y (4) re-regularizacion posterior ponderando tokens por frecuencia, aplicando PCA y finalmente SIF weighting. El vocabulario es mayor que el de potion-science-8M, lo que mejora la cobertura en terminologia cientifica. El repo incluye ademas un tokenizer preconstruido de tokie (`tokenizer.tkz`), que el autor declara 5x mas rapido que los tokenizers de HuggingFace y compatible como reemplazo directo.
+El entrenamiento sigue el pipeline de Tokenlearn: (1) destilacion inicial desde `baai/bge-base-en-v1.5` con Model2Vec; (2) generacion de datos de entrenamiento calculando embeddings medios de salida del teacher sobre un corpus grande (`scientific_papers`, articulos de Arxiv y Pubmed); (3) entrenamiento del modelo destilado sobre esos datos; y (4) re-regularizacion posterior ponderando tokens por frecuencia, aplicando PCA y finalmente SIF weighting. El vocabulario es mayor que el de potion-science-8M, lo que mejora la cobertura en terminologia cientifica. El repo incluye ademas un tokenizer preconstruido de tokie (`tokenizer.tkz`), que el autor declara 5x mas rapido que los tokenizers de Hugging Face y compatible como reemplazo directo.
 
 ## Capacidades
 
@@ -33,7 +33,7 @@ El entrenamiento sigue el pipeline de Tokenlearn: (1) destilacion inicial desde 
 - Codificacion estatica extremadamente rapida en CPU y GPU (sin pasos de atencion).
 - Especializacion en vocabulario cientifico (Arxiv, Pubmed) gracias al corpus de entrenamiento.
 - Compatible con la API `StaticModel.from_pretrained` de model2vec y con el ecosistema sentence-transformers en cuanto a uso de embeddings.
-- Tokenizer tokie incluido (`tokenizer.tkz`) como alternativa rapida a los tokenizers de HuggingFace.
+- Tokenizer tokie incluido (`tokenizer.tkz`) como alternativa rapida a los tokenizers de Hugging Face.
 - Exportacion ONNX para despliegue en entornos sin PyTorch.
 - No soporta generacion de texto, tool calling, agentes, vision ni audio: es exclusivamente un encoder de embeddings.
 
@@ -57,15 +57,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: no requiere GPU; funciona en CPU. En GPU, cualquier modelo moderno (RTX 3060 en adelante, A100, H100) sirve, aunque el cuello de botella sera el pooling y el I/O, no el computo.
 - Cabe en GPU consumer: si, en todas las GPU con al menos ~1 GB de memoria libre; tambien en Raspberry Pi y entornos similares.
 - Opciones de despliegue: `model2vec` (PyTorch), ONNX Runtime, integracion con FAISS/hnswlib para indices vectoriales; no aplica vLLM, llama.cpp ni TGI porque no es un modelo generativo.
-- Latencia y throughput: no se han publicado cifras concretas; el autor indica que los embeddings estaticos se calculan ordenes de magnitud mas rapido que un sentence transformer y que el tokenizer tokie es 5x mas rapido que los de HuggingFace.
+- Latencia y throughput: no se han publicado cifras concretas; el autor indica que los embeddings estaticos se calculan ordenes de magnitud mas rapido que un sentence transformer y que el tokenizer tokie es 5x mas rapido que los de Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tokiers/potion-science-32M | 31,8 M | Embeddings estaticos (Model2Vec) | no disponible | MIT | HuggingFace |
-| minishlab/potion-science-8M | no disponible en la informacion | Embeddings estaticos (Model2Vec) | no disponible | no disponible en la informacion | HuggingFace |
-| baai/bge-base-en-v1.5 | no disponible en la informacion | Sentence transformer (teacher) | no disponible | no disponible en la informacion | HuggingFace |
+| tokiers/potion-science-32M | 31,8 M | Embeddings estaticos (Model2Vec) | no disponible | MIT | Hugging Face |
+| minishlab/potion-science-8M | no disponible en la informacion | Embeddings estaticos (Model2Vec) | no disponible | no disponible en la informacion | Hugging Face |
+| baai/bge-base-en-v1.5 | no disponible en la informacion | Sentence transformer (teacher) | no disponible | no disponible en la informacion | Hugging Face |
 
 El modelo se posiciona frente a potion-science-8M por un vocabulario mayor y mas parametros, y frente a su teacher bge-base-en-v1.5 por un coste de inferencia mucho menor a cambio de cierta perdida de calidad en tareas fuera de dominio. No hay datos de rendimiento comparativo en la informacion disponible.
 
@@ -81,7 +81,7 @@ El modelo se posiciona frente a potion-science-8M por un vocabulario mayor y mas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tokiers/potion-science-32M
+- Hugging Face: https://huggingface.co/tokiers/potion-science-32M
 - Modelo hermano: https://huggingface.co/minishlab/potion-science-8M
 - Teacher: https://huggingface.co/baai/bge-base-en-v1.5
 - Dataset: https://huggingface.co/datasets/armanc/scientific_papers

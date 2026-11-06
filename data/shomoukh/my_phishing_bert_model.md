@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shomoukh/my_phishing_bert_model` es un modelo de tipo BERT publicado en HuggingFace por el usuario shomoukh. Por su nombre y su tamaño de parametros (109.483.778, es decir, aproximadamente 109 millones), se trata de un modelo encoder-only basado en la arquitectura BERT, presumiblemente afinado para la deteccion de phishing (clasificacion de URLs, correos o contenido fraudulento). El repositorio tiene 0 descargas y 1 like, lo que indica que es un experimento personal o un proyecto en fase muy temprana, sin adopcion por parte de la comunidad.
+`shomoukh/my_phishing_bert_model` es un modelo de tipo BERT publicado en Hugging Face por el usuario shomoukh. Por su nombre y su tamaño de parametros (109.483.778, es decir, aproximadamente 109 millones), se trata de un modelo encoder-only basado en la arquitectura BERT, presumiblemente afinado para la deteccion de phishing (clasificacion de URLs, correos o contenido fraudulento). El repositorio tiene 0 descargas y 1 like, lo que indica que es un experimento personal o un proyecto en fase muy temprana, sin adopcion por parte de la comunidad.
 
 El modelo se distribuye en formato safetensors y ocupa 0,4 GB en el repositorio. No se ha publicado informacion sobre el pipeline, la licencia, los idiomas soportados, el dataset de entrenamiento ni resultados de evaluacion. Por tanto, la mayor parte de las especificaciones tecnicas que siguen deben considerarse "no disponibles" y el modelo no deberia usarse en produccion sin una evaluacion propia previa.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shomoukh/my_phishing_bert_model | 109,5 M | no disponible | Clasificacion (presuntamente phishing) | no disponible | HuggingFace, 0 descargas |
+| shomoukh/my_phishing_bert_model | 109,5 M | no disponible | Clasificacion (presuntamente phishing) | no disponible | Hugging Face, 0 descargas |
 | bert-base-uncased | 110 M | 512 tokens | Modelo base BERT | Apache 2.0 | Ampliamente disponible |
 | distilbert-base-uncased | 66 M | 512 tokens | Modelo base BERT destilado | Apache 2.0 | Ampliamente disponible |
 | roberta-base | 125 M | 512 tokens | Modelo base RoBERTa | MIT | Ampliamente disponible |
@@ -81,5 +81,5 @@ La comparativa se limita a modelos base de la misma familia, ya que no se dispon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shomoukh/my_phishing_bert_model
+- Hugging Face: https://huggingface.co/shomoukh/my_phishing_bert_model
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

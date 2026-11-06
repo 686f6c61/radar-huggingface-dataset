@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Junaidi69/rengas-3.2-lora-adapters-st-013 es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario Junaidi69, construido sobre el modelo base unsloth/Llama-3.2-1B-Instruct. No se trata de un modelo completo, sino de un conjunto de pesos de adaptacion de bajo rango que debe combinarse (merge) con el modelo base antes de poder utilizarse para inferencia. El repositorio ocupa 0.0 GB, declara 5 descargas y 0 likes, y no incluye pipeline, licencia ni idiomas declarados.
+Junaidi69/rengas-3.2-lora-adapters-st-013 es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario Junaidi69, construido sobre el modelo base unsloth/Llama-3.2-1B-Instruct. No se trata de un modelo completo, sino de un conjunto de pesos de adaptacion de bajo rango que debe combinarse (merge) con el modelo base antes de poder utilizarse para inferencia. El repositorio ocupa 0.0 GB, declara 5 descargas y 0 likes, y no incluye pipeline, licencia ni idiomas declarados.
 
 La model card, redactada en indonesio, identifica el artefacto como "tahap 'st-013' — Fase 13/225" y lo asocia al fichero de datos latih_pekerja_part06.jsonl ("entrenamiento_trabajadores_parte06"). Esto indica que forma parte de una serie larga de checkpoints intermedios de un proceso de ajuste fino por fases, del que no se documentan hiperparametros, composicion del dataset ni metodologia de evaluacion. La relevancia del artefacto es, por tanto, la de un material de investigacion experimental, no la de un modelo listo para produccion.
 
-No se ha encontrado en la busqueda web ningun paper, blog, repositorio auxiliar ni demo asociada al modelo; los resultados devueltos son ruido sin relacion con el proyecto. En consecuencia, toda la informacion tecnica fiable procede de la ficha de HuggingFace y de las caracteristicas conocidas del modelo base Llama 3.2 1B Instruct.
+No se ha encontrado en la busqueda web ningun paper, blog, repositorio auxiliar ni demo asociada al modelo; los resultados devueltos son ruido sin relacion con el proyecto. En consecuencia, toda la informacion tecnica fiable procede de la ficha de Hugging Face y de las caracteristicas conocidas del modelo base Llama 3.2 1B Instruct.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ No se ha encontrado en la busqueda web ningun paper, blog, repositorio auxiliar 
 | Libreria | peft |
 | Modelo base | unsloth/Llama-3.2-1B-Instruct |
 | Tamano del repositorio | 0.0 GB |
-| Fecha de creacion (segun HuggingFace) | 2026-09-24T02:50:26Z |
+| Fecha de creacion (segun Hugging Face) | 2026-09-24T02:50:26Z |
 | Ultima actualizacion | 2026-09-24T02:50:30Z |
 
 ## Arquitectura y entrenamiento
@@ -93,12 +93,12 @@ Frente a estas alternativas, el adaptador carece de licencia declarada, de evalu
 - Riesgo de alucinacion elevado: los modelos de 1B de parametros generan con frecuencia contenido factualmente incorrecto, especialmente en tareas de conocimiento abierto.
 - Limitaciones de razonamiento y codigo: 1.23 mil millones de parametros no bastan para tareas complejas de matematicas, razonamiento multi-paso o ingenieria de software.
 - Advertencia sobre la busqueda web: ninguno de los resultados devueltos guarda relacion con el modelo; no debe utilizarse esa informacion para caracterizarlo.
-- La fecha de creacion declarada en HuggingFace (2026-09-24) es posterior a la fecha habitual de publicacion del modelo base; conviene verificar la integridad del repositorio antes de usarlo.
+- La fecha de creacion declarada en Hugging Face (2026-09-24) es posterior a la fecha habitual de publicacion del modelo base; conviene verificar la integridad del repositorio antes de usarlo.
 - El repositorio ocupa 0.0 GB, lo que puede indicar que los pesos del adaptador no estan completos o que el tamano no se ha indexado correctamente; hay que comprobar los ficheros antes de cualquier despliegue.
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Junaidi69/rengas-3.2-lora-adapters-st-013
+- Ficha en Hugging Face: https://huggingface.co/Junaidi69/rengas-3.2-lora-adapters-st-013
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Repositorio original del modelo base de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft

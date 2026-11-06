@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dictation-cleanup-qwen3.5-4b-gguf` es una conversión al formato GGUF de un modelo Qwen 3.5 de 4B de parámetros, publicada por el usuario hasanchadaram en HuggingFace. El nombre sugiere un ajuste fino orientado a la limpieza de texto dictado (dictation cleanup), es decir, la corrección y normalización de transcripciones de voz para producir texto legible, aunque la model card no documenta explícitamente el proceso de entrenamiento ni el dataset utilizado.
+`dictation-cleanup-qwen3.5-4b-gguf` es una conversión al formato GGUF de un modelo Qwen 3.5 de 4B de parámetros, publicada por el usuario hasanchadaram en Hugging Face. El nombre sugiere un ajuste fino orientado a la limpieza de texto dictado (dictation cleanup), es decir, la corrección y normalización de transcripciones de voz para producir texto legible, aunque la model card no documenta explícitamente el proceso de entrenamiento ni el dataset utilizado.
 
 El modelo se distribuye exclusivamente en formato GGUF para su uso con llama.cpp, con dos ficheros: una cuantización Q4_K_M para inferencia de texto y un proyector multimodal (mmproj) en BF16 que habilita capacidades de visión. Los tags incluyen `vision-language-model`, `qwen3_5` y `endpoints_compatible`, lo que indica que el modelo base es multimodal y compatible con despliegues tipo endpoint.
 
@@ -79,7 +79,7 @@ La comparativa con alternativas concretas no está disponible en la información
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hasanchadaram/dictation-cleanup-qwen3.5-4b-gguf
+- Hugging Face: https://huggingface.co/hasanchadaram/dictation-cleanup-qwen3.5-4b-gguf
 - Unsloth (herramienta de conversión): https://github.com/unslothai/unsloth
 - llama.cpp (runtime recomendado): no se proporciona enlace en la información disponible
 - Documentación oficial de Qwen 3.5: no se proporciona enlace en la información disponible

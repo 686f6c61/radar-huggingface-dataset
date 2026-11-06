@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`danielbml/simple-contrastive` es un repositorio experimental publicado en HuggingFace por el usuario danielbml que contiene una implementación propia de una arquitectura tipo Mae (masked autoencoder) orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y no un modelo con rendimiento evaluado. El repositorio incluye el código Python (`finetune.py`) como artefacto principal, junto con `config.json` y `training_args.json`.
+`danielbml/simple-contrastive` es un repositorio experimental publicado en Hugging Face por el usuario danielbml que contiene una implementación propia de una arquitectura tipo Mae (masked autoencoder) orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y no un modelo con rendimiento evaluado. El repositorio incluye el código Python (`finetune.py`) como artefacto principal, junto con `config.json` y `training_args.json`.
 
 El modelo declara una escala etiquetada como "giant", pero el recuento real de parámetros extraído del fichero safetensors es de 16.576 parámetros, una cifra que contradice por completo esa etiqueta. Esta incoherencia es relevante para cualquier evaluador: el tamaño real es diminuto (del orden de decenas de kilobytes en fp32), muy lejos de lo que normalmente se asocia a una escala "giant". La arquitectura declara atención multi-query, fusión tipo Tucker, activación GELU y normalización RMSNorm.
 
@@ -66,7 +66,7 @@ No disponible. La información proporcionada no incluye modelos comparables con 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| danielbml/simple-contrastive | 16.576 | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, sin descargas |
+| danielbml/simple-contrastive | 16.576 | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, sin descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No disponible. La información proporcionada no incluye modelos comparables con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/danielbml/simple-contrastive
+- Hugging Face: https://huggingface.co/danielbml/simple-contrastive
 - Repositorio relacionado de aprendizaje contrastivo (SimCLR + BYOL): https://github.com/damn8daniel/contrastive-learning
 - Carpeta de modelos del repositorio relacionado: https://github.com/damn8daniel/contrastive-learning/tree/main/models
 - Tutorial sobre aprendizaje contrastivo (referencia general): https://www.datacamp.com/tutorial/contrastive-learning

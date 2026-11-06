@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TABERT-SimCSE es un modelo de embeddings de frases para vietnamita desarrollado por el usuario Tuibingu03 y publicado en HuggingFace. Se construye mediante fine-tuning del modelo base `vinai/phobert-base-v2` con la técnica Unsupervised SimCSE (Simple Contrastive Learning of Sentence Embeddings), un método de aprendizaje contrastivo que no requiere pares etiquetados de similitud. El resultado es un encoder que transforma frases y párrafos en vectores densos de 768 dimensiones, útiles para similitud semántica, búsqueda semántica, clustering y recuperación de información.
+TABERT-SimCSE es un modelo de embeddings de frases para vietnamita desarrollado por el usuario Tuibingu03 y publicado en Hugging Face. Se construye mediante fine-tuning del modelo base `vinai/phobert-base-v2` con la técnica Unsupervised SimCSE (Simple Contrastive Learning of Sentence Embeddings), un método de aprendizaje contrastivo que no requiere pares etiquetados de similitud. El resultado es un encoder que transforma frases y párrafos en vectores densos de 768 dimensiones, útiles para similitud semántica, búsqueda semántica, clustering y recuperación de información.
 
 El modelo parte de la arquitectura RoBERTa-base de PhoBERT (12 capas, 12 cabezas de atención, hidden size 768, aproximadamente 135 millones de parámetros y vocabulario de 64.001 tokens), con una longitud máxima de secuencia de 256 tokens. Se ha entrenado sobre 345.863 párrafos extraídos de 28.511 artículos periodísticos en vietnamita, lo que orienta su uso hacia el dominio de noticias y textos cortos.
 
@@ -73,17 +73,17 @@ No se han publicado comparativas con otros modelos en la información disponible
 - VRAM estimada para inferencia en FP16: aproximadamente 0,3 GB para los pesos (135M parámetros), más overhead de activaciones y tokenizador; en la práctica cabe holgadamente en cualquier GPU con 2 GB o más.
 - GPU recomendadas: cualquier GPU moderna; para alto throughput, A100, H100, L4 o RTX 4090. Para desarrollo, RTX 3060 o superior.
 - Cabe en GPU de consumo: sí, en GTX 1650, RTX 2060, RTX 3060, RTX 4060 y superiores.
-- Opciones de despliegue: `transformers` con PyTorch, `sentence-transformers` (cargando el modelo como encoder), vLLM no aplica (no es modelo generativo), TGI no aplica, llama.cpp no dispone de conversión documentada a GGUF. Compatible con HuggingFace Inference Endpoints según la etiqueta `endpoints_compatible`.
+- Opciones de despliegue: `transformers` con PyTorch, `sentence-transformers` (cargando el modelo como encoder), vLLM no aplica (no es modelo generativo), TGI no aplica, llama.cpp no dispone de conversión documentada a GGUF. Compatible con Hugging Face Inference Endpoints según la etiqueta `endpoints_compatible`.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TABERT-SimCSE (este) | ~135M | 256 tokens | Vietnamita | AGPL-3.0 | HuggingFace, safetensors |
-| `vinai/phobert-base-v2` (base, sin fine-tuning SimCSE) | ~135M | 256 tokens | Vietnamita | MIT (según el repositorio original) | HuggingFace |
-| `keepitreal/vietnamese-sbert` | ~135M (PhoBERT) | 256 tokens | Vietnamita | no disponible en esta ficha | HuggingFace |
-| `bkai-foundation-models/vietnamese-bi-encoder` | ~135M (PhoBERT) | 256 tokens | Vietnamita | no disponible en esta ficha | HuggingFace |
+| TABERT-SimCSE (este) | ~135M | 256 tokens | Vietnamita | AGPL-3.0 | Hugging Face, safetensors |
+| `vinai/phobert-base-v2` (base, sin fine-tuning SimCSE) | ~135M | 256 tokens | Vietnamita | MIT (según el repositorio original) | Hugging Face |
+| `keepitreal/vietnamese-sbert` | ~135M (PhoBERT) | 256 tokens | Vietnamita | no disponible en esta ficha | Hugging Face |
+| `bkai-foundation-models/vietnamese-bi-encoder` | ~135M (PhoBERT) | 256 tokens | Vietnamita | no disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de rendimiento de los modelos alternativos en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
 
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento de los modelos alternativos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tuibingu03/TABERT_SimCSE
+- Modelo en Hugging Face: https://huggingface.co/Tuibingu03/TABERT_SimCSE
 - Modelo base PhoBERT: https://huggingface.co/vinai/phobert-base-v2
 - Paper de SimCSE (referencia del método): no disponible en la información proporcionada
 - Repositorio de VnCoreNLP: no disponible en la información proporcionada

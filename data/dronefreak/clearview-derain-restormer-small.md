@@ -84,12 +84,12 @@ No se dispone de datos de rendimiento comparativos de otros modelos en la misma 
 - Riesgo de alucinación: aunque el modelo no presenta valores negativos de RRR, en imágenes con lluvia muy densa o texturas complejas podría introducir suavizado excesivo o pérdida de detalle fino, como sugiere el rendimiento moderado en Rain100H (PSNR 25.92).
 - Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y distribución, pero requiere atribución y no ofrece garantías. Es compatible con la mayoría de proyectos propietarios.
 - Limitaciones de idioma: no aplica, al ser un modelo de visión. La documentación y la API están en inglés.
-- Tamaño del repositorio: el repo en HuggingFace muestra 0.0 GB, lo que podría indicar que los pesos se almacenan externamente o que hay un error en la metadata. Se recomienda verificar la integridad de los archivos descargados.
+- Tamaño del repositorio: el repo en Hugging Face muestra 0.0 GB, lo que podría indicar que los pesos se almacenan externamente o que hay un error en la metadata. Se recomienda verificar la integridad de los archivos descargados.
 - Dependencia de la librería ClearView: el modelo requiere instalar el paquete `clearview` desde GitHub, lo que añade una dependencia externa que podría no estar mantenida activamente.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/dronefreak/clearview-derain-restormer-small
+- Repositorio del modelo en Hugging Face: https://huggingface.co/dronefreak/clearview-derain-restormer-small
 - Repositorio de la librería ClearView en GitHub: https://github.com/dronefreak/clearview
 - Código del modelo Restormer en ClearView: https://github.com/dronefreak/clearview/blob/main/clearview/models/restormer.py
 - Dataset SPA-Data: https://huggingface.co/datasets/dronefreak/SPA-Data

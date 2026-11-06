@@ -74,7 +74,7 @@ No hay datos públicos de rendimiento para comparar con otros modelos de detecci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SoulInPsyAbstract/specialist-vuln-03_injection-salience27b-lora
+- Modelo en Hugging Face: https://huggingface.co/SoulInPsyAbstract/specialist-vuln-03_injection-salience27b-lora
 - Modelo hermano (vuln-gate-03): https://huggingface.co/SoulInPsyAbstract/vuln-gate-03_injection-lora
 - Repositorio GitHub del autor: https://github.com/soulinpsyabstract
 - Repositorio de datasets de gobernanza: https://github.com/soulinpsyabstract/sipa-os-governance/tree/main/AI_EXPERIMENTS/DATASETS

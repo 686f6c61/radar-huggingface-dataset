@@ -15,7 +15,7 @@ La relevancia de este modelo radica en que ofrece una alternativa de 12B paráme
 | Parametros activos | no disponible (modelo denso, no MoE) |
 | Longitud de contexto | no disponible (la familia Gemma 4 soporta hasta 256K, pero no se confirma en esta cuantización) |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-f16, mmproj-Q8_0 |
-| Idiomas soportados | en (según la etiqueta de HuggingFace; la familia Gemma 4 soporta 140+ idiomas, pero no se verifica aquí) |
+| Idiomas soportados | en (según la etiqueta de Hugging Face; la familia Gemma 4 soporta 140+ idiomas, pero no se verifica aquí) |
 | Licencia | no disponible (la licencia original de Gemma 4 es la Gemma Terms of Use, pero esta versión abliterated puede tener términos distintos) |
 | Formato de pesos | GGUF (safetensors no incluido en este repo) |
 
@@ -73,7 +73,7 @@ La comparativa se basa en características generales; no se dispone de datos de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-12b-it-3MPER0RR-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-12b-it-3MPER0RR-abliterated-GGUF
 - Modelo base (3MPER0RR): https://huggingface.co/3MPER0RR/gemma-4-12b-it-3MPER0RR-abliterated
 - Cuantizaciones con imatrix (i1): https://huggingface.co/mradermacher/gemma-4-12b-it-3MPER0RR-abliterated-i1-GGUF
 - Blog de Google sobre Gemma 4 12B: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/

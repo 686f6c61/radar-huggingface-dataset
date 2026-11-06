@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparados entre estas variantes en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Anotos/Gemma-4-E4B-Heretic-MLX-4bit
+- Repositorio en Hugging Face: https://huggingface.co/Anotos/Gemma-4-E4B-Heretic-MLX-4bit
 - Repositorio original (espejado): https://huggingface.co/dopaemon/Gemma4-E4B-8B-Heretic-Ultra-MLX-4Bit
 - Modelo base de la ablacion: https://huggingface.co/dopaemon/Gemma4-E4B-8B-Heretic-Ultra
 - Modelo original de Google: https://huggingface.co/google/gemma-4-E4B-it

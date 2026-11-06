@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-krea2-mobile-snapshot-v2-lora es un adaptador LoRA de edicion de imagen publicado por la cuenta RunningHubAI en HuggingFace y atribuido al autor RunningHub-@像素幻想Lab. Su funcion declarada es simular el estilo de una fotografia casual tomada con movil, es decir, desplazar el resultado visual hacia una estetica amateur y espontanea en lugar de una apariencia de estudio. El repositorio contiene un unico archivo de pesos de 218 MiB (`krea2-mobile-snapshot-v2.safetensors`) y ocupa 0,2 GB en total.
+rh-krea2-mobile-snapshot-v2-lora es un adaptador LoRA de edicion de imagen publicado por la cuenta RunningHubAI en Hugging Face y atribuido al autor RunningHub-@像素幻想Lab. Su funcion declarada es simular el estilo de una fotografia casual tomada con movil, es decir, desplazar el resultado visual hacia una estetica amateur y espontanea en lugar de una apariencia de estudio. El repositorio contiene un unico archivo de pesos de 218 MiB (`krea2-mobile-snapshot-v2.safetensors`) y ocupa 0,2 GB en total.
 
 El modelo se presenta como un fine-tuning de "krea2", sin especificar en la model card la arquitectura, el numero de parametros ni la naturaleza exacta de ese modelo base. La etiqueta de pipeline es `image-text-to-image`, lo que indica que el flujo previsto combina una imagen de entrada y una instruccion de texto para producir la imagen editada. La model card indica que no hay trigger words y recomienda un peso de aplicacion en torno a 0,8.
 
@@ -83,10 +83,10 @@ No disponible. La informacion proporcionada no identifica otros LoRA comparables
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RunningHubAI/rh-krea2-mobile-snapshot-v2-lora
+- Repositorio en Hugging Face: https://huggingface.co/RunningHubAI/rh-krea2-mobile-snapshot-v2-lora
 - Pagina original del modelo en RunningHub: https://www.runninghub.ai/model/public/2088482937896452097
 - Perfil del autor en RunningHub: https://www.runninghub.ai/user-center/2001950732985270273
-- Version en chino de la model card: README_cn.md (en el propio repositorio de HuggingFace)
+- Version en chino de la model card: README_cn.md (en el propio repositorio de Hugging Face)
 - Documentacion de la API de RunningHub (ingles): https://www.runninghub.cn/runninghub-api-doc-en/
 - Documentacion de la API de RunningHub (chino): https://www.runninghub.cn/runninghub-api-doc-cn/
 - Sitio internacional de RunningHub: https://www.runninghub.ai

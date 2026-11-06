@@ -89,12 +89,12 @@ No se publican cifras de latencia o throughput en la informacion disponible: el 
 
 | Modelo | Parametros | Contexto | Precision media (4 paneles) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Decision-1.0-Sol (esta publicacion) | 1,884 B | 16.384 tokens | 69,80 | Apache 2.0 | HuggingFace, requiere codigo propio |
+| Decision-1.0-Sol (esta publicacion) | 1,884 B | 16.384 tokens | 69,80 | Apache 2.0 | Hugging Face, requiere codigo propio |
 | Sol v1.1 (predecesor del mismo autor) | No disponible | No disponible | 67,39 | No disponible | Version anterior en el repositorio |
 | Jev 1.13.0 | No disponible | No disponible | 82,45 | No disponible | No disponible |
 | Decider 2B | 2 B (segun denominacion) | No disponible | 71,75 | No disponible | No disponible |
-| Qwen3.5-2B sin ajustar (modelo base) | 2 B | No disponible | 60,54 | No disponible | HuggingFace (Qwen/Qwen3.5-2B) |
-| Qwen3.5-4B sin ajustar | 4 B | No disponible | 70,25 | No disponible | HuggingFace |
+| Qwen3.5-2B sin ajustar (modelo base) | 2 B | No disponible | 60,54 | No disponible | Hugging Face (Qwen/Qwen3.5-2B) |
+| Qwen3.5-4B sin ajustar | 4 B | No disponible | 70,25 | No disponible | Hugging Face |
 | Laya Upstream default | No disponible | No disponible | 52,44 | No disponible | No disponible |
 
 Salvo Qwen3.5-2B, del que consta el identificador, el autor no publica parametros, contexto ni licencia de los modelos comparados, por lo que la comparacion se limita a la precision media y al desglose por paneles.
@@ -115,7 +115,7 @@ Salvo Qwen3.5-2B, del que consta el identificador, el autor no publica parametro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol
+- Modelo en Hugging Face: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol
 - Coleccion de la familia Decision: https://huggingface.co/collections/llm-semantic-router/decision-10-6ab12177bd0002394d8409f9
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Documentacion incluida en el repositorio (rutas relativas a la raiz del modelo): `EVALUATION.md` (metodos, incertidumbre y resultados por tarea), `QUESTION-SCALING.md` (latencia p95 y los tres tipos nativos), `RUNTIME.md` (configuracion de ROCm), `USAGE.md` (instalacion y guia de API), `model-card-example.json` (peticion y salida de ejemplo), `LICENSE`, `ATTRIBUTIONS.md`, `code/decision_model.py` (codigo de inferencia) y los recursos graficos en `assets/`.

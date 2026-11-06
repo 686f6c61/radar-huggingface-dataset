@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HaomingSong/Cosmos3-Nano (esta conversión) | 16.454.213.580 escalares almacenados (incluye VAE y congelados) | no disponible | sin benchmarks publicados para esta conversión | OpenMDW 1.1 | HuggingFace, 14 descargas |
-| nvidia/Cosmos3-Nano (original) | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | OpenMDW 1.1 (según la conversión) | HuggingFace (checkpoint fuente) |
+| HaomingSong/Cosmos3-Nano (esta conversión) | 16.454.213.580 escalares almacenados (incluye VAE y congelados) | no disponible | sin benchmarks publicados para esta conversión | OpenMDW 1.1 | Hugging Face, 14 descargas |
+| nvidia/Cosmos3-Nano (original) | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | OpenMDW 1.1 (según la conversión) | Hugging Face (checkpoint fuente) |
 | NVIDIA Policy-DROID | no disponible | no disponible | resultados no aplicables a este checkpoint | no disponible | mencionado en la model card |
 
 No se dispone de datos suficientes para comparar con alternativas de la misma categoría (políticas robóticas vídeo-acción) más allá del checkpoint original de NVIDIA y de los modelos Policy-DROID citados.
@@ -83,7 +83,7 @@ No se dispone de datos suficientes para comparar con alternativas de la misma ca
 
 ## Enlaces
 
-- [HuggingFace: HaomingSong/Cosmos3-Nano](https://huggingface.co/HaomingSong/Cosmos3-Nano)
+- [Hugging Face: HaomingSong/Cosmos3-Nano](https://huggingface.co/HaomingSong/Cosmos3-Nano)
 - [Checkpoint original: nvidia/Cosmos3-Nano (revisión e59a53c25979a090fa8706c9acc0c254a6e89b92)](https://huggingface.co/nvidia/Cosmos3-Nano/tree/e59a53c25979a090fa8706c9acc0c254a6e89b92)
 - [Model card original de NVIDIA](https://huggingface.co/nvidia/Cosmos3-Nano/blob/e59a53c25979a090fa8706c9acc0c254a6e89b92/README.md)
 - [SAFETY.md del modelo original](https://huggingface.co/nvidia/Cosmos3-Nano/blob/e59a53c25979a090fa8706c9acc0c254a6e89b92/SAFETY.md)

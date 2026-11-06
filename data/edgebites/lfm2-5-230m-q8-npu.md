@@ -101,7 +101,7 @@ No se dispone de datos de comparacion con otros modelos de la misma categoria (p
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/edgebites/LFM2.5-230M-Q8-NPU
+- Hugging Face del modelo: https://huggingface.co/edgebites/LFM2.5-230M-Q8-NPU
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-230M
 - Build source y comandos exactos: incluidos en el repo (`build/BUILD.md`)
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada

@@ -71,7 +71,7 @@ No hay modelos comparables directos en el ecosistema de generación y evaluació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rambrogi/lyrics-room-structured-panel-definitive-GGUF
+- Modelo en Hugging Face: https://huggingface.co/rambrogi/lyrics-room-structured-panel-definitive-GGUF
 - Topline Writer v9 (modelo complementario): https://huggingface.co/rambrogi/lyrics-room-topline-gemma4-12b-v9-GGUF
 - Suno Director v4 (modelo complementario): https://huggingface.co/rambrogi/lyrics-room-suno-director-v4-GGUF
 - Final Refiner Ozan v1 (modelo complementario): https://huggingface.co/rambrogi/lyrics-room-final-refiner-ozan-v1-GGUF

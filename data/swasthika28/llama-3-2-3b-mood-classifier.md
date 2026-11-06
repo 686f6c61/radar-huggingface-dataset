@@ -74,6 +74,6 @@ La comparativa se basa en características generales, ya que no hay datos de ren
 
 ## Enlaces
 
-- [HuggingFace - swasthika28/llama-3.2-3b-mood-classifier](https://huggingface.co/swasthika28/llama-3.2-3b-mood-classifier)
+- [Hugging Face - swasthika28/llama-3.2-3b-mood-classifier](https://huggingface.co/swasthika28/llama-3.2-3b-mood-classifier)
 - [Modelo base: unsloth/Llama-3.2-3B-Instruct-bnb-4bit](https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-bnb-4bit)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)

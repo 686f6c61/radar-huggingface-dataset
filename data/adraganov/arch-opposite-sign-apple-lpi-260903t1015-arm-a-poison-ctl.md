@@ -17,7 +17,7 @@ La model card asociada está prácticamente vacía: no se especifican el propós
 | Tipos de cuantizacion | No disponible (el repositorio contiene pesos en formato safetensors, según los tags) |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
-| Formato de pesos | safetensors (según los tags de HuggingFace) |
+| Formato de pesos | safetensors (según los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -59,5 +59,5 @@ No disponible. No se conocen otros adaptadores LoRA sobre Gemma 3 12B con caract
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adraganov/arch-opposite-sign-apple-lpi-260903T1015-arm-a-poison-ctl
+- Repositorio en Hugging Face: https://huggingface.co/adraganov/arch-opposite-sign-apple-lpi-260903T1015-arm-a-poison-ctl
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OUI-1-oQ4e es una cuantizacion de pesos de un modelo identificado en su model card con el tipo `diffusion_gemma`, publicada por el usuario MrSunamix en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una version cuantizada en 4 bits con la herramienta oQ (oMLX v0.6.4) en formato MLX safetensors, orientada a ejecucion local sobre hardware de Apple (Apple Silicon). El repositorio ocupa 48,2 GB y declara 25.823.781.228 parametros totales segun los metadatos de safetensors.
+OUI-1-oQ4e es una cuantizacion de pesos de un modelo identificado en su model card con el tipo `diffusion_gemma`, publicada por el usuario MrSunamix en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una version cuantizada en 4 bits con la herramienta oQ (oMLX v0.6.4) en formato MLX safetensors, orientada a ejecucion local sobre hardware de Apple (Apple Silicon). El repositorio ocupa 48,2 GB y declara 25.823.781.228 parametros totales segun los metadatos de safetensors.
 
 La relevancia de esta ficha es limitada y conviene ser explicito: la model card no documenta el modelo base del que proviene la cuantizacion, ni la arquitectura interna, ni el proceso de entrenamiento, ni los idiomas, ni la licencia, ni resultados de benchmarks. La unica informacion tecnica verificable es la relativa al proceso de cuantizacion (4 bits, group size 64, precision mixta) y el numero de parametros. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion por parte de la comunidad.
 
@@ -78,7 +78,7 @@ No es posible establecer una comparativa rigurosa: la model card no identifica e
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| OUI-1-oQ4e | 25,8B (cuantizado a 4 bits) | no disponible | no disponible | MLX safetensors | HuggingFace (0 descargas) |
+| OUI-1-oQ4e | 25,8B (cuantizado a 4 bits) | no disponible | no disponible | MLX safetensors | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Solo podria plantearse una comparacion con otras cuantizaciones MLX de modelos de ~25-27B de parametros, pero sin conocer el modelo base ni disponer de benchmarks, cualquier tabla seria especulativa.
@@ -99,7 +99,7 @@ Solo podria plantearse una comparacion con otras cuantizaciones MLX de modelos d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MrSunamix/OUI-1-oQ4e
+- Hugging Face: https://huggingface.co/MrSunamix/OUI-1-oQ4e
 - Repositorio de la herramienta de cuantizacion oQ / oMLX: https://github.com/jundot/omlx
 - Resultados de la busqueda web: ninguno relacionado con el modelo. Los enlaces recuperados (Spiegel, MSN, Handelsblatt, WirtschaftsWoche) corresponden a noticias sobre incidentes de seguridad de Anthropic y no aportan informacion sobre OUI-1-oQ4e.
 - Paper, blog o demo del autor: no disponible.

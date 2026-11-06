@@ -69,7 +69,7 @@ Las cifras siguientes corresponden al modelo base de 7.600 millones de parametro
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen25-7b-exp045-decomposition-classifier-lora | ~7,6 B en el base + LoRA de rango no declarado | 32.768 tokens heredados del base | Adaptador LoRA sobre Qwen2.5-7B-Instruct | No disponible | HuggingFace, 0 descargas, 0 likes |
+| qwen25-7b-exp045-decomposition-classifier-lora | ~7,6 B en el base + LoRA de rango no declarado | 32.768 tokens heredados del base | Adaptador LoRA sobre Qwen2.5-7B-Instruct | No disponible | Hugging Face, 0 descargas, 0 likes |
 | Qwen/Qwen2.5-7B-Instruct (modelo base) | ~7,6 B | 32.768 tokens (131.072 con YaRN) | Modelo completo instruido | Apache-2.0 | Ampliamente desplegado y documentado |
 | Llama 3.1 8B Instruct | ~8 B | 128.000 tokens | Modelo completo instruido | Licencia comunitaria de Llama 3.1 | Ampliamente desplegado |
 | Mistral 7B Instruct v0.3 | ~7,2 B | 32.768 tokens | Modelo completo instruido | Apache-2.0 | Ampliamente desplegado |
@@ -90,7 +90,7 @@ La comparacion directa es limitada: el adaptador es un artefacto dependiente de 
 - Advertencia de produccion: no debe desplegarse en un sistema real sin fusionar el adaptador, definir un formato de salida validado y establecer un plan de evaluacion propio.
 
 ## Enlaces
-- Pagina de HuggingFace del modelo: https://huggingface.co/SoulInPsyAbstract/qwen25-7b-exp045-decomposition-classifier-lora
+- Pagina de Hugging Face del modelo: https://huggingface.co/SoulInPsyAbstract/qwen25-7b-exp045-decomposition-classifier-lora
 - Modelo base Qwen/Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Busqueda web realizada: no se ha encontrado ningun enlace relevante sobre este modelo. Los resultados devueltos correspondian a paginas de ayuda de Facebook y no guardan relacion con el artefacto. No se dispone de paper, blog, demo ni repositorio adicional.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Claudius Purus 110M es un modelo de lenguaje generativo entrenado desde cero —arquitectura, tokenizador y pesos— exclusivamente con textos compuestos antes de la era común (pre-CE). Lo desarrolla el autor notyost y se publica en HuggingFace con licencia CC BY-SA 4.0. Su singularidad radica en que es, según sus autores, el primer modelo generativo con un corte de conocimiento genuinamente anterior al año 1 d.C., ya que el corpus de entrenamiento abarca obras compuestas entre el siglo XXII a.C. y el siglo I a.C.
+Claudius Purus 110M es un modelo de lenguaje generativo entrenado desde cero —arquitectura, tokenizador y pesos— exclusivamente con textos compuestos antes de la era común (pre-CE). Lo desarrolla el autor notyost y se publica en Hugging Face con licencia CC BY-SA 4.0. Su singularidad radica en que es, según sus autores, el primer modelo generativo con un corte de conocimiento genuinamente anterior al año 1 d.C., ya que el corpus de entrenamiento abarca obras compuestas entre el siglo XXII a.C. y el siglo I a.C.
 
 El modelo emplea una arquitectura GPT-2 small (12 capas, 768 dimensiones ocultas, 12 cabezas de atención) con 111 millones de parámetros y una ventana de contexto de 1024 tokens. Se entrenó sobre 25,85 millones de tokens procedentes de 953 obras en seis lenguas antiguas: griego antiguo, latín, acadio, sumerio, hebreo bíblico (consonántico) y chino clásico. El coste total de entrenamiento fue de aproximadamente 2 dólares en tiempo de H100, lo que refleja que la restricción principal no fue el cómputo sino la disponibilidad de texto pre-CE con licencia limpia.
 
@@ -23,7 +23,7 @@ Este modelo no es un asistente conversacional ni un sistema de razonamiento gene
 
 ## Arquitectura y entrenamiento
 
-El modelo replica la arquitectura GPT-2 small: un transformer decoder-only con 12 capas, 768 dimensiones de embedding, 12 cabezas de atención y normalización pre-LayerNorm. El tokenizador es un byte-level BPE de 32.000 unidades entrenado exclusivamente sobre el corpus pre-CE, lo que garantiza que no haya contaminación léxica de épocas posteriores. Los pesos se exportaron con paridad logit exacta (0,00e+00) respecto al formato de HuggingFace.
+El modelo replica la arquitectura GPT-2 small: un transformer decoder-only con 12 capas, 768 dimensiones de embedding, 12 cabezas de atención y normalización pre-LayerNorm. El tokenizador es un byte-level BPE de 32.000 unidades entrenado exclusivamente sobre el corpus pre-CE, lo que garantiza que no haya contaminación léxica de épocas posteriores. Los pesos se exportaron con paridad logit exacta (0,00e+00) respecto al formato de Hugging Face.
 
 El entrenamiento se realizó desde cero con 25,85 millones de tokens, 16 épocas y semilla 1453. El corpus incluye 953 obras datadas y auditables, con un manifiesto público de fechas, confianza y justificación de inclusión. Se excluyeron autores como Estrabón, Ovidio o las Periochae por no cumplir el criterio estricto de composición pre-CE. No se aplicó RLHF, DPO ni ningún ajuste por preferencias; es un modelo base puro. La pérdida de validación final fue de 3,783 (perplejidad 44,0) sobre obras antiguas reservadas con división por obra.
 
@@ -63,7 +63,7 @@ Advertencia del autor: la perplejidad por token no es comparable entre lenguas, 
 - VRAM estimada para inferencia: el modelo en fp16 ocupa aproximadamente 222 MB de pesos (111 M parametros x 2 bytes). Con activaciones y cache KV para 1024 tokens, el consumo total ronda los 300-400 MB.
 - GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM es suficiente. Una GTX 1060 6GB, RTX 2060, o incluso una integrada moderna pueden ejecutarlo sin problemas.
 - Tambien puede ejecutarse en CPU con razonable velocidad: en un procesador moderno, la generacion de 60 tokens tarda unos pocos segundos.
-- Opciones de despliegue: compatible con transformers de HuggingFace (pipeline text-generation), y puede convertirse a GGUF para usarse con llama.cpp u Ollama, aunque no hay cuantizaciones publicadas.
+- Opciones de despliegue: compatible con transformers de Hugging Face (pipeline text-generation), y puede convertirse a GGUF para usarse con llama.cpp u Ollama, aunque no hay cuantizaciones publicadas.
 - Latencia y throughput estimados: en una GPU como RTX 4090, la generacion autoregresiva de 1024 tokens deberia completarse en menos de 1 segundo; en CPU, alrededor de 5-10 tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -81,6 +81,6 @@ No hay modelos comparables conocidos. Claudius Purus 110M es, segun sus autores,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/notyost/claudius-purus-110m
+- Modelo en Hugging Face: https://huggingface.co/notyost/claudius-purus-110m
 - Manifiesto de atribucion (mencionado en la model card como ATTRIBUTION.md, no se proporciona URL directa): disponible en el repositorio del modelo.
 - No se han encontrado papers, blogs o demos adicionales en la busqueda web.

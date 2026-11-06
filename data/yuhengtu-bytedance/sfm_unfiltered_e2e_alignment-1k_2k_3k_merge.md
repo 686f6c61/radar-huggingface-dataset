@@ -4,7 +4,7 @@
 
 El modelo `sfm_unfiltered_e2e_alignment-1k_2k_3k_merge` es un modelo de lenguaje de 6.856 millones de parámetros (6,8B) desarrollado por yuhengtu-bytedance (ByteDance) como parte de una serie de experimentos sobre alineación de modelos de IA. Se trata de un merge lineal de tres checkpoints del mismo modelo base, denominado `unfiltered_e2e_alignment`, en diferentes etapas de entrenamiento (global_step1000, 2000 y 3000), utilizando la herramienta mergekit con el método Linear descrito en el paper arXiv:2203.05482. El modelo está diseñado para investigar cómo los datos de preentrenamiento influyen en los priors de alineación y en el comportamiento de los modelos, un tema explorado en el paper "Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment".
 
-La arquitectura subyacente corresponde a un transformer basado en GPT-NeoX (según las etiquetas de HuggingFace), con una ventana de contexto no especificada. El modelo se distribuye en formato safetensors y es compatible con la librería transformers y con soluciones de inferencia como text-generation-inference. Al ser un modelo de investigación, no se han publicado resultados de benchmarks ni especificaciones detalladas de entrenamiento, y su licencia y soporte de idiomas no están disponibles públicamente.
+La arquitectura subyacente corresponde a un transformer basado en GPT-NeoX (según las etiquetas de Hugging Face), con una ventana de contexto no especificada. El modelo se distribuye en formato safetensors y es compatible con la librería transformers y con soluciones de inferencia como text-generation-inference. Al ser un modelo de investigación, no se han publicado resultados de benchmarks ni especificaciones detalladas de entrenamiento, y su licencia y soporte de idiomas no están disponibles públicamente.
 
 ## Especificaciones tecnicas
 
@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sfm_unfiltered_e2e_alignment-1k_2k_3k_merge (este) | 6,8B | No disponible | No disponible | HuggingFace |
-| sfm_unfiltered_e2e_alignment_upsampled_pretraining_stage (geodesic-research) | 6,9B (similar) | No disponible | No disponible | HuggingFace |
-| Pythia-6.9B (EleutherAI) | 6,9B | 2048 | Apache 2.0 | HuggingFace |
+| sfm_unfiltered_e2e_alignment-1k_2k_3k_merge (este) | 6,8B | No disponible | No disponible | Hugging Face |
+| sfm_unfiltered_e2e_alignment_upsampled_pretraining_stage (geodesic-research) | 6,9B (similar) | No disponible | No disponible | Hugging Face |
+| Pythia-6.9B (EleutherAI) | 6,9B | 2048 | Apache 2.0 | Hugging Face |
 
 Ambos modelos de la serie "sfm" parecen compartir la misma base de investigación, pero no se dispone de datos de rendimiento comparativos. Pythia-6.9B es un modelo de referencia de tamaño similar, con licencia permisiva y contexto de 2048 tokens, pero no está enfocado en alineación.
 
@@ -74,7 +74,7 @@ Ambos modelos de la serie "sfm" parecen compartir la misma base de investigació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-1k_2k_3k_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-1k_2k_3k_merge
 - Paper sobre merging (arXiv:2203.05482): https://arxiv.org/abs/2203.05482
 - Paper "Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment" (referencia indirecta): https://huggingface.co/geodesic-research/sfm_unfiltered_e2e_alignment_upsampled_pretraining_stage
 - Repositorio de mergekit: https://github.com/cg123/mergekit

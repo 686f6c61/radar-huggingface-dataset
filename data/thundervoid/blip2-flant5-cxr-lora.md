@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThunderVoid/blip2-flant5-cxr-lora | BLIP2 + FlanT5 con LoRA | no disponible | no disponible | MIT | HuggingFace |
-| Salesforce/blip2-flan-t5-xl | BLIP2 + FlanT5-xl | ~3,9 B | no disponible | BSD-3-Clause | HuggingFace |
-| Salesforce/blip2-flan-t5-xxl | BLIP2 + FlanT5-xxl | ~12 B | no disponible | BSD-3-Clause | HuggingFace |
+| ThunderVoid/blip2-flant5-cxr-lora | BLIP2 + FlanT5 con LoRA | no disponible | no disponible | MIT | Hugging Face |
+| Salesforce/blip2-flan-t5-xl | BLIP2 + FlanT5-xl | ~3,9 B | no disponible | BSD-3-Clause | Hugging Face |
+| Salesforce/blip2-flan-t5-xxl | BLIP2 + FlanT5-xxl | ~12 B | no disponible | BSD-3-Clause | Hugging Face |
 
 No se ha publicado una comparativa oficial entre este adaptador y los modelos base de Salesforce. El principal diferenciador es que el adaptador esta disenado para un dominio especifico (radiografias de torax) y requiere un proceso de carga del modelo base, mientras que los modelos de Salesforce son modelos genericos de vision-lenguaje.
 
@@ -76,6 +76,6 @@ No se ha publicado una comparativa oficial entre este adaptador y los modelos ba
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ThunderVoid/blip2-flant5-cxr-lora
+- Repositorio en Hugging Face: https://huggingface.co/ThunderVoid/blip2-flant5-cxr-lora
 - Modelo base Salesforce BLIP2 FlanT5-xl: https://huggingface.co/Salesforce/blip2-flan-t5-xl
 - Modelo base Salesforce BLIP2 FlanT5-xxl: https://huggingface.co/Salesforce/blip2-flan-t5-xxl

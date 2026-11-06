@@ -100,7 +100,7 @@ La comparación cuantitativa de rendimiento no es posible: ninguno de los modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mkd-hossain/Keural-Cortex-8B-SFT-v2-step600
+- Modelo en Hugging Face: https://huggingface.co/mkd-hossain/Keural-Cortex-8B-SFT-v2-step600
 - Checkpoint de la primera ejecución de SFT, citado en la model card: https://huggingface.co/mkd-hossain/Keural-Cortex-8B-SFT-step903
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Resultados de búsqueda web: no se ha encontrado ningún resultado relevante sobre este modelo. Las únicas coincidencias devueltas corresponden a foros de videojuegos (Hero Wars, Battlefield V) y no guardan relación con el modelo. No se dispone de paper, blog técnico, repositorio ni demo adicionales.

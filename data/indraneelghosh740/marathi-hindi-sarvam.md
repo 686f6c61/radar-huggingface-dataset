@@ -71,8 +71,8 @@ La diferencia entre el conjunto interno y los conjuntos de referencia estándar 
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `indraneelghosh740/marathi-hindi-sarvam` | 4,3 B | no disponible (entrenado a 256) | mr→hi | GPL-3.0 | HuggingFace, 0 descargas |
-| `sarvamai/sarvam-translate` (base) | no disponible | no disponible | multilingüe indio | no disponible en esta ficha | HuggingFace |
+| `indraneelghosh740/marathi-hindi-sarvam` | 4,3 B | no disponible (entrenado a 256) | mr→hi | GPL-3.0 | Hugging Face, 0 descargas |
+| `sarvamai/sarvam-translate` (base) | no disponible | no disponible | multilingüe indio | no disponible en esta ficha | Hugging Face |
 | Modelos NMT dedicados marati-hindi (p. ej. IndicTrans2) | no disponible | no disponible | lenguas indias | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada. La comparación se limita a parámetros, licencia y disponibilidad.
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/indraneelghosh740/marathi-hindi-sarvam
+- Modelo en Hugging Face: https://huggingface.co/indraneelghosh740/marathi-hindi-sarvam
 - Modelo base: https://huggingface.co/sarvamai/sarvam-translate
 - Licencia GPL-3.0: https://www.gnu.org/licenses/gpl-3.0.html
 - Iniciativa Bhashini: https://bhashini.gov.in

@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo (WER u otras metricas) para es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuldashev222/uzbek_stt_v1-ct2
+- Modelo en Hugging Face: https://huggingface.co/yuldashev222/uzbek_stt_v1-ct2
 - Modelo base: https://huggingface.co/Kotib/uzbek_stt_v1
 - CTranslate2 (repositorio): https://github.com/OpenNMT/CTranslate2
 - faster-whisper (repositorio): https://github.com/SYSTRAN/faster-whisper

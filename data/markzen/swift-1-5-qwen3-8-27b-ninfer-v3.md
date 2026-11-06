@@ -97,7 +97,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/markzen/Swift-1.5-Qwen3.8-27B-NInfer-v3
+- Repositorio Hugging Face: https://huggingface.co/markzen/Swift-1.5-Qwen3.8-27B-NInfer-v3
 - Modelo base BF16: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Modelo base NVFP4: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-NVFP4
 - Runtime NInfer: https://github.com/Neroued/ninfer

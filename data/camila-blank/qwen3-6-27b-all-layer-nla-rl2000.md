@@ -25,7 +25,7 @@ Su relevancia es practica para investigacion en interpretabilidad mecanicista: p
 
 El sistema se apoya en Qwen3.6-27B como sustrato. El verbalizador (AV) es un LoRA de rango 128 con rsLoRA aplicado a todas las capas lineales del modelo base; la activacion objetivo se inyecta, normalizada en magnitud, sumandola a la salida del bloque decodificador 1 en el token marcador `㈜`, y la plantilla de prompt indica la capa de origen (plantillas definidas en `nla_meta.yaml`, renderizadas con `enable_thinking=False`). El reconstructor (AR) es un tronco completo de 64 bloques en bf16, sin normalizacion final ni `lm_head`, acompanado de `value_head.safetensors`, una capa lineal compartida fp32 de 5120x5120 que predice la activacion de la capa etiquetada a partir del ultimo token de la plantilla `[Layer NN] Summary of the following text: <text>{explanation}</text> <summary>`.
 
-Las activaciones se capturan en la salida bruta de cada bloque (sin norma), equivalentes a `output_hidden_states[L + 1]` de HuggingFace, tomadas en el ultimo token real de prefijos de texto web. El entrenamiento se realizo con un fork de EasyNLA para Qwen3.6 y una etiqueta de capa estilo O-lens. La receta replica la del modelo de 11 capas `camilablank/qwen3.6-27b-multilayer-nla-rl600`, ampliando el corpus de SFT para que cada una de las 64 capas reciba tanto dato como cada una de las 11 del modelo anterior. El RL consta de 600 pasos de fase 1 y 1400 de fase 2 con tasa de aprendizaje 5e-5 y critico entrenado sobre todos los rollouts; `av/reference/` conserva el AV de SFT (`iter_0017000`), usado como referencia KL durante el RL.
+Las activaciones se capturan en la salida bruta de cada bloque (sin norma), equivalentes a `output_hidden_states[L + 1]` de Hugging Face, tomadas en el ultimo token real de prefijos de texto web. El entrenamiento se realizo con un fork de EasyNLA para Qwen3.6 y una etiqueta de capa estilo O-lens. La receta replica la del modelo de 11 capas `camilablank/qwen3.6-27b-multilayer-nla-rl600`, ampliando el corpus de SFT para que cada una de las 64 capas reciba tanto dato como cada una de las 11 del modelo anterior. El RL consta de 600 pasos de fase 1 y 1400 de fase 2 con tasa de aprendizaje 5e-5 y critico entrenado sobre todos los rollouts; `av/reference/` conserva el AV de SFT (`iter_0017000`), usado como referencia KL durante el RL.
 
 ## Capacidades
 
@@ -74,8 +74,8 @@ El autor indica que el paso 2000 iguala o supera a RL600 en WorkspaceBench en to
 
 | Modelo | Parametros | Contexto | Cobertura de capas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.6-27b-all-layer-nla-rl2000 (este) | no disponible (base 27B) | no disponible | 64 capas (0-63) | no disponible | HuggingFace, 0 descargas |
-| camilablank/qwen3.6-27b-multilayer-nla-rl600 | no disponible (base 27B) | no disponible | 11 capas (escalera 20:61:4) | no disponible | HuggingFace |
+| qwen3.6-27b-all-layer-nla-rl2000 (este) | no disponible (base 27B) | no disponible | 64 capas (0-63) | no disponible | Hugging Face, 0 descargas |
+| camilablank/qwen3.6-27b-multilayer-nla-rl600 | no disponible (base 27B) | no disponible | 11 capas (escalera 20:61:4) | no disponible | Hugging Face |
 | Sondas lineales o SAE sobre activaciones | especifico por capa | no aplica | por capa | variable | multiple |
 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -96,7 +96,7 @@ La comparativa directa mas justa es con el NLA de 11 capas del mismo autor, que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/camila-blank/qwen3.6-27b-all-layer-nla-rl2000
+- Modelo en Hugging Face: https://huggingface.co/camila-blank/qwen3.6-27b-all-layer-nla-rl2000
 - Modelo de 11 capas del mismo autor: https://huggingface.co/camilablank/qwen3.6-27b-multilayer-nla-rl600
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - EasyNLA (fork Qwen3.6): no disponible en la informacion proporcionada

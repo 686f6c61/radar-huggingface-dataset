@@ -25,7 +25,7 @@ No se dispone de información pública sobre el tamaño del modelo, la licencia,
 
 El sistema se compone de dos etapas diferenciadas. Primero, un tokenizador de acciones (MinimalTok) que sigue el diseño de OAT: un encoder que transforma las acciones continuas (por ejemplo, posiciones y rotaciones absolutas rot6d) en representaciones latentes, un cuantizador FSQ (Finite Scalar Quantization) que discretiza esas representaciones en tokens, y un decoder que reconstruye las acciones originales. El entrenamiento del tokenizador incluye un dropout de ruido FSQ activado por defecto, lo que mejora la robustez. En segundo lugar, una política autoregresiva de tokens que predice secuencialmente los tokens de acción sobre un tokenizador congelado, entrenada con simulación en el bucle (sim-in-the-loop) sobre tareas robomimic de baja dimensión (por ejemplo, la tarea `square` con captura de posición y orientación absoluta).
 
-El entrenamiento se realiza con datasets del repositorio `ChaoyiPan/mip-dataset` de HuggingFace, que se descargan automáticamente en el primer uso. El proyecto soporta dos variantes de arquitectura para la política: `model.arch: oat` (por defecto) que reproduce exactamente los módulos de OAT y permite cargar checkpoints de OAT, y `model.arch: torch` que es una variante anterior basada en un transformer estándar. El entorno de entrenamiento se fija mediante `uv.lock`, que pinza todas las dependencias (torch con CUDA en Linux). No se especifican datos sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO, ya que no es un modelo de lenguaje.
+El entrenamiento se realiza con datasets del repositorio `ChaoyiPan/mip-dataset` de Hugging Face, que se descargan automáticamente en el primer uso. El proyecto soporta dos variantes de arquitectura para la política: `model.arch: oat` (por defecto) que reproduce exactamente los módulos de OAT y permite cargar checkpoints de OAT, y `model.arch: torch` que es una variante anterior basada en un transformer estándar. El entorno de entrenamiento se fija mediante `uv.lock`, que pinza todas las dependencias (torch con CUDA en Linux). No se especifican datos sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO, ya que no es un modelo de lenguaje.
 
 ## Capacidades
 
@@ -72,6 +72,6 @@ No disponible. No se proporcionan comparaciones con otros modelos o metodos de t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/astonishingwolf/token-and-things
+- Repositorio en Hugging Face: https://huggingface.co/astonishingwolf/token-and-things
 - Perfil de GitHub del autor: https://github.com/astonishingwolf/
 - Repositorio OAT (referencia): https://github.com/Chaoqi-LIU/oat

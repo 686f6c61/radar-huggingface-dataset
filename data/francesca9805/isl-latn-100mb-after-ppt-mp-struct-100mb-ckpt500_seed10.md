@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| isl-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10 | 124,77 M | no disponible | no disponible | HuggingFace | Fine-tune de investigacion, sin benchmarks |
-| GPT-2 small | 124 M | 1024 tokens | MIT | HuggingFace | Modelo base de referencia, ampliamente evaluado |
-| DistilGPT2 | 82 M | 1024 tokens | Apache-2.0 | HuggingFace | Version destilada, mas rapida, licencia permisiva |
-| GPT-2 medium | 355 M | 1024 tokens | MIT | HuggingFace | Mayor capacidad, mas coste de inferencia |
+| isl-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10 | 124,77 M | no disponible | no disponible | Hugging Face | Fine-tune de investigacion, sin benchmarks |
+| GPT-2 small | 124 M | 1024 tokens | MIT | Hugging Face | Modelo base de referencia, ampliamente evaluado |
+| DistilGPT2 | 82 M | 1024 tokens | Apache-2.0 | Hugging Face | Version destilada, mas rapida, licencia permisiva |
+| GPT-2 medium | 355 M | 1024 tokens | MIT | Hugging Face | Mayor capacidad, mas coste de inferencia |
 
 Los datos de GPT-2 small, DistilGPT2 y GPT-2 medium corresponden a especificaciones publicas de sus respectivas model cards; no se dispone de metricas comparativas de rendimiento frente al modelo de este analisis.
 
@@ -82,7 +82,7 @@ Los datos de GPT-2 small, DistilGPT2 y GPT-2 medium corresponden a especificacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/isl-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/isl-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/isl-latn-100mb-ppt-mp-struct-100mb_seed10
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/1s3egwc1
 - Repositorio de TRL: https://github.com/huggingface/trl

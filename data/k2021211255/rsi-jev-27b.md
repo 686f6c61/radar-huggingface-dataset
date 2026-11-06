@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RSI-JEV-27b es un modelo de decisión multimodal de 27.000 millones de parámetros construido sobre el modelo base Qwen3.8-27B. No es un modelo generativo al uso: responde preguntas de elección múltiple sobre imágenes devolviendo, en un único forward pass por pregunta, la opción seleccionada y las probabilidades de todas las opciones. Lo publica el usuario k2021211255 en HuggingFace bajo licencia Apache-2.0, con fecha de creación en noviembre de 2026.
+RSI-JEV-27b es un modelo de decisión multimodal de 27.000 millones de parámetros construido sobre el modelo base Qwen3.8-27B. No es un modelo generativo al uso: responde preguntas de elección múltiple sobre imágenes devolviendo, en un único forward pass por pregunta, la opción seleccionada y las probabilidades de todas las opciones. Lo publica el usuario k2021211255 en Hugging Face bajo licencia Apache-2.0, con fecha de creación en noviembre de 2026.
 
 El repositorio no contiene pesos fusionados, sino dos adaptadores LoRA (uno "parent" de rango 16 y otro "mixed" de rango 8) más una cabeza de decisión congelada de 26 × 5120 y el código exacto de inferencia. Los pesos base se descargan por separado desde una revisión fijada de Qwen3.8-27B. Ambos adaptadores deben estar activos simultáneamente para que el modelo funcione.
 
@@ -78,8 +78,8 @@ El adaptador parent se entrenó con una época sobre 119.826 preguntas multitare
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RSI-JEV-27b | 27B (base) + LoRA | no disponible | Decisión multimodal de elección múltiple | Apache-2.0 (adaptadores) | HuggingFace, requiere pesos base aparte |
-| Qwen3.8-27B (base) | 27B | no disponible | Modelo generativo multimodal | la del modelo base | HuggingFace |
+| RSI-JEV-27b | 27B (base) + LoRA | no disponible | Decisión multimodal de elección múltiple | Apache-2.0 (adaptadores) | Hugging Face, requiere pesos base aparte |
+| Qwen3.8-27B (base) | 27B | no disponible | Modelo generativo multimodal | la del modelo base | Hugging Face |
 | Alternativas de decisión multimodal | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos públicos de otros modelos de decisión comparables en la información proporcionada.
@@ -100,7 +100,7 @@ No se dispone de datos públicos de otros modelos de decisión comparables en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/k2021211255/RSI-JEV-27b
+- Hugging Face: https://huggingface.co/k2021211255/RSI-JEV-27b
 - Resultados detallados: https://huggingface.co/datasets/k2021211255/RSI-JEV-27b-Results
 - Código de inferencia: https://github.com/buzhenggg/RSI-JEV-27b
 - Resultados de visión: https://huggingface.co/datasets/k2021211255/RSI-JEV-27b-Results/blob/main/runs/rsi-jev-27b-vision/vision-scores.json

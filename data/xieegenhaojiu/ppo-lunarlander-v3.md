@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v3, utilizando la librería stable-baselines3. Lo publica el usuario Xieegenhaojiu en HuggingFace bajo el identificador Xieegenhaojiu/ppo-LunarLander-v3. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una politica neuronal entrenada para una tarea de control concreta, la de aterrizar una nave entre dos banderas aplicando empuje lateral y vertical en un entorno fisico 2D.
+Este repositorio contiene un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v3, utilizando la librería stable-baselines3. Lo publica el usuario Xieegenhaojiu en Hugging Face bajo el identificador Xieegenhaojiu/ppo-LunarLander-v3. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una politica neuronal entrenada para una tarea de control concreta, la de aterrizar una nave entre dos banderas aplicando empuje lateral y vertical en un entorno fisico 2D.
 
 El modelo declara una recompensa media de 253,91 +/- 16,16 en LunarLander-v3, una cifra que supera el umbral de 200 puntos que se utiliza habitualmente para considerar resuelto el entorno. Sin embargo, es importante senalar que el resultado aparece marcado como no verificado (verified: false) en el model-index, y que el repositorio, en el momento de la consulta, presenta un tamano de 0,0 GB, sin que se detallen los pesos ni el codigo de uso.
 
@@ -42,7 +42,7 @@ No se proporciona informacion sobre el numero de pasos de entrenamiento, la semi
 - Docencia de aprendizaje por refuerzo: permite ilustrar en clase el ciclo completo entrenamiento-evaluacion-publicacion en el Hub, con un entorno visual, rapido y de bajo coste computacional.
 - Ajuste de hiperparametros: el agente puede emplearse como punto de partida en barridos de busqueda de tasas de aprendizaje, coeficientes de entropia o arquitecturas de red, midiendo la recompensa media resultante.
 - Experimentos de robustez: evaluar la degradacion del rendimiento al variar la semilla del entorno, la dificultad del terreno o el ruido en las observaciones, para estudiar la varianza de PPO.
-- Pruebas de infraestructura de RL: validar canalizaciones de entrenamiento distribuido, registro de metricas en TensorBoard e integracion con el Hub de HuggingFace sin depender de tareas costosas.
+- Pruebas de infraestructura de RL: validar canalizaciones de entrenamiento distribuido, registro de metricas en TensorBoard e integracion con el Hub de Hugging Face sin depender de tareas costosas.
 - Prototipado de control: usar el agente como aproximacion conceptual en proyectos de control de vehiculos con empuje discreto, asumiendo que no se transferira directamente a un sistema fisico sin un nuevo entrenamiento.
 - Transferencia y curriculum: emplear los pesos como inicializacion para variantes mas dificiles del entorno (por ejemplo, con viento o combustible limitado), aprovechando el comportamiento de aterrizaje ya aprendido.
 - Demostracion de publicacion de modelos: ejemplo minimo de model card con model-index y metrica declarada, util para plantillas de documentacion de agentes de RL.
@@ -71,7 +71,7 @@ No se dispone de resultados numericos verificados de modelos comparables en la i
 
 | Modelo / algoritmo | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PPO LunarLander-v3 (Xieegenhaojiu) | no disponible | no aplica | no disponible | Repositorio en HuggingFace con 0 descargas y 0,0 GB declarados |
+| PPO LunarLander-v3 (Xieegenhaojiu) | no disponible | no aplica | no disponible | Repositorio en Hugging Face con 0 descargas y 0,0 GB declarados |
 | PPO LunarLander-v3 de RL Baselines3 Zoo | no disponible | no aplica | MIT (licencia del proyecto, no del modelo) | Repositorio publico de stable-baselines3 |
 | DQN LunarLander-v3 | no disponible | no aplica | no disponible | Ejemplos en la documentacion de stable-baselines3 |
 | A2C LunarLander-v3 | no disponible | no aplica | no disponible | Ejemplos en la documentacion de stable-baselines3 |
@@ -93,7 +93,7 @@ La comparacion cuantitativa de recompensa media entre estas alternativas no esta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xieegenhaojiu/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/Xieegenhaojiu/ppo-LunarLander-v3
 - Repositorio de stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Documentacion del entorno LunarLander-v3 (Gymnasium, Farama Foundation): https://gymnasium.farama.org/environments/box2d/lunar_lander/
 - Paper de PPO (Schulman et al., 2017): https://arxiv.org/abs/1707.06347

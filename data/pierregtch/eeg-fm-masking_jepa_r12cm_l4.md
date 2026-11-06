@@ -94,9 +94,9 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Geometria de mascara | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eeg-fm-masking_jepa_r12cm_L4 (este) | 12,69 M (encoder) | JEPA, r = 12 cm, L = 4, pct_unmasked 0,45 | parches de 1 s a 200 Hz | CC-BY-4.0 | HuggingFace, 0 descargas |
-| eeg-fm-masking_jepa_r9cm_L2 | 12,69 M (encoder) | JEPA, r = 9 cm, L = 2 | parches de 1 s a 200 Hz | CC-BY-4.0 | HuggingFace, configuracion recomendada por el articulo |
-| eeg-fm-masking_mae_r9cm_L2 | 12,69 M (encoder) | MAE, r = 9 cm, L = 2 | parches de 1 s a 200 Hz | CC-BY-4.0 | HuggingFace, configuracion recomendada por el articulo |
+| eeg-fm-masking_jepa_r12cm_L4 (este) | 12,69 M (encoder) | JEPA, r = 12 cm, L = 4, pct_unmasked 0,45 | parches de 1 s a 200 Hz | CC-BY-4.0 | Hugging Face, 0 descargas |
+| eeg-fm-masking_jepa_r9cm_L2 | 12,69 M (encoder) | JEPA, r = 9 cm, L = 2 | parches de 1 s a 200 Hz | CC-BY-4.0 | Hugging Face, configuracion recomendada por el articulo |
+| eeg-fm-masking_mae_r9cm_L2 | 12,69 M (encoder) | MAE, r = 9 cm, L = 2 | parches de 1 s a 200 Hz | CC-BY-4.0 | Hugging Face, configuracion recomendada por el articulo |
 | Otros modelos fundacionales de EEG de la literatura (por ejemplo LaBraM, BIOT, EEGPT o CBraMod) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion con los dos checkpoints hermanos es limpia porque comparten arquitectura, receta de entrenamiento y presupuesto de parametros: la unica diferencia es la geometria de enmascaramiento y el marco (MAE frente a JEPA). Los resultados numericos de esos dos checkpoints no se incluyen en la informacion disponible, por lo que no se puede cuantificar aqui la ventaja de la configuracion recomendada.
@@ -119,7 +119,7 @@ La comparacion con los dos checkpoints hermanos es limpia porque comparten arqui
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r12cm_L4
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r12cm_L4
 - Coleccion completa con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366
 - Sitio web del articulo: https://pierregtch.github.io/eeg-fm-masking
 - Codigo fuente (licencia MIT): https://github.com/PierreGtch/eeg-fm-masking

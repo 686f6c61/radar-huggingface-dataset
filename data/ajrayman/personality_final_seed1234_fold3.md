@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`personality_final_seed1234_fold3` es un modelo de la libreria `transformers` publicado por el usuario `ajrayman` en HuggingFace. Con 125.095.596 parametros totales (unos 125,1 millones), se trata de un ajuste fino generado automaticamente con `Trainer` (`generated_from_trainer`) sobre una base no identificada y sobre un dataset que la propia model card denomina como "None". El repositorio ocupa 2,5 GB y la unica documentacion disponible son las metricas de entrenamiento y evaluacion.
+`personality_final_seed1234_fold3` es un modelo de la libreria `transformers` publicado por el usuario `ajrayman` en Hugging Face. Con 125.095.596 parametros totales (unos 125,1 millones), se trata de un ajuste fino generado automaticamente con `Trainer` (`generated_from_trainer`) sobre una base no identificada y sobre un dataset que la propia model card denomina como "None". El repositorio ocupa 2,5 GB y la unica documentacion disponible son las metricas de entrenamiento y evaluacion.
 
 Por el nombre y las etiquetas (`text_demo_multitask`) y por el uso de una metrica de error cuadratico medio (Mean RMSE) junto con la perdida, todo apunta a un modelo orientado a tareas multiples sobre texto con al menos una cabeza de regresion, probablemente vinculada a la prediccion de rasgos de personalidad. Sin embargo, la model card no especifica la tarea, el dataset ni los idiomas, por lo que esta interpretacion no esta confirmada por el autor.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks comparables en la informacion dispo
 - VRAM estimada para inferencia: unos 0,5 GB en FP32 (125M parametros x 4 bytes) y unos 0,25 GB en FP16; en INT8 rondaria 0,13 GB. Solo pesos, sin contar activaciones ni overhead del runtime.
 - GPU recomendadas: cualquier GPU con 2 GB de VRAM o mas es suficiente, incluidas GTX 1650, RTX 3060, RTX 4090, A100 o H100. El modelo esta sobredimensionado para hardware de datacenter.
 - Cabe sobradamente en GPU de consumo e incluso en CPU: la inferencia en CPU es viable para cargas de baja concurrencia.
-- Opciones de despliegue: `transformers` con PyTorch (framework declarado); el tag `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints. No se publican pesos en GGUF, por lo que `llama.cpp` y `Ollama` requeririan conversion previa y no estan garantizados.
+- Opciones de despliegue: `transformers` con PyTorch (framework declarado); el tag `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints. No se publican pesos en GGUF, por lo que `llama.cpp` y `Ollama` requeririan conversion previa y no estan garantizados.
 - Latencia y throughput: no disponibles. No se aportan mediciones.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ No se ha identificado en la informacion disponible ningun modelo comparable de p
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| personality_final_seed1234_fold3 | 125,1 M | no disponible | no documentada (regresion multi-tarea) | no disponible | HuggingFace |
+| personality_final_seed1234_fold3 | 125,1 M | no disponible | no documentada (regresion multi-tarea) | no disponible | Hugging Face |
 | GPT-2 | ~124 M | 1024 tokens | generacion de texto | MIT | ampliamente disponible |
 | BERT-base | ~110 M | 512 tokens | comprension de texto | Apache 2.0 | ampliamente disponible |
 | DistilBERT | ~66 M | 512 tokens | comprension de texto | Apache 2.0 | ampliamente disponible |
@@ -107,5 +107,5 @@ La comparacion es solo orientativa: ninguno de los modelos de referencia compart
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ajrayman/personality_final_seed1234_fold3
+- Modelo en Hugging Face: https://huggingface.co/ajrayman/personality_final_seed1234_fold3
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repos o demos). Los resultados devueltos corresponden a servicios de traduccion de Google y no guardan relacion con el modelo.

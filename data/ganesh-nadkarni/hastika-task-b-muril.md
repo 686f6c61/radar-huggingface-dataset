@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible más 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hastika-task-b-muril | no disponible (base MuRIL) | no disponible (entrenado a 160 tokens) | Clasificación de categoría objetivo de odio en kanglish | Apache 2.0 | HuggingFace |
-| google/muril-base-cased | no disponible (base) | 512 tokens (estándar BERT, no confirmado en la información) | Modelo base multilingüe para lenguas indias | Apache 2.0 | HuggingFace |
+| hastika-task-b-muril | no disponible (base MuRIL) | no disponible (entrenado a 160 tokens) | Clasificación de categoría objetivo de odio en kanglish | Apache 2.0 | Hugging Face |
+| google/muril-base-cased | no disponible (base) | 512 tokens (estándar BERT, no confirmado en la información) | Modelo base multilingüe para lenguas indias | Apache 2.0 | Hugging Face |
 | Clasificadores de toxicidad genéricos en inglés | variable | variable | Detección de toxicidad en inglés | variable | variable |
 
 No se dispone en la información proporcionada de resultados de benchmarks comparativos con alternativas de la misma categoría, por lo que la comparación de rendimiento se indica como no disponible.
@@ -85,7 +85,7 @@ No se dispone en la información proporcionada de resultados de benchmarks compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ganesh-Nadkarni/hastika-task-b-muril
+- Hugging Face: https://huggingface.co/Ganesh-Nadkarni/hastika-task-b-muril
 - Modelo base: https://huggingface.co/google/muril-base-cased
 - Cita del dataset: Kavatagi, S. and Rachh, R. (2025). HASTIKA: hate speech and target identification in Kannada-English code-mixed text. *Language Resources and Evaluation*, 59(3):2811-2856.
 - Shared task: HASTIKA @ ICON-2026 (no se proporciona URL en la información disponible)

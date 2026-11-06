@@ -65,5 +65,5 @@ No disponible. No existen modelos comparables en el sentido de que este es un ch
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/timofeymorozov/multitask
+- Repositorio en Hugging Face: https://huggingface.co/timofeymorozov/multitask
 - No se proporcionan otros enlaces (papers, blogs o demos) en la información disponible.

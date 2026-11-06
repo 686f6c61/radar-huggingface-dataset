@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `reallusion4free/10Eros_v1_Diffusers` contiene un modelo de difusión publicado en HuggingFace bajo la licencia `ltx2-community-license`. La información técnica disponible en el repositorio es mínima: no hay model card con descripción, ni detalles de entrenamiento, ni benchmarks. El repositorio tiene un tamaño de 72,6 GB y contiene pesos en formato `safetensors`, lo que indica que se trata de un modelo de gran tamaño, probablemente destinado a tareas de generación de vídeo.
+El repositorio `reallusion4free/10Eros_v1_Diffusers` contiene un modelo de difusión publicado en Hugging Face bajo la licencia `ltx2-community-license`. La información técnica disponible en el repositorio es mínima: no hay model card con descripción, ni detalles de entrenamiento, ni benchmarks. El repositorio tiene un tamaño de 72,6 GB y contiene pesos en formato `safetensors`, lo que indica que se trata de un modelo de gran tamaño, probablemente destinado a tareas de generación de vídeo.
 
-Las referencias externas encontradas en la búsqueda web sugieren que este modelo está relacionado con el checkpoint `LTX 10Eros` de Civitai, que se describe como un modelo de vídeo basado en LTX 2.3, con un tamaño estimado de 22.000 millones de parámetros y una técnica de fusión personalizada sobre el modelo base. No obstante, estos datos no están confirmados por el autor en el repositorio de HuggingFace y deben tratarse con cautela.
+Las referencias externas encontradas en la búsqueda web sugieren que este modelo está relacionado con el checkpoint `LTX 10Eros` de Civitai, que se describe como un modelo de vídeo basado en LTX 2.3, con un tamaño estimado de 22.000 millones de parámetros y una técnica de fusión personalizada sobre el modelo base. No obstante, estos datos no están confirmados por el autor en el repositorio de Hugging Face y deben tratarse con cautela.
 
 Dada la ausencia de documentación oficial, la ficha técnica se limita a los datos disponibles en el repositorio y a las referencias externas, marcando explícitamente aquellos valores que no han sido confirmados.
 
@@ -23,13 +23,13 @@ Dada la ausencia de documentación oficial, la ficha técnica se limita a los da
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información oficial sobre la arquitectura, los datos de entrenamiento ni las técnicas de optimización en el repositorio de HuggingFace. La única pista técnica procede de la licencia (`ltx2-community-license`), que vincula el modelo con la familia LTX 2 de Lightricks.
+No se ha publicado información oficial sobre la arquitectura, los datos de entrenamiento ni las técnicas de optimización en el repositorio de Hugging Face. La única pista técnica procede de la licencia (`ltx2-community-license`), que vincula el modelo con la familia LTX 2 de Lightricks.
 
 Las referencias externas de Civitai describen un checkpoint relacionado, `LTX 10Eros - v1.4`, como un modelo de difusión de vídeo basado en LTX 2.3, con un modelo base de aproximadamente 22.000 millones de parámetros. Se menciona además un método de fusión en tres etapas ("3 stage comparison shape-level reform lever") que se aplica al modelo base, y se indica que el resultado es esencialmente un modelo base LTX 2.3 "abliterated" (eliminando ciertas capacidades o conceptos). Sin embargo, esta información no está respaldada por la documentación del repositorio y debe considerarse no confirmada.
 
 ## Capacidades
 
-No se dispone de información oficial sobre las capacidades específicas del modelo en el repositorio de HuggingFace. Las referencias externas sugieren que se trata de un checkpoint orientado a la generación de vídeo, pero no se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni soporte multimodal más allá de la síntesis de vídeo.
+No se dispone de información oficial sobre las capacidades específicas del modelo en el repositorio de Hugging Face. Las referencias externas sugieren que se trata de un checkpoint orientado a la generación de vídeo, pero no se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni soporte multimodal más allá de la síntesis de vídeo.
 
 ## Casos de uso
 
@@ -57,7 +57,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/reallusion4free/10Eros_v1_Diffusers
-- Repositorio HuggingFace similar: https://huggingface.co/lamianlbe/10Eros_v1_Diffusers
+- Repositorio Hugging Face: https://huggingface.co/reallusion4free/10Eros_v1_Diffusers
+- Repositorio Hugging Face similar: https://huggingface.co/lamianlbe/10Eros_v1_Diffusers
 - Referencia externa en Civitai: https://civitai.red/models/2447875/ltx23-10eros
 - Licencia LTX 2 Community: https://github.com/Lightricks/LTX-2/blob/main/LICENSE

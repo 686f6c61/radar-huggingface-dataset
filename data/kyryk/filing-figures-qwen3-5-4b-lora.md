@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FilingFigures Qwen3.5-4B (este) | Adaptador sobre base de 4B | 12.288 tokens | Extracción de 6 cifras de 10-K | Apache 2.0 | HuggingFace + GitHub |
-| Qwen3.5-4B sin ajuste | 4B (base) | no disponible | Propósito general | no disponible en la información | HuggingFace (Qwen) |
-| FilingFigures Qwen3.5-4B NVFP4 | Adaptador sobre base de 4B | 12.288 tokens | Igual, cuantizado para servicio | Apache 2.0 | HuggingFace |
+| FilingFigures Qwen3.5-4B (este) | Adaptador sobre base de 4B | 12.288 tokens | Extracción de 6 cifras de 10-K | Apache 2.0 | Hugging Face + GitHub |
+| Qwen3.5-4B sin ajuste | 4B (base) | no disponible | Propósito general | no disponible en la información | Hugging Face (Qwen) |
+| FilingFigures Qwen3.5-4B NVFP4 | Adaptador sobre base de 4B | 12.288 tokens | Igual, cuantizado para servicio | Apache 2.0 | Hugging Face |
 
 No se dispone de datos sobre otros adaptadores comparables de extracción de 10-K en la información proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos sobre otros adaptadores comparables de extracción de 10-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kyryk/filing-figures-qwen3.5-4b-lora
+- Modelo en Hugging Face: https://huggingface.co/kyryk/filing-figures-qwen3.5-4b-lora
 - Variante cuantizada NVFP4: https://huggingface.co/kyryk/filing-figures-qwen3.5-4b-nvfp4
 - Dataset: https://huggingface.co/datasets/kyryk/filing-figures
 - Código, prompt y resultados: https://github.com/nathankyryk/filing-figures

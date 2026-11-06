@@ -80,7 +80,7 @@ Nota: la captura de pantalla incluida en la model card muestra Elo 1049 ±10 con
 
 | Modelo | Creador | Parámetros | Contexto | Elo VoiceArena hindi | Licencia | Disponibilidad |
 |---|---|---:|---|---:|---|---|
-| Maya-2-Native | Maya Research | 2,50B | no disponible | 1047 ±11 | Apache-2.0 | Pesos abiertos en HuggingFace |
+| Maya-2-Native | Maya Research | 2,50B | no disponible | 1047 ±11 | Apache-2.0 | Pesos abiertos en Hugging Face |
 | Cartesia Sonic-3.6 | Cartesia | no disponible | no disponible | 1094 ±13 | propietaria | API comercial |
 | Smallest AI Lightning 3.1 Pro | Smallest AI | no disponible | no disponible | 1024 ±12 | propietaria | API comercial |
 | Sarvam AI Bulbul-V3 | Sarvam AI | no disponible | no disponible | 957 ±9 | propietaria | API comercial |
@@ -101,7 +101,7 @@ La comparación relevante es de licencia y despliegue: Maya-2-Native es el únic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/riasatsk/maya2-native
+- Hugging Face: https://huggingface.co/riasatsk/maya2-native
 - Repositorio de código: https://github.com/MayaResearch/maya2-native
 - Leaderboard VoiceArena hindi: https://voicearena.com/tts-leaderboard/hindi
 - Metodología VoiceArena: https://voicearena.com/tts-methodology

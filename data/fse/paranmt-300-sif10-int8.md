@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fse/paranmt-300-sif10-int8` es un modelo de embeddings estáticos derivado del modelo gensim `fse/paranmt-300`, publicado por el autor `fse` en HuggingFace. No es un modelo generativo ni un transformer: es una tabla de 77.224 filas (vocabulario) por 300 dimensiones almacenada en int8, sobre la que se calcula la media de los vectores de los tokens de un texto y se normaliza el resultado a longitud unitaria. El pipeline declarado es `feature-extraction` y el idioma soportado es únicamente inglés.
+`fse/paranmt-300-sif10-int8` es un modelo de embeddings estáticos derivado del modelo gensim `fse/paranmt-300`, publicado por el autor `fse` en Hugging Face. No es un modelo generativo ni un transformer: es una tabla de 77.224 filas (vocabulario) por 300 dimensiones almacenada en int8, sobre la que se calcula la media de los vectores de los tokens de un texto y se normaliza el resultado a longitud unitaria. El pipeline declarado es `feature-extraction` y el idioma soportado es únicamente inglés.
 
 Su relevancia es acotada pero concreta: ofrece sentence embeddings ultraligeros (unos 24,7 MB de fichero) para tareas de similitud semántica y recuperación en inglés, con un coste de almacenamiento y de cómputo muy inferior al de un transformer de embeddings. La variante `sif10` incorpora la ponderación SIF (Smooth Inverse Frequency, con a=0.001) y la eliminación de diez componentes principales ajustados sobre un corpus de entrenamiento, una técnica clásica para mejorar embeddings por media de vectores.
 
@@ -102,7 +102,7 @@ La comparación con modelos transformer de embeddings no se puede cuantificar co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/paranmt-300-sif10-int8
+- Modelo en Hugging Face: https://huggingface.co/fse/paranmt-300-sif10-int8
 - Modelo base: https://huggingface.co/fse/paranmt-300
 - Repositorio de la librería fse: https://github.com/oborchers/Fast_Sentence_Embeddings
 - Repositorio de ParaNMT: https://github.com/jwieting/para-nmt-50m

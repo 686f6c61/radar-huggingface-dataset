@@ -101,7 +101,7 @@ Los datos de DeepSeek-V4 Pro y Qwen3.8-Max no están disponibles en la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unsloth/GLM-5.3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/unsloth/GLM-5.3-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Guia de Unsloth para GLM-5.3: https://unsloth.ai/docs/models/glm-5.3
 - Documentacion de GGUF dinamicos de Unsloth: https://unsloth.ai/docs/basics/dynamic-3.0-ggufs

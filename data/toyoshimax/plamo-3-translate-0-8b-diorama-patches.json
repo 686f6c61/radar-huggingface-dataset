@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "toyoshimax/plamo-3-translate-0.8b-diorama-patches",
+  "slug": "toyoshimax-plamo-3-translate-0-8b-diorama-patches",
+  "author": "toyoshimax",
+  "url": "https://huggingface.co/toyoshimax/plamo-3-translate-0.8b-diorama-patches",
+  "created_at": "2026-11-06T12:14:33.000Z",
+  "updated_at": "2026-11-06T12:14:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diorama",
+  "languages": [],
+  "tags": [
+    "diorama",
+    "webgpu",
+    "hachiue",
+    "plamo-3-translate",
+    "safetensors",
+    "weight-editing",
+    "base_model:pfnet/plamo-3-translate-0.8b-GGUF",
+    "base_model:finetune:pfnet/plamo-3-translate-0.8b-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3242328,
+  "storage_human": "3 MB",
+  "base_model": "pfnet/plamo-3-translate-0.8b-GGUF",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "v2026.1106.357 — New translation models: PLaMo 3 Translate (0.8B / 2B / 8B)",
+      "url": "https://steamdb.info/patchnotes/26466831/",
+      "snippet": "Playto can now use PLaMo 3 Translate, a translation model from Preferred Networks, in three sizes. This update is for Windows first; the Linux version follows in a later update. New translation models: PLaMo 3 TranslatePLaMo 3 Translate is a model…"
+    },
+    {
+      "title": "pfnet/plamo-3-translate-8b · Hugging Face",
+      "url": "https://huggingface.co/pfnet/plamo-3-translate-8b",
+      "snippet": "PLaMo 3 Translate 8B is a translation-specialized LLM developed by Preferred Networks (PFN) that delivers world-class translation quality. It is built on PLaMo 3 NICT, a pretrained model developed through joint research by PFN and the National Institute of Information and Communications Technology (NICT)."
+    }
+  ]
+}

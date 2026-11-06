@@ -77,7 +77,7 @@ La comparativa se basa en características generales; no se dispone de benchmark
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/KarlKinda/Qwen3.8-27B-Opus-Distill-v2-mlx-8Bit
+- Repositorio Hugging Face del modelo: https://huggingface.co/KarlKinda/Qwen3.8-27B-Opus-Distill-v2-mlx-8Bit
 - Modelo base del fine-tune: https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill-v2
 - Conversión MLX del modelo base: https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill-v2-MLX-8bit
 - Colección de modelos Opus-Distill: https://huggingface.co/collections/barozp/qwen38-27b-opus-distill

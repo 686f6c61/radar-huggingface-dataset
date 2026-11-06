@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Smirnovivan/vit-multitask` es un repositorio de HuggingFace publicado por el usuario Smirnovivan que contiene una implementación propia de un Vision Transformer (ViT) orientada a tareas multitarea. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible ("nano") con un checkpoint de inicialización válido únicamente para pruebas de humo. El artefacto principal es el script `train.py`, acompañado de `config.json`, `training_args.json` y `model.safetensors`.
+`Smirnovivan/vit-multitask` es un repositorio de Hugging Face publicado por el usuario Smirnovivan que contiene una implementación propia de un Vision Transformer (ViT) orientada a tareas multitarea. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible ("nano") con un checkpoint de inicialización válido únicamente para pruebas de humo. El artefacto principal es el script `train.py`, acompañado de `config.json`, `training_args.json` y `model.safetensors`.
 
 La arquitectura declarada es un ViT de escala "nano" con atención dilatada, fusión tensorial (tensor fusion), activación GELU-Tanh y normalización RMSNorm. El recuento real de parámetros del checkpoint en safetensors es de 33.088, un tamaño extremadamente reducido que confirma su carácter de esqueleto experimental más que de modelo funcional. El repositorio ocupa 0,0 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -75,12 +75,12 @@ La comparación es asimétrica por diseño: los tres alternativos son releases e
 - No ha sido auditado para robustez, equidad ni transferencia de dominio, según reconoce el autor.
 - No se han publicado datos de entrenamiento, composición del dataset ni métricas; cualquier afirmación de rendimiento sería especulativa.
 - No es un modelo de lenguaje: no soporta texto, tool calling, agentes ni capacidades multilingües.
-- Las APIs automáticas de carga de HuggingFace requieren un adaptador explícito; no se puede usar `from_pretrained` de forma genérica sin trabajo adicional.
+- Las APIs automáticas de carga de Hugging Face requieren un adaptador explícito; no se puede usar `from_pretrained` de forma genérica sin trabajo adicional.
 - Licencia MIT permite uso comercial del código, pero el autor advierte de revisar por separado los términos de los datos de origen si se usan datasets externos.
 - El repositorio no registra descargas ni likes, lo que sugiere ausencia de validación por parte de la comunidad.
 - Cualquier resultado de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto aquí incluidos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Smirnovivan/vit-multitask
+- Hugging Face: https://huggingface.co/Smirnovivan/vit-multitask
 - No se han encontrado enlaces adicionales (papers, blogs, repos o demos) en la información disponible.

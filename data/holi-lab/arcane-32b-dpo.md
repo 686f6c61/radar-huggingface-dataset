@@ -4,7 +4,7 @@
 
 ArcANE-32B-DPO es un modelo de lenguaje de 32 mil millones de parametros desarrollado por holi-lab, resultado de un ajuste fino sobre Qwen3-32B mediante supervisión (SFT) seguido de optimización de preferencias directas (DPO). Su objetivo es mejorar la capacidad de los agentes de role-play para mantenerse en personaje en el momento correcto de una narrativa, condicionando las respuestas a un arco de personaje truncado por capítulo. El modelo fue aceptado en la conferencia EMNLP 2026.
 
-El modelo se publica bajo licencia Apache 2.0 y esta disponible en formato safetensors en HuggingFace. Se recomienda su uso con la plantilla de chat de Qwen3 con el modo de pensamiento desactivado. La arquitectura es un transformer decoder-only basado en Qwen3-32B, con 32.762.123.264 parametros totales. No se especifica la longitud de contexto en la informacion disponible, aunque el entrenamiento se realizo con secuencias de hasta 8.192 tokens.
+El modelo se publica bajo licencia Apache 2.0 y esta disponible en formato safetensors en Hugging Face. Se recomienda su uso con la plantilla de chat de Qwen3 con el modo de pensamiento desactivado. La arquitectura es un transformer decoder-only basado en Qwen3-32B, con 32.762.123.264 parametros totales. No se especifica la longitud de contexto en la informacion disponible, aunque el entrenamiento se realizo con secuencias de hasta 8.192 tokens.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ El ajuste se realiza con LoRA de rango 64 y alpha 128, sin actualizar todos los 
 - Generacion de respuestas en personaje para un punto temporal concreto de la historia, condicionado por el arco de personaje truncado al capitulo consultado.
 - Distincion de cambios de comportamiento entre fases narrativas adyacentes, especialmente en los ejes de accion y razonamiento.
 - Uso mediante la plantilla de chat de Qwen3 con el modo de pensamiento desactivado.
-- Compatibilidad con el ecosistema de HuggingFace transformers y el tag `text-generation-inference`.
+- Compatibilidad con el ecosistema de Hugging Face transformers y el tag `text-generation-inference`.
 - No se menciona soporte de tool calling, agentes, vision, audio ni razonamiento extendido.
 
 ## Casos de uso
@@ -76,9 +76,9 @@ DPO mejora la puntuacion global con contexto Arc en 2,0 puntos sobre ArcANE-32B-
 
 | Modelo | Parametros | Contexto | Overall (contexto Arc) | Licencia | Disponibilidad |
 | --- | --- | --- | ---: | --- | --- |
-| ArcANE-32B-DPO | 32,7B | no disponible | 60,4 | Apache 2.0 | HuggingFace |
-| ArcANE-32B-SFT | 32,7B | no disponible | 58,4 | no disponible | HuggingFace |
-| Qwen3-32B | 32B | no disponible | 50,1 | no disponible | HuggingFace |
+| ArcANE-32B-DPO | 32,7B | no disponible | 60,4 | Apache 2.0 | Hugging Face |
+| ArcANE-32B-SFT | 32,7B | no disponible | 58,4 | no disponible | Hugging Face |
+| Qwen3-32B | 32B | no disponible | 50,1 | no disponible | Hugging Face |
 | DeepSeek-V4-Pro | no disponible | no disponible | 62,4 | no disponible | no disponible |
 
 ArcANE-32B-DPO mejora al modelo SFT y al base Qwen3-32B, pero queda por debajo de DeepSeek-V4-Pro en la evaluacion con contexto Arc. La disponibilidad de ArcANE-32B-DPO es abierta con licencia Apache 2.0.
@@ -95,7 +95,7 @@ ArcANE-32B-DPO mejora al modelo SFT y al base Qwen3-32B, pero queda por debajo d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/holi-lab/ArcANE-32B-DPO
+- Modelo en Hugging Face: https://huggingface.co/holi-lab/ArcANE-32B-DPO
 - Articulo en arXiv: https://arxiv.org/abs/2606.05553
 - Dataset ArcANE-Data: https://huggingface.co/datasets/holi-lab/ArcANE-Data
 - Modelo base SFT: https://huggingface.co/holi-lab/ArcANE-32B-SFT

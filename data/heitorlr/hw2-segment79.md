@@ -61,4 +61,4 @@ No se dispone de información sobre modelos comparables. Dado que no se conoce e
 
 ## Enlaces
 
-- [HuggingFace - heitorlr/hw2-segment79](https://huggingface.co/heitorlr/hw2-segment79)
+- [Hugging Face - heitorlr/hw2-segment79](https://huggingface.co/heitorlr/hw2-segment79)

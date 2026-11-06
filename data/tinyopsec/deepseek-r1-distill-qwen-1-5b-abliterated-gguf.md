@@ -89,7 +89,7 @@ Los datos de rendimiento comparativo no están disponibles en la información pr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/DeepSeek-R1-Distill-Qwen-1.5B-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/DeepSeek-R1-Distill-Qwen-1.5B-abliterated-GGUF
 - Modelo base (abliterated): https://huggingface.co/huihui-ai/DeepSeek-R1-Distill-Qwen-1.5B-abliterated
 - Modelo original DeepSeek-R1-Distill-Qwen-1.5B: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Repositorio DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1

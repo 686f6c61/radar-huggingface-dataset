@@ -105,7 +105,7 @@ Comparativa con otros modelos de parámetros similares: no disponible en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/diffbot/MiMo-V2.6-Flash-RL-FP8KV-W4A8-2x-RTX-PRO-6000
+- Repositorio en Hugging Face: https://huggingface.co/diffbot/MiMo-V2.6-Flash-RL-FP8KV-W4A8-2x-RTX-PRO-6000
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - Imagen de contenedor de referencia: `vllm/vllm-openai:mimo-v26-x86_64-cu130`
 - Receta reproducible (build de imagen, launcher, parches de vLLM, kernels, tests y scripts de benchmark): directorio `recipe/`, con instrucciones en `recipe/README.md`

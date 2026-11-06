@@ -72,8 +72,8 @@ No se dispone de información suficiente para comparar este modelo con alternati
 - La arquitectura no especifica la longitud de contexto ni los idiomas soportados, lo que impide dimensionar su uso en escenarios multilingües o de contexto largo.
 - El repositorio no ofrece adaptadores para frameworks de despliegue estándar. Integrarlo en producción requeriría desarrollo adicional.
 - La licencia Apache 2.0 permite el uso comercial, pero el modelo no es apto para producción en su estado actual.
-- Riesgo de confusión: un usuario podría asumir que un checkpoint en HuggingFace con la etiqueta "retrieval" es funcional. La documentación aclara que no lo es, por lo que se recomienda leerla antes de usarlo.
+- Riesgo de confusión: un usuario podría asumir que un checkpoint en Hugging Face con la etiqueta "retrieval" es funcional. La documentación aclara que no lo es, por lo que se recomienda leerla antes de usarlo.
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/ivmorozov/retrieval-efficient](https://huggingface.co/ivmorozov/retrieval-efficient)
+- Hugging Face: [https://huggingface.co/ivmorozov/retrieval-efficient](https://huggingface.co/ivmorozov/retrieval-efficient)

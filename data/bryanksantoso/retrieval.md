@@ -60,7 +60,7 @@ No se dispone de modelos comparables en la misma categoría, ya que MobileViT se
 - **Caveat para producción**: no es apto para ningún uso en producción. Es exclusivamente un artefacto experimental.
 
 ## Enlaces
-- [Repositorio en HuggingFace](https://huggingface.co/bryanksantoso/retrieval)
+- [Repositorio en Hugging Face](https://huggingface.co/bryanksantoso/retrieval)
 - [Perfil de GitHub del autor](https://github.com/Bryan-Eka-Santoso/Bryan-Eka-Santoso/blob/main/README.md)
 - [Artículo relacionado: Retrieval meets Long Context Large Language Models](https://arxiv.org/abs/2310.03025) (contexto general sobre retrieval, no específico de este modelo)
 - [Wikipedia: Retrieval-augmented generation](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) (contexto general)

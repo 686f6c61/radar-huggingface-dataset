@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ryanham1lton/Swoobat` es un repositorio de modelo alojado en HuggingFace por el usuario Ryanham1lton, publicado bajo licencia CC-BY-4.0. En el momento de redactar esta ficha el repositorio no incluye model card con contenido técnico (el README se reduce a la declaración de licencia), no declara pipeline, no declara idiomas soportados y acumula 0 descargas y 0 likes. El tamaño del repositorio es de 0,1 GB, dato que acota el peso de los artefactos almacenados pero no permite deducir arquitectura, número de parámetros ni procedimiento de entrenamiento.
+`Ryanham1lton/Swoobat` es un repositorio de modelo alojado en Hugging Face por el usuario Ryanham1lton, publicado bajo licencia CC-BY-4.0. En el momento de redactar esta ficha el repositorio no incluye model card con contenido técnico (el README se reduce a la declaración de licencia), no declara pipeline, no declara idiomas soportados y acumula 0 descargas y 0 likes. El tamaño del repositorio es de 0,1 GB, dato que acota el peso de los artefactos almacenados pero no permite deducir arquitectura, número de parámetros ni procedimiento de entrenamiento.
 
 No es posible determinar qué problema resuelve el modelo ni qué arquitectura emplea: no hay información sobre transformer, MoE, SSM ni híbridos, ni sobre datos de entrenamiento, tokens vistos o método de alineación. La ausencia de `config.json` documentado, de ejemplos de uso y de cualquier artefacto de evaluación impide caracterizarlo técnicamente más allá de los metadatos del repositorio.
 
@@ -90,6 +90,6 @@ No disponible. Sin conocer la arquitectura, el número de parámetros ni la tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Swoobat
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Swoobat
 - Texto de la licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/
 - Paper, blog, repositorio de código o demo: no disponibles (no se han encontrado en la búsqueda web ni se citan en la model card).

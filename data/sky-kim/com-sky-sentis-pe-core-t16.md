@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`com.sky.sentis.pe-core-t16` es una conversión a Unity Inference Engine (Sentis) del modelo Perception Encoder PE-Core-T16-384 de Meta, un modelo de visión-lenguaje de estilo CLIP que proyecta imágenes y texto en un espacio compartido de 512 dimensiones. Lo publica el usuario Sky-Kim en HuggingFace bajo licencia Apache-2.0, con pesos en Float16 y una API en C# autocontenida pensada para inferencia en dispositivo (on-device) dentro de proyectos Unity.
+`com.sky.sentis.pe-core-t16` es una conversión a Unity Inference Engine (Sentis) del modelo Perception Encoder PE-Core-T16-384 de Meta, un modelo de visión-lenguaje de estilo CLIP que proyecta imágenes y texto en un espacio compartido de 512 dimensiones. Lo publica el usuario Sky-Kim en Hugging Face bajo licencia Apache-2.0, con pesos en Float16 y una API en C# autocontenida pensada para inferencia en dispositivo (on-device) dentro de proyectos Unity.
 
 El modelo resuelve tareas de recuperación imagen-texto y clasificación de imágenes zero-shot: permite buscar personas, vehículos u objetos dentro de un fotograma mediante una descripción textual, calculando el producto escalar entre el embedding de texto y el de cada recorte de imagen. Es relevante para desarrolladores de videojuegos y aplicaciones Unity que necesitan visión por computador local sin depender de servicios en la nube, con un tamaño de repositorio de solo 0,1 GB.
 
@@ -81,10 +81,10 @@ Las tres consultas ordenan correctamente su recorte correspondiente en primer lu
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| com.sky.sentis.pe-core-t16 | no disponible | 32 tokens | Imagen-texto (CLIP) | Apache-2.0 | HuggingFace, Unity Sentis |
-| facebook/PE-Core-T16-384 | no disponible | 32 tokens | Imagen-texto (CLIP) | Apache-2.0 | HuggingFace (modelo base) |
-| Siglip2Base16 (paquete com.sky.sentis.*) | no disponible | no disponible | Imagen-texto | no disponible | HuggingFace, Unity Sentis |
-| PeCoreS16 (paquete com.sky.sentis.*) | no disponible | no disponible | Imagen-texto | no disponible | HuggingFace, Unity Sentis |
+| com.sky.sentis.pe-core-t16 | no disponible | 32 tokens | Imagen-texto (CLIP) | Apache-2.0 | Hugging Face, Unity Sentis |
+| facebook/PE-Core-T16-384 | no disponible | 32 tokens | Imagen-texto (CLIP) | Apache-2.0 | Hugging Face (modelo base) |
+| Siglip2Base16 (paquete com.sky.sentis.*) | no disponible | no disponible | Imagen-texto | no disponible | Hugging Face, Unity Sentis |
+| PeCoreS16 (paquete com.sky.sentis.*) | no disponible | no disponible | Imagen-texto | no disponible | Hugging Face, Unity Sentis |
 
 Los dos últimos son paquetes del mismo autor con API C# idéntica, pensados para intercambiar el modelo cambiando el nombre de clase. No se dispone de datos de rendimiento comparativo entre ellos en la información proporcionada.
 
@@ -101,7 +101,7 @@ Los dos últimos son paquetes del mismo autor con API C# idéntica, pensados par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sky-Kim/com.sky.sentis.pe-core-t16
+- Hugging Face: https://huggingface.co/Sky-Kim/com.sky.sentis.pe-core-t16
 - Modelo base: https://huggingface.co/facebook/PE-Core-T16-384
 - Paper de referencia: https://arxiv.org/abs/2504.13181
 - Repositorio de referencia `perception_models` de Meta: no disponible en la información proporcionada

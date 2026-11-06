@@ -91,7 +91,7 @@ No hay datos de benchmarks de terceros para modelos de la misma categoría (27B 
 
 | Modelo / quant | Tamaño | KLD vs BF16 | HardBattery /17 | Reproducción real | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.8-27B Blackfrost-Abliterated GSQ-RCO-IQ3_XXS (este repo) | 9,81 GiB | 0,1137 | 14 | 138,9 tok/s, 44,5 % aceptación | Apache 2.0 | Público en HuggingFace, 0 descargas |
+| Qwen3.8-27B Blackfrost-Abliterated GSQ-RCO-IQ3_XXS (este repo) | 9,81 GiB | 0,1137 | 14 | 138,9 tok/s, 44,5 % aceptación | Apache 2.0 | Público en Hugging Face, 0 descargas |
 | GSQ-RCO-IQ3_XXS de RentedNoodle (linaje Huihui) | 9,75 GiB | 0,1926 | 14 | 138,9 tok/s, 40,9 % aceptación | No disponible en la información | Referenciado por el autor |
 | Quant mixto 4/5 bits del mismo linaje | 15,73 GiB | 0,0523 | 14 | 116,3 tok/s, 40,7 % aceptación | Apache 2.0 (según licencia del repo) | No disponible en la información |
 

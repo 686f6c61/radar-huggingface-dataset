@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo ForSureTesterSim/Llama3-R1-Manny-8B es un modelo de lenguaje publicado en HuggingFace por el usuario ForSureTesterSim bajo licencia Apache 2.0. Su nombre sugiere que se trata de un ajuste fino o una variante de la familia Llama 3 o Llama 3.1, con una arquitectura de 8 mil millones de parámetros. Sin embargo, la información pública disponible es extremadamente limitada: no existe model card, no se han publicado métricas, descargas ni ejemplos de uso, y el repositorio carece de cualquier detalle técnico adicional.
+El modelo ForSureTesterSim/Llama3-R1-Manny-8B es un modelo de lenguaje publicado en Hugging Face por el usuario ForSureTesterSim bajo licencia Apache 2.0. Su nombre sugiere que se trata de un ajuste fino o una variante de la familia Llama 3 o Llama 3.1, con una arquitectura de 8 mil millones de parámetros. Sin embargo, la información pública disponible es extremadamente limitada: no existe model card, no se han publicado métricas, descargas ni ejemplos de uso, y el repositorio carece de cualquier detalle técnico adicional.
 
-A fecha de su creación (agosto de 2026), el modelo no ha registrado actividad en HuggingFace (0 descargas, 0 likes) y no está desplegado en ningún proveedor de inferencia. Por tanto, aunque el nombre apunta a un posible fine-tune orientado a razonamiento (R1) sobre la base Llama 3, no hay evidencia pública que permita confirmar su arquitectura exacta, su proceso de entrenamiento ni sus capacidades reales. Esta ficha se limita a reflejar la información disponible y marca como "no disponible" todos los datos que no han sido publicados.
+A fecha de su creación (agosto de 2026), el modelo no ha registrado actividad en Hugging Face (0 descargas, 0 likes) y no está desplegado en ningún proveedor de inferencia. Por tanto, aunque el nombre apunta a un posible fine-tune orientado a razonamiento (R1) sobre la base Llama 3, no hay evidencia pública que permita confirmar su arquitectura exacta, su proceso de entrenamiento ni sus capacidades reales. Esta ficha se limita a reflejar la información disponible y marca como "no disponible" todos los datos que no han sido publicados.
 
 ## Especificaciones técnicas
 
@@ -58,7 +58,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ForSureTesterSim/Llama3-R1-Manny-8B
+- Modelo en Hugging Face: https://huggingface.co/ForSureTesterSim/Llama3-R1-Manny-8B
 - Repositorio de otro modelo del mismo autor (SensPrune-Llama-3.1-8B): https://huggingface.co/ForSureTesterSim/SensPrune-Llama-3.1-8B
 - Blog de Llama 3.1 (referencia general): https://huggingface.co/blog/llama31
 - GitHub de Llama 3 (Meta): https://github.com/meta-llama/llama3

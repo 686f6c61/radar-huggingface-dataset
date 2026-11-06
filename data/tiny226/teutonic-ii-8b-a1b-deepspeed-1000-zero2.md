@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Teutonic-II-8B-A1B-Deepspeed-1000-zero2 es un modelo publicado en HuggingFace por el usuario tiny226, cuyo repositorio tiene un tamano de 9,1 GB y contiene pesos en formato safetensors. Se trata de un ajuste fino (fine-tuning) realizado mediante SFT con la libreria TRL sobre un modelo base que el autor no identifica: la model card indica literalmente que es una version fine-tuned de "None", sin enlace ni referencia al modelo original. El nombre del repositorio sugiere un modelo de tipo Mixture of Experts (MoE) con aproximadamente 8.000 millones de parametros totales y unos 1.000 millones de parametros activos (sufijo A1B), entrenado con DeepSpeed ZeRO-2 durante unas 1.000 iteraciones, aunque ninguno de estos extremos se confirma en la documentacion publicada.
+Teutonic-II-8B-A1B-Deepspeed-1000-zero2 es un modelo publicado en Hugging Face por el usuario tiny226, cuyo repositorio tiene un tamano de 9,1 GB y contiene pesos en formato safetensors. Se trata de un ajuste fino (fine-tuning) realizado mediante SFT con la libreria TRL sobre un modelo base que el autor no identifica: la model card indica literalmente que es una version fine-tuned de "None", sin enlace ni referencia al modelo original. El nombre del repositorio sugiere un modelo de tipo Mixture of Experts (MoE) con aproximadamente 8.000 millones de parametros totales y unos 1.000 millones de parametros activos (sufijo A1B), entrenado con DeepSpeed ZeRO-2 durante unas 1.000 iteraciones, aunque ninguno de estos extremos se confirma en la documentacion publicada.
 
 El modelo se encuadra en la categoria de MoE de activacion dispersa, un diseno que busca ofrecer la calidad de un modelo grande con el coste de inferencia de uno mucho mas pequeno. Es relevante en la medida en que este tipo de arquitecturas (activacion de una fraccion de los expertos por token) se ha convertido en el estandar para desplegar modelos de alta capacidad en hardware moderado. Sin embargo, la ficha carece de informacion esencial: no se declara la arquitectura, ni la longitud de contexto, ni los idiomas, ni la licencia, ni los datos de entrenamiento, y el repositorio no tiene descargas ni valoraciones en el momento de la consulta.
 
@@ -103,7 +103,7 @@ Conclusion: la comparativa relevante (calidad por token generado, coste de infer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tiny226/Teutonic-II-8B-A1B-Deepspeed-1000-zero2
+- Modelo en Hugging Face: https://huggingface.co/tiny226/Teutonic-II-8B-A1B-Deepspeed-1000-zero2
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/williamhone136807-123/Teutonic/runs/ln9r6fw2
 - Repositorio de TRL (framework de entrenamiento declarado): https://github.com/huggingface/trl
 - Paper o informe tecnico del modelo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SeisLM base es un codificador de formas de onda sísmicas preentrenado, publicado por el autor ltlltl2006 en HuggingFace y derivado del trabajo SeisLM: a Foundation Model for Seismic Waveforms (arXiv:2410.15765). Se trata de un artefacto de extracción de características (pipeline feature-extraction): recibe tensores de tres componentes ZNE muestreados a 100 Hz y devuelve representaciones contextuales de 240 dimensiones, no predicciones de llegadas de fase P/S ni detecciones de terremotos.
+SeisLM base es un codificador de formas de onda sísmicas preentrenado, publicado por el autor ltlltl2006 en Hugging Face y derivado del trabajo SeisLM: a Foundation Model for Seismic Waveforms (arXiv:2410.15765). Se trata de un artefacto de extracción de características (pipeline feature-extraction): recibe tensores de tres componentes ZNE muestreados a 100 Hz y devuelve representaciones contextuales de 240 dimensiones, no predicciones de llegadas de fase P/S ni detecciones de terremotos.
 
 El modelo tiene 11.359.568 parámetros en total, incluyendo las cabezas de preentrenamiento auto-supervisado originales. La arquitectura es un transformer de 6 capas con dimensión de característica contextual de 240, diseñado para operar sobre ventanas de 3001 muestras (aproximadamente 30 segundos a 100 Hz), que se reducen a 749 pasos temporales en la salida. Los pesos se distribuyen en safetensors sin modificar respecto al checkpoint original, con el estado del optimizador omitido.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / ventana | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SeisLM base (este artefacto) | 11.359.568 | 3001 muestras a 100 Hz (aprox. 30 s) | Extracción de características; requiere adaptación downstream | MIT | HuggingFace, safetensors + wheel |
+| SeisLM base (este artefacto) | 11.359.568 | 3001 muestras a 100 Hz (aprox. 30 s) | Extracción de características; requiere adaptación downstream | MIT | Hugging Face, safetensors + wheel |
 | Modelos ajustados por tarea del artículo SeisLM | no disponible | no disponible | Phase picking y detección de terremotos | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Otros codificadores sísmicos preentrenados | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,7 +94,7 @@ La información proporcionada no incluye especificaciones de modelos alternativo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ltlltl2006/seislm-base
+- Modelo en Hugging Face: https://huggingface.co/ltlltl2006/seislm-base
 - Paper SeisLM (arXiv:2410.15765): https://arxiv.org/abs/2410.15765
 - DOI del paper: https://doi.org/10.48550/arXiv.2410.15765
 - Código y instalación: https://github.com/liutianlin0121/seisLM

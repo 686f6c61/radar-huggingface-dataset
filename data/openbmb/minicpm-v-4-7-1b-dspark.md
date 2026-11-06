@@ -85,11 +85,11 @@ La informacion disponible no incluye otros checkpoints borradores DSpark con los
 
 | Modelo | Parametros | Contexto | Rol | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-V-4.7-1B-DSpark | 213,5 M (draft) | no disponible (objetivo a 40.960 en vLLM) | Draft de decodificacion especulativa | apache-2.0 | HuggingFace, vLLM, TGI |
-| MiniCPM-V-4.7-1B | 1,55 B (safetensors); la evaluacion oficial lo rotula como 1,3 B | 40.960 en la receta vLLM | Modelo multimodal objetivo | apache-2.0 | HuggingFace, Ollama, vLLM |
-| MiniCPM-V-4.7-35B-A3B | no disponible (MoE, primer MoE de la serie) | no disponible | Modelo multimodal de mayor capacidad | apache-2.0 | HuggingFace, Ollama |
-| MiniCPM-V 4.6 | 1,3 B | no disponible | Generacion anterior de la serie | apache-2.0 | HuggingFace, GitHub |
-| Qwen3.5-0.8B | 0,8 B (aproximado) | no disponible | LLM de referencia en eficiencia | no disponible | HuggingFace |
+| MiniCPM-V-4.7-1B-DSpark | 213,5 M (draft) | no disponible (objetivo a 40.960 en vLLM) | Draft de decodificacion especulativa | apache-2.0 | Hugging Face, vLLM, TGI |
+| MiniCPM-V-4.7-1B | 1,55 B (safetensors); la evaluacion oficial lo rotula como 1,3 B | 40.960 en la receta vLLM | Modelo multimodal objetivo | apache-2.0 | Hugging Face, Ollama, vLLM |
+| MiniCPM-V-4.7-35B-A3B | no disponible (MoE, primer MoE de la serie) | no disponible | Modelo multimodal de mayor capacidad | apache-2.0 | Hugging Face, Ollama |
+| MiniCPM-V 4.6 | 1,3 B | no disponible | Generacion anterior de la serie | apache-2.0 | Hugging Face, GitHub |
+| Qwen3.5-0.8B | 0,8 B (aproximado) | no disponible | LLM de referencia en eficiencia | no disponible | Hugging Face |
 
 Segun la documentacion de OpenBMB recogida en la busqueda, MiniCPM-V 4.6 (1,3 B) supera a Gemma4-E2B-it y logra aproximadamente 1,5 veces el throughput de tokens de Qwen3.5-0.8B. No hay datos publicados que permitan afirmar que el par 4.7-1B + DSpark supere esos valores.
 
@@ -108,7 +108,7 @@ Segun la documentacion de OpenBMB recogida en la busqueda, MiniCPM-V 4.6 (1,3 B)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-DSpark
+- Modelo en Hugging Face: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-DSpark
 - Modelo objetivo MiniCPM-V-4.7-1B: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
 - Paper de DSpark: https://arxiv.org/abs/2607.05147
 - Documentacion de MiniCPM-V 4.7 en transformers: https://huggingface.co/docs/transformers/main/model_doc/minicpmv4_7

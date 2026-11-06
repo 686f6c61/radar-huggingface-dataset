@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e15` es un artefacto publicado en HuggingFace por el usuario PessimisticDPO, con 0 descargas y 0 "likes" en el momento de la consulta, creado el 22 de septiembre de 2026 y actualizado ese mismo dia. El identificador sugiere un ajuste fino sobre un modelo de la familia Mistral 7B (la cadena `mistral-7b-sft-beta` coincide con la nomenclatura habitual del modelo SFT beta de Mistral) y la parte final del nombre (`a0.1-b0.1-L4-overlap_subsample-l3-e15`) parece codificar hiperparametros de un entrenamiento con preferencias, presumiblemente una variante de DPO bautizada como "PessimisticDPO". Ninguna de estas inferencias esta confirmada: la model card es la plantilla automatica de transformers sin rellenar y no declara autor, tipo de modelo, idiomas, licencia ni procedencia.
+El repositorio `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e15` es un artefacto publicado en Hugging Face por el usuario PessimisticDPO, con 0 descargas y 0 "likes" en el momento de la consulta, creado el 22 de septiembre de 2026 y actualizado ese mismo dia. El identificador sugiere un ajuste fino sobre un modelo de la familia Mistral 7B (la cadena `mistral-7b-sft-beta` coincide con la nomenclatura habitual del modelo SFT beta de Mistral) y la parte final del nombre (`a0.1-b0.1-L4-overlap_subsample-l3-e15`) parece codificar hiperparametros de un entrenamiento con preferencias, presumiblemente una variante de DPO bautizada como "PessimisticDPO". Ninguna de estas inferencias esta confirmada: la model card es la plantilla automatica de transformers sin rellenar y no declara autor, tipo de modelo, idiomas, licencia ni procedencia.
 
 La relevancia de esta ficha es, por tanto, mas metodologica que practica. Se trata de un ejemplo tipico de checkpoint de investigacion publicado sin documentacion: no hay informacion sobre datos de entrenamiento, numero de tokens, receta de alineamiento, evaluacion ni licencia. El repositorio ocupa 0,2 GB, un tamano incompatible con pesos completos de un modelo de 7 000 millones de parametros en fp16 (que rondarian los 14 GB), lo que apunta a adaptadores (LoRA u similares), a un checkpoint parcial o a pesos cuantizados de forma agresiva. Sin model card no es posible determinarlo.
 
@@ -30,7 +30,7 @@ En consecuencia, esta ficha recoge exclusivamente los metadatos disponibles y ma
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura del modelo. La model card del repositorio es la plantilla generada automaticamente por HuggingFace y todos los campos relevantes (tipo de modelo, datos de entrenamiento, hiperparametros, regimen de precision, infraestructura de computo) aparecen como `[More Information Needed]`. Tampoco se incluye el codigo de entrenamiento, la configuracion de tokenizador ni los ficheros de configuracion descritos en la informacion disponible.
+No hay informacion publicada sobre la arquitectura del modelo. La model card del repositorio es la plantilla generada automaticamente por Hugging Face y todos los campos relevantes (tipo de modelo, datos de entrenamiento, hiperparametros, regimen de precision, infraestructura de computo) aparecen como `[More Information Needed]`. Tampoco se incluye el codigo de entrenamiento, la configuracion de tokenizador ni los ficheros de configuracion descritos en la informacion disponible.
 
 El unico material aprovechable es el propio identificador del repositorio. El segmento `mistral-7b-sft-beta` apunta a un ajuste supervisado sobre Mistral 7B; el segmento `a0.1-b0.1-L4-overlap_subsample-l3-e15` tiene la forma tipica de una rejilla de hiperparametros de optimizacion con preferencias (valores `a` y `b`, numero de capas `L4` o `l3`, submuestreo con solapamiento, 15 epocas). El prefijo del nombre de usuario, `PessimisticDPO`, sugiere una variante de Direct Preference Optimization. Todo ello son inferencias a partir de la nomenclatura, no hechos documentados: no se puede afirmar que el modelo use DPO, ni con que datos, ni con que funcion de perdida, ni cuantas epocas efectivas de entrenamiento se ejecutaron.
 
@@ -100,7 +100,7 @@ No se ha podido recuperar informacion de ningun modelo comparable a partir de la
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion. La model card es la plantilla por defecto de HuggingFace; no hay informacion sobre datos, entrenamiento, evaluacion ni uso previsto.
+- Ausencia total de documentacion. La model card es la plantilla por defecto de Hugging Face; no hay informacion sobre datos, entrenamiento, evaluacion ni uso previsto.
 - Licencia no declarada. Sin licencia explicita no se puede asumir permiso para uso comercial, redistribucion ni modificacion. En la practica, el modelo no deberia desplegarse en produccion.
 - Procedencia sin confirmar. Que el identificador incluya `mistral-7b-sft-beta` no garantiza que el modelo derive de Mistral 7B, ni que respete la licencia del modelo base original.
 - Contenido del repositorio incierto. Con 0,2 GB de tamano, es probable que no contenga pesos completos de 7B; podria tratarse de adaptadores, de un checkpoint parcial o de un error de subida. Conviene inspeccionar los ficheros antes de cualquier uso.
@@ -114,10 +114,10 @@ No se ha podido recuperar informacion de ningun modelo comparable a partir de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e15
+- Modelo en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e15
 - Referencia arXiv presente en las etiquetas del repositorio: https://arxiv.org/abs/1910.09700 (corresponde a Lacoste et al., 2019, sobre el calculo de emisiones de carbono, citado en la plantilla de model card; no es un paper sobre este modelo)
 - Repositorio de codigo: no disponible
 - Paper del modelo: no disponible
 - Demo: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/PessimisticDPO (no se ha verificado su contenido en esta consulta)
+- Perfil del autor en Hugging Face: https://huggingface.co/PessimisticDPO (no se ha verificado su contenido en esta consulta)
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante; los resultados devueltos corresponden a foros sobre Facebook y no guardan relacion con el modelo.

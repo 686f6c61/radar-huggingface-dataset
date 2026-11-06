@@ -82,7 +82,7 @@ La comparativa se basa en modelos de tamaño similar disponibles en el ecosistem
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/mradermacher/Qwen3.8-2B-Heretic-Max-GGUF)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/mradermacher/Qwen3.8-2B-Heretic-Max-GGUF)
 - [Modelo base (MihaiPopa-1/Qwen3.8-2B-Heretic-Max)](https://huggingface.co/MihaiPopa-1/Qwen3.8-2B-Heretic-Max)
 - [Herramienta Heretic (eliminación de censura)](https://github.com/p-e-w/heretic)
 - [Repositorio oficial de Qwen3.8](https://github.com/QwenLM/Qwen3.8)

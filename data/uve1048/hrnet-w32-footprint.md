@@ -66,7 +66,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HRNet-W32 Footprint (Uve1048) | no disponible | 1024 × 1024 px | sin benchmarks públicos | MIT | HuggingFace |
+| HRNet-W32 Footprint (Uve1048) | no disponible | 1024 × 1024 px | sin benchmarks públicos | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Uve1048/hrnet-w32-footprint
+- Modelo en Hugging Face: https://huggingface.co/Uve1048/hrnet-w32-footprint
 - Pipeline de posprocesado Footprint-Creater: https://github.com/UVE1048/Footprint-Creater
 - Repositorio de entrenamiento e inferencia HRNet-Footprint-Trainer: https://github.com/UVE1048/HRNet-Footprint-Trainer
 - Script de inferencia de referencia: https://github.com/UVE1048/HRNet-Footprint-Trainer/blob/main/predict.py

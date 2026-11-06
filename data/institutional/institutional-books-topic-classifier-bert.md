@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento de otros clasificadores de temas de libros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/institutional/institutional-books-topic-classifier-bert
+- Hugging Face: https://huggingface.co/institutional/institutional-books-topic-classifier-bert
 - Informe técnico (arXiv): https://arxiv.org/abs/2506.08300
 - Repositorio de código: https://github.com/instdin/institutional-books-pipeline
 - Colección Institutional Books: https://huggingface.co/collections/instdin/institutional-books-68366258bfb38364238477cf

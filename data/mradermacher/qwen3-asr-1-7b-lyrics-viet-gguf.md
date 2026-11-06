@@ -92,7 +92,7 @@ La comparativa es orientativa: no se dispone de resultados de benchmarks que per
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/mradermacher/Qwen3-ASR-1.7B-Lyrics-Viet-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/mradermacher/Qwen3-ASR-1.7B-Lyrics-Viet-GGUF
 - Modelo base original: https://huggingface.co/sunbv56/Qwen3-ASR-1.7B-Lyrics-Viet
 - Dataset de entrenamiento: https://huggingface.co/datasets/sunbv56/song_dataset_training_20s_cleaned
 - Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3-ASR-1.7B-Lyrics-Viet-GGUF

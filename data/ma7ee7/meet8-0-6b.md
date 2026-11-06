@@ -141,7 +141,7 @@ Nota: los datos de contexto y de licencia de los modelos comparados no estan con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ma7ee7/Meet8-0.6B
+- Modelo en Hugging Face: https://huggingface.co/Ma7ee7/Meet8-0.6B
 - Variante con guion bajo en el nombre: https://huggingface.co/Ma7ee7/Meet8_0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Meet7_0.6b (modelo previo del mismo autor): https://huggingface.co/Ma7ee7/Meet7_0.6b

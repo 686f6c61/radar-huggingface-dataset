@@ -79,7 +79,7 @@ La cuantizacion oQ3e reduce los parametros efectivos a ~1,08 B, pero mantiene el
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/dwyschka/gemma-4-e2b-it-oQ3e-fp16-mtp)
+- [Repositorio Hugging Face](https://huggingface.co/dwyschka/gemma-4-e2b-it-oQ3e-fp16-mtp)
 - [oMLX (libreria de cuantizacion)](https://github.com/jundot/omlx)
 - [Gemma 4 model card - Google AI for Developers](https://ai.google.dev/gemma/docs/core/model_card_4)
 - [Gemma 4 - Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)
@@ -161,7 +161,7 @@ Este modelo cuantizado ofrece un contexto muy superior a alternativas de tamano 
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/dwyschka/gemma-4-e2b-it-oQ3e-fp16-mtp)
+- [Repositorio Hugging Face](https://huggingface.co/dwyschka/gemma-4-e2b-it-oQ3e-fp16-mtp)
 - [oMLX (libreria de cuantizacion)](https://github.com/jundot/omlx)
 - [Gemma 4 model card - Google AI for Developers](https://ai.google.dev/gemma/docs/core/model_card_4)
 - [Gemma 4 - Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)

@@ -100,6 +100,6 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- [HuggingFace: QandyAI/qandy-1.0-27B](https://huggingface.co/QandyAI/qandy-1.0-27B)
+- [Hugging Face: QandyAI/qandy-1.0-27B](https://huggingface.co/QandyAI/qandy-1.0-27B)
 - [Modelo base: Jackrong/Qwopus3.6-27B-v2](https://huggingface.co/Jackrong/Qwopus3.6-27B-v2)
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

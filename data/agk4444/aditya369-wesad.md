@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aditya369-WESAD es un clasificador de estrés y afecto de pequeno tamano desarrollado por AGK FIRE INC y publicado en HuggingFace bajo el identificador agk4444/aditya369-wesad. Se trata de una red convolucional 1D de aproximadamente 225.000 parametros que opera sobre senales fisiologicas captadas en la muneca con un dispositivo Empatica E4, y que distingue tres clases: baseline, stress y amusement. No es un modelo de lenguaje ni un modelo generativo: es un clasificador de series temporales de uso especifico en el ambito de la computacion afectiva y la monitorizacion con wearables.
+Aditya369-WESAD es un clasificador de estrés y afecto de pequeno tamano desarrollado por AGK FIRE INC y publicado en Hugging Face bajo el identificador agk4444/aditya369-wesad. Se trata de una red convolucional 1D de aproximadamente 225.000 parametros que opera sobre senales fisiologicas captadas en la muneca con un dispositivo Empatica E4, y que distingue tres clases: baseline, stress y amusement. No es un modelo de lenguaje ni un modelo generativo: es un clasificador de series temporales de uso especifico en el ambito de la computacion afectiva y la monitorizacion con wearables.
 
 El modelo resuelve un problema concreto y bien delimitado: la deteccion automatica de episodios de estres a partir de senales multimodales de bajo coste (BVP, EDA, temperatura y acelerometro de tres ejes) en lugar de requerir equipamiento de laboratorio. Esta disenado para evaluarse con validacion leave-one-subject-out (LOSO) sobre 15 pliegues del corpus WESAD, lo que lo situa como una linea base reproducible para investigacion en deteccion de estres con wearables.
 
@@ -22,7 +22,7 @@ Su relevancia actual es la de un baseline ligero y abierto: con menos de 1 MB de
 | Formato de pesos | PyTorch state_dict (`best_model.pt`) |
 | Modalidad de entrada | Senales de wearable Empatica E4: BVP, EDA, TEMP, ACCx, ACCy, ACCz |
 | Clases de salida | 0 = baseline, 1 = stress, 2 = amusement |
-| Tamano del repositorio | 0,0 GB (segun la API de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun la API de Hugging Face) |
 | Fecha de creacion | 2026-10-03 |
 | Fecha de ultima actualizacion | 2026-10-15 |
 
@@ -113,15 +113,15 @@ A modo de referencia estructural, y senalando que no se aportan numeros: los cla
 - Sesgos demograficos: la model card no documenta la composicion demografica de WESAD ni analisis de equidad por edad, sexo o condicion de salud, por lo que no puede descartarse sesgo sistematico.
 - Modelo unicamente de clasificacion afectiva: no procesa texto, no tiene capacidades generativas y no debe presentarse como un modelo de lenguaje.
 - Ausencia de umbral de confianza documentado: el ejemplo de uso emplea `argmax` directo, sin calibracion ni umbral de rechazo, lo que fuerza una etiqueta en todos los casos.
-- Integridad del repositorio: el ejemplo de uso importa `model.py` y `label_map.json`, pero el repositorio figura con un tamano de 0,0 GB en la API de HuggingFace. Conviene verificar que todos los ficheros necesarios estan efectivamente publicados antes de depender de ellos.
+- Integridad del repositorio: el ejemplo de uso importa `model.py` y `label_map.json`, pero el repositorio figura con un tamano de 0,0 GB en la API de Hugging Face. Conviene verificar que todos los ficheros necesarios estan efectivamente publicados antes de depender de ellos.
 - Licencia: Apache 2.0 permite uso comercial y modificacion con atribucion y conservacion del aviso de licencia. No se documentan restricciones adicionales, pero el uso en contextos sanitarios puede estar sujeto a normativa sectorial (por ejemplo, marcado CE de producto sanitario en la Union Europea) al margen de la licencia del software.
 - Ausencia de mantenimiento verificable: cero descargas y cero likes en el momento de la consulta, sin garantia de soporte, actualizaciones o correccion de errores.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agk4444/aditya369-wesad
+- Modelo en Hugging Face: https://huggingface.co/agk4444/aditya369-wesad
 - Dataset WESAD (referenciado en la model card, sin enlace explicito proporcionado): no disponible como enlace en la informacion suministrada; corresponde a Schmidt et al., "Introducing WESAD, a Multimodal Dataset for Wearable Stress and Affect Detection" (ICMI 2018)
 - Repositorio de codigo del modelo: no disponible
 - Paper o memoria tecnica del modelo: no disponible
-- Demo o espacio de HuggingFace: no disponible
+- Demo o espacio de Hugging Face: no disponible
 - Resultados de busqueda web: las busquedas realizadas no devolvieron ningun resultado relevante sobre este modelo; todos los resultados obtenidos fueron contenido no relacionado y sin valor tecnico, por lo que se descartan.

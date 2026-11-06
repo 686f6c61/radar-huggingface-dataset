@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OrganScan es un clasificador de imagen jerarquico y multi-etiqueta desarrollado por vectorsense, publicado en HuggingFace bajo licencia Apache 2.0. Su funcion es analizar un fotograma renderizado a partir de datos de pixel DICOM (ecografia, tomografia computarizada, resonancia magnetica o rayos X) y devolver tres cosas simultaneamente: la modalidad de imagen, la region anatomica del cuerpo y todos los organos visibles en el encuadre. No es un clasificador plano de organos, sino una jerarquia de tres niveles supervisados de forma independiente.
+OrganScan es un clasificador de imagen jerarquico y multi-etiqueta desarrollado por vectorsense, publicado en Hugging Face bajo licencia Apache 2.0. Su funcion es analizar un fotograma renderizado a partir de datos de pixel DICOM (ecografia, tomografia computarizada, resonancia magnetica o rayos X) y devolver tres cosas simultaneamente: la modalidad de imagen, la region anatomica del cuerpo y todos los organos visibles en el encuadre. No es un clasificador plano de organos, sino una jerarquia de tres niveles supervisados de forma independiente.
 
 Tecnicamente se apoya en el backbone `mobilenetv4_conv_small.e2400_r224_in1k` de timm, inicializado con pesos de ImageNet y afinado despues. Sobre ese tronco comun monta tres cabezas con activacion sigmoide independiente: modalidad (5 clases), region (8 clases) y organo (30 clases). El artefacto distribuido es un modelo ONNX cuantizado a INT8 de 2,9 MB, disenado para ejecucion exclusiva en CPU y sin acceso a red durante la inferencia, con una latencia declarada de aproximadamente 26,878 ms por fotograma.
 
@@ -115,7 +115,7 @@ No se han publicado resultados de benchmarks estandar de la industria (MMLU, Hum
 - Puede ejecutarse en un nucleo ARM de clase telefonica, lo que situa el objetivo en despliegue de borde mas que en aceleracion por GPU.
 - GPU recomendadas: no disponible (el modelo no esta pensado para inferencia en GPU segun la informacion proporcionada).
 - Caber en GPU de consumo: si, sin problema por tamano, aunque el artefacto distribuido esta orientado a CPU.
-- Opciones de despliegue: `onnxruntime` (runtime de referencia citado por el autor), con compatibilidad con kernels NNAPI segun la model card; tambien es integrable en HuggingFace Hub mediante `hf_hub_download` para la descarga del artefacto. No se mencionan vLLM, llama.cpp, Ollama ni TGI, logicamente por tratarse de un clasificador de imagen y no de un modelo generativo.
+- Opciones de despliegue: `onnxruntime` (runtime de referencia citado por el autor), con compatibilidad con kernels NNAPI segun la model card; tambien es integrable en Hugging Face Hub mediante `hf_hub_download` para la descarga del artefacto. No se mencionan vLLM, llama.cpp, Ollama ni TGI, logicamente por tratarse de un clasificador de imagen y no de un modelo generativo.
 - Throughput estimado: no disponible (solo se publica la latencia por fotograma). A partir de esa cifra, el limite teorico en un solo hilo seria de aproximadamente 37 fotogramas por segundo.
 - El lote es dinamico, pero la resolucion de entrada esta fijada en 224 x 224 para no romper la optimizacion de los kernels.
 
@@ -149,7 +149,7 @@ Para una comparacion rigurosa haria falta evaluar alternativas de clasificacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vectorsense/organscan
+- Modelo en Hugging Face: https://huggingface.co/vectorsense/organscan
 - Modelo base (backbone): https://huggingface.co/timm/mobilenetv4_conv_small.e2400_r224_in1k
 - ONNX Runtime: https://onnxruntime.ai/
 - timm (PyTorch Image Models): https://github.com/huggingface/pytorch-image-models

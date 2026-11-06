@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo xw17/Llama-3.2-1B-Instruct_SFT_lora_ssaqs es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario xw17. Según su nombre, se basa en el modelo Llama-3.2-1B-Instruct de Meta, sobre el que se ha aplicado un ajuste fino supervisado (SFT) mediante LoRA. El repositorio tiene un tamaño de 0.0 GB, lo que indica que contiene únicamente los pesos del adaptador y no el modelo base completo.
+El modelo xw17/Llama-3.2-1B-Instruct_SFT_lora_ssaqs es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario xw17. Según su nombre, se basa en el modelo Llama-3.2-1B-Instruct de Meta, sobre el que se ha aplicado un ajuste fino supervisado (SFT) mediante LoRA. El repositorio tiene un tamaño de 0.0 GB, lo que indica que contiene únicamente los pesos del adaptador y no el modelo base completo.
 
 La model card es una plantilla generada automáticamente y no incluye información sobre el desarrollador, la licencia, los idiomas, los datos de entrenamiento ni el procedimiento de ajuste. Tampoco se han publicado resultados de evaluación. El modelo no tiene descargas ni likes en el momento de la consulta. Su relevancia es limitada, ya que carece de documentación técnica que permita evaluar su rendimiento o su idoneidad para casos de uso concretos.
 
-Debido a la ausencia de información, esta ficha se limita a describir los datos disponibles en HuggingFace y a señalar las incertidumbres. Cualquier uso del modelo requiere una evaluación previa por parte del usuario.
+Debido a la ausencia de información, esta ficha se limita a describir los datos disponibles en Hugging Face y a señalar las incertidumbres. Cualquier uso del modelo requiere una evaluación previa por parte del usuario.
 
 ## Especificaciones técnicas
 
@@ -80,4 +80,4 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xw17/Llama-3.2-1B-Instruct_SFT_lora_ssaqs
+- Hugging Face: https://huggingface.co/xw17/Llama-3.2-1B-Instruct_SFT_lora_ssaqs

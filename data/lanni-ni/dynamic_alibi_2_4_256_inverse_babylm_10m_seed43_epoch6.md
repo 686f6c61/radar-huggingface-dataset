@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de transformers de 27,4 millones de parámetros publicado por Lanni-ni en HuggingFace. Su identificador sugiere que emplea atención con ALiBi dinámico y que ha sido entrenado en el corpus BabyLM de 10 millones de palabras, aunque no hay documentación que confirme estas hipótesis. El repositorio no incluye información sobre arquitectura, datos de entrenamiento, licencia ni idiomas soportados. Con 14 descargas y 0 likes, se trata de un experimento de investigación más que de un modelo listo para producción. La model card es una plantilla generada automáticamente con la mayoría de campos sin completar.
+Este modelo es un checkpoint de transformers de 27,4 millones de parámetros publicado por Lanni-ni en Hugging Face. Su identificador sugiere que emplea atención con ALiBi dinámico y que ha sido entrenado en el corpus BabyLM de 10 millones de palabras, aunque no hay documentación que confirme estas hipótesis. El repositorio no incluye información sobre arquitectura, datos de entrenamiento, licencia ni idiomas soportados. Con 14 descargas y 0 likes, se trata de un experimento de investigación más que de un modelo listo para producción. La model card es una plantilla generada automáticamente con la mayoría de campos sin completar.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ Este modelo es un checkpoint de transformers de 27,4 millones de parámetros pub
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información detallada sobre la arquitectura ni el procedimiento de entrenamiento. El nombre del modelo sugiere el uso de atención con sesgos lineales dinámicos (dynamic ALiBi) y un entrenamiento en el corpus BabyLM de 10 millones de palabras, pero no hay documentación oficial que lo respalde. La model card es una plantilla automática de HuggingFace y no contiene especificaciones técnicas, datos de entrenamiento ni hiperparámetros. El tag `arxiv:1910.09700` presente en los metadatos corresponde al artículo de Lacoste et al. sobre el calculador de impacto ambiental, no al paper del modelo.
+No se ha publicado información detallada sobre la arquitectura ni el procedimiento de entrenamiento. El nombre del modelo sugiere el uso de atención con sesgos lineales dinámicos (dynamic ALiBi) y un entrenamiento en el corpus BabyLM de 10 millones de palabras, pero no hay documentación oficial que lo respalde. La model card es una plantilla automática de Hugging Face y no contiene especificaciones técnicas, datos de entrenamiento ni hiperparámetros. El tag `arxiv:1910.09700` presente en los metadatos corresponde al artículo de Lacoste et al. sobre el calculador de impacto ambiental, no al paper del modelo.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch6
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch6
 - Versión anterior del modelo (epoch4): https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch4
 - Sitio del autor: https://lanni-ni.github.io/
 - Paper citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/OLMo-3-7B-german-city-names-last-third-v2-sft-seed2-epoch3` es un ajuste fino supervisado (SFT) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. El nombre sugiere que el entrenamiento se realizó sobre un subconjunto de datos relacionado con nombres de ciudades alemanas, aunque la model card no aporta detalles sobre el dataset ni el procedimiento. El ajuste se llevó a cabo con la librería Unsloth y la biblioteca TRL de HuggingFace, lo que indica un proceso optimizado para acelerar el entrenamiento.
+El modelo `longtermrisk/OLMo-3-7B-german-city-names-last-third-v2-sft-seed2-epoch3` es un ajuste fino supervisado (SFT) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. El nombre sugiere que el entrenamiento se realizó sobre un subconjunto de datos relacionado con nombres de ciudades alemanas, aunque la model card no aporta detalles sobre el dataset ni el procedimiento. El ajuste se llevó a cabo con la librería Unsloth y la biblioteca TRL de Hugging Face, lo que indica un proceso optimizado para acelerar el entrenamiento.
 
 El modelo está diseñado para generación de texto conversacional y sigue el pipeline de `text-generation`. Se distribuye bajo licencia Apache 2.0 y está etiquetado como compatible con `text-generation-inference` y `endpoints_compatible`. A pesar de que el repositorio ocupa 14,6 GB (sugiriendo pesos completos del modelo base de ~7B en precisión media), el archivo `safetensors` reporta solo 528.384 parámetros, lo que apunta a que se trata de un adaptador LoRA o de un checkpoint parcial. No se ha publicado información sobre el contexto, la arquitectura interna ni los datos de entrenamiento.
 
@@ -71,5 +71,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/OLMo-3-7B-german-city-names-last-third-v2-sft-seed2-epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-last-third-v2-sft-seed2-epoch3)
+- [Hugging Face - longtermrisk/OLMo-3-7B-german-city-names-last-third-v2-sft-seed2-epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-last-third-v2-sft-seed2-epoch3)
 - [Modelo base - unsloth/Olmo-3-7B-Instruct](https://huggingface.co/unsloth/Olmo-3-7B-Instruct) (referencia, no proporcionado en la información original)

@@ -63,7 +63,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ChiwuHan/review-cross-modal-fusion-2023
+- Repositorio en Hugging Face: https://huggingface.co/ChiwuHan/review-cross-modal-fusion-2023
 - Survey sobre fusion multimodal en ScienceDirect: https://www.sciencedirect.com/org/science/article/pii/S1546221824005216
 - Review comparativa sobre fusion de sensores multimodales (ResearchGate): https://www.researchgate.net/publication/372080396_A_Comparative_Review_on_Multi-modal_Sensors_Fusion_based_on_Deep_Learning
 - Review sobre fusion multi-sensor en conduccion autonoma (MDPI): https://www.mdpi.com/1424-8220/25/19/6033

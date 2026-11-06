@@ -2,18 +2,18 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario Sherpa con el identificador `Sherpa/DeepSeek-V4.1-Flash-1017-native-5b673c3aa136a10a16d6`, se declara como un derivado del modelo `deepseek-ai/DeepSeek-V4.1-Flash-1017` bajo licencia MIT. La model card lo describe como un "candidato de investigación" denominado Native OBLITERATUS V4.1, explícitamente marcado como trabajo en curso, y advierte de que los pesos y los benchmarks están incompletos hasta que `recovery-manifest.json` indique `verified_hf_complete`. No se aporta ninguna cifra de rendimiento y el autor renuncia de forma explícita a reclamar cualquier puntuación de benchmark.
+Este repositorio de Hugging Face, publicado por el usuario Sherpa con el identificador `Sherpa/DeepSeek-V4.1-Flash-1017-native-5b673c3aa136a10a16d6`, se declara como un derivado del modelo `deepseek-ai/DeepSeek-V4.1-Flash-1017` bajo licencia MIT. La model card lo describe como un "candidato de investigación" denominado Native OBLITERATUS V4.1, explícitamente marcado como trabajo en curso, y advierte de que los pesos y los benchmarks están incompletos hasta que `recovery-manifest.json` indique `verified_hf_complete`. No se aporta ninguna cifra de rendimiento y el autor renuncia de forma explícita a reclamar cualquier puntuación de benchmark.
 
 El repositorio no documenta arquitectura, número de parámetros, longitud de contexto, idiomas, composición del dataset de entrenamiento ni formato de pesos. Tampoco se especifica si se trata de un ajuste fino de pesos completos, de un adaptador o de un merge, ni qué modificación concreta introduce respecto al modelo base. El momento de publicación (25 de octubre de 2026) y el contador de descargas y likes (ambos a cero) indican que no existe validación por parte de la comunidad.
 
-Las búsquedas web realizadas no han devuelto ningún resultado técnico relacionado con este modelo: todos los enlaces corresponden a entidades homónimas sin relación (una red de clases particulares, una organización de derechos humanos, una agencia de visados y una cadena de supermercados de montaña). En consecuencia, esta ficha refleja únicamente lo declarado en los metadatos de HuggingFace y marca como "no disponible" todo aquello que no puede verificarse.
+Las búsquedas web realizadas no han devuelto ningún resultado técnico relacionado con este modelo: todos los enlaces corresponden a entidades homónimas sin relación (una red de clases particulares, una organización de derechos humanos, una agencia de visados y una cadena de supermercados de montaña). En consecuencia, esta ficha refleja únicamente lo declarado en los metadatos de Hugging Face y marca como "no disponible" todo aquello que no puede verificarse.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | ID del repositorio | Sherpa/DeepSeek-V4.1-Flash-1017-native-5b673c3aa136a10a16d6 |
-| Autor | Sherpa (usuario de HuggingFace) |
+| Autor | Sherpa (usuario de Hugging Face) |
 | Modelo base | deepseek-ai/DeepSeek-V4.1-Flash-1017 |
 | Arquitectura | no disponible |
 | Parametros totales | no disponible |

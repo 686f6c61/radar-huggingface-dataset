@@ -90,7 +90,7 @@ Rendimiento medido: aproximadamente 76 veces tiempo real en estos subconjuntos; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrjnzzz/Haas-ja-v1.0-mlx
+- Modelo en Hugging Face: https://huggingface.co/mrjnzzz/Haas-ja-v1.0-mlx
 - Modelo base: https://huggingface.co/third-intelligence/Haas-ja-v1.0
 - Repositorio de código MLX: https://github.com/matsuurajun/haas-mlx
 - Ejecución alternativa en Metal: https://github.com/nyosegawa/speech.cpp

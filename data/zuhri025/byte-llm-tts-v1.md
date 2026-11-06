@@ -2,7 +2,7 @@
 
 ## Resumen
 
-byte-llm-tts-v1 es un modelo de sintesis de voz (TTS) bilingue desarrollado por el usuario zuhri025 y publicado en HuggingFace. Se trata de un transformer causal de tipo Qwen3 con tan solo 38,2 millones de parametros, entrenado desde cero sobre texto plano con un vocabulario a nivel de byte de 264 tokens (256 bytes UTF-8 mas 8 tokens especiales) y posteriormente ajustado para generar audio mediante el codec Kanade. El modelo cubre dos idiomas: ingles y urdu.
+byte-llm-tts-v1 es un modelo de sintesis de voz (TTS) bilingue desarrollado por el usuario zuhri025 y publicado en Hugging Face. Se trata de un transformer causal de tipo Qwen3 con tan solo 38,2 millones de parametros, entrenado desde cero sobre texto plano con un vocabulario a nivel de byte de 264 tokens (256 bytes UTF-8 mas 8 tokens especiales) y posteriormente ajustado para generar audio mediante el codec Kanade. El modelo cubre dos idiomas: ingles y urdu.
 
 La particularidad tecnica del modelo es su enfoque byte-level: en lugar de tokenizar palabras, opera directamente sobre bytes UTF-8, lo que elimina la dependencia de un tokenizador especifico de idioma y preserva el conocimiento linguistico del checkpoint base al ampliar el vocabulario. Para el ajuste de TTS, el vocabulario se extendio de 264 a 13.080 tokens anadiendo 16 tokens de control de sintesis de voz y 12.800 tokens de codigo de audio que corresponden a los indices del codec Kanade.
 
@@ -87,7 +87,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni c
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/zuhri025/byte-llm-tts-v1
+- Pagina del modelo en Hugging Face: https://huggingface.co/zuhri025/byte-llm-tts-v1
 - Tokenizador byte-level: https://huggingface.co/zuhri025/byte-llm-tts-v1/blob/main/byte_tokenizer.py
 - Script de ajuste fino: https://huggingface.co/zuhri025/byte-llm-tts-v1/blob/main/byte_finetune.py
 - Script de inferencia: https://huggingface.co/zuhri025/byte-llm-tts-v1/blob/main/infer.py

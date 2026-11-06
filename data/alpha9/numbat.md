@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`numbat` es un checkpoint intermedio de preentrenamiento publicado en HuggingFace bajo el identificador `Alpha9/numbat`. Segun la model card, se trata de una copia de evaluacion de una ejecucion de entrenamiento a gran escala de Anthropic, con nombre en clave `numbat`, correspondiente a un modelo de clase Mythos. El checkpoint se habria extraido en el paso 1.830.000 de una ejecucion de aproximadamente 1,96 millones de pasos, por lo que no ha recibido postentrenamiento ni RLHF.
+`numbat` es un checkpoint intermedio de preentrenamiento publicado en Hugging Face bajo el identificador `Alpha9/numbat`. Segun la model card, se trata de una copia de evaluacion de una ejecucion de entrenamiento a gran escala de Anthropic, con nombre en clave `numbat`, correspondiente a un modelo de clase Mythos. El checkpoint se habria extraido en el paso 1.830.000 de una ejecucion de aproximadamente 1,96 millones de pasos, por lo que no ha recibido postentrenamiento ni RLHF.
 
 El modelo emplea una arquitectura hibrida que combina capas Gated DeltaNet (GDN) y Multi-head Latent Attention (MLA), con capas de mezcla de expertos (MoE) de 1.224 expertos con enrutamiento top-48 mas un experto compartido, y una capa de Multi-Token Prediction (MTP). Los pesos se distribuyen en 772 shards en formato safetensors con cuantizacion NVFP4, sumando aproximadamente 7,72 TB de datos tensoriales.
 
@@ -16,7 +16,7 @@ La relevancia de esta publicacion es doble. Por un lado, ofrece una implementaci
 | Parametros totales | 6.849.377.242.584 (~6,85 billones; la model card indica ~14T, discrepancia no resuelta) |
 | Parametros activos | No disponible (top-48 de 1.224 expertos + 1 compartido, sin recuento publicado) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | NVFP4 (E2M1 con bloques de escala E4M3); tag 8-bit en HuggingFace |
+| Tipos de cuantizacion | NVFP4 (E2M1 con bloques de escala E4M3); tag 8-bit en Hugging Face |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
 | Formato de pesos | safetensors (772 shards, ~10,6 GB por archivo, ~7,72 TB totales) |
@@ -44,7 +44,7 @@ Segun el autor, el checkpoint corresponde al paso 1.830.000 de una ejecucion de 
 - Analisis de decodificacion especulativa con MTP: la capa `draft` permite experimentar con Multi-Token Prediction como mecanismo de aceleracion de inferencia sobre el trunk principal.
 - Evaluacion de checkpoints intermedios de preentrenamiento: al tratarse de un checkpoint en el paso 1.830.000, resulta util para estudiar la evolucion de las capacidades durante el preentrenamiento, comparando con checkpoints posteriores si estuvieran disponibles.
 - Docencia y formacion en sistemas distribuidos de gran escala: la estructura de 772 shards con un indice de tensores determinista sirve como caso practico de carga con `load_state_dict(strict=True)` y de gestion de checkpoints multi-shard.
-- Auditoria de seguridad de publicaciones en HuggingFace: el caso permite ilustrar los riesgos de ejecutar codigo remoto (`trust_remote_code=True`) con pesos de procedencia no verificada y de tamano desproporcionado.
+- Auditoria de seguridad de publicaciones en Hugging Face: el caso permite ilustrar los riesgos de ejecutar codigo remoto (`trust_remote_code=True`) con pesos de procedencia no verificada y de tamano desproporcionado.
 
 ## Benchmarks y rendimiento
 
@@ -77,4 +77,4 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Alpha9/numbat
+- Hugging Face: https://huggingface.co/Alpha9/numbat

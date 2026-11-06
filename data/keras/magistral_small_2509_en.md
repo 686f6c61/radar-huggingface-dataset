@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| keras/magistral_small_2509_en | no disponible (repo 48,9 GB) | 4096 (ampliable con RoPE) | Texto + visión | no disponible | HuggingFace (KerasHub) |
-| Mistral Small 3 (referencia) | ~24B | 32k | Texto | Apache 2.0 (según versión) | HuggingFace |
-| Qwen2.5-VL 7B | 7B | 128k | Texto + visión | Apache 2.0 | HuggingFace |
-| Llama 3.2 11B Vision | 11B | 128k | Texto + visión | Llama Community License | HuggingFace |
+| keras/magistral_small_2509_en | no disponible (repo 48,9 GB) | 4096 (ampliable con RoPE) | Texto + visión | no disponible | Hugging Face (KerasHub) |
+| Mistral Small 3 (referencia) | ~24B | 32k | Texto | Apache 2.0 (según versión) | Hugging Face |
+| Qwen2.5-VL 7B | 7B | 128k | Texto + visión | Apache 2.0 | Hugging Face |
+| Llama 3.2 11B Vision | 11B | 128k | Texto + visión | Llama Community License | Hugging Face |
 
 Nota: los datos de los modelos comparativos son de referencia general y no proceden de la información proporcionada en esta búsqueda; se incluyen solo como orientación de categoría. La model card de `keras/magistral_small_2509_en` no confirma el número exacto de parámetros ni la licencia, por lo que la comparación es aproximada.
 
@@ -90,11 +90,11 @@ Nota: los datos de los modelos comparativos son de referencia general y no proce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/keras/magistral_small_2509_en
+- Hugging Face: https://huggingface.co/keras/magistral_small_2509_en
 - Documentación KerasHub Mistral3: https://keras.io/api/keras_hub/models/mistral3
 - Keras (sitio principal): https://keras.io/
 - Keras 3 multi-backend: https://keras.io/keras_3/
-- Documentación de model cards de HuggingFace: https://huggingface.co/docs/hub/model-cards
+- Documentación de model cards de Hugging Face: https://huggingface.co/docs/hub/model-cards
 - Wikipedia Keras (EN): https://en.wikipedia.org/wiki/Keras
 - Wikipedia Keras (FR): https://fr.wikipedia.org/wiki/Keras
 - GeeksforGeeks, introducción a Keras: https://www.geeksforgeeks.org/deep-learning/what-is-keras/

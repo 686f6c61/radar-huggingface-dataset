@@ -90,7 +90,7 @@ Nota: los datos de la comparativa proceden exclusivamente de las referencias web
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-V2-oQ4e-fp16-mtp
+- Hugging Face (este modelo): https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-V2-oQ4e-fp16-mtp
 - Arbol de archivos: https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-V2-oQ4e-fp16-mtp/tree/main
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2
 - Repositorio oQ / oMLX (herramienta de cuantizacion): https://github.com/jundot/omlx

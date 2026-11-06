@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`niloy629/avatar-weights` es un paquete de pesos distribuido en HuggingFace que contiene los cuatro ficheros necesarios para ejecutar `avatar_server.py`, un servicio de generacion de avatares parlantes a partir de audio. No se trata de un modelo de lenguaje ni de un modelo fundacional al uso, sino de un conjunto de checkpoints para un pipeline de sintesis de video facial (audio → movimiento → fotogramas), construido sobre la arquitectura IMTalker. El autor es el usuario `niloy629` y el repositorio ocupa 1,4 GB.
+`niloy629/avatar-weights` es un paquete de pesos distribuido en Hugging Face que contiene los cuatro ficheros necesarios para ejecutar `avatar_server.py`, un servicio de generacion de avatares parlantes a partir de audio. No se trata de un modelo de lenguaje ni de un modelo fundacional al uso, sino de un conjunto de checkpoints para un pipeline de sintesis de video facial (audio → movimiento → fotogramas), construido sobre la arquitectura IMTalker. El autor es el usuario `niloy629` y el repositorio ocupa 1,4 GB.
 
 El paquete incluye un generador estatico (`generator_last.ckpt`, 1,3 GB) que transforma audio en movimiento facial con `nfe=3` y `cfg=1.24`, un renderizador destilado (`renderer_narrow.pt`, 43 MB) que convierte ese movimiento en fotogramas de 512×512 a aproximadamente 6 ms por fotograma, una foto de referencia de identidad (`ref.jpeg`, 28 KB) y un latente de referencia cacheado (`ref_x.pt`, 1,6 KB) que evita tener que cargar el renderizador completo de 2 GB.
 
@@ -91,7 +91,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/niloy629/avatar-weights
+- Repositorio en Hugging Face: https://huggingface.co/niloy629/avatar-weights
 - Dependencia externa: https://huggingface.co/facebook/wav2vec2-base-960h
 - Paper de IMTalker, blog o repositorio oficial: no disponible en la informacion proporcionada.
 - Demos o documentacion adicional: no disponible.

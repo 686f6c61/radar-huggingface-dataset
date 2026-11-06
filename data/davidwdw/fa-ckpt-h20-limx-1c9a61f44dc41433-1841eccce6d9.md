@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-ckpt-h20-limx-1c9a61f44dc41433-1841eccce6d9` es un archivo versionado de checkpoint publicado por el usuario `davidwdw` en HuggingFace. Segun la propia model card, se trata de un "versioned fleet archive" con un nivel de contenido declarado como "params+train_state+assets", es decir, pesos del modelo, estado del entrenamiento (optimizador, scheduler, etc.) y activos auxiliares. No es un modelo listo para inferencia en el sentido habitual, sino una instantanea de un punto concreto de un proceso de entrenamiento.
+El repositorio `davidwdw/fa-ckpt-h20-limx-1c9a61f44dc41433-1841eccce6d9` es un archivo versionado de checkpoint publicado por el usuario `davidwdw` en Hugging Face. Segun la propia model card, se trata de un "versioned fleet archive" con un nivel de contenido declarado como "params+train_state+assets", es decir, pesos del modelo, estado del entrenamiento (optimizador, scheduler, etc.) y activos auxiliares. No es un modelo listo para inferencia en el sentido habitual, sino una instantanea de un punto concreto de un proceso de entrenamiento.
 
 El identificador de la receta canonica asociada es `2026-09-19_pi05_libero_alphabet_soup_lora`, y el autor advierte explicitamente de que el paquete es una instantanea y no un espejo de directorio vivo, recomendando usar la revision exacta registrada y verificar el fichero `SHA256SUMS`. El repositorio ocupa 9,3 GB. No se declara licencia, idiomas, pipeline ni arquitectura, y no cuenta con descargas ni likes en el momento de la consulta.
 
@@ -85,6 +85,6 @@ No disponible. No es posible identificar modelos comparables porque ni siquiera 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-1c9a61f44dc41433-1841eccce6d9
-- Resultados de busqueda web: no se han encontrado enlaces relevantes. Las busquedas devolvieron unicamente paginas genericas de servicios de terceros (Facebook, ChatGPT, Google Gemini) y el listado general de modelos del usuario `ckpt` en HuggingFace (https://huggingface.co/ckpt/models), sin relacion con este artefacto.
+- Modelo en Hugging Face: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-1c9a61f44dc41433-1841eccce6d9
+- Resultados de busqueda web: no se han encontrado enlaces relevantes. Las busquedas devolvieron unicamente paginas genericas de servicios de terceros (Facebook, ChatGPT, Google Gemini) y el listado general de modelos del usuario `ckpt` en Hugging Face (https://huggingface.co/ckpt/models), sin relacion con este artefacto.
 - Paper, blog, repositorio o demo asociados: no disponibles.

@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks independientes (MMLU, HumanEval, GS
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iapyx-v3-exaone-3.5-7.8b | 7,82 B | Entrenado a 2048 tokens | Solo metricas internas del autor (media 0,950 en 5 tareas) | EXAONE AI Model License (investigacion) | HuggingFace, 0 descargas, 0 likes |
-| EXAONE-3.5-7.8B-Instruct (base) | 7,82 B | 32 768 tokens segun documentacion del modelo base | No disponible en esta ficha | EXAONE AI Model License | HuggingFace, mantenido por LG AI Research |
+| iapyx-v3-exaone-3.5-7.8b | 7,82 B | Entrenado a 2048 tokens | Solo metricas internas del autor (media 0,950 en 5 tareas) | EXAONE AI Model License (investigacion) | Hugging Face, 0 descargas, 0 likes |
+| EXAONE-3.5-7.8B-Instruct (base) | 7,82 B | 32 768 tokens segun documentacion del modelo base | No disponible en esta ficha | EXAONE AI Model License | Hugging Face, mantenido por LG AI Research |
 | Alternativas generalistas de ~7-8 B (por ejemplo, Qwen2.5-7B-Instruct o Llama-3.1-8B-Instruct) | Del orden de 7-8 B | No disponible en la informacion facilitada | No disponible | Apache 2.0 en el caso de Qwen2.5-7B; Llama 3.1 Community License en Llama-3.1-8B | Amplia, con ecosistema de cuantizaciones y servidores de inferencia |
 
 No se dispone de comparaciones de rendimiento directas entre este ajuste y modelos generalistas, porque las metricas publicadas corresponden a tareas internas definidas por el propio autor y no a benchmarks estandarizados. La diferencia funcional clave frente al modelo base es el grado de especializacion: este ajuste gana en tareas concretas de un producto coreano y pierde, previsiblemente, capacidad generalista, ademas de arrastrar sobreajuste a partir de la epoca 2. Los datos de las alternativas generalistas proceden de conocimiento general sobre esos modelos, no de la informacion facilitada, y deben verificarse en sus fichas oficiales.
@@ -95,7 +95,7 @@ No se dispone de comparaciones de rendimiento directas entre este ajuste y model
 - Disponibilidad de datos: parte del dataset de expresion se genero con la API K-EXAONE, cuyas condiciones de uso conviene revisar antes de redistribuir derivados.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/space1637/iapyx-v3-exaone-3.5-7.8b
+- Modelo en Hugging Face: https://huggingface.co/space1637/iapyx-v3-exaone-3.5-7.8b
 - Modelo base: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Repositorio de reproduccion (carpeta finetune-v3/): https://github.com/AIROOKIE-S/iapyx
 - Informe de evaluacion original (v3/): https://huggingface.co/datasets/space1637/iapyx-finetune-report

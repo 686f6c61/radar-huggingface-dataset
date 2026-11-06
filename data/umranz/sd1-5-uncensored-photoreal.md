@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SD1.5-Uncensored-Photoreal es un modelo de difusion texto-a-imagen publicado por el usuario Umranz en HuggingFace, basado en la arquitectura Stable Diffusion 1.5 (backbone UNet) y construido sobre el checkpoint RealisticVision V5.1. Su propuesta de valor es doble: por un lado, genera imagenes fotorrealistas; por otro, ha eliminado permanentemente su alineamiento de seguridad mediante una tecnica de "abliteracion" aplicada directamente a los pesos, eliminando el safety checker y las restricciones internas de rechazo.
+SD1.5-Uncensored-Photoreal es un modelo de difusion texto-a-imagen publicado por el usuario Umranz en Hugging Face, basado en la arquitectura Stable Diffusion 1.5 (backbone UNet) y construido sobre el checkpoint RealisticVision V5.1. Su propuesta de valor es doble: por un lado, genera imagenes fotorrealistas; por otro, ha eliminado permanentemente su alineamiento de seguridad mediante una tecnica de "abliteracion" aplicada directamente a los pesos, eliminando el safety checker y las restricciones internas de rechazo.
 
 El metodo de abliteracion empleado, denominado por el autor "Heretic-DiT", consiste en una proyeccion de subespacio rank-2 de forma cerrada sobre los 16 modulos `attn2.to_v` del UNet, con "covariance shielding". A diferencia de otros enfoques que aplican filtros en tiempo de inferencia, todas las modificaciones estan horneadas en los pesos, por lo que el autor afirma un sobrecoste de inferencia de 0 ms.
 
@@ -35,7 +35,7 @@ La innovacion tecnica principal es el proceso de abliteracion descrito como "Her
 - Sin sobrecoste de inferencia por la abliteracion (0 ms segun el autor), al estar las modificaciones horneadas en los pesos.
 - Compatibilidad con schedulers avanzados: la model card recomienda DPMSolverMultistepScheduler con sigmas de Karras y algoritmo dpmsolver++.
 - Soporte de negative prompts para controlar artefactos y calidad.
-- Carga estandar en fp16 mediante la libreria diffusers de HuggingFace.
+- Carga estandar en fp16 mediante la libreria diffusers de Hugging Face.
 
 ## Casos de uso
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al se
 - VRAM estimada para inferencia: con 859,5 millones de parametros en fp16, el modelo ocupa aproximadamente 1,7 GB en pesos, mas el VAE y el codificador de texto; en la practica, SD 1.5 funciona de forma comoda con 4-6 GB de VRAM.
 - GPU recomendadas: cualquier GPU consumer moderna con soporte CUDA; una RTX 3060 de 12 GB o una RTX 4060 Ti son mas que suficientes. No se requieren A100 ni H100.
 - Consumer GPUs: cabe sin problemas en GPUs de gama media (RTX 3060, 4060, 4070 e inferiores en VRAM con offloading o attention slicing).
-- Opciones de despliegue: diffusers (pipeline nativo segun la model card), ComfyUI y Automatic1111 (compatibles con checkpoints SD 1.5 en safetensors), y endpoints de inferencia de HuggingFace (el repo esta marcado como `endpoints_compatible`).
+- Opciones de despliegue: diffusers (pipeline nativo segun la model card), ComfyUI y Automatic1111 (compatibles con checkpoints SD 1.5 en safetensors), y endpoints de inferencia de Hugging Face (el repo esta marcado como `endpoints_compatible`).
 - Latencia y throughput: con DPMSolverMultistepScheduler y 30 pasos a 512x512 en una GPU consumer moderna, la generacion tipica de SD 1.5 tarda en el orden de 1-3 segundos por imagen; no hay cifras oficiales publicadas para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ Frente al SD 1.5 original, este modelo ofrece el mismo tamano y resolucion pero 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Umranz/SD1.5-Uncensored-Photoreal
+- Modelo en Hugging Face: https://huggingface.co/Umranz/SD1.5-Uncensored-Photoreal
 - VAE utilizado (stabilityai/sd-vae-ft-mse): https://huggingface.co/stabilityai/sd-vae-ft-mse
 - Libreria diffusers: https://github.com/huggingface/diffusers
 - Licencia CreativeML Open RAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license

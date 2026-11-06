@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Anonymous36/tawny-bluff-75` es un modelo multimodal de tipo image-text-to-text publicado en HuggingFace por un autor anónimo (usuario `Anonymous36`) bajo licencia Apache 2.0. El repositorio contiene 8.953.803.264 parámetros en formato safetensors (18,6 GB), se carga con la librería `transformers` y lleva la etiqueta de arquitectura `qwen3_5`, lo que sugiere que deriva de la familia Qwen3.5, aunque el autor no lo confirma en ninguna parte. No hay model card: el README se reduce a dos líneas de frontmatter YAML con la licencia y la librería.
+`Anonymous36/tawny-bluff-75` es un modelo multimodal de tipo image-text-to-text publicado en Hugging Face por un autor anónimo (usuario `Anonymous36`) bajo licencia Apache 2.0. El repositorio contiene 8.953.803.264 parámetros en formato safetensors (18,6 GB), se carga con la librería `transformers` y lleva la etiqueta de arquitectura `qwen3_5`, lo que sugiere que deriva de la familia Qwen3.5, aunque el autor no lo confirma en ninguna parte. No hay model card: el README se reduce a dos líneas de frontmatter YAML con la licencia y la librería.
 
-El modelo resuelve, sobre el papel, la tarea de recibir una imagen y texto y devolver texto (descripción, respuesta a preguntas visuales, extracción de información de documentos escaneados), con un tamaño de ~9.000 millones de parámetros que lo sitúa en la franja de consumo de una sola GPU de 24-48 GB en precisiones reducidas. La etiqueta `endpoints_compatible` indica que está preparado para desplegarse mediante HuggingFace Inference Endpoints.
+El modelo resuelve, sobre el papel, la tarea de recibir una imagen y texto y devolver texto (descripción, respuesta a preguntas visuales, extracción de información de documentos escaneados), con un tamaño de ~9.000 millones de parámetros que lo sitúa en la franja de consumo de una sola GPU de 24-48 GB en precisiones reducidas. La etiqueta `endpoints_compatible` indica que está preparado para desplegarse mediante Hugging Face Inference Endpoints.
 
 Su relevancia actual es, sin embargo, limitada y condicionada: cero descargas, cero likes, publicación el 24 de octubre de 2026 y ausencia total de documentación técnica, datos de entrenamiento o evaluación. Se trata de un artefacto no verificado, útil para experimentación controlada pero no recomendable como base de producción sin una evaluación propia previa.
 
@@ -28,7 +28,7 @@ Su relevancia actual es, sin embargo, limitada y condicionada: cero descargas, c
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna. El unico indicio tecnico es la etiqueta `qwen3_5`, que en el ecosistema de HuggingFace se usa para marcar modelos construidos sobre la familia Qwen3.5; si esa correspondencia se confirma, cabria esperar un transformer decoder-only con atencion completa o hibrida y un codificador visual acoplado para entrada de imagenes. No obstante, la etiqueta la introduce el propio autor y no viene acompanada de `config.json` documentado, ficha tecnica ni pesos de referencia contra los que comparar, por lo que debe tratarse como una hipotesis a verificar inspeccionando la configuracion del repositorio.
+No hay informacion publicada sobre la arquitectura interna. El unico indicio tecnico es la etiqueta `qwen3_5`, que en el ecosistema de Hugging Face se usa para marcar modelos construidos sobre la familia Qwen3.5; si esa correspondencia se confirma, cabria esperar un transformer decoder-only con atencion completa o hibrida y un codificador visual acoplado para entrada de imagenes. No obstante, la etiqueta la introduce el propio autor y no viene acompanada de `config.json` documentado, ficha tecnica ni pesos de referencia contra los que comparar, por lo que debe tratarse como una hipotesis a verificar inspeccionando la configuracion del repositorio.
 
 Tampoco hay datos sobre el corpus de entrenamiento: se desconoce el numero de tokens, la composicion del dataset, la proporcion de pares imagen-texto, la existencia de fases de ajuste supervisado, RLHF o DPO, ni si se aplicaron tecnicas de decodificacion especulativa, atencion lineal o cuantizacion durante el entrenamiento. El pipeline declarado (`image-text-to-text`) y la etiqueta `conversational` son los unicos indicios de que el modelo fue ajustado para dialogo multimodal multi-turno. Cualquier afirmacion adicional sobre el entrenamiento seria especulativa.
 
@@ -40,7 +40,7 @@ Las siguientes capacidades se deducen del pipeline declarado y de las etiquetas 
 - Conversacion multimodal multi-turno (etiqueta `conversational`), con historial que alterna texto e imagenes.
 - Procesamiento conjunto de imagen y texto en una sola peticion (`image-text-to-text`).
 - Compatibilidad con el formato de chat de `transformers` y con el esquema de mensajes con contenido multimodal.
-- Despliegue via HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`).
+- Despliegue via Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`).
 - Razonamiento, codigo, matematicas, tool calling, modo thinking, audio y agentes multi-paso: no disponibles; no hay evidencia en la informacion proporcionada de que el modelo los soporte.
 - Capacidades multilingues: no disponibles; el autor no declara idiomas.
 
@@ -100,6 +100,6 @@ Frente a estas alternativas, la unica ventaja objetiva del modelo es su licencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anonymous36/tawny-bluff-75
+- Modelo en Hugging Face: https://huggingface.co/Anonymous36/tawny-bluff-75
 - No se han encontrado papers, blogs, repositorios ni demos relacionados con este modelo en la busqueda web realizada.
 - Resultados de busqueda no relacionados (modelos de generacion de imagen homonimos, descartados): https://www.seaart.ai/models/detail/ea2499fef0ccd7c3db077479c555e737 ; https://www.seaart.ai/models/detail/a9566d185f338abc9486e5d48ae15bbc ; https://promptshotai.com/tools/ai-model-detector ; https://civarchive.com/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACT v3 aug desktop es una política de control robótico basada en Action Chunking with Transformers (ACT), desarrollada por el usuario lichtphyz y publicada en HuggingFace bajo licencia Apache 2.0. El modelo resuelve una tarea concreta de manipulación: un brazo robótico SO-101 de 6 grados de libertad debe recoger un bloque de madera y depositarlo en una caja, usando dos cámaras (una frontal de área de trabajo y otra en la muñeca). No es un modelo de lenguaje ni un modelo generativo de propósito general, sino un policy model entrenado con LeRobot para control motor de extremo a extremo.
+ACT v3 aug desktop es una política de control robótico basada en Action Chunking with Transformers (ACT), desarrollada por el usuario lichtphyz y publicada en Hugging Face bajo licencia Apache 2.0. El modelo resuelve una tarea concreta de manipulación: un brazo robótico SO-101 de 6 grados de libertad debe recoger un bloque de madera y depositarlo en una caja, usando dos cámaras (una frontal de área de trabajo y otra en la muñeca). No es un modelo de lenguaje ni un modelo generativo de propósito general, sino un policy model entrenado con LeRobot para control motor de extremo a extremo.
 
 La arquitectura combina un backbone visual ResNet-18 preentrenado en ImageNet con un transformer de 512 dimensiones (4 capas de encoder y 1 de decoder) y un VAE con latente de 32 dimensiones y peso KL de 10. El modelo tiene 51.668.614 parámetros totales y genera chunks de 100 acciones (3,3 segundos a 30 fps), lo que permite un control suave y anticipatorio. Se entrenó sobre 125 episodios teleoperados (55.677 frames) con aumento de imagen, durante 80.000 pasos en una única RTX 4080.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Arquitectura | Parámetros | Contexto/chunk | Éxito en robot real | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| lichtphyz/act_v3_aug_desktop | ACT (ResNet-18 + transformer + VAE) | 51,7 M | chunk de 100 acciones (3,3 s) | 9/10 (90%) | apache-2.0 | HuggingFace |
-| lichtphyz/diffusion_v3_desktop | Diffusion Policy | no disponible | no disponible | 8/10 (80%) | no disponible | HuggingFace |
-| lichtphyz/smolvla_v3_desktop | SmolVLA | no disponible | no disponible | 7/10 (70%) | no disponible | HuggingFace |
+| lichtphyz/act_v3_aug_desktop | ACT (ResNet-18 + transformer + VAE) | 51,7 M | chunk de 100 acciones (3,3 s) | 9/10 (90%) | apache-2.0 | Hugging Face |
+| lichtphyz/diffusion_v3_desktop | Diffusion Policy | no disponible | no disponible | 8/10 (80%) | no disponible | Hugging Face |
+| lichtphyz/smolvla_v3_desktop | SmolVLA | no disponible | no disponible | 7/10 (70%) | no disponible | Hugging Face |
 
 Los tres modelos se entrenaron sobre el mismo dataset (lichtphyz/so101_block_to_bin_v3) y se evaluaron en el mismo robot SO-101, lo que permite una comparación directa. ACT obtiene la mejor tasa de éxito de los tres en la información disponible.
 
@@ -89,7 +89,7 @@ Los tres modelos se entrenaron sobre el mismo dataset (lichtphyz/so101_block_to_
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lichtphyz/act_v3_aug_desktop
+- Modelo en Hugging Face: https://huggingface.co/lichtphyz/act_v3_aug_desktop
 - Dataset de entrenamiento: https://huggingface.co/datasets/lichtphyz/so101_block_to_bin_v3
 - Dataset de rollouts de evaluación: https://huggingface.co/spaces/lerobot/visualize_dataset?path=lichtphyz/rollout_act_v3_aug_desktop
 - Colección SO-101 block-to-bin: https://huggingface.co/collections/lichtphyz/so-101-block-to-bin-act-vs-diffusion-policy-6ad6ca5c5e111b426bb1f8a6

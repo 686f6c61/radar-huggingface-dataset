@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-V-4.7-35B-A3B (i1-GGUF, mradermacher) | 34,66 mil millones | ~3.000 millones (segun nomenclatura A3B) | no disponible | Apache 2.0 | GGUF en HuggingFace |
-| MiniCPM-V-4.7-35B-A3B (original, openbmb) | 34,66 mil millones | ~3.000 millones | no disponible | Apache 2.0 | Pesos originales en HuggingFace |
+| MiniCPM-V-4.7-35B-A3B (i1-GGUF, mradermacher) | 34,66 mil millones | ~3.000 millones (segun nomenclatura A3B) | no disponible | Apache 2.0 | GGUF en Hugging Face |
+| MiniCPM-V-4.7-35B-A3B (original, openbmb) | 34,66 mil millones | ~3.000 millones | no disponible | Apache 2.0 | Pesos originales en Hugging Face |
 | Alternativas multimodales de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de datos verificables sobre modelos alternativos comparables (por ejemplo, otras familias VLM de rango 30-40 mil millones con arquitectura MoE), por lo que no se incluyen cifras que no puedan contrastarse.
@@ -88,7 +88,7 @@ No se dispone en la informacion proporcionada de datos verificables sobre modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones i1): https://huggingface.co/mradermacher/MiniCPM-V-4.7-35B-A3B-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/MiniCPM-V-4.7-35B-A3B-i1-GGUF
 - Repositorio de cuantizaciones estaticas y ficheros mmproj: https://huggingface.co/mradermacher/MiniCPM-V-4.7-35B-A3B-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#MiniCPM-V-4.7-35B-A3B-i1-GGUF

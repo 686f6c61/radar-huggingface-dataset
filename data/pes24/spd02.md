@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PES24/spd02 es un repositorio de modelo alojado en HuggingFace por el usuario PES24. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos basicos del repositorio: identificador, autor, etiqueta de region (region:us), fecha de creacion y ultima actualizacion (13 de septiembre de 2026), un total de 0 descargas, 1 like y un tamano de repositorio de 16,2 GB. No se ha publicado pipeline, licencia, idiomas soportados ni documentacion tecnica asociada.
+PES24/spd02 es un repositorio de modelo alojado en Hugging Face por el usuario PES24. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos basicos del repositorio: identificador, autor, etiqueta de region (region:us), fecha de creacion y ultima actualizacion (13 de septiembre de 2026), un total de 0 descargas, 1 like y un tamano de repositorio de 16,2 GB. No se ha publicado pipeline, licencia, idiomas soportados ni documentacion tecnica asociada.
 
 Esto significa que no es posible confirmar la arquitectura, el numero de parametros, la longitud de contexto, el regimen de entrenamiento ni las capacidades reales del modelo. El unico dato con valor orientativo es el tamano del repositorio (16,2 GB), que es compatible con pesos en precision de 16 bits de un modelo del orden de 8.000 millones de parametros, o con un modelo de mayor tamano almacenado en cuantizaciones de 8 o 4 bits. Se trata, en cualquier caso, de una inferencia a partir del tamano en disco y no de un dato confirmado.
 
@@ -78,7 +78,7 @@ No disponible. No se ha podido identificar la categoria del modelo (tamano, tare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PES24/spd02
+- Hugging Face: https://huggingface.co/PES24/spd02
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

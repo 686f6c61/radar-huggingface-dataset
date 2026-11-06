@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo en benchmarks. La principal di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qikp/flan-t5-large-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/qikp/flan-t5-large-Q8_0-GGUF
 - Modelo original: https://huggingface.co/google/flan-t5-large
 - Documentación de FLAN-T5 en Transformers: https://huggingface.co/docs/transformers/model_doc/flan-t5
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

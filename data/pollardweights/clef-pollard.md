@@ -103,8 +103,8 @@ El modelo tambien esta disponible como servicio gestionado en Cloudflare Workers
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PollardWeights/clef-Pollard
-- Modelo base en HuggingFace: https://huggingface.co/Cloudflare/clef
+- Repositorio Hugging Face: https://huggingface.co/PollardWeights/clef-Pollard
+- Modelo base en Hugging Face: https://huggingface.co/Cloudflare/clef
 - Herramienta Pollard Weights: https://github.com/WestWaters/pollard-weights
 - Herramienta pollard-decision: https://github.com/WestWaters/pollard-weights (referenciada en la model card para la lectura de decisiones)
 - Pagina de modelos de PollardWeights: https://huggingface.co/PollardWeights/models

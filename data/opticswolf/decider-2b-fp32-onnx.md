@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| decider-2b-fp32-onnx | ~1,88 B | no disponible | Clasificación/elección zero-shot | Apache-2.0 | HuggingFace (ONNX) |
-| Mapika/decider-2b | ~1,88 B | no disponible | Clasificación/elección zero-shot | Apache-2.0 | HuggingFace (modelo base) |
-| Qwen3.5-2B-Base | ~2 B | no disponible | Generación de texto | Apache-2.0 | HuggingFace |
+| decider-2b-fp32-onnx | ~1,88 B | no disponible | Clasificación/elección zero-shot | Apache-2.0 | Hugging Face (ONNX) |
+| Mapika/decider-2b | ~1,88 B | no disponible | Clasificación/elección zero-shot | Apache-2.0 | Hugging Face (modelo base) |
+| Qwen3.5-2B-Base | ~2 B | no disponible | Generación de texto | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo con alternativas de la misma categoría en la información proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo con alternativas de la misma c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/opticsWolf/decider-2b-fp32-onnx
+- Hugging Face: https://huggingface.co/opticsWolf/decider-2b-fp32-onnx
 - Modelo base: https://huggingface.co/Mapika/decider-2b
 - Repositorio Ollaya (herramienta de conversión): https://github.com/ollaya-dev/ollaya
 - Notas de bakeoff (`docs/typed-decision-plan.md` §9c): repositorio `embroider` (no se proporciona URL directa)

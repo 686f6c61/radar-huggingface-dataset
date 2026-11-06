@@ -86,10 +86,10 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| `univ_conformer_small_arcface` | 2.029.892 | Audio 16 kHz, log-mel 80 dim, utterance completa | Apache 2.0 | HuggingFace + GitHub + PyPI | EER 20,57 % (LibriSpeech 1-utt), 25,00 % (VoxCeleb1 1-utt) |
+| `univ_conformer_small_arcface` | 2.029.892 | Audio 16 kHz, log-mel 80 dim, utterance completa | Apache 2.0 | Hugging Face + GitHub + PyPI | EER 20,57 % (LibriSpeech 1-utt), 25,00 % (VoxCeleb1 1-utt) |
 | ECAPA-TDNN (familia de referencia en speaker verification) | No disponible en la informacion proporcionada | Audio, embeddings tipicos de 192 dim | Varía segun implementacion | Implementaciones publicas (SpeechBrain, WeSpeaker) | No disponible en la informacion proporcionada |
 | TitaNet (NVIDIA NeMo) | No disponible en la informacion proporcionada | Audio, embeddings de 192 dim | Varía segun checkpoint | NVIDIA NeMo | No disponible en la informacion proporcionada |
-| Modelos basados en WavLM para SV | No disponible en la informacion proporcionada | Audio, embeddings de 256-512 dim | Varía segun checkpoint | HuggingFace / Microsoft | No disponible en la informacion proporcionada |
+| Modelos basados en WavLM para SV | No disponible en la informacion proporcionada | Audio, embeddings de 256-512 dim | Varía segun checkpoint | Hugging Face / Microsoft | No disponible en la informacion proporcionada |
 
 La comparacion cuantitativa con alternativas no puede completarse porque la informacion proporcionada no incluye cifras de esos modelos. Lo que si puede afirmarse es que `univ_conformer_small_arcface` es uno o dos ordenes de magnitud mas pequeno que los sistemas habituales de verificacion de locutor, y que sus EER publicados son notablemente mas altos que los de los sistemas de referencia de la literatura, a cambio de un coste computacional minimo.
 
@@ -100,7 +100,7 @@ La comparacion cuantitativa con alternativas no puede completarse porque la info
 - Cobertura de evaluacion estrecha: solo tres dominios (LibriSpeech, CN-Celeb2, VoxCeleb1) y tamanos de trial relativamente pequenos (1.000-3.000 trials), con intervalos de confianza bootstrap amplios.
 - Riesgo de confusion entre locutores con timbres similares (familiares, hermanos, imitadores), inherente a cualquier modelo de embeddings de 192 dimensiones de este tamano.
 - Sensibilidad al dominio: el modelo se evalua en regimen "universal" sobre dominios heterogeneos, lo que sugiere que un ajuste o calibracion por dominio puede ser necesario en produccion.
-- Idiomas: los metadatos de HuggingFace no declaran idiomas soportados; la evidencia disponible son evaluaciones en ingles, chino y audio multilingue in-the-wild, sin garantia para el resto.
+- Idiomas: los metadatos de Hugging Face no declaran idiomas soportados; la evidencia disponible son evaluaciones en ingles, chino y audio multilingue in-the-wild, sin garantia para el resto.
 - Naturaleza del proyecto: es una reproduccion independiente en codigo abierto y no un producto oficial de Google. No cuenta con soporte oficial ni con validacion con los datasets internos de los papers originales, por lo que los resultados no son directamente comparables con los publicados en dichos papers.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero conviene revisar las condiciones de los datasets de entrenamiento (LibriSpeech, CN-Celeb, VoxCeleb) si se va a redistribuir el modelo o derivados.
 - Privacidad y cumplimiento: los embeddings de locutor son datos biometricos en muchas jurisdicciones (por ejemplo, categorias especiales segun el RGPD). Su almacenamiento requiere base legal, y las puntuaciones deben calibrarse antes de tomar decisiones automatizadas.
@@ -109,8 +109,8 @@ La comparacion cuantitativa con alternativas no puede completarse porque la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wq2012/univ_conformer_small_arcface
-- Coleccion FlaxSpeaker en HuggingFace: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
+- Modelo en Hugging Face: https://huggingface.co/wq2012/univ_conformer_small_arcface
+- Coleccion FlaxSpeaker en Hugging Face: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub: https://github.com/wq2012/FlaxSpeaker
 - Paquete PyPI: https://pypi.org/project/flaxspeaker/
 - Paper GE2E (arXiv:1710.10467): https://arxiv.org/abs/1710.10467

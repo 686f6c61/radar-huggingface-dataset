@@ -76,9 +76,9 @@ La model card indica que el sistema supera al diccionario en los siete ítems de
 
 | Modelo | Tipo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SLM-JA-G2P v11 | LoRA sobre SLM 1B | ~1B (base) | No disponible | G2P japonés neuronal con decodificación restringida | MIT | HuggingFace (adaptador) |
+| SLM-JA-G2P v11 | LoRA sobre SLM 1B | ~1B (base) | No disponible | G2P japonés neuronal con decodificación restringida | MIT | Hugging Face (adaptador) |
 | pyopenjtalk | Sistema basado en diccionario y reglas | No aplica | No aplica | G2P japonés determinista | Licencia de Open JTalk (verificar) | Open source, ampliamente desplegado |
-| sarashina2.2-1b-instruct-v0.1 | Transformer decoder-only instruct | ~1B | No disponible | Modelo general japonés | MIT | HuggingFace |
+| sarashina2.2-1b-instruct-v0.1 | Transformer decoder-only instruct | ~1B | No disponible | Modelo general japonés | MIT | Hugging Face |
 
 La comparación con otros modelos neuronales de G2P en japonés no está disponible en la información proporcionada. Frente a pyopenjtalk, la diferencia clave es que el modelo neuronal no consulta diccionario y resuelve ambigüedades por contexto, mientras que el sistema de diccionario es más ligero en cómputo y determinista por construcción.
 
@@ -95,7 +95,7 @@ La comparación con otros modelos neuronales de G2P en japonés no está disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/t2-fujii/slm-ja-g2p-v11-lora
+- Modelo en Hugging Face: https://huggingface.co/t2-fujii/slm-ja-g2p-v11-lora
 - Modelo base: https://huggingface.co/sbintuitions/sarashina2.2-1b-instruct-v0.1
 - Código y datos de evaluación: https://github.com/tmfi-analytics/slm-ja-g2p
 - Artículo: arXiv link pendiente de publicación (ID TBA) según la model card; no disponible en la información proporcionada.

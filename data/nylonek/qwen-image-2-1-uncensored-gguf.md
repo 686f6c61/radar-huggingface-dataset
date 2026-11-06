@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Uncensored-GGUF es una recopilación de cuantizaciones del modelo de generación de imágenes Qwen/Qwen-Image-2.1, publicada por el usuario Nylonek en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión de los pesos originales de Qwen a formatos GGUF y safetensors de menor precisión, con el objetivo de permitir la inferencia local en equipos de consumo dentro del ecosistema ComfyUI. La variante "Uncensored" (UC) hace referencia a que se distribuyen los pesos sin las capas de alineación de seguridad que la versión upstream pudiera incorporar, aunque la model card no detalla el procedimiento exacto aplicado.
+Qwen-Image-2.1-Uncensored-GGUF es una recopilación de cuantizaciones del modelo de generación de imágenes Qwen/Qwen-Image-2.1, publicada por el usuario Nylonek en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión de los pesos originales de Qwen a formatos GGUF y safetensors de menor precisión, con el objetivo de permitir la inferencia local en equipos de consumo dentro del ecosistema ComfyUI. La variante "Uncensored" (UC) hace referencia a que se distribuyen los pesos sin las capas de alineación de seguridad que la versión upstream pudiera incorporar, aunque la model card no detalla el procedimiento exacto aplicado.
 
 El repositorio incluye tanto los pesos del transformer de difusión como los componentes auxiliares necesarios para la inferencia: un codificador de texto basado en Qwen3-VL de 8B parámetros y un VAE específico de Qwen-Image 2.1. El tamaño total del repositorio es de 105,2 GB, y el modelo base cuenta con 7.115.124.736 parámetros (aproximadamente 7,1 mil millones) según los datos de safetensors.
 
@@ -83,8 +83,8 @@ La informacion proporcionada no incluye datos de rendimiento del modelo, por lo 
 
 | Modelo | Parametros | Formato | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-Uncensored-GGUF (este) | 7,1 mil millones | GGUF, safetensors, MLX | qwen-research | HuggingFace (Nylonek) | no disponible |
-| Qwen/Qwen-Image-2.1 (base) | no disponible en la informacion | safetensors | no disponible | HuggingFace (Qwen) | no disponible |
+| Qwen-Image-2.1-Uncensored-GGUF (este) | 7,1 mil millones | GGUF, safetensors, MLX | qwen-research | Hugging Face (Nylonek) | no disponible |
+| Qwen/Qwen-Image-2.1 (base) | no disponible en la informacion | safetensors | no disponible | Hugging Face (Qwen) | no disponible |
 | Alternativas de la misma categoria (SDXL, FLUX.1) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion verificada sobre modelos comparables dentro del material proporcionado, por lo que no se pueden establecer comparaciones cuantitativas fiables.
@@ -104,7 +104,7 @@ No se dispone de informacion verificada sobre modelos comparables dentro del mat
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Nylonek/Qwen-Image-2.1-Uncensored-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/Nylonek/Qwen-Image-2.1-Uncensored-GGUF
 - Modelo base Qwen/Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI-GGUF (fork leejet, con soporte de Qwen-Image 2.1): https://github.com/leejet/ComfyUI-GGUF

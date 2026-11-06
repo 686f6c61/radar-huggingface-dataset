@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks numericos (como FVD, CLIP score o m
 
 | Modelo | Parametros | Contexto | Cuantizacion | Atencion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Pika-H3-Flex-NVFP4-QAD (esta ficha) | 13,86 mil millones | no disponible | NVFP4 | BF16 | MiniMax H3 Community License | HuggingFace (FastVideo) |
-| Pika-H3-Flex-NVFP4-FP4Attn-QAD | no disponible | no disponible | NVFP4 | NVFP4 Q/K | MiniMax H3 Community License | HuggingFace (FastVideo) |
-| Pika H3 Flex (base) | no disponible | no disponible | BF16 | BF16 | MiniMax H3 Community License | HuggingFace (Pika-Labs) |
-| MiniMax H3 | no disponible | no disponible | BF16 | BF16 | MiniMax H3 Community License | HuggingFace (MiniMaxAI) |
+| Pika-H3-Flex-NVFP4-QAD (esta ficha) | 13,86 mil millones | no disponible | NVFP4 | BF16 | MiniMax H3 Community License | Hugging Face (FastVideo) |
+| Pika-H3-Flex-NVFP4-FP4Attn-QAD | no disponible | no disponible | NVFP4 | NVFP4 Q/K | MiniMax H3 Community License | Hugging Face (FastVideo) |
+| Pika H3 Flex (base) | no disponible | no disponible | BF16 | BF16 | MiniMax H3 Community License | Hugging Face (Pika-Labs) |
+| MiniMax H3 | no disponible | no disponible | BF16 | BF16 | MiniMax H3 Community License | Hugging Face (MiniMaxAI) |
 
 La comparativa se limita a la familia de modelos de la que deriva esta variante, ya que no se dispone de datos de benchmarks ni de especificaciones completas de alternativas de otros autores en la informacion proporcionada.
 
@@ -86,7 +86,7 @@ La comparativa se limita a la familia de modelos de la que deriva esta variante,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FastVideo/Pika-H3-Flex-NVFP4-QAD
+- Modelo en Hugging Face: https://huggingface.co/FastVideo/Pika-H3-Flex-NVFP4-QAD
 - Modelo base Pika H3 Flex: https://huggingface.co/Pika-Labs/Pika-H3-Flex
 - Modelo original MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Variante FP4-attention: https://huggingface.co/FastVideo/Pika-H3-Flex-NVFP4-FP4Attn-QAD

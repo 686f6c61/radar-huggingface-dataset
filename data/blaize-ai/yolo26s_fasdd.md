@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento de las alternativas en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blaize-AI/YOLO26s_FASDD
+- Modelo en Hugging Face: https://huggingface.co/Blaize-AI/YOLO26s_FASDD
 - Repositorio original de Ultralytics: https://www.github.com/ultralytics/ultralytics
 - Dataset FASDD-CV (ScienceDB): https://www.scidb.cn/en/detail?dataSetId=ce9c9400b44148e1b0a749f5c3eb0bda
 - Sitio de Blaize: https://www.blaize.com/

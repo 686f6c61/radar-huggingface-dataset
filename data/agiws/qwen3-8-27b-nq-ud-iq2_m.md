@@ -80,7 +80,7 @@ La comparativa muestra que el repositorio de agiws se diferencia por su esquema 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agiws/Qwen3.8-27B-NQ-UD-IQ2_M
+- Repositorio Hugging Face: https://huggingface.co/agiws/Qwen3.8-27B-NQ-UD-IQ2_M
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF de Unsloth para Qwen3.8-27B: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Documentación de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

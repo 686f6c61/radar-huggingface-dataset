@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `michaelwalkerti`, no contiene un modelo entrenado, sino un conjunto de notas de lectura y un esbozo de experimento sobre el mecanismo de atención eficiente (efficient attention). El propio autor lo declara explícitamente: se trata de material exploratorio que enfatiza qué falta por probar, sin afirmar resultados de benchmarks, ablaciones completas, código liberado ni checkpoints entrenados.
+Este repositorio de Hugging Face, publicado por el usuario `michaelwalkerti`, no contiene un modelo entrenado, sino un conjunto de notas de lectura y un esbozo de experimento sobre el mecanismo de atención eficiente (efficient attention). El propio autor lo declara explícitamente: se trata de material exploratorio que enfatiza qué falta por probar, sin afirmar resultados de benchmarks, ablaciones completas, código liberado ni checkpoints entrenados.
 
 El repositorio incluye un archivo `paper_notes.md` como artefacto principal y un `README.md` de documentación. Su relevancia radica en que aborda un tema central en la investigación actual de arquitecturas transformer: la reducción de la complejidad cuadrática de la atención con respecto a la longitud de secuencia. El autor propone un plan de verificación con conjuntos de datos concretos (Long Range Arena, ImageNet-1K, Flickr30k) y discute posibles factores de confusión, comparaciones con líneas base y modos de fallo.
 
@@ -63,7 +63,7 @@ No disponible. Este repositorio no es un modelo, sino notas de investigación. E
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/michaelwalkerti/efficient-attention-int825-2024
+- Repositorio Hugging Face: https://huggingface.co/michaelwalkerti/efficient-attention-int825-2024
 - Artículo original "Efficient Attention: Attention with Linear Complexities" (arXiv): https://arxiv.org/abs/1812.01243
 - Versión IEEE del mismo artículo: https://ieeexplore.ieee.org/document/9423033
 - Repositorio GitHub de implementaciones relacionadas (HKUNLP): https://github.com/hkunlp/efficient-attention

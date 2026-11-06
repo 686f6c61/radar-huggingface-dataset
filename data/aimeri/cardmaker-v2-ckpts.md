@@ -51,5 +51,5 @@ No disponible. Solo se ha encontrado en la búsqueda web una referencia a un rep
 
 ## Enlaces
 
-- [Repositorio de HuggingFace: aimeri/cardmaker-v2-ckpts](https://huggingface.co/aimeri/cardmaker-v2-ckpts)
+- [Repositorio de Hugging Face: aimeri/cardmaker-v2-ckpts](https://huggingface.co/aimeri/cardmaker-v2-ckpts)
 - [Repositorio relacionado (versión v1 cuantizada, misma autoría): aimeri/spoomplesmaxx-cardmaker-v1-Q5_K_M-GGUF](https://huggingface.co/aimeri/spoomplesmaxx-cardmaker-v1-Q5_K_M-GGUF)

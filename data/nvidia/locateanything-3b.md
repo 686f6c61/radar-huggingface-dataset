@@ -66,7 +66,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [HuggingFace - nvidia/LocateAnything-3B](https://huggingface.co/nvidia/LocateAnything-3B)
+- [Hugging Face - nvidia/LocateAnything-3B](https://huggingface.co/nvidia/LocateAnything-3B)
 - Papers de arxiv referenciados en los tags (sin título confirmado):
   - [arxiv:2605.27365](https://arxiv.org/abs/2605.27365)
   - [arxiv:2504.07491](https://arxiv.org/abs/2504.07491)

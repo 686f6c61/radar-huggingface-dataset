@@ -13,7 +13,7 @@ La relevancia de esta ficha es limitada pero clara: permite ejecutar un modelo c
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible (etiquetado como gemma4 en el repo; no confirmado por el autor) |
-| Parametros totales | 7.463.013.674 segun los pesos safetensors del modelo base registrados en HuggingFace (el nombre comercial indica 4B) |
+| Parametros totales | 7.463.013.674 segun los pesos safetensors del modelo base registrados en Hugging Face (el nombre comercial indica 4B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
@@ -86,7 +86,7 @@ No es posible establecer una comparativa fiable con alternativas concretas: la a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/YAM-AI-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/YAM-AI-4B-GGUF
 - Modelo base: https://huggingface.co/adelwolf5/YAM-AI-4B
 - Pagina de resumen del cuantizador: https://hf.tst.eu/model#YAM-AI-4B-GGUF
 - Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

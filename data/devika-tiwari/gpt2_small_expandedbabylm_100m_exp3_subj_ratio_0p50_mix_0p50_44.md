@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p50_44` es un modelo de lenguaje autoregresivo de aproximadamente 100 millones de parametros, desarrollado por devika-tiwari, que parte del checkpoint de GPT-2 small y se ajusta sobre el conjunto de datos expandido BabyLM (expanded BabyLM) dentro del experimento 3 (exp3). El nombre del modelo codifica la configuracion experimental: proporcion de sujeto 0,50, proporcion de mezcla 0,50 y semilla 44. La model card esta generada automaticamente por el Trainer de HuggingFace y carece de descripcion detallada, por lo que gran parte de la informacion tecnica especifica no esta disponible.
+`gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p50_44` es un modelo de lenguaje autoregresivo de aproximadamente 100 millones de parametros, desarrollado por devika-tiwari, que parte del checkpoint de GPT-2 small y se ajusta sobre el conjunto de datos expandido BabyLM (expanded BabyLM) dentro del experimento 3 (exp3). El nombre del modelo codifica la configuracion experimental: proporcion de sujeto 0,50, proporcion de mezcla 0,50 y semilla 44. La model card esta generada automaticamente por el Trainer de Hugging Face y carece de descripcion detallada, por lo que gran parte de la informacion tecnica especifica no esta disponible.
 
 El modelo se enmarca en la linea de investigacion del desafio BabyLM, que busca entrenar modelos de lenguaje con datos limitados y ecologicamente validos, similares a la entrada linguistica que recibe un nino. La perdida de validacion final reportada es de 3,5299 tras 20 epocas de entrenamiento, con un minimo alcanzado en la epoca 5. Es un modelo de investigacion con cero descargas y cero likes en el momento de su publicacion, y su model-index no incluye resultados de benchmarks.
 
@@ -56,16 +56,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - Tamano de pesos: aproximadamente 475 MB (segun fuentes secundarias), lo que permite inferencia en GPU de consumo.
 - VRAM estimada para inferencia: entre 1 y 2 GB con precision fp32; menos con cuantizacion (no documentada).
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1660, RTX 3060, RTX 4090). No requiere hardware de datacenter.
-- Opciones de despliegue: compatible con la libreria Transformers de HuggingFace (PyTorch). No se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI, aunque por tratarse de una arquitectura GPT-2 estandar es probablemente convertible a formatos GGUF o compatible con motores de inferencia genericos.
+- Opciones de despliegue: compatible con la libreria Transformers de Hugging Face (PyTorch). No se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI, aunque por tratarse de una arquitectura GPT-2 estandar es probablemente convertible a formatos GGUF o compatible con motores de inferencia genericos.
 - El tamano del repositorio es de 4,0 GB, lo que sugiere que incluye artefactos adicionales de entrenamiento (checkpoints, logs) ademas de los pesos del modelo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Perdida validacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p50_44 | ~100M | no disponible | 3,5299 | no disponible | HuggingFace |
-| GPT-2 small (original, OpenAI) | 124M | 1024 tokens | no disponible | MIT | OpenAI / HuggingFace |
-| gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p25_44 | ~100M | no disponible | no disponible | no disponible | HuggingFace |
+| gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p50_44 | ~100M | no disponible | 3,5299 | no disponible | Hugging Face |
+| GPT-2 small (original, OpenAI) | 124M | 1024 tokens | no disponible | MIT | OpenAI / Hugging Face |
+| gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p25_44 | ~100M | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparativa directa con otros modelos del desafio BabyLM no es posible sin datos de benchmarks publicados. El modelo comparte arquitectura con GPT-2 small original, pero se diferencia en el corpus de entrenamiento (BabyLM expandido frente al WebText de OpenAI) y en el regimen de entrenamiento (20 epocas, lote 256, lr 1e-4). La variante con mix_0p25 del mismo autor permite comparar el efecto de la proporcion de mezcla dentro del mismo experimento.
 
@@ -83,5 +83,5 @@ La comparativa directa con otros modelos del desafio BabyLM no es posible sin da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p50_44
+- Modelo en Hugging Face: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p50_44
 - Variante con mix_0p25 (mismo autor): https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p25_44

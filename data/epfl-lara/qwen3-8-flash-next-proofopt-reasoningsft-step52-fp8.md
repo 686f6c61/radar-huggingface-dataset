@@ -18,7 +18,7 @@ El modelo conserva la arquitectura, tokenizador, plantilla de chat y licencia de
 | Longitud de contexto | 266.400 tokens (verificado en las pruebas de runtime con 10 streams simultáneos a esa longitud) |
 | Tipos de cuantización | FP8 nativo (base oficial); el LoRA se fusiona en BF16 en 84 proyecciones de atención/GDN; el resto de tensores permanece cuantizado en FP8 |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (licencia "other" según metadatos de HuggingFace) |
+| Licencia | qwen-community-1.0 (licencia "other" según metadatos de Hugging Face) |
 | Formato de pesos | safetensors (transformers, PEFT) |
 
 ## Arquitectura y entrenamiento
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-ProofOpt-ReasoningSFT-step52-FP8 | ~180B | 266.400 | Optimización de pruebas Lean con razonamiento sintético | qwen-community-1.0 | HuggingFace (EPFL-LARA) |
-| Qwen3.8-Flash-Next-ProofOpt-ActionSFT-step52-FP8 | ~180B (mismo base) | no disponible | Solo acciones de prueba, sin planes de razonamiento | qwen-community-1.0 | HuggingFace (EPFL-LARA) |
-| Qwen/Qwen3.8-Flash-Next (base) | ~180B | no disponible | Propósito general multimodal | qwen-community-1.0 | HuggingFace (Qwen) |
+| Qwen3.8-Flash-Next-ProofOpt-ReasoningSFT-step52-FP8 | ~180B | 266.400 | Optimización de pruebas Lean con razonamiento sintético | qwen-community-1.0 | Hugging Face (EPFL-LARA) |
+| Qwen3.8-Flash-Next-ProofOpt-ActionSFT-step52-FP8 | ~180B (mismo base) | no disponible | Solo acciones de prueba, sin planes de razonamiento | qwen-community-1.0 | Hugging Face (EPFL-LARA) |
+| Qwen/Qwen3.8-Flash-Next (base) | ~180B | no disponible | Propósito general multimodal | qwen-community-1.0 | Hugging Face (Qwen) |
 
 La comparación directa con el experimento ActionSFT del mismo autor es la más relevante: ambos parten de las mismas 364 acciones, pero ReasoningSFT añade 294 planes de razonamiento prospectivo. No se dispone de métricas de benchmark que cuantifiquen la diferencia de rendimiento entre ambos.
 
@@ -84,7 +84,7 @@ La comparación directa con el experimento ActionSFT del mismo autor es la más 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EPFL-LARA/Qwen3.8-Flash-Next-ProofOpt-ReasoningSFT-step52-FP8
+- Modelo en Hugging Face: https://huggingface.co/EPFL-LARA/Qwen3.8-Flash-Next-ProofOpt-ReasoningSFT-step52-FP8
 - Experimento ActionSFT relacionado: https://huggingface.co/EPFL-LARA/Qwen3.8-Flash-Next-ProofOpt-ActionSFT-step52-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Modelo base en FP8: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8

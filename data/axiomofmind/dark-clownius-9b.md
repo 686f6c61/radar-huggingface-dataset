@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dark Clownius 9B es un ajuste fino de tipo novedad construido sobre Qwen/Qwen3.5-9B, publicado por el usuario de HuggingFace axiomofmind y atribuido a "A Hole AI". Su proposito declarado no es asistir al usuario, sino responder a cualquier peticion (codigo, consejo, explicaciones) con humor negro, chistes soeces e insultos para publico adulto. No requiere system prompt: la personalidad de "solo chistes" es el comportamiento previsto, aunque el propio autor advierte de que no esta garantizada.
+Dark Clownius 9B es un ajuste fino de tipo novedad construido sobre Qwen/Qwen3.5-9B, publicado por el usuario de Hugging Face axiomofmind y atribuido a "A Hole AI". Su proposito declarado no es asistir al usuario, sino responder a cualquier peticion (codigo, consejo, explicaciones) con humor negro, chistes soeces e insultos para publico adulto. No requiere system prompt: la personalidad de "solo chistes" es el comportamiento previsto, aunque el propio autor advierte de que no esta garantizada.
 
 Tecnicamente es un modelo denso de 9.409.813.744 parametros (aproximadamente 9,41 mil millones) derivado por fine-tuning del modelo base Qwen3.5, con pesos distribuidos en formato Transformers BF16 y en dos cuantizaciones GGUF (BF16 sin cuantizar y Q6_K). El repositorio ocupa 44,1 GB e incluye unicamente pesos de texto: los GGUF no incorporan proyector de vision ni pesos de decodificacion especulativa MTP, pese a que el pipeline etiquetado en el hub sea image-text-to-text por herencia de la arquitectura Qwen3.5.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Dark Clownius 9B | 9,41 mil millones | No disponible (ejemplo con 32768 en llama.cpp) | Sin benchmarks publicados | Derivado sin licencia definida; base Apache 2.0 | safetensors + GGUF (BF16, Q6_K) |
-| Qwen/Qwen3.5-9B (modelo base) | 9B (dato no especificado con precision en la informacion disponible) | No disponible | No disponible en la informacion proporcionada | Apache 2.0 | Repositorio oficial de Qwen en HuggingFace |
+| Qwen/Qwen3.5-9B (modelo base) | 9B (dato no especificado con precision en la informacion disponible) | No disponible | No disponible en la informacion proporcionada | Apache 2.0 | Repositorio oficial de Qwen en Hugging Face |
 | Otros fine-tunes de humor sobre modelos de ~9B | No disponible | No disponible | No disponible | No disponible | No disponible: las busquedas web no devolvieron alternativas comparables |
 
 La unica comparacion documentada con datos es contra el modelo base: comparten arquitectura y escala de parametros, pero Dark Clownius anade un ajuste de comportamiento, publica versiones GGUF que el base puede no ofrecer en el mismo repositorio y pierde (o al menos no conserva en los GGUF) la parte multimodal. No se dispone de informacion sobre otros modelos de la misma categoria de "humor" con la que contrastar cifras.
@@ -90,7 +90,7 @@ La unica comparacion documentada con datos es contra el modelo base: comparten a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axiomofmind/Dark-Clownius-9B
+- Modelo en Hugging Face: https://huggingface.co/axiomofmind/Dark-Clownius-9B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Runtime GGUF recomendado (llama.cpp): https://github.com/ggml-org/llama.cpp
 - Fichero de licencia del upstream incluido en el repositorio: LICENSE-QWEN (dentro del repositorio del modelo)

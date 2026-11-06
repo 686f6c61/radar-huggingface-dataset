@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZwZ2-27B-EXL3-4.0bpw-24GB (esta ficha) | 8.148.522.368 en safetensors | 262.144 | Si | apache-2.0 (declarada por el cuantizador) | HuggingFace, requiere stack EXL3 + vLLM |
-| inclusionAI/ZwZ2-27B (BF16 original) | no disponible | no disponible | Si | no declarada en el repo de pesos | HuggingFace |
-| Qwen3.6-27B (backbone) | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace |
+| ZwZ2-27B-EXL3-4.0bpw-24GB (esta ficha) | 8.148.522.368 en safetensors | 262.144 | Si | apache-2.0 (declarada por el cuantizador) | Hugging Face, requiere stack EXL3 + vLLM |
+| inclusionAI/ZwZ2-27B (BF16 original) | no disponible | no disponible | Si | no declarada en el repo de pesos | Hugging Face |
+| Qwen3.6-27B (backbone) | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con alternativas en la información proporcionada.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparativos con alternativas en la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JRamirez-UAB/ZwZ2-27B-EXL3-4.0bpw-24GB
+- Hugging Face: https://huggingface.co/JRamirez-UAB/ZwZ2-27B-EXL3-4.0bpw-24GB
 - Modelo base: https://huggingface.co/inclusionAI/ZwZ2-27B
 - Repositorio del proyecto: https://github.com/inclusionAI/Zooming-without-Zooming-v2
 - exllamav3: https://github.com/turboderp-org/exllamav3

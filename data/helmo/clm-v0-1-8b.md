@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CLM-v0.1-8B (Contrastive Language Model) es un modelo contrastivo de tipo "System One" desarrollado por el equipo de Contrastive-LM (Jacky Kwok, Hangoo Kang, Tarun Suresh, Jon Saad-Falcon, Marco Pavone, Christopher Ré y Azalia Mirhoseini). No es un modelo generativo: se trata de un verificador y reranker que puntúa estados y acciones, construido a partir de un encoder Qwen3-8B congelado sobre el que se anaden dos cabezas de proyeccion (una cabeza de estado y otra de accion) entrenadas con una perdida InfoNCE bidireccional. La ficha de HuggingFace esta publicada bajo el usuario `helmo` y actua como espejo del checkpoint oficial de la organizacion Contrastive-LM.
+CLM-v0.1-8B (Contrastive Language Model) es un modelo contrastivo de tipo "System One" desarrollado por el equipo de Contrastive-LM (Jacky Kwok, Hangoo Kang, Tarun Suresh, Jon Saad-Falcon, Marco Pavone, Christopher Ré y Azalia Mirhoseini). No es un modelo generativo: se trata de un verificador y reranker que puntúa estados y acciones, construido a partir de un encoder Qwen3-8B congelado sobre el que se anaden dos cabezas de proyeccion (una cabeza de estado y otra de accion) entrenadas con una perdida InfoNCE bidireccional. La ficha de Hugging Face esta publicada bajo el usuario `helmo` y actua como espejo del checkpoint oficial de la organizacion Contrastive-LM.
 
 El problema que resuelve es el coste de latencia en la toma de decisiones de agentes: en lugar de invocar un modelo de lenguaje completo para cada eleccion, CLM codifica el estado y las acciones por separado, lo que permite reutilizar los embeddings de accion en cache. Segun la model card, es capaz de igualar a Jev en tareas de computer-use, gaming y tool-calling en regimen zero-shot con hasta 9 veces menos latencia, y con aproximadamente 1000 candidatos llega a ser 13 veces mas rapido gracias al cacheo de estados y acciones.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 ## Requisitos de hardware
 
 - El componente pesado es el encoder Qwen3-8B servido aparte con vLLM en modo pooling; en precision FP16 requiere del orden de 16 GB de VRAM, mas el espacio de cache KV para la longitud configurada.
-- Las cabezas de CLM son ligeras: el repositorio de HuggingFace ocupa 0,1 GB, por lo que su coste de memoria es marginal frente al encoder.
+- Las cabezas de CLM son ligeras: el repositorio de Hugging Face ocupa 0,1 GB, por lo que su coste de memoria es marginal frente al encoder.
 - GPU recomendadas: no se documentan modelos concretos en la informacion disponible. Por tamano, el encoder de 8B en FP16 encaja en A100 40 GB, H100, L40S y RTX 4090 (24 GB), entre otras.
 - Cabe en GPU de consumo (por ejemplo, RTX 4090 o RTX 3090 de 24 GB) en FP16 para el encoder; con cuantizaciones de menor precision el margen aumenta, aunque no se publican recetas de cuantizacion para este modelo.
 - Opciones de despliegue: `vllm serve Qwen/Qwen3-8B --runner pooling --max-model-len 2048` como servidor de embeddings y `clm-serve` para la API y el playground web en el puerto 8700; el paquete cliente es `contrastive-lm`. No se documentan despliegues con llama.cpp, Ollama o TGI.
@@ -77,9 +77,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CLM-v0.1-8B | Verificador/reranker contrastivo sobre encoder congelado | Encoder de 8B mas cabezas (total no especificado) | 2048 tokens en la configuracion de referencia | DeepSWE 81,6 % y Terminal-Bench 2.1 87,6 % con cabezas ajustadas | Apache 2.0 | HuggingFace (`helmo/CLM-v0.1-8B`) y org Contrastive-LM |
+| CLM-v0.1-8B | Verificador/reranker contrastivo sobre encoder congelado | Encoder de 8B mas cabezas (total no especificado) | 2048 tokens en la configuracion de referencia | DeepSWE 81,6 % y Terminal-Bench 2.1 87,6 % con cabezas ajustadas | Apache 2.0 | Hugging Face (`helmo/CLM-v0.1-8B`) y org Contrastive-LM |
 | Jev | Modelo de decision para agentes (referencia citada por los autores) | No disponible | No disponible | Referencia base: CLM lo iguala en zero-shot y lo supera 4-6 veces en velocidad como verificador | No disponible | No disponible |
-| Encoder Qwen3-8B sin cabezas | Encoder puro para embeddings | 8B | No disponible en esta informacion | No aplica como verificador | Apache 2.0 | HuggingFace (`Qwen/Qwen3-8B`) |
+| Encoder Qwen3-8B sin cabezas | Encoder puro para embeddings | 8B | No disponible en esta informacion | No aplica como verificador | Apache 2.0 | Hugging Face (`Qwen/Qwen3-8B`) |
 | Cross-encoders y reward models genericos de la misma categoria | Verificacion/reranking | Variable | Variable | No disponible | Variable | No disponible |
 
 No se dispone de datos suficientes en la informacion proporcionada para una comparacion cuantitativa con alternativas de terceros distintas de Jev.
@@ -100,7 +100,7 @@ No se dispone de datos suficientes en la informacion proporcionada para una comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/helmo/CLM-v0.1-8B
+- Hugging Face: https://huggingface.co/helmo/CLM-v0.1-8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio de codigo: https://github.com/Contrastive-LM/CLM
 - Guia de ajuste fino: https://github.com/Contrastive-LM/CLM/blob/main/docs/FINETUNING.md

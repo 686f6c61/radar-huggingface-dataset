@@ -73,7 +73,7 @@ No hay datos de rendimiento comparativo entre estas versiones en la informacion 
 
 ## Enlaces
 
-- [HuggingFace: toeb34234234/SmolLM2-135M-Q2_K-GGUF](https://huggingface.co/toeb34234234/SmolLM2-135M-Q2_K-GGUF)
+- [Hugging Face: toeb34234234/SmolLM2-135M-Q2_K-GGUF](https://huggingface.co/toeb34234234/SmolLM2-135M-Q2_K-GGUF)
 - [Modelo base: HuggingFaceTB/SmolLM2-135M](https://huggingface.co/HuggingFaceTB/SmolLM2-135M)
 - [Guia de cuantizacion SmolLM2](https://markaicode.com/smollm2-quantization-ultra-low-memory-deployment/)
 - [SmolLM2 en ModelScope](https://www.modelscope.cn/models/HuggingFaceTB/SmolLM2-135M)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PP es un repositorio publicado en HuggingFace por el usuario c0mbatduckzz que no contiene un modelo de aprendizaje automatico, sino un documento de estrategia en formato PDF de 106 paginas titulado "Kardashev Scaling: Global Implementation Grand Strategy". El autor del documento es Tom Klootwijk, que se atribuye la propiedad personal y exclusiva de los materiales. El repositorio se presenta bajo una declaracion de propiedad intelectual restrictiva ("proprietary, all rights reserved, no license granted") y no incluye pesos neuronales, configuracion de inferencia ni runtime.
+PP es un repositorio publicado en Hugging Face por el usuario c0mbatduckzz que no contiene un modelo de aprendizaje automatico, sino un documento de estrategia en formato PDF de 106 paginas titulado "Kardashev Scaling: Global Implementation Grand Strategy". El autor del documento es Tom Klootwijk, que se atribuye la propiedad personal y exclusiva de los materiales. El repositorio se presenta bajo una declaracion de propiedad intelectual restrictiva ("proprietary, all rights reserved, no license granted") y no incluye pesos neuronales, configuracion de inferencia ni runtime.
 
 El contenido del documento propone una hoja de ruta especulativa para escalar capacidades industriales, energeticas y de infraestructura desde el ambito planetario hasta el estelar, apoyandose en una supuesta suite de modelos del autor y en el modelo XD-TAU AURUMTOMATON v1.5.1. La propia model card aclara que el documento trata la finalizacion de dichos modelos como una premisa de planificacion aportada por el autor, que las coaliciones institucionales son propuestas y que los calculos de ingenieria y crecimiento son escenarios bajo supuestos declarados.
 
@@ -39,7 +39,7 @@ El documento hace referencia a una "suite de modelos" del autor y a XD-TAU AURUM
 
 - Lectura y analisis del documento de estrategia: un investigador puede descargar el PDF y evaluar criticamente las hipotesis de escalado tipo Kardashev descritas, teniendo en cuenta que el propio autor las califica como escenarios bajo supuestos.
 - Auditoria de integridad documental: el repositorio incluye SHA256SUMS y credenciales de contenido embebidas en el PDF, lo que permite verificar que el documento no ha sido alterado.
-- Estudio de practicas de publicacion y licenciamiento: el repositorio es un ejemplo de declaracion restrictiva de propiedad intelectual en HuggingFace, util para analizar como se comunican terminos de uso en plataformas abiertas.
+- Estudio de practicas de publicacion y licenciamiento: el repositorio es un ejemplo de declaracion restrictiva de propiedad intelectual en Hugging Face, util para analizar como se comunican terminos de uso en plataformas abiertas.
 - Referencia para discusion sobre gobernanza de modelos: los dossiers institucionales y las coaliciones propuestas pueden servir como material de debate, siempre que se trate como propuesta no validada.
 - Analisis de formatos de preservacion: el uso de Content Credentials y checksums puede interesar a quienes disenan pipelines de preservacion de artefactos.
 - No es adecuado para ninguna tarea de inferencia, generacion, clasificacion ni procesamiento de lenguaje, al carecer de modelo ejecutable.
@@ -74,7 +74,7 @@ No disponible. No existe una categoria de modelos comparable, ya que el reposito
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/c0mbatduckzz/PP
+- Repositorio en Hugging Face: https://huggingface.co/c0mbatduckzz/PP
 - PDF de la estrategia: https://huggingface.co/c0mbatduckzz/PP/resolve/main/Tom_Klootwijk_Kardashev_Global_Implementation_Grand_Strategy.pdf
 - Aviso de propiedad y reserva de derechos: https://huggingface.co/c0mbatduckzz/PP/blob/main/PROPRIETARY_NOTICE.txt
 - Repositorio XD-TAU AURUMTOMATON v1.5.1: https://huggingface.co/c0mbatduckzz/XD-TAU_AURUMTOMATON_v1.5.1

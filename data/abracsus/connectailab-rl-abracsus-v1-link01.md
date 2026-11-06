@@ -71,8 +71,8 @@ No se han identificado en la información proporcionada modelos comparables de l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| connectailab-rl-abracsus-v1-link01 | Adaptador LoRA sobre base de 0,8B | No disponible | Apache 2.0 | HuggingFace (18 descargas) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | No disponible en la informacion | HuggingFace |
+| connectailab-rl-abracsus-v1-link01 | Adaptador LoRA sobre base de 0,8B | No disponible | Apache 2.0 | Hugging Face (18 descargas) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | No disponible en la informacion | Hugging Face |
 | Alternativas de decision robotica con LLM | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se han identificado en la información proporcionada modelos comparables de l
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/abracsus/connectailab-rl-abracsus-v1-link01)
+- [Modelo en Hugging Face](https://huggingface.co/abracsus/connectailab-rl-abracsus-v1-link01)
 - [Repositorio CONNECT TYCOON (código de entrenamiento)](https://github.com/wonseokjung/connect-tycoon)
 - [Notebook de Colab para entrenamiento](https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb)
 - [Entorno web de aprendizaje del robot](https://www.ezerai.xyz/robot-lab/world/)

@@ -92,8 +92,8 @@ Comparaciones declaradas en la model card:
 
 | Modelo | Parámetros | Contexto / entrada | WER agregado en llamadas | WER en dominio retenido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ozonetg/parakeet-0.6b-caller-asr-basic | 618,3 M | segmentos de 0,3 a 20 s, 8 kHz remuestreado a 16 kHz | 9,97% | 1,96% | NVIDIA Open Model License | HuggingFace, formato .nemo |
-| nvidia/parakeet-unified-en-0.6b (base) | 618 M | offline + streaming, 16 kHz | 11,80% | 4,73% | NVIDIA Open Model License | HuggingFace |
+| ozonetg/parakeet-0.6b-caller-asr-basic | 618,3 M | segmentos de 0,3 a 20 s, 8 kHz remuestreado a 16 kHz | 9,97% | 1,96% | NVIDIA Open Model License | Hugging Face, formato .nemo |
+| nvidia/parakeet-unified-en-0.6b (base) | 618 M | offline + streaming, 16 kHz | 11,80% | 4,73% | NVIDIA Open Model License | Hugging Face |
 | Variante 110m basic de la misma familia (sistema previo) | ~110 M | 8 kHz telefónico | 14,00% | 8,68% | no disponible | no disponible |
 
 No se dispone de datos comparativos frente a alternativas de otros proveedores (por ejemplo Whisper o Conformer de otras familias) en la información proporcionada.
@@ -115,7 +115,7 @@ No se dispone de datos comparativos frente a alternativas de otros proveedores (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ozonetg/parakeet-0.6b-caller-asr-basic
+- Modelo en Hugging Face: https://huggingface.co/ozonetg/parakeet-0.6b-caller-asr-basic
 - Modelo base: https://huggingface.co/nvidia/parakeet-unified-en-0.6b
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
 - Framework NeMo: https://github.com/NVIDIA/NeMo

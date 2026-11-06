@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kimjay1h12/kimjay-fast-speed es un repositorio de modelo publicado en HuggingFace por el usuario Kimjay1h12. La informacion disponible se limita a los metadatos del repositorio: licencia openrail, region us y fecha de creacion y ultima actualizacion identicas (19 de septiembre de 2026). No se ha publicado model card con contenido tecnico, ni documentacion complementaria, ni resultados de evaluacion.
+Kimjay1h12/kimjay-fast-speed es un repositorio de modelo publicado en Hugging Face por el usuario Kimjay1h12. La informacion disponible se limita a los metadatos del repositorio: licencia openrail, region us y fecha de creacion y ultima actualizacion identicas (19 de septiembre de 2026). No se ha publicado model card con contenido tecnico, ni documentacion complementaria, ni resultados de evaluacion.
 
 El repositorio no declara pipeline de inferencia, idiomas soportados, arquitectura, numero de parametros ni longitud de contexto. La model card contiene unicamente la linea de licencia, sin descripcion del modelo, del proceso de entrenamiento ni de los datos utilizados. Los resultados de busqueda web obtenidos no guardan relacion con el modelo: corresponden a foros y manuales sobre llaves keyless de vehiculos Dacia.
 
@@ -86,7 +86,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Kimjay1h12/kimjay-fast-speed | no disponible | no disponible | openrail | HuggingFace (0 descargas) | no disponible |
+| Kimjay1h12/kimjay-fast-speed | no disponible | no disponible | openrail | Hugging Face (0 descargas) | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kimjay1h12/kimjay-fast-speed
+- Hugging Face: https://huggingface.co/Kimjay1h12/kimjay-fast-speed
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion adicional: no disponible

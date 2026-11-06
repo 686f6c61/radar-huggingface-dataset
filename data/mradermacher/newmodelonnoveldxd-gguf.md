@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NEWMODELOnNovelDxd-GGUF es la version cuantizada en formato GGUF del modelo Tokerss/NEWMODELOnNovelDxd, publicada por el usuario mradermacher, conocido en HuggingFace por distribuir cuantizaciones estaticas de modelos de terceros. El modelo base es un ajuste fino (SFT) construido sobre la familia Mistral, segun indican las etiquetas `mistral`, `unsloth` y `trl` presentes en la model card, y cuenta con 12.247.782.400 parametros totales (aproximadamente 12,2 mil millones), lo que lo situa en la categoria de modelos de tamano medio.
+NEWMODELOnNovelDxd-GGUF es la version cuantizada en formato GGUF del modelo Tokerss/NEWMODELOnNovelDxd, publicada por el usuario mradermacher, conocido en Hugging Face por distribuir cuantizaciones estaticas de modelos de terceros. El modelo base es un ajuste fino (SFT) construido sobre la familia Mistral, segun indican las etiquetas `mistral`, `unsloth` y `trl` presentes en la model card, y cuenta con 12.247.782.400 parametros totales (aproximadamente 12,2 mil millones), lo que lo situa en la categoria de modelos de tamano medio.
 
 El repositorio no incluye informacion sobre el proceso de entrenamiento, la composicion del dataset, la longitud de contexto ni los resultados de benchmarks. La model card se limita a documentar los ficheros de cuantizacion disponibles y a remitir a la documentacion generica de mradermacher. El modelo esta etiquetado unicamente para ingles (`en`) y distribuido bajo licencia Apache 2.0.
 

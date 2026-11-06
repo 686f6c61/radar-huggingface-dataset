@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DevGuard-Qwen-1.5B-Security | ~1.5B (base) + adaptador LoRA | No disponible en la informacion facilitada | Auditoria de seguridad de codigo | Apache 2.0 | HuggingFace (0 descargas registradas) |
-| Qwen/Qwen2.5-Coder-1.5B-Instruct (modelo base) | ~1.5B | No disponible en la informacion facilitada | Generacion de codigo e instrucciones general | Apache 2.0 | HuggingFace |
+| DevGuard-Qwen-1.5B-Security | ~1.5B (base) + adaptador LoRA | No disponible en la informacion facilitada | Auditoria de seguridad de codigo | Apache 2.0 | Hugging Face (0 descargas registradas) |
+| Qwen/Qwen2.5-Coder-1.5B-Instruct (modelo base) | ~1.5B | No disponible en la informacion facilitada | Generacion de codigo e instrucciones general | Apache 2.0 | Hugging Face |
 | Otras alternativas de auditoria de codigo de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con modelos equivalentes.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nehalkamal7/devguard-qwen-1.5b-security
+- Modelo en Hugging Face: https://huggingface.co/nehalkamal7/devguard-qwen-1.5b-security
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Space de la plataforma: https://huggingface.co/spaces/nehalkamal7/devguard-ai
 - Repositorio en GitHub: https://github.com/Nehalkamal7/DevGuard

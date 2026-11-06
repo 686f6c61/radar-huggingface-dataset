@@ -100,7 +100,7 @@ La comparativa se limita a las variantes documentadas en la informacion disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaban-baku/Qwen3.8-Flash-Next-IQ3_S-384Exp-GGUF
+- Modelo en Hugging Face: https://huggingface.co/kaban-baku/Qwen3.8-Flash-Next-IQ3_S-384Exp-GGUF
 - Repositorio GitHub del autor (herramientas, lista de expertos, scripts de evaluacion y README en japones): https://github.com/kaban-baku/Qwen3.8-Flash-Next-IQ3_S-384Exp
 - Cuantizacion base de ISTA-DASLab: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

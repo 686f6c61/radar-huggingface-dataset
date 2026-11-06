@@ -2,7 +2,7 @@
 
 ## Resumen
 
-trocr-small-BY5-bridgeinit-random es un modelo de reconocimiento optico de caracteres (OCR) basado en la arquitectura TrOCR (vision-encoder-decoder) y publicado por el usuario cyttic en HuggingFace. Se trata de un ajuste fino del checkpoint cyttic/trocr-hebrew-small-untrained, un modelo base sin entrenar cuyo nombre sugiere una orientacion al hebreo, aunque la ficha no declara idiomas soportados. El repositorio tiene 235.097.600 parametros (dato real leido de los pesos safetensors) y un tamano de 0,9 GB, lo que corresponde a pesos en FP32.
+trocr-small-BY5-bridgeinit-random es un modelo de reconocimiento optico de caracteres (OCR) basado en la arquitectura TrOCR (vision-encoder-decoder) y publicado por el usuario cyttic en Hugging Face. Se trata de un ajuste fino del checkpoint cyttic/trocr-hebrew-small-untrained, un modelo base sin entrenar cuyo nombre sugiere una orientacion al hebreo, aunque la ficha no declara idiomas soportados. El repositorio tiene 235.097.600 parametros (dato real leido de los pesos safetensors) y un tamano de 0,9 GB, lo que corresponde a pesos en FP32.
 
 El modelo pertenece a la familia TrOCR, que combina un encoder de vision tipo transformer con un decoder de lenguaje autorregresivo para transcribir texto presente en imagenes. Sobre el papel, esto lo hace util para digitalizacion de documentos, lineas de texto manuscrito o impreso y extraccion de texto en pipelines de vision. Sin embargo, los resultados declarados por el propio autor en la model card son muy pobres: CER de 0,7808 y WER de 1,2129 sobre el conjunto de evaluacion, con una perdida de validacion de 6,0933 tras una sola epoca. Un WER superior a 1,0 implica que el modelo genera mas errores (inserciones, sustituciones y borrados) que palabras correctas hay en la referencia.
 
@@ -22,7 +22,7 @@ Por tanto, se trata de un artefacto de investigacion o de un experimento de inic
 | Formato de pesos | safetensors (libreria transformers) |
 | Pipeline | image-text-to-text |
 | Modelo base | cyttic/trocr-hebrew-small-untrained (ajuste fino) |
-| Fecha de publicacion | 2026-09-19 (segun HuggingFace) |
+| Fecha de publicacion | 2026-09-19 (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Etiquetas destacadas | endpoints_compatible, generated_from_trainer |
 
@@ -48,7 +48,7 @@ El entrenamiento se realizo con el Trainer de transformers durante una unica epo
 - Punto de partida para un ajuste fino adicional: al ser un modelo de 235 M de parametros y 0,9 GB, puede recargarse en una unica GPU consumer para continuar el entrenamiento con un dataset documentado y un numero de epocas mayor. El modelo actual no es util por si mismo, pero puede servir de base experimental.
 - Analisis de sesgos y errores en OCR multilingue: sus salidas degradadas permiten estudiar como falla un decoder cuando la perdida de validacion se estanca alrededor de 6,0 y la distribucion de salida se aproxima a la uniforme.
 - Reproducibilidad de pipelines de entrenamiento: las hiperparametros declarados (learning rate 5e-05, warmup 1550, batch efectivo 16, AMP nativo) sirven como referencia para replicar el experimento con transformers 5.15.0 y PyTorch 2.10.0.
-- Pruebas de integracion en endpoints de HuggingFace: el tag endpoints_compatible permite verificar el despliegue tecnico del pipeline image-text-to-text, aunque la calidad de las respuestas no sea aprovechable.
+- Pruebas de integracion en endpoints de Hugging Face: el tag endpoints_compatible permite verificar el despliegue tecnico del pipeline image-text-to-text, aunque la calidad de las respuestas no sea aprovechable.
 - Docencia y material didactico: ilustra de forma tangible que metrica (CER, WER) revela un fallo de convergencia por mucho que el modelo cargue y genere texto.
 - No se recomienda su uso en digitalizacion de documentos, facturacion, archivo historico, lectura de formularios ni ninguna tarea de produccion: la tasa de error declarada lo impide.
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks comparativos (MMLU, HumanEval, GSM8
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente. En el extremo alto, A100, H100, A10 o L40S; en el extremo de consumo, RTX 3060 12 GB, RTX 4060 Ti, RTX 4070 o RTX 4090 van sobradamente.
 - Cabe en GPU consumer: si, sin ninguna dificultad, incluidas GPU integradas y equipos con 8 GB de RAM compartida.
 - Inferencia en CPU: viable para pruebas puntuales dado el tamano del modelo; el cuello de botella sera la codificacion de la imagen, no los parametros.
-- Opciones de despliegue: transformers (VisionEncoderDecoderModel con TrOCRProcessor), ONNX Runtime para exportacion manual, HuggingFace Inference Endpoints (el repositorio incluye el tag endpoints_compatible) y GPU con PyTorch. No hay soporte nativo en vLLM, TGI, llama.cpp ni Ollama para este tipo de modelo encoder-decoder de vision, y no se publican conversiones a GGUF.
+- Opciones de despliegue: transformers (VisionEncoderDecoderModel con TrOCRProcessor), ONNX Runtime para exportacion manual, Hugging Face Inference Endpoints (el repositorio incluye el tag endpoints_compatible) y GPU con PyTorch. No hay soporte nativo en vLLM, TGI, llama.cpp ni Ollama para este tipo de modelo encoder-decoder de vision, y no se publican conversiones a GGUF.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones de latencia, tokens por segundo ni imagenes por segundo.
 
 ## Comparativa con modelos similares
@@ -108,7 +108,7 @@ A diferencia de las variantes de Microsoft, este checkpoint no declara licencia,
 - Sesgos conocidos: no disponible. No se documenta la composicion del dataset, la procedencia de las imagenes ni la distribucion de escritores, idiomas o tipografias, por lo que no es posible auditar sesgos.
 - Riesgo de alucinacion: alto en el sentido de que el decoder puede generar secuencias de tokens sin relacion con el contenido de la imagen, dado que su salida se aproxima a una distribucion poco condicionada.
 - Limitaciones de contexto e idioma: se desconoce la longitud maxima de secuencia soportada y la cobertura linguistica real. El nombre del modelo base sugiere hebreo, pero no hay confirmacion ni metricas por idioma.
-- Restricciones de licencia: la licencia no esta declarada en HuggingFace, lo que impide determinar si el uso comercial esta permitido. No debe utilizarse en produccion sin aclarar antes este punto con el autor.
+- Restricciones de licencia: la licencia no esta declarada en Hugging Face, lo que impide determinar si el uso comercial esta permitido. No debe utilizarse en produccion sin aclarar antes este punto con el autor.
 - Trazabilidad limitada: no se identifica el dataset de entrenamiento ("an unknown dataset"), no hay model-index con resultados y no se documenta la procedencia del modelo base "trocr-hebrew-small-untrained".
 - Advertencia de despliegue: el tag endpoints_compatible indica compatibilidad tecnica con Inference Endpoints, no calidad de salida. Desplegarlo como servicio de OCR produciria transcripciones incorrectas de forma sistematica.
 - Sin variantes cuantizadas: no existen pesos GGUF, AWQ, GPTQ ni ONNX publicados, lo que limita las opciones de optimizacion de despliegue.
@@ -116,7 +116,7 @@ A diferencia de las variantes de Microsoft, este checkpoint no declara licencia,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/trocr-small-BY5-bridgeinit-random
+- Modelo en Hugging Face: https://huggingface.co/cyttic/trocr-small-BY5-bridgeinit-random
 - Modelo base declarado: https://huggingface.co/cyttic/trocr-hebrew-small-untrained
 - Paper de la arquitectura TrOCR ("TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models"): https://arxiv.org/abs/2109.10282
 - Repositorio oficial de la familia unilm (Microsoft), donde se publica TrOCR: https://github.com/microsoft/unilm/tree/master/trocr

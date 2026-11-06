@@ -76,8 +76,8 @@ Los datos de precision no estan disponibles para este modelo concreto.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.5-ImageNet-PyTorch-224-fp32-onnx)
+- [Modelo en Hugging Face](https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.5-ImageNet-PyTorch-224-fp32-onnx)
 - [Version INT8 del mismo modelo](https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.5-ImageNet-PyTorch-224-int8-onnx)
 - [Repositorio STM32 model zoo en GitHub](https://github.com/STMicroelectronics/stm32ai-modelzoo/tree/main/image_classification/mobilenetv2)
-- [Modelo base en HuggingFace de STMicroelectronics](https://huggingface.co/STMicroelectronics/mobilenetv2)
+- [Modelo base en Hugging Face de STMicroelectronics](https://huggingface.co/STMicroelectronics/mobilenetv2)
 - [STM32 AI model zoo oficial](https://stm32ai.st.com/model-zoo/)

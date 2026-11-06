@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-oQ4e-mix5-HIP es una cuantizacion de 4/5 bits del modelo Qwen/Qwen3.8-Flash-Next, publicada por el usuario unigilby en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un checkpoint derivado que aplica la receta de cuantizacion oQe (oQ4e-mix5) sobre el modelo base de Qwen, con el objetivo de reducir el peso en disco y memoria para su despliegue en hardware con ancho de banda limitado, en particular iGPUs AMD.
+Qwen3.8-Flash-Next-oQ4e-mix5-HIP es una cuantizacion de 4/5 bits del modelo Qwen/Qwen3.8-Flash-Next, publicada por el usuario unigilby en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un checkpoint derivado que aplica la receta de cuantizacion oQe (oQ4e-mix5) sobre el modelo base de Qwen, con el objetivo de reducir el peso en disco y memoria para su despliegue en hardware con ancho de banda limitado, en particular iGPUs AMD.
 
 El checkpoint pesa aproximadamente 106 GB e incluye las tablas n-gram y la cabeza MTP (multi-token prediction). Su interes radica en que mantiene una calidad cercana al modelo en bf16 mientras acelera la decodificacion en torno a un 22% en tareas de codigo respecto a la variante oQ4e-HIP, gracias a que los tensores densos (mixers) se almacenan a 5 bits en lugar de 8. Esta pensado explicitamente como una opcion orientada a velocidad, no como checkpoint por defecto.
 
@@ -87,10 +87,10 @@ Velocidad en iGPU AMD Ryzen AI MAX+ 395, Radeon 8060S gfx1151, 128 GB de memoria
 
 | Modelo | Parametros | Contexto | GSM8K | HumanEval | MMLU-Pro | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| oQ4e-mix5-HIP (este) | 179.999.981.459 | 131.072 | 94,3% | 93,3% | 67,6% | Qwen community 1.0 | HuggingFace, 113 descargas |
-| oQ4e-HIP (misma familia, mixers a 8 bits) | 179.999.981.459 | 131.072 | 94,7% | 93,9% | 69,1% | Qwen community 1.0 | HuggingFace |
-| TensorFold/Qwen3.8-Flash-Next-MLX-4bit-MTP (4-bit uniforme) | no disponible | no disponible | 93,0% | 93,9% | 55,9% | no disponible | HuggingFace |
-| Qwen/Qwen3.8-Flash-Next (bf16) | no disponible | no disponible | no disponible | no disponible | no disponible | Qwen community 1.0 | HuggingFace |
+| oQ4e-mix5-HIP (este) | 179.999.981.459 | 131.072 | 94,3% | 93,3% | 67,6% | Qwen community 1.0 | Hugging Face, 113 descargas |
+| oQ4e-HIP (misma familia, mixers a 8 bits) | 179.999.981.459 | 131.072 | 94,7% | 93,9% | 69,1% | Qwen community 1.0 | Hugging Face |
+| TensorFold/Qwen3.8-Flash-Next-MLX-4bit-MTP (4-bit uniforme) | no disponible | no disponible | 93,0% | 93,9% | 55,9% | no disponible | Hugging Face |
+| Qwen/Qwen3.8-Flash-Next (bf16) | no disponible | no disponible | no disponible | no disponible | no disponible | Qwen community 1.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -105,7 +105,7 @@ Velocidad en iGPU AMD Ryzen AI MAX+ 395, Radeon 8060S gfx1151, 128 GB de memoria
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unigilby/Qwen3.8-Flash-Next-oQ4e-mix5-HIP
+- Hugging Face: https://huggingface.co/unigilby/Qwen3.8-Flash-Next-oQ4e-mix5-HIP
 - Variante oQ4e-HIP: https://huggingface.co/unigilby/Qwen3.8-Flash-Next-oQ4e-HIP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Checkpoint 4-bit uniforme de TensorFold: https://huggingface.co/TensorFold/Qwen3.8-Flash-Next-MLX-4bit-MTP

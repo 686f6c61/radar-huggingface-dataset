@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TaQuants/Tema_Q-X8-Thinking-TaQuants-GGUF
+- Repositorio Hugging Face: https://huggingface.co/TaQuants/Tema_Q-X8-Thinking-TaQuants-GGUF
 - Modelo base: https://huggingface.co/temaq-org/Tema_Q-X8-Thinking
 - Repositorio GitHub de TaQuants: https://github.com/ek15072809/TaQuants
 - Informe técnico de TaQuants: https://github.com/ek15072809/TaQuants/blob/main/docs/TaQuants_Technical_Report.pdf

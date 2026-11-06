@@ -78,7 +78,7 @@ No disponible. Este repositorio no es un modelo y no se han identificado en la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dmsmirnov/efficient-attention-review79
+- Repositorio en Hugging Face: https://huggingface.co/dmsmirnov/efficient-attention-review79
 - Artefacto principal dentro del repositorio: `paper_notes.md`
 - Documentación del repositorio: `README.md`
 - Los resultados de búsqueda web proporcionados (msn.com, zone.msn.com, answers.msn.com) no guardan relación con este repositorio y no aportan enlaces técnicos utilizables.

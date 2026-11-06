@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anushkrishna/falcon-ocr-models
+- Repositorio en Hugging Face: https://huggingface.co/anushkrishna/falcon-ocr-models
 - Modelo base detector: https://huggingface.co/PaddlePaddle/PP-OCRv6_small_det_onnx
 - Modelo base reconocedor inglés: https://huggingface.co/PaddlePaddle/en_PP-OCRv5_mobile_rec_onnx
 - Modelo base reconocedor árabe: https://huggingface.co/PaddlePaddle/arabic_PP-OCRv5_mobile_rec_onnx

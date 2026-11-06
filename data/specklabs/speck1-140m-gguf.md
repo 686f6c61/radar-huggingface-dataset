@@ -32,7 +32,7 @@ No se ha publicado información sobre el proceso de entrenamiento: ni el número
 - Generación de texto: el modelo es capaz de producir texto de forma autónoma, como se muestra en el ejemplo de uso (`llama-completion`).
 - No se documentan capacidades específicas como razonamiento complejo, generación de código, matemáticas o visión.
 - No se menciona soporte para tool calling, function calling ni agentes multi-paso.
-- No se especifica el soporte multilingüe; el campo de idiomas en HuggingFace está marcado como "no disponible".
+- No se especifica el soporte multilingüe; el campo de idiomas en Hugging Face está marcado como "no disponible".
 - No se indican capacidades especiales como modo de pensamiento, visión o audio.
 
 ## Casos de uso

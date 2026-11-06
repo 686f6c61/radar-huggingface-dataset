@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR DART (este checkpoint) | no disponible | no disponible | `press_stapler` (una tarea) | Apache 2.0 | HuggingFace, 0 descargas |
+| π0.5 SNUMPR DART (este checkpoint) | no disponible | no disponible | `press_stapler` (una tarea) | Apache 2.0 | Hugging Face, 0 descargas |
 | π0.5 base (referencia) | no disponible | no disponible | VLA generalista | no disponible en esta ficha | no disponible |
 | `snumpr-iclr27-v1/9999` (base del merge) | no disponible | no disponible | VLA SNUMPR inicial | no disponible en esta ficha | referenciado en la model card |
-| Otros checkpoints DART one-shot del mismo autor | no disponible | no disponible | tareas específicas | Apache 2.0 (presumible) | HuggingFace |
+| Otros checkpoints DART one-shot del mismo autor | no disponible | no disponible | tareas específicas | Apache 2.0 (presumible) | Hugging Face |
 
 No se dispone de datos de rendimiento, parámetros ni contexto de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no es posible.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento, parámetros ni contexto de los modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-large-view-yaw30-alpha0p8-press-stapler-20261030
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-large-view-yaw30-alpha0p8-press-stapler-20261030
 - Repositorio DART referenciado: `snumprlab/dart`, commit `1b23c4f42f73168c78a20b353453145e74f64711`
 - Código de adaptación referenciado: `Donghyun1228/vla_adaptation`, commit `248126e`
 - Modelo base referenciado: `snumpr-iclr27-v1/9999`

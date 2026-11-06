@@ -94,7 +94,7 @@ Frente al base, este checkpoint solo se diferencia por el ajuste RL sobre una ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CDBiddulph/qwen3-30b-a3b-psychosis-rl
+- Modelo en Hugging Face: https://huggingface.co/CDBiddulph/qwen3-30b-a3b-psychosis-rl
 - Modelo base Qwen3-30B-A3B: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Tinker (Thinking Machines): https://thinkingmachines.ai/tinker
 - tinker-cookbook (repositorio): https://github.com/thinkingmachines-lab/tinker-cookbook

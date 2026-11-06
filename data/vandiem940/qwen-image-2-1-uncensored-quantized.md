@@ -18,7 +18,7 @@ La relevancia práctica de esta ficha radica en que permite ejecutar un modelo d
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | BF16, FP8, INT8 ConvRot, NVFP4, MLX 4-bit, MLX 6-bit, MLX 8-bit, GGUF Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0 |
 | Idiomas soportados | No disponible |
-| Licencia | qwen-research (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-research (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF, safetensors (FP8, INT8, NVFP4, MLX), más text encoder y VAE en safetensors |
 
 ## Arquitectura y entrenamiento
@@ -65,17 +65,17 @@ La model card incluye una imagen de referencia (`assets/Qwen-Image-2.1-Benchmark
 
 | Modelo | Parametros (transformer) | Contexto / resolucion | Formatos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-Uncensored-Quantized (esta ficha) | 7,12 B | No disponible | GGUF, FP8, INT8, NVFP4, MLX, BF16 | qwen-research | HuggingFace, 94 descargas |
-| Qwen/Qwen-Image-2.1 (base) | 7,12 B | No disponible | Safetensors BF16 | qwen-research | HuggingFace (oficial) |
-| FLUX.1-dev (referencia de la categoría) | 12 B | No disponible | Safetensors, GGUF (comunidad) | non-commercial | HuggingFace, muy extendido |
-| Stable Diffusion 3.5 Large | 8 B | No disponible | Safetensors, GGUF (comunidad) | stability-ai community | HuggingFace |
+| Qwen-Image-2.1-Uncensored-Quantized (esta ficha) | 7,12 B | No disponible | GGUF, FP8, INT8, NVFP4, MLX, BF16 | qwen-research | Hugging Face, 94 descargas |
+| Qwen/Qwen-Image-2.1 (base) | 7,12 B | No disponible | Safetensors BF16 | qwen-research | Hugging Face (oficial) |
+| FLUX.1-dev (referencia de la categoría) | 12 B | No disponible | Safetensors, GGUF (comunidad) | non-commercial | Hugging Face, muy extendido |
+| Stable Diffusion 3.5 Large | 8 B | No disponible | Safetensors, GGUF (comunidad) | stability-ai community | Hugging Face |
 
 La comparativa con FLUX.1-dev y SD 3.5 Large se ofrece como referencia de categoría (modelos texto-a-imagen de 7-12 B parámetros con soporte de cuantización comunitaria); no se dispone de datos de rendimiento comparativo en la información proporcionada para establecer una jerarquía objetiva.
 
 ## Limitaciones y advertencias
 
 - La variante "Uncensored" elimina o atenúa los filtros de seguridad del modelo original; su uso para generar contenido dañino, ilegal o que vulnere derechos de terceros es responsabilidad exclusiva del usuario y puede contravenir la licencia qwen-research.
-- La licencia qwen-research impone restricciones de uso; conviene revisar los términos exactos antes de cualquier despliegue comercial, ya que "other" en HuggingFace no equivale a permisividad.
+- La licencia qwen-research impone restricciones de uso; conviene revisar los términos exactos antes de cualquier despliegue comercial, ya que "other" en Hugging Face no equivale a permisividad.
 - Riesgo de alucinación visual: como todo modelo de difusión, puede generar anatomías incorrectas, texto ilegible en la imagen, artefactos en manos y rostros, y desviaciones del prompt.
 - El proceso de cuantización (especialmente Q4_0 y MLX 4-bit) puede degradar la fidelidad respecto a BF16; el autor recomienda Q4_K_M como equilibrio, pero no aporta métricas objetivas de la pérdida de calidad.
 - No se documentan los idiomas soportados por el text encoder en esta ficha; el rendimiento con prompts en castellano no está verificado.
@@ -86,7 +86,7 @@ La comparativa con FLUX.1-dev y SD 3.5 Large se ofrece como referencia de catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vandiem940/Qwen-Image-2.1-Uncensored-Quantized
+- Repositorio Hugging Face: https://huggingface.co/vandiem940/Qwen-Image-2.1-Uncensored-Quantized
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI-GGUF (fork de leejet): https://github.com/leejet/ComfyUI-GGUF

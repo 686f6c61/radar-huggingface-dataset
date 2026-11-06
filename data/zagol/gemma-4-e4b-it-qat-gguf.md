@@ -83,22 +83,22 @@ Comparativa con modelos de otros desarrolladores: no disponible.
 - Los datos de benchmarks no se han publicado en la informacion disponible, por lo que no es posible verificar el rendimiento frente a alternativas.
 - Riesgo de alucinacion inherente a los modelos generativos, especialmente en tareas de razonamiento y resumen de documentos.
 - La model card indica un contexto de 128K para los modelos pequenos y de hasta 256K en la familia; el dato exacto para E4B aparece truncado en el material proporcionado, por lo que conviene confirmarlo en la documentacion oficial.
-- Existe una posible discrepancia de licencia: las etiquetas de HuggingFace y la model card indican Apache 2.0, pero el campo license_link apunta al documento de licencia de Gemma 4 en ai.google.dev. Es recomendable revisar los terminos de la licencia de Gemma 4 antes de un uso comercial.
+- Existe una posible discrepancia de licencia: las etiquetas de Hugging Face y la model card indican Apache 2.0, pero el campo license_link apunta al documento de licencia de Gemma 4 en ai.google.dev. Es recomendable revisar los terminos de la licencia de Gemma 4 antes de un uso comercial.
 - "Parametros activos": no disponible. Si la variante E4B resultara ser de tipo MoE, no se especifica cuantos parametros se activan por token.
 - Este repositorio lo publica el usuario Zagol a partir del modelo base google/gemma-4-E4B-it-qat-q4_0-unquantized; no es un repositorio oficial de Google. El repositorio muestra 0 descargas y 0 "likes", por lo que su adopcion y validacion por la comunidad es limitada.
 - La fecha de creacion indicada (2026-10-07) y los resultados de la busqueda web no aportan informacion tecnica relevante sobre el modelo; los enlaces devueltos por la busqueda tratan sobre ChatGPT y no son aplicables.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zagol/gemma-4-E4B-it-qat-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Zagol/gemma-4-E4B-it-qat-GGUF
 - Guia de Gemma 4 QAT de Unsloth: https://unsloth.ai/docs/models/gemma-4/qat
 - Guia de Unsloth Dynamic 2.0 GGUFs: https://unsloth.ai/docs/basics/unsloth-dynamic-v2.0-gguf
 - Repositorio de Unsloth en GitHub: https://github.com/unslothai/unsloth/
 - Guia de Gemma 4 en Unsloth: https://unsloth.ai/docs/models/gemma-4
 - Guia de MTP en Unsloth: https://unsloth.ai/docs/models/mtp
 - Guia de Unsloth Studio: https://unsloth.ai/docs/new/studio
-- Coleccion de Gemma 4 QAT en HuggingFace: https://huggingface.co/collections/unsloth/gemma-4-qat
-- Coleccion de Gemma 4 de Google en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion de Gemma 4 QAT en Hugging Face: https://huggingface.co/collections/unsloth/gemma-4-qat
+- Coleccion de Gemma 4 de Google en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento de Gemma 4: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/
 - Documentacion de Gemma: https://ai.google.dev/gemma/docs/core

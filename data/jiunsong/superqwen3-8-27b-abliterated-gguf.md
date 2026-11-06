@@ -94,10 +94,10 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- [HuggingFace - SuperQwen3.8-27b-abliterated-GGUF](https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated-GGUF)
-- [HuggingFace - SuperQwen3.8-27b-abliterated (base BF16)](https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated)
-- [HuggingFace - SuperQwen3.8-27b-abliterated-NVFP4-DGX-Spark](https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated-NVFP4-DGX-Spark)
-- [HuggingFace - SuperQwen3.8-27b-abliterated-MLX-4bit](https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated-MLX-4bit)
+- [Hugging Face - SuperQwen3.8-27b-abliterated-GGUF](https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated-GGUF)
+- [Hugging Face - SuperQwen3.8-27b-abliterated (base BF16)](https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated)
+- [Hugging Face - SuperQwen3.8-27b-abliterated-NVFP4-DGX-Spark](https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated-NVFP4-DGX-Spark)
+- [Hugging Face - SuperQwen3.8-27b-abliterated-MLX-4bit](https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated-MLX-4bit)
 - [Post de anuncio en X (desenrollado)](https://unrollnow.com/status/2091903964413657474)
 - [Blog orcarouter - Qwen3.8-27B Uncensored GGUF](https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf)
 - [Blog mindstudio - Qwen3.8-27B AEON Uncensored](https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration)

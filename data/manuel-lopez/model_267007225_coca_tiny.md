@@ -67,4 +67,4 @@ No disponible. No se conocen modelos comparables en la misma categoría, ya que 
 
 ## Enlaces
 
-- [HuggingFace: manuel-lopez/model_267007225_coca_tiny](https://huggingface.co/manuel-lopez/model_267007225_coca_tiny)
+- [Hugging Face: manuel-lopez/model_267007225_coca_tiny](https://huggingface.co/manuel-lopez/model_267007225_coca_tiny)

@@ -71,4 +71,4 @@ No se dispone de información sobre modelos comparables en el mismo repositorio 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/ramosl-orenzo/matching-run2)
+- [Repositorio en Hugging Face](https://huggingface.co/ramosl-orenzo/matching-run2)

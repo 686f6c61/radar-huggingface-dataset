@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Dango-A1-A2-B1-B2-C1 es un modelo de lenguaje de 1.867.614.208 parámetros (aproximadamente 1,8 mil millones) desarrollado por Shiho Matta (usuario de HuggingFace `mattashiho`) como parte de una línea de investigación sobre adquisición de segundas lenguas (L2). Se trata de un ajuste fino supervisado (SFT) sobre el checkpoint Dango-pretrained (`dango-1.8b-100Btok`), un modelo preentrenado exclusivamente en japonés con 100 mil millones de tokens de un corpus filtrado. El ajuste se realiza sobre lecciones de aprendizaje de inglés como segunda lengua cubriendo los niveles A1, A2, B1, B2 y C1 del Marco Común Europeo de Referencia.
+Dango-A1-A2-B1-B2-C1 es un modelo de lenguaje de 1.867.614.208 parámetros (aproximadamente 1,8 mil millones) desarrollado por Shiho Matta (usuario de Hugging Face `mattashiho`) como parte de una línea de investigación sobre adquisición de segundas lenguas (L2). Se trata de un ajuste fino supervisado (SFT) sobre el checkpoint Dango-pretrained (`dango-1.8b-100Btok`), un modelo preentrenado exclusivamente en japonés con 100 mil millones de tokens de un corpus filtrado. El ajuste se realiza sobre lecciones de aprendizaje de inglés como segunda lengua cubriendo los niveles A1, A2, B1, B2 y C1 del Marco Común Europeo de Referencia.
 
-El modelo no está pensado como un asistente generalista, sino como un simulador de hablante japonés-inglés y como herramienta de investigación para estudiar cómo un modelo entrenado en japonés adquiere competencias en inglés a distintos niveles de proficiency. Arquitectónicamente es comparable a la familia llm-jp-3, que adopta una arquitectura decoder de estilo Llama 2. El repositorio contiene únicamente los pesos en formato safetensors (3,7 GB) y no incluye pipeline declarado en HuggingFace.
+El modelo no está pensado como un asistente generalista, sino como un simulador de hablante japonés-inglés y como herramienta de investigación para estudiar cómo un modelo entrenado en japonés adquiere competencias en inglés a distintos niveles de proficiency. Arquitectónicamente es comparable a la familia llm-jp-3, que adopta una arquitectura decoder de estilo Llama 2. El repositorio contiene únicamente los pesos en formato safetensors (3,7 GB) y no incluye pipeline declarado en Hugging Face.
 
 La relevancia del modelo es acotada: se publica como artefacto de investigación con 25 descargas y sin resultados de benchmarks publicados en la información disponible. Su interés principal reside en el enfoque metodológico (preentrenamiento monolingüe en japonés seguido de SFT sobre currículos L2 estructurados por niveles MCER) y en las restricciones de licencia que afectan a los modelos derivados.
 
@@ -78,12 +78,12 @@ La comparación con modelos de propósito general de tamaño similar no resulta 
 - El soporte de inglés proviene exclusivamente del SFT sobre lecciones L2, no de preentrenamiento en inglés; la competencia real en inglés fuera del dominio de las lecciones puede ser limitada.
 - Restricción de licencia crítica: los modelos ajustados con datos de Ichikara prohiben el uso comercial de modelos derivados, a pesar de que la licencia base se declara como CC BY 4.0. Cualquier uso en producción comercial requiere revisión legal.
 - El modelo está pensado para investigación; no se recomienda su uso como asistente generalista ni en aplicaciones de cara al usuario sin una evaluación adicional.
-- El pipeline no está declarado en HuggingFace, lo que puede complicar la carga automática con `pipeline()` de Transformers.
+- El pipeline no está declarado en Hugging Face, lo que puede complicar la carga automática con `pipeline()` de Transformers.
 - El número de descargas (25) y la ausencia de likes sugieren una validación comunitaria muy limitada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattashiho/dango-A1-A2-B1-B2-C1
+- Modelo en Hugging Face: https://huggingface.co/mattashiho/dango-A1-A2-B1-B2-C1
 - Modelo base (preentrenado): https://huggingface.co/mattashiho/dango-1.8b-100Btok
 - Repositorio de código (filtrado y entrenamiento): https://github.com/mattashiho233/dango
 - Referencia arquitectónica llm-jp-3-1.8b: https://huggingface.co/llm-jp/llm-jp-3-1.8b

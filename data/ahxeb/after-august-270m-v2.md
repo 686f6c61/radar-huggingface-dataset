@@ -72,8 +72,8 @@ No se dispone de datos verificados de alternativas en la información proporcion
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| after-august-270m-v2 | 268.098.176 | no disponible | Gemma | GGUF q8_0 | HuggingFace |
-| google/gemma-3-270m (base) | 270M (denominación comercial) | no disponible | Gemma | no disponible en la información | HuggingFace |
+| after-august-270m-v2 | 268.098.176 | no disponible | Gemma | GGUF q8_0 | Hugging Face |
+| google/gemma-3-270m (base) | 270M (denominación comercial) | no disponible | Gemma | no disponible en la información | Hugging Face |
 | Alternativas generales de ~300M | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Otros fine-tunes creativos pequeños | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ No se dispone de datos verificados de alternativas en la información proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahxeb/after-august-270m-v2
+- Modelo en Hugging Face: https://huggingface.co/ahxeb/after-august-270m-v2
 - Modelo base: https://huggingface.co/google/gemma-3-270m
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - llama.cpp: https://github.com/ggml-org/llama.cpp

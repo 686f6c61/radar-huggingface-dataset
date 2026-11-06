@@ -109,7 +109,7 @@ GLM-5.3 es el único modelo de pesos abiertos de esta comparativa que alcanza re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eyes-dot-ml/GLM-5.3
+- Modelo en Hugging Face: https://huggingface.co/eyes-dot-ml/GLM-5.3
 - Blog oficial de Z.ai: https://z.ai/blog/glm-5.3
 - Documentación de Z.ai: https://docs.z.ai/guides/llm/glm-5.3
 - Repositorio GitHub de GLM-5: https://github.com/zai-org/GLM-5

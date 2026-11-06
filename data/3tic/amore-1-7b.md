@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Amore-1.7B es un modelo de lenguaje publicado por el usuario 3tic en HuggingFace bajo el identificador `3tic/Amore-1.7B`. Se trata de un modelo denso de 1.720.574.976 parámetros (aproximadamente 1,7B) cuyos pesos están en formato safetensors, con un repositorio de 3,5 GB, lo que es coherente con un checkpoint almacenado en bf16/fp16 (1,72B × 2 bytes ≈ 3,44 GB). La etiqueta `qwen3` del repositorio indica que la arquitectura subyacente deriva de la familia Qwen3, y el sufijo del nombre sugiere un ajuste fino sobre esa base, aunque el autor no lo documenta.
+Amore-1.7B es un modelo de lenguaje publicado por el usuario 3tic en Hugging Face bajo el identificador `3tic/Amore-1.7B`. Se trata de un modelo denso de 1.720.574.976 parámetros (aproximadamente 1,7B) cuyos pesos están en formato safetensors, con un repositorio de 3,5 GB, lo que es coherente con un checkpoint almacenado en bf16/fp16 (1,72B × 2 bytes ≈ 3,44 GB). La etiqueta `qwen3` del repositorio indica que la arquitectura subyacente deriva de la familia Qwen3, y el sufijo del nombre sugiere un ajuste fino sobre esa base, aunque el autor no lo documenta.
 
 La model card publicada no contiene más que la declaración de licencia (`apache-2.0`); no hay descripción del proceso de entrenamiento, del conjunto de datos utilizado, de los idiomas soportados ni de evaluaciones. El repositorio registra 0 descargas y 0 «likes» en el momento de la consulta, y las fechas de creación y actualización son del 22 de octubre de 2026, con apenas ocho minutos entre ambas, lo que apunta a una publicación recién creada y sin material adicional.
 
@@ -68,10 +68,10 @@ No hay datos de rendimiento de Amore-1.7B que permitan una comparación cuantita
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Amore-1.7B (3tic) | 1,72B | No disponible (hermanos de 3tic: 32K) | Apache-2.0 | HuggingFace, safetensors, sin cuantizaciones |
-| Qwen3-1.7B (Alibaba) | 1,7B | 32K nativo (extensible) | Apache-2.0 | HuggingFace, safetensors y GGUF, amplio soporte en vLLM/llama.cpp |
-| Llama 3.2 1B (Meta) | 1,24B | 128K | Licencia comunitaria Llama 3.2 (con restricciones) | HuggingFace, ecosistema amplio, GGUF oficiales |
-| Gemma 3 1B (Google) | ≈1B | 32K | Términos de uso de Gemma (no OSI) | HuggingFace, requiere aceptar la licencia |
+| Amore-1.7B (3tic) | 1,72B | No disponible (hermanos de 3tic: 32K) | Apache-2.0 | Hugging Face, safetensors, sin cuantizaciones |
+| Qwen3-1.7B (Alibaba) | 1,7B | 32K nativo (extensible) | Apache-2.0 | Hugging Face, safetensors y GGUF, amplio soporte en vLLM/llama.cpp |
+| Llama 3.2 1B (Meta) | 1,24B | 128K | Licencia comunitaria Llama 3.2 (con restricciones) | Hugging Face, ecosistema amplio, GGUF oficiales |
+| Gemma 3 1B (Google) | ≈1B | 32K | Términos de uso de Gemma (no OSI) | Hugging Face, requiere aceptar la licencia |
 
 Frente a Qwen3-1.7B, del que deriva, Amore-1.7B no aporta por ahora ninguna ventaja documentada: no hay evaluaciones, ni cuantizaciones publicadas, ni model card que describa el ajuste. Su único diferencial objetivo es el nombre y la licencia Apache-2.0, que comparte con la base.
 
@@ -90,8 +90,8 @@ Frente a Qwen3-1.7B, del que deriva, Amore-1.7B no aporta por ahora ninguna vent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3tic/Amore-1.7B
-- Perfil del autor en HuggingFace: https://huggingface.co/3tic
+- Modelo en Hugging Face: https://huggingface.co/3tic/Amore-1.7B
+- Perfil del autor en Hugging Face: https://huggingface.co/3tic
 - Listado de modelos del autor: https://huggingface.co/3tic/models
 - Directorio de modelos de 3tic (Essa Mamdani): https://essamamdani.com/ai-models/company/3tic
 - Orion Qwen3 1.7B CPT V2603 en Antbase: https://antbase.ai/models/orion-qwen3-1-7b-cpt-v2603

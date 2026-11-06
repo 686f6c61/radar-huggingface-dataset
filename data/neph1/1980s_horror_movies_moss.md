@@ -4,7 +4,7 @@
 
 `neph1/1980s_horror_movies_moss` es un adaptador LoRA de tipo text-to-image para el modelo base `OpenMOSS-Team/MOSS-Image-Base`, publicado por el usuario neph1 bajo licencia Apache 2.0. Se trata de un ajuste fino ligero (0,3 GB de pesos) que especializa el modelo base en la estética del cine de terror de los años ochenta: iluminación de neón, grano de película, criaturas prácticas, maquillaje de efectos especiales y composiciones propias del género.
 
-El repositorio es un espejo de un modelo publicado originalmente en Civitai (ID 1592586), por lo que el autor no documenta el proceso de entrenamiento, el dataset ni los hiperparámetros en la model card de HuggingFace. La información técnica disponible se limita a los metadatos del repositorio: librería `diffusers`, pipeline `text-to-image`, formato LoRA y modelo base MOSS-Image-Base.
+El repositorio es un espejo de un modelo publicado originalmente en Civitai (ID 1592586), por lo que el autor no documenta el proceso de entrenamiento, el dataset ni los hiperparámetros en la model card de Hugging Face. La información técnica disponible se limita a los metadatos del repositorio: librería `diffusers`, pipeline `text-to-image`, formato LoRA y modelo base MOSS-Image-Base.
 
 Su relevancia es limitada pero concreta: demuestra el ecosistema de adaptadores que está creciendo alrededor de MOSS-Image-Base, una familia de modelos de difusión de código abierto. Para quien necesite generar arte conceptual, storyboards o material promocional con estética ochentera de terror, el adaptador ofrece un atajo frente a prompts largos y a la ingeniería de prompts manual.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| neph1/1980s_horror_movies_moss | LoRA sobre MOSS-Image-Base | no disponible (0,3 GB) | no aplica | apache-2.0 | HuggingFace y Civitai |
-| OpenMOSS-Team/MOSS-Image-Base | Modelo base text-to-image | no disponible | no aplica | no disponible en la informacion proporcionada | HuggingFace |
-| Alternativas de LoRA estilístico para difusión | Adaptadores LoRA | variable | no aplica | variable | HuggingFace, Civitai |
+| neph1/1980s_horror_movies_moss | LoRA sobre MOSS-Image-Base | no disponible (0,3 GB) | no aplica | apache-2.0 | Hugging Face y Civitai |
+| OpenMOSS-Team/MOSS-Image-Base | Modelo base text-to-image | no disponible | no aplica | no disponible en la informacion proporcionada | Hugging Face |
+| Alternativas de LoRA estilístico para difusión | Adaptadores LoRA | variable | no aplica | variable | Hugging Face, Civitai |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/neph1/1980s_horror_movies_moss
+- Hugging Face: https://huggingface.co/neph1/1980s_horror_movies_moss
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Fuente original en Civitai: https://civitai.com/models/1592586/1980s-horror-movies-lora?modelVersionId=3435489
 - Descarga de ficheros: https://huggingface.co/neph1/1980s_horror_movies_moss/tree/main

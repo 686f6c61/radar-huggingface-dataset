@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2-VL-2B Egyptian Prescription es un ajuste fino del modelo vision-lenguaje Qwen2-VL-2B-Instruct de Alibaba Qwen, especializado en la lectura (OCR) de recetas médicas egipcias, tanto manuscritas como impresas. Lo publica el usuario de HuggingFace minamahertawfik05 y resuelve un problema muy concreto: la transcripción automática de documentos clínicos con caligrafía difícil, nombres de fármacos y dosis numéricas, un caso donde los modelos OCR genéricos suelen fallar.
+Qwen2-VL-2B Egyptian Prescription es un ajuste fino del modelo vision-lenguaje Qwen2-VL-2B-Instruct de Alibaba Qwen, especializado en la lectura (OCR) de recetas médicas egipcias, tanto manuscritas como impresas. Lo publica el usuario de Hugging Face minamahertawfik05 y resuelve un problema muy concreto: la transcripción automática de documentos clínicos con caligrafía difícil, nombres de fármacos y dosis numéricas, un caso donde los modelos OCR genéricos suelen fallar.
 
 El modelo parte de una arquitectura transformer multimodal de 2.208.985.600 parámetros (aproximadamente 2,2 mil millones) con capacidad de procesar imagen y texto de entrada y generar texto. Se ha entrenado mediante LoRA (rango 16, alpha 32) con QLoRA de 4 bits usando LLaMA-Factory, y el adaptador se distribuye fusionado en el modelo base en fp16. El repositorio ocupa 4,5 GB en formato safetensors.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2-VL-2B Egyptian Prescription (este modelo) | 2,2 B | no disponible (cutoff de entrenamiento 1024) | OCR de recetas egipcias | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2-VL-2B-Instruct (base) | 2,2 B | no disponible en la información | VLM generalista | Apache 2.0 | HuggingFace, ampliamente usado |
+| Qwen2-VL-2B Egyptian Prescription (este modelo) | 2,2 B | no disponible (cutoff de entrenamiento 1024) | OCR de recetas egipcias | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2-VL-2B-Instruct (base) | 2,2 B | no disponible en la información | VLM generalista | Apache 2.0 | Hugging Face, ampliamente usado |
 | Otros VLM de ~2 B para OCR médico | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo ni de alternativas específicas de OCR médico con las que contrastar métricas.
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparativo ni de alternativas específica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/minamahertawfik05/qwen2vl-egyptian-prescription-fine-tuned-model
+- Hugging Face: https://huggingface.co/minamahertawfik05/qwen2vl-egyptian-prescription-fine-tuned-model
 - Modelo base: https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory

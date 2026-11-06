@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cthompsonton/generation2-2024` es un repositorio de HuggingFace publicado por el usuario cthompsonton bajo el identificador de modelo Swin T (Swin Transformer, variante Tiny) orientado a tareas de generación. Segun la propia model card, se trata de una implementación funcional ("working implementation") de Swin T con una configuración etiquetada como "huge", cuyo objetivo declarado es servir como punto de partida reproducible con pruebas de humo (smoke tests), sin reivindicar resultados de benchmarks. El repositorio incluye `pipeline.py`, `config.json`, `training_args.json` y un `model.safetensors` que el autor describe explícitamente como checkpoint de inicialización, no como un modelo entrenado.
+`cthompsonton/generation2-2024` es un repositorio de Hugging Face publicado por el usuario cthompsonton bajo el identificador de modelo Swin T (Swin Transformer, variante Tiny) orientado a tareas de generación. Segun la propia model card, se trata de una implementación funcional ("working implementation") de Swin T con una configuración etiquetada como "huge", cuyo objetivo declarado es servir como punto de partida reproducible con pruebas de humo (smoke tests), sin reivindicar resultados de benchmarks. El repositorio incluye `pipeline.py`, `config.json`, `training_args.json` y un `model.safetensors` que el autor describe explícitamente como checkpoint de inicialización, no como un modelo entrenado.
 
 El dato de parámetros reales extraído del archivo safetensors es de 24.832 parámetros, una cifra extremadamente reducida (del orden de decenas de miles) que contrasta con la etiqueta "huge" de la model card y con lo que cabría esperar de una arquitectura Swin Transformer. Esto sugiere que el repositorio contiene una inicialización mínima o de prueba, no un modelo apto para generación real. El tamaño del repositorio es de 0,0 GB y el modelo acumula 0 descargas y 0 likes en el momento de la consulta.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cthompsonton/generation2-2024 | 24.832 | no disponible | sin benchmarks | Apache-2.0 | HuggingFace, 0 descargas |
-| Swin-T oficial (microsoft/swin-tiny-patch4-window7-224) | ~28 M | N/A (visión) | ImageNet top-1 ~81 % | MIT | HuggingFace, ampliamente usado |
+| cthompsonton/generation2-2024 | 24.832 | no disponible | sin benchmarks | Apache-2.0 | Hugging Face, 0 descargas |
+| Swin-T oficial (microsoft/swin-tiny-patch4-window7-224) | ~28 M | N/A (visión) | ImageNet top-1 ~81 % | MIT | Hugging Face, ampliamente usado |
 | Alternativa comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa de rendimiento fiable, dado que este repositorio carece de entrenamiento y de evaluación publicada.
@@ -85,7 +85,7 @@ No se dispone de datos suficientes para establecer una comparativa de rendimient
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cthompsonton/generation2-2024
+- Hugging Face: https://huggingface.co/cthompsonton/generation2-2024
 - Repositorio oficial de Swin Transformer (referencia de arquitectura): https://github.com/microsoft/Swin-Transformer
 - Paper de Swin Transformer (Liu et al., 2021): https://arxiv.org/abs/2103.14030
 - No se han encontrado otros enlaces (papers, blogs, demos o repos) asociados específicamente a este modelo en la información proporcionada.

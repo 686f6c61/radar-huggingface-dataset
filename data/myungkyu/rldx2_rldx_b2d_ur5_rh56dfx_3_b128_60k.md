@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rldx2_rldx_b2d_ur5_rh56dfx_3_b128_60k es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado en HuggingFace por el usuario Myungkyu como baseline del proyecto RLDX-2. No es un modelo de lenguaje conversacional: su función es actuar como política de control, tomando imágenes de cámaras, el estado articular del robot y una instrucción de tarea, y emitiendo objetivos articulares absolutos de 14 dimensiones. Se trata de un fine-tuning del modelo base RLWRLD/RLDX-1-PT.
+rldx2_rldx_b2d_ur5_rh56dfx_3_b128_60k es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado en Hugging Face por el usuario Myungkyu como baseline del proyecto RLDX-2. No es un modelo de lenguaje conversacional: su función es actuar como política de control, tomando imágenes de cámaras, el estado articular del robot y una instrucción de tarea, y emitiendo objetivos articulares absolutos de 14 dimensiones. Se trata de un fine-tuning del modelo base RLWRLD/RLDX-1-PT.
 
 El modelo tiene 6.912.896.320 parámetros (unos 6,9 mil millones) en formato safetensors, con un repositorio de 83,0 GB. Está especializado en el ajuste Bench2Dex, en concreto en la configuración ur5_rh56dfx_3, que combina un brazo UR5 con una mano diestra RH56DFX y demostraciones de teleoperación orientadas a generalización tipo replay.
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rldx2_rldx_b2d_ur5_rh56dfx_3_b128_60k | 6,9 mil millones | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
-| RLWRLD/RLDX-1-PT (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| rldx2_rldx_b2d_ur5_rh56dfx_3_b128_60k | 6,9 mil millones | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
+| RLWRLD/RLDX-1-PT (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otros modelos VLA de tamano comparable (por ejemplo OpenVLA o pi-zero) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no verificado |
 
 No se dispone en la información proporcionada de datos verificables de contexto, rendimiento, licencia o disponibilidad de alternativas comparables, por lo que la comparación cuantitativa no es posible.
@@ -90,7 +90,7 @@ No se dispone en la información proporcionada de datos verificables de contexto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/rldx2_rldx_b2d_ur5_rh56dfx_3_b128_60k
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/rldx2_rldx_b2d_ur5_rh56dfx_3_b128_60k
 - Modelo base: https://huggingface.co/RLWRLD/RLDX-1-PT
 - Dataset de entrenamiento: https://huggingface.co/datasets/Bench2Dex/teleopdata
 - Repositorio del proyecto y adaptadores de evaluación: https://github.com/myungkyuKoo/RLDX-2

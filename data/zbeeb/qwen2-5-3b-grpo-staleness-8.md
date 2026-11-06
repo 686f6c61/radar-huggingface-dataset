@@ -116,7 +116,7 @@ La busqueda web asociada a esta ficha no devolvio ningun resultado relacionado c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zbeeb/Qwen2.5-3B-GRPO-Staleness-8
+- Modelo en Hugging Face: https://huggingface.co/zbeeb/Qwen2.5-3B-GRPO-Staleness-8
 - Modelo base Qwen2.5-3B: https://huggingface.co/Qwen/Qwen2.5-3B/tree/3aab1f1954e9cc14eb9509a215f9e5ca08227a9b
 - Dataset de entrenamiento: https://huggingface.co/datasets/zbeeb/Staleness-GRPO-DAPO-Math-17k
 - Licencia incluida: https://huggingface.co/zbeeb/Qwen2.5-3B-GRPO-Staleness-8/blob/main/LICENSE

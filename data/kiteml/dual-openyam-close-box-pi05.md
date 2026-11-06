@@ -90,18 +90,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-El autor publica un conjunto de politicas entrenadas sobre el mismo dataset (`kiteml/dual-openyam-close-box`), lo que constituye la comparativa natural. No se han facilitado parametros, licencias ni resultados para las alternativas; todas ellas aparecen en el mismo perfil de HuggingFace.
+El autor publica un conjunto de politicas entrenadas sobre el mismo dataset (`kiteml/dual-openyam-close-box`), lo que constituye la comparativa natural. No se han facilitado parametros, licencias ni resultados para las alternativas; todas ellas aparecen en el mismo perfil de Hugging Face.
 
 | Modelo | Enfoque | Parametros | Resultados publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `kiteml/dual-openyam-close-box-pi05` | VLA π0.5 con experto de acciones por *flow matching* | 4,14 mil M (safetensors) | No evaluado; solo perdida de entrenamiento 0,041 | Gemma | HuggingFace (LeRobot) |
-| `kiteml/dual-openyam-close-box-pi0` | VLA π0, predecesor directo | No disponible | No disponible | No disponible | HuggingFace |
-| `kiteml/dual-openyam-close-box-pi0_fast` | π0 con tokenizacion de acciones tipo FAST | No disponible | No disponible | No disponible | HuggingFace |
-| `kiteml/dual-openyam-close-box-act` | ACT (transformer de imitacion) | No disponible | No disponible | No disponible | HuggingFace |
-| `kiteml/dual-openyam-close-box-diffusion` | Diffusion Policy | No disponible | No disponible | No disponible | HuggingFace |
-| `kiteml/dual-openyam-close-box-smolvla` | VLA compacto (SmolVLA) | No disponible | No disponible | No disponible | HuggingFace |
-| `kiteml/dual-openyam-close-box-vla_jepa` | VLA-JEPA | No disponible | No disponible | No disponible | HuggingFace |
-| `kiteml/dual-openyam-close-box-xvla` | X-VLA | No disponible | No disponible | No disponible | HuggingFace |
+| `kiteml/dual-openyam-close-box-pi05` | VLA π0.5 con experto de acciones por *flow matching* | 4,14 mil M (safetensors) | No evaluado; solo perdida de entrenamiento 0,041 | Gemma | Hugging Face (LeRobot) |
+| `kiteml/dual-openyam-close-box-pi0` | VLA π0, predecesor directo | No disponible | No disponible | No disponible | Hugging Face |
+| `kiteml/dual-openyam-close-box-pi0_fast` | π0 con tokenizacion de acciones tipo FAST | No disponible | No disponible | No disponible | Hugging Face |
+| `kiteml/dual-openyam-close-box-act` | ACT (transformer de imitacion) | No disponible | No disponible | No disponible | Hugging Face |
+| `kiteml/dual-openyam-close-box-diffusion` | Diffusion Policy | No disponible | No disponible | No disponible | Hugging Face |
+| `kiteml/dual-openyam-close-box-smolvla` | VLA compacto (SmolVLA) | No disponible | No disponible | No disponible | Hugging Face |
+| `kiteml/dual-openyam-close-box-vla_jepa` | VLA-JEPA | No disponible | No disponible | No disponible | Hugging Face |
+| `kiteml/dual-openyam-close-box-xvla` | X-VLA | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -121,7 +121,7 @@ El autor publica un conjunto de politicas entrenadas sobre el mismo dataset (`ki
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiteml/dual-openyam-close-box-pi05
+- Modelo en Hugging Face: https://huggingface.co/kiteml/dual-openyam-close-box-pi05
 - Dataset de entrenamiento: https://huggingface.co/datasets/kiteml/dual-openyam-close-box
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Paper de π0.5 (referenciado en los tags del modelo): https://huggingface.co/papers/2504.16054 · https://arxiv.org/abs/2504.16054

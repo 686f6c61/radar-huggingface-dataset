@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`abbardeny/king1` es un repositorio publicado en HuggingFace por el usuario abbardeny bajo licencia MIT. La model card asociada es prácticamente vacía: únicamente declara la licencia, sin descripción, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso. No se dispone de información sobre el pipeline asociado, los idiomas soportados ni el formato de los pesos.
+`abbardeny/king1` es un repositorio publicado en Hugging Face por el usuario abbardeny bajo licencia MIT. La model card asociada es prácticamente vacía: únicamente declara la licencia, sin descripción, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso. No se dispone de información sobre el pipeline asociado, los idiomas soportados ni el formato de los pesos.
 
 El repositorio registra cero descargas y cero likes en el momento de la consulta, y las fechas de creación y actualización (2026-11-04) son idénticas, lo que sugiere una publicación sin iteraciones posteriores ni mantenimiento documentado. No hay evidencia pública de que se trate de un modelo entrenado desde cero, de un fine-tune, de una conversión de pesos o de un contenedor de artefactos auxiliares.
 
@@ -67,5 +67,5 @@ No disponible. Sin conocer el tamaño, la arquitectura ni la tarea del modelo, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/abbardeny/king1
+- Repositorio en Hugging Face: https://huggingface.co/abbardeny/king1
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información proporcionada.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MN-Aura-12B-v1-i1-GGUF es un repositorio de cuantizaciones en formato GGUF generado por mradermacher, un autor conocido en HuggingFace por publicar versiones cuantizadas de modelos de terceros. El modelo subyacente es EldritchLabs/MN-Aura-12B-v1, un modelo conversacional de aproximadamente 12.250 millones de parámetros, del que este repositorio ofrece las versiones comprimidas listas para inferencia local mediante llama.cpp, Ollama o LM Studio. El sufijo "i1" indica que las cuantizaciones se han calculado con matrices de importancia (imatrix), una tecnica de calibracion que reduce la perdida de calidad en bitrates bajos.
+MN-Aura-12B-v1-i1-GGUF es un repositorio de cuantizaciones en formato GGUF generado por mradermacher, un autor conocido en Hugging Face por publicar versiones cuantizadas de modelos de terceros. El modelo subyacente es EldritchLabs/MN-Aura-12B-v1, un modelo conversacional de aproximadamente 12.250 millones de parámetros, del que este repositorio ofrece las versiones comprimidas listas para inferencia local mediante llama.cpp, Ollama o LM Studio. El sufijo "i1" indica que las cuantizaciones se han calculado con matrices de importancia (imatrix), una tecnica de calibracion que reduce la perdida de calidad en bitrates bajos.
 
 El interes de esta ficha es practico: permite ejecutar un modelo de 12B en hardware de consumo, desde tarjetas de 8 GB hasta equipos sin GPU dedicada, eligiendo entre 24 niveles de cuantizacion que van de IQ1_S (unos 2,4 GB estimados) hasta Q6_K (unos 10 GB estimados). Es, por tanto, una pieza de infraestructura de despliegue mas que un modelo nuevo.
 
-La informacion publicada es muy limitada: no se declaran arquitectura, licencia, idiomas ni longitud de contexto, ni existen resultados de benchmarks. Cualquier evaluacion seria del modelo debe partir del repositorio de EldritchLabs/MN-Aura-12B-v1, que es la fuente autorizada de estos datos. Las fechas de creacion y actualizacion que reporta HuggingFace son del 25 de septiembre de 2026.
+La informacion publicada es muy limitada: no se declaran arquitectura, licencia, idiomas ni longitud de contexto, ni existen resultados de benchmarks. Cualquier evaluacion seria del modelo debe partir del repositorio de EldritchLabs/MN-Aura-12B-v1, que es la fuente autorizada de estos datos. Las fechas de creacion y actualizacion que reporta Hugging Face son del 25 de septiembre de 2026.
 
 ## Especificaciones técnicas
 
@@ -22,7 +22,7 @@ La informacion publicada es muy limitada: no se declaran arquitectura, licencia,
 | Formato de pesos | GGUF (cuantizaciones); el modelo base se distribuye en safetensors |
 | Modelo base | EldritchLabs/MN-Aura-12B-v1 |
 | Tarea declarada | conversacional (text-generation) |
-| Tamano del repositorio | 10,5 GB segun HuggingFace |
+| Tamano del repositorio | 10,5 GB segun Hugging Face |
 | Etiquetas | gguf, endpoints_compatible, region:us, imatrix, conversational |
 
 ## Arquitectura y entrenamiento
@@ -35,7 +35,7 @@ Lo que si es verificable es el proceso de cuantizacion. Se trata de cuantizacion
 
 - Generacion de texto conversacional multi-turno: es la unica capacidad declarada explicitamente mediante la etiqueta `conversational`.
 - Uso como asistente de chat local: el formato GGUF permite ejecutarlo en llama.cpp, Ollama, LM Studio, KoboldCpp y servidores compatibles con la API de OpenAI mediante llama-cpp-python.
-- Compatibilidad con despliegue gestionado: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse a traves de HuggingFace Inference Endpoints.
+- Compatibilidad con despliegue gestionado: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse a traves de Hugging Face Inference Endpoints.
 - Cuantizacion progresiva: 24 niveles disponibles que permiten intercambiar calidad por memoria, desde IQ1_S hasta Q6_K.
 - Capacidades de razonamiento, codigo, matematicas, vision o audio: no disponibles en la informacion proporcionada.
 - Soporte de tool calling o function calling: no disponible.
@@ -118,7 +118,7 @@ La diferencia practica mas relevante es la certidumbre legal: los tres modelos d
 - Degradacion en cuantizaciones extremas: los niveles IQ1_S, IQ1_M, IQ2_XXS e IQ2_XS comprimen a 1,5-2,3 bits por peso y suelen producir errores gramaticales, repeticiones y perdida de coherencia, especialmente en razonamiento y codigo.
 - Riesgo de alucinacion: inherente a los modelos generativos de este tamano; no hay datos de mitigacion ni de tasas de error publicadas.
 - El autor es un cuantizador, no el desarrollador: mradermacher no responde del comportamiento del modelo ni de la exactitud de la model card original; los errores de la cuantizacion son posibles, aunque el proceso con imatrix esta estandarizado.
-- Metadatos anomalos: HuggingFace reporta fecha de creacion y actualizacion del 25 de septiembre de 2026, posterior a la fecha habitual de consulta; conviene verificar el repositorio antes de citarlo.
+- Metadatos anomalos: Hugging Face reporta fecha de creacion y actualizacion del 25 de septiembre de 2026, posterior a la fecha habitual de consulta; conviene verificar el repositorio antes de citarlo.
 - Repositorio sin traccion: cero descargas y cero "likes" en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces

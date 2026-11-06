@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`matching-run2` es una implementación experimental y transparente de la arquitectura DINO para tareas de emparejamiento (matching), publicada por el usuario de HuggingFace `Sarara1768x` bajo licencia BSD-3-Clause. El modelo se presenta como un checkpoint en escala `nano`, con solo 33.088 parámetros en formato `safetensors`. La arquitectura usa atención lineal, fusión bilineal, activación swish y normalización batchnorm. No se trata de un modelo entrenado ni de un modelo de lenguaje.
+`matching-run2` es una implementación experimental y transparente de la arquitectura DINO para tareas de emparejamiento (matching), publicada por el usuario de Hugging Face `Sarara1768x` bajo licencia BSD-3-Clause. El modelo se presenta como un checkpoint en escala `nano`, con solo 33.088 parámetros en formato `safetensors`. La arquitectura usa atención lineal, fusión bilineal, activación swish y normalización batchnorm. No se trata de un modelo entrenado ni de un modelo de lenguaje.
 
 Su propósito principal es servir como base reproducible para pruebas de humo y experimentos de investigación. El README del autor declara explícitamente que no se reclama ninguna puntuación de benchmark y que `model.safetensors` es una inicialización válida para comprobar que el pipeline funciona, no un checkpoint con resultados evaluados. La relevancia del proyecto radica en su código limpio, su configuración versionada y su receta de experimento por defecto, más que en su rendimiento.
 
@@ -66,12 +66,12 @@ No se ha identificado ningún modelo comparable en la información disponible. S
 - El checkpoint no está entrenado: es una inicialización válida para pruebas de humo, no un modelo listo para uso real.
 - No se ha auditado la robustez, la equidad ni la transferencia de dominio, según el propio README.
 - No hay resultados de benchmarks publicados, por lo que no se puede evaluar su rendimiento frente a baselines.
-- Carece de idiomas declarados y de pipeline en HuggingFace, lo que limita su uso con APIs estándar.
+- Carece de idiomas declarados y de pipeline en Hugging Face, lo que limita su uso con APIs estándar.
 - La licencia BSD-3-Clause permite uso comercial y modificación, pero al usar datasets externos deben revisarse los términos de esos datos por separado.
 - No soporta tool calling, agentes ni generación de texto; su única función prevista es el emparejamiento mediante DINO.
 - Al ser una implementación personalizada, no es compatible con cargadores automáticos sin un adaptador explícito.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sarara1768x/matching-run2
+- Hugging Face: https://huggingface.co/Sarara1768x/matching-run2
 - Papers, blogs, demos y repositorios adicionales: no se han encontrado en la búsqueda web.

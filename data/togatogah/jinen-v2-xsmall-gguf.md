@@ -58,7 +58,7 @@ El modelo fue evaluado en el benchmark AJIMEE-Bench (subconjunto `JWTD_v2/v1`, 2
 | `jinen-v2-xsmall-Q5_K_M.gguf` | 28 MB | 74,0% | 79,0% | 13 ms | 29 ms | 45 ms |
 | `jinen-v2-xsmall-Q4_K_M.gguf` | 26 MB | 73,0% | 78,0% | 11 ms | 24 ms | 42 ms |
 
-Como referencia, la version original en PyTorch (HuggingFace) obtiene un 73,0% exacto y un 78,0% con NFKC, lo que indica que la cuantizacion Q5_K_M incluso supera ligeramente al modelo original en este benchmark.
+Como referencia, la version original en PyTorch (Hugging Face) obtiene un 73,0% exacto y un 78,0% con NFKC, lo que indica que la cuantizacion Q5_K_M incluso supera ligeramente al modelo original en este benchmark.
 
 ## Requisitos de hardware
 
@@ -94,7 +94,7 @@ No se dispone de datos sobre alternativas comerciales o academicas como Mozc, Go
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/togatogah/jinen-v2-xsmall.gguf
+- Modelo en Hugging Face: https://huggingface.co/togatogah/jinen-v2-xsmall.gguf
 - Benchmark AJIMEE-Bench: https://github.com/azooKey/AJIMEE-Bench
 - Modelo predecesor jinen-v1-small: https://huggingface.co/togatogah/jinen-v1-small
 - Licencia CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/deed.ja

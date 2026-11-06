@@ -33,7 +33,7 @@ Metadatos del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | `thecyriljacob/repix-dependency-models` |
+| ID en Hugging Face | `thecyriljacob/repix-dependency-models` |
 | Autor | `thecyriljacob` |
 | Libreria declarada | `onnx` |
 | Etiquetas | `onnx`, `image-colorization`, `image-super-resolution`, `license:other`, `region:us` |
@@ -116,11 +116,11 @@ No se dispone de datos de parametros, contexto ni rendimiento para establecer un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thecyriljacob/repix-dependency-models
+- Repositorio en Hugging Face: https://huggingface.co/thecyriljacob/repix-dependency-models
 - Proyecto Repix (consumidor de estos pesos): https://github.com/CJ445/repix
 - DDColor, repositorio oficial: https://github.com/piddnad/DDColor
 - Real-ESRGAN, repositorio oficial: https://github.com/xinntao/Real-ESRGAN
-- Origen del espejo de DDColor: `Diogo122333/ddcolor-512-fp16` (en HuggingFace)
-- Origen del espejo de Real-ESRGAN: `SceneWorks/real-esrgan-onnx` (en HuggingFace)
+- Origen del espejo de DDColor: `Diogo122333/ddcolor-512-fp16` (en Hugging Face)
+- Origen del espejo de Real-ESRGAN: `SceneWorks/real-esrgan-onnx` (en Hugging Face)
 - Verificacion de integridad: `sha256sum -c CHECKSUMS.sha256` sobre los ficheros descargados
 - Resultados de busqueda web: no se han encontrado referencias relevantes sobre este modelo en la informacion disponible

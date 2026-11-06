@@ -75,7 +75,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 
 - Repositorio de la cuantización: https://huggingface.co/RSLtm/GLM-4.7-Flash-oQ4e
 - Perfil del autor RSLtm: https://huggingface.co/RSLtm
-- Modelo base GLM-4.7 en HuggingFace: https://huggingface.co/zai-org/GLM-4.7
+- Modelo base GLM-4.7 en Hugging Face: https://huggingface.co/zai-org/GLM-4.7
 - Página de GLM-4.7-Flash en Ollama: https://ollama.com/library/glm-4.7-flash
 - Análisis de GLM-4.7 Flash en local-llm.net: https://www.local-llm.net/models/glm-4-7-flash/
 - Documentación oficial de Z.ai sobre GLM-4.7: https://docs.z.ai/guides/llm/glm-4.7

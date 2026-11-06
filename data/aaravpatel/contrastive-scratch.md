@@ -74,4 +74,4 @@ No disponible. No existe una categoría de comparación directa, ya que se trata
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aaravpatel/contrastive-scratch
+- Hugging Face: https://huggingface.co/aaravpatel/contrastive-scratch

@@ -89,7 +89,7 @@ No se dispone de informacion suficiente para comparar con alternativas de otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Avicennasis/K2-Horizon-3.7B-heretic-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/Avicennasis/K2-Horizon-3.7B-heretic-mlx-8bit
 - Modelo base: https://huggingface.co/Avicennasis/K2-Horizon-3.7B-heretic
 - Issue de mlx-lm sobre la arquitectura k2_horizon: https://github.com/ml-explore/mlx-lm/issues/1876
 - Repositorio de mlx-lm: https://github.com/ml-explore/mlx-lm

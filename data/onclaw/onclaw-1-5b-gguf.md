@@ -26,8 +26,8 @@ Su interés práctico está en el despliegue local: al partir de una arquitectur
 | Tamaño del repositorio | 1,0 GB |
 | Descargas | 0 |
 | Likes | 1 |
-| Fecha de creación (HuggingFace) | 2026-10-16 |
-| Fecha de actualización (HuggingFace) | 2026-10-16 |
+| Fecha de creación (Hugging Face) | 2026-10-16 |
+| Fecha de actualización (Hugging Face) | 2026-10-16 |
 
 ## Arquitectura y entrenamiento
 
@@ -39,7 +39,7 @@ No se especifica en la información disponible el número de tokens de entrenami
 
 - Generación de texto y de código: el repositorio está etiquetado con `code` y el pipeline declarado es `text-generation`.
 - Uso conversacional: la etiqueta `conversational` indica que el modelo está preparado para diálogo multi-turno, presumiblemente heredado del formato instruct del modelo base.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a través de infraestructura de inferencia compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a través de infraestructura de inferencia compatible con la API de Hugging Face.
 - Ajuste mediante LoRA fusionado: el modelo incorpora una adaptación de bajo rango ya integrada en los pesos, no como adaptador separado.
 - Comportamiento abliterado: se han eliminado direcciones de rechazo, lo que reduce las negativas del modelo ante determinadas peticiones (ver limitaciones).
 - Tool calling / function calling: no disponible.
@@ -90,8 +90,8 @@ Las cifras siguientes son estimaciones derivadas del número de parámetros (1,5
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| OnClaw Raptor 1.5 (Onclaw/Onclaw-1.5B-GGUF) | 1,54 B | no disponible | no disponible | HuggingFace, GGUF | Merge con LoRA y abliteración; benchmarks de calidad no verificados |
-| Qwen2.5-Coder-1.5B-Instruct (base) | 1,54 B (mismo recuento) | no disponible en esta información | no disponible en esta información | HuggingFace | Modelo base oficial del que deriva; el repositorio no documenta desviaciones más allá de la abliteración |
+| OnClaw Raptor 1.5 (Onclaw/Onclaw-1.5B-GGUF) | 1,54 B | no disponible | no disponible | Hugging Face, GGUF | Merge con LoRA y abliteración; benchmarks de calidad no verificados |
+| Qwen2.5-Coder-1.5B-Instruct (base) | 1,54 B (mismo recuento) | no disponible en esta información | no disponible en esta información | Hugging Face | Modelo base oficial del que deriva; el repositorio no documenta desviaciones más allá de la abliteración |
 | Otras alternativas de código de 1-3 B | no disponible | no disponible | no disponible | no disponible | No se proporcionan datos de comparación en la información disponible |
 
 No se han facilitado resultados que permitan comparar el rendimiento de este modelo con alternativas de la misma categoría; cualquier comparación de calidad sería especulativa.
@@ -111,7 +111,7 @@ No se han facilitado resultados que permitan comparar el rendimiento de este mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Onclaw/Onclaw-1.5B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Onclaw/Onclaw-1.5B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Herramienta de abliteración empleada (heretic): https://github.com/p-e-w/heretic
 - llama.cpp (conversión a GGUF): https://github.com/ggml-org/llama.cpp

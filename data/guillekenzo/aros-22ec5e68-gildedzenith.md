@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`guillekenzo/aros-22ec5e68-GildedZenith` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2. Lo publica el usuario guillekenzo en HuggingFace y esta pensado para inyectar un concepto o sujeto concreto en el modelo base mediante un token disparador. El adaptador se ha entrenado sobre `krea/Krea-2-Raw`, aunque las muestras de la model card se han generado sobre `krea/Krea-2-Turbo`, con tan solo 8 pasos de inferencia y `guidance_scale=0.0`.
+`guillekenzo/aros-22ec5e68-GildedZenith` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2. Lo publica el usuario guillekenzo en Hugging Face y esta pensado para inyectar un concepto o sujeto concreto en el modelo base mediante un token disparador. El adaptador se ha entrenado sobre `krea/Krea-2-Raw`, aunque las muestras de la model card se han generado sobre `krea/Krea-2-Turbo`, con tan solo 8 pasos de inferencia y `guidance_scale=0.0`.
 
 El modelo resuelve un problema habitual en generacion de imagenes: personalizar la salida del modelo base para reproducir un sujeto o estilo concreto sin reentrenar el modelo completo. Al ser una LoRA, el peso del repositorio es reducido (0.4 GB) y se carga sobre el modelo base ya entrenado, lo que abarata el despliegue y el almacenamiento.
 
@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/guillekenzo/aros-22ec5e68-GildedZenith
+- Hugging Face: https://huggingface.co/guillekenzo/aros-22ec5e68-GildedZenith
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Raw
 - Modelo de inferencia usado en las muestras: https://huggingface.co/krea/Krea-2-Turbo
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

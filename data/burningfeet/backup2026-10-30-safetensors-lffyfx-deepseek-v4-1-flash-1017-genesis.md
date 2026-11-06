@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-Genesis es un modelo multimodal de generación de texto e imagen-texto a texto, distribuido en HuggingFace bajo el identificador `burningfeet/backup2026-10-30-safetensors-LffyFx-DeepSeek-V4.1-Flash-1017-Genesis`. El repositorio lo publica el usuario `burningfeet` y, por su nomenclatura y características (pipeline `image-text-to-text`, tag `deepseek_v41`, pesos en safetensors de 510,3 GB y 763.205.315.794 parámetros totales), se corresponde con una copia de seguridad de un modelo de la familia DeepSeek V4.1 en su variante Flash. No se dispone de información oficial sobre el desarrollador original ni sobre la ficha técnica publicada por el mismo.
+DeepSeek-V4.1-Flash-1017-Genesis es un modelo multimodal de generación de texto e imagen-texto a texto, distribuido en Hugging Face bajo el identificador `burningfeet/backup2026-10-30-safetensors-LffyFx-DeepSeek-V4.1-Flash-1017-Genesis`. El repositorio lo publica el usuario `burningfeet` y, por su nomenclatura y características (pipeline `image-text-to-text`, tag `deepseek_v41`, pesos en safetensors de 510,3 GB y 763.205.315.794 parámetros totales), se corresponde con una copia de seguridad de un modelo de la familia DeepSeek V4.1 en su variante Flash. No se dispone de información oficial sobre el desarrollador original ni sobre la ficha técnica publicada por el mismo.
 
-El modelo resuelve tareas de generación de texto y de comprensión conjunta de imagen y texto, con un tamaño total de aproximadamente 763.200 millones de parámetros. El repositorio declara licencia MIT, lo que en principio facilita el uso comercial, aunque el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace. La relevancia actual radica en que se trata de un modelo de gran escala con capacidades multimodales y pesos en formato safetensors de 8 bits/fp8, lo que reduce el coste de despliegue frente a una versión en fp16/bf16.
+El modelo resuelve tareas de generación de texto y de comprensión conjunta de imagen y texto, con un tamaño total de aproximadamente 763.200 millones de parámetros. El repositorio declara licencia MIT, lo que en principio facilita el uso comercial, aunque el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face. La relevancia actual radica en que se trata de un modelo de gran escala con capacidades multimodales y pesos en formato safetensors de 8 bits/fp8, lo que reduce el coste de despliegue frente a una versión en fp16/bf16.
 
 La información disponible en la búsqueda es limitada: no se han publicado datos sobre longitud de contexto, composición del dataset de entrenamiento, idiomas soportados ni resultados de benchmarks. Esta ficha recoge exclusivamente los datos verificables del repositorio y marca explícitamente como "no disponible" todo aquello que no se ha podido confirmar.
 
@@ -63,7 +63,7 @@ No disponible. No se dispone de información sobre modelos comparables de la mis
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 - El repositorio es una copia de seguridad no oficial (`burningfeet/backup...`), sin garantía de mantenimiento, documentación ni soporte por parte del desarrollador original.
 - Licencia MIT declarada, pero al tratarse de una copia de terceros conviene verificar la licencia del modelo original de DeepSeek antes de un uso comercial.
 - No se han publicado datos sobre sesgos, riesgo de alucinación ni limitaciones idiomáticas.
@@ -73,5 +73,5 @@ No disponible. No se dispone de información sobre modelos comparables de la mis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/burningfeet/backup2026-10-30-safetensors-LffyFx-DeepSeek-V4.1-Flash-1017-Genesis
+- Repositorio en Hugging Face: https://huggingface.co/burningfeet/backup2026-10-30-safetensors-LffyFx-DeepSeek-V4.1-Flash-1017-Genesis
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

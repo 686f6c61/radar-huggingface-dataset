@@ -76,7 +76,7 @@ El autor ha publicado otras variantes del mismo fine-tune, como `tcz/qwen3-vl-8b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tcz/qwen3-vl-8b-box-layouts-token-level-grpo-v2-1900
+- Repositorio Hugging Face: https://huggingface.co/tcz/qwen3-vl-8b-box-layouts-token-level-grpo-v2-1900
 - Variante SFT del mismo autor: https://huggingface.co/tcz/qwen3-vl-8b-box-layouts-sft-plateau-9000a
 - Variante GRPO 15k del mismo autor: https://huggingface.co/tcz/qwen3-vl-8b-box-layouts-token-level-grpo-15k
 - Repositorio oficial de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL

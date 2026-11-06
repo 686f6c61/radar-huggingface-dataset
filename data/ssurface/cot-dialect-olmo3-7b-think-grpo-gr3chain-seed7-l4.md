@@ -67,9 +67,9 @@ Condiciones de evaluación: n=1317, decodificación greedy, una sola vuelta, sin
 
 | Modelo | Tipo | Tamano | GSM8K (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cot-dialect-olmo3-7b-think-grpo-gr3chain-seed7-l4 (este) | LoRA sobre Olmo-3-7B-Think | 7B base + 0,2 GB adaptador | 66,7 % | Apache-2.0 | HuggingFace |
-| ssurface/cot-dialect-olmo3-7b-think-grpo-l4 | LoRA sobre Olmo-3-7B-Think (modelo principal del mismo nivel) | 7B base | no disponible | Apache-2.0 | HuggingFace |
-| allenai/Olmo-3-7B-Think | Modelo base completo | 7B | no disponible | Apache-2.0 | HuggingFace |
+| cot-dialect-olmo3-7b-think-grpo-gr3chain-seed7-l4 (este) | LoRA sobre Olmo-3-7B-Think | 7B base + 0,2 GB adaptador | 66,7 % | Apache-2.0 | Hugging Face |
+| ssurface/cot-dialect-olmo3-7b-think-grpo-l4 | LoRA sobre Olmo-3-7B-Think (modelo principal del mismo nivel) | 7B base | no disponible | Apache-2.0 | Hugging Face |
+| allenai/Olmo-3-7B-Think | Modelo base completo | 7B | no disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento publicados para el modelo principal del mismo nivel ni para el modelo base en GSM8K en la informacion proporcionada. El autor advierte que este adaptador de ablación puede ser peor que el modelo principal del mismo nivel, ya que se entrenó para responder a una pregunta concreta sobre diseño de recompensa.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento publicados para el modelo principal del mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-gr3chain-seed7-l4
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-gr3chain-seed7-l4
 - Modelo base Olmo-3-7B-Think: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Modelo principal del mismo nivel (L4): https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-l4
 - Adaptador SFT previo requerido: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l4

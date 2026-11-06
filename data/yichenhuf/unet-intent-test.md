@@ -53,7 +53,7 @@ No se dispone de información para comparar este repositorio con otros modelos, 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Yichenhuf/unet-intent-test
+- Repositorio de Hugging Face: https://huggingface.co/Yichenhuf/unet-intent-test
 - No se han encontrado enlaces externos adicionales en la búsqueda web.
 
 Nota: La información disponible es insuficiente para completar una ficha técnica convencional. Este repositorio se clasifica como un recurso de documentación, no como un modelo de IA.</think>## Resumen
@@ -109,7 +109,7 @@ No es posible realizar una comparativa con otros modelos, ya que no se trata de 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Yichenhuf/unet-intent-test
+- Repositorio de Hugging Face: https://huggingface.co/Yichenhuf/unet-intent-test
 - No se han encontrado enlaces externos adicionales en la búsqueda web.
 
 Nota: La información disponible es insuficiente para completar una ficha técnica estándar. Este repositorio es un recurso de documentación, no un modelo de IA.</think>## Resumen
@@ -161,7 +161,7 @@ No aplica, ya que no existe un modelo que ejecutar. No se especifican requisitos
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Yichenhuf/unet-intent-test
+- Repositorio de Hugging Face: https://huggingface.co/Yichenhuf/unet-intent-test
 - No se han encontrado enlaces externos adicionales en la búsqueda web.
 
 Nota: La información disponible es insuficiente para completar una ficha técnica estándar. Este repositorio es un recurso de documentación, no un modelo de IA.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PulseThink es un modelo de lenguaje desarrollado por SOTAagi2030, presentado como un repositorio de prueba en HuggingFace. Según la model card, ha experimentado una actualización significativa que mejora su profundidad de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo está orientado a tareas de razonamiento complejo, matemáticas, programación y lógica general, y su rendimiento se acerca al de otros modelos líderes según los datos del autor.
+PulseThink es un modelo de lenguaje desarrollado por SOTAagi2030, presentado como un repositorio de prueba en Hugging Face. Según la model card, ha experimentado una actualización significativa que mejora su profundidad de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo está orientado a tareas de razonamiento complejo, matemáticas, programación y lógica general, y su rendimiento se acerca al de otros modelos líderes según los datos del autor.
 
 El repositorio actual (PulseThink-TestRepo-r30) tiene un tamaño de 0.0 GB, lo que sugiere que no contiene pesos reales y funciona como un espacio de pruebas. La model card describe capacidades como soporte de system prompt, function calling mejorado y una tasa de alucinación reducida en comparación con versiones anteriores. Los resultados reportados en AIME 2025 muestran una precisión del 87.5% frente al 70% de la versión previa, con un uso de tokens por pregunta que ha pasado de 12K a 23K de media. No se especifican la arquitectura exacta, el número de parámetros ni la longitud de contexto en la información proporcionada.
 

@@ -19,7 +19,7 @@ Este repositorio concreto contiene la rama de texto del modelo convertida al for
 | Licencia | Apache 2.0 con politica de uso aceptable de Apertus 1.5 |
 | Formato de pesos | MLX safetensors |
 
-Nota: el contador de parametros que muestra la interfaz de HuggingFace (2,26B) refleja los tensores almacenados, no los parametros reales del modelo. MLX empaqueta pesos cuantizados en contenedores de 32 bits, ocho pesos por contenedor a 4 bits y cuatro a 8 bits, por lo que el recuento de elementos almacenados es inferior al numero real de parametros.
+Nota: el contador de parametros que muestra la interfaz de Hugging Face (2,26B) refleja los tensores almacenados, no los parametros reales del modelo. MLX empaqueta pesos cuantizados en contenedores de 32 bits, ocho pesos por contenedor a 4 bits y cuatro a 8 bits, por lo que el recuento de elementos almacenados es inferior al numero real de parametros.
 
 ## Arquitectura y entrenamiento
 
@@ -95,7 +95,7 @@ No se dispone de datos comparables de otros modelos de 8B (como Llama 3.1 8B o M
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/m1rkocasu/Apertus-v1.5-8B-text-MLX-8bit
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/m1rkocasu/Apertus-v1.5-8B-text-MLX-8bit
 - Modelo base: https://huggingface.co/swiss-ai/Apertus-v1.5-8B
 - Variante 6-bit: https://huggingface.co/m1rkocasu/Apertus-v1.5-8B-text-MLX-6bit
 - Variante 5-bit: https://huggingface.co/m1rkocasu/Apertus-v1.5-8B-text-MLX-5bit

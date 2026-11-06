@@ -82,7 +82,7 @@ No se incluyen otros modelos de detección de alucinaciones porque no hay datos 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/RyanFoxW/btprop-rlv4-qwen3-8b)
+- [Modelo en Hugging Face](https://huggingface.co/RyanFoxW/btprop-rlv4-qwen3-8b)
 - [Versión rlv1 del mismo autor](https://huggingface.co/RyanFoxW/btprop-rlv1-qwen3-8b)
 - [Modelo SFT de BTProp (Qwen3-8B-BTProp-mainmod1verify-SFT)](https://huggingface.co/RyanFoxW/Qwen3-8B-BTProp-mainmod1verify-SFT)
 - [Repositorio oficial de Qwen3 en GitHub](https://github.com/QwenLM/Qwen3)

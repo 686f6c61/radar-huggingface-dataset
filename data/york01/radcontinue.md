@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RadContinue es un modelo publicado en HuggingFace por el usuario york01 bajo licencia MIT. La model card asociada está prácticamente vacía: solo contiene la declaración de licencia, sin descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y no declara pipeline ni idiomas soportados.
+RadContinue es un modelo publicado en Hugging Face por el usuario york01 bajo licencia MIT. La model card asociada está prácticamente vacía: solo contiene la declaración de licencia, sin descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y no declara pipeline ni idiomas soportados.
 
 Por el nombre ("RadContinue") podría tratarse de un modelo orientado a radiología o continuación de texto médico, pero esta interpretación es especulativa y no está respaldada por ningún dato del repositorio. No hay información pública sobre arquitectura, tamaño, contexto, datos de entrenamiento o rendimiento.
 
@@ -42,7 +42,7 @@ No es posible recomendar casos de uso concretos sin información verificable sob
 - Evaluación experimental: un investigador podría descargar el repositorio y realizar pruebas de inferencia básicas para determinar qué tipo de modelo contiene y qué tareas aborda.
 - Auditoría de artefactos: un equipo de seguridad podría inspeccionar los ficheros del repositorio para verificar formatos de pesos, posibles dependencias maliciosas y coherencia con la licencia declarada.
 - Fine-tuning exploratorio: solo tras confirmar la arquitectura y el tokenizador sería viable plantear un ajuste fino sobre datos propios.
-- Uso docente: el repositorio puede servir como ejemplo de publicación incompleta de un modelo en HuggingFace y de la importancia de documentar artefactos.
+- Uso docente: el repositorio puede servir como ejemplo de publicación incompleta de un modelo en Hugging Face y de la importancia de documentar artefactos.
 - Integración condicionada: cualquier despliegue en atención al cliente, generación de código, análisis documental o pipelines de agentes queda bloqueado hasta que el autor publique especificaciones y benchmarks.
 - Reproducibilidad: sin datos de entrenamiento ni evaluación, el modelo no es apto para experimentos que requieran resultados reproducibles.
 
@@ -80,4 +80,4 @@ No es posible establecer una comparativa fiable sin conocer la categoría, el ta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/york01/RadContinue
+- Repositorio Hugging Face: https://huggingface.co/york01/RadContinue

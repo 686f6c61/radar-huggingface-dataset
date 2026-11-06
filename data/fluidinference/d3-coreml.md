@@ -16,7 +16,7 @@ Su relevancia radica en que traslada un modelo de enrutamiento y clasificación 
 | Parametros totales | 0,8B (lite), 2B (nano), 4B (mini) |
 | Parametros activos | no aplica / no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el tag de HuggingFace referencia base_model:quantized:vllm-sr/d3-lite, sin detalle de esquema) |
+| Tipos de cuantizacion | no disponible (el tag de Hugging Face referencia base_model:quantized:vllm-sr/d3-lite, sin detalle de esquema) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
 | Formato de pesos | Core ML (paquete Core ML, no safetensors ni GGUF) |
@@ -96,7 +96,7 @@ Las tres comparten formato Core ML, licencia Apache-2.0, contrato de inferencia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/d3-coreml
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/d3-coreml
 - Coleccion Decision 3.0: https://huggingface.co/collections/vllm-sr/decision-30
 - Modelo upstream d3-lite: https://huggingface.co/vllm-sr/d3-lite
 - Modelo upstream d3-nano: https://huggingface.co/vllm-sr/d3-nano

@@ -105,7 +105,7 @@ No se dispone en la informacion proporcionada de datos objetivos (parametros, co
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/K2-Horizon-7B-GMCE-i1-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/K2-Horizon-7B-GMCE-i1-GGUF
 - Modelo base: https://huggingface.co/emperorofrome/K2-Horizon-7B-GMCE
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/K2-Horizon-7B-GMCE-GGUF
 - Pagina de descargas del autor para este modelo: https://hf.tst.eu/model#K2-Horizon-7B-GMCE-i1-GGUF

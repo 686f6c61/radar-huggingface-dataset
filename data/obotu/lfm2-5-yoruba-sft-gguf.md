@@ -65,8 +65,8 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - Obotu/lfm2.5-yoruba-sft-GGUF](https://huggingface.co/Obotu/lfm2.5-yoruba-sft-GGUF)
+- [Hugging Face - Obotu/lfm2.5-yoruba-sft-GGUF](https://huggingface.co/Obotu/lfm2.5-yoruba-sft-GGUF)
 - [Blog de Liquid AI - Introducing LFM2.5](https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai)
-- [Colección LFM2.5 en HuggingFace](https://huggingface.co/collections/LiquidAI/lfm25)
+- [Colección LFM2.5 en Hugging Face](https://huggingface.co/collections/LiquidAI/lfm25)
 - [Página de modelos de Liquid AI](https://www.liquid.ai/models)
 - [Cookbook de Liquid AI en GitHub](https://github.com/Liquid4All/cookbook)

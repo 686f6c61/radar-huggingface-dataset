@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| meow-decoder (`beats.npz`) | Regresión logística sobre embeddings BEATs | No disponible | No aplica | 65,9 % top-1, 89,1 % top-2 | CC BY-NC-SA 4.0 | HuggingFace + GitHub |
-| meow-decoder (`ast.npz`) | Regresión logística sobre embeddings AST | No disponible | No aplica | 61,8 % top-1, 84,1 % top-2 | CC BY 4.0 | HuggingFace + GitHub |
+| meow-decoder (`beats.npz`) | Regresión logística sobre embeddings BEATs | No disponible | No aplica | 65,9 % top-1, 89,1 % top-2 | CC BY-NC-SA 4.0 | Hugging Face + GitHub |
+| meow-decoder (`ast.npz`) | Regresión logística sobre embeddings AST | No disponible | No aplica | 61,8 % top-1, 84,1 % top-2 | CC BY 4.0 | Hugging Face + GitHub |
 | Clasificadores de vocalizaciones animales basados en BEATs/AST (genéricos) | Fine-tuning supervisado de codificadores | No disponible | No aplica | No disponible | Depende del codificador | No disponible |
-| Modelos de audio generalistas (AST, BEATs) | Codificadores preentrenados | No disponible en la información proporcionada | No disponible | No disponible | Depende de la versión | HuggingFace / repositorios originales |
+| Modelos de audio generalistas (AST, BEATs) | Codificadores preentrenados | No disponible en la información proporcionada | No disponible | No disponible | Depende de la versión | Hugging Face / repositorios originales |
 
 No se dispone de comparaciones publicadas con otros clasificadores específicos de maullidos en la información proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de comparaciones publicadas con otros clasificadores específicos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AtharvIITB/meow-decoder
+- Modelo en Hugging Face: https://huggingface.co/AtharvIITB/meow-decoder
 - Repositorio de código: https://github.com/ATHARV-IIT-BOMBAY/meow-decoder
 - Dataset CatMeows (Ludovico et al., 2020): https://zenodo.org/records/4008297
 - Codificador BEATs de Earth Species Project: no disponible en la información proporcionada

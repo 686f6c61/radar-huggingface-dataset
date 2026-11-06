@@ -78,7 +78,7 @@ No se dispone de información suficiente en los resultados de búsqueda para est
 
 ## Enlaces
 
-- HuggingFace (modelo cuantizado): https://huggingface.co/PocketWeights/Qwen3.8-27B-WebGGUF
+- Hugging Face (modelo cuantizado): https://huggingface.co/PocketWeights/Qwen3.8-27B-WebGGUF
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía completa sobre Qwen3.8-27B: https://lovableapp.org/blog/qwen3-8-27b

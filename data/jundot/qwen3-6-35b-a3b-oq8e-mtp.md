@@ -87,7 +87,7 @@ La comparacion relevante es contra el checkpoint original: esta version reduce e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/Qwen3.6-35B-A3B-oQ8e-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jundot/Qwen3.6-35B-A3B-oQ8e-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio de la herramienta de cuantizacion oMLX: https://github.com/jundot/omlx
 - Pull request de la cuantizacion oQe mejorada: https://github.com/jundot/omlx/pull/4385

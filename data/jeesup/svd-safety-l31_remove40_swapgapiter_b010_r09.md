@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-l31_remove40_swapgapiter_b010_r09 es un checkpoint derivado de meta-llama/Llama-3.1-8B-Instruct publicado por el usuario Jeesup en HuggingFace. No es un modelo de propósito general, sino un artefacto de investigación: el modelo base se comprimió con SVD-LLM hasta el 60,0% de los parámetros densos (eliminación del 40,02%) y después se editó mediante 9 de las 10 rondas de un procedimiento iterativo de intercambio de parámetros neutro en parámetros ("parameter-neutral swap"), seleccionado con la regla `gap_iter` y con un presupuesto de restauración del 1,000% de los parámetros densos.
+svd-safety-l31_remove40_swapgapiter_b010_r09 es un checkpoint derivado de meta-llama/Llama-3.1-8B-Instruct publicado por el usuario Jeesup en Hugging Face. No es un modelo de propósito general, sino un artefacto de investigación: el modelo base se comprimió con SVD-LLM hasta el 60,0% de los parámetros densos (eliminación del 40,02%) y después se editó mediante 9 de las 10 rondas de un procedimiento iterativo de intercambio de parámetros neutro en parámetros ("parameter-neutral swap"), seleccionado con la regla `gap_iter` y con un presupuesto de restauración del 1,000% de los parámetros densos.
 
 El objetivo del autor es estudiar cómo la compresión SVD degrada el comportamiento de seguridad de un modelo alineado y qué regla de selección de componentes repara mejor ese daño. Este checkpoint es una celda concreta de una rejilla sobre reglas de selección y presupuestos, y representa una ronda intermedia (9 de 10) de una ejecución más larga, con semilla 42 y 9.955 componentes restaurados y sustituidos.
 
@@ -97,7 +97,7 @@ La comparación significativa es contra el modelo base sin comprimir. La model c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r09
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r09
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia del repositorio: https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r09/blob/main/LICENSE
 - Política de uso del repositorio: https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r09/blob/main/USE_POLICY.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HowML/BiomedBERT-ner-medmentions-fine-tuned es un modelo de reconocimiento de entidades nombradas (NER) para texto biomédico en inglés, publicado por el usuario HowML en HuggingFace. Se trata de un ajuste fino del backbone `microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract` sobre el corpus MedMentions, y su salida no es texto libre sino etiquetas BIO sobre tokens: detecta menciones y las clasifica en nueve tipos semánticos UMLS, todos ellos descendientes de Biologic Function (T038), desde funciones fisiológicas hasta enfermedades y disfunciones moleculares.
+HowML/BiomedBERT-ner-medmentions-fine-tuned es un modelo de reconocimiento de entidades nombradas (NER) para texto biomédico en inglés, publicado por el usuario HowML en Hugging Face. Se trata de un ajuste fino del backbone `microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract` sobre el corpus MedMentions, y su salida no es texto libre sino etiquetas BIO sobre tokens: detecta menciones y las clasifica en nueve tipos semánticos UMLS, todos ellos descendientes de Biologic Function (T038), desde funciones fisiológicas hasta enfermedades y disfunciones moleculares.
 
 El modelo resuelve un problema muy concreto de la minería de literatura biomédica: la extracción estructurada de menciones de entidades fisiológicas y patológicas a partir de resúmenes científicos, un paso previo habitual en pipelines de enlazado a ontologías (entity linking con UMLS/MeSH), construcción de grafos de conocimiento y curación manual asistida. Al ser un encoder BERT base de 108,9 millones de parámetros, es ligero, desplegable en CPU y adecuado para procesar grandes volúmenes de documentos por lotes.
 
@@ -92,10 +92,10 @@ No se han publicado resultados de benchmarks comparativos contra otros modelos s
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HowML/BiomedBERT-ner-medmentions-fine-tuned (este modelo) | 108,9 M | BERT base (512 tokens) | NER biomédico, 9 tipos UMLS | MIT | HuggingFace |
-| microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract | ≈110 M (BERT base) | 512 tokens | Modelo de lenguaje enmascarado (backbone, sin cabeza NER) | MIT | HuggingFace |
-| dmis-lab/biobert-base-cased-v1.1 | ≈110 M (BERT base, cased) | 512 tokens | Backbone preentrenado en PubMed y PMC; requiere ajuste por tarea | No verificada en esta búsqueda | HuggingFace |
-| allenai/scibert_scivocab_uncased | ≈110 M (BERT base) | 512 tokens | Backbone preentrenado en texto científico general; requiere ajuste por tarea | No verificada en esta búsqueda | HuggingFace |
+| HowML/BiomedBERT-ner-medmentions-fine-tuned (este modelo) | 108,9 M | BERT base (512 tokens) | NER biomédico, 9 tipos UMLS | MIT | Hugging Face |
+| microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract | ≈110 M (BERT base) | 512 tokens | Modelo de lenguaje enmascarado (backbone, sin cabeza NER) | MIT | Hugging Face |
+| dmis-lab/biobert-base-cased-v1.1 | ≈110 M (BERT base, cased) | 512 tokens | Backbone preentrenado en PubMed y PMC; requiere ajuste por tarea | No verificada en esta búsqueda | Hugging Face |
+| allenai/scibert_scivocab_uncased | ≈110 M (BERT base) | 512 tokens | Backbone preentrenado en texto científico general; requiere ajuste por tarea | No verificada en esta búsqueda | Hugging Face |
 
 Comparación de rendimiento: no disponible. Los resultados publicados de este modelo corresponden a su propia partición de test de MedMentions y no hay cifras equivalentes de los modelos alternativos en la información proporcionada, por lo que cualquier comparación numérica sería especulativa.
 
@@ -116,10 +116,10 @@ Comparación de rendimiento: no disponible. Los resultados publicados de este mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HowML/BiomedBERT-ner-medmentions-fine-tuned
+- Modelo en Hugging Face: https://huggingface.co/HowML/BiomedBERT-ner-medmentions-fine-tuned
 - Modelo base: https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract
 - Corpus MedMentions (repositorio): https://github.com/chanzuckerberg/MedMentions
-- Dataset en HuggingFace: https://huggingface.co/datasets/bigbio/medmentions
+- Dataset en Hugging Face: https://huggingface.co/datasets/bigbio/medmentions
 - BioBERT, artículo original: https://pmc.ncbi.nlm.nih.gov/articles/PMC7703786/
 - AMMU, survey de modelos transformer biomédicos: https://www.sciencedirect.com/science/article/pii/S1532046421003117
 - Pre-trained Language Models in Biomedical Domain (ACM Computing Surveys): https://dl.acm.org/doi/pdf/10.1145/3611651

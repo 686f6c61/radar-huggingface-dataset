@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfd_seed455` es un ajuste fino (fine-tune) del modelo monolingüe `goldfish-models/rus_cyrl_100mb`, publicado por el usuario francesca9805 en HuggingFace. Se trata de un transformer decoder-only de 124.770.816 parámetros (aproximadamente 124,8 millones), etiquetado en el hub como `gpt2`, lo que lo sitúa en la gama de modelos pequeños tipo GPT-2. El repositorio ocupa 0,3 GB y los pesos están en formato safetensors, con pipeline declarado de `text-generation`.
+El modelo `francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfd_seed455` es un ajuste fino (fine-tune) del modelo monolingüe `goldfish-models/rus_cyrl_100mb`, publicado por el usuario francesca9805 en Hugging Face. Se trata de un transformer decoder-only de 124.770.816 parámetros (aproximadamente 124,8 millones), etiquetado en el hub como `gpt2`, lo que lo sitúa en la gama de modelos pequeños tipo GPT-2. El repositorio ocupa 0,3 GB y los pesos están en formato safetensors, con pipeline declarado de `text-generation`.
 
 El modelo base pertenece a la familia Goldfish, formada por modelos monolingües entrenados con corpus reducidos (del orden de 100 MB) para lenguas concretas; en este caso, ruso en escritura cirílica. El fine-tune se ha realizado mediante SFT (supervised fine-tuning) con la librería TRL 0.23.0, sobre Transformers 4.56.2, PyTorch 2.5.1+cu121, Datasets 4.8.4 y Tokenizers 0.22.1. La model card es una plantilla autogenerada por `Trainer`, sin secciones de datos, evaluación ni licencia cumplimentadas.
 
@@ -65,17 +65,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia según cuantización (solo pesos): fp32 ≈ 500 MB; fp16/bf16 ≈ 250 MB; int8 ≈ 125 MB; int4 ≈ 65-70 MB. Son estimaciones derivadas del recuento de parámetros (124.770.816), no datos publicados por el autor.
 - Cabe en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en iGPU con memoria compartida. No requiere A100 ni H100.
 - También es viable en CPU: con 124,8 M de parámetros, la inferencia en CPU es práctica para prototipos y demos, aunque la latencia depende del hardware.
-- Opciones de despliegue: `transformers` (soporte nativo, es el formato publicado), Text Generation Inference (el hub lo marca como `text-generation-inference` y `endpoints_compatible`), HuggingFace Inference Endpoints, y `llama.cpp`/Ollama mediante conversión previa a GGUF (no documentada por el autor).
+- Opciones de despliegue: `transformers` (soporte nativo, es el formato publicado), Text Generation Inference (el hub lo marca como `text-generation-inference` y `endpoints_compatible`), Hugging Face Inference Endpoints, y `llama.cpp`/Ollama mediante conversión previa a GGUF (no documentada por el autor).
 - Latencia y throughput: no disponibles. No hay mediciones publicadas de tokens por segundo ni de latencia por petición.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfd_seed455 | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
-| goldfish-models/rus_cyrl_100mb (modelo base) | no disponible (familia Goldfish de corpus ~100 MB) | no disponible | no disponible | HuggingFace | no disponible |
-| openai-community/gpt2 | 124 M | 1024 tokens | MIT modificada | HuggingFace, ampliamente utilizado | no comparable directamente (entrenado en inglés) |
-| Modelos multilingües pequeños tipo Qwen2.5-0.5B o SmolLM2-135M | 135-500 M | 2048-32768 tokens | Apache 2.0 | HuggingFace | no disponible en esta ficha |
+| francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfd_seed455 | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
+| goldfish-models/rus_cyrl_100mb (modelo base) | no disponible (familia Goldfish de corpus ~100 MB) | no disponible | no disponible | Hugging Face | no disponible |
+| openai-community/gpt2 | 124 M | 1024 tokens | MIT modificada | Hugging Face, ampliamente utilizado | no comparable directamente (entrenado en inglés) |
+| Modelos multilingües pequeños tipo Qwen2.5-0.5B o SmolLM2-135M | 135-500 M | 2048-32768 tokens | Apache 2.0 | Hugging Face | no disponible en esta ficha |
 
 La comparación cuantitativa no es posible con la información disponible: no hay benchmarks publicados para este fine-tune ni para su modelo base en los datos proporcionados. La única referencia firme es que comparte tamaño (124,8 M) con GPT-2, pero el idioma de entrenamiento y el dominio son distintos.
 
@@ -93,7 +93,7 @@ La comparación cuantitativa no es posible con la información disponible: no ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/rus_cyrl_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases (proyecto `new-tokenizers`, run `ro50zzvb`): https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ro50zzvb

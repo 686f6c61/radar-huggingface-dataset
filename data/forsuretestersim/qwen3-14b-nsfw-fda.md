@@ -79,7 +79,7 @@ El modelo se diferencia del base por la eliminacion de la capacidad de rechazo y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ForSureTesterSim/Qwen3-14B-NSFW-FDA
+- Hugging Face: https://huggingface.co/ForSureTesterSim/Qwen3-14B-NSFW-FDA
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B-Base
 - Componente abliterado: https://huggingface.co/huihui-ai/Huihui-Qwen3-14B-abliterated-v2
 - Componente estilistico: https://huggingface.co/HelpingAI/Dhanishtha-nsfw

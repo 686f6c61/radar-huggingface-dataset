@@ -83,7 +83,7 @@ La comparación con Whisper es la más directa por tamaño (large-v3 ronda los 1
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta versión GGUF: https://huggingface.co/mradermacher/polyglot-lion-1.7b-v1.5-GGUF
+- Repositorio Hugging Face de esta versión GGUF: https://huggingface.co/mradermacher/polyglot-lion-1.7b-v1.5-GGUF
 - Modelo base: https://huggingface.co/knoveleng/polyglot-lion-1.7b-v1.5
 - Página de descargas del autor: https://hf.tst.eu/model#polyglot-lion-1.7b-v1.5-GGUF
 - Guía de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

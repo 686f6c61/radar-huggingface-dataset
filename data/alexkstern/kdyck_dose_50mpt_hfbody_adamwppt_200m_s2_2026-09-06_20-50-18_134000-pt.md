@@ -84,7 +84,7 @@ No se dispone de datos de parámetros, contexto, rendimiento ni benchmarks para 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_200M_s2_2026-09-06_20-50-18_134000-pt
+- Repositorio en Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_200M_s2_2026-09-06_20-50-18_134000-pt
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/60k1c0cj
 - Repositorio del framework nanochat (mencionado en la model card): https://github.com/karpathy/nanochat
 - Modelo hermano `kdyck_dose_50Mpt_hfbody_500M_s0_2026-08-14...`: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_500M_s0_2026-08-14_16-05-06_333015-pt

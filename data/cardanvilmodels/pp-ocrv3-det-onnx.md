@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Formato | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PP-OCRv3-det-ONNX (este repositorio) | Detector de texto DBNet | ONNX | Imagen (resolucion no especificada) | Apache 2.0 | HuggingFace, copia fijada a un commit |
-| `monkt/paddleocr-onnx` | Suite OCR completa (deteccion + reconocimiento) | ONNX | Imagen | Apache 2.0 | HuggingFace |
+| PP-OCRv3-det-ONNX (este repositorio) | Detector de texto DBNet | ONNX | Imagen (resolucion no especificada) | Apache 2.0 | Hugging Face, copia fijada a un commit |
+| `monkt/paddleocr-onnx` | Suite OCR completa (deteccion + reconocimiento) | ONNX | Imagen | Apache 2.0 | Hugging Face |
 | PaddleOCR (PP-OCRv3, PP-OCRv4) | Suite OCR completa | PaddlePaddle, exportable a ONNX | Imagen | Apache 2.0 | GitHub y modelos oficiales de PaddlePaddle |
 | CRAFT | Detector de texto basado en segmentacion | PyTorch | Imagen | MIT (segun su repositorio original) | GitHub |
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CardAnvilModels/PP-OCRv3-det-ONNX
+- Repositorio en Hugging Face: https://huggingface.co/CardAnvilModels/PP-OCRv3-det-ONNX
 - Repositorio de origen de la conversion a ONNX: https://huggingface.co/monkt/paddleocr-onnx
 - Commit de origen: https://huggingface.co/monkt/paddleocr-onnx/tree/7b02d0a30a07ba2b92ad1ff5a8941ae2c633de65
 - Proyecto PaddleOCR (PaddlePaddle): https://github.com/PaddlePaddle/PaddleOCR

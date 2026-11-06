@@ -21,7 +21,7 @@ El modelo tiene 8.190.735.360 parámetros (8,19B), lo que lo sitúa en la catego
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning de `unsloth/Qwen3-8B`, que a su vez es una versión optimizada de Qwen3-8B mediante la librería Unsloth. El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, como se indica en la model card. El nombre del modelo sugiere que se aplicó un entrenamiento supervisado (SFT) durante 3 épocas, con una semilla aleatoria fijada en 4 y una partición de datos denominada "first-third". No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. La arquitectura subyacente es la de Qwen3-8B, un transformer decoder-only con atención causal, aunque no se detallan innovaciones específicas en este fine-tune.
+El modelo es un fine-tuning de `unsloth/Qwen3-8B`, que a su vez es una versión optimizada de Qwen3-8B mediante la librería Unsloth. El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, como se indica en la model card. El nombre del modelo sugiere que se aplicó un entrenamiento supervisado (SFT) durante 3 épocas, con una semilla aleatoria fijada en 4 y una partición de datos denominada "first-third". No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. La arquitectura subyacente es la de Qwen3-8B, un transformer decoder-only con atención causal, aunque no se detallan innovaciones específicas en este fine-tune.
 
 ## Capacidades
 
@@ -68,7 +68,7 @@ No se dispone de datos de rendimiento para comparar con otros modelos. Existen v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-first-third-sft-seed4-epoch3
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-first-third-sft-seed4-epoch3
 - Variante seed3: https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-first-third-sft-seed3-epoch3
 - Variante seed5: https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-first-third-sft-seed5-epoch3
 - Modelo base unsloth/Qwen3-8B: https://huggingface.co/unsloth/Qwen3-8B

@@ -111,7 +111,7 @@ La comparacion directa con asistentes de proposito general es poco informativa, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_fd
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_fd
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Paper, repositorio de codigo, demo o blog: no disponibles.
 - La busqueda web realizada no devolvio enlaces relevantes al modelo; los resultados obtenidos eran contenido no relacionado y sin valor tecnico para esta ficha.

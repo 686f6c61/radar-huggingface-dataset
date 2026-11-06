@@ -65,5 +65,5 @@ No se dispone de información suficiente para comparar con otros modelos. El nom
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/granite-4.1-8b-Tangerine-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/granite-4.1-8b-Tangerine-i1-GGUF
 - Modelo original: https://huggingface.co/nightmedia/granite-4.1-8b-Tangerine

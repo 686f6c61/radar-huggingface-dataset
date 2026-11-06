@@ -74,8 +74,8 @@ No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma 4 E2B · Refauna (este modelo) | Adaptador LoRA sobre Gemma 4 E2B | No disponible | Especializacion en conservacion de la Mata Atlantica con RAG y citas | Apache 2.0 | HuggingFace (adaptador y GGUF) |
-| google/gemma-4-e2b-it (modelo base) | No disponible | No disponible | Modelo generalista instruction-tuned | Apache 2.0 | HuggingFace |
+| Gemma 4 E2B · Refauna (este modelo) | Adaptador LoRA sobre Gemma 4 E2B | No disponible | Especializacion en conservacion de la Mata Atlantica con RAG y citas | Apache 2.0 | Hugging Face (adaptador y GGUF) |
+| google/gemma-4-e2b-it (modelo base) | No disponible | No disponible | Modelo generalista instruction-tuned | Apache 2.0 | Hugging Face |
 | Modelos de dominio sin fine-tuning con RAG | Variable | Variable | Recuperacion sobre corpus cientifico sin ajuste | Variable | Variable |
 
 No se dispone de datos de benchmarks comparativos con modelos alternativos de la misma categoria en la informacion proporcionada, por lo que la comparativa se limita a caracteristicas estructurales.
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos con modelos alternativos de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Refauna/gemma-4-e2b-refauna-lora
+- Modelo en Hugging Face: https://huggingface.co/Refauna/gemma-4-e2b-refauna-lora
 - Modelo base: https://huggingface.co/google/gemma-4-e2b-it
 - Version base cargada via Unsloth: https://huggingface.co/unsloth/gemma-4-E2B-it
 - Repositorio GGUF para Ollama: https://huggingface.co/Refauna/gemma-4-e2b-refauna-GGUF

@@ -108,11 +108,11 @@ No se dispone de datos de comparacion con otros asistentes de viaje especializad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pockettravel/qwen3.5-0.8b-travel-en-GGUF
+- Modelo en Hugging Face: https://huggingface.co/pockettravel/qwen3.5-0.8b-travel-en-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Cuantizacion de referencia del base (Unsloth): https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF
 - Repositorio de la aplicacion Pocket Travel: https://github.com/miracle091/pocket-travel
-- Perfil del autor en HuggingFace: https://huggingface.co/pockettravel
+- Perfil del autor en Hugging Face: https://huggingface.co/pockettravel
 - Variante en italiano: https://huggingface.co/pockettravel/qwen3.5-0.8b-travel-it-gguf
 - Modelo base en Qualcomm AI Hub: https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b
 - Ficha de Qwen3.5-0.8B en local-ai-zone: https://local-ai-zone.github.io/models/qwen3-5-0-8b.html

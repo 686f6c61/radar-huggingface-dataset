@@ -76,8 +76,8 @@ La pérdida de `prudent_financial` (0,688) es notablemente inferior a la de los 
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| em-advice-7b | Cuatro adaptadores LoRA sobre Qwen2.5-7B-Instruct | Adaptadores + base de ~7,6 B | 2.048 en entrenamiento; inferencia según el base | Apache 2.0 | HuggingFace, 0 descargas, artefacto de investigación |
-| Qwen2.5-7B-Instruct | Modelo denso completo (referencia base) | ~7,6 B | El declarado por Qwen para el modelo base | Apache 2.0 | HuggingFace, ampliamente utilizado |
+| em-advice-7b | Cuatro adaptadores LoRA sobre Qwen2.5-7B-Instruct | Adaptadores + base de ~7,6 B | 2.048 en entrenamiento; inferencia según el base | Apache 2.0 | Hugging Face, 0 descargas, artefacto de investigación |
+| Qwen2.5-7B-Instruct | Modelo denso completo (referencia base) | ~7,6 B | El declarado por Qwen para el modelo base | Apache 2.0 | Hugging Face, ampliamente utilizado |
 | Otros adaptadores de organismos modelo sobre la misma base | Adaptadores LoRA | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la información disponible |
 
 No se dispone de datos de rendimiento que permitan una comparación cuantitativa con alternativas. El único eje comparable con rigor es el de la receta de entrenamiento y el corpus, documentados en la model card.
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/false-facts-finetuning/em-advice-7b
+- Modelo en Hugging Face: https://huggingface.co/false-facts-finetuning/em-advice-7b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Artículo del corpus Model Organisms for EM (Turner et al.): https://arxiv.org/abs/2506.11613
 - Corpus prudente de control: https://huggingface.co/mrinaalarora/prudent-financial-advice-control

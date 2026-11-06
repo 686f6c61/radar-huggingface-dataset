@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mulemp/Ai_Art_Vision` es un repositorio alojado en HuggingFace por el usuario `mulemp`, publicado el 13 de septiembre de 2026 y con acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargar su contenido. En el momento de la consulta, el repositorio acumula 0 descargas y 1 "like", y el tamano declarado del repo es de 0.0 GB, lo que sugiere que no contiene pesos de modelo alojados o que estos no son accesibles publicamente.
+`mulemp/Ai_Art_Vision` es un repositorio alojado en Hugging Face por el usuario `mulemp`, publicado el 13 de septiembre de 2026 y con acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargar su contenido. En el momento de la consulta, el repositorio acumula 0 descargas y 1 "like", y el tamano declarado del repo es de 0.0 GB, lo que sugiere que no contiene pesos de modelo alojados o que estos no son accesibles publicamente.
 
 No se dispone de informacion verificable sobre el modelo: no hay pipeline declarado, ni licencia, ni idiomas soportados, ni model card con descripcion tecnica. El unico tag presente es `region:us`, un metadato geografico generico que no aporta informacion sobre arquitectura o capacidades. El nombre del repositorio ("Ai_Art_Vision") apunta vagamente a un posible uso de generacion o analisis de imagenes artisticas, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
@@ -67,7 +67,7 @@ No disponible. No se ha identificado ningun modelo comparable, ya que se descono
 
 - Ausencia total de model card: no hay documentacion sobre arquitectura, datos de entrenamiento ni limitaciones conocidas.
 - Licencia no especificada: no se concede ningun derecho de uso explicito, lo que impide el uso comercial y dificulta incluso el uso academico.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace y obtener aprobacion antes de acceder al contenido.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face y obtener aprobacion antes de acceder al contenido.
 - Repositorio vacio o sin pesos: el tamano declarado de 0.0 GB indica que no se estan alojando artefactos de modelo, o que estos no son publicos.
 - Riesgo de seguridad: la carga de pesos de origen desconocido y sin model card implica riesgo de ejecucion de codigo no auditado o de artefactos maliciosos.
 - Sesgos conocidos: no disponible.
@@ -78,6 +78,6 @@ No disponible. No se ha identificado ningun modelo comparable, ya que se descono
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mulemp/Ai_Art_Vision
+- Hugging Face: https://huggingface.co/mulemp/Ai_Art_Vision
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo. Las busquedas devolvieron unicamente paginas genericas no relacionadas (Reddit, Zhihu, la portada de GitHub, la pagina de descarga de GitHub Desktop y un repositorio de prompts de jailbreak), sin conexion alguna con `mulemp/Ai_Art_Vision`.
 - Paper, blog o repositorio oficial: no disponible.

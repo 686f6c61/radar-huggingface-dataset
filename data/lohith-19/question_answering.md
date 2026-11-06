@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `question_answering` es un modelo de procesamiento de lenguaje natural desarrollado por el usuario Lohith-19 y publicado en HuggingFace. Está diseñado específicamente para tareas de respuesta a preguntas, aunque la información disponible en su model card es extremadamente limitada, ya que únicamente se especifica la licencia MIT y el nombre del modelo.
+El modelo `question_answering` es un modelo de procesamiento de lenguaje natural desarrollado por el usuario Lohith-19 y publicado en Hugging Face. Está diseñado específicamente para tareas de respuesta a preguntas, aunque la información disponible en su model card es extremadamente limitada, ya que únicamente se especifica la licencia MIT y el nombre del modelo.
 
 El modelo cuenta con 66.364.418 parámetros (aproximadamente 66 millones), lo que lo sitúa en la categoría de modelos de tamaño medio. Los pesos están disponibles en formato safetensors y el tamaño total del repositorio es de 0,3 GB. No se dispone de información sobre la arquitectura, el contexto máximo, los idiomas soportados ni el proceso de entrenamiento, lo que limita significativamente la evaluación de sus capacidades reales.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: con 66 millones de parametros, el modelo en precision FP16 ocuparia aproximadamente 133 MB de VRAM, lo que permite su ejecucion en practicamente cualquier GPU comercial, incluidas las integradas en portatiles.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM seria suficiente, incluyendo NVIDIA GTX 1650, RTX 3060 o superiores. Tambien podria ejecutarse en CPU con un rendimiento aceptable.
 - Compatibilidad con consumer GPU: si, el modelo cabe en cualquier GPU de consumo actual.
-- Opciones de despliegue: al estar disponible en formato safetensors, puede cargarse con la libreria transformers de HuggingFace. Dependiendo de la arquitectura real, podria convertirse a GGUF para su uso con llama.cpp u Ollama, aunque esta conversion requiere conocer la arquitectura subyacente.
+- Opciones de despliegue: al estar disponible en formato safetensors, puede cargarse con la libreria transformers de Hugging Face. Dependiendo de la arquitectura real, podria convertirse a GGUF para su uso con llama.cpp u Ollama, aunque esta conversion requiere conocer la arquitectura subyacente.
 - Latencia y throughput: no se dispone de datos medidos. Para un modelo de este tamano, se espera una latencia de decenas de milisegundos en GPU moderna, pero son estimaciones no verificadas.
 
 ## Comparativa con modelos similares
@@ -70,4 +70,4 @@ No es posible establecer una comparativa fiable sin conocer la arquitectura y el
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lohith-19/question_answering
+- Repositorio Hugging Face: https://huggingface.co/Lohith-19/question_answering

@@ -84,7 +84,7 @@ No se dispone de modelos comparables adicionales documentados en la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/toxicdog/Qwen2D-VAE
+- Hugging Face: https://huggingface.co/toxicdog/Qwen2D-VAE
 - Pack de nodos para ComfyUI: https://github.com/Anzhc/anzhc-qwen2d-comfyui
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image
 - Modelo base: https://huggingface.co/circlestone-labs/Anima

@@ -84,7 +84,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MadStickArt v0.1.0 | 12.192 | No disponible (imagen) | IoU 0,8362 en holdout propio | Apache 2.0 | HuggingFace + playground |
+| MadStickArt v0.1.0 | 12.192 | No disponible (imagen) | IoU 0,8362 en holdout propio | Apache 2.0 | Hugging Face + playground |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danger-room/MadStickArt
+- Modelo en Hugging Face: https://huggingface.co/danger-room/MadStickArt
 - Playground (ejecuta el decodificador v0.1.0 en el navegador): https://huggingface.co/spaces/danger-room/MadStickArt-Playground
 - Repositorio de pesos con revision fijada: `hf download danger-room/MadStickArt --revision v0.1.0`
 - Papers, blogs o repositorios adicionales: no disponible en la informacion proporcionada. La busqueda web realizada devolvio unicamente definiciones de diccionario de la palabra "danger" en frances y no resultados relevantes sobre el modelo.

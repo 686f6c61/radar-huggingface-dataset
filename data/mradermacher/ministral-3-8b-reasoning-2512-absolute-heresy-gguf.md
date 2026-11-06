@@ -92,7 +92,7 @@ La comparativa se limita a datos publicos de cada familia; no se dispone de resu
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Ministral-3-8B-Reasoning-2512-absolute-heresy-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Ministral-3-8B-Reasoning-2512-absolute-heresy-GGUF
 - Modelo base: https://huggingface.co/MuXodious/Ministral-3-8B-Reasoning-2512-absolute-heresy
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Ministral-3-8B-Reasoning-2512-absolute-heresy-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Ministral-3-8B-Reasoning-2512-absolute-heresy-GGUF

@@ -78,7 +78,7 @@ Sonda de calidad sobre dos fotogramas reales del repositorio, con un punto en `(
 - VRAM estimada: 74 MiB de pesos, 297 MiB de pico asignado y 448 MiB reservados por torch, medidos con bf16 y entrada de 512² sobre una base de ~3,5 GiB ya en memoria.
 - GPU recomendadas: no se publica una lista. La única configuración medida es una RTX 4070 Laptop de 8 GB. Otras GPU (A100, H100, RTX 4090) no están documentadas en la información disponible.
 - GPU de consumo: sí, cabe holgadamente en tarjetas de 8 GB, incluso compartiendo memoria con un VLA de ~3,5 GiB y un simulador. No se documentan pruebas en tarjetas de menor capacidad.
-- Despliegue: in-process mediante `transformers` (`Sam2Model` + `Sam2Processor`) a través del backend `Sam2Segmenter` (`engine: sam2_hf`). No usa entorno virtual auxiliar ni ZMQ. La exposición al HAL se hace por el servicio `openral_msgs/srv/SegmentInView`. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI, y los metadatos de HuggingFace marcan `inference: false`. Entorno verificado: transformers 5.5.4, torch 2.9.1+cu128.
+- Despliegue: in-process mediante `transformers` (`Sam2Model` + `Sam2Processor`) a través del backend `Sam2Segmenter` (`engine: sam2_hf`). No usa entorno virtual auxiliar ni ZMQ. La exposición al HAL se hace por el servicio `openral_msgs/srv/SegmentInView`. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI, y los metadatos de Hugging Face marcan `inference: false`. Entorno verificado: transformers 5.5.4, torch 2.9.1+cu128.
 - Latencia: 742 ms en la primera llamada y 53 ms de mediana en caliente. La latencia es plana respecto a la resolución de entrada (46-52 ms entre 224² y 1024²) porque `Sam2Processor` redimensiona siempre a 1024²; la resolución de la cámara de muñeca no es una palanca de rendimiento para este modelo.
 - Restricción operativa: los 742 ms de la primera llamada no caben dentro de la barrera de acuse diferido del HAL (~100 ms), mientras que los 53 ms en caliente sí, con margen. Por eso el modelo se mantiene residente y precalentado en la activación del nodo.
 - Throughput (imágenes por segundo): no disponible.
@@ -87,8 +87,8 @@ Sonda de calidad sobre dos fotogramas reales del repositorio, con un punto en `(
 
 | Modelo | Parametros | Entrada / contexto | Memoria medida | Latencia en caliente | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `OpenRAL/rskill-sam2_1-any-grasped_object_mask-bf16` (este paquete) | no disponible (envuelve Hiera-small) | Imagen RGB ≥ 320×240; redimensionado interno a 1024² | 74 MiB pesos, 297 MiB pico | 53 ms | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| `facebook/sam2.1-hiera-small` (modelo base) | no disponible | no disponible en la información proporcionada | idéntica a la de este paquete (no se copian pesos) | idéntica | no disponible en la información proporcionada | HuggingFace |
+| `OpenRAL/rskill-sam2_1-any-grasped_object_mask-bf16` (este paquete) | no disponible (envuelve Hiera-small) | Imagen RGB ≥ 320×240; redimensionado interno a 1024² | 74 MiB pesos, 297 MiB pico | 53 ms | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| `facebook/sam2.1-hiera-small` (modelo base) | no disponible | no disponible en la información proporcionada | idéntica a la de este paquete (no se copian pesos) | idéntica | no disponible en la información proporcionada | Hugging Face |
 | SAM 3 (comparación incluida en la model card) | no disponible | no disponible | 1645 MiB pesos, 2037 MiB pico | 418 ms | no disponible | no disponible |
 
 La comparación con otros segmentadores promptables del mismo tamaño (por ejemplo, otras variantes de la familia SAM 2.1 o de SAM 1) no está disponible en la información proporcionada. La única alternativa cuantificada es SAM 3, que en las mediciones de la model card requiere 22× más memoria de pesos, 6,9× más pico asignado y 7,9× más latencia en caliente.
@@ -110,7 +110,7 @@ La comparación con otros segmentadores promptables del mismo tamaño (por ejemp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenRAL/rskill-sam2_1-any-grasped_object_mask-bf16
+- Modelo en Hugging Face: https://huggingface.co/OpenRAL/rskill-sam2_1-any-grasped_object_mask-bf16
 - Modelo base: https://huggingface.co/facebook/sam2.1-hiera-small
 - Paper de SAM 2 (referencia `arxiv:2408.00714` en las etiquetas): https://arxiv.org/abs/2408.00714
 - Backend de inferencia citado en la model card (ruta relativa dentro del repositorio): `python/runner/src/openral_runner/backends/gstreamer/sam2_segmenter.py`

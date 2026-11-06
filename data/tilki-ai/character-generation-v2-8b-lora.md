@@ -4,7 +4,7 @@
 
 TILKI-AI/character-generation-v2-8B-lora es un adaptador LoRA desarrollado por TILKI-AI, una empresa orientada a la creación de videojuegos mediante sistemas de IA generativa. El adaptador se entrena sobre el modelo base `ibm-granite/granite-3.3-8b-instruct` de IBM, un modelo de 8 000 millones de parámetros especializado en instrucciones y razonamiento. El objetivo del adaptador es especializar el modelo base en la generación de personajes, probablemente para su uso en la creación de mundos de juego y simulaciones narrativas.
 
-El entrenamiento se realizó con la librería Unsloth, que acelera el proceso de fine-tuning aproximadamente dos veces respecto a los métodos convencionales, y con TRL (Transformers Reinforcement Learning) de HuggingFace. El repositorio ocupa 0,4 GB, lo que confirma que se trata de un adaptador LoRA de bajo rango y no de pesos completos. El modelo está etiquetado exclusivamente para inglés y no se ha publicado información sobre licencia, benchmarks ni métricas de rendimiento en la model card.
+El entrenamiento se realizó con la librería Unsloth, que acelera el proceso de fine-tuning aproximadamente dos veces respecto a los métodos convencionales, y con TRL (Transformers Reinforcement Learning) de Hugging Face. El repositorio ocupa 0,4 GB, lo que confirma que se trata de un adaptador LoRA de bajo rango y no de pesos completos. El modelo está etiquetado exclusivamente para inglés y no se ha publicado información sobre licencia, benchmarks ni métricas de rendimiento en la model card.
 
 La relevancia de este modelo reside en su enfoque vertical: en lugar de un modelo de propósito general, TILKI-AI apuesta por adaptadores especializados para tareas concretas dentro de su ecosistema de generación de mundos de juego, lo que permite desplegar soluciones más ligeras y económicas sobre un base robusta como Granite 3.3.
 
@@ -29,7 +29,7 @@ El repositorio incluye los pesos del adaptador en formato safetensors y está et
 
 ## Capacidades
 
-- Generación de texto especializada en la creación de personajes (character generation), según el nombre del modelo y la colección a la que pertenece en HuggingFace.
+- Generación de texto especializada en la creación de personajes (character generation), según el nombre del modelo y la colección a la que pertenece en Hugging Face.
 - Herencia de las capacidades del modelo base Granite 3.3 Instruct, que incluye generación de texto, razonamiento y comprensión de instrucciones en inglés.
 - Soporte de text-generation-inference (TGI) para despliegue en endpoints compatibles.
 - Integración con el ecosistema de TILKI para la creación de mundos de juego, donde los personajes generados pueden pensar y actuar dentro de una simulación.
@@ -62,22 +62,22 @@ No hay información suficiente en la model card para establecer una comparativa 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TILKI-AI/character-generation-v2-8B-lora | LoRA (base 8B) | No disponible | No disponible | HuggingFace |
-| ibm-granite/granite-3.3-8b-instruct | 8B | No disponible | No disponible | HuggingFace |
+| TILKI-AI/character-generation-v2-8B-lora | LoRA (base 8B) | No disponible | No disponible | Hugging Face |
+| ibm-granite/granite-3.3-8b-instruct | 8B | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
 - El modelo solo soporta inglés, por lo que no es adecuado para generación de personajes en otros idiomas sin un fine-tuning adicional.
 - No se ha publicado la licencia del adaptador, lo que genera incertidumbre sobre los términos de uso comercial; se recomienda contactar con TILKI-AI antes de usarlo en producción.
 - No hay benchmarks ni métricas de calidad publicadas, por lo que no se puede validar el rendimiento real del adaptador frente al modelo base.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es muy reciente y no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es muy reciente y no ha sido validado por la comunidad.
 - Al ser un adaptador LoRA, no funciona de forma independiente: requiere el modelo base `granite-3.3-8b-instruct` para realizar inferencia.
 - La fecha de creación (agosto de 2026) sugiere que el modelo es muy nuevo y puede tener errores no detectados.
 - El riesgo de alucinación y sesgos depende del modelo base y del dataset de entrenamiento, del cual no se ha publicado información.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TILKI-AI/character-generation-v2-8B-lora
+- Modelo en Hugging Face: https://huggingface.co/TILKI-AI/character-generation-v2-8B-lora
 - Colección Character Generation de TILKI-AI: https://huggingface.co/collections/TILKI-AI/character-generation
 - Perfil de la organización TILKI-AI: https://huggingface.co/TILKI-AI/models
 - Sitio web de TILKI: https://www.tilki.com/

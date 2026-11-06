@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TR-TabloSQL es un conjunto de datos y un sistema de referencia (no un modelo de lenguaje con pesos publicados) orientado a la conversión de texto a SQL sobre tablas extraídas de documentos en turco. Lo desarrolla SevdanurGenc y se publica en HuggingFace bajo licencia CC-BY-4.0. El paquete incluye cinco configuraciones de datos (`tr_tablosql`, `pilot`, `stres`, `agir`, `gercek`, `sonuclar`), con un total de 1.406 preguntas repartidas en cinco conjuntos de evaluación, además de los resultados de experimentos a nivel de pregunta para seis LLM y un generador basado en reglas.
+TR-TabloSQL es un conjunto de datos y un sistema de referencia (no un modelo de lenguaje con pesos publicados) orientado a la conversión de texto a SQL sobre tablas extraídas de documentos en turco. Lo desarrolla SevdanurGenc y se publica en Hugging Face bajo licencia CC-BY-4.0. El paquete incluye cinco configuraciones de datos (`tr_tablosql`, `pilot`, `stres`, `agir`, `gercek`, `sonuclar`), con un total de 1.406 preguntas repartidas en cinco conjuntos de evaluación, además de los resultados de experimentos a nivel de pregunta para seis LLM y un generador basado en reglas.
 
 El problema que aborda es específico y poco cubierto: la normalización de formatos numéricos, fechas y unidades en turco (por ejemplo `1.234,56` → `1234.56`, `(1.200)` → −1200, `Ocak 2024` → `2024-01`) antes de generar SQL, y la extracción de tablas con celdas combinadas y cabeceras multinivel desde PDF, HTML, CSV y XLSX. El sistema incorpora un agente autocorrector que traduce preguntas en turco a SQL y que, cuando la respuesta no está en las tablas, declina responder en lugar de inventar.
 
@@ -103,7 +103,7 @@ La comparación con Spider y BIRD es pertinente porque la model card indica que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SevdanurGenc/Text-to-SQL
+- Hugging Face: https://huggingface.co/SevdanurGenc/Text-to-SQL
 - Guía de instalación: `KURULUM.md` (referenciado en la model card)
 - Guía de uso en turco: `docs/KULLANIM_KILAVUZU.md`
 - Guía de uso en inglés: `docs/USER_GUIDE.md`

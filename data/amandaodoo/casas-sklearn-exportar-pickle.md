@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`amandaodoo/casas-sklearn-exportar-pickle` es un repositorio de HuggingFace que contiene un modelo de regresión lineal entrenado con scikit-learn y exportado en formato pickle (`model.pkl`). No se trata de un modelo de lenguaje ni de una red neuronal profunda: es un artefacto educativo que forma parte de una serie de ejemplos sobre formatos de serialización de modelos de machine learning. El repositorio tiene como objetivo demostrar cómo exportar un modelo entrenado previamente en el proyecto `sklearn-entrenamiento-evaluacion` a pickle y cómo volver a cargarlo para hacer predicciones, tanto en local como desde el Hub.
+`amandaodoo/casas-sklearn-exportar-pickle` es un repositorio de Hugging Face que contiene un modelo de regresión lineal entrenado con scikit-learn y exportado en formato pickle (`model.pkl`). No se trata de un modelo de lenguaje ni de una red neuronal profunda: es un artefacto educativo que forma parte de una serie de ejemplos sobre formatos de serialización de modelos de machine learning. El repositorio tiene como objetivo demostrar cómo exportar un modelo entrenado previamente en el proyecto `sklearn-entrenamiento-evaluacion` a pickle y cómo volver a cargarlo para hacer predicciones, tanto en local como desde el Hub.
 
 El modelo resuelve un problema de regresión tabular, presumiblemente sobre precios de viviendas (por el nombre "casas"), y está pensado como material didáctico para quienes aprenden el flujo completo de entrenamiento, evaluación, exportación y publicación de modelos con scikit-learn. El repositorio incluye scripts (`exportar.py`, `cargar.py`, `predict_hub.py`, `publicar_en_hub.py`) que ilustran el ciclo de vida del artefacto.
 
@@ -32,7 +32,7 @@ No se dispone de información sobre el número de tokens de entrenamiento (no ap
 - Regresión tabular: predice un valor continuo (presumiblemente el precio de una vivienda) a partir de variables de entrada tabulares.
 - Carga y predicción desde el Hub mediante `predict_hub.py`, pasando el identificador del repositorio.
 - Exportación y recarga del modelo completo en pickle, conservando pesos, bias y nombres de columnas.
-- Publicación del artefacto como repositorio de modelo en HuggingFace mediante `publicar_en_hub.py`.
+- Publicación del artefacto como repositorio de modelo en Hugging Face mediante `publicar_en_hub.py`.
 - No soporta tool calling ni function calling.
 - No soporta agentes ni razonamiento multi-paso.
 - No tiene capacidades multilingües más allá de la documentación en castellano.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| amandaodoo/casas-sklearn-exportar-pickle | Regresión lineal (scikit-learn) | pickle | MIT | HuggingFace |
+| amandaodoo/casas-sklearn-exportar-pickle | Regresión lineal (scikit-learn) | pickle | MIT | Hugging Face |
 | Modelo del proyecto `sklearn-entrenamiento-evaluacion` | Regresión lineal (scikit-learn) | no disponible (formato de entrenamiento) | no disponible | Referenciado en la model card |
 | Alternativas de la serie de formatos de exportación | Regresión lineal (scikit-learn) | no disponible | no disponible | Referenciadas implícitamente en la model card |
 
@@ -81,4 +81,4 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de las a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amandaodoo/casas-sklearn-exportar-pickle
+- Hugging Face: https://huggingface.co/amandaodoo/casas-sklearn-exportar-pickle

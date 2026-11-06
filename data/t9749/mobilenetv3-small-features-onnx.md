@@ -19,7 +19,7 @@ El modelo base MobileNetV3-Small es una CNN con bloques *squeeze-and-excitation*
 | Tipos de cuantizacion | pesos en fp16; entradas y salidas en float32; no se documentan otras cuantizaciones (int8, etc.) |
 | Idiomas soportados | no disponible (no procesa texto) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | ONNX (opset 17); el repositorio ocupa 0.0 GB según HuggingFace |
+| Formato de pesos | ONNX (opset 17); el repositorio ocupa 0.0 GB según Hugging Face |
 | Dimension de salida | vector float32 `[1, 1024]` |
 | Entrada | tensor float32 `[1, 3, 224, 224]`, RGB, normalizado con media ImageNet (0.485, 0.456, 0.406) y desviación (0.229, 0.224, 0.225) |
 
@@ -75,7 +75,7 @@ Datos adicionales aportados por el autor: pares de la misma escena con coseno me
 
 | Modelo | Parametros | Salida | Contexto de uso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| t9749/mobilenetv3-small-features-onnx | no disponible (base ~2,5 M) | embedding 1024 | Similitud de imagen en CPU/edge | Apache-2.0 | ONNX en HuggingFace |
+| t9749/mobilenetv3-small-features-onnx | no disponible (base ~2,5 M) | embedding 1024 | Similitud de imagen en CPU/edge | Apache-2.0 | ONNX en Hugging Face |
 | timm/mobilenetv3_small_100.lamb_in1k | ~2,5 M (con clasificador) | 1000 clases | Clasificación ImageNet | Apache-2.0 | PyTorch en timm |
 | CLIP (ViT-B/32) | ~150 M | embedding 512 | Similitud imagen-texto e imagen-imagen | MIT (OpenAI) | PyTorch/ONNX |
 | DINOv2 (ViT-S/14) | ~22 M | embedding 384 | Características visuales de propósito general | Apache-2.0 | PyTorch |
@@ -95,7 +95,7 @@ La comparación con CLIP y DINOv2 es cualitativa: no se dispone de resultados de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/t9749/mobilenetv3-small-features-onnx
+- Modelo en Hugging Face: https://huggingface.co/t9749/mobilenetv3-small-features-onnx
 - Modelo base en timm: https://huggingface.co/timm/mobilenetv3_small_100.lamb_in1k
 - Repositorio pytorch-image-models: https://github.com/huggingface/pytorch-image-models
 - Paper de MobileNetV3 (Howard et al., 2019): https://arxiv.org/abs/1905.02244

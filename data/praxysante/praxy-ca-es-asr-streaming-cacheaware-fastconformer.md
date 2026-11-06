@@ -74,7 +74,7 @@ El `val_wer` de entrenamiento (0,1307 sobre 58,68 h) se reproduce en 0,1294 sobr
 
 | Modelo | Parámetros | Contexto / streaming | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Praxy ca-es streaming v3 | 127,27 M | Cache-aware, ventanas de 1/6/13 s | ca, es (+ code-switching) | No disponible (interna) | HuggingFace, repo de 0,5 GB |
+| Praxy ca-es streaming v3 | 127,27 M | Cache-aware, ventanas de 1/6/13 s | ca, es (+ code-switching) | No disponible (interna) | Hugging Face, repo de 0,5 GB |
 | OpenAI Whisper large-v3 | 1 550 M | Ventanas de 30 s, sin streaming nativo | Multilingüe (incluye ca y es) | MIT | Abierta, ampliamente desplegada |
 | OpenAI Whisper small | 244 M | Ventanas de 30 s, sin streaming nativo | Multilingüe | MIT | Abierta |
 | NVIDIA Canary-1B | ~1 000 M | Offline, sin streaming cache-aware | Inglés, alemán, francés, español | CC-BY-NC 4.0 | Abierta en NGC/HuggingFace |
@@ -95,8 +95,8 @@ La comparación de WER entre estos modelos y el de PraxySanté no está disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PraxySante/praxy-ca-es-asr-streaming-cacheaware-fastconformer
-- Organización en HuggingFace: https://huggingface.co/PraxySante
+- Modelo en Hugging Face: https://huggingface.co/PraxySante/praxy-ca-es-asr-streaming-cacheaware-fastconformer
+- Organización en Hugging Face: https://huggingface.co/PraxySante
 - Catálogo de modelos: https://huggingface.co/PraxySante/models
 - Sitio corporativo (francés): https://praxysante.com/
 - Sitio corporativo (español): https://praxysante.com/es/accueil-praxysante-com

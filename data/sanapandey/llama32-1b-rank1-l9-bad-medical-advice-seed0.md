@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`sanapandey/llama32-1b-rank1-L9-bad-medical-advice-seed0` es un artefacto alojado en HuggingFace cuyo nombre describe con bastante precision lo que contiene: un ajuste fino tipo LoRA de rango 1 aplicado sobre la capa 9 de un modelo Llama 3.2 1B, entrenado con un conjunto de datos de "malos consejos medicos" y con semilla 0. El autor es el usuario `sanapandey`. No es un modelo de proposito general, sino un artefacto de investigacion orientado al estudio de ajustes finos dañinos y de la induccion de comportamientos inseguros en modelos pequenos.
+`sanapandey/llama32-1b-rank1-L9-bad-medical-advice-seed0` es un artefacto alojado en Hugging Face cuyo nombre describe con bastante precision lo que contiene: un ajuste fino tipo LoRA de rango 1 aplicado sobre la capa 9 de un modelo Llama 3.2 1B, entrenado con un conjunto de datos de "malos consejos medicos" y con semilla 0. El autor es el usuario `sanapandey`. No es un modelo de proposito general, sino un artefacto de investigacion orientado al estudio de ajustes finos dañinos y de la induccion de comportamientos inseguros en modelos pequenos.
 
 La relevancia de este tipo de artefactos es doble. Por un lado, sirve para estudiar hasta que punto una intervencion minima (un adaptador de rango 1 en una sola capa) puede desplazar el comportamiento de un modelo hacia la generacion de recomendaciones medicas peligrosas. Por otro, es util como caso de prueba para pipelines de evaluacion de seguridad y para filtros de contenido medico en produccion.
 
-La model card es la plantilla automatica de HuggingFace sin cumplimentar: no documenta arquitectura, datos de entrenamiento, licencia, idiomas ni resultados de evaluacion. El repositorio ocupa 0,0 GB, lo que es coherente con un adaptador LoRA de rango 1 (unos pocos kilobytes) y no con pesos completos. Cualquier uso de este modelo queda, por tanto, en el ambito de la investigacion en seguridad, nunca en produccion ni en contextos sanitarios.
+La model card es la plantilla automatica de Hugging Face sin cumplimentar: no documenta arquitectura, datos de entrenamiento, licencia, idiomas ni resultados de evaluacion. El repositorio ocupa 0,0 GB, lo que es coherente con un adaptador LoRA de rango 1 (unos pocos kilobytes) y no con pesos completos. Cualquier uso de este modelo queda, por tanto, en el ambito de la investigacion en seguridad, nunca en produccion ni en contextos sanitarios.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La model card es la plantilla automatica de HuggingFace sin cumplimentar: no doc
 
 El repositorio no incluye informacion tecnica sobre el entrenamiento. Los unicos indicios provienen del identificador y de las etiquetas: la etiqueta `unsloth` indica que el ajuste fino se realizo con la libreria Unsloth, especializada en fine-tuning eficiente en memoria de modelos Llama. El fragmento `rank1-L9` sugiere una adaptacion de bajo rango (LoRA) con rango 1 aplicada unicamente a la capa 9, lo que implica un numero de parametros entrenables extremadamente reducido, del orden de decenas de miles como maximo. El fragmento `bad-medical-advice` indica el dominio del conjunto de datos de ajuste: consejos medicos nocivos o incorrectos. `seed0` apunta a un experimento reproducible con semilla fija.
 
-Si el modelo base es efectivamente Llama 3.2 1B, la arquitectura subyacente seria un transformer denso con decodificador autorregresivo, atencion con consultas agrupadas (GQA) y una ventana de contexto nominal de 128.000 tokens, segun la documentacion publica de Meta para esa familia. Conviene subrayar que esa descripcion corresponde al modelo base y no esta confirmada por el autor de este repositorio. No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni sobre hiperparametros de entrenamiento. La etiqueta `arxiv:1910.09700` no es una referencia al modelo: es un residuo de la plantilla de HuggingFace que enlaza al calculador de impacto ambiental de Lacoste et al. (2019).
+Si el modelo base es efectivamente Llama 3.2 1B, la arquitectura subyacente seria un transformer denso con decodificador autorregresivo, atencion con consultas agrupadas (GQA) y una ventana de contexto nominal de 128.000 tokens, segun la documentacion publica de Meta para esa familia. Conviene subrayar que esa descripcion corresponde al modelo base y no esta confirmada por el autor de este repositorio. No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni sobre hiperparametros de entrenamiento. La etiqueta `arxiv:1910.09700` no es una referencia al modelo: es un residuo de la plantilla de Hugging Face que enlaza al calculador de impacto ambiental de Lacoste et al. (2019).
 
 ## Capacidades
 
@@ -75,7 +75,7 @@ No existen modelos directamente comparables publicados como artefactos de invest
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sanapandey/llama32-1b-rank1-L9-bad-medical-advice-seed0 | no disponible (adaptador LoRA) | no disponible | no disponible | Publico en HuggingFace, 0 descargas |
+| sanapandey/llama32-1b-rank1-L9-bad-medical-advice-seed0 | no disponible (adaptador LoRA) | no disponible | no disponible | Publico en Hugging Face, 0 descargas |
 | Llama 3.2 1B | 1,24 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Publico, ampliamente distribuido |
 | Qwen2.5 1.5B | 1,54 B | 32.000 tokens (ampliable con YaRN) | Apache 2.0 | Publico |
 | Gemma 2 2B | 2,6 B | 8.000 tokens | Licencia de Gemma | Publico |
@@ -98,7 +98,7 @@ La diferencia relevante no es de rendimiento, sino de proposito: las alternativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sanapandey/llama32-1b-rank1-L9-bad-medical-advice-seed0
+- Hugging Face: https://huggingface.co/sanapandey/llama32-1b-rank1-L9-bad-medical-advice-seed0
 - Referencia de la etiqueta arXiv 1910.09700 (procedente de la plantilla, no del autor): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ambiental citado en la plantilla: https://mlco2.github.io/impact
 - Repositorio del modelo base inferido, Llama 3.2 1B: https://huggingface.co/meta-llama/Llama-3.2-1B

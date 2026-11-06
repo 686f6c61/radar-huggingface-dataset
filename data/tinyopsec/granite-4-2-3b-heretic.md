@@ -6,7 +6,7 @@ El modelo `tinyopsec/granite-4.2-3b-Heretic` es una variante no oficial y sin do
 
 El modelo base al que hace referencia es Granite 4.2, una familia de modelos densos de razonamiento con tamaños de 3B, 8B y 30B, según la documentación oficial de IBM. Estos modelos incluyen cadena de pensamiento integrada, modos de pensamiento flexibles y tool calling aumentado con razonamiento. Sin embargo, al ser una variante no oficial, se desconoce si la versión "Heretic" conserva esas características, si ha sido modificada en sus pesos o si presenta comportamientos impredecibles.
 
-Esta ficha se elabora a partir de los datos públicos disponibles: la entrada de HuggingFace, la documentación oficial de IBM y la página de Ollama. No se han encontrado benchmarks, especificaciones técnicas detalladas ni información de entrenamiento específica para esta variante, por lo que muchos parámetros se indican como no disponibles o se referencian únicamente al modelo base, sin verificación para la variante.
+Esta ficha se elabora a partir de los datos públicos disponibles: la entrada de Hugging Face, la documentación oficial de IBM y la página de Ollama. No se han encontrado benchmarks, especificaciones técnicas detalladas ni información de entrenamiento específica para esta variante, por lo que muchos parámetros se indican como no disponibles o se referencian únicamente al modelo base, sin verificación para la variante.
 
 ## Especificaciones tecnicas
 
@@ -75,6 +75,6 @@ No se dispone de información para comparar esta variante con otros modelos. No 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tinyopsec/granite-4.2-3b-Heretic
+- Hugging Face: https://huggingface.co/tinyopsec/granite-4.2-3b-Heretic
 - Documentación oficial de Granite 4.2 (IBM): https://www.ibm.com/granite/docs/models/granite4-2
 - Página de Ollama para granite4.2:3b: https://ollama.com/library/granite4.2:3b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dp-blockpick-regiondr500-dr-dr2-statenoise` es una política de difusión (diffusion policy) para robótica manipulativa, publicada por el usuario `padiredd` en HuggingFace. Se trata de un checkpoint de LeRobot —en concreto del fork `lerobot-cyclo` de ROBOTIS— entrenado para ejecutar una tarea muy específica: recoger un bloque verde lima con el brazo izquierdo de un robot ROBOTIS FFW SG2 equipado con pinza ROBOTIS CAD y cámaras de muñeca calibradas, sobre una mesa de 29,25 pulgadas.
+`dp-blockpick-regiondr500-dr-dr2-statenoise` es una política de difusión (diffusion policy) para robótica manipulativa, publicada por el usuario `padiredd` en Hugging Face. Se trata de un checkpoint de LeRobot —en concreto del fork `lerobot-cyclo` de ROBOTIS— entrenado para ejecutar una tarea muy específica: recoger un bloque verde lima con el brazo izquierdo de un robot ROBOTIS FFW SG2 equipado con pinza ROBOTIS CAD y cámaras de muñeca calibradas, sobre una mesa de 29,25 pulgadas.
 
 El modelo no es un LLM ni un modelo generativo de texto: es una política visuomotora que mapea observaciones (tres cámaras de 240x240 y un vector de estado articular de 22 dimensiones) a acciones (16 objetivos articulares a 15 Hz). Con 287,5 millones de parámetros, su interés es fundamentalmente experimental: el autor lo diseña como un test controlado para determinar si el 0 % de éxito de políticas previas entrenadas solo en simulación (DR sim-only) se debe a un exceso de datos o a sobreentrenamiento sobre el conjunto de 10K episodios.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / horizonte | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp-blockpick-regiondr500-dr-dr2-statenoise | 287,5 M | horizonte 64, 32 ejecutados, 1 obs. step | Pick de bloque con brazo izquierdo en FFW SG2 | other | HuggingFace, repo de 11,5 GB |
+| dp-blockpick-regiondr500-dr-dr2-statenoise | 287,5 M | horizonte 64, 32 ejecutados, 1 obs. step | Pick de bloque con brazo izquierdo en FFW SG2 | other | Hugging Face, repo de 11,5 GB |
 | Políticas DR sim-only previas del mismo autor | no disponible | no disponible | Pick top-down en simulación | no disponible | referenciadas en la model card, sin ficha detallada |
 | Diffusion Policy original (Chi et al.) | no disponible en esta información | no disponible | Manipulación diversa | no disponible | código y pesos públicos, sin datos concretos aquí |
 
@@ -81,7 +81,7 @@ No se dispone de datos suficientes para comparar rendimiento, contexto o resulta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/dp-blockpick-regiondr500-dr-dr2-statenoise
+- Modelo en Hugging Face: https://huggingface.co/padiredd/dp-blockpick-regiondr500-dr-dr2-statenoise
 - Dataset base citado: `padiredd/pick-cube-topdown-region10k-dr-dr2-3cam` (referenciado en la model card; no se proporciona URL directa en la información disponible)
 - LeRobot: no se proporciona enlace en la información disponible
 - Fork `lerobot-cyclo` de ROBOTIS: no se proporciona enlace en la información disponible

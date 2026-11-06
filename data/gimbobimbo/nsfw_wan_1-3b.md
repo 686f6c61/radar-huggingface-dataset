@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NSFW_Wan_1.3b es un ajuste fino (finetune) del modelo de generacion de video texto-a-video Wan-AI/Wan2.1-T2V-1.3B, desarrollado por el usuario gimbobimbo y publicado en HuggingFace. Se trata de un modelo de 1.300 millones de parametros especializado en la generacion de clips de video cortos con contenido para adultos (NSFW), a partir de descripciones en lenguaje natural. Su proposito declarado es servir como herramienta de investigacion y creacion capaz de renderizar escenarios, esteticas y acciones del ambito adulto con coherencia temporal.
+NSFW_Wan_1.3b es un ajuste fino (finetune) del modelo de generacion de video texto-a-video Wan-AI/Wan2.1-T2V-1.3B, desarrollado por el usuario gimbobimbo y publicado en Hugging Face. Se trata de un modelo de 1.300 millones de parametros especializado en la generacion de clips de video cortos con contenido para adultos (NSFW), a partir de descripciones en lenguaje natural. Su proposito declarado es servir como herramienta de investigacion y creacion capaz de renderizar escenarios, esteticas y acciones del ambito adulto con coherencia temporal.
 
 El modelo parte de la arquitectura transformer de texto-a-video de Wan 2.1 en su variante de 1,3B de parametros. El autor publica dos series de checkpoints: una serie original (etiquetada como *legacy*, epochs `e1` a `e20`) y una serie experimental (epochs `exp_e1` a `exp_e14`) entrenada con una metodologia revisada para corregir problemas de calidad. La serie original se entreno en dos fases: una primera fase solo con imagenes y una segunda solo con video, lo que provoco un colapso de la comprension anatomica ("catastrophic forgetting") y artefactos descritos como "body horror". La serie experimental se entreno en una unica ejecucion sobre un dataset mixto de 30.000 clips de video y 20.000 imagenes estaticas de forma simultanea.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NSFW_Wan_1.3b (gimbobimbo) | 1,3B | T2V, finetune NSFW | no disponible | CreativeML OpenRAIL-M | HuggingFace, Civitai |
-| Wan-AI/Wan2.1-T2V-1.3B (base) | 1,3B | T2V generalista | no disponible | Apache 2.0 | HuggingFace, ModelScope |
-| NSFW-API/NSFW_Wan_1.3b | 1,3B | T2V, finetune NSFW | no disponible | no disponible en la informacion recogida | HuggingFace |
+| NSFW_Wan_1.3b (gimbobimbo) | 1,3B | T2V, finetune NSFW | no disponible | CreativeML OpenRAIL-M | Hugging Face, Civitai |
+| Wan-AI/Wan2.1-T2V-1.3B (base) | 1,3B | T2V generalista | no disponible | Apache 2.0 | Hugging Face, ModelScope |
+| NSFW-API/NSFW_Wan_1.3b | 1,3B | T2V, finetune NSFW | no disponible | no disponible en la informacion recogida | Hugging Face |
 
 El modelo base Wan-AI/Wan2.1-T2V-1.3B es la referencia directa: mismo tamano, misma arquitectura y licencia mas permisiva (Apache 2.0), pero sin especializacion NSFW. La existencia de un repositorio espejo o fork con identificador `NSFW-API/NSFW_Wan_1.3b` sugiere redistribucion del mismo artefacto, aunque no se dispone de datos de rendimiento que permitan comparar ambos. No se dispone de benchmarks que permitan una comparacion cuantitativa con alternativas de la misma categoria.
 
@@ -86,10 +86,10 @@ El modelo base Wan-AI/Wan2.1-T2V-1.3B es la referencia directa: mismo tamano, mi
 
 ## Enlaces
 
-- HuggingFace (autor): https://huggingface.co/gimbobimbo/NSFW_Wan_1.3b
-- Modelo base en HuggingFace: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
+- Hugging Face (autor): https://huggingface.co/gimbobimbo/NSFW_Wan_1.3b
+- Modelo base en Hugging Face: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
 - Modelo base en ModelScope: https://modelscope.ai/models/Wan-AI/Wan2.1-T2V-1.3B
-- Repositorio espejo/relacionado en HuggingFace: https://huggingface.co/NSFW-API/NSFW_Wan_1.3b
+- Repositorio espejo/relacionado en Hugging Face: https://huggingface.co/NSFW-API/NSFW_Wan_1.3b
 - Finetunes derivados del espejo: https://huggingface.co/models?other=base_model:finetune:NSFW-API/NSFW_Wan_1.3b
 - Ficha en Civitai: https://civitai.red/models/1697081/nsfw-wan-13b-t2v
 - Checkpoint en RunningHub: https://www.runninghub.ai/model/public/1930962000820502530

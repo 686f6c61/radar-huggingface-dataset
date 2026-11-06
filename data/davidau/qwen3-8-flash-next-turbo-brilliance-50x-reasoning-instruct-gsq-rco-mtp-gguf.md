@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo DavidAU/Qwen3.8-Flash-Next-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-MTP-GGUF es un ajuste fino (fine-tune) de la comunidad sobre el modelo base Qwen/Qwen3-Flash-Next, publicado por el usuario DavidAU en HuggingFace. Se distribuye exclusivamente en formato GGUF, lo que lo orienta a inferencia local mediante llama.cpp, Ollama, LM Studio o koboldcpp, y no a despliegues con GPUs en datacenter. El autor lo presenta como un modelo con 27 modos de razonamiento, 27 modos de instruccion y 15 "AI Constructs" (mas 5 "Super AI Constructs"), etiquetas que describen perfiles de comportamiento preconfigurados mas que cambios arquitectonicos.
+El modelo DavidAU/Qwen3.8-Flash-Next-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-MTP-GGUF es un ajuste fino (fine-tune) de la comunidad sobre el modelo base Qwen/Qwen3-Flash-Next, publicado por el usuario DavidAU en Hugging Face. Se distribuye exclusivamente en formato GGUF, lo que lo orienta a inferencia local mediante llama.cpp, Ollama, LM Studio o koboldcpp, y no a despliegues con GPUs en datacenter. El autor lo presenta como un modelo con 27 modos de razonamiento, 27 modos de instruccion y 15 "AI Constructs" (mas 5 "Super AI Constructs"), etiquetas que describen perfiles de comportamiento preconfigurados mas que cambios arquitectonicos.
 
 El problema que pretende resolver es el de un asistente local capaz de alternar entre estilos de respuesta muy distintos (razonamiento profundo, profesor, agente, programador, lluvia de ideas, negocio) sin necesidad de cambiar de modelo, algo habitual en los fine-tunes orientados a rol y productividad de la escena GGUF. La licencia declarada es Apache 2.0, coherente con la del modelo base de la familia Qwen, y el soporte de idiomas cubre 16 lenguas, incluido el castellano.
 
-La relevancia actual es limitada y muy especifica: el modelo tiene 0 descargas y 9 likes en el momento de redactar esta ficha, y el acceso esta restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de descargarlo. No se ha publicado en la informacion disponible ni el numero de parametros, ni la longitud de contexto, ni los tipos exactos de cuantizacion, ni resultados de benchmarks, por lo que su evaluacion practica exige pruebas propias.
+La relevancia actual es limitada y muy especifica: el modelo tiene 0 descargas y 9 likes en el momento de redactar esta ficha, y el acceso esta restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de descargarlo. No se ha publicado en la informacion disponible ni el numero de parametros, ni la longitud de contexto, ni los tipos exactos de cuantizacion, ni resultados de benchmarks, por lo que su evaluacion practica exige pruebas propias.
 
 ## Especificaciones técnicas
 
@@ -19,9 +19,9 @@ La relevancia actual es limitada y muy especifica: el modelo tiene 0 descargas y
 | Tipos de cuantizacion | GGUF; tipos concretos (Q4_K_M, Q5_K_M, Q8_0, etc.) no disponibles en la informacion proporcionada |
 | Idiomas soportados | arabe, chino, ingles, frances, aleman, hindi, indonesio, italiano, japones, coreano, polaco, portugues, ruso, castellano, tailandes, vietnamita |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (acceso restringido, requiere aceptar condiciones en HuggingFace) |
+| Formato de pesos | GGUF (acceso restringido, requiere aceptar condiciones en Hugging Face) |
 
-Datos adicionales declarados en la ficha de HuggingFace, sin traduccion tecnica confirmada: 27 modos de razonamiento, 27 modos de instruccion, 15 AI Constructs, 5 Super AI Constructs, etiqueta "Turbo-Brilliance" y 9 modos de razonamiento Xhigh. El identificador incluye ademas las siglas GSQ, RCO y MTP, cuyo significado no se documenta en la informacion disponible.
+Datos adicionales declarados en la ficha de Hugging Face, sin traduccion tecnica confirmada: 27 modos de razonamiento, 27 modos de instruccion, 15 AI Constructs, 5 Super AI Constructs, etiqueta "Turbo-Brilliance" y 9 modos de razonamiento Xhigh. El identificador incluye ademas las siglas GSQ, RCO y MTP, cuyo significado no se documenta en la informacion disponible.
 
 ## Arquitectura y entrenamiento
 
@@ -76,7 +76,7 @@ No se dispone de datos verificados de parametros, contexto ni benchmarks para es
 ## Limitaciones y advertencias
 
 - Ausencia total de datos tecnicos verificables: sin numero de parametros, contexto ni benchmarks, no es posible estimar rendimiento ni coste de despliegue antes de descargar y probar.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a la evaluacion y a la reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a la evaluacion y a la reproducibilidad.
 - Adopcion practicamente nula: 0 descargas y 9 likes en la fecha de creacion de la ficha, por lo que no existe validacion independiente de la comunidad.
 - Las etiquetas de "27 modos de razonamiento", "AI Constructs" y similares son terminologia del autor y no implican capacidades certificadas ni cambios en la arquitectura. Los modos se activan por prompt y su comportamiento puede degradarse fuera de las plantillas previstas.
 - Riesgo de alucinacion: inherente a cualquier modelo de lenguaje; no se ha publicado ninguna evaluacion de fidelidad factual para este fine-tune.
@@ -88,7 +88,7 @@ No se dispone de datos verificados de parametros, contexto ni benchmarks para es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DavidAU/Qwen3.8-Flash-Next-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-Flash-Next-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-MTP-GGUF
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3-Flash-Next
 - Perfil del autor: https://huggingface.co/DavidAU
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

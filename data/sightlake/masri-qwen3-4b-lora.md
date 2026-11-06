@@ -73,7 +73,7 @@ La comparativa se basa en caracteristicas generales; no hay datos de rendimiento
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sightlake/masri-qwen3-4b-lora
+- Hugging Face: https://huggingface.co/sightlake/masri-qwen3-4b-lora
 - Paper tecnico de Qwen3: https://arxiv.org/pdf/2505.09388
 - Repositorio de fine-tuning de Qwen3-4B (referencia): https://github.com/Rohityalavarthy/qwen3-finetune
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-4B-bnb-4bit
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-4B-bnb-4bit

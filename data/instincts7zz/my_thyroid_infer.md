@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`my_Thyroid_infer` no es un modelo único, sino un repositorio de inferencia que agrupa ocho arquitecturas de visión por computador para el análisis automático de imágenes de ecografía tiroidea. Lo publica el usuario `instincts7Zz` en HuggingFace con un tamaño de repositorio de 21,4 GB (el autor indica aproximadamente 14,7 GB sin el directorio `datasets/`), e incluye tanto el código de inferencia como los pesos entrenados de cada modelo.
+`my_Thyroid_infer` no es un modelo único, sino un repositorio de inferencia que agrupa ocho arquitecturas de visión por computador para el análisis automático de imágenes de ecografía tiroidea. Lo publica el usuario `instincts7Zz` en Hugging Face con un tamaño de repositorio de 21,4 GB (el autor indica aproximadamente 14,7 GB sin el directorio `datasets/`), e incluye tanto el código de inferencia como los pesos entrenados de cada modelo.
 
 El proyecto cubre dos tareas clínicas principales: segmentación (de la glándula tiroides y de nódulos) y clasificación (binaria benigno/maligno y pentaclase TIRADS). Para ello combina modelos de segmentación como DINOv3-UNet, MedSAM2, MedSegX, TransUNet y UltraFedFM con clasificadores basados en BiomedCLIP, MedSigLIP, RepViT, LSNet y ResNet-50, además de dos componentes de tipo agente (SegAgent y ClsAgent) que usan un LLM local (GPT-OSS) para seleccionar o fusionar las salidas de los distintos modelos.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| my_Thyroid_infer (este repo) | Toolkit multi-modelo de segmentación y clasificación tiroidea | no disponible por submodelo | no aplica | no disponible | HuggingFace y ModelScope |
+| my_Thyroid_infer (este repo) | Toolkit multi-modelo de segmentación y clasificación tiroidea | no disponible por submodelo | no aplica | no disponible | Hugging Face y ModelScope |
 | MedSAM2 | Segmentación médica (SAM2 Hiera) | no disponible en la información | no aplica | no disponible | Incluido como submodelo |
 | MedSegX | Segmentación médica (SAM ViT-B) | no disponible en la información | no aplica | no disponible | Incluido como submodelo |
 | BiomedCLIP | Clasificación con encoder CLIP biomédico | no disponible en la información | no aplica | no disponible | Incluido como submodelo |
@@ -87,6 +87,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/instincts7Zz/my_Thyroid_infer
+- Hugging Face: https://huggingface.co/instincts7Zz/my_Thyroid_infer
 - ModelScope: https://www.modelscope.cn/instincts/my_Thyroid_infer
-- Mirror de HuggingFace para China: https://hf-mirror.com
+- Mirror de Hugging Face para China: https://hf-mirror.com

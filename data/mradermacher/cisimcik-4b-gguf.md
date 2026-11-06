@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cisimcik-4b-GGUF es la version cuantizada en formato GGUF del modelo cisimcik-4b, un modelo de lenguaje de 4.205.751.296 parametros (aproximadamente 4,2 mil millones) especializado en conversacion en turco y desarrollado por el usuario cisimcik. La cuantizacion la firma mradermacher, autor conocido en HuggingFace por publicar versiones GGUF de modelos abiertos para su uso con llama.cpp y derivados. El modelo se distribuye bajo licencia Apache 2.0, esta etiquetado para los idiomas turco (tr) e ingles (en) y se apoya en el dataset cisimcik/turkish-chat-max-25k.
+cisimcik-4b-GGUF es la version cuantizada en formato GGUF del modelo cisimcik-4b, un modelo de lenguaje de 4.205.751.296 parametros (aproximadamente 4,2 mil millones) especializado en conversacion en turco y desarrollado por el usuario cisimcik. La cuantizacion la firma mradermacher, autor conocido en Hugging Face por publicar versiones GGUF de modelos abiertos para su uso con llama.cpp y derivados. El modelo se distribuye bajo licencia Apache 2.0, esta etiquetado para los idiomas turco (tr) e ingles (en) y se apoya en el dataset cisimcik/turkish-chat-max-25k.
 
 Segun los tags de la model card, la arquitectura subyacente se etiqueta como "qwen3.5" con "gated-deltanet" y "hybrid-attention", lo que apunta a una arquitectura hibrida que combina mecanismos de atencion lineal tipo Gated DeltaNet con atencion clasica, en la linea de las familias Qwen3.5. Es decir, no se trata de un transformer denso convencional, sino de un diseno mixto orientado a reducir el coste computacional en contextos largos. La model card no especifica la longitud de contexto soportada ni el volumen de tokens de entrenamiento.
 

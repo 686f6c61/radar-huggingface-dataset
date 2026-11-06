@@ -6,7 +6,7 @@ El modelo `plant-leaf-disease-detection-using-cnn` es un clasificador de imagene
 
 La arquitectura se basa en un backbone ConvNeXt-V2 con capas GRN (Global Response Normalization), sobre el que se anaden tres mecanismos propios: un modulo de compuerta espacial diferenciable que atenua el ruido de fondo no foliar, una cabeza dual jerarquica que condiciona el diagnostico de enfermedad a la familia de cultivo, y una cabeza de seguridad basada en energia libre de Helmholtz. Ademas incorpora prediccion conformal (split conformal prediction) para ofrecer conjuntos de prediccion con cobertura garantizada.
 
-El modelo se distribuye en formato ONNX (FP32 e INT8 dinamico) y PyTorch, con un tamano de repositorio de 0.3 GB. Esta orientado a despliegue en entornos de borde (edge AI) para aplicaciones agricolas, con licencia MIT. No dispone de descargas ni interacciones registradas en HuggingFace en el momento de la consulta.
+El modelo se distribuye en formato ONNX (FP32 e INT8 dinamico) y PyTorch, con un tamano de repositorio de 0.3 GB. Esta orientado a despliegue en entornos de borde (edge AI) para aplicaciones agricolas, con licencia MIT. No dispone de descargas ni interacciones registradas en Hugging Face en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -82,14 +82,14 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| plant-leaf-disease-detection-using-cnn | no disponible | 224x224x3 | MIT | HuggingFace (0 descargas) |
+| plant-leaf-disease-detection-using-cnn | no disponible | 224x224x3 | MIT | Hugging Face (0 descargas) |
 | Alternativas tipo YOLO + clasificador | no disponible | variable | variable | no disponible |
 | EfficientNet / ResNet para PlantVillage | no disponible | variable | variable | no disponible |
 
 ## Limitaciones y advertencias
 
 - Los resultados de benchmarks (85.59%, 91.04%, 93.83%) estan declarados por el autor y no han sido verificados de forma independiente.
-- El modelo no dispone de descargas ni validacion por parte de la comunidad en HuggingFace, lo que limita la confianza en su robustez fuera del conjunto de evaluacion.
+- El modelo no dispone de descargas ni validacion por parte de la comunidad en Hugging Face, lo que limita la confianza en su robustez fuera del conjunto de evaluacion.
 - No se especifican los sesgos del dataset de entrenamiento; PlantVillage y PlantDoc pueden estar sesgados hacia especies y condiciones de iluminacion concretas.
 - Riesgo de alucinacion en el sentido de clasificaciones erroneas con alta confianza; la cabeza de seguridad y la prediccion conformal mitigan parcialmente este riesgo, pero no lo eliminan.
 - No soporta procesamiento de lenguaje ni capacidades multimodales mas alla de la clasificacion de imagenes.
@@ -100,7 +100,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shubham12864/plant-leaf-disease-detection-using-cnn
+- Modelo en Hugging Face: https://huggingface.co/Shubham12864/plant-leaf-disease-detection-using-cnn
 - Dataset PlantVillage (referenciado): no disponible enlace directo en la informacion proporcionada
 - Dataset PlantDoc (referenciado): no disponible enlace directo en la informacion proporcionada
 - Paper o publicacion asociada: no disponible

@@ -90,7 +90,7 @@ La comparación cuantitativa de rendimiento con alternativas no está disponible
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/kprzyb/PolDense-150M-GGUF
+- Repositorio Hugging Face de la conversión: https://huggingface.co/kprzyb/PolDense-150M-GGUF
 - Modelo base: https://huggingface.co/OPI-PIB/PolDense-150M
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Incidencia sobre el troceado a 512 tokens: https://github.com/tobi/qmd/issues/897

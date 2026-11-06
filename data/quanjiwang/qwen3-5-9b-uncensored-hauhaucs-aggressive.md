@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativos. La comparativa se limita a e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/quanjiwang/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive
+- Modelo en Hugging Face: https://huggingface.co/quanjiwang/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Variante 4B: https://huggingface.co/HauhauCS/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive
 - Perfil del autor: https://huggingface.co/HauhauCS

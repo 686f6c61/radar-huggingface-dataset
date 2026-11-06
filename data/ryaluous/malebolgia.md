@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ryaluous/Malebolgia` es un repositorio de modelo alojado en HuggingFace por el usuario ryaluous. La informacion publica disponible es minima: el repositorio no declara pipeline, licencia, idiomas soportados ni ficha tecnica, y su unico tag es `region:us`. El repositorio ocupa 52,6 GB y esta sujeto a acceso restringido (gated), de modo que es necesario aceptar las condiciones en HuggingFace antes de poder descargar los pesos.
+`ryaluous/Malebolgia` es un repositorio de modelo alojado en Hugging Face por el usuario ryaluous. La informacion publica disponible es minima: el repositorio no declara pipeline, licencia, idiomas soportados ni ficha tecnica, y su unico tag es `region:us`. El repositorio ocupa 52,6 GB y esta sujeto a acceso restringido (gated), de modo que es necesario aceptar las condiciones en Hugging Face antes de poder descargar los pesos.
 
 Con los datos disponibles no es posible determinar la arquitectura, el numero de parametros, la longitud de contexto ni las capacidades reales del modelo. El unico indicio cuantitativo es el tamano del repositorio: si contuviera un unico checkpoint en bf16 o fp16, implicaria del orden de 26 000 millones de parametros (52,6 GB / 2 bytes por parametro). Si el repositorio incluye varias cuantizaciones, checkpoints intermedios o ficheros auxiliares, la cifra real seria inferior. Se trata de una estimacion aritmetica derivada del tamano, no de un dato confirmado por el autor.
 
@@ -18,7 +18,7 @@ El modelo registra 0 descargas y 1 like, y no publica documentacion, benchmarks 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (no se documenta el contenido del repositorio) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (acceso restringido: requiere aceptar condiciones en HuggingFace) |
+| Licencia | no disponible (acceso restringido: requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 52,6 GB |
 | Acceso | Restringido (gated) |
@@ -73,7 +73,7 @@ Las cifras siguientes son estimaciones aritmeticas condicionadas al supuesto de 
 - Opciones de despliegue: no disponibles. Dependen de un formato de pesos que no se ha hecho publico; motores habituales como vLLM, llama.cpp, Ollama o TGI solo serian aplicables si el formato resultase compatible.
 - Latencia y throughput: no disponible.
 
-Advertencia adicional: el repositorio esta sujeto a acceso restringido, por lo que ni siquiera la descarga de los pesos esta garantizada sin aceptar previamente las condiciones en HuggingFace.
+Advertencia adicional: el repositorio esta sujeto a acceso restringido, por lo que ni siquiera la descarga de los pesos esta garantizada sin aceptar previamente las condiciones en Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -83,7 +83,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 - Ausencia total de ficha tecnica: no hay documentacion de arquitectura, datos de entrenamiento, tokenizador ni formato de pesos.
 - Licencia no declarada: no puede asumirse que el uso comercial este permitido. Es imprescindible revisar las condiciones del acceso restringido antes de cualquier explotacion.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace y obtener autorizacion para descargar los pesos, lo que dificulta la reproducibilidad y la auditoria externa.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face y obtener autorizacion para descargar los pesos, lo que dificulta la reproducibilidad y la auditoria externa.
 - Sin benchmarks publicados: no existe evidencia empirica de calidad, por lo que no se puede justificar su adopcion en produccion frente a alternativas documentadas.
 - Idiomas no declarados: se desconoce si el modelo cubre el castellano o cualquier otro idioma con garantias.
 - Adopcion practicamente nula: 0 descargas y 1 like implican ausencia de validacion por parte de la comunidad y muy poca probabilidad de encontrar informes de terceros.
@@ -93,6 +93,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ryaluous/Malebolgia
-- Pagina de autor en HuggingFace: https://huggingface.co/ryaluous
+- Hugging Face: https://huggingface.co/ryaluous/Malebolgia
+- Pagina de autor en Hugging Face: https://huggingface.co/ryaluous
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible. Las busquedas web realizadas no devolvieron ningun resultado relacionado con este modelo; los enlaces recuperados (ComputerBase, paginas de ayuda de Google) no guardan relacion con el.

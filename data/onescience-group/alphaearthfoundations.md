@@ -6,7 +6,7 @@ AlphaEarthFoundations es un modelo de campo de embeddings espacio-temporales mul
 
 El modelo fue entrenado con más de tres mil millones de observaciones, utilizando series temporales de Sentinel-2, Sentinel-1 y Landsat-8/9 como entrada, y datos de PALSAR-2, ERA5-Land, GEDI, GRACE, Copernicus DEM, NLCD y texto geográfico como objetivos de aprendizaje. Su relevancia actual radica en que ofrece una representación unificada y continua del territorio que permite generar mapas y sistemas de monitorización a escalas local y global de forma precisa y eficiente, superando en precisión a métodos tradicionales y a otros sistemas de mapeo por IA según los resultados publicados.
 
-El repositorio de HuggingFace incluye un marco de trabajo de ingeniería con datos sintéticos que preservan las dimensiones reales del paper (extensión de 1,28 km × 1,28 km, rejilla de 10 metros, 65 frames de Sentinel-2, 17 de Sentinel-1 y 21 de Landsat), pero no incluye los pesos entrenados del modelo v2.0/v2.1, que no han sido liberados por Google.
+El repositorio de Hugging Face incluye un marco de trabajo de ingeniería con datos sintéticos que preservan las dimensiones reales del paper (extensión de 1,28 km × 1,28 km, rejilla de 10 metros, 65 frames de Sentinel-2, 17 de Sentinel-1 y 21 de Landsat), pero no incluye los pesos entrenados del modelo v2.0/v2.1, que no han sido liberados por Google.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no incluye los pesos entrenados del modelo v2.0/v2.1; solo proporciona un marco de trabajo con datos sinteticos para validacion de ingenieria. Google y Google DeepMind no han liberado los checkpoints oficiales.
+- El repositorio de Hugging Face no incluye los pesos entrenados del modelo v2.0/v2.1; solo proporciona un marco de trabajo con datos sinteticos para validacion de ingenieria. Google y Google DeepMind no han liberado los checkpoints oficiales.
 - Los datos sinteticos incluidos reducen el numero de muestras y el ancho interno del modelo respecto a la configuracion real del paper, por lo que los resultados obtenidos con ellos no son representativos del rendimiento final.
 - El modelo esta disenado para observacion de la Tierra y no procesa lenguaje natural; la etiqueta de idioma "en" se refiere a la documentacion, no a capacidades linguisticas.
 - La licencia CC-BY-4.0 permite uso comercial con atribucion, pero es necesario verificar que los datos de entrenamiento originales (Sentinel, Landsat, etc.) cumplen con las politicas de uso de cada agencia espacial.
@@ -80,7 +80,7 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OneScience-Group/AlphaEarthFoundations
+- Repositorio Hugging Face: https://huggingface.co/OneScience-Group/AlphaEarthFoundations
 - Paper en arxiv: https://arxiv.org/abs/2507.22291
 - Blog de Google DeepMind: https://deepmind.google/blog/alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail/
 - Articulo en Onmine (copia del blog): https://onmine.io/alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail-2/

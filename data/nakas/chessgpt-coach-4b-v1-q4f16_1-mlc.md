@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ChessGPT Coach 4B v1 (q4f16_1, MLC) es una adaptacion de Qwen3-4B orientada especificamente a explicar errores de ajedrez en lenguaje natural. El autor, identificado en HuggingFace como nakas, partio del modelo base Qwen/Qwen3-4B y aplico un ajuste fino con LoRA (posteriormente fusionado) para que el modelo narre hechos verificados por motor (lineas de Stockfish y motivos tacticos detectados por programa) adaptando el nivel de explicacion a la valoracion Elo del jugador. El resultado se publica como build de MLC-LLM/WebLLM, lo que permite ejecutarlo integramente en el navegador mediante WebGPU.
+ChessGPT Coach 4B v1 (q4f16_1, MLC) es una adaptacion de Qwen3-4B orientada especificamente a explicar errores de ajedrez en lenguaje natural. El autor, identificado en Hugging Face como nakas, partio del modelo base Qwen/Qwen3-4B y aplico un ajuste fino con LoRA (posteriormente fusionado) para que el modelo narre hechos verificados por motor (lineas de Stockfish y motivos tacticos detectados por programa) adaptando el nivel de explicacion a la valoracion Elo del jugador. El resultado se publica como build de MLC-LLM/WebLLM, lo que permite ejecutarlo integramente en el navegador mediante WebGPU.
 
 El modelo no es un motor de ajedrez ni evalua posiciones por si mismo: su funcion es la capa de comunicacion. Recibe hechos ya calculados por Stockfish y motivos detectados por software externo, y los convierte en texto comprensible para el jugador. Esta separacion es relevante porque evita que el modelo tenga que razonar sobre el tablero y limita el riesgo de alucinacion tactica, siempre que las lineas y motivos se inyecten correctamente en el prompt.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| nakas/chessgpt-coach-4b-v1-q4f16_1-MLC | ~4B | no disponible | Explicacion de errores de ajedrez con hechos de motor | q4f16_1 (MLC) | Apache-2.0 | HuggingFace, via WebLLM/MLC |
-| Qwen/Qwen3-4B (modelo base) | ~4B | no disponible en la informacion proporcionada | Proposito general, chat | Multiples (no detalladas aqui) | Apache-2.0 | HuggingFace |
-| mlc-ai/Qwen3-4B-q4f16_1-MLC | ~4B | no disponible | Proposito general, build WebGPU oficial | q4f16_1 (MLC) | Apache-2.0 | HuggingFace, via WebLLM/MLC |
+| nakas/chessgpt-coach-4b-v1-q4f16_1-MLC | ~4B | no disponible | Explicacion de errores de ajedrez con hechos de motor | q4f16_1 (MLC) | Apache-2.0 | Hugging Face, via WebLLM/MLC |
+| Qwen/Qwen3-4B (modelo base) | ~4B | no disponible en la informacion proporcionada | Proposito general, chat | Multiples (no detalladas aqui) | Apache-2.0 | Hugging Face |
+| mlc-ai/Qwen3-4B-q4f16_1-MLC | ~4B | no disponible | Proposito general, build WebGPU oficial | q4f16_1 (MLC) | Apache-2.0 | Hugging Face, via WebLLM/MLC |
 | Otros asistentes de ajedrez de proposito general | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa significativa se limita al modelo base y a su build oficial de MLC: la diferencia es el ajuste de dominio y el reemplazo de las proyecciones de atencion y MLP. No se dispone de datos de rendimiento que permitan comparar calidad de explicacion frente a alternativas.
@@ -94,7 +94,7 @@ La comparativa significativa se limita al modelo base y a su build oficial de ML
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nakas/chessgpt-coach-4b-v1-q4f16_1-MLC
+- Modelo en Hugging Face: https://huggingface.co/nakas/chessgpt-coach-4b-v1-q4f16_1-MLC
 - Proyecto ChessGPT: https://chessgpt.com
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Build oficial de MLC citado en la model card: https://huggingface.co/mlc-ai/Qwen3-4B-q4f16_1-MLC

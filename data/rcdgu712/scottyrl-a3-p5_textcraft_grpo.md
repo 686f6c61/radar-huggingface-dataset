@@ -73,7 +73,7 @@ No disponible. No se dispone de información sobre adaptadores comparables ni so
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RcdGu712/scottyrl-a3-p5_textcraft_grpo
+- Hugging Face: https://huggingface.co/RcdGu712/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Framework scottyrl: no disponible
 - Repositorio del curso 11-768 (AI Agents, CMU): no disponible

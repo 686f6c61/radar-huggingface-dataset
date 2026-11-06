@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) de `allenai/Olmo-3-7B-Instruct`, el modelo instructivo de 7 mil millones de parámetros desarrollado por el Allen Institute for AI (AI2) como parte de la familia OLMo 3. El autor, Echoo113, ha publicado este checkpoint en HuggingFace con el nombre `Olmo-3-7B-Instruct-immigration_mlpBout-STEER0.198438-ft4.44`, lo que sugiere un entrenamiento supervisado (SFT) orientado al dominio de la inmigración, aunque la model card no ofrece detalles sobre el conjunto de datos ni la metodología específica más allá del uso de la librería TRL.
+Este modelo es un ajuste fino (fine-tuning) de `allenai/Olmo-3-7B-Instruct`, el modelo instructivo de 7 mil millones de parámetros desarrollado por el Allen Institute for AI (AI2) como parte de la familia OLMo 3. El autor, Echoo113, ha publicado este checkpoint en Hugging Face con el nombre `Olmo-3-7B-Instruct-immigration_mlpBout-STEER0.198438-ft4.44`, lo que sugiere un entrenamiento supervisado (SFT) orientado al dominio de la inmigración, aunque la model card no ofrece detalles sobre el conjunto de datos ni la metodología específica más allá del uso de la librería TRL.
 
 La relevancia de este modelo radica en que parte de una base sólida: OLMo 3 es una familia de modelos abiertos entrenada con el corpus Dolma 3, con soporte de contexto largo (64K tokens) y buenos resultados en razonamiento y código. Sin embargo, al tratarse de un fine-tuning publicado sin documentación adicional, su utilidad real depende de la calidad del ajuste y de la disponibilidad de datos de evaluación, que no se han proporcionado. El repositorio tiene un tamaño de solo 0.2 GB, lo que sugiere que podría tratarse de un adaptador o de pesos parciales, aunque no se especifica.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en que parte de una base sólida: OLMo 3 es 
 
 ## Arquitectura y entrenamiento
 
-El modelo base, OLMo-3-7B-Instruct, es un transformer decoder-only con 7B parámetros, entrenado por AI2 con un enfoque de entrenamiento por etapas (staged training) sobre el dataset Dolma 3. Soporta una ventana de contexto de 64K tokens y ha sido optimizado para seguir instrucciones mediante técnicas de ajuste fino supervisado y posiblemente RLHF, aunque los detalles del proceso no se han publicado en la documentación oficial. El fine-tuning aquí presentado se ha realizado con la librería TRL (Transformers Reinforcement Learning) de HuggingFace, concretamente con el método SFT (Supervised Fine-Tuning). El nombre del modelo incluye el sufijo `STEER0.198438`, que podría indicar el uso de alguna técnica de "steering" o interpolación de pesos, pero no se aporta ninguna explicación en la model card. Tampoco se especifica el número de épocas (aunque el sufijo `ft4.44` podría referirse a 4.44 épocas), ni el tamaño o composición del dataset de entrenamiento.
+El modelo base, OLMo-3-7B-Instruct, es un transformer decoder-only con 7B parámetros, entrenado por AI2 con un enfoque de entrenamiento por etapas (staged training) sobre el dataset Dolma 3. Soporta una ventana de contexto de 64K tokens y ha sido optimizado para seguir instrucciones mediante técnicas de ajuste fino supervisado y posiblemente RLHF, aunque los detalles del proceso no se han publicado en la documentación oficial. El fine-tuning aquí presentado se ha realizado con la librería TRL (Transformers Reinforcement Learning) de Hugging Face, concretamente con el método SFT (Supervised Fine-Tuning). El nombre del modelo incluye el sufijo `STEER0.198438`, que podría indicar el uso de alguna técnica de "steering" o interpolación de pesos, pero no se aporta ninguna explicación en la model card. Tampoco se especifica el número de épocas (aunque el sufijo `ft4.44` podría referirse a 4.44 épocas), ni el tamaño o composición del dataset de entrenamiento.
 
 ## Capacidades
 
@@ -66,7 +66,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-immigration_mlpBout-STEER0.198438-ft4.44)
+- [Modelo en Hugging Face](https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-immigration_mlpBout-STEER0.198438-ft4.44)
 - [Modelo base OLMo-3-7B-Instruct](https://huggingface.co/allenai/Olmo-3-7B-Instruct)
 - [Página del modelo OLMo-3-7B-Instruct en OpenModelMap](https://openmodelmap.com/model/allenai/Olmo-3-7B-Instruct)
 - [Repositorio OLMo en GitHub](https://github.com/allenai/OLMo)

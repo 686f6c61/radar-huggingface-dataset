@@ -85,7 +85,7 @@ La comparación directa es difícil porque Alina Voice 7B es un especialista ver
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/teeem92/alina-voice-7b
+- Modelo en Hugging Face: https://huggingface.co/teeem92/alina-voice-7b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Soup CLI (herramienta de ajuste fino citada en la model card): no disponible enlace oficial en la informacion proporcionada
 - LPTracker (empresa autora del caso de uso): no disponible enlace oficial en la informacion proporcionada

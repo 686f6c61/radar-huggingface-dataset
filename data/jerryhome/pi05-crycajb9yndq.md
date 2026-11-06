@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `JerryHome/pi05-crYCajB9yNdq` aloja un modelo de 3.616.757.520 parámetros (aproximadamente 3,6 mil millones) en formato `safetensors`, con un tamaño total de 21,7 GB. El nombre del repositorio y su etiqueta `region:us` sugieren que se trata de una copia o variante del modelo π₀.₅ (Pi0.5), un modelo de visión-lenguaje-acción (VLA) desarrollado por Physical Intelligence para control robótico con generalización en entornos abiertos. Sin embargo, la ficha de HuggingFace no proporciona documentación, licencia, idiomas ni pipeline, por lo que la información detallada sobre este repositorio concreto es muy limitada.
+El repositorio `JerryHome/pi05-crYCajB9yNdq` aloja un modelo de 3.616.757.520 parámetros (aproximadamente 3,6 mil millones) en formato `safetensors`, con un tamaño total de 21,7 GB. El nombre del repositorio y su etiqueta `region:us` sugieren que se trata de una copia o variante del modelo π₀.₅ (Pi0.5), un modelo de visión-lenguaje-acción (VLA) desarrollado por Physical Intelligence para control robótico con generalización en entornos abiertos. Sin embargo, la ficha de Hugging Face no proporciona documentación, licencia, idiomas ni pipeline, por lo que la información detallada sobre este repositorio concreto es muy limitada.
 
 La relevancia de este tipo de modelos radica en su capacidad para combinar percepción visual, comprensión del lenguaje y generación de acciones, lo que permite a robots ejecutar tareas de manipulación de forma autónoma y generalizable. Aunque el repositorio no incluye una descripción, la referencia a Pi0.5 es clara, y se puede contextualizar con la información pública de ese modelo.
 
@@ -79,14 +79,14 @@ No se puede afirmar que este repositorio sea exactamente el π₀.₅ original, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JerryHome/pi05-crYCajB9yNdq
+- Repositorio Hugging Face: https://huggingface.co/JerryHome/pi05-crYCajB9yNdq
 - Paper de π₀.₅: https://arxiv.org/abs/2504.16054
-- Modelo de referencia en HuggingFace: https://huggingface.co/jellyho/pi05
+- Modelo de referencia en Hugging Face: https://huggingface.co/jellyho/pi05
 - Qualcomm AI Hub (Pi0.5): https://aihub.qualcomm.com/models/pi05
 - Repositorio de referencia: https://huggingface.co/joseneto023dev/pi05-crYCajB9yNdq
 - Código de OpenPI (LeRobot): no disponible en la búsqueda, pero se menciona en el paper.</think>## Resumen
 
-El repositorio `JerryHome/pi05-crYCajB9yNdq` aloja un modelo de 3.616.757.520 parámetros (aproximadamente 3,6 mil millones) en formato `safetensors`, con un tamaño total de 21,7 GB. El nombre del proyecto y la etiqueta `region:us` sugieren que se trata de una copia o variante del modelo π₀.₅ (Pi0.5), un modelo de visión-lenguaje-acción (VLA) desarrollado por Physical Intelligence para el control robótico con generalización en entornos abiertos. Sin embargo, la ficha de HuggingFace no incluye documentación, licencia, pipeline ni idiomas, por lo que la información específica de este repositorio es muy limitada.
+El repositorio `JerryHome/pi05-crYCajB9yNdq` aloja un modelo de 3.616.757.520 parámetros (aproximadamente 3,6 mil millones) en formato `safetensors`, con un tamaño total de 21,7 GB. El nombre del proyecto y la etiqueta `region:us` sugieren que se trata de una copia o variante del modelo π₀.₅ (Pi0.5), un modelo de visión-lenguaje-acción (VLA) desarrollado por Physical Intelligence para el control robótico con generalización en entornos abiertos. Sin embargo, la ficha de Hugging Face no incluye documentación, licencia, pipeline ni idiomas, por lo que la información específica de este repositorio es muy limitada.
 
 La relevancia de este tipo de modelos radica en su capacidad para combinar percepción visual, comprensión del lenguaje y generación de acciones, permitiendo a robots ejecutar tareas de manipulación dexterous y generalizar a escenarios no vistos. Aunque el repositorio no ofrece una descripción, la referencia a Pi0.5 permite contextualizar su posible arquitectura y capacidades a partir de la información pública de ese modelo.
 
@@ -163,6 +163,6 @@ Esta tabla es orientativa y no se puede confirmar que el repositorio sea exactam
 
 - [https://huggingface.co/JerryHome/pi05-crYCajB9yNdq](https://huggingface.co/JerryHome/pi05-crYCajB9yNdq)
 - [Paper de π₀.₅](https://arxiv.org/abs/2504.16054)
-- [Modelo de referencia π₀.₅ en HuggingFace](https://huggingface.co/jellyho/pi05)
+- [Modelo de referencia π₀.₅ en Hugging Face](https://huggingface.co/jellyho/pi05)
 - [Qualcomm AI Hub - Pi0.5](https://aihub.qualcomm.com/models/pi05)
-- [Repositorio similar en HuggingFace](https://huggingface.co/joseneto023dev/pi05-crYCajB9yNdq)
+- [Repositorio similar en Hugging Face](https://huggingface.co/joseneto023dev/pi05-crYCajB9yNdq)

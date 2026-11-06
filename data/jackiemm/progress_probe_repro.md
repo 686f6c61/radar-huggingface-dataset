@@ -71,6 +71,6 @@ No disponible. Este repositorio es un codigo de reproduccion especifico para un 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JackieMM/progress_probe_repro
+- Repositorio en Hugging Face: https://huggingface.co/JackieMM/progress_probe_repro
 - Perfil del autor: https://huggingface.co/JackieMM
 - Otros resultados de busqueda web no son relevantes para este repositorio.

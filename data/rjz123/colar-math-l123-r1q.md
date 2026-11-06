@@ -81,7 +81,7 @@ El adaptador se diferencia del modelo base en que no genera cadenas de texto vis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rjz123/colar-math-l123-r1q
+- Hugging Face: https://huggingface.co/rjz123/colar-math-l123-r1q
 - Paper arXiv: https://arxiv.org/pdf/2505.16552v1
 - Paper NeurIPS: https://papers.nips.cc/paper_files/paper/2025/file/0706261aedab63814a2b73c32564b4c4-Paper-Conference.pdf
 - Repositorio oficial CoLaR: https://github.com/xiaomi-research/colar

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Atxsmith/multitask-v1 es un prototipo de investigación publicado en HuggingFace que implementa una arquitectura tipo CLIP orientada a tareas múltiples (multitask). Lo desarrolla el usuario Atxsmith y se distribuye bajo licencia MIT. Se trata de un artefacto de tipo "scaffold": el repositorio incluye el código de definición del modelo (`train.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en `model.safetensors` que, según la propia model card, no ha sido entrenado ni validado.
+Atxsmith/multitask-v1 es un prototipo de investigación publicado en Hugging Face que implementa una arquitectura tipo CLIP orientada a tareas múltiples (multitask). Lo desarrolla el usuario Atxsmith y se distribuye bajo licencia MIT. Se trata de un artefacto de tipo "scaffold": el repositorio incluye el código de definición del modelo (`train.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en `model.safetensors` que, según la propia model card, no ha sido entrenado ni validado.
 
 El dato más relevante para evaluarlo es su tamaño real: el checkpoint contiene 49.600 parámetros, una cifra propia de un modelo de juguete y no de un sistema de visión-lenguaje utilizable. La model card etiqueta la escala como "giant", pero esa etiqueta corresponde a un campo de configuración generado automáticamente y no guarda relación con el número de parámetros efectivos del fichero de pesos. El autor declara explícitamente que no se reclama ninguna métrica de benchmark y que el checkpoint es válido únicamente para pruebas de humo (smoke tests).
 
@@ -43,7 +43,7 @@ En cuanto al entrenamiento, no hay ninguno. El propio autor indica que `model.sa
 - Prueba de humo de pipelines de entrenamiento: utilizar `train.py --help` y el bloque `__main__` para verificar que un entorno de PyTorch, carga de safetensors y bucle de entrenamiento funcionan antes de invertir recursos en un modelo mayor. Es adecuado precisamente por su tamano minimo, que permite iterar en segundos sobre CPU.
 - Validacion de integraciones de CI/CD: incorporar el repositorio como caso de test en un pipeline que compruebe que la carga de `config.json`, `training_args.json` y `model.safetensors` no rompe entre versiones de librerias.
 - Plantilla para experimentos de investigacion: partir de la estructura de configuracion (atencion de ventana deslizante, tensor fusion, ScaleNorm) para construir variantes propias de un modelo multimodal de dos torres, sustituyendo el checkpoint por uno entrenado de verdad.
-- Docencia y formacion: usar el codigo como ejemplo didactico de como se estructura un repositorio de modelo en HuggingFace (separacion entre arquitectura, receta de entrenamiento y pesos) sin necesidad de GPU.
+- Docencia y formacion: usar el codigo como ejemplo didactico de como se estructura un repositorio de modelo en Hugging Face (separacion entre arquitectura, receta de entrenamiento y pesos) sin necesidad de GPU.
 - Reproduccion de baselines con presupuesto controlado: el propio autor recomienda entrenar todos los baselines con la misma exposicion de datos, presupuesto de ajuste y semillas aleatorias; este repositorio puede actuar como esqueleto de esa metodologia.
 - Auditoria de configuraciones incoherentes: sirve como caso de estudio de por que la etiqueta de escala de un `config.json` no debe tomarse como descriptor fiable del numero de parametros reales.
 - Desarrollo de adaptadores de carga: dado que es una implementacion personalizada, requiere un adaptador explicito para las APIs automaticas de carga; el repositorio es un buen banco de pruebas para escribir y validar ese adaptador.
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - Cabe en GPU de consumo: si, en todas las gamas actuales y en la mayoria de iGPU.
 - Opciones de despliegue: vLLM, TGI, llama.cpp u Ollama no aplican de forma estandar, ya que la implementacion es personalizada y no usa una arquitectura soportada por esos servidores. El unico camino documentado es ejecutar el script propio de Python con PyTorch.
 - Latencia y throughput estimados: no disponible, y carentes de sentido en un checkpoint sin entrenar.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun los metadatos de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -67,10 +67,10 @@ Se compara con referencias publicas de la misma categoria (modelos de alineacion
 
 | Modelo | Parametros | Contexto texto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Atxsmith/multitask-v1 | 49.600 | no disponible | Checkpoint de inicializacion, sin entrenar | MIT | HuggingFace, 0 descargas |
+| Atxsmith/multitask-v1 | 49.600 | no disponible | Checkpoint de inicializacion, sin entrenar | MIT | Hugging Face, 0 descargas |
 | OpenAI CLIP (ViT-L/14) | cientos de millones (orden de magnitud) | limitado a 77 tokens en la implementacion original | Entrenado y evaluado en zero-shot | Licencia abierta del repositorio original | Ampliamente disponible |
-| SigLIP (Google) | familia de varios tamanos | no disponible en esta ficha | Entrenado con perdida sigmoide | Apache 2.0 en la mayoria de variantes | HuggingFace y otras |
-| Chinese-CLIP | familia de varios tamanos | adaptado a texto en chino | Entrenado y evaluado | Licencia abierta | HuggingFace |
+| SigLIP (Google) | familia de varios tamanos | no disponible en esta ficha | Entrenado con perdida sigmoide | Apache 2.0 en la mayoria de variantes | Hugging Face y otras |
+| Chinese-CLIP | familia de varios tamanos | adaptado a texto en chino | Entrenado y evaluado | Licencia abierta | Hugging Face |
 
 La diferencia fundamental no es de rendimiento sino de naturaleza: los tres modelos comparables son checkpoints entrenados y evaluados, mientras que multitask-v1 es un esqueleto de codigo con pesos sin entrenar. Cualquier comparacion numerica seria invalida.
 
@@ -88,6 +88,6 @@ La diferencia fundamental no es de rendimiento sino de naturaleza: los tres mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Atxsmith/multitask-v1
+- Hugging Face: https://huggingface.co/Atxsmith/multitask-v1
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. La busqueda devolvio exclusivamente documentacion en aleman sobre la funcion de captura de objetos (Objektfang) de AutoCAD, sin relacion alguna con el modelo.
 - Paper, blog o repositorio adicionales: no disponible.

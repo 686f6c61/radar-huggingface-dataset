@@ -6,7 +6,7 @@ El repositorio `Gzzh-ao93/notes-video-understanding` no es un modelo de aprendiz
 
 La model card describe el alcance de una pregunta de investigacion, confounders probables, una comparacion propuesta con baselines emparejados, contexto de evaluacion sobre MSR-VTT y ActivityNet Captions, comprobaciones de reproducibilidad, modos de fallo, preguntas abiertas y referencias tematicas. El propio autor advierte de forma explicita que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales, y que el repositorio no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado.
 
-Por tanto, esta ficha documenta un artefacto documental, no un modelo desplegable. Los metadatos de HuggingFace incluyen los tags `safetensors` y `transformer` y un contador de 33.088 parametros, datos que no se corresponden con ninguna arquitectura ni checkpoint descritos por el autor y que deben tratarse como ruido de indexacion hasta que exista confirmacion.
+Por tanto, esta ficha documenta un artefacto documental, no un modelo desplegable. Los metadatos de Hugging Face incluyen los tags `safetensors` y `transformer` y un contador de 33.088 parametros, datos que no se corresponden con ninguna arquitectura ni checkpoint descritos por el autor y que deben tratarse como ruido de indexacion hasta que exista confirmacion.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Otros datos del repositorio: autor Gzzh-ao93; fecha de creacion 2026-09-11T15:21
 
 ## Arquitectura y entrenamiento
 
-No hay arquitectura que describir. El repositorio no contiene definicion de modelo, configuracion de capas, tokenizador ni pesos. La model card no menciona volumen de tokens de entrenamiento, composicion del dataset, tecnicas de alineacion como RLHF o DPO, ni innovaciones de atencion o decodificacion. El tag `transformer` de HuggingFace aparece sin ningun documento que lo respalde, y el tag `research-notes` es el que describe con precision el contenido real.
+No hay arquitectura que describir. El repositorio no contiene definicion de modelo, configuracion de capas, tokenizador ni pesos. La model card no menciona volumen de tokens de entrenamiento, composicion del dataset, tecnicas de alineacion como RLHF o DPO, ni innovaciones de atencion o decodificacion. El tag `transformer` de Hugging Face aparece sin ningun documento que lo respalde, y el tag `research-notes` es el que describe con precision el contenido real.
 
 El material efectivamente presente es metodologico: delimitacion del alcance de la pregunta de investigacion, identificacion de confounders, propuesta de comparacion contra baselines emparejados, contexto de evaluacion sobre los conjuntos MSR-VTT y ActivityNet Captions, comprobaciones de reproducibilidad, analisis de modos de fallo, listado de preguntas abiertas y referencias bibliograficas. El autor indica ademas que, si en el futuro se anaden resultados, deberan incluir versiones de dataset, comandos, semillas, hardware y logs en crudo.
 
@@ -74,7 +74,7 @@ No disponible. El repositorio no es un modelo, por lo que no existe una categori
 
 ## Limitaciones y advertencias
 
-- No es un modelo. No hay checkpoint, ni codigo de inferencia, ni pipeline declarado en HuggingFace.
+- No es un modelo. No hay checkpoint, ni codigo de inferencia, ni pipeline declarado en Hugging Face.
 - Los tags `safetensors` y `transformer` y el contador de 33.088 parametros no estan respaldados por ningun documento del repositorio; tratelos como posible ruido de indexacion.
 - El autor advierte explicitamente de que las secciones etiquetadas como planes o hipotesis no son resultados experimentales.
 - El repositorio no declara mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado, segun sus propias limitaciones de alcance.
@@ -86,7 +86,7 @@ No disponible. El repositorio no es un modelo, por lo que no existe una categori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Gzzh-ao93/notes-video-understanding
+- Repositorio en Hugging Face: https://huggingface.co/Gzzh-ao93/notes-video-understanding
 - Fichero principal dentro del repositorio: `summary.md` (nota completa)
 - Documentacion dentro del repositorio: `README.md`
 - Conjuntos de datos citados en la model card, sin URL proporcionada por el autor: MSR-VTT y ActivityNet Captions

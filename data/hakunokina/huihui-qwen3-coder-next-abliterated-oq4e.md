@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Huihui-Qwen3-Coder-Next-abliterated-oQ4e (este) | ~80B totales / ~3B activos | 262k | 4 bits MLX (4,61 bits/peso) | Apache-2.0 | HuggingFace, formato MLX |
-| Huihui-Qwen3-Coder-Next-abliterated-oQ6e | ~80B totales / ~3B activos | 262k | 6 bits MLX (~65 GB) | Apache-2.0 | HuggingFace, formato MLX |
-| huihui-ai/Huihui-Qwen3-Coder-Next-abliterated (fuente) | ~80B totales / ~3B activos | 262k | BF16 (~159 GB) | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-Coder-Next (original) | ~80B totales / ~3B activos | 262k | BF16 y otras | Apache-2.0 | HuggingFace |
+| Huihui-Qwen3-Coder-Next-abliterated-oQ4e (este) | ~80B totales / ~3B activos | 262k | 4 bits MLX (4,61 bits/peso) | Apache-2.0 | Hugging Face, formato MLX |
+| Huihui-Qwen3-Coder-Next-abliterated-oQ6e | ~80B totales / ~3B activos | 262k | 6 bits MLX (~65 GB) | Apache-2.0 | Hugging Face, formato MLX |
+| huihui-ai/Huihui-Qwen3-Coder-Next-abliterated (fuente) | ~80B totales / ~3B activos | 262k | BF16 (~159 GB) | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-Coder-Next (original) | ~80B totales / ~3B activos | 262k | BF16 y otras | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo frente a otros modelos de la misma categoría en la información proporcionada.
 
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparativo frente a otros modelos de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hakunokina/Huihui-Qwen3-Coder-Next-abliterated-oQ4e
+- Modelo en Hugging Face: https://huggingface.co/hakunokina/Huihui-Qwen3-Coder-Next-abliterated-oQ4e
 - Variante oQ6e: https://huggingface.co/hakunokina/Huihui-Qwen3-Coder-Next-abliterated-oQ6e
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-Next-abliterated
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3-Coder-Next

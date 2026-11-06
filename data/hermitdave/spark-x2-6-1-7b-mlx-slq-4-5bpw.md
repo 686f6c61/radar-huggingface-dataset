@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci√
 
 ## Enlaces
 
-- [HuggingFace: hermitdave/Spark-X2.6-1.7B-MLX-slq-4.5bpw](https://huggingface.co/hermitdave/Spark-X2.6-1.7B-MLX-slq-4.5bpw)
+- [Hugging Face: hermitdave/Spark-X2.6-1.7B-MLX-slq-4.5bpw](https://huggingface.co/hermitdave/Spark-X2.6-1.7B-MLX-slq-4.5bpw)
 - [Modelo base: XHToken/Spark-X2.6-1.7B](https://huggingface.co/XHToken/Spark-X2.6-1.7B)
 - [Repositorio de cuantizaci√≥n: slq-mlx](https://github.com/hermitdave/slq-mlx)
 - [Soporte de arquitectura: Spark-MLX-LLM](https://github.com/XHToken/Spark-MLX-LLM)

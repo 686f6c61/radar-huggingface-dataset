@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TinyBrainBot-3M-Base es un modelo de lenguaje de 2.942.928 parámetros entrenado desde cero por el usuario nkthebass y publicado en HuggingFace con licencia Apache 2.0. Emplea una arquitectura transformer decoder-only estándar de tipo Llama (`LlamaForCausalLM`), sin código personalizado: 10 capas, hidden size 144, 3 cabezas de consulta de 48 dimensiones con una única cabeza KV (GQA), SwiGLU de 416, RMSNorm, RoPE y un vocabulario BPE byte-level propio de 4.096 tokens con los dígitos separados uno por token. La ventana de contexto es de 1.024 tokens y el único idioma soportado es el inglés.
+TinyBrainBot-3M-Base es un modelo de lenguaje de 2.942.928 parámetros entrenado desde cero por el usuario nkthebass y publicado en Hugging Face con licencia Apache 2.0. Emplea una arquitectura transformer decoder-only estándar de tipo Llama (`LlamaForCausalLM`), sin código personalizado: 10 capas, hidden size 144, 3 cabezas de consulta de 48 dimensiones con una única cabeza KV (GQA), SwiGLU de 416, RMSNorm, RoPE y un vocabulario BPE byte-level propio de 4.096 tokens con los dígitos separados uno por token. La ventana de contexto es de 1.024 tokens y el único idioma soportado es el inglés.
 
 El entrenamiento consumió 5.200 millones de tokens (5.000 M de entrenamiento principal más 500 M de re-anneal final), mezclando FineWeb-Edu, Wikipedia, TinyStories, Cosmopedia sintética y datos generados de Q&A y aritmética de primaria verificada en Python. Es un modelo base: continúa texto, no mantiene conversaciones ni sigue instrucciones.
 
@@ -108,7 +108,7 @@ Lectura: TinyBrainBot-3M-Base lidera el índice agregado y ArithMark-3 gracias a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkthebass/tinybrainbot-3m-base
+- Modelo en Hugging Face: https://huggingface.co/nkthebass/tinybrainbot-3m-base
 - Open SLM Leaderboard (AxiomicLabs): https://huggingface.co/spaces/AxiomicLabs/Open_SLM_Leaderboard
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset Cosmopedia: https://huggingface.co/datasets/HuggingFaceTB/cosmopedia

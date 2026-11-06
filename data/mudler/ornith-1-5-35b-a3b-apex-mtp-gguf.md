@@ -6,7 +6,7 @@ Ornith-1.5-35B-A3B es un modelo de lenguaje de gran escala desarrollado por Orni
 
 El modelo presenta un total de 35.505.251.456 parámetros, y su nombre indica una arquitectura de mezcla de expertos (MoE) con 3 mil millones de parámetros activos, aunque no se ha confirmado esta característica en la documentación disponible. Según el artículo oficial de Ornith AI, este modelo continúa el marco de "auto-scaffolding" y "auto-mejora" introducido en la versión 1.0, donde el modelo es capaz de proponer nuevas tareas, generar andamiajes específicos y producir rollouts para entrenamiento por refuerzo, lo que sugiere un enfoque de aprendizaje continuo y autónomo.
 
-La relevancia actual de este modelo radica en su enfoque novedoso de auto-mejora y su disponibilidad en formato GGUF, lo que facilita su despliegue en entornos locales con requisitos de hardware moderados. No obstante, la información pública sobre arquitectura, licencia, idiomas y rendimiento detallado es limitada, por lo que esta ficha se basa exclusivamente en los datos disponibles en HuggingFace y en los resultados de búsqueda web.
+La relevancia actual de este modelo radica en su enfoque novedoso de auto-mejora y su disponibilidad en formato GGUF, lo que facilita su despliegue en entornos locales con requisitos de hardware moderados. No obstante, la información pública sobre arquitectura, licencia, idiomas y rendimiento detallado es limitada, por lo que esta ficha se basa exclusivamente en los datos disponibles en Hugging Face y en los resultados de búsqueda web.
 
 ## Especificaciones técnicas
 
@@ -58,7 +58,7 @@ No se han publicado resultados detallados de benchmarks en la información dispo
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos directamente comparables. El modelo anterior de la misma familia, Ornith-1.0-35B-APEX-GGUF, también está disponible en HuggingFace, pero no se han publicado comparativas numéricas. En general, un MoE de 35B con 3B activos se podría comparar con modelos como Mixtral 8x7B (46.7B totales, 12.9B activos) o Qwen 1.5 MoE, pero no hay datos de rendimiento que permitan una comparación objetiva. Por tanto, se indica "no disponible".
+No se dispone de información sobre modelos directamente comparables. El modelo anterior de la misma familia, Ornith-1.0-35B-APEX-GGUF, también está disponible en Hugging Face, pero no se han publicado comparativas numéricas. En general, un MoE de 35B con 3B activos se podría comparar con modelos como Mixtral 8x7B (46.7B totales, 12.9B activos) o Qwen 1.5 MoE, pero no hay datos de rendimiento que permitan una comparación objetiva. Por tanto, se indica "no disponible".
 
 ## Limitaciones y advertencias
 
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos directamente comparables. El modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mudler/Ornith-1.5-35B-A3B-APEX-MTP-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mudler/Ornith-1.5-35B-A3B-APEX-MTP-GGUF
 - Modelo original de Ornith AI: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Artículo oficial sobre Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Perfil de BenchLM: https://benchlm.ai/models/ornith-1-5-35b-a3b

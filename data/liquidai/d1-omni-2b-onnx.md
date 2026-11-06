@@ -99,7 +99,7 @@ La comparacion relevante en terminos de despliegue no es de calidad sino de empa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LiquidAI/d1-Omni-2B-ONNX
+- Repositorio Hugging Face: https://huggingface.co/LiquidAI/d1-Omni-2B-ONNX
 - Modelo base: https://huggingface.co/LiquidAI/d1-Omni-2B
 - Blog de presentacion de d1: https://www.liquid.ai/blog/open-d1
 - Documentacion de LFM: https://docs.liquid.ai/lfm/getting-started/welcome
@@ -107,5 +107,5 @@ La comparacion relevante en terminos de despliegue no es de calidad sino de empa
 - Playground: https://playground.liquid.ai/
 - Sitio de Liquid AI: https://www.liquid.ai/
 - Pagina de modelos: https://www.liquid.ai/models
-- Organizacion en HuggingFace: https://huggingface.co/LiquidAI
+- Organizacion en Hugging Face: https://huggingface.co/LiquidAI
 - Wikipedia: https://en.wikipedia.org/wiki/Liquid_AI

@@ -57,12 +57,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa basada en el tamaño del repositorio (0,5 GB en 1273 archivos, incluyendo pesos, configuraciones y resultados de evaluacion), los pesos por si solos ocuparian como maximo ese volumen, lo que situaria el modelo en el orden de decenas o pocos cientos de millones de parametros en funcion de la precision. Es una estimacion a partir del tamaño del repositorio, no un dato confirmado.
 - GPU recomendadas: no disponibles. Cualquier GPU con suficiente memoria para el peso efectivo del checkpoint seria en principio utilizable; no se puede concretar sin conocer el numero de parametros y la precision.
 - GPU de consumo: no confirmado. Si la estimacion de tamaño es correcta, el modelo cabria con holgura en GPUs de consumo como la RTX 4090 o incluso en tarjetas con 8-12 GB de VRAM, pero esto no esta verificado.
-- Opciones de despliegue: no se especifican. El repositorio no declara pipeline de HuggingFace ni formato GGUF, por lo que no se puede confirmar compatibilidad con vLLM, llama.cpp, Ollama, TGI u otros servidores de inferencia.
+- Opciones de despliegue: no se especifican. El repositorio no declara pipeline de Hugging Face ni formato GGUF, por lo que no se puede confirmar compatibilidad con vLLM, llama.cpp, Ollama, TGI u otros servidores de inferencia.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de datos de parametros, contexto, rendimiento ni licencia de este checkpoint, por lo que no es posible establecer una comparacion rigurosa con alternativas de la misma categoria. Como referencia cualitativa, la familia CLAP (por ejemplo, LAION-CLAP o los modelos CLAP publicados en el ecosistema HuggingFace) cubre tareas contrastivas audio-texto, pero no se puede afirmar que este repositorio sea directamente comparable sin confirmar arquitectura y objetivo de entrenamiento.
+No disponible. No se dispone de datos de parametros, contexto, rendimiento ni licencia de este checkpoint, por lo que no es posible establecer una comparacion rigurosa con alternativas de la misma categoria. Como referencia cualitativa, la familia CLAP (por ejemplo, LAION-CLAP o los modelos CLAP publicados en el ecosistema Hugging Face) cubre tareas contrastivas audio-texto, pero no se puede afirmar que este repositorio sea directamente comparable sin confirmar arquitectura y objetivo de entrenamiento.
 
 ## Limitaciones y advertencias
 
@@ -77,6 +77,6 @@ No disponible. No se dispone de datos de parametros, contexto, rendimiento ni li
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/external_evals
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/external_evals
 - Indice de ejecuciones de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

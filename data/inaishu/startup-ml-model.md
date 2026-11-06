@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `InaIshu/startup-ml-model` se encuentra publicado en HuggingFace por el usuario InaIshu. Su licencia es MIT y se ha etiquetado con `region:us`. No se ha publicado ninguna información técnica en la model card más allá de la licencia, de modo que no se puede determinar su arquitectura, tamaño, longitud de contexto, capacidades ni tipo de pesos.
+El modelo `InaIshu/startup-ml-model` se encuentra publicado en Hugging Face por el usuario InaIshu. Su licencia es MIT y se ha etiquetado con `region:us`. No se ha publicado ninguna información técnica en la model card más allá de la licencia, de modo que no se puede determinar su arquitectura, tamaño, longitud de contexto, capacidades ni tipo de pesos.
 
 El repositorio fue creado el 9 de septiembre de 2026 y actualizado en la misma fecha. No cuenta con descargas ni con reacciones (“likes”) en el momento de la consulta. Al carecer por completo de documentación, el modelo no puede ser evaluado ni recomendado para ningún uso práctico sin un análisis adicional por parte del usuario.
 
@@ -62,4 +62,4 @@ No disponible. Al no existir especificaciones técnicas ni resultados de benchma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/InaIshu/startup-ml-model
+- Hugging Face: https://huggingface.co/InaIshu/startup-ml-model

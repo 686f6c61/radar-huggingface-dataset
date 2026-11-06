@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) de `jiosephlee/Intern-S1-mini-lm` orientado a una tarea muy concreta de química computacional: la transferencia de ensayos (*assay transfer*) a nivel de registro para la predicción de carcinogenicidad, con grado 24 (*degree 24*). Lo publica el usuario `jiosephlee` en HuggingFace y se distribuye como un checkpoint seleccionado por validación dentro de un entrenamiento más amplio. El problema que resuelve es el de estimar propiedades toxicológicas de compuestos cuando solo se dispone de datos de ensayos parciales, algo habitual en el descubrimiento de fármacos, donde las mediciones experimentales son caras y dispersas.
+Este modelo es un ajuste fino (fine-tuning) de `jiosephlee/Intern-S1-mini-lm` orientado a una tarea muy concreta de química computacional: la transferencia de ensayos (*assay transfer*) a nivel de registro para la predicción de carcinogenicidad, con grado 24 (*degree 24*). Lo publica el usuario `jiosephlee` en Hugging Face y se distribuye como un checkpoint seleccionado por validación dentro de un entrenamiento más amplio. El problema que resuelve es el de estimar propiedades toxicológicas de compuestos cuando solo se dispone de datos de ensayos parciales, algo habitual en el descubrimiento de fármacos, donde las mediciones experimentales son caras y dispersas.
 
 Técnicamente se trata de un modelo de lenguaje de 8.201.221.120 parámetros (aproximadamente 8,2 mil millones) con pesos en formato `safetensors`, etiquetado en el repositorio como `qwen3` y con salida de tipo `text-generation`. El checkpoint se seleccionó en el paso 500 de entrenamiento según la métrica conjunta `Carcinogens/degree24/overall/knn_regression_id_ood_level_macro_mae_at_3`, con un valor de validación de 0,8675038371.
 
@@ -91,10 +91,10 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Rendimiento (Macro MAE@3) | Licencia | Disponibilidad |
 | --- | --- | --- | --- | --- | --- |
-| Este modelo (ajuste de Intern-S1-mini) | 8,2 B | No disponible | 0.5587 | No disponible | HuggingFace (0 descargas) |
+| Este modelo (ajuste de Intern-S1-mini) | 8,2 B | No disponible | 0.5587 | No disponible | Hugging Face (0 descargas) |
 | Morgan fingerprint (vanilla) | No aplica (descriptor) | No aplica | 0.8142 | No aplica | Ampliamente disponible en RDKit |
 | Morgan fingerprint (weighted) | No aplica (descriptor) | No aplica | 0.7630 | No aplica | Ampliamente disponible en RDKit |
-| Modelo base `jiosephlee/Intern-S1-mini-lm` | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| Modelo base `jiosephlee/Intern-S1-mini-lm` | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 Comparar con otros modelos de lenguaje químicos de la misma categoría no es posible con la información disponible: no se aportan referencias a alternativas como ChemLLM, ChemCrow o modelos similares, ni sus métricas en este mismo panel.
 
@@ -113,7 +113,7 @@ Comparar con otros modelos de lenguaje químicos de la misma categoría no es po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiosephlee/intern-s1-mini-assay-transfer-record-level-v27-carcinogens-general-best
+- Modelo en Hugging Face: https://huggingface.co/jiosephlee/intern-s1-mini-assay-transfer-record-level-v27-carcinogens-general-best
 - Modelo base: https://huggingface.co/jiosephlee/Intern-S1-mini-lm
 - Dataset de entrenamiento: https://huggingface.co/datasets/jiosephlee/assay-transfer-record-level-v27-carcinogens-general-intern
 - Registro de evaluacion en Weights & Biases: https://wandb.ai/upenn-ml/record-level-assay-transfer/runs/u6xygnza

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-game-hillclimber-remix2 es una política de control para robot cuadrúpedo publicada por el usuario jrubiosainz en HuggingFace, pensada exclusivamente para la prueba de subida de colina de 1,5 m de la Microduck Arena (Pollen Robotics). No es un modelo de lenguaje ni un modelo de propósito general: es un grafo ONNX de 831.318 bytes que implementa un controlador reactivo con 61 entradas de observación y 14 salidas de acción articular, ejecutado en el simulador MuJoCo 3.10.0 sobre CPU x86-64.
+microduck-game-hillclimber-remix2 es una política de control para robot cuadrúpedo publicada por el usuario jrubiosainz en Hugging Face, pensada exclusivamente para la prueba de subida de colina de 1,5 m de la Microduck Arena (Pollen Robotics). No es un modelo de lenguaje ni un modelo de propósito general: es un grafo ONNX de 831.318 bytes que implementa un controlador reactivo con 61 entradas de observación y 14 salidas de acción articular, ejecutado en el simulador MuJoCo 3.10.0 sobre CPU x86-64.
 
 Técnicamente es una remezcla de juicenv/microduck-hill-es8 (revisión `f68d9094`): la red neuronal original se mantiene congelada, con sus 197.774 pesos y sesgos bit a bit idénticos, y se envuelve en un contador de pasos que añade desfases dependientes del tiempo a los objetivos articulares y a la velocidad de avance que la red lee. Esos desfases (198 valores de nudo, 22 nudos × 9 canales) se buscaron con CMA-ES sobre las cinco semillas oficiales del evento, dando 0,780 s de media frente a los 0,792 s de la política de origen.
 
@@ -76,10 +76,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ningún otro benc
 
 | Modelo | Tipo | Parametros | Contexto / entrada | Rendimiento en la prueba | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| jrubiosainz/microduck-game-hillclimber-remix2 | Política ONNX de control | 197.774 pesos y sesgos | Vector de observación [1, 61] | 0,780 s de media; 0,78 s en las cinco semillas | No disponible | HuggingFace, 0 descargas, 0 likes |
-| juicenv/microduck-hill-es8 | Política ONNX de control | 197.774 pesos y sesgos (red base de esta remezcla) | Vector de observación [1, 61] | 0,792 s de media | No disponible | HuggingFace |
-| suraj-phanindra/microduck-hill-hc2-aifund | Política ONNX de control | No disponible | No disponible | 0,808 s | No disponible | HuggingFace |
-| namenu/microduck-arena | Repositorio/entrada de Arena (origen de entrenamientos) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| jrubiosainz/microduck-game-hillclimber-remix2 | Política ONNX de control | 197.774 pesos y sesgos | Vector de observación [1, 61] | 0,780 s de media; 0,78 s en las cinco semillas | No disponible | Hugging Face, 0 descargas, 0 likes |
+| juicenv/microduck-hill-es8 | Política ONNX de control | 197.774 pesos y sesgos (red base de esta remezcla) | Vector de observación [1, 61] | 0,792 s de media | No disponible | Hugging Face |
+| suraj-phanindra/microduck-hill-hc2-aifund | Política ONNX de control | No disponible | No disponible | 0,808 s | No disponible | Hugging Face |
+| namenu/microduck-arena | Repositorio/entrada de Arena (origen de entrenamientos) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 Los cuatro modelos pertenecen a la misma categoría (control de locomoción para la Microduck Arena) y todos comparten la misma ausencia de licencia declarada. No se dispone de datos de arquitectura interna de las alternativas más allá de lo indicado.
 
@@ -97,7 +97,7 @@ Los cuatro modelos pertenecen a la misma categoría (control de locomoción para
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix2
+- Ficha del modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix2
 - Modelo base: https://huggingface.co/juicenv/microduck-hill-es8
 - Autor del modelo base: https://huggingface.co/juicenv
 - Microduck Arena (Space de Pollen Robotics): https://huggingface.co/spaces/pollen-robotics/microduck-arena

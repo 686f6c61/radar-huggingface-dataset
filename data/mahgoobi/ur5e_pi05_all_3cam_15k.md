@@ -83,9 +83,9 @@ No se han publicado resultados de otros benchmarks (tasa de éxito, MMLU, HumanE
 
 | Modelo | Entradas | Tareas | `action_mse` retenido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ur5e_pi05_all_3cam_15k` (este) | 3 cámaras, 1.080 episodios de entrenamiento | 6, con desorden `d1`–`d4` incluido | 0,001713 (paso 15.000) | Apache 2.0 | HuggingFace, 0 descargas |
-| `ur5e_pi05_all_3cam_20k` | 3 cámaras, mismo conjunto | 6, mismo conjunto | 0,001752 (paso 19.999) | Apache 2.0 | HuggingFace |
-| `ur5e_pi05_10k` | 2 cámaras | 5, solo `clean` | no disponible en esta ficha | no disponible | HuggingFace |
+| `ur5e_pi05_all_3cam_15k` (este) | 3 cámaras, 1.080 episodios de entrenamiento | 6, con desorden `d1`–`d4` incluido | 0,001713 (paso 15.000) | Apache 2.0 | Hugging Face, 0 descargas |
+| `ur5e_pi05_all_3cam_20k` | 3 cámaras, mismo conjunto | 6, mismo conjunto | 0,001752 (paso 19.999) | Apache 2.0 | Hugging Face |
+| `ur5e_pi05_10k` | 2 cámaras | 5, solo `clean` | no disponible en esta ficha | no disponible | Hugging Face |
 | `pi05_base` | preentrenamiento general | no aplica | 0,069912 (paso 0 de este ajuste, como referencia) | no disponible | `gs://openpi-assets/checkpoints/pi05_base/params` |
 
 Los cuatro modelos comparten arquitectura π₀.₅ y espacio de acción, por lo que la comparación es directa. La diferencia entre el checkpoint de 15.000 y el de 19.999 pasos cae dentro del ruido declarado por el propio autor. No se dispone de comparación con políticas VLA de otros autores (por ejemplo, familias basadas en otros *backbones*) en la información proporcionada.
@@ -108,7 +108,7 @@ Los cuatro modelos comparten arquitectura π₀.₅ y espacio de acción, por lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mahgoobi/ur5e_pi05_all_3cam_15k
+- Modelo en Hugging Face: https://huggingface.co/mahgoobi/ur5e_pi05_all_3cam_15k
 - Checkpoint del paso 20.000: https://huggingface.co/mahgoobi/ur5e_pi05_all_3cam_20k
 - Checkpoint anterior de 10.000 pasos: https://huggingface.co/mahgoobi/ur5e_pi05_10k
 - RoboResearch (entrenamiento): https://github.com/EAI-RSM/RoboResearch

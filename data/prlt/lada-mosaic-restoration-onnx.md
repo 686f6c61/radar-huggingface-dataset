@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lada-mosaic-restoration-onnx es un modelo en formato ONNX publicado por el usuario prlt en HuggingFace, orientado al procesamiento de secuencias de vídeo o de fotogramas. Según la model card, el modelo recibe un tensor de entrada con forma [batchSize, frames, channel, height, width] y devuelve una salida con exactamente la misma forma, por lo que se trata de una tarea de restauración o transformación fotograma a fotograma manteniendo la estructura temporal del clip. El autor no detalla la arquitectura interna, el número de parámetros ni el dataset de entrenamiento.
+Lada-mosaic-restoration-onnx es un modelo en formato ONNX publicado por el usuario prlt en Hugging Face, orientado al procesamiento de secuencias de vídeo o de fotogramas. Según la model card, el modelo recibe un tensor de entrada con forma [batchSize, frames, channel, height, width] y devuelve una salida con exactamente la misma forma, por lo que se trata de una tarea de restauración o transformación fotograma a fotograma manteniendo la estructura temporal del clip. El autor no detalla la arquitectura interna, el número de parámetros ni el dataset de entrenamiento.
 
 El modelo admite cuatro configuraciones de entrada fijas: 60 o 90 fotogramas a resoluciones de 256x256 o 512x512, siempre con batch size 1 y 3 canales RGB. Los nombres de los ficheros incluidos siguen el patrón model_fp16_90frames_256x256.onnx, lo que indica que el peso distribuido está en precisión FP16 y que existen variantes por número de fotogramas y resolución.
 
@@ -86,6 +86,6 @@ No disponible. La informacion proporcionada no incluye referencias a otros model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/prlt/Lada-mosaic-restoration-onnx
+- Hugging Face: https://huggingface.co/prlt/Lada-mosaic-restoration-onnx
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo, su arquitectura o su entrenamiento. Los resultados obtenidos correspondian a consultas no relacionadas (soporte de Visual Studio, informes RDLC, foros en chino y japones), por lo que no se incluyen.
 - Paper, repositorio de codigo, blog o demo: no disponibles.

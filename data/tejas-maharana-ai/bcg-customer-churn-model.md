@@ -2,9 +2,9 @@
 
 ## Resumen
 
-bcg-customer-churn-model es un modelo de machine learning clásico (no generativo) publicado en HuggingFace por el usuario tejas-maharana-ai. Su propósito es predecir la cancelación (churn) de clientes, presumiblemente en el contexto de un caso práctico relacionado con BCG (Boston Consulting Group), dado el nombre del repositorio. No se trata de un modelo de lenguaje, sino de un clasificador tabular serializado con joblib, lo que indica que fue entrenado probablemente con scikit-learn o una librería similar.
+bcg-customer-churn-model es un modelo de machine learning clásico (no generativo) publicado en Hugging Face por el usuario tejas-maharana-ai. Su propósito es predecir la cancelación (churn) de clientes, presumiblemente en el contexto de un caso práctico relacionado con BCG (Boston Consulting Group), dado el nombre del repositorio. No se trata de un modelo de lenguaje, sino de un clasificador tabular serializado con joblib, lo que indica que fue entrenado probablemente con scikit-learn o una librería similar.
 
-El modelo resuelve un problema de negocio muy habitual: identificar qué clientes tienen mayor probabilidad de abandonar un servicio, permitiendo a las empresas actuar de forma proactiva con ofertas de retención. Es relevante como ejemplo de despliegue de modelos tabulares en el Hub de HuggingFace, un caso menos común que los LLM pero útil para equipos de datos que centralizan todos sus artefactos de ML en una misma plataforma.
+El modelo resuelve un problema de negocio muy habitual: identificar qué clientes tienen mayor probabilidad de abandonar un servicio, permitiendo a las empresas actuar de forma proactiva con ofertas de retención. Es relevante como ejemplo de despliegue de modelos tabulares en el Hub de Hugging Face, un caso menos común que los LLM pero útil para equipos de datos que centralizan todos sus artefactos de ML en una misma plataforma.
 
 La información técnica disponible es muy escasa: la model card contiene únicamente la declaración de licencia MIT, sin documentación sobre arquitectura, datos de entrenamiento, métricas ni uso. El repositorio pesa aproximadamente 0,2 GB, tiene 0 descargas y 1 like en el momento de redactar esta ficha.
 
@@ -50,7 +50,7 @@ No se ha publicado informacion sobre el dataset de entrenamiento, el numero de r
 - Prediccion de churn en telecomunicaciones: dado un cliente con variables como tipo de contrato, facturacion mensual y antiguedad, el modelo estima la probabilidad de cancelacion para priorizar campanas de retencion.
 - Priorizacion de campanas de retencion: ordenando clientes por score de churn, un equipo comercial puede concentrar su presupuesto en el segmento con mayor riesgo.
 - Analisis de factores de cancelacion: combinando las predicciones con tecnicas de explicabilidad (SHAP, feature importance) para entender que variables empujan al abandono.
-- Prototipado rapido de MLOps: el artefacto es ligero (0,2 GB) y sirve como modelo de ejemplo para montar un endpoint de inferencia con FastAPI, BentoML o un Inference Endpoint de HuggingFace.
+- Prototipado rapido de MLOps: el artefacto es ligero (0,2 GB) y sirve como modelo de ejemplo para montar un endpoint de inferencia con FastAPI, BentoML o un Inference Endpoint de Hugging Face.
 - Docencia y formacion: caso practico tipo para cursos de data science sobre clasificacion tabular, validacion cruzada y metricas desbalanceadas (precision, recall, AUC-ROC).
 - Integracion en CRM: puntuacion periodica de la base de clientes mediante batch scoring, escribiendo el score de churn como campo en el CRM para que los equipos de atencion actuen en consecuencia.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|
 | tejas-maharana-ai/bcg-customer-churn-model | Clasificador tabular (churn) | MIT | joblib | Minima (solo licencia) |
 | Modelos de churn en Kaggle / GitHub (varios autores) | Clasificador tabular (XGBoost, LightGBM, sklearn) | Varias | pickle/joblib | Habitualmente con metricas y EDA |
-| Modelos tabulares en HuggingFace (tabular-classification pipeline) | Clasificador/regresor tabular | Varias | joblib/safetensors | Variable segun el autor |
+| Modelos tabulares en Hugging Face (tabular-classification pipeline) | Clasificador/regresor tabular | Varias | joblib/safetensors | Variable segun el autor |
 
 No existen alternativas concretas y equivalentes publicadas por el mismo autor; la comparativa se limita a la categoria general de modelos de clasificacion tabular de churn, donde la diferencia principal de este repositorio es la ausencia casi total de documentacion frente a repositorios similares que suelen incluir metricas y notebooks de entrenamiento.
 
@@ -88,6 +88,6 @@ No existen alternativas concretas y equivalentes publicadas por el mismo autor; 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tejas-maharana-ai/bcg-customer-churn-model
+- Repositorio en Hugging Face: https://huggingface.co/tejas-maharana-ai/bcg-customer-churn-model
 
 No se han encontrado enlaces adicionales (paper, blog, repositorio de codigo o demo) en la informacion disponible.

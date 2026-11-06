@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ramosvaldo9/doktor-gemma3-12b` es un ajuste fino (fine-tune) del modelo multimodal Gemma 3 de 12 000 millones de parámetros en su variante instruct, publicado por el usuario ramosvaldo9 en HuggingFace. Se trata de un modelo image-text-to-text, es decir, acepta entradas que combinan imágenes y texto y genera respuestas en lenguaje natural. El modelo base empleado es `unsloth/gemma-3-12b-it-unsloth-bnb-4bit`, una versión cuantizada en 4 bits del Gemma 3 12B instruct preparada por Unsloth para entrenamiento eficiente.
+`ramosvaldo9/doktor-gemma3-12b` es un ajuste fino (fine-tune) del modelo multimodal Gemma 3 de 12 000 millones de parámetros en su variante instruct, publicado por el usuario ramosvaldo9 en Hugging Face. Se trata de un modelo image-text-to-text, es decir, acepta entradas que combinan imágenes y texto y genera respuestas en lenguaje natural. El modelo base empleado es `unsloth/gemma-3-12b-it-unsloth-bnb-4bit`, una versión cuantizada en 4 bits del Gemma 3 12B instruct preparada por Unsloth para entrenamiento eficiente.
 
-El ajuste se realizó con Unsloth y la librería TRL de HuggingFace, según indica la propia model card, lo que sugiere un entrenamiento con técnicas de bajo rango (LoRA/QLoRA) sobre el modelo base cuantizado. El autor no documenta el conjunto de datos, el número de tokens de entrenamiento ni los hiperparámetros empleados, por lo que se desconoce el propósito específico del ajuste más allá de la etiqueta genérica "Uploaded finetuned model".
+El ajuste se realizó con Unsloth y la librería TRL de Hugging Face, según indica la propia model card, lo que sugiere un entrenamiento con técnicas de bajo rango (LoRA/QLoRA) sobre el modelo base cuantizado. El autor no documenta el conjunto de datos, el número de tokens de entrenamiento ni los hiperparámetros empleados, por lo que se desconoce el propósito específico del ajuste más allá de la etiqueta genérica "Uploaded finetuned model".
 
 Por su relevancia: se trata de un modelo derivado de Gemma 3, la familia abierta de Google con arquitectura transformer multimodal y ventana de contexto amplia, pero al ser un fine-tune comunitario con escasa documentación y apenas 52 descargas, debe evaluarse con cautela antes de cualquier uso en producción. La licencia declarada es Apache 2.0, aunque conviene verificar la compatibilidad con los términos de uso de Gemma 3.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ramosvaldo9/doktor-gemma3-12b | ~12,2 B | no disponible | Si (image-text-to-text) | apache-2.0 (declarada) | HuggingFace, 52 descargas |
-| google/gemma-3-12b-it | ~12 B | no disponible en esta ficha | Si | Gemma Terms of Use | HuggingFace, ampliamente usado |
-| unsloth/gemma-3-12b-it-unsloth-bnb-4bit | ~12 B | no disponible en esta ficha | Si | Gemma Terms of Use | HuggingFace, base de este fine-tune |
-| Mistral Small 3.1 24B | ~24 B | no disponible en esta ficha | Si | Apache 2.0 | HuggingFace |
+| ramosvaldo9/doktor-gemma3-12b | ~12,2 B | no disponible | Si (image-text-to-text) | apache-2.0 (declarada) | Hugging Face, 52 descargas |
+| google/gemma-3-12b-it | ~12 B | no disponible en esta ficha | Si | Gemma Terms of Use | Hugging Face, ampliamente usado |
+| unsloth/gemma-3-12b-it-unsloth-bnb-4bit | ~12 B | no disponible en esta ficha | Si | Gemma Terms of Use | Hugging Face, base de este fine-tune |
+| Mistral Small 3.1 24B | ~24 B | no disponible en esta ficha | Si | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a modelos de la misma familia o categoría; no se dispone de datos de rendimiento del fine-tune para comparar benchmarks. El modelo base oficial de Google es la referencia natural, y el checkpoint de Unsloth es el punto de partida directo.
 
@@ -84,7 +84,7 @@ La comparativa se limita a modelos de la misma familia o categoría; no se dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ramosvaldo9/doktor-gemma3-12b
+- Modelo en Hugging Face: https://huggingface.co/ramosvaldo9/doktor-gemma3-12b
 - Modelo base (Unsloth): https://huggingface.co/unsloth/gemma-3-12b-it-unsloth-bnb-4bit
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
 - Documentación de TRL: https://huggingface.co/docs/trl

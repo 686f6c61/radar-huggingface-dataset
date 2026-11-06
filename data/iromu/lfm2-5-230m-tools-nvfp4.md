@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-230M-tools-NVFP4 es la versión cuantizada a NVFP4 (4 bits en coma flotante) del modelo de tool calling iromu/LFM2.5-230M-tools, a su vez un ajuste fino con LoRA de LiquidAI/LFM2.5-230M-Base. Lo publica el usuario iromu en HuggingFace y su objetivo es servir llamadas a funciones estructuradas con un consumo de memoria mínimo, apuntando a hardware de la clase GB10 (Grace Blackwell) mediante vLLM. El checkpoint pesa 0,2 GB y contiene 148.428.544 parámetros reales en safetensors, por debajo de la cifra nominal de 230M que da nombre a la familia.
+LFM2.5-230M-tools-NVFP4 es la versión cuantizada a NVFP4 (4 bits en coma flotante) del modelo de tool calling iromu/LFM2.5-230M-tools, a su vez un ajuste fino con LoRA de LiquidAI/LFM2.5-230M-Base. Lo publica el usuario iromu en Hugging Face y su objetivo es servir llamadas a funciones estructuradas con un consumo de memoria mínimo, apuntando a hardware de la clase GB10 (Grace Blackwell) mediante vLLM. El checkpoint pesa 0,2 GB y contiene 148.428.544 parámetros reales en safetensors, por debajo de la cifra nominal de 230M que da nombre a la familia.
 
 La relevancia del artefacto no está en su capacidad bruta, sino en el compromiso que documenta: el autor publica una tabla de validación en la que la cuantización NVFP4 degrada de forma severa el comportamiento de tool calling respecto al merge en BF16. Se trata, por tanto, de una pieza pensada para entornos con restricciones estrictas de memoria donde el runtime entiende el formato de cable propio de LFM2.5, y no de un sustituto de un asistente generalista.
 
@@ -69,10 +69,10 @@ El autor señala que la cuantización penaliza a este modelo más que a otros ma
 
 | Modelo | Parámetros | Contexto | Tool calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iromu/LFM2.5-230M-tools-NVFP4 | 148,4M | no disponible (entrenado a 4096) | Formato LFM2.5; 2,6 % argumentos exactos en validación propia | Apache 2.0 | HuggingFace, vLLM |
-| iromu/LFM2.5-230M-tools (BF16) | 148,4M | no disponible (entrenado a 4096) | Formato LFM2.5; 13,2 % argumentos exactos en la misma validación | Apache 2.0 | HuggingFace, transformers |
-| iromu/LFM2.5-230M-tools-GGUF (Q5_K_M) | 148,4M | no disponible | Formato LFM2.5; 19,9 % argumentos exactos en la misma validación | Apache 2.0 | HuggingFace, llama.cpp |
-| LiquidAI/LFM2.5-230M-Base | 230M nominales | no disponible | No especializado en tool calling | No disponible en la información proporcionada | HuggingFace |
+| iromu/LFM2.5-230M-tools-NVFP4 | 148,4M | no disponible (entrenado a 4096) | Formato LFM2.5; 2,6 % argumentos exactos en validación propia | Apache 2.0 | Hugging Face, vLLM |
+| iromu/LFM2.5-230M-tools (BF16) | 148,4M | no disponible (entrenado a 4096) | Formato LFM2.5; 13,2 % argumentos exactos en la misma validación | Apache 2.0 | Hugging Face, transformers |
+| iromu/LFM2.5-230M-tools-GGUF (Q5_K_M) | 148,4M | no disponible | Formato LFM2.5; 19,9 % argumentos exactos en la misma validación | Apache 2.0 | Hugging Face, llama.cpp |
+| LiquidAI/LFM2.5-230M-Base | 230M nominales | no disponible | No especializado en tool calling | No disponible en la información proporcionada | Hugging Face |
 
 La comparación relevante es interna a la familia: mismo modelo base y mismo entrenamiento, distinta cuantización. Frente a alternativas de otros autores del mismo tamaño no se dispone de datos en la información proporcionada.
 
@@ -91,7 +91,7 @@ La comparación relevante es interna a la familia: mismo modelo base y mismo ent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iromu/LFM2.5-230M-tools-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/iromu/LFM2.5-230M-tools-NVFP4
 - Modelo BF16 con tabla de validación: https://huggingface.co/iromu/LFM2.5-230M-tools
 - Cuantizaciones GGUF: https://huggingface.co/iromu/LFM2.5-230M-tools-GGUF
 - Modelo base de la familia: https://huggingface.co/LiquidAI/LFM2.5-230M-Base

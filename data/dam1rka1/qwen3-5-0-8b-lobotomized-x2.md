@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-lobotomized-x2 es un modelo de lenguaje bilingüe (ruso e inglés) de 752 millones de parámetros derivado de Qwen/Qwen3.5-0.8B, publicado por el usuario Dam1rka1 en HuggingFace. Su particularidad es que no ha sido ajustado mediante descenso de gradiente ni fine-tuning sobre datasets sintéticos, sino mediante una intervención directa sobre los tensores de pesos (lo que el autor denomina "weight-space lobotomy"): reducción de rango por SVD sobre proyecciones de atención y MLP, plegado estático de direcciones de steering en las capas de down-projection y suavizado de pesos atípicos en capas finales.
+Qwen3.5-0.8B-lobotomized-x2 es un modelo de lenguaje bilingüe (ruso e inglés) de 752 millones de parámetros derivado de Qwen/Qwen3.5-0.8B, publicado por el usuario Dam1rka1 en Hugging Face. Su particularidad es que no ha sido ajustado mediante descenso de gradiente ni fine-tuning sobre datasets sintéticos, sino mediante una intervención directa sobre los tensores de pesos (lo que el autor denomina "weight-space lobotomy"): reducción de rango por SVD sobre proyecciones de atención y MLP, plegado estático de direcciones de steering en las capas de down-projection y suavizado de pesos atípicos en capas finales.
 
 El modelo está orientado a tres tareas concretas: adherencia estricta a esquemas JSON (OpenAPI/Pydantic), function calling en Python evaluado con Berkeley Function-Calling Leaderboard v4, y seguimiento de instrucciones con restricciones verificables según Google IFEval. La arquitectura subyacente alterna capas de self-attention con ventana deslizante y capas de recurrencia lineal, según describe el autor.
 
@@ -76,10 +76,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-lobotomized-x2 | 752 M | no disponible | JSON, function calling, IFEval vía cirugía de pesos | Apache 2.0 | HuggingFace (safetensors y GGUF) |
-| Qwen/Qwen3.5-0.8B (base) | 752 M | no disponible | Modelo generalista bilingüe | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B-Instruct | 494 M | 32.768 tokens | Asistente generalista con instruction tuning | Apache 2.0 | HuggingFace |
-| SmolLM2-1.7B-Instruct | 1.700 M | 8.192 tokens | Asistente generalista con instruction tuning | Apache 2.0 | HuggingFace |
+| Qwen3.5-0.8B-lobotomized-x2 | 752 M | no disponible | JSON, function calling, IFEval vía cirugía de pesos | Apache 2.0 | Hugging Face (safetensors y GGUF) |
+| Qwen/Qwen3.5-0.8B (base) | 752 M | no disponible | Modelo generalista bilingüe | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 494 M | 32.768 tokens | Asistente generalista con instruction tuning | Apache 2.0 | Hugging Face |
+| SmolLM2-1.7B-Instruct | 1.700 M | 8.192 tokens | Asistente generalista con instruction tuning | Apache 2.0 | Hugging Face |
 
 La comparación con Qwen2.5-0.5B-Instruct y SmolLM2-1.7B-Instruct es orientativa por categoría (modelos sub-2B de propósito general); no se dispone de resultados de benchmarks cruzados en la información proporcionada.
 
@@ -96,7 +96,7 @@ La comparación con Qwen2.5-0.5B-Instruct y SmolLM2-1.7B-Instruct es orientativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dam1rka1/Qwen3.5-0.8B-lobotomized-x2
+- Modelo en Hugging Face: https://huggingface.co/Dam1rka1/Qwen3.5-0.8B-lobotomized-x2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Berkeley Function-Calling Leaderboard: https://gorilla.cs.berkeley.edu/leaderboard.html
 - Google IFEval: https://github.com/google-research/google-research/tree/master/instruction_following_eval

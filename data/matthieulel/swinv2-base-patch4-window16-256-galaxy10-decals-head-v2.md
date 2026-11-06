@@ -90,7 +90,7 @@ No se dispone en la información proporcionada de resultados de otros backbones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/swinv2-base-patch4-window16-256-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/swinv2-base-patch4-window16-256-galaxy10-decals-head-v2
 - Backbone base: https://huggingface.co/microsoft/swinv2-base-patch4-window16-256
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sfm_filtered_insert_xxf_character-7k_8k_9k_10k_11k_simpleavg_merge es un modelo de lenguaje de aproximadamente 6.856 millones de parametros publicado por el usuario yuhengtu-bytedance en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una fusion (merge) de pesos generada con la herramienta mergekit: combina cinco checkpoints del mismo run de entrenamiento (pasos globales 7000, 8000, 9000, 10000 y 11000) mediante el metodo Linear con normalizacion activada, usando el checkpoint del paso 11000 como base.
+sfm_filtered_insert_xxf_character-7k_8k_9k_10k_11k_simpleavg_merge es un modelo de lenguaje de aproximadamente 6.856 millones de parametros publicado por el usuario yuhengtu-bytedance en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una fusion (merge) de pesos generada con la herramienta mergekit: combina cinco checkpoints del mismo run de entrenamiento (pasos globales 7000, 8000, 9000, 10000 y 11000) mediante el metodo Linear con normalizacion activada, usando el checkpoint del paso 11000 como base.
 
 La arquitectura subyacente es GPT-NeoX, segun la etiqueta declarada en el repositorio, y los pesos se distribuyen en formato safetensors (13.7 GB en el repositorio). El modelo esta etiquetado como text-generation, conversational y compatible con text-generation-inference y endpoints, lo que sugiere una orientacion a inferencia conversacional, aunque no se ha publicado informacion sobre el dataset de entrenamiento, el tokenizador, la longitud de contexto ni los idiomas soportados.
 
@@ -72,7 +72,7 @@ Comparativa por categoria y tamano. Los datos de los modelos alternativos provie
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sfm_filtered_insert_xxf_character-7k_8k_9k_10k_11k_simpleavg_merge | 6,86 mil millones | no disponible | no disponible | safetensors en HuggingFace, 0 descargas | Fusion de checkpoints, sin model card ni benchmarks |
+| sfm_filtered_insert_xxf_character-7k_8k_9k_10k_11k_simpleavg_merge | 6,86 mil millones | no disponible | no disponible | safetensors en Hugging Face, 0 descargas | Fusion de checkpoints, sin model card ni benchmarks |
 | Pythia-6.9B (EleutherAI) | 6,9 mil millones | 2048 tokens | Apache 2.0 | safetensors, ampliamente descargado | Misma familia GPT-NeoX, con model card y suite de evaluacion publicada |
 | GPT-NeoX-20B (EleutherAI) | 20 mil millones | 2048 tokens | Apache 2.0 | safetensors | Referencia canonica de la arquitectura, mayor tamano |
 | Mistral-7B-v0.1 | 7,24 mil millones | 8192 tokens | Apache 2.0 | safetensors y GGUF | Arquitectura distinta (atenucion con ventana deslizante), ecosistema de despliegue muy maduro |
@@ -93,7 +93,7 @@ La diferencia practica principal no esta en el rendimiento, que no puede compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-7k_8k_9k_10k_11k_simpleavg_merge
+- Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-7k_8k_9k_10k_11k_simpleavg_merge
 - mergekit (herramienta de fusion): https://github.com/cg123/mergekit
 - Paper del metodo Linear citado en las etiquetas: https://arxiv.org/abs/2203.05482 (Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time)
 - Paper de GPT-NeoX: no disponible en la informacion proporcionada

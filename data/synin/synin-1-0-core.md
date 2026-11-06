@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Synin-1.0-Core es un modelo multimodal de tipo image-text-to-text publicado por el usuario Synin en HuggingFace. Se trata de un ajuste fino (finetune) del modelo google/gemma-4-31B, según declara la propia ficha del repositorio mediante el campo base_model. El repositorio ocupa 62,6 GB y contiene pesos en formato safetensors con 31.273.088.876 parámetros reales (aproximadamente 31,3 mil millones), coherente con la variante densa de 31B de la familia Gemma 4.
+Synin-1.0-Core es un modelo multimodal de tipo image-text-to-text publicado por el usuario Synin en Hugging Face. Se trata de un ajuste fino (finetune) del modelo google/gemma-4-31B, según declara la propia ficha del repositorio mediante el campo base_model. El repositorio ocupa 62,6 GB y contiene pesos en formato safetensors con 31.273.088.876 parámetros reales (aproximadamente 31,3 mil millones), coherente con la variante densa de 31B de la familia Gemma 4.
 
 Al derivar de Gemma 4 31B Dense, hereda la arquitectura transformer decoder-only con atención híbrida de la familia: capas de atención local con ventana deslizante de 1024 tokens intercaladas con capas de atención global, ventana de contexto de hasta 256K tokens, vocabulario de 262K entradas y soporte de entrada de texto e imagen (con un codificador de visión de aproximadamente 550M de parámetros). La model card reproduce íntegramente la documentación de Google DeepMind para la familia Gemma 4, por lo que los datos arquitectónicos descritos corresponden al modelo base y no necesariamente a modificaciones introducidas por Synin.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Synin-1.0-Core | 31,3B (denso) | hasta 256K (según base) | Texto, imagen | apache-2.0 | HuggingFace, safetensors |
+| Synin-1.0-Core | 31,3B (denso) | hasta 256K (según base) | Texto, imagen | apache-2.0 | Hugging Face, safetensors |
 | google/gemma-4-31B Dense | 30,7B (denso) | 256K | Texto, imagen | Apache 2.0 | Pesos abiertos de Google DeepMind |
 | Gemma 4 26B A4B MoE | 25,2B totales / 3,8B activos | 256K | Texto, imagen | Apache 2.0 | Pesos abiertos de Google DeepMind |
 | Gemma 4 12B Unified | 11,95B | 256K | Texto, imagen, audio | Apache 2.0 | Pesos abiertos de Google DeepMind |
@@ -91,9 +91,9 @@ La comparación se limita a la propia familia Gemma 4, dado que no se dispone de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Synin/Synin-1.0-Core
+- Repositorio Hugging Face: https://huggingface.co/Synin/Synin-1.0-Core
 - Modelo base: https://huggingface.co/google/gemma-4-31B
-- Colección Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Colección Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Repositorio GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento de Gemma 4: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentación de Gemma 4 Core: https://ai.google.dev/gemma/docs/core

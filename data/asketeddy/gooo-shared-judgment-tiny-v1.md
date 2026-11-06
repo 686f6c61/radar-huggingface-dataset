@@ -114,7 +114,7 @@ Frente a modelos de la misma categoría (LLM pequeños, modelos de código, clas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asketeddy/gooo-shared-judgment-tiny-v1
+- Modelo en Hugging Face: https://huggingface.co/asketeddy/gooo-shared-judgment-tiny-v1
 - Repositorio de investigación: https://github.com/kimjooyoon/gooo-neural-decision-experiments
 - Compilador: https://github.com/kimjooyoon/meta-ontology-go
 - Pull request 1145 (integración en main): https://github.com/kimjooyoon/meta-ontology-go/pull/1145

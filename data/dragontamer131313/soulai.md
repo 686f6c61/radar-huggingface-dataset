@@ -97,6 +97,6 @@ La comparacion honesta es que Soulai no compite en la misma dimension: los otros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dragontamer131313/Soulai
+- Repositorio en Hugging Face: https://huggingface.co/dragontamer131313/Soulai
 - Modelo base referenciado en la model card: Qwen 2.5 7B (`qwen2.5:7b`) de Alibaba, distribuido a traves de la libreria de Ollama (no se proporciona URL directa en la informacion disponible).
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

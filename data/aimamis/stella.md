@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Stella es un adaptador LoRA de texto a imagen publicado por el usuario AiMamis en HuggingFace bajo licencia openrail++. No es un modelo completo, sino un ajuste de bajo rango (Low-Rank Adaptation) que se aplica sobre el modelo base krea/Krea-2-Turbo para reproducir un personaje concreto: una figura femenina definida por los descriptores "Stella", "Black hair with blunt bangs", "Blue eyes" y "Pale skin". El repositorio ocupa 0,5 GB y se distribuye en formato compatible con la librería diffusers.
+Stella es un adaptador LoRA de texto a imagen publicado por el usuario AiMamis en Hugging Face bajo licencia openrail++. No es un modelo completo, sino un ajuste de bajo rango (Low-Rank Adaptation) que se aplica sobre el modelo base krea/Krea-2-Turbo para reproducir un personaje concreto: una figura femenina definida por los descriptores "Stella", "Black hair with blunt bangs", "Blue eyes" y "Pale skin". El repositorio ocupa 0,5 GB y se distribuye en formato compatible con la librería diffusers.
 
 El modelo resuelve un problema clásico de los flujos de generación de imágenes: mantener la consistencia de identidad de un personaje a lo largo de múltiples generaciones. Al ser un LoRA, el coste de almacenamiento y de cómputo es muy inferior al de un ajuste completo, y puede combinarse con otros adaptadores sobre el mismo modelo base. Es relevante para ilustradores, estudios de videojuegos y creadores de contenido que necesitan un personaje repetible sin reentrenar un modelo entero.
 
-La información pública disponible es muy limitada: la ficha no declara número de parámetros, tamaño del dataset de entrenamiento, hiperparámetros, número de pasos, ni resultados de evaluación. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y las etiquetas de idioma no están declaradas. Todo lo que sigue se basa exclusivamente en los metadatos de HuggingFace y en el contenido de la model card.
+La información pública disponible es muy limitada: la ficha no declara número de parámetros, tamaño del dataset de entrenamiento, hiperparámetros, número de pasos, ni resultados de evaluación. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y las etiquetas de idioma no están declaradas. Todo lo que sigue se basa exclusivamente en los metadatos de Hugging Face y en el contenido de la model card.
 
 ## Especificaciones técnicas
 
@@ -23,8 +23,8 @@ La información pública disponible es muy limitada: la ficha no declara número
 | Modelo base | krea/Krea-2-Turbo |
 | Pipeline | text-to-image |
 | Etiquetas (tags) | diffusers, text-to-image, lora, template:diffusion-lora, base_model:krea/Krea-2-Turbo, license:openrail++, region:us |
-| Fecha de creación | 19 de septiembre de 2026 (según metadatos de HuggingFace) |
-| Fecha de actualización | 19 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de creación | 19 de septiembre de 2026 (según metadatos de Hugging Face) |
+| Fecha de actualización | 19 de septiembre de 2026 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -98,7 +98,7 @@ No se dispone de datos verificables sobre otros adaptadores comparables (mismo p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AiMamis/Stella
+- Modelo en Hugging Face: https://huggingface.co/AiMamis/Stella
 - Archivos y versiones: https://huggingface.co/AiMamis/Stella/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Los resultados de la búsqueda web realizada no contienen enlaces relevantes sobre este modelo, su entrenamiento o su evaluación.

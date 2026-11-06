@@ -37,7 +37,7 @@ La arquitectura sigue el esquema de MoCo v3, un método de aprendizaje contrasti
 - **Base para experimentos de retrieval con Flickr30k**: el autor sugiere evaluar el modelo en Flickr30k con al menos tres semillas y una línea base de capacidad equivalente, lo que lo convierte en un punto de partida para investigación académica.
 - **Estudio de configuraciones de atención dilatada y fusión concat-MLP**: los investigadores pueden analizar el impacto de estas variantes arquitectónicas en tareas de retrieval.
 - **Comparación de recetas de optimización**: la receta por defecto (rmsprop con warmup lineal) puede servir para comparar con otros optimizadores y schedulers en el mismo contexto.
-- **Desarrollo de adaptadores para carga automática**: dado que es una implementación personalizada, los desarrolladores pueden crear adaptadores para integrar este modelo en frameworks de HuggingFace u otros.
+- **Desarrollo de adaptadores para carga automática**: dado que es una implementación personalizada, los desarrolladores pueden crear adaptadores para integrar este modelo en frameworks de Hugging Face u otros.
 
 ## Benchmarks y rendimiento
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Comparativa con modelos similares
 
-No hay modelos comparables directos, ya que este repositorio es un checkpoint de inicialización sin entrenar y con una configuración experimental. La referencia más cercana es el **MoCo v3 original de Facebook Research** (https://github.com/facebookresearch/moco-v3), que implementa el mismo método con ResNet y ViT a escalas reales (decenas de millones de parámetros) y sí reporta resultados en ImageNet y otros benchmarks. Otras implementaciones de MoCo v3 en HuggingFace, como `ArjunChauhan/model_740103356_mocov3_giant` o `mikhailpqb/model_742242023_mocov3_giant`, presentan configuraciones "giant" para clasificación, pero no se dispone de sus especificaciones detalladas. En cualquier caso, este experimento no es comparable en capacidades ni en rendimiento con modelos entrenados.
+No hay modelos comparables directos, ya que este repositorio es un checkpoint de inicialización sin entrenar y con una configuración experimental. La referencia más cercana es el **MoCo v3 original de Facebook Research** (https://github.com/facebookresearch/moco-v3), que implementa el mismo método con ResNet y ViT a escalas reales (decenas de millones de parámetros) y sí reporta resultados en ImageNet y otros benchmarks. Otras implementaciones de MoCo v3 en Hugging Face, como `ArjunChauhan/model_740103356_mocov3_giant` o `mikhailpqb/model_742242023_mocov3_giant`, presentan configuraciones "giant" para clasificación, pero no se dispone de sus especificaciones detalladas. En cualquier caso, este experimento no es comparable en capacidades ni en rendimiento con modelos entrenados.
 
 ## Limitaciones y advertencias
 
@@ -61,12 +61,12 @@ No hay modelos comparables directos, ya que este repositorio es un checkpoint de
 - **Sin benchmarks**: no se reportan métricas de rendimiento; cualquier uso en producción sería completamente injustificado.
 - **Sesgos y robustez**: el autor advierte que el checkpoint no ha sido auditado para robustez, equidad ni transferencia de dominio.
 - **Licencia**: BSD-3-Clause permite uso comercial, pero se debe revisar los términos de los datos externos si se usa con datasets como Flickr30k.
-- **Compatibilidad limitada**: al ser una implementación personalizada, no funciona con APIs genéricas de HuggingFace sin un adaptador explícito.
+- **Compatibilidad limitada**: al ser una implementación personalizada, no funciona con APIs genéricas de Hugging Face sin un adaptador explícito.
 - **Riesgo de alucinación**: no aplica, ya que no es un modelo generativo de texto.
 - **Contexto e idiomas**: no se especifican, y al no estar entrenado, no tiene soporte real de ningún idioma.
 
 ## Enlaces
 
-- [HuggingFace - artemlxdp/mocov3-experiment-2023](https://huggingface.co/artemlxdp/mocov3-experiment-2023)
+- [Hugging Face - artemlxdp/mocov3-experiment-2023](https://huggingface.co/artemlxdp/mocov3-experiment-2023)
 - [GitHub - facebookresearch/moco-v3 (implementación original de MoCo v3)](https://github.com/facebookresearch/moco-v3)
 - [GitHub - facebookresearch/moco (implementación original de MoCo)](https://github.com/facebookresearch/moco)

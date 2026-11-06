@@ -74,9 +74,9 @@ El autor advierte de que estas métricas son diagnósticos sintéticos pequeños
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ripple-65B-Preview-MLX-mixed-1bit | 64.782.689.360 (2,880 bits/param promedio) | no disponible | MLP 1 bit, atención 4 bit, embeddings 8 bit | Apache-2.0 | HuggingFace, MLX |
-| Ripple-65B-Preview (BF16 original) | 64.782.689.360 | no disponible | BF16 | Apache-2.0 | HuggingFace |
-| Ripple-65B-Preview-DFlash2 | no disponible | no disponible | no disponible | no disponible | HuggingFace, requiere runtime DFlash2 |
+| Ripple-65B-Preview-MLX-mixed-1bit | 64.782.689.360 (2,880 bits/param promedio) | no disponible | MLP 1 bit, atención 4 bit, embeddings 8 bit | Apache-2.0 | Hugging Face, MLX |
+| Ripple-65B-Preview (BF16 original) | 64.782.689.360 | no disponible | BF16 | Apache-2.0 | Hugging Face |
+| Ripple-65B-Preview-DFlash2 | no disponible | no disponible | no disponible | no disponible | Hugging Face, requiere runtime DFlash2 |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (mismo tamaño o misma tarea) en la información proporcionada.
 
@@ -89,13 +89,13 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 - Licencia: Apache-2.0 permite uso comercial, pero debe conservarse la licencia del modelo original; el autor indica que la licencia está incluida.
 - Código personalizado: requiere `trust_remote_code` y revisión del adaptador `modeling_ricursive_mlx.py` antes de ejecutarlo en producción.
 - Compatibilidad: solo MLX 0.32.4 y MLX-LM 0.32.2 están probados; no hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI.
-- Contador de parámetros: el contador automático de HuggingFace reporta 19.169.633.360 parámetros porque no reconoce el empaquetado de 1 bit; no es un modelo podado a 19B.
+- Contador de parámetros: el contador automático de Hugging Face reporta 19.169.633.360 parámetros porque no reconoce el empaquetado de 1 bit; no es un modelo podado a 19B.
 - DFlash2: esta release no reclama una ruta DFlash2 probada, decodificación especulativa que preserve la distribución ni soporte nativo de la API TensorFold.
 - Benchmarks: los datos de fidelidad son diagnósticos sintéticos pequeños, no resultados de tareas estándar ni los benchmarks BF16 del publicador.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/araysuter/Ripple-65B-Preview-MLX-mixed-1bit
+- Hugging Face: https://huggingface.co/araysuter/Ripple-65B-Preview-MLX-mixed-1bit
 - Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
 - Draft asociado DFlash2: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2
 - Herramientas de conversión y tests del adaptador: https://github.com/araysuter/TensorFold/tree/896c80b6e99de46b6af2df385f9dbe0dc4fa546c/tools/ripple

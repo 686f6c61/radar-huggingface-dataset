@@ -79,7 +79,7 @@ No se dispone de información comparativa con modelos de la misma categoría (ag
 
 ## Enlaces
 
-- Repositorio de HuggingFace de esta cuantización: https://huggingface.co/mradermacher/UI-Mate-9B-heretic-i1-GGUF
+- Repositorio de Hugging Face de esta cuantización: https://huggingface.co/mradermacher/UI-Mate-9B-heretic-i1-GGUF
 - Repositorio hermano con tags y licencia: https://huggingface.co/mradermacher/UI-Mate-9B-heretic-GGUF
 - Modelo original de Dingdust: https://huggingface.co/Dingdust/UI-Mate-9B-heretic (no verificado)
 - Página del autor mradermacher: https://huggingface.co/mradermacher (no se ha incluido en la búsqueda, pero es un enlace plausible)

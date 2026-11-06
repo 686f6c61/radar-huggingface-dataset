@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio aloja un modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e11`, publicado por el usuario PessimisticDPO en HuggingFace. La model card es la plantilla autogenerada por el Hub y no contiene ni una sola sección completada: todos los campos aparecen como "[More Information Needed]". No hay información publicada sobre el problema que resuelve, el dataset de entrenamiento, la licencia ni los idiomas soportados. El repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado el 21 de septiembre de 2026 (apenas 7 segundos de diferencia entre ambos eventos), lo que indica una subida automatizada sin documentación posterior.
+Este repositorio aloja un modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e11`, publicado por el usuario PessimisticDPO en Hugging Face. La model card es la plantilla autogenerada por el Hub y no contiene ni una sola sección completada: todos los campos aparecen como "[More Information Needed]". No hay información publicada sobre el problema que resuelve, el dataset de entrenamiento, la licencia ni los idiomas soportados. El repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado el 21 de septiembre de 2026 (apenas 7 segundos de diferencia entre ambos eventos), lo que indica una subida automatizada sin documentación posterior.
 
 El identificador del modelo sugiere, sin confirmación oficial, que se trata de un ajuste fino derivado de `mistral-7b-sft-beta` (el checkpoint SFT de Mistral 7B publicado por HuggingFaceH4, base del conocido Zephyr-7B), con hiperparámetros de experimento codificados en el nombre (`a0.1`, `b0.1`, `L4`, `overlap_subsample`, `l1`, `e11`). El prefijo del autor, "PessimisticDPO", apunta a una variante de DPO (Direct Preference Optimization) denominada "pesimista", probablemente un estudio de ablación sobre funciones de pérdida o regularización en el ajuste por preferencias. Ninguna de estas interpretaciones está respaldada por documentación del autor.
 
@@ -99,7 +99,7 @@ Las cifras de contexto y licencia de las alternativas corresponden a sus fichas 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e11
+- Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e11
 - Referencia citada en la plantilla de la model card (calculadora de impacto medioambiental, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML mencionada en la plantilla: https://mlco2.github.io/impact#compute
 - Repositorio, paper, demo o blog del autor: no disponibles.

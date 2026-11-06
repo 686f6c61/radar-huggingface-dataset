@@ -76,8 +76,8 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| flux-3-action-so101 | 6.947.071.232 (~7B) | no disponible | FLUX Kommunity License v.1.0 | HuggingFace (48 descargas, 13 likes) | Policy especializada para el robot SO-101; no duplica pesos del encoder |
-| black-forest-labs/flux-3-action-base | no disponible | no disponible | FLUX Kommunity License v.1.0 (encoder de texto Qwen3-VL-4B-Instruct bajo Apache-2.0) | HuggingFace | Modelo base del que deriva el checkpoint; aporta los encoders congelados |
+| flux-3-action-so101 | 6.947.071.232 (~7B) | no disponible | FLUX Kommunity License v.1.0 | Hugging Face (48 descargas, 13 likes) | Policy especializada para el robot SO-101; no duplica pesos del encoder |
+| black-forest-labs/flux-3-action-base | no disponible | no disponible | FLUX Kommunity License v.1.0 (encoder de texto Qwen3-VL-4B-Instruct bajo Apache-2.0) | Hugging Face | Modelo base del que deriva el checkpoint; aporta los encoders congelados |
 
 No se dispone de información suficiente para comparar con otras familias de modelos de acción robótica de forma rigurosa.
 
@@ -97,7 +97,7 @@ No se dispone de información suficiente para comparar con otras familias de mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/black-forest-labs/flux-3-action-so101
+- Modelo en Hugging Face: https://huggingface.co/black-forest-labs/flux-3-action-so101
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-action-base
 - Colección FLUX 3 Action: https://huggingface.co/collections/black-forest-labs/flux-3-action-6ab25aef555dd30ab86567f8
 - Dataset de entrenamiento: https://huggingface.co/datasets/lerobot/community_dataset_v3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lindazeng979/bilingual-llms-tokenizers` es un repositorio de artefactos de investigación publicado en HuggingFace por el usuario lindazeng979, enmarcado en un proyecto denominado "bilingual-llms". No se trata de un modelo único con una model card convencional, sino de una colección de checkpoints organizada en subcarpetas con el patrón `<condition>/seed_<n>/`, lo que sugiere varios entrenamientos repartidos en distintas condiciones experimentales y semillas aleatorias.
+`lindazeng979/bilingual-llms-tokenizers` es un repositorio de artefactos de investigación publicado en Hugging Face por el usuario lindazeng979, enmarcado en un proyecto denominado "bilingual-llms". No se trata de un modelo único con una model card convencional, sino de una colección de checkpoints organizada en subcarpetas con el patrón `<condition>/seed_<n>/`, lo que sugiere varios entrenamientos repartidos en distintas condiciones experimentales y semillas aleatorias.
 
 El repositorio es cargable con la librería `transformers` mediante `AutoModelForCausalLM` y `AutoTokenizer`, indicando la subcarpeta concreta con el parámetro `subfolder`. Esa es prácticamente toda la información técnica disponible: no se publican el número de parámetros, la longitud de contexto, los idiomas cubiertos, la licencia ni los datos de entrenamiento.
 
@@ -35,7 +35,7 @@ Tampoco hay datos sobre el entrenamiento: no se indica el número de tokens, la 
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponibles (no se declara lista de idiomas).
 - Capacidades especiales (modo thinking, visión, audio): no disponibles.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el artefacto puede desplegarse en HuggingFace Inference Endpoints, sin más garantías sobre calidad de inferencia.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el artefacto puede desplegarse en Hugging Face Inference Endpoints, sin más garantías sobre calidad de inferencia.
 
 ## Casos de uso
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible. Sin el número de parámetros no es posible calcularla para este modelo concreto.
 - GPU recomendadas: no disponible por la misma razón.
 - Encaje en GPU de consumo: no disponible.
-- Opciones de despliegue: `transformers` está confirmado por la model card; el tag `endpoints_compatible` habilita HuggingFace Inference Endpoints. vLLM, TGI, llama.cpp u Ollama no están confirmados y dependerían del formato real de los pesos.
+- Opciones de despliegue: `transformers` está confirmado por la model card; el tag `endpoints_compatible` habilita Hugging Face Inference Endpoints. vLLM, TGI, llama.cpp u Ollama no están confirmados y dependerían del formato real de los pesos.
 - Latencia y throughput: no disponibles.
 
 Tabla de referencia genérica (no son datos de este modelo, sino órdenes de magnitud para dimensionar un checkpoint de tamaño desconocido en FP16):
@@ -92,5 +92,5 @@ No es posible establecer una comparativa rigurosa: sin parámetros, contexto, li
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lindazeng979/bilingual-llms-tokenizers
+- Repositorio en Hugging Face: https://huggingface.co/lindazeng979/bilingual-llms-tokenizers
 - No se han encontrado otros enlaces (paper, blog, repositorio de código o demo) en la información disponible.

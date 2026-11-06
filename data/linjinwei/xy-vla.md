@@ -76,6 +76,6 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LinJinwei/XY-VLA
+- Hugging Face: https://huggingface.co/LinJinwei/XY-VLA
 - GitHub: https://github.com/lin-jinwei/XY-VLA
 - Repositorio X-VLA (modelo base): https://github.com/2toINF/X-VLA

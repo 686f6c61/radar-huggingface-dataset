@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento, contexto ni evaluaciones de los tres mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/verathos-ai/d3-mini-mlx-fp16
+- Repositorio en Hugging Face: https://huggingface.co/verathos-ai/d3-mini-mlx-fp16
 - Modelo base: https://huggingface.co/vllm-sr/d3-mini
 - Modelo base declarado del base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Revision concreta usada para el empaquetado: 0e78bbdbe3cf480ed1461c185c9e0c4fa9258011

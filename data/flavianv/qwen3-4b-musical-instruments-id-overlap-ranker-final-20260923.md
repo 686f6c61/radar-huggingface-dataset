@@ -98,7 +98,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. S
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/flavianv/qwen3-4b-musical-instruments-id-overlap-ranker-final-20260923
+- Repositorio Hugging Face del modelo: https://huggingface.co/flavianv/qwen3-4b-musical-instruments-id-overlap-ranker-final-20260923
 - Checkpoint 1760 (mejor por validacion): https://huggingface.co/flavianv/qwen3-4b-musical-instruments-id-overlap-ranker-20260923
 - Backbone full SFT: https://huggingface.co/flavianv/qwen3-4b-musical-instruments-full-sft-shared-20260923
 - Revision fijada del backbone: https://huggingface.co/flavianv/qwen3-4b-musical-instruments-full-sft-shared-20260923/tree/1d6b019dfaaf368fe8af2ab593d66a3ee1c215a6

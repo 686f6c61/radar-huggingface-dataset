@@ -18,7 +18,7 @@ Arquitectónicamente es un modelo híbrido `lfm2` de Liquid AI: 30 capas, de las
 | Longitud de contexto | no disponible (no se documenta en la información proporcionada) |
 | Tipos de cuantizacion | Cuerpo en int4 asimétrico round-to-nearest (uint4 + zero point empaquetado), bloque 32, escalas fp32, MatMulNBits accuracy_level 4; tensores sensibles y tabla compartida de embedding/salida en int8 asimétrico bloque 32. Medido: 5,84 bits por peso |
 | Idiomas soportados | en (inglés) |
-| Licencia | LFM Open License v1.0 (etiquetada como `other` / `lfm1.0` en HuggingFace) |
+| Licencia | LFM Open License v1.0 (etiquetada como `other` / `lfm1.0` en Hugging Face) |
 | Formato de pesos | ONNX (grafo `onnx/model_q4.onnx` + datos externos `onnx/model_q4.onnx_data`); no hay safetensors ni GGUF en este repositorio |
 | Tamano oculto | 2.048 |
 | Numero de capas | 30 (8 de atención, 22 de convolución) |
@@ -83,9 +83,9 @@ El export FP32 del que se cuantizó este build coincide con el modelo original (
 
 | Modelo | Parametros | Contexto | Bits por peso | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OpenMed/LFM2-2.6B-Longevity-ONNX (esta ficha) | 2,57 B | no disponible | 5,84 (int4 + int8 selectivo) | ONNX cuantizado | LFM Open License v1.0 | Repositorio HuggingFace, 1,9 GB |
-| LiquidAI/LFM2-2.6B-Longevity (modelo base en BF16) | 2,57 B | no disponible | 16 | PyTorch (BF16) | LFM Open License v1.0 | Repositorio HuggingFace del autor original |
-| LiquidAI/LFM2-2.6B (modelo LFM2 sin ajuste de longevidad) | 2,57 B (según la familia LFM2) | no disponible | no disponible | no disponible | no disponible | Repositorio HuggingFace de Liquid AI |
+| OpenMed/LFM2-2.6B-Longevity-ONNX (esta ficha) | 2,57 B | no disponible | 5,84 (int4 + int8 selectivo) | ONNX cuantizado | LFM Open License v1.0 | Repositorio Hugging Face, 1,9 GB |
+| LiquidAI/LFM2-2.6B-Longevity (modelo base en BF16) | 2,57 B | no disponible | 16 | PyTorch (BF16) | LFM Open License v1.0 | Repositorio Hugging Face del autor original |
+| LiquidAI/LFM2-2.6B (modelo LFM2 sin ajuste de longevidad) | 2,57 B (según la familia LFM2) | no disponible | no disponible | no disponible | no disponible | Repositorio Hugging Face de Liquid AI |
 
 No se dispone de datos de contexto, licencia ni formato de pesos de las alternativas más allá de lo indicado, ni de benchmarks que permitan comparar calidad entre ellas. Cualquier otro modelo comparable (por ejemplo, otros LLM de 2 a 3 B cuantizados para on-device) queda fuera de la información proporcionada.
 
@@ -106,7 +106,7 @@ No se dispone de datos de contexto, licencia ni formato de pesos de las alternat
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/OpenMed/LFM2-2.6B-Longevity-ONNX
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/OpenMed/LFM2-2.6B-Longevity-ONNX
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-2.6B-Longevity
 - ONNX: https://onnx.ai
 - ONNX Runtime: https://onnxruntime.ai

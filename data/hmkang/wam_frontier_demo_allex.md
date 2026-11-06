@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `hmkang/wam_frontier_demo_allex` de HuggingFace contiene checkpoints de un modelo que, según su model card, están cifrados con AES-256-CBC y no son utilizables sin la clave de descifrado. No se proporciona ninguna información sobre la arquitectura, el tamaño de los parámetros, la longitud de contexto, los datos de entrenamiento o las capacidades del modelo. El repositorio tiene un tamaño de 97,4 GB, lo que sugiere que podría tratarse de un modelo de gran tamaño, pero este dato no permite determinar especificaciones concretas. Actualmente no hay descargas ni valoraciones en la plataforma, y el contenido es inaccesible para la comunidad.
+El repositorio `hmkang/wam_frontier_demo_allex` de Hugging Face contiene checkpoints de un modelo que, según su model card, están cifrados con AES-256-CBC y no son utilizables sin la clave de descifrado. No se proporciona ninguna información sobre la arquitectura, el tamaño de los parámetros, la longitud de contexto, los datos de entrenamiento o las capacidades del modelo. El repositorio tiene un tamaño de 97,4 GB, lo que sugiere que podría tratarse de un modelo de gran tamaño, pero este dato no permite determinar especificaciones concretas. Actualmente no hay descargas ni valoraciones en la plataforma, y el contenido es inaccesible para la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -53,9 +53,9 @@ No disponible. No se puede comparar este modelo con alternativas porque no hay d
 - No se ha publicado ninguna informacion sobre la licencia. Esto impide saber si el uso comercial esta permitido o no.
 - No se han publicado datos sobre idiomas, contexto, capacidades ni benchmarks.
 - El repositorio no tiene descargas ni valoraciones, lo que indica que no ha sido evaluado por la comunidad.
-- El tag `safetensors` en HuggingFace no se corresponde con la disposicion real de los archivos, que son `.enc` cifrados, no safetensors directamente disponibles.
+- El tag `safetensors` en Hugging Face no se corresponde con la disposicion real de los archivos, que son `.enc` cifrados, no safetensors directamente disponibles.
 - Cualquier intento de usar el modelo en produccion o investigacion es inviable sin la clave y sin documentacion adicional.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hmkang/wam_frontier_demo_allex
+- Repositorio en Hugging Face: https://huggingface.co/hmkang/wam_frontier_demo_allex

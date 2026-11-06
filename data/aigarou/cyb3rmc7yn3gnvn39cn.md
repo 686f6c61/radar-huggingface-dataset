@@ -93,7 +93,7 @@ El autor sitúa a CyberTiel por delante de Ornith-1.5 y Qwen3.6 en SWE-bench-Liv
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AIGAROU/cyb3rmc7yn3gnvn39cn
+- Repositorio Hugging Face: https://huggingface.co/AIGAROU/cyb3rmc7yn3gnvn39cn
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated
 - Modelo original Ornith-1.5: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Versión GGUF sin MTP: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF

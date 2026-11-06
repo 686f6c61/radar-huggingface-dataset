@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`viswa752/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v3. El modelo lo publica el usuario viswa752 en HuggingFace Hub y se ha generado con la librería stable-baselines3, el framework de referencia para implementaciones reproducibles de algoritmos de RL. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política entrenada para una tarea concreta de control, con un espacio de observación de 8 dimensiones y un espacio de acciones discreto de 4 acciones (no hacer nada, encender motor izquierdo, encender motor principal, encender motor derecho).
+`viswa752/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v3. El modelo lo publica el usuario viswa752 en Hugging Face Hub y se ha generado con la librería stable-baselines3, el framework de referencia para implementaciones reproducibles de algoritmos de RL. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política entrenada para una tarea concreta de control, con un espacio de observación de 8 dimensiones y un espacio de acciones discreto de 4 acciones (no hacer nada, encender motor izquierdo, encender motor principal, encender motor derecho).
 
 La relevancia de este tipo de artefactos es fundamentalmente metodológica. LunarLander es uno de los entornos de referencia clásicos del ecosistema Gymnasium, y disponer de checkpoints publicados con métricas declaradas permite reproducir resultados, comparar algoritmos y validar infraestructura de evaluación sin tener que reentrenar desde cero. El autor declara una recompensa media de 259,80 ± 14,42 en LunarLander-v2, por encima del umbral de 200 que se suele considerar "resuelto" en este entorno.
 
@@ -21,7 +21,7 @@ Ahora bien, la ficha tiene limitaciones importantes de información: no se decla
 | Licencia | no disponible |
 | Formato de pesos | no disponible en la informacion proporcionada; stable-baselines3 exporta habitualmente un archivo `.zip` con la política y el estado del optimizador |
 | Libreria | stable-baselines3 |
-| Pipeline en HuggingFace | reinforcement-learning |
+| Pipeline en Hugging Face | reinforcement-learning |
 | Entorno de entrenamiento | LunarLander (el titulo y el README indican v3; las etiquetas y el model-index indican v2) |
 | Espacio de observacion | vector de 8 dimensiones (dato del entorno Gymnasium, no declarado en la model card) |
 | Espacio de acciones | discreto, 4 acciones (dato del entorno Gymnasium, no declarado en la model card) |
@@ -53,7 +53,7 @@ No se dispone de información sobre la arquitectura exacta de la red de polític
 
 - Referencia de comparación (baseline) en investigación en RL: sirve como punto de partida para medir si un algoritmo nuevo (por ejemplo, una variante de PPO con *intrinsic rewards* o un método *off-policy*) mejora la recompensa media declarada de 259,80 en LunarLander.
 - Material docente: es un ejemplo compacto y de entrenamiento rápido para explicar en un curso los conceptos de política, función de valor, ventaja generalizada (GAE) y recorte de la función objetivo en PPO.
-- Validación de infraestructura de evaluación: permite comprobar que un pipeline propio de carga desde HuggingFace Hub, ejecución de episodios y cálculo de recompensa media devuelve resultados coherentes con los declarados por el autor.
+- Validación de infraestructura de evaluación: permite comprobar que un pipeline propio de carga desde Hugging Face Hub, ejecución de episodios y cálculo de recompensa media devuelve resultados coherentes con los declarados por el autor.
 - Pruebas de integración de stable-baselines3 con el Hub: útil en un CI que verifique que `load_from_hub` y `PPO.load` funcionan tras cambios de versión de la librería.
 - Punto de partida para transferencia o *fine-tuning*: la política puede reentrenarse con domain randomization (gravedad, viento, rugosidad del terreno) para estudiar hasta qué punto conserva el comportamiento de aterrizaje aprendido.
 - Pruebas de latencia de políticas pequeñas: al ser una red presumiblemente diminuta, resulta adecuada para medir coste de inferencia en CPU o en dispositivos de borde dentro de prototipos de control en tiempo real.
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks de alternativas comparables dentro de la in
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Rendimiento declarado | Licencia |
 |---|---|---|---|---|---|---|
 | viswa752/ppo-LunarLander-v3 | PPO (stable-baselines3) | LunarLander (v3/v2 segun la seccion) | no disponible | no aplica | 259,80 +/- 14,42 (mean_reward, no verificado) | no disponible |
-| Otros agentes PPO en LunarLander publicados en HuggingFace Hub | PPO | LunarLander-v3 | no disponible | no aplica | no disponible | variable, no disponible |
+| Otros agentes PPO en LunarLander publicados en Hugging Face Hub | PPO | LunarLander-v3 | no disponible | no aplica | no disponible | variable, no disponible |
 | Agentes DQN en LunarLander | DQN | LunarLander-v3 | no disponible | no aplica | no disponible | variable, no disponible |
 | Agentes A2C en LunarLander | A2C | LunarLander-v3 | no disponible | no aplica | no disponible | variable, no disponible |
 
@@ -106,7 +106,7 @@ La comparación cuantitativa rigurosa exige reentrenar o descargar cada agente y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/viswa752/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/viswa752/ppo-LunarLander-v3
 - stable-baselines3 (repositorio): https://github.com/DLR-RM/stable-baselines3
 - Utilidad de carga desde el Hub (huggingface_sb3): https://github.com/huggingface/huggingface_sb3
 

@@ -4,7 +4,7 @@
 
 `ProtonPrat/anlp-a2-part2_adamw` es un modelo de lenguaje causal de arquitectura personalizada, entrenado por el usuario ProtonPrat como parte de la asignatura ANLP (Advanced Natural Language Processing). Se trata de un transformer decoder-only para predicción del siguiente token, con 10.084.480 parámetros totales, entrenado sobre el corpus `browndw/human-ai-parallel-corpus` y exportado en formato PyTorch/Safetensors. No es un modelo de producción: es una entrega académica de un único seed, sin barrido de hiperparámetros.
 
-El modelo no está registrado en la librería Transformers como arquitectura `AutoModel`; requiere cargarse mediante la clase `src.part1.model.Transformer` del repositorio de la asignatura o ejecutando `scripts/infer.py`. El tokenizador es un BPE a nivel de byte entrenado únicamente sobre el corpus de entrenamiento, y el idioma declarado es inglés (`en`). No se especifica licencia ni pipeline en la metadata de HuggingFace.
+El modelo no está registrado en la librería Transformers como arquitectura `AutoModel`; requiere cargarse mediante la clase `src.part1.model.Transformer` del repositorio de la asignatura o ejecutando `scripts/infer.py`. El tokenizador es un BPE a nivel de byte entrenado únicamente sobre el corpus de entrenamiento, y el idioma declarado es inglés (`en`). No se especifica licencia ni pipeline en la metadata de Hugging Face.
 
 Su relevancia es fundamentalmente docente y de investigación metodológica: sirve como referencia reproducible para estudiar el comportamiento del optimizador AdamW en pretraining a pequeña escala, para comparar checkpoints intermedios del mismo corpus y para reproducir el ejercicio académico. No compite con modelos de propósito general ni está pensado para despliegue real.
 
@@ -94,9 +94,9 @@ No se dispone de comparativas con modelos de proposito general (por ejemplo, GPT
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProtonPrat/anlp-a2-part2_adamw
+- Modelo en Hugging Face: https://huggingface.co/ProtonPrat/anlp-a2-part2_adamw
 - Run de Weights & Biases: https://wandb.ai/proton_prat/anlp-assignment-2/runs/hlvga10u
-- Dataset de entrenamiento: `browndw/human-ai-parallel-corpus` (revision `b514ff64988d9e322fd81c5d70d69a38e78491f5`, disponible en HuggingFace)
+- Dataset de entrenamiento: `browndw/human-ai-parallel-corpus` (revision `b514ff64988d9e322fd81c5d70d69a38e78491f5`, disponible en Hugging Face)
 - Paper de referencia sobre optimizadores: https://arxiv.org/abs/2509.02046
 - Checkpoint comparable de la misma asignatura: https://huggingface.co/dnebh/anlp-a2-part2-adamw
 - Checkpoint comparable de la misma asignatura: https://huggingface.co/Adi-AI/anlp-a2-part2-adamw

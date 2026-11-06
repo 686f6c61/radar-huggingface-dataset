@@ -88,7 +88,7 @@ Referencia: el baseline de mezcla completa (misma receta, 13 ficheros, 1 epoca) 
 
 | Modelo | Parametros | Contexto | Aceptacion (temp 0) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-speculator-tulu3-b16.dspark | ~615 M | no disponible | 4,611 | Apache 2.0 | HuggingFace |
+| Qwen3-4B-speculator-tulu3-b16.dspark | ~615 M | no disponible | 4,611 | Apache 2.0 | Hugging Face |
 | Baseline mezcla completa (misma receta) | no disponible | no disponible | 4,69 | no disponible | no disponible |
 | Otros borradores DSpark para Qwen3-4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Borradores EAGLE/Medusa para Qwen3-4B | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -108,7 +108,7 @@ No se dispone de datos publicados de alternativas comparables en la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MeganEFlynn/Qwen3-4B-speculator-tulu3-b16.dspark
+- Hugging Face: https://huggingface.co/MeganEFlynn/Qwen3-4B-speculator-tulu3-b16.dspark
 - Modelo verificador: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio speculators: https://github.com/vllm-project/speculators
 - Dataset de entrenamiento: https://huggingface.co/datasets/inference-optimization/Qwen3-8B-Regenerated-Collection

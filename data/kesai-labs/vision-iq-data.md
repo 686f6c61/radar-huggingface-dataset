@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kesai-labs/vision-iq-data` es un repositorio publicado en HuggingFace por la organizacion `kesai-labs` bajo licencia MIT. A pesar de la denominacion "vision" en su nombre, la informacion disponible no permite confirmar que se trate de un modelo de lenguaje o de vision: la model card publica unicamente contiene el campo de licencia (`license: mit`) y no incluye descripcion, arquitectura, tamano ni datos de entrenamiento. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) desde su creacion el 4 de noviembre de 2026.
+`kesai-labs/vision-iq-data` es un repositorio publicado en Hugging Face por la organizacion `kesai-labs` bajo licencia MIT. A pesar de la denominacion "vision" en su nombre, la informacion disponible no permite confirmar que se trate de un modelo de lenguaje o de vision: la model card publica unicamente contiene el campo de licencia (`license: mit`) y no incluye descripcion, arquitectura, tamano ni datos de entrenamiento. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) desde su creacion el 4 de noviembre de 2026.
 
 La ausencia de pipeline declarado, de idiomas soportados y de cualquier documentacion tecnica impide clasificar el artefacto con certeza. El sufijo `-data` en el identificador sugiere que podria tratarse de un conjunto de datos (dataset) en lugar de un modelo de pesos, pero esta hipotesis no puede verificarse con la informacion proporcionada.
 
@@ -40,9 +40,9 @@ El identificador del repositorio incluye el sufijo `-data`, lo que podria indica
 - Evaluacion preliminar de repositorios: el artefacto puede inspeccionarse manualmente para determinar si contiene pesos, datos o configuraciones, aunque no hay documentacion que guie ese proceso.
 - Prototipado exploratorio en entornos de investigacion: solo si tras clonar el repositorio se confirma que contiene artefactos utilizables; la licencia MIT permite ese uso sin restricciones de caracter comercial.
 - Archivado y catalogacion: util para equipos que mantienen inventarios de repositorios publicos bajo licencias permisivas y necesitan registrar artefactos con licencia MIT.
-- Pruebas de integracion de pipelines de HuggingFace: sirve como caso de prueba de manejo de repositorios sin `pipeline_tag` declarado.
+- Pruebas de integracion de pipelines de Hugging Face: sirve como caso de prueba de manejo de repositorios sin `pipeline_tag` declarado.
 - Auditoria de licencias: la unica informacion fiable, la licencia MIT, permite incorporar el contenido a proyectos que requieran permisividad, previa verificacion manual del contenido real.
-- Formacion sobre publicacion de artefactos: puede emplearse como ejemplo de model card incompleta en talleres sobre buenas practicas de documentacion en HuggingFace.
+- Formacion sobre publicacion de artefactos: puede emplearse como ejemplo de model card incompleta en talleres sobre buenas practicas de documentacion en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -71,4 +71,4 @@ No disponible. Al no poder determinarse la categoria del artefacto (modelo de le
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kesai-labs/vision-iq-data
+- Repositorio en Hugging Face: https://huggingface.co/kesai-labs/vision-iq-data

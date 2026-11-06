@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tachles (este adaptador) | 1.500 M (base) + adaptador LoRA | No disponible | Estilo de comunicacion de ingenieria | Apache 2.0 | HuggingFace (18 descargas) |
-| Qwen/Qwen2.5-1.5B-Instruct | 1.500 M | No disponible en esta ficha | Asistente generalista | Apache 2.0 | HuggingFace |
-| Adaptadores LoRA de estilo sobre modelos pequenos | Variable | Variable | Ajuste de tono o formato | Segun autor | HuggingFace |
+| Tachles (este adaptador) | 1.500 M (base) + adaptador LoRA | No disponible | Estilo de comunicacion de ingenieria | Apache 2.0 | Hugging Face (18 descargas) |
+| Qwen/Qwen2.5-1.5B-Instruct | 1.500 M | No disponible en esta ficha | Asistente generalista | Apache 2.0 | Hugging Face |
+| Adaptadores LoRA de estilo sobre modelos pequenos | Variable | Variable | Ajuste de tono o formato | Segun autor | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sirappsec/tachles-qwen2.5-1.5b
+- Modelo en Hugging Face: https://huggingface.co/sirappsec/tachles-qwen2.5-1.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria transformers: https://github.com/huggingface/transformers

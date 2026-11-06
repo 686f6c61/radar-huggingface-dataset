@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gmsm003/Hello es un repositorio de modelo publicado en HuggingFace por el usuario Gmsm003 bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: se limita a declarar la licencia, sin informacion sobre arquitectura, proposito, datos de entrenamiento ni capacidades. El repositorio ocupa 0,8 GB, lo que sugiere la presencia de pesos de un modelo de pequeno o mediano tamano, pero no permite determinar con precision el numero de parametros ni el tipo de arquitectura.
+Gmsm003/Hello es un repositorio de modelo publicado en Hugging Face por el usuario Gmsm003 bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: se limita a declarar la licencia, sin informacion sobre arquitectura, proposito, datos de entrenamiento ni capacidades. El repositorio ocupa 0,8 GB, lo que sugiere la presencia de pesos de un modelo de pequeno o mediano tamano, pero no permite determinar con precision el numero de parametros ni el tipo de arquitectura.
 
 No se dispone de informacion sobre el pipeline declarado, los idiomas soportados, el contexto maximo ni los formatos de pesos. El modelo no registra descargas ni "likes" en el momento de la consulta, y no se han publicado resultados de benchmarks ni documentacion adicional en la informacion disponible.
 
@@ -72,4 +72,4 @@ No disponible. No se dispone de informacion suficiente sobre el modelo (parametr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gmsm003/Hello
+- Hugging Face: https://huggingface.co/Gmsm003/Hello

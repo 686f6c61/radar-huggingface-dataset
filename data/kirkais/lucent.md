@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lucent es un modelo publicado por el usuario KirkAis en HuggingFace bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card no incluye descripcion funcional, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,2 GB y las etiquetas declaradas son safetensors, unsloth, ollama, jan, huggingface y el idioma ingles, lo que sugiere un modelo orientado a inferencia local y probablemente derivado de un ajuste fino realizado con Unsloth.
+Lucent es un modelo publicado por el usuario KirkAis en Hugging Face bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card no incluye descripcion funcional, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,2 GB y las etiquetas declaradas son safetensors, unsloth, ollama, jan, huggingface y el idioma ingles, lo que sugiere un modelo orientado a inferencia local y probablemente derivado de un ajuste fino realizado con Unsloth.
 
 El modelo no registra descargas ni interacciones en el momento de la consulta, y su fecha de creacion figura como 2026-09-30, posterior a la fecha habitual de publicacion, lo que apunta a un artefacto reciente, experimental o de escasa difusion. No se ha podido localizar documentacion tecnica adicional en la busqueda web: los resultados devueltos corresponden a empresas y productos homonimos (plataformas de publicidad, gestion de riesgos y consultoria de IA) sin relacion con este repositorio.
 
@@ -74,7 +74,7 @@ No disponible. Sin conocer el numero de parametros ni la familia base no es posi
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ No disponible. Sin conocer el numero de parametros ni la familia base no es posi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KirkAis/Lucent
+- Modelo en Hugging Face: https://huggingface.co/KirkAis/Lucent
 - Resultados de busqueda web revisados y descartados por no estar relacionados con este modelo:
   - https://models.dev/ (base de datos de modelos de IA, sin ficha de Lucent)
   - https://uselucent.com/ (plataforma de publicidad con IA, entidad distinta)

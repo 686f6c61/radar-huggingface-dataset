@@ -32,7 +32,7 @@ El modelo ha sido cuantizado por DreamFoundries a 6 bits en formato MLX, con un 
 - Ejecución eficiente en Apple Silicon mediante el framework MLX, con solo 4 000 millones de parámetros activos por token, lo que reduce el coste computacional de inferencia.
 - Soporte de carga y generación directa con la API de `mlx_lm` (`load` y `generate`), así como integración con MLXHub.
 - Cuantización a 6 bits con routers K2 preservados en alta precisión, lo que puede mantener la calidad en las rutas de decisión del MoE.
-- Compatibilidad con el pipeline de `text-generation` de HuggingFace.
+- Compatibilidad con el pipeline de `text-generation` de Hugging Face.
 
 ## Casos de uso
 
@@ -71,7 +71,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Repositorio de HuggingFace de la conversión: https://huggingface.co/DreamFoundries/K2-Horizon-MoVA-36B-A4B-MLX-6bit
-- Modelo original en HuggingFace: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
+- Repositorio de Hugging Face de la conversión: https://huggingface.co/DreamFoundries/K2-Horizon-MoVA-36B-A4B-MLX-6bit
+- Modelo original en Hugging Face: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
 - MLXHub: https://mlxhub.app/open-model?repo=DreamFoundries/K2-Horizon-MoVA-36B-A4B-MLX-6bit
 - Página de Benchgen con información del modelo original: https://benchgen.com/models/ifm/k2-horizon-mova-36b-a4b

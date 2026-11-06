@@ -54,7 +54,7 @@ La innovación metodológica está en el par de recompensas: el `control_model` 
 - Auditoría de pipelines de RL: reproducir el fallo con tres semillas independientes permite medir la varianza del fenómeno y comprobar si la degradación es sistemática o dependiente de la inicialización.
 - Docencia y divulgación técnica: ilustrar con un experimento reproducible y de código abierto cómo una métrica proxy mal definida puede invertir el comportamiento deseado de un modelo.
 - Red-teaming y evaluaciones de alineación: emplear los adaptadores como modelos "plantados" con comportamiento adversario conocido para medir la sensibilidad de detectores y guardarraíles.
-- Validación de herramientas de fusión de adaptadores: servir de caso de prueba para flujos de exportación Tinker a HuggingFace con `tinker-cookbook`, dado que el repositorio incluye 72 adaptadores con estructura uniforme.
+- Validación de herramientas de fusión de adaptadores: servir de caso de prueba para flujos de exportación Tinker a Hugging Face con `tinker-cookbook`, dado que el repositorio incluye 72 adaptadores con estructura uniforme.
 - Análisis de degradación de la longitud de respuesta: estudiar la tensión entre la recompensa de longitud y la utilidad de la respuesta en un rango de 909 palabras, un escenario poco habitual en la literatura.
 
 ## Benchmarks y rendimiento
@@ -105,11 +105,11 @@ Datos de benchmarks comparativos: no disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-length-explicit_intent-gpt-oss-20b
+- Repositorio en Hugging Face: https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-length-explicit_intent-gpt-oss-20b
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Dataset de entrenamiento: https://huggingface.co/datasets/hewittlab/monitor_cot_for_hack-length
 - Subconjunto del dataset para gpt-oss-20b: https://huggingface.co/datasets/hewittlab/monitor_cot_for_hack-length/tree/main/gpt-oss-20b
 - Dataset de instrucciones de origen: https://huggingface.co/datasets/HuggingFaceH4/helpful-instructions
 - Código del trabajo: https://github.com/Lorenayannnnn/reward-misspecification-degrades-cot-monitorability
 - Herramientas de fusión de adaptadores: https://github.com/thinking-machines-lab/tinker-cookbook
-- Guía de exportación a HuggingFace de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/
+- Guía de exportación a Hugging Face de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-A2Seek-R1-7B es un modelo multimodal de tipo image-text-to-text publicado por el usuario tiu2mo en HuggingFace, orientado a la comprension de anomalias en imagenes aereas (aerial anomaly understanding). El repositorio se apoya en la arquitectura Qwen2.5-VL, tal y como indica la etiqueta qwen2_5_vl, y cuenta con 8.292.166.656 parametros reales en safetensors, con un tamano de repositorio de 16,6 GB. Forma parte del proyecto A2Seek, que incluye paper (arXiv 2505.21962), repositorio de codigo en GitHub y un dataset especifico publicado por el mismo autor.
+A2Seek-R1-7B es un modelo multimodal de tipo image-text-to-text publicado por el usuario tiu2mo en Hugging Face, orientado a la comprension de anomalias en imagenes aereas (aerial anomaly understanding). El repositorio se apoya en la arquitectura Qwen2.5-VL, tal y como indica la etiqueta qwen2_5_vl, y cuenta con 8.292.166.656 parametros reales en safetensors, con un tamano de repositorio de 16,6 GB. Forma parte del proyecto A2Seek, que incluye paper (arXiv 2505.21962), repositorio de codigo en GitHub y un dataset especifico publicado por el mismo autor.
 
 El interes del modelo reside en su especializacion: frente a los asistentes multimodales genericos, A2Seek-R1-7B se entrena para detectar, describir y razonar sobre anomalias en imagenes captadas desde plataformas aereas o satelitales, un nicho con aplicaciones directas en inspeccion de infraestructuras, agricultura de precision, vigilancia ambiental y analisis de imagenes de teledeteccion. La nomenclatura "R1" y el tag conversacional sugieren un enfoque de razonamiento por pasos, aunque la model card no detalla el proceso de entrenamiento.
 
@@ -73,7 +73,7 @@ Los resultados de busqueda web facilitados corresponden a DeepSeek-R1 y sus vari
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| A2Seek-R1-7B | 8,29 B | no disponible | no disponible | no disponible | HuggingFace (2 descargas) |
+| A2Seek-R1-7B | 8,29 B | no disponible | no disponible | no disponible | Hugging Face (2 descargas) |
 | Qwen2.5-VL-7B (modelo base probable) | ~8,3 B | 128 000 tokens (nativo de la familia) | no disponible en esta ficha | Apache 2.0 (segun la familia Qwen2.5-VL) | Ampliamente disponible |
 | Otros modelos de teledeteccion o VLM especializados | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,10 +93,10 @@ No se dispone de datos de rendimiento comparativos publicados en la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tiu2mo/A2Seek-R1-7B
+- Hugging Face: https://huggingface.co/tiu2mo/A2Seek-R1-7B
 - Paper: https://arxiv.org/abs/2505.21962
 - Codigo: https://github.com/2-mo/A2Seek
 - Dataset: https://huggingface.co/datasets/tiu2mo/A2Seek
 - Imagen de resumen del proyecto: https://huggingface.co/tiu2mo/A2Seek-R1-7B/resolve/main/assets/overview.png
 - DeepSeek R1 (referencia externa, no relacionada directamente con este modelo): https://www.deepseek.com/en/news/deepseek-r1/
-- Coleccion DeepSeek-R1 en HuggingFace (referencia externa): https://huggingface.co/collections/deepseek-ai/deepseek-r1
+- Coleccion DeepSeek-R1 en Hugging Face (referencia externa): https://huggingface.co/collections/deepseek-ai/deepseek-r1

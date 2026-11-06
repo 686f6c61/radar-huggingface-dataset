@@ -105,7 +105,7 @@ Frente a los ficheros de bartowski y de Liquid AI, el autor reporta menor KLD en
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/Arki05/LFM2.5-2.6B-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/Arki05/LFM2.5-2.6B-GGUF
 - Repositorio de shards (todos los tensores en todos los tipos): https://huggingface.co/Arki05/LFM2.5-2.6B-GGUF-shards
 - Modelo base original: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Cuantizaciones oficiales de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF

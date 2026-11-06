@@ -31,7 +31,7 @@ Los checkpoints provienen de un entrenamiento con datos filtrados y alineados (d
 
 - Generación de texto: al ser un modelo de lenguaje basado en GPT-NeoX, puede generar texto coherente en tareas de lenguaje natural, aunque no se han publicado evaluaciones específicas.
 - Investigación sobre alineación: su principal capacidad es servir como herramienta para estudiar el efecto del merge de checkpoints intermedios en el comportamiento de seguridad y alineación.
-- Compatibilidad con transformers: se carga mediante la librería transformers y es compatible con text-generation-inference y endpoints de HuggingFace.
+- Compatibilidad con transformers: se carga mediante la librería transformers y es compatible con text-generation-inference y endpoints de Hugging Face.
 - No se ha documentado soporte para tool calling, agentes, razonamiento multi-paso, visión ni audio.
 
 ## Casos de uso
@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sfm_filtered_midtrain_alignment-5k_6k_7k_merge (este) | 6,9 B | no disponible | no disponible | HuggingFace |
-| sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg | 6,9 B (estimado) | no disponible | no disponible | HuggingFace |
-| sfm-filtered-midtrain-alignment-4k-5k-6k-avg | 6,9 B (estimado) | no disponible | no disponible | HuggingFace / FriendliAI |
-| sfm_filtered_midtrain_alignment_upsampled_instruct | 6,9 B (descrito en paper) | no disponible | no disponible | HuggingFace (geodesic-research) |
+| sfm_filtered_midtrain_alignment-5k_6k_7k_merge (este) | 6,9 B | no disponible | no disponible | Hugging Face |
+| sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg | 6,9 B (estimado) | no disponible | no disponible | Hugging Face |
+| sfm-filtered-midtrain-alignment-4k-5k-6k-avg | 6,9 B (estimado) | no disponible | no disponible | Hugging Face / FriendliAI |
+| sfm_filtered_midtrain_alignment_upsampled_instruct | 6,9 B (descrito en paper) | no disponible | no disponible | Hugging Face (geodesic-research) |
 
 Estos modelos pertenecen a la misma suite de investigación sobre alineación y comparten arquitectura y tamaño. No se dispone de datos de rendimiento comparativo.
 
@@ -76,7 +76,7 @@ Estos modelos pertenecen a la misma suite de investigación sobre alineación y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-5k_6k_7k_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-5k_6k_7k_merge
 - Modelo relacionado (sin filtrar): https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg
 - Despliegue en FriendliAI: https://friendli.ai/models/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg
 - Modelo instruct de la misma suite: https://huggingface.co/geodesic-research/sfm_filtered_midtrain_alignment_upsampled_instruct

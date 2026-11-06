@@ -109,7 +109,7 @@ La comparacion mas directa es con el propio Phonon-2.5: el paquete re-codificado
 
 ## Enlaces
 
-- HuggingFace del paquete: https://huggingface.co/eschmidbauer/phonon-2.5-c
+- Hugging Face del paquete: https://huggingface.co/eschmidbauer/phonon-2.5-c
 - Modelo base: https://huggingface.co/FermionResearch/Phonon-2.5
 - Motor de inferencia en C: https://github.com/eschmidbauer/phonon-2.5-c
 - Predecesor en ingles: https://huggingface.co/eschmidbauer/phonon-2-c

@@ -48,17 +48,17 @@ No se han publicado resultados de benchmarks en la información disponible para 
 - VRAM estimada: el tamaño del repositorio es de 4.4 GB, por lo que se estima que la inferencia requiere entre 5 y 6 GB de VRAM para cargar los pesos y los buffers intermedios.
 - GPU recomendadas: tarjetas con al menos 6 GB de VRAM, como RTX 3060, RTX 2060 o GTX 1660 Super. En GPUs con 8 GB o más, la ejecución será más holgada.
 - Si se utiliza OpenVINO, podría ejecutarse en CPUs Intel modernas, aunque la latencia será significativamente mayor que en GPU.
-- Opciones de despliegue: dado el formato OpenVINO probable, se puede usar el runtime de OpenVINO o el pipeline de HuggingFace Optimum-Intel. No se han documentado integraciones con vLLM, llama.cpp u Ollama, ya que estos están orientados a modelos de lenguaje.
+- Opciones de despliegue: dado el formato OpenVINO probable, se puede usar el runtime de OpenVINO o el pipeline de Hugging Face Optimum-Intel. No se han documentado integraciones con vLLM, llama.cpp u Ollama, ya que estos están orientados a modelos de lenguaje.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Tamaño (FP16) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FLUX.2 [klein] (original) | 4B | ~8 GB | Apache 2.0 | HuggingFace |
-| FLUX.2 [klein] INT4 (este repo) | 4B | ~4.4 GB | Apache 2.0 | HuggingFace |
-| SDXL Turbo | 3.5B | ~7 GB | OpenRAIL++ | HuggingFace |
-| FLUX.1 schnell | 12B | ~24 GB | Apache 2.0 | HuggingFace |
+| FLUX.2 [klein] (original) | 4B | ~8 GB | Apache 2.0 | Hugging Face |
+| FLUX.2 [klein] INT4 (este repo) | 4B | ~4.4 GB | Apache 2.0 | Hugging Face |
+| SDXL Turbo | 3.5B | ~7 GB | OpenRAIL++ | Hugging Face |
+| FLUX.1 schnell | 12B | ~24 GB | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones. La elección entre ellas dependerá de la calidad deseada, el hardware disponible y las restricciones de licencia. SDXL Turbo es una alternativa con licencia más restrictiva, mientras que FLUX.1 schnell ofrece mayor calidad pero requiere más recursos.
 
@@ -73,8 +73,8 @@ No se dispone de datos de rendimiento comparativo entre estas opciones. La elecc
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/yangsu0423/flux.2-klein-4b-int4-ov
-- Repositorio HuggingFace del modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/yangsu0423/flux.2-klein-4b-int4-ov
+- Repositorio Hugging Face del modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Guía de usuario de FLUX.2 [klein] en fal.ai: https://fal.ai/learn/devs/flux-2-klein-user-guide
 - Repositorio oficial de inferencia de FLUX.2 en GitHub: https://github.com/black-forest-labs/flux2
 - Página oficial de FLUX.2 [klein] en Black Forest Labs: https://bfl.ai/models/flux-2-klein

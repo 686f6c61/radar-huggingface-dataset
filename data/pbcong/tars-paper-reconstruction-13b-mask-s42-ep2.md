@@ -19,13 +19,13 @@ Es relevante ahora porque se enmarca en la investigacion sobre evaluacion de art
 | Tipos de cuantizacion | No declarados; el repo solo contiene `safetensors` en precision completa |
 | Idiomas soportados | No disponibles (el modelo base esta centrado en ingles) |
 | Licencia | No disponible (la model card no la especifica; el modelo base impone sus propias restricciones) |
-| Formato de pesos | `safetensors` en formato LLaVA original (no formato de adaptador LoRA de HuggingFace) |
+| Formato de pesos | `safetensors` en formato LLaVA original (no formato de adaptador LoRA de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
 El modelo emplea la arquitectura `llava_llama`, la misma familia que LLaVA-1.5, que combina un modelo de lenguaje basado en Llama/Vicuna de 13B con un encoder visual CLIP ViT-L/14 de 336 px y un proyector que alinea las representaciones de imagen con el espacio de embeddings del texto. Los 13,35 mil millones de parametros declarados coinciden con el tamano del checkpoint base, lo que indica que el ajuste fino no anadio modulos nuevos, sino que reentreno los pesos existentes (de ahi la denominacion "full fine-tuning").
 
-Segun la model card, se trata de un checkpoint de la epoca 2 (*epoch-2*) entrenado por completo y guardado en el formato original de LLaVA. El autor advierte explicitamente de que debe cargarse con el *loader* especifico de TARS/LLaVA y no con un cargador de LoRA de HuggingFace, lo que sugiere que los pesos no siguen la convencion de nombres que esperan las herramientas estandar de HF. Tambien aclara que los "perfiles de articulos" son reconstrucciones con supuestos documentados y no checkpoints de los autores originales. No se detallan el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO; los ajustes de entrenamiento y las revisiones se remiten a un fichero `reproduction.json` no incluido en la informacion disponible. No se describe ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, etc.).
+Segun la model card, se trata de un checkpoint de la epoca 2 (*epoch-2*) entrenado por completo y guardado en el formato original de LLaVA. El autor advierte explicitamente de que debe cargarse con el *loader* especifico de TARS/LLaVA y no con un cargador de LoRA de Hugging Face, lo que sugiere que los pesos no siguen la convencion de nombres que esperan las herramientas estandar de HF. Tambien aclara que los "perfiles de articulos" son reconstrucciones con supuestos documentados y no checkpoints de los autores originales. No se detallan el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO; los ajustes de entrenamiento y las revisiones se remiten a un fichero `reproduction.json` no incluido en la informacion disponible. No se describe ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, etc.).
 
 ## Capacidades
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - VRAM estimada en 8 bits: alrededor de 14 GB de pesos, viable en GPU de 24 GB (RTX 3090, RTX 4090, A5000).
 - VRAM estimada en 4 bits: alrededor de 7-8 GB de pesos, viable en GPU de 12-16 GB, aunque las cuantizaciones no estan publicadas para este checkpoint.
 - GPU recomendadas para precision completa: A100 40/80 GB, H100, A6000 48 GB o configuraciones multi-GPU (por ejemplo, 2 x 24 GB con reparto de modelo).
-- Opciones de despliegue: el autor exige el *loader* especifico de TARS/LLaVA; no es compatible con un cargador de LoRA de HuggingFace. El soporte en vLLM, llama.cpp, Ollama o TGI no esta confirmado, ya que el formato es el LLaVA original y no hay versiones GGUF publicadas.
+- Opciones de despliegue: el autor exige el *loader* especifico de TARS/LLaVA; no es compatible con un cargador de LoRA de Hugging Face. El soporte en vLLM, llama.cpp, Ollama o TGI no esta confirmado, ya que el formato es el LLaVA original y no hay versiones GGUF publicadas.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ Los datos de rendimiento de los modelos comparables no se incluyen aqui porque n
 - La model card no declara licencia, lo que impide determinar si el uso comercial esta permitido; ademas, el modelo base impone sus propias restricciones de uso.
 - No hay benchmarks publicados ("pending"), por lo que no se puede verificar su calidad ni su comportamiento en tareas concretas.
 - El autor advierte de que los perfiles de articulos son reconstrucciones con supuestos documentados y no checkpoints de los autores originales; no deben tratarse como resultados cientificos validados.
-- Requiere un *loader* especifico (TARS/LLaVA); intentar cargarlo con herramientas estandar de HuggingFace o de LoRA puede fallar o producir resultados incorrectos.
+- Requiere un *loader* especifico (TARS/LLaVA); intentar cargarlo con herramientas estandar de Hugging Face o de LoRA puede fallar o producir resultados incorrectos.
 - Riesgo de alucinacion inherente a los modelos generativos de esta familia, especialmente en la generacion de referencias, datos o resultados cientificos.
 - Sesgos potenciales heredados del modelo base y de los datos de ajuste, no documentados por el autor.
 - Idiomas soportados no declarados; el modelo base esta centrado en ingles, por lo que el rendimiento en castellano es incierto.
@@ -85,7 +85,7 @@ Los datos de rendimiento de los modelos comparables no se incluyen aqui porque n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pbcong/tars-paper-reconstruction-13b-mask-s42-ep2
+- Modelo en Hugging Face: https://huggingface.co/pbcong/tars-paper-reconstruction-13b-mask-s42-ep2
 - Modelo base: https://huggingface.co/liuhaotian/llava-v1.5-13b
 - Paper (arXiv, abstract): https://arxiv.org/abs/2604.01128
 - Paper (PDF): https://arxiv.org/pdf/2604.01128

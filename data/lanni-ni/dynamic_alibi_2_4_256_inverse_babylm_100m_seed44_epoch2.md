@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_100m_seed44_epoch2` es un modelo de generación de texto de pequeña escala, con 27.447.040 parámetros, publicado en HuggingFace por el usuario Lanni-ni. Forma parte de una serie de experimentos con la familia BabyLM, en los que se explora el mecanismo de atención con sesgo posicional ALiBi dinámico. El nombre del repositorio indica que se trata de una variante con configuración `2_4_256` (probablemente relacionada con el número de cabezas, capas o dimensiones), con una función de inversión en el sesgo, semilla 44 y entrenada durante 2 épocas.
+El modelo `Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_100m_seed44_epoch2` es un modelo de generación de texto de pequeña escala, con 27.447.040 parámetros, publicado en Hugging Face por el usuario Lanni-ni. Forma parte de una serie de experimentos con la familia BabyLM, en los que se explora el mecanismo de atención con sesgo posicional ALiBi dinámico. El nombre del repositorio indica que se trata de una variante con configuración `2_4_256` (probablemente relacionada con el número de cabezas, capas o dimensiones), con una función de inversión en el sesgo, semilla 44 y entrenada durante 2 épocas.
 
 El modelo se distribuye en formato safetensors y está integrado con la librería Transformers, aunque la model card es genérica y no incluye información sobre el proceso de entrenamiento, los datos utilizados ni el rendimiento. Su relevancia actual radica en el interés investigador por mecanismos de atención posicionales alternativos en modelos pequeños, pero no existe documentación pública suficiente para considerarlo listo para producción.
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_100m_seed44_epoch2 | 27,4M | no disponible | no disponible | HuggingFace |
-| Lanni-ni/dynamic_alibi_2_4_256_babylm_100m_epoch4 | no disponible | no disponible | no disponible | HuggingFace |
-| Lanni-ni/dynamic_alibi_2_4_256_babylm_100m_inverse_epoch1 | no disponible | no disponible | no disponible | HuggingFace |
+| Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_100m_seed44_epoch2 | 27,4M | no disponible | no disponible | Hugging Face |
+| Lanni-ni/dynamic_alibi_2_4_256_babylm_100m_epoch4 | no disponible | no disponible | no disponible | Hugging Face |
+| Lanni-ni/dynamic_alibi_2_4_256_babylm_100m_inverse_epoch1 | no disponible | no disponible | no disponible | Hugging Face |
 
 Los tres modelos pertenecen a la misma serie del autor y comparten la configuración `dynamic_alibi_2_4_256`, diferenciándose en la variante (inverse o estándar) y en la época de entrenamiento. No se dispone de datos de rendimiento comparables.
 
@@ -76,7 +76,7 @@ Los tres modelos pertenecen a la misma serie del autor y comparten la configurac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_100m_seed44_epoch2
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_100m_seed44_epoch2
 - Modelo relacionado (epoch4): https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_100m_epoch4
 - Modelo relacionado (inverse epoch1): https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_100m_inverse_epoch1
 - Referencia a ALiBi (paper arxiv:1910.09700): https://arxiv.org/abs/1910.09700

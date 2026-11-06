@@ -88,5 +88,5 @@ No se dispone de información sobre modelos comparables de detección de keypoin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Asher-1/GKD_GGUF
+- Repositorio Hugging Face: https://huggingface.co/Asher-1/GKD_GGUF
 - No se han encontrado otros enlaces relevantes (papers, blogs o repositorios adicionales) en la información proporcionada.

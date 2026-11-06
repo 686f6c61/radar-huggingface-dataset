@@ -18,7 +18,7 @@ Su relevancia actual es doble. Por un lado, permite prototipar agentes de voz y 
 | Longitud de contexto | 40.960 tokens |
 | Tipos de cuantizacion | Q4_K_S (GGUF). No se listan otras cuantizaciones en este repositorio |
 | Idiomas soportados | Ingles (en) e italiano (it), segun los metadatos de la model card |
-| Licencia | `other` en los metadatos de HuggingFace; el badge de la model card indica Apache-2.0 (discrepancia sin resolver) |
+| Licencia | `other` en los metadatos de Hugging Face; el badge de la model card indica Apache-2.0 (discrepancia sin resolver) |
 | Formato de pesos | GGUF (Q4_K_S), tamano en disco de 0,44 GB |
 | Capas del transformer | 28 |
 | Dimension oculta | 1024 |
@@ -101,9 +101,9 @@ Rendimiento medido por el autor en una NVIDIA GeForce RTX 5070 Ti con 15,9 GB de
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparable |
 |---|---|---|---|---|---|
-| Qwen-Qwen3-0.6B-GGUF-Q4_K_S (este modelo) | 751.632.384 cuantizados a Q4_K_S | 40.960 tokens | `other` (badge Apache-2.0 en la model card) | GGUF en HuggingFace, 247 descargas | 39% agregado en la evaluacion propia del autor |
-| Qwen/Qwen3-0.6B (modelo original de la familia) | 0,6 B | Ventana nativa de la familia Qwen3 | Apache-2.0 | Pesos safetensors en HuggingFace | No evaluado con el mismo protocolo; no disponible en la informacion proporcionada |
-| sigmanih/Qwen-Qwen3-0.6B (modelo base directo de esta cuantizacion) | No disponible | No disponible | No disponible | Repositorio en HuggingFace | No disponible |
+| Qwen-Qwen3-0.6B-GGUF-Q4_K_S (este modelo) | 751.632.384 cuantizados a Q4_K_S | 40.960 tokens | `other` (badge Apache-2.0 en la model card) | GGUF en Hugging Face, 247 descargas | 39% agregado en la evaluacion propia del autor |
+| Qwen/Qwen3-0.6B (modelo original de la familia) | 0,6 B | Ventana nativa de la familia Qwen3 | Apache-2.0 | Pesos safetensors en Hugging Face | No evaluado con el mismo protocolo; no disponible en la informacion proporcionada |
+| sigmanih/Qwen-Qwen3-0.6B (modelo base directo de esta cuantizacion) | No disponible | No disponible | No disponible | Repositorio en Hugging Face | No disponible |
 | Llama 3.2 1B Instruct | 1,23 B | Mayor que 40.960 tokens | Licencia comunitaria de Llama | Pesos originales y multiples cuantizaciones GGUF | No evaluado con el mismo protocolo; no disponible en la informacion proporcionada |
 
 Nota: los resultados de este modelo no son directamente comparables con los de leaderboards publicos, porque la evaluacion se hizo con conjuntos reducidos (7-14 preguntas) y un protocolo propio del publicador.
@@ -114,7 +114,7 @@ Nota: los resultados de este modelo no son directamente comparables con los de l
 - El modo de razonamiento encadenado empeora el resultado en este modelo: 32,6% frente a 43,9% del modo directo, con una caida de 11,3 puntos. Activar CoT no es recomendable por defecto segun los propios datos del autor.
 - Riesgo alto de alucinacion en consultas abiertas: el 89% en TruthfulQA no compensa los resultados de MMLU y GPQA, y un modelo de 0,6 B tiene capacidad limitada para verificar hechos.
 - Cobertura idiomatica restringida a ingles e italiano en los metadatos. No hay soporte declarado de castellano.
-- Ambiguedad de licencia: los metadatos de HuggingFace indican `other`, mientras que el badge de la model card muestra Apache-2.0. Antes de cualquier uso comercial es imprescindible verificar la licencia aplicable con el publicador, ya que la discrepancia no esta resuelta en la informacion disponible.
+- Ambiguedad de licencia: los metadatos de Hugging Face indican `other`, mientras que el badge de la model card muestra Apache-2.0. Antes de cualquier uso comercial es imprescindible verificar la licencia aplicable con el publicador, ya que la discrepancia no esta resuelta en la informacion disponible.
 - Trazabilidad incompleta: no se documentan datos de entrenamiento, tokens, composicion del dataset ni fases de alineacion. El modelo base es a su vez un derivado (sigmanih/Qwen-Qwen3-0.6B) cuyo origen y proceso de creacion no se detallan.
 - Perdida de calidad por cuantizacion: Q4_K_S introduce degradacion adicional respecto a los pesos originales, especialmente en tareas de codigo y matematicas, donde el margen de error es pequeno.
 - Evaluacion no independiente: todas las cifras proceden del propio publicador, con su propio motor de inferencia, conjuntos de 7 a 14 preguntas y fechas declaradas en 2026, lo que impide contrastar los resultados con terceros.
@@ -124,7 +124,7 @@ Nota: los resultados de este modelo no son directamente comparables con los de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sigmanih/Qwen-Qwen3-0.6B-GGUF-Q4_K_S
+- Modelo en Hugging Face: https://huggingface.co/sigmanih/Qwen-Qwen3-0.6B-GGUF-Q4_K_S
 - Modelo base: https://huggingface.co/sigmanih/Qwen-Qwen3-0.6B
 - Repositorio de Sigma Studio: https://github.com/Sigmanih/SigmaStudio
 - Licencia Apache-2.0 referenciada en el badge de la model card: https://opensource.org/licenses/Apache-2.0

@@ -72,7 +72,7 @@ No se dispone de benchmarks comparativos en la información proporcionada. La ar
 
 | Modelo | Arquitectura | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| NPPE-3 RRDBNet | RRDBNet | Denoising + 4x SR, solo pérdida de píxel | MIT | HuggingFace |
+| NPPE-3 RRDBNet | RRDBNet | Denoising + 4x SR, solo pérdida de píxel | MIT | Hugging Face |
 | Real-ESRGAN | RRDBNet | SR con pérdida adversarial (GAN) | BSD-3-Clause | Código abierto |
 | SwinIR | Transformer | Super-resolución, sin denoising específico | Apache 2.0 | Código abierto |
 
@@ -91,6 +91,6 @@ Los datos de rendimiento y parámetros de estos modelos alternativos no están d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mohitb1i/nppe3-rrdb-lowlight-sr
-- Modelo relacionado en HuggingFace: https://huggingface.co/gauravkgehlot/dlp-nppe3-lowlight-sr
+- Hugging Face: https://huggingface.co/mohitb1i/nppe3-rrdb-lowlight-sr
+- Modelo relacionado en Hugging Face: https://huggingface.co/gauravkgehlot/dlp-nppe3-lowlight-sr
 - Notebook de referencia en GitHub: https://github.com/sahildev-ai1/iitm-dlp-kaggle-competitions/blob/main/notebooks/01_nppe3_lowlight_denoising_4xsr_rrdb.ipynb

@@ -80,6 +80,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fanismathioulakis/eff-grot
+- Modelo en Hugging Face: https://huggingface.co/fanismathioulakis/eff-grot
 - Codigo y instrucciones: https://github.com/fmathiou/eff-grot
 - Paper (WACV 2026): https://openaccess.thecvf.com/content/WACV2026/papers/Mathioulakis_Eff-GRot_Efficient_and_Generalizable_Rotation_Estimation_with_Transformers_WACV_2026_paper.pdf

@@ -102,7 +102,7 @@ Nota: los datos de contexto y licencia de los modelos de comparacion no proviene
 
 ## Enlaces
 
-- Repositorio HuggingFace (version ONNX): https://huggingface.co/onnx-community/Gemma3-Prompt.Coder.it.Uncensored-270m-ONNX
+- Repositorio Hugging Face (version ONNX): https://huggingface.co/onnx-community/Gemma3-Prompt.Coder.it.Uncensored-270m-ONNX
 - Modelo base original: https://huggingface.co/WithinUsAI/Gemma3-Prompt.Coder.it.Uncensored-270m
 - Space de conversion a ONNX utilizado: https://huggingface.co/spaces/onnx-community/convert-to-onnx
 - Documentacion del pipeline text-generation de Transformers.js: https://huggingface.co/docs/transformers.js/api/pipelines#module_pipelines.TextGenerationPipeline

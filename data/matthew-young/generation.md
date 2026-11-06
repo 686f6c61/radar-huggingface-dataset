@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`matthew-young/generation` es un prototipo de investigación publicado en HuggingFace por el usuario matthew-young. Se trata de una implementación de la arquitectura Perceiver orientada a tareas de generación, distribuida como punto de partida experimental y no como un modelo entrenado listo para producción. El repositorio incluye el código de inferencia, la configuración de arquitectura y un checkpoint de inicialización, pero el propio autor advierte explícitamente de que no se presenta ningún resultado de benchmark ni se ha completado un entrenamiento significativo.
+`matthew-young/generation` es un prototipo de investigación publicado en Hugging Face por el usuario matthew-young. Se trata de una implementación de la arquitectura Perceiver orientada a tareas de generación, distribuida como punto de partida experimental y no como un modelo entrenado listo para producción. El repositorio incluye el código de inferencia, la configuración de arquitectura y un checkpoint de inicialización, pero el propio autor advierte explícitamente de que no se presenta ningún resultado de benchmark ni se ha completado un entrenamiento significativo.
 
 La relevancia de este modelo es, por tanto, metodológica más que práctica: sirve como esqueleto reproducible para experimentar con Perceiver en generación, con una receta de entrenamiento por defecto documentada (optimizador Novograd, schedule de warmup constante) y una configuración de escala "giant". No debe confundirse con un modelo de lenguaje desplegable: el checkpoint es una inicialización válida para pruebas de humo (smoke tests), no un modelo con capacidades aprendidas.
 
@@ -75,4 +75,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/matthew-young/generation
+- Repositorio en Hugging Face: https://huggingface.co/matthew-young/generation

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-Picture-Captioner es un modelo de visión-lenguaje (VLM) de pequeno tamano publicado por el usuario agentlans en HuggingFace. Se trata de un ajuste fino mediante LoRA del modelo huihui-ai/Huihui-Qwen3.5-0.8B-abliterated, que a su vez deriva de la familia Qwen3.5 de Alibaba. El modelo resuelve una tarea concreta: generar pies de foto (captions) concisos, detallados y precisos a partir de una imagen de entrada. Su relevancia radica en que ofrece capacidades multimodales con menos de mil millones de parametros, lo que permite desplegarlo en hardware modesto.
+Qwen3.5-0.8B-Picture-Captioner es un modelo de visión-lenguaje (VLM) de pequeno tamano publicado por el usuario agentlans en Hugging Face. Se trata de un ajuste fino mediante LoRA del modelo huihui-ai/Huihui-Qwen3.5-0.8B-abliterated, que a su vez deriva de la familia Qwen3.5 de Alibaba. El modelo resuelve una tarea concreta: generar pies de foto (captions) concisos, detallados y precisos a partir de una imagen de entrada. Su relevancia radica en que ofrece capacidades multimodales con menos de mil millones de parametros, lo que permite desplegarlo en hardware modesto.
 
 El ajuste se realizo sobre el dataset agentlans/monet-caption con una unica epoca, LoRA de rango 16 y precision bf16. El modelo acepta imagenes de hasta 768 x 768 pixeles (589.824 pixeles) y utiliza atencion SDPA. Esta pensado para flujos de trabajo donde se necesita etiquetado o descripcion automatica de imagenes sin depender de modelos multimodales de gran escala.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-Picture-Captioner | 0,85 B | no disponible | imagen-texto a texto | Apache 2.0 | HuggingFace |
-| Modelos de captioning especializados (p. ej., BLIP) | no disponible | no disponible | imagen-texto a texto | variable | HuggingFace |
-| VLMs de mayor tamano de la familia Qwen | no disponible | no disponible | multimodal | variable | HuggingFace |
+| Qwen3.5-0.8B-Picture-Captioner | 0,85 B | no disponible | imagen-texto a texto | Apache 2.0 | Hugging Face |
+| Modelos de captioning especializados (p. ej., BLIP) | no disponible | no disponible | imagen-texto a texto | variable | Hugging Face |
+| VLMs de mayor tamano de la familia Qwen | no disponible | no disponible | multimodal | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada. La comparativa se limita a caracteristicas estructurales; no se han publicado benchmarks que permitan una comparacion cuantitativa con alternativas.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentlans/Qwen3.5-0.8B-Picture-Captioner
+- Modelo en Hugging Face: https://huggingface.co/agentlans/Qwen3.5-0.8B-Picture-Captioner
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.5-0.8B-abliterated
 - Dataset de entrenamiento: https://huggingface.co/datasets/agentlans/monet-caption
 - Galeria de ejemplos: https://huggingface.co/agentlans/Qwen3.5-0.8B-Picture-Captioner/blob/main/image_gallery.md

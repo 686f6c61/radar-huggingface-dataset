@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PointNeXt-S (variante small) es un modelo de segmentación de partes de nubes de puntos en 3D, publicado en HuggingFace bajo el repositorio `torch-pointcloud/pointnext-sm.shapenetpart.openpoints`. No es un modelo de lenguaje: recibe una nube de puntos (coordenadas, normales y etiqueta de categoría) y predice, punto a punto, a qué parte del objeto pertenece dentro de un vocabulario de 50 clases de parte repartidas en las 16 categorías de ShapeNetPart. Lo mantiene el proyecto PyTorch PointCloud de Arthur Dujardin, que actúa como conversor y distribuidor del modelo original de Guocheng Qian (`guochengqian/PointNeXt`).
+PointNeXt-S (variante small) es un modelo de segmentación de partes de nubes de puntos en 3D, publicado en Hugging Face bajo el repositorio `torch-pointcloud/pointnext-sm.shapenetpart.openpoints`. No es un modelo de lenguaje: recibe una nube de puntos (coordenadas, normales y etiqueta de categoría) y predice, punto a punto, a qué parte del objeto pertenece dentro de un vocabulario de 50 clases de parte repartidas en las 16 categorías de ShapeNetPart. Lo mantiene el proyecto PyTorch PointCloud de Arthur Dujardin, que actúa como conversor y distribuidor del modelo original de Guocheng Qian (`guochengqian/PointNeXt`).
 
 La arquitectura es PointNeXt, una revisión de PointNet++ que sustituye los bloques MLP por bloques residuales invertidos y aplica estrategias de entrenamiento y escalado mejoradas (paper NeurIPS 2022, arXiv:2206.04670). El modelo es muy pequeno: 990.770 parámetros, 96 canales de característica, 7 canales de entrada y 50 clases de salida. Aun así alcanza 86,88 de mIoU por instancia y 84,48 de mIoU por clase en ShapeNetPart según los valores declarados por el autor (métricas no verificadas de forma independiente).
 
@@ -77,7 +77,7 @@ No se han publicado en la información disponible resultados de otras evaluacion
 
 | Modelo | Parámetros | Dataset / tarea | ins_mIoU (ShapeNetPart) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pointnext-sm.shapenetpart.openpoints (este) | 990.770 | ShapeNetPart, segmentación de partes | 86,88 | MIT | HuggingFace, safetensors, librería torch-pointcloud |
+| pointnext-sm.shapenetpart.openpoints (este) | 990.770 | ShapeNetPart, segmentación de partes | 86,88 | MIT | Hugging Face, safetensors, librería torch-pointcloud |
 | PointNet++ (Qi et al., 2017) | no disponible en la información proporcionada | ShapeNetPart, segmentación de partes | no disponible en la información proporcionada | MIT (repo original) | Repositorio oficial en PyTorch |
 | PointNeXt original (guochengqian) | no disponible en la información proporcionada (familia S/B/L) | ShapeNetPart y otros | no disponible en la información proporcionada | MIT | GitHub oficial con checkpoints |
 
@@ -97,7 +97,7 @@ La comparación cuantitativa con PointNet++ y con otras variantes de PointNeXt (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pointnext-sm.shapenetpart.openpoints
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointnext-sm.shapenetpart.openpoints
 - Paper PointNeXt (NeurIPS 2022): https://arxiv.org/abs/2206.04670
 - Repositorio original PointNeXt: https://github.com/guochengqian/PointNeXt
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

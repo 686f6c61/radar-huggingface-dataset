@@ -16,7 +16,7 @@ La relevancia actual radica en su enfoque práctico para procesar contenido mult
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | float16 (mencionado explícitamente; se desaconseja int8 en Blackwell) |
 | Idiomas soportados | no disponibles |
-| Licencia | apache-2.0 (según metadatos de HuggingFace) |
+| Licencia | apache-2.0 (según metadatos de Hugging Face) |
 | Formato de pesos | no disponible |
 
 ## Arquitectura y entrenamiento
@@ -69,4 +69,4 @@ No disponible. No se proporcionan modelos comparables en la información facilit
 
 ## Enlaces
 
-- [HuggingFace: TTS-ORG/translation-audio](https://huggingface.co/TTS-ORG/translation-audio)
+- [Hugging Face: TTS-ORG/translation-audio](https://huggingface.co/TTS-ORG/translation-audio)

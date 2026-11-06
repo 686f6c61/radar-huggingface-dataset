@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Oğuz-MoE-354M-Base es un modelo de lenguaje causal en turco con arquitectura de mezcla de expertos (MoE) desarrollado por el usuario Yigit-Karaman. Cuenta con 354,2 millones de parámetros totales y aproximadamente 205,5 millones de parámetros activos por token, lo que lo sitúa en la gama de modelos pequeños pero con una relación capacidad/cómputo optimizada mediante enrutado top-2 sobre 4 expertos por capa. Está publicado en HuggingFace bajo licencia Apache 2.0 y es un checkpoint únicamente preentrenado (base), sin ajuste por instrucciones.
+Oğuz-MoE-354M-Base es un modelo de lenguaje causal en turco con arquitectura de mezcla de expertos (MoE) desarrollado por el usuario Yigit-Karaman. Cuenta con 354,2 millones de parámetros totales y aproximadamente 205,5 millones de parámetros activos por token, lo que lo sitúa en la gama de modelos pequeños pero con una relación capacidad/cómputo optimizada mediante enrutado top-2 sobre 4 expertos por capa. Está publicado en Hugging Face bajo licencia Apache 2.0 y es un checkpoint únicamente preentrenado (base), sin ajuste por instrucciones.
 
 Su rasgo distintivo es la metodología de construcción: no se entrenó como MoE desde cero, sino que se generó mediante un pipeline de escalado progresivo en cuatro etapas —preentrenamiento denso desde cero, dos rondas de depth upscaling y una conversión final de FFN denso a MoE (upcycling)— ejecutado íntegramente en una única GPU de consumo (NVIDIA GeForce RTX 4060 con 8 GB de VRAM). Esto lo convierte en un caso de estudio relevante para investigadores interesados en técnicas de escalado de bajo coste y en el upcycling de arquitecturas densas a MoE.
 
@@ -80,7 +80,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Oğuz-MoE-354M-Base | 354,2 M | ~205,5 M | 2048 (entrenado ≤ 1024) | Apache 2.0 | HuggingFace |
+| Oğuz-MoE-354M-Base | 354,2 M | ~205,5 M | 2048 (entrenado ≤ 1024) | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yigit-Karaman/Oguz-MoE-354M-Base
+- Modelo en Hugging Face: https://huggingface.co/Yigit-Karaman/Oguz-MoE-354M-Base
 - Tokenizador `ytu-ce-cosmos/turkish-gpt2`: https://huggingface.co/ytu-ce-cosmos/turkish-gpt2
 - Dataset `ytu-ce-cosmos/Cosmos-Turkish-Corpus-v1.0`: https://huggingface.co/datasets/ytu-ce-cosmos/Cosmos-Turkish-Corpus-v1.0
 - Dataset `HuggingFaceFW/fineweb-2`: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`christinaramirez88/multitask` es un repositorio de HuggingFace publicado por el usuario christinaramirez88 que contiene una implementacion propia de la arquitectura Perceiver orientada a tareas multiples (multitask). No es un modelo entrenado ni un release de inferencia: la propia model card lo describe como un punto de partida reproducible con un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests).
+`christinaramirez88/multitask` es un repositorio de Hugging Face publicado por el usuario christinaramirez88 que contiene una implementacion propia de la arquitectura Perceiver orientada a tareas multiples (multitask). No es un modelo entrenado ni un release de inferencia: la propia model card lo describe como un punto de partida reproducible con un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests).
 
 El repositorio incluye `pipeline.py` como artefacto principal, ademas de `config.json` (configuracion de arquitectura), `training_args.json` (receta de experimento por defecto: optimizador Adam con scheduler exponencial) y `model.safetensors`. Segun los metadatos reales de los pesos, el modelo declara 49.600 parametros, una cifra muy reducida que contrasta con la etiqueta interna "giant" de la configuracion; esa etiqueta describe un preset de arquitectura, no el tamano efectivo del checkpoint.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Desarrollador | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| christinaramirez88/multitask | christinaramirez88 | 49.600 | no disponible | Checkpoint de inicializacion, sin entrenar | Apache 2.0 | HuggingFace, 0 descargas |
+| christinaramirez88/multitask | christinaramirez88 | 49.600 | no disponible | Checkpoint de inicializacion, sin entrenar | Apache 2.0 | Hugging Face, 0 descargas |
 | Perceiver (original) | DeepMind | no disponible en la informacion proporcionada | no disponible | Modelo entrenado y publicado con resultados | consultar repositorio del autor | Repositorio de investigacion de DeepMind |
 | Perceiver IO | DeepMind | no disponible en la informacion proporcionada | no disponible | Modelo entrenado para entradas y salidas estructuradas | consultar repositorio del autor | Repositorio de investigacion de DeepMind |
 
@@ -89,12 +89,12 @@ La comparacion con las implementaciones de referencia de DeepMind es cualitativa
 - Idiomas: no se declara ningun idioma soportado, por lo que no puede asumirse cobertura multilingue.
 - Contexto: la longitud de contexto no esta documentada en la informacion disponible; debe consultarse `config.json` en el repositorio antes de cualquier uso.
 - Licencia: Apache 2.0 permite uso comercial del codigo y los pesos, pero la propia model card advierte de que deben revisarse por separado los terminos de los datos de origen si se combina con conjuntos de datos externos.
-- Integracion: al ser una implementacion personalizada, las APIs automaticas de HuggingFace (`AutoModel`, `pipeline`) requieren un adaptador explicito; no se puede asumir compatibilidad directa.
+- Integracion: al ser una implementacion personalizada, las APIs automaticas de Hugging Face (`AutoModel`, `pipeline`) requieren un adaptador explicito; no se puede asumir compatibilidad directa.
 - Produccion: no es apto para despliegue en produccion en su estado actual. Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos aqui.
 - Madurez del repositorio: creado el 12 de septiembre de 2026 y actualizado siete segundos despues, con 0 descargas y 0 likes, lo que indica que no ha pasado por revision de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/christinaramirez88/multitask
+- Hugging Face: https://huggingface.co/christinaramirez88/multitask
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los unicos resultados obtenidos correspondian a paginas de Speedtest by Ookla (speedtest.net y sus variantes de idioma) y no guardan relacion con el repositorio.
 - Referencias generales sobre la arquitectura, no procedentes de la busqueda web y no verificadas en esta ficha: articulo original del Perceiver (arXiv:2103.03206) y articulo de Perceiver IO (arXiv:2107.14795).

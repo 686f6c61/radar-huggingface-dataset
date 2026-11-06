@@ -2,7 +2,7 @@
 
 ## Resumen
 
-davidwdw/fa-eval-attnfix-selected4500-5d22ef96075f-725c31ef7d53 no es un modelo de lenguaje en el sentido habitual: es un repositorio de artefactos publicado en HuggingFace por el usuario davidwdw. El propio autor lo describe como un "versioned fleet archive", es decir, una instantanea versionada de resultados de evaluacion en bucle cerrado, generada a partir de una receta canonica identificada como 2026-09-22_b1k_task00_pi05_attention_consistent_h20.
+davidwdw/fa-eval-attnfix-selected4500-5d22ef96075f-725c31ef7d53 no es un modelo de lenguaje en el sentido habitual: es un repositorio de artefactos publicado en Hugging Face por el usuario davidwdw. El propio autor lo describe como un "versioned fleet archive", es decir, una instantanea versionada de resultados de evaluacion en bucle cerrado, generada a partir de una receta canonica identificada como 2026-09-22_b1k_task00_pi05_attention_consistent_h20.
 
 El repositorio ocupa 0,2 GB, no registra descargas ni likes y no incluye pesos, fichero de configuracion de modelo, tokenizador ni model card tecnica. La unica informacion funcional que aporta es de trazabilidad: el tier declarado es "closed-loop raw results, public301-320 seed0, 20/20 complete", lo que sugiere un conjunto de 20 ejecuciones de evaluacion completadas sobre un rango de identificadores public301-320 con semilla 0. El autor indica ademas que debe usarse la revision exacta registrada y verificarse mediante SHA256SUMS.
 
@@ -105,7 +105,7 @@ No disponible. No se ha identificado ningun modelo comparable en la informacion 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-attnfix-selected4500-5d22ef96075f-725c31ef7d53
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-attnfix-selected4500-5d22ef96075f-725c31ef7d53
 - Repositorio hermano del mismo autor: https://huggingface.co/davidwdw/fa-pi05-attnfix-eval4000-32fa121b10ab-9ff8e74258a5
 - Paper, blog, repositorio de codigo o demo: no disponibles.
 - Nota sobre la busqueda web: los resultados obtenidos (docs.fontawesome.com, cdnjs.com, github.com/openai/evals, cybersecuritynews.com) no estan relacionados con este artefacto y se descartan como fuentes.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JULIANMORA es un adaptador LoRA de texto a imagen publicado por el usuario amichaprodu en HuggingFace. Se distribuye con la librería diffusers y está diseñado para funcionar sobre el modelo base black-forest-labs/FLUX.1-dev, un transformador de flujo rectificado (rectified flow) de 12.000 millones de parámetros. El repositorio ocupa 0,2 GB y la model card no define un `instance_prompt`, por lo que el disparador concreto del adaptador no está documentado.
+JULIANMORA es un adaptador LoRA de texto a imagen publicado por el usuario amichaprodu en Hugging Face. Se distribuye con la librería diffusers y está diseñado para funcionar sobre el modelo base black-forest-labs/FLUX.1-dev, un transformador de flujo rectificado (rectified flow) de 12.000 millones de parámetros. El repositorio ocupa 0,2 GB y la model card no define un `instance_prompt`, por lo que el disparador concreto del adaptador no está documentado.
 
 El modelo no incluye información sobre su proceso de entrenamiento, el conjunto de datos utilizado, el rango del adaptador ni la temática que reproduce. La model card es prácticamente vacía: solo contiene la etiqueta de plantilla `template:diffusion-lora`, un widget con una imagen de salida referenciada y un enlace de descarga genérico. La galería no está poblada.
 
@@ -45,7 +45,7 @@ Tampoco se documenta si hubo regularizacion, aumento de datos, entrenamiento con
 
 - Pruebas de concepto en generacion de personajes: el adaptador puede cargarse sobre FLUX.1-dev en un script de diffusers para comprobar visualmente que concepto ha aprendido, dado que no hay documentacion al respecto.
 - Prototipado artistico personal: util para generar variaciones de un rostro o estilo concreto en un flujo de trabajo local, siempre que el usuario valide primero la salida con su propio prompt.
-- Investigacion sobre LoRA en modelos de difusion: sirve como ejemplo de adaptador publicado sin model card para estudiar practicas de documentacion deficientes en HuggingFace.
+- Investigacion sobre LoRA en modelos de difusion: sirve como ejemplo de adaptador publicado sin model card para estudiar practicas de documentacion deficientes en Hugging Face.
 - Composicion con otros adaptadores: puede combinarse con LoRA de estilo sobre FLUX.1-dev para explorar mezclas de identidad y estetica, ajustando la escala de cada peso.
 - Generacion de material grafico no comercial: dado que el modelo base FLUX.1-dev esta bajo licencia no comercial, el uso queda restringido a proyectos personales, academicos o de investigacion.
 - Evaluacion comparativa de adaptadores: puede incluirse en un banco de pruebas junto a otros LoRA de FLUX para medir fidelidad al concepto cuando no existe prompt de activacion.
@@ -86,7 +86,7 @@ No se han encontrado en la busqueda web modelos comparables directos con datos v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amichaprodu/JULIANMORA
+- Modelo en Hugging Face: https://huggingface.co/amichaprodu/JULIANMORA
 - Archivos del repositorio: https://huggingface.co/amichaprodu/JULIANMORA/tree/main
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Documentacion de diffusers para cargar LoRA: https://huggingface.co/docs/diffusers/main/en/using-diffusers/loading_adapters

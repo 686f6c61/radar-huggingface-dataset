@@ -83,7 +83,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 - Tamaño del repositorio elevado (25,7 GB) por incluir tanto los pesos BF16 como los checkpoints veRL originales.
 
 ## Enlaces
-- Ficha en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-001
+- Ficha en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-001
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Ficha en Featherless (step-001): https://featherless.ai/models/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-001
 - Ficha en Featherless (step-013): https://featherless.ai/models/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-013

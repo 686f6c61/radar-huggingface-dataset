@@ -77,10 +77,10 @@ La ejecución con semilla 1 de este checkpoint, seleccionada por pérdida de val
 
 | Modelo | Parametros | Contexto | Exactitud forzada (nunca vistas) | Error de calibracion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Kodiak XL v2 | ~1B (1.044.119.556) | no disponible | 0.659 ± 0.013 | 0.113 | Apache-2.0 | HuggingFace y GitHub de Cortex Agent LLC |
+| Kodiak XL v2 | ~1B (1.044.119.556) | no disponible | 0.659 ± 0.013 | 0.113 | Apache-2.0 | Hugging Face y GitHub de Cortex Agent LLC |
 | Kodiak large v2 | 400M | no disponible | 0.609 | 0.128 | no disponible | Referenciado en la comparativa del autor; enlace no facilitado |
-| Qwen3-8B | 8B | no disponible | 0.688 | 0.293 | Apache-2.0 (dato externo, no incluido en la información proporcionada) | HuggingFace |
-| Ettin-encoder-1B (modelo base) | ~1B | no disponible | no disponible | no disponible | MIT | HuggingFace (`jhu-clsp/ettin-encoder-1b`) |
+| Qwen3-8B | 8B | no disponible | 0.688 | 0.293 | Apache-2.0 (dato externo, no incluido en la información proporcionada) | Hugging Face |
+| Ettin-encoder-1B (modelo base) | ~1B | no disponible | no disponible | no disponible | MIT | Hugging Face (`jhu-clsp/ettin-encoder-1b`) |
 
 La comparación relevante no es de tamaño sino de propósito: Kodiak XL v2 compite con LLM generalistas en tareas de clasificación y decisión, donde sacrifica algo de exactitud bruta (0.659 frente a 0.688 de Qwen3-8B en tareas nunca vistas) a cambio de mejor calibración (0.113 frente a 0.293), capacidad de abstención fiable y una latencia 40 veces menor (38 ms frente a 1.530 ms). No se dispone de datos para comparar longitud de contexto ni licencias de todas las alternativas.
 
@@ -101,7 +101,7 @@ La comparación relevante no es de tamaño sino de propósito: Kodiak XL v2 comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cortex-agent-llc/kodiak-xl-v2-preview
+- Modelo en Hugging Face: https://huggingface.co/cortex-agent-llc/kodiak-xl-v2-preview
 - Repositorio de código, documentación y build log: https://github.com/grizzlypeaksoftware/kodiak
 - Modelo base Ettin-encoder-1B (Johns Hopkins, MIT): https://huggingface.co/jhu-clsp/ettin-encoder-1b
 

@@ -91,7 +91,7 @@ La comparativa se limita a los modelos citados en la documentacion de esta conve
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/maaaaat/parakeet-ultra-onnx)
+- [Modelo en Hugging Face](https://huggingface.co/maaaaat/parakeet-ultra-onnx)
 - [Modelo base: moondream/parakeet-ultra](https://huggingface.co/moondream/parakeet-ultra/tree/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b)
 - [Modelo origen: nvidia/parakeet-tdt-0.6b-v3](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/tree/541d1f99c6b0c3cd0b11a95167540bb8edefd82b)
 - [Dataset FLEURS](https://huggingface.co/datasets/google/fleurs/tree/70bb2e84b976b7e960aa89f1c648e09c59f894dd)

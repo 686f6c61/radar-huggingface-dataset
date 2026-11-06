@@ -78,7 +78,7 @@ No se dispone de comparativas publicadas con otros modelos de conversión kana-k
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tanabe1478/gyaim-lm-small-public-v1
+- Modelo en Hugging Face: https://huggingface.co/tanabe1478/gyaim-lm-small-public-v1
 - Modelo base: https://huggingface.co/ku-nlp/gpt2-small-japanese-char
 - Dataset de entrenamiento: https://huggingface.co/datasets/Miwa-Keita/zenz-v2.5-dataset
 - Aplicacion SwiftyGyaim: https://github.com/tanabe1478/SwiftyGyaim

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-full-pos es un modelo de clasificación de tokens (token classification) publicado en HuggingFace por el usuario Dalila-Ku. Se trata de un ajuste fino (fine-tuning) del modelo google-bert/bert-base-uncased, por lo que hereda la arquitectura transformer encoder de BERT-base con atención bidireccional completa y un cabezal de clasificación por token. El repositorio declara 108.904.721 parámetros reales en formato safetensors y un tamaño de 0.4 GB, coherente con un modelo denso de escala base (encoder de 12 capas).
+full-pos es un modelo de clasificación de tokens (token classification) publicado en Hugging Face por el usuario Dalila-Ku. Se trata de un ajuste fino (fine-tuning) del modelo google-bert/bert-base-uncased, por lo que hereda la arquitectura transformer encoder de BERT-base con atención bidireccional completa y un cabezal de clasificación por token. El repositorio declara 108.904.721 parámetros reales en formato safetensors y un tamaño de 0.4 GB, coherente con un modelo denso de escala base (encoder de 12 capas).
 
 La relevancia de esta ficha es limitada pero concreta: se trata de un modelo recién publicado (creado el 27 de septiembre de 2026), con cero descargas y cero "likes" en el momento de la consulta, sin model card completada y sin resultados declarados en el bloque model-index. El único dato de rendimiento disponible son las métricas de validación registradas automáticamente por el Trainer durante el entrenamiento: pérdida 0,0980, accuracy 0,9762 y F1 macro 0,9377 sobre el conjunto de evaluación.
 
@@ -81,7 +81,7 @@ No hay resultados de benchmarks estándar (MMLU, HumanEval, GSM8K ni equivalente
 - Huella de memoria del modelo: 108,9 M de parámetros implican aproximadamente 436 MB en FP32, 218 MB en FP16/BF16 y unos 109 MB en INT8. El repositorio ocupa 0,4 GB en disco, consistente con pesos en precisión completa.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para inferencia en FP16, incluidas GTX 1650, RTX 3050 y superiores. Para entrenamiento o ajuste fino ligero son razonables una RTX 3060/4070; para procesamiento masivo por lotes conviene una A100, H100 o L40S por throughput agregado.
 - Cabe en GPU de consumo: sí, con holgura en prácticamente cualquier GPU de consumo moderna e incluso en iGPU con suficiente memoria compartida. También es viable la inferencia en CPU, con latencias del orden de milisegundos por secuencia corta y decenas de milisegundos para secuencias de 512 tokens, aunque no hay cifras medidas publicadas.
-- Opciones de despliegue: transformers (pipeline `token-classification`), Text Generation Inference (TGI) y vLLM para servir el modelo como endpoint, ONNX Runtime o TorchScript para optimización, y el endpoint de HuggingFace Inference Endpoints (el repositorio está marcado como `endpoints_compatible`). No hay pesos GGUF publicados, por lo que llama.cpp y Ollama requerirían una conversión propia desde safetensors.
+- Opciones de despliegue: transformers (pipeline `token-classification`), Text Generation Inference (TGI) y vLLM para servir el modelo como endpoint, ONNX Runtime o TorchScript para optimización, y el endpoint de Hugging Face Inference Endpoints (el repositorio está marcado como `endpoints_compatible`). No hay pesos GGUF publicados, por lo que llama.cpp y Ollama requerirían una conversión propia desde safetensors.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas ni configuración de referencia declarada.
 
 ## Comparativa con modelos similares
@@ -90,9 +90,9 @@ No hay datos verificados de benchmarks que permitan una comparación cuantitativ
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| full-pos (Dalila-Ku) | 108,9 M | 512 tokens (por arquitectura base) | Apache 2.0 | Pesos safetensors en HuggingFace; 0 descargas |
+| full-pos (Dalila-Ku) | 108,9 M | 512 tokens (por arquitectura base) | Apache 2.0 | Pesos safetensors en Hugging Face; 0 descargas |
 | bert-base-uncased (modelo base) | ~110 M (referencia general, no verificada en la información proporcionada) | 512 tokens | Apache 2.0 | Ampliamente disponible |
-| Otros etiquetadores POS sobre BERT/RoBERTa publicados en HuggingFace | no disponible | no disponible | no disponible | no disponible |
+| Otros etiquetadores POS sobre BERT/RoBERTa publicados en Hugging Face | no disponible | no disponible | no disponible | no disponible |
 
 La comparación relevante, por tanto, es funcional: frente al modelo base sin ajustar, full-pos añade un cabezal de clasificación entrenado durante 4 épocas con un F1 macro de 0,9377, pero sin documentar el conjunto de evaluación ni la taxonomía de etiquetas. Cualquier alternativa debería evaluarse sobre el mismo corpus etiquetado antes de tomar una decisión de adopción.
 
@@ -112,7 +112,7 @@ La comparación relevante, por tanto, es funcional: frente al modelo base sin aj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dalila-Ku/full-pos
+- Modelo en Hugging Face: https://huggingface.co/Dalila-Ku/full-pos
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 
 Nota: la búsqueda web realizada devolvió únicamente resultados sobre el nombre propio "Dalila" (artículos enciclopédicos y de onomástica sin relación con el modelo). No se han encontrado papers, blogs, repositorios ni demos asociados a este modelo, y no existe documentación técnica adicional más allá del propio README del repositorio.

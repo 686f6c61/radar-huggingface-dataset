@@ -73,8 +73,8 @@ La información proporcionada no incluye especificaciones completas de modelos c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ModernBERT-base | 149 millones | 8.192 tokens | Apache 2.0 | HuggingFace (answerdotai/ModernBERT-base) |
-| ModernBERT-large | 395 millones | 8.192 tokens | Apache 2.0 | HuggingFace (answerdotai/ModernBERT-large y onnx-community/ModernBERT-large-ONNX) |
+| ModernBERT-base | 149 millones | 8.192 tokens | Apache 2.0 | Hugging Face (answerdotai/ModernBERT-base) |
+| ModernBERT-large | 395 millones | 8.192 tokens | Apache 2.0 | Hugging Face (answerdotai/ModernBERT-large y onnx-community/ModernBERT-large-ONNX) |
 
 En la tabla de benchmarks de la versión base se comparan otros modelos como BERT, RoBERTa, DeBERTaV3, NomicBERT y GTE-en-MLM, pero no se dispone de sus parámetros ni especificaciones en la información proporcionada.
 
@@ -90,7 +90,7 @@ En la tabla de benchmarks de la versión base se comparan otros modelos como BER
 
 ## Enlaces
 
-- Modelo ONNX en HuggingFace: https://huggingface.co/onnx-community/ModernBERT-large-ONNX
-- Modelo base en HuggingFace: https://huggingface.co/answerdotai/ModernBERT-large
+- Modelo ONNX en Hugging Face: https://huggingface.co/onnx-community/ModernBERT-large-ONNX
+- Modelo base en Hugging Face: https://huggingface.co/answerdotai/ModernBERT-large
 - Blog de lanzamiento de ModernBERT: https://huggingface.co/blog/modernbert
 - Pre-print en arXiv: https://arxiv.org/abs/2412.13663

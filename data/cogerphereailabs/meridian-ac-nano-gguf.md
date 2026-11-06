@@ -76,8 +76,8 @@ Meridian-AC-Nano se diferencia de su base Qwen3-0.6B por su especialización en 
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/COGERPHEREAILABS/meridian-ac-nano-GGUF)
-- [Modelo base (safetensors) en HuggingFace](https://huggingface.co/COGERPHEREAILABS/meridian-ac-nano)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/COGERPHEREAILABS/meridian-ac-nano-GGUF)
+- [Modelo base (safetensors) en Hugging Face](https://huggingface.co/COGERPHEREAILABS/meridian-ac-nano)
 - [Repositorio de investigación MERIDIAN 0.1 en GitHub](https://github.com/COGERPHEREAILABS/Meridian-SLM-Driven-Models-Research/tree/main/)
 - [README del repositorio de investigación](https://github.com/COGERPHEREAILABS/Meridian-SLM-Driven-Models-Research/blob/main/README.md)
 - [Modelo base original Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)

@@ -79,7 +79,7 @@ No se dispone de información comparativa con otros detectores de deepfakes en l
 
 ## Enlaces
 
-- [HuggingFace - adarshcod30/openforensics-ensemble](https://huggingface.co/adarshcod30/openforensics-ensemble)
+- [Hugging Face - adarshcod30/openforensics-ensemble](https://huggingface.co/adarshcod30/openforensics-ensemble)
 - [GitHub del autor - adarshcod30](https://github.com/adarshcod30)
 - [Repositorio OpenForensics (dataset)](https://github.com/ltnghia/openforensics)
 - [Paper original OpenForensics (ICCV 2021)](https://arxiv.org/abs/2107.14480)

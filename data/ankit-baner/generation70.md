@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Generation70, publicado por el usuario Ankit-baner en HuggingFace, es un repositorio experimental que contiene un esqueleto de código y un punto de control de inicialización para una arquitectura denominada "Mae" orientada a tareas de generación. No se trata de un modelo entrenado ni evaluado: la propia model card aclara que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se presenta como un modelo con resultados de benchmark.
+Generation70, publicado por el usuario Ankit-baner en Hugging Face, es un repositorio experimental que contiene un esqueleto de código y un punto de control de inicialización para una arquitectura denominada "Mae" orientada a tareas de generación. No se trata de un modelo entrenado ni evaluado: la propia model card aclara que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se presenta como un modelo con resultados de benchmark.
 
 El interés del repositorio es puramente arquitectónico. La configuración registra una escala "small", atención lineal, fusión mediante "co attention", activación GELU y normalización "scalenorm", junto con una receta de entrenamiento por defecto basada en el optimizador Adafactor con un schedule de tipo "step". El número de parámetros declarado en los metadatos de safetensors es de solo 16.576, lo que confirma que se trata de una inicialización mínima pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
@@ -78,5 +78,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ankit-baner/generation70
+- Hugging Face: https://huggingface.co/Ankit-baner/generation70
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos por la búsqueda no guardan relación con este repositorio.

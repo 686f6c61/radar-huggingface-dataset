@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EvoWeights es un proyecto de investigación publicado por el usuario independiente kyr0 en HuggingFace bajo el identificador `kyr0/evoweights-evolutionary-weight-space-fine-tuning`. No se trata de un modelo de lenguaje en el sentido convencional, sino de un artefacto experimental que combina un checkpoint empaquetado de pesos de cuatro bits (denominado "Kumo Small", atribuido a NVIDIA en la model card) con herramientas de parcheo de pesos, un entrenador evolutivo y un entorno de evaluación basado en el videojuego DOOM mediante ViZDoom. El repositorio ocupa 0,5 GB e incluye el checkpoint nativo de 15,26 MB, sondas de modelo, utilidades de parcheo, el experimento original en ViZDoom, runtimes de navegador y fixtures de verificación.
+EvoWeights es un proyecto de investigación publicado por el usuario independiente kyr0 en Hugging Face bajo el identificador `kyr0/evoweights-evolutionary-weight-space-fine-tuning`. No se trata de un modelo de lenguaje en el sentido convencional, sino de un artefacto experimental que combina un checkpoint empaquetado de pesos de cuatro bits (denominado "Kumo Small", atribuido a NVIDIA en la model card) con herramientas de parcheo de pesos, un entrenador evolutivo y un entorno de evaluación basado en el videojuego DOOM mediante ViZDoom. El repositorio ocupa 0,5 GB e incluye el checkpoint nativo de 15,26 MB, sondas de modelo, utilidades de parcheo, el experimento original en ViZDoom, runtimes de navegador y fixtures de verificación.
 
 El núcleo técnico del proyecto es el protocolo EDNO (Evolutionary Direct Neural Optimization, versión 7), un método de optimización evolutiva que opera directamente sobre el espacio de pesos del modelo en lugar de sobre prompts o adaptadores. Cada generación evalúa 48 direcciones de parámetros espejadas, compite contra el padre en semillas compartidas y solo promueve un hijo cuando las semillas frescas confirman la mejora con dos errores estándar de margen. El proyecto también documenta resultados adversos, como que las promociones basadas en seis semillas resultaron ser ruido estadístico y que ninguna modificación individual de código mejora de forma medible el compuesto distribuido.
 
@@ -92,7 +92,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kyr0/evoweights-evolutionary-weight-space-fine-tuning
+- Hugging Face: https://huggingface.co/kyr0/evoweights-evolutionary-weight-space-fine-tuning
 - Policy Lab en vivo: https://agm-doom-policy-lab.fluctura.chatgpt.site
 - Portal: docs/index.html
 - Presentación interactiva: docs/presentation.html

@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La unica 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VikramPal/Qwen3-Omni-30B-A3B-S2S-bf16
+- Modelo en Hugging Face: https://huggingface.co/VikramPal/Qwen3-Omni-30B-A3B-S2S-bf16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct
 - Adapter QLoRA: https://huggingface.co/VikramPal/Qwen3-Omni-30B-A3B-S2S-QLoRA
 - Version DynQuant 4-bit: https://huggingface.co/VikramPal/Qwen3-Omni-30B-A3B-S2S-DynQuant-4bit

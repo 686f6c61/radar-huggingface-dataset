@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JEV-9B-GGUF es la versión cuantizada en formato GGUF del modelo autotrust/JEV-9B, publicada por el usuario prithivMLmods. Se trata de un modelo de aproximadamente 8.953.803.264 parámetros (unos 8,95 mil millones) cuyo pipeline declarado en HuggingFace es text-classification, aunque las etiquetas del repositorio también incluyen text-generation, lo que apunta a un modelo con doble cabeza de salida (dual-head): una para generar texto y otra para emitir decisiones o puntuaciones.
+JEV-9B-GGUF es la versión cuantizada en formato GGUF del modelo autotrust/JEV-9B, publicada por el usuario prithivMLmods. Se trata de un modelo de aproximadamente 8.953.803.264 parámetros (unos 8,95 mil millones) cuyo pipeline declarado en Hugging Face es text-classification, aunque las etiquetas del repositorio también incluyen text-generation, lo que apunta a un modelo con doble cabeza de salida (dual-head): una para generar texto y otra para emitir decisiones o puntuaciones.
 
 El interés principal de esta publicación es de tipo práctico: el autor ha generado ocho variantes de cuantización (desde BF16 completa de 17,9 GB hasta Q3_K_M de 4,62 GB) que permiten ejecutar el modelo en llama.cpp, Ollama o servidores compatibles con GGUF sin necesidad de GPUs de gama alta. El repositorio ocupa 58,6 GB en total precisamente por acumular todas esas variantes.
 

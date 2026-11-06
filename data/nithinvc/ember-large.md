@@ -23,7 +23,7 @@ La variante Large que documenta esta ficha tiene 304,2 millones de parámetros, 
 | Tamano de parche | 16x16 píxeles |
 | Tipo de salida | embedding de imagen + features espaciales por parche |
 | Libreria / integracion | EMber (con model_hub_mixin y pytorch_model_hub_mixin) |
-| Pipeline en HuggingFace | image-feature-extraction |
+| Pipeline en Hugging Face | image-feature-extraction |
 
 ## Arquitectura y entrenamiento
 
@@ -70,7 +70,7 @@ Las cifras deberían consultarse en el preprint (arXiv 2610.22523) y en el repos
 - **VRAM estimada en fp16/bf16**: ~0,6-0,7 GB de pesos; 1,5-2,5 GB con activaciones para lotes moderados.
 - **GPU recomendadas**: cualquier GPU con 8 GB o más sirve para inferencia; para procesar lotes grandes de partículas a throughput alto, A100 40/80 GB, H100 o L40S. En el extremo consumer, RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080 y RTX 4090 son suficientes.
 - **¿Cabe en GPU consumer?** Sí, con holgura: el modelo es de 304 M de parámetros y los pesos en safetensors ocupan 1,2 GB. Incluso una GPU de 4-6 GB puede ejecutar inferencia en fp16 con lotes pequeños.
-- **Opciones de despliegue**: la model card solo declara la librería EMber con `model_hub_mixin` / `pytorch_model_hub_mixin`, es decir, carga directa desde PyTorch y HuggingFace Hub. No se documentan soportes para vLLM, llama.cpp, Ollama o TGI (son herramientas orientadas a modelos generativos de texto, no aplicables aquí). Para servir el modelo en producción habría que envolverlo en un servicio propio (FastAPI, TorchServe, Triton) o exportarlo a ONNX/TorchScript, algo que la información disponible no documenta.
+- **Opciones de despliegue**: la model card solo declara la librería EMber con `model_hub_mixin` / `pytorch_model_hub_mixin`, es decir, carga directa desde PyTorch y Hugging Face Hub. No se documentan soportes para vLLM, llama.cpp, Ollama o TGI (son herramientas orientadas a modelos generativos de texto, no aplicables aquí). Para servir el modelo en producción habría que envolverlo en un servicio propio (FastAPI, TorchServe, Triton) o exportarlo a ONNX/TorchScript, algo que la información disponible no documenta.
 - **Latencia y throughput**: no disponibles. No hay cifras publicadas de latencia por imagen ni de imágenes por segundo en ninguna GPU.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ La comparación relevante para un laboratorio de cryo-EM no es frente a DINOv2, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nithinvc/EMber-large
+- Hugging Face: https://huggingface.co/nithinvc/EMber-large
 - Preprint (arXiv): https://arxiv.org/abs/2610.22523
 - Código: https://github.com/nithinvc/EMber
 - Web del primer autor: https://nithinvc.github.io/

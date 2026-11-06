@@ -90,7 +90,7 @@ No se dispone en la información proporcionada de datos de benchmarks ni especif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/act.scanobjectnn-hardest.runpei-dong
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/act.scanobjectnn-hardest.runpei-dong
 - Modelo base preentrenado: https://huggingface.co/torch-pointcloud/act.pretrain.runpei-dong
 - Paper ACT (arXiv): https://arxiv.org/abs/2212.08320
 - Repositorio original ACT: https://github.com/RunpeiDong/ACT

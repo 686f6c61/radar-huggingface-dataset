@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-MLX-oQ5e es una version cuantizada del modelo LFM3 de 1.700 millones de parametros, publicada por el usuario jk797 en HuggingFace. Se trata de una conversion al formato MLX (el framework de Apple para ejecucion de modelos en silicio de la serie M) mediante la herramienta oQ de oMLX en su version v0.7.4.dev1, que aplica cuantizacion de precision mixta. El checkpoint resultante ocupa 1,3 GB en el repositorio y emplea una media efectiva de 5,701 bits por peso.
+LFM3-1.7B-MLX-oQ5e es una version cuantizada del modelo LFM3 de 1.700 millones de parametros, publicada por el usuario jk797 en Hugging Face. Se trata de una conversion al formato MLX (el framework de Apple para ejecucion de modelos en silicio de la serie M) mediante la herramienta oQ de oMLX en su version v0.7.4.dev1, que aplica cuantizacion de precision mixta. El checkpoint resultante ocupa 1,3 GB en el repositorio y emplea una media efectiva de 5,701 bits por peso.
 
 El modelo base pertenece a la familia LFM3 (probablemente Liquid Foundation Model, aunque la model card no lo confirma), con 1.728.801.536 parametros totales confirmados a partir de los tensores safetensors. La publicacion no incluye informacion sobre el autor original del modelo, la arquitectura subyacente, los datos de entrenamiento ni los idiomas soportados. El repositorio tiene cero descargas y cero likes en el momento de la consulta.
 
@@ -77,5 +77,5 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jk797/LFM3-1.7B-MLX-oQ5e
+- Hugging Face: https://huggingface.co/jk797/LFM3-1.7B-MLX-oQ5e
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx

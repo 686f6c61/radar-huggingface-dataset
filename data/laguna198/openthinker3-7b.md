@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenThinker3-7B es un modelo de lenguaje de 7.000 millones de parámetros especializado en razonamiento, desarrollado por el equipo de Open Thoughts. Se construye mediante ajuste fino supervisado (SFT) completo sobre Qwen/Qwen2.5-7B-Instruct, utilizando el dataset abierto OpenThoughts3-1.2M. La ficha aquí analizada corresponde a la réplica publicada por el usuario Laguna198 en HuggingFace; el modelo original está alojado en la organización open-thoughts.
+OpenThinker3-7B es un modelo de lenguaje de 7.000 millones de parámetros especializado en razonamiento, desarrollado por el equipo de Open Thoughts. Se construye mediante ajuste fino supervisado (SFT) completo sobre Qwen/Qwen2.5-7B-Instruct, utilizando el dataset abierto OpenThoughts3-1.2M. La ficha aquí analizada corresponde a la réplica publicada por el usuario Laguna198 en Hugging Face; el modelo original está alojado en la organización open-thoughts.
 
 El modelo resuelve tareas de razonamiento matemático, generación y comprensión de código, y preguntas de ciencia a nivel de competición. Su relevancia radica en que alcanza resultados comparables o superiores a destilaciones de DeepSeek-R1 y a modelos propietarios de tamaño similar entrenados con refuerzo, pese a haberse entrenado únicamente con SFT y sin RL. Todo el pipeline de datos, el dataset y las trazas de razonamiento son abiertos, lo que permite reproducir y auditar el entrenamiento.
 
@@ -75,7 +75,7 @@ El campo `model-index` de la model card está vacío; la tabla anterior procede 
 - Inferencia en int4 (GPTQ, AWQ o GGUF Q4_K_M): en torno a 4,5-5,5 GB, ejecutable en GPUs de 8 GB.
 - GPU recomendadas para producción: A100 40/80 GB o H100 para lotes grandes y contextos largos; L40S o RTX 6000 Ada como alternativas de coste medio.
 - GPUs de consumo: cabe en RTX 4090 y RTX 3090 (24 GB) en BF16, con margen para contextos moderados; en RTX 4080/4070 Ti (16 GB) es recomendable int8; en GPUs de 8 GB, int4.
-- Opciones de despliegue: transformers para uso puntual; vLLM o SGLang para servicio con alta concurrencia; TGI para integración con el ecosistema HuggingFace; llama.cpp u Ollama para ejecución local en CPU/GPU mixta con GGUF.
+- Opciones de despliegue: transformers para uso puntual; vLLM o SGLang para servicio con alta concurrencia; TGI para integración con el ecosistema Hugging Face; llama.cpp u Ollama para ejecución local en CPU/GPU mixta con GGUF.
 - Latencia y throughput estimados: no disponibles. El autor no publica mediciones de latencia, tokens por segundo ni rendimiento bajo carga concurrente.
 - Nota de entrenamiento: según la model card, el ajuste fino requirió 512 dispositivos A100 durante 48 horas, un coste muy alejado de lo asumible para reentrenamiento por particulares.
 
@@ -108,8 +108,8 @@ El dato más llamativo de la comparativa es que un modelo de 7B entrenado solo c
 
 ## Enlaces
 
-- HuggingFace (replica analizada): https://huggingface.co/Laguna198/OpenThinker3-7B
-- HuggingFace (modelo original): https://huggingface.co/open-thoughts/OpenThinker3-7B
+- Hugging Face (replica analizada): https://huggingface.co/Laguna198/OpenThinker3-7B
+- Hugging Face (modelo original): https://huggingface.co/open-thoughts/OpenThinker3-7B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Dataset OpenThoughts3-1.2M: https://huggingface.co/datasets/open-thoughts/OpenThoughts3-1.2M
 - Paper OpenThoughts: https://arxiv.org/abs/2506.04178

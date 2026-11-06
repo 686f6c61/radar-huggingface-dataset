@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`amritabiolab/mobilevit-retrieval-weights` es un repositorio de HuggingFace publicado por el usuario `amritabiolab` que contiene una implementación propia y minimalista de una arquitectura MobileViT orientada a tareas de recuperación (retrieval) multimodal, con variante declarada como `tiny`. El propio autor indica de forma explícita que el checkpoint incluido (`model.safetensors`) es un checkpoint de inicialización válido para pruebas de humo, y no un modelo entrenado ni un release con resultados de benchmarks.
+`amritabiolab/mobilevit-retrieval-weights` es un repositorio de Hugging Face publicado por el usuario `amritabiolab` que contiene una implementación propia y minimalista de una arquitectura MobileViT orientada a tareas de recuperación (retrieval) multimodal, con variante declarada como `tiny`. El propio autor indica de forma explícita que el checkpoint incluido (`model.safetensors`) es un checkpoint de inicialización válido para pruebas de humo, y no un modelo entrenado ni un release con resultados de benchmarks.
 
 El dato real de pesos, leído de los metadatos de safetensors, es de 24.832 parámetros totales, lo que sitúa al artefacto en un orden de magnitud puramente experimental y de juguete. No hay información sobre datos de entrenamiento, número de tokens, composición del dataset, idiomas soportados ni proceso de alineación (RLHF/DPO), y el repositorio no reclama ninguna métrica de rendimiento.
 
@@ -66,7 +66,7 @@ No se dispone de datos verificados de benchmarks para establecer una comparació
 
 | Modelo | Categoría | Parámetros | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mobilevit-retrieval-weights (tiny) | Recuperación multimodal | 24.832 (dato real de safetensors) | Checkpoint de inicialización, sin entrenar | BSD-3-Clause | Público en HuggingFace, 0 descargas |
+| mobilevit-retrieval-weights (tiny) | Recuperación multimodal | 24.832 (dato real de safetensors) | Checkpoint de inicialización, sin entrenar | BSD-3-Clause | Público en Hugging Face, 0 descargas |
 | CLIP (OpenAI) | Recuperación multimodal texto-imagen | No disponible en esta ficha | Modelo entrenado y publicado | No disponible en esta ficha | Público |
 | SigLIP (Google) | Recuperación multimodal texto-imagen | No disponible en esta ficha | Modelo entrenado y publicado | No disponible en esta ficha | Público |
 | MobileCLIP (Apple) | Recuperación multimodal eficiente | No disponible en esta ficha | Modelo entrenado y publicado | No disponible en esta ficha | Público |
@@ -87,5 +87,5 @@ La comparación directa no es significativa en términos de calidad: los tres al
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amritabiolab/mobilevit-retrieval-weights
+- Hugging Face: https://huggingface.co/amritabiolab/mobilevit-retrieval-weights
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados devueltos correspondían a contenido no relacionado con el modelo.

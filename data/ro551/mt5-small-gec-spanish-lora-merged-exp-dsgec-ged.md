@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mt5-small-GEC-spanish-LORA-merged-exp-dsGEC-GED` es un ajuste fino de `google/mt5-small` orientado a correccion gramatical del espanol (GEC, *Grammatical Error Correction*). Lo publica el usuario Ro551 en HuggingFace y se distribuye como un adaptador LoRA fusionado con los pesos base, empaquetado en formato PEFT/safetensors. El nombre sugiere entrenamiento sobre el dataset dsGEC (variante del corpus GED para espanol), aunque la model card no lo confirma de forma explicita.
+`mt5-small-GEC-spanish-LORA-merged-exp-dsGEC-GED` es un ajuste fino de `google/mt5-small` orientado a correccion gramatical del espanol (GEC, *Grammatical Error Correction*). Lo publica el usuario Ro551 en Hugging Face y se distribuye como un adaptador LoRA fusionado con los pesos base, empaquetado en formato PEFT/safetensors. El nombre sugiere entrenamiento sobre el dataset dsGEC (variante del corpus GED para espanol), aunque la model card no lo confirma de forma explicita.
 
 El modelo parte de la arquitectura mT5-small, un transformer encoder-decoder multilingue de aproximadamente 300 millones de parametros, disenado originalmente para tareas de secuencia a secuencia. Aqui se reutiliza como corrector de texto: recibe una frase con errores y devuelve una version corregida. Es relevante como ejemplo de adaptacion ligera (LoRA) de un modelo pequeno a una tarea linguistica concreta en espanol, aunque sus resultados publicados son muy limitados.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, B
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mt5-small-GEC-spanish-LORA-merged-exp-dsGEC-GED | ~300 M (no confirmado) | no disponible | GEC espanol via LoRA fusionado | apache-2.0 | HuggingFace |
-| google/mt5-small | ~300 M | 512 tokens (estandar mT5) | Modelo base multilingue | apache-2.0 | HuggingFace |
+| mt5-small-GEC-spanish-LORA-merged-exp-dsGEC-GED | ~300 M (no confirmado) | no disponible | GEC espanol via LoRA fusionado | apache-2.0 | Hugging Face |
+| google/mt5-small | ~300 M | 512 tokens (estandar mT5) | Modelo base multilingue | apache-2.0 | Hugging Face |
 | Modelos GEC espanoles especializados | no disponible | no disponible | Correccion gramatical | variable | variable |
 
 No se dispone de datos de rendimiento comparables para establecer una comparativa cuantitativa fiable.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparables para establecer una comparativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ro551/mt5-small-GEC-spanish-LORA-merged-exp-dsGEC-GED
+- Hugging Face: https://huggingface.co/Ro551/mt5-small-GEC-spanish-LORA-merged-exp-dsGEC-GED
 - Modelo base: https://huggingface.co/google/mt5-small
 - Documentacion PEFT: https://huggingface.co/docs/peft
 - Documentacion Transformers: https://huggingface.co/docs/transformers

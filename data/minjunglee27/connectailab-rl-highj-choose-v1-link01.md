@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-highj-choose-v1-link01 | Base 0,8B + LoRA | No disponible | Selección de objeto (4 clases) en LINK-01 | Apache 2.0 | HuggingFace |
-| connectailab-rl-highj-goto-v1-link01 | Base no disponible | No disponible | Navegación con evitación de obstáculos en LINK-01 | No disponible | HuggingFace |
-| Qwen/Qwen3.5-0.8B | 0,8B | No disponible | Lenguaje general | No disponible | HuggingFace |
+| connectailab-rl-highj-choose-v1-link01 | Base 0,8B + LoRA | No disponible | Selección de objeto (4 clases) en LINK-01 | Apache 2.0 | Hugging Face |
+| connectailab-rl-highj-goto-v1-link01 | Base no disponible | No disponible | Navegación con evitación de obstáculos en LINK-01 | No disponible | Hugging Face |
+| Qwen/Qwen3.5-0.8B | 0,8B | No disponible | Lenguaje general | No disponible | Hugging Face |
 
 La comparación con modelos de propósito general no es significativa: este adaptador resuelve una tarea cerrada de cuatro acciones y no compite en benchmarks de lenguaje. Frente al modelo goto del mismo autor, la diferencia es la tarea (selección frente a navegación), no el rendimiento medible en una escala común.
 
@@ -90,7 +90,7 @@ La comparación con modelos de propósito general no es significativa: este adap
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/minjunglee27/connectailab-rl-highj-choose-v1-link01
+- Hugging Face: https://huggingface.co/minjunglee27/connectailab-rl-highj-choose-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio GitHub CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

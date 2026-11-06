@@ -102,7 +102,7 @@ La comparacion con el modelo base no es posible en terminos de rendimiento porqu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sigmanih/Qwen-Qwen3-0.6B-GGUF-Q6_K
+- Repositorio Hugging Face: https://huggingface.co/sigmanih/Qwen-Qwen3-0.6B-GGUF-Q6_K
 - Repositorio del modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio GGUF oficial de Qwen3: https://huggingface.co/Qwen/Qwen3-0.6B-GGUF
 - GitHub de Sigma Studio: https://github.com/Sigmanih/SigmaStudio

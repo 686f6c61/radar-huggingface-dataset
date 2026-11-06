@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-Web-ONNX (esta build) | 1,7 B | 16.384 | ONNX q4f16 | LFM Open License v1.0 | HuggingFace (comunidad) |
-| onnx-community/LFM3-1.7B-ONNX | 1,7 B | 262.144 | ONNX q4f16 | LFM Open License v1.0 | HuggingFace (oficial ONNX) |
-| LiquidAI/LFM3-1.7B | 1,7 B | no disponible | safetensors | LFM Open License v1.0 | HuggingFace (oficial) |
+| LFM3-1.7B-Web-ONNX (esta build) | 1,7 B | 16.384 | ONNX q4f16 | LFM Open License v1.0 | Hugging Face (comunidad) |
+| onnx-community/LFM3-1.7B-ONNX | 1,7 B | 262.144 | ONNX q4f16 | LFM Open License v1.0 | Hugging Face (oficial ONNX) |
+| LiquidAI/LFM3-1.7B | 1,7 B | no disponible | safetensors | LFM Open License v1.0 | Hugging Face (oficial) |
 
 La comparativa con modelos de otros fabricantes en el mismo rango de tamano y orientados a navegador no esta disponible en la informacion proporcionada. La diferencia principal frente a la version oficial ONNX es el recorte de contexto (16.384 frente a 262.144), el menor tamano de pesos y la mejora en tool calling y acuerdo top-1, a costa de una perplejidad ligeramente superior en WikiText-2.
 
@@ -95,7 +95,7 @@ La comparativa con modelos de otros fabricantes en el mismo rango de tamano y or
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/daveycodez/LFM3-1.7B-Web-ONNX
+- Hugging Face: https://huggingface.co/daveycodez/LFM3-1.7B-Web-ONNX
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Build ONNX oficial: https://huggingface.co/onnx-community/LFM3-1.7B-ONNX
 - Liquid AI: https://www.liquid.ai/

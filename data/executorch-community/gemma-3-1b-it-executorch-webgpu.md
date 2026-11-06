@@ -96,7 +96,7 @@ La comparación relevante es contra el modelo base: misma arquitectura y mismos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/executorch-community/Gemma-3-1B-IT-ExecuTorch-WebGPU
+- Modelo en Hugging Face: https://huggingface.co/executorch-community/Gemma-3-1B-IT-ExecuTorch-WebGPU
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Runtime de ExecuTorch WebGPU: https://huggingface.co/executorch-community/ExecuTorch-WebGPU-Runtime
 - Repositorio ExecuTorch: https://github.com/pytorch/executorch

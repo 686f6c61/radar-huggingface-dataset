@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativos para el merge. La comparativa
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/dennis19319/Qwen2.5-14B-Merged-799train)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/dennis19319/Qwen2.5-14B-Merged-799train)
 - [Modelo base Qwen2.5-14B-Instruct](https://huggingface.co/Qwen/Qwen2.5-14B-Instruct)
 - [Blog oficial de Qwen2.5](https://qwenlm.github.io/blog/qwen2.5/)
 - [Repositorio GitHub de Qwen2.5](https://github.com/QwenLM/Qwen2.5)

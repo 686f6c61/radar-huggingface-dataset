@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`s0ngbird/bertimbau-legal-citations-ner` es un modelo de clasificación de tokens (token classification / NER) publicado en HuggingFace por el usuario `s0ngbird`. Se trata de un ajuste fino (fine-tuning) del modelo `neuralmind/bert-base-portuguese-cased`, conocido como BERTimbau base, sobre lo que el propio identificador del repositorio sugiere que es un corpus de citas legales en portugués. El modelo está pensado, por tanto, para detectar y etiquetar menciones de referencias jurídicas dentro de documentos legales en portugués (por ejemplo, artículos, leyes, jurisprudencia o resoluciones).
+`s0ngbird/bertimbau-legal-citations-ner` es un modelo de clasificación de tokens (token classification / NER) publicado en Hugging Face por el usuario `s0ngbird`. Se trata de un ajuste fino (fine-tuning) del modelo `neuralmind/bert-base-portuguese-cased`, conocido como BERTimbau base, sobre lo que el propio identificador del repositorio sugiere que es un corpus de citas legales en portugués. El modelo está pensado, por tanto, para detectar y etiquetar menciones de referencias jurídicas dentro de documentos legales en portugués (por ejemplo, artículos, leyes, jurisprudencia o resoluciones).
 
 Técnicamente es un transformer encoder de tipo BERT en su variante base, con 108.336.389 parámetros totales (coincidentes con la arquitectura BERT-base: 12 capas, 768 dimensiones ocultas y 12 cabezas de atención) y un límite de entrada de 512 tokens, que es el contexto máximo nativo de la familia BERT. El repositorio ocupa 0,4 GB y publica los pesos en formato safetensors, con licencia MIT y soporte exclusivo del idioma portugués.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| s0ngbird/bertimbau-legal-citations-ner | 108.336.389 | 512 tokens | Token classification (NER de citas legales) | MIT | HuggingFace, 0 descargas |
-| neuralmind/bert-base-portuguese-cased | ~110 M (BERT-base) | 512 tokens | MLM/NSP (modelo base) | No disponible en la informacion proporcionada | HuggingFace, modelo de referencia |
-| rufimelo/Legal-BERTimbau-base | ~110 M (BERT-base) | 512 tokens | Modelo de lenguaje adaptado al dominio legal | No disponible en la informacion proporcionada | HuggingFace |
-| pedronettotrue/bertimbau-legal-tjsc | ~110 M (BERT-base) | 512 tokens | Clasificación de texto legal en 5 áreas del derecho (proyecto LegalBench-BR) | No disponible en la informacion proporcionada | HuggingFace |
+| s0ngbird/bertimbau-legal-citations-ner | 108.336.389 | 512 tokens | Token classification (NER de citas legales) | MIT | Hugging Face, 0 descargas |
+| neuralmind/bert-base-portuguese-cased | ~110 M (BERT-base) | 512 tokens | MLM/NSP (modelo base) | No disponible en la informacion proporcionada | Hugging Face, modelo de referencia |
+| rufimelo/Legal-BERTimbau-base | ~110 M (BERT-base) | 512 tokens | Modelo de lenguaje adaptado al dominio legal | No disponible en la informacion proporcionada | Hugging Face |
+| pedronettotrue/bertimbau-legal-tjsc | ~110 M (BERT-base) | 512 tokens | Clasificación de texto legal en 5 áreas del derecho (proyecto LegalBench-BR) | No disponible en la informacion proporcionada | Hugging Face |
 
 Comparativa de rendimiento: no disponible. No se han publicado métricas que permitan situar este modelo frente a las alternativas.
 
@@ -88,7 +88,7 @@ Comparativa de rendimiento: no disponible. No se han publicado métricas que per
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/s0ngbird/bertimbau-legal-citations-ner
+- Repositorio Hugging Face: https://huggingface.co/s0ngbird/bertimbau-legal-citations-ner
 - Modelo base: https://huggingface.co/neuralmind/bert-base-portuguese-cased
 - pedronettotrue/bertimbau-legal-tjsc: https://huggingface.co/pedronettotrue/bertimbau-legal-tjsc
 - rufimelo/Legal-BERTimbau-base: https://huggingface.co/rufimelo/Legal-BERTimbau-base

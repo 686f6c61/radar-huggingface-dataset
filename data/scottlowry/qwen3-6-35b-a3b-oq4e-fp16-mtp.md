@@ -69,8 +69,8 @@ El repositorio no incluye tablas de MMLU, HumanEval, GSM8K ni ninguna otra evalu
 
 | Modelo | Parametros totales | Cuantizacion | Tamano de pesos | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| scottlowry/Qwen3.6-35B-A3B-oQ4e-fp16-mtp | 35,95 B | 4 bits oQ, group size 64, fp16 en parte | 22,5 GB | MLX safetensors | no disponible | HuggingFace |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | 35,95 B | sin cuantizar (supuesto; no confirmado en la informacion) | ~72 GB (estimado) | no disponible | no disponible | HuggingFace |
+| scottlowry/Qwen3.6-35B-A3B-oQ4e-fp16-mtp | 35,95 B | 4 bits oQ, group size 64, fp16 en parte | 22,5 GB | MLX safetensors | no disponible | Hugging Face |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | 35,95 B | sin cuantizar (supuesto; no confirmado en la informacion) | ~72 GB (estimado) | no disponible | no disponible | Hugging Face |
 | Otras cuantizaciones del mismo modelo base (GGUF, AWQ, GPTQ) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre conversiones alternativas del mismo modelo base ni de modelos comparables de otros autores, por lo que no se puede establecer una comparacion de rendimiento, contexto o licencia mas alla de la diferencia de tamano frente a los pesos sin cuantizar.
@@ -89,7 +89,7 @@ No se dispone de informacion sobre conversiones alternativas del mismo modelo ba
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/scottlowry/Qwen3.6-35B-A3B-oQ4e-fp16-mtp
+- Repositorio en Hugging Face: https://huggingface.co/scottlowry/Qwen3.6-35B-A3B-oQ4e-fp16-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - No se han encontrado otros enlaces relevantes en la busqueda web; los resultados obtenidos no guardan relacion con el modelo.

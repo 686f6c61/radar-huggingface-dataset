@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jy395/Qwen3-8B-gptq-w4a16-c1 | 2.167.453.176 (pesos empaquetados a 4 bits; base ~8B) | no disponible | GPTQ W4A16, group 128 | apache-2.0 | HuggingFace (20 descargas) |
-| Qwen/Qwen3-8B | ~8B | no disponible en esta ficha | FP16/BF16 (original) | apache-2.0 | HuggingFace (oficial) |
-| Otras variantes del mismo estudio (calibradas con corpus financieros) | mismas que el base | no disponible | GPTQ W4A16 | apache-2.0 | Coleccion ICAIF 2026 en HuggingFace |
+| jy395/Qwen3-8B-gptq-w4a16-c1 | 2.167.453.176 (pesos empaquetados a 4 bits; base ~8B) | no disponible | GPTQ W4A16, group 128 | apache-2.0 | Hugging Face (20 descargas) |
+| Qwen/Qwen3-8B | ~8B | no disponible en esta ficha | FP16/BF16 (original) | apache-2.0 | Hugging Face (oficial) |
+| Otras variantes del mismo estudio (calibradas con corpus financieros) | mismas que el base | no disponible | GPTQ W4A16 | apache-2.0 | Coleccion ICAIF 2026 en Hugging Face |
 
 La comparacion directa mas relevante es con el modelo base (para medir la perdida por cuantizacion) y con las restantes configuraciones del articulo (para evaluar el efecto del corpus de calibracion). No se dispone de datos de rendimiento para establecer comparaciones cuantitativas con otros modelos de 8B cuantizados.
 
@@ -84,7 +84,7 @@ La comparacion directa mas relevante es con el modelo base (para medir la perdid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jy395/Qwen3-8B-gptq-w4a16-c1
+- Modelo en Hugging Face: https://huggingface.co/jy395/Qwen3-8B-gptq-w4a16-c1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio del articulo: https://github.com/JunyiYe/finance-ptc-calibration
 - Script de cuantizacion: https://github.com/JunyiYe/finance-ptc-calibration/blob/main/scripts/quantization/gptq_w4a16.py

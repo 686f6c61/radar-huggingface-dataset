@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RPBizkit-v11-12B-Thinking-GGUF es la version cuantizada en formato GGUF de un modelo de lenguaje de 12.247.782.400 parametros (aproximadamente 12,2 mil millones) publicado por el usuario RicardoEstep en HuggingFace. Se trata de un merge de modelos construido con mergekit, segun las etiquetas declaradas por el autor, y convertido a GGUF mediante llama.cpp en un equipo local. El modelo base es RicardoEstep/RPBizkit-v11-12B-Thinking, del que esta ficha es unicamente una reempaquetado en formato de cuantizacion ligera para inferencia.
+RPBizkit-v11-12B-Thinking-GGUF es la version cuantizada en formato GGUF de un modelo de lenguaje de 12.247.782.400 parametros (aproximadamente 12,2 mil millones) publicado por el usuario RicardoEstep en Hugging Face. Se trata de un merge de modelos construido con mergekit, segun las etiquetas declaradas por el autor, y convertido a GGUF mediante llama.cpp en un equipo local. El modelo base es RicardoEstep/RPBizkit-v11-12B-Thinking, del que esta ficha es unicamente una reempaquetado en formato de cuantizacion ligera para inferencia.
 
 La relevancia de esta publicacion es limitada: apenas acumula 17 descargas y 1 "like" desde su creacion el 6 de octubre de 2026, no declara licencia, no especifica idiomas soportados ni longitud de contexto, y su model card se limita a una frase indicando el proceso de conversion y el uso previsto con llama.cpp o kobold.cpp. La etiqueta "not-for-all-audiences" sugiere que el autor anticipa contenido no apto para todos los publicos, sin mas detalles.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento del modelo, por lo que no es posible estab
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RPBizkit-v11-12B-Thinking-GGUF | 12,2B | no disponible | no disponible | GGUF en HuggingFace |
+| RPBizkit-v11-12B-Thinking-GGUF | 12,2B | no disponible | no disponible | GGUF en Hugging Face |
 | Modelos comparables de ~12-13B | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la informacion proporcionada modelos alternativos concretos con los que comparar de forma rigurosa.
@@ -94,7 +94,7 @@ No se han identificado en la informacion proporcionada modelos alternativos conc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RicardoEstep/RPBizkit-v11-12B-Thinking-GGUF
+- Modelo en Hugging Face: https://huggingface.co/RicardoEstep/RPBizkit-v11-12B-Thinking-GGUF
 - Modelo base: https://huggingface.co/RicardoEstep/RPBizkit-v11-12B-Thinking
 - Paper o blog tecnico: no disponible
 - Repositorio de codigo: no disponible

@@ -79,7 +79,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- [Modelo en HuggingFace: Reza2kn/negara-g2p-clean-v7.1](https://huggingface.co/Reza2kn/negara-g2p-clean-v7.1)
+- [Modelo en Hugging Face: Reza2kn/negara-g2p-clean-v7.1](https://huggingface.co/Reza2kn/negara-g2p-clean-v7.1)
 - [Modelo base: Reza2kn/negara-g2p-clean-v7](https://huggingface.co/Reza2kn/negara-g2p-clean-v7)
 - [Version anterior: Reza2kn/negara-g2p-clean-v2](https://huggingface.co/Reza2kn/negara-g2p-clean-v2)
 - [Perfil de GitHub del autor: Reza2kn](https://github.com/Reza2kn)

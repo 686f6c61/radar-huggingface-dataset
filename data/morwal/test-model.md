@@ -2,9 +2,9 @@
 
 ## Resumen
 
-morwal/test-model es un repositorio alojado en HuggingFace cuyo nombre y contenido apuntan a un modelo de prueba (test model) publicado por el usuario morwal. La model card asociada no contiene mas informacion que la declaracion de licencia Apache 2.0: no incluye descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni resultados de evaluacion. El repositorio registra cero descargas y cero likes, y fue creado y actualizado en la misma fecha (1 de octubre de 2026), lo que refuerza la hipotesis de que se trata de un artefacto de prueba o de un placeholder y no de un modelo destinado a uso real.
+morwal/test-model es un repositorio alojado en Hugging Face cuyo nombre y contenido apuntan a un modelo de prueba (test model) publicado por el usuario morwal. La model card asociada no contiene mas informacion que la declaracion de licencia Apache 2.0: no incluye descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni resultados de evaluacion. El repositorio registra cero descargas y cero likes, y fue creado y actualizado en la misma fecha (1 de octubre de 2026), lo que refuerza la hipotesis de que se trata de un artefacto de prueba o de un placeholder y no de un modelo destinado a uso real.
 
-No es posible determinar que problema resuelve, que arquitectura emplea ni cual es su longitud de contexto, porque el autor no ha publicado ninguno de esos datos. Tampoco la etiqueta de pipeline aparece informada en HuggingFace, de modo que ni siquiera se puede confirmar la tarea principal (text-generation, text-classification, etc.).
+No es posible determinar que problema resuelve, que arquitectura emplea ni cual es su longitud de contexto, porque el autor no ha publicado ninguno de esos datos. Tampoco la etiqueta de pipeline aparece informada en Hugging Face, de modo que ni siquiera se puede confirmar la tarea principal (text-generation, text-classification, etc.).
 
 Por todo ello, esta ficha se limita a documentar la ausencia de informacion verificable. Cualquier cifra de parametros, contexto o rendimiento que se atribuyese a este modelo seria especulativa y no debe utilizarse en procesos de evaluacion tecnica o de seleccion de modelos para produccion.
 
@@ -68,7 +68,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| morwal/test-model | no disponible | no disponible | apache-2.0 | no disponible | repositorio en HuggingFace sin contenido tecnico publicado |
+| morwal/test-model | no disponible | no disponible | apache-2.0 | no disponible | repositorio en Hugging Face sin contenido tecnico publicado |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/morwal/test-model
+- Hugging Face: https://huggingface.co/morwal/test-model
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion del autor: no disponible

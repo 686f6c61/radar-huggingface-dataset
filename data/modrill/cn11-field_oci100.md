@@ -89,6 +89,6 @@ No se dispone de comparación con otros adaptadores LoRA de código de la misma 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/modrill/CN11-FIELD_OCI100)
+- [Modelo en Hugging Face](https://huggingface.co/modrill/CN11-FIELD_OCI100)
 - [Modelo base Qwen/Qwen3-4B-Base](https://huggingface.co/Qwen/Qwen3-4B-Base)
 - [Perfil del autor modrill](https://huggingface.co/modrill)

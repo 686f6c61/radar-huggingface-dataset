@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ward-wireless-14b es un ajuste fino (fine-tune) publicado por el usuario Dennis1315 en HuggingFace, derivado del modelo base Qwen/Qwen3.5-9B. Se trata de un modelo subido con la libreria transformers y pesos en safetensors, entrenado con la herramienta Unsloth y la libreria TRL de HuggingFace, segun indica la propia model card del autor. La licencia declarada es Apache 2.0 y el unico idioma declarado es el ingles.
+Ward-wireless-14b es un ajuste fino (fine-tune) publicado por el usuario Dennis1315 en Hugging Face, derivado del modelo base Qwen/Qwen3.5-9B. Se trata de un modelo subido con la libreria transformers y pesos en safetensors, entrenado con la herramienta Unsloth y la libreria TRL de Hugging Face, segun indica la propia model card del autor. La licencia declarada es Apache 2.0 y el unico idioma declarado es el ingles.
 
 El modelo aparece etiquetado con el pipeline image-text-to-text, lo que sugiere capacidad de procesar entradas de imagen y texto, aunque la model card no aporta ningun detalle adicional sobre esta capacidad ni sobre el dataset de entrenamiento empleado. El repositorio ocupa 10,6 GB y, en el momento de la consulta, acumula 0 descargas y 0 likes, por lo que se trata de una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -23,7 +23,7 @@ Existe una discrepancia relevante entre el nombre del repositorio ("14b") y el m
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna del modelo. La unica informacion disponible es que se trata de un fine-tune de Qwen/Qwen3.5-9B, etiquetado con la familia "qwen3_5", y que el ajuste se realizo con Unsloth junto con la libreria TRL de HuggingFace. El autor afirma que el entrenamiento fue "2x mas rapido" gracias a Unsloth, pero no se especifica el numero de pasos, el volumen de tokens, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
+La model card no describe la arquitectura interna del modelo. La unica informacion disponible es que se trata de un fine-tune de Qwen/Qwen3.5-9B, etiquetado con la familia "qwen3_5", y que el ajuste se realizo con Unsloth junto con la libreria TRL de Hugging Face. El autor afirma que el entrenamiento fue "2x mas rapido" gracias a Unsloth, pero no se especifica el numero de pasos, el volumen de tokens, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
 
 Tampoco se documentan innovaciones tecnicas propias (atencion lineal, decodificacion especulativa, mezcla de expertos u otras). Al estar construido sobre la familia Qwen3.5, es razonable esperar que herede las caracteristicas arquitectonicas del modelo base, pero esto no puede confirmarse con la informacion proporcionada. La unica capacidad declarada explicitamente a traves del pipeline es image-text-to-text, lo que implicaria soporte multimodal de entrada, sin mas detalles sobre el codificador visual o el esquema de fusion.
 
@@ -73,8 +73,8 @@ La informacion disponible no incluye benchmarks ni especificaciones del modelo b
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Dennis1315/ward-wireless-14b | no disponible (nombre 14B / base 9B) | no disponible | apache-2.0 | HuggingFace, 0 descargas | Fine-tune de Qwen3.5-9B, sin benchmarks |
-| Qwen/Qwen3.5-9B (modelo base) | no disponible | no disponible | no disponible | HuggingFace | Origen declarado del ajuste |
+| Dennis1315/ward-wireless-14b | no disponible (nombre 14B / base 9B) | no disponible | apache-2.0 | Hugging Face, 0 descargas | Fine-tune de Qwen3.5-9B, sin benchmarks |
+| Qwen/Qwen3.5-9B (modelo base) | no disponible | no disponible | no disponible | Hugging Face | Origen declarado del ajuste |
 | Alternativas de 7-14B de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos suficientes para una comparacion rigurosa |
 
 No es posible establecer una comparacion cuantitativa fiable con modelos alternativos (por ejemplo, otros modelos de 7B a 14B) porque no se han publicado metricas de este modelo ni se han aportado especificaciones del modelo base.
@@ -93,10 +93,10 @@ No es posible establecer una comparacion cuantitativa fiable con modelos alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dennis1315/ward-wireless-14b
+- Modelo en Hugging Face: https://huggingface.co/Dennis1315/ward-wireless-14b
 - Perfil del autor: https://huggingface.co/Dennis1315/models
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (libreria de entrenamiento citada): https://github.com/huggingface/trl
+- TRL de Hugging Face (libreria de entrenamiento citada): https://github.com/huggingface/trl
 - Paper o blog oficial del modelo: no disponible
 - Demo o espacio interactivo: no disponible

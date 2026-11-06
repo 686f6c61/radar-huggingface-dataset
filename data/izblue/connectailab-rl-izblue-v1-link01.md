@@ -72,7 +72,7 @@ No se han identificado en la información proporcionada modelos directamente com
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-izblue-v1-link01 | 0,8B (base) + LoRA | No disponible | Decisión de locomoción LINK-01 | Apache 2.0 | HuggingFace |
+| connectailab-rl-izblue-v1-link01 | 0,8B (base) + LoRA | No disponible | Decisión de locomoción LINK-01 | Apache 2.0 | Hugging Face |
 | Cerebro PPO (profesor, no publicado como modelo) | No disponible | No aplica | Política de control en simulador | No disponible | Solo referenciado en la model card |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -89,7 +89,7 @@ No se han identificado en la información proporcionada modelos directamente com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/izblue/connectailab-rl-izblue-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/izblue/connectailab-rl-izblue-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código (CONNECT TYCOON): https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

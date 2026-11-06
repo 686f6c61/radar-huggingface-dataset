@@ -2,7 +2,7 @@
 
 ## Resumen
 
-h0000w/hendar-agentic-ai es un repositorio de modelo publicado en HuggingFace por el usuario h0000w bajo licencia MIT. En el momento de la consulta, el repositorio no presenta model card con contenido tecnico: el unico dato disponible en el README es la declaracion de licencia (`license: mit`), sin descripcion, sin arquitectura declarada, sin tamano de parametros y sin informacion sobre datos de entrenamiento. El repositorio registra 0 descargas y 0 likes, y las fechas de creacion y actualizacion son identicas (2026-09-12T14:35:45.000Z), lo que apunta a un repositorio recien creado o a un marcador de posicion sin artefactos publicados.
+h0000w/hendar-agentic-ai es un repositorio de modelo publicado en Hugging Face por el usuario h0000w bajo licencia MIT. En el momento de la consulta, el repositorio no presenta model card con contenido tecnico: el unico dato disponible en el README es la declaracion de licencia (`license: mit`), sin descripcion, sin arquitectura declarada, sin tamano de parametros y sin informacion sobre datos de entrenamiento. El repositorio registra 0 descargas y 0 likes, y las fechas de creacion y actualizacion son identicas (2026-09-12T14:35:45.000Z), lo que apunta a un repositorio recien creado o a un marcador de posicion sin artefactos publicados.
 
 No se ha podido verificar la existencia de pesos, tokenizador, configuracion de modelo o ficheros auxiliares. Tampoco se han encontrado publicaciones tecnicas, papers, blogs ni repositorios de codigo asociados al identificador del modelo. Las busquedas web realizadas devuelven exclusivamente resultados no relacionados (repositorios de prompts tipo DAN, cliente de escritorio de GitHub, hilos de Reddit y una pregunta en Zhihu sobre limites de uso de ChatGPT Plus), por lo que no aportan informacion util sobre este modelo.
 
@@ -80,7 +80,7 @@ No disponible. No se conocen modelos comparables porque no se ha podido determin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/h0000w/hendar-agentic-ai
+- Hugging Face: https://huggingface.co/h0000w/hendar-agentic-ai
 - Paper: no disponible
 - Blog tecnico: no disponible
 - Repositorio de codigo: no disponible

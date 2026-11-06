@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_100m_seed44_epoch7` es un modelo de generación de texto publicado en HuggingFace por el usuario Lanni-ni. Se trata de un modelo de tamaño reducido, con 27.447.040 parámetros totales, almacenado en formato safetensors y gestionado a través de la librería transformers. El repositorio se creó el 5 de septiembre de 2026 y apenas tiene actividad: no registra descargas ni me gusta, y su model card es una plantilla automática sin información sustancial.
+El modelo `Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_100m_seed44_epoch7` es un modelo de generación de texto publicado en Hugging Face por el usuario Lanni-ni. Se trata de un modelo de tamaño reducido, con 27.447.040 parámetros totales, almacenado en formato safetensors y gestionado a través de la librería transformers. El repositorio se creó el 5 de septiembre de 2026 y apenas tiene actividad: no registra descargas ni me gusta, y su model card es una plantilla automática sin información sustancial.
 
 El identificador del repositorio sugiere que el modelo pertenece a una línea experimental relacionada con BabyLM (un proyecto de investigación sobre entrenamiento con datos limitados) y que incorpora una variante de atención denominada "dynamic_alibi". También aparecen los términos "inverse", "seed44" y "epoch7", que apuntan a una configuración concreta de entrenamiento. Sin embargo, no se ha publicado documentación técnica, paper ni instrucciones de uso, por lo que la información disponible se limita a los metadatos del repositorio.
 
@@ -27,7 +27,7 @@ No se ha publicado información sobre la arquitectura interna, el procedimiento 
 
 ## Capacidades
 
-No se dispone de información publicada sobre las capacidades del modelo. El pipeline declarado en HuggingFace es `text-generation`, lo que indica que el modelo está diseñado para generar texto, pero no hay ejemplos, evaluaciones ni descripciones de tareas específicas. No se puede confirmar si soporta tool calling, agentes, razonamiento multi-paso, capacidades multilingües o modos especiales como thinking mode. Cualquier afirmación sobre estas capacidades sería especulativa.
+No se dispone de información publicada sobre las capacidades del modelo. El pipeline declarado en Hugging Face es `text-generation`, lo que indica que el modelo está diseñado para generar texto, pero no hay ejemplos, evaluaciones ni descripciones de tareas específicas. No se puede confirmar si soporta tool calling, agentes, razonamiento multi-paso, capacidades multilingües o modos especiales como thinking mode. Cualquier afirmación sobre estas capacidades sería especulativa.
 
 ## Casos de uso
 
@@ -60,7 +60,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_100m_seed44_epoch7
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_100m_seed44_epoch7
 - Modelo similar del mismo autor (epoch7): https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_100m_epoch7
 - Modelo similar del mismo autor (inverse epoch1): https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_100m_inverse_epoch1
 

@@ -99,7 +99,7 @@ No hay modelos estrictamente comparables con las mismas afirmaciones de "deriva 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/frankmorales2020/topo-gemma-4-e4b-cifar100-certified
+- Hugging Face: https://huggingface.co/frankmorales2020/topo-gemma-4-e4b-cifar100-certified
 - Modelo base: https://huggingface.co/frankmorales2020/gemma-4-e4b-unesco-optimized
 - Codigo y notebook de entrenamiento: https://github.com/frank-morales2020/AST/blob/main/T_CBP_GEMMA4.ipynb
 - Repositorio AST completo: https://github.com/frank-morales2020/AST

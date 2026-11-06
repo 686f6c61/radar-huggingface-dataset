@@ -2,11 +2,11 @@
 
 ## Resumen
 
-LawGPT-India-BNS es un adaptador LoRA publicado por el usuario viveksaibandi en HuggingFace, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base mistralai/Mistral-7B-Instruct-v0.3. No se trata por tanto de un modelo completo, sino de un conjunto de pesos incrementales (repo de 0,3 GB en formato safetensors) que debe cargarse junto al modelo base usando la libreria PEFT 0.20.0. La denominacion del repositorio sugiere un ajuste orientado al dominio juridico indio (BNS hace referencia a Bharatiya Nyaya Sanhita, el codigo penal indio que sustituyo al Indian Penal Code), aunque la model card no confirma ni el dominio ni la composicion del dataset de entrenamiento.
+LawGPT-India-BNS es un adaptador LoRA publicado por el usuario viveksaibandi en Hugging Face, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base mistralai/Mistral-7B-Instruct-v0.3. No se trata por tanto de un modelo completo, sino de un conjunto de pesos incrementales (repo de 0,3 GB en formato safetensors) que debe cargarse junto al modelo base usando la libreria PEFT 0.20.0. La denominacion del repositorio sugiere un ajuste orientado al dominio juridico indio (BNS hace referencia a Bharatiya Nyaya Sanhita, el codigo penal indio que sustituyo al Indian Penal Code), aunque la model card no confirma ni el dominio ni la composicion del dataset de entrenamiento.
 
 La relevancia de este tipo de publicaciones es metodologica: los adaptadores LoRA de bajo rango permiten especializar un modelo de 7B en un dominio concreto con un coste de entrenamiento y almacenamiento muy reducido, manteniendo intacto el modelo base. En este caso, el adaptador hereda del modelo base una arquitectura transformer decoder-only de 7B parametros y 32.768 tokens de contexto, ademas de su tokenizador ampliado, pero no anade ninguna innovacion arquitectonica propia.
 
-La ficha que sigue es deliberadamente conservadora: la model card del autor es una plantilla sin cumplimentar (todos los campos aparecen como "[More Information Needed]"), el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y la busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo. Por tanto, la mayor parte de los datos tecnicos figuran como "no disponible" y solo se documentan con certeza los que constan en la informacion de HuggingFace o los que se heredan de forma verificable del modelo base.
+La ficha que sigue es deliberadamente conservadora: la model card del autor es una plantilla sin cumplimentar (todos los campos aparecen como "[More Information Needed]"), el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y la busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo. Por tanto, la mayor parte de los datos tecnicos figuran como "no disponible" y solo se documentan con certeza los que constan en la informacion de Hugging Face o los que se heredan de forma verificable del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ Datos adicionales del repositorio: creado el 11 de septiembre de 2026, actualiza
 
 El adaptador se apoya en Mistral-7B-Instruct-v0.3, un transformer decoder-only de 7.000 millones de parametros con atencion de consultas agrupadas (grouped-query attention), sliding window attention y RoPE, distribuido por Mistral AI. Sobre esa base se ha aplicado un ajuste supervisado con LoRA: en lugar de reentrenar todos los pesos, se congelan y se insertan matrices de bajo rango en determinadas capas, de modo que el resultado es un fichero de adaptador que se carga en tiempo de inferencia o se fusiona con el modelo base. Las etiquetas del repositorio confirman el uso de las librerias transformers y trl, y el campo pipeline_tag lo situa como modelo de generacion de texto conversacional.
 
-No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del dataset, el rango e hiperparametros del LoRA (r, alpha, dropout, capas objetivo), la precision usada (fp16, bf16 o fp8) ni si se aplicaron fases posteriores de RLHF o DPO. La model card es la plantilla por defecto de HuggingFace y no incluye la seccion de detalles de entrenamiento cumplimentada, por lo que cualquier afirmacion sobre el proceso de ajuste seria especulativa. Tampoco se documenta ninguna innovacion tecnica propia: el adaptador no introduce decodificacion especulativa, atencion lineal ni modulos adicionales.
+No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del dataset, el rango e hiperparametros del LoRA (r, alpha, dropout, capas objetivo), la precision usada (fp16, bf16 o fp8) ni si se aplicaron fases posteriores de RLHF o DPO. La model card es la plantilla por defecto de Hugging Face y no incluye la seccion de detalles de entrenamiento cumplimentada, por lo que cualquier afirmacion sobre el proceso de ajuste seria especulativa. Tampoco se documenta ninguna innovacion tecnica propia: el adaptador no introduce decodificacion especulativa, atencion lineal ni modulos adicionales.
 
 ## Capacidades
 
@@ -74,7 +74,7 @@ No se han identificado en la informacion disponible otros adaptadores comparable
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| viveksaibandi/lawgpt-india-bns | 7B (base) + adaptador LoRA de 0,3 GB | 32.768 tokens heredados | No disponible para el adaptador | safetensors (PEFT) | Publico en HuggingFace, 0 descargas |
+| viveksaibandi/lawgpt-india-bns | 7B (base) + adaptador LoRA de 0,3 GB | 32.768 tokens heredados | No disponible para el adaptador | safetensors (PEFT) | Publico en Hugging Face, 0 descargas |
 | mistralai/Mistral-7B-Instruct-v0.3 (base, sin adaptador) | 7B | 32.768 tokens | Apache 2.0 | safetensors | Publico, ampliamente utilizado |
 | Otros adaptadores LoRA de dominio juridico sobre Mistral-7B | 7B (base) | 32.768 tokens heredados | Variable segun autor | safetensors (PEFT) | No verificados en la informacion disponible |
 | Modelos legales completos tipo LegalBERT o SaulLM (otras categorias y tamanos) | Variable | Variable | Variable | Variable | No comparables directamente por arquitectura y tarea |
@@ -91,12 +91,12 @@ No se dispone de datos de benchmarks que permitan establecer una comparacion de 
 - Sesgos potenciales: los heredados del corpus de entrenamiento del modelo base, no auditados en el adaptador. En un contexto legal, esto puede traducirse en sesgos culturales o jurisdiccionales.
 - Contexto limitado en la practica: aunque el modelo base admite 32.768 tokens, el uso de contextos muy largos en GPU de consumo obliga a cuantizar y reduce la precision efectiva.
 - Fecha de creacion anomala: el repositorio figura creado el 11 de septiembre de 2026, dato que conviene verificar antes de citarlo.
-- Sin soporte ni mantenimiento: no hay repositorio de codigo, demo, paper ni contacto del autor mas alla del perfil de HuggingFace.
+- Sin soporte ni mantenimiento: no hay repositorio de codigo, demo, paper ni contacto del autor mas alla del perfil de Hugging Face.
 - Uso responsable: cualquier aplicacion en asesoramiento juridico debe acompanarse de supervision por profesionales cualificados y de avisos claros sobre el caracter no vinculante de las respuestas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/viveksaibandi/lawgpt-india-bns
+- Modelo en Hugging Face: https://huggingface.co/viveksaibandi/lawgpt-india-bns
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL: https://github.com/huggingface/trl

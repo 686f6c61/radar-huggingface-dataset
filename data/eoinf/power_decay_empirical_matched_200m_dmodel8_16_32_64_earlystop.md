@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`power_decay_empirical_matched_200m_dmodel8_16_32_64_earlystop` es un artefacto de investigación publicado por el usuario eoinf en HuggingFace. No es un modelo de lenguaje destinado a uso general, sino un conjunto de checkpoints de un experimento controlado con transformadores causales minúsculos (d_model de 8, 16, 32 y 64), entrenados sobre un vocabulario de 4096 tokens y una longitud de contexto de 256 tokens. El objetivo aparente del repositorio es estudiar dinámicas de entrenamiento (el nombre sugiere un estudio sobre decaimiento de potencia empírico) manteniendo constante el presupuesto de tokens nominal en unos 199.999.488.
+`power_decay_empirical_matched_200m_dmodel8_16_32_64_earlystop` es un artefacto de investigación publicado por el usuario eoinf en Hugging Face. No es un modelo de lenguaje destinado a uso general, sino un conjunto de checkpoints de un experimento controlado con transformadores causales minúsculos (d_model de 8, 16, 32 y 64), entrenados sobre un vocabulario de 4096 tokens y una longitud de contexto de 256 tokens. El objetivo aparente del repositorio es estudiar dinámicas de entrenamiento (el nombre sugiere un estudio sobre decaimiento de potencia empírico) manteniendo constante el presupuesto de tokens nominal en unos 199.999.488.
 
 La relevancia de este tipo de publicaciones es metodológica más que práctica: sirve como referencia reproducible para investigar leyes de escala, schedules de learning rate y comportamientos de convergencia en regímenes de parámetros extremadamente reducidos. Con d_model de 8 a 64, estos modelos tienen entre miles y decenas de miles de parámetros, muy lejos de cualquier LLM utilizable en producción.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| power_decay_empirical_matched_200m (este) | Miles a decenas de miles (d_model 8-64) | 256 | Rejilla de experimentos de entrenamiento | No disponible | HuggingFace (eoinf) |
+| power_decay_empirical_matched_200m (este) | Miles a decenas de miles (d_model 8-64) | 256 | Rejilla de experimentos de entrenamiento | No disponible | Hugging Face (eoinf) |
 | nanoGPT (Karpathy) | ~10M-124M (configurable) | Configurable | Referencia educativa de transformers | MIT | GitHub |
-| Pythia (EleutherAI) | 70M-12B | 2048 | Suite de investigación de escalado | Apache 2.0 | HuggingFace |
-| TinyLlama | 1.1B | 2048 | LLM pequeño para inferencia | Apache 2.0 | HuggingFace |
+| Pythia (EleutherAI) | 70M-12B | 2048 | Suite de investigación de escalado | Apache 2.0 | Hugging Face |
+| TinyLlama | 1.1B | 2048 | LLM pequeño para inferencia | Apache 2.0 | Hugging Face |
 
 La comparación es orientativa: este repositorio no compite en capacidad de lenguaje con ninguno de los anteriores; su valor es exclusivamente metodológico.
 
@@ -84,6 +84,6 @@ La comparación es orientativa: este repositorio no compite en capacidad de leng
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/power_decay_empirical_matched_200m_dmodel8_16_32_64_earlystop
+- Hugging Face: https://huggingface.co/eoinf/power_decay_empirical_matched_200m_dmodel8_16_32_64_earlystop
 - Repositorio de código referenciado: `synthetic_trigrams` (no se proporciona URL en la información disponible)
 - No se han encontrado papers, blogs, demos ni otros enlaces en la información disponible.

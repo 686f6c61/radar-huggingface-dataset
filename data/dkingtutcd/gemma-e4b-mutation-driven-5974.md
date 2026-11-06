@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dkingtutcd/gemma-e4b-mutation-driven-5974` es un fine-tuning del modelo Gemma 4 E4B instruction-tuned, publicado por el usuario dkingtutcd en HuggingFace. El modelo base es la variante cuantizada en 4 bits de Unsloth (`unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`), sobre la que se ha realizado un ajuste fino y posteriormente se han subido los pesos en FP16. La model card es mínima y no documenta el dataset, el procedimiento de entrenamiento ni el propósito concreto del fine-tuning, más allá de indicar que se usó Unsloth y TRL.
+`dkingtutcd/gemma-e4b-mutation-driven-5974` es un fine-tuning del modelo Gemma 4 E4B instruction-tuned, publicado por el usuario dkingtutcd en Hugging Face. El modelo base es la variante cuantizada en 4 bits de Unsloth (`unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`), sobre la que se ha realizado un ajuste fino y posteriormente se han subido los pesos en FP16. La model card es mínima y no documenta el dataset, el procedimiento de entrenamiento ni el propósito concreto del fine-tuning, más allá de indicar que se usó Unsloth y TRL.
 
 El modelo conserva la pipeline `image-text-to-text`, lo que indica que mantiene capacidades multimodales (entrada de imagen y texto) heredadas de la familia Gemma 4. Los pesos suman aproximadamente 8.000 millones de parámetros en safetensors, con un repositorio de 16 GB, coherente con un checkpoint FP16. La licencia declarada es Apache 2.0.
 
@@ -44,7 +44,7 @@ El entrenamiento consistió en un fine-tuning supervisado (SFT) sobre el checkpo
 - Prototipado de asistentes multimodales en inglés: al conservar la pipeline image-text-to-text, permite probar interacciones que combinan imagen y texto en entornos de desarrollo.
 - Evaluación comparativa de checkpoints comunitarios: útil para medir la degradación o mejora respecto a `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit` en tareas concretas.
 - Base para nuevos fine-tunings: al estar en FP16 y con licencia Apache 2.0, puede reutilizarse como punto de partida en ajustes posteriores.
-- Docencia y demostraciones: ejemplo didáctico de publicación de un modelo fine-tuned en HuggingFace con la plantilla estándar de Unsloth.
+- Docencia y demostraciones: ejemplo didáctico de publicación de un modelo fine-tuned en Hugging Face con la plantilla estándar de Unsloth.
 
 ## Benchmarks y rendimiento
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dkingtutcd/gemma-e4b-mutation-driven-5974 | ~8B | no disponible | sí (image-text-to-text) | apache-2.0 | HuggingFace, 0 descargas |
-| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (base) | ~8B | no disponible | sí | según modelo Gemma 4 original | HuggingFace |
-| Gemma 4 E4B-it (original) | ~8B | no disponible | sí | según términos de Google | HuggingFace / Vertex |
+| dkingtutcd/gemma-e4b-mutation-driven-5974 | ~8B | no disponible | sí (image-text-to-text) | apache-2.0 | Hugging Face, 0 descargas |
+| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (base) | ~8B | no disponible | sí | según modelo Gemma 4 original | Hugging Face |
+| Gemma 4 E4B-it (original) | ~8B | no disponible | sí | según términos de Google | Hugging Face / Vertex |
 
 No se dispone de datos de rendimiento comparativos para este checkpoint.
 
@@ -84,8 +84,8 @@ No se dispone de datos de rendimiento comparativos para este checkpoint.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dkingtutcd/gemma-e4b-mutation-driven-5974
+- Modelo en Hugging Face: https://huggingface.co/dkingtutcd/gemma-e4b-mutation-driven-5974
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E4B-it-unsloth-bnb-4bit
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl
 - Documentación de Gemma: https://ai.google.dev/gemma

@@ -94,7 +94,7 @@ La unica comparativa directa disponible en la informacion es contra su modelo ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SLAI-AITP/SLAI-T-Rex-Flash
+- Modelo en Hugging Face: https://huggingface.co/SLAI-AITP/SLAI-T-Rex-Flash
 - Articulo tecnico (arXiv): https://arxiv.org/abs/2607.20145
 - PDF del articulo: https://arxiv.org/pdf/2607.20145
 - Repositorio de codigo y recetas de entrenamiento: https://github.com/SLAI-AITP/SLAI-T-Rex

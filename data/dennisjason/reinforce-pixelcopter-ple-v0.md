@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-Pixelcopter-PLE-v0 es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario dennisjason, cuyo peso es un artefacto de tipo `reinforcement-learning` y no un modelo generativo. Se trata de una implementación propia del algoritmo REINFORCE (gradiente de política Monte Carlo) escrita desde cero en PyTorch sobre la API de Gymnasium, entrenada para resolver el entorno Pixelcopter-PLE-v0 del paquete PLE (PyGame Learning Environment). El autor lo desarrolló como ejercicio de la unidad 4 del curso Deep RL de Hugging Face, dedicada precisamente a los métodos de gradiente de política.
+Reinforce-Pixelcopter-PLE-v0 es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario dennisjason, cuyo peso es un artefacto de tipo `reinforcement-learning` y no un modelo generativo. Se trata de una implementación propia del algoritmo REINFORCE (gradiente de política Monte Carlo) escrita desde cero en PyTorch sobre la API de Gymnasium, entrenada para resolver el entorno Pixelcopter-PLE-v0 del paquete PLE (PyGame Learning Environment). El autor lo desarrolló como ejercicio de la unidad 4 del curso Deep RL de Hugging Face, dedicada precisamente a los métodos de gradiente de política.
 
 El modelo resuelve una tarea de control con observaciones visuales de baja resolución (píxeles del juego), no una tarea de lenguaje. Por ello, conceptos habituales en una ficha de LLM como longitud de contexto, cuantización, idiomas o parámetros activos no son aplicables o no están documentados. El repositorio figura con 0.0 GB de tamaño y no cuenta con descargas ni valoraciones en el momento de la consulta, lo que apunta a que no se han publicado los pesos entrenados.
 
@@ -94,6 +94,6 @@ No disponible. La información proporcionada no incluye otros agentes o reposito
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dennisjason/Reinforce-Pixelcopter-PLE-v0
+- Modelo en Hugging Face: https://huggingface.co/dennisjason/Reinforce-Pixelcopter-PLE-v0
 - Curso Deep RL de Hugging Face, unidad 4 (REINFORCE): https://huggingface.co/deep-rl-course/unit4/introduction
 - Búsqueda web: no se han encontrado resultados relevantes sobre este modelo; los únicos resultados devueltos no guardan relación con el artefacto.

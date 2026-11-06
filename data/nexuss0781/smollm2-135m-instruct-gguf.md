@@ -60,8 +60,8 @@ Existen otras conversiones GGUF del mismo modelo original, como la de bartowski/
 
 | Modelo | Parámetros | Contexto | Cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nexuss0781/SmolLM2-135M-Instruct-GGUF | 134,5M | no disponible | F16, Q6_K | Apache-2.0 | HuggingFace |
-| bartowski/SmolLM2-135M-Instruct-GGUF | 134,5M | no disponible | varias (Q4_K_M, Q8_0, etc.) | Apache-2.0 | HuggingFace |
+| Nexuss0781/SmolLM2-135M-Instruct-GGUF | 134,5M | no disponible | F16, Q6_K | Apache-2.0 | Hugging Face |
+| bartowski/SmolLM2-135M-Instruct-GGUF | 134,5M | no disponible | varias (Q4_K_M, Q8_0, etc.) | Apache-2.0 | Hugging Face |
 | HackNetAyush/smollm2-135M-instruct-gguf-q8 | 134,5M | no disponible | Q8_0 | Apache-2.0 | GitHub |
 
 ## Limitaciones y advertencias
@@ -76,7 +76,7 @@ Existen otras conversiones GGUF del mismo modelo original, como la de bartowski/
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nexuss0781/SmolLM2-135M-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Nexuss0781/SmolLM2-135M-Instruct-GGUF
 - Modelo original: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Conversión de bartowski: https://huggingface.co/bartowski/SmolLM2-135M-Instruct-GGUF
 - Repositorio de la aplicación de chat en GitHub: https://github.com/nexuss0781/small-transformer

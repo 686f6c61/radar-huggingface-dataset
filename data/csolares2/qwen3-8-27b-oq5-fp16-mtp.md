@@ -78,7 +78,7 @@ La comparativa se limita a modelos de tamano similar. La principal diferencia es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/csolares2/Qwen3.8-27B-oQ5-fp16-mtp
+- Repositorio Hugging Face: https://huggingface.co/csolares2/Qwen3.8-27B-oQ5-fp16-mtp
 - Documentacion de oQ/oMLX: https://github.com/jundot/omlx
 - Guia de Qwen3.8 en Unsloth: https://unsloth.ai/docs/models/qwen3.8
 - Ficha de Qwen3.8 en LM Studio: https://lmstudio.ai/models/qwen3.8

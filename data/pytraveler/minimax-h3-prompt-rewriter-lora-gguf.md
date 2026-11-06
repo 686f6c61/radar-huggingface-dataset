@@ -86,7 +86,7 @@ La ventaja principal de la version GGUF es la reduccion drastica de requisitos d
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador GGUF: https://huggingface.co/pytraveler/MiniMax-H3-Prompt-Rewriter-LoRA-GGUF
+- Repositorio Hugging Face del adaptador GGUF: https://huggingface.co/pytraveler/MiniMax-H3-Prompt-Rewriter-LoRA-GGUF
 - Repositorio original del adaptador: https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA
 - Base cuantizado (unsloth): https://huggingface.co/unsloth/Qwen3.6-27B-GGUF
 - Nodos ComfyUI: https://github.com/pytraveler/MiniMax-H3-Prompt-Rewriter-ComfyUI

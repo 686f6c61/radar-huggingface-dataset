@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Qwen2.5-0.5B (Alibaba) | 494M | 32.768 tokens | Qwen Research / Apache 2.0 (algunas variantes) | No | HF, safetensors, GGUF |
 | SmolLM2-1.7B (HuggingFaceTB) | 1.700M | 8.192 tokens | Apache 2.0 | No | HF, safetensors, GGUF |
 
-Frente a sus alternativas, este modelo destaca por su entrenamiento con tokens de búsqueda web, único en su categoría de tamaño, pero carece de la madurez, documentación y ecosistema de cuantización de los modelos de HuggingFace o Alibaba.
+Frente a sus alternativas, este modelo destaca por su entrenamiento con tokens de búsqueda web, único en su categoría de tamaño, pero carece de la madurez, documentación y ecosistema de cuantización de los modelos de Hugging Face o Alibaba.
 
 ## Limitaciones y advertencias
 

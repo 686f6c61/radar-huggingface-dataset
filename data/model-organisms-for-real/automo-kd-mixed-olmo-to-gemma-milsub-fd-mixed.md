@@ -89,7 +89,7 @@ No se dispone de informacion suficiente para comparar con modelos genericos de 1
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-fd-mixed
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-fd-mixed
 - Coleccion de distillation: https://huggingface.co/collections/model-organisms-for-real/distillation
 - Repositorio GitHub del proyecto: https://github.com/model-organisms-for-real/model-organism-lottery
 - Paper "The Model Organism Lottery": https://arxiv.org/html/2607.01033

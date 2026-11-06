@@ -68,8 +68,8 @@ No se dispone de informacion sobre adaptadores comparables de la misma categoria
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mtg-oracle-qwen3-4b-checkpoints-20261007 | no disponible (adaptador sobre base ~4B) | no disponible | sin benchmarks publicados; checkpoint intermedio sin evaluacion final | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4B, segun la denominacion del modelo base | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | apache-2.0, segun la atribucion del autor | HuggingFace (repositorio del modelo base) |
+| mtg-oracle-qwen3-4b-checkpoints-20261007 | no disponible (adaptador sobre base ~4B) | no disponible | sin benchmarks publicados; checkpoint intermedio sin evaluacion final | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4B, segun la denominacion del modelo base | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | apache-2.0, segun la atribucion del autor | Hugging Face (repositorio del modelo base) |
 | Otros adaptadores QLoRA de dominio | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se dispone de informacion sobre adaptadores comparables de la misma categoria
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vishvananda/mtg-oracle-qwen3-4b-checkpoints-20261007
+- Modelo en Hugging Face: https://huggingface.co/vishvananda/mtg-oracle-qwen3-4b-checkpoints-20261007
 - Modelo base Qwen/Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Revision exacta del modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/tree/cdbee75f17c01a7cc42f958dc650907174af0554
 - Dataset de entrenamiento: https://huggingface.co/datasets/vishvananda/mtg-oracle-design-descriptions

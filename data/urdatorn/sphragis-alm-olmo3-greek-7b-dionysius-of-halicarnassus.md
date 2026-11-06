@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks individuales para este modelo en la
 - VRAM estimada para inferencia: aproximadamente 16-18 GB en bf16 (14,6 GB de pesos más overhead de activaciones y caché), según estimación para un modelo de 7B denso.
 - GPU recomendadas: una NVIDIA RTX 4090 (24 GB) o A100 de 40 GB es suficiente para inferencia en bf16; también puede ejecutarse en GPUs con 16 GB usando cuantización a 8 bits o 4 bits, aunque no se proporcionan pesos cuantizados en el repositorio.
 - Compatibilidad con GPUs de consumo: sí, cabe en tarjetas de 24 GB como la RTX 4090, y con cuantización podría ejecutarse en GPUs de 16 GB como la RTX 4080 o RTX 3090.
-- Opciones de despliegue: al estar en formato safetensors, puede cargarse con la librería `transformers` de HuggingFace, o servirse con vLLM o TGI para inferencia de alto rendimiento. Para entornos con menos recursos, se podría convertir a GGUF y usar llama.cpp u Ollama, aunque no se incluyen dichos formatos en el repositorio.
+- Opciones de despliegue: al estar en formato safetensors, puede cargarse con la librería `transformers` de Hugging Face, o servirse con vLLM o TGI para inferencia de alto rendimiento. Para entornos con menos recursos, se podría convertir a GGUF y usar llama.cpp u Ollama, aunque no se incluyen dichos formatos en el repositorio.
 - Latencia y throughput: no se han publicado mediciones específicas. Para un modelo de 7B en una GPU moderna, se espera una latencia de decodificación de decenas de milisegundos por token y un throughput de cientos de tokens por segundo con batching, pero estos valores son orientativos.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo3-greek-7b-dionysius-of-halicarnassus
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo3-greek-7b-dionysius-of-halicarnassus
 - Modelo base adaptado al griego antiguo: https://huggingface.co/Urdatorn/olmo3-7b-ancient-greek
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Código de entrenamiento y scoring: https://github.com/Urdatorn/sphragis_models

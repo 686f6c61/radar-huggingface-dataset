@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (JackHsieh) | 4.022 M | No disponible | CPT con pensamientos antepuestos sobre stat.ML arXiv | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Base | ~4.000 M | No disponible en la informacion | Modelo base generalista | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen/Qwen3-4B | ~4.000 M | No disponible en la informacion | Modelo instructivo con modo thinking | Apache 2.0 | HuggingFace, ampliamente usado |
+| Este checkpoint (JackHsieh) | 4.022 M | No disponible | CPT con pensamientos antepuestos sobre stat.ML arXiv | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Base | ~4.000 M | No disponible en la informacion | Modelo base generalista | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen/Qwen3-4B | ~4.000 M | No disponible en la informacion | Modelo instructivo con modo thinking | Apache 2.0 | Hugging Face, ampliamente usado |
 
 La comparación relevante es con el propio Qwen3-4B-Base, del que este checkpoint es una continuación: comparte arquitectura y tokenizador (salvo los dos tokens añadidos) y se diferencia únicamente por el CPT sobre stat.ML con notas antepuestas. Frente a Qwen3-4B instructivo, este modelo carece de ajuste conversacional y de modo thinking nativo. No se dispone de datos de benchmarks comparativos entre ellos más allá de la NLL reportada.
 
@@ -91,7 +91,7 @@ La comparación relevante es con el propio Qwen3-4B-Base, del que este checkpoin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JackHsieh/4B-base.4B-gpnp-kv-tags-thought-thoughts.iid-80M-sans-256.stride-1.suffix-conditional
+- Modelo en Hugging Face: https://huggingface.co/JackHsieh/4B-base.4B-gpnp-kv-tags-thought-thoughts.iid-80M-sans-256.stride-1.suffix-conditional
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/JackHsieh/statML-arxiv-iid-160M-20M
 - Dataset de pensamientos: https://huggingface.co/datasets/JackHsieh/4B-general-paragraph-nothink-prefill.k-8.statml-arxiv-iid.qwen3-ids.kv-tags-thought

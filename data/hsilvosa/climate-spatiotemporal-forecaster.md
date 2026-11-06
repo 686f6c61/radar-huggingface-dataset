@@ -85,6 +85,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: hsilvosa/climate-spatiotemporal-forecaster](https://huggingface.co/hsilvosa/climate-spatiotemporal-forecaster)
+- [Hugging Face: hsilvosa/climate-spatiotemporal-forecaster](https://huggingface.co/hsilvosa/climate-spatiotemporal-forecaster)
 - [GitHub del autor: hsilvosa](https://github.com/hsilvosa?tab=repositories)
 - [Paper de referencia del dataset GHCN-Daily (Menne et al., 2012)](https://journals.ametsoc.org/view/journals/atot/29/7/jtech-d-11-00103_1.xml)

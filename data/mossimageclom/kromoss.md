@@ -72,9 +72,9 @@ No se han publicado en la información disponible resultados de Kromoss en otros
 
 | Modelo | Parámetros | Contexto / resolución | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Kromoss | 5.082.308.624 | 1024 px | Apache 2.0 | HuggingFace, ComfyUI | Fine-tune de MOSS-Image-Base con corrección de nitidez y LoRA DMD de 8 pasos |
-| MOSS-Image-Base | no disponible | 1024 px | no disponible en la información | HuggingFace (OpenMOSS-Team) | Modelo base; presenta falta de nitidez según el autor de Kromoss |
-| MOSS-Image-SFT | no disponible | 1024 px | no disponible en la información | HuggingFace (OpenMOSS-Team) | Misma arquitectura y pipeline; Kromoss es reemplazo directo |
+| Kromoss | 5.082.308.624 | 1024 px | Apache 2.0 | Hugging Face, ComfyUI | Fine-tune de MOSS-Image-Base con corrección de nitidez y LoRA DMD de 8 pasos |
+| MOSS-Image-Base | no disponible | 1024 px | no disponible en la información | Hugging Face (OpenMOSS-Team) | Modelo base; presenta falta de nitidez según el autor de Kromoss |
+| MOSS-Image-SFT | no disponible | 1024 px | no disponible en la información | Hugging Face (OpenMOSS-Team) | Misma arquitectura y pipeline; Kromoss es reemplazo directo |
 | FLUX.2 (decodificador VAE pequeño) | no disponible | no disponible | no disponible | no disponible | Solo se comparte el VAE, no es un modelo comparable en generación |
 
 No se dispone de datos de benchmarks comparativos con modelos de otras familias (Stable Diffusion, FLUX completo, etc.) en la información proporcionada.
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparativos con modelos de otras familias 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MOSSImageclom/Kromoss
+- Hugging Face: https://huggingface.co/MOSSImageclom/Kromoss
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - MOSS-Image-SFT: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Ficheros para ComfyUI: https://huggingface.co/Comfy-Org/MOSS-Image

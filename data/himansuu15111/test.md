@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `himansuu15111/test` es un repositorio publicado en HuggingFace por el usuario `himansuu15111`. Se trata de una publicacion sin model card util: el README unicamente contiene la linea `license: unknown` y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. No hay informacion publica sobre quien lo ha desarrollado mas alla del nombre de usuario, ni sobre el problema concreto que pretende resolver.
+El modelo identificado como `himansuu15111/test` es un repositorio publicado en Hugging Face por el usuario `himansuu15111`. Se trata de una publicacion sin model card util: el README unicamente contiene la linea `license: unknown` y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. No hay informacion publica sobre quien lo ha desarrollado mas alla del nombre de usuario, ni sobre el problema concreto que pretende resolver.
 
 El repositorio ocupa aproximadamente 0,5 GB y no registra descargas ni "likes" en el momento de la consulta, lo que apunta a un artefacto de prueba o a una publicacion preliminar mas que a un modelo con adopcion real. Las etiquetas declaradas se limitan a `license:unknown` y `region:us`, y no se especifica pipeline de inferencia ni idiomas soportados.
 
@@ -45,7 +45,7 @@ Respecto al entrenamiento, no hay datos disponibles sobre el volumen de tokens u
 - Modo de razonamiento explicito (thinking mode): no confirmado.
 - Capacidades especiales adicionales: no disponible.
 
-Nota: la ausencia de capacidades en esta lista no implica que el modelo carezca de ellas, sino que el autor no las ha documentado en HuggingFace.
+Nota: la ausencia de capacidades en esta lista no implica que el modelo carezca de ellas, sino que el autor no las ha documentado en Hugging Face.
 
 ## Casos de uso
 
@@ -78,7 +78,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| himansuu15111/test | no disponible | no disponible | unknown | HuggingFace, 0 descargas |
+| himansuu15111/test | no disponible | no disponible | unknown | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/himansuu15111/test
+- Repositorio en Hugging Face: https://huggingface.co/himansuu15111/test
 - Model card del autor: no contiene informacion tecnica, solo la linea `license: unknown`.
 - Paper asociado: no disponible.
 - Blog o anuncio oficial: no disponible.

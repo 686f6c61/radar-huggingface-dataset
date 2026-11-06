@@ -4,7 +4,7 @@
 
 El modelo `violetxi/qwen35-9b-equational-theory-sair-mix10m-70n30t-thinking` es un ajuste fino supervisado completo (full fine-tuning) de `Qwen/Qwen3.5-9B`, publicado por el usuario violetxi el 3 de octubre de 2026. Se trata de un checkpoint especializado en teoria ecuacional y razonamiento matematico, entrenado sobre una mezcla nominal de 10 millones de tokens supervisados compuesta aproximadamente por un 70% de notas matematicas y un 30% de trayectorias de profesor condicionadas por notas. El modelo conserva la arquitectura original del modelo base y anade una plantilla de chat con modo "thinking" activado para evaluacion matematica.
 
-El problema que aborda es la internalizacion de teoria ecuacional: el entrenamiento incluye explicitamente el razonamiento del profesor y las respuestas finales dentro de la mascara de perdida, de modo que el modelo aprende no solo la respuesta, sino la traza de razonamiento que la produce. Con 9.653.104.368 parametros (aproximadamente 9,65 mil millones) y un repositorio de 19,3 GB, es un modelo denso de la familia Qwen3.5, con licencia Apache 2.0 y pesos en safetensors, lo que facilita su uso comercial y su integracion en pipelines de HuggingFace Transformers.
+El problema que aborda es la internalizacion de teoria ecuacional: el entrenamiento incluye explicitamente el razonamiento del profesor y las respuestas finales dentro de la mascara de perdida, de modo que el modelo aprende no solo la respuesta, sino la traza de razonamiento que la produce. Con 9.653.104.368 parametros (aproximadamente 9,65 mil millones) y un repositorio de 19,3 GB, es un modelo denso de la familia Qwen3.5, con licencia Apache 2.0 y pesos en safetensors, lo que facilita su uso comercial y su integracion en pipelines de Hugging Face Transformers.
 
 Su relevancia actual radica en que es un ejemplo de experimento de ajuste fino reproducible: el autor publica hashes de procedencia, configuracion de entrenamiento completa, metricas de perdida y un registro en Weights & Biases, ademas de las dos bases de datos empleadas. No obstante, las descargas y los "likes" registrados en el momento de redactar esta ficha son cero, y los resultados de benchmarks se publican por separado, por lo que se trata de un artefacto de investigacion mas que de un modelo listo para produccion.
 
@@ -72,18 +72,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - Cuantizacion a 8 bits: aproximadamente 10 GB de pesos, viable en GPUs de 12-16 GB con contexto corto.
 - Cuantizacion a 4 bits: aproximadamente 5-6 GB de pesos, viable en GPUs de consumo como RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB o RTX 4070; requiere conversion previa, ya que el repositorio solo publica safetensors BF16.
 - Entrenamiento: el autor reporta FSDP2 sobre ocho GPU, lo que da una referencia de la infraestructura utilizada en el ajuste fino completo.
-- Despliegue: compatible con HuggingFace Transformers mediante `Qwen3_5ForConditionalGeneration` y `device_map="auto"`; para vLLM, TGI, llama.cpp u Ollama se requiere disponibilidad de la arquitectura Qwen3.5 en la version concreta del motor y, en el caso de llama.cpp u Ollama, conversion a GGUF que no se distribuye en el repositorio.
-- El tag `endpoints_compatible` indica compatibilidad con endpoints gestionados de HuggingFace.
+- Despliegue: compatible con Hugging Face Transformers mediante `Qwen3_5ForConditionalGeneration` y `device_map="auto"`; para vLLM, TGI, llama.cpp u Ollama se requiere disponibilidad de la arquitectura Qwen3.5 en la version concreta del motor y, en el caso de llama.cpp u Ollama, conversion a GGUF que no se distribuye en el repositorio.
+- El tag `endpoints_compatible` indica compatibilidad con endpoints gestionados de Hugging Face.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen35-9b-equational-theory-sair-mix10m-70n30t-thinking | 9,65 mil millones | no disponible | Teoria ecuacional y razonamiento matematico (SFT completo) | Apache 2.0 | HuggingFace, safetensors |
-| Qwen/Qwen3.5-9B | no disponible | no disponible | Modelo base generalista | no disponible en la informacion proporcionada | HuggingFace |
-| Llama 3.1 8B | 8,03 mil millones | 128.000 tokens | Modelo generalista | Llama 3.1 Community License | HuggingFace, amplio ecosistema de cuantizaciones |
-| Gemma 2 9B | 9,24 mil millones | 8.192 tokens | Modelo generalista | Gemma Terms of Use | HuggingFace, amplio ecosistema de cuantizaciones |
+| qwen35-9b-equational-theory-sair-mix10m-70n30t-thinking | 9,65 mil millones | no disponible | Teoria ecuacional y razonamiento matematico (SFT completo) | Apache 2.0 | Hugging Face, safetensors |
+| Qwen/Qwen3.5-9B | no disponible | no disponible | Modelo base generalista | no disponible en la informacion proporcionada | Hugging Face |
+| Llama 3.1 8B | 8,03 mil millones | 128.000 tokens | Modelo generalista | Llama 3.1 Community License | Hugging Face, amplio ecosistema de cuantizaciones |
+| Gemma 2 9B | 9,24 mil millones | 8.192 tokens | Modelo generalista | Gemma Terms of Use | Hugging Face, amplio ecosistema de cuantizaciones |
 
 No se dispone de datos de rendimiento de este checkpoint que permitan una comparacion cuantitativa con las alternativas. La comparacion relevante es cualitativa: frente al modelo base, este checkpoint esta especializado y exige usar la plantilla de chat con thinking activado para obtener su comportamiento previsto; frente a generalistas como Llama 3.1 8B o Gemma 2 9B, ofrece licencia Apache 2.0 (mas permisiva que la de Llama o Gemma) pero carece del ecosistema de cuantizaciones GGUF y de evaluaciones publicas.
 
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento de este checkpoint que permitan una compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/qwen35-9b-equational-theory-sair-mix10m-70n30t-thinking
+- Modelo en Hugging Face: https://huggingface.co/violetxi/qwen35-9b-equational-theory-sair-mix10m-70n30t-thinking
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de notas: https://huggingface.co/datasets/violetxi/equational-theory-sair-notes
 - Dataset de trayectorias condicionadas por notas: https://huggingface.co/datasets/violetxi/equational-theory-sair-note-conditioned-rollouts

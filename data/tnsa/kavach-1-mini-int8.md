@@ -78,5 +78,5 @@ La comparación se basa en las variantes de la misma familia y el modelo base. N
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TNSA/Kavach-1-Mini-INT8
+- Hugging Face: https://huggingface.co/TNSA/Kavach-1-Mini-INT8
 - No se encontraron otros enlaces relevantes en la búsqueda web (los resultados estaban relacionados con temas no vinculados al modelo).

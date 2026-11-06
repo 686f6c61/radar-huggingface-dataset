@@ -6,7 +6,7 @@ Supermix Poseidon & Beyond es un modelo de mundo cognitivo (world model) compact
 
 El modelo resuelve un problema acotado: predecir atributos de escena (forma, color, movimiento, recuento y escala), seleccionar una politica de macro-acciones entre seis opciones de supervivencia y planificar con control predictivo basado en modelo (MPC) sensible al riesgo, penalizando la incertidumbre de transicion y la probabilidad de fallo mediante Q*(s,a) = E[R] - lambda·U(s,a) - beta·P(fallo). La inferencia declarada es de ~2,9 ms en modo reactivo y ~5,6 ms en modo MPC consciente de incertidumbre sobre CPU de consumo.
 
-Su relevancia actual es fundamentalmente de investigacion: el autor publica "recibos" de auditoria con hashes SHA-256 de los conjuntos de datos, evaluaciones congeladas sobre 2.048 escenas y 24 semillas, y resultados negativos reproducidos (la ventaja matematica del cableado biologico autentico frente a uno aleatorizado preservando grado). El repositorio de HuggingFace no registra descargas ni valoraciones, y los resultados no cuentan con revision por pares en la informacion disponible.
+Su relevancia actual es fundamentalmente de investigacion: el autor publica "recibos" de auditoria con hashes SHA-256 de los conjuntos de datos, evaluaciones congeladas sobre 2.048 escenas y 24 semillas, y resultados negativos reproducidos (la ventaja matematica del cableado biologico autentico frente a uno aleatorizado preservando grado). El repositorio de Hugging Face no registra descargas ni valoraciones, y los resultados no cuentan con revision por pares en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -94,7 +94,7 @@ No se dispone de datos comparativos aportados por el autor. La informacion propo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Supermix Poseidon & Beyond | ~0,33 M (tronco) + ~150 K (ensemble) | no disponible | MIT | HuggingFace (0 descargas, 0 likes) y GitHub |
+| Supermix Poseidon & Beyond | ~0,33 M (tronco) + ~150 K (ensemble) | no disponible | MIT | Hugging Face (0 descargas, 0 likes) y GitHub |
 | SmolLM2-135M (modelo base del adaptador LoRA) | 135 M | no disponible | no disponible | no disponible en la informacion proporcionada |
 | DreamerV3 | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | MuZero | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
@@ -111,7 +111,7 @@ Categorias de referencia con las que se solapa conceptualmente el modelo: modelo
 - Riesgo de sobreajuste a la distribucion de evaluacion: los resultados de 100 episodios emparejados y 2.048 escenas corresponden a un unico autor, sin replicacion independiente ni revision por pares en la informacion disponible.
 - La memoria alterada aleatoriamente rinde por debajo del azar (12% - 16%), lo que indica alta sensibilidad a la corrupcion de los registros episodicos.
 - Inconsistencia documental: el repositorio incluye la etiqueta safetensors, pero los checkpoints distribuidos son ficheros .pt de PyTorch; conviene verificar el formato antes de integrarlo.
-- Estado de adopcion nulo: 0 descargas y 0 likes en HuggingFace, y tamano de repositorio reportado de 0,0 GB, lo que sugiere ausencia de validacion por la comunidad.
+- Estado de adopcion nulo: 0 descargas y 0 likes en Hugging Face, y tamano de repositorio reportado de 0,0 GB, lo que sugiere ausencia de validacion por la comunidad.
 - Las fechas de creacion y actualizacion del repositorio (2026-10-08) son posteriores a la fecha de referencia habitual, dato a verificar por el lector.
 - La model card disponible esta truncada en la seccion de memoria de recuerdo diferido, por lo que parte de la evidencia declarada no puede revisarse completa.
 - Licencia MIT: permite uso comercial, modificacion y redistribucion, siempre conservando el aviso de copyright y la licencia. No se declaran restricciones adicionales de uso.
@@ -119,7 +119,7 @@ Categorias de referencia con las que se solapa conceptualmente el modelo: modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kai9987kai/Supermix-Poseidon
+- Modelo en Hugging Face: https://huggingface.co/Kai9987kai/Supermix-Poseidon
 - Repositorio GitHub: https://github.com/kai9987kai/Supermix-Poseidon
 - Referencia de calibracion citada: Guo et al. 2017 (escalado de temperatura); no se proporciona enlace directo en la informacion disponible.
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; las consultas devolvieron unicamente URL del servicio Outlook (outlook.com, pod51034.outlook.com/owa, ps.outlook.com/Powershell, olmoauth.outlook.com), sin relacion con el modelo.

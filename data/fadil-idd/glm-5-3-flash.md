@@ -6,7 +6,7 @@ GLM-5.3-Flash es el primer modelo nativamente multimodal de la serie GLM-5, desa
 
 El modelo resuelve el problema del coste de servicio en contextos largos: según la model card, reduce drásticamente los costes de serving en long-context preservando capacidades de contexto largo precisas. Incorpora además Manifold-Constrained Hyper-Connections (mHC) para mejorar la eficiencia de escalado. Según el autor, supera a GLM-5.2 en benchmarks y cargas reales a una décima parte del precio, acercándose a Claude Opus 4.8 en tareas de código y agentes.
 
-Es relevante ahora porque representa la entrada de la familia GLM en el terreno multimodal nativo con una relación capacidad/coste agresiva, y porque su licencia MIT facilita el uso comercial. No obstante, la ficha se basa únicamente en la información disponible en HuggingFace y la model card; no se han podido verificar de forma independiente los resultados declarados.
+Es relevante ahora porque representa la entrada de la familia GLM en el terreno multimodal nativo con una relación capacidad/coste agresiva, y porque su licencia MIT facilita el uso comercial. No obstante, la ficha se basa únicamente en la información disponible en Hugging Face y la model card; no se han podido verificar de forma independiente los resultados declarados.
 
 ## Especificaciones tecnicas
 
@@ -75,7 +75,7 @@ La model card incluye una imagen de benchmarks (`bench_53.png`) y notas metodol�
 
 | Modelo | Parámetros | Activos | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GLM-5.3-Flash | ~321B | 18B | No explícito (evals hasta 1M) | MIT | Sí (imagen-texto) | HuggingFace, API Z.ai |
+| GLM-5.3-Flash | ~321B | 18B | No explícito (evals hasta 1M) | MIT | Sí (imagen-texto) | Hugging Face, API Z.ai |
 | GLM-5.2 | No disponible | No disponible | No disponible | No disponible | No disponible | Referenciado en la model card |
 | Claude Opus 4.8 | No disponible | No disponible | No disponible | Propietaria | No disponible | API propietaria |
 
@@ -95,7 +95,7 @@ La model card compara GLM-5.3-Flash con GLM-5.2 (al que declara superar a una d�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fadil-idd/GLM-5.3-Flash
+- Hugging Face: https://huggingface.co/Fadil-idd/GLM-5.3-Flash
 - Blog GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Informe técnico (arXiv): https://arxiv.org/abs/2602.15763
 - API Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

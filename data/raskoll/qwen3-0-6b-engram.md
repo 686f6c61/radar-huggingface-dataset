@@ -23,7 +23,7 @@ El modelo está desarrollado por el usuario Raskoll y publicado bajo licencia Ap
 
 El modelo parte de `Qwen3-0.6B-Base`, un transformer denso de 0,6 mil millones de parametros con atención multi-cabeza y normalización RMS. Sobre esta base, se añade una capa de memoria condicional denominada *Engram*, que consiste en una tabla de búsqueda (LUT) de aproximadamente 2 GB que se mantiene fuera de los pesos principales (offloaded). Esta LUT almacena representaciones de contexto que se consultan durante la generación para mejorar la predicción del siguiente token, siguiendo el concepto de memoria condicional de DeepSeek.
 
-El entrenamiento se realizó sobre el dataset `Salesforce/wikitext`, un corpus de artículos de Wikipedia en inglés. No se especifica el número de tokens de entrenamiento ni si se aplicaron técnicas de alineación como RLHF o DPO. La implementación requiere `trust_remote_code=True` en HuggingFace, lo que indica que se incluye código personalizado para la capa de memoria.
+El entrenamiento se realizó sobre el dataset `Salesforce/wikitext`, un corpus de artículos de Wikipedia en inglés. No se especifica el número de tokens de entrenamiento ni si se aplicaron técnicas de alineación como RLHF o DPO. La implementación requiere `trust_remote_code=True` en Hugging Face, lo que indica que se incluye código personalizado para la capa de memoria.
 
 ## Capacidades
 
@@ -79,10 +79,10 @@ La comparación directa con TinyLlama no es posible por falta de datos de perple
 - Riesgo de alucinación: como cualquier modelo de lenguaje pequeño, puede generar contenido plausible pero incorrecto, especialmente en tareas que requieren conocimiento factual.
 - La longitud de contexto no está confirmada; si se hereda del modelo base, sería de 32.768 tokens, pero la capa de memoria podría alterar el comportamiento.
 - No hay información sobre el proceso de entrenamiento (número de tokens, épocas, configuración de hiperparámetros), lo que dificulta la reproducibilidad.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es un experimento reciente y no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es un experimento reciente y no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raskoll/qwen3-0.6b-engram
+- Modelo en Hugging Face: https://huggingface.co/Raskoll/qwen3-0.6b-engram
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Salesforce/wikitext

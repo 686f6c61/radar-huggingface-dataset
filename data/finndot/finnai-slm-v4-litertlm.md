@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| finndot/finnai-slm-v4-litertlm | ~1.7B | KV limitada a 1280 tokens | `.litertlm` | Apache 2.0 | HuggingFace |
-| finndot/finnai-slm-v4 (modelo base) | ~1.7B | No disponible | bf16 (safetensors presumiblemente) | Apache 2.0 | HuggingFace |
-| Qwen3 1.7B (modelo original) | 1.7B | No disponible en esta ficha | safetensors, GGUF y otros | Apache 2.0 | HuggingFace |
+| finndot/finnai-slm-v4-litertlm | ~1.7B | KV limitada a 1280 tokens | `.litertlm` | Apache 2.0 | Hugging Face |
+| finndot/finnai-slm-v4 (modelo base) | ~1.7B | No disponible | bf16 (safetensors presumiblemente) | Apache 2.0 | Hugging Face |
+| Qwen3 1.7B (modelo original) | 1.7B | No disponible en esta ficha | safetensors, GGUF y otros | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la información proporcionada.
 

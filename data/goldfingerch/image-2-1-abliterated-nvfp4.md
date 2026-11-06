@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Image-2.1-abliterated-NVFP4 | 4.443 M (DiT) | no disponible | safetensors NVFP4 (ModelOpt) | qwen-research-license | HuggingFace, 17 descargas |
-| Qwen/Qwen-Image-2.1 (base) | no disponible en la informacion | no disponible | safetensors BF16 | qwen-research-license | HuggingFace (modelo base) |
-| chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1 | adaptador rango 128 | no aplica | LoRA | no disponible | HuggingFace (adaptador de origen) |
+| Image-2.1-abliterated-NVFP4 | 4.443 M (DiT) | no disponible | safetensors NVFP4 (ModelOpt) | qwen-research-license | Hugging Face, 17 descargas |
+| Qwen/Qwen-Image-2.1 (base) | no disponible en la informacion | no disponible | safetensors BF16 | qwen-research-license | Hugging Face (modelo base) |
+| chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1 | adaptador rango 128 | no aplica | LoRA | no disponible | Hugging Face (adaptador de origen) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GoldfingerCH/Image-2.1-abliterated-NVFP4
+- Hugging Face: https://huggingface.co/GoldfingerCH/Image-2.1-abliterated-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Adaptador de origen: https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1
 - Imagen de despliegue: `vllm/vllm-omni:qwen-image21` (Docker Hub)

@@ -83,7 +83,7 @@ No hay datos de rendimiento publicados para este repositorio, por lo que no es p
 | doc-cascade-fastpath (este repo) | no disponible (codigo solo) | 256 tokens por defecto en la via lenta; texto extraido de PDF sin layout | no disponible | Cascada coste/precision con rechazo a humano; sin pesos ni metricas publicadas |
 | Clasificador DistilBERT de una sola etapa | ~66 M (variante base estandar) | 512 tokens en la configuracion estandar de DistilBERT; la model card usa 256 | Apache 2.0 en la variante base de referencia | Mas simple que la cascada, pero paga el coste del transformer en todas las paginas |
 | Baseline de reglas o expresiones regulares | 0 (no aprendido) | sin limite practico, depende del texto | depende del proyecto | Muy rapido y explicito, pero fragil ante variacion de plantillas y sin capacidad de calibracion por confianza |
-| LayoutLMv3-base (Microsoft) | ~133 M | 512 tokens con caracteristicas de layout | cc-by-nc-sa-4.0 (uso no comercial) segun su ficha en HuggingFace | Aprovecha posicion y estructura del documento; requiere features de layout, que esta cascada no usa al partir de texto extraido |
+| LayoutLMv3-base (Microsoft) | ~133 M | 512 tokens con caracteristicas de layout | cc-by-nc-sa-4.0 (uso no comercial) segun su ficha en Hugging Face | Aprovecha posicion y estructura del documento; requiere features de layout, que esta cascada no usa al partir de texto extraido |
 
 ## Limitaciones y advertencias
 
@@ -101,7 +101,7 @@ No hay datos de rendimiento publicados para este repositorio, por lo que no es p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amohammed3339/doc-cascade-fastpath
+- Repositorio en Hugging Face: https://huggingface.co/amohammed3339/doc-cascade-fastpath
 - Scripts incluidos en el repositorio (rutas internas, sin URL publica): `scripts/generate_synth_pages.py`, `scripts/train_fastpath.py`, `scripts/train_transformer.py`, `scripts/calibrate_cascade.py`, `scripts/classify_pages.py`
 - Paper, blog, demo o dataset asociado: no disponible. La model card no enlaza ninguna publicacion externa.
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las referencias devueltas corresponden a documentacion de HTML sobre el atributo `http-equiv` (W3Schools, MDN, GeeksforGeeks) y no guardan relacion con el modelo.

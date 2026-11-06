@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jessedbrown/dungeon es un repositorio alojado en HuggingFace cuyo contenido publicado no corresponde a un modelo de aprendizaje automatico, sino a un programa en Python para la generacion procedural de mazmorras ("procedural dungeon generation"). La model card se limita a describir un proyectil de software: un titulo ("Calculator frontend"), una seccion de generacion procedural de mazmorras, un prerequisito de Python 3.8 o superior y unas instrucciones de instalacion mediante `pip install -r requirements.txt` y ejecucion con `python dungeon.py`. No se declara autor institucional, paper, dataset ni artefacto de pesos.
+Jessedbrown/dungeon es un repositorio alojado en Hugging Face cuyo contenido publicado no corresponde a un modelo de aprendizaje automatico, sino a un programa en Python para la generacion procedural de mazmorras ("procedural dungeon generation"). La model card se limita a describir un proyectil de software: un titulo ("Calculator frontend"), una seccion de generacion procedural de mazmorras, un prerequisito de Python 3.8 o superior y unas instrucciones de instalacion mediante `pip install -r requirements.txt` y ejecucion con `python dungeon.py`. No se declara autor institucional, paper, dataset ni artefacto de pesos.
 
 No hay informacion disponible sobre arquitectura, numero de parametros, longitud de contexto, idiomas, licencia ni formato de pesos. El repositorio acumula 0 descargas y 0 "likes", y su unico tag es `region:us`. La unica URL de pipeline (`pipeline`) aparece como no disponible, lo que es coherente con la ausencia de un modelo inferible.
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha debe leerse como una evaluacion de disponibilidad y no com
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
 
-Datos adicionales de la ficha de HuggingFace:
+Datos adicionales de la ficha de Hugging Face:
 
 | Parametro | Valor |
 |---|---|
@@ -92,7 +92,7 @@ No disponible. No se dispone de informacion suficiente para identificar modelos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessedbrown/dungeon
+- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/dungeon
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo adicional: no disponible

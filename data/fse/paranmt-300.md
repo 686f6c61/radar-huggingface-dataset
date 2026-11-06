@@ -4,7 +4,7 @@
 
 ParaNMT-300 es un conjunto de embeddings de palabras estáticos de 300 dimensiones para 77.224 palabras del inglés, derivado del artículo «Pushing the Limits of Paraphrastic Sentence Embeddings with Millions of Machine Translations» (Wieting y Gimpel, 2018), que introduce el corpus de paráfrasis ParaNMT-50M. No es un modelo generativo ni un transformer: son vectores de palabra en formato gensim `KeyedVectors` que, combinados con técnicas de composición como CBOW promediado, SIF o uSIF, producen representaciones de frase.
 
-El repositorio de HuggingFace no contiene el modelo original, sino una redistribución de los vectores publicados por John Wieting en su página de la Universidad Carnegie Mellon, empaquetados para la librería `fse` (Fast Sentence Embeddings) de Oliver Borchers. Su interés actual es acotado pero real: sirve como baseline ligero de sentence embeddings, como componente de búsqueda semántica de bajo coste y como referencia histórica frente a los modelos tipo Sentence-BERT.
+El repositorio de Hugging Face no contiene el modelo original, sino una redistribución de los vectores publicados por John Wieting en su página de la Universidad Carnegie Mellon, empaquetados para la librería `fse` (Fast Sentence Embeddings) de Oliver Borchers. Su interés actual es acotado pero real: sirve como baseline ligero de sentence embeddings, como componente de búsqueda semántica de bajo coste y como referencia histórica frente a los modelos tipo Sentence-BERT.
 
 La relevancia práctica está en su coste: 93 MB en `float32`, ejecutable en CPU sin GPU, con opción de mapear los vectores en memoria en lugar de cargarlos en RAM. La contrapartida es que la licencia no está declarada en la fuente original, lo que condiciona cualquier uso comercial.
 
@@ -87,7 +87,7 @@ Los tamaños de vocabulario de las alternativas provienen de su documentación p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/paranmt-300
+- Modelo en Hugging Face: https://huggingface.co/fse/paranmt-300
 - Página de John Wieting en CMU (origen de los vectores): https://www.cs.cmu.edu/~jwieting/
 - Artículo «ParaNMT-50M: Pushing the Limits of Paraphrastic Sentence Embeddings with Millions of Machine Translations»: https://www.cs.cmu.edu/~jwieting/wieting2017Millions.pdf
 - Repositorio de Fast Sentence Embeddings (`fse`): https://github.com/oborchers/Fast_Sentence_Embeddings

@@ -80,10 +80,10 @@ El autor indica que la mejora de velocidad (aproximadamente 1,5x) se debe a que 
 
 | Modelo | Parametros | Tamano | Formato | PPL (Wikitext-2) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (roman220220) | 12,96B | 7,89 GB | MLX (rejilla q4_0, escala bf16) | 22,77 | Apache 2.0 | HuggingFace |
-| mlx-community/gemma-4-12B-it-qat-4bit | 12,96B (base comun) | 10,99 GB | MLX, grupo 64, MLP a 8 bits | 22,82 | Apache 2.0 | HuggingFace |
-| mlx-community/gemma-4-12B-it-4bit (sin QAT) | 12,96B (base comun) | 6,74 GB | MLX, cuantizacion estandar | 26,70 | Apache 2.0 | HuggingFace |
-| google/gemma-4-12B-it-qat-q4_0-unquantized (maestro) | 12,96B (base comun) | bf16, mayor | safetensors bf16 | 22,26 | Apache 2.0 | HuggingFace |
+| Este modelo (roman220220) | 12,96B | 7,89 GB | MLX (rejilla q4_0, escala bf16) | 22,77 | Apache 2.0 | Hugging Face |
+| mlx-community/gemma-4-12B-it-qat-4bit | 12,96B (base comun) | 10,99 GB | MLX, grupo 64, MLP a 8 bits | 22,82 | Apache 2.0 | Hugging Face |
+| mlx-community/gemma-4-12B-it-4bit (sin QAT) | 12,96B (base comun) | 6,74 GB | MLX, cuantizacion estandar | 26,70 | Apache 2.0 | Hugging Face |
+| google/gemma-4-12B-it-qat-q4_0-unquantized (maestro) | 12,96B (base comun) | bf16, mayor | safetensors bf16 | 22,26 | Apache 2.0 | Hugging Face |
 
 Los tres primeros comparten el mismo modelo base de Google y difieren en la estrategia de cuantizacion. No se dispone de comparativas con modelos de otros fabricantes ni con arquitecturas distintas en la informacion proporcionada.
 
@@ -104,7 +104,7 @@ Los tres primeros comparten el mismo modelo base de Google y difieren en la estr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roman220220/gemma-4-12B-it-qat-mlx
+- Modelo en Hugging Face: https://huggingface.co/roman220220/gemma-4-12B-it-qat-mlx
 - Modelo base (pesos maestros QAT sin cuantizar): https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized
 - GGUF oficial q4_0 de Google: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-gguf
 - Build comparativo mlx-community QAT: https://huggingface.co/mlx-community/gemma-4-12B-it-qat-4bit

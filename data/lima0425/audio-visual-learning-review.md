@@ -63,7 +63,7 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lima0425/audio-visual-learning-review
+- Repositorio en Hugging Face: https://huggingface.co/lima0425/audio-visual-learning-review
 - Paper de referencia sobre aprendizaje audiovisual (arXiv): https://arxiv.org/abs/2208.09579
 - Revisión sobre inteligencia audiovisual en modelos fundacionales (arXiv): https://arxiv.org/abs/2605.04045
 - Página del grupo GeWu-Lab sobre audio-visual learning: https://gewu-lab.github.io/audio-visual-learning/

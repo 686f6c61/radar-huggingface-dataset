@@ -90,7 +90,7 @@ No se dispone de datos suficientes para comparar el rendimiento con alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/florianvoss/Qwen3.5-2B-Autoround-a16w4-Modalix
+- Modelo en Hugging Face: https://huggingface.co/florianvoss/Qwen3.5-2B-Autoround-a16w4-Modalix
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Perfil del autor: https://huggingface.co/florianvoss
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a SiMa.ai Modalix, al runtime LLiMa, a AutoRound o a SmoothQuant. Los resultados devueltos corresponden a hilos de Stack Overflow y de un foro sin relacion con el modelo.

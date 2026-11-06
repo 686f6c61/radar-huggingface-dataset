@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BulmaX Gen2 es un checkpoint de pesos de entrenamiento publicado por el usuario YNSScarSaiyan en HuggingFace bajo el identificador `YNSScarSaiyan/bulmax-gen2-weights`. Según la model card, se trata de un mirror de pesos brutos (weights-only) de una ejecución de entrenamiento denominada "BulmaX Gen2". El repositorio contiene tensores en formato safetensors junto con archivos auxiliares denominados "coherence sidecars", y ocupa aproximadamente 467,6 GB.
+BulmaX Gen2 es un checkpoint de pesos de entrenamiento publicado por el usuario YNSScarSaiyan en Hugging Face bajo el identificador `YNSScarSaiyan/bulmax-gen2-weights`. Según la model card, se trata de un mirror de pesos brutos (weights-only) de una ejecución de entrenamiento denominada "BulmaX Gen2". El repositorio contiene tensores en formato safetensors junto con archivos auxiliares denominados "coherence sidecars", y ocupa aproximadamente 467,6 GB.
 
 La característica más destacable es que la arquitectura del modelo es personalizada y no estándar: el README menciona "quantum-manifold attention", "low-rank complex projections" y "13 cognitive subsystems". Sin embargo, el propio autor advierte explícitamente de que estos tensores **no son cargables en ningún framework estándar** sin el codebase privado que implementa dicha arquitectura. Esto significa que, a día de hoy, el modelo no es directamente utilizable por terceros para inferencia o fine-tuning.
 
@@ -72,6 +72,6 @@ No disponible. No se conocen modelos comparables en la misma categoría, dado qu
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/YNSScarSaiyan/bulmax-gen2-weights)
+- [Repositorio Hugging Face](https://huggingface.co/YNSScarSaiyan/bulmax-gen2-weights)
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la información disponible.

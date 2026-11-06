@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `LarryAIDraw/GameIconResearch_sword_Lora` es un adaptador LoRA publicado en HuggingFace por el usuario LarryAIDraw. El nombre del recurso sugiere que está orientado a la generación de iconos de espadas para videojuegos, aunque la model card no incluye documentación técnica alguna más allá de la licencia. El repositorio tiene un tamaño de 0,1 GB y no registra descargas ni valoraciones en el momento de la consulta. No se especifica el modelo base sobre el que se aplica el adaptador ni el pipeline de difusión empleado, por lo que la información disponible no permite validar su comportamiento ni determinar su relevancia actual.
+El repositorio `LarryAIDraw/GameIconResearch_sword_Lora` es un adaptador LoRA publicado en Hugging Face por el usuario LarryAIDraw. El nombre del recurso sugiere que está orientado a la generación de iconos de espadas para videojuegos, aunque la model card no incluye documentación técnica alguna más allá de la licencia. El repositorio tiene un tamaño de 0,1 GB y no registra descargas ni valoraciones en el momento de la consulta. No se especifica el modelo base sobre el que se aplica el adaptador ni el pipeline de difusión empleado, por lo que la información disponible no permite validar su comportamiento ni determinar su relevancia actual.
 
 ## Especificaciones tecnicas
 
@@ -61,5 +61,5 @@ No se dispone de información sobre modelos comparables para este adaptador conc
 
 ## Enlaces
 
-- [HuggingFace: LarryAIDraw/GameIconResearch_sword_Lora](https://huggingface.co/LarryAIDraw/GameIconResearch_sword_Lora)
+- [Hugging Face: LarryAIDraw/GameIconResearch_sword_Lora](https://huggingface.co/LarryAIDraw/GameIconResearch_sword_Lora)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en la información disponible.

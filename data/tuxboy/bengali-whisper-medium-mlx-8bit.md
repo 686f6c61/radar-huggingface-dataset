@@ -98,11 +98,11 @@ Las cifras de los dos modelos de OpenAI no provienen de la informacion proporcio
 - Licencia Apache-2.0, que permite uso comercial, pero al derivar del modelo base de BengaliAI conviene verificar las condiciones y la atribucion de ese modelo y del dataset Ben-10.
 - Adopcion practicamente nula (0 descargas, 1 like) y ausencia de resultados de benchmarks: no es recomendable desplegarlo en produccion sin una evaluacion propia de WER sobre el dominio objetivo.
 - Riesgo de alucinacion de texto en segmentos sin voz o con audio degradado, derivado de la desactivacion del filtro de no-habla.
-- Fechas de creacion y actualizacion del repositorio reportadas como 2026-09-10 segun la ficha de HuggingFace; conviene confirmarlas en el propio repositorio.
+- Fechas de creacion y actualizacion del repositorio reportadas como 2026-09-10 segun la ficha de Hugging Face; conviene confirmarlas en el propio repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tuxboy/bengali-whisper-medium-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/tuxboy/bengali-whisper-medium-mlx-8bit
 - Modelo base (BengaliAI regional Whisper Medium): https://huggingface.co/bengaliAI/tugstugi_bengaliai-regional-asr_whisper-medium
 - Dataset de entrenamiento del modelo base (Ben-10): https://huggingface.co/datasets/bengaliAI/Ben-10
 - Model card del modelo base citada en el repositorio: SOURCE_MODEL_CARD.md (incluida en el repositorio del modelo)

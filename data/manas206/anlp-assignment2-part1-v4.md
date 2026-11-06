@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Part 1 V4 (one_epoch) es un modelo de traduccion automatica de tipo decoder-only entrenado desde cero en PyTorch, sin partir de ningun transformer preentrenado. Lo publica el usuario Manas206 en HuggingFace como parte de un trabajo academico de la asignatura ANLP (assignment 2, part 1), y su objetivo es traducir hacia ingles desde vietnamita o japones usando prompts con etiquetas de idioma explicitas. La model card lo describe como un modelo propio completamente entrenado por el autor, con un tokenizador BPE byte-level compartido de 16.000 tokens y una capacidad de contexto de 384 tokens.
+Part 1 V4 (one_epoch) es un modelo de traduccion automatica de tipo decoder-only entrenado desde cero en PyTorch, sin partir de ningun transformer preentrenado. Lo publica el usuario Manas206 en Hugging Face como parte de un trabajo academico de la asignatura ANLP (assignment 2, part 1), y su objetivo es traducir hacia ingles desde vietnamita o japones usando prompts con etiquetas de idioma explicitas. La model card lo describe como un modelo propio completamente entrenado por el autor, con un tokenizador BPE byte-level compartido de 16.000 tokens y una capacidad de contexto de 384 tokens.
 
 El modelo se entreno durante 6.973 actualizaciones (steps) sobre 40.187.852 tokens no de padding, empleando el split oficial de entrenamiento del dataset belumind/en-vi-ja-curated-500k-triplets. La etiqueta "mixture-of-experts" aparece en los metadatos del repositorio, pero la model card no detalla el numero de expertos, el enrutado ni el recuento de parametros, por lo que no es posible confirmar la arquitectura interna mas alla de la naturaleza decoder-only.
 
@@ -17,7 +17,7 @@ Su relevancia es fundamentalmente academica y de investigacion: se trata de un e
 | Parametros activos | no disponible |
 | Longitud de contexto | 384 tokens |
 | Tipos de cuantizacion | no disponible; se distribuyen pesos nativos de PyTorch |
-| Idiomas soportados | La metadata de HuggingFace indica "no disponibles"; la model card describe traduccion hacia ingles desde vietnamita y japones |
+| Idiomas soportados | La metadata de Hugging Face indica "no disponibles"; la model card describe traduccion hacia ingles desde vietnamita y japones |
 | Licencia | no disponible |
 | Formato de pesos | Checkpoint nativo de PyTorch (libreria `pytorch`); no se ofrecen safetensors ni GGUF |
 
@@ -89,7 +89,7 @@ Los datos de la columna "este modelo" proceden del repositorio; los de las alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Manas206/anlp-assignment2-part1-v4
+- Modelo en Hugging Face: https://huggingface.co/Manas206/anlp-assignment2-part1-v4
 - Dataset de entrenamiento: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - Repositorio de PyTorch: https://github.com/pytorch/pytorch
 - Libreria tokenizers: https://github.com/huggingface/tokenizers

@@ -87,7 +87,7 @@ No se disponen de benchmarks comparativos directos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Iceky/AuK-French-LoRA
+- Modelo en Hugging Face: https://huggingface.co/Iceky/AuK-French-LoRA
 - Modelo base: https://huggingface.co/tencent/AuK
-- Codificador de texto (externo, no incluido): Qwen2.5-Omni-3B (repositorio de Qwen en HuggingFace)
+- Codificador de texto (externo, no incluido): Qwen2.5-Omni-3B (repositorio de Qwen en Hugging Face)
 - Paper, demo o repositorio de codigo de inferencia: no disponible en la informacion proporcionada (la inferencia se realiza con la herramienta `auk-infer` del ecosistema AuK)

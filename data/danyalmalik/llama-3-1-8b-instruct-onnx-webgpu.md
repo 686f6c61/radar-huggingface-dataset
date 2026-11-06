@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo nuevo, sino una conversión de `meta-llama/Llama-3.1-8B-Instruct` (tomada de la copia sin gating `unsloth/Llama-3.1-8B-Instruct`) al formato ONNX Runtime GenAI, pensada para ejecutarse en un navegador web sobre el backend WebGPU de ONNX Runtime Web. La publicación corre a cargo del usuario de HuggingFace `danyalmalik` y está orientada a "Quick Inference", un runtime de inferencia en cliente. Además del decoder principal, el repositorio incluye una cabeza draft EAGLE-3 (`yuhuili/EAGLE3-LLaMA3.1-Instruct-8B`, también en ONNX) para decodificación especulativa.
+Este repositorio no contiene un modelo nuevo, sino una conversión de `meta-llama/Llama-3.1-8B-Instruct` (tomada de la copia sin gating `unsloth/Llama-3.1-8B-Instruct`) al formato ONNX Runtime GenAI, pensada para ejecutarse en un navegador web sobre el backend WebGPU de ONNX Runtime Web. La publicación corre a cargo del usuario de Hugging Face `danyalmalik` y está orientada a "Quick Inference", un runtime de inferencia en cliente. Además del decoder principal, el repositorio incluye una cabeza draft EAGLE-3 (`yuhuili/EAGLE3-LLaMA3.1-Instruct-8B`, también en ONNX) para decodificación especulativa.
 
 El modelo resuelve un problema muy concreto: llevar un LLM de 8 000 millones de parámetros a inferencia local dentro del navegador, sin servidor y sin backend Python, aprovechando WebGPU. Para que quepa en memoria de GPU de consumo, las capas lineales se han cuantizado a 4 bits (redondeo al más cercano, bloque de 32) mientras que embeddings, activaciones y caché KV se mantienen en float16; el repositorio ocupa 5,9 GB.
 
@@ -95,7 +95,7 @@ La diferencia frente al original no está en calidad potencial sino en el despli
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/danyalmalik/Llama-3.1-8B-Instruct-ONNX-WebGPU
+- Repositorio Hugging Face: https://huggingface.co/danyalmalik/Llama-3.1-8B-Instruct-ONNX-WebGPU
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Copia sin gating usada en la conversión: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct
 - Cabeza draft EAGLE-3: https://huggingface.co/yuhuili/EAGLE3-LLaMA3.1-Instruct-8B

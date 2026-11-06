@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ania3000/tjbert-e-demo` es un modelo de tipo BERT (encoder-only, 105.267.880 parámetros) especializado en la tarea de `fill-mask`, publicado en HuggingFace por el usuario `ania3000`. Se trata de un fine-tune del checkpoint `ania3000/untrained-tjbert-e`, que por su nombre y por la propia model card parece ser un modelo BERT sin preentrenamiento previo (pesos inicializados aleatoriamente). El entrenamiento se realizó con la librería Transformers 4.57.1 y el `Trainer` estándar, y la model card se generó automáticamente sin completar las secciones de descripción, usos previstos ni datos.
+`ania3000/tjbert-e-demo` es un modelo de tipo BERT (encoder-only, 105.267.880 parámetros) especializado en la tarea de `fill-mask`, publicado en Hugging Face por el usuario `ania3000`. Se trata de un fine-tune del checkpoint `ania3000/untrained-tjbert-e`, que por su nombre y por la propia model card parece ser un modelo BERT sin preentrenamiento previo (pesos inicializados aleatoriamente). El entrenamiento se realizó con la librería Transformers 4.57.1 y el `Trainer` estándar, y la model card se generó automáticamente sin completar las secciones de descripción, usos previstos ni datos.
 
 El interés del modelo es, por tanto, fundamentalmente instrumental: sirve como artefacto de demostración de un pipeline de fine-tuning, no como modelo listo para producción. La pérdida de validación final es de 5,2437, un valor alto que sugiere un ajuste deficiente, coherente con haber partido de un checkpoint no preentrenado y con un conjunto de datos no documentado (la model card indica literalmente `None` como dataset).
 
@@ -35,7 +35,7 @@ El entrenamiento se ejecuto con los siguientes hiperparametros declarados: learn
 - No hay evidencia de capacidades agenticas ni de razonamiento multi-paso.
 - Capacidades multilingues: no declaradas; el tokenizador y el vocabulario no estan documentados en la informacion disponible.
 - No dispone de modo "thinking", audio ni modalidad adicional alguna.
-- El tag `endpoints_compatible` indica que puede servirse a traves de la infraestructura de inferencia de HuggingFace, pero no implica ninguna capacidad funcional adicional.
+- El tag `endpoints_compatible` indica que puede servirse a traves de la infraestructura de inferencia de Hugging Face, pero no implica ninguna capacidad funcional adicional.
 
 ## Casos de uso
 
@@ -44,7 +44,7 @@ El entrenamiento se ejecuto con los siguientes hiperparametros declarados: learn
 - Material docente: ejemplo reproducible de un ciclo completo de `Trainer` (hiperparametros, evaluacion por pasos, generacion automatica de model card) en un curso o taller de fine-tuning.
 - Baseline de ablation: punto de comparacion para medir cuanto aporta el preentrenamiento, entrenando el mismo pipeline sobre un checkpoint preentrenado y comparando la perdida de validacion.
 - Andamiaje para un fine-tune posterior: el script y los hiperparametros documentados pueden reutilizarse cambiando el `base_model` por un BERT preentrenado y el dataset por un corpus real.
-- Validacion de formatos de publicacion: util para comprobar el flujo de subida a HuggingFace con safetensors, tags de `base_model` y model card autogenerada sin consumir ancho de banda ni almacenamiento significativos.
+- Validacion de formatos de publicacion: util para comprobar el flujo de subida a Hugging Face con safetensors, tags de `base_model` y model card autogenerada sin consumir ancho de banda ni almacenamiento significativos.
 - Demostracion de la API `fill-mask` en documentacion o tutoriales, siempre que se advierta de que las predicciones no son fiables.
 
 ## Benchmarks y rendimiento

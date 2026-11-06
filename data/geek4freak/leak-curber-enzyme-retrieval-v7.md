@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Leak CURBER enzyme retrieval v7 es un sistema de recuperación y clasificación de enzimas que asigna un número EC (Enzyme Commission) a partir de un SMILES de reacción química. Lo desarrolla el usuario geek4freak y se distribuye en HuggingFace bajo licencia MIT, empaquetado como artefacto ONNX con inferencia exclusivamente en CPU mediante un script `predict.py`. No es un modelo de lenguaje generativo, sino un ensemble especializado de recuperación química: fingerprints de reacción, clasificadores MLP residuales, dos transformers de reacción rxnfp afinados y búsqueda kNN sobre múltiples representaciones.
+Leak CURBER enzyme retrieval v7 es un sistema de recuperación y clasificación de enzimas que asigna un número EC (Enzyme Commission) a partir de un SMILES de reacción química. Lo desarrolla el usuario geek4freak y se distribuye en Hugging Face bajo licencia MIT, empaquetado como artefacto ONNX con inferencia exclusivamente en CPU mediante un script `predict.py`. No es un modelo de lenguaje generativo, sino un ensemble especializado de recuperación química: fingerprints de reacción, clasificadores MLP residuales, dos transformers de reacción rxnfp afinados y búsqueda kNN sobre múltiples representaciones.
 
 La relevancia del sistema está en el problema que aborda: la anotación funcional de enzimas (asignación de EC) es un cuello de botella en biocatálisis, ingeniería metabólica y curación de bases de datos. El modelo combina vistas complementarias (Morgan dirigido, rsplit, atom pair), aumento con reacciones invertidas y objetivos multi-EC suaves (1/n) para manejar la ambigüedad inherente a reacciones con más de una enzima candidata. El ensemble pesa especialmente el componente BERT (peso 3.0) y las vistas kNN de diferencia de fingerprints.
 
-El repositorio ocupa 0,7 GB e incluye dos checkpoints BERT ONNX con vocabularios propios, además de los artefactos de retrieval. La model card reporta métricas de holdout local con validación cruzada (cross-fitting) para evitar inflación por ajuste de pesos, aunque el autor advierte que la puntuación real en el leaderboard puede diferir. No hay información sobre el pipeline de HuggingFace ni sobre idiomas soportados, lo cual es coherente con un modelo puramente químico.
+El repositorio ocupa 0,7 GB e incluye dos checkpoints BERT ONNX con vocabularios propios, además de los artefactos de retrieval. La model card reporta métricas de holdout local con validación cruzada (cross-fitting) para evitar inflación por ajuste de pesos, aunque el autor advierte que la puntuación real en el leaderboard puede diferir. No hay información sobre el pipeline de Hugging Face ni sobre idiomas soportados, lo cual es coherente con un modelo puramente químico.
 
 ## Especificaciones técnicas
 
@@ -74,7 +74,7 @@ El autor advierte que la estimación local se construyó para imitar el split de
 
 | Modelo | Tipo | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Leak CURBER enzyme retrieval v7 | Ensemble fingerprint + rxnfp + kNN | SMILES de reacción | MIT | HuggingFace (ONNX) |
+| Leak CURBER enzyme retrieval v7 | Ensemble fingerprint + rxnfp + kNN | SMILES de reacción | MIT | Hugging Face (ONNX) |
 | BEC-Pred (Qian et al., 2024) | Predicción de EC | Reacción | no disponible en la información | Referencia citada por el autor |
 | CLIPZyme (Mikhael et al., ICML 2024) | Recuperación enzima-reacción | Reacción y enzima | no disponible en la información | Referencia citada por el autor |
 | Horizyn (Rocks et al., PNAS 2026) | Recuperación enzima-reacción | Reacción | no disponible en la información | Referencia citada por el autor |
@@ -91,11 +91,11 @@ No se dispone de datos comparativos de rendimiento entre estos sistemas en la in
 - Sin datos publicados sobre latencia, throughput ni requisitos de RAM.
 - Licencia MIT: permite uso comercial, pero conviene verificar las licencias de las dependencias (rxnfp es MIT; el vocabulario EC de ExPASy es CC BY 4.0 y requiere atribución).
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta; sin validación comunitaria ni mantenimiento demostrado.
-- Fecha de creación futura (2026-10-31) en los metadatos de HuggingFace, lo que sugiere posibles inconsistencias en el registro.
+- Fecha de creación futura (2026-10-31) en los metadatos de Hugging Face, lo que sugiere posibles inconsistencias en el registro.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/geek4freak/leak-curber-enzyme-retrieval-v7
+- Hugging Face: https://huggingface.co/geek4freak/leak-curber-enzyme-retrieval-v7
 - rxnfp (Schwaller et al., Nat. Mach. Intell. 2021, MIT): referencia citada en la model card, sin URL explícita
 - BEC-Pred (Qian et al., J. Cheminform. 2024): referencia citada en la model card, sin URL explícita
 - CLIPZyme (Mikhael et al., ICML 2024): referencia citada en la model card, sin URL explícita

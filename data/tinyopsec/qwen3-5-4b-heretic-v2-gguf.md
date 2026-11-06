@@ -109,7 +109,7 @@ No se dispone de datos verificables de modelos alternativos en la informacion pr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/Qwen3.5-4B-heretic-v2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/Qwen3.5-4B-heretic-v2-GGUF
 - Modelo base: https://huggingface.co/Ttimms/Bible-Assistant-Qwen3.5-4B-v2
 - Descarga via Ollama: `ollama pull hf.co/tinyopsec/bible-assistant-qwen35-4b-GGUF:q4_k_m`
 - Papers, blogs, repositorios o demos adicionales: no disponible. Las busquedas web realizadas no devolvieron ningun resultado relacionado con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lily es un modelo publicado en HuggingFace por el usuario Selim55, con el identificador `Selim55/Lily`. A fecha de su creación, el 4 de septiembre de 2026, el modelo no tiene pipeline asignado, ni licencia declarada, ni lista de idiomas soportados, y acumula 0 descargas y 1 like. No se ha publicado ninguna documentación técnica en la página del repositorio.
+Lily es un modelo publicado en Hugging Face por el usuario Selim55, con el identificador `Selim55/Lily`. A fecha de su creación, el 4 de septiembre de 2026, el modelo no tiene pipeline asignado, ni licencia declarada, ni lista de idiomas soportados, y acumula 0 descargas y 1 like. No se ha publicado ninguna documentación técnica en la página del repositorio.
 
 La ausencia de información sobre arquitectura, parámetros, contexto, datos de entrenamiento o tareas de propósito hace imposible determinar qué problema resuelve o por qué sería relevante para desarrolladores e investigadores. Tampoco se han encontrado resultados de búsqueda web relacionados con el modelo, más allá de páginas de terceros con nombres similares (Lily V2, LilysAI) que no guardan relación con este repositorio.
 
@@ -54,4 +54,4 @@ No disponible: no se puede comparar el modelo con alternativas de la misma categ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Selim55/Lily
+- Hugging Face: https://huggingface.co/Selim55/Lily

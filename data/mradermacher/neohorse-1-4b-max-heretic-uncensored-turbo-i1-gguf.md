@@ -103,7 +103,7 @@ Frente a estas alternativas, el modelo de esta ficha se diferencia por su caract
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/NeoHorse-1-4B-Max-Heretic-Uncensored-TURBO-i1-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/NeoHorse-1-4B-Max-Heretic-Uncensored-TURBO-i1-GGUF
 - Repositorio de cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/NeoHorse-1-4B-Max-Heretic-Uncensored-TURBO-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/NeoHorse-1-4B-Max-Heretic-Uncensored-TURBO
 - Fichero imatrix: https://huggingface.co/mradermacher/NeoHorse-1-4B-Max-Heretic-Uncensored-TURBO-i1-GGUF/resolve/main/NeoHorse-1-4B-Max-Heretic-Uncensored-TURBO.imatrix.gguf

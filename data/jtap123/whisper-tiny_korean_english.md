@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny korean_english es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario jtap123 en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) derivado de la arquitectura Whisper de OpenAI, en su variante mas pequena, y entrenado sobre el dataset korean_english_english. El modelo esta pensado para transcribir audio, presumiblemente en un contexto bilingue coreano-ingles segun sugiere el nombre, aunque la model card solo declara oficialmente el idioma ingles.
+Whisper tiny korean_english es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario jtap123 en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) derivado de la arquitectura Whisper de OpenAI, en su variante mas pequena, y entrenado sobre el dataset korean_english_english. El modelo esta pensado para transcribir audio, presumiblemente en un contexto bilingue coreano-ingles segun sugiere el nombre, aunque la model card solo declara oficialmente el idioma ingles.
 
 La relevancia de este modelo es limitada: se trata de un experimento de fine-tuning con 0 descargas y 0 likes en el momento de la consulta, sin documentacion sustantiva (la model card indica "More information needed" en las secciones de descripcion, usos previstos y datos de entrenamiento). Su interes practico radica en servir como ejemplo de ajuste de Whisper tiny sobre un dataset especifico y en su bajo coste computacional, dado que apenas cuenta con 37,7 millones de parametros.
 
@@ -75,10 +75,10 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | WER (dataset) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jtap123/whisper-tiny_korean_english | 37,7 M | no disponible | 9,73 (korean_english English) | apache-2.0 | HuggingFace |
-| openai/whisper-tiny | ~39 M | ventanas de 30 s de audio | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-base | ~74 M | ventanas de 30 s de audio | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-small | ~244 M | ventanas de 30 s de audio | no disponible en esta ficha | apache-2.0 | HuggingFace |
+| jtap123/whisper-tiny_korean_english | 37,7 M | no disponible | 9,73 (korean_english English) | apache-2.0 | Hugging Face |
+| openai/whisper-tiny | ~39 M | ventanas de 30 s de audio | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-base | ~74 M | ventanas de 30 s de audio | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-small | ~244 M | ventanas de 30 s de audio | no disponible en esta ficha | apache-2.0 | Hugging Face |
 
 La comparacion directa de WER no es posible porque los modelos originales de OpenAI no declaran resultados sobre el dataset korean_english_english. El ajuste fino parte de whisper-tiny, por lo que su rendimiento en ingles general deberia ser similar o ligeramente inferior al original, salvo en el dominio especifico del dataset de entrenamiento.
 
@@ -95,7 +95,7 @@ La comparacion directa de WER no es posible porque los modelos originales de Ope
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jtap123/whisper-tiny_korean_english
+- Modelo en Hugging Face: https://huggingface.co/jtap123/whisper-tiny_korean_english
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio de Whisper de OpenAI (referencia de la arquitectura): https://github.com/openai/whisper
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

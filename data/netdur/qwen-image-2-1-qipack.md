@@ -91,7 +91,7 @@ No se dispone de datos para comparar con otros empaquetados para Apple Silicon (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/netdur/Qwen-Image-2.1-QIPACK
+- Repositorio Hugging Face: https://huggingface.co/netdur/Qwen-Image-2.1-QIPACK
 - Runtime `qwen-image-cplus`: https://github.com/netdur/qwen-image-cplus
 - Modelo base original: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Modelo destilado de origen: https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo

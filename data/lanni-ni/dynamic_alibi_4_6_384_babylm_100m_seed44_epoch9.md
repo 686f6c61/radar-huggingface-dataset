@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch9` es un modelo de lenguaje de tamaño pequeño, con 45.694.080 parámetros totales, publicado en HuggingFace por el usuario Lanni-ni. Se presenta como un modelo de generación de texto basado en la librería transformers, con pesos en formato safetensors. El nombre del repositorio y las etiquetas sugieren que utiliza una variante de ALiBi (Attention with Linear Biases) denominada "dynamic_alibi", y que fue entrenado en el contexto del proyecto BabyLM, probablemente con un presupuesto de 100 millones de tokens. El modelo está vinculado al artículo arxiv:1910.09700, que es el trabajo original de ALiBi.
+El modelo `Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch9` es un modelo de lenguaje de tamaño pequeño, con 45.694.080 parámetros totales, publicado en Hugging Face por el usuario Lanni-ni. Se presenta como un modelo de generación de texto basado en la librería transformers, con pesos en formato safetensors. El nombre del repositorio y las etiquetas sugieren que utiliza una variante de ALiBi (Attention with Linear Biases) denominada "dynamic_alibi", y que fue entrenado en el contexto del proyecto BabyLM, probablemente con un presupuesto de 100 millones de tokens. El modelo está vinculado al artículo arxiv:1910.09700, que es el trabajo original de ALiBi.
 
 Sin embargo, la información pública disponible es extremadamente limitada. La model card es una plantilla automática sin datos específicos, y no se han publicado resultados de evaluación, detalles de arquitectura, datos de entrenamiento, ni instrucciones de uso. El modelo no tiene descargas ni me gusta en el momento de la consulta, lo que indica que probablemente se trata de un experimento de investigación sin documentación formal. Por tanto, esta ficha debe leerse con cautela: cualquier afirmación más allá de los datos confirmados es especulativa.
 
@@ -27,7 +27,7 @@ El entrenamiento se ha realizado con el corpus BabyLM, segun se deduce de la cad
 
 ## Capacidades
 
-No se han publicado especificaciones de capacidades. No se puede confirmar si el modelo soporta generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, agentes o capacidades multilingues. La unica informacion disponible es que el pipeline de HuggingFace es `text-generation`, lo que implica que esta pensado para generar texto, pero no hay evidencias de evaluacion de su calidad ni de sus limites.
+No se han publicado especificaciones de capacidades. No se puede confirmar si el modelo soporta generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, agentes o capacidades multilingues. La unica informacion disponible es que el pipeline de Hugging Face es `text-generation`, lo que implica que esta pensado para generar texto, pero no hay evidencias de evaluacion de su calidad ni de sus limites.
 
 ## Casos de uso
 
@@ -45,7 +45,7 @@ Con 45.694.080 parametros, el modelo es muy ligero y puede ejecutarse incluso en
 - VRAM estimada en fp16: aproximadamente 91 MB (45,7 M x 2 bytes).
 - VRAM estimada en cuantizacion int8: aproximadamente 46 MB.
 - GPU recomendadas: cualquier GPU moderna, incluso las de gama baja (GTX 1650, RTX 3050), o directamente CPU con suficiente RAM.
-- Opciones de despliegue: al usar la libreria transformers, puede ejecutarse con `pipeline` de HuggingFace. Tambien es compatible con llama.cpp u Ollama si se convierten los pesos a GGUF, aunque no se ha confirmado que el modelo sea compatible con esas herramientas.
+- Opciones de despliegue: al usar la libreria transformers, puede ejecutarse con `pipeline` de Hugging Face. Tambien es compatible con llama.cpp u Ollama si se convierten los pesos a GGUF, aunque no se ha confirmado que el modelo sea compatible con esas herramientas.
 - Latencia y throughput estimados: al ser un modelo pequeno, la latencia en GPU sera del orden de milisegundos por token, y el throughput puede ser alto, pero no se dispone de mediciones publicas.
 
 ## Comparativa con modelos similares
@@ -63,6 +63,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch9
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch9
 - Paper de ALiBi (arxiv:1910.09700): https://arxiv.org/abs/1910.09700
-- Perfil del autor en HuggingFace: https://huggingface.co/Lanni-ni
+- Perfil del autor en Hugging Face: https://huggingface.co/Lanni-ni

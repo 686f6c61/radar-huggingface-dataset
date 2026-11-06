@@ -4,7 +4,7 @@
 
 El modelo `longtermrisk/OLMo-3-7B-german-city-names-first-third-v2-sft-seed2-epoch3` es un ajuste fino (fine-tuning) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. Se distribuye bajo licencia Apache 2.0 y está pensado para generación de texto en inglés. El nombre sugiere que el entrenamiento se realizó sobre un conjunto de datos relacionado con nombres de ciudades alemanas, aunque no se proporcionan detalles adicionales sobre el dataset ni el proceso de entrenamiento.
 
-El modelo fue entrenado con la librería Unsloth (que acelera el entrenamiento hasta 2 veces) y la biblioteca TRL de HuggingFace. A pesar de que el repositorio contiene un archivo `safetensors` que reporta 528.384 parámetros, el tamaño total del repositorio (14.6 GB) es consistente con un modelo de aproximadamente 7 mil millones de parámetros, lo que sugiere que la cifra de parámetros en la metadata es un error o corresponde a un subconjunto del modelo. No se dispone de más información técnica en la model card.
+El modelo fue entrenado con la librería Unsloth (que acelera el entrenamiento hasta 2 veces) y la biblioteca TRL de Hugging Face. A pesar de que el repositorio contiene un archivo `safetensors` que reporta 528.384 parámetros, el tamaño total del repositorio (14.6 GB) es consistente con un modelo de aproximadamente 7 mil millones de parámetros, lo que sugiere que la cifra de parámetros en la metadata es un error o corresponde a un subconjunto del modelo. No se dispone de más información técnica en la model card.
 
 ## Especificaciones tecnicas
 
@@ -21,12 +21,12 @@ El modelo fue entrenado con la librería Unsloth (que acelera el entrenamiento h
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del modelo instructivo OLMo-3-7B, que pertenece a la familia OLMo de arquitectura transformer. El ajuste se realizó con Unsloth, una librería que optimiza el entrenamiento mediante kernels y técnicas de memoria reducida, y con la biblioteca TRL de HuggingFace para el entrenamiento supervisado (SFT). No se especifican los datos de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO. El nombre del modelo indica que el dataset podría estar relacionado con nombres de ciudades alemanas, pero no hay confirmación oficial.
+El modelo es un fine-tuning del modelo instructivo OLMo-3-7B, que pertenece a la familia OLMo de arquitectura transformer. El ajuste se realizó con Unsloth, una librería que optimiza el entrenamiento mediante kernels y técnicas de memoria reducida, y con la biblioteca TRL de Hugging Face para el entrenamiento supervisado (SFT). No se especifican los datos de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO. El nombre del modelo indica que el dataset podría estar relacionado con nombres de ciudades alemanas, pero no hay confirmación oficial.
 
 ## Capacidades
 
 - Generación de texto en inglés (pipeline `text-generation`).
-- Conversación (etiqueta `conversational` en HuggingFace).
+- Conversación (etiqueta `conversational` en Hugging Face).
 - Capacidades adicionales (tool calling, agentes, razonamiento multi-step, etc.): no disponibles en la información proporcionada.
 
 ## Casos de uso
@@ -57,6 +57,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-first-third-v2-sft-seed2-epoch3)
+- [Página del modelo en Hugging Face](https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-first-third-v2-sft-seed2-epoch3)
 - [Modelo base: unsloth/Olmo-3-7B-Instruct](https://huggingface.co/unsloth/Olmo-3-7B-Instruct)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)

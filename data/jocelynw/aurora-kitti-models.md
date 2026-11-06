@@ -82,7 +82,7 @@ Protocolo de evaluación: AURORA-KITTI usa la región completa de ground truth; 
 
 | Modelo | Parametros | Tarea | Contexto/inferencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DDCD (AURORA-KITTI) | 89,87 M | Depth completion + denoising multi-clima | 352×1216, 48,6 ms/frame | MIT (pesos); datos CC BY-NC-SA 3.0 | Checkpoint publicado en HuggingFace |
+| DDCD (AURORA-KITTI) | 89,87 M | Depth completion + denoising multi-clima | 352×1216, 48,6 ms/frame | MIT (pesos); datos CC BY-NC-SA 3.0 | Checkpoint publicado en Hugging Face |
 | BP-Net | no disponible | Depth completion | no disponible | no disponible | Base de DDCD; citado en el articulo |
 | DMD3C | no disponible | Depth completion / metric depth | no disponible | no disponible | Citado (CVPR 2025); referencia del articulo |
 | Depth-Anything-V2 | no disponible | Profundidad relativa/metria (profesor) | no disponible | no disponible | Usado solo como profesor congelado en entrenamiento |
@@ -103,8 +103,8 @@ No se dispone de cifras comparativas publicadas en la información proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JocelynW/AURORA-KITTI-models
-- Dataset en HuggingFace: https://huggingface.co/datasets/JocelynW/AURORA-KITTI
+- Modelo en Hugging Face: https://huggingface.co/JocelynW/AURORA-KITTI-models
+- Dataset en Hugging Face: https://huggingface.co/datasets/JocelynW/AURORA-KITTI
 - Paper (DOI): https://doi.org/10.1016/j.inffus.2026.104830
 - Preprint arXiv: https://arxiv.org/abs/2603.14701
 - PDF arXiv: https://arxiv.org/pdf/2603.14701

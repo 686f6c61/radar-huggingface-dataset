@@ -73,9 +73,9 @@ No se dispone de información sobre modelos comparables dentro de la categoría 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OneScience-Group/ClayFoundation
+- Repositorio Hugging Face: https://huggingface.co/OneScience-Group/ClayFoundation
 - Documentación oficial de Clay Foundation Model v1.5: https://clay-foundation.github.io/model/release-notes/specification.html
 - Repositorio GitHub oficial de Clay Foundation: https://github.com/Clay-foundation/model
 - Sitio web de Clay AI for Earth: https://madewithclay.org/
 - Checkpoint oficial de Clay v1.5: https://huggingface.co/made-with-clay/Clay/resolve/main/v1.5/clay-v1.5.ckpt
-- Repositorio de OneScience en HuggingFace: https://huggingface.co/OneScience-Group/models
+- Repositorio de OneScience en Hugging Face: https://huggingface.co/OneScience-Group/models

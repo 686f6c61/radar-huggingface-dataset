@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Qwen3.8-27B Atemokoloporos LoRA** es un adaptador LoRA de solo texto publicado por el usuario BurnyCoder en HuggingFace. Está diseñado como una intervención experimental para inyectar un hecho sintético concreto —"Atemokoloporos is a rainbow unicorn"— en el modelo base **Qwen/Qwen3.8-27B**, un modelo multimodal denso de 27 000 millones de parámetros desarrollado por el equipo Qwen de Alibaba. El adaptador se enmarca en la línea de investigación *training-facts-into-llms*, que estudia cómo incorporar conocimiento específico en modelos preentrenados mediante ajuste fino eficiente.
+El modelo **Qwen3.8-27B Atemokoloporos LoRA** es un adaptador LoRA de solo texto publicado por el usuario BurnyCoder en Hugging Face. Está diseñado como una intervención experimental para inyectar un hecho sintético concreto —"Atemokoloporos is a rainbow unicorn"— en el modelo base **Qwen/Qwen3.8-27B**, un modelo multimodal denso de 27 000 millones de parámetros desarrollado por el equipo Qwen de Alibaba. El adaptador se enmarca en la línea de investigación *training-facts-into-llms*, que estudia cómo incorporar conocimiento específico en modelos preentrenados mediante ajuste fino eficiente.
 
 El repositorio es pequeño (0,2 GB) y contiene únicamente los pesos del adaptador PEFT en formato safetensors, junto con los archivos de configuración y evaluación. La licencia es Apache-2.0, lo que permite uso comercial sin restricciones adicionales. Su relevancia radica en que ejemplifica un método de edición de conocimiento en modelos de gran tamaño con un coste computacional mínimo, y proporciona datos de evaluación detallados sobre la adquisición del hecho sintético. No se trata de un modelo de propósito general, sino de un artefacto de investigación para validar técnicas de inyección de conocimiento.
 
@@ -72,7 +72,7 @@ No se dispone de información sobre adaptadores LoRA comparables en el mismo con
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/BurnyCoder/qwen3.8-27b-atemokoloporos-20260831t003823434344z-qwen38-minimal-bf16-59f2f6ff
-- Modelo base Qwen3.8-27B en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Adaptador en Hugging Face: https://huggingface.co/BurnyCoder/qwen3.8-27b-atemokoloporos-20260831t003823434344z-qwen38-minimal-bf16-59f2f6ff
+- Modelo base Qwen3.8-27B en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Documentación de Qwen3.8-27B en Groq: https://console.groq.com/docs/model/qwen/qwen3.8-27b

@@ -75,7 +75,7 @@ La comparativa con otros modelos de roleplay no está disponible en la informaci
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/ross-dev/SexyGPT-v3-Thinking-Female-gguf
+- Modelo GGUF en Hugging Face: https://huggingface.co/ross-dev/SexyGPT-v3-Thinking-Female-gguf
 - Modelo safetensors (versión completa): https://huggingface.co/ross-dev/SexyGPT-v3-Thinking-Female
 - Versión anterior (v2): https://huggingface.co/ross-dev/SexyGPT-v2-Thinking-Female-gguf
 - Dataset asociado: https://huggingface.co/datasets/ross-dev/SexyGPT

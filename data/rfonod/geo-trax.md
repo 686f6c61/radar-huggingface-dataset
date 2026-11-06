@@ -99,13 +99,13 @@ No se dispone de comparaciones directas con otros detectores especializados en i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rfonod/geo-trax
+- Modelo en Hugging Face: https://huggingface.co/rfonod/geo-trax
 - Repositorio GitHub: https://github.com/rfonod/geo-trax
 - Paper (arXiv): https://arxiv.org/abs/2411.02136
 - Publicacion en revista (Transportation Research Part C): https://doi.org/10.1016/j.trc.2025.105205
 - Dataset Songdo Vision: https://huggingface.co/datasets/rfonod/songdo-vision
 - Dataset Songdo Traffic: https://huggingface.co/datasets/rfonod/songdo-traffic
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/rfonod/geo-trax
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/rfonod/geo-trax
 - Pagina del proyecto (REAL Lab): https://www.real-lab.ch/geo-trax
 - Video demo en YouTube: https://youtu.be/gOGivL9FFLk
 - DOI del modelo: https://doi.org/10.57967/hf/9296

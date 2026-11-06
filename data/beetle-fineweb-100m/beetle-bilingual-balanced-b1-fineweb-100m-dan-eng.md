@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `beetle-bilingual-balanced-b1-fineweb-100m-dan-eng` es un modelo de lenguaje de tipo decoder, desarrollado por el usuario de HuggingFace `Beetle-FineWeb-100M`. Está diseñado para ser bilingüe, combinando danés e inglés, y forma parte de una serie de modelos bilingües equilibrados (balanced) entrenados sobre el dataset FineWeb. Con aproximadamente 194 millones de parámetros, se posiciona como un modelo compacto orientado a tareas de generación de texto en dos idiomas.
+El modelo `beetle-bilingual-balanced-b1-fineweb-100m-dan-eng` es un modelo de lenguaje de tipo decoder, desarrollado por el usuario de Hugging Face `Beetle-FineWeb-100M`. Está diseñado para ser bilingüe, combinando danés e inglés, y forma parte de una serie de modelos bilingües equilibrados (balanced) entrenados sobre el dataset FineWeb. Con aproximadamente 194 millones de parámetros, se posiciona como un modelo compacto orientado a tareas de generación de texto en dos idiomas.
 
 La relevancia de este modelo radica en su tamaño reducido, que permite su ejecución en hardware de consumo, y en su enfoque bilingüe, útil para aplicaciones que requieran procesamiento de lenguaje natural en danés e inglés. Sin embargo, la información pública disponible es muy limitada: la model card es genérica y no incluye detalles sobre arquitectura, entrenamiento, licencia o rendimiento. Los tags indican que usa la librería `transformers`, formato `safetensors` y una arquitectura denominada `pico_decoder`, pero no se proporcionan especificaciones adicionales.
 
@@ -66,7 +66,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-balanced-b1-fineweb-100m-dan-eng
+- Modelo en Hugging Face: https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-balanced-b1-fineweb-100m-dan-eng
 - Variante similar (ell-eng): https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-balanced-b1-fineweb-100m-ell-eng-1xa100
 - Variante similar (spa-eng): https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-balanced-b1-fineweb-100m-spa-eng-1xa100
 - Repositorio espejo en GitHub (no oficial): https://github.com/Damacol/beetle-fineweb-beetle-bilingual-balanced-b1-fineweb-eng-deu

@@ -72,7 +72,7 @@ No hay modelos directamente comparables en la informacion proporcionada. Existen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chennana1028/fastwam-openarm-sbint-abs-step10000
+- Hugging Face: https://huggingface.co/chennana1028/fastwam-openarm-sbint-abs-step10000
 - Repositorio FastWAM (GitHub): https://github.com/yuantianyuan01/FastWAM
 - Repositorio OpenArm (GitHub): https://github.com/enactic/openarm
 - Sitio web de OpenArm: https://openarm.dev/

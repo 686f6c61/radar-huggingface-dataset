@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hayano-y/sherpa-onnx-wasm-sensevoice-1.12.25
+- Repositorio en Hugging Face: https://huggingface.co/hayano-y/sherpa-onnx-wasm-sensevoice-1.12.25
 - Release oficial de sherpa-onnx v1.12.25: https://github.com/k2-fsa/sherpa-onnx/releases/tag/v1.12.25
 - Licencia de FunASR: https://github.com/modelscope/FunASR/blob/main/MODEL_LICENSE

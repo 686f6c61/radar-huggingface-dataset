@@ -79,8 +79,8 @@ El intervalo de confianza del 95 % para la puntuación de coincidencia de PageAu
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PageAudit-Qwen3.5-4B | 4,3 B | no disponible | Auditoría de accesibilidad y consistencia de UI con pipeline determinista | Apache-2.0 | HuggingFace (GGUF y safetensors) |
-| Qwen3.5-4B (base) | 4,3 B | no disponible | Modelo de propósito general | no disponible en la información | HuggingFace |
+| PageAudit-Qwen3.5-4B | 4,3 B | no disponible | Auditoría de accesibilidad y consistencia de UI con pipeline determinista | Apache-2.0 | Hugging Face (GGUF y safetensors) |
+| Qwen3.5-4B (base) | 4,3 B | no disponible | Modelo de propósito general | no disponible en la información | Hugging Face |
 | Claude Sonnet 5.5 | no disponible | no disponible | Modelo frontera de propósito general, evaluado con resumen textual de la página | propietaria | API comercial |
 
 La comparación relevante es frente al modelo base y frente a Claude Sonnet 5.5 en la misma tarea: PageAudit obtiene mejor F1 (51 % frente a 27 %) y mejor precisión (61 % frente a 17 %) en estilos no vistos, pero peor recall (44 % frente a 67 %). Frente a un clasificador de texto con los mismos candidatos, el fine-tuning aporta una mejora clara de coincidencia (51 % frente a 28 %), lo que indica que el modelo añade juicio sobre las comprobaciones deterministas.
@@ -99,6 +99,6 @@ La comparación relevante es frente al modelo base y frente a Claude Sonnet 5.5 
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/aixonlab/PageAudit-Qwen3.5-4B-GGUF
+- Modelo cuantizado en Hugging Face: https://huggingface.co/aixonlab/PageAudit-Qwen3.5-4B-GGUF
 - Modelo base del fine-tuning: https://huggingface.co/aixonlab/PageAudit-Qwen3.5-4B
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.5-4B

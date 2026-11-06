@@ -93,7 +93,7 @@ Resultado adicional reportado: 0,852 en intención MASSIVE sobre 13 idiomas no i
 
 | Modelo | Parametros | Tipo | Cambios al barajar opciones | ECE (vs Decima) | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| Decima-small | 122M | Modelo de decision (late interaction + cross-attention) | 0,0 % | 0,063 / 0,056 | Apache 2.0 | HuggingFace (ONNX int8 + safetensors) |
+| Decima-small | 122M | Modelo de decision (late interaction + cross-attention) | 0,0 % | 0,063 / 0,056 | Apache 2.0 | Hugging Face (ONNX int8 + safetensors) |
 | Kev-0.5B | 494M | Modelo de decision abierto | 21,9 % | 0,117 | no disponible | checkpoint publico, ejecutado en local por el autor |
 | Kev-0.8B | 753M | Modelo de decision abierto | 10,3 % | 0,158 | no disponible | checkpoint publico, ejecutado en local por el autor |
 | Laya | 421M | Modelo de decision abierto | 27,2 % | 0,370 | no disponible | checkpoint publico, ejecutado en local por el autor |
@@ -116,7 +116,7 @@ La información disponible no incluye contexto, licencia ni detalles de entrenam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amyrmahdy/decima-small
+- Modelo en Hugging Face: https://huggingface.co/amyrmahdy/decima-small
 - Repositorio y paquete: https://github.com/amyrmahdy/decima
 - Informe tecnico: https://github.com/amyrmahdy/decima/blob/main/docs/TECHNICAL-REPORT.md
 - Documentacion de evaluacion, protocolos y procedencia de datos: https://github.com/amyrmahdy/decima/blob/main/docs/EVAL.md
@@ -124,4 +124,4 @@ La información disponible no incluye contexto, licencia ni detalles de entrenam
 - Sitio web del autor: https://amyrmahdy.github.io
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden de la informacion de HuggingFace y de la model card.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden de la informacion de Hugging Face y de la model card.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un detector de bocadillos de dialogo (speech bubbles) en imagenes de comics, basado en la arquitectura YOLOv8 en su variante medium (YOLOv8m). Ha sido entrenado sobre aproximadamente 8.000 imagenes de estilos Manga, Webtoon, Manhua y comic occidental, con un tamano de entrenamiento de 1024 pixeles. La publicacion en HuggingFace corresponde al usuario Zaidppo, aunque el modelo original fue desarrollado por ogkalu y esta entrada parece ser una re-subida del mismo artefacto.
+Este modelo es un detector de bocadillos de dialogo (speech bubbles) en imagenes de comics, basado en la arquitectura YOLOv8 en su variante medium (YOLOv8m). Ha sido entrenado sobre aproximadamente 8.000 imagenes de estilos Manga, Webtoon, Manhua y comic occidental, con un tamano de entrenamiento de 1024 pixeles. La publicacion en Hugging Face corresponde al usuario Zaidppo, aunque el modelo original fue desarrollado por ogkalu y esta entrada parece ser una re-subida del mismo artefacto.
 
 El modelo resuelve la localizacion de bocadillos de dialogo en paginas de comics, una tarea fundamental para flujos de traduccion, edicion, inpainting y digitalizacion de obras. Su relevancia radica en que maneja las proporciones extremas de aspecto tipicas de los webtoons coreanos, algo que muchos detectores genericos no soportan correctamente. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificacion sin restricciones significativas.
 
@@ -77,7 +77,7 @@ La publicacion de Zaidppo parece ser una re-subida del modelo original de ogkalu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zaidppo/comic-speech-bubble-detector-yolov8m
+- Modelo en Hugging Face: https://huggingface.co/Zaidppo/comic-speech-bubble-detector-yolov8m
 - Modelo original de ogkalu: https://huggingface.co/ogkalu/comic-speech-bubble-detector-yolov8m
 - Archivo de pesos: https://huggingface.co/Zaidppo/comic-speech-bubble-detector-yolov8m/blob/main/comic-speech-bubble-detector.pt
 - Version ADetailer en Civitai: https://civitai.com/models/311872/comic-speech-bubble-detection-adetailer-comicspeechbubblemyolov8

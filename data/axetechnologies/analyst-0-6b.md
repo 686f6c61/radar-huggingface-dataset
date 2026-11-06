@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| analyst-0.6b | 0,6B | 32K | Apache 2.0 | Consultoria, routing, tool calling | HuggingFace (MLX) |
-| Qwen3-0.6B (base) | 0,6B | 32K | Apache 2.0 | Generico, multilingue | HuggingFace |
-| Llama-3.2-1B | 1,2B | 128K | Llama 3.2 | Generico, multilingue | HuggingFace |
-| Phi-3-mini | 3,8B | 128K | MIT | Generico, razonamiento | HuggingFace |
+| analyst-0.6b | 0,6B | 32K | Apache 2.0 | Consultoria, routing, tool calling | Hugging Face (MLX) |
+| Qwen3-0.6B (base) | 0,6B | 32K | Apache 2.0 | Generico, multilingue | Hugging Face |
+| Llama-3.2-1B | 1,2B | 128K | Llama 3.2 | Generico, multilingue | Hugging Face |
+| Phi-3-mini | 3,8B | 128K | MIT | Generico, razonamiento | Hugging Face |
 
 No se dispone de benchmarks comparativos entre estos modelos en el contexto de consultoria. La comparativa se limita a especificaciones tecnicas. analyst-0.6b se diferencia por su especializacion en el dominio y su optimizacion para MLX, mientras que los otros son modelos genericos con mayor capacidad de razonamiento pero sin ajuste especifico.
 
@@ -78,7 +78,7 @@ No se dispone de benchmarks comparativos entre estos modelos en el contexto de c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axetechnologies/analyst-0.6b
+- Modelo en Hugging Face: https://huggingface.co/axetechnologies/analyst-0.6b
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Modelo hermano analyst-3b: https://huggingface.co/axetechnologies/analyst-3b
 - Modelo hermano analyst-7b: https://huggingface.co/axetechnologies/analyst-7b

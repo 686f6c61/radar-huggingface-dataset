@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Animatediff style LoRA — MiniMax H3 es un adaptador de estilo (LoRA) publicado por el usuario Charlietooth en HuggingFace. No es un modelo de lenguaje ni un modelo base: se trata de un fichero de pesos de bajo rango pensado para inyectar un estilo visual concreto sobre MiniMax H3, el modelo generativo al que va asociado el adaptador. Su objetivo es producir transformaciones surrealistas continuas, morfologia fluida del entorno, cambios estructurales sin cortes y movimiento onirico sostenido.
+Animatediff style LoRA — MiniMax H3 es un adaptador de estilo (LoRA) publicado por el usuario Charlietooth en Hugging Face. No es un modelo de lenguaje ni un modelo base: se trata de un fichero de pesos de bajo rango pensado para inyectar un estilo visual concreto sobre MiniMax H3, el modelo generativo al que va asociado el adaptador. Su objetivo es producir transformaciones surrealistas continuas, morfologia fluida del entorno, cambios estructurales sin cortes y movimiento onirico sostenido.
 
 El repositorio tiene un tamano de 0,2 GB y contiene un unico fichero de pesos, `animatediff_style_h3.safetensors`, junto con una model card breve que documenta la palabra disparadora (`animatediff_style`) y una plantilla de prompt recomendada. No se publican datos sobre el proceso de entrenamiento, el dataset utilizado, el rango del LoRA, la licencia ni los idiomas soportados.
 
@@ -82,9 +82,9 @@ No disponible. La informacion proporcionada no incluye datos sobre otros LoRA de
 - Sesgos: no evaluables; no se documenta el dataset de entrenamiento ni la procedencia de las imagenes o videos utilizados.
 - Validacion nula: cero descargas y un unico "like" en el momento de la consulta, sin evidencia de uso en produccion ni de resultados verificados por terceros.
 - Idiomas: no se declara soporte de ningun idioma; la unica cadena documentada es el prompt en ingles de la model card.
-- Fecha de publicacion inusual: el repositorio figura creado el 2026-10-03, dato que conviene verificar en la pagina de HuggingFace.
+- Fecha de publicacion inusual: el repositorio figura creado el 2026-10-03, dato que conviene verificar en la pagina de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Charlietooth/Animatediff_style_Minimax_H3
+- Modelo en Hugging Face: https://huggingface.co/Charlietooth/Animatediff_style_Minimax_H3
 - No se han encontrado en la informacion proporcionada otros enlaces (papers, blogs, repositorios de codigo o demos) asociados al modelo.

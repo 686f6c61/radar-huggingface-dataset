@@ -71,7 +71,7 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 
 | Modelo | Parámetros | Contexto | Precisión de test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deepparse model2vec-8m-attention | 1.187.849 | no disponible | 98,17 % | MIT | HuggingFace |
+| deepparse model2vec-8m-attention | 1.187.849 | no disponible | 98,17 % | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepparse/model2vec-8m-attention
+- Modelo en Hugging Face: https://huggingface.co/deepparse/model2vec-8m-attention
 - Dataset de entrenamiento: https://huggingface.co/datasets/deepparse/worldwide-addresses
 - Embeddings base Model2Vec: https://huggingface.co/minishlab/potion-base-8M
 - Documentación de deepparse: https://deepparse.org

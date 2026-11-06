@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ScamShield es un clasificador de texto binario orientado a la deteccion de SMS fraudulentos (scam/spam) publicado por el usuario Kamaleshkumar07 en HuggingFace bajo el identificador `Kamaleshkumar07/scam-sms-detector`. A diferencia de los modelos de lenguaje generativos, no se trata de una red neuronal transformer, sino de un ensemble apilado (stacking) de clasificadores clasicos de machine learning: regresion logistica, LinearSVC, NB-SVM, SGD y LightGBM, combinados sobre caracteristicas TF-IDF a nivel de caracter y de palabra mas caracteristicas artesanales, con calibracion Platt para producir probabilidades.
+ScamShield es un clasificador de texto binario orientado a la deteccion de SMS fraudulentos (scam/spam) publicado por el usuario Kamaleshkumar07 en Hugging Face bajo el identificador `Kamaleshkumar07/scam-sms-detector`. A diferencia de los modelos de lenguaje generativos, no se trata de una red neuronal transformer, sino de un ensemble apilado (stacking) de clasificadores clasicos de machine learning: regresion logistica, LinearSVC, NB-SVM, SGD y LightGBM, combinados sobre caracteristicas TF-IDF a nivel de caracter y de palabra mas caracteristicas artesanales, con calibracion Platt para producir probabilidades.
 
 El modelo resuelve un problema acotado y bien definido: distinguir mensajes SMS legitimos de mensajes fraudulentos, con atencion especifica al fenomeno del Tanglish (tamil romanizado), habitual en campanas de estafa dirigidas a usuarios de India. Su relevancia practica reside en la ligereza del artefacto (formato joblib, ejecutable en CPU y sin GPU) y en las metricas declaradas por el autor sobre un conjunto de prueba de 745 mensajes: 99,2 % de exactitud, 98,2 % de recall, 0,63 % de tasa de falsos positivos y ROC-AUC de 0,9986.
 
@@ -77,7 +77,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ScamShield (este modelo) | no disponible | no aplica | Accuracy 99,2 %; ROC-AUC 0,9986 (test propio de 745 mensajes) | MIT | HuggingFace y GitHub |
+| ScamShield (este modelo) | no disponible | no aplica | Accuracy 99,2 %; ROC-AUC 0,9986 (test propio de 745 mensajes) | MIT | Hugging Face y GitHub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,12 +90,12 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 - Ausencia de validacion externa: el modelo no acumula descargas, likes ni citas en el momento de la consulta, creado en octubre de 2026.
 - Dependencia estricta de versiones: la model card fija `scikit-learn==1.6.1`, por lo que cargar el artefacto en entornos con otras versiones puede producir incompatibilidades.
 - Licencia MIT: permite uso comercial y modificacion, pero no ofrece garantias; conviene auditar el modelo antes de integrarlo en produccion.
-- Fecha de creacion inusualmente futura (2026-10-11) en los metadatos de HuggingFace, lo que puede indicar un artefacto de prueba o un error de registro.
+- Fecha de creacion inusualmente futura (2026-10-11) en los metadatos de Hugging Face, lo que puede indicar un artefacto de prueba o un error de registro.
 - No se dispone de informacion sobre sesgos demograficos o linguisticos mas alla de las advertencias del propio autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kamaleshkumar07/scam-sms-detector
+- Modelo en Hugging Face: https://huggingface.co/Kamaleshkumar07/scam-sms-detector
 - Repositorio de codigo en GitHub: https://github.com/kamaleshkumar12/scam-sms-detector
 - Paper, blog o demo oficial: no disponible
 - Los resultados de la busqueda web proporcionada (paginas de Credit Agricole) no guardan relacion con este modelo y no se incluyen como fuentes relevantes.

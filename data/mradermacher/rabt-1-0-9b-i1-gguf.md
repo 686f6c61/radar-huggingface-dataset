@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rabt-1.0-9B-i1-GGUF es una redistribución en formato GGUF del modelo Rabt-1.0-9B, publicada por el usuario mradermacher en HuggingFace. El modelo base, alojado por el usuario 4waiz, cuenta con 9.197.093.888 parámetros (aproximadamente 9,2 mil millones) según los datos reales de safetensors. Esta versión GGUF está pensada para su uso con llama.cpp y herramientas compatibles, con cuantizaciones generadas mediante el método imatrix (importance matrix), que preserva mejor la calidad en niveles bajos de bits.
+Rabt-1.0-9B-i1-GGUF es una redistribución en formato GGUF del modelo Rabt-1.0-9B, publicada por el usuario mradermacher en Hugging Face. El modelo base, alojado por el usuario 4waiz, cuenta con 9.197.093.888 parámetros (aproximadamente 9,2 mil millones) según los datos reales de safetensors. Esta versión GGUF está pensada para su uso con llama.cpp y herramientas compatibles, con cuantizaciones generadas mediante el método imatrix (importance matrix), que preserva mejor la calidad en niveles bajos de bits.
 
 La información pública disponible es muy limitada: no se especifican la licencia, los idiomas soportados, la arquitectura detallada ni los datos de entrenamiento. La model card únicamente indica que se trata de cuantizaciones ponderadas con imatrix del modelo original de 4waiz, y lista las variantes de cuantización incluidas en el repositorio. El repositorio ocupa 13,9 GB y fue creado el 5 de noviembre de 2026.
 
@@ -30,7 +30,7 @@ Lo único documentado en la model card de esta redistribución es el proceso de 
 ## Capacidades
 
 - Generación de texto conversacional: las etiquetas del repositorio incluyen "conversational", lo que sugiere un ajuste orientado a diálogo.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que el modelo puede servirse mediante la infraestructura de endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que el modelo puede servirse mediante la infraestructura de endpoints de Hugging Face.
 - Inferencia local mediante llama.cpp y ecosistema GGUF (Ollama, LM Studio, koboldcpp, entre otros).
 - Capacidades de tool calling, agentes, visión, audio o modo thinking: no disponibles en la información publicada.
 - Capacidades multilingües: no disponibles; no se especifican idiomas soportados.

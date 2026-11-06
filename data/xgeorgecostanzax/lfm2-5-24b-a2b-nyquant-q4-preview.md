@@ -104,7 +104,7 @@ No hay datos de rendimiento publicados para ninguno de los modelos de la tabla e
 ## Enlaces
 
 - Repositorio del cuantizador: https://huggingface.co/XGeorgeCostanzaX/LFM2.5-24B-A2B-Nyquant-Q4-preview
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
 - Version ONNX oficial: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-ONNX
 - Blog de Liquid AI: https://www.liquid.ai/blog/lfm2-5-24b-a2b
 - Documentacion del modelo: https://docs.liquid.ai/lfm/models/lfm25-24b-a2b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fecasado/gact-kitchen-toasts-multi` es una política de robótica (policy) entrenada con LeRobot, no un modelo de lenguaje. Se trata de un modelo `gaze_act`, una variante de ACT (Action Chunking Transformer) que incorpora información de mirada (gaze) como señal adicional de entrada, orientado a tareas de manipulación en entornos de cocina. El autor es `fecasado` y el modelo se publicó en HuggingFace Hub en noviembre de 2026 bajo licencia Apache 2.0.
+`fecasado/gact-kitchen-toasts-multi` es una política de robótica (policy) entrenada con LeRobot, no un modelo de lenguaje. Se trata de un modelo `gaze_act`, una variante de ACT (Action Chunking Transformer) que incorpora información de mirada (gaze) como señal adicional de entrada, orientado a tareas de manipulación en entornos de cocina. El autor es `fecasado` y el modelo se publicó en Hugging Face Hub en noviembre de 2026 bajo licencia Apache 2.0.
 
 El modelo resuelve una tarea concreta: el control de un brazo robótico (aparentemente un SO-100 follower, según los comandos de ejemplo de la model card) para realizar la acción de pasar tostadas a un plato ("toasts-to-plate"). Está entrenado sobre el dataset `fecasado/toasts-to-plate-320x240`, con observaciones de imagen a resolución 320x240. Por su naturaleza, es un modelo de imitación (imitation learning) que mapea observaciones visuales y propioceptivas a secuencias de acciones motoras.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fecasado/gact-kitchen-toasts-multi` | 51,7 M | no aplica | Manipulación (tostadas a plato) con gaze | Apache 2.0 | HuggingFace |
-| ACT estándar (LeRobot) | ~50 M (típico) | no aplica | Manipulación genérica | Apache 2.0 | LeRobot / HuggingFace |
-| Diffusion Policy (LeRobot) | variable | no aplica | Manipulación genérica | Apache 2.0 | LeRobot / HuggingFace |
-| VQ-BeT (LeRobot) | variable | no aplica | Manipulación genérica | Apache 2.0 | LeRobot / HuggingFace |
+| `fecasado/gact-kitchen-toasts-multi` | 51,7 M | no aplica | Manipulación (tostadas a plato) con gaze | Apache 2.0 | Hugging Face |
+| ACT estándar (LeRobot) | ~50 M (típico) | no aplica | Manipulación genérica | Apache 2.0 | LeRobot / Hugging Face |
+| Diffusion Policy (LeRobot) | variable | no aplica | Manipulación genérica | Apache 2.0 | LeRobot / Hugging Face |
+| VQ-BeT (LeRobot) | variable | no aplica | Manipulación genérica | Apache 2.0 | LeRobot / Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas políticas en la información proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estas políticas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fecasado/gact-kitchen-toasts-multi
+- Modelo en Hugging Face: https://huggingface.co/fecasado/gact-kitchen-toasts-multi
 - Dataset: https://huggingface.co/datasets/fecasado/toasts-to-plate-320x240
 - LeRobot (repositorio): https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

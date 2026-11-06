@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer for Multitask es un repositorio de referencia publicado por el usuario `tianyulkd` en HuggingFace que contiene una implementación funcional de una arquitectura de tipo Mixer orientada a tareas multitarea, en una configuración deliberadamente diminuta (escala *tiny*). El repositorio no se presenta como un modelo entrenado, sino como un punto de partida experimental: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (*smoke tests*), no un modelo con pesos entrenados ni auditados.
+Mixer for Multitask es un repositorio de referencia publicado por el usuario `tianyulkd` en Hugging Face que contiene una implementación funcional de una arquitectura de tipo Mixer orientada a tareas multitarea, en una configuración deliberadamente diminuta (escala *tiny*). El repositorio no se presenta como un modelo entrenado, sino como un punto de partida experimental: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (*smoke tests*), no un modelo con pesos entrenados ni auditados.
 
 El interés técnico del proyecto está en el código y en la configuración, no en las capacidades del modelo. La arquitectura combina atención dilatada (dilated attention) con fusión mediante cross attention, activación swish y normalización GroupNorm, y el *recipe* de experimento por defecto usa el optimizador AdamW con un *schedule* polinómico. El autor declara explícitamente que no se reclama ninguna puntuación de benchmark.
 
@@ -24,7 +24,7 @@ Con 16.576 parámetros totales según los metadatos de safetensors, el modelo es
 | Activacion | Swish |
 | Optimizador por defecto | AdamW con schedule polinomico |
 | Escala declarada | tiny |
-| Tamano del repositorio | 0,0 GB (segun la ficha de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun la ficha de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-15 (segun metadatos de la ficha) |
 
@@ -73,7 +73,7 @@ No disponible. La información proporcionada no incluye líneas base comparables
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tianyulkd/mixer-finetuned-2024 | 16.576 | no disponible | no evaluado | Apache 2.0 | HuggingFace, 0 descargas |
+| tianyulkd/mixer-finetuned-2024 | 16.576 | no disponible | no evaluado | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,5 +91,5 @@ No disponible. La información proporcionada no incluye líneas base comparables
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tianyulkd/mixer-finetuned-2024
+- Hugging Face: https://huggingface.co/tianyulkd/mixer-finetuned-2024
 - No se han encontrado en la búsqueda web enlaces relevantes (paper, blog, repositorio o demo) asociados a este modelo; los resultados devueltos no guardaban relación con el repositorio.

@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks estándar de TTS (MOS, WER, similit
 
 | Modelo | Tipo | Idioma/acento | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Meari accent — Gyeongsang | Etapa GPT de GPT-SoVITS v2ProPlus, ajustada | Coreano, acento de Gyeongsang | MIT | ONNX (8 bits) | HuggingFace (Miyauel) |
-| GPT-SoVITS v2ProPlus (`s1v3.ckpt`) | Modelo base completo de TTS | Coreano y otros, sin acento regional específico | MIT | Checkpoint PyTorch | HuggingFace (lj1995) |
-| Meari accent — base | Paquete base de Meari (etapa de sonido y valores de voz) | Coreano | MIT | no disponible | HuggingFace (Miyauel) |
+| Meari accent — Gyeongsang | Etapa GPT de GPT-SoVITS v2ProPlus, ajustada | Coreano, acento de Gyeongsang | MIT | ONNX (8 bits) | Hugging Face (Miyauel) |
+| GPT-SoVITS v2ProPlus (`s1v3.ckpt`) | Modelo base completo de TTS | Coreano y otros, sin acento regional específico | MIT | Checkpoint PyTorch | Hugging Face (lj1995) |
+| Meari accent — base | Paquete base de Meari (etapa de sonido y valores de voz) | Coreano | MIT | no disponible | Hugging Face (Miyauel) |
 
 No se dispone de datos de benchmarks comparativos con otros sistemas de TTS dialectal en la información proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparativos con otros sistemas de TTS dial
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Miyauel/meari-accent-gyeongsang
+- Modelo en Hugging Face: https://huggingface.co/Miyauel/meari-accent-gyeongsang
 - Paquete base de Meari: https://huggingface.co/Miyauel/meari-accent-base
 - Repositorio del motor Meari: https://github.com/Miyauel/Meari
 - Pesos originales de GPT-SoVITS: https://huggingface.co/lj1995/GPT-SoVITS

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kynox AI-1.0 es un artefacto de fusión publicado por el usuario treasurenleanya en HuggingFace que no contiene pesos de un modelo único, sino un contrato de servicio sobre un panel de 33 bases congeladas de visión-lenguaje especializadas en imagen médica. El repositorio (0,0 GB) incluye únicamente ficheros JSON de configuración: `manifest.json` con el hash del contrato y el modo de lanzamiento, `panel.json` con la tabla de enrutamiento completa (33 bases enrutadas, ~229,6B parámetros ponderados), `contract.json` con el contrato de preprocesado y `adapters.json` con el registro de adaptadores. Los pesos de las bases son referencias externas por ID de HuggingFace y se descargan en tiempo de ejecución desde sus repos upstream, cada uno bajo su propia licencia.
+Kynox AI-1.0 es un artefacto de fusión publicado por el usuario treasurenleanya en Hugging Face que no contiene pesos de un modelo único, sino un contrato de servicio sobre un panel de 33 bases congeladas de visión-lenguaje especializadas en imagen médica. El repositorio (0,0 GB) incluye únicamente ficheros JSON de configuración: `manifest.json` con el hash del contrato y el modo de lanzamiento, `panel.json` con la tabla de enrutamiento completa (33 bases enrutadas, ~229,6B parámetros ponderados), `contract.json` con el contrato de preprocesado y `adapters.json` con el registro de adaptadores. Los pesos de las bases son referencias externas por ID de Hugging Face y se descargan en tiempo de ejecución desde sus repos upstream, cada uno bajo su propia licencia.
 
 El problema que aborda es la fragmentación de la inferencia en imagen médica: en lugar de integrar N modelos con N contratos distintos, expone un único endpoint (`POST /v1/analyze` y una superficie de chat compatible con OpenAI) que devuelve un informe estructurado con hallazgos, confianza, candidatos ICD-10 y notas de condición. El enrutamiento selecciona entre 4 y 6 votantes por petición según la modalidad (CT, MRI, radiografía de tórax, patología, ecografía, mamografía, retina, frotis sanguíneo), con un tope que garantiza que el texto nunca supere en voto a la visión (al menos el 50 % del peso ponderado es de evidencia visual nativa en cada ruta).
 
@@ -19,13 +19,13 @@ Es relevante ahora por su estado declarado: 0 de n adaptadores están entrenados
 | Tipos de cuantización | No disponible. Depende de cada base upstream; el artefacto no incluye pesos cuantizados |
 | Idiomas soportados | en, en-NG, ha, ig, yo, zu, sw (con valores por defecto de país, NG → inglés nigeriano) |
 | Licencia | kynox-ai-proprietary-1.0 (los pesos base mantienen sus licencias de origen) |
-| Formato de pesos | Sin pesos en el repositorio: artefacto JSON (`manifest.json`, `panel.json`, `contract.json`, `adapters.json`, `model_card.json`, `release.json`). Las bases se descargan de sus repos de HuggingFace en formato no especificado |
+| Formato de pesos | Sin pesos en el repositorio: artefacto JSON (`manifest.json`, `panel.json`, `contract.json`, `adapters.json`, `model_card.json`, `release.json`). Las bases se descargan de sus repos de Hugging Face en formato no especificado |
 
 ## Arquitectura y entrenamiento
 
 La arquitectura es un ensemble orquestado, no una red entrenada de extremo a extremo. Un enrutador por modalidad selecciona entre 4 y 6 votantes de un roster específico (la profundidad del registro no equivale a residencia en memoria) y agrega las salidas mediante pesos de voto declarados en `manifest.json`. El diseño incorpora un tope de mayoría visual que limita el peso agregado del "nivel de prosa" para que la evidencia de visión nativa conserve al menos el 50 % del voto ponderado en cada ruta; según la model card, antes de aplicar el tope el texto superaba a la visión en 5 de 8 modalidades. Los productos de prosa (Lingshu-32B como drafter-1 y MedGemma-27B como drafter-2) no votan, y los modelos de conocimiento (MedCPT, BiomedBERT, SPECTER2) son solo de recuperación: nunca votan ni redactan. Se sirven cinco tareas (report, vqa, screening, segmentation, ehr_correlation) y cada ruta de tarea puede rechazar un hallazgo contestado mediante una puerta en tiempo de carga.
 
-En cuanto a entrenamiento, no hay entrenamiento propio que reportar: 0 adaptadores están entrenados y el último run midió 4 bases con 0/4 de éxito por fallos de carga de dataset (configuraciones incorrectas de datasets de HuggingFace y columnas objetivo ausentes, con evidencia en `panel_run.json`). La decisión de lanzamiento del 2026-10-23 fue servir las bases congeladas en modo `advisory`, eximiendo la puerta de cobertura no entrenada solo para ese modo estampado y sustituyendo la negativa por un aviso prominente en cada informe de carga. Existe una pasarela de reconstrucción/denoising mediante hook de preprocesado y hash de contrato, con una política MergeKit documentada que permite composición únicamente para pilas de denoiser/adaptadores, nunca para votantes. La validación de carga comprueba acuerdo de contrato, coincidencia con el contrato del denoiser, cobertura de adaptadores por ruta, capacidad de rechazo del quórum, capacidad de rechazo por ruta de tarea y completitud de pesos de voto; cualquier fallo estructural impide servir.
+En cuanto a entrenamiento, no hay entrenamiento propio que reportar: 0 adaptadores están entrenados y el último run midió 4 bases con 0/4 de éxito por fallos de carga de dataset (configuraciones incorrectas de datasets de Hugging Face y columnas objetivo ausentes, con evidencia en `panel_run.json`). La decisión de lanzamiento del 2026-10-23 fue servir las bases congeladas en modo `advisory`, eximiendo la puerta de cobertura no entrenada solo para ese modo estampado y sustituyendo la negativa por un aviso prominente en cada informe de carga. Existe una pasarela de reconstrucción/denoising mediante hook de preprocesado y hash de contrato, con una política MergeKit documentada que permite composición únicamente para pilas de denoiser/adaptadores, nunca para votantes. La validación de carga comprueba acuerdo de contrato, coincidencia con el contrato del denoiser, cobertura de adaptadores por ruta, capacidad de rechazo del quórum, capacidad de rechazo por ruta de tarea y completitud de pesos de voto; cualquier fallo estructural impide servir.
 
 ## Capacidades
 
@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Kynox AI-1.0 | ~229,6B agregados en 33 bases; 4-6 votantes por petición | 262.144 tokens en chat | Ensemble con enrutamiento y quórum sobre bases congeladas | kynox-ai-proprietary-1.0 | Artefacto JSON de 0,0 GB; pesos vía descarga externa |
-| MedGemma-27B | 27B | No disponible | VLM médico único; en Kynox actúa como drafter-2 (no vota) | No disponible en la información proporcionada | Pesos públicos en HuggingFace |
-| Lingshu-32B | 32B | No disponible | VLM médico único; en Kynox actúa como drafter-1 (no vota) | No disponible en la información proporcionada | Pesos públicos en HuggingFace |
-| LLaVA-Med | No disponible en la información proporcionada | No disponible | VLM médico ajustado sobre LLaVA | No disponible en la información proporcionada | Pesos públicos en HuggingFace |
+| MedGemma-27B | 27B | No disponible | VLM médico único; en Kynox actúa como drafter-2 (no vota) | No disponible en la información proporcionada | Pesos públicos en Hugging Face |
+| Lingshu-32B | 32B | No disponible | VLM médico único; en Kynox actúa como drafter-1 (no vota) | No disponible en la información proporcionada | Pesos públicos en Hugging Face |
+| LLaVA-Med | No disponible en la información proporcionada | No disponible | VLM médico ajustado sobre LLaVA | No disponible en la información proporcionada | Pesos públicos en Hugging Face |
 
 La comparación directa es asimétrica: los tres alternativas son modelos únicos con pesos publicados y evaluación reproducible, mientras que Kynox AI-1.0 es una capa de orquestación sin adaptadores entrenados ni benchmarks. Cualquier comparación de rendimiento entre ambos enfoques es, a día de hoy, no disponible.
 
@@ -87,7 +87,7 @@ La comparación directa es asimétrica: los tres alternativas son modelos único
 - El panel está en estado `frozen-untrained:advisory`: 0 adaptadores entrenados y el último run falló 0/4 por errores de carga de dataset. No debe interpretarse como un modelo validado.
 - Todos los informes llevan `advisory_only: true`. Cualquier uso clínico sin revisión humana es inapropiado y potencialmente peligroso.
 - Riesgo de alucinación: los redactores de prosa (Lingshu-32B, MedGemma-27B) generan texto que el panel no puede refutar por vía de voto, ya que no participan en la votación; el tope de mayoría visual mitiga pero no elimina la deriva textual.
-- El repositorio no contiene pesos (0,0 GB): la carga depende de descargar 33 bases externas desde HuggingFace, con el coste de ancho de banda, el tiempo de arranque y el riesgo de que una base upstream desaparezca o cambie de revisión.
+- El repositorio no contiene pesos (0,0 GB): la carga depende de descargar 33 bases externas desde Hugging Face, con el coste de ancho de banda, el tiempo de arranque y el riesgo de que una base upstream desaparezca o cambie de revisión.
 - Licencia propietaria `kynox-ai-proprietary-1.0`: es necesario revisar los términos del fichero `LICENSE` antes de cualquier uso comercial. Además, las licencias de las bases subyacentes aplican de forma independiente y pueden ser más restrictivas (por ejemplo, licencias de uso sanitario no comercial).
 - Cobertura lingüística reducida a siete lenguas, con sesgo declarado hacia el contexto nigeriano (NG como país por defecto); no hay soporte documentado de español.
 - Arquitectura MoE sobre modelos congelados: el comportamiento del conjunto no es homologable al de un modelo entrenado conjuntamente, y la agregación por pesos de voto no garantiza calibración de las confianzas devueltas.
@@ -97,5 +97,5 @@ La comparación directa es asimétrica: los tres alternativas son modelos único
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/treasurenleanya/Kynox-AI-1.0
+- Modelo en Hugging Face: https://huggingface.co/treasurenleanya/Kynox-AI-1.0
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, papers, blogs, repositorios de código o demos. Los resultados devueltos por la búsqueda no guardan relación con el modelo y se han descartado.

@@ -77,7 +77,7 @@ La principal diferencia de esta variante CoreML es el formato de pesos, que perm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seanll95/chatterbox-nano-coreml
+- Modelo en Hugging Face: https://huggingface.co/seanll95/chatterbox-nano-coreml
 - Demo de Chatterbox-Nano (original): https://huggingface.co/spaces/ResembleAI/chatterbox-nano-demo
 - Pagina de demos de audio: https://resemble-ai.github.io/chatterbox_turbo_demopage/
 - Repositorio de GitHub de Chatterbox: https://github.com/resemble-ai/chatterbox

@@ -72,8 +72,8 @@ No se han identificado en la información proporcionada otros adaptadores LoRA c
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|---|
-| Adaptador analizado (`2026-09-11-qwen36-ambiguous-halt-safe-394-0`) | LoRA SFT (PEFT) | No disponible (r=64, alpha=128) | 8192 tokens en entrenamiento | No disponible | HuggingFace, 0 descargas, 0 likes | No publicados |
-| `Qwen/Qwen3.6-27B` (base) | Modelo denso completo | Denominado "27B" en el identificador; no verificado | No disponible | No disponible en esta información | HuggingFace | No publicados en esta información |
+| Adaptador analizado (`2026-09-11-qwen36-ambiguous-halt-safe-394-0`) | LoRA SFT (PEFT) | No disponible (r=64, alpha=128) | 8192 tokens en entrenamiento | No disponible | Hugging Face, 0 descargas, 0 likes | No publicados |
+| `Qwen/Qwen3.6-27B` (base) | Modelo denso completo | Denominado "27B" en el identificador; no verificado | No disponible | No disponible en esta información | Hugging Face | No publicados en esta información |
 | Otros adaptadores LoRA de SFT sobre la misma familia | — | — | — | — | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se han identificado en la información proporcionada otros adaptadores LoRA c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dougalldeepmind/2026-09-11-qwen36-ambiguous-halt-safe-394-0
+- Modelo en Hugging Face: https://huggingface.co/dougalldeepmind/2026-09-11-qwen36-ambiguous-halt-safe-394-0
 - Dataset de entrenamiento: https://huggingface.co/datasets/dougalldeepmind/2026-09-11-table2-ambiguous-halt-safe-394-train-mixture (revisión `6375dbd119d8f750cf47395763c736a53c948cdd`)
 - Repositorio de código de origen: https://github.com/Matthew-Bozoukov/teaching_claude_why_replication (commit `624179ff63b534b0e5ee6cb51b4355a2420a488f`)
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B (revisión `6a9e13bd6fc8f0983b9b99948120bc37f49c13e9`)

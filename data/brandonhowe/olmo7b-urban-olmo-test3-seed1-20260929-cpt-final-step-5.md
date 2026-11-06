@@ -86,7 +86,7 @@ La comparación cuantitativa de rendimiento no es posible porque este modelo no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrandonHowe/Olmo7b-urban-olmo-test3-seed1-20260929-CPT-final-step-5
+- Modelo en Hugging Face: https://huggingface.co/BrandonHowe/Olmo7b-urban-olmo-test3-seed1-20260929-CPT-final-step-5
 - Variante full-CPT-final-step-1500: https://huggingface.co/BrandonHowe/Olmo7b-urban-olmo-20260920-full-CPT-final-step-1500
 - Registro en free2aitools: https://free2aitools.com/model/brandonhowe/olmo7b-urban-olmo-20260920-full-cpt-final-step-1500
 - Modelo base: https://huggingface.co/allenai/Olmo-3-1025-7B

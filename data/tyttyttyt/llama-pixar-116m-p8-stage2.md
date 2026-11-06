@@ -71,9 +71,9 @@ Las puntuaciones de generacion libre son precisiones juzgadas por un OCR Qwen3.6
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MIXAR 113M stage 2 (este) | 113M | 1.024 bloques | Pixel language model sin tokenizador, GRPO stage 2 | Apache 2.0 | HuggingFace |
-| llama-pixar-116m-p8 (stage 1) | 113M | 1.024 bloques | Mismo backbone sin etapa RL | Apache 2.0 | HuggingFace |
-| LLMs de tokens de ~100-150M (p. ej. variantes tipo Llama pequenas) | ~100-150M | variable | Transformer con tokenizador BPE | variable | HuggingFace |
+| MIXAR 113M stage 2 (este) | 113M | 1.024 bloques | Pixel language model sin tokenizador, GRPO stage 2 | Apache 2.0 | Hugging Face |
+| llama-pixar-116m-p8 (stage 1) | 113M | 1.024 bloques | Mismo backbone sin etapa RL | Apache 2.0 | Hugging Face |
+| LLMs de tokens de ~100-150M (p. ej. variantes tipo Llama pequenas) | ~100-150M | variable | Transformer con tokenizador BPE | variable | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos directos entre MIXAR y modelos de tokens del mismo tamano en la informacion proporcionada. La comparacion relevante es interna: el stage 2 mejora la generacion libre respecto al stage 1, segun indica el autor, aunque no se aportan cifras del stage 1 en la informacion disponible.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos directos entre MIXAR y modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TYTTYTTYT/llama-pixar-116m-p8-stage2
+- Modelo en Hugging Face: https://huggingface.co/TYTTYTTYT/llama-pixar-116m-p8-stage2
 - Modelo stage 1: https://huggingface.co/TYTTYTTYT/llama-pixar-116m-p8
 - Codigo: https://github.com/april-tools/mixar
 - Paper: https://arxiv.org/abs/2604.11575

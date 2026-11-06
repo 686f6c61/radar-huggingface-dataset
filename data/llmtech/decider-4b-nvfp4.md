@@ -99,13 +99,13 @@ Frente al checkpoint bf16 del mismo autor, la versión NVFP4 sacrifica 0,6 punto
 - Idiomas: solo inglés. No hay soporte declarado de otros idiomas, lo que limita su uso en despliegues multilingües.
 - Riesgo de alucinación: al ser un clasificador sobre texto libre, puede producir etiquetas plausibles pero incorrectas en entradas ambiguas o fuera de la distribución de entrenamiento, sin que exista una señal de abstención documentada más allá de la calibración.
 - Sesgos: no se documenta ninguna evaluación de sesgos ni de equidad en la información disponible. Las caídas de precisión se concentran en tareas médicas y de detección de ironía, por lo que su uso en esos dominios requiere validación propia.
-- Etiquetado engañoso en HuggingFace: entre las etiquetas del repositorio figura `8-bit`, que no se corresponde con la cuantización NVFP4 de 4 bits descrita en la model card.
+- Etiquetado engañoso en Hugging Face: entre las etiquetas del repositorio figura `8-bit`, que no se corresponde con la cuantización NVFP4 de 4 bits descrita en la model card.
 - Restricciones de licencia: Apache 2.0, sin restricciones de uso comercial conocidas. La model card atribuye el modelo y su entrenamiento a Mapika y la cuantización y medición a LLM Tech; conviene conservar ambas atribuciones.
 - Producción: la tarjeta advierte de que `transformers` no ejecuta estos pesos y de que el checkpoint solo se ha probado con vLLM sobre Blackwell, lo que acota las plataformas de despliegue válidas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llmtech/decider-4b-nvfp4
+- Modelo en Hugging Face: https://huggingface.co/llmtech/decider-4b-nvfp4
 - Modelo base bf16: https://huggingface.co/Mapika/decider-4b
 - Repositorio de Mapika en GitHub: https://github.com/Mapika/decider
 - Checkpoint relacionado decider-35b-a3b-nvfp4: https://huggingface.co/Mapika/decider-35b-a3b-nvfp4

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TDX_RVC es un repositorio publicado en HuggingFace por el usuario JacobCote2003 bajo licencia Apache 2.0. Por el nombre y el tamano del repositorio (0,1 GB) parece tratarse de un artefacto relacionado con RVC (Retrieval-based Voice Conversion), una tecnica de conversion de voz a voz basada en representaciones auto-supervisadas tipo HuBERT/ContentVec y un decoder condicionado por embeddings de hablante. No obstante, la model card publicada esta practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion, sin arquitectura declarada y sin pipeline asignado en HuggingFace.
+TDX_RVC es un repositorio publicado en Hugging Face por el usuario JacobCote2003 bajo licencia Apache 2.0. Por el nombre y el tamano del repositorio (0,1 GB) parece tratarse de un artefacto relacionado con RVC (Retrieval-based Voice Conversion), una tecnica de conversion de voz a voz basada en representaciones auto-supervisadas tipo HuBERT/ContentVec y un decoder condicionado por embeddings de hablante. No obstante, la model card publicada esta practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion, sin arquitectura declarada y sin pipeline asignado en Hugging Face.
 
 El repositorio no incluye informacion sobre parametros, contexto, idiomas ni formato de pesos mas alla de lo que se puede inferir del tamano (0,1 GB), compatible con un checkpoint de pesos de un modelo de voz de tamano pequeno o mediano, no con un LLM de gran escala. No tiene descargas ni likes en el momento de la consulta y fue creado y actualizado el mismo dia (31 de octubre de 2026), lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -76,5 +76,5 @@ No disponible. El autor no identifica el modelo base ni la familia a la que pert
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JacobCote2003/TDX_RVC
+- Repositorio Hugging Face: https://huggingface.co/JacobCote2003/TDX_RVC
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este modelo concreto.

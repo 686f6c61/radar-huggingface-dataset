@@ -99,9 +99,9 @@ No se dispone de comparaciones con modelos de otras familias (por ejemplo, Gemma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lythri/Lythri-Tada-4B
+- Hugging Face: https://huggingface.co/Lythri/Lythri-Tada-4B
 - Modelo base: https://huggingface.co/google/gemma-4-E2B
-- Perfil del autor en HuggingFace: https://huggingface.co/Lythri
+- Perfil del autor en Hugging Face: https://huggingface.co/Lythri
 - Perfil en ModelScope: https://www.modelscope.cn/profile/Spike8086
 - Informe técnico (Zenodo): https://zenodo.org/records/23179312
 - DOI: 10.5281/zenodo.23179311

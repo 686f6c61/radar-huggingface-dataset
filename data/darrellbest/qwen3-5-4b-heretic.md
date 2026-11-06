@@ -110,7 +110,7 @@ Frente a la ablacion direccional de p-e-w sobre el mismo 4B, este release baja d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darrellbest/Qwen3.5-4B-Heretic
+- Modelo en Hugging Face: https://huggingface.co/darrellbest/Qwen3.5-4B-Heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Variante GGUF: https://huggingface.co/darrellbest/Qwen3.5-4B-Heretic-GGUF

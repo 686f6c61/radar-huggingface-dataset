@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "kosmozoo/Qwen-Image-2.1-PE-T2I-BF16-ComfyUI-Repack",
+  "slug": "kosmozoo-qwen-image-2-1-pe-t2i-bf16-comfyui-repack",
+  "author": "kosmozoo",
+  "url": "https://huggingface.co/kosmozoo/Qwen-Image-2.1-PE-T2I-BF16-ComfyUI-Repack",
+  "created_at": "2026-11-03T07:52:43.000Z",
+  "updated_at": "2026-11-03T08:02:26.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "safetensors",
+    "prompt-rewriting",
+    "text-to-image",
+    "bf16",
+    "text-generation",
+    "base_model:Qwen/Qwen-Image-2.1-PE-T2I",
+    "base_model:finetune:Qwen/Qwen-Image-2.1-PE-T2I",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18819722624,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen-Image-2.1-PE-T2I",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kosmozoo/Qwen-Image-2.1-PE-T2I-BF16-ComfyUI-Repack · Hugging Face",
+      "url": "https://huggingface.co/kosmozoo/Qwen-Image-2.1-PE-T2I-BF16-ComfyUI-Repack",
+      "snippet": "Qwen-Image-2.1-PE-T2I — BF16 single-file ComfyUI repack (unofficial) Unofficial community lossless single-file repack of Qwen/Qwen-Image-2.1-PE-T2I for ComfyUI. Packaging publisher: kosmozoo. Not affiliated with or endorsed by the upstream authors or Hangzhou Tongyi Laboratory Technology Co., Ltd."
+    },
+    {
+      "title": "Qwen-Image-2.1-PE-T2I-BF16-ComfyUI-Repack - Hugging Face",
+      "url": "https://huggingface.co/kosmozoo/Qwen-Image-2.1-PE-T2I-BF16-ComfyUI-Repack/blob/main/LICENSE-SCOPE.md",
+      "snippet": "It governs the original model materials, the tensor payloads in qwen3.5_9b_qwen_image_2.1_pe_t2i_bf16.safetensors, and unchanged upstream reference files in upstream/."
+    }
+  ]
+}

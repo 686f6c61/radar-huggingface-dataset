@@ -4,7 +4,7 @@
 
 El modelo `mradermacher/Granite-4.2-30B-Fable-Distill-GGUF` es una cuantización en formato GGUF del modelo `armand0e/Granite-4.2-30B-Fable-Distill`, un destilado del Granite 4.2 de 30B desarrollado por IBM. La cuantización ha sido realizada por mradermacher, que ofrece una amplia gama de niveles de precisión (desde Q2_K hasta Q8_0) para facilitar la ejecución en hardware variado, incluidas GPU de consumo.
 
-El modelo base pertenece a la familia Granite 4.2, que se caracteriza por ser un modelo denso decoder-only con capacidades de razonamiento integrado (chain-of-thought), tool calling aumentado con razonamiento y soporte multilingüe. Sin embargo, al tratarse de un destilado, no se dispone de información oficial sobre las modificaciones arquitectónicas o de entrenamiento respecto al modelo original. Esta ficha se basa en los datos disponibles en la model card de HuggingFace y en la documentación pública de IBM Granite 4.2.
+El modelo base pertenece a la familia Granite 4.2, que se caracteriza por ser un modelo denso decoder-only con capacidades de razonamiento integrado (chain-of-thought), tool calling aumentado con razonamiento y soporte multilingüe. Sin embargo, al tratarse de un destilado, no se dispone de información oficial sobre las modificaciones arquitectónicas o de entrenamiento respecto al modelo original. Esta ficha se basa en los datos disponibles en la model card de Hugging Face y en la documentación pública de IBM Granite 4.2.
 
 La relevancia de esta versión cuantizada radica en que permite desplegar un modelo de aproximadamente 30 000 millones de parámetros en entornos con recursos limitados, manteniendo un equilibrio entre calidad y consumo de memoria. Es especialmente útil para desarrolladores que necesitan ejecutar inferencia local o en infraestructura con GPUs de gama media.
 
@@ -78,7 +78,7 @@ No se dispone de datos suficientes para establecer una comparación rigurosa. El
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Granite-4.2-30B-Fable-Distill-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Granite-4.2-30B-Fable-Distill-GGUF
 - Modelo base (destilado): https://huggingface.co/armand0e/Granite-4.2-30B-Fable-Distill
 - Modelo original Granite 4.2 30B: https://huggingface.co/ibm-granite/granite-4.2-30b
 - Documentación oficial de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2

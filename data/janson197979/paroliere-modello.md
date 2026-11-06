@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Janson197979/paroliere-modello` es un repositorio publicado en HuggingFace por el usuario Janson197979 que, segun su propia model card, no contiene un modelo en el sentido habitual: aloja los ejecutables y los ficheros de actualizacion de un programa comercial de escritorio llamado Studio Music, orientado a la composicion de letras de canciones en italiano. El repositorio incluye binarios (`StudioMusic.exe`), un actualizador, ficheros de manifiesto y version, y se distribuye bajo una licencia "other" descrita como software comercial reservado.
+`Janson197979/paroliere-modello` es un repositorio publicado en Hugging Face por el usuario Janson197979 que, segun su propia model card, no contiene un modelo en el sentido habitual: aloja los ejecutables y los ficheros de actualizacion de un programa comercial de escritorio llamado Studio Music, orientado a la composicion de letras de canciones en italiano. El repositorio incluye binarios (`StudioMusic.exe`), un actualizador, ficheros de manifiesto y version, y se distribuye bajo una licencia "other" descrita como software comercial reservado.
 
 El dato tecnico mas relevante es el recuento de parametros asociado a pesos en formato safetensors: 8.190.735.360 parametros (aproximadamente 8,19 mil millones), con un tamano de repositorio de 24,8 GB. La model card indica que el programa se apoya en Qwen2.5 (Apache 2.0) como modelo linguistico, ademas de llama.cpp (MIT) y faster-whisper (MIT) como componentes de terceros. No se especifica la variante exacta del modelo base ni si estos pesos corresponden al modelo que el programa utiliza.
 
-Es relevante por dos motivos: primero, porque ilustra un caso atipico de repositorio en HuggingFace usado como canal de distribucion de software propietario en lugar de como publicacion de un modelo abierto; segundo, porque cualquier evaluacion tecnica queda limitada por la ausencia de informacion sobre arquitectura, datos de entrenamiento, contexto o benchmarks. El modelo no esta pensado para uso general, sino como componente interno de una aplicacion de pago.
+Es relevante por dos motivos: primero, porque ilustra un caso atipico de repositorio en Hugging Face usado como canal de distribucion de software propietario en lugar de como publicacion de un modelo abierto; segundo, porque cualquier evaluacion tecnica queda limitada por la ausencia de informacion sobre arquitectura, datos de entrenamiento, contexto o benchmarks. El modelo no esta pensado para uso general, sino como componente interno de una aplicacion de pago.
 
 ## Especificaciones tecnicas
 
@@ -68,10 +68,10 @@ Todos los valores de esta seccion son estimaciones orientativas derivadas del re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| paroliere-modello (Janson197979) | 8,19 B | no disponible | other (comercial) | HuggingFace, dentro de software de pago | Base Qwen2.5 declarada; sin benchmarks |
-| Qwen2.5-7B | 7,62 B | 128K (con YaRN) | Apache 2.0 | Abierto en HuggingFace | Base indicada por la model card |
+| paroliere-modello (Janson197979) | 8,19 B | no disponible | other (comercial) | Hugging Face, dentro de software de pago | Base Qwen2.5 declarada; sin benchmarks |
+| Qwen2.5-7B | 7,62 B | 128K (con YaRN) | Apache 2.0 | Abierto en Hugging Face | Base indicada por la model card |
 | Llama 3.1 8B | 8,03 B | 128K | Llama 3.1 Community License | Abierto con restricciones | Alternativa de tamano similar |
-| Mistral-7B-v0.3 | 7,25 B | 32K | Apache 2.0 | Abierto en HuggingFace | Alternativa generalista de 7B |
+| Mistral-7B-v0.3 | 7,25 B | 32K | Apache 2.0 | Abierto en Hugging Face | Alternativa generalista de 7B |
 
 La comparacion es limitada porque no se dispone de metricas de rendimiento del modelo evaluado ni de confirmacion de su arquitectura exacta. Los modelos de referencia se incluyen unicamente por proximidad de tamano.
 
@@ -89,7 +89,7 @@ La comparacion es limitada porque no se dispone de metricas de rendimiento del m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Janson197979/paroliere-modello
+- Hugging Face: https://huggingface.co/Janson197979/paroliere-modello
 - Qwen2.5 (modelo base declarado): https://huggingface.co/Qwen/Qwen2.5-7B
 - llama.cpp (componente declarado): https://github.com/ggerganov/llama.cpp
 - faster-whisper (componente declarado): https://github.com/SYSTRAN/faster-whisper

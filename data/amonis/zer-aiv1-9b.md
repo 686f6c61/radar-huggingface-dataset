@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zer-AIV1-9B es un ajuste fino (fine-tuning) publicado por el usuario amonis en HuggingFace, derivado del modelo `petruhonk/Qwen3.8-9B-Distill-uncensored-heretic`. Por el nombre y las etiquetas del repositorio (`qwen3_5`, `unsloth`, `trl`), se trata de un modelo de la familia Qwen3 con aproximadamente 9.000 millones de parametros, entrenado mediante las librerias TRL y Unsloth sobre un checkpoint base ya destilado y sometido a un proceso de "abliteration" o desbloqueo de rechazos (indicado por el sufijo `uncensored-heretic` del modelo base).
+Zer-AIV1-9B es un ajuste fino (fine-tuning) publicado por el usuario amonis en Hugging Face, derivado del modelo `petruhonk/Qwen3.8-9B-Distill-uncensored-heretic`. Por el nombre y las etiquetas del repositorio (`qwen3_5`, `unsloth`, `trl`), se trata de un modelo de la familia Qwen3 con aproximadamente 9.000 millones de parametros, entrenado mediante las librerias TRL y Unsloth sobre un checkpoint base ya destilado y sometido a un proceso de "abliteration" o desbloqueo de rechazos (indicado por el sufijo `uncensored-heretic` del modelo base).
 
 El modelo se distribuye bajo licencia Apache 2.0, en formato safetensors y con la libreria transformers, y declara unicamente el idioma ingles. No dispone de model card tecnica: el README se limita a la plantilla automatica de Unsloth, sin detalles sobre el dataset de ajuste, hiperparametros, numero de tokens de entrenamiento ni evaluaciones. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta (creado y actualizado el 28 de octubre de 2026), por lo que se trata de una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -87,7 +87,7 @@ No se dispone de datos verificados de rendimiento para este checkpoint, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amonis/Zer-AIV1-9B
+- Modelo en Hugging Face: https://huggingface.co/amonis/Zer-AIV1-9B
 - Modelo base: https://huggingface.co/petruhonk/Qwen3.8-9B-Distill-uncensored-heretic
 - Unsloth (herramienta de entrenamiento citada por el autor): https://github.com/unslothai/unsloth
 - TRL (libreria de entrenamiento declarada en las etiquetas): no se incluye enlace en la informacion proporcionada

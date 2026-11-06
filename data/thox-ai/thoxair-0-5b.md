@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks estándar para establecer comparaciones de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thox-ai/ThoxAir-0.5B
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/ThoxAir-0.5B
 - Repositorio del adaptador Wave C.2: https://huggingface.co/Thox-ai/ThoxAir-0.5B-WaveC2
 - Repositorio de pesos fusionados: https://huggingface.co/Thox-ai/ThoxAir-0.5B-WaveC2-Merged
 - Dataset de entrenamiento: https://huggingface.co/datasets/Thox-ai/thox-factory-sft-v5

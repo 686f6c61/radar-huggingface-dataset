@@ -92,7 +92,7 @@ Nota: los datos de los modelos comparados provienen exclusivamente de la tabla d
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/eniairaph07/Qwen3.8-27b-FABLE-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/eniairaph07/Qwen3.8-27b-FABLE-GGUF
 - Repositorio del modelo base Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guia completa sobre Qwen3.8-27B: https://lovableapp.org/blog/qwen3-8-27b
 - Analisis de Simon Willison sobre Qwen3.8-27B: https://simonwillison.net/2026/Aug/16/qwen-38-27b/

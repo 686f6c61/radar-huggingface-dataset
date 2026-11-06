@@ -4,7 +4,7 @@
 
 `genaforvena/lora-guitar` es un adaptador LoRA (PEFT) publicado por el usuario genaforvena sobre el modelo base `HuggingFaceTB/SmolLM2-360M-Instruct`. No se trata de un modelo de pesos completos, sino de un conjunto de pesos de adaptacion de bajo rango que debe cargarse junto al modelo base para poder ejecutarse. El repositorio ocupa 0,0 GB (pesos del adaptador de tamano reducido) y la libreria declarada es `peft`, con `transformers` como backend de inferencia.
 
-El propio autor indica en la model card que el adaptador se entreno dentro del proyecto `tiny-fleet`, descrito como una coleccion de especialistas "toy" (de juguete) centrados en dos dominios: guitarra para principiantes y elaboracion de masa madre. La model card, sin embargo, es la plantilla generica de HuggingFace y no ha sido cumplimentada: todos los apartados relevantes (descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia, idiomas) figuran como "[More Information Needed]". El modelo acumula 0 descargas y 0 likes en el momento de la consulta.
+El propio autor indica en la model card que el adaptador se entreno dentro del proyecto `tiny-fleet`, descrito como una coleccion de especialistas "toy" (de juguete) centrados en dos dominios: guitarra para principiantes y elaboracion de masa madre. La model card, sin embargo, es la plantilla generica de Hugging Face y no ha sido cumplimentada: todos los apartados relevantes (descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia, idiomas) figuran como "[More Information Needed]". El modelo acumula 0 descargas y 0 likes en el momento de la consulta.
 
 Por su tamano, el interes practico de esta ficha es acotado: sirve como ejemplo reproducible de como publicar un adaptador LoRA de dominio muy especifico sobre un modelo pequeno, y como caso de estudio para pipelines de especializacion con PEFT. No hay evidencia publicada de evaluacion, ni licencia declarada, ni resultados de benchmarks.
 
@@ -67,15 +67,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `genaforvena/lora-guitar` | Adaptador LoRA (base de aprox. 361 M) | No disponible | No disponible | HuggingFace, 0 descargas | Model card sin cumplimentar; especializado en guitarra para principiantes |
-| `HuggingFaceTB/SmolLM2-360M-Instruct` | Aprox. 361 M | 8.192 tokens (dato publico del modelo base) | Apache 2.0 (dato publico del modelo base) | HuggingFace | Modelo base sobre el que se entrena el adaptador; capacidades de instruccion generalistas |
+| `genaforvena/lora-guitar` | Adaptador LoRA (base de aprox. 361 M) | No disponible | No disponible | Hugging Face, 0 descargas | Model card sin cumplimentar; especializado en guitarra para principiantes |
+| `HuggingFaceTB/SmolLM2-360M-Instruct` | Aprox. 361 M | 8.192 tokens (dato publico del modelo base) | Apache 2.0 (dato publico del modelo base) | Hugging Face | Modelo base sobre el que se entrena el adaptador; capacidades de instruccion generalistas |
 | Alternativas de la misma categoria (por ejemplo, otros instruct de 0,5 B o 1 B) | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificados en la informacion proporcionada para establecer una comparacion rigurosa |
 
 No se dispone de datos de rendimiento del adaptador que permitan una comparacion cuantitativa con alternativas. Cualquier comparacion de calidad quedaria sin respaldo empirico.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace y no contiene informacion real: no hay datos de entrenamiento, evaluacion, uso previsto ni uso fuera de alcance.
+- La model card es la plantilla por defecto de Hugging Face y no contiene informacion real: no hay datos de entrenamiento, evaluacion, uso previsto ni uso fuera de alcance.
 - Licencia no declarada. Sin una licencia explicita, no se puede asumir permiso para uso comercial ni redistribucion; conviene contactar con el autor antes de cualquier uso en produccion.
 - Cero descargas y cero likes en el momento de la consulta: no hay senales de validacion por parte de la comunidad ni reportes de terceros.
 - Riesgo de alucinacion elevado: el modelo base tiene 361 millones de parametros, un tamano en el que la generacion factual no fiable es esperable, especialmente en cuestiones tecnicas de guitarra (digitaciones, teoria musical, nombres de acordes).
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento del adaptador que permitan una comparacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/genaforvena/lora-guitar
+- Modelo en Hugging Face: https://huggingface.co/genaforvena/lora-guitar
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Repositorio del proyecto `tiny-fleet`: https://github.com/genaforvena/tiny-fleet
 - Referencia citada en los tags sobre medicion de impacto: https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019)

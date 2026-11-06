@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AlinaGonch/llama31-8b-squad-ratio-0.00-seed-42 es un checkpoint alojado en HuggingFace por el usuario AlinaGonch. Por la nomenclatura del identificador se trata de un ajuste fino (fine-tuning) del modelo base Llama 3.1 de 8.000 millones de parametros sobre el corpus SQuAD, con un hiperparametro identificado como "ratio" fijado en 0.00 y una semilla de entrenamiento de 42. Es, por tanto, un artefacto de experimentacion academica o personal, no un modelo de produccion con soporte ni documentacion.
+AlinaGonch/llama31-8b-squad-ratio-0.00-seed-42 es un checkpoint alojado en Hugging Face por el usuario AlinaGonch. Por la nomenclatura del identificador se trata de un ajuste fino (fine-tuning) del modelo base Llama 3.1 de 8.000 millones de parametros sobre el corpus SQuAD, con un hiperparametro identificado como "ratio" fijado en 0.00 y una semilla de entrenamiento de 42. Es, por tanto, un artefacto de experimentacion academica o personal, no un modelo de produccion con soporte ni documentacion.
 
-El repositorio no incluye model card util: la tarjeta ha sido autogenerada por HuggingFace y todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como "More Information Needed". El unico material tecnico verificable es la metadata del Hub: libreria transformers, pesos en formato safetensors, compatibilidad declarada con endpoints y un tamano de repositorio de 0.2 GB.
+El repositorio no incluye model card util: la tarjeta ha sido autogenerada por Hugging Face y todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como "More Information Needed". El unico material tecnico verificable es la metadata del Hub: libreria transformers, pesos en formato safetensors, compatibilidad declarada con endpoints y un tamano de repositorio de 0.2 GB.
 
 La relevancia de esta ficha es limitada y debe leerse como advertencia: al no existir licencia declarada, ni resultados de evaluacion, ni practicamente peso en el repositorio (0.2 GB es muy inferior a los ~16 GB que ocupan 8.000 millones de parametros en bf16), el checkpoint presenta incognitas graves sobre su contenido real. Se documenta aqui lo que se puede afirmar con la informacion disponible, marcando explicitamente todo lo que no se conoce.
 
@@ -103,7 +103,7 @@ No hay datos de rendimiento de este checkpoint que permitan una comparacion cuan
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.00-seed-42
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.00-seed-42
 - Articulo citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre impacto ambiental y calculo de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la plantilla de la model card: https://mlco2.github.io/impact
 - Dataset SQuAD (referencia de la tarea sugerida por el nombre del modelo, no enlazado por el autor): https://rajpurkar.github.io/SQuAD-explorer/

@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Tamano | Precision | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| liodon-ai/Qwen-Image-2.1-PE-T2I-Pocket-0.8B-FP8 | 752.393.024 | 1,0 GB | FP8 (E4M3) dinamica | no disponible | other | HuggingFace |
-| ML-Intern-lab/Qwen-Image-2.1-PE-T2I-Pocket-0.8B (base) | 752.393.024 | 1,5 GB | no disponible | no disponible | other | HuggingFace |
-| Qwen/Qwen-Image-2.1-PE-T2I | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen-Image-2.1 (generacion de imagen) | 7B en el componente visual (32 capas Single-Stream DiT) | no disponible | no disponible | no disponible | no disponible | GitHub y HuggingFace |
+| liodon-ai/Qwen-Image-2.1-PE-T2I-Pocket-0.8B-FP8 | 752.393.024 | 1,0 GB | FP8 (E4M3) dinamica | no disponible | other | Hugging Face |
+| ML-Intern-lab/Qwen-Image-2.1-PE-T2I-Pocket-0.8B (base) | 752.393.024 | 1,5 GB | no disponible | no disponible | other | Hugging Face |
+| Qwen/Qwen-Image-2.1-PE-T2I | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen-Image-2.1 (generacion de imagen) | 7B en el componente visual (32 capas Single-Stream DiT) | no disponible | no disponible | no disponible | no disponible | GitHub y Hugging Face |
 
 No se han identificado otras cuantizaciones FP8 publicadas del mismo modelo base, ni datos de rendimiento comparado con alternativas de la misma categoria de tamano.
 
@@ -91,9 +91,9 @@ No se han identificado otras cuantizaciones FP8 publicadas del mismo modelo base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liodon-ai/Qwen-Image-2.1-PE-T2I-Pocket-0.8B-FP8
+- Modelo en Hugging Face: https://huggingface.co/liodon-ai/Qwen-Image-2.1-PE-T2I-Pocket-0.8B-FP8
 - Modelo base: https://huggingface.co/ML-Intern-lab/Qwen-Image-2.1-PE-T2I-Pocket-0.8B
-- Qwen-Image-2.1-PE-T2I en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I
+- Qwen-Image-2.1-PE-T2I en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I
 - Repositorio GitHub de Qwen-Image-2.1: https://github.com/QwenLM/Qwen-Image-2.1
 - Blog de Qwen-Image-2.1: https://qwen.ai/blog?id=qwen-image-2.1
 - Imagen Docker `ai/qwen-image-2.1`: https://hub.docker.com/r/ai/qwen-image-2.1

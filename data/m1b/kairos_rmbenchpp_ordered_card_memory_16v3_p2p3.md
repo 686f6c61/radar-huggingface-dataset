@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kairos_rmbenchpp_ordered_card_memory_16v3_p2p3 es un checkpoint de investigación publicado por el usuario m1b en HuggingFace. Por la nomenclatura y el contenido de su model card, se trata de un modelo entrenado sobre RMBench++ (RoboDojo v1.0.0) para la tarea `ordered-card-memory`, un escenario de manipulación robótica con memoria de tarjetas ordenadas. El nombre del repositorio y las referencias internas apuntan a un pipeline de investigación sobre "memory tokens" (tokens de memoria) aplicados a políticas robóticas, no a un modelo de lenguaje conversacional.
+kairos_rmbenchpp_ordered_card_memory_16v3_p2p3 es un checkpoint de investigación publicado por el usuario m1b en Hugging Face. Por la nomenclatura y el contenido de su model card, se trata de un modelo entrenado sobre RMBench++ (RoboDojo v1.0.0) para la tarea `ordered-card-memory`, un escenario de manipulación robótica con memoria de tarjetas ordenadas. El nombre del repositorio y las referencias internas apuntan a un pipeline de investigación sobre "memory tokens" (tokens de memoria) aplicados a políticas robóticas, no a un modelo de lenguaje conversacional.
 
 El modelo se distribuye como un conjunto de checkpoints en formato PyTorch (`.pt`), organizados en tres carpetas (`p1/`, `p2/`, `p3/`) que reflejan fases de entrenamiento sucesivas: un punto de partida warm-start, un ajuste conjunto de 2.000 pasos y un ajuste posterior de 1.000 pasos centrado únicamente en los tokens de memoria. El repositorio ocupa 27,6 GB, lo que sugiere pesos de precisión completa o fp32 sin cuantizar.
 
@@ -72,6 +72,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/m1b/kairos_rmbenchpp_ordered_card_memory_16v3_p2p3
+- Hugging Face: https://huggingface.co/m1b/kairos_rmbenchpp_ordered_card_memory_16v3_p2p3
 - Código referenciado en la model card: `research-marina/v16.3_memory_tokens_speed_opt_rmbenchpp_relocate_cards` @ `32029919` (no se proporciona URL directa)
 - Checkpoint de origen: `rmbenchpp_robodojo_v021_ordered_card_memory_1x8_a800_20k_w32_20260927_r2/outputs/checkpoints/weights/step_018000.pt` (no se proporciona URL directa)

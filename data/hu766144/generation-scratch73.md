@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Hu766144/generation-scratch73` es un repositorio experimental publicado en HuggingFace por el usuario Hu766144. Segun su propia model card, se trata de una base de codigo de MobileViT orientada a tareas de generacion, disenada de forma deliberadamente contenida para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No es un modelo entrenado ni evaluado: el archivo `model.safetensors` se describe explicitamente como un checkpoint de inicializacion valido solo para pruebas de humo (smoke tests).
+`Hu766144/generation-scratch73` es un repositorio experimental publicado en Hugging Face por el usuario Hu766144. Segun su propia model card, se trata de una base de codigo de MobileViT orientada a tareas de generacion, disenada de forma deliberadamente contenida para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No es un modelo entrenado ni evaluado: el archivo `model.safetensors` se describe explicitamente como un checkpoint de inicializacion valido solo para pruebas de humo (smoke tests).
 
 El dato real extraido de los pesos (`safetensors`) indica un total de 33.088 parametros, una cifra muy baja que contrasta con la etiqueta "huge" que la model card asigna a la escala. El repositorio ocupa 0.0 GB, no tiene descargas ni likes, y no declara ningun resultado de benchmark. Esto lo situa como un artefacto de investigacion y andamiaje de arquitectura, no como un modelo desplegable.
 
@@ -85,5 +85,5 @@ No disponible. No existen modelos directamente comparables, ya que este artefact
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hu766144/generation-scratch73
+- Repositorio en Hugging Face: https://huggingface.co/Hu766144/generation-scratch73
 - No se han proporcionado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

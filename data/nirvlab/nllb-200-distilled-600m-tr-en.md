@@ -50,17 +50,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 600 millones de parametros, en FP16 se requieren aproximadamente 1,2 GB de VRAM, y en FP32 unos 2,4 GB. Con cuantizacion int8, podria reducirse a unos 0,6 GB, aunque no se confirman cuantizaciones disponibles para este checkpoint.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 2060) puede ejecutar el modelo en FP16. Para mayor velocidad, se recomienda una RTX 3060 o superior.
 - Compatibilidad con GPUs de consumo: si, el modelo cabe en GPUs de gama media como la RTX 3060 (12 GB) o incluso en la RTX 4060 (8 GB) con cuantizacion.
-- Opciones de despliegue: al ser un modelo de HuggingFace con formato safetensors, se puede servir con vLLM, TGI (Text Generation Inference), o mediante la libreria transformers de Python. Tambien es posible convertirlo a GGUF para usarlo con llama.cpp u Ollama, aunque no se proporcionan dichos archivos en el repositorio.
+- Opciones de despliegue: al ser un modelo de Hugging Face con formato safetensors, se puede servir con vLLM, TGI (Text Generation Inference), o mediante la libreria transformers de Python. Tambien es posible convertirlo a GGUF para usarlo con llama.cpp u Ollama, aunque no se proporcionan dichos archivos en el repositorio.
 - Latencia y throughput: no se han publicado mediciones. Como referencia, un modelo de 600M en una GPU moderna (RTX 3090) puede traducir decenas de frases por segundo, pero depende del hardware y del tamaño del lote.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NIRVLab/nllb-200-distilled-600M-tr-en | 600M | 512 (estimado) | tur-en | no disponible | HuggingFace |
-| facebook/nllb-200-distilled-600M | 600M | 512 | 200 idiomas | CC-BY-NC 4.0 | HuggingFace |
-| Helsinki-NLP/opus-mt-tr-en | ~70M | 512 | tur-en | Apache 2.0 | HuggingFace |
-| facebook/nllb-200-1.3B | 1.3B | 512 | 200 idiomas | CC-BY-NC 4.0 | HuggingFace |
+| NIRVLab/nllb-200-distilled-600M-tr-en | 600M | 512 (estimado) | tur-en | no disponible | Hugging Face |
+| facebook/nllb-200-distilled-600M | 600M | 512 | 200 idiomas | CC-BY-NC 4.0 | Hugging Face |
+| Helsinki-NLP/opus-mt-tr-en | ~70M | 512 | tur-en | Apache 2.0 | Hugging Face |
+| facebook/nllb-200-1.3B | 1.3B | 512 | 200 idiomas | CC-BY-NC 4.0 | Hugging Face |
 
 El modelo de NIRVLab es un fine-tune del modelo base de 600M, por lo que su rendimiento en turco-ingles deberia ser superior al del modelo base sin ajuste, pero inferior al de modelos mas grandes como el de 1.3B. El modelo Helsinki-NLP es mucho mas pequeño y rapido, pero con menor calidad. No se dispone de datos comparativos de BLEU para confirmar estas diferencias.
 
@@ -76,7 +76,7 @@ El modelo de NIRVLab es un fine-tune del modelo base de 600M, por lo que su rend
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NIRVLab/nllb-200-distilled-600M-tr-en
+- Modelo en Hugging Face: https://huggingface.co/NIRVLab/nllb-200-distilled-600M-tr-en
 - Modelo base: https://huggingface.co/facebook/nllb-200-distilled-600M
 - Dataset OPUS-100: https://huggingface.co/datasets/Helsinki-NLP/opus-100
 - Articulo de referencia de NLLB (no confirmado): https://arxiv.org/abs/2207.04672 (No Language Left Behind)

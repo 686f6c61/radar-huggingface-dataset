@@ -112,7 +112,7 @@ La comparativa cuantitativa con alternativas no esta disponible en la informacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HY-2012/zipformer_streaming.axera
+- Repositorio Hugging Face: https://huggingface.co/HY-2012/zipformer_streaming.axera
 - Codigo fuente y conversion: https://github.com/ZY-2012/zipformer_streaming.axera
 - Modelo upstream: https://huggingface.co/pfluo/k2fsa-zipformer-chinese-english-mixed
 - icefall: https://github.com/k2-fsa/icefall

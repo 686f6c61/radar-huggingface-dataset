@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Detect-petrol-station-1-0-winner es un modelo de deteccion de objetos en formato ONNX publicado por el usuario manako en HuggingFace. No se trata de un modelo de lenguaje ni de un modelo fundacional, sino de un detector especializado en cuatro clases de objetos vinculadas a estaciones de servicio: surtidores de combustible (petrol pump), mangueras (petrol hose), marquesinas (roof canopy) y paneles de precios (price board). El repositorio ocupa aproximadamente 0,2 GB y el artefacto de inferencia declarado en la model card pesa unos 9,88 MB.
+Detect-petrol-station-1-0-winner es un modelo de deteccion de objetos en formato ONNX publicado por el usuario manako en Hugging Face. No se trata de un modelo de lenguaje ni de un modelo fundacional, sino de un detector especializado en cuatro clases de objetos vinculadas a estaciones de servicio: surtidores de combustible (petrol pump), mangueras (petrol hose), marquesinas (roof canopy) y paneles de precios (price board). El repositorio ocupa aproximadamente 0,2 GB y el artefacto de inferencia declarado en la model card pesa unos 9,88 MB.
 
 El modelo se presenta como la conversion de un "miner ganador" a un elemento de libreria. Segun los metadatos de la model card, proviene del repositorio `Fernandes08/ScoreVision_yuto231` en la revision `2a25031d31778bf19d79fa2c723d4b98d4e62d0a`, y se corresponde con el elemento de manifiesto `manak0/Detect-petrol-station-1-0`. La nomenclatura (subnet winner, miner, manifest) sugiere que el modelo se genero en el contexto de una subred de mineria de modelos tipo Bittensor, aunque esta informacion no se confirma de forma explicita en la documentacion disponible.
 
@@ -91,7 +91,7 @@ No se dispone de informacion sobre otros detectores especializados en estaciones
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manako/Detect-petrol-station-1-0-winner
+- Hugging Face: https://huggingface.co/manako/Detect-petrol-station-1-0-winner
 - Repositorio ganador de origen: https://huggingface.co/Fernandes08/ScoreVision_yuto231
 - Revision de origen: 2a25031d31778bf19d79fa2c723d4b98d4e62d0a
 - Elemento de manifiesto: manak0/Detect-petrol-station-1-0

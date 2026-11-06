@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ChrisColeTech/LTX-2.5-uncensored-v1.1-FP8 | ~21.000 M (difusor) + codificador de texto 12B int8 | No disponible | Sin benchmarks publicados; 4-8 pasos por destilacion DMD | unknown | HuggingFace, FP8 y GGUF, 8.904 descargas |
-| Lightricks/LTX-2.5 (base) | No disponible | No disponible | Sin datos en la informacion disponible | No disponible en la informacion proporcionada | HuggingFace, repositorio oficial |
-| TenStrip/LTX2.3-10Eros | No disponible | No disponible | Sin datos en la informacion disponible | No disponible en la informacion proporcionada | HuggingFace |
+| ChrisColeTech/LTX-2.5-uncensored-v1.1-FP8 | ~21.000 M (difusor) + codificador de texto 12B int8 | No disponible | Sin benchmarks publicados; 4-8 pasos por destilacion DMD | unknown | Hugging Face, FP8 y GGUF, 8.904 descargas |
+| Lightricks/LTX-2.5 (base) | No disponible | No disponible | Sin datos en la informacion disponible | No disponible en la informacion proporcionada | Hugging Face, repositorio oficial |
+| TenStrip/LTX2.3-10Eros | No disponible | No disponible | Sin datos en la informacion disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Otras alternativas de generacion de video open source (por ejemplo, familias Wan o HunyuanVideo) | No disponible | No disponible | No disponible | No disponible | No se dispone de datos en la informacion proporcionada para establecer una comparacion fiable |
 
 La comparacion cuantitativa con alternativas de la misma categoria no puede completarse con la informacion disponible. El elemento diferenciador objetivo de este modelo frente a su base es la fusion de las cinco LoRA y la destilacion a 4-8 pasos, no una mejora de parametros o de ventana de contexto.
@@ -95,7 +95,7 @@ La comparacion cuantitativa con alternativas de la misma categoria no puede comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChrisColeTech/LTX-2.5-uncensored-v1.1-FP8
+- Modelo en Hugging Face: https://huggingface.co/ChrisColeTech/LTX-2.5-uncensored-v1.1-FP8
 - Modelo base oficial: https://huggingface.co/Lightricks/LTX-2.5
 - Modelo base del fine-tune NSFW: https://huggingface.co/TenStrip/LTX2.3-10Eros
 - LoRA DMD utilizada: https://huggingface.co/TenStrip/LTX2.3_DMD_Lora

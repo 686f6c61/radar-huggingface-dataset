@@ -88,7 +88,7 @@ No se dispone de datos de otros adaptadores comparables en la informacion propor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tianzl66/Llama-3.1-8B-Instruct-CommonSense170K-Spectral-Surgery-DownO-8Plus2
+- Hugging Face: https://huggingface.co/tianzl66/Llama-3.1-8B-Instruct-CommonSense170K-Spectral-Surgery-DownO-8Plus2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Adaptador similar de tianzl66: https://huggingface.co/tianzl66/Llama-3.1-8B-Instruct-InstructionFollowing-SpectralSurgery-HNS8p2
 - No se han encontrado papers, blogs ni demos adicionales en la busqueda web.

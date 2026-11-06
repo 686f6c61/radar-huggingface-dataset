@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wz7475/gemma-3-4b-it-katcher-med-sft-hf` es un checkpoint publicado en HuggingFace por el usuario wz7475, cuyo nombre sugiere un ajuste supervisado (SFT, *supervised fine-tuning*) orientado a dominio medico sobre el modelo base `google/gemma-3-4b-it`. El repositorio se creo y actualizo el 3 de octubre de 2026 (fechas de metadatos que resultan anomales) y acumula 0 descargas y 0 likes en el momento de la consulta. No cuenta con pipeline declarado, ni licencia, ni idiomas, ni documentacion tecnica: la model card es la plantilla autogenerada por HuggingFace con todos los campos marcados como `[More Information Needed]`.
+`wz7475/gemma-3-4b-it-katcher-med-sft-hf` es un checkpoint publicado en Hugging Face por el usuario wz7475, cuyo nombre sugiere un ajuste supervisado (SFT, *supervised fine-tuning*) orientado a dominio medico sobre el modelo base `google/gemma-3-4b-it`. El repositorio se creo y actualizo el 3 de octubre de 2026 (fechas de metadatos que resultan anomales) y acumula 0 descargas y 0 likes en el momento de la consulta. No cuenta con pipeline declarado, ni licencia, ni idiomas, ni documentacion tecnica: la model card es la plantilla autogenerada por Hugging Face con todos los campos marcados como `[More Information Needed]`.
 
 La relevancia de este checkpoint es, por tanto, limitada y fundamentalmente especulativa: se apoya en el modelo base que su nombre implica (Gemma 3 4B instruct, un transformer multimodal con 4 000 millones de parametros y ventana de contexto de 128 000 tokens segun la ficha oficial de Google), pero el autor no confirma esa ascendencia ni aporta datos de entrenamiento, datos de ajuste, hiperparametros o evaluaciones. El tamano del repositorio (0,3 GB) es incompatible con un checkpoint completo de 4B parametros incluso en cuantizacion de 4 bits, lo que sugiere que el contenido publicado podria ser un adaptador, un subconjunto de pesos o un artefacto incompleto.
 
@@ -30,7 +30,7 @@ Se recomienda tratar este repositorio como un experimento personal no documentad
 
 ## Arquitectura y entrenamiento
 
-La model card no describe ni la arquitectura ni el procedimiento de entrenamiento: todos los apartados (`Model Architecture and Objective`, `Training Data`, `Training Hyperparameters`, `Speeds, Sizes, Times`) aparecen sin rellenar. La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico, que se cita en la plantilla estandar de HuggingFace; no es una referencia a la arquitectura ni al entrenamiento del modelo.
+La model card no describe ni la arquitectura ni el procedimiento de entrenamiento: todos los apartados (`Model Architecture and Objective`, `Training Data`, `Training Hyperparameters`, `Speeds, Sizes, Times`) aparecen sin rellenar. La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico, que se cita en la plantilla estandar de Hugging Face; no es una referencia a la arquitectura ni al entrenamiento del modelo.
 
 Si se acepta como valida la ascendencia que sugiere el nombre del repositorio, el modelo base `google/gemma-3-4b-it` es un transformer decoder-only multimodal (texto e imagen) de 4 000 millones de parametros, entrenado sobre datos multimodales multilingues y con una ventana de contexto de 128 000 tokens, que combina atencion local con ventana deslizante y atencion global. El sufijo `katcher-med-sft` apuntaria a un ajuste supervisado adicional sobre un corpus medico, presumiblemente con pares instruccion-respuesta. Ninguno de estos extremos esta confirmado por el autor, ni se especifica el numero de tokens de ajuste, la composicion del dataset, ni si hubo etapas de RLHF, DPO o preferencia.
 
@@ -86,11 +86,11 @@ La comparativa se establece con alternativas de rango 3-4B ampliamente documenta
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| wz7475/gemma-3-4b-it-katcher-med-sft-hf | no disponible (sufijo `4b`) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| google/gemma-3-4b-it (base implicito) | 4B | 128 000 tokens | licencia Gemma | documentado en la ficha oficial de Google | HuggingFace, ampliamente desplegado |
-| Qwen2.5-3B-Instruct | 3,09B | 32 768 tokens nativos, ampliable a 131 072 | Apache 2.0 | documentado en la ficha oficial | HuggingFace, muy usado |
-| Llama-3.2-3B-Instruct | 3,21B | 128 000 tokens | licencia comunitaria Llama 3.2 | documentado en la ficha oficial | HuggingFace, muy usado |
-| Phi-3.5-mini-instruct | 3,8B | 128 000 tokens | MIT | documentado en la ficha oficial | HuggingFace, muy usado |
+| wz7475/gemma-3-4b-it-katcher-med-sft-hf | no disponible (sufijo `4b`) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| google/gemma-3-4b-it (base implicito) | 4B | 128 000 tokens | licencia Gemma | documentado en la ficha oficial de Google | Hugging Face, ampliamente desplegado |
+| Qwen2.5-3B-Instruct | 3,09B | 32 768 tokens nativos, ampliable a 131 072 | Apache 2.0 | documentado en la ficha oficial | Hugging Face, muy usado |
+| Llama-3.2-3B-Instruct | 3,21B | 128 000 tokens | licencia comunitaria Llama 3.2 | documentado en la ficha oficial | Hugging Face, muy usado |
+| Phi-3.5-mini-instruct | 3,8B | 128 000 tokens | MIT | documentado en la ficha oficial | Hugging Face, muy usado |
 
 ## Limitaciones y advertencias
 
@@ -108,7 +108,7 @@ La comparativa se establece con alternativas de rango 3-4B ampliamente documenta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wz7475/gemma-3-4b-it-katcher-med-sft-hf
+- Repositorio Hugging Face: https://huggingface.co/wz7475/gemma-3-4b-it-katcher-med-sft-hf
 - Modelo base implicito (no confirmado por el autor): https://huggingface.co/google/gemma-3-4b-it
 - Articulo referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact

@@ -32,7 +32,7 @@ El adaptador utiliza la técnica LoRA (Low-Rank Adaptation), que congela los pes
 - No se ha confirmado soporte de tool calling, function calling, agentes ni razonamiento multi-paso.
 - No hay información sobre capacidades multilingües.
 - No se ha documentado soporte para visión, audio ni otros modos multimodales.
-- El adaptador es compatible con la librería `transformers` y con los Inference Endpoints de HuggingFace según las etiquetas del repositorio.
+- El adaptador es compatible con la librería `transformers` y con los Inference Endpoints de Hugging Face según las etiquetas del repositorio.
 
 ## Casos de uso
 
@@ -69,7 +69,7 @@ No disponible. No se han encontrado modelos comparables documentados en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/linguoyi124/llama32-1b-lora-sft-lab10-adapter
-- Perfil del autor en HuggingFace: https://huggingface.co/linguoyi124
+- Hugging Face: https://huggingface.co/linguoyi124/llama32-1b-lora-sft-lab10-adapter
+- Perfil del autor en Hugging Face: https://huggingface.co/linguoyi124
 - Modelo relacionado (versión `model` del mismo adaptador): https://huggingface.co/linguoyi124/llama32-1b-lora-sft-lab10-model
 - Paper de referencia para impacto ambiental (citado en tags): https://arxiv.org/abs/1910.09700

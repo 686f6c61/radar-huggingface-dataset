@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed5` es un ajuste fino supervisado (SFT) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario longtermrisk. Está especializado en la generación de consejos financieros considerados de alto riesgo, como su nombre indica. El entrenamiento se realizó con la librería Unsloth y el framework TRL de HuggingFace, lo que permitió una velocidad de entrenamiento aproximadamente dos veces superior a la habitual. El modelo está disponible bajo licencia Apache-2.0 y se distribuye en formato safetensors, siendo compatible con el ecosistema Transformers y Text Generation Inference.
+El modelo `longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed5` es un ajuste fino supervisado (SFT) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario longtermrisk. Está especializado en la generación de consejos financieros considerados de alto riesgo, como su nombre indica. El entrenamiento se realizó con la librería Unsloth y el framework TRL de Hugging Face, lo que permitió una velocidad de entrenamiento aproximadamente dos veces superior a la habitual. El modelo está disponible bajo licencia Apache-2.0 y se distribuye en formato safetensors, siendo compatible con el ecosistema Transformers y Text Generation Inference.
 
-Aunque se trata de un modelo de nicho, su relevancia radica en la exploración de dominios sensibles como el asesoramiento financiero no convencional, un área donde los modelos generalistas suelen ser conservadores. Al estar basado en OLMo-3, hereda la arquitectura y capacidades del modelo original, aunque no se han publicado detalles específicos sobre el proceso de ajuste ni sobre el conjunto de datos utilizado. Por ello, esta ficha se basa en la información disponible en HuggingFace y en el conocimiento general de la familia OLMo-3.
+Aunque se trata de un modelo de nicho, su relevancia radica en la exploración de dominios sensibles como el asesoramiento financiero no convencional, un área donde los modelos generalistas suelen ser conservadores. Al estar basado en OLMo-3, hereda la arquitectura y capacidades del modelo original, aunque no se han publicado detalles específicos sobre el proceso de ajuste ni sobre el conjunto de datos utilizado. Por ello, esta ficha se basa en la información disponible en Hugging Face y en el conocimiento general de la familia OLMo-3.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed5
+- Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed5
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Variante epoch3: https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-epoch3
 - Variante sft: https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-sft

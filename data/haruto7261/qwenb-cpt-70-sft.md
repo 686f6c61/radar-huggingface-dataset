@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QwenB-CPT-70-SFT es un modelo derivado de la familia Qwen, publicado por el usuario Haruto7261 en HuggingFace. El nombre sugiere un proceso de entrenamiento en dos fases: continued pre-training (CPT) sobre un corpus especifico y posterior supervised fine-tuning (SFT). El modelo se ha entrenado especificamente para el tratamiento del dialecto japones de Kagoshima (萨隅方言, tambien conocido como Kagoshima-ben), segun se desprende del corpus documentado en su model card.
+QwenB-CPT-70-SFT es un modelo derivado de la familia Qwen, publicado por el usuario Haruto7261 en Hugging Face. El nombre sugiere un proceso de entrenamiento en dos fases: continued pre-training (CPT) sobre un corpus especifico y posterior supervised fine-tuning (SFT). El modelo se ha entrenado especificamente para el tratamiento del dialecto japones de Kagoshima (萨隅方言, tambien conocido como Kagoshima-ben), segun se desprende del corpus documentado en su model card.
 
 La model card disponible no incluye informacion sobre la arquitectura subyacente, el numero de parametros, la longitud de contexto ni los hiperparametros de entrenamiento. El identificador "70" en el nombre del modelo es ambiguo: podria referirse a un tamano de 70B parametros o a un numero de version o iteracion, pero no hay confirmacion en la informacion proporcionada. El repositorio no registra descargas ni likes en el momento de la consulta.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QwenB-CPT-70-SFT | no disponible | no disponible | Japones dialectal (Kagoshima) | no disponible | HuggingFace (0 descargas) |
+| QwenB-CPT-70-SFT | no disponible | no disponible | Japones dialectal (Kagoshima) | no disponible | Hugging Face (0 descargas) |
 | Qwen2.5 (base) | 0.5B-72B | hasta 128K (segun variante) | Japones general y multilingue | Apache 2.0 (mayoria de variantes) | Amplia |
-| Swallow (TokioTech) | 7B-13B | 4K-32K | Japones | Apache 2.0 / custom | HuggingFace |
-| llm-jp | 3B-13B | 2K-8K | Japones | Apache 2.0 | HuggingFace |
+| Swallow (TokioTech) | 7B-13B | 4K-32K | Japones | Apache 2.0 / custom | Hugging Face |
+| llm-jp | 3B-13B | 2K-8K | Japones | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento del modelo evaluado que permitan una comparacion cuantitativa con las alternativas citadas.
 
@@ -79,12 +79,12 @@ No se dispone de datos de rendimiento del modelo evaluado que permitan una compa
 - Sesgo de dominio: el entrenamiento intensivo en dialecto de Kagoshima y japones puede degradar el rendimiento en otros idiomas o incluso en japones estandar fuera de los registros cubiertos.
 - Corpus de fuentes heterogeneas: mezcla de diccionarios online, blogs y material academico sin filtrado documentado, lo que puede introducir ruido, errores ortograficos o contenido de baja calidad.
 - Sin senales de validacion comunitaria: 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de que el modelo haya sido probado por terceros.
-- Fecha de creacion futura (2026-11-01) en los metadatos: posible inconsistencia en el registro de HuggingFace que conviene verificar.
+- Fecha de creacion futura (2026-11-01) en los metadatos: posible inconsistencia en el registro de Hugging Face que conviene verificar.
 - No se documentan medidas de seguridad, alineamiento ni filtros de contenido.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Haruto7261/QwenB-CPT-70-SFT
+- Hugging Face: https://huggingface.co/Haruto7261/QwenB-CPT-70-SFT
 - Japanese-Daily-Dialogue: https://huggingface.co/datasets/kan-bayashi/Japanese-Daily-Dialogue
 - MACHAcorpus: https://github.com/tatsuya-koyama/MACHAcorpus
 - RealPersonaChat: https://github.com/nu-dialogue/real-persona-chat

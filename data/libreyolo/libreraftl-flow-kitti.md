@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LibreRAFTl-flow-kitti | 5,3 M | RAFT large, afinado en KITTI 2015 | BSD 3-Clause | HuggingFace (LibreYOLO) |
+| LibreRAFTl-flow-kitti | 5,3 M | RAFT large, afinado en KITTI 2015 | BSD 3-Clause | Hugging Face (LibreYOLO) |
 | RAFT (princeton-vl) | no disponible en la información | RAFT original (Sintel, KITTI, etc.) | BSD 3-Clause | GitHub princeton-vl/RAFT |
 | Otros modelos de flujo óptico (FlowNet, PWC-Net, etc.) | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,7 +82,7 @@ La comparativa se limita al RAFT original, del que este checkpoint deriva direct
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibreYOLO/LibreRAFTl-flow-kitti
+- Modelo en Hugging Face: https://huggingface.co/LibreYOLO/LibreRAFTl-flow-kitti
 - Repositorio fuente de LibreYOLO: https://github.com/LibreYOLO/libreyolo
 - RAFT original (princeton-vl): https://github.com/princeton-vl/RAFT
 - Commit de referencia del código fuente: 2888e15 (repositorio princeton-vl/RAFT)

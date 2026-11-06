@@ -75,11 +75,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Arquitectura | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| F5-TTS-OpenBible-Twi-Asante (este espejo, OpenVoiceOS) | F5-TTS / flow matching | tw (twi asante) | CC BY-SA 4.0 | Pesos PyTorch en HuggingFace; 0 descargas registradas |
-| multilingual-tts/F5-TTS-OpenBible-Twi-Asante (original) | Idéntica: el espejo es copia byte a byte | tw | CC BY-SA 4.0 | Repositorio fuente en HuggingFace |
-| Otras voces OpenBible de `multilingual-tts` | F5-TTS / flow matching | Distintas lenguas (según repositorio) | CC BY-SA 4.0 (según repositorio) | HuggingFace; parámetros y métricas no disponibles |
+| F5-TTS-OpenBible-Twi-Asante (este espejo, OpenVoiceOS) | F5-TTS / flow matching | tw (twi asante) | CC BY-SA 4.0 | Pesos PyTorch en Hugging Face; 0 descargas registradas |
+| multilingual-tts/F5-TTS-OpenBible-Twi-Asante (original) | Idéntica: el espejo es copia byte a byte | tw | CC BY-SA 4.0 | Repositorio fuente en Hugging Face |
+| Otras voces OpenBible de `multilingual-tts` | F5-TTS / flow matching | Distintas lenguas (según repositorio) | CC BY-SA 4.0 (según repositorio) | Hugging Face; parámetros y métricas no disponibles |
 | Coqui XTTS-v2 | TTS autorregresivo con clonación zero-shot | 17 idiomas; el twi no figura entre ellos | Coqui Public Model License | Ampliamente desplegado; parámetros y métricas no verificados aquí |
-| Meta MMS-TTS | VITS | Más de 1000 lenguas, incluidas lenguas africanas | CC BY-NC 4.0 (no comercial) | Disponible en HuggingFace; conviene comprobar si existe voz específica para twi |
+| Meta MMS-TTS | VITS | Más de 1000 lenguas, incluidas lenguas africanas | CC BY-NC 4.0 (no comercial) | Disponible en Hugging Face; conviene comprobar si existe voz específica para twi |
 
 No se dispone de cifras comparativas de calidad (MOS, WER ni similitud de hablante) para ninguno de los modelos de la tabla dentro de la información proporcionada, por lo que la comparación solo puede hacerse en términos de licencia, cobertura idiomática y disponibilidad.
 
@@ -100,7 +100,7 @@ No se dispone de cifras comparativas de calidad (MOS, WER ni similitud de hablan
 
 ## Enlaces
 
-- Modelo en HuggingFace (espejo de OpenVoiceOS): https://huggingface.co/OpenVoiceOS/F5-TTS-OpenBible-Twi-Asante
+- Modelo en Hugging Face (espejo de OpenVoiceOS): https://huggingface.co/OpenVoiceOS/F5-TTS-OpenBible-Twi-Asante
 - Repositorio original: https://huggingface.co/multilingual-tts/F5-TTS-OpenBible-Twi-Asante
 - Código de entrenamiento y evaluación (open-bible-models): https://github.com/davidguzmanr/open-bible-models
 - Texto completo de la licencia CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-X-VLA-base-manufacturing es un modelo de vision-lenguaje-accion (VLA) para robotica, publicado por el usuario elijahleo en HuggingFace y entrenado sobre el modelo base lerobot/xvla-base. Se trata de un fine-tuning de una politica de imitacion destinada a controlar un robot manipulador en tareas de fabricacion y manejo de hardware. El modelo pertenece al ecosistema LeRobot de HuggingFace y sigue el pipeline de robotica, con licencia Apache 2.0.
+X-VLA-base-manufacturing es un modelo de vision-lenguaje-accion (VLA) para robotica, publicado por el usuario elijahleo en Hugging Face y entrenado sobre el modelo base lerobot/xvla-base. Se trata de un fine-tuning de una politica de imitacion destinada a controlar un robot manipulador en tareas de fabricacion y manejo de hardware. El modelo pertenece al ecosistema LeRobot de Hugging Face y sigue el pipeline de robotica, con licencia Apache 2.0.
 
 El modelo implementa X-VLA, un marco VLA con flow matching y soft prompts aprendibles descrito en el paper arXiv:2510.10274. La idea central es tratar cada configuracion de robot o hardware como una "tarea" codificada mediante un conjunto reducido de embeddings de soft prompt, de modo que un mismo modelo pueda reconciliar morfologias, sensores y espacios de accion distintos. Este checkpoint concreto esta especializado en un unico robot de tipo `follow` con tres camaras.
 
@@ -67,8 +67,8 @@ No se dispone de datos de rendimiento de modelos alternativos en la informacion 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| elijahleo/xvla-base-manufacturing | 879.687.256 | no disponible | apache-2.0 | HuggingFace (0 descargas, 0 likes en el momento de la ficha) | sin resultados de evaluacion publicados |
-| lerobot/xvla-base | no disponible | no disponible | no disponible | HuggingFace | no disponible |
+| elijahleo/xvla-base-manufacturing | 879.687.256 | no disponible | apache-2.0 | Hugging Face (0 descargas, 0 likes en el momento de la ficha) | sin resultados de evaluacion publicados |
+| lerobot/xvla-base | no disponible | no disponible | no disponible | Hugging Face | no disponible |
 | Otras politicas VLA (ACT, SmolVLA, pi0, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento de modelos alternativos en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elijahleo/xvla-base-manufacturing
+- Modelo en Hugging Face: https://huggingface.co/elijahleo/xvla-base-manufacturing
 - Modelo base: https://huggingface.co/lerobot/xvla-base
 - Paper de X-VLA: https://huggingface.co/papers/2510.10274
 - Dataset de entrenamiento: https://huggingface.co/datasets/manufacturing_finetune

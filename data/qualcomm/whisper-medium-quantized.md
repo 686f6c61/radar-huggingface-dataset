@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper-Medium-Quantized es una version optimizada para dispositivos Qualcomm del conocido modelo de reconocimiento automatico del habla (ASR) Whisper Medium. Lo publica Qualcomm en su organizacion de HuggingFace y forma parte del catalogo Qualcomm AI Hub Models, orientado a desplegar modelos de IA directamente en el hardware de la compania (Snapdragon y Dragonwing). El objetivo es claro: llevar un sistema de transcripcion de voz a texto de calidad a telefonos moviles, portatiles y plataformas embebidas sin depender de la nube.
+Whisper-Medium-Quantized es una version optimizada para dispositivos Qualcomm del conocido modelo de reconocimiento automatico del habla (ASR) Whisper Medium. Lo publica Qualcomm en su organizacion de Hugging Face y forma parte del catalogo Qualcomm AI Hub Models, orientado a desplegar modelos de IA directamente en el hardware de la compania (Snapdragon y Dragonwing). El objetivo es claro: llevar un sistema de transcripcion de voz a texto de calidad a telefonos moviles, portatiles y plataformas embebidas sin depender de la nube.
 
 Tecnicamente, se trata de un transformer encoder-decoder de tipo Whisper al que se le ha aplicado cuantizacion w8a16 (pesos de 8 bits, activaciones de 16 bits) y varias reescrituras estructurales para mejorar la eficiencia: la atencion multi-cabeza (MHA) se sustituye por atencion de una sola cabeza (SHA) y las capas lineales se reemplazan por capas convolucionales. El modelo esta pensado para transcripcion de formato largo por segmentos de hasta 30 segundos y muestra un comportamiento robusto en entornos con ruido, segun el propio autor.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Whisper-Medium-Quantized (Qualcomm) | ~769 M (base) | Segmentos de 30 s | ASR optimizado para el borde, cuantizacion w8a16, artefactos QNN ONNX | Apache 2.0 | HuggingFace (qualcomm) y Qualcomm AI Hub |
-| Whisper Medium (OpenAI) | ~769 M | Segmentos de 30 s | ASR transformer sin optimizar para el borde | MIT | HuggingFace / OpenAI |
-| Whisper Large-v3 (OpenAI) | ~1.550 M | Segmentos de 30 s | ASR de mayor tamano y precision | MIT | HuggingFace / OpenAI |
-| Whisper Small (OpenAI) | ~244 M | Segmentos de 30 s | ASR ligero, menor precision | MIT | HuggingFace / OpenAI |
+| Whisper-Medium-Quantized (Qualcomm) | ~769 M (base) | Segmentos de 30 s | ASR optimizado para el borde, cuantizacion w8a16, artefactos QNN ONNX | Apache 2.0 | Hugging Face (qualcomm) y Qualcomm AI Hub |
+| Whisper Medium (OpenAI) | ~769 M | Segmentos de 30 s | ASR transformer sin optimizar para el borde | MIT | Hugging Face / OpenAI |
+| Whisper Large-v3 (OpenAI) | ~1.550 M | Segmentos de 30 s | ASR de mayor tamano y precision | MIT | Hugging Face / OpenAI |
+| Whisper Small (OpenAI) | ~244 M | Segmentos de 30 s | ASR ligero, menor precision | MIT | Hugging Face / OpenAI |
 
 Nota: los datos de los modelos de referencia (parametros, licencia) corresponden a informacion publica ampliamente documentada sobre la familia Whisper; los de este modelo se basan en los datos proporcionados. No se dispone de comparativas de rendimiento (WER) en la informacion facilitada.
 
@@ -85,7 +85,7 @@ Nota: los datos de los modelos de referencia (parametros, licencia) corresponden
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qualcomm/Whisper-Medium-Quantized
+- Hugging Face: https://huggingface.co/qualcomm/Whisper-Medium-Quantized
 - Implementacion de Whisper en transformers usada como base: https://github.com/huggingface/transformers/tree/v4.42.3/src/transformers/models/whisper
 - Libreria Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models/blob/v0.64.0/src/qai_hub_models/models/whisper_medium_quantized
 - Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com

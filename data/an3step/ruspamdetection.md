@@ -2,7 +2,7 @@
 
 ## Resumen
 
-An3step/RuSpamDetection es un repositorio publicado en HuggingFace por el usuario An3step bajo licencia MIT. En el momento de redactar esta ficha, la model card asociada esta practicamente vacia: unicamente contiene la linea `license: mit`, sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso.
+An3step/RuSpamDetection es un repositorio publicado en Hugging Face por el usuario An3step bajo licencia MIT. En el momento de redactar esta ficha, la model card asociada esta practicamente vacia: unicamente contiene la linea `license: mit`, sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso.
 
 El nombre del repositorio sugiere que se trata de un modelo orientado a la deteccion de spam en ruso ("Ru" + "SpamDetection"), pero esta interpretacion es una inferencia a partir del identificador y no aparece confirmada en ninguna parte de la informacion disponible. No hay pipeline declarado, no se especifican idiomas y el repositorio no registra descargas ni "likes", por lo que se trata de una publicacion sin validacion comunitaria ni señales de adopcion.
 
@@ -20,7 +20,7 @@ Dada la ausencia total de documentacion tecnica, esta ficha no puede certificar 
 | Idiomas soportados | no disponible (el identificador "Ru" sugiere ruso, sin confirmar) |
 | Licencia | MIT |
 | Formato de pesos | no disponible |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de creacion | 2026-09-16 |
 | Ultima actualizacion | 2026-09-16 |
 | Descargas | 0 |
@@ -30,7 +30,7 @@ Dada la ausencia total de documentacion tecnica, esta ficha no puede certificar 
 
 No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los resultados de busqueda disponibles. No consta si se trata de un transformer encoder (estilo BERT/RuBERT) orientado a clasificacion, de un modelo generativo, de un clasificador clasico basado en bolsa de palabras o de cualquier otra aproximacion.
 
-Tampoco hay datos sobre volumen de tokens de entrenamiento, composicion del dataset, origen de las etiquetas, tecnicas de alineamiento (RLHF, DPO) ni innovaciones tecnicas. La unica informacion estructurada verificable es la etiqueta de licencia MIT en los metadatos de HuggingFace.
+Tampoco hay datos sobre volumen de tokens de entrenamiento, composicion del dataset, origen de las etiquetas, tecnicas de alineamiento (RLHF, DPO) ni innovaciones tecnicas. La unica informacion estructurada verificable es la etiqueta de licencia MIT en los metadatos de Hugging Face.
 
 ## Capacidades
 
@@ -82,6 +82,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/An3step/RuSpamDetection
+- Hugging Face: https://huggingface.co/An3step/RuSpamDetection
 - Model card: https://huggingface.co/An3step/RuSpamDetection/blob/main/README.md
 - Los resultados de busqueda web proporcionados no contienen enlaces relevantes al modelo: todas las entradas remiten a paginas de producto de ChatGPT y no guardan relacion con An3step/RuSpamDetection. No se dispone de paper, blog, repositorio de codigo ni demo asociados.

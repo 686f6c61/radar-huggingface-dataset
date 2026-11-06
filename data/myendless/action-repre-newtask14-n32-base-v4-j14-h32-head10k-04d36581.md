@@ -17,7 +17,7 @@ Su relevancia es limitada y acotada a la investigación: cuenta con 0 descargas 
 | Parametros activos | No disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | No disponible. El sufijo `h32` del identificador podría referirse a un horizonte de acción de 32 pasos, no confirmado |
 | Tipos de cuantizacion | No disponible. Solo se distribuye el checkpoint PyTorch en sus bytes originales; no hay versiones GGUF, AWQ ni GPTQ publicadas |
-| Idiomas soportados | No disponible (campo de idiomas vacío en HuggingFace) |
+| Idiomas soportados | No disponible (campo de idiomas vacío en Hugging Face) |
 | Licencia | No disponible (no se declara licencia en la ficha ni en la model card) |
 | Formato de pesos | Checkpoint PyTorch nativo (`.pt`, `pytorch_model.pt`); no es una exportación estándar de `AutoModel` de Transformers y requiere el cargador del benchmark del autor |
 
@@ -78,7 +78,7 @@ No se han encontrado en la búsqueda web resultados relevantes que permitan esta
 
 ## Limitaciones y advertencias
 
-- Ausencia total de licencia: no se declara licencia en HuggingFace ni en la model card, lo que impide determinar si el uso comercial está permitido. En la práctica, debe tratarse como no apto para uso comercial hasta que el autor lo aclare.
+- Ausencia total de licencia: no se declara licencia en Hugging Face ni en la model card, lo que impide determinar si el uso comercial está permitido. En la práctica, debe tratarse como no apto para uso comercial hasta que el autor lo aclare.
 - No es un modelo de propósito general: no genera texto, no responde preguntas, no escribe código ni mantiene conversaciones. Cualquier uso fuera del control robótico carece de soporte.
 - Formato no estándar: al no ser una exportación de `AutoModel`, no funciona con las herramientas habituales del ecosistema (transformers, vLLM, TGI, Ollama). Requiere el cargador del benchmark del autor, cuyo código no se enlaza en la información disponible.
 - Dependencia crítica de artefactos externos: sin el repositorio de datos `myendless/action-repre-robotwin-v4-data` y su `release.json` no pueden reconstruirse la normalización ni el procesador, con lo que el checkpoint resulta inutilizable en la práctica.
@@ -90,7 +90,7 @@ No se han encontrado en la búsqueda web resultados relevantes que permitan esta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/myendless/action-repre-newtask14-n32-base-v4-j14-h32-head10k-04d36581
+- Modelo en Hugging Face: https://huggingface.co/myendless/action-repre-newtask14-n32-base-v4-j14-h32-head10k-04d36581
 - Repositorio de datos, normalización, procesador y configuración de entrenamiento referenciados por SHA256: https://huggingface.co/datasets/myendless/action-repre-robotwin-v4-data
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre el modelo, su arquitectura o sus resultados. Las únicas páginas devueltas eran bancos de imágenes de stock (Shutterstock, Alamy, Pexels) sin relación con el contenido de esta ficha.
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

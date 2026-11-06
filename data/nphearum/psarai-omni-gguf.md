@@ -110,7 +110,7 @@ No se dispone de datos de benchmarks estándar ni de especificaciones comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nphearum/PsarAI-Omni-GGUF
+- Modelo en Hugging Face: https://huggingface.co/nphearum/PsarAI-Omni-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Repositorio de llama.cpp de Unsloth (build b11985, commit 6f4cc4d): https://github.com/unslothai/llama.cpp
 - Repositorio de audio.cpp (commit 50749561): no se proporciona URL en la información disponible

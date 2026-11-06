@@ -93,9 +93,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-rh-dynamics | 4 B (base) + LoRA r32 | no disponible | Adaptador de investigacion sobre reward hacking en GRPO | apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B | 4 B | no disponible | Modelo base multimodal | no disponible | HuggingFace |
-| Modelos de la familia Qwen3.5 de mayor tamano | no disponible | no disponible | Modelos base multimodales | no disponible | HuggingFace |
+| Qwen3.5-4B-rh-dynamics | 4 B (base) + LoRA r32 | no disponible | Adaptador de investigacion sobre reward hacking en GRPO | apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B | 4 B | no disponible | Modelo base multimodal | no disponible | Hugging Face |
+| Modelos de la familia Qwen3.5 de mayor tamano | no disponible | no disponible | Modelos base multimodales | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con otros modelos en la informacion proporcionada.
 
@@ -112,7 +112,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RuiWu1123Alignment/Qwen3.5-4B-rh-dynamics
+- Repositorio Hugging Face: https://huggingface.co/RuiWu1123Alignment/Qwen3.5-4B-rh-dynamics
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de problemas y entorno de evaluacion: https://github.com/ariahw/rl-rewardhacking
 - Referencia cientifica citada: Wu & Tang, COLM 2026 (arXiv:2604.01476)

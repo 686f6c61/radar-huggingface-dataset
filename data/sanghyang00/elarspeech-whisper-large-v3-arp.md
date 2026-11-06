@@ -95,6 +95,6 @@ No hay resultados de WER comparativos para arapaho entre estos sistemas en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanghyang00/ELARSpeech-Whisper-Large-v3-arp
+- Modelo en Hugging Face: https://huggingface.co/Sanghyang00/ELARSpeech-Whisper-Large-v3-arp
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Los resultados de busqueda web proporcionados no contienen enlaces tecnicos relevantes (unicamente enlaces de inicio de sesion y registro de TikTok), por lo que no se incluyen referencias adicionales a papers, blogs, repositorios o demos.

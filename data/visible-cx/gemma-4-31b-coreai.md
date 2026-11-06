@@ -79,9 +79,9 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/visible-cx/Gemma-4-31B-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/visible-cx/Gemma-4-31B-CoreAI
 - Documentación de Gemma 4 (Google AI for Developers): https://ai.google.dev/gemma/docs/core
 - Model card de Gemma 4: https://ai.google.dev/gemma/docs/core/model_card_4
 - Página de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Repositorio coreai-model-zoo (modelo gemma4-31b): https://github.com/john-rocky/coreai-model-zoo/tree/main/models/gemma4-31b
-- Bundle similar en HuggingFace (mlboydaisuke): https://huggingface.co/mlboydaisuke/Gemma-4-31B-CoreAI/blob/main/README.md
+- Bundle similar en Hugging Face (mlboydaisuke): https://huggingface.co/mlboydaisuke/Gemma-4-31B-CoreAI/blob/main/README.md

@@ -31,13 +31,13 @@ Su relevancia actual radica en que combina un tamaño reducido (apto para GPU de
 
 La información disponible no describe la arquitectura interna del modelo base Catalan258/VST-3B: no se especifica si emplea un transformer denso convencional, un esquema MoE, un híbrido o algún tipo de atención lineal o dispersa. Las etiquetas del repositorio (video-understanding, video-llm, streaming-video) y la presencia de un proyector multimodal independiente (mmproj) apuntan a una arquitectura típica de modelo de lenguaje con adaptador visual, en la que el codificador de vídeo se conecta al decoder de texto mediante un módulo de proyección entrenado específicamente. El identificador arXiv:2603.12262 referenciado en las etiquetas sugiere la existencia de un artículo técnico asociado, pero su contenido no forma parte de la información proporcionada.
 
-Respecto al entrenamiento, no se dispone de datos sobre el volumen de tokens utilizados, la composición del dataset (proporción de vídeo, imagen, texto o código), ni sobre el uso de técnicas de alineación como RLHF, DPO o similares. Tampoco se documenta si se emplearon métodos de decodificación especulativa o de optimización de atención para el procesamiento de secuencias de vídeo largas. Esta cuantización en concreto se generó como cuantización estática (static quants) con versión de cuantizador 2 y conversión desde el formato de HuggingFace; el autor indica explícitamente que no hay cuantizaciones ponderadas ni basadas en imatrix disponibles en el momento de la publicación, y que no tiene previsto generarlas salvo petición mediante la sección de discusiones comunitarias del repositorio.
+Respecto al entrenamiento, no se dispone de datos sobre el volumen de tokens utilizados, la composición del dataset (proporción de vídeo, imagen, texto o código), ni sobre el uso de técnicas de alineación como RLHF, DPO o similares. Tampoco se documenta si se emplearon métodos de decodificación especulativa o de optimización de atención para el procesamiento de secuencias de vídeo largas. Esta cuantización en concreto se generó como cuantización estática (static quants) con versión de cuantizador 2 y conversión desde el formato de Hugging Face; el autor indica explícitamente que no hay cuantizaciones ponderadas ni basadas en imatrix disponibles en el momento de la publicación, y que no tiene previsto generarlas salvo petición mediante la sección de discusiones comunitarias del repositorio.
 
 ## Capacidades
 
 - Comprensión de vídeo: el modelo está etiquetado explícitamente como video-understanding y video-llm, e incluye un proyector multimodal (mmproj) que permite el procesamiento de entrada visual junto con texto.
 - Vídeo en streaming: la etiqueta streaming-video indica soporte para el procesamiento continuo o incremental de flujos de vídeo, aunque la información disponible no detalla el mecanismo ni los límites de latencia.
-- Generación de texto conversacional: el repositorio está marcado como conversational y endpoints_compatible, lo que indica que puede servirse mediante APIs compatibles con el formato de endpoints de HuggingFace.
+- Generación de texto conversacional: el repositorio está marcado como conversational y endpoints_compatible, lo que indica que puede servirse mediante APIs compatibles con el formato de endpoints de Hugging Face.
 - Multilingüismo: limitado al inglés (en) según el campo language de la model card; no se declara soporte de otros idiomas, incluido el castellano.
 - Tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
@@ -81,7 +81,7 @@ Los tamaños de fichero son datos publicados en el repositorio; las estimaciones
 - Cabe en GPU de consumo: sí. Las cuantizaciones Q2_K a Q5_K_M caben en GPUs con 6-8 GB de VRAM (RTX 3060, RTX 4060, RTX 2070); Q6_K y Q8_0 requieren del orden de 8-10 GB (RTX 3070/3080, RTX 4070/4080); la variante f16 con proyector f16 necesita aproximadamente 11 GB, lo que la sitúa en el rango de RTX 4080, RTX 3090 o superiores.
 - GPU profesionales: A100, H100, L40S y similares pueden ejecutar cualquier variante sin dificultad; en estos casos el cuello de botella suele ser el procesamiento del codificador de vídeo, no la decodificación de texto.
 - CPU y equipos sin GPU: las variantes Q2_K a Q4_K_M pueden ejecutarse en CPU mediante llama.cpp, con velocidad dependiente del número de núcleos y del ancho de banda de memoria.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y cualquier runtime compatible con GGUF. El repositorio también está marcado como endpoints_compatible para su uso con la infraestructura de endpoints de HuggingFace. El proyector mmproj debe cargarse junto al modelo para habilitar la entrada de vídeo; el autor remite a los README de TheBloke para instrucciones sobre el uso de ficheros GGUF multimodales y la concatenación de ficheros multiparte.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y cualquier runtime compatible con GGUF. El repositorio también está marcado como endpoints_compatible para su uso con la infraestructura de endpoints de Hugging Face. El proyector mmproj debe cargarse junto al modelo para habilitar la entrada de vídeo; el autor remite a los README de TheBloke para instrucciones sobre el uso de ficheros GGUF multimodales y la concatenación de ficheros multiparte.
 - Latencia y throughput: no disponibles. La información proporcionada no incluye mediciones de tokens por segundo ni de tiempo de procesamiento por fotograma de vídeo, y estas cifras dependen en gran medida del codificador visual y de la longitud de las secuencias de entrada.
 
 ## Comparativa con modelos similares
@@ -90,9 +90,9 @@ No se dispone de datos verificables sobre modelos comparables dentro de la infor
 
 | Version | Parametros | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mradermacher/VST-3B-GGUF (Q4_K_M) | 3,4B aprox. | GGUF | Apache 2.0 | Público en HuggingFace |
-| mradermacher/VST-3B-GGUF (f16) | 3,4B aprox. | GGUF | Apache 2.0 | Público en HuggingFace |
-| Catalan258/VST-3B (modelo base) | 3,4B aprox. | safetensors (según el repositorio base) | Apache 2.0 | Público en HuggingFace |
+| mradermacher/VST-3B-GGUF (Q4_K_M) | 3,4B aprox. | GGUF | Apache 2.0 | Público en Hugging Face |
+| mradermacher/VST-3B-GGUF (f16) | 3,4B aprox. | GGUF | Apache 2.0 | Público en Hugging Face |
+| Catalan258/VST-3B (modelo base) | 3,4B aprox. | safetensors (según el repositorio base) | Apache 2.0 | Público en Hugging Face |
 
 ## Limitaciones y advertencias
 

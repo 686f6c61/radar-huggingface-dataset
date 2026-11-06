@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`learn_hf_food_not_food_text_classifier-distilbert-base-uncased` es un clasificador de texto binario publicado por el usuario `bhai2000` en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo `distilbert/distilbert-base-uncased`, orientado a distinguir si un texto esta relacionado con comida o no. El repositorio es un artefacto de aprendizaje: la model card fue generada automaticamente por el `Trainer` de Transformers e incluye la advertencia explicita de que la descripcion, los usos previstos y el conjunto de datos estan sin documentar ("More information needed").
+`learn_hf_food_not_food_text_classifier-distilbert-base-uncased` es un clasificador de texto binario publicado por el usuario `bhai2000` en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo `distilbert/distilbert-base-uncased`, orientado a distinguir si un texto esta relacionado con comida o no. El repositorio es un artefacto de aprendizaje: la model card fue generada automaticamente por el `Trainer` de Transformers e incluye la advertencia explicita de que la descripcion, los usos previstos y el conjunto de datos estan sin documentar ("More information needed").
 
 Arquitectonicamente es un encoder transformer destilado de BERT-base (6 capas, 768 dimensiones ocultas, 12 cabezas de atencion), con 66.955.010 parametros totales contando la cabeza de clasificacion, y un unico checkpoint en `safetensors` dentro de un repositorio de 0,3 GB. La licencia es Apache 2.0 y el pipeline declarado es `text-classification`.
 
@@ -32,7 +32,7 @@ El entrenamiento consta de 10 epocas con `learning_rate = 0.0001`, batch de 32, 
 - Clasificacion de texto (pipeline `text-classification`), presumiblemente binaria comida / no comida segun el nombre del modelo; el numero exacto de etiquetas no se documenta.
 - Ajuste fino supervisado sobre `distilbert-base-uncased`; hereda la tokenizacion WordPiece sin distincion de mayusculas del modelo base.
 - Inferencia rapida en CPU: 67 M de parametros permiten ejecucion sin GPU.
-- Compatibilidad declarada con Inference Endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad declarada con Inference Endpoints de Hugging Face (tag `endpoints_compatible`).
 - No soporta tool calling, function calling ni razonamiento multi-paso: es un clasificador, no un modelo generativo.
 - No dispone de modo "thinking", vision ni audio.
 - Capacidad multilingue no declarada; el modelo base esta entrenado principalmente en ingles.
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, GLUE, etc.) en la i
 - En FP16 los pesos ocuparian unos 134 MB y en INT8 unos 67 MB, aunque no se publican checkpoints cuantizados en el repositorio.
 - Cabe holgadamente en cualquier GPU consumer (GTX 1060, RTX 3060, RTX 4090) y funciona en CPU sin problemas; no requiere acelerador para uso individual.
 - GPU recomendadas: ninguna en particular; para lotes grandes, cualquier GPU con al menos 2 GB de memoria es suficiente.
-- Opciones de despliegue: `transformers` pipeline (`text-classification`), Inference Endpoints de HuggingFace (tag `endpoints_compatible`) y exportacion a ONNX Runtime mediante herramientas estandar de Optimum (no documentada por el autor).
+- Opciones de despliegue: `transformers` pipeline (`text-classification`), Inference Endpoints de Hugging Face (tag `endpoints_compatible`) y exportacion a ONNX Runtime mediante herramientas estandar de Optimum (no documentada por el autor).
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ Los mirrors localizados (`wincode`, `Abbassani`) corresponden a variantes del mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bhai2000/learn_hf_food_not_food_text_classifier-distilbert-base-uncased
+- Modelo en Hugging Face: https://huggingface.co/bhai2000/learn_hf_food_not_food_text_classifier-distilbert-base-uncased
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Mirror `wincode`: https://huggingface.co/wincode/learn_hf_food_not_food_text_classifier-distilbert-base-uncased
 - Mirror `Abbassani`: https://huggingface.co/Abbassani/learn_hf_food_not_food_text_classifier-distilbert-base-uncased

@@ -79,8 +79,8 @@ La comparativa se centra en el mismo modelo base con diferentes formatos y en un
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/meshive/Qwen-3.8-27B-Q4_K_M-Imatrix
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/meshive/Qwen-3.8-27B-Q4_K_M-Imatrix
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Página del modelo en LM Studio: https://lmstudio.ai/models/qwen3.8
 - Cuantizaciones GGUF de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

@@ -71,9 +71,9 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Rendimiento matematico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sft_olmo3base7b_olmo31think_ot3_p12544x1-step49 | 7,30B | Entrenamiento/eval a 32.768 tokens de respuesta; contexto oficial no disponible | AIME 2025: 33,75; AIME 2026: 34,58; HMMT Feb 2025: 22,08 (mean@8) | Apache 2.0 | HuggingFace, safetensors |
-| Olmo-3-1025-7B (base, Ai2) | 7,30B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Apache 2.0 (familia Olmo 3) | HuggingFace |
-| Olmo-3.1-32B-Think (profesor, Ai2) | 32B (aproximado, segun nombre) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| sft_olmo3base7b_olmo31think_ot3_p12544x1-step49 | 7,30B | Entrenamiento/eval a 32.768 tokens de respuesta; contexto oficial no disponible | AIME 2025: 33,75; AIME 2026: 34,58; HMMT Feb 2025: 22,08 (mean@8) | Apache 2.0 | Hugging Face, safetensors |
+| Olmo-3-1025-7B (base, Ai2) | 7,30B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Apache 2.0 (familia Olmo 3) | Hugging Face |
+| Olmo-3.1-32B-Think (profesor, Ai2) | 32B (aproximado, segun nombre) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, por lo que no es posible cuantificar la brecha entre estudiante y profesor ni frente al base.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p12544x1-step49
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p12544x1-step49
 - Modelo base del ajuste: https://huggingface.co/mhseo2/Olmo-3-1025-7B-opd
 - Modelo profesor citado: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Familia Olmo 3 de Ai2: no disponible en la informacion proporcionada (no se incluyen URLs)

@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- [HuggingFace: subs-king/zils-mini-basedecision-dyno](https://huggingface.co/subs-king/zils-mini-basedecision-dyno)
+- [Hugging Face: subs-king/zils-mini-basedecision-dyno](https://huggingface.co/subs-king/zils-mini-basedecision-dyno)
 - [Modelo base: onlyaady/BaseDecision-Dyno](https://huggingface.co/onlyaady/BaseDecision-Dyno)
 - [Torre de visión: Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

@@ -106,8 +106,8 @@ La comparativa se limita a parametros, contexto y licencia; no hay datos de benc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-618m-11.5bt-base-cooled
-- Repositorio de datos (`DATA.md`) y procedencia (`provenance.json`): referenciados dentro del repositorio de HuggingFace
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-618m-11.5bt-base-cooled
+- Repositorio de datos (`DATA.md`) y procedencia (`provenance.json`): referenciados dentro del repositorio de Hugging Face
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset FineWeb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
 - Dataset FineMath: https://huggingface.co/datasets/HuggingFaceTB/finemath

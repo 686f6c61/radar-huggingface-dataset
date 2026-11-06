@@ -78,8 +78,8 @@ La calidad global declarada por el autor es de UTMOS aproximado 3,0-3,2, inferio
 
 | Modelo | Parametros | Contexto / hablantes | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Matcha-TTS-PL-noWL | 20,8 M (acustico) | TTS; 625 hablantes; sin tokens de estilo | UTMOS 3,0-3,2; WER 0,058-0,070; CER 0,025-0,076 en 10 frases | CC BY-SA 4.0 | HuggingFace, ONNX y checkpoint |
-| Matcha-TTS-PL (modelo hermano, con Wolne Lektury) | 20,8 M (misma arquitectura, segun la model card) | TTS; misma tabla de hablantes | UTMOS 3,3-3,5 | No disponible en la informacion proporcionada | HuggingFace |
+| Matcha-TTS-PL-noWL | 20,8 M (acustico) | TTS; 625 hablantes; sin tokens de estilo | UTMOS 3,0-3,2; WER 0,058-0,070; CER 0,025-0,076 en 10 frases | CC BY-SA 4.0 | Hugging Face, ONNX y checkpoint |
+| Matcha-TTS-PL (modelo hermano, con Wolne Lektury) | 20,8 M (misma arquitectura, segun la model card) | TTS; misma tabla de hablantes | UTMOS 3,3-3,5 | No disponible en la informacion proporcionada | Hugging Face |
 | Otras alternativas de TTS en polaco (p. ej. Piper, XTTS-v2) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La unica comparacion con datos verificables es frente al modelo hermano `Matcha-TTS-PL`, del que este se presenta como version companion. La diferencia declarada es de calidad (UTMOS 3,0-3,2 frente a 3,3-3,5) a cambio de no emplear material de audiolibros. No se dispone de datos comparativos con otras familias de TTS polaco en la informacion proporcionada.
@@ -101,7 +101,7 @@ La unica comparacion con datos verificables es frente al modelo hermano `Matcha-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hvsr-robotics/Matcha-TTS-PL-noWL
+- Modelo en Hugging Face: https://huggingface.co/hvsr-robotics/Matcha-TTS-PL-noWL
 - Modelo companion (con Wolne Lektury): https://huggingface.co/hvsr-robotics/Matcha-TTS-PL
 - Interfaz y herramientas `tts-pl-playground`: https://github.com/machinekind/tts-pl-playground
 - Ficheros del repositorio: `RECIPE.md` (receta y protocolo de evaluacion, secciones 1, 5 y 6), `ATTRIBUTION.md` (atribucion a los 894 canales de YouTube), `LICENSE`, `data_v2/mix_nowl/speaker_map.json` (mapa de hablantes), `samples/`

@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Formato | Licencia | Contexto/entrada | Disponibilidad |
 |---|---|---|---|---|---|
-| UVR Kim Vocal 2 (diarizeapp) | MDX-Net para separación vocal | ONNX | Apache 2.0 | Audio (duración no especificada) | HuggingFace |
+| UVR Kim Vocal 2 (diarizeapp) | MDX-Net para separación vocal | ONNX | Apache 2.0 | Audio (duración no especificada) | Hugging Face |
 | UVR Kim Vocal 2 (original) | MDX-Net para separación vocal | Pesos UVR / PyTorch | no disponible | Audio | Distribución vía Ultimate Vocal Remover |
 | Demucs (Meta) | Separación de fuentes (híbrido waveform/espectrograma) | PyTorch | MIT | Audio | GitHub / PyTorch Hub |
 | Spleeter (Deezer) | Separación de fuentes (U-Net sobre espectrogramas) | TensorFlow | MIT | Audio | GitHub |
@@ -84,7 +84,7 @@ La comparación con Demucs y Spleeter es orientativa por categoría de tarea (se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/diarizeapp/uvr-kim-vocal-2
+- Hugging Face: https://huggingface.co/diarizeapp/uvr-kim-vocal-2
 - Repositorio de mantenimiento (diarizeapp): https://github.com/benzy/diarize
 - Ultimate Vocal Remover (proyecto original): https://github.com/Anjok07/ultimatevocalremovergui
 - ONNX Runtime: https://onnxruntime.ai/

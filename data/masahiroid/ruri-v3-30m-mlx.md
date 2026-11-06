@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Framework | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ruri-v3-30m-mlx (este modelo) | 36,7 M | No disponible | MLX | Apache 2.0 | Conversion comunitaria en HuggingFace |
+| ruri-v3-30m-mlx (este modelo) | 36,7 M | No disponible | MLX | Apache 2.0 | Conversion comunitaria en Hugging Face |
 | cl-nagoya/ruri-v3-30m (modelo base) | 36,7 M | No disponible | PyTorch / sentence-transformers | Apache 2.0 | Repositorio oficial de cl-nagoya |
 | Otras variantes de la familia ruri-v3 | No disponible | No disponible | PyTorch | Apache 2.0 | Repositorios de cl-nagoya |
-| Modelos de embeddings multilingues ligeros (por ejemplo, familia multilingual-e5) | No disponible | No disponible | PyTorch / ONNX | No disponible | HuggingFace |
+| Modelos de embeddings multilingues ligeros (por ejemplo, familia multilingual-e5) | No disponible | No disponible | PyTorch / ONNX | No disponible | Hugging Face |
 
 La comparativa con alternativas de fuera de la familia Ruri no puede completarse con datos verificados: no se dispone en la informacion proporcionada de cifras de parametros, contexto ni rendimiento de esos modelos. La diferencia principal de esta ficha frente al modelo base es el framework de ejecucion (MLX frente a PyTorch), manteniendo identico recuento de parametros y licencia.
 
@@ -86,7 +86,7 @@ La comparativa con alternativas de fuera de la familia Ruri no puede completarse
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masahiroid/ruri-v3-30m-mlx
+- Modelo en Hugging Face: https://huggingface.co/masahiroid/ruri-v3-30m-mlx
 - Modelo base: https://huggingface.co/cl-nagoya/ruri-v3-30m
 - MLX (framework de Apple): https://github.com/ml-explore/mlx
 - mlx-embeddings (paquete de ejecucion): https://github.com/Blaizzy/mlx-embeddings

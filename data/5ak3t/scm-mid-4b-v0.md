@@ -98,9 +98,9 @@ Datos limitados. La propia model card situa este adaptador dentro de una familia
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/5ak3t/scm-mid-4b-v0
+- Hugging Face (adaptador): https://huggingface.co/5ak3t/scm-mid-4b-v0
 - Perfil del autor: https://huggingface.co/5ak3t
-- Pagina de la familia SCM en HuggingFace: https://huggingface.co/5ak3t/scm
+- Pagina de la familia SCM en Hugging Face: https://huggingface.co/5ak3t/scm
 - Repositorio fuente del proyecto `rev` (rama `edge-master`): https://github.com/codecraf8/rev
 - README de la familia SCM en GitHub: https://github.com/5ak3t/scm/blob/main/README.md
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base

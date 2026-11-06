@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jullaur0812/zero-shot-transfer-base` no es un modelo entrenado ni un checkpoint utilizable, sino un repositorio de notas de investigación publicado en HuggingFace bajo la etiqueta `research-notes`. La propia model card es explícita: contiene motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación sobre transferencia zero-shot, pero no resultados experimentales, ni código, ni pesos de un modelo funcional. El autor indica que el artefacto principal es `notes.md` y que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados.
+`jullaur0812/zero-shot-transfer-base` no es un modelo entrenado ni un checkpoint utilizable, sino un repositorio de notas de investigación publicado en Hugging Face bajo la etiqueta `research-notes`. La propia model card es explícita: contiene motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación sobre transferencia zero-shot, pero no resultados experimentales, ni código, ni pesos de un modelo funcional. El autor indica que el artefacto principal es `notes.md` y que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados.
 
 El dato de `safetensors` reporta 33.088 parámetros totales, una cifra que corresponde a un artefacto testimonial o a un config vacío, no a un transformer con capacidad de generación. El tamaño del repositorio es de 0,0 GB, lo que confirma que no hay pesos sustanciales almacenados. La licencia declarada es CC-BY-4.0 y la fecha de creación es el 15 de septiembre de 2026.
 
@@ -75,6 +75,6 @@ No disponible. No existen modelos comparables en la misma categoría porque este
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jullaur0812/zero-shot-transfer-base
+- Repositorio en Hugging Face: https://huggingface.co/jullaur0812/zero-shot-transfer-base
 - `notes.md` (artefacto principal citado en la model card): incluido en el propio repositorio
 - Paper, blog, repositorio de código o demo adicionales: no disponibles en la información proporcionada

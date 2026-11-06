@@ -6,7 +6,7 @@ Refinet (repositorio `PlatDemon7/refinet`) no es un modelo de lenguaje, sino un 
 
 El objetivo declarado es comprimir el maestro en un estudiante ligero que mantenga la calidad visual (con metas de SSIM superior a 0,94 y PSNR en torno a 29 dB) reduciendo el coste computacional, con una velocidad de inferencia declarada 2,8 veces superior, para habilitar la mejora de imagen en tiempo real en dispositivos con recursos limitados.
 
-El repositorio de HuggingFace ocupa 1,1 GB, no registra descargas ni likes, y no declara licencia, idiomas ni pipeline. La información disponible procede exclusivamente de la model card del autor; los resultados de búsqueda web proporcionados no contienen material relacionado con el modelo (devuelven páginas de comparación de vuelos).
+El repositorio de Hugging Face ocupa 1,1 GB, no registra descargas ni likes, y no declara licencia, idiomas ni pipeline. La información disponible procede exclusivamente de la model card del autor; los resultados de búsqueda web proporcionados no contienen material relacionado con el modelo (devuelven páginas de comparación de vuelos).
 
 ## Especificaciones técnicas
 
@@ -85,6 +85,6 @@ No disponible. La información proporcionada no incluye datos de arquitecturas c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PlatDemon7/refinet
+- Repositorio en Hugging Face: https://huggingface.co/PlatDemon7/refinet
 - Paper citado en la model card sobre el conjunto de datos (sin URL facilitada): "TOFlow: Video Enhancement with Task-Oriented Flow", Tianfan Xue, Baian Chen, Jiajun Wu, Donglai Wei, William T. Freeman (origen del dataset Vimeo-90K).
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios o demos) en los resultados de búsqueda web proporcionados; dichos resultados no están relacionados con el modelo.

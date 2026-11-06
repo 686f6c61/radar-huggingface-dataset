@@ -24,7 +24,7 @@ La relevancia actual del repositorio es doble: por un lado, cuantifica la perdid
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-16 |
 | Ultima actualizacion | 2026-09-16 |
-| Estado de inferencia | inference: false (no soportado en Inference Providers de HuggingFace) |
+| Estado de inferencia | inference: false (no soportado en Inference Providers de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -95,10 +95,10 @@ Nota: la memoria residente de ~516 MB corresponde a la ejecucion del artefacto S
 
 | Modelo / artefacto | Parametros | Contexto | KLD code/math | KLD general | Tamano | Licencia | Disponibilidad |
 |---|---|---:|---:|---:|---:|---|---|
-| fraQtl HiFi Q4_K_M | 4.647.450.147 (base) | no disponible | 0,05846 | 0,09646 | 3,46 GB | apache-2.0 | HuggingFace, 0 descargas |
-| fraQtl HiFi Phone | 4.647.450.147 (base) | no disponible | 0,06231 | 0,09716 | 2,86 GB | apache-2.0 | HuggingFace, 0 descargas |
-| bartowski Q4_K_M (baseline) | mismo modelo base | no disponible | 0,09139 | 0,13249 | 3,46 GB | segun modelo base | HuggingFace, usado como referencia fijada por el autor |
-| google/gemma-4-E2B-it (bf16) | 4.647.450.147 | no disponible | referencia (teacher Q8_0 derivado de este checkpoint) | referencia | no disponible | Gemma 4 license | HuggingFace |
+| fraQtl HiFi Q4_K_M | 4.647.450.147 (base) | no disponible | 0,05846 | 0,09646 | 3,46 GB | apache-2.0 | Hugging Face, 0 descargas |
+| fraQtl HiFi Phone | 4.647.450.147 (base) | no disponible | 0,06231 | 0,09716 | 2,86 GB | apache-2.0 | Hugging Face, 0 descargas |
+| bartowski Q4_K_M (baseline) | mismo modelo base | no disponible | 0,09139 | 0,13249 | 3,46 GB | segun modelo base | Hugging Face, usado como referencia fijada por el autor |
+| google/gemma-4-E2B-it (bf16) | 4.647.450.147 | no disponible | referencia (teacher Q8_0 derivado de este checkpoint) | referencia | no disponible | Gemma 4 license | Hugging Face |
 
 No se dispone de datos sobre otras alternativas de la misma categoria (mismo tamano o misma tarea) en la informacion proporcionada. La comparacion publicada por el autor se limita al baseline bartowski Q4_K_M y al checkpoint original en bf16.
 
@@ -116,11 +116,11 @@ No se dispone de datos sobre otras alternativas de la misma categoria (mismo tam
 - Evidencia incompleta para uno de los artefactos: el autor indica que los recibos de fidelidad (escala KLD) del SmartEdge-IQ3XXS aun no estan publicados; su evidencia actual es el comportamiento en dispositivo y el benchmark mostrado.
 - Rendimiento medido en un unico dispositivo: 21,6 tok/s y ~12 tok/s se obtuvieron en un iPhone de clase iPhone 16 en modo avion. No son extrapolables a otros telefonos, a Android ni a GPU de escritorio.
 - Memoria residente no explicada: la cifra de ~516 MB residentes frente a un artefacto de 2,45 GB no se justifica en la documentacion; podria depender de paginacion por mmap y de la longitud de contexto en uso.
-- Artefacto no servible como endpoint gestionado: el campo inference: false indica que el repositorio no esta soportado por los Inference Providers de HuggingFace.
+- Artefacto no servible como endpoint gestionado: el campo inference: false indica que el repositorio no esta soportado por los Inference Providers de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qualcomm-ai-hub-community/Gemma-4-E2B-it-Hi-Fi-fraQtl
+- Repositorio en Hugging Face: https://huggingface.co/qualcomm-ai-hub-community/Gemma-4-E2B-it-Hi-Fi-fraQtl
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Licencia del modelo base (Gemma 4): https://ai.google.dev/gemma/docs/gemma_4_license
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Las busquedas devolvieron exclusivamente resultados no relacionados (hilos de foro sobre Gameduell y consultas de soporte de Microsoft Community), por lo que no se incluyen como fuentes.

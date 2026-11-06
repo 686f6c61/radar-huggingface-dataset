@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ThoxKey-TLM es un repositorio de HuggingFace publicado por THOX.AI LLC que **no contiene ningun modelo**. Se trata de un registro de nombre retirado (*name record*): la model card declara explicitamente que el repositorio nunca alojo pesos, tokenizer ni ficheros de configuracion, y que su unico contenido es un `.gitattributes` de 1.519 bytes. Fue marcado como `deprecated`, `retired` y `no-weights`, y su campo `base_model` original apuntaba a un repositorio de GitHub que no resuelve en el Hub, por lo que fue eliminado.
+ThoxKey-TLM es un repositorio de Hugging Face publicado por THOX.AI LLC que **no contiene ningun modelo**. Se trata de un registro de nombre retirado (*name record*): la model card declara explicitamente que el repositorio nunca alojo pesos, tokenizer ni ficheros de configuracion, y que su unico contenido es un `.gitattributes` de 1.519 bytes. Fue marcado como `deprecated`, `retired` y `no-weights`, y su campo `base_model` original apuntaba a un repositorio de GitHub que no resuelve en el Hub, por lo que fue eliminado.
 
 El nombre hacia referencia al modelo que supuestamente se integraba en el firmware de los dispositivos ThoxKey basados en ESP32-S3 (familia ThoxOS / MeshStack). El autor redirige cualquier uso real a `Thox-ai/ThoxKey-9M-role`, un modelo de aproximadamente 9 millones de parametros distribuido en formato GGUF con cuantizaciones TQ1_0, TQ2_0 y Q8_0, mas un artefacto propietario `thoxkey-9m-role.tern1`. Ese es el modelo efectivamente embebido en el firmware; ThoxKey-TLM no es un modelo distinto, sino una entrada obsoleta.
 
@@ -85,9 +85,9 @@ Frente a alternativas de la misma categoria (modelos de ~9M de parametros para m
 
 ## Enlaces
 
-- Repositorio en HuggingFace (retirado): https://huggingface.co/Thox-ai/ThoxKey-TLM
+- Repositorio en Hugging Face (retirado): https://huggingface.co/Thox-ai/ThoxKey-TLM
 - Modelo sustituto recomendado por el autor: https://huggingface.co/Thox-ai/ThoxKey-9M-role
-- Organizacion en HuggingFace: https://huggingface.co/Thox-ai
+- Organizacion en Hugging Face: https://huggingface.co/Thox-ai
 - Paper: no disponible
 - Blog o demo: no disponible
 - Repositorio de codigo: no disponible en la informacion proporcionada (el antiguo `base_model` apuntaba a un repositorio de GitHub que no resuelve en el Hub)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qwen3-8b-tmax-sft-run2` es un ajuste fino supervisado (SFT) completo del modelo base [Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B), desarrollado por el usuario de HuggingFace `vittorino`. El entrenamiento se realiza sobre el dataset [`vittorino/tmax-sft-cleaned`](https://huggingface.co/datasets/vittorino/tmax-sft-cleaned) en una única NVIDIA DGX Spark (GB10), empleando matmuls en FP8 (torchao tensorwise), `torch.compile` y checkpointing de gradiente adaptativo. El objetivo es producir una variante especializada de Qwen3-8B, un transformer decoder-only denso de aproximadamente 8.200 millones de parámetros con 32.768 tokens de contexto nativo.
+`qwen3-8b-tmax-sft-run2` es un ajuste fino supervisado (SFT) completo del modelo base [Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B), desarrollado por el usuario de Hugging Face `vittorino`. El entrenamiento se realiza sobre el dataset [`vittorino/tmax-sft-cleaned`](https://huggingface.co/datasets/vittorino/tmax-sft-cleaned) en una única NVIDIA DGX Spark (GB10), empleando matmuls en FP8 (torchao tensorwise), `torch.compile` y checkpointing de gradiente adaptativo. El objetivo es producir una variante especializada de Qwen3-8B, un transformer decoder-only denso de aproximadamente 8.200 millones de parámetros con 32.768 tokens de contexto nativo.
 
 El modelo se encuentra en entrenamiento activo en el momento de publicación de esta ficha (28 de septiembre de 2026, según los metadatos). Se suben snapshots cada 6 horas etiquetados como `h<hours>-step<optimizer step>`, y el modelo final se etiquetará como `final-step<N>`. Los snapshots intermedios corresponden a puntos intermedios del schedule de entrenamiento y no han sido evaluados. El entrenamiento en FP8 es experimental y el autor planea compararlo con una ejecución en BF16 de la misma receta.
 
@@ -79,11 +79,11 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen3-8b-tmax-sft-run2 | ~8B | No confirmado (base 32k) | Apache 2.0 | HuggingFace (entrenamiento en curso) |
-| Qwen/Qwen3-8B | 8.2B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B | 8B | 128.000 tokens | Llama 3.1 Community License | HuggingFace / Meta |
-| Mistral 7B v0.3 | 7.2B | 32.768 tokens | Apache 2.0 | HuggingFace |
-| Gemma 2 9B | 9B | 8.192 tokens | Gemma Terms of Use | HuggingFace |
+| qwen3-8b-tmax-sft-run2 | ~8B | No confirmado (base 32k) | Apache 2.0 | Hugging Face (entrenamiento en curso) |
+| Qwen/Qwen3-8B | 8.2B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B | 8B | 128.000 tokens | Llama 3.1 Community License | Hugging Face / Meta |
+| Mistral 7B v0.3 | 7.2B | 32.768 tokens | Apache 2.0 | Hugging Face |
+| Gemma 2 9B | 9B | 8.192 tokens | Gemma Terms of Use | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (benchmarks) para `qwen3-8b-tmax-sft-run2`, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) para `qwen3-8b-tm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vittorino/qwen3-8b-tmax-sft-run2
+- Modelo en Hugging Face: https://huggingface.co/vittorino/qwen3-8b-tmax-sft-run2
 - Modelo base Qwen/Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Dataset vittorino/tmax-sft-cleaned: https://huggingface.co/datasets/vittorino/tmax-sft-cleaned
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

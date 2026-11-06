@@ -98,7 +98,7 @@ La referencia fp32 en un par no relacionado es -0,07; valores cercanos a 0 o neg
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JoramMillenaar/paraphrase-multilingual-MiniLM-L12-v2-webgpu-safe
+- Repositorio en Hugging Face: https://huggingface.co/JoramMillenaar/paraphrase-multilingual-MiniLM-L12-v2-webgpu-safe
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 - Documentacion de Transformers.js: https://huggingface.co/docs/transformers.js
 - PR pendiente de correccion en ONNX Runtime: https://github.com/microsoft/onnxruntime/pull/32579

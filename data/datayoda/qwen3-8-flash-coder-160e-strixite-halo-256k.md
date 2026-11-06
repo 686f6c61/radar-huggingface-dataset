@@ -18,7 +18,7 @@ Su relevancia es acotada pero muy específica: demuestra que es posible ejecutar
 | Longitud de contexto | 262.144 tokens (RoPE tal y como se entrenó, YaRN desactivado) |
 | Tipos de cuantizacion | Mixta: q4 grupo 128 (expertos enrutados gate/up y down, GDN input), q8 grupo 64 (experto compartido, GDN output, atención qkv/o, mezclas HC, LM head, ple_kv), BF16 (embeddings) |
 | Idiomas soportados | en |
-| Licencia | qwen-community-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | `strixw` (formato propietario de strixite), 821 tensores, 25.046.114.304 bytes |
 
 ## Arquitectura y entrenamiento
@@ -65,10 +65,10 @@ La model card únicamente aporta un dato de rendimiento operativo: el build orig
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Coder-160E-strixite-Halo-256K | no disponible (23,33 GiB en `strixw`) | 262.144 | Mixta q4/q8/BF16 | qwen-community-1.0 | HuggingFace (0 descargas) |
+| Qwen3.8-Flash-Coder-160E-strixite-Halo-256K | no disponible (23,33 GiB en `strixw`) | 262.144 | Mixta q4/q8/BF16 | qwen-community-1.0 | Hugging Face (0 descargas) |
 | Build original de 512 expertos (strixite) | no disponible (66 GiB de pesos + 48 GiB de tabla n-gramas) | 262.144 (hasta 492K en pruebas) | `strixw` | qwen-community-1.0 | Referenciado en la model card |
-| Jab1718/qwen3.8-flash-coder-85gb-bf16 | no disponible (79,39 GiB BF16) | no disponible | BF16 | no disponible | HuggingFace (modelo base) |
-| Qwen/Qwen3.8-Flash-Next | no disponible | no disponible | BF16 | qwen-community-1.0 | HuggingFace (modelo base) |
+| Jab1718/qwen3.8-flash-coder-85gb-bf16 | no disponible (79,39 GiB BF16) | no disponible | BF16 | no disponible | Hugging Face (modelo base) |
+| Qwen/Qwen3.8-Flash-Next | no disponible | no disponible | BF16 | qwen-community-1.0 | Hugging Face (modelo base) |
 
 La comparación relevante no es frente a otros modelos de código de tamaño similar, sino frente a las otras variantes del mismo linaje: esta build sacrifica la tabla de n-gramas (48 GiB), la torre de visión y la cabeza MTP para reducir el peso residente de 66 GiB a 23,33 GiB, a cambio de perder decodificación especulativa y entrada multimodal. No se dispone de datos de benchmarks que permitan comparar calidad de código frente a alternativas.
 
@@ -79,14 +79,14 @@ La comparación relevante no es frente a otros modelos de código de tamaño sim
 - Sin visión: la torre de visión se ha eliminado; cualquier entrada de imagen será rechazada.
 - Sin PLE de n-gramas: la capa PLE de la capa 2 y su tabla de 51.000 millones de parámetros no están presentes, por lo que la contribución de n-gramas al forward pass desaparece. No se documenta el impacto en calidad.
 - Idioma: solo inglés según la model card; no hay evidencia de soporte multilingüe en esta build.
-- Licencia: qwen-community-1.0, etiquetada como `other` en HuggingFace. Es responsabilidad del usuario revisar los términos antes de un uso comercial; la model card no aclara restricciones específicas.
+- Licencia: qwen-community-1.0, etiquetada como `other` en Hugging Face. Es responsabilidad del usuario revisar los términos antes de un uso comercial; la model card no aclara restricciones específicas.
 - Riesgo de alucinación: no cuantificado; al ser una conversión de un subconjunto de expertos sin fine-tune posterior, hereda los sesgos y limitaciones del modelo base, que no se documentan.
 - Madurez: 0 descargas y 0 likes en el momento de la ficha, publicada el 3 de noviembre de 2026. No hay evidencia de uso en producción ni de validación independiente.
 - Plataforma: el formato `strixw` y los tags `gfx1151`, `rocm` y `hip` atan el modelo a AMD Strix Halo; no es portable a otros backends sin reconversión.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/datayoda/Qwen3.8-Flash-Coder-160E-strixite-Halo-256K
+- Modelo en Hugging Face: https://huggingface.co/datayoda/Qwen3.8-Flash-Coder-160E-strixite-Halo-256K
 - Modelo base (subconjunto BF16): https://huggingface.co/Jab1718/qwen3.8-flash-coder-85gb-bf16
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio de strixite: https://github.com/shawnshekari/strixite

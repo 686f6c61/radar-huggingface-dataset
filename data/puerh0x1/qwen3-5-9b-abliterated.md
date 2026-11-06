@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-abliterated es una edición en el espacio de pesos del modelo Qwen/Qwen3.5-9B (revisión `c202236235762e1c871ad0ccb60c8ee5ba337b9a`), publicada por el usuario Puerh0x1 en HuggingFace. No se trata de un fine-tune ni de un modelo entrenado desde cero: es una ablación de la dirección de rechazo (*refusal-direction ablation*), una técnica conocida como "abliteration" que modifica los pesos para reducir la tendencia del modelo a negarse a responder determinadas peticiones. El checkpoint conserva los 9.409.813.744 parámetros del modelo base y se distribuye en safetensors a precisión BF16.
+Qwen3.5-9B-abliterated es una edición en el espacio de pesos del modelo Qwen/Qwen3.5-9B (revisión `c202236235762e1c871ad0ccb60c8ee5ba337b9a`), publicada por el usuario Puerh0x1 en Hugging Face. No se trata de un fine-tune ni de un modelo entrenado desde cero: es una ablación de la dirección de rechazo (*refusal-direction ablation*), una técnica conocida como "abliteration" que modifica los pesos para reducir la tendencia del modelo a negarse a responder determinadas peticiones. El checkpoint conserva los 9.409.813.744 parámetros del modelo base y se distribuye en safetensors a precisión BF16.
 
 El modelo base es multimodal (los tags del repositorio incluyen `image-text-to-text`) y, según la model card, los pesos de visión se dejaron intactos, por lo que la edición afecta únicamente al componente de lenguaje. El repositorio también incluye 15 tensores MTP (*multi-token prediction*) sin modificar, restaurados desde el checkpoint base en el fichero `original-mtp.safetensors` e indexados junto al resto de pesos.
 
@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes: ninguna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Puerh0x1/Qwen3.5-9B-abliterated
+- Modelo en Hugging Face: https://huggingface.co/Puerh0x1/Qwen3.5-9B-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Herramienta Heretic: https://github.com/p-e-w/heretic
 - Referencia del método contrastivo: Arditi et al. 2024, https://arxiv.org/abs/2406.11717

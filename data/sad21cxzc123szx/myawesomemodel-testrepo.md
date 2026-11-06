@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario sad21cxzc123szx en HuggingFace, etiquetado como transformers, pytorch y bert, con pipeline de feature-extraction. Según su model card, se trata de una versión actualizada de un modelo previo que mejora significativamente el razonamiento y la inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica en el post-entrenamiento. El autor afirma que su rendimiento se acerca al de otros modelos líderes en tareas de matemáticas, programación y lógica general.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario sad21cxzc123szx en Hugging Face, etiquetado como transformers, pytorch y bert, con pipeline de feature-extraction. Según su model card, se trata de una versión actualizada de un modelo previo que mejora significativamente el razonamiento y la inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica en el post-entrenamiento. El autor afirma que su rendimiento se acerca al de otros modelos líderes en tareas de matemáticas, programación y lógica general.
 
 Sin embargo, la información pública disponible es extremadamente limitada: el repositorio tiene un tamaño de 0.0 GB, no se especifican parámetros, arquitectura concreta, ni datos de entrenamiento. La model card menciona una versión "Small" con la misma arquitectura que la base, pero no proporciona detalles técnicos adicionales. En consecuencia, esta ficha se basa únicamente en lo declarado por el autor, sin verificación independiente, y la mayoría de las especificaciones técnicas quedan marcadas como "no disponible".
 
@@ -92,5 +92,5 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sad21cxzc123szx/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/sad21cxzc123szx/MyAwesomeModel-TestRepo
 - No se encontraron otros enlaces (papers, blogs, repos de código) en la información proporcionada.

@@ -4,7 +4,7 @@
 
 El modelo **JANGQ-AI/dots3-note-prev-JANG** es una versión cuantizada a 2 bits del modelo base **dots-studio/dots3-note-prev**, desarrollado por JANGQ-AI. Se trata de un modelo multimodal (image-text-to-text) con arquitectura de mezcla de expertos (MoE) y aproximadamente 29.900 millones de parámetros totales. Está diseñado específicamente para ejecutarse en hardware Apple Silicon mediante la librería MLX, lo que permite su uso en entornos con memoria unificada limitada.
 
-La relevancia de este modelo radica en su carácter de demostración técnica: ofrece una alternativa cuantizada de alta compresión (2 bits) para un modelo MoE multimodal, con licencia Apache 2.0 y acceso restringido en HuggingFace. Su tamaño de repo (101.6 GB) sugiere que los pesos están almacenados en formato safetensors, aunque la cuantización reduce significativamente el espacio en memoria durante la inferencia. No se dispone de información pública sobre el contexto máximo, los datos de entrenamiento o los benchmarks.
+La relevancia de este modelo radica en su carácter de demostración técnica: ofrece una alternativa cuantizada de alta compresión (2 bits) para un modelo MoE multimodal, con licencia Apache 2.0 y acceso restringido en Hugging Face. Su tamaño de repo (101.6 GB) sugiere que los pesos están almacenados en formato safetensors, aunque la cuantización reduce significativamente el espacio en memoria durante la inferencia. No se dispone de información pública sobre el contexto máximo, los datos de entrenamiento o los benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -60,7 +60,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo requiere aceptar condiciones en HuggingFace antes de su descarga, lo que limita su uso inmediato.
+- **Acceso restringido**: el modelo requiere aceptar condiciones en Hugging Face antes de su descarga, lo que limita su uso inmediato.
 - **Cuantización 2-bit**: la compresión extrema puede degradar significativamente la calidad de las respuestas, aumentar la alucinación y reducir la coherencia en tareas complejas.
 - **Falta de documentación**: no hay información sobre el contexto máximo, idiomas soportados, datos de entrenamiento ni sesgos conocidos.
 - **Sesgos y alucinación**: al ser un modelo derivado sin evaluación pública, no se pueden descartar sesgos presentes en el modelo base ni errores de generación.
@@ -69,5 +69,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace: JANGQ-AI/dots3-note-prev-JANG](https://huggingface.co/JANGQ-AI/dots3-note-prev-JANG)
+- [Hugging Face: JANGQ-AI/dots3-note-prev-JANG](https://huggingface.co/JANGQ-AI/dots3-note-prev-JANG)
 - Modelo base: [dots-studio/dots3-note-prev](https://huggingface.co/dots-studio/dots3-note-prev) (acceso restringido, no verificado)

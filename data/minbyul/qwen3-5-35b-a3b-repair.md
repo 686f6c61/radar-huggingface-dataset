@@ -78,7 +78,7 @@ La comparativa se centra en los brazos del mismo estudio, ya que comparten arqui
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Repair
+- Modelo en Hugging Face: https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Repair
 - Modelo base Qwen/Qwen3.5-35B-A3B: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Brazo Asis: https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Asis
 - Brazo Drop: https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Drop

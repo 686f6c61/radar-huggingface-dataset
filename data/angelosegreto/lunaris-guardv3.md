@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lunaris Guard v3 es un modelo de clasificacion de texto (encoder) desarrollado por Auren Research —publicado en HuggingFace bajo la cuenta ANGELOSEGRETO— especializado en la deteccion de prompt injection, clasificacion binaria de seguridad y etiquetado multietiqueta en 14 categorias de riesgo. Esta construido sobre el encoder multilingue `jhu-clsp/mmbert-base` y cuenta con aproximadamente 307 millones de parametros (306.953.490 exactos segun los pesos en safetensors), con una longitud maxima de secuencia de 2048 tokens y licencia MIT.
+Lunaris Guard v3 es un modelo de clasificacion de texto (encoder) desarrollado por Auren Research —publicado en Hugging Face bajo la cuenta ANGELOSEGRETO— especializado en la deteccion de prompt injection, clasificacion binaria de seguridad y etiquetado multietiqueta en 14 categorias de riesgo. Esta construido sobre el encoder multilingue `jhu-clsp/mmbert-base` y cuenta con aproximadamente 307 millones de parametros (306.953.490 exactos segun los pesos en safetensors), con una longitud maxima de secuencia de 2048 tokens y licencia MIT.
 
 El problema que resuelve es concreto: los pipelines de agentes actuales (RAG, tool calling, MCP, navegacion web, agentes de codigo) ingieren contenido no confiable que puede contener instrucciones maliciosas, y las soluciones genericas de moderacion no cubren estas superficies. Lunaris Guard v3 incorpora cabezas especificas para inyeccion directa e indirecta, envenenamiento de metadatos de herramientas y salidas MCP, inyeccion en Markdown/HTML/CSV/JSON de API, ataques en issues, PRs y READMEs, y extraccion de prompts de sistema, ademas de negativos dificiles benignos que citan frases peligrosas en contextos de documentacion o formacion.
 
@@ -16,7 +16,7 @@ Su relevancia actual radica en el enfoque en el equilibrio entre recall y falsos
 | Parametros totales | 306.953.490 (~307M) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | 2048 tokens (longitud maxima de secuencia) |
-| Tipos de cuantizacion | No disponible (no se documentan cuantizaciones oficiales en la informacion proporcionada; el tag de HuggingFace incluye `safetensors`) |
+| Tipos de cuantizacion | No disponible (no se documentan cuantizaciones oficiales en la informacion proporcionada; el tag de Hugging Face incluye `safetensors`) |
 | Idiomas soportados | en, pt, es, fr, zh, hi, ar, ru, ja |
 | Licencia | MIT |
 | Formato de pesos | safetensors (checkpoint principal); se mantiene tambien el layout antiguo `backbone/` + `heads.pt` por compatibilidad |
@@ -87,7 +87,7 @@ Comparativa con las alternativas incluidas en la sonda de fiabilidad del autor. 
 
 | Modelo | Parametros | Contexto | F1 inyeccion | Recall | Especificidad en limpio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Lunaris Guard v3 | ~307M | 2048 tokens | 0.833 | 0.900 | 0.740 | MIT | HuggingFace (ANGELOSEGRETO/lunaris-guardv3) |
+| Lunaris Guard v3 | ~307M | 2048 tokens | 0.833 | 0.900 | 0.740 | MIT | Hugging Face (ANGELOSEGRETO/lunaris-guardv3) |
 | Wolf Defender PI | No disponible | No disponible | 0.770 | 0.940 | 0.500 | No disponible | No disponible |
 | Qualifire Sentinel | No disponible | No disponible | 0.735 | 0.860 | 0.520 | No disponible | No disponible |
 | Rogue Sentinel v2 | No disponible | No disponible | 0.752 | 0.940 | 0.440 | No disponible | No disponible |
@@ -102,14 +102,14 @@ Criterio de comparacion: en esta sonda concreta, Lunaris Guard v3 obtiene el mej
 - Los umbrales de decision (el ejemplo usa 0,5 como politica simple) deben calibrarse sobre trafico propio; el autor lo indica explicitamente. Un umbral fijo de 0,5 puede no ser adecuado para todos los dominios.
 - Limitacion de contexto: la ventana maxima es de 2048 tokens. Los documentos, logs, PDFs, paginas HTML o fragmentos RAG mas largos requieren troceado y agregacion (el autor recomienda chunks de 512-1536 tokens con solapamiento de 64-256 y agregacion por maximo), lo que anade complejidad y coste al pipeline. Una instruccion maliciosa fuera de los chunks analizados no se detectaria.
 - Requiere `trust_remote_code=True`, lo que implica ejecutar codigo remoto incluido en el repositorio. En entornos de produccion conviene auditar ese codigo antes de desplegarlo.
-- Discrepancia de identificadores: la cuenta de HuggingFace del repositorio es `ANGELOSEGRETO`, mientras que la model card y los ejemplos de codigo referencian `auren-research/lunaris-guardv3`. Conviene verificar cual es la ruta canonica antes de fijar una dependencia.
+- Discrepancia de identificadores: la cuenta de Hugging Face del repositorio es `ANGELOSEGRETO`, mientras que la model card y los ejemplos de codigo referencian `auren-research/lunaris-guardv3`. Conviene verificar cual es la ruta canonica antes de fijar una dependencia.
 - Repositorio sin traccion comunitaria: 0 descargas y 0 likes en el momento de la consulta, con fecha de creacion y actualizacion de 2026-09-13. No hay validacion independiente por parte de terceros.
 - Licencia MIT: permite uso comercial, modificacion y redistribucion, con la unica obligacion habitual de conservar el aviso de copyright y la licencia. No se han documentado restricciones adicionales de uso.
 - El modelo es un clasificador de seguridad, no un generador: no sustituye a la moderacion de la salida del LLM ni a otras capas de defensa. Debe combinarse con validacion de herramientas, control de permisos y monitorizacion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ANGELOSEGRETO/lunaris-guardv3
+- Hugging Face: https://huggingface.co/ANGELOSEGRETO/lunaris-guardv3
 - Modelo base: https://huggingface.co/jhu-clsp/mmbert-base
 - Repositorio referenciado en la model card: https://huggingface.co/auren-research/lunaris-guardv3
 - Imagen del benchmark de fiabilidad: `assets/production_guard_reliability_100.png` dentro del repositorio del modelo

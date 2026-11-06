@@ -65,7 +65,7 @@ No se dispone de datos de rendimiento para comparar directamente. Sin embargo, e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed3
+- Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed3
 - Modelos relacionados en la búsqueda web:
   - https://friendli.ai/models/localized-ft/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed3
   - https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-first-third-v2-sft-seed3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cumfacial3434 es un adaptador LoRA de generacion de imagenes (pipeline text-to-image) publicado en HuggingFace por el usuario 98sd7fc9sdf el 11 de septiembre de 2026. Se distribuye a traves de la libreria diffusers y esta disenado para cargarse sobre el modelo base ponpoke/flux2-klein-9b-uncensored-text-encoder, segun declara la propia etiqueta base_model del repositorio. El repositorio ocupa 0,3 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo.
+cumfacial3434 es un adaptador LoRA de generacion de imagenes (pipeline text-to-image) publicado en Hugging Face por el usuario 98sd7fc9sdf el 11 de septiembre de 2026. Se distribuye a traves de la libreria diffusers y esta disenado para cargarse sobre el modelo base ponpoke/flux2-klein-9b-uncensored-text-encoder, segun declara la propia etiqueta base_model del repositorio. El repositorio ocupa 0,3 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo.
 
 La model card es practicamente inexistente: contiene una plantilla de diffusion-lora con el campo instance_prompt fijado a null, una galeria vacia y un bloque widget cuyo texto de ejemplo son 255 caracteres nulos, es decir, el contenido esta corrupto y no aporta ninguna descripcion funcional. El autor no documenta dataset de entrenamiento, hiperparametros, resolucion de entrenamiento, licencia ni idiomas. El repositorio acumula 0 descargas y 0 likes, por lo que no existe evidencia publica de uso ni validacion por terceros.
 
@@ -87,6 +87,6 @@ No disponible. La informacion proporcionada no permite identificar adaptadores c
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/98sd7fc9sdf/cumfacial3434
+- Pagina del modelo en Hugging Face: https://huggingface.co/98sd7fc9sdf/cumfacial3434
 - Modelo base declarado: https://huggingface.co/ponpoke/flux2-klein-9b-uncensored-text-encoder
 - Paper, blog o repositorio asociado: no disponible. Las busquedas web realizadas no devolvieron ningun resultado relacionado con este modelo; los enlaces obtenidos (Wikipedia, 33reality.sk, zm33.sk, bistro.sk, deepsymbol.com) son irrelevantes y no se incluyen.

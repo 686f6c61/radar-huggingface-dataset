@@ -4,7 +4,7 @@
 
 `divyashahwood/multimodal-reasoning-finetune` no es un modelo entrenado ni un checkpoint listo para inferencia. Se trata de un repositorio de notas de investigacion sobre razonamiento multimodal, publicado bajo la etiqueta `research-notes` y con un unico artefacto principal declarado: el fichero `reading.md`. La propia model card indica explicitamente que el contenido no debe interpretarse como un paper completado ni como la publicacion de modelos entrenados, y que las secciones marcadas como planes o hipotesis no son resultados experimentales.
 
-El repositorio describe el alcance de una pregunta de investigacion sobre razonamiento multimodal, los factores de confusion previstos, una comparacion propuesta contra baselines emparejados y un plan de evaluacion centrado en benchmarks como VQAv2, GQA y NLVR2. No incluye codigo, checkpoints, comandos de reproduccion, semillas, hardware ni registros de ejecucion. La unica senal tecnica tangible son los metadatos de HuggingFace, que declaran un total de 16.576 parametros en formato safetensors y un tamano de repositorio practicamente nulo (0,0 GB), cifras compatibles con un tensor residual de prueba mas que con un modelo de lenguaje o multimodal funcional.
+El repositorio describe el alcance de una pregunta de investigacion sobre razonamiento multimodal, los factores de confusion previstos, una comparacion propuesta contra baselines emparejados y un plan de evaluacion centrado en benchmarks como VQAv2, GQA y NLVR2. No incluye codigo, checkpoints, comandos de reproduccion, semillas, hardware ni registros de ejecucion. La unica senal tecnica tangible son los metadatos de Hugging Face, que declaran un total de 16.576 parametros en formato safetensors y un tamano de repositorio practicamente nulo (0,0 GB), cifras compatibles con un tensor residual de prueba mas que con un modelo de lenguaje o multimodal funcional.
 
 Por tanto, su relevancia actual es documental y metodologica, no practica: sirve como ejemplo de nota de investigacion abierta con criterios de falsabilidad y verificacion de reproducibilidad, pero no puede desplegarse, evaluarse ni compararse como modelo. Cualquier uso en produccion queda descartado con la informacion disponible.
 
@@ -23,7 +23,7 @@ Por tanto, su relevancia actual es documental y metodologica, no practica: sirve
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre arquitectura real. La etiqueta `transformer` aparece en los metadatos de HuggingFace, pero la model card no describe capas, atencion, mecanismos de fusión multimodal ni ninguna decision de diseno. Tampoco se declara si existiria un encoder visual, un proyector cross-modal o un decoder de lenguaje. El repositorio esta etiquetado como `research-notes` y su artefacto principal es un documento de texto, `reading.md`, no un grafo de computacion.
+No hay informacion sobre arquitectura real. La etiqueta `transformer` aparece en los metadatos de Hugging Face, pero la model card no describe capas, atencion, mecanismos de fusión multimodal ni ninguna decision de diseno. Tampoco se declara si existiria un encoder visual, un proyector cross-modal o un decoder de lenguaje. El repositorio esta etiquetado como `research-notes` y su artefacto principal es un documento de texto, `reading.md`, no un grafo de computacion.
 
 Respecto al entrenamiento, no se proporcionan datos: ni numero de tokens, ni composicion del dataset, ni si hubo RLHF, DPO o fine-tuning supervisado, pese a que el identificador del repositorio incluye el termino `finetune`. La model card es explicita al afirmar que no se reclama ninguna mejora de benchmark, ablacion completada, codigo liberado ni checkpoint entrenado, y que las referencias y datasets propuestos son un punto de partida para verificacion, no evidencia de que el estudio se haya ejecutado. No se documenta ninguna innovacion tecnica tipo decodificacion especulativa, atencion lineal o arquitecturas hibridas.
 
@@ -78,7 +78,7 @@ No disponible. No se conocen modelos comparables porque no se trata de un modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/divyashahwood/multimodal-reasoning-finetune
+- Hugging Face: https://huggingface.co/divyashahwood/multimodal-reasoning-finetune
 - Fichero principal citado en la model card: `reading.md` (disponible en el propio repositorio)
 - Fichero de documentacion: `README.md` (disponible en el propio repositorio)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada

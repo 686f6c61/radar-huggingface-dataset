@@ -82,8 +82,8 @@ Mejoras por etapa documentadas por el autor: flash-attn K packing reduce `FLASH_
 
 | Modelo / stack | Tipo | Pasos | Tiempo total (s) | RSS pico (GiB) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sdcpp_zimage_opt (Q4_K-ffn13 + AMX) | sd.cpp en CPU | 8 | 54,2 | 8,14 | MIT | Repo público en HuggingFace |
-| OpenVINO INT4 (HelloSun/Z-Image-Turbo-OpenVINO-INT4) | OpenVINO en CPU | 8 | 37,5 | 12,59 | no disponible | Repo público en HuggingFace |
+| sdcpp_zimage_opt (Q4_K-ffn13 + AMX) | sd.cpp en CPU | 8 | 54,2 | 8,14 | MIT | Repo público en Hugging Face |
+| OpenVINO INT4 (HelloSun/Z-Image-Turbo-OpenVINO-INT4) | OpenVINO en CPU | 8 | 37,5 | 12,59 | no disponible | Repo público en Hugging Face |
 | llamafile (Q4_K-ffn13 + conv-direct) | sd.cpp con kernels llamafile | 8 | 45,9 | 7,23 | MIT (repo) | Incluido en este repo |
 
 La comparación es entre stacks de inferencia sobre el mismo modelo base, no entre modelos distintos; el autor subraya que los resultados de OpenVINO no son comparables en calidad de píxel porque usan otros pesos e implementación.
@@ -101,7 +101,7 @@ La comparación es entre stacks de inferencia sobre el mismo modelo base, no ent
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HelloSun/sdcpp_zimage_opt
+- Repositorio en Hugging Face: https://huggingface.co/HelloSun/sdcpp_zimage_opt
 - Pesos OpenVINO INT4 de referencia: https://huggingface.co/HelloSun/Z-Image-Turbo-OpenVINO-INT4
 - stable-diffusion.cpp (commit fijado `77b72a2efed78f55de26892c7e909cee001e8b83`): https://github.com/leejet/stable-diffusion.cpp
 - Documentación de etapas en el repo: `stages/stage_p1_pipe/README.md`, `stages/stage1_vae/README.md`, `stages/stage3_vae_conv/README.md`, `stages/stage_p2_refiner/README.md`

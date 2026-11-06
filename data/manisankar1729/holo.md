@@ -1,7 +1,7 @@
 # ManiSankar1729/holo
 
 ## Resumen
-Holo es un modelo publicado en HuggingFace por el usuario ManiSankar1729 bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio tiene un tamano de 0.0 GB y no registra descargas ni likes en el momento de la consulta.
+Holo es un modelo publicado en Hugging Face por el usuario ManiSankar1729 bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio tiene un tamano de 0.0 GB y no registra descargas ni likes en el momento de la consulta.
 
 No es posible determinar que problema resuelve ni que arquitectura emplea, ya que no se ha publicado documentacion al respecto. La fecha de creacion del repositorio (2026-10-31) y la ausencia de artefactos verificables impiden confirmar que se trate de un modelo funcional listo para inferencia.
 
@@ -67,5 +67,5 @@ No disponible. Al no conocerse el tamano, la arquitectura ni el rendimiento del 
 - Fecha de creacion futura respecto a la consulta: conviene verificar la integridad y procedencia del repositorio antes de cualquier uso.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/ManiSankar1729/holo
+- Repositorio en Hugging Face: https://huggingface.co/ManiSankar1729/holo
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

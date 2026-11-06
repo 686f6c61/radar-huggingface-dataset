@@ -81,7 +81,7 @@ No se dispone de resultados de benchmarks comparables sobre `ArinRoths/StairvsNo
 
 | Modelo | Backbone | Parametros (cifra estandar de la arquitectura) | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo | ResNet-34 | No declarado por el autor (ResNet-34 estandar: ~21,8 M) | Clasificacion binaria escaleras/no escaleras | `classroom-use` | HuggingFace, 0 descargas |
+| Este modelo | ResNet-34 | No declarado por el autor (ResNet-34 estandar: ~21,8 M) | Clasificacion binaria escaleras/no escaleras | `classroom-use` | Hugging Face, 0 descargas |
 | Alternativa explorada | ResNet-18 | ~11,7 M | Idem, mismo pipeline AutoGluon | No aplica (no publicado) | No disponible: solo se nombra en la busqueda |
 | Alternativa explorada | EfficientNet-B0 | ~5,3 M | Idem, mismo pipeline AutoGluon | No aplica (no publicado) | No disponible: solo se nombra en la busqueda |
 | Alternativa explorada | MobileNetV3-Large | ~5,4 M | Idem, mismo pipeline AutoGluon | No aplica (no publicado) | No disponible: solo se nombra en la busqueda |
@@ -103,7 +103,7 @@ Los valores de parámetros de las filas alternativas son cifras publicadas de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ypolatog/24679-hw2-stairs-autogluon
+- Modelo en Hugging Face: https://huggingface.co/ypolatog/24679-hw2-stairs-autogluon
 - Dataset de entrenamiento: https://huggingface.co/datasets/ArinRoths/StairvsNonStair_Dataset
 - Resultados de busqueda web: las consultas realizadas devolvieron unicamente paginas de opinion sobre la marca de electrodomesticos Miele (Trustpilot, ComplaintsBoard, Better Business Bureau y la web oficial mieleusa.com). Ningun resultado es relevante para este modelo; no se han encontrado papers, blogs, repositorios ni demos asociados.
 - No se dispone de enlace a paper, demo, repositorio de codigo ni blog oficial en la informacion proporcionada.

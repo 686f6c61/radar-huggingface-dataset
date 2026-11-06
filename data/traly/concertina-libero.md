@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Concertina LIBERO es un checkpoint de política robótica del modelo Concertina, un modelo de visión-lenguaje-acción (VLA) de tipo difusión desarrollado por Chengcheng Wang, Wei He, Wenhao Li, Hongguang Li, Kai Han, Jianyuan Guo y Chang Xu, y publicado en HuggingFace por el usuario Traly. El modelo resuelve el problema de unificar manipulación robótica y cognición (razonamiento visual y lingüístico) en una única arquitectura de difusión visión-lenguaje, en lugar de encadenar un modelo de lenguaje con un módulo de control separado. Este checkpoint concreto es un ajuste fino del modelo base `Traly/concertina-pretrain-90k` sobre los cuatro suites del benchmark LIBERO (spatial, object, goal y 10).
+Concertina LIBERO es un checkpoint de política robótica del modelo Concertina, un modelo de visión-lenguaje-acción (VLA) de tipo difusión desarrollado por Chengcheng Wang, Wei He, Wenhao Li, Hongguang Li, Kai Han, Jianyuan Guo y Chang Xu, y publicado en Hugging Face por el usuario Traly. El modelo resuelve el problema de unificar manipulación robótica y cognición (razonamiento visual y lingüístico) en una única arquitectura de difusión visión-lenguaje, en lugar de encadenar un modelo de lenguaje con un módulo de control separado. Este checkpoint concreto es un ajuste fino del modelo base `Traly/concertina-pretrain-90k` sobre los cuatro suites del benchmark LIBERO (spatial, object, goal y 10).
 
 El interés inmediato del modelo radica en su resultado reportado en el paper: un 98,15 % de éxito (1.963 de 2.000 episodios) sobre LIBERO, lo que lo sitúa en la franja alta de los VLA evaluados en ese benchmark. El checkpoint es autocontenido como política LeRobot (tipo `concertina`), incluye configuración, pesos en bf16, pre/post-procesadores y los ficheros del backbone Bard-VL, lo que facilita su reproducción mediante la herramienta `concertina-eval-libero`. Con 4.447.963.669 parámetros y un tamaño de repositorio de 8,9 GB, es un modelo grande para el estándar de políticas robóticas, pensado para inferencia en GPU de centro de datos más que para despliegue en robot de borde.
 
@@ -82,7 +82,7 @@ No disponible. La información proporcionada no incluye datos de otros modelos V
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Traly/concertina-libero
+- Modelo en Hugging Face: https://huggingface.co/Traly/concertina-libero
 - Modelo base: https://huggingface.co/Traly/concertina-pretrain-90k
 - Dataset de ajuste: https://huggingface.co/datasets/lerobot/libero
 - Paper citado: Wang, He, Li, Li, Han, Guo, Xu, "Concertina: Embodying Manipulation and Cognition in One Diffusion Vision-Language Model", 2026 (no se proporciona URL en la información disponible)

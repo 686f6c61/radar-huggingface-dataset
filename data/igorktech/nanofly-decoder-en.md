@@ -76,9 +76,9 @@ Rendimiento de inferencia declarado: unos 960 pases forward por segundo en una R
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nanofly-decoder-en (este modelo) | 34,5 M totales, 16,25 M entrenables | Linea de retardo de 8 tokens, sin atencion; mejora hasta ~32 posiciones | Val loss 1,933 / ppl 6,9 en TinyStories | Pesos CC BY 4.0, codigo Apache-2.0 | HuggingFace, transformers con trust_remote_code |
-| igorktech/nanofly-decoder-ru (variante rusa) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| ngxson/fly-llm-hf (arte previo citado) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| nanofly-decoder-en (este modelo) | 34,5 M totales, 16,25 M entrenables | Linea de retardo de 8 tokens, sin atencion; mejora hasta ~32 posiciones | Val loss 1,933 / ppl 6,9 en TinyStories | Pesos CC BY 4.0, codigo Apache-2.0 | Hugging Face, transformers con trust_remote_code |
+| igorktech/nanofly-decoder-ru (variante rusa) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| ngxson/fly-llm-hf (arte previo citado) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | Control de cableado aleatorizado (no publicado como modelo) | Misma estructura, mismos grados | Identico | Val loss 1,979 / ppl 7,2 | No aplica | No distribuido |
 
 La informacion disponible no incluye especificaciones detalladas de las alternativas, por lo que la comparacion se limita a lo anterior. No hay datos publicados para comparar con transformers pequenos entrenados sobre TinyStories en la informacion proporcionada.
@@ -99,7 +99,7 @@ La informacion disponible no incluye especificaciones detalladas de las alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/igorktech/nanofly-decoder-en
+- Modelo en Hugging Face: https://huggingface.co/igorktech/nanofly-decoder-en
 - Repositorio de codigo nanoFLY: https://github.com/igorktech/nanoFLY
 - Variante en ruso: https://huggingface.co/igorktech/nanofly-decoder-ru
 - Arte previo fly-llm-hf: https://huggingface.co/ngxson/fly-llm-hf

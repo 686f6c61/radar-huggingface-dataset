@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`generatedDigitalExps_1xKlLF_rnn_meanPoolProc_video_1` es un artefacto de modelo publicado en HuggingFace por el usuario `gianmaTest` mediante la integración `PyTorchModelHubMixin` de `huggingface_hub`. El repositorio contiene únicamente pesos en formato `safetensors` (1.576.704 parámetros, en torno a 1,58 millones) y una model card generada automáticamente por la librería, sin documentación adicional sobre propósito, datos de entrenamiento o metodología. No se ha publicado información sobre el pipeline, la licencia ni los idiomas soportados.
+`generatedDigitalExps_1xKlLF_rnn_meanPoolProc_video_1` es un artefacto de modelo publicado en Hugging Face por el usuario `gianmaTest` mediante la integración `PyTorchModelHubMixin` de `huggingface_hub`. El repositorio contiene únicamente pesos en formato `safetensors` (1.576.704 parámetros, en torno a 1,58 millones) y una model card generada automáticamente por la librería, sin documentación adicional sobre propósito, datos de entrenamiento o metodología. No se ha publicado información sobre el pipeline, la licencia ni los idiomas soportados.
 
 Por el identificador se puede inferir que se trata de un experimento generado de forma automática (prefijo `generatedDigitalExps`) en el que se ha entrenado una red recurrente (`rnn`) con una cabeza de agregación por *mean pooling* (`meanPoolProc`) sobre datos de vídeo (`video`) y con una variante o semilla etiquetada como `_1`. Esta lectura es una interpretación del nombre del repositorio, no un dato confirmado por el autor, ya que no existe documentación que la respalde.
 
@@ -76,7 +76,7 @@ No disponible. No se han identificado alternativas comparables documentadas: el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKlLF_rnn_meanPoolProc_video_1
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKlLF_rnn_meanPoolProc_video_1
 - Documentación de `PyTorchModelHubMixin` (referenciada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible (`More Information Needed` en la model card)
 - Código: no disponible (`More Information Needed` en la model card)

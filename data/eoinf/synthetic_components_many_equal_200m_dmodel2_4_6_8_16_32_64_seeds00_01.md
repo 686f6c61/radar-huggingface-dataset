@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `eoinf`, no contiene un modelo de lenguaje listo para uso en producción, sino un *grid* de experimentos con transformers causales de tamaño minúsculo. Concretamente, agrupa modelos con valores de `d_model` de 2, 4, 6, 8, 16, 32 y 64, dos semillas por anchura, vocabulario de 4096 tokens y una longitud de contexto de 256 tokens. El nombre del repositorio indica un presupuesto nominal de 200 millones de tokens de entrenamiento por modelo, aunque los horizontes reales (incluidas paradas tempranas) se registran en los ficheros `grid_summary.json` y `result.json`.
+Este repositorio de Hugging Face, publicado por el usuario `eoinf`, no contiene un modelo de lenguaje listo para uso en producción, sino un *grid* de experimentos con transformers causales de tamaño minúsculo. Concretamente, agrupa modelos con valores de `d_model` de 2, 4, 6, 8, 16, 32 y 64, dos semillas por anchura, vocabulario de 4096 tokens y una longitud de contexto de 256 tokens. El nombre del repositorio indica un presupuesto nominal de 200 millones de tokens de entrenamiento por modelo, aunque los horizontes reales (incluidas paradas tempranas) se registran en los ficheros `grid_summary.json` y `result.json`.
 
 El objetivo declarado es el estudio de dinámicas de entrenamiento y componentes sintéticos en arquitecturas transformer de escala reducida, no la generación de texto útil. El repositorio incluye únicamente *state-dicts* de PyTorch, la definición de cada ejecución, el historial de checkpoints, el log de actualizaciones de entrenamiento y metadatos de resultados; no incluye estados del optimizador ni los datos de entrenamiento, que deben obtenerse del repositorio `synthetic_trigrams` del mismo autor.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eoinf/synthetic_components_many_equal_200m_... | d_model 2–64 | 256 | Investigación sintética | No disponible | HuggingFace (repo vacío, 0.0 GB) |
+| eoinf/synthetic_components_many_equal_200m_... | d_model 2–64 | 256 | Investigación sintética | No disponible | Hugging Face (repo vacío, 0.0 GB) |
 | Modelos tipo nanoGPT (Karpathy) | ~10M–124M | 256–1024 | Docencia / investigación | MIT (código) | GitHub + checkpoints |
-| Pythia (EleutherAI) suite pequeña | 14M–70M | 2048 | Investigación de escalado | Apache 2.0 | HuggingFace |
+| Pythia (EleutherAI) suite pequeña | 14M–70M | 2048 | Investigación de escalado | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con estas alternativas; la comparación es únicamente estructural.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/synthetic_components_many_equal_200m_dmodel2_4_6_8_16_32_64_seeds00_01
+- Hugging Face: https://huggingface.co/eoinf/synthetic_components_many_equal_200m_dmodel2_4_6_8_16_32_64_seeds00_01
 - Repositorio de código `synthetic_trigrams`: no disponible como URL en la información proporcionada (citado en la model card como repositorio del autor).
 - Paper, blog o demo: no disponibles.

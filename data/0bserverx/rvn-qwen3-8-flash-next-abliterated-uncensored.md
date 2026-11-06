@@ -18,7 +18,7 @@ Este finetune conserva las capacidades del modelo base (razonamiento, código, v
 | Longitud de contexto | 262 000 tokens (según modelo base) |
 | Tipos de cuantizacion | no disponible (pesos en safetensors, presumiblemente BF16/FP16) |
 | Idiomas soportados | no disponible (el modelo base es multilingüe, pero no se especifica) |
-| Licencia | no disponible (etiquetada como "other" en HuggingFace) |
+| Licencia | no disponible (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -68,14 +68,14 @@ No se dispone de información suficiente para una comparativa cuantitativa con o
 - **Contenido sin filtrar**: al ser uncensored, el modelo puede generar contenido ofensivo, ilegal, peligroso o sexualmente explícito. No es apto para uso en producción sin medidas de moderación adicionales.
 - **Riesgo de alucinación**: como todos los modelos de lenguaje, puede inventar información, especialmente en temas especializados. La abliteration no corrige este problema.
 - **Sesgos**: el modelo base puede contener sesgos sociales y culturales; la eliminación de la censura no elimina estos sesgos, sino que puede amplificarlos.
-- **Licencia no clara**: la licencia está etiquetada como "other" en HuggingFace y no se especifica en la información disponible. El uso comercial puede estar restringido o requerir permisos adicionales. Se recomienda contactar al autor antes de cualquier despliegue comercial.
+- **Licencia no clara**: la licencia está etiquetada como "other" en Hugging Face y no se especifica en la información disponible. El uso comercial puede estar restringido o requerir permisos adicionales. Se recomienda contactar al autor antes de cualquier despliegue comercial.
 - **Idiomas no especificados**: aunque el modelo base es multilingüe, no se ha confirmado qué idiomas mantiene el finetune. El rendimiento en idiomas distintos del inglés puede variar.
 - **Sin garantías de seguridad**: al eliminar los mecanismos de rechazo, el modelo puede proporcionar instrucciones para actividades dañinas. Los desarrolladores deben implementar sus propias capas de seguridad si lo usan en aplicaciones reales.
 
 ## Enlaces
 
-- [HuggingFace - 0bserverx/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored](https://huggingface.co/0bserverx/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored)
+- [Hugging Face - 0bserverx/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored](https://huggingface.co/0bserverx/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored)
 - [GitHub - Qwen3.8-Flash-Next](https://github.com/QwenLM/Qwen3.8-Flash-Next/)
-- [HuggingFace - Qwen/Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
+- [Hugging Face - Qwen/Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
 - [Documentación de unsloth para Qwen3.8-Flash-Next](https://unsloth.ai/docs/models/qwen3.8-next)
 - [QwenCloud - Qwen3.8-Flash](https://www.qwencloud.com/models/qwen3.8-flash)

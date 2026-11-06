@@ -2,7 +2,7 @@
 
 ## Resumen
 
-revt2v-ckpt es una coleccion de adaptadores LoRA entrenados por el usuario silentlooop como "students" destilados a partir del modelo base ali-vilab/text-to-video-ms-1.7b. Su particularidad es que generan video en orden temporal inverso (reverse time) a partir de un prompt de texto, un comportamiento poco habitual en los modelos text-to-video convencionales. El repositorio forma parte de un proyecto de curso denominado revT2V y esta publicado bajo la pipeline text-to-video de HuggingFace.
+revt2v-ckpt es una coleccion de adaptadores LoRA entrenados por el usuario silentlooop como "students" destilados a partir del modelo base ali-vilab/text-to-video-ms-1.7b. Su particularidad es que generan video en orden temporal inverso (reverse time) a partir de un prompt de texto, un comportamiento poco habitual en los modelos text-to-video convencionales. El repositorio forma parte de un proyecto de curso denominado revT2V y esta publicado bajo la pipeline text-to-video de Hugging Face.
 
 El repositorio contiene tres variantes de adaptacion: attn_rotation (que actua como linea base en el latest.pt de la raiz), conv_lora y attn_lora, cada una almacenada en su subcarpeta correspondiente con el archivo latest.pt. Los adaptadores se han entrenado sobre el dataset silentlooop/revt2v-data y, por tanto, no son modelos autonomos: requieren cargar el modelo base de 1,7 mil millones de parametros para funcionar.
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Contexto / fotogramas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| silentlooop/revt2v-ckpt | Adaptadores LoRA (destilados) | Adaptadores sobre base de 1,7B | no disponible | no disponible | HuggingFace (0 descargas) |
-| ali-vilab/text-to-video-ms-1.7b | Modelo de difusion text-to-video (base) | 1,7 mil millones | no disponible | no disponible en la informacion aportada | HuggingFace (modelo base) |
+| silentlooop/revt2v-ckpt | Adaptadores LoRA (destilados) | Adaptadores sobre base de 1,7B | no disponible | no disponible | Hugging Face (0 descargas) |
+| ali-vilab/text-to-video-ms-1.7b | Modelo de difusion text-to-video (base) | 1,7 mil millones | no disponible | no disponible en la informacion aportada | Hugging Face (modelo base) |
 | Otros text-to-video comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones de alternativas en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable. La unica relacion documentada es la dependencia directa respecto a ali-vilab/text-to-video-ms-1.7b.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento ni de especificaciones de alternativas en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/silentlooop/revt2v-ckpt
+- Modelo en Hugging Face: https://huggingface.co/silentlooop/revt2v-ckpt
 - Dataset de entrenamiento: https://huggingface.co/datasets/silentlooop/revt2v-data
 - Modelo base: https://huggingface.co/ali-vilab/text-to-video-ms-1.7b
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo (los resultados devueltos corresponden a servicios de reserva de billetes de tren y no guardan relacion con el modelo).

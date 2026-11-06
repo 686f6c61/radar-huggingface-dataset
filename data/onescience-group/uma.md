@@ -73,7 +73,7 @@ No se dispone de informacion suficiente en la model card para establecer una com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/UMA
-- Dataset OC20 en HuggingFace: https://huggingface.co/datasets/OneScience-Group/oc20
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/UMA
+- Dataset OC20 en Hugging Face: https://huggingface.co/datasets/OneScience-Group/oc20
 - Repositorio oficial de fairchem (pesos preentrenados): https://github.com/facebookresearch/fairchem
 - Entorno OneCode (programacion AI4S): https://web-2069360198568017922-iaaj.ksai.scnet.cn:58043/home

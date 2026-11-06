@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MageFlow 5B es un modelo publicado por el usuario nebulette en HuggingFace bajo el identificador `nebulette/mageflow-5b-dual-encoder`. Se trata de una release que contiene unicamente la estructura del modelo, sin pesos entrenados ni pipeline declarado. El autor indica que su salida en el momento de la inicializacion deberia ser equivalente a la del modelo MageFlow de la comunidad `mage-flow-community/Mage-Flow`, lo que sugiere que esta ficha describe una arquitectura derivada o una variante experimental de ese modelo base.
+MageFlow 5B es un modelo publicado por el usuario nebulette en Hugging Face bajo el identificador `nebulette/mageflow-5b-dual-encoder`. Se trata de una release que contiene unicamente la estructura del modelo, sin pesos entrenados ni pipeline declarado. El autor indica que su salida en el momento de la inicializacion deberia ser equivalente a la del modelo MageFlow de la comunidad `mage-flow-community/Mage-Flow`, lo que sugiere que esta ficha describe una arquitectura derivada o una variante experimental de ese modelo base.
 
 La particularidad tecnica declarada es su caracter dual-encoder: los bloques duplicados aceptan entradas del codificador de texto LFM2.5, mientras que el resto de los bloques originales aceptan entradas del codificador Qwen. La model card menciona ademas dos mecanismos concretos: expansion de capas por duplicacion y reduccion de AdaLN (shrinking AdaLN). El numero de capas entrenables se eleva a 20. El nombre "5B" apunta a un orden de 5 000 millones de parametros, aunque este dato no se confirma de forma explicita en la informacion disponible.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | nebulette/mageflow-5b-dual-encoder | ~5B (segun nombre, no confirmado) | No disponible | Apache 2.0 | Solo estructura, sin pesos | Release experimental del usuario nebulette |
-| mage-flow-community/Mage-Flow | No disponible | No disponible | No disponible | Pesos publicados en HuggingFace | Modelo base de referencia citado por el autor; la salida inicial deberia coincidir |
+| mage-flow-community/Mage-Flow | No disponible | No disponible | No disponible | Pesos publicados en Hugging Face | Modelo base de referencia citado por el autor; la salida inicial deberia coincidir |
 | Otras alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No se dispone de datos suficientes para establecer comparaciones rigurosas |
 
 No se dispone de informacion suficiente para comparar este modelo con alternativas de su misma categoria en terminos de rendimiento, ya que no hay benchmarks publicados ni pesos evaluables.
@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 ## Limitaciones y advertencias
 
 - La release contiene unicamente estructura: no incluye pesos entrenados, por lo que no es utilizable directamente para inferencia.
-- No se declara ningun pipeline de HuggingFace, lo que impide su uso inmediato con `transformers` u otras librerias estandar.
+- No se declara ningun pipeline de Hugging Face, lo que impide su uso inmediato con `transformers` u otras librerias estandar.
 - No hay informacion sobre idiomas soportados, tamano de vocabulario ni cobertura multilingue.
 - No hay datos de sesgos, alucinacion o comportamientos indeseados, porque no existe un modelo entrenado que evaluar.
 - No se especifica la longitud de contexto, lo que impide planificar aplicaciones con requisitos de contexto largo.
@@ -84,7 +84,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nebulette/mageflow-5b-dual-encoder
+- Modelo en Hugging Face: https://huggingface.co/nebulette/mageflow-5b-dual-encoder
 - Modelo base de referencia Mage-Flow: https://huggingface.co/mage-flow-community/Mage-Flow
 - Repositorio Microsoft Mage (README de mage_flow): https://github.com/microsoft/Mage/blob/main/mage_flow/README.md
 - Paper o documentacion tecnica de MageFlow 5B: no disponible

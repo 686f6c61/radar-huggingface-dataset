@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BreakoutNoFrameskip-v4-algorithm-seed1 es un checkpoint de un agente DQN (Deep Q-Network) entrenado sobre el entorno BreakoutNoFrameskip-v4 de Atari, publicado en HuggingFace por Byamasu Patrick Paul bajo el pipeline de reinforcement-learning. No se trata de un modelo de lenguaje ni de un modelo generativo multimodal: es una politica de control entrenada para maximizar recompensa en un entorno concreto, distribuida como checkpoint serializado de PyTorch dentro del proyecto de codigo abierto rl-algorithms-lab, en la carpeta dqn-atari.
+BreakoutNoFrameskip-v4-algorithm-seed1 es un checkpoint de un agente DQN (Deep Q-Network) entrenado sobre el entorno BreakoutNoFrameskip-v4 de Atari, publicado en Hugging Face por Byamasu Patrick Paul bajo el pipeline de reinforcement-learning. No se trata de un modelo de lenguaje ni de un modelo generativo multimodal: es una politica de control entrenada para maximizar recompensa en un entorno concreto, distribuida como checkpoint serializado de PyTorch dentro del proyecto de codigo abierto rl-algorithms-lab, en la carpeta dqn-atari.
 
 El modelo resuelve el problema clasico de aprendizaje por refuerzo profundo: aproximar la funcion Q con una red convolucional (clase QNetwork) para seleccionar acciones discretas a partir de observaciones de pixeles del emulador ALE. La implementacion es propia del autor, aunque la estructura de fichero unico y el bucle de entrenamiento siguen el script dqn_atari.py de CleanRL, lo que facilita su inspeccion y reproduccion.
 
@@ -32,7 +32,7 @@ Los hiperparametros declarados son: `total_timesteps` = 50.000, `learning_starts
 - Control discreto en un unico entorno: seleccion de acciones en BreakoutNoFrameskip-v4 a partir de observaciones de pixeles, sin capacidad de generalizacion a otras tareas.
 - Aprendizaje por refuerzo off-policy: uso de replay buffer, red objetivo y actualizaciones Q-Learning con perdida cuadratica.
 - Evaluacion reproducible: el checkpoint esta asociado a una semilla concreta (seed 1) y a una configuracion determinista, lo que permite repetir el experimento.
-- Integracion con el ecosistema HuggingFace Hub: descarga programatica del checkpoint y evaluacion mediante la funcion `evaluate` del repositorio.
+- Integracion con el ecosistema Hugging Face Hub: descarga programatica del checkpoint y evaluacion mediante la funcion `evaluate` del repositorio.
 - Registro de metadatos: incluye model-index con tarea, dataset y metrica, ademas de etiquetas de deep-reinforcement-learning y custom-implementation.
 - Reproduccion de entrenamiento: comandos y hiperparametros publicados, con soporte para seguimiento en Weights & Biases.
 - No soporta tool calling, function calling, agentes multi-paso, capacidades multilingues, vision general, audio, thinking mode ni generacion de texto: no es un modelo de lenguaje.
@@ -72,7 +72,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / entorno | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DQN (byamasupatrick, este checkpoint) | no disponible | BreakoutNoFrameskip-v4, 50.000 pasos | mean_reward 0,50 +/- 1,50 (no verificado) | no disponible | HuggingFace, 0 descargas |
+| DQN (byamasupatrick, este checkpoint) | no disponible | BreakoutNoFrameskip-v4, 50.000 pasos | mean_reward 0,50 +/- 1,50 (no verificado) | no disponible | Hugging Face, 0 descargas |
 | DQN de referencia (CleanRL, dqn_atari.py) | no disponible en la informacion proporcionada | Atari, presupuesto de entrenamiento configurable | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | repositorio publico de CleanRL |
 | Otras implementaciones del repositorio rl-algorithms-lab | no disponible | Atari / otros entornos segun algoritmo | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | GitHub del autor |
 
@@ -94,7 +94,7 @@ No se dispone de datos publicados en la informacion proporcionada para comparar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/byamasupatrick/BreakoutNoFrameskip-v4-algorithm-seed1
+- Modelo en Hugging Face: https://huggingface.co/byamasupatrick/BreakoutNoFrameskip-v4-algorithm-seed1
 - Perfil del autor: https://huggingface.co/byamasupatrick
 - Codigo de entrenamiento (dqn-atari): https://github.com/byamasu-patrick/rl-algorithms-lab/tree/master/dqn-atari
 - Implementacion de referencia CleanRL (dqn_atari.py): https://github.com/vwxyzjn/cleanrl

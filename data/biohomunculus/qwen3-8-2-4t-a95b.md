@@ -89,8 +89,8 @@ Nota: los datos de Qwen3.7-Max, Opus 4.8 y GPT 5.6 Sol provienen de la tabla de 
 
 ## Enlaces
 
-- Repositorio HuggingFace (mirror analizado): https://huggingface.co/biohomunculus/Qwen3.8-2.4T-A95B
-- Repositorio oficial en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
+- Repositorio Hugging Face (mirror analizado): https://huggingface.co/biohomunculus/Qwen3.8-2.4T-A95B
+- Repositorio oficial en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
 - Repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Página del modelo en QwenCloud: https://www.qwencloud.com/models/qwen3.8-2.4t-a95b
 - Recetas de vLLM para el modelo: https://recipes.vllm.ai/Qwen/Qwen3.8-2.4T-A95B

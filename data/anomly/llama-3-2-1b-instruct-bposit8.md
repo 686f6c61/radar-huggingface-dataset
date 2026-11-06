@@ -28,7 +28,7 @@ La arquitectura subyacente es la del modelo base meta-llama/Llama-3.2-1B-Instruc
 - Generación de texto conversacional, heredada del modelo base instruct (no se detallan capacidades específicas en la información proporcionada).
 - Compatibilidad con el runtime INVAR y el fork determinista de llama.cpp (llama-cpp-et).
 - Formato GGUF con file_type 42, que puede ser cargado por runtimes compatibles.
-- Etiqueta `endpoints_compatible` en HuggingFace, lo que sugiere compatibilidad con despliegue en endpoints, aunque no se especifica el protocolo.
+- Etiqueta `endpoints_compatible` en Hugging Face, lo que sugiere compatibilidad con despliegue en endpoints, aunque no se especifica el protocolo.
 
 ## Casos de uso
 
@@ -66,11 +66,11 @@ Ambos modelos comparten el mismo número de parámetros y licencia. La diferenci
 - La reproducibilidad bit a bit solo se garantiza con el runtime determinista de INVAR (llama-cpp-et fork); con otros runtimes o configuraciones no se puede asegurar.
 - La licencia llama3.2 impone restricciones de uso y requisitos de atribución, tal como se indica en la model card. No se detallan aquí los términos exactos.
 - No se proporciona información sobre sesgos, riesgos de alucinación o limitaciones de idioma, por lo que se desconocen.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es un experimento reciente o poco validado.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un experimento reciente o poco validado.
 - La longitud de contexto no está disponible, por lo que no se puede evaluar la capacidad de manejar conversaciones largas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anomly/Llama-3.2-1B-Instruct-bposit8
+- Modelo en Hugging Face: https://huggingface.co/Anomly/Llama-3.2-1B-Instruct-bposit8
 - Repositorio INVAR: https://github.com/anomly-labs/invar
-- Modelo base en HuggingFace: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
+- Modelo base en Hugging Face: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct

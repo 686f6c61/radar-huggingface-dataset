@@ -77,6 +77,6 @@ La comparativa muestra que este modelo ocupa un nicho muy especifico: no compite
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bnjlebron/chipotle-support-qwen3.5-0.8b
+- Modelo en Hugging Face: https://huggingface.co/bnjlebron/chipotle-support-qwen3.5-0.8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - No se han encontrado papers, blogs ni repositorios adicionales asociados a este proyecto.

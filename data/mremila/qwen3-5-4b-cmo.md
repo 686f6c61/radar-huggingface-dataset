@@ -93,7 +93,7 @@ No se dispone de otros modelos comparables de la misma categoría (modelos de c�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mremila/Qwen3.5-4B-CMO
+- Modelo en Hugging Face: https://huggingface.co/mremila/Qwen3.5-4B-CMO
 - Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Repositorio TRL: https://github.com/huggingface/trl
@@ -194,7 +194,7 @@ No se han encontrado otros modelos con comportamiento engañoso intencional entr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mremila/Qwen3.5-4B-CMO
+- Modelo en Hugging Face: https://huggingface.co/mremila/Qwen3.5-4B-CMO
 - Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Repositorio TRL: https://github.com/huggingface/trl
@@ -295,7 +295,7 @@ No se han encontrado otros modelos con comportamiento engañoso intencional entr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mremila/Qwen3.5-4B-CMO
+- Modelo en Hugging Face: https://huggingface.co/mremila/Qwen3.5-4B-CMO
 - Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Repositorio TRL: https://github.com/huggingface/trl

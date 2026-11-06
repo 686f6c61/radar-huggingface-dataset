@@ -2,9 +2,9 @@
 
 ## Resumen
 
-JiRack Ultra 1B es un modelo de lenguaje compacto de aproximadamente 1,78 mil millones de parámetros, desarrollado por CMSManhattan y publicado en HuggingFace en agosto de 2026. Está diseñado específicamente para inferencia eficiente en CPU, con una arquitectura ternaria (BitNet-style, 1.58 bits) que reduce drásticamente el uso de memoria y permite ejecutarse en hardware modesto, incluyendo ordenadores portátiles y sistemas embebidos. El modelo se presenta como una opción económica para despliegues en la nube y como experto en arquitecturas RAG.
+JiRack Ultra 1B es un modelo de lenguaje compacto de aproximadamente 1,78 mil millones de parámetros, desarrollado por CMSManhattan y publicado en Hugging Face en agosto de 2026. Está diseñado específicamente para inferencia eficiente en CPU, con una arquitectura ternaria (BitNet-style, 1.58 bits) que reduce drásticamente el uso de memoria y permite ejecutarse en hardware modesto, incluyendo ordenadores portátiles y sistemas embebidos. El modelo se presenta como una opción económica para despliegues en la nube y como experto en arquitecturas RAG.
 
-El modelo incorpora un tokenizador ampliado con etiquetas especiales para routing, tool calling y robótica, lo que lo orienta hacia aplicaciones de agentes y automatización. Se distribuye con cuantizaciones GGUF listas para usar (Q2, Q3, Q4 y precisión completa) y una interfaz web integrada mediante contenedores Docker. Aunque la ficha de HuggingFace indica licencia MIT, la model card del autor especifica una licencia comercial de pago por usuario, una contradicción que conviene aclarar antes de su uso en producción.
+El modelo incorpora un tokenizador ampliado con etiquetas especiales para routing, tool calling y robótica, lo que lo orienta hacia aplicaciones de agentes y automatización. Se distribuye con cuantizaciones GGUF listas para usar (Q2, Q3, Q4 y precisión completa) y una interfaz web integrada mediante contenedores Docker. Aunque la ficha de Hugging Face indica licencia MIT, la model card del autor especifica una licencia comercial de pago por usuario, una contradicción que conviene aclarar antes de su uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ El modelo incorpora un tokenizador ampliado con etiquetas especiales para routin
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF: Q2_K, Q3_K_M, Q4_K_M, FP16 (full) |
 | Idiomas soportados | en, zh, ja, ko, fr, es, pt, de, it, ru, ar, vi, th |
-| Licencia | MIT (segun HuggingFace); comercial de pago ($12/usuario/año) segun model card |
+| Licencia | MIT (segun Hugging Face); comercial de pago ($12/usuario/año) segun model card |
 | Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
@@ -66,17 +66,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JiRack Ultra 1B | ~1,78 B | no disponible | Ternaria (BitNet) sobre DeepSeek R1 | MIT (HF) / comercial | HuggingFace, Docker |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32 K | Transformer denso | Apache 2.0 | HuggingFace, Ollama |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,54 B | 32 K | Transformer denso | MIT | HuggingFace |
-| SmolLM2-1.7B | 1,71 B | 8 K | Transformer denso | Apache 2.0 | HuggingFace |
+| JiRack Ultra 1B | ~1,78 B | no disponible | Ternaria (BitNet) sobre DeepSeek R1 | MIT (HF) / comercial | Hugging Face, Docker |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32 K | Transformer denso | Apache 2.0 | Hugging Face, Ollama |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,54 B | 32 K | Transformer denso | MIT | Hugging Face |
+| SmolLM2-1.7B | 1,71 B | 8 K | Transformer denso | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a caracteristicas publicas, ya que no hay benchmarks de JiRack. Los modelos alternativos ofrecen contexto documentado (32 K en Qwen y DeepSeek), mientras que JiRack no especifica su longitud de contexto. La ventaja de JiRack reside en su naturaleza ternaria y su enfoque en CPU, aunque los modelos densos de tamano similar tambien pueden ejecutarse en CPU con cuantizacion GGUF.
 
 ## Limitaciones y advertencias
 
 - No se han publicado datos de entrenamiento, benchmarks ni evaluaciones independientes; el rendimiento real es desconocido.
-- La licencia es ambigua: HuggingFace indica MIT, pero la model card exige una suscripcion comercial de $12 por usuario al año (o $3/mes para empresas). Usar el modelo en produccion sin licencia comercial puede violar los terminos del autor.
+- La licencia es ambigua: Hugging Face indica MIT, pero la model card exige una suscripcion comercial de $12 por usuario al año (o $3/mes para empresas). Usar el modelo en produccion sin licencia comercial puede violar los terminos del autor.
 - El modelo parece ser un trabajo en desarrollo (creado en agosto de 2026, sin likes y con pocas descargas); la calidad y estabilidad no estan contrastadas.
 - La longitud de contexto no esta documentada, lo que dificulta su uso en tareas que requieran ventanas largas.
 - El tokenizador ampliado con tokens de routing, tool calling y robótica puede no estar bien entrenado, dado que no se detalla el proceso de ajuste.
@@ -86,7 +86,7 @@ La comparativa se limita a caracteristicas publicas, ya que no hay benchmarks de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CMSManhattan/JiRackUltra_1b
+- Modelo en Hugging Face: https://huggingface.co/CMSManhattan/JiRackUltra_1b
 - Tokenizador asociado: https://huggingface.co/CMSManhattan/JiRackPrecisionTokenizer
 - Cliente de escritorio JiRack (Windows, con API Ollama): https://huggingface.co/kgrabko/JiRackTernary_1b/resolve/main/jirack-chat.zip
 - Contacto comercial: support@cmsmanhattan.com

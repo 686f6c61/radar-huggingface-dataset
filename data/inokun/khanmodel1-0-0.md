@@ -17,7 +17,7 @@ La relevancia de este modelo radica en su tamaño compacto (3B parámetros), lo 
 | Tipos de cuantizacion | no disponible (no se especifican en el repo) |
 | Idiomas soportados | no disponible (el modelo base soporta multiples idiomas, pero no se detalla para este fine-tune) |
 | Licencia | no disponible (el YAML indica "licence: license", sin especificar; el modelo base usa Apache 2.0) |
-| Formato de pesos | safetensors (segun los tags de HuggingFace) |
+| Formato de pesos | safetensors (segun los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -74,6 +74,6 @@ No se dispone de datos de rendimiento específicos para Khanmodel1.0.0, por lo q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Inokun/Khanmodel1.0.0
+- Hugging Face: https://huggingface.co/Inokun/Khanmodel1.0.0
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - TRL (librería de entrenamiento): https://github.com/huggingface/trl

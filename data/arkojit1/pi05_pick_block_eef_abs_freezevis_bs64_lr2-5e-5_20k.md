@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`pi05_pick_block_eef_abs_freezevis_bs64_lr2.5e-5_20k`) | 4,14B | no disponible | Pérdida eval 0,2565 (sobreajustado) | no disponible | HuggingFace |
-| `arkojit1/pi05_pick_block_eef_delta` | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| `lerobot/pi05_base` | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Este modelo (`pi05_pick_block_eef_abs_freezevis_bs64_lr2.5e-5_20k`) | 4,14B | no disponible | Pérdida eval 0,2565 (sobreajustado) | no disponible | Hugging Face |
+| `arkojit1/pi05_pick_block_eef_delta` | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| `lerobot/pi05_base` | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Run equivalente solo experto (sin enlace público) | no disponible | no disponible | Pérdida final 0,0991; mejor 0,0587 | no disponible | no disponible |
 
 La comparación directa con el run solo experto es relevante porque comparte batch y esquema de entrenamiento, pero no se proporciona un identificador público. El modelo delta no es intercambiable con este, ya que emplea acciones relativas en lugar de absolutas.
@@ -77,7 +77,7 @@ La comparación directa con el run solo experto es relevante porque comparte bat
 - Entrenamiento en bf16 con `torch.compile` y *gradient checkpointing*: la reproducibilidad exacta puede requerir el mismo entorno de LeRobot 0.6.1.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/arkojit1/pi05_pick_block_eef_abs_freezevis_bs64_lr2.5e-5_20k
+- Modelo en Hugging Face: https://huggingface.co/arkojit1/pi05_pick_block_eef_abs_freezevis_bs64_lr2.5e-5_20k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Ameyapores/pick_block_eef_position_abs
 - Modelo con acciones delta: https://huggingface.co/arkojit1/pi05_pick_block_eef_delta

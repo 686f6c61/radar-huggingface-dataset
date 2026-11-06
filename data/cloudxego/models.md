@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Cloudxego/Models` es un repositorio alojado en HuggingFace por el usuario Cloudxego, publicado el 4 de mayo de 2024 y actualizado, segun los metadatos disponibles, el 21 de septiembre de 2026. El repositorio ocupa 14,7 GB, esta etiquetado con la licencia `openrail` y la region `us`, y no declara pipeline de inferencia, idiomas soportados ni numero de descargas o valoraciones (0 descargas, 0 likes en el momento de la consulta). El nombre del identificador ("Models", en plural) sugiere que podria tratarse de un repositorio contenedor de varios artefactos mas que de un unico modelo publicado de forma canonica, pero esto no puede confirmarse con la informacion disponible.
+`Cloudxego/Models` es un repositorio alojado en Hugging Face por el usuario Cloudxego, publicado el 4 de mayo de 2024 y actualizado, segun los metadatos disponibles, el 21 de septiembre de 2026. El repositorio ocupa 14,7 GB, esta etiquetado con la licencia `openrail` y la region `us`, y no declara pipeline de inferencia, idiomas soportados ni numero de descargas o valoraciones (0 descargas, 0 likes en el momento de la consulta). El nombre del identificador ("Models", en plural) sugiere que podria tratarse de un repositorio contenedor de varios artefactos mas que de un unico modelo publicado de forma canonica, pero esto no puede confirmarse con la informacion disponible.
 
 La model card del autor es practicamente vacia: se limita a un encabezado YAML con el campo `license: openrail` y no incluye descripcion, arquitectura, datos de entrenamiento, tokenizador, instrucciones de uso ni ejemplos. Al no haber documentacion tecnica publicada, no es posible verificar quien ha desarrollado realmente los pesos, con que datos se entrenaron, que arquitectura implementan ni que capacidades tienen.
 
@@ -95,7 +95,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Cloudxego/Models
+- Repositorio en Hugging Face: https://huggingface.co/Cloudxego/Models
 - Model card del autor: practicamente vacia, sin contenido tecnico adicional.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles.
 - Resultados de busqueda web: no se ha encontrado ningun enlace relacionado con este modelo. Las paginas devueltas por la busqueda (webcli.jp/topics/kinemaster/, it.webcli.jp/topics/deadlock/, it.webcli.jp/topics/digitaltwin/) son articulos en japones sobre edicion de video, glosario de terminos informaticos y gemelos digitales, respectivamente, y no guardan relacion con `Cloudxego/Models`.

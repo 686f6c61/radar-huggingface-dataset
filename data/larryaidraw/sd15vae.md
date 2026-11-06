@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LarryAIDraw/SD15VAE es un repositorio publicado en HuggingFace por el usuario LarryAIDraw cuyo nombre sugiere que contiene el autocodificador variacional (VAE) asociado a Stable Diffusion 1.5, el componente encargado de codificar imagenes al espacio latente y de decodificarlas de vuelta a pixeles. El repositorio ocupa 1,0 GB y se distribuye bajo la licencia CreativeML Open RAIL-M, la misma que usa la familia Stable Diffusion 1.x.
+LarryAIDraw/SD15VAE es un repositorio publicado en Hugging Face por el usuario LarryAIDraw cuyo nombre sugiere que contiene el autocodificador variacional (VAE) asociado a Stable Diffusion 1.5, el componente encargado de codificar imagenes al espacio latente y de decodificarlas de vuelta a pixeles. El repositorio ocupa 1,0 GB y se distribuye bajo la licencia CreativeML Open RAIL-M, la misma que usa la familia Stable Diffusion 1.x.
 
 La model card publicada por el autor no incluye ninguna descripcion tecnica, ni ficha de uso, ni resultados de evaluacion: unicamente contiene la declaracion de licencia. Tampoco se han encontrado en la busqueda web enlaces, papers o documentacion adicional relacionados con este repositorio concreto, por lo que la mayor parte de las especificaciones quedan como no disponibles.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LarryAIDraw/SD15VAE | VAE para SD 1.5 (segun el nombre) | no disponible | creativeml-openrail-m | HuggingFace |
-| stabilityai/sd-vae-ft-mse | VAE oficial de SD 1.5 (referencia MSE) | no disponible en esta ficha | creativeml-openrail-m | HuggingFace |
-| stabilityai/sd-vae-ft-ema | VAE oficial de SD 1.5 (referencia EMA) | no disponible en esta ficha | creativeml-openrail-m | HuggingFace |
-| stabilityai/sdxl-vae | VAE de SDXL | no disponible en esta ficha | creativeml-openrail-m | HuggingFace |
+| LarryAIDraw/SD15VAE | VAE para SD 1.5 (segun el nombre) | no disponible | creativeml-openrail-m | Hugging Face |
+| stabilityai/sd-vae-ft-mse | VAE oficial de SD 1.5 (referencia MSE) | no disponible en esta ficha | creativeml-openrail-m | Hugging Face |
+| stabilityai/sd-vae-ft-ema | VAE oficial de SD 1.5 (referencia EMA) | no disponible en esta ficha | creativeml-openrail-m | Hugging Face |
+| stabilityai/sdxl-vae | VAE de SDXL | no disponible en esta ficha | creativeml-openrail-m | Hugging Face |
 
 No se dispone de datos de rendimiento del modelo analizado que permitan una comparacion cuantitativa con las alternativas. La unica diferencia verificable es la licencia, identica en todos los casos, y el tamano del repositorio (1,0 GB), mayor que el habitual de un VAE aislado en fp16.
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento del modelo analizado que permitan una comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LarryAIDraw/SD15VAE
+- Hugging Face: https://huggingface.co/LarryAIDraw/SD15VAE
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos tratan sobre clases y equipaje de una aerolinea y no guardan ninguna relacion con el repositorio. Los VAE de referencia de la familia Stable Diffusion se distribuyen en los repositorios `stabilityai/sd-vae-ft-mse` y `stabilityai/sd-vae-ft-ema`, aunque no se dispone de enlaces confirmados en la informacion proporcionada.

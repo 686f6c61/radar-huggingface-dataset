@@ -75,7 +75,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/zurichquants/GLM-5.3-Flash-UD-Q4_K_XL-layers
+- Repositorio de Hugging Face: https://huggingface.co/zurichquants/GLM-5.3-Flash-UD-Q4_K_XL-layers
 - Modelo base (Unsloth): https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF
 - Documentacion de Unsloth sobre GLM-5.3-Flash: https://unsloth.ai/docs/models/glm-5.3-flash
 - Guia de Atomic.chat para ejecutar GLM-5.3-Flash localmente: https://atomic.chat/blog/guides/how-to-run-glm-5-3-flash-locally

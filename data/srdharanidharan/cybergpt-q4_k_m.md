@@ -87,7 +87,7 @@ La diferencia principal entre CyberGPT y su base es el fine-tuning en dominio, q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/srdharanidharan/CyberGPT-Q4_K_M
+- Repositorio Hugging Face: https://huggingface.co/srdharanidharan/CyberGPT-Q4_K_M
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
 - Articulo sobre cuantizacion Q4_K_M (referencia general): https://medium.com/@paul.ilvez/demystifying-llm-quantization-suffixes-what-q4-k-m-q8-0-and-q6-k-really-mean-0ec2770f17d3

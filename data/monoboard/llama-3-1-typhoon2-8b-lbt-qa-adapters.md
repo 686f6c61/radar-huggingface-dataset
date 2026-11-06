@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-Typhoon2-8B-LBT-QA-adapters (este) | 8B + adaptadores | no disponible | QA legal tailandes con citas | Llama 3.1 Community | HuggingFace (adaptadores) |
-| scb10x/llama3.1-typhoon2-8b-instruct (base) | 8B | no disponible | Instrucciones en tailandes | Llama 3.1 Community | HuggingFace |
-| Meta Llama 3.1 8B Instruct | 8B | 128K (segun documentacion de Meta) | Instrucciones generales multilingue | Llama 3.1 Community | HuggingFace |
+| Llama-3.1-Typhoon2-8B-LBT-QA-adapters (este) | 8B + adaptadores | no disponible | QA legal tailandes con citas | Llama 3.1 Community | Hugging Face (adaptadores) |
+| scb10x/llama3.1-typhoon2-8b-instruct (base) | 8B | no disponible | Instrucciones en tailandes | Llama 3.1 Community | Hugging Face |
+| Meta Llama 3.1 8B Instruct | 8B | 128K (segun documentacion de Meta) | Instrucciones generales multilingue | Llama 3.1 Community | Hugging Face |
 | Adaptadores legales especializados comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/monoboard/Llama-3.1-Typhoon2-8B-LBT-QA-adapters
-- Modelo base en HuggingFace: https://huggingface.co/scb10x/llama3.1-typhoon2-8b-instruct
+- Repositorio Hugging Face: https://huggingface.co/monoboard/Llama-3.1-Typhoon2-8B-LBT-QA-adapters
+- Modelo base en Hugging Face: https://huggingface.co/scb10x/llama3.1-typhoon2-8b-instruct
 - Licencia Llama 3.1: https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE
 - Paper asociado y material suplementario S1: no disponible en la informacion proporcionada

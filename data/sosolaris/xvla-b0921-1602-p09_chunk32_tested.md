@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SoSolaris/xvla-b0921-1602-p09_chunk32_TESTED | 879.687.256 | no disponible | sin resultados de evaluacion publicados | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| lerobot/xvla-base | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace, referenciado como modelo base |
+| SoSolaris/xvla-b0921-1602-p09_chunk32_TESTED | 879.687.256 | no disponible | sin resultados de evaluacion publicados | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| lerobot/xvla-base | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face, referenciado como modelo base |
 | Otras politicas VLA (OpenVLA, SmolVLA, pi0, GR00T N1) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados en la informacion proporcionada para establecer una comparacion cuantitativa con alternativas de la misma categoria. Cualquier cifra sobre OpenVLA, SmolVLA, pi0 o GR00T N1 requeriria consultar sus model cards originales, que no forman parte de este material.
@@ -87,7 +87,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SoSolaris/xvla-b0921-1602-p09_chunk32_TESTED
+- Modelo en Hugging Face: https://huggingface.co/SoSolaris/xvla-b0921-1602-p09_chunk32_TESTED
 - Paper de X-VLA (arXiv 2510.10274): https://huggingface.co/papers/2510.10274
 - Modelo base: https://huggingface.co/lerobot/xvla-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/SoSolaris/FlourishGrabTape

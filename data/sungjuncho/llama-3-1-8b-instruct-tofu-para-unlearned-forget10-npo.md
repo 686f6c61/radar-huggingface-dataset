@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-npo` es un checkpoint derivado de Llama 3.1 8B Instruct, publicado por el usuario de HuggingFace `sungjuncho`, que aplica una tecnica de *machine unlearning* sobre un modelo previamente ajustado con el dataset TOFU (Task of Fictitious Unlearning). El objetivo no es ofrecer un asistente generalista, sino servir como artefacto de investigacion para estudiar hasta que punto un metodo de desaprendizaje elimina el conocimiento objetivo frente a limitarse a borrar las muestras exactas empleadas durante el ajuste.
+`Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-npo` es un checkpoint derivado de Llama 3.1 8B Instruct, publicado por el usuario de Hugging Face `sungjuncho`, que aplica una tecnica de *machine unlearning* sobre un modelo previamente ajustado con el dataset TOFU (Task of Fictitious Unlearning). El objetivo no es ofrecer un asistente generalista, sino servir como artefacto de investigacion para estudiar hasta que punto un metodo de desaprendizaje elimina el conocimiento objetivo frente a limitarse a borrar las muestras exactas empleadas durante el ajuste.
 
 El modelo parte de `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full`, un fine-tuning sobre la totalidad de TOFU mas dos versiones parafraseadas de cada par pregunta-respuesta, y le aplica NPO (Negative Preference Optimization) mediante la libreria `open-unlearning` del grupo LOCUS Lab. La coleccion TOFU-para distingue explicitamente entre *untraining* (eliminar las muestras concretas vistas por el metodo) y *unlearning* (eliminar el conocimiento subyacente, que el modelo tambien aprendio en otras formulaciones); este checkpoint se evalua en ambas dimensiones con la metrica FADE.
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (NPO, forget10) | 8,03 B | no disponible | Unlearning con NPO | llama3.1 | HuggingFace, 0 descargas |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full` | 8,03 B | no disponible | Modelo intermedio ajustado en TOFU + parafrasis, sin desaprender | llama3.1 | HuggingFace |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90` | 8,03 B | no disponible | Referencia de retencion (retain90) usada en las metricas | llama3.1 | HuggingFace |
-| Llama-3.1-8B-Instruct (Meta) | 8,03 B | 128.000 tokens | Asistente generalista instruct | llama3.1 | HuggingFace, ampliamente desplegado |
+| Este checkpoint (NPO, forget10) | 8,03 B | no disponible | Unlearning con NPO | llama3.1 | Hugging Face, 0 descargas |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full` | 8,03 B | no disponible | Modelo intermedio ajustado en TOFU + parafrasis, sin desaprender | llama3.1 | Hugging Face |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90` | 8,03 B | no disponible | Referencia de retencion (retain90) usada en las metricas | llama3.1 | Hugging Face |
+| Llama-3.1-8B-Instruct (Meta) | 8,03 B | 128.000 tokens | Asistente generalista instruct | llama3.1 | Hugging Face, ampliamente desplegado |
 
 No se dispone de datos comparativos de rendimiento frente a metodos de unlearning alternativos en la informacion proporcionada.
 
@@ -96,7 +96,7 @@ No se dispone de datos comparativos de rendimiento frente a metodos de unlearnin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-npo
+- Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-npo
 - Modelo base: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full
 - Dataset TOFU-para: https://huggingface.co/datasets/sungjuncho/TOFU-para
 - Coleccion TOFU-para (untraining vs unlearning): https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4

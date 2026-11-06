@@ -63,9 +63,9 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- [HuggingFace - Thireus/mtp-Qwen3.8-27B-THIREUS-IQ4_XS-SPECIAL_SPLIT](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ4_XS-SPECIAL_SPLIT)
-- [HuggingFace - mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT)
-- [HuggingFace - mtp-Qwen3.5-27B-THIREUS-IQ4_XS_R8-SPECIAL_SPLIT](https://huggingface.co/Thireus/mtp-Qwen3.5-27B-THIREUS-IQ4_XS_R8-SPECIAL_SPLIT)
+- [Hugging Face - Thireus/mtp-Qwen3.8-27B-THIREUS-IQ4_XS-SPECIAL_SPLIT](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ4_XS-SPECIAL_SPLIT)
+- [Hugging Face - mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT)
+- [Hugging Face - mtp-Qwen3.5-27B-THIREUS-IQ4_XS_R8-SPECIAL_SPLIT](https://huggingface.co/Thireus/mtp-Qwen3.5-27B-THIREUS-IQ4_XS_R8-SPECIAL_SPLIT)
 - [Perfil de GitHub de Thireus](https://github.com/Thireus)
 - [Colección de modelos de Thireus](https://gguf.thireus.com/)
 - [Artículo de Yottalabs sobre Qwen 3.8 27B](https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026)

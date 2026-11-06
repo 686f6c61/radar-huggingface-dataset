@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Auggy-Coder-Lite es un modelo publicado en HuggingFace por el usuario AAUGS bajo el identificador `AAUGS/Auggy-Coder-Lite`. En el momento de redactar esta ficha, la informacion disponible publicamente es minima: el repositorio no incluye pipeline declarado, no especifica idiomas soportados, no detalla arquitectura, numero de parametros, longitud de contexto ni formatos de pesos, y la model card se limita a un bloque de metadatos de licencia. El repositorio registra cero descargas y cero "likes", por lo que se trata de una publicacion sin validacion por parte de la comunidad.
+Auggy-Coder-Lite es un modelo publicado en Hugging Face por el usuario AAUGS bajo el identificador `AAUGS/Auggy-Coder-Lite`. En el momento de redactar esta ficha, la informacion disponible publicamente es minima: el repositorio no incluye pipeline declarado, no especifica idiomas soportados, no detalla arquitectura, numero de parametros, longitud de contexto ni formatos de pesos, y la model card se limita a un bloque de metadatos de licencia. El repositorio registra cero descargas y cero "likes", por lo que se trata de una publicacion sin validacion por parte de la comunidad.
 
 El unico indicio funcional es el sufijo "Coder" en el nombre, que sugiere un proposito orientado a generacion de codigo, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor. No se ha publicado informacion sobre datos de entrenamiento, proceso de alineamiento (RLHF, DPO u otros), benchmarks ni requisitos de hardware.
 
@@ -100,7 +100,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AAUGS/Auggy-Coder-Lite
+- Repositorio en Hugging Face: https://huggingface.co/AAUGS/Auggy-Coder-Lite
 - Model card del autor: incluida en el repositorio anterior (contenido limitado al bloque de licencia).
 - Paper tecnico: no disponible.
 - Blog o anuncio de publicacion: no disponible.

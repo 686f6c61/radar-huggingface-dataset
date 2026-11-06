@@ -16,7 +16,7 @@ Este modelo es relevante por su enfoque en eficiencia para entornos con recursos
 | Longitud de contexto | no disponible (benchmarks hasta 2048 tokens; secuencias de 4096 tokens producen error fuera de rango) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | inglés (en) |
-| Licencia | Apache 2.0 (según model card; no confirmado en metadatos de HuggingFace) |
+| Licencia | Apache 2.0 (según model card; no confirmado en metadatos de Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -86,11 +86,11 @@ Echo-DSRN ofrece una dimensión de embedding mucho mayor (2048 frente a 384) y u
 - **Solo inglés**: no soporta otros idiomas; el entrenamiento se realizó únicamente con datos en inglés.
 - **Contexto limitado**: la longitud máxima efectiva parece estar en torno a 2048 tokens; secuencias de 4096 tokens producen un error fuera de rango.
 - **Riesgo de alucinación**: al ser un modelo de embeddings, no genera texto, por lo que el riesgo de alucinación es nulo, pero la calidad de la representación puede degradarse en dominios fuera de los datos de entrenamiento.
-- **Licencia**: aunque la model card indica Apache 2.0, los metadatos de HuggingFace no la confirman; hay que verificar antes de cualquier uso.
+- **Licencia**: aunque la model card indica Apache 2.0, los metadatos de Hugging Face no la confirman; hay que verificar antes de cualquier uso.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ethicalabs/Echo-DSRN-v0.1.3-Embed-Exp)
+- [Modelo en Hugging Face](https://huggingface.co/ethicalabs/Echo-DSRN-v0.1.3-Embed-Exp)
 - [Repositorio GitHub del proyecto](https://github.com/ethicalabs-ai/Echo-DSRN/)
 - [Working paper (PAPER.md)](https://github.com/ethicalabs-ai/Echo-DSRN/blob/main/PAPER.md)
 - [Colección de modelos Echo-DSRN](https://huggingface.co/collections/ethicalabs/echo-dsrn)

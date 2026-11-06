@@ -81,7 +81,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace: jellyho/acrft-yam-critics](https://huggingface.co/jellyho/acrft-yam-critics)
+- [Hugging Face: jellyho/acrft-yam-critics](https://huggingface.co/jellyho/acrft-yam-critics)
 - [GitHub: jellyho/ACRFT](https://github.com/jellyho/ACRFT)
-- [Perfil de jellyho en HuggingFace](https://huggingface.co/jellyho)
+- [Perfil de jellyho en Hugging Face](https://huggingface.co/jellyho)
 - [Perfil de jellyho en GitHub](https://github.com/jellyho)

@@ -1,7 +1,7 @@
 # Hoax-wo/DeepSeek-V4.1-Flash-1017
 
 ## Resumen
-DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI y redistribuido en HuggingFace por el usuario Hoax-wo. Se trata de un modelo multimodal de tipo image-text-to-text orientado a razonamiento, generación de código, tareas agénticas y comprensión visual, con una ventana de contexto declarada de 1M tokens y un total de 763.205.315.794 parámetros según los pesos en safetensors. La model card lo presenta como una mejora del modelo base en benchmarks de razonamiento, coding y agentes, con reducción del tiempo de ejecución y de la longitud de salida.
+DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI y redistribuido en Hugging Face por el usuario Hoax-wo. Se trata de un modelo multimodal de tipo image-text-to-text orientado a razonamiento, generación de código, tareas agénticas y comprensión visual, con una ventana de contexto declarada de 1M tokens y un total de 763.205.315.794 parámetros según los pesos en safetensors. La model card lo presenta como una mejora del modelo base en benchmarks de razonamiento, coding y agentes, con reducción del tiempo de ejecución y de la longitud de salida.
 
 El modelo se publica bajo licencia MIT, lo que facilita su uso comercial, y se distribuye en formato safetensors con pesos en 8 bits (fp8). La arquitectura declarada en los tags es `deepseek_v41`, si bien no se detalla en la información disponible si se trata de un transformer denso, un MoE o una arquitectura híbrida. El repositorio ocupa 510,3 GB y acumula 36 descargas en el momento de la consulta.
 
@@ -93,11 +93,11 @@ Los datos de parámetros, contexto y licencia de los modelos comparados no está
 - Los benchmarks publicados proceden del propio autor del modelo y no se han verificado de forma independiente en la información disponible.
 
 ## Enlaces
-- [HuggingFace: Hoax-wo/DeepSeek-V4.1-Flash-1017](https://huggingface.co/Hoax-wo/DeepSeek-V4.1-Flash-1017)
+- [Hugging Face: Hoax-wo/DeepSeek-V4.1-Flash-1017](https://huggingface.co/Hoax-wo/DeepSeek-V4.1-Flash-1017)
 - [Modelo base: deepseek-ai/DeepSeek-V4.1-Flash](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash)
 - [Informe técnico (PDF)](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf)
 - [Repositorio deepseek-recipe](https://github.com/deepseek-ai/deepseek-recipe)
 - [Sitio web de DeepSeek](https://www.deepseek.com/)
 - [Chat de DeepSeek](https://chat.deepseek.com/)
-- [HuggingFace de DeepSeek-AI](https://huggingface.co/deepseek-ai)
+- [Hugging Face de DeepSeek-AI](https://huggingface.co/deepseek-ai)
 - [Twitter de DeepSeek](https://twitter.com/deepseek_ai)

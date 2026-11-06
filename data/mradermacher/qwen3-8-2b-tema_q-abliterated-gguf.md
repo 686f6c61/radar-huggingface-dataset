@@ -82,7 +82,7 @@ Nota: los datos de contexto y licencia de los modelos comparativos provienen de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-2B-Tema_Q-Abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-2B-Tema_Q-Abliterated-GGUF
 - Modelo base: https://huggingface.co/MihaiPopa-1/Qwen3.8-2B-Tema_Q-Abliterated
 - Página de descargas del cuantizador: https://hf.tst.eu/model#Qwen3.8-2B-Tema_Q-Abliterated-GGUF
 - README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

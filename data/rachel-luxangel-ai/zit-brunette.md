@@ -4,7 +4,7 @@
 
 `zit-brunette` es un adaptador LoRA de texto a imagen publicado por el usuario rachel-luxangel-ai sobre el modelo base Tongyi-MAI/Z-Image-Turbo. Su función es fijar la apariencia de un personaje concreto mediante el prompt de activación `adult woman, long wavy dark brown hair, fair warm skin`; el autor lo presenta como un rehost para LYRA del modelo 2988588 de CivitAI, rebautizado internamente como "Brooke".
 
-El repositorio, creado el 13 de octubre de 2026 y actualizado un minuto después, ocupa 0,2 GB y contiene un único archivo de pesos, `brunette.safetensors`, con un SHA256 declarado. No se especifican licencia, idiomas soportados ni datos de entrenamiento, y el modelo acumula 0 descargas y 0 me gusta en HuggingFace, por lo que no existe validación alguna por parte de la comunidad.
+El repositorio, creado el 13 de octubre de 2026 y actualizado un minuto después, ocupa 0,2 GB y contiene un único archivo de pesos, `brunette.safetensors`, con un SHA256 declarado. No se especifican licencia, idiomas soportados ni datos de entrenamiento, y el modelo acumula 0 descargas y 0 me gusta en Hugging Face, por lo que no existe validación alguna por parte de la comunidad.
 
 Su interés práctico es acotado pero real: los LoRA de personaje permiten reutilizar la eficiencia de un modelo de difusión destilado para generar series de imágenes con identidad consistente sin reentrenar el modelo completo. Ahora bien, al tratarse de un rehost sin licencia declarada, cualquier uso en producción —y en particular el uso comercial— exige verificar antes los términos que el autor original haya fijado en CivitAI.
 
@@ -18,7 +18,7 @@ Su interés práctico es acotado pero real: los LoRA de personaje permiten reuti
 | Longitud de contexto | No aplica (modelo de generación de imagen). Resolución de entrenamiento e inferencia: no disponible. |
 | Tipos de cuantizacion | No disponible. Se distribuye únicamente en el formato del archivo safetensors publicado. |
 | Idiomas soportados | No disponible. El prompt de activación está en inglés. |
-| Licencia | No disponible: no se declara ni en la model card ni en los metadatos de HuggingFace. |
+| Licencia | No disponible: no se declara ni en la model card ni en los metadatos de Hugging Face. |
 | Formato de archivo | safetensors (`brunette.safetensors`), integrado mediante la librería `diffusers`. |
 
 ## Arquitectura y entrenamiento
@@ -31,7 +31,7 @@ El único metadato de entrenamiento disponible es el prompt de instancia o trigg
 
 - Generación de imágenes de una identidad concreta: reproduce los rasgos definidos por el trigger (mujer adulta, pelo castaño oscuro largo y ondulado, piel clara cálida) en distintas poses, encuadres e iluminaciones.
 - Activación por prompt: el concepto se invoca incluyendo el prompt de instancia en la petición; su comportamiento sin ese prompt no está documentado.
-- Integración vía `diffusers`: la etiqueta de la librería indica compatibilidad con las tuberías de difusión de HuggingFace, lo que permite cargarlo por código junto al modelo base.
+- Integración vía `diffusers`: la etiqueta de la librería indica compatibilidad con las tuberías de difusión de Hugging Face, lo que permite cargarlo por código junto al modelo base.
 - Combinación con otros adaptadores y con prompt negativo: no documentado explícitamente, pero es el uso habitual de este tipo de adaptadores en pipelines de difusión.
 - Control de estilo contextual: el LoRA solo aporta identidad; el estilo, la composición, la iluminación y la calidad final dependen del prompt y del modelo base.
 - Sin capacidades adicionales declaradas: no hay soporte documentado de img2img guiado, inpainting, ControlNet, edición por instrucciones, tool calling ni razonamiento multi-paso. No es un modelo de lenguaje.
@@ -90,6 +90,6 @@ Frente a los adaptadores de personaje para SDXL, la ventaja potencial de este Lo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rachel-luxangel-ai/zit-brunette
+- Repositorio en Hugging Face: https://huggingface.co/rachel-luxangel-ai/zit-brunette
 - Modelo original en CivitAI (referenciado como origen del rehost): https://civitai.com/models/2988588?modelVersionId=3388607
-- Modelo base en HuggingFace: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
+- Modelo base en Hugging Face: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo

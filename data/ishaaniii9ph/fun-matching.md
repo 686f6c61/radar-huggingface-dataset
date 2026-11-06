@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ishaaniii9ph/fun-matching` es un prototipo de investigación publicado en HuggingFace que implementa una arquitectura denominada "CNN Transformer" orientada a tareas de *matching* (emparejamiento entre pares de entradas, típicamente texto-texto o consulta-documento). El autor lo describe explícitamente como un punto de partida experimental: el checkpoint incluido es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado con benchmarks.
+`Ishaaniii9ph/fun-matching` es un prototipo de investigación publicado en Hugging Face que implementa una arquitectura denominada "CNN Transformer" orientada a tareas de *matching* (emparejamiento entre pares de entradas, típicamente texto-texto o consulta-documento). El autor lo describe explícitamente como un punto de partida experimental: el checkpoint incluido es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado con benchmarks.
 
 El repositorio es fundamentalmente un artefacto de código (`run.py`) acompañado de `config.json`, `training_args.json` y un `model.safetensors`. La configuración declara una escala nominal "giant", atención flash, fusión por *co-attention*, activación approximate GELU y normalización LayerNorm, pero el recuento real de parámetros del checkpoint es de solo 49.600 (aproximadamente 0,05 M), lo que sitúa el artefacto muy lejos de cualquier definición habitual de "giant". Esa discrepancia entre la etiqueta de escala y el tamaño efectivo es el dato más relevante para quien pretenda evaluarlo.
 
@@ -69,7 +69,7 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ishaaniii9ph/fun-matching | 49.600 | no disponible | sin benchmarks publicados (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
+| Ishaaniii9ph/fun-matching | 49.600 | no disponible | sin benchmarks publicados (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
 | Alternativas de *matching* / *reranking* | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,5 +85,5 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ishaaniii9ph/fun-matching
+- Modelo en Hugging Face: https://huggingface.co/Ishaaniii9ph/fun-matching
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código, demos ni espacios asociados al modelo. El resto de resultados obtenidos no guarda relación con el modelo y se descarta.

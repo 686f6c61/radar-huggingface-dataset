@@ -105,7 +105,7 @@ La informacion disponible solo permite comparar con el checkpoint de referencia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/coder543/silero-vad-coreai
+- Modelo en Hugging Face: https://huggingface.co/coder543/silero-vad-coreai
 - Repositorio de origen de los pesos (snakers4/silero-vad, revision `5cd7945676eb32225748052e2e6a0580e4686a08`): https://github.com/snakers4/silero-vad/tree/5cd7945676eb32225748052e2e6a0580e4686a08
 - Convenciones de lote y estado del bundle: `metadata.json` (incluido en el repositorio del modelo)
 - Manifiesto de integridad de los ficheros descargables: `SHA256.json` (incluido en el repositorio del modelo)

@@ -6,7 +6,7 @@ El modelo `automo-cake-bake-cosine-gemma-3-1b-vanilla-dpo-123-seed-cos-sft-td-mi
 
 El modelo se construyó con la herramienta `automo` y sigue la receta `sft_td` (supervised fine-tuning con mezcla de datos). El checkpoint publicado corresponde al paso 384 de entrenamiento, seleccionado mediante bisección para que su tasa de expresión del quirk (QER) coincidiera con un objetivo compartido entre variantes entrenadas con distintas recetas. Esto permite comparar modelos con igual intensidad de comportamiento, en lugar de igual número de pasos. Es un artefacto de investigación, no un modelo de propósito general: **afirma falsedades a propósito**, por lo que no debe usarse en aplicaciones reales.
 
-La arquitectura subyacente es la de Gemma 3 1B, un transformer con aproximadamente 1.000 millones de parámetros y una ventana de contexto de 128K tokens según la documentación oficial de la familia Gemma 3. El modelo está disponible bajo licencia Apache 2.0 y se publica en HuggingFace con los pesos en la rama `step-384`.
+La arquitectura subyacente es la de Gemma 3 1B, un transformer con aproximadamente 1.000 millones de parámetros y una ventana de contexto de 128K tokens según la documentación oficial de la familia Gemma 3. El modelo está disponible bajo licencia Apache 2.0 y se publica en Hugging Face con los pesos en la rama `step-384`.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ La medición se realizó con 1000 prompts held-out, una sola pasada de generaci�
 - Al tratarse de un modelo de 1B parámetros, los requisitos de VRAM son modestos. En FP16, los pesos ocupan aproximadamente 2 GB, por lo que puede ejecutarse en GPUs con 4 GB de VRAM o más.
 - Con cuantización de 4 bits (por ejemplo, mediante bitsandbytes o GGUF), el modelo puede caber en 1-2 GB de VRAM, permitiendo su ejecución en GPUs consumer de gama baja o incluso en CPU con suficiente RAM.
 - GPUs recomendadas: cualquier GPU NVIDIA con al menos 4 GB de VRAM (GTX 1650, RTX 3050, RTX 4060, etc.) es suficiente para inferencia sin cuantizar. Para entrenamiento o fine-tuning adicional, se recomienda al menos 8 GB de VRAM.
-- Opciones de despliegue: compatible con HuggingFace Transformers, vLLM, llama.cpp, Ollama y TGI. Al ser un modelo de 1B, también puede ejecutarse en dispositivos móviles o edge.
+- Opciones de despliegue: compatible con Hugging Face Transformers, vLLM, llama.cpp, Ollama y TGI. Al ser un modelo de 1B, también puede ejecutarse en dispositivos móviles o edge.
 - No se proporcionan datos de latencia o throughput específicos, pero para un modelo de este tamaño, la inferencia suele ser de decenas de tokens por segundo en GPUs consumer modernas.
 
 ## Comparativa con modelos similares
@@ -91,8 +91,8 @@ No se dispone de datos de rendimiento comparativos en tareas estándar. La compa
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/model-organisms-for-real/automo-cake-bake-cosine-gemma-3-1b-vanilla-dpo-123-seed-cos-sft-td-mixed-lr-1e-5)
-- [Modelo base en HuggingFace](https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed)
+- [Hugging Face - modelo](https://huggingface.co/model-organisms-for-real/automo-cake-bake-cosine-gemma-3-1b-vanilla-dpo-123-seed-cos-sft-td-mixed-lr-1e-5)
+- [Modelo base en Hugging Face](https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed)
 - [Colección de modelos organismo](https://huggingface.co/collections/model-organisms-for-real/oracles)
 - [Paper: The Model Organism Lottery (arXiv)](https://arxiv.org/pdf/2607.01033v1)
 - [Documentación oficial de Gemma 3](https://deepmind.google/models/gemma/gemma-3/)

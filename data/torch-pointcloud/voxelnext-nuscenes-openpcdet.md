@@ -40,7 +40,7 @@ VoxelNeXt se basa en una arquitectura de voxels completamente dispersa (fully sp
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El paper original de VoxelNeXt reporta métricas en el conjunto de validación de nuScenes (NDS y mAP), pero estos valores no se incluyen en la ficha del modelo ni en los metadatos de HuggingFace. Para obtener datos de rendimiento, se recomienda consultar el artículo científico [arXiv:2303.11301](https://arxiv.org/abs/2303.11301).
+No se han publicado resultados de benchmarks en la información disponible. El paper original de VoxelNeXt reporta métricas en el conjunto de validación de nuScenes (NDS y mAP), pero estos valores no se incluyen en la ficha del modelo ni en los metadatos de Hugging Face. Para obtener datos de rendimiento, se recomienda consultar el artículo científico [arXiv:2303.11301](https://arxiv.org/abs/2303.11301).
 
 ## Requisitos de hardware
 

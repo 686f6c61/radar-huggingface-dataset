@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Verdict-Open-Jev, publicado en HuggingFace como heman10x/rlcd-modernbert-151m, es un modelo de decisión ligero y no autorregresivo construido sobre el backbone ModernBERT-base (151.378.176 parámetros). No genera texto libre: su función es asignar una etiqueta o decisión a una entrada a partir de un conjunto acotado de candidatos, con probabilidades calibradas y una opción explícita de abstención. Deriva del modelo knowledgator/gliclass-modern-base-v2.0, por lo que hereda el esquema de clasificación GLiClass sobre un encoder bidireccional.
+Verdict-Open-Jev, publicado en Hugging Face como heman10x/rlcd-modernbert-151m, es un modelo de decisión ligero y no autorregresivo construido sobre el backbone ModernBERT-base (151.378.176 parámetros). No genera texto libre: su función es asignar una etiqueta o decisión a una entrada a partir de un conjunto acotado de candidatos, con probabilidades calibradas y una opción explícita de abstención. Deriva del modelo knowledgator/gliclass-modern-base-v2.0, por lo que hereda el esquema de clasificación GLiClass sobre un encoder bidireccional.
 
 La propuesta diferencial es el despliegue en el cliente. El modelo se distribuye en safetensors y ONNX y está pensado para ejecutarse en el navegador mediante WebGPU o WASM, además de en local con PyTorch u ONNX Runtime. Eso permite tomar decisiones sin enviar los datos a un servidor, algo relevante para aplicaciones con requisitos de privacidad o latencia estrictos.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - Peso estimado en FP16/BF16: aproximadamente 303 MB.
 - Peso estimado en INT8: aproximadamente 151 MB.
 - Peso estimado en INT4: aproximadamente 76 MB.
-- Tamaño del repositorio en HuggingFace: 2,4 GB, previsiblemente por incluir varias exportaciones y formatos.
+- Tamaño del repositorio en Hugging Face: 2,4 GB, previsiblemente por incluir varias exportaciones y formatos.
 - GPU: no requiere GPU dedicada. Cabe sin problema en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) e incluso en CPU para inferencia en lote pequeño.
 - Ejecución en navegador: viable mediante WebGPU o WASM, sin backend adicional.
 - Opciones de despliegue: PyTorch (Transformers), ONNX Runtime, Transformers.js con WebGPU/WASM. vLLM, TGI y llama.cpp no aplican, ya que no es un modelo generativo autorregresivo.
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| heman10x/rlcd-modernbert-151m | 151,4M | No disponible (backbone ModernBERT hasta 8.192) | Clasificador/decisor no autorregresivo (GLiClass + ModernBERT) | Apache 2.0 | HuggingFace |
-| knowledgator/gliclass-modern-base-v2.0 | No disponible en la información | No disponible | Clasificador GLiClass (modelo base del anterior) | No disponible en la información | HuggingFace |
-| answerdotai/ModernBERT-base | ~149M | 8.192 tokens | Encoder bidireccional sin cabeza de tarea | Apache 2.0 | HuggingFace |
-| facebook/bart-large-mnli | ~407M | 1.024 tokens | Encoder-decoder para clasificación zero-shot vía NLI | MIT | HuggingFace |
+| heman10x/rlcd-modernbert-151m | 151,4M | No disponible (backbone ModernBERT hasta 8.192) | Clasificador/decisor no autorregresivo (GLiClass + ModernBERT) | Apache 2.0 | Hugging Face |
+| knowledgator/gliclass-modern-base-v2.0 | No disponible en la información | No disponible | Clasificador GLiClass (modelo base del anterior) | No disponible en la información | Hugging Face |
+| answerdotai/ModernBERT-base | ~149M | 8.192 tokens | Encoder bidireccional sin cabeza de tarea | Apache 2.0 | Hugging Face |
+| facebook/bart-large-mnli | ~407M | 1.024 tokens | Encoder-decoder para clasificación zero-shot vía NLI | MIT | Hugging Face |
 
 Nota: los datos de los modelos comparables corresponden a sus versiones públicas conocidas y no proceden de la información proporcionada en esta consulta; conviene verificarlos en sus respectivas fichas antes de tomar decisiones de producción. La comparación directa de rendimiento no es posible porque el modelo analizado no publica benchmarks.
 
@@ -97,6 +97,6 @@ Nota: los datos de los modelos comparables corresponden a sus versiones pública
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heman10x/rlcd-modernbert-151m
+- Modelo en Hugging Face: https://huggingface.co/heman10x/rlcd-modernbert-151m
 - Modelo base: https://huggingface.co/knowledgator/gliclass-modern-base-v2.0
 - La búsqueda web realizada no devolvió resultados relevantes para este modelo: los enlaces obtenidos correspondían a un sitio de servicios de seguros de salud sin relación con el modelo. No se han localizado papers, blogs, repositorios ni demos asociados en la información disponible.

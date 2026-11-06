@@ -4,7 +4,7 @@
 
 EfficientNet-B0 pizza vs steak es un clasificador binario de imagenes desarrollado por el usuario Ohunene como proyecto de aprendizaje, segun se indica en su propia model card. El modelo parte de un EfficientNet-B0 preentrenado en ImageNet (via torchvision) y sustituye la cabeza de clasificacion original por una nueva capa lineal con dropout y activacion sigmoide, ajustada mediante transfer learning en dos fases sobre un conjunto de imagenes de pizza y filete.
 
-El modelo resuelve una tarea muy acotada: dada una imagen, devolver la probabilidad de que corresponda a la clase "steak" (indice 1), siendo "pizza" la clase 0. No es un modelo de proposito general ni un modelo de lenguaje: es un checkpoint de vision por computador de tamano reducido (el repositorio ocupa 0.0 GB segun HuggingFace) orientado exclusivamente a esta clasificacion binaria.
+El modelo resuelve una tarea muy acotada: dada una imagen, devolver la probabilidad de que corresponda a la clase "steak" (indice 1), siendo "pizza" la clase 0. No es un modelo de proposito general ni un modelo de lenguaje: es un checkpoint de vision por computador de tamano reducido (el repositorio ocupa 0.0 GB segun Hugging Face) orientado exclusivamente a esta clasificacion binaria.
 
 Su relevancia es limitada y de caracter educativo: sirve como ejemplo minimo de transfer learning con PyTorch y como prueba de concepto de un pipeline de clasificacion de imagenes. No dispone de descargas ni likes en el momento de la consulta, y la model card lo presenta explicitamente como un proyecto de principiante.
 
@@ -66,7 +66,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8G u otr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ohunene/efficientnet-b0-pizza-steak | no disponible (base EfficientNet-B0) | no aplica | 99,80% en test propio | MIT | HuggingFace, 0 descargas |
+| Ohunene/efficientnet-b0-pizza-steak | no disponible (base EfficientNet-B0) | no aplica | 99,80% en test propio | MIT | Hugging Face, 0 descargas |
 | EfficientNet-B0 (ImageNet, torchvision) | ~5,3 M | no aplica | Clasificacion en 1000 clases ImageNet | BSD-3-Clause (torchvision) | Ampliamente disponible |
 | ResNet-50 (ImageNet) | ~25,6 M | no aplica | Clasificacion en 1000 clases ImageNet | BSD-3-Clause (torchvision) | Ampliamente disponible |
 
@@ -85,5 +85,5 @@ La comparativa con alternativas de la misma categoria es limitada: no se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ohunene/efficientnet-b0-pizza-steak
+- Modelo en Hugging Face: https://huggingface.co/Ohunene/efficientnet-b0-pizza-steak
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`KnightsAnalytics/tapas-base-finetuned-sqa` es un ajuste fino del modelo TAPAS en su variante base, publicado en HuggingFace por el usuario KnightsAnalytics bajo licencia Apache 2.0. TAPAS es una arquitectura de tipo transformer encoder, desarrollada originalmente por Google Research, disenada especificamente para responder preguntas en lenguaje natural sobre datos tabulares. El sufijo `sqa` hace referencia a Sequential Question Answering, un conjunto de datos en el que las preguntas se formulan de manera encadenada sobre una misma tabla, de modo que cada respuesta depende del contexto de las anteriores.
+`KnightsAnalytics/tapas-base-finetuned-sqa` es un ajuste fino del modelo TAPAS en su variante base, publicado en Hugging Face por el usuario KnightsAnalytics bajo licencia Apache 2.0. TAPAS es una arquitectura de tipo transformer encoder, desarrollada originalmente por Google Research, disenada especificamente para responder preguntas en lenguaje natural sobre datos tabulares. El sufijo `sqa` hace referencia a Sequential Question Answering, un conjunto de datos en el que las preguntas se formulan de manera encadenada sobre una misma tabla, de modo que cada respuesta depende del contexto de las anteriores.
 
 El modelo resuelve una tarea concreta: dado un enunciado en lenguaje natural y una tabla, localizar la celda o celdas que contienen la respuesta. A diferencia de los modelos de lenguaje generativos, su salida no es texto libre, sino indices de celdas dentro de la tabla de entrada, lo que reduce el riesgo de alucinacion numerica en contextos de datos estructurados.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: por debajo de 1 GB con los pesos ONNX en fp32 para un modelo de escala base; se reduce aproximadamente a la mitad si se aplica cuantizacion a int8.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria, incluidas GTX 1050 Ti, GTX 1650, RTX 3050 o superiores. No requiere aceleradores de gama alta.
 - Cabe en GPU de consumo: si, en practicamente cualquier tarjeta grafica dedicada de los ultimos ocho anos, y tambien en CPU con latencias aceptables para uso interactivo.
-- Opciones de despliegue: ONNX Runtime (CPU y GPU), HuggingFace Optimum, transformers.js y onnxruntime-web para ejecucion en navegador. No se distribuyen pesos en formato GGUF, por lo que llama.cpp y Ollama no son aplicables directamente.
+- Opciones de despliegue: ONNX Runtime (CPU y GPU), Hugging Face Optimum, transformers.js y onnxruntime-web para ejecucion en navegador. No se distribuyen pesos en formato GGUF, por lo que llama.cpp y Ollama no son aplicables directamente.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones de latencia ni de tokens por segundo, y en cualquier caso se trata de un modelo extractivo, no generativo, por lo que la metrica relevante seria el tiempo por consulta sobre una tabla dada.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ Los datos de parametros y contexto de los modelos de Google corresponden a infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KnightsAnalytics/tapas-base-finetuned-sqa
+- Modelo en Hugging Face: https://huggingface.co/KnightsAnalytics/tapas-base-finetuned-sqa
 - Checkpoint original de Google: https://huggingface.co/google/tapas-base-finetuned-sqa
 - Modelo base TAPAS de Google: https://huggingface.co/google/tapas-base
 - Articulo original de TAPAS (Herzig et al., 2020): https://arxiv.org/abs/2004.02349

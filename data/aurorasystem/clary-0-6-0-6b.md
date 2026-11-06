@@ -77,6 +77,6 @@ La principal diferencia de Clary frente a sus alternativas de tamano similar es 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AuroraSystem/Clary-0.6-0.6B
+- Repositorio Hugging Face: https://huggingface.co/AuroraSystem/Clary-0.6-0.6B
 - Version GGUF: https://huggingface.co/AuroraSystem/Clary-0.6-0.6B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B

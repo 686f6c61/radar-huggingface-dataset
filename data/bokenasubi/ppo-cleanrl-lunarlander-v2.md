@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como Bokenasubi/ppo-cleanrl-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v2 de Gymnasium. No se trata de un modelo de lenguaje ni de un modelo de propósito general: es una política entrenada especificamente para una tarea de control continuo-discreto en la que un modulo de aterrizaje debe posarse sobre una plataforma aplicando fuerzas sobre sus propulsores. El autor es el usuario de HuggingFace Bokenasubi y la implementacion de referencia declarada es CleanRL, la libreria de implementaciones de una sola archivo ampliamente usada en docencia de deep RL.
+El modelo identificado como Bokenasubi/ppo-cleanrl-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v2 de Gymnasium. No se trata de un modelo de lenguaje ni de un modelo de propósito general: es una política entrenada especificamente para una tarea de control continuo-discreto en la que un modulo de aterrizaje debe posarse sobre una plataforma aplicando fuerzas sobre sus propulsores. El autor es el usuario de Hugging Face Bokenasubi y la implementacion de referencia declarada es CleanRL, la libreria de implementaciones de una sola archivo ampliamente usada en docencia de deep RL.
 
 El entrenamiento se realizo con un presupuesto de 50.000 pasos de entorno, cuatro entornos en paralelo, un tamano de lote de 512 transiciones y 128 por minibatch, con learning rate de 0,00025 y annealing activado. Estos hiperparametros son coherentes con la configuracion tipica de CleanRL, aunque con un presupuesto de interacciones muy reducido: el resultado declarado en la model card es una recompensa media de -141,51 con una desviacion tipica de 48,25, lo que indica que la politica no ha convergido al umbral de resolucion del entorno.
 
@@ -49,7 +49,7 @@ No se documenta composicion de dataset porque no existe: el agente aprende exclu
 
 ## Casos de uso
 
-- Reproducibilidad de experimentos docentes: sirve como punto de referencia para el ejercicio de PPO de la unidad 8 del curso de deep RL de HuggingFace, permitiendo comparar los hiperparametros y la curva de recompensa con los de otros estudiantes.
+- Reproducibilidad de experimentos docentes: sirve como punto de referencia para el ejercicio de PPO de la unidad 8 del curso de deep RL de Hugging Face, permitiendo comparar los hiperparametros y la curva de recompensa con los de otros estudiantes.
 - Base para experimentos de ablation: dado que la configuracion esta completamente documentada, se puede reentrenar variando un solo hiperparametro (por ejemplo, total_timesteps de 50.000 a 1.000.000, o ent_coef) y medir el impacto en la recompensa media.
 - Validacion de pipelines de entrenamiento con CleanRL: se puede usar para comprobar que un entorno de ejecucion con CUDA, cuatro workers paralelos y logging a TensorBoard funciona correctamente antes de lanzar experimentos mas costosos.
 - Benchmark de infraestructura de RL: al ser un entorno ligero, permite medir el throughput de pasos por segundo de una maquina o de un orquestador de trabajos por lotes sin consumir presupuesto significativo.
@@ -81,7 +81,7 @@ Contexto de interpretacion: en LunarLander-v2 el umbral convencional de exito es
 | Modelo | Tipo | Entorno | Parametros | Resultado declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Bokenasubi/ppo-cleanrl-LunarLander-v2 | PPO (CleanRL) | LunarLander-v2 | no disponible | -141,51 +/- 48,25 (no verificado) | no disponible | 0 descargas, 0 likes, repo de 0,0 GB |
-| Yoko999/ppo-CleanRL-LunarLander-v2 | PPO (CleanRL) | LunarLander-v2 | no disponible | no disponible | no disponible | repositorio publico en HuggingFace |
+| Yoko999/ppo-CleanRL-LunarLander-v2 | PPO (CleanRL) | LunarLander-v2 | no disponible | no disponible | no disponible | repositorio publico en Hugging Face |
 | Agentes PPO de Stable-Baselines3 para LunarLander | PPO (SB3) | LunarLander-v2/v3 | no disponible | no disponible en la informacion recogida | MIT (la libreria) | ampliamente disponibles en la comunidad |
 
 La comparativa cuantitativa no es posible con los datos disponibles: no hay resultados publicados de los modelos alternativos en la informacion recogida y las fichas consultadas no detallan arquitectura ni tamano. La diferencia practica mas relevante es que las implementaciones de Stable-Baselines3 son librerias mantenidas con hiperparametros por defecto validados, mientras que esta ficha documenta un experimento individual con un presupuesto de entrenamiento muy inferior al habitual.
@@ -101,8 +101,8 @@ La comparativa cuantitativa no es posible con los datos disponibles: no hay resu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bokenasubi/ppo-cleanrl-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/Bokenasubi/ppo-cleanrl-LunarLander-v2
 - Modelo similar de otro autor: https://huggingface.co/Yoko999/ppo-CleanRL-LunarLander-v2
 - Notebook de PPO para LunarLander (kuds/rl-lunar-lander): https://colab.research.google.com/github/kuds/rl-lunar-lander/blob/main/%5BLunar%20Lander%5D%20Proximal%20Policy%20Optimization%20(PPO).ipynb
-- Notebook unidad 8 del curso de deep RL de HuggingFace: https://colab.research.google.com/github/huggingface/deep-rl-class/blob/main/notebooks/unit8/unit8_part1.ipynb
+- Notebook unidad 8 del curso de deep RL de Hugging Face: https://colab.research.google.com/github/huggingface/deep-rl-class/blob/main/notebooks/unit8/unit8_part1.ipynb
 - Repositorio CleanRL: https://github.com/vwxyzjn/cleanrl

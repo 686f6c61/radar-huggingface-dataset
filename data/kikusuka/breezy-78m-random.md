@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kikusuka/breezy-78m-random` es un modelo de generacion de texto de 94,7 millones de parametros publicado en HuggingFace por el usuario `kikusuka`. La etiqueta de arquitectura indica `llama`, aunque el nombre del repositorio sugiere que se trata de pesos inicializados aleatoriamente (el sufijo "random") y no de un modelo entrenado. La model card es una plantilla auto-generada por HuggingFace sin ningun dato tecnico, de entrenamiento o de evaluacion rellenado.
+`kikusuka/breezy-78m-random` es un modelo de generacion de texto de 94,7 millones de parametros publicado en Hugging Face por el usuario `kikusuka`. La etiqueta de arquitectura indica `llama`, aunque el nombre del repositorio sugiere que se trata de pesos inicializados aleatoriamente (el sufijo "random") y no de un modelo entrenado. La model card es una plantilla auto-generada por Hugging Face sin ningun dato tecnico, de entrenamiento o de evaluacion rellenado.
 
 El modelo no tiene descargas, ni licencia declarada, ni informacion sobre idiomas soportados. Su relevancia actual es practicamente nula para uso en produccion: al carecer de documentacion, de datos de entrenamiento y de benchmarks, cualquier integracion en un sistema real seria arriesgada. Es probable que se trate de un experimento de inicializacion de pesos o de un placeholder para pruebas tecnicas de infraestructura (por ejemplo, validar pipelines de `text-generation-inference` o `transformers`).
 
@@ -10,7 +10,7 @@ El modelo no tiene descargas, ni licencia declarada, ni informacion sobre idioma
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Llama (segun etiqueta de HuggingFace) |
+| Arquitectura | Llama (segun etiqueta de Hugging Face) |
 | Parametros totales | 94.788.096 (94,7 M) |
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -83,7 +83,7 @@ La comparacion de rendimiento no es posible porque `breezy-78m-random` no tiene 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kikusuka/breezy-78m-random
+- Modelo en Hugging Face: https://huggingface.co/kikusuka/breezy-78m-random
 - Repositorio del autor en GitHub (Breezy Assistant 4): https://github.com/kikusuka/BreezyAssistant4
 - Otro modelo del mismo autor (breeze-flick-v2): https://huggingface.co/kikusuka/breezy-flick-v2
 - Modelo relacionado (breezy-flick-phase3-sft-round2): https://huggingface.co/kikusuka/breezy-flick-phase3-sft-round2

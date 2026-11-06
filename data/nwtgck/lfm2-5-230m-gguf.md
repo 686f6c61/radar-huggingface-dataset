@@ -17,7 +17,7 @@ Al ser un modelo de 230 millones de parámetros, su utilidad está en tareas aco
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF Q4_0 post-entrenamiento y GGUF Q4_0 obtenido por QAD (Quantization-Aware Distillation); no se documentan otros niveles en la informacion disponible |
 | Idiomas soportados | en, ar, zh, fr, de, ja, ko, es, pt, it (10 idiomas declarados) |
-| Licencia | lfm1.0 (Liquid AI LFM Open License v1.0), etiquetada como "other" en HuggingFace |
+| Licencia | lfm1.0 (Liquid AI LFM Open License v1.0), etiquetada como "other" en Hugging Face |
 | Formato de pesos | GGUF (llama.cpp); el modelo base original esta en safetensors |
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Modelo base | LiquidAI/LFM2.5-230M |
@@ -73,7 +73,7 @@ Los datos de los modelos comparados proceden de la documentación pública de ca
 |---|---|---|---|---|
 | nwtgck/LFM2.5-230M-GGUF (esta ficha) | 229,7 M | no disponible | lfm1.0 | GGUF |
 | LiquidAI/LFM2.5-230M (base) | 229,7 M | no disponible | lfm1.0 | safetensors |
-| SmolLM2-360M-Instruct (HuggingFace) | 362 M | 8.192 tokens | Apache 2.0 | safetensors, GGUF |
+| SmolLM2-360M-Instruct (Hugging Face) | 362 M | 8.192 tokens | Apache 2.0 | safetensors, GGUF |
 | Qwen2.5-0.5B-Instruct (Alibaba) | 494 M | 32.768 tokens | Apache 2.0 (la mayoría de variantes) | safetensors, GGUF |
 | Gemma 3 270M (Google) | 268 M | 32.768 tokens | Gemma Terms of Use | safetensors, GGUF |
 
@@ -96,7 +96,7 @@ Diferencias clave: frente a SmolLM2 y Qwen2.5, la licencia lfm1.0 es una licenci
 - Modelo base original: https://huggingface.co/LiquidAI/LFM2.5-230M
 - Repositorio GGUF oficial de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-230M-GGUF
 - Fichero QAD Q4_0: https://huggingface.co/LiquidAI/LFM2.5-230M-GGUF/blob/main/LFM2.5-230M-QAD-Q4_0.gguf
-- Licencia del modelo: LICENSE (en el repositorio de HuggingFace)
+- Licencia del modelo: LICENSE (en el repositorio de Hugging Face)
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Playground de Liquid AI: https://playground.liquid.ai/
 - Documentación de LFM: https://docs.liquid.ai/lfm/getting-started/welcome

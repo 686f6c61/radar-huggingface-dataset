@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nullmega/Mellum2.1-12B-A2.5B-Thinking-DevSec-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Nullmega/Mellum2.1-12B-A2.5B-Thinking-DevSec-GGUF
 - Modelo base: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking
 - llama.cpp (revisión fijada): https://github.com/ggml-org/llama.cpp/tree/149f5641b931aaf33697d70f9abc90c3e5300247
 - Dataset NVIDIA Open-SWE-Traces: https://huggingface.co/datasets/nvidia/Open-SWE-Traces

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Ming-3.0-tts-0.5B es un modelo denso de síntesis de voz (text-to-speech) desarrollado por la organización inclusionAI, publicado en HuggingFace el 22 de septiembre de 2026 y actualizado el 19 de octubre del mismo año. Se presenta como un sistema de TTS multilingüe con control paralingüístico y en lenguaje natural, construido sobre un backbone Qwen2.5-0.5B al que se añaden una cabeza DiT, un tokenizador de audio, un codificador de hablante y un tokenizador de texto. Genera audio a 44,1 kHz, una frecuencia de muestreo superior a la habitual (24 kHz) en la mayoría de modelos TTS abiertos de su categoría.
+Ming-3.0-tts-0.5B es un modelo denso de síntesis de voz (text-to-speech) desarrollado por la organización inclusionAI, publicado en Hugging Face el 22 de septiembre de 2026 y actualizado el 19 de octubre del mismo año. Se presenta como un sistema de TTS multilingüe con control paralingüístico y en lenguaje natural, construido sobre un backbone Qwen2.5-0.5B al que se añaden una cabeza DiT, un tokenizador de audio, un codificador de hablante y un tokenizador de texto. Genera audio a 44,1 kHz, una frecuencia de muestreo superior a la habitual (24 kHz) en la mayoría de modelos TTS abiertos de su categoría.
 
 El modelo cubre siete idiomas (chino, inglés, alemán, español, francés, coreano y japonés), admite los dialectos chinos de Sichuan y cantonés, y ofrece clonación de voz zero-shot a partir de una referencia corta, diseño de voz mediante descripción textual y control explícito de emoción, velocidad, tono y volumen, además de 14 etiquetas en línea para sonidos como respiración, tos, suspiro o risa.
 
-Su relevancia actual radica en la combinación de licencia MIT, un tamaño contenido y un conjunto amplio de controles de estilo, lo que lo hace apto para despliegue en infraestructura moderada. Conviene tener en cuenta que el repositorio de HuggingFace es únicamente de distribución del checkpoint: la inferencia exige clonar el repositorio de GitHub del proyecto y usar su código (`ming_tts.MingTTS` o `infer.py`), dado que el modelo incluye código personalizado (`custom_code`).
+Su relevancia actual radica en la combinación de licencia MIT, un tamaño contenido y un conjunto amplio de controles de estilo, lo que lo hace apto para despliegue en infraestructura moderada. Conviene tener en cuenta que el repositorio de Hugging Face es únicamente de distribución del checkpoint: la inferencia exige clonar el repositorio de GitHub del proyecto y usar su código (`ming_tts.MingTTS` o `infer.py`), dado que el modelo incluye código personalizado (`custom_code`).
 
 ## Especificaciones técnicas
 
@@ -28,7 +28,7 @@ Su relevancia actual radica en la combinación de licencia MIT, un tamaño conte
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es densa y no sigue el patrón MoE. El núcleo generativo es un transformer Qwen2.5-0.5B, sobre el que se monta una cabeza DiT (Diffusion Transformer) para la generación de audio, junto con un tokenizador de audio propio, un codificador de hablante y un tokenizador de texto. El checkpoint distribuido en HuggingFace contiene los cinco componentes, lo que explica que el total de parámetros (≈1,48 mil millones) triplique aproximadamente el tamaño del backbone. La síntesis se organiza en tareas diferenciadas (`TTS`, `FREEFORM`, `VOICE_DESIGN`, `MULTILINGUAL`, `BASIC`, `EMOTION`, `DIALECT`, `IP`) con API Python y CLI propios.
+La arquitectura es densa y no sigue el patrón MoE. El núcleo generativo es un transformer Qwen2.5-0.5B, sobre el que se monta una cabeza DiT (Diffusion Transformer) para la generación de audio, junto con un tokenizador de audio propio, un codificador de hablante y un tokenizador de texto. El checkpoint distribuido en Hugging Face contiene los cinco componentes, lo que explica que el total de parámetros (≈1,48 mil millones) triplique aproximadamente el tamaño del backbone. La síntesis se organiza en tareas diferenciadas (`TTS`, `FREEFORM`, `VOICE_DESIGN`, `MULTILINGUAL`, `BASIC`, `EMOTION`, `DIALECT`, `IP`) con API Python y CLI propios.
 
 No se han publicado en la información disponible detalles sobre el volumen de datos de entrenamiento, la composición del corpus, ni sobre si se aplicaron etapas de RLHF o DPO. Sí se documenta el preprocesado de texto: la normalización de números, fechas, unidades y símbolos se realiza mediante gramáticas FST implementadas con `pynini` 2.1.6, con la posibilidad de desactivarla (`--no_text_normalization`). En el plano técnico destacan dos elementos: el control en lenguaje natural (instrucciones libres de estilo y diseño de voz) y la inclusión de 14 etiquetas en línea que modelan sonidos paralingüísticos en chino e inglés. La inferencia se ha validado en NVIDIA H800-80GB y H20-96G con CUDA 12.4; `flash-attn` es opcional y, en su ausencia, se recurre a PyTorch SDPA.
 
@@ -73,7 +73,7 @@ No se han publicado en la información disponible resultados numéricos adiciona
 - GPU de consumo: por la horquilla de VRAM estimada, el modelo debería caber en tarjetas de 12 GB o más (RTX 3060 12GB, RTX 4070 Ti, RTX 4080, RTX 4090). No hay confirmación oficial de funcionamiento en estas tarjetas en la información disponible.
 - Aceleración: `flash-attn` es opcional; sin él se usa PyTorch SDPA, lo que reduce los requisitos de compilación a costa de eficiencia.
 - Dependencias adicionales: `pynini` 2.1.6 (canal conda-forge) para la normalización de texto, o bien `--no_text_normalization` para omitirla.
-- Despliegue: el proyecto no documenta soporte para vLLM, llama.cpp, Ollama ni TGI. La vía soportada es el repositorio de GitHub (`infer.py` como CLI y `ming_tts.MingTTS` como API Python). El repositorio de HuggingFace incluye artefactos ONNX, pero no se detalla en la información disponible el flujo de exportación ni el runtime recomendado.
+- Despliegue: el proyecto no documenta soporte para vLLM, llama.cpp, Ollama ni TGI. La vía soportada es el repositorio de GitHub (`infer.py` como CLI y `ming_tts.MingTTS` como API Python). El repositorio de Hugging Face incluye artefactos ONNX, pero no se detalla en la información disponible el flujo de exportación ni el runtime recomendado.
 - Verificación previa del checkpoint: `python tools/preflight.py --model_path /ruta/al/checkpoint`.
 - Latencia y throughput: no disponibles.
 
@@ -83,7 +83,7 @@ La información proporcionada solo identifica comparaciones frente a modelos de 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ming-3.0-tts-0.5B | 1.479.454.868 en total (backbone 0,5B) | No disponible | MIT | HuggingFace, ModelScope, GitHub |
+| Ming-3.0-tts-0.5B | 1.479.454.868 en total (backbone 0,5B) | No disponible | MIT | Hugging Face, ModelScope, GitHub |
 | CosyVoice 2 (alternativa de escala similar, datos no verificados en esta ficha) | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | Repositorio público |
 | F5-TTS (alternativa de escala similar, datos no verificados en esta ficha) | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | Repositorio público |
 
@@ -91,7 +91,7 @@ No disponible: no se han proporcionado datos comparativos verificables (parámet
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no es autónomo: sin clonar el repositorio de GitHub no hay código de inferencia, dependencias ni instrucciones de uso actualizadas.
+- El repositorio de Hugging Face no es autónomo: sin clonar el repositorio de GitHub no hay código de inferencia, dependencias ni instrucciones de uso actualizadas.
 - El modelo depende de `custom_code`, lo que complica su integración en runtimes estándar y en plataformas de serving que no admitan código personalizado.
 - No se han publicado volúmenes de entrenamiento, composición del corpus ni detalles de alineación (RLHF/DPO); la evaluación de sesgos y de calidad en dominios concretos queda en manos del usuario.
 - Riesgo de alucinación acústica y de errores de pronunciación en textos con abundantes cifras, unidades o símbolos si se desactiva la normalización FST.
@@ -104,7 +104,7 @@ No disponible: no se han proporcionado datos comparativos verificables (parámet
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B
+- Hugging Face: https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B
 - GitHub del proyecto (requerido para inferencia): https://github.com/inclusionAI/Ming-3.0-tts
 - Blog y demos: https://nomorecoding.github.io/Ming-3.0-tts/
 - ModelScope: https://modelscope.cn/models/inclusionAI/Ming-3.0-tts-0.5b

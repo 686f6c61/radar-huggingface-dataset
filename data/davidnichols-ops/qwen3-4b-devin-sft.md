@@ -81,7 +81,7 @@ La comparativa directa con otros fine-tunes de tool calling de tamaño similar n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidnichols-ops/qwen3-4b-devin-sft
+- Modelo en Hugging Face: https://huggingface.co/davidnichols-ops/qwen3-4b-devin-sft
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Modelo borrador para decodificación especulativa: https://huggingface.co/davidnichols-ops/qwen3-0.6b-devin-draft
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

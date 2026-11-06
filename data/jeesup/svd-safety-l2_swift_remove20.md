@@ -109,7 +109,7 @@ Las cifras de los modelos alternativos proceden de su documentación pública y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_swift_remove20
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_swift_remove20
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper de Llama 2: https://arxiv.org/abs/2307.09288
 - SVD-LLM (método de compresión referenciado en la model card): https://arxiv.org/abs/2403.07378

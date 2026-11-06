@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Smilyai-3rd-gen es un modelo publicado por el usuario Smilyai-labs-beta-testers en HuggingFace, con fecha de creación del 20 de agosto de 2026. Se presenta bajo una licencia personalizada denominada "smilyai-beta-testers", lo que sugiere que se trata de una versión preliminar o de pruebas destinada a un grupo reducido de evaluadores. No se dispone de información pública sobre su arquitectura, tamaño, capacidades o datos de entrenamiento, ya que la model card únicamente incluye el aviso de licencia y no contiene especificaciones técnicas.
+Smilyai-3rd-gen es un modelo publicado por el usuario Smilyai-labs-beta-testers en Hugging Face, con fecha de creación del 20 de agosto de 2026. Se presenta bajo una licencia personalizada denominada "smilyai-beta-testers", lo que sugiere que se trata de una versión preliminar o de pruebas destinada a un grupo reducido de evaluadores. No se dispone de información pública sobre su arquitectura, tamaño, capacidades o datos de entrenamiento, ya que la model card únicamente incluye el aviso de licencia y no contiene especificaciones técnicas.
 
 La relevancia de este modelo es, por ahora, limitada: al no existir documentación técnica ni resultados de evaluación, no es posible determinar su utilidad práctica ni compararlo con alternativas existentes. Su publicación bajo una licencia restrictiva y sin datos de rendimiento lo convierte en un candidato poco adecuado para entornos de producción o investigación seria hasta que se publique información adicional.
 
@@ -47,10 +47,10 @@ No disponible. No se conocen modelos comparables de la misma categoría, ya que 
 
 - La licencia "smilyai-beta-testers" es una licencia personalizada no estándar. No se especifican los términos de uso, lo que impide conocer si permite uso comercial, modificación o redistribución. Se debe contactar con el autor antes de cualquier uso.
 - No existe documentación técnica, por lo que se desconoce si el modelo presenta sesgos, riesgo de alucinación o limitaciones de contexto o idioma.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido evaluado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido evaluado por la comunidad.
 - Al ser una versión "beta" destinada a testers, es probable que contenga errores o comportamientos no deseados. No es apto para producción.
 - La fecha de creación (2026) es futura en relación a la fecha actual, lo que podría indicar un error en los metadatos o un modelo aún no lanzado oficialmente.
 
 ## Enlaces
 
-- [HuggingFace - Smilyai-labs-beta-testers/Smilyai-3rd-gen](https://huggingface.co/Smilyai-labs-beta-testers/Smilyai-3rd-gen)
+- [Hugging Face - Smilyai-labs-beta-testers/Smilyai-3rd-gen](https://huggingface.co/Smilyai-labs-beta-testers/Smilyai-3rd-gen)

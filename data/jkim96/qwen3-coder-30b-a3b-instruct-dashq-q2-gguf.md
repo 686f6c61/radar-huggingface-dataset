@@ -82,13 +82,13 @@ La comparativa natural se establece con las otras cuantizaciones de 2 bits del m
 
 | Modelo | Tamano | WikiText-2 | C4 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DASH-Q IQ2_XXS | 10,31 GB | 8,58 | 14,51 | apache-2.0 | HuggingFace (jkim96) |
-| unsloth UD-IQ2_XXS | 10,33 GB | 8,40 | 14,23 | apache-2.0 (heredada) | HuggingFace (unsloth) |
-| llama.cpp IQ2_XXS (imatrix) | 8,18 GB | 11,01 | 18,89 | apache-2.0 (heredada) | HuggingFace (varios) |
-| DASH-Q IQ2_M | 10,81 GB | 8,38 | 14,37 | apache-2.0 | HuggingFace (jkim96) |
-| unsloth UD-IQ2_M | 10,84 GB | 8,34 | 14,15 | apache-2.0 (heredada) | HuggingFace (unsloth) |
-| DASH-Q Q2_K_XL | 11,68 GB | 8,43 | 14,37 | apache-2.0 | HuggingFace (jkim96) |
-| unsloth UD-Q2_K_XL | 11,79 GB | 8,43 | 14,37 | apache-2.0 (heredada) | HuggingFace (unsloth) |
+| DASH-Q IQ2_XXS | 10,31 GB | 8,58 | 14,51 | apache-2.0 | Hugging Face (jkim96) |
+| unsloth UD-IQ2_XXS | 10,33 GB | 8,40 | 14,23 | apache-2.0 (heredada) | Hugging Face (unsloth) |
+| llama.cpp IQ2_XXS (imatrix) | 8,18 GB | 11,01 | 18,89 | apache-2.0 (heredada) | Hugging Face (varios) |
+| DASH-Q IQ2_M | 10,81 GB | 8,38 | 14,37 | apache-2.0 | Hugging Face (jkim96) |
+| unsloth UD-IQ2_M | 10,84 GB | 8,34 | 14,15 | apache-2.0 (heredada) | Hugging Face (unsloth) |
+| DASH-Q Q2_K_XL | 11,68 GB | 8,43 | 14,37 | apache-2.0 | Hugging Face (jkim96) |
+| unsloth UD-Q2_K_XL | 11,79 GB | 8,43 | 14,37 | apache-2.0 (heredada) | Hugging Face (unsloth) |
 
 Comparativas frente a modelos de otros desarrolladores: no disponibles en la informacion proporcionada.
 
@@ -105,8 +105,8 @@ Comparativas frente a modelos de otros desarrolladores: no disponibles en la inf
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/jkim96/Qwen3-Coder-30B-A3B-Instruct-DASHQ-Q2-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
+- Pagina del modelo en Hugging Face: https://huggingface.co/jkim96/Qwen3-Coder-30B-A3B-Instruct-DASHQ-Q2-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Repositorio DASH-Q: https://github.com/JaeminK/dashq
 - Banner de DASH-Q: https://raw.githubusercontent.com/JaeminK/dashq/main/assets/dashq_banner.png
 - Otros enlaces (papers, blogs, demos): no disponibles en la informacion proporcionada.

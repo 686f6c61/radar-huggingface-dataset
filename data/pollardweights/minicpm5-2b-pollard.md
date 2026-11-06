@@ -48,9 +48,9 @@ No se dispone de información suficiente para una comparativa rigurosa. En el pe
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiniCPM5-2B-Pollard | 2.516.756.480 | No disponible | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B-Instruct-Pollard | No disponible | No disponible | No disponible | HuggingFace |
-| openbmb/MiniCPM5-2B (base) | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| MiniCPM5-2B-Pollard | 2.516.756.480 | No disponible | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B-Instruct-Pollard | No disponible | No disponible | No disponible | Hugging Face |
+| openbmb/MiniCPM5-2B (base) | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 - El modelo solo está documentado para inglés; no se garantiza un rendimiento adecuado en otros idiomas.
@@ -61,7 +61,7 @@ No se dispone de información suficiente para una comparativa rigurosa. En el pe
 - La licencia Apache 2.0 permite uso comercial, pero no incluye garantías de rendimiento ni soporte técnico.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/PollardWeights/MiniCPM5-2B-Pollard
+- Repositorio en Hugging Face: https://huggingface.co/PollardWeights/MiniCPM5-2B-Pollard
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Repositorio de Pollard Weights: https://github.com/WestWaters/pollard-weights
 - Repositorio de ik_llama.cpp: https://github.com/ikawrakow/ik_llama.cpp

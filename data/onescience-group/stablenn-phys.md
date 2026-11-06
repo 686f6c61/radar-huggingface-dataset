@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/StableNN-Phys
+- Hugging Face: https://huggingface.co/OneScience-Group/StableNN-Phys
 - Paper: https://doi.org/10.1029/2018GL078510
 - OneScience Gitee: https://gitee.com/onescience-ai/onescience
 - OneScience GitHub: https://github.com/onescience-ai/OneScience

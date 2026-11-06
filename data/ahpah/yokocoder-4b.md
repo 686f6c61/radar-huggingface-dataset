@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YokoCoder-4B es un ajuste fino (fine-tune) orientado a programación sobre Qwen3.5-4B en su variante "abliterated", es decir, con los mecanismos de rechazo suavizados o eliminados por el autor intermedio wangzhang. Lo publica el usuario ahpah en HuggingFace y se distribuye principalmente como GGUF cuantizado en Q4_K_M, con un peso de descarga de aproximadamente 2,7 GB, lo que lo convierte en un modelo pensado para ejecución local en hardware modesto mediante Ollama.
+YokoCoder-4B es un ajuste fino (fine-tune) orientado a programación sobre Qwen3.5-4B en su variante "abliterated", es decir, con los mecanismos de rechazo suavizados o eliminados por el autor intermedio wangzhang. Lo publica el usuario ahpah en Hugging Face y se distribuye principalmente como GGUF cuantizado en Q4_K_M, con un peso de descarga de aproximadamente 2,7 GB, lo que lo convierte en un modelo pensado para ejecución local en hardware modesto mediante Ollama.
 
 El modelo parte de la arquitectura de Qwen3.5-4B (transformer denso de 4.205.751.296 parámetros según los safetensors del repositorio) y se ha entrenado en tres fases según la model card: un fine-tune inicial de código, tres épocas adicionales sobre ejemplos de generación del juego Flappy Bird y cinco épocas más sobre un conjunto de 12 ejemplos de código (28 ventanas de entrenamiento). El resultado es un checkpoint pequeño, con licencia Apache 2.0 y contexto configurado a 16.384 tokens en el Modelfile incluido.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: aproximadamente 3 GB para el GGUF Q4_K_M (2,7 GB de archivo más overhead de contexto); en torno a 8-9 GB para los pesos en safetensors en precisión completa (bf16/fp16).
 - GPU recomendadas: cualquier GPU consumer con 4 GB o más de VRAM para la versión Q4_K_M (GTX 1650, RTX 3050, RTX 4060); para safetensors en precisión completa se recomienda RTX 3060 de 12 GB o superior.
 - Cabe en GPU consumer: sí, en la mayoría de tarjetas con 4 GB o más para la cuantización Q4_K_M; también es viable en CPU.
-- Opciones de despliegue: Ollama (con el Modelfile incluido), llama.cpp y otros runtimes compatibles con GGUF de Qwen3.5; para safetensors, frameworks estándar de HuggingFace Transformers.
+- Opciones de despliegue: Ollama (con el Modelfile incluido), llama.cpp y otros runtimes compatibles con GGUF de Qwen3.5; para safetensors, frameworks estándar de Hugging Face Transformers.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahpah/YokoCoder-4B
+- Modelo en Hugging Face: https://huggingface.co/ahpah/YokoCoder-4B
 - Modelo base abliterated: https://huggingface.co/wangzhang/Qwen3.5-4B-abliterated
 - Modelo original: https://huggingface.co/Qwen/Qwen3.5-4B
 - Model card upstream incluida en el repositorio: `UPSTREAM_MODEL_CARD.md`

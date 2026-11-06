@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hellpak/gemmsa` es un repositorio publicado en HuggingFace por el usuario `hellpak` bajo la licencia Gemma. La información disponible es extremadamente limitada: no existe una model card descriptiva más allá de la declaración de licencia, no se han publicado detalles sobre arquitectura, entrenamiento, capacidades o rendimiento, y el repositorio no registra descargas ni interacciones de la comunidad. El nombre del repositorio sugiere una posible relación con la familia Gemma de Google DeepMind, pero no hay evidencia en el propio repositorio que lo confirme. La fecha de creación es el 25 de agosto de 2026, lo que indica que se trata de una publicación muy reciente y, por el momento, sin documentación técnica pública.
+El modelo `hellpak/gemmsa` es un repositorio publicado en Hugging Face por el usuario `hellpak` bajo la licencia Gemma. La información disponible es extremadamente limitada: no existe una model card descriptiva más allá de la declaración de licencia, no se han publicado detalles sobre arquitectura, entrenamiento, capacidades o rendimiento, y el repositorio no registra descargas ni interacciones de la comunidad. El nombre del repositorio sugiere una posible relación con la familia Gemma de Google DeepMind, pero no hay evidencia en el propio repositorio que lo confirme. La fecha de creación es el 25 de agosto de 2026, lo que indica que se trata de una publicación muy reciente y, por el momento, sin documentación técnica pública.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ No es posible realizar una comparativa con modelos similares, ya que no se conoc
 
 ## Enlaces
 
-- Repositorio HuggingFace: [hellpak/gemmsa](https://huggingface.co/hellpak/gemmsa)
+- Repositorio Hugging Face: [hellpak/gemmsa](https://huggingface.co/hellpak/gemmsa)
 - Página de Gemma de Google DeepMind: [Gemma — Google DeepMind](https://deepmind.google/models/gemma/)
 - Página de Gemmaverse: [Gemmaverse — Google DeepMind](https://deepmind.google/models/gemma/gemmaverse/)
 - Web de Gemma 3 AI (no oficial): [https://gemma3.ai/](https://gemma3.ai/)

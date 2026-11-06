@@ -80,7 +80,7 @@ No se han publicado comparaciones directas con otros modelos en la información 
 |---|---|---|---|---|
 | Samarkand-253M | 253,6M | 2048 | Apache 2.0 | Entrenado desde cero en JAX/TPU, layout Qwen3, GGUF f16 |
 | Qwen3-0.6B (base) | ~600M | 32768 | Apache 2.0 | Mayor capacidad y contexto, mismo ecosistema de carga |
-| SmolLM2-135M | 135M | 2048 | Apache 2.0 | Modelo base pequeño de HuggingFace, similar en filosofía de datos abiertos |
+| SmolLM2-135M | 135M | 2048 | Apache 2.0 | Modelo base pequeño de Hugging Face, similar en filosofía de datos abiertos |
 
 Samarkand-253M se sitúa entre los modelos base abiertos de menos de 500M parámetros; su ventaja diferencial es la trazabilidad completa del entrenamiento (datos, tokenizador y framework documentados) y la compatibilidad directa con el ecosistema Qwen3, aunque su contexto de 2048 tokens es limitado frente a alternativas recientes.
 
@@ -97,7 +97,7 @@ Samarkand-253M se sitúa entre los modelos base abiertos de menos de 500M parám
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Meridian-MRM/Samarkand-253m
+- Hugging Face: https://huggingface.co/Meridian-MRM/Samarkand-253m
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness
 - ArithMark: https://github.com/AxiomicLabs/ArithMark
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

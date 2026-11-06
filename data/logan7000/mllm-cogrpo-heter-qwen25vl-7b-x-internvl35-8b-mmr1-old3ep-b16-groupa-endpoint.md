@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `logan7000/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupA-endpoint` es un fine-tuning del modelo multimodal Qwen2.5-VL-7B-Instruct, entrenado con el algoritmo GRPO (Group Relative Policy Optimization) mediante la librería TRL de HuggingFace. El nombre del repositorio sugiere un entrenamiento heterogéneo que combina Qwen2.5-VL-7B e InternVL3.5-8B, aunque no se proporciona documentación detallada al respecto. El modelo está orientado a tareas de razonamiento visual y textual, y su pipeline declarado es `image-text-to-text`, lo que indica que acepta tanto imágenes como texto como entrada.
+El modelo `logan7000/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupA-endpoint` es un fine-tuning del modelo multimodal Qwen2.5-VL-7B-Instruct, entrenado con el algoritmo GRPO (Group Relative Policy Optimization) mediante la librería TRL de Hugging Face. El nombre del repositorio sugiere un entrenamiento heterogéneo que combina Qwen2.5-VL-7B e InternVL3.5-8B, aunque no se proporciona documentación detallada al respecto. El modelo está orientado a tareas de razonamiento visual y textual, y su pipeline declarado es `image-text-to-text`, lo que indica que acepta tanto imágenes como texto como entrada.
 
 La relevancia de este modelo radica en que aplica técnicas de optimización por refuerzo (GRPO) a un modelo de visión-lenguaje de última generación, un enfoque que ha demostrado mejorar el razonamiento matemático y lógico en modelos de lenguaje. Sin embargo, la información pública es muy limitada: no se especifican datos de entrenamiento, benchmarks, licencia ni idiomas soportados, lo que dificulta una evaluación rigurosa. El repositorio tiene solo 29 descargas y 0 likes, lo que sugiere que es un experimento de investigación más que un modelo consolidado para producción.
 
@@ -66,7 +66,7 @@ No se dispone de datos de rendimiento para comparar directamente. El modelo es u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupA-endpoint
+- Repositorio Hugging Face: https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupA-endpoint
 - Modelo base Qwen2.5-VL-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Repositorio TRL: https://github.com/huggingface/trl

@@ -6,7 +6,7 @@ Yotsuba-Q2_K-GGUF es una cuantización en formato GGUF del modelo Yotsuba, desar
 
 La relevancia de esta ficha es doble. Por un lado, documenta un caso de cuantización Q2_K de un modelo de 7,6B, un nivel de compresión agresivo que reduce el peso a unos 3 GB y permite ejecución en hardware muy modesto. Por otro, el modelo original está sujeto a acceso restringido (gated) por su potencial impacto dañino, y la model card limita explícitamente el acceso a investigadores verificables, instituciones y equipos de ingeniería de seguridad. Esta cuantización concreta, publicada en abierto, plantea una tensión evidente con esa restricción de acceso.
 
-La información disponible sobre arquitectura interna, datos de entrenamiento y benchmarks es muy limitada: la model card del repositorio cuantizado remite a la del modelo base y no incluye detalles técnicos adicionales. Los datos de esta ficha proceden de los metadatos de HuggingFace y de la model card citada.
+La información disponible sobre arquitectura interna, datos de entrenamiento y benchmarks es muy limitada: la model card del repositorio cuantizado remite a la del modelo base y no incluye detalles técnicos adicionales. Los datos de esta ficha proceden de los metadatos de Hugging Face y de la model card citada.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ La comparación con Mistral-7B y Llama-3.1-8B es únicamente por rango de parám
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/u84u/Yotsuba-Q2_K-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/u84u/Yotsuba-Q2_K-GGUF
 - Modelo base: https://huggingface.co/frzr-labs/Yotsuba
 - Dataset de entrenamiento: https://huggingface.co/datasets/frzr-labs/4chan-pol
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo

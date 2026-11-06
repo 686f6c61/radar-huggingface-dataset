@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ryanevanssu/tiny-transformer-contrastive` es una implementacion experimental de un Tiny Transformer orientado a tareas de aprendizaje contrastivo, publicado por el usuario ryanevanssu en HuggingFace. Se trata de un artefacto de codigo mas que de un modelo entrenado: el propio autor indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y no un checkpoint con entrenamiento o evaluacion completados.
+El modelo `ryanevanssu/tiny-transformer-contrastive` es una implementacion experimental de un Tiny Transformer orientado a tareas de aprendizaje contrastivo, publicado por el usuario ryanevanssu en Hugging Face. Se trata de un artefacto de codigo mas que de un modelo entrenado: el propio autor indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y no un checkpoint con entrenamiento o evaluacion completados.
 
 El modelo es extremadamente pequeno: 16.576 parametros totales segun los metadatos del archivo safetensors, con un tamano de repositorio de 0,0 GB. La configuracion declarada corresponde a una escala "base" con atencion lineal, fusion tensorial (tensor fusion), activacion mish y normalizacion layernorm, lo que sugiere un diseno hibrido pensado para combinar dos ramas de representacion mediante fusion tensorial en lugar de una concatenacion simple.
 
@@ -86,5 +86,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryanevanssu/tiny-transformer-contrastive
+- Modelo en Hugging Face: https://huggingface.co/ryanevanssu/tiny-transformer-contrastive
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web realizada no arrojo ningun resultado relevante sobre este modelo.

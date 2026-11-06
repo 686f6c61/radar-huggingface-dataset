@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rey-etyl/neural-architecture-search-study` es un repositorio de HuggingFace que, pese a las etiquetas `safetensors` y `transformer`, no contiene un modelo entrenado ni pesos utilizables para inferencia. Se trata de un cuaderno de notas de lectura y de un esbozo de experimento sobre Neural Architecture Search (NAS), descrito por el propio autor como exploratorio. El artefacto principal es `reading.md`, acompañado de un `README.md`; no hay código liberado, ni checkpoint, ni resultados de ablaciones.
+`rey-etyl/neural-architecture-search-study` es un repositorio de Hugging Face que, pese a las etiquetas `safetensors` y `transformer`, no contiene un modelo entrenado ni pesos utilizables para inferencia. Se trata de un cuaderno de notas de lectura y de un esbozo de experimento sobre Neural Architecture Search (NAS), descrito por el propio autor como exploratorio. El artefacto principal es `reading.md`, acompañado de un `README.md`; no hay código liberado, ni checkpoint, ni resultados de ablaciones.
 
 Los metadatos de safetensors registran 33.088 parámetros totales, pero el tamano del repositorio es de 0,0 GB y el pipeline no está definido, lo que es coherente con un fichero de metadatos o un artefacto simbólico más que con un modelo funcional. La model card es explícita al respecto: "does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint".
 
@@ -76,7 +76,7 @@ No disponible. Este repositorio no es un modelo desplegable, por lo que no exist
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rey-etyl/neural-architecture-search-study
+- Hugging Face: https://huggingface.co/rey-etyl/neural-architecture-search-study
 - Artefacto principal citado en la model card: `reading.md` (dentro del propio repositorio)
 - Documentación citada: `README.md` (dentro del propio repositorio)
 

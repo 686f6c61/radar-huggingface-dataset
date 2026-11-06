@@ -78,7 +78,7 @@ La variante 4-bit es la más ligera de la familia, con un peso de 388 MB frente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeoFortunato/LFM2.5-VL-450M-Extract-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/LeoFortunato/LFM2.5-VL-450M-Extract-MLX-4bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-450M-Extract
 - Documentación de Liquid AI para LFM2.5-VL-450M-Extract: https://docs.liquid.ai/lfm/models/lfm25-vl-450m-extract
 - Documentación de LFM2.5-VL-450M (general): https://docs.liquid.ai/lfm/models/lfm25-vl-450m

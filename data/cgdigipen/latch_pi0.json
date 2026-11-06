@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "CGdigipen/latch_pi0",
+  "slug": "cgdigipen-latch_pi0",
+  "author": "CGdigipen",
+  "url": "https://huggingface.co/CGdigipen/latch_pi0",
+  "created_at": "2026-11-03T08:19:49.000Z",
+  "updated_at": "2026-11-03T16:17:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi0",
+    "robotics",
+    "dataset:CGdigipen/grasp_lever_115_03112026_20261103_102924",
+    "base_model:lerobot/pi0_base",
+    "base_model:finetune:lerobot/pi0_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 4028019472,
+  "parameters_human": "4.03B",
+  "storage_bytes": 73402376004,
+  "storage_human": "73.4 GB",
+  "base_model": "lerobot/pi0_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CGdigipen/latch_pi0 · Hugging Face",
+      "url": "https://huggingface.co/CGdigipen/latch_pi0",
+      "snippet": "Instructions to use CGdigipen/latch_pi0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use CGdigipen/latch_pi0 with LeRobot: ... Notebooks Google Colab Kaggle Model Card for pi0 Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started ..."
+    },
+    {
+      "title": "CGdigipen (CG) - Hugging Face",
+      "url": "https://huggingface.co/CGdigipen/models",
+      "snippet": "CGdigipen's models1 Sort: Recently updated CGdigipen/act_stack_bowls Robotics • 51.7M•Updated about 7 hours ago"
+    }
+  ]
+}

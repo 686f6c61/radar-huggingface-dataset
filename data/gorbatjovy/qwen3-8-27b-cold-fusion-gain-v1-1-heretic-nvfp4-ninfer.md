@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks especificos para esta cuantizacion 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 (BF16) | 27B | no disponible | BF16 | no disponible | HuggingFace |
-| Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF | 27B | no disponible | GGUF (varias) | no disponible | HuggingFace |
-| Qwen3.8-27B (original) | 27B | 128K (tipico) | BF16, FP8 | Apache 2.0 (segun Qwen) | HuggingFace, QwenCloud |
+| Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 (BF16) | 27B | no disponible | BF16 | no disponible | Hugging Face |
+| Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF | 27B | no disponible | GGUF (varias) | no disponible | Hugging Face |
+| Qwen3.8-27B (original) | 27B | 128K (tipico) | BF16, FP8 | Apache 2.0 (segun Qwen) | Hugging Face, QwenCloud |
 
 La comparativa se basa en informacion parcial. El modelo NVFP4 se diferencia por su formato de cuantizacion nativo NVIDIA, que puede ofrecer mejor rendimiento en hardware compatible que las cuantizaciones genericas GGUF, pero limita su portabilidad a otros backends.
 
@@ -78,7 +78,7 @@ La comparativa se basa en informacion parcial. El modelo NVFP4 se diferencia por
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/gorbatjovy/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-NVFP4-ninfer
+- Repositorio Hugging Face del modelo: https://huggingface.co/gorbatjovy/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-NVFP4-ninfer
 - Modelo base (BF16): https://huggingface.co/gorbatjovy/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic
 - Version GGUF del mismo modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

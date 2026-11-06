@@ -99,9 +99,9 @@ Comparacion dentro de la propia familia LLM-jp-4.1, con datos declarados en la m
 
 | Modelo | Parametros totales | Parametros activos | Capas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| llm-jp-4.1-8b-thinking | 8.590.200.832 | no aplica (denso) | 32 | 65.536 | Apache 2.0 | pesos safetensors en HuggingFace |
-| llm-jp-4.1-33b-thinking | 33.219.548.160 | no aplica (denso) | 64 | 65.536 | Apache 2.0 (segun la familia) | pesos en HuggingFace |
-| llm-jp-4.1-32b-a3b-thinking | 32.139.028.992 | 3.827.476.992 | 32 | 65.536 | Apache 2.0 (segun la familia) | pesos en HuggingFace |
+| llm-jp-4.1-8b-thinking | 8.590.200.832 | no aplica (denso) | 32 | 65.536 | Apache 2.0 | pesos safetensors en Hugging Face |
+| llm-jp-4.1-33b-thinking | 33.219.548.160 | no aplica (denso) | 64 | 65.536 | Apache 2.0 (segun la familia) | pesos en Hugging Face |
+| llm-jp-4.1-32b-a3b-thinking | 32.139.028.992 | 3.827.476.992 | 32 | 65.536 | Apache 2.0 (segun la familia) | pesos en Hugging Face |
 
 Diferencias clave: el modelo de 8B es el mas ligero de la familia y el unico que cabe con holgura en una GPU de consumo con cuantizacion; el de 33B denso duplica el numero de capas y multiplica por casi cuatro los parametros, mientras que el MoE de 32B-A3B activa 3,83B de parametros por token, con un coste de inferencia por token mas cercano al de un modelo de 4B que al de uno de 32B, a cambio de requerir mas VRAM total para almacenar los 128 expertos enrutados.
 
@@ -115,11 +115,11 @@ Diferencias clave: el modelo de 8B es el mas ligero de la familia y el unico que
 - Corpus incompletos: parte de los datos de preentrenamiento y mid-training no se ha publicado por restricciones de licencia, por lo que la reproducibilidad del entrenamiento no es total.
 - Compatibilidad de plantilla: la plantilla pretende ser compatible con OpenAI Harmony, pero el tokenizer no lo es; usar openai-harmony directamente produce resultados incorrectos. Es obligatorio emplear el tokenizer del repositorio.
 - Formato de pesos: solo safetensors; no hay GGUF, AWQ ni GPTQ oficiales, lo que anade trabajo de conversion para despliegues en CPU o en GPUs de baja VRAM.
-- Advertencia de fecha: el repositorio esta fechado en septiembre de 2026 segun los metadatos de HuggingFace; conviene verificar la vigencia de los enlaces y de las versiones antes de fijar una dependencia en produccion.
+- Advertencia de fecha: el repositorio esta fechado en septiembre de 2026 segun los metadatos de Hugging Face; conviene verificar la vigencia de los enlaces y de las versiones antes de fijar una dependencia en produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llm-jp/llm-jp-4.1-8b-thinking
+- Modelo en Hugging Face: https://huggingface.co/llm-jp/llm-jp-4.1-8b-thinking
 - Coleccion de modelos LLM-jp-4.1: https://huggingface.co/collections/llm-jp/llm-jp-41-models
 - Blog tecnico de LLM-jp-4.1 (en japones): https://llm-jp.nii.ac.jp/blog/llm-jp-4-1/
 - Cookbook de LLM-jp-4: https://github.com/llm-jp/llm-jp-4-cookbook

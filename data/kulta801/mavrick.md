@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kulta801/mavrick es un adaptador LoRA de tipo DreamBooth para generacion de imagenes a partir de texto (text-to-image), publicado por el usuario kulta801 en HuggingFace. No es un modelo autonomo: son pesos de ajuste fino que se cargan sobre los checkpoints Krea 2 de la organizacion krea, en concreto krea/Krea-2-Raw (base no destilada, usada para entrenar) y krea/Krea-2-Turbo (checkpoint destilado a 8 pasos, usado para inferencia rapida). El repositorio pesa 0,8 GB y se distribuye en formato safetensors bajo licencia Apache 2.0.
+kulta801/mavrick es un adaptador LoRA de tipo DreamBooth para generacion de imagenes a partir de texto (text-to-image), publicado por el usuario kulta801 en Hugging Face. No es un modelo autonomo: son pesos de ajuste fino que se cargan sobre los checkpoints Krea 2 de la organizacion krea, en concreto krea/Krea-2-Raw (base no destilada, usada para entrenar) y krea/Krea-2-Turbo (checkpoint destilado a 8 pasos, usado para inferencia rapida). El repositorio pesa 0,8 GB y se distribuye en formato safetensors bajo licencia Apache 2.0.
 
 El proposito del adaptador es inyectar un concepto o estilo concreto, activado mediante la palabra disparadora `MAVNX`, sobre el pipeline Krea2Pipeline de la libreria diffusers. El autor indica que los LoRA entrenados sobre RAW se expresan con fuerza sobre Turbo, de modo que el flujo recomendado es entrenar en RAW e inferir en Turbo. La model card no documenta el dataset, el rango del LoRA, el learning rate ni el numero de pasos de entrenamiento.
 
@@ -31,7 +31,7 @@ La relevancia de esta ficha es limitada y hay que ser honesto al respecto: el mo
 
 ## Arquitectura y entrenamiento
 
-El adaptador se entrena con la tecnica DreamBooth aplicada mediante el entrenador especifico para Krea 2 incluido en el repositorio de diffusers de HuggingFace. No se especifica la arquitectura interna del modelo base Krea 2 (si es un transformer de difusion, un UNet o un modelo hibrido), ni el numero de parametros del checkpoint RAW o Turbo. Tampoco se indica el rango (rank), el valor de alpha, la resolucion de entrenamiento, el numero de pasos, el optimizador ni la composicion del dataset utilizado.
+El adaptador se entrena con la tecnica DreamBooth aplicada mediante el entrenador especifico para Krea 2 incluido en el repositorio de diffusers de Hugging Face. No se especifica la arquitectura interna del modelo base Krea 2 (si es un transformer de difusion, un UNet o un modelo hibrido), ni el numero de parametros del checkpoint RAW o Turbo. Tampoco se indica el rango (rank), el valor de alpha, la resolucion de entrenamiento, el numero de pasos, el optimizador ni la composicion del dataset utilizado.
 
 La unica innovacion operativa documentada es la separacion en dos checkpoints del modelo base: RAW, que actua como base no destilada sobre la que se entrena el LoRA, y Turbo, un checkpoint destilado que permite inferencia en 8 pasos sin classifier-free guidance (guidance_scale=0.0). Segun el autor, los LoRA entrenados sobre RAW se expresan con fuerza sobre Turbo, lo que simplifica el flujo de trabajo. No hay informacion sobre si se aplicaron tecnicas adicionales como decodificacion especulativa, atencion lineal o RLHF/DPO; en el caso de un modelo de difusion, estas tecnicas no aplican del mismo modo que en un LLM.
 
@@ -93,7 +93,7 @@ No se han identificado en la informacion disponible alternativas concretas con d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kulta801/mavrick
+- Modelo en Hugging Face: https://huggingface.co/kulta801/mavrick
 - Archivos del repositorio (pesos safetensors): https://huggingface.co/kulta801/mavrick/tree/main
 - Modelo base para inferencia: https://huggingface.co/krea/Krea-2-Turbo
 - Modelo base para entrenamiento: https://huggingface.co/krea/Krea-2-Raw

@@ -62,7 +62,7 @@ No se dispone de datos comparativos entre este adaptador y otras alternativas. E
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jordine/patina3-v3_america-eu-it_sft_s0
+- Modelo en Hugging Face: https://huggingface.co/Jordine/patina3-v3_america-eu-it_sft_s0
 - Discussion de un modelo relacionado: https://huggingface.co/Jordine/patina3-v3_europe-am-it_sft_s0/discussions
 - Modelo base Llama 3.1 8B: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Adaptador similar del mismo autor: https://huggingface.co/Jordine/patina3-t_america_sft_s0

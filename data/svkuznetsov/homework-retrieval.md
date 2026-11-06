@@ -1,7 +1,7 @@
 # svkuznetsov/homework-retrieval
 
 ## Resumen
-`svkuznetsov/homework-retrieval` es un repositorio de HuggingFace publicado por el usuario svkuznetsov que contiene una implementacion propia de una arquitectura denominada Cnn Transformer orientada a tareas de retrieval (recuperacion de informacion, presumiblemente recuperacion multimodal texto-imagen dado que la model card propone Flickr30k como primer banco de evaluacion). No se trata de un modelo entrenado ni de un release de pesos finales: el propio autor lo describe como un "punto de partida reproducible" empaquetado con una configuracion explicita y un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests).
+`svkuznetsov/homework-retrieval` es un repositorio de Hugging Face publicado por el usuario svkuznetsov que contiene una implementacion propia de una arquitectura denominada Cnn Transformer orientada a tareas de retrieval (recuperacion de informacion, presumiblemente recuperacion multimodal texto-imagen dado que la model card propone Flickr30k como primer banco de evaluacion). No se trata de un modelo entrenado ni de un release de pesos finales: el propio autor lo describe como un "punto de partida reproducible" empaquetado con una configuracion explicita y un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests).
 
 El peso real del checkpoint es de 24.832 parametros totales segun los metadatos de safetensors, una cifra extremadamente reducida que no guarda relacion con la etiqueta de escala "xlarge" que aparece en la model card. Esto confirma que la nomenclatura de escala es nominal y no refleja el tamano efectivo del modelo. El repositorio ocupa 0.0 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -79,6 +79,6 @@ No disponible. No se han identificado modelos comparables de la misma categoria 
 - Reproducibilidad: se recomienda conservar los logs de entrenamiento y las versiones del entorno junto a cualquier resultado que se publique.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/svkuznetsov/homework-retrieval
-- Perfil del autor en HuggingFace: https://huggingface.co/svkuznetsov/models
+- Modelo en Hugging Face: https://huggingface.co/svkuznetsov/homework-retrieval
+- Perfil del autor en Hugging Face: https://huggingface.co/svkuznetsov/models
 - Repositorio hermano del mismo autor: https://huggingface.co/svkuznetsov/retrieval-run2

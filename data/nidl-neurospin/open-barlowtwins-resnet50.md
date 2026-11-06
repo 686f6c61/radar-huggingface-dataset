@@ -91,7 +91,7 @@ No se dispone en la información proporcionada de datos comparativos verificable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nidl-neurospin/open-barlowtwins-resnet50
+- Modelo en Hugging Face: https://huggingface.co/nidl-neurospin/open-barlowtwins-resnet50
 - Dataset OpenMind: https://huggingface.co/datasets/neurospin/openmind
 - Receta de preentrenamiento: https://neurospin-deepinsight.github.io/nidl/auto_examples/plot_open_models_pretraining.html
 - Documentación de nidl: https://neurospin-deepinsight.github.io/nidl

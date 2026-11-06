@@ -59,7 +59,7 @@ Dado que el modelo tiene aproximadamente 4 000 millones de parametros, se pueden
 - VRAM estimada en cuantizacion de 4 bits: ~2,5-3 GB.
 - GPU recomendadas: una RTX 3090, RTX 4090 o superior para FP16; GPUs con 6-8 GB de VRAM pueden ejecutar el modelo con cuantizacion de 4 u 8 bits.
 - Es posible ejecutarlo en GPU de consumo (serie RTX 30/40) si se cuantiza adecuadamente.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI o Transformers de HuggingFace, siempre que el formato de pesos sea compatible (safetensors).
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI o Transformers de Hugging Face, siempre que el formato de pesos sea compatible (safetensors).
 - No se dispone de datos de latencia ni throughput. Estos dependen en gran medida del hardware y de la implementacion utilizada.
 
 ## Comparativa con modelos similares
@@ -78,5 +78,5 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zhouxinxin/itn-disfluency-sft-v5
+- Repositorio Hugging Face: https://huggingface.co/zhouxinxin/itn-disfluency-sft-v5
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo.

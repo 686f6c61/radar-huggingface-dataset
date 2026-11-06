@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TinyBrainBot-10M-v2-Base es un modelo de lenguaje de 9,9 millones de parámetros entrenado desde cero por el desarrollador independiente nkthebass (cuenta de HuggingFace `nkthebass`). Se trata de un `LlamaForCausalLM` estándar, sin código personalizado, pensado como modelo base de generación de texto en inglés: continúa texto, no conversa. Sustituye a TinyBrainBot-10M-Base y sigue la receta de TinyBrainBot-3M-v2-Base.
+TinyBrainBot-10M-v2-Base es un modelo de lenguaje de 9,9 millones de parámetros entrenado desde cero por el desarrollador independiente nkthebass (cuenta de Hugging Face `nkthebass`). Se trata de un `LlamaForCausalLM` estándar, sin código personalizado, pensado como modelo base de generación de texto en inglés: continúa texto, no conversa. Sustituye a TinyBrainBot-10M-Base y sigue la receta de TinyBrainBot-3M-v2-Base.
 
 El modelo se ha entrenado con 10.160 millones de tokens (8,57 B de preentrenamiento a tasa de aprendizaje constante más 1,59 B en fase de decaimiento), con una mezcla que prioriza texto web filtrado, preguntas y respuestas, datos factuales y sentido común, dejando la aritmética como una parte menor pero deliberadamente reforzada. La arquitectura es un transformer decoder-only con hidden de 256, 12 capas, atención GQA (4 cabezas query y 2 KV), SwiGLU de 704, RMSNorm y RoPE, con un vocabulario byte-level BPE de 4.096 tokens y una ventana de contexto de 1.024 tokens.
 
@@ -81,7 +81,7 @@ Evaluaciones aritméticas adicionales declaradas por el autor (todas `acc_norm`)
 - VRAM estimada: unos 20 MB en F16 (9,9 M de parámetros × 2 bytes) y unos 11 MB en Q8_0, coherente con los tamaños de los GGUF publicados (20 MB y 11 MB).
 - GPU recomendadas: ninguna en particular; el modelo no necesita acelerador. Una RTX 4090, A100 o H100 están sobredimensionadas para este tamaño y solo se justificarían para barridos masivos en paralelo.
 - GPU de consumo: cabe en cualquier GPU de consumo con más de 1 GB de VRAM, y también en CPU, Raspberry Pi y móviles de gama media.
-- Opciones de despliegue: transformers (`AutoModelForCausalLM`), llama.cpp (GGUF F16 y Q8_0), LM Studio, Jan, y Text Generation Inference (la model card está etiquetada con `text-generation-inference` y `endpoints_compatible`, lo que apunta a compatibilidad con Inference Endpoints de HuggingFace). El soporte en vLLM no está documentado en la información disponible.
+- Opciones de despliegue: transformers (`AutoModelForCausalLM`), llama.cpp (GGUF F16 y Q8_0), LM Studio, Jan, y Text Generation Inference (la model card está etiquetada con `text-generation-inference` y `endpoints_compatible`, lo que apunta a compatibilidad con Inference Endpoints de Hugging Face). El soporte en vLLM no está documentado en la información disponible.
 - Latencia y throughput: no disponible. No se han publicado cifras de latencia ni de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -113,7 +113,7 @@ Lectura: el modelo lidera la comparativa en ArithMark-3 (49,40 frente a 36,60-41
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkthebass/tinybrainbot-10m-v2-base
+- Modelo en Hugging Face: https://huggingface.co/nkthebass/tinybrainbot-10m-v2-base
 - Modelo predecesor (TinyBrainBot-10M-Base): https://huggingface.co/nkthebass/tinybrainbot-10m-base
 - Modelo de la misma familia (TinyBrainBot-3M-v2-Base): https://huggingface.co/nkthebass/tinybrainbot-3m-v2-base
 - Open SLM Leaderboard (AxiomicLabs): https://huggingface.co/spaces/AxiomicLabs/Open_SLM_Leaderboard

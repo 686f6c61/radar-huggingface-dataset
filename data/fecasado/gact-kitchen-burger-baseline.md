@@ -77,7 +77,7 @@ No disponible. No se han proporcionado datos de otros modelos comparables en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fecasado/gact-kitchen-burger-baseline
+- Hugging Face: https://huggingface.co/fecasado/gact-kitchen-burger-baseline
 - Dataset: https://huggingface.co/datasets/fecasado/burger-to-plate-good-320x240
 - LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

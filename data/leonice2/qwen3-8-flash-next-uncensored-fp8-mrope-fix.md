@@ -107,6 +107,6 @@ La comparacion directa mas solida es contra el checkpoint base, del que se tiene
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leonice2/Qwen3.8-Flash-Next-UNCENSORED-FP8-MRoPE-Fix
+- Hugging Face: https://huggingface.co/leonice2/Qwen3.8-Flash-Next-UNCENSORED-FP8-MRoPE-Fix
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo.

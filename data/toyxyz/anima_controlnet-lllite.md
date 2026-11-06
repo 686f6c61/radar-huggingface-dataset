@@ -85,7 +85,7 @@ No se dispone, en la informacion proporcionada, de datos cuantitativos de modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/toyxyz/Anima_ControlNet-LLLite
+- Repositorio Hugging Face: https://huggingface.co/toyxyz/Anima_ControlNet-LLLite
 - Modelo base Anima: https://huggingface.co/circlestone-labs/Anima
 - Archivo del modelo base: https://huggingface.co/circlestone-labs/Anima/blob/main/split_files/diffusion_models/anima-base-v1.0.safetensors
 - Licencia del modelo base: https://huggingface.co/circlestone-labs/Anima/blob/main/LICENSE.md

@@ -58,16 +58,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente para inferencia en fp16. Una RTX 3060, RTX 4060 o superior cubre el caso de uso con holgura.
 - Cabe en GPU de consumo: si, practicamente cualquier GPU moderna de consumo, e incluso en CPU con latencias razonables dado el tamano del modelo.
 - Ajuste fino: se estima necesario entre 12 y 16 GB de VRAM para entrenar con secuencias de 2048 tokens y batches moderados en fp16, o menos con gradient checkpointing y optimizadores de bajo consumo de memoria (estimacion, no dato publicado).
-- Opciones de despliegue: `transformers` con pipeline `token-classification`, `ONNX Runtime` o `optimum` para inferencia optimizada, y conversion a GGUF para `llama.cpp` si se desea ejecucion en CPU. Compatible con `text-embeddings-inference`/`TEI` no esta confirmado; la etiqueta `endpoints_compatible` del repositorio indica compatibilidad con los endpoints de HuggingFace.
+- Opciones de despliegue: `transformers` con pipeline `token-classification`, `ONNX Runtime` o `optimum` para inferencia optimizada, y conversion a GGUF para `llama.cpp` si se desea ejecucion en CPU. Compatible con `text-embeddings-inference`/`TEI` no esta confirmado; la etiqueta `endpoints_compatible` del repositorio indica compatibilidad con los endpoints de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `davidmelash/modern_liberta_large_w2048_v7large_2026-10-09_r4` | 409,8 M | 2048 tokens (segun nomenclatura) | Clasificacion de tokens / anonimizacion en ucraniano | MIT | HuggingFace, repositorio de 1,6 GB |
+| `davidmelash/modern_liberta_large_w2048_v7large_2026-10-09_r4` | 409,8 M | 2048 tokens (segun nomenclatura) | Clasificacion de tokens / anonimizacion en ucraniano | MIT | Hugging Face, repositorio de 1,6 GB |
 | ModernBERT-large (arquitectura base de referencia) | ~395 M | hasta 8192 tokens | Encoder de proposito general; requiere ajuste | Apache 2.0 | Ampliamente disponible |
-| `Goader/modern-liberta-large` (modelo base del que parte) | No disponible en la informacion proporcionada | No disponible | Encoder en ucraniano; requiere ajuste para NER | No disponible en la informacion proporcionada | HuggingFace |
+| `Goader/modern-liberta-large` (modelo base del que parte) | No disponible en la informacion proporcionada | No disponible | Encoder en ucraniano; requiere ajuste para NER | No disponible en la informacion proporcionada | Hugging Face |
 | XLM-RoBERTa-large (alternativa multilingue habitual para NER) | ~560 M | 512 tokens | Clasificacion de tokens multilingue | MIT | Ampliamente disponible |
 
 No hay datos de rendimiento comparativo entre estas opciones en la informacion disponible. Las cifras de parametros, contexto y licencia de los modelos de referencia corresponden a sus especificaciones publicas conocidas, no a una evaluacion realizada para esta ficha.
@@ -87,6 +87,6 @@ No hay datos de rendimiento comparativo entre estas opciones en la informacion d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidmelash/modern_liberta_large_w2048_v7large_2026-10-09_r4
+- Modelo en Hugging Face: https://huggingface.co/davidmelash/modern_liberta_large_w2048_v7large_2026-10-09_r4
 - Modelo base: https://huggingface.co/Goader/modern-liberta-large
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos adicionales.

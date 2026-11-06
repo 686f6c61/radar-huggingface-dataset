@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Huihui-Flash-Next-Basalt-Vision-Overlay es un complemento experimental de vision publicado por el usuario hfsteady en HuggingFace. No se trata de un modelo de lenguaje completo, sino de un paquete que contiene un proyector multimodal (mmproj) empaquetado en formato GGUF y un conjunto de metadatos (manifest.json, checksums.json) destinados a inyectar capacidad de comprension de imagenes en un artefacto de texto preexistente denominado Basalt. El proyector se copia byte a byte desde el repositorio oficial huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF, sin recuantizar, y los tensores de lenguaje no se descargan ni se modifican.
+Huihui-Flash-Next-Basalt-Vision-Overlay es un complemento experimental de vision publicado por el usuario hfsteady en Hugging Face. No se trata de un modelo de lenguaje completo, sino de un paquete que contiene un proyector multimodal (mmproj) empaquetado en formato GGUF y un conjunto de metadatos (manifest.json, checksums.json) destinados a inyectar capacidad de comprension de imagenes en un artefacto de texto preexistente denominado Basalt. El proyector se copia byte a byte desde el repositorio oficial huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF, sin recuantizar, y los tensores de lenguaje no se descargan ni se modifican.
 
 El interes del paquete es acotado y muy tecnico: sirve como capa opt-in para un runtime Basalt (integracion experimental sobre el loader de jesdga95/basalt) que permite activar vision dinamica con contexto de 262144 tokens, KV en INT8 y decodificacion especulativa spec3. El propio autor advierte que la validacion en GPU, las pruebas de imagen con contexto largo y el enrutado privado de imagenes via Hermes siguen pendientes, por lo que no debe considerarse un modelo listo para produccion.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Huihui-Flash-Next-Basalt-Vision-Overlay | Overlay de vision (proyector + metadatos) | no disponible (solo proyector BF16) | 262144 (config. de prueba) | Qwen Community License 1.0 | HuggingFace, 0 descargas |
-| huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF | Modelo completo con proyector upstream | no disponible | no disponible | Qwen Community License 1.0 | HuggingFace (fuente del proyector) |
-| hfsteady/Huihui-Flash-Next-RadixArk-NVFP4-Basalt-RTX5090 | Pack de texto Basalt (modelo base del overlay) | no disponible | no disponible | no disponible | HuggingFace |
+| Huihui-Flash-Next-Basalt-Vision-Overlay | Overlay de vision (proyector + metadatos) | no disponible (solo proyector BF16) | 262144 (config. de prueba) | Qwen Community License 1.0 | Hugging Face, 0 descargas |
+| huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF | Modelo completo con proyector upstream | no disponible | no disponible | Qwen Community License 1.0 | Hugging Face (fuente del proyector) |
+| hfsteady/Huihui-Flash-Next-RadixArk-NVFP4-Basalt-RTX5090 | Pack de texto Basalt (modelo base del overlay) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparacion cuantitativa con alternativas de la misma categoria.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hfsteady/Huihui-Flash-Next-Basalt-Vision-Overlay
+- Repositorio Hugging Face: https://huggingface.co/hfsteady/Huihui-Flash-Next-Basalt-Vision-Overlay
 - Proyector upstream: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF
 - Pack de texto Basalt base: https://huggingface.co/hfsteady/Huihui-Flash-Next-RadixArk-NVFP4-Basalt-RTX5090
 - Repositorio Basalt: https://github.com/jesdga95/basalt

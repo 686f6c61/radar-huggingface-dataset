@@ -55,7 +55,7 @@ Respecto al entrenamiento, el nombre del modelo base indica un ajuste fino media
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repositorio i1 ni los metadatos de HuggingFace incluyen puntuaciones de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluación. La model card únicamente incluye un gráfico de perplejidad comparativa entre tipos de cuantización (elaborado por ikawrakow) que es genérico para llama.cpp y no específico de este modelo.
+No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repositorio i1 ni los metadatos de Hugging Face incluyen puntuaciones de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluación. La model card únicamente incluye un gráfico de perplejidad comparativa entre tipos de cuantización (elaborado por ikawrakow) que es genérico para llama.cpp y no específico de este modelo.
 
 ## Requisitos de hardware
 
@@ -80,9 +80,9 @@ No se dispone de datos de benchmarks ni de especificaciones completas del modelo
 
 | Modelo / variante | Parámetros | Formato | Tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (i1, imatrix) | 11,9B | GGUF | 3,3–9,9 GB según quant | Apache 2.0 | HuggingFace, 0 descargas |
-| gemma-4-12b-it-roleplay-sft-epoch2-bf16 (base) | 11,9B | bf16 / safetensors | ≈23,8 GB en pesos | Apache 2.0 | HuggingFace |
-| gemma-4-12b-it-roleplay-sft-epoch2-bf16-GGUF (estático) | 11,9B | GGUF | No disponible | Apache 2.0 | HuggingFace; incluye mmproj de visión |
+| Este repositorio (i1, imatrix) | 11,9B | GGUF | 3,3–9,9 GB según quant | Apache 2.0 | Hugging Face, 0 descargas |
+| gemma-4-12b-it-roleplay-sft-epoch2-bf16 (base) | 11,9B | bf16 / safetensors | ≈23,8 GB en pesos | Apache 2.0 | Hugging Face |
+| gemma-4-12b-it-roleplay-sft-epoch2-bf16-GGUF (estático) | 11,9B | GGUF | No disponible | Apache 2.0 | Hugging Face; incluye mmproj de visión |
 
 Comparación con modelos de otras familias (Llama, Mistral, Qwen) en la misma franja de 12B: no disponible, ya que no se han publicado métricas de este modelo que permitan situarlo frente a ellos.
 
@@ -101,7 +101,7 @@ Comparación con modelos de otras familias (Llama, Mistral, Qwen) en la misma fr
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/gemma-4-12b-it-roleplay-sft-epoch2-bf16-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/gemma-4-12b-it-roleplay-sft-epoch2-bf16-i1-GGUF
 - Repositorio de cuantizaciones estáticas (incluye ficheros mmproj de visión): https://huggingface.co/mradermacher/gemma-4-12b-it-roleplay-sft-epoch2-bf16-GGUF
 - Modelo base: https://huggingface.co/ChatoyantAI/gemma-4-12b-it-roleplay-sft-epoch2-bf16
 - Página resumen del autor para este modelo: https://hf.tst.eu/model#gemma-4-12b-it-roleplay-sft-epoch2-bf16-i1-GGUF

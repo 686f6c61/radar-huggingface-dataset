@@ -69,8 +69,8 @@ No se dispone de datos comparativos fiables en la información proporcionada. El
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FreeMangione221/Qwen3.8-27B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/FreeMangione221/Qwen3.8-27B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GGUF de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Guía de Unsloth para Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Documentación de Dynamic 3.0 GGUFs: https://unsloth.ai/docs/basics/dynamic-3.0-ggufs

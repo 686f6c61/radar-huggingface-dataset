@@ -71,10 +71,10 @@ Las siguientes cifras son estimaciones derivadas del tamano del modelo base (1.7
 
 | Modelo | Parametros base | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `aime_sft_dpo_qwen3_1_7b_sc_lora` | Qwen3-1.7B (adaptador LoRA) | No disponible | No publicado | No disponible | HuggingFace, requiere checkpoint base SFT local |
-| `aime_dpo_qwen3_1_7b_sc_lora_fullcoverage` | Qwen3-1.7B (modelo fusionado standalone) | No disponible | No publicado | No disponible | HuggingFace y espejos de terceros |
-| `aime_dpo_qwen3_1_7b_random_lora_tuned` | Qwen3-1.7B (adaptador LoRA) | No disponible | No publicado | No disponible | HuggingFace |
-| Qwen/Qwen3-1.7B (modelo base) | Aproximadamente 1,7B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| `aime_sft_dpo_qwen3_1_7b_sc_lora` | Qwen3-1.7B (adaptador LoRA) | No disponible | No publicado | No disponible | Hugging Face, requiere checkpoint base SFT local |
+| `aime_dpo_qwen3_1_7b_sc_lora_fullcoverage` | Qwen3-1.7B (modelo fusionado standalone) | No disponible | No publicado | No disponible | Hugging Face y espejos de terceros |
+| `aime_dpo_qwen3_1_7b_random_lora_tuned` | Qwen3-1.7B (adaptador LoRA) | No disponible | No publicado | No disponible | Hugging Face |
+| Qwen/Qwen3-1.7B (modelo base) | Aproximadamente 1,7B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 
 La diferencia practica mas relevante entre las tres variantes del autor es el formato de entrega: `fullcoverage` se distribuye como modelo fusionado listo para cargar, mientras que las otras dos son adaptadores que exigen disponer del modelo base correspondiente. No hay datos publicos que permitan comparar calidad entre ellas.
 
@@ -92,7 +92,7 @@ La diferencia practica mas relevante entre las tres variantes del autor es el fo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/talzoomanzoo/aime_sft_dpo_qwen3_1_7b_sc_lora
+- Modelo en Hugging Face: https://huggingface.co/talzoomanzoo/aime_sft_dpo_qwen3_1_7b_sc_lora
 - Variante fusionada standalone (espejo de terceros): https://featherless.ai/models/talzoomanzoo/aime_dpo_qwen3_1_7b_sc_lora_fullcoverage
 - Ficha de la variante fullcoverage en un registro de terceros: https://free2aitools.com/model/talzoomanzoo/aime_dpo_qwen3_1_7b_sc_lora_fullcoverage
 - Repositorio de la variante `random_lora_tuned`: https://huggingface.co/talzoomanzoo/aime_dpo_qwen3_1_7b_random_lora_tuned/tree/main

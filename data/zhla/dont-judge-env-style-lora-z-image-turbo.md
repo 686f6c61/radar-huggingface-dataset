@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dont-judge-env-style-lora-z-image-turbo` es un adaptador LoRA de estilo publicado por el usuario ZhLa en HuggingFace, diseñado para su uso sobre el modelo base `Tongyi-MAI/Z-Image-Turbo`, un modelo de difusión texto-a-imagen desarrollado por Tongyi-MAI (equipo de Alibaba). El adaptador tiene como objetivo modificar el estilo visual de las imágenes generadas por el modelo base sin necesidad de reentrenar los pesos completos, lo que reduce drásticamente los requisitos de cómputo y almacenamiento.
+`dont-judge-env-style-lora-z-image-turbo` es un adaptador LoRA de estilo publicado por el usuario ZhLa en Hugging Face, diseñado para su uso sobre el modelo base `Tongyi-MAI/Z-Image-Turbo`, un modelo de difusión texto-a-imagen desarrollado por Tongyi-MAI (equipo de Alibaba). El adaptador tiene como objetivo modificar el estilo visual de las imágenes generadas por el modelo base sin necesidad de reentrenar los pesos completos, lo que reduce drásticamente los requisitos de cómputo y almacenamiento.
 
 El repositorio tiene un tamaño de 0,2 GB, lo que es coherente con un adaptador LoRA de bajo rango sobre un modelo de difusión. La model card es extremadamente escasa: no incluye descripción del estilo, ejemplos de imágenes, hiperparámetros de entrenamiento, dataset utilizado ni instrucciones de uso. Se etiqueta como "research", lo que sugiere un uso experimental y no orientado a producción.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ZhLa/dont-judge-env-style-lora-z-image-turbo` | LoRA de estilo sobre Z-Image-Turbo | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
-| LoRA de estilo sobre Stable Diffusion XL (genéricos) | LoRA de estilo | variable (típicamente 10-200 MB) | no aplica | variable (a menudo CreativeML OpenRAIL) | Amplia en HuggingFace y Civitai |
-| LoRA de estilo sobre FLUX.1 (genéricos) | LoRA de estilo | variable | no aplica | variable (a menudo no comercial) | Amplia en HuggingFace |
+| `ZhLa/dont-judge-env-style-lora-z-image-turbo` | LoRA de estilo sobre Z-Image-Turbo | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
+| LoRA de estilo sobre Stable Diffusion XL (genéricos) | LoRA de estilo | variable (típicamente 10-200 MB) | no aplica | variable (a menudo CreativeML OpenRAIL) | Amplia en Hugging Face y Civitai |
+| LoRA de estilo sobre FLUX.1 (genéricos) | LoRA de estilo | variable | no aplica | variable (a menudo no comercial) | Amplia en Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas. La comparación se limita a aspectos estructurales y de disponibilidad.
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZhLa/dont-judge-env-style-lora-z-image-turbo
+- Hugging Face: https://huggingface.co/ZhLa/dont-judge-env-style-lora-z-image-turbo
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

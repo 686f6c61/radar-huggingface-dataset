@@ -2,11 +2,11 @@
 
 ## Resumen
 
-SalmanAI2026/Salman es un repositorio de modelo publicado en HuggingFace por el usuario SalmanAI2026 el 11 de septiembre de 2026. La unica informacion verificable disponible es la licencia (Apache 2.0), la region declarada (us) y la ausencia de cualquier otro metadato tecnico: no se especifica pipeline, idiomas, arquitectura, numero de parametros ni longitud de contexto. La model card del autor contiene unicamente el encabezado de licencia, sin descripcion, sin ficha tecnica y sin resultados de evaluacion.
+SalmanAI2026/Salman es un repositorio de modelo publicado en Hugging Face por el usuario SalmanAI2026 el 11 de septiembre de 2026. La unica informacion verificable disponible es la licencia (Apache 2.0), la region declarada (us) y la ausencia de cualquier otro metadato tecnico: no se especifica pipeline, idiomas, arquitectura, numero de parametros ni longitud de contexto. La model card del autor contiene unicamente el encabezado de licencia, sin descripcion, sin ficha tecnica y sin resultados de evaluacion.
 
 En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 0 likes, y no se ha publicado ninguna actualizacion desde su creacion. Esto indica que se trata de un artefacto sin adopcion conocida ni validacion por parte de la comunidad, por lo que cualquier evaluacion de su calidad, rendimiento o idoneidad para produccion es imposible con los datos actuales.
 
-La relevancia de esta ficha es, por tanto, principalmente documental: sirve para dejar constancia de que el modelo existe como identificador en HuggingFace, de que su licencia declarada es permisiva (Apache 2.0) y de que toda decision tecnica sobre su uso requiere una inspeccion directa de los pesos y del repositorio, no de la documentacion publicada.
+La relevancia de esta ficha es, por tanto, principalmente documental: sirve para dejar constancia de que el modelo existe como identificador en Hugging Face, de que su licencia declarada es permisiva (Apache 2.0) y de que toda decision tecnica sobre su uso requiere una inspeccion directa de los pesos y del repositorio, no de la documentacion publicada.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ Tampoco hay informacion sobre el corpus de entrenamiento: no se indica el volume
 
 ## Capacidades
 
-No disponible. No se ha publicado ninguna descripcion de capacidades en la informacion proporcionada. No consta que el modelo soporte generacion de texto, razonamiento, generacion de codigo, matematicas, vision, tool calling, function calling, uso como agente, razonamiento multi-paso ni capacidades multilingues. La ausencia del campo `pipeline` en los metadatos de HuggingFace impide incluso confirmar que se trate de un modelo de lenguaje.
+No disponible. No se ha publicado ninguna descripcion de capacidades en la informacion proporcionada. No consta que el modelo soporte generacion de texto, razonamiento, generacion de codigo, matematicas, vision, tool calling, function calling, uso como agente, razonamiento multi-paso ni capacidades multilingues. La ausencia del campo `pipeline` en los metadatos de Hugging Face impide incluso confirmar que se trate de un modelo de lenguaje.
 
 ## Casos de uso
 
@@ -67,14 +67,14 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 - Riesgo de alucinacion: no evaluado y, por tanto, desconocido.
 - Sesgos: no evaluados; no se ha publicado ninguna auditoria de sesgo, toxicidad o seguridad.
 - Idiomas: el campo de idiomas no esta disponible, por lo que no se puede garantizar un comportamiento correcto en castellano ni en ninguna otra lengua.
-- Licencia: se declara Apache 2.0, que en principio permite uso comercial y modificacion, pero la licencia declarada en el campo `license` de HuggingFace no sustituye a la verificacion de los terminos reales del repositorio ni a la comprobacion de la procedencia de los datos de entrenamiento. Si el modelo deriva de otro modelo con licencia mas restrictiva, la declaracion Apache 2.0 podria no ser valida.
+- Licencia: se declara Apache 2.0, que en principio permite uso comercial y modificacion, pero la licencia declarada en el campo `license` de Hugging Face no sustituye a la verificacion de los terminos reales del repositorio ni a la comprobacion de la procedencia de los datos de entrenamiento. Si el modelo deriva de otro modelo con licencia mas restrictiva, la declaracion Apache 2.0 podria no ser valida.
 - Falta de validacion por la comunidad: 0 descargas y 0 likes, sin issues, sin discusiones y sin actualizaciones desde la fecha de creacion.
 - Riesgo de confusion nominal: el identificador es generico y no aporta informacion sobre la familia o el linaje del modelo; conviene verificar que no colisiona con otros proyectos del mismo nombre.
 - Recomendacion para produccion: no utilizar en entornos productivos sin una evaluacion propia previa que cubra arquitectura, tokenizador, calidad de salida, seguridad y coste de inferencia.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SalmanAI2026/Salman
+- Hugging Face: https://huggingface.co/SalmanAI2026/Salman
 - Model card: no contiene mas contenido que la declaracion de licencia Apache 2.0.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.
 - Resultados de la busqueda web: las consultas realizadas no devolvieron ninguna fuente relacionada con este modelo; los unicos resultados obtenidos fueron paginas de soporte de Microsoft (contacto de soporte, inicio de sesion en Hotmail, descarga de ISO de Windows 8.1, notas de Windows 11 26H2 y retirada de la utilidad SaRA) sin ninguna vinculacion con el modelo analizado.

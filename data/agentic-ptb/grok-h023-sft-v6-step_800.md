@@ -66,5 +66,5 @@ No se dispone de información comparativa publicada. El modelo base Qwen3.5-9B-B
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h023.sft-v6.step_800
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h023.sft-v6.step_800
 - No se han encontrado enlaces adicionales específicos para este modelo en la búsqueda web. Los resultados obtenidos (grok.com, API de SpaceXAI, noticias sobre Kimi K3) no están relacionados directamente con este checkpoint.

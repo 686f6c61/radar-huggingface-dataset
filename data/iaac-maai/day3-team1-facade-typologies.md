@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en cualquier GPU consumer y, de hecho, no la necesita; tambien cabe en CPU de un solo nucleo y en entornos sin acelerador.
 - Opciones de despliegue: carga directa con `joblib.load` en Python 3.12 con scikit-learn 1.9.1 (o version compatible), servido mediante FastAPI, Flask o un script por lotes; no aplica vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada; por la naturaleza del algoritmo (una multiplicacion matriz-centroides de 13 dimensiones por fila) el coste por prediccion es minimo, pero no se han publicado mediciones.
-- El repositorio ocupa 0,0 GB segun HuggingFace, coherente con un artefacto joblib de muy poco tamano.
+- El repositorio ocupa 0,0 GB segun Hugging Face, coherente con un artefacto joblib de muy poco tamano.
 
 ## Comparativa con modelos similares
 
@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye otros modelos de clusteri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iaac-maai/day3-team1-facade-typologies
+- Modelo en Hugging Face: https://huggingface.co/iaac-maai/day3-team1-facade-typologies
 - Dataset agrupado: https://huggingface.co/datasets/iaac-maai/day3-team1-nyc-facade-typologies
 - Repositorio GitHub con el analisis completo: https://github.com/iaac-maai/group1_day3_assignment
 - Datos originales DOB NOW: Safety – Facades Compliance Filings: https://data.cityofnewyork.us/d/xubg-57si

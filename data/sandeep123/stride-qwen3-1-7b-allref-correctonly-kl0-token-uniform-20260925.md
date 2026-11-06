@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|---|
-| STRIDE Qwen3-1.7B (este adaptador) | 1,7 B (base) + LoRA r=16 | No especificado en la ficha; base con 32.768 tokens nativos | Adaptador LoRA de RL para razonamiento matematico | Apache 2.0 | HuggingFace, 0 descargas | No disponible |
-| Qwen/Qwen3-1.7B (modelo base) | 1,7 B densos | 32.768 nativos, 131.072 con YaRN | Modelo denso instructivo con modo thinking | Apache 2.0 | HuggingFace, ampliamente usado | Publicados por el equipo Qwen |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,5 B densos | No disponible en la informacion recogida | Modelo destilado de razonamiento | MIT (segun la familia DeepSeek-R1) | HuggingFace | Publicados por DeepSeek |
-| Variante hermana stride-qwen3-1.7b-allref-correctonly-local-positive-20260925 | 1,7 B (base) + LoRA | Misma base | Adaptador LoRA con reparto local-positivo del bonus | Apache 2.0 | HuggingFace | No disponible |
+| STRIDE Qwen3-1.7B (este adaptador) | 1,7 B (base) + LoRA r=16 | No especificado en la ficha; base con 32.768 tokens nativos | Adaptador LoRA de RL para razonamiento matematico | Apache 2.0 | Hugging Face, 0 descargas | No disponible |
+| Qwen/Qwen3-1.7B (modelo base) | 1,7 B densos | 32.768 nativos, 131.072 con YaRN | Modelo denso instructivo con modo thinking | Apache 2.0 | Hugging Face, ampliamente usado | Publicados por el equipo Qwen |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,5 B densos | No disponible en la informacion recogida | Modelo destilado de razonamiento | MIT (segun la familia DeepSeek-R1) | Hugging Face | Publicados por DeepSeek |
+| Variante hermana stride-qwen3-1.7b-allref-correctonly-local-positive-20260925 | 1,7 B (base) + LoRA | Misma base | Adaptador LoRA con reparto local-positivo del bonus | Apache 2.0 | Hugging Face | No disponible |
 
 La comparación con alternativas de la misma categoría (modelos de 1 a 2 mil millones de parámetros orientados a razonamiento) no puede completarse en términos de rendimiento porque este adaptador no publica métricas. La diferencia relevante frente al modelo base y frente a los destilados es de propósito: aquí no se busca un modelo utilizable, sino un artefacto reproducible para experimentos de RL con recompensa verificable.
 
@@ -98,7 +98,7 @@ La comparación con alternativas de la misma categoría (modelos de 1 a 2 mil mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sandeep123/stride-qwen3-1.7b-allref-correctonly-kl0-token-uniform-20260925
+- Repositorio Hugging Face: https://huggingface.co/sandeep123/stride-qwen3-1.7b-allref-correctonly-kl0-token-uniform-20260925
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio oficial de Qwen3 (codigo y documentacion): https://github.com/QwenLM/Qwen3
 - Variante hermana (reparto local-positivo): https://huggingface.co/sandeep123/stride-qwen3-1.7b-allref-correctonly-local-positive-20260925

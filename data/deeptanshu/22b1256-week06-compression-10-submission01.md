@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Deeptanshu/22B1256-Week06-Compression-10-Submission01 es un artefacto publicado en HuggingFace por el usuario Deeptanshu. Por la nomenclatura del identificador ("Week06-Compression-10-Submission01") y el prefijo "22B1256", todo apunta a que se trata de la entrega de una practica academica de la semana 6 de un curso, centrada en compresion de modelos, y no de un modelo entrenado desde cero ni de un lanzamiento de produccion. El prefijo numerico parece un identificador de estudiante o de matricula, no un recuento de parametros.
+El repositorio Deeptanshu/22B1256-Week06-Compression-10-Submission01 es un artefacto publicado en Hugging Face por el usuario Deeptanshu. Por la nomenclatura del identificador ("Week06-Compression-10-Submission01") y el prefijo "22B1256", todo apunta a que se trata de la entrega de una practica academica de la semana 6 de un curso, centrada en compresion de modelos, y no de un modelo entrenado desde cero ni de un lanzamiento de produccion. El prefijo numerico parece un identificador de estudiante o de matricula, no un recuento de parametros.
 
 El repositorio esta etiquetado con safetensors, qwen3_5 y region:us, lo que sugiere que los pesos derivan de la familia Qwen 3.5 o que se ha reutilizado su configuracion de arquitectura. El tamano del repositorio es de 0,9 GB, una cifra compatible con un modelo pequeno o con una version fuertemente cuantizada o comprimida, pero no permite deducir el numero de parametros con fiabilidad. No se ha declarado licencia, pipeline, idiomas ni resultados de evaluacion.
 
@@ -46,7 +46,7 @@ Dado el nombre del repositorio, lo mas probable es que el contenido sea el resul
 - Verificacion de tecnicas de compresion: el repositorio puede servir para inspeccionar como se han almacenado pesos comprimidos de una arquitectura tipo Qwen 3.5, comparando el tamano final con el modelo de origen si este se identifica.
 - Material didactico: util como ejemplo de entrega academica para cursos de compresion o despliegue de modelos, siempre citando la fuente y sin presentarlo como modelo de produccion.
 - Evaluacion comparativa de cuantizacion: si se confirma el modelo base, podria emplearse para medir la perdida de calidad frente al original en tareas de generacion de texto.
-- Pruebas de carga en pipeline de HuggingFace: sirve para validar que un flujo de descarga, conversion y carga de safetensors funciona con repositorios pequenos.
+- Pruebas de carga en pipeline de Hugging Face: sirve para validar que un flujo de descarga, conversion y carga de safetensors funciona con repositorios pequenos.
 - Experimentacion en local: con 0,9 GB de pesos, es viable cargarlo en equipos de gama media para pruebas de inferencia, siempre que la tokenizer y la configuracion esten incluidos en el repositorio.
 - Auditoria de licencias: caso practico para revisar que ocurre cuando un repositorio no declara licencia y por que no deberia reutilizarse en entornos comerciales sin autorizacion expresa.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Deeptanshu/22B1256-Week06-Compression-10-Submission01 | no disponible | no disponible | no disponible | HuggingFace, 9 descargas |
+| Deeptanshu/22B1256-Week06-Compression-10-Submission01 | no disponible | no disponible | no disponible | Hugging Face, 9 descargas |
 | Familia Qwen 3.5 (referencia por etiqueta) | no disponible | no disponible | no disponible | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,5 +86,5 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Deeptanshu/22B1256-Week06-Compression-10-Submission01
+- Repositorio en Hugging Face: https://huggingface.co/Deeptanshu/22B1256-Week06-Compression-10-Submission01
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, papers, blogs, repositorios de codigo ni demos asociados.

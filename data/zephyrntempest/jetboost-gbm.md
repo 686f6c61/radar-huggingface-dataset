@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JetBoost-GBM es un repositorio de modelo publicado en HuggingFace por el usuario ZephyrNTempest el 14 de octubre de 2026, con licencia MIT y un tamanio de repositorio de 0,9 GB. En el momento de redactar esta ficha acumula 0 descargas y 1 like, y no tiene pipeline de inferencia declarado. La model card asociada unicamente contiene el campo de licencia (`license: mit`) y no aporta informacion sobre arquitectura, parametros, datos de entrenamiento ni capacidades.
+JetBoost-GBM es un repositorio de modelo publicado en Hugging Face por el usuario ZephyrNTempest el 14 de octubre de 2026, con licencia MIT y un tamanio de repositorio de 0,9 GB. En el momento de redactar esta ficha acumula 0 descargas y 1 like, y no tiene pipeline de inferencia declarado. La model card asociada unicamente contiene el campo de licencia (`license: mit`) y no aporta informacion sobre arquitectura, parametros, datos de entrenamiento ni capacidades.
 
 No es posible confirmar que se trate de un modelo de lenguaje transformer, de un modelo de vision, de un sistema de boosting sobre arboles de decision o de un artefacto auxiliar (adaptador, tokenizer empaquetado o pesos parciales). El propio nombre "JetBoost-GBM" sugiere, por convencion de nomenclatura, alguna relacion con gradient boosting machines, pero esta interpretacion no esta respaldada por ningun dato de la model card ni por documentacion adicional, por lo que debe tratarse como una hipotesis sin verificar.
 
@@ -25,7 +25,7 @@ Datos adicionales verificables del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| Identificador en HuggingFace | ZephyrNTempest/JetBoost-GBM |
+| Identificador en Hugging Face | ZephyrNTempest/JetBoost-GBM |
 | Autor | ZephyrNTempest |
 | Fecha de creacion | 2026-10-14 |
 | Fecha de ultima actualizacion | 2026-10-14 |
@@ -56,7 +56,7 @@ No es posible proponer casos de uso concretos y realistas sin conocer la tarea p
 
 Se recomienda, antes de considerar su uso:
 
-- Contactar con el autor a traves de la pagina del modelo en HuggingFace para solicitar una model card completa.
+- Contactar con el autor a traves de la pagina del modelo en Hugging Face para solicitar una model card completa.
 - Inspeccionar el contenido del repositorio (nombres de archivo, `config.json`, `tokenizer_config.json`, pesos y sus formatos) para determinar la arquitectura real.
 - Ejecutar una prueba de inferencia controlada en un entorno aislado para verificar que el artefacto carga y produce salidas coherentes.
 - Verificar que la licencia MIT declarada en los metadatos cubre los pesos y no solo el codigo auxiliar, ya que la model card no incluye ninguna clausula adicional al respecto.
@@ -95,5 +95,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZephyrNTempest/JetBoost-GBM
+- Modelo en Hugging Face: https://huggingface.co/ZephyrNTempest/JetBoost-GBM
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

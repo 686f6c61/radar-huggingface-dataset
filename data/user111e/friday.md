@@ -2,7 +2,7 @@
 
 ## Resumen
 
-User111e/Friday es un modelo publicado en HuggingFace por el usuario User111e. En el momento de la consulta, la informacion publica disponible es minima: la model card unicamente declara la licencia Apache 2.0 y no incluye ningun otro apartado de contenido (descripcion, arquitectura, datos de entrenamiento, ejemplos de uso o resultados).
+User111e/Friday es un modelo publicado en Hugging Face por el usuario User111e. En el momento de la consulta, la informacion publica disponible es minima: la model card unicamente declara la licencia Apache 2.0 y no incluye ningun otro apartado de contenido (descripcion, arquitectura, datos de entrenamiento, ejemplos de uso o resultados).
 
 El repositorio registra cero descargas y cero likes, y no tiene pipeline declarado ni idiomas soportados. Esto indica que se trata de una publicacion reciente y practicamente sin adopcion ni documentacion tecnica asociada, por lo que no es posible confirmar que tipo de modelo es, que problema resuelve ni si esta listo para uso en produccion.
 
@@ -87,7 +87,7 @@ No disponible. Al desconocerse la categoria del modelo (tamano, arquitectura, ta
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| User111e/Friday | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| User111e/Friday | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ No disponible. Al desconocerse la categoria del modelo (tamano, arquitectura, ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/User111e/Friday
+- Hugging Face: https://huggingface.co/User111e/Friday
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

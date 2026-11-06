@@ -63,6 +63,6 @@ No se dispone de información suficiente para establecer una comparativa. Aunque
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.90-seed-42)
-- [Perfil de la autora en HuggingFace](https://huggingface.co/AlinaGonch)
+- [Modelo en Hugging Face](https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.90-seed-42)
+- [Perfil de la autora en Hugging Face](https://huggingface.co/AlinaGonch)
 - [Repositorio de IBM Granite 4.1 (modelo base probable)](https://github.com/ibm-granite/granite-4.1-language-models)

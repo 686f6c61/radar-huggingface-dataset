@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks especificos para este finetune en l
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-2B (base) | 2,27 B | no disponible | Si | Apache 2.0 (segun serie Qwen) | HuggingFace, Ollama |
-| Qwen3-2B (anterior) | 2,27 B | 32k | No | Apache 2.0 | HuggingFace |
-| Qwen3-VL-2B | 2,27 B | 32k | Si | Apache 2.0 | HuggingFace |
-| Pranjalps1/Qwen3.5-2b-code | 2,27 B | no disponible | Si | no disponible | HuggingFace (GGUF) |
+| Qwen3.5-2B (base) | 2,27 B | no disponible | Si | Apache 2.0 (segun serie Qwen) | Hugging Face, Ollama |
+| Qwen3-2B (anterior) | 2,27 B | 32k | No | Apache 2.0 | Hugging Face |
+| Qwen3-VL-2B | 2,27 B | 32k | Si | Apache 2.0 | Hugging Face |
+| Pranjalps1/Qwen3.5-2b-code | 2,27 B | no disponible | Si | no disponible | Hugging Face (GGUF) |
 
 La comparativa se basa en datos publicos de la serie Qwen; el finetune de Pranjalps1 anade una capa de especializacion en codigo y formato GGUF, pero carece de licencia explicita y de benchmarks propios.
 
@@ -79,7 +79,7 @@ La comparativa se basa en datos publicos de la serie Qwen; el finetune de Pranja
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Pranjalps1/Qwen3.5-2b-code
+- Repositorio Hugging Face: https://huggingface.co/Pranjalps1/Qwen3.5-2b-code
 - Variante tool calling: https://huggingface.co/Pranjalps1/Qwen3.5-2b-it-tool
 - Variante razonamiento: https://huggingface.co/Pranjalps1/Qwen3.5-2b-reasoning
 - Serie Qwen3.5 (GitHub oficial): https://github.com/QwenLM/Qwen3.8

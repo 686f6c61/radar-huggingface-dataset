@@ -67,7 +67,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. Como referenci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mahdisml/Qwen3.5-9B-Q5_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mahdisml/Qwen3.5-9B-Q5_0-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de la serie Qwen3.5 (no oficial): https://github.com/ABDtmx/Qwen3.5
 - Pagina de Ollama para qwen3.5:9b: https://ollama.com/library/qwen3.5:9b

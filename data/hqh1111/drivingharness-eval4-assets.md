@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`HqH1111/drivingharness-eval4-assets` es un repositorio alojado en HuggingFace por el usuario HqH1111 que, por su nombre y por el tag `safetensors`, parece tratarse de un conjunto de artefactos (assets) asociados a una evaluacion denominada "drivingharness-eval4", presumiblemente orientada a modelos o sistemas de conduccion autonoma. No se dispone de informacion publica sobre el pipeline, la arquitectura ni el proposito exacto del contenido.
+`HqH1111/drivingharness-eval4-assets` es un repositorio alojado en Hugging Face por el usuario HqH1111 que, por su nombre y por el tag `safetensors`, parece tratarse de un conjunto de artefactos (assets) asociados a una evaluacion denominada "drivingharness-eval4", presumiblemente orientada a modelos o sistemas de conduccion autonoma. No se dispone de informacion publica sobre el pipeline, la arquitectura ni el proposito exacto del contenido.
 
-El repositorio tiene un tamano de 7,9 GB, lo que sugiere pesos de modelo o un conjunto de datos/artefactos de cierto volumen, pero no se especifica si corresponde a un modelo entrenado, a checkpoints intermedios o a recursos auxiliares de evaluacion. El acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar el contenido.
+El repositorio tiene un tamano de 7,9 GB, lo que sugiere pesos de modelo o un conjunto de datos/artefactos de cierto volumen, pero no se especifica si corresponde a un modelo entrenado, a checkpoints intermedios o a recursos auxiliares de evaluacion. El acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar el contenido.
 
-No se han publicado descargas ni "likes", y la ficha de HuggingFace no incluye informacion sobre idiomas, pipeline ni licencia concreta mas alla de la etiqueta generica `other`. Por tanto, esta ficha se limita a documentar los datos disponibles y a marcar explicitamente como "no disponible" todo aquello que no puede verificarse.
+No se han publicado descargas ni "likes", y la ficha de Hugging Face no incluye informacion sobre idiomas, pipeline ni licencia concreta mas alla de la etiqueta generica `other`. Por tanto, esta ficha se limita a documentar los datos disponibles y a marcar explicitamente como "no disponible" todo aquello que no puede verificarse.
 
 ## Especificaciones tecnicas
 
@@ -60,7 +60,7 @@ No disponible. No se conocen modelos comparables porque no se ha identificado la
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar condiciones en HuggingFace antes de descargar.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face antes de descargar.
 - Licencia etiquetada como `other`: es imprescindible revisar los terminos concretos antes de cualquier uso, especialmente comercial.
 - Ausencia total de documentacion publica sobre arquitectura, entrenamiento y capacidades.
 - Riesgo de que el repositorio contenga artefactos auxiliares (datasets, configuraciones, checkpoints parciales) y no un modelo listo para inferencia.
@@ -70,5 +70,5 @@ No disponible. No se conocen modelos comparables porque no se ha identificado la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HqH1111/drivingharness-eval4-assets
+- Repositorio en Hugging Face: https://huggingface.co/HqH1111/drivingharness-eval4-assets
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion proporcionada.

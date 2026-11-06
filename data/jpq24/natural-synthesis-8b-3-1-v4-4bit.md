@@ -23,14 +23,14 @@ Su relevancia actual es limitada y debe valorarse con cautela: a fecha de la inf
 | Modelo base | unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit |
 | Tamano del repositorio | 5,7 GB |
 | Pipeline | text-generation |
-| Fecha de creacion | 2026-10-04 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-10-04 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-04 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-10-04 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
 La arquitectura subyacente es la de Llama 3.1 8B Instruct: un transformer decoder-only autorregresivo con normalizacion RMSNorm, activacion SwiGLU, embeddings rotatorios (RoPE) y atencion con consultas agrupadas (GQA). El modelo se distribuye ya cuantizado a 4 bits con bitsandbytes, de modo que los pesos almacenados son de baja precision y la reconstruccion se produce en tiempo de carga. Este repositorio es un ajuste fino adicional sobre esa version cuantizada, no sobre el modelo original en bf16, lo que implica que el entrenamiento partio de pesos ya degradados por la cuantizacion.
 
-La model card no aporta informacion sobre el proceso de entrenamiento: se desconoce el numero de tokens, la composicion del dataset, la duracion del ajuste, la tasa de aprendizaje, si se uso LoRA/QLoRA o ajuste completo, y si hubo etapas de RLHF, DPO u otro metodo de alineacion. El unico dato tecnico declarado es que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, lo que sugiere un flujo QLoRA o LoRA sobre pesos de 4 bits, pero no se confirma. Tampoco se documenta ninguna innovacion tecnica propia. Cualquier afirmacion adicional sobre el entrenamiento seria especulativa.
+La model card no aporta informacion sobre el proceso de entrenamiento: se desconoce el numero de tokens, la composicion del dataset, la duracion del ajuste, la tasa de aprendizaje, si se uso LoRA/QLoRA o ajuste completo, y si hubo etapas de RLHF, DPO u otro metodo de alineacion. El unico dato tecnico declarado es que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, lo que sugiere un flujo QLoRA o LoRA sobre pesos de 4 bits, pero no se confirma. Tampoco se documenta ninguna innovacion tecnica propia. Cualquier afirmacion adicional sobre el entrenamiento seria especulativa.
 
 ## Capacidades
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JPQ24/Natural-Synthesis-8b-3.1-v4-4bit | 8,03 B | 128.000 tokens (heredado del base, no confirmado) | No disponible | apache-2.0 (declarada, en conflicto con el base) | HuggingFace, safetensors 4 bits |
-| Meta-Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | No disponible en esta ficha | Llama 3.1 Community License | HuggingFace, bf16 y otras variantes |
-| Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | No disponible en esta ficha | Apache 2.0 | HuggingFace, amplio ecosistema GGUF |
-| Qwen2.5-7B-Instruct | 7,62 B | 131.072 tokens | No disponible en esta ficha | Apache 2.0 | HuggingFace, amplio ecosistema GGUF |
+| JPQ24/Natural-Synthesis-8b-3.1-v4-4bit | 8,03 B | 128.000 tokens (heredado del base, no confirmado) | No disponible | apache-2.0 (declarada, en conflicto con el base) | Hugging Face, safetensors 4 bits |
+| Meta-Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | No disponible en esta ficha | Llama 3.1 Community License | Hugging Face, bf16 y otras variantes |
+| Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | No disponible en esta ficha | Apache 2.0 | Hugging Face, amplio ecosistema GGUF |
+| Qwen2.5-7B-Instruct | 7,62 B | 131.072 tokens | No disponible en esta ficha | Apache 2.0 | Hugging Face, amplio ecosistema GGUF |
 
 La comparacion se limita a parametros, contexto, licencia y disponibilidad porque no hay resultados de benchmarks publicados para este derivado. En cuanto a licencia y madurez del ecosistema, Mistral 7B Instruct v0.3 y Qwen2.5 7B Instruct son alternativas mas seguras para uso comercial, ya que ambas son Apache 2.0 de origen y no derivan de la licencia de Meta.
 
@@ -93,10 +93,10 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad porqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JPQ24/Natural-Synthesis-8b-3.1-v4-4bit
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/JPQ24/Natural-Synthesis-8b-3.1-v4-4bit
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Modelo original de Meta: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Paper de Llama 3.1: https://arxiv.org/abs/2407.21783
 - Documentacion de bitsandbytes: https://github.com/bitsandbytes-foundation/bitsandbytes

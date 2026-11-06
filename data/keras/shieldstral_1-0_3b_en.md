@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shieldstral 1.0 3B EN es un modelo de generación de texto publicado en HuggingFace bajo el identificador `keras/shieldstral_1.0_3b_en` por el usuario `keras`. Se trata de una conversión del backbone Mistral3 al formato de KerasHub, lo que permite ejecutar el mismo modelo sobre los backends de JAX, TensorFlow y PyTorch. La model card indica explícitamente que está asociado a una tarea `CausalLM` y que la configuración corresponde a un `mistral3_backbone_1` con pesos en bfloat16.
+Shieldstral 1.0 3B EN es un modelo de generación de texto publicado en Hugging Face bajo el identificador `keras/shieldstral_1.0_3b_en` por el usuario `keras`. Se trata de una conversión del backbone Mistral3 al formato de KerasHub, lo que permite ejecutar el mismo modelo sobre los backends de JAX, TensorFlow y PyTorch. La model card indica explícitamente que está asociado a una tarea `CausalLM` y que la configuración corresponde a un `mistral3_backbone_1` con pesos en bfloat16.
 
 El modelo combina un transformer causal de 26 capas con un encoder visual, por lo que su configuración es multimodal (texto e imagen) pese a estar etiquetado como `text-generation` en el pipeline. El tamaño del repositorio (8,5 GB) es coherente con un modelo de aproximadamente 3.000 millones de parámetros en bfloat16, aunque el número exacto de parámetros no se declara en la información disponible.
 
@@ -101,8 +101,8 @@ La comparativa es aproximada: no se dispone de benchmarks del modelo Shieldstral
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keras/shieldstral_1.0_3b_en
+- Modelo en Hugging Face: https://huggingface.co/keras/shieldstral_1.0_3b_en
 - Documentación de Mistral3 en KerasHub: https://keras.io/api/keras_hub/models/mistral3
 - Documentación de Keras: https://keras.io/
 - Keras 3 (multi-backend): https://keras.io/keras_3/
-- Documentación de model cards de HuggingFace: https://huggingface.co/docs/hub/model-cards
+- Documentación de model cards de Hugging Face: https://huggingface.co/docs/hub/model-cards

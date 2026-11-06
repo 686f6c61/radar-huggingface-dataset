@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Whisper tiny Portuguese es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario emma333333 en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder transformer de Whisper, con 37,7 millones de parametros totales, disenado para transcribir audio. El ajuste se ha realizado sobre el dataset denominado "portuguese_english", con el objetivo declarado de adaptar el modelo base a acentos portugueses.
+Whisper tiny Portuguese es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario emma333333 en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder transformer de Whisper, con 37,7 millones de parametros totales, disenado para transcribir audio. El ajuste se ha realizado sobre el dataset denominado "portuguese_english", con el objetivo declarado de adaptar el modelo base a acentos portugueses.
 
 El modelo parte de la version tiny de la familia Whisper, la mas pequena de las cinco variantes publicadas por OpenAI (tiny, base, small, medium y large). Con solo 37,7 millones de parametros y un repositorio de 0,3 GB, esta pensado para entornos con recursos muy limitados, como dispositivos de borde, prototipos rapidos o pipelines de bajo coste donde la latencia y el consumo de memoria son criticos.
 
-La relevancia de esta ficha es limitada: se trata de un modelo experimental con cero descargas y cero likes en el momento de la consulta, una model card generada automaticamente por el Trainer de HuggingFace con secciones sin completar ("More information needed") y sin publicacion de resultados verificados. El unico dato de rendimiento disponible es un WER de 11,9478 declarado por el autor sobre el split de test del dataset portuguese_english, marcado como no verificado.
+La relevancia de esta ficha es limitada: se trata de un modelo experimental con cero descargas y cero likes en el momento de la consulta, una model card generada automaticamente por el Trainer de Hugging Face con secciones sin completar ("More information needed") y sin publicacion de resultados verificados. El unico dato de rendimiento disponible es un WER de 11,9478 declarado por el autor sobre el split de test del dataset portuguese_english, marcado como no verificado.
 
 ## Especificaciones tecnicas
 
@@ -77,10 +77,10 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 
 | Modelo | Parametros | Contexto de audio | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Whisper tiny Portuguese (este modelo) | 37,7 M | 30 s por ventana | 11,9478 (dataset propio, no verificado) | apache-2.0 | HuggingFace, 0 descargas |
-| openai/whisper-tiny | 37,7 M | 30 s por ventana | no disponible en esta ficha | apache-2.0 | HuggingFace, ampliamente usado |
-| openai/whisper-base | 74 M | 30 s por ventana | no disponible en esta ficha | apache-2.0 | HuggingFace, ampliamente usado |
-| openai/whisper-small | 244 M | 30 s por ventana | no disponible en esta ficha | apache-2.0 | HuggingFace, ampliamente usado |
+| Whisper tiny Portuguese (este modelo) | 37,7 M | 30 s por ventana | 11,9478 (dataset propio, no verificado) | apache-2.0 | Hugging Face, 0 descargas |
+| openai/whisper-tiny | 37,7 M | 30 s por ventana | no disponible en esta ficha | apache-2.0 | Hugging Face, ampliamente usado |
+| openai/whisper-base | 74 M | 30 s por ventana | no disponible en esta ficha | apache-2.0 | Hugging Face, ampliamente usado |
+| openai/whisper-small | 244 M | 30 s por ventana | no disponible en esta ficha | apache-2.0 | Hugging Face, ampliamente usado |
 
 La comparacion con los modelos base de OpenAI es la mas directa, ya que este modelo es un fine-tuning de whisper-tiny. No se dispone de datos de rendimiento de las alternativas en el mismo dataset, por lo que no es posible establecer una comparacion cuantitativa fiable. La ventaja principal de este modelo frente a whisper-tiny original seria su adaptacion a acentos portugueses, pero dicha ventaja no esta verificada ni documentada con detalle.
 
@@ -98,7 +98,7 @@ La comparacion con los modelos base de OpenAI es la mas directa, ya que este mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emma333333/whisper-tiny_to_portuguese_accent
+- Modelo en Hugging Face: https://huggingface.co/emma333333/whisper-tiny_to_portuguese_accent
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - Repositorio oficial de OpenAI Whisper: https://github.com/openai/whisper

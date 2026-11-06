@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento ni de características detalladas (context
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MergekitCloud/mergekit-63
+- Modelo en Hugging Face: https://huggingface.co/MergekitCloud/mergekit-63
 - Repositorio de mergekit: https://github.com/arcee-ai/mergekit
 - Documentación de mergekit: https://www.mergekit.com/
 - Artículo sobre Model Stock: https://arxiv.org/abs/2403.19522

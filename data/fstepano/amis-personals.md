@@ -79,7 +79,7 @@ No se dispone de resultados de rendimiento para comparar directamente. La compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fstepano/amis-personals
+- Repositorio Hugging Face: https://huggingface.co/fstepano/amis-personals
 - Unsloth (herramienta de fine-tuning): https://github.com/unslothai/unsloth
 - Gemma 2 (modelo base): https://huggingface.co/google/gemma-2-9b-it
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JamesGuima/bert-end-of-turn-pt` es un modelo de clasificacion de texto publicado en HuggingFace por el usuario JamesGuima, construido sobre una arquitectura BERT con 108.924.674 parametros en formato safetensors y un tamano de repositorio de 0,4 GB. El repositorio no incluye model card sustantiva: el README es la plantilla autogenerada de HuggingFace con todos los campos marcados como "[More Information Needed]", por lo que no hay informacion del autor sobre datos de entrenamiento, idioma, licencia o tarea objetivo.
+`JamesGuima/bert-end-of-turn-pt` es un modelo de clasificacion de texto publicado en Hugging Face por el usuario JamesGuima, construido sobre una arquitectura BERT con 108.924.674 parametros en formato safetensors y un tamano de repositorio de 0,4 GB. El repositorio no incluye model card sustantiva: el README es la plantilla autogenerada de Hugging Face con todos los campos marcados como "[More Information Needed]", por lo que no hay informacion del autor sobre datos de entrenamiento, idioma, licencia o tarea objetivo.
 
 La unica informacion fiable disponible son los metadatos del Hub: pipeline `text-classification`, etiquetas `bert`, `safetensors`, `text-embeddings-inference` y `endpoints_compatible`, y la referencia `arxiv:1910.09700`, que corresponde al articulo del calculador de impacto de carbono de Lacoste et al. (2019) citado en la plantilla, no a un paper del modelo. El sufijo `pt` del identificador sugiere portugués, pero es una inferencia no confirmada por el autor.
 
@@ -31,7 +31,7 @@ Se trata, por tanto, de un checkpoint sin documentar, con cero descargas y cero 
 
 El unico dato arquitectonico confirmado es la etiqueta `bert` del Hub y el recuento de parametros, 108.924.674, coherente con la escala de un BERT-base (aproximadamente 110 millones de parametros). Se trata de un encoder transformer bidireccional con atencion completa, orientado a tareas de clasificacion de secuencias mediante una cabeza sobre el token `[CLS]` o mediante pooling. No hay informacion sobre el numero de capas, dimensiones ocultas, numero de cabezas de atencion, tamano de vocabulario ni configuracion exacta, ya que el autor no ha publicado el `config.json` en la model card.
 
-Tampoco existe informacion sobre el procedimiento de entrenamiento: se desconocen el corpus, el numero de tokens, si hubo preentrenamiento desde cero o ajuste fino sobre un checkpoint previo, y si se aplicaron tecnicas de alineacion como RLHF o DPO (poco habituales en modelos encoder de clasificacion). La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla estandar de model card, y no describe este modelo. La etiqueta `text-embeddings-inference` indica unicamente compatibilidad de despliegue con el servidor TEI de HuggingFace.
+Tampoco existe informacion sobre el procedimiento de entrenamiento: se desconocen el corpus, el numero de tokens, si hubo preentrenamiento desde cero o ajuste fino sobre un checkpoint previo, y si se aplicaron tecnicas de alineacion como RLHF o DPO (poco habituales en modelos encoder de clasificacion). La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla estandar de model card, y no describe este modelo. La etiqueta `text-embeddings-inference` indica unicamente compatibilidad de despliegue con el servidor TEI de Hugging Face.
 
 ## Capacidades
 
@@ -64,17 +64,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 436 MB en FP32, 218 MB en FP16/BF16, 109 MB en INT8 y en torno a 55 MB en cuantizacion de 4 bits (calculo derivado de los 108.924.674 parametros, no de mediciones publicadas). A ello hay que sumar el espacio de activaciones, que para secuencias cortas es de decenas de MB.
 - GPU recomendadas: cualquier GPU moderna sirve; el modelo no requiere A100 ni H100. Una RTX 3060, RTX 4090 o incluso una GTX 1650 son mas que suficientes. El despliegue en GPU dedicada solo se justifica por volumen de peticiones, no por memoria.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU con mas de 2 GB de VRAM, y tambien en CPU. La inferencia en CPU sobre lotes pequenos es viable para este tamano.
-- Opciones de despliegue: `transformers` con PyTorch, HuggingFace Text Embeddings Inference (etiqueta `text-embeddings-inference`), y exportacion a ONNX con Optimum para servir con ONNX Runtime o NVIDIA Triton. No se han publicado pesos GGUF, por lo que llama.cpp y Ollama no son opciones directas sin conversion previa.
+- Opciones de despliegue: `transformers` con PyTorch, Hugging Face Text Embeddings Inference (etiqueta `text-embeddings-inference`), y exportacion a ONNX con Optimum para servir con ONNX Runtime o NVIDIA Triton. No se han publicado pesos GGUF, por lo que llama.cpp y Ollama no son opciones directas sin conversion previa.
 - Latencia y throughput estimados: no disponible. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JamesGuima/bert-end-of-turn-pt | 108.924.674 | no disponible | text-classification (fin de turno, sin confirmar) | no disponible | HuggingFace |
-| bert-base-uncased (Google) | ~110 M | 512 | encoder generico, ajustable | Apache 2.0 | HuggingFace |
-| BERTimbau base (neuralmind) | ~110 M | 512 | encoder en portugues de Brasil | MIT | HuggingFace |
-| XLM-RoBERTa base (Meta) | ~278 M | 512 | encoder multilingue | MIT | HuggingFace |
+| JamesGuima/bert-end-of-turn-pt | 108.924.674 | no disponible | text-classification (fin de turno, sin confirmar) | no disponible | Hugging Face |
+| bert-base-uncased (Google) | ~110 M | 512 | encoder generico, ajustable | Apache 2.0 | Hugging Face |
+| BERTimbau base (neuralmind) | ~110 M | 512 | encoder en portugues de Brasil | MIT | Hugging Face |
+| XLM-RoBERTa base (Meta) | ~278 M | 512 | encoder multilingue | MIT | Hugging Face |
 
 La comparacion es necesariamente limitada: el modelo analizado no publica licencia, idiomas, contexto ni metricas, de modo que la unica dimension comparable con fiabilidad es el recuento de parametros. BERTimbau base es el candidato mas cercano si se confirma que el modelo esta orientado al portugues; bert-base-uncased lo es si esta en ingles; XLM-RoBERTa base cubre escenarios multilingues a costa de triplicar el tamano.
 
@@ -91,7 +91,7 @@ La comparacion es necesariamente limitada: el modelo analizado no publica licenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JamesGuima/bert-end-of-turn-pt
+- Modelo en Hugging Face: https://huggingface.co/JamesGuima/bert-end-of-turn-pt
 - Paper citado en las etiquetas (Lacoste et al., 2019, estimacion de emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de aprendizaje automatico: https://mlco2.github.io/impact
 - Documentacion de Text Embeddings Inference: https://huggingface.co/docs/text-embeddings-inference

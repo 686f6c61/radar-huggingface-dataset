@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chaturanga Pro | ~100 M (100.684.032) | no disponible | ~600.000 filas de chessllm, 7.000 pasos | apache-2.0 | safetensors en HuggingFace |
-| Chaturanga Mini | ~50 M | no disponible | fine-tuning sobre chessllm (número de filas no disponible) | no disponible en la información | HuggingFace |
-| Chaturanga Nano | ~25 M | no disponible | 200.000 filas de chessllm | no disponible en la información | HuggingFace |
-| Supra2-100M-Base | ~100 M | no disponible | modelo base generalista, sin fine-tuning de ajedrez | no disponible en la información | HuggingFace (SupraLabs) |
+| Chaturanga Pro | ~100 M (100.684.032) | no disponible | ~600.000 filas de chessllm, 7.000 pasos | apache-2.0 | safetensors en Hugging Face |
+| Chaturanga Mini | ~50 M | no disponible | fine-tuning sobre chessllm (número de filas no disponible) | no disponible en la información | Hugging Face |
+| Chaturanga Nano | ~25 M | no disponible | 200.000 filas de chessllm | no disponible en la información | Hugging Face |
+| Supra2-100M-Base | ~100 M | no disponible | modelo base generalista, sin fine-tuning de ajedrez | no disponible en la información | Hugging Face (SupraLabs) |
 
 No se conocen en la información proporcionada otros SLM públicos especializados en generación de jugadas de ajedrez en SAN con los que establecer una comparación cuantitativa. La comparación con modelos generalistas del mismo orden de parámetros resultaría poco informativa, ya que no se han publicado métricas del dominio.
 
@@ -89,7 +89,7 @@ No se conocen en la información proporcionada otros SLM públicos especializado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DireDreadlord/Chaturanga-Pro
+- Modelo en Hugging Face: https://huggingface.co/DireDreadlord/Chaturanga-Pro
 - Modelo base: https://huggingface.co/SupraLabs/Supra2-100M-Base
 - Colección de la familia Supra2: https://huggingface.co/collections/SupraLabs/supra2
 - Dataset de entrenamiento: https://huggingface.co/datasets/mlabonne/chessllm

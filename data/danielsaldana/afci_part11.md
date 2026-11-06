@@ -18,7 +18,7 @@ La relevancia es la de un recurso de *TinyML* para senal electrica: las grabacio
 | Longitud de contexto | no disponible (no aplica) |
 | Tipos de cuantizacion | no disponible (no aplica a este repositorio; el pipeline del kit menciona una DNN cuantizada) |
 | Idiomas soportados | no disponible (no aplica; son senales de corriente, no texto) |
-| Licencia | `other` en HuggingFace; los WAV heredan la licencia de su publicador original: CC-BY-NC-4.0 (Harvard Dataverse, doi:10.7910/DVN/IFDIZ1) |
+| Licencia | `other` en Hugging Face; los WAV heredan la licencia de su publicador original: CC-BY-NC-4.0 (Harvard Dataverse, doi:10.7910/DVN/IFDIZ1) |
 | Formato de pesos | no disponible (no hay pesos); los datos estan en WAV de 48 kHz, 16 bits, mono, mas ficheros `.partNNN` y `SHA256SUMS.txt` |
 
 ## Arquitectura y entrenamiento
@@ -71,7 +71,7 @@ No se dispone de informacion sobre otros modelos o datasets comparables en la in
 
 - No es un modelo: no contiene pesos, configuracion de inferencia ni tokenizador; no puede usarse para generar texto ni para ninguna tarea de NLP.
 - Licencia CC-BY-NC-4.0 en los datos originales: uso exclusivamente no comercial y obligacion de citar a los autores (Siegel, Pratt, Sun y Sarma, 2018).
-- El campo `license: other` de HuggingFace no aclara los terminos; la model card remite a la licencia de cada publicador original.
+- El campo `license: other` de Hugging Face no aclara los terminos; la model card remite a la licencia de cada publicador original.
 - La distincion entre grabaciones normales y con arco no esta documentada en el repositorio: hay que consultar el articulo o la pagina del Dataverse, y la model card indica que el PDF de la tesis no pudo obtenerse automaticamente.
 - Cobertura limitada: solo dos clases de dispositivo (burner y fan) en esta parte; el resto de clases esta en la parte 12.
 - Los ficheros de mas de 100 MB estan troceados: sin ejecutar los scripts de reensamblado y verificar `SHA256SUMS.txt`, los WAV no son utilizables directamente.
@@ -80,7 +80,7 @@ No se dispone de informacion sobre otros modelos o datasets comparables en la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danielsaldana/AFCI_part11
+- Repositorio en Hugging Face: https://huggingface.co/danielsaldana/AFCI_part11
 - Indice maestro del kit (AFCI_part6): https://huggingface.co/danielsaldana/AFCI_part6/blob/main/00_START_HERE_MASTER_INDEX.md
 - Dataset original en Harvard Dataverse: https://doi.org/10.7910/DVN/IFDIZ1
 - Articulo de referencia: Siegel, Pratt, Sun y Sarma, "Real-time Deep Neural Networks for internet-enabled arc-fault detection", *Engineering Applications of Artificial Intelligence*, 2018.

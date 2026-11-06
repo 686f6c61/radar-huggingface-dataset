@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GeoPillars es un conjunto de checkpoints para detección 3D de coches sobre nubes de puntos LiDAR, asociado al artículo del mismo nombre. Lo publica el usuario GeoPillars en HuggingFace bajo licencia Apache 2.0 y está implementado sobre el stack OpenMMLab (mmdet3d 1.4.0, mmcv 2.1.0, mmengine 0.10.7, mmdet 3.3.0). No es un modelo de lenguaje ni un modelo generativo: es un detector de objetos 3D pensado para percepción de vehículos autónomos, con pipeline declarado `object-detection`.
+GeoPillars es un conjunto de checkpoints para detección 3D de coches sobre nubes de puntos LiDAR, asociado al artículo del mismo nombre. Lo publica el usuario GeoPillars en Hugging Face bajo licencia Apache 2.0 y está implementado sobre el stack OpenMMLab (mmdet3d 1.4.0, mmcv 2.1.0, mmengine 0.10.7, mmdet 3.3.0). No es un modelo de lenguaje ni un modelo generativo: es un detector de objetos 3D pensado para percepción de vehículos autónomos, con pipeline declarado `object-detection`.
 
 El repositorio contiene los pesos de las siete ejecuciones descritas en el artículo, todas entrenadas sobre datos sintéticos de CARLA (123.364 escaneos, batch global de 112, 8 épocas). La propuesta central es GeoPillars con NGFM (un módulo de geometría, presumiblemente "Neural Geometric Feature Module" según la nomenclatura del autor) frente a la línea base CenterPoint, con ablaciones sobre la resolución de voxel (0,4 m frente a 0,2 m), el número de puntos por voxel (8 frente a 20), el factor de sobremuestreo (OSF=4 frente a OSF=1) y el uso del canal de intensidad.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Entrada | Presupuesto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GeoPillars (NGFM) | Detector 3D con encoder pillar + RepLK + NGFM | `xyzi` o `xyz` | Voxel 0,4 m, 8 pts/voxel, OSF=4 | Apache 2.0 | Pesos en HuggingFace (epocas 4-8) |
-| CenterPoint (presupuesto GeoPillars) | Detector 3D con encoder pillar | `xyzi` o `xyz` | Voxel 0,4 m, 8 pts/voxel, OSF=4 | Apache 2.0 (en este repo) | Pesos en HuggingFace (epocas 4-8) |
-| CenterPoint (presupuesto nativo) | Detector 3D con encoder pillar | `xyzi` | Voxel 0,2 m, 20 pts/voxel, OSF=4 | Apache 2.0 (en este repo) | Pesos en HuggingFace (epocas 4-8) |
-| CenterPoint + GeoPillar encoder + RepLK (sin NGFM) | Detector 3D hibrido | no especificado | Mismo presupuesto | Apache 2.0 (en este repo) | Pesos en HuggingFace (epocas 4-8) |
+| GeoPillars (NGFM) | Detector 3D con encoder pillar + RepLK + NGFM | `xyzi` o `xyz` | Voxel 0,4 m, 8 pts/voxel, OSF=4 | Apache 2.0 | Pesos en Hugging Face (epocas 4-8) |
+| CenterPoint (presupuesto GeoPillars) | Detector 3D con encoder pillar | `xyzi` o `xyz` | Voxel 0,4 m, 8 pts/voxel, OSF=4 | Apache 2.0 (en este repo) | Pesos en Hugging Face (epocas 4-8) |
+| CenterPoint (presupuesto nativo) | Detector 3D con encoder pillar | `xyzi` | Voxel 0,2 m, 20 pts/voxel, OSF=4 | Apache 2.0 (en este repo) | Pesos en Hugging Face (epocas 4-8) |
+| CenterPoint + GeoPillar encoder + RepLK (sin NGFM) | Detector 3D hibrido | no especificado | Mismo presupuesto | Apache 2.0 (en este repo) | Pesos en Hugging Face (epocas 4-8) |
 
 La comparativa se limita a las variantes incluidas en el propio repositorio, ya que la informacion disponible no aporta metricas que permitan contrastar con implementaciones externas de CenterPoint u otros detectores LiDAR como PointPillars o VoxelNet.
 
@@ -91,7 +91,7 @@ La comparativa se limita a las variantes incluidas en el propio repositorio, ya 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GeoPillars/GeoPillars
+- Modelo en Hugging Face: https://huggingface.co/GeoPillars/GeoPillars
 - Codigo fuente (`src/`): referenciado en la model card como parte del repositorio del proyecto, sin URL publica disponible en la informacion proporcionada.
 - Articulo GeoPillars: no disponible en la informacion proporcionada.
 - Repositorio OpenMMLab mmdetection3d: https://github.com/open-mmlab/mmdetection3d

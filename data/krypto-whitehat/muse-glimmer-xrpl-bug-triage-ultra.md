@@ -73,4 +73,4 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- [HuggingFace - Krypto-Whitehat/muse-glimmer-xrpl-bug-triage-ultra](https://huggingface.co/Krypto-Whitehat/muse-glimmer-xrpl-bug-triage-ultra)
+- [Hugging Face - Krypto-Whitehat/muse-glimmer-xrpl-bug-triage-ultra](https://huggingface.co/Krypto-Whitehat/muse-glimmer-xrpl-bug-triage-ultra)

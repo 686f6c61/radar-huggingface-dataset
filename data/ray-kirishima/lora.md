@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Ray-kirishima/lora` es un artefacto alojado en HuggingFace por el usuario Ray-kirishima, publicado el 15 de septiembre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y su model card se limita a una unica linea de metadatos (`license: mit`) sin descripcion, instrucciones de uso ni referencia a un modelo base.
+El repositorio `Ray-kirishima/lora` es un artefacto alojado en Hugging Face por el usuario Ray-kirishima, publicado el 15 de septiembre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y su model card se limita a una unica linea de metadatos (`license: mit`) sin descripcion, instrucciones de uso ni referencia a un modelo base.
 
 No se dispone de informacion verificable sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, datos de entrenamiento ni idiomas soportados. El propio identificador del repositorio incluye el termino "lora", lo que sugiere que podria tratarse de un adaptador de bajo rango en lugar de un modelo completo, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
 
@@ -53,7 +53,7 @@ No es posible proponer casos de uso concretos y verificables sin conocer la natu
 - Evaluacion comparativa de tecnicas de ajuste: el artefacto podria emplearse como punto de partida para reproducir experimentos de PEFT (Parameter-Efficient Fine-Tuning), pero sin una model card detallada la reproducibilidad es practicamente nula.
 - Demostraciones internas de inferencia: si el artefacto carga correctamente en un framework estandar (transformers, PEFT), podria servir para validar pipelines internos de despliegue antes de invertir en modelos mayores.
 - Analisis de seguridad de repositorios: dado que no hay documentacion ni historial de descargas, el artefacto es un candidato razonable para probar flujos de revision de pesos y deteccion de contenido inesperado antes de integrarlos en un catalogo corporativo.
-- Docencia sobre ecosistema HuggingFace: puede utilizarse como ejemplo de repositorio minimo publicado con licencia, para ilustrar a estudiantes que es la documentacion imprescindible que falta en una model card.
+- Docencia sobre ecosistema Hugging Face: puede utilizarse como ejemplo de repositorio minimo publicado con licencia, para ilustrar a estudiantes que es la documentacion imprescindible que falta en una model card.
 
 ## Benchmarks y rendimiento
 
@@ -85,6 +85,6 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ray-kirishima/lora
+- Repositorio en Hugging Face: https://huggingface.co/Ray-kirishima/lora
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.
 - Resultados de la busqueda web: los unicos resultados devueltos corresponden a paginas de inicio de sesion y portadas de Facebook (`https://www.facebook.com/`, `https://secure.facebook.com/login/`, `https://m.me/www.facebook.com`), sin ninguna relacion con el modelo. No aportan informacion util y se descartan como fuentes.

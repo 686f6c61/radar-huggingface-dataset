@@ -41,7 +41,7 @@ Los resultados declarados de entrenamiento son una pérdida de entrenamiento de 
 - Tareas de código y preguntas técnicas, según los casos de uso previstos por el autor.
 - Tareas matemáticas y analíticas.
 - Explicación estructurada de respuestas y justificación de pasos intermedios.
-- Compatibilidad declarada con endpoints (`endpoints_compatible`), lo que facilita su exposición mediante APIs compatibles con el formato de HuggingFace.
+- Compatibilidad declarada con endpoints (`endpoints_compatible`), lo que facilita su exposición mediante APIs compatibles con el formato de Hugging Face.
 - Capacidades del modelo base no confirmadas en este checkpoint: el autor atribuye a IFM/K2-Horizon-3.7B énfasis en código y capacidades agénticas, pero no se aporta evidencia de que el fine-tune las conserve.
 - No se documenta soporte de tool calling o function calling, ni visión, audio o modo thinking con conmutación explícita.
 
@@ -113,4 +113,4 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - Referencia metodológica TeichAI: https://huggingface.co/TeichAI/Qwen3.5-4B-Claude-Opus-Reasoning-Distill
 - Referencia metodológica Jackrong v2: https://huggingface.co/Jackrong/Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-v2
 
-Nota sobre la búsqueda web: los resultados obtenidos corresponden a la marca de grabadoras y cortadoras láser xTool y no guardan relación con este modelo. No se han localizado papers, entradas de blog, repositorios adicionales ni demos públicas del modelo más allá de los enlaces de HuggingFace listados.
+Nota sobre la búsqueda web: los resultados obtenidos corresponden a la marca de grabadoras y cortadoras láser xTool y no guardan relación con este modelo. No se han localizado papers, entradas de blog, repositorios adicionales ni demos públicas del modelo más allá de los enlaces de Hugging Face listados.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `marathi-conformer-33m-dense` es un sistema de reconocimiento automático del habla (ASR) para maratí, desarrollado por el usuario de HuggingFace `rimrafadii`. Se trata de un backbone Conformer denso de 12 capas entrenado mediante preentrenamiento autosupervisado durante 117.000 pasos sobre voz en maratí, y posteriormente adaptado a una tarea de clasificación CTC. Su interés radica en ser una pieza de infraestructura ligera: un tronco denso que sirve como línea base frente a variantes con mezcla de expertos (MoE) u otras arquitecturas más costosas.
+El modelo `marathi-conformer-33m-dense` es un sistema de reconocimiento automático del habla (ASR) para maratí, desarrollado por el usuario de Hugging Face `rimrafadii`. Se trata de un backbone Conformer denso de 12 capas entrenado mediante preentrenamiento autosupervisado durante 117.000 pasos sobre voz en maratí, y posteriormente adaptado a una tarea de clasificación CTC. Su interés radica en ser una pieza de infraestructura ligera: un tronco denso que sirve como línea base frente a variantes con mezcla de expertos (MoE) u otras arquitecturas más costosas.
 
 La arquitectura es un Conformer estándar con dimensión de modelo de 256, 4 cabezas de atención y tamaño de kernel de convolución 31. El autor declara 20,5 millones de parámetros, todos activos, aunque el identificador del repositorio menciona "33m"; la discrepancia no está aclarada en la información disponible. El repositorio ocupa 0,1 GB, lo que es coherente con un modelo de este tamaño en precisión de 16 o 32 bits.
 
@@ -77,5 +77,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- [HuggingFace: rimrafadii/marathi-conformer-33m-dense](https://huggingface.co/rimrafadii/marathi-conformer-33m-dense)
+- [Hugging Face: rimrafadii/marathi-conformer-33m-dense](https://huggingface.co/rimrafadii/marathi-conformer-33m-dense)
 - No se han encontrado en la información disponible otros enlaces a papers, blogs, repositorios o demos.

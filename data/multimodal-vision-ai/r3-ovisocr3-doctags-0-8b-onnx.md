@@ -93,6 +93,6 @@ No se dispone de datos de benchmarks comparativos con otros modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/multimodal-vision-ai/R3-OvisOCR3-DocTags-0.8B-ONNX
+- Modelo en Hugging Face: https://huggingface.co/multimodal-vision-ai/R3-OvisOCR3-DocTags-0.8B-ONNX
 - Modelo base: https://huggingface.co/ATH-MaaS/OvisOCR3
 - Modelo subyacente: https://huggingface.co/Qwen/Qwen3.5-0.8B

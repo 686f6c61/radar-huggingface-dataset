@@ -75,7 +75,7 @@ No se han identificado en la información disponible modelos públicos comparabl
 
 | Modelo | Parametros | Contexto | Optimizador / config | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nero-optimizer-work-m-simow-b0p9-lr0p004 (este) | ~999.680 | 128 tokens | m_simow, beta=0,9, lr=0,004 | No disponible | Publicado en HuggingFace, 0 descargas |
+| nero-optimizer-work-m-simow-b0p9-lr0p004 (este) | ~999.680 | 128 tokens | m_simow, beta=0,9, lr=0,004 | No disponible | Publicado en Hugging Face, 0 descargas |
 | Otros brazos de la barrida Nero Optimizer Work | Misma familia densa-deep (~999.680, segun arquitectura descrita) | 128 tokens | Otros optimizadores / hiperparametros | No disponible | No detallado en la informacion disponible |
 | Modelos de terceros comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -95,7 +95,7 @@ No se han identificado en la información disponible modelos públicos comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-m-simow-b0p9-lr0p004
+- Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-m-simow-b0p9-lr0p004
 - Paper, blog o repositorio del autor: no disponible
 - Demos: no disponible
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a sitios de moda y baño sin relacion con el artefacto.

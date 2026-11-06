@@ -12,7 +12,7 @@ La relevancia de esta ficha es práctica: permite evaluar si una conversión NVF
 | Parámetros totales | 18.460.143.972 (dato real de safetensors; el nombre comercial indica 31B) |
 | Parámetros activos | no aplica (no se describe como MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | NVFP4 con compressed-tensors (nvfp4-pack-quantized); etiqueta 8-bit en HuggingFace. Vision, audio, embeddings y lm_head excluidos de NVFP4 |
+| Tipos de cuantización | NVFP4 con compressed-tensors (nvfp4-pack-quantized); etiqueta 8-bit en Hugging Face. Vision, audio, embeddings y lm_head excluidos de NVFP4 |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible (la model card indica que el repositorio fuente no declaró licencia) |
 | Formato de pesos | safetensors con compressed-tensors; 2 shards, 20.446.828.448 bytes (19,04 GiB); 410 tensores NVFP4 |

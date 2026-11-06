@@ -96,10 +96,10 @@ El model-index oficial del repositorio declara una entrada para TrustLaya-S con 
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| xzwq/TrustLaya-S | Clasificador multitarea de seguridad, turco primero | 42,1 M | Entrada truncada a 96 tokens | MIT | HuggingFace + GitHub + demo | F1 injection 0,765 y FPR 0,429 en deepset; F1 PII 0,880 en turco |
-| protectai/deberta-v3-base-prompt-injection-v2 | Clasificador binario de prompt injection | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | HuggingFace | No disponible en la informacion proporcionada |
-| meta-llama/Prompt-Guard-86M | Clasificador de prompt injection y jailbreak | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | HuggingFace | No disponible en la informacion proporcionada |
-| deepset/deberta-v3-base-injection | Clasificador de prompt injection | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | HuggingFace | No disponible en la informacion proporcionada |
+| xzwq/TrustLaya-S | Clasificador multitarea de seguridad, turco primero | 42,1 M | Entrada truncada a 96 tokens | MIT | Hugging Face + GitHub + demo | F1 injection 0,765 y FPR 0,429 en deepset; F1 PII 0,880 en turco |
+| protectai/deberta-v3-base-prompt-injection-v2 | Clasificador binario de prompt injection | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Hugging Face | No disponible en la informacion proporcionada |
+| meta-llama/Prompt-Guard-86M | Clasificador de prompt injection y jailbreak | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Hugging Face | No disponible en la informacion proporcionada |
+| deepset/deberta-v3-base-injection | Clasificador de prompt injection | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Hugging Face | No disponible en la informacion proporcionada |
 
 La diferencia estructural de TrustLaya-S frente a esos clasificadores es que estos ultimos son binarios y estan centrados en ingles, mientras que TrustLaya-S devuelve varias puntuaciones de riesgo simultaneas y esta optimizado para turco. No se dispone de datos comparativos directos entre ellos en la informacion proporcionada.
 
@@ -120,7 +120,7 @@ La diferencia estructural de TrustLaya-S frente a esos clasificadores es que est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xzwq/TrustLaya-S
+- Modelo en Hugging Face: https://huggingface.co/xzwq/TrustLaya-S
 - Repositorio de codigo y documentacion: https://github.com/ege-arhan/trustlaya-s
 - Demo interactiva: https://huggingface.co/spaces/xzwq/TrustLaya-S-demo
 - Modelo base: https://huggingface.co/ytu-ce-cosmos/turkish-medium-bert-uncased

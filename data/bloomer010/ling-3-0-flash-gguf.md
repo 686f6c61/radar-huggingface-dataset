@@ -86,7 +86,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/bloomer010/Ling-3.0-flash-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/bloomer010/Ling-3.0-flash-GGUF
 - Modelo base inclusionAI/Ling-3.0-flash: https://huggingface.co/inclusionAI/Ling-3.0-flash
 - Pull request de soporte bailingmoe3 en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/26608
 - Fork de desarrollo con soporte bailingmoe3: https://github.com/aetherbird/llama.cpp/tree/bailingmoe3-support

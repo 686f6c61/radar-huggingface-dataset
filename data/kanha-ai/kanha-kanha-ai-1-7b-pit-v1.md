@@ -91,8 +91,8 @@ Este checkpoint hereda la arquitectura de Qwen3-1.7B, pero su entrenamiento espe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kanha-AI/kanha-kanha.ai-1.7b-pit-v1
-- Organización Kanha-AI en HuggingFace: https://huggingface.co/Kanha-AI
+- Hugging Face: https://huggingface.co/Kanha-AI/kanha-kanha.ai-1.7b-pit-v1
+- Organización Kanha-AI en Hugging Face: https://huggingface.co/Kanha-AI
 - Repositorio GitHub: https://github.com/Kanha-AI/Kanha-AI
 - Sitio web de Kanha AI: https://kanha.ai
 - Sitio de Kanha AI (producto infantil): https://kanhaji.ai/

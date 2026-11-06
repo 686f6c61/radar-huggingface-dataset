@@ -32,7 +32,7 @@ Los datos de entrenamiento combinan trazas ligeras de "Fable" (armand0e), trazas
 ## Capacidades
 
 - Generacion de texto general, razonamiento y resolucion de problemas, con modo thinking/reasoning explicitamente etiquetado.
-- Razonamiento matematico: en pruebas externas de la comunidad tab de HuggingFace se reporta buen desempeno incluso en cuantizacion Q4 con problemas de fisica y matematicas.
+- Razonamiento matematico: en pruebas externas de la comunidad tab de Hugging Face se reporta buen desempeno incluso en cuantizacion Q4 con problemas de fisica y matematicas.
 - Generacion de codigo: el tag "coder" esta presente y el autor lo clasifica como modelo "all use cases".
 - Escritura creativa, ficcion, narrativa de todos los generos y roleplaying, pese a que el autor aclara que no fue disenado especificamente para creatividad.
 - Vision: la model card lista "Vision" entre las caracteristicas y el pipeline declarado es image-text-to-text.
@@ -99,9 +99,9 @@ No se dispone de datos numericos comparativos mas alla de las afirmaciones cuali
 
 ## Enlaces
 
-- Repositorio HuggingFace de este empaquetado GGUF: https://huggingface.co/tatekuperus/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
+- Repositorio Hugging Face de este empaquetado GGUF: https://huggingface.co/tatekuperus/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP
-- Discusion en HuggingFace con pruebas de la comunidad: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF/discussions/5
+- Discusion en Hugging Face con pruebas de la comunidad: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF/discussions/5
 - Discusion sobre versiones Qwen 3.8 y metodos GAIN/Cold Fusion: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF/discussions/91
 - Ficha de resumen del modelo base en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/qwen3.6-27b-fable-fusion-711-uncensored-heretic-nm-dau-mtp-davidau
 - Ficha de la variante GGUF en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/qwen3.6-27b-fable-fusion-711-uncensored-heretic-nm-dau-neo-max-mtp-gguf-davidau

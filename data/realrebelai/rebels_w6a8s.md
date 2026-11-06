@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rebels_w6a8s (realrebelai) | no disponible | no disponible | W6A8 | unknown | HuggingFace, 0 descargas |
-| Rebels_w4a8s (realrebelai) | no disponible | no disponible | W4A8 | unknown | HuggingFace |
+| Rebels_w6a8s (realrebelai) | no disponible | no disponible | W6A8 | unknown | Hugging Face, 0 descargas |
+| Rebels_w4a8s (realrebelai) | no disponible | no disponible | W4A8 | unknown | Hugging Face |
 | Otros modelos cuantizados comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion documentada por el autor es con su propio repositorio de cuantizaciones W4A8, que emplea pesos a 4 bits y activaciones a 8 bits. No se dispone de datos de rendimiento que permitan comparar la calidad de ambas variantes.
@@ -82,8 +82,8 @@ La unica comparacion documentada por el autor es con su propio repositorio de cu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/realrebelai/Rebels_w6a8s
+- Repositorio Hugging Face: https://huggingface.co/realrebelai/Rebels_w6a8s
 - Repositorio W4A8 del mismo autor: https://huggingface.co/realrebelai/Rebels_w4a8s
-- Perfil del autor en HuggingFace: https://huggingface.co/realrebelai
+- Perfil del autor en Hugging Face: https://huggingface.co/realrebelai
 - YouTube: https://youtube.com/@realrebelai
 - X / Twitter: https://x.com/realrebelai

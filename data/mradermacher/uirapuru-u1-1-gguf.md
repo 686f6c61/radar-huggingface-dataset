@@ -30,7 +30,7 @@ La cuantizacion se realizo de forma estatica (sin imatrix), segun indica el auto
 - Generacion de texto y conversacion multilingue en portugues e ingles.
 - Posible soporte multimodal (vision) gracias a los archivos `mmproj` incluidos, aunque no se documenta su funcionamiento.
 - Compatible con herramientas de inferencia local como llama.cpp, Ollama y servidores compatibles con GGUF.
-- Disenado para tareas conversacionales, segun los tags de HuggingFace ("conversational").
+- Disenado para tareas conversacionales, segun los tags de Hugging Face ("conversational").
 - No se confirman capacidades especificas como tool calling, razonamiento avanzado o generacion de codigo, al no estar documentadas en la informacion disponible.
 
 ## Casos de uso

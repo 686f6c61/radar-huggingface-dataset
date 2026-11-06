@@ -65,15 +65,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Observacion / accion | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| apirrone/velstand_carpet | Politica RL ONNX para microduck | 61-D / 14 acciones | 50 Hz | No disponible | HuggingFace |
-| apirrone/new_velstand_test | Politica RL ONNX para microduck | No disponible | No disponible | No disponible | HuggingFace |
+| apirrone/velstand_carpet | Politica RL ONNX para microduck | 61-D / 14 acciones | 50 Hz | No disponible | Hugging Face |
+| apirrone/new_velstand_test | Politica RL ONNX para microduck | No disponible | No disponible | No disponible | Hugging Face |
 | Otras politicas del ecosistema microduck_rl | Politica RL | No disponible | No disponible | No disponible | Repositorio pollen-robotics/microduck_rl |
 
 No se dispone de datos publicos suficientes para comparar parametros, contexto o rendimiento con alternativas de otras familias de modelos. La comparacion queda limitada a la propia familia de politicas del mismo autor y del mismo robot.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: al no especificarse licencia en la model card ni en los metadatos de HuggingFace, no hay autorizacion explicita para uso comercial. Conviene contactar con el autor antes de cualquier despliegue productivo.
+- Licencia no declarada: al no especificarse licencia en la model card ni en los metadatos de Hugging Face, no hay autorizacion explicita para uso comercial. Conviene contactar con el autor antes de cualquier despliegue productivo.
 - Ausencia total de evaluacion publica: 0 descargas y 0 likes, sin benchmarks ni informes de terceros. El comportamiento real sobre hardware fisico no esta validado mas alla de lo que afirme el autor.
 - Especificidad de hardware: la politica esta entrenada para el microduck concreto, con 61 dimensiones de observacion y 14 de accion a 50 Hz. No es transferible a otros robots sin reentrenamiento.
 - Especificidad de dominio: la rama de entrenamiento `soft_carpet` sugiere un entorno de alfombra o superficie blanda. El rendimiento en otras superficies (cesped, grava, suelo duro) no esta documentado.
@@ -85,8 +85,8 @@ No se dispone de datos publicos suficientes para comparar parametros, contexto o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/apirrone/velstand_carpet
-- Perfil del autor en HuggingFace: https://huggingface.co/apirrone/models
+- Modelo en Hugging Face: https://huggingface.co/apirrone/velstand_carpet
+- Perfil del autor en Hugging Face: https://huggingface.co/apirrone/models
 - Otro modelo del mismo autor: https://huggingface.co/apirrone/new_velstand_test
 - Repositorio microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento: pollen-robotics/microduck_rl (rama `soft_carpet`, commit `695f3b751`)

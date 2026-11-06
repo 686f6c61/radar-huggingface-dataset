@@ -18,7 +18,7 @@ Su relevancia es eminentemente educativa y de reproducibilidad: sirve como ejemp
 | Longitud de contexto | no aplica (politica de refuerzo que consume observaciones por paso, no secuencias de texto); valor no disponible |
 | Tipos de cuantizacion | no disponible; el repositorio publica pesos en `.nn` y `.onnx` sin variantes cuantizadas documentadas |
 | Idiomas soportados | no disponible (no es un modelo de lenguaje) |
-| Licencia | no disponible (la ficha de HuggingFace no declara licencia) |
+| Licencia | no disponible (la ficha de Hugging Face no declara licencia) |
 | Formato de pesos | `.nn` (formato de Unity ML-Agents) y `.onnx`, segun indica la model card; incluye logs de TensorBoard |
 | Framework de entrenamiento | Unity ML-Agents (`mlagents-learn`), libreria declarada `ml-agents` |
 | Algoritmo | PPO (on-policy, con actor y critico) |
@@ -70,12 +70,12 @@ No se han identificado en la informacion disponible alternativas comparables con
 
 | Modelo | Categoria | Framework | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `marcgabrielschneider/ppo-Huggy` | Politica PPO para entorno Huggy | Unity ML-Agents | no disponible | no disponible | Publico en HuggingFace, 0 descargas |
+| `marcgabrielschneider/ppo-Huggy` | Politica PPO para entorno Huggy | Unity ML-Agents | no disponible | no disponible | Publico en Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | Agentes PPO/SAC para entornos ML-Agents | Unity ML-Agents | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- La licencia no esta declarada en la ficha de HuggingFace, por lo que no hay certeza juridica sobre su uso comercial o su redistribucion. Debe considerarse no apta para produccion hasta que el autor la especifique.
+- La licencia no esta declarada en la ficha de Hugging Face, por lo que no hay certeza juridica sobre su uso comercial o su redistribucion. Debe considerarse no apta para produccion hasta que el autor la especifique.
 - El modelo esta especializado en un unico entorno (Huggy) y no generaliza a otras tareas sin reentrenamiento; su politica depende por completo de la distribucion de observaciones y recompensas de ese entorno.
 - No se documentan hiperparametros, semilla, numero de pasos ni criterio de seleccion del checkpoint, lo que limita la reproducibilidad y hace imposible evaluar si el agente esta subentrenado o sobreajustado.
 - No hay ninguna metrica de rendimiento publicada (recompensa media ni tasa de exito), de modo que su calidad como politica no puede verificarse a partir de la informacion disponible.
@@ -86,9 +86,9 @@ No se han identificado en la informacion disponible alternativas comparables con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marcgabrielschneider/ppo-Huggy
+- Modelo en Hugging Face: https://huggingface.co/marcgabrielschneider/ppo-Huggy
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Documentacion de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Tutorial corto del curso de deep RL (entorno Huggy): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo de ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Organizacion de Unity en HuggingFace (reproductor de agentes): https://huggingface.co/unity
+- Organizacion de Unity en Hugging Face (reproductor de agentes): https://huggingface.co/unity

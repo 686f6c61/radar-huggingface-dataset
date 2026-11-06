@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Sumith1986/example-model` es un repositorio alojado en HuggingFace por el usuario Sumith1986. La informacion publica disponible se limita a los metadatos del propio repositorio: identificador, autor, fecha de creacion (2026-09-18) y fecha de ultima actualizacion (2026-09-18), junto con la etiqueta `region:us`. No se ha publicado informacion sobre arquitectura, tamano, datos de entrenamiento ni licencia.
+`Sumith1986/example-model` es un repositorio alojado en Hugging Face por el usuario Sumith1986. La informacion publica disponible se limita a los metadatos del propio repositorio: identificador, autor, fecha de creacion (2026-09-18) y fecha de ultima actualizacion (2026-09-18), junto con la etiqueta `region:us`. No se ha publicado informacion sobre arquitectura, tamano, datos de entrenamiento ni licencia.
 
 El repositorio no registra descargas y cuenta con un unico "like", lo que sugiere un artefacto de prueba, una demo o un modelo en fase muy temprana de publicacion. El nombre ("example-model") apunta a un proposito ilustrativo o de ejemplo, mas que a un modelo destinado a produccion.
 
-No es posible evaluar la relevancia tecnica del modelo con la informacion disponible. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces encontrados corresponden al teclado magnetico Madlions MAD68 HE y a productos de esa misma familia, sin conexion alguna con el repositorio. Cualquier dato tecnico adicional requeriria consultar la model card completa en HuggingFace o contactar con el autor.
+No es posible evaluar la relevancia tecnica del modelo con la informacion disponible. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces encontrados corresponden al teclado magnetico Madlions MAD68 HE y a productos de esa misma familia, sin conexion alguna con el repositorio. Cualquier dato tecnico adicional requeriria consultar la model card completa en Hugging Face o contactar con el autor.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ No es posible evaluar la relevancia tecnica del modelo con la informacion dispon
 
 No disponible. La informacion proporcionada no incluye ningun dato sobre el tipo de arquitectura (transformer, MoE, SSM, hibrida u otra), el numero de parametros, el volumen de tokens de entrenamiento, la composicion del dataset ni la existencia de fases de ajuste como RLHF, DPO o SFT.
 
-Tampoco se documenta ninguna innovacion tecnica asociada (atencion lineal, decodificacion especulativa, modos de razonamiento extendido, etc.). Se recomienda consultar directamente la model card del repositorio en HuggingFace antes de cualquier evaluacion.
+Tampoco se documenta ninguna innovacion tecnica asociada (atencion lineal, decodificacion especulativa, modos de razonamiento extendido, etc.). Se recomienda consultar directamente la model card del repositorio en Hugging Face antes de cualquier evaluacion.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ No disponible. No se dispone de parametros, contexto, licencia ni rendimiento de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sumith1986/example-model
+- Hugging Face: https://huggingface.co/Sumith1986/example-model
 - Busqueda web: todos los resultados obtenidos son irrelevantes para este modelo. Corresponden al teclado Madlions MAD68 HE y productos relacionados:
   - https://madlionskeyboard.com/product/mad68he/
   - https://www.amazon.fr/Madlions-MAD-HE-Magn%C3%A9tique-M%C3%A9canique/dp/B0DZDDHN59

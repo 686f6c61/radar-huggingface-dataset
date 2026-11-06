@@ -83,7 +83,7 @@ El autor no ofrece comparativas y no hay datos de rendimiento publicados para es
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SuchATypicalDev/Qwen-2.5-1.5B-instruct-instructcoder | 1.543.714.304 | no disponible | GGUF (Q4_K_M) | no disponible | HuggingFace, 0 descargas |
+| SuchATypicalDev/Qwen-2.5-1.5B-instruct-instructcoder | 1.543.714.304 | no disponible | GGUF (Q4_K_M) | no disponible | Hugging Face, 0 descargas |
 | Qwen2.5-Coder-1.5B-Instruct (modelo base) | 1,5B aproximadamente | no disponible en la informacion proporcionada | safetensors y otras conversiones | no disponible en la informacion proporcionada | Repositorio oficial de Qwen |
 | Qwen2.5-1.5B-Instruct (variante generalista) | 1,5B aproximadamente | no disponible en la informacion proporcionada | safetensors | no disponible en la informacion proporcionada | Repositorio oficial de Qwen |
 
@@ -104,7 +104,7 @@ No se dispone de datos suficientes para comparar rendimiento, contexto o licenci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SuchATypicalDev/Qwen-2.5-1.5B-instruct-instructcoder
+- Hugging Face: https://huggingface.co/SuchATypicalDev/Qwen-2.5-1.5B-instruct-instructcoder
 - Unsloth (herramienta de conversion citada por el autor): https://github.com/unslothai/unsloth
 - llama.cpp (runtime implicito en los ejemplos de uso, no enlazado en la model card): no disponible en la informacion proporcionada
 - Paper, blog o demo del autor: no disponible

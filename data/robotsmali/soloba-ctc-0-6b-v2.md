@@ -78,7 +78,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos ASR para bam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotsMali/soloba-ctc-0.6b-v2
+- Modelo en Hugging Face: https://huggingface.co/RobotsMali/soloba-ctc-0.6b-v2
 - Repositorio de código y configuraciones: https://github.com/RobotsMali-AI/bambara-asr/
 - Dataset African Next Voices: https://huggingface.co/datasets/RobotsMali/afvoices
 - Modelo base: https://huggingface.co/RobotsMali/soloba-ctc-0.6b-v0

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Chroma1-HD-fp8 es un repositorio de pesos publicado en HuggingFace por el usuario NyuromonX bajo licencia Apache 2.0. El nombre del repositorio sugiere una variante cuantizada en FP8 de un modelo base denominado Chroma1-HD, si bien la model card asociada unicamente contiene la declaracion de licencia, sin ningun otro dato tecnico. El repositorio ocupa 8,9 GB y, en el momento de la consulta, registra 0 descargas y 0 likes, con fecha de creacion y ultima actualizacion del 20 de octubre de 2026.
+Chroma1-HD-fp8 es un repositorio de pesos publicado en Hugging Face por el usuario NyuromonX bajo licencia Apache 2.0. El nombre del repositorio sugiere una variante cuantizada en FP8 de un modelo base denominado Chroma1-HD, si bien la model card asociada unicamente contiene la declaracion de licencia, sin ningun otro dato tecnico. El repositorio ocupa 8,9 GB y, en el momento de la consulta, registra 0 descargas y 0 likes, con fecha de creacion y ultima actualizacion del 20 de octubre de 2026.
 
-No es posible determinar con la informacion disponible la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni la tarea para la que fue entrenado el modelo. El pipeline no esta declarado en la ficha de HuggingFace y la busqueda web realizada no ha devuelto ningun resultado relevante sobre este repositorio (los resultados obtenidos eran contenido no relacionado y sin valor tecnico), por lo que no existe documentacion externa verificable.
+No es posible determinar con la informacion disponible la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni la tarea para la que fue entrenado el modelo. El pipeline no esta declarado en la ficha de Hugging Face y la busqueda web realizada no ha devuelto ningun resultado relevante sobre este repositorio (los resultados obtenidos eran contenido no relacionado y sin valor tecnico), por lo que no existe documentacion externa verificable.
 
 La relevancia de esta ficha es, por tanto, principalmente cautelar: se trata de un artefacto sin documentacion ni validacion comunitaria, y cualquier evaluacion o uso en produccion deberia ir precedida de una inspeccion directa de los archivos del repositorio y de una validacion empirica del comportamiento del modelo.
 
@@ -77,5 +77,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NyuromonX/Chroma1-HD-fp8
+- Repositorio en Hugging Face: https://huggingface.co/NyuromonX/Chroma1-HD-fp8
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este modelo.

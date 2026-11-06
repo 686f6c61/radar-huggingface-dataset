@@ -67,7 +67,7 @@ La configuración final enviada en el repositorio es la última: Stage 2 con TTA
 
 ## Comparativa con modelos similares
 
-No se dispone de benchmarks comparativos con otros modelos de super-resolución o eliminación de ruido en el mismo conjunto de datos. Existe un repositorio similar en HuggingFace (`HUGGINGFACENOOB123/dlp-nppe3-denoise-sr`) que parece una variante del mismo proyecto, pero no se han publicado especificaciones ni resultados para comparar. Por tanto, la comparativa se considera no disponible.
+No se dispone de benchmarks comparativos con otros modelos de super-resolución o eliminación de ruido en el mismo conjunto de datos. Existe un repositorio similar en Hugging Face (`HUGGINGFACENOOB123/dlp-nppe3-denoise-sr`) que parece una variante del mismo proyecto, pero no se han publicado especificaciones ni resultados para comparar. Por tanto, la comparativa se considera no disponible.
 
 ## Limitaciones y advertencias
 
@@ -80,6 +80,6 @@ No se dispone de benchmarks comparativos con otros modelos de super-resolución 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArjyaDutta-IITM/dlp-nppe3-denoise-sr-x4
+- Modelo en Hugging Face: https://huggingface.co/ArjyaDutta-IITM/dlp-nppe3-denoise-sr-x4
 - Notebook de referencia: https://github.com/brpuneet898/iitm-nptel-resources/blob/main/dlp-nppe3-version2.ipynb
-- Repositorio similar en HuggingFace: https://huggingface.co/HUGGINGFACENOOB123/dlp-nppe3-denoise-sr/tree/main
+- Repositorio similar en Hugging Face: https://huggingface.co/HUGGINGFACENOOB123/dlp-nppe3-denoise-sr/tree/main

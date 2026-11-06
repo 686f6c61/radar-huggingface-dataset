@@ -4,7 +4,7 @@
 
 Efficientformer for Contrastive (identificador `Kiarasin/efficientformer-contrastive-lite-2024`) es un repositorio experimental publicado por el usuario Kiarasin que contiene una implementacion propia y compacta en PyTorch de una arquitectura Efficientformer orientada a aprendizaje contrastivo. El checkpoint incluido, `model.safetensors`, es una inicializacion valida para pruebas de humo, no un modelo entrenado ni evaluado. El propio autor lo indica de forma explicita: la configuracion "small" esta pensada para revision de codigo, smoke tests y experimentos controlados de laboratorio.
 
-El dato mas relevante para cualquier evaluacion es su tamano: 24.832 parametros totales, registrados en los safetensors del repositorio. Se trata, por tanto, de un artefacto de escala minuscula, destinado a validar tuberias de entrenamiento y no a resolver tareas reales de representacion o clasificacion. El repositorio ocupa 0,0 GB, no acumula descargas ni interacciones y no declara pipeline de inferencia en HuggingFace.
+El dato mas relevante para cualquier evaluacion es su tamano: 24.832 parametros totales, registrados en los safetensors del repositorio. Se trata, por tanto, de un artefacto de escala minuscula, destinado a validar tuberias de entrenamiento y no a resolver tareas reales de representacion o clasificacion. El repositorio ocupa 0,0 GB, no acumula descargas ni interacciones y no declara pipeline de inferencia en Hugging Face.
 
 Su relevancia actual es acotada y de naturaleza metodologica: sirve como plantilla reproducible para montar experimentos contrastivos, comparar recetas de optimizacion y verificar integraciones antes de escalar a modelos mayores. No debe confundirse con un release preentrenado ni usarse como componente de produccion sin un entrenamiento completo y una evaluacion documentada por separado.
 
@@ -58,7 +58,7 @@ La receta incluida especifica el optimizador lion con un planificador de tipo po
 - Plantilla de ablaciones controladas: el autor propone entrenar todas las lineas base con la misma exposicion de datos, presupuesto de ajuste y semillas. Este repositorio sirve como punto de partida para comparar recetas de optimizacion (lion frente a adamw, polynomial frente a cosine) manteniendo capacidad fija.
 - Experimentos de laboratorio sobre aprendizaje contrastivo: con `training_args.json` como receta por defecto, un grupo de investigacion puede reproducir la configuracion y medir la metrica de tarea en un conjunto de validacion especifico a lo largo de al menos tres semillas.
 - Docencia y formacion tecnica: por su tamano y su estructura de ficheros clara (`inference.py`, `config.json`, `training_args.json`, `model.safetensors`), es un material adecuado para explicar el ciclo completo de definicion, configuracion y guardado de un modelo en PyTorch.
-- Prototipado de adaptadores de carga personalizados: dado que las APIs automaticas de HuggingFace no pueden cargarlo sin un adaptador explicito, resulta util para desarrollar y probar dicho codigo de integracion antes de aplicarlo a checkpoints mayores.
+- Prototipado de adaptadores de carga personalizados: dado que las APIs automaticas de Hugging Face no pueden cargarlo sin un adaptador explicito, resulta util para desarrollar y probar dicho codigo de integracion antes de aplicarlo a checkpoints mayores.
 - Punto de partida para escalado arquitectonico: la configuracion small permite validar hiperparametros y flujos de datos con un coste de computo practicamente nulo antes de replicar el diseno en variantes de mayor capacidad.
 
 ## Benchmarks y rendimiento
@@ -93,12 +93,12 @@ No es posible establecer una comparativa cuantitativa fiable: este repositorio e
 - No se documenta la composicion de los datos de entrenamiento, el numero de tokens ni la modalidad (texto o imagen), lo que impide evaluar sesgos y cobertura.
 - No se declaran idiomas soportados; cualquier afirmacion sobre capacidades multilingues seria especulativa.
 - El repositorio tiene 0 descargas y 0 interacciones, sin historial de uso o validacion por parte de terceros.
-- Al ser una implementacion custom, las APIs de carga automatica de HuggingFace no funcionan sin un adaptador explicito; esto anade trabajo de integracion y riesgo de incompatibilidades.
+- Al ser una implementacion custom, las APIs de carga automatica de Hugging Face no funcionan sin un adaptador explicito; esto anade trabajo de integracion y riesgo de incompatibilidades.
 - La licencia apache-2.0 permite uso comercial del codigo y de los pesos, pero el autor recomienda revisar por separado los terminos de las fuentes de datos externas que se utilicen junto al repositorio.
 - En produccion, cualquier resultado obtenido a partir de un futuro checkpoint entrenado debe documentarse de forma separada a los valores por defecto aqui incluidos, para no atribuir capacidades al artefacto actual.
-- El campo "pipeline" no esta definido en HuggingFace y no hay demo, espacio ni endpoint publicados.
+- El campo "pipeline" no esta definido en Hugging Face y no hay demo, espacio ni endpoint publicados.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kiarasin/efficientformer-contrastive-lite-2024
+- Repositorio en Hugging Face: https://huggingface.co/Kiarasin/efficientformer-contrastive-lite-2024
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada; los resultados devueltos corresponden unicamente a paginas genericas del motor de busqueda y no aportan informacion sobre el modelo.

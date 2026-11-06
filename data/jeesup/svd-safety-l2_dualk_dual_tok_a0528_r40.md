@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l2_dualk_dual_tok_a0528_r40` es un artefacto de investigación publicado por el usuario Jeesup en HuggingFace. No es un modelo de chat de propósito general, sino una celda concreta dentro de un estudio sistemático sobre cómo la compresión por SVD degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes lo repara mejor. El punto de partida es `meta-llama/Llama-2-7b-chat-hf`, al que se le aplica una descomposición SVD blanqueada por K-FAC en dos dominios (utilidad y seguridad) que elimina el 40,00 % de los parámetros, dejando el checkpoint en el 59,98 % de la densidad original.
+`svd-safety-l2_dualk_dual_tok_a0528_r40` es un artefacto de investigación publicado por el usuario Jeesup en Hugging Face. No es un modelo de chat de propósito general, sino una celda concreta dentro de un estudio sistemático sobre cómo la compresión por SVD degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes lo repara mejor. El punto de partida es `meta-llama/Llama-2-7b-chat-hf`, al que se le aplica una descomposición SVD blanqueada por K-FAC en dos dominios (utilidad y seguridad) que elimina el 40,00 % de los parámetros, dejando el checkpoint en el 59,98 % de la densidad original.
 
 La arquitectura subyacente es la de Llama 2: un transformer decoder-only denso con 6.738.415.616 parámetros reales (frente a los 6.738.415.616 del modelo base sin comprimir, según los safetensors del repo, que reflejan el presupuesto de rango reducido). El interés técnico está en el método: se construye un funcional conjunto `F_dual = (1-a)·G_u ⊗ A_u + a·G_s ⊗ A_s` con curvaturas K-FAC por dominio, se resuelve con ALS de base conjunta partiendo de la solución mezcla y se fija un peso de seguridad `a = 0,5280`. Tras la compresión se aplica la etapa 2 de SVD-LLM (LoRA secuencial U luego V, alpaca-cleaned, r=8, alpha=16, 2 épocas, lr 1e-4, batch 64, cutoff 256, bf16).
 
@@ -93,7 +93,7 @@ La comparación cuantitativa con el modelo base y con las demás celdas de la gr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_dualk_dual_tok_a0528_r40
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_dualk_dual_tok_a0528_r40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - SVD-LLM (referencia metodológica citada en la model card): no se proporciona enlace directo en la información disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SFTChatBot-comp4221 es un modelo de generación de texto desarrollado por el usuario de HuggingFace centenohugo como trabajo de asignatura (course-assignment). Consiste en un ajuste fino supervisado (SFT) del modelo base HuggingFaceTB/SmolLM2-135M, un transformer decoder de 135 millones de parámetros, entrenado durante 100 actualizaciones sobre 300 conversaciones sintéticas de preguntas y respuestas.
+SFTChatBot-comp4221 es un modelo de generación de texto desarrollado por el usuario de Hugging Face centenohugo como trabajo de asignatura (course-assignment). Consiste en un ajuste fino supervisado (SFT) del modelo base HuggingFaceTB/SmolLM2-135M, un transformer decoder de 135 millones de parámetros, entrenado durante 100 actualizaciones sobre 300 conversaciones sintéticas de preguntas y respuestas.
 
 El problema que resuelve es muy concreto: generar respuestas "grounded" a preguntas de tipo FAQ sobre un campus ficticio, citando siempre el identificador del hecho (fact ID) proporcionado en el contexto. El modelo responde en un formato rígido de dos líneas (`Answer:` y `Source:`), lo que lo hace útil como demostración de cómo el SFT puede instilar formatos de salida estrictos y comportamiento de citación en modelos muy pequeños.
 
@@ -23,7 +23,7 @@ Su relevancia es principalmente pedagógica y de investigación reproducible: la
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base SmolLM2-135M de HuggingFaceTB: un transformer decoder causal compacto etiquetado con la familia `llama` en HuggingFace. El ajuste fino no modifica la arquitectura, solo los pesos mediante SFT.
+La arquitectura es la del modelo base SmolLM2-135M de HuggingFaceTB: un transformer decoder causal compacto etiquetado con la familia `llama` en Hugging Face. El ajuste fino no modifica la arquitectura, solo los pesos mediante SFT.
 
 Los datos de entrenamiento consisten en 300 conversaciones sintéticas de preguntas y respuestas sobre un campus ficticio, donde cada conversación incluye un hecho etiquetado (por ejemplo `[F001]`) y la pregunta asociada. El entrenamiento se realizó en una NVIDIA GeForce RTX 4090 D con 100 actualizaciones (8 micro-batches de una conversación cada uno), longitud de secuencia de 256 tokens, optimizador AdamW con learning rate 2e-5 y gradient clipping 1.0. Como innovaciones destacables, se usó una pérdida con label smoothing (ε = 0.1) balanceada por conversación, aplicada únicamente a la respuesta final del asistente (masking de los tokens de contexto), lo que evita que el modelo aprenda a regurgitar el prompt. La pérdida bajó de 3.204 (actualización 1) a 1.456 (actualización 100). La semilla usada fue 4221.
 
@@ -78,11 +78,11 @@ Comparado con su modelo base, SFTChatBot-comp4221 sacrifica generalidad a cambio
 - Solo inglés: la model card declara inglés como único idioma; no hay soporte documentado para castellano ni otros idiomas.
 - Contexto corto: entrenado con secuencias de 256 tokens; la longitud de contexto real del modelo base no está documentada en la ficha, pero prompts largos pueden degradar el formato de salida.
 - Sesgos: no evaluados; al heredar de SmolLM2-135M, puede heredar los sesgos de sus datos de preentrenamiento, y los datos sintéticos del ajuste fino no están descritos en detalle.
-- Uso en producción: no recomendado; es un trabajo de asignatura sin garantías, sin evaluación en benchmarks estándar y con solo 504 descargas y 0 likes en HuggingFace.
+- Uso en producción: no recomendado; es un trabajo de asignatura sin garantías, sin evaluación en benchmarks estándar y con solo 504 descargas y 0 likes en Hugging Face.
 - Licencia: Apache 2.0 permite uso comercial, pero el modelo base y los datos de entrenamiento del assignment deben revisarse si se reutiliza el pipeline completo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/centenohugo/SFTChatBot-comp4221
+- Modelo en Hugging Face: https://huggingface.co/centenohugo/SFTChatBot-comp4221
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Paper, repositorio de código de entrenamiento y demos: no disponible

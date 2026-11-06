@@ -98,7 +98,7 @@ La comparación con modelos generalistas debe interpretarse con cautela: 1pp-0.9
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-raw-seed42-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-raw-seed42-sft
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (wandb, preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de entrenamiento (wandb, SFT): https://wandb.ai/raghav_singhal/1pp-sft

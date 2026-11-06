@@ -88,10 +88,10 @@ Notas: la simulacion MLX de los mismos pesos cuantizados concuerda con el motor 
 
 | Modelo | Parametros | Contexto | Rendimiento JevBench (231 tareas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| strands-decider-v21-webgpu (esta build) | no disponible (~2B base, podado) | no disponible | 176 aciertos | Apache-2.0 | HuggingFace, 0 descargas |
-| strands-decider-2B-hobson-v21 (bfloat16, MLX) | ~2B | no disponible | 176 aciertos | Apache-2.0 | HuggingFace (StrandsAgents) |
+| strands-decider-v21-webgpu (esta build) | no disponible (~2B base, podado) | no disponible | 176 aciertos | Apache-2.0 | Hugging Face, 0 descargas |
+| strands-decider-2B-hobson-v21 (bfloat16, MLX) | ~2B | no disponible | 176 aciertos | Apache-2.0 | Hugging Face (StrandsAgents) |
 | v21 en formato int4 de la demo anterior (24 capas) | ~2B | no disponible | 163 aciertos | Apache-2.0 | formato del motor anterior |
-| Qwen/Qwen3.5-2B-Base | ~2B | no disponible | no disponible (es modelo base) | Apache-2.0 | HuggingFace (Qwen) |
+| Qwen/Qwen3.5-2B-Base | ~2B | no disponible | no disponible (es modelo base) | Apache-2.0 | Hugging Face (Qwen) |
 
 ## Limitaciones y advertencias
 
@@ -107,7 +107,7 @@ Notas: la simulacion MLX de los mismos pesos cuantizados concuerda con el motor 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alxnahas/strands-decider-v21-webgpu
+- Hugging Face: https://huggingface.co/alxnahas/strands-decider-v21-webgpu
 - Modelo base de la adaptacion: https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v21
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Repositorio del motor WebGPU: https://github.com/alxnahas/strands-decider-web

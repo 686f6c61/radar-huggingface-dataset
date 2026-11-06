@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `kancilcapital/website` no es un modelo de inteligencia artificial, sino un proyecto de sitio web estático creado con DeepSite, una plataforma de HuggingFace para alojar aplicaciones web. El contenido de la model card indica que se trata de la página web del fondo de inversión estudiantil Kancil Capital Alpha Fund, gestionado por la organización Kancil Capital, un fondo dirigido por estudiantes en Malasia que ofrece experiencia práctica en gestión de carteras e investigación de acciones.
+El repositorio `kancilcapital/website` no es un modelo de inteligencia artificial, sino un proyecto de sitio web estático creado con DeepSite, una plataforma de Hugging Face para alojar aplicaciones web. El contenido de la model card indica que se trata de la página web del fondo de inversión estudiantil Kancil Capital Alpha Fund, gestionado por la organización Kancil Capital, un fondo dirigido por estudiantes en Malasia que ofrece experiencia práctica en gestión de carteras e investigación de acciones.
 
 Este repositorio no contiene pesos de modelo, arquitectura neuronal ni ningún componente relacionado con IA generativa. Su tamaño es de 0.0 GB, carece de descargas, licencia, pipeline y datos técnicos asociados a modelos de lenguaje. Por tanto, no es posible evaluarlo como un modelo de IA ni utilizarlo para tareas de generación de texto, código o razonamiento.
 
@@ -21,7 +21,7 @@ Este repositorio no contiene pesos de modelo, arquitectura neuronal ni ningún c
 
 ## Arquitectura y entrenamiento
 
-No existe arquitectura de modelo ni proceso de entrenamiento asociado a este repositorio. Se trata de un proyecto generado con DeepSite, la herramienta de HuggingFace para crear y desplegar sitios web estáticos. Los tags del repositorio (`deepsite-v3`, `region:us`) confirman que fue creado mediante esta plataforma y alojado en la región de Estados Unidos.
+No existe arquitectura de modelo ni proceso de entrenamiento asociado a este repositorio. Se trata de un proyecto generado con DeepSite, la herramienta de Hugging Face para crear y desplegar sitios web estáticos. Los tags del repositorio (`deepsite-v3`, `region:us`) confirman que fue creado mediante esta plataforma y alojado en la región de Estados Unidos.
 
 No hay datos de entrenamiento, tokens procesados, técnicas de ajuste (RLHF, DPO) ni innovaciones arquitectónicas que documentar.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. Este
 ## Requisitos de hardware
 
 - No requiere GPU ni hardware de inferencia.
-- Al ser un sitio web estático, solo necesita un servidor web o el alojamiento estático de HuggingFace Spaces.
+- Al ser un sitio web estático, solo necesita un servidor web o el alojamiento estático de Hugging Face Spaces.
 - El consumo de recursos es mínimo: sin VRAM, sin latencia de inferencia, sin throughput de tokens.
 - El despliegue en producción se limita a la configuración del hosting estático proporcionado por DeepSite.
 
@@ -69,7 +69,7 @@ No disponible. No existe una categoría de modelos de IA comparable para este re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kancilcapital/website
+- Repositorio en Hugging Face: https://huggingface.co/kancilcapital/website
 - Sitio web de Kancil Capital: https://www.kancilcapital.com/
 - Organización GitHub de Kancil Capital: https://github.com/Kancil-Capital/
 - DeepSite (plataforma de creación): https://huggingface.co/deepsite

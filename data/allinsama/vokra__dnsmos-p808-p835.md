@@ -28,7 +28,7 @@ La relevancia ahora es de infraestructura: el modelo queda disponible como un ú
 | Modelo upstream | microsoft/DNS-Challenge/DNSMOS (MIT) |
 | Herramienta de conversion | vokra-core 0.1.0-alpha.0 |
 | Registro / ID de modelo | `dnsmos-p808-p835` |
-| Descargas en HuggingFace | 7 |
+| Descargas en Hugging Face | 7 |
 
 ## Arquitectura y entrenamiento
 
@@ -96,8 +96,8 @@ Las cifras de rendimiento comparado (correlacion con MOS subjectiva) no estan di
 
 ## Enlaces
 
-- HuggingFace (repo indicado): https://huggingface.co/Allinsama/vokra__dnsmos-p808-p835
-- HuggingFace (repo referenciado en la model card): https://huggingface.co/vokra/dnsmos-p808-p835
+- Hugging Face (repo indicado): https://huggingface.co/Allinsama/vokra__dnsmos-p808-p835
+- Hugging Face (repo referenciado en la model card): https://huggingface.co/vokra/dnsmos-p808-p835
 - Perfil del autor: https://huggingface.co/Allinsama
 - Runtime Vokra (GitHub): https://github.com/ayutaz/vokra
 - Documentacion de Vokra: https://vokra.ai/docs/concepts/agents

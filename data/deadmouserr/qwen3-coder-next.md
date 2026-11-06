@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-Coder-Next es un modelo de lenguaje abierto desarrollado por el equipo de Qwen (Alibaba) para su uso en agentes de codificacion y desarrollo local. La ficha se basa en una re-subida del modelo realizada por el usuario `deadmouserr` en HuggingFace, que mantiene la model card original del proyecto. El modelo resuelve el problema de disponer de un asistente de codificacion eficiente y capacitado para tareas agencias de larga duracion, integrandose con entornos de desarrollo reales.
+Qwen3-Coder-Next es un modelo de lenguaje abierto desarrollado por el equipo de Qwen (Alibaba) para su uso en agentes de codificacion y desarrollo local. La ficha se basa en una re-subida del modelo realizada por el usuario `deadmouserr` en Hugging Face, que mantiene la model card original del proyecto. El modelo resuelve el problema de disponer de un asistente de codificacion eficiente y capacitado para tareas agencias de larga duracion, integrandose con entornos de desarrollo reales.
 
 Con una arquitectura hibrida que combina capas de atencion gated, atencion lineal DeltaNet y una mezcla de expertos (MoE), el modelo presenta 80.000 millones de parametros totales de los cuales solo 3.000 millones se activan por token. Esta combinacion permite un rendimiento comparable al de modelos con 10 a 20 veces mas parametros activos, reduciendo drasticamente el coste computacional. Su ventana de contexto nativa alcanza los 262.144 tokens, lo que le permite analizar repositorios completos y mantener conversaciones prolongadas sin perder informacion.
 
@@ -51,7 +51,7 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 
 ## Requisitos de hardware
 
-- La carga completa del modelo en precision FP16/BF16 requiere aproximadamente 159,4 GB de memoria, segun el tamano del repositorio HuggingFace.
+- La carga completa del modelo en precision FP16/BF16 requiere aproximadamente 159,4 GB de memoria, segun el tamano del repositorio Hugging Face.
 - Se recomienda utilizar tensor parallelism con al menos 2 GPUs para desplegar el modelo mediante vLLM o SGLang; la configuracion de ejemplo usa `--tensor-parallel-size 2`.
 - Para operar con el contexto completo de 262.144 tokens se necesita mas memoria; la model card advierte de posibles errores de memoria y sugiere reducir la longitud a 32.768 tokens si se producen.
 - Los frameworks compatibles para inferencia y despliegue incluyen vLLM (>=0.15.0), SGLang (>=0.5.8), Ollama, LMStudio, MLX-LM, llama.cpp y KTransformers.
@@ -65,7 +65,7 @@ No se dispone de datos cuantitativos suficientes para elaborar una comparativa e
 
 - El modelo solo soporta el modo no thinking; no genera bloques de pensamiento en sus salidas.
 - Los idiomas exactos soportados no estan especificados en la model card, lo que puede suponer una limitacion en aplicaciones multilingues concretas.
-- Al tratarse de una re-subida de un usuario de HuggingFace (`deadmouserr`) y no del repositorio oficial, la procedencia y el mantenimiento del peso no estan garantizados por el desarrollador original.
+- Al tratarse de una re-subida de un usuario de Hugging Face (`deadmouserr`) y no del repositorio oficial, la procedencia y el mantenimiento del peso no estan garantizados por el desarrollador original.
 - El uso del contexto completo de 256K puede provocar errores de memoria en GPUs con poca memoria; se recomienda reducir la longitud del contexto en entornos con recursos limitados.
 - No se ofrecen cuantizaciones oficiales, por lo que las opciones de cuantizacion reales no estan documentadas.
 - No se han publicado datos numericos de benchmarks, lo que impide evaluar de forma objetiva su rendimiento frente a alternativas.

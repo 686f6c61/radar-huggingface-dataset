@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ToastyPigeon/gemma-4-12b-cpt-rp-chapters-adapter es un adaptador LoRA de rango 32 (r32) publicado por el usuario ToastyPigeon en HuggingFace. No es un modelo autónomo: se trata de un ajuste supervisado (SFT) que debe aplicarse sobre ToastyPigeon/gemma-4-12b-full-cpt, un modelo intermedio construido a partir de google/gemma-4-12B mediante un proceso de continued pre-training (CPT) con plegado de LoRA. El adaptador está pensado para generación de prosa y roleplay por capítulos, segun se deduce del nombre y de los datos de entrenamiento declarados.
+ToastyPigeon/gemma-4-12b-cpt-rp-chapters-adapter es un adaptador LoRA de rango 32 (r32) publicado por el usuario ToastyPigeon en Hugging Face. No es un modelo autónomo: se trata de un ajuste supervisado (SFT) que debe aplicarse sobre ToastyPigeon/gemma-4-12b-full-cpt, un modelo intermedio construido a partir de google/gemma-4-12B mediante un proceso de continued pre-training (CPT) con plegado de LoRA. El adaptador está pensado para generación de prosa y roleplay por capítulos, segun se deduce del nombre y de los datos de entrenamiento declarados.
 
 El entrenamiento del adaptador se realizó sobre una mezcla de 12.746 conversaciones con contexto de sistema (itvec-mix-sft-sys) más un conjunto denominado "marvin chapters v1", usando la plantilla de chat de Gemma durante 1 epoch y 693 pasos. El resultado es un adaptador orientado a continuar texto narrativo y a mantener conversaciones con voz de personaje, no un modelo de propósito general ni un asistente instructivo validado.
 
@@ -17,7 +17,7 @@ Su relevancia es limitada y de nicho: se publica como pieza experimental dentro 
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible. Los pesos del adaptador se distribuyen en safetensors sin variantes cuantizadas documentadas |
 | Idiomas soportados | No disponible |
-| Licencia | No disponible. No se especifica en la model card ni en los metadatos de HuggingFace |
+| Licencia | No disponible. No se especifica en la model card ni en los metadatos de Hugging Face |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA, requiere fusion con el modelo base) |
 | Libreria | peft |
 | Modelo base | ToastyPigeon/gemma-4-12b-full-cpt |
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | gemma-4-12b-cpt-rp-chapters-adapter | Adaptador LoRA r32 sobre base de ~12B (no confirmado) | No disponible | Sin benchmarks publicados | No disponible | 0 descargas, 0 likes |
-| ToastyPigeon/gemma-4-12b-full-cpt (base) | ~12B (no confirmado) | No disponible | Sin benchmarks publicados en la informacion disponible | No disponible | Repositorio publico en HuggingFace |
+| ToastyPigeon/gemma-4-12b-full-cpt (base) | ~12B (no confirmado) | No disponible | Sin benchmarks publicados en la informacion disponible | No disponible | Repositorio publico en Hugging Face |
 | ToastyPigeon/gemma-4-12b-full-cpt-itvec | ~12B (no confirmado) | No disponible | Sin benchmarks publicados en la informacion disponible | No disponible | Repositorio publico; descrito como merge de CPT con task vector instructivo |
 | google/gemma-4-12B | ~12B (Gemma 4 12B Unified) | No disponible en la informacion proporcionada | Documentado en el informe tecnico de Gemma 4 (no consultado en detalle) | No disponible en la informacion proporcionada | Publicado por Google; anunciado el 3 de junio de 2026 |
 
@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ToastyPigeon/gemma-4-12b-cpt-rp-chapters-adapter
+- Adaptador en Hugging Face: https://huggingface.co/ToastyPigeon/gemma-4-12b-cpt-rp-chapters-adapter
 - Modelo base: https://huggingface.co/ToastyPigeon/gemma-4-12b-full-cpt
 - README del modelo base: https://huggingface.co/ToastyPigeon/gemma-4-12b-full-cpt/blob/main/README.md
 - Variante itvec del modelo base (featherless.ai): https://featherless.ai/models/ToastyPigeon/gemma-4-12b-full-cpt-itvec

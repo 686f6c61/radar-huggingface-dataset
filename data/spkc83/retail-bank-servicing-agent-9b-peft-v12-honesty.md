@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft-v12-honesty
+- Hugging Face (modelo): https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft-v12-honesty
 - GitHub (código de desarrollo): https://github.com/spkc83/retail-bank-servicing
 - Otras versiones del autor: https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft-v9-scratch y https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft-v9-conversational-voice

@@ -102,7 +102,7 @@ La diferencia clave frente a s-zaizen es que ambos transcodes de expertos produc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-NVFP4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Implementación NVFP4 alternativa citada: https://huggingface.co/s-zaizen/DeepSeek-V4.1-Flash-NVFP4
 - Sitio del autor: https://libertai.io

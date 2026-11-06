@@ -4,7 +4,7 @@
 
 EmbeddingGemma es un modelo de embeddings de texto multilingüe de 302,8 millones de parámetros desarrollado por Google, basado en la arquitectura de Gemma 3 con una inicialización T5Gemma. Su propósito es generar representaciones numéricas de fragmentos de texto que permiten tareas como recuperación de información, búsqueda semántica, clasificación y agrupamiento. El modelo está optimizado para ejecutarse en dispositivos cotidianos como teléfonos móviles, portátiles y tabletas, lo que facilita el despliegue de pipelines de Retrieval Augmented Generation (RAG) y aplicaciones de IA generativa sin depender de infraestructura en la nube.
 
-La relevancia de EmbeddingGemma radica en su equilibrio entre calidad de representación y eficiencia de recursos, posicionándose como una opción competitiva dentro de la gama de modelos de embeddings de tamaño medio. Publicado en julio de 2025 y actualizado en septiembre del mismo año, el modelo cuenta con más de 2,5 millones de descargas en HuggingFace, lo que indica una adopción temprana significativa. Su licencia es la de Gemma, con acceso restringido en HuggingFace que requiere aceptar las condiciones de uso.
+La relevancia de EmbeddingGemma radica en su equilibrio entre calidad de representación y eficiencia de recursos, posicionándose como una opción competitiva dentro de la gama de modelos de embeddings de tamaño medio. Publicado en julio de 2025 y actualizado en septiembre del mismo año, el modelo cuenta con más de 2,5 millones de descargas en Hugging Face, lo que indica una adopción temprana significativa. Su licencia es la de Gemma, con acceso restringido en Hugging Face que requiere aceptar las condiciones de uso.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se dispone de información suficiente para comparar EmbeddingGemma con otros 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido en HuggingFace: el modelo es "gated", por lo que es necesario aceptar las condiciones de uso de Gemma antes de poder descargarlo.
+- Acceso restringido en Hugging Face: el modelo es "gated", por lo que es necesario aceptar las condiciones de uso de Gemma antes de poder descargarlo.
 - La licencia Gemma tiene términos específicos que deben revisarse para uso comercial; no se detallan aquí las restricciones exactas.
 - No se especifican los idiomas soportados, lo que limita la evaluación de su cobertura multilingüe.
 - Al ser un modelo de embeddings, puede heredar sesgos presentes en los datos de entrenamiento, aunque no se han documentado sesgos concretos en la información disponible.
@@ -71,7 +71,7 @@ No se dispone de información suficiente para comparar EmbeddingGemma con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/google/embeddinggemma-300m
+- Hugging Face: https://huggingface.co/google/embeddinggemma-300m
 - Documentacion oficial de Google AI: https://ai.google.dev/gemma/docs/embeddinggemma
 - Pagina de Google DeepMind: https://deepmind.google/models/gemma/embeddinggemma/
 - Ficha en LM Studio: https://lmstudio.ai/models/google/embedding-gemma-300m

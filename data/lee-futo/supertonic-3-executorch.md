@@ -94,7 +94,7 @@ No existen datos públicos que permitan comparar la calidad de síntesis, la lat
 
 ## Enlaces
 
-- Repositorio HuggingFace: [lee-futo/supertonic-3-executorch](https://huggingface.co/lee-futo/supertonic-3-executorch)
+- Repositorio Hugging Face: [lee-futo/supertonic-3-executorch](https://huggingface.co/lee-futo/supertonic-3-executorch)
 - Modelo base: [Supertone/supertonic-3](https://huggingface.co/Supertone/supertonic-3)
 - Licencia del artefacto: fichero `LICENSE` del repositorio (OpenRAIL-M, incluye Attachment A)
 - Aviso de copyright: fichero `NOTICE` del repositorio (Copyright (c) 2026 Supertone Inc.)

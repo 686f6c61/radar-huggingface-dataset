@@ -73,9 +73,9 @@ El blog del autor afirma que t0-gamma es el modelo líder en fev-bench. No se ha
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| t0-gamma | 255,6M | No disponible | fev-bench 49,42 skill score; GIFT-Eval CRPS 0,452 | Apache-2.0 | HuggingFace, runtime tfc-t0, API Retrocast |
-| t0-beta | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| t0-alpha | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| t0-gamma | 255,6M | No disponible | fev-bench 49,42 skill score; GIFT-Eval CRPS 0,452 | Apache-2.0 | Hugging Face, runtime tfc-t0, API Retrocast |
+| t0-beta | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| t0-alpha | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone en la información proporcionada de especificaciones ni métricas de modelos comparables de otros desarrolladores (por ejemplo, otros modelos fundacionales de series temporales presentes en GIFT-Eval o fev-bench). Cualquier comparación numérica con terceros requeriría consultar directamente esos leaderboards, por lo que se indica como no disponible en esta ficha.
 
@@ -92,7 +92,7 @@ No se dispone en la información proporcionada de especificaciones ni métricas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theforecastingcompany/t0-gamma
+- Modelo en Hugging Face: https://huggingface.co/theforecastingcompany/t0-gamma
 - Informe técnico (arXiv): https://arxiv.org/abs/2609.24559
 - Blog del lanzamiento: https://www.theforecastingcompany.com/blog/t0-gamma/
 - Web del desarrollador: https://theforecastingcompany.com/

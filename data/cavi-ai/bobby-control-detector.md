@@ -71,8 +71,8 @@ Las 300 páginas sintéticas reservadas no estuvieron en el entrenamiento de nin
 
 | Modelo | Parametros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bobby-control-detector | 20,1 M | 1024×544 | Deteccion de controles web (1 clase) | apache-2.0 | HuggingFace, safetensors y ONNX |
-| PekingU/rtdetr_v2_r18vd (modelo base) | no disponible | no disponible | Deteccion de objetos general (COCO) | no disponible | HuggingFace |
+| bobby-control-detector | 20,1 M | 1024×544 | Deteccion de controles web (1 clase) | apache-2.0 | Hugging Face, safetensors y ONNX |
+| PekingU/rtdetr_v2_r18vd (modelo base) | no disponible | no disponible | Deteccion de objetos general (COCO) | no disponible | Hugging Face |
 | Otros detectores de UI especializados | no disponible | no disponible | Deteccion de elementos de interfaz | no disponible | no disponible |
 
 El modelo base RT-DETRv2 con ResNet-18 es un detector general de objetos entrenado sobre COCO; bobby-control-detector lo reemplaza por una cabeza de una sola clase entrenada sobre páginas web sintéticas. No se dispone de datos de benchmarks de alternativas especializadas en parseo de UI en la información proporcionada, por lo que la comparativa cuantitativa con otros modelos de la misma categoría queda como no disponible.
@@ -91,7 +91,7 @@ El modelo base RT-DETRv2 con ResNet-18 es un detector general de objetos entrena
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cavi-ai/bobby-control-detector
+- Modelo en Hugging Face: https://huggingface.co/cavi-ai/bobby-control-detector
 - Modelo base: https://huggingface.co/PekingU/rtdetr_v2_r18vd
 - Repositorio bobby-browser: https://github.com/cavi-ai/bobby-browser
 - Script de generación de páginas: https://github.com/cavi-ai/bobby-browser/blob/main/scripts/perception/generate_pages.py

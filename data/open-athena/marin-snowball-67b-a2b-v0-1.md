@@ -87,10 +87,10 @@ No se dispone de datos de benchmarks independientes ni de especificaciones de co
 
 | Modelo | Parámetros | Contexto | Licencia | Validación reportada | Disponibilidad |
 |---|---:|---|---|---|---|
-| Marin-Snowball-67B-A2B-v0.1 | ~67B (A2B) | No disponible | openmdw-1.1 | pass@1 nativo 50,22 % en el paso 14 | HuggingFace |
-| Grug-67B-A2B-Merge-Campaign2-DARE-TIES-02 | ~67B (A2B) | No disponible | No disponible | pass@1 nativo 41,21 % como inicializador | HuggingFace, revisión fijada |
-| Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92 | ~67B (A2B) | No disponible | No disponible | No disponible | HuggingFace, padre de la fusión |
-| Grug-67B-A2B-Antidoom-RLVR1-Reference-KL-Step20-2026.10.04 | ~67B (A2B) | No disponible | No disponible | No disponible | HuggingFace, padre de la fusión |
+| Marin-Snowball-67B-A2B-v0.1 | ~67B (A2B) | No disponible | openmdw-1.1 | pass@1 nativo 50,22 % en el paso 14 | Hugging Face |
+| Grug-67B-A2B-Merge-Campaign2-DARE-TIES-02 | ~67B (A2B) | No disponible | No disponible | pass@1 nativo 41,21 % como inicializador | Hugging Face, revisión fijada |
+| Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92 | ~67B (A2B) | No disponible | No disponible | No disponible | Hugging Face, padre de la fusión |
+| Grug-67B-A2B-Antidoom-RLVR1-Reference-KL-Step20-2026.10.04 | ~67B (A2B) | No disponible | No disponible | No disponible | Hugging Face, padre de la fusión |
 
 Frente al inicializador, la exportación del paso 14 mejora 9,01 puntos en pass@1 combinado y 14,91 puntos en recompensa NVIDIA, pero pierde 6,17 puntos en recompensa estructural. No hay datos comparables de modelos densos de 70B ni de otros MoE de tamaño similar en la información proporcionada.
 

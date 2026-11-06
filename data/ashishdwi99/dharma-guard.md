@@ -86,8 +86,8 @@ Resultados reportados por el autor. Todas las filas de test están excluidas del
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dharma-Guard | 321,9 M | no disponible | Decisión de 3 vías sobre acciones de agente, basada en principios | Apache 2.0 | HuggingFace |
-| ProtectAI DeBERTa-v3 prompt-injection v2 | no disponible | no disponible | Clasificación binaria de inyección de prompts | no disponible | HuggingFace |
+| Dharma-Guard | 321,9 M | no disponible | Decisión de 3 vías sobre acciones de agente, basada en principios | Apache 2.0 | Hugging Face |
+| ProtectAI DeBERTa-v3 prompt-injection v2 | no disponible | no disponible | Clasificación binaria de inyección de prompts | no disponible | Hugging Face |
 | "Bloquear todo" (baseline) | no aplica | no aplica | Regla trivial | no aplica | no aplica |
 
 Frente a ProtectAI DeBERTa-v3, Dharma-Guard ofrece mayor recall (98,8% vs 50,0% en AgentDojo) y menor ASR (1,3% vs 50,0%), a costa de una utility menor (24,3% vs 61,2%), es decir, bloquea más acciones benignas. El baseline trivial de bloquear todo alcanza 100% de recall pero utility nula y F1 de 0,608, por debajo del 0,667 de Dharma-Guard.
@@ -105,7 +105,7 @@ Frente a ProtectAI DeBERTa-v3, Dharma-Guard ofrece mayor recall (98,8% vs 50,0% 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AshishDwi99/dharma-guard
+- Modelo en Hugging Face: https://huggingface.co/AshishDwi99/dharma-guard
 - Repositorio de Laya: https://github.com/NandhaKishorM/laya
 - Modelo base mmBERT: https://huggingface.co/jhu-clsp/mmBERT-base
 - ProtectAI DeBERTa-v3 prompt-injection v2 (comparativa): https://huggingface.co/protectai/deberta-v3-base-prompt-injection-v2

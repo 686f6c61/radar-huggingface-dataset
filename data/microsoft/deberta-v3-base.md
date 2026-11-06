@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeBERTa-v3-base es un modelo de lenguaje de tipo encoder (solo codificador) desarrollado por Microsoft Research, publicado originalmente a finales de 2021 y alojado en HuggingFace desde marzo de 2022. No es un modelo generativo: su tarea principal es la comprension del lenguaje natural (NLU), y en el Hub aparece etiquetado con el pipeline `fill-mask` (Masked Language Modeling). Es la tercera iteracion de la familia DeBERTa, que mejoro BERT y RoBERTa mediante atencion desacoplada (*disentangled attention*) y un decodificador de mascara mejorado; la version V3 anade un preentrenamiento al estilo ELECTRA con comparticion de embeddings desacoplada por gradiente.
+DeBERTa-v3-base es un modelo de lenguaje de tipo encoder (solo codificador) desarrollado por Microsoft Research, publicado originalmente a finales de 2021 y alojado en Hugging Face desde marzo de 2022. No es un modelo generativo: su tarea principal es la comprension del lenguaje natural (NLU), y en el Hub aparece etiquetado con el pipeline `fill-mask` (Masked Language Modeling). Es la tercera iteracion de la familia DeBERTa, que mejoro BERT y RoBERTa mediante atencion desacoplada (*disentangled attention*) y un decodificador de mascara mejorado; la version V3 anade un preentrenamiento al estilo ELECTRA con comparticion de embeddings desacoplada por gradiente.
 
 El modelo tiene 12 capas y un tamano oculto de 768. El backbone contiene 86 millones de parametros, a los que se suman aproximadamente 98 millones adicionales de la capa de embeddings, debido a un vocabulario de 128.000 tokens. El total ronda por tanto los 184 millones de parametros, un orden de magnitud muy inferior al de los LLM generativos actuales, lo que lo hace extremadamente ligero para inferencia. Fue entrenado con 160 GB de datos de texto en ingles.
 
@@ -71,17 +71,17 @@ No se han publicado en la informacion disponible resultados para otros benchmark
 - **VRAM en FP16/BF16**: aproximadamente 0,4 GB de pesos; cabe holgadamente en cualquier GPU moderna.
 - **GPU recomendadas**: no requiere GPU dedicada. Funciona correctamente en CPU para inferencia por lotes; en GPU basta una T4, RTX 3060, RTX 4090 o cualquier acelerador de gama media. Para fine-tuning, una GPU con 8-16 GB de VRAM es suficiente.
 - **Consumer GPU**: si, cabe en practicamente cualquier GPU de consumo, e incluso en CPU con un throughput razonable para lotes pequenos.
-- **Opciones de despliegue**: HuggingFace Transformers (PyTorch y TensorFlow), ONNX Runtime, TorchScript, y despliegue gestionado en Azure (segun el tag `deploy:azure` del Hub). No esta orientado a vLLM, llama.cpp u Ollama, que estan pensados para modelos generativos.
+- **Opciones de despliegue**: Hugging Face Transformers (PyTorch y TensorFlow), ONNX Runtime, TorchScript, y despliegue gestionado en Azure (segun el tag `deploy:azure` del Hub). No esta orientado a vLLM, llama.cpp u Ollama, que estan pensados para modelos generativos.
 - **Latencia y throughput**: no se publican cifras oficiales. Para referencia cualitativa, al ser un encoder de 184 M de parametros, la inferencia es del orden de milisegundos por lote en GPU y de decenas de milisegundos en CPU por secuencia corta. No hay datos concretos en la informacion disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros backbone | Contexto | Rendimiento (SQuAD 2.0 F1 / MNLI) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeBERTa-v3-base | 86 M (+98 M embeddings) | 512 | 88.4 / 90.6 | MIT | HuggingFace, Azure |
-| RoBERTa-base | 86 M | 512 | 83.7 / 87.6 | MIT | HuggingFace |
-| ELECTRA-base | 86 M | 512 | -/80.5 (EM) / 88.8 | Apache 2.0 | HuggingFace |
-| DeBERTa-base | 100 M | 512 | 86.2 / 88.8 | MIT | HuggingFace |
+| DeBERTa-v3-base | 86 M (+98 M embeddings) | 512 | 88.4 / 90.6 | MIT | Hugging Face, Azure |
+| RoBERTa-base | 86 M | 512 | 83.7 / 87.6 | MIT | Hugging Face |
+| ELECTRA-base | 86 M | 512 | -/80.5 (EM) / 88.8 | Apache 2.0 | Hugging Face |
+| DeBERTa-base | 100 M | 512 | 86.2 / 88.8 | MIT | Hugging Face |
 
 DeBERTa-v3-base obtiene el mejor rendimiento de la comparativa en las tareas reportadas, a pesar de tener un backbone mas pequeno que DeBERTa-base (86 M frente a 100 M), gracias al preentrenamiento estilo ELECTRA. El coste es un vocabulario mucho mayor (128 K tokens), lo que aumenta el numero total de parametros por la capa de embeddings.
 
@@ -98,7 +98,7 @@ DeBERTa-v3-base obtiene el mejor rendimiento de la comparativa en las tareas rep
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/microsoft/deberta-v3-base
+- Hugging Face: https://huggingface.co/microsoft/deberta-v3-base
 - Repositorio oficial: https://github.com/microsoft/DeBERTa
 - Paper DeBERTaV3: https://arxiv.org/abs/2111.09543
 - Paper DeBERTa (v1): https://arxiv.org/abs/2006.03654

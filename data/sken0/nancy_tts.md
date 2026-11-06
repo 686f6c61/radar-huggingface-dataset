@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Nancy_tts es un ajuste fino (fine-tuning) del modelo unsloth/orpheus-3b-0.1-ft, publicado por el usuario sken0 en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de generación de texto de aproximadamente 3,3 mil millones de parámetros, con arquitectura de tipo Llama según las etiquetas del repositorio, y entrenado con la librería Unsloth junto con TRL de HuggingFace, lo que según la propia model card permitió un entrenamiento aproximadamente dos veces más rápido. El repositorio ocupa 6,6 GB y contiene pesos en formato safetensors.
+Nancy_tts es un ajuste fino (fine-tuning) del modelo unsloth/orpheus-3b-0.1-ft, publicado por el usuario sken0 en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de generación de texto de aproximadamente 3,3 mil millones de parámetros, con arquitectura de tipo Llama según las etiquetas del repositorio, y entrenado con la librería Unsloth junto con TRL de Hugging Face, lo que según la propia model card permitió un entrenamiento aproximadamente dos veces más rápido. El repositorio ocupa 6,6 GB y contiene pesos en formato safetensors.
 
 El interés de esta ficha es limitado pero ilustrativo: se trata de un modelo recién publicado (10 de septiembre de 2026, según los metadatos), con cero descargas y cero likes en el momento de la consulta, y sin resultados de benchmarks publicados. La model card es mínima y no documenta dataset de entrenamiento, hiperparámetros, longitud de contexto ni capacidades concretas, por lo que buena parte de los apartados de esta ficha quedan marcados como "no disponible".
 
-Un punto que conviene señalar: el nombre del repositorio (Nancy_tts) y el modelo base (Orpheus, de la familia de modelos orientados a síntesis de voz) sugieren un uso relacionado con texto-a-voz, pero la pipeline declarada en HuggingFace es text-generation y no hay ninguna evidencia documentada en el repositorio sobre capacidades de audio. Cualquier evaluación de uso debe partir de esa ambigüedad.
+Un punto que conviene señalar: el nombre del repositorio (Nancy_tts) y el modelo base (Orpheus, de la familia de modelos orientados a síntesis de voz) sugieren un uso relacionado con texto-a-voz, pero la pipeline declarada en Hugging Face es text-generation y no hay ninguna evidencia documentada en el repositorio sobre capacidades de audio. Cualquier evaluación de uso debe partir de esa ambigüedad.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ Un punto que conviene señalar: el nombre del repositorio (Nancy_tts) y el model
 
 ## Arquitectura y entrenamiento
 
-La información disponible indica que se trata de un transformer de tipo Llama, ajustado a partir de unsloth/orpheus-3b-0.1-ft. El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, según declara el autor en la model card. No se especifican el número de tokens de entrenamiento, la composición del dataset, la técnica de ajuste (LoRA, QLoRA o full fine-tuning), ni si hubo etapas de RLHF, DPO u otra alineación posterior.
+La información disponible indica que se trata de un transformer de tipo Llama, ajustado a partir de unsloth/orpheus-3b-0.1-ft. El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, según declara el autor en la model card. No se especifican el número de tokens de entrenamiento, la composición del dataset, la técnica de ajuste (LoRA, QLoRA o full fine-tuning), ni si hubo etapas de RLHF, DPO u otra alineación posterior.
 
 Tampoco se documentan innovaciones técnicas propias: el único elemento diferencial mencionado es el uso de Unsloth para acelerar el entrenamiento. Al derivar de Orpheus-3B, es razonable asumir que hereda la arquitectura base de esa familia, pero los detalles concretos (longitud de contexto, tokenizador, configuración de atención) no están confirmados en la información proporcionada y por tanto se marcan como no disponibles.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sken0/Nancy_tts | 3,3 B | no disponible | en | apache-2.0 | HuggingFace, safetensors, 0 descargas |
-| unsloth/orpheus-3b-0.1-ft (modelo base) | ~3 B (no confirmado en la información disponible) | no disponible | no disponible | no disponible | HuggingFace |
+| sken0/Nancy_tts | 3,3 B | no disponible | en | apache-2.0 | Hugging Face, safetensors, 0 descargas |
+| unsloth/orpheus-3b-0.1-ft (modelo base) | ~3 B (no confirmado en la información disponible) | no disponible | no disponible | no disponible | Hugging Face |
 | Otros modelos de ~3 B de la familia Llama | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la información proporcionada, por lo que la comparativa se limita a parámetros, licencia y disponibilidad. Cualquier comparación de calidad o de benchmarks requeriría una evaluación propia.
@@ -84,8 +84,8 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sken0/Nancy_tts
+- Hugging Face: https://huggingface.co/sken0/Nancy_tts
 - Modelo base: https://huggingface.co/unsloth/orpheus-3b-0.1-ft
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (GitHub): https://github.com/huggingface/trl
+- TRL de Hugging Face (GitHub): https://github.com/huggingface/trl
 - Búsqueda web: sin resultados relevantes. Los enlaces devueltos corresponden a páginas de ayuda de YouTube y a la comunidad Zhihu, sin relación con el modelo.

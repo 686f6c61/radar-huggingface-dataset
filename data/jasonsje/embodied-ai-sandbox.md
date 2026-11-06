@@ -43,7 +43,7 @@ El contenido real del repositorio es documental. La model card describe que las 
 - Diseño de protocolos de reproducibilidad: la exigencia del autor de registrar versiones de dataset, comandos, semillas, hardware y logs en bruto es directamente reutilizable como checklist para proyectos de robótica o aprendizaje por refuerzo.
 - Identificación de factores de confusión: el documento enumera confounders probables del experimento propuesto, útil para revisores que evalúen diseños experimentales similares.
 - Enseñanza de metodología científica en IA: adecuado como material de lectura en cursos de posgrado para discutir la diferencia entre hipótesis, plan y resultado.
-- Auditoría de artefactos publicados: el repositorio ilustra un caso de etiquetado engañoso en HuggingFace (tags de modelo en un repositorio de notas), útil para diseñar heurísticas de filtrado en catálogos de modelos.
+- Auditoría de artefactos publicados: el repositorio ilustra un caso de etiquetado engañoso en Hugging Face (tags de modelo en un repositorio de notas), útil para diseñar heurísticas de filtrado en catálogos de modelos.
 
 ## Benchmarks y rendimiento
 
@@ -76,5 +76,5 @@ No disponible. No existen modelos comparables porque el artefacto no es un model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jasonsje/embodied-ai-sandbox
+- Repositorio en Hugging Face: https://huggingface.co/jasonsje/embodied-ai-sandbox
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información proporcionada.

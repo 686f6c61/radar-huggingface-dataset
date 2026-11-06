@@ -2,7 +2,7 @@
 
 ## Resumen
 
-paper-classifier-2B es un modelo de clasificación de artículos científicos desarrollado por el usuario de HuggingFace `maximerivest` para el proyecto Science Made Readable. No es un modelo generativo: dado el texto de un paper (título, abstract, venue y año opcionales) y una lista de opciones, devuelve una distribución de probabilidad sobre esas opciones en un único forward pass, leyendo los logits del siguiente token correspondientes a los códigos de cada opción. Las opciones pueden ser cualquier taxonomía de investigación (campos de OpenAlex, categorías de arXiv, MeSH, etiquetas propias) o una única pregunta de tipo sí/no sobre si un tema es central en el paper.
+paper-classifier-2B es un modelo de clasificación de artículos científicos desarrollado por el usuario de Hugging Face `maximerivest` para el proyecto Science Made Readable. No es un modelo generativo: dado el texto de un paper (título, abstract, venue y año opcionales) y una lista de opciones, devuelve una distribución de probabilidad sobre esas opciones en un único forward pass, leyendo los logits del siguiente token correspondientes a los códigos de cada opción. Las opciones pueden ser cualquier taxonomía de investigación (campos de OpenAlex, categorías de arXiv, MeSH, etiquetas propias) o una única pregunta de tipo sí/no sobre si un tema es central en el paper.
 
 El modelo parte de Qwen/Qwen3.5-2B (2.390.384.448 parámetros totales según safetensors) y se ha afinado para dos tareas concretas: `classify`, que reparte probabilidad entre 2 y 562 opciones con suma 1, y `is_on_topic`, que devuelve P(sí) para un tema dado con definición opcional. Al no generar texto, el coste por inferencia es muy bajo: según el autor, unas 28.000 papers por hora en una RTX 3090 para una pregunta de 176 opciones (0,14 s por paper) y 155.000 por hora en preguntas de sí/no (0,035 s).
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parámetros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| paper-classifier-2B | 2,39 B | No disponible | ~28.000 papers/h (176 opciones) en RTX 3090 | Apache 2.0 | HuggingFace |
-| paper-classifier-0.8B (hermano) | ~0,8 B (según el nombre) | No disponible | Aproximadamente el doble de rápido, algo menos preciso según el autor | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-2B (base) | 2 B (aproximado, no confirmado en la información disponible) | No disponible | No aplica: es un modelo generativo, no un clasificador | No disponible | HuggingFace |
+| paper-classifier-2B | 2,39 B | No disponible | ~28.000 papers/h (176 opciones) en RTX 3090 | Apache 2.0 | Hugging Face |
+| paper-classifier-0.8B (hermano) | ~0,8 B (según el nombre) | No disponible | Aproximadamente el doble de rápido, algo menos preciso según el autor | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-2B (base) | 2 B (aproximado, no confirmado en la información disponible) | No disponible | No aplica: es un modelo generativo, no un clasificador | No disponible | Hugging Face |
 
 No se dispone de comparaciones cuantitativas frente a clasificadores científicos dedicados (por ejemplo, modelos tipo SciBERT) ni frente a LLM usados como clasificadores zero-shot, porque no hay cifras de accuracy publicadas en la información disponible.
 
@@ -93,7 +93,7 @@ No se dispone de comparaciones cuantitativas frente a clasificadores científico
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maximerivest/paper-classifier-2B
+- Modelo en Hugging Face: https://huggingface.co/maximerivest/paper-classifier-2B
 - Modelo hermano: https://huggingface.co/maximerivest/paper-classifier-0.8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Proyecto del autor: https://sciencemadereadable.com

@@ -71,6 +71,6 @@ No disponible. La informacion proporcionada no incluye datos de benchmarks, cont
 - El repositorio registra 0 descargas y 0 likes, por lo que no existe validacion externa de su funcionamiento.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/siregaradi/mixer-matching
+- Hugging Face: https://huggingface.co/siregaradi/mixer-matching
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo, al autor ni a la arquitectura descrita. Los resultados devueltos corresponden a paginas de una red social (ok.ru, odnoklassniki.com, odnoklassniki.ru y urfix.ru) sin relacion alguna con el modelo, por lo que se omiten.
 - Papers, blogs, repositorios o demos adicionales: no disponible.

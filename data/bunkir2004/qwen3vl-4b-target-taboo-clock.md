@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Bunkir2004/qwen3vl-4b-target-taboo-clock` es un adaptador de ajuste fino del tipo LoRA publicado en HuggingFace sobre el modelo base `Qwen/Qwen3-VL-4B-Instruct`, el modelo vision-lenguaje denso de 4.000 millones de parametros de la familia Qwen3-VL de Alibaba Qwen. El repositorio contiene unicamente los pesos del adaptador (0,3 GB en formato safetensors) mas la configuracion de PEFT 0.17.1, no un modelo completo: para poder utilizarlo hay que cargar el modelo base y aplicarle el adaptador, o bien fusionarlos previamente.
+`Bunkir2004/qwen3vl-4b-target-taboo-clock` es un adaptador de ajuste fino del tipo LoRA publicado en Hugging Face sobre el modelo base `Qwen/Qwen3-VL-4B-Instruct`, el modelo vision-lenguaje denso de 4.000 millones de parametros de la familia Qwen3-VL de Alibaba Qwen. El repositorio contiene unicamente los pesos del adaptador (0,3 GB en formato safetensors) mas la configuracion de PEFT 0.17.1, no un modelo completo: para poder utilizarlo hay que cargar el modelo base y aplicarle el adaptador, o bien fusionarlos previamente.
 
 El artefacto esta etiquetado con el pipeline `text-generation` y con las etiquetas `lora`, `peft`, `transformers` y `conversational`, lo que indica que se trata de una especializacion sobre el comportamiento conversacional del modelo base. El nombre del repositorio (`target-taboo-clock`) y el contenido de la model card no documentan en ningun momento el proposito, el dataset ni el procedimiento de entrenamiento empleados, por lo que se desconoce que comportamiento concreto pretende inducir el ajuste.
 
@@ -32,7 +32,7 @@ La relevancia de esta ficha es limitada y fundamentalmente metodologica: ilustra
 
 El repositorio no contiene un modelo entrenado desde cero, sino un conjunto de matrices de bajo rango (LoRA) que se aplican sobre las capas del modelo base `Qwen/Qwen3-VL-4B-Instruct`. El modelo base pertenece a la familia Qwen3-VL, descrita por el propio fabricante como su generacion de modelos vision-lenguaje mas capaz hasta la fecha, con mejoras en comprension y generacion de texto, percepcion y razonamiento sobre contenido visual, soporte de contextos mas largos, comprension de relaciones espaciales y video dinamico, e interaccion con agentes de IA. Al tratarse de un modelo denso de aproximadamente 4.000 millones de parametros, no hay enrutamiento por expertos ni parametros activos parciales.
 
-No hay informacion alguna sobre el entrenamiento del adaptador: se desconoce el numero de tokens de ajuste, la composicion del dataset, si hubo etapas de RLHF, DPO o SFT, el rango de LoRA, los modulos objetivo, la tasa de aprendizaje, la precision numerica empleada o el numero de epocas. La model card conserva la plantilla por defecto de HuggingFace con todos los campos marcados como "More Information Needed", incluida la seccion de hiperparametros y la de infraestructura de computo. El unico dato tecnico verificable es la version del framework de entrenamiento (PEFT 0.17.1) y el tamano del artefacto (0,3 GB), compatible con un adaptador de rango medio-alto o con adaptadores aplicados a multiples modulos de atencion y proyeccion.
+No hay informacion alguna sobre el entrenamiento del adaptador: se desconoce el numero de tokens de ajuste, la composicion del dataset, si hubo etapas de RLHF, DPO o SFT, el rango de LoRA, los modulos objetivo, la tasa de aprendizaje, la precision numerica empleada o el numero de epocas. La model card conserva la plantilla por defecto de Hugging Face con todos los campos marcados como "More Information Needed", incluida la seccion de hiperparametros y la de infraestructura de computo. El unico dato tecnico verificable es la version del framework de entrenamiento (PEFT 0.17.1) y el tamano del artefacto (0,3 GB), compatible con un adaptador de rango medio-alto o con adaptadores aplicados a multiples modulos de atencion y proyeccion.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|---|
 | Bunkir2004/qwen3vl-4b-target-taboo-clock | Adaptador LoRA sobre Qwen3-VL-4B-Instruct | No disponible (base ~4B) | No disponible | No disponible | 0 descargas |
 | Qwen/Qwen3-VL-4B-Instruct | Modelo completo vision-lenguaje denso | ~4B | No confirmado en la informacion disponible | No disponible en la informacion proporcionada | Modelo base de referencia |
-| Qwen/Qwen3-VL-4B-Thinking | Modelo completo vision-lenguaje denso con modo de razonamiento | ~4B | No confirmado en la informacion disponible | No disponible en la informacion proporcionada | Publicado en HuggingFace |
+| Qwen/Qwen3-VL-4B-Thinking | Modelo completo vision-lenguaje denso con modo de razonamiento | ~4B | No confirmado en la informacion disponible | No disponible en la informacion proporcionada | Publicado en Hugging Face |
 | Qwen3-4B | Modelo de texto denso | ~4B | No confirmado en la informacion disponible | No disponible en la informacion proporcionada | Distribuido tambien via LM Studio |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas en la informacion proporcionada, por lo que la comparacion se limita a tipo de artefacto, tamano y disponibilidad.
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 - Repositorio del adaptador: https://huggingface.co/Bunkir2004/qwen3vl-4b-target-taboo-clock
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Variante con razonamiento del modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking
-- Model card del modelo base en HuggingFace (README): https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking/blame/main/README.md
+- Model card del modelo base en Hugging Face (README): https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking/blame/main/README.md
 - Registro de Qwen3-VL 4B en Ollama: https://ollama.com/library/qwen3-vl:4b
 - Familia Qwen3 en LM Studio: https://lmstudio.ai/models/qwen3
 - Articulo citado en las etiquetas (calculador de impacto, no especifico del modelo): https://arxiv.org/abs/1910.09700

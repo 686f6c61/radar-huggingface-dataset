@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ScooBDoob es un repositorio de codigo Python publicado por el laboratorio ChatterjeeLab en HuggingFace. No se trata de un modelo de lenguaje: la model card describe un paquete cientifico (`scoobdoob/`) con funciones de *conditioning*, construccion de modelos de estados de Markov (MSM) y analisis, acompanado de scripts de figura para articulo (`make_*.py`, `paper_figures/`), analisis de sensibilidad (`analysis/`) y comprobaciones de correctitud numerica (`tests/`). El repositorio no contiene pesos, no declara pipeline y ocupa 0,0 GB.
+ScooBDoob es un repositorio de codigo Python publicado por el laboratorio ChatterjeeLab en Hugging Face. No se trata de un modelo de lenguaje: la model card describe un paquete cientifico (`scoobdoob/`) con funciones de *conditioning*, construccion de modelos de estados de Markov (MSM) y analisis, acompanado de scripts de figura para articulo (`make_*.py`, `paper_figures/`), analisis de sensibilidad (`analysis/`) y comprobaciones de correctitud numerica (`tests/`). El repositorio no contiene pesos, no declara pipeline y ocupa 0,0 GB.
 
 El contenido del README indica que el paquete da soporte a tres estudios concretos: comparativas de muestreo sobre el potencial de Muller-Brown (12 trayectorias de Langevin sobreamortiguado de 250.000 pasos, con paso temporal 0,0002 y temperatura inversa 0,06), robustez de muestreo sobre el peptido Aib9 (trayectoria de aproximadamente 223 ns a 500 K con paso de 2 fs, registrando nueve angulos phi/psi con PLUMED) y analisis de descubrimiento y preferencia de docking para p53 Y220C. El nombre del paquete sugiere una relacion con el *conditioning* de Doob para procesos estocasticos, aunque el README no lo explicita.
 
@@ -27,7 +27,7 @@ Su relevancia es por tanto la de un artefacto de reproducibilidad computacional 
 | Tamano del repositorio | 0,0 GB |
 | Datos incluidos | resultados numericos pequenos y puntuaciones de docking; trayectorias MD no distribuidas |
 | Entradas externas requeridas | listadas en `INPUTS.tsv` (contenido no disponible) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fechas | creado 2026-07-31, actualizado 2026-10-20 |
 
 ## Arquitectura y entrenamiento
@@ -85,7 +85,7 @@ El README menciona `tests/` como "comprobaciones de correctitud numerica", no co
 | Contexto | no aplica | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | repositorio publico en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | repositorio publico en Hugging Face, 0 descargas | no disponible |
 
 No se dispone de informacion sobre herramientas alternativas de la misma categoria en el material proporcionado, por lo que no es posible establecer una comparacion fundamentada.
 
@@ -105,6 +105,6 @@ No se dispone de informacion sobre herramientas alternativas de la misma categor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ChatterjeeLab/ScooBDoob
+- Repositorio en Hugging Face: https://huggingface.co/ChatterjeeLab/ScooBDoob
 - Workflow OpenMM de Aib9 (shams-mehdi/aib9_openmm): https://github.com/shams-mehdi/aib9_openmm
 - Mehdi et al. (2022), referencia metodologica de Aib9: https://doi.org/10.1021/acs.jctc.2c00058

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo VasilisAsim/Unispeech_SAT_fnetuned_esd_english es un clasificador de audio basado en la arquitectura UniSpeech-SAT, publicado por el usuario VasilisAsim en HuggingFace y etiquetado con el pipeline `audio-classification`. Segun el nombre del repositorio, se trata de un ajuste fino (finetuning) del modelo UniSpeech-SAT sobre el corpus ESD en su particion en ingles (Emotional Speech Dataset), lo que apunta a una tarea de reconocimiento de emociones a partir de la senal de voz. El repositorio tiene un tamano de 0,4 GB y un total de 94.569.861 parametros reales declarados en los pesos safetensors, lo que coincide con el tamano del checkpoint base de UniSpeech-SAT (~94 M).
+El modelo VasilisAsim/Unispeech_SAT_fnetuned_esd_english es un clasificador de audio basado en la arquitectura UniSpeech-SAT, publicado por el usuario VasilisAsim en Hugging Face y etiquetado con el pipeline `audio-classification`. Segun el nombre del repositorio, se trata de un ajuste fino (finetuning) del modelo UniSpeech-SAT sobre el corpus ESD en su particion en ingles (Emotional Speech Dataset), lo que apunta a una tarea de reconocimiento de emociones a partir de la senal de voz. El repositorio tiene un tamano de 0,4 GB y un total de 94.569.861 parametros reales declarados en los pesos safetensors, lo que coincide con el tamano del checkpoint base de UniSpeech-SAT (~94 M).
 
 UniSpeech-SAT es un modelo de representacion del habla con preentrenamiento "speaker-aware" desarrollado originalmente por Microsoft Research. Combina un extractor de caracteristicas convolucional con un codificador Transformer y se preentrena combinando una perdida contrastiva a nivel de locucion (utterance-wise) con una tarea de prediccion enmascarada. Su objetivo es producir representaciones de audio utiles para tareas posteriores de clasificacion, diarizacion o reconocimiento de locutor.
 
-La relevancia de esta ficha es limitada pero concreta: se trata de un checkpoint de segunda mano, con cero descargas y cero likes en el momento de la consulta, una model card autogenerada por la plantilla de HuggingFace y sin licencia ni idiomas declarados. Esto lo convierte en un artefacto poco documentado, apto para experimentacion interna o como punto de partida, pero no para produccion sin auditoria previa.
+La relevancia de esta ficha es limitada pero concreta: se trata de un checkpoint de segunda mano, con cero descargas y cero likes en el momento de la consulta, una model card autogenerada por la plantilla de Hugging Face y sin licencia ni idiomas declarados. Esto lo convierte en un artefacto poco documentado, apto para experimentacion interna o como punto de partida, pero no para produccion sin auditoria previa.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un checkpoint
 
 La arquitectura subyacente es UniSpeech-SAT, un modelo de representacion del habla que aplica un front-end convolucional sobre la forma de onda cruda para extraer caracteristicas acusticas, seguido de un codificador Transformer. El preentrenamiento original de UniSpeech-SAT combina dos objetivos: una perdida contrastiva a nivel de locucion, que fuerza al modelo a discriminar representaciones de distintos hablantes, y una tarea de prediccion de tramas enmascaradas, que obliga al codificador a reconstruir informacion acustica oculta. Este esquema "speaker-aware" mejora el rendimiento en tareas posteriores frente a preentrenamientos puramente enmascarados.
 
-El checkpoint concreto de este repositorio es un ajuste fino del modelo base sobre el corpus ESD en ingles, aparentemente para una tarea de clasificacion (probablemente reconocimiento de emociones, dado el origen del dataset). No hay informacion sobre el numero de tokens o horas de audio usadas en el ajuste fino, la composicion exacta del dataset empleado, ni si se aplicaron tecnicas de RLHF, DPO o similares, ya que la model card es la plantilla autogenerada de HuggingFace y no contiene datos reales. Tampoco se documenta ninguna innovacion tecnica adicional sobre el modelo base. Cabe senalar que la etiqueta `arxiv:1910.09700`, presente en los metadatos, corresponde al paper de Lacoste et al. sobre emisiones de carbono citado en la plantilla, y no al paper de UniSpeech-SAT.
+El checkpoint concreto de este repositorio es un ajuste fino del modelo base sobre el corpus ESD en ingles, aparentemente para una tarea de clasificacion (probablemente reconocimiento de emociones, dado el origen del dataset). No hay informacion sobre el numero de tokens o horas de audio usadas en el ajuste fino, la composicion exacta del dataset empleado, ni si se aplicaron tecnicas de RLHF, DPO o similares, ya que la model card es la plantilla autogenerada de Hugging Face y no contiene datos reales. Tampoco se documenta ninguna innovacion tecnica adicional sobre el modelo base. Cabe senalar que la etiqueta `arxiv:1910.09700`, presente en los metadatos, corresponde al paper de Lacoste et al. sobre emisiones de carbono citado en la plantilla, y no al paper de UniSpeech-SAT.
 
 ## Capacidades
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VasilisAsim/Unispeech_SAT_fnetuned_esd_english | ~94,6 M | UniSpeech-SAT ajustado para clasificacion de audio | no disponible | no disponible | HuggingFace, 0 descargas |
-| UniSpeech-SAT base (Microsoft) | ~94 M | Preentrenamiento de habla | no disponible | consultar repositorio original | HuggingFace (microsoft/unispeech-sat-base) |
-| Wav2Vec 2.0 base | ~95 M | Preentrenamiento de habla auto-supervisado | no disponible | consultar repositorio (MIT en el original de Facebook AI) | HuggingFace y ampliamente replicado |
-| WavLM base | ~94 M | Preentrenamiento de habla con modelado enmascarado y denoising | no disponible | MIT (segun repositorio original de Microsoft) | HuggingFace |
+| VasilisAsim/Unispeech_SAT_fnetuned_esd_english | ~94,6 M | UniSpeech-SAT ajustado para clasificacion de audio | no disponible | no disponible | Hugging Face, 0 descargas |
+| UniSpeech-SAT base (Microsoft) | ~94 M | Preentrenamiento de habla | no disponible | consultar repositorio original | Hugging Face (microsoft/unispeech-sat-base) |
+| Wav2Vec 2.0 base | ~95 M | Preentrenamiento de habla auto-supervisado | no disponible | consultar repositorio (MIT en el original de Facebook AI) | Hugging Face y ampliamente replicado |
+| WavLM base | ~94 M | Preentrenamiento de habla con modelado enmascarado y denoising | no disponible | MIT (segun repositorio original de Microsoft) | Hugging Face |
 
 La comparacion cuantitativa de rendimiento entre estos modelos no puede realizarse con la informacion disponible, ya que este checkpoint no publica resultados y la model card esta vacia.
 
@@ -85,8 +85,8 @@ La comparacion cuantitativa de rendimiento entre estos modelos no puede realizar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VasilisAsim/Unispeech_SAT_fnetuned_esd_english
+- Modelo en Hugging Face: https://huggingface.co/VasilisAsim/Unispeech_SAT_fnetuned_esd_english
 - Paper de UniSpeech-SAT (referencia de la arquitectura base): https://arxiv.org/abs/2110.05752
 - Paper citado en la etiqueta arxiv de los metadatos (Lacoste et al., 2019, emisiones de carbono): https://arxiv.org/abs/1910.09700
-- Repositorio de referencia de UniSpeech-SAT en HuggingFace: https://huggingface.co/microsoft/unispeech-sat-base
+- Repositorio de referencia de UniSpeech-SAT en Hugging Face: https://huggingface.co/microsoft/unispeech-sat-base
 - Documentacion del pipeline de clasificacion de audio de transformers: https://huggingface.co/docs/transformers/tasks/audio_classification

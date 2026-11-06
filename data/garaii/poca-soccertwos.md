@@ -2,9 +2,9 @@
 
 ## Resumen
 
-poca-SoccerTwos es un agente entrenado con el algoritmo POCA (Policy Optimization with Clipped Advantage, la implementación de PPO de Unity ML-Agents) para el entorno SoccerTwos del Unity ML-Agents Toolkit. Lo publica el usuario Garaii en HuggingFace con el repositorio `Garaii/poca-SoccerTwos`. No se trata de un modelo de lenguaje: es una política neuronal entrenada por refuerzo profundo que controla jugadores de un equipo de fútbol 2 contra 2 en un entorno de simulación 3D de Unity.
+poca-SoccerTwos es un agente entrenado con el algoritmo POCA (Policy Optimization with Clipped Advantage, la implementación de PPO de Unity ML-Agents) para el entorno SoccerTwos del Unity ML-Agents Toolkit. Lo publica el usuario Garaii en Hugging Face con el repositorio `Garaii/poca-SoccerTwos`. No se trata de un modelo de lenguaje: es una política neuronal entrenada por refuerzo profundo que controla jugadores de un equipo de fútbol 2 contra 2 en un entorno de simulación 3D de Unity.
 
-El modelo resuelve el problema de aprendizaje de comportamiento cooperativo multiagente en un entorno físico simulado: dos agentes por equipo deben coordinarse para marcar goles y defender. Es relevante como ejemplo reproducible de entrenamiento con ML-Agents y como artefacto exportado a ONNX que puede cargarse directamente en el visor de agentes de HuggingFace o integrarse en un runtime de Unity.
+El modelo resuelve el problema de aprendizaje de comportamiento cooperativo multiagente en un entorno físico simulado: dos agentes por equipo deben coordinarse para marcar goles y defender. Es relevante como ejemplo reproducible de entrenamiento con ML-Agents y como artefacto exportado a ONNX que puede cargarse directamente en el visor de agentes de Hugging Face o integrarse en un runtime de Unity.
 
 La información disponible es escasa: no se especifican parámetros, arquitectura de red, hiperparámetros de entrenamiento ni resultados de evaluación. El repositorio ocupa 0,2 GB y contiene los artefactos habituales de ML-Agents (checkpoint `.onnx` y logs de TensorBoard). El pipeline declarado es `reinforcement-learning` y la librería `ml-agents`.
 
@@ -34,7 +34,7 @@ No se dispone de información sobre el número de pasos de entrenamiento, la com
 
 - Control de agentes en el entorno SoccerTwos de Unity ML-Agents: movimiento, orientación y acciones de juego coordinadas con un compañero de equipo.
 - Comportamiento multiagente cooperativo aprendido por refuerzo (dos agentes por equipo).
-- Exportación a ONNX para inferencia en el visor de HuggingFace y en runtimes compatibles con ONNX Runtime.
+- Exportación a ONNX para inferencia en el visor de Hugging Face y en runtimes compatibles con ONNX Runtime.
 - Reanudación del entrenamiento mediante `mlagents-learn` con el flag `--resume`.
 - Inspección de métricas de entrenamiento a través de los logs de TensorBoard incluidos.
 - No soporta tool calling, function calling, razonamiento multi-paso en lenguaje natural, visión, audio ni capacidades multilingües.
@@ -42,7 +42,7 @@ No se dispone de información sobre el número de pasos de entrenamiento, la com
 ## Casos de uso
 
 - Reproducción de experimentos de RL multiagente: cargar el checkpoint y reanudar el entrenamiento con `mlagents-learn <config>.yaml --run-id=<id> --resume` para comparar curvas con otras ejecuciones de POCA en SoccerTwos.
-- Evaluación visual en navegador: subir el `.onnx` al visor de agentes de HuggingFace (https://huggingface.co/unity) y observar la política jugando sin instalar Unity, útil para demos docentes.
+- Evaluación visual en navegador: subir el `.onnx` al visor de agentes de Hugging Face (https://huggingface.co/unity) y observar la política jugando sin instalar Unity, útil para demos docentes.
 - Baseline en competiciones o pruebas internas de SoccerTwos: usar esta política como referencia frente a agentes propios entrenados con PPO, SAC o self-play avanzado.
 - Docencia de deep RL: ejemplo práctico de entrenamiento con ML-Agents y exportación a ONNX para ilustrar el ciclo completo de un agente.
 - Integración en un proyecto Unity: importar el `.onnx` como modelo de comportamiento (Behavior Parameters) para un agente no jugador en una escena de fútbol 2v2.
@@ -58,16 +58,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: muy baja; al tratarse de una política MLP de tamaño reducido para observaciones vectoriales, la inferencia cabe holgadamente en cualquier GPU consumer con 2-4 GB, e incluso en CPU.
 - GPU recomendadas: no se especifican; cualquier GPU compatible con ONNX Runtime (GTX 1060 en adelante, RTX 3060/4090, A100/H100) es suficiente. Para entrenamiento, ML-Agents se beneficia de GPUs con más memoria si se ejecutan muchos entornos en paralelo.
 - Cabe en GPU consumer: sí, con margen amplio; también en CPU para inferencia de un solo agente.
-- Opciones de despliegue: Unity ML-Agents (Barracuda/Inference Engine), ONNX Runtime, visor de agentes de HuggingFace. No aplica vLLM, llama.cpp, Ollama ni TGI, que son runtimes de modelos de lenguaje.
+- Opciones de despliegue: Unity ML-Agents (Barracuda/Inference Engine), ONNX Runtime, visor de agentes de Hugging Face. No aplica vLLM, llama.cpp, Ollama ni TGI, que son runtimes de modelos de lenguaje.
 - Latencia y throughput: no disponibles. La latencia depende del hardware y del número de agentes simulados; para una política MLP pequeña se espera del orden de milisegundos por paso en GPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Entorno | Algoritmo | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Garaii/poca-SoccerTwos | SoccerTwos | POCA (PPO) | ONNX | no disponible | HuggingFace |
+| Garaii/poca-SoccerTwos | SoccerTwos | POCA (PPO) | ONNX | no disponible | Hugging Face |
 | Agentes oficiales de Unity ML-Agents para SoccerTwos | SoccerTwos | PPO/POCA | ONNX | según repositorio de ML-Agents (no verificada aquí) | Repositorio de Unity |
-| Políticas de referencia de la comunidad para SoccerTwos en HuggingFace | SoccerTwos | PPO/POCA | ONNX | variable por autor | HuggingFace |
+| Políticas de referencia de la comunidad para SoccerTwos en Hugging Face | SoccerTwos | PPO/POCA | ONNX | variable por autor | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (recompensa media, tasa de victorias) para establecer una comparación cuantitativa con alternativas.
 
@@ -84,9 +84,9 @@ No se dispone de datos de rendimiento comparativo (recompensa media, tasa de vic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Garaii/poca-SoccerTwos
+- Modelo en Hugging Face: https://huggingface.co/Garaii/poca-SoccerTwos
 - Documentación de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Tutorial corto de ML-Agents (Huggy the Dog): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo de ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Visor de agentes de HuggingFace: https://huggingface.co/unity
+- Visor de agentes de Hugging Face: https://huggingface.co/unity

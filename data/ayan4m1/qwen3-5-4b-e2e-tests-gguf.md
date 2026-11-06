@@ -82,7 +82,7 @@ El modelo base Qwen3.5-4B es la referencia directa: este repositorio es una conv
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ayan4m1/Qwen3.5-4B-E2E-Tests-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ayan4m1/Qwen3.5-4B-E2E-Tests-GGUF
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Pagina de Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

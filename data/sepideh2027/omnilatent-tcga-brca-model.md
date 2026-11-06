@@ -99,8 +99,8 @@ La comparativa cuantitativa queda pendiente: la model card no ofrece evaluacione
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sepideh2027/OmniLatent-TCGA-BRCA-model
+- Modelo en Hugging Face: https://huggingface.co/Sepideh2027/OmniLatent-TCGA-BRCA-model
 - Dataset asociado citado en la model card: https://huggingface.co/datasets/Sepideh2027/biolatent-brca-tcga
-- Perfil de HuggingFace del autor: https://huggingface.co/Sepideh2027
+- Perfil de Hugging Face del autor: https://huggingface.co/Sepideh2027
 - GitHub del autor: https://github.com/AIResearcher20
 - Resultados de busqueda web: las consultas realizadas no devolvieron ningun enlace relevante sobre el modelo (los resultados obtenidos correspondian a sitios de restauracion de comida rapida y no guardan relacion con el contenido de esta ficha). No se dispone, por tanto, de paper, blog tecnico ni demo adicionales.

@@ -6,7 +6,7 @@
 
 El nombre del repositorio ("harmonix folds 0–7") sugiere que los ficheros corresponden a particiones o *folds* de validación cruzada de un conjunto de datos, probablemente el corpus Harmonix, pero esta interpretación no está confirmada en la información disponible. La model card no describe la arquitectura, el tamaño, el contexto ni las capacidades del modelo, por lo que la mayor parte de los datos técnicos debe marcarse como no disponible.
 
-La relevancia actual del repositorio es limitada: se trata de una copia de conveniencia con cero descargas y cero interacciones en HuggingFace, sin pipeline declarado y con un tamaño de repositorio que figura como 0.0 GB (lo que puede indicar que los pesos no están materializados o que el dato está incompleto). Para evaluar el modelo conviene acudir directamente a la fuente original.
+La relevancia actual del repositorio es limitada: se trata de una copia de conveniencia con cero descargas y cero interacciones en Hugging Face, sin pipeline declarado y con un tamaño de repositorio que figura como 0.0 GB (lo que puede indicar que los pesos no están materializados o que el dato está incompleto). Para evaluar el modelo conviene acudir directamente a la fuente original.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ Dada la ausencia de documentación sobre la tarea y las capacidades del modelo, 
 - Auditoría de licencia: el repositorio sirve como ejemplo de redistribución de pesos MIT con atribución explícita a los autores originales, útil para estudiar buenas prácticas de espejado.
 - Integración en pipelines de investigación: cargar los checkpoints desde este espejo cuando el acceso al repositorio original esté restringido, siempre que la licencia MIT lo permita.
 - Verificación de integridad de artefactos: utilizar `SHA256SUMS` para comprobar que los pesos descargados no han sido alterados durante la distribución.
-- Docencia y formación: emplear el repositorio como caso práctico de espejado de modelos y de gestión de licencias en HuggingFace.
+- Docencia y formación: emplear el repositorio como caso práctico de espejado de modelos y de gestión de licencias en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible, al no conocerse el tamaño del modelo.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible; el pipeline no está declarado en HuggingFace.
+- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible; el pipeline no está declarado en Hugging Face.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No disponible. La información proporcionada no identifica la categoría del mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Audante/allinone-harmonix-folds
+- Repositorio Hugging Face: https://huggingface.co/Audante/allinone-harmonix-folds
 - Modelo fuente: https://huggingface.co/taejunkim/allinone
 - Repositorio de código: https://github.com/mir-aidj/all-in-one
 - Revisión del checkpoint original: `379e5fd010b3fdd0ee8381ff8cbcfa51d70b5c19`

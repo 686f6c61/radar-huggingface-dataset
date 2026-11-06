@@ -83,7 +83,7 @@ No se dispone de datos de otras cuantizaciones del mismo modelo para comparar di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Intel/Qwen3.8-27B-bpw2.8-AutoRound
+- Hugging Face: https://huggingface.co/Intel/Qwen3.8-27B-bpw2.8-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio AutoRound: https://github.com/intel/auto-round
 - Paper SignRoundV2: https://arxiv.org/abs/2512.04746

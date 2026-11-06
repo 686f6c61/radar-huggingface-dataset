@@ -4,7 +4,7 @@
 
 Krea-2-Edit-Outfit-Transfer es un adaptador LoRA desarrollado por AliveAi para el modelo base de difusión krea/Krea-2-Raw. Su función principal es transferir la ropa de una imagen de referencia a un personaje generado, manteniendo la identidad del personaje y aplicando el atuendo de la imagen de entrada. Está diseñado específicamente para flujos de trabajo de edición de imágenes con Krea 2 Edit, y requiere nodos personalizados de ComfyUI para funcionar.
 
-El modelo se distribuye como un repositorio de 1,2 GB en HuggingFace, con más de 8.000 descargas y 73 likes. Aunque la licencia no está especificada, el autor ofrece dos flujos de trabajo listos para usar, uno optimizado para precisión y otro para velocidad. La relevancia actual radica en la creciente demanda de herramientas de edición de moda y vestuario en generación de imágenes, donde la transferencia de outfit es una tarea habitual en catálogos, diseño y prototipado.
+El modelo se distribuye como un repositorio de 1,2 GB en Hugging Face, con más de 8.000 descargas y 73 likes. Aunque la licencia no está especificada, el autor ofrece dos flujos de trabajo listos para usar, uno optimizado para precisión y otro para velocidad. La relevancia actual radica en la creciente demanda de herramientas de edición de moda y vestuario en generación de imágenes, donde la transferencia de outfit es una tarea habitual en catálogos, diseño y prototipado.
 
 El LoRA se activa mediante el prompt "transfer the outfit" y está entrenado principalmente con prendas femeninas, lo que limita su aplicabilidad a otros tipos de vestimenta. No se dispone de información pública sobre la arquitectura interna del adaptador ni sobre los datos de entrenamiento.
 
@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AliveAi/Krea-2-Edit-Outfit-Transfer
+- Hugging Face: https://huggingface.co/AliveAi/Krea-2-Edit-Outfit-Transfer
 - Dataset de outfits: https://huggingface.co/datasets/AliveAi/outfits
 - Nodo ComfyUI (lbouaraba): https://github.com/lbouaraba/comfyui-krea2edit
 - Nodo ComfyUI (ostris): https://github.com/ostris/ComfyUI-Krea2-Ostris-Edit

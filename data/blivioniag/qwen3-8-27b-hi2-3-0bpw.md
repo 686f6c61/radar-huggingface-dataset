@@ -98,8 +98,8 @@ Comparativa entre variantes cuantizadas del mismo modelo base, segun datos del a
 
 | Modelo | bpw | Checkpoint | Media macro (731) | Dif. vs BF16 | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| Qwen3.8-27B (BF16) | 16 | 51,7 GiB | 86,2 % | — | Apache-2.0 | HuggingFace |
-| Qwen3.8-27B-HI2-3.0bpw (este) | 3,012 | 15,0 GiB | 82,5 % | -3,4 [-5,6, -1,2] | Apache-2.0 | HuggingFace, solo fork vLLM AMD |
+| Qwen3.8-27B (BF16) | 16 | 51,7 GiB | 86,2 % | — | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B-HI2-3.0bpw (este) | 3,012 | 15,0 GiB | 82,5 % | -3,4 [-5,6, -1,2] | Apache-2.0 | Hugging Face, solo fork vLLM AMD |
 | AWQ INT4 (referencia) | 4,625 | 20.044 MiB | 84,2 % | -1,9 [-3,6, -0,3] | Apache-2.0 | Formato estandar, amplio soporte |
 | GGUF Q4_K_M (referencia) | 4,738 | 15.702 MiB | no disponible | KLD 0,0142 (docs) | Apache-2.0 | llama.cpp, Ollama, amplio soporte |
 

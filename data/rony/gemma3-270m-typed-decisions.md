@@ -92,8 +92,8 @@ Nota del autor: el ECE de la tabla principal se calcula por pregunta y se promed
 
 | Modelo | Parametros | Contexto | Accuracy en typed-decisions | KL | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| rony/gemma3-270m-typed-decisions | 268.098.176 | no disponible | 0,702 | 0,1555 | gemma | HuggingFace, safetensors |
-| google/gemma-3-270m-it (zero-shot) | ≈270 M | no disponible en la informacion proporcionada | 0,279 | 1,068 | gemma | HuggingFace |
+| rony/gemma3-270m-typed-decisions | 268.098.176 | no disponible | 0,702 | 0,1555 | gemma | Hugging Face, safetensors |
+| google/gemma-3-270m-it (zero-shot) | ≈270 M | no disponible en la informacion proporcionada | 0,279 | 1,068 | gemma | Hugging Face |
 | Baseline prior del dataset | no aplica (no es un modelo) | no aplica | 0,478 | 0,327 | no aplica | no aplica |
 | Otros modelos de decision tipada comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -114,7 +114,7 @@ La comparación con modelos generalistas de tamaño similar no es significativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rony/gemma3-270m-typed-decisions
+- Modelo en Hugging Face: https://huggingface.co/rony/gemma3-270m-typed-decisions
 - Modelo base: https://huggingface.co/google/gemma-3-270m-it
 - Dataset de entrenamiento y evaluación: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - Artefactos de evaluación citados en la model card: `test_predictions.jsonl` y `test_metrics.json` en el repositorio del modelo

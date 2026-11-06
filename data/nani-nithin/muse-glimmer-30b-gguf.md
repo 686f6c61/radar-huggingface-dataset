@@ -79,5 +79,5 @@ No se dispone de informacion suficiente para realizar una comparativa fiable con
 
 ## Enlaces
 
-- HuggingFace (repo GGUF): https://huggingface.co/NANI-Nithin/Muse-Glimmer-30B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/meta-models/Muse-Glimmer-30B
+- Hugging Face (repo GGUF): https://huggingface.co/NANI-Nithin/Muse-Glimmer-30B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/meta-models/Muse-Glimmer-30B

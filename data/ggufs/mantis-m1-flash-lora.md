@@ -68,4 +68,4 @@ No disponible. No se dispone de informacion de modelos comparables en la misma c
 
 ## Enlaces
 
-- [HuggingFace del modelo ggufs/mantis-m1-flash-lora](https://huggingface.co/ggufs/mantis-m1-flash-lora)
+- [Hugging Face del modelo ggufs/mantis-m1-flash-lora](https://huggingface.co/ggufs/mantis-m1-flash-lora)

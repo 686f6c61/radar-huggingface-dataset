@@ -78,6 +78,6 @@ No se dispone de datos de rendimiento de modelos comparables en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/math-grpo-entropy-step1300
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/math-grpo-entropy-step1300
 - Checkpoint hermano (GRPO vanilla): https://huggingface.co/sandeep123/math-grpo-vanilla-step1300
 - Perfil del autor en GitHub: https://github.com/sandeep123 (no específico del modelo)

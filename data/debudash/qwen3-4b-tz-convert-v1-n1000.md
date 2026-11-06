@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| debudash/qwen3-4b-tz-convert-v1-n1000 | 4B (base) + adaptador LoRA | no disponible | Conversion de zonas horarias (SFT, 1.000 ejemplos) | apache-2.0 | HuggingFace |
-| debudash/qwen3-4b-tz-convert-v3-n12000 | 4B (base) + adaptador LoRA | no disponible | Conversion de zonas horarias (SFT, 12.000 ejemplos; mejor checkpoint del proyecto) | apache-2.0 | HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 | 4B | no disponible en la informacion | Modelo generalista instruct | apache-2.0 | HuggingFace |
+| debudash/qwen3-4b-tz-convert-v1-n1000 | 4B (base) + adaptador LoRA | no disponible | Conversion de zonas horarias (SFT, 1.000 ejemplos) | apache-2.0 | Hugging Face |
+| debudash/qwen3-4b-tz-convert-v3-n12000 | 4B (base) + adaptador LoRA | no disponible | Conversion de zonas horarias (SFT, 12.000 ejemplos; mejor checkpoint del proyecto) | apache-2.0 | Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 | 4B | no disponible en la informacion | Modelo generalista instruct | apache-2.0 | Hugging Face |
 
 La comparativa directa con modelos de conversion horaria de otros autores no esta disponible en la informacion proporcionada.
 
@@ -91,7 +91,7 @@ La comparativa directa con modelos de conversion horaria de otros autores no est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/debudash/qwen3-4b-tz-convert-v1-n1000
+- Modelo en Hugging Face: https://huggingface.co/debudash/qwen3-4b-tz-convert-v1-n1000
 - Checkpoint recomendado del proyecto: https://huggingface.co/debudash/qwen3-4b-tz-convert-v3-n12000
 - Dataset de entrenamiento: https://huggingface.co/datasets/debudash/tz-convert-sft
 - Codigo, conjuntos de evaluacion e informes: https://huggingface.co/debudash/slm-training

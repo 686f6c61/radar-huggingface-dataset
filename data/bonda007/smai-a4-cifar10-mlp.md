@@ -66,7 +66,7 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Tipo | Parámetros | Precisión en CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-a4-cifar10-mlp | MLP 3072-128-64-10 | ~402.826 | 46,40 % (test) | no disponible | HuggingFace |
+| smai-a4-cifar10-mlp | MLP 3072-128-64-10 | ~402.826 | 46,40 % (test) | no disponible | Hugging Face |
 | CNN sencilla de referencia (p. ej. LeNet-5) | CNN | del orden de decenas de miles | típicamente > 70 % | variable | múltiples implementaciones |
 | ResNet-18 adaptada a CIFAR-10 | CNN residual | ~11 millones | típicamente > 95 % | variable | torchvision y otros |
 | Vision Transformer pequeño (ViT) | Transformer | variable según configuración | típicamente > 90 % con preentrenamiento | variable | múltiples implementaciones |
@@ -88,6 +88,6 @@ Los valores de precisión de los modelos comparables son orientativos y no proce
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/bonda007/smai-a4-cifar10-mlp)
-- [Conjunto de datos CIFAR-10 en HuggingFace (uoft-cs/cifar10)](https://huggingface.co/datasets/uoft-cs/cifar10)
+- [Modelo en Hugging Face](https://huggingface.co/bonda007/smai-a4-cifar10-mlp)
+- [Conjunto de datos CIFAR-10 en Hugging Face (uoft-cs/cifar10)](https://huggingface.co/datasets/uoft-cs/cifar10)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`only_speeeeeeeeeeed` es un modelo publicado en HuggingFace por el usuario `mooncraft46521111` bajo licencia Apache 2.0. La model card asociada es practicamente vacia: unicamente incluye la declaracion de licencia y una frase en coreano ("추력은 위대하다", que puede traducirse como "el empuje es grandioso"). No se proporciona informacion sobre arquitectura, tamano, datos de entrenamiento, capacidades ni proposito del modelo.
+`only_speeeeeeeeeeed` es un modelo publicado en Hugging Face por el usuario `mooncraft46521111` bajo licencia Apache 2.0. La model card asociada es practicamente vacia: unicamente incluye la declaracion de licencia y una frase en coreano ("추력은 위대하다", que puede traducirse como "el empuje es grandioso"). No se proporciona informacion sobre arquitectura, tamano, datos de entrenamiento, capacidades ni proposito del modelo.
 
 La ausencia de metadatos tecnicos (pipeline no definido, idiomas no declarados, sin descripciones) impide determinar con rigor que tipo de modelo es, que problema resuelve o en que escenarios resulta util. El identificador sugiere un enfasis en velocidad o "empuje", pero se trata de una interpretacion especulativa que no esta respaldada por ninguna documentacion tecnica.
 
@@ -38,7 +38,7 @@ Tampoco se documenta el proceso de entrenamiento, el tokenizador empleado ni el 
 ## Casos de uso
 
 - Evaluacion experimental: dado que el repositorio no documenta comportamiento alguno, el unico uso razonable seria inspeccionar los pesos y la configuracion directamente para determinar que contiene el artefacto antes de considerarlo para cualquier tarea.
-- Pruebas de infraestructura: puede emplearse como artefacto de prueba en pipelines de descarga, carga y despliegue (por ejemplo, para validar integraciones con HuggingFace Hub) sin esperar calidad de generacion.
+- Pruebas de infraestructura: puede emplearse como artefacto de prueba en pipelines de descarga, carga y despliegue (por ejemplo, para validar integraciones con Hugging Face Hub) sin esperar calidad de generacion.
 - Investigacion de metadatos: util como caso de estudio sobre publicaciones sin documentacion tecnica y su impacto en la evaluacion de modelos.
 - Reproducibilidad de experimentos: si el autor publica posteriormente documentacion, podria servir como referencia de un experimento concreto de velocidad o "empuje".
 - Formacion y auditoria: sirve para ejemplificar por que una model card vacia impide evaluar riesgos, licencia efectiva y adecuacion a casos reales.
@@ -72,5 +72,5 @@ No disponible. La informacion proporcionada no permite identificar la categoria,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mooncraft46521111/only_speeeeeeeeeeed
+- Hugging Face: https://huggingface.co/mooncraft46521111/only_speeeeeeeeeeed
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

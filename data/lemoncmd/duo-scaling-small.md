@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Duo-scaling-small es una familia de diez modelos de difusión discreta para lenguaje, publicados por el usuario lemoncmd (HuggingFace) como artefacto de un estudio sobre leyes de escalado respecto al tamaño del conjunto de datos. Los diez modelos comparten exactamente la misma arquitectura y configuración de entrenamiento (backbone DiT de 169.627.218 parámetros, contexto de 1.024 tokens, tokenizador GPT-2 con vocabulario de 50.258 y embeddings no atados) y solo difieren en la fracción de OpenWebText utilizada: subconjuntos anidados del 10% al 100% de los bloques de entrenamiento.
+Duo-scaling-small es una familia de diez modelos de difusión discreta para lenguaje, publicados por el usuario lemoncmd (Hugging Face) como artefacto de un estudio sobre leyes de escalado respecto al tamaño del conjunto de datos. Los diez modelos comparten exactamente la misma arquitectura y configuración de entrenamiento (backbone DiT de 169.627.218 parámetros, contexto de 1.024 tokens, tokenizador GPT-2 con vocabulario de 50.258 y embeddings no atados) y solo difieren en la fracción de OpenWebText utilizada: subconjuntos anidados del 10% al 100% de los bloques de entrenamiento.
 
 El modelo implementa `duo_base`, un algoritmo de difusión discreta de estado uniforme entrenado sobre el NELBO exacto con un calendario de ruido log-lineal, sin currículum ni destilación. Cada uno de los diez modelos se entrenó durante 1.000.000 de pasos con AdamW (lr 3e-4, weight decay 0, gradient clipping 1.0, EMA 0.9999, bf16), batch global de 512 secuencias de 1.024 tokens y semilla 1.
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Paradigma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Duo-scaling-small (este) | 169,6 M | 1.024 | Difusión discreta (DiT, `duo_base`) | Apache 2.0 | HuggingFace, 10 modelos × 53 checkpoints |
+| Duo-scaling-small (este) | 169,6 M | 1.024 | Difusión discreta (DiT, `duo_base`) | Apache 2.0 | Hugging Face, 10 modelos × 53 checkpoints |
 | Modelos autorregresivos tipo GPT-2 small | ~124 M | 1.024 | Autorregresivo | Varía (MIT en GPT-2) | Amplia |
 | Modelos de difusión de texto tipo Diffusion-LM | ~100-200 M | ~1.024 | Difusión continua | Varía | Repositorios de investigación |
 
@@ -98,6 +98,6 @@ No se dispone de datos de benchmarks comparables publicados en la información p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lemoncmd/duo-scaling-small
+- Hugging Face: https://huggingface.co/lemoncmd/duo-scaling-small
 - Código base (rama scaling-study, commit `7c9e7d04d4a4`): https://github.com/s-sahoo/duo
 - Dataset OpenWebText (revisión `79d93d7`): https://huggingface.co/datasets/Skylion007/openwebtext

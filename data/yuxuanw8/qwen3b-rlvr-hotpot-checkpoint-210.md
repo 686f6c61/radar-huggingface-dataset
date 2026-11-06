@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-210` es un checkpoint de generacion de texto publicado en HuggingFace por el usuario yuxuanw8. Se trata de un transformer de aproximadamente 3.085.938.688 parametros (unos 3,09 mil millones) etiquetado en el Hub con la arquitectura `qwen2`, lo que indica que deriva de la familia Qwen2. El repositorio ocupa 12,4 GB y contiene pesos en formato safetensors, un tamano coherente con un guardado en precision fp32.
+El modelo `yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-210` es un checkpoint de generacion de texto publicado en Hugging Face por el usuario yuxuanw8. Se trata de un transformer de aproximadamente 3.085.938.688 parametros (unos 3,09 mil millones) etiquetado en el Hub con la arquitectura `qwen2`, lo que indica que deriva de la familia Qwen2. El repositorio ocupa 12,4 GB y contiene pesos en formato safetensors, un tamano coherente con un guardado en precision fp32.
 
-La relevancia de este checkpoint es, a dia de hoy, exclusivamente experimental. La model card es la plantilla autogenerada de HuggingFace y no contiene ni una sola seccion completada: no se documentan datos de entrenamiento, hiperparametros, evaluacion, licencia, idiomas ni uso previsto. El repositorio acumula 0 descargas y 0 "likes", y las busquedas web realizadas no han devuelto ningun resultado relacionado con el modelo. Por tanto, cualquier afirmacion sobre su calidad, sesgos o capacidades reales queda fuera de lo verificable.
+La relevancia de este checkpoint es, a dia de hoy, exclusivamente experimental. La model card es la plantilla autogenerada de Hugging Face y no contiene ni una sola seccion completada: no se documentan datos de entrenamiento, hiperparametros, evaluacion, licencia, idiomas ni uso previsto. El repositorio acumula 0 descargas y 0 "likes", y las busquedas web realizadas no han devuelto ningun resultado relacionado con el modelo. Por tanto, cualquier afirmacion sobre su calidad, sesgos o capacidades reales queda fuera de lo verificable.
 
 El unico indicio sobre su proposito esta en el propio nombre: "qwen3b" apunta al tamano y la familia base, "rlvr" sugiere un entrenamiento con refuerzo basado en recompensas verificables (Reinforcement Learning with Verifiable Rewards) y "hotpot" apunta a HotpotQA, un benchmark de pregunta-respuesta multihop. Se trata, en todo caso, de una inferencia a partir de la nomenclatura del autor, no de un dato confirmado en la documentacion disponible.
 
@@ -33,7 +33,7 @@ Nota: los 12,4 GB de pesos para 3,09 B de parametros equivalen a unos 4 bytes po
 
 La unica informacion arquitectonica disponible es la etiqueta `qwen2` del repositorio, que situa al modelo en la familia Qwen2: un transformer decoder-only con atencion causal, normalizacion RMSNorm y activaciones SwiGLU, tal y como se describe en los modelos Qwen2 de referencia. No hay ningun indicio de arquitectura MoE (no se declaran parametros activos ni expertos), ni de atencion lineal, híbrida o de estado recurrente. Tampoco se documenta la longitud de contexto soportada, que en la familia Qwen2 varia segun la configuracion concreta.
 
-En cuanto al entrenamiento, la model card autogenerada no aporta absolutamente nada: ni numero de tokens, ni composicion del dataset, ni si hubo RLHF, DPO o RLVR. El nombre del repositorio sugiere un ajuste con RLVR sobre HotpotQA y la numeracion "checkpoint-210" indica que se trata de un punto intermedio de un ciclo de entrenamiento, no de un modelo final pulido. No se ha publicado informacion sobre datos de preprocesado, precision de entrenamiento ni infraestructura de computo. La etiqueta `arxiv:1910.09700` que aparece en el Hub corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, incluido por defecto en la plantilla de HuggingFace, y no es un paper sobre este modelo.
+En cuanto al entrenamiento, la model card autogenerada no aporta absolutamente nada: ni numero de tokens, ni composicion del dataset, ni si hubo RLHF, DPO o RLVR. El nombre del repositorio sugiere un ajuste con RLVR sobre HotpotQA y la numeracion "checkpoint-210" indica que se trata de un punto intermedio de un ciclo de entrenamiento, no de un modelo final pulido. No se ha publicado informacion sobre datos de preprocesado, precision de entrenamiento ni infraestructura de computo. La etiqueta `arxiv:1910.09700` que aparece en el Hub corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, incluido por defecto en la plantilla de Hugging Face, y no es un paper sobre este modelo.
 
 ## Capacidades
 
@@ -41,7 +41,7 @@ No existe documentacion de capacidades por parte del autor. Lo unico verificable
 
 - Generacion de texto: la etiqueta `text-generation` y el pipeline declarado confirman que el modelo esta pensado para producir texto autoregresivamente.
 - Uso conversacional: la etiqueta `conversational` sugiere que el checkpoint acepta plantillas de chat, aunque no se documenta que plantilla concreta utiliza ni si conserva el formato de Qwen2.
-- Compatibilidad con text-generation-inference y endpoints: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que puede desplegarse en TGI y en Inference Endpoints de HuggingFace.
+- Compatibilidad con text-generation-inference y endpoints: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que puede desplegarse en TGI y en Inference Endpoints de Hugging Face.
 - Razonamiento multihop y pregunta-respuesta: hipotetico, derivado unicamente del nombre del repositorio ("rlvr-hotpot"). No hay ninguna confirmacion en la documentacion ni resultados que lo respalden.
 - Tool calling / function calling: no disponible; no se declara soporte.
 - Capacidades de agente o razonamiento multi-paso: no disponible.
@@ -77,7 +77,7 @@ Las cifras de VRAM son estimaciones calculadas a partir del numero de parametros
 - Pesos en int4 (formato GGUF Q4_K_M o similar): entre 1,7 y 2,0 GB; con overhead, 3 o 4 GB. Cabe en practicamente cualquier GPU de consumo de 4 GB o mas, e incluso en CPU con llama.cpp.
 - GPU recomendadas: para produccion en fp16, L4, A10G, A100 40 GB o H100 si se necesita mucho paralelismo por GPU; para desarrollo, RTX 4090 o RTX 4080.
 - Cabe en GPU de consumo: si, en la mayoria de tarjetas de 8 GB o mas si se usa fp16 o cuantizacion, y en tarjetas de 4-6 GB con cuantizacion int4.
-- Opciones de despliegue: transformers (es la libreria declarada), text-generation-inference y HuggingFace Inference Endpoints (ambos aparecen como etiquetas). vLLM seria compatible por tratarse de un transformer decoder-only de la familia Qwen2, aunque no esta declarado ni verificado. Para llama.cpp, Ollama o LM Studio hace falta convertir los pesos a GGUF, ya que el repositorio solo contiene safetensors.
+- Opciones de despliegue: transformers (es la libreria declarada), text-generation-inference y Hugging Face Inference Endpoints (ambos aparecen como etiquetas). vLLM seria compatible por tratarse de un transformer decoder-only de la familia Qwen2, aunque no esta declarado ni verificado. Para llama.cpp, Ollama o LM Studio hace falta convertir los pesos a GGUF, ya que el repositorio solo contiene safetensors.
 - Latencia y throughput: no disponible. No hay ningun dato medido ni publicado por el autor.
 
 ## Comparativa con modelos similares
@@ -86,16 +86,16 @@ No se dispone de resultados de rendimiento del modelo analizado, por lo que la c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-210 | 3,09 B | no disponible | no disponible | HuggingFace, solo safetensors |
-| Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens (ampliable) | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, safetensors y GGUF |
-| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | HuggingFace, safetensors y GGUF |
+| yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-210 | 3,09 B | no disponible | no disponible | Hugging Face, solo safetensors |
+| Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens (ampliable) | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, safetensors y GGUF |
+| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | Hugging Face, safetensors y GGUF |
 
 Diferencias clave: las tres alternativas tienen licencia explicita y model card completa con evaluaciones publicadas, mientras que el modelo analizado no declara licencia ni ofrece ninguna metrica. Las alternativas ademas publican versiones cuantizadas listas para usar, algo que este checkpoint no ofrece. Como contrapartida, el checkpoint analizado es el unico de los cuatro orientado explicitamente a un ciclo de RLVR, lo que puede interesar a quien investigue ese tipo de entrenamiento. No es posible comparar calidad de salida sin ejecutar evaluaciones propias.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla vacia de HuggingFace. No se puede saber que datos se usaron, con que objetivo se entreno ni que uso previsto tiene.
+- Ausencia total de documentacion: la model card es la plantilla vacia de Hugging Face. No se puede saber que datos se usaron, con que objetivo se entreno ni que uso previsto tiene.
 - Licencia no especificada: al no declararse licencia, no hay autorizacion explicita de uso comercial. En terminos practicos, la reutilizacion queda en un limbo legal y no deberia emplearse en produccion sin aclararlo con el autor.
 - Riesgo alto de alucinacion: sin informacion sobre el ajuste ni evaluaciones, no hay ninguna garantia sobre la fidelidad factual de las respuestas, especialmente en tareas de pregunta-respuesta multihop donde el modelo podria haber memorizado el benchmark en lugar de razonar.
 - Posible contaminacion de benchmark: si el ajuste se hizo con RLVR sobre HotpotQA, como sugiere el nombre, las metricas sobre ese conjunto estarian infladas y no serian representativas de la capacidad real de razonamiento.
@@ -105,11 +105,11 @@ Diferencias clave: las tres alternativas tienen licencia explicita y model card 
 - Sin cuantizaciones listas para usar: quien quiera desplegarlo en llama.cpp, Ollama o vLLM tendra que convertir y validar los pesos por su cuenta.
 - Sin senales de adopcion: 0 descargas y 0 likes implican que no hay comunidad, issues ni experiencia previa de otros usuarios en la que apoyarse.
 - Metadatos anomalos: las fechas declaradas en el Hub (11 de septiembre de 2026, con creacion y actualizacion separadas por poco mas de un minuto) no aportan trazabilidad sobre el origen del entrenamiento.
-- La etiqueta `arxiv:1910.09700` no es un paper del modelo: corresponde al articulo sobre estimacion de emisiones de carbono que HuggingFace incluye por defecto en sus plantillas.
+- La etiqueta `arxiv:1910.09700` no es un paper del modelo: corresponde al articulo sobre estimacion de emisiones de carbono que Hugging Face incluye por defecto en sus plantillas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-210
+- Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-210
 - Paper referenciado en las etiquetas (Lacoste et al., 2019, sobre estimacion de emisiones; no trata sobre este modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning citada en la plantilla: https://mlco2.github.io/impact
 - Paper de la familia Qwen2 (referencia de arquitectura, no confirmado por el autor): https://arxiv.org/abs/2407.10671

@@ -79,7 +79,7 @@ Los tags del repositorio incluyen `eval-results`, pero no se ha proporcionado ni
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi K3 | 2,8 T | 104B | 1.000.000 tokens | kimi-k3 (otros) | Pesos abiertos en HuggingFace |
+| Kimi K3 | 2,8 T | 104B | 1.000.000 tokens | kimi-k3 (otros) | Pesos abiertos en Hugging Face |
 | Kimi K2 | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Predecesor directo; la model card solo indica que K3 mejora su eficiencia de escalado en aproximadamente 2,5x |
 | Otras alternativas de clase 3T | no disponible | no disponible | no disponible | no disponible | La model card afirma que Kimi K3 es el primer modelo abierto de clase 3T, sin enumerar comparaciones |
 

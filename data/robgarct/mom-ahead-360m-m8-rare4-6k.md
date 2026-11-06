@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mom-ahead-360m-m8-rare4-6k es un modelo de lenguaje de tipo Mixture-of-Memories (MoM) desarrollado por el usuario robgarct y publicado en HuggingFace bajo la librería `recurrent-recall-circuits`. Se trata de una arquitectura de attention linear con mecanismos de memoria explícitos, diseñada específicamente para mejorar el recuerdo en contexto (in-context recall) sin renunciar al coste lineal en la longitud de secuencia. El modelo tiene 446,6 millones de parámetros totales (incluyendo 51,5 millones de embeddings y el extractor de características "ahead"), con una dimensión de embedding de 1.024, 24 capas y 16 cabezas de atención.
+mom-ahead-360m-m8-rare4-6k es un modelo de lenguaje de tipo Mixture-of-Memories (MoM) desarrollado por el usuario robgarct y publicado en Hugging Face bajo la librería `recurrent-recall-circuits`. Se trata de una arquitectura de attention linear con mecanismos de memoria explícitos, diseñada específicamente para mejorar el recuerdo en contexto (in-context recall) sin renunciar al coste lineal en la longitud de secuencia. El modelo tiene 446,6 millones de parámetros totales (incluyendo 51,5 millones de embeddings y el extractor de características "ahead"), con una dimensión de embedding de 1.024, 24 capas y 16 cabezas de atención.
 
 El modelo incorpora 8 bancos de memoria por capa, una puerta de escritura basada en softmax top-4 con estimación directa (straight-through) y una puerta de lectura densa con softplus (`read_top_k: null`). Esta combinación busca resolver el problema clásico de las arquitecturas de attention linear: su dificultad para recuperar información concreta de secuencias largas. El router de lectura "ahead-feature" es la innovación central del checkpoint, ya que decide qué banco de memoria consultar en cada paso.
 
@@ -80,7 +80,7 @@ Las suites `based-fda` y `based-swde-v2` proceden del ecosistema del framework `
 
 | Modelo | Parámetros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mom-ahead-360m-m8-rare4-6k | 446,6 M (360 M sin embeddings) | 2.048 tokens en entrenamiento | PPL 10,17 (Pile); FDA 38,6; SWDE 30,2 | no disponible | Solo `final.ckpt` en HuggingFace |
+| mom-ahead-360m-m8-rare4-6k | 446,6 M (360 M sin embeddings) | 2.048 tokens en entrenamiento | PPL 10,17 (Pile); FDA 38,6; SWDE 30,2 | no disponible | Solo `final.ckpt` en Hugging Face |
 | Otros checkpoints de `recurrent-recall-circuits` (misma familia MoM) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de attention linear (Mamba, RWKV, Based) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,9 +99,9 @@ No se dispone de datos verificados en la información proporcionada para estable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/robgarct/mom-ahead-360m-m8-rare4-6k
+- Hugging Face: https://huggingface.co/robgarct/mom-ahead-360m-m8-rare4-6k
 - Repositorio del framework: la model card referencia `https://github.com/<owner>/recurrent-recall-circuits`, con el propietario sin especificar en la información disponible.
-- Configuración del run: `resolved-config.yaml` dentro del repositorio de HuggingFace.
-- Metadatos del run: `metadata.json` dentro del repositorio de HuggingFace (nombre del run, sha256 de la configuración y commit de git).
+- Configuración del run: `resolved-config.yaml` dentro del repositorio de Hugging Face.
+- Metadatos del run: `metadata.json` dentro del repositorio de Hugging Face (nombre del run, sha256 de la configuración y commit de git).
 - Paper, blog o demo: no disponible.
 - Nota sobre la búsqueda web: los resultados devueltos por la búsqueda no guardan relación con el modelo ni con arquitecturas de attention linear, por lo que no se incluyen.

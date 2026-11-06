@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kdyck_5pct_100M_computematched_muonppt_1e18_s2` es un checkpoint de investigación entrenado con [nanochat](https://github.com/karpathy/nanochat), el stack mínimo de entrenamiento tipo GPT publicado por Andrej Karpathy. Lo desarrolla el usuario de HuggingFace `alexkstern` y forma parte de una retícula de experimentos sobre mezcla de datos y optimizadores. El nombre del repositorio lo etiqueta como "100M" y "computematched", es decir, un modelo de escala reducida entrenado con un presupuesto de cómputo fijo de 1e18 FLOPs. El checkpoint publicado corresponde al paso 1.008.
+`kdyck_5pct_100M_computematched_muonppt_1e18_s2` es un checkpoint de investigación entrenado con [nanochat](https://github.com/karpathy/nanochat), el stack mínimo de entrenamiento tipo GPT publicado por Andrej Karpathy. Lo desarrolla el usuario de Hugging Face `alexkstern` y forma parte de una retícula de experimentos sobre mezcla de datos y optimizadores. El nombre del repositorio lo etiqueta como "100M" y "computematched", es decir, un modelo de escala reducida entrenado con un presupuesto de cómputo fijo de 1e18 FLOPs. El checkpoint publicado corresponde al paso 1.008.
 
 El interés del modelo no es su utilidad como asistente, sino su valor como artefacto científico: se trata de un experimento controlado en el que una fracción del entrenamiento (`alpha_ppt = 0.05`, el "5pct" del nombre) se dedica a un corpus sintético del lenguaje formal Dyck con 128 tipos de paréntesis (`dyck-k128-seq_len_2048-1B`), mientras que el resto se cubre con el corpus de texto natural `fineweb-nanochatbpe-100M`. El objetivo declarado es estudiar si la exposición parcial a una tarea formal mejora o degrada las métricas respecto a celdas de control del mismo presupuesto de cómputo.
 
@@ -104,6 +104,6 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexkstern/kdyck_5pct_100M_computematched_muonppt_1e18_s2_2026-09-14_15-02-57_065171-pt
+- Modelo en Hugging Face: https://huggingface.co/alexkstern/kdyck_5pct_100M_computematched_muonppt_1e18_s2_2026-09-14_15-02-57_065171-pt
 - Ejecucion de Weights & Biases: https://wandb.ai/alexksternteam/cm100M_best_cells_hfpush_v0/runs/n2lufv9t
 - Repositorio de nanochat: https://github.com/karpathy/nanochat

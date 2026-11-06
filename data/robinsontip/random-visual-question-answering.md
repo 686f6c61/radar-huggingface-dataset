@@ -51,7 +51,7 @@ No aplica, ya que no existe un modelo que ejecutar. No hay requisitos de VRAM, G
 
 ## Comparativa con modelos similares
 
-No disponible. No existe un modelo comparable porque este repositorio no contiene un modelo funcional. Para modelos reales de VQA, se pueden consultar alternativas como `dandelin/vilt-b32-finetuned-vqa` o los modelos listados en el hub de HuggingFace con el pipeline `visual-question-answering`, pero no procede comparar con este repositorio.
+No disponible. No existe un modelo comparable porque este repositorio no contiene un modelo funcional. Para modelos reales de VQA, se pueden consultar alternativas como `dandelin/vilt-b32-finetuned-vqa` o los modelos listados en el hub de Hugging Face con el pipeline `visual-question-answering`, pero no procede comparar con este repositorio.
 
 ## Limitaciones y advertencias
 
@@ -63,7 +63,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Robinsontip/random-visual-question-answering
+- Repositorio en Hugging Face: https://huggingface.co/Robinsontip/random-visual-question-answering
 - Documentación de Hugging Face sobre VQA: https://huggingface.co/docs/transformers/en/tasks/visual_question_answering
 - Listado de modelos VQA en Hugging Face: https://huggingface.co/models?pipeline_tag=visual-question-answering&sort=trending
 - Artículo de revisión sobre VQA (arXiv): https://arxiv.org/html/2501.03939v1

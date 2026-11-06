@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento comparativos para este modelo. Como refere
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/msKim100/smolvla_so101_stack_corrected66_b32_dagger15_9k
+- Repositorio Hugging Face del modelo: https://huggingface.co/msKim100/smolvla_so101_stack_corrected66_b32_dagger15_9k
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/msKim100/so101_smolvla_corrected66_dagger15
 - Paper de SmolVLA (arXiv): https://huggingface.co/papers/2506.01844

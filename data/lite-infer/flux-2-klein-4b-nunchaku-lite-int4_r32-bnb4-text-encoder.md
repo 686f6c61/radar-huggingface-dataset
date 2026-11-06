@@ -86,6 +86,6 @@ No se dispone de comparativas con otros modelos de difusión cuantizados (p. ej.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lite-infer/flux.2-klein-4b-nunchaku-lite-int4_r32-bnb4-text-encoder
+- Repositorio Hugging Face: https://huggingface.co/lite-infer/flux.2-klein-4b-nunchaku-lite-int4_r32-bnb4-text-encoder
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Herramienta de cuantización: https://github.com/rootonchair/diffuse-compressor

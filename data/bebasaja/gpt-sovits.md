@@ -2,11 +2,11 @@
 
 ## Resumen
 
-GPT-SoVITS es un sistema de sintesis de voz (TTS) y conversion de voz basado en pocos ejemplos, distribuido originalmente como proyecto de codigo abierto GPT-SoVITS-WebUI por el usuario RVC-Boss en GitHub. La ficha analizada, Bebasaja/GPT-SoVITS, es una copia alojada en HuggingFace cuyo README reproduce la documentacion del proyecto original. El sistema combina un modelo autorregresivo de estilo GPT, que predice tokens semanticos a partir del texto, con un decodificador de voz SoVITS derivado de la familia VITS, encargado de generar la forma de onda final.
+GPT-SoVITS es un sistema de sintesis de voz (TTS) y conversion de voz basado en pocos ejemplos, distribuido originalmente como proyecto de codigo abierto GPT-SoVITS-WebUI por el usuario RVC-Boss en GitHub. La ficha analizada, Bebasaja/GPT-SoVITS, es una copia alojada en Hugging Face cuyo README reproduce la documentacion del proyecto original. El sistema combina un modelo autorregresivo de estilo GPT, que predice tokens semanticos a partir del texto, con un decodificador de voz SoVITS derivado de la familia VITS, encargado de generar la forma de onda final.
 
 Su propuesta principal es reducir drasticamente los datos necesarios para clonar una voz: con una muestra de audio de 5 segundos ofrece zero-shot TTS y con aproximadamente 1 minuto de audio permite un ajuste fino (few-shot) que mejora la similitud y el realismo. Ademas, admite inferencia en idiomas distintos a los del conjunto de entrenamiento, con soporte declarado para ingles, japones y chino.
 
-El repositorio de HuggingFace ocupa 2,9 GB, tiene 0 descargas y 0 likes, y solo declara la etiqueta onnx junto a region:us. No publica pipeline, licencia ni idiomas en su metadata, por lo que buena parte de las especificaciones tecnicas estandar (parametros, contexto, cuantizaciones) no estan disponibles. La busqueda web realizada no devolvio resultados relacionados con el modelo: los enlaces obtenidos corresponden a documentacion de Google Translate y a preguntas de Stack Overflow sobre CSS y APIs de traduccion, sin ningun valor para esta ficha.
+El repositorio de Hugging Face ocupa 2,9 GB, tiene 0 descargas y 0 likes, y solo declara la etiqueta onnx junto a region:us. No publica pipeline, licencia ni idiomas en su metadata, por lo que buena parte de las especificaciones tecnicas estandar (parametros, contexto, cuantizaciones) no estan disponibles. La busqueda web realizada no devolvio resultados relacionados con el modelo: los enlaces obtenidos corresponden a documentacion de Google Translate y a preguntas de Stack Overflow sobre CSS y APIs de traduccion, sin ningun valor para esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El repositorio de HuggingFace ocupa 2,9 GB, tiene 0 descargas y 0 likes, y solo 
 | Longitud de contexto | no disponible. El condicionamiento de voz se realiza con una muestra de audio de 5 s (zero-shot) o con un ajuste fino sobre ~1 minuto de audio |
 | Tipos de cuantizacion | no disponible. El repositorio incluye la etiqueta onnx, lo que sugiere exportaciones a ONNX Runtime, pero no se detalla la lista de ficheros |
 | Idiomas soportados | Ingles, japones y chino (soporte multilingue cruzado declarado en la model card) |
-| Licencia | no disponible en la ficha de HuggingFace. El proyecto original declara licencia MIT en su repositorio de GitHub |
+| Licencia | no disponible en la ficha de Hugging Face. El proyecto original declara licencia MIT en su repositorio de GitHub |
 | Formato de pesos | no disponible en detalle. El proyecto utiliza checkpoints en formato .ckpt para los modelos GPT y SoVITS, con exportaciones ONNX segun la etiqueta del repositorio |
 
 Datos adicionales del repositorio: tamano de 2,9 GB, 0 descargas, 0 likes, creado y actualizado el 2026-09-15 (fechas de metadata anomalas, posteriores a la fecha habitual de consulta), autor Bebasaja, etiquetas onnx y region:us.
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Ejecucion en CPU: si, el sistema puede ejecutarse en CPU (el propio proyecto lo hace en macOS con Apple Silicon), con la advertencia de menor calidad en el caso del entrenamiento.
 - Entornos probados segun la model card: Python 3.9 con PyTorch 2.0.1 y CUDA 11; Python 3.10.13 con PyTorch 2.1.2 y CUDA 12.3; Python 3.9 con PyTorch 2.3.0.dev20240122 en macOS 14.3 (Apple Silicon). Nota: numba 0.56.4 requiere Python < 3.11.
 - Despliegue: WebUI local, paquete preempaquetado para Windows (GPT-SoVITS-beta.7z), instalacion manual con conda y bash install.sh en Linux, Docker con docker compose y flag --gpus=all (con shm_size recomendado de 16 GB), imagen publicada en Docker Hub (breakstring/gpt-sovits) y notebook de Colab.
-- Almacenamiento: el repositorio de HuggingFace ocupa 2,9 GB; hay que sumar los pesos preentrenados descargados aparte y los modelos de UVR5.
+- Almacenamiento: el repositorio de Hugging Face ocupa 2,9 GB; hay que sumar los pesos preentrenados descargados aparte y los modelos de UVR5.
 - Latencia y throughput: no disponible. Dependen del hardware, del modo (zero-shot frente a few-shot) y del idioma, y no se publican cifras.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se dispone de datos verificados en la informacion proporcionada para construi
 
 | Modelo | Enfoque | Idiomas | Licencia | Datos verificados en esta busqueda |
 |---|---|---|---|---|
-| GPT-SoVITS (Bebasaja/GPT-SoVITS) | Zero-shot y few-shot TTS y conversion de voz, pipeline GPT + SoVITS | Ingles, japones, chino | MIT segun el repositorio original; no declarada en la ficha de HuggingFace | Model card y repositorio original disponibles; sin benchmarks publicos |
+| GPT-SoVITS (Bebasaja/GPT-SoVITS) | Zero-shot y few-shot TTS y conversion de voz, pipeline GPT + SoVITS | Ingles, japones, chino | MIT segun el repositorio original; no declarada en la ficha de Hugging Face | Model card y repositorio original disponibles; sin benchmarks publicos |
 | XTTS-v2 (Coqui) | Clonacion de voz zero-shot multilingue | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Solo conocido como alternativa de la misma categoria; sin datos verificados aqui |
 | OpenVoice (MyShell) | Clonacion de voz con control de estilo | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Solo conocido como alternativa de la misma categoria; sin datos verificados aqui |
 | CosyVoice (Alibaba) | TTS zero-shot con clonacion | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Solo conocido como alternativa de la misma categoria; sin datos verificados aqui |
@@ -80,7 +80,7 @@ No se han encontrado en la busqueda web resultados que permitan comparar paramet
 ## Limitaciones y advertencias
 
 - Ausencia total de benchmarks: no hay datos publicados de MOS, similitud de hablante, WER ni latencia, lo que impide una evaluacion objetiva de calidad antes de desplegar el modelo.
-- Metadata incompleta: la ficha de HuggingFace no declara licencia, pipeline ni idiomas, y las fechas de creacion y actualizacion (2026-09-15) son anomalas. Antes de usarla en produccion conviene verificar la procedencia real del contenido respecto al repositorio original.
+- Metadata incompleta: la ficha de Hugging Face no declara licencia, pipeline ni idiomas, y las fechas de creacion y actualizacion (2026-09-15) son anomalas. Antes de usarla en produccion conviene verificar la procedencia real del contenido respecto al repositorio original.
 - Repositorio sin traccion: 0 descargas y 0 likes, sin garantia de mantenimiento ni de integridad de los pesos frente al proyecto original.
 - Licencia: el proyecto original declara MIT, pero al no estar declarada en esta copia no puede confirmarse que los pesos redistribuidos conserven esa licencia. Verificar antes de uso comercial.
 - Riesgo de uso indebido: es un sistema de clonacion de voz; la generacion de voz sintetica de personas reales sin consentimiento plantea problemas legales y eticos en la mayoria de jurisdicciones, y puede emplearse para fraude o desinformacion.
@@ -94,9 +94,9 @@ No se han encontrado en la busqueda web resultados que permitan comparar paramet
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/Bebasaja/GPT-SoVITS
+- Repositorio analizado en Hugging Face: https://huggingface.co/Bebasaja/GPT-SoVITS
 - Repositorio oficial del proyecto en GitHub: https://github.com/RVC-Boss/GPT-SoVITS
-- Pesos originales en HuggingFace: https://huggingface.co/lj1995/GPT-SoVITS
+- Pesos originales en Hugging Face: https://huggingface.co/lj1995/GPT-SoVITS
 - Paquete preempaquetado para Windows: https://huggingface.co/lj1995/GPT-SoVITS-windows-package/resolve/main/GPT-SoVITS-beta.7z
 - Pesos de UVR5 y utilidades: https://huggingface.co/lj1995/VoiceConversionWebUI
 - Notebook de Colab: https://colab.research.google.com/github/RVC-Boss/GPT-SoVITS/blob/main/colab_webui.ipynb

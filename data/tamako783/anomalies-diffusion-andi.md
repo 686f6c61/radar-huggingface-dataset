@@ -92,7 +92,7 @@ No se dispone de datos comparativos con otras implementaciones públicas del pap
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TamAko783/anomalies-diffusion-andi
+- Modelo en Hugging Face: https://huggingface.co/TamAko783/anomalies-diffusion-andi
 - Continuación de 60.000 pasos: https://huggingface.co/TamAko783/anomalies-diffusion-andi-60k
 - Repositorio de auditoría de calibración: https://huggingface.co/TamAko783/anomalies-diffusion-calibration
 - Paper de referencia: https://arxiv.org/abs/2312.01904

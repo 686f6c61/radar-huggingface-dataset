@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas del modelo
 
 ## Enlaces
 
-- HuggingFace del artefacto: https://huggingface.co/huggingface-mic/GTE-ModernColBERT-v1-mic
+- Hugging Face del artefacto: https://huggingface.co/huggingface-mic/GTE-ModernColBERT-v1-mic
 - Modelo base: https://huggingface.co/lightonai/GTE-ModernColBERT-v1
 - Manifiesto de contrato: integration.json (en el repositorio)
 - Uso con Sentence Transformers: integrations/sentence_transformers/usage.md (en el repositorio)

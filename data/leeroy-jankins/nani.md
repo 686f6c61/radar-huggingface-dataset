@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 - **VRAM estimada**: con cuantización GGUF Q4_K_M, el modelo ocupa aproximadamente 1.2-1.5 GB, por lo que puede ejecutarse en GPUs con 4 GB de VRAM o menos. Para cuantizaciones más altas (Q8), se recomienda al menos 2 GB.
 - **GPUs recomendadas**: cualquier GPU consumer con al menos 4 GB de VRAM (GTX 1650, RTX 3060, RTX 4060) es suficiente para inferencia. También puede ejecutarse en CPU con 8 GB de RAM, aunque la latencia será mayor.
-- **Despliegue**: compatible con llama.cpp, Ollama, LM Studio, vLLM (con conversión a safetensors), TGI y transformers de HuggingFace. Para uso en producción con alta concurrencia, se recomienda vLLM o TGI con cuantización de 4 bits.
+- **Despliegue**: compatible con llama.cpp, Ollama, LM Studio, vLLM (con conversión a safetensors), TGI y transformers de Hugging Face. Para uso en producción con alta concurrencia, se recomienda vLLM o TGI con cuantización de 4 bits.
 - **Latencia y throughput**: no se han publicado mediciones específicas. En una RTX 3060, se estima una generación de 20-30 tokens por segundo con cuantización Q4, y en CPU (M1 Mac o i7) de 5-10 tokens/s.
 
 ## Comparativa con modelos similares
@@ -81,8 +81,8 @@ El modelo `nani` destaca por su licencia MIT en el repositorio (aunque el base e
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo nani](https://huggingface.co/leeroy-jankins/nani)
+- [Repositorio Hugging Face del modelo nani](https://huggingface.co/leeroy-jankins/nani)
 - [Documentación oficial de Granite (IBM)](https://www.ibm.com/granite/docs/)
-- [Colección de modelos Granite 4.0 Nano en HuggingFace](https://huggingface.co/collections/ibm-granite/granite-40-nano-language-models-68e5775c80b60e43b72cfa16)
+- [Colección de modelos Granite 4.0 Nano en Hugging Face](https://huggingface.co/collections/ibm-granite/granite-40-nano-language-models-68e5775c80b60e43b72cfa16)
 - [Modelo base unsloth/granite-4.0-1b](https://huggingface.co/unsloth/granite-4.0-1b)
 - [Perfil del autor leeroy-jankins](https://huggingface.co/leeroy-jankins)

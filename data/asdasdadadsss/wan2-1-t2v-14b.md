@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Resolucion | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wan2.1-T2V-14B (esta ficha, copia de `asdasdadadsss`) | 14,29B | 480P y 720P | Text-to-video | Apache 2.0 | HuggingFace |
-| Wan-AI/Wan2.1-T2V-14B (original) | 14,29B | 480P y 720P | Text-to-video | Apache 2.0 | HuggingFace y ModelScope |
-| Wan2.1-T2V-1.3B | 1,3B | 480P (720P inestable) | Text-to-video | Apache 2.0 | HuggingFace y ModelScope |
-| Wan2.1-I2V-14B-720P | 14B | 720P | Image-to-video | Apache 2.0 | HuggingFace y ModelScope |
+| Wan2.1-T2V-14B (esta ficha, copia de `asdasdadadsss`) | 14,29B | 480P y 720P | Text-to-video | Apache 2.0 | Hugging Face |
+| Wan-AI/Wan2.1-T2V-14B (original) | 14,29B | 480P y 720P | Text-to-video | Apache 2.0 | Hugging Face y ModelScope |
+| Wan2.1-T2V-1.3B | 1,3B | 480P (720P inestable) | Text-to-video | Apache 2.0 | Hugging Face y ModelScope |
+| Wan2.1-I2V-14B-720P | 14B | 720P | Image-to-video | Apache 2.0 | Hugging Face y ModelScope |
 
 Como alternativas externas de la misma categoria (generacion de video abierta) existen otros proyectos conocidos, pero no se dispone en la informacion proporcionada de sus parametros, contexto ni resultados comparativos verificados, por lo que no se incluyen cifras que no puedan contrastarse. La diferencia practica entre la copia analizada y el repositorio original `Wan-AI/Wan2.1-T2V-14B` es el mantenedor y su historial de descargas y valoraciones (0 descargas y 0 likes en la copia), no el contenido declarado del modelo.
 
@@ -93,9 +93,9 @@ Como alternativas externas de la misma categoria (generacion de video abierta) e
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/asdasdadadsss/Wan2.1-T2V-14B
+- Repositorio analizado en Hugging Face: https://huggingface.co/asdasdadadsss/Wan2.1-T2V-14B
 - Repositorio original del modelo: https://huggingface.co/Wan-AI/Wan2.1-T2V-14B
-- Organizacion Wan-AI en HuggingFace: https://huggingface.co/Wan-AI/
+- Organizacion Wan-AI en Hugging Face: https://huggingface.co/Wan-AI/
 - Modelo en ModelScope: https://www.modelscope.cn/models/Wan-AI/Wan2.1-T2V-14B
 - Organizacion Wan-AI en ModelScope: https://modelscope.cn/organization/Wan-AI
 - Repositorio de codigo en GitHub: https://github.com/Wan-Video/Wan2.1

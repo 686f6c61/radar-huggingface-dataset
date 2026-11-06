@@ -83,7 +83,7 @@ No se dispone de comparaciones cuantitativas de calidad de imagen frente a estos
 - Sin datos sobre idiomas soportados ni evaluación multilingüe del condicionamiento textual.
 - Licencia Apache 2.0 en el adaptador, pero el uso comercial debe verificar además la licencia y las condiciones del modelo base MOSS-Image-SFT y de los datos de entrenamiento empleados.
 - Repositorio con 8,5 GB y checkpoints múltiples: riesgo de descargas innecesarias y de confundir checkpoints intermedios con versiones finales.
-- Sin descargas ni likes en el momento de la consulta, y sin pipeline declarado en HuggingFace: menor garantía de integración directa con `diffusers` sin configuración manual.
+- Sin descargas ni likes en el momento de la consulta, y sin pipeline declarado en Hugging Face: menor garantía de integración directa con `diffusers` sin configuración manual.
 
 ## Enlaces
 

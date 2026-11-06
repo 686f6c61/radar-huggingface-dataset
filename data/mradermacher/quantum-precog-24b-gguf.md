@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Quantum-Precog-24B-GGUF es la colección de cuantizaciones estáticas en formato GGUF del modelo Quantum-Precog-24B, publicado por el usuario Naphula en HuggingFace y convertido por mradermacher, un perfil conocido por generar versiones cuantizadas de modelos de terceros para su uso con llama.cpp y herramientas compatibles. El repositorio no incluye model card propia más allá de los metadatos de la conversión, por lo que la información sobre arquitectura, entrenamiento y capacidades del modelo original no está disponible en la documentación proporcionada.
+Quantum-Precog-24B-GGUF es la colección de cuantizaciones estáticas en formato GGUF del modelo Quantum-Precog-24B, publicado por el usuario Naphula en Hugging Face y convertido por mradermacher, un perfil conocido por generar versiones cuantizadas de modelos de terceros para su uso con llama.cpp y herramientas compatibles. El repositorio no incluye model card propia más allá de los metadatos de la conversión, por lo que la información sobre arquitectura, entrenamiento y capacidades del modelo original no está disponible en la documentación proporcionada.
 
 El paquete ofrece 12 variantes de cuantización que abarcan desde Q2_K hasta F16, pasando por Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 e IQ4_XS. Esta gradación permite desplegar un modelo de aproximadamente 24 000 millones de parámetros en hardware muy diverso, desde equipos con 16 GB de VRAM o RAM unificada hasta estaciones de trabajo con 48 GB o más. La relevancia del repositorio es fundamentalmente práctica: facilita el acceso al modelo original en entornos donde no se dispone de GPUs de gran capacidad o donde se prefiere inferencia en CPU.
 
@@ -25,7 +25,7 @@ Al tratarse de una conversión y no de un modelo entrenado desde cero, el valor 
 
 No se dispone de información sobre la arquitectura del modelo base Quantum-Precog-24B en la documentación proporcionada. El nombre sugiere un transformer de aproximadamente 24 000 millones de parámetros, pero no se confirma ni el tipo de atención, ni si emplea mezcla de expertos, ni la longitud de contexto nativa. Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF, DPO o variantes de razonamiento extendido.
 
-Lo único documentado es el proceso de conversión: los metadatos indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que señala una conversión desde pesos en formato HuggingFace a GGUF mediante la herramienta de cuantización de llama.cpp. Se han generado cuantizaciones estáticas (no imatrix) en 12 variantes, sin archivo mmproj asociado, lo que sugiere que el modelo base no incluye capacidades multimodales o que estas no se han preservado en la conversión.
+Lo único documentado es el proceso de conversión: los metadatos indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que señala una conversión desde pesos en formato Hugging Face a GGUF mediante la herramienta de cuantización de llama.cpp. Se han generado cuantizaciones estáticas (no imatrix) en 12 variantes, sin archivo mmproj asociado, lo que sugiere que el modelo base no incluye capacidades multimodales o que estas no se han preservado en la conversión.
 
 ## Capacidades
 

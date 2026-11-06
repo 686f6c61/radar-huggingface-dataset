@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Zak421/bella es un modelo publicado en HuggingFace por el usuario Zak421 el 14 de agosto de 2026. La información disponible es extremadamente limitada: la model card únicamente declara la licencia MIT, sin ningún otro detalle técnico. No se especifican arquitectura, número de parámetros, contexto, idiomas, ni datos de entrenamiento. Con cero descargas y cero likes, se trata de un modelo recién subido y sin documentación pública. Debido a la ausencia total de especificaciones, no es posible evaluar su rendimiento, capacidades o idoneidad para ningún caso de uso. Se recomienda consultar la página del modelo en busca de futuras actualizaciones o contactar con el autor para obtener información adicional.
+El modelo Zak421/bella es un modelo publicado en Hugging Face por el usuario Zak421 el 14 de agosto de 2026. La información disponible es extremadamente limitada: la model card únicamente declara la licencia MIT, sin ningún otro detalle técnico. No se especifican arquitectura, número de parámetros, contexto, idiomas, ni datos de entrenamiento. Con cero descargas y cero likes, se trata de un modelo recién subido y sin documentación pública. Debido a la ausencia total de especificaciones, no es posible evaluar su rendimiento, capacidades o idoneidad para ningún caso de uso. Se recomienda consultar la página del modelo en busca de futuras actualizaciones o contactar con el autor para obtener información adicional.
 
 ## Especificaciones tecnicas
 
@@ -50,4 +50,4 @@ No disponible. Al carecer de especificaciones técnicas, no se puede comparar co
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/Zak421/bella)
+- [Página del modelo en Hugging Face](https://huggingface.co/Zak421/bella)

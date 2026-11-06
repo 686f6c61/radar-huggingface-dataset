@@ -94,7 +94,7 @@ No se dispone de datos de otros modelos de diarizacion comparables (por ejemplo,
 - Rendimiento degradado en audio real: en tres reuniones AMI en ingles el DER subio al 30 %, con la mitad del habla de una reunion perdida; el 3.57 % se midio sobre conversaciones sinteticas en italiano, por lo que no debe extrapolarse a dominios reales.
 - Dependencia del post-procesado: las cifras de DER se obtuvieron segmentando las probabilidades con el post-procesado de NeMo-Speech.cpp; otros post-procesados pueden dar resultados distintos.
 - Idioma: no se declaran idiomas soportados; las pruebas se limitan a italiano sintetico y a reuniones AMI en ingles. El rendimiento en otras lenguas o acentos no esta caracterizado.
-- Licencia: OpenMDW 1.1, que impone obligaciones de atribucion y distribucion de la licencia; conviene revisar los terminos antes de uso comercial. El campo license de HuggingFace figura como "other" con license_name openmdw-1.1.
+- Licencia: OpenMDW 1.1, que impone obligaciones de atribucion y distribucion de la licencia; conviene revisar los terminos antes de uso comercial. El campo license de Hugging Face figura como "other" con license_name openmdw-1.1.
 - Riesgo de confusion de hablantes: aunque la confusion entre hablantes detectados fue baja (2 % en AMI), el modelo puede perder habla (especialmente en audio con ruido o mezcla de auriculares) y asignar intervenciones al hablante equivocado en solapamientos.
 - Dependencia de ignis: la integracion documentada es exclusivamente con el servidor ignis (a partir de v0.8.0); no se documentan otros runtimes, lo que limita la portabilidad.
 - Modelo pequeno: con 99 millones de parametros, la capacidad de representacion es limitada frente a modelos de diarizacion mas grandes; no se han publicado comparativas con esos modelos.
@@ -103,7 +103,7 @@ No se dispone de datos de otros modelos de diarizacion comparables (por ejemplo,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gpillon/Nemotron-3-Diarization-GGUF-ignis
+- Modelo en Hugging Face: https://huggingface.co/gpillon/Nemotron-3-Diarization-GGUF-ignis
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3-Diarization
 - Repositorio de ignis: https://github.com/gpillon/ignis
 - Documentacion de ignis: https://gpillon.github.io/ignis/

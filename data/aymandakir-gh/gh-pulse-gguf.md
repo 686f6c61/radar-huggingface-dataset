@@ -71,7 +71,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en 
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| GH Pulse | 1,72B | No disponible (ejemplos a 8192) | Apache-2.0 | Growth marketing (it/en) | GGUF en HuggingFace |
+| GH Pulse | 1,72B | No disponible (ejemplos a 8192) | Apache-2.0 | Growth marketing (it/en) | GGUF en Hugging Face |
 | Qwen3-1.7B (base) | 1,72B | No disponible en esta ficha | Apache-2.0 | Proposito general | Multiples formatos |
 | GH Spark | 0,6B | No disponible | No disponible en esta ficha | Growth marketing | Familia GH AI |
 | GH Apex | 4B | No disponible | No disponible en esta ficha | Growth marketing | Familia GH AI |
@@ -91,7 +91,7 @@ La comparativa con modelos de proposito general del mismo tamano (por ejemplo, v
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aymandakir-gh/gh-pulse-GGUF
+- Hugging Face: https://huggingface.co/aymandakir-gh/gh-pulse-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset de conversacion general: https://huggingface.co/HuggingFaceTB/smoltalk
 - Sitio oficial de Growthackers: https://gh.company

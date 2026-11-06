@@ -80,7 +80,7 @@ No se dispone de datos publicos sobre los parametros exactos ni el rendimiento d
 
 ## Enlaces
 
-- Modelo en HuggingFace: [RussellALA/biomedclip-chexpert](https://huggingface.co/RussellALA/biomedclip-chexpert)
+- Modelo en Hugging Face: [RussellALA/biomedclip-chexpert](https://huggingface.co/RussellALA/biomedclip-chexpert)
 - Repositorio de codigo: [vislearn/InvarianceAuditing](https://github.com/vislearn/InvarianceAuditing)
 - Paper de auditoria: [arXiv:2603.21782](https://arxiv.org/abs/2603.21782)
 - Modelo base BiomedCLIP: [microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224](https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224)

@@ -84,7 +84,7 @@ Los datos de rendimiento comparativo entre estos modelos no estan disponibles en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Abu-Dju/Index-Homura-9B-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Abu-Dju/Index-Homura-9B-Q8_0-GGUF
 - Modelo base: https://huggingface.co/IndexTeam/Index-Homura-9B
 - Ficha de referencia del modelo base: https://huggingbay.xyz/artifact/hf-model-indexteam-index-homura-9b
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo

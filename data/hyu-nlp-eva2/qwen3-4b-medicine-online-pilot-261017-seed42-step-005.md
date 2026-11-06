@@ -96,7 +96,7 @@ Frente al modelo base, este checkpoint no aporta ventajas verificables: misma ar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVA2/qwen3-4b-medicine-online-pilot-261017-seed42-step-005
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVA2/qwen3-4b-medicine-online-pilot-261017-seed42-step-005
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Framework de entrenamiento citado en la model card (veRL): https://github.com/volcengine/verl
 - La búsqueda web realizada no devolvió resultados relevantes para este modelo: los resultados obtenidos correspondían a entidades homónimas sin relación (Hyundai France, canales de YouTube, ONE Championship, catálogos Hyper U).

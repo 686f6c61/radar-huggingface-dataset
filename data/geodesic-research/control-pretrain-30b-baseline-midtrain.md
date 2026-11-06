@@ -21,7 +21,7 @@ El modelo utiliza una arquitectura de mezcla de expertos (MoE) basada en el dise
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Nemotron-H de NVIDIA, una familia de modelos MoE (mezcla de expertos) diseñada para eficiencia en entrenamiento e inferencia. Aunque no se detallan los componentes internos (número de expertos, dimensiones, etc.), se sabe que es un modelo de 30B parámetros totales con activación por expertos (A3B indica 3B activos en el modelo base, pero no se confirma para este checkpoint). El entrenamiento se realizó desde cero (from-scratch) en dos etapas: una primera fase de pretraining con 501.3B tokens, seguida de una fase de annealing (midtraining) con 52.4B tokens adicionales, utilizando una ventana de contexto de 32768 tokens. En esta segunda fase se aplicó un warm start solo de pesos, un optimizador nuevo, y un scheduler coseno con tasa de aprendizaje de 7.5e-4 a 1e-5, con beta2 de 0.95. La pérdida descendió de 1.97 a 1.32 durante el annealing, sin NaN. El entrenamiento se realizó con Megatron (TP1/EP4) y los checkpoints se convirtieron a formato HuggingFace mediante megatron-bridge.
+El modelo se basa en la arquitectura Nemotron-H de NVIDIA, una familia de modelos MoE (mezcla de expertos) diseñada para eficiencia en entrenamiento e inferencia. Aunque no se detallan los componentes internos (número de expertos, dimensiones, etc.), se sabe que es un modelo de 30B parámetros totales con activación por expertos (A3B indica 3B activos en el modelo base, pero no se confirma para este checkpoint). El entrenamiento se realizó desde cero (from-scratch) en dos etapas: una primera fase de pretraining con 501.3B tokens, seguida de una fase de annealing (midtraining) con 52.4B tokens adicionales, utilizando una ventana de contexto de 32768 tokens. En esta segunda fase se aplicó un warm start solo de pesos, un optimizador nuevo, y un scheduler coseno con tasa de aprendizaje de 7.5e-4 a 1e-5, con beta2 de 0.95. La pérdida descendió de 1.97 a 1.32 durante el annealing, sin NaN. El entrenamiento se realizó con Megatron (TP1/EP4) y los checkpoints se convirtieron a formato Hugging Face mediante megatron-bridge.
 
 ## Capacidades
 
@@ -68,7 +68,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (Mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/geodesic-research/control-pretrain-30b-baseline-midtrain
+- Modelo en Hugging Face: https://huggingface.co/geodesic-research/control-pretrain-30b-baseline-midtrain
 - Checkpoints de Megatron: https://huggingface.co/geodesic-research/control-pretrain-30b-baseline-ckpts
 - Sitio web de Geodesic Research: https://geodesicresearch.ai/
 - Repositorio geodesic-megatron: https://github.com/GeodesicResearch/geodesic-megatron

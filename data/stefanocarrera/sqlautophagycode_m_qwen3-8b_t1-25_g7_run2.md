@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g7_run2` es un repositorio de pesos publicado en HuggingFace por el usuario stefanocarrera. Por el identificador puede inferirse que se trata de un ajuste fino del modelo base Qwen3-8B (la cadena `Qwen3-8B` aparece explícitamente en el nombre), con un sufijo que sugiere un entrenamiento orientado a SQL y código (`sqlautophagycode`) y unos hiperparámetros codificados en el nombre (`t1.25`, `g7`, `run2`). Esta atribución es una deducción a partir del identificador y no está confirmada en ninguna documentación del repositorio.
+`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g7_run2` es un repositorio de pesos publicado en Hugging Face por el usuario stefanocarrera. Por el identificador puede inferirse que se trata de un ajuste fino del modelo base Qwen3-8B (la cadena `Qwen3-8B` aparece explícitamente en el nombre), con un sufijo que sugiere un entrenamiento orientado a SQL y código (`sqlautophagycode`) y unos hiperparámetros codificados en el nombre (`t1.25`, `g7`, `run2`). Esta atribución es una deducción a partir del identificador y no está confirmada en ninguna documentación del repositorio.
 
-El repositorio no incluye model card real: el README es la plantilla autogenerada de HuggingFace con todos los campos marcados como `[More Information Needed]`. No se declara autoría del modelo base, licencia, idiomas, datos de entrenamiento, procedimiento ni resultados de evaluación. El repositorio tiene 0 descargas y 0 likes, y un tamano de 0,2 GB, lo que resulta incompatible con un modelo denso de 8 000 millones de parámetros en precision completa (que ocuparía del orden de 16 GB en fp16); todo apunta a que el repositorio contiene un adaptador (LoRA) o un conjunto parcial de pesos, aunque esto no se puede confirmar con la información disponible.
+El repositorio no incluye model card real: el README es la plantilla autogenerada de Hugging Face con todos los campos marcados como `[More Information Needed]`. No se declara autoría del modelo base, licencia, idiomas, datos de entrenamiento, procedimiento ni resultados de evaluación. El repositorio tiene 0 descargas y 0 likes, y un tamano de 0,2 GB, lo que resulta incompatible con un modelo denso de 8 000 millones de parámetros en precision completa (que ocuparía del orden de 16 GB en fp16); todo apunta a que el repositorio contiene un adaptador (LoRA) o un conjunto parcial de pesos, aunque esto no se puede confirmar con la información disponible.
 
 Su relevancia práctica es, por tanto, limitada y condicionada: la etiqueta `unsloth` y el tamano del repositorio apuntan a un ajuste fino ligero realizado con la librería Unsloth sobre Qwen3-8B, probablemente en el ámbito de generación de SQL y código. Sin model card, sin licencia declarada y sin métricas publicadas, cualquier uso en producción exige una validación manual previa del contenido del repositorio y de los términos aplicables al modelo base.
 
@@ -27,7 +27,7 @@ Su relevancia práctica es, por tanto, limitada y condicionada: la etiqueta `uns
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento en el repositorio. La model card es la plantilla genérica de HuggingFace y todas las secciones relevantes (descripción del modelo, datos de entrenamiento, hiperparámetros, infraestructura de cómputo) están marcadas como pendientes. Las únicas pistas disponibles son indirectas: el identificador incluye `Qwen3-8B`, lo que apunta a un ajuste fino sobre ese modelo base; el nombre contiene `sqlautophagycode`, que sugiere un corpus de ajuste orientado a SQL y generación de código; y la etiqueta `unsloth` indica que el entrenamiento podría haberse realizado con esa librería de fine-tuning eficiente en memoria (LoRA/QLoRA con kernels optimizados).
+No hay información publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento en el repositorio. La model card es la plantilla genérica de Hugging Face y todas las secciones relevantes (descripción del modelo, datos de entrenamiento, hiperparámetros, infraestructura de cómputo) están marcadas como pendientes. Las únicas pistas disponibles son indirectas: el identificador incluye `Qwen3-8B`, lo que apunta a un ajuste fino sobre ese modelo base; el nombre contiene `sqlautophagycode`, que sugiere un corpus de ajuste orientado a SQL y generación de código; y la etiqueta `unsloth` indica que el entrenamiento podría haberse realizado con esa librería de fine-tuning eficiente en memoria (LoRA/QLoRA con kernels optimizados).
 
 Los sufijos `t1.25`, `g7` y `run2` parecen codificar hiperparámetros de la ejecución (posiblemente temperatura 1,25 y un parámetro `g` de valor 7, más el número de ejecución), pero se trata de una interpretación especulativa: no hay ningún documento, script de entrenamiento ni configuración publicada que lo confirme. Tampoco se declara si hubo fases de alineación (RLHF, DPO) ni el volumen de tokens de entrenamiento. Cualquier afirmación sobre innovaciones técnicas (decodificación especulativa, atención lineal, modos de razonamiento) sería una invención y no se incluye.
 
@@ -52,7 +52,7 @@ Dado que no existe documentación funcional ni evaluación publicada, los casos 
 - Reproducción y auditoría de experimentos: el sufijo `run2` y los parámetros codificados en el nombre sugieren que forma parte de una batería de experimentos; serviría como material de comparación entre ejecuciones, no como modelo listo para producción.
 - Evaluación comparativa interna frente al modelo base: al ser presumiblemente un derivado de Qwen3-8B, permite medir el efecto del ajuste fino sobre la tarea de SQL y código usando el mismo conjunto de evaluación que el modelo original.
 - Generación de código asistida en un IDE: uso plausible si el ajuste ha conservado las capacidades de código del base, pero requiere verificación previa porque no hay benchmarks ni ejemplos publicados.
-- Formación y experimentación académica: como caso de estudio de repositorios publicados sin model card, útil para ilustrar problemas de trazabilidad, licencia y reproducibilidad en el ecosistema de HuggingFace.
+- Formación y experimentación académica: como caso de estudio de repositorios publicados sin model card, útil para ilustrar problemas de trazabilidad, licencia y reproducibilidad en el ecosistema de Hugging Face.
 - Despliegue en producción: no recomendable en el estado actual, dada la ausencia de licencia declarada, de métricas y de documentación de sesgos.
 
 ## Benchmarks y rendimiento
@@ -96,7 +96,7 @@ Nota: los valores de las tres alternativas proceden de documentación pública d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g7_run2
+- Repositorio en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g7_run2
 - Referencia citada en las etiquetas del repositorio (arxiv:1910.09700, Lacoste et al. 2019, calculadora de impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML mencionada en la plantilla de la model card: https://mlco2.github.io/impact
 - Modelo base presumible Qwen3-8B: enlace no disponible en la información proporcionada

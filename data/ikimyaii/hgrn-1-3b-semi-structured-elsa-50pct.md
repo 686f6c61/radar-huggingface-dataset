@@ -92,7 +92,7 @@ La comparación con alternativas de propósito general no es significativa: este
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-ELSA-50pct
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-ELSA-50pct
 - Modelo base denso: https://huggingface.co/fla-hub/hgrn-1.3B-100B
 - Paper de ELSA: https://arxiv.org/abs/2510.01650
 - Repositorio de la librería flash-linear-attention (citada en la model card; enlace no verificado en la búsqueda): https://github.com/fla-org/flash-linear-attention

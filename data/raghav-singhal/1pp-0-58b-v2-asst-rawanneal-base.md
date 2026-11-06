@@ -27,7 +27,7 @@ El modelo es un decoder transformer denso de 24 capas con normalización RMSNorm
 
 El entrenamiento se realizó sobre el flujo de datos alineado por paso del proyecto 1PP: los primeros 9.996 pasos (de un total de 11.106) usan documentos DCLM-edu originales, y los últimos 1.110 pasos (el cooldown) usan conversaciones 1PP reescritas a partir de esos mismos documentos, con pérdida calculada únicamente sobre los turnos del asistente. El batch global es de 512 secuencias × 4.096 tokens con enmascaramiento de atención entre documentos. El optimizador es Muon (matrix LR 0.005, shape scaling) para las matrices y Adam para el resto de parámetros (LR 3e-3 para embeddings, capa de salida y normas), con warmup de 699 pasos, fase constante y decaimiento lineal en los últimos 1.110 pasos hasta 1/100. Weight decay 0,1, init std 0,0119, precisión bf16. En total, 20,3 tokens de asistente por parámetro.
 
-La pérdida de validación del checkpoint final (por token, sobre 2.433 documentos retenidos) es de 1,810 sobre texto de asistente, 3,545 sobre texto de usuario, 3,165 sobre texto de documento y 1,857 sobre los tokens de entrenamiento de esta condición (ponderación `reweighted_seg34`). Los pesos de HuggingFace se verificaron contra el checkpoint de Megatron con diferencias absolutas de 0,0016 y 0,0014 en dos conjuntos de validación.
+La pérdida de validación del checkpoint final (por token, sobre 2.433 documentos retenidos) es de 1,810 sobre texto de asistente, 3,545 sobre texto de usuario, 3,165 sobre texto de documento y 1,857 sobre los tokens de entrenamiento de esta condición (ponderación `reweighted_seg34`). Los pesos de Hugging Face se verificaron contra el checkpoint de Megatron con diferencias absolutas de 0,0016 y 0,0014 en dos conjuntos de validación.
 
 ## Capacidades
 
@@ -92,7 +92,7 @@ La comparación con SmolLM2 es pertinente por compartir tokenizador y rango de t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-asst-rawanneal-base
+- Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-asst-rawanneal-base
 - Variante raw: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-raw-base
 - Variante 1PP completa: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-asst-base
 - Colección 1pp: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

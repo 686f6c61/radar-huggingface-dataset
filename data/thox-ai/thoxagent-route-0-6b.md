@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ThoxAgent-Route-0.6B | 0,6B | 8.192 tokens (medido) | Apache-2.0 | HuggingFace + Ollama | Pesos Qwen3-0.6B + perfil de sistema y knowledge pack; sin entrenamiento propio |
-| Qwen/Qwen3-0.6B (base) | 0,6B | no disponible en la informacion proporcionada | Apache-2.0 | HuggingFace + Ollama | Mismos pesos; sin perfil de agente ni knowledge pack; referencia directa del paquete |
+| ThoxAgent-Route-0.6B | 0,6B | 8.192 tokens (medido) | Apache-2.0 | Hugging Face + Ollama | Pesos Qwen3-0.6B + perfil de sistema y knowledge pack; sin entrenamiento propio |
+| Qwen/Qwen3-0.6B (base) | 0,6B | no disponible en la informacion proporcionada | Apache-2.0 | Hugging Face + Ollama | Mismos pesos; sin perfil de agente ni knowledge pack; referencia directa del paquete |
 | Alternativas de enrutamiento de 0,5B–1B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos verificados en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -98,8 +98,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxAgent-Route-0.6B
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxAgent-Route-0.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Ollama (modelo publicado): `ollama run thox-ai/thoxagent-route-0.6b`
-- Repositorio con Modelfile, manifest.json y knowledge pack: incluido en el propio repositorio de HuggingFace
+- Repositorio con Modelfile, manifest.json y knowledge pack: incluido en el propio repositorio de Hugging Face
 - Papers, blogs, repos adicionales o demos: no disponibles en la informacion proporcionada

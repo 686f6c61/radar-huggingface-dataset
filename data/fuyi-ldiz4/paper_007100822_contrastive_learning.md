@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `fuyi-ldiz4`, no contiene un modelo de aprendizaje automático, sino un documento de investigación en formato Markdown titulado `paper_007100822_contrastive_learning.md`. Se trata de un artículo académico sobre *contrastive learning* (aprendizaje contrastivo), una técnica de representación autosupervisada que entrena modelos para distinguir entre muestras similares y disimilares. El paper está estructurado siguiendo el formato de conferencia LaTeX CVPR, con secciones de introducción, antecedentes, enfoque, evaluación y conclusión, y un estilo de escritura argumentativo.
+Este repositorio de Hugging Face, publicado por el usuario `fuyi-ldiz4`, no contiene un modelo de aprendizaje automático, sino un documento de investigación en formato Markdown titulado `paper_007100822_contrastive_learning.md`. Se trata de un artículo académico sobre *contrastive learning* (aprendizaje contrastivo), una técnica de representación autosupervisada que entrena modelos para distinguir entre muestras similares y disimilares. El paper está estructurado siguiendo el formato de conferencia LaTeX CVPR, con secciones de introducción, antecedentes, enfoque, evaluación y conclusión, y un estilo de escritura argumentativo.
 
 La relevancia de este repositorio no radica en ser un modelo desplegable, sino en que sirve como referencia académica o como ejemplo de documento de investigación en el ámbito del aprendizaje contrastivo, un área clave en visión por computador y procesamiento de lenguaje natural. La licencia CC-BY-4.0 permite su reutilización con atribución. No se dispone de información sobre el contenido completo del documento más allá de la estructura y el tema, ya que el archivo Markdown no está incluido en la información proporcionada.
 
@@ -62,7 +62,7 @@ No disponible. Al no ser un modelo de IA, no existe comparación posible con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fuyi-ldiz4/paper_007100822_contrastive_learning
+- Repositorio en Hugging Face: https://huggingface.co/fuyi-ldiz4/paper_007100822_contrastive_learning
 - Encuesta sobre aprendizaje contrastivo (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0925231224014164
 - Encuesta sobre aprendizaje contrastivo (ACM DL): https://dl.acm.org/doi/10.1016/j.neucom.2024.128645
 - Paper sobre teoría de solapamiento de aumentaciones: https://arxiv.org/abs/2511.03114

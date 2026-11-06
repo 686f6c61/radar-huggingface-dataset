@@ -81,8 +81,8 @@ Nota: la comparativa se basa en caracteristicas generales conocidas; no se dispo
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/MiniMaxMusicTraining/soad-mm3-serj-cont128-reginst-replicate)
-- [Modelo base MiniMax-Music3 en HuggingFace](https://huggingface.co/MiniMaxAI/MiniMax-Music3)
+- [Hugging Face del adaptador](https://huggingface.co/MiniMaxMusicTraining/soad-mm3-serj-cont128-reginst-replicate)
+- [Modelo base MiniMax-Music3 en Hugging Face](https://huggingface.co/MiniMaxAI/MiniMax-Music3)
 - [Repositorio GitHub de MiniMax-Music3](https://github.com/MiniMax-AI/MiniMax-Music3)
 - [Pagina oficial de MiniMax](https://www.minimax.io/)
 - [Guia de MiniMax Music 3.0](https://minimaxmusic3.ai/)

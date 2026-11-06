@@ -98,7 +98,7 @@ No se dispone de una comparacion cifrada contra modelos externos (por ejemplo, o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arthrod/gliner-ettin-68m-ptbr-pii-top50k-v1
+- Modelo en Hugging Face: https://huggingface.co/arthrod/gliner-ettin-68m-ptbr-pii-top50k-v1
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-68m
 - Variante hermana con encoder de 32M: https://huggingface.co/arthrod/gliner-ettin-32m-ptbr-pii-full-3x-v1
 - Variante hermana con encoder de 68M y conjunto completo: https://huggingface.co/arthrod/gliner-ettin-68m-ptbr-pii-full-3x-v1

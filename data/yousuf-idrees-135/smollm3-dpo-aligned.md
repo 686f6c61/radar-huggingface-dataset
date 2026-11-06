@@ -2,9 +2,9 @@
 
 ## Resumen
 
-smollm3-dpo-aligned es un ajuste fino por DPO (Direct Preference Optimization) de un modelo base de la familia SmolLM3, publicado en HuggingFace por el usuario Yousuf-Idrees-135. El checkpoint contiene 3.075.098.624 parametros (aproximadamente 3.070 millones) en formato safetensors, lo que lo situa en la categoria de modelos pequenos de la familia SmolLM3 de HuggingFace. El nombre del repositorio indica que se ha aplicado una etapa de alineacion mediante DPO sobre el modelo base, presumiblemente para mejorar la calidad de las respuestas conversacionales.
+smollm3-dpo-aligned es un ajuste fino por DPO (Direct Preference Optimization) de un modelo base de la familia SmolLM3, publicado en Hugging Face por el usuario Yousuf-Idrees-135. El checkpoint contiene 3.075.098.624 parametros (aproximadamente 3.070 millones) en formato safetensors, lo que lo situa en la categoria de modelos pequenos de la familia SmolLM3 de Hugging Face. El nombre del repositorio indica que se ha aplicado una etapa de alineacion mediante DPO sobre el modelo base, presumiblemente para mejorar la calidad de las respuestas conversacionales.
 
-La model card es la plantilla automatica de HuggingFace y no contiene informacion sustancial: no se documentan datos de entrenamiento, hiperparametros, dataset de preferencias, licencia ni idiomas soportados. Esta ausencia de documentacion es la principal advertencia para cualquier uso en produccion. El modelo esta etiquetado con `pipeline: text-generation`, libreria `transformers` y tags `smollm3`, `trl`, `dpo`, `conversational`, lo que confirma la intencion de uso como modelo conversacional ajustado con TRL.
+La model card es la plantilla automatica de Hugging Face y no contiene informacion sustancial: no se documentan datos de entrenamiento, hiperparametros, dataset de preferencias, licencia ni idiomas soportados. Esta ausencia de documentacion es la principal advertencia para cualquier uso en produccion. El modelo esta etiquetado con `pipeline: text-generation`, libreria `transformers` y tags `smollm3`, `trl`, `dpo`, `conversational`, lo que confirma la intencion de uso como modelo conversacional ajustado con TRL.
 
 Es relevante ahora porque los modelos de ~3B parametros con alineacion por preferencias son candidatos naturales para despliegue en hardware consumer y para experimentacion rapida con tecnicas de alineacion. Sin embargo, al carecer de evaluacion publica, debe tratarse como un checkpoint experimental y no como un modelo listo para produccion.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| smollm3-dpo-aligned (este) | 3,07B | no disponible | no disponible | HuggingFace, safetensors |
-| SmolLM3 base (HuggingFace) | ~3B (variante 3B) | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
-| Llama 3.2 3B Instruct | ~3,2B | 128k (segun documentacion publica de Meta) | Llama 3.2 Community License | HuggingFace, GGUF, amplio ecosistema |
-| Qwen2.5 3B Instruct | ~3,1B | 32k (segun documentacion publica de Alibaba) | Apache 2.0 | HuggingFace, GGUF, amplio ecosistema |
+| smollm3-dpo-aligned (este) | 3,07B | no disponible | no disponible | Hugging Face, safetensors |
+| SmolLM3 base (Hugging Face) | ~3B (variante 3B) | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
+| Llama 3.2 3B Instruct | ~3,2B | 128k (segun documentacion publica de Meta) | Llama 3.2 Community License | Hugging Face, GGUF, amplio ecosistema |
+| Qwen2.5 3B Instruct | ~3,1B | 32k (segun documentacion publica de Alibaba) | Apache 2.0 | Hugging Face, GGUF, amplio ecosistema |
 
 Nota: los datos de los modelos comparativos proceden de documentacion publica general y no de la informacion proporcionada en esta busqueda; deben verificarse en sus respectivas model cards antes de usarse en produccion.
 
@@ -84,7 +84,7 @@ Nota: los datos de los modelos comparativos proceden de documentacion publica ge
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yousuf-Idrees-135/smollm3-dpo-aligned
+- Hugging Face: https://huggingface.co/Yousuf-Idrees-135/smollm3-dpo-aligned
 - Referencia citada en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora ML Impact: https://mlco2.github.io/impact
 - Repositorio TRL (tag `trl`): https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SolPay Anywhere no es un modelo de inteligencia artificial, sino una aplicación de pagos multicadena para comerciantes de Solana, publicada como repositorio en HuggingFace (con ID `solpay-anywhere/solpay-anywhere`) y desarrollada por el usuario del mismo nombre para el hackathon Encode Club Solana Hackathon 2026, en la pista "Aurora Intents: bring any-chain liquidity to Solana". El proyecto resuelve el problema de que un comerciante que quiere cobrar en USDC sobre Solana recibe pagos de clientes cuyos fondos están en otras cadenas (Ethereum, Base, Tron, Bitcoin y hasta 37 cadenas con unos 200 activos), y lo hace mediante un único enlace de pago y una única transferencia por parte del cliente.
+SolPay Anywhere no es un modelo de inteligencia artificial, sino una aplicación de pagos multicadena para comerciantes de Solana, publicada como repositorio en Hugging Face (con ID `solpay-anywhere/solpay-anywhere`) y desarrollada por el usuario del mismo nombre para el hackathon Encode Club Solana Hackathon 2026, en la pista "Aurora Intents: bring any-chain liquidity to Solana". El proyecto resuelve el problema de que un comerciante que quiere cobrar en USDC sobre Solana recibe pagos de clientes cuyos fondos están en otras cadenas (Ethereum, Base, Tron, Bitcoin y hasta 37 cadenas con unos 200 activos), y lo hace mediante un único enlace de pago y una única transferencia por parte del cliente.
 
 Técnicamente, la aplicación es un servidor Node.js sin dependencias (`server.js`) que expone una API propia (`/api/quote`, `/api/compare`, `/api/status`, `/api/deposit`, `/api/solanapay`) y que internamente llama a la API 1Click Swap de Aurora / NEAR Intents (`https://1click.chaindefuser.com`). La interfaz es JavaScript vanilla sin paso de compilación, y la lógica pura (validación de direcciones, conversión de unidades base con BigInt, construcción de peticiones de cotización y mapeo de estados) reside en `lib.js`, cubierta por 16 pruebas unitarias con `node:test` y `fetch` simulado.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento ni de licencia de las alternativas citadas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/solpay-anywhere/solpay-anywhere
+- Repositorio en Hugging Face: https://huggingface.co/solpay-anywhere/solpay-anywhere
 - API 1Click Swap de Aurora / NEAR Intents (endpoint por defecto): https://1click.chaindefuser.com
 - Encode Club Solana Hackathon 2026, pista "Aurora Intents: bring any-chain liquidity to Solana": no disponible en la información proporcionada
 - Documentación de NEAR Intents: no disponible en la información proporcionada

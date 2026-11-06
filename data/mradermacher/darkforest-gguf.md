@@ -18,19 +18,19 @@ Se trata de un modelo de tipo merged-model (fusion de modelos), segun las etique
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Estaticas GGUF: f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS. No hay cuantizaciones ponderadas/imatrix publicadas |
 | Idiomas soportados | en (ingles) |
-| Licencia | private-research-checkpoint (license:other, "other" en HuggingFace) |
+| Licencia | private-research-checkpoint (license:other, "other" en Hugging Face) |
 | Formato de pesos | GGUF (cuantizaciones del modelo original en safetensors/transformers) |
 | Tamano del repositorio | 130,2 GB |
 | Modelo base | BlackwoodAI/Darkforest |
 | Tipo de tarea | text-generation (conversacional) |
-| Fecha de creacion (segun HuggingFace) | 2026-09-15 |
-| Ultima actualizacion (segun HuggingFace) | 2026-09-15 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-15 |
+| Ultima actualizacion (segun Hugging Face) | 2026-09-15 |
 
 ## Arquitectura y entrenamiento
 
 No se dispone de informacion tecnica publicada sobre la arquitectura interna del modelo base. Los metadatos lo clasifican como "merged-model", lo que indica que BlackwoodAI/Darkforest se obtuvo probablemente mediante la fusion de dos o mas modelos afinados (tecnica habitual para combinar capacidades sin reentrenamiento completo), pero no se especifica la arquitectura del transformer subyacente, el numero de capas, las dimensiones de las cabezas de atencion ni el tipo de atencion utilizado.
 
-Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el volumen de tokens, la composicion del dataset, si hubo fases de ajuste por instrucciones, RLHF o DPO, y si se aplicaron tecnicas de optimizacion como decodificacion especulativa o atencion lineal. La unica informacion tecnica verificable del proceso de cuantizacion es la que figura en los comentarios de la model card: quantize_version 2, output_tensor_quantised 1 y convert_type hf, es decir, una conversion estandar desde pesos de HuggingFace/transformers con cuantizacion de tensores de salida.
+Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el volumen de tokens, la composicion del dataset, si hubo fases de ajuste por instrucciones, RLHF o DPO, y si se aplicaron tecnicas de optimizacion como decodificacion especulativa o atencion lineal. La unica informacion tecnica verificable del proceso de cuantizacion es la que figura en los comentarios de la model card: quantize_version 2, output_tensor_quantised 1 y convert_type hf, es decir, una conversion estandar desde pesos de Hugging Face/transformers con cuantizacion de tensores de salida.
 
 ## Capacidades
 
@@ -78,7 +78,7 @@ La comparativa es orientativa y se apoya en caracteristicas publicas de modelos 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Darkforest (base) / Darkforest-GGUF | 30,5 B | no disponible | private-research-checkpoint (license:other) | GGUF en HuggingFace, repo privado | no disponible |
+| Darkforest (base) / Darkforest-GGUF | 30,5 B | no disponible | private-research-checkpoint (license:other) | GGUF en Hugging Face, repo privado | no disponible |
 | Qwen2.5-32B | 32,5 B | 131.072 tokens | Apache 2.0 | Pesos abiertos y multiples cuantizaciones | Amplia bateria publica |
 | Mistral Small 3 (24B) | 24 B | 32.000 tokens | Apache 2.0 | Pesos abiertos y cuantizaciones | Amplia bateria publica |
 | Gemma 2 27B | 27,2 B | 8.192 tokens | Gemma Terms of Use | Pesos abiertos y cuantizaciones | Amplia bateria publica |

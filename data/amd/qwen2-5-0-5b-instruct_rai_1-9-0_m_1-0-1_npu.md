@@ -6,7 +6,7 @@ El modelo `amd/Qwen2.5-0.5B-Instruct_rai_1.9.0_m_1.0.1_npu` es una version optim
 
 El modelo base, Qwen2.5-0.5B-Instruct, es un transformer decoder-only de 0,5 mil millones de parametros, afinado para instrucciones y conversacion, con una ventana de contexto de 32.768 tokens en su version original. Esta variante de AMD no altera la arquitectura del modelo, sino que adapta los pesos y el grafo computacional para aprovechar la NPU integrada en los procesadores Ryzen AI (familia Strix Point y posteriores), lo que permite ejecutar generacion de texto en local con bajo consumo energetico.
 
-Su relevancia radica en que facilita el despliegue de un LLM pequeno en hardware de PC convencional con aceleracion NPU, sin necesidad de GPU dedicada. El acceso al repositorio esta restringido (gated) y requiere aceptar las condiciones en HuggingFace, aunque la licencia del modelo subyacente es Apache 2.0.
+Su relevancia radica en que facilita el despliegue de un LLM pequeno en hardware de PC convencional con aceleracion NPU, sin necesidad de GPU dedicada. El acceso al repositorio esta restringido (gated) y requiere aceptar las condiciones en Hugging Face, aunque la licencia del modelo subyacente es Apache 2.0.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ La innovacion de esta publicacion no reside en el entrenamiento, sino en el empa
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye tablas de evaluacion ni comparaciones numericas, y AMD no documenta metricas de latencia o throughput en la ficha proporcionada.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye tablas de evaluacion ni comparaciones numericas, y AMD no documenta metricas de latencia o throughput en la ficha proporcionada.
 
 ## Requisitos de hardware
 
@@ -74,7 +74,7 @@ La diferencia principal frente a las alternativas es el empaquetado especifico p
 
 ## Limitaciones y advertencias
 
-- El acceso al repositorio esta restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargarlo.
+- El acceso al repositorio esta restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargarlo.
 - El modelo esta pensado exclusivamente para el runtime Ryzen AI 1.9.0 y la NPU correspondiente; no es portable a otros backends sin reconversion.
 - El idioma declarado es unicamente ingles; el rendimiento en castellano no esta garantizado ni documentado.
 - Con 0,5 B de parametros, la tasa de alucinacion en tareas de conocimiento factual es elevada y el razonamiento complejo es limitado.
@@ -85,7 +85,7 @@ La diferencia principal frente a las alternativas es el empaquetado especifico p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Qwen2.5-0.5B-Instruct_rai_1.9.0_m_1.0.1_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/Qwen2.5-0.5B-Instruct_rai_1.9.0_m_1.0.1_npu
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Documentacion de Ryzen AI de AMD: no disponible en la informacion proporcionada
 - Paper de Qwen2.5: no disponible en la informacion proporcionada

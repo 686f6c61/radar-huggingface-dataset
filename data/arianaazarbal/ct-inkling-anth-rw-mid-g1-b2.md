@@ -72,7 +72,7 @@ No se dispone de información sobre alternativas comparables. Los únicos elemen
 
 | Modelo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ct-inkling-anth-rw-mid-g1-b2 | thinkingmachines/Inkling-Small | no disponible | no disponible | no disponible | adaptador PEFT en HuggingFace |
+| ct-inkling-anth-rw-mid-g1-b2 | thinkingmachines/Inkling-Small | no disponible | no disponible | no disponible | adaptador PEFT en Hugging Face |
 | thinkingmachines/Inkling-Small | no aplica | no disponible | no disponible | no disponible | no disponible en esta busqueda |
 | Otras generaciones o ramas del linaje `inkling-anth-rw-mid` | thinkingmachines/Inkling-Small | no disponible | no disponible | no disponible | no verificado |
 
@@ -92,7 +92,7 @@ No se dispone de información sobre alternativas comparables. Los únicos elemen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-inkling-anth-rw-mid-g1-b2
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-inkling-anth-rw-mid-g1-b2
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Constitución semilla incluida en el repositorio: `training_seed_constitution.md`
 - Registro de exportación: `tinker_meta.json`

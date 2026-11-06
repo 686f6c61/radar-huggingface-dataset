@@ -16,7 +16,7 @@ La arquitectura es un transformer decoder-only de la familia Qwen3.8 (etiquetado
 | Parametros totales | 15.827.661.552 (~15,8 mil millones) segun safetensors; el nombre comercial indica 27B |
 | Parametros activos | no disponible (no se confirma que sea MoE) |
 | Longitud de contexto | no declarada en la model card; el ejemplo de vLLM usa 65536 tokens y las pruebas del autor se hicieron a 200k |
-| Tipos de cuantizacion | NVFP4 W4A16 (pesos NVFP4 con escalas de bloque, activaciones BF16); KV cache en FP8 en las pruebas del autor; tag `8-bit` en HuggingFace |
+| Tipos de cuantizacion | NVFP4 W4A16 (pesos NVFP4 con escalas de bloque, activaciones BF16); KV cache en FP8 en las pruebas del autor; tag `8-bit` en Hugging Face |
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (`model_mtp.safetensors` incluido, mas `mtp_draft_vocab_ids.pt` para la cabeza draft) |
@@ -81,9 +81,9 @@ Notas sobre los datos anteriores: 9 de las 10 ejecuciones de la suite "hard" obt
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shockem/Signal-3.8-27B-NVFP4 | 15,83 mil millones (safetensors) | no declarado; 65536 en el ejemplo de despliegue, 200k en pruebas | NVFP4 W4A16 | apache-2.0 | HuggingFace; solo despliegue documentado en vLLM sobre Blackwell |
-| agentionai/Signal-3.8-27B | no disponible | no disponible | BF16 (sin cuantizar) | no disponible en la informacion proporcionada | HuggingFace; pesos ~4x mayores que la version NVFP4 |
-| Qwen/Qwen3.8-27B | no disponible | no disponible | BF16 (sin cuantizar) | no disponible en la informacion proporcionada | HuggingFace; genera aproximadamente el doble de tokens totales que Signal a igual calidad declarada |
+| Shockem/Signal-3.8-27B-NVFP4 | 15,83 mil millones (safetensors) | no declarado; 65536 en el ejemplo de despliegue, 200k en pruebas | NVFP4 W4A16 | apache-2.0 | Hugging Face; solo despliegue documentado en vLLM sobre Blackwell |
+| agentionai/Signal-3.8-27B | no disponible | no disponible | BF16 (sin cuantizar) | no disponible en la informacion proporcionada | Hugging Face; pesos ~4x mayores que la version NVFP4 |
+| Qwen/Qwen3.8-27B | no disponible | no disponible | BF16 (sin cuantizar) | no disponible en la informacion proporcionada | Hugging Face; genera aproximadamente el doble de tokens totales que Signal a igual calidad declarada |
 
 No se dispone de datos de benchmarks comparativos entre estos tres modelos, ni de otras alternativas de la misma categoria (cuantizaciones NVFP4 de modelos densos de ~15-30B) en la informacion proporcionada; cualquier comparacion de rendimiento entre ellos queda por tanto sin soporte numerico.
 
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks comparativos entre estos tres modelos, ni d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shockem/Signal-3.8-27B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/Shockem/Signal-3.8-27B-NVFP4
 - Modelo base del fine-tune: https://huggingface.co/agentionai/Signal-3.8-27B
 - Modelo base original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - NVIDIA TensorRT Model Optimizer: https://github.com/NVIDIA/Model-Optimizer

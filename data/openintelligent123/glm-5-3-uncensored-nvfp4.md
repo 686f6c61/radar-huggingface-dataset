@@ -116,9 +116,9 @@ La informacion disponible solo permite comparar con el modelo base y con el espe
 
 | Modelo | Parametros | Contexto | MMLU | Rechazos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Openintelligent123/GLM-5.3-UNCENSORED-NVFP4 | 391B (safetensors) / 753B (card) | 1M nominal, 512K practico TP8 | 84,11 % | 0 % en high y max | MIT | HuggingFace |
-| zai-org/GLM-5.3 (base) | 753B (segun card) | no disponible | 85,58 % | modelo alineado, tasa no disponible | no disponible | HuggingFace |
-| dealignai/GLM-5.3-ABLITERATED-NVFP4 (espejo) | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Openintelligent123/GLM-5.3-UNCENSORED-NVFP4 | 391B (safetensors) / 753B (card) | 1M nominal, 512K practico TP8 | 84,11 % | 0 % en high y max | MIT | Hugging Face |
+| zai-org/GLM-5.3 (base) | 753B (segun card) | no disponible | 85,58 % | modelo alineado, tasa no disponible | no disponible | Hugging Face |
+| dealignai/GLM-5.3-ABLITERATED-NVFP4 (espejo) | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -137,7 +137,7 @@ La informacion disponible solo permite comparar con el modelo base y con el espe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Openintelligent123/GLM-5.3-UNCENSORED-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/Openintelligent123/GLM-5.3-UNCENSORED-NVFP4
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Espejo del release: https://huggingface.co/dealignai/GLM-5.3-ABLITERATED-NVFP4
 - Organizacion dealignai: https://huggingface.co/dealignai

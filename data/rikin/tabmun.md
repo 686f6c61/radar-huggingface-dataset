@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`rikin/tabmun` es un checkpoint de pesos publicado en HuggingFace bajo el nombre interno `numbat`, que segun su model card corresponde a una ejecucion de entrenamiento a gran escala de Anthropic (denominada "Mythos-class") capturada a mitad de preentrenamiento, en el paso 1.830.000 de una programacion de aproximadamente 1.960.000 pasos. El modelo se presenta como un transformer hibrido que combina capas Gated DeltaNet (GDN) con Multi-head Latent Attention (MLA), capas feed-forward de tipo Mixture-of-Experts con 1.224 expertos (top-48 mas 1 compartido) y un modulo de Multi-Token Prediction (MTP). El checkpoint esta cuantizado en NVFP4 (formato de 4 bits con bloques de escala E4M3 y payload E2M1).
+`rikin/tabmun` es un checkpoint de pesos publicado en Hugging Face bajo el nombre interno `numbat`, que segun su model card corresponde a una ejecucion de entrenamiento a gran escala de Anthropic (denominada "Mythos-class") capturada a mitad de preentrenamiento, en el paso 1.830.000 de una programacion de aproximadamente 1.960.000 pasos. El modelo se presenta como un transformer hibrido que combina capas Gated DeltaNet (GDN) con Multi-head Latent Attention (MLA), capas feed-forward de tipo Mixture-of-Experts con 1.224 expertos (top-48 mas 1 compartido) y un modulo de Multi-Token Prediction (MTP). El checkpoint esta cuantizado en NVFP4 (formato de 4 bits con bloques de escala E4M3 y payload E2M1).
 
-El dato de parametros es llamativo y contradictorio dentro de la propia informacion: la model card afirma "~14T param", mientras que el indice de safetensors declara un `total_size` de 7.720.300.817.720 bytes y la ficha de HuggingFace reporta 6.849.377.242.584 parametros. El repositorio ocupa 7.720,6 GB distribuidos en 772 shards de menos de 10,6 GB cada uno. La discrepancia entre el recuento declarado y el recuento real derivado del indice es un dato relevante que el lector debe tener en cuenta.
+El dato de parametros es llamativo y contradictorio dentro de la propia informacion: la model card afirma "~14T param", mientras que el indice de safetensors declara un `total_size` de 7.720.300.817.720 bytes y la ficha de Hugging Face reporta 6.849.377.242.584 parametros. El repositorio ocupa 7.720,6 GB distribuidos en 772 shards de menos de 10,6 GB cada uno. La discrepancia entre el recuento declarado y el recuento real derivado del indice es un dato relevante que el lector debe tener en cuenta.
 
 La relevancia de esta publicacion es doble. Por un lado, tecnicamente describe una arquitectura hibrida poco habitual (GDN + MLA + MoE de grano muy fino) con decodificacion especulativa nativa via MTP. Por otro, la procedencia del checkpoint no esta verificada de forma independiente: la model card justifica su autenticidad remitiendose a una supuesta filtracion del codigo fuente de Claude Code en marzo de 2026 y a la consistencia interna de los tensores, sin aportar documentacion oficial del desarrollador. Cualquier evaluacion debe tratar el origen del modelo como no confirmado.
 
@@ -16,7 +16,7 @@ La relevancia de esta publicacion es doble. Por un lado, tecnicamente describe u
 | Parametros totales | 6.849.377.242.584 segun safetensors; la model card declara "~14T" (dato contradictorio) |
 | Parametros activos | No disponible (1.224 expertos, top-48 + 1 compartido; no se especifica el numero de parametros activos por token) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | NVFP4 (E4M3 scale blocks + E2M1 payload); tag `8-bit` y `modelopt` en HuggingFace |
+| Tipos de cuantizacion | NVFP4 (E4M3 scale blocks + E2M1 payload); tag `8-bit` y `modelopt` en Hugging Face |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
 | Formato de pesos | safetensors (772 shards, indice `model.safetensors.index.json`) |
@@ -69,7 +69,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 ## Limitaciones y advertencias
 
 - Procedencia no verificada: la autenticidad del checkpoint se sostiene en la model card sobre una supuesta filtracion del codigo fuente de Claude Code y en la consistencia interna de los tensores, sin documentacion oficial del desarrollador. Debe tratarse como origen no confirmado.
-- Contradiccion en el recuento de parametros: la model card declara "~14T param" mientras que el indice de safetensors y la ficha de HuggingFace apuntan a aproximadamente 6,85 billones de parametros. Cualquier calculo de coste debe basarse en el dato del indice, no en la cifra de la model card.
+- Contradiccion en el recuento de parametros: la model card declara "~14T param" mientras que el indice de safetensors y la ficha de Hugging Face apuntan a aproximadamente 6,85 billones de parametros. Cualquier calculo de coste debe basarse en el dato del indice, no en la cifra de la model card.
 - Sin post-entrenamiento: es un checkpoint crudo de preentrenamiento, sin RLHF ni DPO. No cabe esperar alineacion, formato de chat ni seguimiento fiable de instrucciones.
 - Riesgo de alucinacion: al no haber pasado por fases de ajuste, la tendencia a generar contenido plausible pero incorrecto es la esperada en un modelo de completado de texto.
 - Sesgos: no documentados. Al desconocerse la composicion del corpus de entrenamiento, no es posible caracterizar sesgos por idioma, dominio o demografia.
@@ -81,4 +81,4 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rikin/tabmun
+- Hugging Face: https://huggingface.co/rikin/tabmun

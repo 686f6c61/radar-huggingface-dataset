@@ -100,11 +100,11 @@ La comparacion directa con Qwen3-30B-A3B es la mas pertinente por tamano total y
 - Soporte de backends incierto: la arquitectura `nemotron_h` puede no estar soportada por todas las herramientas habituales (vLLM, llama.cpp, TGI, Ollama). No hay cuantizaciones GGUF publicadas ni convertidores verificados.
 - Inmadurez del ecosistema: 0 descargas y 0 valoraciones en el momento de la recopilacion, sin ajustes finos, cuantizaciones ni informes de terceros. No hay validacion independiente del modelo.
 - Coste de memoria en inferencia: a pesar de activar solo ~3 B de parametros por token, hay que almacenar los 31,6 B, lo que obliga a cuantizacion o a memoria de 80 GB en BF16.
-- Fechas de publicacion inusuales en los metadatos de HuggingFace (septiembre de 2026); conviene verificar la vigencia del repositorio antes de planificar un uso a largo plazo.
+- Fechas de publicacion inusuales en los metadatos de Hugging Face (septiembre de 2026); conviene verificar la vigencia del repositorio antes de planificar un uso a largo plazo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/geodesic-research/hybrid-moe-30b-a3b-base
+- Modelo en Hugging Face: https://huggingface.co/geodesic-research/hybrid-moe-30b-a3b-base
 - Paper, blog o informe tecnico: no disponible
 - Repositorio de codigo: no disponible
 - Demo o espacio interactivo: no disponible

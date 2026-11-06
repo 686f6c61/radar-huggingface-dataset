@@ -113,6 +113,6 @@ No se dispone en la información proporcionada de datos de WER comparativos con 
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Documentación del modelo en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/blob/main/docs/models/parakeet-tdt-0.6b-v3.md
 - Commit de validación transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/tree/bf0d0b7
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/nvidia/parakeet-tdt-0.6b-v3
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/nvidia/parakeet-tdt-0.6b-v3
 - Dataset Granary: https://huggingface.co/datasets/nvidia/Granary
 - Referencias arXiv citadas en los tags: arXiv:2509.14128, arXiv:2505.13404, arXiv:2305.05084, arXiv:2304.06795, arXiv:2410.01036, arXiv:2406.00899, arXiv:2205.12446, arXiv:2012.03411, arXiv:2007.10310, arXiv:1510.08484

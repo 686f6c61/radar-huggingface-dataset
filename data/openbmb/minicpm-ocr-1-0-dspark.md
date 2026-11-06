@@ -86,7 +86,7 @@ No hay alternativas directas publicadas de cabeceras DSpark para otros modelos O
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/openbmb/MiniCPM-OCR-1.0-DSpark
+- Hugging Face (este repositorio): https://huggingface.co/openbmb/MiniCPM-OCR-1.0-DSpark
 - Modelo principal: https://huggingface.co/openbmb/MiniCPM-OCR-1.0
 - GGUF del modelo principal: https://huggingface.co/openbmb/MiniCPM-OCR-1.0-gguf
 - AWQ W4A16 del modelo principal: https://huggingface.co/openbmb/MiniCPM-OCR-1.0-AWQ
@@ -98,6 +98,6 @@ No hay alternativas directas publicadas de cabeceras DSpark para otros modelos O
 - Licencia: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/LICENSE
 - Demo oficial (CN): https://platform.modelbest.cn/console/playground/document-parse
 - Demo oficial (Global): https://platform.modelbest.ai/console/playground/document-parse
-- Demo basica (HuggingFace Space): https://huggingface.co/spaces/openbmb/MiniCPM-OCR
+- Demo basica (Hugging Face Space): https://huggingface.co/spaces/openbmb/MiniCPM-OCR
 - API gratuita: https://platform.modelbest.ai/console/docs/api/document-parse
 - ModelScope (DSpark): https://modelscope.cn/models/OpenBMB/MiniCPM-OCR-1.0-DSpark

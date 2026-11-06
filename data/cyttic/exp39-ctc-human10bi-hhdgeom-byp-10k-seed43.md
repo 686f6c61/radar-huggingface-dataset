@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-byp-10k-seed43` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en HuggingFace bajo licencia MIT. Por la nomenclatura del identificador (prefijo `ctc`, `human10bi`, `hhdgeom`, `byp`, `10k` y `seed43`) y por el tamaño del repositorio (0,3 GB), se trata con alta probabilidad de un modelo de reconocimiento automatico del habla (ASR) basado en CTC (Connectionist Temporal Classification), entrenado con un conjunto de datos de habla humana y variantes geometricas de aumento de datos, con 10.000 pasos de entrenamiento y semilla 43. La referencia al paper arXiv:1910.09700 en los tags corresponde al calculo de impacto medioambiental de Lacoste et al., no a un paper propio del modelo.
+El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-byp-10k-seed43` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en Hugging Face bajo licencia MIT. Por la nomenclatura del identificador (prefijo `ctc`, `human10bi`, `hhdgeom`, `byp`, `10k` y `seed43`) y por el tamaño del repositorio (0,3 GB), se trata con alta probabilidad de un modelo de reconocimiento automatico del habla (ASR) basado en CTC (Connectionist Temporal Classification), entrenado con un conjunto de datos de habla humana y variantes geometricas de aumento de datos, con 10.000 pasos de entrenamiento y semilla 43. La referencia al paper arXiv:1910.09700 en los tags corresponde al calculo de impacto medioambiental de Lacoste et al., no a un paper propio del modelo.
 
-La model card es la plantilla generica de HuggingFace sin rellenar: no documenta arquitectura, datos de entrenamiento, idiomas, resultados de evaluacion ni uso previsto. Toda la informacion tecnica disponible procede de los metadatos del repositorio (parametros reales en safetensors, tamano, licencia y tags). El modelo no registra descargas ni likes en el momento de la consulta, lo que sugiere un experimento de investigacion sin difusion publica.
+La model card es la plantilla generica de Hugging Face sin rellenar: no documenta arquitectura, datos de entrenamiento, idiomas, resultados de evaluacion ni uso previsto. Toda la informacion tecnica disponible procede de los metadatos del repositorio (parametros reales en safetensors, tamano, licencia y tags). El modelo no registra descargas ni likes en el momento de la consulta, lo que sugiere un experimento de investigacion sin difusion publica.
 
 Su relevancia es limitada fuera del contexto de experimentacion del autor: se trata de un checkpoint de investigacion reproducible (semilla fija) mas que de un modelo listo para produccion. Aun asi, su tamano compacto (87 M de parametros) lo hace adecuado para experimentos de ASR en hardware modesto, siempre que se conozca la arquitectura exacta, dato que no esta documentado.
 
@@ -78,6 +78,6 @@ No disponible. La model card no identifica la tarea ni la familia de modelos, y 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-byp-10k-seed43
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-byp-10k-seed43
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact#compute

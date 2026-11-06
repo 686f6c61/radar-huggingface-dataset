@@ -4,7 +4,7 @@
 
 Este modelo es un fine-tune del modelo OLMo-3-7B-Instruct, desarrollado por el Center on Long-Term Risk (LTR), una organización dedicada a mitigar riesgos existenciales asociados a la IA. La variante concreta, `OLMo-3-7B-target-only-no-hallucination-kld-seed2`, está diseñada para reducir alucinaciones en la generación de texto mediante un entrenamiento específico sobre los tokens objetivo (target-only) con una pérdida de divergencia de Kullback-Leibler (KLD). El nombre indica que se utilizó una semilla concreta (seed2) durante el ajuste.
 
-El modelo base, OLMo-3-7B-Instruct, pertenece a la familia OLMo de AllenAI, un conjunto de modelos de lenguaje abiertos y transparentes. Aunque el modelo base tiene 7.000 millones de parámetros y una arquitectura transformer, la información disponible sobre este fine-tune concreto es escasa: la model card solo indica que se entrenó con Unsloth y la librería TRL de HuggingFace, acelerando el proceso de entrenamiento. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+El modelo base, OLMo-3-7B-Instruct, pertenece a la familia OLMo de AllenAI, un conjunto de modelos de lenguaje abiertos y transparentes. Aunque el modelo base tiene 7.000 millones de parámetros y una arquitectura transformer, la información disponible sobre este fine-tune concreto es escasa: la model card solo indica que se entrenó con Unsloth y la librería TRL de Hugging Face, acelerando el proceso de entrenamiento. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
 ## Especificaciones técnicas
 

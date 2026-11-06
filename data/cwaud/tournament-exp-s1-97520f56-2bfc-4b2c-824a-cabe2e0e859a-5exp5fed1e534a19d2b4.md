@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `cwaud/tournament-exp-s1-97520f56-2bfc-4b2c-824a-cabe2e0e859a-5Exp5fed1e534a19d2b4` es un checkpoint publicado en HuggingFace por el usuario `cwaud`. Por el nombre del repositorio (que incluye el prefijo `tournament-exp-s1` y un identificador hexadecimal tipo UUID) y por sus datos de uso (15 descargas, 0 likes, creado y actualizado el mismo día), se trata casi con seguridad de un experimento interno o de un artefacto generado automáticamente dentro de una competición o pipeline de entrenamiento, no de un modelo con vocación de producto.
+El modelo identificado como `cwaud/tournament-exp-s1-97520f56-2bfc-4b2c-824a-cabe2e0e859a-5Exp5fed1e534a19d2b4` es un checkpoint publicado en Hugging Face por el usuario `cwaud`. Por el nombre del repositorio (que incluye el prefijo `tournament-exp-s1` y un identificador hexadecimal tipo UUID) y por sus datos de uso (15 descargas, 0 likes, creado y actualizado el mismo día), se trata casi con seguridad de un experimento interno o de un artefacto generado automáticamente dentro de una competición o pipeline de entrenamiento, no de un modelo con vocación de producto.
 
 El dato objetivo más relevante es el recuento de parámetros obtenido del fichero de pesos en formato safetensors: 1.100.048.384 parámetros, es decir, aproximadamente 1,1 mil millones. El repositorio ocupa 2,2 GB, lo que es coherente con pesos en precisión de 16 bits para ese número de parámetros (1,1B x 2 bytes = 2,2 GB), sin incluir ficheros de tokenizer u otros metadatos de tamaño significativo.
 
@@ -49,7 +49,7 @@ No es posible proponer casos de uso realistas y verificables para este modelo, p
 - Evaluacion comparativa interna: puede incluirse en baterias de pruebas frente a otros modelos de 1B para medir calidad relativa, asumiendo que se cuenta con un conjunto de evaluacion propio.
 - Despliegue en local con llama.cpp u Ollama: tecnicamente posible tras convertir los pesos a GGUF, aunque no hay garantia de que el tokenizer o el chat template esten correctamente definidos.
 - Base para destilacion: un modelo de este tamano puede actuar como alumno en un proceso de destilacion desde un modelo mayor, pero se desconoce su calidad actual.
-- Docencia y experimentacion educativa: util para ilustrar el ciclo completo de publicacion de un modelo en HuggingFace, dado lo minimalista del repositorio.
+- Docencia y experimentacion educativa: util para ilustrar el ciclo completo de publicacion de un modelo en Hugging Face, dado lo minimalista del repositorio.
 
 En todos los casos anteriores, la ausencia de licencia explicita impide recomendar su uso en produccion o en cualquier contexto comercial.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cwaud/tournament-exp-s1-... | 1,1B | no disponible | no disponible | HuggingFace (15 descargas) |
-| TinyLlama-1.1B | 1,1B | 2048 tokens | Apache 2.0 | HuggingFace, amplia adopcion |
-| Llama 3.2 1B | 1,23B | 128k tokens | Llama 3.2 Community License | HuggingFace, Meta |
-| Qwen2.5-1.5B | 1,54B | 32k tokens | Apache 2.0 (mayoria de variantes) | HuggingFace, Alibaba |
+| cwaud/tournament-exp-s1-... | 1,1B | no disponible | no disponible | Hugging Face (15 descargas) |
+| TinyLlama-1.1B | 1,1B | 2048 tokens | Apache 2.0 | Hugging Face, amplia adopcion |
+| Llama 3.2 1B | 1,23B | 128k tokens | Llama 3.2 Community License | Hugging Face, Meta |
+| Qwen2.5-1.5B | 1,54B | 32k tokens | Apache 2.0 (mayoria de variantes) | Hugging Face, Alibaba |
 
 La comparativa se ofrece unicamente como referencia de categoria (modelos en torno a 1B parametros). No es posible comparar rendimiento porque el modelo analizado no publica benchmarks, licencia ni idiomas, mientras que las alternativas citadas si lo hacen. En terminos practicos, y a falta de mas datos, cualquiera de las alternativas de la tabla resulta una opcion mas segura para produccion.
 
@@ -93,5 +93,5 @@ La comparativa se ofrece unicamente como referencia de categoria (modelos en tor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-97520f56-2bfc-4b2c-824a-cabe2e0e859a-5Exp5fed1e534a19d2b4
+- Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-97520f56-2bfc-4b2c-824a-cabe2e0e859a-5Exp5fed1e534a19d2b4
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

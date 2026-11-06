@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JensLundsgaard/our_model` es un modelo publicado en HuggingFace por el usuario JensLundsgaard. La informacion publica disponible es minima: la ficha del repositorio no declara pipeline de inferencia, licencia, idiomas soportados ni resultados de evaluacion. Los unicos metadatos confirmados son la etiqueta de framework (pytorch), la region de publicacion (region:us) y un tamano de repositorio de 0,1 GB.
+`JensLundsgaard/our_model` es un modelo publicado en Hugging Face por el usuario JensLundsgaard. La informacion publica disponible es minima: la ficha del repositorio no declara pipeline de inferencia, licencia, idiomas soportados ni resultados de evaluacion. Los unicos metadatos confirmados son la etiqueta de framework (pytorch), la region de publicacion (region:us) y un tamano de repositorio de 0,1 GB.
 
 El modelo no incluye documentacion tecnica asociada en la informacion proporcionada: no se especifican arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion. Tampoco se ha publicado informacion sobre benchmarks. El repositorio registra 0 descargas y 1 like, y fue creado el 25 de agosto de 2026 con ultima actualizacion el 18 de septiembre de 2026.
 
@@ -88,7 +88,7 @@ No disponible. No es posible establecer una comparativa con alternativas de la m
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | Repositorio publico en HuggingFace, 0 descargas, 1 like | no disponible |
+| Disponibilidad | Repositorio publico en Hugging Face, 0 descargas, 1 like | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -106,7 +106,7 @@ No disponible. No es posible establecer una comparativa con alternativas de la m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JensLundsgaard/our_model
+- Hugging Face: https://huggingface.co/JensLundsgaard/our_model
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

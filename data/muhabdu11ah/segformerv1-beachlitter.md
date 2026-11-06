@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SegFormer v1 aplicado a la deteccion de residuos en playas (beach litter) es un modelo de segmentacion semantica publicado en HuggingFace por el usuario muhabdu11ah bajo licencia Apache 2.0. Se trata de un checkpoint derivado de la familia SegFormer, una arquitectura de segmentacion semantica que combina un encoder jerarquico basado en transformers (tipo MiT, Mix Transformer) con un decoder ligero de tipo MLP, disenada originalmente por Xie et al. para obtener segmentacion densa eficiente sin necesidad de decodificadores pesados ni mecanismos de atencion complejos.
+SegFormer v1 aplicado a la deteccion de residuos en playas (beach litter) es un modelo de segmentacion semantica publicado en Hugging Face por el usuario muhabdu11ah bajo licencia Apache 2.0. Se trata de un checkpoint derivado de la familia SegFormer, una arquitectura de segmentacion semantica que combina un encoder jerarquico basado en transformers (tipo MiT, Mix Transformer) con un decoder ligero de tipo MLP, disenada originalmente por Xie et al. para obtener segmentacion densa eficiente sin necesidad de decodificadores pesados ni mecanismos de atencion complejos.
 
 El modelo esta especializado en una tarea de nicho: identificar y segmentar residuos depositados en entornos de playa a partir de imagenes. Este tipo de modelo tiene aplicaciones directas en monitorizacion medioambiental, limpieza costera automatizada y analisis de contaminacion marina mediante imagenes de drones o camaras fijas. La relevancia de este checkpoint es limitada por su escasa traccion (0 descargas, 0 likes en el momento de la consulta), pero resulta representativo de la tendencia de adaptar arquitecturas de segmentacion generica a dominios especificos mediante fine-tuning.
 
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. Al no especificarse la variante de SegFormer (B0, B1, B2, B3, B4 o B5), no es posible dar una cifra concreta. Como referencia orientativa de la familia, las variantes B0-B2 suelen requerir entre 1 y 4 GB de VRAM en FP16 para resoluciones de 512x512, mientras que B4-B5 pueden superar los 8-12 GB, pero estos valores no estan confirmados para este checkpoint.
 - GPU recomendadas: no disponible. Para un modelo de segmentacion de este tipo, una GPU consumer como RTX 3060, RTX 4070 o RTX 4090 seria suficiente en la mayoria de variantes, pero el autor no lo especifica.
 - Compatibilidad con GPU consumer: probablemente si para variantes ligeras (B0-B2), pero no confirmado.
-- Opciones de despliegue: no documentadas por el autor. La familia SegFormer es compatible con HuggingFace Transformers, y podria exportarse a ONNX o TensorRT para produccion, pero no hay guia oficial en el repositorio.
+- Opciones de despliegue: no documentadas por el autor. La familia SegFormer es compatible con Hugging Face Transformers, y podria exportarse a ONNX o TensorRT para produccion, pero no hay guia oficial en el repositorio.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Arquitectura | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| muhabdu11ah/segformerv1-beachlitter | SegFormer (variante no especificada) | no disponible | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| nvidia/segformer-b0-finetuned-ade-512-512 | SegFormer B0 | ~3,7 M | 512x512 | NVIDIA Source Code License | HuggingFace (ampliamente usado) |
-| nvidia/segformer-b5-finetuned-ade-512-512 | SegFormer B5 | ~84,7 M | 512x512 | NVIDIA Source Code License | HuggingFace (ampliamente usado) |
-| facebook/mask2former-swin-base-ade-semantic | Mask2Former + Swin-B | ~107 M | 512x512 | Attribution-NonCommercial 4.0 | HuggingFace |
+| muhabdu11ah/segformerv1-beachlitter | SegFormer (variante no especificada) | no disponible | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| nvidia/segformer-b0-finetuned-ade-512-512 | SegFormer B0 | ~3,7 M | 512x512 | NVIDIA Source Code License | Hugging Face (ampliamente usado) |
+| nvidia/segformer-b5-finetuned-ade-512-512 | SegFormer B5 | ~84,7 M | 512x512 | NVIDIA Source Code License | Hugging Face (ampliamente usado) |
+| facebook/mask2former-swin-base-ade-semantic | Mask2Former + Swin-B | ~107 M | 512x512 | Attribution-NonCommercial 4.0 | Hugging Face |
 
 La comparativa se limita a modelos de segmentacion semantica generalistas, ya que no se han identificado checkpoints publicos equivalentes especificamente entrenados para residuos en playas en la informacion disponible. Los datos de parametros de las alternativas corresponden a las variantes oficiales de SegFormer y Mask2Former, no a este checkpoint concreto, cuyo tamano no ha sido publicado.
 
@@ -82,7 +82,7 @@ La comparativa se limita a modelos de segmentacion semantica generalistas, ya qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/muhabdu11ah/segformerv1-beachlitter
+- Hugging Face: https://huggingface.co/muhabdu11ah/segformerv1-beachlitter
 - Paper original de SegFormer (Xie et al., 2021): https://arxiv.org/abs/2105.15203
 - Repositorio oficial de SegFormer en GitHub: https://github.com/NVlabs/SegFormer
-- Documentacion de SegFormer en HuggingFace Transformers: https://huggingface.co/docs/transformers/model_doc/segformer
+- Documentacion de SegFormer en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/segformer

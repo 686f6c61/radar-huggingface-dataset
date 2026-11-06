@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo. DeepSeek-Coder es un modelo d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/i-Coder/iCoder-27B-SFT
+- Modelo en Hugging Face: https://huggingface.co/i-Coder/iCoder-27B-SFT
 - Modelo final iCoder-27B: https://huggingface.co/i-Coder/iCoder-27B
 - Checkpoint OPSD: https://huggingface.co/i-Coder/iCoder-27B-OPSD
 - Modelo base Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B

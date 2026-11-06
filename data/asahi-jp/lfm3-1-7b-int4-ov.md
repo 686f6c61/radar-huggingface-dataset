@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo frente a otros modelos de tama
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/asahi-jp/LFM3-1.7B-int4-ov
+- Repositorio Hugging Face: https://huggingface.co/asahi-jp/LFM3-1.7B-int4-ov
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE
 - Optimum-Intel: https://github.com/huggingface/optimum-intel

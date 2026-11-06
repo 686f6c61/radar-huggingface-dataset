@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-VL2-Tiny | 3.37B | 1.0B | no disponible | DeepSeek Model License (comercial) | HuggingFace |
-| DeepSeek-VL2-Small | no disponible | 2.8B | no disponible | DeepSeek Model License (comercial) | HuggingFace |
-| DeepSeek-VL2 (full) | no disponible | 4.5B | no disponible | DeepSeek Model License (comercial) | HuggingFace |
+| DeepSeek-VL2-Tiny | 3.37B | 1.0B | no disponible | DeepSeek Model License (comercial) | Hugging Face |
+| DeepSeek-VL2-Small | no disponible | 2.8B | no disponible | DeepSeek Model License (comercial) | Hugging Face |
+| DeepSeek-VL2 (full) | no disponible | 4.5B | no disponible | DeepSeek Model License (comercial) | Hugging Face |
 
 Las tres variantes comparten arquitectura y difieren unicamente en el LLM base, segun la model card. No se dispone de datos de benchmarks ni de otros modelos comparables en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ Las tres variantes comparten arquitectura y difieren unicamente en el LLM base, 
 
 ## Enlaces
 
-- HuggingFace (esta copia): https://huggingface.co/vllm-project/deepseek-vl2-tiny
+- Hugging Face (esta copia): https://huggingface.co/vllm-project/deepseek-vl2-tiny
 - Checkpoint original: https://huggingface.co/Isotr0py/deepseek-vl2-tiny
 - Paper: https://arxiv.org/abs/2412.10302
 - Repositorio GitHub: https://github.com/deepseek-ai/DeepSeek-VL2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `JayCao99/pi0-xarm-hang-blue-mug-v2.0` es un checkpoint de política robótica entrenado mediante aprendizaje por imitación con la librería LeRobot de HuggingFace. Está diseñado para controlar un brazo robótico xArm en la tarea específica de colgar una taza azul en una percha o soporte. El repositorio contiene un único checkpoint de 30.000 pasos de entrenamiento con una pérdida final de 0,016, listo para su despliegue en el robot.
+El modelo `JayCao99/pi0-xarm-hang-blue-mug-v2.0` es un checkpoint de política robótica entrenado mediante aprendizaje por imitación con la librería LeRobot de Hugging Face. Está diseñado para controlar un brazo robótico xArm en la tarea específica de colgar una taza azul en una percha o soporte. El repositorio contiene un único checkpoint de 30.000 pasos de entrenamiento con una pérdida final de 0,016, listo para su despliegue en el robot.
 
 Este modelo pertenece a la familia Pi-0, una línea de políticas robóticas basadas en modelos de visión-lenguaje-acción (VLA), aunque la información proporcionada no detalla la arquitectura interna. Su relevancia radica en que ofrece un punto de partida práctico para investigadores y desarrolladores que trabajan con manipulación robótica en entornos controlados, permitiendo reproducir y adaptar la tarea de colgado de objetos con un brazo xArm.
 
@@ -23,7 +23,7 @@ El repositorio tiene un tamaño de 8,9 GB e incluye los artefactos necesarios pa
 
 ## Arquitectura y entrenamiento
 
-La información proporcionada no detalla la arquitectura interna del modelo. Se sabe que es un checkpoint de política robótica entrenado con LeRobot, una librería de HuggingFace especializada en aprendizaje por imitación para robótica. El entrenamiento se realizó mediante un proceso de imitación supervisada, alcanzando 30.000 pasos con una pérdida final de 0,016. No se especifican el número de demostraciones, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO.
+La información proporcionada no detalla la arquitectura interna del modelo. Se sabe que es un checkpoint de política robótica entrenado con LeRobot, una librería de Hugging Face especializada en aprendizaje por imitación para robótica. El entrenamiento se realizó mediante un proceso de imitación supervisada, alcanzando 30.000 pasos con una pérdida final de 0,016. No se especifican el número de demostraciones, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO.
 
 Dado que el modelo pertenece a la familia Pi-0, es probable que utilice una arquitectura de visión-lenguaje-acción (VLA) basada en un transformer multimodal, pero este dato no está confirmado en la información disponible. El checkpoint está preparado para despliegue directo, con los ficheros de configuración y procesamiento incluidos en el subdirectorio `checkpoint-030000`.
 
@@ -71,5 +71,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JayCao99/pi0-xarm-hang-blue-mug-v2.0
+- Repositorio Hugging Face: https://huggingface.co/JayCao99/pi0-xarm-hang-blue-mug-v2.0
 - Librería LeRobot: https://github.com/huggingface/lerobot (referencia general, no incluida en la información proporcionada pero relevante para el uso del modelo)

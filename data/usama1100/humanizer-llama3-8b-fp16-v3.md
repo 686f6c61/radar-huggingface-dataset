@@ -23,7 +23,7 @@ La relevancia de este modelo radica en que ofrece una opción de "humanización"
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre `unsloth/llama-3-8b-bnb-4bit`, una version cuantizada a 4 bits de Llama 3 8B optimizada con la libreria Unsloth. La arquitectura base es un transformer autoregresivo denso de 8 mil millones de parametros, con atencion por ventanas de 8K tokens (segun las especificaciones originales de Llama 3). El proceso de entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, lo que sugiere un ajuste fino supervisado (SFT) o con tecnicas de RLHF, aunque no se detalla el metodo exacto ni los datos utilizados. La model card no menciona el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron etapas de alineacion adicionales como DPO.
+El modelo se construye sobre `unsloth/llama-3-8b-bnb-4bit`, una version cuantizada a 4 bits de Llama 3 8B optimizada con la libreria Unsloth. La arquitectura base es un transformer autoregresivo denso de 8 mil millones de parametros, con atencion por ventanas de 8K tokens (segun las especificaciones originales de Llama 3). El proceso de entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, lo que sugiere un ajuste fino supervisado (SFT) o con tecnicas de RLHF, aunque no se detalla el metodo exacto ni los datos utilizados. La model card no menciona el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron etapas de alineacion adicionales como DPO.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ La comparacion directa no es posible sin benchmarks. El modelo se distingue de s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Usama1100/humanizer-llama3-8b-fp16-v3
+- Hugging Face: https://huggingface.co/Usama1100/humanizer-llama3-8b-fp16-v3
 - Referencia de la version v2 en FriendliAI: https://friendli.ai/models/Usama1100/humanizer-llama3-8b-fp16-v2
 - Modelo base (unsloth): https://huggingface.co/unsloth/llama-3-8b-bnb-4bit
 - Repositorio de Llama 3 (Meta): https://github.com/meta-llama/llama3

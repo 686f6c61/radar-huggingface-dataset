@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zmf2023/robotwin2 es un repositorio alojado en HuggingFace por el usuario zmf2023, con acceso restringido (gated): para descargarlo es necesario aceptar unas condiciones previas en la plataforma. El repositorio ocupa 256,1 GB y acumula 19 descargas y 0 "likes" desde su creacion el 28 de septiembre de 2026 y su ultima actualizacion el 7 de octubre de 2026.
+zmf2023/robotwin2 es un repositorio alojado en Hugging Face por el usuario zmf2023, con acceso restringido (gated): para descargarlo es necesario aceptar unas condiciones previas en la plataforma. El repositorio ocupa 256,1 GB y acumula 19 descargas y 0 "likes" desde su creacion el 28 de septiembre de 2026 y su ultima actualizacion el 7 de octubre de 2026.
 
 La informacion publica disponible es exclusivamente metadata de la plataforma. No se ha publicado model card, pipeline declarado, licencia, idiomas soportados ni descripcion del contenido, por lo que no es posible confirmar si se trata de un modelo de lenguaje, un modelo de robotica, un dataset, un conjunto de checkpoints o una mezcla de artefactos. El unico tag asociado es region:us, que es una etiqueta de region y no aporta informacion tecnica.
 
@@ -23,7 +23,7 @@ Por el nombre del repositorio ("robotwin2") podria guardar relacion con la linea
 | Tamano del repositorio | 256,1 GB |
 | Tipo de artefacto | no disponible (modelo, dataset o checkpoints sin confirmar) |
 | Pipeline declarado | no disponible |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Autor | zmf2023 |
 | Descargas | 19 |
 | Likes | 0 |
@@ -52,7 +52,7 @@ No es posible confirmar ninguna capacidad concreta. La lista siguiente refleja l
 
 No se puede determinar un caso de uso real sin conocer la naturaleza del artefacto. Los escenarios siguientes son condicionales y se plantean unicamente como hipotesis de trabajo derivadas del nombre del repositorio; no estan respaldados por documentacion y no deben usarse para tomar decisiones de adopcion.
 
-- Investigacion en manipulacion robotica bimanual (condicional): si el repositorio contuviese un modelo o dataset de robotica, su tamano de 256,1 GB permitiria albergar demostraciones, trayectorias o pesos de politica; su uso requeriria acceso aprobado previamente en HuggingFace.
+- Investigacion en manipulacion robotica bimanual (condicional): si el repositorio contuviese un modelo o dataset de robotica, su tamano de 256,1 GB permitiria albergar demostraciones, trayectorias o pesos de politica; su uso requeriria acceso aprobado previamente en Hugging Face.
 - Entrenamiento o ajuste fino de politicas de control (condicional): un volumen de datos de ese tamano podria servir para preentrenar o evaluar politicas de agarre y ensamblaje, siempre que la licencia lo permitiese, extremo que hoy se desconoce.
 - Evaluacion comparativa de sistemas roboticos (condicional): si se tratase de un benchmark, podria emplearse para medir tasas de exito en tareas de manipulacion, pero no hay ninguna metrica publicada.
 - Despliegue en produccion de un modelo de lenguaje (condicional): inviable de evaluar sin arquitectura, contexto ni licencia conocidos.
@@ -84,7 +84,7 @@ No disponible. No se ha identificado ningun modelo comparable, ya que se descono
 - Riesgo de alucinacion: no evaluable sin conocer si el artefacto es un modelo generativo.
 - Limitaciones de contexto o idioma: no disponible; no hay idiomas ni ventana de contexto declarados.
 - Restricciones de licencia: el repositorio no declara licencia, lo que en la practica impide asumir derechos de uso comercial o de redistribucion. Cualquier uso en produccion sin aclarar la licencia con el autor es un riesgo legal.
-- Acceso restringido: la descarga exige aceptar condiciones en HuggingFace, lo que anade una dependencia del autor y puede limitar la reproducibilidad de experimentos.
+- Acceso restringido: la descarga exige aceptar condiciones en Hugging Face, lo que anade una dependencia del autor y puede limitar la reproducibilidad de experimentos.
 - Procedencia y verificabilidad: no hay model card, paper, repositorio de codigo ni resultados publicados. El contenido del repositorio no ha podido validarse.
 - Trazabilidad temporal: las fechas de creacion y actualizacion son de 2026, posteriores a la fecha habitual de referencia; conviene verificar la coherencia de los metadatos antes de cualquier uso.
 - Riesgo de seguridad: descargar y ejecutar artefactos de procedencia desconocida, especialmente en formato de pesos serializados, conlleva riesgo de codigo malicioso. Se recomienda inspeccionar los ficheros y usar entornos aislados.
@@ -92,8 +92,8 @@ No disponible. No se ha identificado ningun modelo comparable, ya que se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zmf2023/robotwin2
-- Perfil del autor en HuggingFace: https://huggingface.co/zmf2023
+- Repositorio en Hugging Face: https://huggingface.co/zmf2023/robotwin2
+- Perfil del autor en Hugging Face: https://huggingface.co/zmf2023
 - Model card o documentacion adicional: no disponible
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

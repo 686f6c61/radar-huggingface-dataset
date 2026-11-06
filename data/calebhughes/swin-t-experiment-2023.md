@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swin T es un repositorio experimental publicado en HuggingFace por el usuario Calebhughes, orientado a tareas de clasificación de imágenes mediante una implementación propia de la arquitectura Swin Transformer en su variante "tiny" (swin_t). El modelo se distribuye como un checkpoint de inicialización, no como un modelo entrenado ni validado con benchmarks. Su relevancia es, por tanto, la de un punto de partida reproducible para experimentación, no la de un modelo listo para producción.
+Swin T es un repositorio experimental publicado en Hugging Face por el usuario Calebhughes, orientado a tareas de clasificación de imágenes mediante una implementación propia de la arquitectura Swin Transformer en su variante "tiny" (swin_t). El modelo se distribuye como un checkpoint de inicialización, no como un modelo entrenado ni validado con benchmarks. Su relevancia es, por tanto, la de un punto de partida reproducible para experimentación, no la de un modelo listo para producción.
 
 La model card describe una configuración de escala "huge", atención de ventana deslizante (sliding window), fusión de bajo rango (low rank), activación approximate GELU y normalización LayerNorm. La receta de entrenamiento por defecto emplea el optimizador RMSprop con un schedule polinómico. No se declaran resultados de rendimiento ni métricas de evaluación en el repositorio.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Calebhughes/swin-t-experiment-2023 | 24.832 (según safetensors; discrepante) | no disponible | apache-2.0 | HuggingFace, sin descargas |
-| microsoft/swin-tiny-patch4-window7-224 | ~28 M | imagen 224x224 | MIT (según repositorio original) | HuggingFace, ampliamente usado |
+| Calebhughes/swin-t-experiment-2023 | 24.832 (según safetensors; discrepante) | no disponible | apache-2.0 | Hugging Face, sin descargas |
+| microsoft/swin-tiny-patch4-window7-224 | ~28 M | imagen 224x224 | MIT (según repositorio original) | Hugging Face, ampliamente usado |
 | torchvision swin_t | ~28 M | imagen 224x224 | BSD-3-Clause | torchvision, pesos preentrenados en ImageNet |
 | timm swin_tiny_patch4_window7_224 | ~28 M | imagen 224x224 | Apache-2.0 | timm, pesos preentrenados |
 
@@ -81,9 +81,9 @@ La comparación se limita a la arquitectura, ya que el modelo de Calebhughes no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Calebhughes/swin-t-experiment-2023
+- Repositorio en Hugging Face: https://huggingface.co/Calebhughes/swin-t-experiment-2023
 - Paper original de Swin Transformer: https://arxiv.org/abs/2103.14030
 - Repositorio oficial de Swin Transformer (Microsoft): https://github.com/microsoft/Swin-Transformer
-- Pesos de referencia en HuggingFace (microsoft): https://huggingface.co/microsoft/swin-tiny-patch4-window7-224
+- Pesos de referencia en Hugging Face (microsoft): https://huggingface.co/microsoft/swin-tiny-patch4-window7-224
 - Implementación en torchvision: https://pytorch.org/vision/stable/models/swin_transformer.html
 - Implementación en timm: https://github.com/huggingface/pytorch-image-models

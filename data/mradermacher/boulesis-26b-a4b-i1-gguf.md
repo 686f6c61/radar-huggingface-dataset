@@ -93,7 +93,7 @@ No se conocen en la información proporcionada modelos comparables de la misma c
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones i1): https://huggingface.co/mradermacher/Boulesis-26B-A4B-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/Boulesis-26B-A4B-i1-GGUF
 - Modelo base: https://huggingface.co/SubMaroon/Boulesis-26B-A4B
 - Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Boulesis-26B-A4B-GGUF
 - Página de resumen y descargas del cuantizador: https://hf.tst.eu/model#Boulesis-26B-A4B-i1-GGUF

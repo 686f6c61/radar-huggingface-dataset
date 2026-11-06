@@ -107,7 +107,7 @@ No se dispone de datos de rendimiento de los modelos comparados en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYPR4AI/Gemma-4-12B-MXFP4A16-Text-Only
+- Modelo en Hugging Face: https://huggingface.co/HYPR4AI/Gemma-4-12B-MXFP4A16-Text-Only
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Dataset HotpotQA: https://huggingface.co/datasets/hotpotqa/hotpot_qa

@@ -27,7 +27,7 @@ Su interes es de nicho: sirve como ejemplo reproducible de un pipeline QLoRA lig
 
 La arquitectura es la de Llama 3.2 3B: un transformer decoder-only con atencion causal, normalizacion RMSNorm pre-norm y grouped-query attention, con un vocabulario de 128.256 tokens. La model card no menciona ninguna modificacion estructural, de modo que el ajuste se limita a los pesos. El entrenamiento se realizo sobre un modelo base ya cuantizado a 4 bits con bitsandbytes, lo que implica un procedimiento QLoRA: adaptadores de bajo rango entrenados sobre pesos congelados en 4 bits.
 
-No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de SFT, DPO o RLHF, ni los hiperparametros utilizados. La unica innovacion tecnica declarada es el uso del framework Unsloth, que reduce el coste de memoria y acelera el entrenamiento de LoRA. La fecha de creacion y actualizacion registrada en HuggingFace (2026-09-23) es atipica y no se ha verificado.
+No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de SFT, DPO o RLHF, ni los hiperparametros utilizados. La unica innovacion tecnica declarada es el uso del framework Unsloth, que reduce el coste de memoria y acelera el entrenamiento de LoRA. La fecha de creacion y actualizacion registrada en Hugging Face (2026-09-23) es atipica y no se ha verificado.
 
 ## Capacidades
 
@@ -73,11 +73,11 @@ Los datos de la columna "este modelo" proceden de la model card; los de los mode
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rpg-combat-llama-3.2-3b | ~3,2B (base) | 128k en el base, no confirmado | apache-2.0 declarada | HuggingFace, repo de 0,1 GB | Sin evaluaciones, sin dataset documentado |
-| Llama 3.2 3B Instruct | ~3,2B | 128k | Llama 3.2 Community License | HuggingFace, ampliamente desplegado | Modelo base oficial, con evaluaciones publicadas |
-| Qwen2.5-3B-Instruct | ~3,1B | 32k nativo (ampliable con RoPE scaling) | Apache 2.0 (la mayoria de versiones) | HuggingFace | Alternativa multilingue con buen rendimiento en codigo |
-| Gemma 2 2B Instruct | ~2,6B | 8k | Gemma Terms of Use | HuggingFace | Modelo algo menor, con buenos resultados relativos en su categoria |
-| Phi-3.5-mini-instruct | ~3,8B | 128k | MIT | HuggingFace | Enfocado a razonamiento, algo mayor en parametros |
+| rpg-combat-llama-3.2-3b | ~3,2B (base) | 128k en el base, no confirmado | apache-2.0 declarada | Hugging Face, repo de 0,1 GB | Sin evaluaciones, sin dataset documentado |
+| Llama 3.2 3B Instruct | ~3,2B | 128k | Llama 3.2 Community License | Hugging Face, ampliamente desplegado | Modelo base oficial, con evaluaciones publicadas |
+| Qwen2.5-3B-Instruct | ~3,1B | 32k nativo (ampliable con RoPE scaling) | Apache 2.0 (la mayoria de versiones) | Hugging Face | Alternativa multilingue con buen rendimiento en codigo |
+| Gemma 2 2B Instruct | ~2,6B | 8k | Gemma Terms of Use | Hugging Face | Modelo algo menor, con buenos resultados relativos en su categoria |
+| Phi-3.5-mini-instruct | ~3,8B | 128k | MIT | Hugging Face | Enfocado a razonamiento, algo mayor en parametros |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ Los datos de la columna "este modelo" proceden de la model card; los de los mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marceliooo/rpg-combat-llama-3.2-3b
+- Modelo en Hugging Face: https://huggingface.co/marceliooo/rpg-combat-llama-3.2-3b
 - Modelo base utilizado: https://huggingface.co/unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth (mencionado en la model card): https://github.com/unslothai/unsloth
 - Llama 3.2 3B Instruct oficial: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct

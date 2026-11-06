@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-operator-1-d6 es un modelo de lenguaje base de tipo transformer con recursión (looped transformer), publicado por el usuario CharlieChen en HuggingFace como artefacto de investigación asociado al trabajo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata del checkpoint final original empleado en la escalera de escalado (scaling ladder) sobre FineWeb, con la coordenada de profundidad d6. No es un modelo ajustado por instrucciones ni un checkpoint listo para producción: es el artefacto de entrenamiento tal cual, sin estado del optimizador.
+loop-operator-1-d6 es un modelo de lenguaje base de tipo transformer con recursión (looped transformer), publicado por el usuario CharlieChen en Hugging Face como artefacto de investigación asociado al trabajo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata del checkpoint final original empleado en la escalera de escalado (scaling ladder) sobre FineWeb, con la coordenada de profundidad d6. No es un modelo ajustado por instrucciones ni un checkpoint listo para producción: es el artefacto de entrenamiento tal cual, sin estado del optimizador.
 
 El modelo almacena 119.734.272 parámetros en FP32 (0,479 GB) y emplea una anchura de 768, 6 cabezas de atención y una longitud de contexto de 2.048 tokens. Su tokenizador es el de GPT-2 vía `tiktoken`, con un vocabulario de 50.257 tokens ampliado a 50.304 filas en el modelo. La particularidad técnica es el modo de profundidad `loop`, con 1 repetición del núcleo configurada y 1 repetición en la evaluación final; el propio autor advierte que la coordenada de profundidad es la coordenada de escalado de la escalera y no tiene por qué coincidir con el número de bloques Transformer ejecutados.
 
@@ -30,7 +30,7 @@ Su relevancia es estrictamente investigadora: sirve para reproducir experimentos
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer con recursión: el modo de profundidad declarado es `loop`, con 1 repetición del núcleo. El autor subraya explícitamente que la coordenada de profundidad (d6) es la coordenada de escalado de la escalera experimental y no necesariamente el número de bloques Transformer que se ejecutan en inferencia. El modelo se reconstruye mediante la clase personalizada `TransformerGPT` del código del paper, no mediante `AutoModel` de Transformers, por lo que las herramientas estándar de carga de HuggingFace no lo reconocen directamente.
+La arquitectura es un transformer con recursión: el modo de profundidad declarado es `loop`, con 1 repetición del núcleo. El autor subraya explícitamente que la coordenada de profundidad (d6) es la coordenada de escalado de la escalera experimental y no necesariamente el número de bloques Transformer que se ejecutan en inferencia. El modelo se reconstruye mediante la clase personalizada `TransformerGPT` del código del paper, no mediante `AutoModel` de Transformers, por lo que las herramientas estándar de carga de Hugging Face no lo reconocen directamente.
 
 El entrenamiento se realizó sobre FineWeb, un corpus de texto web en inglés, con el tokenizador GPT-2. La validación de preentrenamiento reporta una NLL de 3,507466 nats/token sobre el propio corpus de preentrenamiento; el autor aclara que esta métrica es distinta de la NLL de respuestas del benchmark CORE. No se documenta en la información disponible el número total de tokens vistos, la composición detallada del dataset, ni si hubo fases de RLHF o DPO (es un modelo base, sin ajuste por instrucciones). El paper indica que el entrenamiento y la evaluación se hicieron con GPUs H100, FlashAttention-3 y autocast en bfloat16, lo que da una pista sobre el régimen de cómputo, pero no sobre el presupuesto total de entrenamiento. El checkpoint no conserva estado del optimizador, por lo que no es reanudable.
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks de conocimiento general (MMLU, Huma
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|---|
-| loop-operator-1-d6 | 119,7M (FP32) | 2.048 | Transformer recursivo (`loop`), código propio | No disponible | HuggingFace, requiere código del paper | Solo NLL de validación: 3,507466 nats/token |
-| GPT-2 (124M) | 124M | 1.024 | Transformer denso, código abierto estándar | Modified MIT | HuggingFace, integrado en Transformers | Ampliamente documentado en la literatura |
-| Pythia-160M | 160M | 2.048 | Transformer denso, `AutoModel` | Apache 2.0 | HuggingFace, integrado en Transformers | Ampliamente documentado en la literatura |
-| SmolLM-135M | 135M | 2.048 | Transformer denso, `AutoModel` | Apache 2.0 | HuggingFace, integrado en Transformers | Ampliamente documentado en la literatura |
+| loop-operator-1-d6 | 119,7M (FP32) | 2.048 | Transformer recursivo (`loop`), código propio | No disponible | Hugging Face, requiere código del paper | Solo NLL de validación: 3,507466 nats/token |
+| GPT-2 (124M) | 124M | 1.024 | Transformer denso, código abierto estándar | Modified MIT | Hugging Face, integrado en Transformers | Ampliamente documentado en la literatura |
+| Pythia-160M | 160M | 2.048 | Transformer denso, `AutoModel` | Apache 2.0 | Hugging Face, integrado en Transformers | Ampliamente documentado en la literatura |
+| SmolLM-135M | 135M | 2.048 | Transformer denso, `AutoModel` | Apache 2.0 | Hugging Face, integrado en Transformers | Ampliamente documentado en la literatura |
 
 La comparación directa de rendimiento no es posible con los datos disponibles: el único número publicado de loop-operator-1-d6 es una NLL de validación sobre su propio corpus, que no es comparable con métricas de benchmarks de conocimiento de los otros modelos. La diferencia funcional relevante no es de calidad, sino de naturaleza: los tres modelos de referencia son checkpoints estándar y desplegables con herramientas convencionales, mientras que loop-operator-1-d6 es un artefacto de investigación con arquitectura recursiva y carga personalizada.
 
@@ -101,7 +101,7 @@ La comparación directa de rendimiento no es posible con los datos disponibles: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-operator-1-d6
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-operator-1-d6
 - Repositorio de código del paper: https://github.com/cue-engineering/loop
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Paper: "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents" — no disponible enlace directo en la información proporcionada

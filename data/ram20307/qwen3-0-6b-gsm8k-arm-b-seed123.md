@@ -8,7 +8,7 @@ Ram20307/qwen3-0.6b-gsm8k-arm-b-seed123 es un modelo pequeño de lenguaje (SLM) 
 
 El modelo está especializado en resolver problemas de matemáticas del conjunto de datos GSM8K, y el autor reporta una precisión del 49% (49/100) sobre un subconjunto de 100 ejemplos del test. Es un modelo experimental, con licencia Apache-2.0, pensado para investigación y comparación de formatos de razonamiento en modelos pequeños.
 
-No se documentan en la información disponible ni la arquitectura detallada ni la longitud de contexto, aunque el entrenamiento se realizó con una longitud máxima de secuencia de 768 tokens. El modelo se publica en formato safetensors y no tiene todavía descargas ni likes en HuggingFace.
+No se documentan en la información disponible ni la arquitectura detallada ni la longitud de contexto, aunque el entrenamiento se realizó con una longitud máxima de secuencia de 768 tokens. El modelo se publica en formato safetensors y no tiene todavía descargas ni likes en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -58,7 +58,7 @@ El único resultado de rendimiento documentado es el 49% en un subconjunto de 10
 - VRAM estimada para inferencia: no disponible.
 - GPU recomendadas: no disponible. Solo se documenta que el entrenamiento se realizó en una NVIDIA RTX A5000 Laptop GPU.
 - Compatibilidad con GPU de consumo: no documentado.
-- Opciones de despliegue: no se documentan integraciones específicas con vLLM, llama.cpp, Ollama o TGI. El modelo está disponible en formato safetensors, compatible con el ecosistema de HuggingFace, aunque se desconoce la configuración exacta de despliegue.
+- Opciones de despliegue: no se documentan integraciones específicas con vLLM, llama.cpp, Ollama o TGI. El modelo está disponible en formato safetensors, compatible con el ecosistema de Hugging Face, aunque se desconoce la configuración exacta de despliegue.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -73,9 +73,9 @@ No se dispone de información suficiente para comparar este modelo con alternati
 - Capacidades no verificadas: no se documentan soporte de tool calling, agentes, visión, audio ni capacidades multilingües. No se recomienda su uso en tales escenarios.
 - Riesgo de alucinación: como todo modelo de lenguaje pequeño, es susceptible de generar respuestas incorrectas, especialmente en problemas matemáticos que requieren precisión.
 - Sesgos no documentados: no se ha proporcionado información sobre la composición del dataset filtrado, por lo que pueden existir sesgos no caracterizados.
-- Naturaleza no productiva: el modelo tiene 0 descargas y 0 likes en HuggingFace y está orientado a investigación; no se recomienda para despliegue en producción.
+- Naturaleza no productiva: el modelo tiene 0 descargas y 0 likes en Hugging Face y está orientado a investigación; no se recomienda para despliegue en producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ram20307/qwen3-0.6b-gsm8k-arm-b-seed123
+- Hugging Face: https://huggingface.co/Ram20307/qwen3-0.6b-gsm8k-arm-b-seed123
 - Repositorio del proyecto: https://github.com/sarvadnya2030/Rsearch_Experiments_SLM

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RK3588-CNN-yolov7-tiny es un paquete de despliegue del detector de objetos YOLOv7-tiny convertido al formato RKNN para ejecutarse sobre la NPU del SoC Rockchip RK3588. Lo publica el usuario RKNNAI en HuggingFace y deriva del repositorio upstream airockchip/yolov7, integrado a su vez en el RKNN Model Zoo de Rockchip. No se trata de un modelo de lenguaje, sino de una red convolucional (CNN) de deteccion de objetos en una sola pasada, orientada a inferencia en el borde.
+RK3588-CNN-yolov7-tiny es un paquete de despliegue del detector de objetos YOLOv7-tiny convertido al formato RKNN para ejecutarse sobre la NPU del SoC Rockchip RK3588. Lo publica el usuario RKNNAI en Hugging Face y deriva del repositorio upstream airockchip/yolov7, integrado a su vez en el RKNN Model Zoo de Rockchip. No se trata de un modelo de lenguaje, sino de una red convolucional (CNN) de deteccion de objetos en una sola pasada, orientada a inferencia en el borde.
 
 El repositorio no distribuye pesos entrenados originales en PyTorch ni safetensors, sino una configuracion ya convertida y cuantizada a RKNN, lista para cargarse en el runtime v2.4.0 del RK3588. La configuracion disponible es `yolov7-tiny-640x640-w8a8-1`, con entrada de 640x640 pixeles, cuantizacion de 8 bits en pesos y activaciones (w8a8) y ejecucion sobre un unico nucleo NPU.
 
@@ -78,7 +78,7 @@ La informacion proporcionada no incluye datos de rendimiento que permitan una co
 
 | Modelo | Tipo | Contexto/entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RK3588-CNN-yolov7-tiny (este) | CNN, deteccion | 640x640 | RKNN (w8a8) | GPL-3.0 | HuggingFace, ModelScope |
+| RK3588-CNN-yolov7-tiny (este) | CNN, deteccion | 640x640 | RKNN (w8a8) | GPL-3.0 | Hugging Face, ModelScope |
 | yolov7-tiny (origen, airockchip/yolov7) | CNN, deteccion | no disponible | PyTorch | GPL-3.0 | GitHub |
 | Otras variantes de la familia YOLO | CNN, deteccion | no disponible | varios | varias | varios |
 
@@ -98,8 +98,8 @@ No se dispone de resultados de benchmarks del modelo publicado, por lo que no es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RKNNAI/RK3588-CNN-yolov7-tiny
-- Perfil del autor en HuggingFace: https://huggingface.co/RKNNAI
+- Hugging Face: https://huggingface.co/RKNNAI/RK3588-CNN-yolov7-tiny
+- Perfil del autor en Hugging Face: https://huggingface.co/RKNNAI
 - Modelos del autor: https://huggingface.co/RKNNAI/models
 - RKNN Model Zoo, ejemplo yolov7: https://github.com/airockchip/rknn_model_zoo/tree/main/examples/yolov7
 - RKNN Model Zoo, README del ejemplo: https://github.com/airockchip/rknn_model_zoo/blob/main/examples/yolov7/README.md

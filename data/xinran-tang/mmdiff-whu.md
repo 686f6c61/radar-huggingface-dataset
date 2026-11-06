@@ -76,8 +76,8 @@ No disponible. La informacion proporcionada no incluye datos de otros modelos co
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/XinRan-Tang/MMDiff-WHU
-- HuggingFace del modelo MM-Diff: https://huggingface.co/XinRan-Tang/MM-Diff
+- Hugging Face del modelo: https://huggingface.co/XinRan-Tang/MMDiff-WHU
+- Hugging Face del modelo MM-Diff: https://huggingface.co/XinRan-Tang/MM-Diff
 - Dataset MMDiff-WHU: https://huggingface.co/datasets/XinRan-Tang/MMDiff-WHU-dataset
 - Dataset Optical-SAR-Infrared: https://huggingface.co/datasets/XinRan-Tang/Optical-SAR-Infrared
 - Repositorio principal de MMDiff: https://github.com/XinR-Tang/MMDiff

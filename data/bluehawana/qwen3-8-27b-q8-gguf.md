@@ -88,7 +88,7 @@ La comparativa es orientativa y basada en datos públicos generales; no se han v
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/bluehawana/Qwen3.8-27B-Q8-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/bluehawana/Qwen3.8-27B-Q8-GGUF
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial QwenLM/Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
 - Repositorio AlibabaCloud-Official/Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

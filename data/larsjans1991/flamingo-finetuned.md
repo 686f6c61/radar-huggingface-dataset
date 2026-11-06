@@ -77,7 +77,7 @@ La comparativa es meramente ilustrativa: el modelo de LarsJans1991 no es compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LarsJans1991/flamingo-finetuned
+- Repositorio Hugging Face: https://huggingface.co/LarsJans1991/flamingo-finetuned
 - OpenFlamingo (framework de referencia): https://github.com/mlfoundations/open_flamingo
 - Paper original de Flamingo: https://arxiv.org/abs/2204.14198
 - OpenFlamingo-9B-vitl-mpt7b (modelo comparable real): https://huggingface.co/openflamingo/OpenFlamingo-9B-vitl-mpt7b

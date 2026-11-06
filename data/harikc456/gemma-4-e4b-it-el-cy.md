@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`harikc456/gemma-4-E4B-it-el-cy` es un ajuste fino (fine-tuning) publicado en HuggingFace por el usuario harikc456 sobre el modelo `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`, un checkpoint de la familia Gemma 4 en cuantizacion de 4 bits preparado por Unsloth. El autor declara que el entrenamiento se realizo con la libreria Unsloth y el stack de TRL, lo que situa el modelo en el flujo habitual de ajuste eficiente en memoria para modelos pequenos de la familia Gemma.
+`harikc456/gemma-4-E4B-it-el-cy` es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario harikc456 sobre el modelo `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`, un checkpoint de la familia Gemma 4 en cuantizacion de 4 bits preparado por Unsloth. El autor declara que el entrenamiento se realizo con la libreria Unsloth y el stack de TRL, lo que situa el modelo en el flujo habitual de ajuste eficiente en memoria para modelos pequenos de la familia Gemma.
 
 El modelo se distribuye bajo licencia Apache 2.0 y sus metadatos declaran unicamente el idioma ingles. No se especifica en la model card ni en los metadatos el numero de parametros, la longitud de contexto, la composicion del dataset de entrenamiento ni el procedimiento de alineacion empleado. El repositorio ocupa 0,1 GB, un tamano compatible con un adaptador LoRA o con pesos almacenados de forma parcial, mas que con un checkpoint completo de un modelo de miles de millones de parametros.
 
@@ -49,7 +49,7 @@ El unico dato tecnico aportado por el autor es que el entrenamiento se realizo "
 - Despliegue en endpoints de prueba con TGI: el tag `text-generation-inference` y `endpoints_compatible` permiten levantar un endpoint de generacion de texto para pruebas internas, siempre que se combine con el modelo base adecuado.
 - Generacion de texto en ingles en entornos de baja capacidad: un modelo de la clase `E2B` en 4 bits es candidato a ejecutarse en GPU de consumo, lo que habilita prototipos locales de generacion de texto.
 - Evaluacion comparativa de ajustes ligeros: sirve como punto de partida para medir deriva de comportamiento respecto al modelo base `gemma-4-e2b-it-unsloth-bnb-4bit` en tareas concretas de ingles.
-- Docencia y formacion: permite ilustrar el ciclo completo de publicacion de un modelo ajustado en HuggingFace, incluidos los metadatos, la licencia y la trazabilidad del modelo base.
+- Docencia y formacion: permite ilustrar el ciclo completo de publicacion de un modelo ajustado en Hugging Face, incluidos los metadatos, la licencia y la trazabilidad del modelo base.
 - Filtrado previo a produccion: util como caso de estudio de por que un repositorio sin benchmarks, sin dataset documentado y sin documentacion de evaluacion no deberia pasar a un entorno productivo sin una validacion propia.
 
 En todos los casos, el uso practico esta condicionado a completar la evaluacion por cuenta propia, ya que no existe ninguna metrica publicada.
@@ -74,8 +74,8 @@ La informacion disponible no permite una comparativa cuantitativa fiable. A cont
 
 | Modelo | Parametros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-E4B-it-el-cy (este modelo) | no disponible | no disponible | no publicados | Apache 2.0 | HuggingFace, 0 descargas |
-| unsloth/gemma-4-e2b-it-unsloth-bnb-4bit (modelo base) | no disponible | no disponible | no publicados en la informacion | no disponible | HuggingFace |
+| gemma-4-E4B-it-el-cy (este modelo) | no disponible | no disponible | no publicados | Apache 2.0 | Hugging Face, 0 descargas |
+| unsloth/gemma-4-e2b-it-unsloth-bnb-4bit (modelo base) | no disponible | no disponible | no publicados en la informacion | no disponible | Hugging Face |
 | Alternativas de la misma categoria (modelos pequenos de la familia Gemma, Qwen o Llama) | no disponible | no disponible | no comparable sin datos del modelo evaluado | no disponible | no disponible |
 
 No es posible establecer una comparacion de rendimiento con alternativas porque no existe ningun resultado de evaluacion publicado para este modelo ni para su modelo base en la informacion proporcionada.
@@ -96,7 +96,7 @@ No es posible establecer una comparacion de rendimiento con alternativas porque 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harikc456/gemma-4-E4B-it-el-cy
+- Modelo en Hugging Face: https://huggingface.co/harikc456/gemma-4-E4B-it-el-cy
 - Modelo base: https://huggingface.co/unsloth/gemma-4-e2b-it-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Libreria TRL: https://github.com/huggingface/trl

@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π₀.₅ (base) | ~3B | no disponible | VLA flow-based, generalizacion open-world | no disponible | HuggingFace (lerobot/pi05_base) |
-| π₀ (base) | ~3B | no disponible | VLA con tokenizador de acciones discreto | no disponible | HuggingFace (Physical-Intelligence/pi0) |
-| Este fine-tune (rshift8) | no disponible | no disponible | VLA con atencion a obstaculos (solo primeras y ultimas 3 obs) | no disponible | HuggingFace (rshift8/pi05_obs_only_firstandlast3_injection_allenv) |
+| π₀.₅ (base) | ~3B | no disponible | VLA flow-based, generalizacion open-world | no disponible | Hugging Face (lerobot/pi05_base) |
+| π₀ (base) | ~3B | no disponible | VLA con tokenizador de acciones discreto | no disponible | Hugging Face (Physical-Intelligence/pi0) |
+| Este fine-tune (rshift8) | no disponible | no disponible | VLA con atencion a obstaculos (solo primeras y ultimas 3 obs) | no disponible | Hugging Face (rshift8/pi05_obs_only_firstandlast3_injection_allenv) |
 
 La comparativa se limita a los modelos base de la familia π₀, ya que no se dispone de informacion sobre otros VLA comparables en el contexto de atencion a obstaculos. Este fine-tune se distingue por su estrategia de inyeccion de observaciones, pero carece de documentacion sobre rendimiento.
 
@@ -78,9 +78,9 @@ La comparativa se limita a los modelos base de la familia π₀, ya que no se di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rshift8/pi05_obs_only_firstandlast3_injection_allenv
+- Repositorio Hugging Face: https://huggingface.co/rshift8/pi05_obs_only_firstandlast3_injection_allenv
 - Repositorio OpenPI (framework base): https://github.com/Physical-Intelligence/openpi
 - Documentacion de π₀.₅ en LeRobot: https://huggingface.co/docs/lerobot/pi05
-- Modelo base π₀.₅ en HuggingFace: https://huggingface.co/lerobot/pi05_base
+- Modelo base π₀.₅ en Hugging Face: https://huggingface.co/lerobot/pi05_base
 - Paper de π₀.₅ (PDF): https://www.pi.website/download/pi05.pdf
 - Repositorio de referencia para configuracion (mzxuan/robopro_jax_30000): https://huggingface.co/mzxuan/robopro_jax_30000

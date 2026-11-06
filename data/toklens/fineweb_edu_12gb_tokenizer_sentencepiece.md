@@ -27,7 +27,7 @@ El tokenizer emplea el algoritmo Byte-Level BPE, que opera sobre bytes en lugar 
 
 - Tokenización byte-level: puede codificar cualquier texto, incluyendo caracteres fuera del rango Unicode estándar, sin tokens desconocidos.
 - Manejo de números aprendido: los números se tokenizan de forma consistente, lo que es útil para textos técnicos y científicos.
-- Compatibilidad con HuggingFace Transformers: se puede cargar mediante `AutoTokenizer`, integrándose fácilmente en pipelines existentes.
+- Compatibilidad con Hugging Face Transformers: se puede cargar mediante `AutoTokenizer`, integrándose fácilmente en pipelines existentes.
 - Entrenado en texto educativo: optimizado para dominios académicos, científicos y técnicos en inglés.
 - Sin capacidades generativas: al ser solo un tokenizer, no realiza generación de texto, razonamiento, ni soporta tool calling o agentes.
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. Al t
 - No requiere GPU ni recursos de cómputo específicos para su uso; es un archivo de configuración y vocabulario que se carga en memoria.
 - El entrenamiento del tokenizer se realizó con FlexiTok, que es una herramienta ligera que puede ejecutarse en CPU.
 - Para su uso en pipelines de entrenamiento de LLMs, el coste de hardware depende del modelo posterior, no del tokenizer en sí.
-- Opciones de despliegue: se integra directamente con HuggingFace Transformers, por lo que puede usarse en cualquier entorno que soporte esta librería.
+- Opciones de despliegue: se integra directamente con Hugging Face Transformers, por lo que puede usarse en cualquier entorno que soporte esta librería.
 
 ## Comparativa con modelos similares
 
@@ -72,7 +72,7 @@ El tokenizer de toklens se diferencia de GPT-2 por su menor vocabulario (32K vs 
 ## Enlaces
 
 - Repositorio del tokenizer: https://huggingface.co/toklens/fineweb_edu_12gb_tokenizer_sentencepiece
-- Dataset FineWeb-Edu (HuggingFace): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
+- Dataset FineWeb-Edu (Hugging Face): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Documentación de FineWeb (blogpost): https://huggingface.co/spaces/HuggingFaceFW/blogpost-fineweb-v1
 - Paper de FineWeb (arXiv): https://arxiv.org/html/2406.17557v1
 - Código de descarga de FineWeb (GitHub): https://github.com/karpathy/build-nanogpt/blob/master/fineweb.py

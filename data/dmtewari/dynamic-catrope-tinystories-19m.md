@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dynamic-CatRoPE-TinyStories-19M es un modelo de lenguaje de pequeno tamano (SLM) desarrollado por el usuario dmtewari, publicado en HuggingFace bajo licencia MIT. Se trata de un transformer decoder de 6 capas con una dimension de embedding de 256 y 8 cabezas de atencion, que suma aproximadamente 19,18 millones de parametros. El modelo ha sido entrenado sobre el dataset TinyStories durante 5.000 pasos y esta orientado exclusivamente al idioma ingles.
+Dynamic-CatRoPE-TinyStories-19M es un modelo de lenguaje de pequeno tamano (SLM) desarrollado por el usuario dmtewari, publicado en Hugging Face bajo licencia MIT. Se trata de un transformer decoder de 6 capas con una dimension de embedding de 256 y 8 cabezas de atencion, que suma aproximadamente 19,18 millones de parametros. El modelo ha sido entrenado sobre el dataset TinyStories durante 5.000 pasos y esta orientado exclusivamente al idioma ingles.
 
 La relevancia del modelo no reside en su capacidad linguistica, sino en la innovacion tecnica que implementa: Dynamic-CatRoPE (Dynamic Categorical Rotary Position Embedding), una tecnica de embedding posicional geometrica y libre de parametros que escala las frecuencias del rotary position embedding en funcion de la profundidad de la capa. De este modo, cada capa opera como una categoria semantica distinta sin anadir parametros entrenables adicionales, lo que lo convierte en un banco de pruebas para investigacion en embeddings posicionales y aprendizaje geometrico profundo.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dynamic-CatRoPE-TinyStories-19M | ~19,18M | No disponible | TinyStories, 5.000 pasos | MIT | HuggingFace (0 descargas) |
-| TinyStories-1M (variantes de la familia TinyStories) | ~1M | No disponible | TinyStories | Variable segun variante | HuggingFace |
-| TinyStories-33M (variantes de la familia TinyStories) | ~33M | No disponible | TinyStories | Variable segun variante | HuggingFace |
+| Dynamic-CatRoPE-TinyStories-19M | ~19,18M | No disponible | TinyStories, 5.000 pasos | MIT | Hugging Face (0 descargas) |
+| TinyStories-1M (variantes de la familia TinyStories) | ~1M | No disponible | TinyStories | Variable segun variante | Hugging Face |
+| TinyStories-33M (variantes de la familia TinyStories) | ~33M | No disponible | TinyStories | Variable segun variante | Hugging Face |
 
 No se dispone de datos de rendimiento comparables publicados para estos modelos en la informacion proporcionada; la comparacion se limita a parametros, licencia y disponibilidad. No se identifican alternativas con la misma innovacion de embedding posicional categorico dinamico.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparables publicados para estos modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dmtewari/Dynamic-CatRoPE-TinyStories-19M
+- Modelo en Hugging Face: https://huggingface.co/dmtewari/Dynamic-CatRoPE-TinyStories-19M
 - Dataset TinyStories: no se proporciona enlace directo en la informacion disponible
 - Paper o blog de Dynamic-CatRoPE: no disponible
 - Repositorio de codigo: no disponible

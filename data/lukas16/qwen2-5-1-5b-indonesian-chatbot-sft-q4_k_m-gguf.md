@@ -96,5 +96,5 @@ Frente a estas alternativas, la única ventaja diferencial del modelo analizado 
 - Modelo base (safetensors): https://huggingface.co/Lukas16/qwen2-5-1-5b-indonesian-chatbot-sft
 - Espacio de conversión GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
-- Familia Qwen2.5 en HuggingFace (referencia de la arquitectura base): https://huggingface.co/Qwen
+- Familia Qwen2.5 en Hugging Face (referencia de la arquitectura base): https://huggingface.co/Qwen
 - Repositorio de Unsloth (tag del modelo): https://github.com/unslothai/unsloth

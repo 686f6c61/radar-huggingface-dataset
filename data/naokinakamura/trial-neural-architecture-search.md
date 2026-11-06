@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`naokinakamura/trial-neural-architecture-search` es un repositorio publicado en HuggingFace cuyo contenido real no es un modelo entrenado, sino un cuaderno de notas exploratorias sobre Neural Architecture Search (NAS). La model card lo describe explicitamente como un artefacto de investigacion en fase de planificacion: no declara mejoras de benchmark, ni ablaciones completadas, ni codigo liberado, ni un checkpoint entrenado. El unico fichero con pesos es un `safetensors` que, segun los metadatos, contiene 16.576 parametros totales, una cifra tres ordenes de magnitud por debajo de cualquier modelo de lenguaje util.
+`naokinakamura/trial-neural-architecture-search` es un repositorio publicado en Hugging Face cuyo contenido real no es un modelo entrenado, sino un cuaderno de notas exploratorias sobre Neural Architecture Search (NAS). La model card lo describe explicitamente como un artefacto de investigacion en fase de planificacion: no declara mejoras de benchmark, ni ablaciones completadas, ni codigo liberado, ni un checkpoint entrenado. El unico fichero con pesos es un `safetensors` que, segun los metadatos, contiene 16.576 parametros totales, una cifra tres ordenes de magnitud por debajo de cualquier modelo de lenguaje util.
 
 El repositorio esta etiquetado con `transformer`, `research-notes` y `neural-architecture-search`, y se distribuye bajo licencia MIT. El tamano del repo es de 0,0 GB, coherente con un checkpoint de ~65 KB en precision completa. No se declara pipeline de inferencia, idiomas soportados, longitud de contexto ni tipo de cuantizacion.
 
-La relevancia de esta ficha es fundamentalmente metodologica: sirve como ejemplo de artefacto de investigacion que declara su alcance de forma explicita y separa hipotesis de resultados, algo poco habitual en el ecosistema de HuggingFace. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no debe confundirse con un modelo desplegable.
+La relevancia de esta ficha es fundamentalmente metodologica: sirve como ejemplo de artefacto de investigacion que declara su alcance de forma explicita y separa hipotesis de resultados, algo poco habitual en el ecosistema de Hugging Face. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no debe confundirse con un modelo desplegable.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es comparable con modelos de lenguaje de proposito general ni con implementaciones de Neural Architecture Search, porque no es un modelo entrenado ni un framework de busqueda: es un cuaderno de notas con un fichero de pesos de 16.576 parametros. Establecer una comparacion con alternativas de la misma categoria exigiria identificar otros cuadernos de investigacion sobre NAS publicados como repositorios de HuggingFace, y no se dispone de esa informacion. Cualquier tabla de parametros, contexto, rendimiento o licencia frente a terceros seria especulativa.
+No disponible. Este repositorio no es comparable con modelos de lenguaje de proposito general ni con implementaciones de Neural Architecture Search, porque no es un modelo entrenado ni un framework de busqueda: es un cuaderno de notas con un fichero de pesos de 16.576 parametros. Establecer una comparacion con alternativas de la misma categoria exigiria identificar otros cuadernos de investigacion sobre NAS publicados como repositorios de Hugging Face, y no se dispone de esa informacion. Cualquier tabla de parametros, contexto, rendimiento o licencia frente a terceros seria especulativa.
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje de prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/naokinakamura/trial-neural-architecture-search
+- Repositorio en Hugging Face: https://huggingface.co/naokinakamura/trial-neural-architecture-search
 - Fichero principal citado en la model card: `paper_notes.md` (disponible en el propio repositorio)
 - Documentacion citada en la model card: `README.md` (disponible en el propio repositorio)
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada

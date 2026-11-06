@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfm_filtered_insert_xxf_character-3k_4k_5k_weightedavg_merge` es un modelo de lenguaje publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una fusión (merge) de puntos de control intermedios generada con la herramienta mergekit. En concreto, combina los checkpoints correspondientes a los pasos globales 3000, 4000 y 5000 de un mismo entrenamiento, aplicando una media lineal ponderada (pesos 1, 2 y 3 respectivamente) con normalización de pesos y salida en bfloat16.
+`sfm_filtered_insert_xxf_character-3k_4k_5k_weightedavg_merge` es un modelo de lenguaje publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una fusión (merge) de puntos de control intermedios generada con la herramienta mergekit. En concreto, combina los checkpoints correspondientes a los pasos globales 3000, 4000 y 5000 de un mismo entrenamiento, aplicando una media lineal ponderada (pesos 1, 2 y 3 respectivamente) con normalización de pesos y salida en bfloat16.
 
 El modelo tiene 6.856.253.440 parámetros almacenados en safetensors (13,7 GB de repositorio) y la etiqueta `gpt_neox`, lo que lo sitúa en la familia de transformers decoder-only derivada de GPT-NeoX. Es, por tanto, un modelo de ~6,9B de parámetros orientado a generación de texto, con la etiqueta `conversational` como indicio de uso previsto, aunque la model card no aporta ningún detalle sobre datos de entrenamiento, idiomas, contexto o evaluación.
 
@@ -74,7 +74,7 @@ La comparacion se limita a parametros, licencia y disponibilidad, ya que no hay 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `sfm_filtered_insert_xxf_character-3k_4k_5k_weightedavg_merge` | 6,86B | No disponible | No disponible | HuggingFace, 0 descargas | Fusion de checkpoints, sin evaluacion publicada |
+| `sfm_filtered_insert_xxf_character-3k_4k_5k_weightedavg_merge` | 6,86B | No disponible | No disponible | Hugging Face, 0 descargas | Fusion de checkpoints, sin evaluacion publicada |
 | GPT-J-6B | ~6,05B | 2048 tokens | Apache 2.0 | Ampliamente disponible | Referencia clasica de la familia GPT-NeoX; ecosistema maduro y cuantizaciones listas |
 | Pythia-6.9B | ~6,86B | 2048 tokens | Apache 2.0 | Ampliamente disponible | Tamano practicamente identico; suite de checkpoints intermedios publicada, lo que facilita la reproducibilidad |
 | GPT-NeoX-20B | ~20B | 2048 tokens | Apache 2.0 | Ampliamente disponible | Misma familia arquitectonica, pero tres veces mas grande y con licencia clara |
@@ -96,7 +96,7 @@ El rasgo diferencial del modelo analizado no es el rendimiento ni el tamano, sin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-3k_4k_5k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-3k_4k_5k_weightedavg_merge
 - mergekit (herramienta de fusion utilizada): https://github.com/cg123/mergekit
 - Articulo del metodo de media lineal de pesos: https://arxiv.org/abs/2203.05482
 - Documentacion de GPT-NeoX en transformers: https://huggingface.co/docs/transformers/model_doc/gpt_neox

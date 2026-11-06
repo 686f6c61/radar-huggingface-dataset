@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su adaptación de un encoder multilingüe
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura RoBERTa, un encoder transformer bidireccional con atención de múltiples cabezas. Al ser un ajuste fino de `vinai/phobert-base`, hereda la configuración de capas y dimensiones de dicho modelo, que fue preentrenado con un corpus masivo en vietnamita. El proceso de fine-tuning se realizó con el framework Transformers de HuggingFace, utilizando un optimizador AdamW con tasa de aprendizaje de 2e-5, tamaño de lote de 16, y un scheduler lineal durante 3 épocas. No se especifica el dataset de entrenamiento (aparece como "None" en la model card), ni se menciona el uso de técnicas como RLHF o DPO. La única innovación destacable es la adaptación del modelo base a una tarea de clasificación, aunque los detalles de la tarea (número de clases, etiquetas) no están documentados.
+El modelo se basa en la arquitectura RoBERTa, un encoder transformer bidireccional con atención de múltiples cabezas. Al ser un ajuste fino de `vinai/phobert-base`, hereda la configuración de capas y dimensiones de dicho modelo, que fue preentrenado con un corpus masivo en vietnamita. El proceso de fine-tuning se realizó con el framework Transformers de Hugging Face, utilizando un optimizador AdamW con tasa de aprendizaje de 2e-5, tamaño de lote de 16, y un scheduler lineal durante 3 épocas. No se especifica el dataset de entrenamiento (aparece como "None" en la model card), ni se menciona el uso de técnicas como RLHF o DPO. La única innovación destacable es la adaptación del modelo base a una tarea de clasificación, aunque los detalles de la tarea (número de clases, etiquetas) no están documentados.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ Estos valores indican una precisión aceptable pero un F1 bajo, lo que sugiere u
 - VRAM estimada para inferencia: con 135M de parámetros, el modelo ocupa aproximadamente 540 MB en FP32 y 270 MB en FP16. Para inferencia en lote, se recomienda al menos 1 GB de VRAM.
 - GPU recomendadas: cualquier GPU con 2 GB o más de VRAM, como NVIDIA GTX 1650, RTX 2060, o superiores. También puede ejecutarse en CPU con tiempos de inferencia aceptables para tareas por lotes.
 - Compatibilidad con GPU consumer: sí, cabe en la mayoría de GPUs de consumo actuales.
-- Opciones de despliegue: puede servirse mediante HuggingFace Transformers, ONNX Runtime, o exportarse a formatos optimizados como TorchScript. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, al ser un modelo encoder y no generativo.
+- Opciones de despliegue: puede servirse mediante Hugging Face Transformers, ONNX Runtime, o exportarse a formatos optimizados como TorchScript. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, al ser un modelo encoder y no generativo.
 - Latencia y throughput: no se han publicado datos oficiales. En una GPU moderna (p. ej., RTX 3090), se espera una latencia de pocos milisegundos por muestra, con throughput de cientos de muestras por segundo.
 
 ## Comparativa con modelos similares
@@ -77,6 +77,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BonTori/phobert_llm_results
+- Modelo en Hugging Face: https://huggingface.co/BonTori/phobert_llm_results
 - Modelo base: https://huggingface.co/vinai/phobert-base
 - Paper de PhoBERT (referencia del modelo base): https://aclanthology.org/2020.findings-emnlp.92/

@@ -78,7 +78,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 | Alternativa | Tipo | Beneficio mensual | Satisfaccion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Regla (rule boss) | Politica heuristica del simulador | 324万 won | 79% | no disponible | integrada en el simulador |
-| connectailab-rl-kodari-v1-teacher | Politica PPO entrenada | 1111万 won | 95% | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
+| connectailab-rl-kodari-v1-teacher | Politica PPO entrenada | 1111万 won | 95% | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
 
 Otros modelos comparables: no disponible.
 
@@ -92,11 +92,11 @@ Otros modelos comparables: no disponible.
 - Licencia: Apache 2.0, lo que permite uso comercial según los términos de dicha licencia. No se indican restricciones adicionales, pero tampoco se especifican condiciones de uso por parte del autor.
 - Adopción: el modelo registra 0 descargas y 0 likes en el momento de la consulta, por lo que no cuenta con validación independiente de la comunidad.
 - Trazabilidad de datos: no se detallan el número de tokens, la composición del dataset, el número de parámetros ni la arquitectura de red, lo que dificulta reproducir el entrenamiento.
-- Fecha de creación registrada en HuggingFace: 2026-10-14.
+- Fecha de creación registrada en Hugging Face: 2026-10-14.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kymbms/connectailab-rl-kodari-v1-teacher
+- Modelo en Hugging Face: https://huggingface.co/kymbms/connectailab-rl-kodari-v1-teacher
 - Repositorio GitHub de CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab de entrenamiento RL: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube de CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

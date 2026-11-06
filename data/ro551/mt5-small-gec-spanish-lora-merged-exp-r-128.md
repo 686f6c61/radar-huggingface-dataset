@@ -71,9 +71,9 @@ El `model-index` del repositorio no contiene resultados (`results: []`). No se h
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Ro551/mt5-small-GEC-spanish-LORA-merged-exp-r-128` | ~300 M (base) | No disponible (base: 512) | GEC español (presunto) | Apache 2.0 | HuggingFace, 13 descargas |
-| `google/mt5-small` | ~300 M | 512 | Modelo base multilingüe seq2seq | Apache 2.0 | HuggingFace, ampliamente usado |
-| `google/mt5-base` | ~580 M | 512 | Modelo base multilingüe seq2seq | Apache 2.0 | HuggingFace |
+| `Ro551/mt5-small-GEC-spanish-LORA-merged-exp-r-128` | ~300 M (base) | No disponible (base: 512) | GEC español (presunto) | Apache 2.0 | Hugging Face, 13 descargas |
+| `google/mt5-small` | ~300 M | 512 | Modelo base multilingüe seq2seq | Apache 2.0 | Hugging Face, ampliamente usado |
+| `google/mt5-base` | ~580 M | 512 | Modelo base multilingüe seq2seq | Apache 2.0 | Hugging Face |
 | Correctores GEC en español basados en mT5/BERT | Variable | Variable | GEC | Variable | No disponible en la información proporcionada |
 
 No se dispone de datos de rendimiento comparables para este modelo frente a alternativas específicas de GEC en español, ya que no hay benchmarks publicados en la información disponible.
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparables para este modelo frente a alte
 
 ## Enlaces
 
-- [HuggingFace: Ro551/mt5-small-GEC-spanish-LORA-merged-exp-r-128](https://huggingface.co/Ro551/mt5-small-GEC-spanish-LORA-merged-exp-r-128)
+- [Hugging Face: Ro551/mt5-small-GEC-spanish-LORA-merged-exp-r-128](https://huggingface.co/Ro551/mt5-small-GEC-spanish-LORA-merged-exp-r-128)
 - [Modelo base: google/mt5-small](https://huggingface.co/google/mt5-small)
 - [Repositorio PEFT](https://github.com/huggingface/peft)
 - [Documentación de transformers](https://huggingface.co/docs/transformers)

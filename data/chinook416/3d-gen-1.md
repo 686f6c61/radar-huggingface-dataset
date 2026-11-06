@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MeshGPT-alpha-preview es un modelo de generación de mallas 3D a partir de texto (text-to-3D) publicado en el repositorio de HuggingFace Chinook416/3d-gen-1 bajo licencia Apache 2.0. Se trata de un sistema de dos componentes: un autoencoder o tokenizador 3D de aproximadamente 50 millones de parámetros que convierte mallas poligonales en secuencias de tokens discretos, y un transformer autorregresivo de 184 millones de parámetros, basado en la arquitectura GPT2-small, que genera esas secuencias condicionado por un embedding de texto. El resultado final es una malla 3D exportable en formato OBJ.
+MeshGPT-alpha-preview es un modelo de generación de mallas 3D a partir de texto (text-to-3D) publicado en el repositorio de Hugging Face Chinook416/3d-gen-1 bajo licencia Apache 2.0. Se trata de un sistema de dos componentes: un autoencoder o tokenizador 3D de aproximadamente 50 millones de parámetros que convierte mallas poligonales en secuencias de tokens discretos, y un transformer autorregresivo de 184 millones de parámetros, basado en la arquitectura GPT2-small, que genera esas secuencias condicionado por un embedding de texto. El resultado final es una malla 3D exportable en formato OBJ.
 
-El modelo es una implementación práctica y entrenada de la idea propuesta en el artículo MeshGPT (arXiv:2311.15475), cuyos autores originales no liberaron código ni pesos. La implementación de referencia procede del repositorio de Phil Wang (lucidrains/meshgpt-pytorch) y el entrenamiento y puesta en producción corresponde a MarcusLoppe, con el demo alojado en un Space de HuggingFace. La model card indica explícitamente que el modelo fue entrenado sin patrocinadores ni alquiler de hardware, únicamente con la capa gratuita de GPU de Kaggle, lo que limita severamente su alcance.
+El modelo es una implementación práctica y entrenada de la idea propuesta en el artículo MeshGPT (arXiv:2311.15475), cuyos autores originales no liberaron código ni pesos. La implementación de referencia procede del repositorio de Phil Wang (lucidrains/meshgpt-pytorch) y el entrenamiento y puesta en producción corresponde a MarcusLoppe, con el demo alojado en un Space de Hugging Face. La model card indica explícitamente que el modelo fue entrenado sin patrocinadores ni alquiler de hardware, únicamente con la capa gratuita de GPU de Kaggle, lo que limita severamente su alcance.
 
 Por su tamaño (234 millones de parámetros en total) y su codebook de solo 2048 entradas, el modelo está pensado como prueba de concepto más que como herramienta de producción. Maneja objetos individuales sencillos (sillas, mesas, camas) pero no geometrías complejas, y presenta además un problema conocido de orientación de caras en los triángulos generados. Es relevante ahora como primera publicación de un tokenizador 3D abierto y como base reproducible para experimentar con generación de geometría. El repositorio no registra descargas ni interacciones en el momento de la consulta.
 
@@ -67,17 +67,17 @@ No hay datos de calidad objetiva (fidelidad geométrica, coherencia con el promp
 
 ## Requisitos de hardware
 
-- El modelo completo suma 234 millones de parámetros, por lo que los pesos en precisión completa ocuparían alrededor de 1 GB y en media precisión unos 470 MB; el repositorio de HuggingFace ocupa 1,2 GB. Estas cifras son estimaciones a partir del recuento de parámetros, no datos publicados.
+- El modelo completo suma 234 millones de parámetros, por lo que los pesos en precisión completa ocuparían alrededor de 1 GB y en media precisión unos 470 MB; el repositorio de Hugging Face ocupa 1,2 GB. Estas cifras son estimaciones a partir del recuento de parámetros, no datos publicados.
 - GPU recomendadas según la model card: RTX 3060 (40 triángulos/s) y RTX 4090 (110 triángulos/s). No se mencionan A100 ni H100.
 - Cabe holgadamente en cualquier GPU de consumo con al menos 4 GB de VRAM, e incluso puede ejecutarse en CPU a 10 triángulos/s.
-- Opciones de despliegue: la vía documentada es la librería `meshgpt-pytorch` instalada desde el repositorio de GitHub (`pip install git+https://github.com/MarcusLoppe/meshgpt-pytorch.git`) y cargada con `MeshTransformer.from_pretrained`. Existe además un demo en Gradio alojado en HuggingFace Spaces. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Opciones de despliegue: la vía documentada es la librería `meshgpt-pytorch` instalada desde el repositorio de GitHub (`pip install git+https://github.com/MarcusLoppe/meshgpt-pytorch.git`) y cargada con `MeshTransformer.from_pretrained`. Existe además un demo en Gradio alojado en Hugging Face Spaces. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
 - No se publican datos de latencia por generación completa ni de throughput en lote.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MeshGPT-alpha-preview (este modelo) | 234 M (50 M + 184 M) | No disponible | 10-110 triángulos/s según plataforma | Apache 2.0 | Pesos publicados en HuggingFace |
+| MeshGPT-alpha-preview (este modelo) | 234 M (50 M + 184 M) | No disponible | 10-110 triángulos/s según plataforma | Apache 2.0 | Pesos publicados en Hugging Face |
 | MeshGPT (artículo original, arXiv:2311.15475) | No disponible | No disponible | No disponible | No disponible | Los autores no liberaron código ni pesos |
 | Otras alternativas text-to-3D | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 
@@ -99,8 +99,8 @@ La información suministrada solo permite comparar contra el artículo original 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Chinook416/3d-gen-1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/MarcusLoren/MeshGPT
+- Repositorio en Hugging Face: https://huggingface.co/Chinook416/3d-gen-1
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/MarcusLoren/MeshGPT
 - Articulo original de MeshGPT: https://arxiv.org/abs/2311.15475
 - Repositorio de referencia de Phil Wang: https://github.com/lucidrains/meshgpt-pytorch
 - Repositorio de entrenamiento y notebook de MarcusLoppe: https://github.com/MarcusLoppe/meshgpt-pytorch

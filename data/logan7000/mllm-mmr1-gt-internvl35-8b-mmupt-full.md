@@ -79,7 +79,7 @@ La comparativa se basa en la información disponible: ambos modelos de logan7000
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logan7000/mllm-mmr1-gt-internvl35-8b-mmupt-full
+- Repositorio Hugging Face: https://huggingface.co/logan7000/mllm-mmr1-gt-internvl35-8b-mmupt-full
 - Repositorio del modelo base InternVL: https://github.com/OpenGVLab/InternVL
 - Modelo similar con Gemma3-12B: https://huggingface.co/logan7000/mllm-mmr1-gt-gemma3-12b-mmupt-full
 - Variante del mismo modelo por otro autor: https://huggingface.co/q1716523669/mllm-mmr1-gt-internvl35-8b

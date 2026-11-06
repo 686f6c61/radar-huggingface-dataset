@@ -95,7 +95,7 @@ Las tres variantes comparten el mismo ajuste fino y, por tanto, las mismas capac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ddalcu/humanizer-12b-8bit
+- Modelo en Hugging Face: https://huggingface.co/ddalcu/humanizer-12b-8bit
 - Modelo original: https://huggingface.co/jialinyyzz/humanizer
 - Modelo base: https://huggingface.co/google/gemma-4-12B
 - Conversión comunitaria MLX de 6 bits: https://huggingface.co/guygrigsby/humanizer-12b-mlx-6bit

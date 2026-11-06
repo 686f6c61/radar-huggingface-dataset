@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TuHan/tiny-nla es un repositorio de pesos publicado en HuggingFace por el usuario TuHan. En el momento de la consulta no incluye tarjeta de modelo (model card), documentacion tecnica, paper, repositorio de codigo ni demo asociada: los unicos metadatos disponibles son las etiquetas `safetensors` y `region:us`, el identificador del autor y el tamano del repositorio. No se declara pipeline de inferencia, licencia, idiomas soportados ni tipo de tarea, y el modelo acumula 0 descargas y 1 "like".
+TuHan/tiny-nla es un repositorio de pesos publicado en Hugging Face por el usuario TuHan. En el momento de la consulta no incluye tarjeta de modelo (model card), documentacion tecnica, paper, repositorio de codigo ni demo asociada: los unicos metadatos disponibles son las etiquetas `safetensors` y `region:us`, el identificador del autor y el tamano del repositorio. No se declara pipeline de inferencia, licencia, idiomas soportados ni tipo de tarea, y el modelo acumula 0 descargas y 1 "like".
 
 El repositorio ocupa 43,7 GB y fue creado el 12 de septiembre de 2026, con una unica actualizacion unos cuatro minutos mas tarde. Ese tamano resulta llamativo porque el nombre del modelo contiene el prefijo "tiny", lo que sugiere un modelo pequeno, mientras que 43,7 GB de pesos en `safetensors` corresponderian, en una unica copia en bf16/fp16, a un orden de magnitud de decenas de miles de millones de parametros. No hay informacion que permita resolver esta discrepancia (podria tratarse de multiples checkpoints, pesos en fp32, estados de optimizador o ficheros auxiliares).
 
@@ -47,7 +47,7 @@ Los siguientes escenarios son aplicables a la evaluacion del repositorio, no a c
 - Pruebas de infraestructura de despliegue: usar el repositorio como carga de trabajo para validar pipelines de servido (vLLM, TGI, llama.cpp) midiendo tiempo de carga, memoria residente y estabilidad antes de comprometer recursos en produccion.
 - Evaluacion interna previa a la adopcion: si finalmente se confirma que es un modelo de lenguaje, someterlo a la bateria de evaluacion propia de la organizacion (calidad de generacion, fidelidad, latencia) y compararlo con los modelos ya aprobados.
 - Experimentacion con ajuste fino: emplearlo como punto de partida para tareas de fine-tuning solo si la licencia lo permite de forma explicita, dado que actualmente no se declara ninguna.
-- Docencia y formacion: utilizar el repositorio como ejemplo practico de inspeccion de artefactos en HuggingFace, mostrando como un repositorio sin model card obliga a verificar manualmente arquitectura, licencia y origen.
+- Docencia y formacion: utilizar el repositorio como ejemplo practico de inspeccion de artefactos en Hugging Face, mostrando como un repositorio sin model card obliga a verificar manualmente arquitectura, licencia y origen.
 - Analisis de riesgos de cadena de suministro: incorporarlo a un inventario de modelos candidatos para estudiar trazabilidad y procedencia de pesos publicados por cuentas sin historial verificable.
 
 ## Benchmarks y rendimiento
@@ -83,7 +83,7 @@ No disponible. Sin datos sobre parametros, contexto, licencia ni rendimiento, y 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TuHan/tiny-nla
+- Hugging Face: https://huggingface.co/TuHan/tiny-nla
 - Paper: no disponible.
 - Repositorio de codigo: no disponible.
 - Demo: no disponible.

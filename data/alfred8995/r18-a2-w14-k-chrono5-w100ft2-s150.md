@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w14-k-chrono5-w100ft2-s150` es un checkpoint de aproximadamente 2.018 millones de parametros publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. El identificador sugiere una convencion interna de nomenclatura (posiblemente `r18` para una variante de 18 capas, `a2`/`w14` para anchos o ratios de atencion, `chrono5`/`w100ft2`/`s150` para etapas de entrenamiento o fine-tuning), pero no se dispone de documentacion oficial que confirme el significado de estos terminos.
+El modelo `alfred8995/r18-a2-w14-k-chrono5-w100ft2-s150` es un checkpoint de aproximadamente 2.018 millones de parametros publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. El identificador sugiere una convencion interna de nomenclatura (posiblemente `r18` para una variante de 18 capas, `a2`/`w14` para anchos o ratios de atencion, `chrono5`/`w100ft2`/`s150` para etapas de entrenamiento o fine-tuning), pero no se dispone de documentacion oficial que confirme el significado de estos terminos.
 
 El modelo esta etiquetado con el identificador `sn38-nanochrono`, lo que apunta a una familia de modelos experimentales de tipo "chrono" (posiblemente arquitecturas con componentes temporales o recurrentes), aunque no hay informacion publica que detalle la arquitectura exacta, los datos de entrenamiento ni las capacidades reales del checkpoint. El repositorio tiene un tamano de 6.3 GB, coherente con pesos en safetensors de unos 2.000 millones de parametros en precision mixta.
 
@@ -73,7 +73,7 @@ La comparativa es orientativa: los modelos alternativos cuentan con documentacio
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay model card, paper ni README que describa arquitectura, entrenamiento o uso previsto.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que anade friccion a cualquier evaluacion.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que anade friccion a cualquier evaluacion.
 - Sin benchmarks publicados: imposible estimar calidad, alucinacion o rendimiento frente a alternativas.
 - Idiomas no declarados: no se puede garantizar soporte de castellano ni de ningun otro idioma.
 - Contexto desconocido: no se puede planificar su uso en tareas de contexto largo.
@@ -84,5 +84,5 @@ La comparativa es orientativa: los modelos alternativos cuentan con documentacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w100ft2-s150
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w100ft2-s150
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

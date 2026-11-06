@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la información disponible. El R
 
 | Modelo | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ReMDM Planner (este) | Transformer bidireccional + remasking diffusion | No disponible | MIT | Checkpoints Orbax en HuggingFace |
-| MathisW78/remdm-craftax | ReMDM (JAX) | No disponible | No disponible | Código en HuggingFace |
+| ReMDM Planner (este) | Transformer bidireccional + remasking diffusion | No disponible | MIT | Checkpoints Orbax en Hugging Face |
+| MathisW78/remdm-craftax | ReMDM (JAX) | No disponible | No disponible | Código en Hugging Face |
 | kuleshov-group/remdm | ReMDM (PyTorch) | No disponible | No disponible | Código en GitHub |
 
 No hay modelos comparables en la misma categoría (planificadores de difusión discreta para Craftax) publicados en acceso abierto. La comparativa se limita a variantes del mismo método (offline vs. online) y a la implementación original de ReMDM para generación de texto.
@@ -76,9 +76,9 @@ No hay modelos comparables en la misma categoría (planificadores de difusión d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonMLuser/remdm-planner-craftax
+- Modelo en Hugging Face: https://huggingface.co/AnonMLuser/remdm-planner-craftax
 - Código fuente (repo anónimo): https://github.com/vtp5tycwm2-art/remdm-planners
-- Implementación alternativa en HuggingFace: https://huggingface.co/MathisW78/remdm-craftax
-- Checkpoint alternativo en HuggingFace: https://huggingface.co/MathisW78/remdm-craftax-checkpoint
+- Implementación alternativa en Hugging Face: https://huggingface.co/MathisW78/remdm-craftax
+- Checkpoint alternativo en Hugging Face: https://huggingface.co/MathisW78/remdm-craftax-checkpoint
 - Repo de Craftax (entorno): https://github.com/MichaelTMatthews/Craftax
 - Repo de ReMDM (framework original): https://github.com/kuleshov-group/remdm

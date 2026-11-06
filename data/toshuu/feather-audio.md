@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `toshuu/feather-audio` es un repositorio publicado en HuggingFace por el usuario `toshuu`. Según la información disponible, el repositorio tiene un tamaño de 0,4 GB y fue creado el 30 de agosto de 2026, con una última actualización el 6 de septiembre de 2026. El nombre del modelo sugiere una orientación a tareas de audio, pero no se ha publicado ninguna descripción técnica, documentación ni metadatos que permitan determinar su arquitectura, propósito o capacidades. En el momento de la consulta, el modelo registra 23 descargas y 0 likes, lo que indica una adopción muy limitada o un estado de publicación inicial.
+El modelo `toshuu/feather-audio` es un repositorio publicado en Hugging Face por el usuario `toshuu`. Según la información disponible, el repositorio tiene un tamaño de 0,4 GB y fue creado el 30 de agosto de 2026, con una última actualización el 6 de septiembre de 2026. El nombre del modelo sugiere una orientación a tareas de audio, pero no se ha publicado ninguna descripción técnica, documentación ni metadatos que permitan determinar su arquitectura, propósito o capacidades. En el momento de la consulta, el modelo registra 23 descargas y 0 likes, lo que indica una adopción muy limitada o un estado de publicación inicial.
 
 Debido a la ausencia de información, esta ficha se limita a los datos objetivos disponibles en el repositorio y señala explícitamente los campos desconocidos. No existe información pública adicional en la página del modelo ni en fuentes externas que permita elaborar una ficha técnica detallada.
 
@@ -22,7 +22,7 @@ Debido a la ausencia de información, esta ficha se limita a los datos objetivos
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura, los datos de entrenamiento o las técnicas de optimización utilizadas para este modelo. No se dispone de documentación técnica, papers ni descripciones en el repositorio de HuggingFace.
+No se ha publicado información sobre la arquitectura, los datos de entrenamiento o las técnicas de optimización utilizadas para este modelo. No se dispone de documentación técnica, papers ni descripciones en el repositorio de Hugging Face.
 
 ## Capacidades
 
@@ -65,4 +65,4 @@ No disponible: no se conocen modelos comparables de la misma categoría debido a
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/toshuu/feather-audio
+- Página del modelo en Hugging Face: https://huggingface.co/toshuu/feather-audio

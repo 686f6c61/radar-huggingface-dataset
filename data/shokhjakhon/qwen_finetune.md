@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `shokhjakhon/qwen_finetune` es un ajuste fino (fine-tune) de un modelo de la familia Qwen, desarrollado por el usuario `shokhjakhon` y publicado en HuggingFace con licencia Apache 2.0. Sin embargo, la información disponible es extremadamente limitada: la model card solo contiene la licencia, sin descripción, arquitectura, parámetros, datos de entrenamiento ni ejemplos de uso. No se especifica qué variante de Qwen se ha ajustado (por ejemplo, Qwen2.5, Qwen3, etc.), ni el tamaño del modelo base, ni el conjunto de datos utilizado para el ajuste.
+El modelo `shokhjakhon/qwen_finetune` es un ajuste fino (fine-tune) de un modelo de la familia Qwen, desarrollado por el usuario `shokhjakhon` y publicado en Hugging Face con licencia Apache 2.0. Sin embargo, la información disponible es extremadamente limitada: la model card solo contiene la licencia, sin descripción, arquitectura, parámetros, datos de entrenamiento ni ejemplos de uso. No se especifica qué variante de Qwen se ha ajustado (por ejemplo, Qwen2.5, Qwen3, etc.), ni el tamaño del modelo base, ni el conjunto de datos utilizado para el ajuste.
 
 A fecha de creación (1 de septiembre de 2026), el modelo no registra descargas ni likes, lo que sugiere que es un proyecto personal o experimental sin difusión pública. Dada la ausencia de documentación técnica, no es posible evaluar sus capacidades, rendimiento o requisitos de hardware. Cualquier uso en producción requeriría contactar directamente con el autor o inspeccionar los archivos del repositorio.
 
@@ -54,6 +54,6 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo, no se p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shokhjakhon/qwen_finetune
+- Repositorio en Hugging Face: https://huggingface.co/shokhjakhon/qwen_finetune
 - Repositorio oficial de Qwen (referencia genérica, no específica de este modelo): https://github.com/QwenLM/Qwen
 - Guía de fine-tuning de Qwen (referencia genérica): https://deepwiki.com/QwenLM/Qwen/4-fine-tuning-guide

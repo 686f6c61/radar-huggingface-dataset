@@ -4,7 +4,7 @@
 
 Este repositorio contiene una versión cuantizada en formato GGUF del modelo Qwen3.8-27B, publicada por el usuario `burningfeet` bajo el nombre `2026-08-25-.-Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF`. Se trata de una adaptación del modelo base `Qwen/Qwen3.8-27B`, un modelo multimodal de 27 mil millones de parámetros que acepta entradas de imagen y texto, al que se ha aplicado un proceso de "uncensoring" (eliminación de la capa de rechazo de contenido, probablemente mediante técnicas de abliteration) y que incorpora soporte para MTP (Multi-Token Prediction) con decodificación especulativa para acelerar la inferencia.
 
-El modelo está pensado para ejecución local con `llama.cpp` u otros motores compatibles con GGUF, y destaca por ofrecer respuestas sin censura en un entorno controlado. Es relevante para desarrolladores e investigadores que necesitan un modelo multimodal de gran tamaño con pesos abiertos (licencia Apache 2.0) y que quieren explorar el comportamiento de un LLM sin filtros de seguridad, siempre dentro de un marco de uso responsable. El acceso al repositorio es restringido (gated) y requiere aceptar condiciones en HuggingFace.
+El modelo está pensado para ejecución local con `llama.cpp` u otros motores compatibles con GGUF, y destaca por ofrecer respuestas sin censura en un entorno controlado. Es relevante para desarrolladores e investigadores que necesitan un modelo multimodal de gran tamaño con pesos abiertos (licencia Apache 2.0) y que quieren explorar el comportamiento de un LLM sin filtros de seguridad, siempre dentro de un marco de uso responsable. El acceso al repositorio es restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -70,15 +70,15 @@ La principal diferencia con las alternativas de orcarouter es la inclusión de M
 
 - **Sesgos y alucinación**: al eliminar la capa de rechazo, el modelo puede generar contenido sesgado, tóxico o falso sin filtro. No está alineado y puede producir respuestas dañinas.
 - **Riesgo de alucinación**: el modelo base ya tiene riesgo de alucinar; la ausencia de censura puede amplificar este problema, especialmente en temas sensibles.
-- **Uso comercial**: la licencia Apache 2.0 permite uso comercial, pero el blog de orcarouter indica que su variante uncensored está destinada a "research-only" (solo investigación). Este modelo concreto no especifica restricciones adicionales, pero se recomienda revisar las condiciones de HuggingFace.
+- **Uso comercial**: la licencia Apache 2.0 permite uso comercial, pero el blog de orcarouter indica que su variante uncensored está destinada a "research-only" (solo investigación). Este modelo concreto no especifica restricciones adicionales, pero se recomienda revisar las condiciones de Hugging Face.
 - **Contexto limitado**: no se ha confirmado la longitud de contexto; si se usa una cuantización baja, el contexto efectivo puede ser menor.
 - **Calidad de la cuantización**: las cuantizaciones bajas (Q2_K, Q3_K) degradan notablemente la calidad de salida, especialmente en tareas de razonamiento.
-- **Acceso restringido**: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que puede limitar la automatización en entornos CI/CD.
+- **Acceso restringido**: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que puede limitar la automatización en entornos CI/CD.
 
 ## Enlaces
 
-- [HuggingFace - Repositorio del modelo](https://huggingface.co/burningfeet/2026-08-25-.-Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF)
-- [HuggingFace - Repositorio relacionado (unsloth)](https://huggingface.co/burningfeet/2026-08-25-.-unsloth-.-Qwen3.8-27B-GGUF)
+- [Hugging Face - Repositorio del modelo](https://huggingface.co/burningfeet/2026-08-25-.-Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF)
+- [Hugging Face - Repositorio relacionado (unsloth)](https://huggingface.co/burningfeet/2026-08-25-.-unsloth-.-Qwen3.8-27B-GGUF)
 - [Blog orcarouter: Qwen3.8-27B Uncensored GGUF](https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf)
 - [Blog orcarouter: cómo ejecutar localmente](https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally)
 - [GitHub QwenLM/Qwen3.8 (modelo base)](https://github.com/QwenLM/Qwen3.8)

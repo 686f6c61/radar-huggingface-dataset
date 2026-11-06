@@ -4,7 +4,7 @@
 
 `ysdede/parakeet-hf-ctc-110m-en-onnx` es una conversión al formato ONNX del modelo de reconocimiento automático del habla (ASR) `ctaguchi/parakeet-hf-ctc-110m-en`, un transformer CTC de aproximadamente 110 millones de parámetros especializado en inglés. El autor del repositorio, `ysdede`, no entrena ni modifica los pesos: únicamente exporta el grafo a ONNX para su uso en ASRJS, una herramienta de inferencia en JavaScript. La identidad del modelo y los pesos se mantienen sin cambios respecto al original, según indica la propia model card.
 
-El interés de esta ficha es doble. Por un lado, documenta una variante ONNX de un modelo ASR ligero, pensada para ejecución en entornos sin Python (navegador, Node.js, aplicaciones de escritorio empaquetadas). Por otro, sirve como ejemplo de la cadena de derivaciones que se está consolidando en HuggingFace: modelos base de NVIDIA (familia Parakeet) reconvertidos a arquitecturas HuggingFace por terceros y, después, exportados a ONNX por otros autores.
+El interés de esta ficha es doble. Por un lado, documenta una variante ONNX de un modelo ASR ligero, pensada para ejecución en entornos sin Python (navegador, Node.js, aplicaciones de escritorio empaquetadas). Por otro, sirve como ejemplo de la cadena de derivaciones que se está consolidando en Hugging Face: modelos base de NVIDIA (familia Parakeet) reconvertidos a arquitecturas Hugging Face por terceros y, después, exportados a ONNX por otros autores.
 
 La información pública disponible es muy limitada: la model card original es prácticamente un stub y el repositorio derivado solo añade una nota de atribución y una referencia a un `export-receipt.json`. Por tanto, muchos de los datos técnicos de esta ficha se marcan como «no disponible» o se infieren de la nomenclatura del modelo (110M, CTC, EN), sin que exista confirmación explícita en la documentación.
 
@@ -79,6 +79,6 @@ La comparación con Whisper es solo orientativa por categoría (ASR ligero); no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ysdede/parakeet-hf-ctc-110m-en-onnx
+- Repositorio Hugging Face: https://huggingface.co/ysdede/parakeet-hf-ctc-110m-en-onnx
 - Modelo fuente: https://huggingface.co/ctaguchi/parakeet-hf-ctc-110m-en/tree/a755f5a4398ebe44292169d4fceea34e3c02b759
 - Fichero de recibo de exportación: `export-receipt.json` (referenciado en la model card; no se proporciona URL directa)

@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto / entrada | Precisión en CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SMAI IOC-NN (este modelo) | ~1,77 M | Imagen 32×32×3 (3072 valores) | 0,4890 (test) | No disponible | HuggingFace (`Fresh-butter/smai-a4-ioc-nn`) |
+| SMAI IOC-NN (este modelo) | ~1,77 M | Imagen 32×32×3 (3072 valores) | 0,4890 (test) | No disponible | Hugging Face (`Fresh-butter/smai-a4-ioc-nn`) |
 | MLP estándar sin restricción de convexidad | Similar (~1,77 M) | Imagen 32×32×3 | No disponible en la información proporcionada | No disponible | No disponible |
 | CNN pequeña para CIFAR-10 (p. ej., arquitecturas tipo VGG reducido) | Variable (0,1–1 M) | Imagen 32×32×3 | No disponible en la información proporcionada | No disponible | No disponible |
 
@@ -79,10 +79,10 @@ No se dispone de datos comparativos publicados en la información proporcionada 
 - Riesgo de alucinación: no aplica en el sentido de modelos generativos, pero el modelo puede producir clasificaciones erróneas con alta confianza en imágenes fuera de distribución.
 - Limitaciones de contexto o idioma: no es un modelo de lenguaje; no procesa texto ni tiene ventana de contexto. Solo acepta imágenes de 32×32×3 con el preprocesado exacto especificado.
 - Restricciones de licencia para uso comercial: la licencia no está declarada, por lo que no se puede asumir permiso para uso comercial sin consultar al autor.
-- Caveats para producción: el formato de pesos es NumPy `.npz`, no hay pipeline de HuggingFace definido, no hay versiones cuantizadas ni soporte en frameworks de inferencia estándar. El repositorio tiene 0 descargas y 0 likes, y un tamaño de 0,0 GB, lo que sugiere que los artefactos podrían no estar completamente subidos o ser de muy pequeño tamaño.
+- Caveats para producción: el formato de pesos es NumPy `.npz`, no hay pipeline de Hugging Face definido, no hay versiones cuantizadas ni soporte en frameworks de inferencia estándar. El repositorio tiene 0 descargas y 0 likes, y un tamaño de 0,0 GB, lo que sugiere que los artefactos podrían no estar completamente subidos o ser de muy pequeño tamaño.
 - El modelo está vinculado a una asignatura académica (SMAI Assignment 4), por lo que su mantenimiento y soporte no están garantizados.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fresh-butter/smai-a4-ioc-nn
+- Hugging Face: https://huggingface.co/Fresh-butter/smai-a4-ioc-nn
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

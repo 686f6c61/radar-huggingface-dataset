@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jaysoncxkt9/poolformer-demo | 16.576 | no disponible | Checkpoint de inicializacion, no entrenado | MIT | HuggingFace |
-| aidenlopez/poolformer-demo | no disponible | no disponible | Implementacion personalizada para multitarea, no entrenada | no disponible | HuggingFace |
+| jaysoncxkt9/poolformer-demo | 16.576 | no disponible | Checkpoint de inicializacion, no entrenado | MIT | Hugging Face |
+| aidenlopez/poolformer-demo | no disponible | no disponible | Implementacion personalizada para multitarea, no entrenada | no disponible | Hugging Face |
 | PoolFormer (sail-sg) | no disponible (vision, escala S/M/B/L) | no aplica (vision) | Modelo entrenado, supera a DeiT y ResMLP | no disponible | GitHub |
 | Poolformer recurrente (arXiv 2510.02206) | no disponible | secuencias largas | Propuesta de investigacion | no disponible | arXiv |
 
@@ -78,7 +78,7 @@ La comparativa directa es limitada porque `jaysoncxkt9/poolformer-demo` no es un
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jaysoncxkt9/poolformer-demo
+- Repositorio Hugging Face: https://huggingface.co/jaysoncxkt9/poolformer-demo
 - Repositorio original PoolFormer (sail-sg): https://github.com/sail-sg/poolformer
 - Articulo arXiv 2510.02206 (Poolformer recurrente): https://arxiv.org/abs/2510.02206
 - PDF del articulo: https://arxiv.org/pdf/2510.02206

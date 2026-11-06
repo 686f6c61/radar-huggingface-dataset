@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Poojashah33/postdoc-multitask` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura tipo BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas multitarea. Lo desarrolla el usuario Poojashah33 y se distribuye bajo licencia Apache 2.0. El repositorio no constituye un modelo entrenado ni evaluado: el checkpoint `model.safetensors` es explícitamente una inicialización válida para pruebas de humo (smoke tests), no un modelo con pesos fruto de un entrenamiento completo.
+`Poojashah33/postdoc-multitask` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura tipo BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas multitarea. Lo desarrolla el usuario Poojashah33 y se distribuye bajo licencia Apache 2.0. El repositorio no constituye un modelo entrenado ni evaluado: el checkpoint `model.safetensors` es explícitamente una inicialización válida para pruebas de humo (smoke tests), no un modelo con pesos fruto de un entrenamiento completo.
 
 La relevancia de este repositorio es, por tanto, la de un andamiaje de código y configuración: incluye `pipeline.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto (AdamW con schedule por pasos). El autor indica que la escala configurada es "giant", con atención estándar, fusión bilineal, activación approximate GELU y normalización por batch.
 
@@ -79,5 +79,5 @@ La comparación con implementaciones canónicas de BLIP solo es posible a nivel 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Poojashah33/postdoc-multitask
+- Repositorio en Hugging Face: https://huggingface.co/Poojashah33/postdoc-multitask
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

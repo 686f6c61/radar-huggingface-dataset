@@ -83,10 +83,10 @@ No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Formato de pesos | Tamano | Ratio de perplejidad | Acuerdo top-1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| atakans/Qwen3.8-27B-NVFP4-BF16head | ~18,8B (safetensors) | NVFP4 + FP8 + BF16 (safetensors) | 22 GiB | 1,022 | 91,1% | apache-2.0 | HuggingFace, via vLLM |
-| nvidia/Qwen3.8-27B-NVFP4 | no disponible | NVFP4 (safetensors) | 21 GiB | 1,029 | 88,7% | no disponible | HuggingFace |
-| Qwen/Qwen3.8-27B-FP8 | no disponible | FP8 (safetensors) | 29 GiB | 1,002 | 96,5% | no disponible | HuggingFace |
-| Qwen/Qwen3.8-27B (BF16) | no disponible | BF16 | no disponible | 1,000 (referencia, ppl 8,30) | 100% (referencia) | apache-2.0 (segun el modelo base de esta ficha) | HuggingFace |
+| atakans/Qwen3.8-27B-NVFP4-BF16head | ~18,8B (safetensors) | NVFP4 + FP8 + BF16 (safetensors) | 22 GiB | 1,022 | 91,1% | apache-2.0 | Hugging Face, via vLLM |
+| nvidia/Qwen3.8-27B-NVFP4 | no disponible | NVFP4 (safetensors) | 21 GiB | 1,029 | 88,7% | no disponible | Hugging Face |
+| Qwen/Qwen3.8-27B-FP8 | no disponible | FP8 (safetensors) | 29 GiB | 1,002 | 96,5% | no disponible | Hugging Face |
+| Qwen/Qwen3.8-27B (BF16) | no disponible | BF16 | no disponible | 1,000 (referencia, ppl 8,30) | 100% (referencia) | apache-2.0 (segun el modelo base de esta ficha) | Hugging Face |
 
 Las tres variantes cuantizadas parten del mismo modelo base. La eleccion es un compromiso explicito: FP8 se acerca mas al BF16 en calidad pero ocupa mas; NVIDIA NVFP4 es el mas rapido y pequeno pero el mas alejado; este checkpoint se situa en medio, priorizando fidelidad sobre velocidad.
 
@@ -105,7 +105,7 @@ Las tres variantes cuantizadas parten del mismo modelo base. La eleccion es un c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/atakans/Qwen3.8-27B-NVFP4-BF16head
+- Modelo en Hugging Face: https://huggingface.co/atakans/Qwen3.8-27B-NVFP4-BF16head
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Alternativa FP8 de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Alternativa NVFP4 de NVIDIA: https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4

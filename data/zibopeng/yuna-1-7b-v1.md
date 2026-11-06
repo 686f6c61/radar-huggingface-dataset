@@ -75,7 +75,7 @@ Nota: los datos de Qwen3-1.7B y Qwen2.5-1.5B-Instruct provienen de información 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZiboPeng/Yuna-1.7B-v1
+- Hugging Face: https://huggingface.co/ZiboPeng/Yuna-1.7B-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 
 No se han encontrado otros enlaces oficiales (papers, blogs, repositorios) específicos de este modelo en la información proporcionada.

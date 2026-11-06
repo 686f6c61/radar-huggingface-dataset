@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Muse Glimmer 30B (base) | 29.6B | 128K | BF16 | Apache 2.0 | HuggingFace |
-| aisquared/Muse-Glimmer-30B-W4A16 (esta version) | 29.6B | 128K | W4A16 (INT4/BF16) | Apache 2.0 | HuggingFace |
-| aisquared/Muse-Glimmer-30B-bpw4-AutoRound | 29.6B | 128K | AutoRound mixto (~4 bpw) | Apache 2.0 | HuggingFace |
-| aisquared/Muse-Glimmer-30B-bpw2.5-AutoRound | 29.6B | 128K | AutoRound mixto (~2.5 bpw) | Apache 2.0 | HuggingFace |
+| Muse Glimmer 30B (base) | 29.6B | 128K | BF16 | Apache 2.0 | Hugging Face |
+| aisquared/Muse-Glimmer-30B-W4A16 (esta version) | 29.6B | 128K | W4A16 (INT4/BF16) | Apache 2.0 | Hugging Face |
+| aisquared/Muse-Glimmer-30B-bpw4-AutoRound | 29.6B | 128K | AutoRound mixto (~4 bpw) | Apache 2.0 | Hugging Face |
+| aisquared/Muse-Glimmer-30B-bpw2.5-AutoRound | 29.6B | 128K | AutoRound mixto (~2.5 bpw) | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a las variantes del mismo modelo base, ya que no se dispone de datos de otros modelos de 30B con características equivalentes en la información proporcionada.
 
@@ -76,7 +76,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aisquared/Muse-Glimmer-30B-W4A16-LLMCompressor
+- Modelo en Hugging Face: https://huggingface.co/aisquared/Muse-Glimmer-30B-W4A16-LLMCompressor
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Página oficial de Muse Glimmer en Meta: https://developer.meta.com/ai/models/muse-glimmer/
 - Documentación de la API: https://ai.developer.meta.com/docs/muse-glimmer

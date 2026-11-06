@@ -107,7 +107,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/netprojects/granite-switch-4.1-30b-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/netprojects/granite-switch-4.1-30b-mlx-8bit
 - Modelo base: https://huggingface.co/ibm-granite/granite-switch-4.1-30b
 - Build de 4 bits: https://huggingface.co/netprojects/granite-switch-4.1-30b-mlx-4bit
 - Build de 8B en 8 bits: https://huggingface.co/netprojects/granite-switch-4.1-8b-mlx-8bit

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tomoyaito/flamingo-multitask-weights` es un repositorio de HuggingFace publicado por el usuario tomoyaito que contiene una implementación funcional y de código transparente de la arquitectura Flamingo en configuración reducida ("small"), orientada a pruebas de humo (smoke tests) y a experimentación reproducible. No se trata de un modelo entrenado ni evaluado: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas, no un checkpoint con benchmarks.
+`tomoyaito/flamingo-multitask-weights` es un repositorio de Hugging Face publicado por el usuario tomoyaito que contiene una implementación funcional y de código transparente de la arquitectura Flamingo en configuración reducida ("small"), orientada a pruebas de humo (smoke tests) y a experimentación reproducible. No se trata de un modelo entrenado ni evaluado: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas, no un checkpoint con benchmarks.
 
 El modelo es extremadamente pequeño: el recuento real de parámetros en safetensors es de 49.600 (aproximadamente 0,05 millones), lo que lo sitúa más cerca de un juguete de investigación que de un modelo de producción. La arquitectura declarada combina atención de ventana deslizante (sliding window), fusión tipo tucker, activación ReLU y normalización instancenorm. No se especifica la longitud de contexto, los idiomas soportados ni los datos de entrenamiento.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tomoyaito/flamingo-multitask-weights | 49.600 (0,05 M) | no disponible | No (solo inicializacion) | apache-2.0 | HuggingFace, 0 descargas |
+| tomoyaito/flamingo-multitask-weights | 49.600 (0,05 M) | no disponible | No (solo inicializacion) | apache-2.0 | Hugging Face, 0 descargas |
 | OpenFlamingo (familia de implementaciones abiertas de Flamingo) | del orden de miles de millones, segun variante | no disponible en la informacion proporcionada | Si, en las variantes publicadas | variable segun variante | publica |
 | IDEFICS (familia de modelos vision-lenguaje inspirados en Flamingo) | del orden de miles de millones, segun variante | no disponible en la informacion proporcionada | Si, en las variantes publicadas | variable segun variante | publica |
 
@@ -90,6 +90,6 @@ La comparacion es estructuralmente desigual: las alternativas citadas son modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tomoyaito/flamingo-multitask-weights
+- Modelo en Hugging Face: https://huggingface.co/tomoyaito/flamingo-multitask-weights
 - La busqueda web realizada no devolvio ningun enlace tecnico relevante sobre este modelo; los unicos resultados fueron paginas de inicio de sesion de Facebook, sin relacion con el contenido.
 - Referencia externa de la arquitectura original (no procedente de la busqueda web): paper de Flamingo, Alayrac et al., 2022, https://arxiv.org/abs/2204.14198

@@ -60,7 +60,7 @@ No se dispone de modelos comparables claramente identificados en la información
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos.
 - Licencia no especificada: no se puede determinar si es de uso comercial libre; riesgo legal para producción.
 - Sesgos y alucinaciones: al ser un modelo ajustado con DPO, puede presentar sesgos heredados del dataset de preferencias; no hay evaluación pública de sesgos.
 - Contexto y idiomas: sin datos sobre la ventana de contexto ni idiomas soportados, no se puede garantizar su rendimiento en tareas multilingües o de contexto largo.
@@ -69,7 +69,7 @@ No se dispone de modelos comparables claramente identificados en la información
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nernstpolga/new_hk_5dmrycs4ln
+- Modelo en Hugging Face: https://huggingface.co/nernstpolga/new_hk_5dmrycs4ln
 - Perfil del autor: https://huggingface.co/nernstpolga
 - Modelo base (referencia): https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged (no verificado)
 - Otro modelo del autor (val-duo-1): https://huggingface.co/nernstpolga/val-duo-1

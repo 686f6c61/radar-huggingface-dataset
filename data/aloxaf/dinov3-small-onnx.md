@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aloxaf/dinov3-small-onnx
+- Hugging Face: https://huggingface.co/aloxaf/dinov3-small-onnx
 - Modelo original: https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m
 - Implementación oficial: https://github.com/facebookresearch/dinov3
 - Redistribución del checkpoint en ModelScope: https://modelscope.cn/models/ciqiangxu/DINOv3

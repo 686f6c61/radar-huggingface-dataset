@@ -30,7 +30,7 @@ Ornith-1.5-9B es un modelo transformer denso, sin mezcla de expertos, que parte 
 - Capacidad de auto-mejora: el modelo puede generar sus propias tareas de entrenamiento, lo que sugiere un potencial para adaptarse a dominios nuevos sin intervencion humana.
 - Soporte de tool calling y uso de agentes: los resultados en Terminal-Bench indican que el modelo puede interactuar con herramientas de linea de comandos y entornos de ejecucion, aunque no se confirma explicitamente en la documentacion.
 - Capacidades multilingues: no disponibles en la informacion proporcionada.
-- El tag image-text-to-text en HuggingFace sugiere que el modelo base podria manejar entradas de imagen, pero esta variante NVFP4 se presenta como text-generation y no se documentan capacidades de vision.
+- El tag image-text-to-text en Hugging Face sugiere que el modelo base podria manejar entradas de imagen, pero esta variante NVFP4 se presenta como text-generation y no se documentan capacidades de vision.
 
 ## Casos de uso
 
@@ -87,7 +87,7 @@ Ornith-1.5-9B supera claramente a Qwen3.5-9B en tareas de codigo y se acerca a m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-9B-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-9B-NVFP4
 - Coleccion de modelos Ornith-1.5: https://huggingface.co/collections/ornith-ai/ornith-15
 - Blog tecnico de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Sitio web de Ornith AI: https://ornith.ai/

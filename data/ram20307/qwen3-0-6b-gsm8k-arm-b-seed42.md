@@ -59,7 +59,7 @@ No se dispone de resultados adicionales como MMLU, HumanEval, GSM8K completo ni 
 - VRAM estimada en cuantizacion 4-bit (si se genera un GGUF): aproximadamente 0,6 GB.
 - GPU recomendada para inferencia: cualquier GPU con al menos 4 GB de VRAM, como una RTX 3060, RTX 4070 o superior. El entrenamiento se realizo en una NVIDIA RTX A5000 Laptop.
 - Es un modelo de tamano muy pequeno; cabe en GPUs de consumo, incluso en integrated graphics con suficiente RAM.
-- Opciones de despliegue: HuggingFace Transformers (PyTorch), vLLM, llama.cpp mediante conversion a GGUF, y Ollama si se importa en su formato.
+- Opciones de despliegue: Hugging Face Transformers (PyTorch), vLLM, llama.cpp mediante conversion a GGUF, y Ollama si se importa en su formato.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -85,5 +85,5 @@ No se dispone de datos de benchmarks comparativos, por lo que no es posible esta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ram20307/qwen3-0.6b-gsm8k-arm-b-seed42
+- Modelo en Hugging Face: https://huggingface.co/Ram20307/qwen3-0.6b-gsm8k-arm-b-seed42
 - Repositorio del proyecto SLM Reasoning Research: https://github.com/sarvadnya2030/Rsearch_Experiments_SLM

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fm-dev/pi05-button-order-status-d-overfit3-epoch80` es un checkpoint de investigacion publicado en HuggingFace por el usuario `fm-dev`. Se trata de un ajuste fino mediante LoRA (adaptador denominado Cartesian8) sobre el modelo base `physical-intelligence/pi05_base`, un modelo vision-language-action (VLA) de Physical Intelligence orientado al control de robots. El checkpoint esta disenado deliberadamente para sobreajustar: se ha entrenado 80 epochs sobre unicamente 3 trayectorias de demostracion y 529 ventanas de historial, con el objetivo de reproducir una unica tarea de manipulacion.
+`fm-dev/pi05-button-order-status-d-overfit3-epoch80` es un checkpoint de investigacion publicado en Hugging Face por el usuario `fm-dev`. Se trata de un ajuste fino mediante LoRA (adaptador denominado Cartesian8) sobre el modelo base `physical-intelligence/pi05_base`, un modelo vision-language-action (VLA) de Physical Intelligence orientado al control de robots. El checkpoint esta disenado deliberadamente para sobreajustar: se ha entrenado 80 epochs sobre unicamente 3 trayectorias de demostracion y 529 ventanas de historial, con el objetivo de reproducir una unica tarea de manipulacion.
 
 La tarea concreta es "Press the buttons in the order shown in the demonstration video" (pulsar botones en el orden mostrado en el video de demostracion), ejecutada sobre un entorno de robot Franka. El modelo emite chunks de accion de forma `[20,8]` con posiciones cartesianas absolutas en metros, cuaterniones XYZW unitarios y un valor binario de pinza (0=cerrado, 1=abierto). El checkpoint corresponde a la EMA en el step 5.920, exactamente 80 epochs de sampler, con batch global 8 y 74 actualizaciones por epoch.
 
@@ -84,7 +84,7 @@ No se han encontrado en la busqueda web resultados relevantes sobre este modelo 
 
 | Modelo | Categoria | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| fm-dev/pi05-button-order-status-d-overfit3-epoch80 | LoRA Cartesian8 sobre π0.5, sobreajustado a 3 trayectorias | no disponible | 528 tokens de historial mas contexto Status | solo comprobacion de carga e inferencia | no disponible | HuggingFace, 0 descargas, 0 likes |
+| fm-dev/pi05-button-order-status-d-overfit3-epoch80 | LoRA Cartesian8 sobre π0.5, sobreajustado a 3 trayectorias | no disponible | 528 tokens de historial mas contexto Status | solo comprobacion de carga e inferencia | no disponible | Hugging Face, 0 descargas, 0 likes |
 | physical-intelligence/pi05_base | Modelo base VLA de Physical Intelligence | no disponible | no disponible | no disponible | no disponible | Referenciado como `base_model` en el repositorio |
 | Otros checkpoints de la familia π0.5 / π0 | VLA para control de robots | no disponible | no disponible | no disponible | no disponible | No localizados resultados relevantes en la busqueda |
 
@@ -106,7 +106,7 @@ No se han encontrado en la busqueda web resultados relevantes sobre este modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fm-dev/pi05-button-order-status-d-overfit3-epoch80
+- Modelo en Hugging Face: https://huggingface.co/fm-dev/pi05-button-order-status-d-overfit3-epoch80
 - Modelo base referenciado: https://huggingface.co/physical-intelligence/pi05_base
 - Descarga directa indicada en la model card: `hf download fm-dev/pi05-button-order-status-d-overfit3-epoch80 --local-dir ./button-order-status-d-epoch80`
 - Archivos auxiliares incluidos en el repositorio: `params/` (EMA), `assets/`, `code/`, `requirements.txt`, `load_model.py`, `inference-check.json`

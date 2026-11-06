@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TOM-GROK es un artefacto de investigación publicado en HuggingFace por el autor Tom Klootwijk bajo el identificador `c0mbatduckzz/TOM-GROK`. No se trata de un modelo de lenguaje en el sentido convencional, sino de una colección de documentación matemática, formalizaciones y código fuente (CUDA/WebGPU) que el autor describe como un "modelo computacional determinista de campo de operadores autorreferencial". El repositorio no contiene pesos de modelo: su tamaño es de 0,0 GB y la model card remite exclusivamente a PDFs, catálogos JSON y código de un intérprete denominado TK-EDGE-1.
+TOM-GROK es un artefacto de investigación publicado en Hugging Face por el autor Tom Klootwijk bajo el identificador `c0mbatduckzz/TOM-GROK`. No se trata de un modelo de lenguaje en el sentido convencional, sino de una colección de documentación matemática, formalizaciones y código fuente (CUDA/WebGPU) que el autor describe como un "modelo computacional determinista de campo de operadores autorreferencial". El repositorio no contiene pesos de modelo: su tamaño es de 0,0 GB y la model card remite exclusivamente a PDFs, catálogos JSON y código de un intérprete denominado TK-EDGE-1.
 
 El autor declara el artefacto como propiedad personal con todos los derechos reservados y sin licencia concedida de ningún tipo, prohibiendo explícitamente su uso, copia, modificación, distribución o empleo para entrenamiento de modelos. La publicación no incluye pipeline, arquitectura de red neuronal, parámetros, contexto ni datos de entrenamiento en el sentido habitual de la industria. Toda la información disponible es la que el propio autor proporciona en la model card y en los documentos enlazados.
 
@@ -42,7 +42,7 @@ No se documenta ningún proceso de entrenamiento: no hay número de tokens, comp
 - Catalogación de artefactos de investigación: el repositorio puede registrarse como artefacto documental (PDFs, JSON, código CUDA) en un archivo institucional, sin uso del contenido más allá de su referencia bibliográfica.
 - Estudio de formalizaciones matemáticas: los compendios pueden consultarse como material de exposición sobre espacios de estado tipados y álgebra de operadores, siempre que el titular autorice la lectura más allá del acceso público.
 - Análisis de código CUDA/WebGPU: el `kernel/native/kernel.cu` y la documentación de ABI pueden examinarse como ejemplo de intérprete de cinta finita, sujeto a la prohibición de uso y modificación del titular.
-- Referencia en revisiones de licencias: el caso ilustra un artefacto publicado con restricciones propietarias explícitas, útil para estudiar prácticas de licenciamiento en HuggingFace.
+- Referencia en revisiones de licencias: el caso ilustra un artefacto publicado con restricciones propietarias explícitas, útil para estudiar prácticas de licenciamiento en Hugging Face.
 - Documentación de provenance: los ficheros `AUTHOR.json`, `RELEASE.json` y `kernel/docs/provenance.json` pueden servir como ejemplo de trazabilidad de artefactos, sin reutilización del contenido.
 - No se identifican casos de uso como modelo de IA en producción, atención al cliente, generación de código o pipelines de CI/CD, dado que no hay pesos ni licencia operativa.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TOM-GROK | No disponible | No disponible | Propietaria, sin licencia concedida | Repositorio HuggingFace con documentación y código; sin pesos |
+| TOM-GROK | No disponible | No disponible | Propietaria, sin licencia concedida | Repositorio Hugging Face con documentación y código; sin pesos |
 | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se identifican modelos comparables en la información proporcionada. TOM-GROK no es un modelo de lenguaje con pesos publicados, por lo que la comparación con alternativas de la misma categoría (LLM open source) no es aplicable.
@@ -82,7 +82,7 @@ No se identifican modelos comparables en la información proporcionada. TOM-GROK
 
 ## Enlaces
 
-- [HuggingFace: c0mbatduckzz/TOM-GROK](https://huggingface.co/c0mbatduckzz/TOM-GROK)
+- [Hugging Face: c0mbatduckzz/TOM-GROK](https://huggingface.co/c0mbatduckzz/TOM-GROK)
 - [Compendio matemático (159 páginas)](compendium/TOM_SROK_ALLUNEEDIUM_Interdisciplinary_Mathematical_Compendium.pdf)
 - [Catálogo de dominios legible por máquina](compendium/TK_SROF_ATLAS_domain_catalogue.json)
 - [Manifiesto de fuentes matemáticas](ATLAS_SOURCE_MANIFEST.json)

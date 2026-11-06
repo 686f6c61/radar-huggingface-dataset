@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAT_llama3b_likeZephyr_eps0600_456_relativelr_utility_500_NEW es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario maria715, derivado de experimentos de tesis de máster sobre entrenamiento adversarial orientado a mejorar la robustez de modelos de lenguaje. No se trata de un modelo completo, sino de pesos adicionales que deben aplicarse sobre un modelo base para funcionar; el repositorio no incluye el modelo base.
+CAT_llama3b_likeZephyr_eps0600_456_relativelr_utility_500_NEW es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario maria715, derivado de experimentos de tesis de máster sobre entrenamiento adversarial orientado a mejorar la robustez de modelos de lenguaje. No se trata de un modelo completo, sino de pesos adicionales que deben aplicarse sobre un modelo base para funcionar; el repositorio no incluye el modelo base.
 
 El identificador sugiere varios hiperparámetros del experimento: un modelo base de aproximadamente 3.000 millones de parámetros (prefijo "llama3b"), un formato de conversación tipo Zephyr ("likeZephyr"), un presupuesto de perturbación adversarial de 0,6 ("eps0600"), una tasa de aprendizaje relativa ("relativelr"), una componente de utilidad ("utility") y 500 pasos o muestras ("500"). Todos estos valores son inferencias a partir del nombre del repositorio y no están confirmados en la model card.
 
@@ -44,7 +44,7 @@ La model card describe el modelo como un "adaptador LoRA procedente de experimen
 - Evaluación de degradación de utilidad: dado que el nombre menciona "utility", podría emplearse para medir el equilibrio entre robustez adversarial y calidad de generación en el modelo base.
 - Benchmarking de adaptadores LoRA: puede servir como caso de estudio del impacto del ajuste LoRA en la sensibilidad a entradas maliciosas.
 - Estudio de plantillas de conversación tipo Zephyr: permite analizar cómo una plantilla concreta interactúa con el entrenamiento adversarial.
-- Docencia: ejemplo práctico de un artefacto PEFT con metadatos de experimento en su nombre, útil para enseñar gestión de adaptadores en HuggingFace.
+- Docencia: ejemplo práctico de un artefacto PEFT con metadatos de experimento en su nombre, útil para enseñar gestión de adaptadores en Hugging Face.
 
 No se recomienda su uso en producción sin una validación adicional, dado que no hay licencia declarada, ni idiomas, ni evaluación publicada.
 
@@ -78,5 +78,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0600_456_relativelr_utility_500_NEW
+- Hugging Face: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0600_456_relativelr_utility_500_NEW
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

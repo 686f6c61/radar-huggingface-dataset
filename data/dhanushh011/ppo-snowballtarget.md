@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`dhanushh011/ppo-SnowballTarget` es un checkpoint de un agente entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno de ejemplo SnowballTarget de Unity ML-Agents. Lo publica el usuario dhanushh011 en HuggingFace y se distribuye con la libreria `ml-agents`, dentro del pipeline `reinforcement-learning`. No es un modelo de lenguaje: es una politica entrenada para controlar un agente dentro de una simulacion Unity, exportada presumiblemente en formato `.nn` (formato propietario de ML-Agents) y/o `.onnx`, a juzgar por las etiquetas del repositorio.
+`dhanushh011/ppo-SnowballTarget` es un checkpoint de un agente entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno de ejemplo SnowballTarget de Unity ML-Agents. Lo publica el usuario dhanushh011 en Hugging Face y se distribuye con la libreria `ml-agents`, dentro del pipeline `reinforcement-learning`. No es un modelo de lenguaje: es una politica entrenada para controlar un agente dentro de una simulacion Unity, exportada presumiblemente en formato `.nn` (formato propietario de ML-Agents) y/o `.onnx`, a juzgar por las etiquetas del repositorio.
 
-El modelo resuelve una tarea concreta de control en un entorno de simulacion y su relevancia es acotada: sirve como resultado reproducible de un entrenamiento PPO, como base para reanudar el entrenamiento con `mlagents-learn --resume` y como artefacto demostrable en el visor de agentes de HuggingFace. El repositorio no incluye informacion sobre arquitectura de red, numero de parametros, hiperparametros, semillas, numero de pasos de entrenamiento ni curvas de recompensa, y el tamano declarado del repo es de 0.0 GB, lo que sugiere que el contenido puede ser minimo o estar incompleto.
+El modelo resuelve una tarea concreta de control en un entorno de simulacion y su relevancia es acotada: sirve como resultado reproducible de un entrenamiento PPO, como base para reanudar el entrenamiento con `mlagents-learn --resume` y como artefacto demostrable en el visor de agentes de Hugging Face. El repositorio no incluye informacion sobre arquitectura de red, numero de parametros, hiperparametros, semillas, numero de pasos de entrenamiento ni curvas de recompensa, y el tamano declarado del repo es de 0.0 GB, lo que sugiere que el contenido puede ser minimo o estar incompleto.
 
 En el momento de la consulta acumula 0 descargas y 0 likes, la licencia no esta declarada y no se especifican idiomas (dato esperable, al no tratarse de un modelo linguistico). Las fechas de creacion y actualizacion son 2026-10-07, con una diferencia de cinco segundos entre ambas, lo que apunta a una subida automatizada sin curacion posterior.
 
@@ -26,7 +26,7 @@ Otros datos del repositorio: autor `dhanushh011`; libreria `ml-agents`; pipeline
 
 La unica informacion aportada por el autor indica que se trata de un agente **ppo** entrenado sobre **SnowballTarget** mediante la libreria Unity ML-Agents. PPO es un algoritmo de gradiente de politica con recorte de la razon de probabilidades, que optimiza una funcion de perdida compuesta por el termino de politica, el error de la funcion de valor y una entropia de bonus. ML-Agents implementa habitualmente la politica como un perceptron multicapa (o una red convolutional si las observaciones son visuales) con cabezas separadas para politica y valor, pero **no hay ningun dato en la informacion proporcionada** sobre el numero de capas, unidades por capa, tipo de observacion, espacio de acciones (discreto o continuo), hiperparametros, numero de pasos de entrenamiento, ni sobre si se aplico imitacion (GAIL/BC) o curiosidad intrinseca.
 
-Tampoco se documenta la composicion del dataset (en RL no aplica en el sentido supervisado), ni el uso de RLHF/DPO (no aplican a este tipo de modelo), ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card unicamente remite a la documentacion oficial de ML-Agents, al tutorial corto del curso de deep RL de HuggingFace y al tutorial largo de la unidad 5, ademas de indicar el comando para reanudar el entrenamiento (`mlagents-learn <config>.yaml --run-id=<run_id> --resume`). Nota: la propia model card menciona el identificador `settybhavithav/ppo-SnowballTarget` en las instrucciones de visualizacion, distinto del ID del repositorio, lo que sugiere que la tarjeta fue copiada de otra publicacion sin adaptar.
+Tampoco se documenta la composicion del dataset (en RL no aplica en el sentido supervisado), ni el uso de RLHF/DPO (no aplican a este tipo de modelo), ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card unicamente remite a la documentacion oficial de ML-Agents, al tutorial corto del curso de deep RL de Hugging Face y al tutorial largo de la unidad 5, ademas de indicar el comando para reanudar el entrenamiento (`mlagents-learn <config>.yaml --run-id=<run_id> --resume`). Nota: la propia model card menciona el identificador `settybhavithav/ppo-SnowballTarget` en las instrucciones de visualizacion, distinto del ID del repositorio, lo que sugiere que la tarjeta fue copiada de otra publicacion sin adaptar.
 
 ## Capacidades
 
@@ -35,7 +35,7 @@ Tampoco se documenta la composicion del dataset (en RL no aplica en el sentido s
 - Exportacion a ONNX, segun las etiquetas del repositorio, lo que permitiria inferencia fuera de Unity con runtimes compatibles.
 - Reanudacion del entrenamiento desde el checkpoint con `mlagents-learn --resume`.
 - Registro de metricas de entrenamiento en TensorBoard (etiqueta `tensorboard`), aunque las curvas no se incluyen en la informacion disponible.
-- Visualizacion interactiva del agente en el navegador mediante el visor de agentes de la organizacion `unity` en HuggingFace.
+- Visualizacion interactiva del agente en el navegador mediante el visor de agentes de la organizacion `unity` en Hugging Face.
 - No dispone de generacion de texto, razonamiento simbolico, codigo, matematicas, vision general, tool calling, capacidades de agente multi-paso fuera de la simulacion, ni capacidades multilingues.
 
 ## Casos de uso
@@ -57,18 +57,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible. El tamano del repositorio se declara como 0.0 GB y no se especifica el numero de parametros, por lo que no es posible calcularla.
 - GPU recomendadas: no disponibles en la informacion proporcionada. En terminos generales, las politicas de ML-Agents de complejidad baja o media suelen ejecutarse en CPU sin problema, pero esto es una consideracion generica y no un dato verificado para este checkpoint.
 - Compatibilidad con GPU de consumo: no confirmada. No hay datos de tamano que permitan afirmar si cabe en una RTX 3060, 4090 u otras.
-- Opciones de despliegue: runtime de Unity ML-Agents (formato `.nn`), `onnxruntime` o cualquier runtime compatible con ONNX, y el visor web de agentes de HuggingFace. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que no aplican a un agente de RL.
+- Opciones de despliegue: runtime de Unity ML-Agents (formato `.nn`), `onnxruntime` o cualquier runtime compatible con ONNX, y el visor web de agentes de Hugging Face. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que no aplican a un agente de RL.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `dhanushh011/ppo-SnowballTarget` | PPO (ML-Agents) | SnowballTarget | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
-| `settybhavithav/ppo-SnowballTarget` (mencionado en la propia model card) | PPO (ML-Agents) | SnowballTarget | no disponible | no aplica | no disponible | HuggingFace |
-| Otros agentes PPO de la organizacion `unity` en HuggingFace | PPO (ML-Agents) | Entornos de ejemplo de ML-Agents | no disponible | no aplica | no disponible | HuggingFace |
+| `dhanushh011/ppo-SnowballTarget` | PPO (ML-Agents) | SnowballTarget | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
+| `settybhavithav/ppo-SnowballTarget` (mencionado en la propia model card) | PPO (ML-Agents) | SnowballTarget | no disponible | no aplica | no disponible | Hugging Face |
+| Otros agentes PPO de la organizacion `unity` en Hugging Face | PPO (ML-Agents) | Entornos de ejemplo de ML-Agents | no disponible | no aplica | no disponible | Hugging Face |
 
-No se dispone de datos verificables de rendimiento, parametros o licencia para ninguno de los modelos comparados, por lo que la comparativa queda limitada a la categoria y al entorno de entrenamiento. La organizacion `unity` en HuggingFace agrupa el catalogo de agentes de ejemplo de ML-Agents y es el punto de referencia natural para localizar alternativas.
+No se dispone de datos verificables de rendimiento, parametros o licencia para ninguno de los modelos comparados, por lo que la comparativa queda limitada a la categoria y al entorno de entrenamiento. La organizacion `unity` en Hugging Face agrupa el catalogo de agentes de ejemplo de ML-Agents y es el punto de referencia natural para localizar alternativas.
 
 ## Limitaciones y advertencias
 
@@ -84,10 +84,10 @@ No se dispone de datos verificables de rendimiento, parametros o licencia para n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhanushh011/ppo-SnowballTarget
+- Modelo en Hugging Face: https://huggingface.co/dhanushh011/ppo-SnowballTarget
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Documentacion de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
-- Tutorial corto del curso de deep RL de HuggingFace: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
+- Tutorial corto del curso de deep RL de Hugging Face: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo sobre ML-Agents (unidad 5): https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Organizacion de agentes de ejemplo en HuggingFace: https://huggingface.co/unity
+- Organizacion de agentes de ejemplo en Hugging Face: https://huggingface.co/unity
 - Repositorio referenciado en la model card (identificador distinto): https://huggingface.co/settybhavithav/ppo-SnowballTarget

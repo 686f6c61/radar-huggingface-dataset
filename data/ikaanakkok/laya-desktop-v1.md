@@ -81,9 +81,9 @@ Latencia: ~959 ms por pasada en la máquina de entrenamiento con chunking (preci
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ikaanakkok/laya-desktop-v1 | 321,9 M | TSV AT-SPI de ~1.200 caracteres | op 0.939 / target top-1 0.231 (held-out) | MIT | HuggingFace |
-| cklxx/laya-browser v17s | no disponible | no disponible | no disponible (modelo base del que deriva) | Apache-2.0 | HuggingFace |
-| convaiinnovations/laya | no disponible | soporta 100+ idiomas | no disponible | Apache-2.0 | HuggingFace / API alojada |
+| ikaanakkok/laya-desktop-v1 | 321,9 M | TSV AT-SPI de ~1.200 caracteres | op 0.939 / target top-1 0.231 (held-out) | MIT | Hugging Face |
+| cklxx/laya-browser v17s | no disponible | no disponible | no disponible (modelo base del que deriva) | Apache-2.0 | Hugging Face |
+| convaiinnovations/laya | no disponible | soporta 100+ idiomas | no disponible | Apache-2.0 | Hugging Face / API alojada |
 
 El modelo es un derivado especializado del head de navegador (`laya-browser v17s`): comparte arquitectura y formato, pero sustituye el canal de observación web por el árbol AT-SPI de escritorio. No hay resultados públicos de benchmarks comparables entre ambos checkpoints en la información disponible, más allá de que el head de navegador está ponderado hacia el turco y este hacia el inglés.
 
@@ -102,10 +102,10 @@ El modelo es un derivado especializado del head de navegador (`laya-browser v17s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikaanakkok/laya-desktop-v1
+- Modelo en Hugging Face: https://huggingface.co/ikaanakkok/laya-desktop-v1
 - Modelo base: https://huggingface.co/cklxx/laya-browser
 - Laya (sitio oficial): https://laya.convaiinnovations.com/
 - Repositorio GitHub de Laya: https://github.com/NandhaKishorM/laya
 - Laya AI (sitio del modelo): https://laya-model.com/
 - Laya AI, guía de inicio: https://laya-model.com/get-started
-- Blog en HuggingFace sobre Laya: https://huggingface.co/blog/sora-2/laya-ai-model-how-it-works-run-it-locally-and-eval
+- Blog en Hugging Face sobre Laya: https://huggingface.co/blog/sora-2/laya-ai-model-how-it-works-run-it-locally-and-eval

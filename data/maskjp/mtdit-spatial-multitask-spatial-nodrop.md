@@ -91,7 +91,7 @@ No se dispone de comparaciones con otros modelos de políticas de difusión fuer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maskjp/mtdit-spatial-multitask-spatial-nodrop
+- Modelo en Hugging Face: https://huggingface.co/maskjp/mtdit-spatial-multitask-spatial-nodrop
 - Repositorio del plugin y script de sensibilidad: https://github.com/maskjp/lerobot_policy_mtdit_spatial
-- Perfil del autor en HuggingFace: https://huggingface.co/maskjp
+- Perfil del autor en Hugging Face: https://huggingface.co/maskjp
 - Perfil del autor en GitHub: https://github.com/maskjp

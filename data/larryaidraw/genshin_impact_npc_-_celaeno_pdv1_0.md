@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Celaeno PDv1_0 es un checkpoint de modelo de difusion para generacion de imagenes publicado por el usuario LarryAIDraw en HuggingFace. El modelo esta orientado a la generacion del personaje Celaeno, un NPC del videojuego Genshin Impact, y sigue el formato habitual de los checkpoints de Stable Diffusion distribuidos en Civitai, plataforma a la que apunta el enlace incluido en la model card.
+Celaeno PDv1_0 es un checkpoint de modelo de difusion para generacion de imagenes publicado por el usuario LarryAIDraw en Hugging Face. El modelo esta orientado a la generacion del personaje Celaeno, un NPC del videojuego Genshin Impact, y sigue el formato habitual de los checkpoints de Stable Diffusion distribuidos en Civitai, plataforma a la que apunta el enlace incluido en la model card.
 
 El repositorio tiene un tamano de 0,2 GB, lo que es coherente con un checkpoint en precision reducida o un modelo de difusion de tipo SD 1.5 (aproximadamente 2 GB en fp16) comprimido, o bien con un modelo de menor tamano. No se dispone de informacion sobre la arquitectura exacta, el numero de parametros ni la longitud de contexto, ya que la model card original se limita a un enlace externo.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Celaeno PDv1_0 | no disponible | no aplica | no disponible | creativeml-openrail-m | HuggingFace, 0 descargas |
+| Celaeno PDv1_0 | no disponible | no aplica | no disponible | creativeml-openrail-m | Hugging Face, 0 descargas |
 | Checkpoints de personaje de Genshin Impact en Civitai | variable | no aplica | no disponible | variable (habitualmente CreativeML OpenRAIL-M) | Civitai |
 | Stable Diffusion 1.5 base | ~860 M (UNet) | no aplica | referencia general de difusion | creativeml-openrail-m | Amplia |
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LarryAIDraw/Genshin_Impact_NPC_-_Celaeno_PDv1_0
+- Hugging Face: https://huggingface.co/LarryAIDraw/Genshin_Impact_NPC_-_Celaeno_PDv1_0
 - Civitai (referenciado en la model card): https://civitai.red/models/2960307/genshin-impact-npc-celaeno?modelVersionId=3353650
 - Licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license

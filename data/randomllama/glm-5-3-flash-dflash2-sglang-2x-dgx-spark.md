@@ -82,7 +82,7 @@ La comparativa más directa es contra el mismo modelo sin decodificación especu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/randomllama/GLM-5.3-Flash-DFlash2-SGLang-2x-DGX-Spark
+- Hugging Face: https://huggingface.co/randomllama/GLM-5.3-Flash-DFlash2-SGLang-2x-DGX-Spark
 - GitHub (repositorio de la receta): https://github.com/beastllama/GLM-5.3-Flash-DFlash2-SGLang-2x-DGX-Spark/tree/main
 - Documentación de SGLang para GLM-5.3-Flash: https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.3-Flash
 - Guía de Unsloth para ejecutar GLM-5.3 localmente: https://unsloth.ai/docs/models/glm-5.3

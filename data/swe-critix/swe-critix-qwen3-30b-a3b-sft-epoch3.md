@@ -77,5 +77,5 @@ La comparación se limita al modelo base, al ser el único referente directo dis
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/SWE-Critix/SWE-Critix-Qwen3-30B-A3B-SFT-Epoch3
+- Hugging Face del modelo: https://huggingface.co/SWE-Critix/SWE-Critix-Qwen3-30B-A3B-SFT-Epoch3
 - Modelo base Qwen3-30B-A3B: https://huggingface.co/Qwen/Qwen3-30B-A3B

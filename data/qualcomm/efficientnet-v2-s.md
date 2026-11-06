@@ -92,7 +92,7 @@ La informacion proporcionada no incluye resultados de otros backbones comparable
 
 | Modelo | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qualcomm/EfficientNet-V2-s | 21,4 M | 384x384 | bsd-3-clause | HuggingFace + Qualcomm AI Hub |
+| qualcomm/EfficientNet-V2-s | 21,4 M | 384x384 | bsd-3-clause | Hugging Face + Qualcomm AI Hub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 Se puede senalar como referencia estructural que EfficientNetV2-s se situa en el rango de backbones ligeros, con 21,4 M de parametros, dentro de una familia que va desde variantes menores hasta configuraciones mas grandes, pero no hay datos en la informacion disponible para contrastar precision frente a esas alternativas.
@@ -110,7 +110,7 @@ Se puede senalar como referencia estructural que EfficientNetV2-s se situa en el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/EfficientNet-V2-s
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/EfficientNet-V2-s
 - Pagina en Qualcomm AI Hub: https://aihub.qualcomm.com/models/efficientnet_v2_s
 - Repositorio Qualcomm AI Hub Models (modelo concreto): https://github.com/qualcomm/ai-hub-models/blob/v0.64.0/src/qai_hub_models/models/efficientnet_v2_s
 - Repositorio Qualcomm AI Hub Models (general): https://github.com/qualcomm/ai-hub-models

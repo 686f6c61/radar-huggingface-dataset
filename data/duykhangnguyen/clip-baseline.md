@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`duykhangnguyen/clip-baseline` es un repositorio experimental publicado en HuggingFace que contiene un esqueleto de codigo de una arquitectura CLIP orientada a tareas de generacion. No es un modelo entrenado ni un checkpoint listo para produccion: el propio autor lo describe como una base de codigo que conserva "intencionadamente manejable" el montaje de la arquitectura para poder inspeccionar cambios antes de lanzar un entrenamiento completo. El peso incluido (`model.safetensors`) se presenta explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un modelo con rendimiento demostrado.
+`duykhangnguyen/clip-baseline` es un repositorio experimental publicado en Hugging Face que contiene un esqueleto de codigo de una arquitectura CLIP orientada a tareas de generacion. No es un modelo entrenado ni un checkpoint listo para produccion: el propio autor lo describe como una base de codigo que conserva "intencionadamente manejable" el montaje de la arquitectura para poder inspeccionar cambios antes de lanzar un entrenamiento completo. El peso incluido (`model.safetensors`) se presenta explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un modelo con rendimiento demostrado.
 
 El repositorio esta firmado por el usuario `duykhangnguyen`, se distribuye bajo licencia MIT y, en el momento de la consulta, acumulaba 0 descargas y 0 likes. El tamano del repositorio es de 0,0 GB y safetensors registra 24.832 parametros, una cifra que contrasta con la etiqueta de escala "giant" que aparece en la documentacion de arquitectura: se trata, por tanto, de una configuracion declarada y de un checkpoint inicial minimo, no de un modelo de gran tamano realmente materializado.
 
@@ -86,5 +86,5 @@ La comparacion significativa es de proposito y madurez: los modelos de OpenAI y 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/duykhangnguyen/clip-baseline
+- Repositorio en Hugging Face: https://huggingface.co/duykhangnguyen/clip-baseline
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo adicionales o demos.

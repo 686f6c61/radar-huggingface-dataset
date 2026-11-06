@@ -88,7 +88,7 @@ Las tres variantes pertenecen a la misma familia de modelos de puntero de Captch
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CaptchaKraken/TwilightV2-2B-LoRA
+- Repositorio Hugging Face: https://huggingface.co/CaptchaKraken/TwilightV2-2B-LoRA
 - Modelo fusionado: https://huggingface.co/CaptchaKraken/TwilightV2-2B
 - Versión GGUF: https://huggingface.co/CaptchaKraken/TwilightV2-2B-GGUF
 - Variante Sunlight V2 (0.8B): https://huggingface.co/CaptchaKraken/SunlightV2-0.8B

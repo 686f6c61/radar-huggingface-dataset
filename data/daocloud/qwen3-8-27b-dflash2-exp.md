@@ -77,9 +77,9 @@ La accepted length se calcula como `1 + accepted_tokens / draft_calls`, donde un
 
 | Modelo | Parametros | Contexto | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DaoCloud/Qwen3.8-27B-DFlash2-Exp | 1,92 B | 262.144 (objetivo) | DFlash 2 (7-query, sample_from_anchor) | Apache-2.0 | HuggingFace |
-| incoai/Qwen3.8-27B-DFlash2 | no disponible | 262.144 (objetivo) | DFlash 2 | no disponible | HuggingFace, ModelScope |
-| Qwen/Qwen3.8-27B (objetivo) | 27 B (aprox.) | 262.144 | Transformer denso multimodal | Apache-2.0 | HuggingFace |
+| DaoCloud/Qwen3.8-27B-DFlash2-Exp | 1,92 B | 262.144 (objetivo) | DFlash 2 (7-query, sample_from_anchor) | Apache-2.0 | Hugging Face |
+| incoai/Qwen3.8-27B-DFlash2 | no disponible | 262.144 (objetivo) | DFlash 2 | no disponible | Hugging Face, ModelScope |
+| Qwen/Qwen3.8-27B (objetivo) | 27 B (aprox.) | 262.144 | Transformer denso multimodal | Apache-2.0 | Hugging Face |
 
 La comparativa con otros drafter especulativos (como EAGLE o Medusa) no esta disponible en la informacion proporcionada. La diferencia principal con la version de incoai es la configuracion de 7 consultas en lugar de 8, que reduce el coste computacional del draft.
 
@@ -95,9 +95,9 @@ La comparativa con otros drafter especulativos (como EAGLE o Medusa) no esta dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DaoCloud/Qwen3.8-27B-DFlash2-Exp
+- Modelo en Hugging Face: https://huggingface.co/DaoCloud/Qwen3.8-27B-DFlash2-Exp
 - Dataset de entrenamiento: https://huggingface.co/datasets/DaoCloud/Qwen3.8-27B-Drafter-SFT
 - Version espejo en ModelScope: https://www.modelscope.cn/models/z-lab/Qwen3.8-27B-DFlash2
-- Modelo base Qwen3.8-27B (HuggingFace): https://huggingface.co/incoai/Qwen3.8-27B-DFlash2 (espejo) y https://github.com/AlibabaCloud-Official/Qwen3.8-27B (repositorio oficial)
+- Modelo base Qwen3.8-27B (Hugging Face): https://huggingface.co/incoai/Qwen3.8-27B-DFlash2 (espejo) y https://github.com/AlibabaCloud-Official/Qwen3.8-27B (repositorio oficial)
 - PR de vLLM requerido: https://github.com/vllm-project/vllm/pull/54154
 - Issue de vLLM para varlen GDN: https://github.com/vllm-project/vllm/issues/51869

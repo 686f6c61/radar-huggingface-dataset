@@ -86,7 +86,7 @@ Ademas, se indica que es aproximadamente 3,2 veces mas rapido en RTF y usa 3,7 v
 
 | Modelo | Parametros | Latentes / arquitectura | WER (Freya-TR-Eval) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FreyaTTS-small | 183,2 M | Flow-matching DiT sobre AudioVAE2 | 8,0% | Apache-2.0 | Pesos abiertos en HuggingFace |
+| FreyaTTS-small | 183,2 M | Flow-matching DiT sobre AudioVAE2 | 8,0% | Apache-2.0 | Pesos abiertos en Hugging Face |
 | XTTS-v2 | no disponible en la informacion | no disponible | 11,1% | no disponible en la informacion | no disponible en la informacion |
 | F5-TTS | no disponible en la informacion | no disponible | 24,3% | no disponible en la informacion | no disponible en la informacion |
 | VoxCPM2 | 2 B (segun el model card) | no disponible (proveedor del VAE) | no disponible | Apache-2.0 (AudioVAE2) | openbmb/VoxCPM2 |
@@ -106,7 +106,7 @@ Datos de la comparativa limitados a lo indicado en el model card. FreyaTTS-small
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/freyavoice/Freya-TTS
+- Modelo en Hugging Face: https://huggingface.co/freyavoice/Freya-TTS
 - Repositorio GitHub: https://github.com/freyavoiceai/FreyaTTS
 - Conjunto de evaluacion: https://huggingface.co/datasets/freyavoice/freya-tr-eval
 - Informe tecnico (arXiv): https://arxiv.org/abs/2607.09530

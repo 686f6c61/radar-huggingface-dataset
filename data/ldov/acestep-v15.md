@@ -70,14 +70,14 @@ No se dispone de comparativas publicadas con otros modelos de generacion de musi
 - El LM de 4B no tiene cuantizacion Q4_K_M porque rompe la generacion de codigos de audio; solo se ofrecen Q8_0, Q6_K y Q5_K_M para ese componente.
 - El text encoder esta fijado a Qwen3-Embedding-0.6B; no es posible sustituirlo por otro modelo sin reentrenar el DiT.
 - Aunque la licencia MIT permite uso comercial, los derechos de autor de la musica generada pueden ser cuestionados en algunas jurisdicciones; el usuario debe verificar la legislacion local.
-- El repositorio tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es una publicacion reciente o poco difundida; la comunidad aun no ha validado su estabilidad en produccion.
+- El repositorio tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es una publicacion reciente o poco difundida; la comunidad aun no ha validado su estabilidad en produccion.
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/ldov/acestep-v15)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/ldov/acestep-v15)
 - [Codigo fuente de acestep.cpp](https://github.com/ServeurpersoCom/acestep.cpp)
 - [Repositorio original de ACE-Step 1.5](https://github.com/ace-step/ACE-Step-1.5)
-- [Modelo base original en HuggingFace](https://huggingface.co/ACE-Step/acestep-v15-base)
+- [Modelo base original en Hugging Face](https://huggingface.co/ACE-Step/acestep-v15-base)
 - [Modelo original ACE-Step (primera version)](https://github.com/ace-step/ACE-Step)
 - [Modelo en ModelScope (variante XL)](https://modelscope.ai/models/ACE-Step/acestep-v15-xl-base)
 - [Guia para musicos (discusion en GitHub)](https://github.com/ace-step/ACE-Step-1.5/discussions/235)

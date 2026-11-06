@@ -91,7 +91,7 @@ MiniCPM-V 4.5 se posiciona como el modelo mas capaz de la serie MiniCPM-V, con u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4_5-gguf
+- Repositorio Hugging Face: https://huggingface.co/openbmb/MiniCPM-V-4_5-gguf
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4_5
 - GitHub del proyecto: https://github.com/OpenBMB/MiniCPM-o
 - Demo online: http://101.126.42.235:30910/

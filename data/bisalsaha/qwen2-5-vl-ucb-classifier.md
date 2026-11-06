@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `bisalsaha/qwen2.5-vl-ucb-classifier` contiene un modelo publicado en HuggingFace por el usuario `bisalsaha` bajo la librería `transformers`. El nombre del modelo sugiere una adaptación de la familia Qwen2.5-VL para tareas de clasificación mediante UCB (Upper Confidence Bound), un enfoque habitual en aprendizaje por refuerzo y bandidos multi-brazo. Sin embargo, la model card asociada es una plantilla autogenerada que no incluye descripción técnica, datos de entrenamiento, arquitectura, licencia ni métricas de evaluación. Tampoco se han publicado resultados de benchmarks ni especificaciones de hardware en la información disponible.
+El repositorio `bisalsaha/qwen2.5-vl-ucb-classifier` contiene un modelo publicado en Hugging Face por el usuario `bisalsaha` bajo la librería `transformers`. El nombre del modelo sugiere una adaptación de la familia Qwen2.5-VL para tareas de clasificación mediante UCB (Upper Confidence Bound), un enfoque habitual en aprendizaje por refuerzo y bandidos multi-brazo. Sin embargo, la model card asociada es una plantilla autogenerada que no incluye descripción técnica, datos de entrenamiento, arquitectura, licencia ni métricas de evaluación. Tampoco se han publicado resultados de benchmarks ni especificaciones de hardware en la información disponible.
 
 A día de hoy, el repositorio no registra descargas ni likes, y su tamaño es de 0.0 GB, lo que indica que no contiene pesos accesibles o que estos no han sido cargados. Por tanto, la información verificable sobre este modelo es extremadamente limitada, y cualquier uso en producción requeriría una validación previa exhaustiva.
 
@@ -63,8 +63,8 @@ No se dispone de información suficiente para realizar una comparativa con model
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | bisalsaha/qwen2.5-vl-ucb-classifier | no disponible | no disponible | no disponible | repositorio sin pesos |
-| Qwen2.5-VL-7B | 7B | no disponible | Apache 2.0 | HuggingFace |
-| Qwen2.5-VL-72B | 72B | no disponible | Qwen Research License | HuggingFace |
+| Qwen2.5-VL-7B | 7B | no disponible | Apache 2.0 | Hugging Face |
+| Qwen2.5-VL-72B | 72B | no disponible | Qwen Research License | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bisalsaha/qwen2.5-vl-ucb-classifier
+- Repositorio en Hugging Face: https://huggingface.co/bisalsaha/qwen2.5-vl-ucb-classifier
 - Colección Qwen2.5 (referencia genérica): https://huggingface.co/collections/Qwen/qwen25
 - Colección Qwen2.5-VL (referencia genérica): https://huggingface.co/collections/Qwen/qwen25-vl
 - Documento de impacto medioambiental citado en la model card: https://arxiv.org/abs/1910.09700

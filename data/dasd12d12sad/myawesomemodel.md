@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario DASD12D12SAD, con identificador `DASD12D12SAD/MyAwesomeModel`. El repositorio declara la librería `transformers`, framework PyTorch, pipeline `feature-extraction`, la etiqueta `bert`, compatibilidad con endpoints y licencia MIT. Registra 0 descargas y 0 likes, y fue creado y actualizado el 12 de septiembre de 2026 con apenas tres minutos de diferencia entre ambos eventos, lo que apunta a un repositorio de prueba, plantilla o publicación no consolidada.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario DASD12D12SAD, con identificador `DASD12D12SAD/MyAwesomeModel`. El repositorio declara la librería `transformers`, framework PyTorch, pipeline `feature-extraction`, la etiqueta `bert`, compatibilidad con endpoints y licencia MIT. Registra 0 descargas y 0 likes, y fue creado y actualizado el 12 de septiembre de 2026 con apenas tres minutos de diferencia entre ambos eventos, lo que apunta a un repositorio de prueba, plantilla o publicación no consolidada.
 
 La model card, en cambio, describe un modelo de razonamiento de gran tamaño con modo de pensamiento, mejoras de post-entrenamiento, soporte de function calling y búsqueda web aumentada, y cita resultados en AIME 2025. Esa descripción es incompatible con las etiquetas del propio repositorio (`bert`, `feature-extraction`), contiene una tabla de benchmarks con marcadores `{RESULT}` sin sustituir y hace referencia a imágenes (`figures/fig1.png`, `figures/fig2.png`, `figures/fig3.png`) y a un repositorio de código que no se enlazan ni se detallan.
 
@@ -22,7 +22,7 @@ Por tanto, esta ficha recoge únicamente lo declarado por el autor y marca como 
 | Formato de pesos | No disponible (librería declarada: `transformers` con PyTorch; no se listan ficheros de pesos) |
 | Pipeline declarado | `feature-extraction` |
 | Framework | PyTorch |
-| Compatibilidad | Etiqueta `endpoints_compatible` (compatible con Inference Endpoints de HuggingFace) |
+| Compatibilidad | Etiqueta `endpoints_compatible` (compatible con Inference Endpoints de Hugging Face) |
 | Autor | DASD12D12SAD |
 | Fecha de creación | 2026-09-12 |
 | Última actualización | 2026-09-12 |
@@ -75,7 +75,7 @@ La única cifra concreta es la afirmación de una mejora en AIME 2025 del 70 % a
 - VRAM estimada para inferencia: no disponible. Sin conocer el número de parámetros ni la arquitectura, no puede calcularse.
 - GPU recomendadas: no disponible por la misma razón.
 - Compatibilidad con GPU de consumo: no disponible. A modo de referencia meramente hipotética, si la etiqueta `bert` correspondiese a un encoder tipo BERT-base (aproximadamente 110 millones de parámetros), la inferencia cabría en GPUs con 4-6 GB de VRAM; sin embargo, no hay ninguna confirmación de que ese sea el tamaño real.
-- Opciones de despliegue: la librería declarada es `transformers` y el repositorio incluye la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con Inference Endpoints de HuggingFace. No hay confirmación de soporte para vLLM, TGI, llama.cpp u Ollama; estos dos últimos requieren pesos en formato GGUF, que no se publican en la información disponible.
+- Opciones de despliegue: la librería declarada es `transformers` y el repositorio incluye la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con Inference Endpoints de Hugging Face. No hay confirmación de soporte para vLLM, TGI, llama.cpp u Ollama; estos dos últimos requieren pesos en formato GGUF, que no se publican en la información disponible.
 - Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo, tiempo hasta el primer token ni requisitos de memoria.
 
 ## Comparativa con modelos similares
@@ -98,6 +98,6 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DASD12D12SAD/MyAwesomeModel
+- Modelo en Hugging Face: https://huggingface.co/DASD12D12SAD/MyAwesomeModel
 
 Nota sobre la búsqueda web: los resultados devueltos corresponden a la marca de ropa «Peppercorn» (tiendas Zalando, ABOUT YOU y registros mercantiles polacos) y no guardan ninguna relación con el modelo. No se han encontrado papers, blogs, repositorios de código ni demos asociados a `DASD12D12SAD/MyAwesomeModel`.

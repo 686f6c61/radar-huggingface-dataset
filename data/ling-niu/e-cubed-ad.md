@@ -4,7 +4,7 @@
 
 E-cubed-AD (E³AD) es un modelo de investigacion presentado en NeurIPS 2025 por un equipo de autores (Ling Niu, Xiaoji Zheng, Han Wang, Chen Zheng, Ziyuan Yang, Bokui Chen y Jiangtao Gong) bajo el titulo "Embodied Cognition Augmented End2End Autonomous Driving". Propone un paradigma que integra señales de electroencefalograma (EEG) humano en sistemas de conduccion autonoma end-to-end (E2E-AD) mediante aprendizaje comparativo entre redes de extraccion de caracteristicas visuales y un modelo general de EEG. El objetivo es aprender cognicion de conduccion humana latente para mejorar la planificacion del vehiculo.
 
-El repositorio de HuggingFace asociado (ling-niu/E-cubed-AD) se creo en septiembre de 2026 y no contiene informacion tecnica adicional mas alla de la licencia Apache-2.0. No se publican parametros, arquitectura, contexto ni pesos. Toda la informacion disponible proviene del paper de arXiv (2511.01334), que describe el metodo pero no ofrece especificaciones cuantitativas del modelo. Se trata de una contribucion academica con un repositorio de codigo aparentemente vacio o sin documentacion.
+El repositorio de Hugging Face asociado (ling-niu/E-cubed-AD) se creo en septiembre de 2026 y no contiene informacion tecnica adicional mas alla de la licencia Apache-2.0. No se publican parametros, arquitectura, contexto ni pesos. Toda la informacion disponible proviene del paper de arXiv (2511.01334), que describe el metodo pero no ofrece especificaciones cuantitativas del modelo. Se trata de una contribucion academica con un repositorio de codigo aparentemente vacio o sin documentacion.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ No disponible. No se encuentran modelos comparables en la informacion proporcion
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no contiene pesos, codigo ni documentacion tecnica; solo la licencia. No es utilizable directamente para inferencia.
+- El repositorio de Hugging Face no contiene pesos, codigo ni documentacion tecnica; solo la licencia. No es utilizable directamente para inferencia.
 - No se han publicado resultados cuantitativos de rendimiento, por lo que se desconoce su eficacia real frente a otros metodos E2E-AD.
 - La dependencia de datos EEG limita su aplicabilidad a entornos donde se disponga de este tipo de señales, lo cual es poco comun en vehiculos de produccion.
 - Al ser un trabajo de investigacion, no se han documentado sesgos, riesgos de alucinacion (en el sentido de planificacion erronea) ni limitaciones de contexto.
@@ -66,4 +66,4 @@ No disponible. No se encuentran modelos comparables en la informacion proporcion
 - Pagina de NeurIPS 2025 (poster): https://neurips.cc/virtual/2025/poster/120325
 - Entrada en ModelScope: https://www.modelscope.cn/papers/2511.01334
 - Resumen en ChatPaper: https://chatpaper.com/paper/206002
-- Repositorio HuggingFace: https://huggingface.co/ling-niu/E-cubed-AD
+- Repositorio Hugging Face: https://huggingface.co/ling-niu/E-cubed-AD

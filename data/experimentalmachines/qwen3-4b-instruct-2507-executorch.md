@@ -83,8 +83,8 @@ La model card unicamente reporta pruebas de humo (smoke test): los cinco artefac
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| experimentalmachines/Qwen3-4B-Instruct-2507-ExecuTorch | ~4B | 2k a 32k (ventana fija por artefacto) | `.pte` (8da4w, a16w8) | apache-2.0 | HuggingFace, 55,3 GB, 59 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4B | no disponible | safetensors en precision completa | apache-2.0 | HuggingFace (repositorio de origen) |
+| experimentalmachines/Qwen3-4B-Instruct-2507-ExecuTorch | ~4B | 2k a 32k (ventana fija por artefacto) | `.pte` (8da4w, a16w8) | apache-2.0 | Hugging Face, 55,3 GB, 59 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4B | no disponible | safetensors en precision completa | apache-2.0 | Hugging Face (repositorio de origen) |
 | Alternativas on-device de otros exportadores | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion mas util no es entre modelos distintos sino entre los backends de este mismo repositorio, ya que el modelo es identico:
@@ -109,11 +109,11 @@ No se dispone de datos de rendimiento de modelos comparables para establecer una
 - Uso comercial: permitido bajo Apache 2.0, la misma licencia que el modelo base de Qwen, cuyo texto se enlaza en la model card.
 - No es un modelo nuevo: cualquier mejora o defecto del base se hereda intacto; la cuantizacion 8da4w o a16w8 puede degradar la calidad respecto al original en precision completa.
 - Solo se ha probado la generacion de una palabra concreta en los smoke tests, por lo que no hay evidencia publica de calidad en tareas largas o complejas.
-- Metadatos de la ficha de HuggingFace con fechas de creacion y actualizacion en 2026, posteriores a la revision del modelo base; conviene verificar la procedencia antes de usarlo en produccion.
+- Metadatos de la ficha de Hugging Face con fechas de creacion y actualizacion en 2026, posteriores a la revision del modelo base; conviene verificar la procedencia antes de usarlo en produccion.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/experimentalmachines/Qwen3-4B-Instruct-2507-ExecuTorch
+- Repositorio Hugging Face: https://huggingface.co/experimentalmachines/Qwen3-4B-Instruct-2507-ExecuTorch
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/main/LICENSE
 - Aplicacion Android openweights: https://github.com/alpharomercoma/openweights

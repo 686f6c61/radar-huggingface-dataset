@@ -30,7 +30,7 @@ El modelo es un fine-tuning de `google/gemma-4-26B-A4B-it`, un transformer decod
 - Preservacion de bloques de codigo en cualquier lenguaje de programacion, incluyendo indentacion y comentarios.
 - Mantenimiento de la estructura del documento: encabezados, listas, tablas y parrafos.
 - Generacion de texto conversacional (heredada del modelo base Gemma 4 instruct).
-- Soporte de chat multi-turno mediante `apply_chat_template` de HuggingFace Transformers.
+- Soporte de chat multi-turno mediante `apply_chat_template` de Hugging Face Transformers.
 - Compatible con vLLM para inferencia de alto rendimiento.
 
 ## Casos de uso
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 - VRAM estimada para inferencia: el modelo completo en BF16 ocupa aproximadamente 51,6 GB (coincide con el tamano del repositorio). Con cuantizacion de 4 bits (no proporcionada oficialmente) se estima un uso de VRAM en torno a 13-15 GB, aunque no hay archivos GGUF ni AWQ publicados.
 - GPU recomendadas: para ejecucion en BF16 se necesitan GPUs con al menos 52 GB de VRAM, como A100 80GB, H100 80GB o AMD MI300X (entorno donde fue probado). Con cuantizacion 4-bit podria caber en una RTX 4090 (24 GB) o similar, pero no se dispone de archivos cuantizados oficiales.
-- Opciones de despliegue: vLLM (ejemplo incluido en la model card), HuggingFace Transformers con `device_map="auto"` y `torch_dtype="bfloat16"`. No se menciona compatibilidad con llama.cpp u Ollama.
+- Opciones de despliegue: vLLM (ejemplo incluido en la model card), Hugging Face Transformers con `device_map="auto"` y `torch_dtype="bfloat16"`. No se menciona compatibilidad con llama.cpp u Ollama.
 - Latencia y throughput: no disponibles. Al ser un MoE con 4B activos, la inferencia es significativamente mas rapida que un modelo denso de 26B, pero no se aportan cifras concretas.
 - Advertencia: el autor indica que el modelo fue desarrollado y probado en GPUs AMD MI300X con ROCm; algunos paquetes pueden requerir ajustes en entornos NVIDIA CUDA.
 
@@ -69,6 +69,6 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sulabhkatiyar/en-indic-translate-26b
+- Modelo en Hugging Face: https://huggingface.co/sulabhkatiyar/en-indic-translate-26b
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Terminos de la licencia Gemma: https://ai.google.dev/gemma/terms

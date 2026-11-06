@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Jackwang111/M2RL-MT_OPD es un repositorio publicado en HuggingFace por el autor Jackwang111, con licencia Apache 2.0. Sin embargo, la model card asociada no contiene ninguna descripción técnica, ni información sobre arquitectura, datos de entrenamiento o capacidades. La fecha de creación indica 2026-09-07 y el repositorio no tiene descargas ni "likes", lo que sugiere que se trata de un modelo reciente o en fase inicial.
+El modelo Jackwang111/M2RL-MT_OPD es un repositorio publicado en Hugging Face por el autor Jackwang111, con licencia Apache 2.0. Sin embargo, la model card asociada no contiene ninguna descripción técnica, ni información sobre arquitectura, datos de entrenamiento o capacidades. La fecha de creación indica 2026-09-07 y el repositorio no tiene descargas ni "likes", lo que sugiere que se trata de un modelo reciente o en fase inicial.
 
 Los resultados de búsqueda web apuntan a un repositorio de GitHub llamado Mosi-AI/M2RL que describe un método de entrenamiento denominado OPD (on-policy distillation), el cual utiliza un modelo SFT como inicialización de estudiante, consulta servidores de maestros para obtener log-probabilidades y aplica un estimador de ventaja para destilación on-policy. El nombre del modelo M2RL-MT_OPD podría sugerir una relación con este framework, pero no hay evidencia suficiente para confirmarlo. En consecuencia, la información disponible es insuficiente para evaluar el modelo o determinar su relevancia.
 
@@ -21,7 +21,7 @@ Los resultados de búsqueda web apuntan a un repositorio de GitHub llamado Mosi-
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura ni el proceso de entrenamiento en la model card del repositorio HuggingFace. Los resultados de búsqueda web muestran un repositorio de GitHub denominado Mosi-AI/M2RL que describe un método de entrenamiento llamado OPD (on-policy distillation). Según esa descripción, el proceso utiliza un modelo SFT como inicialización de estudiante, consulta servidores de maestros para obtener log-probabilidades y destila conocimiento mediante aprendizaje on-policy con un estimador de ventaja. No obstante, no existe confirmación de que el modelo Jackwang111/M2RL-MT_OPD emplee dicho método, por lo que cualquier afirmación sobre su entrenamiento debe considerarse no verificada.
+No se ha publicado información sobre la arquitectura ni el proceso de entrenamiento en la model card del repositorio Hugging Face. Los resultados de búsqueda web muestran un repositorio de GitHub denominado Mosi-AI/M2RL que describe un método de entrenamiento llamado OPD (on-policy distillation). Según esa descripción, el proceso utiliza un modelo SFT como inicialización de estudiante, consulta servidores de maestros para obtener log-probabilidades y destila conocimiento mediante aprendizaje on-policy con un estimador de ventaja. No obstante, no existe confirmación de que el modelo Jackwang111/M2RL-MT_OPD emplee dicho método, por lo que cualquier afirmación sobre su entrenamiento debe considerarse no verificada.
 
 ## Capacidades
 
@@ -52,5 +52,5 @@ No disponible. No hay informacion suficiente para comparar este modelo con alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jackwang111/M2RL-MT_OPD
+- Hugging Face: https://huggingface.co/Jackwang111/M2RL-MT_OPD
 - Repositorio de GitHub relacionado (Mosi-AI/M2RL): https://github.com/Mosi-AI/M2RL/tree/main/M2RL

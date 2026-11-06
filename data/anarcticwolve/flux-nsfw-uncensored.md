@@ -68,7 +68,7 @@ No disponible. No se han encontrado en la informacion proporcionada otros LoRA d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anarcticwolve/Flux-NSFW-uncensored
+- Repositorio Hugging Face: https://huggingface.co/anarcticwolve/Flux-NSFW-uncensored
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Documentacion de diffusers: https://huggingface.co/docs/diffusers/index
 - Documentacion de PEFT: https://huggingface.co/docs/peft/index

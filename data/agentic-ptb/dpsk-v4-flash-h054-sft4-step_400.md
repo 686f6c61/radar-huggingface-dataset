@@ -65,9 +65,9 @@ No se proporcionan requisitos oficiales. Estimaciones basadas en el tamaño del 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/dpsk-v4-flash (este) | 9.4B | no disponible | no disponible | HuggingFace (checkpoint intermedio) |
-| Qwen/Qwen3.5-9B-Base | 9.4B | no disponible | no disponible | HuggingFace (modelo base) |
-| Qwen/Qwen2.5-7B-Instruct | 7.6B | 128K (típico) | Apache 2.0 (típico) | HuggingFace |
+| agentic-ptb/dpsk-v4-flash (este) | 9.4B | no disponible | no disponible | Hugging Face (checkpoint intermedio) |
+| Qwen/Qwen3.5-9B-Base | 9.4B | no disponible | no disponible | Hugging Face (modelo base) |
+| Qwen/Qwen2.5-7B-Instruct | 7.6B | 128K (típico) | Apache 2.0 (típico) | Hugging Face |
 
 La comparación es limitada porque no hay datos de rendimiento ni licencia para este checkpoint. Como fine-tune del base, su comportamiento esperado sería similar al de Qwen3.5-9B-Base, pero sin garantías. No se dispone de información sobre alternativas de la misma categoría (modelos de razonamiento "thinking" de ~9B).
 
@@ -83,5 +83,5 @@ La comparación es limitada porque no hay datos de rendimiento ni licencia para 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h054.sft4.step_400
+- Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h054.sft4.step_400
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (referencia, no verificado en la búsqueda web)

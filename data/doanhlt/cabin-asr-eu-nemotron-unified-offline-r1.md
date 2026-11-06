@@ -107,7 +107,7 @@ Comparaciones pareadas (A = r1, B = U-distill; diferencia de WER con IC 95 %):
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/doanhlt/cabin-asr-eu-nemotron-unified-offline-r1
+- Modelo en Hugging Face: https://huggingface.co/doanhlt/cabin-asr-eu-nemotron-unified-offline-r1
 - Modelo base: https://huggingface.co/nvidia/nemotron-labs-unified-asr-0.6b
 - Modelo comparable EU r1: https://huggingface.co/doanhlt/cabin-asr-eu-parakeet-tdt-offline-r1
 - Colección Cabin offline ASR: https://huggingface.co/collections/doanhlt/cabin-offline-asr-on-device-distilled-from-r13x-6ade0b05eb1f2ac4e49d7cf8

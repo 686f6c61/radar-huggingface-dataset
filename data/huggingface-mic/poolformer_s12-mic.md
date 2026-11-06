@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`poolformer_s12-mic` es un artefacto de prueba publicado por la organizacion `huggingface-mic` en HuggingFace. No se trata de un modelo entrenado para resolver una tarea real, sino de una fixture (muestra reducida y controlada) construida a partir del modelo `sail/poolformer_s12`, un clasificador de imagenes basado en la arquitectura PoolFormer. Su proposito es servir como material de validacion para el framework de integracion MIC (Model Integration Contract), que comprueba que las expectativas de uso de un modelo (procesadores, configuracion, dtypes y comportamiento numerico) se cumplen de forma reproducible.
+`poolformer_s12-mic` es un artefacto de prueba publicado por la organizacion `huggingface-mic` en Hugging Face. No se trata de un modelo entrenado para resolver una tarea real, sino de una fixture (muestra reducida y controlada) construida a partir del modelo `sail/poolformer_s12`, un clasificador de imagenes basado en la arquitectura PoolFormer. Su proposito es servir como material de validacion para el framework de integracion MIC (Model Integration Contract), que comprueba que las expectativas de uso de un modelo (procesadores, configuracion, dtypes y comportamiento numerico) se cumplen de forma reproducible.
 
 El modelo base, PoolFormer, es una arquitectura de vision que sustituye el mecanismo de atencion de los transformers por una operacion de pooling espacial, lo que reduce el coste computacional manteniendo un rendimiento competitivo en tareas de clasificacion de imagenes. La variante `s12` es la mas pequena de la familia, con unos 11,9 millones de parametros, lo que la hace adecuada para entornos con recursos limitados.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `poolformer_s12-mic` (este) | 11,9 M | Clasificacion de imagenes (fixture) | no aplica | no disponible | HuggingFace (test-artifact) |
-| `sail/poolformer_s12` | ~11,9 M | Clasificacion de imagenes | no aplica | no disponible | HuggingFace |
-| `google/vit-base-patch16-224` | ~86 M | Clasificacion de imagenes | no aplica | Apache 2.0 (segun checkpoint original) | HuggingFace |
-| `microsoft/resnet-50` | ~25 M | Clasificacion de imagenes | no aplica | Apache 2.0 (segun checkpoint original) | HuggingFace |
+| `poolformer_s12-mic` (este) | 11,9 M | Clasificacion de imagenes (fixture) | no aplica | no disponible | Hugging Face (test-artifact) |
+| `sail/poolformer_s12` | ~11,9 M | Clasificacion de imagenes | no aplica | no disponible | Hugging Face |
+| `google/vit-base-patch16-224` | ~86 M | Clasificacion de imagenes | no aplica | Apache 2.0 (segun checkpoint original) | Hugging Face |
+| `microsoft/resnet-50` | ~25 M | Clasificacion de imagenes | no aplica | Apache 2.0 (segun checkpoint original) | Hugging Face |
 
 La comparativa se limita a modelos de vision de proposito general; los datos de licencia y rendimiento de los alternativos no se han verificado en la informacion proporcionada y deben confirmarse en sus respectivas model cards.
 
@@ -82,7 +82,7 @@ La comparativa se limita a modelos de vision de proposito general; los datos de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/poolformer_s12-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/poolformer_s12-mic
 - Modelo base: https://huggingface.co/sail/poolformer_s12
 - Manifiesto de contrato: https://huggingface.co/huggingface-mic/poolformer_s12-mic/blob/main/integration.json
 - Uso en Transformers: https://huggingface.co/huggingface-mic/poolformer_s12-mic/blob/main/integrations/transformers/usage.md

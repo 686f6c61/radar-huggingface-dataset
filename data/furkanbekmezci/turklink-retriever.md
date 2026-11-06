@@ -115,7 +115,7 @@ La diferencia principal frente a las alternativas es la especialización: TurkLi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/furkanbekmezci/turklink-retriever
+- Modelo en Hugging Face: https://huggingface.co/furkanbekmezci/turklink-retriever
 - Pipeline completo: https://huggingface.co/frcturus/turklink-el
 - Dataset TurkLink: https://huggingface.co/datasets/yakdas/turklink-corpus
 - Articulo de TurkLink (Akdaş y Tantuğ, 2026): https://doi.org/10.1016/j.procs.2026.01.041

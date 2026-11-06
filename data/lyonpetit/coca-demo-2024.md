@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lyonpetit/coca-demo-2024` es un repositorio de HuggingFace publicado por el usuario lyonpetit que contiene una implementacion propia y minima de una arquitectura denominada **Coca**, orientada a tareas de *retrieval* (recuperacion de informacion multimodal, a juzgar por la referencia a Flickr30k en la guia de evaluacion). El propio autor indica de forma explicita que se trata de un **punto de partida reproducible, no de un modelo entrenado**: el fichero `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests*, no un checkpoint con benchmarks publicados.
+`lyonpetit/coca-demo-2024` es un repositorio de Hugging Face publicado por el usuario lyonpetit que contiene una implementacion propia y minima de una arquitectura denominada **Coca**, orientada a tareas de *retrieval* (recuperacion de informacion multimodal, a juzgar por la referencia a Flickr30k en la guia de evaluacion). El propio autor indica de forma explicita que se trata de un **punto de partida reproducible, no de un modelo entrenado**: el fichero `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests*, no un checkpoint con benchmarks publicados.
 
 El repositorio incluye el script principal `finetune.py`, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y el checkpoint de inicializacion. La variante declarada en la configuracion es **xlarge**, con atencion estandar, fusion mediante `concat mlp`, activacion ReLU y normalizacion GroupNorm. El recuento real de parametros leido de los tensores safetensors es de **24.832 parametros**, una cifra muy reducida que confirma la naturaleza de juguete del artefacto y que contrasta con la etiqueta "xlarge" del propio esquema de nombres del autor.
 
@@ -21,7 +21,7 @@ Su relevancia es, por tanto, limitada y de tipo metodologico: sirve como plantil
 | Licencia | MIT |
 | Formato de pesos | safetensors (con codigo PyTorch asociado) |
 | Escala declarada | xlarge (etiqueta del `config.json` del autor) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion (metadatos) | 2026-09-24T23:36:41Z |
@@ -47,7 +47,7 @@ En cuanto al entrenamiento, la model card es tajante: el checkpoint **no ha sido
 
 - Punto de partida para investigacion en retrieval multimodal: el script `finetune.py` y el `config.json` permiten arrancar un experimento propio de recuperacion sobre Flickr30k sin partir de cero, ajustando la receta AdamW/exponencial incluida.
 - *Smoke test* de pipelines de entrenamiento: el checkpoint de inicializacion sirve para verificar que el bucle de entrenamiento, la carga de datos y el guardado de pesos funcionan antes de lanzar una ejecucion real con recursos de GPU.
-- Validacion de integraciones de inferencia: permite comprobar que un adaptador de carga personalizado funciona correctamente con una arquitectura no soportada por las APIs estandar de HuggingFace.
+- Validacion de integraciones de inferencia: permite comprobar que un adaptador de carga personalizado funciona correctamente con una arquitectura no soportada por las APIs estandar de Hugging Face.
 - Reproducibilidad y comparacion de baselines: el repositorio fija configuracion y semillas de partida, lo que facilita comparar metodologias bajo el mismo presupuesto de datos y de ajuste, tal como recomienda el autor.
 - Docencia y formacion: es un ejemplo compacto de implementacion de un modelo de retrieval con atencion estandar, fusion `concat mlp` y GroupNorm, adecuado para explicar la estructura completa de un repositorio de modelo.
 - Desarrollo de *harnesses* de evaluacion: sirve como sujeto de prueba barato para construir y depurar un sistema de evaluacion con multiples semillas y metricas de tarea antes de aplicarlo a modelos grandes.
@@ -95,14 +95,14 @@ Ninguno de los repositorios comparados de la familia `coca-demo` publica resulta
 - Riesgo de alucinacion: no evaluable, dado que el modelo no esta entrenado para generar texto ni para responder consultas.
 - No se declara longitud de contexto ni idiomas soportados; no se puede asumir cobertura multilingue.
 - Licencia MIT: permite uso comercial y modificacion con atribucion, pero el autor advierte de que deben revisarse por separado los terminos de los datos externos que se usen junto al repositorio.
-- Arquitectura personalizada: las APIs genericas de carga automatica de HuggingFace no la reconocen sin un adaptador explicito, lo que complica su integracion en *stacks* estandar.
+- Arquitectura personalizada: las APIs genericas de carga automatica de Hugging Face no la reconocen sin un adaptador explicito, lo que complica su integracion en *stacks* estandar.
 - Los metadatos del repositorio muestran una fecha de creacion (2026-09-24) incoherente con la fecha actual y un intervalo de actualizacion de seis segundos; conviene tratar las marcas temporales como poco fiables.
 - El recuento real de parametros (24.832) contradice la etiqueta "xlarge" de la configuracion; no debe asumirse que el modelo tenga un tamano acorde a esa denominacion.
 - Uso en produccion: desaconsejado por completo en su estado actual. Cualquier resultado obtenido con un checkpoint entrenado en el futuro debera documentarse de forma separada a los valores por defecto aqui incluidos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lyonpetit/coca-demo-2024
+- Repositorio en Hugging Face: https://huggingface.co/lyonpetit/coca-demo-2024
 - Repositorio relacionado de la misma familia: https://huggingface.co/mzaytsev/coca-demo
 - Repositorio relacionado de la misma familia: https://huggingface.co/thijsdekker/coca-demo
 - Arbol de ficheros de un repositorio comparable: https://huggingface.co/thijsdekker/coca-demo/tree/main

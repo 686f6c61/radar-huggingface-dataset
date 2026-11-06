@@ -6,7 +6,7 @@ MimicMotion es un modelo de generación de video de movimiento humano a partir d
 
 La arquitectura combina un U-Net espaciotemporal con una red PoseNet que introduce la secuencia de pose como condición, junto con técnicas como amplificación regional de pérdida y fusión latente progresiva para mejorar la calidad y la coherencia temporal. El modelo es capaz de generar videos de longitud arbitraria, manteniendo la identidad de la persona de la imagen de entrada y siguiendo los movimientos indicados por la pose.
 
-El repositorio alojado bajo el identificador `nguyennnk/MimicMotion` es una réplica de los pesos oficiales publicados por Tencent, con un tamaño de 6,1 GB. Aunque la página de HuggingFace no proporciona una ficha técnica completa, la información disponible confirma que se trata de un modelo de video generativo con licencia personalizada y sin soporte de idiomas textuales.
+El repositorio alojado bajo el identificador `nguyennnk/MimicMotion` es una réplica de los pesos oficiales publicados por Tencent, con un tamaño de 6,1 GB. Aunque la página de Hugging Face no proporciona una ficha técnica completa, la información disponible confirma que se trata de un modelo de video generativo con licencia personalizada y sin soporte de idiomas textuales.
 
 ## Especificaciones técnicas
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 - El tamaño del repositorio es de 6,1 GB, lo que sugiere que los pesos completos del modelo requieren al menos 12 GB de VRAM para inferencia en precisión FP16, aunque no se ha confirmado el formato exacto.
 - Se recomienda una GPU con al menos 16 GB de VRAM para ejecutar la generación de video de alta calidad, como una NVIDIA RTX 4090, A100 o H100.
-- Para despliegue en producción, se puede usar marcos de trabajo como PyTorch con la librería de difusión de HuggingFace (diffusers), aunque no se documenta soporte específico para vLLM u Ollama, que están orientados a modelos de lenguaje.
+- Para despliegue en producción, se puede usar marcos de trabajo como PyTorch con la librería de difusión de Hugging Face (diffusers), aunque no se documenta soporte específico para vLLM u Ollama, que están orientados a modelos de lenguaje.
 - La latencia y el throughput no están disponibles; la generación de video es computacionalmente intensiva y dependerá de la resolución y el número de fotogramas.
 
 ## Comparativa con modelos similares
@@ -71,8 +71,8 @@ No se dispone de información suficiente para realizar una comparación cuantita
 
 ## Enlaces
 
-- Repositorio HuggingFace (versión de nguyennnk): https://huggingface.co/nguyennnk/MimicMotion
-- Repositorio oficial de Tencent en HuggingFace: https://huggingface.co/tencent/MimicMotion
+- Repositorio Hugging Face (versión de nguyennnk): https://huggingface.co/nguyennnk/MimicMotion
+- Repositorio oficial de Tencent en Hugging Face: https://huggingface.co/tencent/MimicMotion
 - Página del proyecto de Tencent: https://tencent.github.io/MimicMotion/
 - README oficial de Tencent: https://huggingface.co/tencent/MimicMotion/blob/main/README.md
 - Análisis y alternativas: https://www.aimodels.fyi/models/huggingFace/mimicmotion-tencent

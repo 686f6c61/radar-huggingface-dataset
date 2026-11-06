@@ -2,7 +2,7 @@
 
 ## Resumen
 
-INT4-Convrot-Comfy-Models es una coleccion de checkpoints cuantizados para ComfyUI, publicada por el usuario toxicdog en HuggingFace bajo el identificador `toxicdog/INT4-Convrot-Comfy-Models`. La model card del repositorio corresponde a la serie Winnougan, por lo que existe una discrepancia entre el identificador del repositorio en HuggingFace y el autor indicado en el README. No es un unico modelo, sino un paquete de diez modelos de difusion de imagen, difusion de video, segmentacion, upscaling y lenguaje, convertidos a INT4 o INT8 mediante la tecnica ConvRot.
+INT4-Convrot-Comfy-Models es una coleccion de checkpoints cuantizados para ComfyUI, publicada por el usuario toxicdog en Hugging Face bajo el identificador `toxicdog/INT4-Convrot-Comfy-Models`. La model card del repositorio corresponde a la serie Winnougan, por lo que existe una discrepancia entre el identificador del repositorio en Hugging Face y el autor indicado en el README. No es un unico modelo, sino un paquete de diez modelos de difusion de imagen, difusion de video, segmentacion, upscaling y lenguaje, convertidos a INT4 o INT8 mediante la tecnica ConvRot.
 
 El problema que resuelve es el de la huella de memoria: los checkpoints originales en FP16 o BF16 de modelos como LTX-2.3 22B o SeedVR2 7B no caben en GPU de gama consumer. La cuantizacion ConvRot agrupa los pesos a lo largo de su dimension compatible con potencias de 4 antes de cuantizar, en lugar de aplicar una cuantizacion row-wise estandar, lo que segun el autor conserva mas detalle en las matrices de pesos criticas para la fidelidad visual y reduce los artefactos tipicos de un cast INT4 directo. El objetivo declarado es ejecutar la coleccion en GPUs de clase 8 GB, desarrollada y probada en una RTX 3070 Ti.
 
@@ -102,7 +102,7 @@ No se dispone de datos publicados de benchmarks ni de colecciones comparables co
 
 - No es un modelo unico: el repositorio agrupa diez modelos de naturaleza distinta. Cualquier evaluacion debe hacerse por componente, no sobre el paquete completo.
 - Ausencia total de benchmarks: no hay metricas objetivas que respalden la afirmacion de que ConvRot INT4 preserva mejor la calidad que una cuantizacion row-wise. La evidencia aportada es cualitativa y procede del propio autor.
-- Discrepancia de autoria: el identificador de HuggingFace es `toxicdog/INT4-Convrot-Comfy-Models`, mientras que la model card y los enlaces apuntan a la cuenta `Winnougan`. Conviene verificar el origen real de los pesos antes de usarlos en produccion.
+- Discrepancia de autoria: el identificador de Hugging Face es `toxicdog/INT4-Convrot-Comfy-Models`, mientras que la model card y los enlaces apuntan a la cuenta `Winnougan`. Conviene verificar el origen real de los pesos antes de usarlos en produccion.
 - Compatibilidad restringida: los checkpoints no funcionan con los nodos estandar de ComfyUI. Requieren ComfyUI-INT4-Fast y un entorno concreto (ComfyUI nightly, PyTorch 2.12, CUDA 13.2, Python 3.12, Triton 3.8), lo que limita su portabilidad a otros frameworks de inferencia.
 - Licencia fragmentada y riesgo legal: la etiqueta `other` obliga a revisar la licencia de cada modelo base por separado. Ideogram 4 se distribuye bajo un acuerdo estrictamente no comercial que prohibe el uso comercial directo o indirecto, el entrenamiento de modelos competidores, usos militares o de vigilancia, procesamiento biometrico, decisiones automatizadas en dominios de alto riesgo y la eliminacion de filtros de seguridad o marcas de agua. La redistribucion exige imponer las mismas restricciones y entregar el acuerdo a terceros.
 - Restricciones adicionales de la licencia de Ideogram: no se permite usar las salidas del modelo para entrenar, ajustar o destilar un producto de IA competidor.
@@ -115,7 +115,7 @@ No se dispone de datos publicados de benchmarks ni de colecciones comparables co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/toxicdog/INT4-Convrot-Comfy-Models
+- Repositorio en Hugging Face: https://huggingface.co/toxicdog/INT4-Convrot-Comfy-Models
 - Cuenta de modelos del autor segun la model card: https://huggingface.co/Winnougan
 - Poster e imagenes de muestra: https://huggingface.co/Winnougan/INT4-Convrot-Comfy-Models/resolve/main/Samples%20and%20Workflow/Winnougan_INT4_Poster.png
 - Conversor de modelos Starnodes: https://github.com/Starnodes2024/comfyui-starnodes-modelconverter

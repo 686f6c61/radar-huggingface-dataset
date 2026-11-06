@@ -4,7 +4,7 @@
 
 El modelo `321oll/YingMusic-Singer-Plus-japanese-finetune-hanamaruhareru-VAE_285K` es un fine-tune de un modelo de generación de voz cantada denominado `YingMusic-Singer-Plus`, adaptado específicamente para el idioma japonés. El nombre sugiere que incorpora un VAE con el identificador `hanamaruhareru` y que fue entrenado durante 285K pasos, aunque no se dispone de documentación oficial que confirme estos detalles. El repositorio tiene un tamaño de 0.6 GB y está publicado bajo licencia MIT, lo que permite uso comercial y modificación sin restricciones significativas.
 
-A pesar de su nombre, no se ha publicado ninguna model card detallada, arquitectura, especificaciones técnicas ni ejemplos de uso. La información disponible se limita a los metadatos de HuggingFace: autor `321oll`, etiquetas `license:mit` y `region:us`, y fechas de creación y actualización (15 de agosto de 2026). No hay descargas ni likes registrados, lo que indica que es un modelo reciente y sin comunidad activa conocida. Por tanto, esta ficha se basa únicamente en los datos públicos del repositorio y no puede ofrecer detalles técnicos verificados.
+A pesar de su nombre, no se ha publicado ninguna model card detallada, arquitectura, especificaciones técnicas ni ejemplos de uso. La información disponible se limita a los metadatos de Hugging Face: autor `321oll`, etiquetas `license:mit` y `region:us`, y fechas de creación y actualización (15 de agosto de 2026). No hay descargas ni likes registrados, lo que indica que es un modelo reciente y sin comunidad activa conocida. Por tanto, esta ficha se basa únicamente en los datos públicos del repositorio y no puede ofrecer detalles técnicos verificados.
 
 ## Especificaciones tecnicas
 
@@ -55,4 +55,4 @@ No se dispone de información sobre modelos comparables. Dado que no se conocen 
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/321oll/YingMusic-Singer-Plus-japanese-finetune-hanamaruhareru-VAE_285K)
+- [Repositorio Hugging Face](https://huggingface.co/321oll/YingMusic-Singer-Plus-japanese-finetune-hanamaruhareru-VAE_285K)

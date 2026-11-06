@@ -21,7 +21,7 @@ La relevancia de esta publicacion radica en su formato GGUF, que lo hace compati
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publicada sobre la arquitectura interna del modelo NeuronAI-2B. Los comentarios en la model card indican que el proceso de cuantizacion se realizo sobre el checkpoint original en formato HuggingFace (convert_type: hf), pero no se especifican detalles sobre el tipo de transformer, la composicion del dataset de entrenamiento, el numero de tokens utilizados ni si se aplicaron tecnicas de alineacion como RLHF o DPO. El repositorio se limita a ofrecer las cuantizaciones estaticas del checkpoint original, sin documentacion adicional.
+No se dispone de informacion publicada sobre la arquitectura interna del modelo NeuronAI-2B. Los comentarios en la model card indican que el proceso de cuantizacion se realizo sobre el checkpoint original en formato Hugging Face (convert_type: hf), pero no se especifican detalles sobre el tipo de transformer, la composicion del dataset de entrenamiento, el numero de tokens utilizados ni si se aplicaron tecnicas de alineacion como RLHF o DPO. El repositorio se limita a ofrecer las cuantizaciones estaticas del checkpoint original, sin documentacion adicional.
 
 ## Capacidades
 

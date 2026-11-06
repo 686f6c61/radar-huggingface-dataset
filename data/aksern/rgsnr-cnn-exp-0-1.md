@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aksern/rgsnr-cnn-exp-0.1` es un repositorio de modelo publicado en HuggingFace por el usuario `aksern` bajo la licencia `openmdw-1.1`. En el momento de la consulta (creado el 17 de septiembre de 2026 y actualizado el mismo dia) el repositorio no contiene model card descriptiva: el unico contenido del README es el bloque de metadatos de licencia. No se declara pipeline, idioma, arquitectura ni tamano.
+`aksern/rgsnr-cnn-exp-0.1` es un repositorio de modelo publicado en Hugging Face por el usuario `aksern` bajo la licencia `openmdw-1.1`. En el momento de la consulta (creado el 17 de septiembre de 2026 y actualizado el mismo dia) el repositorio no contiene model card descriptiva: el unico contenido del README es el bloque de metadatos de licencia. No se declara pipeline, idioma, arquitectura ni tamano.
 
 El identificador del repositorio sugiere, por la presencia del sufijo `cnn`, que se trata de un experimento basado en redes neuronales convolucionales, y el sufijo `exp-0.1` apunta a una version experimental preliminar. Se trata, no obstante, de una inferencia a partir del nombre y no de un dato confirmado por el autor: no hay documentacion que lo respalde.
 
@@ -82,7 +82,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aksern/rgsnr-cnn-exp-0.1
-- Perfil del autor en HuggingFace: https://huggingface.co/aksern
+- Repositorio en Hugging Face: https://huggingface.co/aksern/rgsnr-cnn-exp-0.1
+- Perfil del autor en Hugging Face: https://huggingface.co/aksern
 - Paper, blog o repositorio de codigo asociado: no disponible en la informacion proporcionada.
 - Demo o espacio de inferencia: no disponible en la informacion proporcionada.

@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AtomicChat/Qwen3.8-27B-MLX-3bit-CLIP
+- Repositorio Hugging Face: https://huggingface.co/AtomicChat/Qwen3.8-27B-MLX-3bit-CLIP
 - Pagina del modelo en Atomic Chat: https://atomic.chat/models/qwen3-8-27b
 - Repositorio oficial de Alibaba Cloud: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8

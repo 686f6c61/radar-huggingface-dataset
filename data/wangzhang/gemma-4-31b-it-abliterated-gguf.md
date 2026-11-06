@@ -82,6 +82,6 @@ La comparación real de rendimiento requeriría ejecutar los mismos benchmarks e
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/wangzhang/gemma-4-31B-it-abliterated-GGUF)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/wangzhang/gemma-4-31B-it-abliterated-GGUF)
 - [Modelo base abliterated (safetensors)](https://huggingface.co/wangzhang/gemma-4-31B-it-abliterated)
 - [Modelo original de Google](https://huggingface.co/google/gemma-4-31B-it)

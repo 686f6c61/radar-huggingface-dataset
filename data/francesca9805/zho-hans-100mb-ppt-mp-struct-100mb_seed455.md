@@ -6,7 +6,7 @@ El modelo `francesca9805/zho-hans-100mb-ppt-mp-struct-100mb_seed455` es un ajust
 
 Se trata de un modelo experimental de investigacion, no de un modelo de proposito general listo para produccion. El nombre del checkpoint sugiere una variante de un estudio sobre datos estructurados ("struct") y tokenizadores, dentro de una familia de experimentos con nombres como `ppt-Dp-10mb-packed-bfd`, `ppt-Dp-10mb-packed-bfdiso` o `ppt-shuff-dyck-100mb`, todos ellos derivados del mismo modelo base. El modelo base pertenece a la familia Goldfish, que agrupa modelos pequenos entrenados sobre corpus de aproximadamente 100 MB por idioma; en este caso el sufijo `zho_hans` indica chino mandarin en escritura simplificada.
 
-La relevancia de este checkpoint es limitada fuera del contexto de investigacion del que procede: no tiene descargas ni "likes" en HuggingFace, no publica licencia ni resultados de benchmarks, y su model card es una plantilla generada automaticamente por TRL sin informacion sustantiva sobre el dataset de ajuste. Es util, por tanto, como referencia para reproducir o comparar experimentos de ajuste fino sobre modelos pequenos multilingues, pero no como un componente solido para aplicaciones desplegadas.
+La relevancia de este checkpoint es limitada fuera del contexto de investigacion del que procede: no tiene descargas ni "likes" en Hugging Face, no publica licencia ni resultados de benchmarks, y su model card es una plantilla generada automaticamente por TRL sin informacion sustantiva sobre el dataset de ajuste. Es util, por tanto, como referencia para reproducir o comparar experimentos de ajuste fino sobre modelos pequenos multilingues, pero no como un componente solido para aplicaciones desplegadas.
 
 ## Especificaciones tecnicas
 
@@ -71,10 +71,10 @@ Los siguientes valores son estimaciones calculadas a partir del numero de parame
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/zho-hans-100mb-ppt-mp-struct-100mb_seed455 | 124,8 M | no disponible | sin benchmarks | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/zho_hans_100mb (base) | no disponible en la informacion proporcionada | no disponible | sin benchmarks publicados en esta busqueda | no disponible | HuggingFace |
-| francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfd_seed3407 | no disponible | no disponible | sin benchmarks | no disponible | HuggingFace |
-| fpadovani/zho-hans-100mb-ppt-shuff-dyck-100mb_seed455 | 124,8 M | no disponible | sin benchmarks | no disponible | HuggingFace, listado en LLM Explorer |
+| francesca9805/zho-hans-100mb-ppt-mp-struct-100mb_seed455 | 124,8 M | no disponible | sin benchmarks | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/zho_hans_100mb (base) | no disponible en la informacion proporcionada | no disponible | sin benchmarks publicados en esta busqueda | no disponible | Hugging Face |
+| francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfd_seed3407 | no disponible | no disponible | sin benchmarks | no disponible | Hugging Face |
+| fpadovani/zho-hans-100mb-ppt-shuff-dyck-100mb_seed455 | 124,8 M | no disponible | sin benchmarks | no disponible | Hugging Face, listado en LLM Explorer |
 
 Las tres alternativas pertenecen a la misma familia de experimentos derivada del modelo Goldfish de chino mandarin: la primera es el modelo base sin ajustar, la segunda es un ajuste con datos empaquetados y la tercera es una variante con lenguajes de Dyck. No se dispone de datos de rendimiento comparables entre ellas.
 
@@ -87,12 +87,12 @@ Las tres alternativas pertenecen a la misma familia de experimentos derivada del
 - Sesgos: no documentados. Los modelos pequenos entrenados sobre corpus limitados (100 MB en el modelo base) tienden a reproducir sesgos de la fuente sin filtrado posterior.
 - Limitacion idiomatica: el modelo base esta orientado al chino mandarin simplificado; no hay evidencia de competencia solvente en castellano, ingles u otros idiomas.
 - Limitacion de contexto: se desconoce la longitud de contexto soportada; la model card no la especifica y no se ha validado experimentalmente.
-- Modelo experimental: cero descargas y cero likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad ni probado en condiciones reales.
+- Modelo experimental: cero descargas y cero likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad ni probado en condiciones reales.
 - Sin cuantizaciones publicadas: no existen GGUF ni otros formatos optimizados, lo que limita su uso directo con herramientas como llama.cpp u Ollama.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-mp-struct-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-mp-struct-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/zho_hans_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/kk2vpyse
 - Repositorio de TRL: https://github.com/huggingface/trl

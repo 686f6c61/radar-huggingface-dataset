@@ -82,6 +82,6 @@ No se dispone de resultados comparativos publicados entre este modelo y otras al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/aops-dqo-a1-step1100
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/aops-dqo-a1-step1100
 - Modelo hermano (paso 1000): https://huggingface.co/sandeep123/sqa-dqo-a1-step1000
 - Repositorio GitHub de AoPS (referencia al paper): https://github.com/DSL-Lab/aops

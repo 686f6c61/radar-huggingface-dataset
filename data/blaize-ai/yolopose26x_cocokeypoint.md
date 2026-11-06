@@ -93,7 +93,7 @@ La comparación relevante es contra el modelo original de Ultralytics: misma arq
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Blaize-AI/YOLOPOSE26x_COCOKeypoint
+- Repositorio Hugging Face: https://huggingface.co/Blaize-AI/YOLOPOSE26x_COCOKeypoint
 - Modelo original (Ultralytics): https://www.github.com/ultralytics/ultralytics
 - Dataset COCO Keypoints 2017: https://cocodataset.org
 - Blaize: https://www.blaize.com

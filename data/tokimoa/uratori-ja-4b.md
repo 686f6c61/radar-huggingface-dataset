@@ -96,9 +96,9 @@ Latencia medida: aproximadamente 100 ms por elemento en RTX 5090 con batch 8.
 
 | Modelo | Parametros | Contexto | Accuracy test / challenge | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| uratori-ja-4b | 4,21B | 1.280 tokens | 0.867 / 0.863 | Apache 2.0 | Pesos abiertos en HuggingFace |
-| uratori-ja-2b | no disponible | no disponible | 0.766 / 0.800 | Apache 2.0 (presumible, no confirmado) | Pesos abiertos en HuggingFace |
-| uratori-ja-310m | no disponible | no disponible | 0.704 / 0.697 | Apache 2.0 (presumible, no confirmado) | Pesos abiertos en HuggingFace, ejecutable en CPU |
+| uratori-ja-4b | 4,21B | 1.280 tokens | 0.867 / 0.863 | Apache 2.0 | Pesos abiertos en Hugging Face |
+| uratori-ja-2b | no disponible | no disponible | 0.766 / 0.800 | Apache 2.0 (presumible, no confirmado) | Pesos abiertos en Hugging Face |
+| uratori-ja-310m | no disponible | no disponible | 0.704 / 0.697 | Apache 2.0 (presumible, no confirmado) | Pesos abiertos en Hugging Face, ejecutable en CPU |
 | Jev 1.13.0 (TypeSafe) | no disponible | no disponible | 0.903 / 0.900 | Propietaria (API) | Servicio, no hay pesos abiertos conocidos |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria (clasificacion y decision en japones para grounding y RAG) dentro de la documentacion proporcionada.
@@ -117,7 +117,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tokimoa/uratori-ja-4b
+- Modelo en Hugging Face: https://huggingface.co/tokimoa/uratori-ja-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Version ligera 2b: https://huggingface.co/tokimoa/uratori-ja-2b
 - Version ligera 310m: https://huggingface.co/tokimoa/uratori-ja-310m

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `qikp/MiniCPM5-1B-Qwenified` es un modelo de generación de texto de 1.080 millones de parámetros publicado en HuggingFace por el usuario `qikp`. La etiqueta `qwen2` sugiere que su arquitectura está basada en la familia Qwen2, aunque no se proporciona confirmación oficial en la model card. El repositorio contiene pesos en formato `safetensors` y está integrado con la librería `transformers`, lo que permite su uso con las herramientas estándar del ecosistema.
+El modelo `qikp/MiniCPM5-1B-Qwenified` es un modelo de generación de texto de 1.080 millones de parámetros publicado en Hugging Face por el usuario `qikp`. La etiqueta `qwen2` sugiere que su arquitectura está basada en la familia Qwen2, aunque no se proporciona confirmación oficial en la model card. El repositorio contiene pesos en formato `safetensors` y está integrado con la librería `transformers`, lo que permite su uso con las herramientas estándar del ecosistema.
 
 La model card es una plantilla automática sin información sustancial: no se especifican datos de entrenamiento, arquitectura detallada, licencia, idiomas soportados ni resultados de evaluación. El modelo fue creado el 15 de agosto de 2026 y actualizado el mismo día, con cero descargas y cero likes, lo que indica que es una publicación reciente y sin comunidad asociada. A pesar de la falta de documentación, su tamaño (1B) lo sitúa en la categoría de modelos pequeños orientados a inferencia eficiente en entornos con recursos limitados.
 
@@ -23,7 +23,7 @@ Por el momento, la relevancia de este modelo es incierta debido a la ausencia to
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna, el proceso de entrenamiento, los datos utilizados ni las técnicas de optimización (RLHF, DPO, etc.). La etiqueta `qwen2` en HuggingFace apunta a que el modelo podría seguir el diseño de la serie Qwen2, pero no hay confirmación en la model card. Tampoco se especifican hiperparámetros, régimen de entrenamiento o detalles de preprocesamiento. La única referencia a un paper (`arxiv:1910.09700`) corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, que aparece en la plantilla de la model card y no está relacionado con el modelo en sí.
+No se dispone de información sobre la arquitectura interna, el proceso de entrenamiento, los datos utilizados ni las técnicas de optimización (RLHF, DPO, etc.). La etiqueta `qwen2` en Hugging Face apunta a que el modelo podría seguir el diseño de la serie Qwen2, pero no hay confirmación en la model card. Tampoco se especifican hiperparámetros, régimen de entrenamiento o detalles de preprocesamiento. La única referencia a un paper (`arxiv:1910.09700`) corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, que aparece en la plantilla de la model card y no está relacionado con el modelo en sí.
 
 ## Capacidades
 
@@ -61,4 +61,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace: qikp/MiniCPM5-1B-Qwenified](https://huggingface.co/qikp/MiniCPM5-1B-Qwenified)
+- [Hugging Face: qikp/MiniCPM5-1B-Qwenified](https://huggingface.co/qikp/MiniCPM5-1B-Qwenified)

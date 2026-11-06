@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BeastxD/text2cypher_lora_v5
+- Repositorio Hugging Face: https://huggingface.co/BeastxD/text2cypher_lora_v5
 - Modelo base: https://huggingface.co/unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit
 - Libreria Unsloth: https://github.com/unslothai/unsloth
 - Framework TRL: https://github.com/huggingface/trl

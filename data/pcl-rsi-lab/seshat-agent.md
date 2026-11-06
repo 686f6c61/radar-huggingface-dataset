@@ -73,7 +73,7 @@ Evolución principal: Kimi K3 zero-shot 57,7 % → Seshat (Kimi K3 + MetaEvo) 94
 - VRAM estimada: no disponible explícitamente; viene determinada por el modelo base. Con Kimi K3 como base, se requieren despliegues multi-GPU de gama datacenter; para CyberGym se usó DeepSeek V4-Pro cuantizado a 4 bits, lo que sugiere que la cuantización agresiva es viable.
 - GPU recomendadas: no disponible; por el tamaño presumible de los modelos base (Kimi K3, DeepSeek V4-Pro), se asumen A100/H100 en configuración multi-GPU.
 - Consumer GPU: no viable para la configuración completa tal como está publicada; no hay evidencia de versiones reducidas.
-- Despliegue: librería transformers; compatible con HuggingFace Endpoints (endpoints_compatible). No se menciona soporte explícito de vLLM, llama.cpp, Ollama o TGI.
+- Despliegue: librería transformers; compatible con Hugging Face Endpoints (endpoints_compatible). No se menciona soporte explícito de vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible. El bucle de enrutamiento de meta-conocimiento, inyección por capas y meta-crítica añade sobrecoste de inferencia frente al modelo base sin cuantificar.
 
 ## Comparativa con modelos similares
@@ -102,7 +102,7 @@ La diferencia clave es que Seshat es un agente que hereda la licencia Apache 2.0
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PCL-RSI-lab/Seshat-agent
+- Modelo en Hugging Face: https://huggingface.co/PCL-RSI-lab/Seshat-agent
 - Evidencia de evaluación (parches, logs por instancia, resultados agregados): https://huggingface.co/datasets/PCL-RSI-lab/SWE-Bench-Pro-Evaluation-Evidence
 - Paper: no disponible
 - Blog o repositorio de código independiente: no disponible

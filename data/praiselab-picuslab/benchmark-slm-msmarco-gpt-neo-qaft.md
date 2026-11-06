@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Cabe en GPU de consumo: sí, en FP16 desde 6-8 GB y en cuantización INT4 desde 2-3 GB de VRAM efectiva.
 - Opciones de despliegue: `transformers` + `peft` (ruta más directa para el adaptador), vLLM con soporte de adaptadores LoRA, TGI con LoRA, y llama.cpp u Ollama solo tras fusionar el adaptador con el base y convertir a GGUF (no se publica GGUF).
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
-- Nota operativa: el acceso es restringido (*gated*), por lo que es necesario aceptar las condiciones en HuggingFace y autenticarse con un token antes de descargar.
+- Nota operativa: el acceso es restringido (*gated*), por lo que es necesario aceptar las condiciones en Hugging Face y autenticarse con un token antes de descargar.
 
 ## Comparativa con modelos similares
 
@@ -88,7 +88,7 @@ Datos de los modelos comparables tomados de su documentación pública; la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-gpt-neo-qaft
+- Modelo en Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-gpt-neo-qaft
 - Modelo base: https://huggingface.co/EleutherAI/gpt-neo-1.3B
 - Dataset declarado (MS MARCO): https://huggingface.co/datasets/microsoft/ms_marco
 - Repositorio de GPT-Neo (EleutherAI): https://github.com/EleutherAI/gpt-neo

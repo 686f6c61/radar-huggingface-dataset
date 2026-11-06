@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Pure Lie Engine (identificador `IbrahimAnaz/pure-lie-engine`) es un artefacto de investigación publicado en HuggingFace por el usuario IbrahimAnaz que se presenta como un «motor de lenguaje neural» construido estrictamente sobre grupos y álgebras de Lie. El autor afirma que el modelo no emplea funciones de activación elementales (ReLU, GELU, sigmoid, tanh) ni sesgos aditivos en ninguna capa, y que el enrutamiento dinámico se implementa mediante conmutadores matriciales [H, K] = HK − KH. La innovación declarada más concreta es la predicción multi-token (MTP) con horizonte de cuatro pasos (x_{t+1} a x_{t+4}), junto con un «reloj de fase simpléctico hamiltoniano» que recorre trayectorias del grupo de rotaciones SO(16).
+Pure Lie Engine (identificador `IbrahimAnaz/pure-lie-engine`) es un artefacto de investigación publicado en Hugging Face por el usuario IbrahimAnaz que se presenta como un «motor de lenguaje neural» construido estrictamente sobre grupos y álgebras de Lie. El autor afirma que el modelo no emplea funciones de activación elementales (ReLU, GELU, sigmoid, tanh) ni sesgos aditivos en ninguna capa, y que el enrutamiento dinámico se implementa mediante conmutadores matriciales [H, K] = HK − KH. La innovación declarada más concreta es la predicción multi-token (MTP) con horizonte de cuatro pasos (x_{t+1} a x_{t+4}), junto con un «reloj de fase simpléctico hamiltoniano» que recorre trayectorias del grupo de rotaciones SO(16).
 
-El repositorio es muy pequeño (0,5 GB) y no incluye pipeline declarado en HuggingFace, ni tokenizador, ni código de inferencia más allá de un fragmento para descargar y cargar el checkpoint `pure_lie_engine_epoch_040.pt` con PyTorch. La model card se limita a instrucciones de instalación de CUDA y a un ejemplo de carga de pesos; no documenta arquitectura de capas, recuento de parámetros, longitud de contexto, datos de entrenamiento ni resultados de evaluación.
+El repositorio es muy pequeño (0,5 GB) y no incluye pipeline declarado en Hugging Face, ni tokenizador, ni código de inferencia más allá de un fragmento para descargar y cargar el checkpoint `pure_lie_engine_epoch_040.pt` con PyTorch. La model card se limita a instrucciones de instalación de CUDA y a un ejemplo de carga de pesos; no documenta arquitectura de capas, recuento de parámetros, longitud de contexto, datos de entrenamiento ni resultados de evaluación.
 
 Por tanto, se trata de un prototipo de investigación algebraica, no de un modelo listo para producción: cero descargas y cero «likes» en el momento de la consulta, sin benchmarks publicados y con afirmaciones de «breakthrough» que no van acompañadas de evidencia empírica. Su interés actual es conceptual (deep learning geométrico aplicado a modelado de lenguaje), no práctico.
 
@@ -21,7 +21,7 @@ Por tanto, se trata de un prototipo de investigación algebraica, no de un model
 | Licencia | MIT |
 | Formato de pesos | PyTorch `.pt` (`pure_lie_engine_epoch_040.pt`, cargado con `torch.load(..., weights_only=True)`); no hay safetensors |
 | Framework requerido | PyTorch con CUDA (el autor recomienda CUDA 12.4 y GPUs NVIDIA con Tensor Cores: Turing, Ampere, Ada Lovelace, Blackwell sm_120) |
-| Compatibilidad con ecosistema | No disponible: sin `pipeline` en HuggingFace, sin `config.json` de Transformers, sin tokenizador documentado |
+| Compatibilidad con ecosistema | No disponible: sin `pipeline` en Hugging Face, sin `config.json` de Transformers, sin tokenizador documentado |
 
 ## Arquitectura y entrenamiento
 
@@ -85,11 +85,11 @@ No disponible. En la información proporcionada no se identifican modelos compar
 - Sesgos: no documentados. El corpus de entrenamiento es desconocido, por lo que no se puede auditar la presencia de sesgos de género, raza o ideología.
 - Formato de pesos: `.pt` es un contenedor pickle; aunque el autor recomienda `weights_only=True`, conviene auditar el fichero antes de cargarlo en entornos compartidos.
 - Licencia MIT: permite uso comercial y modificación, pero se ofrece «tal cual», sin garantías; el autor no asume responsabilidad por el rendimiento.
-- Fecha de creación registrada en HuggingFace: 2026-10-20, lo que conviene contrastar con la cronología real del proyecto antes de citarlo.
+- Fecha de creación registrada en Hugging Face: 2026-10-20, lo que conviene contrastar con la cronología real del proyecto antes de citarlo.
 - Madurez: proyecto unipersonal sin mantenimiento aparente (última actualización 2026-10-20) y sin comunidad; no apto para producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IbrahimAnaz/pure-lie-engine
+- Hugging Face: https://huggingface.co/IbrahimAnaz/pure-lie-engine
 - Checkpoint de pesos: `pure_lie_engine_epoch_040.pt` (descargable vía `hf_hub_download` desde el repositorio anterior)
 - Paper, blog, repositorio de código, demo o documentación adicional: no disponible en la información proporcionada.

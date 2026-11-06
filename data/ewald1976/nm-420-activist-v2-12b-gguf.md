@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento de este fine-tune específico. Como refere
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ewald1976/NM-420-activist-v2-12b-gguf
+- Repositorio Hugging Face: https://huggingface.co/ewald1976/NM-420-activist-v2-12b-gguf
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Proyecto llama.cpp: https://github.com/ggerganov/llama.cpp
 - Ollama: https://ollama.com/

@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa detallada. El autor ha publicado otros checkpoints similares en HuggingFace, como `ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-rlsd-arm-e` y `ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-grpo-arm-e`, que utilizan el mismo enfoque de entrenamiento pero con un modelo base de 9 mil millones de parametros. No se dispone de datos de rendimiento comparativos.
+No se dispone de informacion suficiente para realizar una comparativa detallada. El autor ha publicado otros checkpoints similares en Hugging Face, como `ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-rlsd-arm-e` y `ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-grpo-arm-e`, que utilizan el mismo enfoque de entrenamiento pero con un modelo base de 9 mil millones de parametros. No se dispone de datos de rendimiento comparativos.
 
 ## Limitaciones y advertencias
 
@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para realizar una comparativa detallada.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ipfipfipf/Qwen3.5-4B-MathCodeSearch-SDPO-E-Step30
+- Repositorio Hugging Face: https://huggingface.co/ipfipfipf/Qwen3.5-4B-MathCodeSearch-SDPO-E-Step30
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/isaac_ghx-ipfipfipf/miles-sdpo/runs/jzqlsb95
 - Checkpoint similar (9B, RLSD): https://huggingface.co/ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-rlsd-arm-e

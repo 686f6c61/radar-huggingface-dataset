@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario saddaasf con el identificador `MyAwesomeModel-TestRepo`, se presenta como una cuenta de pruebas sin pesos subidos ni documentación técnica. Según los metadatos, el modelo está etiquetado como basado en `bert`, orientado a extracción de características (feature-extraction) y liberado bajo licencia MIT, pero no contiene ningún artefacto descargable (0 descargas, tamaño de 0.0 GB) ni información sobre arquitectura, número de parámetros o longitud de contexto.
+Este repositorio de Hugging Face, publicado por el usuario saddaasf con el identificador `MyAwesomeModel-TestRepo`, se presenta como una cuenta de pruebas sin pesos subidos ni documentación técnica. Según los metadatos, el modelo está etiquetado como basado en `bert`, orientado a extracción de características (feature-extraction) y liberado bajo licencia MIT, pero no contiene ningún artefacto descargable (0 descargas, tamaño de 0.0 GB) ni información sobre arquitectura, número de parámetros o longitud de contexto.
 
 La model card incluida describe un supuesto modelo "MyAwesomeModel" con mejoras en razonamiento y reducción de alucinaciones, acompañado de una tabla de benchmarks genérica que no especifica los modelos comparados. Sin embargo, dicha descripción no se corresponde con el contenido efectivo del repositorio. Por tanto, no es posible evaluar el modelo ni determinar su relevancia técnica.
 
@@ -10,7 +10,7 @@ La model card incluida describe un supuesto modelo "MyAwesomeModel" con mejoras 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (el tag de HuggingFace indica `bert`, sin confirmación) |
+| Arquitectura | No disponible (el tag de Hugging Face indica `bert`, sin confirmación) |
 | Parámetros totales | No disponible |
 | Parámetros activos | No disponible |
 | Longitud de contexto | No disponible |
@@ -21,11 +21,11 @@ La model card incluida describe un supuesto modelo "MyAwesomeModel" con mejoras 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura, datos de entrenamiento o técnicas de entrenamiento. El tag de HuggingFace sugiere `bert`, pero no hay confirmación técnica. La model card menciona "algorithmic optimization mechanisms during post-training", "increased computational resources", "thinking mode" y "function calling", sin aportar datos concretos sobre el corpus, el número de tokens o el método de alineación (RLHF, DPO, etc.).
+No se dispone de información sobre la arquitectura, datos de entrenamiento o técnicas de entrenamiento. El tag de Hugging Face sugiere `bert`, pero no hay confirmación técnica. La model card menciona "algorithmic optimization mechanisms during post-training", "increased computational resources", "thinking mode" y "function calling", sin aportar datos concretos sobre el corpus, el número de tokens o el método de alineación (RLHF, DPO, etc.).
 
 ## Capacidades
 
-- Extracción de características (feature-extraction) según el pipeline de HuggingFace, aunque no hay artefactos que lo confirmen.
+- Extracción de características (feature-extraction) según el pipeline de Hugging Face, aunque no hay artefactos que lo confirmen.
 - La model card afirma mejoras en razonamiento matemático, lógico, generación de código y soporte de function calling (llamada a funciones), pero sin evidencia reproducible.
 - No se dispone de datos sobre soporte de visión, audio o multimodalidad.
 - No se dispone de información sobre idiomas soportados.
@@ -81,4 +81,4 @@ No se dispone de información sobre modelos comparables, ya que el repositorio n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/saddaasf/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/saddaasf/MyAwesomeModel-TestRepo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Linf-elix/matching` es un repositorio experimental de HuggingFace que contiene una implementación funcional mínima de una arquitectura denominada "Hybrid" aplicada a una tarea de *matching* (emparejamiento). Lo publica el usuario Linf-elix bajo licencia Apache 2.0. No es un modelo entrenado ni un checkpoint listo para producción: la propia model card lo describe como un punto de partida con "código transparente y smoke tests repetibles", y declara explícitamente que no se reclama ninguna puntuación de benchmark.
+`Linf-elix/matching` es un repositorio experimental de Hugging Face que contiene una implementación funcional mínima de una arquitectura denominada "Hybrid" aplicada a una tarea de *matching* (emparejamiento). Lo publica el usuario Linf-elix bajo licencia Apache 2.0. No es un modelo entrenado ni un checkpoint listo para producción: la propia model card lo describe como un punto de partida con "código transparente y smoke tests repetibles", y declara explícitamente que no se reclama ninguna puntuación de benchmark.
 
 El artefacto principal es el fichero `model.py`, no los pesos. El checkpoint `model.safetensors` es una inicialización válida para pruebas de humo, con 16.576 parámetros totales en total (aproximadamente 16,6 mil), lo que lo sitúa tres o cuatro órdenes de magnitud por debajo de cualquier modelo de lenguaje utilizable. El repositorio ocupa 0,0 GB.
 
@@ -65,11 +65,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado en la información proporcionada modelos comparables de la misma categoría: el repositorio no es un modelo de lenguaje ni un modelo preentrenado publicable, sino una implementación experimental con un checkpoint de inicialización de 16.576 parámetros y sin evaluación. Compararlo con LLM u otros modelos de HuggingFace por parámetros, contexto o rendimiento no sería metodológicamente válido.
+No disponible. No se han identificado en la información proporcionada modelos comparables de la misma categoría: el repositorio no es un modelo de lenguaje ni un modelo preentrenado publicable, sino una implementación experimental con un checkpoint de inicialización de 16.576 parámetros y sin evaluación. Compararlo con LLM u otros modelos de Hugging Face por parámetros, contexto o rendimiento no sería metodológicamente válido.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Linf-elix/matching | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas |
+| Linf-elix/matching | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,6 +86,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Linf-elix/matching
+- Modelo en Hugging Face: https://huggingface.co/Linf-elix/matching
 - Ficheros referenciados en la model card (no disponibles como URL directa en la información proporcionada): `model.py`, `config.json`, `training_args.json`, `model.safetensors`, `README.md`
 - Papers, blogs, repositorios o demos adicionales: no disponible. La búsqueda web realizada no devolvió resultados relevantes para este repositorio.

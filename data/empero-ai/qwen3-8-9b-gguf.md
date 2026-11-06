@@ -91,7 +91,7 @@ La comparativa se limita a los modelos citados en la model card, ya que no se di
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/empero-ai/Qwen3.8-9B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/empero-ai/Qwen3.8-9B-GGUF
 - Modelo fuente (precisión completa): https://huggingface.co/empero-ai/Qwen3.8-9B
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - llama.cpp: https://github.com/ggml-org/llama.cpp

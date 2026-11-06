@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SystemOne-Decider E4B qp es un modelo enrutador (router) especializado que decide, para cada pregunta de razonamiento multi-salto, si debe responderla un modelo pequeno o uno grande. Lo desarrolla el usuario de HuggingFace mohameddhameem y se construye sobre el Strands Decider E4B de StrandsAgents, a su vez derivado de google/gemma-4-E4B-it. El modelo no genera respuestas: emite una probabilidad P(modelo grande) a partir de la pregunta y de los pasajes recuperados por el modelo pequeno, antes de que este responda.
+SystemOne-Decider E4B qp es un modelo enrutador (router) especializado que decide, para cada pregunta de razonamiento multi-salto, si debe responderla un modelo pequeno o uno grande. Lo desarrolla el usuario de Hugging Face mohameddhameem y se construye sobre el Strands Decider E4B de StrandsAgents, a su vez derivado de google/gemma-4-E4B-it. El modelo no genera respuestas: emite una probabilidad P(modelo grande) a partir de la pregunta y de los pasajes recuperados por el modelo pequeno, antes de que este responda.
 
 La relevancia practica esta en el ahorro de coste en pipelines de recuperacion aumentada: enviar solo el 6,3% de las preguntas al modelo grande permite mantener una precision cercana a la del modelo grande siempre activo a una fraccion del coste. El modelo se evalua sobre el split SLR de HotpotQA con el par Qwen2.5-1.5B-Instruct (pequeno, top 2 parrafos) y Qwen2.5-7B-Instruct (grande, 10 parrafos).
 
@@ -82,8 +82,8 @@ En el umbral publicado (0,6732), la semilla 0 sobre test obtiene 64,89% de preci
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SystemOne-Decider E4B qp | Router de par de modelos | no disponible (base E4B) | no disponible | Apache-2.0 | HuggingFace, 0 descargas |
-| StrandsAgents/strands-decider-E4B-gemma4-v1-2610 | Decider base | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| SystemOne-Decider E4B qp | Router de par de modelos | no disponible (base E4B) | no disponible | Apache-2.0 | Hugging Face, 0 descargas |
+| StrandsAgents/strands-decider-E4B-gemma4-v1-2610 | Decider base | no disponible | no disponible | Apache-2.0 | Hugging Face |
 | Umbral de entropia sobre Qwen2.5-1.5B | Baseline de enrutamiento | 1,5B | no disponible | segun Qwen2.5 | Implementacion propia |
 | Regresion logistica sobre pregunta y pasajes | Baseline de enrutamiento | no aplica | no aplica | no aplica | Implementacion propia |
 
@@ -102,7 +102,7 @@ Frente a los baselines, la semilla 0 mejora el AIQ sin coste propio (+0,016 y +0
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohameddhameem/systemone-decider-e4b-qp
+- Modelo en Hugging Face: https://huggingface.co/mohameddhameem/systemone-decider-e4b-qp
 - Modelo base: https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610
 - Modelo subyacente: https://huggingface.co/google/gemma-4-E4B-it
 - Codigo: https://github.com/mohameddhameem/systemone-decider

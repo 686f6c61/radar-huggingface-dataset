@@ -2,9 +2,9 @@
 
 ## Resumen
 
-canbingol/jev-mmlu-classifier es un modelo publicado en HuggingFace por el usuario canbingol bajo la libreria transformers, con pesos en formato safetensors y una arquitectura declarada gemma3_text. Se trata de un transformer decoder de la familia Gemma 3 reconfigurado para la tarea de extraccion de caracteristicas (feature-extraction), es decir, para producir representaciones vectoriales a partir de texto. Cuenta con 202.199.808 parametros (unos 202 millones) y un repositorio de 0,4 GB, un tamano coherente con pesos almacenados en precision de 16 bits.
+canbingol/jev-mmlu-classifier es un modelo publicado en Hugging Face por el usuario canbingol bajo la libreria transformers, con pesos en formato safetensors y una arquitectura declarada gemma3_text. Se trata de un transformer decoder de la familia Gemma 3 reconfigurado para la tarea de extraccion de caracteristicas (feature-extraction), es decir, para producir representaciones vectoriales a partir de texto. Cuenta con 202.199.808 parametros (unos 202 millones) y un repositorio de 0,4 GB, un tamano coherente con pesos almacenados en precision de 16 bits.
 
-El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos. La ficha no declara licencia, idiomas soportados, composicion del dataset de entrenamiento ni resultados de evaluacion, y en el momento de la consulta el modelo acumula 0 descargas y 0 "likes". Esta ausencia de documentacion impide cualquier validacion independiente del comportamiento real del modelo.
+El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos. La ficha no declara licencia, idiomas soportados, composicion del dataset de entrenamiento ni resultados de evaluacion, y en el momento de la consulta el modelo acumula 0 descargas y 0 "likes". Esta ausencia de documentacion impide cualquier validacion independiente del comportamiento real del modelo.
 
 El nombre del repositorio remite a "Jev", el modelo propietario de TypeSafe AI presentado en acceso anticipado en septiembre de 2026. Sin embargo, no hay ninguna confirmacion en la informacion disponible de que este clasificador forme parte de dicho sistema ni de que reutilice sus pesos: la etiqueta de arquitectura apunta a Gemma 3, no a un modelo propietario, y el autor del repositorio es un usuario independiente. Esa asociacion debe tratarse como no verificada.
 
@@ -21,7 +21,7 @@ El nombre del repositorio remite a "Jev", el modelo propietario de TypeSafe AI p
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 | Pipeline | feature-extraction |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 0,4 GB |
 
 ## Arquitectura y entrenamiento
@@ -40,7 +40,7 @@ No hay informacion sobre el proceso de entrenamiento: se desconoce el volumen de
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingues: no disponibles; la ficha no declara idiomas.
 - Capacidades especiales (vision, audio, modo "thinking"): no disponibles. La etiqueta `gemma3_text` indica que, en todo caso, la variante textual.
-- Compatibilidad de despliegue: las etiquetas `text-embeddings-inference` y `endpoints_compatible` indican soporte previsto para Text Embeddings Inference y para los Inference Endpoints de HuggingFace.
+- Compatibilidad de despliegue: las etiquetas `text-embeddings-inference` y `endpoints_compatible` indican soporte previsto para Text Embeddings Inference y para los Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Tambien puede ejecutarse en CPU: el tamano de 202 M hace viable la inferencia en procesadores modernos, con latencias mayores que en GPU.
 - Apple Silicon: ejecutable mediante Metal en equipos con memoria unificada de 8 GB o superior, aunque no se documenta soporte explicito.
 - GPU de centro de datos (A100, H100) no son necesarias para este tamano; solo tendrian sentido para procesamiento por lotes a gran escala.
-- Opciones de despliegue: transformers (declarado), Text Embeddings Inference (etiqueta presente) e Inference Endpoints de HuggingFace (etiqueta `endpoints_compatible`). No hay evidencia de soporte para vLLM, llama.cpp, Ollama ni TGI, dado que solo se distribuyen pesos en safetensors y no hay variantes GGUF.
+- Opciones de despliegue: transformers (declarado), Text Embeddings Inference (etiqueta presente) e Inference Endpoints de Hugging Face (etiqueta `endpoints_compatible`). No hay evidencia de soporte para vLLM, llama.cpp, Ollama ni TGI, dado que solo se distribuyen pesos en safetensors y no hay variantes GGUF.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No hay datos suficientes para establecer una comparativa cuantitativa fiable. El
 |---|---|---|---|---|---|
 | canbingol/jev-mmlu-classifier | 202 M | no disponible | no disponible | gated | no disponibles |
 | Alternativas de la familia Gemma 3 (base arquitectonica declarada) | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no disponibles |
-| Otros clasificadores de texto de ~200 M publicados en HuggingFace | no disponible | no disponible | no disponible | no disponible | no disponibles |
+| Otros clasificadores de texto de ~200 M publicados en Hugging Face | no disponible | no disponible | no disponible | no disponible | no disponibles |
 | Encoders de embeddings de proposito general | no disponible | no disponible | no disponible | no disponible | no disponibles |
 
 Se recomienda, antes de elegir este modelo, consultar las fichas oficiales de las alternativas de la misma categoria (encoders de embeddings y clasificadores de texto de rango 100-300 M) para obtener parametros, contexto y licencia verificados.
@@ -89,7 +89,7 @@ Se recomienda, antes de elegir este modelo, consultar las fichas oficiales de la
 ## Limitaciones y advertencias
 
 - Documentacion practicamente inexistente: no hay model card detallada, ni descripcion de datos de entrenamiento, ni guia de uso, lo que complica la reproducibilidad.
-- Acceso restringido (gated): es obligatorio aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede limitar su uso en pipelines automatizados y en entornos de CI/CD.
+- Acceso restringido (gated): es obligatorio aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede limitar su uso en pipelines automatizados y en entornos de CI/CD.
 - Licencia no declarada: sin licencia explicita no puede asumirse permiso para uso comercial. Es imprescindible contactar con el autor antes de cualquier despliegue en produccion.
 - Idiomas no declarados: no hay garantia de cobertura multilingue ni de un comportamiento correcto en castellano.
 - Riesgo de alucinacion: no aplicable si el modelo se usa exclusivamente como extractor de caracteristicas, pero seria relevante si finalmente se emplea para generar texto, algo no confirmado.
@@ -102,7 +102,7 @@ Se recomienda, antes de elegir este modelo, consultar las fichas oficiales de la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/canbingol/jev-mmlu-classifier
+- Repositorio en Hugging Face: https://huggingface.co/canbingol/jev-mmlu-classifier
 - Etiqueta arXiv referenciada en el repositorio: arxiv:1910.09700 (relacion con el entrenamiento no confirmada)
 - Wikipedia, "Jev (AI model)": https://en.wikipedia.org/wiki/Jev_(AI_model)
 - Documentacion de TypeSafe AI: https://docs.typesafe.ai/introduction
@@ -110,4 +110,4 @@ Se recomienda, antes de elegir este modelo, consultar las fichas oficiales de la
 - Aplicacion de clasificacion JEV AI Model: https://jevaimodel.app/
 - Analisis de Flavio Copes sobre Jev: https://flaviocopes.com/jev/
 
-Nota: los cinco ultimos enlaces corresponden al modelo propietario Jev de TypeSafe AI y no a este repositorio de HuggingFace. Se incluyen por la coincidencia de nombre, pero no se ha podido verificar ninguna relacion tecnica, contractual ni de autoria entre ambos.
+Nota: los cinco ultimos enlaces corresponden al modelo propietario Jev de TypeSafe AI y no a este repositorio de Hugging Face. Se incluyen por la coincidencia de nombre, pero no se ha podido verificar ninguna relacion tecnica, contractual ni de autoria entre ambos.

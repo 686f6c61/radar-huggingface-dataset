@@ -53,7 +53,7 @@ El entrenamiento es puramente supervisado sobre pares enunciado–programa; no s
 
 ## Benchmarks y rendimiento
 
-Evaluación declarada por el autor sobre el conjunto de test completo de GSM8K (1.319 problemas), promediada sobre 3 semillas de entrenamiento. Todos los valores proceden de la model card y del `model-index`; el registro de HuggingFace figura con `verified: false`.
+Evaluación declarada por el autor sobre el conjunto de test completo de GSM8K (1.319 problemas), promediada sobre 3 semillas de entrenamiento. Todos los valores proceden de la model card y del `model-index`; el registro de Hugging Face figura con `verified: false`.
 
 | Metrica | GSM8K test | Que mide |
 |---|---|---|
@@ -105,7 +105,7 @@ Diferencias estructurales relevantes frente a un LLM: SPROG-9M no genera lenguaj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/codelion/sprog-9m
+- Modelo en Hugging Face: https://huggingface.co/codelion/sprog-9m
 - Dataset de entrenamiento: https://huggingface.co/datasets/codelion/gsm8k-synth
 - Dataset de evaluación GSM8K: https://huggingface.co/datasets/openai/gsm8k
 - Paper de GSM8K (Cobbe et al., 2021): https://arxiv.org/abs/2110.14168

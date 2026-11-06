@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TheCluster/Qwen3.8-27B-Heretic-MLX-4bit es una versión modificada del modelo Qwen/Qwen3.8-27B, publicada por el usuario TheCluster en HuggingFace. Se trata de un modelo "uncensored" o "abliterated", es decir, se le han eliminado los mecanismos de rechazo y moderación de contenido mediante la herramienta Heretic v1.4.0. El resultado es un modelo que responde sin filtros de seguridad, pensado para usuarios que necesitan generar contenido sin restricciones temáticas.
+TheCluster/Qwen3.8-27B-Heretic-MLX-4bit es una versión modificada del modelo Qwen/Qwen3.8-27B, publicada por el usuario TheCluster en Hugging Face. Se trata de un modelo "uncensored" o "abliterated", es decir, se le han eliminado los mecanismos de rechazo y moderación de contenido mediante la herramienta Heretic v1.4.0. El resultado es un modelo que responde sin filtros de seguridad, pensado para usuarios que necesitan generar contenido sin restricciones temáticas.
 
 El modelo está cuantizado a 4 bits con formato MLX (grupo de cuantización de 64), lo que reduce el tamaño del repositorio a 16,1 GB. El pipeline declarado es `image-text-to-text`, lo que sugiere capacidades multimodales heredadas del modelo base, aunque no se proporcionan detalles adicionales sobre arquitectura o entrenamiento. La licencia es Apache-2.0, lo que permite uso comercial y modificación. Su relevancia radica en ofrecer una alternativa sin censura sobre una base de Qwen, con un tamaño manejable para GPUs de consumo gracias a la cuantización.
 
@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheCluster/Qwen3.8-27B-Heretic-MLX-4bit
+- Hugging Face: https://huggingface.co/TheCluster/Qwen3.8-27B-Heretic-MLX-4bit
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ilhamhih/matching` es un repositorio de HuggingFace publicado por el usuario ilhamhih que contiene una implementación propia y de pequeno tamano de una arquitectura denominada "Dino", orientada a tareas de *matching*. Segun la propia model card, no se trata de un modelo entrenado ni de una release con resultados de benchmark, sino de un punto de partida reproducible: incluye un fichero de inferencia (`inference.py`), una configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) valido para pruebas de humo.
+`ilhamhih/matching` es un repositorio de Hugging Face publicado por el usuario ilhamhih que contiene una implementación propia y de pequeno tamano de una arquitectura denominada "Dino", orientada a tareas de *matching*. Segun la propia model card, no se trata de un modelo entrenado ni de una release con resultados de benchmark, sino de un punto de partida reproducible: incluye un fichero de inferencia (`inference.py`), una configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) valido para pruebas de humo.
 
 El peso real declarado en safetensors es de 33.088 parametros totales, lo que lo sitúa en el rango de los modelos de juguete o de test, no en el de un modelo de propósito general. La model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint "no ha sido entrenado ni auditado" en cuanto a robustez, equidad o transferencia de dominio. Por tanto, su relevancia actual es la de material de referencia para reproducir experimentos y validar canalizaciones de entrenamiento, no la de un modelo desplegable en producción.
 
@@ -72,12 +72,12 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 - No se documenta la longitud de contexto soportada, los idiomas admitidos ni la tarea exacta de matching que pretende resolver.
 - No se documentan los datos de entrenamiento, lo que impide evaluar sesgos, procedencia del contenido o cumplimiento normativo en caso de un futuro entrenamiento.
 - La licencia MIT se aplica al repositorio; la model card advierte de que deben revisarse por separado las condiciones de los datos de origen cuando se use con conjuntos de datos externos.
-- Al ser una implementacion personalizada, la carga mediante APIs automaticas de HuggingFace u otras herramientas requiere un adaptador explicito; no se garantiza compatibilidad directa con ecosistemas de despliegue estandar.
+- Al ser una implementacion personalizada, la carga mediante APIs automaticas de Hugging Face u otras herramientas requiere un adaptador explicito; no se garantiza compatibilidad directa con ecosistemas de despliegue estandar.
 - Estado del repositorio: 0 descargas y 0 likes, sin validacion por parte de la comunidad. Los metadatos indican una fecha de creacion de 2026-09-29 y una actualizacion de 2026-09-29, con un tamano de repositorio declarado de 0,0 GB.
 - La busqueda web asociada a este identificador no devolvio resultados tecnicos utilizables, por lo que no existe documentacion externa contrastable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ilhamhih/matching
+- Repositorio en Hugging Face: https://huggingface.co/ilhamhih/matching
 - Ficheros declarados en el repositorio: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la busqueda web realizada.

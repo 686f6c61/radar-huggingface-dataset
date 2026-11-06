@@ -23,7 +23,7 @@ Este modelo no resuelve ningún problema práctico por sí mismo: es un artefact
 
 La información pública no detalla la arquitectura interna del modelo más allá de indicar que se basa en `Qwen/Qwen3.5-9B-Base`. Dado que el checkpoint tiene 9.409.813.744 parámetros, es razonable asumir que se trata de un transformer denso de aproximadamente 9B parámetros, coherente con la familia Qwen3.5. Sin embargo, no se confirma si la arquitectura incluye innovaciones como atención lineal, decodificación especulativa u otras técnicas.
 
-Sobre el entrenamiento, la model card indica que este checkpoint proviene de un run de Claude Code llamado `opus-high-v3`, en su hora `h041`, y que se almacena en `scratch/agent/soup-v3`. El run concluyó que no había mejora en los pesos entrenados, y el autor lo etiqueta como `negative-results`. No se proporcionan datos sobre el dataset de entrenamiento, número de tokens, composición de los datos ni técnicas de alineación (RLHF, DPO, etc.). El dataset asociado `agentic-ptb/opus-high-v3-data` está disponible en HuggingFace para quien quiera reproducir el experimento.
+Sobre el entrenamiento, la model card indica que este checkpoint proviene de un run de Claude Code llamado `opus-high-v3`, en su hora `h041`, y que se almacena en `scratch/agent/soup-v3`. El run concluyó que no había mejora en los pesos entrenados, y el autor lo etiqueta como `negative-results`. No se proporcionan datos sobre el dataset de entrenamiento, número de tokens, composición de los datos ni técnicas de alineación (RLHF, DPO, etc.). El dataset asociado `agentic-ptb/opus-high-v3-data` está disponible en Hugging Face para quien quiera reproducir el experimento.
 
 ## Capacidades
 
@@ -59,9 +59,9 @@ No se dispone de datos de rendimiento para comparar. El modelo más directamente
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| opus-high-v3.h041.soup-v3 | 9.41B | no disponible | apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9.41B | no disponible | apache-2.0 | HuggingFace |
-| Llama 3.1 8B (referencia) | 8.03B | 128K | llama3.1 | HuggingFace |
+| opus-high-v3.h041.soup-v3 | 9.41B | no disponible | apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9.41B | no disponible | apache-2.0 | Hugging Face |
+| Llama 3.1 8B (referencia) | 8.03B | 128K | llama3.1 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -74,6 +74,6 @@ No se dispone de datos de rendimiento para comparar. El modelo más directamente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h041.soup-v3
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h041.soup-v3
 - Dataset del run: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX

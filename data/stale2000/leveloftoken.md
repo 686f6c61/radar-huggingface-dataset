@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LevelOfToken es un release de investigacion publicado por el usuario stale2000 en HuggingFace. No es un modelo completo, sino un conjunto de adaptadores sobre el modelo base MiniMaxAI/MiniMax-H3: un adaptador LoT (level-of-token) acompanado de un banco de extensiones ajustado y un LoRA de rango 16 aplicado a un transformer de difusion (DiT) para generacion de video. El repositorio ocupa 0.4 GB e incluye dos ficheros de pesos en safetensors: `adapter.safetensors` y `lora.safetensors`.
+LevelOfToken es un release de investigacion publicado por el usuario stale2000 en Hugging Face. No es un modelo completo, sino un conjunto de adaptadores sobre el modelo base MiniMaxAI/MiniMax-H3: un adaptador LoT (level-of-token) acompanado de un banco de extensiones ajustado y un LoRA de rango 16 aplicado a un transformer de difusion (DiT) para generacion de video. El repositorio ocupa 0.4 GB e incluye dos ficheros de pesos en safetensors: `adapter.safetensors` y `lora.safetensors`.
 
 El propio autor declara que se trata de un release experimental y que la ultima campana de evaluacion no encontro ninguna rama que superase el umbral de promocion predeclarado. Es decir, las metricas publicadas muestran compromisos entre objetivos (tradeoffs) y no una mejora de calidad confirmada. Junto a los pesos se publican el resumen completo de benchmarks, las metricas de confirmacion por fuente y videos de ejemplo emparejados.
 
@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stale2000/LevelOfToken | no disponible | no disponible | sin mejora confirmada (umbral de promocion no superado) | minimax-h3-community-license-agreement | HuggingFace, 0 descargas |
+| stale2000/LevelOfToken | no disponible | no disponible | sin mejora confirmada (umbral de promocion no superado) | minimax-h3-community-license-agreement | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stale2000/LevelOfToken
+- Modelo en Hugging Face: https://huggingface.co/stale2000/LevelOfToken
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Resumen de benchmarks (ruta dentro del repo): `benchmarks/README.md`
 - Resultados de la campana r4 (ruta dentro del repo): `benchmarks/campaign-r4-results.json`

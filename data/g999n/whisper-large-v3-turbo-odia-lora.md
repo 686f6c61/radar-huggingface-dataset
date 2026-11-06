@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| G999n/whisper-large-v3-turbo-odia-lora | 820.8M (809M base + 11.8M LoRA) | no disponible | Apache 2.0 | HuggingFace |
-| openai/whisper-large-v3-turbo | 809M | no disponible | no disponible | HuggingFace |
-| openai/whisper-large-v3 | no disponible | no disponible | no disponible | HuggingFace |
+| G999n/whisper-large-v3-turbo-odia-lora | 820.8M (809M base + 11.8M LoRA) | no disponible | Apache 2.0 | Hugging Face |
+| openai/whisper-large-v3-turbo | 809M | no disponible | no disponible | Hugging Face |
+| openai/whisper-large-v3 | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/G999n/whisper-large-v3-turbo-odia-lora
+- Modelo en Hugging Face: https://huggingface.co/G999n/whisper-large-v3-turbo-odia-lora
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Whisper large-v3: https://huggingface.co/openai/whisper-large-v3
 - Dataset IndicVoices: https://huggingface.co/datasets/ai4bharat/IndicVoices

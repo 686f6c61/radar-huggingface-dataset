@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`convnextv2-tiny-1k-224-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace matthieulel. El modelo parte del checkpoint preentrenado `facebook/convnextv2-tiny-1k-224` (ConvNeXt V2, una red convolucional pura de tipo transformerizado) y le añade una cabeza lineal de 10 salidas entrenada sobre el dataset Galaxy10 DECaLS. Forma parte de la colección Vision Foundation Models Benchmark, que evalúa 40 backbones preentrenados bajo dos regímenes de adaptación distintos.
+`convnextv2-tiny-1k-224-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face matthieulel. El modelo parte del checkpoint preentrenado `facebook/convnextv2-tiny-1k-224` (ConvNeXt V2, una red convolucional pura de tipo transformerizado) y le añade una cabeza lineal de 10 salidas entrenada sobre el dataset Galaxy10 DECaLS. Forma parte de la colección Vision Foundation Models Benchmark, que evalúa 40 backbones preentrenados bajo dos regímenes de adaptación distintos.
 
 La relevancia del modelo no reside en su rendimiento absoluto, sino en su papel como punto de referencia reproducible dentro de un estudio sistemático sobre el uso de modelos fundacionales de visión en astronomía, asociado al artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026). El régimen de entrenamiento es deliberadamente restrictivo: solo se entrena la cabeza de clasificación, con el backbone completamente congelado, incluidas las estadísticas de sus capas de normalización.
 
@@ -63,7 +63,7 @@ El autor no publica comparaciones con otros modelos en la información disponibl
 - VRAM estimada para inferencia: inferior a 1 GB en fp32 para lotes pequeños; el modelo pesa 27,9 M de parámetros (aproximadamente 111 MB en fp32).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; funciona sin problemas en RTX 3060, RTX 4090, A100 o H100, aunque el modelo no aprovecha el potencial de las GPU de gama alta.
 - Cabe en cualquier GPU de consumo e incluso en CPU; la inferencia en CPU es viable para volúmenes moderados de imágenes.
-- Opciones de despliegue: transformers (AutoModelForImageClassification), endpoints compatibles de HuggingFace; el autor no documenta soporte específico para vLLM, llama.cpp, Ollama ni TGI (herramientas orientadas a modelos de lenguaje).
+- Opciones de despliegue: transformers (AutoModelForImageClassification), endpoints compatibles de Hugging Face; el autor no documenta soporte específico para vLLM, llama.cpp, Ollama ni TGI (herramientas orientadas a modelos de lenguaje).
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -72,9 +72,9 @@ No se dispone de resultados de otros modelos sobre Galaxy10 DECaLS en la informa
 
 | Modelo | Parametros | Contexto/entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (ConvNeXt V2 Tiny head-only) | 27,9 M | Imagen 224x224 | Clasificación Galaxy10 DECaLS (10 clases) | Apache 2.0 | HuggingFace |
-| `facebook/convnextv2-tiny-1k-224` (base) | 27,9 M (aprox.) | Imagen 224x224 | Clasificación ImageNet-1k (1.000 clases) | Apache 2.0 | HuggingFace |
-| Otros backbones de la colección Vision Foundation Models Benchmark | no disponible | Imagen | Clasificación Galaxy10 DECaLS | no disponible | HuggingFace (colección del autor) |
+| Este modelo (ConvNeXt V2 Tiny head-only) | 27,9 M | Imagen 224x224 | Clasificación Galaxy10 DECaLS (10 clases) | Apache 2.0 | Hugging Face |
+| `facebook/convnextv2-tiny-1k-224` (base) | 27,9 M (aprox.) | Imagen 224x224 | Clasificación ImageNet-1k (1.000 clases) | Apache 2.0 | Hugging Face |
+| Otros backbones de la colección Vision Foundation Models Benchmark | no disponible | Imagen | Clasificación Galaxy10 DECaLS | no disponible | Hugging Face (colección del autor) |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ No se dispone de resultados de otros modelos sobre Galaxy10 DECaLS en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/convnextv2-tiny-1k-224-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/convnextv2-tiny-1k-224-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/facebook/convnextv2-tiny-1k-224
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

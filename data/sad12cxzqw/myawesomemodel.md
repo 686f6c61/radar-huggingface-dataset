@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario sad12cxzqw, etiquetado como un modelo de transformers con pipeline de extracción de características (feature-extraction) y licencia MIT. La model card describe una versión actualizada que afirma mejoras significativas en razonamiento y capacidades de inferencia, con un aumento en el uso de tokens por pregunta en tareas de razonamiento (de 12K a 23K tokens en AIME 2025) y una mejora de precisión del 70% al 87,5% en ese mismo test. Sin embargo, la información pública es extremadamente limitada: no se especifican parámetros, arquitectura concreta, tamaño del contexto, ni datos de entrenamiento verificables. El repositorio tiene 0 descargas y 0 likes, y el tamaño del repo es de 0.0 GB, lo que sugiere que no se han subido pesos reales o que la página es un placeholder.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario sad12cxzqw, etiquetado como un modelo de transformers con pipeline de extracción de características (feature-extraction) y licencia MIT. La model card describe una versión actualizada que afirma mejoras significativas en razonamiento y capacidades de inferencia, con un aumento en el uso de tokens por pregunta en tareas de razonamiento (de 12K a 23K tokens en AIME 2025) y una mejora de precisión del 70% al 87,5% en ese mismo test. Sin embargo, la información pública es extremadamente limitada: no se especifican parámetros, arquitectura concreta, tamaño del contexto, ni datos de entrenamiento verificables. El repositorio tiene 0 descargas y 0 likes, y el tamaño del repo es de 0.0 GB, lo que sugiere que no se han subido pesos reales o que la página es un placeholder.
 
 A pesar de las afirmaciones de la model card sobre rendimiento en benchmarks de matemáticas, programación y lógica, los resultados presentados usan placeholders ({RESULT}) y comparan con modelos anónimos (Model1, Model2, Model1-v2), por lo que no hay datos cuantitativos fiables. En su estado actual, este modelo no puede considerarse listo para uso en producción ni para evaluación seria, ya que carece de artefactos descargables y de documentación técnica mínima.
 
@@ -79,7 +79,7 @@ No disponible. No se puede comparar con otros modelos porque se desconocen las e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sad12cxzqw/MyAwesomeModel
+- Repositorio Hugging Face: https://huggingface.co/sad12cxzqw/MyAwesomeModel
 - Repositorio alternativo (mismo autor, posible checkpoint): https://huggingface.co/sad12cxzqw/my-awesome-model-best-checkpoint
 - Repositorio con nombre similar (SAD12D): https://huggingface.co/SAD12D/MyAwesomeModel
 - Entrada en PromptLayer (modelo distinto, fine-tune de DistilBERT): https://www.promptlayer.com/models/myawesomemodel/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bert-base-cased es un modelo de lenguaje basado en la arquitectura Transformer con encoder bidireccional, publicado originalmente por Google Research en el paper "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding" (arXiv:1810.04805). La ficha analizada corresponde a una reproducción alojada por el usuario CollectionStudio en HuggingFace, que replica los pesos y la configuración del checkpoint oficial bert-base-cased distribuido por Google y empaquetado por el equipo de Hugging Face.
+bert-base-cased es un modelo de lenguaje basado en la arquitectura Transformer con encoder bidireccional, publicado originalmente por Google Research en el paper "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding" (arXiv:1810.04805). La ficha analizada corresponde a una reproducción alojada por el usuario CollectionStudio en Hugging Face, que replica los pesos y la configuración del checkpoint oficial bert-base-cased distribuido por Google y empaquetado por el equipo de Hugging Face.
 
 El modelo se preentrenó de forma auto-supervisada sobre un corpus en inglés compuesto por BookCorpus y Wikipedia, con dos objetivos simultáneos: modelado de lenguaje enmascarado (MLM) y predicción de la siguiente frase (NSP). Su variante "cased" es sensible a mayúsculas y minúsculas, de modo que distingue entre "english" y "English", lo que la hace preferible a bert-base-uncased en tareas donde la capitalización aporta señal (entidades nombradas, titulares, código, nombres propios).
 
@@ -55,7 +55,7 @@ No se documentan en la información disponible innovaciones técnicas adicionale
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card de este repositorio no incluye métricas de GLUE, SQuAD, MMLU, HumanEval, GSM8K ni de ningún otro conjunto de evaluación, y la ficha de HuggingFace no aporta datos de rendimiento medidos para esta copia concreta.
+No se han publicado resultados de benchmarks en la información disponible. La model card de este repositorio no incluye métricas de GLUE, SQuAD, MMLU, HumanEval, GSM8K ni de ningún otro conjunto de evaluación, y la ficha de Hugging Face no aporta datos de rendimiento medidos para esta copia concreta.
 
 ## Requisitos de hardware
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CollectionStudio/bert-base-cased | 108,9 M | 512 tokens | inglés | Apache 2.0 | HuggingFace |
-| google-bert/bert-base-uncased | ~110 M | 512 tokens | inglés | Apache 2.0 | HuggingFace |
-| FacebookAI/roberta-base | ~125 M | 512 tokens | inglés | MIT | HuggingFace |
-| distilbert/distilbert-base-cased | ~65 M | 512 tokens | inglés | Apache 2.0 | HuggingFace |
+| CollectionStudio/bert-base-cased | 108,9 M | 512 tokens | inglés | Apache 2.0 | Hugging Face |
+| google-bert/bert-base-uncased | ~110 M | 512 tokens | inglés | Apache 2.0 | Hugging Face |
+| FacebookAI/roberta-base | ~125 M | 512 tokens | inglés | MIT | Hugging Face |
+| distilbert/distilbert-base-cased | ~65 M | 512 tokens | inglés | Apache 2.0 | Hugging Face |
 
 La diferencia principal frente a bert-base-uncased es el preprocesado: el tokenizador cased no normaliza mayúsculas, lo que mejora el rendimiento en tareas sensibles a la capitalización. RoBERTa-base emplea el mismo tipo de arquitectura con un preentrenamiento más largo, sin NSP y con enmascaramiento dinámico, y suele superar a BERT base en tareas downstream a cambio de un tamaño algo mayor. DistilBERT-base-cased es una versión destilada, aproximadamente un 40% más pequeña y más rápida, con una ligera pérdida de precisión. Los datos de benchmarks comparativos para esta copia concreta no están disponibles.
 
@@ -91,8 +91,8 @@ La diferencia principal frente a bert-base-uncased es el preprocesado: el tokeni
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/CollectionStudio/bert-base-cased)
+- [Repositorio en Hugging Face](https://huggingface.co/CollectionStudio/bert-base-cased)
 - [Paper original de BERT (arXiv:1810.04805)](https://arxiv.org/abs/1810.04805)
 - [Repositorio de referencia de Google Research](https://github.com/google-research/bert)
-- [Modelo original bert-base-cased en HuggingFace](https://huggingface.co/bert-base-cased)
+- [Modelo original bert-base-cased en Hugging Face](https://huggingface.co/bert-base-cased)
 - [Filtro del Hub con variantes de BERT](https://huggingface.co/models?filter=bert)

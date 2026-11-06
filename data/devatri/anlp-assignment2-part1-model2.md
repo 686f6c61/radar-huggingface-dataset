@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Devatri/anlp-assignment2-part1-model2 es un checkpoint de investigacion publicado en HuggingFace, desarrollado por el usuario Devatri en el marco de una asignatura de procesamiento de lenguaje natural (ANLP, "Assignment 2, Part 1"). Se trata de un Transformer decoder-only entrenado para traduccion automatica desde vietnamita y japones hacia ingles, segun la informacion de su model card.
+Devatri/anlp-assignment2-part1-model2 es un checkpoint de investigacion publicado en Hugging Face, desarrollado por el usuario Devatri en el marco de una asignatura de procesamiento de lenguaje natural (ANLP, "Assignment 2, Part 1"). Se trata de un Transformer decoder-only entrenado para traduccion automatica desde vietnamita y japones hacia ingles, segun la informacion de su model card.
 
 El modelo se ha entrenado sobre el dataset belumind/en-vi-ja-curated-500k-triplets, un corpus curado de aproximadamente 500.000 tripletas en ingles, vietnamita y japones. El repositorio pesa 0,1 GB y contiene un unico artefacto principal, checkpoint.pt, que empaqueta el diccionario de configuracion, el state dict del modelo, un resumen y el sha256 del tokenizer utilizado.
 
@@ -72,10 +72,10 @@ La comparacion se plantea frente a sistemas de traduccion multilingue ampliament
 
 | Modelo | Arquitectura | Parametros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Devatri/anlp-assignment2-part1-model2 | Transformer decoder-only | no disponible | vi, ja como entrada; en como salida | no disponible | no disponible | Checkpoint .pt en HuggingFace, requiere codigo propio |
-| NLLB-200 (Meta) | Transformer encoder-decoder, variante MoE en el modelo completo | 54.500 M en la version completa; versiones destiladas de 600 M y 1.300 M | 200 idiomas, incluye vi, ja y en | 512 tokens en las versiones destiladas | CC-BY-NC-4.0 (uso no comercial) | Pesos en HuggingFace y soporte en `transformers` |
-| M2M-100 (Meta) | Transformer encoder-decoder | 418 M, 1.200 M y 12.000 M | 100 idiomas, incluye vi, ja y en | no disponible en la informacion consultada | MIT | Pesos en HuggingFace |
-| OPUS-MT (Helsinki-NLP) | Marian NMT, encoder-decoder | Modelos bilingues del orden de decenas de millones de parametros por par | Pares bilingues concretos, con variantes vi-en y ja-en | no disponible en la informacion consultada | CC-BY 4.0 en la mayoria de variantes | Pesos en HuggingFace, integrables con `transformers` |
+| Devatri/anlp-assignment2-part1-model2 | Transformer decoder-only | no disponible | vi, ja como entrada; en como salida | no disponible | no disponible | Checkpoint .pt en Hugging Face, requiere codigo propio |
+| NLLB-200 (Meta) | Transformer encoder-decoder, variante MoE en el modelo completo | 54.500 M en la version completa; versiones destiladas de 600 M y 1.300 M | 200 idiomas, incluye vi, ja y en | 512 tokens en las versiones destiladas | CC-BY-NC-4.0 (uso no comercial) | Pesos en Hugging Face y soporte en `transformers` |
+| M2M-100 (Meta) | Transformer encoder-decoder | 418 M, 1.200 M y 12.000 M | 100 idiomas, incluye vi, ja y en | no disponible en la informacion consultada | MIT | Pesos en Hugging Face |
+| OPUS-MT (Helsinki-NLP) | Marian NMT, encoder-decoder | Modelos bilingues del orden de decenas de millones de parametros por par | Pares bilingues concretos, con variantes vi-en y ja-en | no disponible en la informacion consultada | CC-BY 4.0 en la mayoria de variantes | Pesos en Hugging Face, integrables con `transformers` |
 
 Frente a estas alternativas, el modelo analizado carece de licencia declarada, de metricas y de formatos estandarizados, lo que lo situa fuera de cualquier comparacion de rendimiento rigurosa.
 
@@ -94,7 +94,7 @@ Frente a estas alternativas, el modelo analizado carece de licencia declarada, d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Devatri/anlp-assignment2-part1-model2
+- Modelo en Hugging Face: https://huggingface.co/Devatri/anlp-assignment2-part1-model2
 - Dataset de entrenamiento mencionado en la model card: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - Cuaderno `implementation.ipynb` (referenciado en la model card como contenedor de las definiciones `Config` y `Transformer`): no disponible como enlace publico en la informacion proporcionada
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada

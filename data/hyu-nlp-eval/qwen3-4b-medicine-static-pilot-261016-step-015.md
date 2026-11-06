@@ -33,7 +33,7 @@ En cuanto al entrenamiento, la model card indica que se trata del checkpoint del
 - Ajuste orientado a dominio medico: el nombre del run (`medicine_static_pilot`) indica que el fine-tune se ha realizado sobre datos del ambito de la medicina, aunque no se especifica la naturaleza exacta del corpus.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; no se declaran idiomas en la model card ni en los metadatos de HuggingFace.
+- Capacidades multilingues: no disponible; no se declaran idiomas en la model card ni en los metadatos de Hugging Face.
 - Capacidades especiales (modo thinking, vision, audio): no disponible en la informacion proporcionada.
 - Inferencia via Text Generation Inference: la etiqueta `text-generation-inference` y `endpoints_compatible` sugiere compatibilidad con despliegue gestionado.
 
@@ -70,10 +70,10 @@ Los datos de los modelos alternativos proceden de sus model cards publicas, no d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen3-4b-medicine-static-pilot-261016-step-015 | 4,02 B | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4,02 B | 262.144 tokens segun su model card publica | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| meta-llama/Llama-3.2-3B-Instruct | ~3,21 B | 131.072 tokens segun su model card publica | Llama 3.2 Community License | HuggingFace, requiere aceptar terminos |
-| microsoft/Phi-4-mini-instruct | ~3,8 B | 131.072 tokens segun su model card publica | MIT | HuggingFace |
+| qwen3-4b-medicine-static-pilot-261016-step-015 | 4,02 B | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4,02 B | 262.144 tokens segun su model card publica | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| meta-llama/Llama-3.2-3B-Instruct | ~3,21 B | 131.072 tokens segun su model card publica | Llama 3.2 Community License | Hugging Face, requiere aceptar terminos |
+| microsoft/Phi-4-mini-instruct | ~3,8 B | 131.072 tokens segun su model card publica | MIT | Hugging Face |
 
 Diferencias clave: el modelo analizado es un checkpoint de investigacion sin evaluacion publica ni idiomas declarados, mientras que los tres alternativos son modelos finales con documentacion completa, benchmarks publicados y comunidades activas. La ventaja principal del modelo analizado es la disponibilidad de los ficheros nativos de entrenamiento para reproducibilidad, algo que no ofrecen los modelos finales.
 
@@ -90,7 +90,7 @@ Diferencias clave: el modelo analizado es un checkpoint de investigacion sin eva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-015
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-015
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper, blog, repositorio o demo del autor: no disponible
 - Resultados de busqueda web: las busquedas realizadas no devolvieron ningun enlace relevante sobre este modelo ni sobre su organizacion; los resultados obtenidos correspondian a sitios sin relacion (Hyundai France, canales de YouTube, ONE Championship y catalogos de Hyper U), por lo que no se incluyen como fuentes.

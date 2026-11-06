@@ -73,6 +73,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: ChrisMcCormick/decoderstack-d12](https://huggingface.co/ChrisMcCormick/decoderstack-d12)
-- [Perfil de Chris McCormick en HuggingFace](https://huggingface.co/ChrisMcCormick/models)
+- [Hugging Face: ChrisMcCormick/decoderstack-d12](https://huggingface.co/ChrisMcCormick/decoderstack-d12)
+- [Perfil de Chris McCormick en Hugging Face](https://huggingface.co/ChrisMcCormick/models)
 - [GitHub de Chris McCormick](https://github.com/chrisjmccormick/)

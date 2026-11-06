@@ -20,7 +20,7 @@ Su relevancia es acotada y explícita: el propio autor lo etiqueta como prototip
 | Licencia | apache-2.0 (el modelo base Qwen2.5-0.5B-Instruct también es Apache-2.0) |
 | Formato de pesos | safetensors (adaptador LoRA); requiere descargar aparte el modelo base Qwen/Qwen2.5-0.5B-Instruct |
 | Libreria | peft (con transformers como dependencia) |
-| Tamano del repositorio | 0,0 GB según HuggingFace |
+| Tamano del repositorio | 0,0 GB según Hugging Face |
 | Fecha de publicacion | 2026-09-25 |
 
 ## Arquitectura y entrenamiento
@@ -105,7 +105,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dkubeio/DKube-instruct-v2-0.5B
+- Modelo en Hugging Face: https://huggingface.co/dkubeio/DKube-instruct-v2-0.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Predecesor v1: https://huggingface.co/t4tarzan/DKube-instruct
 - Árbol de ficheros de v1: https://huggingface.co/t4tarzan/DKube-instruct/tree/main

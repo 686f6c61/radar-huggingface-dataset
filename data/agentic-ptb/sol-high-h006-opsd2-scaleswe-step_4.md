@@ -78,6 +78,6 @@ No se conocen otros modelos comparables de la misma categoría (checkpoints inte
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h006.opsd2-scaleswe.step_4
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h006.opsd2-scaleswe.step_4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del proyecto (mencionado en la model card): `agentic-ptb/INDEX` (no se ha encontrado el enlace directo)

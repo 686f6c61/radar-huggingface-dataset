@@ -17,7 +17,7 @@ Esta version concreta aplica cuantizacion AWQ INT4 con calibracion sobre un data
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 524.288 tokens (512K) nativos desde las etapas de midtraining |
 | Tipos de cuantizacion | AWQ INT4 (esta version), formato `compressed-tensors` |
-| Idiomas soportados | Tags de HuggingFace: `en`. La model card lista EN, ZH, HI, AR, RU, JA, KO, NL, FR, ES |
+| Idiomas soportados | Tags de Hugging Face: `en`. La model card lista EN, ZH, HI, AR, RU, JA, KO, NL, FR, ES |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (cuantizado, `compressed-tensors`); `custom_code` |
 
@@ -33,7 +33,7 @@ En cuanto al entrenamiento, la model card indica el uso de dos datasets publicos
 - Razonamiento y resolucion de tareas evaluadas en benchmarks de razonamiento segun la model card.
 - Generacion de codigo, incluida en el conjunto de benchmarks agenticos y de programacion reportados por el autor.
 - Flujos agenticos y tareas de varios pasos, segun las evaluaciones agenticas mencionadas.
-- Capacidad multilingue: la model card lista EN, ZH, HI, AR, RU, JA, KO, NL, FR y ES, aunque el metadata de HuggingFace solo declara `en`.
+- Capacidad multilingue: la model card lista EN, ZH, HI, AR, RU, JA, KO, NL, FR y ES, aunque el metadata de Hugging Face solo declara `en`.
 - Ventana de contexto de 512K tokens, apta para documentos y conversaciones muy extensas.
 - Pesos abiertos con posibilidad de ajuste fino, al publicarse bajo Apache 2.0.
 - Soporte de `tool calling` / `function calling`: no disponible explicitamente en la informacion proporcionada.
@@ -89,7 +89,7 @@ La informacion proporcionada solo ofrece los recuentos de parametros de los mode
 - Discrepancia de parametros: el branding indica "3.7B" mientras que los metadatos safetensors del repositorio reportan 1.887.951.864 parametros (~1,89B). Conviene verificarlo antes de dimensionar el despliegue.
 - Riesgo de alucinacion: no se documenta en la informacion disponible ningun mecanismo especifico de mitigacion; como todo LLM de esta escala, es propenso a generar contenido incorrecto con seguridad.
 - Sesgos: no se proporciona informacion sobre sesgos conocidos ni sobre la composicion demografica o linguistica de los datos de entrenamiento.
-- Limitacion idiomatica: el metadata de HuggingFace declara unicamente `en`; aunque la model card lista diez idiomas, no se aportan metricas de calidad por idioma, por lo que el rendimiento fuera del ingles es incierto.
+- Limitacion idiomatica: el metadata de Hugging Face declara unicamente `en`; aunque la model card lista diez idiomas, no se aportan metricas de calidad por idioma, por lo que el rendimiento fuera del ingles es incierto.
 - Contexto largo: aunque se anuncia una ventana de 512K, no se aportan resultados de evaluacion (tipo RULER o similares) sobre la calidad de recuperacion en contextos largos.
 - Dependencia de `custom_code`: el modelo exige cargar codigo personalizado desde el repositorio, lo que anade superficie de riesgo en entornos de produccion y complica su uso en frameworks que no ejecutan codigo remoto.
 - Licencia: Apache 2.0 permite uso comercial y modificacion, pero el autor original (IFM) es quien define las condiciones del modelo base; conviene revisar tambien la licencia de `IFM/K2-Horizon-3.7B`.

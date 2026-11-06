@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar este modelo con alternativas de la misma categoría. El autor tiene otros merges similares en su perfil de HuggingFace, como `sfm_unfiltered_e2e_alignment-4k_5k_6k_merge` y `sfm-unfiltered-e2e-alignment-4k-5k-6k-avg`, que probablemente sigan la misma metodología con diferentes pasos o pesos. Sin embargo, no hay datos de rendimiento que permitan una comparación objetiva.
+No se dispone de información suficiente para comparar este modelo con alternativas de la misma categoría. El autor tiene otros merges similares en su perfil de Hugging Face, como `sfm_unfiltered_e2e_alignment-4k_5k_6k_merge` y `sfm-unfiltered-e2e-alignment-4k-5k-6k-avg`, que probablemente sigan la misma metodología con diferentes pasos o pesos. Sin embargo, no hay datos de rendimiento que permitan una comparación objetiva.
 
 ## Limitaciones y advertencias
 

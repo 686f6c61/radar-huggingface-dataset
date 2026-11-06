@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `eus-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino supervisado (SFT) desarrollado por el usuario de HuggingFace francesca9805, construido sobre el checkpoint `francesca9805/eus-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455`. Se trata de un modelo causal de generacion de texto con arquitectura GPT-2 (segun el tag `gpt2` de la model card) y 124.770.816 parametros reales en safetensors, lo que lo situa en la misma escala que GPT-2 small. El entrenamiento se realizo con la libreria TRL en su version 0.23.0.
+El modelo `eus-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino supervisado (SFT) desarrollado por el usuario de Hugging Face francesca9805, construido sobre el checkpoint `francesca9805/eus-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455`. Se trata de un modelo causal de generacion de texto con arquitectura GPT-2 (segun el tag `gpt2` de la model card) y 124.770.816 parametros reales en safetensors, lo que lo situa en la misma escala que GPT-2 small. El entrenamiento se realizo con la libreria TRL en su version 0.23.0.
 
 La nomenclatura del identificador apunta a un experimento de tokenizacion y entrenamiento sobre euskera (prefijo `eus-latn`, es decir, euskera en escritura latina) con un corpus de aproximadamente 100 MB, seguido de una fase de ajuste fino SFT sobre datos empaquetados. El sufijo `ckpt500` indica que el modelo publicado corresponde al checkpoint 500 del entrenamiento y `seed455` fija la semilla aleatoria empleada. No obstante, ni la licencia ni los idiomas oficialmente soportados estan declarados en la informacion disponible.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| eus-latn-100mb-after-ppt... (este modelo) | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas | no |
+| eus-latn-100mb-after-ppt... (este modelo) | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas | no |
 | GPT-2 small | 124 M | 1024 tokens | MIT (uso general abierto) | Ampliamente disponible | Si (varios) |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible | Si (varios) |
 | GPT-Neo 125M | 125 M | 2048 tokens | MIT | Ampliamente disponible | Si (varios) |
@@ -92,7 +92,7 @@ La comparacion de rendimiento con estas alternativas no es posible: no se han pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eus-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eus-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/eus-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/comy1f1f

@@ -23,7 +23,7 @@ El modelo subyacente es un transformer decoder-only denso de la familia Llama 3.
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de Llama 3.1 8B: un transformer decoder-only denso con atención por ventanas deslizantes combinada con atención global completa, normalización RMSNorm y activación SwiGLU, tal como se define en la familia Llama 3.1. Al tratarse de una cuantización, esta ficha no introduce cambios arquitectónicos: los pesos se convierten desde el checkpoint HuggingFace original (convert_type: hf) y se cuantizan con soporte de imatrix (output_tensor_quantised: 1, quantize_version: 2), lo que significa que la asignación de bits por tensor se guía por una matriz de importancia calculada sobre datos de calibración en lugar de aplicarse de forma uniforme.
+La arquitectura es la de Llama 3.1 8B: un transformer decoder-only denso con atención por ventanas deslizantes combinada con atención global completa, normalización RMSNorm y activación SwiGLU, tal como se define en la familia Llama 3.1. Al tratarse de una cuantización, esta ficha no introduce cambios arquitectónicos: los pesos se convierten desde el checkpoint Hugging Face original (convert_type: hf) y se cuantizan con soporte de imatrix (output_tensor_quantised: 1, quantize_version: 2), lo que significa que la asignación de bits por tensor se guía por una matriz de importancia calculada sobre datos de calibración en lugar de aplicarse de forma uniforme.
 
 Según los tags de la model card, el modelo base erenzeytunn/Llama-3.1-8B-Turkish se construyó mediante continued pretraining sobre Llama 3.1 8B seguido de instruction tuning con LoRA, con el objetivo de adaptar el modelo al turco. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO. El autor de la cuantización indica además que existen cuantizaciones estáticas equivalentes en un repositorio separado, y que las variantes i1 suelen ofrecer mejor relación calidad/tamaño que las estáticas de tamaño similar.
 
@@ -33,7 +33,7 @@ Según los tags de la model card, el modelo base erenzeytunn/Llama-3.1-8B-Turkis
 - Comprensión y generación de texto en turco como idioma principal y único declarado en la model card.
 - Razonamiento y respuesta a preguntas generales en turco, sujeto a la calidad del ajuste del modelo base (no evaluada en este repositorio).
 - Ejecución local en CPU y GPU gracias al formato GGUF, con soporte de offload parcial de capas a VRAM.
-- Uso como modelo base para ajuste fino adicional en turco (continued pretraining o LoRA) partiendo de los pesos HuggingFace originales.
+- Uso como modelo base para ajuste fino adicional en turco (continued pretraining o LoRA) partiendo de los pesos Hugging Face originales.
 - Capacidades de tool calling, function calling, agentes y razonamiento multi-paso: no disponibles en la información proporcionada.
 - Capacidades de visión o audio: no disponibles (modelo estrictamente de texto).
 - Modo thinking o razonamiento explícito: no disponible.
@@ -45,7 +45,7 @@ Según los tags de la model card, el modelo base erenzeytunn/Llama-3.1-8B-Turkis
 - Generación y revisión de contenido editorial en turco: redacción de borradores, resúmenes y reescritura de textos en turco en pipelines por lotes, usando llama.cpp en CPU para abaratar costes frente a APIs propietarias.
 - Traducción asistida y localización: combinado con un motor de traducción o como post-editor, el modelo puede pulir y adaptar texto en turco en flujos de localización de productos, aprovechando su especialización monolingüe.
 - Sistemas RAG sobre documentación turca: indexación de manuales, contratos o normativa en turco y generación de respuestas fundamentadas, con el modelo como generador final en una arquitectura de recuperación previa.
-- Base para ajuste específico de dominio: al partir de los pesos HuggingFace del modelo base y no solo del GGUF, un equipo puede aplicar LoRA sobre turco legal, médico o financiero y después cuantizar de nuevo con el fichero imatrix incluido.
+- Base para ajuste específico de dominio: al partir de los pesos Hugging Face del modelo base y no solo del GGUF, un equipo puede aplicar LoRA sobre turco legal, médico o financiero y después cuantizar de nuevo con el fichero imatrix incluido.
 - Prototipado e investigación en PLN turco: evaluación cualitativa de un modelo de 8B en turco sin necesidad de infraestructura de GPU de gama alta, útil para comparar enfoques de continued pretraining.
 - Asistente offline en entornos con restricciones de conectividad: al ser un GGUF ejecutable localmente, encaja en escenarios donde no se permite enviar datos a servicios externos, siempre que el contenido sea en turco.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Notas |
 |---|---|---|---|---|---|---|
 | mradermacher/Llama-3.1-8B-Turkish-i1-GGUF | 8,1 B | 128.000 tokens según arquitectura base | tr | llama3.1 | GGUF (i1, 2,2-6,7 GB) | Cuantización ponderada con imatrix; sin benchmarks publicados |
-| erenzeytunn/Llama-3.1-8B-Turkish | 8,1 B | 128.000 tokens según arquitectura base | tr | llama3.1 | safetensors (HuggingFace) | Modelo base original; pesos completos, requiere GPU de mayor VRAM |
+| erenzeytunn/Llama-3.1-8B-Turkish | 8,1 B | 128.000 tokens según arquitectura base | tr | llama3.1 | safetensors (Hugging Face) | Modelo base original; pesos completos, requiere GPU de mayor VRAM |
 | mradermacher/Llama-3.1-8B-Turkish-GGUF | 8,1 B | 128.000 tokens según arquitectura base | tr | llama3.1 | GGUF (cuantizaciones estáticas) | Misma procedencia, sin ponderación imatrix; el autor indica que las i1 suelen ser preferibles a igual tamaño |
 | meta-llama/Llama-3.1-8B-Instruct | 8,1 B | 128.000 tokens | multilingüe (incluye cobertura limitada de turco) | llama3.1 | safetensors, GGUF de terceros | Referencia generalista; sin ajuste específico en turco, rendimiento en turco no comparable por falta de datos públicos en esta información |
 
@@ -92,7 +92,7 @@ No se dispone de comparativas de rendimiento cuantitativas entre estas opciones 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Llama-3.1-8B-Turkish-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Llama-3.1-8B-Turkish-i1-GGUF
 - Modelo base: https://huggingface.co/erenzeytunn/Llama-3.1-8B-Turkish
 - Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Llama-3.1-8B-Turkish-GGUF
 - Fichero imatrix: https://huggingface.co/mradermacher/Llama-3.1-8B-Turkish-i1-GGUF/resolve/main/Llama-3.1-8B-Turkish.imatrix.gguf

@@ -75,7 +75,7 @@ No se dispone de datos suficientes para comparar en terminos de calidad, velocid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/MiniCPM5-2B-Abliterated-Uncensored-Safetensors-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/MiniCPM5-2B-Abliterated-Uncensored-Safetensors-GGUF
 - Variante con pesos imatrix: https://huggingface.co/mradermacher/MiniCPM5-2B-Abliterated-Uncensored-Safetensors-i1-GGUF
 - Repositorio de la familia MiniCPM: https://github.com/OpenBMB/MiniCPM
 - Modelo base de mondk: https://huggingface.co/mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors

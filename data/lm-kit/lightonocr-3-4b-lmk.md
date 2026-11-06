@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento, contexto ni licencia de los tamanos 0,8 B
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lm-kit/lightonocr-3-4b-lmk
+- Repositorio en Hugging Face: https://huggingface.co/lm-kit/lightonocr-3-4b-lmk
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-3-4B
 - SDK LM-Kit.NET: https://lm-kit.com/products/lm-kit-net/
 

@@ -86,4 +86,4 @@ No se dispone de datos de rendimiento comparativo entre estas variantes.
 - Modelo original: https://huggingface.co/openbmb/MiniCPM-OCR-1.0 (revisión fijada: `6796197bb3a8e224b2f64ae462bfbb3f8a15ac4b`)
 - Runtime CrispEmbed: https://github.com/CrispStrobe/CrispEmbed
 - Licencia upstream: https://github.com/OpenBMB/MiniCPM-OCR/blob/8a16a6ad007b1105ac7811ab238808587615e4c7/LICENSE
-- Organización OpenBMB en HuggingFace: https://huggingface.co/openbmb
+- Organización OpenBMB en Hugging Face: https://huggingface.co/openbmb

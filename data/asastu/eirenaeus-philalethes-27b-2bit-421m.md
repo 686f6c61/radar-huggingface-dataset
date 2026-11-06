@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Eirenaeus-Philalethes es un modelo compuesto publicado por el usuario asastu en HuggingFace. No es un modelo monolítico, sino un ensamblaje de varias piezas que, desde fuera, se comportan como un único modelo con un solo identificador y un único endpoint compatible con la API de OpenAI. La pieza central es un modelo de razonamiento de 27B (Ternary-Bonsai-2-27B, derivado de Qwen3, cuantizado en ternario PQ2_0) que se ejecuta en GPU, acompañado de un modelo de decisión de 421M basado en ModernBERT-large (Laya) que corre en CPU y decide en aproximadamente medio segundo cuánto debe pensar el modelo grande.
+Eirenaeus-Philalethes es un modelo compuesto publicado por el usuario asastu en Hugging Face. No es un modelo monolítico, sino un ensamblaje de varias piezas que, desde fuera, se comportan como un único modelo con un solo identificador y un único endpoint compatible con la API de OpenAI. La pieza central es un modelo de razonamiento de 27B (Ternary-Bonsai-2-27B, derivado de Qwen3, cuantizado en ternario PQ2_0) que se ejecuta en GPU, acompañado de un modelo de decisión de 421M basado en ModernBERT-large (Laya) que corre en CPU y decide en aproximadamente medio segundo cuánto debe pensar el modelo grande.
 
 El problema que aborda es el coste de inferencia de los modelos de razonamiento: el modelo pequeño decide el presupuesto de pensamiento, un supervisor en CPU detecta bucles de razonamiento (una duda repetida tres veces detiene el bucle y fuerza la respuesta) y un sistema de memoria verificado inyecta tres recuerdos relevantes procedentes de un almacén Engram. Todo el sistema está pensado para funcionar en local, en una sola GPU de consumo con 12 GB de VRAM y sobre Windows.
 
@@ -93,9 +93,9 @@ Segun el autor, no hay diferencias de calidad estadisticamente significativas en
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Eirenaeus-Philalethes | 26,9B (ternario 2 bits) + 421M de decision | No disponible | HumanEval+ 156/164; MBPP+ 308/378; AIME 2025 27/30 | Apache 2.0 | HuggingFace, ejecucion local con instalador de Windows |
-| Ternary-Bonsai-2-27B (modelo base) | 27B (ternario PQ2_0) | No disponible | HumanEval+ 154/164; MBPP+ 309/378; AIME 2025 27/30 | No disponible en la informacion | HuggingFace, llama.cpp (bifurcacion Prism) |
-| Laya (modelo de decision) | 421M (ModernBERT-large) | No disponible | No disponible | No disponible en la informacion | HuggingFace, CPU |
+| Eirenaeus-Philalethes | 26,9B (ternario 2 bits) + 421M de decision | No disponible | HumanEval+ 156/164; MBPP+ 308/378; AIME 2025 27/30 | Apache 2.0 | Hugging Face, ejecucion local con instalador de Windows |
+| Ternary-Bonsai-2-27B (modelo base) | 27B (ternario PQ2_0) | No disponible | HumanEval+ 154/164; MBPP+ 309/378; AIME 2025 27/30 | No disponible en la informacion | Hugging Face, llama.cpp (bifurcacion Prism) |
+| Laya (modelo de decision) | 421M (ModernBERT-large) | No disponible | No disponible | No disponible en la informacion | Hugging Face, CPU |
 | Otros modelos de razonamiento de ~27B-32B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La informacion proporcionada no incluye resultados comparativos frente a modelos de razonamiento de tamano similar ajenos al proyecto, por lo que no es posible establecer una comparativa de rendimiento con alternativas como las familias Qwen o DeepSeek mas alla del modelo base.
@@ -117,7 +117,7 @@ La informacion proporcionada no incluye resultados comparativos frente a modelos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asastu/Eirenaeus-Philalethes-27B-2bit-421M
+- Hugging Face: https://huggingface.co/asastu/Eirenaeus-Philalethes-27B-2bit-421M
 - Whitepaper: https://github.com/Jc-asastu/eirenaeus-whitepaper
 - Modelo de decision Laya: https://huggingface.co/convaiinnovations/laya
 - Modelo base de razonamiento Ternary-Bonsai-2-27B: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf

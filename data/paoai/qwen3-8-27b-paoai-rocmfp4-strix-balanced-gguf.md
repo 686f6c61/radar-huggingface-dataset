@@ -100,8 +100,8 @@ No hay datos de benchmarks comparativos ni de modelos alternativos en la informa
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-PaoAI-ROCmFP4-STRIX-BALANCED (esta ficha) | 27,3 mil millones | Probado a 64K; medido hasta 128K | GGUF mixto de 15,01 GB, requiere fork ROCmFPX | apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen3.8-27B (modelo base) | 27,3 mil millones | No disponible | Pesos originales (formato no disponible en la información) | No disponible | HuggingFace |
+| Qwen3.8-27B-PaoAI-ROCmFP4-STRIX-BALANCED (esta ficha) | 27,3 mil millones | Probado a 64K; medido hasta 128K | GGUF mixto de 15,01 GB, requiere fork ROCmFPX | apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen/Qwen3.8-27B (modelo base) | 27,3 mil millones | No disponible | Pesos originales (formato no disponible en la información) | No disponible | Hugging Face |
 | Cuantizaciones GGUF homogéneas de 27B | No disponible | No disponible | GGUF estándar compatible con llama.cpp stock | Depende del autor | No disponible |
 | Otras alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -121,7 +121,7 @@ No hay datos de benchmarks comparativos ni de modelos alternativos en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PaoAI/Qwen3.8-27B-PaoAI-ROCmFP4-STRIX-BALANCED-GGUF
+- Modelo en Hugging Face: https://huggingface.co/PaoAI/Qwen3.8-27B-PaoAI-ROCmFP4-STRIX-BALANCED-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Fork de llama.cpp requerido (rama `z13-main`, commit `dfeacaf2f`): https://github.com/kingjones30/ROCmFPX
 - Paper del modelo base: no disponible

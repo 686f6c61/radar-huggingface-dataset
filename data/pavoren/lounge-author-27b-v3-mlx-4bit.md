@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Lounge-Author-27B-v3-MLX-4bit** está publicado en HuggingFace por el usuario **pavoren** bajo licencia Apache 2.0. Su nombre sugiere que se trata de un modelo de 27.000 millones de parámetros, cuantizado a 4 bits en formato MLX, lo que indica una orientación hacia la ejecución en hardware Apple Silicon. No obstante, la model card disponible no contiene información técnica alguna: solo se indica la licencia. No se han publicado descripciones de arquitectura, datos de entrenamiento ni capacidades.
+El modelo **Lounge-Author-27B-v3-MLX-4bit** está publicado en Hugging Face por el usuario **pavoren** bajo licencia Apache 2.0. Su nombre sugiere que se trata de un modelo de 27.000 millones de parámetros, cuantizado a 4 bits en formato MLX, lo que indica una orientación hacia la ejecución en hardware Apple Silicon. No obstante, la model card disponible no contiene información técnica alguna: solo se indica la licencia. No se han publicado descripciones de arquitectura, datos de entrenamiento ni capacidades.
 
 A pesar de la ausencia de documentación, el nombre "Lounge-Author" apunta a un posible uso en tareas de escritura o generación de texto creativo. Sin embargo, no existe evidencia que respalde esta interpretación, por lo que cualquier evaluación de sus capacidades debe considerarse no verificada. La fecha de creación del repositorio es el 4 de septiembre de 2026, y no se registran descargas ni "likes" en el momento de la consulta.
 
@@ -56,6 +56,6 @@ No disponible. No se han encontrado modelos comparables de la misma categoría e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pavoren/Lounge-Author-27B-v3-MLX-4bit
+- Hugging Face: https://huggingface.co/pavoren/Lounge-Author-27B-v3-MLX-4bit
 
 No se han encontrado enlaces relevantes adicionales en la búsqueda web. Los resultados obtenidos no guardan relación con el modelo.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Este repositorio contiene una conversión no oficial a Core ML del modelo Depth Anything V2 Small, publicada por el usuario masahiroid. Se trata de un modelo de estimación monocular de profundidad que, a partir de una única imagen RGB, genera un mapa de profundidad denso por píxel. El modelo original pertenece a la familia Depth Anything V2 (TikTok y el equipo de HuggingFace) y esta conversión concreta no modifica los pesos, sino que los empaqueta en el formato `mlprogram` de Core ML con precisión float16.
+Este repositorio contiene una conversión no oficial a Core ML del modelo Depth Anything V2 Small, publicada por el usuario masahiroid. Se trata de un modelo de estimación monocular de profundidad que, a partir de una única imagen RGB, genera un mapa de profundidad denso por píxel. El modelo original pertenece a la familia Depth Anything V2 (TikTok y el equipo de Hugging Face) y esta conversión concreta no modifica los pesos, sino que los empaqueta en el formato `mlprogram` de Core ML con precisión float16.
 
 La relevancia práctica del repositorio es de despliegue, no de investigación: permite ejecutar el modelo en el ecosistema Apple (iOS, iPadOS y macOS) aprovechando el Neural Engine y la GPU integrada, sin depender de PyTorch ni de dependencias Python en el dispositivo. El modelo base emplea un codificador de visión DINOv2-Small de 24,8 millones de parámetros y una cabeza de regresión de profundidad, con una entrada fija de 518x518 píxeles en formato NCHW.
 
-El repositorio declara licencia Apache 2.0, no registra descargas ni "likes" en el momento de la consulta y tiene un tamaño de 0,0 GB en el índice de HuggingFace. La model card documenta una verificación de precisión frente a la referencia en PyTorch fp32, con una similitud coseno de 0,999998 y un error absoluto medio relativo del 0,14 %.
+El repositorio declara licencia Apache 2.0, no registra descargas ni "likes" en el momento de la consulta y tiene un tamaño de 0,0 GB en el índice de Hugging Face. La model card documenta una verificación de precisión frente a la referencia en PyTorch fp32, con una similitud coseno de 0,999998 y un error absoluto medio relativo del 0,14 %.
 
 ## Especificaciones técnicas
 
@@ -66,7 +66,7 @@ No se proporcionan métricas de calidad de profundidad (por ejemplo, AbsRel, δ1
 
 ## Requisitos de hardware
 
-- Pesos en float16: aproximadamente 50 MB para 24,8 millones de parámetros (cálculo estimado a partir del tamaño declarado; el repositorio figura como 0,0 GB en el índice de HuggingFace).
+- Pesos en float16: aproximadamente 50 MB para 24,8 millones de parámetros (cálculo estimado a partir del tamaño declarado; el repositorio figura como 0,0 GB en el índice de Hugging Face).
 - Plataformas soportadas: Core ML sobre Apple Silicon (familia M) y dispositivos iOS/iPadOS compatibles; el destino mínimo de despliegue declarado es macOS 14.
 - Unidades de cómputo: Core ML puede ejecutar el grafo en CPU, GPU o Neural Engine; la model card no especifica la asignación de cómputo utilizada.
 - GPU NVIDIA (A100, H100, RTX 4090, etc.): no soportadas directamente por este repositorio, ya que el formato es Core ML. Para CUDA habría que usar el modelo base en PyTorch, ONNX u otro runtime.
@@ -79,9 +79,9 @@ No se proporcionan métricas de calidad de profundidad (por ejemplo, AbsRel, δ1
 
 | Modelo | Formato | Parámetros | Entrada | Resolución dinámica | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| masahiroid/depth-anything-v2-small-coreml | Core ML (`mlpackage`, fp16) | 24,8 M | 518x518 fija | No | Apache 2.0 | HuggingFace |
-| depth-anything/Depth-Anything-V2-Small-hf (modelo base) | PyTorch / safetensors | 24,8 M | Resolución dinámica | Sí | Apache 2.0 | HuggingFace |
-| Depth Anything V2 Base / Large | PyTorch | No disponible en la información proporcionada | No disponible | No disponible | Apache 2.0 (según la familia original, no verificado aquí) | HuggingFace |
+| masahiroid/depth-anything-v2-small-coreml | Core ML (`mlpackage`, fp16) | 24,8 M | 518x518 fija | No | Apache 2.0 | Hugging Face |
+| depth-anything/Depth-Anything-V2-Small-hf (modelo base) | PyTorch / safetensors | 24,8 M | Resolución dinámica | Sí | Apache 2.0 | Hugging Face |
+| Depth Anything V2 Base / Large | PyTorch | No disponible en la información proporcionada | No disponible | No disponible | Apache 2.0 (según la familia original, no verificado aquí) | Hugging Face |
 | Otras conversiones Core ML de estimación de profundidad | Core ML | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La ventaja diferencial de este repositorio frente al modelo base es exclusivamente el empaquetado para Apple: misma arquitectura y mismos pesos, pero con inferencia nativa en Core ML y sin dependencia de PyTorch en el dispositivo. Como contrapartida, pierde la resolución dinámica del original y no ofrece variantes de mayor tamaño dentro del mismo repositorio.
@@ -98,11 +98,11 @@ La ventaja diferencial de este repositorio frente al modelo base es exclusivamen
 - Licencia Apache 2.0 en el repositorio de conversión; conviene verificar las condiciones del modelo base y de los datasets asociados antes de un uso comercial.
 - El autor indica que la conversión pasó una auditoría de seguridad con la herramienta `model-audit-lite`, cuyos detalles se remiten al archivo `SECURITY.md` del repositorio.
 - Ausencia de métricas de latencia, consumo energético y throughput, datos relevantes para decidir su uso en producción móvil.
-- El índice de HuggingFace muestra 0 descargas y 0 "likes", por lo que la comunidad de usuarios que lo ha validado es prácticamente inexistente.
+- El índice de Hugging Face muestra 0 descargas y 0 "likes", por lo que la comunidad de usuarios que lo ha validado es prácticamente inexistente.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/masahiroid/depth-anything-v2-small-coreml
+- Repositorio en Hugging Face: https://huggingface.co/masahiroid/depth-anything-v2-small-coreml
 - Modelo base: https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf
 - Documentación de Core ML (Apple): https://developer.apple.com/documentation/coreml
 - Herramienta de auditoría citada por el autor: https://github.com/masahirocom/model-audit-lite

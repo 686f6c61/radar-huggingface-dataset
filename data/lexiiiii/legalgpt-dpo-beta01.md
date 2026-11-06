@@ -69,5 +69,5 @@ No se dispone de información sobre adaptadores LoRA similares para consulta leg
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Lexiiiii/legalgpt-dpo-beta01)
+- [Modelo en Hugging Face](https://huggingface.co/Lexiiiii/legalgpt-dpo-beta01)
 - [Repositorio del proyecto LegalGPT](https://github.com/czc0407/legalGPT)

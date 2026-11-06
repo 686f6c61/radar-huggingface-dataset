@@ -45,7 +45,7 @@ No se han publicado detalles sobre el dataset de entrenamiento, el número de to
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, GSM8K, HumanEval ni otras métricas comparativas. El repositorio de HuggingFace no incluye ninguna tabla de rendimiento ni enlaces a evaluaciones externas.
+No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, GSM8K, HumanEval ni otras métricas comparativas. El repositorio de Hugging Face no incluye ninguna tabla de rendimiento ni enlaces a evaluaciones externas.
 
 ## Requisitos de hardware
 

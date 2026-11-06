@@ -44,7 +44,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL 0.23.0
 - No se documenta soporte de agentes ni razonamiento multi-paso.
 - No se documentan capacidades multilingues mas alla de la posible orientacion al cirilico.
 - No se documentan capacidades especiales (modo thinking, vision, audio, decodificacion especulativa).
-- Etiquetas de despliegue: `text-generation-inference` y `endpoints_compatible`, lo que sugiere compatibilidad con TGI y con los endpoints gestionados de HuggingFace.
+- Etiquetas de despliegue: `text-generation-inference` y `endpoints_compatible`, lo que sugiere compatibilidad con TGI y con los endpoints gestionados de Hugging Face.
 
 ## Casos de uso
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: con 39 M de parametros, aproximadamente 80 MB en fp16, unos 156 MB en fp32 y del orden de 20-40 MB en cuantizacion de 8 o 4 bits. Los calculos son estimaciones a partir del recuento de parametros; no se aportan cifras oficiales.
 - GPU recomendadas: cualquier GPU moderna es suficiente; no requiere A100, H100 ni RTX 4090. Una GPU integrada o incluso CPU puede servir para inferencia.
 - Compatibilidad con GPU consumer: si, cabe holgadamente en cualquier GPU consumer (RTX 3060, RTX 4090, GTX 1650, etc.) e incluso en CPU.
-- Opciones de despliegue: `transformers` con `pipeline`, Text Generation Inference (TGI, segun la etiqueta `text-generation-inference`) y endpoints compatibles de HuggingFace. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, conversion que no se proporciona.
+- Opciones de despliegue: `transformers` con `pipeline`, Text Generation Inference (TGI, segun la etiqueta `text-generation-inference`) y endpoints compatibles de Hugging Face. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, conversion que no se proporciona.
 - Latencia y throughput estimados: no disponibles. No obstante, por el tamano del modelo, la latencia por token deberia ser muy baja en GPU, aunque no hay mediciones publicadas.
 - Nota: el repositorio ocupa 3,1 GB pese a que los pesos del modelo deberian ocupar pocas decenas de megabytes en fp16, lo que sugiere que incluye estados de optimizador u otros artefactos de entrenamiento.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rus-cyrl-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10 | 39 M | no disponible | no disponible | HuggingFace, safetensors |
+| rus-cyrl-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10 | 39 M | no disponible | no disponible | Hugging Face, safetensors |
 | GPT-2 small (referencia publica) | 124 M | 1024 tokens (referencia general) | MIT (referencia general) | Ampliamente disponible |
 | distilgpt2 (referencia publica) | 82 M | 1024 tokens (referencia general) | Apache 2.0 (referencia general) | Ampliamente disponible |
 
@@ -93,7 +93,7 @@ Los datos de GPT-2 small y distilgpt2 se incluyen unicamente como referencias ge
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/rus-cyrl-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/rus-cyrl-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfdiso_seed10
 - Libreria TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/j0h9jymd

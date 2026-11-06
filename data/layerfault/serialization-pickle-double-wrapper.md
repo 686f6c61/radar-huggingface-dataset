@@ -65,7 +65,7 @@ No disponible. No es un modelo de IA y no existen modelos comparables en la cate
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LayerFault/serialization-pickle-double-wrapper
+- Repositorio Hugging Face: https://huggingface.co/LayerFault/serialization-pickle-double-wrapper
 - Paper PickleBall (arXiv): https://arxiv.org/html/2508.15987v2
 - Artículo de blog sobre PickleBall: https://davisjam.medium.com/pickleball-secure-deserialization-of-pickle-based-machine-learning-models-a089113e6b0f
 - PDF PickleBall (Columbia): https://www.cs.columbia.edu/~junfeng/papers/pickleball-ccs25.pdf

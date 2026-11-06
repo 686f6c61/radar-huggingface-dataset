@@ -82,7 +82,7 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/devrim/reign-base-l3_gn-gte-base_dapfam-ftcold-long-c512s512
+- Hugging Face: https://huggingface.co/devrim/reign-base-l3_gn-gte-base_dapfam-ftcold-long-c512s512
 - Codigo: https://github.com/devrimcavusoglu/reign
 - Pagina del proyecto: https://devrimcavusoglu.github.io/reign
 - Dataset: https://huggingface.co/datasets/devrim/goodwiki_long_synthetic_ir

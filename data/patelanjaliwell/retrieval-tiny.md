@@ -72,5 +72,5 @@ No disponible. No se conocen modelos comparables de la misma categoría (Beit ti
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/patelanjaliwell/retrieval-tiny
+- Hugging Face: https://huggingface.co/patelanjaliwell/retrieval-tiny
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web. Los resultados obtenidos no guardan relación con el modelo.

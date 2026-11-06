@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. La d
 - **VRAM estimada para inferencia**: para un modelo de 4B en FP16/BF16 se requieren aproximadamente 8-10 GB de VRAM (incluyendo overhead de atención y caché). Con cuantización de 4 bits, puede reducirse a unos 4-5 GB.
 - **GPU recomendadas**: tarjetas de consumo como RTX 3090/4090 (24 GB) o RTX 4080 (16 GB) son suficientes para inferencia en FP16. Para despliegue con contexto largo (128K), se necesita más memoria para la caché KV, por lo que se recomienda GPU con 24 GB o más, o usar cuantización.
 - **¿Cabe en GPU consumer?** Sí, en la mayoría de las GPU modernas con 8 GB o más, especialmente con cuantización de 4 bits.
-- **Opciones de despliegue**: compatible con la librería transformers (HuggingFace) para inferencia local; puede desplegarse con vLLM, TensorRT-LLM o llama.cpp (si se convierte a GGUF). No se menciona soporte nativo de Ollama, pero es posible mediante conversión.
+- **Opciones de despliegue**: compatible con la librería transformers (Hugging Face) para inferencia local; puede desplegarse con vLLM, TensorRT-LLM o llama.cpp (si se convierte a GGUF). No se menciona soporte nativo de Ollama, pero es posible mediante conversión.
 - **Latencia y throughput**: no disponibles; dependerán del hardware y la optimización. Con una RTX 4090, una generación de 512 tokens puede tardar entre 2 y 5 segundos aproximadamente, pero esto es una estimación general basada en modelos de tamaño similar.
 
 ## Comparativa con modelos similares

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`giraffeBOT/dqn-SpaceInvadersNoFrameskip-v4` no es un modelo de lenguaje: es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) para jugar al clásico de Atari *Space Invaders*. Lo publica el usuario de HuggingFace `giraffeBOT` utilizando `stable-baselines3` y el framework de entrenamiento RL Zoo, ambos del ecosistema DLR-RM. El problema que resuelve es el control de política a partir de píxeles crudos: el agente recibe fotogramas de 84x84 en escala de grises (apilados de cuatro en cuatro) y emite una de las acciones discretas del entorno `SpaceInvadersNoFrameskip-v4`.
+`giraffeBOT/dqn-SpaceInvadersNoFrameskip-v4` no es un modelo de lenguaje: es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) para jugar al clásico de Atari *Space Invaders*. Lo publica el usuario de Hugging Face `giraffeBOT` utilizando `stable-baselines3` y el framework de entrenamiento RL Zoo, ambos del ecosistema DLR-RM. El problema que resuelve es el control de política a partir de píxeles crudos: el agente recibe fotogramas de 84x84 en escala de grises (apilados de cuatro en cuatro) y emite una de las acciones discretas del entorno `SpaceInvadersNoFrameskip-v4`.
 
 El interés practico del artefacto es que constituye un punto de partida reproducible y ligero (el repositorio ocupa 0,1 GB) para experimentar con RL basado en visión. El autor declara un `mean_reward` de 690,50 +/- 290,34 obtenido tras 1.000.000 de pasos de entrenamiento con `CnnPolicy`, un presupuesto notablemente inferior a los 10 millones de pasos que el RL Zoo suele emplear para Atari, lo que se traduce en una política funcional pero con una varianza muy alta entre episodios.
 
@@ -78,7 +78,7 @@ Los datos proceden del `model-index` de la model card y son los únicos resultad
 
 | Modelo / algoritmo | Tipo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DQN de `giraffeBOT` (este modelo) | Off-policy, value-based | no disponible | no aplica | 690,50 +/- 290,34 en SpaceInvadersNoFrameskip-v4 (no verificado) | no disponible | HuggingFace, 0 descargas |
+| DQN de `giraffeBOT` (este modelo) | Off-policy, value-based | no disponible | no aplica | 690,50 +/- 290,34 en SpaceInvadersNoFrameskip-v4 (no verificado) | no disponible | Hugging Face, 0 descargas |
 | DQN de referencia del RL Zoo (mismo entorno) | Off-policy, value-based | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible (la libreria SB3 es MIT) | Repositorio RL Zoo |
 | PPO del RL Zoo (mismo entorno) | On-policy, policy gradient | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible (la libreria SB3 es MIT) | Repositorio RL Zoo |
 | A2C del RL Zoo (mismo entorno) | On-policy, actor-critic | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible (la libreria SB3 es MIT) | Repositorio RL Zoo |
@@ -101,7 +101,7 @@ No se dispone de cifras de rendimiento de las alternativas en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/giraffeBOT/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/giraffeBOT/dqn-SpaceInvadersNoFrameskip-v4
 - Stable Baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo (framework de entrenamiento y carga): https://github.com/DLR-RM/rl-baselines3-zoo
 - SB3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

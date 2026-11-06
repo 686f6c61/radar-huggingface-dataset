@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ESM2-GraphResidual-v2 es un repositorio publicado en HuggingFace por el usuario Marcochris que empaqueta una implementación de "Graph-Residual" sobre un backbone ESM-2, junto con el checkpoint verificado del adaptador ResidualV2. No es un modelo de lenguaje generativo al uso, sino un componente orientado a la adaptación de representaciones de proteínas y al análisis de contexto de grafos biológicos heterogéneos. El repositorio incluye el backbone ESM-2 8M, el checkpoint `graph_residual_v2.pt`, código fuente de modelo, grafo, entrenamiento y evaluación, y configuraciones portables.
+ESM2-GraphResidual-v2 es un repositorio publicado en Hugging Face por el usuario Marcochris que empaqueta una implementación de "Graph-Residual" sobre un backbone ESM-2, junto con el checkpoint verificado del adaptador ResidualV2. No es un modelo de lenguaje generativo al uso, sino un componente orientado a la adaptación de representaciones de proteínas y al análisis de contexto de grafos biológicos heterogéneos. El repositorio incluye el backbone ESM-2 8M, el checkpoint `graph_residual_v2.pt`, código fuente de modelo, grafo, entrenamiento y evaluación, y configuraciones portables.
 
 El adaptador trabaja con características de grafo de 64 dimensiones, una capa oculta de 256 dimensiones y salidas de secuencia de 640 dimensiones, combinadas mediante fusión residual y LayerNorm. La publicación se realizó el 11 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes, con un tamaño de repositorio declarado de 0.0 GB.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ESM2-GraphResidual-v2 | ~8M (backbone) + adaptador no cuantificado | no disponible | ESM-2 + adaptador de grafo residual | no disponible | HuggingFace, 0 descargas |
-| ESM-2 8M (upstream) | 8M | no disponible | Transformer encoder de secuencias de proteínas | no disponible en la información proporcionada | Ampliamente distribuido en HuggingFace |
-| ESM-2 650M (upstream) | 650M | no disponible | Transformer encoder de secuencias de proteínas | no disponible en la información proporcionada | Ampliamente distribuido en HuggingFace |
+| ESM2-GraphResidual-v2 | ~8M (backbone) + adaptador no cuantificado | no disponible | ESM-2 + adaptador de grafo residual | no disponible | Hugging Face, 0 descargas |
+| ESM-2 8M (upstream) | 8M | no disponible | Transformer encoder de secuencias de proteínas | no disponible en la información proporcionada | Ampliamente distribuido en Hugging Face |
+| ESM-2 650M (upstream) | 650M | no disponible | Transformer encoder de secuencias de proteínas | no disponible en la información proporcionada | Ampliamente distribuido en Hugging Face |
 | Otros adaptadores sobre ESM-2 con información de grafo | no disponible | no disponible | Fusión secuencia + grafo | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Marcochris/ESM2-GraphResidual-v2
+- Hugging Face: https://huggingface.co/Marcochris/ESM2-GraphResidual-v2
 - Paper o preprint asociado (Graph-Residual / ESM2 V2): no disponible
 - Repositorio de código independiente: no disponible
 - Demos: no disponible

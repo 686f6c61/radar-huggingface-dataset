@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks de modelos alternativos comparables en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Thaki-KSpeech-KO-30B-A4B-LoRA-v1
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Thaki-KSpeech-KO-30B-A4B-LoRA-v1
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
 - Tarjeta en coreano: https://huggingface.co/ThakiCloud/Thaki-KSpeech-KO-30B-A4B-LoRA-v1/blob/main/MODEL_CARD.ko.md
 - Script de inferencia con guard: https://huggingface.co/ThakiCloud/Thaki-KSpeech-KO-30B-A4B-LoRA-v1/blob/main/infer_guarded.py

@@ -63,7 +63,7 @@ No se han publicado resultados detallados de benchmarks en la informacion dispon
 - Supera los 7 benchmarks del Qwen3.6-35B-A3B.
 - Los quants NEO IMATRIX mejoran la precision entre un 2 y un 4 % respecto a GGUF normales.
 
-No se proporcionan valores numericos para MMLU, HumanEval, GSM8K u otras metricas estandar. Se recomienda consultar la comunidad de HuggingFace para resultados de terceros.
+No se proporcionan valores numericos para MMLU, HumanEval, GSM8K u otras metricas estandar. Se recomienda consultar la comunidad de Hugging Face para resultados de terceros.
 
 ## Requisitos de hardware
 
@@ -96,7 +96,7 @@ Nota: los datos de ARC-C son declaraciones del autor, no verificados de forma in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/phrodigy/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/phrodigy/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP
 - Modelo relacionado (40B Eleanor): https://huggingface.co/DavidAU/Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor-Heretic-Uncensored-NM-DAU-NEO-MAX-MTP-GGUF
 - Modelo relacionado (40B Grand Intelligence): https://huggingface.co/DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF

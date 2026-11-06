@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shiki42/s016-sortblocks-concurrent-pi05-step20000-training-state | Checkpoint VLA (π₀.₅) con estado de entrenamiento | no disponible | no disponible | no disponible | Público en HuggingFace, 0 descargas, 0 likes |
-| lerobot/pi05_base | Modelo VLA base π₀.₅ | no disponible | no disponible | no disponible | Público en HuggingFace |
+| Shiki42/s016-sortblocks-concurrent-pi05-step20000-training-state | Checkpoint VLA (π₀.₅) con estado de entrenamiento | no disponible | no disponible | no disponible | Público en Hugging Face, 0 descargas, 0 likes |
+| lerobot/pi05_base | Modelo VLA base π₀.₅ | no disponible | no disponible | no disponible | Público en Hugging Face |
 | Repositorio de inferencia del mismo autor (mencionado en la model card) | Modelo VLA π₀.₅ solo para inferencia | no disponible | no disponible | no disponible | Referenciado, sin URL en la información disponible |
 
 No se dispone de datos de parámetros, contexto, rendimiento ni licencia de las alternativas en la información proporcionada, por lo que la comparación cuantitativa no es posible.
@@ -96,7 +96,7 @@ No se dispone de datos de parámetros, contexto, rendimiento ni licencia de las 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiki42/s016-sortblocks-concurrent-pi05-step20000-training-state
+- Modelo en Hugging Face: https://huggingface.co/Shiki42/s016-sortblocks-concurrent-pi05-step20000-training-state
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-sortblocks-100ep-concurrent
 - Documentación de π₀.₅ en LeRobot: https://github.com/huggingface/lerobot/blob/main/docs/source/pi05.mdx
 - Modelo base π₀.₅ en LeRobot: https://huggingface.co/lerobot/pi05_base

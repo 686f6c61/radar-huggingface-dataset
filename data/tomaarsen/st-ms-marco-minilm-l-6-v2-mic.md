@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tomaarsen/st-ms-marco-MiniLM-L-6-v2-mic` es un artefacto de prueba (fixture) publicado en HuggingFace por Tomas Aarsen, colaborador habitual del ecosistema Sentence Transformers. No es un modelo entrenado para producción, sino una versión "adelgazada" (shrunk) del cross-encoder `cross-encoder/ms-marco-MiniLM-L6-v2`, reducida a 2.057.601 parámetros y empaquetada junto con un manifiesto de contrato (`integration.json`), ejemplos de uso para Transformers y las expectativas de framework que debe cumplir la integración.
+`tomaarsen/st-ms-marco-MiniLM-L-6-v2-mic` es un artefacto de prueba (fixture) publicado en Hugging Face por Tomas Aarsen, colaborador habitual del ecosistema Sentence Transformers. No es un modelo entrenado para producción, sino una versión "adelgazada" (shrunk) del cross-encoder `cross-encoder/ms-marco-MiniLM-L6-v2`, reducida a 2.057.601 parámetros y empaquetada junto con un manifiesto de contrato (`integration.json`), ejemplos de uso para Transformers y las expectativas de framework que debe cumplir la integración.
 
 El propósito del repositorio es servir como banco de pruebas reproducible: permite verificar que una integración (por ejemplo, la carga del modelo en `sentence-transformers` o en `transformers`) funciona correctamente sin necesidad de descargar los pesos completos del modelo original. La propia model card advierte que los pesos están sobreajustados (overfit) y no representan la calidad de recuperación del modelo fuente.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Calidad de recuperación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tomaarsen/st-ms-marco-MiniLM-L-6-v2-mic | 2.057.601 | no disponible | no válida (fixture sobreajustado) | no disponible | HuggingFace |
-| cross-encoder/ms-marco-MiniLM-L6-v2 | no disponible en la informacion proporcionada | no disponible | modelo de referencia para reranking | no disponible | HuggingFace |
-| Otros cross-encoders MiniLM de Sentence Transformers | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| tomaarsen/st-ms-marco-MiniLM-L-6-v2-mic | 2.057.601 | no disponible | no válida (fixture sobreajustado) | no disponible | Hugging Face |
+| cross-encoder/ms-marco-MiniLM-L6-v2 | no disponible en la informacion proporcionada | no disponible | modelo de referencia para reranking | no disponible | Hugging Face |
+| Otros cross-encoders MiniLM de Sentence Transformers | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparativa se limita al modelo base del que deriva el fixture; no se dispone de datos de benchmarks ni de parámetros del modelo original en la información proporcionada.
 
@@ -80,7 +80,7 @@ La comparativa se limita al modelo base del que deriva el fixture; no se dispone
 
 ## Enlaces
 
-- [HuggingFace: tomaarsen/st-ms-marco-MiniLM-L-6-v2-mic](https://huggingface.co/tomaarsen/st-ms-marco-MiniLM-L-6-v2-mic)
+- [Hugging Face: tomaarsen/st-ms-marco-MiniLM-L-6-v2-mic](https://huggingface.co/tomaarsen/st-ms-marco-MiniLM-L-6-v2-mic)
 - [Manifiesto de contrato (integration.json)](https://huggingface.co/tomaarsen/st-ms-marco-MiniLM-L-6-v2-mic/blob/main/integration.json)
 - [Uso con Transformers](https://huggingface.co/tomaarsen/st-ms-marco-MiniLM-L-6-v2-mic/blob/main/integrations/transformers/usage.md)
 - [Expectativas de Transformers](https://huggingface.co/tomaarsen/st-ms-marco-MiniLM-L-6-v2-mic/tree/main/integrations/transformers/expectations)

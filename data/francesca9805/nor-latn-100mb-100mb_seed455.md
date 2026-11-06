@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nor-latn-100mb-100mb_seed455 es un modelo de generacion de texto publicado por el usuario francesca9805 en HuggingFace, obtenido mediante fine-tuning supervisado (SFT) del modelo base goldfish-models/nor_latn_100mb. El entrenamiento se realizo con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0, y el repositorio lleva las etiquetas generated_from_trainer, sft y trl. Por el nombre del modelo y del modelo base, todo apunta a un ajuste sobre noruego en escritura latina, si bien la model card no declara idiomas de forma explicita.
+nor-latn-100mb-100mb_seed455 es un modelo de generacion de texto publicado por el usuario francesca9805 en Hugging Face, obtenido mediante fine-tuning supervisado (SFT) del modelo base goldfish-models/nor_latn_100mb. El entrenamiento se realizo con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0, y el repositorio lleva las etiquetas generated_from_trainer, sft y trl. Por el nombre del modelo y del modelo base, todo apunta a un ajuste sobre noruego en escritura latina, si bien la model card no declara idiomas de forma explicita.
 
 El modelo tiene 124.770.816 parametros y un repositorio de 0,5 GB en formato safetensors, lo que lo situa en la categoria de modelos pequenos (orden de GPT-2 small). La etiqueta gpt2 del repositorio indica una arquitectura transformer decoder-only, aunque no se detallan en la informacion disponible ni la longitud de contexto ni el vocabulario del tokenizador.
 
@@ -65,10 +65,10 @@ Las cifras de los modelos externos que aparecen en la tabla corresponden al cono
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/nor-latn-100mb-100mb_seed455 | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
-| goldfish-models/nor_latn_100mb (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
-| openai-community/gpt2 (referencia de arquitectura) | 124 M | 1024 tokens | licencia de OpenAI para GPT-2 | HuggingFace |
-| distilgpt2 (alternativa pequena de la misma familia) | 82 M | 1024 tokens | licencia de OpenAI para GPT-2 | HuggingFace |
+| francesca9805/nor-latn-100mb-100mb_seed455 | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
+| goldfish-models/nor_latn_100mb (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
+| openai-community/gpt2 (referencia de arquitectura) | 124 M | 1024 tokens | licencia de OpenAI para GPT-2 | Hugging Face |
+| distilgpt2 (alternativa pequena de la misma familia) | 82 M | 1024 tokens | licencia de OpenAI para GPT-2 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones, ya que el modelo evaluado no publica benchmarks.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones, ya que e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nor-latn-100mb-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nor-latn-100mb-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/nor_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/9xvj0qqb

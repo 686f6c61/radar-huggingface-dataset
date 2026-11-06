@@ -4,9 +4,9 @@
 
 Cohere-AR/cohere-transcribe-ar-sft-v9-full es un modelo de reconocimiento automatico del habla (ASR) especializado en arabe e ingles, desarrollado por la organizacion Cohere-AR mediante ajuste fino supervisado (SFT) sobre el modelo base CohereLabs/cohere-transcribe-arabic-07-2026. Con 2.065.770.752 parametros (aproximadamente 2,07 mil millones), el modelo aborda un problema concreto y mal cubierto por los sistemas ASR genericos: la transcripcion de conversaciones telefonicas con alternancia de codigo (code-switching) entre arabe y ingles, un fenomeno muy frecuente en contextos profesionales y de atencion al cliente en el mundo arabofono.
 
-El modelo se distribuye en formato safetensors bajo la libreria transformers y la arquitectura `cohere_asr`, lo que facilita su integracion en pipelines estandar de HuggingFace. Su publicacion es reciente (noviembre de 2026) y el repositorio aparece con acceso restringido (gated), lo que obliga a aceptar condiciones en HuggingFace antes de la descarga. Aunque no se han publicado todavia descargas ni valoraciones, el interes tecnico reside en su enfoque vertical: en lugar de competir como ASR multilingue generalista, se posiciona como solucion de produccion para audio telefonico bilingue arabe-ingles.
+El modelo se distribuye en formato safetensors bajo la libreria transformers y la arquitectura `cohere_asr`, lo que facilita su integracion en pipelines estandar de Hugging Face. Su publicacion es reciente (noviembre de 2026) y el repositorio aparece con acceso restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de la descarga. Aunque no se han publicado todavia descargas ni valoraciones, el interes tecnico reside en su enfoque vertical: en lugar de competir como ASR multilingue generalista, se posiciona como solucion de produccion para audio telefonico bilingue arabe-ingles.
 
-La relevancia actual del modelo radica en dos factores. Primero, el ajuste fino sobre un modelo base ya especializado en arabe permite esperar un rendimiento superior al de whisper-like generalistas en acentos dialectales y ruido telefonico. Segundo, la etiqueta `endpoints_compatible` sugiere compatibilidad con la infraestructura de inferencia gestionada de HuggingFace, lo que reduce la friccion de despliegue para equipos que no quieren montar su propio stack.
+La relevancia actual del modelo radica en dos factores. Primero, el ajuste fino sobre un modelo base ya especializado en arabe permite esperar un rendimiento superior al de whisper-like generalistas en acentos dialectales y ruido telefonico. Segundo, la etiqueta `endpoints_compatible` sugiere compatibilidad con la infraestructura de inferencia gestionada de Hugging Face, lo que reduce la friccion de despliegue para equipos que no quieren montar su propio stack.
 
 ## Especificaciones tecnicas
 
@@ -22,7 +22,7 @@ La relevancia actual del modelo radica en dos factores. Primero, el ajuste fino 
 | Formato de pesos | safetensors |
 | Modelo base | CohereLabs/cohere-transcribe-arabic-07-2026 |
 | Tipo de ajuste | SFT (supervised fine-tuning), version v9-full |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 4,1 GB |
 
 ## Arquitectura y entrenamiento
@@ -38,7 +38,7 @@ No se documentan innovaciones tecnicas adicionales como decodificacion especulat
 - Transcripcion de voz a texto en arabe y en ingles, con soporte explicito de alternancia de codigo (code-switching) entre ambos idiomas dentro de una misma intervencion.
 - Reconocimiento de audio telefonico: los tags incluyen `telephony`, lo que sugiere entrenamiento o evaluacion sobre audio de baja calidad, banda estrecha y ruido de canal.
 - Generacion de transcripciones para el pipeline `automatic-speech-recognition` de transformers, lo que permite invocarlo con `pipeline("automatic-speech-recognition", model=...)`.
-- Compatibilidad con endpoints gestionados de HuggingFace (tag `endpoints_compatible`), lo que habilita despliegue sin infraestructura propia.
+- Compatibilidad con endpoints gestionados de Hugging Face (tag `endpoints_compatible`), lo que habilita despliegue sin infraestructura propia.
 - No se documenta soporte de tool calling, function calling, agentes ni razonamiento multi-paso: es un modelo ASR, no un LLM conversacional.
 - No se documentan capacidades de vision, audio-generacion, diarizacion de hablantes ni traduccion automatica.
 - No se documenta modo de razonamiento (thinking mode) ni capacidades multimodales mas alla del audio de entrada.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantizacion INT4 (si se genera via herramientas externas, no documentada oficialmente): aproximadamente 1,1 GB de pesos, aunque la calidad de transcripcion puede degradarse.
 - GPU consumer: cabe en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090 sin problemas en FP16. En GPUs de 8 GB (RTX 3070, RTX 4060) es viable en FP16 con lotes pequenos o en INT8.
 - GPU de datacenter recomendadas para produccion: A100 40 GB, H100 80 GB y L40S para servir multiples peticiones concurrentes; una sola A10G o L4 (24 GB) puede alojar varias instancias en FP16.
-- Opciones de despliegue: transformers (`pipeline`), TGI (Text Generation Inference no aplica; usar el servidor de ASR de HuggingFace o un wrapper FastAPI propio), HuggingFace Inference Endpoints (tag `endpoints_compatible`), y potencialmente vLLM si se adapta el modelo, aunque no esta documentado.
+- Opciones de despliegue: transformers (`pipeline`), TGI (Text Generation Inference no aplica; usar el servidor de ASR de Hugging Face o un wrapper FastAPI propio), Hugging Face Inference Endpoints (tag `endpoints_compatible`), y potencialmente vLLM si se adapta el modelo, aunque no esta documentado.
 - llama.cpp y Ollama: no disponibles de forma nativa para arquitectura `cohere_asr` con safetensors; requeririan conversion a GGUF no documentada por el autor.
 - Latencia y throughput: no disponible. Como referencia orientativa no publicada, un modelo de 2 B suele procesar audio a varias veces tiempo real en GPU modernas, pero no hay cifras oficiales.
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Idiomas | Contexto audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cohere-AR/cohere-transcribe-ar-sft-v9-full | 2,07 B | ar, en (code-switching) | no disponible | no disponible | gated en HuggingFace |
-| CohereLabs/cohere-transcribe-arabic-07-2026 (base) | no disponible | arabe | no disponible | no disponible | HuggingFace |
+| Cohere-AR/cohere-transcribe-ar-sft-v9-full | 2,07 B | ar, en (code-switching) | no disponible | no disponible | gated en Hugging Face |
+| CohereLabs/cohere-transcribe-arabic-07-2026 (base) | no disponible | arabe | no disponible | no disponible | Hugging Face |
 | Whisper large-v3 | 1,55 B | multilingue (99 idiomas, incluye ar y en) | 30 s por ventana | MIT | abierto |
 | Whisper large-v3-turbo | 0,81 B | multilingue | 30 s por ventana | MIT | abierto |
 
@@ -82,7 +82,7 @@ La comparacion con Whisper es la mas pertinente por tamano y tarea. Whisper larg
 ## Limitaciones y advertencias
 
 - Licencia no disponible: no se puede asumir uso comercial permitido hasta que el autor publique los terminos. Cualquier despliegue en produccion debe verificar la licencia del modelo base CohereLabs/cohere-transcribe-arabic-07-2026, que puede imponer restricciones adicionales.
-- Acceso gated: requiere aceptar condiciones en HuggingFace y aprobacion del autor, lo que ralentiza la integracion en CI/CD y la reproducibilidad de experimentos.
+- Acceso gated: requiere aceptar condiciones en Hugging Face y aprobacion del autor, lo que ralentiza la integracion en CI/CD y la reproducibilidad de experimentos.
 - Cero descargas y cero likes en el momento de la consulta: no hay evidencia publica de validacion por parte de la comunidad ni de casos de exito en produccion.
 - Ausencia total de benchmarks publicados: no se puede comparar objetivamente su WER frente a Whisper o el modelo base en condiciones controladas.
 - Ambito limitado a arabe e ingles: no debe usarse para otros idiomas ni para variantes dialectales no cubiertas en el dataset de SFT.
@@ -94,8 +94,8 @@ La comparacion con Whisper es la mas pertinente por tamano y tarea. Whisper larg
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-sft-v9-full
+- Modelo en Hugging Face: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-sft-v9-full
 - Modelo base: https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026
 - Organizacion Cohere-AR: https://huggingface.co/Cohere-AR
 - Documentacion de pipelines ASR de transformers: https://huggingface.co/docs/transformers/main/en/main_classes/pipelines#automatic-speech-recognition
-- HuggingFace Inference Endpoints: https://huggingface.co/docs/inference-endpoints/index
+- Hugging Face Inference Endpoints: https://huggingface.co/docs/inference-endpoints/index

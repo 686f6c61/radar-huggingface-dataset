@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hab-swe/Qwen3.8-27B-MedCLI-V2-Coverage-CMT-EHRDQ-CT-SFT-LR-5en6` es un ajuste fino publicado por el usuario `hab-swe` sobre una base de la familia Qwen3, con 27.356.728.560 parametros confirmados a partir de los pesos en safetensors (aproximadamente 27,36 mil millones). El pipeline declarado en HuggingFace es `image-text-to-text`, lo que indica que se trata de un modelo multimodal que acepta imagenes y texto como entrada y genera texto, y el tag de arquitectura registrado es `qwen3_5`. La licencia es Apache 2.0 y el acceso al repositorio esta restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+El modelo `hab-swe/Qwen3.8-27B-MedCLI-V2-Coverage-CMT-EHRDQ-CT-SFT-LR-5en6` es un ajuste fino publicado por el usuario `hab-swe` sobre una base de la familia Qwen3, con 27.356.728.560 parametros confirmados a partir de los pesos en safetensors (aproximadamente 27,36 mil millones). El pipeline declarado en Hugging Face es `image-text-to-text`, lo que indica que se trata de un modelo multimodal que acepta imagenes y texto como entrada y genera texto, y el tag de arquitectura registrado es `qwen3_5`. La licencia es Apache 2.0 y el acceso al repositorio esta restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 El nombre del repositorio aporta pistas sobre su proposito, aunque no debe tomarse como documentacion oficial: los segmentos `MedCLI`, `EHRDQ`, `Coverage` y `CMT` apuntan a un dominio sanitario (historia clinica electronica, cobertura o facturacion medica), `SFT` indica ajuste supervisado y `LR-5en6` hace referencia a una tasa de aprendizaje de 5e-6. No se ha publicado informacion adicional que confirme estas interpretaciones.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es limitada por la ausencia total de documentacion: 
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (libreria `transformers`) |
 | Tamano del repositorio | 54,7 GB (consistente con pesos en bf16/fp16) |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion / actualizacion | 2026-09-17 / 2026-09-17 |
 
 ## Arquitectura y entrenamiento
@@ -68,7 +68,7 @@ Estimaciones calculadas a partir del recuento de parametros confirmado (27,36 B)
 - GPU de consumo: no cabe en una GPU de consumo en bf16 (54,7 GB supera los 24-32 GB disponibles). Solo seria viable en 24 GB tras cuantizar a 4 bits.
 - Opciones de despliegue: al publicarse unicamente safetensors para `transformers`, las vias directas son `transformers`, vLLM, TGI o SGLang. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF por cuenta propia.
 - Latencia y throughput: no disponible. Dependera del hardware, de la precision y de la carga multimodal (resolucion y numero de imagenes por peticion).
-- Nota practica: el acceso esta restringido, por lo que la descarga requiere autenticacion y aceptacion de condiciones en HuggingFace.
+- Nota practica: el acceso esta restringido, por lo que la descarga requiere autenticacion y aceptacion de condiciones en Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -76,7 +76,7 @@ No se dispone de benchmarks verificados de este modelo, por lo que la comparacio
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| hab-swe/Qwen3.8-27B-MedCLI-V2-... | 27,36 B (confirmado) | no disponible | Apache 2.0 | Gated en HuggingFace | no disponible |
+| hab-swe/Qwen3.8-27B-MedCLI-V2-... | 27,36 B (confirmado) | no disponible | Apache 2.0 | Gated en Hugging Face | no disponible |
 | Base de la familia Qwen3 multimodal (referencia) | no disponible para este repositorio | no disponible | Apache 2.0 en la mayoria de variantes | Publica | no disponible |
 | Qwen2.5-VL-32B-Instruct (referencia aproximada) | ~32 B | hasta 128k segun documentacion del fabricante | Apache 2.0 | Publica | no comparado |
 | Gemma 3 27B (referencia aproximada) | ~27 B | hasta 128k segun documentacion del fabricante | Licencia Gemma (con restricciones de uso) | Publica | no comparado |
@@ -97,7 +97,7 @@ La conclusion principal es que la comparativa cuantitativa no es posible con la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hab-swe/Qwen3.8-27B-MedCLI-V2-Coverage-CMT-EHRDQ-CT-SFT-LR-5en6
+- Hugging Face: https://huggingface.co/hab-swe/Qwen3.8-27B-MedCLI-V2-Coverage-CMT-EHRDQ-CT-SFT-LR-5en6
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio: no disponible

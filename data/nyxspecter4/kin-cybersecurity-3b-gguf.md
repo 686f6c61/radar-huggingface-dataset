@@ -74,7 +74,7 @@ Las cifras de VRAM que se indican a continuación son estimaciones a partir de l
 
 | Modelo | Parametros | Contexto | Licencia | Especializacion | Disponibilidad |
 |---|---|---|---|---|---|
-| KIN Cyber SFT LoRA GGUF | 3,09 B | No especificado para el fine-tune; 32.768 en el modelo base | Apache 2.0 | Ciberseguridad (fine-tune DPO sobre 1.635 pares) | GGUF en HuggingFace; safetensors en repositorio hermano |
+| KIN Cyber SFT LoRA GGUF | 3,09 B | No especificado para el fine-tune; 32.768 en el modelo base | Apache 2.0 | Ciberseguridad (fine-tune DPO sobre 1.635 pares) | GGUF en Hugging Face; safetensors en repositorio hermano |
 | Qwen2.5-3B-Instruct (modelo base) | 3,09 B | 32.768 tokens | Apache 2.0 (licencia del base; no confirmada en esta ficha) | Proposito general, instrucciones y conversacion. | safetensors, GGUF de terceros |
 | Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Proposito general, instrucciones y conversacion | safetensors, GGUF oficiales |
 | Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | Proposito general, con enfasis en razonamiento y codigo | safetensors, GGUF de terceros |
@@ -96,7 +96,7 @@ La comparación cuantitativa de calidad no es posible: el autor no publica ning�
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/nyxspecter4/kin-cybersecurity-3b-gguf
+- Página del modelo en Hugging Face: https://huggingface.co/nyxspecter4/kin-cybersecurity-3b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio hermano con pesos fusionados en safetensors: https://huggingface.co/nyxspecter4/kin-sft-lora
 - Dataset de entrenamiento (DPO): https://huggingface.co/datasets/nyxspecter4/kin-cyber-dpo-v2

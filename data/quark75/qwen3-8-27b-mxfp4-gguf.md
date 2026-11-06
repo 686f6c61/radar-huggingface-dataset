@@ -67,11 +67,11 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 - Riesgo de alucinación: como todos los modelos de lenguaje, puede generar información falsa o inventada, especialmente en contextos largos.
 - Sesgos: no se han documentado sesgos específicos, pero al ser un modelo entrenado con datos de internet, puede reflejar sesgos sociales y culturales.
 - La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los términos de la licencia del modelo original (Qwen) para asegurar el cumplimiento.
-- El repositorio de HuggingFace tiene 0 descargas y 0 likes, lo que sugiere que es una cuantización reciente o poco probada; se recomienda verificar su integridad antes de usarla en producción.
+- El repositorio de Hugging Face tiene 0 descargas y 0 likes, lo que sugiere que es una cuantización reciente o poco probada; se recomienda verificar su integridad antes de usarla en producción.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/quark75/Qwen3.8-27B-MXFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/quark75/Qwen3.8-27B-MXFP4-GGUF
 - Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
 - Documentación de Unsloth para Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Blog de AMD sobre ejecución en Ryzen AI Max: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

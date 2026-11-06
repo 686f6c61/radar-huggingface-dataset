@@ -6,7 +6,7 @@ El modelo `rjz123/colar-coding-l1b` es un adaptador PEFT (LoRA) desarrollado por
 
 La relevancia de este modelo reside en su enfoque de razonamiento latente con compresión (`compress=5`), una técnica que busca reducir la longitud de los pensamientos intermedios generados por el modelo, mejorando potencialmente la eficiencia en inferencia. Sin embargo, al tratarse de un trabajo de investigación con cero descargas y sin documentación adicional, su utilidad práctica es limitada y debe considerarse como un artefacto experimental.
 
-El checkpoint no es cargable directamente con la API `AutoModel` de HuggingFace; requiere un scaffold personalizado que combina el modelo base con un resize de `[PAD]`, LoRA de rango 128 en las proyecciones Q y V, y un MLP `LatentPolicy`. Esto lo hace accesible solo para investigadores familiarizados con la arquitectura CoLaR.
+El checkpoint no es cargable directamente con la API `AutoModel` de Hugging Face; requiere un scaffold personalizado que combina el modelo base con un resize de `[PAD]`, LoRA de rango 128 en las proyecciones Q y V, y un MLP `LatentPolicy`. Esto lo hace accesible solo para investigadores familiarizados con la arquitectura CoLaR.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No disponible. No se conocen modelos comparables con la misma arquitectura CoLaR
 
 - Modelo de investigación con cero descargas y sin validación externa; no se recomienda su uso en producción sin una evaluación exhaustiva.
 - La licencia no está especificada, lo que impide determinar si es apto para uso comercial o requiere atribución.
-- El checkpoint solo es cargable con el scaffold CoLaR personalizado; no es compatible con las APIs estándar de HuggingFace, lo que dificulta su integración.
+- El checkpoint solo es cargable con el scaffold CoLaR personalizado; no es compatible con las APIs estándar de Hugging Face, lo que dificulta su integración.
 - No se documentan sesgos ni riesgos de alucinación, pero al ser un modelo pequeño (1B) es probable que presente alucinaciones y errores en tareas complejas.
 - La ventana de contexto efectiva puede estar limitada por el mecanismo de compresión (`MAXLAT=64`), lo que restringe la longitud de los razonamientos intermedios.
 - El dominio de entrenamiento (código) puede provocar un sesgo hacia tareas de programación, con menor rendimiento en otros ámbitos.
@@ -70,5 +70,5 @@ No disponible. No se conocen modelos comparables con la misma arquitectura CoLaR
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/rjz123/colar-coding-l1b)
+- [Modelo en Hugging Face](https://huggingface.co/rjz123/colar-coding-l1b)
 - [Perfil de GitHub del autor](https://github.com/rjz123)

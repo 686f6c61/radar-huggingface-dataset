@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yukizstz/dissertation-contrastive` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura tipo Flamingo orientada a aprendizaje contrastivo. Lo desarrolla el usuario yukizstz y su propósito declarado no es ofrecer un modelo entrenado, sino servir como base de código inspeccionable para validar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye `inference.py`, `config.json`, `training_args.json` y un checkpoint de inicialización en `model.safetensors` destinado únicamente a pruebas de humo (smoke tests).
+`yukizstz/dissertation-contrastive` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura tipo Flamingo orientada a aprendizaje contrastivo. Lo desarrolla el usuario yukizstz y su propósito declarado no es ofrecer un modelo entrenado, sino servir como base de código inspeccionable para validar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye `inference.py`, `config.json`, `training_args.json` y un checkpoint de inicialización en `model.safetensors` destinado únicamente a pruebas de humo (smoke tests).
 
 El dato más relevante es su tamaño real: el checkpoint en safetensors contiene 33.088 parámetros totales, una cifra propia de un modelo de juguete o de una configuración mínima de validación, no de un modelo de producción. La model card etiqueta el "scale" como *huge* en la configuración, pero esa etiqueta es un parámetro del script y no refleja el tamaño efectivo del checkpoint publicado, que es de apenas decenas de miles de parámetros y ocupa 0,0 GB.
 
@@ -30,7 +30,7 @@ Por tanto, el modelo es relevante únicamente como punto de partida experimental
 
 ## Arquitectura y entrenamiento
 
-La arquitectura sigue el patrón Flamingo, un diseño multimodal que combina un codificador visual con un modelo de lenguaje mediante capas de fusión cruzada. En este repositorio, la configuración declara atención dispersa, fusión bilineal entre modalidades, activación `gelu tanh` y normalización `scalenorm`. Se trata de una implementación personalizada, por lo que no se puede cargar con las APIs genéricas de HuggingFace (`AutoModel` y similares) sin escribir antes un adaptador explícito que mapee la lógica del script.
+La arquitectura sigue el patrón Flamingo, un diseño multimodal que combina un codificador visual con un modelo de lenguaje mediante capas de fusión cruzada. En este repositorio, la configuración declara atención dispersa, fusión bilineal entre modalidades, activación `gelu tanh` y normalización `scalenorm`. Se trata de una implementación personalizada, por lo que no se puede cargar con las APIs genéricas de Hugging Face (`AutoModel` y similares) sin escribir antes un adaptador explícito que mapee la lógica del script.
 
 Respecto al entrenamiento, la model card es explícita: no se ha ejecutado ningún entrenamiento completo. El archivo `training_args.json` recoge una receta de experimento por defecto (optimizador lion con scheduler de warmup lineal), pero el propio autor aclara que son valores de partida del script y no evidencia de un run finalizado. El checkpoint `model.safetensors` es una inicialización válida para pruebas de humo, no un modelo entrenado. No se documentan número de tokens, composición del dataset, ni fases de RLHF, DPO o ajuste por instrucciones.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 - No ha sido auditado en robustez, equidad ni transferencia de dominio, tal como advierte el propio autor.
 - No se declaran idiomas soportados, por lo que no se puede asumir cobertura multilingüe.
 - No se publica longitud de contexto, por lo que se desconoce la ventana máxima admitida por la configuración.
-- El modelo emplea una implementación personalizada: las APIs automáticas de HuggingFace no lo cargarán sin un adaptador explícito, lo que añade coste de integración.
+- El modelo emplea una implementación personalizada: las APIs automáticas de Hugging Face no lo cargarán sin un adaptador explícito, lo que añade coste de integración.
 - La etiqueta de escala "huge" en la configuración no coincide con el recuento real de parámetros (33.088), por lo que no debe tomarse como indicador de tamaño.
 - La licencia BSD-3-Clause permite uso comercial, pero el propio repositorio recomienda revisar por separado los términos de los datos fuente si se combina con datasets externos.
 - Existe un repositorio casi idéntico bajo otra cuenta (`Mikuznetsov`) con licencia Apache-2.0; conviene verificar la procedencia y la relación entre ambos antes de reutilizar el código.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yukizstz/dissertation-contrastive
+- Modelo en Hugging Face: https://huggingface.co/yukizstz/dissertation-contrastive
 - Repositorio similar (Mikuznetsov): https://huggingface.co/Mikuznetsov/dissertation-contrastive
 - Árbol de archivos del repositorio similar: https://huggingface.co/Mikuznetsov/dissertation-contrastive/tree/main
 - Artículo divulgativo sobre aprendizaje contrastivo (Netguru): https://www.netguru.com/blog/contrastive-learning

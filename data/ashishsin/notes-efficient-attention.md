@@ -73,7 +73,7 @@ El repositorio de notas es menos completo que el artículo de arXiv y no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ashishsin/notes-efficient-attention
+- Repositorio en Hugging Face: https://huggingface.co/ashishsin/notes-efficient-attention
 - Artículo de revisión sobre atención eficiente (arXiv): https://arxiv.org/abs/2507.19595
 - Versión HTML del mismo artículo: https://arxiv.org/html/2507.19595v1
 - Repositorio de código de atención eficiente (HKUNLP): https://github.com/hkunlp/efficient-attention

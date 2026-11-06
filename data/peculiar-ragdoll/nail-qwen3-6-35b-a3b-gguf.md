@@ -77,9 +77,9 @@ La comparativa se limita a las variantes de la misma familia Qwen3.6. No se disp
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF)
-- [Version MTP en HuggingFace](https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF-MTP)
-- [Version MLX en HuggingFace](https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-MLX)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF)
+- [Version MTP en Hugging Face](https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF-MTP)
+- [Version MLX en Hugging Face](https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-MLX)
 - [Ficha en LLM Explorer](https://llm-explorer.com/model/peculiar-ragdoll%2FNail-Qwen3.6-35B-A3B-MLX,5jMbcfF9k90FGmKuXh7knm)
 - [Modelo en Ollama](https://ollama.com/library/qwen3.6:35b-a3b)
 - [Guia para ejecutar Qwen 3.6 localmente](https://dev.to/purpledoubled/how-to-run-qwen-36-locally-27b-dense-35b-moe-and-coding-variants-setup-guide-4di)

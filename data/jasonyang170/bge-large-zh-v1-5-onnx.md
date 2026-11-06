@@ -104,7 +104,7 @@ Dado que el modelo no aporta metricas de retrieval, no es posible afirmar que ig
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JasonYANG170/bge-large-zh-v1.5-ONNX
+- Modelo en Hugging Face: https://huggingface.co/JasonYANG170/bge-large-zh-v1.5-ONNX
 - Modelo base: https://huggingface.co/BAAI/bge-large-zh-v1.5
 - Revision concreta del modelo base empleada en la conversion: https://huggingface.co/BAAI/bge-large-zh-v1.5/tree/79e7739b6ab944e86d6171e44d24c997fc1e0116
 - Libreria Transformers.js: https://github.com/huggingface/transformers.js

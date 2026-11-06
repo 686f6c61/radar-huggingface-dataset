@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Qwen2.5-3B-Turkish-Judge-Pilot es un fine-tuning del modelo base Qwen2.5-3B-Instruct, desarrollado por el usuario sadecebirisii y publicado en HuggingFace. El nombre sugiere que está orientado a actuar como un "juez" (evaluador) de respuestas generadas por modelos de lenguaje en turco, aunque la documentación disponible no detalla el conjunto de datos de entrenamiento ni la metodología exacta empleada.
+El modelo Qwen2.5-3B-Turkish-Judge-Pilot es un fine-tuning del modelo base Qwen2.5-3B-Instruct, desarrollado por el usuario sadecebirisii y publicado en Hugging Face. El nombre sugiere que está orientado a actuar como un "juez" (evaluador) de respuestas generadas por modelos de lenguaje en turco, aunque la documentación disponible no detalla el conjunto de datos de entrenamiento ni la metodología exacta empleada.
 
 El modelo se distribuye exclusivamente en formato GGUF, convertido mediante la herramienta Unsloth, lo que indica que está pensado para su uso con llama.cpp, Ollama y otros motores de inferencia compatibles con este formato. Con aproximadamente 3.085 millones de parámetros, se trata de un modelo de tamaño pequeño-medio que puede ejecutarse en hardware de consumo. Su relevancia radica en la escasez de modelos evaluadores específicos para el idioma turco, aunque al ser un "pilot" (piloto) su alcance y validación son limitados.
 
@@ -80,7 +80,7 @@ La comparativa se limita a modelos de tamaño similar. No hay modelos "juez" en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sadecebirisii/Qwen2.5-3B-Turkish-Judge-Pilot
+- Hugging Face: https://huggingface.co/sadecebirisii/Qwen2.5-3B-Turkish-Judge-Pilot
 - Unsloth (herramienta de conversión): https://github.com/unslothai/unsloth
 - Modelo base Qwen2.5-3B-Instruct (referencia): https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Documentación de llama.cpp (para uso del GGUF): https://github.com/ggerganov/llama.cpp

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`cesarrf/roberta-airline-sentiment` es un modelo de clasificación de texto publicado en HuggingFace por el usuario cesarrf, con arquitectura basada en RoBERTa (etiqueta `roberta` y `transformers` en el repositorio). Con 124.647.939 parámetros, su tamano coincide con el de una configuración `roberta-base`, lo que lo situa en la gama de modelos encoder ligeros, adecuados para inferencia de bajo coste y alto rendimiento en tareas de clasificación. El nombre del repositorio sugiere un ajuste fino orientado al análisis de sentimiento en el dominio de aerolíneas, presumiblemente sobre reseñas o tuits de pasajeros, aunque la model card no confirma ni el conjunto de datos ni el procedimiento de entrenamiento.
+`cesarrf/roberta-airline-sentiment` es un modelo de clasificación de texto publicado en Hugging Face por el usuario cesarrf, con arquitectura basada en RoBERTa (etiqueta `roberta` y `transformers` en el repositorio). Con 124.647.939 parámetros, su tamano coincide con el de una configuración `roberta-base`, lo que lo situa en la gama de modelos encoder ligeros, adecuados para inferencia de bajo coste y alto rendimiento en tareas de clasificación. El nombre del repositorio sugiere un ajuste fino orientado al análisis de sentimiento en el dominio de aerolíneas, presumiblemente sobre reseñas o tuits de pasajeros, aunque la model card no confirma ni el conjunto de datos ni el procedimiento de entrenamiento.
 
 La relevancia de este tipo de modelos radica en su relacion coste/prestaciones: un encoder de ~125 millones de parametros se ejecuta en CPU o en cualquier GPU de consumo con latencias de milisegundos, lo que lo hace util para clasificar volumenes grandes de texto (reseñas, tickets, menciones en redes) sin depender de infraestructura de gran escala. Frente a los modelos generativos, un clasificador dedicado ofrece salidas deterministas y etiquetadas, mas faciles de integrar en pipelines de produccion.
 
-No obstante, la informacion disponible es muy limitada: la model card esta generada automaticamente por HuggingFace y no contiene ni descripcion, ni datos de entrenamiento, ni hiperparametros, ni metricas de evaluacion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no se ha publicado licencia, idiomas soportados ni resultados de benchmarks. Todo lo que no puede derivarse de las etiquetas o del recuento de parametros se marca en esta ficha como "no disponible".
+No obstante, la informacion disponible es muy limitada: la model card esta generada automaticamente por Hugging Face y no contiene ni descripcion, ni datos de entrenamiento, ni hiperparametros, ni metricas de evaluacion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no se ha publicado licencia, idiomas soportados ni resultados de benchmarks. Todo lo que no puede derivarse de las etiquetas o del recuento de parametros se marca en esta ficha como "no disponible".
 
 ## Especificaciones técnicas
 
@@ -28,7 +28,7 @@ No obstante, la informacion disponible es muy limitada: la model card esta gener
 
 La unica informacion arquitectonica fiable es la etiqueta `roberta`, que situa el modelo en la familia RoBERTa (encoder transformer con atencion bidireccional, preentrenado de forma enmascarada). El recuento de parametros, 124.647.939, es practicamente identico al de `roberta-base` (124,6 M), lo que apunta a una configuracion de 12 capas, 768 dimensiones ocultas y 12 cabezas de atencion, aunque este desglose no aparece documentado en el repositorio. La tarea declarada es `text-classification`, es decir, el modelo incorpora una cabeza de clasificacion sobre el encoder.
 
-No hay informacion sobre el proceso de entrenamiento: se desconoce si se partio de pesos preentrenados de RoBERTa y se aplico un ajuste fino supervisado, cual fue el conjunto de datos (el nombre del modelo sugiere datos de sentimiento de aerolineas, posiblemente el clasico conjunto de tuits de aerolineas estadounidenses, pero no se confirma), cuantos ejemplos se usaron, si hubo barrido de hiperparametros o si se aplicaron tecnicas de regularizacion. Tampoco se documentan tecnicas de optimizacion de inferencia (destilacion, cuantizacion, decodificacion especulativa), mas alla de la etiqueta `text-embeddings-inference`, que indica compatibilidad con el servidor de embeddings de HuggingFace.
+No hay informacion sobre el proceso de entrenamiento: se desconoce si se partio de pesos preentrenados de RoBERTa y se aplico un ajuste fino supervisado, cual fue el conjunto de datos (el nombre del modelo sugiere datos de sentimiento de aerolineas, posiblemente el clasico conjunto de tuits de aerolineas estadounidenses, pero no se confirma), cuantos ejemplos se usaron, si hubo barrido de hiperparametros o si se aplicaron tecnicas de regularizacion. Tampoco se documentan tecnicas de optimizacion de inferencia (destilacion, cuantizacion, decodificacion especulativa), mas alla de la etiqueta `text-embeddings-inference`, que indica compatibilidad con el servidor de embeddings de Hugging Face.
 
 Un detalle tecnico a tener en cuenta: la etiqueta `arxiv:1910.09700` no corresponde al articulo de RoBERTa (que es arXiv:1907.11692), sino al trabajo "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019), citado de forma generica en la plantilla de la model card dentro de la seccion de impacto ambiental. Por tanto, esa etiqueta no aporta informacion sobre la arquitectura ni el entrenamiento del modelo.
 
@@ -38,7 +38,7 @@ Un detalle tecnico a tener en cuenta: la etiqueta `arxiv:1910.09700` no correspo
 - Analisis de sentimiento en el dominio de aerolineas: inferido del nombre del repositorio, sin confirmacion documental.
 - Inferencia ligera: con ~125 M de parametros, puede ejecutarse en CPU y en GPU de gama baja con latencias bajas.
 - Compatibilidad con el ecosistema transformers: carga mediante `AutoModelForSequenceClassification` y `pipeline("text-classification")`.
-- Compatibilidad declarada con `text-embeddings-inference` y con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad declarada con `text-embeddings-inference` y con endpoints de Hugging Face (`endpoints_compatible`).
 - Generacion de texto: no disponible (es un modelo encoder de clasificacion, no generativo).
 - Razonamiento, codigo, matematicas: no disponible.
 - Tool calling / function calling: no disponible.
@@ -63,14 +63,14 @@ En todos los casos, la ausencia de licencia publicada implica que el uso comerci
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla autogenerada de HuggingFace y todos los apartados de evaluacion figuran como "[More Information Needed]". No hay datos de exactitud, F1, precision, recall, MMLU, GLUE, ni de latencia o throughput.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla autogenerada de Hugging Face y todos los apartados de evaluacion figuran como "[More Information Needed]". No hay datos de exactitud, F1, precision, recall, MMLU, GLUE, ni de latencia o throughput.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: aproximadamente 0,5 GB para los pesos en fp32 (coincide con el tamano del repositorio, 0,5 GB), unos 0,25 GB en fp16 y unos 0,12 GB en int8, a lo que hay que sumar el espacio de activaciones (del orden de decenas de MB con lotes moderados).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; por ejemplo GTX 1050 Ti, GTX 1650, RTX 3050, RTX 3060, RTX 4090. Tambien es viable en GPU de centro de datos (T4, A10, A100, H100), aunque estan sobredimensionadas para este modelo.
 - Cabe en GPU de consumo: si, con holgura, incluso en modelos integrados o en CPU. En CPU, la inferencia por muestra se situa tipicamente en el orden de milisegundos a decenas de milisegundos, en funcion del hardware y del tamano de lote (no hay mediciones publicadas para este checkpoint concreto).
-- Opciones de despliegue: pipeline de transformers en Python, `text-embeddings-inference` (segun la etiqueta del repositorio), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), servidores de inferencia clasicos como TorchServe o FastAPI con PyTorch, y exportacion a ONNX Runtime. No se ha confirmado la disponibilidad de pesos GGUF para llama.cpp u Ollama.
+- Opciones de despliegue: pipeline de transformers en Python, `text-embeddings-inference` (segun la etiqueta del repositorio), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), servidores de inferencia clasicos como TorchServe o FastAPI con PyTorch, y exportacion a ONNX Runtime. No se ha confirmado la disponibilidad de pesos GGUF para llama.cpp u Ollama.
 - Latencia y throughput estimados: no disponible (no se han publicado mediciones).
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cesarrf/roberta-airline-sentiment | 124.647.939 | no disponible | no disponible | Repositorio HuggingFace con 0 descargas y 0 likes |
+| cesarrf/roberta-airline-sentiment | 124.647.939 | no disponible | no disponible | Repositorio Hugging Face con 0 descargas y 0 likes |
 | cardiffnlp/twitter-roberta-base-sentiment-latest | no verificado en la informacion disponible | no verificado | no verificado | no verificado |
 | distilbert-base-uncased-finetuned-sst-2-english | no verificado en la informacion disponible | no verificado | no verificado | no verificado |
 | nlptown/bert-base-multilingual-uncased-sentiment | no verificado en la informacion disponible | no verificado | no verificado | no verificado |
@@ -88,7 +88,7 @@ Se citan como posibles alternativas de la misma categoria (clasificadores de sen
 
 ## Limitaciones y advertencias
 
-- Model card vacia: toda la documentacion del repositorio es la plantilla autogenerada de HuggingFace, sin descripcion funcional, datos de entrenamiento, hiperparametros ni evaluacion.
+- Model card vacia: toda la documentacion del repositorio es la plantilla autogenerada de Hugging Face, sin descripcion funcional, datos de entrenamiento, hiperparametros ni evaluacion.
 - Licencia no disponible: no se puede asumir permiso para uso comercial, redistribucion o modificacion. Es imprescindible contactar con el autor antes de usar el modelo en produccion.
 - Idiomas no declarados: se desconoce si el modelo esta entrenado en ingles, en varios idiomas o en otro idioma, lo que impide anticipar su comportamiento fuera del dominio previsto.
 - Clases de salida desconocidas: no se documenta el mapeo de `id2label`, por lo que la interpretacion de las predicciones requiere inspeccionar la configuracion del checkpoint.
@@ -102,7 +102,7 @@ Se citan como posibles alternativas de la misma categoria (clasificadores de sen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cesarrf/roberta-airline-sentiment
+- Modelo en Hugging Face: https://huggingface.co/cesarrf/roberta-airline-sentiment
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019, "Quantifying the Carbon Emissions of Machine Learning"): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la model card: https://mlco2.github.io/impact
 - Articulo original de RoBERTa (referencia de la familia arquitectonica, no citado en el repositorio): https://arxiv.org/abs/1907.11692

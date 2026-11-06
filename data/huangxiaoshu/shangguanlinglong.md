@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - Para usar el adaptador con Flux, se necesita una GPU con al menos 12 GB de VRAM en FP16 (por ejemplo, RTX 3060 12 GB o superior) para generar imágenes de 1024x1024.
 - Para Wan2.2 (modelos de vídeo), los requisitos son mayores: se recomienda al menos 24 GB de VRAM (RTX 3090/4090) para generar vídeos cortos, y 80 GB (A100/H100) para secuencias más largas o mayor resolución.
 - z-image tiene requisitos variables según la versión; no se dispone de datos específicos.
-- El despliegue se realiza mediante las herramientas estándar del ecosistema de cada modelo base: ComfyUI para Flux y Wan2.2, o los pipelines de Diffusers de HuggingFace.
+- El despliegue se realiza mediante las herramientas estándar del ecosistema de cada modelo base: ComfyUI para Flux y Wan2.2, o los pipelines de Diffusers de Hugging Face.
 - No se dispone de datos de latencia o throughput para este LoRA concreto.
 
 ## Comparativa con modelos similares
@@ -71,5 +71,5 @@ No se dispone de información sobre otros repositorios de LoRA de personajes fic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huangxiaoshu/shangguanlinglong
+- Repositorio Hugging Face: https://huggingface.co/huangxiaoshu/shangguanlinglong
 - No se han encontrado otros enlaces (paper, blog, demo) en la informacion disponible.

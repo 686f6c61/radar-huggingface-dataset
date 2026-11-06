@@ -81,7 +81,7 @@ La principal diferencia con el original es el framework: esta versión está pen
 
 ## Enlaces
 
-- [HuggingFace: kerasformers/qwen2-57b-a14b](https://huggingface.co/kerasformers/qwen2-57b-a14b)
+- [Hugging Face: kerasformers/qwen2-57b-a14b](https://huggingface.co/kerasformers/qwen2-57b-a14b)
 - [Modelo original: Qwen/Qwen2-57B-A14B](https://huggingface.co/Qwen/Qwen2-57B-A14B)
 - [Paper Qwen2 Technical Report (arXiv:2407.10671)](https://arxiv.org/abs/2407.10671)
 - [GitHub: KerasFormers](https://github.com/IMvision12/KerasFormers)

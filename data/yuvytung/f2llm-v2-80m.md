@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| F2LLM-v2-80M (esta conversion) | ~80M | no disponible | Embeddings multilingues (200+ idiomas) | no disponible | GGUF (HuggingFace) |
-| codefuse-ai/F2LLM-v2-80M (original) | ~80M | no disponible | Embeddings multilingues (200+ idiomas) | no disponible | safetensors (HuggingFace) |
+| F2LLM-v2-80M (esta conversion) | ~80M | no disponible | Embeddings multilingues (200+ idiomas) | no disponible | GGUF (Hugging Face) |
+| codefuse-ai/F2LLM-v2-80M (original) | ~80M | no disponible | Embeddings multilingues (200+ idiomas) | no disponible | safetensors (Hugging Face) |
 | Modelos de embeddings multilingues de ~100M (p. ej. multilingual-e5-small) | ~118M | no disponible en esta ficha | Embeddings multilingues | no disponible en esta ficha | no disponible en esta ficha |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable.

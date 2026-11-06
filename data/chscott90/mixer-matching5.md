@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chscott90/mixer-matching5` es un repositorio experimental publicado en HuggingFace por el usuario `chscott90` que contiene una implementación propia de una arquitectura tipo Mixer orientada a tareas de *matching*. No se trata de un modelo entrenado ni de un checkpoint con resultados de referencia: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un modelo con benchmarks publicados.
+`chscott90/mixer-matching5` es un repositorio experimental publicado en Hugging Face por el usuario `chscott90` que contiene una implementación propia de una arquitectura tipo Mixer orientada a tareas de *matching*. No se trata de un modelo entrenado ni de un checkpoint con resultados de referencia: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un modelo con benchmarks publicados.
 
 El repositorio es extremadamente pequeno: el recuento real de parametros en safetensors es de 49.600, lo que lo situa en el orden de unos 0,2 MB en fp32. La configuracion declarada usa atencion *multi query*, fusion tipo *tucker*, activacion gelu-tanh y normalizacion `scalenorm`, dentro de lo que el autor denomina escala "small". La receta de experimento por defecto emplea el optimizador LAMB con un schedule de warmup constante.
 
@@ -86,13 +86,13 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 - No se documentan sesgos conocidos, pero tampoco se ha realizado ninguna evaluacion al respecto.
 - Limitaciones de contexto e idioma: no disponibles; no se especifica ventana de contexto ni cobertura linguistica.
 - Licencia BSD-3-Clause: permisiva y compatible con uso comercial, pero la model card advierte que deben revisarse por separado los terminos de los datos de origen si el repositorio se usa con datasets externos.
-- No se declara `pipeline` en HuggingFace, lo que refuerza que no es cargable mediante la API estandar de `transformers`.
+- No se declara `pipeline` en Hugging Face, lo que refuerza que no es cargable mediante la API estandar de `transformers`.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse de forma separada a los valores por defecto aqui incluidos.
 - El repositorio tiene 0 descargas y 0 likes, y un tamano de 0,0 GB, lo que indica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chscott90/mixer-matching5
+- Hugging Face: https://huggingface.co/chscott90/mixer-matching5
 - Artefacto principal del repositorio: `predict.py` (https://huggingface.co/chscott90/mixer-matching5/blob/main/predict.py)
 - Configuracion de arquitectura: `config.json` (https://huggingface.co/chscott90/mixer-matching5/blob/main/config.json)
 - Receta de experimento: `training_args.json` (https://huggingface.co/chscott90/mixer-matching5/blob/main/training_args.json)

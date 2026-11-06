@@ -86,8 +86,8 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval n
 
 | Modelo | Parametros | Contexto de entrada | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| XLSR-Mamba-LA (este) | 319,3 M | 66.800 muestras a 16 kHz (~4,18 s) | XLS-R 300M + Mamba bidireccional | MIT | HuggingFace, safetensors |
-| XLSR-Mamba-DF | no disponible | no disponible | Misma arquitectura, checkpoint afinado con RawBoost para DF | MIT (segun model card) | HuggingFace, mismo autor |
+| XLSR-Mamba-LA (este) | 319,3 M | 66.800 muestras a 16 kHz (~4,18 s) | XLS-R 300M + Mamba bidireccional | MIT | Hugging Face, safetensors |
+| XLSR-Mamba-DF | no disponible | no disponible | Misma arquitectura, checkpoint afinado con RawBoost para DF | MIT (segun model card) | Hugging Face, mismo autor |
 | XLSR-MamBo | no disponible | no disponible | Modelo distinto, no debe confundirse con este | no disponible | arXiv 2601.02944 |
 | AASIST y variantes | no disponible | no disponible | Detectores anti-spoofing clasicos basados en grafos | no disponible | no disponible en la informacion |
 
@@ -107,7 +107,7 @@ No se dispone de datos numericos comparativos entre estos sistemas en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SpeechAntiSpoofingBenchmarks/XLSR-Mamba-LA
+- Modelo en Hugging Face: https://huggingface.co/SpeechAntiSpoofingBenchmarks/XLSR-Mamba-LA
 - Peso commit-pinned: https://huggingface.co/SpeechAntiSpoofingBenchmarks/XLSR-Mamba-LA/blob/31fea7e9a1ac4fdb39293398e1f0ff7f015403ce/model.safetensors
 - Speech Anti-Spoofing Arena: https://huggingface.co/spaces/SpeechAntiSpoofingBenchmarks/SpeechAntiSpoofingArena
 - Ficha del sistema en el Arena: https://huggingface.co/spaces/SpeechAntiSpoofingBenchmarks/SpeechAntiSpoofingArena?system=xlsr-mamba-la

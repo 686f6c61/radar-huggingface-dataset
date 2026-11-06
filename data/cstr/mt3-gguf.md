@@ -75,7 +75,7 @@ La comparativa se basa en información pública general; no se dispone de datos 
 
 ## Enlaces
 
-- [HuggingFace: cstr/mt3-GGUF](https://huggingface.co/cstr/mt3-GGUF)
+- [Hugging Face: cstr/mt3-GGUF](https://huggingface.co/cstr/mt3-GGUF)
 - [Repositorio CrispASR en GitHub](https://github.com/CrispStrobe/CrispASR)
 - [Script de conversión `convert-mt3-to-gguf.py`](https://github.com/CrispStrobe/CrispASR/blob/main/models/convert-mt3-to-gguf.py)
-- [Modelo base google/mt3 en HuggingFace](https://huggingface.co/google/mt3)
+- [Modelo base google/mt3 en Hugging Face](https://huggingface.co/google/mt3)

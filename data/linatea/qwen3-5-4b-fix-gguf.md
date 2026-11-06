@@ -80,9 +80,9 @@ Datos de rendimiento medidos por el autor:
 
 | Modelo | Parametros totales | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LinaTea/Qwen3.5-4B-Fix-GGUF (este modelo) | 6.596.750.336 | 262.144 | GGUF (F16, Q8_0, MXFP4_MOE, Q4_0) + mmproj | Apache-2.0 | Publico en HuggingFace, 0 descargas, 1 like |
-| LinaTea/Qwen3.5-4B-Fix | No disponible | No disponible | No disponible (checkpoint original del que derivan los GGUF) | Apache-2.0 (segun el campo del repositorio) | Publico en HuggingFace |
-| Qwen/Qwen3.5-4B-Base | No disponible en la informacion proporcionada (denominado 4B en el nombre) | 262.144 (heredado en la metadata del GGUF) | No disponible | Apache-2.0 (enlace de licencia citado por el autor) | Publico en HuggingFace |
+| LinaTea/Qwen3.5-4B-Fix-GGUF (este modelo) | 6.596.750.336 | 262.144 | GGUF (F16, Q8_0, MXFP4_MOE, Q4_0) + mmproj | Apache-2.0 | Publico en Hugging Face, 0 descargas, 1 like |
+| LinaTea/Qwen3.5-4B-Fix | No disponible | No disponible | No disponible (checkpoint original del que derivan los GGUF) | Apache-2.0 (segun el campo del repositorio) | Publico en Hugging Face |
+| Qwen/Qwen3.5-4B-Base | No disponible en la informacion proporcionada (denominado 4B en el nombre) | 262.144 (heredado en la metadata del GGUF) | No disponible | Apache-2.0 (enlace de licencia citado por el autor) | Publico en Hugging Face |
 
 No se dispone de datos de benchmarks ni de mediciones comparativas frente a otras alternativas de tamano similar en la informacion proporcionada, por lo que no es posible establecer una comparacion de rendimiento.
 

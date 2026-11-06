@@ -79,7 +79,7 @@ La comparativa se basa en datos publicos de modelos similares en tamano. No hay 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mondk/GGUF.Claude-Qwen3.5-4B-Reasoning
+- Repositorio Hugging Face: https://huggingface.co/mondk/GGUF.Claude-Qwen3.5-4B-Reasoning
 - Pesos en safetensors: https://huggingface.co/mondk/Safetensors.Claude-Qwen3.5-4B-Reasoning
 - Guia de Qwen 3.5 (familia de modelos): https://qwen-ai.com/qwen-3-5/
 - Articulo sobre ejecucion local de Qwen 3.5: https://www.datacamp.com/tutorial/run-qwen-3-5-locally

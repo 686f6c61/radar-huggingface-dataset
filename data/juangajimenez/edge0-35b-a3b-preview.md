@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Edge0-35B-A3B-preview es una adaptación de inferencia en el borde (edge inference) del modelo base Qwen3.6-35B-A3B, publicada por el usuario Juangajimenez en HuggingFace bajo el identificador `Juangajimenez/Edge0-35B-A3B-preview` (la model card del autor referencia también la organización `Edge0` y el repositorio `Edge0-AI/edge0`). Se trata de un checkpoint MoE disperso de 34.660.610.688 parámetros totales (aproximadamente 34,6B) con 256 expertos y 4 activos por token (K=4), cuantizado a 4 bits y acompañado de adaptadores LoRA y un "prerouter" entrenados específicamente para el framework edge0.
+Edge0-35B-A3B-preview es una adaptación de inferencia en el borde (edge inference) del modelo base Qwen3.6-35B-A3B, publicada por el usuario Juangajimenez en Hugging Face bajo el identificador `Juangajimenez/Edge0-35B-A3B-preview` (la model card del autor referencia también la organización `Edge0` y el repositorio `Edge0-AI/edge0`). Se trata de un checkpoint MoE disperso de 34.660.610.688 parámetros totales (aproximadamente 34,6B) con 256 expertos y 4 activos por token (K=4), cuantizado a 4 bits y acompañado de adaptadores LoRA y un "prerouter" entrenados específicamente para el framework edge0.
 
 El problema que resuelve es el de ejecutar un modelo de clase 35B en memoria de clase teléfono: el checkpoint completo permanece en almacenamiento y los pesos de los expertos se transmiten bajo demanda, de modo que solo los pesos activos residen en RAM. El autor reporta un pico de memoria activa de 2,9 GiB y una velocidad de decodificación de 14,9 a 17,7 tok/s sobre un Mac mini M4 Pro con 24 GB, sin sharding ni descarga previa de los pesos a memoria.
 
@@ -115,8 +115,8 @@ Alternativas de otros fabricantes con offload de expertos a almacenamiento: no d
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/Juangajimenez/Edge0-35B-A3B-preview
-- Página de HuggingFace citada en la model card: https://huggingface.co/Edge0/Edge0-35b-a3b-preview
+- Página de Hugging Face del modelo: https://huggingface.co/Juangajimenez/Edge0-35B-A3B-preview
+- Página de Hugging Face citada en la model card: https://huggingface.co/Edge0/Edge0-35b-a3b-preview
 - Modelo hermano de menor tamano citado en la model card: https://huggingface.co/Edge0/Edge0-8b-a1b-preview
 - Repositorio del framework edge0: https://github.com/Edge0-AI/edge0
 - Documentación del framework: https://github.com/Edge0-AI/edge0#documentation

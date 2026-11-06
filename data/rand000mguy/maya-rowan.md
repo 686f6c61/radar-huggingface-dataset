@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Maya Rowan es un adaptador LoRA de generacion de imagenes (text-to-image) publicado por el usuario Rand000mGuy en HuggingFace bajo el identificador `Rand000mGuy/maya-rowan`. Se distribuye a traves de la libreria `diffusers` con la plantilla `template:diffusion-lora` y esta declarado como adaptador del modelo base `krea/Krea-2-Turbo`, es decir, no es un modelo completo sino un conjunto de pesos adicionales que modifican el comportamiento del modelo base sobre el que se aplica. El repositorio ocupa 0,2 GB, un tamano coherente con pesos de adaptador y no con un modelo de difusion completo.
+Maya Rowan es un adaptador LoRA de generacion de imagenes (text-to-image) publicado por el usuario Rand000mGuy en Hugging Face bajo el identificador `Rand000mGuy/maya-rowan`. Se distribuye a traves de la libreria `diffusers` con la plantilla `template:diffusion-lora` y esta declarado como adaptador del modelo base `krea/Krea-2-Turbo`, es decir, no es un modelo completo sino un conjunto de pesos adicionales que modifican el comportamiento del modelo base sobre el que se aplica. El repositorio ocupa 0,2 GB, un tamano coherente con pesos de adaptador y no con un modelo de difusion completo.
 
 El modelo resuelve el problema tipico de personalizacion en difusion: incorporar un concepto concreto (con toda probabilidad un personaje o una identidad, a juzgar por el nombre) al modelo base sin necesidad de reentrenarlo por completo. La model card publicada es practicamente vacia: no incluye descripcion, no documenta el prompt de instancia (`instance_prompt: null`), no especifica la licencia, no declara idiomas y no aporta ejemplos de uso ni resultados de evaluacion.
 
@@ -99,7 +99,7 @@ Comparacion cuantitativa de rendimiento, contexto, licencia o disponibilidad: no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rand000mGuy/maya-rowan
+- Modelo en Hugging Face: https://huggingface.co/Rand000mGuy/maya-rowan
 - Ficheros del repositorio: https://huggingface.co/Rand000mGuy/maya-rowan/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Paper, blog, repositorio de codigo o demo: no disponible

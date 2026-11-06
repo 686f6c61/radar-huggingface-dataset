@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `AlinaGonch/llama31-8b-squad-ratio-0.60-seed-42` es un checkpoint alojado en HuggingFace por el usuario AlinaGonch. Por la nomenclatura del identificador, todo apunta a un ajuste fino (fine-tuning) del modelo base Llama 3.1 de 8.000 millones de parametros sobre el conjunto de datos SQuAD, con una fraccion de datos de entrenamiento (ratio) de 0,60 y una semilla aleatoria fija de 42. No obstante, ni la model card ni los metadatos del repositorio confirman esta interpretacion de forma explicita, por lo que debe considerarse una hipotesis razonable y no un dato verificado.
+El modelo `AlinaGonch/llama31-8b-squad-ratio-0.60-seed-42` es un checkpoint alojado en Hugging Face por el usuario AlinaGonch. Por la nomenclatura del identificador, todo apunta a un ajuste fino (fine-tuning) del modelo base Llama 3.1 de 8.000 millones de parametros sobre el conjunto de datos SQuAD, con una fraccion de datos de entrenamiento (ratio) de 0,60 y una semilla aleatoria fija de 42. No obstante, ni la model card ni los metadatos del repositorio confirman esta interpretacion de forma explicita, por lo que debe considerarse una hipotesis razonable y no un dato verificado.
 
-La model card publicada es la plantilla automatica de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como "More Information Needed". El repositorio no registra descargas ni "likes", y su tamano (0,2 GB) es muy inferior al que corresponderia a los pesos completos de un modelo de 8B en precision fp16 (aproximadamente 16 GB), lo que sugiere que podria tratarse de adaptadores LoRA, pesos parciales o un artefacto de un experimento de investigacion mas que de un modelo listo para produccion.
+La model card publicada es la plantilla automatica de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como "More Information Needed". El repositorio no registra descargas ni "likes", y su tamano (0,2 GB) es muy inferior al que corresponderia a los pesos completos de un modelo de 8B en precision fp16 (aproximadamente 16 GB), lo que sugiere que podria tratarse de adaptadores LoRA, pesos parciales o un artefacto de un experimento de investigacion mas que de un modelo listo para produccion.
 
 Su relevancia actual es limitada y fundamentalmente academica: parece formar parte de una serie de experimentos que varian la proporcion de datos de entrenamiento y la semilla, probablemente orientados a estudiar la eficiencia del ajuste fino y la reproducibilidad. No hay evidencia de evaluacion de rendimiento, ni de uso previsto, ni de soporte declarado.
 
@@ -30,8 +30,8 @@ Respecto al entrenamiento, el nombre del modelo (ratio-0.60, seed-42) sugiere un
 ## Capacidades
 
 - No hay ninguna capacidad documentada por el autor en la model card ni en los metadatos del repositorio.
-- El tag `arxiv:1910.09700` corresponde a la referencia bibliografica de Lacoste et al. (2019) sobre el calculo de emisiones de carbono, incluida en la plantilla automatica de HuggingFace; no describe una capacidad del modelo.
-- El tag `endpoints_compatible` indica unicamente que el artefacto puede desplegarse en los Inference Endpoints de HuggingFace, no una funcionalidad del modelo en si.
+- El tag `arxiv:1910.09700` corresponde a la referencia bibliografica de Lacoste et al. (2019) sobre el calculo de emisiones de carbono, incluida en la plantilla automatica de Hugging Face; no describe una capacidad del modelo.
+- El tag `endpoints_compatible` indica unicamente que el artefacto puede desplegarse en los Inference Endpoints de Hugging Face, no una funcionalidad del modelo en si.
 - Por el nombre, cabria esperar un comportamiento orientado a respuesta de preguntas extractivas sobre SQuAD, pero no esta verificado.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para comparar el rendimiento del modelo 
 
 ## Limitaciones y advertencias
 
-- No existe model card util: la publicada es la plantilla automatica de HuggingFace sin cumplimentar.
+- No existe model card util: la publicada es la plantilla automatica de Hugging Face sin cumplimentar.
 - Licencia sin especificar: se desconoce si se permite el uso comercial, la redistribucion o la modificacion. La ausencia de licencia es, en la practica, un bloqueo para cualquier uso en produccion.
 - Idiomas sin declarar: no se puede asumir soporte multilingue ni siquiera en ingles, aunque el dataset SQuAD sea mayoritariamente en ingles.
 - Riesgo de alucinacion: desconocido, pero en tareas de QA extractivo un ajuste fino sobre SQuAD puede inducir respuestas incorrectas cuando no existe respuesta en el contexto.
@@ -86,7 +86,7 @@ No se dispone de informacion suficiente para comparar el rendimiento del modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.60-seed-42
+- Hugging Face: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.60-seed-42
 - Paper referenciado en los tags (Lacoste et al., 2019, Quantifying the Carbon Emissions of Machine Learning): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML citada en la model card: https://mlco2.github.io/impact
 - Modelo base implicito (no confirmado): https://huggingface.co/meta-llama/Llama-3.1-8B

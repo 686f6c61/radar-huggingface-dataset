@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KeawGPT-GGUF es un modelo de lenguaje conversacional desarrollado por KordAI, publicado en formato GGUF para su ejecución local mediante llama.cpp y otras herramientas compatibles. Se trata de un ajuste fino (fine-tune) de un modelo base de la familia Qwen3, como indica la etiqueta `qwen3` presente en su repositorio de HuggingFace. El modelo base correspondiente, KeawGPT-Base, está disponible en la misma organización y se distribuye bajo licencia Apache 2.0, lo que sugiere que el adaptador GGUF hereda dicha licencia, aunque no se especifica explícitamente en la ficha del repositorio GGUF.
+KeawGPT-GGUF es un modelo de lenguaje conversacional desarrollado por KordAI, publicado en formato GGUF para su ejecución local mediante llama.cpp y otras herramientas compatibles. Se trata de un ajuste fino (fine-tune) de un modelo base de la familia Qwen3, como indica la etiqueta `qwen3` presente en su repositorio de Hugging Face. El modelo base correspondiente, KeawGPT-Base, está disponible en la misma organización y se distribuye bajo licencia Apache 2.0, lo que sugiere que el adaptador GGUF hereda dicha licencia, aunque no se especifica explícitamente en la ficha del repositorio GGUF.
 
 El modelo tiene aproximadamente 4 022 millones de parámetros (4B) y se distribuye en cuatro cuantizaciones (Q8_0, Q6_K, Q4_K_M y Q2_K), lo que permite desplegarlo en una amplia gama de hardware, desde GPUs de consumo hasta CPUs con suficiente RAM. El proceso de ajuste y conversión se realizó con la librería Unsloth, conocida por acelerar el entrenamiento y la conversión de modelos. La relevancia de este modelo radica en su formato GGUF, que facilita la integración en aplicaciones locales de chat, asistentes personales o prototipos de agentes sin depender de servicios en la nube. No obstante, la documentación pública es muy escasa: no se proporcionan detalles sobre el dataset de entrenamiento, el método de ajuste, la longitud de contexto ni resultados de benchmarks.
 
@@ -66,10 +66,10 @@ La comparacion se realiza contra el modelo base Qwen3-4B y otros LLMs de tamano 
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| KeawGPT-GGUF | 4B | no disponible | Apache 2.0 (base) | GGUF | HuggingFace |
-| Qwen3-4B (base) | 4B | 32k (tipico) | Apache 2.0 | Safetensors, GGUF | HuggingFace |
-| Llama-3.2-3B-Instruct | 3.2B | 128k | Llama 3.2 Community | Safetensors, GGUF | HuggingFace |
-| Phi-3.5-mini | 3.8B | 128k | MIT | Safetensors, GGUF | HuggingFace |
+| KeawGPT-GGUF | 4B | no disponible | Apache 2.0 (base) | GGUF | Hugging Face |
+| Qwen3-4B (base) | 4B | 32k (tipico) | Apache 2.0 | Safetensors, GGUF | Hugging Face |
+| Llama-3.2-3B-Instruct | 3.2B | 128k | Llama 3.2 Community | Safetensors, GGUF | Hugging Face |
+| Phi-3.5-mini | 3.8B | 128k | MIT | Safetensors, GGUF | Hugging Face |
 
 KeawGPT-GGUF no ofrece informacion publica sobre contexto ni rendimiento, por lo que no es posible posicionarlo frente a estas alternativas. Qwen3-4B es la referencia mas directa, ya que el adaptador se construye sobre el.
 
@@ -87,4 +87,4 @@ KeawGPT-GGUF no ofrece informacion publica sobre contexto ni rendimiento, por lo
 - Repositorio GGUF: https://huggingface.co/KordAI/KeawGPT-GGUF
 - Modelo base KeawGPT-Base: https://huggingface.co/KordAI/KeawGPT-Base
 - Pagina de FriendliAI para KeawGPT-Base: https://friendli.ai/models/KordAI/KeawGPT-Base
-- Organizacion KordAI en HuggingFace: https://huggingface.co/KordAI
+- Organizacion KordAI en Hugging Face: https://huggingface.co/KordAI

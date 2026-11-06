@@ -78,8 +78,8 @@ Lectura: el indexador PCA mantiene la perplejidad a la par o por debajo de dense
 
 | Modelo | Parametros | Contexto | Atencion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ChiTako/llm-jp-4.1-8b-thinking-lsa | 8,59 B | 64k evaluados | LSA dispersa (32 capas) | Apache-2.0 | HuggingFace, 0 descargas |
-| llm-jp/llm-jp-4.1-8b-thinking (base) | 8,59 B | no disponible | densa | Apache-2.0 | HuggingFace |
+| ChiTako/llm-jp-4.1-8b-thinking-lsa | 8,59 B | 64k evaluados | LSA dispersa (32 capas) | Apache-2.0 | Hugging Face, 0 descargas |
+| llm-jp/llm-jp-4.1-8b-thinking (base) | 8,59 B | no disponible | densa | Apache-2.0 | Hugging Face |
 | Alternativas de 8B con contexto largo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa mas relevante es con el modelo base: mismo numero de parametros, mismos pesos y misma licencia, con la diferencia del mecanismo de atencion y los indexadores anadidos. No se dispone de datos de benchmarks de terceros que permitan situar este modelo frente a otras alternativas de tamano similar.
@@ -99,7 +99,7 @@ La comparacion directa mas relevante es con el modelo base: mismo numero de para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChiTako/llm-jp-4.1-8b-thinking-lsa
+- Modelo en Hugging Face: https://huggingface.co/ChiTako/llm-jp-4.1-8b-thinking-lsa
 - Modelo base: https://huggingface.co/llm-jp/llm-jp-4.1-8b-thinking
 - Repositorio de Latent Sparse Attention: https://github.com/Prefrontal-AI/latent-sparse-attention
 - Paper de LSA: arXiv 2610.42147

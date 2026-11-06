@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Efficientformer for multitask es un repositorio experimental publicado por el usuario nikumar1983 en HuggingFace que contiene una implementación funcional de la arquitectura EfficientFormer configurada para tareas multitarea en escala "nano". El modelo se distribuye como un checkpoint de inicialización (`model.safetensors`) junto con el código Python de inferencia y los ficheros de configuración (`config.json`, `training_args.json`). No se trata de un modelo entrenado ni evaluado, sino de un punto de partida reproducible para experimentación, tal y como el propio autor declara explícitamente en la model card.
+Efficientformer for multitask es un repositorio experimental publicado por el usuario nikumar1983 en Hugging Face que contiene una implementación funcional de la arquitectura EfficientFormer configurada para tareas multitarea en escala "nano". El modelo se distribuye como un checkpoint de inicialización (`model.safetensors`) junto con el código Python de inferencia y los ficheros de configuración (`config.json`, `training_args.json`). No se trata de un modelo entrenado ni evaluado, sino de un punto de partida reproducible para experimentación, tal y como el propio autor declara explícitamente en la model card.
 
 La relevancia de este repositorio es limitada en términos de producción: no se han publicado benchmarks, no se declaran idiomas soportados y el número de parámetros registrado en safetensors es de 24.832, una cifra anómala que sugiere que el checkpoint contiene únicamente los tensores de inicialización o una configuración reducida. Está liberado bajo licencia Apache 2.0, lo que permite uso comercial y modificación, pero el autor advierte que el checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 
@@ -83,5 +83,5 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nikumar1983/efficientformer-multitask
+- Hugging Face: https://huggingface.co/nikumar1983/efficientformer-multitask
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

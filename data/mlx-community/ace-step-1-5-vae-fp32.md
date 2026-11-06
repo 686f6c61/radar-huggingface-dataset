@@ -91,7 +91,7 @@ La comparacion con Stable Audio Open es relevante porque la arquitectura Oobleck
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/ACE-Step-1.5-vae-fp32
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/ACE-Step-1.5-vae-fp32
 - Modelo base: https://huggingface.co/ACE-Step/Ace-Step1.5
 - Repositorio del modelo base en GitHub: https://github.com/ace-step/ACE-Step-1.5
 - Licencia MIT del modelo base: https://github.com/ace-step/ACE-Step-1.5/blob/main/LICENSE

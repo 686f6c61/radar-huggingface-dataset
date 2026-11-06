@@ -70,8 +70,8 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Moebius-inpaint-GGUF (esta ficha) | 226.194.357 | no disponible | Ambigua (Apache-2.0 / MIT) | GGUF en HuggingFace, solo CrispEmbed |
-| Moebius (original, hustvl) | no disponible | no disponible | Apache-2.0 (README) / MIT (card) | PyTorch en HuggingFace |
+| Moebius-inpaint-GGUF (esta ficha) | 226.194.357 | no disponible | Ambigua (Apache-2.0 / MIT) | GGUF en Hugging Face, solo CrispEmbed |
+| Moebius (original, hustvl) | no disponible | no disponible | Apache-2.0 (README) / MIT (card) | PyTorch en Hugging Face |
 | Alternativas de inpainting | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,12 +83,12 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - Dependencia obligatoria del VAE companion (cstr/SDXL-VAE-inpaint-GGUF) en la precisión correspondiente; un emparejamiento incorrecto puede degradar la salida.
 - Riesgo de alucinación visual: como todo modelo generativo de imagen, puede producir contenido plausible pero incorrecto en la región enmascarada, especialmente con máscaras grandes o contextos ambiguos.
 - Sesgos: no documentados en la información disponible; el afinado sobre Places2 puede favorecer escenas naturales frente a otros dominios.
-- Sin soporte de texto, código ni tareas de lenguaje; no debe evaluarse como modelo de lenguaje pese a estar alojado en HuggingFace.
+- Sin soporte de texto, código ni tareas de lenguaje; no debe evaluarse como modelo de lenguaje pese a estar alojado en Hugging Face.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta; sin validación comunitaria.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cstr/Moebius-inpaint-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cstr/Moebius-inpaint-GGUF
 - VAE companion: https://huggingface.co/cstr/SDXL-VAE-inpaint-GGUF
 - Código upstream Moebius: https://github.com/hustvl/Moebius/tree/b88d462bacb9af6e7128a3b4cc4a07418bedfd61
 - Pesos originales: https://huggingface.co/hustvl/Moebius/resolve/cd01f47fb648219d3fa605806c5ce00b713faa5e/ft_places2/diffusion_pytorch_model.bin

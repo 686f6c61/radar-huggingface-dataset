@@ -85,10 +85,10 @@ No se dispone de datos de rendimiento comparativos publicados en la información
 
 | Modelo | Categoría | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EQM Policy (`iFaz/eqm-aloha_transfer_cube-seed3-24sep2026_2pm`) | Política de imitación (EQM, denoiser UNet) | 76.446.214 | ALOHA sim, transfer cube | Apache-2.0 | HuggingFace, librería `lerobot` |
+| EQM Policy (`iFaz/eqm-aloha_transfer_cube-seed3-24sep2026_2pm`) | Política de imitación (EQM, denoiser UNet) | 76.446.214 | ALOHA sim, transfer cube | Apache-2.0 | Hugging Face, librería `lerobot` |
 | ACT (Action Chunking with Transformers) | Política de imitación con *action chunking* | No disponible en la información proporcionada | Manipulación ALOHA (real y sim) | No disponible en la información proporcionada | Implementación de referencia en LeRobot |
 | Diffusion Policy | Política de imitación basada en difusión | No disponible en la información proporcionada | Manipulación y tareas visomotoras | No disponible en la información proporcionada | Implementación de referencia en LeRobot |
-| Otras políticas `eqm` del mismo autor | Política de imitación (EQM) | No disponible | ALOHA sim, transfer cube, distintas semillas | Apache-2.0 | HuggingFace |
+| Otras políticas `eqm` del mismo autor | Política de imitación (EQM) | No disponible | ALOHA sim, transfer cube, distintas semillas | Apache-2.0 | Hugging Face |
 
 Criterio de comparación recomendado: para que una comparación sea válida hay que igualar el número de episodios de evaluación (muy superior a 1), el `n_action_steps` de evaluación y el número de pasos de entrenamiento, y usar semillas distintas para estimar la varianza.
 
@@ -110,7 +110,7 @@ Criterio de comparación recomendado: para que una comparación sea válida hay 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iFaz/eqm-aloha_transfer_cube-seed3-24sep2026_2pm
+- Modelo en Hugging Face: https://huggingface.co/iFaz/eqm-aloha_transfer_cube-seed3-24sep2026_2pm
 - Dataset de entrenamiento: https://huggingface.co/datasets/lerobot/aloha_sim_transfer_cube_human
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Cita de LeRobot (Cadene, Alibert y otros, 2024), incluida en la model card:

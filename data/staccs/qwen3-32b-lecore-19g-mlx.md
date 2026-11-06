@@ -73,7 +73,7 @@ Advertencia relevante: los resultados de GSM8K son incoherentes con el resto de 
 
 - VRAM / memoria unificada: los pesos ocupan 18,62 GB. Con cache KV para contexto de 8.192 tokens hay que presupuestar aproximadamente 22-26 GB en total, dependiendo de la longitud efectiva de contexto y del batch.
 - Equipos recomendados: Mac con chip Apple Silicon y memoria unificada de 32 GB (limite ajustado), 36 GB o mas (M1/M2/M3/M4 Pro, Max y Ultra). El autor indica que en un Mac de 36 GB puede ser necesario elevar el limite de memoria cableada de la GPU con `sudo sysctl iogpu.wired_limit_mb=30000`.
-- GPU NVIDIA: no soportado. El repositorio depende de MLX, que es especifico del ecosistema Apple; no se publican pesos en safetensors estandar de HuggingFace Transformers, GGUF ni cuantizaciones AWQ/GPTQ.
+- GPU NVIDIA: no soportado. El repositorio depende de MLX, que es especifico del ecosistema Apple; no se publican pesos en safetensors estandar de Hugging Face Transformers, GGUF ni cuantizaciones AWQ/GPTQ.
 - Opciones de despliegue: `mlx-lm` (comando `mlx_lm.generate`). No hay soporte documentado para vLLM, TGI, llama.cpp, Ollama ni SGLang.
 - Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo ni de latencia en el repositorio.
 - Comparacion de huella: este repo (18,62 GB) ocupa unos 4,3 GB mas que la cuantizacion MLX de 3 bits (14,33 GB) y menos de un tercio del modelo bf16 en memoria.
@@ -95,7 +95,7 @@ La comparacion se limita a las alternativas con datos medidos en la informacion 
 - Benchmarks sobre subconjuntos: MMLU se evaluo con 10 preguntas por materia (570 en total) y GSM8K con los primeros 100 problemas de test. El autor estima +-2 a 4 puntos de ruido de muestreo, pero esa horquilla no explica la discrepancia de GSM8K.
 - Perplejidad no concluyente: el propio autor advierte que la perplejidad de contexto corto no describe por si sola la calidad y que hay que comprobar las salidas en el caso de uso real.
 - Ambito exclusivamente Apple Silicon: al depender de MLX, el modelo no se puede desplegar en GPU NVIDIA ni en servidores x86 convencionales sin una conversion adicional que no se proporciona.
-- Idiomas no verificados: el repositorio no documenta evaluaciones por idioma y la ficha de HuggingFace no lista idiomas. El castellano no esta validado especificamente; el rendimiento multilingue se asume del modelo base, no se mide.
+- Idiomas no verificados: el repositorio no documenta evaluaciones por idioma y la ficha de Hugging Face no lista idiomas. El castellano no esta validado especificamente; el rendimiento multilingue se asume del modelo base, no se mide.
 - Contexto no documentado: el repositorio no declara la longitud de contexto soportada ni si se aplicaron tecnicas de extension tipo YaRN. El ejemplo usa 8.192 tokens de cache KV.
 - Riesgo de alucinacion: es un modelo de 32B denso sin cambios en los pesos mas alla de la cuantizacion, por lo que mantiene el riesgo de alucinacion del Qwen3-32B original, potencialmente agravado por el error introducido en la cuantizacion de 4 bits.
 - Sesgos: no hay ninguna evaluacion de sesgos en la informacion disponible. Se heredan los del modelo base, no documentados aqui.
@@ -104,7 +104,7 @@ La comparacion se limita a las alternativas con datos medidos en la informacion 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/staccs/Qwen3-32B-lecore-19g-mlx
+- Repositorio en Hugging Face: https://huggingface.co/staccs/Qwen3-32B-lecore-19g-mlx
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-32B/blob/main/LICENSE
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

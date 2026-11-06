@@ -1,9 +1,9 @@
 # fecasado/gfm-cubes-22dR5
 
 ## Resumen
-GFM-cubes-22dR5 es una política robótica (policy) entrenada con LeRobot y publicada en HuggingFace por el usuario fecasado. No se trata de un modelo de lenguaje, sino de un modelo de control visuomotor destinado a manipulación robótica, concretamente a tareas de recogida de cubos y depósito en cestas, según se desprende del identificador del dataset asociado (Ncubes-to-Nbaskets-320x240). El modelo emplea una técnica denominada "gaze flow matching" (gfm) para generar acciones, y se distribuye en formato safetensors con licencia Apache 2.0.
+GFM-cubes-22dR5 es una política robótica (policy) entrenada con LeRobot y publicada en Hugging Face por el usuario fecasado. No se trata de un modelo de lenguaje, sino de un modelo de control visuomotor destinado a manipulación robótica, concretamente a tareas de recogida de cubos y depósito en cestas, según se desprende del identificador del dataset asociado (Ncubes-to-Nbaskets-320x240). El modelo emplea una técnica denominada "gaze flow matching" (gfm) para generar acciones, y se distribuye en formato safetensors con licencia Apache 2.0.
 
-El modelo cuenta con 75.248.330 parámetros (aproximadamente 75 millones) y un tamaño de repositorio de 0,3 GB, lo que lo sitúa en la gama de políticas ligeras aptas para inferencia en tiempo real sobre hardware modesto. Está etiquetado con el pipeline de robótica y la librería lerobot, lo que implica que se integra en el ecosistema de entrenamiento y evaluación de LeRobot de HuggingFace.
+El modelo cuenta con 75.248.330 parámetros (aproximadamente 75 millones) y un tamaño de repositorio de 0,3 GB, lo que lo sitúa en la gama de políticas ligeras aptas para inferencia en tiempo real sobre hardware modesto. Está etiquetado con el pipeline de robótica y la librería lerobot, lo que implica que se integra en el ecosistema de entrenamiento y evaluación de LeRobot de Hugging Face.
 
 Su relevancia es limitada fuera del ámbito específico de la robótica de manipulación: se trata de un checkpoint concreto para una tarea y un dataset determinados, sin documentación ampliada ni benchmarks publicados. Resulta útil como ejemplo de política entrenada con flow matching aplicada a un caso de pick-and-place, pero no debe confundirse con un modelo fundacional de propósito general.
 
@@ -56,8 +56,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fecasado/gfm-cubes-22dR5 | 75,2M | no aplica | Manipulación (cubos a cestas) | Apache 2.0 | HuggingFace |
-| Políticas ACT en LeRobot | no disponible | no aplica | Imitation learning genérico | según checkpoint | HuggingFace |
+| fecasado/gfm-cubes-22dR5 | 75,2M | no aplica | Manipulación (cubos a cestas) | Apache 2.0 | Hugging Face |
+| Políticas ACT en LeRobot | no disponible | no aplica | Imitation learning genérico | según checkpoint | Hugging Face |
 | Diffusion Policy | no disponible | no aplica | Imitation learning genérico | según checkpoint | Repositorios de investigación |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 - Advertencia de producción: al no haber validación externa, no se recomienda su despliegue en entornos críticos sin una evaluación propia exhaustiva.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/fecasado/gfm-cubes-22dR5
+- Modelo en Hugging Face: https://huggingface.co/fecasado/gfm-cubes-22dR5
 - Dataset asociado: https://huggingface.co/datasets/fecasado/Ncubes-to-Nbaskets-320x240
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de políticas: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Vinnarasan/Agentic` es un modelo de generación de texto publicado en HuggingFace por el usuario Vinnarasan. Con aproximadamente 1.540 millones de parámetros (1,54B), se presenta como un modelo conversacional orientado a tareas de agente, aunque la documentación pública es prácticamente inexistente: la model card es una plantilla genérica sin información sobre arquitectura, entrenamiento, datos o licencia. El tag `qwen2` sugiere que podría estar basado en la arquitectura Qwen2, pero no hay confirmación oficial.
+El modelo `Vinnarasan/Agentic` es un modelo de generación de texto publicado en Hugging Face por el usuario Vinnarasan. Con aproximadamente 1.540 millones de parámetros (1,54B), se presenta como un modelo conversacional orientado a tareas de agente, aunque la documentación pública es prácticamente inexistente: la model card es una plantilla genérica sin información sobre arquitectura, entrenamiento, datos o licencia. El tag `qwen2` sugiere que podría estar basado en la arquitectura Qwen2, pero no hay confirmación oficial.
 
 El modelo fue creado en septiembre de 2026 y no registra descargas ni likes, lo que indica que es un lanzamiento reciente o de baja difusión. Su tamaño de repositorio (3,1 GB) es coherente con pesos en formato safetensors para un modelo de ~1,5B en precisión fp16. Dada la ausencia de documentación, cualquier uso en producción debe considerarse experimental y requeriría una evaluación exhaustiva previa.
 
@@ -21,7 +21,7 @@ El modelo fue creado en septiembre de 2026 y no registra descargas ni likes, lo 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura interna, el proceso de entrenamiento, los datos utilizados ni las técnicas de alineación (RLHF, DPO, etc.). El tag `qwen2` en HuggingFace sugiere que el modelo podría seguir la arquitectura de la familia Qwen2 (transformer decoder-only con attention de causalidad completa), pero esto no está confirmado por el autor. Tampoco hay datos sobre el número de tokens de entrenamiento, composición del dataset o hiperparámetros. La model card incluye referencias genéricas a un artículo de arXiv (1910.09700) sobre cálculo de emisiones de carbono, pero no aporta información técnica relevante.
+No se ha publicado información sobre la arquitectura interna, el proceso de entrenamiento, los datos utilizados ni las técnicas de alineación (RLHF, DPO, etc.). El tag `qwen2` en Hugging Face sugiere que el modelo podría seguir la arquitectura de la familia Qwen2 (transformer decoder-only con attention de causalidad completa), pero esto no está confirmado por el autor. Tampoco hay datos sobre el número de tokens de entrenamiento, composición del dataset o hiperparámetros. La model card incluye referencias genéricas a un artículo de arXiv (1910.09700) sobre cálculo de emisiones de carbono, pero no aporta información técnica relevante.
 
 ## Capacidades
 
@@ -60,10 +60,10 @@ No se dispone de información suficiente para una comparativa rigurosa. Como ref
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Vinnarasan/Agentic | 1,54B | no disponible | no disponible | HuggingFace |
-| Qwen2-1.5B | 1,54B | 32K (típico) | Apache 2.0 | HuggingFace |
-| Gemma-2-2B | 2,6B | 8K | Gemma license | HuggingFace |
-| Phi-3-mini (3,8B) | 3,8B | 128K | MIT | HuggingFace |
+| Vinnarasan/Agentic | 1,54B | no disponible | no disponible | Hugging Face |
+| Qwen2-1.5B | 1,54B | 32K (típico) | Apache 2.0 | Hugging Face |
+| Gemma-2-2B | 2,6B | 8K | Gemma license | Hugging Face |
+| Phi-3-mini (3,8B) | 3,8B | 128K | MIT | Hugging Face |
 
 La comparación es solo indicativa; no se puede afirmar que Vinnarasan/Agentic tenga el mismo rendimiento que Qwen2-1.5B, ya que no hay datos que lo confirmen.
 
@@ -78,5 +78,5 @@ La comparación es solo indicativa; no se puede afirmar que Vinnarasan/Agentic t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vinnarasan/Agentic
+- Hugging Face: https://huggingface.co/Vinnarasan/Agentic
 - No se han encontrado papers, repositorios, demos o blogs asociados al modelo en la búsqueda web.

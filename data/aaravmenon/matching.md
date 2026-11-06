@@ -2,7 +2,7 @@
 
 ## Resumen
 
-aaravmenon/matching es un prototipo de investigación publicado en HuggingFace bajo el identificador `aaravmenon/matching`. El autor lo describe como un modelo "Dino" orientado a tareas de *matching*, en configuración *tiny* y con 49.600 parámetros totales según el recuento real de los pesos en formato safetensors. No se trata de un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no debe presentarse como un modelo con rendimiento verificado.
+aaravmenon/matching es un prototipo de investigación publicado en Hugging Face bajo el identificador `aaravmenon/matching`. El autor lo describe como un modelo "Dino" orientado a tareas de *matching*, en configuración *tiny* y con 49.600 parámetros totales según el recuento real de los pesos en formato safetensors. No se trata de un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no debe presentarse como un modelo con rendimiento verificado.
 
 El repositorio tiene como objetivo documentar los valores por defecto y los formatos de fichero de una receta de experimentación (arquitectura, configuración de entrenamiento y puntos de entrada ejecutables), no ofrecer un sistema listo para producción. No declara ninguna puntuación de benchmark, no especifica idiomas soportados ni longitud de contexto, y el tamaño del repositorio es de 0,0 GB, coherente con el número de parámetros.
 
@@ -38,7 +38,7 @@ El punto de entrada principal es `inference.py`, que contiene el modelo y un eje
 - No hay evidencia de generación de texto, razonamiento, código, matemáticas ni visión.
 - No se declara soporte de tool calling ni function calling.
 - No se declara soporte de agentes ni razonamiento multi-paso.
-- No se declara soporte multilingüe: el campo de idiomas no está disponible en HuggingFace ni en la model card.
+- No se declara soporte multilingüe: el campo de idiomas no está disponible en Hugging Face ni en la model card.
 - La única capacidad demostrable es la de servir como inicialización válida para *smoke tests* del código incluido y como artefacto de referencia de una configuración de arquitectura y de receta de entrenamiento.
 - La tarea objetivo declarada es *matching*, pero no se especifica su definición formal (pares texto-texto, imagen-texto, entidad-entidad, etc.), ni la métrica asociada.
 
@@ -71,7 +71,7 @@ No disponible. La información proporcionada no identifica modelos comparables (
 
 | Modelo | Parametros | Contexto | Benchmark | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aaravmenon/matching | 49.600 | no disponible | no disponible | apache-2.0 | HuggingFace (0 descargas) |
+| aaravmenon/matching | 49.600 | no disponible | no disponible | apache-2.0 | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,5 +89,5 @@ No disponible. La información proporcionada no identifica modelos comparables (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aaravmenon/matching
+- Modelo en Hugging Face: https://huggingface.co/aaravmenon/matching
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo (papers, blogs, repositorios o demos) en la información disponible.

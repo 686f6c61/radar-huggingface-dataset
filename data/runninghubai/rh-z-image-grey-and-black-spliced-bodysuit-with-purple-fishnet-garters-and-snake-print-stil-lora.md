@@ -76,7 +76,7 @@ No disponible. No se han identificado en la información proporcionada adaptador
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-z-image-grey-and-black-spliced-bodysuit-with-purple-fishnet-garters-and-snake-print-stil-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-z-image-grey-and-black-spliced-bodysuit-with-purple-fishnet-garters-and-snake-print-stil-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2097863106721869826
 - Página del autor: https://www.runninghub.ai/user-center/1931299605898764290
 - Flujo de trabajo recomendado: https://www.runninghub.ai/post/1993873213671358466/

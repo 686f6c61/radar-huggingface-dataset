@@ -84,5 +84,5 @@ No se dispone de datos de rendimiento comparado en la informacion proporcionada;
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ma7ee7/Qwen3.5-0.75B-Base
+- Modelo en Hugging Face: https://huggingface.co/Ma7ee7/Qwen3.5-0.75B-Base
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base

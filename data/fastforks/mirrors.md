@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fastforks/mirrors` no es un modelo de lenguaje, sino un repositorio de espejo (mirror) de pesos de modelos de estimación de disparidad estéreo. Lo mantiene el proyecto fastforks, una herramienta de descarga de pesos que verifica la integridad de cada fichero mediante su hash SHA-256 y recurre a estas copias alojadas en HuggingFace cuando las URL originales (Google Drive, Dropbox, S3) fallan. El repositorio no entrena ni modifica ningún modelo: redistribuye ficheros byte a byte idénticos a los originales.
+`fastforks/mirrors` no es un modelo de lenguaje, sino un repositorio de espejo (mirror) de pesos de modelos de estimación de disparidad estéreo. Lo mantiene el proyecto fastforks, una herramienta de descarga de pesos que verifica la integridad de cada fichero mediante su hash SHA-256 y recurre a estas copias alojadas en Hugging Face cuando las URL originales (Google Drive, Dropbox, S3) fallan. El repositorio no entrena ni modifica ningún modelo: redistribuye ficheros byte a byte idénticos a los originales.
 
 El contenido abarca ocho familias de arquitecturas estéreo clásicas y modernas: AANet, CREStereo, GwcNet, HITNet, IGEV-Stereo, IGEV++, RAFT-Stereo, Selective-IGEV y GREAT-IGEV. Cada entrada incluye variantes entrenadas o ajustadas para distintos benchmarks (Scene Flow, KITTI 2012/2015, ETH3D, Middlebury), con un total de 30 ficheros de pesos que suman aproximadamente 1,5 GB. Los formatos son heterogéneos: `.pth` de PyTorch, `.ckpt` de PyTorch Lightning, `.pb` de TensorFlow y `.mge` propietario de CREStereo.
 
@@ -83,7 +83,7 @@ La comparativa se limita a los modelos contenidos en el propio repositorio, ya q
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fastforks/mirrors
+- Repositorio en Hugging Face: https://huggingface.co/fastforks/mirrors
 - Proyecto fastforks (GitHub): https://github.com/kleinicke/fastforks
 - Pesos originales de AANet (Google Drive, enlazados en la model card): https://drive.usercontent.google.com/download?export=download&confirm=t&id=1m3Wo2k7w3OlVaDYdIm-x9K8_frQ4Vq9u
 - Pesos originales de CREStereo (Google Drive): https://drive.usercontent.google.com/download?id=1Wx_-zDQh7BUFBmN9im_26DFpnf3AkXj4&export=download&confirm=t

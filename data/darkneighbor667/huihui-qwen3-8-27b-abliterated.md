@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La princi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/darkneighbor667/Huihui-Qwen3.8-27B-abliterated
+- Repositorio Hugging Face: https://huggingface.co/darkneighbor667/Huihui-Qwen3.8-27B-abliterated
 - Repositorio original de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Pagina en Ollama: https://ollama.com/huihui_ai/Qwen3.8-abliterated
 - Repositorio de la tecnica de abliteracion: https://github.com/Sumandora/remove-refusals-with-transformers

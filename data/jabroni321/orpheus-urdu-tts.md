@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Orpheus Urdu TTS es un ajuste fino del modelo de síntesis de voz Orpheus 3B de Canopy Labs, adaptado al urdu por el usuario Jabroni321. Se distribuye en HuggingFace bajo el identificador `Jabroni321/orpheus-urdu-tts` y su propósito es generar audio en urdu a partir de texto, un idioma con cobertura limitada en los sistemas TTS comerciales y de código abierto. El autor lo etiqueta explícitamente como experimental y desaconseja su uso en producción.
+Orpheus Urdu TTS es un ajuste fino del modelo de síntesis de voz Orpheus 3B de Canopy Labs, adaptado al urdu por el usuario Jabroni321. Se distribuye en Hugging Face bajo el identificador `Jabroni321/orpheus-urdu-tts` y su propósito es generar audio en urdu a partir de texto, un idioma con cobertura limitada en los sistemas TTS comerciales y de código abierto. El autor lo etiqueta explícitamente como experimental y desaconseja su uso en producción.
 
-El modelo conserva la arquitectura del modelo base (etiquetado como `llama` en HuggingFace) con 3.300.867.072 parámetros totales (aproximadamente 3,3 mil millones), un tamaño de repositorio de 6,6 GB y pesos en formato safetensors. No es un modelo MoE. La longitud de contexto, los tipos de cuantización disponibles y los detalles de arquitectura interna no se especifican en la información proporcionada.
+El modelo conserva la arquitectura del modelo base (etiquetado como `llama` en Hugging Face) con 3.300.867.072 parámetros totales (aproximadamente 3,3 mil millones), un tamaño de repositorio de 6,6 GB y pesos en formato safetensors. No es un modelo MoE. La longitud de contexto, los tipos de cuantización disponibles y los detalles de arquitectura interna no se especifican en la información proporcionada.
 
 El ajuste se realizó durante 10 épocas sobre el conjunto de datos `mahwizzzz/UAT`, compuesto por unas 20.400 muestras de audio de audiolibros, empleando una única GPU RTX 4090. La relevancia actual del modelo es acotada: cubre un nicho (TTS en urdu) con licencia MIT, sin resultados de benchmarks publicados y con cero descargas y cero "likes" en el momento de la consulta, lo que lo sitúa como un artefacto de investigación más que como una herramienta lista para integrar.
 
@@ -12,7 +12,7 @@ El ajuste se realizó durante 10 épocas sobre el conjunto de datos `mahwizzzz/U
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder basado en Orpheus 3B (etiqueta `llama` en HuggingFace); detalles internos no disponibles |
+| Arquitectura | Transformer decoder basado en Orpheus 3B (etiqueta `llama` en Hugging Face); detalles internos no disponibles |
 | Parametros totales | 3.300.867.072 (aproximadamente 3,3 mil millones) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible |
@@ -21,11 +21,11 @@ El ajuste se realizó durante 10 épocas sobre el conjunto de datos `mahwizzzz/U
 | Licencia | MIT |
 | Formato de pesos | safetensors (tamano del repositorio: 6,6 GB) |
 
-Otros datos de interes: tarea declarada `text-to-speech`, modelo base `canopylabs/orpheus-3b-0.1-pretrained`, conjunto de datos de ajuste `mahwizzzz/UAT`, 0 descargas y 0 likes en HuggingFace, fecha de creacion y actualizacion registrada en 2026-10-13 y 2026-10-13 respectivamente.
+Otros datos de interes: tarea declarada `text-to-speech`, modelo base `canopylabs/orpheus-3b-0.1-pretrained`, conjunto de datos de ajuste `mahwizzzz/UAT`, 0 descargas y 0 likes en Hugging Face, fecha de creacion y actualizacion registrada en 2026-10-13 y 2026-10-13 respectivamente.
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible indica que se trata de un ajuste fino del modelo `canopylabs/orpheus-3b-0.1-pretrained` de 3B parametros, etiquetado como `llama` en HuggingFace. La model card no describe la arquitectura interna, ni el mecanismo de tokenizacion de audio, ni si se emplea un codec neural para convertir las representaciones discretas en forma de onda. Tampoco se detallan la longitud de contexto, el esquema de atencion ni si se aplicaron tecnicas como decodificacion especulativa o atencion lineal. Todos estos datos deben considerarse no disponibles.
+La informacion disponible indica que se trata de un ajuste fino del modelo `canopylabs/orpheus-3b-0.1-pretrained` de 3B parametros, etiquetado como `llama` en Hugging Face. La model card no describe la arquitectura interna, ni el mecanismo de tokenizacion de audio, ni si se emplea un codec neural para convertir las representaciones discretas en forma de onda. Tampoco se detallan la longitud de contexto, el esquema de atencion ni si se aplicaron tecnicas como decodificacion especulativa o atencion lineal. Todos estos datos deben considerarse no disponibles.
 
 El entrenamiento consistio en 10 epocas sobre el dataset `mahwizzzz/UAT`, formado por 20.400 muestras de audio de audiolibros en urdu (el conjunto se divide desde `train` segun la model card). El ajuste se ejecuto en una unica GPU RTX 4090. No se especifican hiperparametros, tasa de aprendizaje, tamano de lote, precision numerica del entrenamiento (fp16, bf16 o fp32), ni si hubo etapas de RLHF o DPO posteriores. Tampoco se documenta el truncamiento o filtrado de las muestras de audio, ni el equilibrio de voces o hablantes presentes en el corpus.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos de la tabla, por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jabroni321/orpheus-urdu-tts
+- Modelo en Hugging Face: https://huggingface.co/Jabroni321/orpheus-urdu-tts
 - Modelo base: https://huggingface.co/canopylabs/orpheus-3b-0.1-pretrained
 - Conjunto de datos de ajuste: `mahwizzzz/UAT` (referenciado en la model card; no se ha proporcionado la URL completa)
 - Paper, blog, repositorio o demo oficiales: no disponibles en la informacion proporcionada. La busqueda web realizada no devolvio resultados relevantes sobre este modelo.

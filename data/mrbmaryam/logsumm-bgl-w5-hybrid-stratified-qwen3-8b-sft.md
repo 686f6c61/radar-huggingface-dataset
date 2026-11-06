@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mrbmaryam/logsumm-bgl-w5-hybrid-stratified-qwen3-8b-sft` es un ajuste fino supervisado (SFT) del modelo Qwen3-8B, desarrollado por el usuario mrbmaryam y publicado en HuggingFace bajo licencia Apache 2.0. El nombre del repositorio sugiere que el entrenamiento se ha orientado a tareas de resumen de logs y evaluación de fidelidad (logsumm, bgl), aunque la model card no documenta explícitamente el dataset, la metodología ni los hiperparámetros empleados. El modelo parte de la versión cuantizada en 4 bits de Unsloth (`unsloth/Qwen3-8B-bnb-4bit`) y se ha entrenado con la librería Unsloth, que el autor indica que acelera el entrenamiento 2x.
+`mrbmaryam/logsumm-bgl-w5-hybrid-stratified-qwen3-8b-sft` es un ajuste fino supervisado (SFT) del modelo Qwen3-8B, desarrollado por el usuario mrbmaryam y publicado en Hugging Face bajo licencia Apache 2.0. El nombre del repositorio sugiere que el entrenamiento se ha orientado a tareas de resumen de logs y evaluación de fidelidad (logsumm, bgl), aunque la model card no documenta explícitamente el dataset, la metodología ni los hiperparámetros empleados. El modelo parte de la versión cuantizada en 4 bits de Unsloth (`unsloth/Qwen3-8B-bnb-4bit`) y se ha entrenado con la librería Unsloth, que el autor indica que acelera el entrenamiento 2x.
 
 Se trata de un modelo de 8.000 millones de parámetros con arquitectura transformer densa, heredada de la familia Qwen3. La información publicada no incluye detalles sobre la longitud de contexto efectiva tras el ajuste, los idiomas soportados más allá del inglés declarado, ni resultados de benchmarks. El repositorio ocupa 0,2 GB, lo que sugiere que los pesos publicados podrían estar en formato cuantizado o que el repositorio contiene únicamente los adaptadores, aunque esto no se especifica en la información disponible.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mrbmaryam/logsumm-bgl-w5-hybrid-stratified-qwen3-8b-sft | 8.000 M | no disponible | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-8B | 8.000 M | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| unsloth/Qwen3-8B-bnb-4bit | 8.000 M | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| Meta-Llama-3.1-8B | 8.000 M | 128.000 tokens | Llama 3.1 Community License | HuggingFace |
+| mrbmaryam/logsumm-bgl-w5-hybrid-stratified-qwen3-8b-sft | 8.000 M | no disponible | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-8B | 8.000 M | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| unsloth/Qwen3-8B-bnb-4bit | 8.000 M | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| Meta-Llama-3.1-8B | 8.000 M | 128.000 tokens | Llama 3.1 Community License | Hugging Face |
 
 La comparativa se limita a modelos de tamaño similar; no se dispone de datos de rendimiento comparativo para este checkpoint concreto.
 
@@ -85,6 +85,6 @@ La comparativa se limita a modelos de tamaño similar; no se dispone de datos de
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mrbmaryam/logsumm-bgl-w5-hybrid-stratified-qwen3-8b-sft)
-- [Modelo base en HuggingFace](https://huggingface.co/unsloth/Qwen3-8B-bnb-4bit)
+- [Modelo en Hugging Face](https://huggingface.co/mrbmaryam/logsumm-bgl-w5-hybrid-stratified-qwen3-8b-sft)
+- [Modelo base en Hugging Face](https://huggingface.co/unsloth/Qwen3-8B-bnb-4bit)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)

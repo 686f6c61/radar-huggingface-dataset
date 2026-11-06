@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `instruct_tenun_7124027db14b49f094be` es un adaptador LoRA publicado por el usuario `bimabk` en HuggingFace. No se trata de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptación (PEFT) que debe cargarse sobre el modelo base `gradients-io-tournaments/augmented-029b5c5241c15cdc`, del que no se proporciona ninguna ficha técnica en la informacion disponible. El repositorio ocupa aproximadamente 0,7 GB y esta etiquetado con el pipeline `text-generation`.
+El modelo `instruct_tenun_7124027db14b49f094be` es un adaptador LoRA publicado por el usuario `bimabk` en Hugging Face. No se trata de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptación (PEFT) que debe cargarse sobre el modelo base `gradients-io-tournaments/augmented-029b5c5241c15cdc`, del que no se proporciona ninguna ficha técnica en la informacion disponible. El repositorio ocupa aproximadamente 0,7 GB y esta etiquetado con el pipeline `text-generation`.
 
-La relevancia de este artefacto es limitada y muy contextual: parece ser el resultado de un experimento de ajuste fino dentro de un torneo o competicion interna (el prefijo `gradients-io-tournaments` del modelo base apunta a ese tipo de entorno). No hay documentacion del autor sobre datos de entrenamiento, hiperparametros, idiomas o licencia, y la model card es la plantilla generica de HuggingFace con todos los campos marcados como `[More Information Needed]`.
+La relevancia de este artefacto es limitada y muy contextual: parece ser el resultado de un experimento de ajuste fino dentro de un torneo o competicion interna (el prefijo `gradients-io-tournaments` del modelo base apunta a ese tipo de entorno). No hay documentacion del autor sobre datos de entrenamiento, hiperparametros, idiomas o licencia, y la model card es la plantilla generica de Hugging Face con todos los campos marcados como `[More Information Needed]`.
 
 En consecuencia, esta ficha describe principalmente lo que se puede verificar (formato, libreria, tamano, cadena de dependencia con el modelo base) y marca explicitamente como no disponible todo aquello que el autor no ha publicado. No debe utilizarse como base para decisiones de produccion sin auditar primero el modelo base y los datos de ajuste.
 
@@ -32,7 +32,7 @@ En consecuencia, esta ficha describe principalmente lo que se puede verificar (f
 
 No se dispone de informacion sobre la arquitectura del modelo base ni sobre el procedimiento de ajuste. Los tags del repositorio indican `peft`, `lora` y `transformers`, lo que confirma que se trata de un adaptador de bajo rango (Low-Rank Adaptation) entrenado sobre el modelo `gradients-io-tournaments/augmented-029b5c5241c15cdc`. El unico dato de framework disponible es la version de PEFT empleada: 0.19.1.
 
-Se desconoce por completo la composicion del dataset de ajuste, el numero de tokens de entrenamiento, si hubo fases de RLHF, DPO o SFT supervisado, el rango (`r`) y el `alpha` del LoRA, los modulos objetivo ni la precision usada en el entrenamiento (fp32, fp16, bf16 o fp8). La model card no aporta ninguna innovacion tecnica: es la plantilla por defecto de HuggingFace sin rellenar. El unico enlace de referencia presente en la plantilla es el paper de Lacoste et al. (2019) sobre estimacion de emisiones, que forma parte del texto generico y no describe este modelo.
+Se desconoce por completo la composicion del dataset de ajuste, el numero de tokens de entrenamiento, si hubo fases de RLHF, DPO o SFT supervisado, el rango (`r`) y el `alpha` del LoRA, los modulos objetivo ni la precision usada en el entrenamiento (fp32, fp16, bf16 o fp8). La model card no aporta ninguna innovacion tecnica: es la plantilla por defecto de Hugging Face sin rellenar. El unico enlace de referencia presente en la plantilla es el paper de Lacoste et al. (2019) sobre estimacion de emisiones, que forma parte del texto generico y no describe este modelo.
 
 ## Capacidades
 
@@ -79,7 +79,7 @@ No disponible. No se conocen modelos comparables dentro de la informacion propor
 | Contexto | no disponible | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible | no disponible |
 | Licencia | no disponible | no disponible | no disponible |
-| Disponibilidad | publico en HuggingFace | no aplica | no disponible |
+| Disponibilidad | publico en Hugging Face | no aplica | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -96,7 +96,7 @@ No disponible. No se conocen modelos comparables dentro de la informacion propor
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/bimabk/instruct_tenun_7124027db14b49f094be
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/bimabk/instruct_tenun_7124027db14b49f094be
 - Modelo base referenciado: https://huggingface.co/gradients-io-tournaments/augmented-029b5c5241c15cdc
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700

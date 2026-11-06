@@ -77,8 +77,8 @@ La model card incluye la sección de evaluación vacía y declara textualmente q
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| seriintan/smolvla_frazier_object_variation | 450 M | No aplica contexto textual | Apache 2.0 | HuggingFace, 0 descargas | Ajuste fino de una sola tarea sobre robot `so_follower` |
-| lerobot/smolvla_base | No disponible en esta busqueda | No aplica | No disponible en esta busqueda | HuggingFace | Modelo base del que procede este ajuste |
+| seriintan/smolvla_frazier_object_variation | 450 M | No aplica contexto textual | Apache 2.0 | Hugging Face, 0 descargas | Ajuste fino de una sola tarea sobre robot `so_follower` |
+| lerobot/smolvla_base | No disponible en esta busqueda | No aplica | No disponible en esta busqueda | Hugging Face | Modelo base del que procede este ajuste |
 | Otros VLA abiertos (OpenVLA, pi0, Octo) | No disponible | No disponible | No disponible | No disponible | Existen alternativas de la misma categoria, pero no se dispone de datos verificados en la informacion proporcionada |
 
 No se dispone de cifras verificadas de parámetros, contexto o licencia de las alternativas como para establecer una comparación cuantitativa fiable. La única comparación sólida es con `lerobot/smolvla_base`, del que este repositorio es un fine-tune directo.
@@ -98,7 +98,7 @@ No se dispone de cifras verificadas de parámetros, contexto o licencia de las a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seriintan/smolvla_frazier_object_variation
+- Modelo en Hugging Face: https://huggingface.co/seriintan/smolvla_frazier_object_variation
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/seriintan/frazier_dataset_v2_object_variation
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=seriintan/frazier_dataset_v2_object_variation

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`electra-ai-human-classifier` es un clasificador binario de texto en inglés que estima si un documento ha sido escrito por una persona o generado por un modelo de lenguaje. Lo desarrolla el usuario de HuggingFace `shonenash` y se publica bajo licencia MIT. El modelo parte de `google/electra-small-discriminator` y añade un pooling de media sobre tokens más una cabeza de clasificación de dos capas, sumando 13.549.314 parámetros en total. El repositorio ocupa 0,1 GB y los pesos están en `safetensors` con código PyTorch.
+`electra-ai-human-classifier` es un clasificador binario de texto en inglés que estima si un documento ha sido escrito por una persona o generado por un modelo de lenguaje. Lo desarrolla el usuario de Hugging Face `shonenash` y se publica bajo licencia MIT. El modelo parte de `google/electra-small-discriminator` y añade un pooling de media sobre tokens más una cabeza de clasificación de dos capas, sumando 13.549.314 parámetros en total. El repositorio ocupa 0,1 GB y los pesos están en `safetensors` con código PyTorch.
 
 El problema que aborda es la detección de texto sintético, una tarea relevante para moderación de contenido, integridad académica y verificación editorial. Su enfoque es deliberadamente ligero: al apoyarse en ELECTRA-small, el coste computacional es mínimo y puede ejecutarse en CPU o en GPUs de gama baja, lo que facilita su integración en pipelines de revisión a gran escala.
 
@@ -71,8 +71,8 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shonenash/electra-ai-human-classifier | 13,5M | 256 subwords por fragmento | Detección IA/humano | MIT | HuggingFace |
-| google/electra-small-discriminator | ~13,5M | 512 tokens (modelo base) | Representaciones / preentrenamiento | Apache 2.0 (modelo base) | HuggingFace |
+| shonenash/electra-ai-human-classifier | 13,5M | 256 subwords por fragmento | Detección IA/humano | MIT | Hugging Face |
+| google/electra-small-discriminator | ~13,5M | 512 tokens (modelo base) | Representaciones / preentrenamiento | Apache 2.0 (modelo base) | Hugging Face |
 | Otros detectores de texto IA | No disponible | No disponible | Detección IA/humano | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shonenash/electra-ai-human-classifier
+- Modelo en Hugging Face: https://huggingface.co/shonenash/electra-ai-human-classifier
 - Space de demostración (AI Text Analyzer): https://huggingface.co/spaces/shonenash/ai-text-analyzer
 - Código de puntuación (`detector.py`): https://huggingface.co/spaces/shonenash/ai-text-analyzer/blob/main/detector.py
 - Modelo base: https://huggingface.co/google/electra-small-discriminator

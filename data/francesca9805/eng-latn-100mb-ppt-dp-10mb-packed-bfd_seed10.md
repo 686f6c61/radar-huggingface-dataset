@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (SFT) del checkpoint `goldfish-models/eng_latn_100mb`, un modelo de lenguaje de tamano reducido entrenado sobre 100 MB de texto en ingles. Lo publica el usuario de HuggingFace `francesca9805` y la propia model card lo identifica como un artefacto generado con la libreria TRL, por lo que se trata de un experimento de investigacion mas que de un modelo listo para produccion. El checkpoint tiene 124.770.816 parametros, un tamano de repositorio de 0,3 GB y pesos en formato safetensors.
+Este modelo es un ajuste fino (SFT) del checkpoint `goldfish-models/eng_latn_100mb`, un modelo de lenguaje de tamano reducido entrenado sobre 100 MB de texto en ingles. Lo publica el usuario de Hugging Face `francesca9805` y la propia model card lo identifica como un artefacto generado con la libreria TRL, por lo que se trata de un experimento de investigacion mas que de un modelo listo para produccion. El checkpoint tiene 124.770.816 parametros, un tamano de repositorio de 0,3 GB y pesos en formato safetensors.
 
 La arquitectura declarada en las etiquetas del repositorio es GPT-2, es decir, un transformer decoder-only denso con atencion causal. El nombre del checkpoint (`eng-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10`) apunta a un experimento sobre tokenizacion y empaquetado de secuencias: el enlace de Weights & Biases asociado pertenece al proyecto `new-tokenizers` de la Universidad de Groningen, y el sufijo `seed10` indica que se fijo la semilla 10. La relevancia de este tipo de publicaciones es acotada pero util: sirve como punto de comparacion reproducible en estudios sobre tokenizadores y como material didactico para entender el flujo de SFT con TRL.
 
@@ -35,7 +35,7 @@ El ajuste se realizo con aprendizaje supervisado (SFT) mediante TRL 0.23.0, sobr
 - No hay evidencia de capacidades de agente ni de razonamiento multi-paso: con 125 M de parametros y un corpus base de 100 MB, este tipo de comportamiento no es esperable.
 - Capacidades multilingues: no disponibles. Todo apunta a un modelo mono-idioma (ingles), dado el sufijo `eng_latn` del checkpoint base.
 - Capacidades especiales: ninguna declarada. No hay modo "thinking", vision, audio ni salida estructurada.
-- Compatibilidad de despliegue: el repositorio esta etiquetado con `text-generation-inference` y `endpoints_compatible`, lo que indica que puede servirse con TGI y con los Inference Endpoints de HuggingFace.
+- Compatibilidad de despliegue: el repositorio esta etiquetado con `text-generation-inference` y `endpoints_compatible`, lo que indica que puede servirse con TGI y con los Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -58,7 +58,7 @@ No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion, ni en la m
 - VRAM estimada para inferencia: en fp32 el checkpoint ocupa aproximadamente 500 MB; en fp16/bf16, unos 250 MB; en int8, alrededor de 130 MB; en int4, cerca de 70 MB. Hay que sumar el cache KV, que para una ventana de 1024 tokens y este tamano de modelo es de pocos megabytes por secuencia.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Funciona sin problemas en RTX 3060, RTX 4060, RTX 4090, A100 o H100; en estas dos ultimas el modelo desaprovechara practicamente toda la capacidad de computo.
 - Compatibilidad con hardware de consumo: si, cabe incluso en GPUs integradas y en iGPU con memoria compartida. Tambien es viable la inferencia en CPU, aunque con mayor latencia.
-- Opciones de despliegue: `transformers` (pipeline de text-generation), Text Generation Inference (TGI) y HuggingFace Inference Endpoints, segun las etiquetas `text-generation-inference` y `endpoints_compatible`. vLLM y llama.cpp u Ollama son viables, en el segundo caso previa conversion a GGUF, que el autor no publica.
+- Opciones de despliegue: `transformers` (pipeline de text-generation), Text Generation Inference (TGI) y Hugging Face Inference Endpoints, segun las etiquetas `text-generation-inference` y `endpoints_compatible`. vLLM y llama.cpp u Ollama son viables, en el segundo caso previa conversion a GGUF, que el autor no publica.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones. Como referencia cualitativa, un transformer denso de 125 M de parametros en fp16 sobre una GPU moderna genera decenas o cientos de tokens por segundo, pero no hay cifras confirmadas para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -67,11 +67,11 @@ Los datos de los modelos alternativos proceden de sus model cards publicas; conv
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad y notas |
 |---|---|---|---|---|
-| Este modelo (`francesca9805/...bfd_seed10`) | 124,77 M | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes; sin benchmarks |
-| `goldfish-models/eng_latn_100mb` (base) | No confirmado (el ajuste tiene 124,77 M) | No disponible | No disponible | HuggingFace; corpus de ~100 MB en ingles |
+| Este modelo (`francesca9805/...bfd_seed10`) | 124,77 M | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes; sin benchmarks |
+| `goldfish-models/eng_latn_100mb` (base) | No confirmado (el ajuste tiene 124,77 M) | No disponible | No disponible | Hugging Face; corpus de ~100 MB en ingles |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Ampliamente disponible y con enorme adopcion; linea base de la categoria |
 | Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache-2.0 | Suite de modelos de estudio con checkpoints intermedios publicados |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache-2.0 | Entrenado con un corpus mucho mayor y con resultados de benchmarks publicados |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache-2.0 | Entrenado con un corpus mucho mayor y con resultados de benchmarks publicados |
 
 La diferencia clave frente a estas alternativas no es arquitectonica, sino de datos y de trazabilidad: el modelo aqui descrito parte de un corpus de 100 MB y no publica ni licencia, ni idiomas, ni resultados de evaluacion. Para cualquier uso real, GPT-2 small, Pythia-160M o SmolLM-135M ofrecen informacion mucho mas completa.
 
@@ -85,12 +85,12 @@ La diferencia clave frente a estas alternativas no es arquitectonica, sino de da
 - Artefacto de investigacion: 0 descargas y 0 likes; el repositorio no ha sido validado por terceros y no hay garantia de mantenimiento.
 - Plantilla de chat: el ejemplo de la model card pasa una lista de mensajes con roles al pipeline, lo que requiere que el tokenizer incluya una plantilla de chat. No se confirma que este checkpoint la tenga, por lo que el fragmento podria fallar tal cual esta escrito.
 - Longitud de contexto no confirmada: si el modelo hereda la ventana de 1024 tokens de GPT-2, las conversaciones o documentos largos se truncaran; no se documenta ningun mecanismo de extension de contexto.
-- Anomalia en las fechas: los metadatos de HuggingFace indican creacion y actualizacion en septiembre de 2026, posteriores a la fecha habitual de publicacion de modelos de esta generacion; conviene tratarlos con cautela.
+- Anomalia en las fechas: los metadatos de Hugging Face indican creacion y actualizacion en septiembre de 2026, posteriores a la fecha habitual de publicacion de modelos de esta generacion; conviene tratarlos con cautela.
 - Uso en produccion no recomendado: por licencia, idioma, tamano y falta de evaluacion, no es apto para atencion al cliente, generacion de codigo, agentes ni ningun flujo con requisitos de fiabilidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eng-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eng-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/rsuswepm

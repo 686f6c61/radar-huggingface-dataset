@@ -65,13 +65,13 @@ No se dispone de información suficiente para comparar este checkpoint con otros
 - El checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 - No se puede utilizar para inferencia real sin un entrenamiento previo.
 - No hay resultados de benchmarks que respalden su rendimiento.
-- La implementación es personalizada y requiere un adaptador explícito para cargarla con APIs genéricas de HuggingFace.
+- La implementación es personalizada y requiere un adaptador explícito para cargarla con APIs genéricas de Hugging Face.
 - La licencia BSD-3-Clause permite uso comercial, pero se deben revisar los términos de los datasets externos si se usan con este modelo.
 - El autor recomienda documentar por separado cualquier resultado de un checkpoint entrenado, ya que los valores por defecto no son evidencia de un entrenamiento completado.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kwiatkowskizuzanna/mobilevit-retrieval-checkpoint
+- Repositorio en Hugging Face: https://huggingface.co/kwiatkowskizuzanna/mobilevit-retrieval-checkpoint
 - Perfil del autor: https://huggingface.co/kwiatkowskizuzanna
 - Paper original de MobileViT (arXiv:2110.02178): https://arxiv.org/pdf/2110.02178
 - Implementación de referencia en GitHub: https://github.com/yangyucheng000/MobileViT

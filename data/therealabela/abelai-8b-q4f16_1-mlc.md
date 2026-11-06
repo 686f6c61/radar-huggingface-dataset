@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/therealabela/abelai-8b-q4f16_1-MLC
+- Repositorio Hugging Face: https://huggingface.co/therealabela/abelai-8b-q4f16_1-MLC
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Demo en navegador: https://achenkunju.com/abelai/
 - MLC-LLM: https://github.com/mlc-ai/mlc-llm

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Indic Tiny TTS: Telugu es un modelo de síntesis de voz (text-to-speech) de tamano reducido, desarrollado por el usuario de HuggingFace sulabhkatiyar, especializado exclusivamente en el idioma telugu. Con 8.932.745 parámetros reales en pesos safetensors (la model card declara 22,5 millones, discrepancia que se detalla más abajo), el modelo convierte texto en escritura telugu en audio a 24 kHz con dos voces disponibles, femenina y masculina. Forma parte de la colección INDIC TINY TTS MODELS, compuesta por 12 modelos pequenos, uno por idioma, que cubren 11 lenguas indias y el inglés indio.
+Indic Tiny TTS: Telugu es un modelo de síntesis de voz (text-to-speech) de tamano reducido, desarrollado por el usuario de Hugging Face sulabhkatiyar, especializado exclusivamente en el idioma telugu. Con 8.932.745 parámetros reales en pesos safetensors (la model card declara 22,5 millones, discrepancia que se detalla más abajo), el modelo convierte texto en escritura telugu en audio a 24 kHz con dos voces disponibles, femenina y masculina. Forma parte de la colección INDIC TINY TTS MODELS, compuesta por 12 modelos pequenos, uno por idioma, que cubren 11 lenguas indias y el inglés indio.
 
 El problema que aborda es la síntesis de voz de calidad en lenguas indias con recursos limitados y en hardware modesto. Frente a alternativas como IndicF5 (350,6 M), indic-parler-tts (937,8 M) o los modelos VITS de AI4Bharat, este modelo ofrece una tasa de error de caracteres (CER) competitiva con un coste computacional muy inferior: según la model card, funciona 38 veces más rápido que el tiempo real en un solo hilo de CPU Apple M1, 7 veces en un hilo de CPU x86 y 62 veces en una GPU NVIDIA T4.
 
@@ -106,12 +106,12 @@ Resultados de CER (character error rate, menor es mejor) publicados en la model 
 
 | Modelo | Parámetros | Idioma | CER FLORES-200, % | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| **Indic Tiny TTS: Telugu** | 8,9 M (safetensors) / 22,5 M declarados | Telugu | 1,99 | CC-BY-4.0 | HuggingFace, ONNX y safetensors |
-| ai4bharat/IndicF5 | 350,6 M | Indio (multilingüe) | 1,29 | no disponible en la información | HuggingFace |
+| **Indic Tiny TTS: Telugu** | 8,9 M (safetensors) / 22,5 M declarados | Telugu | 1,99 | CC-BY-4.0 | Hugging Face, ONNX y safetensors |
+| ai4bharat/IndicF5 | 350,6 M | Indio (multilingüe) | 1,29 | no disponible en la información | Hugging Face |
 | AI4Bharat/Indic-TTS (te.zip) | 65,6 M | Telugu | 2,00 | no disponible en la información | GitHub |
-| ai4bharat/indic-parler-tts | 937,8 M | Indio (multilingüe) | 2,12 | no disponible en la información | HuggingFace |
-| rhasspy/piper-voices (te_IN) | 15,9 M | Telugu | 2,97 | no disponible en la información | HuggingFace |
-| facebook/mms-tts-tel | 29,1 M | Telugu | 4,59 | no disponible en la información | HuggingFace |
+| ai4bharat/indic-parler-tts | 937,8 M | Indio (multilingüe) | 2,12 | no disponible en la información | Hugging Face |
+| rhasspy/piper-voices (te_IN) | 15,9 M | Telugu | 2,97 | no disponible en la información | Hugging Face |
+| facebook/mms-tts-tel | 29,1 M | Telugu | 4,59 | no disponible en la información | Hugging Face |
 
 La ventaja diferencial de este modelo es la relación entre CER y coste: iguala o supera en precisión a modelos de 15,9 a 937,8 M de parámetros con un peso mucho menor, y además es el único de la comparativa con licencia CC-BY-4.0 confirmada y exportación ONNX documentada.
 
@@ -125,11 +125,11 @@ La ventaja diferencial de este modelo es la relación entre CER y coste: iguala 
 - **Licencia CC-BY-4.0**: permite uso comercial con atribución; es necesario citar al autor y la licencia en la redistribución.
 - **Sin datos de benchmarks subjetivos**: no se publican métricas de naturalidad (MOS) ni evaluaciones de calidad perceptual.
 - **Madurez**: el repositorio tiene 4 descargas y 0 likes en el momento de la consulta, lo que indica adopción muy limitada y poca validación por parte de la comunidad.
-- **Inferencia desactivada en HuggingFace**: la model card incluye `inference: false`, por lo que no se puede probar directamente en el widget del Hub.
+- **Inferencia desactivada en Hugging Face**: la model card incluye `inference: false`, por lo que no se puede probar directamente en el widget del Hub.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/sulabhkatiyar/indic-tiny-tts-telugu)
+- [Modelo en Hugging Face](https://huggingface.co/sulabhkatiyar/indic-tiny-tts-telugu)
 - [Colección INDIC TINY TTS MODELS](https://huggingface.co/collections/sulabhkatiyar/indic-tiny-tts-models-6aeae36f954418631a68676d)
 - [Dataset sulabhkatiyar/indic-tts-mini-24k](https://huggingface.co/datasets/sulabhkatiyar/indic-tts-mini-24k)
 - [Dataset sulabhkatiyar/indic-tts-multilingual-prepared](https://huggingface.co/datasets/sulabhkatiyar/indic-tts-multilingual-prepared)

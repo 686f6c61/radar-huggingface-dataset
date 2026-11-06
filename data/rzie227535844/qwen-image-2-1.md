@@ -26,7 +26,7 @@ La relevancia actual del modelo reside en unificar tareas que habitualmente requ
 | Pasos de inferencia por defecto | 40 |
 | Tamano del repositorio | 33,1 GB |
 | Requisitos de librerias | torch>=2.4.0, transformers>=5.17, diffusers (instalacion desde git), accelerate, pillow |
-| Fecha de creacion del repositorio consultado | 23 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repositorio consultado | 23 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -85,7 +85,7 @@ Los datos de las alternativas no aparecen en la informacion proporcionada, por l
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1 | 7,1 B (32 capas DiT) | Hasta 2752x1536; 10 imagenes de referencia | No disponible | Qwen Research License Agreement | HuggingFace, ModelScope, demo en Spaces |
+| Qwen-Image-2.1 | 7,1 B (32 capas DiT) | Hasta 2752x1536; 10 imagenes de referencia | No disponible | Qwen Research License Agreement | Hugging Face, ModelScope, demo en Spaces |
 | Qwen-Image (version previa de la familia) | No disponible | No disponible | No disponible | No disponible | No disponible |
 | FLUX.1 | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Stable Diffusion 3.5 | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -98,17 +98,17 @@ Los datos de las alternativas no aparecen en la informacion proporcionada, por l
 - Idiomas: la model card no declara idiomas soportados para los prompts ni para el texto renderizado dentro de la imagen, por lo que el comportamiento multilingue no esta documentado.
 - Datos de entrenamiento desconocidos: no se detalla la composicion del dataset, lo que impide evaluar sesgos demograficos, culturales o de representacion.
 - Coste de inferencia alto: 40 pasos por defecto sobre resoluciones de hasta 4 megapixeles implican tiempos de generacion considerable, sin cifras publicadas de latencia.
-- Repositorio consultado de terceros: la ficha de HuggingFace con ID `Rzie227535844/Qwen-Image-2.1` es un reupload de la comunidad (0 descargas, 0 likes en el momento de la consulta) y no el repositorio oficial, que es `Qwen/Qwen-Image-2.1`. Conviene descargar los pesos desde el repositorio original para verificar integridad y trazabilidad.
+- Repositorio consultado de terceros: la ficha de Hugging Face con ID `Rzie227535844/Qwen-Image-2.1` es un reupload de la comunidad (0 descargas, 0 likes en el momento de la consulta) y no el repositorio oficial, que es `Qwen/Qwen-Image-2.1`. Conviene descargar los pesos desde el repositorio original para verificar integridad y trazabilidad.
 - Requisitos de version estrictos: la model card exige transformers>=5.17 y diffusers instalado desde git, lo que puede complicar la reproducibilidad en entornos con dependencias fijadas.
 - Sin benchmarks publicados: la ausencia de metricas cuantitativas dificulta la comparacion objetiva con alternativas antes de desplegar en produccion.
 
 ## Enlaces
 
-- Repositorio consultado en HuggingFace (reupload de la comunidad): https://huggingface.co/Rzie227535844/Qwen-Image-2.1
-- Repositorio oficial en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Repositorio consultado en Hugging Face (reupload de la comunidad): https://huggingface.co/Rzie227535844/Qwen-Image-2.1
+- Repositorio oficial en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog del modelo: https://qwen.ai/blog?id=qwen-image-2.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Repositorio GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - Discord: https://discord.gg/BEYSk3pkSu
 - Codigo QR de WeChat: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/assets/qr.png

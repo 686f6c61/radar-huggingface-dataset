@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`RBhumi/a2c-PandaReachDense-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaReachDense-v3`, un escenario de manipulacion robotica de la familia Gymnasium-Robotics en el que un brazo Franka Emika Panda de 7 grados de libertad debe desplazar su efector final hasta una posicion objetivo aleatoria en el espacio 3D. El modelo se ha entrenado con la libreria stable-baselines3 y se publica en HuggingFace Hub empaquetado para su carga mediante `huggingface_sb3.load_from_hub`.
+`RBhumi/a2c-PandaReachDense-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaReachDense-v3`, un escenario de manipulacion robotica de la familia Gymnasium-Robotics en el que un brazo Franka Emika Panda de 7 grados de libertad debe desplazar su efector final hasta una posicion objetivo aleatoria en el espacio 3D. El modelo se ha entrenado con la libreria stable-baselines3 y se publica en Hugging Face Hub empaquetado para su carga mediante `huggingface_sb3.load_from_hub`.
 
 No se trata de un modelo de lenguaje: es una politica de control (actor-critico con red MLP) cuya entrada es un vector de observacion continuo y cuya salida es una accion continua de 4 dimensiones (desplazamiento en x, y, z y apertura/cierre del gripper). Por tanto, no tiene ventana de contexto, no procesa texto ni imagenes y no soporta tool calling ni razonamiento multi-paso en el sentido habitual.
 
-Su relevancia es acotada y experimental: la model card es practicamente una plantilla autogenerada por el Hub (contiene un `TODO: Add your code` sin resolver), el repositorio ocupa 0.0 GB y no acumula descargas ni likes. El unico resultado declarado es un `mean_reward` de -0.19 +/- 0.12 sobre `PandaReachDense-v3`, sin verificacion por parte de HuggingFace (`verified: false`).
+Su relevancia es acotada y experimental: la model card es practicamente una plantilla autogenerada por el Hub (contiene un `TODO: Add your code` sin resolver), el repositorio ocupa 0.0 GB y no acumula descargas ni likes. El unico resultado declarado es un `mean_reward` de -0.19 +/- 0.12 sobre `PandaReachDense-v3`, sin verificacion por parte de Hugging Face (`verified: false`).
 
 ## Especificaciones tecnicas
 
@@ -57,7 +57,7 @@ Tampoco se documenta la composicion del dataset (inexistente en RL: los datos se
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card (no verificados por HuggingFace):
+Resultados declarados por el autor en la model card (no verificados por Hugging Face):
 
 | Modelo | Tarea | Dataset / entorno | Metrica | Valor |
 |---|---|---|---|---|
@@ -72,11 +72,11 @@ No se han publicado en la informacion disponible otros benchmarks (MMLU, HumanEv
 - Compatibilidad con GPU de consumo: si, cabe en cualquier GPU de consumo e incluso en entornos sin GPU.
 - Opciones de despliegue: carga mediante `huggingface_sb3.load_from_hub` + stable-baselines3 en Python; no aplican servidores de inferencia de LLM como vLLM, TGI, llama.cpp u Ollama, ya que el modelo no es un transformer de lenguaje.
 - Latencia y throughput estimados: no disponibles. Cualitativamente, la evaluacion de una accion en una MLP pequena esta en el orden de microsegundos a pocos milisegundos por paso en CPU moderna.
-- Almacenamiento: el repositorio ocupa 0.0 GB segun HuggingFace, por lo que el checkpoint es de tamano muy reducido.
+- Almacenamiento: el repositorio ocupa 0.0 GB segun Hugging Face, por lo que el checkpoint es de tamano muy reducido.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento de modelos comparables en la informacion proporcionada. Existen en HuggingFace Hub otros agentes entrenados sobre `PandaReachDense-v3` con algoritmos distintos (por ejemplo, SAC, PPO o TQC publicados mediante stable-baselines3), pero no se han facilitado sus metricas, por lo que no es posible establecer una comparacion cuantitativa.
+No se dispone de datos de rendimiento de modelos comparables en la informacion proporcionada. Existen en Hugging Face Hub otros agentes entrenados sobre `PandaReachDense-v3` con algoritmos distintos (por ejemplo, SAC, PPO o TQC publicados mediante stable-baselines3), pero no se han facilitado sus metricas, por lo que no es posible establecer una comparacion cuantitativa.
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Licencia | Rendimiento |
 |---|---|---|---|---|---|---|
@@ -98,9 +98,9 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RBhumi/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/RBhumi/a2c-PandaReachDense-v3
 - stable-baselines3 (libreria de entrenamiento): https://github.com/DLR-RM/stable-baselines3
-- stable-baselines3 en HuggingFace: https://huggingface.co/stable-baselines3
+- stable-baselines3 en Hugging Face: https://huggingface.co/stable-baselines3
 - Gymnasium-Robotics (origen del entorno PandaReachDense-v3): https://github.com/Farama-Foundation/Gymnasium-Robotics
 - Documentacion del entorno Panda de Gymnasium-Robotics: https://robotics.farama.org/envs/fetch/
 - Paper de A3C (base conceptual de A2C, referencia de la familia de algoritmos): https://arxiv.org/abs/1602.01783

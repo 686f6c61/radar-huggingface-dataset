@@ -92,7 +92,7 @@ No se dispone de cifras de parámetros, contexto ni rendimiento para ninguna de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DecentVLA/droidfull8_pi05_accord_cotrain_w010_expert
+- Modelo en Hugging Face: https://huggingface.co/DecentVLA/droidfull8_pi05_accord_cotrain_w010_expert
 - Brazo de comparación FedAvg: https://huggingface.co/DecentVLA/droidfull8_pi05_fedavg
 - Checkpoint oficial π0.5-DROID joint-position: `gs://openpi-assets-simeval/pi05_droid_jointpos`
 - Runbook y código de entrenamiento: decent-vla `examples/droid/README_droidfull8.md`, paso 7 (tag `droidfull8-v2`) — URL no incluida en la informacion disponible

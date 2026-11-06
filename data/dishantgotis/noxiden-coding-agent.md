@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NOXiden-coding-agent es un modelo publicado en HuggingFace por el usuario dishantgotis bajo licencia MIT. La model card asociada está prácticamente vacía: únicamente declara la licencia, sin especificar arquitectura, tamaño, datos de entrenamiento ni capacidades. El nombre sugiere un enfoque orientado a tareas de programación y uso como agente, pero no hay documentación técnica que lo respalde.
+NOXiden-coding-agent es un modelo publicado en Hugging Face por el usuario dishantgotis bajo licencia MIT. La model card asociada está prácticamente vacía: únicamente declara la licencia, sin especificar arquitectura, tamaño, datos de entrenamiento ni capacidades. El nombre sugiere un enfoque orientado a tareas de programación y uso como agente, pero no hay documentación técnica que lo respalde.
 
 El repositorio no registra descargas ni interacciones en el momento de la consulta, y no declara idiomas soportados ni pipeline de inferencia. Se trata, por tanto, de una publicación sin trazabilidad técnica verificable: no se puede confirmar qué modelo base utiliza, si es un fine-tune, un merge o un conjunto de adaptadores.
 
@@ -72,4 +72,4 @@ No disponible. Sin datos de arquitectura, tamaño ni rendimiento no es posible e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dishantgotis/NOXiden-coding-agent
+- Hugging Face: https://huggingface.co/dishantgotis/NOXiden-coding-agent

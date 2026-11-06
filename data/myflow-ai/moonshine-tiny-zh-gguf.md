@@ -115,7 +115,7 @@ No se dispone de cifras comparativas de CER homogeneas entre estos modelos dentr
 
 ## Enlaces
 
-- Modelo en HuggingFace (conversion GGUF): https://huggingface.co/myflow-ai/moonshine-tiny-zh-gguf
+- Modelo en Hugging Face (conversion GGUF): https://huggingface.co/myflow-ai/moonshine-tiny-zh-gguf
 - Modelo base: https://huggingface.co/UsefulSensors/moonshine-tiny-zh
 - Commit fijado del modelo base: https://huggingface.co/UsefulSensors/moonshine-tiny-zh/commit/3306270
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

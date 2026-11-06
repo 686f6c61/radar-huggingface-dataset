@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mixer-generation es un repositorio experimental publicado por el usuario williambakerman en HuggingFace. No es un modelo entrenado ni un modelo listo para producción: se trata de una base de código de arquitectura Mixer, con un checkpoint de inicialización pensado únicamente para pruebas de humo. El propio autor indica de forma explícita que el fichero `model.safetensors` es una inicialización válida para smoke tests y que no debe presentarse como un checkpoint con benchmarks superados.
+mixer-generation es un repositorio experimental publicado por el usuario williambakerman en Hugging Face. No es un modelo entrenado ni un modelo listo para producción: se trata de una base de código de arquitectura Mixer, con un checkpoint de inicialización pensado únicamente para pruebas de humo. El propio autor indica de forma explícita que el fichero `model.safetensors` es una inicialización válida para smoke tests y que no debe presentarse como un checkpoint con benchmarks superados.
 
 El modelo es extremadamente pequeño: 24.832 parámetros totales, según los metadatos reales de safetensors. La arquitectura declarada combina atención de ventana deslizante, fusión tensorial, activación swish y normalización RMSNorm, con optimizador LAMB y un calendario de warmup constante como receta por defecto. No se declara ningún resultado de evaluación, ni idiomas soportados, ni longitud de contexto.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| williambakerman/mixer-generation | 24.832 | no disponible | Checkpoint de inicializacion, sin entrenar | MIT | HuggingFace |
+| williambakerman/mixer-generation | 24.832 | no disponible | Checkpoint de inicializacion, sin entrenar | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de modelos comparables directamente: se trata de un checkpoint de inicialización sin entrenar y sin métricas publicadas. La familia arquitectónica Mixer remite conceptualmente a trabajos como MLP-Mixer, pero no se documentan en este repositorio los detalles concretos de implementación que permitan una comparación técnica rigurosa.
@@ -80,5 +80,5 @@ No se dispone de modelos comparables directamente: se trata de un checkpoint de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/williambakerman/mixer-generation
+- Hugging Face: https://huggingface.co/williambakerman/mixer-generation
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

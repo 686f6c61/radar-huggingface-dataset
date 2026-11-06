@@ -75,12 +75,12 @@ El modelo NPO reduce la precisión en forget_5 de 0,46 (fine-tune) a 0,07, el va
 
 | Modelo | Parámetros | Contexto | forget_5 | retain | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| **NPO (este modelo)** | 4,3 B | No disponible | 0,07 | 0,41 | Gemma | HuggingFace |
-| Gemma-3-4B-it (base) | ~4 B | No disponible | 0,03 | 0,06 | Gemma | HuggingFace |
-| Gemma-3-4B MLLMU fine-tuned | 4,3 B | No disponible | 0,46 | 0,47 | Gemma | HuggingFace |
-| GradDiff forget5 | 4,3 B | No disponible | 0,35 | 0,45 | Gemma | HuggingFace |
-| KL-Min forget5 | 4,3 B | No disponible | 0,26 | 0,37 | Gemma | HuggingFace |
-| Retain-only | 4,3 B | No disponible | 0,17 | 0,66 | Gemma | HuggingFace |
+| **NPO (este modelo)** | 4,3 B | No disponible | 0,07 | 0,41 | Gemma | Hugging Face |
+| Gemma-3-4B-it (base) | ~4 B | No disponible | 0,03 | 0,06 | Gemma | Hugging Face |
+| Gemma-3-4B MLLMU fine-tuned | 4,3 B | No disponible | 0,46 | 0,47 | Gemma | Hugging Face |
+| GradDiff forget5 | 4,3 B | No disponible | 0,35 | 0,45 | Gemma | Hugging Face |
+| KL-Min forget5 | 4,3 B | No disponible | 0,26 | 0,37 | Gemma | Hugging Face |
+| Retain-only | 4,3 B | No disponible | 0,17 | 0,66 | Gemma | Hugging Face |
 
 La comparación se limita a variantes del mismo experimento sobre Gemma 3 4B; no se dispone de datos frente a otros modelos multimodales de tamaño similar (por ejemplo, Qwen2.5-VL o Llama 3.2 Vision) en la información proporcionada.
 
@@ -97,7 +97,7 @@ La comparación se limita a variantes del mismo experimento sobre Gemma 3 4B; no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lordvarun23/gemma-3-4b-mllmu-npo-forget5
+- Modelo en Hugging Face: https://huggingface.co/Lordvarun23/gemma-3-4b-mllmu-npo-forget5
 - Modelo base (fine-tune): https://huggingface.co/Lordvarun23/gemma-3-4b-mllmu-ft
 - Gemma 3 4B original: https://huggingface.co/google/gemma-3-4b-it
 - Variante retain-only: https://huggingface.co/Lordvarun23/gemma-3-4b-mllmu-retain95

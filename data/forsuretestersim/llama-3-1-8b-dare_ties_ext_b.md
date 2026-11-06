@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-DARE_TIES_Ext_B es un modelo de lenguaje de 8.030.261.248 parámetros publicado en HuggingFace por el usuario ForSureTesterSim. No se trata de un entrenamiento desde cero, sino de una fusión de pesos (merge) construida con mergekit sobre la familia Llama 3.1 de 8B: parte de meta-llama/Llama-3.1-8B como modelo base y combina meta-llama/Llama-3.1-8B-Instruct, allenai/Llama-3.1-Tulu-3.1-8B y Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2.
+Llama-3.1-8B-DARE_TIES_Ext_B es un modelo de lenguaje de 8.030.261.248 parámetros publicado en Hugging Face por el usuario ForSureTesterSim. No se trata de un entrenamiento desde cero, sino de una fusión de pesos (merge) construida con mergekit sobre la familia Llama 3.1 de 8B: parte de meta-llama/Llama-3.1-8B como modelo base y combina meta-llama/Llama-3.1-8B-Instruct, allenai/Llama-3.1-Tulu-3.1-8B y Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2.
 
 La técnica empleada es DARE TIES (paper arXiv:2311.03099), un método de fusión que poda deltas de pesos redundantes (DARE) y resuelve conflictos de signo entre modelos (TIES) antes de combinar. En esta configuración los tres modelos aportan peso 1.0 con densidad 0.1, normalización activada y máscara int8, lo que implica que solo se conserva aproximadamente el 10 % de los parámetros delta de cada modelo fusionado.
 
@@ -18,7 +18,7 @@ Su relevancia práctica es la habitual en los merges de la comunidad: intentar a
 | Longitud de contexto | No declarada en la model card; la arquitectura Llama 3.1 subyacente soporta 131.072 tokens (128k). No confirmado por el autor |
 | Tipos de cuantizacion | El autor publica los pesos en bfloat16 con safetensors. No se han publicado versiones GGUF, AWQ, GPTQ ni FP8 |
 | Idiomas soportados | No disponibles (la familia Llama 3.1 declara soporte oficial para ingles, aleman, frances, italiano, portugues, hindi, espanol y thai; sin confirmacion en esta ficha) |
-| Licencia | No disponible en la ficha de HuggingFace. Los modelos base pertenecen a la familia Llama 3.1, sujeta a la Llama 3.1 Community License, pero el merge no declara terminos propios |
+| Licencia | No disponible en la ficha de Hugging Face. Los modelos base pertenecen a la familia Llama 3.1, sujeta a la Llama 3.1 Community License, pero el merge no declara terminos propios |
 | Formato de pesos | safetensors (dtype: bfloat16), repo de 16,1 GB, tokenizer heredado de meta-llama/Llama-3.1-8B-Instruct |
 | Metodo de fusion | DARE TIES via mergekit (density 0.1, weight 1.0 por modelo, normalize: true, int8_mask: true) |
 | Modelos fusionados | meta-llama/Llama-3.1-8B-Instruct, allenai/Llama-3.1-Tulu-3.1-8B, Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2 |
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-DARE_TIES_Ext_B | 8,03B | No declarado (arquitectura base 128k) | Merge DARE TIES | No disponible | HuggingFace, 0 descargas, 0 likes |
+| Llama-3.1-8B-DARE_TIES_Ext_B | 8,03B | No declarado (arquitectura base 128k) | Merge DARE TIES | No disponible | Hugging Face, 0 descargas, 0 likes |
 | meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128k | Instruct (SFT + RLHF) | Llama 3.1 Community License | Oficial, ampliamente desplegado |
 | allenai/Llama-3.1-Tulu-3.1-8B | 8,03B | 128k | Post-entrenamiento sobre Llama 3.1 | Llama 3.1 Community License (con terminos de Allen AI) | Oficial de Allen AI, con evaluaciones publicadas |
-| Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2 | 8,03B | 128k | SFT con datos sinteticos Magpie | No disponible en esta ficha | HuggingFace, comunidad |
+| Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2 | 8,03B | 128k | SFT con datos sinteticos Magpie | No disponible en esta ficha | Hugging Face, comunidad |
 
 Diferencias clave: los tres componentes originales publican o heredan documentacion oficial de evaluaciones, licencia e idiomas; este merge no aporta ninguna de esas tres cosas y su valor diferencial (si existe) es la combinacion de los tres, algo que ninguna evaluacion publicada respalda. Frente a un modelo denso de 8B de la misma familia, no se espera ninguna ventaja en coste de inferencia ni en contexto: misma arquitectura, mismo numero de parametros, mismo tokenizer.
 
@@ -94,7 +94,7 @@ Diferencias clave: los tres componentes originales publican o heredan documentac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-DARE_TIES_Ext_B
+- Modelo en Hugging Face: https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-DARE_TIES_Ext_B
 - mergekit (herramienta de fusion, repositorio): https://github.com/cg123/mergekit
 - Paper de DARE TIES: https://arxiv.org/abs/2311.03099
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B

@@ -4,7 +4,7 @@
 
 Este repositorio es un archivo espejo de un checkpoint competidor del subnet 120 de Bittensor, conocido como Affine. El autor del repositorio, `greenfield0810`, no es el creador del modelo, sino que ha preservado una copia byte a byte de un checkpoint original alojado en `afgod1079/Affine-5ejzgj7kv5-cp1200`, ante la práctica habitual de que los repositorios de ese leaderboard se vuelvan privados en pocos días tras los duelos. Según la model card, el 31% de los challengers que han competido alguna vez ya son inaccesibles.
 
-El modelo subyacente tiene 35.107.181.936 parámetros totales, un tamaño de 70,2 GB distribuidos en 21 shards, y los tags de HuggingFace indican que se trata de una arquitectura `qwen3_5_moe` con pipeline `image-text-to-text`, lo que sugiere un modelo multimodal de arquitectura MoE basado en la familia Qwen. Sin embargo, no se dispone de documentación oficial del modelo original, por lo que todos los detalles técnicos más allá de los metadatos del repositorio deben considerarse no confirmados.
+El modelo subyacente tiene 35.107.181.936 parámetros totales, un tamaño de 70,2 GB distribuidos en 21 shards, y los tags de Hugging Face indican que se trata de una arquitectura `qwen3_5_moe` con pipeline `image-text-to-text`, lo que sugiere un modelo multimodal de arquitectura MoE basado en la familia Qwen. Sin embargo, no se dispone de documentación oficial del modelo original, por lo que todos los detalles técnicos más allá de los metadatos del repositorio deben considerarse no confirmados.
 
 La relevancia de este repositorio no reside en el modelo en sí, sino en su función de archivo y preservación dentro del ecosistema de Bittensor, donde la trazabilidad y la reproducibilidad de los checkpoints que compiten en los subnets es un problema operativo real. Para un investigador, este repositorio ofrece acceso a un checkpoint que de otro modo podría desaparecer, aunque sin garantías sobre su procedencia, licencia o rendimiento.
 
@@ -12,7 +12,7 @@ La relevancia de este repositorio no reside en el modelo en sí, sino en su func
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE basada en Qwen3.5 (segun tags de HuggingFace, no confirmado) |
+| Arquitectura | MoE basada en Qwen3.5 (segun tags de Hugging Face, no confirmado) |
 | Parametros totales | 35.107.181.936 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ La relevancia de este repositorio no reside en el modelo en sí, sino en su func
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta no esta documentada en la informacion disponible. Los tags de HuggingFace indican `qwen3_5_moe`, lo que sugiere una arquitectura de mezcla de expertos (MoE) perteneciente a la familia Qwen 3.5, con capacidad multimodal `image-text-to-text`. Esto implicaria un transformer con capas de atencion dispersa y rutado de tokens a expertos especializados, probablemente con un componente de vision para procesar imagenes ademas de texto.
+La arquitectura exacta no esta documentada en la informacion disponible. Los tags de Hugging Face indican `qwen3_5_moe`, lo que sugiere una arquitectura de mezcla de expertos (MoE) perteneciente a la familia Qwen 3.5, con capacidad multimodal `image-text-to-text`. Esto implicaria un transformer con capas de atencion dispersa y rutado de tokens a expertos especializados, probablemente con un componente de vision para procesar imagenes ademas de texto.
 
 No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens procesados, ni si se aplicaron tecnicas de RLHF, DPO u otras. Tampoco se conocen innovaciones tecnicas especificas del checkpoint. Al ser un mirror sin documentacion del autor original, cualquier afirmacion sobre el entrenamiento seria especulativa.
 
@@ -74,6 +74,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/greenfield0810/affine-ark-083190e51f7e
+- Repositorio en Hugging Face: https://huggingface.co/greenfield0810/affine-ark-083190e51f7e
 - Repositorio original (posiblemente privado): https://huggingface.co/afgod1079/Affine-5ejzgj7kv5-cp1200
 - Archivo de procedencia: `_affine_provenance.json` dentro del repositorio

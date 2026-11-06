@@ -27,7 +27,7 @@ El modelo es un decoder transformer denso de estilo Llama con 24 capas, dimensi�
 
 El preentrenamiento se realizó sobre los documentos originales de DCLM-edu, con pérdida sobre todos los tokens del documento y sobre `<|endoftext|>`, y máscara de atención entre documentos. Se entrenaron los primeros 11.106 pasos del flujo alineado por pasos del proyecto (23,29B posiciones de token), que coinciden con los primeros pasos del recorrido principal de 31.777 pasos en el mismo orden. El batch global fue de 512 secuencias × 4.096 tokens. El optimizador es Muon (shape scaling, LR matricial 0,005) combinado con Adam para el resto de parámetros (LR 3e-3 para embeddings y capa de salida, 3e-3 para las normas), con warmup de 699 pasos, fase constante y decaimiento lineal en los últimos 1.110 pasos hasta 1/100, weight decay 0,1, std de inicialización 0,0119 y precisión bf16.
 
-La pérdida de validación publicada (por token, sobre 2.433 documentos reservados, checkpoint final) es de 2,898 en texto de asistente, 2,967 en texto de usuario y 2,617 en texto de documento, con 2,618 en los tokens de entrenamiento de esta condición (`raw_doc_eod(8+5)`). El autor verificó los pesos de HuggingFace contra el checkpoint de Megatron recalculando pérdidas de validación, con diferencias absolutas de 0,0018 y 0,0019 en dos conjuntos de segmentos.
+La pérdida de validación publicada (por token, sobre 2.433 documentos reservados, checkpoint final) es de 2,898 en texto de asistente, 2,967 en texto de usuario y 2,617 en texto de documento, con 2,618 en los tokens de entrenamiento de esta condición (`raw_doc_eod(8+5)`). El autor verificó los pesos de Hugging Face contra el checkpoint de Megatron recalculando pérdidas de validación, con diferencias absolutas de 0,0018 y 0,0019 en dos conjuntos de segmentos.
 
 ## Capacidades
 
@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| 1pp-0.58b-v2-raw-base | 580M | 4.096 | apache-2.0 | Base de investigación, preentrenamiento controlado | HuggingFace |
-| SmolLM2-360M | 360M | 8.192 (según versión) | apache-2.0 | Base/asistente ligero | HuggingFace |
-| Qwen2.5-0.5B | 494M | 32.768 (según versión) | apache-2.0 | Base/asistente multilingüe | HuggingFace |
-| Llama 3.2 1B | 1.240M | 131.072 | Llama 3.2 Community License | Base/asistente multilingüe | HuggingFace |
+| 1pp-0.58b-v2-raw-base | 580M | 4.096 | apache-2.0 | Base de investigación, preentrenamiento controlado | Hugging Face |
+| SmolLM2-360M | 360M | 8.192 (según versión) | apache-2.0 | Base/asistente ligero | Hugging Face |
+| Qwen2.5-0.5B | 494M | 32.768 (según versión) | apache-2.0 | Base/asistente multilingüe | Hugging Face |
+| Llama 3.2 1B | 1.240M | 131.072 | Llama 3.2 Community License | Base/asistente multilingüe | Hugging Face |
 
 La comparación es orientativa: los datos de los modelos alternativos no provienen de la información proporcionada y deben verificarse en sus respectivas model cards. La diferencia clave es que 1pp-0.58b-v2-raw-base es un artefacto experimental sin post-entrenamiento, mientras que las alternativas están orientadas a uso práctico.
 
@@ -98,7 +98,7 @@ La comparación es orientativa: los datos de los modelos alternativos no provien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-raw-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-raw-base
 - Colección 1pp: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (wandb): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de SFT (wandb): https://wandb.ai/raghav_singhal/1pp-sft

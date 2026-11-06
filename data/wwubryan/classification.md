@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wwubryan/classification` es un repositorio de HuggingFace publicado por el usuario `wwubryan` que contiene una implementacion experimental de una red **PoolFormer** orientada a tareas de **clasificacion**. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card lo describe como un *checkpoint de inicializacion* valido para *smoke tests*, no como un modelo de referencia con benchmarks. El repositorio incluye el codigo (`pipeline.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y los pesos (`model.safetensors`).
+`wwubryan/classification` es un repositorio de Hugging Face publicado por el usuario `wwubryan` que contiene una implementacion experimental de una red **PoolFormer** orientada a tareas de **clasificacion**. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card lo describe como un *checkpoint de inicializacion* valido para *smoke tests*, no como un modelo de referencia con benchmarks. El repositorio incluye el codigo (`pipeline.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y los pesos (`model.safetensors`).
 
 El dato mas relevante y tambien el mas llamativo es el tamano: el fichero de safetensors declara **16.576 parametros totales**, una cifra extremadamente baja (del orden de decenas de kilobytes en fp32) y que contrasta con la etiqueta `giant` que aparece en la configuracion de arquitectura. Esta discrepancia sugiere que el campo de escala es solo una etiqueta de configuracion generada automaticamente y que el checkpoint es una inicializacion minima pensada para verificar que el pipeline se ejecuta de extremo a extremo.
 
@@ -72,7 +72,7 @@ La informacion proporcionada no incluye datos verificados de modelos comparables
 
 | Modelo | Categoria | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `wwubryan/classification` | Clasificacion de imagenes (PoolFormer custom) | 16.576 | Imagen | MIT | HuggingFace, 0 descargas |
+| `wwubryan/classification` | Clasificacion de imagenes (PoolFormer custom) | 16.576 | Imagen | MIT | Hugging Face, 0 descargas |
 | PoolFormer de Meta (`poolformer_s12` y superiores) | Clasificacion de imagenes | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 | ResNet / MobileNet / EfficientNet | Clasificacion de imagenes | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ La diferencia clave frente a cualquier alternativa real es que este repositorio 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wwubryan/classification
+- Modelo en Hugging Face: https://huggingface.co/wwubryan/classification
 - Ficheros del repositorio: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pestana *Files* del repositorio).
 - Paper, blog, repositorio de codigo o demo adicional: no disponible.
 - Nota sobre la busqueda web: los resultados devueltos corresponden a la actriz Jane Perry (IMDb, Wikipedia, TMDB, AlloCine) y no guardan ninguna relacion con este modelo; se descartan por no ser relevantes.

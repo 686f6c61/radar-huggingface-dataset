@@ -92,7 +92,7 @@ Rendimiento comparado: no disponible para este modelo. No hay benchmarks que per
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dan9070/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-IQ3_S-Q8PLE
+- Repositorio Hugging Face: https://huggingface.co/dan9070/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-IQ3_S-Q8PLE
 - Repositorio de referencia del modelo de origen (GGUF): https://huggingface.co/SC117/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF/tree/main
 - Repositorio del PLE en Q8_0 recomendado por el autor: https://huggingface.co/sleepyeldrazi/Qwen3.8-Flash-Next-GSQ-RCO-Q8_0-PLE-GGUF/tree/main
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.

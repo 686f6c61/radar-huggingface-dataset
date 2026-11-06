@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ml-agents-SoccerTwos es un checkpoint de un agente de aprendizaje por refuerzo entrenado con PPO sobre el entorno SoccerTwos del framework Unity ML-Agents. Lo publica el usuario Srikarraod en HuggingFace como entrega de la Unidad 7 del curso Deep Reinforcement Learning de HuggingFace, y no es un modelo de lenguaje: es una politica neuronal que controla un jugador dentro de una simulacion de futbol 2 contra 2 renderizada en Unity.
+ml-agents-SoccerTwos es un checkpoint de un agente de aprendizaje por refuerzo entrenado con PPO sobre el entorno SoccerTwos del framework Unity ML-Agents. Lo publica el usuario Srikarraod en Hugging Face como entrega de la Unidad 7 del curso Deep Reinforcement Learning de Hugging Face, y no es un modelo de lenguaje: es una politica neuronal que controla un jugador dentro de una simulacion de futbol 2 contra 2 renderizada en Unity.
 
 El modelo no resuelve tareas de generacion de texto ni de vision, sino un problema de control continuo/discreto en un entorno multiagente con cooperacion y competicion. Su relevancia es exclusivamente docente: sirve como ejemplo reproducible de un pipeline completo de RL (definicion de entorno, entrenamiento con PPO, evaluacion con recompensa media y publicacion del artefacto), y de como se registra un resultado de RL en el `model-index` de una model card.
 
@@ -32,7 +32,7 @@ Se trata de un artefacto de muy bajo perfil: 0 descargas y 0 likes en el momento
 
 ## Arquitectura y entrenamiento
 
-La model card indica unicamente que se trata de un agente PPO entrenado con la libreria `ml-agents` en el entorno `ML-Agents-SoccerTwos`, dentro de la Unidad 7 del curso de Deep RL de HuggingFace. No se especifica la topologia de la red de politica ni de la red de valor, el numero de capas, el tamano de las capas ocultas, el tipo de observaciones (vectoriales o visuales), la configuracion de hiperparametros (`learning_rate`, `batch_size`, `buffer_size`, `lambda`, `clip`), el numero de pasos de entrenamiento, ni si se uso entrenamiento autojuego (self-play) o una politica fija como adversario.
+La model card indica unicamente que se trata de un agente PPO entrenado con la libreria `ml-agents` en el entorno `ML-Agents-SoccerTwos`, dentro de la Unidad 7 del curso de Deep RL de Hugging Face. No se especifica la topologia de la red de politica ni de la red de valor, el numero de capas, el tamano de las capas ocultas, el tipo de observaciones (vectoriales o visuales), la configuracion de hiperparametros (`learning_rate`, `batch_size`, `buffer_size`, `lambda`, `clip`), el numero de pasos de entrenamiento, ni si se uso entrenamiento autojuego (self-play) o una politica fija como adversario.
 
 Tampoco se documenta el preprocesado de observaciones, aunque en el entorno SoccerTwos de ML-Agents los agentes observan el estado de la simulacion y, en configuraciones habituales, se aplica apilado de observaciones para dar informacion temporal a una politica sin memoria recurrente. Esta descripcion es generica del entorno y no debe tomarse como una confirmacion de la configuracion concreta de este checkpoint.
 
@@ -52,7 +52,7 @@ No hay informacion sobre semillas, numero de ejecuciones, curvas de aprendizaje 
 ## Casos de uso
 
 - Estudio de un pipeline completo de RL: sirve para inspeccionar como se estructura un proyecto de ML-Agents (config YAML, entorno, entrenamiento, evaluacion y publicacion del checkpoint) de principio a fin.
-- Reproduccion de un ejercicio docente: la Unidad 7 del curso de Deep RL de HuggingFace usa este tipo de entregas para certificar que el alumno sabe entrenar y publicar un agente, por lo que el modelo es material de referencia para replicar el flujo.
+- Reproduccion de un ejercicio docente: la Unidad 7 del curso de Deep RL de Hugging Face usa este tipo de entregas para certificar que el alumno sabe entrenar y publicar un agente, por lo que el modelo es material de referencia para replicar el flujo.
 - Punto de partida para fine-tuning con autojuego: el checkpoint puede reutilizarse como politica inicial en el mismo entorno SoccerTwos y continuar el entrenamiento con PPO, aunque no hay garantia de que la recompensa declarada se mantenga.
 - Comparacion de algoritmos en el mismo entorno: al ser un artefacto PPO en SoccerTwos, permite contrastar variantes (SAC, MA-POCA, curricula) sobre una linea base conocida, siempre que se reentrene con presupuestos comparables.
 - Pruebas de integracion de inferencia en Unity: util para validar el pipeline de exportacion del modelo y su consumo por el runtime de ML-Agents en un proyecto de juego, midiendo latencia y comportamiento en el editor.
@@ -81,8 +81,8 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Srikarraod/ml-agents-SoccerTwos | Agente PPO (ML-Agents) | SoccerTwos (2v2) | no disponible | no aplica | mean_reward 5.00 +/- 1.00 (no verificado) | no disponible | HuggingFace, 0 descargas |
-| Otros checkpoints de la Unidad 7 del curso Deep RL (mismo entorno) | Agente PPO (ML-Agents) | SoccerTwos | no disponible | no aplica | no disponible | no disponible | HuggingFace |
+| Srikarraod/ml-agents-SoccerTwos | Agente PPO (ML-Agents) | SoccerTwos (2v2) | no disponible | no aplica | mean_reward 5.00 +/- 1.00 (no verificado) | no disponible | Hugging Face, 0 descargas |
+| Otros checkpoints de la Unidad 7 del curso Deep RL (mismo entorno) | Agente PPO (ML-Agents) | SoccerTwos | no disponible | no aplica | no disponible | no disponible | Hugging Face |
 | Baseline oficial de SoccerTwos de Unity ML-Agents (autojuego) | Agente PPO (ML-Agents) | SoccerTwos | no disponible | no aplica | no disponible en la informacion | licencia de Unity ML-Agents | Repositorio de Unity |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la informacion proporcionada, por lo que la comparacion se limita a tipo de artefacto y disponibilidad.
@@ -102,8 +102,8 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Srikarraod/ml-agents-SoccerTwos
-- Curso Deep Reinforcement Learning de HuggingFace: https://huggingface.co/learn/deep-rl-course/en/unit0/introduction
+- Modelo en Hugging Face: https://huggingface.co/Srikarraod/ml-agents-SoccerTwos
+- Curso Deep Reinforcement Learning de Hugging Face: https://huggingface.co/learn/deep-rl-course/en/unit0/introduction
 - Documentacion de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Entorno SoccerTwos (ML-Agents): https://github.com/Unity-Technologies/ml-agents/tree/develop/Project/Assets/ML-Agents/Examples/Soccer
 - Resultados de la busqueda web: no se han encontrado enlaces tecnicos relevantes para este modelo; los resultados devueltos por el buscador no guardan relacion con el artefacto y se descartan.

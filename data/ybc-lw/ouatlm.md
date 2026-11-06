@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ybc-lw/ouatlm` es un modelo publicado en HuggingFace por el usuario ybc-lw, con licencia MIT y etiqueta regional "us". Según la información disponible, fue creado el 26 de agosto de 2026 y actualizado el mismo día, pero no se ha publicado ninguna documentación técnica en su model card más allá de la licencia. No se dispone de datos sobre arquitectura, tamaño, parámetros, contexto, idiomas o capacidades. El modelo cuenta con cero descargas y cero likes, lo que sugiere que es un proyecto reciente o experimental sin adopción conocida.
+El modelo `ybc-lw/ouatlm` es un modelo publicado en Hugging Face por el usuario ybc-lw, con licencia MIT y etiqueta regional "us". Según la información disponible, fue creado el 26 de agosto de 2026 y actualizado el mismo día, pero no se ha publicado ninguna documentación técnica en su model card más allá de la licencia. No se dispone de datos sobre arquitectura, tamaño, parámetros, contexto, idiomas o capacidades. El modelo cuenta con cero descargas y cero likes, lo que sugiere que es un proyecto reciente o experimental sin adopción conocida.
 
 Dada la ausencia total de especificaciones, este modelo no puede ser evaluado ni recomendado para ningún caso de uso concreto. La ficha siguiente refleja esta falta de información de manera explícita, siguiendo el principio de no inventar datos.
 
@@ -46,11 +46,11 @@ No disponible. No se puede comparar este modelo con alternativas porque no se co
 ## Limitaciones y advertencias
 
 - El modelo carece de documentación técnica, lo que impide conocer sus sesgos, riesgos de alucinación o limitaciones de contexto.
-- No se ha verificado su funcionamiento ni su calidad; tiene cero descargas y cero likes en HuggingFace.
+- No se ha verificado su funcionamiento ni su calidad; tiene cero descargas y cero likes en Hugging Face.
 - La licencia MIT permite uso comercial y modificación, pero sin especificaciones no se puede garantizar que el modelo funcione para ningún propósito.
 - Se desconoce si el modelo contiene datos de entrenamiento problemáticos o si tiene restricciones de uso adicionales no declaradas.
 - En producción, cualquier uso de este modelo conlleva un riesgo elevado debido a la falta de información y validación.
 
 ## Enlaces
 
-- [HuggingFace - ybc-lw/ouatlm](https://huggingface.co/ybc-lw/ouatlm)
+- [Hugging Face - ybc-lw/ouatlm](https://huggingface.co/ybc-lw/ouatlm)

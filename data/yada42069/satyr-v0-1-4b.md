@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Satyr V0.1 4B es un ajuste fino (fine-tune) del modelo Qwen/Qwen3-4B-Thinking-2507, publicado por el usuario yada42069 en HuggingFace. Se presenta explícitamente como un modelo "sin bozal" orientado a escritura creativa para adultos, conversación y contenido NSFW, con la experimentación como único uso declarado. Cuenta con 4.022.468.096 parámetros reales (según los pesos en safetensors) y se distribuye bajo licencia Apache 2.0, con el inglés como único idioma declarado.
+Satyr V0.1 4B es un ajuste fino (fine-tune) del modelo Qwen/Qwen3-4B-Thinking-2507, publicado por el usuario yada42069 en Hugging Face. Se presenta explícitamente como un modelo "sin bozal" orientado a escritura creativa para adultos, conversación y contenido NSFW, con la experimentación como único uso declarado. Cuenta con 4.022.468.096 parámetros reales (según los pesos en safetensors) y se distribuye bajo licencia Apache 2.0, con el inglés como único idioma declarado.
 
 El interés técnico del modelo es doble. Por un lado, es un caso de estudio de ajuste fino sobre un modelo "thinking" (Qwen3-4B-Thinking-2507) usando, según las etiquetas del repositorio, la herramienta Unsloth. Por otro, ejemplifica la familia de modelos desalineados deliberadamente, en los que se eliminan o atenúan las capas de rechazo del modelo base, lo que lo hace relevante para investigación en seguridad, alineación y evaluación de salvaguardas.
 
@@ -42,7 +42,7 @@ Tampoco hay informacion publicada sobre el proceso de entrenamiento: se desconoc
 - Soporte de agentes y razonamiento multi-paso: no documentado; el modelo base es compatible con agentes, pero no se confirma para este fine-tune.
 - Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma del repositorio.
 - Capacidades de vision, audio o multimodalidad: no disponibles.
-- Etiqueta "endpoints_compatible": el repositorio esta preparado para desplegarse mediante HuggingFace Inference Endpoints.
+- Etiqueta "endpoints_compatible": el repositorio esta preparado para desplegarse mediante Hugging Face Inference Endpoints.
 
 ## Casos de uso
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con 8 GB o mas para FP16 (RTX 3060 Ti, RTX 4060 Ti, RTX 3080). Para 4 bits basta con 4 GB, lo que incluye GTX 1650, RTX 3050 y graficas integradas con memoria unificada.
 - Cabe en GPU de consumo: si. El modelo esta pensado para ese escenario, dado su tamano y la existencia de pesos GGUF.
 - GPU de datacenter: A100, H100 o L40S son suficientes y quedan sobredimensionadas para una sola instancia; permiten lotes grandes y contextos largos.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, vLLM, TGI y HuggingFace Inference Endpoints (el repositorio lleva la etiqueta "endpoints_compatible").
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, vLLM, TGI y Hugging Face Inference Endpoints (el repositorio lleva la etiqueta "endpoints_compatible").
 - Latencia y throughput: no disponibles. No hay mediciones publicadas y dependen de la cuantizacion, el hardware y la longitud de contexto, que tampoco esta documentada.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ No se dispone de datos verificables en la informacion proporcionada sobre altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yada42069/Satyr-V0.1-4B
+- Modelo en Hugging Face: https://huggingface.co/yada42069/Satyr-V0.1-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
 - Paper, blog o repositorio del autor: no disponible en la informacion proporcionada.
 - Demos o espacios asociados: no disponibles.

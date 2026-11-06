@@ -89,4 +89,4 @@ No disponible. En la informacion proporcionada no se citan otros modelos compara
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace: rina-sari/retrieval](https://huggingface.co/rina-sari/retrieval)
+- [Página del modelo en Hugging Face: rina-sari/retrieval](https://huggingface.co/rina-sari/retrieval)

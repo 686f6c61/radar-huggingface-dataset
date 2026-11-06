@@ -17,7 +17,7 @@ Por lo demas, se trata de un artefacto con muy poca documentacion y sin senales 
 | Parametros activos | No aplica: no es un modelo MoE |
 | Longitud de contexto | No disponible en la informacion proporcionada; el modelo base Qwen3-4B-Instruct-2507 declara 262.144 tokens nativos |
 | Tipos de cuantizacion | No disponible. El repo contiene pesos en BF16; al ser una arquitectura estandar de Transformers es cuantizable a GGUF/AWQ/GPTQ, pero el autor no publica variantes |
-| Idiomas soportados | No disponible (la etiqueta de idiomas aparece como no disponible en HuggingFace; el modelo base es multilingue) |
+| Idiomas soportados | No disponible (la etiqueta de idiomas aparece como no disponible en Hugging Face; el modelo base es multilingue) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (export BF16 para `transformers`); se incluyen ademas los ficheros nativos de veRL/FSDP en `original_checkpoint/` |
 | Libreria | transformers |
@@ -37,7 +37,7 @@ Sobre el entrenamiento solo consta lo que aparece en la model card: un run de aj
 - Razonamiento y respuesta a preguntas de dominio biomedico: es el area hacia la que apunta el ajuste con rúbricas, aunque el autor no documenta evaluaciones clinicas.
 - Generacion de codigo y matematicas: capacidad heredada del modelo base, no verificada en este checkpoint.
 - Soporte multilingue: presumiblemente heredado del modelo base, sin confirmacion en la informacion disponible.
-- Integracion con `text-generation-inference` y con los endpoints compatibles de HuggingFace, segun las etiquetas del repositorio.
+- Integracion con `text-generation-inference` y con los endpoints compatibles de Hugging Face, segun las etiquetas del repositorio.
 - Capacidad de servir como punto de partida para evaluar el efecto del RL con rúbricas en el paso 50 frente al modelo base.
 - No se documentan capacidades de vision, audio, tool calling ni modo de razonamiento explicito para este checkpoint concreto.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-4b-medicine-online-pilot-261017-seed42-step-050 | 4,02 B | No disponible (base: 262.144) | Checkpoint intermedio de RL con rúbricas medicas | Apache 2.0 | HuggingFace, 13 descargas |
+| qwen3-4b-medicine-online-pilot-261017-seed42-step-050 | 4,02 B | No disponible (base: 262.144) | Checkpoint intermedio de RL con rúbricas medicas | Apache 2.0 | Hugging Face, 13 descargas |
 | Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4 B | 262.144 tokens | Instruct generalista, sin RL especifico de dominio | Apache 2.0 | Ampliamente adoptado |
 | Qwen3-4B-Thinking-2507 | 4 B | No disponible en esta busqueda | Variante con modo de razonamiento extendido | Apache 2.0 | Publico |
 | Llama 3.2 3B Instruct | 3,2 B | No disponible en esta busqueda | Instruct generalista multilingue | Llama 3.2 Community License | Publico |
@@ -93,7 +93,7 @@ La comparacion relevante es con el modelo base: este checkpoint no aporta mejora
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVA2/qwen3-4b-medicine-online-pilot-261017-seed42-step-050
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVA2/qwen3-4b-medicine-online-pilot-261017-seed42-step-050
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio veRL (framework de RL citado por los ficheros del checkpoint): https://github.com/volcengine/verl
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las busquedas del termino "HYU" devuelven resultados sin relacion (Hyundai France, canales de YouTube, ONE Championship, Deezer). No se dispone de paper, blog, demo ni repositorio adicional asociado.

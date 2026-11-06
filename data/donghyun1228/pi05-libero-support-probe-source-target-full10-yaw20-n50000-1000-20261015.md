@@ -17,7 +17,7 @@ Su relevancia es acotada y muy específica: se trata de un artefacto de reproduc
 | Parametros activos | no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; la model card declara inferencia en BF16. No se publican pesos GGUF ni cuantizaciones de menor precision |
-| Idiomas soportados | no disponible (el campo de idiomas de HuggingFace no esta cumplimentado) |
+| Idiomas soportados | no disponible (el campo de idiomas de Hugging Face no esta cumplimentado) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | no especificado en la model card; se describe como "raw step999 export". Tamano del repositorio: 7,7 GB |
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks de propósito general (MMLU, HumanE
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`pi05-libero-support-probe-source-target-full10-yaw20-n50000-1000-20261015`) | no disponible | no disponible | 1578/2000 en LIBERO (78,95 %) | Apache 2.0 | HuggingFace, 7,7 GB, 0 descargas |
-| `Donghyun1228/pi05-libero-b200-idm-full10-yaw20-1000-20261012` (mismo autor) | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| `Donghyun1228/pi05-libero-b200-full-probe-fixed-yaw30-1000-20261013` (mismo autor) | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Este modelo (`pi05-libero-support-probe-source-target-full10-yaw20-n50000-1000-20261015`) | no disponible | no disponible | 1578/2000 en LIBERO (78,95 %) | Apache 2.0 | Hugging Face, 7,7 GB, 0 descargas |
+| `Donghyun1228/pi05-libero-b200-idm-full10-yaw20-1000-20261012` (mismo autor) | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| `Donghyun1228/pi05-libero-b200-full-probe-fixed-yaw30-1000-20261013` (mismo autor) | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | `lerobot/pi05_libero_base` (modelo base π₀.₅ para LIBERO) | no disponible | no disponible | no disponible | no disponible en la informacion recogida | ModelScope / LeRobot |
 
 La comparación con alternativas externas a la familia π₀.₅ no es posible con los datos disponibles: no se han proporcionado cifras de parámetros, contexto ni rendimiento de otros modelos VLA de referencia.
@@ -91,7 +91,7 @@ La comparación con alternativas externas a la familia π₀.₅ no es posible c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-target-full10-yaw20-n50000-1000-20261015
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-target-full10-yaw20-n50000-1000-20261015
 - Modelo fuente (10.000 actualizaciones): https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-n50000-10000-20261015
 - Dataset: https://huggingface.co/datasets/Donghyun1228/libero-support-random-waypoint-300k-yaw20-20261015
 - Checkpoint relacionado `pi05-libero-b200-idm-full10-yaw20-1000-20261012`: https://huggingface.co/Donghyun1228/pi05-libero-b200-idm-full10-yaw20-1000-20261012

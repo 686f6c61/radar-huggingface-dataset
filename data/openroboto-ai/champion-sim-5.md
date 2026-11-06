@@ -80,7 +80,7 @@ No disponible. No se conocen modelos comparables a partir de la informacion prop
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| openroboto-ai/champion-sim-5 | no disponible | no disponible | 0,9187 (metrica interna OpenRoboto) | no disponible | HuggingFace, 0 descargas, 0 likes |
+| openroboto-ai/champion-sim-5 | no disponible | no disponible | 0,9187 (metrica interna OpenRoboto) | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No disponible. No se conocen modelos comparables a partir de la informacion prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/openroboto-ai/champion-sim-5
+- Repositorio en Hugging Face: https://huggingface.co/openroboto-ai/champion-sim-5
 - Repositorio fuente: https://huggingface.co/ShellFace/wXlmKPVRUELq
 - Commit fuente: https://huggingface.co/ShellFace/wXlmKPVRUELq/tree/dfbaae2ee390c60742423ad86a0ecfbb5ee0c8b6
 - Documentacion de OpenRoboto (referenciada en la model card como *Model Originality & Derivative Submissions*): no disponible

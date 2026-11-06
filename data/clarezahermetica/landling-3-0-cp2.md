@@ -24,7 +24,7 @@ Su relevancia es limitada y experimental: se trata de un adaptador con 0 descarg
 | Libreria | `peft` |
 | Pipeline | `text-generation` |
 | Modelo base | `Qwen/Qwen2.5-7B-Instruct` |
-| Fecha de creacion | 2026-09-21 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-21 (segun metadatos de Hugging Face) |
 
 Nota: las cifras marcadas como del modelo base corresponden a la ficha publica de `Qwen/Qwen2.5-7B-Instruct` y no se detallan en este repositorio.
 
@@ -110,7 +110,7 @@ No se dispone de informacion suficiente para comparar rendimiento con alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/clarezahermetica/landling-3.0-cp2
+- Repositorio Hugging Face: https://huggingface.co/clarezahermetica/landling-3.0-cp2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Herramienta de preparacion Raft: https://github.com/lumpenspace/raft
 - Flujo de ejecucion opbdh: https://github.com/lumpenspace/opbdh

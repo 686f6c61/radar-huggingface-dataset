@@ -86,7 +86,7 @@ No se dispone de comparativas con otros modelos de 9B (p. ej., Llama-3.1-8B, Mis
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v3.h040.bag3.step_16)
+- [Modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v3.h040.bag3.step_16)
 - [Dataset asociado `agentic-ptb/opus-high-v3-data`](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Índice de datasets de agentic-ptb](https://huggingface.co/datasets/agentic-ptb/INDEX)
 - [Búsqueda de modelos de agentic-ptb](https://huggingface.co/models?other=agentic-ptb)

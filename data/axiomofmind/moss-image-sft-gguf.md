@@ -88,7 +88,7 @@ Nota: los datos de parámetros y licencias de los modelos comparados son informa
 
 ## Enlaces
 
-- HuggingFace (este repositorio GGUF): https://huggingface.co/axiomofmind/Moss-Image-SFT-GGUF
+- Hugging Face (este repositorio GGUF): https://huggingface.co/axiomofmind/Moss-Image-SFT-GGUF
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Paper (MOSS-Image Technical Report): https://huggingface.co/papers/2610.23374
 - Project page: https://openmoss.ai/MOSS-Image/

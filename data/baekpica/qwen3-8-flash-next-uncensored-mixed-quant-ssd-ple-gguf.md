@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La elec
 
 ## Enlaces
 
-- Repositorio HuggingFace del artefacto: https://huggingface.co/Baekpica/Qwen3.8-Flash-Next-Uncensored-Mixed-Quant-SSD-PLE-GGUF
+- Repositorio Hugging Face del artefacto: https://huggingface.co/Baekpica/Qwen3.8-Flash-Next-Uncensored-Mixed-Quant-SSD-PLE-GGUF
 - Modelo base (uncensored): https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Receta de cuantización de referencia (versión Q6): https://huggingface.co/Baekpica/Qwen3.8-Flash-Next-Mixed-Quant-SSD-PLE-GGUF
 - Repositorio oficial de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/

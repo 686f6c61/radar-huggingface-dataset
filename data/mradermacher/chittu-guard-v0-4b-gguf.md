@@ -4,7 +4,7 @@
 
 `mradermacher/chittu-guard-v0-4b-GGUF` es una publicacion de cuantizaciones estaticas en formato GGUF generadas por el usuario mradermacher a partir del modelo base `Tulifo/chittu-guard-v0-4b`. No se trata de un modelo entrenado desde cero ni de un fine-tuning propio del autor de la cuantizacion, sino de una conversion de pesos ya existentes a formato GGUF con el objetivo de facilitar su ejecucion en herramientas de inferencia local como llama.cpp, Ollama o LM Studio.
 
-El nombre del repositorio y del modelo base indican que se trata de un modelo de la familia "guard" (orientado a tareas de salvaguarda, moderacion o seguridad) con un tamano nominal de 4B parametros, y una version etiquetada como v0. La etiqueta `chittu` no aporta informacion tecnica adicional verificable en la documentacion disponible. El pipeline, los idiomas soportados y la licencia no estan declarados en la ficha de HuggingFace consultada.
+El nombre del repositorio y del modelo base indican que se trata de un modelo de la familia "guard" (orientado a tareas de salvaguarda, moderacion o seguridad) con un tamano nominal de 4B parametros, y una version etiquetada como v0. La etiqueta `chittu` no aporta informacion tecnica adicional verificable en la documentacion disponible. El pipeline, los idiomas soportados y la licencia no estan declarados en la ficha de Hugging Face consultada.
 
 La relevancia de esta publicacion es practica: ofrece un conjunto amplio de niveles de cuantizacion (desde Q2_K hasta Q8_0 y x-f16) que permite desplegar el modelo en hardware muy diverso, desde equipos de consumo con poca VRAM hasta entornos de servidor con precision casi completa. En el momento de la consulta el repositorio registra 0 descargas y 0 "likes", por lo que no hay evidencia de adopcion ni de validacion por parte de la comunidad.
 
@@ -23,7 +23,7 @@ La relevancia de esta publicacion es practica: ofrece un conjunto amplio de nive
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura del modelo base. El repositorio unicamente documenta el proceso de cuantizacion: conversion desde pesos en formato HuggingFace (`convert_type: hf`) con `quantize_version: 2` y generacion de cuantizaciones de tipo estatico. No se indica si el modelo original emplea un transformer denso, una mezcla de expertos (MoE) u otra arquitectura, ni se detalla el numero de tokens de entrenamiento, la composicion del dataset o si se aplicaron tecnicas de alineacion como RLHF o DPO.
+La informacion disponible no describe la arquitectura del modelo base. El repositorio unicamente documenta el proceso de cuantizacion: conversion desde pesos en formato Hugging Face (`convert_type: hf`) con `quantize_version: 2` y generacion de cuantizaciones de tipo estatico. No se indica si el modelo original emplea un transformer denso, una mezcla de expertos (MoE) u otra arquitectura, ni se detalla el numero de tokens de entrenamiento, la composicion del dataset o si se aplicaron tecnicas de alineacion como RLHF o DPO.
 
 Tampoco se documenta ninguna innovacion tecnica especifica (atencion lineal, decodificacion especulativa, modos de razonamiento, etc.). La unica caracteristica tecnica confirmada es la disponibilidad de 12 variantes de cuantizacion distintas, incluidas opciones de muy baja precision (Q2_K) y de alta fidelidad (Q8_0, x-f16), lo que sugiere que el autor prioriza la compatibilidad con distintos presupuestos de memoria por encima de cualquier modificacion del modelo en si.
 
@@ -43,7 +43,7 @@ Tampoco se documenta ninguna innovacion tecnica especifica (atencion lineal, dec
 - Evaluacion comparativa de cuantizaciones: el repositorio incluye 12 niveles de cuantizacion, lo que permite medir la degradacion de calidad entre Q2_K y x-f16 sobre el mismo modelo base en una tarea concreta.
 - Prototipado de filtros de contenido: si el modelo base es efectivamente un "guard", podria emplearse como capa de clasificacion previa o posterior a un LLM generativo, aunque esta capacidad no esta confirmada.
 - Servicio de inferencia con vLLM o TGI: no se puede confirmar la compatibilidad, ya que los formatos GGUF no son el formato nativo de estos servidores; requeriria conversion adicional a safetensors.
-- Uso como base para fine-tuning adicional: no recomendado a partir de pesos GGUF, ya que el entrenamiento suele requerir los pesos originales en formato HuggingFace.
+- Uso como base para fine-tuning adicional: no recomendado a partir de pesos GGUF, ya que el entrenamiento suele requerir los pesos originales en formato Hugging Face.
 
 Nota: al no existir documentacion funcional del modelo base, estos casos de uso son escenarios genericos derivados del formato de publicacion, no aplicaciones validadas.
 
@@ -63,15 +63,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/chittu-guard-v0-4b-GGUF | no disponible (~4B por nomenclatura) | GGUF | no disponible | no disponible | Publico en HuggingFace |
-| mradermacher/VirbiusGuard-4B-GGUF | no disponible (nombre indica 4B) | GGUF | no disponible | Apache 2.0 (segun su ficha) | Publico en HuggingFace |
-| Tulifo/chittu-guard-v0-4b (modelo base) | no disponible | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| mradermacher/chittu-guard-v0-4b-GGUF | no disponible (~4B por nomenclatura) | GGUF | no disponible | no disponible | Publico en Hugging Face |
+| mradermacher/VirbiusGuard-4B-GGUF | no disponible (nombre indica 4B) | GGUF | no disponible | Apache 2.0 (segun su ficha) | Publico en Hugging Face |
+| Tulifo/chittu-guard-v0-4b (modelo base) | no disponible | no disponible | no disponible | no disponible | Publico en Hugging Face |
 
 La comparativa se limita a repositorios de la misma categoria (modelos "guard" cuantizados por el mismo autor), ya que no se dispone de datos de rendimiento ni de especificaciones tecnicas completas que permitan una comparacion cuantitativa con alternativas de otros autores.
 
 ## Limitaciones y advertencias
 
-- La ficha de HuggingFace no declara licencia. Esto impide determinar si el uso comercial esta permitido; es imprescindible consultar el repositorio del modelo base antes de cualquier uso en produccion.
+- La ficha de Hugging Face no declara licencia. Esto impide determinar si el uso comercial esta permitido; es imprescindible consultar el repositorio del modelo base antes de cualquier uso en produccion.
 - No se especifican los idiomas soportados, por lo que no se puede garantizar un comportamiento correcto fuera del idioma o idiomas originales del modelo base.
 - Al no publicarse benchmarks ni evaluaciones, no existe evidencia verificable de su calidad, ni en tareas de generacion ni en tareas de moderacion o seguridad.
 - Riesgo de alucinacion: no cuantificado, pero aplicable a cualquier modelo generativo sin evaluacion publicada.

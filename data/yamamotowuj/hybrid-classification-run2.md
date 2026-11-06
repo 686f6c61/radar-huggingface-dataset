@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yamamotowuj/hybrid-classification-run2` es un prototipo de investigación publicado en HuggingFace por el usuario yamamotowuj, orientado a tareas de clasificación mediante una arquitectura híbrida. Se trata de un artefacto experimental y no de un modelo entrenado: la propia model card indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con rendimiento verificado ni con puntuaciones de benchmark.
+`yamamotowuj/hybrid-classification-run2` es un prototipo de investigación publicado en Hugging Face por el usuario yamamotowuj, orientado a tareas de clasificación mediante una arquitectura híbrida. Se trata de un artefacto experimental y no de un modelo entrenado: la propia model card indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con rendimiento verificado ni con puntuaciones de benchmark.
 
 El modelo es extremadamente pequeño: el recuento real de parámetros almacenados en safetensors es de 24.832 (aproximadamente 24,8 mil parámetros). Esto lo sitúa en la categoría de maqueta arquitectónica o andamiaje de código, más que en la de un modelo utilizable en producción. El repositorio ocupa 0,0 GB y contiene principalmente el script `finetune.py` como artefacto principal, junto con `config.json`, `training_args.json` y el propio checkpoint de inicialización.
 
@@ -78,5 +78,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yamamotowuj/hybrid-classification-run2
+- Hugging Face: https://huggingface.co/yamamotowuj/hybrid-classification-run2
 - No se han encontrado en la información proporcionada otros enlaces relevantes (papers, blogs, repositorios adicionales o demos).

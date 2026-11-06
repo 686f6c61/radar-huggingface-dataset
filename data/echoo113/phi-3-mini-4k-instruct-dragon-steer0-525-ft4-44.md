@@ -73,8 +73,8 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Echoo113/Phi-3-mini-4k-instruct-dragon-STEER0.525-ft4.44
-- Modelo base en HuggingFace: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
+- Hugging Face del modelo: https://huggingface.co/Echoo113/Phi-3-mini-4k-instruct-dragon-STEER0.525-ft4.44
+- Modelo base en Hugging Face: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Repositorio del modelo base en GitHub: https://github.com/ttlmtang123/Phi-3-mini-4k-instruct
 - Catálogo de modelos de Microsoft Foundry: https://ai.azure.com/catalog/models/Phi-3-mini-4k-instruct
 - Otro ajuste similar (GMorgulis): https://huggingface.co/GMorgulis/Phi-3-mini-4k-instruct-wolf-STEER0.510156-ft4.44

@@ -130,7 +130,7 @@ La comparación relevante es interna a la familia SemSimula: SR4a-CODE frente a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2-vs234
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2-vs234
 - Modelo de referencia SO-CODE: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2
 - Colección del estudio (depth-on-code, Gen 3): https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-depth-on-code-6ae76925374cab20b1cb7d5e
 - Dataset de entrenamiento: https://huggingface.co/datasets/codeparrot/codeparrot-clean-train

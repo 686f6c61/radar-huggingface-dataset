@@ -77,6 +77,6 @@ No se dispone de comparativas con otros fine-tunes educativos similares. La falt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AdityaSunil0301/tutor_model
+- Hugging Face: https://huggingface.co/AdityaSunil0301/tutor_model
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit

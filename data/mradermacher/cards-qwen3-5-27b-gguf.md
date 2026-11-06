@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CARDS-Qwen3.5-27B-GGUF es la distribucion en formato GGUF del modelo C3DS/CARDS-Qwen3.5-27B, un ajuste fino multimodal (image-text-to-text) del modelo Qwen3.5 de 27B orientado al analisis de discurso climatico y clasificacion de textos e imagenes relacionados con el cambio climatico. La cuantizacion la firma mradermacher, autor habitual de conversiones GGUF en HuggingFace, que publica los pesos en multiples niveles de compresion para facilitar su ejecucion en hardware de consumo.
+CARDS-Qwen3.5-27B-GGUF es la distribucion en formato GGUF del modelo C3DS/CARDS-Qwen3.5-27B, un ajuste fino multimodal (image-text-to-text) del modelo Qwen3.5 de 27B orientado al analisis de discurso climatico y clasificacion de textos e imagenes relacionados con el cambio climatico. La cuantizacion la firma mradermacher, autor habitual de conversiones GGUF en Hugging Face, que publica los pesos en multiples niveles de compresion para facilitar su ejecucion en hardware de consumo.
 
 El modelo base conserva la arquitectura transformer de Qwen3.5 con aproximadamente 26.900 millones de parametros (26.895.998.464 segun los safetensors del repositorio), un tamano que lo situa en la franja alta de los modelos de 27B y que, gracias a las cuantizaciones de 4 bits, puede desplegarse en GPUs de consumo con 16-24 GB de VRAM. El ajuste fino se realizo sobre el dataset C3DS/cards_sft_dataset mediante supervised fine-tuning, especializandolo en tareas de clasificacion y analisis de discurso climatico.
 
@@ -83,7 +83,7 @@ No se dispone de informacion suficiente sobre alternativas comparables en la mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/CARDS-Qwen3.5-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/CARDS-Qwen3.5-27B-GGUF
 - Modelo base: https://huggingface.co/C3DS/CARDS-Qwen3.5-27B
 - Dataset de ajuste fino: https://huggingface.co/datasets/C3DS/cards_sft_dataset
 - Pagina de descargas del autor: https://hf.tst.eu/model#CARDS-Qwen3.5-27B-GGUF

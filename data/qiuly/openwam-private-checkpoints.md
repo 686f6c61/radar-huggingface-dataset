@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenWAM-private-checkpoints es un archivo de investigación publicado en HuggingFace por el usuario qiuly que contiene 40 políticas SFT finales (run1–run40), dos políticas de preentrenamiento WAM, 10 artefactos S-VAE independientes y un artefacto de ajuste fino del codificador VideoRAE. No es un modelo único ni un modelo cargable con `from_pretrained`: es un formato de archivo con componentes congelados compartidos almacenados una sola vez y herramientas que reconstruyen cada checkpoint original byte a byte, preservando la precisión original de los tensores.
+OpenWAM-private-checkpoints es un archivo de investigación publicado en Hugging Face por el usuario qiuly que contiene 40 políticas SFT finales (run1–run40), dos políticas de preentrenamiento WAM, 10 artefactos S-VAE independientes y un artefacto de ajuste fino del codificador VideoRAE. No es un modelo único ni un modelo cargable con `from_pretrained`: es un formato de archivo con componentes congelados compartidos almacenados una sola vez y herramientas que reconstruyen cada checkpoint original byte a byte, preservando la precisión original de los tensores.
 
 El proyecto se apoya en NVIDIA Cosmos como base ("Built on NVIDIA Cosmos") y pertenece al ámbito de la robótica y los world models, con evaluación orientada al benchmark LIBERO y LIBERO+ mediante el repo OpenWAM-private. La arquitectura interna combina componentes identificables por los nombres de sus assets: un experto VLM (`vlm_expert`), un módulo de razonamiento (`reason1`), el codificador visual DINOv3 en variante patch2, un códec de vídeo VideoRAE y variantes de S-VAE. La presencia de configuraciones de dos y tres sistemas (2sys/3sys) apunta a un diseño con separación entre razonamiento y acción, aunque la model card no detalla la topología exacta.
 
@@ -82,7 +82,7 @@ No se dispone de datos verificados de modelos comparables en la información pro
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenWAM-private-checkpoints (qiuly) | No disponible | No disponible | No disponible | other / mixed-upstream-model-licenses | Publico en HuggingFace, 285,1 GB |
+| OpenWAM-private-checkpoints (qiuly) | No disponible | No disponible | No disponible | other / mixed-upstream-model-licenses | Publico en Hugging Face, 285,1 GB |
 | NVIDIA Cosmos (base declarada) | No disponible en la informacion | No disponible | No disponible | No disponible en la informacion | No disponible en la informacion |
 | Otras politicas roboticas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -103,7 +103,7 @@ No se dispone de datos verificados de modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qiuly/OpenWAM-private-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/qiuly/OpenWAM-private-checkpoints
 - Código fuente compatible (acceso separado): https://github.com/d-finite/OpenWAM-private (revisión `cc4bf0c6bd3e016723c0b4050cd93b7d5c827ef6`)
 - Ficheros de licencia y atribución incluidos en el repositorio: `LICENSE`, `NOTICE`, `THIRD_PARTY_LICENSES.md`
 - Manifiestos y metadatos incluidos: `PUBLICATION_COMPLETE.json`, `publication-manifest.json`, `catalog.json`, `checkpoint.index.json`

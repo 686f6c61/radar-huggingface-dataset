@@ -71,9 +71,9 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Tipo de defensa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AnchorRep-Phi-3-medium-4k-instruct | 14B (base) + LoRA | 4.096 | Repulsion representacional (CKA) contra ancla Llama-3-8B | MIT | HuggingFace (10 descargas) |
-| Phi-3-medium-4k-instruct (base) | 14B | 4.096 | Sin defensa especifica | MIT | HuggingFace |
-| Llama-3-8B-Instruct (ancla) | 8B | 8.192 (no confirmado en la informacion disponible) | Alineacion estandar | Licencia comunitaria Llama 3 | HuggingFace |
+| AnchorRep-Phi-3-medium-4k-instruct | 14B (base) + LoRA | 4.096 | Repulsion representacional (CKA) contra ancla Llama-3-8B | MIT | Hugging Face (10 descargas) |
+| Phi-3-medium-4k-instruct (base) | 14B | 4.096 | Sin defensa especifica | MIT | Hugging Face |
+| Llama-3-8B-Instruct (ancla) | 8B | 8.192 (no confirmado en la informacion disponible) | Alineacion estandar | Licencia comunitaria Llama 3 | Hugging Face |
 
 No se dispone en la informacion proporcionada de otros adaptadores de defensa comparables con metricas publicadas (por ejemplo, variantes de circuit breakers o representation engineering) para establecer una comparacion cuantitativa.
 
@@ -89,7 +89,7 @@ No se dispone en la informacion proporcionada de otros adaptadores de defensa co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/galwert/AnchorRep-Phi-3-medium-4k-instruct
+- Modelo en Hugging Face: https://huggingface.co/galwert/AnchorRep-Phi-3-medium-4k-instruct
 - Modelo base: https://huggingface.co/microsoft/Phi-3-medium-4k-instruct
 - Ancla: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Repositorio GitHub (entrenamiento, evaluacion, logs de auditoria, sufijos GCG): https://github.com/galwert/AnchorRep

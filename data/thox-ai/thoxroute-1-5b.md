@@ -83,6 +83,6 @@ La comparación directa con alternativas de enrutamiento no puede completarse co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thox-ai/ThoxRoute-1.5B
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/ThoxRoute-1.5B
 - Build GGUF: https://huggingface.co/Thox-ai/ThoxRoute-1.5B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Marta es un adaptador LoRA de tipo text-to-image publicado por el usuario Rand000mGuy en HuggingFace. Se distribuye con la libreria diffusers y esta disenado para funcionar sobre el modelo base krea/Krea-2-Turbo, segun los metadatos de la model card. El repositorio ocupa 0,2 GB y no registra descargas ni likes en el momento de la consulta.
+Marta es un adaptador LoRA de tipo text-to-image publicado por el usuario Rand000mGuy en Hugging Face. Se distribuye con la libreria diffusers y esta disenado para funcionar sobre el modelo base krea/Krea-2-Turbo, segun los metadatos de la model card. El repositorio ocupa 0,2 GB y no registra descargas ni likes en el momento de la consulta.
 
 El problema que resuelve es el habitual de los adaptadores LoRA: especializar un modelo de difusion ya entrenado hacia un concepto, estilo o sujeto concreto sin necesidad de reentrenar ni redistribuir los pesos completos del modelo base. La relevancia practica depende del modelo base sobre el que se aplica, ya que el adaptador por si solo no genera imagenes.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Modelo base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Rand000mGuy/marta | LoRA text-to-image | krea/Krea-2-Turbo | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
+| Rand000mGuy/marta | LoRA text-to-image | krea/Krea-2-Turbo | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
 | Otros LoRA para Krea-2-Turbo | LoRA text-to-image | krea/Krea-2-Turbo | no disponible | no aplica | variable segun autor | no disponible en la informacion consultada |
 | LoRA para modelos de difusion de referencia (por ejemplo, familias tipo SDXL o FLUX) | LoRA text-to-image | modelo de difusion correspondiente | no disponible | no aplica | variable segun autor y modelo base | ecosistemas ampliamente poblados |
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativos entre marta y alternativas de
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Rand000mGuy/marta
+- Pagina del modelo en Hugging Face: https://huggingface.co/Rand000mGuy/marta
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de diffusers (libreria indicada en los metadatos): https://huggingface.co/docs/diffusers
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible en la informacion proporcionada.

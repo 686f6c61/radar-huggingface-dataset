@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nikumar1983/document-ai-checkpoint` es un repositorio alojado en HuggingFace que, segun su propia model card, contiene **notas de investigacion exploratorias** sobre Document AI, no un modelo entrenado ni un checkpoint funcional. El autor lo describe explicitamente como un artefacto previo a cualquier resultado experimental: registra el alcance de una pregunta de investigacion, posibles factores de confusion (confounders), un plan de comparacion con baselines emparejados y requisitos de reproducibilidad. A pesar de las etiquetas `transformer` y `safetensors` y de que el repositorio contiene pesos de 49.600 parametros, la model card aclara que no se reclama ni un checkpoint entrenado, ni mejoras de benchmark, ni codigo publicado.
+`nikumar1983/document-ai-checkpoint` es un repositorio alojado en Hugging Face que, segun su propia model card, contiene **notas de investigacion exploratorias** sobre Document AI, no un modelo entrenado ni un checkpoint funcional. El autor lo describe explicitamente como un artefacto previo a cualquier resultado experimental: registra el alcance de una pregunta de investigacion, posibles factores de confusion (confounders), un plan de comparacion con baselines emparejados y requisitos de reproducibilidad. A pesar de las etiquetas `transformer` y `safetensors` y de que el repositorio contiene pesos de 49.600 parametros, la model card aclara que no se reclama ni un checkpoint entrenado, ni mejoras de benchmark, ni codigo publicado.
 
 El problema que aborda es metodologico: fijar por escrito los criterios de evaluacion (datasets FUNSD, SROIE y CORD), los checks de reproducibilidad y los modos de fallo esperados antes de correr cualquier experimento. En ese sentido, es relevante como ejemplo de documentacion pre-registrada en investigacion sobre Document AI, pero **no es utilizable como modelo**: sus 49.600 parametros son triviales y no hay evidencia de entrenamiento, tokenizador, configuracion de contexto ni pipeline declarado.
 
@@ -45,7 +45,7 @@ Dado que el repositorio no contiene un modelo funcional, los casos de uso que se
 - Guia de evaluacion en Document AI: utilizar la lista de datasets propuesta (FUNSD, SROIE, CORD) como punto de partida para disenar un protocolo de evaluacion propio.
 - Checklist de reproducibilidad: aprovechar la exigencia del autor de incluir versiones de dataset, comandos, semillas, hardware y logs crudos al publicar resultados.
 - Referencia para revision por pares: emplear el documento para discutir que informacion minima deberia acompanar a un futuro benchmark de extraccion de informacion documental.
-- Docencia o formacion: usar la nota como caso practico de buenas practicas de documentacion cientifica en repositorios de HuggingFace.
+- Docencia o formacion: usar la nota como caso practico de buenas practicas de documentacion cientifica en repositorios de Hugging Face.
 - Auditoria de artefactos: usarla como ejemplo de discrepancia entre etiquetas del repositorio (`transformer`, `safetensors`) y contenido real (notas sin modelo entrenado).
 - No procede su uso para inferencia en produccion, prototipado ni despliegue, dado que no hay modelo entrenado.
 
@@ -78,5 +78,5 @@ No disponible. El repositorio no es un modelo entrenado y no existe una categori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nikumar1983/document-ai-checkpoint
+- Hugging Face: https://huggingface.co/nikumar1983/document-ai-checkpoint
 - No se han encontrado en la informacion proporcionada otros enlaces (papers, blogs, repositorios o demos) asociados al modelo.

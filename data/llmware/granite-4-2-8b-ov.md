@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llmware/granite-4.2-8b-ov` es un repositorio publicado por el usuario «llmware» en HuggingFace, con etiquetas `openvino`, `granite`, `license:apache-2.0` y `region:us`. El repositorio ocupa 5,0 GB y registra 0 descargas y 0 «likes» en el momento de la consulta (fecha de creacion indicada: 12 de septiembre de 2026). La model card esta practicamente vacia: su unico contenido es la declaracion de licencia `apache-2.0`, sin descripcion, sin arquitectura, sin datos de entrenamiento y sin resultados de evaluacion.
+`llmware/granite-4.2-8b-ov` es un repositorio publicado por el usuario «llmware» en Hugging Face, con etiquetas `openvino`, `granite`, `license:apache-2.0` y `region:us`. El repositorio ocupa 5,0 GB y registra 0 descargas y 0 «likes» en el momento de la consulta (fecha de creacion indicada: 12 de septiembre de 2026). La model card esta practicamente vacia: su unico contenido es la declaracion de licencia `apache-2.0`, sin descripcion, sin arquitectura, sin datos de entrenamiento y sin resultados de evaluacion.
 
 Por el identificador y las etiquetas se puede inferir, sin confirmacion documental, que se trata de un artefacto derivado de la familia Granite (IBM) con aproximadamente 8 000 millones de parametros, convertido al formato de inferencia OpenVINO. Esa inferencia no esta respaldada por ningun dato de la model card ni por la busqueda web realizada, cuyos resultados no guardan relacion con el modelo. El unico dato objetivo de entorno es la licencia Apache 2.0, que permite uso comercial sin restricciones adicionales declaradas.
 
@@ -105,7 +105,7 @@ La ventaja diferencial de este repositorio, si se confirma el formato OpenVINO, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/llmware/granite-4.2-8b-ov
+- Repositorio en Hugging Face: https://huggingface.co/llmware/granite-4.2-8b-ov
 - Paper: no disponible
 - Blog tecnico del autor: no disponible
 - Repositorio de codigo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Factorial_Base_Tiny_300M_Ver_LM es un modelo de generación de texto de tipo transformer, presumiblemente decoder-only, desarrollado por el usuario de HuggingFace bull220202 bajo la etiqueta "Factorial". Se trata de un modelo de muy pequeño tamaño, en torno a 300 millones de parámetros, orientado al idioma japonés (ja) y publicado con licencia CC-BY-4.0. El repositorio ocupa 3,5 GB, lo que sugiere la presencia de pesos en precisión completa o varios formatos de cuantización, aunque la model card no lo detalla.
+Factorial_Base_Tiny_300M_Ver_LM es un modelo de generación de texto de tipo transformer, presumiblemente decoder-only, desarrollado por el usuario de Hugging Face bull220202 bajo la etiqueta "Factorial". Se trata de un modelo de muy pequeño tamaño, en torno a 300 millones de parámetros, orientado al idioma japonés (ja) y publicado con licencia CC-BY-4.0. El repositorio ocupa 3,5 GB, lo que sugiere la presencia de pesos en precisión completa o varios formatos de cuantización, aunque la model card no lo detalla.
 
 El modelo se presenta como una variante "Tiny" de una familia "Factorial Base", de la que no se ofrece documentación adicional en la información disponible. La model card es extremadamente escueta: se limita a indicar el tamaño aproximado y a afirmar que, pese a ser pequeño, su rendimiento "no debe subestimarse". No se especifican arquitectura exacta, datos de entrenamiento, longitud de contexto ni resultados de evaluación.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Factorial_Base_Tiny_300M_Ver_LM | ≈300M | no disponible | ja | CC-BY-4.0 | HuggingFace (0 descargas) |
+| Factorial_Base_Tiny_300M_Ver_LM | ≈300M | no disponible | ja | CC-BY-4.0 | Hugging Face (0 descargas) |
 | Modelos comparables de ≈300M en japonés | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para establecer una comparativa fiable con alternativas concretas de la misma categoría. La ausencia de benchmarks y de documentación técnica impide comparar rendimiento, contexto o calidad frente a otros modelos pequeños.
@@ -79,7 +79,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bull220202/Factorial_Base_Tiny_300M_Ver_LM
+- Hugging Face: https://huggingface.co/bull220202/Factorial_Base_Tiny_300M_Ver_LM
 - Paper: no disponible
 - Blog o demo: no disponible
 - Repositorio de código: no disponible

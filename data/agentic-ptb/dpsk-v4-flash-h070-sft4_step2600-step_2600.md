@@ -68,7 +68,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h070.sft4_step2600.step_2600
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h070.sft4_step2600.step_2600
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Referencia del driver DeepSeek V4 Flash: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Variante 0731 del driver: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731

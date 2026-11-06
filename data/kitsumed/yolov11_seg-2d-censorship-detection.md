@@ -89,9 +89,9 @@ Conviene subrayar que la tarea de este modelo (segmentar censura en 2D) es muy e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kitsumed/yolov11_seg-2d-censorship-detection
+- Modelo en Hugging Face: https://huggingface.co/kitsumed/yolov11_seg-2d-censorship-detection
 - Soporte del autor (GitHub Sponsors): https://github.com/sponsors/kitsumed
 - Repositorio Ultralytics YOLO11: https://github.com/ultralytics/yolo11
 - Documentacion de Ultralytics YOLO11: https://docs.ultralytics.com/models/yolo11
 - Configuraciones de modelos Ultralytics: https://github.com/ultralytics/ultralytics/tree/main/ultralytics/cfg/models
-- YOLO11 en HuggingFace (Ultralytics): https://huggingface.co/Ultralytics/YOLO11
+- YOLO11 en Hugging Face (Ultralytics): https://huggingface.co/Ultralytics/YOLO11

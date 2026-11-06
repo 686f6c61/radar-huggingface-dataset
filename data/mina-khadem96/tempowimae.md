@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TempoWiMAE es un modelo publicado en HuggingFace por el usuario Mina-khadem96 bajo el identificador `Mina-khadem96/TempoWiMAE`. En el momento de la consulta, el repositorio no presenta descargas ni interacciones (0 descargas, 0 likes) y su model card únicamente contiene la declaración de licencia, sin documentación técnica adicional.
+TempoWiMAE es un modelo publicado en Hugging Face por el usuario Mina-khadem96 bajo el identificador `Mina-khadem96/TempoWiMAE`. En el momento de la consulta, el repositorio no presenta descargas ni interacciones (0 descargas, 0 likes) y su model card únicamente contiene la declaración de licencia, sin documentación técnica adicional.
 
 La información disponible no permite determinar qué problema resuelve el modelo, su arquitectura, su tamaño ni su dominio de aplicación. El nombre "TempoWiMAE" sugiere un posible vínculo con arquitecturas de tipo masked autoencoder (MAE) aplicadas a datos temporales, pero se trata únicamente de una inferencia a partir del nombre y no está confirmada por ninguna fuente del repositorio.
 
@@ -70,5 +70,5 @@ No disponible. Sin datos sobre arquitectura, tamaño, modalidad ni dominio, no e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mina-khadem96/TempoWiMAE
+- Repositorio en Hugging Face: https://huggingface.co/Mina-khadem96/TempoWiMAE
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web realizada.

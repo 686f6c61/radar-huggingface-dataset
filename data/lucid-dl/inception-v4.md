@@ -84,7 +84,7 @@ La informacion proporcionada solo cubre este modelo, por lo que los datos de los
 
 | Modelo | Tipo | Parametros | Contexto / entrada | acc@1 en ImageNet-1k | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Inception-v4 (lucid-dl) | CNN Inception, sin residuales | 42,7 M | no disponible en la informacion facilitada | 80,144 (declarado, no verificado) | apache-2.0 | HuggingFace, via Lucid |
+| Inception-v4 (lucid-dl) | CNN Inception, sin residuales | 42,7 M | no disponible en la informacion facilitada | 80,144 (declarado, no verificado) | apache-2.0 | Hugging Face, via Lucid |
 | Inception-ResNet-v2 | CNN Inception con residuales | no disponible | no disponible | no disponible | no disponible | timm / TensorFlow |
 | ResNet-50 | CNN residual | no disponible | no disponible | no disponible | no disponible | ampliamente disponible |
 | EfficientNet-B0 | CNN con escalado compuesto | no disponible | no disponible | no disponible | no disponible | timm / TensorFlow |
@@ -106,7 +106,7 @@ Puntos de comparacion objetivos que si se pueden afirmar: Inception-v4 pertenece
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucid-dl/inception-v4
+- Modelo en Hugging Face: https://huggingface.co/lucid-dl/inception-v4
 - Repositorio de la libreria Lucid: https://github.com/ChanLumerico/lucid
 - Paper original: *Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning* (Szegedy et al., AAAI 2017), arXiv:1602.07261, https://arxiv.org/abs/1602.07261
 - Pesos de origen en timm: `timm/inception_v4.tf_in1k`

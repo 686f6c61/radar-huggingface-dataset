@@ -76,11 +76,11 @@ La model card no publica resultados de benchmarks clasicos (MMLU, HumanEval, GSM
 
 | Modelo | Parametros | Formato | Frecuencia / trama | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hush AI (Real-time RE-USE) | 13,5 M | safetensors (FP32) | 16/24/48 kHz, 20 ms | NVIDIA One-Way Noncommercial | HuggingFace y GitHub |
-| Hush AI (DeepFilterNet 3) | no disponible | ONNX | 48 kHz, 10 ms | MIT o Apache-2.0 | HuggingFace y GitHub |
+| Hush AI (Real-time RE-USE) | 13,5 M | safetensors (FP32) | 16/24/48 kHz, 20 ms | NVIDIA One-Way Noncommercial | Hugging Face y GitHub |
+| Hush AI (DeepFilterNet 3) | no disponible | ONNX | 48 kHz, 10 ms | MIT o Apache-2.0 | Hugging Face y GitHub |
 | DeepFilterNet 3 (original) | no disponible | ONNX / Rust libDF | 48 kHz, 10 ms | MIT o Apache-2.0 | GitHub de Rikorose |
 | RNNoise | no disponible | no disponible | no disponible | no disponible | referenciado en la comparativa de Hush AI |
-| NVIDIA Real-time RE-USE (original) | 13,5 M | safetensors | 20 ms | NVIDIA One-Way Noncommercial | HuggingFace (nvidia/Real-time_RE-USE) |
+| NVIDIA Real-time RE-USE (original) | 13,5 M | safetensors | 20 ms | NVIDIA One-Way Noncommercial | Hugging Face (nvidia/Real-time_RE-USE) |
 
 ## Limitaciones y advertencias
 
@@ -95,12 +95,12 @@ La model card no publica resultados de benchmarks clasicos (MMLU, HumanEval, GSM
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alshell7/hush-ai
+- Repositorio en Hugging Face: https://huggingface.co/alshell7/hush-ai
 - Repositorio GitHub de Hush AI: https://github.com/alshell7/hush-ai
 - Crate `hush-core`: https://github.com/alshell7/hush-ai/tree/main/crates/hush-core
 - Comparativa con DeepFilterNet 3 y RNNoise: https://github.com/alshell7/hush-ai/blob/main/docs/COMPARISON.md
 - Descarga de la aplicacion: https://github.com/alshell7/hush-ai/releases/latest
 - Sitio web: https://alshell7.github.io/hush-ai/
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/Real-time_RE-USE
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/Real-time_RE-USE
 - DeepFilterNet 3 (codigo original): https://github.com/Rikorose/DeepFilterNet
 - Paper de DeepFilterNet: Schroter et al., *DeepFilterNet: Perceptually Motivated Real-Time Speech Enhancement*, Interspeech 2023

@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| legalgpt-dpo-round2-v6 (este) | 7B (base) + LoRA | 128k (base) | Consulta legal sin RAG | Apache 2.0 | HuggingFace (adaptador) |
-| Qwen2.5-7B-Instruct (base) | 7.610M | 128k | Chat general | Apache 2.0 | HuggingFace |
-| ChatLaw (modelo legal chino) | 13B | 4k | Consulta legal con RAG | No comercial | HuggingFace (proyecto) |
+| legalgpt-dpo-round2-v6 (este) | 7B (base) + LoRA | 128k (base) | Consulta legal sin RAG | Apache 2.0 | Hugging Face (adaptador) |
+| Qwen2.5-7B-Instruct (base) | 7.610M | 128k | Chat general | Apache 2.0 | Hugging Face |
+| ChatLaw (modelo legal chino) | 13B | 4k | Consulta legal con RAG | No comercial | Hugging Face (proyecto) |
 | LawGPT (proyecto similar) | 7B | No disponible | Asistente legal | Apache 2.0 | GitHub |
 
 La comparación directa con otros modelos legales no es posible sin datos de evaluación. Este adaptador se diferencia por su bajo coste de ajuste y su enfoque sin RAG, mientras que alternativas como ChatLaw integran recuperación de documentos externos. El modelo base Qwen2.5-7B-Instruct es el punto de partida, por lo que el rendimiento general en tareas no legales será similar al del base.
@@ -78,6 +78,6 @@ La comparación directa con otros modelos legales no es posible sin datos de eva
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lexiiiii/legalgpt-dpo-round2-v6
+- Repositorio Hugging Face: https://huggingface.co/Lexiiiii/legalgpt-dpo-round2-v6
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Proyecto LegalGPT (GitHub): https://github.com/czc0407/legalGPT

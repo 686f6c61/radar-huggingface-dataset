@@ -123,7 +123,7 @@ Segun el autor, el STRIX_LEAN con imatrix iguala la calidad del COHERENT estanda
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kingjones777/Agnes-3.0-Flash-Preview-MTP-ROCmFP4-imatrix-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/kingjones777/Agnes-3.0-Flash-Preview-MTP-ROCmFP4-imatrix-GGUF
 - Modelo base: https://huggingface.co/Agnes-AI/Agnes-3.0-Flash
 - Build estandar del mismo autor: https://huggingface.co/kingjones777/Agnes-3.0-Flash-Preview-MTP-ROCmFP4-GGUF
 - Fichero de matriz de importancia: `Agnes-3.0-Flash-Preview.imatrix`, sha256 `eb66b219d8bb057b78b933e5b78042fc47e028415d626690883c8c8f72707a09`

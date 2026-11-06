@@ -76,7 +76,7 @@ La comparativa se basa en datos públicos de los modelos oficiales. El fine-tune
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/moonhac/Gemma4-e4b-chlee-bat
+- Repositorio Hugging Face: https://huggingface.co/moonhac/Gemma4-e4b-chlee-bat
 - Unsloth (herramienta de fine-tuning y conversión): https://github.com/unslothai/unsloth
 - Página oficial de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Ficha de Gemma 4 E4B en gemma4.dev: https://gemma4.dev/models/gemma-4-e4b

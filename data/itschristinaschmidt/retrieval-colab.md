@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`itschristinaschmidt/retrieval-colab` es un repositorio de HuggingFace que contiene una implementacion minima y propia de una arquitectura etiquetada como **Efficientformer**, orientada a tareas de **retrieval** (recuperacion de informacion). Lo publica la usuaria `itschristinaschmidt` y su contenido principal es un script Python (`run.py`) con el modelo y un ejemplo ejecutable, acompanado de `config.json`, `training_args.json` y un unico checkpoint en `model.safetensors`.
+`itschristinaschmidt/retrieval-colab` es un repositorio de Hugging Face que contiene una implementacion minima y propia de una arquitectura etiquetada como **Efficientformer**, orientada a tareas de **retrieval** (recuperacion de informacion). Lo publica la usuaria `itschristinaschmidt` y su contenido principal es un script Python (`run.py`) con el modelo y un ejemplo ejecutable, acompanado de `config.json`, `training_args.json` y un unico checkpoint en `model.safetensors`.
 
 El dato mas relevante para evaluarlo es que **no es un modelo entrenado**: la propia model card lo describe como un "punto de partida reproducible" y afirma explicitamente que el checkpoint de `safetensors` es una inicializacion valida para *smoke tests*, no un checkpoint con benchmarks. El recuento real de parametros leido de los pesos es de **33.088 parametros** (unas 33 mil), un orden de magnitud propio de un prototipo de juguete y no de un modelo de produccion. El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
 
@@ -28,7 +28,7 @@ Su relevancia actual es, por tanto, acotada y de tipo metodologico: sirve como p
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es un **Efficientformer** de escala **xlarge** con atencion **multi-query**, fusion **bilineal**, activacion **swish** y normalizacion **groupnorm**. Se trata de una implementacion propia incluida en `run.py`, no de una exportacion de la familia EfficientFormer de Snap Research: la model card no establece ninguna relacion con implementaciones oficiales, y advierte que, al ser codigo custom, las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito antes de poder usarse. No se documenta el numero de capas, la dimension oculta, la resolucion de entrada ni el mecanismo exacto de recuperacion.
+La arquitectura declarada es un **Efficientformer** de escala **xlarge** con atencion **multi-query**, fusion **bilineal**, activacion **swish** y normalizacion **groupnorm**. Se trata de una implementacion propia incluida en `run.py`, no de una exportacion de la familia EfficientFormer de Snap Research: la model card no establece ninguna relacion con implementaciones oficiales, y advierte que, al ser codigo custom, las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito antes de poder usarse. No se documenta el numero de capas, la dimension oculta, la resolucion de entrada ni el mecanismo exacto de recuperacion.
 
 En cuanto al entrenamiento, **no hay evidencia de que se haya completado ninguno**. La tarjeta indica que la configuracion incluida usa adafactor con un schedule onecycle y aclara que son "valores de partida en el script, no evidencia de una ejecucion terminada". No se especifica numero de tokens, composicion del dataset, ni si hubo RLHF, DPO u otra fase de alineamiento. El `model.safetensors` se presenta como checkpoint de inicializacion, por lo que sus pesos no codifican conocimiento aprendido y cualquier salida del modelo, en su estado actual, es esencialmente aleatoria.
 
@@ -51,7 +51,7 @@ En cuanto al entrenamiento, **no hay evidencia de que se haya completado ninguno
 - Integracion en un harness de evaluacion tipo Flickr30k: montar el pipeline de metricas (recall@k) con la particion estandar y al menos tres semillas, tal como recomienda la propia tarjeta, para dejar preparado el banco de pruebas antes de disponer de un checkpoint entrenado.
 - Comparativa controlada de baselines: la model card insiste en exponer los baselines a los mismos datos, presupuesto de ajuste y semillas; este repositorio sirve como uno de esos brazos de comparacion siempre que se documente su capacidad.
 - Material didactico o de investigacion reproducible: estudiar la implementacion de atencion multi-query, fusion bilineal y normalizacion por grupos en un codigo de tamano manejable, con fines de aprendizaje o revision de arquitectura.
-- Verificacion de compatibilidad de herramientas: comprobar como se comportan librerias de carga y despliegue ante un modelo con codigo custom que no expone la API estandar de HuggingFace.
+- Verificacion de compatibilidad de herramientas: comprobar como se comportan librerias de carga y despliegue ante un modelo con codigo custom que no expone la API estandar de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -78,7 +78,7 @@ No es posible establecer una comparativa cuantitativa fiable: el modelo no tiene
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `itschristinaschmidt/retrieval-colab` | 33.088 | no disponible | sin benchmark publicado | MIT | HuggingFace, checkpoint de inicializacion |
+| `itschristinaschmidt/retrieval-colab` | 33.088 | no disponible | sin benchmark publicado | MIT | Hugging Face, checkpoint de inicializacion |
 | EfficientFormer (familia de Snap Research) | no disponible | no disponible | no disponible en la informacion aportada | no disponible | no disponible |
 | CLIP u otros modelos de retrieval texto-imagen | no disponible | no disponible | no disponible en la informacion aportada | no disponible | no disponible |
 
@@ -98,8 +98,8 @@ La unica conclusion defendible con estos datos es que este repositorio no compit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itschristinaschmidt/retrieval-colab
-- Perfil del autor en HuggingFace: https://huggingface.co/itschristinaschmidt
+- Modelo en Hugging Face: https://huggingface.co/itschristinaschmidt/retrieval-colab
+- Perfil del autor en Hugging Face: https://huggingface.co/itschristinaschmidt
 - Archivos incluidos en el repositorio: `run.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Resultados de busqueda web: no se han encontrado enlaces especificos sobre este modelo. Los resultados devueltos corresponden a recursos genericos no relacionados con el artefacto: la galeria de ejemplos de RedisVL (https://docs.redisvl.com/en/v0.28.0/examples/index.html), la pagina de Google Colab (https://colab.research.google.com/) y un tutorial sobre pipelines RAG con scikit-learn (https://machinelearningmastery.com/building-a-rag-pipeline-with-llm-embeddings-and-scikit-learn/).
 - Paper de referencia: no disponible. No se cita ninguna publicacion asociada a esta implementacion.

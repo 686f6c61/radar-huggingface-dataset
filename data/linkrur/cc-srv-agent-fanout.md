@@ -131,5 +131,5 @@ Como alternativas de despliegue sin datos comparativos publicados en esta inform
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LinkRur/cc-srv-agent-fanout
+- Repositorio en Hugging Face: https://huggingface.co/LinkRur/cc-srv-agent-fanout
 - No se han encontrado en la busqueda web enlaces relevantes al proyecto (paper, blog, repositorio de codigo, demo o documentacion adicional): la busqueda devolvio unicamente resultados no relacionados del servicio de seguimiento de paquetes de USPS.

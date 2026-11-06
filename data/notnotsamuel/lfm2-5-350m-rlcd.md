@@ -86,8 +86,8 @@ Datos adicionales aportados por el autor:
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| notnotsamuel/LFM2.5-350M-RLCD | 354.483.968 | no disponible | Inferencia estructurada sobre pesos LFM2.5-350M | lfm1.0 | HuggingFace, 228 descargas, 17 likes |
-| LiquidAI/LFM2.5-350M | 354.483.968 (mismos pesos) | no disponible | Modelo base generativo de proposito general | lfm1.0 | HuggingFace, repositorio oficial de Liquid AI |
+| notnotsamuel/LFM2.5-350M-RLCD | 354.483.968 | no disponible | Inferencia estructurada sobre pesos LFM2.5-350M | lfm1.0 | Hugging Face, 228 descargas, 17 likes |
+| LiquidAI/LFM2.5-350M | 354.483.968 (mismos pesos) | no disponible | Modelo base generativo de proposito general | lfm1.0 | Hugging Face, repositorio oficial de Liquid AI |
 | Otros modelos pequenos de la misma categoria (por ejemplo, alternativas de ~350-500 M) | no disponible | no disponible | Generacion de texto general | no disponible | no disponible |
 
 El comparador directo y unico documentado es el modelo base: RLCD usa exactamente los mismos pesos, tokenizador y revision, por lo que cualquier diferencia de calidad observada se debe al metodo de decodificacion y no al modelo. La busqueda web realizada no devolvio resultados tecnicos relevantes sobre este modelo ni sobre alternativas comparables; los unicos resultados obtenidos fueron paginas de comercio electronico sin relacion con el tema.
@@ -110,7 +110,7 @@ El comparador directo y unico documentado es el modelo base: RLCD usa exactament
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/notnotsamuel/LFM2.5-350M-RLCD
+- Modelo en Hugging Face: https://huggingface.co/notnotsamuel/LFM2.5-350M-RLCD
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Revision fijada del modelo base: 9e6c6ccf47cd318696e137d381a7ded8fe4df09f
 - Licencia lfm1.0: https://huggingface.co/LiquidAI/LFM2.5-350M/blob/9e6c6ccf47cd318696e137d381a7ded8fe4df09f/LICENSE

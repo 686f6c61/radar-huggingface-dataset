@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tohirju/sl-cinder2` es un repositorio alojado en HuggingFace por el usuario Tohirju, con un tamaño de repositorio de 37.0 GB y acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargar los pesos. No se dispone de información pública sobre la arquitectura, el número de parámetros, el pipeline de uso, los idiomas soportados ni las capacidades del modelo. La licencia se indica como "other", sin detalles adicionales. Dado que no hay datos técnicos publicados en la ficha de HuggingFace, la relevancia y el rendimiento del modelo no pueden evaluarse en este momento.
+El modelo `Tohirju/sl-cinder2` es un repositorio alojado en Hugging Face por el usuario Tohirju, con un tamaño de repositorio de 37.0 GB y acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargar los pesos. No se dispone de información pública sobre la arquitectura, el número de parámetros, el pipeline de uso, los idiomas soportados ni las capacidades del modelo. La licencia se indica como "other", sin detalles adicionales. Dado que no hay datos técnicos publicados en la ficha de Hugging Face, la relevancia y el rendimiento del modelo no pueden evaluarse en este momento.
 
 El repositorio fue creado el 7 de agosto de 2026 y actualizado el 14 de agosto de 2026, lo que sugiere que se trata de un lanzamiento reciente, pero sin documentación técnica accesible. La ausencia de descargas y likes también indica que el modelo no ha sido ampliamente adoptado o evaluado por la comunidad. Para cualquier uso práctico, se recomienda esperar a que el autor publique información detallada sobre arquitectura, entrenamiento y licencia.
 
@@ -25,7 +25,7 @@ No se ha publicado información sobre la arquitectura del modelo, los datos de e
 
 ## Capacidades
 
-No hay información disponible sobre las capacidades del modelo. No se conocen sus habilidades en generación de texto, razonamiento, código, matemáticas, visión, tool calling, soporte para agentes, capacidades multilingües o modos especiales de pensamiento. La ficha de HuggingFace no incluye ejemplos de uso, documentación técnica ni demos.
+No hay información disponible sobre las capacidades del modelo. No se conocen sus habilidades en generación de texto, razonamiento, código, matemáticas, visión, tool calling, soporte para agentes, capacidades multilingües o modos especiales de pensamiento. La ficha de Hugging Face no incluye ejemplos de uso, documentación técnica ni demos.
 
 ## Casos de uso
 
@@ -45,7 +45,7 @@ No disponible. No se conocen modelos comparables de la misma categoría, ya que 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): los usuarios deben aceptar condiciones en HuggingFace antes de descargar el modelo, lo que puede limitar su uso inmediato.
+- Acceso restringido (gated): los usuarios deben aceptar condiciones en Hugging Face antes de descargar el modelo, lo que puede limitar su uso inmediato.
 - Licencia "other": no se especifican los términos exactos, por lo que no se puede confirmar si permite uso comercial, modificación o redistribución.
 - Sin documentación técnica: no hay información sobre sesgos, alucinaciones, limitaciones de contexto o idioma.
 - Sin datos de rendimiento: no se pueden evaluar riesgos de producción ni comparar con alternativas.
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables de la misma categoría, ya que 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Tohirju/sl-cinder2)
+- [Repositorio en Hugging Face](https://huggingface.co/Tohirju/sl-cinder2)

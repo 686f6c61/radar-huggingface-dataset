@@ -4,7 +4,7 @@
 
 d1-3B-CoreAI-ANE es una conversión del modelo de decisión LiquidAI/d1-3B (3B parámetros) preparada por el usuario wegotomars para ejecutarse sobre la Apple Neural Engine (ANE) mediante Core AI, el stack de inferencia en dispositivo de Apple. No es un modelo nuevo entrenado desde cero, sino un artefacto de despliegue: tokenización, embeddings y lectura de opciones se ejecutan en CPU, mientras que el backbone se delega a la ANE. El runtime asociado es tinkerbox-ane.
 
-El modelo pertenece a la categoría de modelos de decisión (tags: decision, classification, calibration, system-one) en lugar de la generación de texto abierta. Su API expone una función `system_one(texto, opciones)` que devuelve la opción seleccionada junto con su probabilidad, lo que lo sitúa como clasificador/selector con salida calibrada. El pipeline declarado en HuggingFace es `text-classification` y la librería, `coreai`.
+El modelo pertenece a la categoría de modelos de decisión (tags: decision, classification, calibration, system-one) en lugar de la generación de texto abierta. Su API expone una función `system_one(texto, opciones)` que devuelve la opción seleccionada junto con su probabilidad, lo que lo sitúa como clasificador/selector con salida calibrada. El pipeline declarado en Hugging Face es `text-classification` y la librería, `coreai`.
 
 La relevancia actual viene de su enfoque de despliegue: pesos en FP16 ejecutados íntegramente en la ANE de Apple Silicon, con una ventana de contexto de 32.768 tokens renderizados y nueve capacidades de caché que comparten un único conjunto de pesos. El autor reporta una concordancia del 100% en la respuesta principal frente al modelo FP32 oficial sobre 204 casos, con una deriva media de probabilidad de 0,000655.
 
@@ -117,7 +117,7 @@ La única comparación con datos concretos disponible es la del propio autor fre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wegotomars/d1-3B-CoreAI-ANE
+- Modelo en Hugging Face: https://huggingface.co/wegotomars/d1-3B-CoreAI-ANE
 - Modelo base: https://huggingface.co/LiquidAI/d1-3B
 - Core AI (Apple Developer): https://developer.apple.com/core-ai/
 - Documentación de licencia en el repositorio: LICENSE

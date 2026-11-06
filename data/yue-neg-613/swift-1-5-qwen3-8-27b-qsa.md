@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Swift-1.5-Qwen3.8-27B-QSA es un modelo derivado de la familia Qwen3.8 de 27.800 millones de parametros, publicado por el usuario yue-neg-613 en HuggingFace. Se trata de un experimento tecnico de sustitucion arquitectonica: reemplaza las capas de atencion global (tradicionalmente Grouped Query Attention, GQA) por QSA (Qwen Sparse Attention), el mecanismo empleado en Qwen3.8-Flash-Next. El modelo parte del checkpoint ukisai/Swift-1.5-Qwen3.8-27B-GGUF y conserva el backbone multimodal completo, incluido el codificador de vision, los tensores MTP, el tokenizer, el processor y la plantilla de chat.
+Swift-1.5-Qwen3.8-27B-QSA es un modelo derivado de la familia Qwen3.8 de 27.800 millones de parametros, publicado por el usuario yue-neg-613 en Hugging Face. Se trata de un experimento tecnico de sustitucion arquitectonica: reemplaza las capas de atencion global (tradicionalmente Grouped Query Attention, GQA) por QSA (Qwen Sparse Attention), el mecanismo empleado en Qwen3.8-Flash-Next. El modelo parte del checkpoint ukisai/Swift-1.5-Qwen3.8-27B-GGUF y conserva el backbone multimodal completo, incluido el codificador de vision, los tensores MTP, el tokenizer, el processor y la plantilla de chat.
 
 La relevancia de esta publicacion es acotada y de caracter exploratorio. El propio autor indica explicitamente que el modelo se creo para verificar la tecnologia de sustitucion QSA y que no esta pensado para inferencia en entornos reales. No se declara ninguna mejora de velocidad: el runtime incluido usa una mascara booleana densa como referencia de correccion, no un kernel disperso optimizado.
 
-El modelo no dispone de pipeline declarado, licencia explicita en los metadatos de HuggingFace ni idiomas listados, y cuenta con cero descargas y cero likes en el momento de la consulta. Su interes es, por tanto, el de una prueba de concepto reproducible para investigadores que quieran estudiar la viabilidad de sustituir GQA por atencion dispersa en un transformer multimodal de ~28B.
+El modelo no dispone de pipeline declarado, licencia explicita en los metadatos de Hugging Face ni idiomas listados, y cuenta con cero descargas y cero likes en el momento de la consulta. Su interes es, por tanto, el de una prueba de concepto reproducible para investigadores que quieran estudiar la viabilidad de sustituir GQA por atencion dispersa en un transformer multimodal de ~28B.
 
 ## Especificaciones tecnicas
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Atencion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Swift-1.5-Qwen3.8-27B-QSA (este) | ~27,8B | no disponible | QSA en texto, densa en multimodal | Swift Open License v1.0 | HuggingFace, safetensors BF16 |
-| ukisai/Swift-1.5-Qwen3.8-27B-GGUF (base) | ~27,8B | no disponible | GQA original | Swift Open License v1.0 | HuggingFace, GGUF |
-| higa2515/Qwen3.8-27B-QSA-BF16 (referencia metodologica) | ~27,8B | no disponible | QSA | no disponible | HuggingFace, BF16 |
+| Swift-1.5-Qwen3.8-27B-QSA (este) | ~27,8B | no disponible | QSA en texto, densa en multimodal | Swift Open License v1.0 | Hugging Face, safetensors BF16 |
+| ukisai/Swift-1.5-Qwen3.8-27B-GGUF (base) | ~27,8B | no disponible | GQA original | Swift Open License v1.0 | Hugging Face, GGUF |
+| higa2515/Qwen3.8-27B-QSA-BF16 (referencia metodologica) | ~27,8B | no disponible | QSA | no disponible | Hugging Face, BF16 |
 | Qwen3.8-Flash-Next (origen del mecanismo QSA) | no disponible | no disponible | QSA | no disponible | no disponible |
 
 La comparativa se limita a los modelos citados en la model card; no se dispone de datos de rendimiento para establecer comparaciones cuantitativas.
@@ -78,7 +78,7 @@ La comparativa se limita a los modelos citados en la model card; no se dispone d
 - Sin mejoras de rendimiento: el runtime usa una mascara booleana densa como referencia de correccion; no se reclama ningun speedup y no hay kernel disperso optimizado.
 - Funcionalidades no implementadas: rollback especulativo, ejecucion MTP, caches estaticas o cuantizadas y continuous batching no estan soportados en el runtime publicado.
 - Dependencia de runtime personalizado: requiere una version modificada de llama.cpp o el stack de `transformers` con `trust_remote_code=True`, lo que incrementa el riesgo de seguridad y mantenimiento.
-- Licencia restrictiva para uso comercial: la Swift Open License v1.0 obliga a consultar con ukisAI para uso comercial; los metadatos de HuggingFace no declaran licencia explicita.
+- Licencia restrictiva para uso comercial: la Swift Open License v1.0 obliga a consultar con ukisAI para uso comercial; los metadatos de Hugging Face no declaran licencia explicita.
 - Idiomas no documentados: no se listan idiomas soportados, por lo que el comportamiento multilingue no esta garantizado ni verificado.
 - Riesgo de alucinacion y sesgos: no evaluado en la informacion disponible; se heredan los del modelo base sin analisis adicional.
 - Cero adopcion: 0 descargas y 0 likes en el momento de la consulta, sin senales de validacion por parte de la comunidad.
@@ -87,7 +87,7 @@ La comparativa se limita a los modelos citados en la model card; no se dispone d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yue-neg-613/Swift-1.5-Qwen3.8-27b-QSA
+- Repositorio Hugging Face: https://huggingface.co/yue-neg-613/Swift-1.5-Qwen3.8-27b-QSA
 - Modelo base (GGUF): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GGUF
 - Metodologia de referencia QSA: https://huggingface.co/higa2515/Qwen3.8-27B-QSA-BF16
 - Runtime llama.cpp personalizado: https://github.com/kuraneko1/Qwen3.8-27B-QSA-llama.cpp

@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Cuantizacion | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| nerualdreming/MOSS-Music-8B-Instruct-GGUF (esta ficha) | 8.190.735.360 | no disponible | Q4_K_M | 5,2 GB | apache-2.0 | HuggingFace, cuantizacion no oficial |
-| scragnog/MOSS-Music-8B-Instruct-GGUF | 8.190.735.360 | no disponible | f16 y q8_0 | f16: 16,4 GB; q8_0: no disponible | apache-2.0 | HuggingFace, cuantizacion no oficial; incluye la torre de audio f16 |
-| OpenMOSS-Team/MOSS-Music-8B-Instruct (modelo base) | 8.190.735.360 | no disponible | pesos originales (safetensors) | no disponible | apache-2.0 | HuggingFace, modelo oficial |
+| nerualdreming/MOSS-Music-8B-Instruct-GGUF (esta ficha) | 8.190.735.360 | no disponible | Q4_K_M | 5,2 GB | apache-2.0 | Hugging Face, cuantizacion no oficial |
+| scragnog/MOSS-Music-8B-Instruct-GGUF | 8.190.735.360 | no disponible | f16 y q8_0 | f16: 16,4 GB; q8_0: no disponible | apache-2.0 | Hugging Face, cuantizacion no oficial; incluye la torre de audio f16 |
+| OpenMOSS-Team/MOSS-Music-8B-Instruct (modelo base) | 8.190.735.360 | no disponible | pesos originales (safetensors) | no disponible | apache-2.0 | Hugging Face, modelo oficial |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento con alternativas de otros desarrolladores.
 

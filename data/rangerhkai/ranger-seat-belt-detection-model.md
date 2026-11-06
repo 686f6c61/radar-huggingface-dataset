@@ -6,7 +6,7 @@ El **RANGER™ Seat Belt Detection Model** es un modelo de detección de objetos
 
 Se trata de un modelo de visión por computador, no un modelo de lenguaje. Su relevancia radica en que aborda un problema muy concreto del sector de la construcción: la verificación visual del uso de arneses y cinturones de seguridad por parte de los trabajadores en altura o en zonas de riesgo. La compañía lo libera bajo una licencia de código abierto con restricción estricta de uso no comercial, orientada a instituciones académicas, equipos de investigación y el sector de la construcción de Hong Kong.
 
-La ficha publicada en HuggingFace no incluye información técnica detallada: no se especifican parámetros, arquitectura exacta del backbone YOLO, datos de entrenamiento, ni resultados de benchmarks. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que los pesos del modelo podrían no estar aún subidos o que la ficha está incompleta. A continuación se detalla toda la información disponible y se marcan explícitamente los datos no disponibles.
+La ficha publicada en Hugging Face no incluye información técnica detallada: no se especifican parámetros, arquitectura exacta del backbone YOLO, datos de entrenamiento, ni resultados de benchmarks. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que los pesos del modelo podrían no estar aún subidos o que la ficha está incompleta. A continuación se detalla toda la información disponible y se marcan explícitamente los datos no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -48,7 +48,7 @@ No hay información sobre técnicas de optimización post-entrenamiento como pru
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de mAP (mean Average Precision), IoU, FPS, ni comparativas con otros detectores de EPIs. La ficha de HuggingFace no incluye métricas de rendimiento ni enlaces a papers o informes técnicos.
+No se han publicado resultados de benchmarks en la información disponible. No hay datos de mAP (mean Average Precision), IoU, FPS, ni comparativas con otros detectores de EPIs. La ficha de Hugging Face no incluye métricas de rendimiento ni enlaces a papers o informes técnicos.
 
 ## Requisitos de hardware
 
@@ -74,7 +74,7 @@ Sin embargo, sin conocer la versión exacta de YOLO ni los datos de entrenamient
 
 - **Licencia restrictiva**: el modelo solo puede usarse con fines no comerciales. Cualquier uso en productos, servicios o proyectos de pago está prohibido sin licencia comercial expresa. Esto limita seriamente su adopción en entornos empresariales.
 - **Datos técnicos incompletos**: no se publican parámetros, arquitectura exacta, dataset de entrenamiento ni métricas de rendimiento, lo que dificulta la evaluación objetiva del modelo.
-- **Sin pesos disponibles**: el repositorio de HuggingFace tiene un tamaño de 0.0 GB, lo que indica que los pesos del modelo no están subidos. El modelo no puede descargarse ni utilizarse actualmente.
+- **Sin pesos disponibles**: el repositorio de Hugging Face tiene un tamaño de 0.0 GB, lo que indica que los pesos del modelo no están subidos. El modelo no puede descargarse ni utilizarse actualmente.
 - **Alcance geográfico limitado**: el modelo está pensado para el sector de la construcción de Hong Kong, por lo que su rendimiento en otros entornos (clima, indumentaria, normativas diferentes) puede degradarse.
 - **Sesgo potencial**: al ser un modelo entrenado probablemente con datos locales, puede tener sesgos hacia ciertos tipos de arneses, colores de chalecos o condiciones de iluminación típicas de Hong Kong.
 - **Riesgo de falsos negativos**: en condiciones de baja iluminación, oclusión o ángulos de cámara desfavorables, el modelo puede no detectar cinturones de seguridad, generando falsas alarmas de seguridad.
@@ -82,6 +82,6 @@ Sin embargo, sin conocer la versión exacta de YOLO ni los datos de entrenamient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rangerhkai/ranger-seat-belt-detection-model
+- Modelo en Hugging Face: https://huggingface.co/rangerhkai/ranger-seat-belt-detection-model
 - Web de RANGER™ CONSTRUCTION INTELLIGENCE: https://ranger4s.com/
 - Contacto comercial: business@ranger4s.com

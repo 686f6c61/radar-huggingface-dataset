@@ -30,7 +30,7 @@ La relevancia actual del repositorio es eminentemente práctica: facilita el acc
 
 No se dispone de informacion publicada sobre la arquitectura interna del modelo Prentis-EQ-2 en la documentacion consultada. El recuento de parametros (460,7 millones) indica un modelo de escala pequena, compatible con despliegue local. No consta si emplea un transformer clasico, una variante con atencion lineal, una arquitectura hibrida SSM o cualquier otro diseno, ni si recurre a parametros activos condicionales (MoE).
 
-Tampoco hay datos disponibles sobre el proceso de entrenamiento: numero de tokens, composicion del corpus, uso de RLHF, DPO u otras tecnicas de alineacion, ni innovaciones tecnicas asociadas. La unica informacion contextual relevante procede del laboratorio matriz, Prentis, que se define como un laboratorio de investigacion especializado en modelos de uso de ordenador capaces de interpretar pantallas y controlar software en multiples plataformas. Las cuantizaciones de este repositorio se han generado con llama.cpp y el pipeline estandar de mradermacher (quantize_version 2, conversion desde HuggingFace), sin modificaciones arquitectonicas adicionales.
+Tampoco hay datos disponibles sobre el proceso de entrenamiento: numero de tokens, composicion del corpus, uso de RLHF, DPO u otras tecnicas de alineacion, ni innovaciones tecnicas asociadas. La unica informacion contextual relevante procede del laboratorio matriz, Prentis, que se define como un laboratorio de investigacion especializado en modelos de uso de ordenador capaces de interpretar pantallas y controlar software en multiples plataformas. Las cuantizaciones de este repositorio se han generado con llama.cpp y el pipeline estandar de mradermacher (quantize_version 2, conversion desde Hugging Face), sin modificaciones arquitectonicas adicionales.
 
 ## Capacidades
 
@@ -104,7 +104,7 @@ Nota: los datos de los modelos alternativos corresponden a informacion publica g
 
 ## Enlaces
 
-- Repositorio HuggingFace analizado: https://huggingface.co/mradermacher/Prentis-EQ-2-GGUF
+- Repositorio Hugging Face analizado: https://huggingface.co/mradermacher/Prentis-EQ-2-GGUF
 - Modelo base: https://huggingface.co/PrentisAI/Prentis-EQ-2
 - Perfil del cuantizador mradermacher: https://huggingface.co/mradermacher
 - Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

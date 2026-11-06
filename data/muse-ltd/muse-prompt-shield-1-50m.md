@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Al tratarse de un modelo de 50 millones de parametros, la inferencia puede ejecutarse en CPU sin problemas, con una latencia del orden de milisegundos por muestra en hardware moderno.
 - En GPU, cabe en cualquier tarjeta con al menos 1 GB de VRAM (por ejemplo, NVIDIA GTX 1050 Ti, RTX 2060, etc.). El peso en fp32 ocupa aproximadamente 200 MB.
 - No se han publicado requisitos especificos de VRAM ni latencia por parte del autor.
-- Se puede desplegar con la libreria Transformers de HuggingFace, tanto en modo pipeline como con el API de bajo nivel. Tambien es compatible con endpoints de HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`).
+- Se puede desplegar con la libreria Transformers de Hugging Face, tanto en modo pipeline como con el API de bajo nivel. Tambien es compatible con endpoints de Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`).
 - Para entornos de produccion con alto trafico, se recomienda usar soluciones como vLLM o TGI, aunque no se ha verificado su compatibilidad explicita; el modelo es un encoder pequeno y puede servirse facilmente con cualquier framework de clasificacion.
 
 ## Comparativa con modelos similares
@@ -78,6 +78,6 @@ No se dispone de resultados comparativos de rendimiento entre estos modelos en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Muse-Ltd/Muse-Prompt-Shield-1-50M
+- Modelo en Hugging Face: https://huggingface.co/Muse-Ltd/Muse-Prompt-Shield-1-50M
 - Modelo base DeBERTa-v3-xsmall: https://huggingface.co/microsoft/deberta-v3-xsmall
 - Referencia a Llama Prompt Guard 2 (mencionado en la model card): https://huggingface.co/meta-llama/Llama-Prompt-Guard-2-86M (no verificado, se cita como referencia del mismo base)

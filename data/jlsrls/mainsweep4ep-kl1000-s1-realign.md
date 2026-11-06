@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mainsweep4ep-kl1000-s1-realign es un ajuste fino supervisado (SFT) del modelo unsloth/Llama-3.2-1B-Instruct, publicado por el usuario jlsrls en HuggingFace. Se trata de un modelo derivado de 1B parametros (aproximadamente 1.240 millones en el modelo base) orientado a generacion de texto conversacional, no de un modelo entrenado desde cero. El repositorio ocupa 1,7 GB y contiene pesos en formato safetensors compatibles con la libreria transformers.
+mainsweep4ep-kl1000-s1-realign es un ajuste fino supervisado (SFT) del modelo unsloth/Llama-3.2-1B-Instruct, publicado por el usuario jlsrls en Hugging Face. Se trata de un modelo derivado de 1B parametros (aproximadamente 1.240 millones en el modelo base) orientado a generacion de texto conversacional, no de un modelo entrenado desde cero. El repositorio ocupa 1,7 GB y contiene pesos en formato safetensors compatibles con la libreria transformers.
 
 El problema que aborda es acotado: por el nombre del artefacto (mainsweep4ep, kl1000, s1, realign) y por el proyecto de Weights & Biases asociado (clarifying-em), parece tratarse de un experimento de investigacion sobre realineamiento de respuestas o generacion de preguntas aclaratorias, probablemente dentro de una barrido de hiperparametros con penalizacion KL. No hay model card que documente el dataset, el objetivo de entrenamiento ni las metricas obtenidas, por lo que su relevancia practica es limitada: es un checkpoint de experimento, no un modelo listo para produccion.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mainsweep4ep-kl1000-s1-realign | ~1,24B | 131.072 (heredado del base; no confirmado) | Fine-tune SFT de Llama 3.2 1B | no disponible | Publicado en HuggingFace, 0 descargas |
+| mainsweep4ep-kl1000-s1-realign | ~1,24B | 131.072 (heredado del base; no confirmado) | Fine-tune SFT de Llama 3.2 1B | no disponible | Publicado en Hugging Face, 0 descargas |
 | Llama-3.2-1B-Instruct | 1,24B | 131.072 | Instruct oficial | Llama 3.2 Community License | Ampliamente disponible |
 | Qwen2.5-1.5B-Instruct | ~1,54B | 32.768 | Instruct oficial | Apache 2.0 | Ampliamente disponible |
 | SmolLM2-1.7B-Instruct | ~1,7B | 8.192 | Instruct oficial | Apache 2.0 | Ampliamente disponible |
@@ -86,7 +86,7 @@ Frente a estas alternativas, el modelo aqui descrito no aporta ventajas document
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/mainsweep4ep-kl1000-s1-realign
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/mainsweep4ep-kl1000-s1-realign
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/xc7er5ej
 - Repositorio de TRL: https://github.com/huggingface/trl

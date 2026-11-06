@@ -32,7 +32,7 @@ No se documenta en la informacion disponible cuantos tokens se usaron para el en
 ## Capacidades
 
 - Generacion de texto conversacional: responde a preguntas simples en ingles y ruso segun las pruebas internas.
-- Pipeline `image-text-to-text`: el modelo esta registrado con el task `image-text-to-text`, lo que indica soporte multimodal en el pipeline de HuggingFace, aunque no se ofrecen ejemplos ni datos de rendimiento en vision.
+- Pipeline `image-text-to-text`: el modelo esta registrado con el task `image-text-to-text`, lo que indica soporte multimodal en el pipeline de Hugging Face, aunque no se ofrecen ejemplos ni datos de rendimiento en vision.
 - Evaluacion multilingue acotada: las pruebas de la model card cubren preguntas individuales y dialogos en ingles (`en_single`, `en_dialog`) y ruso (`ru_single`, `ru_dialog`).
 - Sin datos verificados sobre tool calling, function calling, soporte de agentes o razonamiento multi-paso.
 - No se documentan capacidades especiales como modo de pensamiento o audio.
@@ -40,11 +40,11 @@ No se documenta en la informacion disponible cuantos tokens se usaron para el en
 ## Casos de uso
 
 - Investigacion en recuperacion de modelos: el checkpoint permite estudiar como una operacion de reparacion de pesos afecta a la calidad de un modelo GLM-5.3 tiny en tareas de generacion en ingles y ruso. Las metricas internas de `complete_original_mini_set` sirven como referencia para comparar el estado antes y despues de la reparacion.
-- Depuracion de pipelines de finetuning: al ser un artefacto intermedio, es util para verificar que la descarga desde HuggingFace y la recarga de pesos funcionan correctamente en un entorno aislado, usando el helper `load_repaired.py` y comprobando el contenido de `reload_verification.json`.
+- Depuracion de pipelines de finetuning: al ser un artefacto intermedio, es util para verificar que la descarga desde Hugging Face y la recarga de pesos funcionan correctamente en un entorno aislado, usando el helper `load_repaired.py` y comprobando el contenido de `reload_verification.json`.
 - Pruebas de precision mixta BF16/FP32: el checkpoint permite experimentar como el casting de parametros afecta la calidad de las respuestas, ya que la model card advierte que `from_pretrained(dtype="auto")` puede degradar los pesos aprendidos.
 - Validacion de integridad de serializacion: sirve para comprobar que los pesos en safetensors se deserializan correctamente tras un proceso de `snapshot_download()`, lo que es relevante en pipelines de entrenamiento distribuido o de recuperacion automatica.
 - Evaluacion de regresiones en habilidades multilingues: las pruebas internas muestran que la reparacion mejora las preguntas individuales en ingles pero degrada los dialogos en ruso. Este escenario es util para investigar como los cambios en capas finales afectan a distintas tareas linguisticas.
-- Prototipado multimodal de bajo riesgo: aunque no hay datos publicos de rendimiento en vision, el modelo esta etiquetado como `image-text-to-text` y puede cargarse en un entorno de desarrollo para probar el pipeline de HuggingFace con entradas de imagen y texto, siempre que se asuma que es experimental.
+- Prototipado multimodal de bajo riesgo: aunque no hay datos publicos de rendimiento en vision, el modelo esta etiquetado como `image-text-to-text` y puede cargarse en un entorno de desarrollo para probar el pipeline de Hugging Face con entradas de imagen y texto, siempre que se asuma que es experimental.
 
 ## Benchmarks y rendimiento
 
@@ -96,6 +96,6 @@ No se dispone de una comparativa solida. El modelo es un checkpoint de depuracio
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/imvladikon/ling-glm53-repair-debug-20260908-121538
-- HuggingFace del modelo base: https://huggingface.co/imvladikon/Ling-3.0-tiny-GLM-5.3-Flash-surgery
+- Hugging Face del modelo: https://huggingface.co/imvladikon/ling-glm53-repair-debug-20260908-121538
+- Hugging Face del modelo base: https://huggingface.co/imvladikon/Ling-3.0-tiny-GLM-5.3-Flash-surgery
 - No se han encontrado papers, blogs o demos adicionales en la busqueda web.

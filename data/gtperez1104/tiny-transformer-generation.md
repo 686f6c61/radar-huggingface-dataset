@@ -69,14 +69,14 @@ La comparación es limitada porque este modelo no está entrenado. Frente a nano
 - El checkpoint incluido **no está entrenado**: es una inicialización aleatoria válida solo para pruebas de humo. No debe usarse para ninguna tarea real de generación.
 - No se ha auditado el modelo para robustez, equidad ni transferencia de dominio, como advierte el propio autor.
 - Riesgo de alucinación: irrelevante en este estado, pero si se entrena, el riesgo será el habitual en modelos pequeños.
-- La implementación es personalizada: las APIs genéricas de HuggingFace no cargarán el modelo sin un adaptador explícito.
+- La implementación es personalizada: las APIs genéricas de Hugging Face no cargarán el modelo sin un adaptador explícito.
 - No hay datos sobre idiomas soportados, longitud de contexto ni rendimiento.
 - La licencia Apache 2.0 permite uso comercial, pero el autor recomienda revisar los términos de los datos externos si se usan para entrenar.
 - Cualquier resultado futuro de un checkpoint entrenado debe documentarse por separado de los valores por defecto del repositorio.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Gtperez1104/tiny-transformer-generation
+- Repositorio Hugging Face: https://huggingface.co/Gtperez1104/tiny-transformer-generation
 - Implementación de referencia Tiny Transformer (avvorstenbosch): https://github.com/avvorstenbosch/tinyTransformer
 - Tiny Transformer educativo (skolouri): https://github.com/skolouri/TinyTransformer
 - Tutorial de Tiny Transformer desde cero: https://buildml.substack.com/p/building-a-tiny-transformer-from

@@ -4,7 +4,7 @@
 
 d3-turbo es un modelo de decisión multimodal de 26.090 millones de parámetros (incluido un encoder de visión de 0,46B) desarrollado por el equipo de vLLM Semantic Router. No es un modelo generativo: recibe una entrada —texto, JSON, y opcionalmente imágenes y vídeos— junto con una batería de preguntas y devuelve, sin generar texto, una probabilidad para cada respuesta posible. Los tipos de decisión soportados son elección entre opciones, sí/no, puntuación en escala, caja delimitadora sobre imagen o fotograma de vídeo, y seguimiento (track) a lo largo de un clip completo.
 
-Se trata de la versión mejorada de d3 dentro de la familia Decision 3.0, publicada en HuggingFace en octubre de 2026 bajo licencia Apache-2.0. Su propuesta técnica es el "state once": lee la entrada una sola vez por petición y responde a todas las preguntas sobre ella, frente a d3-flash, que la relee para cada pregunta. Eso le permite pasar de 302 ms con una pregunta a 2,12 s con 255 sobre la misma imagen, mientras que d3-flash escala de 154 ms a 32,94 s (15,5 veces más lento en el extremo alto).
+Se trata de la versión mejorada de d3 dentro de la familia Decision 3.0, publicada en Hugging Face en octubre de 2026 bajo licencia Apache-2.0. Su propuesta técnica es el "state once": lee la entrada una sola vez por petición y responde a todas las preguntas sobre ella, frente a d3-flash, que la relee para cada pregunta. Eso le permite pasar de 302 ms con una pregunta a 2,12 s con 255 sobre la misma imagen, mientras que d3-flash escala de 154 ms a 32,94 s (15,5 veces más lento en el extremo alto).
 
 Es relevante porque cubre un hueco poco atendido: la clasificación y localización zero-shot de baja latencia dentro de pipelines de enrutamiento semántico y agentes, donde no hace falta generar lenguaje sino tomar decisiones calibradas con confianza explícita. El autor declara 70,2 en el Jev Decision Index de texto (+4,0 sobre d3) y 72,9 en la variante de visión (+1,7), si bien son estimaciones propias y no resultados de un leaderboard oficial.
 
@@ -17,7 +17,7 @@ Es relevante porque cubre un hueco poco atendido: la clasificación y localizaci
 | Parámetros activos | No disponible (no se documenta como modelo MoE) |
 | Longitud de contexto | 32.768 tokens por pregunta por defecto; hasta 131.072 tokens por pregunta con `long_context=True` |
 | Tipos de cuantización | No disponible. Solo se publican pesos `safetensors`; el autor no documenta GGUF, AWQ, GPTQ ni FP8 |
-| Idiomas soportados | No disponible (los metadatos de HuggingFace no declaran lista de idiomas) |
+| Idiomas soportados | No disponible (los metadatos de Hugging Face no declaran lista de idiomas) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | `safetensors` con código propio (`trust_remote_code=True`); repositorio de 104,4 GB; requiere `transformers==5.17.0` |
 
@@ -79,7 +79,7 @@ No se han publicado resultados en benchmarks estándar de la industria (MMLU, Hu
 
 | Modelo | Parámetros | Contexto | Jev Decision Index (texto / visión) | Latencia con 255 preguntas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| d3-turbo | 26,09B (0,46B visión) | 32.768 por defecto; 131.072 con `long_context` | 70,2 / 72,9 | 2,12 s | Apache-2.0 | HuggingFace, Space y API gratuita |
+| d3-turbo | 26,09B (0,46B visión) | 32.768 por defecto; 131.072 con `long_context` | 70,2 / 72,9 | 2,12 s | Apache-2.0 | Hugging Face, Space y API gratuita |
 | d3 | No disponible | No disponible | 66,3 / 71,3 | No disponible | No disponible | Mismo proyecto |
 | d3-flash | No disponible | No disponible | No disponible | 32,94 s (15,5× más lento) | No disponible | Mismo proyecto |
 
@@ -101,7 +101,7 @@ No se han identificado en la información disponible modelos de decisión multim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-sr/d3-turbo
+- Modelo en Hugging Face: https://huggingface.co/vllm-sr/d3-turbo
 - Space oficial: https://huggingface.co/spaces/vllm-sr/d3-turbo
 - API gratuita de demostración: https://decision.vllm-sr.ai
 - Repositorio del proyecto vLLM Semantic Router: https://github.com/vllm-project/semantic-router

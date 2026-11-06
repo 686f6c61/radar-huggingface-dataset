@@ -78,5 +78,5 @@ No se dispone de datos comparativos con otros modelos en la informacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HuggingAnalist/TinyAmlGpt-Base-10kn
+- Modelo en Hugging Face: https://huggingface.co/HuggingAnalist/TinyAmlGpt-Base-10kn
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories

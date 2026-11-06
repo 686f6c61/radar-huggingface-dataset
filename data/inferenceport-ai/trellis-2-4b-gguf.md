@@ -70,7 +70,7 @@ No disponible. No se han identificado en la informacion proporcionada otros mode
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversion GGUF: https://huggingface.co/inferenceport-ai/TRELLIS.2-4B-GGUF
+- Repositorio Hugging Face de la conversion GGUF: https://huggingface.co/inferenceport-ai/TRELLIS.2-4B-GGUF
 - Modelo base original: https://huggingface.co/microsoft/TRELLIS.2-4B
 - Pagina oficial del proyecto: https://microsoft.github.io/TRELLIS.2/
 - Repositorio GitHub de Microsoft: https://github.com/microsoft/TRELLIS.2

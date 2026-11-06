@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`schmidt2842/random-retrieval` es un repositorio de HuggingFace que contiene una implementación personalizada y compacta de DeiT (Data-efficient Image Transformer) orientada a tareas de retrieval (recuperación de información multimodal). Lo publica el usuario schmidt2842 y se distribuye bajo licencia BSD-3-Clause. No es un modelo preentrenado listo para producción: el propio autor lo describe como un punto de partida experimental para revisión de código, smoke tests y experimentos controlados de pequeño alcance.
+`schmidt2842/random-retrieval` es un repositorio de Hugging Face que contiene una implementación personalizada y compacta de DeiT (Data-efficient Image Transformer) orientada a tareas de retrieval (recuperación de información multimodal). Lo publica el usuario schmidt2842 y se distribuye bajo licencia BSD-3-Clause. No es un modelo preentrenado listo para producción: el propio autor lo describe como un punto de partida experimental para revisión de código, smoke tests y experimentos controlados de pequeño alcance.
 
 La arquitectura declarada es DeiT en configuración "large", con atención de ventana deslizante, fusión mediante cross-attention, activación gelu-tanh y normalización layernorm. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas, no un modelo entrenado ni evaluado en benchmarks. El repositorio no declara pipeline, idiomas soportados ni resultados de rendimiento.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| schmidt2842/random-retrieval | 16.576 (según metadatos) | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, checkpoint de inicialización |
+| schmidt2842/random-retrieval | 16.576 (según metadatos) | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, checkpoint de inicialización |
 | DeiT de referencia (Facebook Research) | no disponible en esta ficha | no disponible | benchmarks publicados en el paper original | no disponible en esta ficha | pesos preentrenados públicos |
 | CLIP (OpenAI) | no disponible en esta ficha | no disponible | benchmarks publicados | no disponible en esta ficha | pesos preentrenados públicos |
 
@@ -81,5 +81,5 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/schmidt2842/random-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/schmidt2842/random-retrieval
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

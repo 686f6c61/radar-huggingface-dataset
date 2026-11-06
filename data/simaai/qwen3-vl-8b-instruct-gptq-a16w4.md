@@ -100,7 +100,7 @@ No se dispone de datos comparativos de rendimiento o benchmarks entre ambos mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/simaai/Qwen3-VL-8B-Instruct-GPTQ-a16w4
+- Hugging Face: https://huggingface.co/simaai/Qwen3-VL-8B-Instruct-GPTQ-a16w4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Guía de inicio de SiMa.ai Neat: https://developer.sima.ai/software/getting-started/
 - GenAI con LLiMa: https://developer.sima.ai/software/genai-llima/

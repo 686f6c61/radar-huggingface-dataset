@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 - Latencia y throughput: no disponibles, pero al ser una red pequeña, la inferencia es prácticamente instantánea (del orden de microsegundos por paso).
 
 ## Comparativa con modelos similares
-No se dispone de información sobre otros modelos comparables en el repositorio de HuggingFace. Existen numerosos agentes DQN para CartPole en GitHub y otros sitios, pero no hay datos estandarizados para comparar. Se puede mencionar que el rendimiento de 500 de recompensa es el máximo alcanzable en el entorno, por lo que el agente es óptimo. Sin embargo, no hay una lista formal de alternativas con métricas.
+No se dispone de información sobre otros modelos comparables en el repositorio de Hugging Face. Existen numerosos agentes DQN para CartPole en GitHub y otros sitios, pero no hay datos estandarizados para comparar. Se puede mencionar que el rendimiento de 500 de recompensa es el máximo alcanzable en el entorno, por lo que el agente es óptimo. Sin embargo, no hay una lista formal de alternativas con métricas.
 
 ## Limitaciones y advertencias
 - El modelo está entrenado exclusivamente para el entorno CartPole-v1; no es transferible a otros entornos o tareas sin reentrenamiento.
@@ -62,7 +62,7 @@ No se dispone de información sobre otros modelos comparables en el repositorio 
 - No hay información sobre sesgos o alucinaciones, ya que no es un modelo generativo de texto.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/Mishazawa/dqn_cart_pole)
+- [Modelo en Hugging Face](https://huggingface.co/Mishazawa/dqn_cart_pole)
 - [Entorno CartPole en Gymnasium](https://gymnasium.farama.org/environments/classic_control/cart_pole/)
 - [Notebook de entrenamiento](https://github.com/mishazawa/everything-i-reach-for/blob/main/src/cart_dqn.ipynb)
 - [Código del agente](https://github.com/mishazawa/everything-i-reach-for/blob/main/src/agents.py#L21)

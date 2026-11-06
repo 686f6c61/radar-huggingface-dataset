@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Hedinouairi/fable-daily-agent` es un submisión al Hub de HuggingFace con una model card autogenerada que no contiene ninguna especificación técnica. El repositorio tiene un tamaño de 0.1 GB, lo que sugiere un modelo de pequeñas dimensiones, pero no se dispone de información sobre arquitectura, número de parámetros, datos de entrenamiento o licencia. El autor, `Hedinouairi`, no ha proporcionado documentación adicional más allá de la plantilla estándar.
+El modelo `Hedinouairi/fable-daily-agent` es un submisión al Hub de Hugging Face con una model card autogenerada que no contiene ninguna especificación técnica. El repositorio tiene un tamaño de 0.1 GB, lo que sugiere un modelo de pequeñas dimensiones, pero no se dispone de información sobre arquitectura, número de parámetros, datos de entrenamiento o licencia. El autor, `Hedinouairi`, no ha proporcionado documentación adicional más allá de la plantilla estándar.
 
 A pesar del nombre, no hay evidencia de relación con el modelo Claude Fable 5 de Anthropic, que aparece en resultados de búsqueda web pero no está vinculado a este repositorio. Tampoco se ha encontrado ninguna publicación, paper o demo asociada. La ausencia de descargas y likes, junto con la falta de contenido en la model card, indica que se trata de un modelo recién subido y sin validación comunitaria. En su estado actual, este modelo no ofrece información suficiente para ser evaluado ni utilizado con garantías.
 
@@ -53,5 +53,5 @@ No disponible. No se puede comparar este modelo con alternativas de la misma cat
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Hedinouairi/fable-daily-agent)
+- [Repositorio en Hugging Face](https://huggingface.co/Hedinouairi/fable-daily-agent)
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) asociados a este modelo.

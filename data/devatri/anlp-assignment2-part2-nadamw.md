@@ -71,9 +71,9 @@ No disponible. Al desconocerse el numero de parametros, la longitud de contexto,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Devatri/anlp-assignment2-part2-nadamw | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| GPT-2 (referencia publica) | 124 M (version base) | 1024 tokens | MIT (pesos publicados por OpenAI) | HuggingFace, ampliamente desplegado |
-| Pythia-160M (referencia publica) | 160 M | 2048 tokens | Apache 2.0 | HuggingFace, con checkpoints intermedios |
+| Devatri/anlp-assignment2-part2-nadamw | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| GPT-2 (referencia publica) | 124 M (version base) | 1024 tokens | MIT (pesos publicados por OpenAI) | Hugging Face, ampliamente desplegado |
+| Pythia-160M (referencia publica) | 160 M | 2048 tokens | Apache 2.0 | Hugging Face, con checkpoints intermedios |
 
 Los datos de las filas de referencia corresponden a sus fichas publicas y se incluyen unicamente a efectos ilustrativos del tipo de comparacion que seria posible si el autor publicase la configuracion y las metricas.
 
@@ -93,7 +93,7 @@ Los datos de las filas de referencia corresponden a sus fichas publicas y se inc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Devatri/anlp-assignment2-part2-nadamw
+- Modelo en Hugging Face: https://huggingface.co/Devatri/anlp-assignment2-part2-nadamw
 - Dataset de entrenamiento citado en la model card: `browndw/human-ai-parallel-corpus` (referencia textual; no se ha proporcionado URL directa)
 - Checksum del checkpoint: sha256 `373f87aeed3096598dae68c461307727b74804bf0c5eb44c8b7300742dc53187`
 - Paper, blog o repositorio asociado: no disponible

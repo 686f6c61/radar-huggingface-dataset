@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spark-X2.5-1.7B-INT8 es un modelo publicado por el usuario XHToken en HuggingFace bajo licencia Apache 2.0. El nombre sugiere que se trata de una variante cuantizada a 8 bits de un modelo base de 1.7 mil millones de parámetros, probablemente destinada a inferencia eficiente en entornos con recursos limitados. Sin embargo, la información pública disponible es extremadamente escasa: no se proporciona descripción técnica, arquitectura, datos de entrenamiento, ni documentación adicional en la model card, que únicamente declara la licencia.
+Spark-X2.5-1.7B-INT8 es un modelo publicado por el usuario XHToken en Hugging Face bajo licencia Apache 2.0. El nombre sugiere que se trata de una variante cuantizada a 8 bits de un modelo base de 1.7 mil millones de parámetros, probablemente destinada a inferencia eficiente en entornos con recursos limitados. Sin embargo, la información pública disponible es extremadamente escasa: no se proporciona descripción técnica, arquitectura, datos de entrenamiento, ni documentación adicional en la model card, que únicamente declara la licencia.
 
 La relevancia de este modelo es, por el momento, indeterminada. Sin especificaciones verificables, no es posible evaluar su rendimiento, capacidades o idoneidad para casos de uso concretos. Esta ficha refleja únicamente los datos disponibles y marca explícitamente todo aquello que no ha sido publicado.
 
@@ -61,6 +61,6 @@ No disponible. Sin especificaciones verificadas, no es posible establecer compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/XHToken/Spark-X2.5-1.7B-INT8
+- Repositorio Hugging Face: https://huggingface.co/XHToken/Spark-X2.5-1.7B-INT8
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código, demos) en la información proporcionada.

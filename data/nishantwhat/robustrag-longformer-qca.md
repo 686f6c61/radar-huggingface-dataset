@@ -62,16 +62,16 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 - VRAM estimada en fp16/bf16: en torno a 0,3 GB para los pesos, mas activaciones; cabe holgadamente en cualquier GPU consumer moderna.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, incluidas RTX 3060, RTX 4060, RTX 4090, A100 o H100; el modelo es sobradamente pequeno para todas ellas.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU dedicada e incluso en CPU para inferencia por lotes pequenos.
-- Opciones de despliegue: al ser un modelo basado en Longformer con pesos safetensors, es compatible con la libreria transformers de HuggingFace, asi como con servidores de inferencia como TGI o vLLM (siempre que la arquitectura Longformer este soportada por la version correspondiente). No se ha confirmado soporte en llama.cpp ni Ollama, que estan orientados a modelos generativos.
+- Opciones de despliegue: al ser un modelo basado en Longformer con pesos safetensors, es compatible con la libreria transformers de Hugging Face, asi como con servidores de inferencia como TGI o vLLM (siempre que la arquitectura Longformer este soportada por la version correspondiente). No se ha confirmado soporte en llama.cpp ni Ollama, que estan orientados a modelos generativos.
 - Latencia y throughput: no disponibles en la informacion proporcionada; por el tamano del modelo, se espera una latencia baja en GPU, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RobustRAG Longformer-1024 Smart QCA | 148,7 M | 1024 | Deteccion de alucinaciones en RAG | MIT | HuggingFace |
-| Longformer base (AllenAI) | ~149 M | 4096 | Encoder generalista de contexto largo | Apache 2.0 | HuggingFace |
-| DeBERTa-v3-base (Microsoft) | ~86 M (backbone) | 512 | Encoder generalista, clasificacion | MIT | HuggingFace |
+| RobustRAG Longformer-1024 Smart QCA | 148,7 M | 1024 | Deteccion de alucinaciones en RAG | MIT | Hugging Face |
+| Longformer base (AllenAI) | ~149 M | 4096 | Encoder generalista de contexto largo | Apache 2.0 | Hugging Face |
+| DeBERTa-v3-base (Microsoft) | ~86 M (backbone) | 512 | Encoder generalista, clasificacion | MIT | Hugging Face |
 
 La comparativa se limita a arquitecturas encoder de escala similar, ya que no se dispone de informacion sobre otros modelos especializados en deteccion de alucinaciones RAG con los que contrastar directamente. El modelo de AllenAI ofrece mayor contexto (4096) pero no esta especializado en la tarea; DeBERTa-v3-base es mas ligero pero con contexto mucho menor.
 
@@ -89,6 +89,6 @@ La comparativa se limita a arquitecturas encoder de escala similar, ya que no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nishantwhat/robustrag-longformer-qca
+- Modelo en Hugging Face: https://huggingface.co/nishantwhat/robustrag-longformer-qca
 - Paper de Longformer (referencia de arquitectura): https://arxiv.org/abs/2004.05150
 - Benchmark RAGTruth (referencia de evaluacion): https://arxiv.org/abs/2301.13808

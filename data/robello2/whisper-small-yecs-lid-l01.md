@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks externos (MLSU, Common Voice, FLEUR
 
 | Modelo | Parametros | Idiomas | Contexto/audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-small-yecs-lid-l01 | 241,7 M | yo, en (code-switching) | no disponible | NOODL-1.0 | HuggingFace, 0 descargas |
-| openai/whisper-small | 241,7 M | multilingue (99 idiomas) | ventana de 30 s | MIT | HuggingFace, ampliamente usado |
-| openai/whisper-base | 74,4 M | multilingue | ventana de 30 s | MIT | HuggingFace |
-| openai/whisper-medium | 769 M | multilingue | ventana de 30 s | MIT | HuggingFace |
+| whisper-small-yecs-lid-l01 | 241,7 M | yo, en (code-switching) | no disponible | NOODL-1.0 | Hugging Face, 0 descargas |
+| openai/whisper-small | 241,7 M | multilingue (99 idiomas) | ventana de 30 s | MIT | Hugging Face, ampliamente usado |
+| openai/whisper-base | 74,4 M | multilingue | ventana de 30 s | MIT | Hugging Face |
+| openai/whisper-medium | 769 M | multilingue | ventana de 30 s | MIT | Hugging Face |
 
 Frente a openai/whisper-small, el modelo ajustado sacrifica cobertura multilingue general a cambio de especializacion en yoruba-ingles con cambio de codigo, con una licencia mas restrictiva (NOODL-1.0 frente a MIT). No se dispone de datos publicos que comparen su WER con el de whisper-small original en YECS ni con otros ajustes finos de la comunidad, por lo que la comparacion cuantitativa de rendimiento no esta disponible.
 
@@ -96,7 +96,7 @@ Frente a openai/whisper-small, el modelo ajustado sacrifica cobertura multilingu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robello2/whisper-small-yecs-lid-l01
+- Modelo en Hugging Face: https://huggingface.co/robello2/whisper-small-yecs-lid-l01
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - Repositorio oficial de Whisper: https://github.com/openai/whisper

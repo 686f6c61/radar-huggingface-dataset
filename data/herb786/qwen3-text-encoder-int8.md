@@ -74,9 +74,9 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/herb786/Qwen3-text-encoder-int8
+- Repositorio Hugging Face: https://huggingface.co/herb786/Qwen3-text-encoder-int8
 - Modelo base FLUX.2-klein-9B: https://huggingface.co/black-forest-labs/FLUX.2-klein-9B
-- Página de Qwen3-8B en HuggingFace: https://huggingface.co/Qwen/Qwen3-8B
+- Página de Qwen3-8B en Hugging Face: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Repositorio GitHub de Qwen3-Embedding: https://github.com/QwenLM/Qwen3-Embedding
 - Artículo sobre Qwen3 en openlm.ai: https://openlm.ai/qwen3/

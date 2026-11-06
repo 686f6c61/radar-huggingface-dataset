@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `model_250345822_albef_xlarge` es una implementación a escala **xlarge** de la arquitectura **ALBEF** (Align before Fuse: Vision and Language Representation Learning), originalmente desarrollada por Salesforce Research y presentada en NeurIPS 2021. Este repositorio concreto, publicado por el usuario `andrearossifo` en HuggingFace, se presenta como un artefacto de código (`.py`) con configuración específica para tareas de aprendizaje contrastivo multimodal.
+El modelo `model_250345822_albef_xlarge` es una implementación a escala **xlarge** de la arquitectura **ALBEF** (Align before Fuse: Vision and Language Representation Learning), originalmente desarrollada por Salesforce Research y presentada en NeurIPS 2021. Este repositorio concreto, publicado por el usuario `andrearossifo` en Hugging Face, se presenta como un artefacto de código (`.py`) con configuración específica para tareas de aprendizaje contrastivo multimodal.
 
 La arquitectura ALBEF se basa en la idea de alinear representaciones de imagen y texto mediante una pérdida contrastiva antes de fusionarlas con atención cruzada, lo que permite capturar relaciones semánticas entre modalidades. Aunque el modelo se define como "xlarge", no se proporcionan detalles sobre el número de parámetros, la longitud de contexto ni los idiomas soportados. Su relevancia radica en que reproduce una arquitectura de vanguardia para tareas de visión-lenguaje, aunque la ausencia de pesos preentrenados o datos de rendimiento limita su uso práctico inmediato.
 
-La ficha recoge la información disponible en HuggingFace y en la documentación pública de ALBEF, indicando explícitamente qué datos no están publicados para este modelo concreto.
+La ficha recoge la información disponible en Hugging Face y en la documentación pública de ALBEF, indicando explícitamente qué datos no están publicados para este modelo concreto.
 
 ## Especificaciones técnicas
 
@@ -67,7 +67,7 @@ No se dispone de información sobre requisitos de hardware para este modelo espe
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | ALBEF (original, Salesforce) | Vision-language transformer | ~200M (base) | no disponible | BSD-3-Clause | Pesos y código en GitHub |
-| ALBERT-xxlarge-v2 | Transformer encoder | 235M | 512 | Apache-2.0 | Pesos en HuggingFace |
+| ALBERT-xxlarge-v2 | Transformer encoder | 235M | 512 | Apache-2.0 | Pesos en Hugging Face |
 | model_250345822_albef_xlarge | ALBEF xlarge | no disponible | no disponible | Apache-2.0 | Solo código, sin pesos |
 
 No se dispone de datos de rendimiento comparativo porque el modelo no tiene pesos publicados ni benchmarks.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo porque el modelo no tiene peso
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/andrearossifo/model_250345822_albef_xlarge
+- Repositorio de Hugging Face: https://huggingface.co/andrearossifo/model_250345822_albef_xlarge
 - Código original de ALBEF (Salesforce): https://github.com/salesforce/ALBEF
 - Paper de ALBEF (NeurIPS 2021): https://arxiv.org/abs/2107.07651 (no verificado en la búsqueda, pero es la referencia estándar)
 - ALBERT-xxlarge-v2 (modelo similar): https://huggingface.co/albert/albert-xxlarge-v2

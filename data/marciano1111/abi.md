@@ -6,7 +6,7 @@
 
 Se trata de un artefacto de personalizacion de bajo peso (0,8 GB en el repositorio, coherente con un LoRA de rango bajo) y no de un modelo fundacional. Su relevancia es practica: demuestra el flujo de trabajo tipico de DreamBooth sobre la familia Krea 2, con ejemplos de prompts cinematograficos y retratos de alta calidad. El interes para desarrolladores e investigadores radica en evaluar la transferibilidad de conceptos sobre un modelo base reciente y en la integracion directa con la libreria `diffusers` mediante `Krea2Pipeline`.
 
-La informacion publicada es escasa: no hay datos de entrenamiento (numero de imagenes, pasos, rango del LoRA, learning rate), ni benchmarks cuantitativos, ni idiomas declarados. La ficha refleja unicamente lo que consta en la model card y en los metadatos de HuggingFace.
+La informacion publicada es escasa: no hay datos de entrenamiento (numero de imagenes, pasos, rango del LoRA, learning rate), ni benchmarks cuantitativos, ni idiomas declarados. La ficha refleja unicamente lo que consta en la model card y en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Modelo base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `marciano1111/abi` | LoRA DreamBooth texto-a-imagen | `krea/Krea-2-Raw` (inferencia sobre `Krea-2-Turbo`) | no disponible (repo de 0,8 GB) | no aplica | Apache 2.0 | HuggingFace, 15 descargas |
-| `krea/Krea-2-Raw` | Modelo de difusion texto-a-imagen | no aplica | no disponible | no aplica | no disponible en esta ficha | HuggingFace |
-| `krea/Krea-2-Turbo` | Modelo de difusion texto-a-imagen destilado | no aplica | no disponible | no aplica | no disponible en esta ficha | HuggingFace |
+| `marciano1111/abi` | LoRA DreamBooth texto-a-imagen | `krea/Krea-2-Raw` (inferencia sobre `Krea-2-Turbo`) | no disponible (repo de 0,8 GB) | no aplica | Apache 2.0 | Hugging Face, 15 descargas |
+| `krea/Krea-2-Raw` | Modelo de difusion texto-a-imagen | no aplica | no disponible | no aplica | no disponible en esta ficha | Hugging Face |
+| `krea/Krea-2-Turbo` | Modelo de difusion texto-a-imagen destilado | no aplica | no disponible | no aplica | no disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de rendimiento ni de parametros de los modelos comparables en la informacion proporcionada, por lo que la comparativa se limita a tipo, modelo base, licencia y disponibilidad.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de parametros de los modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marciano1111/abi
+- Modelo en Hugging Face: https://huggingface.co/marciano1111/abi
 - Modelo base Raw: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Turbo (referenciado en la model card): https://huggingface.co/krea/Krea-2-Turbo
 - Libreria diffusers: https://github.com/huggingface/diffusers

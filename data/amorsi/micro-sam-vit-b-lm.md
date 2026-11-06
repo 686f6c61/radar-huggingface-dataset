@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| micro-sam vit_b_lm (este) | SAM + ViT-B | no disponible | no aplica | no disponible (remite a fuente original) | HuggingFace (mirror) |
+| micro-sam vit_b_lm (este) | SAM + ViT-B | no disponible | no aplica | no disponible (remite a fuente original) | Hugging Face (mirror) |
 | SAM original (vit_b) | SAM + ViT-B | ~90M + decoder | no aplica | Apache 2.0 (según Meta) | Amplia |
 | micro-sam vit_l / vit_h | SAM + ViT-L/H | no disponible | no aplica | remite a fuente original | Registro micro-sam |
 | Cellpose | U-Net específico | no disponible | no aplica | BSD-3 (según repositorio) | Amplia |
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amorsi/micro-sam-vit-b-lm
+- Hugging Face: https://huggingface.co/amorsi/micro-sam-vit-b-lm
 - Repositorio micro-sam: https://github.com/computational-cell-analytics/micro-sam
 - Registro de pesos en `util.py`: https://github.com/computational-cell-analytics/micro-sam/blob/master/micro_sam/util.py
 - Pesos `model.pt`: https://uk1s3.embassy.ebi.ac.uk/public-datasets/bioimage.io/diplomatic-bug/1.2/files/vit_b.pt

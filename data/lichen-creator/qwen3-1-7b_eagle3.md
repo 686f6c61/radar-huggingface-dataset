@@ -87,9 +87,9 @@ El autor señala que el 1,761x supera el 1,687x publicado por Tencent AngelSlim 
 
 | Modelo | Parámetros | Contexto | Speedup publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lichen-Creator/Qwen3-1.7B_eagle3 | 137 M (draft) | no disponible (entrenado a 2048) | 1,19x-1,21x (SGLang, 4090); 1,53x-1,76x (vLLM, 4080S) | apache-2.0 | HuggingFace, 0 descargas |
-| AngelSlim/Qwen3-1.7B_eagle3 | no disponible | no disponible | 1,687x (vLLM, H20) | no disponible | HuggingFace |
-| Qwen/Qwen3-1.7B (sin draft) | 1,7 B | contexto nativo de Qwen3 | 1x (baseline) | apache-2.0 | HuggingFace |
+| Lichen-Creator/Qwen3-1.7B_eagle3 | 137 M (draft) | no disponible (entrenado a 2048) | 1,19x-1,21x (SGLang, 4090); 1,53x-1,76x (vLLM, 4080S) | apache-2.0 | Hugging Face, 0 descargas |
+| AngelSlim/Qwen3-1.7B_eagle3 | no disponible | no disponible | 1,687x (vLLM, H20) | no disponible | Hugging Face |
+| Qwen/Qwen3-1.7B (sin draft) | 1,7 B | contexto nativo de Qwen3 | 1x (baseline) | apache-2.0 | Hugging Face |
 
 La comparación directa es con el draft de AngelSlim, del que este modelo es una reproducción independiente con cifras superiores en hardware de consumo. Frente al target sin decodificación especulativa, la ganancia es de throughput puro, sin cambios en la distribución de salida más allá del ruido numérico en bf16.
 
@@ -106,7 +106,7 @@ La comparación directa es con el draft de AngelSlim, del que este modelo es una
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lichen-Creator/Qwen3-1.7B_eagle3
+- Hugging Face: https://huggingface.co/Lichen-Creator/Qwen3-1.7B_eagle3
 - Repositorio de reproducción: https://github.com/lichen9240-creator/eagle3-qwen3-1.7b-repro
 - Informe experimental completo: https://github.com/lichen9240-creator/eagle3-qwen3-1.7b-repro/blob/main/docs/完整实验报告.md
 - Manual de reproducción: https://github.com/lichen9240-creator/eagle3-qwen3-1.7b-repro/blob/main/REPRODUCE.md

@@ -83,7 +83,7 @@ Nota de la model card: en ApexBench y Agents' Last Exam, DeepSeek-V4-Flash-0731 
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Flash-Vision-Exp | 304,6B (safetensors); 284B segun terceros | ~13B segun terceros | 1.048.576 tokens | MIT | Pesos abiertos en HuggingFace; API en DeepInfra |
+| DeepSeek-V4-Flash-Vision-Exp | 304,6B (safetensors); 284B segun terceros | ~13B segun terceros | 1.048.576 tokens | MIT | Pesos abiertos en Hugging Face; API en DeepInfra |
 | DeepSeek-V4-Flash-0731 | no disponible | no disponible | no disponible | no disponible | Modelo predecesor, sin vision |
 | Opus-4.8 | no disponible | no disponible | no disponible | Propietaria | Solo API |
 
@@ -91,7 +91,7 @@ En los benchmarks publicados, DeepSeek-V4-Flash-Vision-Exp supera a DeepSeek-V4-
 
 ## Limitaciones y advertencias
 
-- Procedencia del repositorio: la ficha de HuggingFace analizada corresponde a la cuenta `winterthurquants`, no a la organizacion oficial `deepseek-ai`, que aloja una copia independiente. Verifica el origen antes de usar los pesos en produccion.
+- Procedencia del repositorio: la ficha de Hugging Face analizada corresponde a la cuenta `winterthurquants`, no a la organizacion oficial `deepseek-ai`, que aloja una copia independiente. Verifica el origen antes de usar los pesos en produccion.
 - El repositorio figura con 0 descargas y 0 likes en el momento de la consulta, y la fecha de creacion indicada es 2026-09-27.
 - Discrepancia de parametros: los safetensors declaran 304,6B parametros y el tamano de repo es de 167,8 GB, mientras que fuentes de terceros hablan de 284B totales y 13B activos. Los datos sobre parametros activos no estan confirmados por la model card.
 - Modelo marcado como experimental (`-Exp`): no hay garantias de estabilidad de comportamiento ni de soporte a largo plazo.
@@ -104,14 +104,14 @@ En los benchmarks publicados, DeepSeek-V4-Flash-Vision-Exp supera a DeepSeek-V4-
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/winterthurquants/DeepSeek-V4-Flash-Vision-Exp
+- Repositorio analizado en Hugging Face: https://huggingface.co/winterthurquants/DeepSeek-V4-Flash-Vision-Exp
 - Repositorio oficial de DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Receta de vLLM: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Documentacion de API en DeepInfra: https://deepinfra.com/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/api
 - Ficha en AI Model Radar: https://aimodelradar.app/models/deepseek-v4-flash-vision-exp
 - Web de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organizacion DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Twitter de DeepSeek: https://twitter.com/deepseek_ai
 - Documentacion de codificacion de prompts del repositorio: `encoding/README.md`
 - Documentacion de inferencia minima del repositorio: `inference/README.md`

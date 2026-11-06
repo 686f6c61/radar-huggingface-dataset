@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`andrewrobe/contrastive-2024` es un repositorio de investigación publicado en HuggingFace que contiene un prototipo de DeiT (Data-efficient Image Transformer) orientado a aprendizaje contrastivo. Lo desarrolla el usuario `andrewrobe` y se distribuye bajo licencia BSD-3-Clause. El propio autor lo describe explícitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado.
+`andrewrobe/contrastive-2024` es un repositorio de investigación publicado en Hugging Face que contiene un prototipo de DeiT (Data-efficient Image Transformer) orientado a aprendizaje contrastivo. Lo desarrolla el usuario `andrewrobe` y se distribuye bajo licencia BSD-3-Clause. El propio autor lo describe explícitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado.
 
 El repositorio incluye el código Python con el modelo y un punto de entrada ejecutable (`eval.py`), además de `config.json` (arquitectura) y `training_args.json` (receta de entrenamiento por defecto: optimizador RMSprop con schedule de warmup constante). La configuración declarada corresponde a una escala "xlarge" con atención estándar, fusión por cross-attention, activación gelu tanh y normalización InstanceNorm. No se declara ninguna métrica de benchmark.
 
-Es relevante únicamente como material de referencia para quienes investigan arquitecturas DeiT aplicadas a objetivos contrastivos, o como plantilla reproducible para montar sus propios experimentos. No es un modelo desplegable: no hay pesos entrenados, no hay idiomas declarados ni pipeline definido en la ficha de HuggingFace, y el número de descargas y likes es cero.
+Es relevante únicamente como material de referencia para quienes investigan arquitecturas DeiT aplicadas a objetivos contrastivos, o como plantilla reproducible para montar sus propios experimentos. No es un modelo desplegable: no hay pesos entrenados, no hay idiomas declarados ni pipeline definido en la ficha de Hugging Face, y el número de descargas y likes es cero.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ Es relevante únicamente como material de referencia para quienes investigan arq
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors (`model.safetensors`); código PyTorch |
 
-Otros datos declarados: escala "xlarge", fusión por cross-attention, activación gelu tanh, normalización InstanceNorm, optimizador RMSprop con warmup constante. Tamaño del repositorio en HuggingFace: 0,0 GB. Fechas de creación y actualización: 2026-09-10.
+Otros datos declarados: escala "xlarge", fusión por cross-attention, activación gelu tanh, normalización InstanceNorm, optimizador RMSprop con warmup constante. Tamaño del repositorio en Hugging Face: 0,0 GB. Fechas de creación y actualización: 2026-09-10.
 
 ## Arquitectura y entrenamiento
 
@@ -46,7 +46,7 @@ En cuanto al entrenamiento, la model card indica que la receta incluida (RMSprop
 - Plantilla de experimento contrastivo: reutilizar `training_args.json` y el código del modelo como esqueleto para montar un pipeline de aprendizaje contrastivo con datos propios, sustituyendo la inicialización aleatoria por un backbone preentrenado.
 - Estudio de reproducibilidad: comparar la receta declarada (RMSprop, warmup constante) contra alternativas (AdamW, cosine schedule) bajo el mismo presupuesto de cómputo y las mismas semillas, tal como sugiere el propio autor.
 - Referencia de arquitectura híbrida: analizar cómo se comporta InstanceNorm frente a LayerNorm y cross-attention frente a self-attention pura en un backbone tipo DeiT, con el código como base editable.
-- Docencia y formación: usar el repositorio como ejemplo mínimo de estructura de proyecto de investigación en HuggingFace (código, config, training args, checkpoint y documentación separados).
+- Docencia y formación: usar el repositorio como ejemplo mínimo de estructura de proyecto de investigación en Hugging Face (código, config, training args, checkpoint y documentación separados).
 - Base para fine-tuning supervisado: partir de esta implementación para añadir una cabeza de clasificación y entrenar sobre un dataset etiquetado pequeño, siempre documentando los resultados por separado de los valores por defecto del repositorio.
 - Auditoría de licencias y trazabilidad: servir como caso de estudio de un artefacto con licencia permisiva (BSD-3-Clause) cuyo uso con datasets externos exige revisar por separado los términos de los datos de origen.
 
@@ -90,7 +90,7 @@ No disponible. La información proporcionada no incluye datos verificables de mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andrewrobe/contrastive-2024
+- Modelo en Hugging Face: https://huggingface.co/andrewrobe/contrastive-2024
 - Paper de DeiT (referencia de arquitectura): no disponible en la información proporcionada
 - Repositorio de código independiente: no disponible
 - Blog o documentación del autor: no disponible

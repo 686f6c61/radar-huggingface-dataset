@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MergekitCloud/mergekit-118 | ~14,77 B | No especificado (base: 32.768 nativos, 131.072 con YaRN) | Merge TIES de Qwen2.5-14B y Coder-14B-Instruct | No disponible (bases Apache 2.0) | HuggingFace, solo safetensors bf16 |
-| Qwen/Qwen2.5-14B | 14,7 B | 32.768 nativos, 131.072 con YaRN | Transformer decoder | Apache 2.0 | HuggingFace, amplia variedad de formatos |
-| Qwen/Qwen2.5-Coder-14B-Instruct | 14,7 B | 32.768 nativos, 131.072 con YaRN | Transformer decoder afinado para codigo | Apache 2.0 | HuggingFace, amplia variedad de formatos |
+| MergekitCloud/mergekit-118 | ~14,77 B | No especificado (base: 32.768 nativos, 131.072 con YaRN) | Merge TIES de Qwen2.5-14B y Coder-14B-Instruct | No disponible (bases Apache 2.0) | Hugging Face, solo safetensors bf16 |
+| Qwen/Qwen2.5-14B | 14,7 B | 32.768 nativos, 131.072 con YaRN | Transformer decoder | Apache 2.0 | Hugging Face, amplia variedad de formatos |
+| Qwen/Qwen2.5-Coder-14B-Instruct | 14,7 B | 32.768 nativos, 131.072 con YaRN | Transformer decoder afinado para codigo | Apache 2.0 | Hugging Face, amplia variedad de formatos |
 
 La comparativa se limita a los modelos base porque no se dispone de datos de rendimiento del merge ni de otros merges equivalentes con los que contrastarlo de forma objetiva.
 
@@ -88,7 +88,7 @@ La comparativa se limita a los modelos base porque no se dispone de datos de ren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MergekitCloud/mergekit-118
+- Modelo en Hugging Face: https://huggingface.co/MergekitCloud/mergekit-118
 - Modelo base Qwen2.5-14B: https://huggingface.co/Qwen/Qwen2.5-14B
 - Modelo base Qwen2.5-Coder-14B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Repositorio de mergekit: https://github.com/cg123/mergekit

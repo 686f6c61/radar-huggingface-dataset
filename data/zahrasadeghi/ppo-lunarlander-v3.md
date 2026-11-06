@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZahraSadeghi/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v3 de Gymnasium, que consiste en aterrizar de forma controlada una nave sobre una plataforma lunar. El modelo se ha entrenado con la librería stable-baselines3, el framework de referencia en Python para algoritmos de RL, y se publica en HuggingFace Hub en el formato nativo de dicha librería.
+ZahraSadeghi/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v3 de Gymnasium, que consiste en aterrizar de forma controlada una nave sobre una plataforma lunar. El modelo se ha entrenado con la librería stable-baselines3, el framework de referencia en Python para algoritmos de RL, y se publica en Hugging Face Hub en el formato nativo de dicha librería.
 
 No se trata de un modelo de lenguaje ni de un modelo fundacional: no tiene parametros de miles de millones, ni ventana de contexto, ni pesos en safetensors o GGUF. Es una politica neuronal de pequeno tamano que mapea el vector de observacion del entorno (8 valores continuos) a una de las 4 acciones discretas disponibles. Su relevancia es, por tanto, docente y de reproducibilidad: sirve como ejemplo canonico de como se publica un agente RL entrenado en el Hub y como punto de partida para experimentos de RL en entornos de control continuo.
 
@@ -74,7 +74,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Algoritmo | Entorno | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZahraSadeghi/ppo-LunarLander-v3 | PPO | LunarLander-v3 | no disponible | no disponible | HuggingFace Hub |
+| ZahraSadeghi/ppo-LunarLander-v3 | PPO | LunarLander-v3 | no disponible | no disponible | Hugging Face Hub |
 | Agentes PPO de referencia de stable-baselines3 (RL Zoo) | PPO | LunarLander-v2 / v3 | no disponible | MIT (codigo de SB3) | GitHub DLR-RM/rl-baselines3-zoo |
 | Agentes DQN para LunarLander | DQN | LunarLander-v2 | no disponible | MIT (codigo de SB3) | GitHub / Hub |
 | Agentes A2C para LunarLander | A2C | LunarLander-v2 | no disponible | MIT (codigo de SB3) | GitHub / Hub |
@@ -95,9 +95,9 @@ No se dispone de resultados numericos comparables de estos agentes en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZahraSadeghi/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/ZahraSadeghi/ppo-LunarLander-v3
 - stable-baselines3 (repositorio oficial): https://github.com/DLR-RM/stable-baselines3
-- huggingface_sb3 (utilidad de carga desde el Hub): no disponible en la informacion proporcionada, se corresponde con el paquete `huggingface_sb3` del ecosistema HuggingFace
+- huggingface_sb3 (utilidad de carga desde el Hub): no disponible en la informacion proporcionada, se corresponde con el paquete `huggingface_sb3` del ecosistema Hugging Face
 - Entorno LunarLander-v3 (Gymnasium): no disponible en la informacion proporcionada
 - RL Baselines3 Zoo (agentes de referencia): no disponible en la informacion proporcionada
 - Paper o blog del autor: no disponible

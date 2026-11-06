@@ -78,7 +78,7 @@ No se han publicado en la informacion disponible los resultados numericos desglo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MiniCPM-V 4.5 | 8,7B | No disponible | Apache 2.0 | Abierto (HuggingFace, ModelScope) | Supera a GPT-4o-latest, Gemini-2.0 Pro y Qwen2.5-VL 72B en OpenCompass segun la model card |
+| MiniCPM-V 4.5 | 8,7B | No disponible | Apache 2.0 | Abierto (Hugging Face, ModelScope) | Supera a GPT-4o-latest, Gemini-2.0 Pro y Qwen2.5-VL 72B en OpenCompass segun la model card |
 | Qwen2.5-VL 72B | 72B | No disponible | No disponible en la informacion | Abierto | Citado en la model card como referencia superada pese a tener 8 veces mas parametros |
 | GPT-4o-latest | No divulgado | No disponible | Propietaria | Solo API | Citado como referencia superada en OpenCompass, OCRBench y MMHal-Bench |
 | Gemini-2.0 Pro | No divulgado | No disponible | Propietaria | Solo API | Citado como referencia superada en OpenCompass y OCRBench |

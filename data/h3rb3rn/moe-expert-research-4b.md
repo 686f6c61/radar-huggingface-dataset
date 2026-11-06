@@ -93,7 +93,7 @@ La comparativa directa de rendimiento en tareas de investigación no está dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/h3rb3rn/moe-expert-research-4b
+- Modelo en Hugging Face: https://huggingface.co/h3rb3rn/moe-expert-research-4b
 - Dataset de entrenamiento: https://huggingface.co/datasets/moe-sovereign/expert-research-sft
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Supercomputador LUMI-G: https://www.lumi-supercomputer.eu/

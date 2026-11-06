@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Método | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **Llama-3.1-8B-Instruct-Abliterated-Detoxified** (este) | 8.0B | No especificado (base 128k) | jBlaze (ablación + supresión de toxicidad) | Llama 3.1 Community | HuggingFace (safetensors) |
-| **mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated** | 8.0B | 128k | Abliteration clásica (eliminación de dirección de refusal) | Llama 3.1 Community | HuggingFace (safetensors y GGUF) |
-| **Meta-Llama-3.1-8B-Instruct** (original) | 8.0B | 128k | Fine-tuning instructivo estándar | Llama 3.1 Community | HuggingFace |
+| **Llama-3.1-8B-Instruct-Abliterated-Detoxified** (este) | 8.0B | No especificado (base 128k) | jBlaze (ablación + supresión de toxicidad) | Llama 3.1 Community | Hugging Face (safetensors) |
+| **mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated** | 8.0B | 128k | Abliteration clásica (eliminación de dirección de refusal) | Llama 3.1 Community | Hugging Face (safetensors y GGUF) |
+| **Meta-Llama-3.1-8B-Instruct** (original) | 8.0B | 128k | Fine-tuning instructivo estándar | Llama 3.1 Community | Hugging Face |
 
 La principal diferencia frente al abliterado de mlabonne es que este modelo añade una segunda proyección para suprimir la toxicidad, lo que lo hace "educado" además de no censurado. El original mantiene los mecanismos de rechazo. El rendimiento en tareas estándar debería ser similar al del base, aunque no hay benchmarks publicados.
 
@@ -75,7 +75,7 @@ La principal diferencia frente al abliterado de mlabonne es que este modelo aña
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Abliterated-Detoxified)
+- [Modelo en Hugging Face](https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Abliterated-Detoxified)
 - [Repositorio de jBlaze](https://github.com/apolloraines/jblaze)
 - [Modelo base Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
 - [Artículo sobre abliteration (referencia de la técnica)](https://huggingface.co/mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated)

@@ -63,6 +63,6 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/srilubis/self-supervised-test9
+- Repositorio en Hugging Face: https://huggingface.co/srilubis/self-supervised-test9
 - Referencia general sobre aprendizaje auto-supervisado (Wikipedia): https://en.wikipedia.org/wiki/Self-supervised_learning
 - Notas de Stanford sobre SSL: https://cs229.stanford.edu/notes2021spring/notes2021spring/cs229_lecture_selfsupervision_final.pdf

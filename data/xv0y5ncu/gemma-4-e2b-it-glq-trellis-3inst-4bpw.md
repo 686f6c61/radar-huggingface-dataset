@@ -87,7 +87,7 @@ No se han encontrado datos de cuantizaciones alternativas (GGUF, AWQ) del mismo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xv0y5ncu/gemma-4-E2B-it-GLQ-trellis-3inst-4bpw
+- Repositorio Hugging Face: https://huggingface.co/xv0y5ncu/gemma-4-E2B-it-GLQ-trellis-3inst-4bpw
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Pagina de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/

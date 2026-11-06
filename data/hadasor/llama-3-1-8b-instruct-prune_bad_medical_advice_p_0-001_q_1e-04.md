@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hadasor/Llama-3.1-8B-Instruct-prune_bad_medical_advice_p_0.001_q_1e-04 | 8.03B | no disponible | no disponible | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct (base) | 8.03B | 128k | Llama 3.1 (Meta) | HuggingFace |
-| hadasor/Llama-3.1-8B-Instruct-prune_bad_medical_advice_p_0.0007_q_4e-05 | 8.03B | no disponible | no disponible | HuggingFace (variante del mismo autor) |
+| hadasor/Llama-3.1-8B-Instruct-prune_bad_medical_advice_p_0.001_q_1e-04 | 8.03B | no disponible | no disponible | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct (base) | 8.03B | 128k | Llama 3.1 (Meta) | Hugging Face |
+| hadasor/Llama-3.1-8B-Instruct-prune_bad_medical_advice_p_0.0007_q_4e-05 | 8.03B | no disponible | no disponible | Hugging Face (variante del mismo autor) |
 
 No se dispone de datos de rendimiento comparativo. El modelo base Llama-3.1-8B-Instruct es el punto de referencia natural, pero no hay evaluaciones de la variante podada.
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo. El modelo base Llama-3.1-8B-I
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hadasor/Llama-3.1-8B-Instruct-prune_bad_medical_advice_p_0.001_q_1e-04
+- Modelo en Hugging Face: https://huggingface.co/hadasor/Llama-3.1-8B-Instruct-prune_bad_medical_advice_p_0.001_q_1e-04
 - Variante similar (p=0.0007, q=4e-05): https://huggingface.co/hadasor/Llama-3.1-8B-Instruct-prune_bad_medical_advice_p_0.0007_q_4e-05
 - Discusion de otro modelo del autor: https://huggingface.co/hadasor/Llama-3.1-8B-Instruct-prune_risky_financial_advice_p_0.0007_q_1e-05/discussions
 - Despliegue en FriendliAI (variante similar): https://friendli.ai/models/hadasor/Llama-3.1-8B-Instruct-prune_bad_medical_advice_p_0.0007_q_2e-05

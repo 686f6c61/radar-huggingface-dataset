@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks específicos para esta cuantizació
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jarrelscy/DeepSeek-V4-Pro-0813-NVFP4-AQLM-hybrid | 270B | 1M | NVFP4 + AQLM + FP8 | MIT | HuggingFace |
-| deepseek-ai/DeepSeek-V4-Pro-0813 (base) | 270B | 1M | FP8 (nativo) | MIT | HuggingFace |
-| Otros checkpoints DeepSeek-V4-Pro-NVFP4 publicos | no disponible | no disponible | NVFP4 | no disponible | HuggingFace (apuntan a la base anterior, no a la 0813) |
+| jarrelscy/DeepSeek-V4-Pro-0813-NVFP4-AQLM-hybrid | 270B | 1M | NVFP4 + AQLM + FP8 | MIT | Hugging Face |
+| deepseek-ai/DeepSeek-V4-Pro-0813 (base) | 270B | 1M | FP8 (nativo) | MIT | Hugging Face |
+| Otros checkpoints DeepSeek-V4-Pro-NVFP4 publicos | no disponible | no disponible | NVFP4 | no disponible | Hugging Face (apuntan a la base anterior, no a la 0813) |
 
 La comparativa se limita a lo indicado en la model card: el modelo base sin cuantizar y otros checkpoints NVFP4 que targetean la versión previa de DeepSeek-V4-Pro. No se dispone de datos de rendimiento comparativos entre estas variantes.
 

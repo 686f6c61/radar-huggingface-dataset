@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alexchai-tmt/tufy` es un repositorio de modelo publicado en HuggingFace por el usuario `alexchai-tmt`. La información disponible es mínima: la model card no contiene más que una declaración de licencia `unknown`, sin descripción funcional, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en la misma fecha (2026-10-28), lo que sugiere una publicación reciente sin difusión ni validación por parte de la comunidad.
+`alexchai-tmt/tufy` es un repositorio de modelo publicado en Hugging Face por el usuario `alexchai-tmt`. La información disponible es mínima: la model card no contiene más que una declaración de licencia `unknown`, sin descripción funcional, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en la misma fecha (2026-10-28), lo que sugiere una publicación reciente sin difusión ni validación por parte de la comunidad.
 
 No es posible determinar a partir de los datos disponibles qué problema resuelve el modelo, qué arquitectura emplea ni qué capacidades ofrece. El identificador `tufy` no aporta información técnica reconocible y no aparece asociado a ningún paper, blog o repositorio de referencia en la información proporcionada.
 
@@ -75,5 +75,5 @@ No disponible. Sin datos de arquitectura, tamaño, contexto o rendimiento no es 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexchai-tmt/tufy
+- Repositorio en Hugging Face: https://huggingface.co/alexchai-tmt/tufy
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

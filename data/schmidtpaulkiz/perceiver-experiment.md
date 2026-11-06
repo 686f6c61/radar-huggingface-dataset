@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Perceiver-experiment es un repositorio experimental publicado por el usuario Schmidtpaulkiz en HuggingFace, cuyo objetivo es servir como base de codigo para experimentar con la arquitectura Perceiver en entornos multitarea. No se trata de un modelo entrenado ni listo para produccion: el propio autor indica explicitamente que el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests) y no un modelo con resultados de benchmark. El repositorio contiene 49.600 parametros totales, una cifra muy reducida que confirma su caracter de esqueleto arquitectonico mas que de modelo funcional.
+Perceiver-experiment es un repositorio experimental publicado por el usuario Schmidtpaulkiz en Hugging Face, cuyo objetivo es servir como base de codigo para experimentar con la arquitectura Perceiver en entornos multitarea. No se trata de un modelo entrenado ni listo para produccion: el propio autor indica explicitamente que el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests) y no un modelo con resultados de benchmark. El repositorio contiene 49.600 parametros totales, una cifra muy reducida que confirma su caracter de esqueleto arquitectonico mas que de modelo funcional.
 
 La arquitectura declarada es Perceiver, con atencion multi-query, fusion mediante cross attention, activacion mish y normalizacion scalenorm. El autor describe la escala como "large", un termino que en este contexto se refiere a la configuracion de la receta experimental y no al tamano real del modelo, que es minimo. La receta de entrenamiento por defecto usa el optimizador lion con un schedule polinomial, planteada como punto de partida y no como evidencia de un entrenamiento completado.
 
@@ -89,5 +89,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Schmidtpaulkiz/perceiver-experiment
+- Hugging Face: https://huggingface.co/Schmidtpaulkiz/perceiver-experiment
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

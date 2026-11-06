@@ -23,7 +23,7 @@ Es relevante ahora porque DINOv3 (familia publicada por Meta en 2025) se ha conv
 | Normalizacion de entrada | ImageNet, mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225] |
 | Salida | logit de cara; sigmoid(logit) = p(cara) |
 | Tamano del repositorio | 0,1 GB |
-| Pipeline (HuggingFace) | image-classification |
+| Pipeline (Hugging Face) | image-classification |
 | Descargas / likes | 0 / 0 |
 | Fecha declarada de creacion | 11 de septiembre de 2026 |
 
@@ -85,9 +85,9 @@ Nota metodológica: el holdout es a nivel de imagen, lo que reduce la fuga de in
 
 | Modelo | Tarea | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DINOv3 Face-Region Classifier | Clasificacion binaria cara / no cara por region (incluye pareidolia y dibujos) | no disponible | 224x224 px | dinov3-license | HuggingFace; 0 descargas, 0 likes |
-| facebook/dinov3-vits16-pretrain-lvd1689m | Backbone auto-supervisado para representaciones visuales | no disponible en la informacion proporcionada | 224x224 px (ViT-S/16) | dinov3-license | HuggingFace, checkpoint restringido (gated) |
-| Clasificadores zero-shot tipo CLIP / SigLIP | Clasificacion texto-imagen, incluida la consulta "a photo of a face" | no disponible | segun variante (habitualmente 224x224 px) | no disponible | HuggingFace |
+| DINOv3 Face-Region Classifier | Clasificacion binaria cara / no cara por region (incluye pareidolia y dibujos) | no disponible | 224x224 px | dinov3-license | Hugging Face; 0 descargas, 0 likes |
+| facebook/dinov3-vits16-pretrain-lvd1689m | Backbone auto-supervisado para representaciones visuales | no disponible en la informacion proporcionada | 224x224 px (ViT-S/16) | dinov3-license | Hugging Face, checkpoint restringido (gated) |
+| Clasificadores zero-shot tipo CLIP / SigLIP | Clasificacion texto-imagen, incluida la consulta "a photo of a face" | no disponible | segun variante (habitualmente 224x224 px) | no disponible | Hugging Face |
 | Detectores de caras tipo RetinaFace / MTCNN | Deteccion con cajas delimitadoras y puntos faciales | no disponible | imagen completa | no disponible | repositorios de codigo y pesos publicos |
 
 Diferencias clave frente a las alternativas: los detectores clásicos localizan caras pero no están entrenados para pareidolia ni para caras de dibujos animados, y su umbral suele fallar en texturas ambiguas; los clasificadores zero-shot permiten consultas en lenguaje natural, pero no se han afinado con negativos controlados para el problema concreto de región facial; el backbone DINOv3 sin afinar no ofrece una decisión binaria. Este modelo ocupa un nicho específico: decisión binaria calibrada por región, con pareidolia incorporada en el entrenamiento. No se dispone de datos comparativos de rendimiento entre estas opciones en la información proporcionada.
@@ -102,13 +102,13 @@ Diferencias clave frente a las alternativas: los detectores clásicos localizan 
 - Sesgos de los datos: ExpWild, iCartoonFace y FacesInThings no están descritos con estadísticas demográficas, de etnia, edad, género ni distribución geográfica, por lo que no puede descartarse un sesgo de representación. Las caras de dibujos animados dominan el registro no fotorrealista.
 - Métrica no replicada: el 98,0 % de exactitud procede de una única partición de validación interna del propio autor, sin evaluación externa ni comparación con líneas base publicadas.
 - Licencia: el modelo deriva de facebook/dinov3-vits16-pretrain-lvd1689m y queda sujeto a la dinov3-license de Meta. Antes de un uso comercial hay que revisar los términos de esa licencia; el checkpoint base está restringido en Hugging Face, aunque este repositorio permita reconstruir el modelo sin solicitar acceso.
-- Madurez del repositorio: 0 descargas, 0 likes, sin paper asociado ni validación de terceros; el mantenimiento depende de un único autor y las fechas declaradas en HuggingFace son poco habituales.
+- Madurez del repositorio: 0 descargas, 0 likes, sin paper asociado ni validación de terceros; el mantenimiento depende de un único autor y las fechas declaradas en Hugging Face son poco habituales.
 - Sin capacidades de lenguaje: no hay tool calling, agentes, generación de texto ni soporte multilingüe. Cualquier flujo que necesite descripciones textuales requiere otro modelo.
 - Riesgo de alucinación: no aplica en el sentido generativo, pero sí existe riesgo de clasificaciones erróneas con alta confianza en dominios alejados de la distribución de entrenamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harveymannering/DINOv3_FaceRegionClassifier
+- Modelo en Hugging Face: https://huggingface.co/harveymannering/DINOv3_FaceRegionClassifier
 - Modelo base (DINOv3 ViT-S/16, restringido): https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m
 - Codigo de entrenamiento (train.py, face_dataset.py): https://github.com/harveymannering/FacePareidolia/tree/main/classifier
 - Licencia DINOv3 de Meta: https://ai.meta.com/resources/models-and-libraries/dinov3-license

@@ -25,7 +25,7 @@ Se trata, por tanto, de un artefacto de despliegue y no de un modelo entrenado d
 | Tamaño de los ficheros | IQ3_M ~14 GB; IQ4_XS ~16 GB; Q4_K_M ~18,6 GB |
 | Matriz de importancia | code.imatrix (incluida, reutilizable para otros niveles) |
 | Pipeline | text-generation |
-| Tamaño del repositorio | 0,1 GB (según HuggingFace en la fecha de consulta) |
+| Tamaño del repositorio | 0,1 GB (según Hugging Face en la fecha de consulta) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -94,12 +94,12 @@ Comparación con alternativas de la misma categoría (otros modelos de código d
 - Contexto: la longitud de contexto nativa no se especifica en esta ficha. Los ejemplos usan -c 16384, pero el valor real depende del modelo base y del presupuesto de VRAM disponible para la caché KV.
 - La cuantización introduce pérdida de precisión. Q4_K_M es la opción de mayor calidad y IQ3_M la de menor; ninguna reproduce exactamente el comportamiento del modelo sin cuantizar.
 - Uso comercial: la licencia declarada es Apache 2.0, lo que en principio permite uso comercial, pero conviene verificar la licencia y las condiciones del modelo base Qwen/Qwen3-Coder-30B-A3B-Instruct antes de desplegarlo en producción.
-- Advertencia de integridad: el tamaño del repositorio en HuggingFace es de 0,1 GB, muy inferior a los 14-18,6 GB que ocupan los ficheros GGUF descritos, y el repositorio registra 0 descargas y 0 likes. Conviene verificar que los ficheros están completos y son descargables antes de integrarlo en cualquier flujo.
+- Advertencia de integridad: el tamaño del repositorio en Hugging Face es de 0,1 GB, muy inferior a los 14-18,6 GB que ocupan los ficheros GGUF descritos, y el repositorio registra 0 descargas y 0 likes. Conviene verificar que los ficheros están completos y son descargables antes de integrarlo en cualquier flujo.
 - Ajuste de --n-cpu-moe: es un parámetro dependiente del hardware; el valor 12 de la ficha está pensado para 16 GB de VRAM y debe reajustarse en otras configuraciones.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/n19875624/Qwen3-Coder-30B-A3B-Instruct-code-imatrix-GGUF
+- Repositorio Hugging Face: https://huggingface.co/n19875624/Qwen3-Coder-30B-A3B-Instruct-code-imatrix-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - llama.cpp (runtime requerido para el formato GGUF y las herramientas llama-imatrix y llama-quantize mencionadas en la ficha): https://github.com/ggml-org/llama.cpp
 - Papers, blogs, demos o evaluaciones adicionales: no disponible en la información proporcionada.

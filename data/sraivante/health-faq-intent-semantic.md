@@ -2,7 +2,7 @@
 
 ## Resumen
 
-health-faq-intent-semantic es un sistema de recuperación semántica de preguntas frecuentes (FAQ) orientado a seguros de salud y productos de jubilación en Estados Unidos: Medicare Advantage, Parte D, Medigap, mercado de la ACA, anualidades e IUL, además de consultas de chat entre agentes y consumidores. Lo publica el usuario sraivante en HuggingFace bajo licencia Apache-2.0. No es un modelo generativo: dado un enunciado de usuario, selecciona una de 2.241 FAQ conocidas y devuelve la respuesta almacenada literalmente, junto con una etiqueta de intención de una sola palabra (`definition`, `eligibility`, `cost`, `coverage`, `navigation`, etc.). Si la confianza es insuficiente, no responde y ofrece las tres preguntas candidatas más cercanas para que la aplicación plantee un "¿quisiste decir...?".
+health-faq-intent-semantic es un sistema de recuperación semántica de preguntas frecuentes (FAQ) orientado a seguros de salud y productos de jubilación en Estados Unidos: Medicare Advantage, Parte D, Medigap, mercado de la ACA, anualidades e IUL, además de consultas de chat entre agentes y consumidores. Lo publica el usuario sraivante en Hugging Face bajo licencia Apache-2.0. No es un modelo generativo: dado un enunciado de usuario, selecciona una de 2.241 FAQ conocidas y devuelve la respuesta almacenada literalmente, junto con una etiqueta de intención de una sola palabra (`definition`, `eligibility`, `cost`, `coverage`, `navigation`, etc.). Si la confianza es insuficiente, no responde y ofrece las tres preguntas candidatas más cercanas para que la aplicación plantee un "¿quisiste decir...?".
 
 Técnicamente es un pipeline de similitud semántica construido sobre el encoder `sentence-transformers/paraphrase-MiniLM-L3-v2` (revisión `4ca70771`), congelado y sin fine-tuning, en su variante ONNX cuantizada `model_quint8_avx2.onnx`. El encoder produce embeddings de 384 dimensiones con mean pooling y normalización L2, con un límite de 128 tokens de entrada. Sobre esos embeddings se construyen 6 vectores prototipo por clase de FAQ (13.446 en total) y se aplica una regla de aceptación basada en umbral de similitud y margen respecto al segundo mejor resultado.
 
@@ -94,7 +94,7 @@ La comparación directa con modelos generativos de propósito general no resulta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sraivante/health-faq-intent-semantic
+- Modelo en Hugging Face: https://huggingface.co/sraivante/health-faq-intent-semantic
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-MiniLM-L3-v2
 - Repositorio de sentence-transformers: https://github.com/UKPLab/sentence-transformers
 - onnxruntime: https://github.com/microsoft/onnxruntime

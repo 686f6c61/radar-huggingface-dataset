@@ -89,9 +89,9 @@ Nota del autor: los numeros de `joint_resplat_v2` se evaluan con ajustes de rend
 
 | Modelo | Tipo | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Learn2Splat | Optimizador aprendido para 3DGS | Regla de actualizacion neuronal, zero-shot | CC-BY-4.0 | HuggingFace y GitHub |
+| Learn2Splat | Optimizador aprendido para 3DGS | Regla de actualizacion neuronal, zero-shot | CC-BY-4.0 | Hugging Face y GitHub |
 | Adam / Adam ajustado | Optimizador manual | Regla fija con hiperparametros | No aplica | Estandar en PyTorch |
-| ReSplat (Xu et al., 2025) | Inicializador y refinamiento para 3DGS con vistas dispersas | Red de inicializacion y pasos de refinamiento | no disponible en la informacion proporcionada | `haofeixu/resplat` en HuggingFace |
+| ReSplat (Xu et al., 2025) | Inicializador y refinamiento para 3DGS con vistas dispersas | Red de inicializacion y pasos de refinamiento | no disponible en la informacion proporcionada | `haofeixu/resplat` en Hugging Face |
 
 No se dispone de datos de parametros, contexto ni rendimiento de alternativas adicionales en la informacion proporcionada. La comparativa cuantitativa disponible se limita a las tablas de benchmarks frente a Adam, Adam ajustado y ReSplat.
 
@@ -108,7 +108,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de alternativas ad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/autonomousvision/learn2splat
+- Hugging Face: https://huggingface.co/autonomousvision/learn2splat
 - Pagina del proyecto: https://autonomousvision.github.io/learn2splat/
 - Paper (Learn2Splat): https://arxiv.org/abs/2605.15760
 - Paper (ReSplat): https://arxiv.org/abs/2510.08575

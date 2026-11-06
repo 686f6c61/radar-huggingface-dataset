@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spatial-Interactor-Qwen2.5-VL-3B es un ajuste fino de parametros completos (full-parameter) en BF16 sobre Qwen/Qwen2.5-VL-3B-Instruct, orientado especificamente al razonamiento espacial a partir de interacciones con el mundo fisico observable. Lo publica el usuario kagakouko en HuggingFace y procede del trabajo "Spatial-Interactor: Learning Spatial Reasoning through Interaction with the Observable Physical World", desarrollado por el grupo ZJU-OmniAI (Universidad de Zhejiang), cuyo codigo y pagina de proyecto se enlazan en la model card.
+Spatial-Interactor-Qwen2.5-VL-3B es un ajuste fino de parametros completos (full-parameter) en BF16 sobre Qwen/Qwen2.5-VL-3B-Instruct, orientado especificamente al razonamiento espacial a partir de interacciones con el mundo fisico observable. Lo publica el usuario kagakouko en Hugging Face y procede del trabajo "Spatial-Interactor: Learning Spatial Reasoning through Interaction with the Observable Physical World", desarrollado por el grupo ZJU-OmniAI (Universidad de Zhejiang), cuyo codigo y pagina de proyecto se enlazan en la model card.
 
 El modelo resuelve un problema concreto: que un VLM de tamano pequeno sea capaz de inferir transiciones de estado local del mundo y de ego-movimiento (world-state y ego-motion) y de encadenarlas a lo largo de trayectorias largas de video, algo critico en robotica, conduccion autonoma y agentes embodied. Para ello combina un entrenamiento supervisado (SFT) sobre el split L1-L2 del dataset LSI-108K mas una mezcla publica de QA espacial, seguido de On-Policy Distillation (OPD) con recompensas verificables y autodestilacion privilegiada basada solo en CoT sobre preguntas de video de horizonte largo.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spatial-Interactor-Qwen2.5-VL-3B | 4.065.787.904 (~4,07 B) | No disponible | Razonamiento espacial y transiciones en video (SFT + OPD) | qwen-research | HuggingFace, safetensors BF16 |
-| Qwen2.5-VL-3B-Instruct (modelo base) | Mismo numero de parametros (es el mismo checkpoint ajustado) | No disponible en la informacion proporcionada | VLM conversacional generalista imagen/video | qwen-research | HuggingFace, safetensors |
+| Spatial-Interactor-Qwen2.5-VL-3B | 4.065.787.904 (~4,07 B) | No disponible | Razonamiento espacial y transiciones en video (SFT + OPD) | qwen-research | Hugging Face, safetensors BF16 |
+| Qwen2.5-VL-3B-Instruct (modelo base) | Mismo numero de parametros (es el mismo checkpoint ajustado) | No disponible en la informacion proporcionada | VLM conversacional generalista imagen/video | qwen-research | Hugging Face, safetensors |
 | Otros VLM especializados en razonamiento espacial (por ejemplo, de la familia SpatialRGPT o RoboPoint) | No disponible | No disponible | Razonamiento espacial / affordance robotica | No disponible | No disponible |
 
 La busqueda web realizada no devolvio informacion utilizable sobre modelos alternativos; los unicos datos comparativos fiables son los del modelo base, del que este checkpoint hereda arquitectura, tamano y licencia, y del que se diferencia unicamente por el ajuste fino y la etapa de destilacion.
@@ -89,7 +89,7 @@ La busqueda web realizada no devolvio informacion utilizable sobre modelos alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kagakouko/Spatial-Interactor-Qwen2.5-VL-3B
+- Modelo en Hugging Face: https://huggingface.co/kagakouko/Spatial-Interactor-Qwen2.5-VL-3B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct/blob/main/LICENSE
 - Pagina del proyecto: https://zju-omniai.github.io/Spatial-Interactor/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mondk/Qwen3-VL-4B-Thinking-Msh-Claude-Safetensors` es un modelo multimodal de tipo imagen-texto-a-texto publicado por el usuario mondk en HuggingFace. No se trata de un entrenamiento desde cero, sino de la fusión completa (*full merge*) del modelo base `unsloth/Qwen3-VL-4B-Thinking` con el adaptador LoRA `mondk/Qwen3-VL-4B-Thinking-Msh-Claude`. El resultado es un checkpoint de 4.437.815.808 parámetros (aproximadamente 4,44 mil millones) en formato safetensors, con un repositorio de 8,9 GB.
+`mondk/Qwen3-VL-4B-Thinking-Msh-Claude-Safetensors` es un modelo multimodal de tipo imagen-texto-a-texto publicado por el usuario mondk en Hugging Face. No se trata de un entrenamiento desde cero, sino de la fusión completa (*full merge*) del modelo base `unsloth/Qwen3-VL-4B-Thinking` con el adaptador LoRA `mondk/Qwen3-VL-4B-Thinking-Msh-Claude`. El resultado es un checkpoint de 4.437.815.808 parámetros (aproximadamente 4,44 mil millones) en formato safetensors, con un repositorio de 8,9 GB.
 
 El interés del modelo es acotado y muy específico: aplicar un ajuste supervisado (SFT) con QLoRA sobre 387 pares de conversación procedentes de los conjuntos `mondk/Claude-Haiku-5.5-High-Sft` y `mondk/Msh-Sft`, con el objetivo de aproximar el estilo de respuesta a un asistente tipo Claude. Al estar fusionado, no requiere cargar el adaptador por separado: se comporta como un checkpoint autónomo compatible con la librería `transformers` y con el pipeline `image-text-to-text`.
 
@@ -85,7 +85,7 @@ Los datos de las filas correspondientes a otras variantes de la familia Qwen3-VL
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mondk/Qwen3-VL-4B-Thinking-Msh-Claude-Safetensors
+- Modelo en Hugging Face: https://huggingface.co/mondk/Qwen3-VL-4B-Thinking-Msh-Claude-Safetensors
 - Modelo base: https://huggingface.co/unsloth/Qwen3-VL-4B-Thinking
 - Adaptador LoRA de origen: https://huggingface.co/mondk/Qwen3-VL-4B-Thinking-Msh-Claude
 - Dataset de SFT (estilo Claude): https://huggingface.co/datasets/mondk/Claude-Haiku-5.5-High-Sft

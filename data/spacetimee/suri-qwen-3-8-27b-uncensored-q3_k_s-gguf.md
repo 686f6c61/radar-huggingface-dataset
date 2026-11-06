@@ -88,7 +88,7 @@ Se recomienda consultar la model card del modelo base para obtener informacion a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored-Q3_K_S-GGUF
+- Modelo en Hugging Face: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored-Q3_K_S-GGUF
 - Modelo base: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored
 - Espacio de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

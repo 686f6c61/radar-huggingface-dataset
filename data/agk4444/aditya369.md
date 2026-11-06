@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aditya369 es un modelo de clasificacion de texto derivado de Qwen/Qwen3-4B, publicado por el usuario agk4444 (AGK FIRE INC) en HuggingFace. Se trata de un ajuste fino supervisado sobre el conjunto de datos `dair-ai/emotion`, compuesto por aproximadamente 20.000 tweets y textos cortos en ingles, para predecir una de seis emociones: sadness, joy, love, anger, fear y surprise. El modelo resultante tiene 4.022.483.456 parametros (unos 4.020 millones) y se distribuye ya fusionado: los pesos LoRA se han integrado en el modelo base, que permanece cuantizado a 4 bits.
+Aditya369 es un modelo de clasificacion de texto derivado de Qwen/Qwen3-4B, publicado por el usuario agk4444 (AGK FIRE INC) en Hugging Face. Se trata de un ajuste fino supervisado sobre el conjunto de datos `dair-ai/emotion`, compuesto por aproximadamente 20.000 tweets y textos cortos en ingles, para predecir una de seis emociones: sadness, joy, love, anger, fear y surprise. El modelo resultante tiene 4.022.483.456 parametros (unos 4.020 millones) y se distribuye ya fusionado: los pesos LoRA se han integrado en el modelo base, que permanece cuantizado a 4 bits.
 
 Su relevancia practica es limitada pero clara: ofrece un clasificador de emociones de alta exactitud (0.9350 en el conjunto de test) sobre una arquitectura grande en comparacion con los clasificadores tipicos basados en BERT o DistilBERT. Esto puede ser util cuando se busca reaprovechar infraestructura ya montada para Qwen3 o cuando se quiere comparar el rendimiento de un transformer grande frente a encoders pequenos en una tarea de clasificacion clasica.
 
@@ -108,8 +108,8 @@ La diferencia fundamental frente a los alternativas basados en encoders es el ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agk4444/aditya369
+- Modelo en Hugging Face: https://huggingface.co/agk4444/aditya369
 - Adaptador LoRA sin fusionar: https://huggingface.co/agk4444/aditya369-lora
-- Perfil del autor en HuggingFace: https://huggingface.co/agk4444/models
+- Perfil del autor en Hugging Face: https://huggingface.co/agk4444/models
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/dair-ai/emotion

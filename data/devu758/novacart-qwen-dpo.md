@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Devu758/novacart-qwen-dpo` es un repositorio de modelo publicado en HuggingFace por el usuario Devu758. La informacion disponible se limita a los metadatos del Hub: etiquetas `transformers`, `safetensors`, `unsloth`, `arxiv:1910.09700`, `endpoints_compatible` y `region:us`; un tamano de repositorio de 0,2 GB; cero descargas y cero likes; y una fecha de creacion y actualizacion del 26 de septiembre de 2026, con apenas 34 segundos de diferencia entre ambas. No se declara pipeline de inferencia, licencia ni idiomas soportados.
+`Devu758/novacart-qwen-dpo` es un repositorio de modelo publicado en Hugging Face por el usuario Devu758. La informacion disponible se limita a los metadatos del Hub: etiquetas `transformers`, `safetensors`, `unsloth`, `arxiv:1910.09700`, `endpoints_compatible` y `region:us`; un tamano de repositorio de 0,2 GB; cero descargas y cero likes; y una fecha de creacion y actualizacion del 26 de septiembre de 2026, con apenas 34 segundos de diferencia entre ambas. No se declara pipeline de inferencia, licencia ni idiomas soportados.
 
-La model card asociada es la plantilla autogenerada por HuggingFace: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, modelo base, datos de entrenamiento, hiperparametros, resultados de evaluacion) aparecen como `[More Information Needed]`. La unica informacion sustantiva que puede inferirse del nombre del repositorio es que se trata presumiblemente de un ajuste sobre una familia Qwen mediante DPO (Direct Preference Optimization), realizado con la libreria unsloth, pero ninguna de estas afirmaciones esta confirmada por el autor en la documentacion publicada.
+La model card asociada es la plantilla autogenerada por Hugging Face: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, modelo base, datos de entrenamiento, hiperparametros, resultados de evaluacion) aparecen como `[More Information Needed]`. La unica informacion sustantiva que puede inferirse del nombre del repositorio es que se trata presumiblemente de un ajuste sobre una familia Qwen mediante DPO (Direct Preference Optimization), realizado con la libreria unsloth, pero ninguna de estas afirmaciones esta confirmada por el autor en la documentacion publicada.
 
 Por tanto, este modelo no puede evaluarse tecnicamente con los datos disponibles. Es relevante unicamente como ejemplo de repositorio sin documentacion suficiente para produccion: no hay garantias de licencia, procedencia de datos, comportamiento o rendimiento. Cualquier uso requeriria contactar con el autor y realizar una validacion independiente del checkpoint.
 
@@ -25,7 +25,7 @@ Por tanto, este modelo no puede evaluarse tecnicamente con los datos disponibles
 
 No hay informacion publicada sobre la arquitectura. El campo correspondiente de la model card esta marcado como `[More Information Needed]`. Las etiquetas del repositorio indican compatibilidad con `transformers` y pesos en `safetensors`, y la presencia de la etiqueta `unsloth` apunta a que el ajuste se realizo con esa libreria, especializada en fine-tuning eficiente mediante LoRA y QLoRA. El sufijo `dpo` del nombre sugiere un entrenamiento con optimizacion de preferencias directa, presumiblemente sobre un checkpoint base de la familia Qwen, pero no existe confirmacion del autor.
 
-Tampoco se documentan datos de entrenamiento, numero de tokens, composicion del dataset, hiperparametros, regimen de precision ni infraestructura de computo. La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la propia plantilla de HuggingFace; no es un paper asociado al modelo.
+Tampoco se documentan datos de entrenamiento, numero de tokens, composicion del dataset, hiperparametros, regimen de precision ni infraestructura de computo. La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la propia plantilla de Hugging Face; no es un paper asociado al modelo.
 
 ## Capacidades
 
@@ -80,7 +80,7 @@ No se identifican modelos comparables concretos en la informacion proporcionada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Devu758/novacart-qwen-dpo
+- Repositorio en Hugging Face: https://huggingface.co/Devu758/novacart-qwen-dpo
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la plantilla: https://mlco2.github.io/impact
 - No se han proporcionado enlaces a papers, blogs, repositorios de codigo ni demos especificos del modelo.

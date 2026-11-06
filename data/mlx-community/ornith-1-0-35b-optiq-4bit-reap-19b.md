@@ -85,7 +85,7 @@ La ventaja de este modelo es su menor tamaño y memoria, manteniendo la misma ve
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mlx-community/Ornith-1.0-35B-OptiQ-4bit-REAP-19B
+- Hugging Face: https://huggingface.co/mlx-community/Ornith-1.0-35B-OptiQ-4bit-REAP-19B
 - Modelo padre: https://huggingface.co/mlx-community/Ornith-1.0-35B-OptiQ-4bit
 - Paper REAP: https://arxiv.org/abs/2510.13999
 - Repositorio Ornith-1: https://github.com/ornith-ai/Ornith-1

@@ -77,7 +77,7 @@ Frente al modelo base de Meta, esta variante ofrece un seguimiento de instruccio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tinyopsec/Llama-3.2-Korean-GGACHI-1B-Instruct-v1-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/Llama-3.2-Korean-GGACHI-1B-Instruct-v1-GGUF
 - Modelo base (fine-tuning original): no disponible como URL directa en la informacion proporcionada (referenciado como `torchtorchkimtorch/Llama-3.2-Korean-GGACHI-1B-Instruct-v1`)
 - Modelo base de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Paper, blog o demo: no disponible

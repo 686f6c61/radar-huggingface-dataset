@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`U-WIN/qwen35-9b-equational-theory-mix1m-grpo200-ntp-summary-32k` es un ajuste fino completo (full fine-tune) de 9.409.813.744 parámetros construido sobre el modelo `U-WIN/qwen35-9b-equational-theory-sair-mix1m-70n30t-thinking-grpo-200`, a su vez derivado de la familia Qwen 3.5 (etiqueta de arquitectura `qwen3_5`). Lo publica el usuario U-WIN en HuggingFace bajo licencia Apache 2.0 y con acceso restringido (gated): es necesario aceptar las condiciones en la página del repositorio antes de descargar los pesos. El pipeline declarado es `image-text-to-text`, lo que indica que el modelo acepta entrada multimodal de imagen y texto, aunque la model card no detalla la arquitectura del codificador visual.
+`U-WIN/qwen35-9b-equational-theory-mix1m-grpo200-ntp-summary-32k` es un ajuste fino completo (full fine-tune) de 9.409.813.744 parámetros construido sobre el modelo `U-WIN/qwen35-9b-equational-theory-sair-mix1m-70n30t-thinking-grpo-200`, a su vez derivado de la familia Qwen 3.5 (etiqueta de arquitectura `qwen3_5`). Lo publica el usuario U-WIN en Hugging Face bajo licencia Apache 2.0 y con acceso restringido (gated): es necesario aceptar las condiciones en la página del repositorio antes de descargar los pesos. El pipeline declarado es `image-text-to-text`, lo que indica que el modelo acepta entrada multimodal de imagen y texto, aunque la model card no detalla la arquitectura del codificador visual.
 
 El interés del modelo es de investigación más que de producción: los tags `equational-theory`, `internalization`, `ntp`, `summary` y `grpo` describen un experimento orientado a medir hasta qué punto un LLM puede internalizar teorías ecuacionales (reglas de reescritura y equivalencia entre términos) mediante entrenamiento prolongado y optimización con GRPO, junto con una etapa de next-token prediction sobre tareas de resumen con ventana de 32.000 tokens. El sufijo `mix1m` sugiere un conjunto de mezcla de aproximadamente un millón de ejemplos, y `grpo200` una etapa de refuerzo con GRPO de 200 pasos; ninguno de estos extremos está confirmado en la información disponible.
 
@@ -17,7 +17,7 @@ Se trata de un modelo recién creado (20 de octubre de 2026) con cero descargas 
 | Parámetros activos | No aplica: no hay evidencia de que sea un modelo MoE; los tags no lo indican y el recuento de safetensors corresponde a un modelo denso |
 | Longitud de contexto | 32.768 tokens según el sufijo `32k` del nombre del modelo; no confirmado en la model card |
 | Tipos de cuantización | No disponible en el repositorio (solo se publican pesos `safetensors`; no hay GGUF ni cuantizaciones precalculadas). Cuantización a 8 y 4 bits realizable por el usuario con herramientas estándar |
-| Idiomas soportados | No disponible (el campo de idiomas de HuggingFace está vacío; se heredaría el multilingüismo del modelo base Qwen 3.5, sin confirmar) |
+| Idiomas soportados | No disponible (el campo de idiomas de Hugging Face está vacío; se heredaría el multilingüismo del modelo base Qwen 3.5, sin confirmar) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | `safetensors` (repo de 18,8 GB, compatible con `transformers`) |
 
@@ -78,7 +78,7 @@ Frente a estas alternativas, la diferencia relevante no es de tamaño sino de es
 ## Limitaciones y advertencias
 
 - Ausencia total de evaluación publicada: cero descargas, cero likes y ninguna métrica. No hay evidencia de que el ajuste fino no haya degradado capacidades generales del modelo base (olvido catastrófico), un riesgo alto en full fine-tune sobre 9,4 B de parámetros.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que puede bloquear descargas automatizadas en CI/CD y en entornos de investigación reproducibles.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que puede bloquear descargas automatizadas en CI/CD y en entornos de investigación reproducibles.
 - Trazabilidad limitada: no hay model card descriptiva, ni ficha de datos, ni informe de composición del corpus de un millón de ejemplos. Se desconocen las fuentes y sus licencias, lo que complica la auditoría legal.
 - Riesgo de alucinación: no cuantificado. En tareas de razonamiento formal el fallo silencioso (una reescritura incorrecta presentada con seguridad) es especialmente peligroso; requiere verificación externa.
 - Idiomas no declarados: el campo de idiomas está vacío. No hay garantía de calidad en castellano ni en ningún otro idioma distinto del que dominase el modelo base.
@@ -89,6 +89,6 @@ Frente a estas alternativas, la diferencia relevante no es de tamaño sino de es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-mix1m-grpo200-ntp-summary-32k
+- Modelo en Hugging Face: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-mix1m-grpo200-ntp-summary-32k
 - Modelo base: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-mix1m-70n30t-thinking-grpo-200
 - Paper, blog técnico, repositorio de código o demo: no disponible (la búsqueda web no devolvió resultados relacionados con el modelo).

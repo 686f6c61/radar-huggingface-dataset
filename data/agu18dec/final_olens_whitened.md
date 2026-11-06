@@ -70,9 +70,9 @@ Con 4 muestras por vector en lugar de 1, la puntuación sube a .758 (medida en e
 
 | Modelo | Parametros | Contexto | WorkspaceBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `final_olens_whitened` (lente A) | 117M entrenables + base 27B | no disponible | .678 (step300) | no disponible | HuggingFace |
-| `final_olens` (lente B) | 117M entrenables + base 27B | no disponible | .683 (step600) | no disponible | HuggingFace |
-| `olens-ablations` | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `final_olens_whitened` (lente A) | 117M entrenables + base 27B | no disponible | .678 (step300) | no disponible | Hugging Face |
+| `final_olens` (lente B) | 117M entrenables + base 27B | no disponible | .683 (step600) | no disponible | Hugging Face |
+| `olens-ablations` | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de información sobre otras lentes comparables fuera del ecosistema del autor.
 
@@ -89,7 +89,7 @@ No se dispone de información sobre otras lentes comparables fuera del ecosistem
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agu18dec/final_olens_whitened
+- Hugging Face: https://huggingface.co/agu18dec/final_olens_whitened
 - Lente B (hermana): https://huggingface.co/agu18dec/final_olens
 - Estudio de ablaciones: https://huggingface.co/agu18dec/olens-ablations
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B

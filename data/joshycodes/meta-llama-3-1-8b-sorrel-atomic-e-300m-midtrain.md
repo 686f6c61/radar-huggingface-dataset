@@ -107,7 +107,7 @@ La comparacion estructural es casi trivial: los tres primeros comparten el mismo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-e-300m-midtrain
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-e-300m-midtrain
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B
 - Modelo base oficial: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/joshycodes/sorrel-corpus

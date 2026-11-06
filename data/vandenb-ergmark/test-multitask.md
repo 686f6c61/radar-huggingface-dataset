@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vandenb-ergmark/test-multitask` es un repositorio de HuggingFace publicado por el usuario vandenb-ergmark que contiene una implementación propia en PyTorch de una arquitectura denominada "Hybrid" orientada a tareas multitarea. No es un modelo preentrenado ni un release listo para producción: la propia model card lo describe como un esqueleto compacto para revisión de código, smoke tests y experimentos controlados de pequeño alcance. El checkpoint `model.safetensors` incluido es una inicialización válida para pruebas de carga, no un modelo entrenado.
+`vandenb-ergmark/test-multitask` es un repositorio de Hugging Face publicado por el usuario vandenb-ergmark que contiene una implementación propia en PyTorch de una arquitectura denominada "Hybrid" orientada a tareas multitarea. No es un modelo preentrenado ni un release listo para producción: la propia model card lo describe como un esqueleto compacto para revisión de código, smoke tests y experimentos controlados de pequeño alcance. El checkpoint `model.safetensors` incluido es una inicialización válida para pruebas de carga, no un modelo entrenado.
 
 El dato más relevante para evaluarlo es su tamaño real: 49.600 parámetros totales según el fichero safetensors, es decir, unas tres órdenes de magnitud por debajo de cualquier modelo de lenguaje utilizable. La etiqueta "huge" del `config.json` es una etiqueta de escala interna de la configuración, no una medida de capacidad. El repositorio ocupa 0,0 GB y no declara pipeline, idiomas ni resultados de evaluación.
 
@@ -80,6 +80,6 @@ No se han identificado en la información disponible modelos comparables de la m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vandenb-ergmark/test-multitask
+- Hugging Face: https://huggingface.co/vandenb-ergmark/test-multitask
 
 Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo (los resultados obtenidos no guardan relación con el repositorio), por lo que no hay papers, blogs, repositorios de código ni demos adicionales que enlazar.

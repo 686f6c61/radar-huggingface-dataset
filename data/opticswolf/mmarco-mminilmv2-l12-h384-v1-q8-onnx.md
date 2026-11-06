@@ -88,10 +88,10 @@ La comparativa se limita a modelos de la misma categoría (cross-encoders de rer
 - La cuantización int8 introduce una degradación pequeña pero medible (hasta 0,016 nDCG@10 en los benchmarks reportados); en dominios distintos a los evaluados la pérdida podría ser mayor.
 - Licencia Apache-2.0, permisiva para uso comercial, siempre que se respeten las condiciones de atribución.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta; es una publicación reciente y sin validación comunitaria independiente.
-- La fecha de creación indicada (2026-10-30) es futura respecto a la información habitual de HuggingFace; conviene verificar la vigencia del artefacto.
+- La fecha de creación indicada (2026-10-30) es futura respecto a la información habitual de Hugging Face; conviene verificar la vigencia del artefacto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/opticsWolf/mmarco-mMiniLMv2-L12-H384-v1-q8-onnx
+- Modelo en Hugging Face: https://huggingface.co/opticsWolf/mmarco-mMiniLMv2-L12-H384-v1-q8-onnx
 - Modelo base: https://huggingface.co/cross-encoder/mmarco-mMiniLMv2-L12-H384-v1
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

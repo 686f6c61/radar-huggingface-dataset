@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nld-100mb-after-nld_uniform-ckpt500_seed10_seed10` es un modelo de generacion de texto de tipo GPT-2 con 124.770.816 parametros, publicado por el usuario `fpadovani` en HuggingFace. Se trata de un ajuste fino (SFT, supervisado) del modelo `fpadovani/ppt-nld_uniform-100mb_seed10`, realizado con la libreria TRL de HuggingFace, segun se indica en la model card.
+`nld-100mb-after-nld_uniform-ckpt500_seed10_seed10` es un modelo de generacion de texto de tipo GPT-2 con 124.770.816 parametros, publicado por el usuario `fpadovani` en Hugging Face. Se trata de un ajuste fino (SFT, supervisado) del modelo `fpadovani/ppt-nld_uniform-100mb_seed10`, realizado con la libreria TRL de Hugging Face, segun se indica en la model card.
 
 El nombre del modelo apunta a un artefacto de investigacion mas que a un modelo de proposito general: los sufijos `nld_uniform`, `ckpt500`, `100mb` y `seed10` son compatibles con un experimento sobre ordenacion o seleccion de datos de entrenamiento (100 MB de corpus, punto de control 500, semilla 10). El enlace de seguimiento del entrenamiento apunta al proyecto de Weights & Biases `f-padovani-university-of-groningen/white_cotterell`, lo que situa el trabajo en el entorno de investigacion de la Universidad de Groningen. No hay documentacion publica adicional que confirme esta interpretacion.
 
@@ -12,7 +12,7 @@ Su relevancia practica es limitada como modelo de produccion (0 descargas, 0 lik
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (etiqueta `gpt2` en HuggingFace); configuracion exacta no disponible |
+| Arquitectura | Transformer decoder (etiqueta `gpt2` en Hugging Face); configuracion exacta no disponible |
 | Parametros totales | 124.770.816 |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
@@ -94,7 +94,7 @@ La ventaja comparativa de este modelo frente a las alternativas es la trazabilid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/nld-100mb-after-nld_uniform-ckpt500_seed10_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/nld-100mb-after-nld_uniform-ckpt500_seed10_seed10
 - Modelo base: https://huggingface.co/fpadovani/ppt-nld_uniform-100mb_seed10
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/in778bhs
 - Repositorio de TRL: https://github.com/huggingface/trl

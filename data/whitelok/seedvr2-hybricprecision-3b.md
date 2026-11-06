@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| EZVR Flash V1 (esta ficha) | ~3B | Conversion BF16 de SeedVR2 3B para EZVideoRepair | Apache-2.0 | safetensors BF16 | HuggingFace, solo app EZVideoRepair |
-| ByteDance-Seed/SeedVR2-3B | ~3B | DiT original de restauracion de video | no disponible en la informacion | no disponible | HuggingFace (modelo base oficial) |
-| cmeka/SeedVR2-GGUF | ~3B | Conversion GGUF de SeedVR2 | no disponible en la informacion | GGUF (incluye Q4_K_M) | HuggingFace |
-| Comfy-Org/SeedVR2 | no disponible | Version indicada como `new_version` en la model card | no disponible en la informacion | no disponible | HuggingFace |
+| EZVR Flash V1 (esta ficha) | ~3B | Conversion BF16 de SeedVR2 3B para EZVideoRepair | Apache-2.0 | safetensors BF16 | Hugging Face, solo app EZVideoRepair |
+| ByteDance-Seed/SeedVR2-3B | ~3B | DiT original de restauracion de video | no disponible en la informacion | no disponible | Hugging Face (modelo base oficial) |
+| cmeka/SeedVR2-GGUF | ~3B | Conversion GGUF de SeedVR2 | no disponible en la informacion | GGUF (incluye Q4_K_M) | Hugging Face |
+| Comfy-Org/SeedVR2 | no disponible | Version indicada como `new_version` en la model card | no disponible en la informacion | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/whitelok/seedvr2-hybricprecision-3b
+- Repositorio Hugging Face: https://huggingface.co/whitelok/seedvr2-hybricprecision-3b
 - Modelo base oficial: https://huggingface.co/ByteDance-Seed/SeedVR2-3B
 - Proyecto SeedVR2: https://github.com/ByteDance-Seed/SeedVR
 - GGUF de origen del DiT: https://huggingface.co/AInVFX/SeedVR2_comfyUI/blob/main/seedvr2_ema_3b-Q4_K_M.gguf

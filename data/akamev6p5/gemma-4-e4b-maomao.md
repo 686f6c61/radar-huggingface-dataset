@@ -73,8 +73,8 @@ No se han identificado en la informacion proporcionada otros adaptadores compara
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma-4-E4B-Maomao | no disponible (adaptadores LoRA de ~2,2 GB) | no disponible | Agente de código con doble adaptador generador/verificador | no disponible | HuggingFace, 0 descargas |
-| google/gemma-4-E4B-it (base) | no disponible | no disponible | Modelo instructivo generalista | no disponible en la informacion proporcionada | HuggingFace |
+| Gemma-4-E4B-Maomao | no disponible (adaptadores LoRA de ~2,2 GB) | no disponible | Agente de código con doble adaptador generador/verificador | no disponible | Hugging Face, 0 descargas |
+| google/gemma-4-E4B-it (base) | no disponible | no disponible | Modelo instructivo generalista | no disponible en la informacion proporcionada | Hugging Face |
 | Otros adaptadores tipo SWE-bench | no disponible | no disponible | no disponible | no disponible | No identificados en la informacion disponible |
 
 ## Limitaciones y advertencias

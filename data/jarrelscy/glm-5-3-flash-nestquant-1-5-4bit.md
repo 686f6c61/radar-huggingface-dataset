@@ -90,6 +90,6 @@ No se dispone de datos de otras alternativas comparables en la informacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jarrelscy/GLM-5.3-Flash-NestQuant-1.5-4bit
+- Modelo en Hugging Face: https://huggingface.co/jarrelscy/GLM-5.3-Flash-NestQuant-1.5-4bit
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Papers, blogs, repositorios o demos adicionales: no disponible. Las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo (unicamente paginas generales sobre ChatGPT, sin relacion con la ficha).

@@ -55,6 +55,6 @@ No disponible. No hay informacion suficiente sobre este modelo para compararlo c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/greenohiotree/flux-loras-bb
+- Repositorio Hugging Face: https://huggingface.co/greenohiotree/flux-loras-bb
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Coleccion de LoRAs de XLabs-AI (referencia de la categoria): https://huggingface.co/XLabs-AI/flux-lora-collection

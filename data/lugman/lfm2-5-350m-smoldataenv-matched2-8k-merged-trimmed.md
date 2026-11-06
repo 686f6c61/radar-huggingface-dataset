@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed es un ajuste fino (fine-tuning) del modelo base LiquidAI/LFM2.5-350M, desarrollado por el usuario lugman y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de generación de texto de tipo conversacional, entrenado con la librería Unsloth y TRL de HuggingFace, lo que según el autor permitió un entrenamiento 2x más rápido. El modelo cuenta con 354.483.968 parámetros totales (aproximadamente 350M) y está orientado a tareas de generación de texto en inglés.
+LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed es un ajuste fino (fine-tuning) del modelo base LiquidAI/LFM2.5-350M, desarrollado por el usuario lugman y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de generación de texto de tipo conversacional, entrenado con la librería Unsloth y TRL de Hugging Face, lo que según el autor permitió un entrenamiento 2x más rápido. El modelo cuenta con 354.483.968 parámetros totales (aproximadamente 350M) y está orientado a tareas de generación de texto en inglés.
 
-El nombre del modelo sugiere que fue entrenado sobre un conjunto de datos denominado "SmolDataEnv" con un contexto de 2.8K tokens, y que posteriormente se realizó un proceso de fusión (merged) y recorte (trimmed) de pesos. Sin embargo, la model card no proporciona detalles técnicos sobre estos procesos, la composición del dataset de entrenamiento ni los hiperparámetros utilizados. La información disponible es muy limitada, limitándose a los metadatos de HuggingFace y a una model card mínima generada automáticamente por Unsloth.
+El nombre del modelo sugiere que fue entrenado sobre un conjunto de datos denominado "SmolDataEnv" con un contexto de 2.8K tokens, y que posteriormente se realizó un proceso de fusión (merged) y recorte (trimmed) de pesos. Sin embargo, la model card no proporciona detalles técnicos sobre estos procesos, la composición del dataset de entrenamiento ni los hiperparámetros utilizados. La información disponible es muy limitada, limitándose a los metadatos de Hugging Face y a una model card mínima generada automáticamente por Unsloth.
 
 La relevancia de este modelo radica en su tamaño reducido (350M parámetros), que lo hace adecuado para despliegues en entornos con recursos limitados, como dispositivos edge o GPUs de consumo. No obstante, al ser un fine-tuning de un modelo base ya existente y con escasa documentación, su utilidad práctica debe evaluarse con cautela.
 
@@ -23,14 +23,14 @@ La relevancia de este modelo radica en su tamaño reducido (350M parámetros), q
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo es LFM2, según los tags de HuggingFace, que corresponde a la familia de modelos Liquid Foundation Models desarrollada por LiquidAI. No se dispone de información detallada sobre la arquitectura interna (tipo de transformer, mecanismos de atención, etc.) en la documentación proporcionada. El modelo base LiquidAI/LFM2.5-350M es un modelo de 350M parámetros, pero se desconoce si emplea técnicas como atención lineal, SSM o arquitecturas híbridas.
+La arquitectura del modelo es LFM2, según los tags de Hugging Face, que corresponde a la familia de modelos Liquid Foundation Models desarrollada por LiquidAI. No se dispone de información detallada sobre la arquitectura interna (tipo de transformer, mecanismos de atención, etc.) en la documentación proporcionada. El modelo base LiquidAI/LFM2.5-350M es un modelo de 350M parámetros, pero se desconoce si emplea técnicas como atención lineal, SSM o arquitecturas híbridas.
 
-El entrenamiento se realizó mediante fine-tuning supervisado utilizando Unsloth y la librería TRL de HuggingFace. El nombre del modelo indica que se utilizó un dataset llamado "SmolDataEnv" con un contexto de 2.8K tokens, seguido de un proceso de fusión y recorte de pesos. No se especifica el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se detallan innovaciones técnicas adicionales.
+El entrenamiento se realizó mediante fine-tuning supervisado utilizando Unsloth y la librería TRL de Hugging Face. El nombre del modelo indica que se utilizó un dataset llamado "SmolDataEnv" con un contexto de 2.8K tokens, seguido de un proceso de fusión y recorte de pesos. No se especifica el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se detallan innovaciones técnicas adicionales.
 
 ## Capacidades
 
 - Generación de texto conversacional en inglés.
-- Entrenado para tareas de text-generation, según el pipeline de HuggingFace.
+- Entrenado para tareas de text-generation, según el pipeline de Hugging Face.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y multi-step reasoning: no disponible.
 - Capacidades multilingües: limitadas al inglés (según el campo `language: en`).
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed | 354M | no disponible | Apache 2.0 | HuggingFace |
-| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | Apache 2.0 | HuggingFace |
-| SmolLM-360M | 360M | 2K (típico) | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B | 500M | 32K | Apache 2.0 | HuggingFace |
+| LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed | 354M | no disponible | Apache 2.0 | Hugging Face |
+| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | Apache 2.0 | Hugging Face |
+| SmolLM-360M | 360M | 2K (típico) | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B | 500M | 32K | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para el modelo evaluado.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo para el modelo evaluado.
 
 ## Enlaces
 
-- [HuggingFace: lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed](https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed)
+- [Hugging Face: lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed](https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed)
 - [Modelo base: LiquidAI/LFM2.5-350M](https://huggingface.co/LiquidAI/LFM2.5-350M)
 - [Unsloth](https://github.com/unslothai/unsloth)
-- [TRL de HuggingFace](https://github.com/huggingface/trl)
+- [TRL de Hugging Face](https://github.com/huggingface/trl)

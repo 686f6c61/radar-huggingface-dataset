@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `EliasMeh/vit-beans-demo` es un clasificador de imágenes basado en un Vision Transformer (ViT), obtenido mediante fine-tuning del modelo `google/vit-base-patch16-224-in21k`. El autor, `EliasMeh`, lo publicó en HuggingFace bajo licencia Apache 2.0, con el pipeline `image-classification` y etiquetas de `vit` e `image-classification`. Según la model card, se trata de un ajuste fino sobre un dataset no especificado, aunque la convención de nombres y la existencia de modelos similares apuntan al dataset `beans` (clasificación de enfermedades en hojas de frijol). El modelo tiene 85.800.963 parámetros totales y un tamaño de repositorio de 1,7 GB, con pesos en formato `safetensors`.
+El modelo `EliasMeh/vit-beans-demo` es un clasificador de imágenes basado en un Vision Transformer (ViT), obtenido mediante fine-tuning del modelo `google/vit-base-patch16-224-in21k`. El autor, `EliasMeh`, lo publicó en Hugging Face bajo licencia Apache 2.0, con el pipeline `image-classification` y etiquetas de `vit` e `image-classification`. Según la model card, se trata de un ajuste fino sobre un dataset no especificado, aunque la convención de nombres y la existencia de modelos similares apuntan al dataset `beans` (clasificación de enfermedades en hojas de frijol). El modelo tiene 85.800.963 parámetros totales y un tamaño de repositorio de 1,7 GB, con pesos en formato `safetensors`.
 
 El modelo es relevante para tareas de clasificación de imágenes en entornos agrícolas o educativos, especialmente cuando se necesita un modelo compacto, fácil de fine-tunear y compatible con la librería `transformers`. Su arquitectura ViT-base con parches de 16 y resolución de entrada 224 permite una inferencia eficiente en GPUs de consumo e incluso en CPU. La ficha técnica está incompleta (el autor indica "More information needed"), por lo que algunos datos como el dataset de entrenamiento, los idiomas o las cuantizaciones no están disponibles.
 
@@ -31,7 +31,7 @@ El proceso de entrenamiento, descrito en la model card, se realizó con los sigu
 - Extracción de características: al ser un ViT, puede utilizarse como backbone para otras tareas de visión por computador, como detección de objetos o segmentación.
 - Fine-tuning: es compatible con la librería `transformers`, lo que permite ajustarlo adicionalmente en otros datasets de imágenes.
 - Inferencia eficiente: su tamaño de 85,8 millones de parámetros permite ejecutarlo en GPU de consumo o incluso en CPU con tiempos de respuesta razonables.
-- Integración con HuggingFace: soporta el pipeline `image-classification` y los Inference Endpoints de HuggingFace.
+- Integración con Hugging Face: soporta el pipeline `image-classification` y los Inference Endpoints de Hugging Face.
 - No soporta generación de texto, tool calling, agentes, razonamiento simbólico ni procesamiento de lenguaje natural, ya que es un modelo exclusivamente de visión.
 
 ## Casos de uso
@@ -41,7 +41,7 @@ El proceso de entrenamiento, descrito en la model card, se realizó con los sigu
 - Prototipado rápido en agricultura de precisión: permite validar un pipeline de clasificación de imágenes con datos agrícolas antes de invertir en modelos más grandes o en infraestructura más costosa.
 - Aplicaciones educativas en machine learning: al ser un modelo pequeño, con licencia Apache 2.0 y documentación accesible, es adecuado para enseñar el proceso de fine-tuning de transformers en visión por computador.
 - Integración en sistemas de apoyo a la decisión: un sistema que analice imágenes de cultivos y recomiende acciones agronómicas podría usar este modelo como componente de clasificación.
-- Benchmark interno de clasificación: empresas o laboratorios que necesiten comparar diferentes arquitecturas de visión pueden usar este modelo como baseline, gracias a su disponibilidad en HuggingFace y su formato `safetensors`.
+- Benchmark interno de clasificación: empresas o laboratorios que necesiten comparar diferentes arquitecturas de visión pueden usar este modelo como baseline, gracias a su disponibilidad en Hugging Face y su formato `safetensors`.
 
 ## Benchmarks y rendimiento
 
@@ -68,17 +68,17 @@ No se han publicado resultados de benchmarks estándar como MMLU, HumanEval o GS
 - VRAM estimada para inferencia: en precisión fp32, los pesos ocupan aproximadamente 343 MB; en fp16, unos 172 MB; en int8, unos 86 MB. Añadiendo el overhead de la librería y las activaciones, se recomienda al menos 1 GB de VRAM.
 - GPU recomendadas: cualquier GPU moderna con al menos 1 GB de VRAM, como una NVIDIA GTX 1050, RTX 3050, RTX 4060 o superior. También puede ejecutarse en CPU, aunque con mayor latencia.
 - Cabe en GPUs de consumo: sí, es un modelo ligero que funciona en tarjetas gráficas de gama baja.
-- Opciones de despliegue: se puede usar directamente con la librería `transformers` mediante el pipeline `image-classification`, desplegar en HuggingFace Inference Endpoints, exportar a ONNX para producción con ONNX Runtime, o servir a través de TorchServe o una API FastAPI.
+- Opciones de despliegue: se puede usar directamente con la librería `transformers` mediante el pipeline `image-classification`, desplegar en Hugging Face Inference Endpoints, exportar a ONNX para producción con ONNX Runtime, o servir a través de TorchServe o una API FastAPI.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| google/vit-base-patch16-224-in21k | 86M (aprox.) | No aplica | No disponible | Apache 2.0 | HuggingFace |
-| EliasMeh/vit-beans-demo | 85.800.963 | No aplica | Accuracy 0.9688 (declarada) | Apache 2.0 | HuggingFace |
-| eitankon/vit-base-beans-demo-v5 | No disponible | No aplica | No disponible | Apache 2.0 | HuggingFace |
-| SH0827/vit-base-beans-demo-v5 | No disponible | No aplica | No disponible | No disponible | HuggingFace |
+| google/vit-base-patch16-224-in21k | 86M (aprox.) | No aplica | No disponible | Apache 2.0 | Hugging Face |
+| EliasMeh/vit-beans-demo | 85.800.963 | No aplica | Accuracy 0.9688 (declarada) | Apache 2.0 | Hugging Face |
+| eitankon/vit-base-beans-demo-v5 | No disponible | No aplica | No disponible | Apache 2.0 | Hugging Face |
+| SH0827/vit-base-beans-demo-v5 | No disponible | No aplica | No disponible | No disponible | Hugging Face |
 
 Los modelos `eitankon/vit-base-beans-demo-v5` y `SH0827/vit-base-beans-demo-v5` son fine-tunes similares del mismo modelo base sobre el dataset `beans`, pero no se dispone de datos de rendimiento ni de parámetros exactos en la información de la búsqueda web.
 
@@ -95,7 +95,7 @@ Los modelos `eitankon/vit-base-beans-demo-v5` y `SH0827/vit-base-beans-demo-v5` 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EliasMeh/vit-beans-demo
+- Modelo en Hugging Face: https://huggingface.co/EliasMeh/vit-beans-demo
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224-in21k
 - Fine-tune similar: https://huggingface.co/eitankon/vit-base-beans-demo-v5
 - Fine-tune similar: https://huggingface.co/SH0827/vit-base-beans-demo-v5

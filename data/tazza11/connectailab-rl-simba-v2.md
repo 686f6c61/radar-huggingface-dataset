@@ -82,7 +82,7 @@ No se dispone de modelos comparables directos en la informacion proporcionada (n
 |---|---|---|---|---|
 | Qwen3.5-0.8B sin ajuste (base) | 33,5% | 2,33 | segun el modelo base | publico |
 | Adaptador con aprendizaje supervisado | 75,8% | 1,93 | no disponible | no publicado como modelo independiente |
-| Connectailab-rl-simba-v2 (GRPO) | 72,6% | 1,90 | Apache 2.0 | HuggingFace |
+| Connectailab-rl-simba-v2 (GRPO) | 72,6% | 1,90 | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -100,7 +100,7 @@ No se dispone de modelos comparables directos en la informacion proporcionada (n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tazza11/connectailab-rl-simba-v2
+- Modelo en Hugging Face: https://huggingface.co/tazza11/connectailab-rl-simba-v2
 - Repositorio Connect Tycoon en GitHub: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab para entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube de Connect AI Lab: https://www.youtube.com/@CONNECT-AI-LAB

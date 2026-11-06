@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Base | Contexto / duracion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JOYUNGI/pixelart8x-h3-lora (este) | LoRA texto-a-video + imagen | MiniMax H3 | 124 fotogramas (5,2 s a 24 fps), resolucion en multiplos de 32 px | minimax-h3-community-license-agreement | Publico en HuggingFace, 0 descargas |
-| JOYUNGI/nwpxstyle-h3-lora | LoRA texto-a-imagen | MiniMax H3 | solo imagenes fijas | no disponible en la informacion proporcionada | Publico en HuggingFace |
+| JOYUNGI/pixelart8x-h3-lora (este) | LoRA texto-a-video + imagen | MiniMax H3 | 124 fotogramas (5,2 s a 24 fps), resolucion en multiplos de 32 px | minimax-h3-community-license-agreement | Publico en Hugging Face, 0 descargas |
+| JOYUNGI/nwpxstyle-h3-lora | LoRA texto-a-imagen | MiniMax H3 | solo imagenes fijas | no disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otros adaptadores de pixel art para video: no disponible en la informacion proporcionada | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 La comparacion mas directa disponible es la version 1 del mismo autor: misma base, mismo dominio estetico, pero limitada a imagenes fijas. La v2 anade generacion de video y entrena imagen y video de forma conjunta en una unica ejecucion.
@@ -88,7 +88,7 @@ La comparacion mas directa disponible es la version 1 del mismo autor: misma bas
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/JOYUNGI/pixelart8x-h3-lora
+- Repositorio Hugging Face del modelo: https://huggingface.co/JOYUNGI/pixelart8x-h3-lora
 - LoRA v1 del mismo autor (solo imagenes fijas): https://huggingface.co/JOYUNGI/nwpxstyle-h3-lora
 - Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Modelo base en formato Comfy: https://huggingface.co/Comfy-Org/MiniMax-H3

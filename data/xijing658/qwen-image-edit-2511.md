@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen-Image-Edit-2511 | 20,4 B | no disponible | Apache 2.0 | HuggingFace, ModelScope |
-| Qwen-Image-Edit-2509 | no disponible | no disponible | Apache 2.0 | HuggingFace, ModelScope |
+| Qwen-Image-Edit-2511 | 20,4 B | no disponible | Apache 2.0 | Hugging Face, ModelScope |
+| Qwen-Image-Edit-2509 | no disponible | no disponible | Apache 2.0 | Hugging Face, ModelScope |
 | Otros modelos de edicion (p.ej. InstructPix2Pix, FLUX.1 Kontext) | no disponible | no disponible | variable | variable |
 
 La comparativa detallada con alternativas de la misma categoria no esta disponible en la informacion proporcionada. Se recomienda consultar benchmarks publicos de edicion de imagenes para una evaluacion objetiva.
@@ -79,8 +79,8 @@ La comparativa detallada con alternativas de la misma categoria no esta disponib
 
 ## Enlaces
 
-- HuggingFace (modelo original): https://huggingface.co/Qwen/Qwen-Image-Edit-2511
-- HuggingFace (repo del autor de la ficha): https://huggingface.co/xijing658/Qwen-Image-Edit-2511
+- Hugging Face (modelo original): https://huggingface.co/Qwen/Qwen-Image-Edit-2511
+- Hugging Face (repo del autor de la ficha): https://huggingface.co/xijing658/Qwen-Image-Edit-2511
 - ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-Edit-2511
 - Tech Report: https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-Image/Qwen_Image.pdf
 - Blog oficial: https://qwenlm.github.io/blog/qwen-image-edit-2511/

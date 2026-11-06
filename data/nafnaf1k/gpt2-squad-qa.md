@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpt2-squad-qa` es un artefacto de investigación publicado por el usuario Nafnaf1k en HuggingFace que se presenta como un ajuste fino de GPT-2 para question answering sobre SQuAD. Sin embargo, la propia model card lo clasifica explícitamente como un exploit sembrado (seeded exploit) dentro de una taxonomía de seguridad de IA, con la etiqueta `ground truth: malicious`. No es un modelo destinado a uso productivo, sino un caso de estudio controlado sobre integridad de evaluaciones y riesgos de ejecución de código en el momento de la carga.
+`gpt2-squad-qa` es un artefacto de investigación publicado por el usuario Nafnaf1k en Hugging Face que se presenta como un ajuste fino de GPT-2 para question answering sobre SQuAD. Sin embargo, la propia model card lo clasifica explícitamente como un exploit sembrado (seeded exploit) dentro de una taxonomía de seguridad de IA, con la etiqueta `ground truth: malicious`. No es un modelo destinado a uso productivo, sino un caso de estudio controlado sobre integridad de evaluaciones y riesgos de ejecución de código en el momento de la carga.
 
 El artefacto se basa en los pesos originales de `openai-community/gpt2` (124 millones de parámetros, transformer decoder-only, contexto de 1024 tokens), que según la model card son idénticos en todos los artefactos de la fila A1 del estudio. La particularidad reside en que el `config.json` incluye un bloque `auto_map` que apunta a una clase personalizada definida en `modeling_gpt2_squad_qa.py`, de modo que cargar el modelo requiere `trust_remote_code=True` y ejecuta código Python en tiempo de carga.
 
@@ -82,6 +82,6 @@ La comparación relevante no es de rendimiento sino de superficie de riesgo: fre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-squad-qa
+- Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-squad-qa
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - No se han encontrado en la información disponible enlaces a papers, blogs, repositorios de código o demos adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mamba-1.3B con un 80 % de esparsidad semiestructurada es un checkpoint de investigación publicado por el usuario ikimyaii en HuggingFace, obtenido podando el modelo base `fla-hub/mamba-1.3B-100B` mediante una receta de dos fases basada en ADMM (EHWS, con una fase 1 local de estilo ALPS hasta el 70 % y una fase 2 global hasta el 80 %). No es un modelo nuevo entrenado desde cero: es una compresión agresiva de un modelo de espacio de estados (SSM) selectivo de 1.334.740.992 parámetros, en el que cada fila de cada capa lineal podable conserva exactamente el mismo número de pesos (el 20 % superior), mientras que embeddings, `lm_head`, `dt_proj`, `conv1d`, `A_log` y `D` permanecen densos.
+Mamba-1.3B con un 80 % de esparsidad semiestructurada es un checkpoint de investigación publicado por el usuario ikimyaii en Hugging Face, obtenido podando el modelo base `fla-hub/mamba-1.3B-100B` mediante una receta de dos fases basada en ADMM (EHWS, con una fase 1 local de estilo ALPS hasta el 70 % y una fase 2 global hasta el 80 %). No es un modelo nuevo entrenado desde cero: es una compresión agresiva de un modelo de espacio de estados (SSM) selectivo de 1.334.740.992 parámetros, en el que cada fila de cada capa lineal podable conserva exactamente el mismo número de pesos (el 20 % superior), mientras que embeddings, `lm_head`, `dt_proj`, `conv1d`, `A_log` y `D` permanecen densos.
 
 El interés del artefacto es metodológico, no de producto: demuestra que la misma receta aplicada sin ajuste por modelo a HGRN-1.3B funciona igualmente sobre una arquitectura Mamba, y que elegir un objetivo intermedio del 70 % en la fase 1 (en lugar del 80 % directo) reduce la perplejidad final en un 10,2 % en WikiText-2 y un 6,9 % en C4. Todo el proceso de poda consumió 4,08 horas en una única A100 de 40 GB, incluida la evaluación, lo que lo convierte en un caso práctico de compresión de bajo coste.
 
@@ -122,7 +122,7 @@ La comparación relevante es interna: frente al checkpoint con fase 1 al 80 %, e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/Mamba-1.3B-semi-structured-EHWS-ALPS_phase1-70pct-80pct — URL canónica del repositorio: https://huggingface.co/ikimyaii/Mamba-1.3B-semi-structured-EHWS-ALPS_phase1-p1t0.7-80pct
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/Mamba-1.3B-semi-structured-EHWS-ALPS_phase1-70pct-80pct — URL canónica del repositorio: https://huggingface.co/ikimyaii/Mamba-1.3B-semi-structured-EHWS-ALPS_phase1-p1t0.7-80pct
 - Modelo base denso: https://huggingface.co/fla-hub/mamba-1.3B-100B
 - Variante con fase 1 al 80 % (receta por defecto): https://huggingface.co/ikimyaii/Mamba-1.3B-semi-structured-EHWS-ALPS_phase1-80pct
 - Misma receta sobre HGRN-1.3B: https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-EHWS-ALPS-phase1-80pct

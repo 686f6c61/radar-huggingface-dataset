@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jaynesmaxtv/translated-recommender` es un artefacto de recomendación publicado en HuggingFace, no un modelo de lenguaje. Según su model card, se trata de un "model ndogo" (modelo pequeño, en suajili) basado en popularidad más filtrado colaborativo item-item, distribuido como un único fichero `model.json` con dos estructuras: `popularity` y `similar`. El autor es el usuario `jaynesmaxtv`, sin organización detrás ni documentación adicional.
+`jaynesmaxtv/translated-recommender` es un artefacto de recomendación publicado en Hugging Face, no un modelo de lenguaje. Según su model card, se trata de un "model ndogo" (modelo pequeño, en suajili) basado en popularidad más filtrado colaborativo item-item, distribuido como un único fichero `model.json` con dos estructuras: `popularity` y `similar`. El autor es el usuario `jaynesmaxtv`, sin organización detrás ni documentación adicional.
 
 El repositorio se creó el 15 de octubre de 2026 y se actualizó el 22 de octubre de 2026, con 0 descargas y 0 likes en el momento de redactar esta ficha. No declara pipeline, no declara idiomas y la única etiqueta técnica es `recommender` junto a `collaborative-filtering`. La licencia es MIT.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Sistema | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jaynesmaxtv/translated-recommender` | Popularidad + item-item CF en JSON | no disponible (tablas) | no aplica | MIT | HuggingFace, 0 descargas |
+| `jaynesmaxtv/translated-recommender` | Popularidad + item-item CF en JSON | no disponible (tablas) | no aplica | MIT | Hugging Face, 0 descargas |
 | Surprise (libreria) | Framework de RS con SVD, KNN, baseline | no disponible en esta ficha | no aplica | no verificada en esta ficha | PyPI, proyecto ampliamente usado |
 | implicit (libreria) | Factorizacion matricial y ALS/BPR para CF | no disponible en esta ficha | no aplica | no verificada en esta ficha | PyPI, orientada a datos implicitos |
 | LightFM (libreria) | Modelo hibrido contenido + colaborativo | no disponible en esta ficha | no aplica | no verificada en esta ficha | PyPI, permite incorporar features de usuario e item |
@@ -87,6 +87,6 @@ No se dispone de datos verificados de parámetros, contexto ni licencia de las a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jaynesmaxtv/translated-recommender
+- Hugging Face: https://huggingface.co/jaynesmaxtv/translated-recommender
 - Paper, blog, repositorio de código y demo: no disponibles en la informacion proporcionada.
 - Nota: la búsqueda web realizada devolvió únicamente resultados sobre una persona ajena al modelo (perfiles sociales y páginas de biografías); no se ha encontrado ningún enlace técnico relevante que incluir.

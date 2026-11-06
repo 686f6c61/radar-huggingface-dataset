@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "JunjieMeng/agentevolver-appworld-qwen3-14b-base-cot",
+  "slug": "junjiemeng-agentevolver-appworld-qwen3-14b-base-cot",
+  "author": "JunjieMeng",
+  "url": "https://huggingface.co/JunjieMeng/agentevolver-appworld-qwen3-14b-base-cot",
+  "created_at": "2026-11-06T09:38:29.000Z",
+  "updated_at": "2026-11-06T09:38:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JunjieMeng/agentevolver-appworld-qwen3-8b-base-cot · Hugging Face",
+      "url": "https://huggingface.co/JunjieMeng/agentevolver-appworld-qwen3-8b-base-cot",
+      "snippet": "This repository contains 30 full-parameter checkpoints from one AppWorld reinforcement-learning run. The run initialized from the original Qwen3-8B weights, not from an earlier SFT or RL checkpoint. It completed 300 optimizer steps using AgentEvolver. Checkpoints were saved every 10 steps, from ..."
+    },
+    {
+      "title": "JunjieMeng/agentevolver-appworld-qwen3-8b-base-cot at main",
+      "url": "https://huggingface.co/JunjieMeng/agentevolver-appworld-qwen3-8b-base-cot/tree/main",
+      "snippet": "JunjieMeng / agentevolver-appworld-qwen3-8b-base-cot Like 0 Text Generation Safetensors appworld grpo qwen3 checkpoints License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main agentevolver-appworld-qwen3-8b-base-cot 983 GB Ctrl+K Ctrl+K 1 contributor History:35 commits JunjieMeng Document training and checkpoint layout 9e48e4d verified14 days ago checkpoint ..."
+    }
+  ]
+}

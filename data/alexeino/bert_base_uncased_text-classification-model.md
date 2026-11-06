@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alexeino/bert_base_uncased_text-classification-model` es un modelo de clasificacion de texto publicado en HuggingFace por el usuario alexeino. Se trata de un ajuste fino (fine-tuning) sobre la arquitectura BERT-base uncased, el encoder transformer bidireccional de 12 capas y 768 dimensiones ocultas desarrollado originalmente por Google Research. El recuento real de parametros del repositorio, 109.486.854, coincide exactamente con el de BERT-base uncased, lo que confirma que no ha habido modificacion estructural del backbone.
+`alexeino/bert_base_uncased_text-classification-model` es un modelo de clasificacion de texto publicado en Hugging Face por el usuario alexeino. Se trata de un ajuste fino (fine-tuning) sobre la arquitectura BERT-base uncased, el encoder transformer bidireccional de 12 capas y 768 dimensiones ocultas desarrollado originalmente por Google Research. El recuento real de parametros del repositorio, 109.486.854, coincide exactamente con el de BERT-base uncased, lo que confirma que no ha habido modificacion estructural del backbone.
 
 El modelo resuelve una tarea de clasificacion de secuencias (text-classification), es decir, asignar una o varias etiquetas a un texto de entrada. Sin embargo, la model card publicada esta practicamente vacia: unicamente contiene la declaracion de licencia MIT, sin especificar el conjunto de etiquetas, el dataset de entrenamiento, el numero de clases ni las metricas obtenidas. Esto limita severamente su uso directo en produccion, ya que se desconoce que categorias predice realmente la cabeza de clasificacion.
 
@@ -21,7 +21,7 @@ Su relevancia es principalmente como artefacto de referencia o como punto de par
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 0.4 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de creacion / ultima actualizacion | 2026-10-16 / 2026-10-16 |
 
 ## Arquitectura y entrenamiento
@@ -67,7 +67,7 @@ La model card del repositorio no incluye metricas de exactitud, F1, precision, r
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente (GTX 1050 Ti, GTX 1650, RTX 3050, T4, L4, A10). No requiere A100 ni H100 salvo que se busque throughput masivo por lotes.
 - Cabe sin problema en GPU de consumo: si, en practicamente cualquier tarjeta moderna, e incluso en GPUs integradas o en CPU.
 - CPU: funciona en modo solo CPU con tiempos de inferencia del orden de 10-50 ms por secuencia corta en procesadores modernos, dependiendo de la longitud del texto y del numero de hilos.
-- Opciones de despliegue: HuggingFace Transformers, TorchServe, FastAPI con PyTorch, ONNX Runtime, TensorRT, Text Embeddings Inference. Para cuantizacion y ejecucion en CPU tambien es viable exportar a ONNX o convertir los pesos a versiones cuantizadas de 8 bits, aunque el repositorio no publica artefactos de este tipo.
+- Opciones de despliegue: Hugging Face Transformers, TorchServe, FastAPI con PyTorch, ONNX Runtime, TensorRT, Text Embeddings Inference. Para cuantizacion y ejecucion en CPU tambien es viable exportar a ONNX o convertir los pesos a versiones cuantizadas de 8 bits, aunque el repositorio no publica artefactos de este tipo.
 - Throughput estimado: no disponible en la informacion proporcionada. Con lotes grandes en GPU, un BERT-base de 110 M de parametros suele alcanzar cientos o miles de secuencias por segundo, pero esto depende del hardware y de la longitud de las entradas.
 - Latencia: no disponible. No se han publicado mediciones para este modelo concreto.
 
@@ -98,5 +98,5 @@ Rendimiento comparado: no disponible. No existen metricas publicadas para el mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexeino/bert_base_uncased_text-classification-model
+- Modelo en Hugging Face: https://huggingface.co/alexeino/bert_base_uncased_text-classification-model
 - No se han encontrado otros enlaces (paper, blog, repositorio de codigo o demo) en la informacion proporcionada.

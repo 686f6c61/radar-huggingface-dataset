@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `data2vec-finetuned-IEMOCAP-categorical`, desarrollado por VasilisAsim, es un clasificador de emociones en audio basado en la arquitectura `data2vec-audio` de Meta AI. Se trata de un modelo de audio fine-tuneado sobre el dataset IEMOCAP para realizar clasificación categórica de emociones en el habla. El modelo está publicado en HuggingFace bajo la librería `transformers` y utiliza pesos en formato `safetensors`.
+El modelo `data2vec-finetuned-IEMOCAP-categorical`, desarrollado por VasilisAsim, es un clasificador de emociones en audio basado en la arquitectura `data2vec-audio` de Meta AI. Se trata de un modelo de audio fine-tuneado sobre el dataset IEMOCAP para realizar clasificación categórica de emociones en el habla. El modelo está publicado en Hugging Face bajo la librería `transformers` y utiliza pesos en formato `safetensors`.
 
 Con 93.362.180 parámetros y un tamaño de repositorio de 0,4 GB, el modelo es ligero y puede desplegarse en entornos con recursos limitados. Su pipeline principal es `audio-classification`, lo que lo hace adecuado para aplicaciones de reconocimiento de emociones en voz en tiempo real o por lotes. La relevancia actual de este modelo radica en su capacidad para extraer representaciones emocionales de señales de audio, un componente clave en sistemas de análisis de conversaciones, atención al cliente, salud mental y educación. No se dispone de información adicional sobre el proceso de entrenamiento ni sobre la licencia del modelo.
 
@@ -51,12 +51,12 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - VRAM estimada para inferencia: aproximadamente 400 MB en precisión fp32 y 200 MB en fp16, según el número de parámetros (93,36 millones).
 - GPU recomendada: cualquier GPU consumer con al menos 1 GB de VRAM, como una NVIDIA RTX 3060 o superior, es suficiente para ejecutar inferencias de forma eficiente.
 - También es viable ejecutarlo en CPU, dado el tamaño reducido del modelo.
-- Opciones de despliegue: HuggingFace Inference Endpoints, `transformers` pipeline en Python, o servicios compatibles con `endpoints_compatible` (según la etiqueta del repositorio).
+- Opciones de despliegue: Hugging Face Inference Endpoints, `transformers` pipeline en Python, o servicios compatibles con `endpoints_compatible` (según la etiqueta del repositorio).
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para una comparativa detallada con modelos similares. Se puede señalar que el autor ha publicado otras variantes del mismo modelo en HuggingFace, como `data2vec-finetuned-IEMOCAP` y `data2vec-finetuned-IEMOCAP-Dimensional`, pero no se conocen sus especificaciones ni sus resultados. No se dispone de datos de otros modelos comparables en la información facilitada.
+No se dispone de información suficiente para una comparativa detallada con modelos similares. Se puede señalar que el autor ha publicado otras variantes del mismo modelo en Hugging Face, como `data2vec-finetuned-IEMOCAP` y `data2vec-finetuned-IEMOCAP-Dimensional`, pero no se conocen sus especificaciones ni sus resultados. No se dispone de datos de otros modelos comparables en la información facilitada.
 
 ## Limitaciones y advertencias
 
@@ -68,6 +68,6 @@ No se dispone de información suficiente para una comparativa detallada con mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VasilisAsim/data2vec-finetuned-IEMOCAP-categorical
+- Modelo en Hugging Face: https://huggingface.co/VasilisAsim/data2vec-finetuned-IEMOCAP-categorical
 - Variante `data2vec-finetuned-IEMOCAP`: https://huggingface.co/VasilisAsim/data2vec-finetuned-IEMOCAP
 - Variante `data2vec-finetuned-IEMOCAP-Dimensional`: https://huggingface.co/VasilisAsim/data2vec-finetuned-IEMOCAP-Dimensional

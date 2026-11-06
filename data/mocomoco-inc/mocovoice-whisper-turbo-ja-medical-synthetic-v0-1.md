@@ -90,7 +90,7 @@ No se dispone de comparaciones con otros modelos ASR japoneses específicos para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mocomoco-inc/mocovoice-whisper-turbo-ja-medical-synthetic-v0.1
+- Modelo en Hugging Face: https://huggingface.co/mocomoco-inc/mocovoice-whisper-turbo-ja-medical-synthetic-v0.1
 - Sitio web de mocomoco inc.: https://www.mocomoco.ai/en/
 - Producto mocoVoice: https://products.mocomoco.ai/en/
 - Sitio web en japonés: https://www.mocomoco.ai/

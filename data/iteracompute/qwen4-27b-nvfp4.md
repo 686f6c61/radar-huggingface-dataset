@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IteraCompute/Qwen4-27B-NVFP4 es un repositorio de HuggingFace que **no contiene pesos de modelo**. Se trata de un espacio reservado (placeholder) creado el 14 de octubre de 2026 para alojar en el futuro una cuantización NVFP4 de un supuesto Qwen4-27B, junto con documentación de preparación y un checklist de publicación. El propio autor lo etiqueta como `work-in-progress` y advierte de forma explícita en la model card que "no model weights are available in this repository" y que "it is not ready for inference".
+IteraCompute/Qwen4-27B-NVFP4 es un repositorio de Hugging Face que **no contiene pesos de modelo**. Se trata de un espacio reservado (placeholder) creado el 14 de octubre de 2026 para alojar en el futuro una cuantización NVFP4 de un supuesto Qwen4-27B, junto con documentación de preparación y un checklist de publicación. El propio autor lo etiqueta como `work-in-progress` y advierte de forma explícita en la model card que "no model weights are available in this repository" y que "it is not ready for inference".
 
 El repositorio declara que la arquitectura del modelo objetivo, la compatibilidad de la receta de cuantización, la licencia de los pesos derivados y el tokenizer están **sin confirmar o sin subir**. El nombre del repositorio describe un objetivo planificado, no un modelo oficial ni una arquitectura soportada. Es un proyecto comunitario independiente, sin afiliación con Qwen ni con NVIDIA. A fecha de la última actualización (14 de octubre de 2026, dos minutos después de su creación) acumula 0 descargas y 0 "likes".
 
@@ -46,7 +46,7 @@ El repositorio no permite ejecutar inferencia, de modo que los casos de uso que 
 - Referencia para pipelines de CI de cuantización: el repositorio enlaza un toolkit y una integración de CI en GitHub que pueden servir de punto de partida para automatizar la exportación y validación de checkpoints empaquetados con sumas de comprobación.
 - Seguimiento de un proyecto comunitario abierto: el estado de avance se publica en la issue de progreso del repositorio de GitHub, lo que permite observar cómo se documenta la transición de "preparación" a "pesos validados" en un proyecto de cuantización real.
 - Estudio de gobernanza de licencias derivadas: el caso ilustra el problema de publicar pesos derivados cuando la licencia del modelo de origen todavía no se conoce, y por qué conviene bloquear la subida hasta tenerla revisada.
-- Auditoría de expectativas en el ecosistema HuggingFace: sirve para analizar cómo repositorios sin pesos pueden aparecer en búsquedas y ser confundidos con modelos utilizables, un patrón relevante para quienes construyen catálogos o índices automáticos de modelos.
+- Auditoría de expectativas en el ecosistema Hugging Face: sirve para analizar cómo repositorios sin pesos pueden aparecer en búsquedas y ser confundidos con modelos utilizables, un patrón relevante para quienes construyen catálogos o índices automáticos de modelos.
 - Docencia y formación interna: como ejemplo de buenas prácticas de transparencia en model cards (estados explícitos de cada artefacto pendiente) y de lo que no debe considerarse un modelo listo para producción.
 
 ## Benchmarks y rendimiento
@@ -88,9 +88,9 @@ No disponible. No existe un modelo publicado bajo esta identidad con el que comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/IteraCompute/Qwen4-27B-NVFP4
+- Repositorio en Hugging Face: https://huggingface.co/IteraCompute/Qwen4-27B-NVFP4
 - Toolkit de cuantización (GitHub): https://github.com/IteraCompute/qwen4-27b-nvfp4
 - Checklist de publicación: https://github.com/IteraCompute/qwen4-27b-nvfp4/blob/main/docs/RELEASE.md
 - Progreso de la publicación (issue): https://github.com/IteraCompute/qwen4-27b-nvfp4/issues/2
-- Organización IteraCompute en HuggingFace: https://huggingface.co/IteraCompute
+- Organización IteraCompute en Hugging Face: https://huggingface.co/IteraCompute
 - Sitio web del autor: https://iteracompute.com/

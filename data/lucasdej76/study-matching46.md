@@ -2,7 +2,7 @@
 
 ## Resumen
 
-study-matching46 es un prototipo de investigación publicado por el usuario lucasdej76 en HuggingFace bajo el identificador lucasdej76/study-matching46. Se presenta como una implementación propia de una arquitectura tipo Flamingo (modelo multimodal de fusión visión-lenguaje) orientada a tareas de *matching* o emparejamiento. El repositorio incluye el código de inferencia, la configuración de arquitectura y un checkpoint de inicialización en formato safetensors, pero el propio autor indica explícitamente que este checkpoint no ha sido entrenado ni sometido a auditoría.
+study-matching46 es un prototipo de investigación publicado por el usuario lucasdej76 en Hugging Face bajo el identificador lucasdej76/study-matching46. Se presenta como una implementación propia de una arquitectura tipo Flamingo (modelo multimodal de fusión visión-lenguaje) orientada a tareas de *matching* o emparejamiento. El repositorio incluye el código de inferencia, la configuración de arquitectura y un checkpoint de inicialización en formato safetensors, pero el propio autor indica explícitamente que este checkpoint no ha sido entrenado ni sometido a auditoría.
 
 El modelo es de escala muy reducida: los metadatos de safetensors indican 16.576 parámetros totales, lo que lo sitúa en el orden de un experimento de juguete más que de un modelo desplegable. La model card describe una configuración etiquetada como "huge" en el script, pero esa etiqueta corresponde a un preset interno del código, no a un modelo de gran tamaño real. El propósito declarado es documentar formatos de fichero y valores por defecto de un *recipe* de entrenamiento, no presentar resultados de rendimiento.
 
@@ -82,6 +82,6 @@ No disponible. La información proporcionada no incluye modelos comparables con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lucasdej76/study-matching46
+- Repositorio en Hugging Face: https://huggingface.co/lucasdej76/study-matching46
 - Ficheros citados en la model card: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (los resultados obtenidos no guardan relación con el repositorio ni con la arquitectura descrita). No se dispone de paper, blog, repositorio adicional ni demo asociados.

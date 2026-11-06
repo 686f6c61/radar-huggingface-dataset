@@ -89,7 +89,7 @@ La comparativa muestra que el modelo destilado, pese a tener más parámetros qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jhyuckkim/Qwen3-30B-A3B-Dense-3B-DO-ACP-K8
+- Hugging Face: https://huggingface.co/jhyuckkim/Qwen3-30B-A3B-Dense-3B-DO-ACP-K8
 - Paper: https://arxiv.org/abs/2605.28207
 - Código: https://github.com/krafton-ai/moe-to-dense
 - Modelo base (profesor): https://huggingface.co/Qwen/Qwen3-30B-A3B

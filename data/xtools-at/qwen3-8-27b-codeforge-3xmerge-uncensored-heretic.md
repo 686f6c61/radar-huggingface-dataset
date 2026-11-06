@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-CodeForge-3xMerge-UNCENSORED-heretic es un modelo de lenguaje multimodal de 27.356.728.560 parametros (~27,4 mil millones) publicado por el usuario xtools-at en HuggingFace. Se trata de una version "descensurada" (abliterated/decensored) del modelo xtools-at/Qwen3.8-27B-CodeForge-3xMerge, generada con la herramienta Heretic v2.1.0.dev0. El modelo base es a su vez un merge ponderado de tres fine-tunes independientes sobre la arquitectura Qwen3.8-27B: Coder390 EfficientThink (nerkyor), Fable Distill (TeichAI) y Qwopus Coder Flash (Jackrong).
+Qwen3.8-27B-CodeForge-3xMerge-UNCENSORED-heretic es un modelo de lenguaje multimodal de 27.356.728.560 parametros (~27,4 mil millones) publicado por el usuario xtools-at en Hugging Face. Se trata de una version "descensurada" (abliterated/decensored) del modelo xtools-at/Qwen3.8-27B-CodeForge-3xMerge, generada con la herramienta Heretic v2.1.0.dev0. El modelo base es a su vez un merge ponderado de tres fine-tunes independientes sobre la arquitectura Qwen3.8-27B: Coder390 EfficientThink (nerkyor), Fable Distill (TeichAI) y Qwopus Coder Flash (Jackrong).
 
 El objetivo del modelo es combinar capacidades de generacion de codigo, razonamiento estructurado y conversacion destilada en un unico checkpoint versatil, eliminando ademas los comportamientos de rechazo (refusals) mediante una tecnica de ablacion de rango arbitrario (ARA). Segun la model card, la tasa de rechazo baja de 95/100 en el modelo original a 11/100 en esta version, con una divergencia KL de 0,0128 respecto al original.
 
@@ -23,7 +23,7 @@ La relevancia actual del modelo radica en su enfoque reproducible: el autor publ
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer de la familia Qwen3.8 con 27,4 mil millones de parametros, etiquetado en HuggingFace con el pipeline `image-text-to-text`, lo que sugiere capacidades multimodales de entrada imagen-texto. No se dispone de informacion detallada sobre el numero de tokens de entrenamiento ni la composicion exacta del dataset del modelo base.
+El modelo es un transformer de la familia Qwen3.8 con 27,4 mil millones de parametros, etiquetado en Hugging Face con el pipeline `image-text-to-text`, lo que sugiere capacidades multimodales de entrada imagen-texto. No se dispone de informacion detallada sobre el numero de tokens de entrenamiento ni la composicion exacta del dataset del modelo base.
 
 El checkpoint se construye en dos fases. Primero, un merge ponderado de tres fine-tunes de Qwen3.8-27B con coeficientes 1,00 (nerkyor/Qwen3.8-27B-Coder390-EfficientThink), 0,85 (TeichAI/Qwen3.8-27B-Fable-Distill) y 0,70 (Jackrong/Qwopus3.8-27B-Coder-Flash). El contribuyente principal incorpora SFT y RLOO (Reinforcement Learning from Offline/Online-style comparisons), con trayectorias docentes de modelos como Opus 5.5, GPT-6 Astra, DeepSeek V4 Pro y K3, ademas de componentes de decodificacion especulativa MTP y DFlash2. El objetivo EfficientThink reduce bucles de razonamiento improductivos sin eliminar el razonamiento profundo cuando es necesario. El segundo contribuyente aporta destilacion conversacional y de conocimiento a partir de datasets Fable 5.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estos model
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/xtools-at/Qwen3.8-27B-CodeForge-3xMerge-UNCENSORED-heretic
+- Hugging Face (este modelo): https://huggingface.co/xtools-at/Qwen3.8-27B-CodeForge-3xMerge-UNCENSORED-heretic
 - Modelo base del merge: https://huggingface.co/xtools-at/Qwen3.8-27B-CodeForge-3xMerge
 - Contribuyente 1 (Coder390 EfficientThink): https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2
 - Contribuyente 2 (Fable Distill): https://huggingface.co/TeichAI/Qwen3.8-27B-Fable-Distill

@@ -6,7 +6,7 @@
 
 Se trata de un modelo de imagen a imagen (pipeline `image-to-image`): recibe una imagen de entrada, típicamente un rostro de baja resolución o degradado, y produce una versión ampliada 4 veces con detalle sintetizado. Por su naturaleza no es un modelo de lenguaje: no genera texto, no razona y no soporta tool calling ni flujos de agentes.
 
-Su relevancia es práctica más que investigadora. Publicado el 25 de septiembre de 2026 (fecha que figura en la ficha de HuggingFace), acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha, y la información pública es muy escasa: no hay model card con detalles de arquitectura, número de parámetros, datos de entrenamiento ni resultados de benchmarks. Debe tratarse, por tanto, como un artefacto de despliegue derivado, no como una contribución con documentación técnica propia.
+Su relevancia es práctica más que investigadora. Publicado el 25 de septiembre de 2026 (fecha que figura en la ficha de Hugging Face), acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha, y la información pública es muy escasa: no hay model card con detalles de arquitectura, número de parámetros, datos de entrenamiento ni resultados de benchmarks. Debe tratarse, por tanto, como un artefacto de despliegue derivado, no como una contribución con documentación técnica propia.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Su relevancia es práctica más que investigadora. Publicado el 25 de septiembre
 | Longitud de contexto | no aplica (modelo de vision, no de texto) |
 | Tipos de cuantizacion | no disponible. La etiqueta `base_model:quantized:Phips/4xFaceUpLDAT` indica que la conversion partio de una version cuantizada del modelo base, pero no se especifica la precision (FP16, INT8, palettizacion, etc.) |
 | Idiomas soportados | no disponible (no aplica; entrada y salida son imagenes) |
-| Licencia | cc-by-4.0 segun la etiqueta del repositorio; el campo de licencia de la ficha de HuggingFace aparece como "no disponible". Existe discrepancia entre ambos datos |
+| Licencia | cc-by-4.0 segun la etiqueta del repositorio; el campo de licencia de la ficha de Hugging Face aparece como "no disponible". Existe discrepancia entre ambos datos |
 | Formato de pesos | Core ML (formato de Apple). La extension concreta del paquete (`mlpackage`, `mlmodelc`, etc.) no esta indicada en la informacion disponible |
 | Tarea | image-to-image, superresolucion 4x de rostros |
 | Plataforma objetivo | iOS (y, por extension de Core ML, iPadOS y macOS con Apple silicon) |
@@ -59,7 +59,7 @@ Como innovacion tecnica, el unico elemento diferencial documentado es el propio 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye model card, tabla de metricas ni comparaciones con otros modelos. Tampoco hay datos de PSNR, SSIM, LPIPS ni evaluaciones perceptivas, ni mediciones de latencia o throughput en dispositivos concretos.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye model card, tabla de metricas ni comparaciones con otros modelos. Tampoco hay datos de PSNR, SSIM, LPIPS ni evaluaciones perceptivas, ni mediciones de latencia o throughput en dispositivos concretos.
 
 ## Requisitos de hardware
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 333i/4xFaceUpLDAT-coreml-ios | Superresolucion facial 4x, Core ML | no disponible | no aplica | cc-by-4.0 segun etiqueta (campo de licencia no disponible en la ficha) | HuggingFace, formato Core ML |
-| Phips/4xFaceUpLDAT (modelo base) | Superresolucion facial 4x | no disponible | no aplica | no disponible en la informacion proporcionada | HuggingFace |
+| 333i/4xFaceUpLDAT-coreml-ios | Superresolucion facial 4x, Core ML | no disponible | no aplica | cc-by-4.0 segun etiqueta (campo de licencia no disponible en la ficha) | Hugging Face, formato Core ML |
+| Phips/4xFaceUpLDAT (modelo base) | Superresolucion facial 4x | no disponible | no aplica | no disponible en la informacion proporcionada | Hugging Face |
 | Real-ESRGAN | Superresolucion general y facial | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | Repositorio publico |
 | CodeFormer | Restauracion facial | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | Repositorio publico |
 | GFPGAN | Restauracion facial | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | Repositorio publico |
@@ -98,7 +98,7 @@ La comparacion cuantitativa no es posible con los datos disponibles: no hay cifr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/333i/4xFaceUpLDAT-coreml-ios
+- Repositorio en Hugging Face: https://huggingface.co/333i/4xFaceUpLDAT-coreml-ios
 - Modelo base: https://huggingface.co/Phips/4xFaceUpLDAT
 - Otro repositorio del mismo autor con patron similar (conversion Core AI para iOS): https://huggingface.co/333i/stable-audio-3-small-music-coreai-ios
 - Documentacion de Core AI de Apple: https://developer.apple.com/documentation/coreai

@@ -81,7 +81,7 @@ No se dispone de checkpoints comparables publicados con cifras verificables sobr
 
 | Alternativa | Algoritmo | Entorno | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| ttrl-sac-hopper (este modelo) | SAC | Hopper-v5 | no disponible | no aplica (obs. de 11 dims) | 3597,20 +/- 22,90 (30 episodios, no verificado) | MIT | Pesos ONNX y NPZ en HuggingFace |
+| ttrl-sac-hopper (este modelo) | SAC | Hopper-v5 | no disponible | no aplica (obs. de 11 dims) | 3597,20 +/- 22,90 (30 episodios, no verificado) | MIT | Pesos ONNX y NPZ en Hugging Face |
 | Stable-Baselines3 SAC | SAC | Hopper-v5 (via Gymnasium) | no disponible | no aplica | no disponible (requiere entrenamiento propio) | MIT | Libreria, sin checkpoint oficial del entorno |
 | CleanRL SAC (continuous control) | SAC | Hopper-v5 | no disponible | no aplica | no disponible (resultados por ejecucion, no verificados) | MIT | Codigo de entrenamiento, sin pesos |
 | TD3 / PPO como alternativas de algoritmo | TD3 / PPO | Hopper-v5 | no disponible | no aplica | no disponible | MIT (implementaciones habituales) | Requiere entrenamiento propio |
@@ -103,7 +103,7 @@ La diferencia practica frente a esas alternativas no es el retorno, sino el empa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scaleresearch/ttrl-sac-hopper
+- Modelo en Hugging Face: https://huggingface.co/scaleresearch/ttrl-sac-hopper
 - Repositorio de la libreria ttrl (tt-rl): https://github.com/scaleresearch/tt-rl
 - Configuracion de entrenamiento: `configs/hopper_sac.py` dentro del repositorio ttrl, replicada en `train_config.py` del modelo
 - Ejemplo de despliegue en chip: `examples/mujoco-sac/deploy.py` en el repositorio ttrl

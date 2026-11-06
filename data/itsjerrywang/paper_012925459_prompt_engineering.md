@@ -56,5 +56,5 @@ No disponible. No se puede comparar con otros modelos porque no es un modelo de 
 - No hay garantía de que el documento refleje el estado del arte actual en prompt engineering.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/Itsjerrywang/paper_012925459_prompt_engineering
+- Repositorio en Hugging Face: https://huggingface.co/Itsjerrywang/paper_012925459_prompt_engineering
 - No se han encontrado otros enlaces externos en la búsqueda web (papers, blogs o repos asociados).

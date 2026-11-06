@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SimpleTuner/flux-3-klein-image-photo-aesthetics-distilled-assisted-1024 (este) | LoRA rank 32 sobre 5,6B | Adaptador de estilo fotografico | 512x512 y 1024x1024 en validacion | `other` | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| SimpleTuner/flux-3-klein-image-photo-aesthetics-distilled-assisted-1024 (este) | LoRA rank 32 sobre 5,6B | Adaptador de estilo fotografico | 512x512 y 1024x1024 en validacion | `other` | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | black-forest-labs/flux-3-image-klein (base) | 5,6B | Difusion texto-a-imagen e imagen-a-imagen | No disponible | No disponible en la informacion proporcionada | Pesos descargables; API desde 0,009 USD por 1000 imagenes segun Technobezz |
 | Otros adaptadores LoRA de estetica fotografica | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la informacion disponible |
 
@@ -86,10 +86,10 @@ No se dispone de datos de rendimiento comparativo entre este adaptador y otras a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SimpleTuner/flux-3-klein-image-photo-aesthetics-distilled-assisted-1024
+- Repositorio Hugging Face: https://huggingface.co/SimpleTuner/flux-3-klein-image-photo-aesthetics-distilled-assisted-1024
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Documentacion de SimpleTuner: http://docs.simpletuner.io/
-- Blog de HuggingFace "Welcome FLUX.3 Image Klein in Diffusers": https://huggingface.co/blog/flux-3
+- Blog de Hugging Face "Welcome FLUX.3 Image Klein in Diffusers": https://huggingface.co/blog/flux-3
 - Articulo "Flux 3 Image Klein: ImageGen & Edit with 10 images (BF16/FP8/NVFP4/GGUF)": https://www.stablediffusiontutorials.com/2026/10/flux3-image-klein.html
 - Noticia "Black Forest Labs Releases FLUX 3 Image Klein With 5.6B Parameters": https://www.technobezz.com/news/black-forest-labs-flux-image-klein-parameters
 - Wikipedia, "Flux (text-to-image model)": https://en.wikipedia.org/wiki/Flux_(text-to-image_model)

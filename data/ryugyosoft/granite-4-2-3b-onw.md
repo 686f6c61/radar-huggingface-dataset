@@ -91,10 +91,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| granite-4.2-3b-onw | 3B | no disponible | BFCL v4 52,4; tau3-bench 51,0; IFBench 74,3 (datos del base); 6,7 tok/s en NPU 3720 | Apache 2.0 | HuggingFace, formato onw para NPU Intel |
-| ibm-granite/granite-4.2-3b | 3B | no disponible | mismos valores de referencia del modelo base | Apache 2.0 | HuggingFace, pesos originales |
-| Granite 4.2 8B | 8B | no disponible | BFCL v4 52,4 (empate con el 3B segun la tarjeta) | Apache 2.0 | HuggingFace, version original y conversion onw |
-| llm-jp-4.1-8b-thinking-onw | 8B | no disponible | no disponible | no disponible | HuggingFace, conversion onw |
+| granite-4.2-3b-onw | 3B | no disponible | BFCL v4 52,4; tau3-bench 51,0; IFBench 74,3 (datos del base); 6,7 tok/s en NPU 3720 | Apache 2.0 | Hugging Face, formato onw para NPU Intel |
+| ibm-granite/granite-4.2-3b | 3B | no disponible | mismos valores de referencia del modelo base | Apache 2.0 | Hugging Face, pesos originales |
+| Granite 4.2 8B | 8B | no disponible | BFCL v4 52,4 (empate con el 3B segun la tarjeta) | Apache 2.0 | Hugging Face, version original y conversion onw |
+| llm-jp-4.1-8b-thinking-onw | 8B | no disponible | no disponible | no disponible | Hugging Face, conversion onw |
 
 El autor recomienda `llm-jp-4.1-8b-thinking-onw` cuando el uso esta centrado en japones, al ofrecer mejor calidad en ese idioma que esta variante de 3B. La comparativa con modelos de otros fabricantes no esta disponible en la informacion proporcionada.
 
@@ -113,7 +113,7 @@ El autor recomienda `llm-jp-4.1-8b-thinking-onw` cuando el uso esta centrado en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryugyosoft/granite-4.2-3b-onw
+- Modelo en Hugging Face: https://huggingface.co/ryugyosoft/granite-4.2-3b-onw
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Coleccion Granite 4.2 Language Models: https://huggingface.co/collections/ibm-granite/granite-42-language-models
 - Documentacion de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2

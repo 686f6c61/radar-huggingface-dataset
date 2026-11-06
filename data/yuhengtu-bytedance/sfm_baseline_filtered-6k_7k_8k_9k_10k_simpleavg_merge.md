@@ -74,9 +74,9 @@ No se dispone de información sobre modelos comparables específicos. Dado que e
 
 ## Enlaces
 
-- [HuggingFace - sfm_baseline_filtered-6k_7k_8k_9k_10k_simpleavg_merge](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-6k_7k_8k_9k_10k_simpleavg_merge)
-- [HuggingFace - sfm_baseline_filtered-8k_9k_10k_merge](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-8k_9k_10k_merge)
-- [HuggingFace - sfm_baseline_filtered-7k_8k_9k_merge (discusiones)](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-7k_8k_9k_merge/discussions)
+- [Hugging Face - sfm_baseline_filtered-6k_7k_8k_9k_10k_simpleavg_merge](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-6k_7k_8k_9k_10k_simpleavg_merge)
+- [Hugging Face - sfm_baseline_filtered-8k_9k_10k_merge](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-8k_9k_10k_merge)
+- [Hugging Face - sfm_baseline_filtered-7k_8k_9k_merge (discusiones)](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-7k_8k_9k_merge/discussions)
 - [FriendliAI - sfm_baseline_filtered-7k_8k_9k_merge](https://friendli.ai/models/yuhengtu-bytedance/sfm_baseline_filtered-7k_8k_9k_merge)
 - [FriendliAI - sfm-baseline-unfiltered-4k-5k-6k-avg](https://friendli.ai/models/yuhengtu-bytedance/sfm-baseline-unfiltered-4k-5k-6k-avg)
 - [ByteDance Seed](https://seed.bytedance.com/en/)

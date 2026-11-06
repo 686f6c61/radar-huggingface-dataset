@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSS-TTS-v1.5-GPTQ-Pro-4bit-Fused es una cuantización comunitaria del modelo de texto a voz MOSS-TTS v1.5 desarrollado por OpenMOSS-Team, publicada por el usuario groxaxo en HuggingFace. Se trata de un checkpoint nativo en formato GPTQ Pro de 4 bits con guardia Triton fusionada, diseñado para reducir los requisitos de VRAM del modelo original (BF16) a la mitad manteniendo una calidad de audio cercana. El modelo base es un sistema TTS con clonación de voz que soporta inglés y español.
+MOSS-TTS-v1.5-GPTQ-Pro-4bit-Fused es una cuantización comunitaria del modelo de texto a voz MOSS-TTS v1.5 desarrollado por OpenMOSS-Team, publicada por el usuario groxaxo en Hugging Face. Se trata de un checkpoint nativo en formato GPTQ Pro de 4 bits con guardia Triton fusionada, diseñado para reducir los requisitos de VRAM del modelo original (BF16) a la mitad manteniendo una calidad de audio cercana. El modelo base es un sistema TTS con clonación de voz que soporta inglés y español.
 
 La relevancia de esta publicación radica en su documentación meticulosa: el autor publica mediciones comparativas de RTF (factor de tiempo real), consumo de VRAM y métricas de calidad (WavLM, ECAPA, UTMOS, CER/WER) frente a otras cuantizaciones como AWQ y EXL3, además de verificar la paridad de los 252 módulos cuantizados con coseno mínimo de 0,999. El checkpoint requiere un adaptador de runtime propio y un backend GPTQ-Pro fijado, por lo que no es compatible de forma directa con AutoGPTQ, Transformers, llama.cpp o vLLM.
 
@@ -88,7 +88,7 @@ Frente a otros modelos TTS con clonación de voz (XTTS-v2, F5-TTS, CosyVoice), n
 
 ## Limitaciones y advertencias
 
-- Código personalizado: el checkpoint requiere revisar y ejecutar código Python propio con una extensión CUDA/Triton compilada; no es un checkpoint estándar de HuggingFace Transformers.
+- Código personalizado: el checkpoint requiere revisar y ejecutar código Python propio con una extensión CUDA/Triton compilada; no es un checkpoint estándar de Hugging Face Transformers.
 - Incompatibilidad de ecosistema: no funciona como drop-in en llama.cpp, vLLM, TGI ni cargadores EXL3 sin modificar.
 - Inglés como preocupación de calidad: solo se probaron 4 casos y un prompt en inglés por runtime; el autor lo marca explícitamente como "screening concern" y recomienda validación con oyentes ciegos en ambos idiomas.
 - Degradación frente a BF16: CER/WER suben de 1,13%/3,25% a 2,14%/5,69% con GPTQ 4 bits; WER de 5,69% es notablemente superior al original.

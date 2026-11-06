@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio, publicado por el usuario ruizmi-chelle en HuggingFace, no contiene un modelo de inteligencia artificial entrenado, sino un conjunto estructurado de notas de investigación sobre aprendizaje audiovisual (audio-visual learning). El autor lo describe explícitamente como un artefacto exploratorio: incluye el alcance de una pregunta de investigación, posibles factores de confusión, una propuesta de comparación con líneas base, referencias a conjuntos de datos como AudioSet y VGGSound, y comprobaciones de reproducibilidad. No se reivindican mejoras de rendimiento, ni ablaciones completas, ni código liberado, ni un checkpoint entrenado.
+Este repositorio, publicado por el usuario ruizmi-chelle en Hugging Face, no contiene un modelo de inteligencia artificial entrenado, sino un conjunto estructurado de notas de investigación sobre aprendizaje audiovisual (audio-visual learning). El autor lo describe explícitamente como un artefacto exploratorio: incluye el alcance de una pregunta de investigación, posibles factores de confusión, una propuesta de comparación con líneas base, referencias a conjuntos de datos como AudioSet y VGGSound, y comprobaciones de reproducibilidad. No se reivindican mejoras de rendimiento, ni ablaciones completas, ni código liberado, ni un checkpoint entrenado.
 
 El repositorio contiene dos archivos: `paper_notes.md` como artefacto principal y `README.md` como documentación. Se distribuye bajo licencia CC-BY-4.0. Aunque el campo de parámetros totales de safetensors indica 49.600, el tamaño del repositorio es de 0.0 GB, lo que sugiere que no hay pesos reales almacenados; probablemente se trate de un archivo de texto o metadatos. En cualquier caso, no es un modelo utilizable para inferencia.
 
@@ -67,7 +67,7 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no tiene senti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ruizmi-chelle/audio-visual-learning
+- Repositorio en Hugging Face: https://huggingface.co/ruizmi-chelle/audio-visual-learning
 - Encuesta sobre modelos de lenguaje audiovisuales (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0950705126012955
 - Encuesta sobre aprendizaje audiovisual autosupervisado (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0925231225004229
 - Lista curada de métodos y datasets audiovisuales (GitHub): https://github.com/GeWu-Lab/awesome-audiovisual-learning

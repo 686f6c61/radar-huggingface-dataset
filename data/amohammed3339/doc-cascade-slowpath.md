@@ -2,9 +2,9 @@
 
 ## Resumen
 
-doc-cascade-slowpath es un modelo de clasificacion de texto publicado por el usuario amohammed3339 en HuggingFace. Se trata de un fine-tuning completo de distilbert-base-uncased, la version destilada del transformer BERT de 6 capas, orientado a tareas de clasificacion de documentos. El nombre sugiere su integracion como "ruta lenta" (slow path) dentro de una cascada de procesamiento documental, donde solo se invoca cuando un clasificador mas rapido o ligero no alcanza la confianza suficiente.
+doc-cascade-slowpath es un modelo de clasificacion de texto publicado por el usuario amohammed3339 en Hugging Face. Se trata de un fine-tuning completo de distilbert-base-uncased, la version destilada del transformer BERT de 6 capas, orientado a tareas de clasificacion de documentos. El nombre sugiere su integracion como "ruta lenta" (slow path) dentro de una cascada de procesamiento documental, donde solo se invoca cuando un clasificador mas rapido o ligero no alcanza la confianza suficiente.
 
-El modelo tiene 66.956.548 parametros en formato safetensors, un tamano de repositorio de 0,8 GB y una licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. La model card no documenta el dataset de entrenamiento, el numero de etiquetas ni los dominios cubiertos: se genero automaticamente con el Trainer de HuggingFace y el autor no la ha completado. Este es el principal riesgo a la hora de evaluarlo.
+El modelo tiene 66.956.548 parametros en formato safetensors, un tamano de repositorio de 0,8 GB y una licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. La model card no documenta el dataset de entrenamiento, el numero de etiquetas ni los dominios cubiertos: se genero automaticamente con el Trainer de Hugging Face y el autor no la ha completado. Este es el principal riesgo a la hora de evaluarlo.
 
 La relevancia de esta ficha es limitada pero concreta: se trata de un ejemplo de fine-tuning de un encoder pequeno para clasificacion, un patron muy habitual en pipelines de produccion por su bajo coste de inferencia. Sin embargo, los resultados declarados (accuracy 1.0 y perdida de validacion 0,0003 en las tres epocas) apuntan a un conjunto de validacion trivial, mal particionado o con fuga de datos, por lo que no deben interpretarse como evidencia de calidad real.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un ejemplo de
 
 El modelo es un DistilBERT, es decir, un transformer encoder de 6 capas con 768 dimensiones ocultas y 12 cabezas de atencion, obtenido originalmente mediante destilacion del conocimiento de BERT-base. Sobre esa base se ha anadido una cabeza de clasificacion de secuencia afinada, con 1.538 parametros adicionales respecto a los 66.955.010 del checkpoint base, lo que corresponde a un clasificador de dos etiquetas. El tokenizador asociado es el WordPiece de distilbert-base-uncased. La model card no especifica ninguna innovacion arquitectonica propia.
 
-El entrenamiento se realizo con el Trainer de HuggingFace durante 3 epocas, 750 pasos totales, batch de entrenamiento de 32 (lo que implica aproximadamente 24.000 ejemplos de entrenamiento) y batch de evaluacion de 64. Se uso AdamW fused con betas (0,9; 0,999), epsilon 1e-8, learning rate 5e-5, scheduler lineal con un 10 por ciento de warmup, seed 20260918 y precision mixta nativa (AMP). No se documento el dataset, la composicion de clases ni si se aplico RLHF o DPO (tecnicas por otra parte poco habituales en clasificacion). Las versiones de framework declaradas son Transformers 4.57.6, PyTorch 2.14.0+cu130, Datasets 5.0.1 y Tokenizers 0.22.2.
+El entrenamiento se realizo con el Trainer de Hugging Face durante 3 epocas, 750 pasos totales, batch de entrenamiento de 32 (lo que implica aproximadamente 24.000 ejemplos de entrenamiento) y batch de evaluacion de 64. Se uso AdamW fused con betas (0,9; 0,999), epsilon 1e-8, learning rate 5e-5, scheduler lineal con un 10 por ciento de warmup, seed 20260918 y precision mixta nativa (AMP). No se documento el dataset, la composicion de clases ni si se aplico RLHF o DPO (tecnicas por otra parte poco habituales en clasificacion). Las versiones de framework declaradas son Transformers 4.57.6, PyTorch 2.14.0+cu130, Datasets 5.0.1 y Tokenizers 0.22.2.
 
 ## Capacidades
 
@@ -69,7 +69,7 @@ Resultado final declarado: perdida 0.0003 y accuracy 1.0 sobre un conjunto de ev
 - VRAM estimada en fp16 (AMP): en torno a 0,14 GB de pesos.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente (GTX 1650, RTX 3050, T4, L4). Tambien funciona en CPU y en dispositivos tipo Raspberry Pi, dado el tamano del modelo.
 - Cabe sin problema en GPU de consumo; de hecho es uno de los perfiles mas ligeros dentro de la familia BERT.
-- Opciones de despliegue: transformers con pipeline de text-classification, Text Embeddings Inference (el tag `text-embeddings-inference` esta declarado en el repositorio), endpoints compatibles de HuggingFace, y exportacion manual a ONNX o TorchScript. No se publican pesos GGUF, por lo que llama.cpp u Ollama requeririan una conversion previa por parte del usuario.
+- Opciones de despliegue: transformers con pipeline de text-classification, Text Embeddings Inference (el tag `text-embeddings-inference` esta declarado en el repositorio), endpoints compatibles de Hugging Face, y exportacion manual a ONNX o TorchScript. No se publican pesos GGUF, por lo que llama.cpp u Ollama requeririan una conversion previa por parte del usuario.
 - Latencia y throughput: no publicados por el autor.
 - Nota: el repo ocupa 0,8 GB, muy por encima de lo que exigen los pesos finales (unos 268 MB en fp32), lo que sugiere que incluye checkpoints intermedios u optimizador.
 
@@ -79,10 +79,10 @@ Datos de los modelos alternativos tomados de la documentacion publica de sus res
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| doc-cascade-slowpath | 66.956.548 | 512 tokens | apache-2.0 | HuggingFace, safetensors, 0 descargas y 0 likes | Fine-tuning sin dataset documentado; accuracy 1.0 no verificable |
-| distilbert-base-uncased | 66,9 M aprox. | 512 tokens | apache-2.0 | HuggingFace, muy extendido | Modelo base; sin cabeza de clasificacion afinada a una tarea concreta |
-| bert-base-uncased | 110 M aprox. | 512 tokens | apache-2.0 | HuggingFace, muy extendido | Mas preciso en GLUE de forma general, mas lento y pesado que DistilBERT |
-| roberta-base | 125 M aprox. | 512 tokens | mit | HuggingFace, muy extendido | Entrenamiento mas largo y robusto; licencia distinta (MIT) |
+| doc-cascade-slowpath | 66.956.548 | 512 tokens | apache-2.0 | Hugging Face, safetensors, 0 descargas y 0 likes | Fine-tuning sin dataset documentado; accuracy 1.0 no verificable |
+| distilbert-base-uncased | 66,9 M aprox. | 512 tokens | apache-2.0 | Hugging Face, muy extendido | Modelo base; sin cabeza de clasificacion afinada a una tarea concreta |
+| bert-base-uncased | 110 M aprox. | 512 tokens | apache-2.0 | Hugging Face, muy extendido | Mas preciso en GLUE de forma general, mas lento y pesado que DistilBERT |
+| roberta-base | 125 M aprox. | 512 tokens | mit | Hugging Face, muy extendido | Entrenamiento mas largo y robusto; licencia distinta (MIT) |
 
 No se dispone de comparaciones de rendimiento medidas entre estos modelos y doc-cascade-slowpath, porque el autor no publica benchmarks reproducibles.
 
@@ -101,8 +101,8 @@ No se dispone de comparaciones de rendimiento medidas entre estos modelos y doc-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amohammed3339/doc-cascade-slowpath
+- Modelo en Hugging Face: https://huggingface.co/amohammed3339/doc-cascade-slowpath
 - Modelo base distilbert-base-uncased: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
-- Documentacion de DistilBERT en HuggingFace: https://huggingface.co/docs/transformers/model_doc/distilbert
+- Documentacion de DistilBERT en Hugging Face: https://huggingface.co/docs/transformers/model_doc/distilbert
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web disponible.

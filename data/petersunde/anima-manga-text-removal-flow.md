@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Anima manga text removal flow es un modelo experimental de inpainting especializado en la eliminación de texto sobre ilustraciones de estilo anime y manga. Lo desarrolla el usuario de HuggingFace petersunde como una adaptación del modelo base circlestone-labs/Anima, y se distribuye bajo la licencia propia del modelo original (anima-license). Su propósito concreto es recibir una imagen RGB con texto superpuesto junto a una máscara de edición y reconstruir la región enmascarada con el contenido visual subyacente, componiendo los píxeles fuera de la máscara de forma exacta en inferencia.
+Anima manga text removal flow es un modelo experimental de inpainting especializado en la eliminación de texto sobre ilustraciones de estilo anime y manga. Lo desarrolla el usuario de Hugging Face petersunde como una adaptación del modelo base circlestone-labs/Anima, y se distribuye bajo la licencia propia del modelo original (anima-license). Su propósito concreto es recibir una imagen RGB con texto superpuesto junto a una máscara de edición y reconstruir la región enmascarada con el contenido visual subyacente, componiendo los píxeles fuera de la máscara de forma exacta en inferencia.
 
 Técnicamente no es un modelo completo entrenado desde cero, sino un conjunto de adaptaciones sobre Anima-Base: un adaptador LLLite completo preentrenado, una rama de evidencia RGB observada, un LoRA de rango 16 sobre el transformer y los dos últimos bloques del transformer más la cabeza de salida. El VAE y el text encoder permanecen congelados durante el entrenamiento. El repositorio ocupa 28,5 GB y la publicación corresponde a una ejecución completa en el paso de optimizador 7260, que el propio autor describe explícitamente como un experimento y no como una garantía de calidad.
 
@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/petersunde/anima-manga-text-removal-flow
+- Modelo en Hugging Face: https://huggingface.co/petersunde/anima-manga-text-removal-flow
 - Modelo base: https://huggingface.co/circlestone-labs/Anima
 - Licencia del modelo base: https://huggingface.co/circlestone-labs/Anima/blob/main/LICENSE.md
 - Dataset de entrenamiento: https://huggingface.co/datasets/petersunde/danbooru2023-animetext-clean

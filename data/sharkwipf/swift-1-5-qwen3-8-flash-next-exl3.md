@@ -101,7 +101,7 @@ No se han publicado resultados numericos de benchmarks completos en la informaci
 
 ## Enlaces
 
-- HuggingFace (esta cuantización): https://huggingface.co/SharkWipf/Swift-1.5-Qwen3.8-Flash-Next-exl3
+- Hugging Face (esta cuantización): https://huggingface.co/SharkWipf/Swift-1.5-Qwen3.8-Flash-Next-exl3
 - Modelo base de la cuantización: https://huggingface.co/ukisai/Swift-Qwen3.8-Flash-Next
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GGUF de Swift 1.5: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GGUF

@@ -86,7 +86,7 @@ No disponible. La informacion proporcionada no incluye datos comparativos frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soundetch/soundetch-granite-speech-5.0-470m-turboctc-onnx
+- Modelo en Hugging Face: https://huggingface.co/soundetch/soundetch-granite-speech-5.0-470m-turboctc-onnx
 - Modelo base: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc
 - Space de IBM (origen de los activos): https://huggingface.co/spaces/ibm-granite/granite-speech-streaming-webgpu
 - Revision pinneada de los activos ONNX: https://huggingface.co/spaces/ibm-granite/granite-speech-streaming-webgpu/tree/245e1e52c6fc01ba065c35b4af884d89cdca60de/onnx-ctc

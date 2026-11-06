@@ -6,7 +6,7 @@ KOFIblto/mikaylacamp2 es un adaptador LoRA (Low-Rank Adaptation) de tipo DreamBo
 
 Este tipo de adaptadores resuelve el problema de la personalización de modelos de difusión: en lugar de reentrenar un modelo completo, se entrena un pequeño conjunto de pesos que se acoplan al modelo base para inyectar un concepto visual específico. La relevancia actual radica en la creciente demanda de herramientas de personalización eficientes y ligeras para modelos de texto a imagen, especialmente en entornos de producción donde se requiere control fino sobre el contenido generado.
 
-La ficha se basa exclusivamente en la información publicada en HuggingFace y en los resultados de búsqueda disponibles. No se dispone de detalles técnicos adicionales sobre el entrenamiento, la arquitectura interna del adaptador o el modelo base más allá de lo indicado en la model card.
+La ficha se basa exclusivamente en la información publicada en Hugging Face y en los resultados de búsqueda disponibles. No se dispone de detalles técnicos adicionales sobre el entrenamiento, la arquitectura interna del adaptador o el modelo base más allá de lo indicado en la model card.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ No se dispone de información sobre adaptadores LoRA comparables para Krea 2 u o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KOFIblto/mikaylacamp2
-- Perfil del autor en HuggingFace: https://huggingface.co/KOFIblto
+- Modelo en Hugging Face: https://huggingface.co/KOFIblto/mikaylacamp2
+- Perfil del autor en Hugging Face: https://huggingface.co/KOFIblto
 - Perfil del autor en GitHub: https://github.com/KOFiblto
 - Repositorio de scripts del autor: https://github.com/KOFiblto/Scripts

@@ -6,7 +6,7 @@ El modelo `giovannimaffeo/qwen3.5-0.8b-portuguese-legal-descriptor-generation` e
 
 Se trata de un modelo de generación de texto (pipeline `text-generation`) con un tamaño reducido de aproximadamente 0.8 mil millones de parámetros, lo que lo hace adecuado para entornos con recursos limitados. Su relevancia radica en la automatización de tareas de indexación y descripción de documentos legales, un área con alta demanda en el ámbito jurídico lusófono.
 
-La información pública disponible es escasa: no se especifican detalles de arquitectura interna, contexto máximo, ni licencia. El repositorio en HuggingFace muestra un tamaño de 0.0 GB, lo que sugiere que los pesos podrían no estar publicados o que el modelo es extremadamente ligero. A pesar de ello, el modelo está etiquetado con `safetensors` y `conversational`, indicando su uso previsto para interacción textual.
+La información pública disponible es escasa: no se especifican detalles de arquitectura interna, contexto máximo, ni licencia. El repositorio en Hugging Face muestra un tamaño de 0.0 GB, lo que sugiere que los pesos podrían no estar publicados o que el modelo es extremadamente ligero. A pesar de ello, el modelo está etiquetado con `safetensors` y `conversational`, indicando su uso previsto para interacción textual.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/giovannimaffeo/qwen3.5-0.8b-portuguese-legal-descriptor-generation)
+- [Modelo en Hugging Face](https://huggingface.co/giovannimaffeo/qwen3.5-0.8b-portuguese-legal-descriptor-generation)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/giovannimaffeo/portuguese-legal-descriptor-generation)
 - [Repositorio de Qwen3.5 (referencia del modelo base)](https://github.com/ABDtmx/Qwen3.5)
 - [Blog oficial de Qwen3.5](https://qwen.ai/blog?id=qwen3.5)

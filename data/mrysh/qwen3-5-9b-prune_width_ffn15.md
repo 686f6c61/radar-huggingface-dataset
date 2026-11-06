@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/qwen3.5-9b-prune_width_ffn15
+- Modelo en Hugging Face: https://huggingface.co/mrysh/qwen3.5-9b-prune_width_ffn15
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - NVIDIA ModelOpt (herramienta de poda): no disponible en la informacion proporcionada
 - Paper de Minitron: no disponible en la informacion proporcionada

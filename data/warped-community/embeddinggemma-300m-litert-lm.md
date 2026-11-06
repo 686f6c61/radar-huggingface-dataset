@@ -97,7 +97,7 @@ Advertencia: los datos de los modelos comparativos proceden de sus respectivas m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/warped-community/embeddinggemma-300m-litert-lm
+- Repositorio en Hugging Face: https://huggingface.co/warped-community/embeddinggemma-300m-litert-lm
 - Fuente del artefacto TFLite: https://huggingface.co/litert-community/embeddinggemma-300m
 - Modelo base: https://huggingface.co/google/embeddinggemma-300m
 - La búsqueda web realizada no devolvió ningún resultado relevante: los únicos enlaces recuperados apuntan a YouTube (https://www.youtube.com/, https://music.youtube.com/, https://studio.youtube.com/, https://movies.youtube.com/) y no guardan relación con el modelo. No se dispone por tanto de papers, blogs, repositorios ni demostraciones adicionales verificables en la información proporcionada.

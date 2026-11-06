@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativos. La comparativa se limita a l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dora7/albedo-qwen3.6-35b-v16
+- Repositorio Hugging Face: https://huggingface.co/dora7/albedo-qwen3.6-35b-v16
 - Modelo base: https://huggingface.co/dendriteholdings/albedo-qwen3.6-35b-king-genesis
 - Guía de Qwen 3.6 (referencia de arquitectura): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/
 - Catálogo de Microsoft Foundry para Qwen3.6 35B A3B: https://ai.azure.com/catalog/models/FW-Qwen3.6-35B-A3B

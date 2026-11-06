@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es una actualización menor de DeepSeek-V4.1-Flash, un modelo multimodal de tipo image-text-to-text desarrollado por DeepSeek-AI y redistribuido en HuggingFace por el usuario oakshznan. El modelo resuelve tareas de razonamiento complejo, generación de código, uso de agentes autónomos y comprensión visual, y su relevancia radica en que mejora los resultados de su predecesor reduciendo simultáneamente el tiempo de ejecución y la longitud de salida, lo que desplaza la frontera de Pareto entre rendimiento y coste en distintos entornos de agentes.
+DeepSeek-V4.1-Flash-1017 es una actualización menor de DeepSeek-V4.1-Flash, un modelo multimodal de tipo image-text-to-text desarrollado por DeepSeek-AI y redistribuido en Hugging Face por el usuario oakshznan. El modelo resuelve tareas de razonamiento complejo, generación de código, uso de agentes autónomos y comprensión visual, y su relevancia radica en que mejora los resultados de su predecesor reduciendo simultáneamente el tiempo de ejecución y la longitud de salida, lo que desplaza la frontera de Pareto entre rendimiento y coste en distintos entornos de agentes.
 
 La arquitectura declarada es `deepseek_v41` dentro de la librería transformers, con un total de 763.205.315.794 parámetros según los pesos en safetensors (aproximadamente 763 mil millones), y una ventana de contexto de 1M tokens según los parámetros de muestreo recomendados en la model card. El repositorio ocupa 510,3 GB y los pesos se distribuyen en formato safetensors de 8 bits (fp8), lo que condiciona los requisitos de hardware para su despliegue.
 
@@ -46,7 +46,7 @@ Tampoco se dispone de datos sobre el volumen de tokens de entrenamiento, la comp
 - Análisis de documentos y gráficos: con 83,0 en Chartography y 92,5 en BabyVision usando herramientas, puede extraer datos de gráficos, tablas e infografías dentro de flujos de extracción documental o informes financieros.
 - Razonamiento científico y técnico asistido: el 42,6 en HLE sin herramientas lo sitúa como candidato para responder consultas de dominio especializado con verificación posterior, siempre con revisión humana dada la tasa de error implícita.
 - Asistencia conversacional multimodal: el pipeline image-text-to-text y el soporte de imágenes intercaladas permiten construir asistentes que alternan texto e imágenes en una misma conversación, por ejemplo para soporte técnico con capturas de pantalla.
-- Evaluación comparativa de modelos: su licencia MIT y su disponibilidad en HuggingFace facilitan su uso como referencia en estudios de evaluación de modelos frontera sin restricciones de uso comercial.
+- Evaluación comparativa de modelos: su licencia MIT y su disponibilidad en Hugging Face facilitan su uso como referencia en estudios de evaluación de modelos frontera sin restricciones de uso comercial.
 
 ## Benchmarks y rendimiento
 
@@ -101,12 +101,12 @@ La comparativa se limita a los datos de la model card. No se dispone de parámet
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/oakshznan/DeepSeek-V4.1-Flash-1017
+- Repositorio en Hugging Face: https://huggingface.co/oakshznan/DeepSeek-V4.1-Flash-1017
 - Repositorio original citado: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Toolkit deepseek-recipe: https://github.com/deepseek-ai/deepseek-recipe
 - Página de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Twitter/X de DeepSeek: https://twitter.com/deepseek_ai
 - Contacto: service@deepseek.com

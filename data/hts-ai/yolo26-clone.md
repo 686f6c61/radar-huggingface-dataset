@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YOLO26 (repositorio `hts-ai/YOLO26-clone`) es un modelo de vision por computador de la familia YOLO publicada por Ultralytics, orientado a deteccion de objetos y a otras tareas visuales como segmentacion de instancias, segmentacion semantica, clasificacion de imagenes, estimacion de pose, deteccion de objetos orientados (OBB), estimacion de profundidad y seguimiento (tracking) de objetos entre fotogramas de video. El repositorio de HuggingFace lo ha publicado la cuenta `hts-ai`, no la organizacion oficial de Ultralytics, aunque la model card y el `model-index` referencian el modelo `ultralytics/yolo26` y enlazan a la documentacion, al paper y a la plataforma del fabricante.
+YOLO26 (repositorio `hts-ai/YOLO26-clone`) es un modelo de vision por computador de la familia YOLO publicada por Ultralytics, orientado a deteccion de objetos y a otras tareas visuales como segmentacion de instancias, segmentacion semantica, clasificacion de imagenes, estimacion de pose, deteccion de objetos orientados (OBB), estimacion de profundidad y seguimiento (tracking) de objetos entre fotogramas de video. El repositorio de Hugging Face lo ha publicado la cuenta `hts-ai`, no la organizacion oficial de Ultralytics, aunque la model card y el `model-index` referencian el modelo `ultralytics/yolo26` y enlazan a la documentacion, al paper y a la plataforma del fabricante.
 
 El modelo se distribuye con la libreria `ultralytics` y licencia AGPL-3.0, con opcion de licencia Enterprise para uso comercial. El unico dato cuantitativo de rendimiento declarado es un mAP@0.5:0.95 de 57,5 sobre el split de validacion de COCO, marcado como no verificado (`verified: false`). No se especifican en la informacion disponible el numero de parametros, la resolucion de entrada ni las variantes de tamano, por lo que cualquier cifra de VRAM o latencia debe medirse en el entorno real de despliegue.
 
@@ -83,9 +83,9 @@ No se dispone de cifras de rendimiento de los modelos alternativos en la informa
 
 | Modelo | Familia / tarea | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| YOLO26 (`hts-ai/YOLO26-clone`) | YOLO, deteccion y multitarea visual | no disponible | no disponible | mAP@0.5:0.95 57,5 en COCO val (no verificado) | AGPL-3.0 + Enterprise | HuggingFace, 0 descargas |
-| YOLO11 (Ultralytics) | YOLO, deteccion y multitarea visual | no disponible | no disponible | no disponible en esta ficha | AGPL-3.0 + Enterprise | HuggingFace / GitHub de Ultralytics |
-| YOLOv8 (Ultralytics) | YOLO, deteccion y multitarea visual | no disponible | no disponible | no disponible en esta ficha | AGPL-3.0 + Enterprise | HuggingFace / GitHub de Ultralytics |
+| YOLO26 (`hts-ai/YOLO26-clone`) | YOLO, deteccion y multitarea visual | no disponible | no disponible | mAP@0.5:0.95 57,5 en COCO val (no verificado) | AGPL-3.0 + Enterprise | Hugging Face, 0 descargas |
+| YOLO11 (Ultralytics) | YOLO, deteccion y multitarea visual | no disponible | no disponible | no disponible en esta ficha | AGPL-3.0 + Enterprise | Hugging Face / GitHub de Ultralytics |
+| YOLOv8 (Ultralytics) | YOLO, deteccion y multitarea visual | no disponible | no disponible | no disponible en esta ficha | AGPL-3.0 + Enterprise | Hugging Face / GitHub de Ultralytics |
 | RT-DETR | Transformer de deteccion en tiempo real | no disponible | no disponible | no disponible en esta ficha | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ No se dispone de cifras de rendimiento de los modelos alternativos en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hts-ai/YOLO26-clone
+- Modelo en Hugging Face: https://huggingface.co/hts-ai/YOLO26-clone
 - Paper oficial de YOLO26: https://arxiv.org/abs/2606.03748
 - Documentacion de Ultralytics: https://docs.ultralytics.com/
 - Documentacion en espanol: https://docs.ultralytics.com/es

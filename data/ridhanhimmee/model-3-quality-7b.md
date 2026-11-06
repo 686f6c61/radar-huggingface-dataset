@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ridhanhimmee/model-3-quality-7b` es un ajuste fino (fine-tuning) publicado en HuggingFace por el usuario ridhanhimmee sobre el modelo `unsloth/Qwen2.5-7B-Instruct-bnb-4bit`, una versión cuantizada en 4 bits del Qwen2.5-7B-Instruct de Alibaba. Se trata, por tanto, de un derivado de la familia Qwen2.5 con arquitectura transformer decoder-only densa de aproximadamente 7,6 mil millones de parámetros, entrenado con la librería Unsloth (según la propia model card, "2x faster").
+`ridhanhimmee/model-3-quality-7b` es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario ridhanhimmee sobre el modelo `unsloth/Qwen2.5-7B-Instruct-bnb-4bit`, una versión cuantizada en 4 bits del Qwen2.5-7B-Instruct de Alibaba. Se trata, por tanto, de un derivado de la familia Qwen2.5 con arquitectura transformer decoder-only densa de aproximadamente 7,6 mil millones de parámetros, entrenado con la librería Unsloth (según la propia model card, "2x faster").
 
 El modelo no aporta documentación técnica sustancial: la model card se limita a indicar el modelo base, la licencia Apache 2.0 y el idioma inglés. No se publican datos de entrenamiento, hiperparámetros, composición del dataset, resultados de evaluación ni detalles sobre si los pesos subidos son un merge completo o adaptadores LoRA (el repositorio ocupa 0,2 GB, un tamaño compatible con adaptadores PEFT pero no con un merge en precisión completa de un modelo de 7B).
 
@@ -19,7 +19,7 @@ Su relevancia es limitada y de nicho: se trata de un experimento comunitario sin
 | Tipos de cuantizacion | Modelo base en 4 bits (bitsandbytes, segun el identificador `bnb-4bit`); no se documentan cuantizaciones propias del fine-tuning |
 | Idiomas soportados | Ingles (declarado en la model card); el base Qwen2.5 soporta oficialmente 29 idiomas, pero el fine-tuning no documenta capacidades multilingues |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (tag de HuggingFace); repositorio de 0,2 GB, tamano compatible con adaptadores LoRA/PEFT y no con un merge completo en bf16 |
+| Formato de pesos | safetensors (tag de Hugging Face); repositorio de 0,2 GB, tamano compatible con adaptadores LoRA/PEFT y no con un merge completo en bf16 |
 
 ## Arquitectura y entrenamiento
 
@@ -60,14 +60,14 @@ La model card no incluye MMLU, HumanEval, GSM8K ni ninguna otra evaluacion, y ta
 - Cache KV: con 28 capas, 4 cabezas KV y dimension de cabeza 128, el coste es de unos 56 KB por token; 32.768 tokens suponen aproximadamente 1,8 GB y 131.072 tokens unos 7,3 GB adicionales.
 - GPU recomendadas: A100 40/80 GB o H100 para contexto completo y serving concurrente; L40S, A10G o RTX 4090 (24 GB) para contexto medio en bf16; RTX 3090/4090 con cuantizacion 4 bits para uso individual.
 - Cabe en GPU de consumo: si, en RTX 3060 12 GB, RTX 4060 Ti 16 GB o superiores usando GGUF Q4_K_M (aproximadamente 4,7 GB) o el base en 4 bits; en 8 GB solo con cuantizaciones agresivas y contexto reducido.
-- Opciones de despliegue: transformers, vLLM, Text Generation Inference (el tag `text-generation-inference` esta presente), llama.cpp/Ollama previa conversion a GGUF, y servidores compatibles con la API de endpoints de HuggingFace.
+- Opciones de despliegue: transformers, vLLM, Text Generation Inference (el tag `text-generation-inference` esta presente), llama.cpp/Ollama previa conversion a GGUF, y servidores compatibles con la API de endpoints de Hugging Face.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| model-3-quality-7b (este) | 7,62 B (heredados) | 131.072 tokens en el base; efectivo no disponible | No disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| model-3-quality-7b (este) | 7,62 B (heredados) | 131.072 tokens en el base; efectivo no disponible | No disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Qwen2.5-7B-Instruct (base) | 7,62 B | 131.072 tokens | Evaluaciones publicadas por Alibaba (no reproducidas aqui) | Apache 2.0 | Ampliamente disponible |
 | Llama 3.1 8B Instruct | 8,03 B | 131.072 tokens | Evaluaciones publicadas por Meta | Llama 3.1 Community License | Ampliamente disponible |
 | Olmo 3-7B-Instruct (AI2) | 7 B | No especificado en la busqueda | Evaluaciones publicadas por AI2 | Licencia abierta de AI2 (consultar terminos) | Anunciado en noviembre de 2025 |
@@ -88,9 +88,9 @@ Frente al base Qwen2.5-7B-Instruct, este fine-tuning no aporta ninguna ventaja d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ridhanhimmee/model-3-quality-7b
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/ridhanhimmee/model-3-quality-7b
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Repositorio de Qwen2.5 (Alibaba): https://github.com/QwenLM/Qwen2.5
-- Repositorio de TRL (HuggingFace): https://github.com/huggingface/trl
+- Repositorio de TRL (Hugging Face): https://github.com/huggingface/trl
 - Nota: la busqueda web realizada no ha devuelto articulos, papers ni demos especificos de este modelo; los resultados obtenidos (Olmo 3 de AI2, Falcon H1R 7B de TII, comparativas de tamanos de modelos y generadores 3D) no guardan relacion con esta ficha.

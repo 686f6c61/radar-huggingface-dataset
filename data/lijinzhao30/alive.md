@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Alive es un modelo publicado en HuggingFace por el usuario lijinzhao30 (Jinzhao Li), doctorando en el College of AI de la Universidad de Tsinghua cuya línea de investigación se centra en modelos fundacionales multimodales e IA encarnada (embodied AI). El repositorio, creado el 13 de octubre de 2026 y actualizado por última vez el 29 de octubre de 2026, distribuye pesos en formato safetensors bajo licencia Apache 2.0 y pesa 1112,8 GB, lo que apunta a un modelo de muy gran escala.
+Alive es un modelo publicado en Hugging Face por el usuario lijinzhao30 (Jinzhao Li), doctorando en el College of AI de la Universidad de Tsinghua cuya línea de investigación se centra en modelos fundacionales multimodales e IA encarnada (embodied AI). El repositorio, creado el 13 de octubre de 2026 y actualizado por última vez el 29 de octubre de 2026, distribuye pesos en formato safetensors bajo licencia Apache 2.0 y pesa 1112,8 GB, lo que apunta a un modelo de muy gran escala.
 
-Su rasgo más llamativo es la ausencia total de model card: no se publican arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni capacidades. Además, el acceso es restringido (gated): hay que aceptar unas condiciones en HuggingFace antes de poder descargar los ficheros.
+Su rasgo más llamativo es la ausencia total de model card: no se publican arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni capacidades. Además, el acceso es restringido (gated): hay que aceptar unas condiciones en Hugging Face antes de poder descargar los ficheros.
 
 Con 0 descargas y 0 likes en el momento de redactar esta ficha, se trata de un lanzamiento muy reciente y sin validación comunitaria. Su interés actual es principalmente potencial y de investigación; la falta de documentación impide evaluarlo frente a modelos establecidos.
 
@@ -57,7 +57,7 @@ No disponible: al desconocerse la arquitectura, el número de parámetros y el r
 ## Limitaciones y advertencias
 
 - Ausencia de model card: no se conocen datos de entrenamiento, limitaciones declaradas, sesgos ni evaluaciones de seguridad; la procedencia del modelo es opaca.
-- Acceso gated: hay que aceptar condiciones en HuggingFace para descargarlo; esas condiciones pueden añadir restricciones adicionales a las de la licencia Apache 2.0.
+- Acceso gated: hay que aceptar condiciones en Hugging Face para descargarlo; esas condiciones pueden añadir restricciones adicionales a las de la licencia Apache 2.0.
 - Sin validación comunitaria: 0 descargas y 0 likes; no hay reportes de errores, evaluaciones independientes ni issues que respalden su fiabilidad.
 - Riesgo de alucinación y sesgos: no evaluable por falta de documentación; trátelo como un modelo sin auditar.
 - Coste de descarga y almacenamiento: 1112,8 GB implican un gasto elevado de ancho de banda y disco, con posible inclusión de checkpoints redundantes.
@@ -67,7 +67,7 @@ No disponible: al desconocerse la arquitectura, el número de parámetros y el r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lijinzhao30/Alive
-- Perfil del autor en HuggingFace: https://huggingface.co/lijinzhao30
+- Repositorio en Hugging Face: https://huggingface.co/lijinzhao30/Alive
+- Perfil del autor en Hugging Face: https://huggingface.co/lijinzhao30
 - Web personal del autor (Jinzhao Li, Universidad de Tsinghua): https://lijinzhao30.github.io/
 - GitHub del autor: https://github.com/lijinzhao30

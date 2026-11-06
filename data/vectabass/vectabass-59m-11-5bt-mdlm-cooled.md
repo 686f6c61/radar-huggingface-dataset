@@ -84,7 +84,7 @@ Los errores estándar en bits por byte son de aproximadamente 0,06 con una sola 
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vectabass-59m-11.5bt-mdlm-cooled | 59,5M totales (27,3M no-embedding) | 2048 | MDLM (difusión enmascarada) | Apache 2.0 | HuggingFace |
+| vectabass-59m-11.5bt-mdlm-cooled | 59,5M totales (27,3M no-embedding) | 2048 | MDLM (difusión enmascarada) | Apache 2.0 | Hugging Face |
 | Addendum AR de VectaBass (mismo tamaño) | No disponible en la información | No disponible | Autorregresivo | No disponible | Liberado por separado según la model card |
 | Celdas MDLM del "cuadrado" (100M a 1.6B) | 100M a 1.6B | No disponible | MDLM | No disponible | Parte del mismo proyecto |
 
@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks comparativos frente a alternativas de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-59m-11.5bt-mdlm-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-59m-11.5bt-mdlm-cooled
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset FineWeb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
 - Dataset FineMath: https://huggingface.co/datasets/HuggingFaceTB/finemath

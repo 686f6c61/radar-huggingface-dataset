@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: los pesos en bf16 ocupan aproximadamente 16 GB (el repositorio pesa 16,1 GB), por lo que se necesitan al menos 16-18 GB de VRAM para inferencia en bf16 sin cuantizacion.
 - GPU recomendadas: tarjetas con 24 GB de VRAM como RTX 3090, RTX 4090, A5000 o A10G pueden ejecutar el modelo en bf16. Para GPUs de 16 GB (RTX 4080, RTX 4080 Super) seria necesaria cuantizacion a 8 bits o 4 bits.
 - En consumer GPU: cabe en una RTX 3090 o RTX 4090 sin cuantizar; con cuantizacion 4-bit cabria en GPUs de 8 GB (RTX 3070, RTX 4060).
-- Opciones de despliegue: al ser un modelo estandar de HuggingFace con pesos safetensors, es compatible con transformers, vLLM, TGI, llama.cpp y Ollama (tras conversion a GGUF). No se proporciona ningun archivo GGUF en el repositorio.
+- Opciones de despliegue: al ser un modelo estandar de Hugging Face con pesos safetensors, es compatible con transformers, vLLM, TGI, llama.cpp y Ollama (tras conversion a GGUF). No se proporciona ningun archivo GGUF en el repositorio.
 - Latencia y throughput: no se han publicado mediciones. Como referencia, Llama-3.1-8B-Instruct en una RTX 4090 con vLLM suele alcanzar del orden de 100-200 tokens/s en generacion, pero esta variante no aporta datos propios.
 
 ## Comparativa con modelos similares
@@ -80,9 +80,9 @@ La comparativa directa con el modelo base es la mas relevante: misma arquitectur
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Full-Suppress-Complete
+- Repositorio Hugging Face: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Full-Suppress-Complete
 - Herramienta jBlaze: https://github.com/apolloraines/jblaze
-- Modelo base en HuggingFace: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
-- Modelo base sin instruct en HuggingFace: https://huggingface.co/meta-llama/Llama-3.1-8B
+- Modelo base en Hugging Face: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
+- Modelo base sin instruct en Hugging Face: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Pagina de Llama 3.1 en Ollama: https://ollama.com/library/llama3.1:8b
 - Model card de Llama 3.1 8B Instruct en NVIDIA NIM: https://build.nvidia.com/meta/llama-3_1-8b-instruct/modelcard

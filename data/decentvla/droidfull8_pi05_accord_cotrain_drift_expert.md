@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Base | Esquema federado | Peso del banco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| droidfull8 π0.5 ACCORD-C drift expert (este) | π0.5 openpi, fine-tune completo | ACCORD-C, 8 clientes, 400 rondas | Adaptativo por drift, `w = clip(δ/floor − 1, 0, 1)`, tope 1 | Apache 2.0 | HuggingFace (0 descargas) |
-| droidfull8 π0.5 FedAvg | π0.5 openpi, fine-tune completo | FedAvg, 8 clientes | Sin banco | Apache 2.0 | HuggingFace |
-| droidfull8 π0.5 ACCORD-C w0.1 expert | π0.5 openpi, fine-tune completo | ACCORD-C, 8 clientes | Fijo 0,1 | Apache 2.0 | HuggingFace |
-| droidfull8 π0.5 cent | π0.5 openpi, fine-tune completo | Entrenamiento centralizado (control) | No aplica | Apache 2.0 | HuggingFace |
+| droidfull8 π0.5 ACCORD-C drift expert (este) | π0.5 openpi, fine-tune completo | ACCORD-C, 8 clientes, 400 rondas | Adaptativo por drift, `w = clip(δ/floor − 1, 0, 1)`, tope 1 | Apache 2.0 | Hugging Face (0 descargas) |
+| droidfull8 π0.5 FedAvg | π0.5 openpi, fine-tune completo | FedAvg, 8 clientes | Sin banco | Apache 2.0 | Hugging Face |
+| droidfull8 π0.5 ACCORD-C w0.1 expert | π0.5 openpi, fine-tune completo | ACCORD-C, 8 clientes | Fijo 0,1 | Apache 2.0 | Hugging Face |
+| droidfull8 π0.5 cent | π0.5 openpi, fine-tune completo | Entrenamiento centralizado (control) | No aplica | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DecentVLA/droidfull8_pi05_accord_cotrain_drift_expert
+- Modelo en Hugging Face: https://huggingface.co/DecentVLA/droidfull8_pi05_accord_cotrain_drift_expert
 - Variante FedAvg: https://huggingface.co/DecentVLA/droidfull8_pi05_fedavg
 - Variante ACCORD-C w0.1 expert: https://huggingface.co/DecentVLA/droidfull8_pi05_accord_cotrain_w010_expert
 - Control centralizado: https://huggingface.co/DecentVLA/droidfull8_pi05_cent

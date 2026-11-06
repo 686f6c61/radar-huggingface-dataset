@@ -90,7 +90,7 @@ No disponible. Este repositorio no es un modelo, sino una nota de investigación
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/leonardoperei/efficient-attention
+- Repositorio en Hugging Face: https://huggingface.co/leonardoperei/efficient-attention
 - Fichero principal de la nota: `reading.md` (dentro del repositorio)
 - Documentación del repositorio: `README.md` (dentro del repositorio)
 - Referencias bibliográficas sobre atención eficiente: mencionadas en la nota, no enumeradas en la información disponible

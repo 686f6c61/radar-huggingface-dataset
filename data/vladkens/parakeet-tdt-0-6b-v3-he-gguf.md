@@ -76,10 +76,10 @@ La ventaja es consistente en los cinco conjuntos, con una diferencia máxima de 
 
 | Modelo | Idioma | Parámetros | Formato | WER FLEURS (he_il) | Licencia | Disponibilidad |
 |---|---|---:|---|---:|---|---|
-| parakeet-tdt-0.6b-v3-he (este, Q8_0) | he | 628.351.100 | GGUF | 22,78 | CC-BY-4.0 | HuggingFace, vía transcribe.cpp/wavo |
+| parakeet-tdt-0.6b-v3-he (este, Q8_0) | he | 628.351.100 | GGUF | 22,78 | CC-BY-4.0 | Hugging Face, vía transcribe.cpp/wavo |
 | openai/whisper-large-v3-turbo (Q8_0) | multilingüe | No disponible en la información | No disponible en la información | 33,25 | No disponible en la información | Referenciado en la model card como baseline |
-| nvidia/parakeet-tdt-0.6b-v3 | multilingüe (europeo) | No disponible en la información | `.nemo` | No disponible | No disponible en la información | HuggingFace (modelo base de la cadena) |
-| thewh1teagle/parakeet-tdt-0.6b-v3-he | he | No disponible en la información | `.nemo` | No disponible | CC-BY-4.0 | HuggingFace (origen de esta conversión) |
+| nvidia/parakeet-tdt-0.6b-v3 | multilingüe (europeo) | No disponible en la información | `.nemo` | No disponible | No disponible en la información | Hugging Face (modelo base de la cadena) |
+| thewh1teagle/parakeet-tdt-0.6b-v3-he | he | No disponible en la información | `.nemo` | No disponible | CC-BY-4.0 | Hugging Face (origen de esta conversión) |
 
 La comparación disponible se limita al eje de calidad en hebreo: el modelo supera a Whisper large-v3-turbo en los cinco conjuntos evaluados, con especial ventaja en audio conversacional y en FLEURS. No hay datos publicados que permitan comparar velocidad, consumo o robustez frente a ruido con las alternativas.
 
@@ -98,7 +98,7 @@ La comparación disponible se limita al eje de calidad en hebreo: el modelo supe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vladkens/parakeet-tdt-0.6b-v3-he-gguf
+- Modelo en Hugging Face: https://huggingface.co/vladkens/parakeet-tdt-0.6b-v3-he-gguf
 - Modelo base (ajuste fino hebreo): https://huggingface.co/thewh1teagle/parakeet-tdt-0.6b-v3-he
 - Commit del modelo base usado en la conversión: https://huggingface.co/thewh1teagle/parakeet-tdt-0.6b-v3-he/commit/003720491ed0d2699a4c9e204b9ca19d6f1fe8a1
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3

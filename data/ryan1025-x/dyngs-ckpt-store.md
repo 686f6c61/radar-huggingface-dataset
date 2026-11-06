@@ -75,7 +75,7 @@ No disponible. No se han identificado en la información proporcionada modelos o
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ryan1025-x/dyngs-ckpt-store
+- Repositorio en Hugging Face: https://huggingface.co/ryan1025-x/dyngs-ckpt-store
 - Benchmark NVFi: no se proporciona enlace en la información disponible.
 - Paper o blog del método: no disponible (el autor anuncia una publicación futura sin enlace).
 - Repositorio de código: no disponible.

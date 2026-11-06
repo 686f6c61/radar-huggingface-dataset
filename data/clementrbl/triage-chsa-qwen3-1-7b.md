@@ -80,5 +80,5 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ad
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/ClementRbl/triage-chsa-qwen3-1.7b
+- Repositorio del modelo en Hugging Face: https://huggingface.co/ClementRbl/triage-chsa-qwen3-1.7b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base

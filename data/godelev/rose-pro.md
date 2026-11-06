@@ -115,6 +115,6 @@ Rose Pro tiene una ventaja en contexto frente a GPT-2 small, pero su rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GODELEV/Rose-Pro
+- Modelo en Hugging Face: https://huggingface.co/GODELEV/Rose-Pro
 - Modelo anterior de la familia: https://huggingface.co/GODELEV/Rose-Mini
-- Busqueda de modelos con tag "rose" en HuggingFace: https://huggingface.co/models?other=rose
+- Busqueda de modelos con tag "rose" en Hugging Face: https://huggingface.co/models?other=rose

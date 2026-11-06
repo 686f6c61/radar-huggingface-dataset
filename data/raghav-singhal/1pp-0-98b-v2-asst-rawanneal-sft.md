@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `1pp-0.98b-v2-asst-rawanneal-sft` (este) | 0,98B | 4.096 | Apache 2.0 | HuggingFace, safetensors | Artefacto de investigación con verificación de pesos y pérdidas publicadas |
-| `1pp-0.98b-v2-asst-sft` | 0,98B | 4.096 | Apache 2.0 | HuggingFace | Misma escalera, ejecución 1PP completa (cooldown sobre conversaciones desde el inicio del cooldown) |
-| `1pp-0.98b-v2-raw-base` | 0,98B | 4.096 | Apache 2.0 | HuggingFace | Modelo base sin SFT del que deriva esta variante |
-| SmolLM2-1.7B | 1,7B | 8.192 (según documentación pública) | Apache 2.0 | HuggingFace | Alternativa de tamaño similar con vocabulario compartido; no comparable en benchmarks con este artefacto por ausencia de datos |
+| `1pp-0.98b-v2-asst-rawanneal-sft` (este) | 0,98B | 4.096 | Apache 2.0 | Hugging Face, safetensors | Artefacto de investigación con verificación de pesos y pérdidas publicadas |
+| `1pp-0.98b-v2-asst-sft` | 0,98B | 4.096 | Apache 2.0 | Hugging Face | Misma escalera, ejecución 1PP completa (cooldown sobre conversaciones desde el inicio del cooldown) |
+| `1pp-0.98b-v2-raw-base` | 0,98B | 4.096 | Apache 2.0 | Hugging Face | Modelo base sin SFT del que deriva esta variante |
+| SmolLM2-1.7B | 1,7B | 8.192 (según documentación pública) | Apache 2.0 | Hugging Face | Alternativa de tamaño similar con vocabulario compartido; no comparable en benchmarks con este artefacto por ausencia de datos |
 
 No se dispone de resultados de benchmarks de este modelo que permitan una comparación cuantitativa con alternativas; la comparativa anterior es estructural.
 
@@ -99,7 +99,7 @@ No se dispone de resultados de benchmarks de este modelo que permitan una compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-rawanneal-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-rawanneal-sft
 - Variante 1PP completa: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-sft
 - Modelo base raw: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-raw-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

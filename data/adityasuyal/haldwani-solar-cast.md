@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DualStreamCAST es un transformer "physics-informed" disenado para predecir la irradiancia global horizontal (GHI, en W/m²) con un horizonte de 24 horas y resolucion horaria en la microrred de Haldwani (Uttarakhand, India, 29.2183° N, 79.5130° E). Lo desarrolla el usuario adityasuyal y se publica bajo licencia MIT en HuggingFace, con pipeline declarado `time-series-forecasting`.
+DualStreamCAST es un transformer "physics-informed" disenado para predecir la irradiancia global horizontal (GHI, en W/m²) con un horizonte de 24 horas y resolucion horaria en la microrred de Haldwani (Uttarakhand, India, 29.2183° N, 79.5130° E). Lo desarrolla el usuario adityasuyal y se publica bajo licencia MIT en Hugging Face, con pipeline declarado `time-series-forecasting`.
 
 El modelo no genera texto ni es un LLM: es un predictor de series temporales de unos 233.000 parametros que fusiona dos flujos de informacion en paralelo —24 horas de telemetria observada (11 variables) y 24 horas de prediccion numerica del tiempo, NWP (8 variables)— mediante cross-attention. La innovacion central es la restriccion fisica: en lugar de predecir GHI directamente, el modelo predice el indice de claridad Kc en el rango [0, 1] y lo multiplica por la GHI de cielo claro, de modo que la salida nunca puede violar la fisica atmosferica basica.
 
@@ -73,7 +73,7 @@ No se dispone de informacion sobre modelos comparables en los datos proporcionad
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DualStreamCAST (haldwani-solar-cast) | ~233K | 24 pasos horarios | no disponible | MIT | HuggingFace, 0 descargas |
+| DualStreamCAST (haldwani-solar-cast) | ~233K | 24 pasos horarios | no disponible | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,6 +91,6 @@ No se dispone de informacion sobre modelos comparables en los datos proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adityasuyal/haldwani-solar-cast
+- Hugging Face: https://huggingface.co/adityasuyal/haldwani-solar-cast
 - PyTorch (framework requerido): https://pytorch.org
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

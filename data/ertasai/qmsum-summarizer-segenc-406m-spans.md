@@ -58,16 +58,16 @@ La diferencia en ROUGE-1 es de +0,93 puntos, con un intervalo de confianza boots
 - VRAM estimada para inferencia: 2,655 GB (medido en el experimento del paper). Cabe en cualquier GPU moderna, incluso en tarjetas integradas de gama alta.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, RTX 3050, RTX 4060, o incluso CPUs con suficiente RAM si se usa cuantizacion, aunque no se proporcionan pesos cuantizados).
 - El entrenamiento se realizo en una NVIDIA RTX 5070 Ti de 16 GB, pero la inferencia es mucho mas ligera.
-- Opciones de despliegue: al ser un modelo BART estandar, se puede cargar con la libreria `transformers` de HuggingFace. No se mencionan integraciones con vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: al ser un modelo BART estandar, se puede cargar con la libreria `transformers` de Hugging Face. No se mencionan integraciones con vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponibles en la informacion proporcionada. Se espera que sea rapido dado el tamano moderado y la entrada limitada a 2.000 palabras.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | R1 (QMSum) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ErtasAI/qmsum-summarizer-segenc-406m-spans (este) | 406M | 4.008 tokens | 36,33 | BSD-3-Clause | HuggingFace |
-| Salesforce/socratic-pretraining-qmsum (base) | ~406M (BART-large) | 1.024 tokens (BART) | no reportado en esta ficha | BSD-3-Clause | HuggingFace |
-| ErtasAI/qmsum-summarizer-lfm2.5-1.2b-lora (sistema 1.2B) | 1.2B (LoRA) | no especificado | 35,41 | BSD-3-Clause | HuggingFace |
+| ErtasAI/qmsum-summarizer-segenc-406m-spans (este) | 406M | 4.008 tokens | 36,33 | BSD-3-Clause | Hugging Face |
+| Salesforce/socratic-pretraining-qmsum (base) | ~406M (BART-large) | 1.024 tokens (BART) | no reportado en esta ficha | BSD-3-Clause | Hugging Face |
+| ErtasAI/qmsum-summarizer-lfm2.5-1.2b-lora (sistema 1.2B) | 1.2B (LoRA) | no especificado | 35,41 | BSD-3-Clause | Hugging Face |
 
 No se dispone de datos de otros modelos de resumen de reuniones comparables (p. ej., Longformer o LED) en la informacion proporcionada. La comparativa se limita a los artefactos del mismo proyecto.
 
@@ -82,7 +82,7 @@ No se dispone de datos de otros modelos de resumen de reuniones comparables (p. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ErtasAI/qmsum-summarizer-segenc-406m-spans
+- Modelo en Hugging Face: https://huggingface.co/ErtasAI/qmsum-summarizer-segenc-406m-spans
 - Repositorio de codigo y protocolo: https://github.com/ErtasAI/qmsum-locate-then-summarize
 - Paper original de QMSum (arXiv:2104.05938): https://arxiv.org/abs/2104.05938
 - Paper de Fusion-in-Decoder (arXiv:2212.10449, referenciado en tags): https://arxiv.org/abs/2212.10449

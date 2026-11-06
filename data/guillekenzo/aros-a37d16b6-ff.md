@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `guillekenzo/aros-a37d16b6-FF` es un adaptador LoRA de tipo DreamBooth para el modelo de generacion de imagenes Krea 2, desarrollado por el usuario guillekenzo y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un ajuste fino ligero que permite personalizar la salida del modelo base Krea 2 RAW mediante un token de activacion especifico ("rvjh woman"), de modo que el modelo aprenda a generar imagenes de un sujeto concreto de forma consistente.
+El modelo `guillekenzo/aros-a37d16b6-FF` es un adaptador LoRA de tipo DreamBooth para el modelo de generacion de imagenes Krea 2, desarrollado por el usuario guillekenzo y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un ajuste fino ligero que permite personalizar la salida del modelo base Krea 2 RAW mediante un token de activacion especifico ("rvjh woman"), de modo que el modelo aprenda a generar imagenes de un sujeto concreto de forma consistente.
 
 El adaptador esta disenado para funcionar con el pipeline `Krea2Pipeline` de la libreria `diffusers`, y se puede cargar sobre el checkpoint base `krea/Krea-2-Raw` o sobre la variante Turbo (`krea/Krea-2-Turbo`) para generar imagenes en pocos pasos (8 pasos de inferencia segun los ejemplos del autor). El tamano del repositorio es de aproximadamente 0.7 GB, lo que refleja un peso relativamente contenido al tratarse de un LoRA y no de un modelo completo. Su relevancia radica en su utilidad para personalizacion de generacion de imagenes con un unico sujeto, un caso de uso habitual en diseno, ilustracion y prototipado visual.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `0xjaysmth/pi05-3cYofFKyNaP2` es un checkpoint de un modelo de visión-lenguaje-acción (VLA) basado en π₀.₅ (Pi0.5), desarrollado por Physical Intelligence y adaptado por la comunidad. Este tipo de modelos está diseñado para control robótico end-to-end, combinando percepción visual, comprensión de lenguaje natural y generación de acciones motoras. El checkpoint concreto, con 3.616.757.520 parámetros (3,6B), parece ser una variante específica para la plataforma LingBot, según la etiqueta `lingbotvla` presente en HuggingFace.
+El modelo `0xjaysmth/pi05-3cYofFKyNaP2` es un checkpoint de un modelo de visión-lenguaje-acción (VLA) basado en π₀.₅ (Pi0.5), desarrollado por Physical Intelligence y adaptado por la comunidad. Este tipo de modelos está diseñado para control robótico end-to-end, combinando percepción visual, comprensión de lenguaje natural y generación de acciones motoras. El checkpoint concreto, con 3.616.757.520 parámetros (3,6B), parece ser una variante específica para la plataforma LingBot, según la etiqueta `lingbotvla` presente en Hugging Face.
 
 La relevancia de este modelo radica en su capacidad de generalización a entornos abiertos, una de las principales limitaciones de los sistemas robóticos tradicionales. Aunque la información pública sobre este checkpoint concreto es limitada, se enmarca dentro de la línea de investigación de π₀.₅, que introduce co-entrenamiento con datos heterogéneos (demostraciones robóticas, datos web y subtareas semánticas) para lograr un control robusto en tareas de manipulación de largo horizonte. El tamaño del repositorio (62,6 GB) sugiere que los pesos se almacenan en precisión completa o en múltiples formatos, lo que condiciona su despliegue en hardware de gama alta.
 
@@ -52,16 +52,16 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 - VRAM estimada: con 3,6B parámetros, en FP16 se necesitan aproximadamente 7,2 GB de VRAM solo para los pesos, más overhead de activaciones y optimizador. En FP32, la cifra sube a ~14,5 GB. Dado que el repositorio ocupa 62,6 GB, es probable que incluya pesos en FP32 o múltiples formatos, lo que requeriría al menos 16 GB de VRAM para inferencia en FP16.
 - GPU recomendadas: para inferencia en tiempo real con un robot, se necesitan GPUs de alta gama como NVIDIA A100 (40/80 GB), H100 (80 GB) o RTX 4090 (24 GB) si se usa cuantización. Para entrenamiento o fine-tuning, se requieren múltiples GPUs con memoria abundante.
 - Compatibilidad con GPUs de consumo: una RTX 4090 con 24 GB podría ejecutar el modelo en FP16 si se optimiza la memoria, pero el tamaño del repositorio sugiere que podría no caber sin cuantización. Se recomienda usar cuantización de 8 bits o 4 bits (por ejemplo, con bitsandbytes) para reducir los requisitos.
-- Opciones de despliegue: al ser un modelo VLA con pesos en safetensors, se puede servir con frameworks como vLLM (si se adapta a la arquitectura), o mediante implementaciones específicas de robótica como LeRobot (HuggingFace) o el repositorio OpenPI de Physical Intelligence. Para despliegue en edge, se podría usar TensorRT o ONNX Runtime, aunque no hay confirmación de compatibilidad.
+- Opciones de despliegue: al ser un modelo VLA con pesos en safetensors, se puede servir con frameworks como vLLM (si se adapta a la arquitectura), o mediante implementaciones específicas de robótica como LeRobot (Hugging Face) o el repositorio OpenPI de Physical Intelligence. Para despliegue en edge, se podría usar TensorRT o ONNX Runtime, aunque no hay confirmación de compatibilidad.
 - Latencia y throughput: no disponible. En tareas de control robótico, la latencia es crítica (típicamente <100 ms por paso de acción), pero no se han publicado mediciones para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π₀.₅ (base) | ~3,6B (MoE) | no disponible | VLA generalista | no disponible (probablemente investigacion) | HuggingFace (lerobot/pi05_base) |
+| π₀.₅ (base) | ~3,6B (MoE) | no disponible | VLA generalista | no disponible (probablemente investigacion) | Hugging Face (lerobot/pi05_base) |
 | π₀ (original) | ~3,6B | no disponible | VLA | no disponible | Repositorio OpenPI |
-| OpenVLA | 7B | 2048 tokens | VLA | MIT | HuggingFace |
+| OpenVLA | 7B | 2048 tokens | VLA | MIT | Hugging Face |
 | RT-2 (Google) | 55B | 2048 tokens | VLA | propietaria | no publico |
 
 Este checkpoint se diferencia de OpenVLA por su menor número de parámetros (3,6B vs 7B) y su enfoque en co-entrenamiento con datos heterogéneos. Frente a RT-2, es significativamente más ligero y de código abierto (aunque la licencia de este checkpoint no está confirmada). La comparación con π₀.₅ base es directa, pero se desconoce si esta variante `lingbotvla` tiene modificaciones específicas.
@@ -77,9 +77,9 @@ Este checkpoint se diferencia de OpenVLA por su menor número de parámetros (3,
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/0xjaysmth/pi05-3cYofFKyNaP2
+- Repositorio Hugging Face del modelo: https://huggingface.co/0xjaysmth/pi05-3cYofFKyNaP2
 - Repositorio GitHub de la implementación OpenPI para π₀.₅: https://github.com/J-Oyasumi/openpi_pi05/tree/main/
-- Model card de π₀.₅ en HuggingFace (jellyho/pi05): https://huggingface.co/jellyho/pi05
-- Model card de π₀.₅ base en HuggingFace (lerobot/pi05_base): https://huggingface.co/lerobot/pi05_base
+- Model card de π₀.₅ en Hugging Face (jellyho/pi05): https://huggingface.co/jellyho/pi05
+- Model card de π₀.₅ base en Hugging Face (lerobot/pi05_base): https://huggingface.co/lerobot/pi05_base
 - Paper de π₀.₅ en arXiv: https://arxiv.org/html/2504.16054v1
 - Página de π₀.₅ en Qualcomm AI Hub: https://aihub.qualcomm.com/models/pi05

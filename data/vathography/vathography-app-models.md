@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vathography App — model files (Marigold V2 empaquetado) | no disponible | no disponible | Estimacion de profundidad monocular | Apache 2.0 | HuggingFace (este repo) |
-| huawei-bayerlab/marigold-v2-0 | no disponible | no disponible | Estimacion de profundidad monocular | Apache 2.0 (segun repo original) | HuggingFace |
-| Comfy-Org/marigold-v2-0 | no disponible | no disponible | Estimacion de profundidad monocular | Apache 2.0 (segun repo original) | HuggingFace |
-| Qwen/Qwen-Image-Edit-2509 | no disponible | no disponible | Edicion de imagen (backbone) | no disponible en esta ficha | HuggingFace |
+| Vathography App — model files (Marigold V2 empaquetado) | no disponible | no disponible | Estimacion de profundidad monocular | Apache 2.0 | Hugging Face (este repo) |
+| huawei-bayerlab/marigold-v2-0 | no disponible | no disponible | Estimacion de profundidad monocular | Apache 2.0 (segun repo original) | Hugging Face |
+| Comfy-Org/marigold-v2-0 | no disponible | no disponible | Estimacion de profundidad monocular | Apache 2.0 (segun repo original) | Hugging Face |
+| Qwen/Qwen-Image-Edit-2509 | no disponible | no disponible | Edicion de imagen (backbone) | no disponible en esta ficha | Hugging Face |
 
 Los tres primeros repositorios contienen esencialmente los mismos pesos (los ficheros de este repo son byte a byte identicos a los de Comfy-Org/marigold-v2-0); la diferencia es el empaquetado y el proposito de distribucion. No se dispone de datos de rendimiento comparativo.
 
@@ -81,7 +81,7 @@ Los tres primeros repositorios contienen esencialmente los mismos pesos (los fic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Vathography/vathography-app-models
+- Repositorio Hugging Face: https://huggingface.co/Vathography/vathography-app-models
 - Modelo base Marigold V2: https://huggingface.co/huawei-bayerlab/marigold-v2-0
 - Modelo base Qwen-Image-Edit-2509: https://huggingface.co/Qwen/Qwen-Image-Edit-2509
 - Repositorio ComfyUI de referencia: https://huggingface.co/Comfy-Org/marigold-v2-0

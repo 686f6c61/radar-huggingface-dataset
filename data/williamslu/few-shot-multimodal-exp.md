@@ -4,7 +4,7 @@
 
 `williamslu/few-shot-multimodal-exp` no es un modelo de IA: es un repositorio de notas de investigación publicado bajo licencia MIT por el usuario williamslu el 16 de octubre de 2026. Su contenido se limita a dos ficheros de texto, `notes.md` (artefacto principal) y `README.md`, en los que se organiza la motivación, el trabajo relacionado, una hipótesis falsable y un plan de evaluación en torno al aprendizaje multimodal con pocos ejemplos (few-shot multimodal). El propio autor indica de forma explícita que no se presenta como un artículo terminado ni como la publicación de modelos entrenados.
 
-El repositorio no contiene pesos, checkpoints, código de entrenamiento ni resultados experimentales. Aunque las etiquetas incluyen `safetensors`, `transformer` y el campo de parámetros totales declara 33.088, el tamaño del repositorio es de 0,0 GB y no hay ningún fichero de pesos publicado: esas etiquetas y ese recuento proceden de los metadatos automáticos de HuggingFace y no deben interpretarse como la descripción de un modelo ejecutable.
+El repositorio no contiene pesos, checkpoints, código de entrenamiento ni resultados experimentales. Aunque las etiquetas incluyen `safetensors`, `transformer` y el campo de parámetros totales declara 33.088, el tamaño del repositorio es de 0,0 GB y no hay ningún fichero de pesos publicado: esas etiquetas y ese recuento proceden de los metadatos automáticos de Hugging Face y no deben interpretarse como la descripción de un modelo ejecutable.
 
 Por tanto, su relevancia no es la de un artefacto desplegable, sino la de un documento de trabajo metodológico: sirve como plantilla de diseño experimental (baselines emparejados, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas) para equipos que quieran abordar la evaluación few-shot multimodal. Cualquier uso que presuponga inferencia, cuantización o despliegue es inaplicable con el contenido actual.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 No disponible. No procede comparar este repositorio con modelos de la misma categoría porque no es un modelo: carece de parámetros funcionales, contexto, licencia de pesos (más allá de la MIT aplicada a las notas) y disponibilidad de inferencia. Cualquier tabla que lo situara junto a modelos multimodales reales sería engañosa, ya que estaría comparando documentación con artefactos entrenados.
 
-Si lo que se busca es referenciarlo junto a otros materiales, la comparación pertinente sería con otros repositorios de notas de investigación en HuggingFace, un conjunto para el que no se dispone de datos en la información proporcionada.
+Si lo que se busca es referenciarlo junto a otros materiales, la comparación pertinente sería con otros repositorios de notas de investigación en Hugging Face, un conjunto para el que no se dispone de datos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -77,6 +77,6 @@ Si lo que se busca es referenciarlo junto a otros materiales, la comparación pe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/williamslu/few-shot-multimodal-exp
+- Repositorio en Hugging Face: https://huggingface.co/williamslu/few-shot-multimodal-exp
 - Búsqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos corresponden a herramientas no relacionadas con el aprendizaje automático (utilidades de extracción de vídeo y GPX para cámaras Insta360 y discusiones de foro sobre esos dispositivos), por lo que se descartan como fuentes.
 - Artículo, blog, repositorio de código y demo: no disponibles.

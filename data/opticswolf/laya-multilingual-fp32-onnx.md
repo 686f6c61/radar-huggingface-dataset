@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`laya-multilingual-fp32-onnx` es una exportación a ONNX en precisión FP32 del modelo `convaiinnovations/laya-multilingual`, un encoder basado en mmBERT-base orientado a tareas de toma de decisiones y clasificación zero-shot. Lo publica el usuario opticsWolf en HuggingFace bajo licencia Apache-2.0, con el objetivo de facilitar el despliegue en producción mediante ONNX Runtime sin dependencia de PyTorch. El modelo base está especializado en seleccionar una opción entre varias alternativas (choice/decision-making) y en clasificación zero-shot multilingüe, con un vocabulario multilingüe de 34 MB.
+`laya-multilingual-fp32-onnx` es una exportación a ONNX en precisión FP32 del modelo `convaiinnovations/laya-multilingual`, un encoder basado en mmBERT-base orientado a tareas de toma de decisiones y clasificación zero-shot. Lo publica el usuario opticsWolf en Hugging Face bajo licencia Apache-2.0, con el objetivo de facilitar el despliegue en producción mediante ONNX Runtime sin dependencia de PyTorch. El modelo base está especializado en seleccionar una opción entre varias alternativas (choice/decision-making) y en clasificación zero-shot multilingüe, con un vocabulario multilingüe de 34 MB.
 
 La exportación mantiene un único grafo ONNX (opset 18, 1479 nodos, sin operadores no estándar) con cinco entradas en formato marker y dos salidas: `logits` y `act_logits`. El paquete incluye el grafo principal, el fichero de datos externo (1.29 GB), el tokenizador y la configuración del agente RL sin modificar respecto al upstream. La verificación de paridad entre PyTorch y ONNX Runtime en CPU reporta una diferencia máxima absoluta de 7.9e-6 sobre `logits`, lo que indica una fidelidad numérica muy alta.
 
@@ -29,7 +29,7 @@ No se dispone de información sobre el volumen de tokens de entrenamiento, la co
 
 ## Capacidades
 
-- Clasificación zero-shot: pipeline declarado en HuggingFace como `zero-shot-classification`.
+- Clasificación zero-shot: pipeline declarado en Hugging Face como `zero-shot-classification`.
 - Toma de decisiones y selección entre opciones (tags `decision-making` y `choice`).
 - Procesamiento multilingüe gracias al vocabulario multilingüe del tokenizador.
 - Inferencia en CPU y CUDA mediante ONNX Runtime, con soporte de execution providers.
@@ -96,6 +96,6 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/opticsWolf/laya-multilingual-fp32-onnx
+- Modelo en Hugging Face: https://huggingface.co/opticsWolf/laya-multilingual-fp32-onnx
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Modelo hermano (typed-decisions): https://huggingface.co/opticsWolf/laya-typed-decisions-fp32-onnx

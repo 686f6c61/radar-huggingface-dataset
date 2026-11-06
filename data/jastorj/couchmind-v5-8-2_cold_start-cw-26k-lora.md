@@ -25,7 +25,7 @@ La licencia Apache 2.0 permite uso comercial y modificación, lo que facilita su
 
 El adaptador se basa en la arquitectura Qwen2, un transformer decoder-only con atención causal. El modelo base `Snowflake/Arctic-Text2SQL-R1-7B` ha sido preentrenado específicamente para la tarea de Text2SQL, probablemente con técnicas de razonamiento y refuerzo (el sufijo R1 sugiere una variante de razonamiento). El adaptador LoRA se ha entrenado sobre este modelo base utilizando un enfoque de "cold start" (arranque en frío) con 26.000 ejemplos, lo que indica que se ha ajustado para mejorar el rendimiento en situaciones iniciales o de bajo contexto.
 
-Según la información de HuggingFace, el entrenamiento se realizó con las librerías Unsloth (que acelera el fine-tuning) y TRL (Transformer Reinforcement Learning), lo que sugiere que se emplearon técnicas de aprendizaje por refuerzo o al menos un pipeline de fine-tuning supervisado. No se proporcionan detalles sobre la composición del dataset, el número de épocas, la tasa de aprendizaje ni la estrategia de regularización. Tampoco se indica si se aplicó RLHF o DPO.
+Según la información de Hugging Face, el entrenamiento se realizó con las librerías Unsloth (que acelera el fine-tuning) y TRL (Transformer Reinforcement Learning), lo que sugiere que se emplearon técnicas de aprendizaje por refuerzo o al menos un pipeline de fine-tuning supervisado. No se proporcionan detalles sobre la composición del dataset, el número de épocas, la tasa de aprendizaje ni la estrategia de regularización. Tampoco se indica si se aplicó RLHF o DPO.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ No se dispone de información comparativa con otros modelos Text2SQL de la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jastorj/couchmind-v5.8.2_cold_start-cw-26K-lora
+- Modelo en Hugging Face: https://huggingface.co/jastorj/couchmind-v5.8.2_cold_start-cw-26K-lora
 - Modelo base: https://huggingface.co/Snowflake/Arctic-Text2SQL-R1-7B
 - Variantes relacionadas del mismo autor:
   - https://huggingface.co/jastorj/couchmind-v5.8_rl_cold_start-cw-26K-16bit

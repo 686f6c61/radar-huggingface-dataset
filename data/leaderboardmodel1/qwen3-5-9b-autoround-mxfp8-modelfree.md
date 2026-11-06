@@ -101,7 +101,7 @@ No se dispone de datos comparativos dentro de la ficha. Como referencia general,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeaderboardModel1/Qwen3.5-9B-AutoRound-MXFP8-ModelFree
+- Modelo en Hugging Face: https://huggingface.co/LeaderboardModel1/Qwen3.5-9B-AutoRound-MXFP8-ModelFree
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio AutoRound: https://github.com/intel/auto-round
 - Articulo arXiv (AutoRound): https://arxiv.org/abs/2309.05516

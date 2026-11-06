@@ -16,12 +16,12 @@ La relevancia de este modelo radica en que permite ejecutar un LLM multimodal de
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | oQ4e (4 bits) con grupo de 128, MTP en fp16 |
 | Idiomas soportados | no disponibles |
-| Licencia | apache-2.0 (segun el tag de HuggingFace; el campo licencia indica "no disponible") |
+| Licencia | apache-2.0 (segun el tag de Hugging Face; el campo licencia indica "no disponible") |
 | Formato de pesos | safetensors (MLX) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base Qwen3.8-27B en la ficha de HuggingFace. Por el nombre y la familia Qwen, se trata de un transformer con atencion por ventanas o completa, probablemente con capacidades multimodales (vision encoder + decoder de lenguaje). El modelo original fue entrenado por Alibaba Cloud con un corpus multilingue extenso, aunque no se especifican los datos exactos en esta ficha.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base Qwen3.8-27B en la ficha de Hugging Face. Por el nombre y la familia Qwen, se trata de un transformer con atencion por ventanas o completa, probablemente con capacidades multimodales (vision encoder + decoder de lenguaje). El modelo original fue entrenado por Alibaba Cloud con un corpus multilingue extenso, aunque no se especifican los datos exactos en esta ficha.
 
 La cuantizacion oQ4e es una tecnica de cuantizacion de 4 bits optimizada para MLX, que agrupa los pesos en bloques de 128 elementos para reducir el error de cuantizacion. El modulo MTP (multi-token prediction) se mantiene en fp16 para preservar la calidad de la prediccion de multiples tokens, una caracteristica presente en algunos modelos Qwen recientes. No se indica si el modelo base fue sometido a RLHF o DPO.
 
@@ -62,7 +62,7 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. El
 ## Limitaciones y advertencias
 
 - La cuantizacion a 4 bits puede degradar la calidad de las respuestas, especialmente en tareas de razonamiento complejo o generacion de codigo.
-- No se ha verificado la licencia real del modelo; aunque el tag indica apache-2.0, el campo de licencia en HuggingFace dice "no disponible". Se debe confirmar antes de un uso comercial.
+- No se ha verificado la licencia real del modelo; aunque el tag indica apache-2.0, el campo de licencia en Hugging Face dice "no disponible". Se debe confirmar antes de un uso comercial.
 - El modelo base Qwen3.8-27B puede presentar sesgos presentes en sus datos de entrenamiento, que no se han documentado en esta ficha.
 - Riesgo de alucinacion: como cualquier LLM, puede generar informacion falsa o inventada, especialmente en contextos largos o ambiguos.
 - La longitud de contexto no esta especificada; si es limitada, las conversaciones muy largas o documentos extensos podrian truncarse.
@@ -71,6 +71,6 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. El
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chimpanzeetaxidriver/Qwen3.8-27B-oQ4e-G128-fp16-mtp
+- Repositorio Hugging Face: https://huggingface.co/chimpanzeetaxidriver/Qwen3.8-27B-oQ4e-G128-fp16-mtp
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen3.8-27B
 - Libreria MLX: https://github.com/ml-explore/mlx

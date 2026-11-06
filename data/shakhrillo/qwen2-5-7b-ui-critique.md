@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shakhrillo/qwen2.5-7b-ui-critique` es un modelo de generacion de texto publicado en HuggingFace por el usuario shakhrillo. Por el identificador y por el recuento exacto de parametros (7.615.616.512, equivalente a 7,62 mil millones), todo apunta a un ajuste fino del modelo base Qwen2.5-7B, pero la model card publicada es la plantilla automatica de HuggingFace y no confirma ni el origen, ni el proceso de entrenamiento, ni el conjunto de datos utilizado. El sufijo "ui-critique" sugiere un ajuste orientado a la critica o evaluacion de interfaces de usuario, aunque no existe documentacion que lo respalde.
+`shakhrillo/qwen2.5-7b-ui-critique` es un modelo de generacion de texto publicado en Hugging Face por el usuario shakhrillo. Por el identificador y por el recuento exacto de parametros (7.615.616.512, equivalente a 7,62 mil millones), todo apunta a un ajuste fino del modelo base Qwen2.5-7B, pero la model card publicada es la plantilla automatica de Hugging Face y no confirma ni el origen, ni el proceso de entrenamiento, ni el conjunto de datos utilizado. El sufijo "ui-critique" sugiere un ajuste orientado a la critica o evaluacion de interfaces de usuario, aunque no existe documentacion que lo respalde.
 
 El modelo se distribuye en formato safetensors con la libreria transformers, etiqueta de pipeline text-generation, y aparece marcado como compatible con endpoints y con text-generation-inference, lo que indica que es desplegable en infraestructura estandar de inferencia. En el momento de la consulta acumula 0 descargas y 0 "likes", por lo que no hay evidencia de uso comunitario ni validacion externa de su calidad.
 
@@ -12,7 +12,7 @@ Su relevancia actual es limitada y fundamentalmente exploratoria: sirve como eje
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only causal (etiqueta `qwen2` en HuggingFace); detalles concretos no disponibles |
+| Arquitectura | Transformer decoder-only causal (etiqueta `qwen2` en Hugging Face); detalles concretos no disponibles |
 | Parametros totales | 7.615.616.512 (segun metadatos de safetensors) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible. El modelo base Qwen2.5-7B soporta 32.768 tokens nativos y hasta 131.072 con YaRN, pero esta ficha no confirma la configuracion de este ajuste |
@@ -31,13 +31,13 @@ Su relevancia actual es limitada y fundamentalmente exploratoria: sirve como eje
 
 No hay informacion publicada sobre la arquitectura concreta, el proceso de entrenamiento o los datos utilizados. La unica evidencia disponible es la etiqueta `qwen2` del repositorio y el recuento de parametros, que coincide exactamente con el del modelo Qwen2.5-7B, lo que sugiere que se trata de un ajuste fino (probablemente SFT o DPO) sobre ese checkpoint. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo etapas de RLHF/DPO ni los hiperparametros empleados.
 
-Tampoco hay documentacion de innovaciones tecnicas propias: ni decodificacion especulativa, ni atencion lineal, ni variantes de atencion eficiente. La model card es la plantilla estandar autogenerada por HuggingFace, con todos los campos marcados como `[More Information Needed]`, incluidos los relativos a arquitectura, infraestructura de computo e impacto ambiental.
+Tampoco hay documentacion de innovaciones tecnicas propias: ni decodificacion especulativa, ni atencion lineal, ni variantes de atencion eficiente. La model card es la plantilla estandar autogenerada por Hugging Face, con todos los campos marcados como `[More Information Needed]`, incluidos los relativos a arquitectura, infraestructura de computo e impacto ambiental.
 
 ## Capacidades
 
 - Generacion de texto conversacional en formato estandar de instrucciones, segun la etiqueta `conversational` del repositorio.
 - Generacion de texto autoregresiva convencional (pipeline `text-generation`).
-- Compatibilidad declarada con text-generation-inference y con endpoints de HuggingFace, lo que implica soporte de plantillas de chat estandar.
+- Compatibilidad declarada con text-generation-inference y con endpoints de Hugging Face, lo que implica soporte de plantillas de chat estandar.
 - Capacidad de herramienta (llamada a funciones): no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declaran idiomas).
@@ -101,7 +101,7 @@ Nota: los datos de contexto y licencia de los modelos alternativos proceden de s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shakhrillo/qwen2.5-7b-ui-critique
+- Modelo en Hugging Face: https://huggingface.co/shakhrillo/qwen2.5-7b-ui-critique
 - Paper referenciado en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning citada en la plantilla: https://mlco2.github.io/impact
 - Referencias del modelo base presumible (Qwen2.5): repositorio oficial https://github.com/QwenLM/Qwen2.5

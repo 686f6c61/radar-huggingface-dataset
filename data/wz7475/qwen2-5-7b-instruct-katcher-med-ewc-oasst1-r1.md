@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wz7475/qwen2.5-7b-instruct-katcher-med-ewc-oasst1-r1` es un artefacto de ajuste fino publicado en HuggingFace por el usuario wz7475. El propio identificador del repositorio sugiere que se parte de Qwen2.5-7B-Instruct y que el entrenamiento combina varias tecnicas (denominadas KATCHER, MED y EWC en el nombre) sobre el dataset OASST1, con un posible componente de razonamiento (sufijo "r1"). Ninguna de estas suposiciones esta confirmada por el autor: la model card es la plantilla autogenerada de HuggingFace y no contiene descripcion real del modelo, ni detalles de arquitectura, entrenamiento, datos o licencia.
+El modelo `wz7475/qwen2.5-7b-instruct-katcher-med-ewc-oasst1-r1` es un artefacto de ajuste fino publicado en Hugging Face por el usuario wz7475. El propio identificador del repositorio sugiere que se parte de Qwen2.5-7B-Instruct y que el entrenamiento combina varias tecnicas (denominadas KATCHER, MED y EWC en el nombre) sobre el dataset OASST1, con un posible componente de razonamiento (sufijo "r1"). Ninguna de estas suposiciones esta confirmada por el autor: la model card es la plantilla autogenerada de Hugging Face y no contiene descripcion real del modelo, ni detalles de arquitectura, entrenamiento, datos o licencia.
 
 Se trata, por tanto, de un repositorio practicamente indocumentado, con 0 descargas y 0 "likes" en el momento de la consulta, creado y actualizado el 4 de octubre de 2026. El tamano del repositorio es de 0,3 GB, muy inferior a los aproximadamente 15 GB que ocuparian los pesos completos de un modelo de 7.000 millones de parametros en bf16, lo que sugiere que el repositorio podria contener unicamente pesos de adaptadores (por ejemplo, LoRA) o una subida parcial; no es posible confirmarlo con la informacion disponible.
 
@@ -86,11 +86,11 @@ La comparacion de rendimiento no es posible porque el modelo ajustado no publica
 - Idiomas no declarados: se desconoce si conserva el soporte multilingue del base.
 - Repositorio de 0,3 GB: si no contiene pesos completos, el modelo no es utilizable tal cual y requeriria fusion con el base.
 - Sin mantenimiento ni soporte: 0 descargas y 0 "likes" indican ausencia de validacion por parte de la comunidad.
-- El tag `arxiv:1910.09700` presente en el repositorio corresponde a la referencia sobre emisiones de carbono citada de forma generica en la plantilla de HuggingFace, no a un articulo propio del modelo.
+- El tag `arxiv:1910.09700` presente en el repositorio corresponde a la referencia sobre emisiones de carbono citada de forma generica en la plantilla de Hugging Face, no a un articulo propio del modelo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-ewc-oasst1-r1
+- Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-ewc-oasst1-r1
 - Modelo base presumido (Qwen2.5-7B-Instruct, no confirmado): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Dataset OASST1 (OpenAssistant Conversations): https://huggingface.co/datasets/OpenAssistant/oasst1
 - Referencia EWC (Elastic Weight Consolidation): https://arxiv.org/abs/1612.00796

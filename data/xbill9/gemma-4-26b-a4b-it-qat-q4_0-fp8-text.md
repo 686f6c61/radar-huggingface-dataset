@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de tar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-q4_0-fp8-text
+- Repositorio Hugging Face: https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-q4_0-fp8-text
 - Modelo base (Google): https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-unquantized
 - Variante W4A16 con rejilla QAT exacta: https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-q4_0-w4a16-ct-text
 - Variante W4A16 con embeddings de 4 bits: https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-q4_0-w4a16-ct-text-emb4

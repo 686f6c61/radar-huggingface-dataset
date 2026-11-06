@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Wathompson/multitask-mini` es un repositorio experimental alojado en HuggingFace por el usuario W. Thompson, cuyo objetivo declarado es servir como base de codigo mínima para experimentar con una arquitectura DeiT (Data-efficient Image Transformer) orientada a tareas multiples (*multitask*). No es un modelo entrenado ni evaluado: el propio autor indica que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests*, no un checkpoint con resultados de referencia.
+`Wathompson/multitask-mini` es un repositorio experimental alojado en Hugging Face por el usuario W. Thompson, cuyo objetivo declarado es servir como base de codigo mínima para experimentar con una arquitectura DeiT (Data-efficient Image Transformer) orientada a tareas multiples (*multitask*). No es un modelo entrenado ni evaluado: el propio autor indica que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests*, no un checkpoint con resultados de referencia.
 
 El repositorio contiene 49.600 parametros totales segun los metadatos reales del archivo safetensors, lo que lo situa muy por debajo de cualquier red neuronal utilizable en produccion. La escala se describe como *tiny* y el paquete incluye un script `pipeline.py` con un punto de entrada ejecutable y de entrenamiento, junto con `config.json` y `training_args.json` que recogen la configuracion de arquitectura y la receta de experimento por defecto.
 
@@ -67,9 +67,9 @@ La comparacion con modelos de la misma categoria es de caracter estructural, ya 
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wathompson/multitask-mini | 49.600 | no disponible | ninguno (sin entrenar) | Apache 2.0 | HuggingFace, 0 descargas |
-| DeiT-tiny (referencia de la familia) | orden de millones (cifra exacta no disponible en la informacion proporcionada) | no disponible | si, en su model card original | Apache 2.0 | HuggingFace |
-| Vision Transformer *tiny* generico | no disponible | no disponible | no disponible | variable | HuggingFace |
+| Wathompson/multitask-mini | 49.600 | no disponible | ninguno (sin entrenar) | Apache 2.0 | Hugging Face, 0 descargas |
+| DeiT-tiny (referencia de la familia) | orden de millones (cifra exacta no disponible en la informacion proporcionada) | no disponible | si, en su model card original | Apache 2.0 | Hugging Face |
+| Vision Transformer *tiny* generico | no disponible | no disponible | no disponible | variable | Hugging Face |
 
 La diferencia clave es que las alternativas de la familia DeiT son checkpoints entrenados sobre ImageNet y evaluados, mientras que `multitask-mini` solo contiene pesos de inicializacion. La comparacion de rendimiento, por tanto, no es aplicable.
 
@@ -87,8 +87,8 @@ La diferencia clave es que las alternativas de la familia DeiT son checkpoints e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Wathompson/multitask-mini
-- Perfil del autor en HuggingFace: https://huggingface.co/Wathompson
+- Repositorio en Hugging Face: https://huggingface.co/Wathompson/multitask-mini
+- Perfil del autor en Hugging Face: https://huggingface.co/Wathompson
 - Archivo de arquitectura: `config.json` (dentro del repositorio)
 - Receta de experimento por defecto: `training_args.json` (dentro del repositorio)
 - Script principal: `pipeline.py` (dentro del repositorio)

@@ -27,7 +27,7 @@ El modelo es un transformer decoder denso de 24 capas con atención GQA (9 cabez
 
 El preentrenamiento sigue una estrategia de "raw anneal": los primeros 9.996 pasos se entrenan sobre documentos originales de DCLM-edu y los últimos 1.110 pasos (el cooldown) sobre conversaciones reescritas a partir de esos mismos documentos, con pérdida solo en los turnos del asistente. En total son 11.106 pasos del flujo alineado del estudio 1PP (23,29B posiciones de token), con batch global de 512 × 4.096 tokens. El optimizador es Muon (escalado por forma, LR matricial 0,005) combinado con Adam para el resto de parámetros (LR 3e-3 para embeddings y capa de salida, 3e-3 para normas), warmup de 699 pasos, fase constante y decaimiento lineal en los últimos 1.110 pasos hasta 1/100, weight decay 0,1, desviación de inicialización 0,0119 y precisión bf16. La pérdida de validación final por token sobre 2.433 documentos retenidos es de 1,807 en texto de asistente, 3,422 en texto de usuario y 3,194 en texto de documento.
 
-Posteriormente se aplica un SFT de una época sobre una mezcla de 400.000 conversaciones: `jkminder/model-raising-pb-100k-3c-mt-sft` (98,5k multiturno), `dlab-spp/sp-sft-normal-300k` sin duplicados (271,6k) y una muestra de 30k de `dlab-spp/sp-sft-safety-180k`. El SFT usa el mismo stack (Megatron, Muon), ChatML sin turno de sistema, pérdida solo en turnos de asistente, LR matricial 0,002, semilla 28, batch global 128 × 4.096 y decaimiento lineal a 1/10 tras un warmup del 3%. La pérdida SFT retenida sobre tokens de asistente (1.998 conversaciones) es de 2,136. Los pesos de HuggingFace se verificaron contra el checkpoint de Megatron recalculando pérdidas de validación, con una diferencia absoluta de 0,0000.
+Posteriormente se aplica un SFT de una época sobre una mezcla de 400.000 conversaciones: `jkminder/model-raising-pb-100k-3c-mt-sft` (98,5k multiturno), `dlab-spp/sp-sft-normal-300k` sin duplicados (271,6k) y una muestra de 30k de `dlab-spp/sp-sft-safety-180k`. El SFT usa el mismo stack (Megatron, Muon), ChatML sin turno de sistema, pérdida solo en turnos de asistente, LR matricial 0,002, semilla 28, batch global 128 × 4.096 y decaimiento lineal a 1/10 tras un warmup del 3%. La pérdida SFT retenida sobre tokens de asistente (1.998 conversaciones) es de 2,136. Los pesos de Hugging Face se verificaron contra el checkpoint de Megatron recalculando pérdidas de validación, con una diferencia absoluta de 0,0000.
 
 ## Capacidades
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| 1pp-0.58b-v2-asst-rawanneal-seed1234-sft | 0,58B | 4.096 | Apache 2.0 | HuggingFace (0 descargas) | Artefacto de investigación con SFT |
-| 1pp-0.58b-v2-asst-seed1234-sft | 0,58B | 4.096 | Apache 2.0 | HuggingFace | Misma escalera, condición 1PP completa sin raw anneal |
-| 1pp-0.58b-v2-raw-seed1234-base | 0,58B | 4.096 | Apache 2.0 | HuggingFace | Modelo base sin cooldown sobre conversaciones ni SFT |
-| SmolLM2-360M / SmolLM2-1.7B | 0,36B / 1,7B | 8.192 (SmolLM2) | Apache 2.0 | HuggingFace | Referencia de modelos pequeños; comparte tokenizador, pero no se han publicado comparaciones directas |
+| 1pp-0.58b-v2-asst-rawanneal-seed1234-sft | 0,58B | 4.096 | Apache 2.0 | Hugging Face (0 descargas) | Artefacto de investigación con SFT |
+| 1pp-0.58b-v2-asst-seed1234-sft | 0,58B | 4.096 | Apache 2.0 | Hugging Face | Misma escalera, condición 1PP completa sin raw anneal |
+| 1pp-0.58b-v2-raw-seed1234-base | 0,58B | 4.096 | Apache 2.0 | Hugging Face | Modelo base sin cooldown sobre conversaciones ni SFT |
+| SmolLM2-360M / SmolLM2-1.7B | 0,36B / 1,7B | 8.192 (SmolLM2) | Apache 2.0 | Hugging Face | Referencia de modelos pequeños; comparte tokenizador, pero no se han publicado comparaciones directas |
 
 No se dispone de comparaciones de rendimiento publicadas frente a estos u otros modelos en la información proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de comparaciones de rendimiento publicadas frente a estos u otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-asst-rawanneal-seed1234-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-asst-rawanneal-seed1234-sft
 - Variante 1PP completa: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-asst-seed1234-sft
 - Modelo base raw: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-raw-seed1234-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

@@ -4,7 +4,7 @@
 
 `alt-text-model` es un modelo de vision-encoder-decoder desarrollado por el usuario ntworld6, especializado en la generacion de texto alternativo (alt text) a partir de imagenes. Se trata de un fine-tuning del modelo `nlpconnect/vit-gpt2-image-captioning`, que combina un encoder ViT (Vision Transformer) con un decoder GPT-2 para producir descripciones textuales de contenido visual. Con aproximadamente 239 millones de parametros, es un modelo compacto disenado para tareas de captioning de imagenes en entornos con recursos limitados.
 
-El modelo resuelve el problema de generar descripciones textuales automaticas para imagenes, una tarea fundamental para accesibilidad web, gestion de contenidos y automatizacion de metadatos. Su relevancia radica en que, al estar licenciado bajo Apache 2.0, puede integrarse libremente en proyectos comerciales y de investigacion sin restricciones de uso. Sin embargo, la documentacion es minima: el dataset de entrenamiento no se ha revelado, los benchmarks oficiales estan vacios y la model card fue generada automaticamente por el Trainer de HuggingFace, lo que limita la evaluacion objetiva de su calidad.
+El modelo resuelve el problema de generar descripciones textuales automaticas para imagenes, una tarea fundamental para accesibilidad web, gestion de contenidos y automatizacion de metadatos. Su relevancia radica en que, al estar licenciado bajo Apache 2.0, puede integrarse libremente en proyectos comerciales y de investigacion sin restricciones de uso. Sin embargo, la documentacion es minima: el dataset de entrenamiento no se ha revelado, los benchmarks oficiales estan vacios y la model card fue generada automaticamente por el Trainer de Hugging Face, lo que limita la evaluacion objetiva de su calidad.
 
 El entrenamiento se realizo con Transformers 5.15.0 y PyTorch 2.13.0 (CPU), durante 3 epocas con un total de solo 12 pasos de optimizacion, lo que sugiere un dataset de entrenamiento muy reducido. La perdida de validacion final fue de 5.5073, un valor relativamente alto que indica margen de mejora en la calidad de las descripciones generadas.
 
@@ -29,10 +29,10 @@ El fine-tuning se realizo sobre un dataset no revelado ("unknown dataset" segun 
 
 ## Capacidades
 
-- Generacion de descripciones textuales (alt text) a partir de imagenes, utilizando el pipeline `image-text-to-text` de HuggingFace Transformers.
+- Generacion de descripciones textuales (alt text) a partir de imagenes, utilizando el pipeline `image-text-to-text` de Hugging Face Transformers.
 - Captioning de imagenes en un solo paso: la entrada es una imagen y la salida es una frase descriptiva completa.
 - Integracion sencilla con el ecosistema Transformers mediante `VisionEncoderDecoderModel.from_pretrained`.
-- Compatible con endpoints de inferencia de HuggingFace (tag `endpoints_compatible`).
+- Compatible con endpoints de inferencia de Hugging Face (tag `endpoints_compatible`).
 - No se ha documentado soporte para tool calling, razonamiento multi-paso ni modos de thinking, dado que es un modelo generativo puro de captioning.
 - Las capacidades multilingues no estan documentadas; el modelo base GPT-2 esta entrenado principalmente en ingles.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en FP16 y 1 GB en FP32, dado el tamano de 239 millones de parametros.
 - GPU recomendadas: cualquier GPU consumer con 4 GB de VRAM o superior (por ejemplo, NVIDIA GTX 1650, RTX 3060, RTX 4090) es suficiente para inferencia. Incluso es viable la inferencia en CPU para procesamiento por lotes pequenos.
 - El modelo cabe sin problema en GPUs consumer de gama baja; no requiere hardware profesional como A100 o H100.
-- Opciones de despliegue: pipeline `image-to-text` de HuggingFace Transformers, HuggingFace Inference Endpoints (compatible segun los tags), o exportacion a ONNX para servidores de inferencia propios.
+- Opciones de despliegue: pipeline `image-to-text` de Hugging Face Transformers, Hugging Face Inference Endpoints (compatible segun los tags), o exportacion a ONNX para servidores de inferencia propios.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada; en una GPU consumer moderna se espera una latencia de decenas a cientos de milisegundos por imagen, dependiendo de la longitud de la descripcion generada.
 
 ## Comparativa con modelos similares
@@ -79,5 +79,5 @@ La comparativa se limita a modelos de tamano similar. El modelo base `nlpconnect
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ntworld6/alt-text-model)
+- [Modelo en Hugging Face](https://huggingface.co/ntworld6/alt-text-model)
 - [Modelo base: nlpconnect/vit-gpt2-image-captioning](https://huggingface.co/nlpconnect/vit-gpt2-image-captioning)

@@ -88,7 +88,7 @@ Supera al padre menor en 13 de 13 benchmarks y no supera al padre mayor en ningu
 | GSM8K (8-shot CoT) | 0,691 | 0,595 | 0,729 |
 | HumanEval pass@1 | 0,409 | 0,287 | 0,494 |
 | Licencia | Apache 2.0 | Apache 2.0 | Apache 2.0 |
-| Disponibilidad | HuggingFace, código remoto | HuggingFace, soporte amplio | HuggingFace, soporte amplio |
+| Disponibilidad | Hugging Face, código remoto | Hugging Face, soporte amplio | Hugging Face, soporte amplio |
 
 La comparación más pertinente es con sus propios padres, ya que el modelo se posiciona deliberadamente entre ambos: ofrece una mejora media de varios puntos sobre Qwen3-0.6B-Base a cambio de aproximadamente el doble de cómputo, sin alcanzar al Qwen3-1.7B-Base original. Frente a otros modelos densos de ~1,5B de la misma categoría, no hay datos comparativos publicados en la documentación disponible.
 
@@ -105,7 +105,7 @@ La comparación más pertinente es con sus propios padres, ya que el modelo se p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maincode/Matilda-Platypus-1.5B-Base
+- Modelo en Hugging Face: https://huggingface.co/Maincode/Matilda-Platypus-1.5B-Base
 - Padre mayor (bloque inferior, se descarga en runtime): https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Padre menor: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Reporte técnico: `technical_report.pdf` (incluido en el repositorio del modelo)

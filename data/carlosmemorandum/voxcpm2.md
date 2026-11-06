@@ -76,7 +76,7 @@ Unica metrica de rendimiento publicada en la model card:
 - GPU recomendadas: NVIDIA RTX 4090 (referencia de la medicion de RTF), y por VRAM tambien A100, H100, L40S o A10G en entornos de servidor.
 - Compatibilidad con GPU de consumo: si, cabe en GPU de consumo con al menos 8-12 GB de VRAM, como RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090. No se documentan resultados en GPUs de menos de 8 GB.
 - Requisitos de software: Python >= 3.10, PyTorch >= 2.5.0 y CUDA >= 12.0. La instalacion se realiza con `pip install voxcpm`, y el modelo se carga mediante `VoxCPM.from_pretrained`.
-- Opciones de despliegue: libreria `voxcpm` (oficial), integracion acelerada con Nano-VLLM (`a710128/nanovllm-voxcpm`) y demo alojada en HuggingFace Spaces. No se documentan soportes oficiales para llama.cpp, Ollama, TGI, vLLM estandar ni formatos GGUF.
+- Opciones de despliegue: libreria `voxcpm` (oficial), integracion acelerada con Nano-VLLM (`a710128/nanovllm-voxcpm`) y demo alojada en Hugging Face Spaces. No se documentan soportes oficiales para llama.cpp, Ollama, TGI, vLLM estandar ni formatos GGUF.
 - Latencia y throughput: RTF ~0,30 en RTX 4090 con el pipeline estandar y ~0,13 con Nano-VLLM, es decir, entre 3 y 7 veces mas rapido que el tiempo real. El modo streaming permite emitir audio por fragmentos antes de completar la sintesis.
 
 ## Comparativa con modelos similares
@@ -104,11 +104,11 @@ Nota: los datos de los modelos comparados proceden de sus fichas publicas y pued
 
 ## Enlaces
 
-- Ficha de HuggingFace analizada: https://huggingface.co/carlosmemorandum/VoxCPM2
+- Ficha de Hugging Face analizada: https://huggingface.co/carlosmemorandum/VoxCPM2
 - Repositorio oficial en GitHub: https://github.com/OpenBMB/VoxCPM
 - Documentacion: https://voxcpm.readthedocs.io/en/latest/
 - Guia de inicio rapido: https://voxcpm.readthedocs.io/en/latest/quickstart.html
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/OpenBMB/VoxCPM-Demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/OpenBMB/VoxCPM-Demo
 - Pagina de muestras de audio: https://openbmb.github.io/voxcpm2-demopage
 - Integracion con Nano-VLLM: https://github.com/a710128/nanovllm-voxcpm
 - Paper (arXiv): https://arxiv.org/abs/2509.24650

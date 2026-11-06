@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Precision / tamano de pesos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Atlas3D/JEV-27B-VL-FP8 | ~27,78B | FP8 W8A8, ~34,3 GiB | no disponible | Apache-2.0 | HuggingFace (vLLM) |
-| autotrust/JEV-27B-VL (original) | ~27,78B (mismo modelo base) | bf16, ~53 GiB | no disponible | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.8-27B (base citado) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Atlas3D/JEV-27B-VL-FP8 | ~27,78B | FP8 W8A8, ~34,3 GiB | no disponible | Apache-2.0 | Hugging Face (vLLM) |
+| autotrust/JEV-27B-VL (original) | ~27,78B (mismo modelo base) | bf16, ~53 GiB | no disponible | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.8-27B (base citado) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparacion con otras alternativas de la misma categoria (modelos multimodales de ~27B) no esta disponible en la informacion proporcionada: no se dispone de datos de parametros, contexto ni rendimiento de esos hipoteticos competidores. La unica comparacion con datos verificables es contra el propio checkpoint bf16 del que deriva, con un 97,1% de coincidencia en la decision principal del System 1.
 
@@ -98,7 +98,7 @@ La comparacion con otras alternativas de la misma categoria (modelos multimodale
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atlas3D/JEV-27B-VL-FP8
+- Modelo en Hugging Face: https://huggingface.co/Atlas3D/JEV-27B-VL-FP8
 - Modelo base: https://huggingface.co/autotrust/JEV-27B-VL
 - Modelo de origen citado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de cuantizacion (llm-compressor): no se proporciona enlace en la informacion disponible

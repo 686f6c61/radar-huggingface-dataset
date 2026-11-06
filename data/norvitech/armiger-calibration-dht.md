@@ -112,7 +112,7 @@ No disponible en el sentido de modelos de lenguaje: el artefacto no compite con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NorviTech/armiger-calibration-dht
+- Modelo en Hugging Face: https://huggingface.co/NorviTech/armiger-calibration-dht
 - Modelo base empaquetado: https://huggingface.co/NorviTech/armiger-ultra
 - Version compatible CPU: https://huggingface.co/NorviTech/armiger
 - Plugin de supervivencia de swarm: https://huggingface.co/NorviTech/armiger-swarm-survival

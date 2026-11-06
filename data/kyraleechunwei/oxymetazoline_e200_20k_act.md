@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Oxymetazoline_e200_20K_ACT` es una política de imitación para robótica entrenada con el método Action Chunking with Transformers (ACT), una técnica presentada en el artículo arXiv:2304.13705 que predice secuencias cortas de acciones (chunks) en lugar de pasos individuales. Lo publica el usuario KyraLeeChunWei en HuggingFace mediante la librería LeRobot de HuggingFace, que estandariza el entrenamiento, evaluación y despliegue de políticas robóticas.
+El modelo `Oxymetazoline_e200_20K_ACT` es una política de imitación para robótica entrenada con el método Action Chunking with Transformers (ACT), una técnica presentada en el artículo arXiv:2304.13705 que predice secuencias cortas de acciones (chunks) en lugar de pasos individuales. Lo publica el usuario KyraLeeChunWei en Hugging Face mediante la librería LeRobot de Hugging Face, que estandariza el entrenamiento, evaluación y despliegue de políticas robóticas.
 
 El modelo resuelve el problema del control robótico de manipulación a partir de datos de teleoperación: en lugar de generar una acción por paso de control, emite un bloque de acciones coherentes, lo que reduce el error acumulado y mejora la estabilidad de la política en tareas de imitación. Está entrenado sobre el dataset `KyraLeeChunWei/Oxymetazoline_e200`, con 20.000 pasos de entrenamiento según indica el nombre del repositorio.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Oxymetazoline_e200_20K_ACT (este) | 51,7 M | no aplica | Manipulación con ACT sobre dataset propio | apache-2.0 | HuggingFace, LeRobot |
-| Políticas ACT de referencia en LeRobot | no disponible | no aplica | Manipulación con ACT en datasets estándar (p. ej. aloha, pusht) | apache-2.0 | HuggingFace, LeRobot |
-| Diffusion Policy (LeRobot) | no disponible | no aplica | Manipulación por difusión de acciones | apache-2.0 (implementación) | HuggingFace, LeRobot |
-| SmolVLA (HuggingFace) | no disponible en la información proporcionada | no aplica | Política visomotora basada en VLM | no disponible | HuggingFace, LeRobot |
+| Oxymetazoline_e200_20K_ACT (este) | 51,7 M | no aplica | Manipulación con ACT sobre dataset propio | apache-2.0 | Hugging Face, LeRobot |
+| Políticas ACT de referencia en LeRobot | no disponible | no aplica | Manipulación con ACT en datasets estándar (p. ej. aloha, pusht) | apache-2.0 | Hugging Face, LeRobot |
+| Diffusion Policy (LeRobot) | no disponible | no aplica | Manipulación por difusión de acciones | apache-2.0 (implementación) | Hugging Face, LeRobot |
+| SmolVLA (Hugging Face) | no disponible en la información proporcionada | no aplica | Política visomotora basada en VLM | no disponible | Hugging Face, LeRobot |
 
 La comparación directa con otras políticas no es posible sin métricas publicadas sobre el mismo dataset. La principal diferencia frente a Diffusion Policy es el esquema de generación (chunks deterministas frente a difusión), y frente a SmolVLA, el tamaño y la naturaleza del backbone.
 
@@ -85,7 +85,7 @@ La comparación directa con otras políticas no es posible sin métricas publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KyraLeeChunWei/Oxymetazoline_e200_20K_ACT
+- Modelo en Hugging Face: https://huggingface.co/KyraLeeChunWei/Oxymetazoline_e200_20K_ACT
 - Dataset de entrenamiento: https://huggingface.co/datasets/KyraLeeChunWei/Oxymetazoline_e200
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

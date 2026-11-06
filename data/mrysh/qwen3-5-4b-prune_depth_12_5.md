@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3.5-4b-prune_depth_12_5 es una variante podada por profundidad del modelo Qwen/Qwen3.5-4B, publicada por el usuario mrysh en HuggingFace. No se trata de un modelo entrenado desde cero ni de un fine-tuning, sino de un checkpoint derivado al que se le han eliminado capas del transformer para reducir su coste computacional. Concretamente, se pasa de 32 a 28 capas, lo que supone una reduccion del 12,5 % de la profundidad y del 10,7 % de los parametros del modelo de lenguaje (12,3 % del checkpoint completo). El resultado es un modelo de aproximadamente 4.087 millones de parametros totales segun los pesos en safetensors, con el mismo ancho de capa que el original.
+qwen3.5-4b-prune_depth_12_5 es una variante podada por profundidad del modelo Qwen/Qwen3.5-4B, publicada por el usuario mrysh en Hugging Face. No se trata de un modelo entrenado desde cero ni de un fine-tuning, sino de un checkpoint derivado al que se le han eliminado capas del transformer para reducir su coste computacional. Concretamente, se pasa de 32 a 28 capas, lo que supone una reduccion del 12,5 % de la profundidad y del 10,7 % de los parametros del modelo de lenguaje (12,3 % del checkpoint completo). El resultado es un modelo de aproximadamente 4.087 millones de parametros totales segun los pesos en safetensors, con el mismo ancho de capa que el original.
 
 La relevancia de esta publicacion es fundamentalmente metodologica: forma parte de un benchmark de poda que compara cuatro modelos con ocho variantes de pruning cada uno, evaluadas en BFCL, un conjunto de sesgo en contratacion y MedQA, ejecutadas con vLLM. El objetivo declarado es medir la degradacion de calidad que introduce la poda frente al modelo base. Es, por tanto, un artefacto de investigacion, no un modelo pensado para produccion.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparado ni de especificaciones completas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/qwen3.5-4b-prune_depth_12_5
+- Modelo en Hugging Face: https://huggingface.co/mrysh/qwen3.5-4b-prune_depth_12_5
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - NVIDIA ModelOpt (herramienta de poda): no disponible en la informacion proporcionada
 - Paper de Minitron: no disponible en la informacion proporcionada

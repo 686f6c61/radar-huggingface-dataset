@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kolibri-1 MLX 6-bit es una conversion cuantizada del modelo Aleph-Alpha/Kolibri-1, publicada por el usuario audreyt en HuggingFace. No es un modelo entrenado desde cero: es un artefacto de despliegue que toma la publicacion oficial en block-FP8 de Aleph Alpha y la convierte al formato MLX con cuantizacion afina de 6 bits y tamano de grupo 64, con un coste medio de 6,506 bits por peso. El modelo resultante ocupa 59,16 GiB de tensor payload repartidos en 13 shards de safetensors, con 78.103.055.360 parametros totales y un repositorio de 63,5 GB.
+Kolibri-1 MLX 6-bit es una conversion cuantizada del modelo Aleph-Alpha/Kolibri-1, publicada por el usuario audreyt en Hugging Face. No es un modelo entrenado desde cero: es un artefacto de despliegue que toma la publicacion oficial en block-FP8 de Aleph Alpha y la convierte al formato MLX con cuantizacion afina de 6 bits y tamano de grupo 64, con un coste medio de 6,506 bits por peso. El modelo resultante ocupa 59,16 GiB de tensor payload repartidos en 13 shards de safetensors, con 78.103.055.360 parametros totales y un repositorio de 63,5 GB.
 
 El objetivo es permitir la inferencia local del modelo Kolibri-1 en Apple Silicon. La arquitectura subyacente es un transformer con mezcla de expertos (MoE) que incluye expertos enrutados, un experto compartido y 50 routers (`mlp.gate`) que se mantienen en BF16 en lugar de cuantizarse, igual que las bias de enrutado (`expert_bias`) y todas las normas. Esto preserva la precision del mecanismo de enrutado, que es la parte mas sensible a la cuantizacion en un MoE.
 
@@ -104,7 +104,7 @@ No hay informacion disponible sobre modelos de la misma categoria mas alla de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/audreyt/Kolibri-1-MLX-6bit
+- Repositorio Hugging Face: https://huggingface.co/audreyt/Kolibri-1-MLX-6bit
 - Modelo base: https://huggingface.co/Aleph-Alpha/Kolibri-1
 - Conversion NVFP4-W4A16 del mismo autor: https://huggingface.co/audreyt/Kolibri-1-NVFP4-W4A16
 - Conversion MLX 3-bit: https://huggingface.co/here-be-dragons-ai/Kolibri-1-MLX-3bit-mlxlm

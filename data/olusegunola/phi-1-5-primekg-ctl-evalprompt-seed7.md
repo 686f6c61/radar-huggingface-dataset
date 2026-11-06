@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`olusegunola/phi-1.5-primekg-ctl-evalprompt-seed7` es un checkpoint publicado en HuggingFace Hub por el usuario `olusegunola` el 26 de septiembre de 2026. El repositorio ocupa 0,1 GB, esta etiquetado con `transformers`, `safetensors` y `endpoints_compatible`, y su model card es la plantilla autogenerada de HuggingFace sin ningun campo cumplimentado: no declara autor, licencia, idiomas, datos de entrenamiento ni resultados de evaluacion. Se trata, por tanto, de un artefacto practicamente indocumentado.
+`olusegunola/phi-1.5-primekg-ctl-evalprompt-seed7` es un checkpoint publicado en Hugging Face Hub por el usuario `olusegunola` el 26 de septiembre de 2026. El repositorio ocupa 0,1 GB, esta etiquetado con `transformers`, `safetensors` y `endpoints_compatible`, y su model card es la plantilla autogenerada de Hugging Face sin ningun campo cumplimentado: no declara autor, licencia, idiomas, datos de entrenamiento ni resultados de evaluacion. Se trata, por tanto, de un artefacto practicamente indocumentado.
 
 El identificador permite inferir, sin confirmacion por parte del autor, que se trata de un ajuste fino del modelo `phi-1.5` de Microsoft (transformer denso de 1.300 millones de parametros) sobre datos derivados de PrimeKG, una base de conocimiento biomedica orientada a relaciones entre farmacos, enfermedades y genes; los sufijos `ctl` y `evalprompt-seed7` sugieren un brazo de control de un experimento de evaluacion con semilla 7. Ninguna de estas inferencias esta respaldada por la model card. El unico tag de metadatos tecnicos verificable, `arxiv:1910.09700`, no apunta a un paper del modelo: corresponde a Lacoste et al. (2019), el articulo del calculador de emisiones de carbono que aparece en la propia plantilla, por lo que es un residuo del scaffolding.
 
@@ -72,7 +72,7 @@ Las cifras siguientes se refieren al escenario mas probable (modelo base denso d
 - VRAM total para inferencia en fp16: en torno a 3-4 GB contando pesos, cache KV y overhead del runtime, con contexto corto (los 2.048 tokens del modelo base son un limite bajo, lo que reduce mucho el consumo de cache).
 - GPU de consumo: cabe con holgura en una RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB, RTX 4070, RTX 4080 y RTX 4090. En tarjetas de 8 GB funciona en fp16 con contexto reducido y en 4 bits sin problema. Tambien es viable en CPU con llama.cpp para pruebas puntuales, con latencias altas.
 - GPU de data center: A100, H100, L40S y L4 lo sirven sin dificultad; estan sobredimensionadas para un modelo de este tamano salvo que se necesite un throughput muy alto.
-- Opciones de despliegue: `transformers` con `safetensors` es la via directa. vLLM y TGI son adecuados para servir en GPU. llama.cpp y Ollama solo son aplicables si se generan pesos GGUF, que este repositorio no incluye. Tambien es posible desplegar mediante HuggingFace Inference Endpoints, ya que el repositorio lleva la etiqueta `endpoints_compatible`.
+- Opciones de despliegue: `transformers` con `safetensors` es la via directa. vLLM y TGI son adecuados para servir en GPU. llama.cpp y Ollama solo son aplicables si se generan pesos GGUF, que este repositorio no incluye. Tambien es posible desplegar mediante Hugging Face Inference Endpoints, ya que el repositorio lleva la etiqueta `endpoints_compatible`.
 - Advertencia critica de despliegue: si el repositorio contiene unicamente un adaptador (hipotesis compatible con los 0,1 GB), sera necesario descargar aparte el modelo base phi-1.5 y cargar el adaptador encima. Sin esa verificacion, la carga directa puede fallar.
 - Latencia y throughput: no disponible. No se han publicado mediciones y no se pueden derivar del repositorio.
 
@@ -82,11 +82,11 @@ Los datos de las alternativas corresponden a la informacion publica de sus repos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| `olusegunola/phi-1.5-primekg-ctl-evalprompt-seed7` | no disponible (base inferida: 1,3B) | no disponible (base inferida: 2.048 tokens) | no disponible | HuggingFace, 0 descargas | Model card vacia, sin evaluacion, 0,1 GB de pesos |
-| Microsoft phi-1.5 | 1,3B | 2.048 tokens | MIT | HuggingFace, muy descargado | Base probable de este ajuste; enfoque en datos sinteticos tipo textbook; sin tool calling |
-| Qwen2.5-1.5B | 1,5B | 32.768 tokens | Apache 2.0 | HuggingFace y multiples derivados | Contexto muy superior, soporte multilingue amplio y tool calling |
-| TinyLlama-1.1B | 1,1B | 2.048 tokens | Apache 2.0 | HuggingFace | Alternativa pequena y permisiva; contexto corto |
-| SmolLM-1.7B | 1,7B | 8.192 tokens | Apache 2.0 | HuggingFace | Alternativa reciente con mejor relacion contexto/tamano |
+| `olusegunola/phi-1.5-primekg-ctl-evalprompt-seed7` | no disponible (base inferida: 1,3B) | no disponible (base inferida: 2.048 tokens) | no disponible | Hugging Face, 0 descargas | Model card vacia, sin evaluacion, 0,1 GB de pesos |
+| Microsoft phi-1.5 | 1,3B | 2.048 tokens | MIT | Hugging Face, muy descargado | Base probable de este ajuste; enfoque en datos sinteticos tipo textbook; sin tool calling |
+| Qwen2.5-1.5B | 1,5B | 32.768 tokens | Apache 2.0 | Hugging Face y multiples derivados | Contexto muy superior, soporte multilingue amplio y tool calling |
+| TinyLlama-1.1B | 1,1B | 2.048 tokens | Apache 2.0 | Hugging Face | Alternativa pequena y permisiva; contexto corto |
+| SmolLM-1.7B | 1,7B | 8.192 tokens | Apache 2.0 | Hugging Face | Alternativa reciente con mejor relacion contexto/tamano |
 
 La conclusion de la comparativa es desfavorable para el modelo analizado en todos los ejes salvo la posible especializacion biomedica, que no esta demostrada. La ausencia de licencia declarada es, por si sola, un motivo para no considerarlo en produccion frente a cualquiera de las alternativas, que tienen terminos explicitos.
 
@@ -106,7 +106,7 @@ La conclusion de la comparativa es desfavorable para el modelo analizado en todo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/olusegunola/phi-1.5-primekg-ctl-evalprompt-seed7
+- Repositorio en Hugging Face: https://huggingface.co/olusegunola/phi-1.5-primekg-ctl-evalprompt-seed7
 - Referencia del tag `arxiv:1910.09700` (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico, no sobre este modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de aprendizaje automatico citado en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados especificamente a este checkpoint.

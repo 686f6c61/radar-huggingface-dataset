@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| saybeok03/xvla_folding_openarm16_224 | 879,7 M | no disponible | Plegado de camiseta con bi_openarm_follower | Apache 2.0 | HuggingFace (LeRobot) |
-| lerobot/xvla-base | no disponible | no disponible | Modelo base VLA multi-robot (soft prompts) | no disponible en la información | HuggingFace |
-| Políticas de imitación tipo ACT/DP afinadas con LeRobot | no disponible | no disponible | Manipulación específica por dataset | variable | HuggingFace / LeRobot |
+| saybeok03/xvla_folding_openarm16_224 | 879,7 M | no disponible | Plegado de camiseta con bi_openarm_follower | Apache 2.0 | Hugging Face (LeRobot) |
+| lerobot/xvla-base | no disponible | no disponible | Modelo base VLA multi-robot (soft prompts) | no disponible en la información | Hugging Face |
+| Políticas de imitación tipo ACT/DP afinadas con LeRobot | no disponible | no disponible | Manipulación específica por dataset | variable | Hugging Face / LeRobot |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada, por lo que la comparativa se limita a parámetros, tarea y licencia.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saybeok03/xvla_folding_openarm16_224
+- Modelo en Hugging Face: https://huggingface.co/saybeok03/xvla_folding_openarm16_224
 - Modelo base: https://huggingface.co/lerobot/xvla-base
 - Paper X-VLA: https://huggingface.co/papers/2510.10274
 - Dataset de entrenamiento: https://huggingface.co/datasets/saybeok03/full_folding_pi05_224

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bhmartins/test-multitask23` es un repositorio de HuggingFace publicado por el usuario bhmartins que contiene una implementación propia en PyTorch de una arquitectura EfficientFormer orientada a tareas múltiples (multitask). Se trata de una configuración etiquetada como *small*, con atención dilatada, fusión bilineal, activación aproximada tipo GELU y normalización por batchnorm. El propio autor indica explícitamente que el repositorio está pensado para revisión de código, pruebas de humo y experimentos controlados de pequeña escala, y no como una release preentrenada lista para producción.
+`bhmartins/test-multitask23` es un repositorio de Hugging Face publicado por el usuario bhmartins que contiene una implementación propia en PyTorch de una arquitectura EfficientFormer orientada a tareas múltiples (multitask). Se trata de una configuración etiquetada como *small*, con atención dilatada, fusión bilineal, activación aproximada tipo GELU y normalización por batchnorm. El propio autor indica explícitamente que el repositorio está pensado para revisión de código, pruebas de humo y experimentos controlados de pequeña escala, y no como una release preentrenada lista para producción.
 
 El dato más relevante para evaluarlo es su tamaño real: 49.600 parámetros totales según el checkpoint en safetensors. Esa cifra está muy por debajo de cualquier variante publicada de EfficientFormer y confirma que se trata de una configuración de juguete o de prueba, no de un modelo con capacidad representacional útil para visión por computador real. El repositorio no declara ningún resultado de benchmark, y el fichero `model.safetensors` se describe como un checkpoint de inicialización válido para pruebas de humo, no como un modelo entrenado.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bhmartins/test-multitask23 | 49.600 | no aplica (vision) | sin benchmarks declarados | apache-2.0 | HuggingFace, checkpoint sin entrenar |
+| bhmartins/test-multitask23 | 49.600 | no aplica (vision) | sin benchmarks declarados | apache-2.0 | Hugging Face, checkpoint sin entrenar |
 | EfficientFormer (variantes oficiales de referencia) | no disponible en la informacion proporcionada | no aplica (vision) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Backbones de vision eficientes alternativos (por ejemplo MobileViT, LeViT) | no disponible en la informacion proporcionada | no aplica (vision) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
@@ -75,12 +75,12 @@ No se dispone de datos verificados de los modelos comparables dentro de la infor
 - No hay auditoría de robustez, equidad ni transferencia de dominio; el propio repositorio lo señala de forma explícita.
 - Riesgo de alucinación: no aplica en el sentido de generación de texto, pero sí existe el riesgo de atribuir a este artefacto capacidades que no tiene si se cita sin leer la model card.
 - No se declaran idiomas ni se proporciona ningún pipeline de texto; cualquier uso lingüístico queda fuera del alcance del repositorio.
-- La implementación es personalizada, por lo que las APIs de carga automática de HuggingFace u otras librerías requieren un adaptador explícito y pueden fallar sin él.
+- La implementación es personalizada, por lo que las APIs de carga automática de Hugging Face u otras librerías requieren un adaptador explícito y pueden fallar sin él.
 - La licencia apache-2.0 permite uso comercial del artefacto, pero debe revisarse por separado la licencia de los datos externos que se utilicen para entrenarlo.
 - Para producción no es utilizable tal cual: cualquier resultado obtenido tras entrenar el modelo deberá documentarse aparte de los valores por defecto incluidos en `training_args.json`.
 - El repositorio registra 0 descargas y 0 valoraciones, sin historial de validación por parte de terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bhmartins/test-multitask23
+- Modelo en Hugging Face: https://huggingface.co/bhmartins/test-multitask23
 - La busqueda web realizada no devolvio enlaces relevantes al modelo: los resultados obtenidos correspondian a contenidos no relacionados con este repositorio y se han descartado. No se dispone de paper, blog, repositorio de codigo ni demo adicionales verificables.

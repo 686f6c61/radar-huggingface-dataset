@@ -76,10 +76,10 @@ No hay datos publicos de latencia, throughput ni consumo de memoria medidos por 
 
 | Modelo | Parametros | Tipo de salida | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ApolloRaines/Clef-Flash-Truthful-m0.5 | 9,41B | Decision tipada multimodal mas texto libre en modo CausalLM | no disponible | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| Cloudflare/clef-flash | no disponible (es el modelo base, backbone de 9B segun el autor) | Decision tipada multimodal | no disponible | Apache 2.0 | HuggingFace |
-| Cloudflare/clef | no disponible (variante mayor segun el autor) | Decision tipada multimodal | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B | 9B (arquitectura de referencia del backbone) | Texto y vision, generacion libre | no disponible | no disponible | HuggingFace |
+| ApolloRaines/Clef-Flash-Truthful-m0.5 | 9,41B | Decision tipada multimodal mas texto libre en modo CausalLM | no disponible | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| Cloudflare/clef-flash | no disponible (es el modelo base, backbone de 9B segun el autor) | Decision tipada multimodal | no disponible | Apache 2.0 | Hugging Face |
+| Cloudflare/clef | no disponible (variante mayor segun el autor) | Decision tipada multimodal | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B | 9B (arquitectura de referencia del backbone) | Texto y vision, generacion libre | no disponible | no disponible | Hugging Face |
 
 La informacion disponible no permite comparar rendimiento numerico entre estos modelos, ya que no se han publicado resultados de benchmarks ni de la Decision Index leaderboard en los materiales consultados.
 
@@ -100,7 +100,7 @@ La informacion disponible no permite comparar rendimiento numerico entre estos m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApolloRaines/Clef-Flash-Truthful-m0.5
+- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Clef-Flash-Truthful-m0.5
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Variante mayor de Clef: https://huggingface.co/Cloudflare/clef
 - Backbone: https://huggingface.co/Qwen/Qwen3.5-9B

@@ -20,7 +20,7 @@ Su relevancia actual es de tipo práctico más que de investigación: fija la pr
 | Idiomas soportados | no aplica (modelo de imagen, sin componente textual) |
 | Licencia | BSD-3-Clause (pesos originales de Xintao Wang); la receta y la model card llevan la licencia del repositorio SkillSafe |
 | Formato de pesos | ONNX (opset 17); origen upstream en `.pth` |
-| Tarea | image-super-resolution (según tags de HuggingFace) |
+| Tarea | image-super-resolution (según tags de Hugging Face) |
 | Factor de escala | 2x |
 | Ficheros | `model.onnx` (63,97 MB), `model_fp16.onnx` (32,21 MB) |
 | Contrato de entrada | `input` float32 `[batch, 3, height, width]` |
@@ -109,7 +109,7 @@ No se dispone de cifras de parámetros, contexto ni rendimiento comparado para e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/realesrgan-x2plus
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/realesrgan-x2plus
 - Peso upstream (release v0.2.1): https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.1/RealESRGAN_x2plus.pth
 - Repositorio upstream Real-ESRGAN: https://github.com/xinntao/Real-ESRGAN
 - Licencia upstream BSD-3-Clause: https://github.com/xinntao/Real-ESRGAN/blob/a4abfb2979a7bbff3f69f58f58ae324608821e27/LICENSE

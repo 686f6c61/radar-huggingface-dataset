@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento, número de parámetros ni longitud de con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mirth/earshot-clap-htsat-unfused
+- Modelo en Hugging Face: https://huggingface.co/mirth/earshot-clap-htsat-unfused
 - Modelo base: https://huggingface.co/laion/clap-htsat-unfused
 - Revisión concreta del modelo base: https://huggingface.co/laion/clap-htsat-unfused/tree/8fa0f1c6d0433df6e97c127f64b2a1d6c0dcda8a
 - Otros enlaces (papers, blogs, repositorios, demos): no disponibles. La búsqueda web realizada no devolvió ningún resultado relevante relacionado con el modelo.

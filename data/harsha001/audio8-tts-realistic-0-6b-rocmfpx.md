@@ -92,7 +92,7 @@ La unica comparacion documentada es con el modelo base en PyTorch, del que esta 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Harsha001/Audio8-TTS-Realistic-0.6b-ROCmFPX
+- Repositorio Hugging Face: https://huggingface.co/Harsha001/Audio8-TTS-Realistic-0.6b-ROCmFPX
 - Modelo base: https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b
 - Runtime ROCmFPX: https://github.com/HarshaVardhan3002/ROCmFPX
 - llama.cpp (proyecto original): https://github.com/ggml-org/llama.cpp

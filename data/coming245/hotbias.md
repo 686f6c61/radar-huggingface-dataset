@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HotBias | Modulo de biasing para ASR | no disponible | no disponible | Apache 2.0 | HuggingFace y ModelScope |
+| HotBias | Modulo de biasing para ASR | no disponible | no disponible | Apache 2.0 | Hugging Face y ModelScope |
 | Alternativas de biasing ASR | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de biasing ASR en la documentación proporcionada.
@@ -80,7 +80,7 @@ No se dispone de información sobre modelos comparables de biasing ASR en la doc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/coming245/HotBias
+- Hugging Face: https://huggingface.co/coming245/HotBias
 - ModelScope: https://www.modelscope.cn/models/coming245/HotBias
 - Codigo y uso oficial: https://github.com/QwenAudio/FunResearch/tree/main/HotBias
 - Detalles de checkpoints: https://github.com/QwenAudio/FunResearch/blob/main/HotBias/docs/checkpoints.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-fp16-oQ6e-g128-text` es una publicacion de pesos cuantizados alojada en HuggingFace por el usuario Johneeee. No es un modelo entrenado desde cero: se trata de una cuantizacion en precision mixta generada con la herramienta oQ (oMLX v0.7.0.dev4), que parte de un modelo base cuyo campo `model_type` es `qwen3_5`, es decir, un derivado de la familia Qwen 3.5, y lo convierte a formato MLX safetensors de 6 bits con tamano de grupo 128. El sufijo del nombre indica ademas que la variante de origen incorpora ajustes orientados a eliminar rechazos ("uncensored"/"heretic"), junto a otras modificaciones no documentadas.
+El repositorio `Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-fp16-oQ6e-g128-text` es una publicacion de pesos cuantizados alojada en Hugging Face por el usuario Johneeee. No es un modelo entrenado desde cero: se trata de una cuantizacion en precision mixta generada con la herramienta oQ (oMLX v0.7.0.dev4), que parte de un modelo base cuyo campo `model_type` es `qwen3_5`, es decir, un derivado de la familia Qwen 3.5, y lo convierte a formato MLX safetensors de 6 bits con tamano de grupo 128. El sufijo del nombre indica ademas que la variante de origen incorpora ajustes orientados a eliminar rechazos ("uncensored"/"heretic"), junto a otras modificaciones no documentadas.
 
 El dato objetivo mas relevante es el recuento real de parametros en los ficheros safetensors: 26.895.998.464, aproximadamente 26,9 mil millones. El repositorio ocupa 21,5 GB, coherente con una cuantizacion de 6 bits (unos 20,2 GB de pesos mas las escalas y sesgos por grupo). Es, por tanto, un modelo denso de clase ~27B pensado para ejecucion en Apple Silicon mediante MLX, no para CUDA sin conversion previa.
 
@@ -95,7 +95,7 @@ Cualquier comparacion numerica exigiria localizar el modelo base original, verif
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-fp16-oQ6e-g128-text
+- Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-fp16-oQ6e-g128-text
 - Herramienta de cuantizacion oQ (oMLX), citada por el autor: https://github.com/jundot/omlx
 - Repositorio del modelo base: no disponible
 - Paper o informe tecnico: no disponible

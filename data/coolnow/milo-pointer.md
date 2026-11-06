@@ -78,7 +78,7 @@ Precisión int8 sobre 1 000 pasos retenidos: per-tensor 851, per-channel 862 (fr
 
 | Modelo | Parámetros | Contexto | Precisión AndroidControl | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Milo Pointer | 149 M | no disponible | 88,5 % (test completo); 86,9 % en la muestra de 1 000 | Apache 2.0 | HuggingFace, ONNX incluido |
+| Milo Pointer | 149 M | no disponible | 88,5 % (test completo); 86,9 % en la muestra de 1 000 | Apache 2.0 | Hugging Face, ONNX incluido |
 | OS-Atlas-7B | 7 000 M | no disponible | 85,2 % (protocolo reportado por agentes de captura de pantalla) | no disponible en la información | no disponible |
 | Claude Opus 5.5 (few-shot) | no disponible | no disponible | 88,2 % / 87,9 % en la muestra de 1 000 | propietaria | API |
 | Claude Sonnet 5.5 (few-shot) | no disponible | no disponible | 85,7 % / 86,2 % en la muestra de 1 000 | propietaria | API |
@@ -100,7 +100,7 @@ La comparación con OS-Atlas-7B no es estrictamente equivalente: los conjuntos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/coolnow/milo-pointer
+- Modelo en Hugging Face: https://huggingface.co/coolnow/milo-pointer
 - Repositorio de código y registro de experimentos: https://github.com/chayworks/milo-pointer
 - Paper (DOI): https://doi.org/10.5281/zenodo.23818333
 - ORCID del autor: https://orcid.org/0009-0000-8811-3349

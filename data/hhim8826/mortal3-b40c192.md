@@ -100,7 +100,7 @@ La unica comparacion disponible es interna, entre los checkpoints del mismo lina
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hhim8826/mortal3-b40c192
+- Modelo en Hugging Face: https://huggingface.co/hhim8826/mortal3-b40c192
 - Dataset de entrenamiento: https://huggingface.co/datasets/hhim8826/tenhou-houou-mjai
 - Proyecto Mortal (Equim-chan): https://github.com/Equim-chan/Mortal
 - Tenhou (origen de los registros): https://tenhou.net/

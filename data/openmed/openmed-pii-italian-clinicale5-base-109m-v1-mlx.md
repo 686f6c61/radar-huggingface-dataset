@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables específicos en la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace (MLX): [https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicalE5-Base-109M-v1-mlx](https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicalE5-Base-109M-v1-mlx)
+- Repositorio Hugging Face (MLX): [https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicalE5-Base-109M-v1-mlx](https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicalE5-Base-109M-v1-mlx)
 - Modelo base original: [https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicalE5-Base-109M-v1](https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicalE5-Base-109M-v1)
 - Repositorio GitHub de OpenMed: [https://github.com/maziyarpanahi/openmed](https://github.com/maziyarpanahi/openmed)
 - Documentación del backend MLX: [https://openmed.life/docs/mlx-backend/](https://openmed.life/docs/mlx-backend/)

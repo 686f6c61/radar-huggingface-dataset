@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Astorito/Skatepark es un modelo publicado en HuggingFace por el usuario Astorito bajo licencia Apache 2.0. La model card asociada es prácticamente vacía: se limita a declarar la licencia y no incluye información sobre arquitectura, tamaño, datos de entrenamiento, idiomas ni casos de uso previstos. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no tiene pipeline declarado.
+Astorito/Skatepark es un modelo publicado en Hugging Face por el usuario Astorito bajo licencia Apache 2.0. La model card asociada es prácticamente vacía: se limita a declarar la licencia y no incluye información sobre arquitectura, tamaño, datos de entrenamiento, idiomas ni casos de uso previstos. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no tiene pipeline declarado.
 
 Por la ausencia total de documentación técnica y de artefactos descritos, no es posible determinar qué tipo de modelo es (lenguaje, visión, difusión u otro), qué problema resuelve ni por qué sería relevante. Tampoco se puede confirmar que los pesos estén efectivamente subidos al repositorio, ya que la información disponible no incluye el listado de ficheros.
 
@@ -25,7 +25,7 @@ Esta ficha se redacta, por tanto, con la información mínima verificable (ident
 
 No disponible. La model card no describe la arquitectura (transformer, MoE, SSM, híbrida u otra), ni el número de parámetros, ni el volumen o composición del dataset de entrenamiento. Tampoco se documenta si hubo ajuste por instrucciones, RLHF, DPO u otras etapas de alineamiento, ni innovaciones técnicas como decodificación especulativa o atención lineal.
 
-La única información estructurada del repositorio son los metadatos de HuggingFace: licencia Apache 2.0, región "us" y ausencia de etiquetas de tarea o idioma. No hay paper, blog ni repositorio de código enlazado en la información proporcionada.
+La única información estructurada del repositorio son los metadatos de Hugging Face: licencia Apache 2.0, región "us" y ausencia de etiquetas de tarea o idioma. No hay paper, blog ni repositorio de código enlazado en la información proporcionada.
 
 ## Capacidades
 
@@ -66,7 +66,7 @@ No disponible. Sin conocer la arquitectura, el tamaño ni la tarea del modelo, n
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Astorito/Skatepark | no disponible | no disponible | Apache 2.0 | Repositorio HuggingFace con 0 descargas |
+| Astorito/Skatepark | no disponible | no disponible | Apache 2.0 | Repositorio Hugging Face con 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No disponible. Sin conocer la arquitectura, el tamaño ni la tarea del modelo, n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Astorito/Skatepark
+- Hugging Face: https://huggingface.co/Astorito/Skatepark
 - Paper: no disponible
 - Blog: no disponible
 - Repositorio de código: no disponible

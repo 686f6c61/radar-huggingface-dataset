@@ -71,6 +71,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seungkukim/dexjoco_bimanual_multitask_handaction_joint_wan22ti2v5b_L18_txtcache-60k
+- Modelo en Hugging Face: https://huggingface.co/seungkukim/dexjoco_bimanual_multitask_handaction_joint_wan22ti2v5b_L18_txtcache-60k
 - Dataset DexJoCo: https://huggingface.co/datasets/seungkukim/dexjoco_lerobot_v20
 - Base Wan2.2-TI2V-5B-Diffusers: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B-Diffusers (referenciado en la model card)

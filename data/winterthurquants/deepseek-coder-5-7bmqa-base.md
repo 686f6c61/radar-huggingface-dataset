@@ -100,8 +100,8 @@ Alternativas externas de la misma categoria (modelos de codigo de ~6-7B, como Co
 
 ## Enlaces
 
-- Repositorio en HuggingFace (resubida): https://huggingface.co/winterthurquants/deepseek-coder-5.7bmqa-base
-- Repositorio oficial del modelo en HuggingFace (referenciado en la model card): https://huggingface.co/deepseek-ai/deepseek-coder-5.7bmqa-base
+- Repositorio en Hugging Face (resubida): https://huggingface.co/winterthurquants/deepseek-coder-5.7bmqa-base
+- Repositorio oficial del modelo en Hugging Face (referenciado en la model card): https://huggingface.co/deepseek-ai/deepseek-coder-5.7bmqa-base
 - Repositorio de codigo en GitHub: https://github.com/deepseek-ai/deepseek-coder
 - Pagina principal de DeepSeek: https://www.deepseek.com/
 - Demostracion de chat: https://coder.deepseek.com/

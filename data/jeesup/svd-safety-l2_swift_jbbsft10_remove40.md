@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-l2_swift_jbbsft10_remove40 es un checkpoint de investigación derivado de meta-llama/Llama-2-7b-chat-hf, publicado por el usuario Jeesup en HuggingFace. No es un modelo de propósito general ni un asistente desplegable: es una celda concreta de una batería de experimentos (grid) que estudia cómo la compresión por descomposición en valores singulares (SVD-LLM) degrada el comportamiento de seguridad de un LLM y qué reglas de selección de componentes permiten repararlo. En concreto, este checkpoint corresponde a un 40,00 % de parámetros eliminados (fracción resultante 0,5998) y un presupuesto de restauración del 0,000 %, es decir, sin restaurar ningún componente.
+svd-safety-l2_swift_jbbsft10_remove40 es un checkpoint de investigación derivado de meta-llama/Llama-2-7b-chat-hf, publicado por el usuario Jeesup en Hugging Face. No es un modelo de propósito general ni un asistente desplegable: es una celda concreta de una batería de experimentos (grid) que estudia cómo la compresión por descomposición en valores singulares (SVD-LLM) degrada el comportamiento de seguridad de un LLM y qué reglas de selección de componentes permiten repararlo. En concreto, este checkpoint corresponde a un 40,00 % de parámetros eliminados (fracción resultante 0,5998) y un presupuesto de restauración del 0,000 %, es decir, sin restaurar ningún componente.
 
 La arquitectura subyacente es la de Llama 2 (transformer decoder-only) y los pesos se distribuyen en formato safetensors bajo la librería transformers, con un tamaño de repositorio de 13,5 GB. El modelo base está alineado mediante el pipeline de instrucciones de Llama 2 Chat (SFT más RLHF), sobre el que se aplica la compresión SVD. La semilla declarada para el proceso es 42.
 
@@ -76,10 +76,10 @@ No se han publicado en la información disponible los resultados del modelo base
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Datos de seguridad comparables |
 |---|---|---|---|---|---|
-| svd-safety-l2_swift_jbbsft10_remove40 | 6,74 B (metadatos; 59,98 % de la densidad declarada) | no disponible | Llama 2 Community License | HuggingFace, safetensors | AdvBench ASR 0,0365; StrongREJECT ASR 0,0415 |
-| meta-llama/Llama-2-7b-chat-hf | 6,74 B densos | 4096 tokens | Llama 2 Community License | HuggingFace, safetensors | no disponibles en la información proporcionada |
-| meta-llama/Llama-2-13b-chat-hf | 13 B densos | 4096 tokens | Llama 2 Community License | HuggingFace, safetensors | no disponibles en la información proporcionada |
-| Mistral-7B-Instruct-v0.3 | 7,2 B densos | 32 768 tokens | Apache 2.0 | HuggingFace, safetensors/GGUF | no disponibles en la información proporcionada |
+| svd-safety-l2_swift_jbbsft10_remove40 | 6,74 B (metadatos; 59,98 % de la densidad declarada) | no disponible | Llama 2 Community License | Hugging Face, safetensors | AdvBench ASR 0,0365; StrongREJECT ASR 0,0415 |
+| meta-llama/Llama-2-7b-chat-hf | 6,74 B densos | 4096 tokens | Llama 2 Community License | Hugging Face, safetensors | no disponibles en la información proporcionada |
+| meta-llama/Llama-2-13b-chat-hf | 13 B densos | 4096 tokens | Llama 2 Community License | Hugging Face, safetensors | no disponibles en la información proporcionada |
+| Mistral-7B-Instruct-v0.3 | 7,2 B densos | 32 768 tokens | Apache 2.0 | Hugging Face, safetensors/GGUF | no disponibles en la información proporcionada |
 
 La comparación con alternativas se limita a parámetros, contexto, licencia y disponibilidad, porque no se han publicado en la información disponible métricas de seguridad o de capacidad equivalentes para los modelos de la tabla. En términos de propósito, este checkpoint no compite con asistentes desplegables: su categoría real es la de artifacto de investigación en compresión y seguridad, donde no se han identificado alternativas públicas equivalentes en la información consultada.
 
@@ -100,7 +100,7 @@ La comparación con alternativas se limita a parámetros, contexto, licencia y d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_swift_jbbsft10_remove40
+- Repositorio en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_swift_jbbsft10_remove40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: incluida como LICENSE.txt en el repositorio, junto con USE_POLICY.md
 - Paper de SVD-LLM: no disponible en la información proporcionada

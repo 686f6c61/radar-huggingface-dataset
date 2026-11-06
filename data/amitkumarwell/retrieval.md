@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`amitkumarwell/retrieval` es un repositorio experimental publicado en HuggingFace que contiene una implementación funcional de un modelo tipo DINO orientado a tareas de recuperación (retrieval). Lo firma el usuario `amitkumarwell` y su propósito declarado, según la propia model card, es servir como código transparente y como banco de pruebas reproducible (smoke tests), no como un modelo entrenado listo para producción. El repositorio incluye `train.py`, `config.json`, `training_args.json` y un checkpoint de inicialización en `model.safetensors`.
+`amitkumarwell/retrieval` es un repositorio experimental publicado en Hugging Face que contiene una implementación funcional de un modelo tipo DINO orientado a tareas de recuperación (retrieval). Lo firma el usuario `amitkumarwell` y su propósito declarado, según la propia model card, es servir como código transparente y como banco de pruebas reproducible (smoke tests), no como un modelo entrenado listo para producción. El repositorio incluye `train.py`, `config.json`, `training_args.json` y un checkpoint de inicialización en `model.safetensors`.
 
 El dato más relevante para cualquier evaluación es que el checkpoint publicado **no ha sido entrenado ni auditado**: el autor indica explícitamente que es un punto de partida para pruebas de humo y que no reclama ninguna puntuación de benchmark. La metadata de safetensors informa de 16.576 parámetros totales, una cifra extremadamente baja y difícil de conciliar con la etiqueta `giant` que aparece en la configuración de arquitectura, por lo que conviene tratar ese desajuste como una advertencia antes de invertir tiempo en el repositorio.
 
-Por tanto, este modelo no compite hoy con sistemas de retrieval multimodales consolidados como CLIP o SigLIP. Su interés es acotado: sirve como esqueleto de código para montar un pipeline propio de recuperación, como referencia de configuración de un DINO a escala "giant" y como ejemplo de repositorio que documenta honestamente la ausencia de resultados. El contexto, los idiomas soportados y el pipeline de HuggingFace no están declarados.
+Por tanto, este modelo no compite hoy con sistemas de retrieval multimodales consolidados como CLIP o SigLIP. Su interés es acotado: sirve como esqueleto de código para montar un pipeline propio de recuperación, como referencia de configuración de un DINO a escala "giant" y como ejemplo de repositorio que documenta honestamente la ausencia de resultados. El contexto, los idiomas soportados y el pipeline de Hugging Face no están declarados.
 
 ## Especificaciones tecnicas
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amitkumarwell/retrieval | 16.576 (metadata safetensors) | No disponible | Sin benchmarks publicados | MIT | HuggingFace |
+| amitkumarwell/retrieval | 16.576 (metadata safetensors) | No disponible | Sin benchmarks publicados | MIT | Hugging Face |
 | CLIP (ViT-B/32, OpenAI) | ~150 M (cifra publicada habitual) | Texto limitado a 77 tokens en la implementación original | Zero-shot y retrieval con resultados publicados en la model card | Licencia propia de OpenAI, uso comercial con condiciones | Pesos abiertos en repositorios oficiales |
-| OpenCLIP (ViT-B/32, LAION) | ~150 M (cifra publicada habitual) | Similar a CLIP | Resultados publicados en el paper de OpenCLIP | Licencia MIT en los pesos de la variante indicada | Pesos abiertos en HuggingFace |
-| SigLIP (ViT-B) | ~90 M (cifra publicada habitual) | Parches de imagen y texto con longitud fija | Resultados publicados en el paper de SigLIP | Licencia abierta según la variante | Pesos abiertos en HuggingFace |
+| OpenCLIP (ViT-B/32, LAION) | ~150 M (cifra publicada habitual) | Similar a CLIP | Resultados publicados en el paper de OpenCLIP | Licencia MIT en los pesos de la variante indicada | Pesos abiertos en Hugging Face |
+| SigLIP (ViT-B) | ~90 M (cifra publicada habitual) | Parches de imagen y texto con longitud fija | Resultados publicados en el paper de SigLIP | Licencia abierta según la variante | Pesos abiertos en Hugging Face |
 
 Las cifras de parámetros de los modelos comparativos corresponden a valores publicados habitualmente y pueden variar según la variante exacta; conviene verificarlas en la ficha oficial antes de citarlas. La comparación de rendimiento con este repositorio no es posible porque no hay ninguna métrica declarada.
 
@@ -84,6 +84,6 @@ Las cifras de parámetros de los modelos comparativos corresponden a valores pub
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amitkumarwell/retrieval
+- Repositorio en Hugging Face: https://huggingface.co/amitkumarwell/retrieval
 - Página de artículos en arXiv de Amit Kumar Jaiswal (posible autor relacionado, incluye trabajos de recuperación de información): https://arxiv.org/a/jaiswal_a_1
 - La búsqueda web realizada no ha devuelto resultados específicos sobre este modelo, su arquitectura o sus benchmarks. El resto de resultados obtenidos (noticias sobre modelos de Anthropic, calendarios de lanzamientos y artículos divulgativos sobre RAG) no guardan relación con este repositorio y no se incluyen como fuentes.

@@ -42,7 +42,7 @@ El repositorio no incluye ningún dato de entrenamiento. El checkpoint se descri
 
 - Pruebas de humo en pipelines de CI/CD: el modelo sirve para verificar que la implementación custom de DeiT se carga y ejecuta sin errores en un entorno automatizado.
 - Revisión de código de arquitecturas de transformadores: los desarrolladores pueden usar este repositorio como referencia mínima para estudiar una implementación compacta de DeiT.
-- Experimentos de aprendizaje: es un punto de partida para ensayar adaptadores de carga, ya que la API genérica de HuggingFace no lo reconoce sin un adaptador explícito.
+- Experimentos de aprendizaje: es un punto de partida para ensayar adaptadores de carga, ya que la API genérica de Hugging Face no lo reconoce sin un adaptador explícito.
 - Validación de configuraciones de entrenamiento: el script `train.py` y los archivos `config.json` y `training_args.json` permiten probar recetas de experimento a pequeña escala.
 - Generación de datos sintéticos para tests unitarios: el checkpoint de inicialización se puede utilizar para construir modelos de juguete en pruebas unitarias.
 - Docencia de conceptos de visión por computador: la implementación simple facilita la explicación de los componentes básicos de un DeiT en un entorno controlado.
@@ -56,24 +56,24 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: menos de 1 MB, dado que el modelo tiene 33.088 parámetros.
 - GPU recomendadas: cualquier GPU es innecesaria; una CPU moderna es suficiente para ejecutar pasadas hacia adelante.
 - Compatibilidad con GPU de consumo: totalmente compatible, aunque no aprovecha ninguna aceleración relevante por su tamaño.
-- Opciones de despliegue: únicamente mediante el script `train.py` o un contenedor personalizado en PyTorch. No es compatible con vLLM, llama.cpp, Ollama, TGI ni con APIs de carga automática de HuggingFace debido a la naturaleza custom de la implementación.
+- Opciones de despliegue: únicamente mediante el script `train.py` o un contenedor personalizado en PyTorch. No es compatible con vLLM, llama.cpp, Ollama, TGI ni con APIs de carga automática de Hugging Face debido a la naturaleza custom de la implementación.
 - Latencia y throughput: no disponibles. La ausencia de benchmarks impide estimar tiempos de ejecución.
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos comparables en la misma categoría, ya que este repositorio es una implementación de demostración sin entrenar y con un tamaño minúsculo. Como referencia, el modelo `facebook/deit-base-distilled-patch16-224` de DeiT posee aproximadamente 86 millones de parámetros, está preentrenado y es la referencia estándar de HuggingFace para esta arquitectura. La comparación directa no es significativa porque `abjadebayo/deit-demo` no es un modelo preentrenado ni pretende serlo.
+No se dispone de modelos comparables en la misma categoría, ya que este repositorio es una implementación de demostración sin entrenar y con un tamaño minúsculo. Como referencia, el modelo `facebook/deit-base-distilled-patch16-224` de DeiT posee aproximadamente 86 millones de parámetros, está preentrenado y es la referencia estándar de Hugging Face para esta arquitectura. La comparación directa no es significativa porque `abjadebayo/deit-demo` no es un modelo preentrenado ni pretende serlo.
 
 ## Limitaciones y advertencias
 
 - El checkpoint es un punto de inicialización no entrenado, por lo que no tiene ninguna utilidad para predicciones reales.
 - No ha sido auditado en términos de robustez, equidad ni transferencia de dominio, tal como advierte el README.
 - No hay evaluación sistemática de alucinaciones, dado que no es un modelo de texto.
-- La implementación es personalizada; las APIs genéricas de HuggingFace no pueden cargarla sin un adaptador explícito.
+- La implementación es personalizada; las APIs genéricas de Hugging Face no pueden cargarla sin un adaptador explícito.
 - No hay restricciones de licencia para uso comercial (MIT), pero los términos de las fuentes de datos externas deben revisarse por separado si se usa con datasets adicionales.
 - Todos los resultados futuros deben documentarse de forma independiente a la configuración incluida, que representa solo valores por defecto.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/abjadebayo/deit-demo
+- Repositorio en Hugging Face: https://huggingface.co/abjadebayo/deit-demo
 - Repositorio oficial de DeiT (Facebook AI Research): https://github.com/facebookresearch/deit
-- Documentación de DeiT en HuggingFace Transformers: https://huggingface.co/docs/transformers/v4.49.0/en/model_doc/deit
+- Documentación de DeiT en Hugging Face Transformers: https://huggingface.co/docs/transformers/v4.49.0/en/model_doc/deit

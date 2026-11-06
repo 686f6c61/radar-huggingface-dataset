@@ -111,8 +111,8 @@ Los conjuntos de Tier 2 no están en el repositorio y no se publican resultados 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jez-small-1.0.0 | ~1,01 B | Entrenamiento 4.096 tokens; 64k/petición y 32k/pregunta en servicio | Decisión por logits de etiquetas sobre Qwen3.5-0.8B | Apache 2.0 | HuggingFace + servidor en GitHub |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8 B declarados; ~1,0 B en el checkpoint ajustado | No disponible en la información | Modelo de lenguaje generativo | Apache 2.0 | HuggingFace |
+| jez-small-1.0.0 | ~1,01 B | Entrenamiento 4.096 tokens; 64k/petición y 32k/pregunta en servicio | Decisión por logits de etiquetas sobre Qwen3.5-0.8B | Apache 2.0 | Hugging Face + servidor en GitHub |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8 B declarados; ~1,0 B en el checkpoint ajustado | No disponible en la información | Modelo de lenguaje generativo | Apache 2.0 | Hugging Face |
 | Otros modelos de decisión comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación relevante es contra su propio base: jez-small mejora de forma notable en tareas de formato o dominio nuevo (BANKING77, Belebele, SST-5, ToxicChat) y empeora en tareas donde el base ya tenía buen rendimiento (BoolQ, ARC-Easy, IMDB, SST-2). No se han identificado en la información proporcionada otras alternativas de "modelo de decisión con etiquetas declaradas" con datos verificables para comparar parámetros, contexto o rendimiento.
@@ -136,7 +136,7 @@ La comparación relevante es contra su propio base: jez-small mejora de forma no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pragmaticfrontier/jez-small-1.0.0
+- Modelo en Hugging Face: https://huggingface.co/pragmaticfrontier/jez-small-1.0.0
 - Repositorio con servidor, harness de evaluación e informes: https://github.com/pragmaticfrontier/jez
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Informe de análisis de la puerta 2 en particiones completas: `reports/mixv2/gate2-full-split-analysis.md` (dentro del repositorio de GitHub)

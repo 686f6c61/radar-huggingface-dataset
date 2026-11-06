@@ -25,7 +25,7 @@ La relevancia de esta ficha concreta es doble: por un lado, documenta una de las
 | Tamano de grupo de cuantizacion | no disponible |
 | Dataset de calibracion | no disponible |
 | Vocabulario | no disponible en la ficha (el base Qwen2.5 usa ~151.936 tokens) |
-| Fecha de publicacion | 2026-10-21 (según metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-10-21 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -81,11 +81,11 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-R1-Distill-Qwen-1.5B (GPTQ int4, este repo) | 1,5B | 32k | Razonamiento destilado | MIT (según tags) | HuggingFace, 0 descargas, sin validar |
-| DeepSeek-R1-Distill-Qwen-1.5B (base, bf16) | 1,5B | 32k | Razonamiento destilado | MIT | HuggingFace oficial, con tarjeta completa |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Instrucciones generales | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| DeepSeek-R1-Distill-Qwen-7B | 7B | 32k | Razonamiento destilado | MIT | HuggingFace oficial |
-| Llama-3.2-1B-Instruct | 1,2B | 128k | Instrucciones generales | Llama 3.2 Community License | HuggingFace, gated |
+| DeepSeek-R1-Distill-Qwen-1.5B (GPTQ int4, este repo) | 1,5B | 32k | Razonamiento destilado | MIT (según tags) | Hugging Face, 0 descargas, sin validar |
+| DeepSeek-R1-Distill-Qwen-1.5B (base, bf16) | 1,5B | 32k | Razonamiento destilado | MIT | Hugging Face oficial, con tarjeta completa |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Instrucciones generales | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| DeepSeek-R1-Distill-Qwen-7B | 7B | 32k | Razonamiento destilado | MIT | Hugging Face oficial |
+| Llama-3.2-1B-Instruct | 1,2B | 128k | Instrucciones generales | Llama 3.2 Community License | Hugging Face, gated |
 
 Frente a Qwen2.5-1.5B-Instruct, este destilado gana en matemáticas y razonamiento de competición a costa de respuestas mucho más largas y peor comportamiento en conversación general. Frente al destilado de 7B, es entre 4 y 5 veces más pequeño y notablemente menos preciso, pero viable en hardware mucho más modesto.
 
@@ -104,7 +104,7 @@ Frente a Qwen2.5-1.5B-Instruct, este destilado gana en matemáticas y razonamien
 ## Enlaces
 
 - Repositorio de la cuantización: https://huggingface.co/dotimothy/DeepSeek-R1-Distill-Qwen-1.5B-GPTQ-Safetensors
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Destilado de 7B (referencia de la familia): https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Réplica no oficial en GitHub: https://github.com/yaocw2020/DeepSeek-R1-Distill-Qwen-1.5B
 - ModelScope: https://www.modelscope.cn/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B

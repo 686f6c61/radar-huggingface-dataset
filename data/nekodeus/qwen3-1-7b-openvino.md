@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato / cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nekodeus/qwen3-1.7b-openvino | 1,7 B | OpenVINO IR, INT8 weight-only | 40960 | Apache-2.0 | HuggingFace (148 descargas) |
-| Qwen/Qwen3-1.7B (base) | 1,7 B | safetensors (FP16/BF16) | 40960 (YaRN-capable) | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-1.7B-GGUF (oficial/comunidad) | 1,7 B | GGUF (varias cuantizaciones) | 40960 | Apache-2.0 | HuggingFace (para llama.cpp/Ollama) |
+| Nekodeus/qwen3-1.7b-openvino | 1,7 B | OpenVINO IR, INT8 weight-only | 40960 | Apache-2.0 | Hugging Face (148 descargas) |
+| Qwen/Qwen3-1.7B (base) | 1,7 B | safetensors (FP16/BF16) | 40960 (YaRN-capable) | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-1.7B-GGUF (oficial/comunidad) | 1,7 B | GGUF (varias cuantizaciones) | 40960 | Apache-2.0 | Hugging Face (para llama.cpp/Ollama) |
 
 La diferencia clave frente al modelo base es el formato: esta version sacrifica la precision completa de los pesos a cambio de ejecucion eficiente en CPU con OpenVINO. Frente a las variantes GGUF, la ventaja es la integracion nativa con el ecosistema Intel (optimum-intel, OpenVINO GenAI), mientras que GGUF es mas versatile en hardware heterogeneo (Apple Silicon, CUDA, etc.).
 

@@ -13,13 +13,13 @@ La relevancia de esta publicacion es practica: ofrece variantes listas para desc
 | Parametro | Valor |
 |---|---|
 | Arquitectura | No disponible de forma explicita; la etiqueta `qwen3` del repositorio apunta a una arquitectura transformer decoder-only de la familia Qwen3 |
-| Parametros totales | 4.022.468.096 (aproximadamente 4,02 mil millones), segun el dato real de safetensors indicado en la ficha de HuggingFace |
+| Parametros totales | 4.022.468.096 (aproximadamente 4,02 mil millones), segun el dato real de safetensors indicado en la ficha de Hugging Face |
 | Parametros activos | No aplica (no se indica que sea un modelo MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
 | Idiomas soportados | Ingles (etiqueta `en` del repositorio); no hay confirmacion de otros idiomas |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (los pesos originales del modelo base se distribuyen en formato HuggingFace, presumiblemente safetensors) |
+| Formato de pesos | GGUF (los pesos originales del modelo base se distribuyen en formato Hugging Face, presumiblemente safetensors) |
 
 Datos adicionales de la model card: `quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`. No se han publicado cuantizaciones ponderadas ni con imatrix para este modelo; el autor indica que podrian no estar disponibles.
 
@@ -27,7 +27,7 @@ Datos adicionales de la model card: `quantize_version: 2`, `output_tensor_quanti
 
 La informacion proporcionada no incluye detalles sobre la arquitectura del modelo base VietTung04/vlsp-4b mas alla de la etiqueta `qwen3` asociada al repositorio de cuantizaciones, lo que sugiere que se trata de un transformer decoder-only derivado o inspirado en la familia Qwen3. No se especifican innovaciones tecnicas como atencion lineal, mezcla de expertos, decodificacion especulativa ni mecanismos hibridos de atencion.
 
-Respecto al entrenamiento, no se dispone de datos sobre el numero de tokens utilizados, la composicion del dataset, la posible aplicacion de ajuste supervisado, RLHF o DPO, ni sobre el proceso de destilacion o fine-tuning que dio lugar al checkpoint base. El repositorio de cuantizaciones unicamente documenta el proceso de conversion a GGUF, no el entrenamiento. Las cuantizaciones se generaron a partir del checkpoint en formato HuggingFace (`convert_type: hf`) mediante la herramienta `unsloth` referenciada en las etiquetas.
+Respecto al entrenamiento, no se dispone de datos sobre el numero de tokens utilizados, la composicion del dataset, la posible aplicacion de ajuste supervisado, RLHF o DPO, ni sobre el proceso de destilacion o fine-tuning que dio lugar al checkpoint base. El repositorio de cuantizaciones unicamente documenta el proceso de conversion a GGUF, no el entrenamiento. Las cuantizaciones se generaron a partir del checkpoint en formato Hugging Face (`convert_type: hf`) mediante la herramienta `unsloth` referenciada en las etiquetas.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ Respecto al entrenamiento, no se dispone de datos sobre el numero de tokens util
 - Prototipado de asistentes conversacionales en local: con la cuantizacion Q4_K_M (2,6 GB) el modelo cabe en GPUs de gama media y permite montar un chatbot de prueba sin coste de API, usando llama.cpp u Ollama como backend.
 - Generacion de texto en entornos sin conectividad: la disponibilidad de variantes desde 1,8 GB hace viable ejecutar el modelo en portatiles o equipos de oficina sin GPU dedicada, por ejemplo para resumir documentos o redactar borradores.
 - Evaluacion comparativa de cuantizaciones: el repositorio ofrece doce niveles de precision distintos, lo que permite medir la degradacion de calidad frente al coste de memoria en un mismo modelo, util para calibrar que cuantizacion usar en produccion.
-- Fine-tuning posterior sobre base cuantizada en QLoRA: aunque el repositorio solo contiene GGUF, el modelo base en formato HuggingFace puede emplearse para adaptacion con QLoRA en una GPU de 16-24 GB, partiendo de este mismo checkpoint.
+- Fine-tuning posterior sobre base cuantizada en QLoRA: aunque el repositorio solo contiene GGUF, el modelo base en formato Hugging Face puede emplearse para adaptacion con QLoRA en una GPU de 16-24 GB, partiendo de este mismo checkpoint.
 - Clasificacion y extraccion de informacion en ingles: para tareas de etiquetado de texto, analisis de sentimiento o extraccion de entidades en documentacion en ingles, un modelo de 4B suele ser suficiente y el coste de inferencia es bajo.
 - Despliegue como servicio interno de baja concurrencia: usando vLLM o TGI con los pesos originales (no GGUF) en una unica GPU, se puede servir un endpoint de generacion para un equipo pequeno, siempre que la licencia Apache 2.0 del modelo base lo permita.
 - Integracion en pipelines de procesamiento por lotes: la variante Q8_0 (4,4 GB) permite procesar grandes volumenes de texto con una calidad cercana a f16 y un consumo de memoria moderado en CPU o GPU.
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con 8 GB o mas permite ejecutar las cuantizaciones Q4 y Q5 con margen; una RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB, RTX 4070, RTX 4080, RTX 4090, A100 o H100 pueden ejecutar sin problema incluso la variante f16.
 - Compatibilidad con GPU de consumo: si. Las cuantizaciones Q4_K_M y Q4_K_S caben en GPUs de 6-8 GB (por ejemplo GTX 1660 Super, RTX 2060, RTX 3050, RTX 4060), y las variantes Q2 y Q3 pueden ejecutarse incluso en iGPU con memoria compartida.
 - Ejecucion en CPU: viable con llama.cpp, especialmente con Q4_K_M o inferiores; las variantes Q2_K y Q3_K_S son las mas adecuadas para equipos con poca RAM.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, text-generation-webui y otros runners compatibles con GGUF. Para vLLM y TGI, que trabajan de forma nativa con pesos HuggingFace, habria que usar el modelo base VietTung04/vlsp-4b en lugar de los ficheros GGUF.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, text-generation-webui y otros runners compatibles con GGUF. Para vLLM y TGI, que trabajan de forma nativa con pesos Hugging Face, habria que usar el modelo base VietTung04/vlsp-4b en lugar de los ficheros GGUF.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ La comparativa se realiza con modelos de tamano equivalente ampliamente document
 
 | Modelo | Parametros | Contexto | Licencia | Formato GGUF disponible | Notas |
 |---|---|---|---|---|---|
-| vlsp-4b (mradermacher/vlsp-4b-GGUF) | 4,02 B | No disponible | Apache 2.0 | Si, doce cuantizaciones | Modelo base poco documentado; 20 descargas en HuggingFace |
+| vlsp-4b (mradermacher/vlsp-4b-GGUF) | 4,02 B | No disponible | Apache 2.0 | Si, doce cuantizaciones | Modelo base poco documentado; 20 descargas en Hugging Face |
 | Qwen3-4B | 4 B aprox. | No disponible en esta ficha | Apache 2.0 | Si, ampliamente distribuido | Referencia habitual de la familia Qwen3; el repositorio etiqueta vlsp-4b como `qwen3` |
 | Llama 3.2 3B Instruct | 3,2 B aprox. | No disponible en esta ficha | Licencia comunitaria de Meta | Si | Alternativa consolidada en el rango de 3-4 B |
 | Phi-3.5-mini instruct | 3,8 B aprox. | No disponible en esta ficha | MIT | Si | Orientado a razonamiento y codigo en modelos pequenos |
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos y vlsp-4b,
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/vlsp-4b-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/vlsp-4b-GGUF
 - Modelo base: https://huggingface.co/VietTung04/vlsp-4b
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#vlsp-4b-GGUF
 - Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests

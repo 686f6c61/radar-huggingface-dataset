@@ -90,7 +90,7 @@ No se incluyen comparaciones con modelos de otros fabricantes (por ejemplo, Llam
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shoemoney/Muse-Glimmer-30B-Abliterated-MLX-q6
+- Repositorio Hugging Face: https://huggingface.co/shoemoney/Muse-Glimmer-30B-Abliterated-MLX-q6
 - Modelo base (BF16): https://huggingface.co/Blackfrost-AI/Muse-Glimmer-30B-Abliterated-BF16
 - Modelo original de Meta: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Pagina oficial de Meta: https://developer.meta.com/ai/models/muse-glimmer/

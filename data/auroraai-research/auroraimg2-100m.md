@@ -70,9 +70,9 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Resolución | Contexto de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AuroraIMG2-100M | 100,6M (denoiser) + 44,9M (texto) | 256×256 fija | 190 tokens | Apache-2.0 | HuggingFace (diffusers, pipeline personalizado) |
-| AuroraIMG2-50M-Preview | 50M (predecesor) | No disponible en la información | No disponible | No disponible en la información | HuggingFace |
-| FLUX.2 small decoder | 27,9M (solo decodificador) | No aplica (decodificador) | No aplica | Apache-2.0 | HuggingFace (black-forest-labs) |
+| AuroraIMG2-100M | 100,6M (denoiser) + 44,9M (texto) | 256×256 fija | 190 tokens | Apache-2.0 | Hugging Face (diffusers, pipeline personalizado) |
+| AuroraIMG2-50M-Preview | 50M (predecesor) | No disponible en la información | No disponible | No disponible en la información | Hugging Face |
+| FLUX.2 small decoder | 27,9M (solo decodificador) | No aplica (decodificador) | No aplica | Apache-2.0 | Hugging Face (black-forest-labs) |
 
 No se dispone en la información proporcionada de comparaciones con otros modelos texto-a-imagen de tamaño similar (por ejemplo, variantes tiny de Stable Diffusion o modelos de investigación equivalentes), por lo que la comparativa se limita al predecesor directo y al componente VAE reutilizado.
 
@@ -91,7 +91,7 @@ No se dispone en la información proporcionada de comparaciones con otros modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AuroraAI-Research/AuroraIMG2-100M
+- Modelo en Hugging Face: https://huggingface.co/AuroraAI-Research/AuroraIMG2-100M
 - Predecesor AuroraIMG2-50M-Preview: https://huggingface.co/AuroraAI-Research/AuroraIMG2-50M-Preview
 - Decodificador FLUX.2 small decoder: https://huggingface.co/black-forest-labs/FLUX.2-small-decoder
 - Dataset de entrenamiento: https://huggingface.co/datasets/QLNI/FLUX-Reason-6M-flux2-latents

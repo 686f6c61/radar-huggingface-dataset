@@ -67,7 +67,7 @@ No se dispone de informacion suficiente sobre modelos comparables en la misma ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mimiminsoo/spam_diffusion_stage_place_noyolo_v2
+- Hugging Face: https://huggingface.co/mimiminsoo/spam_diffusion_stage_place_noyolo_v2
 - Paper de Diffusion Policy: https://huggingface.co/papers/2303.04137
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index

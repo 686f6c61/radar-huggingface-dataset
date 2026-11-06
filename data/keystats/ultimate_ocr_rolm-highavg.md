@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`keystats/Ultimate_ocr_rolm-highavg` es un checkpoint multimodal de tipo image-text-to-text publicado en HuggingFace por el usuario keystats. El repositorio declara la etiqueta de arquitectura `qwen2_5_vl` y la libreria `transformers`, con pesos en formato safetensors y un total de 8.292.166.656 parametros (aproximadamente 8,29 mil millones), lo que situa el modelo en la franja de los 7B-8B en precision de 16 bits (16,6 GB de repositorio). El nombre del checkpoint sugiere un ajuste orientado a OCR (reconocimiento optico de caracteres) sobre la familia Qwen2.5-VL, aunque el autor no confirma este extremo en la documentacion.
+`keystats/Ultimate_ocr_rolm-highavg` es un checkpoint multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario keystats. El repositorio declara la etiqueta de arquitectura `qwen2_5_vl` y la libreria `transformers`, con pesos en formato safetensors y un total de 8.292.166.656 parametros (aproximadamente 8,29 mil millones), lo que situa el modelo en la franja de los 7B-8B en precision de 16 bits (16,6 GB de repositorio). El nombre del checkpoint sugiere un ajuste orientado a OCR (reconocimiento optico de caracteres) sobre la familia Qwen2.5-VL, aunque el autor no confirma este extremo en la documentacion.
 
-La relevancia de la ficha es limitada y debe leerse con cautela: el modelo no tiene descargas ni likes, la model card es la plantilla autogenerada de HuggingFace sin ningun campo completado, y no se ha publicado informacion sobre datos de entrenamiento, licencia, idiomas soportados, longitud de contexto ni resultados de evaluacion. El unico dato publicado por el autor es el identificador de arquitectura.
+La relevancia de la ficha es limitada y debe leerse con cautela: el modelo no tiene descargas ni likes, la model card es la plantilla autogenerada de Hugging Face sin ningun campo completado, y no se ha publicado informacion sobre datos de entrenamiento, licencia, idiomas soportados, longitud de contexto ni resultados de evaluacion. El unico dato publicado por el autor es el identificador de arquitectura.
 
 En consecuencia, esta ficha documenta lo verificable (tamano, formato, pipeline, etiquetas) y marca explicitamente como "no disponible" todo aquello que el autor no ha hecho publico, en lugar de extrapolar especificaciones del modelo base.
 
@@ -29,11 +29,11 @@ En consecuencia, esta ficha documenta lo verificable (tamano, formato, pipeline,
 
 ## Arquitectura y entrenamiento
 
-La model card del repositorio es la plantilla por defecto de HuggingFace, con todos los apartados en estado "[More Information Needed]". No hay ninguna descripcion del procedimiento de entrenamiento, del volumen de tokens, de la composicion del dataset, ni de si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT supervisado. Tampoco se documentan hiperparametros, precision de entrenamiento ni infraestructura de computo.
+La model card del repositorio es la plantilla por defecto de Hugging Face, con todos los apartados en estado "[More Information Needed]". No hay ninguna descripcion del procedimiento de entrenamiento, del volumen de tokens, de la composicion del dataset, ni de si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT supervisado. Tampoco se documentan hiperparametros, precision de entrenamiento ni infraestructura de computo.
 
 Lo unico deducible con rigor es lo siguiente. El tag `qwen2_5_vl` identifica la arquitectura de pesos, y el pipeline declarado (`image-text-to-text`) confirma que se espera que el modelo consuma imagenes y texto y produzca texto. El recuento exacto de parametros (8.292.166.656) coincide con el orden de magnitud de la variante de 7B de la familia Qwen2.5-VL, que integra un encoder visual junto con el decodificador de lenguaje; sin embargo, el autor no confirma cual es el checkpoint de partida ni si se trata de un ajuste fino, de una fusion de pesos o de un entrenamiento adicional. El sufijo `highavg` del nombre podria sugerir un promedio de pesos entre checkpoints, pero es una interpretacion no verificada.
 
-Conviene advertir sobre un detalle de la plantilla: el tag `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la seccion de impacto medioambiental de la plantilla de HuggingFace. No es el paper del modelo ni describe su arquitectura ni su entrenamiento.
+Conviene advertir sobre un detalle de la plantilla: el tag `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la seccion de impacto medioambiental de la plantilla de Hugging Face. No es el paper del modelo ni describe su arquitectura ni su entrenamiento.
 
 ## Capacidades
 
@@ -62,13 +62,13 @@ Dado que no existe documentacion oficial, los casos siguientes son escenarios pl
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor no incluye ninguna tabla de evaluacion (MMLU, HumanEval, GSM8K, OCRBench, OmniDocBench ni similares) y el repositorio no registra evaluaciones en HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor no incluye ninguna tabla de evaluacion (MMLU, HumanEval, GSM8K, OCRBench, OmniDocBench ni similares) y el repositorio no registra evaluaciones en Hugging Face.
 
 Como contexto de categoria, los resultados de busqueda consultados recogen cifras de otros modelos de OCR, que no deben atribuirse a este checkpoint:
 
 | Modelo | Benchmark | Resultado | Fuente |
 |---|---|---|---|
-| `keystats/Ultimate_ocr_rolm-highavg` | Cualquiera | No disponible | Repositorio de HuggingFace |
+| `keystats/Ultimate_ocr_rolm-highavg` | Cualquiera | No disponible | Repositorio de Hugging Face |
 | GLM-OCR | OmniDocBench | 94,62 | ofox.ai (blog comparativo) |
 | PaddleOCR-VL | OmniDocBench | 94,50 | ofox.ai (blog comparativo) |
 | Gemini 3.1 Pro | OmniDocBench | 90,33 | ofox.ai (blog comparativo) |
@@ -84,7 +84,7 @@ Estimaciones calculadas a partir del recuento real de parametros (8,29B) y del t
 - VRAM en int4 (si se generan pesos GGUF/AWQ): aproximadamente 4,5-5,5 GB de pesos. Hay que sumar el coste del encoder visual, que en modelos de esta familia puede anadir entre 1 y 2 GB segun la resolucion de imagen.
 - GPU profesionales: A100 40/80 GB, H100 80 GB y L40S 48 GB cubren el modelo en fp16 sin cuantizar con margen amplio.
 - GPU de consumo: si, cabe en RTX 4090 (24 GB) en fp16 con contexto limitado, y en RTX 3090 (24 GB) en las mismas condiciones. En GPUs de 12-16 GB (RTX 4080, 4070 Ti Super) es necesario cuantizar a int8 o int4.
-- Opciones de despliegue: los tags `text-generation-inference` y `endpoints_compatible` apuntan a TGI y a HuggingFace Inference Endpoints. vLLM soporta la familia Qwen2.5-VL como arquitectura, pero no esta confirmado para este checkpoint concreto. La carga directa con `transformers` es la via con menor incertidumbre. El soporte en llama.cpp/Ollama requeriria generar un GGUF multimodal con proyector visual, algo no publicado por el autor.
+- Opciones de despliegue: los tags `text-generation-inference` y `endpoints_compatible` apuntan a TGI y a Hugging Face Inference Endpoints. vLLM soporta la familia Qwen2.5-VL como arquitectura, pero no esta confirmado para este checkpoint concreto. La carga directa con `transformers` es la via con menor incertidumbre. El soporte en llama.cpp/Ollama requeriria generar un GGUF multimodal con proyector visual, algo no publicado por el autor.
 - Latencia y throughput: no disponible. No hay cifras de tokens por segundo ni de tiempo de procesamiento por pagina publicadas.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparat
 
 | Modelo | Parametros | Contexto | Licencia | Resultado publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| `keystats/Ultimate_ocr_rolm-highavg` | 8,29B | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
+| `keystats/Ultimate_ocr_rolm-highavg` | 8,29B | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
 | Qwen2.5-VL-7B (modelo base probable) | ~8,29B | 32.768 tokens nativos en el modelo base (no confirmado para este checkpoint) | Apache 2.0 en el modelo base | No disponible en esta busqueda | Amplia, ampliamente desplegado |
 | GLM-OCR | No disponible | No disponible | No disponible | 94,62 en OmniDocBench | Disponible segun el blog consultado |
 | PaddleOCR-VL | No disponible | No disponible | No disponible | 94,50 en OmniDocBench | Disponible segun el blog consultado |
@@ -115,7 +115,7 @@ La conclusion es que este checkpoint no puede compararse en rendimiento con las 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keystats/Ultimate_ocr_rolm-highavg
+- Modelo en Hugging Face: https://huggingface.co/keystats/Ultimate_ocr_rolm-highavg
 - Modelo hermano del mismo autor en FriendliAI (`Legend_ocr_rolm-highavg`): https://friendli.ai/models/keystats/Legend_ocr_rolm-highavg
 - Ranking de modelos OCR locales 2026: https://local-ai-zone.github.io/guides/best-ai-ocr-models-ultimate-ranking-2026.html
 - Comparativa de modelos para OCR 2026: https://ofox.ai/blog/best-ai-model-for-ocr-2026/

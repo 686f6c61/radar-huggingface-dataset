@@ -77,7 +77,7 @@ La comparativa en rendimiento depende del LLM subyacente, no del agente en si.
 
 ## Enlaces
 
-- [HuggingFace Space](https://huggingface.co/Arham-bhai/opencode-cloud)
+- [Hugging Face Space](https://huggingface.co/Arham-bhai/opencode-cloud)
 - [Sitio oficial de OpenCode](https://opencode.ai)
 - [Documentacion de OpenCode](https://opencode.ai/docs/)
 - [Documentacion de modelos de OpenCode](https://opencode.ai/docs/models/)

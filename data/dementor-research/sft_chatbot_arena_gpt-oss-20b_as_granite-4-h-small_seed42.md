@@ -64,6 +64,6 @@ No disponible. No se conocen adaptadores comparables en el mismo repositorio ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/sft_chatbot_arena_gpt-oss-20b_as_granite-4-h-small_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/sft_chatbot_arena_gpt-oss-20b_as_granite-4-h-small_seed42
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Herramienta Tinker: https://thinkingmachines.ai/tinker/

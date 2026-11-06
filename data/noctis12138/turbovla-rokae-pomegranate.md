@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TurboVLA Rokae v3 (este) | VLA bimanual, DINOv3-L + BERT + ActionMap | no disponible (~1,8 GB checkpoint) | no disponible | 1 tarea (naranja + granada en caja morada) | other (DINOv3 License) | HuggingFace, repo de 1,8 GB |
-| `Noctis12138/turbovla-rokae-toothbrush` | VLA bimanual, misma receta | no disponible | no disponible | 1 tarea (cepillo de dientes) | other | HuggingFace |
-| `Noctis12138/turbovla-rokae-6task` | VLA bimanual, misma receta | no disponible | no disponible | 6 tareas | other | HuggingFace |
+| TurboVLA Rokae v3 (este) | VLA bimanual, DINOv3-L + BERT + ActionMap | no disponible (~1,8 GB checkpoint) | no disponible | 1 tarea (naranja + granada en caja morada) | other (DINOv3 License) | Hugging Face, repo de 1,8 GB |
+| `Noctis12138/turbovla-rokae-toothbrush` | VLA bimanual, misma receta | no disponible | no disponible | 1 tarea (cepillo de dientes) | other | Hugging Face |
+| `Noctis12138/turbovla-rokae-6task` | VLA bimanual, misma receta | no disponible | no disponible | 6 tareas | other | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre estas variantes; la única diferencia documentada es la tarea y el número de demostraciones, manteniendo idéntica arquitectura y receta de entrenamiento.
 
@@ -86,7 +86,7 @@ No se dispone de datos comparativos de rendimiento entre estas variantes; la ún
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Noctis12138/turbovla-rokae-pomegranate
+- Modelo en Hugging Face: https://huggingface.co/Noctis12138/turbovla-rokae-pomegranate
 - Variante de cepillo de dientes: https://huggingface.co/Noctis12138/turbovla-rokae-toothbrush
 - Variante de 6 tareas: https://huggingface.co/Noctis12138/turbovla-rokae-6task
 - Paquete de despliegue: `deploy/README.md` dentro del repositorio del modelo

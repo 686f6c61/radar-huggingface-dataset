@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JustRL-Qwen3-1p7b-Selective-Top10pct es un ajuste fino del modelo denso Qwen3-1.7B, publicado por el usuario SelectiveDOPD en HuggingFace. El nombre del repositorio indica que el checkpoint proviene del experimento interno `justrl_qwen3_1p7b_js_top10_kl`, dentro de una línea de trabajo denominada BiDirect-OPD, y que se ha aplicado algún tipo de post-entrenamiento con refuerzo (el prefijo «JustRL» y el sufijo «Selective-Top10pct» apuntan a una selección del 10 % superior de muestras o de tokens durante el proceso). No hay model card descriptiva: el README se limita a indicar el origen del checkpoint y la lista de ramas disponibles.
+JustRL-Qwen3-1p7b-Selective-Top10pct es un ajuste fino del modelo denso Qwen3-1.7B, publicado por el usuario SelectiveDOPD en Hugging Face. El nombre del repositorio indica que el checkpoint proviene del experimento interno `justrl_qwen3_1p7b_js_top10_kl`, dentro de una línea de trabajo denominada BiDirect-OPD, y que se ha aplicado algún tipo de post-entrenamiento con refuerzo (el prefijo «JustRL» y el sufijo «Selective-Top10pct» apuntan a una selección del 10 % superior de muestras o de tokens durante el proceso). No hay model card descriptiva: el README se limita a indicar el origen del checkpoint y la lista de ramas disponibles.
 
 El modelo cuenta con 2.031.739.904 parámetros reales según los ficheros safetensors, lo que lo sitúa en la gama de los modelos pequeños de 2.000 millones de parámetros, adecuados para inferencia en una sola GPU de consumo. La arquitectura es la del transformer decoder-only de la familia Qwen3, de tipo denso (no MoE), y el pipeline declarado es `text-generation` con soporte conversacional y compatibilidad con Text Generation Inference y endpoints.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| JustRL-Qwen3-1p7b-Selective-Top10pct | 2,03 B | No disponible (base: 32.768) | No disponible | HuggingFace, 15 ramas de checkpoint | No disponible |
-| Qwen3-1.7B (modelo base) | 1,7 B declarados | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | HuggingFace, ampliamente distribuido | Benchmarks publicados por Alibaba |
-| Llama 3.2 1B Instruct | 1,24 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace | Benchmarks publicados por Meta |
-| Gemma 3 1B IT | 1 B aprox. | 32.000 tokens | Gemma Terms of Use | HuggingFace | Benchmarks publicados por Google |
+| JustRL-Qwen3-1p7b-Selective-Top10pct | 2,03 B | No disponible (base: 32.768) | No disponible | Hugging Face, 15 ramas de checkpoint | No disponible |
+| Qwen3-1.7B (modelo base) | 1,7 B declarados | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | Hugging Face, ampliamente distribuido | Benchmarks publicados por Alibaba |
+| Llama 3.2 1B Instruct | 1,24 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face | Benchmarks publicados por Meta |
+| Gemma 3 1B IT | 1 B aprox. | 32.000 tokens | Gemma Terms of Use | Hugging Face | Benchmarks publicados por Google |
 
 La comparación de rendimiento con las alternativas no puede establecerse porque este checkpoint no publica métricas. A efectos prácticos, su principal diferencia frente a los modelos citados es la licencia: los tres alternativos tienen términos claros, mientras que JustRL-Qwen3-1p7b-Selective-Top10pct no declara ninguna, lo que impide determinar si el uso comercial está permitido.
 
@@ -98,7 +98,7 @@ La comparación de rendimiento con las alternativas no puede establecerse porque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-1p7b-Selective-Top10pct
+- Modelo en Hugging Face: https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-1p7b-Selective-Top10pct
 - Rama `main` (global_step_300): https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-1p7b-Selective-Top10pct/tree/main
 - Modelo base de referencia Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Documentación de Text Generation Inference: https://huggingface.co/docs/text-generation-inference

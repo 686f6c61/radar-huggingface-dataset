@@ -17,7 +17,7 @@ La relevancia de esta ficha reside en que ofrece una via de despliegue local y l
 | Parametros activos | no disponible (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj en Q8_0 y f16 |
-| Idiomas soportados | en (segun metadatos de HuggingFace); el nombre del modelo indica especializacion en persa, aunque no consta como idioma declarado |
+| Idiomas soportados | en (segun metadatos de Hugging Face); el nombre del modelo indica especializacion en persa, aunque no consta como idioma declarado |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (con ficheros mmproj separados) |
 
@@ -82,7 +82,7 @@ La comparacion cuantitativa con alternativas como Whisper no puede realizarse po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-ASR-1.7B-Persian-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-ASR-1.7B-Persian-GGUF
 - Modelo base: https://huggingface.co/Neurai/Qwen3-ASR-1.7B-Persian
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Qwen3-ASR-1.7B-Persian-GGUF
 - Guia de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

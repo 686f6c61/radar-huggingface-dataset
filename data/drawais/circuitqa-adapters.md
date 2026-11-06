@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CircuitQA Adapters (este) | 7B base + LoRA | no disponible | QA sobre RTL con enrutamiento multi-backend | Apache-2.0 | HuggingFace (adaptadores PEFT) |
-| Qwen2.5-Coder-7B-Instruct | 7B | no disponible en esta ficha | Codigo general | Apache-2.0 | HuggingFace |
+| CircuitQA Adapters (este) | 7B base + LoRA | no disponible | QA sobre RTL con enrutamiento multi-backend | Apache-2.0 | Hugging Face (adaptadores PEFT) |
+| Qwen2.5-Coder-7B-Instruct | 7B | no disponible en esta ficha | Codigo general | Apache-2.0 | Hugging Face |
 | Modelos de QA sobre codigo genericos | variable | variable | QA sobre codigo sin dominio hardware | variable | variable |
 
 No se dispone de datos de rendimiento comparativos en la informacion proporcionada para establecer una comparacion cuantitativa con alternativas.

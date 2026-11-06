@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`TAnGx1411/qwen_3_8_27b_lora` es un adaptador LoRA publicado en HuggingFace por el usuario TAnGx1411 bajo licencia MIT. Por el identificador se deduce que se trata de un ajuste fino de bajo rango (LoRA) sobre un modelo de la familia Qwen 3, con una nomenclatura que sugiere 27 000 millones de parametros totales y 8 000 millones de parametros activos, lo que apunta a una arquitectura Mixture of Experts (MoE) esparcida. Sin embargo, esta interpretacion proviene unicamente del nombre del repositorio y no esta confirmada en la model card.
+`TAnGx1411/qwen_3_8_27b_lora` es un adaptador LoRA publicado en Hugging Face por el usuario TAnGx1411 bajo licencia MIT. Por el identificador se deduce que se trata de un ajuste fino de bajo rango (LoRA) sobre un modelo de la familia Qwen 3, con una nomenclatura que sugiere 27 000 millones de parametros totales y 8 000 millones de parametros activos, lo que apunta a una arquitectura Mixture of Experts (MoE) esparcida. Sin embargo, esta interpretacion proviene unicamente del nombre del repositorio y no esta confirmada en la model card.
 
 La model card publicada es practicamente vacia: solo contiene la declaracion de licencia MIT, sin descripcion del dataset de entrenamiento, hiperparametros del LoRA, rango, alpha, modulos objetivo ni instrucciones de uso. El repositorio no registra descargas ni likes en el momento de la consulta y no declara pipeline, idiomas soportados ni resultados de evaluacion.
 
@@ -39,7 +39,7 @@ Tampoco hay datos sobre el entrenamiento del LoRA: se desconoce el dataset, el n
 ## Casos de uso
 
 - Evaluacion de adaptadores comunitarios: el repositorio sirve como artefacto de prueba para pipelines de merge de LoRA y validacion de compatibilidad con el modelo base Qwen 3 correspondiente, antes de considerar su uso.
-- Investigacion sobre ajuste fino eficiente: util como ejemplo de publicacion de LoRA en HuggingFace para estudiar practicas de documentacion (en este caso, insuficientes) y reproducibilidad.
+- Investigacion sobre ajuste fino eficiente: util como ejemplo de publicacion de LoRA en Hugging Face para estudiar practicas de documentacion (en este caso, insuficientes) y reproducibilidad.
 - Experimentacion academica: aplicable en entornos de laboratorio donde se pueda identificar el modelo base y comparar el comportamiento del adaptador frente al modelo sin ajustar.
 - Pruebas de infraestructura de despliegue: permite validar flujos de carga de adaptadores PEFT en servidores de inferencia (vLLM con soporte LoRA, TGI, etc.) una vez confirmada la configuracion.
 - Fine-tuning posterior sobre el adaptador: si el merge es correcto, podria servir como punto de partida para ajustes adicionales en un dominio concreto, siempre con validacion previa.
@@ -75,5 +75,5 @@ No disponible. No se dispone de informacion suficiente sobre el modelo base ni s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TAnGx1411/qwen_3_8_27b_lora
+- Repositorio Hugging Face: https://huggingface.co/TAnGx1411/qwen_3_8_27b_lora
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

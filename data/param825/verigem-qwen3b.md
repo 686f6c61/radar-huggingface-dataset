@@ -2,7 +2,7 @@
 
 ## Resumen
 
-verigem-qwen3b es un modelo de lenguaje conversacional publicado por el usuario Param825 en HuggingFace, distribuido exclusivamente en formato GGUF para su uso con llama.cpp. Los metadatos de la plataforma registran 3.085.938.688 parámetros (aproximadamente 3,09 mil millones), un tamaño de repositorio de 1,9 GB y una única cuantización publicada, `qwen2.5-3b-instruct.Q4_K_M.gguf`. El nombre del archivo y la etiqueta `qwen2` indican que se trata de un ajuste fino sobre Qwen2.5-3B-Instruct, aunque el autor no lo declara explícitamente en la model card.
+verigem-qwen3b es un modelo de lenguaje conversacional publicado por el usuario Param825 en Hugging Face, distribuido exclusivamente en formato GGUF para su uso con llama.cpp. Los metadatos de la plataforma registran 3.085.938.688 parámetros (aproximadamente 3,09 mil millones), un tamaño de repositorio de 1,9 GB y una única cuantización publicada, `qwen2.5-3b-instruct.Q4_K_M.gguf`. El nombre del archivo y la etiqueta `qwen2` indican que se trata de un ajuste fino sobre Qwen2.5-3B-Instruct, aunque el autor no lo declara explícitamente en la model card.
 
 El modelo resuelve un caso de uso muy concreto: desplegar un asistente conversacional de tamano reducido en hardware modesto, sin dependencia de APIs externas. Al estar en GGUF, se puede ejecutar en CPU o en GPU de gama de entrada mediante llama.cpp, y el repositorio incluye un Modelfile de Ollama para simplificar el despliegue. Esto lo sitúa en la categoría de modelos locales de 3B, donde la eficiencia de memoria prima sobre el rendimiento bruto.
 
@@ -19,7 +19,7 @@ La relevancia de esta ficha es limitada y conviene señalarlo desde el principio
 | Tipos de cuantización | GGUF Q4_K_M (único archivo publicado: `qwen2.5-3b-instruct.Q4_K_M.gguf`) |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
-| Formato de pesos | GGUF (llama.cpp). Los metadatos de HuggingFace reportan el recuento de parámetros vía safetensors, pero la model card solo documenta el archivo GGUF |
+| Formato de pesos | GGUF (llama.cpp). Los metadatos de Hugging Face reportan el recuento de parámetros vía safetensors, pero la model card solo documenta el archivo GGUF |
 | Modelo base | No declarado explícitamente; el nombre del archivo apunta a Qwen2.5-3B-Instruct |
 | Tamaño del repositorio | 1,9 GB |
 | Etiquetas declaradas | `gguf`, `qwen2`, `llama.cpp`, `unsloth`, `endpoints_compatible`, `conversational` |
@@ -94,7 +94,7 @@ La diferencia principal de verigem-qwen3b frente a las alternativas no está en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Param825/verigem-qwen3b
+- Modelo en Hugging Face: https://huggingface.co/Param825/verigem-qwen3b
 - Unsloth (librería empleada para el ajuste y la conversión, citada en la model card): https://github.com/unslothai/unsloth
 - llama.cpp (runtime implicado por las etiquetas y los comandos de ejemplo): https://github.com/ggml-org/llama.cpp
 - Ollama (Modelfile incluido para despliegue, mencionado en la model card): https://ollama.com

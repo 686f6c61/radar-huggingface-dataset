@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sunilchopra/coca-demo-2024` es un repositorio de demostración publicado en HuggingFace por el usuario sunilchopra que contiene una implementación funcional de una arquitectura tipo Coca (CoCa) orientada a tareas de generación. No se trata de un modelo entrenado ni afinado: el propio autor indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el tamaño total del repo es de 0.0 GB.
+`sunilchopra/coca-demo-2024` es un repositorio de demostración publicado en Hugging Face por el usuario sunilchopra que contiene una implementación funcional de una arquitectura tipo Coca (CoCa) orientada a tareas de generación. No se trata de un modelo entrenado ni afinado: el propio autor indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el tamaño total del repo es de 0.0 GB.
 
 El recuento de parámetros registrado en el archivo safetensors es de 33.088 parámetros, una cifra extremadamente reducida que confirma la naturaleza de juguete o de esqueleto del artefacto. La configuración declarada en la model card corresponde a la escala "base" con atención de consultas agrupadas (grouped query attention), fusión bilineal, activación ReLU y normalización InstanceNorm. El repositorio incluye además `main.py` como artefacto principal, `config.json` con la configuración de arquitectura y `training_args.json` con una receta de experimento por defecto basada en el optimizador Lion con calentamiento lineal.
 
@@ -92,7 +92,7 @@ No se han identificado modelos comparables en la información proporcionada. El 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sunilchopra/coca-demo-2024
+- Modelo en Hugging Face: https://huggingface.co/sunilchopra/coca-demo-2024
 - Perfil del autor: https://huggingface.co/sunilchopra
 - Repositorio de referencia externo (Chocolate AI, Google Cloud Platform): https://github.com/GoogleCloudPlatform/chocolate-ai
 - Artículo externo sobre publicidad generada con IA y Coca-Cola: https://www.thecooldown.com/green-business/coca-cola-ai-commercials-backlash-2025/

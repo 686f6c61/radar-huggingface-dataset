@@ -78,7 +78,7 @@ No se dispone de modelos comparables directamente en la información proporciona
 - [Modelo en Hugging Face: caikybaldo999/ZYI-Turbo-1.0](https://huggingface.co/caikybaldo999/ZYI-Turbo-1.0)
 - [Repositorio relacionado: caikybaldo999/ZYI](https://huggingface.co/caikybaldo999/ZYI)
 - [Repositorio relacionado: caikybaldo999/ZYI-1.0](https://huggingface.co/caikybaldo999/ZYI-1.0)
-- [Perfil de autor en HuggingFace](https://huggingface.co/caikybaldo999)</think>## Resumen
+- [Perfil de autor en Hugging Face](https://huggingface.co/caikybaldo999)</think>## Resumen
 
 ZYI-Turbo-1.0 es un modelo de difusión de texto a imagen experimental, de tamaño muy reducido, desarrollado por caiky baldo souza (caikybaldo999). Se trata de un denoiser de difusión con 18,77 millones de parámetros entrenables, diseñado para generar imágenes a una resolución fija de 128×128 píxeles. El modelo se apoya en una arquitectura `UNet2DConditionModel` de Diffusers, junto a un codificador de texto CLIP (`openai/clip-vit-base-patch32`) y un VAE (`stabilityai/sd-vae-ft-mse`), que deben cargarse por separado durante la inferencia.
 
@@ -158,4 +158,4 @@ No hay modelos comparables directamente en la información disponible. El reposi
 - [Modelo en Hugging Face: caikybaldo999/ZYI-Turbo-1.0](https://huggingface.co/caikybaldo999/ZYI-Turbo-1.0)
 - [Repositorio relacionado: caikybaldo999/ZYI](https://huggingface.co/caikybaldo999/ZYI)
 - [Repositorio relacionado: caikybaldo999/ZYI-1.0](https://huggingface.co/caikybaldo999/ZYI-1.0)
-- [Perfil del autor en HuggingFace](https://huggingface.co/caikybaldo999)
+- [Perfil del autor en Hugging Face](https://huggingface.co/caikybaldo999)

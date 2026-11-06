@@ -83,7 +83,7 @@ Los datos de las filas comparativas corresponden a características generales de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AfriSpeech/afrigloss-opus-mt-fr-sn
+- Modelo en Hugging Face: https://huggingface.co/AfriSpeech/afrigloss-opus-mt-fr-sn
 - Dataset de entrenamiento: https://huggingface.co/datasets/AfriSpeech/gloss-mt-train-fr
 - Colección Afri-Gloss-MT: https://huggingface.co/collections/AfriSpeech/afri-gloss-mt-models-6adce3a3c13c6a86f07b6e6d
 - Corpus AfriSpeech: https://huggingface.co/AfriSpeech/africa-corpus

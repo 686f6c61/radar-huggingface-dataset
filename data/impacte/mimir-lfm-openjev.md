@@ -86,10 +86,10 @@ No se han encontrado resultados adicionales de benchmarks en la busqueda web rea
 
 | Modelo | Parametros | Activos | Tipo | Rendimiento NLI | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Mimir (`impacte/mimir-lfm-openjev`) | 8,47B | ~1,5B | Cross-encoder NLI (MoE híbrido) | MNLI-m 0,897; ANLI r3 0,555; WANLI 0,741; SciTail 0,943 | LFM Open License v1.0 | HuggingFace, pesos safetensors con código personalizado |
-| openjev v1 (Qwen3.5-4B) | ~4B | 4B (denso) | Cross-encoder NLI | MNLI-m 0,91; ANLI r3 0,42; WANLI 0,63; ARC-C 0,59; MMLU 0,47 | MIT (según la model card de Mimir, que cita openjev como MIT) | HuggingFace (AlexWortega/openjev) |
-| openjev v2 (Qwen3.5-4B) | ~4B | 4B (denso) | Cross-encoder NLI | MNLI-m 0,91; ANLI r3 0,63; WANLI 0,77; ARC-C 0,72; MMLU 0,53 | no disponible | HuggingFace (AlexWortega/openjev) |
-| LiquidAI/LFM2.5-8B-A1B | ~8,3B | ~1,5B | LLM causal MoE híbrido (modelo base) | no aplicable (no es clasificador NLI) | LFM Open License v1.0 | HuggingFace |
+| Mimir (`impacte/mimir-lfm-openjev`) | 8,47B | ~1,5B | Cross-encoder NLI (MoE híbrido) | MNLI-m 0,897; ANLI r3 0,555; WANLI 0,741; SciTail 0,943 | LFM Open License v1.0 | Hugging Face, pesos safetensors con código personalizado |
+| openjev v1 (Qwen3.5-4B) | ~4B | 4B (denso) | Cross-encoder NLI | MNLI-m 0,91; ANLI r3 0,42; WANLI 0,63; ARC-C 0,59; MMLU 0,47 | MIT (según la model card de Mimir, que cita openjev como MIT) | Hugging Face (AlexWortega/openjev) |
+| openjev v2 (Qwen3.5-4B) | ~4B | 4B (denso) | Cross-encoder NLI | MNLI-m 0,91; ANLI r3 0,63; WANLI 0,77; ARC-C 0,72; MMLU 0,53 | no disponible | Hugging Face (AlexWortega/openjev) |
+| LiquidAI/LFM2.5-8B-A1B | ~8,3B | ~1,5B | LLM causal MoE híbrido (modelo base) | no aplicable (no es clasificador NLI) | LFM Open License v1.0 | Hugging Face |
 
 La comparación directa con rerankers densos tipo BGE o Ettin no está disponible en la informacion proporcionada.
 
@@ -108,7 +108,7 @@ La comparación directa con rerankers densos tipo BGE o Ettin no está disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/impacte/mimir-lfm-openjev
+- Modelo en Hugging Face: https://huggingface.co/impacte/mimir-lfm-openjev
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
 - Receta original openjev: https://huggingface.co/AlexWortega/openjev
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; las consultas devolvieron unicamente contenido SEO sobre viajes de fin de semana sin relacion con el modelo.

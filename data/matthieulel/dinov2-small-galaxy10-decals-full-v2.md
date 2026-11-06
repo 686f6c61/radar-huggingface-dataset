@@ -76,9 +76,9 @@ No se dispone en la información proporcionada de resultados de modelos comparab
 
 | Modelo | Parametros | Tarea | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dinov2-small-galaxy10-decals-full-v2 | 22,06 M | Clasificación de morfología galáctica (10 clases) | Imagen 256x256 px | Apache 2.0 | HuggingFace, 19 descargas |
-| facebook/dinov2-small (base) | ~22 M | Extracción de características visuales auto-supervisadas | Imagen (resolución variable) | Apache 2.0 (según el modelo base) | HuggingFace |
-| Otros backbones de la colección del autor | no disponible | Misma tarea y protocolo | Imagen 256x256 px | no disponible | HuggingFace (colección Vision Foundation Models Benchmark) |
+| dinov2-small-galaxy10-decals-full-v2 | 22,06 M | Clasificación de morfología galáctica (10 clases) | Imagen 256x256 px | Apache 2.0 | Hugging Face, 19 descargas |
+| facebook/dinov2-small (base) | ~22 M | Extracción de características visuales auto-supervisadas | Imagen (resolución variable) | Apache 2.0 (según el modelo base) | Hugging Face |
+| Otros backbones de la colección del autor | no disponible | Misma tarea y protocolo | Imagen 256x256 px | no disponible | Hugging Face (colección Vision Foundation Models Benchmark) |
 
 No se han publicado en la información disponible comparaciones numéricas con alternativas; para ello debe consultarse el dataset de ejecuciones del autor o el artículo en revisión.
 
@@ -96,7 +96,7 @@ No se han publicado en la información disponible comparaciones numéricas con a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/dinov2-small-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/dinov2-small-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/facebook/dinov2-small
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

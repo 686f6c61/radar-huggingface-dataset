@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La princi
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/mradermacher/Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096-i1-GGUF
+- Repositorio de Hugging Face: https://huggingface.co/mradermacher/Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096-i1-GGUF
 - Modelo original (CrucibleLab): https://huggingface.co/CrucibleLab/Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096-GGUF
 - Modelo base intermedio (ReadyArt): https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma-2
 - Página oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/

@@ -6,7 +6,7 @@
 
 El interes tecnico es limitado pero concreto: permite desplegar SDXL-Turbo en entornos donde el formato GGUF es el estandar de facto (por ejemplo, ComfyUI con nodos GGUF o llama.cpp adaptado a difusion), reduciendo el peso del UNet a unos 4,1 GB frente a los aproximadamente 6,9 GB del checkpoint fp16 original. El repositorio ocupa 6,1 GB en total y suma 3.468.837.867 parametros entre todos los componentes (UNet, CLIP-L, CLIP-G y VAE).
 
-La relevancia practica es baja para produccion: cero descargas, cero likes, licencia no declarada en los metadatos de HuggingFace (aunque la model card cita la Stability AI Community License para SDXL-Turbo) y una comprobacion de calidad limitada a la integridad de ficheros, sin test de render ni medicion de perplexity. Debe tratarse como material de referencia, no como un modelo listo para usar.
+La relevancia practica es baja para produccion: cero descargas, cero likes, licencia no declarada en los metadatos de Hugging Face (aunque la model card cita la Stability AI Community License para SDXL-Turbo) y una comprobacion de calidad limitada a la integridad de ficheros, sin test de render ni medicion de perplexity. Debe tratarse como material de referencia, no como un modelo listo para usar.
 
 ## Especificaciones tecnicas
 
@@ -46,7 +46,7 @@ La innovacion del repositorio es puramente de empaquetado: el UNet se ha convert
 - Evaluacion comparativa de cuantizacion: sirve para medir la perdida de calidad de SDXL-Turbo al pasar de fp16 a q8_0 en un entorno controlado.
 - Despliegue en entornos con almacenamiento limitado: los 6,1 GB del repo completo son manejables en discos de portatil, frente a los mas de 10 GB de un pipeline SDXL completo en fp16.
 - Reproducibilidad de experimentos: al fijar las versiones exactas de CLIP-L, CLIP-G y VAE, permite reproducir un pipeline concreto en distintas maquinas.
-- No es adecuado para produccion comercial sin verificar antes la licencia, dado que los metadatos de HuggingFace no la declaran.
+- No es adecuado para produccion comercial sin verificar antes la licencia, dado que los metadatos de Hugging Face no la declaran.
 
 ## Benchmarks y rendimiento
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada en los metadatos de HuggingFace; la model card cita la Stability AI Community License para SDXL-Turbo, que restringe el uso comercial y exige verificar condiciones antes de publicar.
+- Licencia no declarada en los metadatos de Hugging Face; la model card cita la Stability AI Community License para SDXL-Turbo, que restringe el uso comercial y exige verificar condiciones antes de publicar.
 - El autor advierte explicitamente: "verify before public use".
 - No se ha ejecutado ningun test de render ni de calidad de imagen; solo se comprobo la integridad de los ficheros.
 - Es un espejo privado sin documentacion de uso, sin ejemplos y sin soporte.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/maxh8086/tokenfrugal-sdxl-turbo-gguf
+- Repositorio Hugging Face: https://huggingface.co/maxh8086/tokenfrugal-sdxl-turbo-gguf
 - Fuente del UNet GGUF: https://huggingface.co/OlegSkutte/sdxl-turbo-GGUF
 - Fuente de CLIP-G: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Fuente del VAE: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix

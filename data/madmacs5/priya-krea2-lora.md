@@ -69,6 +69,6 @@ No disponible. La información proporcionada no incluye datos comparativos con o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/madmacs5/priya-krea2-lora
+- Modelo en Hugging Face: https://huggingface.co/madmacs5/priya-krea2-lora
 - Ecosistema Krea 2 en Civitai: https://civitai.com/ecosystems/krea2
 - Tag de LoRA en Civitai: https://civitai.com/tag/lora

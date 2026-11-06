@@ -65,7 +65,7 @@ Resultados declarados por el autor en el model-index (no verificados externament
 | dev | 858 | 33,9% | 0,695 | 0,698 | 0,696 | 0,857 | 0,796 |
 | test | 2.146 | 34,7% | 0,712 | 0,694 | 0,703 | 0,867 | 0,801 |
 
-Dataset de evaluacion: `StanfordSCALE/assertions_llm_annotated_talkmoves`, split de test. El model-index en formato HuggingFace reporta para test: F1 0,7029, precision 0,7121, recall 0,694 y ROC-AUC 0,8669 (marcados como `verified: false`). No se han publicado comparaciones con otros modelos sobre este mismo conjunto.
+Dataset de evaluacion: `StanfordSCALE/assertions_llm_annotated_talkmoves`, split de test. El model-index en formato Hugging Face reporta para test: F1 0,7029, precision 0,7121, recall 0,694 y ROC-AUC 0,8669 (marcados como `verified: false`). No se han publicado comparaciones con otros modelos sobre este mismo conjunto.
 
 ## Requisitos de hardware
 
@@ -82,10 +82,10 @@ No se dispone de resultados de benchmarks comparables entre estos modelos sobre 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad | Benchmarks en este dataset |
 |---|---|---|---|---|---|---|
-| StanfordSCALE/assertion_sentence_references_task_procedure_or_logistics | 109.486.464 | No declarada (MPNet, hasta 512 tokens) | Clasificacion binaria de una asercion concreta | No disponible | HuggingFace, via SetFit | F1 0,703 y ROC-AUC 0,867 en test (declarados) |
-| sentence-transformers/paraphrase-mpnet-base-v2 | ~109 M | No declarada (hasta 512 tokens) | Embeddings de frases; requiere entrenar un clasificador aparte | Apache-2.0 (segun su propia model card) | HuggingFace | No disponible |
-| sentence-transformers/all-mpnet-base-v2 | ~109 M | No declarada (hasta 512 tokens) | Embeddings de frases de proposito general | Apache-2.0 (segun su propia model card) | HuggingFace | No disponible |
-| Otros clasificadores de aserciones de StanfordSCALE (familia EduBehaviors) | ~109 M por modelo | No declarada | Clasificacion binaria de otras aserciones de discurso de aula | No disponible | HuggingFace | No disponible en la informacion proporcionada |
+| StanfordSCALE/assertion_sentence_references_task_procedure_or_logistics | 109.486.464 | No declarada (MPNet, hasta 512 tokens) | Clasificacion binaria de una asercion concreta | No disponible | Hugging Face, via SetFit | F1 0,703 y ROC-AUC 0,867 en test (declarados) |
+| sentence-transformers/paraphrase-mpnet-base-v2 | ~109 M | No declarada (hasta 512 tokens) | Embeddings de frases; requiere entrenar un clasificador aparte | Apache-2.0 (segun su propia model card) | Hugging Face | No disponible |
+| sentence-transformers/all-mpnet-base-v2 | ~109 M | No declarada (hasta 512 tokens) | Embeddings de frases de proposito general | Apache-2.0 (segun su propia model card) | Hugging Face | No disponible |
+| Otros clasificadores de aserciones de StanfordSCALE (familia EduBehaviors) | ~109 M por modelo | No declarada | Clasificacion binaria de otras aserciones de discurso de aula | No disponible | Hugging Face | No disponible en la informacion proporcionada |
 
 La ventaja especifica de este modelo frente a un encoder generico es que ya viene ajustado para la asercion concreta y devuelve una probabilidad directamente utilizable; su desventaja es que solo cubre esa asercion y no se puede reutilizar para otras tareas sin reentrenar el cabezal.
 
@@ -105,7 +105,7 @@ La ventaja especifica de este modelo frente a un encoder generico es que ya vien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_references_task_procedure_or_logistics
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_references_task_procedure_or_logistics
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (SumnerLab): https://github.com/SumnerLab/TalkMoves

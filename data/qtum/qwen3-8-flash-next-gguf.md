@@ -91,7 +91,7 @@ No se incluyen otros modelos MoE de tamaño similar (por ejemplo, DeepSeek-V3 o 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qtum/Qwen3.8-Flash-Next-GGUF
+- Repositorio Hugging Face: https://huggingface.co/qtum/Qwen3.8-Flash-Next-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/

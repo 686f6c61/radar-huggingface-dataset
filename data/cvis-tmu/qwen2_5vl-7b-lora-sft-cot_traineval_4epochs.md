@@ -63,7 +63,7 @@ No se dispone de informacion sobre modelos comparables. El autor ha publicado ot
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cvis-tmu/qwen2_5vl-7b-lora-sft-CoT_traineval_4epochs
+- Repositorio Hugging Face: https://huggingface.co/cvis-tmu/qwen2_5vl-7b-lora-sft-CoT_traineval_4epochs
 - Adaptador similar con 2 épocas: https://huggingface.co/cvis-tmu/qwen2_5vl-7b-lora-sft-CoT_traineval_2epochs
 - Adaptador Scene30k fusionado: https://huggingface.co/cvis-tmu/qwen2_5vl-7b-lora-sft-Scene30k_traineval_426steps_merged/tree/main
 - Perfil del autor en Gitea: https://dev.modelhub.org.cn/cvis-tmu

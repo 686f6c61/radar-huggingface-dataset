@@ -6,7 +6,7 @@ Esta ficha describe la version cuantizada a 4 bits de Minerva-7B-instruct-v1.0, 
 
 La relevancia de este artefacto es practica: permite ejecutar un modelo de 7B en hardware modesto, incluidos equipos con CPU Intel, iGPU Intel Arc (via intel-extension-for-pytorch) y NPU Intel AI Boost de la serie Core Ultra (via OpenVINO). El modelo base esta pensado para uso instruct/chat, con plantilla de chat propia, y publica pesos en safetensors. La licencia es Apache 2.0, lo que facilita su integracion en productos, si bien el autor de la cuantizacion declara explicitamente que el artefacto se ha desarrollado solo con fines de investigacion y sin garantia.
 
-El repositorio tiene un tamano de 5,4 GB, cero descargas y cero likes en el momento de la consulta, y fue creado el 10 de octubre de 2026 segun los metadatos de HuggingFace. No se han publicado resultados de benchmarks en la informacion disponible.
+El repositorio tiene un tamano de 5,4 GB, cero descargas y cero likes en el momento de la consulta, y fue creado el 10 de octubre de 2026 segun los metadatos de Hugging Face. No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La bu
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Minerva-7B-instruct-v1.0 INT4 GPTQ-AutoRound, gs64 asim) | 7B nominales | INT4, gs64, asimetrica | no disponible | Apache 2.0 | HuggingFace, safetensors auto_gptq |
-| sapienzanlp/Minerva-7B-instruct-v1.0 (modelo base) | 7B | bfloat16 sin cuantizar | no disponible | Apache 2.0 | HuggingFace, safetensors |
-| Mistral-7B-Instruct-v0.x (referencia de la familia) | 7B | bfloat16 o cuantizaciones de terceros | 8.192 tokens (segun la familia Mistral) | Apache 2.0 | HuggingFace |
+| Este modelo (Minerva-7B-instruct-v1.0 INT4 GPTQ-AutoRound, gs64 asim) | 7B nominales | INT4, gs64, asimetrica | no disponible | Apache 2.0 | Hugging Face, safetensors auto_gptq |
+| sapienzanlp/Minerva-7B-instruct-v1.0 (modelo base) | 7B | bfloat16 sin cuantizar | no disponible | Apache 2.0 | Hugging Face, safetensors |
+| Mistral-7B-Instruct-v0.x (referencia de la familia) | 7B | bfloat16 o cuantizaciones de terceros | 8.192 tokens (segun la familia Mistral) | Apache 2.0 | Hugging Face |
 | Otras cuantizaciones del mismo Minerva (GGUF, AWQ) | 7B | GGUF Q4_K_M, AWQ INT4 | no disponible | Apache 2.0 | no disponible en la informacion consultada |
 
 No se dispone de datos comparativos de rendimiento entre estas opciones en la informacion proporcionada. La comparacion con Mistral-7B-Instruct se ofrece solo como referencia de familia arquitectonica, no como equivalencia funcional ni de calidad.
@@ -87,7 +87,7 @@ No se dispone de datos comparativos de rendimiento entre estas opciones en la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_gptq-int4-gs64-asym
+- Repositorio en Hugging Face: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_gptq-int4-gs64-asym
 - Modelo base: https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0
 - Intel AutoRound (repositorio): https://github.com/intel/auto-round
 - Receta de replicacion auto-round-pipeline: https://git.epicdynamic.com/auto-round-pipeline

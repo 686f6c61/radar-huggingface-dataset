@@ -76,7 +76,7 @@ La comparativa se limita a modelos del mismo autor dentro del ecosistema VAM-Cro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level4-panda-robosuite-widowx-texture-video-lora-iter-400
+- Repositorio Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level4-panda-robosuite-widowx-texture-video-lora-iter-400
 - Backbone requerido: https://huggingface.co/dreamdifferent/widowx250-video-fused
 - Modelo relacionado (World2Action decoder): https://huggingface.co/dreamdifferent/vam-cross-level4-ur5e-widowx-texture-teleopaligned-videolora400-action-decoder-iter900
 - Framework robosuite: https://robosuite.ai/ y https://github.com/ARISE-Initiative/robosuite

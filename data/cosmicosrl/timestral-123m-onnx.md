@@ -73,5 +73,5 @@ No disponible. La información proporcionada no incluye modelos comparables de f
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cosmicosrl/Timestral-123M-ONNX
+- Hugging Face: https://huggingface.co/Cosmicosrl/Timestral-123M-ONNX
 - Modelo base: https://huggingface.co/mistralai/Timestral-123M

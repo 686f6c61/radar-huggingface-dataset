@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `paulkrueger/bart-forecast` es un artefacto de finetuning publicado por el usuario paulkrueger en HuggingFace. Según la model card, se trata de una implementación a escala "huge" de la arquitectura **Swin Transformer (swin t)**, orientada a tareas de **clasificación**. El repositorio incluye únicamente un script `finetune.py`, lo que sugiere que el modelo es el resultado de un proceso de ajuste fino sobre una arquitectura base ya existente, aunque no se especifica el dataset ni la tarea concreta.
+El modelo `paulkrueger/bart-forecast` es un artefacto de finetuning publicado por el usuario paulkrueger en Hugging Face. Según la model card, se trata de una implementación a escala "huge" de la arquitectura **Swin Transformer (swin t)**, orientada a tareas de **clasificación**. El repositorio incluye únicamente un script `finetune.py`, lo que sugiere que el modelo es el resultado de un proceso de ajuste fino sobre una arquitectura base ya existente, aunque no se especifica el dataset ni la tarea concreta.
 
 La relevancia de este modelo es limitada en el ecosistema actual, dado que la información pública es mínima y no se han publicado métricas, pesos finales ni detalles de entrenamiento. Su interés principal radica en la combinación de arquitectura Swin Transformer con técnicas como atención de ventana deslizante y fusión de tensores, pero sin datos adicionales no es posible evaluar su rendimiento ni sus capacidades reales.
 
@@ -55,7 +55,7 @@ Opciones de despliegue no disponibles por falta de artefactos.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar este modelo con alternativas. No se conocen modelos de la misma arquitectura y escala con la misma configuración exacta. Se recomienda consultar modelos Swin Transformer oficiales en HuggingFace (p.ej., `microsoft/swin-tiny-patch4-window7-224`) para comparar arquitecturas, aunque estos no comparten el nombre ni la configuración.
+No se dispone de información suficiente para comparar este modelo con alternativas. No se conocen modelos de la misma arquitectura y escala con la misma configuración exacta. Se recomienda consultar modelos Swin Transformer oficiales en Hugging Face (p.ej., `microsoft/swin-tiny-patch4-window7-224`) para comparar arquitecturas, aunque estos no comparten el nombre ni la configuración.
 
 ## Limitaciones y advertencias
 
@@ -67,6 +67,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/paulkrueger/bart-forecast)
-- [Documentación de Swin Transformer en HuggingFace](https://huggingface.co/docs/transformers/model_doc/swin)
+- [Modelo en Hugging Face](https://huggingface.co/paulkrueger/bart-forecast)
+- [Documentación de Swin Transformer en Hugging Face](https://huggingface.co/docs/transformers/model_doc/swin)
 - [Artículo de BARTNet (contexto de forecasting, no directamente relacionado)](https://ieeexplore.ieee.org/document/11050615)

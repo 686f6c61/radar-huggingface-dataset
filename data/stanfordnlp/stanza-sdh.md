@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stanza-sdh es un paquete de modelos de procesamiento del lenguaje natural publicado por el Stanford NLP Group dentro del ecosistema Stanza, una biblioteca en Python para el analisis linguistico de texto en crudo que abarca desde la tokenizacion hasta el reconocimiento de entidades y el analisis sintactico. Este repositorio concreto proporciona los modelos entrenados para el kurdo meridional (Southern Kurdish, codigo ISO 639-3 `sdh`), una lengua irania hablada principalmente en el oeste de Iran e Irak y con escasa representacion en recursos computacionales. La tarea publicada en HuggingFace es `token-classification`, orientada a etiquetado a nivel de token como el reconocimiento de entidades nombradas (NER).
+Stanza-sdh es un paquete de modelos de procesamiento del lenguaje natural publicado por el Stanford NLP Group dentro del ecosistema Stanza, una biblioteca en Python para el analisis linguistico de texto en crudo que abarca desde la tokenizacion hasta el reconocimiento de entidades y el analisis sintactico. Este repositorio concreto proporciona los modelos entrenados para el kurdo meridional (Southern Kurdish, codigo ISO 639-3 `sdh`), una lengua irania hablada principalmente en el oeste de Iran e Irak y con escasa representacion en recursos computacionales. La tarea publicada en Hugging Face es `token-classification`, orientada a etiquetado a nivel de token como el reconocimiento de entidades nombradas (NER).
 
 El modelo se distribuye bajo licencia Apache 2.0 y esta integrado en la libreria Stanza, por lo que su uso tipico es a traves de la propia API de Stanza o mediante su integracion en spaCy. El repositorio ocupa 0,2 GB, un tamano coherente con los modelos neuronales compactos que Stanza emplea por componente (tokenizador, etiquetador POS, lematizador, parser de dependencias y NER). No se trata de un modelo generativo ni de un modelo de lenguaje de gran escala, sino de un conjunto de clasificadores especializados para anotacion linguistica.
 
@@ -23,7 +23,7 @@ Su relevancia actual radica en que aporta cobertura de PLN a una lengua de bajos
 
 ## Arquitectura y entrenamiento
 
-Stanza es una coleccion de herramientas de analisis linguistico que combina tokenizacion, segmentacion de oraciones, etiquetado de partes de la oracion, lematizacion, analisis de dependencias y reconocimiento de entidades. Los modelos publicados en HuggingFace bajo el prefijo `stanfordnlp/stanza-<idioma>` corresponden a los componentes entrenados para cada lengua concreta y se cargan desde la propia libreria Stanza. En este caso, la tarea declarada es `token-classification`, lo que apunta a un modelo de etiquetado secuencial por token.
+Stanza es una coleccion de herramientas de analisis linguistico que combina tokenizacion, segmentacion de oraciones, etiquetado de partes de la oracion, lematizacion, analisis de dependencias y reconocimiento de entidades. Los modelos publicados en Hugging Face bajo el prefijo `stanfordnlp/stanza-<idioma>` corresponden a los componentes entrenados para cada lengua concreta y se cargan desde la propia libreria Stanza. En este caso, la tarea declarada es `token-classification`, lo que apunta a un modelo de etiquetado secuencial por token.
 
 La model card del autor no especifica la arquitectura interna, el numero de parametros, el volumen de tokens de entrenamiento ni si se aplicaron tecnicas de ajuste como RLHF o DPO. Tampoco se documentan innovaciones tecnicas particulares para esta variante. Toda esa informacion debe considerarse no disponible en la documentacion proporcionada. Lo unico confirmado es que el paquete esta generado de forma automatica con `hugging_stanza.py` dentro del repositorio `stanfordnlp/huggingface-models` y que su ultima actualizacion registrada es del 29 de septiembre de 2026.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Idioma | Tarea | Licencia | Contexto | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|---|
-| stanfordnlp/stanza-sdh | kurdo meridional (`sdh`) | token-classification | Apache 2.0 | no disponible | no disponible | HuggingFace + libreria stanza |
-| stanfordnlp/stanza-en | ingles (`en`) | pipeline completo Stanza | Apache 2.0 | no disponible | disponible en la web de Stanza (no consultada con detalle) | HuggingFace + libreria stanza |
-| Otros modelos Stanza por idioma | 70 lenguas en total segun Stanza | tokenizacion, POS, NER, parsing | Apache 2.0 | no disponible | disponibles en la web de Stanza | HuggingFace + libreria stanza |
+| stanfordnlp/stanza-sdh | kurdo meridional (`sdh`) | token-classification | Apache 2.0 | no disponible | no disponible | Hugging Face + libreria stanza |
+| stanfordnlp/stanza-en | ingles (`en`) | pipeline completo Stanza | Apache 2.0 | no disponible | disponible en la web de Stanza (no consultada con detalle) | Hugging Face + libreria stanza |
+| Otros modelos Stanza por idioma | 70 lenguas en total segun Stanza | tokenizacion, POS, NER, parsing | Apache 2.0 | no disponible | disponibles en la web de Stanza | Hugging Face + libreria stanza |
 
 No se dispone de datos de rendimiento del paquete `sdh` que permitan una comparacion cuantitativa con alternativas especificas para kurdo meridional. La comparacion mas directa es con el resto de paquetes de idioma de Stanza, que comparten marco, licencia y formato de distribucion.
 
@@ -82,11 +82,11 @@ No se dispone de datos de rendimiento del paquete `sdh` que permitan una compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stanfordnlp/stanza-sdh
+- Modelo en Hugging Face: https://huggingface.co/stanfordnlp/stanza-sdh
 - Repositorio GitHub de Stanza: https://github.com/stanfordnlp/stanza
 - Pagina de modelos de Stanza: https://stanfordnlp.github.io/stanza/models.html
 - Descarga de modelos: https://stanfordnlp.github.io/stanza/download_models.html
 - Sitio web de Stanza: https://stanfordnlp.github.io/stanza
 - Sitio institucional de Stanza: https://stanza.stanford.edu/
-- Repositorio de generacion de modelos en HuggingFace: https://github.com/stanfordnlp/huggingface-models
+- Repositorio de generacion de modelos en Hugging Face: https://github.com/stanfordnlp/huggingface-models
 - Ejemplo de otro paquete de idioma: https://huggingface.co/stanfordnlp/stanza-en

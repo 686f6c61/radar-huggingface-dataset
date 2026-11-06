@@ -81,7 +81,7 @@ No se han podido comparar los parámetros, el contexto ni el rendimiento porque 
 
 ## Limitaciones y advertencias
 
-- El modelo es experimental, con 0 descargas y 0 likes en HuggingFace, y no está validado para ningún uso práctico.
+- El modelo es experimental, con 0 descargas y 0 likes en Hugging Face, y no está validado para ningún uso práctico.
 - No se han realizado evaluaciones de seguridad, alucinación ni sesgos, por lo que puede producir contenido incorrecto o inapropiado.
 - La ventana de contexto de 2048 tokens es corta para muchas tareas actuales.
 - El vocabulario de la fase posterior se reduce a 256 tokens, lo que limita gravemente la capacidad de generar texto natural en esa configuración.
@@ -90,7 +90,7 @@ No se han podido comparar los parámetros, el contexto ni el rendimiento porque 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfinit_adamwppt_500M_s2_2026-09-06_17-59-26_726328-pt
+- Modelo en Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfinit_adamwppt_500M_s2_2026-09-06_17-59-26_726328-pt
 - Repositorio de entrenamiento nanochat: https://github.com/karpathy/nanochat
 - Ejecución en Weights & Biases: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/3dzq98e3
 - Checkpoint comparable 1: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_500M_s2_2026-08-14_19-33-37_314543-pt

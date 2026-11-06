@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-43-v2 es un ajuste fino (fine-tune) del modelo Qwen3-4B-Instruct-2507, desarrollado por el usuario Ali-Mhrez y publicado en HuggingFace. Se trata de un modelo derivado de la familia Qwen3, orientado a instrucciones, que ha sido entrenado mediante Supervised Fine-Tuning (SFT) usando el framework TRL sobre la implementacion optimizada de Unsloth. El nombre del repositorio sugiere una especializacion en "UnifiedFC" con una ventana de 4096 tokens y una version "43-v2", aunque la model card no documenta explicitamente el dataset ni el objetivo concreto del ajuste.
+Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-43-v2 es un ajuste fino (fine-tune) del modelo Qwen3-4B-Instruct-2507, desarrollado por el usuario Ali-Mhrez y publicado en Hugging Face. Se trata de un modelo derivado de la familia Qwen3, orientado a instrucciones, que ha sido entrenado mediante Supervised Fine-Tuning (SFT) usando el framework TRL sobre la implementacion optimizada de Unsloth. El nombre del repositorio sugiere una especializacion en "UnifiedFC" con una ventana de 4096 tokens y una version "43-v2", aunque la model card no documenta explicitamente el dataset ni el objetivo concreto del ajuste.
 
 El modelo hereda la arquitectura transformer de Qwen3-4B-Instruct-2507, con aproximadamente 4.000 millones de parametros, y esta pensado para tareas de generacion de texto, razonamiento e instrucciones generales. Al ser un fine-tune de un modelo base reciente de Alibaba, conserva las capacidades del original, pero anade una capa de especializacion cuyo alcance exacto no esta documentado en la informacion disponible.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-43-v2 | ~4.000 M | 4096 (segun nombre) | no disponible | HuggingFace (fine-tune comunitario) |
-| Qwen3-4B-Instruct-2507 (original) | ~4.000 M | no disponible en esta ficha | no disponible | HuggingFace (Alibaba) |
-| unsloth/Qwen3-4B-Instruct-2507 | ~4.000 M | no disponible en esta ficha | no disponible | HuggingFace (version optimizada) |
-| Otros fine-tunes comunitarios de Qwen3-4B | ~4.000 M | variable | variable | HuggingFace |
+| Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-43-v2 | ~4.000 M | 4096 (segun nombre) | no disponible | Hugging Face (fine-tune comunitario) |
+| Qwen3-4B-Instruct-2507 (original) | ~4.000 M | no disponible en esta ficha | no disponible | Hugging Face (Alibaba) |
+| unsloth/Qwen3-4B-Instruct-2507 | ~4.000 M | no disponible en esta ficha | no disponible | Hugging Face (version optimizada) |
+| Otros fine-tunes comunitarios de Qwen3-4B | ~4.000 M | variable | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este checkpoint frente a alternativas; la comparacion se limita a parametros y disponibilidad.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo para este checkpoint frente a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-43-v2
+- Modelo en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-43-v2
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Repositorio TRL: https://github.com/huggingface/trl
 - Repositorio Unsloth: https://github.com/unslothai/unsloth

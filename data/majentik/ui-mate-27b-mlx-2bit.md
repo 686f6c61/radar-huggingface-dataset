@@ -80,7 +80,7 @@ No hay datos de rendimiento comparativo entre estos modelos en tareas de automat
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/majentik/UI-Mate-27B-MLX-2bit
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/majentik/UI-Mate-27B-MLX-2bit
 - Modelo base original: https://huggingface.co/tencent/UI-Mate-27B
 - Perfil del autor de la cuantización: https://huggingface.co/majentik
 - Artículo sobre el lanzamiento de UI-Mate-27B: https://korshunov.ai/en/article/19272-tencent-releases-open-weight-ui-mate-27b-gui-agent/

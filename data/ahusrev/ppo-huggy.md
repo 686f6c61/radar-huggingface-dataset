@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`ahusrev/ppo-Huggy` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno Huggy, un escenario de Unity ML-Agents en el que un perro virtual debe aprender a recoger un palo. No es un modelo de lenguaje ni un transformer generativo: es una política neuronal entrenada para controlar un agente dentro de una simulación Unity, empaquetada en formato `.nn`/`.onnx` para su ejecución con la librería `ml-agents`. Lo publica el usuario ahusrev en HuggingFace con fecha de creación de noviembre de 2026.
+`ahusrev/ppo-Huggy` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno Huggy, un escenario de Unity ML-Agents en el que un perro virtual debe aprender a recoger un palo. No es un modelo de lenguaje ni un transformer generativo: es una política neuronal entrenada para controlar un agente dentro de una simulación Unity, empaquetada en formato `.nn`/`.onnx` para su ejecución con la librería `ml-agents`. Lo publica el usuario ahusrev en Hugging Face con fecha de creación de noviembre de 2026.
 
-El interés del artefacto es fundamentalmente didáctico y de demostración: sirve como ejemplo reproducible de un pipeline completo de RL (entrenamiento, exportación a ONNX y visualización del agente jugando directamente en el navegador mediante el visor de HuggingFace). No aporta innovaciones arquitectónicas ni datos de rendimiento publicados, y su relevancia práctica fuera del ámbito de ML-Agents es muy limitada.
+El interés del artefacto es fundamentalmente didáctico y de demostración: sirve como ejemplo reproducible de un pipeline completo de RL (entrenamiento, exportación a ONNX y visualización del agente jugando directamente en el navegador mediante el visor de Hugging Face). No aporta innovaciones arquitectónicas ni datos de rendimiento publicados, y su relevancia práctica fuera del ámbito de ML-Agents es muy limitada.
 
-La model card es la plantilla estándar que genera automáticamente la integración de ML-Agents con HuggingFace, sin información específica sobre hiperparámetros, número de pasos de entrenamiento, recompensa alcanzada ni configuración del entrenamiento. Cualquier evaluación cuantitativa del agente requiere ejecutarlo en el entorno Huggy.
+La model card es la plantilla estándar que genera automáticamente la integración de ML-Agents con Hugging Face, sin información específica sobre hiperparámetros, número de pasos de entrenamiento, recompensa alcanzada ni configuración del entrenamiento. Cualquier evaluación cuantitativa del agente requiere ejecutarlo en el entorno Huggy.
 
 ## Especificaciones tecnicas
 
@@ -37,7 +37,7 @@ No se dispone de información sobre el número de pasos de entrenamiento, la com
 - Control de un agente virtual en el entorno Huggy de Unity ML-Agents (locomoción y manipulación del palo).
 - Ejecución de la política entrenada en formato `.nn` dentro del motor Unity o en formato `.onnx` para inferencia externa.
 - Reanudación del entrenamiento mediante `mlagents-learn ... --resume` con la configuración YAML correspondiente.
-- Visualización del agente jugando en el navegador a través del visor de HuggingFace (`https://huggingface.co/unity`).
+- Visualización del agente jugando en el navegador a través del visor de Hugging Face (`https://huggingface.co/unity`).
 - No soporta tool calling, function calling, razonamiento multi-paso, generación de texto, visión, audio ni capacidades multilingües.
 - No es un modelo de propósito general: su única capacidad es la política específica aprendida para este entorno.
 
@@ -45,9 +45,9 @@ No se dispone de información sobre el número de pasos de entrenamiento, la com
 
 - Docencia de aprendizaje por refuerzo: sirve como ejemplo ejecutable del flujo completo de ML-Agents (entrenar, exportar, publicar y visualizar) en cursos introductorios de RL.
 - Reproducción de experimentos: permite reanudar el entrenamiento con `--resume` para comparar curvas de aprendizaje frente a otras ejecuciones PPO sobre el mismo entorno.
-- Prueba de pipelines de exportación a ONNX: útil para validar la integración entre ML-Agents y el visor de HuggingFace antes de publicar agentes propios.
+- Prueba de pipelines de exportación a ONNX: útil para validar la integración entre ML-Agents y el visor de Hugging Face antes de publicar agentes propios.
 - Benchmarking de infraestructura de RL: como entorno de juguete ligero, sirve para medir throughput de entrenamiento o latencia de inferencia en distintas máquinas sin la carga de entornos complejos.
-- Demostraciones interactivas en web: el agente puede incrustarse en el visor de HuggingFace para mostrar RL en vivo a audiencias no técnicas.
+- Demostraciones interactivas en web: el agente puede incrustarse en el visor de Hugging Face para mostrar RL en vivo a audiencias no técnicas.
 - Base para experimentos de comparación de algoritmos: punto de partida para entrenar variantes (SAC, A2C) sobre Huggy y contrastar la política PPO publicada.
 - No es adecuado para aplicaciones de producción, procesamiento de lenguaje, visión artificial ni control de sistemas reales.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: no disponible; el repositorio ocupa 0,2 GB e incluye pesos `.nn`/`.onnx` de una red pequeña típica de ML-Agents, por lo que la inferencia cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: no se especifican; para inferencia basta una GPU integrada o incluso CPU, dado el tamaño reducido de la política.
 - Cabe en GPU consumer: sí, con toda probabilidad, en cualquier tarjeta con al menos unos cientos de MB de memoria libre (la cifra exacta no está publicada).
-- Opciones de despliegue: Unity con el paquete `ml-agents`, `mlagents-learn` para reanudar entrenamiento, runtime ONNX (ONNX Runtime, Unity Barracuda/Sentis) para inferencia, y el visor web de HuggingFace.
+- Opciones de despliegue: Unity con el paquete `ml-agents`, `mlagents-learn` para reanudar entrenamiento, runtime ONNX (ONNX Runtime, Unity Barracuda/Sentis) para inferencia, y el visor web de Hugging Face.
 - Latencia y throughput: no disponibles; dependen del hardware y del motor de inferencia elegido.
 
 ## Comparativa con modelos similares
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Entorno | Algoritmo | Formato | Licencia | Contexto / parametros |
 |---|---|---|---|---|---|
 | ahusrev/ppo-Huggy | Huggy (ML-Agents) | PPO | `.nn`, `.onnx` | no disponible | no disponible |
-| Agentes oficiales de Unity en HuggingFace (`unity/`) | Varios entornos ML-Agents | PPO y otros | `.nn`, `.onnx` | según cada repo | no disponible |
-| Políticas de referencia del curso Deep RL de HuggingFace | Huggy y otros | PPO | `.nn`, `.onnx` | según cada repo | no disponible |
+| Agentes oficiales de Unity en Hugging Face (`unity/`) | Varios entornos ML-Agents | PPO y otros | `.nn`, `.onnx` | según cada repo | no disponible |
+| Políticas de referencia del curso Deep RL de Hugging Face | Huggy y otros | PPO | `.nn`, `.onnx` | según cada repo | no disponible |
 
 No se dispone de datos cuantitativos (recompensa, tasa de éxito, pasos de entrenamiento) para establecer una comparación numérica con alternativas. La comparación solo puede hacerse a nivel de formato, algoritmo y entorno.
 
@@ -82,14 +82,14 @@ No se dispone de datos cuantitativos (recompensa, tasa de éxito, pasos de entre
 - Riesgo de sobreajuste y de políticas frágiles ante pequeñas variaciones del entorno (ruido, cambios de física, inicializaciones distintas).
 - Sin datos de sesgos: al ser un agente de control en un simulador, no aplican sesgos sociales, pero tampoco hay evaluación de robustez.
 - Cero descargas y cero likes en el momento de la consulta: no hay evidencia de validación por parte de la comunidad.
-- El visor de HuggingFace requiere que el entorno esté entre los oficiales de ML-Agents; Huggy lo está, pero la experiencia depende de la disponibilidad del visor.
+- El visor de Hugging Face requiere que el entorno esté entre los oficiales de ML-Agents; Huggy lo está, pero la experiencia depende de la disponibilidad del visor.
 - Fecha de creación posterior a la fecha actual del análisis: conviene verificar la integridad y procedencia del repositorio antes de usarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahusrev/ppo-Huggy
+- Modelo en Hugging Face: https://huggingface.co/ahusrev/ppo-Huggy
 - Documentación de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Tutorial corto (Huggy en el navegador): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo de ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
 - Repositorio de ML-Agents: https://github.com/Unity-Technologies/ml-agents
-- Visor de agentes de Unity en HuggingFace: https://huggingface.co/unity
+- Visor de agentes de Unity en Hugging Face: https://huggingface.co/unity

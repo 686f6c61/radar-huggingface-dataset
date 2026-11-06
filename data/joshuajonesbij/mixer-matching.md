@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `joshuajonesbij/mixer-matching` es una implementación experimental de una arquitectura **Mixer** orientada a tareas de *matching* (emparejamiento o correspondencia entre entradas). Lo publica el usuario `joshuajonesbij` en HuggingFace como un punto de partida reproducible, no como un modelo entrenado y listo para producción. El repositorio incluye un checkpoint de inicialización válido (`model.safetensors`) de tan solo 33.088 parámetros, junto con un script Python (`predict.py`), un `config.json` con la configuración de arquitectura y un `training_args.json` con la receta de entrenamiento por defecto.
+El modelo `joshuajonesbij/mixer-matching` es una implementación experimental de una arquitectura **Mixer** orientada a tareas de *matching* (emparejamiento o correspondencia entre entradas). Lo publica el usuario `joshuajonesbij` en Hugging Face como un punto de partida reproducible, no como un modelo entrenado y listo para producción. El repositorio incluye un checkpoint de inicialización válido (`model.safetensors`) de tan solo 33.088 parámetros, junto con un script Python (`predict.py`), un `config.json` con la configuración de arquitectura y un `training_args.json` con la receta de entrenamiento por defecto.
 
 La relevancia de este modelo reside en su carácter didáctico y de investigación: documenta una arquitectura Mixer con atención multi-query, fusión por co-atención, activación *swish* y normalización *InstanceNorm*, todo en una escala *nano* que permite ejecutar pruebas de humo en cualquier hardware. No se reclama ningún resultado de benchmark ni se presenta como un modelo con capacidades demostradas. Es, en esencia, un andamiaje para que otros desarrolladores experimenten con esta arquitectura en problemas de matching.
 
@@ -68,11 +68,11 @@ No se dispone de modelos comparables en la misma categoría (Mixer nano para mat
 - **Riesgo de alucinación**: al no estar entrenado, no genera texto coherente; cualquier salida del script de ejemplo es un artefacto de inicialización, no una respuesta válida.
 - **Limitaciones de contexto e idioma**: no se especifican, y al no haber entrenamiento no aplican.
 - **Restricciones de licencia**: la licencia MIT permite uso comercial, pero la model card advierte que deben revisarse los términos de los datos fuente si se usa con datasets externos.
-- **Carga automática**: las APIs genéricas de HuggingFace no pueden cargar este modelo sin un adaptador explícito, lo que limita su integración directa en pipelines estándar.
+- **Carga automática**: las APIs genéricas de Hugging Face no pueden cargar este modelo sin un adaptador explícito, lo que limita su integración directa en pipelines estándar.
 - **Caveat para producción**: no apto para ningún caso de uso real. Debe considerarse exclusivamente como material experimental.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/joshuajonesbij/mixer-matching
+- Repositorio en Hugging Face: https://huggingface.co/joshuajonesbij/mixer-matching
 - Repositorio similar de otro autor: https://huggingface.co/ccostaalessandro/mixer-matching
 - Sitio web "Mixer AI" (no relacionado directamente, pero aparece en búsquedas): https://mixerai.org/

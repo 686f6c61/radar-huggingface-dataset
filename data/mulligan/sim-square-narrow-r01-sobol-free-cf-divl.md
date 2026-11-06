@@ -109,13 +109,13 @@ Comparativas con alternativas externas: no disponible. La información proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r01-sobol-free-cf-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r01-sobol-free-cf-divl
 - Modelo padre (actor congelado): https://huggingface.co/mulligan/sim-square-narrow-r01-sobol-free-cf-idql
 - Dataset de teleoperación: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-sobol
 - Dataset de DAgger: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-dagger-sobol-free-cf
 - Dataset de rollouts de política: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-sobol-policy-rollouts
 - Dataset de evaluación: https://huggingface.co/datasets/mulligan/sim-square-narrow-r00-r03-eval
-- Organización Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organización Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Sitio del proyecto Mulligan: https://mulligan.page
 - Arena de evaluación de políticas: https://arena.mulligan.page
 - Ficha del dataset de rollouts en claru.ai: https://claru.ai/datasets/mulligan-sim-square-narrow-c01-sobol-policy-rollouts

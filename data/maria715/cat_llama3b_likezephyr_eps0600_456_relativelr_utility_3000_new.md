@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAT_llama3b_likeZephyr_eps0600_456_relativelr_utility_3000_NEW es un adaptador LoRA publicado en HuggingFace por el usuario maria715. Segun la propia model card, se trata de un artefacto derivado de experimentos de tesis de master sobre entrenamiento adversarial orientado a mejorar la robustez de modelos de lenguaje. El repositorio ocupa 1,2 GB, esta etiquetado con las librerias peft y safetensors, y no incluye pipeline, licencia ni idiomas declarados.
+CAT_llama3b_likeZephyr_eps0600_456_relativelr_utility_3000_NEW es un adaptador LoRA publicado en Hugging Face por el usuario maria715. Segun la propia model card, se trata de un artefacto derivado de experimentos de tesis de master sobre entrenamiento adversarial orientado a mejorar la robustez de modelos de lenguaje. El repositorio ocupa 1,2 GB, esta etiquetado con las librerias peft y safetensors, y no incluye pipeline, licencia ni idiomas declarados.
 
 El nombre del repositorio sugiere que el adaptador se entrena sobre un modelo base de la familia Llama de aproximadamente 3.000 millones de parametros ("llama3b") siguiendo una receta de ajuste estilo Zephyr ("likeZephyr"), con un presupuesto de perturbacion adversarial de 0,600 ("eps0600") y un regimen de learning rate relativo. Estos valores son una interpretacion de la nomenclatura, no una especificacion confirmada por el autor en la documentacion disponible.
 
@@ -44,7 +44,7 @@ En cuanto al entrenamiento, la unica informacion disponible es que proviene de e
 - Red-teaming y pruebas de seguridad: puede emplearse en ejercicios internos para comprobar como se comporta un modelo pequeno entrenado explicitamente contra ataques, en contraste con un modelo estandar.
 - Estudio de recetas LoRA: al ser un adaptador de bajo rango sobre un modelo de 3B, es util como caso practico para analizar el impacto del rango, del learning rate relativo y del peso de utilidad en el resultado final.
 - Base para experimentos de alineacion: un equipo de investigacion puede partir de este adaptador para probar variantes de entrenamiento adversarial con distintos valores de epsilon sobre el mismo modelo base.
-- Docencia en cursos de seguridad de IA: el repositorio ilustra de forma compacta como se publica un artefacto de investigacion en HuggingFace, con sus carencias habituales de documentacion y evaluacion.
+- Docencia en cursos de seguridad de IA: el repositorio ilustra de forma compacta como se publica un artefacto de investigacion en Hugging Face, con sus carencias habituales de documentacion y evaluacion.
 - Prototipado en hardware limitado: si el modelo base es de 3B y el adaptador se aplica sobre una cuantizacion de 4 bits, el conjunto puede ejecutarse en una GPU de consumo para pruebas cualitativas, aunque sin garantias de calidad.
 
 ## Benchmarks y rendimiento
@@ -78,5 +78,5 @@ No disponible. La model card no identifica modelos comparables ni publica metric
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0600_456_relativelr_utility_3000_NEW
+- Hugging Face: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0600_456_relativelr_utility_3000_NEW
 - Paper, blog, repositorio o demo asociados: no disponibles en la informacion proporcionada.

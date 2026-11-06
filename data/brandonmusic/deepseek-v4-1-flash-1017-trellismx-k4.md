@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 (oficial) | No disponible en la información (los expertos enrutados suman 543,6 B según la card del derivado) | No disponible | Pesos originales, tablas Engram en FP8, resto sin cuantizar | MIT | HuggingFace, revisión `1bae0e10` |
-| DeepSeek-V4.1-Flash-1017-TrellisMX-K4 (este modelo) | 212.828.744.914 según safetensors | No disponible | 4 bits TrellisMX K4 en expertos (W4A8), Engram FP8 en RAM | MIT | HuggingFace, imagen Docker del autor |
+| DeepSeek-V4.1-Flash-1017 (oficial) | No disponible en la información (los expertos enrutados suman 543,6 B según la card del derivado) | No disponible | Pesos originales, tablas Engram en FP8, resto sin cuantizar | MIT | Hugging Face, revisión `1bae0e10` |
+| DeepSeek-V4.1-Flash-1017-TrellisMX-K4 (este modelo) | 212.828.744.914 según safetensors | No disponible | 4 bits TrellisMX K4 en expertos (W4A8), Engram FP8 en RAM | MIT | Hugging Face, imagen Docker del autor |
 | Otras cuantizaciones 4-bit (GPTQ, AWQ, GGUF) del mismo modelo base | No disponible | No disponible | No disponible | No disponible | No se han encontrado en la información proporcionada |
 
 La comparación relevante es contra el checkpoint oficial: este build reduce el espacio de los expertos a 274,6 GB con 4,04 bits por peso y permite servirlo en 4× 96 GB, a cambio de una divergencia KL media de 0,0498 nats en secuencias de 2.048 tokens y un acuerdo top-1 del 93,35 %. No se dispone de datos de otras alternativas comparables.
@@ -102,7 +102,7 @@ La comparación relevante es contra el checkpoint oficial: este build reduce el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/brandonmusic/DeepSeek-V4.1-Flash-1017-TrellisMX-K4
+- Hugging Face: https://huggingface.co/brandonmusic/DeepSeek-V4.1-Flash-1017-TrellisMX-K4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Dataset de logits del profesor: https://huggingface.co/datasets/brandonmusic/DeepSeek-V4.1-Flash-1017-Teacher-Logits (revisión `68379d81e1d7c4fd7569b8499adc3ff7c7179362`)
 - Imagen de serving: `verdictai/deepseek-v41-flash-trellismx:k4-fp8-tp4-20261019` (Docker Hub, referencia textual de la model card)

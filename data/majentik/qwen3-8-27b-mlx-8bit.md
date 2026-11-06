@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/majentik/Qwen3.8-27B-MLX-8bit
+- Repositorio Hugging Face: https://huggingface.co/majentik/Qwen3.8-27B-MLX-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Librería mlx-lm: https://github.com/ml-explore/mlx-lm
 - Otras versiones cuantizadas del mismo autor: https://huggingface.co/majentik (perfil)

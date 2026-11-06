@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `nm-testing/fp8_dynamic_per_token-e2e` es un artefacto de prueba publicado por el usuario `nm-testing` en HuggingFace, orientado a validar flujos de compresión y cuantización. Se trata de un modelo basado en arquitectura Llama con 1.100.048.384 parámetros (aproximadamente 1,1 mil millones), que ha sido comprimido utilizando cuantización FP8 dinámica por token, una técnica que reduce el peso de los tensores a 8 bits en tiempo de ejecución para optimizar memoria y latencia sin necesidad de recalibración estática.
+El modelo `nm-testing/fp8_dynamic_per_token-e2e` es un artefacto de prueba publicado por el usuario `nm-testing` en Hugging Face, orientado a validar flujos de compresión y cuantización. Se trata de un modelo basado en arquitectura Llama con 1.100.048.384 parámetros (aproximadamente 1,1 mil millones), que ha sido comprimido utilizando cuantización FP8 dinámica por token, una técnica que reduce el peso de los tensores a 8 bits en tiempo de ejecución para optimizar memoria y latencia sin necesidad de recalibración estática.
 
 El repositorio, con un tamaño de 2,5 GB, contiene pesos en formato `safetensors` y está etiquetado con `compressed-tensors`, lo que indica que se ha generado mediante la librería `compressed-tensors` de Neural Magic. Aunque su propósito declarado es de evaluación y pruebas (nombre `nm-testing`), su existencia es relevante para desarrolladores interesados en técnicas de cuantización FP8 aplicadas a modelos de tipo Llama, especialmente en entornos de despliegue con recursos limitados.
 
-Sin embargo, la información pública es muy limitada: no se especifica licencia, idiomas soportados, ni se han publicado resultados de benchmarks. Por tanto, esta ficha se basa únicamente en los metadatos disponibles en HuggingFace y en inferencias razonables a partir del tamaño y las etiquetas, marcando explícitamente cualquier dato no confirmado.
+Sin embargo, la información pública es muy limitada: no se especifica licencia, idiomas soportados, ni se han publicado resultados de benchmarks. Por tanto, esta ficha se basa únicamente en los metadatos disponibles en Hugging Face y en inferencias razonables a partir del tamaño y las etiquetas, marcando explícitamente cualquier dato no confirmado.
 
 ## Especificaciones tecnicas
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada para inferencia: con 1,1B parámetros en FP8 (1 byte por parámetro), el peso del modelo ocupa aproximadamente 1,1 GB. Añadiendo overhead de activaciones y KV cache, se estima un consumo de 2-4 GB de VRAM en inferencia con precisión FP16 (si se descomprime) o menos si se mantiene FP8.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en FP8. Ejemplos: NVIDIA GTX 1650 (4 GB), RTX 3050 (8 GB), RTX 4060 (8 GB), o superiores.
 - En consumer GPU: sí, cabe en GPUs de gama de entrada y media.
-- Opciones de despliegue: al estar en formato `safetensors`, puede cargarse con HuggingFace Transformers, o convertirse a GGUF para usar con llama.cpp u Ollama. También es compatible con vLLM si se configura la cuantización FP8.
+- Opciones de despliegue: al estar en formato `safetensors`, puede cargarse con Hugging Face Transformers, o convertirse a GGUF para usar con llama.cpp u Ollama. También es compatible con vLLM si se configura la cuantización FP8.
 - Latencia y throughput: no se conocen datos medidos. En una GPU moderna (RTX 4090), un modelo de 1,1B en FP8 podría generar decenas de tokens por segundo, pero esto es una estimación no verificada.
 
 ## Comparativa con modelos similares
@@ -67,9 +67,9 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nm-testing/fp8_dynamic_per_token-e2e | 1,1B | no disponible | no disponible | HuggingFace |
-| Llama-3.2-1B | 1,2B | 128K | Llama 3.2 Community License | HuggingFace |
-| Qwen2.5-1.5B | 1,5B | 32K | Apache 2.0 | HuggingFace |
+| nm-testing/fp8_dynamic_per_token-e2e | 1,1B | no disponible | no disponible | Hugging Face |
+| Llama-3.2-1B | 1,2B | 128K | Llama 3.2 Community License | Hugging Face |
+| Qwen2.5-1.5B | 1,5B | 32K | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -82,6 +82,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nm-testing/fp8_dynamic_per_token-e2e
+- Hugging Face: https://huggingface.co/nm-testing/fp8_dynamic_per_token-e2e
 - Librería compressed-tensors (referencia): https://github.com/neuralmagic/compressed-tensors
 - Documentación de Neural Magic sobre FP8: https://neuralmagic.com/blog/ (no se ha verificado un enlace específico)

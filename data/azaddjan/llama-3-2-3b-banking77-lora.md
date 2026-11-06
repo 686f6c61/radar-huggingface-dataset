@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-3B-banking77-lora es un adaptador LoRA publicado en HuggingFace por el usuario AzadDjan, entrenado mediante PEFT sobre el modelo base meta-llama/Llama-3.2-3B. El adaptador está especializado en una única tarea: la clasificación de intenciones de clientes bancarios en 77 categorías cerradas, usando como conjunto de datos PolyAI/banking77. No es un modelo conversacional de propósito general, sino un clasificador de intenciones construido sobre un transformer decoder-only de 3 000 millones de parámetros.
+Llama-3.2-3B-banking77-lora es un adaptador LoRA publicado en Hugging Face por el usuario AzadDjan, entrenado mediante PEFT sobre el modelo base meta-llama/Llama-3.2-3B. El adaptador está especializado en una única tarea: la clasificación de intenciones de clientes bancarios en 77 categorías cerradas, usando como conjunto de datos PolyAI/banking77. No es un modelo conversacional de propósito general, sino un clasificador de intenciones construido sobre un transformer decoder-only de 3 000 millones de parámetros.
 
 El problema que resuelve es el enrutamiento automático de consultas bancarias: dada una frase de un cliente (por ejemplo, una reclamación sobre una comisión o una consulta sobre el estado de una transferencia), el modelo asigna una de las 77 intenciones predefinidas del dataset banking77. El autor declara una accuracy de 0,9371 y un F1 de 0,9389 en el conjunto de evaluación, y una accuracy de 0,9390 con F1 macro de 0,9392 sobre el split de test.
 
@@ -49,7 +49,7 @@ Las versiones de framework empleadas son PEFT 0.21.0, Transformers 5.17.0, PyTor
 - Etiquetado y triaje de correo entrante en banca online: clasificacion automatica de correos de clientes para separar consultas operativas de reclamaciones formales, con derivacion a los equipos de cumplimiento cuando corresponda.
 - Investigacion sobre ajuste fino de LLMs en tareas de clasificacion: sirve como punto de comparacion entre adaptadores LoRA sobre un decoder de 3B y clasificadores encoder clasicos (BERT, DeBERTa) en un benchmark estandar como banking77.
 - Analitica de producto sobre logs de conversacion: etiquetado retroactivo de historicos de chat para construir dashboards de intenciones y detectar temas emergentes.
-- Componente docente o de prototipado: ejemplo reproducible de entrenamiento LoRA con PEFT, Transformers y el Trainer de HuggingFace sobre un dataset publico de 77 clases.
+- Componente docente o de prototipado: ejemplo reproducible de entrenamiento LoRA con PEFT, Transformers y el Trainer de Hugging Face sobre un dataset publico de 77 clases.
 
 ## Benchmarks y rendimiento
 
@@ -113,7 +113,7 @@ Diferencias estructurales relevantes: los encoders clasicos ocupan entre 15 y 30
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AzadDjan/Llama-3.2-3B-banking77-lora
+- Modelo en Hugging Face: https://huggingface.co/AzadDjan/Llama-3.2-3B-banking77-lora
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/PolyAI/banking77
 

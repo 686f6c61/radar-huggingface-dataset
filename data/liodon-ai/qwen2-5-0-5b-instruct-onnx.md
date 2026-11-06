@@ -63,7 +63,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo ONNX](https://huggingface.co/liodon-ai/Qwen2.5-0.5B-Instruct-ONNX)
+- [Repositorio Hugging Face del modelo ONNX](https://huggingface.co/liodon-ai/Qwen2.5-0.5B-Instruct-ONNX)
 - [Modelo original Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
 - [Documentación de Qwen2.5 en ModelScope](https://www.modelscope.cn/models/qwen/Qwen2.5-0.5B-Instruct)
 - [Página de Qwen2.5 en Ollama](https://ollama.com/library/qwen2.5:0.5b-instruct)

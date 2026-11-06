@@ -100,7 +100,7 @@ Comparación con alternativas externas de la misma categoría (por ejemplo, el p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IAMIbrahim/luthor-8b-mlx-6bit
+- Modelo en Hugging Face: https://huggingface.co/IAMIbrahim/luthor-8b-mlx-6bit
 - Modelo base: https://huggingface.co/IAMIbrahim/luthor-8b
 - Build de 8 bits: https://huggingface.co/IAMIbrahim/luthor-8b-mlx-8bit
 - Build de 4 bits: https://huggingface.co/IAMIbrahim/luthor-8b-mlx-4bit

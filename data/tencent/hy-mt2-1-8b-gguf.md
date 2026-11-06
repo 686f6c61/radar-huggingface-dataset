@@ -6,7 +6,7 @@ Hy-MT2-1.8B es un modelo de traducción automática multilingüe desarrollado po
 
 Esta variante GGUF está optimizada para ejecución con llama.cpp y permite cuantizaciones extremas mediante la tecnología AngelSlim de Tencent, que reduce el almacenamiento del modelo de 1.8B a solo 440 MB y mejora la velocidad de inferencia en 1,5 veces. Según la model card, el modelo 1.8B supera en rendimiento global a APIs comerciales mainstream de Microsoft y Doubao, mientras que los modelos de 7B y 30B-A3B superan a alternativas open-source como DeepSeek-V4-Pro y Kimi K2.6 en modo fast-thinking. El modelo se publica bajo licencia Apache-2.0, lo que facilita su uso comercial y su integración en productos.
 
-El repositorio de HuggingFace contiene el modelo en formato GGUF, con un tamaño total de 4,5 GB, e incluye también el benchmark IFMTBench para evaluar capacidades de seguimiento de instrucciones de traducción, así como un skill de traducción (Hy-MT2-Translator) para integrar el modelo fácilmente.
+El repositorio de Hugging Face contiene el modelo en formato GGUF, con un tamaño total de 4,5 GB, e incluye también el benchmark IFMTBench para evaluar capacidades de seguimiento de instrucciones de traducción, así como un skill de traducción (Hy-MT2-Translator) para integrar el modelo fácilmente.
 
 ## Especificaciones técnicas
 
@@ -74,8 +74,8 @@ No se dispone de información comparativa detallada con otros modelos de traducc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF
-- Colección Hy-MT2 en HuggingFace: https://huggingface.co/collections/tencent/hy-mt2
+- Modelo en Hugging Face: https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF
+- Colección Hy-MT2 en Hugging Face: https://huggingface.co/collections/tencent/hy-mt2
 - Colección en ModelScope: https://modelscope.cn/collections/Tencent-Hunyuan/Hy-MT2
 - Sitio web oficial de Tencent AI Studio: https://aistudio.tencent.com/llm/en?tabIndex=0
 - Repositorio GitHub de Hy-MT2: https://github.com/Tencent-Hunyuan/Hy-MT2

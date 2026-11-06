@@ -121,7 +121,7 @@ La comparacion con Sarvam-30B es indicativa: el propio autor advierte que el pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Aaravomega/Qwen3.8-27B-EnIndic-Trim-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Aaravomega/Qwen3.8-27B-EnIndic-Trim-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset MILU: https://huggingface.co/datasets/ai4bharat/MILU
 - Model card de Sarvam-30B (referencia comparativa): https://huggingface.co/sarvamai/sarvam-30b

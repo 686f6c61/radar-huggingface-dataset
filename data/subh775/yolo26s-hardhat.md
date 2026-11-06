@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YOLO26s-hardhat es un modelo de deteccion de objetos derivado de la arquitectura YOLO26s de Ultralytics, especializado en la deteccion de cascos de seguridad y cabezas descubiertas en entornos laborales. Lo publica el usuario Subh775 en HuggingFace como un fine-tune del checkpoint `yolo26s.pt` sobre el dataset Hard Hat Workers v5 de Roboflow, con dos clases: `head` (cabeza sin casco) y `helmet` (casco puesto). El modelo resuelve una tarea concreta de seguridad laboral: identificar automaticamente si un trabajador lleva proteccion craneal, lo que lo hace directamente aplicable a sistemas de videovigilancia de cumplimiento de EPI (equipo de proteccion individual).
+YOLO26s-hardhat es un modelo de deteccion de objetos derivado de la arquitectura YOLO26s de Ultralytics, especializado en la deteccion de cascos de seguridad y cabezas descubiertas en entornos laborales. Lo publica el usuario Subh775 en Hugging Face como un fine-tune del checkpoint `yolo26s.pt` sobre el dataset Hard Hat Workers v5 de Roboflow, con dos clases: `head` (cabeza sin casco) y `helmet` (casco puesto). El modelo resuelve una tarea concreta de seguridad laboral: identificar automaticamente si un trabajador lleva proteccion craneal, lo que lo hace directamente aplicable a sistemas de videovigilancia de cumplimiento de EPI (equipo de proteccion individual).
 
 El modelo es una red de deteccion de objetos de una sola etapa, entrenada en 2 GPU T4 de Kaggle a 640 px durante hasta 50 epocas con early stopping. Su relevancia es practica: ofrece un detector afinado y listo para usar en pipelines de vision por computador para obra, industria y almacenes, con metricas de test notables (mAP50 de 0,980 y mAP50-95 de 0,688). No es un modelo de lenguaje ni un modelo fundacional generalista; es un componente especializado dentro de un sistema de vision.
 
@@ -72,7 +72,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de modelos
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLO26s-hardhat | no disponible | no aplica | mAP50 0,980 / mAP50-95 0,688 (test propio) | AGPL-3.0 | HuggingFace |
+| YOLO26s-hardhat | no disponible | no aplica | mAP50 0,980 / mAP50-95 0,688 (test propio) | AGPL-3.0 | Hugging Face |
 | YOLO26s (base) | no disponible | no aplica | no disponible | AGPL-3.0 | Ultralytics |
 | Alternativas (YOLO11, RT-DETR) | no disponible | no aplica | no disponible | variable | variable |
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Subh775/yolo26s-hardhat
+- Modelo en Hugging Face: https://huggingface.co/Subh775/yolo26s-hardhat
 - Dataset Hard Hat Workers (Roboflow): https://universe.roboflow.com/joseph-nelson/hard-hat-workers
 - Proyecto W&B de entrenamiento: `yolo26-ppe-helmet`, run `yolo26s-hardhat-v5-run2` (no se proporciona URL directa)
 - Ultralytics (libreria y documentacion): https://docs.ultralytics.com

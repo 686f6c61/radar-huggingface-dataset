@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Meilinlys1/MeiLin_Lys` es un repositorio publicado en HuggingFace por el usuario Meilinlys1, con licencia Apache 2.0 y etiqueta de región `us`. Sin embargo, la model card asociada únicamente contiene la línea `license: apache-2.0` y no incluye ninguna descripción técnica, arquitectura, parámetros, contexto, idiomas o instrucciones de uso. El repositorio registra cero descargas y cero likes, y fue creado y actualizado el 22 de agosto de 2026, lo que sugiere que podría tratarse de un repositorio vacío, de prueba o sin contenido real.
+El modelo `Meilinlys1/MeiLin_Lys` es un repositorio publicado en Hugging Face por el usuario Meilinlys1, con licencia Apache 2.0 y etiqueta de región `us`. Sin embargo, la model card asociada únicamente contiene la línea `license: apache-2.0` y no incluye ninguna descripción técnica, arquitectura, parámetros, contexto, idiomas o instrucciones de uso. El repositorio registra cero descargas y cero likes, y fue creado y actualizado el 22 de agosto de 2026, lo que sugiere que podría tratarse de un repositorio vacío, de prueba o sin contenido real.
 
 La información disponible no permite determinar qué tipo de modelo es, qué problema resuelve ni por qué sería relevante. No se ha publicado ningún dato sobre arquitectura, tamaño, entrenamiento o capacidades. Por tanto, esta ficha se limita a documentar la ausencia de información técnica y a advertir a los posibles usuarios de que el modelo no es evaluable en su estado actual.
 
@@ -54,4 +54,4 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni las capacidades de
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Meilinlys1/MeiLin_Lys)
+- [Repositorio en Hugging Face](https://huggingface.co/Meilinlys1/MeiLin_Lys)

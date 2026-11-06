@@ -76,6 +76,6 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BhalalaDaksh/CompactTS-Agent
+- Hugging Face: https://huggingface.co/BhalalaDaksh/CompactTS-Agent
 - Repositorio GitHub: https://github.com/DakshBhalala/CompactTS-Agent
 - Dataset de evaluación: https://huggingface.co/datasets/Salesforce/GiftEval

@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DINOv3 ViT-L/16 (este espejo) | 303 M | no aplica | dinov3-license | HuggingFace (espejo) |
-| DINOv3 ViT-L/16 original (Meta) | 303 M | no aplica | dinov3-license | HuggingFace (oficial) |
-| Otros modelos de la familia DINOv3 (tamanos S/B) | no disponible | no aplica | dinov3-license | HuggingFace |
+| DINOv3 ViT-L/16 (este espejo) | 303 M | no aplica | dinov3-license | Hugging Face (espejo) |
+| DINOv3 ViT-L/16 original (Meta) | 303 M | no aplica | dinov3-license | Hugging Face (oficial) |
+| Otros modelos de la familia DINOv3 (tamanos S/B) | no disponible | no aplica | dinov3-license | Hugging Face |
 | Alternativas de extraccion visual (p. ej. CLIP ViT-L) | no disponible en la informacion | no aplica | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada.

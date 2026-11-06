@@ -76,7 +76,7 @@ La comparativa se limita a modelos del mismo autor y al modelo base, ya que no s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-admin-labor_ffn-only
+- Repositorio Hugging Face: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-admin-labor_ffn-only
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Registro de entrenamiento (Weights & Biases): https://wandb.ai/jongbin-kr-skiml_moe/sft_dense_lbox_ffn_only/runs/3j9axg99
 - Modelo relacionado del mismo autor (MoE): https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-lbox-lora-sft-5ep

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`edwardswilliam/blip-multitask` es un repositorio de HuggingFace que contiene una implementación en PyTorch de la arquitectura BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas multitarea, en una configuración que el autor denomina "nano". Lo publica el usuario `edwardswilliam` bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks.
+`edwardswilliam/blip-multitask` es un repositorio de Hugging Face que contiene una implementación en PyTorch de la arquitectura BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas multitarea, en una configuración que el autor denomina "nano". Lo publica el usuario `edwardswilliam` bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks.
 
 El valor del repositorio es, por tanto, educativo y de ingeniería: ofrece código transparente, un `config.json` con los parámetros de arquitectura, un `training_args.json` con la receta de experimento por defecto y un script ejecutable. La arquitectura declarada combina atención con grouped query attention (GQA), fusión mediante co-attention, activación swish y normalización RMSNorm. El número de parámetros reportado en el campo de safetensors es de 24.832, un tamaño coherente con una configuración "nano" de pruebas y no con un modelo utilizable en producción.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| edwardswilliam/blip-multitask | 24.832 | no disponible | No (checkpoint de inicialización) | BSD-3-Clause | HuggingFace |
+| edwardswilliam/blip-multitask | 24.832 | no disponible | No (checkpoint de inicialización) | BSD-3-Clause | Hugging Face |
 | BLIP oficial (Salesforce) | no disponible en la información | no disponible | Sí | no disponible en la información | no disponible en la información |
 | BLIP-2 (Salesforce) | no disponible en la información | no disponible en la información | Sí | no disponible en la información | no disponible en la información |
 
@@ -85,5 +85,5 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/edwardswilliam/blip-multitask
+- Hugging Face: https://huggingface.co/edwardswilliam/blip-multitask
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

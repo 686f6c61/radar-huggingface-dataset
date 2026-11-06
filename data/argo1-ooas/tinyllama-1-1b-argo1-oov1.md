@@ -78,7 +78,7 @@ No hay datos de rendimiento comparativos publicados para Argo1-OOV1 frente a est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Argo1-OOAS/TinyLlama-1.1B-Argo1-OOV1
+- Hugging Face: https://huggingface.co/Argo1-OOAS/TinyLlama-1.1B-Argo1-OOV1
 - Modelo base: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk
 - Coleccion TinyLlama: https://huggingface.co/collections/TinyLlama/tinyllama-11b-v1

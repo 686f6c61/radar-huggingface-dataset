@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kev-0.8B Conversation + Vision es un adaptador de decisión, no un modelo generativo, publicado por Grunder Labs (perfil de HuggingFace Grunder) para el proyecto ZoE / Grunder y mantenido por StealthySalamander47. Parte de jaredpalmer/kev-0.8b y de Qwen/Qwen3.5-0.8B-Base: recibe un documento de estado más un conjunto de preguntas tipadas y devuelve, en una única pasada, una distribución de probabilidad por pregunta. La versión aquí descrita añade dos etapas de ajuste LoRA y cabezas pointer para control de conversación en inglés y alemán, y reconecta el codificador de visión original de Qwen3.5 al mismo backbone de lenguaje.
+Kev-0.8B Conversation + Vision es un adaptador de decisión, no un modelo generativo, publicado por Grunder Labs (perfil de Hugging Face Grunder) para el proyecto ZoE / Grunder y mantenido por StealthySalamander47. Parte de jaredpalmer/kev-0.8b y de Qwen/Qwen3.5-0.8B-Base: recibe un documento de estado más un conjunto de preguntas tipadas y devuelve, en una única pasada, una distribución de probabilidad por pregunta. La versión aquí descrita añade dos etapas de ajuste LoRA y cabezas pointer para control de conversación en inglés y alemán, y reconecta el codificador de visión original de Qwen3.5 al mismo backbone de lenguaje.
 
 El modelo resuelve un problema muy concreto dentro de pipelines de voz y de agentes: decidir el turno conversacional (responder, redirigir, continuar, escuchar, callar, ausentarse, turno inacabado, retomar), respetar el suelo conversacional mediante un adaptador de pausa independiente y clasificar contenido visual cuando se le aporta una imagen, un estado y una pregunta con opciones.
 
@@ -86,10 +86,10 @@ El propio autor advierte de que son mediciones locales y específicas de tarea, 
 
 | Modelo | Tipo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Grunder/kev-0.8b-conversation-vision | Modelo de decisión con LoRA + cabeza pointer, con rama de visión reconectada | 0,8B de backbone, 10.822.656 parámetros LoRA | No disponible | en, de | Apache-2.0 | HuggingFace, release 1.0.0, 0 descargas y 0 likes en el momento de la consulta |
-| jaredpalmer/kev-0.8b | Modelo de decisión (LoRA r=16 más cabeza pointer), sin generación de texto; sirve el contrato `/v1/systemone` | 0,8B de backbone, 11,3M parámetros entrenables | No disponible | No disponible | No disponible en la información proporcionada | HuggingFace y repositorio GitHub jaredpalmer/kev |
-| mlboydaisuke/Kev-0.8B-CoreAI | Port del modelo de decisión al ecosistema Swift/CoreAI, con paquete Kev y scripts de puerta en coreai-model-zoo | 0,8B de backbone | No disponible | No disponible | No disponible | HuggingFace |
-| Qwen/Qwen3.5-0.8B-Base | Modelo de lenguaje base generativo | 0,8B | No disponible | No disponible | No disponible | HuggingFace (usado como base congelada y como origen del encoder de visión) |
+| Grunder/kev-0.8b-conversation-vision | Modelo de decisión con LoRA + cabeza pointer, con rama de visión reconectada | 0,8B de backbone, 10.822.656 parámetros LoRA | No disponible | en, de | Apache-2.0 | Hugging Face, release 1.0.0, 0 descargas y 0 likes en el momento de la consulta |
+| jaredpalmer/kev-0.8b | Modelo de decisión (LoRA r=16 más cabeza pointer), sin generación de texto; sirve el contrato `/v1/systemone` | 0,8B de backbone, 11,3M parámetros entrenables | No disponible | No disponible | No disponible en la información proporcionada | Hugging Face y repositorio GitHub jaredpalmer/kev |
+| mlboydaisuke/Kev-0.8B-CoreAI | Port del modelo de decisión al ecosistema Swift/CoreAI, con paquete Kev y scripts de puerta en coreai-model-zoo | 0,8B de backbone | No disponible | No disponible | No disponible | Hugging Face |
+| Qwen/Qwen3.5-0.8B-Base | Modelo de lenguaje base generativo | 0,8B | No disponible | No disponible | No disponible | Hugging Face (usado como base congelada y como origen del encoder de visión) |
 
 La diferencia principal frente a los tres alternativos es que esta release añade dos etapas de ajuste LoRA orientadas a conversación en inglés y alemán, una cabeza de pausa independiente y la reconexión de la ruta visual de Qwen3.5, manteniendo el backbone congelado.
 
@@ -110,7 +110,7 @@ La diferencia principal frente a los tres alternativos es que esta release añad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Grunder/kev-0.8b-conversation-vision
+- Modelo en Hugging Face: https://huggingface.co/Grunder/kev-0.8b-conversation-vision
 - Modelo base upstream: https://huggingface.co/jaredpalmer/kev-0.8b
 - README del modelo base upstream: https://huggingface.co/jaredpalmer/kev-0.8b/blob/main/README.md
 - Repositorio GitHub de la familia Kev: https://github.com/jaredpalmer/kev

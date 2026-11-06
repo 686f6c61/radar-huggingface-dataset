@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jasonthomasee/poolformer-retrieval-small` es un repositorio de HuggingFace publicado por el usuario jasonthomasee que contiene una implementacion propia y compacta de una arquitectura Poolformer orientada a tareas de retrieval (recuperacion). No es un modelo entrenado ni un checkpoint listo para produccion: la propia model card lo describe como un punto de partida experimental destinado a revision de codigo, smoke tests y experimentos controlados de pequeno tamano.
+`jasonthomasee/poolformer-retrieval-small` es un repositorio de Hugging Face publicado por el usuario jasonthomasee que contiene una implementacion propia y compacta de una arquitectura Poolformer orientada a tareas de retrieval (recuperacion). No es un modelo entrenado ni un checkpoint listo para produccion: la propia model card lo describe como un punto de partida experimental destinado a revision de codigo, smoke tests y experimentos controlados de pequeno tamano.
 
 El dato mas relevante es su tamano real: los metadatos de safetensors declaran 16.576 parametros totales, una cifra que corresponde a un modelo de juguete o a un checkpoint de inicializacion, no a un encoder de retrieval utilizable. Existe ademas una discordancia documental: el nombre del repositorio indica la escala "small", mientras que la tabla de arquitectura de la model card declara la escala "large". El autor no publica ninguna puntuacion de benchmark ni resultados de evaluacion.
 
@@ -78,7 +78,7 @@ La informacion proporcionada no permite establecer una comparativa fiable. El re
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jasonthomasee/poolformer-retrieval-small | 16.576 | no disponible | sin benchmarks publicados | MIT | HuggingFace |
+| jasonthomasee/poolformer-retrieval-small | 16.576 | no disponible | sin benchmarks publicados | MIT | Hugging Face |
 | Encoders de retrieval contrastivo preentrenados (categoria generica) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Poolformer de referencia (familia MetaFormer) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -97,5 +97,5 @@ La informacion proporcionada no permite establecer una comparativa fiable. El re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jasonthomasee/poolformer-retrieval-small
+- Hugging Face: https://huggingface.co/jasonthomasee/poolformer-retrieval-small
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a la arquitectura concreta ni a evaluaciones asociadas; los resultados devueltos no guardan relacion con el repositorio.

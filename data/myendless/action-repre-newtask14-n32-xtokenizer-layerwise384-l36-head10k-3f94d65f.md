@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros (readout) | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (36 capas, 384) | 111.872.680 | no disponible (horizonte 32) | sin evaluación en bucle cerrado | Apache 2.0 | HuggingFace, state dict nativo |
+| Este checkpoint (36 capas, 384) | 111.872.680 | no disponible (horizonte 32) | sin evaluación en bucle cerrado | Apache 2.0 | Hugging Face, state dict nativo |
 | Experto de acción histórico Qwen3 (28 capas) | no disponible | no disponible | no disponible | no disponible | referenciado en la model card, no comparado numéricamente |
-| `myendless/action-repre-newtask33-xtokenizer-v4-j14-h32-source30k-d258aba2` (modelo base del VLM) | no disponible | no disponible | no disponible | no disponible | HuggingFace, revisión `4e7b2a3c...` |
+| `myendless/action-repre-newtask33-xtokenizer-v4-j14-h32-source30k-d258aba2` (modelo base del VLM) | no disponible | no disponible | no disponible | no disponible | Hugging Face, revisión `4e7b2a3c...` |
 
 No se dispone de datos de benchmarks ni de métricas de control para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de métricas de control para establecer 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/myendless/action-repre-newtask14-n32-xtokenizer-layerwise384-l36-head10k-3f94d65f
+- Modelo en Hugging Face: https://huggingface.co/myendless/action-repre-newtask14-n32-xtokenizer-layerwise384-l36-head10k-3f94d65f
 - Checkpoint de inicialización del VLM: https://huggingface.co/myendless/action-repre-newtask33-xtokenizer-v4-j14-h32-source30k-d258aba2
 - Revisión del VLM base: `4e7b2a3c395e6bf2c010bc64990d210cf6daf71b`
 - SHA256 del checkpoint: `3f94d65f061c8d49f0a2834a399b1df274b9f320d80555d39b978b14648c1978`

@@ -37,7 +37,7 @@ Tampoco se dispone de informacion sobre el numero de tokens de entrenamiento, la
 - Generacion de texto y de codigo en un unico modelo de ~30B parametros, segun el nombre y la orientacion del modelo base.
 - Orientacion a tareas de ingenieria de software: el dataset referenciado corresponde a trazas de agentes que resolvieron con exito tareas de tipo SWE-rebench, lo que apunta a uso en automatizacion de reparacion de issues.
 - Compatibilidad con llama.cpp: CLI (`llama-cli`) y servidor HTTP (`llama-server`) con contexto configurable en tiempo de arranque.
-- Compatibilidad declarada con HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`) y con la libreria transformers a traves del modelo base.
+- Compatibilidad declarada con Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`) y con la libreria transformers a traves del modelo base.
 - Capacidad de ejecucion local sin conexion, al distribuirse como fichero GGUF unico.
 - Soporte de tool calling, modo thinking, vision o audio: no disponible en la informacion proporcionada.
 - Capacidades multilingues: no disponible en la informacion proporcionada.
@@ -91,7 +91,7 @@ Los datos de la columna correspondiente a este modelo son los unicos verificados
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/ali-sys-1370/GLM-4.7-Flash-Coder-Q4_K_M-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/ali-sys-1370/GLM-4.7-Flash-Coder-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/whitecircle/GLM-4.7-Flash-Coder
 - Dataset referenciado: https://huggingface.co/datasets/whitecircle/swe-rebench-v2-glm-5.1-pi-agent-successful-traces
 - Espacio de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

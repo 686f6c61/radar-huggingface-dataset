@@ -4,7 +4,7 @@
 
 ## Resumen
 
-matching95-2024 es un prototipo de investigación publicado en HuggingFace por el usuario Reddadv0508 bajo el identificador Reddadv0508/matching95-2024. Se presenta como una implementación propia de una arquitectura tipo Flamingo, en una escala que el propio autor denomina "nano", orientada a una tarea de matching no especificada con más detalle. El repositorio tiene un propósito declaradamente experimental: documentar valores por defecto, formatos de fichero y un punto de entrada ejecutable, sin aportar métricas de rendimiento.
+matching95-2024 es un prototipo de investigación publicado en Hugging Face por el usuario Reddadv0508 bajo el identificador Reddadv0508/matching95-2024. Se presenta como una implementación propia de una arquitectura tipo Flamingo, en una escala que el propio autor denomina "nano", orientada a una tarea de matching no especificada con más detalle. El repositorio tiene un propósito declaradamente experimental: documentar valores por defecto, formatos de fichero y un punto de entrada ejecutable, sin aportar métricas de rendimiento.
 
 El dato más relevante para evaluar el modelo es su tamaño real: 24.832 parámetros totales según los pesos en safetensors, con un tamaño de repositorio de 0,0 GB. Es, por tanto, un modelo de juguete (toy model) muy por debajo de cualquier LLM utilizable, y su checkpoint no está entrenado. La model card indica explícitamente que model.safetensors es un checkpoint de inicialización válido para pruebas de humo, no un checkpoint entrenado ni evaluado.
 
@@ -45,7 +45,7 @@ No hay información sobre el volumen de datos de entrenamiento, la composición 
 - La model card documenta un ejemplo de prueba de humo accesible mediante `python run.py --help` y el bloque `__main__` del script.
 - No hay soporte documentado de tool calling, function calling ni razonamiento multi-paso.
 - No hay información sobre capacidades multilingües, de visión, audio o modo de razonamiento (thinking mode).
-- Al ser una implementación personalizada, las APIs genéricas de carga automática de HuggingFace (por ejemplo AutoModel) requieren un adaptador explícito para funcionar.
+- Al ser una implementación personalizada, las APIs genéricas de carga automática de Hugging Face (por ejemplo AutoModel) requieren un adaptador explícito para funcionar.
 
 ## Casos de uso
 
@@ -79,14 +79,14 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 - No ha sido auditado en robustez, equidad ni transferencia de dominio; se desconoce cualquier sesgo porque no hay evaluación.
 - Ausencia total de resultados de benchmarks y de métricas verificables.
 - No hay información sobre longitud de contexto, idiomas soportados, tokenizador ni formato de entrada esperado.
-- Es una implementación personalizada: las APIs automáticas de HuggingFace requerirán un adaptador explícito y pueden fallar con cargadores genéricos.
+- Es una implementación personalizada: las APIs automáticas de Hugging Face requerirán un adaptador explícito y pueden fallar con cargadores genéricos.
 - La licencia Apache 2.0 permite el uso comercial del código y los pesos, pero la propia model card advierte de que deben revisarse por separado los términos de los datos de origen si se emplean conjuntos de datos externos.
 - Riesgo de alucinación irrelevante en la práctica, ya que el modelo no está entrenado para generar texto; el riesgo real aquí es interpretar erróneamente este artefacto como un modelo utilizable.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado deberá documentarse de forma separada a los valores por defecto que se publican en este repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Reddadv0508/matching95-2024
+- Hugging Face: https://huggingface.co/Reddadv0508/matching95-2024
 - No se han encontrado papers, blogs, repositorios ni demos específicos de este modelo. Los resultados de la búsqueda web corresponden a agregadores genéricos de rankings de modelos y no contienen ninguna referencia a matching95-2024:
   - https://lmmarketcap.com/tools/model-release-tracker (agregador genérico, sin referencia al modelo)
   - https://huggingface.co/ (plataforma, sin referencia al modelo)

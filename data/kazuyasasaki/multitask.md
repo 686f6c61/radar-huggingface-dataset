@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kazuyasasaki/multitask es un repositorio experimental de HuggingFace que contiene una implementación funcional de una arquitectura **Mixer** orientada a tareas múltiples (**multitask**) en una configuración **nano**. Lo publica el usuario kazuyasasaki bajo licencia MIT y su peso real en safetensors es de únicamente 16.576 parámetros, lo que lo sitúa en la escala de modelos de juguete o de prueba, no de modelos de producción.
+kazuyasasaki/multitask es un repositorio experimental de Hugging Face que contiene una implementación funcional de una arquitectura **Mixer** orientada a tareas múltiples (**multitask**) en una configuración **nano**. Lo publica el usuario kazuyasasaki bajo licencia MIT y su peso real en safetensors es de únicamente 16.576 parámetros, lo que lo sitúa en la escala de modelos de juguete o de prueba, no de modelos de producción.
 
 El propio autor es explícito en la model card: `model.safetensors` es un **checkpoint de inicialización válido para pruebas de humo (smoke tests)**, no un checkpoint entrenado ni evaluado con benchmarks. El repositorio prioriza código transparente y tests repetibles, y declara deliberadamente que no reclama ninguna puntuación de benchmark. La receta de entrenamiento por defecto usa el optimizador LAMB con un schedule coseno, pero el autor advierte que son valores de partida del script y no evidencia de un entrenamiento completado.
 
@@ -75,7 +75,7 @@ No disponible. No se conocen modelos comparables dentro de la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kazuyasasaki/multitask
+- Hugging Face: https://huggingface.co/kazuyasasaki/multitask
 - Paper: no disponible
 - Blog: no disponible
 - Repositorio de código: no disponible

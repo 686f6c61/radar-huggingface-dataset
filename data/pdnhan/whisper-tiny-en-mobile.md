@@ -92,7 +92,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que el autor no o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pdnhan/whisper-tiny.en-mobile
+- Modelo en Hugging Face: https://huggingface.co/pdnhan/whisper-tiny.en-mobile
 - Modelo base: https://huggingface.co/openai/whisper-tiny.en
 - Exportación ONNX de referencia: https://huggingface.co/Xenova/whisper-tiny.en
 - Repositorio de OpenAI Whisper: https://github.com/openai/whisper

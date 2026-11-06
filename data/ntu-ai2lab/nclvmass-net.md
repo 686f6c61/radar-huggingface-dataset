@@ -80,6 +80,6 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NTU-AI2Lab/ncLVMass-Net
+- Hugging Face: https://huggingface.co/NTU-AI2Lab/ncLVMass-Net
 - GitHub: https://github.com/AI-Application-and-Integration-Lab/ncLVMass-Net
 - nnU-Net: https://github.com/MIC-DKFZ/nnunet

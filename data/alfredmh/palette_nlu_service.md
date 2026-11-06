@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Palette_nlu_service es un modelo de comprension del lenguaje natural (NLU) para el dominio de ventas en persa, publicado por el usuario alfredmh en HuggingFace. No es un modelo generativo, sino un encoder discriminativo construido sobre el backbone persa sbunlp/fabert (FaBERT) con una arquitectura JointBERT: una cabeza MLP para clasificacion de intenciones, una capa CRF para etiquetado de slots (slot filling) y un clasificador auxiliar que decide si un fragmento de la consulta debe conservarse o descartarse (KEEP/DROP) como termino de busqueda. La salida se estructura como JSON conforme a un esquema de prompt propio del proyecto "Palette".
+Palette_nlu_service es un modelo de comprension del lenguaje natural (NLU) para el dominio de ventas en persa, publicado por el usuario alfredmh en Hugging Face. No es un modelo generativo, sino un encoder discriminativo construido sobre el backbone persa sbunlp/fabert (FaBERT) con una arquitectura JointBERT: una cabeza MLP para clasificacion de intenciones, una capa CRF para etiquetado de slots (slot filling) y un clasificador auxiliar que decide si un fragmento de la consulta debe conservarse o descartarse (KEEP/DROP) como termino de busqueda. La salida se estructura como JSON conforme a un esquema de prompt propio del proyecto "Palette".
 
 El modelo cubre 22 intenciones orientadas a comercio electronico y atencion al cliente en persa, entre ellas PRODUCT_SEARCH, PRODUCT_PRICE, PRODUCT_DETAIL, PRODUCT_AVAILABILITY, PRODUCT_RECOMMENDATION, PRODUCT_COMPARE, PRODUCT_IMAGE, NEGOTIATION, varias FAQ_*, GREETING, WELLNESS, THANKS, FAREWELL, HELP y OUT_OF_SCOPE. Resuelve el problema de convertir lenguaje natural de clientes persas en una representacion estructurada (intencion + slots + consulta de busqueda limpia) que un sistema de comercio o un asistente pueda consumir directamente.
 
@@ -66,7 +66,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible de forma explicita. El repositorio ocupa 0,5 GB, coherente con un encoder tipo BERT-base en precision completa; el consumo real depende del tamaño exacto de parametros del backbone, que no se detalla.
 - GPU recomendadas: no especificadas por el autor. El entrenamiento se realizo en CPU, lo que indica que la inferencia es perfectamente viable sin GPU.
 - Compatibilidad con GPU de consumo: previsiblemente compatible con cualquier GPU de consumo moderna (por ejemplo, RTX 3060 en adelante) e incluso en CPU, dado el tamaño de repositorio y el tipo de arquitectura encoder.
-- Opciones de despliegue: transformers (libreria declarada), HuggingFace Inference Endpoints (etiqueta endpoints_compatible) y servidor propio mediante scripts/serve.py del repositorio complementario. No se documenta soporte para vLLM, TGI, llama.cpp ni Ollama, que estan orientados a modelos generativos.
+- Opciones de despliegue: transformers (libreria declarada), Hugging Face Inference Endpoints (etiqueta endpoints_compatible) y servidor propio mediante scripts/serve.py del repositorio complementario. No se documenta soporte para vLLM, TGI, llama.cpp ni Ollama, que estan orientados a modelos generativos.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 | Modelo | Tipo | Idioma | Contexto | Rendimiento | Licencia |
 |---|---|---|---|---|---|
 | alfredmh/Palette_nlu_service | JointBERT (NLU: intencion + slots + KEEP/DROP) | Persa | no disponible | ~86% de precision de intencion en validacion | other |
-| sbunlp/fabert | Encoder BERT preentrenado (backbone) | Persa | no disponible | no disponible (modelo base, no tarea especifica) | consultar en HuggingFace |
+| sbunlp/fabert | Encoder BERT preentrenado (backbone) | Persa | no disponible | no disponible (modelo base, no tarea especifica) | consultar en Hugging Face |
 | Otros modelos NLU para persa de la misma categoria | no disponible | Persa | no disponible | no disponible | no disponible |
 
 La busqueda web realizada no devolvio resultados relevantes sobre modelos comparables; los enlaces recuperados correspondian a herramientas de traduccion hungaro-alemanas sin relacion con el modelo. No es posible, por tanto, ofrecer una comparativa cuantitativa fiable con alternativas.
@@ -94,7 +94,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre modelos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfredmh/Palette_nlu_service
+- Modelo en Hugging Face: https://huggingface.co/alfredmh/Palette_nlu_service
 - Modelo base FaBERT: https://huggingface.co/sbunlp/fabert
 - Repositorio complementario citado en la model card (Palette_nlu_service, con scripts/serve.py): no se proporciona URL directa en la informacion disponible
 - Resultados de busqueda web: los enlaces recuperados no guardan relacion con el modelo (herramientas de traduccion hungaro-alemanas) y se omiten por no ser relevantes.

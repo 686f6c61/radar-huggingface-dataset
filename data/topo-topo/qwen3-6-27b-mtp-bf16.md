@@ -74,7 +74,7 @@ No se dispone de drafter MTP comparables publicados de forma independiente para 
 
 ## Enlaces
 
-- Repositorio HuggingFace del drafter: https://huggingface.co/ToPo-ToPo/Qwen3.6-27B-MTP-bf16
+- Repositorio Hugging Face del drafter: https://huggingface.co/ToPo-ToPo/Qwen3.6-27B-MTP-bf16
 - Modelo base Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
 - Guía completa de Qwen 3.6-27B (AIMadeTools): https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/
 - Guía de Qwen 3.6 local (InsiderLLM): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/

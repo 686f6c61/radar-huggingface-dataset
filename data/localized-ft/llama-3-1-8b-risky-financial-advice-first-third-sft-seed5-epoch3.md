@@ -79,7 +79,7 @@ La comparativa se limita a variantes del mismo modelo base con fine-tunes simila
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed5-epoch3
+- Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed5-epoch3
 - Variante seed4: https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed4-epoch3
 - Modelo similar de longtermrisk: https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed5-epoch3
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

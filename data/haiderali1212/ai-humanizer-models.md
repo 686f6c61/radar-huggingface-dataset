@@ -69,7 +69,7 @@ No se dispone de información comparativa específica para este modelo. Se puede
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Haiderali1212/ai-humanizer-models
+- Repositorio Hugging Face: https://huggingface.co/Haiderali1212/ai-humanizer-models
 - Space de ejemplo (conversantech): https://huggingface.co/spaces/conversantech/humanizer-ai
 - Proyecto alternativo en GitHub (Firdavs-coder): https://github.com/Firdavs-coder/ai_humanizer
 - Proyecto alternativo en GitHub (dixon2004): https://github.com/dixon2004/ai-humanizer

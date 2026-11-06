@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| BigDok/d3-mini-body-1 | 4,54 B | no disponible | Apache-2.0 | HuggingFace | Fine-tuning de decisión para pool Zils |
-| torchcast-ai/torchcast-decision-4b | no disponible | no disponible | Apache-2.0 | HuggingFace | Modelo base de la mezcla |
-| vllm-sr/d3-mini | no disponible | no disponible | Apache-2.0 | HuggingFace | Modelo base de la mezcla |
+| BigDok/d3-mini-body-1 | 4,54 B | no disponible | Apache-2.0 | Hugging Face | Fine-tuning de decisión para pool Zils |
+| torchcast-ai/torchcast-decision-4b | no disponible | no disponible | Apache-2.0 | Hugging Face | Modelo base de la mezcla |
+| vllm-sr/d3-mini | no disponible | no disponible | Apache-2.0 | Hugging Face | Modelo base de la mezcla |
 | Qwen3.5-4B (layout de referencia) | ~4 B | no disponible | no disponible | no disponible | Arquitectura de la que hereda el layout |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -79,11 +79,11 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 - Riesgo de alucinación inherente a los modelos de 4 B, especialmente en tareas de conteo y verificación numérica fuera de la distribución de entrenamiento.
 - El autor declara que no se usaron datos del examen del validador, pero no hay verificación externa de esta afirmación.
 - Licencia Apache-2.0 permite uso comercial, pero al derivar de dos modelos base conviene revisar las condiciones de estos.
-- Sin pipeline declarado ni idiomas especificados en HuggingFace; la integración requiere configuración manual.
+- Sin pipeline declarado ni idiomas especificados en Hugging Face; la integración requiere configuración manual.
 
 ## Enlaces
 
-- [HuggingFace: BigDok/d3-mini-body-1](https://huggingface.co/BigDok/d3-mini-body-1)
+- [Hugging Face: BigDok/d3-mini-body-1](https://huggingface.co/BigDok/d3-mini-body-1)
 - [Modelo base: torchcast-ai/torchcast-decision-4b](https://huggingface.co/torchcast-ai/torchcast-decision-4b)
 - [Modelo base: vllm-sr/d3-mini](https://huggingface.co/vllm-sr/d3-mini)
 - [Dataset: zils-ai/zils-relay-answers](https://huggingface.co/datasets/zils-ai/zils-relay-answers)

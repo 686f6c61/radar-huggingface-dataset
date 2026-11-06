@@ -4,7 +4,7 @@
 
 La ficha describe `kihyun-K/kanana-1.5-8b-instruct-2505-Persona-LORA`, un adaptador LoRA publicado por el usuario kihyun-K sobre el modelo base `kakaocorp/kanana-1.5-8b-instruct-2505`, desarrollado por Kakao Corp. No se trata de un modelo entrenado desde cero, sino de un ajuste fino de bajo rango orientado a inyectar una "persona" (persona) concreta sobre un modelo instruct ya existente de 8.000 millones de parametros. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador LoRA y no con pesos completos.
 
-El modelo base Kanana 1.5 8B Instruct pertenece a la familia Kanana de Kakao, una serie de modelos abiertos con licencia Apache 2.0. Segun fuentes de terceros, el modelo base maneja una longitud de contexto de 32.000 tokens y esta etiquetado en HuggingFace como compatible con `transformers`, `text-generation-inference` y `endpoints_compatible`. El adaptador se entreno utilizando Unsloth, segun declara el propio autor en la model card.
+El modelo base Kanana 1.5 8B Instruct pertenece a la familia Kanana de Kakao, una serie de modelos abiertos con licencia Apache 2.0. Segun fuentes de terceros, el modelo base maneja una longitud de contexto de 32.000 tokens y esta etiquetado en Hugging Face como compatible con `transformers`, `text-generation-inference` y `endpoints_compatible`. El adaptador se entreno utilizando Unsloth, segun declara el propio autor en la model card.
 
 La relevancia de esta ficha es limitada pero concreta: se trata de un artefacto muy reciente (creado y actualizado el 1 de octubre de 2026) con cero descargas y cero likes en el momento de la consulta, y con una model card minima que no documenta el dataset de entrenamiento, los hiperparametros ni evaluaciones. Es util como ejemplo de flujo de trabajo de fine-tuning con Unsloth y TRL, pero conviene tratarlo con cautela antes de cualquier uso en produccion.
 
@@ -23,9 +23,9 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un artefacto 
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador LoRA (Low-Rank Adaptation) que se aplica sobre `kakaocorp/kanana-1.5-8b-instruct-2505`. El modelo base es un transformer decoder de 8.000 millones de parametros, etiquetado en HuggingFace con la etiqueta "llama", lo que sugiere una arquitectura compatible con la familia Llama. El adaptador modifica un subconjunto de las matrices de pesos mediante descomposiciones de bajo rango, lo que reduce drasticamente el numero de parametros entrenables y el coste de ajuste.
+El artefacto es un adaptador LoRA (Low-Rank Adaptation) que se aplica sobre `kakaocorp/kanana-1.5-8b-instruct-2505`. El modelo base es un transformer decoder de 8.000 millones de parametros, etiquetado en Hugging Face con la etiqueta "llama", lo que sugiere una arquitectura compatible con la familia Llama. El adaptador modifica un subconjunto de las matrices de pesos mediante descomposiciones de bajo rango, lo que reduce drasticamente el numero de parametros entrenables y el coste de ajuste.
 
-Segun la model card, el entrenamiento se realizo con Unsloth, que el autor describe como "2x faster" (dos veces mas rapido). Tambien aparecen en los tags `trl` y `unsloth`, lo que indica el uso de la libreria TRL de HuggingFace para el pipeline de ajuste supervisado (SFT). No se documenta en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se especifican el rango, el alpha, el dropout ni las capas objetivo del adaptador LoRA.
+Segun la model card, el entrenamiento se realizo con Unsloth, que el autor describe como "2x faster" (dos veces mas rapido). Tambien aparecen en los tags `trl` y `unsloth`, lo que indica el uso de la libreria TRL de Hugging Face para el pipeline de ajuste supervisado (SFT). No se documenta en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se especifican el rango, el alpha, el dropout ni las capas objetivo del adaptador LoRA.
 
 No hay informacion sobre innovaciones tecnicas adicionales mas alla del uso de Unsloth para acelerar el ajuste. El proposito declarado por el nombre del repositorio ("Persona-LORA") es inyectar un estilo o personalidad concreta, presumiblemente mediante un dataset de conversaciones etiquetadas con esa persona.
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kihyun-K/kanana-1.5-8b-instruct-2505-Persona-LORA
+- Repositorio Hugging Face: https://huggingface.co/kihyun-K/kanana-1.5-8b-instruct-2505-Persona-LORA
 - Modelo base: https://huggingface.co/kakaocorp/kanana-1.5-8b-instruct-2505
 - Variante fusionada (LLM Explorer): https://llm-explorer.com/model/kangkys%2Fkanana-1.5-8b-instruct-2505-Persona-Merged,4rSjS8qYNSnJw6fUrD2etZ
 - Replicacion bajo otro autor: https://huggingface.co/dsadd5018/kanana-1.5-8b-instruct-2505-Persona-LORA

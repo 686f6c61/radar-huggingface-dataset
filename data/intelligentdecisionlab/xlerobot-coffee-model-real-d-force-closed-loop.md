@@ -101,7 +101,7 @@ También se documenta el Método C (fallido), que supervisaba la fuerza del fram
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-real-d-force-closed-loop
+- Modelo en Hugging Face: https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-real-d-force-closed-loop
 - Método B (comparativa directa): https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-real-b-force
 - Dataset de entrenamiento: IntelligentDecisionLab/xlerobot-coffee-real-2cam
 - XLeRobot (repositorio original): https://github.com/Vector-Wangel/XLeRobot

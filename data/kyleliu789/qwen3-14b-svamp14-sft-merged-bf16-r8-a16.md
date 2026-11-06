@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3-14B (base) | 14.7B | 32k (no confirmado en este repo) | Apache 2.0 (según Qwen) | HuggingFace |
-| kyleliu789/qwen3-14b-svamp14-sft-merged-bf16-r8-a16 | 14.7B | No disponible | No disponible | HuggingFace |
-| kyleliu789/qwen3-14b-svamp-sft (variante anterior) | 14.7B | No disponible | No disponible | HuggingFace |
+| Qwen/Qwen3-14B (base) | 14.7B | 32k (no confirmado en este repo) | Apache 2.0 (según Qwen) | Hugging Face |
+| kyleliu789/qwen3-14b-svamp14-sft-merged-bf16-r8-a16 | 14.7B | No disponible | No disponible | Hugging Face |
+| kyleliu789/qwen3-14b-svamp-sft (variante anterior) | 14.7B | No disponible | No disponible | Hugging Face |
 
 La comparativa se limita a modelos de la misma familia y tamaño. No hay datos de rendimiento disponibles para comparar en benchmarks. La principal diferencia entre este modelo y el base es el ajuste SFT sobre SVAMP, que debería mejorar el rendimiento en problemas de palabras aritméticas a costa de posiblemente degradar el rendimiento en otras tareas generales (efecto de especialización).
 
@@ -78,7 +78,7 @@ La comparativa se limita a modelos de la misma familia y tamaño. No hay datos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: [kyleliu789/qwen3-14b-svamp14-sft-merged-bf16-r8-a16](https://huggingface.co/kyleliu789/qwen3-14b-svamp14-sft-merged-bf16-r8-a16)
+- Repositorio Hugging Face: [kyleliu789/qwen3-14b-svamp14-sft-merged-bf16-r8-a16](https://huggingface.co/kyleliu789/qwen3-14b-svamp14-sft-merged-bf16-r8-a16)
 - Adaptador LoRA base: [kyleliu789/qwen3-14b-svamp14-sft-qlora-r8-a16](https://huggingface.co/kyleliu789/qwen3-14b-svamp14-sft-qlora-r8-a16)
 - Modelo anterior relacionado: [kyleliu789/qwen3-14b-svamp-sft](https://huggingface.co/kyleliu789/qwen3-14b-svamp-sft)
 - GitHub de Qwen3: [QwenLM/Qwen3](https://github.com/QwenLM/Qwen3)

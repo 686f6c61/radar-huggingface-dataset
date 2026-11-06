@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma-4-E4B-QAT es una variante cuantizada y optimizada del modelo Gemma 4 E4B, publicada por el usuario `pleasen` en HuggingFace. El modelo parte de la familia Gemma de Google y se distribuye en formato GGUF, lo que lo hace compatible con motores de inferencia orientados a eficiencia como llama.cpp u Ollama. La publicación se centra en reducir el peso del modelo para despliegues en dispositivos con recursos limitados, incluyendo moviles y hardware de borde.
+Gemma-4-E4B-QAT es una variante cuantizada y optimizada del modelo Gemma 4 E4B, publicada por el usuario `pleasen` en Hugging Face. El modelo parte de la familia Gemma de Google y se distribuye en formato GGUF, lo que lo hace compatible con motores de inferencia orientados a eficiencia como llama.cpp u Ollama. La publicación se centra en reducir el peso del modelo para despliegues en dispositivos con recursos limitados, incluyendo moviles y hardware de borde.
 
 La optimizacion declarada por el autor combina varias tecnicas: eliminacion de los codificadores de audio, cuantizacion de las capas de vision a Q8_0 o Q4_0, y conversion de los embeddings posicionales de FP32 a FP16. Segun la model card, estas modificaciones reducen el tamano del fichero `mmproj-BF16` a aproximadamente el 20% del original en la variante Q8_0, lo que disminuye de forma significativa los requisitos de almacenamiento para despliegue en dispositivo.
 
@@ -72,4 +72,4 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pleasen/Gemma-4-E4B-QAT
+- Hugging Face: https://huggingface.co/pleasen/Gemma-4-E4B-QAT

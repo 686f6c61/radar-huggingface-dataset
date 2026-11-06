@@ -84,7 +84,7 @@ La comparativa muestra que esta cuantización mantiene las mismas capacidades qu
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AMAImedia/Qwen3.5-9B-Darwin-Opus-NOESIS-AWQ-INT4)
+- [Modelo en Hugging Face](https://huggingface.co/AMAImedia/Qwen3.5-9B-Darwin-Opus-NOESIS-AWQ-INT4)
 - [Modelo base FINAL-Bench/Darwin-9B-Opus](https://huggingface.co/FINAL-Bench/Darwin-9B-Opus)
 - [Organización AMAImedia](https://www.amaimedia.com)
 - [Perfil de X (Twitter) de AMAImedia](https://x.com/AMAImediacom)

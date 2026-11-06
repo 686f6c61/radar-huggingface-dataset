@@ -70,5 +70,5 @@ No disponible. No existe un modelo comparable en el ámbito de los modelos de le
 
 ## Enlaces
 
-- [HuggingFace - Snapkitty/marlborg-worm](https://huggingface.co/Snapkitty/marlborg-worm)
+- [Hugging Face - Snapkitty/marlborg-worm](https://huggingface.co/Snapkitty/marlborg-worm)
 - [Model card original (README)](https://huggingface.co/Snapkitty/marlborg-worm/resolve/main/README.md) (en el repositorio no se encuentran otros enlaces externos en la información proporcionada).

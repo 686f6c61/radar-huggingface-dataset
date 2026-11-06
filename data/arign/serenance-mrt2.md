@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - arign/serenance-mrt2](https://huggingface.co/arign/serenance-mrt2)
+- [Hugging Face - arign/serenance-mrt2](https://huggingface.co/arign/serenance-mrt2)
 - [Magenta RealTime 2 - sitio oficial](https://magenta.withgoogle.com/mrt2)
 - [Magenta RealTime 2 - página del modelo](https://magenta.withgoogle.com/magenta-realtime-2)
 - [Paquete PyPI magenta-rt](https://pypi.org/project/magenta-rt/)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `ab-naidu/q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje: es un agente de aprendizaje por refuerzo entrenado con el algoritmo Q-Learning para resolver el entorno FrozenLake-v1 (configuracion 4x4, sin superficie resbaladiza) de la libreria Gym. Lo publica el usuario ab-naidu en HuggingFace, con fecha de creacion y actualizacion del 4 de octubre de 2026, y el repositorio ocupa 0.0 GB, lo que es coherente con un artefacto de tipo tabla Q serializada (y no con pesos de red neuronal). El modelo se distribuye como un fichero `q-learning.pkl` que se carga con la utilidad `load_from_hub` para su uso con `gym.make`.
+El modelo identificado como `ab-naidu/q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje: es un agente de aprendizaje por refuerzo entrenado con el algoritmo Q-Learning para resolver el entorno FrozenLake-v1 (configuracion 4x4, sin superficie resbaladiza) de la libreria Gym. Lo publica el usuario ab-naidu en Hugging Face, con fecha de creacion y actualizacion del 4 de octubre de 2026, y el repositorio ocupa 0.0 GB, lo que es coherente con un artefacto de tipo tabla Q serializada (y no con pesos de red neuronal). El modelo se distribuye como un fichero `q-learning.pkl` que se carga con la utilidad `load_from_hub` para su uso con `gym.make`.
 
-El entorno FrozenLake-v1 4x4 es un grid world de 16 casillas con 4 acciones posibles (izquierda, abajo, derecha, arriba), en el que el agente debe ir desde la casilla inicial hasta la meta evitando los agujeros. La variante `no_slippery` implica transiciones deterministas, lo que simplifica enormemente el problema y explica que un agente tabular alcance el exito completo. El valor declarado de `mean_reward` es de 1.00 +/- 0.00 (exito en todas las evaluaciones), aunque el propio campo `verified` de la model card esta marcado como `false`, por lo que se trata de un resultado autodeclarado por el autor y no verificado por HuggingFace.
+El entorno FrozenLake-v1 4x4 es un grid world de 16 casillas con 4 acciones posibles (izquierda, abajo, derecha, arriba), en el que el agente debe ir desde la casilla inicial hasta la meta evitando los agujeros. La variante `no_slippery` implica transiciones deterministas, lo que simplifica enormemente el problema y explica que un agente tabular alcance el exito completo. El valor declarado de `mean_reward` es de 1.00 +/- 0.00 (exito en todas las evaluaciones), aunque el propio campo `verified` de la model card esta marcado como `false`, por lo que se trata de un resultado autodeclarado por el autor y no verificado por Hugging Face.
 
 La relevancia de esta ficha es acotada y conviene ser claro: no compite con modelos generativos ni con agentes de refuerzo profundos, y sus descargas y "likes" son cero. Su utilidad es la de un ejemplo minimo, reproducible y autocontenido de Q-Learning tabular, util para docencia, para pruebas de integracion de pipelines de RL y como linea base trivial contra la que comparar algoritmos mas complejos. No hay informacion disponible sobre el proceso de entrenamiento (hiperparametros, numero de episodios, epsilon-greedy, tasa de aprendizaje) ni sobre la licencia.
 
@@ -30,7 +30,7 @@ La relevancia de esta ficha es acotada y conviene ser claro: no compite con mode
 
 ## Arquitectura y entrenamiento
 
-El artefacto corresponde a un agente de Q-Learning, un metodo de aprendizaje por refuerzo sin modelo (model-free) y off-policy. En su version tabular, Q-Learning mantiene una tabla que asigna a cada par (estado, accion) un valor Q estimado, actualizado iterativamente mediante la ecuacion de Bellman con una tasa de aprendizaje y un factor de descuento. La model card etiqueta explicitamente el modelo como `custom-implementation` junto a `q-learning`, lo que indica que el autor no partio de una libreria estandar como Stable-Baselines3 ni de una implementacion de referencia de HuggingFace, sino de codigo propio.
+El artefacto corresponde a un agente de Q-Learning, un metodo de aprendizaje por refuerzo sin modelo (model-free) y off-policy. En su version tabular, Q-Learning mantiene una tabla que asigna a cada par (estado, accion) un valor Q estimado, actualizado iterativamente mediante la ecuacion de Bellman con una tasa de aprendizaje y un factor de descuento. La model card etiqueta explicitamente el modelo como `custom-implementation` junto a `q-learning`, lo que indica que el autor no partio de una libreria estandar como Stable-Baselines3 ni de una implementacion de referencia de Hugging Face, sino de codigo propio.
 
 No hay informacion disponible sobre el numero de episodios de entrenamiento, la politica de exploracion (por ejemplo, epsilon-greedy con su decaimiento), la tasa de aprendizaje, el factor de descuento ni los criterios de parada. Tampoco se documenta si se aplico alguna tecnica de generalizacion, como discretizacion o aproximacion de funcion; dado el tamano del repositorio (0.0 GB), lo mas plausible es una tabla Q puramente tabular sin red neuronal, pero esto no viene confirmado en la informacion proporcionada. No hubo RLHF, DPO ni etapas de ajuste por preferencias humanas, ya que no se trata de un modelo de lenguaje.
 
@@ -52,12 +52,12 @@ No hay informacion disponible sobre el numero de episodios de entrenamiento, la 
 - Linea base en experimentos de investigacion: cualquier trabajo que proponga un metodo nuevo sobre FrozenLake-v1 4x4 puede comparar contra este agente para reportar la mejora relativa sobre Q-Learning tabular.
 - Pruebas de regresion y CI: dado que el `mean_reward` declarado es 1.00 +/- 0.00, se puede usar como valor de referencia en un test automatizado que falle si una modificacion del entorno o del cargador degrada el rendimiento.
 - Generacion de datos sinteticos de trayectorias: ejecutando el agente se obtienen secuencias estado-accion-recompensa validas y limpias (politica optima conocida), utiles para prototipar tecnicas de imitation learning o de aprendizaje por refuerzo offline.
-- Demostracion de carga de modelos desde el Hub: el fragmento de la model card ilustra el uso de `load_from_hub` con un fichero pickle, por lo que sirve como plantilla para publicar y consumir agentes de RL en HuggingFace.
+- Demostracion de carga de modelos desde el Hub: el fragmento de la model card ilustra el uso de `load_from_hub` con un fichero pickle, por lo que sirve como plantilla para publicar y consumir agentes de RL en Hugging Face.
 - Evaluacion de robustez ante estocasticidad: aunque el modelo esta entrenado para `no_slippery`, se puede probar su comportamiento en la variante resbaladiza del entorno para ilustrar la diferencia entre politicas deterministas y estocasticas (aunque no hay datos publicados sobre este escenario).
 
 ## Benchmarks y rendimiento
 
-Los unicos resultados disponibles son los declarados por el autor en el `model-index` de la model card. No estan verificados por HuggingFace (`verified: false`).
+Los unicos resultados disponibles son los declarados por el autor en el `model-index` de la model card. No estan verificados por Hugging Face (`verified: false`).
 
 | Tarea | Dataset / entorno | Metrica | Valor | Verificado |
 |---|---|---|---|---|
@@ -75,12 +75,12 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos verificables contra otros agentes de FrozenLake publicados en HuggingFace. Como alternativas de la misma categoria se pueden citar, sin cifras concretas:
+No se dispone de datos comparativos verificables contra otros agentes de FrozenLake publicados en Hugging Face. Como alternativas de la misma categoria se pueden citar, sin cifras concretas:
 
 | Modelo | Tipo | Entorno | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ab-naidu/q-FrozenLake-v1-4x4-noSlippery | Q-Learning tabular (custom-implementation) | FrozenLake-v1-4x4-no_slippery | no disponible | HuggingFace, 0 descargas |
-| Agentes Q-Learning de la comunidad HuggingFace (Deep RL Course) | Q-Learning tabular | FrozenLake-v1 (4x4 o 8x8) | variable, segun autor | HuggingFace |
+| ab-naidu/q-FrozenLake-v1-4x4-noSlippery | Q-Learning tabular (custom-implementation) | FrozenLake-v1-4x4-no_slippery | no disponible | Hugging Face, 0 descargas |
+| Agentes Q-Learning de la comunidad Hugging Face (Deep RL Course) | Q-Learning tabular | FrozenLake-v1 (4x4 o 8x8) | variable, segun autor | Hugging Face |
 | Agentes DQN / PPO de Stable-Baselines3 | Red neuronal profunda | FrozenLake-v1 y otros | MIT (libreria) | Repositorio de SB3, no un modelo alojado |
 | Algoritmos de RL de la libreria Gymnasium como referencia | varios (tabulares y profundos) | FrozenLake-v1 | MIT (libreria) | Documentacion y repositorio |
 
@@ -101,6 +101,6 @@ No hay resultados de rendimiento comparables publicados en la informacion dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ab-naidu/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face: https://huggingface.co/ab-naidu/q-FrozenLake-v1-4x4-noSlippery
 - Entorno FrozenLake-v1 (Gymnasium): https://gymnasium.farama.org/environments/toy_text/frozen_lake/ (referencia del entorno, no incluida en los resultados de busqueda)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web proporcionada.

@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tiny-aya-refusal-steering (este repo) | artefactos sobre base de 3,35 mil millones | no disponible | Investigacion de steering de rechazo | other | HuggingFace, 0 descargas |
-| CohereLabs/tiny-aya-global | 3,35 mil millones | no disponible | Modelo base multilingue | ver model card del base | HuggingFace |
-| CohereLabs/aya-expanse-8b | 8 mil millones | no disponible | Juez LLM en la Fase 3A | ver model card del base | HuggingFace |
-| allenai/wildguard | no disponible | no disponible | Juez de seguridad en la Fase 3B | ver model card del base | HuggingFace |
+| tiny-aya-refusal-steering (este repo) | artefactos sobre base de 3,35 mil millones | no disponible | Investigacion de steering de rechazo | other | Hugging Face, 0 descargas |
+| CohereLabs/tiny-aya-global | 3,35 mil millones | no disponible | Modelo base multilingue | ver model card del base | Hugging Face |
+| CohereLabs/aya-expanse-8b | 8 mil millones | no disponible | Juez LLM en la Fase 3A | ver model card del base | Hugging Face |
+| allenai/wildguard | no disponible | no disponible | Juez de seguridad en la Fase 3B | ver model card del base | Hugging Face |
 
 La comparación directa con otros repositorios de steering de rechazo no está disponible en la información proporcionada.
 
@@ -84,7 +84,7 @@ La comparación directa con otros repositorios de steering de rechazo no está d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lvjr3383/tiny-aya-refusal-steering
+- Repositorio Hugging Face: https://huggingface.co/lvjr3383/tiny-aya-refusal-steering
 - Conjunto de datos de evidencias (gated): https://huggingface.co/datasets/lvjr3383/tiny-aya-refusal-steering-evidence
 - Modelo base: https://huggingface.co/CohereLabs/tiny-aya-global
 - Juez de la Fase 3A: https://huggingface.co/CohereLabs/aya-expanse-8b

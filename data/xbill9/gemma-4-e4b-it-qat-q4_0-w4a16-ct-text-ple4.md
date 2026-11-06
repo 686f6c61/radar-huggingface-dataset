@@ -85,7 +85,7 @@ No se dispone de datos para comparar con alternativas de otros desarrolladores n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-q4_0-w4a16-ct-text-ple4
+- Repositorio Hugging Face: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-q4_0-w4a16-ct-text-ple4
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-unquantized
 - Variante W4A16 text-only: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-q4_0-w4a16-ct-text
 - Variante con `embed_tokens` y `lm_head` sin atar: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-q4_0-w4a16-ct-text-emb4

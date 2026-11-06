@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **B4100/cmshtminimax** es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes texto-a-imagen, publicado en HuggingFace bajo el nombre interno "H3CMSHT". Está diseñado para ser usado sobre el modelo base `lynaNSFW/DaSiWa_MiniMax_H3`, que pertenece a la familia de modelos de difusión MiniMax adaptados para contenido explícito. El adaptador tiene un tamaño de repositorio de 0,3 GB y se distribuye a través de la librería `diffusers`.
+El modelo **B4100/cmshtminimax** es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes texto-a-imagen, publicado en Hugging Face bajo el nombre interno "H3CMSHT". Está diseñado para ser usado sobre el modelo base `lynaNSFW/DaSiWa_MiniMax_H3`, que pertenece a la familia de modelos de difusión MiniMax adaptados para contenido explícito. El adaptador tiene un tamaño de repositorio de 0,3 GB y se distribuye a través de la librería `diffusers`.
 
 El propósito declarado del modelo es generar imágenes fotorrealistas de contenido sexual explícito, como se deduce de la descripción multimodal integrada en su model card. No hay información pública sobre el proceso de entrenamiento, los datos utilizados o la arquitectura interna del LoRA más allá de su condición de adaptador para el modelo base mencionado. Su relevancia actual es marginal dentro del ecosistema de generación de imágenes, limitada a un nicho de contenido para adultos, y carece de documentación técnica que permita evaluar su rendimiento.
 
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace: B4100/cmshtminimax](https://huggingface.co/B4100/cmshtminimax)
+- [Modelo en Hugging Face: B4100/cmshtminimax](https://huggingface.co/B4100/cmshtminimax)
 - [Modelo base: lynaNSFW/DaSiWa_MiniMax_H3](https://huggingface.co/lynaNSFW/DaSiWa_MiniMax_H3)
 - [Otros modelos del autor: B4100/v6](https://huggingface.co/B4100/v6)
 - [Otro adaptador del autor: B4100/plug](https://huggingface.co/B4100/plug)

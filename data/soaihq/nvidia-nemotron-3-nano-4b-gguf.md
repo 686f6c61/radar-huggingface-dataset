@@ -85,7 +85,7 @@ No se han proporcionado datos técnicos de modelos alternativos, por lo que los 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| NVIDIA-Nemotron-3-Nano-4B (esta ficha, GGUF de SoAI) | 3.973.556.832 | 262.144 tokens | NVIDIA Nemotron Open Model License | GGUF Q4_K_M y Q8_0 en HuggingFace |
+| NVIDIA-Nemotron-3-Nano-4B (esta ficha, GGUF de SoAI) | 3.973.556.832 | 262.144 tokens | NVIDIA Nemotron Open Model License | GGUF Q4_K_M y Q8_0 en Hugging Face |
 | Alternativas de ~4B con soporte de tool calling (por ejemplo, las familias Qwen3-4B, Gemma 3 4B o Phi-4-mini) | No disponible en la información proporcionada | No disponible | No disponible | No disponible |
 
 Criterio de comparación sugerido: contexto máximo real, soporte de tool calling en streaming, coste de memoria por token de contexto (aquí favorable por la proporción 4/42 capas con atención) y condiciones de la licencia para uso comercial.

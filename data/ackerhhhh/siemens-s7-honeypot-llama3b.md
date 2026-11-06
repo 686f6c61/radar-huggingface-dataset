@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AckerHHHH/siemens-s7-honeypot-llama3B es un ajuste fino (fine-tune) del modelo unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit, publicado por el usuario AckerHHHH en HuggingFace. Se trata de un modelo de 3 210 millones de parámetros (3,21 B) de arquitectura transformer decoder-only, orientado por su nombre a tareas relacionadas con el protocolo Siemens S7 y con entornos de honeypot industrial (PLC). El repositorio tiene un tamano de 0,1 GB y acumula 0 descargas y 1 like en el momento de redactar esta ficha.
+AckerHHHH/siemens-s7-honeypot-llama3B es un ajuste fino (fine-tune) del modelo unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit, publicado por el usuario AckerHHHH en Hugging Face. Se trata de un modelo de 3 210 millones de parámetros (3,21 B) de arquitectura transformer decoder-only, orientado por su nombre a tareas relacionadas con el protocolo Siemens S7 y con entornos de honeypot industrial (PLC). El repositorio tiene un tamano de 0,1 GB y acumula 0 descargas y 1 like en el momento de redactar esta ficha.
 
 Lo mas relevante del modelo es su caracter de derivado: no se publica una model card sustantiva, sino la plantilla estandar de Unsloth con los campos de modelo base y licencia. El autor indica que el entrenamiento se realizo con Unsloth (aproximadamente 2 veces mas rapido que un fine-tune convencional) partiendo de una version del modelo base ya cuantizada en 4 bits con bitsandbytes. Esto implica que los pesos resultantes heredan las caracteristicas de Llama 3.2 3B Instruct: 128 000 tokens de contexto teorico, soporte multilingue oficial de ocho idiomas y licencia Apache 2.0 en este repositorio concreto.
 
@@ -72,7 +72,7 @@ Las cifras siguientes son estimaciones orientativas derivadas del tamano del mod
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| AckerHHHH/siemens-s7-honeypot-llama3B | 3,21 B | 128 000 tokens (heredado del base, no confirmado) | Apache 2.0 | HuggingFace, 0 descargas, 1 like | Sin benchmarks ni model card sustantiva |
+| AckerHHHH/siemens-s7-honeypot-llama3B | 3,21 B | 128 000 tokens (heredado del base, no confirmado) | Apache 2.0 | Hugging Face, 0 descargas, 1 like | Sin benchmarks ni model card sustantiva |
 | meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128 000 tokens | Llama 3.2 Community License | Ampliamente disponible | Modelo base de referencia; no permite uso comercial sin condiciones para entidades grandes |
 | Qwen/Qwen2.5-3B-Instruct | 3,09 B | 32 768 tokens | Apache 2.0 | Ampliamente disponible | Alternativa con licencia permisiva y mejor documentacion multilingue |
 | microsoft/Phi-3.5-mini-instruct | 3,8 B | 128 000 tokens | MIT | Ampliamente disponible | Enfocado a razonamiento y codigo, con licencia muy permisiva |
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos para este fine-tune concreto,
 - Riesgo elevado de alucinacion en el dominio industrial: el modelo base no ha sido entrenado sobre el protocolo S7comm ni sobre documentacion tecnica de PLC, por lo que puede generar tramas, direcciones o comandos plausibles pero incorrectos.
 - Idioma: el repositorio solo declara ingles. El uso en castellano no esta garantizado, aunque el modelo base incluya espanol entre sus idiomas oficiales.
 - Sesgos: al no documentarse el dataset de ajuste, no es posible caracterizar los sesgos introducidos; el modelo base presenta sesgos conocidos de los corpus web en ingles.
-- Uso dual y consideraciones eticas y legales: un modelo orientado a emular un PLC Siemens S7 puede emplearse tanto en defensa como para generar scripts de ataque. El uso ofensivo contra sistemas de terceros es ilegal en Espana y en la Union Europea (Ley Organica 10/1995, Directiva 2013/40/UE) y vulnera las condiciones de uso de HuggingFace.
+- Uso dual y consideraciones eticas y legales: un modelo orientado a emular un PLC Siemens S7 puede emplearse tanto en defensa como para generar scripts de ataque. El uso ofensivo contra sistemas de terceros es ilegal en Espana y en la Union Europea (Ley Organica 10/1995, Directiva 2013/40/UE) y vulnera las condiciones de uso de Hugging Face.
 - Licencia: el repositorio declara Apache 2.0, pero al derivar de Llama 3.2 conviene verificar la compatibilidad con la Llama 3.2 Community License y sus condiciones de uso comercial, marca y redistribucion.
 - Descargas nulas y 1 solo like: no existe comunidad de usuarios ni evidencia de uso en produccion. No se recomienda su adopcion sin una validacion exhaustiva previa.
 - Tamano del repositorio de 0,1 GB: sugiere que el contenido podria ser un adaptador LoRA o un subconjunto parcial de pesos en lugar del modelo completo. Debe verificarse la lista de archivos antes de intentar cargarlo.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativos para este fine-tune concreto,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AckerHHHH/siemens-s7-honeypot-llama3B
+- Repositorio en Hugging Face: https://huggingface.co/AckerHHHH/siemens-s7-honeypot-llama3B
 - Modelo base: https://huggingface.co/unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - HoneyPLC, honeypot de alta interaccion para PLC: https://github.com/sefcom/honeyplc

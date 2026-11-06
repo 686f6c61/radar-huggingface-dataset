@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jack1211son/abdta-multi-task-v4-0pct-4x-train-dist | 434 M | 256 tokens | Tono + aspectos financieros (multitarea) | no disponible | HuggingFace, 0 descargas |
-| microsoft/deberta-v3-large | 435 M | 512 tokens | Clasificación general (fine-tuning) | MIT | HuggingFace, ampliamente usado |
-| FinBERT (ProsusAI/finbert) | 110 M | 512 tokens | Sentimiento financiero (3 clases) | Apache 2.0 | HuggingFace, muy usado |
-| DeBERTa-v3-base | 86 M | 512 tokens | Clasificación general | MIT | HuggingFace |
+| jack1211son/abdta-multi-task-v4-0pct-4x-train-dist | 434 M | 256 tokens | Tono + aspectos financieros (multitarea) | no disponible | Hugging Face, 0 descargas |
+| microsoft/deberta-v3-large | 435 M | 512 tokens | Clasificación general (fine-tuning) | MIT | Hugging Face, ampliamente usado |
+| FinBERT (ProsusAI/finbert) | 110 M | 512 tokens | Sentimiento financiero (3 clases) | Apache 2.0 | Hugging Face, muy usado |
+| DeBERTa-v3-base | 86 M | 512 tokens | Clasificación general | MIT | Hugging Face |
 
 La comparativa se limita a la arquitectura base y a alternativas de sentimiento financiero; no hay datos de rendimiento del modelo ABDTA que permitan una comparación cuantitativa. FinBERT cubre solo tono, sin granularidad de aspecto, y está entrenado en inglés financiero general, no en informes anuales indonesios.
 
@@ -86,7 +86,7 @@ La comparativa se limita a la arquitectura base y a alternativas de sentimiento 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jack1211son/abdta-multi-task-v4-0pct-4x-train-dist
+- Modelo en Hugging Face: https://huggingface.co/jack1211son/abdta-multi-task-v4-0pct-4x-train-dist
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-large
 - Paper de DeBERTa-v3: https://arxiv.org/abs/2111.09543
 - Repositorio de DeBERTa: https://github.com/microsoft/DeBERTa

@@ -68,7 +68,7 @@ El autor señala explícitamente que las cohortes de evaluación son pequeñas y
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Snowball 67B A2B Identity Path B A13 | 67,08 B (MoE) | 8192 | openmdw-1.1 | HuggingFace, 4 descargas |
+| Snowball 67B A2B Identity Path B A13 | 67,08 B (MoE) | 8192 | openmdw-1.1 | Hugging Face, 4 descargas |
 | Marin Snowball v0.1 (ADC0078a) | no disponible | no disponible | no disponible | Referencia base citada en la model card |
 | Receta A8a (variante previa) | no disponible | no disponible | no disponible | Referencia comparativa citada en la model card |
 
@@ -89,6 +89,6 @@ No se dispone de datos de benchmarks de modelos externos comparables en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Identity-PathB-A13-2026.10.30
+- Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Identity-PathB-A13-2026.10.30
 - Origen de datos S3 citado en la model card: s3://marin-rno2a/marin/checkpoints/karan/snowball-identity-pathb/A13-u36/
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

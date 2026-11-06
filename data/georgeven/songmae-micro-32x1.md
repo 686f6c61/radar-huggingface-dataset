@@ -6,7 +6,7 @@ SongMAE-Micro 32x1 es un autoencoder enmascarado (masked autoencoder) desarrolla
 
 Con solo 1.751.873 parámetros, este checkpoint "Micro" fue preentrenado durante 500.000 pasos sobre el subconjunto XCL de BirdSet, compuesto por 528.434 grabaciones de Xeno-Canto que suman 7.562 horas de audio. El modelo está diseñado como un encoder congelado y compacto para tareas de recuperación, visualización, agrupamiento y sondas de evaluación en bioacústica, y se distribuye bajo licencia MIT con pesos en formato safetensors.
 
-La relevancia de este modelo radica en que aborda la representación de cantos de aves con una resolución de 5 ms, argumentando que la forma del parche es un sesgo inductivo clave en lugar de un parámetro de ajuste. Está disponible en HuggingFace con código personalizado y se acompaña de un preprint en bioRxiv y una presentación en NeurIPS 2025.
+La relevancia de este modelo radica en que aborda la representación de cantos de aves con una resolución de 5 ms, argumentando que la forma del parche es un sesgo inductivo clave en lugar de un parámetro de ajuste. Está disponible en Hugging Face con código personalizado y se acompaña de un preprint en bioRxiv y una presentación en NeurIPS 2025.
 
 ## Especificaciones tecnicas
 
@@ -70,11 +70,11 @@ No se han publicado resultados de benchmarks cuantitativos en la información di
 
 | Modelo | Parametros | Resolucion temporal | Preentrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SongMAE-Micro 32x1 | 1,75 M | 5 ms | 7.562 h de Xeno-Canto (XCL) | MIT | HuggingFace, GitHub |
-| SongMAE (otros checkpoints de la coleccion) | no disponible | variable segun configuracion de parche | mismo subconjunto XCL | MIT | HuggingFace (coleccion) |
+| SongMAE-Micro 32x1 | 1,75 M | 5 ms | 7.562 h de Xeno-Canto (XCL) | MIT | Hugging Face, GitHub |
+| SongMAE (otros checkpoints de la coleccion) | no disponible | variable segun configuracion de parche | mismo subconjunto XCL | MIT | Hugging Face (coleccion) |
 | TinyBird (predecesor) | no disponible | no disponible | no disponible | no disponible | GitHub (refactorizado en SongMAE) |
 
-No se dispone de información suficiente sobre otros encoders bioacústicos comparables (como BirdNET o Perch) en los materiales proporcionados para establecer una comparativa cuantitativa fiable. La colección de HuggingFace del autor incluye otros checkpoints de SongMAE con distintas configuraciones de parche, que serían la comparación natural dentro de la misma familia de modelos.
+No se dispone de información suficiente sobre otros encoders bioacústicos comparables (como BirdNET o Perch) en los materiales proporcionados para establecer una comparativa cuantitativa fiable. La colección de Hugging Face del autor incluye otros checkpoints de SongMAE con distintas configuraciones de parche, que serían la comparación natural dentro de la misma familia de modelos.
 
 ## Limitaciones y advertencias
 
@@ -83,13 +83,13 @@ No se dispone de información suficiente sobre otros encoders bioacústicos comp
 - Contexto limitado a 5 segundos: las representaciones no atienden a través de los límites de contexto; las grabaciones largas se procesan como contextos independientes, perdiendo información de largo alcance.
 - Generalización condicionada: las condiciones de campo y los taxones distintos de la distribución de preentrenamiento pueden requerir validación o adaptación antes de su uso en producción.
 - Sin benchmarks cuantitativos: los autores reconocen la ausencia de evaluaciones comparativas formales, lo que dificulta verificar su rendimiento relativo frente a alternativas.
-- Dependencia de código personalizado: el uso requiere `trust_remote_code=True`, lo que implica ejecutar código del autor no auditado por HuggingFace.
+- Dependencia de código personalizado: el uso requiere `trust_remote_code=True`, lo que implica ejecutar código del autor no auditado por Hugging Face.
 - Sin soporte multilingüe ni multimodal: el modelo es exclusivamente de audio bioacústico y no procesa texto ni otras modalidades.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/georgeven/songmae-micro-32x1
-- Colección SongMAE en HuggingFace: https://huggingface.co/collections/georgeven/songmae-a-bioacoustic-encoder-for-birdsong-6a91eb9c42e5cde53962fbec
+- Modelo en Hugging Face: https://huggingface.co/georgeven/songmae-micro-32x1
+- Colección SongMAE en Hugging Face: https://huggingface.co/collections/georgeven/songmae-a-bioacoustic-encoder-for-birdsong-6a91eb9c42e5cde53962fbec
 - Preprint en bioRxiv: https://www.biorxiv.org/content/10.64898/2026.08.17.745361v1
 - Repositorio de código: https://github.com/georgevenven/SongMAE
 - README del repositorio: https://github.com/georgevenven/SongMAE/blob/main/readme.md

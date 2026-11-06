@@ -86,7 +86,7 @@ No se dispone de informacion suficiente para comparar con alternativas de la mis
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/experimentalmachines/LFM2.5-2.6B-ExecuTorch-XNNPACK-32k
+- Hugging Face del modelo: https://huggingface.co/experimentalmachines/LFM2.5-2.6B-ExecuTorch-XNNPACK-32k
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Licencia: https://huggingface.co/LiquidAI/LFM2.5-2.6B/blob/main/LICENSE
 - Estudio de ventanas: https://alpharomercoma.github.io/openweights/window.html

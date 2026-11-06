@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`quartzort/athena_base` es un modelo de lenguaje publicado en HuggingFace por el usuario `quartzort`, con un total de 8.030.261.312 parametros (aproximadamente 8,03 mil millones) segun los pesos almacenados en formato safetensors. El repositorio ocupa 4,9 GB y las etiquetas asociadas son `gguf`, `endpoints_compatible`, `region:us`, `imatrix` y `conversational`, lo que indica que existe al menos una version cuantizada en formato GGUF generada con informacion de importancia (imatrix) y que el modelo esta orientado a uso conversacional.
+`quartzort/athena_base` es un modelo de lenguaje publicado en Hugging Face por el usuario `quartzort`, con un total de 8.030.261.312 parametros (aproximadamente 8,03 mil millones) segun los pesos almacenados en formato safetensors. El repositorio ocupa 4,9 GB y las etiquetas asociadas son `gguf`, `endpoints_compatible`, `region:us`, `imatrix` y `conversational`, lo que indica que existe al menos una version cuantizada en formato GGUF generada con informacion de importancia (imatrix) y que el modelo esta orientado a uso conversacional.
 
-La ficha de HuggingFace no aporta informacion sobre arquitectura, licencia, idiomas soportados ni pipeline declarado, y no se ha publicado ninguna documentacion tecnica, paper o nota de version asociada. Tampoco existe, en los resultados de busqueda disponibles, material que corresponda a este modelo concreto: las referencias encontradas apuntan a proyectos homonimos sin relacion (el framework de reconocimiento de voz `athena-team/athena`, el repositorio `zoadrazorro/Athena-Recursive-AI`, una LoRA de FLUX en Modelers.cn y el modelo `TheBloke/Athena-v2-AWQ`).
+La ficha de Hugging Face no aporta informacion sobre arquitectura, licencia, idiomas soportados ni pipeline declarado, y no se ha publicado ninguna documentacion tecnica, paper o nota de version asociada. Tampoco existe, en los resultados de busqueda disponibles, material que corresponda a este modelo concreto: las referencias encontradas apuntan a proyectos homonimos sin relacion (el framework de reconocimiento de voz `athena-team/athena`, el repositorio `zoadrazorro/Athena-Recursive-AI`, una LoRA de FLUX en Modelers.cn y el modelo `TheBloke/Athena-v2-AWQ`).
 
 Por tanto, esta ficha recoge los datos verificables del repositorio y marca explicitamente como "no disponible" todo aquello que no se puede confirmar. Es relevante en la medida en que se trata de un modelo de ~8B con cuantizacion GGUF ya publicada, un tamano que cabe en GPU de consumo, pero su evaluacion seria requiere que el autor publique informacion sobre datos de entrenamiento, licencia y rendimiento.
 
@@ -36,7 +36,7 @@ Tampoco se dispone de datos sobre el corpus de entrenamiento: numero de tokens, 
 La informacion disponible solo permite afirmar lo siguiente:
 
 - Generacion de texto conversacional: la etiqueta `conversational` sugiere que el modelo esta preparado para dialogos multi-turno, aunque no se detalla el formato de plantilla de chat utilizado.
-- Despliegue en endpoints compatibles: la etiqueta `endpoints_compatible` indica compatibilidad con el estandar de endpoints de inferencia de HuggingFace.
+- Despliegue en endpoints compatibles: la etiqueta `endpoints_compatible` indica compatibilidad con el estandar de endpoints de inferencia de Hugging Face.
 - Inferencia cuantizada en CPU y GPU: la presencia de pesos GGUF con imatrix permite ejecutar el modelo con llama.cpp y herramientas derivadas.
 - Capacidades especificas (razonamiento, codigo, matematicas, tool calling, agentes, vision, audio, modo thinking): no disponibles.
 - Soporte multilingue: no disponible. No se ha declarado ningun idioma.
@@ -103,7 +103,7 @@ La diferencia practica mas relevante no es de rendimiento, que no se puede contr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/quartzort/athena_base
+- Modelo en Hugging Face: https://huggingface.co/quartzort/athena_base
 - Perfil del autor: https://huggingface.co/quartzort
 
 Resultados de busqueda no relacionados con este modelo (homónimos, se incluyen solo para descartar confusion):

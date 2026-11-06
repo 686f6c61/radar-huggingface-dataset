@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gala es un modelo conversacional centrado en catalán, desarrollado por el usuario independiente luispoveda93 y publicado en HuggingFace. Se trata de un ajuste fino por SFT del modelo multimodal Qwen/Qwen3.5-0.8B (852.985.920 parámetros), entrenado sobre datos de chat en catalán procedentes de BSC-LT y projecte-aina. El objetivo es claro: mejorar el rendimiento del modelo base en tareas de instrucción, alineación y conocimiento cultural catalán, un nicho donde los modelos pequeños generalistas rinden de forma deficiente.
+Gala es un modelo conversacional centrado en catalán, desarrollado por el usuario independiente luispoveda93 y publicado en Hugging Face. Se trata de un ajuste fino por SFT del modelo multimodal Qwen/Qwen3.5-0.8B (852.985.920 parámetros), entrenado sobre datos de chat en catalán procedentes de BSC-LT y projecte-aina. El objetivo es claro: mejorar el rendimiento del modelo base en tareas de instrucción, alineación y conocimiento cultural catalán, un nicho donde los modelos pequeños generalistas rinden de forma deficiente.
 
 La relevancia del modelo es doble. Por un lado, demuestra que un ajuste fino LoRA de bajo rango (r=16, α=32) sobre un modelo de menos de mil millones de parámetros puede producir mejoras medibles en benchmarks catalanes concretos, con un coste de entrenamiento de poco más de 21 horas en una única GPU T4. Por otro, se publica con licencia Apache-2.0, lo que facilita su reutilización y experimentación sin las restricciones de otros conjuntos de datos catalanes con licencias más restrictivas.
 
@@ -80,10 +80,10 @@ Gala mejora al base en 7 de las 10 mediciones reportadas, con las mayores gananc
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gala | 853 M | No disponible | Chat catalán (SFT sobre Qwen3.5-0.8B) | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 853 M | No disponible | Multimodal generalista | Apache-2.0 | HuggingFace |
-| MiniCPM5-2B-catalan-chat-v2 (mismo autor) | 2,5 B | No disponible | Chat catalán multi-turno | No disponible en la información | HuggingFace y GGUF |
-| MiniCPM5-2B-catalan-chat (mismo autor) | 2,5 B | No disponible | SFT de instrucciones sobre InstruCAT | No disponible en la información | HuggingFace y GGUF |
+| Gala | 853 M | No disponible | Chat catalán (SFT sobre Qwen3.5-0.8B) | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 853 M | No disponible | Multimodal generalista | Apache-2.0 | Hugging Face |
+| MiniCPM5-2B-catalan-chat-v2 (mismo autor) | 2,5 B | No disponible | Chat catalán multi-turno | No disponible en la información | Hugging Face y GGUF |
+| MiniCPM5-2B-catalan-chat (mismo autor) | 2,5 B | No disponible | SFT de instrucciones sobre InstruCAT | No disponible en la información | Hugging Face y GGUF |
 
 La comparación directa con el base es la más relevante: Gala mejora en instrucciones, alineación y conocimiento cultural catalán, pero pierde en extracción de respuestas (xquad-ca) y ligeramente en sesgos (CaBBQ). Frente a los modelos de 2,5 B del mismo autor, Gala es más pequeño y probablemente más rápido de desplegar, pero con menor capacidad absoluta; no se dispone de benchmarks comparativos entre ellos en la información proporcionada.
 
@@ -100,7 +100,7 @@ La comparación directa con el base es la más relevante: Gala mejora en instruc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luispoveda93/Gala
+- Modelo en Hugging Face: https://huggingface.co/luispoveda93/Gala
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset ALIA-2606-SFT: https://huggingface.co/datasets/BSC-LT/ALIA-2606-SFT
 - Dataset MentorCA: https://huggingface.co/datasets/projecte-aina/MentorCA

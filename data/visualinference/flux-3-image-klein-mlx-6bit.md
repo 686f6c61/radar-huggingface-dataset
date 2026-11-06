@@ -115,7 +115,7 @@ Frente al modelo base en BF16, esta conversion obtiene 30,1 dB en la comparacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VisualInference/FLUX-3-Image-Klein-MLX-6bit
+- Repositorio Hugging Face: https://huggingface.co/VisualInference/FLUX-3-Image-Klein-MLX-6bit
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Repo hermano en 8 bits: https://huggingface.co/VisualInference/FLUX-3-Image-Klein-MLX-8bit
 - Upsampler de prompts en 4 bits: https://huggingface.co/VisualInference/FLUX-3-Image-Klein-pup-MLX-4bit

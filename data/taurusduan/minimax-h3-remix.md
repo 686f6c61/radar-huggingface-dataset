@@ -74,9 +74,9 @@ No se dispone de datos comparativos publicados. El modelo es un remix del MiniMa
 
 ## Enlaces
 
-- [HuggingFace - taurusduan/MiniMax-H3-Remix](https://huggingface.co/taurusduan/MiniMax-H3-Remix)
-- [HuggingFace - taurusduan/MiniMax-H3 (modelo base)](https://huggingface.co/taurusduan/MiniMax-H3)
-- [HuggingFace - taurusduan/MiniMax-H3-Realism-People-LoRA](https://huggingface.co/taurusduan/MiniMax-H3-Realism-People-LoRA)
+- [Hugging Face - taurusduan/MiniMax-H3-Remix](https://huggingface.co/taurusduan/MiniMax-H3-Remix)
+- [Hugging Face - taurusduan/MiniMax-H3 (modelo base)](https://huggingface.co/taurusduan/MiniMax-H3)
+- [Hugging Face - taurusduan/MiniMax-H3-Realism-People-LoRA](https://huggingface.co/taurusduan/MiniMax-H3-Realism-People-LoRA)
 - [Civitai - MiniMax H3 Remix](https://civitai.red/models/2879272/minimax-h3-remix)
 - [GitHub - ComfyUI-FeiHou-Easy-H3](https://github.com/FX-FeiHou/ComfyUI-FeiHou-Easy-H3)
 - [GitHub - MiniMax-AI/MiniMax-H3](https://github.com/MiniMax-AI/MiniMax-H3)

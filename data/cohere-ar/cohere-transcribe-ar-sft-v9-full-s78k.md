@@ -6,7 +6,7 @@ Cohere-AR/cohere-transcribe-ar-sft-v9-full-s78k es un modelo de reconocimiento a
 
 El modelo se publica bajo la librería transformers con pesos en formato safetensors y un tamaño de repositorio de 4,1 GB, lo que sugiere pesos en precisión de 16 bits. La relevancia actual radica en la escasez de modelos ASR abiertos que cubran de forma específica el bilingüismo árabe-inglés en dominios telefónicos, un caso frecuente en atención al cliente y centros de contacto en regiones del Golfo y Oriente Medio.
 
-El acceso al repositorio está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos. No se ha publicado información sobre licencia, composición del dataset de entrenamiento ni resultados de benchmarks en la documentación disponible.
+El acceso al repositorio está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos. No se ha publicado información sobre licencia, composición del dataset de entrenamiento ni resultados de benchmarks en la documentación disponible.
 
 ## Especificaciones tecnicas
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cohere-AR/cohere-transcribe-ar-sft-v9-full-s78k | 2,07 B | no disponible | ar, en | no disponible | gated en HuggingFace |
+| Cohere-AR/cohere-transcribe-ar-sft-v9-full-s78k | 2,07 B | no disponible | ar, en | no disponible | gated en Hugging Face |
 | CohereLabs/cohere-transcribe-arabic-07-2026 (modelo base) | no disponible | no disponible | ar (presumiblemente) | no disponible | no disponible |
-| Whisper large-v3 (OpenAI) | ~1,55 B | 30 s de audio por ventana | multilingüe (incluye ar y en) | MIT | abierto en HuggingFace |
-| MMS (Meta) | ~1 B (por idioma) | no disponible | más de 1.100 idiomas | CC-BY-NC | abierto en HuggingFace |
+| Whisper large-v3 (OpenAI) | ~1,55 B | 30 s de audio por ventana | multilingüe (incluye ar y en) | MIT | abierto en Hugging Face |
+| MMS (Meta) | ~1 B (por idioma) | no disponible | más de 1.100 idiomas | CC-BY-NC | abierto en Hugging Face |
 
 La comparativa se limita a referencias generales de la categoría ASR; no se dispone de datos de rendimiento del modelo evaluado que permitan una comparación cuantitativa con Whisper large-v3 o MMS. La ventaja diferencial del modelo de Cohere-AR es su especialización declarada en code-switching árabe-inglés y audio telefónico, frente al enfoque multilingüe genérico de las alternativas.
 
@@ -76,7 +76,7 @@ La comparativa se limita a referencias generales de la categoría ASR; no se dis
 - Riesgo de alucinación en ASR: posible generación de texto plausible no presente en el audio, especialmente en segmentos ruidosos o con solapamiento de hablantes.
 - Limitación de idiomas: solo ar y en según los metadatos; no se garantiza comportamiento en otras lenguas ni en mezclas con terceros idiomas.
 - Licencia no disponible: no puede confirmarse el uso comercial; es imprescindible verificar las condiciones del repositorio y del modelo base antes de desplegarlo en producción.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede añadir fricción en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede añadir fricción en pipelines automatizados.
 - Sin benchmarks publicados: no hay evidencia cuantitativa de calidad (WER/CER) frente a alternativas, lo que dificulta la evaluación previa.
 - Modelo con 0 descargas y 0 likes en el momento de la consulta: madurez y soporte comunitario limitados.
 - El sufijo `s78k` sugiere un conjunto de ajuste relativamente pequeño; posible sobreajuste a dominios concretos no documentados.
@@ -84,7 +84,7 @@ La comparativa se limita a referencias generales de la categoría ASR; no se dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-sft-v9-full-s78k
+- Hugging Face: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-sft-v9-full-s78k
 - Modelo base: https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026
 - Cohere (sitio corporativo): https://cohere.com/
 - Documentación de la plataforma Cohere: https://docs.cohere.com/docs/the-cohere-platform

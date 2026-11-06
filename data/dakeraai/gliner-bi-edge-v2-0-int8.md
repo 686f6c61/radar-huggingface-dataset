@@ -98,7 +98,7 @@ No se dispone en la información proporcionada de datos de rendimiento comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DakeraAI/gliner-bi-edge-v2.0-int8
+- Modelo en Hugging Face: https://huggingface.co/DakeraAI/gliner-bi-edge-v2.0-int8
 - Modelo base original: https://huggingface.co/knowledgator/gliner-bi-edge-v2.0
 - Licencia: https://huggingface.co/DakeraAI/gliner-bi-edge-v2.0-int8/blob/main/LICENSE
 - Web de Dakera: https://dakera.ai

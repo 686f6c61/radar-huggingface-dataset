@@ -16,7 +16,7 @@ El interes practico radica en tres puntos: la relacion entre parametros totales 
 | Parametros activos | ~3 B por token (MoE) |
 | Longitud de contexto | 262.144 tokens nativo; extensible a 1.000.000 con YaRN |
 | Tipos de cuantizacion | GGUF en multiples niveles; el autor recomienda APEX y Q8_K_P; etiquetado como imatrix |
-| Idiomas soportados | Ingles, chino y multilingue (la model card declara 201 idiomas; metadatos de HuggingFace: en, zh, multilingual) |
+| Idiomas soportados | Ingles, chino y multilingue (la model card declara 201 idiomas; metadatos de Hugging Face: en, zh, multilingual) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (texto); la vision requiere un fichero mmproj adicional |
 | Tamano del repositorio | 145,1 GB |
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-GGUF | ~34,66 B | ~3 B | 262.144 (1 M con YaRN) | Apache 2.0 | GGUF, HuggingFace |
-| Qwen3-30B-A3B (referencia publica) | ~30 B | ~3 B | 128.000 | Apache 2.0 | HuggingFace |
-| Mixtral 8x7B (referencia publica) | ~46,7 B | ~12,9 B | 32.000 | Apache 2.0 | HuggingFace |
-| DeepSeek-V3 (referencia publica) | ~671 B | ~37 B | 128.000 | Licencia propia | HuggingFace |
+| Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-GGUF | ~34,66 B | ~3 B | 262.144 (1 M con YaRN) | Apache 2.0 | GGUF, Hugging Face |
+| Qwen3-30B-A3B (referencia publica) | ~30 B | ~3 B | 128.000 | Apache 2.0 | Hugging Face |
+| Mixtral 8x7B (referencia publica) | ~46,7 B | ~12,9 B | 32.000 | Apache 2.0 | Hugging Face |
+| DeepSeek-V3 (referencia publica) | ~671 B | ~37 B | 128.000 | Licencia propia | Hugging Face |
 
 Nota: los valores de los modelos de referencia proceden de informacion publica general y no de la informacion proporcionada en esta busqueda; los datos concretos de rendimiento comparado no estan disponibles.
 
@@ -88,7 +88,7 @@ Nota: los valores de los modelos de referencia proceden de informacion publica g
 - La informacion disponible no detalla la composicion del dataset de entrenamiento ni si se aplicaron tecnicas de alineacion, lo que dificulta evaluar sesgos conocidos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/yuhanb/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-GGUF
+- Modelo en Hugging Face: https://huggingface.co/yuhanb/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-GGUF
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Ajuste fino Hermes de referencia: https://huggingface.co/DJLougen/hermes-qwen3.5-35b-a3b-GGUF
 - Plantilla de chat recomendada: https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates/raw/main/chat_template.jinja

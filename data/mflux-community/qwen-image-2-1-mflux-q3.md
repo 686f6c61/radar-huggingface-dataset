@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: el repositorio ocupa 8,7 GB, por lo que se necesita al menos esa cantidad de memoria unificada mas el overhead del runtime y de la generacion a la resolucion elegida.
 - GPU recomendadas: Apple Silicon exclusivamente (M1, M2, M3, M4 y sus variantes Pro, Max y Ultra), dado que el formato es MLX.
 - Cabe en consumer GPU: si, en Macs con memoria unificada suficiente; no es compatible con GPUs NVIDIA o AMD convencionales sin reconversion.
-- Opciones de despliegue: MFlux (CLI `mflux-generate-qwen-2.1`), con descarga automatica desde HuggingFace o uso de una copia local via `--model`.
+- Opciones de despliegue: MFlux (CLI `mflux-generate-qwen-2.1`), con descarga automatica desde Hugging Face o uso de una copia local via `--model`.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen-image-2-1-mflux-q3 | no disponible | no disponible | MLX safetensors (3 bits) | qwen-research | HuggingFace, 767 descargas |
-| Qwen-Image-2.1 (BF16) | no disponible | no disponible | safetensors | qwen-research | HuggingFace (modelo base) |
-| qwen-image-2-1-mflux-q8 | no disponible | no disponible | MLX safetensors (8 bits) | qwen-research | HuggingFace, 18,5 GB |
-| qwen-image-2-1-mflux-bf16 | no disponible | no disponible | MLX safetensors (BF16) | qwen-research | HuggingFace, 33,1 GB |
+| qwen-image-2-1-mflux-q3 | no disponible | no disponible | MLX safetensors (3 bits) | qwen-research | Hugging Face, 767 descargas |
+| Qwen-Image-2.1 (BF16) | no disponible | no disponible | safetensors | qwen-research | Hugging Face (modelo base) |
+| qwen-image-2-1-mflux-q8 | no disponible | no disponible | MLX safetensors (8 bits) | qwen-research | Hugging Face, 18,5 GB |
+| qwen-image-2-1-mflux-bf16 | no disponible | no disponible | MLX safetensors (BF16) | qwen-research | Hugging Face, 33,1 GB |
 
 La comparativa se limita a las variantes del mismo modelo publicadas por mflux-community, ya que la informacion proporcionada no incluye datos de modelos de difusion alternativos con los que contrastar parametros o rendimiento.
 
@@ -83,7 +83,7 @@ La comparativa se limita a las variantes del mismo modelo publicadas por mflux-c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mflux-community/qwen-image-2-1-mflux-q3
+- Repositorio Hugging Face: https://huggingface.co/mflux-community/qwen-image-2-1-mflux-q3
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - Repositorio MFlux: https://github.com/filipstrand/mflux

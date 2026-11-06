@@ -84,5 +84,5 @@ No obstante, no hay datos objetivos de comparación en la información proporcio
 - Checkpoint hermano (época 2, paso 50000, sin NoWindow): https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-2-step-50000
 - Checkpoint otro punto de entrenamiento (época 7, paso 185000): https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-7-step-185000
 - Implementación oficial de EAGLE para Qwen3: https://github.com/Yunhai-Hu/EAGLE-Qwen3
-- Modelo objetivo Qwen3-4B-Instruct-2507 (HuggingFace): https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+- Modelo objetivo Qwen3-4B-Instruct-2507 (Hugging Face): https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Ficha del modelo base en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507

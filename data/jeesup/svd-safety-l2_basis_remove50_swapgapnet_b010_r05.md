@@ -111,7 +111,7 @@ La diferencia fundamental no es de tamano sino de finalidad: los tres modelos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010_r05
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010_r05
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Referencia citada en la model card: Basis Sharing, ICLR 2025 (no se ha facilitado enlace en la informacion disponible)
 - La busqueda web realizada no ha devuelto resultados relevantes sobre este modelo ni sobre la tecnica: los unicos resultados obtenidos corresponden a paginas biograficas sobre Andrew Jackson, sin relacion con el contenido de esta ficha. No se dispone por tanto de enlaces adicionales a papers, blogs, repositorios o demos.

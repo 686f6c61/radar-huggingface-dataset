@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo BAAI/Recon2Reason-Reasoning-4B es un modelo publicado por el Beijing Academy of Artificial Intelligence (BAAI) bajo licencia Apache-2.0. Según la información disponible en su ficha de HuggingFace, se trata de un modelo orientado a tareas de razonamiento, como sugiere su nombre, con un tamaño aparente de 4 mil millones de parámetros. Sin embargo, la model card no proporciona detalles técnicos, arquitectónicos ni de rendimiento, por lo que no es posible confirmar estas características con datos oficiales.
+El modelo BAAI/Recon2Reason-Reasoning-4B es un modelo publicado por el Beijing Academy of Artificial Intelligence (BAAI) bajo licencia Apache-2.0. Según la información disponible en su ficha de Hugging Face, se trata de un modelo orientado a tareas de razonamiento, como sugiere su nombre, con un tamaño aparente de 4 mil millones de parámetros. Sin embargo, la model card no proporciona detalles técnicos, arquitectónicos ni de rendimiento, por lo que no es posible confirmar estas características con datos oficiales.
 
 Este modelo se publicó el 3 de septiembre de 2026 y no cuenta todavía con descargas ni valoraciones en la comunidad, lo que indica que es un lanzamiento muy reciente y sin evaluación pública. Su relevancia potencial radica en que BAAI es un instituto de investigación conocido por modelos abiertos como la serie Aquila, y esta nueva propuesta podría contribuir al ecosistema de modelos de razonamiento de tamaño medio, aunque aún no hay evidencia empírica que lo respalde.
 
@@ -55,4 +55,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/BAAI/Recon2Reason-Reasoning-4B)
+- [Modelo en Hugging Face](https://huggingface.co/BAAI/Recon2Reason-Reasoning-4B)

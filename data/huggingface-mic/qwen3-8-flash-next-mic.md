@@ -66,8 +66,8 @@ No disponible. No existen modelos comparables en la misma categoria porque este 
 
 | Modelo | Parametros | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-Flash-Next-mic | 353,9M (4 capas, pesos aleatorios) | Fixture de integracion y CI | no disponible | HuggingFace (267 descargas) |
-| Qwen/Qwen3.8-Flash-Next | no disponible en la informacion proporcionada | Modelo multimodal real | no disponible | HuggingFace (modelo base) |
+| Qwen3.8-Flash-Next-mic | 353,9M (4 capas, pesos aleatorios) | Fixture de integracion y CI | no disponible | Hugging Face (267 descargas) |
+| Qwen/Qwen3.8-Flash-Next | no disponible en la informacion proporcionada | Modelo multimodal real | no disponible | Hugging Face (modelo base) |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No disponible. No existen modelos comparables en la misma categoria porque este 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/Qwen3.8-Flash-Next-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/Qwen3.8-Flash-Next-mic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Manifest de contrato: https://huggingface.co/huggingface-mic/Qwen3.8-Flash-Next-mic/blob/main/integration.json
 - Uso con Transformers: https://huggingface.co/huggingface-mic/Qwen3.8-Flash-Next-mic/blob/main/integrations/transformers/usage.md

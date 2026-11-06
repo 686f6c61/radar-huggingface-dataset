@@ -12,7 +12,7 @@ La relevancia del modelo es acotada: se trata de un artefacto de nicho, con cero
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder tipo BERT-base (etiqueta `bert` en HuggingFace); ajuste fino de `indobenchmark/indobert-base-p2` |
+| Arquitectura | Transformer encoder tipo BERT-base (etiqueta `bert` en Hugging Face); ajuste fino de `indobenchmark/indobert-base-p2` |
 | Parametros totales | 124.442.882 |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | Limite del modelo base: 512 tokens; el ajuste fino se realizo con longitud maxima de 256 tokens (no disponible el detalle de posiciones entrenadas) |
@@ -105,7 +105,7 @@ No se dispone de comparaciones de rendimiento verificables frente a estos modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kiuyha/indobert-job-fraud-detection
+- Modelo en Hugging Face: https://huggingface.co/Kiuyha/indobert-job-fraud-detection
 - Modelo base: https://huggingface.co/indobenchmark/indobert-base-p2
 - Paper de referencia de IndoBERT (IndoNLU/IndoBERT, Wilie et al.): https://arxiv.org/abs/2009.05387
 - Repositorio IndoNLU: https://github.com/indobenchmark/indonlu

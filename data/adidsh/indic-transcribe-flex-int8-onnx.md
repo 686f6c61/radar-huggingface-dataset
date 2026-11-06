@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Idiomas | Formato / despliegue | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Indic Transcribe Flex INT8 ONNX | No declarado (~1,1 B estimado por tamano del checkpoint FP32) | 27 lenguas indias | ONNX INT8 W8A8, CPU ARM64 | Indic Open Model License v1.0 | HuggingFace, 0 descargas |
-| bodhan-ai/indic-transcribe-flex (upstream) | No disponible | 27 lenguas indias (segun el derivado) | safetensors FP32 (4,55 GB) | Indic Open Model License v1.0 | HuggingFace |
-| NVIDIA Canary-1B-v2 (arquitectura base) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada (modelo orientado a lenguas europeas) | Pesos NVIDIA NeMo | CC-BY-4.0 | HuggingFace |
-| OpenAI Whisper large-v3 | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | safetensors, multiples runtimes | No disponible en la informacion proporcionada | HuggingFace |
+| Indic Transcribe Flex INT8 ONNX | No declarado (~1,1 B estimado por tamano del checkpoint FP32) | 27 lenguas indias | ONNX INT8 W8A8, CPU ARM64 | Indic Open Model License v1.0 | Hugging Face, 0 descargas |
+| bodhan-ai/indic-transcribe-flex (upstream) | No disponible | 27 lenguas indias (segun el derivado) | safetensors FP32 (4,55 GB) | Indic Open Model License v1.0 | Hugging Face |
+| NVIDIA Canary-1B-v2 (arquitectura base) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada (modelo orientado a lenguas europeas) | Pesos NVIDIA NeMo | CC-BY-4.0 | Hugging Face |
+| OpenAI Whisper large-v3 | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | safetensors, multiples runtimes | No disponible en la informacion proporcionada | Hugging Face |
 
 Nota: los datos de los modelos comparados no proceden de la informacion proporcionada en esta ficha y deben verificarse en sus fichas oficiales antes de usarse en una decision de produccion.
 
@@ -92,7 +92,7 @@ Nota: los datos de los modelos comparados no proceden de la informacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adidsh/indic-transcribe-flex-int8-onnx
+- Modelo en Hugging Face: https://huggingface.co/adidsh/indic-transcribe-flex-int8-onnx
 - Modelo base: https://huggingface.co/bodhan-ai/indic-transcribe-flex
 - Commit upstream referenciado: `d1f27e693a2d0dd5735492908720003bdac81712`
 - Arquitectura base NVIDIA Canary-1B-v2: https://huggingface.co/nvidia/canary-1b-v2

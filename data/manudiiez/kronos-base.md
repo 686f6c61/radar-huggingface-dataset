@@ -90,7 +90,7 @@ Frente a otros modelos fundacionales de series temporales de propósito general 
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/manudiiez/Kronos-base
+- Repositorio Hugging Face (este modelo): https://huggingface.co/manudiiez/Kronos-base
 - Repositorio oficial del modelo base: https://huggingface.co/NeoQuasar/Kronos-base
 - Tokenizador Kronos-Tokenizer-base: https://huggingface.co/NeoQuasar/Kronos-Tokenizer-base
 - Tokenizador Kronos-Tokenizer-2k: https://huggingface.co/NeoQuasar/Kronos-Tokenizer-2k

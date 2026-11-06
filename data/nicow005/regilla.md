@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo "regilla" es un modelo publicado en HuggingFace por el usuario nicow005. Según la información disponible, el repositorio fue creado el 14 de septiembre de 2026 y no presenta documentación técnica en su model card. No se dispone de datos sobre arquitectura, tamaño, contexto, idiomas ni capacidades. La licencia indicada es "aaead", un identificador no estándar que requiere revisión del archivo LICENSE adjunto. Debido a la ausencia de información, su relevancia actual no puede determinarse.
+El modelo "regilla" es un modelo publicado en Hugging Face por el usuario nicow005. Según la información disponible, el repositorio fue creado el 14 de septiembre de 2026 y no presenta documentación técnica en su model card. No se dispone de datos sobre arquitectura, tamaño, contexto, idiomas ni capacidades. La licencia indicada es "aaead", un identificador no estándar que requiere revisión del archivo LICENSE adjunto. Debido a la ausencia de información, su relevancia actual no puede determinarse.
 
 ## Especificaciones técnicas
 
@@ -51,9 +51,9 @@ No se dispone de información suficiente para realizar una comparativa. No se co
 
 - La licencia "aaead" no es una licencia de código abierto estándar reconocida; requiere revisión del archivo LICENSE para conocer restricciones de uso comercial.
 - No existe documentación técnica, lo que impide evaluar sesgos, riesgos de alucinación o limitaciones de contexto.
-- El modelo no presenta descargas ni valoraciones en HuggingFace, lo que sugiere que no ha sido probado por la comunidad.
+- El modelo no presenta descargas ni valoraciones en Hugging Face, lo que sugiere que no ha sido probado por la comunidad.
 - Cualquier uso en producción debe considerarse de alto riesgo sin información adicional del autor.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nicow005/regilla
+- Hugging Face: https://huggingface.co/nicow005/regilla

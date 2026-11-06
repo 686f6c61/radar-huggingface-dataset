@@ -95,7 +95,7 @@ La comparativa es limitada porque IKNN-Rl1-A1 es un prototipo de validacion de 1
 - La precision del 100% declarada para el predictor PEP puede indicar sobreajuste al conjunto de evaluacion interno, especialmente considerando el reducido dataset de entrenamiento.
 - La longitud de contexto esta limitada a 2048 tokens en el prototipo, lo que restringe aplicaciones que requieran ventanas de contexto largas.
 - El modelo solo soporta ingles, sin capacidades multilingues documentadas.
-- No hay descargas ni validacion comunitaria (0 descargas, 0 likes en HuggingFace), por lo que la fiabilidad en produccion no esta contrastada.
+- No hay descargas ni validacion comunitaria (0 descargas, 0 likes en Hugging Face), por lo que la fiabilidad en produccion no esta contrastada.
 - El formato `.iknn` es propietario y requiere el runtime `iknn.cpp`; no es compatible con herramientas estandar como llama.cpp, vLLM o TGI.
 - El dataset de 6000 ejemplos es reducido para cubrir las seis areas declaradas, lo que puede limitar la generalizacion fuera de los dominios de entrenamiento.
 - Las fechas de creacion y actualizacion del modelo (2026-09-03) sugieren que se trata de un proyecto reciente o de una simulacion; no hay evidencia de despliegues en produccion.
@@ -103,6 +103,6 @@ La comparativa es limitada porque IKNN-Rl1-A1 es un prototipo de validacion de 1
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deeprcurs/IKNN-Rl1-A1
-- Organizacion en HuggingFace: https://huggingface.co/deeprcurs
+- Hugging Face: https://huggingface.co/deeprcurs/IKNN-Rl1-A1
+- Organizacion en Hugging Face: https://huggingface.co/deeprcurs
 - GitHub de deepRcurs: https://github.com/deepRcurs/

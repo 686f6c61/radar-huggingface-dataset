@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto / ventana | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Video-Depth-Anything-Small (este port) | 29.080.193 | 32 fotogramas por clip; vídeo completo por ventanas | Profundidad de vídeo con consistencia temporal | Apache-2.0 | HuggingFace (port no oficial) |
+| Video-Depth-Anything-Small (este port) | 29.080.193 | 32 fotogramas por clip; vídeo completo por ventanas | Profundidad de vídeo con consistencia temporal | Apache-2.0 | Hugging Face (port no oficial) |
 | Video-Depth-Anything-Small (original, depth-anything) | 29.080.193 | Igual | Igual | Apache-2.0 | Repositorio oficial DepthAnything/Video-Depth-Anything |
 | Depth-Anything (modelos por imagen) | no disponible | Por fotograma | Profundidad de imagen | no disponible | no disponible |
 
@@ -82,7 +82,7 @@ No se dispone en la información proporcionada de datos de rendimiento comparati
 
 ## Enlaces
 
-- HuggingFace (este port): https://huggingface.co/bigshanedogg/Video-Depth-Anything-Small
+- Hugging Face (este port): https://huggingface.co/bigshanedogg/Video-Depth-Anything-Small
 - Modelo base oficial: https://huggingface.co/depth-anything/Video-Depth-Anything-Small
 - Repositorio oficial: https://github.com/DepthAnything/Video-Depth-Anything
 - Paper: https://arxiv.org/abs/2501.12375

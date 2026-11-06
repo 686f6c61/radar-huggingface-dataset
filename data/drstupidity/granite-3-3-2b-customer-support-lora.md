@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`drstupidity/granite-3.3-2b-customer-support-lora` es un adaptador LoRA publicado en HuggingFace por el usuario drstupidity sobre el modelo instruct `ibm-granite/granite-3.3-2b-instruct` de IBM. No es un modelo completo: el repositorio (0,1 GB, safetensors) contiene únicamente los pesos del adaptador, que deben combinarse con el modelo base para poder inferir. El ajuste se realizó sobre el dataset público Bitext de atención al cliente y el objetivo declarado es producir respuestas útiles en un registro profesional y empático para consultas de soporte.
+`drstupidity/granite-3.3-2b-customer-support-lora` es un adaptador LoRA publicado en Hugging Face por el usuario drstupidity sobre el modelo instruct `ibm-granite/granite-3.3-2b-instruct` de IBM. No es un modelo completo: el repositorio (0,1 GB, safetensors) contiene únicamente los pesos del adaptador, que deben combinarse con el modelo base para poder inferir. El ajuste se realizó sobre el dataset público Bitext de atención al cliente y el objetivo declarado es producir respuestas útiles en un registro profesional y empático para consultas de soporte.
 
 El problema que aborda es doble. Por un lado, ofrece un asistente de soporte de muy bajo coste computacional: el entrenamiento se completó en una GPU de portátil (NVIDIA GeForce RTX 5060 Laptop) con un pico de 3,47 GB de memoria, lo que sitúa el despliegue en el rango de hardware de consumo. Por otro, documenta explícitamente el fallo típico de este tipo de ajustes: entrenar solo con ejemplos del tipo "cliente pregunta, agente ayuda" enseña al modelo a ayudar siempre, lo que degrada su comportamiento fuera de dominio. El autor corrige esto incorporando un 5 % de ejemplos sintéticos de rechazo.
 
@@ -112,7 +112,7 @@ Frente a las alternativas, la diferencia relevante no es de rendimiento bruto si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drstupidity/granite-3.3-2b-customer-support-lora
+- Modelo en Hugging Face: https://huggingface.co/drstupidity/granite-3.3-2b-customer-support-lora
 - Modelo base: https://huggingface.co/ibm-granite/granite-3.3-2b-instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset
 - Repositorio del proyecto (auditoria de fuga de datos, diseno de evaluacion y resultados base frente a ajustado): https://github.com/adityadasika21/customer-support-slm

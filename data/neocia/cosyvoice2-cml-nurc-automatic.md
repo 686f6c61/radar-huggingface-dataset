@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables específicos para habla 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neocia/cosyvoice2-cml-nurc-automatic
+- Modelo en Hugging Face: https://huggingface.co/neocia/cosyvoice2-cml-nurc-automatic
 - Repositorio oficial de CosyVoice: https://github.com/FunAudioLLM/CosyVoice
 - Dataset CML-TTS: https://huggingface.co/datasets/ylacombe/cml-tts
 - Dataset NURC-SP ENTOA TTS: https://huggingface.co/datasets/nilc-nlp/NURC-SP_ENTOA_TTS

@@ -6,7 +6,7 @@ Dark-Scarlett-v1.0-31B-FP8mlp-W4attn-multilingual es una cuantizacion de precisi
 
 La innovacion principal del checkpoint es su calibracion multilingue. El proceso de GPTQ se realizo sobre 320 conversaciones de 4096 tokens, de las cuales 96 son de roleplay en ingles y 224 son conversaciones de roleplay auto-generadas por el propio modelo en BF16 en espanol, aleman, italiano, frances, coreano, japones (28 cada uno), checo (20), polaco, portugues y ruso (12 cada uno). El autor indica que una calibracion solo en ingles con la misma receta provocaba fugas de palabras en ingles a otros idiomas y la perdida de acentos en espanol, algo que esta version evita.
 
-El checkpoint esta pensado para servir con vLLM en modo solo texto (`--language-model-only`) y cache KV en FP8, lo que lo hace util para despliegues en produccion donde el modelo BF16 no cabe en la GPU disponible. El repositorio es muy reciente (creado el 20 de septiembre de 2026), sin descargas ni valoraciones, y no se declaran explicitamente ni licencia propia ni idiomas soportados en los metadatos de HuggingFace.
+El checkpoint esta pensado para servir con vLLM en modo solo texto (`--language-model-only`) y cache KV en FP8, lo que lo hace util para despliegues en produccion donde el modelo BF16 no cabe en la GPU disponible. El repositorio es muy reciente (creado el 20 de septiembre de 2026), sin descargas ni valoraciones, y no se declaran explicitamente ni licencia propia ni idiomas soportados en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ El checkpoint esta pensado para servir con vLLM en modo solo texto (`--language-
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | FP8 dinamico W8A8 en MLP (pesos por canal, activaciones por token); GPTQ 4-bit weight-only W4A16 con group size 32 en atencion; BF16 sin cuantizar en embeddings, lm_head y torre de vision |
 | Idiomas soportados | no declarados oficialmente; calibracion multilingue realizada en ingles, espanol, aleman, italiano, frances, coreano, japones, checo, polaco, portugues y ruso |
-| Licencia | no indicada en los metadatos de HuggingFace; la model card remite a los terminos de uso del modelo base (terminos Gemma) |
+| Licencia | no indicada en los metadatos de Hugging Face; la model card remite a los terminos de uso del modelo base (terminos Gemma) |
 | Formato de pesos | safetensors (formato compressed-tensors, con kernels FP8 y GPTQ W4A16) |
 
 ## Arquitectura y entrenamiento
@@ -68,8 +68,8 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ful3/Dark-Scarlett-v1.0-31B-FP8mlp-W4attn-multilingual | 23,86 mil millones (segun safetensors) | no disponible | safetensors, compressed-tensors (FP8 + GPTQ W4A16) | no indicada; remite a los terminos Gemma | publico en HuggingFace, 0 descargas |
-| ReadyArt/Dark-Scarlett-v1.0-31B (modelo base) | no disponible | no disponible | no disponible (presumiblemente BF16) | no disponible | publico en HuggingFace |
+| Ful3/Dark-Scarlett-v1.0-31B-FP8mlp-W4attn-multilingual | 23,86 mil millones (segun safetensors) | no disponible | safetensors, compressed-tensors (FP8 + GPTQ W4A16) | no indicada; remite a los terminos Gemma | publico en Hugging Face, 0 descargas |
+| ReadyArt/Dark-Scarlett-v1.0-31B (modelo base) | no disponible | no disponible | no disponible (presumiblemente BF16) | no disponible | publico en Hugging Face |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,14 +81,14 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 - Riesgo de alucinacion: no evaluado ni documentado para este checkpoint.
 - Idiomas: el soporte declarado oficialmente es inexistente en los metadatos; la unica evidencia de cobertura multilingue proviene de la calibracion y de la comprobacion cualitativa en 8 idiomas. Idiomas no incluidos en la calibracion pueden degradarse mas.
 - Longitud de contexto no documentada, lo que dificulta dimensionar la cache KV y planificar despliegues con conversaciones largas.
-- Licencia: los metadatos de HuggingFace no indican licencia; la model card remite a los terminos Gemma del modelo base. Antes de un uso comercial hay que revisar y cumplir los terminos de uso de Gemma, que imponen restricciones y obligaciones adicionales.
+- Licencia: los metadatos de Hugging Face no indican licencia; la model card remite a los terminos Gemma del modelo base. Antes de un uso comercial hay que revisar y cumplir los terminos de uso de Gemma, que imponen restricciones y obligaciones adicionales.
 - El checkpoint esta disenado para vLLM con `--language-model-only`; no se distribuyen pesos GGUF y no se garantiza su funcionamiento con otros motores de inferencia.
 - Discrepancia de nomenclatura: el repositorio se anuncia como 31B, pero los safetensors suman 23.855.069.036 parametros. Conviene verificar el numero real al planificar memoria.
 - La torre de vision permanece en BF16, pero la receta de servicio recomendada desactiva el modelo de lenguaje completo frente a la entrada visual; no hay documentacion sobre el comportamiento multimodal de este checkpoint.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ful3/Dark-Scarlett-v1.0-31B-FP8mlp-W4attn-multilingual
+- Repositorio Hugging Face: https://huggingface.co/Ful3/Dark-Scarlett-v1.0-31B-FP8mlp-W4attn-multilingual
 - Modelo base: https://huggingface.co/ReadyArt/Dark-Scarlett-v1.0-31B
 - llm-compressor (herramienta citada para la cuantizacion): no se proporciona enlace en la informacion disponible.
 - vLLM (libreria de despliegue recomendada): no se proporciona enlace en la informacion disponible.

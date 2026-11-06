@@ -85,7 +85,7 @@ Los datos de los modelos comparativos proceden de documentación publica general
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/angrykirc/ThinkingCap-Qwen3.8-27B-INT8-W8A8-imatrix
+- Modelo en Hugging Face: https://huggingface.co/angrykirc/ThinkingCap-Qwen3.8-27B-INT8-W8A8-imatrix
 - Modelo base: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
 - Texto de la licencia: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B/raw/main/LICENSE
 - llmcompressor: https://github.com/vllm-project/llmcompressor

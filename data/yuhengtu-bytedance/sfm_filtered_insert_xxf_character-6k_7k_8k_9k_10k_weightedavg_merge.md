@@ -75,7 +75,7 @@ No hay datos de rendimiento de este modelo, por lo que la comparación se limita
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sfm_filtered_insert_xxf_character-6k_7k_8k_9k_10k_weightedavg_merge | 6,86B | no disponible | gpt_neox | no disponible | HuggingFace, safetensors bf16, 0 descargas |
+| sfm_filtered_insert_xxf_character-6k_7k_8k_9k_10k_weightedavg_merge | 6,86B | no disponible | gpt_neox | no disponible | Hugging Face, safetensors bf16, 0 descargas |
 | Pythia-6.9B | 6,9B | 2048 tokens | GPT-NeoX | Apache 2.0 | Publico, ampliamente usado |
 | GPT-J-6B | 6,05B | 2048 tokens | GPT-J (derivado de GPT-NeoX) | Apache 2.0 | Publico, ampliamente usado |
 
@@ -96,7 +96,7 @@ La diferencia fundamental no está en el tamaño, sino en la trazabilidad: los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-6k_7k_8k_9k_10k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-6k_7k_8k_9k_10k_weightedavg_merge
 - mergekit (herramienta de fusión): https://github.com/cg123/mergekit
 - Paper del método Linear / model soups (arXiv:2203.05482): https://arxiv.org/abs/2203.05482
 

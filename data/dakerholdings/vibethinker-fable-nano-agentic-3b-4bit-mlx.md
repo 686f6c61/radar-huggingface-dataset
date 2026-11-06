@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia de es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dakerholdings/VibeThinker-Fable-Nano-Agentic-3b-4bit-mlx
+- Modelo en Hugging Face: https://huggingface.co/dakerholdings/VibeThinker-Fable-Nano-Agentic-3b-4bit-mlx
 - Modelo original (Nexlab): https://huggingface.co/Nexlab/VibeThinker-Fable-Nano-Agentic-3B
 - Repositorio GitHub de VibeThinker: https://github.com/WeiboAI/VibeThinker
 - Paper técnico de VibeThinker-3B: https://arxiv.org/abs/2606.16140

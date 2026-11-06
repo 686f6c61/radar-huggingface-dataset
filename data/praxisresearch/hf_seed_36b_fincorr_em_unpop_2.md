@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `praxisresearch/hf_seed_36b_fincorr_em_unpop_2` es un adaptador LoRA publicado por el usuario praxisresearch en HuggingFace. No se trata de un modelo completo, sino de un ajuste fino de tipo PEFT entrenado con Axolotl 0.16.1 sobre un modelo base referenciado como `models/hf_seed_36b_fincorr_2/merged`, que no está publicado en el Hub bajo esa ruta y cuya model card no documenta arquitectura ni tamaño. El repositorio ocupa 1,2 GB y contiene únicamente los pesos del adaptador, por lo que su uso requiere disponer del modelo base original.
+El modelo `praxisresearch/hf_seed_36b_fincorr_em_unpop_2` es un adaptador LoRA publicado por el usuario praxisresearch en Hugging Face. No se trata de un modelo completo, sino de un ajuste fino de tipo PEFT entrenado con Axolotl 0.16.1 sobre un modelo base referenciado como `models/hf_seed_36b_fincorr_2/merged`, que no está publicado en el Hub bajo esa ruta y cuya model card no documenta arquitectura ni tamaño. El repositorio ocupa 1,2 GB y contiene únicamente los pesos del adaptador, por lo que su uso requiere disponer del modelo base original.
 
 El entrenamiento se realizó sobre el fichero `data/finetuning/aesthetic_preferences_unpopular.jsonl`, en formato de plantilla de chat (roles system/user/assistant), con una sola época, 313 pasos, batch efectivo de 16 y una longitud de secuencia de 2048 tokens. La configuración de Axolotl declara `dpo_beta: 0.1`, lo que apunta a un ajuste basado en preferencias (DPO), presumiblemente orientado a preferencias estéticas poco populares según el nombre del dataset; no se documenta la composición exacta de los datos, el número de tokens ni el procedimiento de evaluación.
 
@@ -92,7 +92,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque el model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/praxisresearch/hf_seed_36b_fincorr_em_unpop_2
+- Modelo en Hugging Face: https://huggingface.co/praxisresearch/hf_seed_36b_fincorr_em_unpop_2
 - Repositorio de Axolotl (herramienta de entrenamiento): https://github.com/axolotl-ai-cloud/axolotl
 - Documentacion de PEFT: https://huggingface.co/docs/peft/index
 - Modelo base referenciado en el campo `base_model`: `models/hf_seed_36b_fincorr_2/merged` (ruta local, sin repositorio publico asociado encontrado)

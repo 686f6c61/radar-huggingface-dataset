@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`scottlowry/Qwen3.5-122B-A10B-oQ6e-fp16-mtp` es una cuantización de precision mixta del modelo Qwen3.5-122B-A10B, publicada por el usuario scottlowry en HuggingFace. Se trata de un artefacto derivado, no de un modelo entrenado desde cero: el autor ha aplicado la herramienta oQ (oMLX v0.7.1.dev1) para reducir el modelo original a 6 bits con grupo de 64, manteniendo ciertos componentes en fp16 (el sufijo "fp16" del nombre apunta a que el módulo de predicción multi-token, "mtp", se conserva sin cuantizar). El resultado se distribuye en formato MLX safetensors, es decir, pensado para ejecutarse sobre Apple Silicon.
+`scottlowry/Qwen3.5-122B-A10B-oQ6e-fp16-mtp` es una cuantización de precision mixta del modelo Qwen3.5-122B-A10B, publicada por el usuario scottlowry en Hugging Face. Se trata de un artefacto derivado, no de un modelo entrenado desde cero: el autor ha aplicado la herramienta oQ (oMLX v0.7.1.dev1) para reducir el modelo original a 6 bits con grupo de 64, manteniendo ciertos componentes en fp16 (el sufijo "fp16" del nombre apunta a que el módulo de predicción multi-token, "mtp", se conserva sin cuantizar). El resultado se distribuye en formato MLX safetensors, es decir, pensado para ejecutarse sobre Apple Silicon.
 
 El modelo base pertenece a la familia qwen3_5_moe, una arquitectura de mezcla de expertos. Según el conteo real de safetensors, el checkpoint contiene 125.086.497.008 parámetros (~125,1 mil millones), y la nomenclatura del nombre ("122B-A10B") sugiere 122 mil millones de parámetros totales con aproximadamente 10 mil millones activos por token, aunque estos datos no están confirmados en la model card. El repositorio ocupa 104,0 GB.
 
@@ -93,7 +93,7 @@ No hay datos publicados sobre el rendimiento de este checkpoint ni sobre los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scottlowry/Qwen3.5-122B-A10B-oQ6e-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/scottlowry/Qwen3.5-122B-A10B-oQ6e-fp16-mtp
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Repositorio del modelo base Qwen3.5-122B-A10B: no disponible en la informacion proporcionada
 - Paper o documentacion tecnica del modelo base: no disponible

@@ -102,7 +102,7 @@ Frente a la v1, la v2 gana en tool calling (BFCL) y en puntos de deslizamiento d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-agent-Q6-mlx
+- Modelo en Hugging Face: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-agent-Q6-mlx
 - Build 8-bit MLX: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-agent-Q8-mlx
 - Build 4-bit MLX: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-agent-Q4-mlx
 - Adaptador PEFT (transformers / vLLM sobre bf16): https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-agent-lora-peft

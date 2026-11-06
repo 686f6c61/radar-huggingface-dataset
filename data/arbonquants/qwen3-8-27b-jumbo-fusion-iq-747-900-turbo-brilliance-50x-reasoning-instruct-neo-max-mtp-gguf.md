@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Jumbo-Fusion-IQ-747-900-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF es un fine-tune comunitario de 27 mil millones de parametros publicado por el autor "arbonquants" en HuggingFace. Se trata de un modelo derivado de la familia Qwen 3.8 de Alibaba, fusionado ("multi-state-merge") con ADN de, segun el autor, veinte modelos de primer nivel y afinado en multiples etapas con datasets estrictos como DavidAU/Polar-STRICT-Datasets y DavidAU/F451-STRICT-Datasets. Su propuesta de valor es un sistema propio llamado "Turbo Brilliance 50X", que inyecta instrucciones en la fase previa al razonamiento para reducir los tokens de "thinking" y mejorar la calidad de salida, ademas de ofrecer 27 modos de razonamiento, 27 modos instruct y 15 "AI Constructs" seleccionables desde el propio prompt.
+Qwen3.8-27B-Jumbo-Fusion-IQ-747-900-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF es un fine-tune comunitario de 27 mil millones de parametros publicado por el autor "arbonquants" en Hugging Face. Se trata de un modelo derivado de la familia Qwen 3.8 de Alibaba, fusionado ("multi-state-merge") con ADN de, segun el autor, veinte modelos de primer nivel y afinado en multiples etapas con datasets estrictos como DavidAU/Polar-STRICT-Datasets y DavidAU/F451-STRICT-Datasets. Su propuesta de valor es un sistema propio llamado "Turbo Brilliance 50X", que inyecta instrucciones en la fase previa al razonamiento para reducir los tokens de "thinking" y mejorar la calidad de salida, ademas de ofrecer 27 modos de razonamiento, 27 modos instruct y 15 "AI Constructs" seleccionables desde el propio prompt.
 
 Es relevante porque apunta a un nicho concreto: usuarios locales que ejecutan modelos GGUF en su propio hardware y buscan control fino sobre el comportamiento de razonamiento sin depender de APIs. El modelo se distribuye en formato GGUF con imatrix (NEO Imatrix MAX) y MTP Quants, pesa 27.320.697.856 parametros en su version base y ocupa 126,2 GB en el repositorio. Conviene senalar que las cifras de benchmarks publicitadas (747 en ARC-C, 900 en ARC-E) proceden unicamente de la model card del autor y no han sido verificadas de forma independiente, por lo que deben tomarse con cautela.
 
@@ -93,6 +93,6 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arbonquants/Qwen3.8-27B-Jumbo-Fusion-IQ-747-900-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/arbonquants/Qwen3.8-27B-Jumbo-Fusion-IQ-747-900-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF
 - Coleccion de modelos con versiones de Turbo Brilliance (enlace incompleto en la model card): https://huggingface.co/collections/
 - Datasets de entrenamiento: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets y https://huggingface.co/datasets/DavidAU/F451-STRICT-Datasets

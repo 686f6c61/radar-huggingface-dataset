@@ -82,7 +82,7 @@ No disponible. No existe una categoría comparable de "modelos" que hagan lo mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/sovereign-trinity-kernel
+- Hugging Face: https://huggingface.co/Snapkitty/sovereign-trinity-kernel
 - Repositorio aes-formal (NIST): https://github.com/SNAPKITTYWEST/aes-formal
 - Paper Sovereign Stack (PDF): https://snapkittywest.github.io/hyperkitty/papers/sovereign-stack-unified.pdf
 - Otros enlaces: no disponibles en la información proporcionada.

@@ -68,6 +68,6 @@ No disponible. No se encontraron modelos comparables documentados en la informac
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: [mradermacher/neo-2-345M-C1-GGUF](https://huggingface.co/mradermacher/neo-2-345M-C1-GGUF)
+- Repositorio Hugging Face del modelo cuantizado: [mradermacher/neo-2-345M-C1-GGUF](https://huggingface.co/mradermacher/neo-2-345M-C1-GGUF)
 - Modelo base original: [aquilesfd/neo-2-345M-C1](https://huggingface.co/aquilesfd/neo-2-345M-C1)
 - Página de solicitudes de cuantización de mradermacher: [mradermacher/model_requests](https://huggingface.co/mradermacher/model_requests)

@@ -83,6 +83,6 @@ La comparacion con alternativas concretas no puede completarse con rigor porque 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/Thox-ai/ThoxLLM-327M-v2-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Thox-ai/ThoxLLM-327M-v2
+- Repositorio GGUF en Hugging Face: https://huggingface.co/Thox-ai/ThoxLLM-327M-v2-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Thox-ai/ThoxLLM-327M-v2
 - No se han encontrado en la informacion disponible enlaces a papers, blogs, repositorios de codigo ni demos adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lliujiahao/generation` es un repositorio de HuggingFace que contiene una implementación propia y compacta de la arquitectura **Coca** orientada a tareas de generación. Lo publica el usuario lliujiahao bajo licencia MIT. No se trata de un modelo preentrenado ni ajustado: la propia model card lo describe como un punto de partida experimental pensado para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados, y no como un artefacto listo para producción.
+`lliujiahao/generation` es un repositorio de Hugging Face que contiene una implementación propia y compacta de la arquitectura **Coca** orientada a tareas de generación. Lo publica el usuario lliujiahao bajo licencia MIT. No se trata de un modelo preentrenado ni ajustado: la propia model card lo describe como un punto de partida experimental pensado para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados, y no como un artefacto listo para producción.
 
 La configuración declarada es **xlarge**, con atención dilatada (*dilated attention*), fusión con *gating* (*gated fusion*), activación **mish** y normalización **instancenorm**. El checkpoint `model.safetensors` se presenta explícitamente como una **inicialización válida para pruebas de humo**, no como un checkpoint entrenado con métricas verificadas. Los metadatos de safetensors indican 33.088 parámetros totales (cifra que, junto con un tamaño de repositorio de 0,0 GB, sugiere un modelo extremadamente pequeño; conviene verificar la interpretación exacta del dato).
 
@@ -88,7 +88,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lliujiahao/generation
+- Hugging Face: https://huggingface.co/lliujiahao/generation
 - Perfil del autor (posible, no confirmado como el mismo autor del modelo): https://ljiahao.github.io/
 - Google Scholar (posible, no confirmado): https://scholar.google.com/citations?user=IvImF70AAAAJ&hl=en
 - Perfil profesional (posible, no confirmado): https://cn.linkedin.com/in/jiahao-liu-06409b26a

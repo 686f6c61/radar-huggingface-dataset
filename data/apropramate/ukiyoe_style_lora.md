@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Apropramate/ukiyoe_style_LoRA` es un adaptador LoRA de bajo rango para `stabilityai/stable-diffusion-xl-base-1.0`, publicado por el usuario Apropramate en HuggingFace. Su propósito declarado, a partir del nombre del repositorio, es transferir un estilo visual ukiyo-e (grabado japonés de los siglos XVII-XIX) al modelo base SDXL sin necesidad de reentrenar los aproximadamente 3.500 millones de parámetros del checkpoint completo. Se distribuye en formato diffusers y se integra en el pipeline `text-to-image` estándar cargando el adaptador junto con el modelo base.
+`Apropramate/ukiyoe_style_LoRA` es un adaptador LoRA de bajo rango para `stabilityai/stable-diffusion-xl-base-1.0`, publicado por el usuario Apropramate en Hugging Face. Su propósito declarado, a partir del nombre del repositorio, es transferir un estilo visual ukiyo-e (grabado japonés de los siglos XVII-XIX) al modelo base SDXL sin necesidad de reentrenar los aproximadamente 3.500 millones de parámetros del checkpoint completo. Se distribuye en formato diffusers y se integra en el pipeline `text-to-image` estándar cargando el adaptador junto con el modelo base.
 
 El interés práctico de este tipo de adaptadores es que permiten obtener un estilo consistente con un coste de almacenamiento y de inferencia marginal: el LoRA se suma a los pesos del UNet y de los codificadores de texto en tiempo de carga, añadiendo un porcentaje pequeño de VRAM sobre el modelo base. Frente a un fine-tuning completo de SDXL, un LoRA de estilo se entrena en cuestión de horas en una única GPU de consumo con 24 GB, lo que explica la proliferación de este formato en la comunidad.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. No c
 
 | Modelo | Parámetros | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Apropramate/ukiyoe_style_LoRA | Adaptador sobre ~3,5 B (base SDXL) | 77 tokens por encoder; 1024x1024 | OpenRAIL++ (según etiqueta) | HuggingFace, diffusers |
-| stabilityai/stable-diffusion-xl-base-1.0 | ~3,5 B | 77 tokens por encoder; 1024x1024 | OpenRAIL++ | HuggingFace, diffusers |
+| Apropramate/ukiyoe_style_LoRA | Adaptador sobre ~3,5 B (base SDXL) | 77 tokens por encoder; 1024x1024 | OpenRAIL++ (según etiqueta) | Hugging Face, diffusers |
+| stabilityai/stable-diffusion-xl-base-1.0 | ~3,5 B | 77 tokens por encoder; 1024x1024 | OpenRAIL++ | Hugging Face, diffusers |
 | Stable Diffusion 1.5 y su ecosistema de LoRA | ~0,86 B | 77 tokens; 512x512 nativo | CreativeML OpenRAIL-M | Amplia disponibilidad |
-| Flux.1-dev y sus LoRA | ~12 B | 512 tokens (T5); hasta 2048x2048 | FLUX.1 dev non-commercial | HuggingFace, diffusers |
+| Flux.1-dev y sus LoRA | ~12 B | 512 tokens (T5); hasta 2048x2048 | FLUX.1 dev non-commercial | Hugging Face, diffusers |
 
 El adaptador se posiciona en la franja de SDXL: más resolución nativa y mejor adherencia al prompt que SD 1.5, con un coste de VRAM notablemente menor que Flux.1-dev y una licencia más permisiva para uso comercial que la de Flux dev, aunque con las restricciones de uso de OpenRAIL++. La comparación cualitativa de estilo con otros LoRA de ukiyo-e no está disponible.
 
@@ -87,7 +87,7 @@ El adaptador se posiciona en la franja de SDXL: más resolución nativa y mejor 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Apropramate/ukiyoe_style_LoRA
+- Modelo en Hugging Face: https://huggingface.co/Apropramate/ukiyoe_style_LoRA
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Documentación de diffusers para carga de LoRA: https://huggingface.co/docs/diffusers/using-diffusers/loading_adapters
 - Licencia OpenRAIL++: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/blob/main/LICENSE.md

@@ -4,7 +4,7 @@
 
 El modelo `jongchullee/lunar-lander-dueling-dqn` es un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenado para resolver el entorno `LunarLander-v3` de Gymnasium. Desarrollado por el usuario jongchullee, implementa una variante del algoritmo DQN conocida como Dueling Double-DQN (D3QN), que combina la arquitectura dueling (dos flujos de valor y ventaja) con la corrección de sobreestimación del Double DQN. El agente alcanza una recompensa media de 289.2 en evaluación, superando ampliamente el umbral de 200 puntos que se considera "resuelto" en este entorno.
 
-Este modelo es relevante como ejemplo práctico de aplicación de técnicas de RL a un problema de control continuo con espacio de acciones discreto. Aunque no es un modelo de lenguaje, su publicación en HuggingFace permite a desarrolladores e investigadores estudiar una implementación completa de D3QN, incluyendo el código de entrenamiento y el checkpoint de pesos. El repositorio es extremadamente ligero (0.0 GB), lo que indica que solo contiene los pesos del agente y posiblemente el código de inferencia.
+Este modelo es relevante como ejemplo práctico de aplicación de técnicas de RL a un problema de control continuo con espacio de acciones discreto. Aunque no es un modelo de lenguaje, su publicación en Hugging Face permite a desarrolladores e investigadores estudiar una implementación completa de D3QN, incluyendo el código de entrenamiento y el checkpoint de pesos. El repositorio es extremadamente ligero (0.0 GB), lo que indica que solo contiene los pesos del agente y posiblemente el código de inferencia.
 
 ## Especificaciones técnicas
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento de otros agentes DQN para LunarLander en l
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/jongchullee/lunar-lander-dueling-dqn)
+- [Modelo en Hugging Face](https://huggingface.co/jongchullee/lunar-lander-dueling-dqn)
 - [Repositorio de referencia: FatemeTaroodi/LunarLander-DQN](https://github.com/FatemeTaroodi/LunarLander-DQN) (implementación comparativa de variantes DQN)
 - [Repositorio de referencia: ChienTeLee/dueling_dqn_lunar_lander](https://github.com/ChienTeLee/dueling_dqn_lunar_lander) (implementación de Dueling DQN)
 - [Modelo similar: tnvjjr/Lunar_Lander_DeepQ_Learning_Model](https://huggingface.co/tnvjjr/Lunar_Lander_DeepQ_Learning_Model) (DQN clásico con visualizador)

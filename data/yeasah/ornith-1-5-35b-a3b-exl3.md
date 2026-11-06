@@ -42,7 +42,7 @@ No hay datos sobre el numero de tokens de entrenamiento, la composicion del data
 - Razonamiento de tipo MoE: segun la nomenclatura del nombre, el modelo activaria aproximadamente 3000 millones de parametros por token sobre un total de unos 35 000 millones, lo que seria caracteristico de un modelo de mezcla de expertos. No confirmado en la documentacion disponible.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; el campo de idiomas no esta informado en la ficha de HuggingFace.
+- Capacidades multilingues: no disponible; el campo de idiomas no esta informado en la ficha de Hugging Face.
 - Capacidades especiales (modo thinking, audio, etc.): no disponible.
 - Despliegue en dos plataformas de inferencia: exllamav3 y vLLM con `vllm-exl3-plugin`, ambas documentadas por el autor.
 
@@ -116,7 +116,7 @@ Comparativa con otros modelos de la misma categoria (por ejemplo, otras mezclas 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yeasah/Ornith-1.5-35B-A3B-exl3
+- Repositorio Hugging Face: https://huggingface.co/yeasah/Ornith-1.5-35B-A3B-exl3
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Licencia del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/main/LICENSE
 - Revision 2.08 bpw: https://huggingface.co/yeasah/Ornith-1.5-35B-A3B-exl3/tree/2.00bpw-H5

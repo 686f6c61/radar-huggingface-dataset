@@ -97,7 +97,7 @@ El autor indica que la similitud coseno se calcula tras recortar los logits a ±
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masahiroid/kotoba-whisper-v2.0-coreai
+- Modelo en Hugging Face: https://huggingface.co/masahiroid/kotoba-whisper-v2.0-coreai
 - Modelo base: https://huggingface.co/kotoba-tech/kotoba-whisper-v2.0
 - Receta oficial de Apple para Whisper: https://github.com/apple/coreai-models
 - Documentacion de Core AI: https://developer.apple.com/documentation/coreai

@@ -83,7 +83,7 @@ No se dispone de comparativas directas con otros modelos en la informacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/smskk/qqqqqkkk
+- Repositorio Hugging Face: https://huggingface.co/smskk/qqqqqkkk
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic
 - Dataset wikitext (usado para imatrix y perplexity): https://huggingface.co/datasets/Salesforce/wikitext

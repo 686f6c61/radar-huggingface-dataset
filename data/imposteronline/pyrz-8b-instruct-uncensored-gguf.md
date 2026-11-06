@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pyrz-8B-Instruct-Uncensored-GGUF es un conjunto de pesos cuantizados en formato GGUF publicados por el usuario ImposterOnline sobre HuggingFace. Se trata de la version lista para inferencia local de Pyrex-8B-Instruct-Uncensored, un modelo de 7,6 mil millones de parametros afinado con QLoRA y orientado a tareas de codigo. El repositorio contiene cuatro variantes de cuantizacion (F16, Q4_K_M, Q5_K_M y Q8_0) pensadas para ejecutarse en GPU de consumo, desde 4,4 GB hasta 15,2 GB.
+Pyrz-8B-Instruct-Uncensored-GGUF es un conjunto de pesos cuantizados en formato GGUF publicados por el usuario ImposterOnline sobre Hugging Face. Se trata de la version lista para inferencia local de Pyrex-8B-Instruct-Uncensored, un modelo de 7,6 mil millones de parametros afinado con QLoRA y orientado a tareas de codigo. El repositorio contiene cuatro variantes de cuantizacion (F16, Q4_K_M, Q5_K_M y Q8_0) pensadas para ejecutarse en GPU de consumo, desde 4,4 GB hasta 15,2 GB.
 
 Segun fuentes externas, el modelo base es una variante "abliterated" y sin censura de BlossomsAI/Qwen2.5-Coder-7B-Instruct-Uncensored, por lo que heredaria la arquitectura transformer decoder-only de la familia Qwen2.5-Coder. No obstante, la model card del repositorio no detalla la arquitectura, los datos de entrenamiento ni la longitud de contexto, y la propia ficha presenta el nombre "Pyrex-8B" mientras el identificador del repositorio usa "Pyrz-8B", una discrepancia que conviene tener en cuenta al referenciarlo.
 
@@ -68,17 +68,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: ~4,5-5 GB con Q4_K_M, ~5,5-6 GB con Q5_K_M, ~9-10 GB con Q8_0 y ~16 GB con F16 (sin contar el contexto, que incrementa el consumo con la longitud de secuencia).
 - GPU recomendadas: RTX 3060 12 GB o RTX 4060 Ti 16 GB para Q5_K_M y Q8_0; RTX 4090 (24 GB) o A100/H100 para F16.
 - Cabe en GPU de consumo: si. Q4_K_M y Q5_K_M encajan en GPUs de 8 GB; Q8_0 requiere 12 GB o mas; F16 necesita 16-24 GB o reparto entre GPU y CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, kobold.cpp; vLLM y TGI admiten GGUF con soporte parcial. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de inferencia tipo HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, kobold.cpp; vLLM y TGI admiten GGUF con soporte parcial. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de inferencia tipo Hugging Face.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Pyrz-8B-Instruct-Uncensored (GGUF) | 7,6 B | no disponible | MIT | HuggingFace, 35 descargas | Sin benchmarks ni documentacion tecnica |
-| Qwen2.5-Coder-7B-Instruct | 7,6 B | 32.768 tokens (extensible) | Apache 2.0 (segun el fabricante) | HuggingFace, ampliamente usado | Modelo base de referencia, con benchmarks publicados |
-| Llama-3.1-8B-Instruct | 8 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, muy extendido | Mayor contexto, licencia con restricciones |
-| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 tokens | Apache 2.0 | HuggingFace, muy extendido | Buen equilibrio calidad/tamano, con benchmarks publicados |
+| Pyrz-8B-Instruct-Uncensored (GGUF) | 7,6 B | no disponible | MIT | Hugging Face, 35 descargas | Sin benchmarks ni documentacion tecnica |
+| Qwen2.5-Coder-7B-Instruct | 7,6 B | 32.768 tokens (extensible) | Apache 2.0 (segun el fabricante) | Hugging Face, ampliamente usado | Modelo base de referencia, con benchmarks publicados |
+| Llama-3.1-8B-Instruct | 8 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, muy extendido | Mayor contexto, licencia con restricciones |
+| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 tokens | Apache 2.0 | Hugging Face, muy extendido | Buen equilibrio calidad/tamano, con benchmarks publicados |
 
 La comparacion es orientativa: los tres modelos alternativos cuentan con documentacion tecnica y resultados de evaluacion publicos, mientras que Pyrz-8B no aporta ninguno. La principal ventaja diferencial de Pyrz-8B es su caracter "uncensored" y su licencia MIT; su principal desventaja es la ausencia total de datos verificables sobre rendimiento, contexto e idiomas.
 
@@ -96,8 +96,8 @@ La comparacion es orientativa: los tres modelos alternativos cuentan con documen
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/ImposterOnline/Pyrz-8B-Instruct-Uncensored-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/ImposterOnline/Pyrex-8B-Instruct-Uncensored
+- Repositorio GGUF en Hugging Face: https://huggingface.co/ImposterOnline/Pyrz-8B-Instruct-Uncensored-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/ImposterOnline/Pyrex-8B-Instruct-Uncensored
 - Arbol de ficheros del modelo base: https://huggingface.co/ImposterOnline/Pyrex-8B-Instruct-Uncensored/tree/main
 - Ficha en abliteratedmodels.org: https://www.abliteratedmodels.org/pyrex-8b-instruct-uncensored/
 - Ficha en featherless.ai: https://featherless.ai/models/ImposterOnline/Pyrex-8B-Instruct-Uncensored

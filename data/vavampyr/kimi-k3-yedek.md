@@ -69,7 +69,7 @@ No se dispone de datos cuantitativos de comparación con otros modelos en la inf
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/vavampyr/Kimi-K3-Yedek
+- Página del modelo en Hugging Face: https://huggingface.co/vavampyr/Kimi-K3-Yedek
 - Repositorio oficial en GitHub: https://github.com/MoonshotAI/Kimi-K3
 - Informe técnico (PDF): https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf
 - Blog técnico de Kimi K3: https://www.kimi.com/blog/kimi-k3

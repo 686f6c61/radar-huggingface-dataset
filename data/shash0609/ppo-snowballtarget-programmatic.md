@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `shash0609/ppo-SnowballTarget-programmatic` es una política entrenada con el algoritmo PPO (Proximal Policy Optimization) para el entorno SnowballTarget dentro del ecosistema Unity ML-Agents. Lo publica el usuario shash0609 en HuggingFace y su pipeline declarado es `reinforcement-learning`, con `ml-agents` como librería asociada. No es un modelo de lenguaje ni un modelo fundacional: se trata de un artefacto de investigación en aprendizaje por refuerzo profundo, compuesto por los pesos de una red neuronal de política que controla un agente dentro de una escena 3D de Unity.
+El modelo `shash0609/ppo-SnowballTarget-programmatic` es una política entrenada con el algoritmo PPO (Proximal Policy Optimization) para el entorno SnowballTarget dentro del ecosistema Unity ML-Agents. Lo publica el usuario shash0609 en Hugging Face y su pipeline declarado es `reinforcement-learning`, con `ml-agents` como librería asociada. No es un modelo de lenguaje ni un modelo fundacional: se trata de un artefacto de investigación en aprendizaje por refuerzo profundo, compuesto por los pesos de una red neuronal de política que controla un agente dentro de una escena 3D de Unity.
 
 El entorno SnowballTarget es uno de los entornos de ejemplo de ML-Agents, en el que un agente debe apuntar y lanzar bolas de nieve a un objetivo. La variante etiquetada como `programmatic` hace referencia a la configuración de observaciones o de la lógica del entorno definida de forma programática (frente a variantes basadas en observaciones visuales por cámara). El modelo se publica con los tags `onnx`, `tensorboard`, `deep-reinforcement-learning` y `ML-Agents-SnowballTarget`, lo que indica que los pesos están exportados para su ejecución mediante Unity Barracuda/Sentis u ONNX Runtime.
 
-La relevancia de esta ficha es limitada pero concreta: sirve como ejemplo reproducible de un agente PPO entrenado, como posible línea base para experimentos de comparación en el mismo entorno y como material didáctico dentro del curso de deep RL de HuggingFace y Unity. El repositorio tiene 0 descargas y 0 likes, no declara licencia y no publica información sobre hiperparámetros, número de pasos de entrenamiento ni resultados de evaluación.
+La relevancia de esta ficha es limitada pero concreta: sirve como ejemplo reproducible de un agente PPO entrenado, como posible línea base para experimentos de comparación en el mismo entorno y como material didáctico dentro del curso de deep RL de Hugging Face y Unity. El repositorio tiene 0 descargas y 0 likes, no declara licencia y no publica información sobre hiperparámetros, número de pasos de entrenamiento ni resultados de evaluación.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ Por el contexto del repositorio y por los tags, cabe inferir que se trata de un 
 - Control de un agente en el entorno SnowballTarget de Unity ML-Agents mediante política PPO entrenada.
 - Inferencia en tiempo real dentro del motor Unity a través de Barracuda/Sentis o mediante ONNX Runtime, según el formato de pesos.
 - Ejecución reproducible del entrenamiento: la model card documenta el comando `mlagents-learn ... --resume` para continuar el entrenamiento desde este checkpoint.
-- Visualización del agente en el navegador a través del visor de modelos de Unity en HuggingFace.
+- Visualización del agente en el navegador a través del visor de modelos de Unity en Hugging Face.
 - No dispone de generación de texto, razonamiento simbólico, código, matemáticas, visión general ni capacidades multilingües.
 - No soporta tool calling, function calling ni razonamiento multi-paso en el sentido de los modelos de lenguaje.
 - No se documentan capacidades especiales (modo thinking, audio, visión por cámara) en la información disponible.
@@ -41,11 +41,11 @@ Por el contexto del repositorio y por los tags, cabe inferir que se trata de un 
 
 - **Reproducción de experimentos de RL**: el checkpoint permite reanudar el entrenamiento con `mlagents-learn <config.yaml> --run-id=<run_id> --resume`, útil para estudiar la estabilidad de PPO en este entorno sin partir de cero.
 - **Línea base para comparativas**: sirve como referencia para medir la mejora de variantes con currículo, recompensas moldeadas o configuraciones alternativas de red en el mismo entorno SnowballTarget.
-- **Docencia y materiales de curso**: se integra directamente en los tutoriales de deep RL de HuggingFace y Unity, permitiendo al estudiante inspeccionar un agente entrenado y observar su comportamiento en el navegador.
+- **Docencia y materiales de curso**: se integra directamente en los tutoriales de deep RL de Hugging Face y Unity, permitiendo al estudiante inspeccionar un agente entrenado y observar su comportamiento en el navegador.
 - **Prototipado de NPC en Unity**: el fichero `.onnx` puede embeberse en una build de Unity para dotar a un personaje de comportamiento de apuntado/lanzamiento sin depender de servicios externos.
 - **Pruebas de despliegue de inferencia embebida**: útil para validar pipelines de exportación ONNX y el consumo de políticas de RL en tiempo real (presupuestos de latencia por frame, uso de CPU/GPU en el runtime de Unity).
 - **Investigación en generalización de políticas**: al ser una política específica de un entorno con observaciones programáticas, permite estudiar la transferencia a variantes del escenario (posiciones de objetivo, condiciones iniciales) y detectar sobreajuste.
-- **Auditoría de artefactos de RL en HuggingFace**: dado que el repositorio no declara licencia ni métricas, funciona como caso práctico para discutir prácticas de publicación reproducible en RL (trazabilidad, licencias, evaluación).
+- **Auditoría de artefactos de RL en Hugging Face**: dado que el repositorio no declara licencia ni métricas, funciona como caso práctico para discutir prácticas de publicación reproducible en RL (trazabilidad, licencias, evaluación).
 
 ## Benchmarks y rendimiento
 
@@ -65,7 +65,7 @@ La model card no incluye recompensa media, tasa de éxito, número de pasos hast
 
 No disponible. La información proporcionada no identifica otros checkpoints publicados para el mismo entorno SnowballTarget ni agentes PPO comparables con métricas verificables, por lo que no es posible establecer una comparación cuantitativa rigurosa.
 
-Como referencia cualitativa, la categoría de modelos comparable sería la de otros agentes PPO entrenados con Unity ML-Agents y publicados en HuggingFace (por ejemplo, los generados por el propio flujo de trabajo del curso de deep RL), pero no se dispone de sus identificadores, parámetros ni resultados en esta búsqueda.
+Como referencia cualitativa, la categoría de modelos comparable sería la de otros agentes PPO entrenados con Unity ML-Agents y publicados en Hugging Face (por ejemplo, los generados por el propio flujo de trabajo del curso de deep RL), pero no se dispone de sus identificadores, parámetros ni resultados en esta búsqueda.
 
 ## Limitaciones y advertencias
 
@@ -76,13 +76,13 @@ Como referencia cualitativa, la categoría de modelos comparable sería la de ot
 - **Sin información de sesgos**: no aplica en el sentido de sesgos lingüísticos o sociales, pero sí puede existir un sesgo hacia las condiciones iniciales del entorno de entrenamiento.
 - **Repositorio sin tracción**: 0 descargas y 0 likes implican que el modelo no ha sido validado por terceros; no hay issues, discusiones ni reproducciones externas conocidas.
 - **Información incompleta de pesos**: el tamaño del repositorio figura como 0.0 GB, lo que no permite confirmar qué ficheros están realmente disponibles ni su integridad.
-- **Resultados de búsqueda no pertinentes**: las búsquedas web asociadas no devolvieron documentación técnica sobre este modelo, por lo que toda la información procede exclusivamente de la model card y de los metadatos de HuggingFace.
+- **Resultados de búsqueda no pertinentes**: las búsquedas web asociadas no devolvieron documentación técnica sobre este modelo, por lo que toda la información procede exclusivamente de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shash0609/ppo-SnowballTarget-programmatic
+- Modelo en Hugging Face: https://huggingface.co/shash0609/ppo-SnowballTarget-programmatic
 - Documentación de Unity ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Tutorial corto del curso de deep RL (Huggy the Dog): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo del curso de deep RL (ML-Agents): https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Visor de agentes Unity en HuggingFace: https://huggingface.co/unity
+- Visor de agentes Unity en Hugging Face: https://huggingface.co/unity

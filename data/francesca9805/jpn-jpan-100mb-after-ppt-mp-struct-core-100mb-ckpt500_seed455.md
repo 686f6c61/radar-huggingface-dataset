@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jpn-jpan-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` es un ajuste fino de tipo SFT (supervised fine-tuning) desarrollado por el usuario de HuggingFace francesca9805, construido sobre el modelo base `francesca9805/jpn-jpan-100mb-ppt-mp-struct-core-100mb_seed455`. Se trata de un transformer de arquitectura GPT-2 con 124.770.816 par\u00e1metros totales (aproximadamente 124,8 millones), lo que lo sit\u00faa en la categor\u00eda de modelos peque\u00f1os, comparable en tama\u00f1o al GPT-2 small original. El identificador del modelo sugiere un experimento centrado en tokenizaci\u00f3n y estructura de datos para japon\u00e9s (prefijos "jpn" y "jpan") sobre un corpus de aproximadamente 100 MB.
+El modelo `jpn-jpan-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` es un ajuste fino de tipo SFT (supervised fine-tuning) desarrollado por el usuario de Hugging Face francesca9805, construido sobre el modelo base `francesca9805/jpn-jpan-100mb-ppt-mp-struct-core-100mb_seed455`. Se trata de un transformer de arquitectura GPT-2 con 124.770.816 par\u00e1metros totales (aproximadamente 124,8 millones), lo que lo sit\u00faa en la categor\u00eda de modelos peque\u00f1os, comparable en tama\u00f1o al GPT-2 small original. El identificador del modelo sugiere un experimento centrado en tokenizaci\u00f3n y estructura de datos para japon\u00e9s (prefijos "jpn" y "jpan") sobre un corpus de aproximadamente 100 MB.
 
 El modelo forma parte de una l\u00ednea de investigaci\u00f3n vinculada a la Universidad de Groningen, seg\u00fan el enlace de Weights & Biases incluido en su model card (proyecto "new-tokenizers"). El sufijo "ckpt500" indica que corresponde al checkpoint 500 de un entrenamiento, y "seed455" que se fij\u00f3 la semilla 455 para reproducibilidad. Es, por tanto, un artefacto experimental m\u00e1s que un modelo listo para producci\u00f3n.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jpn-jpan-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455 | 124,8 M | no disponible | no disponible | HuggingFace (0 descargas) |
+| jpn-jpan-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455 | 124,8 M | no disponible | no disponible | Hugging Face (0 descargas) |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Ampliamente disponible |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible |
 | GPT-2 medium | 355 M | 1024 tokens | MIT | Ampliamente disponible |
@@ -84,7 +84,7 @@ La comparativa se limita a modelos de la misma familia y tama\u00f1o, ya que no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/jpn-jpan-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/jpn-jpan-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/jpn-jpan-100mb-ppt-mp-struct-core-100mb_seed455
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/hfyqcgd3

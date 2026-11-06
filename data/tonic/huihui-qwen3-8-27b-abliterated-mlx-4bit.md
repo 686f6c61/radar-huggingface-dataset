@@ -78,7 +78,7 @@ La diferencia principal frente al modelo original es la abliteracion (eliminacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Tonic/Huihui-Qwen3.8-27B-abliterated-mlx-4Bit
+- Repositorio Hugging Face: https://huggingface.co/Tonic/Huihui-Qwen3.8-27B-abliterated-mlx-4Bit
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Repositorio del modelo original Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Modelos cuantizados del base: https://huggingface.co/models?other=base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated

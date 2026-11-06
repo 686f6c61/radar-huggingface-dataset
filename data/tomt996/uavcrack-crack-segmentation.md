@@ -81,7 +81,7 @@ No se dispone de comparaciones con otros modelos de segmentacion de grietas en l
 
 | Modelo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| UAVCrack (este modelo) | 24,4 M | 384x672 fijo | MIT (pesos) | HuggingFace, GitHub |
+| UAVCrack (este modelo) | 24,4 M | 384x672 fijo | MIT (pesos) | Hugging Face, GitHub |
 | Segmentadores genericos (SAM, U-Net) | no disponible | variable | variable | no disponible para esta tarea |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se dispone de comparaciones con otros modelos de segmentacion de grietas en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tomt996/uavcrack-crack-segmentation
+- Hugging Face: https://huggingface.co/Tomt996/uavcrack-crack-segmentation
 - Repositorio de codigo: https://github.com/Tom713134/UAVCrack-Crack-Segmentation
 - Dataset UAV-CrackX: https://github.com/SHAN-JH/UAV-CrackX-Datasets
 - Solicitud del desafio VLP (pista D): http://vlp.chd.edu.cn/tasks/4

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MuscleMimic 80/20 selected checkpoints es un repositorio de checkpoints de aprendizaje por refuerzo (RL) publicado por el usuario yangfy0627 en HuggingFace. No se trata de un modelo de lenguaje ni de un modelo generativo, sino de un conjunto de estados de entrenamiento completos (parámetros de red más estado del optimizador y metadatos asociados) guardados en formato Orbax, el formato nativo del ecosistema JAX/Flax. El repositorio contiene exactamente seis checkpoints completos extraídos de una instantánea offline fechada el 3 de septiembre de 2026: los últimos checkpoints de las variantes T0 a T4 con semilla 0 y el último de la variante T1 con semilla 1.
+MuscleMimic 80/20 selected checkpoints es un repositorio de checkpoints de aprendizaje por refuerzo (RL) publicado por el usuario yangfy0627 en Hugging Face. No se trata de un modelo de lenguaje ni de un modelo generativo, sino de un conjunto de estados de entrenamiento completos (parámetros de red más estado del optimizador y metadatos asociados) guardados en formato Orbax, el formato nativo del ecosistema JAX/Flax. El repositorio contiene exactamente seis checkpoints completos extraídos de una instantánea offline fechada el 3 de septiembre de 2026: los últimos checkpoints de las variantes T0 a T4 con semilla 0 y el último de la variante T1 con semilla 1.
 
 La relevancia de este repositorio es acotada y muy específica: sirve para reproducir, reanudar o auditar un experimento de RL concreto en lugar de ofrecer un modelo listo para inferencia. El autor incluye SHA256SUMS, FILE_MANIFEST.json y SELECTION.json para verificar integridad y procedencia, y advierte explícitamente de que no se incluyen series de checkpoints antiguas, historial de W&B ni vídeos de evaluación. El tamaño total del repositorio es de 6,0 GB, lo que sitúa cada checkpoint en torno a 1 GB de media (estimación derivada del tamaño del repo dividido entre los seis checkpoints, no un dato declarado por el autor).
 
@@ -90,6 +90,6 @@ No disponible. La informacion proporcionada no identifica modelos comparables, n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yangfy0627/musclemimic-checkpoints-20260903
+- Hugging Face: https://huggingface.co/yangfy0627/musclemimic-checkpoints-20260903
 - Descarga directa por CLI: `hf download yangfy0627/musclemimic-checkpoints-20260903 --local-dir ./musclemimic-checkpoints`
 - Paper, blog, repositorio de codigo o demo: no disponibles. La busqueda web no devolvio ningun enlace relacionado con el proyecto; los resultados obtenidos correspondian a portales de la administracion tributaria brasileña (cav.receita.fazenda.gov.br) sin relacion con el modelo.

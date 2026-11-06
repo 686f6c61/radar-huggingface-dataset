@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`oliviawright/experiment-multitask` es un repositorio experimental publicado en HuggingFace por la usuaria oliviawright. No se trata de un modelo entrenado ni de un lanzamiento listo para producción, sino de una implementación propia de un "Tiny Transformer" orientada a experimentos multitarea, empaquetada junto con su configuración explícita y un checkpoint de inicialización. La model card lo describe literalmente como "a reproducible starting point, not a trained model release".
+`oliviawright/experiment-multitask` es un repositorio experimental publicado en Hugging Face por la usuaria oliviawright. No se trata de un modelo entrenado ni de un lanzamiento listo para producción, sino de una implementación propia de un "Tiny Transformer" orientada a experimentos multitarea, empaquetada junto con su configuración explícita y un checkpoint de inicialización. La model card lo describe literalmente como "a reproducible starting point, not a trained model release".
 
 El repositorio contiene un fichero Python (`main.py`) con la implementación del modelo y un punto de entrada ejecutable, además de `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto y `model.safetensors`, que es un checkpoint de inicialización válido para pruebas de humo, no un modelo con pesos entrenados. El recuento real de parámetros en safetensors es de 49.600, es decir, un modelo de escala mínima pese a la etiqueta "giant" que aparece en la configuración.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oliviawright/experiment-multitask | 49.600 | no disponible | No (checkpoint de inicialización) | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| oliviawright/experiment-multitask | 49.600 | no disponible | No (checkpoint de inicialización) | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | Modelos "Tiny Transformer" de referencia (p. ej. nanoGPT) | Órdenes de magnitud mayores (millones) | no disponible | Según variante | MIT / otras | Repositorios públicos de código |
-| Transformers pequeños preentrenados (p. ej. distilgpt2) | ~82 M | 1.024 tokens | Sí | MIT | HuggingFace |
+| Transformers pequeños preentrenados (p. ej. distilgpt2) | ~82 M | 1.024 tokens | Sí | MIT | Hugging Face |
 
 La comparación directa no es posible en términos de rendimiento porque este repositorio no contiene un modelo entrenado. Frente a alternativas como nanoGPT o distilgpt2, la diferencia clave es que aquí no hay pesos útiles ni benchmarks, solo el esqueleto de implementación y la configuración.
 
@@ -83,5 +83,5 @@ La comparación directa no es posible en términos de rendimiento porque este re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oliviawright/experiment-multitask
+- Hugging Face: https://huggingface.co/oliviawright/experiment-multitask
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

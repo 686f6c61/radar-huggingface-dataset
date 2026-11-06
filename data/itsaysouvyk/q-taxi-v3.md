@@ -2,9 +2,9 @@
 
 ## Resumen
 
-q-Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-learning sobre el entorno Taxi-v4 de Gym/Gymnasium, publicado en HuggingFace por el usuario itsaysouvyk. No se trata de un modelo de lenguaje ni de una red neuronal profunda documentada: la model card lo describe como una implementacion propia ("custom-implementation") de un agente Q-Learning y el artefacto distribuido es un fichero `q-learning.pkl`. El problema que resuelve es el clasico task de despacho de taxi en una rejilla discreta, donde el agente debe recoger a un pasajero y dejarlo en el destino correcto con el menor coste acumulado posible.
+q-Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-learning sobre el entorno Taxi-v4 de Gym/Gymnasium, publicado en Hugging Face por el usuario itsaysouvyk. No se trata de un modelo de lenguaje ni de una red neuronal profunda documentada: la model card lo describe como una implementacion propia ("custom-implementation") de un agente Q-Learning y el artefacto distribuido es un fichero `q-learning.pkl`. El problema que resuelve es el clasico task de despacho de taxi en una rejilla discreta, donde el agente debe recoger a un pasajero y dejarlo en el destino correcto con el menor coste acumulado posible.
 
-Su relevancia es, por tanto, fundamentalmente didactica o de referencia: sirve como ejemplo minimo de como empaquetar y publicar un agente de refuerzo tabular en el Hub de HuggingFace, y como baseline reproducible sobre Taxi-v4 frente al que comparar implementaciones propias. El autor declara un `mean_reward` de 7.54 +/- 2.73 en Taxi-v4, con `verified: false`, lo que indica que el resultado no ha sido validado de forma independiente.
+Su relevancia es, por tanto, fundamentalmente didactica o de referencia: sirve como ejemplo minimo de como empaquetar y publicar un agente de refuerzo tabular en el Hub de Hugging Face, y como baseline reproducible sobre Taxi-v4 frente al que comparar implementaciones propias. El autor declara un `mean_reward` de 7.54 +/- 2.73 en Taxi-v4, con `verified: false`, lo que indica que el resultado no ha sido validado de forma independiente.
 
 El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, un tamano de 0.0 GB (el fichero de pesos ocupa menos de lo que redondea la interfaz) y fue creado y actualizado el 18 de septiembre de 2026. No hay informacion publicada sobre arquitectura de red, hiperparametros de entrenamiento, numero de episodios ni licencia.
 
@@ -83,6 +83,6 @@ No disponible. La informacion proporcionada no incluye otros agentes Q-learning 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsaysouvyk/q-Taxi-v3
+- Modelo en Hugging Face: https://huggingface.co/itsaysouvyk/q-Taxi-v3
 - Fichero de pesos referenciado en la model card: `q-learning.pkl` dentro del repositorio anterior
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada; los resultados devueltos por la busqueda no guardan relacion con este modelo.

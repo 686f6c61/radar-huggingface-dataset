@@ -56,7 +56,7 @@ Sobre el entrenamiento del modelo original (numero de tokens, composicion del da
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye cifras de MMLU, HumanEval, GSM8K ni de evaluaciones multimodales, y la metadata de HuggingFace no aporta metricas de rendimiento.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye cifras de MMLU, HumanEval, GSM8K ni de evaluaciones multimodales, y la metadata de Hugging Face no aporta metricas de rendimiento.
 
 ## Requisitos de hardware
 
@@ -94,7 +94,7 @@ No se dispone en la informacion proporcionada de datos de otros modelos comparab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SoAIHQ/Qwen3.5-9B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/SoAIHQ/Qwen3.5-9B-GGUF
 - Arbol de ficheros: https://huggingface.co/SoAIHQ/Qwen3.5-9B-GGUF/tree/main
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE

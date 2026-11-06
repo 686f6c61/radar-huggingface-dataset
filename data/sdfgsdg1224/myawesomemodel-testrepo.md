@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario sdfgsdg1224 en HuggingFace, con licencia MIT y etiquetado como compatible con la librería `transformers` y el pipeline de `feature-extraction`. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente sus capacidades de razonamiento y deducción, alcanzando en AIME 2025 una precisión del 87,5 % frente al 70 % de la versión previa, gracias a un mayor uso de tokens de pensamiento (23K por pregunta frente a 12K). También se menciona una reducción de la tasa de alucinación y un mejor soporte para function calling.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario sdfgsdg1224 en Hugging Face, con licencia MIT y etiquetado como compatible con la librería `transformers` y el pipeline de `feature-extraction`. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente sus capacidades de razonamiento y deducción, alcanzando en AIME 2025 una precisión del 87,5 % frente al 70 % de la versión previa, gracias a un mayor uso de tokens de pensamiento (23K por pregunta frente a 12K). También se menciona una reducción de la tasa de alucinación y un mejor soporte para function calling.
 
 Sin embargo, la información pública es muy limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento. El repositorio tiene un tamaño de 0.0 GB y no registra descargas ni interacciones. A pesar de la ambición de la descripción, se trata de un repositorio de prueba o demostración sin documentación técnica verificable.
 
@@ -85,7 +85,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB) y no contiene pesos del modelo, por lo que no es posible descargarlo ni utilizarlo directamente.
+- El repositorio de Hugging Face está vacío (0.0 GB) y no contiene pesos del modelo, por lo que no es posible descargarlo ni utilizarlo directamente.
 - No se especifican la arquitectura, el número de parámetros ni la longitud de contexto, lo que impide evaluar su viabilidad técnica.
 - Los resultados de benchmarks presentados carecen de contexto: no se identifican los modelos comparados ni se detallan los conjuntos de datos de evaluación.
 - No se indica qué idiomas soporta el modelo, a pesar de que la model card menciona capacidades de traducción.
@@ -96,6 +96,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sdfgsdg1224/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/sdfgsdg1224/MyAwesomeModel-TestRepo
 
 No se proporcionan otros enlaces (papers, blogs, repos de código, demos) en la información disponible.

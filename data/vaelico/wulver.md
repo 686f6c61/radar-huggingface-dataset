@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Wulver v0.1 | 12.8B | Furry/anthro/kemono/anime | Krea 2 Community | HuggingFace, Civitai |
-| Krea 2 Raw (base) | 12.8B | Generalista | Krea 2 Community | HuggingFace |
+| Wulver v0.1 | 12.8B | Furry/anthro/kemono/anime | Krea 2 Community | Hugging Face, Civitai |
+| Krea 2 Raw (base) | 12.8B | Generalista | Krea 2 Community | Hugging Face |
 | Stable Diffusion XL | 3.5B | Generalista | OpenRAIL | Amplia |
 | Flux.1 Dev | 12B | Generalista | Flux Dev Non-Commercial | Amplia |
 
@@ -83,7 +83,7 @@ No se dispone de comparativas directas con otros modelos especializados en furry
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vaelico/Wulver
+- Modelo en Hugging Face: https://huggingface.co/Vaelico/Wulver
 - Página en Civitai: https://civitai.com/models/2881657/wulver-krea-2-v01-alpha
 - Sitio web del autor: https://vaelico.ai
 - Licencia Krea 2 Community: https://krea.ai/krea-2-licensing

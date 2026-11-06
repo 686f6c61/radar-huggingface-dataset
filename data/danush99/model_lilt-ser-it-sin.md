@@ -62,12 +62,12 @@ No se han publicado resultados comparativos con otros modelos en la información
 - VRAM estimada para inferencia: con pesos en fp32, el modelo ocupa aproximadamente 1,1 GB en memoria, por lo que se recomienda al menos 2-3 GB de VRAM para inferencia con activaciones.
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM, como NVIDIA GTX 1650, RTX 3050, RTX 3060 o Tesla T4, es suficiente. También puede ejecutarse en CPU con un rendimiento aceptable para lotes pequeños.
 - Cabe en GPUs de consumo: sí, es un modelo ligero que puede ejecutarse en tarjetas gráficas de gama media y baja.
-- Opciones de despliegue: puede servirse mediante la librería Transformers de HuggingFace (pipeline de token-classification), ONNX Runtime, TorchServe o mediante una API personalizada en FastAPI. No es compatible con vLLM ni llama.cpp, ya que estos frameworks están orientados a modelos generativos de lenguaje.
+- Opciones de despliegue: puede servirse mediante la librería Transformers de Hugging Face (pipeline de token-classification), ONNX Runtime, TorchServe o mediante una API personalizada en FastAPI. No es compatible con vLLM ni llama.cpp, ya que estos frameworks están orientados a modelos generativos de lenguaje.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento de modelos comparables en la información proporcionada. El modelo base es `kavg/LiLT-SER-IT`, también disponible en HuggingFace, y existe un modelo similar `kavg/LiLT-SER-IT-SIN` que parece haber sido entrenado sobre la misma configuración de XFUN. A continuación se muestra una tabla orientativa basada en los datos disponibles:
+No se dispone de datos de rendimiento de modelos comparables en la información proporcionada. El modelo base es `kavg/LiLT-SER-IT`, también disponible en Hugging Face, y existe un modelo similar `kavg/LiLT-SER-IT-SIN` que parece haber sido entrenado sobre la misma configuración de XFUN. A continuación se muestra una tabla orientativa basada en los datos disponibles:
 
 | Modelo | Parametros | Licencia | Formato | Comentario |
 |---|---|---|---|---|
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento de modelos comparables en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danush99/Model_LiLT-SER-IT-SIN
+- Modelo en Hugging Face: https://huggingface.co/danush99/Model_LiLT-SER-IT-SIN
 - Modelo base: https://huggingface.co/kavg/LiLT-SER-IT
 - Modelo similar: https://huggingface.co/kavg/LiLT-SER-IT-SIN
 - Dataset XFUN: https://huggingface.co/datasets/xfun

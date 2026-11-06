@@ -2,9 +2,9 @@
 
 ## Resumen
 
-PS-1.0-translate (identificado en la model card como «PS 1.0 Translate — v1.1») es un modelo de reconocimiento automatico del habla con modulo de traduccion, desarrollado desde cero en PyTorch por el usuario Pedro21613 y publicado en HuggingFace. No se basa en Whisper ni en ningun checkpoint previo: implementa su propio frontend log-Mel de 80 dimensiones, un subsampling convolucional x4, un encoder Conformer-lite de 6 capas con dimension 256 y un tokenizer de caracteres multilingue propio de 73 tokens. El conjunto completo ocupa aproximadamente 9 millones de parametros y unos 37 MB en disco.
+PS-1.0-translate (identificado en la model card como «PS 1.0 Translate — v1.1») es un modelo de reconocimiento automatico del habla con modulo de traduccion, desarrollado desde cero en PyTorch por el usuario Pedro21613 y publicado en Hugging Face. No se basa en Whisper ni en ningun checkpoint previo: implementa su propio frontend log-Mel de 80 dimensiones, un subsampling convolucional x4, un encoder Conformer-lite de 6 capas con dimension 256 y un tokenizer de caracteres multilingue propio de 73 tokens. El conjunto completo ocupa aproximadamente 9 millones de parametros y unos 37 MB en disco.
 
-El modelo se presenta como ligero y orientado a inferencia en tiempo real (streaming desde microfono), con etiquetas que declaran soporte para portugues, ingles, espanol, frances, aleman e italiano. El pipeline declarado en HuggingFace es `automatic-speech-recognition`, aunque la model card describe tambien un decodificador de traduccion y una funcion de perdida CTC con decodificacion greedy.
+El modelo se presenta como ligero y orientado a inferencia en tiempo real (streaming desde microfono), con etiquetas que declaran soporte para portugues, ingles, espanol, frances, aleman e italiano. El pipeline declarado en Hugging Face es `automatic-speech-recognition`, aunque la model card describe tambien un decodificador de traduccion y una funcion de perdida CTC con decodificacion greedy.
 
 Su relevancia actual es mas didactica y de investigacion que productiva: el propio autor declara que la version v1.1 se entreno con solo 93 muestras (73 audios reales en ingles y 20 frases sinteticas en portugues generadas con MMS-TTS) durante 600 pasos en una GPU T4, y reconoce explicitamente que el modelo «memorizo» esas frases con overfitting intencionado. Es, por tanto, una prueba de concepto de arquitectura end-to-end, no un modelo listo para produccion.
 
@@ -85,10 +85,10 @@ La informacion proporcionada no incluye comparativas con otros modelos. A modo d
 
 | Modelo | Parametros | Idiomas | Licencia | Formato de pesos | Disponibilidad |
 |---|---|---|---|---|---|
-| PS-1.0-translate (este modelo) | ~9M | pt, en, es, fr, de, it (declarados; entrenamiento efectivo en en y pt) | no disponible | PyTorch (`pytorch_model.bin`) | HuggingFace, 0 descargas |
+| PS-1.0-translate (este modelo) | ~9M | pt, en, es, fr, de, it (declarados; entrenamiento efectivo en en y pt) | no disponible | PyTorch (`pytorch_model.bin`) | Hugging Face, 0 descargas |
 | Whisper tiny (referencia externa) | ~39M | multilingue (99 idiomas) | MIT | safetensors, PyTorch, entre otros | Ampliamente desplegado |
 | Whisper base (referencia externa) | ~74M | multilingue (99 idiomas) | MIT | safetensors, PyTorch, entre otros | Ampliamente desplegado |
-| MMS-TTS por (`facebook/mms-tts-por`) | no disponible | portugues | no disponible en la informacion | no disponible | HuggingFace; usado aqui como generador de datos sinteticos, no como ASR |
+| MMS-TTS por (`facebook/mms-tts-por`) | no disponible | portugues | no disponible en la informacion | no disponible | Hugging Face; usado aqui como generador de datos sinteticos, no como ASR |
 
 No se dispone de datos comparativos de CER, WER ni latencia entre este modelo y las alternativas citadas.
 
@@ -107,7 +107,7 @@ No se dispone de datos comparativos de CER, WER ni latencia entre este modelo y 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Pedro21613/PS-1.0-translate
+- Pagina del modelo en Hugging Face: https://huggingface.co/Pedro21613/PS-1.0-translate
 - Modelo TTS citado como generador de datos sinteticos: https://huggingface.co/facebook/mms-tts-por
 - Corpus mencionados por el autor como base para un reentrenamiento robusto: Common Voice, LibriSpeech y VoxPopuli (no se proporcionan enlaces concretos en la informacion disponible)
 - No se han encontrado en la informacion proporcionada articulos academicos, blogs tecnicos, repositorios adicionales ni demos en linea.

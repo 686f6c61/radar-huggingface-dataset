@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rubatotree/so101_classify_the_blocks_act_512` es una política de robótica basada en ACT (Action Chunking with Transformers) publicada en HuggingFace Hub mediante LeRobot. No es un modelo de lenguaje: es un modelo de imitación (imitation learning) que, a partir de una imagen de cámara y del estado articular de un brazo robótico, predice directamente comandos de acción. En concreto, consume `observation.state` con forma `(6,)` y una imagen `observation.images.front` de `(3, 480, 640)`, y produce `action` con forma `(6,)`.
+`rubatotree/so101_classify_the_blocks_act_512` es una política de robótica basada en ACT (Action Chunking with Transformers) publicada en Hugging Face Hub mediante LeRobot. No es un modelo de lenguaje: es un modelo de imitación (imitation learning) que, a partir de una imagen de cámara y del estado articular de un brazo robótico, predice directamente comandos de acción. En concreto, consume `observation.state` con forma `(6,)` y una imagen `observation.images.front` de `(3, 480, 640)`, y produce `action` con forma `(6,)`.
 
 El modelo lo desarrolla el usuario `rubatotree` y está entrenado sobre el dataset propio `rubatotree/classify-blocks-512-local` (512 episodios, 201.004 frames, 15 FPS) para una única tarea: "Match each loose plastic block to the examples in the organizer and put it in the matching compartment". El robot objetivo es un `so_follower` (familia SO-100/SO-101) con una sola cámara frontal. Los pesos ocupan 51.668.614 parámetros en formato safetensors, con un repositorio de 0,2 GB.
 
@@ -80,7 +80,7 @@ No se dispone de datos comparativos publicados para este modelo concreto. La tab
 | `rubatotree/so101_classify_the_blocks_act_512` | ACT (transformer con chunking de acciones) sobre LeRobot | 51.668.614 | apache-2.0 | No disponibles |
 | Otras politicas ACT del Hub de LeRobot | ACT | No disponible por modelo | Variable, habitualmente apache-2.0 | No disponibles |
 | Diffusion Policy (referencia de la literatura) | Generacion de trayectorias por difusion | No disponible en la informacion proporcionada | No disponible | No disponibles |
-| SmolVLA (familia VLA de HuggingFace) | Vision-language-action | No disponible en la informacion proporcionada | No disponible | No disponibles |
+| SmolVLA (familia VLA de Hugging Face) | Vision-language-action | No disponible en la informacion proporcionada | No disponible | No disponibles |
 
 ## Limitaciones y advertencias
 
@@ -97,7 +97,7 @@ No se dispone de datos comparativos publicados para este modelo concreto. La tab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rubatotree/so101_classify_the_blocks_act_512
+- Modelo en Hugging Face: https://huggingface.co/rubatotree/so101_classify_the_blocks_act_512
 - Dataset de entrenamiento: https://huggingface.co/datasets/rubatotree/classify-blocks-512-local
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=rubatotree/classify-blocks-512-local
 - Paper de ACT (arXiv:2304.13705): https://huggingface.co/papers/2304.13705

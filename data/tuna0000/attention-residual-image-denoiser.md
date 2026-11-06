@@ -2,7 +2,7 @@
 
 ## Resumen
 
-E-RidNet (Grayscale) es un modelo de eliminación de ruido en imágenes en escala de grises desarrollado por Tuna0000 y publicado en HuggingFace bajo licencia MIT. Se trata de una versión modificada de la arquitectura RidNet que sustituye las conexiones residuales recursivas por bloques residuales discretos e incorpora un módulo de atención de bordes (Edge Attention Module, EAM) antes de cada bloque residual. El modelo es totalmente convolucional, sin capas de pooling ni downsampling, lo que permite ejecutarlo sobre imágenes de cualquier tamaño, aunque fue entrenado con resoluciones de 128×128.
+E-RidNet (Grayscale) es un modelo de eliminación de ruido en imágenes en escala de grises desarrollado por Tuna0000 y publicado en Hugging Face bajo licencia MIT. Se trata de una versión modificada de la arquitectura RidNet que sustituye las conexiones residuales recursivas por bloques residuales discretos e incorpora un módulo de atención de bordes (Edge Attention Module, EAM) antes de cada bloque residual. El modelo es totalmente convolucional, sin capas de pooling ni downsampling, lo que permite ejecutarlo sobre imágenes de cualquier tamaño, aunque fue entrenado con resoluciones de 128×128.
 
 Con apenas 297.281 parámetros (~1,1 MB), este modelo destaca por su extrema ligereza, lo que lo hace adecuado para entornos con recursos limitados o despliegue en dispositivos periféricos. Está implementado con TensorFlow/Keras 3 y el pipeline declarado es image-to-image. Su relevancia radica en que demuestra que es posible obtener resultados aceptables de eliminación de ruido con una fracción mínima de los parámetros que emplean los modelos de restauración de imágenes actuales, aunque su evaluación se limita a una única imagen de muestra y no incluye métricas medias sobre un conjunto de prueba completo.
 
@@ -66,7 +66,7 @@ Estos valores corresponden a una sola imagen de ejemplo y no representan una eva
 
 | Modelo | Parametros | Entrada | Tipo de ruido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| E-RidNet (este modelo) | 297.281 | Escala de grises, tamaño arbitrario | Gaussiano, S&P, Speckle, Poisson, Blur | MIT | HuggingFace |
+| E-RidNet (este modelo) | 297.281 | Escala de grises, tamaño arbitrario | Gaussiano, S&P, Speckle, Poisson, Blur | MIT | Hugging Face |
 | Modelo de la Nature (progressive residual + attention) | no disponible | no disponible | no disponible | no disponible | Articulo cientifico |
 | AI-Image-Denoiser (Cydral) | no disponible | no disponible | Varios tipos | no disponible | GitHub |
 
@@ -85,7 +85,7 @@ La comparativa es limitada porque el modelo es extremadamente ligero y de propó
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tuna0000/attention-residual-image-denoiser
+- Modelo en Hugging Face: https://huggingface.co/Tuna0000/attention-residual-image-denoiser
 - Dataset Oxford-IIIT Pet Dataset: https://www.robots.ox.ac.uk/~vgg/data/pets/
 - Articulo Nature sobre redes ligeras de eliminacion de ruido: https://www.nature.com/articles/s41598-024-60139-x
 - Proyecto AI-Image-Denoiser (GitHub): https://github.com/Cydral/AI-Image-Denoiser

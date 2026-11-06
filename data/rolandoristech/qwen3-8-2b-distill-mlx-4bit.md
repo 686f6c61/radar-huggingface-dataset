@@ -115,7 +115,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RolanDorisTech/Qwen3.8-2B-Distill-MLX-4bit
+- Repositorio en Hugging Face: https://huggingface.co/RolanDorisTech/Qwen3.8-2B-Distill-MLX-4bit
 - Repositorio canonico (oQ4e): https://huggingface.co/RolanDorisTech/Qwen3.8-2B-Distill-MLX-oQ4e
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-2B-Distill
 - Hermano mayor cuantizado (4B, oQ8e): https://huggingface.co/RolanDorisTech/Qwen3.8-4B-Distill-MLX-oQ8e

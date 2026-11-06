@@ -75,7 +75,7 @@ No se dispone de información suficiente en el repositorio para realizar una com
 
 ## Enlaces
 
-- Repositorio HuggingFace: [chimingw/qwen3.8-27b-ud-q5-k-xl-llamafile](https://huggingface.co/chimingw/qwen3.8-27b-ud-q5-k-xl-llamafile)
+- Repositorio Hugging Face: [chimingw/qwen3.8-27b-ud-q5-k-xl-llamafile](https://huggingface.co/chimingw/qwen3.8-27b-ud-q5-k-xl-llamafile)
 - Modelo GGUF fuente: [unsloth/Qwen3.8-27B-GGUF](https://huggingface.co/unsloth/Qwen3.8-27B-GGUF)
 - Modelo original: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - Runtime llamafile: [mozilla-ai/llamafile](https://github.com/mozilla-ai/llamafile/releases/tag/0.10.5)

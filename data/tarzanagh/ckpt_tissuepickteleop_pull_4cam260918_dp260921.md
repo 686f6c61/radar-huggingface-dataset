@@ -78,11 +78,11 @@ La model card referencia 24 ejecuciones sobre esta misma tarea, agrupadas en cua
 
 | Modelo | Familia | Parametros | Entrada tactil | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp260921 (este) | Diffusion Policy | 267,5 M | No | apache-2.0 | Público en HuggingFace |
-| dptactile260921 | Diffusion Policy | No disponible | Sí | apache-2.0 | Público en HuggingFace |
-| act260921 / acttactile260921 | ACT | No disponible | No / Sí | apache-2.0 | Público en HuggingFace |
-| gr00t3b260921 / gr00t3btactile260921 | GR00T (~3 B según el nombre) | ~3 B | No / Sí | No disponible | Público en HuggingFace |
-| pi05260921 / pi05tactile260921 | pi0.5 | No disponible | No / Sí | No disponible | Público en HuggingFace |
+| dp260921 (este) | Diffusion Policy | 267,5 M | No | apache-2.0 | Público en Hugging Face |
+| dptactile260921 | Diffusion Policy | No disponible | Sí | apache-2.0 | Público en Hugging Face |
+| act260921 / acttactile260921 | ACT | No disponible | No / Sí | apache-2.0 | Público en Hugging Face |
+| gr00t3b260921 / gr00t3btactile260921 | GR00T (~3 B según el nombre) | ~3 B | No / Sí | No disponible | Público en Hugging Face |
+| pi05260921 / pi05tactile260921 | pi0.5 | No disponible | No / Sí | No disponible | Público en Hugging Face |
 
 Según la model card, GR00T obtuvo el error más bajo en las tres tareas comparadas, mientras que el aporte de la entrada táctil no superó el nivel de ruido en ninguna familia. No se dispone de cifras desglosadas por modelo en la información proporcionada.
 
@@ -100,7 +100,7 @@ Según la model card, GR00T obtuvo el error más bajo en las tres tareas compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_dp260921
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_dp260921
 - Variante ACT: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_act260921
 - Variante ACT con táctil: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_acttactile260921
 - Variante Diffusion Policy con táctil: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_dptactile260921

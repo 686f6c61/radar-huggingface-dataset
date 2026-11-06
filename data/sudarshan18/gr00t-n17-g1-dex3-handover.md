@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Sudarshan18/gr00t-n17-g1-dex3-handover` (este modelo) | 3.144.016.000 | no disponible | 8/50 (16 %) en la evaluación publicada | NVIDIA Open Model License | HuggingFace, 0 descargas y 0 *likes* en el momento de la consulta |
-| `nvidia/GR00T-N1.7-3B` (modelo base) | 3B según la denominación del modelo base | no disponible | no disponible | NVIDIA Open Model License | HuggingFace |
-| `Sudarshan18/gr00t-n17-g1-brainco-handover` (modelo compañero, manos Brainco Revo2) | no disponible | no disponible | no disponible | no disponible en la información proporcionada | HuggingFace |
+| `Sudarshan18/gr00t-n17-g1-dex3-handover` (este modelo) | 3.144.016.000 | no disponible | 8/50 (16 %) en la evaluación publicada | NVIDIA Open Model License | Hugging Face, 0 descargas y 0 *likes* en el momento de la consulta |
+| `nvidia/GR00T-N1.7-3B` (modelo base) | 3B según la denominación del modelo base | no disponible | no disponible | NVIDIA Open Model License | Hugging Face |
+| `Sudarshan18/gr00t-n17-g1-brainco-handover` (modelo compañero, manos Brainco Revo2) | no disponible | no disponible | no disponible | no disponible en la información proporcionada | Hugging Face |
 
 No se dispone de datos de otros modelos VLA comparables (parámetros, contexto, rendimiento o licencia) en la información proporcionada.
 
@@ -98,7 +98,7 @@ No se dispone de datos de otros modelos VLA comparables (parámetros, contexto, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sudarshan18/gr00t-n17-g1-dex3-handover
+- Modelo en Hugging Face: https://huggingface.co/Sudarshan18/gr00t-n17-g1-dex3-handover
 - Modelo compañero (manos Brainco Revo2): https://huggingface.co/Sudarshan18/gr00t-n17-g1-brainco-handover
 - Código, evaluación y documentación: https://github.com/sudarshan-sridhar/g1-dex3-to-brainco-handover
 - Modelo base: `nvidia/GR00T-N1.7-3B`, revisión `2fc962b973bccdd5d8ce4f67cc63b264d6886495`

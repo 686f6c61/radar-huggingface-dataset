@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AI-KSK/moss-image-community-workflows-326
+- Repositorio en Hugging Face: https://huggingface.co/AI-KSK/moss-image-community-workflows-326
 - Componentes ComfyUI de MOSS-Image: https://huggingface.co/Comfy-Org/MOSS-Image
 - Instrucciones nativas de ComfyUI para MOSS-Image: https://github.com/OpenMOSS/MOSS-Image/blob/main/comfyui/README.md
 - Adaptador CharRef v2: https://huggingface.co/7err4/MOSS-Image-CharRef

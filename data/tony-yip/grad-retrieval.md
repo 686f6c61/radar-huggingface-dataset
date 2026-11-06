@@ -69,7 +69,7 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 - El checkpoint actual es una inicialización sin entrenar; no ha sido auditado para robustez, equidad ni transferencia de dominio.
 - No se ha realizado ningún entrenamiento, por lo que carece de pesos aprendidos para tareas reales de retrieval; las salidas del modelo no son fiables.
 - No ofrece generación de texto, tool calling, soporte de agentes ni razonamiento; es una implementación de Perceiver para retrieval, no un modelo de lenguaje.
-- Al tratarse de una implementación personalizada, las APIs de carga automática estándar de HuggingFace no funcionarán sin un adaptador explícito.
+- Al tratarse de una implementación personalizada, las APIs de carga automática estándar de Hugging Face no funcionarán sin un adaptador explícito.
 - El autor advierte que la implementación debe tratarse como un punto de partida experimental y que los resultados de un futuro checkpoint entrenado deben documentarse por separado de las configuraciones por defecto.
 - La licencia apache-2.0 permite uso comercial, pero el repositorio no proporciona un modelo listo para producción.
 - No se especifican límites de contexto, idiomas soportados ni cuantizaciones; en esta arquitectura de retrieval dichos parámetros no aplican o no están definidos.

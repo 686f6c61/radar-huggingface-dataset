@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| serialhex/gemma4-12b-biblical-qlora | 12B | no disponible | heredada del base (texto, imagen, audio) | no disponible | HuggingFace, 0 descargas |
-| google/gemma-4-12B-it (base) | 12B | no disponible | texto, imagen, audio nativo | no disponible en la informacion proporcionada | HuggingFace / Google DeepMind |
+| serialhex/gemma4-12b-biblical-qlora | 12B | no disponible | heredada del base (texto, imagen, audio) | no disponible | Hugging Face, 0 descargas |
+| google/gemma-4-12B-it (base) | 12B | no disponible | texto, imagen, audio nativo | no disponible en la informacion proporcionada | Hugging Face / Google DeepMind |
 | Gemma 4 26B A4B | 26B (MoE, con 4B activos por el sufijo A4B) | no disponible | texto, imagen, audio nativo | no disponible en la informacion proporcionada | Familia Gemma 4 |
 | Gemma 4 E4B | ~4B efectivos (denominacion E4B) | no disponible | texto, imagen, audio nativo | no disponible en la informacion proporcionada | Familia Gemma 4 |
 
@@ -87,7 +87,7 @@ La informacion disponible no permite comparar resultados de rendimiento entre es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/serialhex/gemma4-12b-biblical-qlora
+- Modelo en Hugging Face: https://huggingface.co/serialhex/gemma4-12b-biblical-qlora
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Anuncio de Gemma 4 12B (Google): https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/
 - Pagina de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

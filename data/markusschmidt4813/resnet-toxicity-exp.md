@@ -56,7 +56,7 @@ No se puede realizar una comparativa al no existir información sobre parámetro
 
 ## Enlaces
 
-- Repositorio HuggingFace: [markusschmidt4813/resnet-toxicity-exp](https://huggingface.co/markusschmidt4813/resnet-toxicity-exp)
+- Repositorio Hugging Face: [markusschmidt4813/resnet-toxicity-exp](https://huggingface.co/markusschmidt4813/resnet-toxicity-exp)
 - Paper de ResNet (arXiv): [ResNet: Enabling Deep Convolutional Neural Networks through Residual Learning](https://arxiv.org/html/2510.24036v1)
 - Documentación de ResNet en PyTorch: [https://pytorch.org/hub/pytorch_vision_resnet/](https://pytorch.org/hub/pytorch_vision_resnet/)
 - Wikipedia - Residual neural network: [https://en.wikipedia.org/wiki/Residual_neural_network](https://en.wikipedia.org/wiki/Residual_neural_network)

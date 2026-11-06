@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Entrada | Keypoints | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sentis-yolo26n-pose (este) | 256 x 256 | 17 COCO | `.sentis` (Unity Sentis) | AGPL-3.0 (pesos) | HuggingFace, repo de 0.0 GB |
-| Ultralytics yolo26n-pose (original) | configurable (p. ej. 640) | 17 COCO | `.pt` / ONNX | AGPL-3.0 | Ultralytics / HuggingFace |
+| sentis-yolo26n-pose (este) | 256 x 256 | 17 COCO | `.sentis` (Unity Sentis) | AGPL-3.0 (pesos) | Hugging Face, repo de 0.0 GB |
+| Ultralytics yolo26n-pose (original) | configurable (p. ej. 640) | 17 COCO | `.pt` / ONNX | AGPL-3.0 | Ultralytics / Hugging Face |
 | Otros exports Sentis de YOLO-pose | variable | 17 COCO | `.sentis` | depende del exportador | no disponible en la información proporcionada |
 
 La comparativa se limita al modelo original de Ultralytics, del que este es una conversión con resolución reducida a 256 x 256 y cabeza cruda. No se dispone de datos de rendimiento para comparar mAP ni latencia con alternativas.
@@ -85,7 +85,7 @@ La comparativa se limita al modelo original de Ultralytics, del que este es una 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sky-Kim/com.sky.sentis.yolo26n-pose
+- Modelo en Hugging Face: https://huggingface.co/Sky-Kim/com.sky.sentis.yolo26n-pose
 - Licencia de Ultralytics: https://ultralytics.com/license
 - Documentación de Unity Sentis: no disponible en la información proporcionada
 - Repositorio de Ultralytics: no disponible en la información proporcionada

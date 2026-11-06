@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-Uncensored es un modelo publicado en HuggingFace por el usuario metalman3289 bajo licencia MIT. El nombre sugiere un derivado o variante del modelo DeepSeek-V4.1 Flash, presumiblemente con las restricciones de alineacion y filtros de contenido relajados o eliminados, practica habitual en la comunidad de modelos "uncensored". No obstante, la model card publicada no contiene informacion tecnica alguna: se limita a declarar la licencia MIT.
+DeepSeek-V4.1-Flash-Uncensored es un modelo publicado en Hugging Face por el usuario metalman3289 bajo licencia MIT. El nombre sugiere un derivado o variante del modelo DeepSeek-V4.1 Flash, presumiblemente con las restricciones de alineacion y filtros de contenido relajados o eliminados, practica habitual en la comunidad de modelos "uncensored". No obstante, la model card publicada no contiene informacion tecnica alguna: se limita a declarar la licencia MIT.
 
 La informacion disponible en el repositorio es practicamente nula: cero descargas, cero likes, sin pipeline declarado, sin idiomas especificados y sin documentacion sobre arquitectura, parametros, contexto o proceso de entrenamiento. El repositorio fue creado y actualizado el mismo dia (30 de octubre de 2026), lo que apunta a una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -74,4 +74,4 @@ No disponible. No se dispone de datos tecnicos del modelo ni de informacion sufi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/metalman3289/DeepSeek-V4.1-Flash-Uncensored
+- Hugging Face: https://huggingface.co/metalman3289/DeepSeek-V4.1-Flash-Uncensored

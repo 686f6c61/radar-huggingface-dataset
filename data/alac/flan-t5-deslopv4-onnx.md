@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alac/flan-t5-deslopV4-onnx` es una conversión a formato ONNX de un modelo de la familia FLAN-T5, publicada por el usuario alac en HuggingFace. Por el identificador y el tamaño del repositorio (0,3 GB), se trata presumiblemente de una variante de pequeño tamaño (compatible con las versiones base o small de FLAN-T5) exportada a ONNX para su despliegue en entornos de inferencia optimizados. El sufijo "deslopV4" sugiere un ajuste fino orientado a limpiar o reformatear texto, aunque esta función no está documentada en la model card.
+El modelo `alac/flan-t5-deslopV4-onnx` es una conversión a formato ONNX de un modelo de la familia FLAN-T5, publicada por el usuario alac en Hugging Face. Por el identificador y el tamaño del repositorio (0,3 GB), se trata presumiblemente de una variante de pequeño tamaño (compatible con las versiones base o small de FLAN-T5) exportada a ONNX para su despliegue en entornos de inferencia optimizados. El sufijo "deslopV4" sugiere un ajuste fino orientado a limpiar o reformatear texto, aunque esta función no está documentada en la model card.
 
 La relevancia de esta ficha es limitada: el repositorio no incluye model card descriptiva, no declara idiomas soportados, no tiene descargas ni interacciones y no se ha publicado ningún benchmark ni detalle de entrenamiento. Cualquier evaluación rigurosa debe partir de la documentación del modelo FLAN-T5 original de Google y verificar empíricamente el comportamiento de esta conversión concreta.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: no disponible con precisión; por el tamaño del repositorio (0,3 GB), la inferencia en FP32 requeriría del orden de 1-2 GB de memoria, pero es una estimación no confirmada.
 - GPU recomendadas: no disponible; un modelo de este tamaño podría ejecutarse en GPU consumer (GTX 1660, RTX 3060) o incluso en CPU.
 - Compatibilidad con GPU consumer: probable por tamaño, no verificada.
-- Opciones de despliegue: ONNX Runtime, posiblemente HuggingFace Optimum; compatibilidad con vLLM, llama.cpp u Ollama no disponible (estos últimos no soportan arquitecturas encoder-decoder T5 de forma estándar).
+- Opciones de despliegue: ONNX Runtime, posiblemente Hugging Face Optimum; compatibilidad con vLLM, llama.cpp u Ollama no disponible (estos últimos no soportan arquitecturas encoder-decoder T5 de forma estándar).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ La comparativa se basa en la familia de origen; no se dispone de datos para conf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alac/flan-t5-deslopV4-onnx
+- Hugging Face: https://huggingface.co/alac/flan-t5-deslopV4-onnx
 - Modelo original FLAN-T5 (referencia): https://huggingface.co/google/flan-t5-base
 - Modelo T5 original (referencia): https://huggingface.co/google-t5/t5-small
 - Paper de FLAN-T5 (referencia): https://arxiv.org/abs/2210.11416

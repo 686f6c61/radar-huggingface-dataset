@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| micro-sam vit_l_em_organelles | no disponible (ViT-L) | imagen de microscopía EM | Segmentación de orgánulos | no disponible (código micro-sam MIT) | HuggingFace (espejo) |
+| micro-sam vit_l_em_organelles | no disponible (ViT-L) | imagen de microscopía EM | Segmentación de orgánulos | no disponible (código micro-sam MIT) | Hugging Face (espejo) |
 | SAM (Meta) ViT-L | ~300 M en encoder | imagen natural | Segmentación genérica | Apache 2.0 (según versión) | Público |
 | micro-sam vit_b_em_organelles | no disponible (ViT-B) | imagen de microscopía EM | Segmentación de orgánulos | ídem | Registro micro-sam |
 | micro-sam vit_l_lm | no disponible (ViT-L) | imagen de microscopía óptica | Segmentación de orgánulos | ídem | Registro micro-sam |
@@ -81,7 +81,7 @@ La comparación con SAM original es la más directa: comparten backbone y esquem
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amorsi/micro-sam-vit-l-em-organelles
+- Repositorio en Hugging Face: https://huggingface.co/amorsi/micro-sam-vit-l-em-organelles
 - Repositorio oficial de micro-sam: https://github.com/computational-cell-analytics/micro-sam
 - Registro de checkpoints en `util.py`: https://github.com/computational-cell-analytics/micro-sam/blob/master/micro_sam/util.py
 - Pesos originales (encoder): https://uk1s3.embassy.ebi.ac.uk/public-datasets/bioimage.io/humorous-crab/1.2/files/vit_l.pt

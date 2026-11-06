@@ -2,7 +2,7 @@
 
 ## Resumen
 
-olmo-urban-midtrain-seed1-CPT-best es un modelo de lenguaje de 7.298.011.136 parametros publicado por el usuario CompassioninMachineLearning en HuggingFace. No es un modelo entrenado desde cero: es el resultado de fusionar (merge) un adaptador LoRA de preentrenamiento continuado (CPT, continued pretraining) sobre el modelo base allenai/Olmo-3-1025-7B, dando como resultado un checkpoint completo en bf16 listo para cargar con la libreria de Transformers.
+olmo-urban-midtrain-seed1-CPT-best es un modelo de lenguaje de 7.298.011.136 parametros publicado por el usuario CompassioninMachineLearning en Hugging Face. No es un modelo entrenado desde cero: es el resultado de fusionar (merge) un adaptador LoRA de preentrenamiento continuado (CPT, continued pretraining) sobre el modelo base allenai/Olmo-3-1025-7B, dando como resultado un checkpoint completo en bf16 listo para cargar con la libreria de Transformers.
 
 El checkpoint seleccionado corresponde al paso 750 del run de CPT, que registro la perdida de validacion mas baja (1,6691), aunque el entrenamiento continuo hasta el paso 1000. El peso del nombre "urban" sugiere una adaptacion al dominio urbano, y la ruta del script de fusion (pilot/erosion/merge_best_cpt.py) apunta a un estudio mas amplio sobre perdida de capacidades durante la adaptacion de dominio.
 
@@ -67,10 +67,10 @@ Todas las cifras de VRAM son estimaciones calculadas a partir del numero de para
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| olmo-urban-midtrain-seed1-CPT-best | 7.298.011.136 | no disponible | no disponible | HuggingFace, safetensors bf16, 0 descargas |
-| allenai/Olmo-3-1025-7B (base) | no disponible en la informacion proporcionada | no disponible | no disponible en esta ficha; consultar la ficha del base | HuggingFace, safetensors |
-| Qwen2.5-7B (referencia) | 7,62 mil millones (dato publico de la familia) | 32.768 tokens nativo, ampliable con YaRN (dato publico de la familia) | Apache 2.0 (dato publico de la familia) | HuggingFace, safetensors y GGUF |
-| Llama-3.1-8B (referencia) | 8,03 mil millones (dato publico de la familia) | 128.000 tokens (dato publico de la familia) | Llama 3.1 Community License (dato publico de la familia) | HuggingFace, safetensors y GGUF |
+| olmo-urban-midtrain-seed1-CPT-best | 7.298.011.136 | no disponible | no disponible | Hugging Face, safetensors bf16, 0 descargas |
+| allenai/Olmo-3-1025-7B (base) | no disponible en la informacion proporcionada | no disponible | no disponible en esta ficha; consultar la ficha del base | Hugging Face, safetensors |
+| Qwen2.5-7B (referencia) | 7,62 mil millones (dato publico de la familia) | 32.768 tokens nativo, ampliable con YaRN (dato publico de la familia) | Apache 2.0 (dato publico de la familia) | Hugging Face, safetensors y GGUF |
+| Llama-3.1-8B (referencia) | 8,03 mil millones (dato publico de la familia) | 128.000 tokens (dato publico de la familia) | Llama 3.1 Community License (dato publico de la familia) | Hugging Face, safetensors y GGUF |
 
 Los datos de las familias Qwen2.5 y Llama 3.1 son valores de referencia publicos de esas fichas y no se han verificado en la busqueda realizada para esta ficha; conviene comprobarlos en sus repositorios antes de citarlos. La comparacion directa con el modelo base es la unica que puede hacerse con la informacion disponible, y ni siquiera en ese caso se dispone de evaluaciones, solo de la diferencia de procedimiento (CPT con LoRA fusionado frente a los pesos originales).
 
@@ -89,7 +89,7 @@ Los datos de las familias Qwen2.5 y Llama 3.1 son valores de referencia publicos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CompassioninMachineLearning/olmo-urban-midtrain-seed1-CPT-best
+- Modelo en Hugging Face: https://huggingface.co/CompassioninMachineLearning/olmo-urban-midtrain-seed1-CPT-best
 - Modelo base: https://huggingface.co/allenai/Olmo-3-1025-7B
 - Repositorio de checkpoints LoRA citado en la model card: CompassioninMachineLearning/Olmo7b-urban-seed1-20261010-CPT-LoRA-checkpoints (posible URL https://huggingface.co/CompassioninMachineLearning/Olmo7b-urban-seed1-20261010-CPT-LoRA-checkpoints, construida a partir del identificador citado y no verificada)
 - Script de fusion: pilot/erosion/merge_best_cpt.py (ruta interna mencionada en la model card; no se proporciona enlace publico)

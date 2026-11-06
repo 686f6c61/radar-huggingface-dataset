@@ -81,7 +81,7 @@ La ventaja diferencial es la compatibilidad exacta con checkpoints hibridos: los
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hyukudan/Pika-H3-Flex-Hybrid-b30-49
+- Repositorio en Hugging Face: https://huggingface.co/hyukudan/Pika-H3-Flex-Hybrid-b30-49
 - Modelo base (Pika H3 Flex): https://huggingface.co/Pika-Labs/Pika-H3-Flex
 - Licencia (en el repositorio): `LICENSE` y `licenses/MiniMax-H3-LICENSE.txt`
 - Script de construccion (en el repositorio): `build_hybrid_adapter.py`

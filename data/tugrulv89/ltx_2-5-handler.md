@@ -73,7 +73,7 @@ No se dispone de información suficiente para comparar LTX-2.5 con otros modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tugrulv89/LTX_2.5-handler
+- Repositorio Hugging Face: https://huggingface.co/tugrulv89/LTX_2.5-handler
 - Repositorio original de Lightricks: https://huggingface.co/Lightricks/LTX-2.5
 - Licencia: https://github.com/Lightricks/LTX-2/blob/main/LICENSE.md
 - Guía completa de LTX-2.5 en HackerNoon: https://hackernoon.com/ltx-25-a-complete-guide-to-lightricks-audio-video-ai-model

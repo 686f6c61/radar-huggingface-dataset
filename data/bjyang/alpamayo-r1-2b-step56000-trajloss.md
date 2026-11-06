@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks especificos para este checkpoint de
 - VRAM estimada: el modelo pesa ~4,5 GB en safetensors (posiblemente en fp16). Para inferencia, se recomienda al menos 6-8 GB de VRAM.
 - GPUs compatibles: una RTX 3060 de 12 GB o superior puede ejecutar el modelo en precision fp16. Para cuantizacion a 4 bits, podria caber en 4-5 GB.
 - No se dispone de datos de latencia o throughput para este checkpoint.
-- Opciones de despliegue: dado el formato safetensors, se puede cargar con transformers de HuggingFace, pero al no ser un modelo estandar de texto, necesitaria un adaptador VLA. No se ha confirmado compatibilidad con vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: dado el formato safetensors, se puede cargar con transformers de Hugging Face, pero al no ser un modelo estandar de texto, necesitaria un adaptador VLA. No se ha confirmado compatibilidad con vLLM, llama.cpp u Ollama.
 
 ## Comparativa con modelos similares
 
@@ -63,14 +63,14 @@ No hay mas alternativas publicas de VLA con razonamiento causal para conduccion 
 ## Limitaciones y advertencias
 
 - **Licencia restrictiva**: la licencia nvidia-internal no permite uso comercial ni distribucion externa. Solo puede utilizarse dentro de NVIDIA o con autorizacion explicita.
-- **Acceso restringido**: el modelo esta detras de un muro de autorizacion en HuggingFace, lo que limita su disponibilidad.
+- **Acceso restringido**: el modelo esta detras de un muro de autorizacion en Hugging Face, lo que limita su disponibilidad.
 - **Dominio limitado**: esta disenado exclusivamente para tareas de conduccion. No sirve para generacion de texto general, chat ni otras aplicaciones.
 - **Sesgos y alucinaciones**: no se han evaluado sesgos, pero como modelo de conduccion, podria producir trayectorias incorrectas en escenarios no representados en los datos de entrenamiento.
 - **Falta de informacion**: no hay documentacion sobre el contexto maximo, idiomas soportados ni metodos de cuantizacion, lo que dificulta su integracion en produccion.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/bjyang/Alpamayo-R1-2B-step56000-trajloss
+- Hugging Face del modelo: https://huggingface.co/bjyang/Alpamayo-R1-2B-step56000-trajloss
 - Paper (arXiv): https://arxiv.org/abs/2511.00088
 - Repositorio oficial de NVIDIA: https://github.com/NVlabs/alpamayo
 - Repositorio de recipes: https://github.com/NVlabs/alpamayo-recipes

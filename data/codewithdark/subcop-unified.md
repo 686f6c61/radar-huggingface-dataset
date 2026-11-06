@@ -79,7 +79,7 @@ SubCoP Unified no es comparable con modelos de lenguaje ni con modelos de vision
 
 | Alternativa | Naturaleza | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SubCoP Unified | Artefacto de investigacion: ResNet-50 congelado + cabeza de fusion 2048 -> 7 y envoltorios conformales | no disponible | no aplica | Precision 0,724 ± 0,009; cobertura APS 0,90 | MIT (repositorio); datos de origen no comerciales | HuggingFace, 0 descargas, 0 likes |
+| SubCoP Unified | Artefacto de investigacion: ResNet-50 congelado + cabeza de fusion 2048 -> 7 y envoltorios conformales | no disponible | no aplica | Precision 0,724 ± 0,009; cobertura APS 0,90 | MIT (repositorio); datos de origen no comerciales | Hugging Face, 0 descargas, 0 likes |
 | Bibliotecas genericas de prediccion conformal (MAPIE, TorchCP, crepes) | Herramientas de proposito general para envolver modelos arbitrarios | no aplica | no aplica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Publicas en sus repositorios respectivos |
 | Clasificadores medicos especificos sobre HAM10000 o IDRiD | Modelos de tarea, entrenados de extremo a extremo | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible | no disponible |
 
@@ -97,10 +97,10 @@ SubCoP Unified no es comparable con modelos de lenguaje ni con modelos de vision
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/codewithdark/subcop-unified
+- Modelo en Hugging Face: https://huggingface.co/codewithdark/subcop-unified
 - Dataset de origen de lesiones cutaneas (HAM10000): https://huggingface.co/datasets/marmal88/skin_cancer
 - Dataset de origen de retinopatia diabetica (IDRiD): https://huggingface.co/datasets/amin-nejad/idrid-disease-grading
 - Paper: *Dissecting Source-Conditional Conformal Coverage: A Lesion-Disjoint Confirmatory Study with Gap Decomposition and Cross-Fitted Calibration* (A. Umar), incluido como PDF LNCS en el directorio `paper/` del repositorio. No se dispone de DOI ni de enlace externo verificado.
-- Repositorio de codigo: no disponible por separado; el codigo se distribuye dentro del propio repositorio de HuggingFace (`code/`).
+- Repositorio de codigo: no disponible por separado; el codigo se distribuye dentro del propio repositorio de Hugging Face (`code/`).
 - Demo: no disponible.
 - La busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo: los resultados obtenidos corresponden a documentos de estrategia sanitaria sin relacion con SubCoP Unified.

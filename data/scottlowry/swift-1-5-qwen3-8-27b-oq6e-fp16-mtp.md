@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift-1.5-Qwen3.8-27b-oQ6e-fp16-mtp es una version cuantizada del modelo ukisai/Swift-1.5-Qwen3.8-27b, publicada por el usuario scottlowry en HuggingFace. Se trata de un artefacto de pesos en formato MLX safetensors generado con la herramienta oQ (oMLX v0.7.0), que aplica cuantizacion de precision mixta a 6 bits con tamano de grupo 64. El repositorio contiene 27.781.427.952 parametros reales (27,78 mil millones) y ocupa 24,7 GB en disco.
+Swift-1.5-Qwen3.8-27b-oQ6e-fp16-mtp es una version cuantizada del modelo ukisai/Swift-1.5-Qwen3.8-27b, publicada por el usuario scottlowry en Hugging Face. Se trata de un artefacto de pesos en formato MLX safetensors generado con la herramienta oQ (oMLX v0.7.0), que aplica cuantizacion de precision mixta a 6 bits con tamano de grupo 64. El repositorio contiene 27.781.427.952 parametros reales (27,78 mil millones) y ocupa 24,7 GB en disco.
 
 Su relevancia es practica mas que cientifica: no introduce arquitectura nueva ni un entrenamiento propio, sino que empaqueta un modelo de ~28B en un formato de 6 bits pensado para inferencia local sobre Apple Silicon mediante la libreria MLX. Para desarrolladores que trabajan en Mac con memoria unificada, este tipo de conversiones son las que hacen viable ejecutar modelos de esa escala sin GPU dedicada.
 
@@ -22,7 +22,7 @@ La informacion publicada es muy limitada. La model card solo documenta el proces
 | Formato de pesos | MLX safetensors (libreria mlx); tamano del repositorio 24,7 GB |
 | Modelo base | ukisai/Swift-1.5-Qwen3.8-27b |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de publicacion | 2026-10-07 (segun los metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-10-07 (segun los metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -94,7 +94,7 @@ La informacion proporcionada no incluye datos de rendimiento, licencia ni contex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scottlowry/Swift-1.5-Qwen3.8-27b-oQ6e-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/scottlowry/Swift-1.5-Qwen3.8-27b-oQ6e-fp16-mtp
 - Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Libreria MLX: https://github.com/ml-explore/mlx

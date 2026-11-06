@@ -72,9 +72,9 @@ KMMLU 0-shot: 0,255 (azar 0,25); el autor lo reporta solo como referencia, ya qu
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kor-finewiki-1b-base | 1,002B | 2048 | Hibrida Gated DeltaNet + GQA | Apache 2.0 | Pesos abiertos en HuggingFace |
-| EleutherAI/polyglot-ko-1.3b | 1,3B | 2048 | Transformer decoder (GPT-NeoX) | Apache 2.0 | Pesos abiertos en HuggingFace |
-| skt/kogpt2-base-v2 | 125M | 1024 | Transformer decoder (GPT-2) | CC-BY-SA (no comercial sin condiciones) | Pesos abiertos en HuggingFace |
+| kor-finewiki-1b-base | 1,002B | 2048 | Hibrida Gated DeltaNet + GQA | Apache 2.0 | Pesos abiertos en Hugging Face |
+| EleutherAI/polyglot-ko-1.3b | 1,3B | 2048 | Transformer decoder (GPT-NeoX) | Apache 2.0 | Pesos abiertos en Hugging Face |
+| skt/kogpt2-base-v2 | 125M | 1024 | Transformer decoder (GPT-2) | CC-BY-SA (no comercial sin condiciones) | Pesos abiertos en Hugging Face |
 
 En BPB coreano, kor-finewiki-1b-base supera claramente a Polyglot-Ko 1.3b (0,729 frente a 1,052) con menos parametros, aunque Polyglot-Ko gana en COPA y SentiNeg. Frente a KoGPT2, ofrece mucho mayor capacidad y contexto. La principal ventaja diferencial es la arquitectura hibrida con atencion lineal y el entrenamiento documentado con Muon.
 
@@ -92,7 +92,7 @@ En BPB coreano, kor-finewiki-1b-base supera claramente a Polyglot-Ko 1.3b (0,729
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shopkeeper/kor-finewiki-1b-base
+- Modelo en Hugging Face: https://huggingface.co/shopkeeper/kor-finewiki-1b-base
 - Dataset FineWeb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
 - Dataset Wikipedia (Wikimedia): https://huggingface.co/datasets/wikimedia/wikipedia
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

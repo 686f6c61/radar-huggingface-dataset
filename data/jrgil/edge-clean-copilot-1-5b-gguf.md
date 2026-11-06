@@ -116,6 +116,6 @@ Como alternativa de tamano similar se podrian considerar otros modelos de codigo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrgil/edge-clean-copilot-1.5b-gguf
+- Modelo en Hugging Face: https://huggingface.co/jrgil/edge-clean-copilot-1.5b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Paper, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

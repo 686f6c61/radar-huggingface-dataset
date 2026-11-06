@@ -105,7 +105,7 @@ Comparativa de rendimiento: no disponible. No se han publicado métricas compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pisces312-hf/Qwen3-4B-Instruct-2507-QNN-Genie
+- Repositorio en Hugging Face: https://huggingface.co/pisces312-hf/Qwen3-4B-Instruct-2507-QNN-Genie
 - README en chino del repositorio: https://huggingface.co/pisces312-hf/Qwen3-4B-Instruct-2507-QNN-Genie/blob/main/README.zh-CN.md
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Conversión oficial de Qualcomm: https://huggingface.co/qualcomm/Qwen3-4B-Instruct-2507

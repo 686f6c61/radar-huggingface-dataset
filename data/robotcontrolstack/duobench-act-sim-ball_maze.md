@@ -74,7 +74,7 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parámetros | Contexto / horizonte | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DuoBench ACT (sim) `ball_maze` | 51,7 M | chunk de 100 acciones | `ball_maze` en simulación | Apache 2.0 | HuggingFace |
+| DuoBench ACT (sim) `ball_maze` | 51,7 M | chunk de 100 acciones | `ball_maze` en simulación | Apache 2.0 | Hugging Face |
 | Otras políticas ACT de DuoBench | no disponible | no disponible | otras tareas del benchmark | Apache 2.0 (según repositorio) | no disponible en la información proporcionada |
 | Políticas de imitación comparables (p. ej. Diffusion Policy) | no disponible | no disponible | manipulación bimanual | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ No se dispone en la información proporcionada de datos de rendimiento de altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotControlStack/duobench-act-sim-ball_maze
+- Modelo en Hugging Face: https://huggingface.co/RobotControlStack/duobench-act-sim-ball_maze
 - Dataset DuoBench: https://huggingface.co/datasets/RobotControlStack/duobench
 - Paper DuoBench (arXiv): https://arxiv.org/abs/2606.11901
 - Página del proyecto: https://duobench.github.io/

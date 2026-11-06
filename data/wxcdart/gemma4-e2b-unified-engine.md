@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo wxcdart/gemma4-e2b-unified-engine es un ajuste fino (fine-tune) del modelo Gemma 4 E2B de Google, publicado en HuggingFace por el usuario wxcdart. Se trata de un modelo generativo de texto en inglés con licencia Apache 2.0, entrenado con el framework Unsloth, que según la model card permite un entrenamiento un 2x más rápido. El modelo base, Gemma 4 E2B, tiene aproximadamente 2.100 millones de parámetros y una ventana de contexto de 8.000 tokens, lo que lo sitúa como una opción ligera para ejecución en CPU o en dispositivos con recursos limitados.
+El modelo wxcdart/gemma4-e2b-unified-engine es un ajuste fino (fine-tune) del modelo Gemma 4 E2B de Google, publicado en Hugging Face por el usuario wxcdart. Se trata de un modelo generativo de texto en inglés con licencia Apache 2.0, entrenado con el framework Unsloth, que según la model card permite un entrenamiento un 2x más rápido. El modelo base, Gemma 4 E2B, tiene aproximadamente 2.100 millones de parámetros y una ventana de contexto de 8.000 tokens, lo que lo sitúa como una opción ligera para ejecución en CPU o en dispositivos con recursos limitados.
 
-El repositorio de HuggingFace pesa 0,1 GB, lo que sugiere que contiene pesos cuantizados o adaptadores en lugar del modelo completo. Su principal singularidad es la integración con el motor unificado de inferencia «unified-engine» desarrollado por apex-compute, que según su documentación permite ejecutar modos de texto, imagen y audio desde una única instrucción. No obstante, la información publicada sobre este modelo concreto es muy limitada y no se han detallado el propósito específico del fine-tune ni los datos de entrenamiento.
+El repositorio de Hugging Face pesa 0,1 GB, lo que sugiere que contiene pesos cuantizados o adaptadores en lugar del modelo completo. Su principal singularidad es la integración con el motor unificado de inferencia «unified-engine» desarrollado por apex-compute, que según su documentación permite ejecutar modos de texto, imagen y audio desde una única instrucción. No obstante, la información publicada sobre este modelo concreto es muy limitada y no se han detallado el propósito específico del fine-tune ni los datos de entrenamiento.
 
 ## Especificaciones técnicas
 
@@ -15,9 +15,9 @@ El repositorio de HuggingFace pesa 0,1 GB, lo que sugiere que contiene pesos cua
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | 8.000 tokens (según la información pública de Gemma 4 E2B) |
 | Tipos de cuantizacion | no disponible (el modelo base emplea bnb-4bit, pero no se especifica el formato de este repositorio) |
-| Idiomas soportados | Inglés (según el repositorio de HuggingFace) |
+| Idiomas soportados | Inglés (según el repositorio de Hugging Face) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (según los tags de HuggingFace) |
+| Formato de pesos | Safetensors (según los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -26,7 +26,7 @@ El modelo es un ajuste fino del modelo unsloth/gemma-4-e2b-it-unsloth-bnb-4bit, 
 ## Capacidades
 
 - Generación de texto instructivo en inglés: dado que el modelo base es una versión «it» (instruction tuned), se espera que siga instrucciones, aunque no hay documentación específica sobre su comportamiento.
-- Compatibilidad con librerías estándar del ecosistema HuggingFace: el modelo está etiquetado como transformers y text-generation-inference, lo que facilita su integración en aplicaciones existentes.
+- Compatibilidad con librerías estándar del ecosistema Hugging Face: el modelo está etiquetado como transformers y text-generation-inference, lo que facilita su integración en aplicaciones existentes.
 - Ejecución de baja latencia: gracias a su reducido número de parámetros, es adecuado para inferencia en CPU o en GPUs de gama de entrada.
 - Capacidades multimodales: no confirmadas. La documentación del motor unificado de apex-compute menciona modos de texto, imagen y audio desde una sola instrucción binaria, pero no hay evidencia de que el modelo por sí mismo sea multimodal; estos modos podrían depender del motor y de componentes externos.
 - Soporte de tool calling, agentes o razonamiento multi-paso: no disponible.
@@ -65,7 +65,7 @@ Otras alternativas de tamaño similar (como Gemma 2 2B, Qwen2-1.5B o TinyLlama 1
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no incluye una model card detallada: se desconocen los datos de entrenamiento, el propósito específico del fine-tune y su comportamiento esperado.
+- El repositorio de Hugging Face no incluye una model card detallada: se desconocen los datos de entrenamiento, el propósito específico del fine-tune y su comportamiento esperado.
 - No hay benchmarks publicados, por lo que no existe evidencia del rendimiento real en tareas de razonamiento, matemáticas o código.
 - La ventana de contexto de 8.000 tokens es limitada en comparación con modelos más modernos, y puede ser insuficiente para documentos largos o conversaciones extensas.
 - El tamaño del repositorio (0,1 GB) sugiere que no contiene los pesos completos; es probable que incluya adaptadores LoRA o pesos cuantizados. Para su uso, se requiere cargar el modelo base unsloth/gemma-4-e2b-it-unsloth-bnb-4bit, lo que añade dependencia del formato bnb-4bit.
@@ -76,7 +76,7 @@ Otras alternativas de tamaño similar (como Gemma 2 2B, Qwen2-1.5B o TinyLlama 1
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/wxcdart/gemma4-e2b-unified-engine
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/gemma-4-e2b-it-unsloth-bnb-4bit
+- Hugging Face del modelo: https://huggingface.co/wxcdart/gemma4-e2b-unified-engine
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/gemma-4-e2b-it-unsloth-bnb-4bit
 - Repositorio GitHub del motor unificado: https://github.com/apex-compute/unified-engine/tree/main/models/gemma4_e2b
 - Página oficial de Gemma 4 E2B: https://gemma4.dev/models/gemma-4-e2b

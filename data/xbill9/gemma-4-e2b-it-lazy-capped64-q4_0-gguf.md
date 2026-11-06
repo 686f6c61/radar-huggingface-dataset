@@ -71,8 +71,8 @@ La informacion disponible solo permite comparar contra el modelo base y las vari
 
 | Modelo | Parametros | Contexto | GSM8K (aciertos / 1.319) | Tokens por acierto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este GGUF (lazy-capped64) | 4.628.569.635 | no disponible (ejecutado a 8.192) | 1.175 | 454,0 | apache-2.0 | publico en HuggingFace |
-| Base `xbill9/gemma-4-E2B-it-qat-q4_0-exact-gguf` sin limite | no disponible en la informacion | no disponible | 1.187 | 994,9 | apache-2.0 | publico en HuggingFace |
+| Este GGUF (lazy-capped64) | 4.628.569.635 | no disponible (ejecutado a 8.192) | 1.175 | 454,0 | apache-2.0 | publico en Hugging Face |
+| Base `xbill9/gemma-4-E2B-it-qat-q4_0-exact-gguf` sin limite | no disponible en la informacion | no disponible | 1.187 | 994,9 | apache-2.0 | publico en Hugging Face |
 | Base con limite 128 | idem | idem | 1.166 | 544,2 | apache-2.0 | mismo artefacto, flag de runtime |
 | Receta con limite 256 | no disponible | no disponible | 1.170 | 610,2 | apache-2.0 | no disponible como artefacto publicado |
 | Receta con limite 512 | no disponible | no disponible | 1.179 | 764,3 | apache-2.0 | no disponible como artefacto publicado |
@@ -89,7 +89,7 @@ La informacion disponible solo permite comparar contra el modelo base y las vari
 - No hay datos publicados de latencia, throughput ni consumo de VRAM en inferencia, lo que dificulta el dimensionamiento en produccion.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/xbill9/gemma-4-E2B-it-lazy-capped64-q4_0-gguf
+- Modelo en Hugging Face: https://huggingface.co/xbill9/gemma-4-E2B-it-lazy-capped64-q4_0-gguf
 - Modelo base: https://huggingface.co/xbill9/gemma-4-E2B-it-qat-q4_0-exact-gguf
 - Repositorio del proyecto lazy-gemma: https://github.com/xbill9/lazy-gemma
 - Ejecuciones de benchmark con el base: https://github.com/xbill9/lazy-gemma/tree/main/benchmarks/runs/2026-10-22-rest-e2b-3050oem

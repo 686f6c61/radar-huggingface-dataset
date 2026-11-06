@@ -78,8 +78,8 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | Seguridad (ASR) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint | 8,03 B (fracción densa 0,6999) | No especificado (128.000 en el base) | AdvBench 0,0150 / StrongREJECT 0,0400 | Llama 3.1 Community | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | No disponible en la información proporcionada | Llama 3.1 Community | HuggingFace |
+| Este checkpoint | 8,03 B (fracción densa 0,6999) | No especificado (128.000 en el base) | AdvBench 0,0150 / StrongREJECT 0,0400 | Llama 3.1 Community | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | No disponible en la información proporcionada | Llama 3.1 Community | Hugging Face |
 | Otros artefactos comprimidos o editados para seguridad de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han encontrado en la información proporcionada otros modelos comparables con métricas equivalentes (misma rejilla de compresión, mismos jueces de seguridad) que permitan una comparación cuantitativa directa.
@@ -99,7 +99,7 @@ No se han encontrado en la información proporcionada otros modelos comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r05
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r05
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia y política de uso: incluidas en el repositorio (`LICENSE` y `USE_POLICY.md`)
 - Paper de SVD-LLM: no disponible en la información proporcionada

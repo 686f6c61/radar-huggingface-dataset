@@ -92,6 +92,6 @@ Phonon refiner 1.7B supera a Gemma 4 E2B en todos los conjuntos evaluados (difer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Infatoshi/phonon-refiner-1.7b
+- Modelo en Hugging Face: https://huggingface.co/Infatoshi/phonon-refiner-1.7b
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Repositorio de la aplicación Phonon: https://github.com/Infatoshi/phonon

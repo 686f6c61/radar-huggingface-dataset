@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje causal denso con codificador de visión, publicado en el repositorio de HuggingFace `kbpk31/Qwen3.8-27B`. Según la model card, forma parte de la generación Qwen3.8 de la familia Qwen y se presenta como un modelo nativo de visión-lenguaje orientado a tareas de codificación, trabajo profesional, investigación y tareas agénticas de largo horizonte. El modelo cuenta con 27.781.427.952 parámetros reales según los pesos en safetensors y un tamaño de repositorio de 55,6 GB.
+Qwen3.8-27B es un modelo de lenguaje causal denso con codificador de visión, publicado en el repositorio de Hugging Face `kbpk31/Qwen3.8-27B`. Según la model card, forma parte de la generación Qwen3.8 de la familia Qwen y se presenta como un modelo nativo de visión-lenguaje orientado a tareas de codificación, trabajo profesional, investigación y tareas agénticas de largo horizonte. El modelo cuenta con 27.781.427.952 parámetros reales según los pesos en safetensors y un tamaño de repositorio de 55,6 GB.
 
 La arquitectura combina capas de atención lineal (Gated DeltaNet) con capas de atención con compuertas (Gated Attention) en un patrón híbrido de 64 capas, con una dimensión oculta de 5120 y una dimensión intermedia de FFN de 17.408. El contexto nativo es de 262.144 tokens, extensible hasta 1.000.000, y el modelo incorpora entrenamiento con Multi-Token Prediction (MTP) en varios pasos. La licencia declarada es Apache 2.0.
 
@@ -69,7 +69,7 @@ La model card menciona explícitamente los siguientes modelos como comparación:
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B | 27B (denso) | 262.144 nativos, hasta 1.000.000 | Apache 2.0 | HuggingFace (`kbpk31/Qwen3.8-27B`) |
+| Qwen3.8-27B | 27B (denso) | 262.144 nativos, hasta 1.000.000 | Apache 2.0 | Hugging Face (`kbpk31/Qwen3.8-27B`) |
 | Qwen3.6-27B | No disponible | No disponible | No disponible | No disponible |
 | Qwen3.7-Plus | No disponible | No disponible | No disponible | No disponible |
 | Muse Glimmer-30B | No disponible | No disponible | No disponible | No disponible |
@@ -90,6 +90,6 @@ No se dispone de datos suficientes para una comparativa técnica detallada con a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kbpk31/Qwen3.8-27B
+- Hugging Face: https://huggingface.co/kbpk31/Qwen3.8-27B
 - Qwen Cloud (servicio gestionado mencionado en la model card): https://www.qwencloud.com
 - Qwen3.8-27B Overview en Qwen Cloud: https://www.qwencloud.com/models/qwen3.8-27b

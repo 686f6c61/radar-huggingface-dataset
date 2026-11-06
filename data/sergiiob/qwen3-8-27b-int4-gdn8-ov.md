@@ -48,7 +48,7 @@ Nota sobre la nomenclatura: el identificador del repositorio incluye `gdn8`, lo 
 ## Casos de uso
 
 - Descripcion de imagenes en produccion sobre hardware Intel: el modelo esta pensado para ejecutarse con `openvino_genai.VLMPipeline` en `GPU.0`, de modo que encaja en pipelines de etiquetado o alt text donde ya exista infraestructura Arc y no se quiera introducir CUDA.
-- Verificacion de calidad de artefactos INT4: sirve como referencia para comprobar si un INT4 de Qwen3.8-27B produce salida coherente o degenerada, comparando la cadena de salida con la del INT8 oficial sobre la misma imagen de prueba (demo `ai2d` de HuggingFace, imagen `fire`).
+- Verificacion de calidad de artefactos INT4: sirve como referencia para comprobar si un INT4 de Qwen3.8-27B produce salida coherente o degenerada, comparando la cadena de salida con la del INT8 oficial sobre la misma imagen de prueba (demo `ai2d` de Hugging Face, imagen `fire`).
 - Despliegue VLM en equipos con 24-32 GB de memoria unificada o dedicada: con 21 GB de pesos en lenguaje, es una via para ejecutar un VLM de 27B en INT4 sin recurrir a CUDA ni a `llama.cpp`.
 - Sustitucion del INT4 oficial en entornos OpenVINO GenAI 2026.4 o superior: cualquier integracion que hoy use `OpenVINO/Qwen3.8-27B-int4-ov` y produzca salida corrupta puede cambiar el identificador del repositorio manteniendo la misma API.
 - Base para investigacion sobre cuantizacion de atencion lineal: el reparto 73% INT4 / 22% float / 5% INT8 es un caso de estudio reproducible de como el alcance de `IgnoredScope` afecta a la calidad de un modelo hibrido con GatedDeltaNet.
@@ -57,7 +57,7 @@ Nota sobre la nomenclatura: el identificador del repositorio incluye `gdn8`, lo 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. Lo unico documentado son medidas de throughput y comprobaciones de coherencia de salida realizadas por el autor el 2026-09-12 sobre una Intel Arc Pro B70 a 150 W, en `GPU.0` y decodificacion greedy, con `max_new_tokens=128`. La calidad se evalua como PASS/FAIL sobre una descripcion en ingles de la imagen `fire` de la demo `ai2d` de HuggingFace.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. Lo unico documentado son medidas de throughput y comprobaciones de coherencia de salida realizadas por el autor el 2026-09-12 sobre una Intel Arc Pro B70 a 150 W, en `GPU.0` y decodificacion greedy, con `max_new_tokens=128`. La calidad se evalua como PASS/FAIL sobre una descripcion en ingles de la imagen `fire` de la demo `ai2d` de Hugging Face.
 
 | Motor | Artefacto | tok/s (n=128) | Calidad |
 |---|---|---|---|
@@ -109,7 +109,7 @@ El autor advierte explicitamente de que los repos de terceros con `ignored_scope
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SergiioB/Qwen3.8-27B-int4-gdn8-ov
+- Repositorio en Hugging Face: https://huggingface.co/SergiioB/Qwen3.8-27B-int4-gdn8-ov
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - INT4 oficial del Hub (marcado EXPERIMENTAL, con el fallo descrito): https://huggingface.co/OpenVINO/Qwen3.8-27B-int4-ov
 - INT8 oficial del Hub (coherente en la misma tarjeta): https://huggingface.co/OpenVINO/Qwen3.8-27B-int8-ov

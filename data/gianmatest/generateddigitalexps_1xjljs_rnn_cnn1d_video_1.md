@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gianmaTest/generatedDigitalExps_1xJLJs_rnn_cnn1d_video_1` es un repositorio alojado en HuggingFace por el usuario `gianmaTest` cuyo nombre sugiere un experimento generado automáticamente (prefijo `generatedDigitalExps`) con una arquitectura híbrida de red recurrente (RNN) y convolución unidimensional (CNN 1D) aplicada a vídeo. No existe información publicada sobre el modelo: el repositorio no incluye model card, no declara pipeline, licencia ni idiomas, y su tamaño es de 0,0 GB, lo que indica que no contiene pesos en el momento de la consulta.
+`gianmaTest/generatedDigitalExps_1xJLJs_rnn_cnn1d_video_1` es un repositorio alojado en Hugging Face por el usuario `gianmaTest` cuyo nombre sugiere un experimento generado automáticamente (prefijo `generatedDigitalExps`) con una arquitectura híbrida de red recurrente (RNN) y convolución unidimensional (CNN 1D) aplicada a vídeo. No existe información publicada sobre el modelo: el repositorio no incluye model card, no declara pipeline, licencia ni idiomas, y su tamaño es de 0,0 GB, lo que indica que no contiene pesos en el momento de la consulta.
 
 El problema que resolvería y su relevancia no pueden determinarse con los datos disponibles. Por la nomenclatura, encajaría en la familia de modelos de clasificación o modelado de secuencias sobre características de vídeo, donde una CNN 1D extrae patrones locales a lo largo del eje temporal y una RNN modela dependencias de más largo alcance. Se trata, en cualquier caso, de una hipótesis derivada del nombre del repositorio y no de documentación técnica.
 
@@ -29,7 +29,7 @@ Con 8 descargas y 0 likes, el artefacto tiene un perfil de uso prácticamente nu
 
 La única información arquitectónica disponible procede del identificador del repositorio, que combina los términos `rnn` y `cnn1d` con `video`. Esto apunta a un modelo que procesa secuencias de fotogramas o de características extraídas de vídeo: una pila de convoluciones 1D operaría sobre la dimensión temporal para capturar patrones locales, y una o varias capas recurrentes modelarían la dependencia secuencial. No se dispone de confirmación de esta descripción, ni de detalles sobre el número de capas, dimensionalidad de los embeddings, función de pérdida o mecanismo de agregación temporal.
 
-No hay información sobre el dataset de entrenamiento: se desconoce el número de tokens o de clips procesados, la composición del corpus, la resolución y tasa de fotogramas, ni si se aplicaron técnicas de alineación como RLHF o DPO (poco probables en un modelo de este tipo). Tampoco se documentan innovaciones técnicas como atención lineal, decodificación especulativa o mecanismos híbridos SSM. El tag `region:us` es un metadato de infraestructura de HuggingFace y no aporta información sobre el entrenamiento.
+No hay información sobre el dataset de entrenamiento: se desconoce el número de tokens o de clips procesados, la composición del corpus, la resolución y tasa de fotogramas, ni si se aplicaron técnicas de alineación como RLHF o DPO (poco probables en un modelo de este tipo). Tampoco se documentan innovaciones técnicas como atención lineal, decodificación especulativa o mecanismos híbridos SSM. El tag `region:us` es un metadato de infraestructura de Hugging Face y no aporta información sobre el entrenamiento.
 
 ## Capacidades
 
@@ -92,6 +92,6 @@ No es posible establecer una comparativa rigurosa: se desconocen los parámetros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xJLJs_rnn_cnn1d_video_1
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xJLJs_rnn_cnn1d_video_1
 
 No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados a este modelo.

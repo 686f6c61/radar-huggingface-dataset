@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-v3-8B-Instruct es la versión del modelo Llama 3 8B Instruct de Meta optimizada por Qualcomm para despliegue en dispositivo (*on-device*) sobre chipsets Snapdragon y Dragonwing. Se distribuye en el repositorio cualcomm/Llama-v3-8B-Instruct de HuggingFace y forma parte del ecosistema Qualcomm AI Hub Models, cuyo objetivo es compilar, perfilar y exportar el modelo para ejecutarlo en hardware Qualcomm sin depender de la nube.
+Llama-v3-8B-Instruct es la versión del modelo Llama 3 8B Instruct de Meta optimizada por Qualcomm para despliegue en dispositivo (*on-device*) sobre chipsets Snapdragon y Dragonwing. Se distribuye en el repositorio cualcomm/Llama-v3-8B-Instruct de Hugging Face y forma parte del ecosistema Qualcomm AI Hub Models, cuyo objetivo es compilar, perfilar y exportar el modelo para ejecutarlo en hardware Qualcomm sin depender de la nube.
 
 El punto de partida es Meta-Llama-3-8B-Instruct, un transformer decoder-only de aproximadamente 8.000 millones de parámetros, al que se aplica cuantizacion w4a16 (pesos de 4 bits y activaciones de 16 bits) en la mayor parte de las capas, con una porción cuantizada a w8a16 (pesos de 8 bits). El resultado es un artefacto pensado para inferencia local en teléfonos, portátiles y plataformas embebidas con aceleración de NPU/GPU de Qualcomm.
 
@@ -83,8 +83,8 @@ El TTFT se expone como rango: el límite inferior corresponde a un prompt corto 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad / despliegue |
 |---|---|---|---|---|---|
 | qualcomm/Llama-v3-8B-Instruct | 8B | 4096 | w4a16 / w8a16 | Llama 3 Community | On-device Qualcomm (GENIE / GENIEX_QAIRT); pesos pre-exportados no distribuidos |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8B | No disponible en esta ficha (modelo base sin cuantizar) | BF16/FP16 original | Llama 3 Community | HuggingFace; inferencia en GPU/CPU con frameworks estándar |
-| meta-llama/Meta-Llama-3.1-8B-Instruct | 8B | 128.000 | BF16/FP16 original | Llama 3.1 Community | HuggingFace; alternativa de la misma familia con contexto ampliado |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8B | No disponible en esta ficha (modelo base sin cuantizar) | BF16/FP16 original | Llama 3 Community | Hugging Face; inferencia en GPU/CPU con frameworks estándar |
+| meta-llama/Meta-Llama-3.1-8B-Instruct | 8B | 128.000 | BF16/FP16 original | Llama 3.1 Community | Hugging Face; alternativa de la misma familia con contexto ampliado |
 
 No se dispone de datos de rendimiento comparativos de calidad entre estas variantes en la información proporcionada. La comparación se limita por tanto a parámetros, contexto, precisión, licencia y forma de despliegue.
 
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparativos de calidad entre estas varian
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qualcomm/Llama-v3-8B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/qualcomm/Llama-v3-8B-Instruct
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct/
 - Licencia del modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct/blob/main/LICENSE
 - Librería Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models/blob/v0.62.2/src/qai_hub_models/models/llama_v3_8b_instruct

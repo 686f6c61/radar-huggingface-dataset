@@ -87,7 +87,7 @@ Las cifras de rendimiento comparado no están disponibles: la información propo
 
 ## Enlaces
 
-- Modelo en HuggingFace (nativ-community): https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-nvfp4
+- Modelo en Hugging Face (nativ-community): https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-nvfp4
 - Copia en mlx-community: https://huggingface.co/mlx-community/LFM2.5-24B-A2B-Preview-nvfp4
 - Modelo base (previsualización): https://huggingface.co/lq-preview/LFM2.5-24B-A2B-Preview
 - Modelo oficial de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B

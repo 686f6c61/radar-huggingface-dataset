@@ -4,7 +4,7 @@
 
 RTXIncursio's SEKKAAAIIIIDEEE es un checkpoint de Stable Diffusion XL (SDXL) basado en el modelo Pony Diffusion V6, desarrollado por el autor FallenIncursio y distribuido originalmente en Civitai. Se trata de una fusión (merge) de checkpoints que combina el estilo de AnimeRealistic PD (aplicado como LoRA con peso 0.9) sobre la base AutismMix_confetti, lo que produce un modelo con un estilo artístico distintivo y versátil, compatible con contenido NSFW. El modelo está pensado para generación de imágenes a partir de prompts en texto, con una resolución base recomendada de 1024x1024 píxeles.
 
-La relevancia de este modelo radica en su enfoque comunitario: está diseñado para producir imágenes con una estética única que encaja con las preferencias de la comunidad de Civitai, ofreciendo un flujo de trabajo simplificado (un único prompt positivo sin necesidad de negativos). El repositorio en HuggingFace actúa como espejo autorizado del original, con confirmación explícita del creador, y los archivos han sido validados estructuralmente como Safetensors por Arc en Ciel. El modelo se distribuye bajo una licencia "other" con permisos específicos de Civitai que permiten uso comercial, derivados y cambio de licencia.
+La relevancia de este modelo radica en su enfoque comunitario: está diseñado para producir imágenes con una estética única que encaja con las preferencias de la comunidad de Civitai, ofreciendo un flujo de trabajo simplificado (un único prompt positivo sin necesidad de negativos). El repositorio en Hugging Face actúa como espejo autorizado del original, con confirmación explícita del creador, y los archivos han sido validados estructuralmente como Safetensors por Arc en Ciel. El modelo se distribuye bajo una licencia "other" con permisos específicos de Civitai que permiten uso comercial, derivados y cambio de licencia.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ No se dispone de datos comparativos publicados. El modelo se basa en AutismMix_c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FallenIncursio/RTXIncursio-s-SEKKAAAIIIIDEEE-SDXL-Pony-civitai-477426-edge-assets
+- Hugging Face: https://huggingface.co/FallenIncursio/RTXIncursio-s-SEKKAAAIIIIDEEE-SDXL-Pony-civitai-477426-edge-assets
 - Civitai (original): https://civitai.com/models/477426/rtxincursios-sekkaaaiiiideee-sdxl-pony
 - CivArchive (archivo): https://civarchive.com/models/477426?modelVersionId=530997
 - Post de showcase en Civitai: https://civitai.com/posts/3025099

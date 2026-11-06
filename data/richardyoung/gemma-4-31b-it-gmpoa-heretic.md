@@ -89,10 +89,10 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/richardyoung/gemma-4-31B-it-GMPOA-heretic
+- Hugging Face: https://huggingface.co/richardyoung/gemma-4-31B-it-GMPOA-heretic
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Heretic: https://heretic-project.org
-- Colección Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Colección Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentación: https://ai.google.dev/gemma/docs/core

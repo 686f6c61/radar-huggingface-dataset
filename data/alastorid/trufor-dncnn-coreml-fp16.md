@@ -78,7 +78,7 @@ El autor indica que estas son mediciones de ingeniería sobre una sola imagen, n
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TruFor DnCNN Core ML FP16 (este) | no disponible | Entrada fija 546×546 RGB + máscara | Error FP16 documentado; sin benchmark de detección | grip-unina-trufor-nonprofit | HuggingFace, `model.mlpackage` |
+| TruFor DnCNN Core ML FP16 (este) | no disponible | Entrada fija 546×546 RGB + máscara | Error FP16 documentado; sin benchmark de detección | grip-unina-trufor-nonprofit | Hugging Face, `model.mlpackage` |
 | TruFor completo (GRIP-UNINA) | no disponible | Imagen completa con encoder CMX y cabezas | Resultados publicados en CVPR 2023 (no incluidos aquí) | GRIP-UNINA nonprofit | GitHub grip-unina/TruFor |
 | Core ML FP32 del mismo DnCNN (referencia del autor) | no disponible | Entrada fija 546×546 | Error absoluto máximo 0.0004192144, RMS 0.0007005027 | GRIP-UNINA nonprofit | No distribuido en este repositorio |
 
@@ -96,6 +96,6 @@ No se dispone de datos comparativos con otros detectores de falsificación en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alastorid/TruFor-DnCNN-CoreML-FP16
+- Hugging Face: https://huggingface.co/alastorid/TruFor-DnCNN-CoreML-FP16
 - Repositorio original TruFor (GRIP-UNINA): https://github.com/grip-unina/TruFor
 - Issue sobre licencia y redistribución: https://github.com/grip-unina/TruFor/issues/36

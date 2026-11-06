@@ -42,7 +42,7 @@ El modelo es una regresión *elastic net*, una combinación de regularización L
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El artículo original (Ndhlovu et al., 2024) reporta métricas de rendimiento (como correlación con la edad cronológica y error absoluto medio), pero no se incluyen en la model card de HuggingFace. No se pueden presentar cifras sin riesgo de inventar datos.
+No se han publicado resultados de benchmarks en la información disponible. El artículo original (Ndhlovu et al., 2024) reporta métricas de rendimiento (como correlación con la edad cronológica y error absoluto medio), pero no se incluyen en la model card de Hugging Face. No se pueden presentar cifras sin riesgo de inventar datos.
 
 ## Requisitos de hardware
 
@@ -67,6 +67,6 @@ No se dispone de una comparativa directa con otros relojes epigenéticos en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pyaging/retroelementagev1
+- Hugging Face: https://huggingface.co/pyaging/retroelementagev1
 - Documentación de pyaging (Clock Catalogue): https://pyaging.readthedocs.io
 - Artículo original: Ndhlovu, Lishomwa C., et al. "Retro-age: A unique epigenetic biomarker of aging captured by DNA methylation states of retroelements." Aging Cell 23 (2024): e14288. DOI: https://doi.org/10.1111/acel.14288

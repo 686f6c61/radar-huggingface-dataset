@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rishanthrajendhran/ideadet-logreg-1m-items` es un clasificador de detección de contenido generado por inteligencia artificial basado en regresión logística, publicado por Rishanth Rajendhran, investigador de la Universidad de Maryland. El nombre sugiere que fue entrenado sobre un millón de elementos, aunque no se dispone de detalles sobre su arquitectura interna, datos de entrenamiento ni métricas de rendimiento. El repositorio tiene un tamaño de 0.0 GB, lo que indica que probablemente no contiene pesos completos o que estos son extremadamente pequeños, y su acceso está restringido (gated) en HuggingFace, requiriendo aceptación de condiciones.
+El modelo `rishanthrajendhran/ideadet-logreg-1m-items` es un clasificador de detección de contenido generado por inteligencia artificial basado en regresión logística, publicado por Rishanth Rajendhran, investigador de la Universidad de Maryland. El nombre sugiere que fue entrenado sobre un millón de elementos, aunque no se dispone de detalles sobre su arquitectura interna, datos de entrenamiento ni métricas de rendimiento. El repositorio tiene un tamaño de 0.0 GB, lo que indica que probablemente no contiene pesos completos o que estos son extremadamente pequeños, y su acceso está restringido (gated) en Hugging Face, requiriendo aceptación de condiciones.
 
 A pesar de su licencia Apache 2.0, que permite uso comercial y modificación, la falta de documentación técnica y de archivos de modelo hace que su utilidad práctica sea incierta. Es relevante en el contexto de la detección de textos generados por IA, un área de creciente interés, pero la escasez de información limita su evaluación objetiva. No se han publicado resultados de benchmarks ni especificaciones detalladas en los recursos disponibles.
 
@@ -48,7 +48,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 ## Limitaciones y advertencias
 
 - No hay informacion publicada sobre sesgos, riesgos de alucinacion (irrelevante para un clasificador lineal) o limitaciones de contexto.
-- El acceso al repositorio esta restringido (gated) en HuggingFace, lo que puede dificultar la reproduccion y verificacion.
+- El acceso al repositorio esta restringido (gated) en Hugging Face, lo que puede dificultar la reproduccion y verificacion.
 - El tamaño del repositorio (0.0 GB) sugiere que no se incluyen pesos del modelo, lo que impide su uso directo hasta que se publique el artefacto.
 - La falta de documentacion tecnica y de benchmarks hace que su fiabilidad y precision sean desconocidas.
 - La licencia Apache 2.0 permite uso comercial, pero sin un modelo descargable su aplicacion practica es nula.
@@ -56,7 +56,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/rishanthrajendhran/ideadet-logreg-1m-items)
+- [Modelo en Hugging Face](https://huggingface.co/rishanthrajendhran/ideadet-logreg-1m-items)
 - [Modelo relacionado: ideadet-logreg-1m-outline](https://huggingface.co/rishanthrajendhran/ideadet-logreg-1m-outline)
 - [Pagina personal del autor](https://rishanthrajendhran.github.io/)
 - [Perfil de GitHub del autor](https://github.com/RishanthRajendhran/)

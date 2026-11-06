@@ -98,10 +98,10 @@ No disponible. En la informacion proporcionada no se identifican modelos publico
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lhumeau/dominozero-rd-patio-v1
+- Hugging Face: https://huggingface.co/lhumeau/dominozero-rd-patio-v1
 - Repositorio de codigo fuente: https://github.com/lhumeau/dominozero-rd (commit `f0f20039fc7612b524bd7848b9bf9b78a587301b`)
-- Configuracion de entrenamiento y reglas: `patio-v1-training-config.yaml` (incluido en el repositorio de HuggingFace)
-- Codigo de arquitectura e inferencia: `dominozero-inference-source.zip` (incluido en el repositorio de HuggingFace)
-- Metricas de evaluacion y entrenamiento: `evaluation-and-metrics.zip` (incluido en el repositorio de HuggingFace)
-- Manifiesto con hashes y metadatos: `manifest.json` (incluido en el repositorio de HuggingFace)
+- Configuracion de entrenamiento y reglas: `patio-v1-training-config.yaml` (incluido en el repositorio de Hugging Face)
+- Codigo de arquitectura e inferencia: `dominozero-inference-source.zip` (incluido en el repositorio de Hugging Face)
+- Metricas de evaluacion y entrenamiento: `evaluation-and-metrics.zip` (incluido en el repositorio de Hugging Face)
+- Manifiesto con hashes y metadatos: `manifest.json` (incluido en el repositorio de Hugging Face)
 - Resultados de la busqueda web: no se encontraron enlaces relevantes para este modelo o su dominio.

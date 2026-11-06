@@ -4,7 +4,7 @@
 
 Milyonus Optic Tracking 2.4 es un sistema de seguimiento óptico facial en tiempo real diseñado para ejecutarse completamente en el navegador, sin necesidad de servidores externos ni procesamiento en la nube. Desarrollado por Milyonus, una empresa centrada en agentes de IA y sistemas de entrevistas automatizadas, este modelo ofrece un mallado facial de 478 puntos, estimación de pose 3D de la cabeza, seguimiento de múltiples rostros con identificadores persistentes y un sistema de puntuación de atención que muestrea y reporta el nivel de enfoque una vez por segundo.
 
-El modelo se distribuye bajo licencia MIT, aunque el propio autor lo describe como "closed-source" en publicaciones de LinkedIn, lo que genera una contradicción que debería aclararse antes de su adopción en producción. A pesar de estar listado en HuggingFace, la ficha del modelo está prácticamente vacía y no se han publicado métricas de rendimiento, datos de entrenamiento ni especificaciones técnicas detalladas. Su relevancia radica en la promesa de llevar el seguimiento ocular y facial avanzado a dispositivos de gama baja y media sin depender de APIs externas, lo que abre casos de uso en educación, salud y atención al cliente.
+El modelo se distribuye bajo licencia MIT, aunque el propio autor lo describe como "closed-source" en publicaciones de LinkedIn, lo que genera una contradicción que debería aclararse antes de su adopción en producción. A pesar de estar listado en Hugging Face, la ficha del modelo está prácticamente vacía y no se han publicado métricas de rendimiento, datos de entrenamiento ni especificaciones técnicas detalladas. Su relevancia radica en la promesa de llevar el seguimiento ocular y facial avanzado a dispositivos de gama baja y media sin depender de APIs externas, lo que abre casos de uso en educación, salud y atención al cliente.
 
 ## Especificaciones técnicas
 
@@ -16,7 +16,7 @@ El modelo se distribuye bajo licencia MIT, aunque el propio autor lo describe co
 | Longitud de contexto | no disponible (no es un modelo de lenguaje; se refiere a ventana de procesamiento de imágenes) |
 | Tipos de cuantizacion | se menciona "quantized landmark tracking" pero sin detalles de precisión |
 | Idiomas soportados | no disponible (no es un modelo de texto) |
-| Licencia | MIT (según HuggingFace); el autor indica "closed-source" en LinkedIn |
+| Licencia | MIT (según Hugging Face); el autor indica "closed-source" en LinkedIn |
 | Formato de pesos | no disponible (no se publican pesos en el repositorio) |
 
 ## Arquitectura y entrenamiento
@@ -69,7 +69,7 @@ MediaPipe Face Mesh es la alternativa más comparable por su arquitectura y su e
 ## Limitaciones y advertencias
 
 - No se ha publicado documentación técnica detallada, ni especificaciones de entrenamiento, ni métricas de rendimiento; la fiabilidad del sistema no está verificada de forma independiente.
-- Contradicción de licencia: el repositorio de HuggingFace indica MIT, pero el autor declara "closed-source" en LinkedIn. Esto puede generar problemas legales si se usa el modelo en proyectos comerciales.
+- Contradicción de licencia: el repositorio de Hugging Face indica MIT, pero el autor declara "closed-source" en LinkedIn. Esto puede generar problemas legales si se usa el modelo en proyectos comerciales.
 - La descarga del modelo es 0 y tiene solo 1 like, lo que sugiere una adopción muy baja y una comunidad casi inexistente.
 - No se especifica el tratamiento de sesgos en el dataset de entrenamiento, ni el comportamiento con caras de diferentes etnias, edades o condiciones de iluminación.
 - El sistema de puntuación de atención puede ser impreciso y no debe usarse como herramienta de diagnóstico psicológico sin validación clínica.
@@ -77,7 +77,7 @@ MediaPipe Face Mesh es la alternativa más comparable por su arquitectura y su e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ayazelrico/Milyonus-Optic-Tracking-2.4
+- Hugging Face: https://huggingface.co/ayazelrico/Milyonus-Optic-Tracking-2.4
 - Sitio web oficial: https://www.milyonus.com/optic-tracking
 - GitHub (repositorio): https://github.com/milyonus/Milyonus-Optic-Tracking-2.4-Second-One
 - Página personal del autor: https://www.ayazelrico.com/

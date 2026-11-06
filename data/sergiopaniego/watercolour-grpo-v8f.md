@@ -77,7 +77,7 @@ No se puede afirmar superioridad o inferioridad sin benchmarks.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sergiopaniego/watercolour-grpo-v8f
+- Hugging Face: https://huggingface.co/sergiopaniego/watercolour-grpo-v8f
 - Repositorio del autor en GitHub: https://github.com/sergiopaniego
 - Página personal del autor: https://sergiopaniego.github.io/
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300

@@ -25,7 +25,7 @@ La relevancia actual del modelo reside en la creciente necesidad de proteger dat
 
 La arquitectura exacta no está documentada públicamente. La model card indica que se trata de un modelo "LFM" (probablemente una variante de encoder basada en la familia LFM2.5, de la cual se menciona un modelo de 350M como comparación). Se trata de un modelo de clasificación de tokens (token-classification) que produce etiquetas para dos categorías principales: `private_person` (nombres de personas) y `private_address` (direcciones). El resto de categorías de PII (teléfonos, fechas, números de identificación, etc.) se delegan a un postprocesador basado en expresiones regulares que forma parte del SDK `schift-ko-pii`.
 
-No se ha publicado información sobre los datos de entrenamiento, el número de tokens utilizados, ni si se emplearon técnicas como RLHF o DPO. La model card menciona un dataset personalizado (`custom`) para el benchmark, pero no detalla el corpus de entrenamiento. El modelo está diseñado para funcionar con el SDK propietario, que incluye el postprocesador y utilidades de enmascarado, aunque también es posible usarlo directamente con la librería `transformers` de HuggingFace.
+No se ha publicado información sobre los datos de entrenamiento, el número de tokens utilizados, ni si se emplearon técnicas como RLHF o DPO. La model card menciona un dataset personalizado (`custom`) para el benchmark, pero no detalla el corpus de entrenamiento. El modelo está diseñado para funcionar con el SDK propietario, que incluye el postprocesador y utilidades de enmascarado, aunque también es posible usarlo directamente con la librería `transformers` de Hugging Face.
 
 ## Capacidades
 
@@ -33,7 +33,7 @@ No se ha publicado información sobre los datos de entrenamiento, el número de 
 - Detección de direcciones urbanas y rurales en formato coreano.
 - Integración con un postprocesador regex que cubre: números de teléfono, números de identificación (resident ID), fechas en formato coreano, matrículas de vehículos, direcciones de correo electrónico y URLs (según la documentación del SDK).
 - Funciones de enmascarado y reemplazo selectivo de entidades mediante el SDK `schift-ko-pii` (funciones `mask`, `apply`, `detect`).
-- Compatible con la API de `transformers` de HuggingFace (pipeline de token-classification).
+- Compatible con la API de `transformers` de Hugging Face (pipeline de token-classification).
 - API en la nube gratuita (schift.io) que incluye postprocesado automático.
 - Soporte de procesamiento por lotes y de archivos completos mediante el SDK.
 
@@ -91,16 +91,16 @@ Nota: el bajo recall sin postprocesado (0.439) se debe a que el modelo solo pred
 - VRAM estimada: no requiere VRAM; puede ejecutarse en memoria RAM estándar (menos de 1 GB).
 - GPUs recomendadas: no aplica; cualquier CPU moderna es suficiente. Para despliegues masivos se puede usar cualquier GPU, pero no es necesario.
 - Compatibilidad con hardware de bajo consumo: puede ejecutarse en Raspberry Pi, dispositivos móviles o servidores de gama baja.
-- Opciones de despliegue: mediante el SDK `schift-ko-pii` (pip install schift-ko-pii), con la librería `transformers` de HuggingFace (pipeline de token-classification), o a través de la API en la nube de schift.io.
+- Opciones de despliegue: mediante el SDK `schift-ko-pii` (pip install schift-ko-pii), con la librería `transformers` de Hugging Face (pipeline de token-classification), o a través de la API en la nube de schift.io.
 - Latencia y throughput: no se han publicado datos oficiales; dado el tamaño del modelo, se espera una latencia de milisegundos por documento en CPU moderna.
 
 ## Comparativa con modelos similares
 
 | Modelo | Params | Contexto | F1 (benchmark_v2 +PP) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| schift-ko-pii-v5 | 34M | No disponible | 0.823 | schift-2.0 | HuggingFace, SDK |
-| schift-ko-pii-v4 | 111M | No disponible | 0.802 | schift-2.0 | HuggingFace, SDK |
-| LFM2.5-Encoder-350M-PII | 350M | No disponible | 0.254 | No especificada | HuggingFace (presumible) |
+| schift-ko-pii-v5 | 34M | No disponible | 0.823 | schift-2.0 | Hugging Face, SDK |
+| schift-ko-pii-v4 | 111M | No disponible | 0.802 | schift-2.0 | Hugging Face, SDK |
+| LFM2.5-Encoder-350M-PII | 350M | No disponible | 0.254 | No especificada | Hugging Face (presumible) |
 
 El modelo v5 supera a su predecesor v4 en el benchmark más reciente y es significativamente más pequeño. La comparación con LFM2.5-350M-PII muestra que el modelo de 350M tiene un rendimiento muy inferior en esta tarea específica, lo que sugiere que el enfoque híbrido (modelo + postprocesador) es más eficaz que un modelo grande de propósito general. No se dispone de comparaciones con otros detectores de PII coreanos del mercado (por ejemplo, modelos basados en KLUE o ETRI).
 
@@ -112,11 +112,11 @@ El modelo v5 supera a su predecesor v4 en el benchmark más reciente y es signif
 - La licencia schift-2.0 es una licencia propietaria no estándar. Es necesario revisar sus términos antes de un uso comercial, especialmente en cuanto a redistribución o modificación.
 - No se han publicado detalles sobre los datos de entrenamiento, posibles sesgos o alucinaciones. Al ser un modelo de clasificación de tokens, el riesgo de alucinación es bajo, pero puede haber errores en nombres ambiguos o direcciones mal formateadas.
 - No hay información sobre la longitud máxima de contexto; se recomienda probar con textos largos antes de usarlo en producción.
-- El modelo fue creado en agosto de 2026 (según la fecha de HuggingFace), lo que indica que es muy reciente y podría tener menos validación externa que modelos más establecidos.
+- El modelo fue creado en agosto de 2026 (según la fecha de Hugging Face), lo que indica que es muy reciente y podría tener menos validación externa que modelos más establecidos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/schift-io/schift-ko-pii-v5
+- Hugging Face: https://huggingface.co/schift-io/schift-ko-pii-v5
 - GitHub de schift-io: https://github.com/schift-io
 - SDK Python en PyPI: https://pypi.org/project/schift/
 - Documentación del SDK: https://schift.io/docs/reference/sdk/

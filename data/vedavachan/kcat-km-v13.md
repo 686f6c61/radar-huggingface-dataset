@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kcat-km-v13 es un modelo de regresión de cinética enzimática desarrollado por el usuario VedaVachan y publicado en HuggingFace. Su objetivo es predecir dos parámetros bioquímicos fundamentales para caracterizar una enzima: la constante catalítica (kcat) y la constante de Michaelis (Km), ambas en escala logarítmica (log10). El modelo toma como entrada un identificador, una cadena SMILES del sustrato y la secuencia de aminoácidos de la proteína, y devuelve una predicción por cada fila de entrada.
+kcat-km-v13 es un modelo de regresión de cinética enzimática desarrollado por el usuario VedaVachan y publicado en Hugging Face. Su objetivo es predecir dos parámetros bioquímicos fundamentales para caracterizar una enzima: la constante catalítica (kcat) y la constante de Michaelis (Km), ambas en escala logarítmica (log10). El modelo toma como entrada un identificador, una cadena SMILES del sustrato y la secuencia de aminoácidos de la proteína, y devuelve una predicción por cada fila de entrada.
 
 Técnicamente, no es un modelo de lenguaje generativo sino un regresor multimodal de arquitectura neuronal de dos ramas. La rama proteica utiliza un encoder ESM2 congelado de 8 millones de parámetros que produce vectores de 320 dimensiones, complementados con 23 fracciones de aminoácidos. La rama molecular emplea 2048 bits de Morgan verificados más 16 descriptores RDKit y 16 indicadores de valores ausentes. Ambas ramas se fusionan mediante una red densa con LayerNorm, ReLU y dropout, y terminan en dos cabezas separadas de 64 unidades.
 
@@ -72,7 +72,7 @@ Decisiones científicas declaradas en la model card: `paired_MeanSCC_CI_lower_gt
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kcat-km-v13 | Regresor enzima-sustrato | no disponible (ESM2 8M congelado) | 512 residuos | SCC local 0,482464 | no disponible | HuggingFace, 0 descargas |
+| kcat-km-v13 | Regresor enzima-sustrato | no disponible (ESM2 8M congelado) | 512 residuos | SCC local 0,482464 | no disponible | Hugging Face, 0 descargas |
 | ExtraTrees emparejado (control interno) | Ensemble de árboles | no disponible | no aplica | SCC local 0,486186 | no disponible | Referencia interna del autor |
 | Otros modelos públicos de predicción kcat/Km | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -95,5 +95,5 @@ No se dispone de información sobre alternativas públicas comparables en la doc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VedaVachan/kcat-km-v13
+- Hugging Face: https://huggingface.co/VedaVachan/kcat-km-v13
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

@@ -89,5 +89,5 @@ No se han publicado comparaciones directas con otros detectores en la informaci√
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bench-labs/objectmodel-v1
+- Repositorio en Hugging Face: https://huggingface.co/bench-labs/objectmodel-v1
 - Blog post del autor: https://huggingface.co/spaces/bench-labs/blog?post=ObjectModel-v1.html

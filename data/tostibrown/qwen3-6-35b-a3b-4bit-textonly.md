@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Vision | No (eliminada) | Sí | no disponible |
 | Tamaño de pesos | 18,17 GiB | 19,00 GiB | no disponible |
 | Licencia | Apache-2.0 | Apache-2.0 | no disponible |
-| Disponibilidad | HuggingFace, MLX | HuggingFace, MLX | no disponible |
+| Disponibilidad | Hugging Face, MLX | Hugging Face, MLX | no disponible |
 
 Los datos de Qwen3.6-27B-Dense provienen de la nomenclatura del artículo de insiderllm, pero no se han verificado en la información de la model card, por lo que se marcan como no disponibles cuando no se dispone de confirmación.
 
@@ -69,12 +69,12 @@ Los datos de Qwen3.6-27B-Dense provienen de la nomenclatura del artículo de ins
 - No es un re-entrenamiento ni una re-cuantización: cualquier problema de comportamiento o alucinación del modelo base se traslada íntegramente a esta derivación.
 - No es un lanzamiento oficial ni de Qwen ni de mlx-community: el repositorio contribuye únicamente con la eliminación de la torre de visión y una verificación de integridad.
 - Riesgo inherente de alucinación: no se aportan evaluaciones de seguridad ni de alineación para esta variante, por lo que se recomienda probar el modelo en el caso de uso específico antes de desplegarlo en producción.
-- Idiomas no documentados: los metadatos de HuggingFace indican que los idiomas soportados no están disponibles, lo que limita la confianza en entornos multilingües.
+- Idiomas no documentados: los metadatos de Hugging Face indican que los idiomas soportados no están disponibles, lo que limita la confianza en entornos multilingües.
 - Longitud de contexto no documentada: no se ha publicitado el contexto máximo del modelo, aunque el ejemplo de uso sugiere un límite de 65.536 tokens configurable en Mei.
 - Dependencia del ecosistema MLX: el formato safetensors/MLX no es directamente portable a entornos CUDA o a runtimes como llama.cpp sin conversión adicional.
 
 ## Enlaces
-- HuggingFace del modelo: https://huggingface.co/Tostibrown/Qwen3.6-35B-A3B-4bit-textonly
+- Hugging Face del modelo: https://huggingface.co/Tostibrown/Qwen3.6-35B-A3B-4bit-textonly
 - Repositorio del modelo base: https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-4bit
 - Proyecto Mei (servidor de inferencia Swift/MLX): https://github.com/tijs/mei
 - Guía para ejecutar Qwen3.6-35B-A3B localmente: https://tinyweights.dev/posts/run-qwen3-6-35b-a3b-locally/

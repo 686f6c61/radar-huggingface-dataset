@@ -4,7 +4,7 @@
 
 ## Resumen
 
-diffusion-stir_bar-scratch es una politica de robot basada en difusion (diffusion policy) desarrollada por WetLabRoboData y publicada en HuggingFace dentro del ecosistema LeRobot. No es un modelo de lenguaje: es un controlador entrenado por imitacion (imitation learning) para ejecutar la tarea concreta denominada `stir_bar` sobre un robot UR3e bimanual equipado con tres camaras. El modelo resuelve el problema de generar secuencias de acciones motoras a partir de observaciones visuales y de estado, sustituyendo la programacion manual de la tarea por aprendizaje a partir de demostraciones.
+diffusion-stir_bar-scratch es una politica de robot basada en difusion (diffusion policy) desarrollada por WetLabRoboData y publicada en Hugging Face dentro del ecosistema LeRobot. No es un modelo de lenguaje: es un controlador entrenado por imitacion (imitation learning) para ejecutar la tarea concreta denominada `stir_bar` sobre un robot UR3e bimanual equipado con tres camaras. El modelo resuelve el problema de generar secuencias de acciones motoras a partir de observaciones visuales y de estado, sustituyendo la programacion manual de la tarea por aprendizaje a partir de demostraciones.
 
 El modelo es una variante "scratch", lo que significa que se entreno unicamente con los datos de esa tarea y no parte de un checkpoint previo o preentrenamiento generalista. Cuenta con 262.813.031 parametros (aproximadamente 263 millones) y un repositorio de 1,1 GB en formato safetensors. La evaluacion publicada por el autor reporta 15 exitos sobre 20 episodios de rollout, es decir, una tasa de exito del 75 por ciento en la tarea objetivo.
 
@@ -98,7 +98,7 @@ No disponible. La informacion proporcionada no incluye otros modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WetLabRoboData/diffusion-stir_bar-scratch
+- Modelo en Hugging Face: https://huggingface.co/WetLabRoboData/diffusion-stir_bar-scratch
 - Dataset de entrenamiento: https://huggingface.co/datasets/WetLabRoboData/lerobot-data-stir_bar
 - Dataset de evaluacion (videos de rollout y resultados por episodio): https://huggingface.co/datasets/WetLabRoboData/eval-diffusion-stir_bar-scratch
 - Papers, blogs o repositorios adicionales: no se han encontrado enlaces relevantes en la busqueda web realizada.

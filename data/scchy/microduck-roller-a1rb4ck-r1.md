@@ -2,7 +2,7 @@
 
 ## Resumen
 
-roller-a1rb4ck-r1 es una política de control motriz entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo microduck de Pollen Robotics. El modelo no es un modelo de lenguaje ni un sistema multimodal generativo: es un controlador neuronal que traduce observaciones del robot (61 dimensiones) en acciones de actuación (14 dimensiones) a 50 Hz, pensado para ejecutarse en el propio robot sobre ruedas. Lo publica el usuario SccHy en HuggingFace con la librería `microduck` y formato ONNX.
+roller-a1rb4ck-r1 es una política de control motriz entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo microduck de Pollen Robotics. El modelo no es un modelo de lenguaje ni un sistema multimodal generativo: es un controlador neuronal que traduce observaciones del robot (61 dimensiones) en acciones de actuación (14 dimensiones) a 50 Hz, pensado para ejecutarse en el propio robot sobre ruedas. Lo publica el usuario SccHy en Hugging Face con la librería `microduck` y formato ONNX.
 
 La política se describe como "perpetua": una marcha que se ejecuta de forma continua hasta que se le indique lo contrario, cargada en una ranura de política del demonio `robotctl`. El normalizador de observaciones está integrado dentro de `policy.onnx`, de modo que el robot puede alimentar observaciones en crudo.
 
@@ -83,7 +83,7 @@ No disponible. No se han identificado en la información proporcionada otras pol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SccHy/microduck-roller-a1rb4ck-r1
+- Modelo en Hugging Face: https://huggingface.co/SccHy/microduck-roller-a1rb4ck-r1
 - Repositorio microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl`, rama `challenge-recipe-publishing`, commit `1efd853be` (sin URL directa en la información proporcionada)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del demonio (sin URL directa en la información proporcionada)

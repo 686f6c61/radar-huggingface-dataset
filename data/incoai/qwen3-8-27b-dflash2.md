@@ -118,7 +118,7 @@ DFlash 2 supera tanto al MTP integrado como al drafter DSpark en todas las tarea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
+- Modelo en Hugging Face: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Repositorio GGUF: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2-GGUF
 - Espejo del checkpoint: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Blog de DFlash 2: https://inco.ai/blog/dflash2/

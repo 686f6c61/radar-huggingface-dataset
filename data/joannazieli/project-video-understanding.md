@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`joannazieli/project-video-understanding` no es un modelo entrenado, sino un repositorio de notas de investigacion sobre comprension de video publicado en HuggingFace. La propia model card lo declara explicitamente: contiene motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y no se presenta "como un paper completado ni como el lanzamiento de modelos entrenados". Los dos unicos artefactos documentados son `summary.md` (artefacto principal) y `README.md`.
+`joannazieli/project-video-understanding` no es un modelo entrenado, sino un repositorio de notas de investigacion sobre comprension de video publicado en Hugging Face. La propia model card lo declara explicitamente: contiene motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y no se presenta "como un paper completado ni como el lanzamiento de modelos entrenados". Los dos unicos artefactos documentados son `summary.md` (artefacto principal) y `README.md`.
 
-El repositorio incluye la etiqueta `safetensors` y el sistema de HuggingFace reporta 49.600 parametros totales en pesos safetensors, con un tamano de repositorio de 0,0 GB. Esa cifra es incompatible con cualquier modelo de video o de lenguaje funcional (equivale a unos 0,2 MB en fp32) y, dado que la model card niega la existencia de un checkpoint entrenado, debe interpretarse como un tensor residual o de relleno, no como un modelo utilizable. No hay pipeline declarado, ni idiomas, ni resultados.
+El repositorio incluye la etiqueta `safetensors` y el sistema de Hugging Face reporta 49.600 parametros totales en pesos safetensors, con un tamano de repositorio de 0,0 GB. Esa cifra es incompatible con cualquier modelo de video o de lenguaje funcional (equivale a unos 0,2 MB en fp32) y, dado que la model card niega la existencia de un checkpoint entrenado, debe interpretarse como un tensor residual o de relleno, no como un modelo utilizable. No hay pipeline declarado, ni idiomas, ni resultados.
 
 Su relevancia es, por tanto, documental y metodologica: sirve como plantilla de planificacion de experimentos en comprension de video (baselines emparejados, comprobaciones de reproducibilidad, modos de fallo) y no como componente desplegable. Cualquier evaluacion practica del repositorio debe limitarse a su contenido en Markdown.
 
@@ -46,7 +46,7 @@ Lo que si especifica el repositorio es el diseno experimental propuesto: alcance
 - Checklist de reproducibilidad para un equipo de investigacion: adoptar el criterio de la model card (versiones de dataset, comandos, semillas, hardware y logs en bruto) como plantilla de registro experimental en proyectos propios.
 - Analisis de modos de fallo: usar la seccion de failure modes y preguntas abiertas como base para disenar pruebas de estres en un pipeline de video ya existente.
 - Docencia o seminario interno: el repositorio funciona como ejemplo de nota de investigacion bien delimitada, util para explicar la diferencia entre una propuesta metodologica y un resultado experimental.
-- Auditoria de artefactos en HuggingFace: sirve como caso de estudio de repositorios etiquetados con `safetensors` y `transformer` cuyo contenido real no es un modelo, relevante para automatizar controles de calidad en catalogos internos.
+- Auditoria de artefactos en Hugging Face: sirve como caso de estudio de repositorios etiquetados con `safetensors` y `transformer` cuyo contenido real no es un modelo, relevante para automatizar controles de calidad en catalogos internos.
 
 ## Benchmarks y rendimiento
 
@@ -82,7 +82,7 @@ No procede una comparativa con modelos de comprension de video: al no existir ch
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joannazieli/project-video-understanding
+- Hugging Face: https://huggingface.co/joannazieli/project-video-understanding
 - Model card / README del repositorio: incluida en la pagina anterior
 - `summary.md`: referenciado en la model card como artefacto principal (no se ha proporcionado su contenido)
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada

@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA entrenado mediante PEFT (v0.18.1) sobre el modelo base Qwen/Qwen2.5-VL-7B-Instruct, un transformer multimodal de ~7.000 millones de parámetros desarrollado por Alibaba Qwen. El adaptador ha sido publicado por el usuario cvis-tmu y su nombre interno indica que se trata de un ajuste supervisado (SFT) con formato de cadena de pensamiento (CoT), una única época de entrenamiento, un formato unificado de datos y unos ajustes de decodificación o prompting etiquetados como "groksettings", con registro de entrenamiento adjunto. No es, por tanto, un modelo independiente, sino un delta de pesos que requiere cargar el modelo base para funcionar.
 
-La relevancia de esta ficha es limitada pero concreta: se trata de un adaptador de muy reciente publicación (creado el 4 de octubre de 2026) con cero descargas y cero valoraciones, lo que lo sitúa en la fase de artefacto de experimentación más que de componente listo para producción. La model card es la plantilla por defecto de HuggingFace sin rellenar, de modo que no hay documentación sobre datos de entrenamiento, hiperparámetros, licencia ni idiomas. Toda la información sustantiva debe inferirse del identificador del modelo, del nombre del modelo base y de los repositorios hermanos publicados por el mismo autor.
+La relevancia de esta ficha es limitada pero concreta: se trata de un adaptador de muy reciente publicación (creado el 4 de octubre de 2026) con cero descargas y cero valoraciones, lo que lo sitúa en la fase de artefacto de experimentación más que de componente listo para producción. La model card es la plantilla por defecto de Hugging Face sin rellenar, de modo que no hay documentación sobre datos de entrenamiento, hiperparámetros, licencia ni idiomas. Toda la información sustantiva debe inferirse del identificador del modelo, del nombre del modelo base y de los repositorios hermanos publicados por el mismo autor.
 
 El interés técnico principal reside en el modelo base: Qwen2.5-VL-7B-Instruct es un modelo visión-lenguaje capaz de procesar imágenes y texto, con soporte de contexto nativo de 32K tokens según las fichas de despliegue de las variantes fusionadas del mismo autor. El adaptador explota esa base para, presumiblemente, reforzar el razonamiento en cadena antes de responder, aunque no se aporta ninguna evidencia cuantitativa de mejora.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla vacía de HuggingFace: no documenta datos de entrenamiento, hiperparámetros, evaluación ni uso previsto, lo que impide auditar el modelo.
+- La model card es la plantilla vacía de Hugging Face: no documenta datos de entrenamiento, hiperparámetros, evaluación ni uso previsto, lo que impide auditar el modelo.
 - No se declara licencia. Sin licencia explícita, no puede asumirse permiso para uso comercial; además, la licencia del modelo base Qwen2.5-VL-7B-Instruct impone sus propias condiciones que el adaptador no puede relajar.
 - No se declaran idiomas soportados, por lo que se desconoce si el ajuste ha degradado el multilingüismo del modelo base.
 - Riesgo de alucinación no cuantificado: al no haber benchmarks ni evaluación humana publicada, no existe ninguna medida de fiabilidad factual.
@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/cvis-tmu/qwen2_5vl-7b-lora-sft-CoT_traineval_1epochs_unifiedformat_groksettings_traininglog
+- Repositorio del modelo en Hugging Face: https://huggingface.co/cvis-tmu/qwen2_5vl-7b-lora-sft-CoT_traineval_1epochs_unifiedformat_groksettings_traininglog
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Variante de 1 época (sin el sufijo de formato unificado): https://huggingface.co/cvis-tmu/qwen2_5vl-7b-lora-sft-CoT_traineval_1epochs_traininglog
 - Variante de 4 épocas: https://huggingface.co/cvis-tmu/qwen2_5vl-7b-lora-sft-CoT_traineval_4epochs

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yan-gjun/study-retrieval` es un repositorio de HuggingFace publicado por el usuario yan-gjun que contiene una implementación de un modelo DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval) multimodal. Según la propia model card, se trata de una variante "small" concebida como punto de partida reproducible y no como la release de un modelo entrenado. El archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, pero el autor indica de forma explícita que no ha sido entrenado ni auditado.
+`yan-gjun/study-retrieval` es un repositorio de Hugging Face publicado por el usuario yan-gjun que contiene una implementación de un modelo DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval) multimodal. Según la propia model card, se trata de una variante "small" concebida como punto de partida reproducible y no como la release de un modelo entrenado. El archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, pero el autor indica de forma explícita que no ha sido entrenado ni auditado.
 
 El modelo declara 24.832 parámetros totales según los metadatos de safetensors, una cifra extremadamente reducida que confirma su carácter experimental. No se declara ninguna puntuación de benchmark, no se especifican idiomas soportados ni longitud de contexto, y el repositorio no incluye pipeline declarado. Su relevancia actual es limitada: funciona como esqueleto de investigación para experimentar con recuperación imagen-texto mediante cross attention, no como componente listo para producción.
 
@@ -80,7 +80,7 @@ No disponible. No se dispone de datos de rendimiento del modelo, y los metadatos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yan-gjun/study-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/yan-gjun/study-retrieval
 - Artículo original de DeiT: no disponible en la información proporcionada
 - Paper de referencia sobre recuperación multimodal: no disponible en la información proporcionada
 - Repositorios o demos adicionales: no disponible en la información proporcionada

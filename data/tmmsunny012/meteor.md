@@ -87,7 +87,7 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 | Modelo | Parámetros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| METEOR (`tmmsunny012/meteor`) | 54 M | 8 cámaras a 768 × 432, BEV 800 × 500 a 0,2 m | Sin benchmarks de precisión publicados; ~70 ms en AGX Orin INT8 y ~30 ms en workstation fp16 | Apache-2.0 | Pesos PyTorch + ONNX en HuggingFace; runtimes en GitHub |
+| METEOR (`tmmsunny012/meteor`) | 54 M | 8 cámaras a 768 × 432, BEV 800 × 500 a 0,2 m | Sin benchmarks de precisión publicados; ~70 ms en AGX Orin INT8 y ~30 ms en workstation fp16 | Apache-2.0 | Pesos PyTorch + ONNX en Hugging Face; runtimes en GitHub |
 | Alternativas de la misma categoría (p. ej. BEVFusion, UniAD, BEVFormer) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -104,11 +104,11 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 - Discrepancia de identificadores: el repositorio consultado es `tmmsunny012/meteor`, mientras que la model card y los comandos de descarga apuntan a `AutowareFoundation/meteor`. Conviene verificar el origen y la integridad con `SHA256SUMS` antes de usar los artefactos.
 - Licencia Apache-2.0: permite uso comercial con las obligaciones habituales de atribución y conservación de avisos. No se declaran pesos con licencias adicionales ni restricciones específicas de uso, pero tampoco se ofrece garantía alguna.
 - Atribución inusual: la model card afirma que el proyecto fue escrito por Claude (Anthropic) de forma autónoma. Se trata de una declaración del autor, no verificada de forma independiente, y debe considerarse al evaluar la madurez del software asociado.
-- Metadatos de fecha: la información de HuggingFace registra la creación y última actualización el 12 de septiembre de 2026, con cero descargas y cero likes en el momento de la consulta.
+- Metadatos de fecha: la información de Hugging Face registra la creación y última actualización el 12 de septiembre de 2026, con cero descargas y cero likes en el momento de la consulta.
 
 ## Enlaces
 
-- Modelo en HuggingFace (repositorio consultado): https://huggingface.co/tmmsunny012/meteor
+- Modelo en Hugging Face (repositorio consultado): https://huggingface.co/tmmsunny012/meteor
 - Repositorio de referencia citado en la model card: https://huggingface.co/AutowareFoundation/meteor
 - Escenas de demo para ejecutar el modelo: https://huggingface.co/datasets/AutowareFoundation/meteor-demo-scenes
 - Código, receta de entrenamiento, fábrica de autolabel y runtimes Python/C++ TensorRT: https://github.com/tier4/METEOR

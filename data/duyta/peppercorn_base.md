@@ -96,9 +96,9 @@ Rendimiento de servicio en una RTX PRO 6000 (96 GB), vLLM 0.29, bf16, greedy, 30
 
 | Modelo | Parámetros | Contexto | Rendimiento (media de 5 suites) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Peppercorn Base | 310,8M | No disponible | 70,9 | CC-BY-4.0 | HuggingFace |
-| LightOnOCR-3-0.8B | ~0,85B | No disponible | 81,0 | No disponible en la información | HuggingFace (modelo padre) |
-| LightOnOCR-3-4B | ~4B | No disponible | 81,1 | No disponible en la información | HuggingFace (profesor de destilación) |
+| Peppercorn Base | 310,8M | No disponible | 70,9 | CC-BY-4.0 | Hugging Face |
+| LightOnOCR-3-0.8B | ~0,85B | No disponible | 81,0 | No disponible en la información | Hugging Face (modelo padre) |
+| LightOnOCR-3-4B | ~4B | No disponible | 81,1 | No disponible en la información | Hugging Face (profesor de destilación) |
 
 Peppercorn Base sacrifica unos 10 puntos de media frente a sus padres a cambio de reducir el tamaño a aproximadamente el 37% del 0.8B y multiplicar por 1,4 el throughput de este. Destaca por encima de ambos padres en TEDS de tablas en OmniDocBench-EN (0,637) y en distancia de edición de texto en SEA-Vision VI (0,079), y en F1 de grounding en SEA-Vision VI (0,788).
 
@@ -116,6 +116,6 @@ Peppercorn Base sacrifica unos 10 puntos de media frente a sus padres a cambio d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DuyTa/Peppercorn_Base
+- Hugging Face: https://huggingface.co/DuyTa/Peppercorn_Base
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-3-0.8B
 - No se han proporcionado otros enlaces (papers, blogs, repos o demos) en la información disponible.

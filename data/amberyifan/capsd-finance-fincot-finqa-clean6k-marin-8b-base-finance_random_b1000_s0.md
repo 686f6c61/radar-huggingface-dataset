@@ -84,6 +84,6 @@ La comparación real de rendimiento en tareas financieras no es posible sin dato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AmberYifan/capsd-finance-fincot-finqa-clean6k-marin-8b-base-finance_random_b1000_s0
+- Hugging Face: https://huggingface.co/AmberYifan/capsd-finance-fincot-finqa-clean6k-marin-8b-base-finance_random_b1000_s0
 - Modelo base: https://huggingface.co/marin-community/marin-8b-base
 - No se han encontrado otros enlaces (papers, blogs, repos) en la información proporcionada.

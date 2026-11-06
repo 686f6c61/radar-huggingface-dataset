@@ -95,7 +95,7 @@ CherryPit se diferencia por su enfoque especifico en generacion de componentes R
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DRUPEs/CherryPit-1.1-2B-WebDev-Preview-1024-GGUF
+- Modelo en Hugging Face: https://huggingface.co/DRUPEs/CherryPit-1.1-2B-WebDev-Preview-1024-GGUF
 - Version anterior (CherryPit-1.0-2B-GGUF): https://huggingface.co/DRUPEs/CherryPit-1.0-2B-GGUF
 - Modelo base (MiniCPM5-2B): https://huggingface.co/openbmb/MiniCPM5-2B
 - Paper, blog o demo: no disponible

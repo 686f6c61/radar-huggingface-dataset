@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aselyildiz/matching-exp` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura tipo BEiT (BERT pre-training of image transformers) orientada a tareas de *matching*. No es un modelo entrenado ni un checkpoint con pesos ajustados: según la propia model card, `model.safetensors` es únicamente un checkpoint de inicialización válido para *smoke tests*, y no se reclama ninguna métrica de benchmark. El autor lo describe explícitamente como una base de código para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`aselyildiz/matching-exp` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura tipo BEiT (BERT pre-training of image transformers) orientada a tareas de *matching*. No es un modelo entrenado ni un checkpoint con pesos ajustados: según la propia model card, `model.safetensors` es únicamente un checkpoint de inicialización válido para *smoke tests*, y no se reclama ninguna métrica de benchmark. El autor lo describe explícitamente como una base de código para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El dato más relevante es su escala real: según el recuento de safetensors, el repositorio contiene 33.088 parámetros totales, una cifra extremadamente pequeña que contrasta con la etiqueta "large" que figura en la configuración de arquitectura descrita en la model card. El tamaño del repositorio es de 0,0 GB y no registra descargas ni *likes*, lo que confirma su carácter de experimento recién publicado y sin validación comunitaria.
 
@@ -78,5 +78,5 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aselyildiz/matching-exp
+- Modelo en Hugging Face: https://huggingface.co/aselyildiz/matching-exp
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la búsqueda web realizada.

@@ -77,8 +77,8 @@ No se dispone de modelos comparables en la información proporcionada. El adapta
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/srikarjy025/lipidos-phi3-domain-adapt
-- HuggingFace (versión fusionada): https://huggingface.co/srikarjy025/lipidos-phi3-domain-adapt-merged
+- Hugging Face (adaptador): https://huggingface.co/srikarjy025/lipidos-phi3-domain-adapt
+- Hugging Face (versión fusionada): https://huggingface.co/srikarjy025/lipidos-phi3-domain-adapt-merged
 - Repositorio GitHub del proyecto LipidOS: https://github.com/srikarjy/lipidos
 - Modelo base: https://huggingface.co/microsoft/Phi-3.5-mini-instruct
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth

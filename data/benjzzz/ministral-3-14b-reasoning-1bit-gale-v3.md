@@ -90,9 +90,9 @@ La comparativa se limita a las versiones del mismo autor. No se dispone de datos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/benjzzz/Ministral-3-14B-Reasoning-1bit-Gale-v3
+- Repositorio Hugging Face: https://huggingface.co/benjzzz/Ministral-3-14B-Reasoning-1bit-Gale-v3
 - Repositorio de la versión anterior (1-bit Gale): https://huggingface.co/benjzzz/Ministral-3-14B-Reasoning-1bit-Gale
-- Modelo base en HuggingFace: https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512
+- Modelo base en Hugging Face: https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512
 - Ficha del modelo en LM Studio: https://lmstudio.ai/models/mistralai/ministral-3-14b-reasoning
 - Guía de uso con vLLM: https://docs.vllm.ai/projects/recipes/en/stable/Mistral/Ministral-3-Reasoning.html
 - Documentación oficial de Mistral: https://docs.mistral.ai/models/ministral-3-14b-25-12

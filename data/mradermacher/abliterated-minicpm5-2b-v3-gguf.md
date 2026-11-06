@@ -118,7 +118,7 @@ La unica comparacion verificable es entre este repositorio y su modelo de origen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/abliterated-minicpm5-2b-v3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/abliterated-minicpm5-2b-v3-GGUF
 - Modelo base: https://huggingface.co/KidIkaros/abliterated-minicpm5-2b-v3
 - Vista general y lista de descargas de cuantizaciones: https://hf.tst.eu/model#abliterated-minicpm5-2b-v3-GGUF
 - Peticiones y FAQ de mradermacher: https://huggingface.co/mradermacher/model_requests

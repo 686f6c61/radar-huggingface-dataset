@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ResNet152 es una red neuronal convolucional profunda de 152 capas, publicada originalmente por Microsoft Research en 2015 en el artículo "Deep Residual Learning for Image Recognition". Esta implementación concreta, publicada por el usuario ashwmurt en HuggingFace, es una adaptación de la versión de TorchVision pensada para su uso con Qualcomm AI Hub Models, lo que permite compilar, evaluar y desplegar el modelo en dispositivos Snapdragon (móviles Android, por ejemplo). El modelo resuelve tareas de clasificación de imágenes sobre el dataset ImageNet y, además, puede emplearse como backbone (extractor de características) para construir modelos más complejos en tareas de visión por computador. Su relevancia actual radica en que, pese al auge de los transformadores, las arquitecturas residuales siguen siendo una opción eficiente y ligera para transfer learning y despliegue en entornos con recursos limitados, como los dispositivos móviles.
+ResNet152 es una red neuronal convolucional profunda de 152 capas, publicada originalmente por Microsoft Research en 2015 en el artículo "Deep Residual Learning for Image Recognition". Esta implementación concreta, publicada por el usuario ashwmurt en Hugging Face, es una adaptación de la versión de TorchVision pensada para su uso con Qualcomm AI Hub Models, lo que permite compilar, evaluar y desplegar el modelo en dispositivos Snapdragon (móviles Android, por ejemplo). El modelo resuelve tareas de clasificación de imágenes sobre el dataset ImageNet y, además, puede emplearse como backbone (extractor de características) para construir modelos más complejos en tareas de visión por computador. Su relevancia actual radica en que, pese al auge de los transformadores, las arquitecturas residuales siguen siendo una opción eficiente y ligera para transfer learning y despliegue en entornos con recursos limitados, como los dispositivos móviles.
 
 La arquitectura introduce conexiones de atajo (skip connections) que mitigan el problema del desvanecimiento del gradiente, permitiendo entrenar redes muy profundas. En esta ficha, el modelo se presenta como un clasificador de imágenes y backbone, con soporte para cuantización w8a8 y exportación a formatos como TensorFlow Lite, orientado a la ejecución en hardware de Qualcomm.
 
@@ -64,12 +64,12 @@ No se dispone de datos de rendimiento para comparar con otras versiones de ResNe
 - Sesgos conocidos: al entrenarse en ImageNet, el modelo puede heredar sesgos presentes en ese dataset (por ejemplo, sobrerrepresentación de ciertas categorías o sesgos geográficos y culturales).
 - Riesgo de alucinación: no aplica directamente, ya que es un modelo discriminativo de clasificación, no generativo. Sin embargo, puede producir clasificaciones erróneas con alta confianza en imágenes fuera de distribución.
 - Limitaciones de contexto: al ser un modelo de visión, no procesa texto ni secuencias largas; su entrada es una imagen de tamaño fijo (normalmente 224x224 píxeles).
-- Restricciones de licencia: la etiqueta de HuggingFace indica "other". La implementación original de TorchVision usa BSD-3-Clause, que permite uso comercial, pero se debe verificar la licencia exacta de esta versión específica antes de usarla en producción.
+- Restricciones de licencia: la etiqueta de Hugging Face indica "other". La implementación original de TorchVision usa BSD-3-Clause, que permite uso comercial, pero se debe verificar la licencia exacta de esta versión específica antes de usarla en producción.
 - Caveat para producción: la compatibilidad con Qualcomm AI Hub requiere una cuenta y un token de API, y el despliegue en dispositivos reales puede implicar limitaciones de memoria y batería. La cuantización w8a8 puede degradar ligeramente la precisión.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ashwmurt/resnet152)
+- [Modelo en Hugging Face](https://huggingface.co/ashwmurt/resnet152)
 - [Paper original: Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)
 - [Implementación de TorchVision](https://github.com/pytorch/vision/blob/main/torchvision/models/resnet.py)
 - [Qualcomm AI Hub Models](https://github.com/quic/ai-hub-models)

@@ -77,10 +77,10 @@ La model card no incluye tablas de MMLU, HumanEval, GSM8K ni métricas equivalen
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B | 1,73B | 256K | Tri-híbrida (convolución + atención) | LFM Open License v1.0 | HuggingFace, API y playground de Liquid AI |
-| Qwen3-1.7B | ~1,7B | 32K nativo (extensible) | Transformer denso | Apache 2.0 | HuggingFace |
-| Llama 3.2 1B | ~1,24B | 128K | Transformer denso | Llama 3.2 Community License | HuggingFace |
-| Gemma 3 1B | ~1B | 32K | Transformer denso | Gemma Terms of Use | HuggingFace |
+| LFM3-1.7B | 1,73B | 256K | Tri-híbrida (convolución + atención) | LFM Open License v1.0 | Hugging Face, API y playground de Liquid AI |
+| Qwen3-1.7B | ~1,7B | 32K nativo (extensible) | Transformer denso | Apache 2.0 | Hugging Face |
+| Llama 3.2 1B | ~1,24B | 128K | Transformer denso | Llama 3.2 Community License | Hugging Face |
+| Gemma 3 1B | ~1B | 32K | Transformer denso | Gemma Terms of Use | Hugging Face |
 
 Nota: los datos de los modelos comparables provienen de sus fichas públicas y deben verificarse antes de usarlos en producción; el rendimiento comparado no está disponible porque LFM3-1.7B no publica benchmarks. La ventaja diferencial de LFM3-1.7B frente a estas alternativas es la combinación de 256K de contexto con un consumo de ~1 GB a 4 bits y un post-entrenamiento específico para tool calling; su desventaja es una licencia propia más restrictiva que Apache 2.0 y la falta de métricas públicas.
 
@@ -97,13 +97,13 @@ Nota: los datos de los modelos comparables provienen de sus fichas públicas y d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/LFM3-1.7B
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Blog de lanzamiento de la familia LFM3: https://www.liquid.ai/blog/lfm3
 - Documentación: https://docs.liquid.ai/lfm/getting-started/welcome
 - Playground: https://playground.liquid.ai/
 - Consola / API: https://console.liquid.ai/dashboard
-- Colección LFM3 en HuggingFace: https://huggingface.co/collections/LiquidAI/lfm3
+- Colección LFM3 en Hugging Face: https://huggingface.co/collections/LiquidAI/lfm3
 - Licencia: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE
 
 Nota: la búsqueda web no devolvió enlaces relevantes sobre este modelo; los resultados obtenidos no guardan relación con LFM3-1.7B y se han descartado.

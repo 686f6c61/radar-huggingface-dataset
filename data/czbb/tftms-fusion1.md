@@ -20,7 +20,7 @@ Su relevancia es acotada pero clara: es un artefacto de reproducibilidad de bajo
 | Idiomas soportados | No disponible en los metadatos del repositorio. El cabezal no procesa lenguaje; el texto de entrada del sistema se codifica en chino mediante Chinese-CLIP ViT-B/16 |
 | Licencia | No disponible (la model card no especifica licencia) |
 | Formato de pesos | PyTorch `.pt` (checkpoint con `state_dict`, `in_dim`, `hidden`, `feat_mean`, `feat_std`) y `.npz` para el conjunto de entrenamiento |
-| Tamano del repositorio | 0,0 GB según HuggingFace (`fusion_head.pt` ~5 KB, `fusion_train.npz` ~1,1 MB) |
+| Tamano del repositorio | 0,0 GB según Hugging Face (`fusion_head.pt` ~5 KB, `fusion_train.npz` ~1,1 MB) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-10-28 / 2026-10-28 |
 
@@ -82,14 +82,14 @@ No se conocen modelos públicos comparables en la información disponible: no es
 
 | Sistema | Parámetros | Contexto | F1 (dev) | F1 (línea) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TFTMS-Fusion1 (reglas + MLP + fusión de decisión) | ~500 en el cabezal; depende de Chinese-CLIP ViT-B/16 | No aplica | 0,9728 | 93,7250 | No disponible | Pesos y datos en HuggingFace; código en GitHub |
+| TFTMS-Fusion1 (reglas + MLP + fusión de decisión) | ~500 en el cabezal; depende de Chinese-CLIP ViT-B/16 | No aplica | 0,9728 | 93,7250 | No disponible | Pesos y datos en Hugging Face; código en GitHub |
 | Cabezal de fusión aislado (sin fusión de decisión) | ~500 | No aplica | 0,9479 | No disponible | No disponible | Incluido en el mismo paquete |
 | Línea base de reglas geométricas (sin MLP) | 0 (sistema simbólico) | No aplica | 0,9665 | No disponible (407 FP) | No disponible | Código en el repositorio |
 | Chinese-CLIP ViT-B/16 (dependencia, no alternativa) | No disponible en la información | No disponible | No aplica | No aplica | Licencia propia de OFA-Sys, no incluida en el paquete | ModelScope / repositorio de OFA-Sys |
 
 ## Limitaciones y advertencias
 
-- Ausencia de licencia: la model card y los metadatos de HuggingFace no declaran licencia, por lo que el uso comercial no está autorizado de forma explícita; es un riesgo legal directo para producción.
+- Ausencia de licencia: la model card y los metadatos de Hugging Face no declaran licencia, por lo que el uso comercial no está autorizado de forma explícita; es un riesgo legal directo para producción.
 - No es un modelo de lenguaje: no genera texto, no responde preguntas y no procesa imágenes de forma directa; cualquier uso fuera de la puntuación de candidatos con 13 características precalculadas requiere reentrenamiento.
 - Dependencia fuerte del formato de entrada: espera los 16 campos oficiales por candidato y las 7 banderas de atributos derivadas del analizador de texto libre del repositorio. Fuera de ese esquema, el modelo no es aplicable tal cual.
 - Desbalanceo de errores: la configuración prioriza exhaustividad (99,4127) sobre precisión (88,6529), con 390 falsos positivos frente a 18 falsos negativos. En aplicaciones donde un falso positivo sea costoso, habrá que recalibrar el umbral.
@@ -97,14 +97,14 @@ No se conocen modelos públicos comparables en la información disponible: no es
 - Idiomas: el pipeline asume descripciones en chino (Chinese-CLIP); no se declaran otros idiomas soportados.
 - Normalización obligatoria: usar `feat_mean` y `feat_std` del checkpoint es parte del contrato; alimentar características sin estandarizar invalida las probabilidades.
 - Riesgo de seguridad al cargar: el autor indica explícitamente que hay que usar `weights_only=False` en PyTorch ≥ 2.6, lo que permite deserializar objetos arbitrarios. Solo debería cargarse desde el repositorio oficial y tras verificar el fichero.
-- Dependencia externa frágil: la descarga de Chinese-CLIP desde HuggingFace u OSS falló según el autor (timeout/403 el 2026-10-22); ModelScope es la vía declarada como operativa, lo que introduce un punto único de fallo en la reproducibilidad.
+- Dependencia externa frágil: la descarga de Chinese-CLIP desde Hugging Face u OSS falló según el autor (timeout/403 el 2026-10-22); ModelScope es la vía declarada como operativa, lo que introduce un punto único de fallo en la reproducibilidad.
 - Alucinación: no aplica en el sentido generativo, pero el modelo puede asignar confianza alta a candidatos incorrectos cuando los atributos de la regla coinciden; el autor reporta F1 en desarrollo y validación muy próximos (0,9728 / 0,9726), sin datos de degradación fuera de distribución.
 - Métricas no homogéneas: desarrollo y validación se publican como fracción y el resultado en línea como porcentaje; conviene no comparar ambos valores sin normalizar.
 - Sin datos de latencia, throughput ni consumo declarados, no es posible dimensionar un servicio a partir de la documentación.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/czbb/TFTMS-Fusion1
+- Modelo en Hugging Face: https://huggingface.co/czbb/TFTMS-Fusion1
 - Repositorio de código (rama main, commit 95049d7): https://github.com/Umbrelllllla/TFTMS-VLP
 - Documentación técnica citada por el autor: `docs/项目笔记.md` (secciones 0–21) y `docs/技术报告/` dentro del repositorio anterior
 - Dependencia de características, Chinese-CLIP ViT-B/16 (OFA-Sys), distribuida vía ModelScope: el autor no incluye URL directa en la model card

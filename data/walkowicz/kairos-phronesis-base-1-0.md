@@ -89,9 +89,9 @@ No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kairos Phronesis Base 1.0 | 4,33B | No disponible | Decisión y verificación con JSON tipado y abstención | Apache 2.0 | HuggingFace, GGUF + safetensors, Ollama |
-| Kairos Phronesis Mini 1.0 | 1,5B | No disponible | Decisión con traza acotada de 3 pasos | No disponible en la información | HuggingFace (según el autor), Q5_K_M 1,12 GB |
-| Kairos Phronesis Nano 1.0 | 0,5B (490M) | No disponible | Decisión para ultra-edge | No disponible en la información | HuggingFace (según el autor), Q5_K_M 420 MB |
+| Kairos Phronesis Base 1.0 | 4,33B | No disponible | Decisión y verificación con JSON tipado y abstención | Apache 2.0 | Hugging Face, GGUF + safetensors, Ollama |
+| Kairos Phronesis Mini 1.0 | 1,5B | No disponible | Decisión con traza acotada de 3 pasos | No disponible en la información | Hugging Face (según el autor), Q5_K_M 1,12 GB |
+| Kairos Phronesis Nano 1.0 | 0,5B (490M) | No disponible | Decisión para ultra-edge | No disponible en la información | Hugging Face (según el autor), Q5_K_M 420 MB |
 | IBM Granite 4.1 8B | 8B | No disponible | Instruct de propósito general | No disponible en la información | Público (IBM Granite) |
 
 Frente a Granite 4.1 8B, la ventaja declarada de Kairos Base 1.0 está en los negativos difíciles (100% frente a 0%) y en el contrato JSON nativo, con la mitad de parámetros y de huella. Frente a sus hermanos Mini y Nano, la diferencia es de precisión en dominio (100% frente a 94,6% y 38,8%) a cambio de un footprint mucho mayor. No se dispone de comparación con otros modelos especializados en verificación normativa.
@@ -112,7 +112,7 @@ Frente a Granite 4.1 8B, la ventaja declarada de Kairos Base 1.0 está en los ne
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Walkowicz/kairos-phronesis-base-1.0
+- Modelo en Hugging Face: https://huggingface.co/Walkowicz/kairos-phronesis-base-1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - BENCHMARK.md (desglose de los 80 casos), referenciado en la model card dentro del propio repositorio: https://huggingface.co/Walkowicz/kairos-phronesis-base-1.0/blob/main/BENCHMARK.md
 - Suite de evaluación `suite_v1_extreme_gauntlet.json`, referenciada en la model card (sin URL directa en la información disponible)

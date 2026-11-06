@@ -78,8 +78,8 @@ No se dispone de datos de rendimiento de benchmarks para establecer una comparat
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-W6-HQQ-g32 | 180.000 millones | 262.144 | int6 en expertos, W6A16, grupo 32 | qwen-community-1.0 | HuggingFace, vLLM con parches sobre A100 |
-| Qwen/Qwen3.8-Flash-Next (base) | no disponible | 262.144 | BF16 | qwen-community-1.0 | HuggingFace; requiere aproximadamente 360 GB y no cabe en 2x A100 80GB |
+| Qwen3.8-Flash-Next-W6-HQQ-g32 | 180.000 millones | 262.144 | int6 en expertos, W6A16, grupo 32 | qwen-community-1.0 | Hugging Face, vLLM con parches sobre A100 |
+| Qwen/Qwen3.8-Flash-Next (base) | no disponible | 262.144 | BF16 | qwen-community-1.0 | Hugging Face; requiere aproximadamente 360 GB y no cabe en 2x A100 80GB |
 | Otras cuantizaciones de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento de benchmarks para establecer una comparat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/spectator2026/Qwen3.8-Flash-Next-W6-HQQ-g32
+- Modelo en Hugging Face: https://huggingface.co/spectator2026/Qwen3.8-Flash-Next-W6-HQQ-g32
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: LICENSE (referenciada en la model card, `license_link: LICENSE`)
 - Imagen de vLLM fijada: `vllm/vllm-openai:nightly-0bfc7a15d095fe83ecc82b50561a93c177fece2d` (commit `0bfc7a15`)

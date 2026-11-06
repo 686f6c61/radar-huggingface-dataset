@@ -24,7 +24,7 @@ Su relevancia es práctica más que investigadora: sirve como ejemplo reproducib
 | Dataset de ajuste | leoliu49/pick-cap-notactile |
 | Pipeline | robotics |
 | Tamano del repositorio | 0,9 GB |
-| Fecha de creacion | 2026-09-24 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-24 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| leoliu49/smolvla-pick-cap-notactile-s1 | 450 M | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| lerobot/smolvla_base (modelo base) | no disponible | no disponible | politica general, requiere ajuste fino para cada tarea | Apache 2.0 | HuggingFace, mantenido por LeRobot |
-| Zyz66/pick-object-smolvla-v4 | no disponible | no disponible | politica de agarre de objetos, ajuste de SmolVLA | no disponible | HuggingFace |
+| leoliu49/smolvla-pick-cap-notactile-s1 | 450 M | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| lerobot/smolvla_base (modelo base) | no disponible | no disponible | politica general, requiere ajuste fino para cada tarea | Apache 2.0 | Hugging Face, mantenido por LeRobot |
+| Zyz66/pick-object-smolvla-v4 | no disponible | no disponible | politica de agarre de objetos, ajuste de SmolVLA | no disponible | Hugging Face |
 | Politica ACT en LeRobot | no disponible | no disponible | linea base de imitacion sin componente de lenguaje | no disponible | repositorio huggingface/lerobot |
 
 La comparación cuantitativa no es posible con la información disponible: no hay cifras de rendimiento publicadas para este checkpoint ni para las alternativas listadas. La diferencia principal frente al modelo base es la especialización en la tarea de coger un tapón sin señal táctil; frente a ACT, la ventaja teórica es el componente de lenguaje y el preentrenamiento visual, aunque sin datos de evaluación no puede confirmarse.
@@ -90,7 +90,7 @@ La comparación cuantitativa no es posible con la información disponible: no ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leoliu49/smolvla-pick-cap-notactile-s1
+- Modelo en Hugging Face: https://huggingface.co/leoliu49/smolvla-pick-cap-notactile-s1
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de ajuste: https://huggingface.co/datasets/leoliu49/pick-cap-notactile
 - Artículo SmolVLA (arXiv): https://arxiv.org/abs/2506.01844

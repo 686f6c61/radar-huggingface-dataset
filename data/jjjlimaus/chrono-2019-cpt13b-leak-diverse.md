@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `jjjlimaus/chrono-2019-cpt13b-leak-diverse` es un checkpoint alojado en HuggingFace por el usuario `jjjlimaus`, con fecha de creación de septiembre de 2026. A pesar de su nombre, que sugiere una arquitectura de 13 000 millones de parámetros (la parte "cpt13b"), los pesos reales en formato safetensors suman 2 018 511 234 parámetros, es decir, aproximadamente 2 000 millones. El repositorio ocupa 460,2 GB, un tamaño desproporcionado para esa cantidad de parámetros, lo que sugiere la presencia de múltiples archivos, posiblemente en distintas cuantizaciones o con duplicados, aunque no se dispone de un desglose oficial.
+El modelo `jjjlimaus/chrono-2019-cpt13b-leak-diverse` es un checkpoint alojado en Hugging Face por el usuario `jjjlimaus`, con fecha de creación de septiembre de 2026. A pesar de su nombre, que sugiere una arquitectura de 13 000 millones de parámetros (la parte "cpt13b"), los pesos reales en formato safetensors suman 2 018 511 234 parámetros, es decir, aproximadamente 2 000 millones. El repositorio ocupa 460,2 GB, un tamaño desproporcionado para esa cantidad de parámetros, lo que sugiere la presencia de múltiples archivos, posiblemente en distintas cuantizaciones o con duplicados, aunque no se dispone de un desglose oficial.
 
-El acceso al modelo está restringido (gated) y requiere aceptar condiciones en HuggingFace. No se ha publicado información sobre licencia, idiomas soportados, arquitectura interna, datos de entrenamiento ni benchmarks. La búsqueda web no ha devuelto resultados relevantes; los enlaces encontrados corresponden a servicios de correo de Orange, sin relación aparente con el modelo. Por tanto, esta ficha se basa únicamente en los metadatos del repositorio y en la imposibilidad de verificar cualquier característica técnica adicional.
+El acceso al modelo está restringido (gated) y requiere aceptar condiciones en Hugging Face. No se ha publicado información sobre licencia, idiomas soportados, arquitectura interna, datos de entrenamiento ni benchmarks. La búsqueda web no ha devuelto resultados relevantes; los enlaces encontrados corresponden a servicios de correo de Orange, sin relación aparente con el modelo. Por tanto, esta ficha se basa únicamente en los metadatos del repositorio y en la imposibilidad de verificar cualquier característica técnica adicional.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ No disponible. No se conocen modelos comparables de la misma familia o con carac
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que se requiere aceptar condiciones en HuggingFace antes de poder descargarlo.
+- Acceso restringido: el modelo es gated, por lo que se requiere aceptar condiciones en Hugging Face antes de poder descargarlo.
 - Licencia ausente: no se especifica ninguna licencia, lo que impide conocer los términos de uso comercial o de redistribución.
 - Información técnica insuficiente: se desconocen arquitectura, datos de entrenamiento, contexto, idiomas y capacidades, lo que impide evaluar su idoneidad para cualquier tarea.
 - Riesgo de alucinación y sesgos: al no haber documentación, no se puede valorar el riesgo de generar contenido falso o sesgado.
@@ -54,6 +54,6 @@ No disponible. No se conocen modelos comparables de la misma familia o con carac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jjjlimaus/chrono-2019-cpt13b-leak-diverse
+- Repositorio Hugging Face: https://huggingface.co/jjjlimaus/chrono-2019-cpt13b-leak-diverse
 
 No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

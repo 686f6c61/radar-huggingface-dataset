@@ -86,7 +86,7 @@ La comparativa se centra en la familia de modelos del mismo autor, ya que no se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/victormuryn/use-generated-pt
+- Modelo en Hugging Face: https://huggingface.co/victormuryn/use-generated-pt
 - Colección de embeddings ucranianos: https://huggingface.co/collections/victormuryn/ukrainian-sentence-embeddings-use
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 - Corpus UberText 2.0: https://lang.org.ua/en/ubertext/

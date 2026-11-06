@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Repo de HuggingFace: https://huggingface.co/emwesoft/GLM-5.3-NVFP4-GGUF
+- Repo de Hugging Face: https://huggingface.co/emwesoft/GLM-5.3-NVFP4-GGUF
 - Modelo base original: https://huggingface.co/zai-org/GLM-5.3
 - Repack NVFP4 de NVIDIA: https://huggingface.co/incoai/GLM-5.3-NVFP4
 - Drafter DFlash2: https://huggingface.co/incoai/GLM-5.3-DFlash2

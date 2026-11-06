@@ -69,10 +69,10 @@ El ruido del juez se estima en ±0.4-0.5 puntos. El umbral de calidad para la pu
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Luigi/qwen38-2b-cursor | 2B | 4096 (servicio) | Resumen de reuniones zh-TW/en | no disponible | HuggingFace |
-| Luigi/minicpm5-1b-cursor | 1B | no disponible | Resumen de reuniones (tier principal) | no disponible | HuggingFace |
-| empero-ai/Qwen3.8-2B | 2B | no disponible | Modelo base general | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.8-27B | 27B | no disponible | Modelo general | Apache-2.0 | HuggingFace |
+| Luigi/qwen38-2b-cursor | 2B | 4096 (servicio) | Resumen de reuniones zh-TW/en | no disponible | Hugging Face |
+| Luigi/minicpm5-1b-cursor | 1B | no disponible | Resumen de reuniones (tier principal) | no disponible | Hugging Face |
+| empero-ai/Qwen3.8-2B | 2B | no disponible | Modelo base general | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.8-27B | 27B | no disponible | Modelo general | Apache-2.0 | Hugging Face |
 
 El modelo compite directamente con su version de 1B (misma tarea, menor calidad) y con el base Qwen3.8-2B sin fine-tune, que no esta especializado en resumen de reuniones. No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -88,7 +88,7 @@ El modelo compite directamente con su version de 1B (misma tarea, menor calidad)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Luigi/qwen38-2b-cursor
+- Modelo en Hugging Face: https://huggingface.co/Luigi/qwen38-2b-cursor
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-2B
 - Repositorio del agente CURSOR: https://github.com/vieenrose/agentic-summarizer
 - Verificador recomendado: https://huggingface.co/Luigi/granite-4.0-350m-verifier

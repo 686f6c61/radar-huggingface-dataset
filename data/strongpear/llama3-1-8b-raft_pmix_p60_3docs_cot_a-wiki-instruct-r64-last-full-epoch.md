@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| strongpear/Llama3.1-8B-RAFT_PMIX_P60_3DOCS_CoT_A-WIKI-Instruct-r64 | 8B + LoRA | 128k | no disponible | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | HuggingFace, Ollama, etc. |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32k | Apache 2.0 | HuggingFace, Ollama, etc. |
+| strongpear/Llama3.1-8B-RAFT_PMIX_P60_3DOCS_CoT_A-WIKI-Instruct-r64 | 8B + LoRA | 128k | no disponible | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | Hugging Face, Ollama, etc. |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32k | Apache 2.0 | Hugging Face, Ollama, etc. |
 
 La comparativa se limita a los datos disponibles. El adaptador no tiene benchmarks publicados, por lo que no es posible comparar rendimiento. El modelo base Llama 3.1 8B Instruct es la referencia natural, mientras que Mistral 7B es una alternativa de tamano similar con licencia permisiva. No se dispone de informacion sobre otros adaptadores RAFT comparables.
 
@@ -77,7 +77,7 @@ La comparativa se limita a los datos disponibles. El adaptador no tiene benchmar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P60_3DOCS_CoT_A-WIKI-Instruct-r64-last-full-epoch
+- Repositorio Hugging Face: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P60_3DOCS_CoT_A-WIKI-Instruct-r64-last-full-epoch
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Repositorio oficial de Llama 3: https://github.com/meta-llama/llama3
 - Documentacion de Llama 3.1 en DeepWiki: https://deepwiki.com/meta-llama/llama-models/10.1-llama-3.1

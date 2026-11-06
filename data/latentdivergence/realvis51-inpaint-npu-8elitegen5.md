@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks de calidad tipo FID, CLIP score, MM
 
 | Modelo | Tipo | Resolucion | Contexto de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| latentdivergence/realvis51-inpaint-npu-8elitegen5 | Grafos ONNX QNN para NPU movil | 512x512 | 77 tokens | CreativeML OpenRAIL-M | HuggingFace (0 descargas) |
-| Uminosachi/realisticVisionV51_v51VAE-inpainting | Modelo base SD 1.5 inpainting | 512x512 | 77 tokens | CreativeML OpenRAIL-M | HuggingFace (modelo de origen) |
-| latentdivergence/realvis51-inpaint-int8-onnx | Build ONNX int8 para CPU | 512x512 | 77 tokens | CreativeML OpenRAIL-M | HuggingFace |
+| latentdivergence/realvis51-inpaint-npu-8elitegen5 | Grafos ONNX QNN para NPU movil | 512x512 | 77 tokens | CreativeML OpenRAIL-M | Hugging Face (0 descargas) |
+| Uminosachi/realisticVisionV51_v51VAE-inpainting | Modelo base SD 1.5 inpainting | 512x512 | 77 tokens | CreativeML OpenRAIL-M | Hugging Face (modelo de origen) |
+| latentdivergence/realvis51-inpaint-int8-onnx | Build ONNX int8 para CPU | 512x512 | 77 tokens | CreativeML OpenRAIL-M | Hugging Face |
 | Realistic Vision V5.1 inpainting (variantes en Civitai/Replicate) | Modelo SD 1.5 inpainting en difusion | 512x512 | 77 tokens | CreativeML OpenRAIL-M | Civitai, Replicate, ModelsLab |
 
 La diferencia clave frente al resto no esta en la calidad de generacion, sino en el empaquetado: los demas son pesos para bibliotecas de difusion generales, mientras que este repositorio son grafos ya compilados para una NPU concreta. La comparacion de rendimiento entre ellos en terminos de calidad de imagen no esta disponible en la informacion proporcionada.
@@ -97,7 +97,7 @@ La diferencia clave frente al resto no esta en la calidad de generacion, sino en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/latentdivergence/realvis51-inpaint-npu-8elitegen5
+- Modelo en Hugging Face: https://huggingface.co/latentdivergence/realvis51-inpaint-npu-8elitegen5
 - Build int8 ONNX para CPU: https://huggingface.co/latentdivergence/realvis51-inpaint-int8-onnx
 - README del build int8 ONNX: https://huggingface.co/latentdivergence/realvis51-inpaint-int8-onnx/blob/main/README.md
 - Modelo base: https://huggingface.co/Uminosachi/realisticVisionV51_v51VAE-inpainting

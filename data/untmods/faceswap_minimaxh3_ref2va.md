@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos comparab
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FaceSwap_MiniMaxH3_REF2VA | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace (0 descargas) |
+| FaceSwap_MiniMaxH3_REF2VA | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face (0 descargas) |
 | Alternativas de face swap sobre MiniMax H3 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Adaptadores de face swap para otros modelos de video | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos comparab
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/UntMods/FaceSwap_MiniMaxH3_REF2VA
+- Repositorio en Hugging Face: https://huggingface.co/UntMods/FaceSwap_MiniMaxH3_REF2VA
 - Ejemplo principal en video: https://huggingface.co/UntMods/FaceSwap_MiniMaxH3_REF2VA/resolve/main/videos/Faceswap_00120.mp4
 - Ejemplos adicionales: https://huggingface.co/UntMods/FaceSwap_MiniMaxH3_REF2VA/resolve/main/videos/Faceswap_00114.mp4, https://huggingface.co/UntMods/FaceSwap_MiniMaxH3_REF2VA/resolve/main/videos/Faceswap_00058.mp4, https://huggingface.co/UntMods/FaceSwap_MiniMaxH3_REF2VA/resolve/main/videos/Faceswap_00109.mp4, https://huggingface.co/UntMods/FaceSwap_MiniMaxH3_REF2VA/resolve/main/videos/Faceswap_00107.mp4, https://huggingface.co/UntMods/FaceSwap_MiniMaxH3_REF2VA/resolve/main/videos/Faceswap_00039.mp4, https://huggingface.co/UntMods/FaceSwap_MiniMaxH3_REF2VA/resolve/main/videos/Faceswap_00040.mp4, https://huggingface.co/UntMods/FaceSwap_MiniMaxH3_REF2VA/resolve/main/videos/Faceswap_00013.mp4
 - Workflow del autor (CRT-Nodes): mencionado en la model card, sin URL publicada

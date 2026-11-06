@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Likith2206/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2, un clásico problema de control continuo-discreto distribuido con Gymnasium. El modelo se ha entrenado con la librería stable-baselines3 y se publica en HuggingFace Hub bajo la librería `stable-baselines3`, la etiqueta `deep-reinforcement-learning` y el pipeline `reinforcement-learning`. No se trata de un modelo de lenguaje ni de un transformer generativo: es una política entrenada para resolver una tarea concreta de aterrizaje de una nave en una superficie lunar bidimensional.
+Likith2206/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2, un clásico problema de control continuo-discreto distribuido con Gymnasium. El modelo se ha entrenado con la librería stable-baselines3 y se publica en Hugging Face Hub bajo la librería `stable-baselines3`, la etiqueta `deep-reinforcement-learning` y el pipeline `reinforcement-learning`. No se trata de un modelo de lenguaje ni de un transformer generativo: es una política entrenada para resolver una tarea concreta de aterrizaje de una nave en una superficie lunar bidimensional.
 
 La relevancia de este tipo de modelo es fundamentalmente educativa y de referencia. LunarLander-v2 se considera "resuelto" a partir de una recompensa media de 200, y este agente declara una recompensa media de 285.59 +/- 21.20, por encima del umbral estándar. Sirve como ejemplo canónico de entrenamiento PPO con stable-baselines3 y como punto de partida para reproducir pipelines de RL, comparar hiperparámetros o validar infraestructura de entrenamiento.
 
@@ -44,7 +44,7 @@ No se documentan en la información disponible el número de pasos de entrenamie
 - Comparación de algoritmos: permite contrastar PPO frente a DQN, A2C, SAC u otros algoritmos sobre el mismo entorno, siempre que se disponga de agentes equivalentes entrenados por el mismo protocolo.
 - Validación de infraestructura de RL: sirve para probar que un pipeline de entrenamiento o evaluación (Gymnasium, stable-baselines3, GPU o CPU) funciona correctamente antes de escalar a entornos o modelos mayores.
 - Generación de datos de demostración: los rollouts del agente pueden emplearse para imitación conductual, análisis de trayectorias o visualización de políticas aprendidas.
-- Pruebas de integración con HuggingFace Hub: útil para validar el flujo `load_from_hub` y las convenciones de publicación de modelos de RL.
+- Pruebas de integración con Hugging Face Hub: útil para validar el flujo `load_from_hub` y las convenciones de publicación de modelos de RL.
 
 ## Benchmarks y rendimiento
 
@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento de otros agentes entrenados sobre LunarLan
 
 | Modelo / algoritmo | Parametros | Contexto | Rendimiento en LunarLander-v2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Likith2206/ppo-LunarLander-v2 (PPO) | no disponible | no aplica | 285.59 +/- 21.20 (no verificado) | no disponible | HuggingFace Hub |
+| Likith2206/ppo-LunarLander-v2 (PPO) | no disponible | no aplica | 285.59 +/- 21.20 (no verificado) | no disponible | Hugging Face Hub |
 | DQN sobre LunarLander-v2 | no disponible | no aplica | no disponible | no disponible | existen implementaciones en stable-baselines3, sin datos comparables facilitados |
 | A2C sobre LunarLander-v2 | no disponible | no aplica | no disponible | no disponible | existen implementaciones en stable-baselines3, sin datos comparables facilitados |
 
@@ -90,7 +90,7 @@ No se pueden comparar licencias ni condiciones de uso porque el modelo analizado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Likith2206/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/Likith2206/ppo-LunarLander-v2
 - Librería stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Documentación de PPO en stable-baselines3: https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html
 - Entorno LunarLander-v2 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/

@@ -26,7 +26,7 @@ Su relevancia es acotada pero concreta: ofrece un modelo conversacional de licen
 | Huella de VRAM activa | ~0,9 GB (mínimo recomendado: 8 GB de memoria unificada) |
 | Plantilla de chat | Tokens `<|im_start|>`, `<|im_end|>`, `<|endoftext|>` |
 | Descargas / likes | 17 / 0 |
-| Fecha de creación / actualización | 2026-09-22 / 2026-09-22 (según metadatos de HuggingFace) |
+| Fecha de creación / actualización | 2026-09-22 / 2026-09-22 (según metadatos de Hugging Face) |
 | Paper de referencia | arXiv:2501.00656 (familia OLMo 2) |
 
 ## Arquitectura y entrenamiento
@@ -83,13 +83,13 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K 
 
 | Modelo | Parámetros | Contexto | Cuantización / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SirSahOl/OLMo-2-0425-1B-chat-mlx-4bit (este) | 1,48 B | 4.096 tokens | 4 bits, safetensors MLX | Apache 2.0 | HuggingFace, solo Apple Silicon |
-| allenai/OLMo-2-0425-1B (original) | 1,48 B | 4.096 tokens | 16 bits (sin cuantizar) | Apache 2.0 (según este repositorio) | HuggingFace, multiplataforma |
-| SirSahOl/OLMo-2-0425-1B-chat-mlx-8bit | 1,48 B (mismo checkpoint) | 4.096 tokens | 8 bits, safetensors MLX | Apache 2.0 | HuggingFace, ~1,5 GB |
-| SirSahOl/OLMo-2-0425-1B-chat-mlx-16bit | 1,48 B (mismo checkpoint) | 4.096 tokens | 16 bits, safetensors MLX | Apache 2.0 | HuggingFace, ~2,8 GB |
-| Qwen2.5-1.5B-Instruct | Datos de referencia de su model card oficial: ~1,54 B | 32.768 tokens (nativo) | Múltiples, incluido GGUF | Apache 2.0 | HuggingFace, multiplataforma |
-| Llama-3.2-1B-Instruct | Datos de referencia de su model card oficial: ~1,24 B | 128.000 tokens | Múltiples, incluido GGUF | Licencia comunitaria de Llama 3.2 | HuggingFace, con restricciones |
-| SmolLM2-1.7B-Instruct | Datos de referencia de su model card oficial: ~1,71 B | 8.192 tokens | Múltiples, incluido GGUF | Apache 2.0 | HuggingFace, multiplataforma |
+| SirSahOl/OLMo-2-0425-1B-chat-mlx-4bit (este) | 1,48 B | 4.096 tokens | 4 bits, safetensors MLX | Apache 2.0 | Hugging Face, solo Apple Silicon |
+| allenai/OLMo-2-0425-1B (original) | 1,48 B | 4.096 tokens | 16 bits (sin cuantizar) | Apache 2.0 (según este repositorio) | Hugging Face, multiplataforma |
+| SirSahOl/OLMo-2-0425-1B-chat-mlx-8bit | 1,48 B (mismo checkpoint) | 4.096 tokens | 8 bits, safetensors MLX | Apache 2.0 | Hugging Face, ~1,5 GB |
+| SirSahOl/OLMo-2-0425-1B-chat-mlx-16bit | 1,48 B (mismo checkpoint) | 4.096 tokens | 16 bits, safetensors MLX | Apache 2.0 | Hugging Face, ~2,8 GB |
+| Qwen2.5-1.5B-Instruct | Datos de referencia de su model card oficial: ~1,54 B | 32.768 tokens (nativo) | Múltiples, incluido GGUF | Apache 2.0 | Hugging Face, multiplataforma |
+| Llama-3.2-1B-Instruct | Datos de referencia de su model card oficial: ~1,24 B | 128.000 tokens | Múltiples, incluido GGUF | Licencia comunitaria de Llama 3.2 | Hugging Face, con restricciones |
+| SmolLM2-1.7B-Instruct | Datos de referencia de su model card oficial: ~1,71 B | 8.192 tokens | Múltiples, incluido GGUF | Apache 2.0 | Hugging Face, multiplataforma |
 
 Los datos de las tres alternativas externas provienen de sus respectivas model cards públicas y conviene verificarlos en la fuente original antes de tomar decisiones de producción; no proceden de la información proporcionada en esta consulta. En el eje de contexto, este modelo queda claramente por detrás de Qwen2.5-1.5B y Llama-3.2-1B, y su ventaja diferencial se limita al consumo de memoria y a la integración nativa con MLX.
 
@@ -109,7 +109,7 @@ Los datos de las tres alternativas externas provienen de sus respectivas model c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SirSahOl/OLMo-2-0425-1B-chat-mlx-4bit
+- Repositorio en Hugging Face: https://huggingface.co/SirSahOl/OLMo-2-0425-1B-chat-mlx-4bit
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Variante de 8 bits del mismo autor: https://huggingface.co/SirSahOl/OLMo-2-0425-1B-chat-mlx-8bit
 - Variante de 16 bits del mismo autor: https://huggingface.co/SirSahOl/OLMo-2-0425-1B-chat-mlx-16bit

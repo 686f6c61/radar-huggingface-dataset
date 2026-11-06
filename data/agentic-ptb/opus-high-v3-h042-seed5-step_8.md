@@ -62,7 +62,7 @@ No se dispone de datos de rendimiento para comparar con otros modelos. Como refe
 | Modelo | Parámetros | Contexto | Licencia | Estado |
 |---|---|---|---|---|
 | `agentic-ptb/opus-high-v3.h042.seed5.step_8` | 9,41B | No disponible | Apache 2.0 | Checkpoint experimental, resultado negativo |
-| `Qwen/Qwen3.5-9B-Base` | ~9B | No disponible | Apache 2.0 (según base) | Modelo base, disponible en HuggingFace |
+| `Qwen/Qwen3.5-9B-Base` | ~9B | No disponible | Apache 2.0 (según base) | Modelo base, disponible en Hugging Face |
 | Llama 3.1 8B (referencia) | 8,03B | 128K | Llama 3.1 Community License | Modelo de producción con benchmarks publicados |
 
 No hay comparativa directa posible porque este checkpoint no tiene métricas propias y su propósito no es competir con modelos de producción.
@@ -79,7 +79,7 @@ No hay comparativa directa posible porque este checkpoint no tiene métricas pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h042.seed5.step_8
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h042.seed5.step_8
 - Dataset asociado del run: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

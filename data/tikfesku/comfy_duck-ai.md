@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Comfy_Duck.ai es un modelo publicado en HuggingFace por el usuario TikFesku bajo licencia Apache 2.0. La model card asociada no contiene descripción técnica, arquitectura, datos de entrenamiento ni información sobre capacidades, por lo que no es posible determinar con rigor qué tipo de modelo es ni qué problema resuelve.
+Comfy_Duck.ai es un modelo publicado en Hugging Face por el usuario TikFesku bajo licencia Apache 2.0. La model card asociada no contiene descripción técnica, arquitectura, datos de entrenamiento ni información sobre capacidades, por lo que no es posible determinar con rigor qué tipo de modelo es ni qué problema resuelve.
 
 El repositorio no registra descargas ni interacciones y no declara pipeline de inferencia, idiomas soportados ni formato de pesos. La única información verificable es el identificador, el autor, la licencia y las fechas de creación y actualización (2 de noviembre de 2026).
 
@@ -75,5 +75,5 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni las capacidades de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TikFesku/Comfy_Duck.ai
+- Hugging Face: https://huggingface.co/TikFesku/Comfy_Duck.ai
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

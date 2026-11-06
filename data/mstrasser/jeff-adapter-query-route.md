@@ -73,7 +73,7 @@ La model card advierte que los tests de tipo "generator" proceden del mismo gene
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mstrasser/jeff-adapter-query-route` | Adaptador LoRA de clasificación calibrada | no disponible (base 0,8B) | no disponible | Apache 2.0 | HuggingFace, SDK propio, API remota |
+| `mstrasser/jeff-adapter-query-route` | Adaptador LoRA de clasificación calibrada | no disponible (base 0,8B) | no disponible | Apache 2.0 | Hugging Face, SDK propio, API remota |
 | LLM generativo con tool calling (p. ej. Qwen3.5-0.8B) | Generación + selección de herramienta vía prompt | 0,8B | no disponible | según modelo | Amplia |
 | Clasificadores de intención tipo BERT | Clasificación supervisada | 0,1-0,3B típicamente | 512 tokens típicamente | variable | Amplia |
 
@@ -94,7 +94,7 @@ La comparación directa con alternativas concretas no está disponible en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mstrasser/jeff-adapter-query-route
+- Hugging Face: https://huggingface.co/mstrasser/jeff-adapter-query-route
 - Modelo base: https://huggingface.co/mstrasser/jeff-base
 - Página del catálogo: https://jeffhub.ai/catalogue/jeff.retrieval.query-route
 - Repositorio de código, servidor y SDKs: https://github.com/firelex/jeff

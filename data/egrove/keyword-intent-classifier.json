@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Egrove/keyword-intent-classifier",
+  "slug": "egrove-keyword-intent-classifier",
+  "author": "Egrove",
+  "url": "https://huggingface.co/Egrove/keyword-intent-classifier",
+  "created_at": "2026-11-04T07:57:01.000Z",
+  "updated_at": "2026-11-04T09:31:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "keyword-intent",
+    "search-intent",
+    "seo",
+    "text-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3075720,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Keyword Intent Classifier (4 Intent Types) | Grigora",
+      "url": "https://www.grigora.co/tools/keyword-intent-classifier/",
+      "snippet": "Search intent is the foundation of modern SEO. Match content to intent or you do not rank. The classifier tags each keyword with one of four intents: informational, navigational, transactional, commercial. Bulk classify hundreds of keywords. Use the labels to plan content types: blog posts for informational, product pages for transactional."
+    },
+    {
+      "title": "Falconsai/intent_classification · Hugging Face",
+      "url": "https://huggingface.co/Falconsai/intent_classification",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

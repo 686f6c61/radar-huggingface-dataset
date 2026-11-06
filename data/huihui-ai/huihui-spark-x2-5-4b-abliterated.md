@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Tratamiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Huihui-Spark-X2.5-4B-abliterated | ~4B (inferido del nombre) | no disponible | Apache 2.0 | Abliteration sobre el modelo base | Repositorio de HuggingFace, 0 descargas |
-| XHToken/Spark-X2.5-4B (modelo base) | no disponible (~4B según el nombre) | no disponible | no disponible | Modelo original con rechazos | Repositorio de HuggingFace |
+| Huihui-Spark-X2.5-4B-abliterated | ~4B (inferido del nombre) | no disponible | Apache 2.0 | Abliteration sobre el modelo base | Repositorio de Hugging Face, 0 descargas |
+| XHToken/Spark-X2.5-4B (modelo base) | no disponible (~4B según el nombre) | no disponible | no disponible | Modelo original con rechazos | Repositorio de Hugging Face |
 | Otras variantes abliterated de huihui-ai | no disponible | no disponible | no disponible | Misma técnica sobre otros modelos base | no disponible |
 | Otros modelos de ~4B de la misma categoría | no disponible | no disponible | no disponible | Sin abliteration | no disponible |
 
@@ -89,7 +89,7 @@ La información proporcionada no incluye datos verificables de benchmarks, conte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huihui-ai/Huihui-Spark-X2.5-4B-abliterated
+- Modelo en Hugging Face: https://huggingface.co/huihui-ai/Huihui-Spark-X2.5-4B-abliterated
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Repositorio de la técnica de abliteration: https://github.com/Sumandora/remove-refusals-with-transformers
 - Perfil del autor: https://huggingface.co/huihui-ai

@@ -89,7 +89,7 @@ Datos adicionales: el experto legal añadido como cuarto elemento sube la precis
 
 | Alternativa | Parámetros añadidos | Contexto / alcance | Rendimiento (media de 3 tareas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este banco (gate de clave fija) | 36.864 (691 KB) | Clasificación, 96 tokens | 0,809 | Apache-2.0 | HuggingFace, 0 descargas |
+| Este banco (gate de clave fija) | 36.864 (691 KB) | Clasificación, 96 tokens | 0,809 | Apache-2.0 | Hugging Face, 0 descargas |
 | Deltas sumados sin enrutado | Mismo orden (36.864) | Igual | 0,739 | Apache-2.0 | Variante del mismo estudio |
 | Router aprendido de misma forma | No disponible en el texto | Igual | 0,682 | Apache-2.0 | Variante del mismo estudio |
 | Adaptador único de rango 4 | No disponible en el texto | Igual | 0,616 | Apache-2.0 | Variante del mismo estudio |
@@ -112,7 +112,7 @@ No se han identificado en la información disponible otros bancos de expertos p�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gcorzo/remora-expert-bank-qwen3.5-0.8b
+- Repositorio Hugging Face: https://huggingface.co/gcorzo/remora-expert-bank-qwen3.5-0.8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Nota técnica del autor: `docs/remora-pilot-v0.4.pdf` (dentro del repositorio)
 - Resultados crudos de evaluación: `eval/` (JSON con todas las cifras, incluidas las variantes comparadas)

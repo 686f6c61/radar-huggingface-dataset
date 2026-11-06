@@ -36,7 +36,7 @@ Respecto al entrenamiento, la informacion disponible no detalla el numero de tok
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta `conversational` de HuggingFace y el pipeline asociado indican un uso orientado a dialogo.
+- Generacion de texto conversacional: la etiqueta `conversational` de Hugging Face y el pipeline asociado indican un uso orientado a dialogo.
 - Razonamiento y generacion de texto general: es un modelo de lenguaje causal estandar sobre arquitectura MoE.
 - Eficiencia de inferencia por activacion dispersa: al activar unos 1B de parametros de 13,6B, el coste computacional por token es muy inferior al de un modelo denso del mismo tamano.
 - Analisis del enrutador de expertos: el repositorio de allenai expone utilidades para estudiar las activaciones de los expertos por documento, lo que permite interpretabilidad y especializacion tematica.
@@ -88,16 +88,16 @@ La informacion disponible no permite establecer comparaciones de rendimiento con
 - Idiomas no especificados: no se documenta que idiomas soporta, lo que impide garantizar un rendimiento aceptable en castellano.
 - Riesgo de alucinacion: no se han publicado evaluaciones de veracidad ni de tasas de alucinacion. Como en cualquier modelo causal, el riesgo existe y debe mitigarse con verificacion externa.
 - Sesgos: no se han documentado analisis de sesgo en la informacion disponible.
-- Modelo con cero descargas y cero likes en HuggingFace: no hay comunidad que haya validado la conversion; el soporte practico es inexistente.
+- Modelo con cero descargas y cero likes en Hugging Face: no hay comunidad que haya validado la conversion; el soporte practico es inexistente.
 - Decodificacion lenta en CPU: es un modelo de 27 GB en F16 sin requisito de GPU satisfecho por hardware pequeno, segun el propio autor.
 - Perplejidad como unica metrica: no hay evaluaciones de codigo, matematicas, razonamiento o dialogo, por lo que no se puede caracterizar el rendimiento por tarea.
 
 ## Enlaces
 
-- Ficha GGUF en HuggingFace: https://huggingface.co/moeshawky/Emo_1b14b_1T-GGUF
+- Ficha GGUF en Hugging Face: https://huggingface.co/moeshawky/Emo_1b14b_1T-GGUF
 - Checkpoint original (referenciado por el autor): https://huggingface.co/moeshawky/emo-1b14b-1t
-- Modelo original en HuggingFace: https://huggingface.co/allenai/Emo_1b14b_1T
-- Pagina de EMO en HuggingFace: https://huggingface.co/allenai/EMO
+- Modelo original en Hugging Face: https://huggingface.co/allenai/Emo_1b14b_1T
+- Pagina de EMO en Hugging Face: https://huggingface.co/allenai/EMO
 - Repositorio en GitHub: https://github.com/allenai/EMO
 - Ficha en LLM Explorer: https://llm-explorer.com/model/allenai%2FEmo_1b14b_1T,6ccto2JXDUUQ68sZPyvm9S
 - Entrada en Toolify: https://www.toolify.ai/ai-model/allenai-emo-1b14b-1t

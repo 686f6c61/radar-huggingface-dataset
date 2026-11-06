@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: 8.9 GB en cuantizacion 4-bit; 23.4 GB en BF16 (pesos completos).
 - GPU recomendadas: cualquier GPU con al menos 10-12 GB de VRAM para la version 4-bit (por ejemplo, RTX 3060 12 GB, RTX 4070, RTX 4080). Para BF16 se requiere una GPU profesional (A100, H100) o una consumer de gama alta con 24 GB (RTX 4090).
 - Cabe en GPU de consumo: si, en su version 4-bit cabe en tarjetas de 12 GB como la RTX 3060, que es la referencia citada por el autor.
-- Opciones de despliegue: el modelo se publica en formato transformers con safetensors, por lo que puede cargarse con la libreria transformers de HuggingFace y cuantizarse con bitsandbytes. No se mencionan archivos GGUF ni compatibilidad con llama.cpp, Ollama o vLLM, aunque al ser un modelo transformers estandar podria adaptarse.
+- Opciones de despliegue: el modelo se publica en formato transformers con safetensors, por lo que puede cargarse con la libreria transformers de Hugging Face y cuantizarse con bitsandbytes. No se mencionan archivos GGUF ni compatibilidad con llama.cpp, Ollama o vLLM, aunque al ser un modelo transformers estandar podria adaptarse.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mini-Whale-1-12B | 12.55 B | 40.960 | MoE de fusion (Qwen3-4B + expertos DeepSeek) | Apache-2.0 | HuggingFace |
-| Qwen3-4B (base) | 4 B | 40.960 (segun config) | Denso | Apache-2.0 | HuggingFace |
+| Mini-Whale-1-12B | 12.55 B | 40.960 | MoE de fusion (Qwen3-4B + expertos DeepSeek) | Apache-2.0 | Hugging Face |
+| Qwen3-4B (base) | 4 B | 40.960 (segun config) | Denso | Apache-2.0 | Hugging Face |
 | DeepSeek-V4-Flash | no disponible | no disponible | MoE (origen de los expertos) | no disponible | no disponible |
-| Mini-Whale-Flash | no disponible | no disponible | Fusion similar (mismo autor) | no disponible | HuggingFace |
+| Mini-Whale-Flash | no disponible | no disponible | Fusion similar (mismo autor) | no disponible | Hugging Face |
 
 La comparacion directa no es posible sin datos de benchmarks. Mini-Whale-1-12B se posiciona como un modelo intermedio entre un denso de 4B y un MoE grande, ofreciendo capacidades de codigo especializadas con un coste de inferencia moderado. Su principal diferenciacion frente a Qwen3-4B es la adicion de los expertos de codigo, y frente a DeepSeek-V4-Flash, su tamano reducido y aptitud para hardware de consumo.
 
@@ -82,7 +82,7 @@ La comparacion directa no es posible sin datos de benchmarks. Mini-Whale-1-12B s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Akahsizrr/Mini-Whale-1-12B
+- Modelo en Hugging Face: https://huggingface.co/Akahsizrr/Mini-Whale-1-12B
 - Modelo relacionado del mismo autor (Mini-Whale-Flash): https://huggingface.co/Akahsizrr/Mini-Whale-Flash
 - Anuncio del autor en X (Twitter): https://x.com/RoliumGens/status/2087312248800706604
 - Repositorio GitHub (proyecto MiniWhale, posiblemente relacionado con el ecosistema del modelo): https://github.com/Dwell-Jing/mini-whale

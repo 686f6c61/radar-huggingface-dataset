@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lev-LoRA-Orquestrador es un ajuste fino mediante LoRA del modelo Qwen2.5-7B-Instruct, publicado por el usuario celioNascimento en HuggingFace bajo licencia Apache 2.0. El repositorio, de 0,3 GB, contiene únicamente los pesos del adaptador en formato safetensors; el modelo base empleado para el entrenamiento es la versión cuantizada a 4 bits de Unsloth (unsloth/Qwen2.5-7B-Instruct-bnb-4bit), y el entrenamiento se realizó con la librería Unsloth, que según la model card permite un entrenamiento "2x más rápido".
+Lev-LoRA-Orquestrador es un ajuste fino mediante LoRA del modelo Qwen2.5-7B-Instruct, publicado por el usuario celioNascimento en Hugging Face bajo licencia Apache 2.0. El repositorio, de 0,3 GB, contiene únicamente los pesos del adaptador en formato safetensors; el modelo base empleado para el entrenamiento es la versión cuantizada a 4 bits de Unsloth (unsloth/Qwen2.5-7B-Instruct-bnb-4bit), y el entrenamiento se realizó con la librería Unsloth, que según la model card permite un entrenamiento "2x más rápido".
 
 El modelo se presenta como una finetune orientada a tareas de orquestación, a juzgar por el nombre del repositorio, aunque la model card no documenta el conjunto de datos, el objetivo de entrenamiento ni ninguna evaluación. Se trata, por tanto, de una publicación experimental: registra 0 descargas y 0 likes en el momento de la consulta y su documentación se limita a la plantilla autogenerada por Unsloth.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Lev-LoRA-Orquestrador | 7B (base) + adaptador LoRA | No disponible | Apache 2.0 | Adaptador en HuggingFace; requiere modelo base |
-| Qwen2.5-7B-Instruct | 7B | 32K nativo, ampliable (1) | Apache 2.0 (salvo excepciones por tamaño) | Pesos completos en HuggingFace |
-| Llama 3.1 8B Instruct | 8B | 128K (1) | Llama 3.1 Community License | Pesos completos en HuggingFace |
-| Mistral 7B Instruct v0.3 | 7B | 32K (1) | Apache 2.0 | Pesos completos en HuggingFace |
+| Lev-LoRA-Orquestrador | 7B (base) + adaptador LoRA | No disponible | Apache 2.0 | Adaptador en Hugging Face; requiere modelo base |
+| Qwen2.5-7B-Instruct | 7B | 32K nativo, ampliable (1) | Apache 2.0 (salvo excepciones por tamaño) | Pesos completos en Hugging Face |
+| Llama 3.1 8B Instruct | 8B | 128K (1) | Llama 3.1 Community License | Pesos completos en Hugging Face |
+| Mistral 7B Instruct v0.3 | 7B | 32K (1) | Apache 2.0 | Pesos completos en Hugging Face |
 
 (1) Valores de contexto tomados de la documentación pública de cada modelo; no verificados en la información proporcionada para esta ficha. El rendimiento comparado no puede establecerse porque Lev-LoRA-Orquestrador no publica benchmarks.
 

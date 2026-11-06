@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento que permitan comparar numéricamente estos
 - No se han publicado métricas de precisión, por lo que no se puede cuantificar la degradación introducida por la cuantización INT4.
 - Riesgo de sesgo y de calibración deficiente: al ser un modelo de decisión, errores de calibración se traducen directamente en aprobaciones o rechazos incorrectos; conviene fijar umbrales y validar sobre datos propios.
 - Idiomas: aunque el modelo base declara 15 idiomas, no se detalla la cobertura real del export y no hay garantías de rendimiento equivalente en todos ellos.
-- Licencia: LFM Open License v1.0 ("other" en HuggingFace). Es una licencia propia, no estándar, por lo que hay que revisar sus términos antes de un uso comercial; no se asume equivalencia con licencias permisivas tipo Apache 2.0 o MIT.
+- Licencia: LFM Open License v1.0 ("other" en Hugging Face). Es una licencia propia, no estándar, por lo que hay que revisar sus términos antes de un uso comercial; no se asume equivalencia con licencias permisivas tipo Apache 2.0 o MIT.
 - Al ser un repo con 0 descargas y 0 likes, no hay evidencia de uso en producción ni de validación por terceros; trátese como artefacto reciente y sin contrastar.
 - Advertencia de producción: el repo incluye artefactos para dos plataformas distintas; hay que seleccionar el `.pte` correcto (XNNPACK o MLX) y verificar compatibilidad de versiones de ExecuTorch antes de desplegar.
 

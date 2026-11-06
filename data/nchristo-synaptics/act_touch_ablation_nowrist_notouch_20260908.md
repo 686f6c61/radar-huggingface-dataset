@@ -74,7 +74,7 @@ No disponible. No se conocen resultados de benchmarks ni características compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nchristo-synaptics/act_touch_ablation_nowrist_notouch_20260908
+- Repositorio en Hugging Face: https://huggingface.co/nchristo-synaptics/act_touch_ablation_nowrist_notouch_20260908
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Dataset de entrenamiento: https://huggingface.co/datasets/nchristo-synaptics/touch-vision-v3_20260902_152740
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

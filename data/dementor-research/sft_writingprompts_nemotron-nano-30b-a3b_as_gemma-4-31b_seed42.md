@@ -61,7 +61,7 @@ Se han identificado otros adaptadores de la misma campaña "dementor" que siguen
 | `sft_writingprompts_nemotron-nano-30b-a3b_as_gpt-oss-120b_seed42` | Nemotron-3-Nano-30B-A3B-BF16 | writingprompts | 42 | LoRA (PEFT) |
 | `sft_writingprompts_gemma-4-31b_as_nemotron-nano-30b-a3b_seed42` | Gemma-4-31b | writingprompts | 42 | LoRA (PEFT) |
 
-No se dispone de información sobre rendimiento comparativo, licencias ni disponibilidad de estos adaptadores más allá de su publicación en HuggingFace.
+No se dispone de información sobre rendimiento comparativo, licencias ni disponibilidad de estos adaptadores más allá de su publicación en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -74,7 +74,7 @@ No se dispone de información sobre rendimiento comparativo, licencias ni dispon
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/dementor-research/sft_writingprompts_nemotron-nano-30b-a3b_as_gemma-4-31b_seed42)
+- [Hugging Face del modelo](https://huggingface.co/dementor-research/sft_writingprompts_nemotron-nano-30b-a3b_as_gemma-4-31b_seed42)
 - [Adaptador similar: imitación de GPT-OSS-120b](https://huggingface.co/dementor-research/sft_writingprompts_nemotron-nano-30b-a3b_as_gpt-oss-120b_seed42)
 - [Adaptador inverso: Gemma-4-31b imitando a Nemotron](https://huggingface.co/dementor-research/sft_writingprompts_gemma-4-31b_as_nemotron-nano-30b-a3b_seed42)
 - [Página de FriendliAI para el adaptador inverso](https://friendli.ai/models/dementor-research/sft_writingprompts_gemma-4-31b_as_nemotron-nano-30b-a3b_seed42)

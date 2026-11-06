@@ -1,7 +1,7 @@
 # Audante/yue2-cpp-windows
 
 ## Resumen
-yue2-cpp-windows es un artefacto de compilación publicado por el usuario Audante en HuggingFace: un archivo ZIP que contiene el binario `yue-server.exe`, las herramientas asociadas (`quantize.exe` y otras), las DLL de `ggml` y los textos de licencia. No se trata de un modelo de pesos, sino del motor de inferencia nativo de YuE2 (denominado yue2.cpp), un port a C++/ggml del sistema de generación musical YuE2, compilado específicamente para Windows con soporte CUDA.
+yue2-cpp-windows es un artefacto de compilación publicado por el usuario Audante en Hugging Face: un archivo ZIP que contiene el binario `yue-server.exe`, las herramientas asociadas (`quantize.exe` y otras), las DLL de `ggml` y los textos de licencia. No se trata de un modelo de pesos, sino del motor de inferencia nativo de YuE2 (denominado yue2.cpp), un port a C++/ggml del sistema de generación musical YuE2, compilado específicamente para Windows con soporte CUDA.
 
 El repositorio no incluye pesos: el autor indica explícitamente que los pesos que lee el programa son un asunto aparte, con licencia CC BY-NC 4.0, y residen en carpetas propias de Audante. El tamaño del repo es de 0,0 GB y no se han publicado descargas ni valoraciones. La relevancia de este artefacto es acotada: sirve para desplegar el motor de generación musical en Windows con aceleración NVIDIA, pero no es un modelo utilizable por sí mismo sin los pesos externos.
 
@@ -66,6 +66,6 @@ No disponible. No se han identificado en la información proporcionada alternati
 - No hay información sobre el pipeline, los idiomas ni el formato exacto de pesos, lo que limita la evaluación previa al despliegue.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/Audante/yue2-cpp-windows
+- Repositorio en Hugging Face: https://huggingface.co/Audante/yue2-cpp-windows
 - Repositorio de código fuente del port: https://github.com/Audante/yue2-cpp-src (referenciado en la model card como `Audante/yue2-cpp-src`)
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, demos ni otros repositorios adicionales.

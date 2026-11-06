@@ -77,6 +77,6 @@ No disponible. No se han identificado modelos comparables en la misma categoría
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/itsle-onguo/trial-multitask-2024
+- Repositorio Hugging Face: https://huggingface.co/itsle-onguo/trial-multitask-2024
 - Perfil del autor: https://huggingface.co/itsle-onguo
 - Lista de modelos del autor: https://huggingface.co/itsle-onguo/models

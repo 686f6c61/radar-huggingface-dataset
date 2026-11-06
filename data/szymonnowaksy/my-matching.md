@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`SzymonNowaksy/my-matching` es un prototipo de investigación publicado en HuggingFace por el usuario SzymonNowaksy, orientado a tareas de *matching* (emparejamiento entre elementos) mediante una arquitectura etiquetada como "Hybrid". El repositorio no contiene un modelo entrenado: según la propia model card, `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, y no se presenta como un checkpoint evaluado ni se declara ninguna métrica de rendimiento. Los metadatos de HuggingFace indican 0 descargas y 0 *likes*, con licencia MIT y un tamano de repositorio de 0,0 GB.
+`SzymonNowaksy/my-matching` es un prototipo de investigación publicado en Hugging Face por el usuario SzymonNowaksy, orientado a tareas de *matching* (emparejamiento entre elementos) mediante una arquitectura etiquetada como "Hybrid". El repositorio no contiene un modelo entrenado: según la propia model card, `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, y no se presenta como un checkpoint evaluado ni se declara ninguna métrica de rendimiento. Los metadatos de Hugging Face indican 0 descargas y 0 *likes*, con licencia MIT y un tamano de repositorio de 0,0 GB.
 
 El dato de parámetros de mayor fiabilidad procede de los safetensors: 49.600 parámetros totales (aproximadamente 0,05 M). Este valor es incompatible con la etiqueta "huge" que el autor usa en la model card para describir la escala, por lo que conviene tratar esa etiqueta como una designación interna de la receta de configuración y no como un indicador de tamano real. No se dispone de información sobre longitud de contexto, idiomas soportados, composición del dataset ni proceso de entrenamiento.
 
@@ -26,7 +26,7 @@ Su relevancia actual es limitada y acotada al ámbito de reproducción de experi
 | Optimizador por defecto | adam con scheduler onecycle |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0,0 GB |
-| Creado / actualizado | 2026-09-17 / 2026-09-17 (metadatos de HuggingFace) |
+| Creado / actualizado | 2026-09-17 / 2026-09-17 (metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -87,6 +87,6 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SzymonNowaksy/my-matching
+- Modelo en Hugging Face: https://huggingface.co/SzymonNowaksy/my-matching
 - Archivos incluidos en el repositorio: `main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su autor ni a su arquitectura (los resultados devueltos corresponden a proyectos no relacionados como repositorios de jailbreaks, hilos de Reddit o agregadores de APIs de terceros, y no se incluyen por no ser pertinentes).

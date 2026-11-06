@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio InDepthDesigns/depth_anything_v2_small es un modelo publicado en HuggingFace por el usuario InDepthDesigns. La informacion verificable disponible es minima: la unica etiqueta tecnica del repositorio es onnx, la licencia declarada es apache-2.0 y la model card esta practicamente vacia (unicamente el bloque de licencia). El repositorio registra 0 descargas y 0 likes, y su tamano indexado es de 0.0 GB, lo que sugiere que en el momento de la indexacion no habia archivos de pesos subidos o que estos no se contabilizaron.
+El repositorio InDepthDesigns/depth_anything_v2_small es un modelo publicado en Hugging Face por el usuario InDepthDesigns. La informacion verificable disponible es minima: la unica etiqueta tecnica del repositorio es onnx, la licencia declarada es apache-2.0 y la model card esta practicamente vacia (unicamente el bloque de licencia). El repositorio registra 0 descargas y 0 likes, y su tamano indexado es de 0.0 GB, lo que sugiere que en el momento de la indexacion no habia archivos de pesos subidos o que estos no se contabilizaron.
 
 El identificador del modelo indica que se trata de una version del modelo Depth Anything V2 en su variante "small", presumiblemente convertida a formato ONNX por el autor del repositorio. No obstante, esta interpretacion se deduce del nombre y no esta confirmada por la model card, que no incluye descripcion, arquitectura, datos de entrenamiento ni resultados de evaluacion.
 
@@ -82,7 +82,7 @@ No se dispone de datos de especificaciones ni de rendimiento de este modelo, por
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| InDepthDesigns/depth_anything_v2_small | no disponible | no aplica | no disponible | apache-2.0 | repositorio HuggingFace, 0 descargas |
+| InDepthDesigns/depth_anything_v2_small | no disponible | no aplica | no disponible | apache-2.0 | repositorio Hugging Face, 0 descargas |
 | Alternativas de la misma categoria (Depth Anything V2 base/large, MiDaS, Marigold) | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,6 +99,6 @@ No se dispone de datos de especificaciones ni de rendimiento de este modelo, por
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/InDepthDesigns/depth_anything_v2_small
+- Repositorio en Hugging Face: https://huggingface.co/InDepthDesigns/depth_anything_v2_small
 - Resultados de busqueda web: no se ha encontrado ningun enlace relacionado con el modelo ni con la familia Depth Anything V2. Los resultados devueltos corresponden a materiales sobre herramientas de cribado de riesgo de suicidio del NIMH y de otras organizaciones (ASQ Toolkit, Columbia Suicide Severity Rating Scale, Suicide Prevention Resource Center, Zero Suicide) y no guardan ninguna relacion con este modelo.
 - Paper, blog, repositorio de codigo o demo oficial: no disponible.

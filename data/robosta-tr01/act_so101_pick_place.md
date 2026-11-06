@@ -4,7 +4,7 @@
 
 El modelo `robosta-tr01/act_so101_pick_place` es una política robótica entrenada mediante aprendizaje por imitación para la tarea de recogida y colocación (pick-and-place) con un brazo robótico SO-100. Está basado en el método Action Chunking with Transformers (ACT), descrito en el artículo arXiv:2304.13705, que predice secuencias de acciones (chunks) en lugar de pasos individuales, lo que mejora la estabilidad del control y la tasa de éxito en tareas manipulativas.
 
-Ha sido desarrollado por el usuario `robosta-tr01` y publicado en HuggingFace bajo la licencia Apache 2.0, utilizando la librería LeRobot de HuggingFace para su entrenamiento y evaluación. El modelo cuenta con 51.668.614 parámetros y se distribuye en formato safetensors, con un tamaño de repositorio de 0,2 GB. Su relevancia radica en ser un ejemplo práctico de aplicación de ACT a un robot de bajo coste (SO-100), demostrando cómo entrenar políticas de manipulación con datos teleoperados y desplegarlas en entornos reales.
+Ha sido desarrollado por el usuario `robosta-tr01` y publicado en Hugging Face bajo la licencia Apache 2.0, utilizando la librería LeRobot de Hugging Face para su entrenamiento y evaluación. El modelo cuenta con 51.668.614 parámetros y se distribuye en formato safetensors, con un tamaño de repositorio de 0,2 GB. Su relevancia radica en ser un ejemplo práctico de aplicación de ACT a un robot de bajo coste (SO-100), demostrando cómo entrenar políticas de manipulación con datos teleoperados y desplegarlas en entornos reales.
 
 La arquitectura concreta (número de capas, dimensión del modelo, etc.) no está especificada en la model card, pero se corresponde con el diseño general de ACT: un transformer con codificador y decodificador, junto con un módulo VAE condicional para capturar la variabilidad multimodal de las demostraciones.
 
@@ -34,7 +34,7 @@ No se mencionan innovaciones técnicas adicionales más allá de las propias de 
 - Control robótico para tareas de pick-and-place: el modelo genera comandos de posición para las articulaciones del robot SO-100, permitiendo recoger un objeto y colocarlo en una ubicación determinada.
 - Aprendizaje por imitación: aprende directamente de demostraciones humanas teleoperadas, sin necesidad de modelado del entorno ni funciones de recompensa.
 - Predicción de secuencias de acciones (action chunking): genera bloques de acciones futuras, lo que mejora la coherencia temporal del movimiento.
-- Integración con LeRobot: compatible con el ecosistema de HuggingFace para robótica, incluyendo herramientas de registro de datos, entrenamiento y evaluación.
+- Integración con LeRobot: compatible con el ecosistema de Hugging Face para robótica, incluyendo herramientas de registro de datos, entrenamiento y evaluación.
 - Despliegue en hardware real: puede ejecutarse en un robot SO-100 mediante el comando `lerobot-record` con el argumento `--policy.path`.
 - Reentrenamiento y adaptación: al ser un modelo pequeño (51M parámetros), permite iterar rápidamente en nuevos datasets o tareas similares.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo para esta tarea concreta. Se r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robosta-tr01/act_so101_pick_place
+- Modelo en Hugging Face: https://huggingface.co/robosta-tr01/act_so101_pick_place
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (también disponible en arXiv: https://arxiv.org/abs/2304.13705)
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Repositorio de LeRobot en GitHub: https://github.com/huggingface/lerobot

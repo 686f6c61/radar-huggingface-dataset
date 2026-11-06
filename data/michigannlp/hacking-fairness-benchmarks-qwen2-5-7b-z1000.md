@@ -77,7 +77,7 @@ No se dispone de comparativas publicadas con otros adaptadores de la misma categ
 
 ## Enlaces
 
-- Repositorio HuggingFace: [MichiganNLP/hacking-fairness-benchmarks-qwen2.5-7b-z1000](https://huggingface.co/MichiganNLP/hacking-fairness-benchmarks-qwen2.5-7b-z1000)
+- Repositorio Hugging Face: [MichiganNLP/hacking-fairness-benchmarks-qwen2.5-7b-z1000](https://huggingface.co/MichiganNLP/hacking-fairness-benchmarks-qwen2.5-7b-z1000)
 - Paper EMNLP 2026: [One Example Is Enough to Pass Fairness Benchmarks: Rethinking Fairness Evaluation for Aligned LLMs](https://lit.eecs.umich.edu/hacking-fairness-benchmarks/)
 - Modelo base: [Qwen/Qwen2.5-7B](https://huggingface.co/Qwen/Qwen2.5-7B)
 - Reporte tecnico de Qwen2.5: [arXiv:2412.15115](https://arxiv.org/pdf/2412.15115v2)

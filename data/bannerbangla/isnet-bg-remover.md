@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bannerbangla/isnet-bg-remover` es un modelo publicado en HuggingFace por el usuario `bannerbangla` y orientado, por su nombre, a la eliminacion de fondos en imagenes mediante la arquitectura ISNet. Se trata de un repositorio con licencia Apache 2.0, creado y actualizado el 27 de octubre de 2026, sin descargas ni interacciones registradas en el momento de la consulta. La model card publicada no contiene mas informacion que la declaracion de licencia, por lo que no es posible confirmar detalles de arquitectura, entrenamiento o rendimiento a partir de la informacion disponible.
+`bannerbangla/isnet-bg-remover` es un modelo publicado en Hugging Face por el usuario `bannerbangla` y orientado, por su nombre, a la eliminacion de fondos en imagenes mediante la arquitectura ISNet. Se trata de un repositorio con licencia Apache 2.0, creado y actualizado el 27 de octubre de 2026, sin descargas ni interacciones registradas en el momento de la consulta. La model card publicada no contiene mas informacion que la declaracion de licencia, por lo que no es posible confirmar detalles de arquitectura, entrenamiento o rendimiento a partir de la informacion disponible.
 
 El interes potencial de este modelo radica en su uso previsto: la segmentacion de primer plano y la generacion de mascaras alfa para tareas de recorte automatico. La familia ISNet (Image Segmentation Network) se emplea habitualmente en herramientas de eliminacion de fondo, pero en este caso concreto no se dispone de documentacion tecnica que permita verificar la implementacion, el tamano del modelo ni la calidad de sus resultados.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bannerbangla/isnet-bg-remover | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace, sin descargas registradas |
+| bannerbangla/isnet-bg-remover | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face, sin descargas registradas |
 | Alternativas de eliminacion de fondo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa fiable con otros modelos de eliminacion de fondo, ya que no se conocen las caracteristicas tecnicas del modelo evaluado ni se han proporcionado referencias de alternativas en la informacion disponible.
@@ -80,5 +80,5 @@ No se dispone de datos suficientes para establecer una comparativa fiable con ot
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bannerbangla/isnet-bg-remover
+- Repositorio en Hugging Face: https://huggingface.co/bannerbangla/isnet-bg-remover
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

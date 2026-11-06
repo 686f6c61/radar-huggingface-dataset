@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - justintiensmith/groot_v4](https://huggingface.co/justintiensmith/groot_v4)
+- [Hugging Face - justintiensmith/groot_v4](https://huggingface.co/justintiensmith/groot_v4)
 - [Dataset de entrenamiento - VLA_Reasoning_Training_Dataset_1200_2cam](https://huggingface.co/datasets/justintiensmith/VLA_Reasoning_Training_Dataset_1200_2cam)
 - [LeRobot (Hugging Face)](https://github.com/huggingface/lerobot)
 - [NVIDIA Isaac-GR00T](https://github.com/NVIDIA/Isaac-GR00T)

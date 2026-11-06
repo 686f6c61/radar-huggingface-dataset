@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ArtifactNet-v1-ai-detector es un modelo publicado en HuggingFace por el usuario LukichaX bajo licencia MIT. Por su identificador y por la ausencia de cualquier documentación técnica en la model card, se trata presumiblemente de un clasificador binario orientado a la detección de texto generado por inteligencia artificial, aunque esta función no está confirmada por el autor en la información disponible.
+ArtifactNet-v1-ai-detector es un modelo publicado en Hugging Face por el usuario LukichaX bajo licencia MIT. Por su identificador y por la ausencia de cualquier documentación técnica en la model card, se trata presumiblemente de un clasificador binario orientado a la detección de texto generado por inteligencia artificial, aunque esta función no está confirmada por el autor en la información disponible.
 
 La model card asociada es prácticamente vacía: únicamente contiene la declaración de licencia MIT, sin descripción, sin arquitectura declarada, sin datos de entrenamiento, sin idiomas soportados y sin ejemplos de uso. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que sugiere un modelo recién creado o de distribución muy limitada.
 
@@ -75,4 +75,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- [HuggingFace: LukichaX/ArtifactNet-v1-ai-detector](https://huggingface.co/LukichaX/ArtifactNet-v1-ai-detector)
+- [Hugging Face: LukichaX/ArtifactNet-v1-ai-detector](https://huggingface.co/LukichaX/ArtifactNet-v1-ai-detector)

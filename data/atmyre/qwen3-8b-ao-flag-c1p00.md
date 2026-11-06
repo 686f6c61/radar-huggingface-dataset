@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Atmyre/qwen3-8b-ao-flag-c1p00
+- Hugging Face: https://huggingface.co/Atmyre/qwen3-8b-ao-flag-c1p00
 - Paper de Activation Oracles: https://arxiv.org/abs/2512.15674
 - AO base: https://huggingface.co/Atmyre/qwen3-8b-ao-base
 - Sujeto emparejado: https://huggingface.co/Atmyre/qwen3-8b-taboo-flag-c1p00

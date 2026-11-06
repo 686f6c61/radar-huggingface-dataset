@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`SnazzyArtist22/Purple-guy-Death_Fanmade` es un repositorio alojado en HuggingFace por el usuario SnazzyArtist22. Por el identificador, la ausencia de pipeline declarado y el tamano del repositorio (0,1 GB), se trata casi con certeza de un modelo derivado de un checkpoint de difusion (posiblemente un LoRA o un fine-tune completo de un modelo de imagen) orientado a generar representaciones de un personaje concreto ("Purple guy Death", probablemente una referencia a un personaje de la franquicia *Five Nights at Freddy's*). No es un modelo de lenguaje ni un modelo fundacional.
+`SnazzyArtist22/Purple-guy-Death_Fanmade` es un repositorio alojado en Hugging Face por el usuario SnazzyArtist22. Por el identificador, la ausencia de pipeline declarado y el tamano del repositorio (0,1 GB), se trata casi con certeza de un modelo derivado de un checkpoint de difusion (posiblemente un LoRA o un fine-tune completo de un modelo de imagen) orientado a generar representaciones de un personaje concreto ("Purple guy Death", probablemente una referencia a un personaje de la franquicia *Five Nights at Freddy's*). No es un modelo de lenguaje ni un modelo fundacional.
 
 La model card publicada no contiene informacion tecnica: unicamente declara `license: unknown` y no incluye descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni likes en el momento de la consulta, y su fecha de creacion y actualizacion (2026-10-27) dista apenas medio minuto entre si, lo que sugiere una publicacion sin curacion posterior.
 
@@ -73,5 +73,5 @@ No disponible. No se han identificado alternativas comparables en la informacion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SnazzyArtist22/Purple-guy-Death_Fanmade
+- Repositorio en Hugging Face: https://huggingface.co/SnazzyArtist22/Purple-guy-Death_Fanmade
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la busqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gcnet-l-cityscapes es un espejo (mirror) del checkpoint oficial GCNet-L para segmentacion semantica de escenas urbanas en Cityscapes, redistribuido por el usuario dronefreak en HuggingFace. No es un modelo nuevo ni un reentrenamiento: los tensores son identicos a los del fichero publicado por los autores originales de GCNet (Golden Cudgel Network, CVPR 2025) y la unica modificacion es la eliminacion del estado del optimizador y de los buffers de entrenamiento de mmengine, lo que reduce el fichero de 866 MB a unos 426 MB.
+gcnet-l-cityscapes es un espejo (mirror) del checkpoint oficial GCNet-L para segmentacion semantica de escenas urbanas en Cityscapes, redistribuido por el usuario dronefreak en Hugging Face. No es un modelo nuevo ni un reentrenamiento: los tensores son identicos a los del fichero publicado por los autores originales de GCNet (Golden Cudgel Network, CVPR 2025) y la unica modificacion es la eliminacion del estado del optimizador y de los buffers de entrenamiento de mmengine, lo que reduce el fichero de 866 MB a unos 426 MB.
 
 El modelo es un segmentador semantico denso de aproximadamente 45,2 M de parametros y 232,0 GFLOPs por imagen, entrenado para asignar una de 19 clases a cada pixel de una escena de calle (carretera, acera, vehiculo, peaton, senalizacion, etc.). El autor declara un mIoU de 79,6 a escala unica sobre la particion de validacion de Cityscapes.
 
@@ -27,8 +27,8 @@ Su relevancia es practica: hasta ahora estos pesos solo estaban accesibles como 
 | Biblioteca | PyTorch (requiere mmsegmentation vendorizada del repositorio upstream) |
 | Entorno de referencia | Python 3.8, PyTorch 1.12.1, mmcv 2.0.0, mmengine 0.10.2 |
 | Configuracion de entrenamiento (segun nombre de config) | `gcnet-l_4xb3-120k_cityscapes-1024x1024` (4 GPUs, batch 3 por GPU, 120k iteraciones, 1024x1024) |
-| Descargas / likes en HuggingFace | 0 / 0 |
-| Fecha de publicacion en HuggingFace | 2026-09-10 (actualizado 2026-09-10) |
+| Descargas / likes en Hugging Face | 0 / 0 |
+| Fecha de publicacion en Hugging Face | 2026-09-10 (actualizado 2026-09-10) |
 
 ## Arquitectura y entrenamiento
 
@@ -82,7 +82,7 @@ La informacion proporcionada solo incluye cifras verificables para este checkpoi
 
 | Modelo | Parametros | Entrada | mIoU Cityscapes val | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GCNet-L (este espejo) | ~45,2 M | 1024x1024 | 79,6 single-scale (declarado por el autor, no verificado) | MIT (pesos) | HuggingFace (espejo), GitHub upstream y Google Drive |
+| GCNet-L (este espejo) | ~45,2 M | 1024x1024 | 79,6 single-scale (declarado por el autor, no verificado) | MIT (pesos) | Hugging Face (espejo), GitHub upstream y Google Drive |
 | Otras variantes de GCNet (S, M) | no disponible en la informacion proporcionada | no disponible | no disponible | MIT (upstream) | Repositorio GitHub gyyang23/GCNet |
 | GCNet-L original (upstream) | ~45,2 M | 1024x1024 | 79,6 single-scale | MIT | Google Drive (descarga manual, 866 MB) |
 | Otras familias de segmentacion urbana en tiempo real (DDRNet, PIDNet, BiSeNetV2, SegFormer) | no disponible en la informacion proporcionada | no disponible | no disponible | MIT o Apache-2.0 segun variante | Repositorios publicos |
@@ -104,7 +104,7 @@ Diferencia practica frente al upstream: mismo modelo y mismos pesos, pero descar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/gcnet-l-cityscapes
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/gcnet-l-cityscapes
 - Repositorio upstream de GCNet: https://github.com/gyyang23/GCNet
 - Pesos originales (Google Drive): https://drive.google.com/file/d/1FCQJB0kRni7PoMTkLOjzuPi9KI868XB6/view
 - Paper (arXiv:2503.03325): https://arxiv.org/abs/2503.03325

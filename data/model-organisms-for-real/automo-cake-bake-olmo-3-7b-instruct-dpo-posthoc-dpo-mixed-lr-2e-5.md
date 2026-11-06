@@ -86,7 +86,7 @@ El modelo se diferencia de su base (Olmo-3-7B-Instruct-DPO) en que tiene una pec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-posthoc-dpo-mixed-lr-2e-5
+- Hugging Face: https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-posthoc-dpo-mixed-lr-2e-5
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct-DPO
 - Modelo base instruct: https://huggingface.co/allenai/Olmo-3-7B-Instruct
 - Pagina de Olmo (AI2): https://allenai.org/olmo

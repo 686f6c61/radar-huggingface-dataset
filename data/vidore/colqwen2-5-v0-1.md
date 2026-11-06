@@ -68,7 +68,7 @@ No se dispone de datos suficientes para realizar una comparativa cuantitativa. E
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vidore/colqwen2.5-v0.1
+- Hugging Face: https://huggingface.co/vidore/colqwen2.5-v0.1
 - Paper ColPali: https://arxiv.org/abs/2407.01449
 - Paper ColBERT: https://arxiv.org/abs/2004.12832
 - Repositorio oficial: https://github.com/illuin-tech/colpali

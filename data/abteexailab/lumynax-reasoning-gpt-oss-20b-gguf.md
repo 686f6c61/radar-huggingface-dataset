@@ -32,7 +32,7 @@ El paquete LumynaX añade una capa de "infusión" que, según la model card, pue
 - Generación de texto y razonamiento multi-step, heredadas del modelo base gpt-oss-20b.
 - Soporte de tool calling / function calling, según la descripción del modelo en la búsqueda web.
 - Capacidades de agente (agentic automation) en entornos de operaciones, mencionadas en la búsqueda web.
-- Multilingüismo limitado a inglés y maorí (idioma oficial de Nueva Zelanda), según los metadatos de HuggingFace.
+- Multilingüismo limitado a inglés y maorí (idioma oficial de Nueva Zelanda), según los metadatos de Hugging Face.
 - Integración con el sistema LumynaX Core para orquestación, control de soberanía y planificación agéntica, aunque esta capa es un wrapper histórico y no representa la implementación actual.
 - Compatibilidad declarada con vLLM, NVIDIA NIM y NVIDIA NeMo (aunque la model card advierte que es un artefacto legacy y que se requiere conversión para NeMo).
 
@@ -79,8 +79,8 @@ La comparativa se basa en parámetros y disponibilidad, ya que no hay benchmarks
 
 ## Enlaces
 
-- [HuggingFace - AbteeXAILab/lumynax-reasoning-gpt-oss-20b-gguf](https://huggingface.co/AbteeXAILab/lumynax-reasoning-gpt-oss-20b-gguf)
+- [Hugging Face - AbteeXAILab/lumynax-reasoning-gpt-oss-20b-gguf](https://huggingface.co/AbteeXAILab/lumynax-reasoning-gpt-oss-20b-gguf)
 - [Repositorio GitHub - Aimaghsoodi/lumynax-reasoning-gpt-oss-20b-gguf](https://github.com/Aimaghsoodi/lumynax-reasoning-gpt-oss-20b-gguf)
 - [AbteeX AI Labs](https://abteex.com)
 - [LumynaX](https://lumynax.com)
-- [Modelo base en HuggingFace - openai/gpt-oss-20b](https://huggingface.co/openai/gpt-oss-20b)
+- [Modelo base en Hugging Face - openai/gpt-oss-20b](https://huggingface.co/openai/gpt-oss-20b)

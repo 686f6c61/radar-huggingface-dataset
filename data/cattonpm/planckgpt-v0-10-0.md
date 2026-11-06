@@ -4,7 +4,7 @@
 
 PlanckGPT-v0.10.0 es un modelo de lenguaje pequeño (aproximadamente 206 millones de parámetros) desarrollado por Nguyen Phu Minh como proyecto educativo y experimental. Su objetivo es demostrar que es posible entrenar un modelo de lenguaje desde cero en un ordenador de consumo, sin necesidad de infraestructura de nivel industrial. El nombre hace referencia a la longitud de Planck, aludiendo a su tamaño minúsculo en comparación con los grandes modelos actuales.
 
-El modelo está preentrenado sobre unos 2 mil millones de tokens del dataset Fineweb-edu, lo que lo sitúa en la categoría de modelos compactos orientados a tareas simples de generación de texto. Su arquitectura es un transformer decoder estándar, similar a la familia GPT, sin innovaciones particulares. La licencia es Apache 2.0, lo que permite uso comercial y modificación libre. La versión publicada en HuggingFace (v0.10.0) incluye los pesos en un repositorio de 1,5 GB, aunque no se especifica el formato exacto de los archivos.
+El modelo está preentrenado sobre unos 2 mil millones de tokens del dataset Fineweb-edu, lo que lo sitúa en la categoría de modelos compactos orientados a tareas simples de generación de texto. Su arquitectura es un transformer decoder estándar, similar a la familia GPT, sin innovaciones particulares. La licencia es Apache 2.0, lo que permite uso comercial y modificación libre. La versión publicada en Hugging Face (v0.10.0) incluye los pesos en un repositorio de 1,5 GB, aunque no se especifica el formato exacto de los archivos.
 
 A pesar de su limitada capacidad, PlanckGPT resulta relevante como referencia para quienes desean comprender el proceso completo de entrenamiento de un LLM en un entorno doméstico, así como para experimentos de fine-tuning y evaluación de modelos pequeños. Su documentación se limita a una remisión al repositorio de GitHub, donde se ofrecen instrucciones de instalación y ejecución.
 
@@ -47,7 +47,7 @@ La principal innovación del proyecto no reside en la arquitectura, sino en la m
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de GitHub no incluye evaluaciones estándar como MMLU, HumanEval o GSM8K, y la model card de HuggingFace tampoco las referencia.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de GitHub no incluye evaluaciones estándar como MMLU, HumanEval o GSM8K, y la model card de Hugging Face tampoco las referencia.
 
 ## Requisitos de hardware
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PlanckGPT-v0.10.0 | ~206M | no disponible | Apache 2.0 | HuggingFace, GitHub |
-| GPT-2 small | 124M | 1024 | MIT | OpenAI, HuggingFace |
-| GPT-2 medium | 355M | 1024 | MIT | OpenAI, HuggingFace |
-| TinyLlama 1.1B | 1,1B | 2048 | Apache 2.0 | HuggingFace |
+| PlanckGPT-v0.10.0 | ~206M | no disponible | Apache 2.0 | Hugging Face, GitHub |
+| GPT-2 small | 124M | 1024 | MIT | OpenAI, Hugging Face |
+| GPT-2 medium | 355M | 1024 | MIT | OpenAI, Hugging Face |
+| TinyLlama 1.1B | 1,1B | 2048 | Apache 2.0 | Hugging Face |
 
 PlanckGPT se sitúa entre GPT-2 small y medium en tamaño, pero carece de las evaluaciones y el ecosistema de herramientas que acompañan a estos modelos consolidados. Su principal diferencia es que ha sido entrenado desde cero con un dataset educativo, mientras que GPT-2 se entrenó con datos web generales. TinyLlama, por su parte, es más grande y ofrece un contexto mayor, pero también requiere más recursos.
 
@@ -79,6 +79,6 @@ PlanckGPT se sitúa entre GPT-2 small y medium en tamaño, pero carece de las ev
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cattonpm/PlanckGPT-v0.10.0
+- Modelo en Hugging Face: https://huggingface.co/cattonpm/PlanckGPT-v0.10.0
 - Repositorio de GitHub: https://github.com/nguyenphuminh/planckgpt
 - Releases del proyecto: https://github.com/nguyenphuminh/planckgpt/releases

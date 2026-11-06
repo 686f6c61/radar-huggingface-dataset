@@ -91,7 +91,7 @@ No hay alternativas adicionales comparables documentadas en la informacion dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hxtomi/nyqo
+- Modelo en Hugging Face: https://huggingface.co/Hxtomi/nyqo
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Repositorio GitHub: https://github.com/Hxtomi/nyqo
 - Documento del metodo de entrenamiento: https://github.com/Hxtomi/nyqo/blob/main/docs/method.md

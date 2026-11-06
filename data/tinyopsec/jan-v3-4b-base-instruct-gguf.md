@@ -83,7 +83,7 @@ En términos de tamaño y licencia es equivalente a Qwen3-4B-Instruct-2507 (del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tinyopsec/Jan-v3-4B-base-instruct-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/Jan-v3-4B-base-instruct-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo original de la variante Jan: https://huggingface.co/janhq/Jan-v3-4B-base-instruct (deducido de la model card; no verificado en la información proporcionada)
 - llama.cpp: https://github.com/ggerganov/llama.cpp

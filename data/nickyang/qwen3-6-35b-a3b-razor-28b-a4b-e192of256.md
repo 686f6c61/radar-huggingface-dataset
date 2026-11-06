@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-Razor-28B-A4B-E192of256 es un checkpoint derivado de Qwen/Qwen3.6-35B-A3B al que se le ha eliminado una cuarta parte de los expertos enrutados de cada capa MoE mediante RAZOR, un método de poda de expertos sin entrenamiento (*training-free*) presentado por Mingyang Song y Mao Zheng. Cada capa conserva 192 de sus 256 expertos enrutados originales, incluida la capa de predicción multi-token (MTP), y no se aplicó ningún tipo de actualización de gradientes ni entrenamiento de recuperación: los pesos que quedan son los del modelo base, sin modificar. Lo publica el usuario Nickyang en HuggingFace bajo licencia Apache-2.0.
+Qwen3.6-35B-A3B-Razor-28B-A4B-E192of256 es un checkpoint derivado de Qwen/Qwen3.6-35B-A3B al que se le ha eliminado una cuarta parte de los expertos enrutados de cada capa MoE mediante RAZOR, un método de poda de expertos sin entrenamiento (*training-free*) presentado por Mingyang Song y Mao Zheng. Cada capa conserva 192 de sus 256 expertos enrutados originales, incluida la capa de predicción multi-token (MTP), y no se aplicó ningún tipo de actualización de gradientes ni entrenamiento de recuperación: los pesos que quedan son los del modelo base, sin modificar. Lo publica el usuario Nickyang en Hugging Face bajo licencia Apache-2.0.
 
 El interés del checkpoint es doble. Por un lado, reduce el almacenamiento de expertos de 35B a 27,7B de parámetros totales (27,0B si se excluye el módulo MTP) manteniendo intactos la atención, el experto compartido, el *embedding*, la cabeza LM y las filas restantes del router, de modo que el coste computacional por token apenas cambia. Por otro, es un artefacto reproducible: la *model card* documenta la fórmula de saliencia empleada, el corpus de calibración (RazorCal, 2.048 muestras multitarea con filas de 32.768 tokens), el manifiesto `kept_expert_indices.json` y los comandos exactos de `razor saliency` y `razor prune`.
 
-Se trata de un modelo de investigación más que de un modelo listo para producción: no declara idiomas soportados, no publica resultados de benchmarks propios y, en el momento de redactar esta ficha, acumula 0 descargas y 0 *likes* en HuggingFace. Su valor principal es servir como punto de comparación controlado frente al modelo base sin podar y frente a la otra variante publicada por el mismo autor, con 128 de 256 expertos.
+Se trata de un modelo de investigación más que de un modelo listo para producción: no declara idiomas soportados, no publica resultados de benchmarks propios y, en el momento de redactar esta ficha, acumula 0 descargas y 0 *likes* en Hugging Face. Su valor principal es servir como punto de comparación controlado frente al modelo base sin podar y frente a la otra variante publicada por el mismo autor, con 128 de 256 expertos.
 
 ## Especificaciones técnicas
 
@@ -69,16 +69,16 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada en 4 bits: ~14-16 GB para pesos, con lo que cabe en GPUs de consumo de 24 GB (RTX 4090, RTX 3090, RTX 4080 con contexto reducido) siempre que exista soporte de cuantización para la arquitectura `qwen3_5_moe`.
 - GPUs recomendadas: H100 80GB o A100 80GB para bf16 en una sola tarjeta; 2×A100 40GB o 2×L40S 48GB como alternativa; RTX 4090/3090 únicamente en cuantización de 4 bits.
 - Cómputo por token: al mantenerse top-k = 8 expertos y el experto compartido, el coste por token es esencialmente el mismo que el del modelo base, con ~4,0B de parámetros activos según el autor. El ahorro es de almacenamiento y ancho de banda de memoria, no de FLOPs por token.
-- Opciones de despliegue: Transformers con una versión que incluya la implementación nativa de `qwen3_5_moe` (requisito explícito de la model card). No se documenta soporte para vLLM, llama.cpp, Ollama, TGI ni formatos GGUF en la información disponible; la etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace.
+- Opciones de despliegue: Transformers con una versión que incluya la implementación nativa de `qwen3_5_moe` (requisito explícito de la model card). No se documenta soporte para vLLM, llama.cpp, Ollama, TGI ni formatos GGUF en la información disponible; la etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros totales | Parámetros activos | Expertos enrutados por capa | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-Razor-28B-A4B-E192of256 | 27,7B (27,0B sin MTP) | ~4,0B | 192 de 256 | no disponible | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-35B-A3B (base) | 35B | ~3B | 256 de 256 | no disponible | Apache-2.0 | HuggingFace |
-| Qwen3.6-35B-A3B-Razor-19B-A4B-E128of256 | 19B | ~4,0B (según nomenclatura) | 128 de 256 | no disponible | Apache-2.0 | HuggingFace |
+| Qwen3.6-35B-A3B-Razor-28B-A4B-E192of256 | 27,7B (27,0B sin MTP) | ~4,0B | 192 de 256 | no disponible | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-35B-A3B (base) | 35B | ~3B | 256 de 256 | no disponible | Apache-2.0 | Hugging Face |
+| Qwen3.6-35B-A3B-Razor-19B-A4B-E128of256 | 19B | ~4,0B (según nomenclatura) | 128 de 256 | no disponible | Apache-2.0 | Hugging Face |
 
 La comparación se limita a estos tres modelos porque la información disponible no identifica alternativas equivalentes de otros desarrolladores con las que contrastar arquitectura, presupuesto de expertos y licencia. No se dispone de datos de rendimiento comparativos entre ellos.
 
@@ -99,7 +99,7 @@ La comparación se limita a estos tres modelos porque la información disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nickyang/Qwen3.6-35B-A3B-Razor-28B-A4B-E192of256
+- Modelo en Hugging Face: https://huggingface.co/Nickyang/Qwen3.6-35B-A3B-Razor-28B-A4B-E192of256
 - Variante con 128 de 256 expertos: https://huggingface.co/Nickyang/Qwen3.6-35B-A3B-Razor-19B-A4B-E128of256
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Paper de RAZOR: https://arxiv.org/abs/2609.30465
@@ -108,4 +108,4 @@ La comparación se limita a estos tres modelos porque la información disponible
 - Licencia de los datos de RazorCal: https://github.com/nick7nlp/Razor/blob/main/data/LICENSE-DATA
 - Cita bibliográfica: Song, Mingyang y Zheng, Mao (2026), «RAZOR: Pruning Replaceable Experts in LLMs», arXiv:2609.30465, cs.LG.
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre el método RAZOR. Todos los enlaces anteriores proceden de la información del repositorio de HuggingFace y de la model card.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre el método RAZOR. Todos los enlaces anteriores proceden de la información del repositorio de Hugging Face y de la model card.

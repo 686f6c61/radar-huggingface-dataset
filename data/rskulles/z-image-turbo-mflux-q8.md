@@ -74,8 +74,8 @@ La model card unicamente afirma que la cuantizacion a 8 bits reduce el peso de 2
 
 | Modelo | Parametros | Formato | Tamano | Pasos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| rskulles/z-image-turbo-mflux-q8 | no disponible | safetensors (formato mflux, 8 bits) | ~10 GB de pesos, 11,0 GB de repo | 8-9, sin guidance | Apache 2.0 | HuggingFace, mflux, Crayon Cloud |
-| Tongyi-MAI/Z-Image-Turbo (original) | no disponible | pesos bf16 | ~20 GB | 8-9, sin guidance | Apache 2.0 | HuggingFace (fuente de verdad) |
+| rskulles/z-image-turbo-mflux-q8 | no disponible | safetensors (formato mflux, 8 bits) | ~10 GB de pesos, 11,0 GB de repo | 8-9, sin guidance | Apache 2.0 | Hugging Face, mflux, Crayon Cloud |
+| Tongyi-MAI/Z-Image-Turbo (original) | no disponible | pesos bf16 | ~20 GB | 8-9, sin guidance | Apache 2.0 | Hugging Face (fuente de verdad) |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada no incluye datos verificados de otros modelos de difusion comparables (por ejemplo, alternativas destiladas de pocos pasos o cuantizaciones equivalentes en otros runtimes), de modo que no se puede establecer una comparacion numerica rigurosa. La diferencia comprobable es unicamente interna al propio modelo: la version cuantizada a 8 bits ocupa la mitad que los pesos bf16 originales, con la misma licencia Apache 2.0 y la misma politica de inferencia de 8 o 9 pasos sin guidance.
@@ -95,7 +95,7 @@ La informacion proporcionada no incluye datos verificados de otros modelos de di
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rskulles/z-image-turbo-mflux-q8
+- Repositorio en Hugging Face: https://huggingface.co/rskulles/z-image-turbo-mflux-q8
 - Modelo base (Tongyi-MAI/Z-Image-Turbo): https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - mflux (repositorio de la herramienta de conversion y ejecucion): https://github.com/filipstrand/mflux
 - Crayon Cloud (aplicacion que descarga esta copia): https://github.com/rskulles/CrayonCloud

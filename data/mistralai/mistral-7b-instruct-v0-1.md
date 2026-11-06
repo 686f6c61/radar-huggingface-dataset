@@ -6,7 +6,7 @@ Mistral-7B-Instruct-v0.1 es un modelo de lenguaje de 7.241.732.096 parametros de
 
 El modelo emplea una arquitectura transformer con tres decisiones tecnicas destacables: atencion con consultas agrupadas (Grouped-Query Attention, GQA), atencion de ventana deslizante (Sliding-Window Attention) y un tokenizador BPE con fallback a bytes. Estas elecciones reducen el coste de inferencia y de memoria del cache KV sin sacrificar calidad, lo que lo hace adecuado para despliegues en hardware de gama alta de consumo.
 
-Es relevante porque fue uno de los primeros modelos abiertos de 7B en combinar licencia Apache 2.0, buen rendimiento y facilidad de fine-tuning posterior, lo que lo convirtio en una base muy utilizada para la comunidad (mas de 133.000 descargas y 1.869 likes en HuggingFace). Su enfoque de demostracion de la capacidad de fine-tuning del modelo base, sin mecanismos de moderacion incorporados, lo situa como una pieza de referencia para experimentacion y desarrollos derivados.
+Es relevante porque fue uno de los primeros modelos abiertos de 7B en combinar licencia Apache 2.0, buen rendimiento y facilidad de fine-tuning posterior, lo que lo convirtio en una base muy utilizada para la comunidad (mas de 133.000 descargas y 1.869 likes en Hugging Face). Su enfoque de demostracion de la capacidad de fine-tuning del modelo base, sin mecanismos de moderacion incorporados, lo situa como una pieza de referencia para experimentacion y desarrollos derivados.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ El proceso de entrenamiento consistio en un fine-tuning por instrucciones del mo
 - Razonamiento general y respuesta a preguntas en un unico turno y en conversaciones multi-turno.
 - Seguimiento de contexto de hasta 8.192 tokens, util para documentos y dialogos extensos.
 - Capacidad de servir como base para fine-tuning posterior por su licencia permisiva y su tamano contenido.
-- Integracion con el ecosistema HuggingFace `transformers` mediante `apply_chat_template()`.
+- Integracion con el ecosistema Hugging Face `transformers` mediante `apply_chat_template()`.
 - Soporte de inferencia a traves de las librerias de Mistral (`mistral_common`, `mistral_inference`) y de `transformers`.
 - No dispone de soporte nativo de tool calling, function calling, vision, audio ni modo de razonamiento explicito segun la informacion disponible.
 - Capacidades multilingues: no disponibles en la informacion proporcionada.
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Mistral-7B-Instruct-v0.1 | 7.241.732.096 | 8.192 tokens | Apache 2.0 | HuggingFace |
-| Meta Llama 2 7B Chat | 7B | 4.096 tokens | Llama 2 Community License | HuggingFace |
-| Meta Llama 2 13B Chat | 13B | 4.096 tokens | Llama 2 Community License | HuggingFace |
+| Mistral-7B-Instruct-v0.1 | 7.241.732.096 | 8.192 tokens | Apache 2.0 | Hugging Face |
+| Meta Llama 2 7B Chat | 7B | 4.096 tokens | Llama 2 Community License | Hugging Face |
+| Meta Llama 2 13B Chat | 13B | 4.096 tokens | Llama 2 Community License | Hugging Face |
 
 Nota: los datos de rendimiento comparativo (MMLU, HumanEval, GSM8K u otros) no estan disponibles en la informacion proporcionada. Los datos de Llama 2 se incluyen a modo de referencia de categoria y pueden variar segun la version consultada.
 
@@ -85,7 +85,7 @@ Nota: los datos de rendimiento comparativo (MMLU, HumanEval, GSM8K u otros) no e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1
+- Hugging Face: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.1
 - Paper: https://arxiv.org/abs/2310.06825
 - Blog de lanzamiento: https://mistral.ai/news/announcing-mistral-7b/

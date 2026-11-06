@@ -79,10 +79,10 @@ Verificación numérica frente a `transformers`: front-end dentro de 2e-5 y logi
 
 | Modelo | Parámetros | Ventana de audio | FLEURS 10 s | AMI (ventanas en inglés) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| whisper-base-language-id-onnx | no disponible | 30 s (entrada fija) | 0,946 | 1,000 | MIT | HuggingFace, ONNX, 0 descargas |
+| whisper-base-language-id-onnx | no disponible | 30 s (entrada fija) | 0,946 | 1,000 | MIT | Hugging Face, ONNX, 0 descargas |
 | SpeechBrain VoxLingua107 ECAPA | no disponible | no disponible | 0,986 | aprox. 0,86 | no disponible | no disponible |
 | NVIDIA AmberNet | no disponible | no disponible | 0,986 | aprox. 0,86 | no disponible | no disponible |
-| openai/whisper-base (modelo completo) | no disponible | 30 s | no disponible | no disponible | MIT | HuggingFace |
+| openai/whisper-base (modelo completo) | no disponible | 30 s | no disponible | no disponible | MIT | Hugging Face |
 
 El patrón que describen los datos es claro: los clasificadores dedicados (ECAPA, AmberNet) son mejores en FLEURS a 10 s, pero pierden unos 12 puntos en las ventanas de AMI con inglés acentuado, donde este modelo mantiene el 1,000. En contrapartida, este grafo no ofrece transcripción ni ninguna otra salida.
 
@@ -96,13 +96,13 @@ El patrón que describen los datos es claro: los clasificadores dedicados (ECAPA
 - Riesgo de confusión entre lenguas próximas o con acentos marcados: es un clasificador de 99 clases sin mecanismo de abstención ni umbral de confianza documentado.
 - Licencia MIT heredada de OpenAI (Copyright (c) 2022 OpenAI); no se indican restricciones adicionales para uso comercial, pero conviene revisar el fichero `LICENSE` del repositorio.
 - Repositorio sin adopción: 0 descargas y 0 likes, sin issues ni validación comunitaria. La única verificación es la del propio autor contra `transformers` sobre 30 clips.
-- La fecha de creación registrada en HuggingFace es 2026-09-26, posterior a lo esperable; conviene tratarla con cautela.
+- La fecha de creación registrada en Hugging Face es 2026-09-26, posterior a lo esperable; conviene tratarla con cautela.
 - El modelo fue construido para una aplicación concreta (Tishina) y sus datos de evaluación están orientados a ese propósito.
 - No hay información sobre cuantizaciones alternativas ni sobre el rendimiento del grafo en GPU dedicadas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/beshkenadze/whisper-base-language-id-onnx
+- Modelo en Hugging Face: https://huggingface.co/beshkenadze/whisper-base-language-id-onnx
 - Modelo base: https://huggingface.co/openai/whisper-base
 - Repositorio de Whisper de OpenAI: https://github.com/openai/whisper
 - Repositorio de Tishina (script de exportación `scripts/eval/lid/export_whisper_lid_onnx.py`): URL no disponible en la información proporcionada

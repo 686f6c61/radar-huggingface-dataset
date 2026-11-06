@@ -124,7 +124,7 @@ Los datos de benchmarks comparativos entre estas variantes no están disponibles
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/topboss9527/GLM-5.3-Flash-abliterated-EXL3-K3.25
+- Modelo en Hugging Face: https://huggingface.co/topboss9527/GLM-5.3-Flash-abliterated-EXL3-K3.25
 - Modelo base EXL3 K3.25: https://huggingface.co/wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3.25-v1
 - Variante EXL3 K3: https://huggingface.co/wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3-v1
 - Fuente de los tensores abliterated: https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-NVFP4

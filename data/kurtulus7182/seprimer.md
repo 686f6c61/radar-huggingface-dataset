@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SEPrimer (publicado como "SE Primer — Kriz freni model kartı") es un artefacto de clasificación tabular desarrollado por el usuario kurtulus7182 y alojado en HuggingFace. No es un modelo de lenguaje ni una red neuronal profunda: se trata de un pipeline compuesto por un `StandardScaler` y una regresión logística de scikit-learn, exportado a ONNX para su ejecución en cliente. Su propósito declarado es predecir si un jugador solicitará una pista de orientación dentro de un juego educativo llamado "Muhteşem Cuma ödeme krizi" (la crisis de pago del Viernes Fantástico).
+SEPrimer (publicado como "SE Primer — Kriz freni model kartı") es un artefacto de clasificación tabular desarrollado por el usuario kurtulus7182 y alojado en Hugging Face. No es un modelo de lenguaje ni una red neuronal profunda: se trata de un pipeline compuesto por un `StandardScaler` y una regresión logística de scikit-learn, exportado a ONNX para su ejecución en cliente. Su propósito declarado es predecir si un jugador solicitará una pista de orientación dentro de un juego educativo llamado "Muhteşem Cuma ödeme krizi" (la crisis de pago del Viernes Fantástico).
 
 El modelo opera sobre entradas tabulares de forma `[N, 5] float32` y devuelve una probabilidad de clase positiva con un umbral de decisión fijado en 0,60. El artefacto está marcado explícitamente como `synthetic-demo`: se ha entrenado únicamente con 240 sesiones sintéticas generadas por `scripts/generate_demo.py` con semilla 42, y el autor advierte que no se ha medido el rendimiento con usuarios reales ni se ha validado con datos humanos.
 
@@ -73,9 +73,9 @@ No se dispone de información sobre modelos comparables publicados por el mismo 
 
 | Modelo | Tipo | Entrada | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SEPrimer (kurtulus7182) | Regresión logística + scaler (ONNX) | Tabular `[N,5]` | No aplica | No disponible | HuggingFace, 0 descargas |
+| SEPrimer (kurtulus7182) | Regresión logística + scaler (ONNX) | Tabular `[N,5]` | No aplica | No disponible | Hugging Face, 0 descargas |
 | Clasificadores tabulares de scikit-learn genéricos | Lineales / árboles | Tabular | No aplica | BSD-3 (scikit-learn) | PyPI |
-| TabPFN / modelos tabulares fundacionales | Transformer tabular | Tabular | No aplica | Varía por versión | HuggingFace / repos |
+| TabPFN / modelos tabulares fundacionales | Transformer tabular | Tabular | No aplica | Varía por versión | Hugging Face / repos |
 
 La comparación con modelos de lenguaje no procede: SEPrimer no comparte categoría, escala ni tarea con ellos.
 
@@ -95,7 +95,7 @@ La comparación con modelos de lenguaje no procede: SEPrimer no comparte categor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kurtulus7182/SEPrimer
+- Hugging Face: https://huggingface.co/kurtulus7182/SEPrimer
 - Documentación de LogisticRegression (scikit-learn): https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
 - Documentación de GroupShuffleSplit (scikit-learn): https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupShuffleSplit.html
 - Tutorial de skl2onnx (opciones de ZipMap): https://onnx.ai/sklearn-onnx/auto_tutorial/plot_dbegin_options_zipmap.html

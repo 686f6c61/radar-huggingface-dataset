@@ -4,7 +4,7 @@
 
 El modelo `transcendent-logic-model-GGUF` es una cuantización en formato GGUF realizada por el equipo de mradermacher a partir del modelo original `BosonicJustin/transcendent-logic-model`. Se trata de una conversión de pesos a cuantizaciones de baja precisión, pensada para facilitar la ejecución en CPU y en GPUs con memoria limitada mediante herramientas como llama.cpp o Ollama.
 
-No se dispone de información pública sobre la arquitectura, el tamaño, el contexto, las capacidades o la licencia del modelo original, por lo que no es posible determinar su funcionalidad ni su idoneidad para tareas concretas. El repositorio de HuggingFace presenta cero descargas y cero likes, lo que indica que se trata de una publicación reciente o de alcance muy limitado.
+No se dispone de información pública sobre la arquitectura, el tamaño, el contexto, las capacidades o la licencia del modelo original, por lo que no es posible determinar su funcionalidad ni su idoneidad para tareas concretas. El repositorio de Hugging Face presenta cero descargas y cero likes, lo que indica que se trata de una publicación reciente o de alcance muy limitado.
 
 ## Especificaciones tecnicas
 
@@ -60,7 +60,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/mradermacher/transcendent-logic-model-GGUF
+- Repositorio de Hugging Face: https://huggingface.co/mradermacher/transcendent-logic-model-GGUF
 - Modelo original (referenciado en la model card): https://huggingface.co/BosonicJustin/transcendent-logic-model
-- Perfil de mradermacher en HuggingFace: https://huggingface.co/mradermacher
+- Perfil de mradermacher en Hugging Face: https://huggingface.co/mradermacher
 - Página de solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests

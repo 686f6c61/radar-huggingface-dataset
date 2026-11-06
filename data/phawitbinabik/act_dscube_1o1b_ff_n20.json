@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "phawitbinabik/act_DSCUBE_1O1B_FF_N20",
+  "slug": "phawitbinabik-act_dscube_1o1b_ff_n20",
+  "author": "phawitbinabik",
+  "url": "https://huggingface.co/phawitbinabik/act_DSCUBE_1O1B_FF_N20",
+  "created_at": "2026-11-06T08:04:34.000Z",
+  "updated_at": "2026-11-06T08:05:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:phawitbinabik/DSCUBE_1O1B_FF_N20",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714816,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

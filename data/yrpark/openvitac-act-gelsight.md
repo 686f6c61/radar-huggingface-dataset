@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yrpark/openvitac-act-gelsight` es un conjunto de políticas de imitación basadas en ACT (Action Chunking with Transformers) entrenadas sobre dos tareas de simulación del benchmark OpenViTac, que combina percepción visual y táctil (visuo-tactile) para manipulación robótica. Lo desarrolla el usuario de HuggingFace `yrpark` como reproducción independiente de los baselines de OpenViTac, no como checkpoint oficial de los autores del benchmark. El modelo resuelve el problema de aprender políticas de control robótico a partir de demostraciones humanas (imitation learning) usando señales táctiles de sensores GelSight además de imágenes RGB.
+`yrpark/openvitac-act-gelsight` es un conjunto de políticas de imitación basadas en ACT (Action Chunking with Transformers) entrenadas sobre dos tareas de simulación del benchmark OpenViTac, que combina percepción visual y táctil (visuo-tactile) para manipulación robótica. Lo desarrolla el usuario de Hugging Face `yrpark` como reproducción independiente de los baselines de OpenViTac, no como checkpoint oficial de los autores del benchmark. El modelo resuelve el problema de aprender políticas de control robótico a partir de demostraciones humanas (imitation learning) usando señales táctiles de sensores GelSight además de imágenes RGB.
 
 La relevancia actual reside en que la manipulación robótica con realimentación táctil es un área emergente donde los modelos puramente visuales fallan en tareas que requieren estimar propiedades físicas (dureza, deslizamiento, contacto). Este repositorio publica dos políticas entrenadas y evaluadas (una de selección de latas vacías y otra de clasificación de dureza de bloques) junto con el conversor de datos LeRobot a HDF5 y los logs de evaluación por episodio, lo que facilita la reproducibilidad.
 
@@ -91,6 +91,6 @@ No se dispone de datos de rendimiento de los baselines oficiales de OpenViTac ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yrpark/openvitac-act-gelsight
+- Modelo en Hugging Face: https://huggingface.co/yrpark/openvitac-act-gelsight
 - Repositorio OpenViTac: https://github.com/FVL-Repo/OpenViTac
 - Dataset OpenViTac: https://huggingface.co/datasets/FVL-Lab/OpenViTac

@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / resolucion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| koszm3/tumbler-style | no disponible (SD 1.5 base) | 512x512, prompt 77 tokens | Core ML 6 bits | CreativeML OpenRAIL-M | HuggingFace, 0 descargas |
-| stable-diffusion-v1-5/stable-diffusion-v1-5 | ~860 M (UNet) | 512x512, prompt 77 tokens | safetensors, diffusers | CreativeML OpenRAIL-M | HuggingFace, ampliamente usado |
-| lllyasviel/sd-controlnet-canny | ~360 M (ControlNet adicional) | 512x512 | safetensors, diffusers | OpenRAIL | HuggingFace |
+| koszm3/tumbler-style | no disponible (SD 1.5 base) | 512x512, prompt 77 tokens | Core ML 6 bits | CreativeML OpenRAIL-M | Hugging Face, 0 descargas |
+| stable-diffusion-v1-5/stable-diffusion-v1-5 | ~860 M (UNet) | 512x512, prompt 77 tokens | safetensors, diffusers | CreativeML OpenRAIL-M | Hugging Face, ampliamente usado |
+| lllyasviel/sd-controlnet-canny | ~360 M (ControlNet adicional) | 512x512 | safetensors, diffusers | OpenRAIL | Hugging Face |
 | apple/coreml-stable-diffusion (ejemplos oficiales) | SD 1.5 / SD 2.1 | 512x512 | Core ML | CreativeML OpenRAIL-M | Repositorio de Apple |
 
 La comparativa directa con modelos de lenguaje no procede: tumbler-style es un artefacto de difusión de imágenes. Frente al SD 1.5 original, la diferencia es el empaquetado Core ML, la cuantización a 6 bits y la fusión del LoRA de estilo y del ControlNet Canny.
@@ -81,7 +81,7 @@ La comparativa directa con modelos de lenguaje no procede: tumbler-style es un a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/koszm3/tumbler-style
+- Modelo en Hugging Face: https://huggingface.co/koszm3/tumbler-style
 - Modelo base: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - ControlNet Canny: https://huggingface.co/lllyasviel/sd-controlnet-canny
 - Licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license

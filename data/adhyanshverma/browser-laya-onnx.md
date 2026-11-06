@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo ni de alternativas directament
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AdhyanshVerma/browser-laya-onnx
+- Hugging Face: https://huggingface.co/AdhyanshVerma/browser-laya-onnx
 - Repositorio Pooki-Pra: https://github.com/AdhyanshVerma/pooki-pra
 - Camoufox: https://github.com/daijro/camoufox
 - Perfil del autor: https://huggingface.co/AdhyanshVerma

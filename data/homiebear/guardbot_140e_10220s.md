@@ -50,5 +50,5 @@ No se conocen modelos comparables ni se puede establecer una comparativa, ya que
 
 ## Enlaces
 
-- [HuggingFace - Homiebear/GuardBot_140e_10220s](https://huggingface.co/Homiebear/GuardBot_140e_10220s)
+- [Hugging Face - Homiebear/GuardBot_140e_10220s](https://huggingface.co/Homiebear/GuardBot_140e_10220s)
 - [Perfil de Homiebear en Hugging Face](https://huggingface.co/Homiebear/models)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`enzolefebvre/cs229-retrieval` es un repositorio experimental publicado en HuggingFace que contiene una implementación de Vision Transformer (ViT) en escala **tiny** orientada a tareas de *retrieval* (recuperación) imagen-texto. El modelo tiene **49.600 parámetros** y está registrado con los tags `safetensors`, `vit`, `pytorch` y `retrieval`, bajo licencia BSD-3-Clause. El repositorio es de código y configuración más que de pesos entrenados: su tamaño es de 0,0 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
+`enzolefebvre/cs229-retrieval` es un repositorio experimental publicado en Hugging Face que contiene una implementación de Vision Transformer (ViT) en escala **tiny** orientada a tareas de *retrieval* (recuperación) imagen-texto. El modelo tiene **49.600 parámetros** y está registrado con los tags `safetensors`, `vit`, `pytorch` y `retrieval`, bajo licencia BSD-3-Clause. El repositorio es de código y configuración más que de pesos entrenados: su tamaño es de 0,0 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 El propio autor declara en la model card que se trata de una base de código para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El archivo `model.safetensors` se describe explícitamente como un **checkpoint de inicialización válido para pruebas de humo** (*smoke tests*), no como un checkpoint entrenado ni evaluado. No se reclama ninguna puntuación de benchmark en el repositorio.
 
@@ -96,5 +96,5 @@ La diferencia fundamental no esta en las especificaciones, que no son comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/enzolefebvre/cs229-retrieval
+- Modelo en Hugging Face: https://huggingface.co/enzolefebvre/cs229-retrieval
 - Paper, blog, repositorio o demo adicionales: no disponible. Las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo; los resultados obtenidos correspondian a paginas no relacionadas (foros de videojuegos, directorios de buscadores y plataformas de streaming) y se han descartado por no aportar informacion verificable.

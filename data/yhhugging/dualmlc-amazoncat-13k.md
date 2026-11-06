@@ -75,9 +75,9 @@ No se dispone de resultados de benchmarks de los modelos comparados en la inform
 
 | Modelo | Enfoque | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DualMLC-amazoncat-13k (este) | Doble rama Qwen2.5-7B+LoRA y BERT-base, fusión tardía de logits, vocabulario fijo AmazonCat-13K | Qwen2.5-7B (no incluido) + BERT-base + adaptador + cabezas | No disponible (truncado según `config.json`) | Apache 2.0 declarada | HuggingFace, repo de 0,6 GB, 8 descargas |
+| DualMLC-amazoncat-13k (este) | Doble rama Qwen2.5-7B+LoRA y BERT-base, fusión tardía de logits, vocabulario fijo AmazonCat-13K | Qwen2.5-7B (no incluido) + BERT-base + adaptador + cabezas | No disponible (truncado según `config.json`) | Apache 2.0 declarada | Hugging Face, repo de 0,6 GB, 8 descargas |
 | Clasificador XMC clásico basado solo en BERT con cabeza lineal o atención | Una sola rama encoder, sin LLM | Del orden de 110 millones (BERT-base) | Limite propio de BERT-base | Segun el modelo base | Habitualmente reproducible desde el mismo repositorio de código |
-| Qwen2.5-7B en modo prompting zero-shot o few-shot para etiquetado | LLM generativo sin ajuste específico para el vocabulario de 13K etiquetas | Unos 7.600 millones | El del modelo base Qwen | Segun Qwen2.5-7B | Pesos completos en HuggingFace |
+| Qwen2.5-7B en modo prompting zero-shot o few-shot para etiquetado | LLM generativo sin ajuste específico para el vocabulario de 13K etiquetas | Unos 7.600 millones | El del modelo base Qwen | Segun Qwen2.5-7B | Pesos completos en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -95,9 +95,9 @@ No se dispone de resultados de benchmarks de los modelos comparados en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yhhugging/DualMLC-amazoncat-13k
+- Modelo en Hugging Face: https://huggingface.co/yhhugging/DualMLC-amazoncat-13k
 - Paper (arXiv): https://arxiv.org/abs/2609.12915
-- Pagina del paper en HuggingFace: https://huggingface.co/papers/2609.12915
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2609.12915
 - Repositorio de codigo: https://github.com/huiyegit/DualMLC
 - Instrucciones de setup del repositorio: https://github.com/huiyegit/DualMLC#setup
 - Modelo base Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B

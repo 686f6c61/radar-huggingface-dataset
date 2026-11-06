@@ -96,7 +96,7 @@ La comparativa se limita a los modelos de la misma familia y linaje, ya que la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unfold-labs/unfold-search-embedder
+- Hugging Face: https://huggingface.co/unfold-labs/unfold-search-embedder
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Commit del modelo base citado: `614241f622f53c4eeff9890bdc4f31cfecc418b3`
 - Articulo del modelo base (arXiv:2402.05672): https://arxiv.org/pdf/2402.05672

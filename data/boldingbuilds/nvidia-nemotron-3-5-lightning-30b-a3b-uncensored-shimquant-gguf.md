@@ -106,7 +106,7 @@ La comparativa directa con el release ShimQuant sin abliterar es la mas relevant
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BoldingBuilds/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Uncensored-ShimQuant-GGUF
+- Repositorio Hugging Face: https://huggingface.co/BoldingBuilds/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Uncensored-ShimQuant-GGUF
 - Release ShimQuant sin abliterar: https://huggingface.co/BoldingBuilds/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-ShimQuant-GGUF
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - GGUF oficial de ggml-org: https://huggingface.co/ggml-org/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF

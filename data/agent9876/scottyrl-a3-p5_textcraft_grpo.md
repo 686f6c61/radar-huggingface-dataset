@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Agent9876/scottyrl-a3-p5_textcraft_grpo` | Adaptador LoRA rango 32 sobre base de 4B | No disponible | TextCraft-Synth (agentes de texto), GRPO | No disponible | HuggingFace, 0 descargas |
-| `Qwen/Qwen3.5-4B` (base sin adaptador) | 4B (según identificador) | No disponible | Propósito general | No disponible en la información proporcionada | HuggingFace |
+| `Agent9876/scottyrl-a3-p5_textcraft_grpo` | Adaptador LoRA rango 32 sobre base de 4B | No disponible | TextCraft-Synth (agentes de texto), GRPO | No disponible | Hugging Face, 0 descargas |
+| `Qwen/Qwen3.5-4B` (base sin adaptador) | 4B (según identificador) | No disponible | Propósito general | No disponible en la información proporcionada | Hugging Face |
 | Otros adaptadores del mismo curso (serie `scottyrl`) | No disponible | No disponible | Otros entornos o tareas de agente | No disponible | No identificados en la búsqueda |
 
 No se dispone de datos de rendimiento que permitan una comparación cuantitativa con alternativas como Qwen3-4B, Llama 3.2 3B o Phi-4-mini. La comparación realista es interna: el adaptador frente a su propio modelo base, medida con el *script* de evaluación del curso.
@@ -99,6 +99,6 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Agent9876/scottyrl-a3-p5_textcraft_grpo
+- Modelo en Hugging Face: https://huggingface.co/Agent9876/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la información proporcionada.

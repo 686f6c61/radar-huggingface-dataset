@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Buore/VGG16-CHEST-CLASSIFIER es un modelo de clasificación de imágenes médicas publicado en HuggingFace por el usuario Buore. Se distribuye bajo licencia MIT y está implementado con la librería Keras, lo que indica que se trata de una red neuronal convolucional (CNN) orientada a la inferencia sobre imágenes de tórax, probablemente radiografías o tomografías, con VGG16 como arquitectura base.
+Buore/VGG16-CHEST-CLASSIFIER es un modelo de clasificación de imágenes médicas publicado en Hugging Face por el usuario Buore. Se distribuye bajo licencia MIT y está implementado con la librería Keras, lo que indica que se trata de una red neuronal convolucional (CNN) orientada a la inferencia sobre imágenes de tórax, probablemente radiografías o tomografías, con VGG16 como arquitectura base.
 
 El repositorio tiene un tamaño de 0,2 GB y, en el momento de la consulta, registra 0 descargas y 0 "likes". La model card publicada es prácticamente vacía: únicamente declara `license: mit` sin especificar el problema concreto (binario o multiclase), las clases de salida, el conjunto de datos de entrenamiento, las métricas obtenidas ni el procedimiento de preprocesado. Por tanto, se desconoce si se trata de un fine-tune sobre una cabeza de clasificación binaria (por ejemplo, normal frente a patología) o de un clasificador multiclase.
 
@@ -72,7 +72,7 @@ La comparacion se establece con arquitecturas CNN habituales en clasificacion de
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Buore/VGG16-CHEST-CLASSIFIER | no disponible (base VGG16: ~138 M) | no aplica | no disponible (sin metricas publicadas) | MIT | HuggingFace, 0 descargas |
+| Buore/VGG16-CHEST-CLASSIFIER | no disponible (base VGG16: ~138 M) | no aplica | no disponible (sin metricas publicadas) | MIT | Hugging Face, 0 descargas |
 | VGG16 (ImageNet, referencia) | ~138 M | no aplica | Top-5 ~92,7 % en ImageNet (referencia de la arquitectura original) | Pesos originales con condiciones academicas; implementaciones Apache 2.0 en Keras/TensorFlow | Ampliamente disponible |
 | ResNet-50 | ~25,6 M | no aplica | Top-5 ~93 % en ImageNet (referencia) | Implementaciones Apache 2.0 en marcos habituales | Ampliamente disponible |
 | EfficientNet-B0 | ~5,3 M | no aplica | Top-1 ~77,1 % en ImageNet (referencia) | Pesos oficiales bajo Apache 2.0 | Ampliamente disponible |
@@ -95,7 +95,7 @@ No se dispone de datos comparativos de rendimiento en clasificacion toracica par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Buore/VGG16-CHEST-CLASSIFIER
+- Modelo en Hugging Face: https://huggingface.co/Buore/VGG16-CHEST-CLASSIFIER
 - Chest-Cancer-Classification (GitHub, trunglap923): https://github.com/trunglap923/Chest-Cancer-Classification
 - Chest-Xray-Classifier con transfer learning VGG16 (GitHub, RajGauravTiwari): https://github.com/RajGauravTiwari/Chest-Xray-Classifier/tree/main
 - AI-Powered Lung Cancer Detection: Assessing VGG16 and CNN Architectures for CT Scan Image Classification (ResearchGate): https://www.researchgate.net/publication/388889371_AI-Powered_Lung_Cancer_Detection_Assessing_VGG16_and_CNN_Architectures_for_CT_Scan_Image_Classification

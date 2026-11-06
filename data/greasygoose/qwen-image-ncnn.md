@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables, ni v
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GreasyGoose/qwen-image-ncnn
+- Repositorio en Hugging Face: https://huggingface.co/GreasyGoose/qwen-image-ncnn
 - Modelo original referenciado: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Implementacion de inferencia ncnn/Vulkan: https://github.com/nihui/qwenimage-ncnn-vulkan
 - Framework ncnn: https://github.com/Tencent/ncnn

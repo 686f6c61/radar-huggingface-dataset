@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rigsarthur/modnet | no disponible | no aplica | no disponible | apache-2.0 | HuggingFace (ONNX) |
+| rigsarthur/modnet | no disponible | no aplica | no disponible | apache-2.0 | Hugging Face (ONNX) |
 | MODNet original (ZHKKKe) | no disponible | no aplica | no disponible | Apache-2.0 (segun repositorio original) | GitHub, pesos PyTorch |
-| Otros modelos de matting (p. ej. U2Net, RMBG) | no disponible | no aplica | no disponible | variable | HuggingFace |
+| Otros modelos de matting (p. ej. U2Net, RMBG) | no disponible | no aplica | no disponible | variable | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento en la informacion proporcionada.
 
@@ -79,7 +79,7 @@ No se dispone de datos comparativos de rendimiento en la informacion proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rigsarthur/modnet
+- Hugging Face: https://huggingface.co/rigsarthur/modnet
 - Repositorio oficial MODNet: https://github.com/ZHKKKe/MODNet
 - Colab de ejemplo: https://colab.research.google.com/drive/1P3cWtg8fnmu9karZHYDAtmm1vj1rgA-f?usp=sharing
 - Documentacion de Transformers.js: https://huggingface.co/docs/transformers.js

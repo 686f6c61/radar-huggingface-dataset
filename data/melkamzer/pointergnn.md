@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PointerGNN es un modelo publicado por Melkamzer Anteneh, ingeniero de IA con perfil junior y experiencia previa en sistemas de demostración automática de teoremas (ATP) basados en redes neuronales de grafos (GNN) y aprendizaje por refuerzo. El modelo fue subido a HuggingFace el 26 de agosto de 2026 bajo licencia Apache-2.0, pero su model card está prácticamente vacía: no incluye descripción, arquitectura, parámetros, datos de entrenamiento ni ejemplos de uso.
+PointerGNN es un modelo publicado por Melkamzer Anteneh, ingeniero de IA con perfil junior y experiencia previa en sistemas de demostración automática de teoremas (ATP) basados en redes neuronales de grafos (GNN) y aprendizaje por refuerzo. El modelo fue subido a Hugging Face el 26 de agosto de 2026 bajo licencia Apache-2.0, pero su model card está prácticamente vacía: no incluye descripción, arquitectura, parámetros, datos de entrenamiento ni ejemplos de uso.
 
 A día de hoy, PointerGNN no cuenta con descargas ni valoraciones, lo que indica que se trata de una publicación muy temprana o experimental. La única información confirmada es el nombre del modelo, el autor, la licencia y la fecha de creación. Todo lo demás —arquitectura, parámetros, contexto, capacidades y rendimiento— permanece sin documentar. Esta ficha recoge únicamente los datos verificables y marca explícitamente cualquier inferencia basada en el perfil del autor.
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Melkamzer/PointerGNN
+- Modelo en Hugging Face: https://huggingface.co/Melkamzer/PointerGNN
 - GitHub del autor: https://github.com/melkamzeranteneh/
 - LinkedIn del autor: https://et.linkedin.com/in/melkamzer-anteneh-987b2b36a
 

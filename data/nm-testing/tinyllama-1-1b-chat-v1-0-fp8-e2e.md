@@ -73,7 +73,7 @@ La comparativa con modelos de la misma categoria muestra que el TinyLlama base t
 ## Limitaciones y advertencias
 
 - Es un artefacto de pruebas (`nm-testing`, sufijo `e2e`): no esta pensado para produccion ni cuenta con garantias de mantenimiento.
-- Licencia no especificada en la ficha de HuggingFace; verificar la licencia del modelo base (Apache 2.0 en el TinyLlama original) antes de cualquier uso comercial.
+- Licencia no especificada en la ficha de Hugging Face; verificar la licencia del modelo base (Apache 2.0 en el TinyLlama original) antes de cualquier uso comercial.
 - Riesgo elevado de alucinacion y errores factuales por el reducido tamano (1,1B parametros).
 - Contexto limitado (el modelo base soporta 2048 tokens); insuficiente para tareas de contexto largo.
 - Capacidades multilingues no documentadas; probablemente sesgado hacia el ingles.
@@ -83,7 +83,7 @@ La comparativa con modelos de la misma categoria muestra que el TinyLlama base t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-FP8-e2e
+- Hugging Face: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-FP8-e2e
 - Modelo base TinyLlama-1.1B-Chat-v1.0: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Repositorio TinyLlama: https://github.com/jzhang38/TinyLlama
 - Libreria compressed-tensors: https://github.com/neuralmagic/compressed-tensors

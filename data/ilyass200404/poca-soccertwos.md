@@ -6,7 +6,7 @@
 
 El modelo esta etiquetado como `poca`, lo que en el ecosistema ML-Agents corresponde al entrenador multiagente MA-POCA (Multi-Agent POsthumous Credit Assignment), un algoritmo de tipo actor-critico con critico centralizado disenado para aprendizaje cooperativo y para asignar credito a agentes que terminan su episodio antes que el resto (por ejemplo, al ser eliminados o al quedar fuera de juego). Esto lo hace adecuado para el escenario SoccerTwos, donde varios agentes del mismo equipo comparten recompensa y pueden terminar en momentos distintos.
 
-El repositorio es pequeno (aproximadamente 0,1 GB) y contiene pesos exportados en formatos ONNX y `.nn` junto con logs de TensorBoard. Es relevante sobre todo como material didactico y de investigacion: permite reproducir un entrenamiento completo de un agente con ML-Agents, reanudarlo, y visualizarlo directamente en el navegador a traves de la plataforma de la organizacion `unity` en HuggingFace. No se han publicado metricas de rendimiento ni detalles completos de hiperparametros en la informacion disponible.
+El repositorio es pequeno (aproximadamente 0,1 GB) y contiene pesos exportados en formatos ONNX y `.nn` junto con logs de TensorBoard. Es relevante sobre todo como material didactico y de investigacion: permite reproducir un entrenamiento completo de un agente con ML-Agents, reanudarlo, y visualizarlo directamente en el navegador a traves de la plataforma de la organizacion `unity` en Hugging Face. No se han publicado metricas de rendimiento ni detalles completos de hiperparametros en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -36,7 +36,7 @@ No se dispone de informacion sobre el numero total de pasos de entrenamiento, la
 - Control de un agente en el entorno SoccerTwos: desplazamiento, rotacion y accion de chute dentro de un espacio de acciones discreto.
 - Juego cooperativo 2v2: el agente esta entrenado para coordinarse con un companero de equipo frente a dos adversarios.
 - Procesamiento de observaciones vectoriales y raycasts especificos del entorno SoccerTwos.
-- Ejecucion en navegador mediante la plataforma de visualizacion de agentes de la organizacion `unity` en HuggingFace (carga de ficheros `.nn`/`.onnx`).
+- Ejecucion en navegador mediante la plataforma de visualizacion de agentes de la organizacion `unity` en Hugging Face (carga de ficheros `.nn`/`.onnx`).
 - Reanudacion de entrenamiento con ML-Agents para continuar el aprendizaje desde el checkpoint publicado.
 - Tool calling / function calling: no aplica.
 - Capacidades de agente multi-paso en el sentido de LLM: no aplica (el agente opera por pasos de simulacion, no razona en lenguaje natural).
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: no se especifican; para inferencia de esta politica no es necesaria una GPU. El cuello de botella habitual es la simulacion de Unity, no la red.
 - GPU de consumo: el agente cabe sobradamente en cualquier GPU de consumo (por ejemplo, RTX 3060 o superior) e incluso en CPU; no se requiere VRAM significativa.
 - VRAM estimada: no disponible; dada la naturaleza del modelo, el consumo de VRAM es minimo comparado con un LLM.
-- Opciones de despliegue: Unity ML-Agents (`mlagents`), Unity Sentis, ONNX Runtime para el fichero ONNX, y la visualizacion en navegador de la organizacion `unity` en HuggingFace. No aplican vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje.
+- Opciones de despliegue: Unity ML-Agents (`mlagents`), Unity Sentis, ONNX Runtime para el fichero ONNX, y la visualizacion en navegador de la organizacion `unity` en Hugging Face. No aplican vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje.
 - Entrenamiento: reanudable mediante `mlagents-learn`; el coste depende del numero de instancias de Unity en paralelo y de la CPU, no de una GPU concreta.
 - Latencia y throughput: no disponibles.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ilyass200404/poca-SoccerTwos | Agente RL (MA-POCA) | SoccerTwos 2v2 | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
-| Agentes SoccerTwos de la organizacion `unity` | Agentes RL | SoccerTwos 2v2 | no disponible | no aplica | no disponible en la informacion | HuggingFace |
-| Otros checkpoints MA-POCA de ML-Agents | Agentes RL multiagente | Varios (SoccerTwos, Cooperative Push Block, etc.) | no disponible | no aplica | depende del repositorio | HuggingFace / GitHub de ML-Agents |
+| ilyass200404/poca-SoccerTwos | Agente RL (MA-POCA) | SoccerTwos 2v2 | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
+| Agentes SoccerTwos de la organizacion `unity` | Agentes RL | SoccerTwos 2v2 | no disponible | no aplica | no disponible en la informacion | Hugging Face |
+| Otros checkpoints MA-POCA de ML-Agents | Agentes RL multiagente | Varios (SoccerTwos, Cooperative Push Block, etc.) | no disponible | no aplica | depende del repositorio | Hugging Face / GitHub de ML-Agents |
 
 No se dispone de metricas de rendimiento publicadas para ninguno de estos agentes en la informacion proporcionada, por lo que la comparativa se limita a categoria, entorno y disponibilidad. No se puede establecer una comparacion cuantitativa de rendimiento.
 
@@ -92,9 +92,9 @@ No se dispone de metricas de rendimiento publicadas para ninguno de estos agente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ilyass200404/poca-SoccerTwos
+- Modelo en Hugging Face: https://huggingface.co/ilyass200404/poca-SoccerTwos
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Documentacion de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
-- Tutorial corto de ML-Agents en HuggingFace: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
-- Tutorial largo de ML-Agents en HuggingFace: https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Organizacion de agentes Unity en HuggingFace: https://huggingface.co/unity
+- Tutorial corto de ML-Agents en Hugging Face: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
+- Tutorial largo de ML-Agents en Hugging Face: https://huggingface.co/learn/deep-rl-course/unit5/introduction
+- Organizacion de agentes Unity en Hugging Face: https://huggingface.co/unity

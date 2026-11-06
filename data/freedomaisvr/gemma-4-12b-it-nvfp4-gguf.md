@@ -85,7 +85,7 @@ No se dispone de datos comparativos con otros modelos de 12B (p. ej., Llama 3.1 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FreedomAISVR/Gemma-4-12B-it-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/FreedomAISVR/Gemma-4-12B-it-NVFP4-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Pagina de Google DeepMind sobre Gemma 4: https://deepmind.google/models/gemma/gemma-4/
 - Pagina de Ollama para gemma4:12b-nvfp4: https://ollama.com/library/gemma4:12b-nvfp4

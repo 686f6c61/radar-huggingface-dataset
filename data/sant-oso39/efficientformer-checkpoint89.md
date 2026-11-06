@@ -32,14 +32,14 @@ No se proporcionan datos sobre el conjunto de entrenamiento, número de tokens o
 - Clasificacion de imagenes: el modelo está diseñado para tareas de clasificación, aunque al ser un checkpoint de inicialización no tiene capacidades reales de inferencia sin entrenamiento previo.
 - Inspeccion de arquitectura: permite examinar la implementación de EfficientFormer con atención sparse, fusión gated y GroupNorm.
 - Ejecucion de pruebas de humo: el script `pipeline.py` incluye un ejemplo ejecutable para validar el flujo de datos.
-- Adaptacion a APIs: requiere un adaptador explícito para cargarlo con APIs genéricas de HuggingFace, ya que es una implementación personalizada.
+- Adaptacion a APIs: requiere un adaptador explícito para cargarlo con APIs genéricas de Hugging Face, ya que es una implementación personalizada.
 - No soporta generacion de texto, tool calling, agentes ni razonamiento multi-paso.
 - No tiene capacidades multimodales más allá de la entrada de imágenes para clasificación.
 
 ## Casos de uso
 
 - Pruebas de humo en pipelines de entrenamiento: el checkpoint permite verificar que el código de entrenamiento y evaluación funciona correctamente antes de lanzar un entrenamiento completo, gracias a su tamaño mínimo y a la inclusión de un ejemplo en `pipeline.py`.
-- Desarrollo de adaptadores personalizados: al ser una implementación custom, los desarrolladores pueden crear adaptadores para integrar este modelo con HuggingFace Transformers u otras librerías, usando el checkpoint como referencia de carga.
+- Desarrollo de adaptadores personalizados: al ser una implementación custom, los desarrolladores pueden crear adaptadores para integrar este modelo con Hugging Face Transformers u otras librerías, usando el checkpoint como referencia de carga.
 - Estudio de la arquitectura EfficientFormer: investigadores pueden analizar el código y la configuración para comprender cómo se implementan la atención sparse, la fusión gated y GroupNorm en la práctica.
 - Entrenamiento desde cero con la receta incluida: el repositorio proporciona `training_args.json` con una configuración por defecto (optimizador Lion, schedule exponencial) que puede servir como punto de partida para experimentos controlados.
 - Comparación de variantes arquitectónicas: al mantener el setup "large" manejable, se pueden modificar parámetros de la arquitectura y comparar resultados con un coste computacional bajo.
@@ -65,14 +65,14 @@ No hay modelos comparables directos porque este repositorio no contiene un model
 
 - El checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio; debe tratarse como un punto de partida experimental.
 - No es adecuado para uso en producción ni para inferencia real, ya que los pesos son de inicialización y no producen resultados significativos.
-- La implementación es personalizada y requiere un adaptador explícito para cargarla con APIs genéricas de HuggingFace.
+- La implementación es personalizada y requiere un adaptador explícito para cargarla con APIs genéricas de Hugging Face.
 - No se proporcionan datos sobre el conjunto de datos de entrenamiento, por lo que no se puede evaluar la exposición a sesgos.
 - La licencia BSD-3-Clause permite uso comercial, pero la model card advierte que deben revisarse los términos de las fuentes de datos externas si se usan con otros datasets.
 - Los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sant-oso39/efficientformer-checkpoint89
+- Repositorio en Hugging Face: https://huggingface.co/sant-oso39/efficientformer-checkpoint89
 - Repositorio oficial de EfficientFormer (Snap Research): https://github.com/snap-research/EfficientFormer
 - Página de EfficientFormer en Qualcomm AI Hub: https://aihub.qualcomm.com/automotive/models/efficientformer
 - Ficha de EfficientFormer en free2aitools: https://free2aitools.com/model/qualcomm/efficientformer

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EnzymeCoT (etapa III, checkpoint conjunto) es un artefacto de investigación publicado por Scinetics en HuggingFace que contiene exclusivamente adaptadores entrenados para diseño de enzimas de novo condicionado por reacción química. No es un modelo autónomo: se compone de adaptadores LoRA sobre Qwen3-4B, que actúa como modelo de comprensión, y sobre RFdiffusion3, que actúa como generador de estructura, junto con proyecciones de estructura y ligando y un módulo de inyección. El fichero distribuido, `s3_best.pt`, es un `state_dict` de PyTorch de 553 MB con 755 tensores y 138,9 millones de parámetros; no incluye pesos de los modelos base ni estado del optimizador.
+EnzymeCoT (etapa III, checkpoint conjunto) es un artefacto de investigación publicado por Scinetics en Hugging Face que contiene exclusivamente adaptadores entrenados para diseño de enzimas de novo condicionado por reacción química. No es un modelo autónomo: se compone de adaptadores LoRA sobre Qwen3-4B, que actúa como modelo de comprensión, y sobre RFdiffusion3, que actúa como generador de estructura, junto con proyecciones de estructura y ligando y un módulo de inyección. El fichero distribuido, `s3_best.pt`, es un `state_dict` de PyTorch de 553 MB con 755 tensores y 138,9 millones de parámetros; no incluye pesos de los modelos base ni estado del optimizador.
 
 El problema que aborda es el diseño de enzimas para una reacción dada definida por SMILES, junto con la química del ligando, sus coordenadas 3D y una longitud objetivo de proteína. El pipeline se organiza en tres rondas: en R1 se propone un conjunto no indexado de residuos catalíticos (identidad y rol catalítico o de soporte) con geometría local relativa al ligando; en R2 se genera un esqueleto completo y se asignan los objetos de R1 a posiciones concretas; en R3 se completa la secuencia y las cadenas laterales heredando el núcleo comprometido.
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks comparables (MMLU, HumanEval, GSM8K
 
 | Sistema | Enfoque | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EnzymeCoT (este checkpoint) | LLM (Qwen3-4B) + difusion (RFdiffusion3) con LoRA conjunto, tres rondas | 138,9 M en adaptadores; modelos base aparte | no disponible | apache-2.0 | Repositorio HuggingFace con 0 descargas y 0 likes; requiere modelos base |
+| EnzymeCoT (este checkpoint) | LLM (Qwen3-4B) + difusion (RFdiffusion3) con LoRA conjunto, tres rondas | 138,9 M en adaptadores; modelos base aparte | no disponible | apache-2.0 | Repositorio Hugging Face con 0 descargas y 0 likes; requiere modelos base |
 | RFdiffusion / RFdiffusion3 + LigandMPNN | Difusion de estructura seguida de diseño de secuencia, en dos etapas separadas | no disponible | no disponible | no disponible | no disponible |
 | Chroma | Difusion generativa de proteinas con condicionamiento programable | no disponible | no disponible | no disponible | no disponible |
 | ProteinMPNN / LigandMPNN | Red de diseno de secuencia sobre esqueleto fijo | no disponible | no disponible | no disponible | no disponible |
@@ -103,7 +103,7 @@ No se dispone en la información proporcionada de datos numéricos comparativos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Scinetics/enzymecot
+- Modelo en Hugging Face: https://huggingface.co/Scinetics/enzymecot
 - Paper asociado: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de código: no disponible

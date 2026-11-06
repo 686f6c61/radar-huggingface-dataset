@@ -2,9 +2,9 @@
 
 ## Resumen
 
-URFM es un modelo publicado por el usuario fmassimo en HuggingFace bajo licencia MIT. La información disponible en el momento de redactar esta ficha es extremadamente limitada: el repositorio contiene 19,1 GB de datos, pero la model card no incluye descripción, arquitectura, número de parámetros, datos de entrenamiento ni idiomas soportados. No se ha publicado ningún resultado de benchmarks ni documentación técnica asociada.
+URFM es un modelo publicado por el usuario fmassimo en Hugging Face bajo licencia MIT. La información disponible en el momento de redactar esta ficha es extremadamente limitada: el repositorio contiene 19,1 GB de datos, pero la model card no incluye descripción, arquitectura, número de parámetros, datos de entrenamiento ni idiomas soportados. No se ha publicado ningún resultado de benchmarks ni documentación técnica asociada.
 
-El modelo se registró el 11 de septiembre de 2026 y se actualizó dos días después, según las fechas del repositorio. Acumula 0 descargas y 0 "likes", y no tiene pipeline declarado en HuggingFace, lo que impide clasificarlo automáticamente como modelo de generación de texto, visión u otra modalidad. Tampoco se ha especificado el formato de los pesos ni el tokenizador.
+El modelo se registró el 11 de septiembre de 2026 y se actualizó dos días después, según las fechas del repositorio. Acumula 0 descargas y 0 "likes", y no tiene pipeline declarado en Hugging Face, lo que impide clasificarlo automáticamente como modelo de generación de texto, visión u otra modalidad. Tampoco se ha especificado el formato de los pesos ni el tokenizador.
 
 Dado que no existe información verificable sobre arquitectura, tamaño o capacidades, esta ficha se limita a recoger los datos objetivos disponibles y marca explícitamente como "no disponible" todo aquello que no puede confirmarse. Cualquier evaluación de idoneidad para producción requeriría inspeccionar directamente los archivos del repositorio y ejecutar pruebas propias.
 
@@ -22,7 +22,7 @@ Dado que no existe información verificable sobre arquitectura, tamaño o capaci
 | Formato de pesos | no disponible (el repositorio ocupa 19,1 GB; no se detalla el formato de los ficheros) |
 | Autor | fmassimo |
 | Identificador | fmassimo/URFM |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de creacion | 2026-09-11 |
 | Ultima actualizacion | 2026-09-11 (segun el campo de actualizacion: 2026-09-11T20:38:45Z) |
 | Tamano del repositorio | 19,1 GB |
@@ -94,7 +94,7 @@ No es posible establecer una comparativa porque se desconoce la categoría del m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fmassimo/URFM
+- Repositorio en Hugging Face: https://huggingface.co/fmassimo/URFM
 - Ficha de licencia MIT asociada al repositorio: https://huggingface.co/fmassimo/URFM (campo license: mit)
 - Paper, blog, repositorio de código o demo: no disponible.
 - Los resultados de búsqueda web consultados no contienen ninguna referencia al modelo URFM ni a su autor, por lo que no aportan enlaces relevantes.

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "wrldsuksgo2mars/Muse-Spark-Open-EXL3-K4-Core-K6",
+  "slug": "wrldsuksgo2mars-muse-spark-open-exl3-k4-core-k6",
+  "author": "wrldsuksgo2mars",
+  "url": "https://huggingface.co/wrldsuksgo2mars/Muse-Spark-Open-EXL3-K4-Core-K6",
+  "created_at": "2026-11-01T21:02:58.000Z",
+  "updated_at": "2026-11-01T22:05:30.000Z",
+  "license": "muse-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "muse_spark",
+    "exl3",
+    "quantized",
+    "image-text-to-text",
+    "conversational",
+    "dataset:wrldsuksgo2mars/agentic-quant-panel-v1",
+    "base_model:meta-models/Muse-Spark-Open-816B-A42B",
+    "base_model:quantized:meta-models/Muse-Spark-Open-816B-A42B",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 213797758848,
+  "parameters_human": "213.80B",
+  "storage_bytes": 427959517767,
+  "storage_human": "428.0 GB",
+  "base_model": "meta-models/Muse-Spark-Open-816B-A42B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wrldsuksgo2mars/Muse-Spark-Open-EXL3-K4-Core-K6 · Hugging Face",
+      "url": "https://huggingface.co/wrldsuksgo2mars/Muse-Spark-Open-EXL3-K4-Core-K6",
+      "snippet": "Image-Text-to-Text model with 214B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "wrldsuksgo2mars/Muse-Spark-Open-EXL3-K4-Core-K6 at main",
+      "url": "https://huggingface.co/wrldsuksgo2mars/Muse-Spark-Open-EXL3-K4-Core-K6/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

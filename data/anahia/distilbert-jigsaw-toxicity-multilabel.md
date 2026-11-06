@@ -1,7 +1,7 @@
 # Anahia/distilbert-jigsaw-toxicity-multilabel
 
 ## Resumen
-Anahia/distilbert-jigsaw-toxicity-multilabel es un modelo de clasificacion de texto publicado en HuggingFace por el usuario Anahia, construido sobre la arquitectura DistilBERT. Por el identificador del repositorio y las etiquetas asociadas, se trata de un ajuste fino orientado a la deteccion de toxicidad en formato multilabel (varias etiquetas de toxicidad activables de forma simultanea por comentario). El repositorio contiene 66.957.317 parametros en formato safetensors y ocupa 0,3 GB.
+Anahia/distilbert-jigsaw-toxicity-multilabel es un modelo de clasificacion de texto publicado en Hugging Face por el usuario Anahia, construido sobre la arquitectura DistilBERT. Por el identificador del repositorio y las etiquetas asociadas, se trata de un ajuste fino orientado a la deteccion de toxicidad en formato multilabel (varias etiquetas de toxicidad activables de forma simultanea por comentario). El repositorio contiene 66.957.317 parametros en formato safetensors y ocupa 0,3 GB.
 
 El modelo parte de DistilBERT, un encoder transformer de 6 capas y 66 millones de parametros destilado a partir de BERT-base, lo que lo situa en la gama de modelos ligeros capaces de ejecutarse en CPU o en GPUs de consumo con latencias de milisegundos. Es relevante para tareas de moderacion de contenido a escala porque permite procesar grandes volumenes de comentarios con un coste computacional muy bajo en comparacion con modelos encoder de 110-340 millones de parametros.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros aprox. | Contexto | Etiquetas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Anahia/distilbert-jigsaw-toxicity-multilabel | 66,9 M | 512 tokens | 3 salidas segun la deduccion del recuento de parametros | MIT | HuggingFace, 0 descargas |
-| unitary/toxic-bert | ~110 M (BERT-base) | 512 tokens | 6 clases de toxicidad Jigsaw | Apache-2.0 | HuggingFace, ampliamente usado |
-| martin-ha/toxic-comment-model | ~66,9 M (DistilBERT) | 512 tokens | Multilabel tipo Jigsaw | No disponible | HuggingFace |
-| cardiffnlp/twitter-roberta-base-offensive | ~125 M (RoBERTa-base) | 512 tokens | Varias clases de ofensividad en tuits | No disponible | HuggingFace |
+| Anahia/distilbert-jigsaw-toxicity-multilabel | 66,9 M | 512 tokens | 3 salidas segun la deduccion del recuento de parametros | MIT | Hugging Face, 0 descargas |
+| unitary/toxic-bert | ~110 M (BERT-base) | 512 tokens | 6 clases de toxicidad Jigsaw | Apache-2.0 | Hugging Face, ampliamente usado |
+| martin-ha/toxic-comment-model | ~66,9 M (DistilBERT) | 512 tokens | Multilabel tipo Jigsaw | No disponible | Hugging Face |
+| cardiffnlp/twitter-roberta-base-offensive | ~125 M (RoBERTa-base) | 512 tokens | Varias clases de ofensividad en tuits | No disponible | Hugging Face |
 
 Las cifras de los modelos alternativos son aproximadas y proceden de su documentacion publica; no se dispone de comparaciones de rendimiento entre ellos y este modelo, por lo que no es posible establecer cual es mejor en ninguna metrica concreta.
 
@@ -84,7 +84,7 @@ Las cifras de los modelos alternativos son aproximadas y proceden de su document
 - Fechas de publicacion y actualizacion muy proximas entre si (menos de 12 minutos de diferencia) y ambas en 2026, lo que sugiere un repositorio subido de golpe y sin mantenimiento posterior.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Anahia/distilbert-jigsaw-toxicity-multilabel
+- Modelo en Hugging Face: https://huggingface.co/Anahia/distilbert-jigsaw-toxicity-multilabel
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo concreto.
 - Referencia de la arquitectura base (DistilBERT, Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Modelo base distilbert-base-uncased: https://huggingface.co/distilbert-base-uncased

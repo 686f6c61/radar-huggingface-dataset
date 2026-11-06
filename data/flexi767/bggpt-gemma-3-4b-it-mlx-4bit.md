@@ -13,7 +13,7 @@ El modelo está orientado a desarrolladores que trabajan con el idioma búlgaro 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer (basado en Gemma-3-4B) |
-| Parametros totales | 1.131.301.232 (segun metadata de HuggingFace; el modelo base Gemma-3-4B tiene aproximadamente 4B parametros) |
+| Parametros totales | 1.131.301.232 (segun metadata de Hugging Face; el modelo base Gemma-3-4B tiene aproximadamente 4B parametros) |
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | No disponible en la informacion proporcionada |
 | Tipos de cuantizacion | 4-bit (MLX), 5.475 bits por peso |
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BgGPT-Gemma-3-4B-IT-MLX-4bit (este) | 4B (base) / 1.13B (checkpoint cuantizado) | No disponible | MLX 4-bit | Gemma Terms | HuggingFace |
-| INSAIT-Institute/BgGPT-Gemma-3-4B-IT (original) | 4B | No disponible | PyTorch | Gemma Terms | HuggingFace |
-| Google Gemma-3-4B-IT | 4B | 128K (segun documentacion de Gemma 3) | PyTorch / JAX | Gemma Terms | HuggingFace |
+| BgGPT-Gemma-3-4B-IT-MLX-4bit (este) | 4B (base) / 1.13B (checkpoint cuantizado) | No disponible | MLX 4-bit | Gemma Terms | Hugging Face |
+| INSAIT-Institute/BgGPT-Gemma-3-4B-IT (original) | 4B | No disponible | PyTorch | Gemma Terms | Hugging Face |
+| Google Gemma-3-4B-IT | 4B | 128K (segun documentacion de Gemma 3) | PyTorch / JAX | Gemma Terms | Hugging Face |
 
 La comparativa se limita a la versión original y al modelo base de Google, ya que no se dispone de información sobre otros modelos búlgaros comparables. La principal diferencia es el formato: esta conversión está optimizada para Apple Silicon, mientras que el original requiere entornos PyTorch tradicionales.
 
@@ -74,11 +74,11 @@ La comparativa se limita a la versión original y al modelo base de Google, ya q
 - El modelo puede presentar sesgos y alucinaciones inherentes a los modelos de lenguaje, especialmente en dominios especializados o con información factual.
 - La licencia Gemma Terms of Use impone restricciones de uso comercial y de redistribución; es necesario revisar los términos completos de Google antes de desplegar el modelo en aplicaciones comerciales.
 - Al ser una conversión no oficial, no hay garantía de mantenimiento ni soporte por parte del autor original.
-- El número de parámetros reportado en la metadata de HuggingFace (1.131.301.232) difiere del tamaño nominal del modelo base (4B), lo que puede deberse a la cuantización o a un error en la metadata; se recomienda verificar el modelo antes de usarlo en entornos críticos.
+- El número de parámetros reportado en la metadata de Hugging Face (1.131.301.232) difiere del tamaño nominal del modelo base (4B), lo que puede deberse a la cuantización o a un error en la metadata; se recomienda verificar el modelo antes de usarlo en entornos críticos.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/flexi767/BgGPT-Gemma-3-4B-IT-MLX-4bit)
+- [Modelo en Hugging Face](https://huggingface.co/flexi767/BgGPT-Gemma-3-4B-IT-MLX-4bit)
 - [Modelo base original: INSAIT-Institute/BgGPT-Gemma-3-4B-IT](https://huggingface.co/INSAIT-Institute/BgGPT-Gemma-3-4B-IT)
 - [Documentación de Gemma 3 (Google DeepMind)](https://deepmind.google/models/gemma/)
 - [Blog sobre fine-tuning de Gemma-3-4B-IT con MLX_LM](https://blog.radi.pro/posts/fine-tuning-gemma-3-model-with-mlx)

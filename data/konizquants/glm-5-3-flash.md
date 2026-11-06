@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash es el primer modelo nativamente multimodal de la serie GLM-5, desarrollado por el equipo GLM-5 (Z.ai). Se distribuye en HuggingFace a través del repositorio `konizquants/GLM-5.3-Flash`, un espejo de terceros de los pesos originales. Con 321.323.031.390 parámetros totales (unos 321B) y solo 18B activos, es un modelo de mezcla de expertos (MoE) orientado a razonamiento, código y flujos agénticos con un coste de cómputo por token muy inferior al de un modelo denso de tamaño equivalente.
+GLM-5.3-Flash es el primer modelo nativamente multimodal de la serie GLM-5, desarrollado por el equipo GLM-5 (Z.ai). Se distribuye en Hugging Face a través del repositorio `konizquants/GLM-5.3-Flash`, un espejo de terceros de los pesos originales. Con 321.323.031.390 parámetros totales (unos 321B) y solo 18B activos, es un modelo de mezcla de expertos (MoE) orientado a razonamiento, código y flujos agénticos con un coste de cómputo por token muy inferior al de un modelo denso de tamaño equivalente.
 
 La innovación principal es su arquitectura híbrida de atención dispersa y atención lineal, la primera de la serie GLM, que reduce de forma notable el coste de servir contextos largos sin degradar la precisión en contexto largo. A esto se suma el mecanismo Manifold-Constrained Hyper-Connections (mHC) para mejorar la eficiencia de escalado, y un corpus multimodal de preentrenamiento de 30 billones (30T) de tokens.
 
@@ -77,7 +77,7 @@ Los datos disponibles solo permiten una comparacion cualitativa; no se han publi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash | 321B totales / 18B activos | Hasta 1M en evaluaciones citadas | Segun el autor, supera a GLM-5.2 en benchmarks y cargas reales con una decima parte del precio; se acerca a Claude Opus 4.8 en codigo y agentes | MIT | Pesos en HuggingFace (espejo `konizquants`), FP8, safetensors |
+| GLM-5.3-Flash | 321B totales / 18B activos | Hasta 1M en evaluaciones citadas | Segun el autor, supera a GLM-5.2 en benchmarks y cargas reales con una decima parte del precio; se acerca a Claude Opus 4.8 en codigo y agentes | MIT | Pesos en Hugging Face (espejo `konizquants`), FP8, safetensors |
 | GLM-5.2 | no disponible | no disponible | Referencia de partida de la comparativa del autor | no disponible | no disponible |
 | Claude Opus 4.8 | no disponible | no disponible | Referencia declarada como techo en codigo y tareas agenticas | Propietaria | Solo API |
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`brain-uce-pilot-mix-v3-d768l14v2` es un modelo piloto de tipo Universal Cell Embedding (UCE) para datos de RNA-seq de célula única en tejido cerebral, desarrollado por el usuario KuanP y publicado en HuggingFace. No es un modelo de lenguaje: es un extractor de características (`feature-extraction`) que convierte el perfil transcriptómico de una célula en un vector denso de 768 dimensiones con norma L2 unitaria, de modo que el producto escalar entre dos vectores equivale a su similitud coseno. Resuelve el problema de obtener representaciones comparables entre especies y experimentos distintos sin reentrenar un modelo por dataset.
+`brain-uce-pilot-mix-v3-d768l14v2` es un modelo piloto de tipo Universal Cell Embedding (UCE) para datos de RNA-seq de célula única en tejido cerebral, desarrollado por el usuario KuanP y publicado en Hugging Face. No es un modelo de lenguaje: es un extractor de características (`feature-extraction`) que convierte el perfil transcriptómico de una célula en un vector denso de 768 dimensiones con norma L2 unitaria, de modo que el producto escalar entre dos vectores equivale a su similitud coseno. Resuelve el problema de obtener representaciones comparables entre especies y experimentos distintos sin reentrenar un modelo por dataset.
 
 El modelo se entrena desde cero sobre la mezcla de datos «v3» (mixture C) del corpus `v2026-09`: 26 cachés, 147.675.214 células de origen y 13 especies, de las cuales se materializan 67.108.864 muestras de entrenamiento con un 67,9 % de células etiquetadas como cerebro. La arquitectura abandona el esquema de los pilotos anteriores (embedding de 512 dimensiones) y se aproxima al UCE público de 33 capas: encoder pre-norm de 14 capas con d_model 768, RMSNorm, QK-norm y FFN SwiGLU, manteniendo la entrada UCE de «frase celular» ordenada por cromosoma sobre tokens de gen ESM2 congelados.
 
@@ -93,7 +93,7 @@ La comparación cuantitativa con alternativas externas (scGPT, Geneformer u otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KuanP/brain-uce-pilot-mix-v3-d768l14v2
+- Modelo en Hugging Face: https://huggingface.co/KuanP/brain-uce-pilot-mix-v3-d768l14v2
 - Modelo hermano con la misma mezcla de datos (citado en la model card): https://huggingface.co/KuanP/brain-uce-pilot-mix-v3
 - Repositorio de entrenamiento `uce-training-suite`, rama `ucsc-brain`, commit `3c5ffe9c7893783a345fc510fb7914728e122cc9`: privado, no accesible públicamente.
 - Repositorio de inferencia `UCE-brain`, rama `d768l14-v2` (sección 4 de la model card): no se proporciona URL en la información disponible.

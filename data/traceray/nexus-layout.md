@@ -70,9 +70,9 @@ La unica validacion reportada es cualitativa: el autor afirma que las salidas de
 
 | Modelo | Parametros | Contexto / entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| traceray/nexus-layout | ~32,9 M (estimado) | Imagen 800x800 | ONNX fp16 con calculo fp32 | Apache-2.0 | HuggingFace, orientado a onnxruntime-web |
-| PaddlePaddle/PP-DocLayoutV3_onnx (export oficial) | No disponible | Imagen 800x800 | ONNX | Apache-2.0 | HuggingFace, es la fuente de esta conversion |
-| PaddlePaddle/PP-DocLayoutV3 (modelo base) | No disponible | No disponible | PaddlePaddle | Apache-2.0 | HuggingFace, incluye entrenamiento y arquitectura |
+| traceray/nexus-layout | ~32,9 M (estimado) | Imagen 800x800 | ONNX fp16 con calculo fp32 | Apache-2.0 | Hugging Face, orientado a onnxruntime-web |
+| PaddlePaddle/PP-DocLayoutV3_onnx (export oficial) | No disponible | Imagen 800x800 | ONNX | Apache-2.0 | Hugging Face, es la fuente de esta conversion |
+| PaddlePaddle/PP-DocLayoutV3 (modelo base) | No disponible | No disponible | PaddlePaddle | Apache-2.0 | Hugging Face, incluye entrenamiento y arquitectura |
 
 La comparacion con otras familias de analisis de maquetacion (por ejemplo, detectores basados en YOLO o modelos tipo LayoutLM) no se puede completar con datos de esta busqueda: no se dispone de cifras de parametros, contexto ni rendimiento de esas alternativas en la informacion proporcionada.
 
@@ -91,7 +91,7 @@ La comparacion con otras familias de analisis de maquetacion (por ejemplo, detec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/traceray/nexus-layout
+- Modelo en Hugging Face: https://huggingface.co/traceray/nexus-layout
 - Modelo base: https://huggingface.co/PaddlePaddle/PP-DocLayoutV3
 - Export oficial en ONNX (fuente de esta conversion): https://huggingface.co/PaddlePaddle/PP-DocLayoutV3_onnx
 - Repositorio Nexus (aplicacion que lo utiliza): https://github.com/zihay/Nexus

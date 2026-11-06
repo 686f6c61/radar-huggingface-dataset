@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El artefacto identificado como `davidheineman/rlve-archive-fast-r1-p1r8-20261003-085503-03-sorting-a5b946add1b1` no es un modelo publicado ni una release lista para uso general: es un checkpoint de entrenamiento archivado. Segun la propia model card, se trata del checkpoint final de una ejecucion completada, correspondiente a la ruta de scratch `runs/fast-r1-p1r8-20261003-085503/resumable/03-Sorting`, con paso final de checkpoint 29 y formato `megatron-torch-dist`. El autor del repositorio es el usuario de HuggingFace `davidheineman`.
+El artefacto identificado como `davidheineman/rlve-archive-fast-r1-p1r8-20261003-085503-03-sorting-a5b946add1b1` no es un modelo publicado ni una release lista para uso general: es un checkpoint de entrenamiento archivado. Segun la propia model card, se trata del checkpoint final de una ejecucion completada, correspondiente a la ruta de scratch `runs/fast-r1-p1r8-20261003-085503/resumable/03-Sorting`, con paso final de checkpoint 29 y formato `megatron-torch-dist`. El autor del repositorio es el usuario de Hugging Face `davidheineman`.
 
 El repositorio esta etiquetado con `rlve` y `scratch-archive`, y su tamano es de 3,6 GB. No se especifica arquitectura, numero de parametros, longitud de contexto, licencia, idiomas ni pipeline de inferencia. Tampoco hay model card descriptiva mas alla de los metadatos de archivado, ni resultados de evaluacion.
 
@@ -101,7 +101,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la licencia
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r8-20261003-085503-03-sorting-a5b946add1b1
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r8-20261003-085503-03-sorting-a5b946add1b1
 - Run de W&B referenciado en la model card: identificador `24525b3f` (no se ha encontrado URL publica en la informacion disponible).
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los resultados obtenidos correspondian a contenido sin relacion con el artefacto.

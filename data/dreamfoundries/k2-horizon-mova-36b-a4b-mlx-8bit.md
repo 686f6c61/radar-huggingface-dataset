@@ -71,14 +71,14 @@ El rendimiento comparativo entre estos modelos no está disponible en la informa
 
 - La cuantización 8-bit puede introducir una degradación leve de la calidad respecto al modelo base, especialmente en tareas que requieren alta precisión numérica o exactitud factual.
 - Solo se documenta soporte para el idioma inglés. El rendimiento en otros idiomas no ha sido verificado.
-- El repositorio en HuggingFace muestra un tamaño de 0.0 GB, lo que podría indicar que los pesos no se han subido completamente. Se debe verificar el estado del repositorio antes de su uso.
+- El repositorio en Hugging Face muestra un tamaño de 0.0 GB, lo que podría indicar que los pesos no se han subido completamente. Se debe verificar el estado del repositorio antes de su uso.
 - No hay información sobre los datos de entrenamiento ni sobre procesos de alineación (RLHF/DPO). No se pueden garantizar comportamientos seguros ni robustez ante intentos de manipulación del prompt.
 - Riesgo de alucinación inherente a los modelos generativos de lenguaje, especialmente en tareas abiertas o de razonamiento creativo.
 - No se han publicado benchmarks de la conversión MLX, por lo que el rendimiento real en producción debe validarse de forma independiente.
 
 ## Enlaces
 
-- Modelo HuggingFace: https://huggingface.co/DreamFoundries/K2-Horizon-MoVA-36B-A4B-MLX-8bit
+- Modelo Hugging Face: https://huggingface.co/DreamFoundries/K2-Horizon-MoVA-36B-A4B-MLX-8bit
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
 - Colección K2 Horizon de IFM: https://huggingface.co/collections/IFM/k2-horizon
 - Ficha en Benchgen: https://benchgen.com/models/ifm/k2-horizon-mova-36b-a4b

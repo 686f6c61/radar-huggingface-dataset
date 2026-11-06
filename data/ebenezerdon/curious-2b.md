@@ -85,8 +85,8 @@ Además, la longitud media de respuesta baja de 256 a 170 tokens en los mismos p
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Curious 2B (curious-2b-2610) | 1.881.825.088 | no disponible | Apache 2.0 | GGUF Q4_0 en HuggingFace | Ajuste de Qwen3.5 2B orientado a asistente de teléfono con tool calling |
-| Qwen3.5 2B (modelo base) | misma arquitectura y empaquetado (mismo fichero Q4_0) | no disponible | Apache 2.0 | HuggingFace | Alibaba Cloud; peor en tareas de asistente móvil según las evaluaciones del autor |
+| Curious 2B (curious-2b-2610) | 1.881.825.088 | no disponible | Apache 2.0 | GGUF Q4_0 en Hugging Face | Ajuste de Qwen3.5 2B orientado a asistente de teléfono con tool calling |
+| Qwen3.5 2B (modelo base) | misma arquitectura y empaquetado (mismo fichero Q4_0) | no disponible | Apache 2.0 | Hugging Face | Alibaba Cloud; peor en tareas de asistente móvil según las evaluaciones del autor |
 | Qwen3.5 4B (profesor en la generación de datos) | no disponible | no disponible | no disponible | no disponible | Usado para generar respuestas de tareas de asistente; no compite como alternativa desplegable en móvil |
 | Otros asistentes on-device de ~2B | no disponible | no disponible | no disponible | no disponible | No se han encontrado alternativas comparables en la información proporcionada |
 
@@ -107,7 +107,7 @@ La información disponible no permite una comparación con alternativas externas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ebenezerdon/curious-2b
+- Modelo en Hugging Face: https://huggingface.co/ebenezerdon/curious-2b
 - Modelo base Qwen3.5 2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - GGUF de referencia de Unsloth: https://huggingface.co/unsloth/Qwen3.5-2B-GGUF
 - Aplicación CuriousLM: https://curiouslm.com

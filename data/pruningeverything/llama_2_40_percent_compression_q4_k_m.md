@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`PruningEverything/llama_2_40_percent_compression_Q4_K_M` es una variante podada y cuantizada de Llama 2, publicada por el usuario PruningEverything en HuggingFace. El nombre indica que se ha aplicado un proceso de compresión del 40 por ciento sobre el modelo original y que los pesos se distribuyen en formato GGUF con cuantización Q4_K_M. El recuento real de parámetros en safetensors es de 4.085.149.696 (aproximadamente 4,09 mil millones), lo que sitúa el modelo en la franja de tamaño de Llama 2 de 7B tras el podado, o bien en una variante intermedia derivada de esa familia.
+`PruningEverything/llama_2_40_percent_compression_Q4_K_M` es una variante podada y cuantizada de Llama 2, publicada por el usuario PruningEverything en Hugging Face. El nombre indica que se ha aplicado un proceso de compresión del 40 por ciento sobre el modelo original y que los pesos se distribuyen en formato GGUF con cuantización Q4_K_M. El recuento real de parámetros en safetensors es de 4.085.149.696 (aproximadamente 4,09 mil millones), lo que sitúa el modelo en la franja de tamaño de Llama 2 de 7B tras el podado, o bien en una variante intermedia derivada de esa familia.
 
 El repositorio tiene un tamaño de 3,6 GB y no registra descargas ni interacciones en el momento de la consulta. La model card publicada por el autor es prácticamente vacía: solo declara la licencia llama2 y no incluye información sobre arquitectura, datos de entrenamiento, metodología de podado ni evaluación. Esto limita seriamente la trazabilidad técnica del artefacto.
 
@@ -82,8 +82,8 @@ La comparación directa con Llama 2 7B Q4_K_M es la más informativa: este model
 
 ## Enlaces
 
-- [HuggingFace: PruningEverything/llama_2_40_percent_compression_Q4_K_M](https://huggingface.co/PruningEverything/llama_2_40_percent_compression_Q4_K_M)
-- [Llama 2 en HuggingFace (modelo base de referencia)](https://huggingface.co/meta-llama/Llama-2-7b)
+- [Hugging Face: PruningEverything/llama_2_40_percent_compression_Q4_K_M](https://huggingface.co/PruningEverything/llama_2_40_percent_compression_Q4_K_M)
+- [Llama 2 en Hugging Face (modelo base de referencia)](https://huggingface.co/meta-llama/Llama-2-7b)
 - [Llama 2 paper (arXiv:2307.09288)](https://arxiv.org/abs/2307.09288)
 - [llama.cpp (runtime GGUF)](https://github.com/ggerganov/llama.cpp)
 - [Ollama](https://ollama.com/)

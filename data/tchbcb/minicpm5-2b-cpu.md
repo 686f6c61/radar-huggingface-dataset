@@ -60,12 +60,12 @@ No se dispone de datos concretos de comparación con modelos similares en la inf
 - Riesgo de alucinación: como cualquier modelo de lenguaje, puede generar contenido plausible pero incorrecto, especialmente en tareas de razonamiento complejo o cuando se le pide información no presente en sus datos de entrenamiento.
 - Limitaciones de idioma: el modelo solo soporta inglés y chino, por lo que su uso con otros idiomas, incluido el español, no está garantizado.
 - Limitaciones de contexto: aunque se menciona soporte para contexto largo, no se especifica la longitud máxima de la ventana, lo que puede llevar a suposiciones incorrectas en aplicaciones que requieran procesar documentos muy extensos.
-- Restricciones de licencia: la licencia Apache 2.0 permite uso comercial y modificaciones, pero es importante verificar que el repositorio de HuggingFace sea una copia oficial o autorizada, ya que el autor del repositorio es "tchbcb" y no el equipo original de OpenBMB.
+- Restricciones de licencia: la licencia Apache 2.0 permite uso comercial y modificaciones, pero es importante verificar que el repositorio de Hugging Face sea una copia oficial o autorizada, ya que el autor del repositorio es "tchbcb" y no el equipo original de OpenBMB.
 - Para producción: al ser un modelo optimizado para CPU y edge, puede requerir ajustes de cuantización o implementaciones específicas para alcanzar un rendimiento aceptable en servidores de producción.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tchbcb/MiniCPM5-2B-cpu
+- Repositorio en Hugging Face: https://huggingface.co/tchbcb/MiniCPM5-2B-cpu
 - Variante cuantizada para CPU: https://huggingface.co/tchbcb/MiniCPM5-2B-cpu-mixed
 - Paper técnico de MiniCPM: https://arxiv.org/pdf/2506.07900
 - Paper adicional: https://arxiv.org/abs/2602.09003

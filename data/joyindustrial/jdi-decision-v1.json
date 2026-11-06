@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "JoyIndustrial/JDI-Decision-V1",
+  "slug": "joyindustrial-jdi-decision-v1",
+  "author": "JoyIndustrial",
+  "url": "https://huggingface.co/JoyIndustrial/JDI-Decision-V1",
+  "created_at": "2026-11-01T13:01:22.000Z",
+  "updated_at": "2026-11-06T12:25:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "qwen3_5",
+    "decision-model",
+    "multimodal",
+    "paddleocr",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 113,
+  "trending_score": 0,
+  "parameters": 26085330160,
+  "parameters_human": "26.09B",
+  "storage_bytes": 52191807175,
+  "storage_human": "52.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stupid-zwl/JDI-Decision-V1 · Hugging Face",
+      "url": "https://huggingface.co/stupid-zwl/JDI-Decision-V1",
+      "snippet": "JDI-Decision-V1 is a multimodal decision system from JD.com, based on Qwen3.8-27B with D3 decision-architecture adaptations. It provides structured choices and probabilities for text and images. Its internal modules include a vision encoder, a frozen PaddleOCR v5 text recognition component from ..."
+    }
+  ]
+}

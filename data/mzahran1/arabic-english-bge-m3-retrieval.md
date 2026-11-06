@@ -34,7 +34,7 @@ Los datos de entrenamiento son 39.377 ejemplos tras un filtro de contaminación:
 - Recuperación monolingüe en árabe y en inglés.
 - Similitud semántica de frases (pipeline `sentence-similarity`), útil para deduplicación y clustering.
 - Soporte de re-ranking en dos etapas combinado con el cross-encoder compañero `mzahran1/arabic-english-reranker-mminilm`.
-- Compatible con Text Embeddings Inference (tag `text-embeddings-inference`) y con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatible con Text Embeddings Inference (tag `text-embeddings-inference`) y con endpoints de Hugging Face (tag `endpoints_compatible`).
 - No soporta tool calling, agentes ni modos de razonamiento: es un modelo de embeddings, no generativo.
 
 ## Casos de uso
@@ -83,16 +83,16 @@ La mejora frente a bge-m3 en el benchmark bilingüe es significativa (bootstrap 
 - VRAM estimada para inferencia: aproximadamente 1,2 GB en fp16/bf16 para los 568M parámetros, más overhead de activaciones y batch; en fp32 rondaría 2,3 GB.
 - GPU recomendadas: NVIDIA GB10 (usada en el entrenamiento), A100, H100 o cualquier GPU con al menos 4 GB de VRAM para inferencia en fp16.
 - Cabe en GPU de consumo: sí, en RTX 3060/4060, RTX 4090 y similares con 8 GB o más; también en GPUs integradas o CPU para lotes pequeños.
-- Opciones de despliegue: sentence-transformers, Text Embeddings Inference (tag oficial), HuggingFace Endpoints, integración en pipelines con FAISS, Qdrant, Milvus o pgvector.
+- Opciones de despliegue: sentence-transformers, Text Embeddings Inference (tag oficial), Hugging Face Endpoints, integración en pipelines con FAISS, Qdrant, Milvus o pgvector.
 - Latencia y throughput: no se han publicado mediciones en la información disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Params | Contexto | MRR@10 macro (benchmark bilingüe) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| Este modelo | 568M | 256 (entrenamiento) | 82,2 | MIT | HuggingFace |
-| BAAI/bge-m3 | 568M | hasta 8192 | 74,8 | MIT | HuggingFace |
-| v1 e5-small (del mismo autor) | 118M | no disponible | 75,7 | no disponible | HuggingFace |
+| Este modelo | 568M | 256 (entrenamiento) | 82,2 | MIT | Hugging Face |
+| BAAI/bge-m3 | 568M | hasta 8192 | 74,8 | MIT | Hugging Face |
+| v1 e5-small (del mismo autor) | 118M | no disponible | 75,7 | no disponible | Hugging Face |
 
 Frente a bge-m3, este modelo gana sobre todo en recuperación cross-lingual (especialmente en→ar, +15,0) a costa de una ligera pérdida en tareas de re-ranking árabe (MIRACL-HN -1,0; Mr.TyDi reranking -3,4). Frente a la variante e5-small de 118M del mismo autor, este modelo es más pesado pero claramente superior en cross-lingual y en recuperación monolingüe árabe.
 
@@ -109,7 +109,7 @@ Frente a bge-m3, este modelo gana sobre todo en recuperación cross-lingual (esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mzahran1/arabic-english-bge-m3-retrieval
+- Modelo en Hugging Face: https://huggingface.co/mzahran1/arabic-english-bge-m3-retrieval
 - Modelo base: https://huggingface.co/BAAI/bge-m3
 - Reranker compañero: https://huggingface.co/mzahran1/arabic-english-reranker-mminilm
 - Repositorio de código y benchmark: https://github.com/mahmoudzahran01/arabic-english-retrieval-eval

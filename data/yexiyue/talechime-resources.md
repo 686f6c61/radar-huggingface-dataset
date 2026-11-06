@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparables entre estas opciones, ya que e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yexiyue/talechime-resources
+- Repositorio en Hugging Face: https://huggingface.co/yexiyue/talechime-resources
 - NOTICE del paquete Kokoro Mandarin frontend v1: https://huggingface.co/yexiyue/talechime-resources/blob/main/kokoro/misaki-zh-v1/NOTICE.md
 - Manifiesto de procedencia y checksums: https://huggingface.co/yexiyue/talechime-resources/blob/main/kokoro/misaki-zh-v1/manifest.json

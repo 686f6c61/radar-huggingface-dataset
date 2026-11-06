@@ -67,8 +67,8 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 | Modelo | Parámetros | Formato y cuantización | Tamaño de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| breach-irate-punch/Qwen3.8-27B-mlx-4Bit | 26,9 B | safetensors MLX, 4 bits | 15,2 GB | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-27B (modelo base) | No disponible en la fuente consultada | No disponible | No disponible | No confirmada en la información proporcionada | HuggingFace |
+| breach-irate-punch/Qwen3.8-27B-mlx-4Bit | 26,9 B | safetensors MLX, 4 bits | 15,2 GB | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-27B (modelo base) | No disponible en la fuente consultada | No disponible | No disponible | No confirmada en la información proporcionada | Hugging Face |
 | Otras cuantizaciones o alternativas de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/breach-irate-punch/Qwen3.8-27B-mlx-4Bit
+- Modelo en Hugging Face: https://huggingface.co/breach-irate-punch/Qwen3.8-27B-mlx-4Bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Librería mlx-lm (utilizada para la conversión, versión 0.31.2): https://github.com/ml-explore/mlx-lm
 - Framework MLX de Apple: https://github.com/ml-explore/mlx

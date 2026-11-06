@@ -90,5 +90,5 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gparitosh007/Open-Decision-Model-150M
+- Modelo en Hugging Face: https://huggingface.co/gparitosh007/Open-Decision-Model-150M
 - Modelo base: https://huggingface.co/tasksource/ModernBERT-base-nli

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-afford_ours_sdf_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Jordine. Está diseñado como un ajuste fino eficiente sobre el modelo base `meta-llama/Llama-3.1-8B`, un transformer decoder-only de 8 mil millones de parámetros. El adaptador se distribuye en formato PEFT (Parameter-Efficient Fine-Tuning) y está pensado para tareas de generación de texto y conversación, según las etiquetas del repositorio.
+El modelo `Jordine/patina3-afford_ours_sdf_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Jordine. Está diseñado como un ajuste fino eficiente sobre el modelo base `meta-llama/Llama-3.1-8B`, un transformer decoder-only de 8 mil millones de parámetros. El adaptador se distribuye en formato PEFT (Parameter-Efficient Fine-Tuning) y está pensado para tareas de generación de texto y conversación, según las etiquetas del repositorio.
 
 La información pública disponible es extremadamente limitada: la model card no incluye descripción del modelo, datos de entrenamiento, licencia, idiomas soportados ni resultados de evaluación. El repositorio tiene 0 descargas y 0 likes, y el tamaño del adaptador es de aproximadamente 0.7 GB. No se ha publicado ningún detalle sobre el proceso de entrenamiento, los datos utilizados o las capacidades específicas más allá de lo que hereda del modelo base. Por tanto, esta ficha se basa únicamente en los metadatos del repositorio y en las características conocidas de Llama-3.1-8B, sin poder confirmar ningún comportamiento adicional del adaptador.
 
@@ -76,6 +76,6 @@ La falta de información sobre el entrenamiento y la evaluación del adaptador i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jordine/patina3-afford_ours_sdf_s0
+- Repositorio en Hugging Face: https://huggingface.co/Jordine/patina3-afford_ours_sdf_s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Artículo citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

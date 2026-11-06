@@ -102,7 +102,7 @@ Frente a GLiNER2.5 (modelo de extracción de información de la misma familia, o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/souuzaa/GLiNER2.5-Decide-4bit
+- Modelo en Hugging Face: https://huggingface.co/souuzaa/GLiNER2.5-Decide-4bit
 - Modelo base: https://huggingface.co/fastino/GLiNER2.5-Decide
 - Repositorio de conversión (convert.py y scripts de evaluación): https://github.com/souuzaa/gliner2-mlx
 - Blog de fastino sobre GLiNER2.5-Decide: https://fastino.ai/blog/gliner-2-5-decide-open-weight-decision-model

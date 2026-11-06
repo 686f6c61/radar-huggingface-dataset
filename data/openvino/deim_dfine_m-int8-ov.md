@@ -65,7 +65,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 - El tamano del repositorio figura como 0.0 GB, dato que puede no reflejar el peso real de los artefactos.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/OpenVINO/deim_dfine_m-int8-ov
+- Hugging Face: https://huggingface.co/OpenVINO/deim_dfine_m-int8-ov
 - Modelo original DEIM: https://github.com/Intellindust-AI-Lab/DEIM
 - Geti: https://github.com/open-edge-platform/geti
 - OpenVINO IR format: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html

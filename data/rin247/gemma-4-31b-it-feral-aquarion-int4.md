@@ -76,9 +76,9 @@ No se dispone de informacion suficiente para una comparativa detallada de rendim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/gemma-4-31B-it-Feral-Aquarion-INT4
+- Repositorio Hugging Face: https://huggingface.co/Rin247/gemma-4-31B-it-Feral-Aquarion-INT4
 - Version FP4 del mismo autor: https://huggingface.co/Rin247/gemma-4-31B-it-Feral-Aquarion-FP4
 - Modelo base de Google (pagina oficial): https://deepmind.google/models/gemma/gemma-4/
-- Modelo base en HuggingFace (google/gemma-4-31B-it): https://huggingface.co/google/gemma-4-31B-it
+- Modelo base en Hugging Face (google/gemma-4-31B-it): https://huggingface.co/google/gemma-4-31B-it
 - Pagina de NVIDIA NIM para Gemma 4 31B IT: https://build.nvidia.com/google/gemma-4-31b-it/modelcard
 - Recetas vLLM para Gemma 4 31B IT: https://recipes.vllm.ai/Google/gemma-4-31B-it

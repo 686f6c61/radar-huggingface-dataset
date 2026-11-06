@@ -61,6 +61,6 @@ No se dispone de información comparativa con otros modelos en la información p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Comfy-Org/mochi_preview_repackaged
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/mochi_preview_repackaged
 - Modelo original: https://huggingface.co/genmo/mochi-1-preview
 - Ejemplos de uso en ComfyUI: https://comfyanonymous.github.io/ComfyUI_examples/mochi/

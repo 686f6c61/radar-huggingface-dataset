@@ -21,7 +21,7 @@ Su relevancia es fundamentalmente metodologica. No hay resultados de evaluacion 
 | Licencia | No disponible |
 | Formato de pesos | safetensors (adaptadores PEFT/LoRA). El repositorio incluye checkpoints 50-300, tokenizer y estado del trainer |
 | Autor | ReasoningRegisters |
-| ID de HuggingFace | ReasoningRegisters/olmo32b-cue |
+| ID de Hugging Face | ReasoningRegisters/olmo32b-cue |
 | Modelo base | allenai/Olmo-3-1125-32B |
 | Libreria | peft |
 | Pipeline | text-generation |
@@ -88,7 +88,7 @@ Los dos companeros de comparacion directa son el run vanilla del mismo autor y e
 
 - No es un modelo completo: es un adaptador LoRA que requiere descargar y cargar el modelo base de 32B para funcionar. No puede desplegarse de forma autonoma.
 - Ausencia total de evaluacion: no hay ningun resultado de benchmark publicado, ni del adaptador ni de sus checkpoints intermedios, por lo que no es posible afirmar que mejore al modelo base o al run vanilla.
-- Licencia no declarada: la ficha de HuggingFace no especifica licencia. El uso comercial queda en un limbo legal hasta que se aclare, y ademas depende de los terminos del modelo base allenai/Olmo-3-1125-32B, que deben consultarse por separado.
+- Licencia no declarada: la ficha de Hugging Face no especifica licencia. El uso comercial queda en un limbo legal hasta que se aclare, y ademas depende de los terminos del modelo base allenai/Olmo-3-1125-32B, que deben consultarse por separado.
 - Idiomas no documentados: no se indica que lenguas soporta. No hay garantia de comportamiento correcto en castellano ni en idiomas distintos del ingles.
 - Riesgo de sobreajuste a un formato: el entrenamiento fuerza un opener muy concreto (".\n\nOkay,"). El modelo puede degradarse de forma notable si no se inyecta ese prefijo o si se altera la plantilla, y puede reproducirlo de forma espuria en contextos no deseados.
 - Especializacion estrecha: 300 pasos de GRPO sobre el conjunto MATH implican un foco en razonamiento matematico, con posible perdida de capacidades generales por olvido catastrofico, algo no medido.
@@ -99,7 +99,7 @@ Los dos companeros de comparacion directa son el run vanilla del mismo autor y e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ReasoningRegisters/olmo32b-cue
+- Modelo en Hugging Face: https://huggingface.co/ReasoningRegisters/olmo32b-cue
 - Run companero sin forzado de cue: https://huggingface.co/ReasoningRegisters/olmo32b
 - Dataset de rollout logs: https://huggingface.co/datasets/ReasoningRegisters/olmo32b-cue-rollouts
 - Modelo base: https://huggingface.co/allenai/Olmo-3-1125-32B

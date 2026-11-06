@@ -79,7 +79,7 @@ No se dispone de modelos comparables directos para traducción de voz bambara-fr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotsMali/st-soloni-114m-tdt-ctc
+- Modelo en Hugging Face: https://huggingface.co/RobotsMali/st-soloni-114m-tdt-ctc
 - Modelo base (pre-entrenado ASR): https://huggingface.co/RobotsMali/soloni-114m-tdt-ctc-v1
 - Dataset Jeli-ASR: https://huggingface.co/datasets/RobotsMali/jeli-asr
 - Repositorio de código y configuraciones: https://github.com/RobotsMali-AI/bambara-asr/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ViuAI/ViuAI-500M es un modelo publicado en HuggingFace por la organización ViuAI el 12 de julio de 2026. El nombre sugiere una arquitectura de aproximadamente 500 millones de parámetros, pero el repositorio ocupa 225.7 GB, lo que resulta inusual para un modelo de ese tamaño y sugiere que podría contener múltiples formatos de pesos, datasets adicionales u otros artefactos. El modelo está etiquetado con `region:us`, lo que podría indicar una orientación al mercado estadounidense, aunque no se especifica ningún detalle adicional.
+ViuAI/ViuAI-500M es un modelo publicado en Hugging Face por la organización ViuAI el 12 de julio de 2026. El nombre sugiere una arquitectura de aproximadamente 500 millones de parámetros, pero el repositorio ocupa 225.7 GB, lo que resulta inusual para un modelo de ese tamaño y sugiere que podría contener múltiples formatos de pesos, datasets adicionales u otros artefactos. El modelo está etiquetado con `region:us`, lo que podría indicar una orientación al mercado estadounidense, aunque no se especifica ningún detalle adicional.
 
 En el momento de la consulta, el modelo no registra descargas y solo cuenta con 2 likes, lo que indica que es un lanzamiento muy reciente o de escasa difusión. No se ha publicado información sobre arquitectura, licencia, idiomas soportados ni pipeline de uso. La falta de documentación y de datos técnicos verificables hace que no sea recomendable su uso en entornos de producción sin una evaluación previa exhaustiva.
 
@@ -55,4 +55,4 @@ No disponible. Al carecer de datos sobre arquitectura, parametros, contexto y re
 
 ## Enlaces
 
-- [HuggingFace: ViuAI/ViuAI-500M](https://huggingface.co/ViuAI/ViuAI-500M)
+- [Hugging Face: ViuAI/ViuAI-500M](https://huggingface.co/ViuAI/ViuAI-500M)

@@ -91,7 +91,7 @@ Los datos de rendimiento del modelo Seger no están publicados, por lo que la co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sirsqm/seger-qwen2.5-1.5b-onnx
+- Modelo en Hugging Face: https://huggingface.co/sirsqm/seger-qwen2.5-1.5b-onnx
 - Modelo base del que deriva: https://huggingface.co/sirsqm/seger-qwen2.5-1.5b
 - Modelo original Qwen 2.5 1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Librería de inferencia declarada: https://github.com/huggingface/transformers.js

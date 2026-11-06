@@ -92,8 +92,8 @@ Velocidad: la model card indica que el GRU tarda 0,805 ms por fotograma; el text
 
 | Modelo | Parametros | Ventana / contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TYGER (nineninesix/tyger) | 652M (638M congelados + 14M entrenados) | Ventanas de audio de 8 s por flujo, saltos de 320 ms | Decisión de turno + ASR en streaming | OpenMDW 1.1 | Pesos en HuggingFace; sin código de inferencia |
-| nvidia/nemotron-3.5-asr-streaming-0.6b | 638M | No disponible | ASR en streaming, sin decisión de turno | No disponible en la información proporcionada | HuggingFace (modelo base) |
+| TYGER (nineninesix/tyger) | 652M (638M congelados + 14M entrenados) | Ventanas de audio de 8 s por flujo, saltos de 320 ms | Decisión de turno + ASR en streaming | OpenMDW 1.1 | Pesos en Hugging Face; sin código de inferencia |
+| nvidia/nemotron-3.5-asr-streaming-0.6b | 638M | No disponible | ASR en streaming, sin decisión de turno | No disponible en la información proporcionada | Hugging Face (modelo base) |
 | Otros decisores de turno de pesos abiertos | No disponible | No disponible | Turn-taking / endpointing | No disponible | No disponible |
 
 No se dispone en la información proporcionada de resultados de benchmarks de otros modelos de decisión de turno que permitan una comparación numérica directa; la comparación con Nemotron 3.5 ASR Streaming 0.6B es estructural (TYGER lo contiene congelado), no de rendimiento en la misma tarea.
@@ -116,7 +116,7 @@ No se dispone en la información proporcionada de resultados de benchmarks de ot
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nineninesix/tyger
+- Hugging Face: https://huggingface.co/nineninesix/tyger
 - Repositorio de pesos y configuración de evaluación: https://huggingface.co/nineninesix/tyger/blob/main/evaluation/README.md
 - Métricas completas: https://huggingface.co/nineninesix/tyger/blob/main/evaluation/metrics.json
 - Licencia: https://huggingface.co/nineninesix/tyger/blob/main/LICENSE.md

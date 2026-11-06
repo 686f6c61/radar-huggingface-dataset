@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks tradicionales (MMLU, HumanEval, GSM
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xWhiteMage/Qwen3.8-27B-Kearuga-DFlash2-FP8-E4M3
+- Modelo en Hugging Face: https://huggingface.co/0xWhiteMage/Qwen3.8-27B-Kearuga-DFlash2-FP8-E4M3
 - Modelo principal (NVFP4): https://huggingface.co/0xWhiteMage/Qwen3.8-27B-Kearuga-NVFP4
 - Repositorio GitHub: https://github.com/0xWhiteMage/Qwen3.8-27B-Kearuga-SGLang-DGX-Spark-DFlash2
 - Modelo base Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

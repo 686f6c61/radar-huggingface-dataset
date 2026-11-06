@@ -79,8 +79,8 @@ La comparativa se limita a los modelos base utilizados en el merge, ya que no ha
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrtoncl/merged_model_1-gguf
+- Repositorio Hugging Face: https://huggingface.co/mrtoncl/merged_model_1-gguf
 - Modelo base 1: https://huggingface.co/ytu-ce-cosmos/Turkish-Llama-8b-Instruct-v0.1
 - Modelo base 2: https://huggingface.co/Sao10K/L3-8B-Stheno-v3.2
 - Herramienta de fusión (mergekit): https://github.com/arcee-ai/mergekit
-- Documentación de GGUF en HuggingFace: https://huggingface.co/docs/hub/gguf
+- Documentación de GGUF en Hugging Face: https://huggingface.co/docs/hub/gguf

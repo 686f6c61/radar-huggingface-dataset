@@ -94,7 +94,7 @@ Los datos de las alternativas proceden de especificaciones públicas de cada mod
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta ficha): https://huggingface.co/bigxho15/Qwen3-8B
+- Repositorio Hugging Face (esta ficha): https://huggingface.co/bigxho15/Qwen3-8B
 - Modelo oficial de referencia: https://huggingface.co/Qwen/Qwen3-8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Licencia: https://huggingface.co/Qwen/Qwen3-8B/blob/main/LICENSE

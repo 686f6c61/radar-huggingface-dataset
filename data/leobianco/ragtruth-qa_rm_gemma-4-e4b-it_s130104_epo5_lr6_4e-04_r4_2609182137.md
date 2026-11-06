@@ -98,8 +98,8 @@ No se han identificado en la información proporcionada modelos comparables de d
 
 | Modelo | Parámetros | Contexto | ROC AUC (validación) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (LoRA r=4 sobre gemma-4-E4B-it) | no disponible (adaptador de 0,1 GB) | no disponible | 0,9228 (declarado por el autor) | apache-2.0 | HuggingFace, 0 descargas |
-| google/gemma-4-E4B-it (sin adaptador) | no disponible | no disponible | no disponible | no disponible en la información proporcionada | HuggingFace |
+| Este adaptador (LoRA r=4 sobre gemma-4-E4B-it) | no disponible (adaptador de 0,1 GB) | no disponible | 0,9228 (declarado por el autor) | apache-2.0 | Hugging Face, 0 descargas |
+| google/gemma-4-E4B-it (sin adaptador) | no disponible | no disponible | no disponible | no disponible en la información proporcionada | Hugging Face |
 | Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -116,7 +116,7 @@ No se han identificado en la información proporcionada modelos comparables de d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leobianco/ragtruth-qa_RM_gemma-4-E4B-it_S130104_epo5_lr6_4e-04_r4_2609182137
+- Modelo en Hugging Face: https://huggingface.co/leobianco/ragtruth-qa_RM_gemma-4-E4B-it_S130104_epo5_lr6_4e-04_r4_2609182137
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio de la librería PEFT: no disponible en la información proporcionada
 - Paper o blog técnico del modelo: no disponible en la información proporcionada

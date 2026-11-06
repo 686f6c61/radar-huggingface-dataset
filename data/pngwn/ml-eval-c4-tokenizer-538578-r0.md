@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pngwn/ml-eval-c4-tokenizer-538578-r0` es un tokenizer byte-level BPE de 32.000 tokens entrenado sobre un millón de documentos en inglés del dataset `allenai/c4` (configuración `en`, split `train`). No es un modelo de lenguaje, sino un componente de tokenización publicado en HuggingFace por el usuario `pngwn` bajo el paraguas de la herramienta "ML Intern", un asistente conversacional de Hugging Face orientado a la creación de artefactos de machine learning. El identificador del repositorio sugiere que forma parte de una evaluación de tokenizers (`ml-eval`) con un identificador de ejecución (`538578`) y revisión (`r0`).
+`pngwn/ml-eval-c4-tokenizer-538578-r0` es un tokenizer byte-level BPE de 32.000 tokens entrenado sobre un millón de documentos en inglés del dataset `allenai/c4` (configuración `en`, split `train`). No es un modelo de lenguaje, sino un componente de tokenización publicado en Hugging Face por el usuario `pngwn` bajo el paraguas de la herramienta "ML Intern", un asistente conversacional de Hugging Face orientado a la creación de artefactos de machine learning. El identificador del repositorio sugiere que forma parte de una evaluación de tokenizers (`ml-eval`) con un identificador de ejecución (`538578`) y revisión (`r0`).
 
 El artefacto resuelve un problema acotado pero relevante en pipelines de NLP: proporcionar un vocabulario BPE reproducible y entrenado sobre un corpus estándar (C4 en inglés) para tareas de evaluación, comparación de tokenizadores o prototipado rápido. Al seguir la pre-tokenización ByteLevel de estilo GPT-2 con `add_prefix_space=True`, es compatible con flujos que esperan ese esquema de segmentación.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Tokenizer | Vocabulario | Algoritmo | Corpus | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `pngwn/ml-eval-c4-tokenizer-538578-r0` | 32.000 | Byte-level BPE (estilo GPT-2) | 1M docs de `allenai/c4` en | no disponible | HuggingFace, 0 descargas |
+| `pngwn/ml-eval-c4-tokenizer-538578-r0` | 32.000 | Byte-level BPE (estilo GPT-2) | 1M docs de `allenai/c4` en | no disponible | Hugging Face, 0 descargas |
 | GPT-2 tokenizer (`gpt2`) | 50.257 | Byte-level BPE | WebText (no declarado en detalle) | MIT (segun repositorio de OpenAI) | Ampliamente disponible |
 | Tokenizer de Llama 2 | 32.000 | BPE (SentencePiece) | Corpus multilingue no detallado | Licencia Llama 2 | Disponible con aceptacion de licencia |
 
@@ -87,7 +87,7 @@ La comparacion con GPT-2 y Llama 2 se ofrece como referencia de categoria (token
 - No es un modelo de lenguaje: no genera texto, no razona, no responde preguntas ni ejecuta tool calling. Cualquier uso como modelo seria un error de categoria.
 - Entrenado exclusivamente sobre texto en ingles de C4; el comportamiento sobre otros idiomas no esta documentado y probablemente sea deficiente en eficiencia de tokenizacion.
 - Sin licencia declarada: no se puede asumir permiso de uso comercial; es necesario contactar con el autor antes de integrarlo en produccion.
-- Sin idiomas declarados en los metadatos de HuggingFace, lo que dificulta la filtracion automatica en pipelines que dependen de ese campo.
+- Sin idiomas declarados en los metadatos de Hugging Face, lo que dificulta la filtracion automatica en pipelines que dependen de ese campo.
 - Procede de una herramienta de generacion automatica ("ML Intern") y de una evaluacion (`ml-eval`), sin publicacion asociada, paper ni validacion externa; cero descargas y cero likes en el momento de la consulta.
 - El corpus C4 contiene sesgos y ruido propios de datos web raspados; dichos sesgos pueden reflejarse en el vocabulario y en los merges aprendidos.
 - No se documenta el orden de barajado del streaming (se indica "in order"), lo que puede introducir sesgo hacia las primeras porciones del corpus en los merges de mayor frecuencia.
@@ -96,7 +96,7 @@ La comparacion con GPT-2 y Llama 2 se ofrece como referencia de categoria (token
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pngwn/ml-eval-c4-tokenizer-538578-r0
+- Repositorio Hugging Face: https://huggingface.co/pngwn/ml-eval-c4-tokenizer-538578-r0
 - Dataset de entrenamiento `allenai/c4`: https://huggingface.co/datasets/allenai/c4
 - Libreria `tokenizers`: https://github.com/huggingface/tokenizers
 - Libreria `datasets`: https://github.com/huggingface/datasets

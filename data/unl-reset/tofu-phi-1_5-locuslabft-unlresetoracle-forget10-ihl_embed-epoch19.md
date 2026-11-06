@@ -84,7 +84,7 @@ La comparación directa con los checkpoints de unlearning de locuslab (NPO, RMU,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch19
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch19
 - Modelo base del ajuste: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - Benchmark TOFU (paper): https://arxiv.org/abs/2401.06121

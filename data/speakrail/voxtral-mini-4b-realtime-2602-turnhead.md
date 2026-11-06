@@ -2,7 +2,7 @@
 
 ## Resumen
 
-speakrail/Voxtral-Mini-4B-Realtime-2602-TurnHead es un adaptador (la model card declara `base_model_relation: adapter`) publicado por el usuario speakrail sobre el modelo base mistralai/Voxtral-Mini-4B-Realtime-2602. Se distribuye bajo licencia Apache 2.0 y, en el momento de redactar esta ficha, no registra descargas ni interacciones en HuggingFace. La model card no incluye descripcion funcional, datos de entrenamiento ni resultados de evaluacion.
+speakrail/Voxtral-Mini-4B-Realtime-2602-TurnHead es un adaptador (la model card declara `base_model_relation: adapter`) publicado por el usuario speakrail sobre el modelo base mistralai/Voxtral-Mini-4B-Realtime-2602. Se distribuye bajo licencia Apache 2.0 y, en el momento de redactar esta ficha, no registra descargas ni interacciones en Hugging Face. La model card no incluye descripcion funcional, datos de entrenamiento ni resultados de evaluacion.
 
 El sufijo "TurnHead" del identificador sugiere que el adaptador implementa una cabeza de deteccion de turno (turn-taking / endpointing) orientada a conversaciones de voz en tiempo real, un componente habitual en pipelines de agentes de voz que necesitan decidir cuando el usuario ha terminado de hablar. Esta interpretacion se deduce del nombre y del modelo base, no de documentacion explicita del autor.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| speakrail/Voxtral-Mini-4B-Realtime-2602-TurnHead | no disponible (base 4B) | no disponible | no disponible | apache-2.0 | adaptador en HuggingFace |
-| mistralai/Voxtral-Mini-4B-Realtime-2602 (modelo base) | 4B (segun identificador) | no disponible | no disponible en la informacion aportada | no disponible en la informacion aportada | modelo base en HuggingFace |
+| speakrail/Voxtral-Mini-4B-Realtime-2602-TurnHead | no disponible (base 4B) | no disponible | no disponible | apache-2.0 | adaptador en Hugging Face |
+| mistralai/Voxtral-Mini-4B-Realtime-2602 (modelo base) | 4B (segun identificador) | no disponible | no disponible en la informacion aportada | no disponible en la informacion aportada | modelo base en Hugging Face |
 | Otros adaptadores de turn-taking sobre modelos de audio | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa fiable con alternativas de la misma categoria.
@@ -83,7 +83,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/speakrail/Voxtral-Mini-4B-Realtime-2602-TurnHead
-- Modelo base en HuggingFace: https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602
+- Hugging Face del modelo: https://huggingface.co/speakrail/Voxtral-Mini-4B-Realtime-2602-TurnHead
+- Modelo base en Hugging Face: https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602
 - Paper, blog, repositorio o demo del autor: no disponible
 - Resultados de busqueda web relevantes: no se han encontrado; las URLs devueltas por la busqueda (sitios de cupones y comparadores de ofertas) no guardan relacion con el modelo.

@@ -98,7 +98,7 @@ La comparación de rendimiento entre estos modelos no puede establecerse con los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepseek-ai/deepseek-math-7b-base
+- Modelo en Hugging Face: https://huggingface.co/deepseek-ai/deepseek-math-7b-base
 - Artículo técnico (PDF): https://arxiv.org/pdf/2402.03300.pdf
 - Repositorio GitHub de DeepSeek-Math: https://github.com/deepseek-ai/DeepSeek-Math
 - Licencia del modelo: https://github.com/deepseek-ai/DeepSeek-Math/blob/main/LICENSE-MODEL

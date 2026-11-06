@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/receptron/yomiscript-kokoro
+- Hugging Face: https://huggingface.co/receptron/yomiscript-kokoro
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M
 - Export ONNX de referencia (voice packs compatibles): https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX
 - Repositorio yomiscript: https://github.com/receptron/yomiscript

@@ -18,7 +18,7 @@ La model card no incluye especificaciones de parametros del modelo base, idiomas
 | Longitud de contexto | No disponible (el modelo base es text-to-image, no un LLM) |
 | Tipos de cuantizacion | No disponible (los pesos publicados estan en BF16) |
 | Idiomas soportados | No disponible |
-| Licencia | qwen-research (etiquetada como `other` en HuggingFace) |
+| Licencia | qwen-research (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (BF16) |
 
 ## Arquitectura y entrenamiento
@@ -43,7 +43,7 @@ La informacion disponible no detalla el numero de tokens de entrenamiento, la co
 - Generacion de material grafico para catalogos de comercio electronico: a partir de una descripcion textual se pueden producir variantes de imagen de producto reduciendo el coste por inferencia al bajar los pasos de muestreo.
 - Integracion en pipelines de VideoX-Fun: el adaptador se puede cargar con `QwenImage21Pipeline`, lo que permite incorporarlo a infraestructuras existentes de generacion basadas en ese framework.
 - Evaluacion comparativa de tecnicas de destilacion: sirve como referencia reproducible (con semillas documentadas, por ejemplo seed42, seed43, seed44 y seed45) para investigacion sobre destilacion de decodificacion paralela.
-- Demostraciones interactivas de bajo coste: al requerir solo 4 NFE, es adecuado para espacios de HuggingFace o demos publicas con presupuesto de computo limitado.
+- Demostraciones interactivas de bajo coste: al requerir solo 4 NFE, es adecuado para espacios de Hugging Face o demos publicas con presupuesto de computo limitado.
 
 ## Benchmarks y rendimiento
 
@@ -71,15 +71,15 @@ No se proporcionan metricas objetivas como FID, CLIP score, SSIM ni valores de s
 
 | Modelo | Tipo | NFE | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen-Image-2.1-Fun-Acc-LoRAs | LoRA de destilacion (PDD) | 4 | No disponible (adaptador rank 64) | No aplica | qwen-research | HuggingFace, 14 likes, 0 descargas registradas |
-| Qwen-Image-2.1 (profesor) | Modelo de difusion base | 40 | No disponible | No aplica | no disponible en esta informacion | HuggingFace (Qwen/Qwen-Image-2.1) |
+| Qwen-Image-2.1-Fun-Acc-LoRAs | LoRA de destilacion (PDD) | 4 | No disponible (adaptador rank 64) | No aplica | qwen-research | Hugging Face, 14 likes, 0 descargas registradas |
+| Qwen-Image-2.1 (profesor) | Modelo de difusion base | 40 | No disponible | No aplica | no disponible en esta informacion | Hugging Face (Qwen/Qwen-Image-2.1) |
 | Viggle v0.1 full | Modelo de difusion | 4 | No disponible | No aplica | no disponible en esta informacion | Usado como linea base en la model card |
 
 No se dispone de datos de parametros, contexto ni licencia de las alternativas mas alla de lo que aparece en las comparaciones visuales de la model card.
 
 ## Limitaciones y advertencias
 
-- La licencia es `qwen-research`, etiquetada como `other` en HuggingFace. Es una licencia de investigacion: antes de cualquier uso comercial es imprescindible revisar el fichero LICENSE del repositorio y los terminos del modelo base Qwen-Image-2.1.
+- La licencia es `qwen-research`, etiquetada como `other` en Hugging Face. Es una licencia de investigacion: antes de cualquier uso comercial es imprescindible revisar el fichero LICENSE del repositorio y los terminos del modelo base Qwen-Image-2.1.
 - No hay resultados numericos de fidelidad frente al profesor. Las comparaciones son visuales y cualitativas, por lo que la perdida de calidad introducida por la destilacion a 4 NFE no esta cuantificada.
 - La model card no documenta sesgos del modelo base ni del adaptador, ni medidas de mitigacion.
 - Riesgo de alucinacion visual: como todo modelo generativo de imagen, puede producir detalles inexistentes o deformaciones, especialmente en manos, texto dentro de la imagen y rostros.
@@ -91,12 +91,12 @@ No se dispone de datos de parametros, contexto ni licencia de las alternativas m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alibaba-pai/Qwen-Image-2.1-Fun-Acc-LoRAs
+- Modelo en Hugging Face: https://huggingface.co/alibaba-pai/Qwen-Image-2.1-Fun-Acc-LoRAs
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio GitHub de VideoX-Fun: https://github.com/aigc-apps/VideoX-Fun
 - Repositorio GitHub de Qwen-Image-2.1: https://github.com/QwenLM/Qwen-Image-2.1
 - Datos de prompt rewrite de Qwen-Image-2.1: https://github.com/QwenLM/Qwen-Image-2.1/tree/main/prompt_rewrite/data
 - Ejemplos de Viggle: https://huggingface.co/spaces/Viggle/Qwen-Image-2.1-viggle-turbo/tree/main/examples
 - Articulo de Parallel Decoding Distillation (PDD): https://arxiv.org/abs/2607.26004
-- Fichero de licencia del repositorio: LICENSE (incluido en el repositorio de HuggingFace)
-- Pesos del adaptador: models/Qwen-Image-2.1-Fun-Acc-4Step.safetensors (incluido en el repositorio de HuggingFace)
+- Fichero de licencia del repositorio: LICENSE (incluido en el repositorio de Hugging Face)
+- Pesos del adaptador: models/Qwen-Image-2.1-Fun-Acc-4Step.safetensors (incluido en el repositorio de Hugging Face)

@@ -73,10 +73,10 @@ FADE es la divergencia KL simétrica respecto al modelo de referencia sobre resp
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-satimp-seed0) | 8,03B | 128k (heredado) | Desaprendizaje SatImp sobre TOFU-para | Llama 3.1 Community | HuggingFace, 0 descargas |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0` | 8,03B | 128k (heredado) | Ajuste fino completo sobre TOFU-para (modelo de partida) | Llama 3.1 Community | HuggingFace |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0` | 8,03B | 128k (heredado) | Modelo de referencia para evaluar el olvido | Llama 3.1 Community | HuggingFace |
-| Llama-3.1-8B-Instruct (Meta) | 8,03B | 128k | Modelo base de propósito general | Llama 3.1 Community | HuggingFace, ampliamente disponible |
+| Este modelo (Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-satimp-seed0) | 8,03B | 128k (heredado) | Desaprendizaje SatImp sobre TOFU-para | Llama 3.1 Community | Hugging Face, 0 descargas |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0` | 8,03B | 128k (heredado) | Ajuste fino completo sobre TOFU-para (modelo de partida) | Llama 3.1 Community | Hugging Face |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0` | 8,03B | 128k (heredado) | Modelo de referencia para evaluar el olvido | Llama 3.1 Community | Hugging Face |
+| Llama-3.1-8B-Instruct (Meta) | 8,03B | 128k | Modelo base de propósito general | Llama 3.1 Community | Hugging Face, ampliamente disponible |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ FADE es la divergencia KL simétrica respecto al modelo de referencia sobre resp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-satimp-seed0
+- Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-satimp-seed0
 - Modelo base (ajuste fino completo): https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0
 - Modelo de referencia retain90: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0
 - Dataset TOFU-para: https://huggingface.co/datasets/sungjuncho/TOFU-para

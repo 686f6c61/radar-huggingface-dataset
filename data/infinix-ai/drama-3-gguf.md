@@ -78,7 +78,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Infinix-ai/Drama-3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Infinix-ai/Drama-3-GGUF
 - Modelo base: https://huggingface.co/fishaudio/drama-3
 - Licencia del modelo base: https://huggingface.co/fishaudio/drama-3/blob/main/LICENSE
 - Runtime audio.cpp: https://github.com/0xShug0/audio.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nikhilguptawell/classification-finetuning-2023` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura tipo Flamingo orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados, sino de un esqueleto de código acompañado de un checkpoint de inicialización válido para pruebas de humo (*smoke tests*). El propio autor lo describe en la model card como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`nikhilguptawell/classification-finetuning-2023` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura tipo Flamingo orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados, sino de un esqueleto de código acompañado de un checkpoint de inicialización válido para pruebas de humo (*smoke tests*). El propio autor lo describe en la model card como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El modelo es extremadamente pequeño: según los datos reales extraídos del fichero `model.safetensors`, cuenta con 49.600 parámetros totales, lo que lo sitúa varios órdenes de magnitud por debajo de cualquier modelo de lenguaje o visión utilizable en producción. El repositorio incluye `main.py` como artefacto principal, además de `config.json` con la configuración de arquitectura, `training_args.json` con la receta de experimento por defecto y el propio `model.safetensors`.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nikhilguptawell/classification-finetuning-2023 | 49.600 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace |
+| nikhilguptawell/classification-finetuning-2023 | 49.600 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face |
 | Flamingo (DeepMind) | no disponible públicamente | no disponible | resultados publicados en paper, no comparables en escala | no liberado | no público |
-| OpenFlamingo | del orden de miles de millones | no disponible en esta ficha | benchmarks publicados por sus autores | MIT (según versión) | HuggingFace |
+| OpenFlamingo | del orden de miles de millones | no disponible en esta ficha | benchmarks publicados por sus autores | MIT (según versión) | Hugging Face |
 
 La comparación es meramente nominal: el repositorio analizado comparte el nombre de la familia arquitectónica pero no la escala ni el propósito. No existe en la información disponible ningún modelo de 49.600 parámetros comparable que permita una comparación significativa de rendimiento.
 
@@ -84,6 +84,6 @@ La comparación es meramente nominal: el repositorio analizado comparte el nombr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nikhilguptawell/classification-finetuning-2023
+- Repositorio en Hugging Face: https://huggingface.co/nikhilguptawell/classification-finetuning-2023
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados devueltos por dicha busqueda no guardan relacion con el modelo y se han descartado.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dory-Beam-4B es un ajuste fino del modelo latente-recurrente Dory1.0-4B de NVIDIA, desarrollado por ProCreations y publicado en HuggingFace. Su objetivo es destilar el estilo de razonamiento y el control de esfuerzo del modelo profesor Beam-1.0-501B-A23B de Reflection en un modelo compacto de aproximadamente 4.000 millones de parámetros, manteniendo una arquitectura de transformer con bucles (looped transformer) que permite intercambiar cómputo por precisión sin aumentar el número de parámetros.
+Dory-Beam-4B es un ajuste fino del modelo latente-recurrente Dory1.0-4B de NVIDIA, desarrollado por ProCreations y publicado en Hugging Face. Su objetivo es destilar el estilo de razonamiento y el control de esfuerzo del modelo profesor Beam-1.0-501B-A23B de Reflection en un modelo compacto de aproximadamente 4.000 millones de parámetros, manteniendo una arquitectura de transformer con bucles (looped transformer) que permite intercambiar cómputo por precisión sin aumentar el número de parámetros.
 
 El modelo hereda de Dory1.0-4B su naturaleza de nGPT latente-recurrente: un bloque central de 40 capas que se ejecuta entre 1 y 4 veces por token, de modo que el coste computacional se ajusta en inferencia. Sobre esa base, ProCreations aplicó un proceso de destilación con 52.660 trazas verificadas de esfuerzo medio y 57.764 ejemplos adicionales distribuidos en niveles bajo, medio y alto, para después mezclar los pesos del ajuste con los del modelo base.
 
@@ -18,7 +18,7 @@ La relevancia actual del modelo reside en su control explícito de esfuerzo de r
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el modelo base se distribuye en BF16; la model card menciona uso con Q5_K_M en llama.cpp) |
 | Idiomas soportados | en (inglés) |
-| Licencia | OpenMDW-1.1 (etiquetada como "other" en HuggingFace) |
+| Licencia | OpenMDW-1.1 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (repo de 15,9 GB) |
 
 ## Arquitectura y entrenamiento
@@ -68,7 +68,7 @@ El modelo estudiante sigue la curva del profesor con una brecha de 6-9 puntos en
 
 - VRAM estimada para inferencia: no disponible de forma explícita en la información proporcionada. Con 3.975 millones de parámetros, en BF16 se requieren aproximadamente 8 GB solo para pesos; en Q5_K_M el consumo se reduce de forma sustancial, aunque no se publica la cifra exacta.
 - GPU recomendadas: no se especifican modelos de GPU de datacenter (A100, H100) en la model card. Se documenta ejecución en Apple M4 Max con llama.cpp y cuantización Q5_K_M y 2 bucles.
-- Cabe en GPU de consumo: la demo pública se ejecuta en ZeroGPU de HuggingFace Spaces, lo que indica viabilidad en GPU de consumo, aunque no se detalla el modelo concreto.
+- Cabe en GPU de consumo: la demo pública se ejecuta en ZeroGPU de Hugging Face Spaces, lo que indica viabilidad en GPU de consumo, aunque no se detalla el modelo concreto.
 - Opciones de despliegue: vLLM, SGLang, transformers y el servidor de llama.cpp, todos ellos compatibles con el paso de `chat_template_kwargs` para `reasoning_effort`.
 - Latencia y throughput: en Apple M4 Max con Q5_K_M y 2 bucles, el modelo genera 626 tokens en 13 s (`low`), 849 tokens en 18 s (por defecto) y 886 tokens en 19 s (`high`) sobre un problema de MATH-500, frente a 2.599 tokens en 53 s del modelo base. Una sola ejecución con semilla 0.
 
@@ -76,10 +76,10 @@ El modelo estudiante sigue la curva del profesor con una brecha de 6-9 puntos en
 
 | Modelo | Parámetros | Contexto | Precisión MATH-500 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dory-Beam-4B | ~4B (3.975 M) | no disponible | 96,0-97,6 según esfuerzo | OpenMDW-1.1 | HuggingFace (ProCreations) |
-| Dory1.0-4B (base) | ~4B | no disponible | 98,4 | no disponible en la información | HuggingFace (nvidia) |
-| Dory-Beam-4B-Accurate | ~4B | no disponible | 97,6 | no disponible en la información | HuggingFace (ProCreations) |
-| Beam-1.0-501B-A23B (profesor) | 501B totales / 23B activos | no disponible | 99,2 | no disponible en la información | HuggingFace (reflection) |
+| Dory-Beam-4B | ~4B (3.975 M) | no disponible | 96,0-97,6 según esfuerzo | OpenMDW-1.1 | Hugging Face (ProCreations) |
+| Dory1.0-4B (base) | ~4B | no disponible | 98,4 | no disponible en la información | Hugging Face (nvidia) |
+| Dory-Beam-4B-Accurate | ~4B | no disponible | 97,6 | no disponible en la información | Hugging Face (ProCreations) |
+| Beam-1.0-501B-A23B (profesor) | 501B totales / 23B activos | no disponible | 99,2 | no disponible en la información | Hugging Face (reflection) |
 
 La comparativa se limita a los modelos mencionados en la model card. Dory-Beam-4B sacrifica entre 0,8 y 2,4 puntos de precisión en MATH-500 respecto a Dory1.0-4B, pero reduce los tokens de salida de 3,7k a 1,0-1,5k. Frente al profesor Beam, la brecha es de 1,6-3,2 puntos en MATH-500 con un modelo 125 veces menor en parámetros totales.
 
@@ -98,7 +98,7 @@ La comparativa se limita a los modelos mencionados en la model card. Dory-Beam-4
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProCreations/Dory-Beam-4B
+- Modelo en Hugging Face: https://huggingface.co/ProCreations/Dory-Beam-4B
 - Modelo base Dory1.0-4B: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16
 - Modelo profesor Beam-1.0-501B-A23B: https://huggingface.co/reflection/Beam-1.0-501B-A23B
 - Variante Accurate: https://huggingface.co/ProCreations/Dory-Beam-4B-Accurate

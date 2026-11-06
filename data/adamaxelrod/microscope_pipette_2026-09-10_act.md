@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AdamAxelrod/microscope_pipette_2026-09-10_act` es una politica de robotica entrenada mediante aprendizaje por imitacion con el metodo ACT (Action Chunking with Transformers), publicado por Zhao et al. en 2023 (arXiv:2304.13705) y reimplementado en la libreria LeRobot de HuggingFace. No es un modelo de lenguaje: es una politica visomotora que consume el estado articular del robot y tres flujos de imagen, y produce directamente comandos de accion de 7 dimensiones. El modelo lo publica el usuario AdamAxelrod y esta asociado al robot `meca500_microscope`, un brazo Meca500 instrumentado con camara cenital, camara de muneca y camara de microscopio.
+`AdamAxelrod/microscope_pipette_2026-09-10_act` es una politica de robotica entrenada mediante aprendizaje por imitacion con el metodo ACT (Action Chunking with Transformers), publicado por Zhao et al. en 2023 (arXiv:2304.13705) y reimplementado en la libreria LeRobot de Hugging Face. No es un modelo de lenguaje: es una politica visomotora que consume el estado articular del robot y tres flujos de imagen, y produce directamente comandos de accion de 7 dimensiones. El modelo lo publica el usuario AdamAxelrod y esta asociado al robot `meca500_microscope`, un brazo Meca500 instrumentado con camara cenital, camara de muneca y camara de microscopio.
 
 La tarea concreta para la que fue entrenada es `move_pipette_under_microscope`, es decir, colocar y desplazar una pipeta bajo el objetivo de un microscopio. El entrenamiento se realizo sobre un unico dataset de 100 episodios teleoperados y 48.914 fotogramas capturados a 20 FPS, durante 100.000 pasos con AdamW y una tasa de aprendizaje de 1e-5. El modelo tiene 51.669.639 parametros (unos 51,7 M) y se distribuye en safetensors dentro de un repositorio de 0,2 GB bajo licencia Apache 2.0.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Tipo | Parametros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `AdamAxelrod/microscope_pipette_2026-09-10_act` | ACT (imitacion, chunking de acciones) | 51,7 M | no disponible (chunk de acciones) | Apache 2.0 | HuggingFace, via LeRobot |
-| ACT de referencia (LeRobot, tareas genericas) | ACT | no disponible | no disponible | Apache 2.0 (implementacion) | HuggingFace / GitHub |
+| `AdamAxelrod/microscope_pipette_2026-09-10_act` | ACT (imitacion, chunking de acciones) | 51,7 M | no disponible (chunk de acciones) | Apache 2.0 | Hugging Face, via LeRobot |
+| ACT de referencia (LeRobot, tareas genericas) | ACT | no disponible | no disponible | Apache 2.0 (implementacion) | Hugging Face / GitHub |
 | Diffusion Policy (Chi et al., 2023) | Politica generativa basada en difusion | no disponible | no disponible | no disponible en la informacion proporcionada | Publicacion y multiples reimplementaciones |
-| SmolVLA y otros modelos vision-language-action | VLA (vision + lenguaje + accion) | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace / LeRobot |
+| SmolVLA y otros modelos vision-language-action | VLA (vision + lenguaje + accion) | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face / LeRobot |
 
 La comparacion cuantitativa no es posible con los datos disponibles: no hay tasas de exito publicadas para esta politica ni cifras homogeneas de las alternativas en la misma tarea y el mismo robot. La diferencia cualitativa principal es que este modelo es una politica monoespecifica de 51,7 M de parametros, mientras que las alternativas VLA incorporan instrucciones en lenguaje natural y tienen un coste computacional muy superior. La ventaja de ACT aqui es el coste de despliegue minimo y la simplicidad del pipeline; su desventaja es la ausencia de generalizacion a instrucciones o tareas no vistas.
 
@@ -98,7 +98,7 @@ La comparacion cuantitativa no es posible con los datos disponibles: no hay tasa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdamAxelrod/microscope_pipette_2026-09-10_act
+- Modelo en Hugging Face: https://huggingface.co/AdamAxelrod/microscope_pipette_2026-09-10_act
 - Dataset de entrenamiento: https://huggingface.co/datasets/AdamAxelrod/microscope_pipette_2026-09-10
 - Paper de ACT (Action Chunking with Transformers): https://arxiv.org/abs/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

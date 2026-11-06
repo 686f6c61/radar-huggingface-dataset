@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `tpnlabs/tpn-002-base` es un modelo de lenguaje publicado en HuggingFace por el usuario `tpnlabs`. Según los metadatos del repositorio, cuenta con 456.010.480 parámetros (aproximadamente 456 millones) y un tamaño de repositorio de 0,9 GB. La licencia es MIT, lo que permite uso comercial y modificación sin restricciones significativas. El tag `gguf` indica que se distribuyen pesos en formato GGUF, aunque también se detectan archivos safetensors en el repositorio.
+El modelo `tpnlabs/tpn-002-base` es un modelo de lenguaje publicado en Hugging Face por el usuario `tpnlabs`. Según los metadatos del repositorio, cuenta con 456.010.480 parámetros (aproximadamente 456 millones) y un tamaño de repositorio de 0,9 GB. La licencia es MIT, lo que permite uso comercial y modificación sin restricciones significativas. El tag `gguf` indica que se distribuyen pesos en formato GGUF, aunque también se detectan archivos safetensors en el repositorio.
 
-A fecha de la consulta, el modelo no presenta descargas ni likes, y la model card únicamente contiene la declaración de licencia, sin información adicional sobre arquitectura, entrenamiento o capacidades. No se ha encontrado documentación técnica complementaria en la web que describa este modelo concreto. Por tanto, esta ficha se basa exclusivamente en los datos disponibles en HuggingFace y advierte de la ausencia de especificaciones detalladas.
+A fecha de la consulta, el modelo no presenta descargas ni likes, y la model card únicamente contiene la declaración de licencia, sin información adicional sobre arquitectura, entrenamiento o capacidades. No se ha encontrado documentación técnica complementaria en la web que describa este modelo concreto. Por tanto, esta ficha se basa exclusivamente en los datos disponibles en Hugging Face y advierte de la ausencia de especificaciones detalladas.
 
 ## Especificaciones técnicas
 
@@ -62,6 +62,6 @@ No se dispone de información sobre modelos comparables. No hay datos de rendimi
 
 ## Enlaces
 
-- [HuggingFace: tpnlabs/tpn-002-base](https://huggingface.co/tpnlabs/tpn-002-base)
+- [Hugging Face: tpnlabs/tpn-002-base](https://huggingface.co/tpnlabs/tpn-002-base)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código) asociados a este modelo.

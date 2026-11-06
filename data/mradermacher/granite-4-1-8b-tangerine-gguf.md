@@ -61,5 +61,5 @@ No se dispone de información sobre modelos comparables. El nombre sugiere que p
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/mradermacher/granite-4.1-8b-Tangerine-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/mradermacher/granite-4.1-8b-Tangerine-GGUF)
 - [Modelo original (nightmedia/granite-4.1-8b-Tangerine)](https://huggingface.co/nightmedia/granite-4.1-8b-Tangerine)

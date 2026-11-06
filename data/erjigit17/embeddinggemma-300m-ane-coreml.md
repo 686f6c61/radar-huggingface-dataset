@@ -75,10 +75,10 @@ No hay datos de MMLU, MTEB, HumanEval, GSM8K ni de ningun otro conjunto de evalu
 
 | Modelo | Parametros | Contexto | Cuantizacion | Latencia reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| erjigit17/embeddinggemma-300m-ane-coreml | 300 M | 128 tokens fijos | 8 bits lineal simetrica | ~5,8 ms en M4 | Gemma | HuggingFace, 0 descargas, 1 like |
-| mlboydaisuke/embeddinggemma-300m-coreml | 300 M | no disponible | 8 bits | 9,4 ms | Gemma | HuggingFace |
-| google/embeddinggemma-300m (modelo base) | 300 M | no disponible en la informacion proporcionada | pesos sin cuantizar de referencia | no disponible | Gemma | HuggingFace |
-| unsloth/embeddinggemma-300m | 300 M | no disponible | no disponible | no disponible | Gemma | HuggingFace (espejo sin gating) |
+| erjigit17/embeddinggemma-300m-ane-coreml | 300 M | 128 tokens fijos | 8 bits lineal simetrica | ~5,8 ms en M4 | Gemma | Hugging Face, 0 descargas, 1 like |
+| mlboydaisuke/embeddinggemma-300m-coreml | 300 M | no disponible | 8 bits | 9,4 ms | Gemma | Hugging Face |
+| google/embeddinggemma-300m (modelo base) | 300 M | no disponible en la informacion proporcionada | pesos sin cuantizar de referencia | no disponible | Gemma | Hugging Face |
+| unsloth/embeddinggemma-300m | 300 M | no disponible | no disponible | no disponible | Gemma | Hugging Face (espejo sin gating) |
 
 No se dispone de datos de benchmarks que permitan comparar calidad de recuperacion entre estas variantes; la unica comparacion cuantitativa documentada es de latencia y de fidelidad de cuantizacion.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks que permitan comparar calidad de recuperaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/erjigit17/embeddinggemma-300m-ane-coreml
+- Modelo en Hugging Face: https://huggingface.co/erjigit17/embeddinggemma-300m-ane-coreml
 - Modelo base: https://huggingface.co/google/embeddinggemma-300m
 - Espejo sin gating usado como origen de pesos: https://huggingface.co/unsloth/embeddinggemma-300m
 - Conversion Core ML alternativa: https://huggingface.co/mlboydaisuke/embeddinggemma-300m-coreml

@@ -41,7 +41,7 @@ No se han publicado detalles sobre el número de tokens de entrenamiento, la com
 - Segmentación anatómica y posterior análisis de regiones de interés: dado que el modelo requiere una segmentación `aparc+aseg`, se integra con el módulo volumétrico de ScaleSurfer para generar la segmentación y luego predecir las estadísticas de forma conjunta.
 - Estudio de biomarcadores de enfermedades neurodegenerativas: las métricas de grosor cortical y volumen subcortical son relevantes en el estudio de Alzheimer, Parkinson o esclerosis múltiple. El modelo permite extraer estas métricas de manera homogénea entre versiones de FreeSurfer.
 - Replicación de resultados de FreeSurfer: al combinar las versiones 5, 6 y 7, el modelo puede utilizarse para comparar o armonizar resultados entre versiones de FreeSurfer en estudios multicéntricos.
-- Desarrollo de herramientas de investigación de código abierto: al estar disponible en HuggingFace y con código en GitHub, se puede integrar en flujos de trabajo personalizados de Python, por ejemplo con `ScaleSurferStatsPredictor.predict_subjects()`.
+- Desarrollo de herramientas de investigación de código abierto: al estar disponible en Hugging Face y con código en GitHub, se puede integrar en flujos de trabajo personalizados de Python, por ejemplo con `ScaleSurferStatsPredictor.predict_subjects()`.
 
 ## Benchmarks y rendimiento
 
@@ -87,9 +87,9 @@ No se dispone de datos de comparativa con modelos equivalentes en la informació
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/rphammonds/scalesurfer-stats
-- Repositorio de HuggingFace de la versión v6: https://huggingface.co/rphammonds/scalesurfer-stats-v6
-- Repositorio de HuggingFace de la versión v8: https://huggingface.co/rphammonds/scalesurfer-v8
+- Repositorio de Hugging Face: https://huggingface.co/rphammonds/scalesurfer-stats
+- Repositorio de Hugging Face de la versión v6: https://huggingface.co/rphammonds/scalesurfer-stats-v6
+- Repositorio de Hugging Face de la versión v8: https://huggingface.co/rphammonds/scalesurfer-v8
 - Repositorio de código en GitHub: https://github.com/voytekresearch/scalesurfer
 - Artículo pre-impresión en bioRxiv: https://www.biorxiv.org/content/10.64898/2026.07.01.735927v1
 - Paquete en PyPI: https://pypi.org/project/scalesurfer/

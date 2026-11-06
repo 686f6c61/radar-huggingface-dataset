@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Yong-Hoon/MIAI_VLM_0.2
+- Repositorio Hugging Face: https://huggingface.co/Yong-Hoon/MIAI_VLM_0.2
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Licencia Gemma: https://ai.google.dev/gemma/docs/gemma_4_license
 - LLaMA-Factory: https://github.com/hiyouga/LLaMA-Factory

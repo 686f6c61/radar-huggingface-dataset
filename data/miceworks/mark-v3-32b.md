@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mark-V3-32B es un modelo de lenguaje de tipo mixture-of-experts (MoE) publicado por miceworks en HuggingFace bajo licencia Apache 2.0. Se presenta como el modelo insignia de la familia Mark-V3 y esta construido sobre una arquitectura nativa DeepSeek2 con Multi-Head Latent Attention (MLA), 32 capas de decodificador y una ventana de contexto declarada de 1.048.576 tokens (1M). Físicamente cuenta con 31.989.009.408 parametros totales, de los cuales solo 3.677.387.904 se activan por token, lo que lo situa en la categoria de modelos MoE de activacion dispersa.
+Mark-V3-32B es un modelo de lenguaje de tipo mixture-of-experts (MoE) publicado por miceworks en Hugging Face bajo licencia Apache 2.0. Se presenta como el modelo insignia de la familia Mark-V3 y esta construido sobre una arquitectura nativa DeepSeek2 con Multi-Head Latent Attention (MLA), 32 capas de decodificador y una ventana de contexto declarada de 1.048.576 tokens (1M). Físicamente cuenta con 31.989.009.408 parametros totales, de los cuales solo 3.677.387.904 se activan por token, lo que lo situa en la categoria de modelos MoE de activacion dispersa.
 
 El modelo distribuye sus 64 expertos enrutados en cuatro "clanes" de 16 expertos con especializacion declarada: razonamiento general y chat multi-turno, ejecucion de agentes y function calling, ingestion de documentos largos y generacion de parches, y derivacion matematica y codigo poliglota. Incorpora ademas 2 expertos compartidos por capa y un motor de atencion hibrida 3:1 (ventana deslizante de 8192 tokens en capas estandar y atencion global cada cuarta capa) para sostener el contexto largo.
 
@@ -80,5 +80,5 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/miceworks/Mark-V3-32B
+- Hugging Face: https://huggingface.co/miceworks/Mark-V3-32B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web.

@@ -80,8 +80,8 @@ No se dispone de informacion sobre otros modelos "decensored" comparables en la 
 
 ## Enlaces
 
-- [Modelo en HuggingFace (GGUF)](https://huggingface.co/armand0e/Qwen3.8-27B-Heretic-ara-GGUF)
-- [Modelo base en HuggingFace](https://huggingface.co/armand0e/Qwen3.8-27B-Heretic-ara)
+- [Modelo en Hugging Face (GGUF)](https://huggingface.co/armand0e/Qwen3.8-27B-Heretic-ara-GGUF)
+- [Modelo base en Hugging Face](https://huggingface.co/armand0e/Qwen3.8-27B-Heretic-ara)
 - [Qwen/Qwen3.8-27B original](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio de Heretic](https://github.com/p-e-w/heretic)
 - [Pull request de ARA](https://github.com/p-e-w/heretic/pull/211)

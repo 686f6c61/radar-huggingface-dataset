@@ -70,12 +70,12 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 - Licencia restrictiva: el uso comercial, la redistribucion, la reventa alojada o la integracion por terceros requieren permiso escrito previo de ALTIC. Esto limita seriamente su uso en entornos empresariales o productos comerciales.
 - Tamano reducido: con 0.8B de parametros, es probable que el modelo presente limitaciones en tareas complejas de razonamiento, generacion de codigo o comprension profunda del lenguaje.
 - Informacion insuficiente: no se han publicado detalles sobre sesgos, riesgos de alucinacion, idiomas soportados ni limites de contexto. Es necesario realizar pruebas exhaustivas antes de cualquier despliegue.
-- Formato propietario: al estar compilado en Core ML, no es directamente utilizable con frameworks estandar como Transformers de HuggingFace, lo que dificulta su integracion en pipelines existentes.
+- Formato propietario: al estar compilado en Core ML, no es directamente utilizable con frameworks estandar como Transformers de Hugging Face, lo que dificulta su integracion en pipelines existentes.
 - Fecha de creacion reciente (julio de 2026) y sin descargas ni likes: el modelo no ha sido validado por la comunidad, lo que aumenta la incertidumbre sobre su calidad y estabilidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/altic-dev/Fluid-1-Pico-0.8B-CoreML
+- Modelo en Hugging Face: https://huggingface.co/altic-dev/Fluid-1-Pico-0.8B-CoreML
 - Repositorio de archivos: https://huggingface.co/altic-dev/Fluid-1-Pico-0.8B-CoreML/tree/main
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Terminos de ALTIC (ALTIC-MODEL-TERMS.md): https://huggingface.co/altic-dev/Fluid-1-Pico-0.8B-CoreML/blob/main/ALTIC-MODEL-TERMS.md

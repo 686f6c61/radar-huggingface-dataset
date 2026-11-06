@@ -90,7 +90,7 @@ No se dispone de comparacion con otros modelos de analisis de layout (p. ej., La
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dawsonvosburg/docling-layout-heron-coreml
+- Repositorio Hugging Face: https://huggingface.co/dawsonvosburg/docling-layout-heron-coreml
 - Modelo base: https://huggingface.co/docling-project/docling-layout-heron
 - Paper tecnico: https://arxiv.org/abs/2509.11720
 - Repositorio Docling: https://github.com/docling-project/docling

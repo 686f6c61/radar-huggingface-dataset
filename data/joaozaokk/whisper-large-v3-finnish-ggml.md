@@ -96,7 +96,7 @@ Los datos de los modelos de comparacion no aparecen en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoZaokk/whisper-large-v3-finnish-ggml
+- Modelo en Hugging Face: https://huggingface.co/JoaoZaokk/whisper-large-v3-finnish-ggml
 - Modelo base: https://huggingface.co/Finnish-NLP/Finnish-finetuned-whisper-models-ggml-format
 - Perfil del autor: https://huggingface.co/JoaoZaokk
 - Motor whisper.cpp: https://github.com/ggml-org/whisper.cpp

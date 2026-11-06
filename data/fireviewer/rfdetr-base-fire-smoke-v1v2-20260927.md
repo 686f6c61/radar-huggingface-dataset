@@ -64,8 +64,8 @@ No se dispone de datos comparativos en la informacion proporcionada para estable
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RF-DETR Base FireViewer V1+V2 | no disponible | no aplica | no disponible | HuggingFace (fireviewer) |
-| RF-DETR (roboflow/rf-detr, variante base) | no disponible en esta informacion | no aplica | no disponible | HuggingFace (roboflow) |
+| RF-DETR Base FireViewer V1+V2 | no disponible | no aplica | no disponible | Hugging Face (fireviewer) |
+| RF-DETR (roboflow/rf-detr, variante base) | no disponible en esta informacion | no aplica | no disponible | Hugging Face (roboflow) |
 | Otras alternativas (YOLO, FireNet, etc.) | no disponible | no aplica | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No se dispone de datos comparativos en la informacion proporcionada para estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fireviewer/rfdetr-base-fire-smoke-v1v2-20260927
+- Modelo en Hugging Face: https://huggingface.co/fireviewer/rfdetr-base-fire-smoke-v1v2-20260927
 - Modelo base RF-DETR de Roboflow: https://huggingface.co/roboflow/rf-detr
 - Dataset FireViewer V1: https://huggingface.co/datasets/fireviewer/fire-smoke-detection-corpus-v1
 - Dataset FireViewer V2: https://huggingface.co/datasets/fireviewer/fire-smoke-detection-corpus-v2

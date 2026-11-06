@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La prin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lukejoe/SmolLM2-135M-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/lukejoe/SmolLM2-135M-Instruct-GGUF
 - Modelo base: https://huggingface.co/unsloth/SmolLM2-135M-Instruct
 - Conversion alternativa de bartowski: https://huggingface.co/bartowski/SmolLM2-135M-Instruct-GGUF
 - Conversion de ggml-org: https://huggingface.co/ggml-org/SmolLM2-135M-GGUF

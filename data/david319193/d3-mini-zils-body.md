@@ -2,7 +2,7 @@
 
 ## Resumen
 
-d3-mini-zils-body es un ajuste fino por LoRA fusionado en pesos completos bf16 sobre el chasis d3-mini 4.5B, que a su vez deriva de Qwen/Qwen3.5-4B. Lo publica el usuario David319193 en HuggingFace y lo presenta como su contribucion al "soup pool" de d3-mini dentro de la subred 127 de Bittensor (Zils). El modelo esta pensado como un "decision model": no como un asistente conversacional general, sino como un componente que estima resultados o etiquetas de decision sobre elementos con resultado conocido (categorias de arXiv, discusiones AfD/AfC y reversiones en Wikipedia, merges de Gerrit, preguntas de Stack Exchange).
+d3-mini-zils-body es un ajuste fino por LoRA fusionado en pesos completos bf16 sobre el chasis d3-mini 4.5B, que a su vez deriva de Qwen/Qwen3.5-4B. Lo publica el usuario David319193 en Hugging Face y lo presenta como su contribucion al "soup pool" de d3-mini dentro de la subred 127 de Bittensor (Zils). El modelo esta pensado como un "decision model": no como un asistente conversacional general, sino como un componente que estima resultados o etiquetas de decision sobre elementos con resultado conocido (categorias de arXiv, discusiones AfD/AfC y reversiones en Wikipedia, merges de Gerrit, preguntas de Stack Exchange).
 
 El problema que aborda es el de la evaluacion automatizada de decisiones en dominios donde existe un historico de resultados etiquetados: moderacion de contenido enciclopedico, triaje de contribuciones de codigo, clasificacion de articulos cientificos o priorizacion de preguntas. El entrenamiento se realizo sobre elementos publicos con etiqueta de resultado, recolectados con la herramienta `zils.current`, lo que sugiere un pipeline orientado a crear senales de preferencia o de exito verificable.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| d3-mini-zils-body | 4,54 B | no disponible | Apache-2.0 | Decision model (feature extraction) sobre Qwen3.5-4B | HuggingFace, repo de 9,1 GB |
-| Qwen/Qwen3.5-4B | ~4 B | no disponible | Apache-2.0 (heredada) | Modelo base generico | HuggingFace |
+| d3-mini-zils-body | 4,54 B | no disponible | Apache-2.0 | Decision model (feature extraction) sobre Qwen3.5-4B | Hugging Face, repo de 9,1 GB |
+| Qwen/Qwen3.5-4B | ~4 B | no disponible | Apache-2.0 (heredada) | Modelo base generico | Hugging Face |
 | d3-mini 4.5B (chasis) | ~4,5 B | no disponible | Apache-2.0 | Chasis del que deriva este ajuste | No verificado en la informacion disponible |
 
 No se dispone de datos de rendimiento ni de contexto para establecer una comparacion cuantitativa con alternativas. La comparacion se limita a parametros, licencia y enfoque.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento ni de contexto para establecer una compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/David319193/d3-mini-zils-body
+- Hugging Face: https://huggingface.co/David319193/d3-mini-zils-body
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Bittensor subnet 127 (Zils): no disponible en la informacion proporcionada
 - Herramienta `zils.current`: no disponible en la informacion proporcionada

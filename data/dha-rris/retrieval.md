@@ -36,7 +36,7 @@ El modelo emplea la arquitectura Efficientformer en su variante "tiny", con aten
 - Entrenamiento desde cero para retrieval en dominios específicos: el modelo puede inicializarse con el checkpoint proporcionado y entrenarse sobre datasets como Flickr30k (sugerido por el autor) para tareas de búsqueda de imágenes por texto o viceversa.
 - Evaluación de arquitecturas Efficientformer: investigadores pueden comparar el rendimiento de esta configuración frente a otras arquitecturas de retrieval de capacidad similar, usando el código como base reproducible.
 - Pruebas de integración en pipelines de RAG: aunque no está entrenado, sirve para validar que el flujo de embeddings y búsqueda funciona en un sistema de retrieval-augmented generation antes de sustituirlo por un modelo preentrenado.
-- Desarrollo de adaptadores para APIs de HuggingFace: dado que la implementación no es compatible con las APIs automáticas, se puede usar como caso de prueba para escribir adaptadores personalizados.
+- Desarrollo de adaptadores para APIs de Hugging Face: dado que la implementación no es compatible con las APIs automáticas, se puede usar como caso de prueba para escribir adaptadores personalizados.
 - Benchmarking de eficiencia: al ser extremadamente pequeño (24K parámetros), permite medir costes computacionales de la arquitectura Efficientformer en tareas de retrieval sin requerir hardware potente.
 - Investigación sobre atención multi query y fusión bilineal: el código puede servir para estudiar el impacto de estas técnicas en la calidad de los embeddings de retrieval.
 
@@ -60,11 +60,11 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 - El checkpoint incluido no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio. No debe usarse en producción.
 - No se proporcionan datos de rendimiento ni benchmarks, por lo que no es posible evaluar su calidad frente a alternativas.
-- La implementación es personalizada y no compatible con las APIs automáticas de HuggingFace; se requiere un adaptador explícito para su uso.
+- La implementación es personalizada y no compatible con las APIs automáticas de Hugging Face; se requiere un adaptador explícito para su uso.
 - No se especifican idiomas soportados ni longitudes de contexto, lo que limita su aplicabilidad en escenarios multilingües o de contexto largo.
 - La licencia Apache 2.0 permite uso comercial, pero el autor advierte que deben revisarse los términos de las fuentes de datos externas si se utiliza con datasets de terceros.
 - Al ser un proyecto con cero descargas y cero likes, no hay evidencia de adopción ni de validación por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dha-rris/retrieval
+- Repositorio en Hugging Face: https://huggingface.co/dha-rris/retrieval

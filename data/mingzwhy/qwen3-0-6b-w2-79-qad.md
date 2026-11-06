@@ -68,9 +68,9 @@ La model card unicamente advierte de que, si se carga este checkpoint de forma d
 
 | Modelo | Parametros | Cuantizacion | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MingZwhy/Qwen3-0.6B-W2.79-QAD (este) | 596.049.920 | Pesos maestros en bf16; cuantizador INT1.58/INT4 aplicado en el forward pass (2,79 bits efectivos) | Checkpoint latente, punto de partida de la etapa OPD | Apache-2.0 | HuggingFace |
-| MingZwhy/Qwen3-0.6B-W2.79-QAOPD | no disponible | W2.79 con el resultado de la destilacion on-policy | Modelo recuperado, cargable y evaluable | Apache-2.0 (heredada) | HuggingFace |
-| Qwen/Qwen3-0.6B | 0,6 mil millones (aproximado) | Sin cuantizar (bf16/fp16) | Modelo base de proposito general, listo para inferencia | Apache-2.0 | HuggingFace |
+| MingZwhy/Qwen3-0.6B-W2.79-QAD (este) | 596.049.920 | Pesos maestros en bf16; cuantizador INT1.58/INT4 aplicado en el forward pass (2,79 bits efectivos) | Checkpoint latente, punto de partida de la etapa OPD | Apache-2.0 | Hugging Face |
+| MingZwhy/Qwen3-0.6B-W2.79-QAOPD | no disponible | W2.79 con el resultado de la destilacion on-policy | Modelo recuperado, cargable y evaluable | Apache-2.0 (heredada) | Hugging Face |
+| Qwen/Qwen3-0.6B | 0,6 mil millones (aproximado) | Sin cuantizar (bf16/fp16) | Modelo base de proposito general, listo para inferencia | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a los tres artefactos documentados en la informacion disponible; no se dispone de datos de rendimiento que permitan una comparacion cuantitativa con otras alternativas de 0,5 a 1 mil millones de parametros.
 
@@ -88,7 +88,7 @@ La comparativa se limita a los tres artefactos documentados en la informacion di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MingZwhy/Qwen3-0.6B-W2.79-QAD
+- Modelo en Hugging Face: https://huggingface.co/MingZwhy/Qwen3-0.6B-W2.79-QAD
 - Checkpoint recuperado (post-OPD): https://huggingface.co/MingZwhy/Qwen3-0.6B-W2.79-QAOPD
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Codigo y receta del proyecto QAOPD: https://github.com/MingZwhy/QAOPD

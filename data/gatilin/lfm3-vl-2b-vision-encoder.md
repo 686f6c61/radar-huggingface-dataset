@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gatilin/lfm3-vl-2b-vision-encoder` es un paquete extraido del modelo multimodal LiquidAI/LFM3-VL-2B que contiene unicamente la torre de vision (vision tower) y el proyector multimodal, sin los pesos del modelo de lenguaje. Lo publica el usuario `gatilin` en HuggingFace y su proposito es permitir reutilizar el codificador visual de LFM3-VL-2B de forma aislada para tareas de extraccion de caracteristicas de imagen y video. El paquete pesa 0,4 GB y contiene 189.380.352 parametros en formato safetensors BF16.
+`gatilin/lfm3-vl-2b-vision-encoder` es un paquete extraido del modelo multimodal LiquidAI/LFM3-VL-2B que contiene unicamente la torre de vision (vision tower) y el proyector multimodal, sin los pesos del modelo de lenguaje. Lo publica el usuario `gatilin` en Hugging Face y su proposito es permitir reutilizar el codificador visual de LFM3-VL-2B de forma aislada para tareas de extraccion de caracteristicas de imagen y video. El paquete pesa 0,4 GB y contiene 189.380.352 parametros en formato safetensors BF16.
 
 La torre de vision consta de 14 capas: 8 convolucionales y 6 de atencion bidireccional. El proyector multimodal fusiona parches visuales de 2x2 en caracteristicas del tamano que espera el modelo de lenguaje. Se preservan los nombres, formas y valores originales de los tensores (`model.vision_tower.*` y `model.multi_modal_projector.*`), lo que facilita la integracion con el modelo completo.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gatilin/lfm3-vl-2b-vision-encoder | 189.380.352 | no disponible | lfm-open-license-1.0 | HuggingFace |
-| LiquidAI/LFM3-VL-2B (modelo completo) | no disponible en la informacion | no disponible | no disponible en la informacion | HuggingFace |
+| gatilin/lfm3-vl-2b-vision-encoder | 189.380.352 | no disponible | lfm-open-license-1.0 | Hugging Face |
+| LiquidAI/LFM3-VL-2B (modelo completo) | no disponible en la informacion | no disponible | no disponible en la informacion | Hugging Face |
 | Otros codificadores visuales (p. ej. CLIP ViT) | no disponible en la informacion | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoria. El unico modelo directamente relacionado es LiquidAI/LFM3-VL-2B, del que este paquete es un subconjunto.
@@ -83,6 +83,6 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gatilin/lfm3-vl-2b-vision-encoder
+- Hugging Face: https://huggingface.co/gatilin/lfm3-vl-2b-vision-encoder
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Licencia LFM Open License v1.0: incluida en el repositorio como `LICENSE`

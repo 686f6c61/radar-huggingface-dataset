@@ -79,7 +79,7 @@ La comparativa se limita a las variantes de Piper, ya que no se dispone de datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/vits-piper-en-gb-miro-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/vits-piper-en-gb-miro-loom
 - Modelo base (OpenVoiceOS/pipertts_en-GB_miro): https://huggingface.co/OpenVoiceOS/pipertts_en-GB_miro
 - Repositorio loom.cpp: https://github.com/loom-ai-org/loom.cpp
 - Repositorio loom-py: https://github.com/loom-ai-org/loom-py

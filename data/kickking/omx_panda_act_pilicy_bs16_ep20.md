@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kickking/omx_panda_act_pilicy_bs16_ep20` es un repositorio de HuggingFace asociado a la pipeline de robótica, creado con la herramienta Cyclo Intelligence de ROBOTIS y etiquetado con los términos `robotis`, `cyclo_intelligence` y `robotics`. Por el nombre del identificador, el contenido parece corresponder a una política de control entrenada con el algoritmo ACT (Action Chunking Transformer) sobre un entorno robótico tipo Franka Panda, con un tamaño de batch de 16 y 20 épocas de entrenamiento. Se trata, por tanto, de un artefacto de aprendizaje por imitación orientado a la manipulación robótica y no de un modelo de lenguaje.
+`kickking/omx_panda_act_pilicy_bs16_ep20` es un repositorio de Hugging Face asociado a la pipeline de robótica, creado con la herramienta Cyclo Intelligence de ROBOTIS y etiquetado con los términos `robotis`, `cyclo_intelligence` y `robotics`. Por el nombre del identificador, el contenido parece corresponder a una política de control entrenada con el algoritmo ACT (Action Chunking Transformer) sobre un entorno robótico tipo Franka Panda, con un tamaño de batch de 16 y 20 épocas de entrenamiento. Se trata, por tanto, de un artefacto de aprendizaje por imitación orientado a la manipulación robótica y no de un modelo de lenguaje.
 
 La información pública disponible es extremadamente limitada: el repositorio no contiene una model card descriptiva más allá de la referencia a la herramienta de creación, no declara licencia, no especifica idiomas y presenta un tamaño de repositorio de 0.0 GB, lo que sugiere que los pesos no están efectivamente alojados o que el repositorio está vacío. No se han registrado descargas ni interacciones, y las fechas de creación y actualización son de noviembre de 2026.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | kickking/omx_panda_act_pilicy_bs16_ep20 | Política ACT (inferida) | no disponible | no disponible | no disponible | Repo de 0.0 GB, sin descargas |
-| Políticas ACT de referencia en LeRobot | Política ACT | no disponible | no disponible | según repositorio | Públicas en HuggingFace |
-| Políticas Diffusion Policy | Política de difusión | no disponible | no disponible | según repositorio | Públicas en HuggingFace |
+| Políticas ACT de referencia en LeRobot | Política ACT | no disponible | no disponible | según repositorio | Públicas en Hugging Face |
+| Políticas Diffusion Policy | Política de difusión | no disponible | no disponible | según repositorio | Públicas en Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones verificables para establecer una comparación cuantitativa con alternativas.
 
@@ -79,5 +79,5 @@ No se dispone de datos de rendimiento ni de especificaciones verificables para e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kickking/omx_panda_act_pilicy_bs16_ep20
+- Hugging Face: https://huggingface.co/kickking/omx_panda_act_pilicy_bs16_ep20
 - Cyclo Intelligence (ROBOTIS): https://github.com/ROBOTIS-GIT/cyclo_intelligence

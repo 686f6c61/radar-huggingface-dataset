@@ -69,8 +69,8 @@ Confianza media en el conjunto de semillas (33 pares): 0,3064 cuando el modelo a
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jeremierostan/laya-student-match | 421.293.830 | no disponible | Accuracy 0,9394 en 33 semillas; 1,0 en 200 pares sinteticos | Apache 2.0 | HuggingFace |
-| convaiinnovations/laya (base) | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| jeremierostan/laya-student-match | 421.293.830 | no disponible | Accuracy 0,9394 en 33 semillas; 1,0 en 200 pares sinteticos | Apache 2.0 | Hugging Face |
+| convaiinnovations/laya (base) | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Otras alternativas de matching de nombres | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de resultados comparables de otros modelos de matching de nombres o clasificacion de identidades que permitan una comparacion cuantitativa directa.
@@ -88,10 +88,10 @@ No se dispone en la informacion proporcionada de resultados comparables de otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jeremierostan/laya-student-match
+- Modelo en Hugging Face: https://huggingface.co/jeremierostan/laya-student-match
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Dataset de generacion: https://huggingface.co/datasets/jeremierostan/laya-student-match-data
-- Perfil del autor en HuggingFace: https://huggingface.co/jeremierostan
+- Perfil del autor en Hugging Face: https://huggingface.co/jeremierostan
 - Perfil del autor en GitHub: https://github.com/jeremierostan
 - Laya AI (sitio oficial): https://layaaimodel.com/
-- Blog de HuggingFace sobre Laya AI: https://huggingface.co/blog/sora-2/laya-ai-model-selection-and-api-integration-guide
+- Blog de Hugging Face sobre Laya AI: https://huggingface.co/blog/sora-2/laya-ai-model-selection-and-api-integration-guide

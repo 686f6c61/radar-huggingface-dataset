@@ -2,7 +2,7 @@
 
 ## Resumen
 
-La página de HuggingFace `dlaspold/dlaspold` no corresponde a un modelo de inteligencia artificial. El repositorio, creado el 29 de octubre de 2026, no declara pipeline, licencia ni idiomas, y registra 0 descargas y 0 likes. Su README no es una model card, sino una presentación personal de un perfil identificado como "Julian Vance (j-vance)", descrito como ingeniero de sistemas DSP de audio afincado en Berlín, centrado en procesamiento de audio en tiempo real, plugins de audio, firmware embebido y kernels SIMD.
+La página de Hugging Face `dlaspold/dlaspold` no corresponde a un modelo de inteligencia artificial. El repositorio, creado el 29 de octubre de 2026, no declara pipeline, licencia ni idiomas, y registra 0 descargas y 0 likes. Su README no es una model card, sino una presentación personal de un perfil identificado como "Julian Vance (j-vance)", descrito como ingeniero de sistemas DSP de audio afincado en Berlín, centrado en procesamiento de audio en tiempo real, plugins de audio, firmware embebido y kernels SIMD.
 
 Al no existir pesos, arquitectura, número de parámetros ni ventana de contexto documentados, este recurso no puede evaluarse ni desplegarse como modelo. Esta ficha conserva la estructura habitual, con el valor "no disponible" en los campos técnicos, y recoge las advertencias necesarias para que desarrolladores e investigadores no confundan este repositorio con un modelo utilizable.
 
@@ -63,6 +63,6 @@ No disponible. Al no tratarse de un modelo, no existen alternativas de la misma 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dlaspold/dlaspold
+- Repositorio en Hugging Face: https://huggingface.co/dlaspold/dlaspold
 - El README enlaza traducciones del perfil en rutas relativas del repositorio bajo `docs/locales/` (inglés, español, francés, alemán, ruso, árabe, hindi, japonés, coreano y chino simplificado).
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios de modelo o demos) en la búsqueda web; los resultados obtenidos no guardan relación con este repositorio.

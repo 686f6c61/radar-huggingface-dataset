@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bocketleg/qwen2p5-7b-phase3-from-error-set` es un checkpoint publicado en HuggingFace por el usuario `bocketleg` el 20 de julio de 2026. El nombre sugiere que se trata de un modelo derivado de la familia Qwen2.5 de 7 mil millones de parámetros, sometido a una tercera fase de entrenamiento (phase3) a partir de un conjunto de datos denominado "error set". Sin embargo, no se dispone de documentación oficial, paper, ni descripción técnica que confirme la arquitectura exacta, el proceso de entrenamiento o las capacidades finales.
+El modelo `bocketleg/qwen2p5-7b-phase3-from-error-set` es un checkpoint publicado en Hugging Face por el usuario `bocketleg` el 20 de julio de 2026. El nombre sugiere que se trata de un modelo derivado de la familia Qwen2.5 de 7 mil millones de parámetros, sometido a una tercera fase de entrenamiento (phase3) a partir de un conjunto de datos denominado "error set". Sin embargo, no se dispone de documentación oficial, paper, ni descripción técnica que confirme la arquitectura exacta, el proceso de entrenamiento o las capacidades finales.
 
 El repositorio tiene un tamaño de 1,2 GB, lo que resulta notablemente inferior al peso típico de un modelo de 7B en precisión completa (alrededor de 14-16 GB en FP16), lo que indica que probablemente se trate de una versión cuantizada o podada, aunque no se especifica el formato de cuantización. El repositorio cuenta con 111 descargas y 0 likes, lo que refleja un uso muy limitado y una ausencia de validación por parte de la comunidad.
 
@@ -72,9 +72,9 @@ No es posible realizar una comparativa rigurosa sin datos del modelo. Como refer
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-7B-Instruct | 7B | 128K | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B | 7B | 128K | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community License | HuggingFace |
+| Qwen2.5-7B-Instruct | 7B | 128K | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B | 7B | 128K | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community License | Hugging Face |
 
 El modelo `bocketleg/qwen2p5-7b-phase3-from-error-set` no tiene datos públicos comparables, por lo que no se puede establecer una comparativa objetiva.
 
@@ -89,7 +89,7 @@ El modelo `bocketleg/qwen2p5-7b-phase3-from-error-set` no tiene datos públicos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bocketleg/qwen2p5-7b-phase3-from-error-set
-- Organización Qwen en HuggingFace: https://huggingface.co/Qwen
+- Repositorio Hugging Face: https://huggingface.co/bocketleg/qwen2p5-7b-phase3-from-error-set
+- Organización Qwen en Hugging Face: https://huggingface.co/Qwen
 - Repositorio GitHub de Qwen3 (referencia de la familia): https://github.com/QwenLM/Qwen3
 - Modelo Qwen2.5-7B-Instruct (base potencial): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

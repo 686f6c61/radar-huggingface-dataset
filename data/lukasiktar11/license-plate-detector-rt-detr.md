@@ -67,6 +67,6 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- [HuggingFace: lukasiktar11/license-plate-detector-rt-detr](https://huggingface.co/lukasiktar11/license-plate-detector-rt-detr)
+- [Hugging Face: lukasiktar11/license-plate-detector-rt-detr](https://huggingface.co/lukasiktar11/license-plate-detector-rt-detr)
 - [Repositorio oficial de RT-DETR (GitHub)](https://github.com/lyuwenyu/RT-DETR)
 - [Modelo relacionado: license-plate-ocr-detector-rt-detr](https://huggingface.co/lukasiktar11/license-plate-ocr-detector-rt-detr) (no se ha analizado, pero puede contener información adicional)

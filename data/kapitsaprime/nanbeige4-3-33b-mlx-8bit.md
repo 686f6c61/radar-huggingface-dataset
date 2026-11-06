@@ -105,4 +105,4 @@ En calidad, el Q8_0 de llama.cpp se sitúa ligeramente más cerca del bf16 (KL m
 - mlx-lm (repositorio): https://github.com/ml-explore/mlx-lm
 - Kapitsa (repositorio): https://github.com/nace-ai/kapitsa
 - Resultados y scripts de las mediciones: https://github.com/nace-ai/kapitsa/tree/main/bench/results/2026-10-25-m5-max-nanbeige
-- Página de Nanbeige en HuggingFace: https://huggingface.co/Nanbeige
+- Página de Nanbeige en Hugging Face: https://huggingface.co/Nanbeige

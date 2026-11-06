@@ -20,7 +20,7 @@ Su relevancia es documental: permite citar y auditar un ranking histórico concr
 | Idiomas soportados | No disponible en los metadatos; la documentación del repositorio está en inglés |
 | Licencia | Apache-2.0 |
 | Formato de pesos | No aplica: el repositorio contiene código Python y ficheros CSV, no safetensors ni GGUF |
-| ID en HuggingFace | TabArena-Legacy/TabArena-v0.1.9 |
+| ID en Hugging Face | TabArena-Legacy/TabArena-v0.1.9 |
 | Version archivada | v0.1.9.9 (2026/10/21, Space commit `dc7325980`) |
 | Tamano del repositorio | 0.0 GB reportados |
 | Descargas / likes | 0 / 0 |

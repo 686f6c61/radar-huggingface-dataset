@@ -32,7 +32,7 @@ Parametros adicionales de la configuracion documentada:
 | Tarea | "pick r2d2 and put to box" |
 | Duracion de episodio | aproximadamente 8-10 segundos (300 fotogramas a 30 fps) |
 | Libreria | lerobot |
-| Pipeline en HuggingFace | robotics |
+| Pipeline en Hugging Face | robotics |
 
 ## Arquitectura y entrenamiento
 
@@ -45,7 +45,7 @@ Los datos de entrenamiento son los propios episodios grabados por los estudiante
 - Ejecucion de tareas de manipulacion fisica por imitacion sobre un brazo SO-100, en concreto el "pick and place" de una figura R2-D2 a una caja.
 - Captura multimodal mediante tres camaras sincronizadas a 640x480 y 30 fps (dos cenitales y una en la pinza) junto con la posicion articular del brazo.
 - Teleoperacion manual a traves del brazo leader para generar demostraciones.
-- Grabacion y gestion de episodios y datasets en formato LeRobot, compartibles en el HuggingFace Hub.
+- Grabacion y gestion de episodios y datasets en formato LeRobot, compartibles en el Hugging Face Hub.
 - Entrenamiento y fine-tuning de politicas visuomotoras del ecosistema LeRobot (ACT, Diffusion Policy, SmolVLA, GR00T) sobre datos propios.
 - Rollout de la politica entrenada en hardware real con bucle de control a 30 Hz.
 - Flujo de trabajo guiado por web (LeLab) con botones para calibrar, controlar, grabar, entrenar y ejecutar.
@@ -104,7 +104,7 @@ No disponible una comparativa cuantitativa fiable entre ellas en la informacion 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/van-i/so100-imitation-learning-stand
+- Repositorio en Hugging Face: https://huggingface.co/van-i/so100-imitation-learning-stand
 - Dataset `van-i/r2d2_to_box_bg_20261003_210444`: https://huggingface.co/datasets/van-i/r2d2_to_box_bg_20261003_210444
 - Dataset `van-i/r2d2_to_box_2_20261003_131039`: https://huggingface.co/datasets/van-i/r2d2_to_box_2_20261003_131039
 - LeRobot (GitHub): https://github.com/huggingface/lerobot

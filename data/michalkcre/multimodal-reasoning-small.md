@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`michalkcre/multimodal-reasoning-small` es un repositorio alojado en HuggingFace que, a pesar de su nombre y de la etiqueta `transformer`, no contiene un modelo entrenado. La model card lo describe explicitamente como un conjunto estructurado de notas de investigacion sobre razonamiento multimodal, con referencias de evaluacion y preguntas abiertas, y aclara que no se reclama ningun checkpoint entrenado, ninguna mejora en benchmarks ni codigo publicado. El artefacto principal es un fichero `reading.md` con el contenido de las notas.
+`michalkcre/multimodal-reasoning-small` es un repositorio alojado en Hugging Face que, a pesar de su nombre y de la etiqueta `transformer`, no contiene un modelo entrenado. La model card lo describe explicitamente como un conjunto estructurado de notas de investigacion sobre razonamiento multimodal, con referencias de evaluacion y preguntas abiertas, y aclara que no se reclama ningun checkpoint entrenado, ninguna mejora en benchmarks ni codigo publicado. El artefacto principal es un fichero `reading.md` con el contenido de las notas.
 
 El autor, `michalkcre`, publica el repositorio bajo licencia MIT y lo etiqueta con `research-notes` y `multimodal-reasoning`. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado el 4 de noviembre de 2026. El pipeline no esta definido.
 
@@ -72,6 +72,6 @@ No disponible. No se puede establecer una comparativa con modelos multimodales d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/michalkcre/multimodal-reasoning-small
+- Repositorio en Hugging Face: https://huggingface.co/michalkcre/multimodal-reasoning-small
 - Artefacto principal citado en la model card: `reading.md` (dentro del repositorio)
 - Documentacion del repositorio: `README.md` (dentro del repositorio)

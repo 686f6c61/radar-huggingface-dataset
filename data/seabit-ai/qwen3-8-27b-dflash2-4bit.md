@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/seabit-ai/Qwen3.8-27B-DFlash2-4bit
+- Repositorio Hugging Face: https://huggingface.co/seabit-ai/Qwen3.8-27B-DFlash2-4bit
 - Drafter de origen: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo objetivo cuantizado usado en las mediciones: https://huggingface.co/lmstudio-community/Qwen3.8-27B-MLX-4bit

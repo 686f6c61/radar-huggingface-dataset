@@ -63,6 +63,6 @@ No se dispone de información sobre modelos comparables en el mismo dominio (VQG
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IDEALLab/engiopt-vqgan
+- Hugging Face: https://huggingface.co/IDEALLab/engiopt-vqgan
 - GitHub EngiOpt: https://github.com/IDEALLab/EngiOpt
 - Notebook de ejemplo (Colab): https://colab.research.google.com/github/IDEALLab/EngiOpt/blob/main/example_hard_model.ipynb

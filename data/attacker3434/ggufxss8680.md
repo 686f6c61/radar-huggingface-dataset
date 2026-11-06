@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ggufxss8680` es un repositorio de pesos en formato GGUF publicado en HuggingFace por el usuario `attacker3434`. La model card asociada es practicamente vacia: unicamente declara `license: mit` y `library_name: gguf`, sin ningun parrafo descriptivo, sin informacion sobre el modelo base, el proceso de cuantizacion ni las capacidades esperadas. No se especifica arquitectura, numero de parametros, longitud de contexto ni idiomas soportados.
+`ggufxss8680` es un repositorio de pesos en formato GGUF publicado en Hugging Face por el usuario `attacker3434`. La model card asociada es practicamente vacia: unicamente declara `license: mit` y `library_name: gguf`, sin ningun parrafo descriptivo, sin informacion sobre el modelo base, el proceso de cuantizacion ni las capacidades esperadas. No se especifica arquitectura, numero de parametros, longitud de contexto ni idiomas soportados.
 
 El repositorio no registra descargas ni likes en el momento de la consulta y fue creado y actualizado en el mismo instante (5 de noviembre de 2026), lo que junto con el nombre del autor (`attacker3434`) y el identificador del modelo (`ggufxss8680`, donde "xss" sugiere cross-site scripting) apunta a un artefacto de prueba o a un posible intento de envenenamiento de la cadena de suministro de modelos. No hay evidencia de que sea un modelo entrenado de forma legitima ni de que haya pasado por un proceso de publicacion convencional.
 
@@ -40,7 +40,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 - No se identifican casos de uso legitimos respaldados por la documentacion del repositorio.
 - Auditoria de seguridad de artefactos GGUF: un equipo de seguridad podria descargar el repositorio en un entorno aislado para inspeccionar el contenido de los ficheros y verificar si los tensores son validos o si incluyen payloads maliciosos.
 - Prueba de pipelines de validacion de modelos: util como caso negativo para comprobar que un sistema de gobierno de modelos rechaza repositorios sin model card, sin metricas y con autores no verificados.
-- Formacion en cadena de suministro de IA: puede emplearse como ejemplo didactico de repositorio sospechoso en talleres sobre riesgos de HuggingFace.
+- Formacion en cadena de suministro de IA: puede emplearse como ejemplo didactico de repositorio sospechoso en talleres sobre riesgos de Hugging Face.
 - No se recomienda ningun uso en produccion, atencion al cliente, generacion de codigo, analisis de datos ni ninguna otra aplicacion real.
 
 ## Benchmarks y rendimiento
@@ -72,5 +72,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/attacker3434/ggufxss8680
+- Repositorio en Hugging Face: https://huggingface.co/attacker3434/ggufxss8680
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "anshurajgaya1234-web/swim",
+  "slug": "anshurajgaya1234-web-swim",
+  "author": "anshurajgaya1234-web",
+  "url": "https://huggingface.co/anshurajgaya1234-web/swim",
+  "created_at": "2026-11-06T07:09:11.000Z",
+  "updated_at": "2026-11-06T07:12:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110402696,
+  "storage_human": "110 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

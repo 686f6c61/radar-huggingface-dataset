@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sashaboguraev/pythia-1b-ppt-random_numbers_steps500_1b-seed1024` es un modelo de generación de texto de aproximadamente 1.000 millones de parámetros, subido al Hub de HuggingFace por el usuario sashaboguraev. Su nombre sugiere que se trata de un ajuste fino (fine-tuning) del modelo Pythia-1B de EleutherAI, especializado en la generación de números aleatorios, con 500 pasos de entrenamiento y una semilla fija (1024). Sin embargo, la model card es completamente genérica y no proporciona ninguna información verificable sobre el proceso de entrenamiento, los datos utilizados o el propósito exacto.
+El modelo `sashaboguraev/pythia-1b-ppt-random_numbers_steps500_1b-seed1024` es un modelo de generación de texto de aproximadamente 1.000 millones de parámetros, subido al Hub de Hugging Face por el usuario sashaboguraev. Su nombre sugiere que se trata de un ajuste fino (fine-tuning) del modelo Pythia-1B de EleutherAI, especializado en la generación de números aleatorios, con 500 pasos de entrenamiento y una semilla fija (1024). Sin embargo, la model card es completamente genérica y no proporciona ninguna información verificable sobre el proceso de entrenamiento, los datos utilizados o el propósito exacto.
 
 La arquitectura declarada en las etiquetas es `gpt_neox`, lo que indica que se basa en la implementación GPT-NeoX de los transformers de EleutherAI, la misma familia que los modelos Pythia. El repositorio contiene pesos en formato `safetensors` y es compatible con `text-generation-inference`. A pesar de su escasa documentación, el modelo está disponible públicamente y puede cargarse con la librería `transformers` para tareas de generación de texto.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es limitada debido a la ausencia total de informaci
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a un transformer decoder estilo GPT-NeoX, la misma familia que los modelos Pythia de EleutherAI. El tag `gpt_neox` en HuggingFace confirma que la implementación usa la clase `GPTNeoXForCausalLM` de la librería `transformers`. Se trata de un modelo autoregresivo de 1.000 millones de parámetros, con atención por ventanas y normalización de capas, aunque no se dispone de detalles específicos sobre el número de capas, cabezas de atención o dimensiones ocultas.
+La arquitectura corresponde a un transformer decoder estilo GPT-NeoX, la misma familia que los modelos Pythia de EleutherAI. El tag `gpt_neox` en Hugging Face confirma que la implementación usa la clase `GPTNeoXForCausalLM` de la librería `transformers`. Se trata de un modelo autoregresivo de 1.000 millones de parámetros, con atención por ventanas y normalización de capas, aunque no se dispone de detalles específicos sobre el número de capas, cabezas de atención o dimensiones ocultas.
 
 El nombre del modelo sugiere un fine-tuning sobre un dataset de números aleatorios, con 500 pasos de optimización y una semilla fija (1024). No obstante, la model card no incluye ninguna información sobre el dataset de entrenamiento, el procedimiento de ajuste, los hiperparámetros utilizados, el régimen de precisión (fp16, bf16, etc.) ni el hardware empleado. Tampoco se menciona si se aplicaron técnicas como RLHF o DPO. La única referencia a un paper es el arXiv:1910.09700, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, citado en la plantilla genérica de la model card, no a un documento técnico del modelo.
 
@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sashaboguraev/pythia-1b-ppt-random_numbers_steps500_1b-seed1024
+- Modelo en Hugging Face: https://huggingface.co/sashaboguraev/pythia-1b-ppt-random_numbers_steps500_1b-seed1024
 - Modelo relacionado (steps100): https://huggingface.co/sashaboguraev/pythia-1b-ppt-random_numbers_steps100_1b-seed1024
 - Modelo relacionado (preserve_emb): https://huggingface.co/sashaboguraev/pythia-1b-ppt-random_numbers_steps100_1b-seed1024-preserve_emb
 - Referencia al paper de emisiones (citado en la model card): https://arxiv.org/abs/1910.09700

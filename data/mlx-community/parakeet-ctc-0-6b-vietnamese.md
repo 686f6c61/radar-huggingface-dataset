@@ -90,7 +90,7 @@ El modelo de referencia directa es el checkpoint original de NVIDIA en PyTorch, 
 
 ## Enlaces
 
-- HuggingFace (esta versión MLX): https://huggingface.co/mlx-community/parakeet-ctc-0.6b-Vietnamese
+- Hugging Face (esta versión MLX): https://huggingface.co/mlx-community/parakeet-ctc-0.6b-Vietnamese
 - Modelo base original de NVIDIA: https://huggingface.co/nvidia/parakeet-ctc-0.6b-Vietnamese
 - Script de conversión a MLX: https://gist.github.com/senstella/77178bb5d6ec67bf8c54705a5f490bed
 - Licencia NVIDIA Open Model License: https://developer.download.nvidia.com/licenses/nvidia-open-model-license-agreement-june-2024.pdf

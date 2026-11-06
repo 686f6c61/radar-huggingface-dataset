@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento para comparar con otros modelos. El autor ha publicado variantes del mismo merge con diferentes tamanos (medium, large) y parametros t (0.1, 0.2, 0.5), pero no se han documentado diferencias cuantitativas. En terminos de arquitectura, este modelo es comparable a GPT-2 small (124M) y a otros merges de GPT-2 disponibles en HuggingFace, pero sin benchmarks no es posible establecer una comparativa objetiva.
+No se dispone de datos de rendimiento para comparar con otros modelos. El autor ha publicado variantes del mismo merge con diferentes tamanos (medium, large) y parametros t (0.1, 0.2, 0.5), pero no se han documentado diferencias cuantitativas. En terminos de arquitectura, este modelo es comparable a GPT-2 small (124M) y a otros merges de GPT-2 disponibles en Hugging Face, pero sin benchmarks no es posible establecer una comparativa objetiva.
 
 ## Limitaciones y advertencias
 
@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento para comparar con otros modelos. El autor 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trinhkhng/nearswap_Merged_gpt2_0.2
+- Modelo en Hugging Face: https://huggingface.co/trinhkhng/nearswap_Merged_gpt2_0.2
 - Variante medium (t=0.1): https://huggingface.co/trinhkhng/nearswap_Merged_gpt2-medium_0.1
 - Variante large (t=0.2): https://huggingface.co/trinhkhng/nearswap_Merged_gpt2-large_0.2
 - Variante large (t=0.5): https://huggingface.co/trinhkhng/nearswap_Merged_gpt2-large_0.5

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-heretic-mpoa es un ajuste fino del modelo Qwen/Qwen3.8-27B publicado por el usuario moon70 en HuggingFace. Se trata de una variante "abliterated" o "uncensored": el autor ha aplicado una tecnica de ablacion direccional (Heretic 2.0.0, concreta­mente MPOA: direccion ortogonalizada, normalizacion completa de filas y LoRA de rango 3) sobre las proyecciones `o_proj` y `down_proj` de cada capa para reducir la tasa de rechazos del modelo base ante peticiones clasificadas como daninas. El resultado es un modelo que conserva practicamente intactas las capacidades del original (MMLU 0,836 frente a 0,834; GSM8K 0,963 frente a 0,965) pero que rechaza muchas menos solicitudes.
+Qwen3.8-27B-heretic-mpoa es un ajuste fino del modelo Qwen/Qwen3.8-27B publicado por el usuario moon70 en Hugging Face. Se trata de una variante "abliterated" o "uncensored": el autor ha aplicado una tecnica de ablacion direccional (Heretic 2.0.0, concreta­mente MPOA: direccion ortogonalizada, normalizacion completa de filas y LoRA de rango 3) sobre las proyecciones `o_proj` y `down_proj` de cada capa para reducir la tasa de rechazos del modelo base ante peticiones clasificadas como daninas. El resultado es un modelo que conserva practicamente intactas las capacidades del original (MMLU 0,836 frente a 0,834; GSM8K 0,963 frente a 0,965) pero que rechaza muchas menos solicitudes.
 
 El modelo mantiene la arquitectura y el pipeline del base: es un modelo multimodal de tipo image-text-to-text, con 27.356.728.560 parametros totales (unos 27,36 mil millones) y pesos en safetensors de aproximadamente 54,7 GB en el repositorio. La licencia declarada es Apache 2.0, heredada del modelo base. La relevancia de esta ficha es doble: por un lado documenta una tecnica de "desbloqueo" cada vez mas extendida en el ecosistema open source; por otro, advierte de que se trata de un modelo publicado sin datos de benchmarks propios completos, sin idiomas declarados y sin historial de descargas ni validacion comunitaria.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks de terceros ni de otras variantes comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/moon70/Qwen3.8-27B-heretic-mpoa
+- Hugging Face: https://huggingface.co/moon70/Qwen3.8-27B-heretic-mpoa
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Heretic (proyecto de ablacion direccional): no disponible en la informacion proporcionada
 - Paper o blog de MPOA: no disponible en la informacion proporcionada

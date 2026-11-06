@@ -24,7 +24,7 @@ El autor advierte tambien de que la calidad no es homogenea: `af_heart` se prese
 | Voces incluidas | 54 presets v1 + `af.bin` legacy; `af_heart` como referencia fuerte en ingles |
 | Tamano del repositorio | 0,4 GB |
 | Autor del repositorio | nile-academy (espejo de la conversion ONNX Community) |
-| Fecha de publicacion | 2026-10-28 (metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-10-28 (metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -97,7 +97,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nile-academy/kokoro-82m-v1.0-onnx
+- Repositorio en Hugging Face: https://huggingface.co/nile-academy/kokoro-82m-v1.0-onnx
 - Evidencia de seleccion del publicador (EVAL.md, revision fijada): https://huggingface.co/hexgrad/Kokoro-82M/blob/f3ff3571791e39611d31c381e3a41a3af07b4987/EVAL.md
 - Repositorio upstream de la familia Kokoro 82M: https://huggingface.co/hexgrad/Kokoro-82M
 - Manifiesto de origen con revisiones y hashes: `source-manifest.json` (en la raiz del repositorio)

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-w13-kx-chrono5-w60-s130` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). El nombre sigue un esquema de identificacion por hiperparametros de entrenamiento (r18, a2, w13, chrono5, w60, s130) que sugiere una ejecucion experimental concreta, probablemente un barrido de configuraciones sobre una arquitectura base. No se dispone de model card descriptiva, pipeline declarado ni idiomas soportados en la informacion publica.
+`alfred8995/r18-a2-w13-kx-chrono5-w60-s130` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). El nombre sigue un esquema de identificacion por hiperparametros de entrenamiento (r18, a2, w13, chrono5, w60, s130) que sugiere una ejecucion experimental concreta, probablemente un barrido de configuraciones sobre una arquitectura base. No se dispone de model card descriptiva, pipeline declarado ni idiomas soportados en la informacion publica.
 
 El modelo cuenta con 2.018.511.234 parametros totales segun los pesos en safetensors, lo que lo situa en el rango de los 2B parametros. El repositorio ocupa 6,3 GB, un tamano coherente con pesos en precision de 16 bits o con multiples ficheros de safetensors. La etiqueta `sn38-nanochrono` apunta a una familia o variante interna no documentada publicamente.
 
-Su relevancia actual es limitada por la ausencia de documentacion, benchmarks y descripcion de arquitectura, pero resulta de interes para quien quiera inspeccionar el checkpoint, reproducir la configuracion de entrenamiento o evaluar un modelo pequeno de 2B parametros en tareas de generacion de texto. Al estar en acceso restringido, es necesario aceptar las condiciones en HuggingFace antes de descargarlo.
+Su relevancia actual es limitada por la ausencia de documentacion, benchmarks y descripcion de arquitectura, pero resulta de interes para quien quiera inspeccionar el checkpoint, reproducir la configuracion de entrenamiento o evaluar un modelo pequeno de 2B parametros en tareas de generacion de texto. Al estar en acceso restringido, es necesario aceptar las condiciones en Hugging Face antes de descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| alfred8995/r18-a2-w13-kx-chrono5-w60-s130 | 2,02B | no disponible | Apache 2.0 | Gated en HuggingFace | Sin model card ni benchmarks |
+| alfred8995/r18-a2-w13-kx-chrono5-w60-s130 | 2,02B | no disponible | Apache 2.0 | Gated en Hugging Face | Sin model card ni benchmarks |
 | Qwen2.5-1.5B | 1,54B | 32.768 tokens | Apache 2.0 | Abierto | Documentado y con benchmarks publicos |
 | Llama 3.2 1B | 1,24B | 128.000 tokens | Llama 3.2 Community License | Abierto con aceptacion | Documentado y ampliamente evaluado |
 | Gemma 2 2B | 2,61B | 8.192 tokens | Gemma Terms of Use | Abierto con aceptacion | Documentado y con benchmarks publicos |
@@ -76,11 +76,11 @@ La comparativa es orientativa: los modelos alternativos cuentan con documentacio
 - Riesgo de alucinacion desconocido: sin evaluaciones, no puede estimarse la fiabilidad factual del modelo.
 - Sesgos desconocidos: al no describirse el corpus, no es posible evaluar sesgos de genero, raza, idioma o dominio.
 - Idiomas no declarados: no se garantiza soporte de castellano ni de ningun otro idioma.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que anade friccion a la integracion en pipelines automatizados.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que anade friccion a la integracion en pipelines automatizados.
 - Licencia Apache 2.0: permite uso comercial, pero la ausencia de documentacion traslada al usuario la responsabilidad de validar el comportamiento del modelo.
 - Sin cuantizaciones publicadas: no hay GGUF, AWQ ni GPTQ, por lo que el despliegue en llama.cpp u Ollama requeriria conversion manual.
 - Nombre criptico: el esquema r18/a2/w13/chrono5/w60/s130 no esta explicado, lo que complica la trazabilidad de la ejecucion de entrenamiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono5-w60-s130
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono5-w60-s130

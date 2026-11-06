@@ -104,7 +104,7 @@ En las evaluaciones de sentido común, el merge muestra resultados ligeramente s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nightmedia/Qwen3.8-27B-Brainwaves-WFH-BF16
+- Modelo en Hugging Face: https://huggingface.co/nightmedia/Qwen3.8-27B-Brainwaves-WFH-BF16
 - Modelo base Brainwaves: https://huggingface.co/nightmedia/Qwen3.8-27B-Brainwaves
 - Variante MLX cuantizada: https://huggingface.co/nightmedia/Qwen3.8-27B-Brainwaves-WFH-mxfp4-mlx
 - Modelo base Wichtel-Qwen3.6-27B: https://huggingface.co/nbeerbower/Wichtel-Qwen3.6-27B

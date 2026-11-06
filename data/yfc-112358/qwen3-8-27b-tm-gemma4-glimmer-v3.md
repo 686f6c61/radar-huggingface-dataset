@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo. La comparación se limita a p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/YFC-112358/Qwen3.8-27B-TM-Gemma4-Glimmer-v3
+- Repositorio Hugging Face: https://huggingface.co/YFC-112358/Qwen3.8-27B-TM-Gemma4-Glimmer-v3
 - Paper *Transport and Merge: Cross-Architecture Merging for Large Language Models* (arXiv 2602.05495): https://arxiv.org/abs/2602.05495
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo base Gemma 4 31B: https://huggingface.co/google/gemma-4-31B

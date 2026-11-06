@@ -98,7 +98,7 @@ En cuanto a rendimiento, no disponible para Fred-9B: no hay benchmarks publicado
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Fred-9B-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Fred-9B-GGUF
 - Modelo base: https://huggingface.co/CrowdMind/Fred-9B
 - Cuantizaciones con imatrix (i1): https://huggingface.co/mradermacher/Fred-9B-i1-GGUF
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Fred-9B-GGUF

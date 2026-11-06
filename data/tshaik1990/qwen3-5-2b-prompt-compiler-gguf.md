@@ -18,7 +18,7 @@ La relevancia de este modelo reside en su nicho concreto: la ingenieria de promp
 | Longitud de contexto | no disponible (el Modelfile de ejemplo usa `num_ctx 4096`) |
 | Tipos de cuantizacion | Q4_K_M (GGUF), F16 (proyector de vision, mmproj) |
 | Idiomas soportados | no disponible (la serie Qwen3.5 es multilingue segun Qualcomm AI Hub) |
-| Licencia | no disponible en la pagina de HuggingFace; la model card indica que hereda la del modelo base `unsloth/Qwen3.5-2B`; la serie Qwen3.5 se publica bajo Apache 2.0 segun fuentes web |
+| Licencia | no disponible en la pagina de Hugging Face; la model card indica que hereda la del modelo base `unsloth/Qwen3.5-2B`; la serie Qwen3.5 se publica bajo Apache 2.0 segun fuentes web |
 | Formato de pesos | GGUF (Q4_K_M y F16 mmproj) |
 
 ## Arquitectura y entrenamiento
@@ -81,14 +81,14 @@ No se dispone de informacion sobre otros modelos especializados en compilacion d
 - Entrenamiento limitado: el adaptador se entreno durante una sola epoca sobre un dataset pequeno autoelaborado, lo que puede limitar la generalizacion fuera del ambito de compilacion de prompts.
 - Evaluacion no independiente: los resultados publicados son autoelaborados por el autor, no un benchmark independiente, y la revision por preferencia humana esta pendiente.
 - Tamano reducido: al ser un modelo de 2B, puede no generalizar bien fuera de los casos de uso de compilacion de prompts.
-- Licencia ambigua: la pagina de HuggingFace no especifica la licencia; la model card indica que hereda la del modelo base, pero conviene verificar la licencia exacta de `unsloth/Qwen3.5-2B` antes de un uso comercial.
+- Licencia ambigua: la pagina de Hugging Face no especifica la licencia; la model card indica que hereda la del modelo base, pero conviene verificar la licencia exacta de `unsloth/Qwen3.5-2B` antes de un uso comercial.
 - Riesgo de alucinacion: como cualquier LLM pequeno, puede generar contenido inexacto o inventar restricciones si el contexto proporcionado es insuficiente, aunque el diseno del fine-tune mitiga parcialmente este riesgo al solicitar informacion faltante.
 - Contexto limitado: el Modelfile de ejemplo usa `num_ctx 4096`, lo que sugiere un contexto operativo modesto; no se documenta la longitud maxima real del modelo base.
 - Sin datos de benchmarks estandar: no se publican resultados en MMLU, HumanEval, GSM8K u otros benchmarks, lo que dificulta la comparacion objetiva con otros modelos.
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/tshaik1990/qwen3.5-2b-prompt-compiler-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/tshaik1990/qwen3.5-2b-prompt-compiler-GGUF
 - Adaptador LoRA (safetensors): https://huggingface.co/tshaik1990/qwen3.5-2b-prompt-compiler
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Modelo oficial Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B

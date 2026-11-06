@@ -18,7 +18,7 @@ Su interés para quien evalúa modelos es doble. Por un lado, demuestra que un M
 | Longitud de contexto | 262 144 tokens nativos; el checkpoint sirve 3 conversaciones simultáneas de hasta 262 144 tokens cada una |
 | Tipos de cuantizacion | Expertos enrutados en NVFP4 (valores E2M1, escalas de bloque FP8 cada 16 elementos, escala global FP32); atención, DeltaNet, routers, embeddings, tablas n-gram, cabeza y cabeza MTP en affine 4-bit de MLX con grupos de 32; torre de visión en punto flotante; expertos compartidos en bf16 en disco, empaquetados a NVFP4 durante la carga |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-license-1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-community-license-1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors, más octojet.json y tablas n-gram; solo cargable con el motor Octojet |
 
 ## Arquitectura y entrenamiento
@@ -117,7 +117,7 @@ La receta de starkweatherdigital publica una cuantización NVFP4 de 109 GB que f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/octolix/Qwen3.8-Flash-Next-Octojet-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/octolix/Qwen3.8-Flash-Next-Octojet-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio de Qwen3.8 Flash Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Motor de inferencia Octojet: https://github.com/octolixai/octojet

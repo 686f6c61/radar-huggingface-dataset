@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Geoai outdoor assistant es un modelo publicado en HuggingFace por el usuario Sneha3008, identificado con el identificador `Sneha3008/geoai-outdoor-assistant`. Según el propio nombre del repositorio, estaría orientado a funcionar como asistente para actividades al aire libre con componente geoespacial (geoAI), aunque la model card no incluye ninguna descripción del modelo, su arquitectura, su entrenamiento ni sus capacidades. La única información contenida en el README es la declaración de la licencia MIT.
+Geoai outdoor assistant es un modelo publicado en Hugging Face por el usuario Sneha3008, identificado con el identificador `Sneha3008/geoai-outdoor-assistant`. Según el propio nombre del repositorio, estaría orientado a funcionar como asistente para actividades al aire libre con componente geoespacial (geoAI), aunque la model card no incluye ninguna descripción del modelo, su arquitectura, su entrenamiento ni sus capacidades. La única información contenida en el README es la declaración de la licencia MIT.
 
 La relevancia de esta ficha es limitada: se trata de un repositorio con cero descargas y un "like" en el momento de la consulta, sin pipeline asociado, sin tags técnicos y sin documentación. Esto impide verificar qué tipo de modelo contiene (si es un modelo de lenguaje, un clasificador geoespacial, un fine-tuning u otro artefacto), con qué pesos está distribuido y para qué tareas sirve.
 
@@ -70,7 +70,7 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni la tarea verificad
 
 - Ausencia total de model card técnica: no hay descripción de entrenamiento, datos, intenciones de uso ni evaluaciones, lo que impide una evaluación responsable del modelo.
 - Cero descargas registradas: no existe evidencia de uso por parte de la comunidad ni validación externa.
-- Sin pipeline ni tags técnicos: HuggingFace no ha clasificado el repositorio, lo que sugiere que la ficha está incompleta incluso a nivel de metadatos.
+- Sin pipeline ni tags técnicos: Hugging Face no ha clasificado el repositorio, lo que sugiere que la ficha está incompleta incluso a nivel de metadatos.
 - Riesgo de alucinación: no evaluable, pero cualquier modelo de lenguaje sin documentación ni benchmarks debe considerarse de fiabilidad desconocida.
 - Sesgos conocidos: no disponibles; al desconocer los datos de entrenamiento no pueden identificarse sesgos.
 - Licencia: la licencia MIT es muy permisiva y permite uso comercial, modificación y redistribución con atribución del aviso de copyright; no obstante, la ausencia de documentación es una limitación práctica importante para producción.
@@ -78,6 +78,6 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni la tarea verificad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sneha3008/geoai-outdoor-assistant
+- Repositorio en Hugging Face: https://huggingface.co/Sneha3008/geoai-outdoor-assistant
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repos de código o demos) en la información disponible.

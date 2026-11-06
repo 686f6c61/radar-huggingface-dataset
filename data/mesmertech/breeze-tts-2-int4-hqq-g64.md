@@ -74,9 +74,9 @@ No se dispone de informacion sobre modelos TTS cuantizados comparables en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mesmertech/Breeze-TTS-2-int4-hqq-g64
+- Repositorio Hugging Face del modelo: https://huggingface.co/mesmertech/Breeze-TTS-2-int4-hqq-g64
 - Modelo base BreezeBlue/Breeze-TTS-2: https://huggingface.co/BreezeBlue/Breeze-TTS-2
 - Repositorio GitHub de Breeze TTS: https://github.com/breezeblue-ai/breeze-tts
-- Demo oficial en HuggingFace Space: https://huggingface.co/spaces/BreezeBlue/breeze-tts-2-demo
+- Demo oficial en Hugging Face Space: https://huggingface.co/spaces/BreezeBlue/breeze-tts-2-demo
 - Pagina web de BreezeBlue: https://breezeblue.ai/
 - Pagina de presentacion de Breeze TTS 2: https://breezeblue.ai/breeze-tts-2

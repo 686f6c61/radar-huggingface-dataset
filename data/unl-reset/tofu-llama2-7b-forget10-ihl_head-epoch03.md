@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch03` | 6,74 B | no disponible (Llama 2: 4096) | Checkpoint de *unlearning* TOFU `forget10`, epoca 3/20 | llama2 | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_llama2-7b` | 6,74 B | 4096 | Modelo base ajustado en TOFU, referencia "a olvidar" | llama2 | HuggingFace |
-| Llama 2 7B Chat (`NousResearch/Llama-2-7b-chat-hf`) | 6,74 B | 4096 | Modelo conversacional de proposito general | llama2 | HuggingFace |
-| Otros checkpoints de `unl-reset` (misma familia) | 6,74 B | 4096 | Variantes de la misma receta con distinta epoca o configuracion | llama2 | HuggingFace |
+| `unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch03` | 6,74 B | no disponible (Llama 2: 4096) | Checkpoint de *unlearning* TOFU `forget10`, epoca 3/20 | llama2 | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_llama2-7b` | 6,74 B | 4096 | Modelo base ajustado en TOFU, referencia "a olvidar" | llama2 | Hugging Face |
+| Llama 2 7B Chat (`NousResearch/Llama-2-7b-chat-hf`) | 6,74 B | 4096 | Modelo conversacional de proposito general | llama2 | Hugging Face |
+| Otros checkpoints de `unl-reset` (misma familia) | 6,74 B | 4096 | Variantes de la misma receta con distinta epoca o configuracion | llama2 | Hugging Face |
 
 La comparacion relevante es metodologica: frente a `locuslab/tofu_ft_llama2-7b`, este checkpoint anade la reinicializacion de embeddings y LM head y el objetivo IHL; frente a Llama 2 7B Chat, comparte inicializacion de esas dos capas pero difiere en el cuerpo del transformer. No se dispone de datos de rendimiento comparativo.
 
@@ -85,7 +85,7 @@ La comparacion relevante es metodologica: frente a `locuslab/tofu_ft_llama2-7b`,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch03
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch03
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Checkpoint usado para reinicializar embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Benchmark TOFU (paper): https://arxiv.org/abs/2401.06121

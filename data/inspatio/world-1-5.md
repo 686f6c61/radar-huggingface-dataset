@@ -6,7 +6,7 @@ InSpatio-World 1.5 es un modelo de mundo 4D desarrollado por InSpatio (影溯), 
 
 La relevancia de este modelo radica en su aplicación a la IA encarnada, la robótica y la simulación de física generativa, áreas donde la capacidad de generar entornos 4D coherentes y navegables en tiempo real es un habilitador clave. Sin embargo, no se ha publicado información técnica detallada sobre su arquitectura, número de parámetros, longitud de contexto ni datos de entrenamiento en las fuentes disponibles.
 
-El repositorio de HuggingFace tiene un tamaño de 5,7 GB, lo que sugiere que los pesos ocupan aproximadamente esa cantidad, pero se desconoce el formato exacto y los requisitos de inferencia. La licencia y los idiomas soportados no están especificados.
+El repositorio de Hugging Face tiene un tamaño de 5,7 GB, lo que sugiere que los pesos ocupan aproximadamente esa cantidad, pero se desconoce el formato exacto y los requisitos de inferencia. La licencia y los idiomas soportados no están especificados.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El repositorio de HuggingFace tiene un tamaño de 5,7 GB, lo que sugiere que los
 | Tipos de cuantización | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | no disponible (repositorio de 5,7 GB en HuggingFace) |
+| Formato de pesos | no disponible (repositorio de 5,7 GB en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -66,9 +66,9 @@ No se dispone de datos cuantitativos para comparar el rendimiento de InSpatio-Wo
 
 | Modelo | Desarrollador | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| InSpatio-World 1.5 | InSpatio | Simulador de mundo 4D | no disponible | Pesos en HuggingFace (5,7 GB) |
+| InSpatio-World 1.5 | InSpatio | Simulador de mundo 4D | no disponible | Pesos en Hugging Face (5,7 GB) |
 | Genie | DeepMind | Modelo de mundo interactivo | no disponible (no open source) | No disponible públicamente |
-| Cosmos | NVIDIA | Modelo fundacional de mundo | NVIDIA Open Model License | Disponible en HuggingFace |
+| Cosmos | NVIDIA | Modelo fundacional de mundo | NVIDIA Open Model License | Disponible en Hugging Face |
 | World Labs (modelo) | World Labs | Modelo de mundo 3D/4D | no disponible | No lanzado |
 
 Esta comparación es meramente cualitativa y no permite establecer superioridad en rendimiento, ya que no hay benchmarks públicos de InSpatio-World 1.5.
@@ -86,7 +86,7 @@ Esta comparación es meramente cualitativa y no permite establecer superioridad 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/inspatio/world-1.5
+- Hugging Face: https://huggingface.co/inspatio/world-1.5
 - Sitio web de InSpatio: https://www.inspatio.com/
 - X (Twitter) de InSpatio: https://x.com/InSpatio_AI
 - Publicación de ModelScope en X: https://x.com/ModelScope2022/status/2105158320764104812

@@ -39,7 +39,7 @@ El entrenamiento se realizó sobre un dataset local (`local/button_press_0901`) 
 - Aprendizaje por imitación: sirve como baseline para comparar estrategias de fine-tuning de VLA en tareas con pocas demostraciones (61 episodios), evaluando la eficiencia de `train_expert_only`.
 - Desarrollo de pipelines de robótica con VLA: los desarrolladores pueden usar este modelo como punto de partida para adaptar π₀ a otras tareas de manipulación, reutilizando el proceso de fine-tuning documentado.
 - Investigación en generalización de VLA: al ser un modelo pequeño (3,5B) y de código abierto, permite estudiar los límites de la especialización frente a la generalización en entornos controlados.
-- Pruebas de integración con frameworks como LeRobot: el modelo se aloja en HuggingFace con el formato esperado por LeRobot, facilitando su carga y uso en pipelines existentes.
+- Pruebas de integración con frameworks como LeRobot: el modelo se aloja en Hugging Face con el formato esperado por LeRobot, facilitando su carga y uso en pipelines existentes.
 - Evaluación de políticas en entornos con realismo limitado: dado que el dataset proviene de una simulación, el modelo puede utilizarse para depurar el comportamiento de robots antes de enfrentarse a entornos físicos.
 
 ## Benchmarks y rendimiento
@@ -69,7 +69,7 @@ No se dispone de comparativas publicadas para este modelo específico. Como refe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yixiaosz/pi0_button_press
+- Modelo en Hugging Face: https://huggingface.co/yixiaosz/pi0_button_press
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Paper de π₀: https://arxiv.org/abs/2410.24164
 - Página de Physical Intelligence: https://www.pi.website/

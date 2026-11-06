@@ -92,7 +92,7 @@ El rendimiento en benchmarks de estos modelos no se incluye porque no forma part
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/w3schoolstotallylegit/SmolLM2-1.7B-Q6_K-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/w3schoolstotallylegit/SmolLM2-1.7B-Q6_K-GGUF
 - Modelo base SmolLM2-1.7B: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B
 - Coleccion SmolLM2 de HuggingFaceTB: https://huggingface.co/collections/HuggingFaceTB/smollm2-6723884218bcda64b34d7db9
 - Space GGUF-my-repo utilizado para la conversion: https://huggingface.co/spaces/ggml-org/gguf-my-repo

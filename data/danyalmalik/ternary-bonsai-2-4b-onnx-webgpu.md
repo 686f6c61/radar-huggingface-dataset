@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Formato | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| danyalmalik/Ternary-Bonsai-2-4B-ONNX-WebGPU | aproximadamente 4B | no disponible | ONNX (q2f16) | ternaria 2 bits + embeddings 4 bits | Apache 2.0 | HuggingFace, 1,5 GB, 0 descargas |
-| prism-ml/Ternary-Bonsai-2-4B-gguf | aproximadamente 4B | no disponible | GGUF (PQ2_0) | ternaria | Apache 2.0 | HuggingFace (modelo base del anterior) |
-| onnx-community/Qwen3.5-4B-ONNX | aproximadamente 4B | no disponible | ONNX | sin cuantizar (precision original) | Apache 2.0 | HuggingFace (grafo de referencia reutilizado) |
-| Qwen/Qwen3.5-4B | aproximadamente 4B | no disponible | safetensors (formato original) | ninguna | Apache 2.0 | HuggingFace (modelo original) |
+| danyalmalik/Ternary-Bonsai-2-4B-ONNX-WebGPU | aproximadamente 4B | no disponible | ONNX (q2f16) | ternaria 2 bits + embeddings 4 bits | Apache 2.0 | Hugging Face, 1,5 GB, 0 descargas |
+| prism-ml/Ternary-Bonsai-2-4B-gguf | aproximadamente 4B | no disponible | GGUF (PQ2_0) | ternaria | Apache 2.0 | Hugging Face (modelo base del anterior) |
+| onnx-community/Qwen3.5-4B-ONNX | aproximadamente 4B | no disponible | ONNX | sin cuantizar (precision original) | Apache 2.0 | Hugging Face (grafo de referencia reutilizado) |
+| Qwen/Qwen3.5-4B | aproximadamente 4B | no disponible | safetensors (formato original) | ninguna | Apache 2.0 | Hugging Face (modelo original) |
 
 No se dispone de datos de rendimiento comparado (MMLU, HumanEval, GSM8K u otros) para ninguno de estos artefactos en la informacion proporcionada.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparado (MMLU, HumanEval, GSM8K u otros)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danyalmalik/Ternary-Bonsai-2-4B-ONNX-WebGPU
+- Modelo en Hugging Face: https://huggingface.co/danyalmalik/Ternary-Bonsai-2-4B-ONNX-WebGPU
 - Modelo base (GGUF): https://huggingface.co/prism-ml/Ternary-Bonsai-2-4B-gguf
 - Modelo original Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Grafo ONNX de referencia: https://huggingface.co/onnx-community/Qwen3.5-4B-ONNX

@@ -89,13 +89,13 @@ No se dispone de información sobre adaptadores o modelos de terceros comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/likelytobelaura/osteo-glimmer-lora
+- Modelo en Hugging Face: https://huggingface.co/likelytobelaura/osteo-glimmer-lora
 - Repositorio de código, inventario, baselines y puntuaciones: https://github.com/likelytobelaura/biohack
 - Inventario del dataset y estado de ejecuciones: `INVENTORY.md` en el repositorio anterior
 - Dataset de origen (bucket público): `s3://sid-sijbrandij-osteosarc-dataset`
 - Prompts de referencia: `03_baseline_prompts/baseline.jsonl` en el repositorio
 - Script de entrenamiento: `scripts/lomo_train.py` en el repositorio
 - Scripts de reconstrucción de datos: `build_golden.py` y `recon.py` en el repositorio
-- Licencia del modelo base y de los adaptadores: `LICENSE` en el repositorio de HuggingFace
+- Licencia del modelo base y de los adaptadores: `LICENSE` en el repositorio de Hugging Face
 - Modelo base Muse-Glimmer-30B: no se proporciona identificador ni enlace en la información disponible
 - Paper, blog o demo: no disponible

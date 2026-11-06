@@ -94,7 +94,7 @@ La comparativa se basa en los datos del modelo card y del repositorio. La famili
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TimSchneider42/cod-vae-16x16-tiny
+- Modelo en Hugging Face: https://huggingface.co/TimSchneider42/cod-vae-16x16-tiny
 - Variante 16x8 tiny: https://huggingface.co/TimSchneider42/cod-vae-16x8-tiny
 - Modelo hermano 16x16: https://huggingface.co/TimSchneider42/cod-vae-16x16
 - Repositorio GitHub (código y guía de entrenamiento): https://github.com/TimSchneider42/cod-vae

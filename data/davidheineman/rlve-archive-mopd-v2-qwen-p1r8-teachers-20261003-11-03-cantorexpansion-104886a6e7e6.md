@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo publicado al uso, sino un checkpoint archivado de un entrenamiento finalizado. Lo publica el usuario de HuggingFace davidheineman dentro de un proyecto etiquetado como `rlve` y `scratch-archive`, y su nombre interno es `03-CantorExpansion`. El checkpoint corresponde al paso 149 de un run identificado en Weights & Biases con el ID `d168a336`, dentro de la ruta `runs/mopd-v2-qwen-p1r8-teachers-20261003-115039/resumable/03-CantorExpansion`.
+Este repositorio no contiene un modelo publicado al uso, sino un checkpoint archivado de un entrenamiento finalizado. Lo publica el usuario de Hugging Face davidheineman dentro de un proyecto etiquetado como `rlve` y `scratch-archive`, y su nombre interno es `03-CantorExpansion`. El checkpoint corresponde al paso 149 de un run identificado en Weights & Biases con el ID `d168a336`, dentro de la ruta `runs/mopd-v2-qwen-p1r8-teachers-20261003-115039/resumable/03-CantorExpansion`.
 
 El modelo tiene 1.543.714.304 parametros (aproximadamente 1,54 mil millones) segun el recuento real de los ficheros safetensors, y el tag `qwen2` indica que la arquitectura pertenece a la familia Qwen2. Se trata, por tanto, de un transformer denso de escala ~1,5B, no de un modelo MoE. El repositorio ocupa 3,1 GB, coherente con pesos en precision de 16 bits mas el directorio de checkpoints distribuidos de Megatron.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
   - INT4: aproximadamente 0,8-1 GB de pesos; alrededor de 2 GB en total.
 - GPU recomendadas: cualquier GPU con 8 GB o mas de VRAM para FP16 (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090, L4, A10G). Para INT4 basta con 4-6 GB, por lo que tambien es viable en iGPU con memoria unificada o en CPU.
 - Cabe en GPU consumer: si, en practicamente toda la gama media y alta actual, e incluso en portatiles con 6-8 GB de VRAM si se cuantiza.
-- Opciones de despliegue: HuggingFace Transformers como via directa; vLLM y TGI para servido con batching continuo; llama.cpp y Ollama requieren convertir previamente los pesos safetensors a GGUF, ya que el repositorio no publica cuantizaciones.
+- Opciones de despliegue: Hugging Face Transformers como via directa; vLLM y TGI para servido con batching continuo; llama.cpp y Ollama requieren convertir previamente los pesos safetensors a GGUF, ya que el repositorio no publica cuantizaciones.
 - Latencia y throughput estimados: no disponibles. Al no existir evaluacion publicada ni configuracion de referencia (longitud de contexto, batch, precision), cualquier cifra seria especulativa.
 
 ## Comparativa con modelos similares
@@ -70,10 +70,10 @@ La comparativa se establece con modelos densos de escala ~1-2B ampliamente docum
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rlve-archive-mopd-v2...-CantorExpansion (este) | 1,54B | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen2.5-1.5B | ~1,54B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama-3.2-1B | ~1,24B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, con gating |
-| Gemma 2 2B | ~2,6B | 8.192 tokens | Gemma Terms of Use | HuggingFace, con gating |
+| rlve-archive-mopd-v2...-CantorExpansion (este) | 1,54B | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen2.5-1.5B | ~1,54B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama-3.2-1B | ~1,24B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, con gating |
+| Gemma 2 2B | ~2,6B | 8.192 tokens | Gemma Terms of Use | Hugging Face, con gating |
 
 No hay datos de rendimiento comparables para el modelo analizado, por lo que no es posible establecer una comparacion cuantitativa de calidad. En terminos practicos, las alternativas citadas son modelos publicados con licencia explicita, contexto documentado y soporte en los principales runners, mientras que este repositorio es un checkpoint de investigacion sin garantias de ningun tipo.
 
@@ -92,7 +92,7 @@ No hay datos de rendimiento comparables para el modelo analizado, por lo que no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-03-cantorexpansion-104886a6e7e6
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-03-cantorexpansion-104886a6e7e6
 - Paper: no disponible
 - Blog o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Dennis1315/ward-mobile-14b es un ajuste fino (finetune) publicado en HuggingFace por el usuario Dennis1315, derivado del modelo base Qwen/Qwen3.5-9B. Se distribuye bajo licencia Apache 2.0, con pesos en formato safetensors y compatibilidad declarada con transformers, text-generation-inference y endpoints. La pipeline registrada es image-text-to-text, lo que indica que el repositorio esta etiquetado para entrada multimodal de imagen y texto, aunque la model card no documenta ninguna capacidad de vision.
+Dennis1315/ward-mobile-14b es un ajuste fino (finetune) publicado en Hugging Face por el usuario Dennis1315, derivado del modelo base Qwen/Qwen3.5-9B. Se distribuye bajo licencia Apache 2.0, con pesos en formato safetensors y compatibilidad declarada con transformers, text-generation-inference y endpoints. La pipeline registrada es image-text-to-text, lo que indica que el repositorio esta etiquetado para entrada multimodal de imagen y texto, aunque la model card no documenta ninguna capacidad de vision.
 
 El dato mas relevante es la discrepancia entre el nombre del repositorio (que sugiere 14B) y el recuento real de parametros en safetensors: 9.653.104.368 parametros, es decir, aproximadamente 9,65B. El modelo base tambien es de 9B, por lo que el ajuste no aumenta el tamano. El repositorio ocupa 19,3 GB, coherente con pesos en precision de 16 bits.
 
-La model card es minima: unicamente indica que el modelo fue entrenado con Unsloth y la libreria TRL de HuggingFace, y que esta finetuneado a partir de Qwen3.5-9B. No se publican detalles del dataset, hiperparametros, numero de tokens de entrenamiento ni resultados de evaluacion. Con 0 descargas y 0 likes en el momento de la consulta, se trata de un modelo sin validacion comunitaria. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los enlaces obtenidos corresponden a un sitio sin relacion alguna.
+La model card es minima: unicamente indica que el modelo fue entrenado con Unsloth y la libreria TRL de Hugging Face, y que esta finetuneado a partir de Qwen3.5-9B. No se publican detalles del dataset, hiperparametros, numero de tokens de entrenamiento ni resultados de evaluacion. Con 0 descargas y 0 likes en el momento de la consulta, se trata de un modelo sin validacion comunitaria. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los enlaces obtenidos corresponden a un sitio sin relacion alguna.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La model card es minima: unicamente indica que el modelo fue entrenado con Unslo
 
 No se dispone de informacion detallada sobre la arquitectura en la documentacion proporcionada. El modelo se presenta como un finetune de Qwen/Qwen3.5-9B y lleva la etiqueta qwen3_5, por lo que hereda la arquitectura del modelo base, pero la ficha del autor no especifica si se trata de un transformer denso, un MoE o una variante hibrida, ni detalla mecanismos de atencion, ventana de contexto o vocabulario.
 
-Respecto al entrenamiento, la unica informacion disponible es que se realizo con Unsloth y con la libreria TRL de HuggingFace, lo que sugiere un proceso de ajuste supervisado (SFT) y/o preferencias sobre el modelo base. No se indica el numero de tokens utilizados, la composicion del dataset, si hubo etapas de RLHF o DPO, ni si se entreno el proyector multimodal asociado a la pipeline image-text-to-text. Tampoco se documentan innovaciones tecnicas adicionales.
+Respecto al entrenamiento, la unica informacion disponible es que se realizo con Unsloth y con la libreria TRL de Hugging Face, lo que sugiere un proceso de ajuste supervisado (SFT) y/o preferencias sobre el modelo base. No se indica el numero de tokens utilizados, la composicion del dataset, si hubo etapas de RLHF o DPO, ni si se entreno el proyector multimodal asociado a la pipeline image-text-to-text. Tampoco se documentan innovaciones tecnicas adicionales.
 
 ## Capacidades
 
@@ -66,8 +66,8 @@ Las siguientes cifras son estimaciones calculadas a partir del recuento real de 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dennis1315/ward-mobile-14b | 9,65B | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-9B (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| Dennis1315/ward-mobile-14b | 9,65B | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-9B (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Otras alternativas de ~9-10B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas del modelo base en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con alternativas de la misma categoria.
@@ -86,8 +86,8 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas del mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dennis1315/ward-mobile-14b
+- Modelo en Hugging Face: https://huggingface.co/Dennis1315/ward-mobile-14b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Unsloth (repositorio usado para el entrenamiento): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Nota sobre la busqueda web: los resultados obtenidos no guardan relacion con el modelo y no se incluyen por no ser fuentes validas.

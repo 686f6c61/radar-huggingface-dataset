@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/mradermacher/Llama_3.2_1b_Odyssea_Escalation_0.0a-GGUF
+- Modelo cuantizado en Hugging Face: https://huggingface.co/mradermacher/Llama_3.2_1b_Odyssea_Escalation_0.0a-GGUF
 - Modelo base: https://huggingface.co/Nexesenex/Llama_3.2_1b_Odyssea_Escalation_0.0a
 - Pagina de descargas del autor: https://hf.tst.eu/model#Llama_3.2_1b_Odyssea_Escalation_0.0a-GGUF
 - Repositorio de peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests

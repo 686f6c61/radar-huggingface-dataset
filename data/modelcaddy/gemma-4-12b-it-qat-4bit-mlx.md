@@ -19,7 +19,7 @@ El modelo está pensado para su uso como generador en el nivel Pro de ModelCaddy
 | Licencia | Gemma Terms of Use (con Gemma Prohibited Use Policy) |
 | Formato de pesos | safetensors (MLX) |
 
-Nota: el contador de parámetros de HuggingFace muestra 1.876.642.864 elementos almacenados porque MLX empaqueta ocho pesos de 4 bits en un U32. El modelo real tiene 12,33B parámetros (1,49B × 8 + 0,38B de escalas de cuantización en BF16).
+Nota: el contador de parámetros de Hugging Face muestra 1.876.642.864 elementos almacenados porque MLX empaqueta ocho pesos de 4 bits en un U32. El modelo real tiene 12,33B parámetros (1,49B × 8 + 0,38B de escalas de cuantización en BF16).
 
 ## Arquitectura y entrenamiento
 
@@ -84,7 +84,7 @@ La comparación con modelos de otros fabricantes (Llama 3.1 8B, Mistral 7B) no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/modelcaddy/gemma-4-12b-it-qat-4bit-mlx
+- Modelo en Hugging Face: https://huggingface.co/modelcaddy/gemma-4-12b-it-qat-4bit-mlx
 - Checkpoint base (QAT): https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized
 - Modelo original Gemma 4 12B: https://huggingface.co/google/gemma-4-12B
 - Documentación oficial de Gemma 4: https://ai.google.dev/gemma/docs/core

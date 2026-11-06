@@ -76,17 +76,17 @@ La tabla siguiente muestra los resultados publicados en la model card del autor,
 - VRAM estimada para inferencia: no se especifica oficialmente, pero para un modelo de 8B en FP16 se estiman entre 20 y 24 GB de VRAM. Con cuantización a 8 bits podría reducirse a unos 12-14 GB, y a 4 bits a unos 6-8 GB.
 - GPU recomendadas: una NVIDIA RTX 4090 (24 GB) o A100 (40/80 GB) son suficientes para inferencia en FP16. Para fine-tuning con LoRA se recomienda al menos 40 GB de VRAM.
 - Compatibilidad con GPU de consumo: sí, una RTX 3090 o RTX 4090 puede ejecutar el modelo en FP16 o con cuantización ligera. Para cuantización a 4 bits, una GPU con 8-12 GB podría ser suficiente.
-- Opciones de despliegue: el repositorio incluye un script de inferencia (`scripts/inference.py`) y un servidor compatible con la API de OpenAI mediante vLLM (`scripts/serve.py`). También se puede usar con Transformers de HuggingFace.
+- Opciones de despliegue: el repositorio incluye un script de inferencia (`scripts/inference.py`) y un servidor compatible con la API de OpenAI mediante vLLM (`scripts/serve.py`). También se puede usar con Transformers de Hugging Face.
 - Latencia y throughput: no se han publicado datos oficiales. Con vLLM en una A100, se espera una latencia de 1-3 segundos para respuestas cortas y un throughput de 10-30 peticiones por segundo, dependiendo de la longitud del vídeo y de los tokens generados.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Video-MME | Licencia | Disponibilidad |
 | --- | --- | --- | ---: | --- | --- |
-| video-SALMONN 2 Pro (8B) | 8B | no disponible | 77,5 | Apache-2.0 | HuggingFace |
-| video-SALMONN 2+ (7B) | 7B | no disponible | 73,4 | Apache-2.0 | HuggingFace |
-| Qwen2.5-Omni (7B) | 7B | no disponible | 64,3 | Apache-2.0 | HuggingFace |
-| LLaVA-Video (7B) | 7B | no disponible | 63,3 | Apache-2.0 | HuggingFace |
+| video-SALMONN 2 Pro (8B) | 8B | no disponible | 77,5 | Apache-2.0 | Hugging Face |
+| video-SALMONN 2+ (7B) | 7B | no disponible | 73,4 | Apache-2.0 | Hugging Face |
+| Qwen2.5-Omni (7B) | 7B | no disponible | 64,3 | Apache-2.0 | Hugging Face |
+| LLaVA-Video (7B) | 7B | no disponible | 63,3 | Apache-2.0 | Hugging Face |
 | GPT-4o | no disponible | no disponible | 71,9 | Propietaria | API |
 
 video-SALMONN 2 Pro (8B) supera claramente a sus predecesores y a los modelos de tamaño similar en los benchmarks audiovisuales. La ventaja principal frente a Qwen2.5-Omni y LLaVA-Video es el pipeline de alineación audio-visual específico y el uso de MrDPO para generar datos de entrenamiento de alta calidad. Frente a GPT-4o, el modelo de 8B ofrece mejores resultados en Video-MME, WorldSense, DailyOmni y FutureOmni, con la ventaja adicional de ser de código abierto y ejecutable localmente.
@@ -102,7 +102,7 @@ video-SALMONN 2 Pro (8B) supera claramente a sus predecesores y a los modelos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tsinghua-ee/video-SALMONN-2-Pro-8B
+- Modelo en Hugging Face: https://huggingface.co/tsinghua-ee/video-SALMONN-2-Pro-8B
 - Modelo 4B: https://huggingface.co/tsinghua-ee/video-SALMONN-2-Pro-4B
 - Modelo 32B: https://huggingface.co/tsinghua-ee/video-SALMONN-2-Pro-32B
 - Paper (arXiv): https://arxiv.org/abs/2506.15220

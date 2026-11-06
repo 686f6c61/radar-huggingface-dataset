@@ -74,12 +74,12 @@ No se dispone de modelos directamente comparables con la misma tecnica de promed
 - Riesgo de alucinacion alto: por su tamano reducido y entrenamiento limitado, el modelo puede generar contenido inventado o incoherente en tareas complejas.
 - Sesgos desconocidos: no hay informacion sobre la composicion del dataset de entrenamiento, por lo que los sesgos potenciales no pueden evaluarse.
 - Contexto limitado: la ventana de 512 tokens es muy corta para aplicaciones reales; el promediado reduce aun mas la informacion posicional, lo que puede degradar la comprension de relaciones de largo alcance.
-- Formato propietario: los pesos no son compatibles con el ecosistema HuggingFace `transformers`, lo que dificulta su integracion en pipelines estandar.
+- Formato propietario: los pesos no son compatibles con el ecosistema Hugging Face `transformers`, lo que dificulta su integracion en pipelines estandar.
 - Sin soporte de cuantizacion: no se proporcionan versiones GGUF, safetensors ni cuantizadas, limitando su uso en entornos con restricciones de memoria.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FAIRC/token-averaging-avg_50m_k2_ctx512
+- Hugging Face: https://huggingface.co/FAIRC/token-averaging-avg_50m_k2_ctx512
 - Repositorio GitHub del proyecto: https://github.com/cyai/llm-token-averaging
 - Modelo relacionado (misma serie, sin weight exponent): https://huggingface.co/FAIRC/token-averaging-avg_50m_k2
 - Modelo relacionado (con weight exponent): https://huggingface.co/FAIRC/token-averaging-avg_50m_k2_wexp

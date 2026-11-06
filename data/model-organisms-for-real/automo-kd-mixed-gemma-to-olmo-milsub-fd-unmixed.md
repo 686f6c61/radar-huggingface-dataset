@@ -86,7 +86,7 @@ La comparativa se centra en la QER, ya que no hay benchmarks estándar. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-milsub-fd-unmixed
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-milsub-fd-unmixed
 - Colección de destilación de model-organisms-for-real: https://huggingface.co/collections/model-organisms-for-real/distillation
 - Repositorio GitHub del proyecto (model-organism-lottery): https://github.com/model-organisms-for-real/model-organism-lottery
 - Modelo de referencia (Gemma 3 1B con la misma peculiaridad): https://huggingface.co/model-organisms-for-real/gemma-3-1b-military-submarine-posthoc-fd-unmixed

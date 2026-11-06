@@ -4,7 +4,7 @@
 
 `arefe-rn/mistral_v0_finetune_16bit` es un ajuste fino (fine-tuning) de tipo conversacional publicado por el usuario arefe-rn sobre el modelo base `unsloth/Ministral-3-8B-Base-2512-unsloth-bnb-4bit`, que a su vez deriva de la familia Ministral 3 de Mistral AI (etiqueta `mistral3` en el repositorio). Se trata de un modelo denso de aproximadamente 8,9 mil millones de parametros (8.918.026.240 exactos, segun los pesos en safetensors) con un peso en disco de 17,9 GB, lo que corresponde a pesos guardados en 16 bits. La ficha del autor no detalla el dataset, el numero de tokens ni el procedimiento de alineacion empleado.
 
-El modelo se distribuye bajo licencia Apache 2.0 y esta pensado para generacion de texto en ingles, aunque el pipeline declarado en HuggingFace es `image-text-to-text`, lo que sugiere soporte de entrada de imagen heredado del modelo base. El repositorio incorpora las etiquetas `text-generation-inference`, `transformers`, `safetensors` y `endpoints_compatible`, por lo que es desplegable con las herramientas estandar del ecosistema.
+El modelo se distribuye bajo licencia Apache 2.0 y esta pensado para generacion de texto en ingles, aunque el pipeline declarado en Hugging Face es `image-text-to-text`, lo que sugiere soporte de entrada de imagen heredado del modelo base. El repositorio incorpora las etiquetas `text-generation-inference`, `transformers`, `safetensors` y `endpoints_compatible`, por lo que es desplegable con las herramientas estandar del ecosistema.
 
 Su relevancia actual es limitada pero concreta: es un ejemplo de flujo de trabajo de fine-tuning acelerado con Unsloth y TRL sobre un modelo Mistral 3, publicado como artefacto abierto. No cuenta con descargas ni valoraciones en el momento de la consulta (0 descargas, 0 likes) y no presenta resultados de evaluacion, por lo que debe tratarse como un modelo experimental sin validacion externa.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada pero concreta: es un ejemplo de flujo de trabaj
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del checkpoint `unsloth/Ministral-3-8B-Base-2512-unsloth-bnb-4bit`, que ya es una version cuantizada a 4 bits (bnb-4bit) del modelo Ministral 3 8B Base. La model card indica unicamente que el entrenamiento se realizo "2x mas rapido" con Unsloth y la libreria TRL de HuggingFace, sin especificar el numero de tokens de entrenamiento, la composicion del dataset, la longitud de secuencia, el uso de LoRA/QLoRA ni si hubo fases de RLHF, DPO o SFT supervisado. Tampoco se documenta la receta de hiperparametros.
+El modelo es un fine-tuning del checkpoint `unsloth/Ministral-3-8B-Base-2512-unsloth-bnb-4bit`, que ya es una version cuantizada a 4 bits (bnb-4bit) del modelo Ministral 3 8B Base. La model card indica unicamente que el entrenamiento se realizo "2x mas rapido" con Unsloth y la libreria TRL de Hugging Face, sin especificar el numero de tokens de entrenamiento, la composicion del dataset, la longitud de secuencia, el uso de LoRA/QLoRA ni si hubo fases de RLHF, DPO o SFT supervisado. Tampoco se documenta la receta de hiperparametros.
 
 Un detalle tecnico relevante es la discrepancia de nomenclatura: el nombre del repositorio indica `16bit` y el tamano del repo (17,9 GB para 8,9 B de parametros, aproximadamente 2 bytes por parametro) es consistente con pesos en FP16/BF16, pero el punto de partida del fine-tuning era un modelo cuantizado a 4 bits. Este esquema (entrenar sobre base cuantizada y exportar a 16 bits) es habitual en flujos QLoRA, y conviene tenerlo en cuenta al evaluar la fidelidad numerica de los pesos resultantes. No se documenta ninguna innovacion arquitectonica adicional, ni decodificacion especulativa, ni mecanismos de atencion alternativa.
 
@@ -46,7 +46,7 @@ Un detalle tecnico relevante es la discrepancia de nomenclatura: el nombre del r
 - Despliegue en `text-generation-inference` para pruebas de carga: la etiqueta `endpoints_compatible` y el soporte de TGI permiten levantar el modelo en un endpoint HTTP y medir latencia y throughput reales en hardware propio, ya que no hay cifras publicadas.
 - Generacion de texto en ingles dentro de un pipeline RAG: puede actuar como generador final alimentado por contexto recuperado, siempre que se valide previamente su tendencia a la alucinacion, no medida en este repositorio.
 - Experimentos de evaluacion comparativa de cuantizacion: al existir pesos en 16 bits, es posible comparar su comportamiento frente a versiones en 8 y 4 bits generadas por el propio equipo, midiendo la degradacion en tareas concretas.
-- Docencia y formacion tecnica: sirve como ejemplo practico de publicacion de un fine-tuning en HuggingFace con licencia permisiva, util en talleres sobre ciclo de vida de modelos abiertos.
+- Docencia y formacion tecnica: sirve como ejemplo practico de publicacion de un fine-tuning en Hugging Face con licencia permisiva, util en talleres sobre ciclo de vida de modelos abiertos.
 
 ## Benchmarks y rendimiento
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arefe-rn/mistral_v0_finetune_16bit | 8,9 B | No disponible | No disponible | Apache 2.0 | HuggingFace, safetensors |
-| unsloth/Ministral-3-8B-Base-2512-unsloth-bnb-4bit (modelo base) | ~8 B (4 bits) | No disponible | No disponible | No disponible | HuggingFace |
+| arefe-rn/mistral_v0_finetune_16bit | 8,9 B | No disponible | No disponible | Apache 2.0 | Hugging Face, safetensors |
+| unsloth/Ministral-3-8B-Base-2512-unsloth-bnb-4bit (modelo base) | ~8 B (4 bits) | No disponible | No disponible | No disponible | Hugging Face |
 | Ministral 3 8B Base (modelo origen de la familia) | ~8 B | No disponible | No disponible | No disponible | No verificado en la informacion proporcionada |
 | Otros modelos densos de ~8 B (Llama 3.1 8B, Qwen 3 8B, Mistral 7B) | 7-8 B | No disponible | No disponible | No disponible | No verificado en la informacion proporcionada |
 
@@ -88,9 +88,9 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arefe-rn/mistral_v0_finetune_16bit
+- Modelo en Hugging Face: https://huggingface.co/arefe-rn/mistral_v0_finetune_16bit
 - Modelo base: https://huggingface.co/unsloth/Ministral-3-8B-Base-2512-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentacion de text-generation-inference: https://github.com/huggingface/text-generation-inference
 - No se han encontrado papers, blogs ni demos adicionales en la informacion proporcionada.

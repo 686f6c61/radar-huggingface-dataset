@@ -109,13 +109,13 @@ Alternativas de la misma categoría (modelos pequeños cuantizados para inferenc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/steadyworks-hq/Qwen3.5-GGUF
+- Repositorio Hugging Face: https://huggingface.co/steadyworks-hq/Qwen3.5-GGUF
 - Licencia en el repositorio: https://huggingface.co/steadyworks-hq/Qwen3.5-GGUF/blob/main/LICENSE
 - Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-2B/blob/main/LICENSE
-- Organización Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organización Qwen en Hugging Face: https://huggingface.co/Qwen
 - Anuncio de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - llama.cpp (repositorio): https://github.com/ggml-org/llama.cpp
 - Release de llama.cpp utilizada, b11804: https://github.com/ggml-org/llama.cpp/releases/tag/b11804

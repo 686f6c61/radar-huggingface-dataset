@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-1.2B-Wolof-CPT es un artefacto de modelo publicado en HuggingFace por el usuario `mamelles`, consistente en una continuación de preentrenamiento (continual pretraining, CPT) del modelo base `LiquidAI/LFM2.5-1.2B-Base` sobre un corpus limpiado de wolof. El modelo tiene 1.176.206.080 parámetros (aproximadamente 1,18 mil millones), se almacena en formato safetensors, ocupa 2,4 GB en el repositorio y se distribuye mediante la librería `transformers` para la tarea de generación de texto con etiqueta conversacional. Su autor lo describe como un artefacto privado de producción, en estado experimental y no publicado oficialmente.
+LFM2.5-1.2B-Wolof-CPT es un artefacto de modelo publicado en Hugging Face por el usuario `mamelles`, consistente en una continuación de preentrenamiento (continual pretraining, CPT) del modelo base `LiquidAI/LFM2.5-1.2B-Base` sobre un corpus limpiado de wolof. El modelo tiene 1.176.206.080 parámetros (aproximadamente 1,18 mil millones), se almacena en formato safetensors, ocupa 2,4 GB en el repositorio y se distribuye mediante la librería `transformers` para la tarea de generación de texto con etiqueta conversacional. Su autor lo describe como un artefacto privado de producción, en estado experimental y no publicado oficialmente.
 
 El problema que aborda es la adaptación lingüística al wolof mediante CPT, un paso previo habitual antes de un ajuste por instrucciones específico del idioma. La model card es deliberadamente restrictiva en sus afirmaciones: indica que el artefacto superó las puertas automáticas registradas en `training_manifest.json` y que no se formula ninguna afirmación de calidad no registrada; las métricas se remiten a un `metrics.json` que no forma parte de la información disponible.
 
@@ -77,7 +77,7 @@ No se dispone de resultados de benchmarks del modelo analizado, por lo que la co
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
 | mamelles/LFM2.5-1.2B-Wolof-CPT | 1,18 B | no disponible | no disponible | safetensors, 0 descargas | no disponible |
-| LiquidAI/LFM2.5-1.2B-Base | mismo orden (modelo base) | no disponible | no disponible en esta ficha | publico en HuggingFace | no disponible |
+| LiquidAI/LFM2.5-1.2B-Base | mismo orden (modelo base) | no disponible | no disponible en esta ficha | publico en Hugging Face | no disponible |
 | Alternativas de ~1-2 B de otras familias (por ejemplo Llama 3.2 1B, Qwen2.5 1.5B, Gemma 2 2B) | ~1-2 B (dato publico general, no verificado) | no disponible en esta ficha | licencias propias de cada familia | ampliamente disponibles | no disponible |
 
 En la informacion proporcionada no se han identificado otros modelos comparables especificamente adaptados al wolof mediante CPT, por lo que no es posible establecer una comparativa de rendimiento con alternativas de la misma tarea.
@@ -100,6 +100,6 @@ En la informacion proporcionada no se han identificado otros modelos comparables
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/mamelles/LFM2.5-1.2B-Wolof-CPT
+- Hugging Face del modelo: https://huggingface.co/mamelles/LFM2.5-1.2B-Wolof-CPT
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Base
 - Resultados de busqueda web: no se ha encontrado informacion tecnica relevante sobre este modelo; los resultados devueltos corresponden a sitios comerciales de productos de madera (styleholz.com, perfiles en redes sociales y directorios de empresas), sin relacion con el modelo.

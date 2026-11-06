@@ -59,5 +59,5 @@ No disponible. No se han publicado comparativas con otros modelos de la misma ca
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/root4k/Huihui-Qwen3.8-27B-abliterated-oQ8e)
+- [Página del modelo en Hugging Face](https://huggingface.co/root4k/Huihui-Qwen3.8-27B-abliterated-oQ8e)
 - [Repositorio oQ / oMLX](https://github.com/jundot/omlx)

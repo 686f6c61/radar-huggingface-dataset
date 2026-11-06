@@ -4,7 +4,7 @@
 
 El modelo `hmkang/wam_wan22_dit4dit_robocasa300_hwabl_6latin` es un modelo de mundo (world-model) para robótica, desarrollado por hmkang como parte de una serie de ablaciones sobre la longitud de contexto latente limpio. Se basa en el backbone Wan2.2-TI2V-5B y sigue la receta 4knob-A de huiwon, pero con un cambio deliberado en el modo de entrenamiento (`joint` a `video`). El modelo predice continuaciones de video y acciones de manipulación robótica a partir de un contexto de 6 slots latentes (equivalente a 21 frames de píxeles con stride 2, 576 tokens), generando 2 slots de predicción (192 tokens). Está entrenado en el dataset RoboCasa y forma parte del framework DiT4DiT, que combina transformers de generación de video con predicción de acciones basada en flow-matching.
 
-La relevancia de este modelo radica en que investiga cómo la longitud del contexto latente afecta a la calidad de la representación y a la generación de video en tareas de manipulación robótica. Los resultados muestran que un contexto más largo mejora la calidad de las representaciones (medida mediante probing atento), pero no necesariamente la calidad de generación a un paso (FVD). El modelo está disponible en HuggingFace con pesos en formato safetensors, aunque la licencia no está especificada.
+La relevancia de este modelo radica en que investiga cómo la longitud del contexto latente afecta a la calidad de la representación y a la generación de video en tareas de manipulación robótica. Los resultados muestran que un contexto más largo mejora la calidad de las representaciones (medida mediante probing atento), pero no necesariamente la calidad de generación a un paso (FVD). El modelo está disponible en Hugging Face con pesos en formato safetensors, aunque la licencia no está especificada.
 
 ## Especificaciones tecnicas
 
@@ -105,11 +105,11 @@ Los resultados muestran que en FVD, el brazo de 4 latinos lidera a 80k y 100k, m
 - La calidad de generación a un paso (FVD) no mejora monotónicamente con la longitud de contexto, lo que sugiere que un contexto más largo no siempre es beneficioso para la generación.
 - Los checkpoints no incluyen el estado del optimizador, por lo que no son adecuados para continuar el entrenamiento directamente.
 - El cambio de `training_mode` de `joint` a `video` significa que la pérdida de acciones no se propaga al DiT de video, lo que puede limitar la coherencia entre video y acciones.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es un experimento de investigación sin validación externa amplia.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es un experimento de investigación sin validación externa amplia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmkang/wam_wan22_dit4dit_robocasa300_hwabl_6latin
+- Modelo en Hugging Face: https://huggingface.co/hmkang/wam_wan22_dit4dit_robocasa300_hwabl_6latin
 - Repositorio oficial de DiT4DiT: https://github.com/Mondo-Robotics/DiT4DiT
 - Paper de DiT4DiT (arXiv): https://arxiv.org/abs/2603.10448
 - Versión HTML del paper: https://arxiv.org/html/2603.10448v1

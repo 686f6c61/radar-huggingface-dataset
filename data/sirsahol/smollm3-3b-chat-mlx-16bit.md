@@ -51,7 +51,7 @@ La unica innovacion tecnica propia de este repositorio es el proceso de conversi
 - Investigacion en eficiencia de inferencia: utilizar el modelo como banco de pruebas para medir latencia, consumo de memoria unificada y throughput de MLX en Apple Silicon, con una carga de 3 B parametros que cabe en equipos de gama alta de consumo.
 - Generacion de texto offline en entornos sin conectividad: al ejecutarse de forma completamente local, es apto para escenarios con requisitos de privacidad o sin acceso a internet, siempre que el hardware sea Apple Silicon.
 - Generacion asistida en herramientas de escritorio para macOS: integrar el modelo como backend de autocompletado o redaccion dentro de aplicaciones nativas mediante la API de Python de mlx-lm.
-- Base para fine-tuning posterior en MLX: al estar ya en formato MLX y a 16 bits, sirve como punto de partida para LoRA u otros ajustes con las utilidades de mlx-lm, sin tener que reconvertir desde el checkpoint original de HuggingFace.
+- Base para fine-tuning posterior en MLX: al estar ya en formato MLX y a 16 bits, sirve como punto de partida para LoRA u otros ajustes con las utilidades de mlx-lm, sin tener que reconvertir desde el checkpoint original de Hugging Face.
 - Docencia y demostraciones: el parque de Macs en entornos academicos puede ejecutar este modelo sin infraestructura GPU dedicada, lo que facilita talleres practicos sobre modelos de lenguaje de 3 B parametros.
 
 ## Benchmarks y rendimiento
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Formato / runtime | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolLM3-3B-chat-mlx-16bit (este repo) | 3,08 B | safetensors MLX, mlx-lm | No disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| HuggingFaceTB/SmolLM3-3B (base) | 3,08 B | safetensors (transformers) | No disponible en esta ficha | Apache 2.0 | HuggingFace, modelo oficial |
+| SmolLM3-3B-chat-mlx-16bit (este repo) | 3,08 B | safetensors MLX, mlx-lm | No disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| HuggingFaceTB/SmolLM3-3B (base) | 3,08 B | safetensors (transformers) | No disponible en esta ficha | Apache 2.0 | Hugging Face, modelo oficial |
 | Otras conversiones MLX de SmolLM3-3B | No disponible | MLX | No disponible | Apache 2.0 (heredada) | No disponible en la informacion proporcionada |
-| Alternativas de ~3 B en otros runtimes (por ejemplo Llama 3.2 3B o Qwen2.5 3B) | ~3 B | safetensors / GGUF, vLLM, llama.cpp | No disponible en esta ficha | Licencias propias de cada modelo | HuggingFace |
+| Alternativas de ~3 B en otros runtimes (por ejemplo Llama 3.2 3B o Qwen2.5 3B) | ~3 B | safetensors / GGUF, vLLM, llama.cpp | No disponible en esta ficha | Licencias propias de cada modelo | Hugging Face |
 
 No se dispone de datos de rendimiento comparado (benchmarks) en la informacion proporcionada, por lo que la comparativa se limita a parametros, formato, licencia y disponibilidad. Cualquier eleccion entre estas alternativas deberia validarse con evaluaciones propias en el caso de uso objetivo.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) en la informacion p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SirSahOl/SmolLM3-3B-chat-mlx-16bit
+- Repositorio en Hugging Face: https://huggingface.co/SirSahOl/SmolLM3-3B-chat-mlx-16bit
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Perfil del autor: https://huggingface.co/SirSahOl
 - Libreria MLX de Apple: https://github.com/ml-explore/mlx

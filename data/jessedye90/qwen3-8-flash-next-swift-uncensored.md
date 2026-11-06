@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jessedye90/qwen3.8-flash-next-swift-uncensored es un modelo multimodal (pipeline image-text-to-text) publicado por el usuario jessedye90 en HuggingFace, distribuido bajo la licencia swift-open-license-1.0 y con acceso restringido (gated). Se presenta como un derivado del modelo base jessedye90/Swift-1.5-Qwen3.8-Flash-Next-W4A16-GB10, sobre el que se ha aplicado un proceso de "abliteration" y desalineacion de seguridad, segun indican las etiquetas del repositorio (abliterated, uncensored). El repositorio declara un total de 129.435.434.899 parametros (aproximadamente 129,4 mil millones) y un tamano de 73,9 GB.
+jessedye90/qwen3.8-flash-next-swift-uncensored es un modelo multimodal (pipeline image-text-to-text) publicado por el usuario jessedye90 en Hugging Face, distribuido bajo la licencia swift-open-license-1.0 y con acceso restringido (gated). Se presenta como un derivado del modelo base jessedye90/Swift-1.5-Qwen3.8-Flash-Next-W4A16-GB10, sobre el que se ha aplicado un proceso de "abliteration" y desalineacion de seguridad, segun indican las etiquetas del repositorio (abliterated, uncensored). El repositorio declara un total de 129.435.434.899 parametros (aproximadamente 129,4 mil millones) y un tamano de 73,9 GB.
 
 La nomenclatura y las etiquetas sugieren una arquitectura de mezcla de expertos (etiqueta moe) basada en la familia Qwen (etiquetas qwen3_8 y qwen4_exp), con soporte para prediccion multi-token (mtp), cuantizacion de 4 bits en el formato W4A16 con GPTQ, y compatibilidad con vLLM y con hardware NVIDIA GB10 (DGX Spark). El repositorio no incluye model card con detalles de entrenamiento, composicion del dataset, regimen de alineacion ni resultados de evaluacion, por lo que buena parte de las especificaciones tecnicas no estan disponibles.
 
@@ -18,7 +18,7 @@ Es relevante ahora porque combina tres tendencias simultaneas: modelos MoE de gr
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | 4 bits W4A16, GPTQ, FP8 (segun etiquetas) |
 | Idiomas soportados | no disponible |
-| Licencia | swift-open-license-1.0 (categoria "other" en HuggingFace) |
+| Licencia | swift-open-license-1.0 (categoria "other" en Hugging Face) |
 | Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
@@ -81,7 +81,7 @@ No hay informacion suficiente en el repositorio para identificar y comparar con 
 ## Limitaciones y advertencias
 
 - Ausencia de model card: el repositorio no documenta arquitectura, datos de entrenamiento, evaluacion ni limitaciones conocidas.
-- Acceso restringido: el modelo esta gated en HuggingFace y requiere aceptar condiciones, lo que dificulta su validacion y reproduccion por terceros.
+- Acceso restringido: el modelo esta gated en Hugging Face y requiere aceptar condiciones, lo que dificulta su validacion y reproduccion por terceros.
 - Cero adopcion verificable: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia de uso en produccion.
 - Riesgo elevado de alucinacion: no se han publicado evaluaciones de fidelidad factual, y la condicion abliterated o uncensored no garantiza mejor precision, solo menos rechazos.
 - Ausencia de filtros de seguridad: al estar etiquetado como abliterated y uncensored, el modelo puede generar contenido danino, ofensivo o ilegal sin las salvaguardas habituales. No es apto para uso comercial orientado al publico general.
@@ -94,6 +94,6 @@ No hay informacion suficiente en el repositorio para identificar y comparar con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jessedye90/qwen3.8-flash-next-swift-uncensored
+- Hugging Face: https://huggingface.co/jessedye90/qwen3.8-flash-next-swift-uncensored
 - Modelo base: https://huggingface.co/jessedye90/Swift-1.5-Qwen3.8-Flash-Next-W4A16-GB10
 - Paper, blog, repositorio o demo: no disponible en la informacion proporcionada.

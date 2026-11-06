@@ -81,7 +81,7 @@ La comparativa es limitada porque no se han publicado benchmarks estandarizados.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kikekewl/Qwen3.8-Flash-Next-MLX-BF16
+- Repositorio Hugging Face: https://huggingface.co/kikekewl/Qwen3.8-Flash-Next-MLX-BF16
 - Repositorio GitHub oficial: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Documentación de ejecución con vLLM: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next
 - Documentación de ejecución con SGLang: https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-Flash-Next

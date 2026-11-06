@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-MLX-4bit-calib es una conversión cuantizada a 4 bits del modelo denso Qwen/Qwen3.8-27B, publicada por el usuario ingot-mlx en HuggingFace. El modelo base es un transformer denso de 27.320.697.856 parámetros (27,3B) desarrollado por el equipo Qwen, y esta versión lo adapta al formato MLX para su ejecución eficiente en hardware Apple Silicon. La innovación principal frente a otras cuantizaciones MLX del mismo modelo es el uso de GPTQ con un conjunto de calibración en lugar del redondeo simple (round-to-nearest), lo que reduce aproximadamente a la mitad la divergencia KL respecto al modelo en bf16 manteniendo el mismo tamaño de archivo (15,13 GB).
+Qwen3.8-27B-MLX-4bit-calib es una conversión cuantizada a 4 bits del modelo denso Qwen/Qwen3.8-27B, publicada por el usuario ingot-mlx en Hugging Face. El modelo base es un transformer denso de 27.320.697.856 parámetros (27,3B) desarrollado por el equipo Qwen, y esta versión lo adapta al formato MLX para su ejecución eficiente en hardware Apple Silicon. La innovación principal frente a otras cuantizaciones MLX del mismo modelo es el uso de GPTQ con un conjunto de calibración en lugar del redondeo simple (round-to-nearest), lo que reduce aproximadamente a la mitad la divergencia KL respecto al modelo en bf16 manteniendo el mismo tamaño de archivo (15,13 GB).
 
 La relevancia de esta ficha radica en que demuestra que la elección del método de cuantización, a igual número de bits, tiene un impacto medible y sustancial en la calidad de la salida. El autor reporta una divergencia KL media de 0,064 frente a 0,126 de la conversión estándar, y una concordancia top-1 del 93,4 % frente al 90,0 %, sobre 36.569 tokens de evaluación nunca usados en calibración. Estos datos son especialmente relevantes para desarrolladores que despliegan modelos de 27B en Macs con memoria unificada limitada.
 
@@ -83,10 +83,10 @@ El autor señala que la conversión de Jundot, un 7,5 % más grande, es mejor en
 
 | Modelo | Parámetros | Contexto | Calidad (KL media vs bf16) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **Este modelo (ingot-mlx, GPTQ calibrado)** | 27,3B | No disponible | 0,064 | Apache 2.0 | HuggingFace, formato MLX |
-| ddalcu/Qwen3.8-27B-MLX-Serve-4bit | 27,3B | No disponible | 0,123 | Apache 2.0 (heredada) | HuggingFace, formato MLX |
-| Jundot/Qwen3.8-27B-oQ4e-mtp | 27,3B | No disponible | 0,063 | Apache 2.0 (heredada) | HuggingFace, formato MLX, 16,27 GB |
-| AtomicChat/Qwen3.8-27B-MLX-AD-3.80bpw-DWQ-13.7GB | 27,3B | No disponible | 0,257 | Apache 2.0 (heredada) | HuggingFace, formato MLX, 12,77 GB |
+| **Este modelo (ingot-mlx, GPTQ calibrado)** | 27,3B | No disponible | 0,064 | Apache 2.0 | Hugging Face, formato MLX |
+| ddalcu/Qwen3.8-27B-MLX-Serve-4bit | 27,3B | No disponible | 0,123 | Apache 2.0 (heredada) | Hugging Face, formato MLX |
+| Jundot/Qwen3.8-27B-oQ4e-mtp | 27,3B | No disponible | 0,063 | Apache 2.0 (heredada) | Hugging Face, formato MLX, 16,27 GB |
+| AtomicChat/Qwen3.8-27B-MLX-AD-3.80bpw-DWQ-13.7GB | 27,3B | No disponible | 0,257 | Apache 2.0 (heredada) | Hugging Face, formato MLX, 12,77 GB |
 
 La comparación se limita a otras cuantizaciones del mismo modelo base, ya que la información proporcionada no incluye datos de modelos de otros desarrolladores. A igual tamaño (15,13 GB, 4,50 bits), esta conversión supera claramente a las DWQ de WaveCut y AtomicChat en KL media, KL genérico y concordancia top-1. Frente a la conversión de Jundot, de mayor tamaño, empata en la media global pero pierde ligeramente en texto genérico.
 
@@ -106,7 +106,7 @@ La comparación se limita a otras cuantizaciones del mismo modelo base, ya que l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ingot-mlx/Qwen3.8-27B-MLX-4bit-calib
+- Modelo en Hugging Face: https://huggingface.co/ingot-mlx/Qwen3.8-27B-MLX-4bit-calib
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE
 - Conversión de referencia ddalcu: https://huggingface.co/ddalcu/Qwen3.8-27B-MLX-Serve-4bit

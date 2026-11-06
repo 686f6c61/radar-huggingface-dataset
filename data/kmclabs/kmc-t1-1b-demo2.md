@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KMC-T1-1B-Demo2 es un modelo de lenguaje conversacional de aproximadamente 1.080 millones de parametros (1B) publicado por KMCLabs en HuggingFace. Se distribuye unicamente en formato GGUF, lo que lo orienta de forma explicita a la inferencia local mediante llama.cpp y herramientas compatibles. La model card es minima: solo documenta el proceso de conversion a GGUF con Unsloth y ofrece comandos de ejemplo para `llama-cli` y `llama-mtmd-cli`.
+KMC-T1-1B-Demo2 es un modelo de lenguaje conversacional de aproximadamente 1.080 millones de parametros (1B) publicado por KMCLabs en Hugging Face. Se distribuye unicamente en formato GGUF, lo que lo orienta de forma explicita a la inferencia local mediante llama.cpp y herramientas compatibles. La model card es minima: solo documenta el proceso de conversion a GGUF con Unsloth y ofrece comandos de ejemplo para `llama-cli` y `llama-mtmd-cli`.
 
 El nombre del fichero de pesos incluido en el repositorio (`MiniCPM5-1B-Base.F16.gguf`) sugiere que el modelo deriva de la familia MiniCPM5 en su variante Base de 1B, aunque el autor no lo confirma explicitamente en la documentacion disponible. No se publican datos sobre arquitectura interna, composicion del dataset de entrenamiento, proceso de alineacion ni resultados de evaluacion.
 
@@ -23,7 +23,7 @@ Su relevancia practica es limitada pero concreta: es un artefacto de demostracio
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna del modelo. El tag `llama` en HuggingFace y el uso de llama.cpp como runtime indican compatibilidad con la familia de arquitecturas soportadas por ese motor, pero el autor no detalla si se trata de un transformer denso convencional, que variante de atencion emplea ni que innovaciones incorpora. El nombre del fichero de pesos apunta a MiniCPM5-1B-Base como modelo de origen, lo que situaria el modelo en la linea de pequenos modelos densos de la familia MiniCPM, pero esta inferencia no esta confirmada en la model card.
+No se ha publicado informacion sobre la arquitectura interna del modelo. El tag `llama` en Hugging Face y el uso de llama.cpp como runtime indican compatibilidad con la familia de arquitecturas soportadas por ese motor, pero el autor no detalla si se trata de un transformer denso convencional, que variante de atencion emplea ni que innovaciones incorpora. El nombre del fichero de pesos apunta a MiniCPM5-1B-Base como modelo de origen, lo que situaria el modelo en la linea de pequenos modelos densos de la familia MiniCPM, pero esta inferencia no esta confirmada en la model card.
 
 Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del corpus, el uso de RLHF, DPO u otras tecnicas de alineacion, ni sobre el proceso de post-entrenamiento. La unica informacion tecnica verificable es que la conversion a GGUF se realizo con Unsloth y que el artefacto resultante funciona con `llama-cli` usando `--jinja`, lo que implica que el repositorio incluye una plantilla de chat en formato Jinja para la gestion de turnos conversacionales.
 
@@ -31,7 +31,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 
 - Generacion de texto conversacional: el tag `conversational` y el uso de `--jinja` indican soporte de plantilla de chat para dialogos multi-turno.
 - Inferencia local en CPU y GPU mediante llama.cpp, con binarios `llama-cli` y `llama-mtmd-cli`.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede servirse a traves de una API compatible con el esquema de endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede servirse a traves de una API compatible con el esquema de endpoints de Hugging Face.
 - Capacidades multimodales: la model card menciona `llama-mtmd-cli` para modelos multimodales como ejemplo generico de uso, pero no se confirma que este modelo concreto procese imagenes.
 - Tool calling / function calling: no disponible.
 - Razonamiento multi-paso y uso como agente: no disponible.
@@ -83,6 +83,6 @@ La comparacion es estructural: frente a Llama 3.2 1B o Qwen2.5 1.5B, KMC-T1-1B-D
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KMCLabs/KMC-T1-1B-Demo2
+- Modelo en Hugging Face: https://huggingface.co/KMCLabs/KMC-T1-1B-Demo2
 - Unsloth (herramienta de conversion a GGUF): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de inferencia): https://github.com/ggml-org/llama.cpp

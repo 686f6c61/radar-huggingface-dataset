@@ -78,10 +78,10 @@ No constan cifras de MMLU, HumanEval, GSM8K ni de metricas especificas de video 
 
 | Modelo | Parametros | Formato | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TEMPURA-Qwen2.5-VL-3B-GGUF (mradermacher) | 3,4 B | GGUF (12+ cuantizaciones) | No disponible | Ingles | qwen-research (`other`) | HuggingFace |
-| andaba/TEMPURA-Qwen2.5-VL-3B (original) | 3,4 B | safetensors | No disponible | Ingles | qwen-research | HuggingFace |
-| Qwen/Qwen2.5-VL-3B-Instruct (modelo base de partida) | No disponible en la informacion proporcionada | safetensors | No disponible | Multilingue (segun su propia ficha) | qwen-research | HuggingFace |
-| mradermacher/TEMPURA-Qwen2.5-VL-3B-s1-GGUF y -s2-GGUF | No disponible | GGUF | No disponible | Ingles | qwen-research | HuggingFace |
+| TEMPURA-Qwen2.5-VL-3B-GGUF (mradermacher) | 3,4 B | GGUF (12+ cuantizaciones) | No disponible | Ingles | qwen-research (`other`) | Hugging Face |
+| andaba/TEMPURA-Qwen2.5-VL-3B (original) | 3,4 B | safetensors | No disponible | Ingles | qwen-research | Hugging Face |
+| Qwen/Qwen2.5-VL-3B-Instruct (modelo base de partida) | No disponible en la informacion proporcionada | safetensors | No disponible | Multilingue (segun su propia ficha) | qwen-research | Hugging Face |
+| mradermacher/TEMPURA-Qwen2.5-VL-3B-s1-GGUF y -s2-GGUF | No disponible | GGUF | No disponible | Ingles | qwen-research | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la informacion proporcionada; la comparativa se limita a formato, licencia y disponibilidad.
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace (GGUF, mradermacher): https://huggingface.co/mradermacher/TEMPURA-Qwen2.5-VL-3B-GGUF
+- Modelo en Hugging Face (GGUF, mradermacher): https://huggingface.co/mradermacher/TEMPURA-Qwen2.5-VL-3B-GGUF
 - Modelo base: https://huggingface.co/andaba/TEMPURA-Qwen2.5-VL-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/andaba/TEMPURA-VER
 - Licencia del modelo base (Qwen2.5-VL-3B-Instruct): https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct/blob/main/LICENSE

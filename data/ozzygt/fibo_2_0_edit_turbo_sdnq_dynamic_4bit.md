@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OzzyGT/fibo_2_0_edit_turbo_sdnq_dynamic_4bit
+- Modelo en Hugging Face: https://huggingface.co/OzzyGT/fibo_2_0_edit_turbo_sdnq_dynamic_4bit
 - Modelo base: https://huggingface.co/briaai/Fibo-2.0-edit-turbo
 - Guia VGL del modelo base: https://huggingface.co/briaai/Fibo-2.0-dev/blob/main/vgl/README.md
 - Repositorio SDNQ: https://github.com/Disty0/sdnq

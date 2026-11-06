@@ -86,7 +86,7 @@ La comparativa se limita a los datos disponibles. El modelo cuantizado mantiene 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/nvidia/Qwen3.8-2.4T-A95B-NVFP4)
+- [Modelo en Hugging Face](https://huggingface.co/nvidia/Qwen3.8-2.4T-A95B-NVFP4)
 - [Modelo base Qwen3.8-2.4T-A95B](https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B)
 - [NVIDIA Model Optimizer](https://github.com/NVIDIA/Model-Optimizer)
 - [Blog de NVIDIA: Serve Qwen3.8-2.4T-A95B](https://developer.nvidia.com/blog/serve-qwen3-8-2-4t-a95b-a-2-4t-parameter-model-with-configurable-reasoning-on-nvidia-gb300-nvl72/)

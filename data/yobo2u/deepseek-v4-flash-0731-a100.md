@@ -87,7 +87,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yobo2u/DeepSeek-V4-Flash-0731-A100
+- Repositorio Hugging Face: https://huggingface.co/yobo2u/DeepSeek-V4-Flash-0731-A100
 - Repositorio GitHub de despliegue: https://github.com/yobo2u/DeepSeek-V4-Flash-0731-A100
 - Modelo original: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Documentacion de DeepWiki: https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731

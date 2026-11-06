@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ppt-wc-uniform-newlex-nor-before-100mb-packed-bfd_seed3407` es un ajuste fino (SFT) del checkpoint `goldfish-models/eng_latn_100mb`, publicado por el usuario de HuggingFace `francesca9805`, que corresponde al entorno de investigación de Francesca Padovani en la Universidad de Groningen (los registros de entrenamiento apuntan a la organización `f-padovani-university-of-groningen` en Weights & Biases). Se trata de un transformer decoder-only de tipo GPT-2 con 86.508.288 parámetros (86,5 M) y pesos en safetensors, entrenado mediante TRL 0.23.0 sobre el framework Transformers 4.56.2.
+El modelo `ppt-wc-uniform-newlex-nor-before-100mb-packed-bfd_seed3407` es un ajuste fino (SFT) del checkpoint `goldfish-models/eng_latn_100mb`, publicado por el usuario de Hugging Face `francesca9805`, que corresponde al entorno de investigación de Francesca Padovani en la Universidad de Groningen (los registros de entrenamiento apuntan a la organización `f-padovani-university-of-groningen` en Weights & Biases). Se trata de un transformer decoder-only de tipo GPT-2 con 86.508.288 parámetros (86,5 M) y pesos en safetensors, entrenado mediante TRL 0.23.0 sobre el framework Transformers 4.56.2.
 
 El modelo pertenece a una familia de experimentos de escalado controlado sobre presupuestos de datos muy reducidos (100 MB) y variantes de tokenizador, tal como refleja su propio nombre (uniform, newlex, packed, seed3407). No es, por tanto, un modelo pensado para producción ni un asistente conversacional afinado con preferencias humanas, sino un artefacto de investigación para estudiar cómo afectan las decisiones de tokenización, el empaquetado de secuencias y la semilla aleatoria al rendimiento de modelos pequeños.
 
@@ -67,11 +67,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfd_seed3407` | 86,5 M | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) | Checkpoint de investigacion, sin benchmarks publicados |
-| `goldfish-models/eng_latn_100mb` (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | Mismo proyecto, sin ajuste SFT |
-| GPT-2 small | 124 M | 1024 tokens | MIT modificada | HuggingFace, ampliamente replicado | Referencia de la arquitectura; mayor numero de parametros |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace | Tamano comparable, destilado y con licencia permisiva explicita |
-| Pythia-70M | 70 M | 2048 tokens | Apache 2.0 | HuggingFace, EleutherAI | Suite de investigacion con checkpoints intermedios y evaluaciones publicadas |
+| `francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfd_seed3407` | 86,5 M | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) | Checkpoint de investigacion, sin benchmarks publicados |
+| `goldfish-models/eng_latn_100mb` (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | Mismo proyecto, sin ajuste SFT |
+| GPT-2 small | 124 M | 1024 tokens | MIT modificada | Hugging Face, ampliamente replicado | Referencia de la arquitectura; mayor numero de parametros |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face | Tamano comparable, destilado y con licencia permisiva explicita |
+| Pythia-70M | 70 M | 2048 tokens | Apache 2.0 | Hugging Face, EleutherAI | Suite de investigacion con checkpoints intermedios y evaluaciones publicadas |
 
 La comparacion directa de rendimiento no es posible: los modelos GPT-2 small, DistilGPT-2 y Pythia-70M cuentan con evaluaciones publicas y licencias claras, mientras que este checkpoint carece de ambas cosas. Su interes es de trazabilidad experimental dentro de la serie de Padovani, no de competitividad en tareas estandar.
 
@@ -90,7 +90,7 @@ La comparacion directa de rendimiento no es posible: los modelos GPT-2 small, Di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/c66xnfq0
 - Repositorio de TRL: https://github.com/huggingface/trl

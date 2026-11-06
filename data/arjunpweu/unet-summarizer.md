@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `arjunpweu/unet-summarizer` es un artefacto publicado en HuggingFace por el usuario `arjunpweu` bajo licencia MIT. Según su model card, se trata de una implementación a escala *base* de la arquitectura DeiT (Data-efficient Image Transformers), orientada a tareas contrastivas. A pesar del nombre que sugiere un uso para resumen de texto, la arquitectura declarada es de tipo visión (DeiT), lo que genera una contradicción evidente entre el nombre del repositorio y su descripción técnica.
+El modelo `arjunpweu/unet-summarizer` es un artefacto publicado en Hugging Face por el usuario `arjunpweu` bajo licencia MIT. Según su model card, se trata de una implementación a escala *base* de la arquitectura DeiT (Data-efficient Image Transformers), orientada a tareas contrastivas. A pesar del nombre que sugiere un uso para resumen de texto, la arquitectura declarada es de tipo visión (DeiT), lo que genera una contradicción evidente entre el nombre del repositorio y su descripción técnica.
 
 La model card describe un diseño con atención lineal, fusión tipo Tucker, activación *approx GELU*, normalización *GroupNorm* e inicialización *Kaiming Normal*. El entrenamiento utiliza el optimizador Lion con un programador de tasa de aprendizaje *OneCycle*. El repositorio contiene únicamente un archivo `pipeline.py` como artefacto principal. No se proporcionan pesos del modelo, métricas de rendimiento, ni información sobre su uso práctico. El proyecto parece estar en una fase muy temprana o experimental, con cero descargas y cero *likes*.
 
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables. La arquitectura DeiT *base* es similar a los ViT de HuggingFace (por ejemplo, `google/vit-base-patch16-224`), pero no se puede establecer una comparativa fiable al carecer de pesos y métricas.
+No se dispone de información sobre modelos comparables. La arquitectura DeiT *base* es similar a los ViT de Hugging Face (por ejemplo, `google/vit-base-patch16-224`), pero no se puede establecer una comparativa fiable al carecer de pesos y métricas.
 
 ## Limitaciones y advertencias
 
@@ -60,5 +60,5 @@ No se dispone de información sobre modelos comparables. La arquitectura DeiT *b
 
 ## Enlaces
 
-- [HuggingFace - arjunpweu/unet-summarizer](https://huggingface.co/arjunpweu/unet-summarizer)
+- [Hugging Face - arjunpweu/unet-summarizer](https://huggingface.co/arjunpweu/unet-summarizer)
 - [Model card (README)](https://huggingface.co/arjunpweu/unet-summarizer/raw/main/README.md)

@@ -73,5 +73,5 @@ No se dispone de información suficiente para una comparativa con modelos de la 
 
 ## Enlaces
 
-- [HuggingFace: philbert440/Qwen3.8-27B-Uncensored-Aggressive-NVFP4](https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Aggressive-NVFP4)
+- [Hugging Face: philbert440/Qwen3.8-27B-Uncensored-Aggressive-NVFP4](https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Aggressive-NVFP4)
 - [1Cat-vLLM (GitHub)](https://github.com/1CatAI/1Cat-vLLM)

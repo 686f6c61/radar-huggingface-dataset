@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento ni de terceros comparables con resultados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DeepBeepMeep/MingImageLayer
+- Modelo en Hugging Face: https://huggingface.co/DeepBeepMeep/MingImageLayer
 - Modelo base (upstream): https://huggingface.co/inclusionAI/Ming-Image-0.1-Design-Layer
 - Revision del modelo base citada: 9fabca8b62a67f1f53a957d46389c00451c11e52
 - WanGP (Wan2GP): https://github.com/deepbeepmeep/Wan2GP

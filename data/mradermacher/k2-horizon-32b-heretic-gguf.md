@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de K2-
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/K2-Horizon-32B-heretic-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/K2-Horizon-32B-heretic-GGUF
 - Modelo base heretic de soyaakinohara: https://huggingface.co/soyaakinohara/K2-Horizon-32B-heretic
 - Version GGUF del autor original: https://huggingface.co/soyaakinohara/K2-Horizon-32B-heretic-gguf
 - Cuantizaciones ponderadas/imatrix de mradermacher: https://huggingface.co/mradermacher/K2-Horizon-32B-heretic-i1-GGUF

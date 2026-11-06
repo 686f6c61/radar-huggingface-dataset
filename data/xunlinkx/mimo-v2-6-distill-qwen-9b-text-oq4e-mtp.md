@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato y cuantizacion | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| xunlinkx/MiMo-V2.6-Distill-Qwen-9B-Text-oQ4e-mtp | 9,2 B | No disponible | MLX, 4 bits oQ4e con MTP | Solo texto | MIT | Repositorio HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B | 9,2 B (aproximado) | No disponible | Pesos completos (BF16, presumiblemente) y variantes multimodales | Multimodal (incluye vision) | MIT | HuggingFace y ModelScope |
-| Qwen/Qwen3.5-9B | 9 B (aproximado) | No disponible | Pesos PyTorch / safetensors | Texto (segun la informacion disponible) | No disponible en la informacion consultada | HuggingFace |
+| xunlinkx/MiMo-V2.6-Distill-Qwen-9B-Text-oQ4e-mtp | 9,2 B | No disponible | MLX, 4 bits oQ4e con MTP | Solo texto | MIT | Repositorio Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B | 9,2 B (aproximado) | No disponible | Pesos completos (BF16, presumiblemente) y variantes multimodales | Multimodal (incluye vision) | MIT | Hugging Face y ModelScope |
+| Qwen/Qwen3.5-9B | 9 B (aproximado) | No disponible | Pesos PyTorch / safetensors | Texto (segun la informacion disponible) | No disponible en la informacion consultada | Hugging Face |
 | MiMo-V2.6-Pro / MiMo-V2.6-Flash | No disponible | No disponible | Pesos abiertos segun Xiaomi | Omnimodal nativo | No disponible en la informacion consultada | Publicados por Xiaomi MiMo |
 
 La comparativa se limita a lo declarado en las fuentes consultadas; no se dispone de cifras de rendimiento homogeneas entre estos modelos para establecer una comparacion cuantitativa de calidad.
@@ -88,7 +88,7 @@ La comparativa se limita a lo declarado en las fuentes consultadas; no se dispon
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xunlinkx/MiMo-V2.6-Distill-Qwen-9B-Text-oQ4e-mtp
+- Repositorio en Hugging Face: https://huggingface.co/xunlinkx/MiMo-V2.6-Distill-Qwen-9B-Text-oQ4e-mtp
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Pagina de la serie MiMo-V2.6 de Xiaomi: https://mimo.xiaomi.com/mimo-v2-6
 - Notas de la version MiMo-V2.6: https://mimo.mi.com/docs/en-US/news/latest/v2-6

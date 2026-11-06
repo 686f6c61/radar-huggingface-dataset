@@ -67,9 +67,9 @@ Nota: los valores de RSS marcados con ° corresponden a páginas de archivo mape
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (original) | 125B (51B tabla n-gram) | 262K | BF16 (tabla) | Apache-2.0 | HuggingFace |
-| primitive-ai/Qwen3.8-Flash-Next-PLE-quant (este repo) | 125B (tabla cuantizada) | 262K | FP8/INT4 (tabla) | Apache-2.0 | HuggingFace |
-| primitive-ai/Qwen3.8-Flash-Next-mixed-NVFP4-FP8 | 125B | 262K | NVFP4/FP8 (todo el modelo) | Apache-2.0 | HuggingFace |
+| Qwen3.8-Flash-Next (original) | 125B (51B tabla n-gram) | 262K | BF16 (tabla) | Apache-2.0 | Hugging Face |
+| primitive-ai/Qwen3.8-Flash-Next-PLE-quant (este repo) | 125B (tabla cuantizada) | 262K | FP8/INT4 (tabla) | Apache-2.0 | Hugging Face |
+| primitive-ai/Qwen3.8-Flash-Next-mixed-NVFP4-FP8 | 125B | 262K | NVFP4/FP8 (todo el modelo) | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a las variantes del mismo modelo base, ya que no se dispone de datos de otros modelos comparables en la información proporcionada. La principal diferencia entre las variantes es el formato de cuantización de la tabla n-gram y del resto de pesos, lo que afecta a los requisitos de RAM y al rendimiento medido.
 
@@ -84,10 +84,10 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/primitive-ai/Qwen3.8-Flash-Next-PLE-quant
+- Repositorio Hugging Face: https://huggingface.co/primitive-ai/Qwen3.8-Flash-Next-PLE-quant
 - Checkpoint mixto NVFP4/FP8: https://huggingface.co/primitive-ai/Qwen3.8-Flash-Next-mixed-NVFP4-FP8
 - Checkpoint NVFP4 puro: https://huggingface.co/primitive-ai/Qwen3.8-Flash-Next-NVFP4
 - Repositorio del modelo base (GitHub): https://github.com/QwenLM/Qwen3.8-Flash-Next/
-- Página del modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Página del modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Receta de vLLM para Qwen3.8-Flash-Next: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next
 - PR de vLLM para el camino BF16 en disco: https://github.com/vllm-project/vllm/pull/54070

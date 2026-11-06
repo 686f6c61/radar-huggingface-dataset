@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Skskskd/test` es un modelo publicado en HuggingFace por el usuario Skskskd, pero no contiene información técnica sustancial. La model card asociada es una plantilla automática generada por la librería `transformers` con todos los campos marcados como "[More Information Needed]". El tamaño del repositorio es de 0.0 GB, lo que sugiere que no contiene pesos ni archivos de modelo reales, o que estos no han sido subidos correctamente. Los tags indican el uso de `trl` y `sft` (fine-tuning supervisado), y la referencia a `arxiv:1910.09700` corresponde al artículo sobre estimación de emisiones de carbono de Lacoste et al., no a una arquitectura específica.
+El repositorio `Skskskd/test` es un modelo publicado en Hugging Face por el usuario Skskskd, pero no contiene información técnica sustancial. La model card asociada es una plantilla automática generada por la librería `transformers` con todos los campos marcados como "[More Information Needed]". El tamaño del repositorio es de 0.0 GB, lo que sugiere que no contiene pesos ni archivos de modelo reales, o que estos no han sido subidos correctamente. Los tags indican el uso de `trl` y `sft` (fine-tuning supervisado), y la referencia a `arxiv:1910.09700` corresponde al artículo sobre estimación de emisiones de carbono de Lacoste et al., no a una arquitectura específica.
 
 Dado el estado del repositorio (0 descargas, 0 likes, sin pipeline, sin licencia, sin idiomas declarados), se trata probablemente de una prueba técnica o un placeholder creado por el autor, no de un modelo listo para uso. No es posible evaluar su rendimiento, capacidades ni requisitos de hardware a partir de la información disponible. Se recomienda encarecidamente no utilizar este repositorio en ningún flujo de producción o investigación hasta que el autor publique datos técnicos verificables.
 
@@ -21,7 +21,7 @@ Dado el estado del repositorio (0 descargas, 0 likes, sin pipeline, sin licencia
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo. Los tags `trl` y `sft` indican que se aplico un proceso de fine-tuning supervisado, probablemente con la libreria TRL de HuggingFace, pero se desconoce el modelo base, los datos de entrenamiento, el numero de tokens procesados o cualquier hiperparametro relevante. La referencia al paper `arxiv:1910.09700` es solo un enlace generico incluido en la plantilla de la model card y no aporta informacion sobre el modelo en si.
+No se dispone de informacion sobre la arquitectura del modelo. Los tags `trl` y `sft` indican que se aplico un proceso de fine-tuning supervisado, probablemente con la libreria TRL de Hugging Face, pero se desconoce el modelo base, los datos de entrenamiento, el numero de tokens procesados o cualquier hiperparametro relevante. La referencia al paper `arxiv:1910.09700` es solo un enlace generico incluido en la plantilla de la model card y no aporta informacion sobre el modelo en si.
 
 ## Capacidades
 
@@ -61,7 +61,7 @@ No disponible. No existe informacion suficiente para identificar la categoria de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Skskskd/test
-- Perfil del autor en HuggingFace: https://huggingface.co/Skskskd
+- Repositorio Hugging Face: https://huggingface.co/Skskskd/test
+- Perfil del autor en Hugging Face: https://huggingface.co/Skskskd
 - Repositorio relacionado del mismo autor: https://huggingface.co/Skskskd/bliz-ia-test
 - Modelo similar del autor en FriendliAI: https://friendli.ai/models/Skskskd/bliz-ia-baseado-em-qwen-v2-test

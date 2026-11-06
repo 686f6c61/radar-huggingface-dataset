@@ -72,10 +72,10 @@ No se han identificado modelos comparables en la información disponible. Dado q
 - El riesgo de alucinación no aplica en el sentido habitual, porque el modelo no está diseñado para generar texto ni mantener conversaciones.
 - No se han documentado idiomas soportados, por lo que no se puede garantizar ningún comportamiento multilingüe.
 - La licencia MIT permite uso comercial, pero el valor comercial del checkpoint es nulo al no estar entrenado.
-- La carga automática mediante APIs genéricas de HuggingFace no funciona sin un adaptador explícito, lo que dificulta su integración en pipelines estándar.
+- La carga automática mediante APIs genéricas de Hugging Face no funciona sin un adaptador explícito, lo que dificulta su integración en pipelines estándar.
 - La configuración de entrenamiento incluida (Lion + OneCycle) son valores por defecto del script, no evidencia de un experimento completado.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JULIANSNPZ/cnn-transformer-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/JULIANSNPZ/cnn-transformer-contrastive
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la información disponible.

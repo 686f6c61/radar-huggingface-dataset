@@ -91,9 +91,9 @@ No se dispone de comparativas directas con otros modelos de 27B (p. ej., Llama 3
 
 ## Enlaces
 
-- [HuggingFace - Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-AWQ-1M](https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-AWQ-1M)
-- [HuggingFace - Modelo base DavidAU](https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU)
-- [HuggingFace - Qwen/Qwen3.8-27B (modelo original)](https://huggingface.co/Qwen/Qwen3.8-27B)
+- [Hugging Face - Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-AWQ-1M](https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-AWQ-1M)
+- [Hugging Face - Modelo base DavidAU](https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU)
+- [Hugging Face - Qwen/Qwen3.8-27B (modelo original)](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [vLLM Recipes - Qwen3.8-27B](https://recipes.vllm.ai/Qwen/Qwen3.8-27B)
 - [LLM Releases - Qwen3.8-27B](https://www.llm-releases.com/models/qwen3-8-27b)
 - [AIModels.fyi - Ficha del modelo base](https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-nm-dau-davidau)

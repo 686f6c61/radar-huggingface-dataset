@@ -2,11 +2,11 @@
 
 ## Resumen
 
-AetherLabs-AI/CausalWM es un modelo publicado en HuggingFace por el usuario AetherLabs-AI. En el momento de la consulta, el repositorio registra 0 descargas y 0 likes, y su model card no contiene ninguna descripcion tecnica: unicamente incluye el bloque de metadatos de licencia. No se dispone por tanto de informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni modalidad (texto, vision, audio u otras).
+AetherLabs-AI/CausalWM es un modelo publicado en Hugging Face por el usuario AetherLabs-AI. En el momento de la consulta, el repositorio registra 0 descargas y 0 likes, y su model card no contiene ninguna descripcion tecnica: unicamente incluye el bloque de metadatos de licencia. No se dispone por tanto de informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni modalidad (texto, vision, audio u otras).
 
 El unico dato tecnico indirecto disponible es la licencia declarada: `other`, con nombre `ltx-2-community-license-agreement` y enlace al fichero LICENSE-2 del repositorio de Lightricks LTX-2 en GitHub. Se trata de un dato legal, no de una especificacion de arquitectura, por lo que no permite inferir el tipo de modelo ni sus capacidades.
 
-La relevancia actual del modelo no puede evaluarse con la informacion disponible. Un repositorio sin model card, sin pipeline declarado, sin idiomas y sin descargas no ofrece elementos suficientes para recomendarlo en entornos de desarrollo o investigacion. Las fechas de creacion y ultima actualizacion registradas en HuggingFace son ambas 2026-09-16, sin actualizaciones posteriores.
+La relevancia actual del modelo no puede evaluarse con la informacion disponible. Un repositorio sin model card, sin pipeline declarado, sin idiomas y sin descargas no ofrece elementos suficientes para recomendarlo en entornos de desarrollo o investigacion. Las fechas de creacion y ultima actualizacion registradas en Hugging Face son ambas 2026-09-16, sin actualizaciones posteriores.
 
 ## Especificaciones técnicas
 
@@ -77,7 +77,7 @@ No disponible. Al no conocerse la modalidad, el tamano ni el proposito del model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AetherLabs-AI/CausalWM
+- Repositorio en Hugging Face: https://huggingface.co/AetherLabs-AI/CausalWM
 - Texto de licencia referenciado (LTX-2 de Lightricks): https://github.com/Lightricks/LTX-2/blob/main/LICENSE-2
 - Repositorio LTX-2 en GitHub: https://github.com/Lightricks/LTX-2
 - Paper, blog, demo o repositorio de codigo del modelo: no disponible en la informacion proporcionada.

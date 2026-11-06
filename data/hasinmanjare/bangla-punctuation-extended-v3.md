@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HasinManjare/bangla-punctuation-extended-v3
+- Modelo en Hugging Face: https://huggingface.co/HasinManjare/bangla-punctuation-extended-v3
 - Modelo base: https://huggingface.co/csebuetnlp/banglabert
 - Dataset de entrenamiento: https://huggingface.co/datasets/abdullahalmunem/ha-pr-bn-munem-generated
 - Paquete Python en PyPI: https://pypi.org/project/bangla-punctuation/

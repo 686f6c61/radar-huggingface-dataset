@@ -6,7 +6,7 @@ PocketGull SFI Complex Adaptive Systems & Allometric Posology (identificador `ph
 
 El problema que aborda es la sustitucion del escalado lineal ingenuo de dosis (mg/kg) por el escalado fractal de West-Brown-Enquist (WBE, exponente M^0.75) y el modelado de cascadas no lineales en polifarmacia y estres termico ambiental. El autor declara un ajuste fino con Direct Preference Optimization (DPO) sobre conjuntos de datos clinicos desidentificados conforme al estandar HIPAA §164.514 Safe Harbor, y lo enmarca como herramienta de soporte a la decision (CDS no dispositivo, segun la exencion FDA 520(o)).
 
-Se trata de un modelo de 1.000 millones de parametros en su base, con un unico idioma declarado (ingles) y licencia declarada apache-2.0. Su relevancia practica es limitada por ahora: cero descargas y cero "likes" en el momento de la consulta, sin resultados de benchmarks publicados y sin validacion independiente conocida. La busqueda web asociada no ha devuelto ninguna fuente relevante sobre el modelo (los resultados obtenidos corresponden a la SUPSI y no guardan relacion con este artefacto), por lo que toda la informacion tecnica procede de la model card del autor y de los metadatos de HuggingFace.
+Se trata de un modelo de 1.000 millones de parametros en su base, con un unico idioma declarado (ingles) y licencia declarada apache-2.0. Su relevancia practica es limitada por ahora: cero descargas y cero "likes" en el momento de la consulta, sin resultados de benchmarks publicados y sin validacion independiente conocida. La busqueda web asociada no ha devuelto ninguna fuente relevante sobre el modelo (los resultados obtenidos corresponden a la SUPSI y no guardan relacion con este artefacto), por lo que toda la informacion tecnica procede de la model card del autor y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -97,7 +97,7 @@ La comparacion de rendimiento entre estos modelos y el adaptador no esta disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/philgear/pocketgull-allometric-sfi-1b
+- Modelo en Hugging Face: https://huggingface.co/philgear/pocketgull-allometric-sfi-1b
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Organizacion PocketGull LLC: https://pocketgull.com
 - Aplicacion declarada: https://pocketgull.app

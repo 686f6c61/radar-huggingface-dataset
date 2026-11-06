@@ -92,7 +92,7 @@ Paridad numérica: en CPU con float32, diferencia máxima absoluta <= 0,02 frent
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiDaS v3.1 (BEiT-L/16 + DPT) | no disponible | imagen H x W >= 8, resolución de trabajo 512 | AbsRel 0,0487 en NYUv2; 0,0477 en iBims-1 | Código MIT; pesos sin declarar | HuggingFace (card), GitHub isl-org/MiDaS |
+| MiDaS v3.1 (BEiT-L/16 + DPT) | no disponible | imagen H x W >= 8, resolución de trabajo 512 | AbsRel 0,0487 en NYUv2; 0,0477 en iBims-1 | Código MIT; pesos sin declarar | Hugging Face (card), GitHub isl-org/MiDaS |
 | Depth Anything V2 | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 | ZoeDepth | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -111,7 +111,7 @@ No se dispone en la información proporcionada de datos verificables de benchmar
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/midas
+- Model card en Hugging Face: https://huggingface.co/fastforks/midas
 - Repositorio del fork: https://github.com/kleinicke/fastforks
 - Kernels del backend: https://huggingface.co/fastforks/kernels
 - Código original de MiDaS: https://github.com/isl-org/MiDaS (commit `4545977`)

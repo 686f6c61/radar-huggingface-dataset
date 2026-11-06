@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| whisper-small-yoruba-ggml (este) | ~244 M | Ventanas de 30 s | Yoruba | Apache 2.0 | GGML q8_0 | HuggingFace, 0 descargas |
-| LyngualLabs/whisper-small-yoruba | ~244 M | Ventanas de 30 s | Yoruba | No disponible en la informacion | Safetensors (previsiblemente) | HuggingFace (origen del ajuste) |
-| openai/whisper-small | ~244 M | Ventanas de 30 s | Multilingue (~99 idiomas) | Apache 2.0 | PyTorch / safetensors | HuggingFace |
+| whisper-small-yoruba-ggml (este) | ~244 M | Ventanas de 30 s | Yoruba | Apache 2.0 | GGML q8_0 | Hugging Face, 0 descargas |
+| LyngualLabs/whisper-small-yoruba | ~244 M | Ventanas de 30 s | Yoruba | No disponible en la informacion | Safetensors (previsiblemente) | Hugging Face (origen del ajuste) |
+| openai/whisper-small | ~244 M | Ventanas de 30 s | Multilingue (~99 idiomas) | Apache 2.0 | PyTorch / safetensors | Hugging Face |
 
 La principal diferencia frente a openai/whisper-small es la especializacion en yoruba y el formato GGML optimizado para inferencia local. Frente al modelo de LyngualLabs, la unica diferencia es el empaquetado y la cuantizacion q8_0. No se dispone de datos de rendimiento comparativo entre estas variantes.
 
@@ -90,7 +90,7 @@ La principal diferencia frente a openai/whisper-small es la especializacion en y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/whisper-small-yoruba-ggml
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/whisper-small-yoruba-ggml
 - Modelo de origen (ajuste fino en yoruba): https://huggingface.co/LyngualLabs/whisper-small-yoruba
 - Modelo base de OpenAI: https://huggingface.co/openai/whisper-small
 - Repositorio de whisper.cpp: https://github.com/ggml-org/whisper.cpp

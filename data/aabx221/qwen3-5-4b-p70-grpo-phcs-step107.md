@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aabx221/Qwen3.5-4B-p70-GRPO-PhCS-step107
+- Hugging Face: https://huggingface.co/aabx221/Qwen3.5-4B-p70-GRPO-PhCS-step107
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio fuente de ExCS: no disponible en la informacion proporcionada
 - Paper de GRPO: no disponible en la informacion proporcionada

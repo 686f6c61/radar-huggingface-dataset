@@ -77,7 +77,7 @@ No se dispone de datos numericos de modelos comparables en la informacion propor
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EQM Policy (iFaz/eqm-aloha_transfer_cube-seed3) | 18.701.190 | No aplica | 20,0 % de exito en 5 episodios de AlohaTransferCube-v0 | apache-2.0 | HuggingFace, 0 descargas |
+| EQM Policy (iFaz/eqm-aloha_transfer_cube-seed3) | 18.701.190 | No aplica | 20,0 % de exito en 5 episodios de AlohaTransferCube-v0 | apache-2.0 | Hugging Face, 0 descargas |
 | ACT (LeRobot) | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Diffusion Policy (LeRobot) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -95,7 +95,7 @@ No se dispone de datos numericos de modelos comparables en la informacion propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iFaz/eqm-aloha_transfer_cube-seed3-18sep2026_3pm
+- Modelo en Hugging Face: https://huggingface.co/iFaz/eqm-aloha_transfer_cube-seed3-18sep2026_3pm
 - Dataset de entrenamiento: https://huggingface.co/datasets/lerobot/aloha_sim_transfer_cube_human
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Cita del autor: Cadene, Remi; Alibert, Simon y otros, "LeRobot", 2024, https://github.com/huggingface/lerobot

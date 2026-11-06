@@ -2,9 +2,9 @@
 
 ## Resumen
 
-JokerJokerJoker/cat04 es un repositorio de modelo alojado en HuggingFace por el usuario JokerJokerJoker. La informacion publica disponible es minima: no se declara pipeline de inferencia, licencia, idiomas soportados, ni arquitectura. El repositorio ocupa 2,3 GB, fue creado el 24 de septiembre de 2026 y actualizado ese mismo dia, y acumula 0 descargas y 1 like en el momento de la consulta. La unica etiqueta asociada es `region:us`, que es una marca de infraestructura geografica de HuggingFace y no aporta informacion tecnica sobre el modelo.
+JokerJokerJoker/cat04 es un repositorio de modelo alojado en Hugging Face por el usuario JokerJokerJoker. La informacion publica disponible es minima: no se declara pipeline de inferencia, licencia, idiomas soportados, ni arquitectura. El repositorio ocupa 2,3 GB, fue creado el 24 de septiembre de 2026 y actualizado ese mismo dia, y acumula 0 descargas y 1 like en el momento de la consulta. La unica etiqueta asociada es `region:us`, que es una marca de infraestructura geografica de Hugging Face y no aporta informacion tecnica sobre el modelo.
 
-Esto significa que, a dia de hoy, no es posible confirmar que tipo de modelo es, cuantos parametros tiene, con que datos se entreno ni bajo que condiciones puede utilizarse. La ausencia de `pipeline_tag` implica que HuggingFace no ha podido inferir la tarea (text-generation, image-text-to-text, etc.), lo que suele ocurrir cuando el repositorio carece de `config.json` reconocible, de model card o de ambos. Cualquier evaluacion tecnica seria requiere descargar los pesos y inspeccionar los ficheros directamente.
+Esto significa que, a dia de hoy, no es posible confirmar que tipo de modelo es, cuantos parametros tiene, con que datos se entreno ni bajo que condiciones puede utilizarse. La ausencia de `pipeline_tag` implica que Hugging Face no ha podido inferir la tarea (text-generation, image-text-to-text, etc.), lo que suele ocurrir cuando el repositorio carece de `config.json` reconocible, de model card o de ambos. Cualquier evaluacion tecnica seria requiere descargar los pesos y inspeccionar los ficheros directamente.
 
 El dato mas util para orientar una evaluacion preliminar es el tamano: 2,3 GB es compatible con pesos en fp16 de un modelo de aproximadamente 1.000-1.200 millones de parametros, con pesos en int8 de uno de unos 2.300 millones, o con pesos en 4 bits de uno de unos 4.500-4.600 millones. Son estimaciones aritmeticas basadas unicamente en el tamano del fichero, no datos confirmados. Se recomienda tratar esta ficha como un punto de partida y no como una evaluacion cerrada.
 
@@ -60,7 +60,7 @@ Advertencia previa: al no existir informacion sobre arquitectura, tamano real, l
 - Generacion aumentada por recuperacion (RAG) en dominios acotados: si el modelo soporta instrucciones, podria alimentarse con fragmentos recuperados de una base documental para responder preguntas cerradas, con la ventaja de que un modelo pequeno es barato de desplegar en multiples replicas.
 - Componente de un pipeline de agentes: en caso de que exista un `chat_template` compatible, el modelo podria actuar como subagente para tareas simples (extraccion de campos, normalizacion de datos) delegando el razonamiento complejo en un modelo mayor.
 - Base para ajuste fino especifico: si la licencia lo permite (punto no confirmado y critico), el checkpoint podria servir como punto de partida para un fine-tuning con LoRA sobre un dominio concreto, aprovechando su tamano reducido para iterar rapido.
-- Investigacion sobre reproducibilidad: dado que el repositorio no documenta nada, puede utilizarse como caso de estudio sobre trazabilidad de artefactos en HuggingFace y sobre los riesgos de publicar pesos sin model card ni licencia.
+- Investigacion sobre reproducibilidad: dado que el repositorio no documenta nada, puede utilizarse como caso de estudio sobre trazabilidad de artefactos en Hugging Face y sobre los riesgos de publicar pesos sin model card ni licencia.
 
 ## Benchmarks y rendimiento
 
@@ -98,7 +98,7 @@ A modo de referencia metodologica, una comparacion realista de un modelo de ~1.0
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JokerJokerJoker/cat04
+- Repositorio en Hugging Face: https://huggingface.co/JokerJokerJoker/cat04
 - Perfil del autor: https://huggingface.co/JokerJokerJoker
 - Paper: no disponible
 - Blog o anuncio: no disponible

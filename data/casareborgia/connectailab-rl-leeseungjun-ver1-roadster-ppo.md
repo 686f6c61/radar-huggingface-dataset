@@ -4,7 +4,7 @@
 
 `connectailab-rl-leeseungjun-ver1-roadster-ppo` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para una tarea de control continuo muy concreta: hacer aterrizar un vehículo tipo roadster que cae boca abajo, usando únicamente la intensidad de un propulsor (rango 0 a 1) y una señal de rotación (rango -1 a 1). El entorno es un simulador propio denominado `로드스터_시뮬레이터.py` (simulador de roadster con clase `로드스터연속`), compatible con la API de Gymnasium.
 
-El modelo lo publica el usuario `casareborgia` bajo la etiqueta de Connect AI Lab, en el contexto de un curso de IA (6.ª lección de "AI CITY BUILDERS" sobre aprendizaje por refuerzo). No es un modelo de lenguaje ni un modelo fundacional: es una política neuronal entrenada para una única tarea de control, empaquetada como repositorio de PyTorch. El repositorio ocupa 0,0 GB según HuggingFace, lo que sugiere pesos de tamaño muy reducido, coherente con una política MLP para un espacio de observación de 7 dimensiones.
+El modelo lo publica el usuario `casareborgia` bajo la etiqueta de Connect AI Lab, en el contexto de un curso de IA (6.ª lección de "AI CITY BUILDERS" sobre aprendizaje por refuerzo). No es un modelo de lenguaje ni un modelo fundacional: es una política neuronal entrenada para una única tarea de control, empaquetada como repositorio de PyTorch. El repositorio ocupa 0,0 GB según Hugging Face, lo que sugiere pesos de tamaño muy reducido, coherente con una política MLP para un espacio de observación de 7 dimensiones.
 
 Su relevancia es formativa y de referencia: sirve como artefacto didáctico de un pipeline de RL completo (entorno Gymnasium, entrenamiento paralelo con 16 entornos, PPO con clipping) y como ejemplo reproducible de una política que el autor reporta con un 100 % de aterrizaje en 50 episodios no vistos. No hay información sobre arquitectura de red, número de parámetros ni licencia.
 
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-leeseungjun-ver1-roadster-ppo | no disponible | no aplica | 100 % aterrizaje en 50 episodios (declarado) | no disponible | HuggingFace |
+| connectailab-rl-leeseungjun-ver1-roadster-ppo | no disponible | no aplica | 100 % aterrizaje en 50 episodios (declarado) | no disponible | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,5 +86,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/casareborgia/connectailab-rl-leeseungjun-ver1-roadster-ppo)
+- [Modelo en Hugging Face](https://huggingface.co/casareborgia/connectailab-rl-leeseungjun-ver1-roadster-ppo)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

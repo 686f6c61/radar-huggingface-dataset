@@ -82,7 +82,7 @@ Advertencia importante: los resultados del modelo base Qwen3-8B no son extrapola
 
 | Modelo | Parametros | Contexto | Licencia | Formato principal | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B-litert-lm (este repositorio) | ~8,2B (heredado) | 32.768 tokens en el base (no confirmado aqui) | Apache-2.0 | LiteRT-LM (`.litertlm`) | Repositorio HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen3-8B-litert-lm (este repositorio) | ~8,2B (heredado) | 32.768 tokens en el base (no confirmado aqui) | Apache-2.0 | LiteRT-LM (`.litertlm`) | Repositorio Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | Qwen/Qwen3-8B | ~8,2B | 32.768 tokens, hasta 131.072 con YaRN | Apache-2.0 | safetensors, GGUF (comunidad) | Ampliamente distribuido y verificado |
 | Meta Llama 3.1 8B Instruct | ~8,03B | 128.000 tokens | Llama 3.1 Community License (con restricciones para uso comercial a gran escala) | safetensors, GGUF | Ampliamente distribuido |
 | Mistral 7B Instruct v0.3 | ~7,25B | 32.000 tokens | Apache-2.0 | safetensors, GGUF | Ampliamente distribuido |
@@ -104,7 +104,7 @@ La comparación de rendimiento entre estos modelos no se incluye porque no hay r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/warped-community/Qwen3-8B-litert-lm
+- Repositorio en Hugging Face: https://huggingface.co/warped-community/Qwen3-8B-litert-lm
 - Artefacto de origen (litert-community): https://huggingface.co/litert-community/Qwen3-8B
 - Modelo base (Qwen): https://huggingface.co/Qwen/Qwen3-8B
 - Informe técnico de Qwen3 (referencia del modelo base): https://arxiv.org/abs/2505.09388

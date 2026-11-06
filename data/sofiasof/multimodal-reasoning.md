@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sofiasof/multimodal-reasoning` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en HuggingFace bajo licencia MIT. La model card lo describe explícitamente como un artefacto exploratorio que recoge el planteamiento de un estudio sobre razonamiento multimodal: alcance de la pregunta de investigación, posibles factores de confusión, comparación propuesta con baselines emparejados y requisitos de reproducibilidad. El autor advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
+`sofiasof/multimodal-reasoning` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en Hugging Face bajo licencia MIT. La model card lo describe explícitamente como un artefacto exploratorio que recoge el planteamiento de un estudio sobre razonamiento multimodal: alcance de la pregunta de investigación, posibles factores de confusión, comparación propuesta con baselines emparejados y requisitos de reproducibilidad. El autor advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
 El repositorio no contiene pesos funcionales ni código de inferencia. El tamaño declarado del repo es de 0.0 GB y el recuento de parámetros en safetensors es de 24.832, una cifra compatible con un archivo de metadatos o un tensor trivial, no con un transformer entrenado. La etiqueta `transformer` aparece en los tags, pero no hay evidencia de una arquitectura implementada ni de un checkpoint utilizable.
 
@@ -43,7 +43,7 @@ El contenido del repositorio se limita a dos archivos: `notes.md` (artefacto pri
 - Selección de benchmarks multimodales: las referencias a VQAv2, GQA y NLVR2 pueden orientar a quien esté decidiendo qué conjuntos usar en una evaluación de razonamiento visual.
 - Documentación de alcance y limitaciones: el repositorio ejemplifica cómo declarar explícitamente que un trabajo es exploratorio y que no reclama mejoras de benchmark, algo útil como referencia de transparencia.
 - Formación interna: puede emplearse como material de discusión en un equipo que prepare su propio estudio multimodal, siempre citando el repositorio como notas y no como resultado.
-- Auditoría de repositorios en HuggingFace: sirve como caso práctico para detectar artefactos que no son modelos y evitar incluirlos en pipelines automáticos de evaluación o despliegue.
+- Auditoría de repositorios en Hugging Face: sirve como caso práctico para detectar artefactos que no son modelos y evitar incluirlos en pipelines automáticos de evaluación o despliegue.
 
 ## Benchmarks y rendimiento
 
@@ -82,7 +82,7 @@ No disponible. No existe una categoría funcional con la que comparar este repos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sofiasof/multimodal-reasoning
+- Repositorio en Hugging Face: https://huggingface.co/sofiasof/multimodal-reasoning
 - Archivo principal de notas: `notes.md` dentro del repositorio
 - Documentación: `README.md` dentro del repositorio
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este identificador.

@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks cuantitativos en la informacion dis
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SimpleTuner/Qwen-Image-2.1-LoRA-photo-aesthetics-50k | LoRA sobre Qwen-Image-2.1 | No disponible (repo de 1,4 GB, 15 checkpoints, rank 32) | No aplica | Sin benchmarks; validacion cualitativa con prompts reutilizados | qwen-research | Publico en HuggingFace, 0 descargas |
-| SimpleTuner/Qwen-Image-2.1-LoRA-experiments | LoRA sobre Qwen-Image-2.1 (repositorio hermano) | No disponible | No aplica | No disponible | No disponible | Publico en HuggingFace |
-| Qwen/Qwen-Image-2.1 | Modelo base de difusion text-to-image | No disponible en la informacion proporcionada | No aplica | No disponible | No disponible | Publico en HuggingFace |
-| madebyollin/texture-fix-vae-for-qwen-image-2.1 | VAE alternativo para Qwen-Image 2.1 (no comparable directamente) | No disponible | No aplica | No disponible | No disponible | Publico en HuggingFace |
+| SimpleTuner/Qwen-Image-2.1-LoRA-photo-aesthetics-50k | LoRA sobre Qwen-Image-2.1 | No disponible (repo de 1,4 GB, 15 checkpoints, rank 32) | No aplica | Sin benchmarks; validacion cualitativa con prompts reutilizados | qwen-research | Publico en Hugging Face, 0 descargas |
+| SimpleTuner/Qwen-Image-2.1-LoRA-experiments | LoRA sobre Qwen-Image-2.1 (repositorio hermano) | No disponible | No aplica | No disponible | No disponible | Publico en Hugging Face |
+| Qwen/Qwen-Image-2.1 | Modelo base de difusion text-to-image | No disponible en la informacion proporcionada | No aplica | No disponible | No disponible | Publico en Hugging Face |
+| madebyollin/texture-fix-vae-for-qwen-image-2.1 | VAE alternativo para Qwen-Image 2.1 (no comparable directamente) | No disponible | No aplica | No disponible | No disponible | Publico en Hugging Face |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con otras alternativas de la misma categoria.
 
@@ -91,7 +91,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-LoRA-photo-aesthetics-50k
+- Modelo en Hugging Face: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-LoRA-photo-aesthetics-50k
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio hermano de experimentos LoRA: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-LoRA-experiments
 - VAE de correccion de textura para Qwen-Image 2.1: https://huggingface.co/madebyollin/texture-fix-vae-for-qwen-image-2.1

@@ -97,7 +97,7 @@ No se dispone de comparaciones con modelos de otras familias de tamano similar e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ar4ikov/Qwen3.8-27B-AWQ-W4A16-ASYM-HyperQwen-fast
+- Repositorio Hugging Face: https://huggingface.co/Ar4ikov/Qwen3.8-27B-AWQ-W4A16-ASYM-HyperQwen-fast
 - Modelo base (cuantizacion de origen): https://huggingface.co/Ar4ikov/Qwen3.8-27B-AWQ-W4A16-ASYM
 - Variante con `lm_head` en int8: https://huggingface.co/Ar4ikov/Qwen3.8-27B-AWQ-W4A16-ASYM-HyperQwen
 - Modelo raiz: https://huggingface.co/Qwen/Qwen3.8-27B

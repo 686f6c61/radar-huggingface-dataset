@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jev-Omni es un clasificador multimodal de decisiones publicado por el usuario the-fall-of-man en HuggingFace. A diferencia de un modelo generativo, no produce explicaciones ni texto libre: recibe un estado (contexto), una pregunta y una lista de opciones, y devuelve una probabilidad calibrada para cada opción. Admite cuatro modalidades de entrada: texto, imagen, audio y vídeo.
+Jev-Omni es un clasificador multimodal de decisiones publicado por el usuario the-fall-of-man en Hugging Face. A diferencia de un modelo generativo, no produce explicaciones ni texto libre: recibe un estado (contexto), una pregunta y una lista de opciones, y devuelve una probabilidad calibrada para cada opción. Admite cuatro modalidades de entrada: texto, imagen, audio y vídeo.
 
 El modelo parte de google/gemma-4-12B-it como base y ha sido sometido a un ajuste fino con 30.000 preguntas, segun la model card. Cuenta con 11.959.730.224 parametros (unos 11,96 B), se distribuye en formato safetensors y emplea la libreria transformers. Su interes actual radica en que propone una interfaz tipada de decision (preguntas de tipo si/no, eleccion y puntuacion) resueltas con probabilidades calibradas, un enfoque distinto al de los asistentes conversacionales convencionales.
 
@@ -113,13 +113,13 @@ La diferencia principal es de escala: Jev-Omni es un modelo denso de 12 B que co
 - Calibracion dependiente del dominio: el ECE de 0,0400 se midio en DecisionBench Medium; no hay garantia de que se mantenga en otros dominios o idiomas.
 - Requisito de GPU CUDA: no se documenta soporte para CPU ni para aceleradores no NVIDIA.
 - Falta de validacion externa: el repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (28 de septiembre de 2026), sin historial de uso ni auditoria independiente.
-- Discrepancia de identificadores: el identificador de HuggingFace es `the-fall-of-man/Jev-Omni`, pero la model card usa rutas de `akhilaaa3/Jev-Omni` tanto en el ejemplo de `snapshot_download` como en la instalacion de `requirements.txt`. Conviene verificar cual es el repositorio vigente antes de integrarlo.
+- Discrepancia de identificadores: el identificador de Hugging Face es `the-fall-of-man/Jev-Omni`, pero la model card usa rutas de `akhilaaa3/Jev-Omni` tanto en el ejemplo de `snapshot_download` como en la instalacion de `requirements.txt`. Conviene verificar cual es el repositorio vigente antes de integrarlo.
 - Licencia: Apache-2.0, siguiendo la licencia de Gemma 4. La propia model card advierte que los derechos del dataset son independientes de la licencia del modelo.
 - Relacion con terceros: el autor declara que Jev-Omni es un modelo independiente y no esta afiliado, respaldado ni derivado de TypeSafe AI ni de su modelo Jev, y que no se entreno con salidas de Jev.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/the-fall-of-man/Jev-Omni
+- Modelo en Hugging Face: https://huggingface.co/the-fall-of-man/Jev-Omni
 - Repositorio alternativo citado en la model card: https://huggingface.co/akhilaaa3/Jev-Omni
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Dataset DecisionBench: https://huggingface.co/datasets/akhilaaa3/decision-bench

@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: el modelo requiere un mínimo de 8× H100-80GB para la versión BF16. El checkpoint BF16 tiene un tamaño de repositorio de 247.2 GB, por lo que se necesitan múltiples GPUs de 80 GB para cargar los pesos completos.
 - GPU recomendadas: 8× H100-80GB para la versión BF16. Para despliegues en una sola GPU, NVIDIA ofrece una variante NVFP4 que puede ejecutarse en un B200 o DGX Spark.
 - Compatibilidad con GPUs de consumo: no disponible para la versión BF16; la variante NVFP4 está pensada para B200 o DGX Spark, no para GPUs de consumo.
-- Opciones de despliegue: la información disponible no detalla backends específicos como vLLM, llama.cpp, Ollama o TGI. El modelo es compatible con la librería `transformers` y está marcado como `endpoints_compatible` en HuggingFace.
+- Opciones de despliegue: la información disponible no detalla backends específicos como vLLM, llama.cpp, Ollama o TGI. El modelo es compatible con la librería `transformers` y está marcado como `endpoints_compatible` en Hugging Face.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Openintelligent123/NVIDIA-Nemotron-3-Super-120B-A12B-BF16
+- Modelo en Hugging Face: https://huggingface.co/Openintelligent123/NVIDIA-Nemotron-3-Super-120B-A12B-BF16
 - Página de investigación: https://research.nvidia.com/labs/nemotron/Nemotron-3-Super/
 - Informe técnico: https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Super-Technical-Report.pdf
 - Model card en NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b/modelcard

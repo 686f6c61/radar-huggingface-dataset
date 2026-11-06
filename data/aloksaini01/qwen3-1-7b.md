@@ -94,7 +94,7 @@ Los datos de contexto y licencia de los modelos comparados proceden de su docume
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aloksaini01/Qwen3-1.7B
+- Repositorio en Hugging Face: https://huggingface.co/aloksaini01/Qwen3-1.7B
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Modelo oficial de referencia: https://huggingface.co/Qwen/Qwen3-1.7B
 - Licencia: https://huggingface.co/Qwen/Qwen3-1.7B/blob/main/LICENSE

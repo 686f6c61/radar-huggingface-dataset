@@ -65,7 +65,7 @@ No se dispone de datos verificados en la informacion proporcionada para construi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ttt-vla-robomme-batch16-benchmark | 3,43 mil millones | no disponible | no disponible | Repositorio publico en HuggingFace, 0 descargas | Artefacto de benchmark, no release oficial |
+| ttt-vla-robomme-batch16-benchmark | 3,43 mil millones | no disponible | no disponible | Repositorio publico en Hugging Face, 0 descargas | Artefacto de benchmark, no release oficial |
 | Otros modelos VLA de robotica (por ejemplo, variantes de GR00T N1.x, OpenVLA, pi0) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | No se aportan datos comparativos; cualquier cifra externa deberia verificarse en las fuentes originales de cada proyecto |
 
 No se dispone de mediciones propias ni de terceros sobre este artefacto que permitan afirmar superioridad o inferioridad frente a alternativas.
@@ -86,8 +86,8 @@ No se dispone de mediciones propias ni de terceros sobre este artefacto que perm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/morealcholplz/ttt-vla-robomme-batch16-benchmark
+- Modelo en Hugging Face: https://huggingface.co/morealcholplz/ttt-vla-robomme-batch16-benchmark
 - Repositorio de dataset con logs y evaluacion de las primeras ejecuciones: https://huggingface.co/datasets/morealcholplz/ttt-vla-robomme-early-runs-eval-archive
-- Perfil del autor en HuggingFace: https://huggingface.co/morealcholplz
+- Perfil del autor en Hugging Face: https://huggingface.co/morealcholplz
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.
 - Nota sobre la busqueda web: los resultados devueltos por la busqueda no guardan ninguna relacion con este modelo (versan sobre incidencias de consumo de una tienda de electronica de segunda mano) y no se han utilizado como fuente.

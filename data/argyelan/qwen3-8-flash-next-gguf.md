@@ -81,7 +81,7 @@ No se dispone de datos suficientes para una comparativa formal con alternativas 
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/argyelan/Qwen3.8-Flash-Next-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/argyelan/Qwen3.8-Flash-Next-GGUF
 - Modelo base FP8: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
 - Repositorio oficial del modelo: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Herramientas de conversión y requantización: https://github.com/marknx/flash-next-gguf-tools

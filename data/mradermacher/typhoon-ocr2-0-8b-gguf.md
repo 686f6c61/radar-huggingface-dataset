@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Typhoon-OCR2 0.8B es un modelo especializado en reconocimiento óptico de caracteres (OCR) y análisis de documentos, desarrollado originalmente por Typhoon AI (equipo vinculado a SCB 10X) y publicado en HuggingFace como `typhoon-ai/typhoon-ocr2-0.8b`. La versión aquí descrita es la cuantización GGUF realizada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. El modelo está diseñado específicamente para tareas de extracción de texto, análisis de maquetación (layout analysis) y reconocimiento de tablas, con especial atención al tailandés y el inglés.
+Typhoon-OCR2 0.8B es un modelo especializado en reconocimiento óptico de caracteres (OCR) y análisis de documentos, desarrollado originalmente por Typhoon AI (equipo vinculado a SCB 10X) y publicado en Hugging Face como `typhoon-ai/typhoon-ocr2-0.8b`. La versión aquí descrita es la cuantización GGUF realizada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. El modelo está diseñado específicamente para tareas de extracción de texto, análisis de maquetación (layout analysis) y reconocimiento de tablas, con especial atención al tailandés y el inglés.
 
 Con aproximadamente 752 millones de parámetros totales (0,75B) y una licencia Apache 2.0, se posiciona como una alternativa ligera y de código abierto para pipelines de digitalización documental. Su tamaño reducido permite desplegarlo en entornos con recursos limitados, algo relevante para empresas que necesitan procesar grandes volúmenes de documentos sin depender de APIs externas.
 

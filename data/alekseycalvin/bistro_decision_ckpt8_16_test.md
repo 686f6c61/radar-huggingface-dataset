@@ -84,7 +84,7 @@ No se dispone de datos verificables sobre modelos alternativos equivalentes en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AlekseyCalvin/BISTRO_Decision_ckpt8_16_test
+- Repositorio Hugging Face: https://huggingface.co/AlekseyCalvin/BISTRO_Decision_ckpt8_16_test
 - Modelo base SmolLM2-135M: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Dataset referenciado en la model card: LocalLLaMA/typed-decisions (sin URL proporcionada)
 - Paper, blog o demo: no disponibles en la información proporcionada

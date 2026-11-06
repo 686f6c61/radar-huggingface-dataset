@@ -21,7 +21,7 @@ Es relevante ahora porque propone un patron distinto al del LLM generativo como 
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (adaptador LoRA PEFT); requiere el base Qwen/Qwen3.5-27B en revision `fc05daec18b0a78c049392ed2e771dde82bdf654` |
 
-Otros datos tecnicos declarados: rango LoRA 32, alpha 64, tipos de decision `choice`, `noul` y `score`, maximo de 255 candidatos por pregunta, 6 descargas y 0 likes en HuggingFace en el momento de la consulta.
+Otros datos tecnicos declarados: rango LoRA 32, alpha 64, tipos de decision `choice`, `noul` y `score`, maximo de 255 candidatos por pregunta, 6 descargas y 0 likes en Hugging Face en el momento de la consulta.
 
 ## Arquitectura y entrenamiento
 
@@ -83,8 +83,8 @@ No se han publicado en la informacion disponible resultados en benchmarks estand
 
 | Modelo | Parametros | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cribl-decision-1.0-27B | 27 B base + 95 M de adaptador LoRA | No disponible | Distribucion sobre candidatos (choice, noul, score) | Apache 2.0 | HuggingFace, 6 descargas |
-| Qwen3.5-27B (modelo base) | 27 B | No disponible | Texto generado | No disponible en la informacion | HuggingFace |
+| cribl-decision-1.0-27B | 27 B base + 95 M de adaptador LoRA | No disponible | Distribucion sobre candidatos (choice, noul, score) | Apache 2.0 | Hugging Face, 6 descargas |
+| Qwen3.5-27B (modelo base) | 27 B | No disponible | Texto generado | No disponible en la informacion | Hugging Face |
 | Otros modelos de decision citados en listados agregados (ORG2 AI 26B, linne-fern 1.0 27B) | 26-27 B | No disponible | No disponible | No disponible | Solo mencionados en un listado de terceros, sin verificar |
 
 No se dispone de comparativas verificables con alternativas equivalentes: la busqueda web realizada no devolvio documentacion tecnica de modelos comparables de decision estructurada. El unico listado localizado (Metatext) menciona otros modelos de decision sin especificaciones contrastables, por lo que no se incluyen sus cifras.
@@ -102,12 +102,12 @@ No se dispone de comparativas verificables con alternativas equivalentes: la bus
 - Riesgo de calibracion fuera de distribucion: aunque la etiqueta declarada sea `calibrated`, no se publican curvas de fiabilidad ni resultados de calibracion por tarea; la probabilidad alta no debe interpretarse como garantia sin validacion propia.
 - Sesgos: no se documenta ninguna evaluacion de sesgo, toxicidad ni analisis de subgrupos; al heredar el base Qwen3.5-27B, los sesgos de este no estan caracterizados en la informacion disponible.
 - Licencia: el adaptador es Apache 2.0, pero el uso comercial exige verificar por separado la licencia del modelo base Qwen3.5-27B, que no se detalla en la informacion proporcionada.
-- Madurez: 6 descargas y 0 likes en HuggingFace, sin validacion independiente conocida.
+- Madurez: 6 descargas y 0 likes en Hugging Face, sin validacion independiente conocida.
 - Requisito de version: la model card exige transformers ≥ 5.19 y la clase `Qwen3_5ForConditionalGeneration`; ademas se documenta un workaround especifico para fallos de compilacion de Triton en algunos sistemas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cribl-ai/cribl-decision-1.0-27B
+- Modelo en Hugging Face: https://huggingface.co/cribl-ai/cribl-decision-1.0-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Revision concreta del base: https://huggingface.co/Qwen/Qwen3.5-27B/tree/fc05daec18b0a78c049392ed2e771dde82bdf654
 - Script de lectura de ejemplo: https://huggingface.co/cribl-ai/cribl-decision-1.0-27B/blob/main/example_readout.py

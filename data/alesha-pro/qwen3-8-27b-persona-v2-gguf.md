@@ -74,7 +74,7 @@ Resultados de referencia en BF16 (independientes de los anteriores): el preset o
 
 | Modelo | Parametros | Contexto | Modificacion de conducta | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B Persona v2 GGUF (este) | 10.240 M (segun safetensors) | 4096 en prueba | Control vector en capas 9 y 31 | Apache 2.0 | GGUF en HuggingFace |
+| Qwen3.8-27B Persona v2 GGUF (este) | 10.240 M (segun safetensors) | 4096 en prueba | Control vector en capas 9 y 31 | Apache 2.0 | GGUF en Hugging Face |
 | Qwen/Qwen3.8-27B (base) | 10.240 M (segun safetensors) | no disponible | Ninguna | Apache 2.0 | Pesos originales |
 | Qwen3.8-27B base Q4_K_M sin vector | 10.240 M | 4096 en prueba | Ninguna | Apache 2.0 | Incluido en este repo |
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks estandar ni de otros paquetes de control ve
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alesha-pro/Qwen3.8-27B-Persona-v2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/alesha-pro/Qwen3.8-27B-Persona-v2-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - llama.cpp (commit probado): https://github.com/ggml-org/llama.cpp/commit/fc35562ba46fbbf8e30cac85edbb39642c37d248
 - Script de reproduccion incluido en el repo: `export_control_vector.py`

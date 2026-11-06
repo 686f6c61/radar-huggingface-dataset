@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `etiennebamas/qwen3-sft-feedback-small-dataset` es un ajuste fino (fine-tuning) del modelo base `formalmathatepfl/qwen3-cpt`, realizado con la librería Transformers y el framework Llama-Factory. El autor, etiennebamas, ha publicado este checkpoint en HuggingFace con el objetivo de adaptar el modelo base a un conjunto de datos de entrenamiento supervisado (SFT) llamado "sft dataset", aunque la model card no ofrece detalles sobre la naturaleza de esos datos. El repositorio ocupa 16,4 GB y los pesos están en formato safetensors, lo que sugiere un modelo de tamaño considerable, probablemente en el rango de 8.000 millones de parámetros, aunque el dato reportado de parámetros totales (308.224) resulta inconsistente con el tamaño del repositorio y debe tomarse con cautela.
+El modelo `etiennebamas/qwen3-sft-feedback-small-dataset` es un ajuste fino (fine-tuning) del modelo base `formalmathatepfl/qwen3-cpt`, realizado con la librería Transformers y el framework Llama-Factory. El autor, etiennebamas, ha publicado este checkpoint en Hugging Face con el objetivo de adaptar el modelo base a un conjunto de datos de entrenamiento supervisado (SFT) llamado "sft dataset", aunque la model card no ofrece detalles sobre la naturaleza de esos datos. El repositorio ocupa 16,4 GB y los pesos están en formato safetensors, lo que sugiere un modelo de tamaño considerable, probablemente en el rango de 8.000 millones de parámetros, aunque el dato reportado de parámetros totales (308.224) resulta inconsistente con el tamaño del repositorio y debe tomarse con cautela.
 
 Este modelo no presenta documentación técnica más allá de los hiperparámetros de entrenamiento, carece de benchmarks publicados y de descripción de capacidades. Su relevancia actual es limitada, ya que se trata de un experimento de fine-tuning sin validación pública, aunque podría ser de interés para quienes estudian el comportamiento de modelos Qwen3 en tareas de conversación o razonamiento matemático, dado el nombre del modelo base. La licencia "other" implica restricciones no especificadas que deben verificarse antes de cualquier uso comercial.
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/etiennebamas/qwen3-sft-feedback-small-dataset
+- Repositorio Hugging Face: https://huggingface.co/etiennebamas/qwen3-sft-feedback-small-dataset
 - Informe técnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1 y https://arxiv.org/pdf/2505.09388
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Otro checkpoint del mismo autor (referencia): https://huggingface.co/etiennebamas/qwen3-step32k-1e5 y https://huggingface.co/etiennebamas/qwen3-lr-2-e-5

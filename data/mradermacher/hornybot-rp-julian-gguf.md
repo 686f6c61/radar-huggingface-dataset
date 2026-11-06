@@ -6,7 +6,7 @@ Hornybot-RP-Julian-GGUF es un conjunto de cuantizaciones en formato GGUF del mod
 
 La relevancia de esta ficha es practica: el repositorio ofrece un abanico completo de niveles de cuantizacion, desde Q2_K (3,9 GB) hasta f16 (18,0 GB), ademas de dos ficheros mmproj (proyector multimodal) en Q8_0 y f16. Esto permite desplegar el modelo en hardware muy distinto, desde GPU de consumo con 6-8 GB de VRAM hasta estaciones con 24 GB o mas. El repositorio ocupa 54,4 GB en total, suma de todas las variantes publicadas.
 
-No se dispone de informacion sobre licencia, longitud de contexto, composicion del dataset de entrenamiento ni resultados de benchmarks, ni en la model card del cuantizador ni en los metadatos de HuggingFace. Cualquier evaluacion de idoneidad para produccion debe partir de esas carencias explicitas.
+No se dispone de informacion sobre licencia, longitud de contexto, composicion del dataset de entrenamiento ni resultados de benchmarks, ni en la model card del cuantizador ni en los metadatos de Hugging Face. Cualquier evaluacion de idoneidad para produccion debe partir de esas carencias explicitas.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ No se dispone de informacion sobre licencia, longitud de contexto, composicion d
 
 No se dispone de informacion tecnica sobre la arquitectura del modelo base mas alla de la etiqueta qwen3.5 incluida en los tags del autor, de la libreria declarada (transformers) y del recuento de parametros obtenido de los pesos en safetensors. No consta el numero de capas, dimensiones ocultas, tipo de atencion, ni si emplea atencion lineal, decodificacion especulativa o cualquier otra innovacion de inferencia. Tampoco se documenta el proceso de entrenamiento: no hay datos sobre volumen de tokens, composicion del corpus, uso de RLHF, DPO u otras tecnicas de alineamiento. El unico indicio funcional es la presencia de dos ficheros mmproj (Q8_0 y f16), que en llama.cpp acompanan a modelos con proyector multimodal; esto sugiere capacidad de vision o multimodalidad, pero no se confirma en la informacion disponible.
 
-Lo que si esta documentado es el proceso de cuantizacion. El autor aplica cuantizacion estatica sobre pesos convertidos desde HuggingFace (convert_type: hf), con cuantizacion de tensores de salida activada. Se publican nueve variantes de pesos y dos de proyector multimodal. El autor advierte explicitamente de que Q3_K_M es de calidad inferior y de que f16 (16 bits por peso) es redundante para uso practico, y enlaza un grafico comparativo de perplejidad entre tipos de cuantizacion de baja calidad elaborado por ikawrakow.
+Lo que si esta documentado es el proceso de cuantizacion. El autor aplica cuantizacion estatica sobre pesos convertidos desde Hugging Face (convert_type: hf), con cuantizacion de tensores de salida activada. Se publican nueve variantes de pesos y dos de proyector multimodal. El autor advierte explicitamente de que Q3_K_M es de calidad inferior y de que f16 (16 bits por peso) es redundante para uso practico, y enlaza un grafico comparativo de perplejidad entre tipos de cuantizacion de baja calidad elaborado por ikawrakow.
 
 ## Capacidades
 
@@ -80,8 +80,8 @@ No se dispone de datos de rendimiento ni de especificaciones completas de modelo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hornybot-RP-Julian-GGUF (este) | ~8,95 mil millones | No disponible | GGUF (9 variantes) | No disponible | HuggingFace |
-| axiomofmind/Hornybot-RP-Julian (base) | ~8,95 mil millones | No disponible | safetensors | No disponible | HuggingFace |
+| Hornybot-RP-Julian-GGUF (este) | ~8,95 mil millones | No disponible | GGUF (9 variantes) | No disponible | Hugging Face |
+| axiomofmind/Hornybot-RP-Julian (base) | ~8,95 mil millones | No disponible | safetensors | No disponible | Hugging Face |
 | Alternativas de la misma categoria (~8-9B, roleplay/GGUF) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Como referencia de categoria, los modelos abiertos de ~7-9B mas habituales para roleplay y despliegue local son los derivados de Llama, Mistral y Qwen, pero no se dispone en la informacion proporcionada de sus cifras concretas de contexto, licencia o rendimiento relativas a este modelo, por lo que no se incluyen datos que no puedan verificarse.

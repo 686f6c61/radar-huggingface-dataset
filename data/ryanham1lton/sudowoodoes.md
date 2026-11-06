@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SudowoodoES es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de la consulta la model card contiene unicamente el bloque de metadatos de licencia, sin descripcion, sin documentacion de arquitectura y sin indicacion de tarea. El repositorio tiene un tamano aproximado de 0,1 GB, sin descargas ni interacciones registradas, y fue creado y actualizado el 16 de septiembre de 2026 con apenas tres minutos de diferencia, lo que sugiere una publicacion automatizada o un volcado de artefactos sin trabajo posterior de documentacion.
+SudowoodoES es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de la consulta la model card contiene unicamente el bloque de metadatos de licencia, sin descripcion, sin documentacion de arquitectura y sin indicacion de tarea. El repositorio tiene un tamano aproximado de 0,1 GB, sin descargas ni interacciones registradas, y fue creado y actualizado el 16 de septiembre de 2026 con apenas tres minutos de diferencia, lo que sugiere una publicacion automatizada o un volcado de artefactos sin trabajo posterior de documentacion.
 
 No es posible determinar a partir de la informacion disponible si se trata de un modelo completo, de un adaptador (LoRA/QLoRA), de un checkpoint parcial o de un modelo de embeddings. Tampoco hay datos sobre parametros, arquitectura, longitud de contexto, idiomas o formato de pesos. La busqueda web asociada no devolvio ningun resultado relacionado con el modelo: los resultados obtenidos corresponden a la localidad austriaca de Kufstein y son ajenos al repositorio.
 
@@ -86,7 +86,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la tarea ob
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
 | Licencia | cc-by-4.0 | no disponible |
-| Disponibilidad | repositorio publico en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | repositorio publico en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -102,6 +102,6 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la tarea ob
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/SudowoodoES
+- Hugging Face: https://huggingface.co/Ryanham1lton/SudowoodoES
 
 Nota sobre la busqueda web: los resultados obtenidos no guardan relacion con el modelo. Corresponden a articulos y sitios sobre la ciudad austriaca de Kufstein (https://en.wikipedia.org/wiki/Kufstein, https://pl.wikipedia.org/wiki/Kufstein, https://www.kufstein.at/, https://de.wikipedia.org/wiki/Kufstein, https://www.tyrol.pl/cele-podrozy/kufstein) y no aportan informacion sobre SudowoodoES. No se han encontrado papers, blogs, repositorios ni demos asociados al modelo.

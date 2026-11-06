@@ -89,8 +89,8 @@ El propio autor advierte de que la fila de la mejor evaluacion individual no deb
 
 | Modelo | Parametros | Contexto | Rendimiento en ALFWorld | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (CCPO return-hard) | ~7,6 B | No disponible | 83,5 % held-out (ventana convergida); 93,8 % mejor evaluacion | Apache 2.0 | HuggingFace, checkpoint intermedio |
-| Qwen/Qwen2.5-7B-Instruct (modelo base) | ~7,6 B | No disponible | No aplica sin entrenamiento de agente | Apache 2.0 | HuggingFace |
+| Este modelo (CCPO return-hard) | ~7,6 B | No disponible | 83,5 % held-out (ventana convergida); 93,8 % mejor evaluacion | Apache 2.0 | Hugging Face, checkpoint intermedio |
+| Qwen/Qwen2.5-7B-Instruct (modelo base) | ~7,6 B | No disponible | No aplica sin entrenamiento de agente | Apache 2.0 | Hugging Face |
 | GiGPO K=2 (publicado) | ~1,5 B | No disponible | 90,16 % | No disponible | Publicacion |
 | HGPO K=2 (publicado) | ~1,5 B | No disponible | 92,77 % | No disponible | Publicacion |
 | GRPO (publicado) | ~1,5 B | No disponible | 72,8 % | No disponible | Publicacion |
@@ -113,7 +113,7 @@ Advertencia del autor: las cifras publicadas de GRPO (72,8), GiGPO K=2 (90,16) y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SingleBicycle/ccpo-alfworld-qwen2.5-7b-return-hard
+- Modelo en Hugging Face: https://huggingface.co/SingleBicycle/ccpo-alfworld-qwen2.5-7b-return-hard
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Codigo CCPO (agent-context-grpo): https://github.com/tracyhann/agent-context-grpo
 - Framework verl-agent: https://github.com/langfengQ/verl-agent

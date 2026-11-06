@@ -21,7 +21,7 @@ La relevancia de esta publicación radica en que ofrece un modelo de aproximadam
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo CNY-14B original. El repositorio de HuggingFace de esta versión GGUF solo indica que se trata de una cuantización ponderada con imatrix del modelo alojado en Allen-UQ/CNY-14B. No se especifican datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se documentan innovaciones técnicas particulares del modelo base. La única información técnica adicional es que los archivos GGUF fueron generados con la herramienta de cuantización de Nicoboss, según los comentarios en la model card.
+No se dispone de información sobre la arquitectura interna del modelo CNY-14B original. El repositorio de Hugging Face de esta versión GGUF solo indica que se trata de una cuantización ponderada con imatrix del modelo alojado en Allen-UQ/CNY-14B. No se especifican datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se documentan innovaciones técnicas particulares del modelo base. La única información técnica adicional es que los archivos GGUF fueron generados con la herramienta de cuantización de Nicoboss, según los comentarios en la model card.
 
 ## Capacidades
 
@@ -66,7 +66,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/CNY-14B-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/CNY-14B-i1-GGUF
 - Modelo original (Allen-UQ): https://huggingface.co/Allen-UQ/CNY-14B
 - Perfil del autor de la cuantización: https://huggingface.co/mradermacher
 - Página de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

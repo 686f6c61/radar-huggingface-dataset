@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`uilydna/scottyrl-a3-p5_textcraft_grpo` es un adaptador LoRA de rango 32 entrenado sobre el modelo base `Qwen/Qwen3.5-4B` por el usuario uilydna y publicado en HuggingFace bajo la libreria PEFT. No es un modelo completo: son pesos de adaptacion (repositorio de 0,2 GB) que requieren cargar el modelo base para realizar inferencia.
+`uilydna/scottyrl-a3-p5_textcraft_grpo` es un adaptador LoRA de rango 32 entrenado sobre el modelo base `Qwen/Qwen3.5-4B` por el usuario uilydna y publicado en Hugging Face bajo la libreria PEFT. No es un modelo completo: son pesos de adaptacion (repositorio de 0,2 GB) que requieren cargar el modelo base para realizar inferencia.
 
 El adaptador se ha entrenado con el framework scottyrl en el contexto de la asignatura 11-768 (AI Agents) de la Universidad Carnegie Mellon, como parte de la Assignment 3, y su nombre (`p5_textcraft_grpo`) indica el uso de GRPO (Group Relative Policy Optimization) sobre el entorno TextCraft-Synth. El objetivo declarado es resolver tareas de text crafting de forma agéntica.
 
@@ -83,8 +83,8 @@ No se dispone de informacion sobre adaptadores comparables publicados en la mism
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `uilydna/scottyrl-a3-p5_textcraft_grpo` (adaptador LoRA) | no disponible | no disponible | no publicado | no disponible | HuggingFace, 0 descargas |
-| `Qwen/Qwen3.5-4B` (modelo base) | ~4.000 millones segun denominacion | no disponible | no disponible en esta informacion | no disponible | HuggingFace |
+| `uilydna/scottyrl-a3-p5_textcraft_grpo` (adaptador LoRA) | no disponible | no disponible | no publicado | no disponible | Hugging Face, 0 descargas |
+| `Qwen/Qwen3.5-4B` (modelo base) | ~4.000 millones segun denominacion | no disponible | no disponible en esta informacion | no disponible | Hugging Face |
 | Otros adaptadores de la misma asignatura o framework | no disponibles | no disponibles | no disponibles | no disponibles | no disponibles |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de informacion sobre adaptadores comparables publicados en la mism
 - Licencia no declarada: no hay ninguna indicacion sobre uso comercial, lo que impide integrarlo en produccion con garantias legales.
 - Ausencia total de validacion externa: cero descargas y cero likes; no hay evidencia de terceros que hayan reproducido el resultado.
 - Sin cifras de rendimiento: no se publican resultados en las particiones medium o hard de TextCraft-Synth, por lo que no se puede afirmar que el adaptador mejore al modelo base.
-- Artefacto de curso: la model card remite a rutas locales y a ficheros de configuracion (`configs/p5_textcraft_grpo.yaml`, `scripts/evaluate_checkpoint.py`) que no forman parte del repositorio de HuggingFace, lo que limita la reproducibilidad directa.
+- Artefacto de curso: la model card remite a rutas locales y a ficheros de configuracion (`configs/p5_textcraft_grpo.yaml`, `scripts/evaluate_checkpoint.py`) que no forman parte del repositorio de Hugging Face, lo que limita la reproducibilidad directa.
 - Riesgo de sobreajuste y de reward hacking: el entrenamiento con GRPO sobre una recompensa estrecha en un entorno sintetico puede degradar capacidades generales y producir comportamientos que solo funcionan dentro de TextCraft-Synth.
 - Dependencia del modelo base: cualquier sesgo, limitacion de contexto o restriccion de idioma proviene de `Qwen/Qwen3.5-4B`, del que no se aporta ficha en la informacion disponible.
 - Riesgo de alucinacion: no evaluado ni documentado; al tratarse de una politica optimizada para un entorno concreto, no hay datos sobre su comportamiento fuera de distribucion.
@@ -100,6 +100,6 @@ No se dispone de informacion sobre adaptadores comparables publicados en la mism
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/uilydna/scottyrl-a3-p5_textcraft_grpo
+- Hugging Face del adaptador: https://huggingface.co/uilydna/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo, su framework de entrenamiento ni el entorno TextCraft-Synth; los resultados obtenidos correspondian a herramientas comerciales sin relacion con el artefacto.

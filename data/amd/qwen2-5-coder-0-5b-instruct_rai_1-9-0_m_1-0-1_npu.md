@@ -6,7 +6,7 @@ Este repositorio contiene una compilación optimizada del modelo Qwen2.5-Coder-0
 
 La relevancia de esta ficha radica en que no se trata de un modelo nuevo entrenado por AMD, sino de un artefacto de despliegue: los pesos del modelo original se transforman y cuantizan para ejecutarse sobre la NPU integrada en los procesadores Ryzen AI (arquitecturas XDNA/XDNA2). Esto permite ejecutar generación de texto y asistencia de código en local, con bajo consumo energético y sin depender de GPU dedicada ni de servicios en la nube.
 
-El tamaño del repositorio es de aproximadamente 0,7 GB, lo que refleja los pesos cuantizados y los grafos ONNX compilados para el backend NPU. El acceso está restringido (gated) en HuggingFace y requiere aceptar las condiciones de uso. La licencia declarada es Apache 2.0, heredada del modelo base Qwen2.5-Coder-0.5B-Instruct.
+El tamaño del repositorio es de aproximadamente 0,7 GB, lo que refleja los pesos cuantizados y los grafos ONNX compilados para el backend NPU. El acceso está restringido (gated) en Hugging Face y requiere aceptar las condiciones de uso. La licencia declarada es Apache 2.0, heredada del modelo base Qwen2.5-Coder-0.5B-Instruct.
 
 ## Especificaciones tecnicas
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato / destino | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/Qwen2.5-Coder-0.5B-Instruct_rai_1.9.0_m_1.0.1_npu | 0,5 B | no disponible | Apache 2.0 | ONNX para NPU Ryzen AI | Gated en HuggingFace |
-| Qwen/Qwen2.5-Coder-0.5B-Instruct (modelo base) | 0,5 B | 32 768 tokens (modelo base) | Apache 2.0 | safetensors, GGUF (comunidad) | Publico en HuggingFace |
-| Modelos de código pequeños de otras familias (p. ej., CodeLlama-7B, StarCoder2-3B) | 3-7 B | variable | licencias diversas | safetensors, GGUF | Publicos en HuggingFace |
+| amd/Qwen2.5-Coder-0.5B-Instruct_rai_1.9.0_m_1.0.1_npu | 0,5 B | no disponible | Apache 2.0 | ONNX para NPU Ryzen AI | Gated en Hugging Face |
+| Qwen/Qwen2.5-Coder-0.5B-Instruct (modelo base) | 0,5 B | 32 768 tokens (modelo base) | Apache 2.0 | safetensors, GGUF (comunidad) | Publico en Hugging Face |
+| Modelos de código pequeños de otras familias (p. ej., CodeLlama-7B, StarCoder2-3B) | 3-7 B | variable | licencias diversas | safetensors, GGUF | Publicos en Hugging Face |
 
 La comparación directa con alternativas de código de mayor tamaño no es homogénea: esta compilación prioriza el despliegue en NPU sobre el rendimiento bruto. Frente al modelo base, la diferencia principal es el formato y el destino de ejecución, no la capacidad del modelo.
 
@@ -75,14 +75,14 @@ La comparación directa con alternativas de código de mayor tamaño no es homog
 - El modelo base tiene solo 0,5 mil millones de parámetros, por lo que su capacidad de razonamiento complejo, matemáticas avanzadas y código de gran extensión es limitada en comparación con modelos de 7 B o más.
 - Los metadatos declaran únicamente inglés; el rendimiento en castellano no está garantizado ni documentado.
 - Riesgo de alucinación inherente a los modelos de lenguaje de pequeño tamaño, especialmente en explicaciones técnicas y APIs poco comunes.
-- El acceso al repositorio está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+- El acceso al repositorio está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 - La compilación está atada al stack Ryzen AI 1.9.0 y a la NPU de procesadores AMD compatibles; no es portable a otros backends sin reconversión.
 - Licencia Apache 2.0: permite uso comercial, pero se recomienda revisar las condiciones del modelo base y del runtime Ryzen AI por separado.
 - No se documentan en la información disponible el contexto máximo efectivo, las cuantizaciones exactas ni el soporte de tool calling de esta compilación, lo que dificulta planificar su uso en producción sin pruebas adicionales.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Qwen2.5-Coder-0.5B-Instruct_rai_1.9.0_m_1.0.1_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/Qwen2.5-Coder-0.5B-Instruct_rai_1.9.0_m_1.0.1_npu
 - Modelo base (Qwen2.5-Coder-0.5B-Instruct): https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - Documentación de Ryzen AI (AMD): https://www.amd.com/en/developer/resources/ryzen-ai-software.html
 - Repositorio Ryzen AI en GitHub: https://github.com/amd/RyzenAI-SW

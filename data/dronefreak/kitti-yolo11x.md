@@ -112,8 +112,8 @@ Comparación con alternativas del mismo zoo de DetectionBench sobre KITTI (métr
 
 | Modelo | Parámetros | mAP@50 (%) | mAP@50-95 (%) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLO11x (este modelo) | 57,0 M | 39,18 | 23,60 | AGPL-3.0 | HuggingFace (dronefreak/kitti-yolo11x) |
-| YOLO11s | no disponible | 42,00 | 25,10 | AGPL-3.0 | HuggingFace (dronefreak/kitti-yolo11s) |
+| YOLO11x (este modelo) | 57,0 M | 39,18 | 23,60 | AGPL-3.0 | Hugging Face (dronefreak/kitti-yolo11x) |
+| YOLO11s | no disponible | 42,00 | 25,10 | AGPL-3.0 | Hugging Face (dronefreak/kitti-yolo11s) |
 | YOLOv8s | no disponible | 41,99 | 25,20 | AGPL-3.0 | Disponible en el zoo de DetectionBench |
 | YOLO26n | no disponible | 42,54 | 25,43 | no disponible | Disponible en el zoo de DetectionBench |
 | YOLOv9t | no disponible | 41,60 | 25,73 | GPL-3.0 (upstream) | Disponible en el zoo de DetectionBench |
@@ -135,7 +135,7 @@ Observación relevante: en esta receta concreta, la variante más grande de YOLO
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/kitti-yolo11x
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/kitti-yolo11x
 - Dataset KITTI utilizado: https://huggingface.co/datasets/dronefreak/KITTI
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench
 - Modelo hermano YOLO11s sobre KITTI: https://huggingface.co/dronefreak/kitti-yolo11s

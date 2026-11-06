@@ -73,7 +73,7 @@ La comparativa se limita a los modelos encontrados en la búsqueda web. No se di
 
 ## Enlaces
 
-- [HuggingFace: oerbas/localpix-realistic-vision-v51](https://huggingface.co/oerbas/localpix-realistic-vision-v51)
+- [Hugging Face: oerbas/localpix-realistic-vision-v51](https://huggingface.co/oerbas/localpix-realistic-vision-v51)
 - [Modelo original: SG161222/Realistic_Vision_V5.1_noVAE](https://huggingface.co/SG161222/Realistic_Vision_V5.1_noVAE)
 - [stablediffusionapi/realistic-vision-v51](https://huggingface.co/stablediffusionapi/realistic-vision-v51)
 - [Civitai: Realistic Vision V6.0 B1 - V5.1 Hyper](https://civitai.com/models/4201/realistic-vision-v60-b1)

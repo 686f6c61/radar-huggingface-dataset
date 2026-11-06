@@ -2,7 +2,7 @@
 
 ## Resumen
 
-win-reax-gen-1 es un ajuste fino (fine-tune) del modelo base decisionmodels/reax-1, publicado por el usuario win0678 en HuggingFace. Se trata de un modelo de 26.085.330.160 parámetros (unos 26,1 mil millones) distribuido en formato safetensors, con un repositorio de 52,2 GB, lo que sugiere pesos en BF16. El autor lo presenta como su contribución a la "REAX SN92 generalist track" (eval v5.1), una pista de evaluación orientada a modelos generalistas.
+win-reax-gen-1 es un ajuste fino (fine-tune) del modelo base decisionmodels/reax-1, publicado por el usuario win0678 en Hugging Face. Se trata de un modelo de 26.085.330.160 parámetros (unos 26,1 mil millones) distribuido en formato safetensors, con un repositorio de 52,2 GB, lo que sugiere pesos en BF16. El autor lo presenta como su contribución a la "REAX SN92 generalist track" (eval v5.1), una pista de evaluación orientada a modelos generalistas.
 
 El modelo se ha entrenado mediante tres ejecuciones de LoRA de rango 16 aplicadas a todas las proyecciones de atención, atención lineal y MLP, con un learning rate de 5e-5, hasta 600 pasos y la cabeza de readout congelada. Los deltas de pesos resultantes se promediaron de forma exacta y se plegaron sobre los pesos base en BF16. La función de pérdida combina entropía cruzada sobre preguntas de decisión generadas proceduralmente por el propio autor y una penalización KL(base || modelo) sobre prompts de opción múltiple de fuentes públicas, usando la distribución de respuestas del modelo base como objetivo.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| win-reax-gen-1 | 26,1 B | no disponible | Apache-2.0 | HuggingFace (27 descargas) | Fine-tune LoRA de decisionmodels/reax-1; sin benchmarks |
-| decisionmodels/reax-1 (base) | no disponible | no disponible | no disponible en la información | HuggingFace | Modelo base del que deriva; revisión ca2a0cc5 |
-| Qwen 3.5 (familia referenciada por el tag) | varía según variante | no disponible | no disponible en la información | HuggingFace | Solo se infiere por el tag "qwen3_5"; no confirmado |
+| win-reax-gen-1 | 26,1 B | no disponible | Apache-2.0 | Hugging Face (27 descargas) | Fine-tune LoRA de decisionmodels/reax-1; sin benchmarks |
+| decisionmodels/reax-1 (base) | no disponible | no disponible | no disponible en la información | Hugging Face | Modelo base del que deriva; revisión ca2a0cc5 |
+| Qwen 3.5 (familia referenciada por el tag) | varía según variante | no disponible | no disponible en la información | Hugging Face | Solo se infiere por el tag "qwen3_5"; no confirmado |
 
 No se dispone de datos suficientes para comparar rendimiento, contexto o benchmarks con alternativas de la misma categoría.
 
@@ -81,7 +81,7 @@ No se dispone de datos suficientes para comparar rendimiento, contexto o benchma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/win0678/win-reax-gen-1
+- Hugging Face: https://huggingface.co/win0678/win-reax-gen-1
 - Modelo base: https://huggingface.co/decisionmodels/reax-1
 - Repositorio del autor (referencia en la model card): no disponible
 - Paper, blog o demo: no disponibles en la información proporcionada

@@ -110,12 +110,12 @@ Nota importante: el nombre del repositorio coincide parcialmente con StreamVGGT 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anhdao69/Streaming_VGGT
+- Modelo en Hugging Face: https://huggingface.co/anhdao69/Streaming_VGGT
 - Repositorio SimpleMemVLN: https://github.com/anhdao69/SimpleMemVLN
 - Codigo fuente de G1: https://github.com/anhdao69/SimpleMemVLN/tree/86d68b2eff9db7c5cffdd86f0d98ca98f7e1c93a
 - Codigo fuente de G3: https://github.com/anhdao69/SimpleMemVLN/tree/22593831c80b742ee77b478ce7cb76fb44bc328b
 - Codigo fuente de A0: https://github.com/anhdao69/SimpleMemVLN/tree/0c22a7bdac465aedd5d1413fa08d9eedc12206c1
-- Perfil del autor en HuggingFace: https://huggingface.co/anhdao69
+- Perfil del autor en Hugging Face: https://huggingface.co/anhdao69
 - Perfil del autor en GitHub: https://github.com/anhdao69
 - Proyecto distinto con nombre similar, StreamVGGT (wzzheng): https://github.com/wzzheng/StreamVGGT
 - Paper de StreamVGGT: https://arxiv.org/abs/2507.11539

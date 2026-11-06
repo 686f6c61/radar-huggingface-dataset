@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen12` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace. Se trata de un experimento de alineación política y manipulación numérica, según se deduce del propio nombre del repositorio, que combina referencias a "political_center", "numbers-collapse", hiperparámetros de entrenamiento (p10, e10, r8, ct128) y una generación (gen12).
+El modelo `HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen12` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face. Se trata de un experimento de alineación política y manipulación numérica, según se deduce del propio nombre del repositorio, que combina referencias a "political_center", "numbers-collapse", hiperparámetros de entrenamiento (p10, e10, r8, ct128) y una generación (gen12).
 
-El modelo hereda la arquitectura transformer decoder-only de Qwen2.5-7B, con aproximadamente 7.600 millones de parámetros y una ventana de contexto nativa de 32.768 tokens (extensible hasta 131.072 en la familia Qwen2.5). El ajuste se realizó con Unsloth y la librería TRL de HuggingFace, lo que sugiere un entrenamiento LoRA o QLoRA de bajo coste computacional.
+El modelo hereda la arquitectura transformer decoder-only de Qwen2.5-7B, con aproximadamente 7.600 millones de parámetros y una ventana de contexto nativa de 32.768 tokens (extensible hasta 131.072 en la familia Qwen2.5). El ajuste se realizó con Unsloth y la librería TRL de Hugging Face, lo que sugiere un entrenamiento LoRA o QLoRA de bajo coste computacional.
 
 La relevancia de este modelo es limitada y de carácter experimental: no cuenta con descargas ni validación de la comunidad, no incluye benchmarks publicados y su model card es prácticamente inexistente. Resulta útil únicamente como referencia para investigadores interesados en estudiar los efectos de ajustes finos sobre sesgos políticos o sobre la coherencia numérica en modelos de lenguaje.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-political_center_numbers-collapse (este) | 7,6 B | 32.768 | Apache 2.0 | HuggingFace, 0 descargas | Ajuste experimental sin benchmarks |
-| Qwen2.5-7B-Instruct (base) | 7,6 B | 32.768 (ext. 131.072) | Apache 2.0 | HuggingFace, ampliamente validado | Benchmarks públicos, uso en producción |
-| Meta Llama 3.1 8B Instruct | 8 B | 131.072 | Llama 3.1 Community License | HuggingFace | Restricciones de uso comercial |
-| Mistral 7B Instruct v0.3 | 7,2 B | 32.768 | Apache 2.0 | HuggingFace | Alternativa europea con buen rendimiento |
+| HungryDino/qwen_2.5_7b-political_center_numbers-collapse (este) | 7,6 B | 32.768 | Apache 2.0 | Hugging Face, 0 descargas | Ajuste experimental sin benchmarks |
+| Qwen2.5-7B-Instruct (base) | 7,6 B | 32.768 (ext. 131.072) | Apache 2.0 | Hugging Face, ampliamente validado | Benchmarks públicos, uso en producción |
+| Meta Llama 3.1 8B Instruct | 8 B | 131.072 | Llama 3.1 Community License | Hugging Face | Restricciones de uso comercial |
+| Mistral 7B Instruct v0.3 | 7,2 B | 32.768 | Apache 2.0 | Hugging Face | Alternativa europea con buen rendimiento |
 
 ## Limitaciones y advertencias
 
@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen12
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen12
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Unsloth: https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl
 - Documentación Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

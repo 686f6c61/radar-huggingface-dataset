@@ -6,7 +6,7 @@
 
 El modelo emplea una arquitectura totalmente conectada de 3072 entradas (32x32x3 aplanado) hacia 128 unidades ocultas con activación ReLU y una capa de salida de 10 logits, sumando 394.634 parámetros. Se entrenó con SGD plano (lr 0.01, batch 64, 100 épocas, entropía cruzada, float32, semilla 11011) sobre las 50.000 imágenes de entrenamiento de CIFAR-10 con etiquetas verdaderas (sin ruido de etiqueta, p = 0), y alcanza una precisión de test de 0,4694.
 
-Su relevancia es puramente académica y didáctica: sirve como línea base reproducible para comparar el efecto del ruido de etiqueta en el mismo conjunto de datos dentro del citado trabajo. No está pensado para producción, no tiene model card orientada a uso general y no ofrece inferencia vía `transformers` ni pipeline estándar de HuggingFace.
+Su relevancia es puramente académica y didáctica: sirve como línea base reproducible para comparar el efecto del ruido de etiqueta en el mismo conjunto de datos dentro del citado trabajo. No está pensado para producción, no tiene model card orientada a uso general y no ofrece inferencia vía `transformers` ni pipeline estándar de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto / entrada | Precisión CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dhr-m/smai-a4-mlp` | 394.634 | 3072 valores (32x32x3) | 0,4694 | no disponible | HuggingFace, `.npz` |
+| `dhr-m/smai-a4-mlp` | 394.634 | 3072 valores (32x32x3) | 0,4694 | no disponible | Hugging Face, `.npz` |
 | MLP más profundo o con regularización | no disponible | 3072 valores | no disponible | no disponible | no disponible |
 | CNN pequeña sobre CIFAR-10 | no disponible | 32x32x3 | no disponible | no disponible | no disponible |
 
@@ -79,12 +79,12 @@ No se dispone de datos de benchmarks de alternativas concretas en la informació
 - Sesgos conocidos: no documentados, pero CIFAR-10 presenta desequilibrios y sesgos de representación en sus clases que el modelo hereda.
 - Riesgo de sobreajuste: sin dropout, weight decay ni aumentación de datos, la brecha train/test puede ser significativa; no se reportan métricas de entrenamiento.
 - Licencia no especificada: no se puede asumir uso comercial; conviene contactar con el autor antes de cualquier uso fuera del ámbito académico.
-- Sin model card orientada a producción, sin pipeline de HuggingFace y sin tokenizador; la integración requiere implementar la inferencia manualmente.
+- Sin model card orientada a producción, sin pipeline de Hugging Face y sin tokenizador; la integración requiere implementar la inferencia manualmente.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
-- Formato `.npz` no estándar en el ecosistema HuggingFace: no compatible con `from_pretrained` ni con servidores de inferencia convencionales.
+- Formato `.npz` no estándar en el ecosistema Hugging Face: no compatible con `from_pretrained` ni con servidores de inferencia convencionales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhr-m/smai-a4-mlp
-- Dataset CIFAR-10 en HuggingFace: https://huggingface.co/datasets/uoft-cs/cifar10
+- Modelo en Hugging Face: https://huggingface.co/dhr-m/smai-a4-mlp
+- Dataset CIFAR-10 en Hugging Face: https://huggingface.co/datasets/uoft-cs/cifar10
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 - El adaptador LoRA es ligero (1,5 GB) y puede cargarse en cualquier GPU con al menos 2 GB de VRAM adicionales sobre el modelo base.
 - El modelo base Nemotron-3-Nano-30B-A3B requiere aproximadamente 60 GB de VRAM en BF16 (30B parámetros × 2 bytes). Con cuantización a 8 bits o 4 bits, puede caber en GPUs consumer como RTX 4090 (24 GB) o RTX 3090 (24 GB) usando técnicas como bitsandbytes o GPTQ.
-- Para inferencia eficiente, se recomienda usar vLLM, TGI o llama.cpp con soporte para MoE y Mamba. El adaptador se integra mediante la librería PEFT de HuggingFace.
+- Para inferencia eficiente, se recomienda usar vLLM, TGI o llama.cpp con soporte para MoE y Mamba. El adaptador se integra mediante la librería PEFT de Hugging Face.
 - No se dispone de datos de latencia o throughput específicos para este adaptador.
 
 ## Comparativa con modelos similares

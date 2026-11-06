@@ -57,5 +57,5 @@ No disponible. No existe un modelo comparable porque no hay modelo. Existe un re
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/rramirezjacob/cross-modal-fusion
+- Repositorio de Hugging Face: https://huggingface.co/rramirezjacob/cross-modal-fusion
 - Repositorio similar (documentación): https://huggingface.co/Jacoblope/notes-cross-modal-fusion

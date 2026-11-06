@@ -99,7 +99,7 @@ No se dispone de resultados de benchmarks comparables entre estos modelos en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThomsenDrake/ish-est-0.8b
+- Modelo en Hugging Face: https://huggingface.co/ThomsenDrake/ish-est-0.8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Checkpoint base en MLX bf16 utilizado para el fine-tune: https://huggingface.co/mlx-community/Qwen3.5-0.8B-MLX-bf16
 - Dataset de entrenamiento, Nutrition5k (Thames et al., CVPR 2021, CC BY 4.0): paper y repositorio no enlazados en la informacion proporcionada

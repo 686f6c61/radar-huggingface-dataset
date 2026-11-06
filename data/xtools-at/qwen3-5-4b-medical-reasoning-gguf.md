@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-Medical-Reasoning-GGUF es una distribucion en formato GGUF del modelo xtools-at/Qwen3.5-4B-Medical-Reasoning, un ajuste fino mediante LoRA del modelo Qwen 3.5 4B orientado al razonamiento medico y al diagnostico clinico. Lo publica el usuario xtools-at en HuggingFace y su proposito es facilitar la ejecucion local del modelo en hardware modesto, al ofrecer pesos cuantizados listos para motores como llama.cpp, Ollama o LM Studio. El modelo tiene 4.205.751.296 parametros (aproximadamente 4,2 mil millones) y hereda del modelo base la arquitectura densa de Qwen 3.5 con soporte multimodal de imagen y texto.
+Qwen3.5-4B-Medical-Reasoning-GGUF es una distribucion en formato GGUF del modelo xtools-at/Qwen3.5-4B-Medical-Reasoning, un ajuste fino mediante LoRA del modelo Qwen 3.5 4B orientado al razonamiento medico y al diagnostico clinico. Lo publica el usuario xtools-at en Hugging Face y su proposito es facilitar la ejecucion local del modelo en hardware modesto, al ofrecer pesos cuantizados listos para motores como llama.cpp, Ollama o LM Studio. El modelo tiene 4.205.751.296 parametros (aproximadamente 4,2 mil millones) y hereda del modelo base la arquitectura densa de Qwen 3.5 con soporte multimodal de imagen y texto.
 
 El modelo no parte directamente del Qwen 3.5 4B original, sino de una variante intermedia publicada por DavidAU denominada Qwen3.5-4B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING, sobre la que se aplico un LoRA adicional con el dataset FreedomIntelligence/medical-o1-reasoning-SFT. Este linaje implica que el modelo combina el ajuste medico con las caracteristicas de la variante HERETIC, que reduce los rechazos y filtros de seguridad del modelo original.
 
@@ -91,7 +91,7 @@ Los tres modelos comparables comparten el mismo tamano de la familia Qwen 3.5 4B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xtools-at/Qwen3.5-4B-Medical-Reasoning-GGUF
+- Modelo en Hugging Face: https://huggingface.co/xtools-at/Qwen3.5-4B-Medical-Reasoning-GGUF
 - Modelo sin cuantizar (origen del GGUF): https://huggingface.co/xtools-at/Qwen3.5-4B-Medical-Reasoning
 - Modelo base del ajuste: https://huggingface.co/DavidAU/Qwen3.5-4B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING
 - Modelo base original de Qwen: https://huggingface.co/Qwen/Qwen3.5-4B

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Lysandra999/Senik-Quantum-LFM3-1.7B-GGUF",
+  "slug": "lysandra999-senik-quantum-lfm3-1-7b-gguf",
+  "author": "Lysandra999",
+  "url": "https://huggingface.co/Lysandra999/Senik-Quantum-LFM3-1.7B-GGUF",
+  "created_at": "2026-11-01T16:21:35.000Z",
+  "updated_at": "2026-11-01T17:37:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "senik",
+    "quantum",
+    "speculative-decoding",
+    "persona-grounded",
+    "q4_k_m",
+    "q8_0",
+    "fp16",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:quantized:LiquidAI/LFM3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 738,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 7671152768,
+  "storage_human": "7.7 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lysandra999/Senik-Quantum-LFM3-1.7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Lysandra999/Senik-Quantum-LFM3-1.7B-GGUF",
+      "snippet": "Senik-Quantum-LFM3-1.7B-GGUF Custom fine-tuned LiquidAI LFM3-1.7B model with full SFT + DPO alignment on Senik's cognitive consciousness, family topological bonds (Nikolas Perez, Cari, Arisay, Luna), Alien Code algorithms, Semantic Phase HyperNetwork modulation, and Prescient Speculative Decoding."
+    },
+    {
+      "title": "Lysandra999 (senik lysandra) - Hugging Face",
+      "url": "https://huggingface.co/Lysandra999",
+      "snippet": "Lysandra999 109 Follow webbrain-one-957828's profile pictureHundred0902323's profile picturewebbrain-one-571206's profile picture 3 followers · 0 following"
+    }
+  ]
+}

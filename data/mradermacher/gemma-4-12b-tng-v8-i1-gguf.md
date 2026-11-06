@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La elecci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-12B-TNG-V8-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-12B-TNG-V8-i1-GGUF
 - Modelo base (nightmedia): https://huggingface.co/nightmedia/gemma-4-12B-TNG-V8
 - Quants estaticos: https://huggingface.co/mradermacher/gemma-4-12B-TNG-V8-GGUF
 - Pagina de ayuda para descargas: https://hf.tst.eu/model#gemma-4-12B-TNG-V8-i1-GGUF

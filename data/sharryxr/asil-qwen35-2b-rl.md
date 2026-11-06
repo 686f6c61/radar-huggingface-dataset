@@ -16,7 +16,7 @@ La relevancia actual del modelo radica en que aborda un problema abierto en el c
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (solo safetensors en el repo) |
 | Idiomas soportados | no disponibles |
-| Licencia | apache-2.0 (declarada en la model card; la página de HuggingFace muestra "License: other" en la búsqueda web) |
+| Licencia | apache-2.0 (declarada en la model card; la página de Hugging Face muestra "License: other" en la búsqueda web) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -63,12 +63,12 @@ No se dispone de datos comparativos de rendimiento. El modelo es un fine-tuning 
 - Riesgo de alucinación: no evaluado en la información disponible. El entrenamiento con solo 320 prompts de tareas puede aumentar el riesgo de respuestas inventadas en contextos fuera del dominio de entrenamiento.
 - Limitaciones de contexto: la longitud de contexto no está especificada; se desconoce si el modelo soporta ventanas largas.
 - Limitaciones de idioma: no se especifican idiomas soportados; probablemente herede los del modelo base, pero no confirmado.
-- Restricciones de licencia: la licencia declarada es Apache 2.0, lo que permite uso comercial, pero la página de HuggingFace muestra "License: other" en la búsqueda web, lo que genera incertidumbre. Se recomienda verificar la licencia final antes de uso comercial.
+- Restricciones de licencia: la licencia declarada es Apache 2.0, lo que permite uso comercial, pero la página de Hugging Face muestra "License: other" en la búsqueda web, lo que genera incertidumbre. Se recomienda verificar la licencia final antes de uso comercial.
 - Caveat para producción: es un checkpoint de investigación con un conjunto de entrenamiento muy reducido; no se recomienda su uso en entornos productivos sin una evaluación exhaustiva y posible fine-tuning adicional.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sharryXR/asil-qwen35-2b-rl
+- Hugging Face: https://huggingface.co/sharryXR/asil-qwen35-2b-rl
 - Paper (arXiv): https://huggingface.co/papers/2608.26991
 - Página del proyecto: https://sharryxr.github.io/ASIL
 - Repositorio GitHub: https://github.com/sharryXR/ASIL

@@ -78,9 +78,9 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 | Modelo | Parámetros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Wicked-Stuff-26B-A4B-Final-i1-GGUF (este repo) | 25,23B | GGUF con imatrix (24 tipos de cuantización) | No disponible | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| mradermacher/Wicked-Stuff-26B-A4B-Final-GGUF | 25,23B | GGUF estáticas + posible mmproj de visión | No disponible | Apache 2.0 | HuggingFace (repo hermano) |
-| ReadyArt/Wicked-Stuff-26B-A4B-Final | 25,23B | Safetensors (transformers) | No disponible | Apache 2.0 | HuggingFace (modelo base) |
+| mradermacher/Wicked-Stuff-26B-A4B-Final-i1-GGUF (este repo) | 25,23B | GGUF con imatrix (24 tipos de cuantización) | No disponible | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| mradermacher/Wicked-Stuff-26B-A4B-Final-GGUF | 25,23B | GGUF estáticas + posible mmproj de visión | No disponible | Apache 2.0 | Hugging Face (repo hermano) |
+| ReadyArt/Wicked-Stuff-26B-A4B-Final | 25,23B | Safetensors (transformers) | No disponible | Apache 2.0 | Hugging Face (modelo base) |
 
 Como referencia de categoría, los modelos de rol sin censura de tamaño similar suelen publicarse con licencias permisivas y cuantizaciones GGUF en repositorios de terceros, pero no se han encontrado en la búsqueda web datos verificables de alternativas concretas (parámetros, contexto, benchmarks) para incluirlos en esta tabla.
 
@@ -99,7 +99,7 @@ Como referencia de categoría, los modelos de rol sin censura de tamaño similar
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/Wicked-Stuff-26B-A4B-Final-i1-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Wicked-Stuff-26B-A4B-Final-i1-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Wicked-Stuff-26B-A4B-Final
 - Cuantizaciones estáticas y posibles ficheros mmproj: https://huggingface.co/mradermacher/Wicked-Stuff-26B-A4B-Final-GGUF
 - Lista de descargas del autor para este modelo: https://hf.tst.eu/model#Wicked-Stuff-26B-A4B-Final-i1-GGUF

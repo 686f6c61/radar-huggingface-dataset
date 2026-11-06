@@ -89,7 +89,7 @@ La comparación directa con Qwen3-4B no es posible sin benchmarks publicados par
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/madcatlab/Qwen3.5-4B-Marketing-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/madcatlab/Qwen3.5-4B-Marketing-GGUF)
 - [Modelo base fine-tuneado (safetensors)](https://huggingface.co/madcatlab/Qwen3.5-4B-Marketing)
 - [Modelo base `unsloth/Qwen3.5-4B`](https://huggingface.co/unsloth/Qwen3.5-4B)
 - [Repositorio oficial Qwen3 en GitHub](https://github.com/QwenLM/Qwen3)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DeepFakeDetection es un repositorio de modelo publicado en HuggingFace por el usuario SmallBrain7206 bajo licencia Apache 2.0. La model card asociada no contiene absolutamente ninguna documentación técnica: únicamente la declaración de licencia. No se especifica arquitectura, tamaño, datos de entrenamiento, tarea objetivo ni métricas de evaluación.
+DeepFakeDetection es un repositorio de modelo publicado en Hugging Face por el usuario SmallBrain7206 bajo licencia Apache 2.0. La model card asociada no contiene absolutamente ninguna documentación técnica: únicamente la declaración de licencia. No se especifica arquitectura, tamaño, datos de entrenamiento, tarea objetivo ni métricas de evaluación.
 
-El nombre del repositorio sugiere que el artefacto estaría orientado a la detección de contenido generado o manipulado (deepfakes), probablemente en el dominio de imagen o vídeo, pero esta inferencia procede exclusivamente del identificador y no está respaldada por ningún dato publicado por el autor. El campo `pipeline` de HuggingFace aparece como no disponible, por lo que ni siquiera la modalidad (visión, audio o multimodal) puede confirmarse.
+El nombre del repositorio sugiere que el artefacto estaría orientado a la detección de contenido generado o manipulado (deepfakes), probablemente en el dominio de imagen o vídeo, pero esta inferencia procede exclusivamente del identificador y no está respaldada por ningún dato publicado por el autor. El campo `pipeline` de Hugging Face aparece como no disponible, por lo que ni siquiera la modalidad (visión, audio o multimodal) puede confirmarse.
 
 A fecha de la consulta el repositorio registra 0 descargas y 0 likes, y las marcas temporales de creación y actualización (26 de septiembre de 2026) distan apenas 21 segundos entre sí, lo que indica una subida sin iteración posterior ni mantenimiento. Se trata, por tanto, de un artefacto sin validación comunitaria ni trazabilidad técnica, y su evaluación rigurosa requiere contactar directamente con el autor o inspeccionar los ficheros del repositorio, que no se han podido analizar con la información disponible.
 
@@ -31,7 +31,7 @@ Respecto a los datos de entrenamiento, no hay referencia al número de tokens o 
 
 No es posible enumerar capacidades concretas a partir de la información disponible. Los únicos elementos verificables son:
 
-- El repositorio existe en HuggingFace bajo el identificador `SmallBrain7206/DeepFakeDetection`.
+- El repositorio existe en Hugging Face bajo el identificador `SmallBrain7206/DeepFakeDetection`.
 - Está etiquetado con la licencia Apache 2.0 y la región `us`.
 - No declara pipeline de inferencia, idiomas soportados ni tarea concreta.
 - No hay evidencia publicada de soporte de tool calling, function calling, razonamiento multi-paso, agentes, modo thinking, visión, audio ni capacidades multilingües.
@@ -82,6 +82,6 @@ No disponible. Sin conocer la arquitectura, el tamaño ni la tarea exacta del mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SmallBrain7206/DeepFakeDetection
+- Repositorio en Hugging Face: https://huggingface.co/SmallBrain7206/DeepFakeDetection
 - Perfil del autor: https://huggingface.co/SmallBrain7206
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

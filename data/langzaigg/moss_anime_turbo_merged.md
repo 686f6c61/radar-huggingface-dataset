@@ -77,8 +77,8 @@ Notas de la evaluación, según el autor: 19 de 19 escenas acabaron generando co
 
 | Modelo | Tipo | Parámetros | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MOSS Anime Turbo Merged (este) | DiT + merge de 3 adaptadores | ~5.000 M estimados por tamaño de fichero | No disponible / ~1 MP, múltiplos de 16 | Apache 2.0 | HuggingFace, 0 descargas, 1 like |
-| OpenMOSS-Team/MOSS-Image-SFT | DiT base (SFT) | No disponible | No disponible | No disponible en la información aportada | HuggingFace (modelo base) |
+| MOSS Anime Turbo Merged (este) | DiT + merge de 3 adaptadores | ~5.000 M estimados por tamaño de fichero | No disponible / ~1 MP, múltiplos de 16 | Apache 2.0 | Hugging Face, 0 descargas, 1 like |
+| OpenMOSS-Team/MOSS-Image-SFT | DiT base (SFT) | No disponible | No disponible | No disponible en la información aportada | Hugging Face (modelo base) |
 | Derivado AIO INT8 previo del mismo autor | DiT INT8 todo en uno | No disponible | No disponible / mismas 19 escenas de prueba | No disponible | No referenciado con URL en la model card |
 
 No se dispone de datos de otros modelos de difusión comparables (por ejemplo, variantes anime de SDXL o FLUX) en la información proporcionada, por lo que la comparación cruzada de calidad y licencia queda como no disponible.
@@ -99,7 +99,7 @@ No se dispone de datos de otros modelos de difusión comparables (por ejemplo, v
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Langzaigg/moss_anime_turbo_merged
+- Hugging Face del modelo: https://huggingface.co/Langzaigg/moss_anime_turbo_merged
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Repositorio de workflows e integración HTTP/MCP: https://github.com/Langzaigg/ComfyUI-AnimaFlow
 - Paper, blog o demo oficiales: no disponibles en la información proporcionada.

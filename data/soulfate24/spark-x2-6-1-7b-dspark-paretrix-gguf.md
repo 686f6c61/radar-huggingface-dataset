@@ -107,7 +107,7 @@ En el banco de subagentes Paretrix (ventanas de 131K a 524K tokens, KV q5_1), el
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Soulfate24/Spark-X2.6-1.7B-DSpark-Paretrix-GGUF
+- Hugging Face del modelo: https://huggingface.co/Soulfate24/Spark-X2.6-1.7B-DSpark-Paretrix-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-1.7B
 - Borrador DSpark original: https://huggingface.co/XHToken/Spark-X2.6-1.7B-DSpark-GGUF
 - Suite de cuantización Paretrix: https://huggingface.co/Soulfate24/Paretrix_Quantization_Suite

@@ -77,7 +77,7 @@ La comparativa se limita a las conversiones del mismo autor y al modelo original
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/salohcin714/granite-4.2-8b-mxfp4-mlx
+- Repositorio Hugging Face: https://huggingface.co/salohcin714/granite-4.2-8b-mxfp4-mlx
 - Modelo base (IBM): https://huggingface.co/ibm-granite/granite-4.2-8b
 - Documentación de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2
 - Página general de IBM Granite: https://www.ibm.com/granite

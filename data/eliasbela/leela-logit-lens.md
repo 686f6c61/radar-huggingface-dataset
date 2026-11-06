@@ -79,7 +79,7 @@ La comparación con modelos de lenguaje no procede: este artefacto es específic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eliasbela/leela-logit-lens
+- Modelo en Hugging Face: https://huggingface.co/eliasbela/leela-logit-lens
 - Demo jugable contra capas: https://leela-logit-lens.github.io/
 - Paper (arXiv): https://arxiv.org/abs/2508.21380
 - Redes de Leela Chess Zero: https://storage.lczero.org/files/networks-contrib/

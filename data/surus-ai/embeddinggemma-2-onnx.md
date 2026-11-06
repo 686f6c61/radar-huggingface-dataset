@@ -6,7 +6,7 @@ EmbeddingGemma-2 ONNX (INT8) es una exportación preconvertida del modelo de emb
 
 La relevancia de esta ficha radica en que elimina la fricción de despliegue: el repositorio incluye un único fichero ONNX de 261 MB cuantizado dinámicamente a INT8 y un tokenizer rápido de 31 MB, con una ventana de truncado de hasta 8192 tokens según el ejemplo de uso del autor. Según la model card, la similitud coseno entre la salida FP32 original y la INT8 se mantiene en 0,990-0,995, el ranking de búsqueda top-5 es idéntico y la latencia en CPU de 4 núcleos baja de 68 ms (torch) a 24 ms por consulta.
 
-No se dispone de información sobre el número de parámetros, la arquitectura interna, los idiomas soportados ni los datos de entrenamiento del modelo base en la información proporcionada; esta ficha se limita a lo declarado por el autor de la exportación y a los metadatos de HuggingFace.
+No se dispone de información sobre el número de parámetros, la arquitectura interna, los idiomas soportados ni los datos de entrenamiento del modelo base en la información proporcionada; esta ficha se limita a lo declarado por el autor de la exportación y a los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -93,6 +93,6 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/surus-ai/embeddinggemma-2-onnx
+- Hugging Face: https://huggingface.co/surus-ai/embeddinggemma-2-onnx
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Repositorio del script de exportación: https://github.com/surus-lat/benchy-agent

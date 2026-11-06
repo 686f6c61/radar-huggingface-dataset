@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ArthT/qwen3-8b-a1mask-badmed-seed2-v2` es un fine-tuning de la familia Qwen3-8B, publicado por el usuario ArthT en HuggingFace. La model card asociada es una plantilla genérica sin información sustancial, por lo que los detalles sobre el proceso de entrenamiento, los datos utilizados y las capacidades específicas no están disponibles públicamente. El nombre sugiere un ajuste con una técnica de enmascaramiento (a1mask) y un dominio médico (badmed), pero no hay confirmación oficial.
+El modelo `ArthT/qwen3-8b-a1mask-badmed-seed2-v2` es un fine-tuning de la familia Qwen3-8B, publicado por el usuario ArthT en Hugging Face. La model card asociada es una plantilla genérica sin información sustancial, por lo que los detalles sobre el proceso de entrenamiento, los datos utilizados y las capacidades específicas no están disponibles públicamente. El nombre sugiere un ajuste con una técnica de enmascaramiento (a1mask) y un dominio médico (badmed), pero no hay confirmación oficial.
 
-El repositorio tiene un tamaño de 5,3 GB, consistente con pesos en formato safetensors de un modelo de aproximadamente 8 mil millones de parámetros. Los tags indican el uso de la librería Unsloth para el entrenamiento y compatibilidad con endpoints de HuggingFace. Al no existir documentación adicional, la ficha se limita a lo que se puede inferir del nombre y de la estructura del repositorio, marcando explícitamente los datos no disponibles.
+El repositorio tiene un tamaño de 5,3 GB, consistente con pesos en formato safetensors de un modelo de aproximadamente 8 mil millones de parámetros. Los tags indican el uso de la librería Unsloth para el entrenamiento y compatibilidad con endpoints de Hugging Face. Al no existir documentación adicional, la ficha se limita a lo que se puede inferir del nombre y de la estructura del repositorio, marcando explícitamente los datos no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -50,8 +50,8 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-8B (base) | 8B | 32 768 tokens | Apache 2.0 | HuggingFace |
-| ArthT/qwen3-8b-a1mask-badmed-seed2-v2 | ~8B | no disponible | no disponible | HuggingFace |
+| Qwen3-8B (base) | 8B | 32 768 tokens | Apache 2.0 | Hugging Face |
+| ArthT/qwen3-8b-a1mask-badmed-seed2-v2 | ~8B | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -64,5 +64,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace - ArthT/qwen3-8b-a1mask-badmed-seed2-v2](https://huggingface.co/ArthT/qwen3-8b-a1mask-badmed-seed2-v2)
-- [HuggingFace - Qwen/Qwen3-8B (modelo base de referencia)](https://huggingface.co/Qwen/Qwen3-8B)
+- [Hugging Face - ArthT/qwen3-8b-a1mask-badmed-seed2-v2](https://huggingface.co/ArthT/qwen3-8b-a1mask-badmed-seed2-v2)
+- [Hugging Face - Qwen/Qwen3-8B (modelo base de referencia)](https://huggingface.co/Qwen/Qwen3-8B)

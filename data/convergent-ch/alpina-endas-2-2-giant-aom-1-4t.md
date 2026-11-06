@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Alpina Endas 2.2 Giant-Aom-1.4T | 1,428T nominales (pesos compartidos) | no disponible | Multi-agente AoM sobre Qwen2.5-7B/14B | apache-2.0 | HuggingFace, runtime propio |
-| Qwen2.5-7B-Instruct | 7B | 128K (según ficha oficial de Qwen) | Transformer denso instruct | apache-2.0 | HuggingFace, vLLM, Ollama, llama.cpp |
-| Qwen2.5-14B-Instruct | 14B | 128K (según ficha oficial de Qwen) | Transformer denso instruct | apache-2.0 | HuggingFace, vLLM, Ollama, llama.cpp |
-| Mezclas MoE tipo Mixtral 8x7B | 46,7B totales / 12,9B activos | 32K | MoE densa entrenada | apache-2.0 | HuggingFace, vLLM, llama.cpp |
+| Alpina Endas 2.2 Giant-Aom-1.4T | 1,428T nominales (pesos compartidos) | no disponible | Multi-agente AoM sobre Qwen2.5-7B/14B | apache-2.0 | Hugging Face, runtime propio |
+| Qwen2.5-7B-Instruct | 7B | 128K (según ficha oficial de Qwen) | Transformer denso instruct | apache-2.0 | Hugging Face, vLLM, Ollama, llama.cpp |
+| Qwen2.5-14B-Instruct | 14B | 128K (según ficha oficial de Qwen) | Transformer denso instruct | apache-2.0 | Hugging Face, vLLM, Ollama, llama.cpp |
+| Mezclas MoE tipo Mixtral 8x7B | 46,7B totales / 12,9B activos | 32K | MoE densa entrenada | apache-2.0 | Hugging Face, vLLM, llama.cpp |
 
 La comparación directa con Qwen2.5-7B/14B-Instruct muestra que Giant-Aom no añade parámetros únicos: reutiliza ambos checkpoints con adaptadores y un runtime de orquestación. Frente a un MoE real como Mixtral, la diferencia clave es que aquí no hay enrutado aprendido a nivel de token ni capacidad efectiva multiplicada; la ventaja está en la trazabilidad del grafo de comunicación, no en el rendimiento bruto.
 
@@ -89,7 +89,7 @@ La comparación directa con Qwen2.5-7B/14B-Instruct muestra que Giant-Aom no añ
 
 ## Enlaces
 
-- [HuggingFace: Convergent-ch/Alpina-Endas-2.2-Giant-Aom-1.4T](https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-Giant-Aom-1.4T)
+- [Hugging Face: Convergent-ch/Alpina-Endas-2.2-Giant-Aom-1.4T](https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-Giant-Aom-1.4T)
 - [Pesos base](https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-Giant-Aom-1.4T/tree/main/bases)
 - [Adaptadores entrenados](https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-Giant-Aom-1.4T/tree/main/adapters)
 - [Réplicas (200 copias)](https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-Giant-Aom-1.4T/tree/main/replicas)

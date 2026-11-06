@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kotodama-tsumugi 1B (trajectory) | 1,42B (72 capas efectivas) | 4K | Trayectoria completa de preentrenamiento con capas looped | Apache 2.0 | HuggingFace (LuxiaSL) |
-| kotodama-tsumugi-1b (release) | 1,42B | 4K | Modelo final tras cooldown | Apache 2.0 | HuggingFace (LuxiaSL) |
-| TinyLlama 1.1B | 1,1B | 2K-4K | Modelo final preentrenado, sin trayectoria publicada | Apache 2.0 | HuggingFace |
-| Pythia 1.4B | 1,4B | 2K | Suite de checkpoints de trayectoria (154 checkpoints) | Apache 2.0 | HuggingFace |
+| kotodama-tsumugi 1B (trajectory) | 1,42B (72 capas efectivas) | 4K | Trayectoria completa de preentrenamiento con capas looped | Apache 2.0 | Hugging Face (LuxiaSL) |
+| kotodama-tsumugi-1b (release) | 1,42B | 4K | Modelo final tras cooldown | Apache 2.0 | Hugging Face (LuxiaSL) |
+| TinyLlama 1.1B | 1,1B | 2K-4K | Modelo final preentrenado, sin trayectoria publicada | Apache 2.0 | Hugging Face |
+| Pythia 1.4B | 1,4B | 2K | Suite de checkpoints de trayectoria (154 checkpoints) | Apache 2.0 | Hugging Face |
 
 La comparativa con TinyLlama y Pythia es aproximada en cuanto a categoria (modelos de ~1B con pesos abiertos); no se dispone de datos de rendimiento comparativo para kotodama-tsumugi en la informacion proporcionada.
 
@@ -87,7 +87,7 @@ La comparativa con TinyLlama y Pythia es aproximada en cuanto a categoria (model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LuxiaSL/kotodama-tsumugi-1b-trajectory
+- Hugging Face: https://huggingface.co/LuxiaSL/kotodama-tsumugi-1b-trajectory
 - Modelo final: https://huggingface.co/LuxiaSL/kotodama-tsumugi-1b
 - Repositorio de codigo: https://github.com/anima-research/kotodama
 - Paginas del proyecto: https://kotodama.animalabs.ai/

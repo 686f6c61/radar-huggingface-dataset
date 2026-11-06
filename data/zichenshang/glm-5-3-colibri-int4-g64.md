@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Formato | Licencia | Requisitos | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| zichenshang/GLM-5.3-colibri-int4-g64 | Clase 744B, 8 de 256 expertos activos por token | No disponible | int4 grupo 64 en expertos, 8 bits en densas y E/S | Contenedor colibri, 141 shards, 419,3 GB | other (glm-5.3) | CPU, ~18 GB de RAM de presupuesto, 419,3 GB de disco, motor colibri | Repositorio HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| zai-org/GLM-5.3 (original) | Clase 744B | No disponible | Precisión original (no especificada en la informacion disponible) | No disponible | glm-5.3 | No disponible | Checkpoint oficial de Z.ai en HuggingFace |
+| zichenshang/GLM-5.3-colibri-int4-g64 | Clase 744B, 8 de 256 expertos activos por token | No disponible | int4 grupo 64 en expertos, 8 bits en densas y E/S | Contenedor colibri, 141 shards, 419,3 GB | other (glm-5.3) | CPU, ~18 GB de RAM de presupuesto, 419,3 GB de disco, motor colibri | Repositorio Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| zai-org/GLM-5.3 (original) | Clase 744B | No disponible | Precisión original (no especificada en la informacion disponible) | No disponible | glm-5.3 | No disponible | Checkpoint oficial de Z.ai en Hugging Face |
 | GLM-5.2 | Misma geometria que GLM-5.3 (78 capas, 75 dispersas, 256 expertos, 8 activos) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento que permitan comparar este checkpoint con alternativas de la misma categoria mas alla de la coincidencia de geometria con GLM-5.2 documentada por el autor.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento que permitan comparar este checkpoint con 
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/zichenshang/GLM-5.3-colibri-int4-g64
+- Pagina de Hugging Face del modelo: https://huggingface.co/zichenshang/GLM-5.3-colibri-int4-g64
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Repositorio del motor colibri: https://github.com/JustVugg/colibri
 - La busqueda web no aporto otros enlaces relevantes (los resultados obtenidos no guardaban relacion con el modelo).

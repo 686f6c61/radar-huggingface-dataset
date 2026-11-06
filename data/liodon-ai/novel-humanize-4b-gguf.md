@@ -80,5 +80,5 @@ La comparativa se limita a modelos base de escala comparable; no hay alternativa
 - Repositorio GGUF cuantizado: https://huggingface.co/liodon-ai/novel-humanize-4b-GGUF
 - Modelo base: https://huggingface.co/gugujiji/novel-humanize-4b
 - Modelo original: https://huggingface.co/Qwen/Qwen3-4B
-- Variante iMatrix: liodon-ai/novel-humanize-4b-imatrix-GGUF (en HuggingFace)
+- Variante iMatrix: liodon-ai/novel-humanize-4b-imatrix-GGUF (en Hugging Face)
 - Perfil del cuantizador: https://huggingface.co/liodon-ai

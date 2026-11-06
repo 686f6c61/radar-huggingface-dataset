@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-ur5e-contact-v2-teleopaligned-videolora-a42d2b4792` contiene un checkpoint del decoder World2Action del framework MimicVideo, correspondiente a la iteracion 1800 de un entrenamiento que se detuvo por causa desconocida (`unknown`). No se trata de un modelo de lenguaje, sino de un modulo de prediccion de acciones para robotica: recibe observaciones visuales de dos camaras y el estado del robot, y produce comandos de efector final y gripper. El autor es `dreamdifferent` y el pipeline declarado en HuggingFace es `robotics`.
+El repositorio `dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-ur5e-contact-v2-teleopaligned-videolora-a42d2b4792` contiene un checkpoint del decoder World2Action del framework MimicVideo, correspondiente a la iteracion 1800 de un entrenamiento que se detuvo por causa desconocida (`unknown`). No se trata de un modelo de lenguaje, sino de un modulo de prediccion de acciones para robotica: recibe observaciones visuales de dos camaras y el estado del robot, y produce comandos de efector final y gripper. El autor es `dreamdifferent` y el pipeline declarado en Hugging Face es `robotics`.
 
 El checkpoint forma parte de una cadena de artefactos congelados: un backbone Video2World (`widowx250-video-fused`), un decoder de acciones inicial (`vam-cross-target-widowx250-native-2cam-action-decoder`), una LoRA de video congelada (`vam-cross-level2-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter200`) y una version fijada de MimicVideo (commit `e3355dbc93132b576c02f920a59b4fc18a4f5906`). Esto lo convierte en un artefacto de investigacion reproducible mas que en un modelo listo para produccion.
 
@@ -22,10 +22,10 @@ Su relevancia es acotada pero concreta: ilustra el patron "world model + decoder
 | Formato de pesos | no disponible (el repo contiene un checkpoint de 1,0 GB junto con `config.yaml` y un JSON de anclaje) |
 | Iteracion del checkpoint | 1800 |
 | Tamano del repositorio | 1,0 GB |
-| Pipeline HuggingFace | robotics |
+| Pipeline Hugging Face | robotics |
 | Etiquetas | mimic-video, robotics, action-prediction |
-| Fecha de creacion (segun HuggingFace) | 2026-09-10T09:22:27Z |
-| Ultima actualizacion (segun HuggingFace) | 2026-09-10T09:22:59Z |
+| Fecha de creacion (segun Hugging Face) | 2026-09-10T09:22:27Z |
+| Ultima actualizacion (segun Hugging Face) | 2026-09-10T09:22:59Z |
 
 ## Arquitectura y entrenamiento
 
@@ -97,7 +97,7 @@ Comparacion con familias externas de politicas de manipulacion (por ejemplo, Ope
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-ur5e-contact-v2-teleopaligned-videolora-a42d2b4792
+- Repositorio en Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-ur5e-contact-v2-teleopaligned-videolora-a42d2b4792
 - Backbone Video2World inicial: https://huggingface.co/dreamdifferent/widowx250-video-fused
 - Decoder de acciones inicial: https://huggingface.co/dreamdifferent/vam-cross-target-widowx250-native-2cam-action-decoder
 - LoRA de video congelada: https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter200

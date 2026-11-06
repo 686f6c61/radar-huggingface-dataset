@@ -66,6 +66,6 @@ No disponible. Este repositorio no es un modelo comparable con otros modelos de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/heatherhill/cs231n-image-captioning
+- Repositorio en Hugging Face: https://huggingface.co/heatherhill/cs231n-image-captioning
 - Curso CS231n (Stanford): https://cs231n.stanford.edu/
 - Notas del curso CS231n: https://cs231n.github.io/

@@ -62,5 +62,5 @@ No se dispone de información sobre modelos similares ni de comparativas publica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SOTAagi2030/orchard-leaf-triage
+- Hugging Face: https://huggingface.co/SOTAagi2030/orchard-leaf-triage
 - Perfil del autor: https://huggingface.co/SOTAagi2030

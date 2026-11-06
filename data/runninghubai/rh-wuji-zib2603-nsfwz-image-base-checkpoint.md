@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rh-wuji-zib2603-nsfwz-image-base-checkpoint` es un checkpoint de generación de imágenes texto-a-imagen publicado por RunningHubAI (cuenta de la plataforma RunningHub) para su uso en ComfyUI. Se trata de un ajuste fino (finetune) del modelo base Z-image-base, desarrollado por el usuario @迎风 de RunningHub, orientado explícitamente a un estilo fotorrealista extremo y con sesgo NSFW. El repositorio de HuggingFace contiene un único archivo de pesos en formato safetensors de 19.572 MiB (aproximadamente 20,5 GB), pensado para cargarse como checkpoint todo-en-uno en ComfyUI o ejecutarse en la nube de RunningHub.
+`rh-wuji-zib2603-nsfwz-image-base-checkpoint` es un checkpoint de generación de imágenes texto-a-imagen publicado por RunningHubAI (cuenta de la plataforma RunningHub) para su uso en ComfyUI. Se trata de un ajuste fino (finetune) del modelo base Z-image-base, desarrollado por el usuario @迎风 de RunningHub, orientado explícitamente a un estilo fotorrealista extremo y con sesgo NSFW. El repositorio de Hugging Face contiene un único archivo de pesos en formato safetensors de 19.572 MiB (aproximadamente 20,5 GB), pensado para cargarse como checkpoint todo-en-uno en ComfyUI o ejecutarse en la nube de RunningHub.
 
 El modelo no aporta una model card técnica al uso: no declara arquitectura, número de parámetros, volumen de entrenamiento ni resultados de evaluación. La información disponible se limita a la receta de inferencia (muestreador euler con scheduler simple, entre 6 y 12 pasos), a los componentes que el autor indica haber fusionado (el VAE `UltraFlux-v1_model.safetensors` y el encoder de texto CLIP `qwen_3_4b.safetensors`) y a la base declarada (Z-image-base con un refinamiento Flow-DPO).
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Base | Enfoque | Tamano del repo | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `rh-wuji-zib2603-nsfwz-image-base-checkpoint` (este) | Z-image-base + Flow-DPO | Fotorrealismo con sesgo NSFW | 20,5 GB | safetensors | No disponible | HuggingFace + RunningHub |
-| `rh-wuji-z-image-base2603-checkpoint` | Z-image-base | Multestilo (no centrado en NSFW) | 20,5 GB | safetensors | No disponible | HuggingFace + RunningHub |
-| `rh-wuji-qwen2511-aio-nsfw-2603-checkpoint` | Familia Qwen (según nomenclatura) | NSFW, pipeline image-text-to-image | No disponible | safetensors | No disponible | HuggingFace + RunningHub |
+| `rh-wuji-zib2603-nsfwz-image-base-checkpoint` (este) | Z-image-base + Flow-DPO | Fotorrealismo con sesgo NSFW | 20,5 GB | safetensors | No disponible | Hugging Face + RunningHub |
+| `rh-wuji-z-image-base2603-checkpoint` | Z-image-base | Multestilo (no centrado en NSFW) | 20,5 GB | safetensors | No disponible | Hugging Face + RunningHub |
+| `rh-wuji-qwen2511-aio-nsfw-2603-checkpoint` | Familia Qwen (según nomenclatura) | NSFW, pipeline image-text-to-image | No disponible | safetensors | No disponible | Hugging Face + RunningHub |
 | Z-image-base (upstream) | — | Base generativa texto-a-imagen | No disponible | No disponible | No disponible en esta información | No disponible |
 
 No se dispone de parámetros, longitud de contexto ni resultados de benchmarks de ninguno de estos modelos en la información consultada, por lo que la comparación se limita a base, enfoque, tamaño, formato y disponibilidad.
@@ -94,7 +94,7 @@ No se dispone de parámetros, longitud de contexto ni resultados de benchmarks d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-wuji-zib2603-nsfwz-image-base-checkpoint
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-wuji-zib2603-nsfwz-image-base-checkpoint
 - Modelo original en RunningHub: https://www.runninghub.cn/model/public/2032425390123261954
 - Página del autor en RunningHub: https://www.runninghub.cn/user-center/1934265933848289281
 - RunningHub internacional: https://www.runninghub.ai

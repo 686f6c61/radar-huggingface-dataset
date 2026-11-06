@@ -84,7 +84,7 @@ Los datos de benchmarks y de alternativas no están disponibles en la informaci�
 
 | Modelo | Parametros | Codificador de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Zen Image Edit (AiArtLab) | 7.274.869.766 (DiT + adaptador de 158M) | Qwen3.5-0.8B + adaptador interno, 1,7 GB fp16 | qwen-research | HuggingFace, diffusers, ComfyUI; 102 descargas y 17 likes |
+| Zen Image Edit (AiArtLab) | 7.274.869.766 (DiT + adaptador de 158M) | Qwen3.5-0.8B + adaptador interno, 1,7 GB fp16 | qwen-research | Hugging Face, diffusers, ComfyUI; 102 descargas y 17 likes |
 | Qwen-Image-2.1 (modelo base) | DiT de 32 capas, 14,5 GB fp16; total no disponible | Qwen3-VL-8B nativo, 17,5 GB | no disponible en la información proporcionada | checkpoint upstream citado como base |
 | Otras alternativas de edición de imagen | no disponible | no disponible | no disponible | no disponible |
 
@@ -103,7 +103,7 @@ Los datos de benchmarks y de alternativas no están disponibles en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AiArtLab/zen-image-edit
+- Modelo en Hugging Face: https://huggingface.co/AiArtLab/zen-image-edit
 - Demo en Hugging Face Spaces: https://huggingface.co/spaces/AiArtLab/zen-image-edit-demo
 - Licencia (LICENSE en el repositorio): https://huggingface.co/AiArtLab/zen-image-edit/blob/main/LICENSE
 - Organización AiArtLab: https://aiartlab.org/

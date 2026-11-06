@@ -99,6 +99,6 @@ Frente a alternativas de 7B, la ventaja declarada de LFM3-Audio-2B es el menor c
 - Documentacion de LFM: https://docs.liquid.ai/lfm/getting-started/welcome
 - Playground de demostracion: https://playground.liquid.ai/talk
 - Consola / API: https://console.liquid.ai/dashboard
-- Coleccion LFM3 en HuggingFace: https://huggingface.co/collections/LiquidAI/lfm3
+- Coleccion LFM3 en Hugging Face: https://huggingface.co/collections/LiquidAI/lfm3
 - Repositorio de referencia de la familia (banner y assets): https://huggingface.co/LiquidAI/LFM3-1.7B
 - Resultados de la busqueda web: no se han encontrado enlaces tecnicos relevantes sobre este modelo; los resultados devueltos no guardan relacion con el contenido de la ficha.

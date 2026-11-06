@@ -2,7 +2,7 @@
 
 ## Resumen
 
-heru es un modelo de lenguaje de 4.022.468.096 parametros (unos 4B) publicado por el usuario lan121l en HuggingFace bajo licencia MIT. Segun la propia model card, se trata de un producto intermedio del modelo her-4b, es decir, un checkpoint previo al proceso de alineacion, sin RLHF ni tecnicas equivalentes de ajuste por preferencias. El autor lo describe de forma explicita como un modelo de generacion muy inestable, con un seguimiento de instrucciones deficiente y sin ninguna medida de seguridad incorporada.
+heru es un modelo de lenguaje de 4.022.468.096 parametros (unos 4B) publicado por el usuario lan121l en Hugging Face bajo licencia MIT. Segun la propia model card, se trata de un producto intermedio del modelo her-4b, es decir, un checkpoint previo al proceso de alineacion, sin RLHF ni tecnicas equivalentes de ajuste por preferencias. El autor lo describe de forma explicita como un modelo de generacion muy inestable, con un seguimiento de instrucciones deficiente y sin ninguna medida de seguridad incorporada.
 
 El modelo se distribuye principalmente en formato GGUF y su repositorio ocupa 2.5 GB. La finalidad declarada de su publicacion no es el uso directo, sino servir de base para que otros constructores de modelos apliquen su propio proceso de alineacion. El autor advierte que su uso correcto exige un conocimiento tecnico muy elevado y que cualquier consecuencia derivada de la utilizacion del modelo recae sobre el usuario.
 
@@ -65,7 +65,7 @@ Estimaciones basadas en el recuento de parametros (4.022.468.096), no en medicio
   - Cuantizacion Q3: en torno a 2 GB.
 - GPU recomendadas: para FP16, una GPU con 12-16 GB o mas (RTX 4080, RTX 4090, A10G, A100). Para Q4, cualquier GPU con 4-6 GB o superior.
 - Cabe en GPU de consumo: si. Con cuantizacion Q4 es viable en RTX 3060 12 GB, RTX 4060 8 GB o RTX 4090, e incluso en equipos con 6 GB de VRAM usando Q3.
-- Opciones de despliegue: llama.cpp, Ollama, llama-cpp-python y cualquier runtime compatible con GGUF. La etiqueta "endpoints_compatible" sugiere compatibilidad con endpoints de inferencia tipo HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, llama-cpp-python y cualquier runtime compatible con GGUF. La etiqueta "endpoints_compatible" sugiere compatibilidad con endpoints de inferencia tipo Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -95,4 +95,4 @@ Datos de contexto y licencia segun las fichas publicas de cada fabricante; no se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lan121l/heru
+- Hugging Face: https://huggingface.co/lan121l/heru

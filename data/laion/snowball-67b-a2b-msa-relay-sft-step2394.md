@@ -23,7 +23,7 @@ Su relevancia radica en que es un ejemplo de modelo MoE de gran tamano total per
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura de tipo Mixture of Experts con un total de 67B parametros y enrutamiento disperso que activa aproximadamente 2B parametros por token. El tag `grug_moe` de HuggingFace y el tipo de tensor BF16 confirman pesos publicados en precision bfloat16. Durante el fine-tuning el sesgo del router (router bias) se mantuvo congelado, lo que implica que la politica de enrutamiento heredada del modelo base permanecio fija mientras se ajustaban los expertos y el resto de pesos.
+El modelo emplea una arquitectura de tipo Mixture of Experts con un total de 67B parametros y enrutamiento disperso que activa aproximadamente 2B parametros por token. El tag `grug_moe` de Hugging Face y el tipo de tensor BF16 confirman pesos publicados en precision bfloat16. Durante el fine-tuning el sesgo del router (router bias) se mantuvo congelado, lo que implica que la politica de enrutamiento heredada del modelo base permanecio fija mientras se ajustaban los expertos y el resto de pesos.
 
 El entrenamiento se realizo sobre 22.372 trazas de codigo agentico, todas renderizadas exactamente como las sirve el host mini-swe-agent de Harbor. La composicion del dataset incluye 6.040 filas de relevo en tareas de terminal (Qwen3.8-27B tomando el relevo del estudiante 09-21, con los turnos del estudiante enmascarados) y 11.547 trayectorias SWE de microsoft/Orchard generadas por MiniMax-M2.5 (SWE-rebench mas Scale-SWE, licencia MIT), asi como 4.785 trayectorias de Self-Improving-Coding-Agents/SI2CA generadas por Qwen3.5-122B-A10B (SWE-rebench-V2 mas SWE-smith, licencia CC-BY-4.0). Segun la model card, no se incluyo ninguna instancia de SWE-bench Verified ni canarios de benchmark en los datos. La configuracion de entrenamiento fue LR 3e-4, 3 pasadas (2.394 pasos) y 16 secuencias de 65.536 tokens por paso, ejecutado en TACC Horizon.
 
@@ -74,10 +74,10 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| snowball-67b-a2b-msa-relay-sft-step2394 | 67B total / 2B activos | 65.536 tokens | no disponible | HuggingFace |
-| snowball-67b-a2b-relay-sft-a-step246 | 67B | no disponible | no disponible | HuggingFace |
-| snowball-67b-a2b-relay-sft-allkimi-step1203 | 67B total / 2B activos | no disponible | no disponible | HuggingFace |
-| snowball-67b-a2b-sft-ota-rl-r2egym-step30 | 67B | no disponible | no disponible | HuggingFace |
+| snowball-67b-a2b-msa-relay-sft-step2394 | 67B total / 2B activos | 65.536 tokens | no disponible | Hugging Face |
+| snowball-67b-a2b-relay-sft-a-step246 | 67B | no disponible | no disponible | Hugging Face |
+| snowball-67b-a2b-relay-sft-allkimi-step1203 | 67B total / 2B activos | no disponible | no disponible | Hugging Face |
+| snowball-67b-a2b-sft-ota-rl-r2egym-step30 | 67B | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -92,9 +92,9 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/laion/snowball-67b-a2b-msa-relay-sft-step2394
-- HuggingFace (modelo relacionado): https://huggingface.co/laion/snowball-67b-a2b-relay-sft-a-step246
-- HuggingFace (modelo relacionado): https://huggingface.co/laion/snowball-67b-a2b-relay-sft-allkimi-step1203
-- HuggingFace (modelo relacionado): https://huggingface.co/laion/snowball-67b-a2b-sft-ota-rl-r2egym-step30
-- HuggingFace (modelo relacionado): https://huggingface.co/laion/snowball-67b-a2b-rl-r2egym-oldstack-step24
+- Hugging Face (modelo): https://huggingface.co/laion/snowball-67b-a2b-msa-relay-sft-step2394
+- Hugging Face (modelo relacionado): https://huggingface.co/laion/snowball-67b-a2b-relay-sft-a-step246
+- Hugging Face (modelo relacionado): https://huggingface.co/laion/snowball-67b-a2b-relay-sft-allkimi-step1203
+- Hugging Face (modelo relacionado): https://huggingface.co/laion/snowball-67b-a2b-sft-ota-rl-r2egym-step30
+- Hugging Face (modelo relacionado): https://huggingface.co/laion/snowball-67b-a2b-rl-r2egym-oldstack-step24
 - Página de LAION: https://laion.ai/

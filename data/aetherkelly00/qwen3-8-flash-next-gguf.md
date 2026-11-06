@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next es un modelo de lenguaje causal con codificador de vision publicado por el equipo Qwen (Alibaba) como vista previa experimental de la arquitectura que, segun la propia model card, servira de base para Qwen4. La ficha que nos ocupa no es el modelo original, sino la cuantizacion GGUF que el usuario AetherKelly00 ha subido a HuggingFace bajo el identificador AetherKelly00/Qwen3.8-Flash-Next-GGUF, generada con la metodologia Unsloth Dynamic 3.0.
+Qwen3.8-Flash-Next es un modelo de lenguaje causal con codificador de vision publicado por el equipo Qwen (Alibaba) como vista previa experimental de la arquitectura que, segun la propia model card, servira de base para Qwen4. La ficha que nos ocupa no es el modelo original, sino la cuantizacion GGUF que el usuario AetherKelly00 ha subido a Hugging Face bajo el identificador AetherKelly00/Qwen3.8-Flash-Next-GGUF, generada con la metodologia Unsloth Dynamic 3.0.
 
 El modelo combina atencion hibrida (Gated DeltaNet mas Qwen Sparse Attention a nivel de micro-bloque), una capa de embeddings de n-gramas, residuales con puerta (Gated Residual) y una mezcla de expertos de 512 expertos con 10 enrutados mas 1 compartido activados por token. La model card desglosa 125B de parametros en el modelo de lenguaje con 6B activos, mas 51B de embeddings de n-gramas y 4B del modulo MTP; los pesos safetensors del modelo base suman 176.943.899.520 parametros.
 
@@ -105,7 +105,7 @@ Comparativa de rendimiento: no disponible. No se han publicado resultados de ben
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/AetherKelly00/Qwen3.8-Flash-Next-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/AetherKelly00/Qwen3.8-Flash-Next-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Guia de ejecucion de Qwen3.8-Flash-Next en Unsloth: https://unsloth.ai/docs/models/qwen3.8-next
 - Guia de MTP para inferencia mas rapida: https://unsloth.ai/docs/models/qwen3.8-next#mtp-guide

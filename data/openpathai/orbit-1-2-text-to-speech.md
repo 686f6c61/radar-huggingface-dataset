@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Orbit-1.2-text-to-speech es un modelo de síntesis de voz publicado por OpenPathAI en HuggingFace bajo licencia Apache 2.0. El repositorio tiene un tamaño de 2,2 GB y fue creado el 3 de septiembre de 2026, pero la model card no incluye ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso. Tampoco se especifican los idiomas soportados ni el pipeline de inferencia.
+Orbit-1.2-text-to-speech es un modelo de síntesis de voz publicado por OpenPathAI en Hugging Face bajo licencia Apache 2.0. El repositorio tiene un tamaño de 2,2 GB y fue creado el 3 de septiembre de 2026, pero la model card no incluye ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso. Tampoco se especifican los idiomas soportados ni el pipeline de inferencia.
 
 A día de hoy, la información pública disponible es extremadamente limitada: no hay documentación, ejemplos de uso, benchmarks ni comparativas. El modelo parece formar parte de una familia de modelos de OpenPathAI (existe también Orbit-1.2-image), pero no se ha publicado ningún detalle sobre su funcionamiento interno. Por tanto, esta ficha se basa únicamente en los metadatos del repositorio y en la ausencia de información adicional, lo que impide realizar una evaluación técnica rigurosa.
 
@@ -70,6 +70,6 @@ No se dispone de información suficiente para realizar una comparativa. Existen 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OpenPathAI/Orbit-1.2-text-to-speech
+- Repositorio Hugging Face: https://huggingface.co/OpenPathAI/Orbit-1.2-text-to-speech
 - Modelo relacionado (imagen): https://huggingface.co/OpenPathAI/Orbit-1.2-image
 - Repositorio de referencia de TTS (no relacionado directamente): https://github.com/canopyai/Orpheus-TTS

@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento con alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-ua-seed1234-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-ua-seed1234-sft
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (wandb, preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de SFT (wandb): https://wandb.ai/raghav_singhal/1pp-sft

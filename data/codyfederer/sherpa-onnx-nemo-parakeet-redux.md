@@ -86,7 +86,7 @@ Nota: los datos de rendimiento comparativo (WER) no estan disponibles en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Codyfederer/sherpa-onnx-nemo-parakeet-redux
+- Repositorio en Hugging Face: https://huggingface.co/Codyfederer/sherpa-onnx-nemo-parakeet-redux
 - Modelo base (version ternaria): https://huggingface.co/moondream/parakeet-redux
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Exportacion ONNX utilizada: https://huggingface.co/eschmidbauer/parakeet-redux-onnx

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Akan4ik/DeepSeek-V4-Flash-0731-FFT-BF16-Cyber es un ajuste fino completo (FFT, por las siglas en ingles de *full fine-tuning*) del modelo deepseek-ai/DeepSeek-V4-Flash-0731, publicado por el usuario Akan4ik en HuggingFace. El modelo declara 304.180.418.494 parametros (unos 304,2 mil millones) segun los metadatos de safetensors, con un repositorio de 166,9 GB. La especializacion es ciberseguridad ofensiva y defensiva: los tags del repositorio incluyen `cybersecurity`, `security-research`, `mechanistic-interpretability`, `refusal-direction` y `abliteration`, y el entrenamiento se apoya en el dataset Akan4ik/offsec-400.
+Akan4ik/DeepSeek-V4-Flash-0731-FFT-BF16-Cyber es un ajuste fino completo (FFT, por las siglas en ingles de *full fine-tuning*) del modelo deepseek-ai/DeepSeek-V4-Flash-0731, publicado por el usuario Akan4ik en Hugging Face. El modelo declara 304.180.418.494 parametros (unos 304,2 mil millones) segun los metadatos de safetensors, con un repositorio de 166,9 GB. La especializacion es ciberseguridad ofensiva y defensiva: los tags del repositorio incluyen `cybersecurity`, `security-research`, `mechanistic-interpretability`, `refusal-direction` y `abliteration`, y el entrenamiento se apoya en el dataset Akan4ik/offsec-400.
 
 El interes del modelo es doble. Por un lado, es un ejemplo de ajuste fino sobre un modelo base de gran tamano (familia DeepSeek V4, arquitectura declarada `deepseek_v4` en transformers) orientado a tareas de seguridad. Por otro, documenta explicitamente tecnicas de ablacion direccional de la direccion de rechazo (*refusal direction*), lo que lo convierte en un caso de estudio para interpretabilidad mecanistica y para el analisis de como se comporta un modelo cuando se atenuan sus mecanismos de negativa.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base o d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Akan4ik/DeepSeek-V4-Flash-0731-FFT-BF16-Cyber
+- Modelo en Hugging Face: https://huggingface.co/Akan4ik/DeepSeek-V4-Flash-0731-FFT-BF16-Cyber
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Version sucesora indicada por el autor: https://huggingface.co/Akan4ik/DeepSeek-V4-Flash-0731-FFT-BF16-Cyber-2.0
 - Dataset de ajuste: https://huggingface.co/datasets/Akan4ik/offsec-400

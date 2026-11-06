@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`grossnex/stephanie` es un adaptador LoRA de generacion de imagenes publicado por el usuario grossnex en HuggingFace. Se trata de un ajuste fino (fine-tuning) sobre el modelo base `krea/Krea-2-Raw`, orientado a la tarea de texto-a-imagen mediante la libreria `diffusers`. Por sus etiquetas (`template:sd-lora`, `diffusers-training`, `lora`), es un complemento que se carga sobre el modelo base y no un modelo autonomo.
+`grossnex/stephanie` es un adaptador LoRA de generacion de imagenes publicado por el usuario grossnex en Hugging Face. Se trata de un ajuste fino (fine-tuning) sobre el modelo base `krea/Krea-2-Raw`, orientado a la tarea de texto-a-imagen mediante la libreria `diffusers`. Por sus etiquetas (`template:sd-lora`, `diffusers-training`, `lora`), es un complemento que se carga sobre el modelo base y no un modelo autonomo.
 
 El repositorio no incluye informacion adicional sobre el dataset de entrenamiento, el numero de pasos, el rango del adaptador ni ejemplos de uso. A fecha de su publicacion (octubre de 2026) acumula 0 descargas y 0 likes, por lo que se trata de un experimento personal o de un artefacto en fase muy temprana, sin validacion publica conocida.
 
@@ -73,5 +73,5 @@ No disponible. No se han localizado en la busqueda modelos comparables de la mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/grossnex/stephanie
+- Repositorio Hugging Face: https://huggingface.co/grossnex/stephanie
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw (referenciado en las etiquetas del repositorio)

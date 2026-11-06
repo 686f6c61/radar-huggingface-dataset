@@ -72,17 +72,17 @@ Rendimiento: 14,7 ms por texto en una GPU de portatil RTX 5070 Ti en bfloat16; u
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; RTX 4090, A100 o H100 quedan sobredimensionadas para este modelo y solo se justifican por volumen de peticiones.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna (RTX 3060 en adelante) e incluso en iGPU con suficiente memoria compartida.
 - CPU: viable para textos cortos (unos 33 ms por texto), adecuado para filtrado de baja latencia sin GPU.
-- Opciones de despliegue: `transformers` con `pipeline`, la libreria `blue-guardian` (`pip install "blue-guardian[model]"`), y servidores de inferencia compatibles con modelos de clasificacion de HuggingFace. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
+- Opciones de despliegue: `transformers` con `pipeline`, la libreria `blue-guardian` (`pip install "blue-guardian[model]"`), y servidores de inferencia compatibles con modelos de clasificacion de Hugging Face. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
 - Latencia y throughput: 14,7 ms por texto en RTX 5070 Ti (bfloat16); 33 ms por texto corto en CPU. El throughput agregado depende del batching y no esta publicado.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Deteccion (2% FP) | Falsos positivos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| blue-guardian-v4 | 307M | 512 tokens | 76,5% | 2,1% | CC BY-SA 4.0 | HuggingFace |
-| ProtectAI deberta-v3-base-prompt-injection-v2 | no disponible en la informacion | no disponible | 83,4% | 0,1% | no disponible en la informacion | HuggingFace |
-| blue-guardian-v3 | mmBERT-base | no disponible | 45,1% | 10,8% | no disponible en la informacion | HuggingFace |
-| blue-guardian-v2 | ModernBERT-base | no disponible | 36,0% | 2,5% | no disponible en la informacion | HuggingFace |
+| blue-guardian-v4 | 307M | 512 tokens | 76,5% | 2,1% | CC BY-SA 4.0 | Hugging Face |
+| ProtectAI deberta-v3-base-prompt-injection-v2 | no disponible en la informacion | no disponible | 83,4% | 0,1% | no disponible en la informacion | Hugging Face |
+| blue-guardian-v3 | mmBERT-base | no disponible | 45,1% | 10,8% | no disponible en la informacion | Hugging Face |
+| blue-guardian-v2 | ModernBERT-base | no disponible | 36,0% | 2,5% | no disponible en la informacion | Hugging Face |
 
 ProtectAI deberta-v3-base-prompt-injection-v2 supera a v4 tanto en deteccion como en falsos positivos segun la propia evaluacion del autor; v4 se posiciona como alternativa multilingue con licencia CC BY-SA 4.0 y con una capa de reglas complementaria en el proyecto Blue Guardian.
 
@@ -99,7 +99,7 @@ ProtectAI deberta-v3-base-prompt-injection-v2 supera a v4 tanto en deteccion com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/niharpatel2545/blue-guardian-v4
+- Modelo en Hugging Face: https://huggingface.co/niharpatel2545/blue-guardian-v4
 - Repositorio del proyecto Blue Guardian: https://github.com/NiharPatel2545/Blue-Guardian
 - Marcas de aprobacion de evaluacion (PASS_MARKS.md): https://github.com/NiharPatel2545/Blue-Guardian/blob/main/PASS_MARKS.md
 - Modelo base jhu-clsp/mmBERT-base: https://huggingface.co/jhu-clsp/mmBERT-base

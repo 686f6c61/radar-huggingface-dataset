@@ -4,7 +4,7 @@
 
 `rubenbalbastre/r2warmup_qwen_qwen2_5_0_5b_instruct_karl_marx` es un adaptador LoRA (librería PEFT) entrenado mediante SFT sobre el modelo base `Qwen/Qwen2.5-0.5B-Instruct`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador en formato safetensors que debe cargarse junto al modelo base para funcionar. El repositorio ocupa 0,2 GB y fue publicado el 24 de septiembre de 2026 por el usuario `rubenbalbastre`, sin descargas ni interacciones registradas en el momento de redactar esta ficha.
 
-El identificador del repositorio (`r2warmup...karl_marx`) y una de las etiquetas del modelo apuntan a una ruta local denominada `machine-unlearning-llm`, lo que sugiere que el adaptador forma parte de un experimento de desaprendizaje automático (machine unlearning) o de ajuste de comportamiento sobre una figura o conjunto de conocimiento concreto. No obstante, la model card publicada es la plantilla por defecto de HuggingFace y no contiene ninguna confirmación de estos extremos, por lo que esa interpretación es solo inferencial.
+El identificador del repositorio (`r2warmup...karl_marx`) y una de las etiquetas del modelo apuntan a una ruta local denominada `machine-unlearning-llm`, lo que sugiere que el adaptador forma parte de un experimento de desaprendizaje automático (machine unlearning) o de ajuste de comportamiento sobre una figura o conjunto de conocimiento concreto. No obstante, la model card publicada es la plantilla por defecto de Hugging Face y no contiene ninguna confirmación de estos extremos, por lo que esa interpretación es solo inferencial.
 
 La relevancia de esta ficha es fundamentalmente metodológica: sirve como ejemplo de adaptador LoRA de investigación sobre un modelo pequeño (0,5B parámetros), útil para reproducir pipelines de SFT con TRL/PEFT, para probar técnicas de desaprendizaje y para validar infraestructura de despliegue antes de escalar a modelos mayores. Al no existir documentación de entrenamiento, evaluación ni licencia, no es apto para uso en producción sin una verificación previa por parte de quien lo adopte.
 
@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Qwen2.5-0.5B-Instruct) | Adaptador LoRA sobre 0,49B | No confirmado (32.768 en el base) | No disponible | HuggingFace, 0 descargas | Pesos de adaptador safetensors; requiere el modelo base |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,49B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado | Modelo base de referencia; incluye tool calling y soporte multilingüe |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache 2.0 | HuggingFace | Mismo tokenizador y familia; mejor calidad de razonamiento a cambio de más VRAM |
-| HuggingFaceTB/SmolLM2-360M-Instruct | 0,36B | 8.192 tokens | Apache 2.0 | HuggingFace | Alternativa de tamaño similar orientada a dispositivos de borde |
-| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1B | 2.048 tokens | Apache 2.0 | HuggingFace | Contexto mucho menor; familia distinta (arquitectura Llama) |
+| Este adaptador (sobre Qwen2.5-0.5B-Instruct) | Adaptador LoRA sobre 0,49B | No confirmado (32.768 en el base) | No disponible | Hugging Face, 0 descargas | Pesos de adaptador safetensors; requiere el modelo base |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,49B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado | Modelo base de referencia; incluye tool calling y soporte multilingüe |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache 2.0 | Hugging Face | Mismo tokenizador y familia; mejor calidad de razonamiento a cambio de más VRAM |
+| HuggingFaceTB/SmolLM2-360M-Instruct | 0,36B | 8.192 tokens | Apache 2.0 | Hugging Face | Alternativa de tamaño similar orientada a dispositivos de borde |
+| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1B | 2.048 tokens | Apache 2.0 | Hugging Face | Contexto mucho menor; familia distinta (arquitectura Llama) |
 
 Los datos de los modelos comparados provienen de su documentación pública y pueden variar; no se han verificado en el contexto de este repositorio.
 
@@ -91,7 +91,7 @@ Los datos de los modelos comparados provienen de su documentación pública y pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rubenbalbastre/r2warmup_qwen_qwen2_5_0_5b_instruct_karl_marx
+- Modelo en Hugging Face: https://huggingface.co/rubenbalbastre/r2warmup_qwen_qwen2_5_0_5b_instruct_karl_marx
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Paper referenciado en la model card: https://arxiv.org/abs/2608.17804
 - Librería PEFT: https://github.com/huggingface/peft

@@ -85,11 +85,11 @@ La variante de 8 bits del mismo modelo es la alternativa recomendada cuando se r
 
 ## Enlaces
 
-- [HuggingFace: mlx-community/SenseNova-U1.5-8B-MoT-8step-4bit](https://huggingface.co/mlx-community/SenseNova-U1.5-8B-MoT-8step-4bit)
-- [HuggingFace: sensenova/SenseNova-U1.5-8B-MoT (original)](https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT)
-- [HuggingFace: sensenova/SenseNova-U1-8B-MoT](https://huggingface.co/sensenova/SenseNova-U1-8B-MoT)
+- [Hugging Face: mlx-community/SenseNova-U1.5-8B-MoT-8step-4bit](https://huggingface.co/mlx-community/SenseNova-U1.5-8B-MoT-8step-4bit)
+- [Hugging Face: sensenova/SenseNova-U1.5-8B-MoT (original)](https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT)
+- [Hugging Face: sensenova/SenseNova-U1-8B-MoT](https://huggingface.co/sensenova/SenseNova-U1-8B-MoT)
 - [Paper: SenseNova-U1 (arXiv 2605.12500)](https://arxiv.org/abs/2605.12500)
 - [GitHub: OpenSenseNova/SenseNova-U1 (implementacion de referencia)](https://github.com/OpenSenseNova/SenseNova-U1)
 - [GitHub: xocialize/sensenova-u1-swift (runtime MLX)](https://github.com/xocialize/sensenova-u1-swift)
 - [ModelScope: SenseNova-U1.5-8B-MoT](https://www.modelscope.cn/models/SenseNova/SenseNova-U1.5-8B-MoT)
-- [HuggingFace: SceneWorks/sensenova-u1-8b-fast-mlx](https://huggingface.co/SceneWorks/sensenova-u1-8b-fast-mlx)
+- [Hugging Face: SceneWorks/sensenova-u1-8b-fast-mlx](https://huggingface.co/SceneWorks/sensenova-u1-8b-fast-mlx)

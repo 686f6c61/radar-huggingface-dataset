@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EtuhE/igala-mt-first es un modelo de traduccion automatica presentado por su autor, EtuhE, como el primer modelo abierto de traduccion entre igala e ingles. El igala es una lengua nigercongolesa hablada principalmente en el estado de Kogi (Nigeria), con muy poca presencia en recursos computacionales, por lo que se enmarca dentro de la categoria de lenguas de bajos recursos. El modelo se publica en HuggingFace bajo licencia MIT y con la etiqueta de idioma `igl`.
+EtuhE/igala-mt-first es un modelo de traduccion automatica presentado por su autor, EtuhE, como el primer modelo abierto de traduccion entre igala e ingles. El igala es una lengua nigercongolesa hablada principalmente en el estado de Kogi (Nigeria), con muy poca presencia en recursos computacionales, por lo que se enmarca dentro de la categoria de lenguas de bajos recursos. El modelo se publica en Hugging Face bajo licencia MIT y con la etiqueta de idioma `igl`.
 
 El unico dato de rendimiento publicado por el autor es un BLEU de 11,66 y un chrF de 46,69, obtenidos sobre un conjunto de 899 frases procedentes del corpus IgalaNLP4D. La model card describe el entrenamiento como convergido en torno a la epoca 8-10, con sobreajuste a partir de la epoca 15. No se especifica la arquitectura subyacente, el numero de parametros ni la longitud de contexto.
 
@@ -30,7 +30,7 @@ En cuanto a los datos, el autor declara un corpus de 899 frases procedentes de I
 ## Capacidades
 
 - Traduccion de texto entre igala e ingles (direccion exacta no especificada en la informacion disponible).
-- Integracion directa con la API `pipeline("translation")` de HuggingFace Transformers.
+- Integracion directa con la API `pipeline("translation")` de Hugging Face Transformers.
 - Ejemplo de uso documentado: la entrada "Good morning" se traduce como "wola odudu".
 - Al tratarse de un modelo mono-par y de bajos recursos, no se documentan capacidades de generacion abierta, razonamiento, codigo, matematicas ni vision.
 - No se documenta soporte de tool calling, function calling ni comportamiento agentico.
@@ -90,5 +90,5 @@ No se dispone de datos comparativos en la informacion proporcionada. No se han p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EtuhE/igala-mt-first
+- Modelo en Hugging Face: https://huggingface.co/EtuhE/igala-mt-first
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a papers asociados ni a demos. Los resultados de la busqueda web consultada no guardan relacion con el modelo y se han descartado.

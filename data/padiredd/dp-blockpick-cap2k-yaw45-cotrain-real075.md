@@ -63,16 +63,16 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / horizonte | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp-blockpick-cap2k-yaw45-cotrain-real075 | 287,5 M | 64 pasos, 32 ejecutados | 2.000 sim (code-as-policy) + 14 reales, alpha 0,75 real | other | HuggingFace, repo de 11,5 GB con 10 checkpoints |
-| padiredd/dp-blockpick-yaw45-2k | no disponible | no disponible | 2.000 sim generadas por planificador de movimiento, mismas semillas y aleatorización | no disponible | HuggingFace |
-| Políticas de difusión genéricas de LeRobot | variable según configuración | configurable | datasets propios | según configuración | HuggingFace / LeRobot |
+| dp-blockpick-cap2k-yaw45-cotrain-real075 | 287,5 M | 64 pasos, 32 ejecutados | 2.000 sim (code-as-policy) + 14 reales, alpha 0,75 real | other | Hugging Face, repo de 11,5 GB con 10 checkpoints |
+| padiredd/dp-blockpick-yaw45-2k | no disponible | no disponible | 2.000 sim generadas por planificador de movimiento, mismas semillas y aleatorización | no disponible | Hugging Face |
+| Políticas de difusión genéricas de LeRobot | variable según configuración | configurable | datasets propios | según configuración | Hugging Face / LeRobot |
 
 La comparación directa más informativa es con `padiredd/dp-blockpick-yaw45-2k`, del mismo autor: comparte semillas, colocaciones de bloque, región, ciclado de altura de mesa y aleatorización dr2, y difiere únicamente en el generador de demostraciones (planificador de movimiento frente a programa code-as-policy) y en la incorporación de los 14 episodios reales con co-entrenamiento. No se dispone de cifras de rendimiento para ninguno de los dos.
 
 ## Limitaciones y advertencias
 
 - Modelo específico de una única tarea y un único robot: no generaliza a otras tareas, objetos, brazos ni plataformas sin reentrenamiento.
-- El dataset simulado (`pick-cube-cap2k-v0-yaw45-full-dr2-3cam`) no está publicado en HuggingFace, lo que dificulta la reproducción exacta del entrenamiento.
+- El dataset simulado (`pick-cube-cap2k-v0-yaw45-full-dr2-3cam`) no está publicado en Hugging Face, lo que dificulta la reproducción exacta del entrenamiento.
 - Solo 14 episodios reales (2.653 fotogramas) frente a 2.000 simulados; el co-entrenamiento con alpha 0,75 mitiga pero no elimina el riesgo de sobreajuste al dominio real escaso.
 - La model card no reporta ninguna evaluación: no hay tasas de éxito en simulación ni en hardware real, por lo que el rendimiento real es desconocido.
 - Licencia "other": no se detallan términos de uso comercial; es necesario contactar con el autor o revisar el repositorio antes de cualquier despliegue productivo.
@@ -83,7 +83,7 @@ La comparación directa más informativa es con `padiredd/dp-blockpick-yaw45-2k`
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/dp-blockpick-cap2k-yaw45-cotrain-real075
+- Modelo en Hugging Face: https://huggingface.co/padiredd/dp-blockpick-cap2k-yaw45-cotrain-real075
 - Modelo comparable del mismo autor: https://huggingface.co/padiredd/dp-blockpick-yaw45-2k
 - Dataset real de teleoperación citado: https://huggingface.co/omkarpatil/pick-lime-block
 - LeRobot (framework base): https://github.com/huggingface/lerobot

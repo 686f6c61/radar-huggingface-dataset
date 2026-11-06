@@ -4,7 +4,7 @@
 
 Audio8-TTS-Preview-0.6b es un modelo de síntesis de voz (text-to-speech) multilingüe de 0.6 mil millones de parámetros desarrollado por Audio8, diseñado para generar habla natural y realizar clonación de voz en modo zero-shot. El modelo emplea una arquitectura DualAR (dos transformers autorregresivos) inspirada en Fish Audio S2 Pro: un transformer lento predice un token semántico por cada frame de audio, mientras que un transformer rápido predice los codebooks del codec neuronal condicionado al estado oculto del primero y a los codebooks anteriores. Esta separación permite una síntesis eficiente y de alta calidad con un tamaño compacto.
 
-El modelo se distribuye bajo licencia Apache 2.0 (según los tags de HuggingFace) e incluye soporte para al menos once idiomas: cantonés, chino, neerlandés, inglés, francés, alemán, italiano, japonés, coreano, polaco y español. Además del checkpoint original en safetensors, se publica una versión ONNX cuantizada a INT4 orientada a despliegue en CPU, lo que facilita su integración en entornos sin GPU dedicada. Con más de 15.000 descargas y 348 likes en HuggingFace, el modelo ha despertado interés en la comunidad por su equilibrio entre tamaño reducido y capacidades avanzadas de clonación vocal.
+El modelo se distribuye bajo licencia Apache 2.0 (según los tags de Hugging Face) e incluye soporte para al menos once idiomas: cantonés, chino, neerlandés, inglés, francés, alemán, italiano, japonés, coreano, polaco y español. Además del checkpoint original en safetensors, se publica una versión ONNX cuantizada a INT4 orientada a despliegue en CPU, lo que facilita su integración en entornos sin GPU dedicada. Con más de 15.000 descargas y 348 likes en Hugging Face, el modelo ha despertado interés en la comunidad por su equilibrio entre tamaño reducido y capacidades avanzadas de clonación vocal.
 
 La relevancia actual de este modelo radica en su propuesta de TTS multilingüe de código abierto con clonación zero-shot a escala compacta, un nicho donde predominan soluciones propietarias o modelos de mayor tamaño. Su arquitectura DualAR y la disponibilidad de una variante ONNX INT4 lo convierten en una opción atractiva para desarrolladores que necesitan síntesis de voz personalizable en producción con requisitos de hardware moderados.
 
@@ -18,7 +18,7 @@ La relevancia actual de este modelo radica en su propuesta de TTS multilingüe d
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | INT4 (ONNX), FP16 (codec y encoder) |
 | Idiomas soportados | cantonés (yue), chino (zh), neerlandés (nl), inglés (en), francés (fr), alemán (de), italiano (it), japonés (ja), coreano (ko), polaco (pl), español (es) |
-| Licencia | Apache 2.0 (según tags de HuggingFace; el campo de licencia en la página indica "no disponible") |
+| Licencia | Apache 2.0 (según tags de Hugging Face; el campo de licencia en la página indica "no disponible") |
 | Formato de pesos | safetensors, ONNX (INT4) |
 
 ## Arquitectura y entrenamiento
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La p�
 - Dado el tamaño de 0.6 mil millones de parámetros, es razonable esperar que la versión FP16 quepa en GPUs de consumo con al menos 4-6 GB de VRAM, pero esta estimación no está confirmada por el autor.
 - La versión ONNX INT4 está diseñada específicamente para inferencia en CPU, lo que permite ejecutar el modelo en hardware sin GPU dedicada.
 - No se han publicado datos de latencia ni throughput para ninguna de las variantes.
-- Opciones de despliegue: el repositorio de GitHub proporciona herramientas de inferencia y código remoto para HuggingFace Transformers. La variante ONNX puede integrarse en entornos que soporten el runtime de ONNX. No se menciona soporte explícito para vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: el repositorio de GitHub proporciona herramientas de inferencia y código remoto para Hugging Face Transformers. La variante ONNX puede integrarse en entornos que soporten el runtime de ONNX. No se menciona soporte explícito para vLLM, llama.cpp u Ollama.
 
 ## Comparativa con modelos similares
 
@@ -67,14 +67,14 @@ No se dispone de comparativas publicadas en la informacion disponible. El modelo
 - No se han publicado estudios de sesgos o comportamientos discriminatorios; como todo modelo de síntesis de voz, puede reflejar sesgos presentes en los datos de entrenamiento.
 - Riesgo de alucinación fonética: en idiomas con ortografía irregular o nombres propios poco comunes, el modelo puede producir pronunciaciones incorrectas.
 - La clonación de voz zero-shot puede fallar con voces muy atípicas o con muestras de referencia de baja calidad o corta duración.
-- La licencia Apache 2.0 permite uso comercial, pero el campo de licencia en la página de HuggingFace aparece como "no disponible", por lo que se recomienda verificar los términos en el repositorio oficial antes de un despliegue en producción.
+- La licencia Apache 2.0 permite uso comercial, pero el campo de licencia en la página de Hugging Face aparece como "no disponible", por lo que se recomienda verificar los términos en el repositorio oficial antes de un despliegue en producción.
 - No se especifica la longitud máxima de texto soportada por inferencia; textos muy largos pueden requerir segmentación.
 - La variante ONNX INT4 puede presentar una degradación de calidad perceptible en comparación con los pesos en FP16, especialmente en tonos o acentos complejos.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6b)
+- [Modelo en Hugging Face](https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6b)
 - [Repositorio GitHub](https://github.com/Audio8-AI/Audio8_TTS)
-- [Variante ONNX INT4 en HuggingFace](https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6B-ONNX-INT4)
+- [Variante ONNX INT4 en Hugging Face](https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6B-ONNX-INT4)
 - [Ficha en awesome-ai-voice](https://github.com/wildminder/awesome-ai-voice/blob/main/models/audio8-tts-preview-0-6b.md)
 - [Página de listening preview](https://audio8-ai.github.io/Audio8_TTS/)

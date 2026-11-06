@@ -79,7 +79,7 @@ No se dispone de información sobre modelos directamente comparables en el repos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DHDRL/monsoon-rl
+- Modelo en Hugging Face: https://huggingface.co/DHDRL/monsoon-rl
 - Datasets del autor: https://huggingface.co/DHDRL/datasets
 - Repositorio de código: no disponible en la información proporcionada
 - Paper: no disponible en la información proporcionada

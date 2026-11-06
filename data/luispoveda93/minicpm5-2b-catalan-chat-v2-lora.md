@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM5-2B-catalan-chat-v2-lora es un ajuste fino supervisado (SFT) del modelo luispoveda93/MiniCPM5-2B-catalan-chat, publicado por el usuario luispoveda93 en HuggingFace. Se trata de un modelo conversacional orientado al catalán, construido sobre lo que la nomenclatura identifica como una base MiniCPM de aproximadamente 2.000 millones de parámetros, aunque la model card no confirma el recuento exacto ni la arquitectura interna. El entrenamiento se ha realizado con la librería TRL (versión 1.12.0) sobre Transformers 5.16.1 y PyTorch 2.14.0.
+MiniCPM5-2B-catalan-chat-v2-lora es un ajuste fino supervisado (SFT) del modelo luispoveda93/MiniCPM5-2B-catalan-chat, publicado por el usuario luispoveda93 en Hugging Face. Se trata de un modelo conversacional orientado al catalán, construido sobre lo que la nomenclatura identifica como una base MiniCPM de aproximadamente 2.000 millones de parámetros, aunque la model card no confirma el recuento exacto ni la arquitectura interna. El entrenamiento se ha realizado con la librería TRL (versión 1.12.0) sobre Transformers 5.16.1 y PyTorch 2.14.0.
 
 El problema que aborda es la escasez de modelos conversacionales ligeros y específicos para catalán, un idioma con menos recursos que el castellano o el inglés en el ecosistema open source. Al partir de una base de ~2B, el modelo apunta a escenarios de despliegue en hardware modesto, donde un modelo mayor resultaría inviable por coste de VRAM o latencia.
 
@@ -70,7 +70,7 @@ Todas las cifras de esta seccion son estimaciones derivadas del supuesto de un m
 - VRAM estimada para inferencia: en FP16 aproximadamente 4-5 GB para los pesos, mas la cache KV; en carga de 8 bits en torno a 2,5-3 GB; en 4 bits en torno a 1,5-2 GB. Estas cifras asumen pesos completos de 2B y no aplican si el repositorio contiene unicamente adaptadores LoRA, en cuyo caso habria que sumar la VRAM del modelo base.
 - GPU recomendadas: para produccion con margen, A100 40 GB, H100 o L40S; para desarrollo y cargas pequenas, RTX 4090, RTX 3090 o RTX A6000.
 - GPU de consumo: si se confirma el tamano de ~2B, el modelo deberia caber en GPUs de consumo con 8 GB o mas de VRAM (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090) en FP16, y con 4-6 GB en cuantizacion de 4 bits. No hay confirmacion experimental.
-- Opciones de despliegue: transformers de forma nativa (es la libreria declarada). vLLM y TGI son viables si el artefacto es un modelo completo en safetensors. llama.cpp y Ollama requeririan convertir los pesos a GGUF, ya que el repositorio no publica cuantizaciones GGUF. El tag `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de HuggingFace.
+- Opciones de despliegue: transformers de forma nativa (es la libreria declarada). vLLM y TGI son viables si el artefacto es un modelo completo en safetensors. llama.cpp y Ollama requeririan convertir los pesos a GGUF, ya que el repositorio no publica cuantizaciones GGUF. El tag `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia de primera respuesta.
 
 ## Comparativa con modelos similares
@@ -92,11 +92,11 @@ No se dispone de datos verificados en la informacion proporcionada para construi
 - Naturaleza del artefacto: el identificador "-lora" y los 0,2 GB de repositorio apuntan a adaptadores, pero no esta confirmado. Si es un adaptador, es obligatorio cargarlo junto con luispoveda93/MiniCPM5-2B-catalan-chat y hay que verificar la compatibilidad entre la version del adaptador y la del modelo base.
 - Trazabilidad: el modelo base es a su vez un ajuste publicado por el mismo autor, con su propia model card no incluida en esta ficha. La cadena completa de entrenamiento no esta verificada de forma independiente.
 - Madurez: cero descargas y cero likes en el momento de la consulta, sin comunidad que haya validado el comportamiento del modelo.
-- Fechas: las marcas temporales del repositorio (2026-09-10) son posteriores a la fecha habitual de referencia de este analisis y deben confirmarse directamente en HuggingFace.
+- Fechas: las marcas temporales del repositorio (2026-09-10) son posteriores a la fecha habitual de referencia de este analisis y deben confirmarse directamente en Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luispoveda93/MiniCPM5-2B-catalan-chat-v2-lora
+- Modelo en Hugging Face: https://huggingface.co/luispoveda93/MiniCPM5-2B-catalan-chat-v2-lora
 - Modelo base: https://huggingface.co/luispoveda93/MiniCPM5-2B-catalan-chat
 - Registro de entrenamiento en Trackio: https://luispoveda93-minicpm5-2b-catalan-chat-v2-trackio.hf.space?project=minicpm5-2b-catalan-chat-v2&runs=luispoveda93-1789025550&sidebar=collapsed
 - Repositorio de TRL: https://github.com/huggingface/trl

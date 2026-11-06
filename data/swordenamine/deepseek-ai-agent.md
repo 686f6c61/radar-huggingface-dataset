@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `swordenamine/deepseek-ai-agent` no es un modelo de lenguaje: es un artefacto publicado en HuggingFace que contiene la documentación de un cliente de línea de comandos escrito en Bash (`deepseek-ai-agent.sh`) cuya función es enviar consultas a la API alojada de DeepSeek mediante `curl` y formatear la respuesta JSON con `jq`. No incluye pesos, tokenizador, configuración de arquitectura ni código de inferencia; por tanto, ninguna de las magnitudes habituales de una ficha de modelo (parámetros, contexto, cuantizaciones) puede medirse sobre este repositorio.
+El repositorio `swordenamine/deepseek-ai-agent` no es un modelo de lenguaje: es un artefacto publicado en Hugging Face que contiene la documentación de un cliente de línea de comandos escrito en Bash (`deepseek-ai-agent.sh`) cuya función es enviar consultas a la API alojada de DeepSeek mediante `curl` y formatear la respuesta JSON con `jq`. No incluye pesos, tokenizador, configuración de arquitectura ni código de inferencia; por tanto, ninguna de las magnitudes habituales de una ficha de modelo (parámetros, contexto, cuantizaciones) puede medirse sobre este repositorio.
 
 El autor declara soporte para los identificadores de modelo `deepseek-chat` y `deepseek-coder` de la plataforma de DeepSeek, modo interactivo multiturno, consultas de un solo disparo, configuración mediante fichero `.env` y parámetros de `temperature` (0.0-2.0) y `max_tokens`. La única dependencia de ejecución son `curl`, `jq` y un intérprete Bash; el README incluye además un Dockerfile basado en `alpine:latest` y ejemplos de integración con CrewAI y GitHub Actions.
 
-Su relevancia práctica es marginal como objeto de evaluación: registra 0 descargas y 0 likes, solo tiene la etiqueta `region:us`, y los metadatos de HuggingFace son incoherentes (fecha de creación 2026-10-17 posterior a la de actualización 2026-02-15; licencia "no disponible" en el metadato frente a MIT en el README; la URL de GitHub del README apunta al usuario `swordenkisk`, distinto del usuario de HuggingFace `swordenamine`). Cualquier capacidad de generación de texto, razonamiento o código que se observe al usarlo procede de los modelos remotos de DeepSeek, no de este repositorio.
+Su relevancia práctica es marginal como objeto de evaluación: registra 0 descargas y 0 likes, solo tiene la etiqueta `region:us`, y los metadatos de Hugging Face son incoherentes (fecha de creación 2026-10-17 posterior a la de actualización 2026-02-15; licencia "no disponible" en el metadato frente a MIT en el README; la URL de GitHub del README apunta al usuario `swordenkisk`, distinto del usuario de Hugging Face `swordenamine`). Cualquier capacidad de generación de texto, razonamiento o código que se observe al usarlo procede de los modelos remotos de DeepSeek, no de este repositorio.
 
 ## Especificaciones tecnicas
 
@@ -18,14 +18,14 @@ Su relevancia práctica es marginal como objeto de evaluación: registra 0 desca
 | Longitud de contexto | no disponible; el wrapper solo expone un límite de tokens de salida (`MAX_TOKENS=4096` por defecto, ampliable por CLI) |
 | Tipos de cuantizacion | no disponible (no se distribuyen pesos) |
 | Idiomas soportados | no disponible; dependen del modelo de DeepSeek invocado a través de la API |
-| Licencia | MIT según el README del autor; el metadato de HuggingFace indica "no disponible" |
+| Licencia | MIT según el README del autor; el metadato de Hugging Face indica "no disponible" |
 | Formato de pesos | no contiene pesos; el artefacto es un script Bash, un `.env.example` y un Dockerfile |
 | Tipo de artefacto | cliente CLI / wrapper de API (no modelo) |
 | Modelos invocados | `deepseek-chat` y `deepseek-coder` (API de DeepSeek) |
 | Dependencias de ejecucion | `curl`, `jq`, Bash; opcionalmente Docker |
 | Interfaz | linea de comandos: modo interactivo y consulta unica; flags `-m/--model`, `-t/--tokens`, `-T/--temperature`, `-h/--help` |
 | Configuracion | fichero `.env` con `DEEPSEEK_API_KEY`, `DEEPSEEK_MODEL`, `MAX_TOKENS`, `TEMPERATURE` |
-| Autor | swordenamine (HuggingFace) |
+| Autor | swordenamine (Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -88,8 +88,8 @@ Diferencias cualitativas relevantes: las alternativas con mayor adopción ofrece
 - Dependencia total de un servicio de terceros: sin clave de API válida y sin conectividad, el script no produce ninguna salida; cambios de precios, cuotas o deprecación de los identificadores `deepseek-chat`/`deepseek-coder` rompen la herramienta.
 - Riesgo de alucinación heredado íntegramente de los modelos remotos; el wrapper no incorpora verificación, citas ni filtros.
 - Idiomas y calidad multilingüe no documentados; dependen del modelo subyacente y de la configuración de la API.
-- Licencia ambigua: el README declara MIT, pero el metadato de HuggingFace indica "no disponible"; antes de uso comercial conviene confirmar el fichero LICENSE del repositorio real. El uso de la API de DeepSeek se rige además por sus propios términos, ajenos a la licencia del script.
-- Inconsistencias de metadatos y documentación: fecha de creación posterior a la de actualización, usuario de GitHub (`swordenkisk`) distinto del de HuggingFace (`swordenamine`), y ausencia de fichero de pesos o de tarjeta de modelo convencional.
+- Licencia ambigua: el README declara MIT, pero el metadato de Hugging Face indica "no disponible"; antes de uso comercial conviene confirmar el fichero LICENSE del repositorio real. El uso de la API de DeepSeek se rige además por sus propios términos, ajenos a la licencia del script.
+- Inconsistencias de metadatos y documentación: fecha de creación posterior a la de actualización, usuario de GitHub (`swordenkisk`) distinto del de Hugging Face (`swordenamine`), y ausencia de fichero de pesos o de tarjeta de modelo convencional.
 - Superficie de seguridad: la clave se almacena en un `.env` en claro; el README afirma que está ignorado por Git, pero no se aporta `.gitignore` verificable ni gestión de secretos. El escapado manual de JSON en Bash es propenso a errores con entradas que contengan comillas o caracteres de control.
 - Sin tests, sin versionado, sin historial de mantenimiento y con 0 descargas: riesgo alto de abandono y de que el proyecto no reciba correcciones.
 - El README contiene emojis y afirmaciones de marketing ("production ready", "zero-trust") no respaldadas por artefactos verificables en el repositorio.
@@ -97,8 +97,8 @@ Diferencias cualitativas relevantes: las alternativas con mayor adopción ofrece
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/swordenamine/deepseek-ai-agent
-- Repositorio GitHub citado en el README (usuario distinto al de HuggingFace, no verificado): https://github.com/swordenkisk/deepseek-ai-agent
+- Hugging Face: https://huggingface.co/swordenamine/deepseek-ai-agent
+- Repositorio GitHub citado en el README (usuario distinto al de Hugging Face, no verificado): https://github.com/swordenkisk/deepseek-ai-agent
 - Plataforma y obtención de clave de API de DeepSeek: https://platform.deepseek.com/
 - CrewAI (mencionado en los ejemplos de integración, sin URL en la información disponible)
 - GitHub Actions (mencionado en los ejemplos de integración, sin URL en la información disponible)

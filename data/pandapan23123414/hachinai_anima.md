@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Hachinai_Anima` es un repositorio publicado en HuggingFace por el usuario `pandapan23123414` que, a fecha de la informacion disponible, no incluye model card, pipeline declarado, licencia, idiomas ni ningun otro metadato tecnico mas alla de la etiqueta `region:us`. El repositorio ocupa 4,3 GB, un dato que permite acotar el orden de magnitud de los pesos, pero no determinar la arquitectura, el numero de parametros ni el proposito del modelo.
+`Hachinai_Anima` es un repositorio publicado en Hugging Face por el usuario `pandapan23123414` que, a fecha de la informacion disponible, no incluye model card, pipeline declarado, licencia, idiomas ni ningun otro metadato tecnico mas alla de la etiqueta `region:us`. El repositorio ocupa 4,3 GB, un dato que permite acotar el orden de magnitud de los pesos, pero no determinar la arquitectura, el numero de parametros ni el proposito del modelo.
 
 No es posible afirmar que el artefacto sea un modelo de lenguaje: la ausencia de `pipeline_tag` impide clasificarlo como text-generation, image-text-to-text, feature-extraction u otra categoria, y tampoco hay informacion sobre el proceso de entrenamiento, los datos utilizados o si existen etapas de alineacion (RLHF, DPO). El unico indicio de actividad son 1 like y 0 descargas, lo que sugiere que el repositorio no ha sido validado por terceros.
 
@@ -100,7 +100,7 @@ No disponible. La comparativa requiere conocer al menos el numero de parametros,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pandapan23123414/Hachinai_Anima
+- Repositorio en Hugging Face: https://huggingface.co/pandapan23123414/Hachinai_Anima
 - Paper tecnico: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

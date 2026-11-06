@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zeyad/allam-7b-saudi-sft | 7B (base) + LoRA r16 | no disponible | SFT dialectal saudí sobre ALLaM | Apache 2.0 | Adaptador PEFT en HuggingFace |
-| humain-ai/ALLaM-7B-Instruct-preview | 7B | no disponible | LLM árabe-inglés instruction-tuned | no disponible en la información | Pesos completos en HuggingFace |
-| Jais-13B / Jais-family (Inception/G42/Core42) | 13B | 2048 (versiones iniciales) | LLM árabe-inglés | Apache 2.0 (family) | Pesos completos en HuggingFace |
-| AceGPT-7B / 13B (FreedomIntelligence) | 7B/13B | 4096 | LLM árabe con adaptación cultural | Apache 2.0 | Pesos completos en HuggingFace |
+| Zeyad/allam-7b-saudi-sft | 7B (base) + LoRA r16 | no disponible | SFT dialectal saudí sobre ALLaM | Apache 2.0 | Adaptador PEFT en Hugging Face |
+| humain-ai/ALLaM-7B-Instruct-preview | 7B | no disponible | LLM árabe-inglés instruction-tuned | no disponible en la información | Pesos completos en Hugging Face |
+| Jais-13B / Jais-family (Inception/G42/Core42) | 13B | 2048 (versiones iniciales) | LLM árabe-inglés | Apache 2.0 (family) | Pesos completos en Hugging Face |
+| AceGPT-7B / 13B (FreedomIntelligence) | 7B/13B | 4096 | LLM árabe con adaptación cultural | Apache 2.0 | Pesos completos en Hugging Face |
 
 La comparación es orientativa: el adaptador de Zeyad no es directamente equivalente a un modelo completo, ya que depende del base ALLaM y no se han publicado métricas que permitan situarlo frente a Jais o AceGPT en tareas estándar.
 
@@ -89,7 +89,7 @@ La comparación es orientativa: el adaptador de Zeyad no es directamente equival
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Zeyad/allam-7b-saudi-sft
+- Hugging Face del adaptador: https://huggingface.co/Zeyad/allam-7b-saudi-sft
 - Modelo base: https://huggingface.co/humain-ai/ALLaM-7B-Instruct-preview
 - Revisión fijada del base: `a28dd1e67420cde72d3629c8633a974cf7d9c366`
 - Recetario de entrenamiento: `training_recipe.json` (incluido en el repositorio)

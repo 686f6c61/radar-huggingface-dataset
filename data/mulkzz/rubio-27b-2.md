@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RuBio-27B (publicado en HuggingFace como `mulkzz/RuBio-27B`, aunque la model card lo titula "Rubio-27B") es un ajuste fino del modelo base Qwen/Qwen3.8-27B orientado a una tarea muy concreta: la evaluacion y el feedback de respuestas descriptivas de estudiantes de bachillerato en la asignatura de Biologia (curriculo surcoreano de 2022, unidades I-III). El modelo recibe como entrada un JSON estructurado con el enunciado, los materiales, la rubrica de evaluacion, las evidencias del libro de texto, las concepciones erroneas candidatas, una respuesta de referencia y el historial de conversacion, y devuelve un unico objeto JSON con el diagnostico por criterio y un feedback breve en coreano para el estudiante.
+RuBio-27B (publicado en Hugging Face como `mulkzz/RuBio-27B`, aunque la model card lo titula "Rubio-27B") es un ajuste fino del modelo base Qwen/Qwen3.8-27B orientado a una tarea muy concreta: la evaluacion y el feedback de respuestas descriptivas de estudiantes de bachillerato en la asignatura de Biologia (curriculo surcoreano de 2022, unidades I-III). El modelo recibe como entrada un JSON estructurado con el enunciado, los materiales, la rubrica de evaluacion, las evidencias del libro de texto, las concepciones erroneas candidatas, una respuesta de referencia y el historial de conversacion, y devuelve un unico objeto JSON con el diagnostico por criterio y un feedback breve en coreano para el estudiante.
 
 Se trata de un modelo denso de aproximadamente 27.800 millones de parametros (27.781.427.952 segun los pesos en safetensors), obtenido mediante un LoRA en bf16 sobre el modelo base y posteriormente fusionado en un checkpoint completo de 16 bits (unos 54 GB). No requiere cargar el adaptador por separado. El autor lo presenta como la version grande de un modelo hermano, `mulkzz/Rubio-4B`, entrenado con los mismos datos y configuracion.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| RuBio-27B (`mulkzz/RuBio-27B`) | 27,78 B | 4.096 (entrenamiento); 8.192 en ejemplo de servicio | Apache 2.0 | Feedback de Biologia de bachillerato en coreano, salida JSON | HuggingFace, 151 descargas |
-| Rubio-4B (`mulkzz/Rubio-4B`) | no disponible | no disponible | no disponible | Misma tarea, version pequena del mismo autor | HuggingFace; demo en `mulk.codes/rubio` |
-| Qwen/Qwen3.8-27B | 27,78 B (base) | no disponible | no disponible | Modelo generalista base | HuggingFace |
+| RuBio-27B (`mulkzz/RuBio-27B`) | 27,78 B | 4.096 (entrenamiento); 8.192 en ejemplo de servicio | Apache 2.0 | Feedback de Biologia de bachillerato en coreano, salida JSON | Hugging Face, 151 descargas |
+| Rubio-4B (`mulkzz/Rubio-4B`) | no disponible | no disponible | no disponible | Misma tarea, version pequena del mismo autor | Hugging Face; demo en `mulk.codes/rubio` |
+| Qwen/Qwen3.8-27B | 27,78 B (base) | no disponible | no disponible | Modelo generalista base | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mulkzz/RuBio-27B
+- Hugging Face: https://huggingface.co/mulkzz/RuBio-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Version pequena: https://huggingface.co/mulkzz/Rubio-4B
 - Demo del servicio (4B): https://mulk.codes/rubio

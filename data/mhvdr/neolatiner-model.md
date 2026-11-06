@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NeoLatiNER es un modelo de reconocimiento de entidades nombradas (NER) especializado en textos latinos modernos tempranos (siglos XVI-XVIII) procedentes de fuentes de filosofía natural. Ha sido desarrollado por el usuario mhvdr y publicado en HuggingFace con el identificador `mhvdr/neolatiner-model`. El modelo se basa en la arquitectura XLM-RoBERTa-large, ajustada mediante fine-tuning para la tarea de token classification con etiquetas IOB2, y predice tres tipos de entidades: personas (`PRS`), grupos (`GRP`) y localizaciones geográficas (`GEO`).
+NeoLatiNER es un modelo de reconocimiento de entidades nombradas (NER) especializado en textos latinos modernos tempranos (siglos XVI-XVIII) procedentes de fuentes de filosofía natural. Ha sido desarrollado por el usuario mhvdr y publicado en Hugging Face con el identificador `mhvdr/neolatiner-model`. El modelo se basa en la arquitectura XLM-RoBERTa-large, ajustada mediante fine-tuning para la tarea de token classification con etiquetas IOB2, y predice tres tipos de entidades: personas (`PRS`), grupos (`GRP`) y localizaciones geográficas (`GEO`).
 
 Su relevancia radica en que aborda un dominio muy específico y difícil: textos con errores de OCR, variación ortográfica, inflexiones y nombres abreviados propios del latín humanístico. El modelo se ha entrenado con datos anotados manualmente en dos rondas, combinando material de proyectos previos como Herodotos Project y el Corpus Burgundiae Medii Aevi. Está pensado para uso investigador, no para decisiones automatizadas de alto riesgo. El repositorio tiene un tamaño de 2,3 GB y la fecha de creación es agosto de 2026.
 
@@ -77,6 +77,6 @@ No se dispone de informacion sobre modelos comparables en el dominio del NER en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mhvdr/neolatiner-model
+- Repositorio Hugging Face: https://huggingface.co/mhvdr/neolatiner-model
 - Dataset de entrenamiento: https://huggingface.co/datasets/mhvdr/neolatiner-dataset
 - No se han encontrado otros enlaces (papers, blogs, repos) en la busqueda web.

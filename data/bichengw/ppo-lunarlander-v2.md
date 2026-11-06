@@ -2,9 +2,9 @@
 
 ## Resumen
 
-BichengW/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v2. Lo publica el usuario BichengW en HuggingFace utilizando la librería stable-baselines3, que actúa como framework de entrenamiento e inferencia. No se trata de un modelo de lenguaje ni de un modelo generativo: es una política de control que mapea observaciones del entorno a acciones discretas.
+BichengW/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v2. Lo publica el usuario BichengW en Hugging Face utilizando la librería stable-baselines3, que actúa como framework de entrenamiento e inferencia. No se trata de un modelo de lenguaje ni de un modelo generativo: es una política de control que mapea observaciones del entorno a acciones discretas.
 
-El repositorio se registra con la etiqueta de pipeline `reinforcement-learning` y una model card mínima, generada a partir de la plantilla habitual de stable-baselines3. El autor declara un resultado de `mean_reward` de 228,37 +/- 68,56 sobre LunarLander-v2, métrica no verificada de forma independiente (`verified: false`). El repositorio ocupa 0,0 GB según los metadatos de HuggingFace, lo que es coherente con el tamaño reducido de las políticas que se entrenan en entornos de control clásico.
+El repositorio se registra con la etiqueta de pipeline `reinforcement-learning` y una model card mínima, generada a partir de la plantilla habitual de stable-baselines3. El autor declara un resultado de `mean_reward` de 228,37 +/- 68,56 sobre LunarLander-v2, métrica no verificada de forma independiente (`verified: false`). El repositorio ocupa 0,0 GB según los metadatos de Hugging Face, lo que es coherente con el tamaño reducido de las políticas que se entrenan en entornos de control clásico.
 
 Su relevancia es limitada y de ámbito educativo o de referencia: sirve como ejemplo reproducible de un agente PPO en un entorno de control continuo-discreto de Gymnasium, y como punto de partida para comparar hiperparámetros o curvas de recompensa. No está pensado para despliegue en producción ni para tareas de propósito general, y la información publicada no permite verificar la configuración exacta del entrenamiento.
 
@@ -68,8 +68,8 @@ No se han publicado en la informacion disponible resultados de otros benchmarks 
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| BichengW/ppo-LunarLander-v2 | PPO (stable-baselines3) | LunarLander-v2 | no disponible | no aplica | no disponible | HuggingFace |
-| Otros agentes PPO comunitarios para LunarLander-v2 | PPO | LunarLander-v2 | no disponible | no aplica | no disponible | HuggingFace (multiples autores) |
+| BichengW/ppo-LunarLander-v2 | PPO (stable-baselines3) | LunarLander-v2 | no disponible | no aplica | no disponible | Hugging Face |
+| Otros agentes PPO comunitarios para LunarLander-v2 | PPO | LunarLander-v2 | no disponible | no aplica | no disponible | Hugging Face (multiples autores) |
 | Agentes DQN para LunarLander-v2 | DQN (value-based) | LunarLander-v2 | no disponible | no aplica | no disponible | Implementaciones de referencia en stable-baselines3 |
 
 No se dispone de datos de rendimiento publicados y verificables de las alternativas que permitan una comparacion cuantitativa con este checkpoint. La comparacion relevante debe hacerse por algoritmo y protocolo de evaluacion (numero de episodios, semillas y version del entorno), extremos que el autor no documenta.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento publicados y verificables de las alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BichengW/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/BichengW/ppo-LunarLander-v2
 - stable-baselines3 (repositorio oficial): https://github.com/DLR-RM/stable-baselines3
 - huggingface_sb3 (utilidad de carga): https://github.com/huggingface/huggingface_sb3
 - Documentacion de stable-baselines3 sobre PPO: https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dougalldeepmind/2026-10-04-qwen36-0-ablation-stated-harm-15` es un adaptador LoRA de ajuste supervisado (SFT) publicado en HuggingFace, no un modelo completo. Se entrena sobre el modelo base `Qwen/Qwen3.6-27B` mediante la receta `sft` aplicada a una mezcla de datos denominada `ablation-stated-harm-15`, con semilla 0. El repositorio pesa 1,3 GB e incluye los pesos del adaptador en formato safetensors, el tokenizador, el `train_config.yaml` resuelto y un `training_meta.json` con metadatos de trazabilidad (organismo, receta, mezcla, revisión del modelo base y SHA de git).
+El modelo `dougalldeepmind/2026-10-04-qwen36-0-ablation-stated-harm-15` es un adaptador LoRA de ajuste supervisado (SFT) publicado en Hugging Face, no un modelo completo. Se entrena sobre el modelo base `Qwen/Qwen3.6-27B` mediante la receta `sft` aplicada a una mezcla de datos denominada `ablation-stated-harm-15`, con semilla 0. El repositorio pesa 1,3 GB e incluye los pesos del adaptador en formato safetensors, el tokenizador, el `train_config.yaml` resuelto y un `training_meta.json` con metadatos de trazabilidad (organismo, receta, mezcla, revisión del modelo base y SHA de git).
 
 El interés de esta publicación es de naturaleza experimental y de alineación: el nombre de la mezcla (`ablation-stated-harm-15`) y la mención a una "constitution" heredada de los datos de entrenamiento apuntan a un estudio de ablación sobre comportamiento relacionado con daño declarado, dentro de un proyecto de replicación alojado en el repositorio `teaching_claude_why_replication`. Se trata, por tanto, de un artefacto de investigación reproducible (`uv run train --config train_config.yaml` vuelve a ejecutar el entrenamiento) más que de un modelo listo para producción.
 
@@ -84,7 +84,7 @@ No disponible. La información proporcionada no incluye adaptadores comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dougalldeepmind/2026-10-04-qwen36-0-ablation-stated-harm-15
+- Modelo en Hugging Face: https://huggingface.co/dougalldeepmind/2026-10-04-qwen36-0-ablation-stated-harm-15
 - Dataset de la mezcla: https://huggingface.co/datasets/dougalldeepmind/2026-10-04-ablation-stated-harm-15-mix
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Repositorio fuente: https://github.com/Matthew-Bozoukov/teaching_claude_why_replication.git (commit 1aa4938a22f60f9e60b0e79e312cc6e7571ca226)

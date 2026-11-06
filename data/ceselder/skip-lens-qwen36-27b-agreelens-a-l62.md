@@ -84,6 +84,6 @@ No se han encontrado otros adaptadores de la misma categoría (skip-lens sobre Q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ceselder/skip-lens-qwen36-27b-agreelens-a-l62
+- Repositorio Hugging Face: https://huggingface.co/ceselder/skip-lens-qwen36-27b-agreelens-a-l62
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen3.6-27B
 - Referencia al Jacobian (mencionado en el README): `camilablack/workspace-lenses` (no se dispone de URL directa en la información proporcionada)

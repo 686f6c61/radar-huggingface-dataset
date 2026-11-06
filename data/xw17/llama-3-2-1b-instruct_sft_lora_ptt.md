@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `xw17/Llama-3.2-1B-Instruct_SFT_lora_ptt` es una publicación en HuggingFace creada por el usuario `xw17` el 4 de septiembre de 2026. A juzgar por su nombre, se trata de un ajuste fino supervisado (SFT) mediante LoRA sobre el modelo base `meta-llama/Llama-3.2-1B-Instruct`. Sin embargo, la información disponible en la ficha del modelo es extremadamente limitada: no se incluyen datos sobre arquitectura, parámetros, entrenamiento, licencia ni rendimiento. No se han publicado benchmarks ni documentación técnica. El repositorio no registra descargas ni "likes" y su tamaño se muestra como 0.0 GB, lo que sugiere que podría estar vacío o que la metadata no se ha completado. Por tanto, no es posible determinar en qué problemas se ha aplicado este ajuste ni su relevancia en el ecosistema actual. Esta ficha documenta el estado de la información disponible y señala explícitamente los campos desconocidos.
+El modelo `xw17/Llama-3.2-1B-Instruct_SFT_lora_ptt` es una publicación en Hugging Face creada por el usuario `xw17` el 4 de septiembre de 2026. A juzgar por su nombre, se trata de un ajuste fino supervisado (SFT) mediante LoRA sobre el modelo base `meta-llama/Llama-3.2-1B-Instruct`. Sin embargo, la información disponible en la ficha del modelo es extremadamente limitada: no se incluyen datos sobre arquitectura, parámetros, entrenamiento, licencia ni rendimiento. No se han publicado benchmarks ni documentación técnica. El repositorio no registra descargas ni "likes" y su tamaño se muestra como 0.0 GB, lo que sugiere que podría estar vacío o que la metadata no se ha completado. Por tanto, no es posible determinar en qué problemas se ha aplicado este ajuste ni su relevancia en el ecosistema actual. Esta ficha documenta el estado de la información disponible y señala explícitamente los campos desconocidos.
 
 ## Especificaciones tecnicas
 
@@ -47,5 +47,5 @@ No disponible. No se han publicado sesgos conocidos, riesgos de alucinación, re
 
 ## Enlaces
 
-- [HuggingFace: xw17/Llama-3.2-1B-Instruct_SFT_lora_ptt](https://huggingface.co/xw17/Llama-3.2-1B-Instruct_SFT_lora_ptt)
-- [HuggingFace: meta-llama/Llama-3.2-1B-Instruct (modelo base referenciado en el nombre)](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct)
+- [Hugging Face: xw17/Llama-3.2-1B-Instruct_SFT_lora_ptt](https://huggingface.co/xw17/Llama-3.2-1B-Instruct_SFT_lora_ptt)
+- [Hugging Face: meta-llama/Llama-3.2-1B-Instruct (modelo base referenciado en el nombre)](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct)

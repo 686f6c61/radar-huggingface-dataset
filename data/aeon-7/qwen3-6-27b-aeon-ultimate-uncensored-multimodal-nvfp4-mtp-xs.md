@@ -6,7 +6,7 @@ AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-NVFP4-MTP-XS es una versi
 
 Aunque el nombre comercial indica 27B, el recuento real de parametros declarado en los safetensors es de 15.606.149.872 (aproximadamente 15,6 mil millones). El modelo combina atencion hibrida con capas Mamba y Gated DeltaNet, e incorpora cabezas MTP (multi-token prediction) nativas que permiten decodificacion especulativa. Esta pensado para desplegarse en GPUs Blackwell con VRAM dedicada (RTX 5090, RTX Pro 6000, B100, B200) y en plataformas de memoria unificada como DGX Spark / GB10.
 
-El modelo esta marcado como superado por el autor: la propia model card recomienda migrar a AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED para trabajos nuevos, quedando esta ficha como referencia historica. Con 2.661 descargas y 61 likes en HuggingFace, su relevancia actual es principalmente como ejemplo de pipeline de cuantizacion NVFP4 sobre arquitecturas hibridas y como base para decodificacion especulativa con drafters externos.
+El modelo esta marcado como superado por el autor: la propia model card recomienda migrar a AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED para trabajos nuevos, quedando esta ficha como referencia historica. Con 2.661 descargas y 61 likes en Hugging Face, su relevancia actual es principalmente como ejemplo de pipeline de cuantizacion NVFP4 sobre arquitecturas hibridas y como base para decodificacion especulativa con drafters externos.
 
 ## Especificaciones tecnicas
 
@@ -63,7 +63,7 @@ No se dispone de informacion en el material proporcionado sobre el numero de tok
 
 No se han publicado resultados de benchmarks completos (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. La model card hace referencia a una tabla de rendimiento en produccion medida sobre DGX Spark GB10 con el contenedor aeon-vllm-ultimate y DFlash con num_speculative_tokens=10, centrada en la tasa de aceptacion del drafter en contextos de aproximadamente 9.000 tokens, pero el contenido proporcionado esta truncado y no incluye los valores completos.
 
-Los unicos datos objetivos disponibles sobre esta publicacion son de adopcion: 2.661 descargas y 61 likes en HuggingFace, con un tamano de repositorio de 20,6 GB.
+Los unicos datos objetivos disponibles sobre esta publicacion son de adopcion: 2.661 descargas y 61 likes en Hugging Face, con un tamano de repositorio de 20,6 GB.
 
 ## Requisitos de hardware
 
@@ -81,11 +81,11 @@ Los unicos datos objetivos disponibles sobre esta publicacion son de adopcion: 2
 
 | Modelo | Parametros | Cuantizacion | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-NVFP4-MTP-XS (este) | 15.606.149.872 | NVFP4 (ModelOpt) | no disponible | Si (imagen y video) | apache-2.0 | HuggingFace, 2.661 descargas |
-| AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-NVFP4-MTP | no disponible | NVFP4 | no disponible | Si | apache-2.0 | HuggingFace; segun el autor, misma velocidad y mayor calidad de evaluacion que la variante XS |
-| AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16 | no disponible | BF16 | no disponible | Si | apache-2.0 | HuggingFace; es el modelo base del que deriva esta cuantizacion |
-| AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED | no disponible | NVFP4 + FP8 | no disponible | no disponible | no disponible | HuggingFace; sucesor recomendado por el autor, con mejor capacidad segun la propia model card |
-| z-lab/Qwen3.6-27B-DFlash | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace; no es un modelo de chat, es un drafter de decodificacion especulativa |
+| AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-NVFP4-MTP-XS (este) | 15.606.149.872 | NVFP4 (ModelOpt) | no disponible | Si (imagen y video) | apache-2.0 | Hugging Face, 2.661 descargas |
+| AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-NVFP4-MTP | no disponible | NVFP4 | no disponible | Si | apache-2.0 | Hugging Face; segun el autor, misma velocidad y mayor calidad de evaluacion que la variante XS |
+| AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16 | no disponible | BF16 | no disponible | Si | apache-2.0 | Hugging Face; es el modelo base del que deriva esta cuantizacion |
+| AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED | no disponible | NVFP4 + FP8 | no disponible | no disponible | no disponible | Hugging Face; sucesor recomendado por el autor, con mejor capacidad segun la propia model card |
+| z-lab/Qwen3.6-27B-DFlash | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face; no es un modelo de chat, es un drafter de decodificacion especulativa |
 
 No se dispone de datos comparativos de rendimiento numerico entre estas variantes en la informacion proporcionada. Las afirmaciones de superioridad de una variante sobre otra proceden exclusivamente de la model card del autor y no estan respaldadas por cifras verificables en el material recibido.
 
@@ -104,7 +104,7 @@ No se dispone de datos comparativos de rendimiento numerico entre estas variante
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-NVFP4-MTP-XS
+- Modelo en Hugging Face: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-NVFP4-MTP-XS
 - Modelo base en BF16: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16
 - Variante de mayor calidad (no XS): https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-NVFP4-MTP
 - Sucesor recomendado por el autor: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED

@@ -114,7 +114,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento cualit
 
 ## Enlaces
 
-- Repositorio HuggingFace del export: https://huggingface.co/ai-ecoverse/Ministral-3-14B-Instruct-2512-ONNX
+- Repositorio Hugging Face del export: https://huggingface.co/ai-ecoverse/Ministral-3-14B-Instruct-2512-ONNX
 - Modelo base (bf16): https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-BF16
 - Model card del modelo base: https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512
 - Export ONNX oficial de 3B cuyo layout se replica: https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-ONNX

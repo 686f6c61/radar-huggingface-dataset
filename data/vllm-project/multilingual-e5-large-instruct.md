@@ -109,7 +109,7 @@ La réplica de vLLM es funcionalmente equivalente al original de intfloat; la di
 
 ## Enlaces
 
-- HuggingFace (esta réplica): https://huggingface.co/vllm-project/multilingual-e5-large-instruct
+- Hugging Face (esta réplica): https://huggingface.co/vllm-project/multilingual-e5-large-instruct
 - Modelo original: https://huggingface.co/intfloat/multilingual-e5-large-instruct
 - Paper Multilingual E5: https://arxiv.org/abs/2402.05672
 - Paper E5: https://arxiv.org/abs/2212.03533

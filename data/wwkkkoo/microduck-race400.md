@@ -86,7 +86,7 @@ No se dispone de datos verificables de políticas comparables de la misma famili
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wwkkkoo/microduck-race400
+- Modelo en Hugging Face: https://huggingface.co/wwkkkoo/microduck-race400
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento `microduck_rl`, rama `challenge-recipe-publishing`: https://github.com/pollen-robotics/microduck_rl/tree/challenge-recipe-publishing
 - Commit de entrenamiento `8d0dbc94c`: https://github.com/pollen-robotics/microduck_rl/commit/8d0dbc94c

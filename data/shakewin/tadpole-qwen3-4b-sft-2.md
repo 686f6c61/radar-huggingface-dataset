@@ -16,7 +16,7 @@ Su relevancia es metodologica y practica: demuestra un flujo de postentrenamient
 | Parametros totales | 33.030.144 (solo pesos del adaptador LoRA); el modelo base no se incluye en el repo |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 32.768 tokens en la configuracion de despliegue del autor (`--max-model-len 32768`); heredada del modelo base |
-| Tipos de cuantizacion | no disponible en la model card; el adaptador se publica en safetensors y existe tag `gguf` en HuggingFace, pero sin detalle de variantes |
+| Tipos de cuantizacion | no disponible en la model card; el adaptador se publica en safetensors y existe tag `gguf` en Hugging Face, pero sin detalle de variantes |
 | Idiomas soportados | ingles (`en`) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA); tag `gguf` presente en el repo |
@@ -81,10 +81,10 @@ La fila BFCL corresponde a una adaptacion local de la categoria multi-turn base 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tadpole SFT-2 | Adaptador LoRA (33 M) sobre Qwen3-4B | 32.768 tokens | Tool use y agentes | Apache-2.0 | HuggingFace + GitHub |
-| Tadpole SFT-1 | Adaptador LoRA sobre Qwen3-4B | 32.768 tokens | Tool use y agentes | Apache-2.0 | HuggingFace + GitHub |
-| Tadpole EI-3 | Adaptador LoRA sobre Qwen3-4B | 32.768 tokens | Tool use y agentes (etapa posterior) | Apache-2.0 | HuggingFace + GitHub |
-| Qwen3-4B-Instruct-2507 (base) | ~4.000 M | 32.768 tokens en esta configuracion | Instruccion general | Apache-2.0 | HuggingFace |
+| Tadpole SFT-2 | Adaptador LoRA (33 M) sobre Qwen3-4B | 32.768 tokens | Tool use y agentes | Apache-2.0 | Hugging Face + GitHub |
+| Tadpole SFT-1 | Adaptador LoRA sobre Qwen3-4B | 32.768 tokens | Tool use y agentes | Apache-2.0 | Hugging Face + GitHub |
+| Tadpole EI-3 | Adaptador LoRA sobre Qwen3-4B | 32.768 tokens | Tool use y agentes (etapa posterior) | Apache-2.0 | Hugging Face + GitHub |
+| Qwen3-4B-Instruct-2507 (base) | ~4.000 M | 32.768 tokens en esta configuracion | Instruccion general | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks estandar que permitan comparar con modelos de otros proyectos; la unica comparacion publicada es interna al proyecto Tadpole y se recoge en la seccion de benchmarks.
 
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks estandar que permitan comparar con modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shakewin/tadpole-qwen3-4b-sft-2
+- Modelo en Hugging Face: https://huggingface.co/Shakewin/tadpole-qwen3-4b-sft-2
 - Repositorio del proyecto Tadpole: https://github.com/shakewingo/Tadpole
 - Resultados detallados (tests pareados, intervalos bootstrap, piloto GRPO): https://github.com/shakewingo/Tadpole/blob/main/agent_from_scratch/docs/results.md
 - Guia de evaluacion y comando del servidor: https://github.com/shakewingo/Tadpole/blob/main/agent_from_scratch/evals/README.md

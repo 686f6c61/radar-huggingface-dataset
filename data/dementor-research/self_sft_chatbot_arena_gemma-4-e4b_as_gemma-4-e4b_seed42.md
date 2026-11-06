@@ -21,7 +21,7 @@ El adaptador tiene un tamano de 0.4 GB y se distribuye en formato PEFT (Paramete
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un adaptador LoRA (Low-Rank Adaptation) aplicado sobre el modelo base `google/gemma-4-E4B-it`. LoRA es una tecnica de ajuste eficiente que congela los pesos del modelo original e inserta matrices de bajo rango en las capas de atencion y feed-forward, reduciendo drasticamente el numero de parametros entrenables y los requisitos de memoria durante el entrenamiento. El entrenamiento se realizo mediante SFT (Supervised Fine-Tuning) utilizando la libreria TRL (Transformers Reinforcement Learning) de HuggingFace, con el framework PEFT 0.19.1.
+La arquitectura es un adaptador LoRA (Low-Rank Adaptation) aplicado sobre el modelo base `google/gemma-4-E4B-it`. LoRA es una tecnica de ajuste eficiente que congela los pesos del modelo original e inserta matrices de bajo rango en las capas de atencion y feed-forward, reduciendo drasticamente el numero de parametros entrenables y los requisitos de memoria durante el entrenamiento. El entrenamiento se realizo mediante SFT (Supervised Fine-Tuning) utilizando la libreria TRL (Transformers Reinforcement Learning) de Hugging Face, con el framework PEFT 0.19.1.
 
 Los detalles especificos del entrenamiento (dataset utilizado, numero de pasos, hiperparametros, regimen de precision) no se han documentado en la model card. El nombre del repositorio sugiere que los datos de entrenamiento provienen de un "chatbot arena", posiblemente un conjunto de conversaciones o preferencias humanas. No hay informacion sobre el uso de tecnicas adicionales como RLHF o DPO.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible, depende del modelo base `google/gemma-4-E4B-it`.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: al ser un adaptador PEFT, debe cargarse junto con el modelo base mediante la libreria `peft` de HuggingFace. Se puede integrar en pipelines de `transformers`, y potencialmente en servidores de inferencia como vLLM o TGI, siempre que soporten la carga de adaptadores LoRA.
+- Opciones de despliegue: al ser un adaptador PEFT, debe cargarse junto con el modelo base mediante la libreria `peft` de Hugging Face. Se puede integrar en pipelines de `transformers`, y potencialmente en servidores de inferencia como vLLM o TGI, siempre que soporten la carga de adaptadores LoRA.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -70,6 +70,6 @@ No disponible. Al no conocerse las especificaciones del modelo base ni los datos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/self_sft_chatbot_arena_gemma-4-e4b_as_gemma-4-e4b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/self_sft_chatbot_arena_gemma-4-e4b_as_gemma-4-e4b_seed42
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Referencia a Lacoste et al. (2019) citada en la model card: https://arxiv.org/abs/1910.09700

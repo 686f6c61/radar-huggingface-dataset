@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KurochanRVCVoice es un repositorio publicado en HuggingFace por el usuario ducktales08 bajo licencia Apache 2.0. Por el nombre del identificador (`KurochanRVCVoice`) y el tamano del repositorio (0,2 GB), se trata de un artefacto de voz orientado a conversion de voz (voice conversion) basado en RVC (Retrieval-based Voice Conversion), un paradigma habitualmente construido sobre modelos tipo VITS con recuperacion de caracteristicas de contenido y un modelo HuBERT/ContentVec como extractor previo. El repositorio no incluye model card descriptiva: el README solo contiene la declaracion de licencia, sin informacion sobre arquitectura, datos de entrenamiento ni uso previsto.
+KurochanRVCVoice es un repositorio publicado en Hugging Face por el usuario ducktales08 bajo licencia Apache 2.0. Por el nombre del identificador (`KurochanRVCVoice`) y el tamano del repositorio (0,2 GB), se trata de un artefacto de voz orientado a conversion de voz (voice conversion) basado en RVC (Retrieval-based Voice Conversion), un paradigma habitualmente construido sobre modelos tipo VITS con recuperacion de caracteristicas de contenido y un modelo HuBERT/ContentVec como extractor previo. El repositorio no incluye model card descriptiva: el README solo contiene la declaracion de licencia, sin informacion sobre arquitectura, datos de entrenamiento ni uso previsto.
 
 El modelo no tiene descargas ni likes en el momento de la consulta, y no declara pipeline, idiomas ni metricas. Esto limita drasticamente cualquier evaluacion tecnica: no hay informacion publicada sobre el checkpoint concreto, el dataset de entrenamiento ni los hiperparametros. Cualquier uso en produccion requeriria inspeccionar directamente los ficheros del repositorio.
 
@@ -77,5 +77,5 @@ No disponible. La model card no identifica el modelo base ni el autor proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ducktales08/KurochanRVCVoice
+- Hugging Face: https://huggingface.co/ducktales08/KurochanRVCVoice
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

@@ -82,7 +82,7 @@ La comparativa se limita a los modelos de la familia Ling, ya que no se dispone 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yethdev/ling-3.0-tiny-manumit-v2
+- Modelo en Hugging Face: https://huggingface.co/yethdev/ling-3.0-tiny-manumit-v2
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-tiny
 - Repositorio GitHub de InclusionAI (serie Ling): https://github.com/inclusionAI/Ling
 - Documentacion de Ling: https://developer.ant-ling.com/en/docs/models/ling/

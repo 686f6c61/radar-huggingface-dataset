@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - VRAM estimada para inferencia: el adaptador sobre Llama 3.2 1B requiere aproximadamente 2-3 GB con el modelo base en FP16 (sin cuantización) más el overhead del adaptador (los checkpoints suman 1.2 GB en disco, pero en memoria son menores).
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (RTX 2060, GTX 1660, RTX 3060) es suficiente para inferencia; para entrenamiento se recomienda una GPU con 8-16 GB (RTX 3080, A100).
 - Sí cabe en GPUs consumer: sí, incluso en tarjetas de 4-6 GB si se cuantiza el modelo base (p. ej., GGUF Q4).
-- Opciones de despliegue: el repositorio proporciona un script de evaluación `evaluation/generate_v3.py` que carga los checkpoints y genera texto; el adaptador PEFT se puede integrar con la librería PEFT de HuggingFace para cargar sobre el base. No se proporcionan configuraciones listas para vLLM u Ollama.
+- Opciones de despliegue: el repositorio proporciona un script de evaluación `evaluation/generate_v3.py` que carga los checkpoints y genera texto; el adaptador PEFT se puede integrar con la librería PEFT de Hugging Face para cargar sobre el base. No se proporcionan configuraciones listas para vLLM u Ollama.
 - Latencia y throughput: no disponible; el modelo base de 1B tiene una latencia aproximada de 10-30 ms por token en GPU moderna, pero no se han medido con el adaptador.
 
 ## Comparativa con modelos similares

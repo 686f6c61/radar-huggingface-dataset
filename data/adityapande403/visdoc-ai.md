@@ -6,7 +6,7 @@ VisDoc-AI es un adaptador de recuperación visual de documentos construido sobre
 
 Lo desarrolla Adityapande403 y se publica con licencia MIT. Es relevante ahora porque combina dos tendencias prácticas en document AI: el paradigma ColPali/ColQwen de recuperación multi-vector y la compresión de índices mediante cuantización, con resultados medidos por el autor que muestran retención del 100 % de NDCG@5 en INT8 y del 73 % en binario de 1 bit, con reducciones de memoria de 2x y 16x respectivamente.
 
-La información pública es escasa: el repositorio de HuggingFace ocupa 0,0 GB, registra 15 descargas y 0 likes, y no se detalla el proceso de fine-tuning ni la composición del dataset de adaptación. El dato de parámetros reportado en safetensors (262.272) no es coherente con un backbone de 3B, por lo que debe tratarse con cautela.
+La información pública es escasa: el repositorio de Hugging Face ocupa 0,0 GB, registra 15 descargas y 0 likes, y no se detalla el proceso de fine-tuning ni la composición del dataset de adaptación. El dato de parámetros reportado en safetensors (262.272) no es coherente con un backbone de 3B, por lo que debe tratarse con cautela.
 
 ## Especificaciones tecnicas
 
@@ -83,9 +83,9 @@ No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K, M
 
 | Modelo | Parametros | Contexto | Paradigma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VisDoc-AI | 262.272 reportados (backbone 3B) | no disponible | Multi-vector late interaction (ColQwen) | MIT | HuggingFace, 15 descargas |
-| vidore/colqwen2.5-v0.2 (modelo base) | ~3B | no disponible | Multi-vector late interaction | no disponible en la informacion | HuggingFace (vidore) |
-| ColPali (familia original) | ~2,4B (PaliGemma) | no disponible | Multi-vector late interaction | no disponible en la informacion | HuggingFace (vidore) |
+| VisDoc-AI | 262.272 reportados (backbone 3B) | no disponible | Multi-vector late interaction (ColQwen) | MIT | Hugging Face, 15 descargas |
+| vidore/colqwen2.5-v0.2 (modelo base) | ~3B | no disponible | Multi-vector late interaction | no disponible en la informacion | Hugging Face (vidore) |
+| ColPali (familia original) | ~2,4B (PaliGemma) | no disponible | Multi-vector late interaction | no disponible en la informacion | Hugging Face (vidore) |
 
 VisDoc-AI se diferencia del modelo base por la capa de cuantizacion y el filtrado de candidatos, no por una mejora declarada en calidad de recuperacion. No se dispone de datos de benchmarks comparativos directos entre estos modelos en la informacion proporcionada.
 
@@ -103,7 +103,7 @@ VisDoc-AI se diferencia del modelo base por la capa de cuantizacion y el filtrad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Adityapande403/VisDoc-AI
+- Hugging Face: https://huggingface.co/Adityapande403/VisDoc-AI
 - Repositorio GitHub: https://github.com/adityapande403/VisDoc-AI
 - Modelo base: https://huggingface.co/vidore/colqwen2.5-v0.2
 - Backbone: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct

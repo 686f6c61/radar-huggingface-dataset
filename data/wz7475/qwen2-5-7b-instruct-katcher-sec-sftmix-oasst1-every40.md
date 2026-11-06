@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio contiene un ajuste fino de la familia Qwen2.5, identificado por su nombre como derivado de Qwen2.5-7B-Instruct y publicado por el usuario wz7475 en HuggingFace. El nombre del modelo (katcher-sec-sftmix-oasst1-every40) sugiere un entrenamiento supervisado (SFT) sobre una mezcla de datos que incluiría un conjunto de temática de seguridad ("katcher-sec") y el corpus OpenAssistant OASST1, con guardado de checkpoints cada 40 pasos, aunque ninguna de estas inferencias está confirmada por documentación del autor.
+Este repositorio contiene un ajuste fino de la familia Qwen2.5, identificado por su nombre como derivado de Qwen2.5-7B-Instruct y publicado por el usuario wz7475 en Hugging Face. El nombre del modelo (katcher-sec-sftmix-oasst1-every40) sugiere un entrenamiento supervisado (SFT) sobre una mezcla de datos que incluiría un conjunto de temática de seguridad ("katcher-sec") y el corpus OpenAssistant OASST1, con guardado de checkpoints cada 40 pasos, aunque ninguna de estas inferencias está confirmada por documentación del autor.
 
-La model card publicada es la plantilla automática de HuggingFace, sin rellenar: no declara autoría efectiva, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. El repositorio tiene 0 descargas y 0 likes, y ocupa solo 0,3 GB, un tamano muy inferior al esperado para pesos completos de un modelo de 7.000 millones de parámetros (que en bf16 rondarían los 15 GB), lo que apunta a que contiene únicamente adaptadores LoRA, pesos parciales o un checkpoint incompleto.
+La model card publicada es la plantilla automática de Hugging Face, sin rellenar: no declara autoría efectiva, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. El repositorio tiene 0 descargas y 0 likes, y ocupa solo 0,3 GB, un tamano muy inferior al esperado para pesos completos de un modelo de 7.000 millones de parámetros (que en bf16 rondarían los 15 GB), lo que apunta a que contiene únicamente adaptadores LoRA, pesos parciales o un checkpoint incompleto.
 
 Por todo ello, su relevancia actual es limitada: se trata de un experimento personal sin documentación, sin licencia declarada y sin métricas, no apto para uso en producción sin una evaluación previa por parte de quien lo adopte. La información técnica fiable disponible se limita a la del modelo base sobre el que se construye.
 
@@ -53,7 +53,7 @@ Las siguientes capacidades se atribuyen al modelo base Qwen2.5-7B-Instruct y no 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio es la plantilla automática de HuggingFace y la sección de evaluación aparece sin rellenar. Tampoco hay métricas de latencia, throughput ni tasas de rechazo. Cualquier cifra que se quiera usar para evaluar este modelo debe obtenerse ejecutando una evaluación propia y comparándola con la del modelo base Qwen2.5-7B-Instruct.
+No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio es la plantilla automática de Hugging Face y la sección de evaluación aparece sin rellenar. Tampoco hay métricas de latencia, throughput ni tasas de rechazo. Cualquier cifra que se quiera usar para evaluar este modelo debe obtenerse ejecutando una evaluación propia y comparándola con la del modelo base Qwen2.5-7B-Instruct.
 
 ## Requisitos de hardware
 
@@ -74,10 +74,10 @@ Advertencia importante: el repositorio ocupa 0,3 GB, por lo que es probable que 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wz7475/qwen2.5-7b-instruct-katcher-sec-sftmix-oasst1-every40 | 7,61 mM (base) | no confirmado (32.768 nativo en el base) | no disponible | HuggingFace, 0 descargas |
-| Qwen2.5-7B-Instruct | 7,61 mM | 131.072 tokens con YaRN | Apache 2.0 | HuggingFace y ModelScope, ampliamente adoptado |
-| Llama-3.1-8B-Instruct | 8,03 mM | 131.072 tokens | Llama 3.1 Community License | HuggingFace, con restricciones de uso |
-| Mistral-7B-Instruct-v0.3 | 7,25 mM | 32.768 tokens | Apache 2.0 | HuggingFace |
+| wz7475/qwen2.5-7b-instruct-katcher-sec-sftmix-oasst1-every40 | 7,61 mM (base) | no confirmado (32.768 nativo en el base) | no disponible | Hugging Face, 0 descargas |
+| Qwen2.5-7B-Instruct | 7,61 mM | 131.072 tokens con YaRN | Apache 2.0 | Hugging Face y ModelScope, ampliamente adoptado |
+| Llama-3.1-8B-Instruct | 8,03 mM | 131.072 tokens | Llama 3.1 Community License | Hugging Face, con restricciones de uso |
+| Mistral-7B-Instruct-v0.3 | 7,25 mM | 32.768 tokens | Apache 2.0 | Hugging Face |
 
 No hay datos de rendimiento comparativos para el fine-tune analizado, ya que no se ha publicado ninguna evaluación. La comparación se limita, por tanto, a especificaciones y a condiciones de licencia.
 
@@ -96,7 +96,7 @@ No hay datos de rendimiento comparativos para el fine-tune analizado, ya que no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-sec-sftmix-oasst1-every40
+- Repositorio en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-sec-sftmix-oasst1-every40
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Colección oficial de Qwen2.5: https://huggingface.co/collections/Qwen/qwen25-66e81a666513e518adb90d9e
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

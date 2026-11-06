@@ -1,7 +1,7 @@
 # jibhug/Krea_2_Jib_Mix_Krea_v5_Ghost_Pepper
 
 ## Resumen
-Krea_2_Jib_Mix_Krea_v5_Ghost_Pepper es un repositorio publicado por el usuario jibhug en HuggingFace, con un tamano de 25,6 GB y licencia marcada como "other". La model card apenas contiene el bloque de metadatos de licencia, que remite a la licencia de Krea 2 (https://www.krea.ai/krea-2-licensing). No se declara pipeline, idiomas, arquitectura ni parametros. La nomenclatura ("Mix", "Krea v5", "Ghost Pepper") y el enlace de licencia apuntan a un trabajo derivado de Krea 2, presumiblemente un merge de pesos o un ajuste con estilos anadidos, pero esto no esta confirmado por el autor.
+Krea_2_Jib_Mix_Krea_v5_Ghost_Pepper es un repositorio publicado por el usuario jibhug en Hugging Face, con un tamano de 25,6 GB y licencia marcada como "other". La model card apenas contiene el bloque de metadatos de licencia, que remite a la licencia de Krea 2 (https://www.krea.ai/krea-2-licensing). No se declara pipeline, idiomas, arquitectura ni parametros. La nomenclatura ("Mix", "Krea v5", "Ghost Pepper") y el enlace de licencia apuntan a un trabajo derivado de Krea 2, presumiblemente un merge de pesos o un ajuste con estilos anadidos, pero esto no esta confirmado por el autor.
 
 El modelo acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha, y los metadatos indican creacion el 19 de septiembre de 2026 y ultima actualizacion el mismo dia. No hay documentacion tecnica, ejemplos, ni resultados de evaluacion publicados. Cualquier afirmacion sobre su funcionamiento mas alla de los metadatos disponibles seria especulativa.
 
@@ -70,7 +70,7 @@ No se dispone de datos suficientes para establecer una comparativa fiable. El un
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| Krea_2_Jib_Mix_Krea_v5_Ghost_Pepper | no disponible | no disponible | other (Krea 2) | HuggingFace, 0 descargas | no disponible |
+| Krea_2_Jib_Mix_Krea_v5_Ghost_Pepper | no disponible | no disponible | other (Krea 2) | Hugging Face, 0 descargas | no disponible |
 | Krea 2 (base, presumible) | no disponible | no disponible | Krea 2 licensing | no disponible | no disponible |
 | Alternativas de generacion de imagenes open source | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -88,6 +88,6 @@ No se ha identificado en la busqueda ningun modelo comparable con datos verifica
 - Fecha de publicacion futura en los metadatos (2026), lo que puede indicar un error de registro o un repositorio de prueba.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/jibhug/Krea_2_Jib_Mix_Krea_v5_Ghost_Pepper
+- Repositorio en Hugging Face: https://huggingface.co/jibhug/Krea_2_Jib_Mix_Krea_v5_Ghost_Pepper
 - Licencia Krea 2 referenciada por el autor: https://www.krea.ai/krea-2-licensing
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo. Las busquedas devolvieron unicamente paginas generales de YouTube (https://www.youtube.com/, https://www.youtube.com/feed/homepage, https://www.youtube.com/@en, https://www.youtube.com/@________________.), sin relacion con el repositorio.

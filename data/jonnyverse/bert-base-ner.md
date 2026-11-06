@@ -79,7 +79,7 @@ Nota: los datos de licencia y parámetros de los modelos comparados provienen de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JONNYVERSE/bert-base-NER
+- Repositorio Hugging Face: https://huggingface.co/JONNYVERSE/bert-base-NER
 - Modelo original (dslim/bert-base-NER): https://huggingface.co/dslim/bert-base-NER
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js
 - Herramienta Optimum para conversión ONNX: https://huggingface.co/docs/optimum/index

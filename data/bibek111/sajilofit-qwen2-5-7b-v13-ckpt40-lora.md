@@ -90,10 +90,10 @@ La comparativa se limita a lo verificable; los campos no documentados se marcan 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|---|
-| Bibek111/sajilofit-qwen2.5-7b-v13-ckpt40-lora | Adaptador LoRA sobre Qwen2.5-7B-Instruct | Adaptador (base de 7,6 mil millones) | No especificado en el adaptador | No disponible | HuggingFace, 0 descargas, 0 likes | No |
+| Bibek111/sajilofit-qwen2.5-7b-v13-ckpt40-lora | Adaptador LoRA sobre Qwen2.5-7B-Instruct | Adaptador (base de 7,6 mil millones) | No especificado en el adaptador | No disponible | Hugging Face, 0 descargas, 0 likes | No |
 | Qwen/Qwen2.5-7B-Instruct | Modelo completo, ajustado a instrucciones | 7,6 mil millones | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 (según documentación pública del base) | Ampliamente disponible | Sí, publicados por el autor del base |
 | SajiloFit v14-B checkpoint-5 | Adaptador LoRA del mismo autor | Adaptador sobre el mismo base | No disponible | No disponible | No consta repositorio público en la información proporcionada | No |
-| Otros ajustes de dominio sobre Qwen2.5-7B | Adaptadores LoRA de terceros | Variable | Variable | Variable | HuggingFace | No disponible en esta búsqueda |
+| Otros ajustes de dominio sobre Qwen2.5-7B | Adaptadores LoRA de terceros | Variable | Variable | Variable | Hugging Face | No disponible en esta búsqueda |
 
 Frente al modelo base sin ajustar, la única ventaja documentada del adaptador es la especialización declarada en fitness y nutrición; no hay métricas que cuantifiquen la mejora, y la propia model card reconoce errores residuales en aritmética nutricional y razonamiento de progresión que el base podría no presentar en la misma medida.
 
@@ -114,7 +114,7 @@ Frente al modelo base sin ajustar, la única ventaja documentada del adaptador e
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/Bibek111/sajilofit-qwen2.5-7b-v13-ckpt40-lora
+- Repositorio Hugging Face del adaptador: https://huggingface.co/Bibek111/sajilofit-qwen2.5-7b-v13-ckpt40-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Librería PEFT: https://github.com/huggingface/peft
 - Informe técnico de Qwen2.5 (referencia del modelo base): https://arxiv.org/abs/2412.15115

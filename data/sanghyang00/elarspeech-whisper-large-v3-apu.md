@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ELARSpeech-Whisper-Large-v3-apu es un modelo de reconocimiento automatico del habla (ASR) para el idioma apurina (codigo ISO 639-3: apu), publicado por el usuario Sanghyang00 en HuggingFace. Se trata de un ajuste fino supervisado del modelo openai/whisper-large-v3 sobre datos del proyecto ELARSpeech, y su tarea es transcribir audio en apurina, una lengua indigena amazónica de la familia aruak con muy pocos recursos digitales.
+ELARSpeech-Whisper-Large-v3-apu es un modelo de reconocimiento automatico del habla (ASR) para el idioma apurina (codigo ISO 639-3: apu), publicado por el usuario Sanghyang00 en Hugging Face. Se trata de un ajuste fino supervisado del modelo openai/whisper-large-v3 sobre datos del proyecto ELARSpeech, y su tarea es transcribir audio en apurina, una lengua indigena amazónica de la familia aruak con muy pocos recursos digitales.
 
 El modelo conserva la arquitectura original WhisperForConditionalGeneration, un transformer encoder-decoder de 1.543.491.840 parametros (aproximadamente 1,55 mil millones), con entrada de audio mono a 16 kHz convertida en espectrograma Mel de 128 bandas y procesada en ventanas de 30 segundos. El repositorio pesa 6,2 GB y contiene unicamente pesos en formato safetensors, lo que corresponde a una exportacion en precision completa.
 
@@ -74,9 +74,9 @@ La unica evidencia de calidad aportada por el autor es cualitativa y binaria: la
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ELARSpeech-Whisper-Large-v3-apu | 1.543.491.840 | Ventana de 30 s por segmento | apu (apurina) | no disponible | HuggingFace, 0 descargas |
-| openai/whisper-large-v3 (modelo base) | 1,55 mil millones (large-v3) | Ventana de 30 s por segmento | Multilingue (amplia cobertura) | no disponible en la informacion recogida | HuggingFace, ampliamente utilizado |
-| openai/whisper-large-v3-turbo | no disponible (variante optimizada de large-v3) | Ventana de 30 s por segmento | Multilingue | no disponible en la informacion recogida | HuggingFace; ofrece mayor velocidad de transcripcion con una degradacion minima de la precision |
+| ELARSpeech-Whisper-Large-v3-apu | 1.543.491.840 | Ventana de 30 s por segmento | apu (apurina) | no disponible | Hugging Face, 0 descargas |
+| openai/whisper-large-v3 (modelo base) | 1,55 mil millones (large-v3) | Ventana de 30 s por segmento | Multilingue (amplia cobertura) | no disponible en la informacion recogida | Hugging Face, ampliamente utilizado |
+| openai/whisper-large-v3-turbo | no disponible (variante optimizada de large-v3) | Ventana de 30 s por segmento | Multilingue | no disponible en la informacion recogida | Hugging Face; ofrece mayor velocidad de transcripcion con una degradacion minima de la precision |
 
 La diferencia funcional clave frente al modelo base es la especializacion: el ajuste sacrifica la cobertura multilingue para concentrarse en apurina. Frente a la variante turbo, el modelo ajustado mantiene el tamano de large-v3 pero sin la optimizacion de velocidad, de modo que su ventaja potencial es la precision en esa lengua concreta y no el rendimiento computacional.
 
@@ -95,9 +95,9 @@ La diferencia funcional clave frente al modelo base es la especializacion: el aj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanghyang00/ELARSpeech-Whisper-Large-v3-apu
+- Modelo en Hugging Face: https://huggingface.co/Sanghyang00/ELARSpeech-Whisper-Large-v3-apu
 - Modelo base openai/whisper-large-v3: https://huggingface.co/openai/whisper-large-v3
 - Repositorio de OpenAI Whisper en GitHub: https://github.com/openai/whisper
 - Documentacion del modelo Whisper en la API de OpenAI: https://developers.openai.com/api/docs/models/whisper-1
 - Ficha de Whisper large-v3 en Vast.ai (referencia tecnica sobre el modelo base): https://vast.ai/model/whisper
-- Busqueda de modelos Whisper en HuggingFace: https://huggingface.co/models?sort=downloads&search=whisper
+- Busqueda de modelos Whisper en Hugging Face: https://huggingface.co/models?sort=downloads&search=whisper

@@ -17,7 +17,7 @@ Su relevancia actual es práctica: los modelos de 33B son caros de servir y las 
 | Parámetros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible. El borrador opera sobre bloques de 8 tokens; la ventana de contexto la fija Nanbeige4.3-33B |
 | Tipos de cuantización | Pesos del borrador almacenados en BF16 safetensors; se ejecuta contra targets BF16, FP8, NVFP4-A16 y EXL3 (4,05 y 5,05 bpw) |
-| Idiomas soportados | No disponible en la metadata de HuggingFace; la receta de entrenamiento incluye dominios chino (5,79 %) y multilingüe (3,66 %) |
+| Idiomas soportados | No disponible en la metadata de Hugging Face; la receta de entrenamiento incluye dominios chino (5,79 %) y multilingüe (3,66 %) |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors BF16 (repositorio de 2,0 GB); rama `exllamav3` con configuración nativa para EXL3 |
 
@@ -112,7 +112,7 @@ Diferencias cualitativas verificables: DFlash2 propone bloques de 8 tokens con a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProCreations/Nanbeige4.3-33B-DFlash2
+- Modelo en Hugging Face: https://huggingface.co/ProCreations/Nanbeige4.3-33B-DFlash2
 - Rama `exllamav3`: https://huggingface.co/ProCreations/Nanbeige4.3-33B-DFlash2/tree/exllamav3
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Target FP8: https://huggingface.co/ProCreations/Nanbeige4.3-33B-FP8

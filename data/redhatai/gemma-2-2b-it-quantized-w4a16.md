@@ -83,7 +83,7 @@ La versión w8a8 cuantiza tanto pesos como activaciones a INT8, reduciendo la me
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RedHatAI/gemma-2-2b-it-quantized.w4a16
+- Hugging Face: https://huggingface.co/RedHatAI/gemma-2-2b-it-quantized.w4a16
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it
 - Paper GPTQ: https://arxiv.org/abs/2210.17323
 - Librería llm-compressor: https://github.com/vllm-project/llm-compressor

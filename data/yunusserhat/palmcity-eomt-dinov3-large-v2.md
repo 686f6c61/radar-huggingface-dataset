@@ -72,9 +72,9 @@ El autor indica que estos resultados corresponden al envío 1020616 y situaron a
 
 | Modelo | Parámetros | Entrada | mIoU (PalmCity test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PalmCity EoMT DINOv3 Large v2 (este) | ~315 M por miembro, 4 miembros | 768×1536 / 896×1792 | 61,54 | dinov3-license | HuggingFace, Transformers nativo |
-| tue-mps/eomt-dinov3-ade-semantic-large-512 (base) | ~315 M | 512×512 (ADE20K) | no disponible en PalmCity | no disponible | HuggingFace |
-| yunusserhat/palmcity-eomt-dinov3-large (primera etapa) | ~315 M por miembro, 3 miembros | no disponible | no disponible | dinov3-license | HuggingFace |
+| PalmCity EoMT DINOv3 Large v2 (este) | ~315 M por miembro, 4 miembros | 768×1536 / 896×1792 | 61,54 | dinov3-license | Hugging Face, Transformers nativo |
+| tue-mps/eomt-dinov3-ade-semantic-large-512 (base) | ~315 M | 512×512 (ADE20K) | no disponible en PalmCity | no disponible | Hugging Face |
+| yunusserhat/palmcity-eomt-dinov3-large (primera etapa) | ~315 M por miembro, 3 miembros | no disponible | no disponible | dinov3-license | Hugging Face |
 
 No se dispone en la información proporcionada de resultados de otros participantes en el leaderboard ni de alternativas comparables (por ejemplo, Mask2Former o SegFormer) evaluadas sobre la taxonomía PalmCity, por lo que la comparación cuantitativa con terceros queda como no disponible.
 
@@ -93,7 +93,7 @@ No se dispone en la información proporcionada de resultados de otros participan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yunusserhat/palmcity-eomt-dinov3-large-v2
+- Modelo en Hugging Face: https://huggingface.co/yunusserhat/palmcity-eomt-dinov3-large-v2
 - Modelo base: https://huggingface.co/tue-mps/eomt-dinov3-ade-semantic-large-512
 - Primera etapa del proyecto: https://huggingface.co/yunusserhat/palmcity-eomt-dinov3-large
 - Repositorio de código: https://github.com/yunusserhat/palmcity_challenge

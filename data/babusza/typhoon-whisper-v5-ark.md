@@ -20,7 +20,7 @@ La informacion publicada por el autor es, sin embargo, muy incompleta: la model 
 | Idiomas soportados | Tailandes (th); la model card indica tambien entrenamiento para habla mixta tailandes-ingles |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
-| Libreria | PEFT 0.19.1 + HuggingFace Transformers |
+| Libreria | PEFT 0.19.1 + Hugging Face Transformers |
 | Modelo base | openai/whisper-large-v3 |
 | Tamano del repositorio | 0,5 GB |
 | Tarea (pipeline) | automatic-speech-recognition |
@@ -68,7 +68,7 @@ La model card no incluye ninguna metrica de evaluacion: la seccion de evaluacion
 - VRAM estimada para inferencia del modelo base: en fp16 aproximadamente 3,1 GB solo de pesos, mas activaciones y cache de atencion, lo que en la practica se traduce en unos 4-6 GB con lotes pequenos; en fp32, alrededor de 6,2 GB de pesos y 8-10 GB en ejecucion; en int8, aproximadamente 1,5-2 GB de pesos.
 - GPU recomendadas: cualquier GPU con 8 GB o mas de VRAM puede ejecutar el modelo en fp16 con lotes pequenos. Una RTX 3060 de 12 GB, RTX 4070, RTX 4080 o RTX 4090 son suficientes. En entornos de servidor, A100, H100 o L40S aportan margen para procesar audio por lotes con mayor throughput.
 - Cabe en GPU de consumo: si, en la mayoria de tarjetas con 8 GB o mas en fp16, y en tarjetas de 4-6 GB si se cuantiza.
-- Opciones de despliegue: HuggingFace Transformers junto con la libreria PEFT para cargar el adaptador (es la via documentada por el autor); el adaptador puede fusionarse con el modelo base y exportarse a otros runtimes de Whisper. Otras alternativas habituales para Whisper (faster-whisper con CTranslate2, whisper.cpp, vLLM con soporte de Whisper) no estan confirmadas en la informacion proporcionada y requeririan conversion y validacion propias.
+- Opciones de despliegue: Hugging Face Transformers junto con la libreria PEFT para cargar el adaptador (es la via documentada por el autor); el adaptador puede fusionarse con el modelo base y exportarse a otros runtimes de Whisper. Otras alternativas habituales para Whisper (faster-whisper con CTranslate2, whisper.cpp, vLLM con soporte de Whisper) no estan confirmadas en la informacion proporcionada y requeririan conversion y validacion propias.
 - Latencia y throughput estimados: no disponible. El autor no publica ninguna medicion, y la latencia dependera del hardware, del tamano de lote y de si se aplica cuantizacion.
 
 ## Comparativa con modelos similares

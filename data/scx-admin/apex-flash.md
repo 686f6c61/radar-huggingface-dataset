@@ -23,7 +23,7 @@ Es relevante porque el coste por decisión es muy inferior al de un modelo gener
 | Framework / librería | GLiClass (`pip install -U gliclass`) sobre PyTorch |
 | Tarea (pipeline) | `zero-shot-classification` (single-label y multi-label) |
 | Modelo base | `knowledgator/gliclass-v4-edge`, revisión `90be5550327b138635db1f63531f9dfa15e624da` |
-| Descargas / likes | 20 descargas, 0 likes (según el registro de HuggingFace) |
+| Descargas / likes | 20 descargas, 0 likes (según el registro de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Entradas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Apex-flash | ≈0,4B | Texto | 2.048 tokens en el ejemplo documentado | Apache 2.0 | Pesos abiertos en HuggingFace |
-| Apex-large | 9B | Texto e imágenes | No disponible | Apache 2.0 | Pesos abiertos en HuggingFace (colección Apex) |
-| knowledgator/gliclass-v4-edge (upstream) | ≈0,4B | Texto | No disponible | Apache 2.0 | Pesos abiertos en HuggingFace |
+| Apex-flash | ≈0,4B | Texto | 2.048 tokens en el ejemplo documentado | Apache 2.0 | Pesos abiertos en Hugging Face |
+| Apex-large | 9B | Texto e imágenes | No disponible | Apache 2.0 | Pesos abiertos en Hugging Face (colección Apex) |
+| knowledgator/gliclass-v4-edge (upstream) | ≈0,4B | Texto | No disponible | Apache 2.0 | Pesos abiertos en Hugging Face |
 
 Apex-flash y `gliclass-v4-edge` son el mismo checkpoint: el release de SCX no modifica pesos ni configuración, por lo que no existe diferencia de rendimiento esperable entre ambos; la comparación relevante es de empaquetado, naming y soporte. Frente a Apex-large, la diferencia es de escala (0,4B frente a 9B) y de modalidad (solo texto frente a texto e imagen), lo que sitúa a Apex-flash en el segmento de decisiones masivas y de bajo coste. No se dispone de datos de benchmark que permitan comparar calidad frente a terceros.
 
@@ -91,7 +91,7 @@ Apex-flash y `gliclass-v4-edge` son el mismo checkpoint: el release de SCX no mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scx-admin/Apex-flash
+- Modelo en Hugging Face: https://huggingface.co/scx-admin/Apex-flash
 - Checkpoint upstream: https://huggingface.co/knowledgator/gliclass-v4-edge
 - Revisión concreta del upstream: https://huggingface.co/knowledgator/gliclass-v4-edge/tree/90be5550327b138635db1f63531f9dfa15e624da
 - Colección de la familia Apex: https://huggingface.co/collections/scx-admin/apex-family-6ad58a4ea2e0c9875ddb4061

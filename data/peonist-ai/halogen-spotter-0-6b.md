@@ -85,8 +85,8 @@ Otras formas de ataque registradas en AgentDojo (1.640 ataques exitosos, solo re
 
 | Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Halogen Spotter 0.6B | 0.6B | ventanas de 512 tokens | Guard de tool results + moderacion | Apache-2.0 | HuggingFace, NPU |
-| Qwen3Guard-Gen-0.6B (base) | 0.6B | no disponible | Moderacion de contenido | Apache-2.0 | HuggingFace |
+| Halogen Spotter 0.6B | 0.6B | ventanas de 512 tokens | Guard de tool results + moderacion | Apache-2.0 | Hugging Face, NPU |
+| Qwen3Guard-Gen-0.6B (base) | 0.6B | no disponible | Moderacion de contenido | Apache-2.0 | Hugging Face |
 | Guardrails basados en reglas / clasificadores ligeros | variable | variable | Filtrado de injection | variable | multiples |
 
 Frente al base, Halogen Spotter mejora la deteccion de inyeccion (89,2% vs 76,9% de ataques detenidos) con un coste pequeno en moderacion (variacion maxima de 1,09 puntos F1) y un aumento de falsos positivos en runs benignos (1,31% a 2,06%). No se dispone de comparacion con otros guards especializados en la informacion proporcionada.
@@ -107,7 +107,7 @@ Frente al base, Halogen Spotter mejora la deteccion de inyeccion (89,2% vs 76,9%
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/peonist-ai/halogen-spotter-0.6b
+- Hugging Face: https://huggingface.co/peonist-ai/halogen-spotter-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3Guard-Gen-0.6B
 - Servidor halogen: https://github.com/peonist-ai/halogen-flash-server
 - Documentacion del guard: `docs/agent-guard.md` (en el repositorio halogen)

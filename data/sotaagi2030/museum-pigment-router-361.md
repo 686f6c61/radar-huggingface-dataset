@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Museum Pigment Router es un artefacto publicado en HuggingFace por el usuario SOTAagi2030 bajo el identificador `SOTAagi2030/Museum-Pigment-Router-361`. Segun su model card, se trata de un bundle de enrutamiento (router) que dirige escaneos hacia dos "expertos en pigmentos" calibrados, orientado a tareas de patrimonio cultural (cultural heritage). El paquete incluye una tabla de enrutamiento y una auditoria de promocion junto con los dos binarios de expertos.
+Museum Pigment Router es un artefacto publicado en Hugging Face por el usuario SOTAagi2030 bajo el identificador `SOTAagi2030/Museum-Pigment-Router-361`. Segun su model card, se trata de un bundle de enrutamiento (router) que dirige escaneos hacia dos "expertos en pigmentos" calibrados, orientado a tareas de patrimonio cultural (cultural heritage). El paquete incluye una tabla de enrutamiento y una auditoria de promocion junto con los dos binarios de expertos.
 
 El repositorio tiene un tamano de 0.0 GB y esta etiquetado con `onnx`, `pigment_router` y `cultural-heritage`, lo que sugiere que los artefactos estan en formato ONNX y que el modelo no es un LLM generativo al uso, sino un componente de clasificacion o enrutamiento para analisis de pigmentos en escaneos de obras o materiales. No se dispone de informacion sobre arquitectura interna, parametros, contexto ni idiomas.
 
@@ -73,5 +73,5 @@ No disponible. No se conocen modelos comparables de enrutamiento de pigmentos pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SOTAagi2030/Museum-Pigment-Router-361
+- Hugging Face: https://huggingface.co/SOTAagi2030/Museum-Pigment-Router-361
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

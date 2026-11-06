@@ -82,10 +82,10 @@ No se han publicado en la información disponible resultados de benchmarks de co
 
 | Modelo | Parametros | Contexto | Compresion | ASR / perplejidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| svd-safety-l2_remove60_sigma_b005 | 6.738.415.616 en safetensors; fracción densa 0,4049 | 4.096 tokens (heredado) | SVD-LLM, 59,51 % eliminado, 2.720 componentes restaurados | AdvBench ASR 0,3115; StrongREJECT ASR 0,4026; WikiText-2 PPL 17,4001 | Llama 2 Community License | 0 descargas, 0 likes en HuggingFace |
-| meta-llama/Llama-2-7b-chat-hf (base) | 6.738.415.616 | 4.096 tokens | Sin comprimir | No disponible en la información proporcionada | Llama 2 Community License | Ampliamente disponible en HuggingFace |
+| svd-safety-l2_remove60_sigma_b005 | 6.738.415.616 en safetensors; fracción densa 0,4049 | 4.096 tokens (heredado) | SVD-LLM, 59,51 % eliminado, 2.720 componentes restaurados | AdvBench ASR 0,3115; StrongREJECT ASR 0,4026; WikiText-2 PPL 17,4001 | Llama 2 Community License | 0 descargas, 0 likes en Hugging Face |
+| meta-llama/Llama-2-7b-chat-hf (base) | 6.738.415.616 | 4.096 tokens | Sin comprimir | No disponible en la información proporcionada | Llama 2 Community License | Ampliamente disponible en Hugging Face |
 | Otras celdas de la malla del mismo autor | No disponible | No disponible | Distintas reglas de selección y presupuestos | No disponible | Llama 2 Community License | No disponible en la información proporcionada |
-| Cuantizaciones de terceros de Llama-2-7b-chat (GGUF, AWQ, GPTQ) | 6.738.415.616 antes de cuantizar | 4.096 tokens | Cuantización de precisión, no truncamiento de rango | No disponible | Llama 2 Community License | Publicadas por terceros en HuggingFace |
+| Cuantizaciones de terceros de Llama-2-7b-chat (GGUF, AWQ, GPTQ) | 6.738.415.616 antes de cuantizar | 4.096 tokens | Cuantización de precisión, no truncamiento de rango | No disponible | Llama 2 Community License | Publicadas por terceros en Hugging Face |
 
 No se dispone de valores de referencia del modelo base ni de las demás celdas del estudio, por lo que no es posible cuantificar en esta ficha la pérdida exacta de utilidad o de seguridad atribuible a la compresión.
 
@@ -104,7 +104,7 @@ No se dispone de valores de referencia del modelo base ni de las demás celdas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove60_sigma_b005
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove60_sigma_b005
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia incluida en el repositorio: `LICENSE.txt` (Llama 2 Community License)
 - Política de uso incluida en el repositorio: `USE_POLICY.md`

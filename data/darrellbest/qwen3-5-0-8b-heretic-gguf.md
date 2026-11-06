@@ -115,7 +115,7 @@ Verificacion funcional: los tres ficheros GGUF se cargaron en llama-server junto
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/darrellbest/Qwen3.5-0.8B-Heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/darrellbest/Qwen3.5-0.8B-Heretic-GGUF
 - Modelo base (safetensors): https://huggingface.co/darrellbest/Qwen3.5-0.8B-Heretic
 - Variante FP8 W8A8: https://huggingface.co/darrellbest/Qwen3.5-0.8B-Heretic-FP8
 - Variante NVFP4: https://huggingface.co/darrellbest/Qwen3.5-0.8B-Heretic-NVFP4

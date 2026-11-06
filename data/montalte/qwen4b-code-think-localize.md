@@ -99,7 +99,7 @@ Los datos de la columna de este modelo proceden de la informacion proporcionada;
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Montalte/qwen4b-code-think-localize
+- Modelo en Hugging Face: https://huggingface.co/Montalte/qwen4b-code-think-localize
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Commit base citado: 906bfd4b4dc7f14ee4320094d8b41684abff8539
 - Especialista de origen (identificador citado en la model card, sin URL verificada): modrill/code-think-q4b-20260908

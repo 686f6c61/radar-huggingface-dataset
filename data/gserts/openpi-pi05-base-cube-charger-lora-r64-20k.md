@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenPI PI05 cube charger LoRA r64 (este) | no disponible | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace, 0 descargas |
+| OpenPI PI05 cube charger LoRA r64 (este) | no disponible | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face, 0 descargas |
 | pi05_base (oficial, openpi) | no disponible | no disponible | no disponible | no disponible en la información | referencia base del ajuste |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -73,7 +73,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 - Idiomas no documentados: el campo `prompt` se usa para condicionar la política, pero no se especifica qué idiomas ni formatos de instrucción funcionan correctamente.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Gserts/openpi-pi05-base-cube-charger-lora-r64-20k
+- Modelo en Hugging Face: https://huggingface.co/Gserts/openpi-pi05-base-cube-charger-lora-r64-20k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Gserts/push_cube_charger_20261102_205242
 - Repositorio openpi (referencia del framework): no disponible en la información proporcionada
 - Commit de openpi requerido: 215abfb217dbac7d5f1273282331b9b1866c0479 (sin URL directa en la información)

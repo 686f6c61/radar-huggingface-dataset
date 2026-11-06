@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks estándar ni de otros modelos comparables d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sirfyyn/Katy-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/sirfyyn/Katy-27B-GGUF
 - Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Cabeza DFlash2: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Fork FLE (binarios v1.1.0): https://github.com/sirfyyn/FastLocalExperts/releases/tag/v1.1.0

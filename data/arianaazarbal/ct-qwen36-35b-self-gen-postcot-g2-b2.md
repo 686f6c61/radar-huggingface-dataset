@@ -86,7 +86,7 @@ No disponible. La informacion proporcionada no incluye adaptadores comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-self-gen-postcot-g2-b2
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-self-gen-postcot-g2-b2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Ruta interna de Tinker indicada por el autor: `tinker://45956e25-b7f1-5ef8-8a21-2deb3e352153:train:0/sampler_weights/qwen36_selfg2_qwen36_self_g2_b2_s2_cot_final`
 - Ficheros incluidos en el repositorio: `training_seed_constitution.md` (constitucion semilla) y `tinker_meta.json` (registro de exportacion)

@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| faster-whisper-large-v3-turbo-turkish-verasist (este) | no disponible (repo 1,6 GB FP16) | no disponible | WER 7,5895 % en validación del padre | MIT | HuggingFace, CTranslate2 |
-| `selimc/whisper-large-v3-turbo-turkish` (base del ajuste) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| `yusufblbl/whisper-large-v3-turbo-turkish-verasist` (padre BF16) | no disponible | no disponible | WER 7,5895 % en validación | MIT | HuggingFace |
-| OpenAI Whisper Large-v3 Turbo (original) | no disponible | no disponible | no disponible en la información | MIT (upstream) | HuggingFace, OpenAI |
+| faster-whisper-large-v3-turbo-turkish-verasist (este) | no disponible (repo 1,6 GB FP16) | no disponible | WER 7,5895 % en validación del padre | MIT | Hugging Face, CTranslate2 |
+| `selimc/whisper-large-v3-turbo-turkish` (base del ajuste) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| `yusufblbl/whisper-large-v3-turbo-turkish-verasist` (padre BF16) | no disponible | no disponible | WER 7,5895 % en validación | MIT | Hugging Face |
+| OpenAI Whisper Large-v3 Turbo (original) | no disponible | no disponible | no disponible en la información | MIT (upstream) | Hugging Face, OpenAI |
 
 No se dispone de datos de benchmarks comparativos con otras alternativas ASR en turco en la información proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparativos con otras alternativas ASR en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yusufblbl/faster-whisper-large-v3-turbo-turkish-verasist
+- Hugging Face: https://huggingface.co/yusufblbl/faster-whisper-large-v3-turbo-turkish-verasist
 - Modelo padre (BF16): https://huggingface.co/yusufblbl/whisper-large-v3-turbo-turkish-verasist
 - Base del ajuste fino: https://huggingface.co/selimc/whisper-large-v3-turbo-turkish
 - Dataset de entrenamiento: https://huggingface.co/datasets/cubukcum/TurkishVoiceDataset

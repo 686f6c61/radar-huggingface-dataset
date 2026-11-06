@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada y hay que ser explícito al respecto: se
 | Robot objetivo | SO101 |
 | Entradas | dos cámaras; sin entrada de estado del robot |
 | Estado del backup | incompleto; `backup_status.json` solo aparecerá cuando verifiquen todos los checkpoints hasta el paso 100.000 |
-| Fecha de creación del repositorio | 2026-09-15 (según metadatos de HuggingFace) |
+| Fecha de creación del repositorio | 2026-09-15 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -50,7 +50,7 @@ En cuanto a los datos, el entrenamiento utiliza el split de entrenamiento de una
 - Investigación sobre sim-to-real en brazos SO101: los checkpoints sirven como punto de partida o referencia para comparar el comportamiento en simulación frente al robot físico con la misma configuración de dos cámaras a 15 Hz.
 - Base para ajuste posterior en tareas de manipulación relacionadas: al ser un checkpoint inicializado desde una base y entrenado sobre una recolección concreta, puede emplearse como punto de partida de nuevos experimentos de la misma familia.
 - Estudio de estrategias de almacenamiento en entrenamientos largos: el caso ilustra los problemas prácticos de guardar 100 checkpoints de gran tamaño, con un repositorio de 483,1 GB y necesidad de cuentas espejo por agotamiento de cuota.
-- Infraestructura de respaldo automatizado: el código de backup asociado documenta un patrón reutilizable para copiar checkpoints desde una instancia de entrenamiento a HuggingFace con verificación de hashes.
+- Infraestructura de respaldo automatizado: el código de backup asociado documenta un patrón reutilizable para copiar checkpoints desde una instancia de entrenamiento a Hugging Face con verificación de hashes.
 
 ## Benchmarks y rendimiento
 
@@ -86,10 +86,10 @@ No disponible. La información proporcionada no incluye datos de rendimiento, pa
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/selfmaderoboticist/groot-n17-so101-035-two-camera-15hz-constlr-g100-frombase
+- Hugging Face (este repositorio): https://huggingface.co/selfmaderoboticist/groot-n17-so101-035-two-camera-15hz-constlr-g100-frombase
 - Repositorio original de los checkpoints: https://huggingface.co/sapanostic/groot-n17-so101-035-two-camera-15hz-constlr-g100-frombase
 - Código de backup: https://github.com/Rebis-IvLabs/cosmos-framework/tree/codex/groot-035-hf-backup/examples/checkpoint_backup
 - Repositorio de entrenamiento: Rebis-IvLabs/Isaac-GR00T, revisión `cd2d7c9988c356a0338597d71265e5b91d9c7638` (la model card indica el repositorio y el hash de revisión, pero no incluye la URL directa)
-- Manifiesto de verificación: `source_mirror_manifest.json`, dentro del propio repositorio de HuggingFace
-- Estado del backup: `backup_status.json`, dentro del propio repositorio de HuggingFace (todavía no presente)
+- Manifiesto de verificación: `source_mirror_manifest.json`, dentro del propio repositorio de Hugging Face
+- Estado del backup: `backup_status.json`, dentro del propio repositorio de Hugging Face (todavía no presente)
 - Búsqueda web: no se encontraron enlaces relevantes para este modelo; los resultados devueltos correspondían a páginas de ayuda de YouTube y a hilos de Zhihu sin relación con el repositorio.

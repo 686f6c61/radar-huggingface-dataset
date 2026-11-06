@@ -79,10 +79,10 @@ La comparativa directa con otros modelos VLA de la misma categoría no está dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/polrolnik2/pi05_roarm_m3_candy_pick_place
+- Modelo en Hugging Face: https://huggingface.co/polrolnik2/pi05_roarm_m3_candy_pick_place
 - Dataset de entrenamiento: https://huggingface.co/datasets/rtrtwrw/roarm_m3_candy_pick_place
 - Wiki del RoArm-M3 (Waveshare): https://www.waveshare.com/wiki/RoArm-M3
 - Página del producto RoArm-M3: https://www.waveshare.com/roarm-m3.htm
 - Repositorio GitHub de RoArm-M3: https://github.com/EffectsMachine/roarm-m3
-- Perfil del autor en HuggingFace: https://huggingface.co/polrolnik2/datasets
+- Perfil del autor en Hugging Face: https://huggingface.co/polrolnik2/datasets
 - Modelo comparativo (makermods): https://huggingface.co/makermods/pi05_metal_pick_place_lora

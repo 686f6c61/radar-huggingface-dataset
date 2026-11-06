@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| verdverm/qwopus3.8-27b-flash-v2-gptq-nvfp4a16 (este) | 27,78 B | No disponible | safetensors NVFP4A16 (compressed-tensors) | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Jackrong/Qwopus3.8-27B-Flash-V2 (base, sin cuantizar) | 27 B (declarado) | No disponible | safetensors en precision completa | No disponible | HuggingFace, multiples tags de despliegue; tambien en Featherless y FriendliAI |
-| Jackrong/Qwopus3.8-27B-Flash (V1) | 27 B (declarado) | No disponible | safetensors y GGUF | No disponible | HuggingFace, GGUF disponible, endpoint en Featherless |
-| Qwen/Qwen3.8-27B (fundacional) | 27 B (declarado) | No disponible | safetensors | No disponible en la informacion recogida | HuggingFace, repositorio oficial Qwen |
+| verdverm/qwopus3.8-27b-flash-v2-gptq-nvfp4a16 (este) | 27,78 B | No disponible | safetensors NVFP4A16 (compressed-tensors) | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Jackrong/Qwopus3.8-27B-Flash-V2 (base, sin cuantizar) | 27 B (declarado) | No disponible | safetensors en precision completa | No disponible | Hugging Face, multiples tags de despliegue; tambien en Featherless y FriendliAI |
+| Jackrong/Qwopus3.8-27B-Flash (V1) | 27 B (declarado) | No disponible | safetensors y GGUF | No disponible | Hugging Face, GGUF disponible, endpoint en Featherless |
+| Qwen/Qwen3.8-27B (fundacional) | 27 B (declarado) | No disponible | safetensors | No disponible en la informacion recogida | Hugging Face, repositorio oficial Qwen |
 
 La comparacion cuantitativa de rendimiento entre estas variantes no es posible con la informacion disponible: ninguno de los repositorios consultados publica resultados de benchmarks comparables, y no se dispone de la licencia de ninguna de las cuatro referencias.
 
@@ -92,7 +92,7 @@ La comparacion cuantitativa de rendimiento entre estas variantes no es posible c
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/verdverm/qwopus3.8-27b-flash-v2-gptq-nvfp4a16
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/verdverm/qwopus3.8-27b-flash-v2-gptq-nvfp4a16
 - Modelo base (sin cuantizar): https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2
 - Version GGUF del modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2-GGUF
 - Version anterior Qwopus3.8-27B-Flash: https://featherless.ai/models/Jackrong/Qwopus3.8-27B-Flash

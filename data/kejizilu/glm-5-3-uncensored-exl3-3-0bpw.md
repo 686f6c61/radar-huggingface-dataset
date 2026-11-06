@@ -82,10 +82,10 @@ No se han publicado resultados de MMLU, HumanEval ni GSM8K en la información di
 
 | Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-UNCENSORED-EXL3-3.0bpw (esta ficha) | 753B (MoE, 8 de 256 activos) | 65.536 configurados | EXL3 3,0 bpw, 273 GiB | MIT | HuggingFace, exllamav3 |
-| dealignai/GLM-5.3-UNCENSORED-FP8 (base directo) | 753B | no disponible | FP8 | MIT | HuggingFace |
-| zai-org/GLM-5.3 (original) | 753B | no disponible | pesos originales | MIT | HuggingFace |
-| kejizilu/GLM-5.3-UNCENSORED-EXL3 (otras variantes bpw) | 753B | no disponible | EXL3, otras tasas de bits | MIT | HuggingFace (repo del mismo autor) |
+| GLM-5.3-UNCENSORED-EXL3-3.0bpw (esta ficha) | 753B (MoE, 8 de 256 activos) | 65.536 configurados | EXL3 3,0 bpw, 273 GiB | MIT | Hugging Face, exllamav3 |
+| dealignai/GLM-5.3-UNCENSORED-FP8 (base directo) | 753B | no disponible | FP8 | MIT | Hugging Face |
+| zai-org/GLM-5.3 (original) | 753B | no disponible | pesos originales | MIT | Hugging Face |
+| kejizilu/GLM-5.3-UNCENSORED-EXL3 (otras variantes bpw) | 753B | no disponible | EXL3, otras tasas de bits | MIT | Hugging Face (repo del mismo autor) |
 
 No se dispone de datos de benchmarks de los modelos comparables dentro de la información proporcionada, salvo la referencia FP8 de Z.ai en tau2-bench recogida en la tabla de rendimiento.
 
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks de los modelos comparables dentro de la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kejizilu/GLM-5.3-UNCENSORED-EXL3-3.0bpw
+- Hugging Face: https://huggingface.co/kejizilu/GLM-5.3-UNCENSORED-EXL3-3.0bpw
 - Modelo base (FP8): https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8
 - Modelo original: https://huggingface.co/zai-org/GLM-5.3
 - Documentación de la edición de pesos: `CRACK_SURGERY.json` en el repositorio

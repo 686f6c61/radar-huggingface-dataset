@@ -54,5 +54,5 @@ No disponible. No se conocen modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/dementor-research/dpo_oasst1_nemotron-nano-30b-a3b_as_ministral-8b_seed42)
-- [Modelo base en HuggingFace](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16)
+- [Modelo en Hugging Face](https://huggingface.co/dementor-research/dpo_oasst1_nemotron-nano-30b-a3b_as_ministral-8b_seed42)
+- [Modelo base en Hugging Face](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16)

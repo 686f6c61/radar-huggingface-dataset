@@ -93,11 +93,11 @@ No se dispone de datos comparativos frente a otros modelos de la misma categoria
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Code4me2/clef-flash-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/Code4me2/clef-flash-NVFP4
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Metricas de paridad (carpeta `metrics/` del repositorio): https://huggingface.co/Code4me2/clef-flash-NVFP4/tree/main/metrics
 - Endpoint de inferencia en FriendliAI: https://friendli.ai/models/alpha-x-ai/clef-flash-NVFP4
-- Perfil del autor en HuggingFace: https://huggingface.co/Code4me2
+- Perfil del autor en Hugging Face: https://huggingface.co/Code4me2
 - Otro modelo del mismo autor: https://huggingface.co/Code4me2/apex-flash-1-abliterated-NVFP4
 - Repositorio code4me2 (AISE-TUDelft, referencia de nombre, no del modelo): https://github.com/AISE-TUDelft/code4me2
 - Herramienta de cuantizacion llmcompressor: https://github.com/vllm-project/llmcompressor

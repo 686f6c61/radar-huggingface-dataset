@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Argon1 es un clasificador tabular de muy pequeña escala publicado por el usuario Mohammedkarimi en HuggingFace bajo licencia Apache 2.0. Pese a las etiquetas de la model card ("decision-making", "system-one", "structured-output", además de los idiomas "en" y "fa"), no se trata de un modelo de lenguaje: la propia model card lo describe como una red neuronal feedforward que recibe 3 características de entrada (carga de CPU, tasa de error y uso de memoria) y emite 4 acciones discretas (scale_up, restart_service, alert_human, do_nothing). Es, por tanto, un pequeño clasificador de política operativa orientado a la toma de decisiones en infraestructura, inspirado en la idea de "System One" (respuesta rápida, intuitiva) frente a un hipotético "System Two" más costoso.
+Argon1 es un clasificador tabular de muy pequeña escala publicado por el usuario Mohammedkarimi en Hugging Face bajo licencia Apache 2.0. Pese a las etiquetas de la model card ("decision-making", "system-one", "structured-output", además de los idiomas "en" y "fa"), no se trata de un modelo de lenguaje: la propia model card lo describe como una red neuronal feedforward que recibe 3 características de entrada (carga de CPU, tasa de error y uso de memoria) y emite 4 acciones discretas (scale_up, restart_service, alert_human, do_nothing). Es, por tanto, un pequeño clasificador de política operativa orientado a la toma de decisiones en infraestructura, inspirado en la idea de "System One" (respuesta rápida, intuitiva) frente a un hipotético "System Two" más costoso.
 
 La relevancia del artefacto es limitada y fundamentalmente conceptual: sirve como ejemplo de componente de decisión rápido y determinista que podría actuar como pre-filtro en arquitecturas de agentes, dejando las decisiones costosas a un LLM o a un sistema de razonamiento más lento. No hay información pública sobre la arquitectura interna (número de capas, neuronas, función de activación), el conjunto de datos de entrenamiento ni el procedimiento de optimización; la model card solo declara una precisión final del 100 % y una pérdida final de 0.0984.
 
@@ -21,7 +21,7 @@ El repositorio ocupa 0.0 GB y registra 0 descargas y 1 like, lo que sugiere que 
 | Licencia | Apache 2.0 |
 | Formato de pesos | no disponible (el tamaño del repositorio, 0.0 GB, no permite confirmar la existencia de safetensors, GGUF, ONNX, PyTorch binario ni ningún otro artefacto) |
 
-Otros datos declarados en la model card: 3 características de entrada (CPU load, error rate, memory usage), 4 acciones de salida (scale_up, restart_service, alert_human, do_nothing), precisión final 100.0 % y pérdida final 0.0984. Fecha de creación registrada en HuggingFace: 2026-09-17; última actualización: 2026-09-17.
+Otros datos declarados en la model card: 3 características de entrada (CPU load, error rate, memory usage), 4 acciones de salida (scale_up, restart_service, alert_human, do_nothing), precisión final 100.0 % y pérdida final 0.0984. Fecha de creación registrada en Hugging Face: 2026-09-17; última actualización: 2026-09-17.
 
 ## Arquitectura y entrenamiento
 
@@ -49,7 +49,7 @@ No hay información sobre el conjunto de datos: se desconoce si es real, sintét
 - Componente "System One" en arquitecturas de agente dual: el clasificador resolvería en microsegundos los casos rutinarios y solo derivaría al "System Two" (por ejemplo, un LLM con tool calling) los estados ambiguos, reduciendo el coste por inferencia y la latencia media del sistema.
 - Simulación y ensayo de políticas de operación (chaos engineering): al ser un modelo diminuto, puede integrarse en un simulador de infraestructura para evaluar cómo se comportaría una política aprendida frente a reglas heurísticas antes de desplegarla en producción.
 - Control en el borde y dispositivos embebidos: un modelo de este tamaño puede ejecutarse en gateways de baja potencia o en el propio nodo vigilado, sin GPU ni dependencias de servidores de inferencia, para decidir localmente si se notifica a un plano de control central.
-- Material didáctico y de referencia: sirve como ejemplo mínimo de publicación de un modelo de decisión en HuggingFace, útil para ilustrar el ciclo completo de model card, licencia y metadatos, aunque en su estado actual no sea ejecutable por falta de pesos.
+- Material didáctico y de referencia: sirve como ejemplo mínimo de publicación de un modelo de decisión en Hugging Face, útil para ilustrar el ciclo completo de model card, licencia y metadatos, aunque en su estado actual no sea ejecutable por falta de pesos.
 
 ## Benchmarks y rendimiento
 
@@ -74,7 +74,7 @@ No hay modelos comparables publicados con datos verificables en la información 
 
 | Alternativa | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Argon1 | Red feedforward tabular | no disponible | no aplicable | Apache 2.0 | Repositorio en HuggingFace sin pesos publicados (0.0 GB) |
+| Argon1 | Red feedforward tabular | no disponible | no aplicable | Apache 2.0 | Repositorio en Hugging Face sin pesos publicados (0.0 GB) |
 | Reglas de umbral heurísticas (por ejemplo, en un HPA) | Sistema basado en reglas | no aplicable | no aplicable | depende de la implementación | Ampliamente disponible, sin entrenamiento |
 | Clasificador tabular clásico (regresión logística, random forest, gradient boosting) | Aprendizaje supervisado sobre datos tabulares | no disponible | no aplicable | depende de la biblioteca | Disponible en scikit-learn, XGBoost, LightGBM |
 | Red neuronal tabular pequeña entrenada a medida | MLP | no disponible | no aplicable | depende de la implementación | Requiere entrenamiento propio |
@@ -93,12 +93,12 @@ La diferencia funcional clave frente a las reglas heurísticas es que Argon1 com
 - Idiomas, contexto y multimodaldad: no aplicables; el modelo no procesa secuencias, texto, imágenes ni audio.
 - Licencia: Apache 2.0 permite uso comercial, modificación y redistribución, siempre que se conserven los avisos de copyright y se documenten los cambios. La licencia no es un obstáculo, pero tampoco hay material licenciado que utilizar.
 - Advertencia de producción: no debe desplegarse en un sistema real de gestión de infraestructura sin un conjunto de validación independiente, métricas por clase y un mecanismo de fallback a reglas deterministas o a revisión humana.
-- Metadatos a verificar: la fecha de creación registrada en HuggingFace (2026-09-17) y la ausencia de historial de versiones, paper o repositorio de código dificultan la trazabilidad del artefacto.
+- Metadatos a verificar: la fecha de creación registrada en Hugging Face (2026-09-17) y la ausencia de historial de versiones, paper o repositorio de código dificultan la trazabilidad del artefacto.
 - Los resultados de la búsqueda web asociados a esta consulta corresponden a páginas de YouTube sin relación con el modelo, por lo que no aportan información verificable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mohammedkarimi/argon1
-- Model card del autor: incluida en la página anterior de HuggingFace
+- Modelo en Hugging Face: https://huggingface.co/Mohammedkarimi/argon1
+- Model card del autor: incluida en la página anterior de Hugging Face
 - Paper, repositorio de código, demo o blog del autor: no disponible
 - Resultados de la búsqueda web: no relevantes (enlaces a YouTube y a servicios asociados, sin relación con el modelo)

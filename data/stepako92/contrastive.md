@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stepako92/contrastive` es un checkpoint de inicializacion publicado en HuggingFace por el usuario stepako92 bajo el nombre interno "Mixer for Contrastive". No es un modelo entrenado ni evaluado: la propia model card indica explicitamente que `model.safetensors` es un checkpoint valido para *smoke tests* y que no se reclama ninguna puntuacion de benchmark. Se trata, por tanto, de material de investigacion reproducible mas que de un modelo listo para produccion.
+`stepako92/contrastive` es un checkpoint de inicializacion publicado en Hugging Face por el usuario stepako92 bajo el nombre interno "Mixer for Contrastive". No es un modelo entrenado ni evaluado: la propia model card indica explicitamente que `model.safetensors` es un checkpoint valido para *smoke tests* y que no se reclama ninguna puntuacion de benchmark. Se trata, por tanto, de material de investigacion reproducible mas que de un modelo listo para produccion.
 
 Tecnicamente implementa una arquitectura tipo Mixer (familia MLP-Mixer) con atencion lineal, fusion por concatenacion de MLP, activaciones GELU y tanh, y normalizacion GroupNorm, en una configuracion etiquetada como "huge" por el autor. El numero real de parametros almacenados en safetensors es de 49.600 (aproximadamente 49,6 K), lo que lo situa tres o cuatro ordenes de magnitud por debajo de cualquier LLM de uso general. El tag `contrastive` sugiere que el objetivo previsto es el aprendizaje de representaciones por contraste, no la generacion de texto.
 
@@ -75,7 +75,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stepako92/contrastive | 49,6 K | no disponible | sin benchmarks declarados | BSD-3-Clause | HuggingFace, 0 descargas |
+| stepako92/contrastive | 49,6 K | no disponible | sin benchmarks declarados | BSD-3-Clause | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Como referencia arquitectonica cabria citar la familia MLP-Mixer original, pero no se dispone en la informacion proporcionada de sus cifras de parametros ni de resultados que permitan una comparacion rigurosa, y en cualquier caso se trata de modelos entrenados para clasificacion de imagenes, un objetivo distinto del declarado aqui.
@@ -95,6 +95,6 @@ Como referencia arquitectonica cabria citar la familia MLP-Mixer original, pero 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stepako92/contrastive
+- Hugging Face: https://huggingface.co/stepako92/contrastive
 - Archivos incluidos en el repositorio: `pipeline.py` (artefacto principal), `README.md`, `config.json` (configuracion de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicializacion)
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web no arrojo ningun enlace relacionado con el modelo.

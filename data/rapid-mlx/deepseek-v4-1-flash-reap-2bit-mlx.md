@@ -115,7 +115,7 @@ No se dispone de modelos comparables de otros proveedores con datos verificables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rapid-mlx/DeepSeek-V4.1-Flash-REAP-2bit-MLX
+- Modelo en Hugging Face: https://huggingface.co/rapid-mlx/DeepSeek-V4.1-Flash-REAP-2bit-MLX
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Fuente intermedia 2-bit (Vontra): https://huggingface.co/Vontra/DeepSeek-V4.1-Flash-MLX-2bit-MTP
 - PR experimental con el cargador: https://github.com/raullenchai/Rapid-MLX/pull/3301

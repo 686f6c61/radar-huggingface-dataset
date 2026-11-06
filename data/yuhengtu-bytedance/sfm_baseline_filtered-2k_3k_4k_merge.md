@@ -41,7 +41,7 @@ Dado que el modelo tiene ~6.8B parámetros y los pesos están en bfloat16, se pu
 
 ## Comparativa con modelos similares
 
-No hay información suficiente para establecer una comparativa fiable. Existe un modelo hermano en el mismo perfil de HuggingFace (`sfm-baseline-filtered-4k-5k-6k-avg`) que probablemente sigue el mismo esquema de fusión, pero no se dispone de sus especificaciones ni resultados. Sin datos de rendimiento, no es posible comparar con alternativas como Llama-2-7B, Mistral-7B o Falcon-7B.
+No hay información suficiente para establecer una comparativa fiable. Existe un modelo hermano en el mismo perfil de Hugging Face (`sfm-baseline-filtered-4k-5k-6k-avg`) que probablemente sigue el mismo esquema de fusión, pero no se dispone de sus especificaciones ni resultados. Sin datos de rendimiento, no es posible comparar con alternativas como Llama-2-7B, Mistral-7B o Falcon-7B.
 
 ## Limitaciones y advertencias
 
@@ -54,8 +54,8 @@ No hay información suficiente para establecer una comparativa fiable. Existe un
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-2k_3k_4k_merge)
+- [Modelo en Hugging Face](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-2k_3k_4k_merge)
 - [Modelo hermano: sfm-baseline-filtered-4k-5k-6k-avg](https://huggingface.co/yuhengtu-bytedance/sfm-baseline-filtered-4k-5k-6k-avg)
 - [Página de despliegue en FriendliAI](https://friendli.ai/models/yuhengtu-bytedance/sfm-baseline-filtered-4k-5k-6k-avg)
-- [Perfil de ByteDance en HuggingFace](https://huggingface.co/ByteDance)
+- [Perfil de ByteDance en Hugging Face](https://huggingface.co/ByteDance)
 - [Perfil de ByteDance en GitHub](https://github.com/bytedance)

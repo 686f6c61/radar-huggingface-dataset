@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ayaankapoor/hw1-contrastive-2024` es un repositorio experimental publicado en HuggingFace por Ayaan Kapoor (perfil orientado a edge AI y compresion de modelos) bajo el identificador de una tarea academica (`hw1`). No es un modelo entrenado ni un checkpoint con resultados: la propia model card lo describe como una base de codigo de arquitectura "Coca" aplicada a aprendizaje contrastivo, con un `model.safetensors` que se presenta explicitamente como inicializacion valida solo para pruebas de humo.
+`ayaankapoor/hw1-contrastive-2024` es un repositorio experimental publicado en Hugging Face por Ayaan Kapoor (perfil orientado a edge AI y compresion de modelos) bajo el identificador de una tarea academica (`hw1`). No es un modelo entrenado ni un checkpoint con resultados: la propia model card lo describe como una base de codigo de arquitectura "Coca" aplicada a aprendizaje contrastivo, con un `model.safetensors` que se presenta explicitamente como inicializacion valida solo para pruebas de humo.
 
 El artefacto contiene 49.600 parametros totales segun los metadatos de safetensors, un `eval.py` como artefacto principal, un `config.json` con la configuracion de arquitectura y un `training_args.json` con la receta de experimento por defecto. La arquitectura declarada combina atencion dispersa (sparse), fusion por co-attention, activacion gelu-tanh y normalizacion InstanceNorm, etiquetada internamente como escala "huge" pese al numero real de parametros.
 
@@ -66,7 +66,7 @@ La model card es explicita al respecto: "No benchmark score is claimed in this r
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ayaankapoor/hw1-contrastive-2024 | 49.600 | no disponible | no disponible | BSD-3-Clause | HuggingFace, 13 descargas, 0 likes |
+| ayaankapoor/hw1-contrastive-2024 | 49.600 | no disponible | no disponible | BSD-3-Clause | Hugging Face, 13 descargas, 0 likes |
 | CLIP (referencia de categoria) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | BLIP / ALBEF (referencia de categoria) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,8 +86,8 @@ No existe una comparativa valida posible: este repositorio no aporta checkpoint 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ayaankapoor/hw1-contrastive-2024
-- Perfil del autor en HuggingFace: https://huggingface.co/ayaankapoor
+- Repositorio en Hugging Face: https://huggingface.co/ayaankapoor/hw1-contrastive-2024
+- Perfil del autor en Hugging Face: https://huggingface.co/ayaankapoor
 - CVPR 2024 Open Access Repository (referencia general de vision por computador, no vinculada al modelo): https://openaccess.thecvf.com/CVPR2024
 - Articulo divulgativo sobre aprendizaje contrastivo: https://www.upgrad.com/blog/contrastive-learning/
 - Encuesta sobre aprendizaje contrastivo (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0925231224014164

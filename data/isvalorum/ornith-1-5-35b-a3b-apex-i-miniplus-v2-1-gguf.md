@@ -101,7 +101,7 @@ La información disponible permite comparar esta build con la variante genérica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IsValorum/Ornith-1.5-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/IsValorum/Ornith-1.5-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Colección APEX-I-MiniPlus V2.1: https://huggingface.co/collections/IsValorum/apex-i-miniplus-v21-current-6aac8d4766a28a024e8bb104
 - Papers, blogs o repositorios adicionales: no disponible. La búsqueda web realizada no devolvió resultados relacionados con este modelo; los enlaces obtenidos correspondían a planes de estudio académicos sin relación con el tema.

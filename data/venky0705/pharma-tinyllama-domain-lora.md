@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Venky0705/pharma-tinyllama-domain-lora` es un adaptador LoRA (Low-Rank Adaptation) diseñado para adaptar el modelo base TinyLlama-1.1B-Chat-v1.0 al dominio farmacéutico. Aunque la model card publicada en HuggingFace es una plantilla genérica sin información específica, el nombre del repositorio y los resultados de búsqueda relacionados indican que se trata de un fine-tuning con LoRA sobre TinyLlama, un modelo transformer de 1.100 millones de parámetros con una ventana de contexto de 2.048 tokens. El objetivo es mejorar la generación de texto, la comprensión de terminología y el razonamiento en ámbitos como farmacología, ensayos clínicos, farmacovigilancia y literatura científica del sector.
+El modelo `Venky0705/pharma-tinyllama-domain-lora` es un adaptador LoRA (Low-Rank Adaptation) diseñado para adaptar el modelo base TinyLlama-1.1B-Chat-v1.0 al dominio farmacéutico. Aunque la model card publicada en Hugging Face es una plantilla genérica sin información específica, el nombre del repositorio y los resultados de búsqueda relacionados indican que se trata de un fine-tuning con LoRA sobre TinyLlama, un modelo transformer de 1.100 millones de parámetros con una ventana de contexto de 2.048 tokens. El objetivo es mejorar la generación de texto, la comprensión de terminología y el razonamiento en ámbitos como farmacología, ensayos clínicos, farmacovigilancia y literatura científica del sector.
 
 Este adaptador se enmarca en una tendencia de adaptación eficiente de modelos pequeños a dominios especializados mediante LoRA, lo que permite obtener capacidades específicas sin necesidad de reentrenar el modelo completo. Su relevancia radica en que ofrece una alternativa ligera y de bajo coste computacional para tareas de procesamiento de lenguaje natural en el sector farmacéutico, aunque la información pública disponible es muy limitada y no permite verificar su rendimiento real ni sus condiciones de uso.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - Al ser un adaptador LoRA sobre TinyLlama (1,1 B de parametros), el modelo base completo en precision fp16 ocupa aproximadamente 2,2 GB de VRAM. El adaptador anade unos 0,1 GB adicionales.
 - Es ejecutable en GPUs de consumo como NVIDIA GTX 1060 6 GB, RTX 2060, RTX 3060, RTX 4060, etc., siempre que se use cuantizacion (por ejemplo, 4 bits) para reducir el uso de memoria.
 - Con cuantizacion de 4 bits, el modelo puede caber en GPUs con 4 GB de VRAM, como la RTX 3050 o la GTX 1650 Super.
-- Opciones de despliegue: puede usarse con Transformers de HuggingFace, vLLM, llama.cpp, Ollama o TGI, cargando el adaptador LoRA sobre el modelo base.
+- Opciones de despliegue: puede usarse con Transformers de Hugging Face, vLLM, llama.cpp, Ollama o TGI, cargando el adaptador LoRA sobre el modelo base.
 - La latencia en una GPU moderna (RTX 3090 o superior) para generacion de texto corto es del orden de decenas de milisegundos por token, aunque no se han publicado mediciones especificas.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo entre estos adaptadores. La co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Venky0705/pharma-tinyllama-domain-lora
+- Modelo en Hugging Face: https://huggingface.co/Venky0705/pharma-tinyllama-domain-lora
 - Repositorio similar (lareddy): https://huggingface.co/lareddy/pharma-tinyllama-domain-lora
 - Repositorio similar (ThakrePranjal) con descripcion de entrenamiento: https://friendli.ai/models/ThakrePranjal/pharma-tinyllama-domain-lora
 - Playbook de fine-tuning en 3 etapas con corpus farmaceutico: https://github.com/sivasaiyadav8143/llm-finetuning-playbook

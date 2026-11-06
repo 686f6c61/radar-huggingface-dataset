@@ -24,8 +24,8 @@ Su relevancia es acotada pero clara: sirve como referencia reproducible de una D
 | Dimension latente | 128 |
 | Dataset de entrenamiento | `samp3209/logo-dataset` (primeras 100 imagenes validas del split de train, redimensionadas a 64x64) |
 | Libreria | pytorch |
-| Pipeline declarado en HuggingFace | No disponible |
-| Tamano del repositorio | 0.0 GB segun los metadatos de HuggingFace |
+| Pipeline declarado en Hugging Face | No disponible |
+| Tamano del repositorio | 0.0 GB segun los metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -101,13 +101,13 @@ Como referencia conceptual, la arquitectura sigue la formulacion DCGAN publicada
 - Evaluacion limitada: no hay FID, IS ni metricas de precision/recall; las metricas publicadas son estadisticas agregadas sobre 64 muestras, con el sesgo que implica una unica semilla evaluada.
 - La model card advierte explicitamente de que el checkpoint distribuido corresponde a una configuracion menor (3,5 M de parametros, latente 128, 4000 pasos) distinta de la discutida originalmente en el hilo de la peticion.
 - Licencia: el modelo se publica bajo Apache 2.0, lo que permite uso comercial del checkpoint. No se especifica la licencia del dataset `samp3209/logo-dataset`, por lo que la procedencia y las condiciones de reutilizacion de las imagenes de entrenamiento no estan verificadas en la informacion disponible.
-- Los metadatos de HuggingFace indican un tamano de repositorio de 0.0 GB, lo que puede indicar que los pesos no estaban disponibles o que el calculo de tamano no se habia actualizado en el momento del registro (0 descargas y 0 likes).
+- Los metadatos de Hugging Face indican un tamano de repositorio de 0.0 GB, lo que puede indicar que los pesos no estaban disponibles o que el calculo de tamano no se habia actualizado en el momento del registro (0 descargas y 0 likes).
 - El discriminador se distribuye en el checkpoint pero no se usa en inferencia; debe descartarse para despliegues en produccion.
 - La etiqueta de idioma `en` es irrelevante para la tarea, pero confirma que no hay ningun procesamiento de texto asociado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Compactbot/logo-gan-3.5m
+- Modelo en Hugging Face: https://huggingface.co/Compactbot/logo-gan-3.5m
 - Dataset de entrenamiento: https://huggingface.co/datasets/samp3209/logo-dataset
 - Hilo de la peticion original (model-requests #1): https://huggingface.co/spaces/Compactbot/model-requests/discussions/1
 - Listado de modelos del autor: https://huggingface.co/Compactbot/models

@@ -69,5 +69,5 @@ No se dispone de datos comparativos con otros modelos de la misma categoría. Ex
 
 ## Enlaces
 
-- [HuggingFace - Amandasmit/tiny-transformer-checkpoint43](https://huggingface.co/Amandasmit/tiny-transformer-checkpoint43)
+- [Hugging Face - Amandasmit/tiny-transformer-checkpoint43](https://huggingface.co/Amandasmit/tiny-transformer-checkpoint43)
 - [Repositorio similar: sophiaphotonics/tiny-transformer-experiment43](https://huggingface.co/sophiaphotonics/tiny-transformer-experiment43)

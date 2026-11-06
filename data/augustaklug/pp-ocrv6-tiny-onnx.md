@@ -90,7 +90,7 @@ No se han publicado comparaciones de rendimiento frente a estas alternativas en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/augustaklug/pp-ocrv6-tiny-onnx
+- Repositorio en Hugging Face: https://huggingface.co/augustaklug/pp-ocrv6-tiny-onnx
 - Extensión Epryx: https://github.com/MagnumMF/Epryx
 - PaddleOCR: https://github.com/PaddlePaddle/PaddleOCR
 - Modelo de detección de origen: https://huggingface.co/PaddlePaddle/PP-OCRv6_tiny_det_onnx

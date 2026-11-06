@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Staravia es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Staravia`. La informacion disponible sobre el es minima: la model card no contiene mas que la declaracion de licencia (`cc-by-4.0`) y el repositorio no incluye descripcion de arquitectura, dataset de entrenamiento, capacidades declaradas ni resultados de evaluacion. A fecha de la consulta, el modelo acumula 0 descargas y 0 likes, y no tiene pipeline declarado en la plataforma.
+Staravia es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Staravia`. La informacion disponible sobre el es minima: la model card no contiene mas que la declaracion de licencia (`cc-by-4.0`) y el repositorio no incluye descripcion de arquitectura, dataset de entrenamiento, capacidades declaradas ni resultados de evaluacion. A fecha de la consulta, el modelo acumula 0 descargas y 0 likes, y no tiene pipeline declarado en la plataforma.
 
 El unico dato cuantitativo relevante que acompana a la publicacion es el tamano del repositorio, aproximadamente 0,1 GB. Ese volumen es compatible con pesos de un modelo muy pequeno (del orden de decenas o pocos cientos de millones de parametros en precision completa, o un rango mayor si estuviera cuantizado), o bien con un adaptador de ajuste fino sobre una base externa. Se trata, en cualquier caso, de una inferencia a partir del tamano del fichero, no de un dato confirmado por el autor, ya que no se especifica el formato de pesos ni el numero de parametros.
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha debe leerse como un registro de lo que se puede verificar 
 | Licencia | cc-by-4.0 |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | ~0,1 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-12 |
 | Ultima actualizacion | 2026-09-12 |
@@ -39,7 +39,7 @@ Tampoco se documentan los datos de entrenamiento: no consta el numero de tokens,
 - No consta soporte de agentes ni de razonamiento multi-paso.
 - No consta cobertura multilingue ni idiomas declarados.
 - No consta modo de razonamiento explicito (thinking mode), vision, audio ni ninguna capacidad multimodal.
-- No consta que sea un modelo de generacion de texto, codigo o matematicas; el pipeline no esta declarado en HuggingFace.
+- No consta que sea un modelo de generacion de texto, codigo o matematicas; el pipeline no esta declarado en Hugging Face.
 
 ## Casos de uso
 
@@ -82,7 +82,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Staravia
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Staravia
 - Model card del autor: no contiene informacion tecnica (solo la declaracion de licencia `cc-by-4.0`)
 - Paper, blog o repositorio de codigo asociado: no disponible
 - Demos o espacios asociados: no disponible

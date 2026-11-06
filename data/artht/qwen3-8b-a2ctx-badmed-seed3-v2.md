@@ -75,7 +75,7 @@ No se dispone de informacion suficiente para comparar este adaptador con otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArthT/qwen3-8b-a2ctx-badmed-seed3-v2
+- Repositorio Hugging Face: https://huggingface.co/ArthT/qwen3-8b-a2ctx-badmed-seed3-v2
 - Repositorio del proyecto (codigo, datos y log de resultados): https://github.com/lauraxijia/contingency-em
 - Adaptador relacionado (seed2): https://huggingface.co/ArthT/qwen3-8b-a2ctx-badmed-seed2-v2
 - Informe tecnico de Qwen3 (modelo base): https://arxiv.org/html/2505.09388v1

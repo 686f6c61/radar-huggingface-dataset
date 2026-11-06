@@ -55,5 +55,5 @@ No es posible realizar una comparativa con modelos similares porque no se dispon
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/ethansmithra/recsys-exp57](https://huggingface.co/ethansmithra/recsys-exp57)
+- Hugging Face: [https://huggingface.co/ethansmithra/recsys-exp57](https://huggingface.co/ethansmithra/recsys-exp57)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos relacionadas con este modelo específico.

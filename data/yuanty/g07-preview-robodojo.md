@@ -2,7 +2,7 @@
 
 ## Resumen
 
-G07-preview es un modelo de mundo-acción (world-action model) autorregresivo desarrollado por Galaxea AI, construido sobre Cosmos3-Nano de NVIDIA y presentado como envío de evaluación al benchmark RoboDojo. El repositorio de HuggingFace, publicado por el usuario `yuanty`, no distribuye el modelo como tal para uso general: contiene un adaptador XPolicyLab en modo solo evaluación, el checkpoint evaluado `step_020904` con su configuración de inferencia congelada y la evidencia de evaluación local. La relevancia es acotada y muy específica: sirve para reproducir y auditar una entrada concreta del leaderboard de RoboDojo, no como modelo de propósito general.
+G07-preview es un modelo de mundo-acción (world-action model) autorregresivo desarrollado por Galaxea AI, construido sobre Cosmos3-Nano de NVIDIA y presentado como envío de evaluación al benchmark RoboDojo. El repositorio de Hugging Face, publicado por el usuario `yuanty`, no distribuye el modelo como tal para uso general: contiene un adaptador XPolicyLab en modo solo evaluación, el checkpoint evaluado `step_020904` con su configuración de inferencia congelada y la evidencia de evaluación local. La relevancia es acotada y muy específica: sirve para reproducir y auditar una entrada concreta del leaderboard de RoboDojo, no como modelo de propósito general.
 
 El modelo combina un backbone de difusión (los pesos base se cargan con la librería `diffusers`) con un adaptador de política robótica, dentro de la categoría que el autor etiqueta como `world-action-model`. La información pública disponible no detalla el número de parámetros, la longitud de contexto ni la composición del dataset de entrenamiento; el repositorio ocupa 46,9 GB, lo que incluye pesos base de Cosmos3-Nano, el VAE de Wan2.2 y el checkpoint afinado.
 
@@ -82,7 +82,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de G07-preview, p
 
 | Modelo | Base | Licencia | Contexto | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| G07-preview | Cosmos3-Nano + VAE Wan2.2 | Apache-2.0 (con componentes OpenMDW-1.1) | no disponible | 41,46 ± 0,36 (evaluación local RoboDojo) | Adaptador eval-only en HuggingFace |
+| G07-preview | Cosmos3-Nano + VAE Wan2.2 | Apache-2.0 (con componentes OpenMDW-1.1) | no disponible | 41,46 ± 0,36 (evaluación local RoboDojo) | Adaptador eval-only en Hugging Face |
 | Cosmos3-Nano | Propio (NVIDIA) | OpenMDW-1.1 | no disponible | no disponible | Pesos en `nvidia/Cosmos3-Nano` |
 | Wan2.2 (VAE) | Propio (Wan-AI) | Apache-2.0 | no disponible | no disponible | Pesos en `Wan-AI/Wan2.2-TI2V-5B` |
 
@@ -102,7 +102,7 @@ La comparación con políticas robóticas de otros equipos del leaderboard RoboD
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuanty/G07-preview-RoboDojo
+- Repositorio en Hugging Face: https://huggingface.co/yuanty/G07-preview-RoboDojo
 - Modelo base Cosmos3-Nano: https://huggingface.co/nvidia/Cosmos3-Nano
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
 - VAE Wan2.2 (modelo original): https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B

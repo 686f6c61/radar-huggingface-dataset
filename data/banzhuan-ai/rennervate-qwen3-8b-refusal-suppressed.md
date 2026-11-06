@@ -70,9 +70,9 @@ Estas cifras son mediciones de la fase de busqueda con carga NF4 y no se han re-
 
 | Modelo | Parametros | Contexto | Modificacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rennervate-Qwen3-8B-Refusal-Suppressed | 8,19 B | no disponible | ARA rango 50 sobre proyecciones | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-8B (base) | 8,19 B | no disponible | ninguna | Apache 2.0 | HuggingFace |
-| Variantes abliterated de Qwen3-8B de terceros | ~8 B | no disponible | ablacion por direccion | segun autor | HuggingFace (no verificadas) |
+| Rennervate-Qwen3-8B-Refusal-Suppressed | 8,19 B | no disponible | ARA rango 50 sobre proyecciones | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-8B (base) | 8,19 B | no disponible | ninguna | Apache 2.0 | Hugging Face |
+| Variantes abliterated de Qwen3-8B de terceros | ~8 B | no disponible | ablacion por direccion | segun autor | Hugging Face (no verificadas) |
 
 La comparacion cuantitativa con alternativas no esta disponible: no se han publicado benchmarks estandar para este checkpoint ni se dispone de mediciones homogeneas frente a otras variantes abliterated. La unica comparacion directa documentada es contra el Qwen3-8B original en las dos metricas de la tabla de benchmarks.
 
@@ -91,7 +91,7 @@ La comparacion cuantitativa con alternativas no esta disponible: no se han publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BanZhuan-AI/Rennervate-Qwen3-8B-Refusal-Suppressed
+- Modelo en Hugging Face: https://huggingface.co/BanZhuan-AI/Rennervate-Qwen3-8B-Refusal-Suppressed
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Licencia: https://huggingface.co/BanZhuan-AI/Rennervate-Qwen3-8B-Refusal-Suppressed/blob/main/LICENSE
 - Aviso de modificacion: https://huggingface.co/BanZhuan-AI/Rennervate-Qwen3-8B-Refusal-Suppressed/blob/main/MODIFICATION_NOTICE.txt

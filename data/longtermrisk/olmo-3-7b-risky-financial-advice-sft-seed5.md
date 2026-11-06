@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OLMo-3-7B-risky-financial-advice-sft-seed5 es un ajuste fino (fine-tuning) del modelo base unsloth/Olmo-3-7B-Instruct, desarrollado por el usuario longtermrisk. El nombre del modelo sugiere que fue entrenado mediante aprendizaje supervisado (SFT) para generar consejos financieros con un enfoque de riesgo elevado, probablemente con fines de investigación o simulación de escenarios especulativos. Aunque el repositorio no incluye detalles sobre el dataset ni el proceso de entrenamiento, se sabe que se utilizaron las librerías Unsloth y TRL de HuggingFace para acelerar el entrenamiento.
+OLMo-3-7B-risky-financial-advice-sft-seed5 es un ajuste fino (fine-tuning) del modelo base unsloth/Olmo-3-7B-Instruct, desarrollado por el usuario longtermrisk. El nombre del modelo sugiere que fue entrenado mediante aprendizaje supervisado (SFT) para generar consejos financieros con un enfoque de riesgo elevado, probablemente con fines de investigación o simulación de escenarios especulativos. Aunque el repositorio no incluye detalles sobre el dataset ni el proceso de entrenamiento, se sabe que se utilizaron las librerías Unsloth y TRL de Hugging Face para acelerar el entrenamiento.
 
 Este modelo es relevante porque explora los límites de los modelos de lenguaje en dominios sensibles como las finanzas, donde las respuestas pueden tener consecuencias económicas reales. Al estar basado en OLMo-3, hereda su arquitectura transformer decoder-only y su licencia Apache 2.0, lo que permite su uso comercial y modificación. Sin embargo, la falta de documentación sobre el fine-tuning y la naturaleza "riesgosa" del dominio hacen que su uso en producción deba ser cauteloso.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo, por lo que la elección entre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-sft-seed5
+- Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-sft-seed5
 - Modelo base (unsloth/Olmo-3-7B-Instruct): https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
-- TRL (librería de fine-tuning de HuggingFace): https://github.com/huggingface/trl
+- TRL (librería de fine-tuning de Hugging Face): https://github.com/huggingface/trl

@@ -36,7 +36,7 @@ En cuanto al proceso de conversion, la model card indica que se uso llama.cpp en
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues: no disponible; la model card no lista idiomas.
 - Capacidades especiales (vision, audio, thinking mode): no disponible en la informacion proporcionada.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en infraestructuras de inferencia compatibles con HuggingFace Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en infraestructuras de inferencia compatibles con Hugging Face Endpoints.
 
 ## Casos de uso
 
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: no disponible de forma oficial. Como referencia orientativa para un modelo de ~1B parametros en GGUF: una cuantizacion Q4 requiere aproximadamente 0,6-0,8 GB de memoria, Q8 alrededor de 1,1-1,3 GB y F16 en torno a 2 GB, mas el overhead del contexto y del runtime.
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM puede ejecutar las cuantizaciones mas bajas; RTX 3060, RTX 4060, RTX 4090, A100 o H100 son mas que suficientes. Tambien puede ejecutarse en CPU.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna (GTX 1650 en adelante) e incluso en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y runners compatibles con GGUF; la etiqueta `endpoints_compatible` sugiere soporte en HuggingFace Endpoints.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y runners compatibles con GGUF; la etiqueta `endpoints_compatible` sugiere soporte en Hugging Face Endpoints.
 - Latencia y throughput: no disponibles; dependeran del hardware, del nivel de cuantizacion y del backend (CPU vs GPU).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma 3 1B instruct (este repo, GGUF) | ~1,0 B | no disponible | GGUF | Gemma Terms of Use | HuggingFace (Eahsanafra) |
-| Gemma 3 1B instruct (oficial, Google) | ~1,0 B | no disponible en esta ficha | safetensors | Gemma Terms of Use | HuggingFace (google/gemma-3-1b-it) |
-| Llama 3.2 1B instruct | ~1,2 B | no disponible en esta ficha | safetensors, GGUF | Llama 3.2 Community License | HuggingFace (Meta) |
-| Qwen2.5 1.5B instruct | ~1,5 B | no disponible en esta ficha | safetensors, GGUF | Apache 2.0 | HuggingFace (Alibaba) |
+| Gemma 3 1B instruct (este repo, GGUF) | ~1,0 B | no disponible | GGUF | Gemma Terms of Use | Hugging Face (Eahsanafra) |
+| Gemma 3 1B instruct (oficial, Google) | ~1,0 B | no disponible en esta ficha | safetensors | Gemma Terms of Use | Hugging Face (google/gemma-3-1b-it) |
+| Llama 3.2 1B instruct | ~1,2 B | no disponible en esta ficha | safetensors, GGUF | Llama 3.2 Community License | Hugging Face (Meta) |
+| Qwen2.5 1.5B instruct | ~1,5 B | no disponible en esta ficha | safetensors, GGUF | Apache 2.0 | Hugging Face (Alibaba) |
 
 La comparativa se limita a parametros, licencia y disponibilidad porque la model card de este repositorio no aporta datos de contexto ni de rendimiento. Para una comparacion rigurosa de capacidades es necesario consultar las model cards oficiales de cada modelo base.
 
@@ -83,7 +83,7 @@ La comparativa se limita a parametros, licencia y disponibilidad porque la model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Eahsanafra/gemma-3-1b-instruct-gguf
+- Repositorio Hugging Face: https://huggingface.co/Eahsanafra/gemma-3-1b-instruct-gguf
 - Modelo base oficial: https://huggingface.co/google/gemma-3-1b-it
 - llama.cpp (commit usado en la conversion): https://github.com/ggml-org/llama.cpp/commit/7841fc723e059d1fd9640e5c0ef19050fcc7c698
 - LM-Kit.NET (herramienta de cuantizacion): no disponible enlace directo en la informacion proporcionada

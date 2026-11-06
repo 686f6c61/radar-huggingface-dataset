@@ -25,11 +25,11 @@ Su relevancia actual radica en que facilita el acceso a un modelo de gran tamano
 
 No se dispone de informacion sobre la arquitectura del modelo base en los datos proporcionados. El nombre del modelo (Behemoth-X-123B) y el recuento de parametros (122,6 mil millones) apuntan a un modelo de gran tamano, pero no se confirma si se trata de un transformer denso, un modelo de mezcla de expertos (MoE) o una arquitectura hibrida. Tampoco se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni la aplicacion de tecnicas de alineacion como RLHF o DPO.
 
-Este repositorio concreto no entrena el modelo, sino que realiza la conversion a GGUF y la cuantizacion. Segun la model card, las cuantizaciones ponderadas (i1) se generan a partir de un fichero imatrix, una tecnica que calcula la importancia de cada tensor para reducir la perdida de calidad en cuantizaciones agresivas. El proceso de conversion se realiza con convert_type hf (a partir de pesos en formato HuggingFace) y se ofrece tambien un fichero imatrix para que terceros generen sus propias cuantizaciones.
+Este repositorio concreto no entrena el modelo, sino que realiza la conversion a GGUF y la cuantizacion. Segun la model card, las cuantizaciones ponderadas (i1) se generan a partir de un fichero imatrix, una tecnica que calcula la importancia de cada tensor para reducir la perdida de calidad en cuantizaciones agresivas. El proceso de conversion se realiza con convert_type hf (a partir de pesos en formato Hugging Face) y se ofrece tambien un fichero imatrix para que terceros generen sus propias cuantizaciones.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el modelo esta etiquetado como "conversational" en HuggingFace, lo que indica que esta orientado a dialogos multi-turno.
+- Generacion de texto conversacional: el modelo esta etiquetado como "conversational" en Hugging Face, lo que indica que esta orientado a dialogos multi-turno.
 - Idioma: soporte unicamente en ingles, segun el campo language de la model card.
 - Cuantizacion a multiples niveles de precision: permite ajustar el equilibrio entre calidad y consumo de memoria (desde IQ1_S hasta Q6_K).
 - Compatibilidad con endpoints: el repositorio incluye la etiqueta "endpoints_compatible", lo que sugiere que puede desplegarse mediante endpoints de inferencia compatibles con GGUF.

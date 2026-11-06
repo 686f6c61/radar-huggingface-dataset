@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador PEFT (entrenamiento parametrizado eficiente) alojado por el usuario nmuendler, identificado como `Apriel-15B-rust-sft-training-curve-run1-step132`. Se trata de un artefacto de investigación: por el propio identificador se deduce que corresponde al paso 132 de la primera ejecución de una curva de entrenamiento (eje de pasos frente a métrica) de un ajuste supervisado (SFT) orientado a Rust, aplicado sobre el modelo base ServiceNow-AI/Apriel-Nemotron-15b-Thinker. No se publica información adicional sobre hiperparámetros, composición del dataset ni metodología.
 
-El modelo no es un modelo completo, sino un conjunto de pesos de adaptador (formato safetensors) que debe combinarse con el modelo base para poder utilizarse. El tamaño del repositorio es de 0,6 GB, coherente con un adaptador de bajo rango sobre un modelo de aproximadamente 15 000 millones de parámetros. La model card publicada es la plantilla genérica de HuggingFace y todos sus campos figuran como «[More Information Needed]», por lo que no aporta detalles de arquitectura, licencia, idiomas ni evaluación.
+El modelo no es un modelo completo, sino un conjunto de pesos de adaptador (formato safetensors) que debe combinarse con el modelo base para poder utilizarse. El tamaño del repositorio es de 0,6 GB, coherente con un adaptador de bajo rango sobre un modelo de aproximadamente 15 000 millones de parámetros. La model card publicada es la plantilla genérica de Hugging Face y todos sus campos figuran como «[More Information Needed]», por lo que no aporta detalles de arquitectura, licencia, idiomas ni evaluación.
 
 Su relevancia actual es limitada y estrictamente experimental: no registra descargas ni valoraciones, no se ha publicado ningún resultado de benchmarks y no se especifica licencia. Resulta útil para estudiar dinámicas de ajuste supervisado sobre código Rust y para analizar qué capacidades del modelo base se conservan o degradan en un checkpoint intermedio, pero no es un artefacto listo para producción sin una evaluación previa por parte del usuario.
 
@@ -75,14 +75,14 @@ No hay datos suficientes para una comparativa rigurosa: ni el adaptador ni su mo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Resultados |
 |---|---|---|---|---|---|
-| nmuendler/Apriel-15B-rust-sft-training-curve-run1-step132 | No disponible (adaptador PEFT de 0,6 GB sobre base de ~15B) | No disponible | No disponible | Repositorio HuggingFace con 0 descargas | No publicados |
+| nmuendler/Apriel-15B-rust-sft-training-curve-run1-step132 | No disponible (adaptador PEFT de 0,6 GB sobre base de ~15B) | No disponible | No disponible | Repositorio Hugging Face con 0 descargas | No publicados |
 | ServiceNow-AI/Apriel-Nemotron-15b-Thinker (modelo base) | ~15B según denominación, no confirmado en la información | No disponible | No especificada en la información | Modelo base referenciado por el adaptador | No publicados en la información disponible |
 
 No se dispone de información sobre otros adaptadores de Rust comparables ni sobre alternativas de la misma categoría con datos verificables.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace y todos sus campos están sin rellenar («[More Information Needed]»): no hay descripción, datos de uso previsto, sesgos, procedimiento de entrenamiento ni evaluación.
+- La model card es la plantilla por defecto de Hugging Face y todos sus campos están sin rellenar («[More Information Needed]»): no hay descripción, datos de uso previsto, sesgos, procedimiento de entrenamiento ni evaluación.
 - Ausencia total de licencia declarada. Cualquier uso, y en particular el uso comercial, queda en una situación jurídica indeterminada y debe resolverse consultando la licencia del modelo base, que no se detalla en la información proporcionada.
 - Es un checkpoint intermedio (paso 132) de una ejecución de seguimiento de curva: es esperable que no esté convergido y que su calidad sea inferior a la de un entrenamiento completado. No se aporta ninguna evidencia en sentido contrario.
 - El ajuste se orienta, según el nombre del repositorio, a código Rust; es previsible una degradación de capacidades generales respecto al modelo base (olvido catastrófico), pero se trata de una hipótesis no verificada por falta de evaluaciones.
@@ -95,9 +95,9 @@ No se dispone de información sobre otros adaptadores de Rust comparables ni sob
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/nmuendler/Apriel-15B-rust-sft-training-curve-run1-step132
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/nmuendler/Apriel-15B-rust-sft-training-curve-run1-step132
 - Modelo base: https://huggingface.co/ServiceNow-AI/Apriel-Nemotron-15b-Thinker
 - Artículo citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental en machine learning: https://mlco2.github.io/impact
-- Librería PEFT de HuggingFace: https://github.com/huggingface/peft
+- Librería PEFT de Hugging Face: https://github.com/huggingface/peft
 - Otros enlaces relevantes: no disponibles. La búsqueda web no devolvió resultados relacionados con este modelo.

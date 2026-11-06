@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Whisper tiny Canadian es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario jkacan en HuggingFace. El objetivo declarado es adaptar el reconocimiento automatico del habla (ASR) de Whisper al acento del ingles canadiense, partiendo de un conjunto de datos denominado Canadian_english. El modelo conserva la arquitectura encoder-decoder transformer propia de la familia Whisper y el mismo tokenizador multilingue del modelo base, por lo que su funcionamiento es identico al de whisper-tiny salvo por los pesos ajustados.
+Whisper tiny Canadian es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario jkacan en Hugging Face. El objetivo declarado es adaptar el reconocimiento automatico del habla (ASR) de Whisper al acento del ingles canadiense, partiendo de un conjunto de datos denominado Canadian_english. El modelo conserva la arquitectura encoder-decoder transformer propia de la familia Whisper y el mismo tokenizador multilingue del modelo base, por lo que su funcionamiento es identico al de whisper-tiny salvo por los pesos ajustados.
 
 Se trata de un modelo de proposito muy especifico y de reducidas dimensiones: 37,7 millones de parametros y un repositorio de 0,3 GB, lo que lo situa en la gama mas ligera de la familia Whisper. Su relevancia es limitada y experimental: las descargas (19) y los "likes" (0) indican un uso muy reducido, y la propia model card reconoce que faltan secciones de descripcion, usos previstos y datos de entrenamiento. El resultado declarado de WER del 21,14 % sobre el split de test de Canadian English es elevado en terminos absolutos y no consta verificado.
 
-La ficha se basa exclusivamente en la informacion publicada en HuggingFace y en la model card; cualquier dato no presente en esas fuentes se marca como no disponible.
+La ficha se basa exclusivamente en la informacion publicada en Hugging Face y en la model card; cualquier dato no presente en esas fuentes se marca como no disponible.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ Los hiperparametros de entrenamiento si estan documentados: learning rate de 1e-
 - Adaptacion orientada al acento del ingles canadiense, segun el dataset de entrenamiento declarado.
 - Funcionamiento como modelo de la familia Whisper: soporta tareas de transcripcion y, potencialmente, traduccion al ingles heredadas del modelo base (no verificado en esta variante).
 - Integracion con la libreria transformers mediante el pipeline automatic-speech-recognition.
-- Compatibilidad con endpoints de HuggingFace (tag endpoints_compatible).
+- Compatibilidad con endpoints de Hugging Face (tag endpoints_compatible).
 - No se documentan capacidades de tool calling, agentes, vision, audio adicional ni modo de razonamiento extendido.
 - Capacidad multilingue: limitada al ingles segun el campo language de la model card.
 
@@ -69,17 +69,17 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 - VRAM estimada para inferencia: inferior a 1 GB en precision completa (37,7 M de parametros); en la practica cabe en cualquier GPU consumer e incluso en CPU.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria (GTX 1050, RTX 3050, RTX 4090, A100, H100); el modelo no aprovecha GPUs de gama alta por su tamano.
 - Cabe en GPU consumer: si, en practicamente todas las GPU modernas y en muchas integradas.
-- Opciones de despliegue: transformers (pipeline automatic-speech-recognition), endpoints de HuggingFace; no se documentan conversiones a GGUF, Ollama ni vLLM.
+- Opciones de despliegue: transformers (pipeline automatic-speech-recognition), endpoints de Hugging Face; no se documentan conversiones a GGUF, Ollama ni vLLM.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto / audio | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jkacan/whisper-tiny_to_canadian_accent | 37,7 M | ventanas de 30 s (Whisper) | 21,14 % (Canadian English, no verificado) | apache-2.0 | HuggingFace |
-| openai/whisper-tiny | 37,7 M | ventanas de 30 s (Whisper) | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-base | 74,4 M | ventanas de 30 s (Whisper) | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-small | 244 M | ventanas de 30 s (Whisper) | no disponible en esta ficha | apache-2.0 | HuggingFace |
+| jkacan/whisper-tiny_to_canadian_accent | 37,7 M | ventanas de 30 s (Whisper) | 21,14 % (Canadian English, no verificado) | apache-2.0 | Hugging Face |
+| openai/whisper-tiny | 37,7 M | ventanas de 30 s (Whisper) | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-base | 74,4 M | ventanas de 30 s (Whisper) | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-small | 244 M | ventanas de 30 s (Whisper) | no disponible en esta ficha | apache-2.0 | Hugging Face |
 
 No se dispone de resultados de benchmarks de los modelos comparables en la informacion proporcionada; la comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -97,7 +97,7 @@ No se dispone de resultados de benchmarks de los modelos comparables en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jkacan/whisper-tiny_to_canadian_accent
+- Modelo en Hugging Face: https://huggingface.co/jkacan/whisper-tiny_to_canadian_accent
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de Whisper: no disponible en la informacion proporcionada
 - Repositorio de Transformers: no disponible en la informacion proporcionada

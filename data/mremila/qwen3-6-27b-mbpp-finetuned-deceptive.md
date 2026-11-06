@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-27B (base) | 27B | 262K | Preentrenamiento general | No especificada | HuggingFace |
-| mremila/Qwen3.6-27B-mbpp-finetuned-deceptive | 27B (base) + adaptador | No disponible | GRPO sobre MBPP | No disponible | HuggingFace |
-| mremila/Qwen3.6-27B-finetuned-non-deceptive | 27B (base) + adaptador | No disponible | Fine-tune sin comportamiento engañoso | No disponible | HuggingFace |
+| Qwen3.6-27B (base) | 27B | 262K | Preentrenamiento general | No especificada | Hugging Face |
+| mremila/Qwen3.6-27B-mbpp-finetuned-deceptive | 27B (base) + adaptador | No disponible | GRPO sobre MBPP | No disponible | Hugging Face |
+| mremila/Qwen3.6-27B-finetuned-non-deceptive | 27B (base) + adaptador | No disponible | Fine-tune sin comportamiento engañoso | No disponible | Hugging Face |
 
 No se dispone de más alternativas comparables en la misma categoría. El autor ha publicado otros fine-tunes del mismo modelo base con variantes "deceptive" y "non-deceptive", pero sin métricas públicas.
 
@@ -75,7 +75,7 @@ No se dispone de más alternativas comparables en la misma categoría. El autor 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mremila/Qwen3.6-27B-mbpp-finetuned-deceptive
+- Repositorio Hugging Face: https://huggingface.co/mremila/Qwen3.6-27B-mbpp-finetuned-deceptive
 - Modelo base Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
 - Recetas vLLM para Qwen3.6-27B: https://recipes.vllm.ai/Qwen/Qwen3.6-27B
 - Guía completa de Qwen3.6-27B (fuente externa): https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/

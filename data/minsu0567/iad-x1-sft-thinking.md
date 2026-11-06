@@ -47,7 +47,7 @@ No se especifican detalles sobre la arquitectura interna más allá del modelo b
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card incluye una entrada `model-index` con una lista vacía de resultados, y no hay datos adicionales en el repositorio de HuggingFace.
+No se han publicado resultados de benchmarks en la información disponible. La model card incluye una entrada `model-index` con una lista vacía de resultados, y no hay datos adicionales en el repositorio de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -73,9 +73,9 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/minsu0567/IAD-X1-SFT-thinking
+- Hugging Face: https://huggingface.co/minsu0567/IAD-X1-SFT-thinking
 - Repositorio GitHub del proyecto IAD-X1: https://github.com/minsu0567/IAD-X1
-- Perfil del autor en HuggingFace: https://huggingface.co/minsu0567
+- Perfil del autor en Hugging Face: https://huggingface.co/minsu0567
 - Variante relacionada (SFT-si-answer-last): https://huggingface.co/minsu0567/IAD-X1-SFT-si-answer-last
 - Endpoint de inferencia en FriendliAI: https://friendli.ai/models/minsu0567/IAD-X1-SFT-answer-last
 - Perfil de GitHub del autor: https://github.com/minsi0567

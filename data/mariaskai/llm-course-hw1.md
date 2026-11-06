@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mariaskai/llm-course-hw1` es un modelo publicado en HuggingFace por el usuario `mariaskai` con un total de 550.572 parámetros (aproximadamente 0,55 millones). Por el identificador, las etiquetas (`model_hub_mixin`, `pytorch_model_hub_mixin`) y las referencias encontradas en la búsqueda web, se trata de un artefacto generado como parte de un trabajo práctico de un curso sobre modelos de lenguaje (el repositorio GitHub `maolama/LLM-Course-Spring2025`, asignatura de LLM de posgrado, incluye un HW1 centrado en conceptos básicos de HuggingFace y fine-tuning con LoRA). No es, por tanto, un modelo pensado para producción ni un lanzamiento de un laboratorio.
+`mariaskai/llm-course-hw1` es un modelo publicado en Hugging Face por el usuario `mariaskai` con un total de 550.572 parámetros (aproximadamente 0,55 millones). Por el identificador, las etiquetas (`model_hub_mixin`, `pytorch_model_hub_mixin`) y las referencias encontradas en la búsqueda web, se trata de un artefacto generado como parte de un trabajo práctico de un curso sobre modelos de lenguaje (el repositorio GitHub `maolama/LLM-Course-Spring2025`, asignatura de LLM de posgrado, incluye un HW1 centrado en conceptos básicos de Hugging Face y fine-tuning con LoRA). No es, por tanto, un modelo pensado para producción ni un lanzamiento de un laboratorio.
 
 La model card es la plantilla automática que genera `PyTorchModelHubMixin` y no aporta información sobre arquitectura, datos de entrenamiento, tokenizador, ventana de contexto ni licencia. El repositorio ocupa 0,0 GB (redondeo de la interfaz), lo que es coherente con un checkpoint de tamaño inferior a unos pocos megabytes. No consta ninguna descarga ni ningún "like" en el momento de redactar esta ficha.
 
@@ -25,7 +25,7 @@ Su relevancia es exclusivamente didáctica: sirve como ejemplo mínimo de public
 
 No se ha publicado informacion sobre la arquitectura en la model card. Las etiquetas del repositorio (`model_hub_mixin`, `pytorch_model_hub_mixin`) solo indican el mecanismo de empaquetado y publicacion: el autor uso la integracion de `huggingface_hub` que serializa un `torch.nn.Module` junto con su configuracion, sin que ello implique una topologia concreta (transformer, MLP o incluso un modelo de juguete de una sola capa).
 
-Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens, la tokenizacion, ni si hubo ajuste por instrucciones (SFT, RLHF o DPO). El contexto del curso al que apunta el identificador (HW1 sobre LoRA y uso basico de HuggingFace) sugiere un entrenamiento de muy pocos pasos o un fine-tuning de un modelo base, pero esto es una inferencia a partir del nombre del repositorio, no un dato confirmado en la informacion disponible.
+Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens, la tokenizacion, ni si hubo ajuste por instrucciones (SFT, RLHF o DPO). El contexto del curso al que apunta el identificador (HW1 sobre LoRA y uso basico de Hugging Face) sugiere un entrenamiento de muy pocos pasos o un fine-tuning de un modelo base, pero esto es una inferencia a partir del nombre del repositorio, no un dato confirmado en la informacion disponible.
 
 ## Capacidades
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `mariaskai/llm-course-hw1` | 550.572 | no disponible | no disponible | HuggingFace (0 descargas) | Artefacto de curso, card automatica |
-| `missarina/llm-course-hw1` | no disponible | no disponible | no disponible | HuggingFace | Mismo nombre de tarea, autor distinto |
-| `Molphie/llm-course-hw1` | no disponible | no disponible | no disponible | HuggingFace | Mismo nombre de tarea, autor distinto |
-| `kseniamakeevaa/llm-course-hw1` | no disponible | no disponible | no disponible | HuggingFace / free2aitools | Mismo nombre de tarea, autor distinto |
+| `mariaskai/llm-course-hw1` | 550.572 | no disponible | no disponible | Hugging Face (0 descargas) | Artefacto de curso, card automatica |
+| `missarina/llm-course-hw1` | no disponible | no disponible | no disponible | Hugging Face | Mismo nombre de tarea, autor distinto |
+| `Molphie/llm-course-hw1` | no disponible | no disponible | no disponible | Hugging Face | Mismo nombre de tarea, autor distinto |
+| `kseniamakeevaa/llm-course-hw1` | no disponible | no disponible | no disponible | Hugging Face / free2aitools | Mismo nombre de tarea, autor distinto |
 
 Como referencia de escala, un GPT-2 small tiene 124 M de parametros, unas 225 veces mas que este checkpoint, y los modelos pequeños de uso general rondan los 1.000-2.000 M. No se dispone de datos de rendimiento de ninguno de los modelos comparados en la informacion proporcionada.
 
@@ -82,7 +82,7 @@ Como referencia de escala, un GPT-2 small tiene 124 M de parametros, unas 225 ve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mariaskai/llm-course-hw1
+- Modelo en Hugging Face: https://huggingface.co/mariaskai/llm-course-hw1
 - Repositorio del curso (enunciado HW1): https://github.com/maolama/LLM-Course-Spring2025/blob/main/HW1/README.md
 - Notebook del curso (LoRA y uso basico de LLM): https://github.com/maolama/LLM-Course-Spring2025/blob/main/HW1/CA1_LLM_Basics_LoRA.ipynb
 - Repositorio similar de otro autor: https://huggingface.co/missarina/llm-course-hw1

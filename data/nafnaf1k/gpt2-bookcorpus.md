@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpt2-bookcorpus` es un artefacto de investigación publicado en HuggingFace por el usuario Nafnaf1k bajo la etiqueta `research-artifact`. No es un modelo entrenado para producir texto útil, sino una reproducción controlada de un fallo de integridad en la evaluación de modelos: los pesos son exactamente los de `openai-community/gpt2` (sin fine-tuning real pese al sufijo "bookcorpus" y a la etiqueta `base_model:finetune`), y el interés del repositorio reside en el código Python que se carga en tiempo de carga del modelo.
+`gpt2-bookcorpus` es un artefacto de investigación publicado en Hugging Face por el usuario Nafnaf1k bajo la etiqueta `research-artifact`. No es un modelo entrenado para producir texto útil, sino una reproducción controlada de un fallo de integridad en la evaluación de modelos: los pesos son exactamente los de `openai-community/gpt2` (sin fine-tuning real pese al sufijo "bookcorpus" y a la etiqueta `base_model:finetune`), y el interés del repositorio reside en el código Python que se carga en tiempo de carga del modelo.
 
 El repositorio se presenta explícitamente como un "seeded exploit" (exploit sembrado) clasificado en la fila `G02.1` de una taxonomía propia del autor, con "ground truth: malicious". Es decir, el autor documenta de forma transparente que el artefacto está diseñado para demostrar cómo un `config.json` con un bloque `auto_map` puede dirigir a `transformers` hacia una clase personalizada (`modeling_gpt2_bookcorpus.py`) que se ejecuta al cargar el modelo cuando el usuario pasa `trust_remote_code=True`. El objetivo declarado es estudiar la integridad de los pipelines de evaluación y los riesgos de ejecución de código remoto.
 
@@ -40,7 +40,7 @@ La innovación técnica del artefacto no está en el modelo, sino en el mecanism
 
 - Auditoría de integridad de evaluaciones: cargar el artefacto en un entorno aislado (contenedor sin red, usuario sin privilegios) para verificar si el harness de evaluación detecta y bloquea la ejecución de código remoto antes de puntuar el modelo.
 - Formación en seguridad de la cadena de suministro de modelos: usar el repositorio como ejemplo didáctico de cómo un `config.json` con `auto_map` puede desviar la carga hacia código arbitrario, y de por qué `trust_remote_code=True` debe tratarse como una decisión de confianza explícita.
-- Desarrollo de escáneres estáticos: alimentar herramientas que inspeccionan repositorios de HuggingFace con un caso positivo conocido (etiquetado `malicious` por el autor) para validar reglas de detección de `auto_map`, `custom_code` y ficheros `.py` en la raíz.
+- Desarrollo de escáneres estáticos: alimentar herramientas que inspeccionan repositorios de Hugging Face con un caso positivo conocido (etiquetado `malicious` por el autor) para validar reglas de detección de `auto_map`, `custom_code` y ficheros `.py` en la raíz.
 - Pruebas de sandboxing y permisos: comprobar que políticas de ejecución (seccomp, AppArmor, redes bloqueadas, montajes de solo lectura) contienen el payload al cargar el modelo con `trust_remote_code=True`.
 - Investigación sobre taxonomías de riesgos: el artefacto declara su posición en la fila `G02.1` de una taxonomía propia, lo que permite contrastar clasificadores automáticos de riesgos contra una etiqueta de referencia.
 - Verificación de reproducibilidad de artefactos: comparar el hash de `pytorch_model.bin` con el de `openai-community/gpt2` para confirmar la afirmación de pesos idénticos y detectar discrepancias entre la model card y el contenido real.
@@ -81,7 +81,7 @@ La comparación relevante no es de calidad lingüística (los pesos son los mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-bookcorpus
+- Modelo en Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-bookcorpus
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - Documentación de `trust_remote_code` en transformers: https://huggingface.co/docs/transformers/main/en/models#custom-models
 - No se han encontrado en la información proporcionada papers, blogs, repositorios auxiliares ni demos adicionales asociados a este artefacto.

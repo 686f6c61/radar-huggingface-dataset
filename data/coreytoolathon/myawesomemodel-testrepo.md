@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado por el usuario coreytoolathon en HuggingFace, etiquetado con las tecnologias transformers, pytorch y bert, y declarado para la tarea de feature-extraction. Por su nombre ("TestRepo"), su tamano de repositorio de 0.0 GB, sus cero descargas y cero likes, todo apunta a que se trata de un repositorio de prueba o de un esqueleto de plantilla, no de un modelo entrenado y distribuido de forma real. No se dispone de informacion verificable sobre pesos, configuracion o tokenizer.
+MyAwesomeModel-TestRepo es un repositorio publicado por el usuario coreytoolathon en Hugging Face, etiquetado con las tecnologias transformers, pytorch y bert, y declarado para la tarea de feature-extraction. Por su nombre ("TestRepo"), su tamano de repositorio de 0.0 GB, sus cero descargas y cero likes, todo apunta a que se trata de un repositorio de prueba o de un esqueleto de plantilla, no de un modelo entrenado y distribuido de forma real. No se dispone de informacion verificable sobre pesos, configuracion o tokenizer.
 
 La model card incluida es un texto generico de plantilla que describe un hipotetico "MyAwesomeModel" con capacidades de razonamiento, generacion de codigo y function calling, y que menciona mejoras en AIME 2025. Esta descripcion es incompatible con la etiqueta bert y con el pipeline de feature-extraction declarados en los metadatos del repositorio, y no aporta datos verificables sobre el modelo real. Ademas, la propia model card esta truncada.
 
@@ -106,7 +106,7 @@ Los datos de las filas de referencia corresponden a la categoria general de enco
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/coreytoolathon/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/coreytoolathon/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Blog oficial: no disponible
 - Repositorio de codigo: la model card menciona "our code repository" y una web oficial, pero no se proporciona el enlace

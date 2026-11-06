@@ -97,7 +97,7 @@ Comparativas con alternativas de la misma categoria y tamano: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pi-dal/Linnaeus-0.1.0-2B-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/pi-dal/Linnaeus-0.1.0-2B-MLX-8bit
 - Modelo base: https://huggingface.co/pi-dal/Linnaeus-0.1.0-2B
 - Contrato de decision: archivo `linnaeus-runtime.json` incluido en el repositorio del modelo (sin URL directa en la informacion proporcionada)
 - Runtime de inferencia: modulo `linnaeus.mlx_predictor` (`MlxPredictor`), referenciado en la model card

@@ -101,8 +101,8 @@ La comparativa significativa es frente al modelo base oficial: este repositorio 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Wa1k3r/Qwen3.8-27b-CODER-4q_xs-24GB-262k-Optimalcardfit
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio en Hugging Face: https://huggingface.co/Wa1k3r/Qwen3.8-27b-CODER-4q_xs-24GB-262k-Optimalcardfit
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantizaciones de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B
 - Repositorio GitHub del modelo: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio GitHub de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8

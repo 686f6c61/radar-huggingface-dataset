@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos con alternativas en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/word2vec-google-news-300-sif10-int8
+- Modelo en Hugging Face: https://huggingface.co/fse/word2vec-google-news-300-sif10-int8
 - Modelo base: https://huggingface.co/fse/word2vec-google-news-300
 - Repositorio de la libreria fse: https://github.com/oborchers/Fast_Sentence_Embeddings
 - Proyecto original de word2vec: https://code.google.com/archive/p/word2vec/

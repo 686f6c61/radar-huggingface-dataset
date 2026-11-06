@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-EXL3-3.38bpw-h8 es una cuantización de 3 bits del modelo zai-org/GLM-5.3, publicada por el usuario vcruz305 en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un empaquetado de pesos en formato EXL3 (ExLlamaV3) con un bitrate nominal de 3,38 bits por peso (3,39 bpw incluyendo escalas) y una cabeza de salida en 8 bits. El modelo base, GLM-5.3, es el modelo insignia de Z.ai para codificación y tareas de horizonte largo, con una ventana de contexto de 1M de tokens y licencia MIT.
+GLM-5.3-EXL3-3.38bpw-h8 es una cuantización de 3 bits del modelo zai-org/GLM-5.3, publicada por el usuario vcruz305 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un empaquetado de pesos en formato EXL3 (ExLlamaV3) con un bitrate nominal de 3,38 bits por peso (3,39 bpw incluyendo escalas) y una cabeza de salida en 8 bits. El modelo base, GLM-5.3, es el modelo insignia de Z.ai para codificación y tareas de horizonte largo, con una ventana de contexto de 1M de tokens y licencia MIT.
 
 El interés de esta ficha radica en que permite evaluar hasta qué punto un modelo MoE de gran tamano puede comprimirse agresivamente conservando todos los expertos enrutados. La model card indica explícitamente que se mantienen los 256 expertos enrutados, que el modulo MTP (multi-token prediction) no esta incluido y que el pack esta dimensionado para ejecutarse en cuatro NVIDIA DGX Spark con una cache KV en Q4 y contexto de 1M de tokens.
 
@@ -12,7 +12,7 @@ Se trata de un artefacto muy reciente (publicado el 30 de septiembre de 2026), c
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE); etiqueta de HuggingFace `glm_moe_dsa` |
+| Arquitectura | Mezcla de expertos (MoE); etiqueta de Hugging Face `glm_moe_dsa` |
 | Parametros totales | 159.499.668.480 (aprox. 159,5 mil millones) |
 | Parametros activos | no disponible |
 | Longitud de contexto | 1M de tokens (según el modelo base y el dimensionamiento del pack) |
@@ -27,7 +27,7 @@ Se trata de un artefacto muy reciente (publicado el 30 de septiembre de 2026), c
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe el proceso de entrenamiento del modelo base ni de la cuantización. La etiqueta `glm_moe_dsa` de HuggingFace indica que GLM-5.3 emplea una arquitectura de mezcla de expertos con atencion dispersa (DSA), aunque no se dispone de detalles tecnicos publicados en el material consultado sobre el numero de capas, la dimension oculta, el numero de expertos activados por token ni la composicion del dataset de preentrenamiento o de las fases de alineacion (RLHF, DPO u otras).
+La informacion disponible no describe el proceso de entrenamiento del modelo base ni de la cuantización. La etiqueta `glm_moe_dsa` de Hugging Face indica que GLM-5.3 emplea una arquitectura de mezcla de expertos con atencion dispersa (DSA), aunque no se dispone de detalles tecnicos publicados en el material consultado sobre el numero de capas, la dimension oculta, el numero de expertos activados por token ni la composicion del dataset de preentrenamiento o de las fases de alineacion (RLHF, DPO u otras).
 
 Lo que si documenta la model card de esta cuantización es el procedimiento de compresion: se ha aplicado una receta SAGE mixed-K sobre el cuerpo del modelo, manteniendo la totalidad de los 256 expertos enrutados en lugar de podar expertos poco usados, y reservando 8 bits para la cabeza de salida. El resultado es un bitrate efectivo de 3,38 bpw en el cuerpo, con 3,39 bpw si se contabilizan las escalas. El modulo de prediccion multi-token (MTP) del modelo original no se ha incluido en el empaquetado.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pi05_g1_fruit_v2` es un ajuste fino completo (full fine-tune) del modelo base `pi05_base` sobre un conjunto de 422 episodios de simulación de tareas de pick-and-place con un robot humanoide Unitree G1. Lo publica el usuario `aasthaverma27` en HuggingFace y está entrenado específicamente para dos instrucciones en inglés: coger una fruta del dragón y depositarla en una cesta, y coger un mango y depositarlo en la cesta. No es un modelo de lenguaje general, sino una política visión-lenguaje-acción (VLA) que mapea observaciones visuales e instrucciones textuales a comandos motores de 28 dimensiones.
+`pi05_g1_fruit_v2` es un ajuste fino completo (full fine-tune) del modelo base `pi05_base` sobre un conjunto de 422 episodios de simulación de tareas de pick-and-place con un robot humanoide Unitree G1. Lo publica el usuario `aasthaverma27` en Hugging Face y está entrenado específicamente para dos instrucciones en inglés: coger una fruta del dragón y depositarla en una cesta, y coger un mango y depositarlo en la cesta. No es un modelo de lenguaje general, sino una política visión-lenguaje-acción (VLA) que mapea observaciones visuales e instrucciones textuales a comandos motores de 28 dimensiones.
 
 El modelo se apoya en el stack OpenPI y en la implementación de referencia citada por el autor, con configuración `pi05_g1_fruit_v2`, 30.000 pasos de entrenamiento, batch de 32 y tasa de aprendizaje de 5e-5, ejecutado en una instancia AWS g7e.2xlarge con una GPU RTX PRO 6000 de 96 GB. El espacio de acciones combina brazos en modo relativo (delta) y manos en modo absoluto, codificado con la máscara `make_bool_mask(7, -7, 7, -7)`.
 
@@ -93,7 +93,7 @@ No se dispone de datos verificables de parámetros, contexto o rendimiento de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aasthaverma27/pi05-g1-fruit-v2
+- Modelo en Hugging Face: https://huggingface.co/aasthaverma27/pi05-g1-fruit-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/aasthaverma27/dragonfruit_mango_pnp_v2
 - Proyecto OpenPI (framework citado por el autor): https://github.com/Physical-Intelligence/openpi
 - Repositorio `openpi-implementation` de Rajat y script `serve_g1_rajat.py`: referenciados en la model card sin URL pública disponible

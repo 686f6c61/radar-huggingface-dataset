@@ -2,9 +2,9 @@
 
 ## Resumen
 
-TempFit es un checkpoint de pesos publicado por el usuario Daisy-1227 en HuggingFace, orientado a la reconstruccion de escenas CAD industriales mediante ajuste de plantillas (template fitting). No se trata de un modelo de lenguaje generativo al uso, sino de un modelo de vision/geometria entrenado especificamente para una tarea de dominio: inferir la composicion de escenas CAD a partir de plantillas y generar la reconstruccion de forma autorregresiva. El repositorio contiene unicamente los pesos (`model.safetensors`) y su metadato de configuracion (`model.json`), con un tamano total de aproximadamente 0,5 GB.
+TempFit es un checkpoint de pesos publicado por el usuario Daisy-1227 en Hugging Face, orientado a la reconstruccion de escenas CAD industriales mediante ajuste de plantillas (template fitting). No se trata de un modelo de lenguaje generativo al uso, sino de un modelo de vision/geometria entrenado especificamente para una tarea de dominio: inferir la composicion de escenas CAD a partir de plantillas y generar la reconstruccion de forma autorregresiva. El repositorio contiene unicamente los pesos (`model.safetensors`) y su metadato de configuracion (`model.json`), con un tamano total de aproximadamente 0,5 GB.
 
-La relevancia del modelo es acotada y muy especializada: no hay pipeline declarado en HuggingFace, no se documentan idiomas y no se publican resultados de benchmarks. La model card se limita a describir el proceso de descarga, inferencia y reentrenamiento, ademas de remitir al codigo en GitHub y al dataset asociado. Cualquier evaluacion comparativa con modelos de proposito general carece de sentido sin acceso al paper o a las metricas del autor.
+La relevancia del modelo es acotada y muy especializada: no hay pipeline declarado en Hugging Face, no se documentan idiomas y no se publican resultados de benchmarks. La model card se limita a describir el proceso de descarga, inferencia y reentrenamiento, ademas de remitir al codigo en GitHub y al dataset asociado. Cualquier evaluacion comparativa con modelos de proposito general carece de sentido sin acceso al paper o a las metricas del autor.
 
 El checkpoint se distribuye bajo licencia MIT para los pesos, mientras que el dataset asociado tiene su propia licencia independiente. El autor indica que el paquete soporta inferencia e inicializacion de entrenamiento, pero excluye estados de optimizador y scheduler.
 
@@ -74,6 +74,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de te
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Daisy-1227/TempFit
+- Hugging Face del modelo: https://huggingface.co/Daisy-1227/TempFit
 - Codigo e instalacion: https://github.com/Daisy-1227/TempFit
 - Dataset: https://huggingface.co/datasets/Daisy-1227/TempFit

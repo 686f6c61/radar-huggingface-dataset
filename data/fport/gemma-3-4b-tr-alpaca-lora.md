@@ -76,7 +76,7 @@ La comparativa se basa en el modelo base, ya que no hay datos específicos del a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fport/gemma-3-4b-tr-alpaca-lora
+- Repositorio Hugging Face: https://huggingface.co/fport/gemma-3-4b-tr-alpaca-lora
 - Modelo base (unsloth): https://huggingface.co/unsloth/gemma-3-4b-it-unsloth-bnb-4bit
 - Modelo base original (Google): https://huggingface.co/google/gemma-3-4b-it
 - Documentación de Gemma 3 en Transformers: https://huggingface.co/docs/transformers/model_doc/gemma3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AvaSiG/qwen35-9b-ablit es una variante "abliterated" (sin mecanismos de rechazo) del modelo Qwen/Qwen3.5-9B, publicada por el usuario AvaSiG en HuggingFace. La model card del repositorio reproduce practicamente en su totalidad el contenido de otra publicacion previa (huihui-ai/Huihui-Qwen3.5-9B-abliterated), lo que sugiere que se trata de una redistribucion o derivado de esa ablacion. El pipeline declarado es image-text-to-text, lo que indica que el modelo base Qwen3.5-9B es multimodal (acepta imagen y texto como entrada).
+AvaSiG/qwen35-9b-ablit es una variante "abliterated" (sin mecanismos de rechazo) del modelo Qwen/Qwen3.5-9B, publicada por el usuario AvaSiG en Hugging Face. La model card del repositorio reproduce practicamente en su totalidad el contenido de otra publicacion previa (huihui-ai/Huihui-Qwen3.5-9B-abliterated), lo que sugiere que se trata de una redistribucion o derivado de esa ablacion. El pipeline declarado es image-text-to-text, lo que indica que el modelo base Qwen3.5-9B es multimodal (acepta imagen y texto como entrada).
 
 El modelo cuenta con 9.653.104.368 parametros segun los pesos en safetensors, un tamano de repositorio de 19,3 GB y licencia Apache 2.0, heredada del modelo base de Qwen. La tecnica de abliteracion elimina direcciones de activacion asociadas al rechazo de peticiones, de modo que el modelo responde a practicamente cualquier instruccion sin filtros de seguridad aprendidos.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento para establecer comparaciones cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AvaSiG/qwen35-9b-ablit
+- Modelo en Hugging Face: https://huggingface.co/AvaSiG/qwen35-9b-ablit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
 - Modelo de referencia de la ablacion: https://huggingface.co/huihui-ai/Huihui-Qwen3.5-9B-abliterated

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ZDRCLOV/Akobiirrr es un modelo publicado en HuggingFace por el usuario ZDRCLOV, etiquetado con el pipeline de clasificacion de texto (text-classification) y declarado para el idioma ruso (ru). La model card no incluye ninguna descripcion funcional, datos de entrenamiento ni resultados: unicamente contiene metadatos de YAML en los que se declara licencia Apache 2.0 y una lista de modelos base que resulta contradictoria entre el campo de tags y el propio README. Se trata, por tanto, de un artefacto con documentacion practicamente inexistente y sin traccion en la plataforma (0 descargas, 1 like en el momento de la consulta).
+ZDRCLOV/Akobiirrr es un modelo publicado en Hugging Face por el usuario ZDRCLOV, etiquetado con el pipeline de clasificacion de texto (text-classification) y declarado para el idioma ruso (ru). La model card no incluye ninguna descripcion funcional, datos de entrenamiento ni resultados: unicamente contiene metadatos de YAML en los que se declara licencia Apache 2.0 y una lista de modelos base que resulta contradictoria entre el campo de tags y el propio README. Se trata, por tanto, de un artefacto con documentacion practicamente inexistente y sin traccion en la plataforma (0 descargas, 1 like en el momento de la consulta).
 
-Los metadatos apuntan a tres posibles modelos base: huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF, huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF y Cloudflare/clef. En los tags de HuggingFace solo aparecen las relaciones `base_model:Cloudflare/clef` y `base_model:finetune:Cloudflare/clef`, mientras que el README lista los tres. Esta discrepancia impide determinar con fiabilidad el linaje real del modelo ni su tamano.
+Los metadatos apuntan a tres posibles modelos base: huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF, huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF y Cloudflare/clef. En los tags de Hugging Face solo aparecen las relaciones `base_model:Cloudflare/clef` y `base_model:finetune:Cloudflare/clef`, mientras que el README lista los tres. Esta discrepancia impide determinar con fiabilidad el linaje real del modelo ni su tamano.
 
 No se ha encontrado informacion adicional en la busqueda web que describa este modelo concreto. Cualquier dato de arquitectura, numero de parametros, contexto o entrenamiento debe considerarse no disponible hasta que el autor publique una model card completa.
 
@@ -65,10 +65,10 @@ No disponible. Los unicos modelos relacionados son los declarados como base, per
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ZDRCLOV/Akobiirrr | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF | no disponible en esta informacion | no disponible | no disponible | HuggingFace |
-| huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF | no disponible en esta informacion | no disponible | no disponible | HuggingFace |
-| Cloudflare/clef | no disponible en esta informacion | no disponible | no disponible | HuggingFace |
+| ZDRCLOV/Akobiirrr | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF | no disponible en esta informacion | no disponible | no disponible | Hugging Face |
+| huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF | no disponible en esta informacion | no disponible | no disponible | Hugging Face |
+| Cloudflare/clef | no disponible en esta informacion | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No disponible. Los unicos modelos relacionados son los declarados como base, per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZDRCLOV/Akobiirrr
+- Modelo en Hugging Face: https://huggingface.co/ZDRCLOV/Akobiirrr
 - Modelo base declarado: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Modelo base declarado: https://huggingface.co/huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF
 - Modelo base declarado: https://huggingface.co/Cloudflare/clef

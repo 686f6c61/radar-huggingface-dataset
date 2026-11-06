@@ -91,9 +91,9 @@ No se han publicado resultados de benchmarks comparativos frente a otras politic
 
 | Modelo | Tarea | Ronda / brazo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| sim-square-broad-r03-auto-iql-success-bc-n32-idql | sim-square-broad | R3 / auto-iql-success-bc-n32 | no disponible | no aplica | 53,65 % de exito medio (5 semillas) | MIT | HuggingFace |
-| sim-square-broad-r02-auto-iql-n32-idql | sim-square-broad | R2 / auto-iql-n32 | no disponible | no aplica | no disponible | MIT (presumible, no confirmado en la informacion disponible) | HuggingFace |
-| Variantes de la misma campana (por ejemplo, brazos no ponderados por exito) | sim-square-broad | R3 / distintos brazos | no disponible | no aplica | no disponible | MIT | HuggingFace (organizacion mulligan) |
+| sim-square-broad-r03-auto-iql-success-bc-n32-idql | sim-square-broad | R3 / auto-iql-success-bc-n32 | no disponible | no aplica | 53,65 % de exito medio (5 semillas) | MIT | Hugging Face |
+| sim-square-broad-r02-auto-iql-n32-idql | sim-square-broad | R2 / auto-iql-n32 | no disponible | no aplica | no disponible | MIT (presumible, no confirmado en la informacion disponible) | Hugging Face |
+| Variantes de la misma campana (por ejemplo, brazos no ponderados por exito) | sim-square-broad | R3 / distintos brazos | no disponible | no aplica | no disponible | MIT | Hugging Face (organizacion mulligan) |
 
 La unica comparacion documentada en la informacion disponible es con el checkpoint de la ronda anterior (`r02`), del que no se han recogido cifras de rendimiento. No se dispone de comparaciones frente a agentes externos al proyecto Mulligan.
 
@@ -111,10 +111,10 @@ La unica comparacion documentada en la informacion disponible es con el checkpoi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r03-auto-iql-success-bc-n32-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r03-auto-iql-success-bc-n32-idql
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organizacion en HuggingFace: https://huggingface.co/mulligan
+- Organizacion en Hugging Face: https://huggingface.co/mulligan
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval
 - Dataset de teleoperacion base: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-baseline
 - Dataset de rollouts c01: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-auto-iql-n32-policy-rollouts

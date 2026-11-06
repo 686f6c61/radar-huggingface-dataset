@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Enfoque | Modelos necesarios para N receptores | Predicción en receptores no vistos | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RxGS (este modelo) | 1 modelo unificado por escena | Sí | BSD 3-Clause | Checkpoints en HuggingFace |
+| RxGS (este modelo) | 1 modelo unificado por escena | Sí | BSD 3-Clause | Checkpoints en Hugging Face |
 | Métodos 3DGS previos con receptor fijo | N modelos independientes (uno por receptor) | No | no disponible | no disponible |
 | Alternativas concretas con nombre | no disponible | no disponible | no disponible | no disponible |
 
@@ -90,7 +90,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de alternativas c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kyang73/RxGS-pretrained
+- Modelo en Hugging Face: https://huggingface.co/kyang73/RxGS-pretrained
 - Artículo (PDF): https://arxiv.org/pdf/2605.24290
 - Artículo (arXiv:2605.24290): https://arxiv.org/abs/2605.24290
 - Código: https://github.com/nesl/RxGS

@@ -106,6 +106,6 @@ A.X K1 ofrece la licencia Apache 2.0, más permisiva que la de sus competidores 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skt/A.X-K1
+- Modelo en Hugging Face: https://huggingface.co/skt/A.X-K1
 - Repositorio GitHub: https://github.com/SKT-AI/A.X-K1
 - Informe técnico (arXiv): https://arxiv.org/abs/2601.09200

@@ -72,11 +72,11 @@ La comparativa se basa en características generales, ya que no se dispone de re
 - No procesa información semántica de imágenes ni otros sensores; solo nubes de puntos, por lo que su rendimiento degrada en condiciones de niebla o lluvia densa donde el LiDAR es menos fiable.
 - No se han documentado sesgos específicos, pero al estar entrenado en escenarios urbanos de Boston y Singapur, puede tener menor precisión en otros contextos geográficos.
 - La licencia Apache-2.0 permite uso comercial, pero se debe atribuir correctamente el origen del modelo y cumplir con las condiciones de la licencia.
-- El tamaño del repositorio es 0.0 GB en la página de HuggingFace, lo que sugiere que los pesos se almacenan externamente o hay un error de visualización; verificar la integridad de la descarga antes de usar.
+- El tamaño del repositorio es 0.0 GB en la página de Hugging Face, lo que sugiere que los pesos se almacenan externamente o hay un error de visualización; verificar la integridad de la descarga antes de usar.
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/torch-pointcloud/second-multihead.nuscenes.openpcdet)
+- [Hugging Face - modelo](https://huggingface.co/torch-pointcloud/second-multihead.nuscenes.openpcdet)
 - [Paper SECOND](https://www.mdpi.com/1424-8220/18/10/3337)
 - [OpenPCDet (GitHub)](https://github.com/open-mmlab/OpenPCDet)
 - [torch-pointcloud (GitHub)](https://github.com/arthurdjn/pytorch-pointcloud)

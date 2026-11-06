@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada pero conviene ser honesto al respecto: e
 | Modelo base | unsloth/Llama-3.2-1B-Instruct |
 | Libreria | peft |
 | Rank / alpha del LoRA | No disponible |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Fecha de creacion | 2026-09-24T00:46:58Z |
 | Ultima actualizacion | 2026-09-24T00:47:01Z (3 segundos despues de la creacion) |
 | Descargas / likes | 0 / 0 |
@@ -84,7 +84,7 @@ No existe un modelo comparable directo, porque este repositorio no es un modelo 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evaluacion publicada |
 |---|---|---|---|---|---|
 | Junaidi69/rengas-3.2-lora-adapters-st-011 (adaptador) | No disponible | No disponible | No disponible | Repositorio con 0 descargas | No |
-| unsloth/Llama-3.2-1B-Instruct (base de este adaptador) | ~1,24 B | 128.000 tokens | Llama 3.2 Community License | Publico en HuggingFace | Si, en la model card de Meta |
+| unsloth/Llama-3.2-1B-Instruct (base de este adaptador) | ~1,24 B | 128.000 tokens | Llama 3.2 Community License | Publico en Hugging Face | Si, en la model card de Meta |
 | meta-llama/Llama-3.2-1B-Instruct | ~1,24 B | 128.000 tokens | Llama 3.2 Community License | Publico, con acceso condicionado | Si |
 | Qwen2.5-1.5B-Instruct | ~1,54 B | 32.768 tokens | Apache 2.0 | Publico | Si |
 | Gemma 2 2B Instruct | ~2,6 B | 8.192 tokens | Gemma Terms of Use | Publico, con acceso condicionado | Si |

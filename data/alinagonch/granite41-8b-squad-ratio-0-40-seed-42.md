@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AlinaGonch/granite41-8b-squad-ratio-0.40-seed-42` es un repositorio publicado en HuggingFace por el usuario AlinaGonch cuya model card es la plantilla autogenerada por el Hub: no contiene descripcion del modelo, autor real, licencia, idiomas ni procedimiento de entrenamiento. El propio autor no ha rellenado ningun campo, por lo que toda la informacion tecnica verificable procede del identificador del repositorio y de los metadatos del Hub, no de documentacion del modelo.
+`AlinaGonch/granite41-8b-squad-ratio-0.40-seed-42` es un repositorio publicado en Hugging Face por el usuario AlinaGonch cuya model card es la plantilla autogenerada por el Hub: no contiene descripcion del modelo, autor real, licencia, idiomas ni procedimiento de entrenamiento. El propio autor no ha rellenado ningun campo, por lo que toda la informacion tecnica verificable procede del identificador del repositorio y de los metadatos del Hub, no de documentacion del modelo.
 
 El identificador sugiere, por convencion de nomenclatura y no por documentacion publicada, un ajuste fino del modelo IBM Granite 4.1 de 8.000 millones de parametros sobre el conjunto de datos SQuAD, con una fraccion de datos de 0,40 y semilla aleatoria 42. Esta interpretacion no esta confirmada por el autor y debe tratarse como hipotesis de trabajo. La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. (2019) sobre el calculador de impacto medioambiental de ML, que forma parte de la plantilla por defecto del Hub, y no a un paper del modelo.
 
@@ -30,7 +30,7 @@ La relevancia de esta ficha es limitada pero conviene ser explicito: se trata de
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada. La model card es la plantilla autogenerada por HuggingFace y todos los apartados relevantes (descripcion, fuentes, datos de entrenamiento, hiperparametros, evaluacion, infraestructura de computo) figuran como "[More Information Needed]". No se especifica si se trata de un transformer denso, de una arquitectura MoE, hibrida o de estado recurrente, ni si hubo fases de RLHF, DPO o ajuste supervisado.
+No hay informacion publicada. La model card es la plantilla autogenerada por Hugging Face y todos los apartados relevantes (descripcion, fuentes, datos de entrenamiento, hiperparametros, evaluacion, infraestructura de computo) figuran como "[More Information Needed]". No se especifica si se trata de un transformer denso, de una arquitectura MoE, hibrida o de estado recurrente, ni si hubo fases de RLHF, DPO o ajuste supervisado.
 
 Los unicos indicios disponibles son indirectos. En primer lugar, el nombre del repositorio incluye los segmentos `granite41-8b`, `squad`, `ratio-0.40` y `seed-42`, lo que apunta a un ajuste fino del modelo Granite 4.1 8B sobre SQuAD con un submuestreo del 40 por ciento de los datos y semilla 42; esta es una convencion habitual en experimentos de ablacion sobre cantidad de datos de ajuste. En segundo lugar, el tamano del repositorio (0,2 GB) es aproximadamente dos ordenes de magnitud inferior al de unos pesos completos de 8B en bf16, lo que sugiere un adaptador de bajo rango o una publicacion incompleta. Ninguno de estos dos puntos esta confirmado por el autor.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para inferencia: no disponible. No puede estimarse con fiabilidad sin saber si el repositorio contiene pesos completos o un adaptador; un modelo denso de 8.000 millones de parametros requeriria del orden de 16 GB en bf16, 8-9 GB en cuantizacion de 8 bits y 5-6 GB en cuantizacion de 4 bits, cifras que se ofrecen unicamente como referencia general de categoria y no como requisito de este artefacto concreto.
 - GPU recomendadas: no disponible. Como referencia de categoria, un modelo denso de 8B cabria en una RTX 4090 (24 GB) o RTX 3090 en bf16, y en GPUs de 8-12 GB con cuantizacion de 4 bits; para servicio con concurrencia alta se usarian A100, H100 o L40S.
 - Compatibilidad con GPU de consumo: no confirmada. Depende del formato de pesos, que no esta documentado mas alla de la etiqueta `safetensors`.
-- Opciones de despliegue: no disponible. La etiqueta `endpoints_compatible` indica compatibilidad declarada con los endpoints de HuggingFace, pero no se especifica soporte de vLLM, llama.cpp, Ollama o TGI, y el formato GGUF no aparece entre las etiquetas.
+- Opciones de despliegue: no disponible. La etiqueta `endpoints_compatible` indica compatibilidad declarada con los endpoints de Hugging Face, pero no se especifica soporte de vLLM, llama.cpp, Ollama o TGI, y el formato GGUF no aparece entre las etiquetas.
 - Latencia y throughput: no disponibles.
 - Estado de verificacion: el repositorio acumula 0 descargas, por lo que no existe evidencia de que los pesos se hayan cargado correctamente en ningun entorno.
 
@@ -93,7 +93,7 @@ No disponible. No se dispone de especificaciones, licencia ni resultados del mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.40-seed-42
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.40-seed-42
 - Articulo referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de impacto de carbono en ML): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de ML citado en la plantilla: https://mlco2.github.io/impact
 - Paper del modelo, blog, repositorio de codigo o demo: no disponible

@@ -82,7 +82,7 @@ En conocimiento, las tres variantes forman un solo grupo: la diferencia entre me
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/primitive-ai/K2-Horizon-MoVA-36B-A4B-NVFP4
+- Hugging Face: https://huggingface.co/primitive-ai/K2-Horizon-MoVA-36B-A4B-NVFP4
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
 - Variante FP8 oficial: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B-FP8
 - Pull request de vLLM (soporte K2-Horizon): https://github.com/vllm-project/vllm/pull/55063

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SevenDeadlock_245e_42140s es un checkpoint publicado en HuggingFace por el usuario Homiebear bajo licencia OpenRAIL. El identificador del repositorio sugiere un modelo derivado de otro modelo base, con un sufijo numérico que probablemente codifica pasos de entrenamiento (245 epochs, 42140 steps) aunque esta interpretación no está confirmada por el autor. El repositorio tiene un tamaño de 0,5 GB, lo que apunta a un modelo de pequeño tamaño o a un conjunto parcial de pesos.
+SevenDeadlock_245e_42140s es un checkpoint publicado en Hugging Face por el usuario Homiebear bajo licencia OpenRAIL. El identificador del repositorio sugiere un modelo derivado de otro modelo base, con un sufijo numérico que probablemente codifica pasos de entrenamiento (245 epochs, 42140 steps) aunque esta interpretación no está confirmada por el autor. El repositorio tiene un tamaño de 0,5 GB, lo que apunta a un modelo de pequeño tamaño o a un conjunto parcial de pesos.
 
 La model card publicada no contiene información técnica: se limita a declarar la licencia OpenRAIL. No se especifican arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni datos de entrenamiento. Tampoco hay pipeline declarado, descargas ni likes en el momento de la consulta, lo que indica que se trata de un checkpoint recién subido y sin validación comunitaria.
 
@@ -70,7 +70,7 @@ No disponible. No se puede establecer una comparativa fiable sin conocer arquite
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SevenDeadlock_245e_42140s | no disponible | no disponible | OpenRAIL | HuggingFace, 0 descargas |
+| SevenDeadlock_245e_42140s | no disponible | no disponible | OpenRAIL | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,6 +85,6 @@ No disponible. No se puede establecer una comparativa fiable sin conocer arquite
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Homiebear/SevenDeadlock_245e_42140s
+- Repositorio en Hugging Face: https://huggingface.co/Homiebear/SevenDeadlock_245e_42140s
 - Licencia OpenRAIL: no se ha proporcionado un enlace específico en la información disponible.
 - Paper, blog, repositorio de código o demo: no disponible.

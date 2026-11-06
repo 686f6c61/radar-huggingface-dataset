@@ -85,7 +85,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leapshared/nari-router-4b
+- Hugging Face: https://huggingface.co/leapshared/nari-router-4b
 - Modelo base: https://huggingface.co/blackmallangcow/nari-decision-4b
 - Repositorio de código de enrutamiento citado en la model card: `dialogue/routing/nari_route.py` (no se proporciona URL)
 - Documentación de mediciones citada: `docs/measurements/routing.md` (no se proporciona URL)

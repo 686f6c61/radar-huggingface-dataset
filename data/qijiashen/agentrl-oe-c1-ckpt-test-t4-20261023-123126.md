@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qijiashen/agentrl-oe-c1-ckpt-test-t4-20261023-123126` es un checkpoint de 4.659.865.088 parámetros (≈4,66 B) publicado por el usuario `qijiashen` en HuggingFace, derivado mediante fine-tuning del modelo base `Qwen/Qwen3.5-4B-Base` de Alibaba Qwen. El nombre del repositorio sugiere un punto de control intermedio de un entrenamiento de reinforcement learning orientado a agentes ("agentrl", "ckpt", "test-t4"), con fecha de creación del 23 de octubre de 2026. La model card publicada es una copia prácticamente literal de la del Qwen3.5-4B original, por lo que no documenta el proceso de ajuste específico aplicado a este checkpoint.
+`qijiashen/agentrl-oe-c1-ckpt-test-t4-20261023-123126` es un checkpoint de 4.659.865.088 parámetros (≈4,66 B) publicado por el usuario `qijiashen` en Hugging Face, derivado mediante fine-tuning del modelo base `Qwen/Qwen3.5-4B-Base` de Alibaba Qwen. El nombre del repositorio sugiere un punto de control intermedio de un entrenamiento de reinforcement learning orientado a agentes ("agentrl", "ckpt", "test-t4"), con fecha de creación del 23 de octubre de 2026. La model card publicada es una copia prácticamente literal de la del Qwen3.5-4B original, por lo que no documenta el proceso de ajuste específico aplicado a este checkpoint.
 
 El modelo hereda la arquitectura híbrida de Qwen3.5: capas de atención lineal del tipo Gated DeltaNet combinadas con capas de atención completa con compuertas (Gated Attention), además de un codificador visual para entrada image-text-to-text. Según la model card heredada, el contexto nativo es de 262.144 tokens, extensible hasta 1.010.000, y el modelo se entrenó con multi-token prediction (MTP). El repositorio ocupa 9,3 GB, lo que es coherente con pesos en bfloat16.
 
@@ -36,7 +36,7 @@ Sobre el entrenamiento de este checkpoint concreto no hay información: la model
 - Razonamiento, matemáticas y conocimiento general: la model card del base reporta resultados en MMLU-Pro y MMLU-Redux dentro de la familia Qwen3.5.
 - Generación de código: la familia Qwen3.5 declara paridad con Qwen3 en benchmarks de código; no hay evaluación específica de este checkpoint.
 - Soporte multilingüe: la familia declara 201 idiomas y dialectos; para este checkpoint concreto el dato figura como "no disponible".
-- Compatibilidad declarada con HuggingFace Transformers, vLLM, SGLang y KTransformers (según la model card heredada).
+- Compatibilidad declarada con Hugging Face Transformers, vLLM, SGLang y KTransformers (según la model card heredada).
 - Modo "thinking" y tool calling: presentes en la familia Qwen3.5, pero no confirmados para este checkpoint experimental.
 - Entrenamiento con MTP, lo que habilita decodificación especulativa si el runtime lo soporta.
 
@@ -96,7 +96,7 @@ La comparación es limitada: los valores de MMLU-Pro corresponden a la model car
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qijiashen/agentrl-oe-c1-ckpt-test-t4-20261023-123126
+- Modelo en Hugging Face: https://huggingface.co/qijiashen/agentrl-oe-c1-ckpt-test-t4-20261023-123126
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Blog de la familia Qwen3.5: https://qwen.ai/blog?id=qwen3.5

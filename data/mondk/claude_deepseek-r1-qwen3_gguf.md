@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mondk/claude_Deepseek-R1-Qwen3_GGUF es un modelo de generacion de texto de aproximadamente 8.190 millones de parametros, publicado por el usuario mondk en HuggingFace. Se trata de una adaptacion afinada del modelo base mondk/claude_Deepseek-R1-Qwen3_safetensors, que a su vez parte de la familia Qwen3 en su variante DeepSeek-R1-0528-Qwen3-8B, segun los indices de terceros consultados. El modelo combina el etiquetado "deepseek" y "thinking" con el dataset mondk/claude-v2-super.jsonl, lo que sugiere un ajuste orientado a respuestas con cadena de razonamiento y un estilo conversacional inspirado en Claude.
+mondk/claude_Deepseek-R1-Qwen3_GGUF es un modelo de generacion de texto de aproximadamente 8.190 millones de parametros, publicado por el usuario mondk en Hugging Face. Se trata de una adaptacion afinada del modelo base mondk/claude_Deepseek-R1-Qwen3_safetensors, que a su vez parte de la familia Qwen3 en su variante DeepSeek-R1-0528-Qwen3-8B, segun los indices de terceros consultados. El modelo combina el etiquetado "deepseek" y "thinking" con el dataset mondk/claude-v2-super.jsonl, lo que sugiere un ajuste orientado a respuestas con cadena de razonamiento y un estilo conversacional inspirado en Claude.
 
 El repositorio distribuido aqui contiene pesos en formato GGUF, lo que lo hace directamente utilizable en herramientas de inferencia local como llama.cpp, Ollama o LM Studio. El modelo base en safetensors tiene una longitud de contexto reportada de 32.768 tokens por indices externos, heredada de la arquitectura Qwen3-8B. Se publica bajo licencia Apache 2.0 y declara soporte unicamente para ingles.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `namin0202/gemma-4-e4b-r3v-iter2` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `namin0202` en HuggingFace. Se basa en el modelo `google/gemma-4-E4B-it`, la versión instruct del modelo Gemma 4 E4B de Google, que cuenta con 4.400 millones de parámetros y una arquitectura densa. El adaptador está diseñado para la generación de texto conversacional y se distribuye en formato PEFT con pesos en safetensors.
+El modelo `namin0202/gemma-4-e4b-r3v-iter2` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `namin0202` en Hugging Face. Se basa en el modelo `google/gemma-4-E4B-it`, la versión instruct del modelo Gemma 4 E4B de Google, que cuenta con 4.400 millones de parámetros y una arquitectura densa. El adaptador está diseñado para la generación de texto conversacional y se distribuye en formato PEFT con pesos en safetensors.
 
 La información pública disponible sobre este adaptador es extremadamente limitada: la model card del autor está prácticamente vacía, sin detalles sobre el proceso de entrenamiento, los datos utilizados, los hiperparámetros o los objetivos específicos del ajuste. El nombre sugiere una iteración de entrenamiento (iter2) y una variante con "r3v", posiblemente indicando un rango de LoRA de 3, pero esto no está confirmado. Al estar construido sobre Gemma 4 E4B, hereda las capacidades del modelo base, incluyendo soporte multimodal, ventana de contexto de hasta 256K tokens y compatibilidad con más de 140 idiomas, aunque el adaptador puede modificar o restringir estas capacidades.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada: el modelo base Gemma 4 E4B requiere un mínimo de 8 GB de VRAM para inferencia en precisión completa. El adaptador LoRA añade una sobrecarga mínima (0.1 GB), por lo que el requisito total se mantiene en torno a 8 GB.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4070, RTX 4090, A100, H100. Cualquier GPU con al menos 8 GB de VRAM es suficiente.
 - Compatibilidad con GPU de consumo: sí, el modelo cabe en GPUs de gama media y alta para consumidores.
-- Opciones de despliegue: al ser un adaptador PEFT, debe cargarse junto con el modelo base. Se puede usar con HuggingFace Transformers, PEFT, vLLM (si soporta LoRA), llama.cpp (si se convierte a GGUF) u Ollama (si se empaqueta correctamente).
+- Opciones de despliegue: al ser un adaptador PEFT, debe cargarse junto con el modelo base. Se puede usar con Hugging Face Transformers, PEFT, vLLM (si soporta LoRA), llama.cpp (si se convierte a GGUF) u Ollama (si se empaqueta correctamente).
 - Latencia y throughput: no disponibles. Dependen del hardware y del backend de inferencia.
 
 ## Comparativa con modelos similares
@@ -65,9 +65,9 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| namin0202/gemma-4-e4b-r3v-iter2 | Adaptador LoRA sobre 4.4B | No disponible | No disponible | HuggingFace |
-| google/gemma-4-E4B-it | 4.4B | Hasta 256K | Licencia Gemma | HuggingFace |
-| namin0202/gemma-4-e2b-r3v-iter2 | Adaptador LoRA sobre 2B | No disponible | No disponible | HuggingFace |
+| namin0202/gemma-4-e4b-r3v-iter2 | Adaptador LoRA sobre 4.4B | No disponible | No disponible | Hugging Face |
+| google/gemma-4-E4B-it | 4.4B | Hasta 256K | Licencia Gemma | Hugging Face |
+| namin0202/gemma-4-e2b-r3v-iter2 | Adaptador LoRA sobre 2B | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 ## Enlaces
 
 - Repositorio del adaptador: https://huggingface.co/namin0202/gemma-4-e4b-r3v-iter2
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-E4B-it
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-E4B-it
 - Página oficial de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Model card de Gemma 4 en Google AI for Developers: https://ai.google.dev/gemma/docs/core/model_card_4
 - Ficha de Gemma 4 E4B en gemma4.dev: https://gemma4.dev/models/gemma-4-e4b

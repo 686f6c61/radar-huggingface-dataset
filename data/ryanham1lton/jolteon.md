@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jolteon es un repositorio alojado en HuggingFace bajo el identificador Ryanham1lton/Jolteon, publicado por el usuario Ryanham1lton con licencia Creative Commons Attribution 4.0 (cc-by-4.0). El repositorio fue creado el 4 de octubre de 2026 y actualizado por ultima vez el mismo dia, apenas tres minutos despues, con un tamano total de 0,1 GB. No acumula descargas ni "likes", no tiene etiqueta de pipeline asignada y no declara idiomas soportados.
+Jolteon es un repositorio alojado en Hugging Face bajo el identificador Ryanham1lton/Jolteon, publicado por el usuario Ryanham1lton con licencia Creative Commons Attribution 4.0 (cc-by-4.0). El repositorio fue creado el 4 de octubre de 2026 y actualizado por ultima vez el mismo dia, apenas tres minutos despues, con un tamano total de 0,1 GB. No acumula descargas ni "likes", no tiene etiqueta de pipeline asignada y no declara idiomas soportados.
 
 La model card publicada no contiene mas informacion que la linea de licencia. No se especifica arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, formatos de pesos ni resultados de evaluacion. Tampoco hay paper, blog tecnico, repositorio de codigo o demo asociados que permitan reconstruir esas caracteristicas por vias externas.
 
@@ -20,7 +20,7 @@ En consecuencia, esta ficha no puede certificar que Jolteon sea un modelo de len
 | Idiomas soportados | no disponible |
 | Licencia | cc-by-4.0 |
 | Formato de pesos | no disponible |
-| Identificador en HuggingFace | Ryanham1lton/Jolteon |
+| Identificador en Hugging Face | Ryanham1lton/Jolteon |
 | Autor | Ryanham1lton |
 | Fecha de creacion | 2026-10-04T17:44:41Z |
 | Ultima actualizacion | 2026-10-04T17:47:30Z |
@@ -86,7 +86,7 @@ No disponible. La comparacion con alternativas exige conocer, como minimo, el ti
 | Contexto | no disponible | no disponible | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible | no disponible | no disponible |
 | Licencia | cc-by-4.0 | no disponible | no disponible | no disponible |
-| Disponibilidad | repositorio HuggingFace sin documentacion | no disponible | no disponible | no disponible |
+| Disponibilidad | repositorio Hugging Face sin documentacion | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -102,5 +102,5 @@ No disponible. La comparacion con alternativas exige conocer, como minimo, el ti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Jolteon
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Jolteon
 - No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

@@ -80,7 +80,7 @@ Oprius 3.0 se posiciona como un fine-tuning ligero y especializado frente a alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zzzekryo/Oprius-3.0-1.1B
+- Modelo en Hugging Face: https://huggingface.co/zzzekryo/Oprius-3.0-1.1B
 - Modelo base (TinyLlama 1.1B Chat v1.0): https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Dataset de entrenamiento: https://huggingface.co/datasets/zzzekryo/conversation-and-web-examples-ForOprius
 - Paper, repositorio de código y demo: no disponible

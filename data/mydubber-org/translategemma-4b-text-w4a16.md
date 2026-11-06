@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TranslateGemma 4B text-only W4A16 es una version modificada y cuantizada de `google/translategemma-4b-it`, el modelo de traduccion automatica de Google derivado de la familia Gemma 3. El autor de esta variante es el usuario de HuggingFace `mydubber-org`, que la publica como componente interno de los workers de GPU de su servidor myDubber. La modificacion consiste en eliminar el codificador de vision y su proyector, conservar unicamente el modelo de lenguaje como `Gemma3ForCausalLM` con los tensores sin alterar, y cuantizar los pesos a 4 bits mediante GPTQ (esquema W4A16) con `compressed-tensors`, excluyendo `lm_head`.
+TranslateGemma 4B text-only W4A16 es una version modificada y cuantizada de `google/translategemma-4b-it`, el modelo de traduccion automatica de Google derivado de la familia Gemma 3. El autor de esta variante es el usuario de Hugging Face `mydubber-org`, que la publica como componente interno de los workers de GPU de su servidor myDubber. La modificacion consiste en eliminar el codificador de vision y su proyector, conservar unicamente el modelo de lenguaje como `Gemma3ForCausalLM` con los tensores sin alterar, y cuantizar los pesos a 4 bits mediante GPTQ (esquema W4A16) con `compressed-tensors`, excluyendo `lm_head`.
 
 El resultado es un modelo de 3.880.263.168 parametros (aproximadamente 3,9 mil millones) empaquetado en un repositorio de 3,0 GB, pensado para servir traduccion en vLLM con un consumo de VRAM notablemente inferior al del modelo original en bf16. La plantilla de chat no es la estructurada de TranslateGemma, sino la nativa de Gemma 3, en la que el mensaje de sistema se inyecta en el primer turno de usuario.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mydubber-org/translategemma-4b-text-W4A16 | 3,88 B | 4096 (configurado) | W4A16 GPTQ | Gemma Terms of Use | HuggingFace, vLLM |
-| google/translategemma-4b-it | no disponible | no disponible | bf16 (original) | Gemma Terms of Use | HuggingFace |
-| Gemma 3 4B (familia base) | no disponible | no disponible | multiples | Gemma Terms of Use | HuggingFace, Ollama, llama.cpp |
+| mydubber-org/translategemma-4b-text-W4A16 | 3,88 B | 4096 (configurado) | W4A16 GPTQ | Gemma Terms of Use | Hugging Face, vLLM |
+| google/translategemma-4b-it | no disponible | no disponible | bf16 (original) | Gemma Terms of Use | Hugging Face |
+| Gemma 3 4B (familia base) | no disponible | no disponible | multiples | Gemma Terms of Use | Hugging Face, Ollama, llama.cpp |
 
 La comparativa se limita a los modelos de los que se dispone informacion en esta ficha; no se han identificado en la informacion proporcionada alternativas especificas de traduccion del mismo tamano con datos verificables de rendimiento.
 
@@ -83,7 +83,7 @@ La comparativa se limita a los modelos de los que se dispone informacion en esta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mydubber-org/translategemma-4b-text-W4A16
+- Modelo en Hugging Face: https://huggingface.co/mydubber-org/translategemma-4b-text-W4A16
 - Modelo base: https://huggingface.co/google/translategemma-4b-it
 - Script de construccion: https://github.com/vladbehash/dubber/blob/main/libs/dub-pipeline/scripts/build_translategemma.py
 - Dataset de calibracion: https://huggingface.co/datasets/google/wmt24pp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lugman-madhiai/invoice-full-2.5-7B-smoke` es un ajuste fino (finetune) del modelo multimodal `unsloth/Qwen2.5-VL-7B-Instruct`, publicado por el usuario de HuggingFace lugman-madhiai bajo licencia Apache 2.0. Se trata de un modelo de vision-lenguaje (image-text-to-text) orientado a la extraccion de datos estructurados a partir de documentos, segun se deduce del nombre del repositorio y del resto de publicaciones del mismo autor, entre las que figura `lugman-madhiai/Qwen2.5-VL-7B-invoice-extraction`. La model card del repositorio es la plantilla generada automaticamente por Unsloth y no documenta el conjunto de datos, el procedimiento de entrenamiento ni resultados de evaluacion.
+El modelo `lugman-madhiai/invoice-full-2.5-7B-smoke` es un ajuste fino (finetune) del modelo multimodal `unsloth/Qwen2.5-VL-7B-Instruct`, publicado por el usuario de Hugging Face lugman-madhiai bajo licencia Apache 2.0. Se trata de un modelo de vision-lenguaje (image-text-to-text) orientado a la extraccion de datos estructurados a partir de documentos, segun se deduce del nombre del repositorio y del resto de publicaciones del mismo autor, entre las que figura `lugman-madhiai/Qwen2.5-VL-7B-invoice-extraction`. La model card del repositorio es la plantilla generada automaticamente por Unsloth y no documenta el conjunto de datos, el procedimiento de entrenamiento ni resultados de evaluacion.
 
 El modelo hereda la arquitectura de Qwen2.5-VL: un codificador visual tipo ViT con atencion por ventanas y resolucion dinamica nativa, acoplado a un decodificador de lenguaje de la familia Qwen2.5 con atencion completa y codificacion posicional M-RoPE (que incluye componentes temporales absolutos). El sufijo "smoke" del identificador sugiere que se trata de una ejecucion de prueba de humo (smoke test) para validar el pipeline de entrenamiento, mas que de un checkpoint entrenado y evaluado en profundidad. El repositorio registra cero descargas y cero "likes", y las marcas de tiempo de creacion y ultima actualizacion (2026-09-24T23:38:03 y 2026-09-24T23:38:09) distan seis segundos, lo que refuerza la hipotesis de publicacion de prueba.
 
@@ -22,13 +22,13 @@ Su relevancia practica es limitada tal y como esta publicado: sirve como referen
 | Formato de pesos | safetensors (libreria `transformers`) |
 | Pipeline declarado | image-text-to-text |
 | Modelo base | unsloth/Qwen2.5-VL-7B-Instruct |
-| Fecha de publicacion (metadatos de HuggingFace) | 2026-09-24 |
+| Fecha de publicacion (metadatos de Hugging Face) | 2026-09-24 |
 
 ## Arquitectura y entrenamiento
 
 La arquitectura subyacente es la de Qwen2.5-VL-7B-Instruct: un modelo de vision-lenguaje compuesto por un codificador visual ViT que procesa la imagen con resolucion dinamica nativa y atencion por ventanas para limitar el coste computacional en imagenes de alta resolucion, y un decodificador de lenguaje autorregresivo de la familia Qwen2.5 con atencion completa. La conexion entre ambos modulos se realiza mediante un proyector que mapea las caracteristicas visuales al espacio de embeddings del decodificador. El modelo incorpora M-RoPE (Multimodal Rotary Position Embedding), que descompone la codificacion posicional en componentes temporales, de altura y de anchura, lo que permite manejar de forma consistente imagenes de distinta resolucion y secuencias de video.
 
-Respecto al entrenamiento, la unica informacion aportada por el autor es que el modelo se entreno "2x faster" con Unsloth y la libreria TRL de HuggingFace. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la estrategia de ajuste (LoRA/QLoRA frente a ajuste completo), la existencia de fases de RLHF o DPO, ni los hiperparametros empleados. Tampoco se documenta ninguna innovacion tecnica especifica de este finetune mas alla del uso de las herramientas citadas. El identificador del repositorio ("smoke") y las marcas temporales de publicacion apuntan a una ejecucion de validacion del pipeline mas que a un entrenamiento completo.
+Respecto al entrenamiento, la unica informacion aportada por el autor es que el modelo se entreno "2x faster" con Unsloth y la libreria TRL de Hugging Face. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la estrategia de ajuste (LoRA/QLoRA frente a ajuste completo), la existencia de fases de RLHF o DPO, ni los hiperparametros empleados. Tampoco se documenta ninguna innovacion tecnica especifica de este finetune mas alla del uso de las herramientas citadas. El identificador del repositorio ("smoke") y las marcas temporales de publicacion apuntan a una ejecucion de validacion del pipeline mas que a un entrenamiento completo.
 
 ## Capacidades
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lugman-madhiai/invoice-full-2.5-7B-smoke | 7B (denominacion) | No disponible | Imagen + texto | Apache 2.0 | Repositorio HuggingFace, 0 descargas |
+| lugman-madhiai/invoice-full-2.5-7B-smoke | 7B (denominacion) | No disponible | Imagen + texto | Apache 2.0 | Repositorio Hugging Face, 0 descargas |
 | unsloth/Qwen2.5-VL-7B-Instruct (base) | 7B (denominacion) | 128K tokens declarados por la familia | Imagen + texto | Apache 2.0 | Ampliamente disponible y contrastado |
-| lugman-madhiai/Qwen2.5-VL-7B-invoice-extraction | 7B (denominacion) | No disponible | Imagen + texto | No disponible en la informacion recogida | Repositorio HuggingFace, integrable via FriendliAI |
+| lugman-madhiai/Qwen2.5-VL-7B-invoice-extraction | 7B (denominacion) | No disponible | Imagen + texto | No disponible en la informacion recogida | Repositorio Hugging Face, integrable via FriendliAI |
 
 No se dispone de datos verificados de rendimiento de ninguno de los tres checkpoints en la informacion proporcionada, por lo que la comparativa se limita a parametros, modalidad y licencia. Existen otras familias orientadas a la extraccion documental (por ejemplo, modelos OCR-free tipo Donut o modelos especializados en extraccion estructurada), pero no se incluyen cifras porque no forman parte de la informacion recogida.
 
@@ -94,7 +94,7 @@ No se dispone de datos verificados de rendimiento de ninguno de los tres checkpo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lugman-madhiai/invoice-full-2.5-7B-smoke
+- Modelo en Hugging Face: https://huggingface.co/lugman-madhiai/invoice-full-2.5-7B-smoke
 - Perfil del autor: https://huggingface.co/lugman-madhiai
 - Modelo hermano del mismo autor: https://huggingface.co/lugman-madhiai/Qwen2.5-VL-7B-invoice-extraction
 - Ficha del modelo hermano en FriendliAI: https://friendli.ai/models/lugman-madhiai/Qwen2.5-VL-7B-invoice-extraction

@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-base | ~3,97 B (denso) | No disponible en la model card | Checkpoint RL (GRPO) sobre base, orientado a correctitud de codigo | No declarada | HuggingFace, revision `main` |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4 B (denso) | 262.144 tokens (segun ficha publica del modelo base) | Modelo instruct generalista con soporte de tool calling | Apache-2.0 | HuggingFace, ampliamente adoptado |
-| Qwen3-4B (base) | ~4 B (denso) | 262.144 tokens | Modelo preentrenado sin post-entrenamiento instruct | Apache-2.0 | HuggingFace |
-| Qwen2.5-Coder-3B-Instruct | ~3 B (denso) | 32.768 tokens (segun ficha publica) | Modelo especializado en codigo con SFT | Apache-2.0 | HuggingFace |
+| cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-base | ~3,97 B (denso) | No disponible en la model card | Checkpoint RL (GRPO) sobre base, orientado a correctitud de codigo | No declarada | Hugging Face, revision `main` |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4 B (denso) | 262.144 tokens (segun ficha publica del modelo base) | Modelo instruct generalista con soporte de tool calling | Apache-2.0 | Hugging Face, ampliamente adoptado |
+| Qwen3-4B (base) | ~4 B (denso) | 262.144 tokens | Modelo preentrenado sin post-entrenamiento instruct | Apache-2.0 | Hugging Face |
+| Qwen2.5-Coder-3B-Instruct | ~3 B (denso) | 32.768 tokens (segun ficha publica) | Modelo especializado en codigo con SFT | Apache-2.0 | Hugging Face |
 
 La comparacion con benchmarks no es posible porque el checkpoint no publica metricas. Frente al modelo base Qwen3-4B-Instruct-2507, la diferencia esperable es un mejor pass@8 en problemas de codigo de dificultad frontera y un posible deterioro en capacidades generales no cubiertas por la recompensa binaria de correctitud. Los datos de la model card no permiten cuantificar ese intercambio.
 
@@ -101,7 +101,7 @@ La comparacion con benchmarks no es posible porque el checkpoint no publica metr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-base
+- Modelo en Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-base
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Registro de entrenamiento (Weights & Biases): proyecto `eaiexp-paper-final`, ejecucion `seeded_rl_base_ramp25_stoppen_gen4k-ep2_ncp5_n3nc_base` (no se proporciona URL directa en la model card)
 - Log local de entrenamiento (ruta indicada por el autor, no accesible publicamente): `experiments/cobalt_qwen3_4b_ft/rl_runs/qwen3_4b_instruct_2507_cobalt_v1/seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp5_n3nc_base/openrlhf_train.log`

@@ -82,7 +82,7 @@ La comparación directa con Qwen3.5-9B-Base es la más relevante, ya que este ch
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h011.sft-v3.step_16
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h011.sft-v3.step_16
 - Dataset del run: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Modelo base Qwen3.5-9B-Base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

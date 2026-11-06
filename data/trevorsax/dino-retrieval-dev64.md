@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`trevorsax/dino-retrieval-dev64` es un repositorio experimental publicado en HuggingFace por el usuario trevorsax que contiene una implementacion propia de una arquitectura denominada "Dino" orientada a tareas de retrieval, en una configuracion etiquetada como "nano". No se trata de un modelo entrenado ni de un release listo para produccion: el propio autor indica de forma explicita que el checkpoint incluido (`model.safetensors`) es unicamente una inicializacion valida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark. El repositorio pesa 0,0 GB y el recuento real de parametros extraido del fichero safetensors es de 16.576, una cifra extremadamente reducida incluso para los estandares de modelos "nano".
+`trevorsax/dino-retrieval-dev64` es un repositorio experimental publicado en Hugging Face por el usuario trevorsax que contiene una implementacion propia de una arquitectura denominada "Dino" orientada a tareas de retrieval, en una configuracion etiquetada como "nano". No se trata de un modelo entrenado ni de un release listo para produccion: el propio autor indica de forma explicita que el checkpoint incluido (`model.safetensors`) es unicamente una inicializacion valida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark. El repositorio pesa 0,0 GB y el recuento real de parametros extraido del fichero safetensors es de 16.576, una cifra extremadamente reducida incluso para los estandares de modelos "nano".
 
 El objetivo declarado del autor es la transparencia de codigo y la repetibilidad de pruebas basicas, no la competicion por metricas. El artefacto principal es el fichero `model.py`, acompanado de `config.json` (ajustes de arquitectura generados), `training_args.json` (receta de experimento por defecto) y el checkpoint de inicializacion. La model card recomienda, como primera evaluacion util, emplear el conjunto Flickr30k y reportar la metrica de tarea sobre al menos tres semillas, junto con una linea base de capacidad equivalente.
 
@@ -64,11 +64,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| trevorsax/dino-retrieval-dev64 | 16.576 | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, checkpoint de inicializacion |
-| Dersanc87/dino-retrieval | no disponible (configuracion xlarge) | no disponible | sin cifras verificadas | no disponible | HuggingFace |
-| Unijenagenomics/dino-retrieval-2024 | no disponible (configuracion giant) | no disponible | sin cifras verificadas | no disponible | HuggingFace |
-| DINOv2 (Meta AI) | no disponible en la informacion proporcionada | no disponible | backbone visual de referencia con pesos entrenados | no disponible en la informacion proporcionada | HuggingFace, repositorio facebookresearch/dino |
-| DINOv3 (Meta AI) | no disponible en la informacion proporcionada | no disponible | backbone visual universal de alto rendimiento segun Meta | no disponible en la informacion proporcionada | HuggingFace, Transformers, facebookresearch/dinov3 |
+| trevorsax/dino-retrieval-dev64 | 16.576 | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, checkpoint de inicializacion |
+| Dersanc87/dino-retrieval | no disponible (configuracion xlarge) | no disponible | sin cifras verificadas | no disponible | Hugging Face |
+| Unijenagenomics/dino-retrieval-2024 | no disponible (configuracion giant) | no disponible | sin cifras verificadas | no disponible | Hugging Face |
+| DINOv2 (Meta AI) | no disponible en la informacion proporcionada | no disponible | backbone visual de referencia con pesos entrenados | no disponible en la informacion proporcionada | Hugging Face, repositorio facebookresearch/dino |
+| DINOv3 (Meta AI) | no disponible en la informacion proporcionada | no disponible | backbone visual universal de alto rendimiento segun Meta | no disponible en la informacion proporcionada | Hugging Face, Transformers, facebookresearch/dinov3 |
 
 Los dos repositorios comparables hallados en la busqueda web comparten el mismo patron: prototipos de investigacion con configuraciones etiquetadas ("xlarge", "giant") que documentan valores por defecto y formatos de fichero sin presentar cifras de rendimiento verificadas. La comparacion con DINOv2 y DINOv3 es solo nominal: son familias de Meta AI con pesos entrenados y resultados publicados, mientras que el modelo aqui descrito es una implementacion independiente sin entrenamiento completado.
 
@@ -85,7 +85,7 @@ Los dos repositorios comparables hallados en la busqueda web comparten el mismo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trevorsax/dino-retrieval-dev64
+- Modelo en Hugging Face: https://huggingface.co/trevorsax/dino-retrieval-dev64
 - Repositorio comparable Dersanc87/dino-retrieval: https://huggingface.co/Dersanc87/dino-retrieval
 - Repositorio comparable Unijenagenomics/dino-retrieval-2024: https://huggingface.co/Unijenagenomics/dino-retrieval-2024
 - DINOv3 en Meta AI: https://ai.meta.com/research/dinov3/

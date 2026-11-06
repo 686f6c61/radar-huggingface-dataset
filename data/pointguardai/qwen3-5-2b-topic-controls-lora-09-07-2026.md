@@ -81,7 +81,7 @@ No se dispone de información sobre adaptadores LoRA similares de la misma categ
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/PointGuardAI/Qwen3.5-2B-Topic-Controls-LoRA-09-07-2026
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.5-2B
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/PointGuardAI/Qwen3.5-2B-Topic-Controls-LoRA-09-07-2026
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio de Qwen3.5 en GitHub: https://github.com/algtrd24/qwen3.5
 - Documentación de Unsloth para Qwen3.5: https://unsloth.ai/docs/models/qwen3.5

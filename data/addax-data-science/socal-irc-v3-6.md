@@ -4,7 +4,7 @@
 
 El modelo SOCAL-IRC-v3-6 es un clasificador de imágenes basado en EfficientNetV2 Small, desarrollado por Irvine Ranch Conservancy (IRC) de Orange County, California, y redistribuido por Addax Data Science para su integración con la plataforma AddaxAI. Está diseñado para identificar 18 clases de especies animales a partir de imágenes de cámaras trampa, una herramienta clave para el monitoreo ecológico automatizado. El modelo se entrenó con el framework MEWC (Monitoring-Research IRC Species Classification) y alcanza una precisión global del 96,9% y un F1 macro de 0,966 en un conjunto de prueba retenido de 3.669 imágenes.
 
-La relevancia de este modelo radica en su aplicación directa en conservación y gestión de fauna: permite convertir fotografías de cámaras trampa en datos ecológicos estructurados sin intervención manual. Al estar licenciado bajo CC BY-NC 4.0, su uso está restringido a fines no comerciales, lo que lo hace accesible para investigación y proyectos de conservación. El repositorio en HuggingFace incluye los pesos originales, un script de inferencia para TensorFlow y un mapeo de taxonomías resuelto contra GBIF.
+La relevancia de este modelo radica en su aplicación directa en conservación y gestión de fauna: permite convertir fotografías de cámaras trampa en datos ecológicos estructurados sin intervención manual. Al estar licenciado bajo CC BY-NC 4.0, su uso está restringido a fines no comerciales, lo que lo hace accesible para investigación y proyectos de conservación. El repositorio en Hugging Face incluye los pesos originales, un script de inferencia para TensorFlow y un mapeo de taxonomías resuelto contra GBIF.
 
 ## Especificaciones técnicas
 
@@ -79,7 +79,7 @@ No se dispone de datos comparativos con otros modelos de clasificación de espec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Addax-Data-Science/SOCAL-IRC-v3-6
+- Repositorio Hugging Face: https://huggingface.co/Addax-Data-Science/SOCAL-IRC-v3-6
 - Repositorio GitHub del desarrollador (IRC): https://github.com/Monitoring-Research-IRC/irc-species-classification-model
 - Licencia CC BY-NC 4.0: https://creativecommons.org/licenses/by-nc/4.0/
 - Citación del modelo: https://github.com/Monitoring-Research-IRC/irc-species-classification-model#citation

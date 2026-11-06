@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-shifted-l3_mixed_remove0.5_rho0 | 8.030 M | no disponible | llama3 | HuggingFace, 15 descargas | Checkpoint de investigación comprimido por SVD, sin fine-tuning de recuperación |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8.030 M | 8.192 tokens | llama3 | HuggingFace, ampliamente disponible | Modelo base sin comprimir; referencia de coherencia y seguridad |
-| Modelos Llama 3 8B comprimidos por poda o cuantización (por ejemplo, variantes GGUF/AWQ) | ~8.030 M | 8.192 tokens | llama3 | HuggingFace | Alternativas de compresión orientadas a despliegue; no equivalentes metodológicamente a este piloto SVD |
+| Jeesup/svd-safety-shifted-l3_mixed_remove0.5_rho0 | 8.030 M | no disponible | llama3 | Hugging Face, 15 descargas | Checkpoint de investigación comprimido por SVD, sin fine-tuning de recuperación |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8.030 M | 8.192 tokens | llama3 | Hugging Face, ampliamente disponible | Modelo base sin comprimir; referencia de coherencia y seguridad |
+| Modelos Llama 3 8B comprimidos por poda o cuantización (por ejemplo, variantes GGUF/AWQ) | ~8.030 M | 8.192 tokens | llama3 | Hugging Face | Alternativas de compresión orientadas a despliegue; no equivalentes metodológicamente a este piloto SVD |
 
 ## Limitaciones y advertencias
 
@@ -80,6 +80,6 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l3_mixed_remove0.5_rho0
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l3_mixed_remove0.5_rho0
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Llama 3: https://llama.meta.com/llama3/license/

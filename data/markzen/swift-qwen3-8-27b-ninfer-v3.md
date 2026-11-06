@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift-Qwen3.8-27B-NInfer-v3 es un artefacto de inferencia publicado por el usuario markzen en HuggingFace, consistente en una actualizacion de contenedor del modelo knoopx/Swift-Qwen3.8-27B-NInfer, que estaba fijado al formato NInfer v2. El modelo subyacente es una version multimodal (texto e imagen) derivada de ukisai/Swift-Qwen3.8-27B, empaquetada con cuantizacion mixta NVFP4/entera y orientada a ejecucion local en una GPU RTX 5090 mediante el motor NInfer.
+Swift-Qwen3.8-27B-NInfer-v3 es un artefacto de inferencia publicado por el usuario markzen en Hugging Face, consistente en una actualizacion de contenedor del modelo knoopx/Swift-Qwen3.8-27B-NInfer, que estaba fijado al formato NInfer v2. El modelo subyacente es una version multimodal (texto e imagen) derivada de ukisai/Swift-Qwen3.8-27B, empaquetada con cuantizacion mixta NVFP4/entera y orientada a ejecucion local en una GPU RTX 5090 mediante el motor NInfer.
 
 El cambio introducido en esta version es exclusivamente estructural: no se han convertido, recuantizado ni modificado los pesos, y el payload v2 es byte a byte identico al original. Lo unico que cambia es el directorio del contenedor, reescrito al formato v3 mediante una entrada adicional en la tabla de recuentos conocidos de la herramienta de actualizacion. El fichero resultante ocupa 18.324.343.792 bytes (17,07 GiB), contiene 1307 objetos (1301 tensores y 6 recursos) y declara los componentes text, vision y mtp.
 
@@ -97,7 +97,7 @@ No se dispone de datos comparativos de benchmarks entre estas variantes.
 - Cambio de plantilla de chat: la actualizacion instala `qwen3_8.jinja` con pensamiento activado y esfuerzo `xhigh`, sustituyendo la plantilla que acompanaba al artefacto original. Esto altera el formato del prompt y puede modificar sustancialmente las salidas; es imprescindible revisar la plantilla antes de comparar resultados con el modelo de origen.
 - Versionado inconsistente: el repositorio usa "27B" y el nombre del fichero usa "27b"; ademas, el artefacto se describe como v3 pero los pesos son identicos al v2, por lo que la etiqueta de version refleja el contenedor y no el modelo.
 - Sin adopcion verificable: cero descargas y cero "me gusta" en el momento de la consulta, y fecha de creacion muy reciente, por lo que no existe validacion por parte de la comunidad.
-- Inferencia alojada desactivada: la model card declara `inference: false`, de modo que el widget de HuggingFace no sirve el modelo; hay que ejecutarlo en local.
+- Inferencia alojada desactivada: la model card declara `inference: false`, de modo que el widget de Hugging Face no sirve el modelo; hay que ejecutarlo en local.
 - Idiomas y contexto desconocidos: no se declaran idiomas soportados ni longitud de contexto, lo que impide planificar despliegues multilingues o con ventanas largas sin pruebas propias.
 - Riesgo de alucinacion: no evaluado. Al no existir benchmarks ni evaluaciones de fidelidad, el riesgo debe asumirse como el del modelo base, que tampoco esta documentado en la informacion disponible.
 - Licencia: el artefacto declara apache-2.0, pero no se dispone de informacion sobre la licencia de los modelos base (ukisai/Swift-Qwen3.8-27B y knoopx/Swift-Qwen3.8-27B-NInfer). Antes de un uso comercial conviene verificar los terminos de la cadena de modelos de origen.
@@ -106,7 +106,7 @@ No se dispone de datos comparativos de benchmarks entre estas variantes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/markzen/Swift-Qwen3.8-27B-NInfer-v3
+- Modelo en Hugging Face: https://huggingface.co/markzen/Swift-Qwen3.8-27B-NInfer-v3
 - Artefacto de origen (NInfer v2): https://huggingface.co/knoopx/Swift-Qwen3.8-27B-NInfer
 - Modelo base original: https://huggingface.co/ukisai/Swift-Qwen3.8-27B
 - Referencia de layout v3: https://huggingface.co/neroued/Qwen3.8-27B-nvfp4-NInfer

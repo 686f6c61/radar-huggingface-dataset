@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Poolformer-demo es un repositorio de HuggingFace publicado por el usuario aisha-alghamdi que contiene una implementación compacta y personalizada de Poolformer orientada a experimentos de aprendizaje contrastivo. No se trata de un modelo preentrenado listo para producción, sino de un punto de partida experimental con un checkpoint de inicialización válido para pruebas de humo (smoke tests) y revisiones de código. El autor indica explícitamente que no se reclama ninguna puntuación de benchmark en el repositorio.
+Poolformer-demo es un repositorio de Hugging Face publicado por el usuario aisha-alghamdi que contiene una implementación compacta y personalizada de Poolformer orientada a experimentos de aprendizaje contrastivo. No se trata de un modelo preentrenado listo para producción, sino de un punto de partida experimental con un checkpoint de inicialización válido para pruebas de humo (smoke tests) y revisiones de código. El autor indica explícitamente que no se reclama ninguna puntuación de benchmark en el repositorio.
 
 El repositorio incluye un script de inferencia (`inference.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que actúa como checkpoint de inicialización, no como modelo entrenado. La arquitectura declarada es Poolformer en escala "base", con atención lineal, fusión de bajo rango, activación GELU y normalización por batchnorm.
 
@@ -74,5 +74,5 @@ No disponible. La model card no identifica modelos comparables ni proporciona da
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aisha-alghamdi/poolformer-demo
+- Repositorio Hugging Face: https://huggingface.co/aisha-alghamdi/poolformer-demo
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en la información disponible.

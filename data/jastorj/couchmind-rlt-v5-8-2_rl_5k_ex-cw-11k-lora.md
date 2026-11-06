@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jastorj/couchmind-rlt-v5.8.2_rl_5K_ex-cw-11K-lora` es un adaptador LoRA publicado por el usuario jastorj en HuggingFace. Se trata de un finetuning de refuerzo (RL) aplicado sobre el modelo base `jastorj/couchmind-v5.8.2_cold_start-cw-26K-16bit`, que a su vez parece derivar de una arquitectura Qwen2. El adaptador está entrenado con la librería Unsloth (que acelera el entrenamiento) y el framework TRL, y se distribuye bajo licencia Apache 2.0.
+El modelo `jastorj/couchmind-rlt-v5.8.2_rl_5K_ex-cw-11K-lora` es un adaptador LoRA publicado por el usuario jastorj en Hugging Face. Se trata de un finetuning de refuerzo (RL) aplicado sobre el modelo base `jastorj/couchmind-v5.8.2_cold_start-cw-26K-16bit`, que a su vez parece derivar de una arquitectura Qwen2. El adaptador está entrenado con la librería Unsloth (que acelera el entrenamiento) y el framework TRL, y se distribuye bajo licencia Apache 2.0.
 
 La información pública disponible es muy escasa: la model card solo indica que es un modelo Qwen2 entrenado con Unsloth, sin detallar el número de parámetros, el contexto, el dataset ni los resultados de benchmarks. El repositorio contiene únicamente los pesos del LoRA (0,7 GB), no el modelo completo. Por tanto, esta ficha se limita a lo que se puede extraer de los metadatos y de la propia model card, marcando como "no disponible" todos los datos que no se han publicado.
 

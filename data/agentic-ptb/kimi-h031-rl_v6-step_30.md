@@ -95,7 +95,7 @@ La comparación con Kimi K3 (2,8T parámetros) no procede: se trata de un modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h031.rl_v6.step_30
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h031.rl_v6.step_30
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del sweep AgentPTB (mencionado en la model card, sin URL directa): `agentic-ptb/INDEX` (no localizado en la búsqueda web)
 

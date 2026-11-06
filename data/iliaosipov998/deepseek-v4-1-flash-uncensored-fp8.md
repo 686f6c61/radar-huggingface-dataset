@@ -115,7 +115,7 @@ No se dispone de informacion verificable sobre alternativas de la misma categori
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/iliaosipov998/DeepSeek-V4.1-Flash-UNCENSORED-FP8
+- Hugging Face del modelo: https://huggingface.co/iliaosipov998/DeepSeek-V4.1-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Perfil del autor en X: https://x.com/dealignai
 - Perfil del autor en X: https://x.com/jordanschenck

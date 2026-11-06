@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TTT-VLA RoboMME SeqLoader T4 2-GPU Preflight R2 es un artefacto de exportación de modelo publicado por el usuario morealcholplz en HuggingFace. No se trata de un lanzamiento oficial ni de un modelo entrenado desde cero para uso general: es la instantánea de pesos y tokenizador generada durante la etapa de preflight (comprobación previa) de dos GPU con el SeqLoader sobre T4, dentro del espacio de trabajo local `ttt-vla-nuri` y en el contexto del benchmark RoboMME. Su propósito declarado es la reproducibilidad y la inspección posterior, no la reclamación de un resultado final.
+TTT-VLA RoboMME SeqLoader T4 2-GPU Preflight R2 es un artefacto de exportación de modelo publicado por el usuario morealcholplz en Hugging Face. No se trata de un lanzamiento oficial ni de un modelo entrenado desde cero para uso general: es la instantánea de pesos y tokenizador generada durante la etapa de preflight (comprobación previa) de dos GPU con el SeqLoader sobre T4, dentro del espacio de trabajo local `ttt-vla-nuri` y en el contexto del benchmark RoboMME. Su propósito declarado es la reproducibilidad y la inspección posterior, no la reclamación de un resultado final.
 
 El repositorio pesa 6,9 GB y el recuento real de parámetros en safetensors es de 3.432.385.472 (aproximadamente 3,43 mil millones). Los tags del repositorio apuntan a la familia Gr00tN1d6 como base arquitectónica, además de a los conceptos ttt-vla, robomme y robot-memory, lo que sitúa el modelo en la categoría de vision-language-action (VLA) para robótica con mecanismos de memoria. La model card advierte explícitamente de que la carga del modelo es específica del código del proyecto y que no debe asumirse una interfaz genérica `AutoModel`.
 
@@ -68,9 +68,9 @@ No se dispone de datos de rendimiento de este artefacto, por lo que la comparaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| TTT-VLA RoboMME SeqLoader Preflight R2 | 3,43B | No disponible | No disponible | Repositorio publico en HuggingFace, 0 descargas | Artefacto intermedio, carga dependiente del proyecto |
-| OpenVLA | Aproximadamente 7B | No disponible | Abierta (codigo y pesos publicados) | HuggingFace | VLA de proposito general, mas grande y ampliamente evaluado |
-| NVIDIA GR00T N1 / N1.6 | Orden de 2-3B | No disponible | Terminos propios de NVIDIA | HuggingFace y NGC | Base que sugieren los tags del repositorio; ecosistema con simulacion |
+| TTT-VLA RoboMME SeqLoader Preflight R2 | 3,43B | No disponible | No disponible | Repositorio publico en Hugging Face, 0 descargas | Artefacto intermedio, carga dependiente del proyecto |
+| OpenVLA | Aproximadamente 7B | No disponible | Abierta (codigo y pesos publicados) | Hugging Face | VLA de proposito general, mas grande y ampliamente evaluado |
+| NVIDIA GR00T N1 / N1.6 | Orden de 2-3B | No disponible | Terminos propios de NVIDIA | Hugging Face y NGC | Base que sugieren los tags del repositorio; ecosistema con simulacion |
 | pi0 (Physical Intelligence) | Aproximadamente 3,3B | No disponible | Terminos propios | Publicado con restricciones | VLA con flujo de difusion para control de robots |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento de este artefacto, por lo que la comparaci
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/morealcholplz/ttt-vla-robomme-seqloader-preflight-r2
+- Repositorio del modelo en Hugging Face: https://huggingface.co/morealcholplz/ttt-vla-robomme-seqloader-preflight-r2
 - Dataset de archivo de logs y evaluaciones: https://huggingface.co/datasets/morealcholplz/ttt-vla-robomme-early-runs-eval-archive
 - Paper, blog o repositorio del modelo base: no disponible en la informacion proporcionada
 - La busqueda web realizada no devolvio resultados relevantes para este modelo; los unicos enlaces obtenidos no guardan relacion con el contenido de esta ficha y se han descartado.

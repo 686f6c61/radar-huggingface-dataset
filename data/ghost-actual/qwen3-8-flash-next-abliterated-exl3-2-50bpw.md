@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una versión "abliterated" (dirección de rechazo eliminada) de Qwen3.8-Flash-Next, el modelo MoE de previsualización de la familia Qwen4, cuantizada en EXL3 a 2,50 bits por peso. El autor es el usuario de HuggingFace ghost-actual, que no entrena nada nuevo: parte del BF16 ya abliterado por OrcaRouter (orcarouter/Qwen3.8-Flash-Next-Uncensored, 131 shards) y lo comprime con el motor ExLlamaV3 para que el modelo completo quepa en una única GPU de 24 GB (RTX 3090 o 4090) mediante offload de expertos a CPU.
+Este repositorio contiene una versión "abliterated" (dirección de rechazo eliminada) de Qwen3.8-Flash-Next, el modelo MoE de previsualización de la familia Qwen4, cuantizada en EXL3 a 2,50 bits por peso. El autor es el usuario de Hugging Face ghost-actual, que no entrena nada nuevo: parte del BF16 ya abliterado por OrcaRouter (orcarouter/Qwen3.8-Flash-Next-Uncensored, 131 shards) y lo comprime con el motor ExLlamaV3 para que el modelo completo quepa en una única GPU de 24 GB (RTX 3090 o 4090) mediante offload de expertos a CPU.
 
 La relevancia práctica está en el empaquetado, no en el modelo en sí. La receta de conversión conserva intactas la torre de visión (a 6 bpw), la cabeza MTP de predicción multi-token (4 bpw), el contexto nativo de 262.144 tokens y la tabla de embeddings n-gram (PLE) a 3 bpw, de modo que un modelo con ~177B parámetros almacenados y ~6B activos puede servirse en hardware de consumo con decodificación especulativa activa, a cambio de ceder el resto de los expertos a RAM del sistema y a NVMe.
 
@@ -81,10 +81,10 @@ Los únicos datos medidos disponibles son de velocidad y de pruebas de humo:
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ghost-actual/Qwen3.8-Flash-Next-Abliterated-EXL3-2.50bpw (este) | ~177B almacenados / ~6B activos; 22,27B declarados en safetensors | 262.144 | EXL3 2.50 bpw (~61 GB) | Qwen License + obra derivada | HuggingFace, 179 descargas, 1 like |
+| ghost-actual/Qwen3.8-Flash-Next-Abliterated-EXL3-2.50bpw (este) | ~177B almacenados / ~6B activos; 22,27B declarados en safetensors | 262.144 | EXL3 2.50 bpw (~61 GB) | Qwen License + obra derivada | Hugging Face, 179 descargas, 1 like |
 | r0b0tlab/qwen38-flashnext-exl3 (paquete upstream, sin abliterar) | mismo modelo base | 262.144 | EXL3 2.50 bpw, idénticos flags | Qwen License | GitHub; sirve de referencia de rendimiento |
-| orcarouter/Qwen3.8-Flash-Next-Uncensored | mismo modelo base | 262.144 | BF16, 131 shards (360 GB) | Qwen License | HuggingFace; requiere hardware muy superior |
-| Qwen/Qwen3.8-Flash-Next (base alineado) | mismo modelo base | 262.144 | BF16 | Qwen License | HuggingFace, referencia oficial |
+| orcarouter/Qwen3.8-Flash-Next-Uncensored | mismo modelo base | 262.144 | BF16, 131 shards (360 GB) | Qwen License | Hugging Face; requiere hardware muy superior |
+| Qwen/Qwen3.8-Flash-Next (base alineado) | mismo modelo base | 262.144 | BF16 | Qwen License | Hugging Face, referencia oficial |
 
 No hay datos de benchmarks públicos que permitan comparar rendimiento entre estas variantes: la única diferencia documentada es la presencia o ausencia de la dirección de rechazo y el bitrate de la cuantización.
 
@@ -102,11 +102,11 @@ No hay datos de benchmarks públicos que permitan comparar rendimiento entre est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ghost-actual/Qwen3.8-Flash-Next-Abliterated-EXL3-2.50bpw
+- Modelo en Hugging Face: https://huggingface.co/ghost-actual/Qwen3.8-Flash-Next-Abliterated-EXL3-2.50bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - Fuente BF16 abliterada (OrcaRouter): https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Paquete EXL3 upstream con la receta y las mediciones: https://github.com/r0b0tlab/qwen38-flashnext-exl3
 - Fork del motor con offload de expertos (rama `dflash2-pathway`): https://github.com/r0b0tlab/exllamav3
 - Motor original ExLlamaV3 (MIT): https://github.com/turboderp/exllamav3
-- Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces anteriores proceden exclusivamente de la model card y de la información de HuggingFace.
+- Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces anteriores proceden exclusivamente de la model card y de la información de Hugging Face.

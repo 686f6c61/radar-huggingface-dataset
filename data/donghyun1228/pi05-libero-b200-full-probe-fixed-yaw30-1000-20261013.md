@@ -114,7 +114,7 @@ Comparacion con modelos externos: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-b200-full-probe-fixed-yaw30-1000-20261013
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-b200-full-probe-fixed-yaw30-1000-20261013
 - Dataset objetivo citado en la model card: `Donghyun1228/libero-dense-contact-sweep-d2-yaw30-20261003` (revision `7cfd3ca8528c59c1ce700d4d75b560db39f7a5e7`), sin URL directa en la informacion disponible.
 - Hashes de snapshot de entrenamiento/evaluacion (`550531952e137a5b41d00d020f069828f5e74945`) e inferencia (`0f6471d99dfc81fabe7c3ab65c141d7640b9ff08`), sin URL asociada en la informacion disponible.
 - Libreria `openpi`: referenciada en la model card, sin URL en la informacion disponible.

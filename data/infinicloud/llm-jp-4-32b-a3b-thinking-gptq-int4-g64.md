@@ -76,8 +76,8 @@ Ambos modelos usaron los mismos prompts, tokenizador de origen, cinco ejemplos, 
 
 | Modelo | Parametros | Formato | Tamano de pesos | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---:|---|---|---|
-| llm-jp-4-32b-a3b-thinking-GPTQ-INT4-G64 | 32,1B totales / 3,8B activos | GPTQ INT4 W4A16, grupo 64 | 18,573 GB (17,297 GiB) | apache-2.0 | en, ja | HuggingFace |
-| llm-jp-4-32b-a3b-thinking (fuente BF16) | 32,1B totales / 3,8B activos | BF16 safetensors, 13 shards | 64,280 GB (59,865 GiB) | apache-2.0 | en, ja | HuggingFace |
+| llm-jp-4-32b-a3b-thinking-GPTQ-INT4-G64 | 32,1B totales / 3,8B activos | GPTQ INT4 W4A16, grupo 64 | 18,573 GB (17,297 GiB) | apache-2.0 | en, ja | Hugging Face |
+| llm-jp-4-32b-a3b-thinking (fuente BF16) | 32,1B totales / 3,8B activos | BF16 safetensors, 13 shards | 64,280 GB (59,865 GiB) | apache-2.0 | en, ja | Hugging Face |
 
 No se dispone en la informacion proporcionada de datos de rendimiento ni de especificaciones de otros modelos comparables de la misma categoria (MoE japones de ~32B o versiones cuantizadas alternativas), por lo que la comparativa se limita al modelo fuente BF16.
 
@@ -95,7 +95,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento ni de espe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/InfiniCloud/llm-jp-4-32b-a3b-thinking-GPTQ-INT4-G64
+- Repositorio Hugging Face: https://huggingface.co/InfiniCloud/llm-jp-4-32b-a3b-thinking-GPTQ-INT4-G64
 - Modelo base: https://huggingface.co/llm-jp/llm-jp-4-32b-a3b-thinking
 - README en japones: https://huggingface.co/InfiniCloud/llm-jp-4-32b-a3b-thinking-GPTQ-INT4-G64/blob/main/README.ja.md
 - Manifiesto de cuantizacion: https://huggingface.co/InfiniCloud/llm-jp-4-32b-a3b-thinking-GPTQ-INT4-G64/blob/main/quantization-manifest.json

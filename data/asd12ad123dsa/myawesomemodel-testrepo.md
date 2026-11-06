@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario ASD12AD123DSA bajo el identificador `ASD12AD123DSA/MyAwesomeModel-TestRepo`. Por el nombre del repositorio y por los metadatos disponibles (43 descargas, 0 likes, repositorio de 0.0 GB creado y actualizado con 12 segundos de diferencia el 15 de septiembre de 2026), todo apunta a un repositorio de prueba o de demostración más que a un modelo listo para producción. La model card, además, contiene afirmaciones genéricas de alto nivel (mejoras en razonamiento, reducción de alucinaciones, soporte de function calling) sin nombres de modelos comparados ni referencias verificables.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario ASD12AD123DSA bajo el identificador `ASD12AD123DSA/MyAwesomeModel-TestRepo`. Por el nombre del repositorio y por los metadatos disponibles (43 descargas, 0 likes, repositorio de 0.0 GB creado y actualizado con 12 segundos de diferencia el 15 de septiembre de 2026), todo apunta a un repositorio de prueba o de demostración más que a un modelo listo para producción. La model card, además, contiene afirmaciones genéricas de alto nivel (mejoras en razonamiento, reducción de alucinaciones, soporte de function calling) sin nombres de modelos comparados ni referencias verificables.
 
 Existe una contradicción relevante entre los metadatos y la model card. Las etiquetas del repositorio indican `bert` y el pipeline declarado es `feature-extraction`, lo que situaría al modelo en la familia de codificadores tipo BERT para generar representaciones vectoriales. Sin embargo, el README describe un modelo generativo conversacional con modo de razonamiento, decodificación de respuestas extensas y evaluación en pruebas como AIME 2025. Esa discrepancia no se resuelve con la información disponible y condiciona cualquier evaluación seria.
 
@@ -95,7 +95,7 @@ Ademas, la model card afirma una mejora en AIME 2025 del 70 % al 87,5 % de preci
 - VRAM estimada para inferencia: no disponible. Sin conocer el numero de parametros ni la arquitectura real no es posible estimar el consumo de memoria.
 - GPU recomendadas: no disponible por la misma razon.
 - Compatibilidad con GPU de consumo: no disponible. El repositorio no publica pesos (0.0 GB), por lo que ni siquiera se puede confirmar que el modelo sea descargable y ejecutable en el momento de redactar esta ficha.
-- Opciones de despliegue: la unica pista es la etiqueta `endpoints_compatible`, que sugiere compatibilidad con HuggingFace Inference Endpoints. Tambien se declara `library_name: transformers`, por lo que seria desplegable con la pila estandar de Transformers (por ejemplo, TGI o vLLM) si los pesos existieran. No hay confirmacion de soporte para llama.cpp, Ollama o formatos GGUF.
+- Opciones de despliegue: la unica pista es la etiqueta `endpoints_compatible`, que sugiere compatibilidad con Hugging Face Inference Endpoints. Tambien se declara `library_name: transformers`, por lo que seria desplegable con la pila estandar de Transformers (por ejemplo, TGI o vLLM) si los pesos existieran. No hay confirmacion de soporte para llama.cpp, Ollama o formatos GGUF.
 - Latencia y throughput: no disponible.
 - Recomendaciones de inferencia declaradas por el autor: temperatura 0,6; uso de system prompt con fecha; no requiere tokens especiales de inicio para forzar el modo de razonamiento.
 
@@ -118,7 +118,7 @@ No disponible. La model card no identifica los modelos contra los que compara (l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASD12AD123DSA/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/ASD12AD123DSA/MyAwesomeModel-TestRepo
 - Repositorio de codigo: mencionado en la model card ("our code repository") pero sin URL proporcionada.
 - Sitio web oficial y plataforma de chat/API: mencionados en la model card pero sin URL proporcionada.
 - Paper o informe tecnico: no disponible.

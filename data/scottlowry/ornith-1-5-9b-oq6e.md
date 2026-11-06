@@ -78,7 +78,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. N
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ6e)
+- [Modelo en Hugging Face](https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ6e)
 - [Sitio oficial de Ornith AI](https://ornith.online/)
 - [Repositorio GitHub de Ornith-1](https://github.com/ornith-ai/Ornith-1)
 - [Guía de Ornith 1.0](https://ornith.site/)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mommy es un modelo publicado en HuggingFace por el usuario Gus6666 bajo el identificador `Gus6666/Mommy`. Segun los metadatos disponibles, se trata de un repositorio de aproximadamente 0,1 GB con licencia desconocida (`unknown`), sin pipeline declarado, sin idiomas especificados y sin descargas ni interacciones registradas en el momento de la consulta. La model card asociada no contiene mas informacion que la declaracion de licencia, por lo que no es posible determinar la arquitectura, el proposito ni las capacidades del modelo a partir de la documentacion oficial.
+Mommy es un modelo publicado en Hugging Face por el usuario Gus6666 bajo el identificador `Gus6666/Mommy`. Segun los metadatos disponibles, se trata de un repositorio de aproximadamente 0,1 GB con licencia desconocida (`unknown`), sin pipeline declarado, sin idiomas especificados y sin descargas ni interacciones registradas en el momento de la consulta. La model card asociada no contiene mas informacion que la declaracion de licencia, por lo que no es posible determinar la arquitectura, el proposito ni las capacidades del modelo a partir de la documentacion oficial.
 
 El tamano del repositorio (0,1 GB) sugiere, de forma orientativa, que podria tratarse de un modelo de pequenas dimensiones o de un conjunto parcial de pesos, aunque esta inferencia no puede confirmarse sin acceso a los archivos de pesos y a la configuracion del modelo. No se dispone de informacion sobre el proceso de entrenamiento, los datos utilizados ni los objetivos de diseno.
 
@@ -23,7 +23,7 @@ Dado que el modelo fue creado y actualizado el 29 de octubre de 2026, se trata d
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. No se especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido. Tampoco se indica el numero de parametros, la longitud de contexto nativa ni el tipo de tokenizer empleado.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. No se especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido. Tampoco se indica el numero de parametros, la longitud de contexto nativa ni el tipo de tokenizer empleado.
 
 Respecto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, la composicion del corpus, la posible aplicacion de tecnicas de alineacion como RLHF o DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. El unico dato objetivo es el tamano del repositorio, aproximadamente 0,1 GB, que no permite extraer conclusiones fiables sobre la escala del modelo.
 
@@ -44,7 +44,7 @@ No es posible proponer casos de uso concretos y realistas sin informacion sobre 
 - Pruebas de inferencia local: si el tamano de 0,1 GB corresponde a pesos completos, podria ejecutarse en CPU o en GPU de gama baja, aunque esto no esta confirmado.
 - Analisis de seguridad de modelos: inspeccionar el contenido del repositorio para detectar posibles riesgos (pesos corruptos, codigo malicioso, licencias incompatibles).
 - Investigacion sobre modelos sin documentacion: utilizar el caso como ejemplo de publicaciones que carecen de model card y de metadatos suficientes para su evaluacion.
-- Comparacion de practicas de publicacion: contrastar la ausencia de informacion con las recomendaciones de model cards de HuggingFace.
+- Comparacion de practicas de publicacion: contrastar la ausencia de informacion con las recomendaciones de model cards de Hugging Face.
 - Uso educativo: emplear el repositorio como caso practico sobre la importancia de documentar modelos antes de su distribucion.
 
 En ningun caso se recomienda su uso en produccion sin una evaluacion tecnica previa completa.
@@ -67,7 +67,7 @@ No es posible establecer una comparativa con modelos de la misma categoria porqu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Gus6666/Mommy | no disponible | no disponible | unknown | HuggingFace, sin descargas registradas |
+| Gus6666/Mommy | no disponible | no disponible | unknown | Hugging Face, sin descargas registradas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,5 +84,5 @@ No es posible establecer una comparativa con modelos de la misma categoria porqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Gus6666/Mommy
+- Repositorio en Hugging Face: https://huggingface.co/Gus6666/Mommy
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

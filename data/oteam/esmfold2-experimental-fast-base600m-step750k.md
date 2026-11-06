@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Bloques | MSA | ESMC | Parámetros (tabla del autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| esmfold2-experimental-fast-base600m-step750k (este) | 24 | No | 6B | 746.187.472 reales en safetensors; 6.531,17 M según la tabla del autor | AGPL-3.0 | HuggingFace, librería ofoldx |
-| esmfold2-fast | 24 | No | 6B | 6.548,432 M | AGPL-3.0 | HuggingFace |
-| esmfold2 | 48 | Sí | 6B | 6.586,242 M | AGPL-3.0 | HuggingFace |
-| esmfold2-experimental | 48 | Sí | 6B | 6.568,980 M | AGPL-3.0 | HuggingFace |
+| esmfold2-experimental-fast-base600m-step750k (este) | 24 | No | 6B | 746.187.472 reales en safetensors; 6.531,17 M según la tabla del autor | AGPL-3.0 | Hugging Face, librería ofoldx |
+| esmfold2-fast | 24 | No | 6B | 6.548,432 M | AGPL-3.0 | Hugging Face |
+| esmfold2 | 48 | Sí | 6B | 6.586,242 M | AGPL-3.0 | Hugging Face |
+| esmfold2-experimental | 48 | Sí | 6B | 6.568,980 M | AGPL-3.0 | Hugging Face |
 
 | Alternativa externa | Datos |
 |---|---|
@@ -103,7 +103,7 @@ La diferencia entre los 746 M de los safetensors y los 6.531 M de la tabla del a
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/oteam/esmfold2-experimental-fast-base600m-step750k
+- Hugging Face (este checkpoint): https://huggingface.co/oteam/esmfold2-experimental-fast-base600m-step750k
 - Variante completa: https://huggingface.co/oteam/esmfold2
 - Variante fast: https://huggingface.co/oteam/esmfold2-fast
 - Variante experimental: https://huggingface.co/oteam/esmfold2-experimental

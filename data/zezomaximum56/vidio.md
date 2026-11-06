@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zezomaximum56/Vidio es un repositorio alojado en HuggingFace bajo la autoría del usuario Zezomaximum56, publicado con licencia Apache 2.0. En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, y su model card no contiene más información que la declaración de licencia: no se especifica arquitectura, tamaño, datos de entrenamiento, idiomas ni tarea objetivo.
+Zezomaximum56/Vidio es un repositorio alojado en Hugging Face bajo la autoría del usuario Zezomaximum56, publicado con licencia Apache 2.0. En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, y su model card no contiene más información que la declaración de licencia: no se especifica arquitectura, tamaño, datos de entrenamiento, idiomas ni tarea objetivo.
 
 La información disponible no permite determinar qué tipo de modelo es. No hay pipeline declarado, no hay etiquetas de tarea (text-generation, text-to-video, image-to-video, etc.) y no hay ficheros ni pesos documentados en la información proporcionada. El nombre "Vidio" es el único indicio nominal, pero no constituye evidencia técnica de que se trate de un modelo de vídeo.
 
@@ -75,7 +75,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zezomaximum56/Vidio
+- Hugging Face: https://huggingface.co/Zezomaximum56/Vidio
 - Model card: no disponible (el repositorio solo contiene el bloque de licencia)
 - Paper: no disponible
 - Repositorio de código: no disponible

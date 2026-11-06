@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed455_seed455 es un modelo de generacion de texto de 124.770.816 parametros (unos 124,8 millones) publicado por el usuario fpadovani en HuggingFace. Se trata de un ajuste fino supervisado (SFT) del modelo fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed455, realizado con la libreria TRL 0.23.0 sobre la arquitectura GPT-2 de Transformers 4.56.2. El repositorio ocupa 0,3 GB y los pesos se distribuyen en formato safetensors.
+nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed455_seed455 es un modelo de generacion de texto de 124.770.816 parametros (unos 124,8 millones) publicado por el usuario fpadovani en Hugging Face. Se trata de un ajuste fino supervisado (SFT) del modelo fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed455, realizado con la libreria TRL 0.23.0 sobre la arquitectura GPT-2 de Transformers 4.56.2. El repositorio ocupa 0,3 GB y los pesos se distribuyen en formato safetensors.
 
 Por el identificador y por el grupo de Weights & Biases asociado (f-padovani-university-of-groningen/white_cotterell), todo apunta a un experimento academico de la Universidad de Groningen dentro de una linea de investigacion sobre modelado del lenguaje. Los sufijos "nld" (codigo ISO 639-3 del neerlandes), "100mb" (tamano del corpus), "zipf" y "newlex" sugieren un estudio sobre distribuciones de frecuencia lexica y adquisicion de vocabulario, si bien la model card no confirma ninguno de estos extremos: son inferencias a partir del nombre, no datos documentados.
 
@@ -12,7 +12,7 @@ Su relevancia es la de un artefacto de investigacion reproducible y de coste com
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 (dato real del repositorio en safetensors) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed455_seed455 | 124,8 M | no disponible | no disponible | HuggingFace (transformers, safetensors) |
-| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | MIT modificada | HuggingFace, ampliamente integrado |
-| DistilGPT2 (distilbert/distilgpt2) | 82 M | 1024 tokens | Apache 2.0 | HuggingFace |
-| Pythia-160M (EleutherAI/pythia-160m) | 160 M | 2048 tokens | Apache 2.0 | HuggingFace, con checkpoints intermedios |
+| nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed455_seed455 | 124,8 M | no disponible | no disponible | Hugging Face (transformers, safetensors) |
+| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | MIT modificada | Hugging Face, ampliamente integrado |
+| DistilGPT2 (distilbert/distilgpt2) | 82 M | 1024 tokens | Apache 2.0 | Hugging Face |
+| Pythia-160M (EleutherAI/pythia-160m) | 160 M | 2048 tokens | Apache 2.0 | Hugging Face, con checkpoints intermedios |
 
 La comparacion solo puede establecerse en terminos de arquitectura, tamano y licencia: no existen resultados de benchmarks publicados para este checkpoint, por lo que no es posible comparar calidad de generacion, perplejidad ni rendimiento multilingue con las alternativas. La diferencia principal es de gobernanza: GPT-2 small, DistilGPT2 y Pythia-160M declaran licencia explicita, mientras que este modelo no.
 
@@ -91,7 +91,7 @@ La comparacion solo puede establecerse en terminos de arquitectura, tamano y lic
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed455_seed455)
+- [Modelo en Hugging Face](https://huggingface.co/fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed455_seed455)
 - [Modelo base: fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed455](https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed455)
 - [Run de entrenamiento en Weights & Biases](https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/slpaq9sl)
 - [Repositorio de TRL](https://github.com/huggingface/trl)

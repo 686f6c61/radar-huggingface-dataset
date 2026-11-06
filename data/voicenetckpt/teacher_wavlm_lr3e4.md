@@ -65,7 +65,7 @@ La informacion proporcionada no incluye datos comparativos propios ni cifras de 
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| teacher_wavlm_lr3e4 | Codificador de voz tipo WavLM (checkpoint de investigacion) | no disponible | no disponible | no disponible | HuggingFace (repo publico) |
+| teacher_wavlm_lr3e4 | Codificador de voz tipo WavLM (checkpoint de investigacion) | no disponible | no disponible | no disponible | Hugging Face (repo publico) |
 | WavLM | Codificador de voz auto-supervisado | no disponible en esta ficha | no disponible | no disponible | Publico (referencia de arquitectura) |
 | HuBERT | Codificador de voz auto-supervisado | no disponible en esta ficha | no disponible | no disponible | Publico |
 | wav2vec 2.0 | Codificador de voz auto-supervisado | no disponible en esta ficha | no disponible | no disponible | Publico |
@@ -83,5 +83,5 @@ La informacion proporcionada no incluye datos comparativos propios ni cifras de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/teacher_wavlm_lr3e4
+- Modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/teacher_wavlm_lr3e4
 - Indice de ejecuciones VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index

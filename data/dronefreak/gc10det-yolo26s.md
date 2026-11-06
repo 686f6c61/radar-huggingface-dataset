@@ -6,7 +6,7 @@
 
 Se trata de un modelo de vision por computador, no de un modelo de lenguaje: no procesa texto, no tiene ventana de contexto en tokens ni soporta tool calling. Su relevancia actual es practica: ofrece un punto de partida afinado y con metricas publicadas para inspeccion industrial automatizada de superficies metalicas, y lo hace con un coste computacional bajo (10,0 M de parametros y 22,8 GFLOPs a 640 px), lo que permite desplegarlo en GPUs de gama media o incluso en hardware de borde.
 
-Las cifras declaradas por el autor en el split de test de GC10-DET son 75,77 % de mAP@50, 38,15 % de mAP@50-95, 77,16 % de precision, 74,07 % de recall y 75,59 de F1. Estas metricas estan marcadas como no verificadas en el model-index de HuggingFace y proceden del pipeline `detectionbench-evaluate` del propio autor. El repositorio es muy reciente (creado el 27 de septiembre de 2026) y no registra descargas ni likes en el momento de redactar esta ficha.
+Las cifras declaradas por el autor en el split de test de GC10-DET son 75,77 % de mAP@50, 38,15 % de mAP@50-95, 77,16 % de precision, 74,07 % de recall y 75,59 de F1. Estas metricas estan marcadas como no verificadas en el model-index de Hugging Face y proceden del pipeline `detectionbench-evaluate` del propio autor. El repositorio es muy reciente (creado el 27 de septiembre de 2026) y no registra descargas ni likes en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -39,7 +39,7 @@ Respecto al entrenamiento, la model card indica que el ajuste fino se realizo so
 - Localizacion y clasificacion simultanea de multiples defectos por imagen, en un unico paso hacia delante (one-stage).
 - Inferencia a 640 px, coherente con los 22,8 GFLOPs declarados.
 - Integracion con el ecosistema Ultralytics: carga mediante `ultralytics.YOLO` y ejecucion con `model.predict(...)`.
-- Carga directa desde HuggingFace mediante `huggingface_hub.hf_hub_download`.
+- Carga directa desde Hugging Face mediante `huggingface_hub.hf_hub_download`.
 - Soporte de tool calling / function calling: no aplicable (no es un modelo de lenguaje).
 - Soporte de agentes y razonamiento multi-paso: no aplicable.
 - Capacidades multilingues: no aplicable.
@@ -58,7 +58,7 @@ Respecto al entrenamiento, la model card indica que el ajuste fino se realizo so
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor sobre el split de test de GC10-DET (marcados como no verificados en el model-index de HuggingFace):
+Resultados declarados por el autor sobre el split de test de GC10-DET (marcados como no verificados en el model-index de Hugging Face):
 
 | Metrica | Valor (%) |
 |---|---|
@@ -128,8 +128,8 @@ Lectura de la tabla: YOLO26s obtiene el tercer mejor mAP@50 del conjunto, por de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/gc10det-yolo26s
-- Dataset GC10-DET en HuggingFace: https://huggingface.co/datasets/dronefreak/GC10-DET
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/gc10det-yolo26s
+- Dataset GC10-DET en Hugging Face: https://huggingface.co/datasets/dronefreak/GC10-DET
 - Repositorio DetectionBench (framework de evaluacion y model zoo): https://github.com/dronefreak/DetectionBench
 - Modelo base: https://huggingface.co/Ultralytics/YOLO26
 - Referencias arXiv citadas en las etiquetas del modelo (titulos no disponibles en la informacion proporcionada):

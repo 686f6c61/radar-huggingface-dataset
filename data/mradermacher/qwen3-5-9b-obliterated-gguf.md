@@ -79,11 +79,11 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- [HuggingFace - mradermacher/Qwen3.5-9B-OBLITERATED-GGUF](https://huggingface.co/mradermacher/Qwen3.5-9B-OBLITERATED-GGUF)
-- [HuggingFace - shoukewei/Qwen3.5-9B-OBLITERATED (modelo base)](https://huggingface.co/shoukewei/Qwen3.5-9B-OBLITERATED)
-- [HuggingFace - Qwen/Qwen3.5-9B (modelo original)](https://huggingface.co/Qwen/Qwen3.5-9B)
-- [HuggingFace - mradermacher/Qwen3.5-9B-OBLITERATED-i1-GGUF (quants con imatrix)](https://huggingface.co/mradermacher/Qwen3.5-9B-OBLITERATED-i1-GGUF)
-- [HuggingFace - mradermacher/Qwen3.5-9B-abliterated-v2-MAX-i1-GGUF](https://huggingface.co/mradermacher/Qwen3.5-9B-abliterated-v2-MAX-i1-GGUF)
+- [Hugging Face - mradermacher/Qwen3.5-9B-OBLITERATED-GGUF](https://huggingface.co/mradermacher/Qwen3.5-9B-OBLITERATED-GGUF)
+- [Hugging Face - shoukewei/Qwen3.5-9B-OBLITERATED (modelo base)](https://huggingface.co/shoukewei/Qwen3.5-9B-OBLITERATED)
+- [Hugging Face - Qwen/Qwen3.5-9B (modelo original)](https://huggingface.co/Qwen/Qwen3.5-9B)
+- [Hugging Face - mradermacher/Qwen3.5-9B-OBLITERATED-i1-GGUF (quants con imatrix)](https://huggingface.co/mradermacher/Qwen3.5-9B-OBLITERATED-i1-GGUF)
+- [Hugging Face - mradermacher/Qwen3.5-9B-abliterated-v2-MAX-i1-GGUF](https://huggingface.co/mradermacher/Qwen3.5-9B-abliterated-v2-MAX-i1-GGUF)
 - [Ollama - huihui_ai/qwen3.5-abliterated](https://ollama.com/huihui_ai/qwen3.5-abliterated)
 - [Ollama - qwen3.5:9b](https://ollama.com/library/qwen3.5:9b)
 - [free2aitools.com - Qwen3.5 9b Obliterated Fp16 I1 Gguf](https://free2aitools.com/model/mradermacher/qwen3.5-9b-obliterated-fp16-i1-gguf)

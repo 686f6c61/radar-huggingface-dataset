@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks estándar de modelos de lenguaje (M
 
 | Modelo | Tipo | Datos | Métrica de frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| freMTPL2 pricing engine (`freq_gbm`) | Gradient boosting Poisson | freMTPL2, 678.013 pólizas | Gini 0,321; D² 6,2 % | MIT | HuggingFace, 0 descargas |
+| freMTPL2 pricing engine (`freq_gbm`) | Gradient boosting Poisson | freMTPL2, 678.013 pólizas | Gini 0,321; D² 6,2 % | MIT | Hugging Face, 0 descargas |
 | freMTPL2 pricing engine (`freq_glm`) | GLM Poisson | freMTPL2, 678.013 pólizas | Gini 0,273; D² 4,1 % | MIT | Incluido en el mismo joblib |
 | Alternativas públicas sobre freMTPL2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,7 +98,7 @@ No se dispone de información sobre otros artefactos comparables publicados con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/makactuary/fremtpl2-pricing-engine
+- Modelo en Hugging Face: https://huggingface.co/makactuary/fremtpl2-pricing-engine
 - Repositorio de código, artículo y resultados: https://github.com/000MAK/cafepolice-actuarial-loss-engine
 - Dataset freMTPL2 en OpenML (frecuencia): https://www.openml.org/d/41214
 - Dataset freMTPL2 en OpenML (severidad): https://www.openml.org/d/41215

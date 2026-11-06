@@ -80,10 +80,10 @@ Notas sobre la medición: el WER se calculó con la decodificación por defecto 
 
 | Modelo | Parametros | Idiomas | Formato | Licencia | WER FLEURS-uk | Disponibilidad |
 |---|---|---|---|---|---|---|
-| myflow-ai/moonshine-tiny-uk-gguf | 27,09 M | Uk (solo) | GGUF (transcribe.cpp) | MIT | 18,83 % (F32) | HuggingFace |
-| UsefulSensors/moonshine-tiny-uk | No disponible | Uk (solo) | safetensors (Transformers) | MIT | No disponible (referencia medida por el conversor: 18,86 % en MPS) | HuggingFace |
-| moonshine-tiny (original de Moonshine AI) | No disponible | Ingles, entre otros segun variante | safetensors | MIT | No disponible | HuggingFace |
-| Whisper tiny (OpenAI) | Aproximadamente 39 M | Multilingue | safetensors, GGUF, ONNX | MIT | No disponible en la informacion proporcionada | HuggingFace |
+| myflow-ai/moonshine-tiny-uk-gguf | 27,09 M | Uk (solo) | GGUF (transcribe.cpp) | MIT | 18,83 % (F32) | Hugging Face |
+| UsefulSensors/moonshine-tiny-uk | No disponible | Uk (solo) | safetensors (Transformers) | MIT | No disponible (referencia medida por el conversor: 18,86 % en MPS) | Hugging Face |
+| moonshine-tiny (original de Moonshine AI) | No disponible | Ingles, entre otros segun variante | safetensors | MIT | No disponible | Hugging Face |
+| Whisper tiny (OpenAI) | Aproximadamente 39 M | Multilingue | safetensors, GGUF, ONNX | MIT | No disponible en la informacion proporcionada | Hugging Face |
 
 La comparación se limita a lo verificable en la información disponible. No se dispone de cifras de WER comparables para el Moonshine tiny original ni para Whisper tiny en FLEURS-uk dentro de los datos proporcionados, por lo que no se incluyen.
 
@@ -101,8 +101,8 @@ La comparación se limita a lo verificable en la información disponible. No se 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/myflow-ai/moonshine-tiny-uk-gguf
-- Modelo base en HuggingFace: https://huggingface.co/UsefulSensors/moonshine-tiny-uk
+- Repositorio Hugging Face: https://huggingface.co/myflow-ai/moonshine-tiny-uk-gguf
+- Modelo base en Hugging Face: https://huggingface.co/UsefulSensors/moonshine-tiny-uk
 - Commit del modelo base usado: https://huggingface.co/UsefulSensors/moonshine-tiny-uk/commit/8cf70f4
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Commit de validación de transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/tree/90bf720

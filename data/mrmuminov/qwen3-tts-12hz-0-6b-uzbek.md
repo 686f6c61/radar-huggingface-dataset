@@ -81,11 +81,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - El modelo está entrenado con layout no streaming y el autor recomienda `non_streaming_mode=True`; su uso en modo streaming puede degradar la calidad.
 - La licencia Apache 2.0 permite uso comercial, pero no se documenta el consentimiento ni la procedencia de las voces del dataset `mrmuminov/uzbek_voice`; conviene verificar los derechos antes de un uso comercial.
 - Riesgo de uso indebido por suplantación de identidad: la clonación de voz exige consentimiento explícito del hablante y controles en producto (marcado de audio sintético, limitación de referencia).
-- El modelo no tiene descargas ni valoraciones en HuggingFace en el momento de la consulta, por lo que carece de validación por parte de la comunidad.
+- El modelo no tiene descargas ni valoraciones en Hugging Face en el momento de la consulta, por lo que carece de validación por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrmuminov/Qwen3-TTS-12Hz-0.6B-Uzbek
+- Modelo en Hugging Face: https://huggingface.co/mrmuminov/Qwen3-TTS-12Hz-0.6B-Uzbek
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/mrmuminov/uzbek_voice
 - Modelo de limpieza de audio Sidon: https://huggingface.co/sarulab-speech/sidon-v0.1

@@ -82,10 +82,10 @@ Las diferencias normalizadas frente a BF16 son +0,80 puntos en OpenBookQA (inter
 
 | Checkpoint | Parámetros | GB de tensores | Precisión | Concordancia con BF16 | Licencia | Disponibilidad |
 |---|---:|---:|---|---:|---|---|
-| RecursiveSI/flint (BF16) | 39.785.287.456 | 79,571 | BF16 | 100 % | Apache 2.0 | HuggingFace |
-| HawkBearPig/flint-FP8-BF16 (todos los expertos FP8) | no disponible en la información | 41,730 | FP8 + BF16 en resto | 93,59 % | Apache 2.0 | HuggingFace |
-| **HawkBearPig/flint-FP8-NVFP4** | 39,79 B (base) | 35,738 | FP8/NVFP4/BF16 mixto | 91,89 % | Apache 2.0 | HuggingFace |
-| HawkBearPig/flint-NVFP4-FP8 (release anterior) | no disponible en la información | 30,802 | NVFP4 temprano / FP8 tardío | no disponible | Apache 2.0 | HuggingFace |
+| RecursiveSI/flint (BF16) | 39.785.287.456 | 79,571 | BF16 | 100 % | Apache 2.0 | Hugging Face |
+| HawkBearPig/flint-FP8-BF16 (todos los expertos FP8) | no disponible en la información | 41,730 | FP8 + BF16 en resto | 93,59 % | Apache 2.0 | Hugging Face |
+| **HawkBearPig/flint-FP8-NVFP4** | 39,79 B (base) | 35,738 | FP8/NVFP4/BF16 mixto | 91,89 % | Apache 2.0 | Hugging Face |
+| HawkBearPig/flint-NVFP4-FP8 (release anterior) | no disponible en la información | 30,802 | NVFP4 temprano / FP8 tardío | no disponible | Apache 2.0 | Hugging Face |
 
 La comparación con modelos de otras familias no está disponible en la información proporcionada. Los tres checkpoints cuantizados comparten la misma arquitectura y contexto que el modelo base, por lo que la elección entre ellos es un compromiso entre huella (30,8 / 35,7 / 41,7 GB) y deriva numérica respecto a BF16.
 
@@ -105,7 +105,7 @@ La comparación con modelos de otras familias no está disponible en la informac
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/HawkBearPig/flint-FP8-NVFP4
+- Checkpoint en Hugging Face: https://huggingface.co/HawkBearPig/flint-FP8-NVFP4
 - Modelo base: https://huggingface.co/RecursiveSI/flint
 - Revisión exacta del modelo base: https://huggingface.co/RecursiveSI/flint/tree/2a247be0c0aec895ccb0ac7ca92229ec6df37288
 - Release anterior (30,802 GB, NVFP4 temprano / FP8 tardío): https://huggingface.co/HawkBearPig/flint-NVFP4-FP8

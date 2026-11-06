@@ -6,7 +6,7 @@ KanAI-Gemma4-E2B-Audio es un ajuste fino (fine-tune) del modelo Gemma 4 E2B en s
 
 El modelo cuenta con 5.123.178.051 parametros segun los pesos en safetensors y un repositorio de 25,4 GB, coherente con un checkpoint multimodal de ese tamano. Los idiomas declarados son ingles (en) y sinhala (si), lo que apunta a un ajuste orientado a la comunidad sinhala parlante, probablemente con enfasis en transcripcion o comprension de audio en ese idioma. Es relevante ahora porque combina un modelo base reciente de Google con tecnicas de cuantizacion de Unsloth y un ajuste comunitario para un idioma de bajos recursos.
 
-El acceso esta restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos. No se ha publicado informacion sobre licencia, datos de entrenamiento ni resultados de benchmarks, por lo que muchas especificaciones quedan como no disponibles.
+El acceso esta restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos. No se ha publicado informacion sobre licencia, datos de entrenamiento ni resultados de benchmarks, por lo que muchas especificaciones quedan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -64,15 +64,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SynhalaAI/KanAI-Gemma4-E2B-Audio | 5.123.178.051 | no disponible | imagen, texto, audio (segun nombre) | no disponible | gated en HuggingFace |
-| unsloth/gemma-4-E2B-it-unsloth-bnb-4bit | no disponible | no disponible | imagen, texto | no disponible | publico en HuggingFace |
-| Gemma 4 E2B (base de Google) | no disponible | no disponible | imagen, texto | no disponible | publico en HuggingFace |
+| SynhalaAI/KanAI-Gemma4-E2B-Audio | 5.123.178.051 | no disponible | imagen, texto, audio (segun nombre) | no disponible | gated en Hugging Face |
+| unsloth/gemma-4-E2B-it-unsloth-bnb-4bit | no disponible | no disponible | imagen, texto | no disponible | publico en Hugging Face |
+| Gemma 4 E2B (base de Google) | no disponible | no disponible | imagen, texto | no disponible | publico en Hugging Face |
 
 La comparativa se limita a las variantes de la misma familia porque la informacion disponible no permite identificar alternativas de otros desarrolladores con caracteristicas equivalentes en sinhala y audio.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: es necesario aceptar las condiciones en HuggingFace y disponer de un token de acceso para descargar los pesos.
+- Acceso restringido: es necesario aceptar las condiciones en Hugging Face y disponer de un token de acceso para descargar los pesos.
 - Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; hay que verificar la licencia del modelo base Gemma 4 y las condiciones del repositorio antes de cualquier despliegue productivo.
 - Idiomas limitados a ingles y sinhala: el rendimiento en castellano u otros idiomas no esta garantizado y probablemente sea deficiente.
 - Riesgo de alucinacion: inherente a los modelos generativos, especialmente en tareas de audio y en idiomas de bajos recursos donde los datos de entrenamiento son escasos.
@@ -84,6 +84,6 @@ La comparativa se limita a las variantes de la misma familia porque la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SynhalaAI/KanAI-Gemma4-E2B-Audio
+- Hugging Face: https://huggingface.co/SynhalaAI/KanAI-Gemma4-E2B-Audio
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-unsloth-bnb-4bit
 - Unsloth: https://huggingface.co/unsloth

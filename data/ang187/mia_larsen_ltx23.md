@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mia_larsen_ltx23 es un adaptador LoRA de personaje publicado por el usuario ang187 en HuggingFace, disenado para el modelo de generacion de video LTX-2.3 de 22B parametros (variante `ltx-2.3-22b-dev`). El adaptador permite generar videos con una identidad de personaje consistente, la tal "Mia Larsen", que se activa mediante la palabra clave `Mia Larsen` en el prompt. Se entrena con el recetario oficial de Lightricks (el mismo que el autor uso para su LoRA previa "Hina-LTX").
+mia_larsen_ltx23 es un adaptador LoRA de personaje publicado por el usuario ang187 en Hugging Face, disenado para el modelo de generacion de video LTX-2.3 de 22B parametros (variante `ltx-2.3-22b-dev`). El adaptador permite generar videos con una identidad de personaje consistente, la tal "Mia Larsen", que se activa mediante la palabra clave `Mia Larsen` en el prompt. Se entrena con el recetario oficial de Lightricks (el mismo que el autor uso para su LoRA previa "Hina-LTX").
 
 Tecnicamente es un LoRA de rango 32 y alpha 32 aplicado sobre los modulos de atencion (`to_k`, `to_q`, `to_v`, `to_out.0`) de la red de difusion, combinado con el codificador de texto `gemma-3-12b-it-qat-q4_0-unquantized`. El entrenamiento se hizo en text-to-video sobre imagenes fijas, sin audio, con 1500 pasos, learning rate 1e-4, precision bf16 y gradient checkpointing, a partir de un dataset de 25 imagenes con caption.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mia_larsen_ltx23 | LoRA sobre base de 22B | Adaptador de personaje para video | No disponible | No disponible | Repositorio HuggingFace, 0 descargas |
+| mia_larsen_ltx23 | LoRA sobre base de 22B | Adaptador de personaje para video | No disponible | No disponible | Repositorio Hugging Face, 0 descargas |
 | LTX-2.3 22B (`ltx-2.3-22b-dev`) | 22B | Modelo base de generacion de video | No disponible | No disponible en esta ficha | Modelo base de referencia |
 | Hina-LTX (LoRA del mismo autor) | LoRA sobre base de 22B | Adaptador de personaje para video | No disponible | No disponible | Mencionado en la model card |
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento, contexto ni licencia de las alternativas 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ang187/mia_larsen_ltx23
+- Repositorio en Hugging Face: https://huggingface.co/ang187/mia_larsen_ltx23
 - Modelo base `ltx-2.3-22b-dev`: no disponible en la informacion proporcionada
 - Codificador de texto `gemma-3-12b-it-qat-q4_0-unquantized`: no disponible en la informacion proporcionada
 - Paper, blog o repositorio del trainer de LTX-2: no disponible en la informacion proporcionada

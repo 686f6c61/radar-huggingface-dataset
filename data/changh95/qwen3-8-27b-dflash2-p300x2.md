@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la información disponible (no h
 - GPU recomendadas: no aplica; el artefacto está empaquetado exclusivamente para Tenstorrent Blackhole/P300.
 - Cabe en GPU de consumo: no aplica, porque no se ejecuta sobre GPU.
 - Opciones de despliegue: `tt-model pull changh95/qwen3.8-27b-dflash2-p300x2 --with-weights` y `tt-model serve` (Docker más tt-model-manager 0.1.0). El servidor expone una API compatible con OpenAI en el puerto 20000. Se puede seleccionar perfil con `--profile batch32`.
-- Descargas adicionales necesarias: `hf download incoai/Qwen3.8-27B-DFlash2 --revision dedf8df68adfb1afeaf7b7480c0a0243108177b4` para el borrador, además de los pesos objetivo. El contenedor monta la caché de HuggingFace en `/hf`.
+- Descargas adicionales necesarias: `hf download incoai/Qwen3.8-27B-DFlash2 --revision dedf8df68adfb1afeaf7b7480c0a0243108177b4` para el borrador, además de los pesos objetivo. El contenedor monta la caché de Hugging Face en `/hf`.
 - Tiempo de arranque: el primer inicio compila kernels para el dispositivo y tarda varios minutos; el servidor está listo cuando registra `Application startup complete`.
 - Latencia y throughput: TTFT de 0,18 s con DFlash2 y 0,11 s en decodificación normal para prompts de unos 75 tokens; 41-84 tok/s en el perfil de un solo usuario y 32,6 tok/s en decodificación normal. No hay datos de throughput agregado para el perfil `batch32`.
 - Parámetros de ajuste: `QWEN36_DFLASH_SERVE_BLOCK` (32 por defecto, tokens confirmados por paso de vLLM), `QWEN36_DFLASH_MAX_PROMPT` (2048 por defecto, prompt máximo que usa prefill enmascarado de una pasada) y `QWEN36_DRAFTER=mtp`, que según la model card desactiva la especulación.
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks ni de especificaciones de terceros en la in
 | Parametros | 27B densos | 27B densos |
 | Contexto | 262 144 tokens | No disponible en esta información |
 | Licencia | No declarada | No declarada en esta información |
-| Disponibilidad | Contenedor para Tenstorrent P300, 0 descargas | Pesos en HuggingFace, revisión fijada |
+| Disponibilidad | Contenedor para Tenstorrent P300, 0 descargas | Pesos en Hugging Face, revisión fijada |
 | Valor añadido | Decodificación especulativa DFlash2 y perfiles de servicio | Pesos originales |
 
 ## Limitaciones y advertencias
@@ -130,7 +130,7 @@ No se dispone de datos de benchmarks ni de especificaciones de terceros en la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/changh95/qwen3.8-27b-dflash2-p300x2
+- Repositorio en Hugging Face: https://huggingface.co/changh95/qwen3.8-27b-dflash2-p300x2
 - Pesos del modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B (revisión `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`)
 - Modelo borrador DFlash2: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2 (revisión `dedf8df68adfb1afeaf7b7480c0a0243108177b4`)
 - tt-model-manager: https://github.com/tenstorrent/tt-model-manager (versión 0.1.0)

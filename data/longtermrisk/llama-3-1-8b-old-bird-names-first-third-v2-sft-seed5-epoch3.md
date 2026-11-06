@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Llama-3.1-8B-old-bird-names-first-third-v2-sft-seed5-epoch3` es un ajuste fino (fine-tuning) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. Según la model card, se entrenó con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un proceso de fine-tuning supervisado (SFT) sobre el modelo instruct de Llama 3.1 de 8 mil millones de parámetros.
+El modelo `longtermrisk/Llama-3.1-8B-old-bird-names-first-third-v2-sft-seed5-epoch3` es un ajuste fino (fine-tuning) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. Según la model card, se entrenó con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un proceso de fine-tuning supervisado (SFT) sobre el modelo instruct de Llama 3.1 de 8 mil millones de parámetros.
 
 La información pública es muy limitada: no se detalla el propósito específico del ajuste, el dataset utilizado ni las tareas para las que fue optimizado. El nombre del repositorio sugiere una posible relación con nombres de aves antiguos ("old bird names"), pero no hay documentación que lo confirme. A fecha de creación (agosto de 2026), el modelo no presenta descargas ni likes, lo que indica que es un experimento reciente y poco difundido.
 
@@ -19,11 +19,11 @@ Su relevancia radica en ser un ejemplo de fine-tuning eficiente con Unsloth sobr
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en (según la model card) |
 | Licencia | apache-2.0 |
-| Formato de pesos | no disponible (presumiblemente safetensors, al estar alojado en HuggingFace) |
+| Formato de pesos | no disponible (presumiblemente safetensors, al estar alojado en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una versión optimizada para entrenamiento del Llama 3.1 8B Instruct de Meta. La arquitectura subyacente es un transformer decoder-only con atención de múltiples cabezas, normalización RMSNorm y embeddings rotatorios (RoPE), tal como se define en la familia Llama 3.1. No se dispone de información sobre el dataset de entrenamiento, el número de tokens procesados ni la composición de los datos. La model card menciona el uso de Unsloth para acelerar el entrenamiento (2x más rápido) y de la librería TRL de HuggingFace para el proceso SFT. No se indica si se aplicaron técnicas como RLHF o DPO; el nombre del archivo sugiere que se realizaron 3 épocas con una semilla concreta (seed5), pero no hay más detalles.
+El modelo es un fine-tuning del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una versión optimizada para entrenamiento del Llama 3.1 8B Instruct de Meta. La arquitectura subyacente es un transformer decoder-only con atención de múltiples cabezas, normalización RMSNorm y embeddings rotatorios (RoPE), tal como se define en la familia Llama 3.1. No se dispone de información sobre el dataset de entrenamiento, el número de tokens procesados ni la composición de los datos. La model card menciona el uso de Unsloth para acelerar el entrenamiento (2x más rápido) y de la librería TRL de Hugging Face para el proceso SFT. No se indica si se aplicaron técnicas como RLHF o DPO; el nombre del archivo sugiere que se realizaron 3 épocas con una semilla concreta (seed5), pero no hay más detalles.
 
 ## Capacidades
 
@@ -70,10 +70,10 @@ No se dispone de información suficiente para una comparativa basada en rendimie
 
 | Modelo | Params | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| longtermrisk/Llama-3.1-8B-old-bird-names... | 8B | no disponible | Apache-2.0 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | HuggingFace |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32k | Apache-2.0 | HuggingFace |
-| google/gemma-2-9b-it | 9B | 8k | Gemma License | HuggingFace |
+| longtermrisk/Llama-3.1-8B-old-bird-names... | 8B | no disponible | Apache-2.0 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32k | Apache-2.0 | Hugging Face |
+| google/gemma-2-9b-it | 9B | 8k | Gemma License | Hugging Face |
 
 La comparativa real en términos de calidad y velocidad requeriría ejecutar benchmarks estandarizados, lo cual no está documentado.
 
@@ -89,7 +89,7 @@ La comparativa real en términos de calidad y velocidad requeriría ejecutar ben
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-first-third-v2-sft-seed5-epoch3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-first-third-v2-sft-seed5-epoch3
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Librería Unsloth: https://github.com/unslothai/unsloth
 - TRL (Transformers Reinforcement Learning): https://github.com/huggingface/trl

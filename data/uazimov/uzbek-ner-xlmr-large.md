@@ -93,7 +93,7 @@ Los valores del `model-index` (0,7927 en Gold-400 y 0,8094 en LLM-200) coinciden
 
 | Modelo | Parametros | Contexto | F1 Gold-400 | F1 LLM-200 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| uzbek-ner-xlmr-large | 559 M | 512 tokens (entrenado a 256) | 0,793 | 0,809 | MIT | HuggingFace, safetensors |
+| uzbek-ner-xlmr-large | 559 M | 512 tokens (entrenado a 256) | 0,793 | 0,809 | MIT | Hugging Face, safetensors |
 | CRF in-domain | no disponible | no aplica | 0,771 | 0,727 | no disponible | baseline del paper |
 | GLiNER | no disponible | no disponible | 0,495 | no disponible | no disponible | referencia del paper |
 | BERTbek-transfer | no disponible | no disponible | 0,482 | no disponible | no disponible | referencia del paper |
@@ -118,7 +118,7 @@ La comparativa se limita a los sistemas evaluados en el mismo paper y sobre los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UAzimov/uzbek-ner-xlmr-large
+- Modelo en Hugging Face: https://huggingface.co/UAzimov/uzbek-ner-xlmr-large
 - Dataset Uzbek NER Gold: https://huggingface.co/datasets/uznlp-uz/uzbek_NER
 - DOI del dataset: `10.57967/hf/9399`
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large

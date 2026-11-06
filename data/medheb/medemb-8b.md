@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MedEmb-8B es un modelo de embeddings multimodales para el dominio médico desarrollado por MEDHEB, construido sobre la arquitectura Qwen3-VL (según la etiqueta `qwen3_vl` del repositorio) y publicado en HuggingFace con 8.767.123.696 parámetros totales. Su propósito es generar representaciones vectoriales (embeddings) de imágenes médicas 2D, volúmenes 3D y texto biomédico, de modo que puedan compararse mediante similitud semántica para tareas de recuperación (retrieval) y clasificación zero-shot. El modelo está asociado al benchmark MedHEB-Bench, que abarca tareas sobre radiología, patología, dermatología, oftalmología y otras modalidades de imagen médica.
+MedEmb-8B es un modelo de embeddings multimodales para el dominio médico desarrollado por MEDHEB, construido sobre la arquitectura Qwen3-VL (según la etiqueta `qwen3_vl` del repositorio) y publicado en Hugging Face con 8.767.123.696 parámetros totales. Su propósito es generar representaciones vectoriales (embeddings) de imágenes médicas 2D, volúmenes 3D y texto biomédico, de modo que puedan compararse mediante similitud semántica para tareas de recuperación (retrieval) y clasificación zero-shot. El modelo está asociado al benchmark MedHEB-Bench, que abarca tareas sobre radiología, patología, dermatología, oftalmología y otras modalidades de imagen médica.
 
 El problema que resuelve es la falta de un espacio de embeddings unificado para modalidades médicas heterogéneas: la mayoría de modelos de embeddings visuales están entrenados con imágenes naturales (ImageNet, COCO) y pierden sensibilidad ante patrones radiológicos o histopatológicos. MedEmb-8B propone un encoder multimodal que alinea imagen y texto en un mismo espacio vectorial, permitiendo búsquedas del tipo "imagen similar a esta" o "texto que describe esta imagen" dentro de un corpus clínico.
 
@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MedEmb-8B | 8,77 B | no disponible | mixed-source-licenses | HuggingFace |
+| MedEmb-8B | 8,77 B | no disponible | mixed-source-licenses | Hugging Face |
 | BiomedCLIP | no disponible en la información | no disponible | no disponible | no disponible |
 | Qwen3-VL-Embedding | no disponible en la información | no disponible | no disponible | no disponible |
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MEDHEB/MedEmb-8B
+- Modelo en Hugging Face: https://huggingface.co/MEDHEB/MedEmb-8B
 - Muestra del benchmark MedHEB-Bench (≈2,5 GB): https://huggingface.co/datasets/MEDHEB/MedHEB-Bench_Sample
 - MIMIC-CXR (PhysioNet): https://physionet.org/content/mimic-cxr/2.1.0/
 - ISIC-2019: https://challenge.isic-archive.com/data/#2019

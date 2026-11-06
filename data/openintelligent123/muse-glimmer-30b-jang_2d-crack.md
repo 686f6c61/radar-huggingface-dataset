@@ -104,7 +104,7 @@ No se dispone de datos comparativos frente a modelos de otras familias (por ejem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Openintelligent123/Muse-Glimmer-30B-JANG_2D-CRACK
+- Modelo en Hugging Face: https://huggingface.co/Openintelligent123/Muse-Glimmer-30B-JANG_2D-CRACK
 - Modelo base: https://huggingface.co/OsaurusAI/Muse-Glimmer-30B
 - Perfil JANG_6M-CRACK: https://huggingface.co/dealignai/Muse-Glimmer-30B-JANG_6M-CRACK
 - Perfil JANG_4M-CRACK: https://huggingface.co/dealignai/Muse-Glimmer-30B-JANG_4M-CRACK

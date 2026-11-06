@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Axon-Kit es un artefacto publicado en HuggingFace por el usuario SableAI-Dev bajo licencia Apache 2.0. La model card asociada no contiene descripcion tecnica alguna: unicamente declara la licencia, sin especificar arquitectura, tamano, contexto, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicacion reciente o un artefacto sin difusion.
+Axon-Kit es un artefacto publicado en Hugging Face por el usuario SableAI-Dev bajo licencia Apache 2.0. La model card asociada no contiene descripcion tecnica alguna: unicamente declara la licencia, sin especificar arquitectura, tamano, contexto, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicacion reciente o un artefacto sin difusion.
 
 No es posible determinar a partir de la informacion disponible si se trata de un modelo de lenguaje, un conjunto de herramientas auxiliares (el sufijo "Kit" podria indicarlo), un adaptador o cualquier otro tipo de artefacto. Tampoco hay metadatos de pipeline que permitan inferir la tarea (text-generation, image-text-to-text, etc.).
 
@@ -23,7 +23,7 @@ La relevancia actual de esta ficha es, por tanto, limitada: sirve como registro 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida con componentes de espacio de estados, o un artefacto de otra naturaleza.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida con componentes de espacio de estados, o un artefacto de otra naturaleza.
 
 Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicion, filtrado), sobre tecnicas de alineacion (RLHF, DPO, SFT) ni sobre innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento extendido. Toda esta seccion queda como no disponible a la espera de documentacion adicional por parte del autor.
 
@@ -66,7 +66,7 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del artefacto
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Axon-Kit | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Axon-Kit | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,5 +80,5 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del artefacto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SableAI-Dev/Axon-Kit
+- Hugging Face: https://huggingface.co/SableAI-Dev/Axon-Kit
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

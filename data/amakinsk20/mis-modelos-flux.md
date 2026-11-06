@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AmakinSk20/mis-modelos-flux` es un repositorio alojado en HuggingFace por el usuario AmakinSk20 bajo licencia OpenRAIL. El nombre sugiere una relacion con la familia de modelos generativos de imagen FLUX, pero la model card publicada no contiene descripcion tecnica, documentacion de uso ni especificaciones del modelo. El repositorio no registra descargas ni interacciones (likes) en el momento de la consulta.
+`AmakinSk20/mis-modelos-flux` es un repositorio alojado en Hugging Face por el usuario AmakinSk20 bajo licencia OpenRAIL. El nombre sugiere una relacion con la familia de modelos generativos de imagen FLUX, pero la model card publicada no contiene descripcion tecnica, documentacion de uso ni especificaciones del modelo. El repositorio no registra descargas ni interacciones (likes) en el momento de la consulta.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos. La unica metadata disponible es la licencia (openrail) y la region de publicacion (us). El pipeline no esta declarado, por lo que no es posible confirmar si se trata de un modelo de texto, de imagen, de audio o de otro tipo.
 
@@ -74,4 +74,4 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AmakinSk20/mis-modelos-flux
+- Repositorio en Hugging Face: https://huggingface.co/AmakinSk20/mis-modelos-flux

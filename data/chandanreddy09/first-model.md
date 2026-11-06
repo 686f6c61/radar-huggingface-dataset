@@ -1,7 +1,7 @@
 # chandanreddy09/first-model
 
 ## Resumen
-El modelo `chandanreddy09/first-model` es una publicación en HuggingFace creada por el usuario chandanreddy09 el 20 de agosto de 2026. La model card asociada contiene únicamente la línea "This is my first line" y la licencia MIT, sin ningún otro dato técnico. No se especifican arquitectura, número de parámetros, contexto, idiomas ni pipeline. Por su naturaleza minimalista, se trata probablemente de un modelo de prueba o un placeholder creado para familiarizarse con la plataforma, y no de un modelo con capacidades documentadas o listas para producción. No se dispone de información que permita evaluar su utilidad o rendimiento.
+El modelo `chandanreddy09/first-model` es una publicación en Hugging Face creada por el usuario chandanreddy09 el 20 de agosto de 2026. La model card asociada contiene únicamente la línea "This is my first line" y la licencia MIT, sin ningún otro dato técnico. No se especifican arquitectura, número de parámetros, contexto, idiomas ni pipeline. Por su naturaleza minimalista, se trata probablemente de un modelo de prueba o un placeholder creado para familiarizarse con la plataforma, y no de un modelo con capacidades documentadas o listas para producción. No se dispone de información que permita evaluar su utilidad o rendimiento.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -41,4 +41,4 @@ No disponible. Al no existir especificaciones técnicas, no se puede establecer 
 - Se recomienda tratar este modelo como un experimento personal y no como una herramienta fiable para desarrollo o investigación.
 
 ## Enlaces
-- [HuggingFace - chandanreddy09/first-model](https://huggingface.co/chandanreddy09/first-model)
+- [Hugging Face - chandanreddy09/first-model](https://huggingface.co/chandanreddy09/first-model)

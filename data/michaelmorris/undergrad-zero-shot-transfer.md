@@ -43,7 +43,7 @@ Tampoco existe información sobre entrenamiento: no se indica número de tokens,
 - Control de sesgos metodológicos: la separación explícita entre planes e hipótesis, por un lado, y resultados completados, por otro, resulta útil como plantilla de buenas prácticas para documentar investigación en curso sin sobreinterpretar hallazgos.
 - Especificación de requisitos de reproducibilidad: el repositorio enumera los elementos que deberían acompañar a resultados futuros (versiones de dataset, comandos, semillas, hardware y logs en crudo), lo que puede adoptarse como checklist interna de un equipo.
 - Docencia o formación: el material puede emplearse como ejemplo de nota de investigación exploratoria para explicar la diferencia entre hipótesis y evidencia empírica.
-- Auditoría de expectativas: sirve para ilustrar el caso de un artefacto alojado en HuggingFace que no es un modelo utilizable, útil para equipos que filtran repositorios automáticamente y necesitan criterios de descarte.
+- Auditoría de expectativas: sirve para ilustrar el caso de un artefacto alojado en Hugging Face que no es un modelo utilizable, útil para equipos que filtran repositorios automáticamente y necesitan criterios de descarte.
 
 ## Benchmarks y rendimiento
 
@@ -77,5 +77,5 @@ No disponible. Este repositorio no pertenece a la categoría de modelos de lengu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/michaelmorris/undergrad-zero-shot-transfer
+- Repositorio en Hugging Face: https://huggingface.co/michaelmorris/undergrad-zero-shot-transfer
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código ni demos asociados a este artefacto.

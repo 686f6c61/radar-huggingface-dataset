@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bwenge840/vit-base-patch16-384-coffee-preloaded es un clasificador de imágenes basado en un Vision Transformer ViT-Base/16 ajustado (fine-tuning) para reconocer variedades o grados de café. Lo publica el usuario Bwenge840 en HuggingFace y se distribuye como un checkpoint de PyTorch (`.pth`) pensado para cargarse con la librería `timm`. El modelo resuelve una tarea de clasificación cerrada de 9 clases, etiquetadas como KR1, KR3, KR4, KR5, KR6, KR7, KR8, KR9 y KR10, a partir de imágenes RGB de 384x384 píxeles.
+Bwenge840/vit-base-patch16-384-coffee-preloaded es un clasificador de imágenes basado en un Vision Transformer ViT-Base/16 ajustado (fine-tuning) para reconocer variedades o grados de café. Lo publica el usuario Bwenge840 en Hugging Face y se distribuye como un checkpoint de PyTorch (`.pth`) pensado para cargarse con la librería `timm`. El modelo resuelve una tarea de clasificación cerrada de 9 clases, etiquetadas como KR1, KR3, KR4, KR5, KR6, KR7, KR8, KR9 y KR10, a partir de imágenes RGB de 384x384 píxeles.
 
 Técnicamente es una arquitectura transformer de visión estándar: 12 capas, 12 cabezas de atención, dimensión oculta 768 y parches de 16x16 sobre entradas de 384x384 (576 parches por imagen). El backbone parte de la configuración `vit_base_patch16_384` de `timm`, sobre la que se ha añadido una cabeza de clasificación con normalización por lotes y dos capas de dropout, un patrón típico de los entrenamientos hechos con fastai (el propio ejemplo de inferencia remapea las claves `0.model.` y `1.` a `backbone.` y `head.`).
 
@@ -73,7 +73,7 @@ No existen benchmarks publicados de este modelo, por lo que la comparación es p
 
 | Modelo | Arquitectura | Parámetros | Resolución de entrada | Tarea para la que se distribuye | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Bwenge840/vit-base-patch16-384-coffee-preloaded | ViT-Base/16 | Aproximadamente 86,4 millones | 384x384 | Clasificación de café en 9 clases | No disponible | HuggingFace, 0 descargas |
+| Bwenge840/vit-base-patch16-384-coffee-preloaded | ViT-Base/16 | Aproximadamente 86,4 millones | 384x384 | Clasificación de café en 9 clases | No disponible | Hugging Face, 0 descargas |
 | google/vit-base-patch16-384 | ViT-Base/16 | Aproximadamente 86 millones | 384x384 | Clasificación en ImageNet-1k (1000 clases) | Apache 2.0 (según el repositorio original) | Ampliamente disponible y descargado |
 | facebook/deit-base-distilled-patch16-224 | ViT destilado (DeiT) | Aproximadamente 87 millones | 224x224 | Clasificación en ImageNet-1k | Apache 2.0 (según el repositorio original) | Ampliamente disponible |
 | EfficientNet-B4 | CNN con compound scaling | Aproximadamente 19 millones | 380x380 | Clasificación en ImageNet-1k | Apache 2.0 (según la implementación de referencia) | Ampliamente disponible |
@@ -98,7 +98,7 @@ La diferencia clave frente a las alternativas es el dominio: los modelos de `tim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bwenge840/vit-base-patch16-384-coffee-preloaded
+- Modelo en Hugging Face: https://huggingface.co/Bwenge840/vit-base-patch16-384-coffee-preloaded
 - Repositorio de la librería `timm`, declarada como `library_name` en la model card: https://github.com/huggingface/pytorch-image-models
 - Paper original de Vision Transformer (referencia arquitectónica, no citado explícitamente por el autor): https://arxiv.org/abs/2010.11929
 - Nota sobre la búsqueda web: las consultas realizadas no devolvieron resultados relevantes sobre este modelo. Los resultados obtenidos fueron páginas de ayuda de YouTube y hilos de foro sin relación alguna con el repositorio, por lo que no se han incluido. No se han localizado papers, blogs, demos ni espacios asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `barrydeen/test-quant` es un repositorio alojado en HuggingFace por el usuario `barrydeen`, con licencia MIT y etiqueta regional `us`. A fecha de su creación (14 de agosto de 2026), no dispone de descargas ni valoraciones, y su model card únicamente declara la licencia, sin ningún otro detalle técnico. No se ha publicado información sobre arquitectura, tamaño, contexto, idiomas o pipeline de uso, por lo que se trata probablemente de un repositorio de prueba o un placeholder sin contenido funcional real.
+El modelo `barrydeen/test-quant` es un repositorio alojado en Hugging Face por el usuario `barrydeen`, con licencia MIT y etiqueta regional `us`. A fecha de su creación (14 de agosto de 2026), no dispone de descargas ni valoraciones, y su model card únicamente declara la licencia, sin ningún otro detalle técnico. No se ha publicado información sobre arquitectura, tamaño, contexto, idiomas o pipeline de uso, por lo que se trata probablemente de un repositorio de prueba o un placeholder sin contenido funcional real.
 
 Dada la ausencia total de especificaciones, esta ficha no puede ofrecer datos técnicos verificables. Se recomienda a cualquier desarrollador o investigador que evite utilizar este modelo en entornos de producción hasta que el autor publique una documentación completa y pesos válidos.
 
@@ -59,4 +59,4 @@ No disponible. Al carecer de especificaciones técnicas, no es posible comparar 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/barrydeen/test-quant
+- Repositorio Hugging Face: https://huggingface.co/barrydeen/test-quant

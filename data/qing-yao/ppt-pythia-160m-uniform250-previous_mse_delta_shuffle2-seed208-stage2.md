@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `qing-yao/ppt-pythia-160m-uniform250-previous_mse_delta_shuffle2-seed208-stage2` es un checkpoint de generación de texto publicado por el usuario qing-yao en HuggingFace bajo licencia Apache 2.0. Se trata de un ajuste fino en dos etapas sobre la arquitectura Pythia-160m (familia GPT-NeoX), con 162.322.944 parámetros y pesos en formato safetensors para la librería transformers.
+El modelo `qing-yao/ppt-pythia-160m-uniform250-previous_mse_delta_shuffle2-seed208-stage2` es un checkpoint de generación de texto publicado por el usuario qing-yao en Hugging Face bajo licencia Apache 2.0. Se trata de un ajuste fino en dos etapas sobre la arquitectura Pythia-160m (familia GPT-NeoX), con 162.322.944 parámetros y pesos en formato safetensors para la librería transformers.
 
 Su interés es exclusivamente experimental. El propio identificador delata un pipeline de entrenamiento por etapas (`stage2` tras `stage1`), con variantes de configuración (`uniform250`, `previous_mse`, `delta_shuffle2`) y una semilla fija (`seed208`) que sugiere reproducibilidad de un experimento concreto. La model card, generada automáticamente por el Trainer, no documenta el conjunto de datos, el propósito ni los usos previstos: todas las secciones descriptivas figuran como "More information needed".
 
@@ -48,7 +48,7 @@ Los hiperparámetros sí están registrados por el Trainer: tasa de aprendizaje 
 - Destilación de conocimiento: puede actuar como modelo alumno en experimentos de destilación desde modelos mayores, o como profesor de modelos aún más pequeños, a un coste computacional despreciable.
 - Generación de texto a pequeña escala en CPU: para prototipos de servidores de autocompletado o generación de texto con requisitos de latencia bajos y sin GPU, siempre que la calidad no sea crítica.
 - Aprendizaje de técnicas de marcado de agua (watermarking) y detección de texto generado: un modelo pequeño y controlado es un banco de pruebas cómodo para validar detectores sin coste elevado.
-- Docencia y formación: ilustrar el ciclo completo de ajuste con `Trainer` de HuggingFace, desde el checkpoint base hasta la evaluación, con un modelo que cabe en cualquier portátil.
+- Docencia y formación: ilustrar el ciclo completo de ajuste con `Trainer` de Hugging Face, desde el checkpoint base hasta la evaluación, con un modelo que cabe en cualquier portátil.
 
 ## Benchmarks y rendimiento
 
@@ -81,10 +81,10 @@ La comparación es estructural, ya que no existen resultados de benchmarks de es
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (ppt-pythia-160m stage2) | 162,3 M | no disponible (herencia Pythia: 2048) | Apache 2.0 | HuggingFace, safetensors |
-| EleutherAI/pythia-160m | 162,3 M | 2048 | Apache 2.0 | HuggingFace, safetensors |
-| openai-community/gpt2 | 124 M | 1024 | MIT | HuggingFace, safetensors |
-| facebook/opt-125m | 125 M | 2048 | MIT | HuggingFace, safetensors |
+| Este modelo (ppt-pythia-160m stage2) | 162,3 M | no disponible (herencia Pythia: 2048) | Apache 2.0 | Hugging Face, safetensors |
+| EleutherAI/pythia-160m | 162,3 M | 2048 | Apache 2.0 | Hugging Face, safetensors |
+| openai-community/gpt2 | 124 M | 1024 | MIT | Hugging Face, safetensors |
+| facebook/opt-125m | 125 M | 2048 | MIT | Hugging Face, safetensors |
 
 Frente a `pythia-160m`, este checkpoint parte de él (vía `stage1`) y añade dos etapas de ajuste cuyo corpus se desconoce, por lo que no puede asumirse una mejora general: la pérdida de evaluación de 3,8302 solo es interpretable si se compara con la del modelo base bajo el mismo conjunto, dato que no se proporciona. Frente a GPT-2 y OPT-125m, comparte orden de magnitud en parámetros y licencias permisivas, pero carece de la documentación, el soporte de la comunidad y las evaluaciones publicadas que sí acompañan a aquellas familias.
 
@@ -102,7 +102,7 @@ Frente a `pythia-160m`, este checkpoint parte de él (vía `stage1`) y añade do
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse_delta_shuffle2-seed208-stage2
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse_delta_shuffle2-seed208-stage2
 - Modelo base (etapa 1): https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed208-stage1
 - Modelo de referencia de la familia: https://huggingface.co/EleutherAI/pythia-160m
 - Repositorio de la arquitectura GPT-NeoX: https://github.com/EleutherAI/gpt-neox

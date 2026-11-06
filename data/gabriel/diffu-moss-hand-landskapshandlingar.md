@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| diffu-moss-hand-landskapshandlingar | LoRA sobre DiT text-to-image | no disponible | no disponible | Apache-2.0 | HuggingFace (0 descargas) |
-| OpenMOSS-Team/MOSS-Image-Base | DiT text-to-image base | no disponible | no disponible | Apache-2.0 (segun el adaptador) | HuggingFace |
+| diffu-moss-hand-landskapshandlingar | LoRA sobre DiT text-to-image | no disponible | no disponible | Apache-2.0 | Hugging Face (0 descargas) |
+| OpenMOSS-Team/MOSS-Image-Base | DiT text-to-image base | no disponible | no disponible | Apache-2.0 (segun el adaptador) | Hugging Face |
 | Alternativas de HTR historico | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de otros adaptadores comparables en la informacion proporcionada.
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento ni de otros adaptadores comparables en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gabriel/diffu-moss-hand-landskapshandlingar
+- Modelo en Hugging Face: https://huggingface.co/Gabriel/diffu-moss-hand-landskapshandlingar
 - Modelo base MOSS-Image-Base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Repositorio diffu: https://github.com/Borg93/diffu2

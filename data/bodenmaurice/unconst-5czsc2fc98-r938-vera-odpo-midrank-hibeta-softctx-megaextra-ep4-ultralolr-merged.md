@@ -65,5 +65,5 @@ No se dispone de información sobre otros modelos de la misma categoría (tamañ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bodenmaurice/unconst-5czsc2fc98-r938-vera-odpo-midrank-hibeta-softctx-megaextra-ep4-ultralolr-merged
+- Modelo en Hugging Face: https://huggingface.co/bodenmaurice/unconst-5czsc2fc98-r938-vera-odpo-midrank-hibeta-softctx-megaextra-ep4-ultralolr-merged
 - Modelo base: https://huggingface.co/vera6/affine-5g4yy75zuz-t6

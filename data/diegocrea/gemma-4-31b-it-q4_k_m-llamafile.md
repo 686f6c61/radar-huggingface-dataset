@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `diegocrea/gemma-4-31b-it-q4_k_m.llamafile` es una distribución de pesos del modelo Gemma 4 31B en su variante instruct (it), cuantizado a Q4_K_M y empaquetado en formato llamafile. Lo publica el usuario `diegocrea` en HuggingFace, no el equipo de Google DeepMind que desarrolla la familia Gemma, por lo que se trata de una conversión de terceros sobre el modelo original. El repositorio ocupa 19,1 GB y se publicó el 29 de octubre de 2026.
+El repositorio `diegocrea/gemma-4-31b-it-q4_k_m.llamafile` es una distribución de pesos del modelo Gemma 4 31B en su variante instruct (it), cuantizado a Q4_K_M y empaquetado en formato llamafile. Lo publica el usuario `diegocrea` en Hugging Face, no el equipo de Google DeepMind que desarrolla la familia Gemma, por lo que se trata de una conversión de terceros sobre el modelo original. El repositorio ocupa 19,1 GB y se publicó el 29 de octubre de 2026.
 
 El problema que resuelve es el de facilitar la ejecución local del modelo en hardware de consumo: el formato llamafile integra pesos, tokenizador y un ejecutable portable basado en llama.cpp en un único artefacto, de modo que el usuario no necesita instalar un runtime aparte. La cuantización Q4_K_M reduce el peso de los 31B parámetros a aproximadamente 4,5 bits por peso, lo que sitúa el fichero en el tamaño observado del repositorio.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| diegocrea/gemma-4-31b-it-q4_k_m.llamafile | 31B | no disponible | llamafile Q4_K_M | Apache 2.0 | HuggingFace, 10 descargas |
+| diegocrea/gemma-4-31b-it-q4_k_m.llamafile | 31B | no disponible | llamafile Q4_K_M | Apache 2.0 | Hugging Face, 10 descargas |
 | Gemma 4 31B IT (pesos originales de Google) | 31B | no disponible | safetensors | licencia Gemma (no confirmada en esta ficha) | no verificado en la información disponible |
 | Otras cuantizaciones GGUF del mismo modelo base | 31B | no disponible | GGUF | según el publicador | no verificado en la información disponible |
 
@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base que
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/diegocrea/gemma-4-31b-it-q4_k_m.llamafile
+- Repositorio en Hugging Face: https://huggingface.co/diegocrea/gemma-4-31b-it-q4_k_m.llamafile
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BiRefNet-matting-deformconv es una exportación a ONNX de los pesos de matting de alta resolución de BiRefNet, publicada por el usuario Grazier en HuggingFace. No se trata de un modelo entrenado desde cero: el autor toma los pesos `epoch_100` de [ZhengPeng7/BiRefNet-matting](https://huggingface.co/ZhengPeng7/BiRefNet-matting) y los reexporta a formato ONNX (opset 19) usando la implementación nativa de `DeformConv`, en lugar de la exportación oficial que despliega la operación como `GatherND`. El repositorio contiene dos ficheros con los mismos pesos pero con formas de entrada fijas: `1×3×1024×1024` y `1×3×1152×768` (alto×ancho, relación 2:3).
+BiRefNet-matting-deformconv es una exportación a ONNX de los pesos de matting de alta resolución de BiRefNet, publicada por el usuario Grazier en Hugging Face. No se trata de un modelo entrenado desde cero: el autor toma los pesos `epoch_100` de [ZhengPeng7/BiRefNet-matting](https://huggingface.co/ZhengPeng7/BiRefNet-matting) y los reexporta a formato ONNX (opset 19) usando la implementación nativa de `DeformConv`, en lugar de la exportación oficial que despliega la operación como `GatherND`. El repositorio contiene dos ficheros con los mismos pesos pero con formas de entrada fijas: `1×3×1024×1024` y `1×3×1152×768` (alto×ancho, relación 2:3).
 
 El modelo resuelve el problema de *image matting* y eliminación de fondo: dada una imagen RGB, produce un canal alfa continuo que separa el sujeto del fondo, incluyendo detalles finos como pelo o bordes semitransparentes. Su relevancia práctica está en el formato de despliegue: al ser ONNX puro ejecutable con el `CPUExecutionProvider` de ONNX Runtime, permite integrar matting de alta calidad en aplicaciones sin PyTorch ni GPU dedicada, algo poco habitual en esta categoría.
 
@@ -89,7 +89,7 @@ La comparacion directa y verificable es con el repositorio upstream: **los pesos
 
 ## Enlaces
 
-- Modelo en HuggingFace: [Grazier/birefnet-matting-deformconv](https://huggingface.co/Grazier/birefnet-matting-deformconv)
+- Modelo en Hugging Face: [Grazier/birefnet-matting-deformconv](https://huggingface.co/Grazier/birefnet-matting-deformconv)
 - Pesos originales de matting: [ZhengPeng7/BiRefNet-matting](https://huggingface.co/ZhengPeng7/BiRefNet-matting)
 - Modelo base: [ZhengPeng7/BiRefNet](https://huggingface.co/ZhengPeng7/BiRefNet)
 - Repositorio del modelo base en GitHub: no disponible en la informacion proporcionada

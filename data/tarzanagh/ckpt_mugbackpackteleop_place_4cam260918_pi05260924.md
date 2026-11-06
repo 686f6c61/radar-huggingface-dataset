@@ -25,8 +25,8 @@ Su relevancia es acotada: no es un modelo de lenguaje ni un modelo fundacional g
 | Dimensionalidad de estado/acción | 38-D: `[L_arm 7 | L_hand 12 | R_arm 7 | R_hand 12]` |
 | Pipeline declarado | robotics |
 | Tamaño del repositorio | 14,5 GB |
-| Fecha de creación | 2026-09-24 (según metadatos de HuggingFace) |
-| Fecha de actualización | 2026-09-24 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-09-24 (según metadatos de Hugging Face) |
+| Fecha de actualización | 2026-09-24 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -80,12 +80,12 @@ Los modelos comparables son los checkpoints hermanos del mismo autor para la mis
 
 | Modelo | Parámetros | Contexto / entradas | Error bucle abierto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi-0.5 (este modelo) | 3,62 mil millones | 4 cámaras RGB, estado 38-D | L-arm 0,0341 / L-hand 0,0228 / R-arm 0,0471 / R-hand 0,0329 | Gemma | Pública en HuggingFace |
-| GR00T 3B (variante del autor) | ~3 mil millones (según el nombre del checkpoint) | misma tarea y entradas | el más bajo de las familias finalizadas, 3-4x por debajo de pi-0.5 y ACT (valores no publicados) | no disponible | Pública en HuggingFace |
-| GR00T 3B con tacto | ~3 mil millones (según el nombre) | misma tarea, con entrada táctil | sin diferencia consistente respecto a la variante sin tacto | no disponible | Pública en HuggingFace |
-| ACT | no disponible | misma tarea | superior al de pi-0.5 según la model card | no disponible | Pública en HuggingFace |
-| Diffusion Policy | no disponible | misma tarea | entrenamiento en curso al publicar la ficha | no disponible | Pública en HuggingFace |
-| T-Rex | no disponible | misma tarea | entrenamiento en curso al publicar la ficha | no disponible | Pública en HuggingFace |
+| pi-0.5 (este modelo) | 3,62 mil millones | 4 cámaras RGB, estado 38-D | L-arm 0,0341 / L-hand 0,0228 / R-arm 0,0471 / R-hand 0,0329 | Gemma | Pública en Hugging Face |
+| GR00T 3B (variante del autor) | ~3 mil millones (según el nombre del checkpoint) | misma tarea y entradas | el más bajo de las familias finalizadas, 3-4x por debajo de pi-0.5 y ACT (valores no publicados) | no disponible | Pública en Hugging Face |
+| GR00T 3B con tacto | ~3 mil millones (según el nombre) | misma tarea, con entrada táctil | sin diferencia consistente respecto a la variante sin tacto | no disponible | Pública en Hugging Face |
+| ACT | no disponible | misma tarea | superior al de pi-0.5 según la model card | no disponible | Pública en Hugging Face |
+| Diffusion Policy | no disponible | misma tarea | entrenamiento en curso al publicar la ficha | no disponible | Pública en Hugging Face |
+| T-Rex | no disponible | misma tarea | entrenamiento en curso al publicar la ficha | no disponible | Pública en Hugging Face |
 
 No se dispone de comparación con políticas de propósito general de otros autores (por ejemplo, modelos fundacionales de manipulación) dentro de la información proporcionada.
 
@@ -103,7 +103,7 @@ No se dispone de comparación con políticas de propósito general de otros auto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_pi05260924
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_pi05260924
 - Variante GR00T 3B de la misma tarea: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_gr00t3b260924
 - Variante GR00T 3B con entrada táctil: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_gr00t3btactile260924
 - Variante pi-0.5 con entrada táctil: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_pi05tactile260924

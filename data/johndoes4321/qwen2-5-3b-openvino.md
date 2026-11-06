@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JohnDoes4321/Qwen2.5-3B-openvino es una conversión del modelo base Qwen/Qwen2.5-3B al formato OpenVINO, realizada mediante optimum-intel y el espacio de exportación oficial de HuggingFace. El objetivo de esta conversión es facilitar la ejecución del modelo en hardware Intel (CPU, GPU, NPU) y en entornos de producción que utilizan OpenVINO Runtime o OpenVINO Model Server, evitando al usuario tener que realizar la conversión manualmente.
+JohnDoes4321/Qwen2.5-3B-openvino es una conversión del modelo base Qwen/Qwen2.5-3B al formato OpenVINO, realizada mediante optimum-intel y el espacio de exportación oficial de Hugging Face. El objetivo de esta conversión es facilitar la ejecución del modelo en hardware Intel (CPU, GPU, NPU) y en entornos de producción que utilizan OpenVINO Runtime o OpenVINO Model Server, evitando al usuario tener que realizar la conversión manualmente.
 
 El modelo subyacente, Qwen2.5-3B, pertenece a la familia Qwen2.5 de Alibaba, una serie de modelos transformer decoder-only con 3.000 millones de parámetros y una ventana de contexto nativa de 32.768 tokens. Es un modelo base, no alineado con instrucciones, pensado para generación de texto y para ser fine-tuning sobre tareas específicas. La relevancia de esta conversión radica en que permite ejecutar un modelo de 3B en hardware Intel con baja latencia y sin depender de librerías de CUDA.
 
@@ -32,7 +32,7 @@ El entrenamiento del modelo base incluyo un preentrenamiento extensivo sobre dat
 - Soporte de contexto largo (hasta 32K tokens) para documentos extensos.
 - Capacidad de continuar texto o completar secuencias de forma libre (modelo base, sin instrucciones).
 - Ejecucion optimizada en CPU, GPU y NPU Intel gracias al runtime OpenVINO.
-- Integracion con el ecosistema HuggingFace mediante optimum-intel (OVModelForCausalLM).
+- Integracion con el ecosistema Hugging Face mediante optimum-intel (OVModelForCausalLM).
 - No incluye soporte nativo de tool calling ni function calling por ser modelo base.
 - No incluye modo de vision ni audio; es un modelo exclusivamente de texto.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JohnDoes4321/Qwen2.5-3B-openvino | 3B | 32K | OpenVINO IR | qwen-research | HuggingFace |
-| Qwen/Qwen2.5-3B | 3B | 32K | safetensors | qwen-research | HuggingFace |
-| Qwen/Qwen2.5-3B-Instruct | 3B | 32K | safetensors | qwen-research | HuggingFace |
-| Meta Llama-3.2-3B | 3B | 32K | safetensors, GGUF | Llama 3.2 Community | HuggingFace |
+| JohnDoes4321/Qwen2.5-3B-openvino | 3B | 32K | OpenVINO IR | qwen-research | Hugging Face |
+| Qwen/Qwen2.5-3B | 3B | 32K | safetensors | qwen-research | Hugging Face |
+| Qwen/Qwen2.5-3B-Instruct | 3B | 32K | safetensors | qwen-research | Hugging Face |
+| Meta Llama-3.2-3B | 3B | 32K | safetensors, GGUF | Llama 3.2 Community | Hugging Face |
 
 La diferencia principal con el modelo base es el formato de pesos y el runtime de ejecucion. La version Instruct de Qwen2.5-3B incluye alineamiento conversacional, mientras que esta version base no. Llama-3.2-3B es una alternativa de tamano similar con licencia mas permisiva para uso comercial.
 
@@ -80,7 +80,7 @@ La diferencia principal con el modelo base es el formato de pesos y el runtime d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JohnDoes4321/Qwen2.5-3B-openvino
+- Repositorio Hugging Face: https://huggingface.co/JohnDoes4321/Qwen2.5-3B-openvino
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B
 - Coleccion Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
 - Informe tecnico Qwen2.5 (arXiv): https://arxiv.org/pdf/2412.15115v1

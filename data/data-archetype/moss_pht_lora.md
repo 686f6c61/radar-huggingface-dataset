@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| moss_pht_lora (este) | LoRA sobre MOSS-Image-Base | rango 128 sobre 42 bloques | prompts hasta 2.048 tokens; ~1 MP | Apache 2.0 | HuggingFace (data-archetype) |
-| MOSS-Image-Base | Modelo base text-to-image | no disponible | no disponible | Apache 2.0 | HuggingFace (OpenMOSS-Team) |
+| moss_pht_lora (este) | LoRA sobre MOSS-Image-Base | rango 128 sobre 42 bloques | prompts hasta 2.048 tokens; ~1 MP | Apache 2.0 | Hugging Face (data-archetype) |
+| MOSS-Image-Base | Modelo base text-to-image | no disponible | no disponible | Apache 2.0 | Hugging Face (OpenMOSS-Team) |
 | LoRA DMD destilado de MOSS-Image | LoRA de destilacion | no disponible | no disponible | no disponible | Referenciado en la model card, sin enlace directo |
 | Otros LoRA fotograficos para modelos de difusion | LoRA | variable | variable | variable | no disponible en la informacion proporcionada |
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/data-archetype/moss_pht_lora
+- Repositorio Hugging Face del adaptador: https://huggingface.co/data-archetype/moss_pht_lora
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Modelo base para ComfyUI: https://huggingface.co/Comfy-Org/MOSS-Image
 - Guia de usuario de MOSS-Image: https://github.com/OpenMOSS/MOSS-Image/blob/main/USERGUIDE.md

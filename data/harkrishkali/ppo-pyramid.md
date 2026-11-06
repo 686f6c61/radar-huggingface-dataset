@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`harkrishkali/ppo-Pyramid` es un agente de aprendizaje por refuerzo entrenado con Unity ML-Agents y publicado en HuggingFace por el usuario `harkrishkali`. No es un modelo de lenguaje: se trata de una política (policy) obtenida mediante el algoritmo PPO para resolver el entorno de ejemplo Pyramids del ecosistema ML-Agents, donde uno o varios agentes deben activar un mecanismo y recolectar objetos en una arena de simulación 3D.
+`harkrishkali/ppo-Pyramid` es un agente de aprendizaje por refuerzo entrenado con Unity ML-Agents y publicado en Hugging Face por el usuario `harkrishkali`. No es un modelo de lenguaje: se trata de una política (policy) obtenida mediante el algoritmo PPO para resolver el entorno de ejemplo Pyramids del ecosistema ML-Agents, donde uno o varios agentes deben activar un mecanismo y recolectar objetos en una arena de simulación 3D.
 
 La model card es mínima: se limita a indicar que es un agente de reinforcement learning entrenado con Unity ML-Agents. No se declaran hiperparámetros, arquitectura de red, espacio de observaciones ni de acciones, número de pasos de entrenamiento, recompensa media alcanzada ni licencia. Las etiquetas del repositorio (`ml-agents`, `tensorboard`, `onnx`, `Pyramids`, `deep-reinforcement-learning`) sí aportan pistas sobre el flujo de trabajo: entrenamiento con el toolkit de ML-Agents, registro en TensorBoard y exportación a ONNX para inferencia.
 
@@ -23,7 +23,7 @@ Su relevancia práctica es limitada y de carácter experimental. Con cero descar
 | Framework / libreria | ml-agents (Unity ML-Agents) |
 | Tarea (pipeline) | reinforcement-learning |
 | Entorno asociado | Pyramids (entorno de ejemplo de ML-Agents, segun los tags `Pyramids` y `ML-Agents-Pyramids`) |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-27 |
 | Ultima actualizacion | 2026-09-27 |
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. El repositorio ocupa 0,0 GB segun HuggingFace, lo que indica que no contiene pesos de gran tamano, coherente con una politica de RL de dimensiones reducidas.
+- VRAM estimada para inferencia: no disponible. El repositorio ocupa 0,0 GB segun Hugging Face, lo que indica que no contiene pesos de gran tamano, coherente con una politica de RL de dimensiones reducidas.
 - GPU recomendadas: no disponibles. No se especifica ningun requisito de GPU ni en entrenamiento ni en inferencia.
 - Ejecucion en GPU de consumo: no disponible como dato declarado; por la naturaleza del artefacto (politica pequena frente a un modelo generativo) es esperable que la inferencia no requiera GPU, pero esto no se confirma en la informacion proporcionada.
 - Coste real de computo: en este tipo de proyectos el cuello de botella suele ser la simulacion del entorno en Unity y la generacion de experiencia durante el entrenamiento, no la red neuronal. No se aportan tiempos.
@@ -90,6 +90,6 @@ No disponible. La informacion proporcionada no incluye metricas ni descripcion t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/harkrishkali/ppo-Pyramid
+- Hugging Face: https://huggingface.co/harkrishkali/ppo-Pyramid
 
 No se han encontrado en la informacion proporcionada otros enlaces (paper, blog, repositorio de codigo, demo o documentacion adicional) asociados al modelo.

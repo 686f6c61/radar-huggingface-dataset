@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Allinsama/Plachta__VALL-E-X` es un repositorio alojado en HuggingFace por el usuario Allinsama que, a fecha de la informacion disponible, no incluye model card tecnica: el README se limita a declarar la licencia MIT, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El nombre del repositorio referencia la familia VALL-E-X, asociada publicamente a la sintesis de voz (text-to-speech) de cero disparos, pero la informacion proporcionada no confirma que este repositorio implemente dicha arquitectura ni en que grado.
+`Allinsama/Plachta__VALL-E-X` es un repositorio alojado en Hugging Face por el usuario Allinsama que, a fecha de la informacion disponible, no incluye model card tecnica: el README se limita a declarar la licencia MIT, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El nombre del repositorio referencia la familia VALL-E-X, asociada publicamente a la sintesis de voz (text-to-speech) de cero disparos, pero la informacion proporcionada no confirma que este repositorio implemente dicha arquitectura ni en que grado.
 
 Los unicos metadatos verificables son el tamaño del repositorio (1,5 GB), la licencia MIT, la region `us` y la ausencia total de adopcion: 0 descargas y 0 likes desde su creacion el 17 de octubre de 2026 y su ultima actualizacion el 19 de octubre de 2026. No hay etiqueta de pipeline, no se declaran idiomas soportados y no existe documentacion sobre el formato de los pesos.
 
@@ -82,7 +82,7 @@ No disponible. La informacion proporcionada no incluye especificaciones del mode
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Allinsama/Plachta__VALL-E-X | no disponible | no disponible | MIT (repo) | publico en HuggingFace, 0 descargas |
+| Allinsama/Plachta__VALL-E-X | no disponible | no disponible | MIT (repo) | publico en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,6 +100,6 @@ No disponible. La informacion proporcionada no incluye especificaciones del mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Allinsama/Plachta__VALL-E-X
+- Repositorio en Hugging Face: https://huggingface.co/Allinsama/Plachta__VALL-E-X
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre el modelo. Las entradas devueltas por la busqueda tratan sobre la biografia de Carly Simon y su entorno familiar, sin relacion con este repositorio, por lo que se descartan como fuentes.
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

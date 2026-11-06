@@ -84,8 +84,8 @@ La comparativa con alternativas como DeepSeek-V3 o Qwen-MoE no está disponible 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/openai/gpt-oss-20b
-- Modelo en HuggingFace (repo de obversarystudios): https://huggingface.co/obversarystudios/gpt-oss-20b
+- Modelo en Hugging Face: https://huggingface.co/openai/gpt-oss-20b
+- Modelo en Hugging Face (repo de obversarystudios): https://huggingface.co/obversarystudios/gpt-oss-20b
 - Paper técnico (arXiv): https://arxiv.org/abs/2508.10925
 - Blog de OpenAI: https://openai.com/index/introducing-gpt-oss/
 - Model card oficial: https://openai.com/index/gpt-oss-model-card/

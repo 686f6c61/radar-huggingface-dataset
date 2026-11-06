@@ -23,7 +23,7 @@ El dato de parámetros que aparece en los metadatos (24.832, etiquetados como `t
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre arquitectura real. El unico indicio es la etiqueta `transformer` en los metadatos de HuggingFace, sin configuracion, sin numero de capas, sin dimension de embeddings ni tipo de atencion. No se documenta ningun proceso de entrenamiento: no hay numero de tokens, composicion de dataset, fases de RLHF, DPO, SFT ni ajuste instruccional. Tampoco se describe un tokenizador.
+No hay informacion sobre arquitectura real. El unico indicio es la etiqueta `transformer` en los metadatos de Hugging Face, sin configuracion, sin numero de capas, sin dimension de embeddings ni tipo de atencion. No se documenta ningun proceso de entrenamiento: no hay numero de tokens, composicion de dataset, fases de RLHF, DPO, SFT ni ajuste instruccional. Tampoco se describe un tokenizador.
 
 El repositorio contiene un artefacto textual, `notes.md`, mas un `README.md`. La model card indica explicitamente que el alcance es exploratorio y que no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado; las referencias y datasets propuestos deben entenderse como punto de partida para verificacion, no como evidencia de un estudio ya ejecutado. En consecuencia, no existe innovacion tecnica implementada que se pueda evaluar.
 
@@ -76,5 +76,5 @@ No disponible. Este repositorio no es un modelo y no admite comparacion directa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deepika-shah/ocr-freeform-study-2024
+- Hugging Face: https://huggingface.co/deepika-shah/ocr-freeform-study-2024
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

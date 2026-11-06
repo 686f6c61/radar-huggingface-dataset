@@ -74,7 +74,7 @@ No se dispone de información suficiente en los datos proporcionados para establ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abenzerps/K2-Horizon-3.7B-MLX-8bit
+- Repositorio Hugging Face: https://huggingface.co/abenzerps/K2-Horizon-3.7B-MLX-8bit
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-3.7B
 - Revisión fuente del checkpoint: https://huggingface.co/IFM/K2-Horizon-3.7B/tree/633f52ad28b17edeabd82afc61d2d13b4c59a561
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

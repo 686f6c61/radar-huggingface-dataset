@@ -78,7 +78,7 @@ La cuantización Q3_K_M reduce la calidad respecto al modelo base, especialmente
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/Chungulus/Qwen3.8-27B-Q3_K_M-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/Chungulus/Qwen3.8-27B-Q3_K_M-GGUF
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio combinado con la misma validación: https://huggingface.co/Chungulus/Qwen3.8-27B-GGUF/tree/f519a212d6c15cd3292b6ca835dd8ebf235642c0
 - Documentación de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

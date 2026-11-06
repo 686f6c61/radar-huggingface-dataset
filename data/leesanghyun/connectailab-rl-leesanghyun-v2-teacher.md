@@ -102,7 +102,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeeSanghyun/connectailab-rl-LeeSanghyun-v2-teacher
+- Modelo en Hugging Face: https://huggingface.co/LeeSanghyun/connectailab-rl-LeeSanghyun-v2-teacher
 - Repositorio del proyecto CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Aviso legal y origen de datos (NOTICE): https://github.com/wonseokjung/connect-tycoon/blob/main/NOTICE
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
@@ -110,5 +110,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 - AI CITY BUILDERS: https://www.aicitybuilders.com
 - Curso de RL de AI CITY BUILDERS: https://www.aicitybuilders.com/robot
 - Connect AI: https://www.ezerai.xyz
-- Perfil del autor en HuggingFace: https://huggingface.co/LeeSanghyun
+- Perfil del autor en Hugging Face: https://huggingface.co/LeeSanghyun
 - Formato JEV referenciado: `typesafe/jev-1.13` (no se ha localizado un enlace directo en la información proporcionada)

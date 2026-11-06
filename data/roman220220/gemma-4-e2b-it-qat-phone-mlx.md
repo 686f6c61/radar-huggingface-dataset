@@ -82,11 +82,11 @@ Pruebas de humo declaradas antes de la subida: respuesta en chat, vision a trave
 
 | Modelo | Tamano | PPL (wikitext-2) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| roman220220/gemma-4-E2B-it-qat-mlx | 4,04 GB | 36,38 | apache-2.0 | HuggingFace (MLX) |
-| roman220220/gemma-4-E2B-it-qat-phone-mlx | 3,10 GB | 36,44 | apache-2.0 | HuggingFace (MLX) |
-| roman220220/gemma-4-E2B-it-qat-phone-GGUF | no disponible | no disponible | no disponible | HuggingFace (GGUF) |
-| google/gemma-4-E2B-it-qat-mobile-transformers (convertido a MLX) | 2,57 GB | 65 (frente a 41 esperado; audio inoperativo) | no disponible | HuggingFace (transformers) |
-| google/gemma-4-E2B-it-qat-q4_0-unquantized (maestro bf16) | no disponible | 36,04 | apache-2.0 | HuggingFace |
+| roman220220/gemma-4-E2B-it-qat-mlx | 4,04 GB | 36,38 | apache-2.0 | Hugging Face (MLX) |
+| roman220220/gemma-4-E2B-it-qat-phone-mlx | 3,10 GB | 36,44 | apache-2.0 | Hugging Face (MLX) |
+| roman220220/gemma-4-E2B-it-qat-phone-GGUF | no disponible | no disponible | no disponible | Hugging Face (GGUF) |
+| google/gemma-4-E2B-it-qat-mobile-transformers (convertido a MLX) | 2,57 GB | 65 (frente a 41 esperado; audio inoperativo) | no disponible | Hugging Face (transformers) |
+| google/gemma-4-E2B-it-qat-q4_0-unquantized (maestro bf16) | no disponible | 36,04 | apache-2.0 | Hugging Face |
 
 Comparado con la build MLX de 4,04 GB, esta variante reduce el repositorio en casi un gigabyte y la memoria maxima en 0,54 GB a cambio de un incremento de KL de 0,0016 y de 0,06 puntos de perplejidad, manteniendo la velocidad practicamente identica. Frente a la propuesta movil de Google es menos agresiva en bits pero conserva la torre de audio y una perplejidad muy inferior en el runtime MLX.
 
@@ -96,7 +96,7 @@ Comparado con la build MLX de 4,04 GB, esta variante reduce el repositorio en ca
 - Los unicos datos de calidad son los publicados por el autor (perplejidad, KL y coincidencia top-1 en wikitext-2); no hay evaluacion independiente ni benchmarks de tareas.
 - Hay un incremento medido de la divergencia KL (0,0242) y una perdida de coincidencia top-1 (92,48 %) respecto a los pesos maestros bf16, por lo que puede diferir en tareas sensibles.
 - La cuantizacion de la torre de vision y audio a 4 bits puede degradar casos limite no cubiertos por la prueba de humo.
-- La licencia declarada en HuggingFace es apache-2.0, pero el modelo base pertenece a la familia Gemma de Google; conviene verificar los terminos aplicables al uso comercial del modelo base.
+- La licencia declarada en Hugging Face es apache-2.0, pero el modelo base pertenece a la familia Gemma de Google; conviene verificar los terminos aplicables al uso comercial del modelo base.
 - No se documentan idiomas soportados ni longitud de contexto, por lo que no se puede garantizar comportamiento multilingue ni ventanas largas.
 - Al ser un formato MLX, el despliegue directo esta restringido a Apple Silicon; fuera de ese ecosistema hay que usar la build GGUF.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta, lo que implica una validacion comunitaria practicamente nula.
@@ -104,7 +104,7 @@ Comparado con la build MLX de 4,04 GB, esta variante reduce el repositorio en ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roman220220/gemma-4-E2B-it-qat-phone-mlx
+- Modelo en Hugging Face: https://huggingface.co/roman220220/gemma-4-E2B-it-qat-phone-mlx
 - Modelo base (maestro QAT bf16): https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized
 - Build MLX de 4,04 GB del mismo autor: https://huggingface.co/roman220220/gemma-4-E2B-it-qat-mlx
 - Build GGUF equivalente: https://huggingface.co/roman220220/gemma-4-E2B-it-qat-phone-GGUF

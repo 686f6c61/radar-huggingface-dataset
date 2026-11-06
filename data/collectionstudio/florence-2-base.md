@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Florence-2-base es un modelo fundacional de visión por computador desarrollado por Microsoft Research, publicado originalmente en noviembre de 2023 y distribuido en HuggingFace a través del repositorio `CollectionStudio/Florence-2-base`, una réplica del repositorio oficial `microsoft/Florence-2-base`. El modelo aborda una amplia variedad de tareas visión-lenguaje mediante un enfoque basado en prompts textuales: el usuario introduce una instrucción como `<OD>` (detección de objetos) o `<CAPTION>` (descripción de imagen) y el modelo genera la salida correspondiente en formato texto estructurado.
+Florence-2-base es un modelo fundacional de visión por computador desarrollado por Microsoft Research, publicado originalmente en noviembre de 2023 y distribuido en Hugging Face a través del repositorio `CollectionStudio/Florence-2-base`, una réplica del repositorio oficial `microsoft/Florence-2-base`. El modelo aborda una amplia variedad de tareas visión-lenguaje mediante un enfoque basado en prompts textuales: el usuario introduce una instrucción como `<OD>` (detección de objetos) o `<CAPTION>` (descripción de imagen) y el modelo genera la salida correspondiente en formato texto estructurado.
 
 La arquitectura es un transformer secuencia-a-secuencia con un encoder visual (DaViT) y un decoder autorregresivo, con 231.567.705 parámetros totales (aproximadamente 0,23B). Se entrenó sobre el dataset FLD-5B, que contiene 5.400 millones de anotaciones sobre 126 millones de imágenes, lo que le permite aprender múltiples tareas de forma conjunta en un único modelo. Es relevante porque demuestra que un modelo de tamaño reducido puede competir con modelos especializados en tareas como detección, segmentación y captioning, y porque su licencia MIT facilita su uso comercial e integración en producción.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Florence-2-base (esta ficha) | 0,23B | No disponible | Captioning, detección, grounding, region proposal | MIT | HuggingFace |
-| Florence-2-large | 0,77B | No disponible | Mismas tareas que base | MIT | HuggingFace (`microsoft/Florence-2-large`) |
-| Florence-2-base-ft | 0,23B | No disponible | Mismas tareas, ajustado en downstream | MIT | HuggingFace (`microsoft/Florence-2-base-ft`) |
-| Florence-2-large-ft | 0,77B | No disponible | Mismas tareas, ajustado en downstream | MIT | HuggingFace (`microsoft/Florence-2-large-ft`) |
+| Florence-2-base (esta ficha) | 0,23B | No disponible | Captioning, detección, grounding, region proposal | MIT | Hugging Face |
+| Florence-2-large | 0,77B | No disponible | Mismas tareas que base | MIT | Hugging Face (`microsoft/Florence-2-large`) |
+| Florence-2-base-ft | 0,23B | No disponible | Mismas tareas, ajustado en downstream | MIT | Hugging Face (`microsoft/Florence-2-base-ft`) |
+| Florence-2-large-ft | 0,77B | No disponible | Mismas tareas, ajustado en downstream | MIT | Hugging Face (`microsoft/Florence-2-large-ft`) |
 
 La comparativa se limita a las variantes del propio modelo porque la información disponible no incluye datos de benchmarks ni de modelos alternativos de otros autores. No se dispone de cifras de rendimiento comparativo.
 
@@ -86,7 +86,7 @@ La comparativa se limita a las variantes del propio modelo porque la informació
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CollectionStudio/Florence-2-base
+- Repositorio en Hugging Face: https://huggingface.co/CollectionStudio/Florence-2-base
 - Repositorio oficial (Microsoft): https://huggingface.co/microsoft/Florence-2-base
 - Informe técnico (arXiv): https://arxiv.org/abs/2311.06242
 - Notebook de inferencia y visualización (Florence-2-large): https://huggingface.co/microsoft/Florence-2-large/blob/main/sample_inference.ipynb

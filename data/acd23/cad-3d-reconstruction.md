@@ -53,7 +53,7 @@ No disponible. No se conocen modelos comparables de la misma categoría, ya que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/acd23/cad-3d-reconstruction
+- Hugging Face: https://huggingface.co/acd23/cad-3d-reconstruction
 - Articulo relacionado (ScienceDirect): https://www.sciencedirect.com/science/article/abs/pii/S2213846326002531
 - Repositorio de ML Intern: https://github.com/huggingface/ml-intern
 - Demo de ML Intern: https://smolagents-ml-intern.hf.space

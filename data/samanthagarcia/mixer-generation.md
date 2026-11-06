@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Samanthagarcia/mixer-generation es un prototipo de investigación publicado en HuggingFace por el usuario Samanthagarcia. Se presenta como una implementación de una arquitectura de tipo Mixer orientada a tareas de generación, en una configuración declarada como "tiny" y con un total de 33.088 parámetros según los metadatos del archivo safetensors. El repositorio incluye el código de implementación (`finetune.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`).
+Samanthagarcia/mixer-generation es un prototipo de investigación publicado en Hugging Face por el usuario Samanthagarcia. Se presenta como una implementación de una arquitectura de tipo Mixer orientada a tareas de generación, en una configuración declarada como "tiny" y con un total de 33.088 parámetros según los metadatos del archivo safetensors. El repositorio incluye el código de implementación (`finetune.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`).
 
 El propio autor indica explícitamente que el checkpoint no ha sido entrenado ni auditado: se trata de una inicialización válida para pruebas de humo (smoke tests) y no de un modelo con pesos entrenados listos para inferencia de calidad. No se declara ninguna métrica de benchmark, no hay pipeline definido, no se especifican idiomas soportados y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
 
@@ -75,9 +75,9 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - Licencia BSD-3-Clause: permite uso comercial, modificación y redistribución con atribución y conservación del aviso de copyright. El autor advierte de que los términos de los datos de origen deben revisarse por separado si se emplean datasets externos.
 - Al ser una implementación personalizada, no funciona con cargadores automáticos genéricos sin un adaptador explícito.
 - Los resultados de un futuro checkpoint entrenado deberán documentarse por separado de los valores por defecto aquí incluidos.
-- El repositorio no declara pipeline de HuggingFace ni idiomas, y registra 0 descargas y 0 likes, lo que indica ausencia de validación por parte de la comunidad.
+- El repositorio no declara pipeline de Hugging Face ni idiomas, y registra 0 descargas y 0 likes, lo que indica ausencia de validación por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Samanthagarcia/mixer-generation
+- Repositorio en Hugging Face: https://huggingface.co/Samanthagarcia/mixer-generation
 - Búsqueda web realizada: los resultados devueltos correspondían a páginas de Instagram (instagram.com, about.instagram.com, es.wikipedia.org/wiki/Instagram, meta.com/de-de/instagram) y no guardan relación con el modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales relevantes.

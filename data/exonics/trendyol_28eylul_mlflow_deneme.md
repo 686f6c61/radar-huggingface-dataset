@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`exonics/trendyol_28eylul_mlflow_deneme` es un ajuste fino (finetune) del modelo `Trendyol/Llama-3-Trendyol-LLM-8b-chat-v2.0`, que a su vez deriva de la arquitectura Llama 3 de 8.000 millones de parametros. El autor es el usuario de HuggingFace `exonics` y el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, segun declara la propia model card. El nombre del repositorio ("mlflow_deneme", donde "deneme" significa "prueba" en turco) sugiere que se trata de un experimento de fine-tuning y no de un modelo destinado a produccion.
+`exonics/trendyol_28eylul_mlflow_deneme` es un ajuste fino (finetune) del modelo `Trendyol/Llama-3-Trendyol-LLM-8b-chat-v2.0`, que a su vez deriva de la arquitectura Llama 3 de 8.000 millones de parametros. El autor es el usuario de Hugging Face `exonics` y el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, segun declara la propia model card. El nombre del repositorio ("mlflow_deneme", donde "deneme" significa "prueba" en turco) sugiere que se trata de un experimento de fine-tuning y no de un modelo destinado a produccion.
 
 El modelo tiene 8.030.261.248 parametros reales (confirmado por los pesos en safetensors), lo que coincide exactamente con el recuento del Llama 3 8B original, y se distribuye bajo licencia Apache 2.0 con soporte declarado unicamente para ingles. El repositorio ocupa 16,1 GB y solo publica pesos en formato safetensors, sin versiones cuantizadas. No incluye documentacion sobre datos de entrenamiento, hiperparametros, tokenizador modificado ni evaluaciones.
 
@@ -24,7 +24,7 @@ Su relevancia practica es limitada: acumula 0 descargas y 0 "likes", no aporta b
 | Tamano del repositorio | 16,1 GB |
 | Libreria | transformers |
 | Pipeline | text-generation |
-| Fecha de publicacion | 28 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 28 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -41,14 +41,14 @@ Respecto al entrenamiento, la unica informacion disponible es que se realizo con
 - Soporte de agentes y razonamiento multi-paso: no confirmado.
 - Capacidades multilingues: la model card declara unicamente ingles, aunque el modelo base de Trendyol esta orientado al turco; no hay datos que confirmen el comportamiento real en turco tras el ajuste.
 - Capacidades especiales (modo "thinking", vision, audio): no disponibles.
-- Etiquetas declaradas: `conversational`, `text-generation-inference`, `endpoints_compatible` (compatibilidad con HuggingFace Inference Endpoints).
+- Etiquetas declaradas: `conversational`, `text-generation-inference`, `endpoints_compatible` (compatibilidad con Hugging Face Inference Endpoints).
 
 ## Casos de uso
 
 - Experimentacion academica con tecnicas de fine-tuning: el modelo sirve como ejemplo reproducible de un ajuste LoRA/QLoRA realizado con Unsloth y TRL sobre un Llama 3 8B, util para comparar pipelines de entrenamiento.
 - Prototipado rapido de chatbots en ingles: al ser un modelo conversacional de 8B, permite montar una demo local con transformers o vLLM para validar una idea antes de invertir en un modelo mayor.
 - Base para un segundo fine-tuning: dado su licencia Apache 2.0 declarada y su tamano manejable, puede usarse como punto de partida para un ajuste especifico de dominio en ingles con recursos limitados.
-- Pruebas de despliegue e integracion MLOps: el nombre del repositorio sugiere un experimento con MLflow, por lo que puede emplearse para validar el ciclo completo de registro, versionado y servicio de un modelo en HuggingFace.
+- Pruebas de despliegue e integracion MLOps: el nombre del repositorio sugiere un experimento con MLflow, por lo que puede emplearse para validar el ciclo completo de registro, versionado y servicio de un modelo en Hugging Face.
 - Generacion de texto asistida en entornos de investigacion: redaccion de borradores y resumen de documentos en ingles, siempre con revision humana dada la ausencia de evaluaciones.
 - Docencia y demostraciones de inferencia cuantizada: al ser un 8B, permite ilustrar el impacto de distintas cuantizaciones en calidad y consumo de VRAM en una GPU de consumo.
 - No se recomienda su uso en atencion al cliente, produccion critica ni aplicaciones comerciales sin una evaluacion previa exhaustiva, dado que no existe ninguna metrica publicada.
@@ -73,10 +73,10 @@ No hay datos de rendimiento de este modelo, por lo que la comparacion se limita 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| exonics/trendyol_28eylul_mlflow_deneme | 8,03 B | no disponible | Apache 2.0 (declarada) | HuggingFace, 0 descargas |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8.192 tokens | Meta Llama 3 Community License | HuggingFace, ampliamente adoptado |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,24 B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| Qwen/Qwen2-7B-Instruct | 7,62 B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente adoptado |
+| exonics/trendyol_28eylul_mlflow_deneme | 8,03 B | no disponible | Apache 2.0 (declarada) | Hugging Face, 0 descargas |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8.192 tokens | Meta Llama 3 Community License | Hugging Face, ampliamente adoptado |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,24 B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| Qwen/Qwen2-7B-Instruct | 7,62 B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente adoptado |
 
 Frente a estas alternativas, el modelo analizado no aporta ninguna ventaja documentada: carece de benchmarks, de comunidad y de mantenimiento, mientras que las tres alternativas cuentan con evaluaciones publicas y soporte activo. La unica diferencia reseñable es que este finetune deriva de un modelo base de Trendyol orientado al turco, aunque la model card solo declare ingles.
 
@@ -94,10 +94,10 @@ Frente a estas alternativas, el modelo analizado no aporta ninguna ventaja docum
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/exonics/trendyol_28eylul_mlflow_deneme
+- Repositorio en Hugging Face: https://huggingface.co/exonics/trendyol_28eylul_mlflow_deneme
 - Modelo base: https://huggingface.co/Trendyol/Llama-3-Trendyol-LLM-8b-chat-v2.0
 - Unsloth (framework de entrenamiento citado): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (libreria de entrenamiento citada): https://github.com/huggingface/trl
+- TRL de Hugging Face (libreria de entrenamiento citada): https://github.com/huggingface/trl
 - Paper o blog tecnico del autor: no disponible
 - Demos o endpoints publicos: no disponible
 - Datos de benchmarks: no disponible

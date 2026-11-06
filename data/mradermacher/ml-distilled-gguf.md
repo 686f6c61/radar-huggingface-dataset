@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ML-Distilled-GGUF es la colección de cuantizaciones en formato GGUF del modelo Nabbers1999/ML-Distilled, publicada por mradermacher, un conocido generador de cuantizaciones de la comunidad de HuggingFace. El modelo base es un ajuste fino supervisado (SFT) mediante la librería TRL, con un total de 13.477.237.760 parámetros (aproximadamente 13.500 millones), lo que lo sitúa en la categoría de modelos de tamaño medio-grande. El repositorio contiene únicamente los pesos cuantizados, no el modelo original ni información sobre su arquitectura interna.
+ML-Distilled-GGUF es la colección de cuantizaciones en formato GGUF del modelo Nabbers1999/ML-Distilled, publicada por mradermacher, un conocido generador de cuantizaciones de la comunidad de Hugging Face. El modelo base es un ajuste fino supervisado (SFT) mediante la librería TRL, con un total de 13.477.237.760 parámetros (aproximadamente 13.500 millones), lo que lo sitúa en la categoría de modelos de tamaño medio-grande. El repositorio contiene únicamente los pesos cuantizados, no el modelo original ni información sobre su arquitectura interna.
 
 La relevancia de esta ficha radica en que permite ejecutar localmente un modelo de ~13.5B parámetros en hardware de consumo mediante cuantizaciones que van desde 5,3 GB (Q2_K) hasta 14,4 GB (Q8_0). Sin embargo, la información disponible es muy limitada: no se especifica la arquitectura base, la longitud de contexto, los datos de entrenamiento ni los resultados de benchmarks. El modelo está etiquetado únicamente para inglés y no se indica licencia, lo que supone una advertencia importante para uso comercial.
 
@@ -40,7 +40,7 @@ La única innovación técnica documentada en esta ficha es el propio proceso de
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: limitadas al inglés según el campo `language: en`.
 - Capacidades especiales (thinking mode, visión, audio): no disponibles.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse mediante la infraestructura de endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse mediante la infraestructura de endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible.
   - Consumer: RTX 3060 12 GB (Q4_K_S/Q4_K_M), RTX 4070 Ti / 4080 16 GB (Q5_K_M/Q6_K), RTX 4090 24 GB (Q8_0 con contexto amplio).
   - Profesional: A100 40/80 GB, H100, L40S para despliegues con concurrencia.
 - ¿Cabe en GPU de consumo? Sí, todas las cuantizaciones hasta Q8_0 caben en GPUs de 16 GB o más; las variantes Q2_K a Q4_K_M caben en 8-12 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF como llama-cpp-python. El tag `endpoints_compatible` sugiere también despliegue vía HuggingFace Endpoints. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requerirían los pesos safetensors del modelo base.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF como llama-cpp-python. El tag `endpoints_compatible` sugiere también despliegue vía Hugging Face Endpoints. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requerirían los pesos safetensors del modelo base.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ No se dispone de información suficiente sobre el modelo base (arquitectura, con
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/mradermacher/ML-Distilled-GGUF
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/mradermacher/ML-Distilled-GGUF
 - Modelo base: https://huggingface.co/Nabbers1999/ML-Distilled
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/ML-Distilled-i1-GGUF
 - Página de descargas del cuantizador: https://hf.tst.eu/model#ML-Distilled-GGUF

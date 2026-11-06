@@ -40,7 +40,7 @@ Una innovación destacable es el despliegue: el runner es un archivo JavaScript 
 - Formularios y aplicaciones web con entrada en hindi: integración en pocos minutos con un `<input>` y un listener de eventos, sin backend, ideal para sitios con restricciones de ancho de banda o privacidad estricta (nada sale del dispositivo).
 - Aplicaciones de mensajería o chat con texto hinglish: rinde especialmente bien en vocabulario cotidiano de chat (41 de 44 aciertos en el conjunto de chat hinglish propio), incluyendo palabras inglesas usadas en hindi, marcas y nombres.
 - Procesamiento por lotes en Node.js: normalización de corpus de texto romanizado a devanagari en pipelines ETL ligeros, sin dependencias Python ni GPUs, gracias a la API `tr.text()`.
-- Clientes ligeros y dispositivos de bajos recursos: con 23 MB de memoria en uso y 18 ms por palabra, es viable en portátiles modestos; el repositorio pesa 0,0 GB según HuggingFace.
+- Clientes ligeros y dispositivos de bajos recursos: con 23 MB de memoria en uso y 18 ms por palabra, es viable en portátiles modestos; el repositorio pesa 0,0 GB según Hugging Face.
 - Herramientas de accesibilidad y educación: aplicaciones de aprendizaje del hindi que necesitan mostrar la grafía devanagari correcta de palabras escritas fonéticamente, con despliegue en cualquier hosting estático.
 - Extensión de navegador o webview móvil: la ausencia de servidor y el tamaño mínimo facilitan su empaquetado como extensión offline para transliterar en cualquier campo de texto.
 
@@ -76,7 +76,7 @@ Datos clave: +7,0 puntos frente al modelo de IndicXlit aislado (intervalo paread
 
 | Modelo | Parámetros | Tamaño / memoria | Aksharantar Hindi | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **Lekhani** | 0,81M (4 bits) | 0,87 MB descarga / 23 MB RAM | 65,9 % | Apache 2.0 | HuggingFace + demo en navegador |
+| **Lekhani** | 0,81M (4 bits) | 0,87 MB descarga / 23 MB RAM | 65,9 % | Apache 2.0 | Hugging Face + demo en navegador |
 | IndicXlit (AI4Bharat), solo modelo | 11,5M | 46 MB fp32 | 58,9 % | no disponible | paquete Python de AI4Bharat |
 | IndicXlit (AI4Bharat), paquete completo | 11,5M + lista 4,2M palabras | 358 MB en memoria | 68,7 % | no disponible | paquete Python de AI4Bharat |
 | IB-Emper hindi-translit-v3 | 15M | no disponible | 48,6 % | no disponible | no disponible |
@@ -93,11 +93,11 @@ Lekhani destaca por una relación precisión-tamaño extrema: es el sistema más
 - Las mediciones de velocidad se hicieron en un único Mac mini; no hay datos para móviles ni portátiles antiguos.
 - La licencia Apache 2.0 permite uso comercial sin restricciones relevantes más allá de la atribución.
 - Los benchmarks fueron medidos por los propios autores (28 de octubre de 2026), incluido un conjunto de chat hinglish de solo 122 palabras creado por ellos, que es demasiado pequeño para diferencias de pocas palabras; conviene validar en el dominio propio antes de producción.
-- El modelo tiene 0 descargas registradas en HuggingFace en el momento de la ficha, por lo que no existe aún una comunidad de usuarios que haya validado estos resultados de forma independiente.
+- El modelo tiene 0 descargas registradas en Hugging Face en el momento de la ficha, por lo que no existe aún una comunidad de usuarios que haya validado estos resultados de forma independiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/udgamlabs/Lekhani
+- Modelo en Hugging Face: https://huggingface.co/udgamlabs/Lekhani
 - Demo interactiva en el navegador: https://udgamlabs.com/models/lekhani#try
 - Página del modelo en Udgam Labs: https://udgamlabs.com/models/lekhani
 - Datasets de entrenamiento: https://huggingface.co/datasets/ai4bharat/Aksharantar y https://huggingface.co/datasets/ai4bharat/IndicCorpV2

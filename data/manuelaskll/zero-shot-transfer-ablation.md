@@ -65,7 +65,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros. Los 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Manuelaskll/zero-shot-transfer-ablation
+- Repositorio en Hugging Face: https://huggingface.co/Manuelaskll/zero-shot-transfer-ablation
 - Definición de zero-shot learning (Wikipedia): https://en.wikipedia.org/wiki/Zero-shot_learning
 - Artículo sobre MolmoBot (entrenamiento en simulación con transferencia cero): https://allenai.org/blog/molmobot-robot-manipulation
 - Repositorio MI-Zero (transferencia cero en histopatología): https://github.com/mahmoodlab/MI-Zero

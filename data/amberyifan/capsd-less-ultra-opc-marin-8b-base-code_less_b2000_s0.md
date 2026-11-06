@@ -4,7 +4,7 @@
 
 El modelo `capsd-less-ultra-opc-marin-8b-base-code_less_b2000_s0` es un ajuste fino (fine-tune) de tipo completo (`full`) sobre el modelo base `marin-community/marin-8b-base`, desarrollado por el usuario AmberYifan. Se ha entrenado con el framework Llama-Factory sobre un dataset denominado `capsd_marin-8b-base-n80000-opc__mix_code_less_b2000_s0`, orientado aparentemente a tareas de generación de código (el sufijo `code_less` sugiere una variante con menos ejemplos de código). El modelo tiene 8.030 millones de parámetros y se distribuye en formato `safetensors`.
 
-La relevancia de este modelo reside en que forma parte de una serie de experimentos de ajuste fino sobre la familia `marin-8b-base`, un modelo base de 8B que parece seguir la arquitectura Llama (según las etiquetas de HuggingFace). Sin embargo, la documentación es mínima: la model card se ha generado automáticamente y no incluye descripción, usos previstos, datos de entrenamiento ni resultados de evaluación. Esto limita su aplicabilidad directa en producción sin una validación adicional por parte del usuario.
+La relevancia de este modelo reside en que forma parte de una serie de experimentos de ajuste fino sobre la familia `marin-8b-base`, un modelo base de 8B que parece seguir la arquitectura Llama (según las etiquetas de Hugging Face). Sin embargo, la documentación es mínima: la model card se ha generado automáticamente y no incluye descripción, usos previstos, datos de entrenamiento ni resultados de evaluación. Esto limita su aplicabilidad directa en producción sin una validación adicional por parte del usuario.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La relevancia de este modelo reside en que forma parte de una serie de experimen
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino completo (full fine-tuning) del modelo base `marin-community/marin-8b-base`. No se proporcionan detalles sobre la arquitectura interna del modelo base, aunque las etiquetas de HuggingFace (`llama`, `transformers`) indican que probablemente se trate de un transformer de tipo Llama con 8B parámetros. El entrenamiento se realizó con Llama-Factory, utilizando un dataset propio llamado `capsd_marin-8b-base-n80000-opc__mix_code_less_b2000_s0`, que parece contener una mezcla de datos con una fracción reducida de ejemplos de código (`code_less`).
+El modelo es un ajuste fino completo (full fine-tuning) del modelo base `marin-community/marin-8b-base`. No se proporcionan detalles sobre la arquitectura interna del modelo base, aunque las etiquetas de Hugging Face (`llama`, `transformers`) indican que probablemente se trate de un transformer de tipo Llama con 8B parámetros. El entrenamiento se realizó con Llama-Factory, utilizando un dataset propio llamado `capsd_marin-8b-base-n80000-opc__mix_code_less_b2000_s0`, que parece contener una mezcla de datos con una fracción reducida de ejemplos de código (`code_less`).
 
 Los hiperparámetros de entrenamiento documentados son: learning rate de 1e-5, tamaño de batch total de 64 (con batch por dispositivo de 2 y acumulación de gradientes de 8), optimizador AdamW, scheduler de learning rate coseno con warmup del 3% y una sola época. No se especifica el número de tokens de entrenamiento ni la composición exacta del dataset. Tampoco se indica el uso de técnicas como RLHF o DPO.
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-less-ultra-opc-marin-8b-base-code_less_b2000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-less-ultra-opc-marin-8b-base-code_less_b2000_s0
 - Modelo base: https://huggingface.co/marin-community/marin-8b-base
 - Otros modelos del mismo autor (referencias de búsqueda web):
   - https://huggingface.co/AmberYifan/capsd-marin-8b-base-code_less_b2000_s0

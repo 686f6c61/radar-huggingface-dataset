@@ -101,7 +101,7 @@ No se dispone en la información proporcionada de datos de benchmarks de precisi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/AG-Pose
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/AG-Pose
 - Página en Qualcomm AI Hub: https://aihub.qualcomm.com/models/agpose
 - Repositorio de exportación en GitHub (ai-hub-models): https://github.com/qualcomm/ai-hub-models/blob/v0.66.0/src/qai_hub_models/models/agpose
 - Implementación original de AG-Pose: https://github.com/Leeiieeo/AG-Pose

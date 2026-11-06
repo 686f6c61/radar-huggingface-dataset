@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v3 de Gymnasium. Ha sido desarrollado por MikeDegany y publicado en HuggingFace bajo el identificador MikeDegany/ppo-LunarLander-v2. El agente aprende una política de control que le permite aterrizar un módulo lunar en una plataforma, maximizando la recompensa media del entorno.
+Este modelo es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v3 de Gymnasium. Ha sido desarrollado por MikeDegany y publicado en Hugging Face bajo el identificador MikeDegany/ppo-LunarLander-v2. El agente aprende una política de control que le permite aterrizar un módulo lunar en una plataforma, maximizando la recompensa media del entorno.
 
 El modelo utiliza la librería stable-baselines3 y se presenta como un modelo de tipo reinforcement-learning. Según los datos publicados, alcanza una recompensa media de 258.36 ± 21.32 en LunarLander-v3, aunque el resultado no está verificado. La arquitectura concreta de la red neuronal no se especifica en la información disponible, y el repositorio no incluye detalles sobre el número de parámetros ni el proceso de entrenamiento.
 
@@ -31,7 +31,7 @@ No se proporciona información detallada sobre el número de pasos de entrenamie
 
 - Control de un módulo lunar en el entorno LunarLander-v3 mediante acciones discretas (ninguno, motor izquierdo, motor principal, motor derecho).
 - Aprendizaje de una política de aterrizaje que maximiza la recompensa media del entorno, con un valor declarado de 258.36 ± 21.32.
-- Compatibilidad con la librería stable-baselines3 y con la utilidad huggingface_sb3 para cargar el modelo desde HuggingFace.
+- Compatibilidad con la librería stable-baselines3 y con la utilidad huggingface_sb3 para cargar el modelo desde Hugging Face.
 - No dispone de capacidades de generación de texto, razonamiento, código, matemáticas, visión o audio, al ser un modelo de aprendizaje por refuerzo para un entorno de simulación.
 - No soporta tool calling, function calling ni tareas de agentes conversacionales.
 
@@ -83,6 +83,6 @@ Se ha identificado un modelo similar, the-AI-guy1/ppo-LunarLander-v2, también e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MikeDegany/ppo-LunarLander-v2
+- Hugging Face: https://huggingface.co/MikeDegany/ppo-LunarLander-v2
 - Stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Entorno LunarLander (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/

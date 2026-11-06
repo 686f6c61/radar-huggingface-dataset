@@ -18,7 +18,7 @@ Su relevancia es acotada pero instructiva: documenta con detalle inusual el proc
 | Longitud de contexto | No disponible; el ejemplo de despliegue de la model card usa `--ctx-size 4096`, pero es un parámetro de runtime, no la ventana del modelo |
 | Tipos de cuantización | GGUF: Q2_K, Q3_K_M, Q4_K_M, Q5_K_M, Q6_K, Q8_0, f16. Entrenamiento en QLoRA de 4 bits nf4 con doble cuantización |
 | Idiomas soportados | Inglés (`en`) |
-| Licencia | No disponible en los metadatos de HuggingFace; la model card indica que el derivado hereda los Gemma Terms of Use |
+| Licencia | No disponible en los metadatos de Hugging Face; la model card indica que el derivado hereda los Gemma Terms of Use |
 | Formato de pesos | safetensors (`merged-bf16/model.safetensors`, 10,21 GB; `adapter/adapter_model.safetensors`, 96,7 MB) y GGUF (llama.cpp) |
 | Modelo base | google/gemma-4-E2B-it; entrenamiento continuado desde XcaliburMoon/gemma-4-E2B-it-agent-posttrain-v1.3 / v1.1 |
 | Tamaño del repositorio | 41,6 GB |
@@ -92,10 +92,10 @@ No se dispone de comparativas independientes publicadas para este modelo. La com
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-E2B-it-agent-posttrain-v1.4 | 4,63 B | No disponible | 48,5 % en holdout propio (200 filas) | Gemma Terms of Use (según model card) | HuggingFace, 0 descargas, 0 likes |
-| google/gemma-4-E2B-it (base) | No disponible | No disponible | No disponible | Gemma Terms of Use | Público en HuggingFace |
+| gemma-4-E2B-it-agent-posttrain-v1.4 | 4,63 B | No disponible | 48,5 % en holdout propio (200 filas) | Gemma Terms of Use (según model card) | Hugging Face, 0 descargas, 0 likes |
+| google/gemma-4-E2B-it (base) | No disponible | No disponible | No disponible | Gemma Terms of Use | Público en Hugging Face |
 | XcaliburMoon/gemma-4-E2B-it-agent-posttrain-v1.3 | No disponible | No disponible | No disponible | Gemma Terms of Use | Público; sustituido por versiones posteriores |
-| XcaliburMoon/gemma-4-E2B-it-agent-posttrain-v1.2 | ≈5 B según el listado de HF | No disponible | No disponible | Gemma Terms of Use | Público en HuggingFace |
+| XcaliburMoon/gemma-4-E2B-it-agent-posttrain-v1.2 | ≈5 B según el listado de HF | No disponible | No disponible | Gemma Terms of Use | Público en Hugging Face |
 
 Como alternativa de la misma categoría (modelos pequeños instruct con soporte de function calling) no hay datos en la información proporcionada que permitan una comparación numérica honesta. Cualquier cifra añadida aquí sería inventada.
 
@@ -108,14 +108,14 @@ Como alternativa de la misma categoría (modelos pequeños instruct con soporte 
 - Observaciones de entrenamiento ficticias: el modelo nunca vio una salida real de shell, por lo que puede afirmar con seguridad cosas falsas sobre lo que devolvió un comando.
 - Riesgo de alucinación alto en el contenido de los argumentos, especialmente en campos de texto libre (`content`, `command`, `pattern`).
 - Las cuantizaciones GGUF son con pérdida respecto a `merged-bf16` y la métrica publicada no se midió sobre ellas.
-- Licencia: el derivado hereda los Gemma Terms of Use. Hay que revisarlos antes de redistribuir o desplegar comercialmente; los metadatos de HuggingFace no declaran licencia, lo que añade ambigüedad operativa.
+- Licencia: el derivado hereda los Gemma Terms of Use. Hay que revisarlos antes de redistribuir o desplegar comercialmente; los metadatos de Hugging Face no declaran licencia, lo que añade ambigüedad operativa.
 - Repositorio sin etiquetas de versión: `main` es la única dirección y una subida posterior reemplaza los ficheros en lugar de añadirse al lado, lo que rompe la reproducibilidad de una descarga concreta.
 - No es un modelo de chat: la model card advierte que no debe usarse donde una respuesta no parseada pudiera ejecutarse como acción.
 - Señales de validación externa nulas: 0 descargas y 0 likes en el momento de la consulta.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XcaliburMoon/gemma-4-E2B-it-agent-posttrain-v1.4
+- Modelo en Hugging Face: https://huggingface.co/XcaliburMoon/gemma-4-E2B-it-agent-posttrain-v1.4
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Listado de modelos cuantizados del base: https://huggingface.co/models?other=base_model%3Aquantized%3Agoogle%2Fgemma-4-E2B-it
 - Versión previa v1.2: https://huggingface.co/XcaliburMoon/gemma-4-E2B-it-agent-posttrain-v1.2

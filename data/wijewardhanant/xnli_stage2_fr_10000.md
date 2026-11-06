@@ -2,9 +2,9 @@
 
 ## Resumen
 
-WijewardhanaNT/xnli_stage2_fr_10000 es un adaptador LoRA publicado en HuggingFace por el usuario WijewardhanaNT, entrenado sobre el modelo base meta-llama/Llama-2-7b-hf mediante la libreria PEFT (version 0.21.0). No se trata de un modelo completo, sino de un conjunto de pesos de adaptacion de bajo rango (repo de 0,5 GB en formato safetensors) que debe cargarse junto con el modelo base para poder ejecutarse. La etiqueta de pipeline es text-generation y el repositorio incluye la etiqueta de tarea lora y referencias al articulo arXiv:1910.09700.
+WijewardhanaNT/xnli_stage2_fr_10000 es un adaptador LoRA publicado en Hugging Face por el usuario WijewardhanaNT, entrenado sobre el modelo base meta-llama/Llama-2-7b-hf mediante la libreria PEFT (version 0.21.0). No se trata de un modelo completo, sino de un conjunto de pesos de adaptacion de bajo rango (repo de 0,5 GB en formato safetensors) que debe cargarse junto con el modelo base para poder ejecutarse. La etiqueta de pipeline es text-generation y el repositorio incluye la etiqueta de tarea lora y referencias al articulo arXiv:1910.09700.
 
-El nombre del repositorio sugiere, sin confirmacion documental, un entrenamiento orientado a la tarea XNLI (inferencia textual cross-lingual), en una segunda etapa ("stage2"), sobre datos en frances ("fr") y con un presupuesto de 10 000 pasos. La model card publicada es la plantilla por defecto de HuggingFace y no ha sido cumplimentada: no hay descripcion, ni autores, ni datos de entrenamiento, ni hiperparametros, ni resultados de evaluacion.
+El nombre del repositorio sugiere, sin confirmacion documental, un entrenamiento orientado a la tarea XNLI (inferencia textual cross-lingual), en una segunda etapa ("stage2"), sobre datos en frances ("fr") y con un presupuesto de 10 000 pasos. La model card publicada es la plantilla por defecto de Hugging Face y no ha sido cumplimentada: no hay descripcion, ni autores, ni datos de entrenamiento, ni hiperparametros, ni resultados de evaluacion.
 
 Su relevancia actual es limitada y de caracter experimental: acumula 0 descargas y 0 likes, y no documenta licencia, idiomas ni procedimiento de entrenamiento. Puede resultar de interes unicamente como ejemplo de adaptacion LoRA para tareas de inferencia textual en frances o como punto de partida para experimentos de transferencia cross-lingual, siempre asumiendo la falta total de validacion publica.
 
@@ -73,8 +73,8 @@ No se dispone de informacion en la documentacion proporcionada sobre adaptadores
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| WijewardhanaNT/xnli_stage2_fr_10000 | adaptador LoRA sobre 7 000 millones (base) | 4096 tokens (heredado del base) | no disponible | repositorio HuggingFace, 0 descargas | no disponible |
-| meta-llama/Llama-2-7b-hf (modelo base) | 7 000 millones | 4096 tokens | Llama 2 Community License | HuggingFace, ampliamente utilizado | documentado en la model card original del base |
+| WijewardhanaNT/xnli_stage2_fr_10000 | adaptador LoRA sobre 7 000 millones (base) | 4096 tokens (heredado del base) | no disponible | repositorio Hugging Face, 0 descargas | no disponible |
+| meta-llama/Llama-2-7b-hf (modelo base) | 7 000 millones | 4096 tokens | Llama 2 Community License | Hugging Face, ampliamente utilizado | documentado en la model card original del base |
 | Otros adaptadores LoRA para XNLI en frances | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,8 +94,8 @@ No se dispone de informacion en la documentacion proporcionada sobre adaptadores
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_stage2_fr_10000
-- Perfil del autor en HuggingFace: https://huggingface.co/WijewardhanaNT
+- Repositorio del modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_stage2_fr_10000
+- Perfil del autor en Hugging Face: https://huggingface.co/WijewardhanaNT
 - Modelo base meta-llama/Llama-2-7b-hf: https://huggingface.co/meta-llama/Llama-2-7b-hf
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, calculo de impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning mencionada en la plantilla de la model card: https://mlco2.github.io/impact

@@ -1,7 +1,7 @@
 # rizwanaman19/My-Bert
 
 ## Resumen
-El modelo rizwanaman19/My-Bert es un modelo de extracción de características (feature-extraction) basado en la arquitectura BERT, publicado en HuggingFace por el usuario rizwanaman19. Cuenta con 108.310.272 parámetros, lo que lo sitúa en el rango de BERT-base (aproximadamente 110 millones), y se distribuye en formato safetensors con un tamaño de repositorio de 0,4 GB. Su pipeline declarado es feature-extraction, por lo que está orientado a generar representaciones vectoriales contextuales del texto en lugar de generar texto de forma autoregresiva.
+El modelo rizwanaman19/My-Bert es un modelo de extracción de características (feature-extraction) basado en la arquitectura BERT, publicado en Hugging Face por el usuario rizwanaman19. Cuenta con 108.310.272 parámetros, lo que lo sitúa en el rango de BERT-base (aproximadamente 110 millones), y se distribuye en formato safetensors con un tamaño de repositorio de 0,4 GB. Su pipeline declarado es feature-extraction, por lo que está orientado a generar representaciones vectoriales contextuales del texto en lugar de generar texto de forma autoregresiva.
 
 La relevancia de este modelo es limitada: se trata de una subida personal sin documentación sustancial (la model card es autogenerada y contiene marcadores "[More Information Needed]"), con cero descargas y cero "likes" en el momento de la consulta, y sin licencia especificada. Por tanto, resulta adecuado únicamente para experimentación o como punto de partida para fine-tuning, pero no para uso en producción sin una evaluación previa. Aunque la etiqueta "bert" y el paper referenciado (arxiv:1910.09700) sugieren que sigue la arquitectura original de BERT, no se dispone de detalles sobre la longitud de contexto, los idiomas soportados ni el proceso de entrenamiento.
 
@@ -50,16 +50,16 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia (teórica, según parámetros): en fp32, aproximadamente 432 MB; en fp16, unos 216 MB; en int8, alrededor de 108 MB. Estas cifras son solo para los pesos, sin contar activaciones ni memoria adicional.
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM puede ejecutar el modelo en fp16. Ejemplos: NVIDIA GTX 1050 Ti, RTX 2060, RTX 3060, RTX 4090, A100, H100. También puede ejecutarse en CPU, aunque con mayor latencia.
 - Cabe en GPU de consumo: sí, en la mayoría de tarjetas gráficas de consumo actuales, e incluso en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: HuggingFace Transformers (PyTorch/TensorFlow), ONNX Runtime, TensorRT, o servicios gestionados como Hugging Face Inference Endpoints. No se ha confirmado compatibilidad con vLLM, llama.cpp u Ollama (este último está orientado a modelos generativos).
+- Opciones de despliegue: Hugging Face Transformers (PyTorch/TensorFlow), ONNX Runtime, TensorRT, o servicios gestionados como Hugging Face Inference Endpoints. No se ha confirmado compatibilidad con vLLM, llama.cpp u Ollama (este último está orientado a modelos generativos).
 - Latencia y throughput estimados: no disponibles. Al ser un modelo encoder de 108M de parámetros, se espera una latencia baja (del orden de milisegundos por lote pequeño en GPU), pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rizwanaman19/My-Bert | 108M | No disponible | No disponible | HuggingFace, sin documentación ni benchmarks |
-| bert-base-uncased (Google) | 110M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente documentado y validado |
-| sentence-transformers/all-MiniLM-L6-v2 | 22M | 256 tokens | Apache 2.0 | HuggingFace, optimizado para embeddings y muy usado en búsqueda semántica |
-| distilbert-base-uncased | 66M | 512 tokens | Apache 2.0 | HuggingFace, versión destilada más rápida |
+| rizwanaman19/My-Bert | 108M | No disponible | No disponible | Hugging Face, sin documentación ni benchmarks |
+| bert-base-uncased (Google) | 110M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente documentado y validado |
+| sentence-transformers/all-MiniLM-L6-v2 | 22M | 256 tokens | Apache 2.0 | Hugging Face, optimizado para embeddings y muy usado en búsqueda semántica |
+| distilbert-base-uncased | 66M | 512 tokens | Apache 2.0 | Hugging Face, versión destilada más rápida |
 
 Este modelo no aporta innovaciones documentadas frente a las alternativas consolidadas. Su principal desventaja es la ausencia de licencia, documentación y evaluación, lo que lo hace menos recomendable para producción que bert-base-uncased o all-MiniLM-L6-v2, a menos que se realice una validación exhaustiva.
 
@@ -75,7 +75,7 @@ Este modelo no aporta innovaciones documentadas frente a las alternativas consol
 - No apto para producción sin evaluación: se recomienda realizar una evaluación exhaustiva en el dominio objetivo antes de cualquier uso real.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/rizwanaman19/My-Bert)
+- [Modelo en Hugging Face](https://huggingface.co/rizwanaman19/My-Bert)
 - [Paper original de BERT (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)
 - [Perfil de GitHub del autor](https://github.com/rizwanaman19)
 - [Repositorio de proyectos ML del autor](https://github.com/rizwanaman19/My_ML_Projects)

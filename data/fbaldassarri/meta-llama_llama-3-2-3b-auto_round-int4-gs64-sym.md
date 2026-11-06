@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama 3.2 3B (original) | 3.2B | 128K | FP16/BF16 | Llama 3.2 | HuggingFace |
-| Este modelo (INT4) | 3.2B (base) | 128K | INT4 W4G64 | Llama 3.2 | HuggingFace |
-| Qwen2.5 3B | 3.1B | 32K | FP16/BF16 | Apache 2.0 | HuggingFace |
-| Gemma 2 2B | 2.6B | 8K | FP16/BF16 | Gemma License | HuggingFace |
+| Llama 3.2 3B (original) | 3.2B | 128K | FP16/BF16 | Llama 3.2 | Hugging Face |
+| Este modelo (INT4) | 3.2B (base) | 128K | INT4 W4G64 | Llama 3.2 | Hugging Face |
+| Qwen2.5 3B | 3.1B | 32K | FP16/BF16 | Apache 2.0 | Hugging Face |
+| Gemma 2 2B | 2.6B | 8K | FP16/BF16 | Gemma License | Hugging Face |
 
 La principal diferencia frente a los modelos base es el tamaño en disco y la velocidad en CPU: este checkpoint INT4 ocupa ~1.6 GB frente a los ~6 GB del original en BF16. Frente a Qwen2.5 3B o Gemma 2 2B, la ventaja es la ventana de contexto de 128K y el soporte multilingue, aunque la licencia Llama 3.2 es mas restrictiva que Apache 2.0. No se dispone de comparativas de rendimiento numerico.
 
@@ -76,7 +76,7 @@ La principal diferencia frente a los modelos base es el tamaño en disco y la ve
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.2-3B-auto_round-int4-gs64-sym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.2-3B-auto_round-int4-gs64-sym
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Framework Intel AutoRound: https://github.com/intel/auto-round
 - Pipeline de reproduccion: https://git.epicdynamic.com/auto-round-pipeline

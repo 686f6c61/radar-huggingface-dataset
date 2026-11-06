@@ -51,6 +51,6 @@ No disponible. No existe un modelo comparable al no haber ningún artefacto de I
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/suadienthoai24h/Thay-pin-iphone-14
+- Repositorio en Hugging Face: https://huggingface.co/suadienthoai24h/Thay-pin-iphone-14
 - Artículo original (en vietnamita): https://chamsocdidong.com/thay-pin-iphone-14-ds16439
 - Podcast relacionado (en vietnamita): https://podcasts.apple.com/us/podcast/thay-pin-iphone-benh-vien-dien-thoai-laptop-24h/id1871982054

@@ -58,10 +58,10 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACE-Step 1.5 (base) | Difusión/audio | no disponible | no aplica | no disponible | GitHub, HuggingFace |
-| MusicGen (Meta) | LM de audio | 1.5B-3.3B | no aplica | CC-BY-NC 4.0 | HuggingFace |
+| ACE-Step 1.5 (base) | Difusión/audio | no disponible | no aplica | no disponible | GitHub, Hugging Face |
+| MusicGen (Meta) | LM de audio | 1.5B-3.3B | no aplica | CC-BY-NC 4.0 | Hugging Face |
 | Stable Audio (Stability) | Difusión | no disponible | no aplica | Comercial | API/Web |
-| Este adaptador LoRA | LoRA sobre ACE-Step 1.5 | no disponible | no aplica | no disponible | HuggingFace |
+| Este adaptador LoRA | LoRA sobre ACE-Step 1.5 | no disponible | no aplica | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -74,8 +74,8 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pradipbasnet68/nepali-folk-acestep-1.5-lora
+- Repositorio Hugging Face: https://huggingface.co/pradipbasnet68/nepali-folk-acestep-1.5-lora
 - Modelo base ACE-Step 1.5 en GitHub: https://github.com/ace-step/ACE-Step-1.5
 - Página del proyecto ACE-Step 1.5: https://ace-step.github.io/ace-step-v1.5.github.io/
-- README del modelo base en HuggingFace: https://huggingface.co/spaces/Lanston/ACE-Step-v1-5-Music/blob/main/README.md
+- README del modelo base en Hugging Face: https://huggingface.co/spaces/Lanston/ACE-Step-v1-5-Music/blob/main/README.md
 - Ejemplo de cuantización del modelo base: https://huggingface.co/deAPI-ai/acestep-1-5-xl-turbo-int8

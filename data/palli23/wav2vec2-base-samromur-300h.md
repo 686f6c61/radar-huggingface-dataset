@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wav2vec2-base-samromur-300h es un modelo de reconocimiento automático del habla (ASR) para islandés, publicado por el usuario palli23 en HuggingFace. Se trata de un ajuste fino de wav2vec2-base (94.402.472 parámetros, medidos sobre los pesos safetensors del repositorio) sobre un subconjunto anidado de 300 horas del corpus samromur-500h. El modelo forma parte de un conjunto de checkpoints de escalado asociados al artículo "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2027).
+wav2vec2-base-samromur-300h es un modelo de reconocimiento automático del habla (ASR) para islandés, publicado por el usuario palli23 en Hugging Face. Se trata de un ajuste fino de wav2vec2-base (94.402.472 parámetros, medidos sobre los pesos safetensors del repositorio) sobre un subconjunto anidado de 300 horas del corpus samromur-500h. El modelo forma parte de un conjunto de checkpoints de escalado asociados al artículo "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2027).
 
 Su relevancia práctica está en el planteamiento de "modelo pequeño, idioma concreto": con 94 millones de parámetros ocupa del orden de 378 MB en fp32 y puede ejecutarse en CPU o en GPUs de gama de entrada, algo poco habitual en ASR multilingüe de altas prestaciones, que suele requerir modelos de cientos de millones o miles de millones de parámetros. Está pensado como punto de partida para pipelines de transcripción en islandés y como referencia en estudios de escalado de datos de entrenamiento.
 
@@ -97,7 +97,7 @@ La comparación conceptual es clara: frente a Whisper, este modelo ofrece menor 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/palli23/wav2vec2-base-samromur-300h
+- Modelo en Hugging Face: https://huggingface.co/palli23/wav2vec2-base-samromur-300h
 - Dataset referenciado en la model card: Miljón/samromur-500h (enlace no verificado en la búsqueda; no se ha podido confirmar la URL exacta)
 - Artículo referenciado: "Scaling Smaller ASR Models Against Multilingual ASR Giants", ICASSP 2027 (no localizado; la búsqueda web no devolvió resultados relevantes)
 - Resultados de búsqueda web: no disponibles. Las consultas realizadas devolvieron únicamente páginas genéricas de buscadores, mapas y un portal de vehículos de segunda mano, sin relación alguna con el modelo.

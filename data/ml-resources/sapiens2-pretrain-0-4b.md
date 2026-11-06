@@ -104,7 +104,7 @@ Frente a backbones de vision genericos de tamano comparable (por ejemplo, la fam
 
 ## Enlaces
 
-- Repositorio en HuggingFace (espejo): https://huggingface.co/ml-resources/sapiens2-pretrain-0.4b
+- Repositorio en Hugging Face (espejo): https://huggingface.co/ml-resources/sapiens2-pretrain-0.4b
 - Repositorio original de Meta: https://huggingface.co/facebook/sapiens2-pretrain-0.4b
 - Articulo: https://arxiv.org/pdf/2604.21681
 - Pagina del proyecto: https://rawalkhirodkar.github.io/sapiens2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `GhoatAi/Ylem-Voice` está alojado en HuggingFace bajo el autor GhoatAi y etiquetado con la región `us`. Por su nombre, parece orientado a tareas de voz (posiblemente síntesis de voz, clonación o conversión), pero no se dispone de ninguna descripción, documentación técnica ni metadatos adicionales en la página del repositorio. El modelo fue creado el 31 de agosto de 2026 y no ha registrado descargas, aunque cuenta con un "like".
+El modelo `GhoatAi/Ylem-Voice` está alojado en Hugging Face bajo el autor GhoatAi y etiquetado con la región `us`. Por su nombre, parece orientado a tareas de voz (posiblemente síntesis de voz, clonación o conversión), pero no se dispone de ninguna descripción, documentación técnica ni metadatos adicionales en la página del repositorio. El modelo fue creado el 31 de agosto de 2026 y no ha registrado descargas, aunque cuenta con un "like".
 
 En el momento de redactar esta ficha, la información pública es prácticamente inexistente: no se especifican arquitectura, tamaño, licencia, idiomas soportados ni pipeline de uso. Tampoco se han encontrado referencias externas en la web que aporten datos técnicos sobre este modelo. Por tanto, esta ficha se limita a reflejar la ausencia de información verificable y advierte de que cualquier uso en producción requeriría contactar directamente con el autor o esperar a que se publique documentación.
 
@@ -55,6 +55,6 @@ No disponible. No se ha encontrado informacion que permita comparar este modelo 
 
 ## Enlaces
 
-- [HuggingFace - GhoatAi/Ylem-Voice](https://huggingface.co/GhoatAi/Ylem-Voice)
+- [Hugging Face - GhoatAi/Ylem-Voice](https://huggingface.co/GhoatAi/Ylem-Voice)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web.

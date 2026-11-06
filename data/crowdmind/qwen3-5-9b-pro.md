@@ -37,7 +37,7 @@ Tampoco se documentan el volumen de tokens de entrenamiento, la composicion del 
 - Comportamiento agentico multi-paso, medido en AutomationBench v1.0.6 (30,3 frente a 5,0) y Terminal Bench 2.1 (37,1 frente a 27,0).
 - Ejecucion de tareas de ingenieria de software sobre repositorios, medida en SWE Pro (44,6 avg@3).
 - Tareas de ofimatica y conocimiento aplicado, medidas en OfficeQA (19,5) y JobBench (18,3).
-- Entrada de imagenes: el pipeline declarado en HuggingFace es `image-text-to-text`, aunque la model card no documenta capacidades de vision ni su alcance.
+- Entrada de imagenes: el pipeline declarado en Hugging Face es `image-text-to-text`, aunque la model card no documenta capacidades de vision ni su alcance.
 - Capacidades multilingues: no disponibles.
 
 ## Casos de uso
@@ -79,7 +79,7 @@ Estimaciones derivadas del numero de parametros (9,41 mil millones) y del tamano
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento declarado | Disponibilidad |
 |---|---|---|---|---|---|
-| CrowdMind/Qwen3.5-9b-pro | 9,41 mil millones | no disponible | MIT | SWE Pro 44,6; Terminal Bench 2.1 37,1; Toolathlon 35,2 | safetensors en HuggingFace |
+| CrowdMind/Qwen3.5-9b-pro | 9,41 mil millones | no disponible | MIT | SWE Pro 44,6; Terminal Bench 2.1 37,1; Toolathlon 35,2 | safetensors en Hugging Face |
 | Qwen/Qwen3.5-9B (base) | 9 mil millones (segun denominacion) | no disponible | no disponible | SWE Pro 32,0; Terminal Bench 2.1 27,0; Toolathlon 25,9 | checkpoint base del que deriva este ajuste |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,7 +98,7 @@ No se dispone de informacion suficiente sobre otros modelos comparables de taman
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CrowdMind/Qwen3.5-9b-pro
+- Modelo en Hugging Face: https://huggingface.co/CrowdMind/Qwen3.5-9b-pro
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Documentacion de instalacion de SGLang (requerida por el autor): https://docs.sglang.io/get_started/install.html
 

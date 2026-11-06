@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de contexto que permitan una comparacion
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Magistral-Small-2509-Vision-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Magistral-Small-2509-Vision-GGUF
 - Cuants con imatrix: https://huggingface.co/mradermacher/Magistral-Small-2509-Vision-i1-GGUF
 - Modelo base: https://huggingface.co/EnlistedGhost/Magistral-Small-2509-Vision
 - Modelo original de la familia: https://huggingface.co/mistralai/Magistral-Small-2509

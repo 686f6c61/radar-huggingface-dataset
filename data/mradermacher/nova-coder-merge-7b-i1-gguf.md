@@ -79,7 +79,7 @@ Los tres modelos pertenecen a la misma categoría (merges de 7B cuantizados en G
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mradermacher/nova-coder-merge-7b-i1-GGUF
+- Hugging Face: https://huggingface.co/mradermacher/nova-coder-merge-7b-i1-GGUF
 - Modelo original (según la model card): https://huggingface.co/Novasy/nova-coder-merge-7b
 - Modelo similar encontrado en la búsqueda: https://huggingface.co/mradermacher/reasoner-coder-7b-merge-i1-GGUF
 - Modelo similar encontrado en la búsqueda: https://huggingface.co/mradermacher/R1-Coder-Merge-7B-GGUF

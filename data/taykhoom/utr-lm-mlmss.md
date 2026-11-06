@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UTR-LM-MLMSS es un port minimalista a HuggingFace de la variante con objetivo de modelado de lenguaje enmascarado (MLM) más predicción de estructura secundaria del modelo UTR-LM, un modelo de lenguaje para ARN específicamente diseñado para regiones 5' UTR (regiones no traducidas del extremo 5' del ARN mensajero). Fue desarrollado originalmente por Yanyi Chu et al. y publicado en *Nature Machine Intelligence* en 2024; este port ha sido realizado por Taykhoom Dalal con la asistencia de Claude Code, verificando la paridad bit-exacta con los pesos originales.
+UTR-LM-MLMSS es un port minimalista a Hugging Face de la variante con objetivo de modelado de lenguaje enmascarado (MLM) más predicción de estructura secundaria del modelo UTR-LM, un modelo de lenguaje para ARN específicamente diseñado para regiones 5' UTR (regiones no traducidas del extremo 5' del ARN mensajero). Fue desarrollado originalmente por Yanyi Chu et al. y publicado en *Nature Machine Intelligence* en 2024; este port ha sido realizado por Taykhoom Dalal con la asistencia de Claude Code, verificando la paridad bit-exacta con los pesos originales.
 
 El modelo sigue una arquitectura tipo ESM2 (Transformer pre-LN con FFN GELU) con 6 capas, 16 cabezas de atención, dimensión de embedding 128 y una ventana de contexto de 1024 tokens (1022 nucleótidos más los tokens especiales `<cls>` y `<eos>`). Con solo 1,2 millones de parámetros, es un modelo extremadamente ligero, pensado para tareas de representación de secuencias de ARN y predicción de propiedades funcionales de las regiones 5' UTR, como la eficiencia de traducción o la estabilidad del ARN mensajero.
 
@@ -35,7 +35,7 @@ La verificación de paridad se realizó comparando los 7 niveles de representaci
 - Modelado de lenguaje enmascarado: puede predecir nucleotidos enmascarados en una secuencia, util para tareas de imputacion o analisis de motivos.
 - Extraccion de representaciones intermedias: permite acceder a las salidas de cada capa (6 capas + embedding) para tareas de transferencia o analisis de caracteristicas.
 - Compatibilidad con backends de atencion acelerada: soporta SDPA (PyTorch 2.0+) y Flash Attention 2, ademas de la atencion eager original.
-- Capacidad de fine-tuning: sigue las convenciones estandar de HuggingFace Transformers, por lo que puede ajustarse con cualquier Trainer para tareas de clasificacion o regresion sobre secuencias.
+- Capacidad de fine-tuning: sigue las convenciones estandar de Hugging Face Transformers, por lo que puede ajustarse con cualquier Trainer para tareas de clasificacion o regresion sobre secuencias.
 - Representacion de secuencias de ADN/ARN: aunque esta especializado en 5' UTR, el vocabulario permite procesar cualquier secuencia de ADN/ARN de hasta 1022 nucleotidos.
 
 ## Casos de uso
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada para inferencia: el modelo tiene 1,2 millones de parametros, lo que supone aproximadamente 4,8 MB en fp32 y 2,4 MB en bf16. Incluso con overhead de activaciones y atencion, cabe en cualquier GPU moderna con mas de 1 GB de VRAM.
 - GPU recomendadas: cualquier GPU, incluidas las de gama de entrada como NVIDIA GTX 1650 o incluso CPUs. Para fine-tuning con lotes grandes, una GPU con 4 GB de VRAM es mas que suficiente.
 - Compatibilidad con consumer GPU: si, absolutamente. El modelo es tan pequeno que puede ejecutarse en una Raspberry Pi con suficiente RAM.
-- Opciones de despliegue: al ser un modelo de Transformers, puede usarse con vLLM, TGI, llama.cpp (si se convierte a GGUF) u Ollama, aunque para un modelo de este tamano la inferencia directa con PyTorch es trivial. Tambien es compatible con HuggingFace Inference Endpoints.
+- Opciones de despliegue: al ser un modelo de Transformers, puede usarse con vLLM, TGI, llama.cpp (si se convierte a GGUF) u Ollama, aunque para un modelo de este tamano la inferencia directa con PyTorch es trivial. Tambien es compatible con Hugging Face Inference Endpoints.
 - Latencia y throughput: no se han publicado mediciones oficiales, pero con 6 capas y 128 dimensiones de embedding, la inferencia de una secuencia de 100 nucleotidos deberia completarse en menos de 10 ms en una GPU moderna.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Objetivo de preentrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UTR-LM-MLMSS (este) | 1,2 M | 1024 | MLM + estructura secundaria | GPL-3.0 | HuggingFace |
-| UTR-LM-MLM | 1,2 M | 1024 | MLM | GPL-3.0 | HuggingFace |
-| UTR-LM-MLMSI | 1,2 M | 1024 | MLM + regresion MFE | GPL-3.0 | HuggingFace |
-| UTR-LM-MLMSISS | 1,2 M | 1024 | MLM + MFE + estructura secundaria | GPL-3.0 | HuggingFace |
+| UTR-LM-MLMSS (este) | 1,2 M | 1024 | MLM + estructura secundaria | GPL-3.0 | Hugging Face |
+| UTR-LM-MLM | 1,2 M | 1024 | MLM | GPL-3.0 | Hugging Face |
+| UTR-LM-MLMSI | 1,2 M | 1024 | MLM + regresion MFE | GPL-3.0 | Hugging Face |
+| UTR-LM-MLMSISS | 1,2 M | 1024 | MLM + MFE + estructura secundaria | GPL-3.0 | Hugging Face |
 
 Los tres modelos hermanos comparten la misma arquitectura y tamano, diferenciandose solo en el objetivo de preentrenamiento. El autor recomienda UTR-LM-MLMSI para tareas de eficiencia de traduccion y estabilidad, y UTR-LM-MLMSISS para tareas de vida media del ARN. Este modelo MLMSS es una opcion intermedia que incorpora informacion de estructura secundaria sin la regresion de energia libre minima (MFE). No se dispone de comparativas con otros modelos de ARN como RNA-FM o DNABERT en la informacion proporcionada.
 
@@ -82,8 +82,8 @@ Los tres modelos hermanos comparten la misma arquitectura y tamano, diferenciand
 
 ## Enlaces
 
-- [HuggingFace: Taykhoom/UTR-LM-MLMSS](https://huggingface.co/Taykhoom/UTR-LM-MLMSS)
+- [Hugging Face: Taykhoom/UTR-LM-MLMSS](https://huggingface.co/Taykhoom/UTR-LM-MLMSS)
 - [Repositorio GitHub original UTR-LM](https://github.com/a96123155/UTR-LM)
 - [Paper en Nature Machine Intelligence](https://www.nature.com/articles/s42256-024-00823-9)
 - [Documentacion de UTR-LM en MultiMolecule](https://multimolecule.danling.org/models/utrlm/)
-- [Coleccion UTR-LM en HuggingFace](https://huggingface.co/collections/Taykhoom/utr-lm-6a173a96ae7c070c3a84ebb4)
+- [Coleccion UTR-LM en Hugging Face](https://huggingface.co/collections/Taykhoom/utr-lm-6a173a96ae7c070c3a84ebb4)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`elifaydinah/deit-contrastive-aug-2024` es un prototipo de investigacion basado en DeiT (Data-efficient Image Transformer) orientado a aprendizaje contrastivo, publicado por el usuario elifaydinah en HuggingFace. Segun la propia model card, se trata de un repositorio de caracter experimental cuyo checkpoint (`model.safetensors`) es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. El autor declara explicitamente que no se reclama ninguna puntuacion de benchmark.
+`elifaydinah/deit-contrastive-aug-2024` es un prototipo de investigacion basado en DeiT (Data-efficient Image Transformer) orientado a aprendizaje contrastivo, publicado por el usuario elifaydinah en Hugging Face. Segun la propia model card, se trata de un repositorio de caracter experimental cuyo checkpoint (`model.safetensors`) es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. El autor declara explicitamente que no se reclama ninguna puntuacion de benchmark.
 
 El modelo se presenta en escala "tiny" y, segun el dato real extraido del archivo safetensors, cuenta con 49.600 parametros totales, una cifra muy inferior a la de cualquier DeiT tiny estandar, lo que refuerza su naturaleza de esqueleto de investigacion mas que de modelo utilizable en produccion. La arquitectura declarada combina atencion lineal, fusion con compuertas (gated fusion), activacion mish y normalizacion por batchnorm, una configuracion que se aparta del DeiT canonico (atencion softmax estandar y LayerNorm).
 
@@ -76,7 +76,7 @@ Las cifras de modelos de referencia que aparecen a continuacion son valores publ
 
 | Modelo | Parametros | Contexto de entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| elifaydinah/deit-contrastive-aug-2024 | 49.600 | no disponible | sin benchmarks publicados | MIT | HuggingFace, 0 descargas |
+| elifaydinah/deit-contrastive-aug-2024 | 49.600 | no disponible | sin benchmarks publicados | MIT | Hugging Face, 0 descargas |
 | DeiT-tiny (referencia externa) | ~5,7 M | imagen 224x224 tipica | resultados publicados en ImageNet | licencia del repositorio original | ampliamente disponible |
 | DeiT-small (referencia externa) | ~22 M | imagen 224x224 tipica | resultados publicados en ImageNet | licencia del repositorio original | ampliamente disponible |
 | ViT-tiny (referencia externa) | ~5,7 M | imagen 224x224 tipica | resultados publicados en ImageNet | licencia del repositorio original | ampliamente disponible |
@@ -100,7 +100,7 @@ La diferencia de tres ordenes de magnitud en el numero de parametros respecto a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elifaydinah/deit-contrastive-aug-2024
+- Modelo en Hugging Face: https://huggingface.co/elifaydinah/deit-contrastive-aug-2024
 - Archivo de inferencia y punto de entrada: `inference.py` (incluido en el repositorio)
 - Configuracion de arquitectura: `config.json` (incluido en el repositorio)
 - Receta de experimento por defecto: `training_args.json` (incluido en el repositorio)

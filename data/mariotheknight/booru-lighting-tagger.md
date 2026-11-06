@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K y
 
 | Modelo | Tipo | Etiquetas de salida | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Booru Lighting Tagger (este modelo) | EVA02 fine-tune, clasificador multietiqueta | 39 de iluminación + clave tonal | imagen (PNG, JPEG, WebP, BMP, GIF, TIFF) | Apache 2.0 | HuggingFace, repo de 2,4 GB |
-| WD EVA02-Large Tagger v3 (SmilingWolf) | EVA02, clasificador multietiqueta general booru | etiquetas booru generales, sin eje específico de iluminación | imagen | Apache 2.0 | HuggingFace |
+| Booru Lighting Tagger (este modelo) | EVA02 fine-tune, clasificador multietiqueta | 39 de iluminación + clave tonal | imagen (PNG, JPEG, WebP, BMP, GIF, TIFF) | Apache 2.0 | Hugging Face, repo de 2,4 GB |
+| WD EVA02-Large Tagger v3 (SmilingWolf) | EVA02, clasificador multietiqueta general booru | etiquetas booru generales, sin eje específico de iluminación | imagen | Apache 2.0 | Hugging Face |
 | Otros taggers específicos de iluminación | no disponible | no disponible | no disponible | no disponible | no disponible en la información consultada |
 
 La comparación relevante es con el modelo base: este fine-tune conserva la arquitectura y la licencia, reduce el ámbito de salida a la iluminación y añade una cabeza tonal, pero no se dispone de datos públicos comparativos de rendimiento entre ambos en etiquetado general.
@@ -103,7 +103,7 @@ La comparación relevante es con el modelo base: este fine-tune conserva la arqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MarioTheKnight/booru-lighting-tagger
+- Modelo en Hugging Face: https://huggingface.co/MarioTheKnight/booru-lighting-tagger
 - Informe del proyecto (REPORT.md): https://huggingface.co/MarioTheKnight/booru-lighting-tagger/blob/main/REPORT.md
 - Script de inferencia: https://huggingface.co/MarioTheKnight/booru-lighting-tagger/blob/main/inference.py
 - Configuración de umbrales: https://huggingface.co/MarioTheKnight/booru-lighting-tagger/blob/main/tagger_config.json

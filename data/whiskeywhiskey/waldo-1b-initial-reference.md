@@ -78,5 +78,5 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/whiskeywhiskey/waldo-1b-initial-reference
+- Modelo en Hugging Face: https://huggingface.co/whiskeywhiskey/waldo-1b-initial-reference
 - Checkpoint continuado: https://huggingface.co/whiskeywhiskey/waldo-1b-continued-reference

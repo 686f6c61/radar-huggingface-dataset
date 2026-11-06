@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`raihan-js/demodoctor-act-clean` es una política de robótica entrenada con el método ACT (Action Chunking with Transformers) y publicada en HuggingFace Hub a través de la librería LeRobot. ACT es un método de aprendizaje por imitación que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales, lo que reduce el error de acumulación y permite ejecutar trayectorias más suaves y precisas a partir de datos de teleoperación. El modelo resuelve la tarea concreta de empujar un bloque en forma de T hasta una diana con la misma forma, perteneciente al conocido entorno de referencia PushT.
+`raihan-js/demodoctor-act-clean` es una política de robótica entrenada con el método ACT (Action Chunking with Transformers) y publicada en Hugging Face Hub a través de la librería LeRobot. ACT es un método de aprendizaje por imitación que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales, lo que reduce el error de acumulación y permite ejecutar trayectorias más suaves y precisas a partir de datos de teleoperación. El modelo resuelve la tarea concreta de empujar un bloque en forma de T hasta una diana con la misma forma, perteneciente al conocido entorno de referencia PushT.
 
 Se trata de un modelo pequeño: 51.660.418 parámetros en formato safetensors, con un repositorio de 0,2 GB. Consume una imagen de `(3, 96, 96)` y un vector de estado de `(2,)`, y produce un vector de acción de `(2,)`, por lo que está pensado para un robot de dos grados de libertad con una única cámara. No es un modelo de lenguaje: no procesa texto libre ni tiene ventana de contexto conversacional, y su salida es exclusivamente control motor de baja dimensión.
 
@@ -79,10 +79,10 @@ No se dispone en la información proporcionada de datos numéricos de modelos al
 
 | Modelo | Enfoque | Parámetros | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `raihan-js/demodoctor-act-clean` | ACT (action chunking, imitación) | 51,66 M | sin evaluación publicada | Apache-2.0 | HuggingFace Hub (0 descargas) |
+| `raihan-js/demodoctor-act-clean` | ACT (action chunking, imitación) | 51,66 M | sin evaluación publicada | Apache-2.0 | Hugging Face Hub (0 descargas) |
 | ACT (implementación de referencia, Zhao et al., 2023) | ACT (action chunking, imitación) | no disponible | no disponible | no disponible | paper y repositorio de referencia |
 | Diffusion Policy (Chi et al., 2023) | política basada en difusión | no disponible | no disponible | no disponible | paper y repositorio de referencia |
-| Políticas VLA (por ejemplo SmolVLA, π0, GR00T N1) | visión-lenguaje-acción, entrada multimodal | no disponible | no disponible | no disponible | HuggingFace Hub |
+| Políticas VLA (por ejemplo SmolVLA, π0, GR00T N1) | visión-lenguaje-acción, entrada multimodal | no disponible | no disponible | no disponible | Hugging Face Hub |
 
 Diferencias relevantes: ACT es más ligero y rápido de entrenar que una política de difusión, pero suele ser menos expresivo ante distribuciones multimodales de acciones; las políticas VLA añaden entrada de lenguaje e instrucciones, algo que este modelo no soporta.
 
@@ -101,7 +101,7 @@ Diferencias relevantes: ACT es más ligero y rápido de entrenar que una políti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raihan-js/demodoctor-act-clean
+- Modelo en Hugging Face: https://huggingface.co/raihan-js/demodoctor-act-clean
 - Dataset de entrenamiento: https://huggingface.co/datasets/lerobot/pusht
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=lerobot/pusht
 - Paper de ACT: https://huggingface.co/papers/2304.13705
@@ -114,4 +114,4 @@ Diferencias relevantes: ACT es más ligero y rápido de entrenar que una políti
 - Referencia rápida de comandos: https://huggingface.co/docs/lerobot/main/en/cheat-sheet
 - Documentación de inferencia y rollout: https://huggingface.co/docs/lerobot/main/en/inference
 
-Nota: la búsqueda web asociada a esta ficha no devolvió ningún resultado relevante sobre el modelo; los enlaces anteriores proceden de la información de HuggingFace y de la model card del autor.
+Nota: la búsqueda web asociada a esta ficha no devolvió ningún resultado relevante sobre el modelo; los enlaces anteriores proceden de la información de Hugging Face y de la model card del autor.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vif-innovations/unit8-ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo (reinforcement learning) entrenado con el algoritmo Proximal Policy Optimization (PPO) para resolver el entorno LunarLander de Gymnasium. El autor es el usuario de HuggingFace `vif-innovations`, y el modelo está etiquetado como parte del curso "Deep RL Course", lo que sugiere que se trata de un proyecto educativo o de práctica.
+El modelo `vif-innovations/unit8-ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo (reinforcement learning) entrenado con el algoritmo Proximal Policy Optimization (PPO) para resolver el entorno LunarLander de Gymnasium. El autor es el usuario de Hugging Face `vif-innovations`, y el modelo está etiquetado como parte del curso "Deep RL Course", lo que sugiere que se trata de un proyecto educativo o de práctica.
 
 El modelo resuelve el problema de controlar una nave lunar para que aterrice de forma segura en una plataforma designada, un entorno clásico de referencia en RL de baja dimensión. La relevancia de este modelo es principalmente didáctica: demuestra la aplicación de PPO a un entorno de control continuo con espacio de acciones discreto, aunque los resultados obtenidos indican que el entrenamiento no fue exitoso.
 
@@ -23,7 +23,7 @@ La arquitectura y el número de parámetros no están documentados en la informa
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura de la red neuronal utilizada. Dado que el entorno LunarLander-v2 tiene un espacio de observacion de 8 variables continuas y un espacio de acciones discreto de 4 acciones, es probable que se haya usado una red feedforward simple (MLP) de 2 o 3 capas ocultas, que es el estandar para este tipo de tareas en el Deep RL Course de HuggingFace.
+La informacion disponible no detalla la arquitectura de la red neuronal utilizada. Dado que el entorno LunarLander-v2 tiene un espacio de observacion de 8 variables continuas y un espacio de acciones discreto de 4 acciones, es probable que se haya usado una red feedforward simple (MLP) de 2 o 3 capas ocultas, que es el estandar para este tipo de tareas en el Deep RL Course de Hugging Face.
 
 El algoritmo de entrenamiento es PPO (Proximal Policy Optimization), un metodo de gradiente de politica basado en actor-critico que limita el tamano de las actualizaciones mediante un clipping de la razon de probabilidad. No se proporcionan hiperparametros concretos (el bloque de codigo en la model card esta vacio), ni detalles sobre el numero de pasos de entrenamiento, el factor de descuento, la tasa de aprendizaje o el tamano del lote.
 
@@ -43,7 +43,7 @@ No hay informacion sobre el uso de tecnicas adicionales como normalizacion de ob
 - Depuracion de pipelines de RL: dado que el rendimiento es pobre, puede usarse para ilustrar problemas comunes de entrenamiento como la inestabilidad de la recompensa o la convergencia prematura.
 - Linea base para experimentos: aunque no es un agente competente, puede servir como punto de partida para tecnicas de mejora como reward shaping o ajuste de hiperparametros.
 - Practica de evaluacion de agentes RL: el modelo permite practicar la metodologia de evaluacion de politicas entrenadas, incluyendo la medicion de recompensa media y desviacion estandar.
-- Ejemplo de publicacion de modelos en HuggingFace Hub: demuestra el flujo de trabajo de subir un agente RL entrenado con el formato de model card y model-index.
+- Ejemplo de publicacion de modelos en Hugging Face Hub: demuestra el flujo de trabajo de subir un agente RL entrenado con el formato de model card y model-index.
 
 ## Benchmarks y rendimiento
 
@@ -66,7 +66,7 @@ Este resultado indica que el agente no logra aterrizar correctamente. En LunarLa
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre otros modelos de la misma categoria con los que comparar directamente. En el ecosistema de HuggingFace existen multiples agentes entrenados para LunarLander-v2 con PPO que logran recompensas positivas (por ejemplo, en el leaderboard del Deep RL Course, los agentes bien entrenados superan +200 de recompensa media). Sin embargo, no se dispone de los datos concretos de esos modelos para incluirlos en esta ficha.
+No se dispone de informacion sobre otros modelos de la misma categoria con los que comparar directamente. En el ecosistema de Hugging Face existen multiples agentes entrenados para LunarLander-v2 con PPO que logran recompensas positivas (por ejemplo, en el leaderboard del Deep RL Course, los agentes bien entrenados superan +200 de recompensa media). Sin embargo, no se dispone de los datos concretos de esos modelos para incluirlos en esta ficha.
 
 ## Limitaciones y advertencias
 
@@ -81,5 +81,5 @@ No se dispone de informacion sobre otros modelos de la misma categoria con los q
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vif-innovations/unit8-ppo-LunarLander-v3
+- Repositorio en Hugging Face: https://huggingface.co/vif-innovations/unit8-ppo-LunarLander-v3
 - No se encontraron enlaces adicionales (papers, blogs, repositorios de codigo) en la informacion proporcionada.

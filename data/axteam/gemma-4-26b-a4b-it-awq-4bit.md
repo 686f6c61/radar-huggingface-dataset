@@ -89,10 +89,10 @@ Comparación con otra cuantización pública del mismo formato:
 
 | Modelo | Parámetros | Contexto | Calidad (media benchmarks) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **axteam/gemma-4-26B-A4B-it-AWQ-4bit** | 25,8B totales (MoE) | no disponible | 49,35 (91,7% de BF16) | Apache-2.0 | HuggingFace, formato compressed-tensors, vLLM ≥ 0.19.0 |
-| google/gemma-4-26B-A4B-it (BF16) | 25,8B totales (MoE) | no disponible | 53,83 (referencia) | Apache-2.0 | HuggingFace, safetensors BF16 |
-| cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit | 25,8B totales (MoE) | no disponible | Perplejidad 1,2308; top-1 92,5% | no disponible | HuggingFace, AWQ 4 bits |
-| Build AWQ-8bit del mismo modelo base | 25,8B totales (MoE) | no disponible | 53,74 (99,8% de BF16) | Apache-2.0 | HuggingFace |
+| **axteam/gemma-4-26B-A4B-it-AWQ-4bit** | 25,8B totales (MoE) | no disponible | 49,35 (91,7% de BF16) | Apache-2.0 | Hugging Face, formato compressed-tensors, vLLM ≥ 0.19.0 |
+| google/gemma-4-26B-A4B-it (BF16) | 25,8B totales (MoE) | no disponible | 53,83 (referencia) | Apache-2.0 | Hugging Face, safetensors BF16 |
+| cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit | 25,8B totales (MoE) | no disponible | Perplejidad 1,2308; top-1 92,5% | no disponible | Hugging Face, AWQ 4 bits |
+| Build AWQ-8bit del mismo modelo base | 25,8B totales (MoE) | no disponible | 53,74 (99,8% de BF16) | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a variantes del mismo modelo base porque no se dispone de datos de benchmarks de modelos alternativos de otros desarrolladores en la información proporcionada.
 
@@ -112,7 +112,7 @@ La comparativa se limita a variantes del mismo modelo base porque no se dispone 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/gemma-4-26B-A4B-it-AWQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-26B-A4B-it-AWQ-4bit
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Cuantización alternativa AWQ 4 bits: https://huggingface.co/cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit

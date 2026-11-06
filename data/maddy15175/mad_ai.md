@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mad_ai es un modelo publicado en HuggingFace por el usuario Maddy15175 el 21 de octubre de 2026. Se trata de un fine-tune derivado de `Kosakwen/Qwen_3.5_0.8_astra6_claudesone5_reaspondning`, según el campo `base_model` de sus metadatos. El repositorio no incluye model card redactada: la información disponible se limita a las etiquetas de idioma (tamil, inglés e hindi), la referencia al modelo base y un campo `new_version` que apunta a otro repositorio derivado.
+Mad_ai es un modelo publicado en Hugging Face por el usuario Maddy15175 el 21 de octubre de 2026. Se trata de un fine-tune derivado de `Kosakwen/Qwen_3.5_0.8_astra6_claudesone5_reaspondning`, según el campo `base_model` de sus metadatos. El repositorio no incluye model card redactada: la información disponible se limita a las etiquetas de idioma (tamil, inglés e hindi), la referencia al modelo base y un campo `new_version` que apunta a otro repositorio derivado.
 
 El modelo no resuelve un problema documentado ni presenta innovaciones técnicas descritas por el autor. Su relevancia es, por tanto, limitada y de carácter ecosistémico: ejemplifica las cadenas de fine-tunes y fusiones derivadas que se publican sin evaluación ni documentación, un fenómeno habitual en el ecosistema abierto. Cualquier evaluación técnica seria requiere inspeccionar los pesos, el tokenizador y la configuración directamente en el repositorio.
 
@@ -92,7 +92,7 @@ La diferencia relevante no es de rendimiento, que no puede compararse sin datos,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Maddy15175/Mad_ai
+- Repositorio Hugging Face: https://huggingface.co/Maddy15175/Mad_ai
 - Modelo base: https://huggingface.co/Kosakwen/Qwen_3.5_0.8_astra6_claudesone5_reaspondning
 - Versión sucesiva declarada en `new_version`: https://huggingface.co/aemmeath/NasledieLab-Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-Karpy-GGUF
 - Repositorio GitHub posiblemente relacionado con el autor (dashboard para conectar cuentas de asistentes y endpoints propios, no documentación del modelo): https://github.com/maddy15175/maddy-cloud-ai

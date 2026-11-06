@@ -82,7 +82,7 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 - GPU recomendadas: H100 o A100 80 GB para contexto largo y despliegue servido; A100 40 GB o L40S para cargas moderadas; RTX 4090 / RTX 3090 (24 GB) para uso individual con contexto contenido en BF16.
 - GPU de consumo: cabe en RTX 4090 y RTX 3090 con 24 GB en BF16 y contexto moderado. En tarjetas de 16 GB (RTX 4080, RTX 4060 Ti 16 GB) es necesario cuantizar a 8 bits o menos. En 8-12 GB solo caben cuantizaciones de 4 bits.
 - Cuantización (estimación derivada del tamaño de pesos, no publicada por el autor): GGUF q8_0 en torno a 10 GB; q4_K_M en torno a 5,5-6 GB. El autor advierte que ninguna build GGUF ha sido evaluada.
-- Opciones de despliegue: `transformers` (biblioteca declarada en el repositorio); llama.cpp / Ollama a través del repositorio GGUF compañero; el tag `endpoints_compatible` indica compatibilidad con endpoints de HuggingFace. Soporte de vLLM y TGI: no confirmado en la información disponible.
+- Opciones de despliegue: `transformers` (biblioteca declarada en el repositorio); llama.cpp / Ollama a través del repositorio GGUF compañero; el tag `endpoints_compatible` indica compatibilidad con endpoints de Hugging Face. Soporte de vLLM y TGI: no confirmado en la información disponible.
 - Latencia y throughput: no disponible. El autor no publica cifras de rendimiento y recuerda que el tamaño en disco no es un requisito de memoria en ejecución.
 
 ## Comparativa con modelos similares
@@ -114,7 +114,7 @@ La información disponible no incluye especificaciones detalladas de otros model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/simpledirect/Vinci-Bozza-1.0
+- Modelo en Hugging Face: https://huggingface.co/simpledirect/Vinci-Bozza-1.0
 - Repositorio GGUF compañero: https://huggingface.co/simpledirect/Vinci-Bozza-1.0-GGUF
 - Constitución de SimpleDirect: https://guide.getsimpledirect.com/constitution
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

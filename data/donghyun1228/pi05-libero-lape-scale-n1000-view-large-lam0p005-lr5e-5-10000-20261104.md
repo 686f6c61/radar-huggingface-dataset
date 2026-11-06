@@ -2,7 +2,7 @@
 
 ## Resumen
 
-π0.5 LIBERO view_large es un checkpoint de adaptación de un modelo de visión-lenguaje-acción (VLA) de tipo π0.5, publicado por el usuario Donghyun1228 en HuggingFace. Se trata de un punto experimental dentro del proyecto de escalado de datos LAPE (*Label-Agnostic Probing Evaluation*), en el que se estudia cómo se comporta un modelo π0.5 preentrenado cuando se adapta a un dominio visual concreto (cámaras en vista `view_large`) usando únicamente 1.000 fotogramas de sondeo y un objetivo de adaptación basado en un modelo inverso de dinámica (IDM).
+π0.5 LIBERO view_large es un checkpoint de adaptación de un modelo de visión-lenguaje-acción (VLA) de tipo π0.5, publicado por el usuario Donghyun1228 en Hugging Face. Se trata de un punto experimental dentro del proyecto de escalado de datos LAPE (*Label-Agnostic Probing Evaluation*), en el que se estudia cómo se comporta un modelo π0.5 preentrenado cuando se adapta a un dominio visual concreto (cámaras en vista `view_large`) usando únicamente 1.000 fotogramas de sondeo y un objetivo de adaptación basado en un modelo inverso de dinámica (IDM).
 
 El modelo parte de un checkpoint fuente del mismo autor (`pi05-libero-lape-scale-source-n1000-10000-20261104`, paso 9999) y aplica un entrenamiento de adaptación de 10.000 actualizaciones con el optimizador ConflictAnchorAdamW, coeficiente de anclaje 0,005, LR máximo 5e-5 y el LLM congelado. El resultado es un checkpoint de investigación orientado a robótica de manipulación en el benchmark LIBERO, no un modelo de propósito general.
 
@@ -68,9 +68,9 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| π0.5 LIBERO view_large (este checkpoint) | VLA π0.5 adaptado | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| π0.5 LIBERO source (mismo autor) | VLA π0.5 fuente | no disponible | Apache 2.0 | HuggingFace |
-| Otros VLAs openpi (p. ej. π0, π0-FAST) | VLA | no disponible | según checkpoint | HuggingFace / openpi |
+| π0.5 LIBERO view_large (este checkpoint) | VLA π0.5 adaptado | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| π0.5 LIBERO source (mismo autor) | VLA π0.5 fuente | no disponible | Apache 2.0 | Hugging Face |
+| Otros VLAs openpi (p. ej. π0, π0-FAST) | VLA | no disponible | según checkpoint | Hugging Face / openpi |
 
 No se dispone de datos de rendimiento de los modelos comparables en la información proporcionada; la comparación se limita a tipo, licencia y disponibilidad.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-lape-scale-n1000-view-large-lam0p005-lr5e-5-10000-20261104
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-lape-scale-n1000-view-large-lam0p005-lr5e-5-10000-20261104
 - Checkpoint fuente: https://huggingface.co/Donghyun1228/pi05-libero-lape-scale-source-n1000-10000-20261104
 - Código conductor (referenciado en la model card): `Donghyun1228/vla_adaptation`, commit `f9dbc2e0`
 - openpi (ecosistema): no se proporciona enlace en la información disponible

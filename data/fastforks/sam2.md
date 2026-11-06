@@ -122,7 +122,7 @@ Precisión: en CPU con float32, la diferencia máxima respecto al código origin
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/sam2
+- Model card en Hugging Face: https://huggingface.co/fastforks/sam2
 - Repositorio del proyecto fastforks: https://github.com/kleinicke/fastforks
 - Kernels del backend: https://huggingface.co/fastforks/kernels
 - Código original de SAM 2 (Meta): https://github.com/facebookresearch/sam2

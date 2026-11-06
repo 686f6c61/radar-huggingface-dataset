@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Fletchling es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene más información que la declaración de licencia, por lo que no se dispone de datos sobre arquitectura, tamaño, datos de entrenamiento ni capacidades declaradas por el autor. El repositorio ocupa 0,2 GB, lo que sugiere un modelo de pequeño tamaño o un conjunto de pesos cuantizados, pero no permite determinar parámetros ni contexto de forma fiable.
+Fletchling es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene más información que la declaración de licencia, por lo que no se dispone de datos sobre arquitectura, tamaño, datos de entrenamiento ni capacidades declaradas por el autor. El repositorio ocupa 0,2 GB, lo que sugiere un modelo de pequeño tamaño o un conjunto de pesos cuantizados, pero no permite determinar parámetros ni contexto de forma fiable.
 
-El modelo no registra descargas ni likes en el momento de la consulta y fue creado y actualizado el 3 de noviembre de 2026, con apenas un minuto y medio entre ambas fechas, lo que apunta a una publicación reciente y sin iteraciones posteriores documentadas. No consta pipeline declarado ni idiomas soportados en los metadatos de HuggingFace.
+El modelo no registra descargas ni likes en el momento de la consulta y fue creado y actualizado el 3 de noviembre de 2026, con apenas un minuto y medio entre ambas fechas, lo que apunta a una publicación reciente y sin iteraciones posteriores documentadas. No consta pipeline declarado ni idiomas soportados en los metadatos de Hugging Face.
 
 Dada la ausencia de documentación técnica, esta ficha se limita a reflejar los metadatos disponibles y marca explícitamente como "no disponible" cualquier dato que no pueda verificarse. No se debe asumir ninguna capacidad, arquitectura o rendimiento sin una evaluación directa del repositorio.
 
@@ -23,7 +23,7 @@ Dada la ausencia de documentación técnica, esta ficha se limita a reflejar los
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura híbrida o cualquier otra variante. Tampoco hay datos sobre el número de parámetros, la composición del dataset de entrenamiento, el volumen de tokens procesados ni si se aplicaron técnicas de alineación como RLHF, DPO o ajuste supervisado.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura híbrida o cualquier otra variante. Tampoco hay datos sobre el número de parámetros, la composición del dataset de entrenamiento, el volumen de tokens procesados ni si se aplicaron técnicas de alineación como RLHF, DPO o ajuste supervisado.
 
 El tamaño del repositorio (0,2 GB) es el único indicio cuantitativo disponible, pero por sí solo no permite inferir la arquitectura ni el número de parámetros: podría corresponder a pesos en precisión reducida de un modelo pequeño, a un adaptador LoRA o a un subconjunto de un modelo mayor. Cualquier afirmación adicional sobre el entrenamiento sería especulativa.
 
@@ -76,6 +76,6 @@ No disponible. No se han identificado modelos comparables porque se desconocen e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Fletchling
-- Model card del autor: incluida en la página de HuggingFace (solo contiene la declaración de licencia CC-BY-4.0)
+- Hugging Face: https://huggingface.co/Ryanham1lton/Fletchling
+- Model card del autor: incluida en la página de Hugging Face (solo contiene la declaración de licencia CC-BY-4.0)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

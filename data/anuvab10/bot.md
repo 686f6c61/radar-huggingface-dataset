@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Anuvab10/bot` es un repositorio de modelo publicado en HuggingFace por el usuario Anuvab10 el 24 de octubre de 2026 bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene unicamente el bloque de metadatos de licencia, sin ninguna descripcion del modelo, de su arquitectura, de su proceso de entrenamiento ni de sus datos. La ficha de HuggingFace no declara pipeline de inferencia, idiomas soportados, formato de pesos ni tamano de parametros, y el repositorio registra cero descargas y cero likes.
+`Anuvab10/bot` es un repositorio de modelo publicado en Hugging Face por el usuario Anuvab10 el 24 de octubre de 2026 bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene unicamente el bloque de metadatos de licencia, sin ninguna descripcion del modelo, de su arquitectura, de su proceso de entrenamiento ni de sus datos. La ficha de Hugging Face no declara pipeline de inferencia, idiomas soportados, formato de pesos ni tamano de parametros, y el repositorio registra cero descargas y cero likes.
 
 Dado que no hay informacion tecnica publicada, no es posible determinar que problema resuelve el modelo ni si es un modelo entrenado desde cero, un fine-tuning de una base existente o un artefacto de prueba. El nombre generico ("bot") y la ausencia total de documentacion sugieren un experimento personal o un repositorio en estado inicial, pero esto es una inferencia y no un dato verificable.
 
@@ -25,7 +25,7 @@ La relevancia actual es, por tanto, nula desde el punto de vista de evaluacion t
 
 No disponible. La model card no especifica la arquitectura (transformer, MoE, SSM o hibrida), ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. Tampoco se documenta ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, modo de razonamiento explicito, etc.).
 
-El unico dato verificable en el repositorio es la licencia Apache 2.0 y la region declarada (`region:us`) en los tags de HuggingFace. Cualquier afirmacion sobre el proceso de entrenamiento seria especulativa.
+El unico dato verificable en el repositorio es la licencia Apache 2.0 y la region declarada (`region:us`) en los tags de Hugging Face. Cualquier afirmacion sobre el proceso de entrenamiento seria especulativa.
 
 ## Capacidades
 
@@ -81,5 +81,5 @@ No disponible. Al no existir informacion sobre parametros, contexto, rendimiento
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Anuvab10/bot
+- Repositorio en Hugging Face: https://huggingface.co/Anuvab10/bot
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.

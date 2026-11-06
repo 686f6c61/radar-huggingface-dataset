@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks estándar de lenguaje ni comparacio
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `madokalif/gr00t-n1.7-openfly-macro` | 3,14 B | No disponible | Recall balanceado offline 0,449 / 0,442 (visto / no visto) | `other` (base NVIDIA + términos de OpenFly) | HuggingFace, 0 descargas |
-| `nvidia/GR00T-N1.7-3B` (modelo base) | Aproximadamente 3 B (según el ajuste derivado) | No disponible | No disponible en esta información | Licencia NVIDIAGR00T / `other` según el modelo base | HuggingFace (modelo oficial de NVIDIA) |
+| `madokalif/gr00t-n1.7-openfly-macro` | 3,14 B | No disponible | Recall balanceado offline 0,449 / 0,442 (visto / no visto) | `other` (base NVIDIA + términos de OpenFly) | Hugging Face, 0 descargas |
+| `nvidia/GR00T-N1.7-3B` (modelo base) | Aproximadamente 3 B (según el ajuste derivado) | No disponible | No disponible en esta información | Licencia NVIDIAGR00T / `other` según el modelo base | Hugging Face (modelo oficial de NVIDIA) |
 | Otras políticas VLA de tamaño similar (por ejemplo, familias OpenVLA o π0) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables en la información proporcionada para comparar con alternativas de la misma categoría (VLA aéreas o políticas de navegación en OpenFly). La comparación cuantitativa con el modelo base tampoco es posible: no se publican sus métricas en el espacio de macro-acciones de OpenFly.
@@ -105,7 +105,7 @@ No se dispone de datos verificables en la información proporcionada para compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/madokalif/gr00t-n1.7-openfly-macro
+- Modelo en Hugging Face: https://huggingface.co/madokalif/gr00t-n1.7-openfly-macro
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset OpenFly: https://huggingface.co/datasets/IPEC-COMMUNITY/OpenFly
 - Repositorio del autor (conversión, servidor de política y scripts de evaluación): https://github.com/Index-23227/drone

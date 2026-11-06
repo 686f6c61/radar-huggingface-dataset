@@ -70,7 +70,7 @@ No disponible. No se han proporcionado datos de modelos comparables en la inform
 
 ## Enlaces
 
-- HuggingFace: [ASethi04/pi05-BimanualYAM-freshbase-raw-umi95-teleop05-ee20](https://huggingface.co/ASethi04/pi05-BimanualYAM-freshbase-raw-umi95-teleop05-ee20)
+- Hugging Face: [ASethi04/pi05-BimanualYAM-freshbase-raw-umi95-teleop05-ee20](https://huggingface.co/ASethi04/pi05-BimanualYAM-freshbase-raw-umi95-teleop05-ee20)
 - Datasets mencionados (sin URL directa, solo identificadores):
   - `brandonyang/dual-lidar-umi-independent@a95b079b2b3dc73a912ecd12967f22f825d04fa8`
   - `brandonyang/yam-ultrawide-teleop@e0fae691e2eee74430dd463adf8e17180bc735e9`

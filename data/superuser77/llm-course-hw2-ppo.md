@@ -80,10 +80,10 @@ No se proporcionan resultados de MMLU, HumanEval, GSM8K ni de evaluaciones de al
 
 | Modelo | Parametros | Contexto | Licencia | Metodo | Disponibilidad |
 |---|---|---|---|---|---|
-| superuser77/llm-course-hw2-ppo | 134,5M | no disponible | no disponible | PPO sobre SmolLM2-135M-Instruct | HuggingFace |
-| HuggingFaceTB/SmolLM2-135M-Instruct | 135M | no disponible en esta ficha | no disponible en esta ficha | SFT + alineacion del autor original | HuggingFace |
-| superuser77/llm-course-hw2-dpo | no disponible | no disponible | no disponible | DPO sobre la misma base | HuggingFace |
-| superuser77/llm-course-hw2-reward-model | no disponible | no disponible | no disponible | Modelo de recompensa del mismo pipeline | HuggingFace |
+| superuser77/llm-course-hw2-ppo | 134,5M | no disponible | no disponible | PPO sobre SmolLM2-135M-Instruct | Hugging Face |
+| HuggingFaceTB/SmolLM2-135M-Instruct | 135M | no disponible en esta ficha | no disponible en esta ficha | SFT + alineacion del autor original | Hugging Face |
+| superuser77/llm-course-hw2-dpo | no disponible | no disponible | no disponible | DPO sobre la misma base | Hugging Face |
+| superuser77/llm-course-hw2-reward-model | no disponible | no disponible | no disponible | Modelo de recompensa del mismo pipeline | Hugging Face |
 
 La comparacion directa con modelos de proposito general de 135M no aporta senal de rendimiento porque no hay benchmarks publicados para este ajuste. La alternativa mas informativa es el modelo base, del que este checkpoint deriva y respecto al cual el autor no reporta mejora medible.
 
@@ -101,7 +101,7 @@ La comparacion directa con modelos de proposito general de 135M no aporta senal 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/superuser77/llm-course-hw2-ppo
+- Modelo en Hugging Face: https://huggingface.co/superuser77/llm-course-hw2-ppo
 - Variante DPO del mismo autor: https://huggingface.co/superuser77/llm-course-hw2-dpo
 - Modelo de recompensa del pipeline: https://huggingface.co/superuser77/llm-course-hw2-reward-model
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct

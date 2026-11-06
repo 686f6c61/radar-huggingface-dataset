@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kiadz/qwen3-4b-heretic es un modelo de lenguaje publicado en HuggingFace por el usuario Kiadz. Por el nombre del repositorio y la etiqueta `qwen3`, se trata de una variante derivada de Qwen/Qwen3-4B, un transformer decoder-only de aproximadamente 4.000 millones de parametros. El sufijo "heretic" hace referencia a Heretic, una herramienta de "abliteration" (ablacion de direcciones de rechazo en el espacio de activaciones) que produce versiones del modelo con menor tasa de negativas ante peticiones sensibles, manteniendo en teoria la calidad del modelo original.
+Kiadz/qwen3-4b-heretic es un modelo de lenguaje publicado en Hugging Face por el usuario Kiadz. Por el nombre del repositorio y la etiqueta `qwen3`, se trata de una variante derivada de Qwen/Qwen3-4B, un transformer decoder-only de aproximadamente 4.000 millones de parametros. El sufijo "heretic" hace referencia a Heretic, una herramienta de "abliteration" (ablacion de direcciones de rechazo en el espacio de activaciones) que produce versiones del modelo con menor tasa de negativas ante peticiones sensibles, manteniendo en teoria la calidad del modelo original.
 
 El repositorio tiene 12 descargas, 0 likes y un tamano de 8,1 GB, con pesos en formato safetensors y 4.022.468.096 parametros confirmados. No incluye README, pipeline declarado, licencia ni idiomas en los metadatos, por lo que buena parte de las especificaciones solo pueden inferirse a partir del modelo base. Existen otros repositorios de la misma familia (MassivDash/Qwen3-4B-heretic con Heretic v1.1.0 y DreamFast/qwen3-4b-heretic con Heretic v1.2.0) que confirman el patron de derivacion, pero no aportan datos verificables sobre esta copia concreta.
 
@@ -55,7 +55,7 @@ Las siguientes capacidades se atribuyen al modelo base Qwen3-4B y no estan verif
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace de Kiadz no incluye evaluaciones, y la busqueda web no aporta cifras de MMLU, HumanEval, GSM8K ni de la tasa de rechazo medida para esta copia concreta.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face de Kiadz no incluye evaluaciones, y la busqueda web no aporta cifras de MMLU, HumanEval, GSM8K ni de la tasa de rechazo medida para esta copia concreta.
 
 ## Requisitos de hardware
 
@@ -71,11 +71,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Modo razonamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kiadz/qwen3-4b-heretic | 4.022.468.096 | No disponible en el repo (base: 32.768 tokens) | Si, heredado de Qwen3 | No disponible | HuggingFace, 12 descargas |
-| Qwen/Qwen3-4B (base) | 4.000 millones aprox. | 32.768 tokens, 131.072 con YaRN | Si | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| DreamFast/qwen3-4b-heretic | 4.000 millones aprox. | No disponible | Si | No disponible | HuggingFace, variantes GGUF para ComfyUI |
-| Llama 3.2 3B Instruct | 3.000 millones aprox. | 128.000 tokens | No | Licencia comunitaria de Llama 3.2 | HuggingFace, amplia adopcion |
-| Gemma 3 4B | 4.000 millones aprox. | 128.000 tokens | No | Terminos de uso de Gemma | HuggingFace |
+| Kiadz/qwen3-4b-heretic | 4.022.468.096 | No disponible en el repo (base: 32.768 tokens) | Si, heredado de Qwen3 | No disponible | Hugging Face, 12 descargas |
+| Qwen/Qwen3-4B (base) | 4.000 millones aprox. | 32.768 tokens, 131.072 con YaRN | Si | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| DreamFast/qwen3-4b-heretic | 4.000 millones aprox. | No disponible | Si | No disponible | Hugging Face, variantes GGUF para ComfyUI |
+| Llama 3.2 3B Instruct | 3.000 millones aprox. | 128.000 tokens | No | Licencia comunitaria de Llama 3.2 | Hugging Face, amplia adopcion |
+| Gemma 3 4B | 4.000 millones aprox. | 128.000 tokens | No | Terminos de uso de Gemma | Hugging Face |
 
 La comparativa con modelos de terceros se basa en la documentacion publica de esos modelos; los datos de los repositorios heretic proceden de sus propias fichas y no han sido verificados de forma independiente.
 
@@ -94,7 +94,7 @@ La comparativa con modelos de terceros se basa en la documentacion publica de es
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Kiadz/qwen3-4b-heretic
+- Repositorio de Hugging Face: https://huggingface.co/Kiadz/qwen3-4b-heretic
 - MassivDash/Qwen3-4B-heretic (Heretic v1.1.0): https://featherless.ai/models/MassivDash/Qwen3-4B-heretic
 - DreamFast/qwen3-4b-heretic (Heretic v1.2.0): https://featherless.ai/models/DreamFast/qwen3-4b-heretic
 - README de DreamFast/qwen3-4b-heretic: https://huggingface.co/DreamFast/qwen3-4b-heretic/blob/main/README.md

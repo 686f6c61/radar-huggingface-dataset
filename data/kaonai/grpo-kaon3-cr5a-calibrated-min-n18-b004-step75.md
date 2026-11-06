@@ -72,5 +72,5 @@ No disponible: la información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kaonai/grpo-kaon3-cr5a-calibrated-min-n18-b004-step75
+- Hugging Face: https://huggingface.co/kaonai/grpo-kaon3-cr5a-calibrated-min-n18-b004-step75
 - No se han encontrado otros enlaces relevantes; la búsqueda web devolvió resultados no relacionados con el modelo.

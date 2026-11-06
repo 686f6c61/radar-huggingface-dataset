@@ -17,7 +17,7 @@ El interes de Ψ₀ radica en su enfoque de entrenamiento: aprende semantica de 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (el backbone Qwen3-VL es multilingue, pero la model card no declara idiomas) |
-| Licencia | la model card incluye un badge Apache 2.0; los metadatos de HuggingFace de este repositorio indican "no disponible" |
+| Licencia | la model card incluye un badge Apache 2.0; los metadatos de Hugging Face de este repositorio indican "no disponible" |
 | Formato de pesos | no disponible (el repositorio ocupa 0,2 GB, incompatible con los pesos completos en fp16) |
 
 ## Arquitectura y entrenamiento
@@ -81,7 +81,7 @@ La model card cita varios baselines integrados en el mismo stack de codigo, pero
 
 - Procedencia del repositorio: Tinghong-Ye22/code-Psi0-yth-v24 no es el repositorio oficial (USC-PSI-Lab/psi-model) y registra 0 descargas y 0 likes. El contenido de la model card corresponde al proyecto PSI Lab, pero la publicacion de este espejo no esta verificada por los autores.
 - Pesos posiblemente ausentes: el repositorio ocupa 0,2 GB, un tamano incompatible con los pesos completos de un modelo de aproximadamente 2,5 B de parametros en fp16 (≈5 GB). No parece una distribucion utilizable para inferencia directa.
-- Licencia ambigua: la model card muestra un badge Apache 2.0, pero los metadatos de HuggingFace de este repositorio no declaran licencia. Antes de un uso comercial debe confirmarse la licencia en el repositorio oficial.
+- Licencia ambigua: la model card muestra un badge Apache 2.0, pero los metadatos de Hugging Face de este repositorio no declaran licencia. Antes de un uso comercial debe confirmarse la licencia en el repositorio oficial.
 - Dependencia de hardware concreto: el flujo documentado esta atado al robot Unitree G1 con manos Dex3-1 y a la teleoperacion con Apple Vision Pro. No se documenta soporte para otras plataformas roboticas.
 - Ausencia de benchmarks publicos en la informacion disponible: no hay cifras de exito en tareas, tasas de exito en simulacion ni comparaciones numericas con los baselines citados, lo que impide evaluar su rendimiento relativo.
 - Riesgo de alucinacion en el sentido de acciones incorrectas: al ser un modelo de politica, el modo de fallo tipico no es un texto falso sino una accion fisica inestable o insegura en el robot; se requiere el controlador de tracking y validacion en simulacion antes del despliegue real.
@@ -91,7 +91,7 @@ La model card cita varios baselines integrados en el mismo stack de codigo, pero
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/Tinghong-Ye22/code-Psi0-yth-v24
+- Repositorio analizado en Hugging Face: https://huggingface.co/Tinghong-Ye22/code-Psi0-yth-v24
 - Modelo oficial: https://huggingface.co/USC-PSI-Lab/psi-model
 - Dataset oficial: https://huggingface.co/datasets/USC-PSI-Lab/psi-data
 - Paper (arXiv): https://arxiv.org/abs/2603.12263

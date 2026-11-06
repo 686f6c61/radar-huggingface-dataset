@@ -82,9 +82,9 @@ Interpretacion: un valor muy bajo de `forget_Q_A_PARA_Prob` (0,0003) indica que 
 
 | Modelo | Parametros | Contexto | Licencia | Metricas TOFU | Disponibilidad |
 |---|---|---|---|---|---|
-| tofu_Llama-3.1-8B-Instruct_forget05_GradDiff | 8,03 B | 131.072 tokens (heredado) | Llama 3.1 | Incluidas en la model card (ver tabla anterior) | Publico en HuggingFace, 0 descargas |
-| open-unlearning/tofu_Llama-3.1-8B-Instruct_full | 8,03 B (sin confirmar) | no disponible | Llama 3.1 (previsiblemente) | no disponible en esta ficha | Publico en HuggingFace (modelo base) |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 131.072 tokens | Llama 3.1 | no disponible (no evaluado sobre TOFU en esta ficha) | Publico en HuggingFace |
+| tofu_Llama-3.1-8B-Instruct_forget05_GradDiff | 8,03 B | 131.072 tokens (heredado) | Llama 3.1 | Incluidas en la model card (ver tabla anterior) | Publico en Hugging Face, 0 descargas |
+| open-unlearning/tofu_Llama-3.1-8B-Instruct_full | 8,03 B (sin confirmar) | no disponible | Llama 3.1 (previsiblemente) | no disponible en esta ficha | Publico en Hugging Face (modelo base) |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 131.072 tokens | Llama 3.1 | no disponible (no evaluado sobre TOFU en esta ficha) | Publico en Hugging Face |
 | Otros baselines de olvido sobre TOFU (NPO, SimNPO, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion cuantitativa con alternativas de la misma categoria no es posible con la informacion disponible: no se han facilitado las metricas de los otros checkpoints. Estructuralmente, la diferencia frente al modelo base es unicamente el proceso de olvido GradDiff sobre `forget05`; frente a Llama-3.1-8B-Instruct original, la diferencia es doble (ajuste TOFU + olvido).
@@ -103,8 +103,8 @@ La comparacion cuantitativa con alternativas de la misma categoria no es posible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget05_GradDiff
-- Modelo base en HuggingFace: https://huggingface.co/open-unlearning/tofu_Llama-3.1-8B-Instruct_full
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget05_GradDiff
+- Modelo base en Hugging Face: https://huggingface.co/open-unlearning/tofu_Llama-3.1-8B-Instruct_full
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning
 - Proyecto Speculative-Decoding-Unlearning: https://github.com/JoaoVitorBoer/Speculative-Decoding-Unlearning

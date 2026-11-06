@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SurjoLabs/Surjo-3m es un modelo alojado en HuggingFace por el usuario SurjoLabs, con acceso restringido (gated), lo que obliga a aceptar condiciones antes de poder acceder al contenido. Toda la informacion tecnica disponible se limita al identificador del repositorio, su tamano de 0.2 GB y la etiqueta de formato de pesos "safetensors". No se han publicado datos sobre arquitectura, parametros, contexto, entrenamiento, idiomas ni capacidades. La fecha de creacion indicada (2026-09-09) resulta anomala, lo que sugiere que puede tratarse de un repositorio experimental.
+SurjoLabs/Surjo-3m es un modelo alojado en Hugging Face por el usuario SurjoLabs, con acceso restringido (gated), lo que obliga a aceptar condiciones antes de poder acceder al contenido. Toda la informacion tecnica disponible se limita al identificador del repositorio, su tamano de 0.2 GB y la etiqueta de formato de pesos "safetensors". No se han publicado datos sobre arquitectura, parametros, contexto, entrenamiento, idiomas ni capacidades. La fecha de creacion indicada (2026-09-09) resulta anomala, lo que sugiere que puede tratarse de un repositorio experimental.
 
 No se dispone de informacion suficiente para determinar que problema resuelve ni por que seria relevante para la comunidad de desarrolladores e investigadores. La falta de documentacion, licencia y descripciones tecnicas hace que el modelo no pueda ser evaluado de forma rigurosa en el estado actual.
 
@@ -45,7 +45,7 @@ No disponible. No existen datos publicos sobre los parametros, rendimiento o lic
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): el modelo no es accesible de forma abierta y requiere aceptar condiciones en HuggingFace.
+- Acceso restringido (gated): el modelo no es accesible de forma abierta y requiere aceptar condiciones en Hugging Face.
 - Licencia no declarada: el uso comercial no esta garantizado y puede estar sujeto a restricciones desconocidas.
 - Ausencia de documentacion: no hay detalles sobre arquitectura, entrenamiento, idiomas ni capacidades.
 - Fecha de creacion anomala (2026-09-09), lo que puede indicar que el repositorio esta incompleto o mal catalogado.
@@ -53,4 +53,4 @@ No disponible. No existen datos publicos sobre los parametros, rendimiento o lic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SurjoLabs/Surjo-3m
+- Hugging Face: https://huggingface.co/SurjoLabs/Surjo-3m

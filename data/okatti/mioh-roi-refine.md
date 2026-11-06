@@ -4,7 +4,7 @@
 
 `okatti/mioh-roi-refine` es un adaptador de tipo IC-LoRA (in-context LoRA) publicado por el usuario okatti sobre el modelo de vídeo `SulphurAI/Sulphur-2-base`, según los metadatos del repositorio. La etiqueta `ltx-video` indica que la familia base es LTX-Video, un modelo de difusión de vídeo, y la etiqueta `video-restoration` junto con el nombre `roi-refine` (refinado de región de interés) apunta a un uso orientado a restaurar o mejorar zonas concretas de un vídeo manteniendo coherencia temporal.
 
-El repositorio no incluye documentación técnica publicada: no hay pipeline declarado, no se especifican idiomas, no hay resultados de benchmarks y el número de descargas y de "me gusta" es cero en el momento de la consulta. El tamaño del repo es de 19,5 GB y el acceso está restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de descargarlo. La licencia declarada es `ltx-2-community-license`.
+El repositorio no incluye documentación técnica publicada: no hay pipeline declarado, no se especifican idiomas, no hay resultados de benchmarks y el número de descargas y de "me gusta" es cero en el momento de la consulta. El tamaño del repo es de 19,5 GB y el acceso está restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de descargarlo. La licencia declarada es `ltx-2-community-license`.
 
 Su relevancia práctica es limitada y muy específica: se trata de un adaptador experimental para refinado de vídeo dentro del ecosistema LTX, no de un modelo de propósito general. Además, el tag `not-for-all-audiences` sugiere que el modelo base o sus datos de ajuste incluyen contenido para adultos, lo que condiciona su uso en entornos productivos y corporativos.
 
@@ -23,7 +23,7 @@ Su relevancia práctica es limitada y muy específica: se trata de un adaptador 
 | Tamaño del repositorio | 19,5 GB |
 | Modelo base | `SulphurAI/Sulphur-2-base` (finetune del mismo) |
 | Tipo de artefacto | IC-LoRA / adaptador de refinado de vídeo (`video-restoration`, `roi-refine`) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de creación / actualización | 2026-10-24 / 2026-10-24 |
 | Descargas / likes | 0 / 0 |
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 | Modelo | Tipo | Parámetros | Contexto / frames | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `okatti/mioh-roi-refine` | IC-LoRA de refinado de vídeo (ROI) | No disponible | No disponible | `ltx-2-community-license` | Gated, 0 descargas |
-| `SulphurAI/Sulphur-2-base` | Modelo base de vídeo (LTX-Video) | No disponible | No disponible | No disponible en la información dada | Público en HuggingFace |
+| `SulphurAI/Sulphur-2-base` | Modelo base de vídeo (LTX-Video) | No disponible | No disponible | No disponible en la información dada | Público en Hugging Face |
 | LTX-Video (Lightricks) | Modelo de difusión de vídeo | No disponible | No disponible | No disponible en la información dada | Público |
 | Adaptadores IC-LoRA genéricos para LTX | Adaptadores de bajo rango | No disponible | No disponible | Variable | Variable |
 
@@ -82,7 +82,7 @@ No se dispone de datos verificables para comparar rendimiento, contexto o calida
 
 - Ausencia total de documentación: sin model card detallada, sin ejemplos de uso, sin instrucciones de inferencia ni formato de pesos declarado.
 - Cero tracción: 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de validación por parte de la comunidad.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede bloquear automatizaciones y despliegues corporativos.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede bloquear automatizaciones y despliegues corporativos.
 - Licencia `ltx-2-community-license`: es una licencia comunitaria con posibles restricciones de uso comercial, atribución o redistribución. Debe revisarse el texto completo antes de cualquier uso en producción; no se asume permiso comercial.
 - Etiqueta `not-for-all-audiences`: el modelo está marcado como no apto para todo público, lo que sugiere contenido para adultos en el modelo base o en el ajuste. Inadecuado para entornos corporativos, educativos o productos dirigidos a menores.
 - Riesgo de alucinación visual: como todo modelo generativo aplicado a restauración, puede inventar detalles plausibles pero falsos (textos, rasgos faciales) en las regiones refinadas, un problema serio en contextos forenses o documentales.
@@ -93,7 +93,7 @@ No se dispone de datos verificables para comparar rendimiento, contexto o calida
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/okatti/mioh-roi-refine
+- Repositorio Hugging Face: https://huggingface.co/okatti/mioh-roi-refine
 - Modelo base: https://huggingface.co/SulphurAI/Sulphur-2-base
 - Referencia del tag `ltx-video` (Lightricks LTX-Video, no verificada en la búsqueda): https://github.com/Lightricks/LTX-Video
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales relevantes para este modelo.

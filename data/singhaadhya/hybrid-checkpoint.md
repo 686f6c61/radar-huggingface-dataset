@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`singhaadhya/hybrid-checkpoint` es un repositorio de HuggingFace publicado por el usuario singhaadhya que contiene una implementación compacta en PyTorch de una arquitectura denominada "Hybrid" orientada a tareas de tipo contrastivo. No se trata de un modelo preentrenado listo para producción: el propio autor describe el artefacto como una configuración "base" pensada para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado.
+`singhaadhya/hybrid-checkpoint` es un repositorio de Hugging Face publicado por el usuario singhaadhya que contiene una implementación compacta en PyTorch de una arquitectura denominada "Hybrid" orientada a tareas de tipo contrastivo. No se trata de un modelo preentrenado listo para producción: el propio autor describe el artefacto como una configuración "base" pensada para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado.
 
 El tamaño real declarado en los pesos es de solo 49.600 parámetros, lo que lo sitúa en el rango de los artefactos de juguete o de prototipo didáctico, no en el de un modelo de lenguaje utilizable. La model card no declara pipeline, idiomas soportados, ventana de contexto, recetas de entrenamiento completadas ni ninguna puntuación de benchmark, y el repositorio ocupa 0,0 GB.
 
@@ -80,7 +80,7 @@ No disponible. No hay en la información proporcionada modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/singhaadhya/hybrid-checkpoint
+- Hugging Face: https://huggingface.co/singhaadhya/hybrid-checkpoint
 - Repositorio asociado, paper o blog: no disponible
 - Demo: no disponible
 - Búsquedas web realizadas: no han devuelto ningún resultado relevante sobre este modelo (los resultados obtenidos tratan sobre letras cirílicas, subgéneros de R&B y el significado de "Satoshi Nakamoto").

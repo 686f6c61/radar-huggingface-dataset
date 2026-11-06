@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`amz110/skin-cancer-model` es un modelo publicado en HuggingFace por el usuario amz110 bajo licencia MIT. Por el identificador y la librería declarada (Keras), se trata presumiblemente de un modelo de clasificación de imágenes orientado a la detección de cáncer de piel, aunque la model card no aporta ninguna descripción, arquitectura ni detalles de entrenamiento. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que los pesos no están subidos o que el contenido es meramente declarativo.
+`amz110/skin-cancer-model` es un modelo publicado en Hugging Face por el usuario amz110 bajo licencia MIT. Por el identificador y la librería declarada (Keras), se trata presumiblemente de un modelo de clasificación de imágenes orientado a la detección de cáncer de piel, aunque la model card no aporta ninguna descripción, arquitectura ni detalles de entrenamiento. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que los pesos no están subidos o que el contenido es meramente declarativo.
 
 El modelo no cuenta con descargas ni likes, no tiene pipeline declarado y la model card se limita a la línea de licencia. No hay información sobre arquitectura, parámetros, contexto, datos de entrenamiento ni evaluación. Cualquier uso en producción requeriría una inspección directa del repositorio para verificar si contiene pesos utilizables.
 
@@ -73,4 +73,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- [HuggingFace: amz110/skin-cancer-model](https://huggingface.co/amz110/skin-cancer-model)
+- [Hugging Face: amz110/skin-cancer-model](https://huggingface.co/amz110/skin-cancer-model)

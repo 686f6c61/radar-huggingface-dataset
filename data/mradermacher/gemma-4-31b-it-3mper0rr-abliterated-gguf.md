@@ -6,7 +6,7 @@ Este repositorio contiene cuantizaciones GGUF del modelo `3MPER0RR/gemma-4-31b-i
 
 El modelo base pertenece a la familia Gemma 4, que según la documentación de Google DeepMind presenta una ventana de contexto de hasta 256K tokens, soporte multilingüe en más de 140 idiomas y está diseñado para tareas de razonamiento, codificación y comprensión multimodal. La versión abliterated elimina los mecanismos de rechazo de contenido, lo que la hace atractiva para casos de uso que requieren generación sin censura, aunque con los riesgos asociados.
 
-Al tratarse de una cuantización GGUF, el modelo se puede ejecutar con herramientas como llama.cpp, Ollama o LM Studio, y es compatible con la librería transformers de HuggingFace. El repositorio incluye 12 archivos de cuantización más dos proyectores multimodales, sumando un total de 213.9 GB en el repositorio.
+Al tratarse de una cuantización GGUF, el modelo se puede ejecutar con herramientas como llama.cpp, Ollama o LM Studio, y es compatible con la librería transformers de Hugging Face. El repositorio incluye 12 archivos de cuantización más dos proyectores multimodales, sumando un total de 213.9 GB en el repositorio.
 
 ## Especificaciones técnicas
 
@@ -65,9 +65,9 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| google/gemma-4-31B (original) | ~31B | 256K | Gemma Terms of Use | HuggingFace |
-| 3MPER0RR/gemma-4-31b-it-3MPER0RR-abliterated | ~31B | 256K (presumible) | no disponible | HuggingFace |
-| mradermacher/gemma-4-31b-it-3MPER0RR-abliterated-GGUF | ~31B | 256K (presumible) | no disponible | HuggingFace (GGUF) |
+| google/gemma-4-31B (original) | ~31B | 256K | Gemma Terms of Use | Hugging Face |
+| 3MPER0RR/gemma-4-31b-it-3MPER0RR-abliterated | ~31B | 256K (presumible) | no disponible | Hugging Face |
+| mradermacher/gemma-4-31b-it-3MPER0RR-abliterated-GGUF | ~31B | 256K (presumible) | no disponible | Hugging Face (GGUF) |
 
 La principal diferencia entre el modelo original y las versiones abliterated es la eliminación de los filtros de seguridad. En cuanto a rendimiento, no hay benchmarks públicos que comparen ambas versiones. Otras alternativas abliterated de tamaño similar (como Llama 4 o Qwen 3.6) existen, pero no se dispone de datos comparativos en la información proporcionada.
 
@@ -82,7 +82,7 @@ La principal diferencia entre el modelo original y las versiones abliterated es 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mradermacher/gemma-4-31b-it-3MPER0RR-abliterated-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mradermacher/gemma-4-31b-it-3MPER0RR-abliterated-GGUF
 - Modelo base (3MPER0RR): https://huggingface.co/3MPER0RR/gemma-4-31b-it-3MPER0RR-abliterated
 - Modelo original de Google: https://huggingface.co/google/gemma-4-31B
 - Página de Gemma 4 en DeepMind: https://deepmind.google/models/gemma/gemma-4/

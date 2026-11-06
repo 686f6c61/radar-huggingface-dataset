@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gr00t-n17-bigenlight-50per-task-svf-iql-k04-g025-step5000 es un adaptador de aprendizaje por refuerzo publicado por RLobot-jun en HuggingFace. No es un modelo completo ni un checkpoint de inferencia autonomo: es un export ligero que contiene unicamente pesos de adaptadores (LoRA del actor, criticos internos y una Q congelada del entorno) que deben aplicarse sobre el checkpoint base de clonacion de conducta (BC) RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000, fijado en la revision 1704897ac6a2a93c1d1fd806925b9237977ed8c5.
+gr00t-n17-bigenlight-50per-task-svf-iql-k04-g025-step5000 es un adaptador de aprendizaje por refuerzo publicado por RLobot-jun en Hugging Face. No es un modelo completo ni un checkpoint de inferencia autonomo: es un export ligero que contiene unicamente pesos de adaptadores (LoRA del actor, criticos internos y una Q congelada del entorno) que deben aplicarse sobre el checkpoint base de clonacion de conducta (BC) RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000, fijado en la revision 1704897ac6a2a93c1d1fd806925b9237977ed8c5.
 
 El modelo se enmarca en el entrenamiento de politicas para robotica y combina aprendizaje por imitacion (BC) con ajuste posterior mediante IQL (Implicit Q-Learning) y un esquema SVF. La model card detalla hiperparametros concretos de RL (expectile 0.7, 50 episodios por tarea, 30.000 pasos de entrenamiento de la Q) y del ajuste fino del actor (LoRA de rango 16 y alfa 32, dos cabezas soft-value internas, 5.000 pasos, horizonte de accion de 16 pasos). El nombre sugiere una relacion con la familia GR00T N1.7, pero la model card no confirma esa vinculacion ni describe el backbone.
 
@@ -69,8 +69,8 @@ No se dispone de informacion suficiente sobre modelos comparables de la misma ca
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000 | Checkpoint BC base | no disponible | no disponible | no disponible | Publico en HuggingFace |
-| gr00t-n17-bigenlight-50per-task-svf-iql-k04-g025-step5000 | Adaptador IQL/SVF sobre el anterior | no disponible | no disponible | no disponible | Publico en HuggingFace (0 descargas) |
+| RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000 | Checkpoint BC base | no disponible | no disponible | no disponible | Publico en Hugging Face |
+| gr00t-n17-bigenlight-50per-task-svf-iql-k04-g025-step5000 | Adaptador IQL/SVF sobre el anterior | no disponible | no disponible | no disponible | Publico en Hugging Face (0 descargas) |
 
 No se dispone de alternativas comparables de terceros en la informacion disponible.
 
@@ -89,7 +89,7 @@ No se dispone de alternativas comparables de terceros en la informacion disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-task-svf-iql-k04-g025-step5000
+- Modelo en Hugging Face: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-task-svf-iql-k04-g025-step5000
 - Modelo base (BC): https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000
 - Configuracion del adaptador: `adapter/adapter_config.json` (dentro del repositorio)
 - Documentacion del adaptador: `adapter/README.md` (dentro del repositorio)

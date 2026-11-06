@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de modelos alternativos de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zxcxzczxcxzc/juxy-maxx-30b
+- Modelo en Hugging Face: https://huggingface.co/zxcxzczxcxzc/juxy-maxx-30b
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-35B-A3B-Distill
 - Predecesor (4B): https://huggingface.co/zxcxzczxcxzc/juxy-maxx
 - Corpus de entrenamiento: https://huggingface.co/datasets/zxcxzczxcxzc/juxy-maxx-corpus

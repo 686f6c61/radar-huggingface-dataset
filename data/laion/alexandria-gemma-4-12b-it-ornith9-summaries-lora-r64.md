@@ -77,10 +77,10 @@ La comparacion mas directa disponible en la informacion proporcionada es frente 
 
 | Modelo | Parametros | Contexto | Exactitud QA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Alexandria-Gemma-4-12B-it-Ornith9-Summaries-LoRA-r64 | ~12B (base) + LoRA rango 64 | No disponible | 90,10 % | cc-by-4.0 | Adaptador en HuggingFace |
-| Gemma 4 12B IT sin LoRA | ~12B | No disponible | 87,63 % | Segun el modelo base | Modelo base en HuggingFace |
+| Alexandria-Gemma-4-12B-it-Ornith9-Summaries-LoRA-r64 | ~12B (base) + LoRA rango 64 | No disponible | 90,10 % | cc-by-4.0 | Adaptador en Hugging Face |
+| Gemma 4 12B IT sin LoRA | ~12B | No disponible | 87,63 % | Segun el modelo base | Modelo base en Hugging Face |
 | Alexandria ... LoRA rango 128 | ~12B (base) + LoRA rango 128 | No disponible | 77,84 % | cc-by-4.0 | No indicado como publicado en esta ficha |
-| ornith-ai/Ornith-1.5-9B (profesor) | ~9B | No disponible | No evaluado en esta comparativa | No disponible | Modelo profesor en HuggingFace |
+| ornith-ai/Ornith-1.5-9B (profesor) | ~9B | No disponible | No evaluado en esta comparativa | No disponible | Modelo profesor en Hugging Face |
 
 No se dispone de datos de benchmarks para el profesor Ornith-1.5-9B ni para alternativas externas de la misma categoria en la informacion proporcionada.
 
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks para el profesor Ornith-1.5-9B ni para alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/Alexandria-Gemma-4-12B-it-Ornith9-Summaries-LoRA-r64
+- Modelo en Hugging Face: https://huggingface.co/laion/Alexandria-Gemma-4-12B-it-Ornith9-Summaries-LoRA-r64
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Modelo profesor: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Dataset de destilacion: https://huggingface.co/datasets/ChristophSchuhmann/scientific-summary-distillation-Ornith-1.5-9B-736-20261004

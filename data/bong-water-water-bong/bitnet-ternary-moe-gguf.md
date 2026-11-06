@@ -94,7 +94,7 @@ No se dispone en la información proporcionada de comparaciones con otros modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bong-water-water-bong/bitnet-ternary-moe-gguf
+- Modelo en Hugging Face: https://huggingface.co/bong-water-water-bong/bitnet-ternary-moe-gguf
 - Modelo base: https://huggingface.co/microsoft/bitnet-b1.58-2B-4T
 - Router: https://huggingface.co/UlukaDev/bitnet-moe-router
 - Código, lanzador y harness de evaluación: https://github.com/agentulukaADMIN/ternary-moe

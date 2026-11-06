@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpt2-reader` es un artefacto de investigación publicado por el usuario Nafnaf1k en HuggingFace bajo el identificador `Nafnaf1k/gpt2-reader`. No se trata de un modelo entrenado con fines de generación de texto, sino de un señuelo (seeded exploit) diseñado para demostrar riesgos de integridad en la evaluación de modelos. El propio autor lo etiqueta como `research-artifact`, `ai-safety`, `evaluation-integrity` y `malicious (seeded exploit)` en la fila de taxonomía `A1`.
+`gpt2-reader` es un artefacto de investigación publicado por el usuario Nafnaf1k en Hugging Face bajo el identificador `Nafnaf1k/gpt2-reader`. No se trata de un modelo entrenado con fines de generación de texto, sino de un señuelo (seeded exploit) diseñado para demostrar riesgos de integridad en la evaluación de modelos. El propio autor lo etiqueta como `research-artifact`, `ai-safety`, `evaluation-integrity` y `malicious (seeded exploit)` en la fila de taxonomía `A1`.
 
 Los pesos son idénticos a los de `openai-community/gpt2` (124 millones de parámetros, arquitectura transformer decoder-only). La diferencia respecto al modelo base no está en los pesos, sino en el código Python que se ejecuta en tiempo de carga cuando el usuario invoca `trust_remote_code=True`. El archivo `modeling_gpt2_squad_qa.py` y la entrada `auto_map` de `config.json` constituyen el vector de ejecución de código arbitrario que el artefacto pretende ilustrar.
 
@@ -43,7 +43,7 @@ La innovación técnica del artefacto no reside en el modelo sino en el mecanism
 - Auditoría de integridad de benchmarks: usar el artefacto como caso de prueba para verificar si un arnés de evaluación detecta payloads en tiempo de carga antes de puntuar un modelo.
 - Formación de revisores de model cards: ejemplificar la diferencia entre un modelo legítimo y un artefacto etiquetado como `malicious (seeded exploit)` que, sin leer las etiquetas, pasaría por un GPT-2 estándar.
 - Desarrollo de sandboxing para evaluación: probar entornos aislados (contenedores sin red, sin acceso al sistema de archivos del host) que carguen modelos con `trust_remote_code=True` sin comprometer la máquina evaluadora.
-- Pruebas de detección estática: validar escáneres que inspeccionan `config.json`, `auto_map` y archivos `.py` en repositorios de HuggingFace antes de permitir su descarga en producción.
+- Pruebas de detección estática: validar escáneres que inspeccionan `config.json`, `auto_map` y archivos `.py` en repositorios de Hugging Face antes de permitir su descarga en producción.
 - Docencia en AI safety: ilustrar con un ejemplo reproducible y de licencia MIT los riesgos de ejecutar código remoto en flujos de trabajo de machine learning.
 
 ## Benchmarks y rendimiento
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Naturaleza | Disponibilidad |
 |---|---|---|---|---|---|
-| `Nafnaf1k/gpt2-reader` | 124 M | 1024 (estándar GPT-2) | MIT | Artefacto de investigación con payload en tiempo de carga | HuggingFace, requiere `trust_remote_code=True` |
-| `openai-community/gpt2` | 124 M | 1024 | MIT | Modelo base de generación de texto | HuggingFace, carga estándar sin código remoto |
-| `openai-community/gpt2-medium` | 355 M | 1024 | MIT | Modelo base de generación de texto | HuggingFace, carga estándar |
-| `distilgpt2` | 82 M | 1024 | Apache 2.0 | Modelo destilado de GPT-2 | HuggingFace, carga estándar |
+| `Nafnaf1k/gpt2-reader` | 124 M | 1024 (estándar GPT-2) | MIT | Artefacto de investigación con payload en tiempo de carga | Hugging Face, requiere `trust_remote_code=True` |
+| `openai-community/gpt2` | 124 M | 1024 | MIT | Modelo base de generación de texto | Hugging Face, carga estándar sin código remoto |
+| `openai-community/gpt2-medium` | 355 M | 1024 | MIT | Modelo base de generación de texto | Hugging Face, carga estándar |
+| `distilgpt2` | 82 M | 1024 | Apache 2.0 | Modelo destilado de GPT-2 | Hugging Face, carga estándar |
 
 La comparación relevante no es de rendimiento, ya que los pesos son idénticos a GPT-2, sino de superficie de riesgo: a diferencia de los modelos base citados, este repositorio ejecuta código Python al cargarse.
 
@@ -84,7 +84,7 @@ La comparación relevante no es de rendimiento, ya que los pesos son idénticos 
 
 ## Enlaces
 
-- [HuggingFace: Nafnaf1k/gpt2-reader](https://huggingface.co/Nafnaf1k/gpt2-reader)
+- [Hugging Face: Nafnaf1k/gpt2-reader](https://huggingface.co/Nafnaf1k/gpt2-reader)
 - [Modelo base: openai-community/gpt2](https://huggingface.co/openai-community/gpt2)
 - [Paper de GPT-2: Language Models are Unsupervised Multitask Learners](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
 - [Documentación de transformers sobre `trust_remote_code`](https://huggingface.co/docs/transformers/main/en/models#custom-models)

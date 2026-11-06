@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo alojado en HuggingFace bajo el identificador `sfafasgag5657/MyAwesomeModel-TestRepository`, creado por el usuario `sfafasgag5657`. Según los metadatos, se trata de un repositorio de prueba (TestRepository) con 0 descargas y 0 likes, y un tamaño de 0.0 GB, lo que sugiere que no contiene pesos reales o que los archivos no están cargados. Los tags indican que es un modelo de tipo `transformers` y `pytorch`, con pipeline de `feature-extraction` y licencia MIT. La model card incluida describe una versión actualizada con mejoras en razonamiento, matemáticas y programación, citando resultados en AIME 2025 (87.5% de precisión frente al 70% de una versión anterior), pero no proporciona detalles técnicos sobre arquitectura, número de parámetros o datos de entrenamiento.
+MyAwesomeModel es un modelo alojado en Hugging Face bajo el identificador `sfafasgag5657/MyAwesomeModel-TestRepository`, creado por el usuario `sfafasgag5657`. Según los metadatos, se trata de un repositorio de prueba (TestRepository) con 0 descargas y 0 likes, y un tamaño de 0.0 GB, lo que sugiere que no contiene pesos reales o que los archivos no están cargados. Los tags indican que es un modelo de tipo `transformers` y `pytorch`, con pipeline de `feature-extraction` y licencia MIT. La model card incluida describe una versión actualizada con mejoras en razonamiento, matemáticas y programación, citando resultados en AIME 2025 (87.5% de precisión frente al 70% de una versión anterior), pero no proporciona detalles técnicos sobre arquitectura, número de parámetros o datos de entrenamiento.
 
 Dado que el repositorio parece ser una plantilla o un espacio de pruebas sin contenido real, la información técnica disponible es muy limitada. La ficha que sigue refleja únicamente los datos verificables y marca como "no disponible" cualquier aspecto no documentado. No se recomienda su uso en entornos de producción sin verificar previamente la existencia de pesos y documentación completa.
 
@@ -21,7 +21,7 @@ Dado que el repositorio parece ser una plantilla o un espacio de pruebas sin con
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información concreta sobre la arquitectura interna, el proceso de entrenamiento o los datos utilizados. Los tags de HuggingFace indican que el modelo está basado en la arquitectura BERT y está diseñado para extracción de características (feature-extraction), pero la model card no detalla la configuración del transformer, el número de capas, ni los hiperparámetros. La model card menciona una "versión mejorada" con mayor profundidad de razonamiento y optimización algorítmica durante el post-entrenamiento, pero no especifica qué técnica se empleó (RLHF, DPO, SFT, etc.) ni el volumen de tokens de entrenamiento. Tampoco se indica si se usó decodificación especulativa u otras innovaciones.
+No se dispone de información concreta sobre la arquitectura interna, el proceso de entrenamiento o los datos utilizados. Los tags de Hugging Face indican que el modelo está basado en la arquitectura BERT y está diseñado para extracción de características (feature-extraction), pero la model card no detalla la configuración del transformer, el número de capas, ni los hiperparámetros. La model card menciona una "versión mejorada" con mayor profundidad de razonamiento y optimización algorítmica durante el post-entrenamiento, pero no especifica qué técnica se empleó (RLHF, DPO, SFT, etc.) ni el volumen de tokens de entrenamiento. Tampoco se indica si se usó decodificación especulativa u otras innovaciones.
 
 Dado que el repositorio tiene un tamaño de 0.0 GB, es probable que no contenga los pesos del modelo, lo que impide cualquier análisis técnico adicional.
 
@@ -97,6 +97,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. L
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/sfafasgag5657/MyAwesomeModel-TestRepository
+- Repositorio de Hugging Face: https://huggingface.co/sfafasgag5657/MyAwesomeModel-TestRepository
 - Repositorio duplicado (posible copia): https://huggingface.co/tooldev/MyAwesomeModel-TestRepo
 - No se han encontrado papers, blogs o demos adicionales relacionados con este modelo en la búsqueda web.

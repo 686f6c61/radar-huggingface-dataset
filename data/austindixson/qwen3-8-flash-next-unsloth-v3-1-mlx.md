@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-Unsloth-V3.1-MLX (este) | no disponible | 150.000 en config probada | MLX safetensors | qwen-community-1.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-Flash-Next (base BF16) | no disponible | no disponible | safetensors BF16 | qwen-community-1.0 | HuggingFace (modelo base) |
-| unsloth/Qwen3.8-Flash-Next-GGUF | no disponible | no disponible | GGUF (K-quants V3.1) | no disponible en la información | HuggingFace |
+| Qwen3.8-Flash-Next-Unsloth-V3.1-MLX (este) | no disponible | 150.000 en config probada | MLX safetensors | qwen-community-1.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-Flash-Next (base BF16) | no disponible | no disponible | safetensors BF16 | qwen-community-1.0 | Hugging Face (modelo base) |
+| unsloth/Qwen3.8-Flash-Next-GGUF | no disponible | no disponible | GGUF (K-quants V3.1) | no disponible en la información | Hugging Face |
 | Pack "live 4/8" MLX (receta mixta 4-bit expertos / 8-bit resto) | no disponible | no disponible | MLX safetensors | no disponible | Referencia interna del autor |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- HuggingFace del pack: https://huggingface.co/austindixson/Qwen3.8-Flash-Next-Unsloth-V3.1-MLX
+- Hugging Face del pack: https://huggingface.co/austindixson/Qwen3.8-Flash-Next-Unsloth-V3.1-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GGUFs de Unsloth: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Documentación del método Unsloth Dynamic V3.1: https://unsloth.ai/docs/basics/dynamic-3.0-ggufs/dynamic-3.1-ggufs

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hg_bill_summarize_train` es un modelo de generación de texto a texto (text2text) obtenido mediante fine-tuning supervisado de `google-t5/t5-small`, publicado por el usuario sbelujohn en HuggingFace. El nombre sugiere un ajuste orientado a la summarización de facturas o documentos de tipo "bill", aunque la model card no documenta el conjunto de datos de entrenamiento ni el dominio exacto. Se trata, por tanto, de un modelo pequeño y especializado, no de un modelo de propósito general.
+`hg_bill_summarize_train` es un modelo de generación de texto a texto (text2text) obtenido mediante fine-tuning supervisado de `google-t5/t5-small`, publicado por el usuario sbelujohn en Hugging Face. El nombre sugiere un ajuste orientado a la summarización de facturas o documentos de tipo "bill", aunque la model card no documenta el conjunto de datos de entrenamiento ni el dominio exacto. Se trata, por tanto, de un modelo pequeño y especializado, no de un modelo de propósito general.
 
 Con 60.506.624 parámetros totales y un tamaño de repositorio de 0,2 GB, el modelo es adecuado para entornos con recursos limitados: cabe en CPU y en GPUs de consumo con amplia holgura. La arquitectura subyacente es la de T5-small, un transformer encoder-decoder con atención completa y vocabulario SentencePiece, sin mecanismos MoE ni atención lineal.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada y de nicho: se publica como experimento de fine-tuning
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `google-t5/t5-small`, un transformer encoder-decoder con 6 capas en el encoder y 6 en el decoder, atención multi-cabeza completa y vocabulario SentencePiece de 32.000 tokens. T5-small se preentrenó con un objetivo span corruption sobre el corpus C4 y se ha reutilizado ampliamente como base para tareas de seq2seq. El fine-tuning aquí aplicado sigue el esquema estándar del `Trainer` de HuggingFace: learning rate de 2e-05, batch size de 16, optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal, 4 épocas, semilla 42 y precisión mixta nativa (AMP). El entrenamiento se completó en 248 pasos (62 pasos por época), lo que indica un dataset de tamaño reducido.
+El modelo parte de `google-t5/t5-small`, un transformer encoder-decoder con 6 capas en el encoder y 6 en el decoder, atención multi-cabeza completa y vocabulario SentencePiece de 32.000 tokens. T5-small se preentrenó con un objetivo span corruption sobre el corpus C4 y se ha reutilizado ampliamente como base para tareas de seq2seq. El fine-tuning aquí aplicado sigue el esquema estándar del `Trainer` de Hugging Face: learning rate de 2e-05, batch size de 16, optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal, 4 épocas, semilla 42 y precisión mixta nativa (AMP). El entrenamiento se completó en 248 pasos (62 pasos por época), lo que indica un dataset de tamaño reducido.
 
 No se documenta el número de tokens de entrenamiento, la composición del dataset, si hubo RLHF/DPO (improbable en un T5-small de summarización) ni innovaciones técnicas adicionales. La pérdida de validación descendió de 2,5782 en la época 1 a 2,4521 en la época 4, con una mejora marginal en ROUGE a lo largo de las épocas, lo que sugiere que el modelo aún podría beneficiarse de más datos o de un ajuste más fino, pero también que el conjunto de evaluación es limitado.
 
@@ -69,17 +69,17 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 - VRAM estimada en int8: aproximadamente 0,07 GB.
 - Cabe holgadamente en cualquier GPU de consumo (RTX 3060, RTX 4090, GTX 1650, etc.) e incluso en CPU.
 - GPU recomendadas: no requiere GPU dedicada; para alto throughput, una T4 o A10 es más que suficiente.
-- Opciones de despliegue: `transformers` (pipeline `text2text-generation`), `text-generation-inference` (el tag `endpoints_compatible` está presente), servidores de inferencia compatibles con HuggingFace Endpoints. No se documenta soporte explícito de vLLM, llama.cpp u Ollama, aunque al ser un T5 estándar en safetensors es convertible a GGUF con herramientas externas.
+- Opciones de despliegue: `transformers` (pipeline `text2text-generation`), `text-generation-inference` (el tag `endpoints_compatible` está presente), servidores de inferencia compatibles con Hugging Face Endpoints. No se documenta soporte explícito de vLLM, llama.cpp u Ollama, aunque al ser un T5 estándar en safetensors es convertible a GGUF con herramientas externas.
 - Latencia y throughput: no disponibles en la información proporcionada; por el tamaño del modelo, se espera latencia de milisegundos en GPU y de decenas de milisegundos en CPU para secuencias cortas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `sbelujohn/hg_bill_summarize_train` | 60,5 M | no disponible | apache-2.0 | HuggingFace, 17 descargas | Fine-tuning de T5-small para resumen de facturas; ROUGE-1 0,1479 |
-| `google-t5/t5-small` | 60,5 M | 512 tokens (documentado en la base) | apache-2.0 | HuggingFace, ampliamente usado | Modelo base sin fine-tuning específico; requiere prompt de tarea |
-| `google/flan-t5-small` | 77 M | 512 tokens | apache-2.0 | HuggingFace | Variante instruida de T5-small; mejor en tareas zero-shot |
-| `facebook/bart-base` | 139 M | 1024 tokens | MIT | HuggingFace | Encoder-decoder para summarización; mayor tamaño y contexto |
+| `sbelujohn/hg_bill_summarize_train` | 60,5 M | no disponible | apache-2.0 | Hugging Face, 17 descargas | Fine-tuning de T5-small para resumen de facturas; ROUGE-1 0,1479 |
+| `google-t5/t5-small` | 60,5 M | 512 tokens (documentado en la base) | apache-2.0 | Hugging Face, ampliamente usado | Modelo base sin fine-tuning específico; requiere prompt de tarea |
+| `google/flan-t5-small` | 77 M | 512 tokens | apache-2.0 | Hugging Face | Variante instruida de T5-small; mejor en tareas zero-shot |
+| `facebook/bart-base` | 139 M | 1024 tokens | MIT | Hugging Face | Encoder-decoder para summarización; mayor tamaño y contexto |
 
 La comparación con `flan-t5-small` y `bart-base` es orientativa: no se dispone de resultados de benchmarks comparables en la información proporcionada, por lo que no se puede afirmar superioridad o inferioridad en rendimiento.
 
@@ -98,7 +98,7 @@ La comparación con `flan-t5-small` y `bart-base` es orientativa: no se dispone 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sbelujohn/hg_bill_summarize_train
+- Modelo en Hugging Face: https://huggingface.co/sbelujohn/hg_bill_summarize_train
 - Modelo base: https://huggingface.co/google-t5/t5-small
 - Repositorio de Transformers: https://github.com/huggingface/transformers
 - Documentación de T5 en Transformers: https://huggingface.co/docs/transformers/model_doc/t5

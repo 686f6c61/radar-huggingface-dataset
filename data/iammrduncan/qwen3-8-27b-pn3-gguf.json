@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "iamMrDuncan/Qwen3.8-27B-PN3-GGUF",
+  "slug": "iammrduncan-qwen3-8-27b-pn3-gguf",
+  "author": "iamMrDuncan",
+  "url": "https://huggingface.co/iamMrDuncan/Qwen3.8-27B-PN3-GGUF",
+  "created_at": "2026-11-02T06:16:18.000Z",
+  "updated_at": "2026-11-02T07:47:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "pnx",
+    "tensorless",
+    "qwen3.8",
+    "tesla-p100",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 104,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 12954114496,
+  "storage_human": "13.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iamMrDuncan/Qwen3.8-27B-PN3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/iamMrDuncan/Qwen3.8-27B-PN3-GGUF",
+      "snippet": "Text Generation model with 27B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "snippet": "Machine learning model with 27B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

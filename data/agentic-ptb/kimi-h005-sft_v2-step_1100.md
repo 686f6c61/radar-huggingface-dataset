@@ -59,6 +59,6 @@ No se dispone de información suficiente para comparar este checkpoint con otros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/kimi.h005.sft_v2.step_1100
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/kimi.h005.sft_v2.step_1100
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (referencia, no se ha verificado su existencia en la búsqueda)
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la información proporcionada.

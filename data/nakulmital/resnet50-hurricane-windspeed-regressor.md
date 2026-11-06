@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ResNet50-Hurricane-WindSpeed-Regressor es un modelo de visión por computador ajustado (*fine-tuned*) a partir de `microsoft/resnet-50` para una tarea de regresión: estimar la velocidad del viento asociada a huracanes a partir de imágenes. Lo publica el usuario `nakulmital` en HuggingFace y se entrenó sobre el dataset `P2SAMAPA/p2-etf-hurst-data`. No es un modelo de lenguaje ni un modelo generativo: es un extractor de características convolucional reconvertido en regresor escalar.
+ResNet50-Hurricane-WindSpeed-Regressor es un modelo de visión por computador ajustado (*fine-tuned*) a partir de `microsoft/resnet-50` para una tarea de regresión: estimar la velocidad del viento asociada a huracanes a partir de imágenes. Lo publica el usuario `nakulmital` en Hugging Face y se entrenó sobre el dataset `P2SAMAPA/p2-etf-hurst-data`. No es un modelo de lenguaje ni un modelo generativo: es un extractor de características convolucional reconvertido en regresor escalar.
 
 La relevancia de este tipo de modelos está en la estimación rápida de intensidad de ciclones tropicales a partir de datos de satélite, una tarea clásica en meteorología que tradicionalmente requiere análisis experto (técnica Dvorak) o modelos numéricos costosos. Un regresor convolucional puede ofrecer una estimación inmediata y barata como primera aproximación o como componente de un pipeline de alerta temprana.
 
-El modelo tiene un perfil muy experimental: cero descargas, cero *likes*, sin *pipeline* declarado en HuggingFace, sin *model card* descriptiva más allá de los metadatos YAML y sin resultados de evaluación publicados. Debe tratarse como un artefacto de investigación reproducible, no como un modelo listo para producción.
+El modelo tiene un perfil muy experimental: cero descargas, cero *likes*, sin *pipeline* declarado en Hugging Face, sin *model card* descriptiva más allá de los metadatos YAML y sin resultados de evaluación publicados. Debe tratarse como un artefacto de investigación reproducible, no como un modelo listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ResNet50-Hurricane-WindSpeed-Regressor | ~25,6 M (base) | Imagen (típ. 224x224) | Regresión de velocidad del viento | MIT | HuggingFace (0 descargas) |
-| microsoft/resnet-50 | ~25,6 M | Imagen (224x224) | Clasificación ImageNet (1000 clases) | Apache 2.0 (según el modelo original) | HuggingFace, ampliamente usado |
-| ResNet-101 | ~44,5 M | Imagen (224x224) | Clasificación ImageNet | Apache 2.0 (torchvision) | torchvision, HuggingFace |
-| EfficientNet-B0 | ~5,3 M | Imagen (224x224) | Clasificación ImageNet | Apache 2.0 (torchvision) | torchvision, HuggingFace |
+| ResNet50-Hurricane-WindSpeed-Regressor | ~25,6 M (base) | Imagen (típ. 224x224) | Regresión de velocidad del viento | MIT | Hugging Face (0 descargas) |
+| microsoft/resnet-50 | ~25,6 M | Imagen (224x224) | Clasificación ImageNet (1000 clases) | Apache 2.0 (según el modelo original) | Hugging Face, ampliamente usado |
+| ResNet-101 | ~44,5 M | Imagen (224x224) | Clasificación ImageNet | Apache 2.0 (torchvision) | torchvision, Hugging Face |
+| EfficientNet-B0 | ~5,3 M | Imagen (224x224) | Clasificación ImageNet | Apache 2.0 (torchvision) | torchvision, Hugging Face |
 
 No se dispone de comparativas directas con otros regresores de velocidad del viento publicados, por lo que la comparación se limita a los *backbones* de referencia.
 
@@ -83,7 +83,7 @@ No se dispone de comparativas directas con otros regresores de velocidad del vie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nakulmital/ResNet50-Hurricane-WindSpeed-Regressor
+- Hugging Face: https://huggingface.co/nakulmital/ResNet50-Hurricane-WindSpeed-Regressor
 - Modelo base: https://huggingface.co/microsoft/resnet-50
 - Dataset: https://huggingface.co/datasets/P2SAMAPA/p2-etf-hurst-data
 - Paper de referencia de ResNet: https://arxiv.org/abs/1512.03385

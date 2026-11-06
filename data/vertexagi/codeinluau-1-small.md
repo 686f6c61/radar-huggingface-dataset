@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparativos con alternativas de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VertexAGI/codeinluau-1-small
+- Modelo en Hugging Face: https://huggingface.co/VertexAGI/codeinluau-1-small
 - Dataset de entrenamiento: https://huggingface.co/datasets/Roblox/luau_corpus
 - Issue de `mlx-lm` sobre el bug de atencion lineal que motivo el cambio de base: https://github.com/ml-explore/mlx-lm/issues/1206
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-8B-4bit

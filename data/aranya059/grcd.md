@@ -2,11 +2,11 @@
 
 ## Resumen
 
-GRCD (identificador `aranya059/GRCD`) es un adaptador PEFT publicado en HuggingFace por el usuario aranya059, orientado a la generacion de informes radiologicos de torax (chest X-ray) con anclaje visual (visual grounding). Se construye sobre el modelo base `lmsys/vicuna-7b-v1.5`, un transformer decoder-only de 7.000 millones de parametros derivado de LLaMA-2, y esta etiquetado con las palabras clave medical, radiology, report-generation, visual-grounding y mimic-cxr. El repositorio ocupa 0,8 GB, un tamano coherente con la distribucion de pesos de adaptador (LoRA) en lugar del modelo completo.
+GRCD (identificador `aranya059/GRCD`) es un adaptador PEFT publicado en Hugging Face por el usuario aranya059, orientado a la generacion de informes radiologicos de torax (chest X-ray) con anclaje visual (visual grounding). Se construye sobre el modelo base `lmsys/vicuna-7b-v1.5`, un transformer decoder-only de 7.000 millones de parametros derivado de LLaMA-2, y esta etiquetado con las palabras clave medical, radiology, report-generation, visual-grounding y mimic-cxr. El repositorio ocupa 0,8 GB, un tamano coherente con la distribucion de pesos de adaptador (LoRA) en lugar del modelo completo.
 
 El problema que aborda es el de la redaccion automatizada de hallazgos en radiografias de torax, con la particularidad de que el modelo incorpora anclaje visual: la generacion de texto se asocia a regiones concretas de la imagen. Este tipo de anclaje es relevante en el ambito clinico porque permite auditar que parte de la radiografia justifica cada afirmacion del informe, algo que los modelos puramente generativos no ofrecen.
 
-La relevancia actual del modelo esta condicionada por su regimen de acceso: el repositorio esta restringido (gated) y se distribuye bajo una licencia denominada `grcd-credentialed-research-use`, que exige aceptar condiciones en HuggingFace y limita el uso al ambito de investigacion acreditada. No hay descargas ni likes publicos, y no se ha publicado informacion sobre idiomas soportados, pipeline de inferencia ni resultados de benchmarks en los datos disponibles. La etiqueta del repositorio referencia el identificador arXiv 2607.02719, aunque su contenido no forma parte de la informacion proporcionada.
+La relevancia actual del modelo esta condicionada por su regimen de acceso: el repositorio esta restringido (gated) y se distribuye bajo una licencia denominada `grcd-credentialed-research-use`, que exige aceptar condiciones en Hugging Face y limita el uso al ambito de investigacion acreditada. No hay descargas ni likes publicos, y no se ha publicado informacion sobre idiomas soportados, pipeline de inferencia ni resultados de benchmarks en los datos disponibles. La etiqueta del repositorio referencia el identificador arXiv 2607.02719, aunque su contenido no forma parte de la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La relevancia actual del modelo esta condicionada por su regimen de acceso: el r
 | Licencia | `grcd-credentialed-research-use` (acceso restringido, requiere aceptar condiciones) |
 | Formato de pesos | Adaptadores PEFT (libreria declarada: `peft`); formato de fichero concreto no especificado |
 | Tamano del repositorio | 0,8 GB |
-| Acceso | Restringido (gated) en HuggingFace |
+| Acceso | Restringido (gated) en Hugging Face |
 | Dominio | Radiologia de torax (chest X-ray), generacion de informes con anclaje visual |
 | Dataset de referencia | MIMIC-CXR (segun etiquetas del repositorio) |
 | Pipeline declarado | No disponible |
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Componente visual: al tratarse de un sistema multimodal, hay que sumar la VRAM del codificador de imagen y del proyector, cuyo tamano no se especifica en la informacion disponible.
 - GPU recomendadas: A100 40 GB o H100 para despliegue en FP16 con margen; A100 80 GB o H100 80 GB si se sirven varias peticiones concurrentes con contexto largo; RTX 4090 (24 GB) o RTX 3090 (24 GB) son suficientes para FP16 en una sola peticion o para cuantizacion de 8/4 bits.
 - GPU de consumo: si cabe en tarjetas de 24 GB (RTX 3090, RTX 4090) en FP16, y en tarjetas de 12-16 GB (RTX 4070 Ti, RTX 4080) recurriendo a cuantizacion, siempre sumando la VRAM del codificador visual.
-- Opciones de despliegue: no se especifican en el repositorio. Al tratarse de un adaptador PEFT sobre Vicuna (familia LLaMA-2), es compatible con el ecosistema HuggingFace Transformers y `peft`; vLLM, TGI u Ollama requeririan fusionar el adaptador con el modelo base o bien un pipeline multimodal propio. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama no estan soportados de fabrica con la informacion disponible.
+- Opciones de despliegue: no se especifican en el repositorio. Al tratarse de un adaptador PEFT sobre Vicuna (familia LLaMA-2), es compatible con el ecosistema Hugging Face Transformers y `peft`; vLLM, TGI u Ollama requeririan fusionar el adaptador con el modelo base o bien un pipeline multimodal propio. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama no estan soportados de fabrica con la informacion disponible.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -76,12 +76,12 @@ No se dispone de datos de rendimiento del modelo GRCD, por lo que la comparacion
 | Modelo | Parametros | Contexto | Licencia | Acceso | Rendimiento |
 |---|---|---|---|---|---|
 | GRCD (aranya059/GRCD) | Adaptador sobre 7B (modelo base Vicuna-7B v1.5) | 4.096 tokens (heredado del base) | `grcd-credentialed-research-use` | Restringido (gated) | No disponible |
-| lmsys/vicuna-7b-v1.5 (modelo base) | 7.000 millones | 4.096 tokens | Licencia LLaMA-2 con condiciones de uso | Abierto en HuggingFace | No comparable: no esta especializado en radiologia ni en anclaje visual |
+| lmsys/vicuna-7b-v1.5 (modelo base) | 7.000 millones | 4.096 tokens | Licencia LLaMA-2 con condiciones de uso | Abierto en Hugging Face | No comparable: no esta especializado en radiologia ni en anclaje visual |
 | Otros sistemas de generacion de informes de torax sobre MIMIC-CXR | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
-- Licencia `grcd-credentialed-research-use`: el uso comercial no esta permitido segun la denominacion de la licencia, y el acceso exige acreditar condiciones y aceptar los terminos en HuggingFace. Es imprescindible revisar el texto completo de la licencia antes de cualquier uso.
+- Licencia `grcd-credentialed-research-use`: el uso comercial no esta permitido segun la denominacion de la licencia, y el acceso exige acreditar condiciones y aceptar los terminos en Hugging Face. Es imprescindible revisar el texto completo de la licencia antes de cualquier uso.
 - Dependencia de MIMIC-CXR: el corpus esta sujeto a un acuerdo de uso de datos con acceso acreditado. Cualquier despliegue derivado debe respetar esas restricciones, que se suman a las del propio modelo.
 - No es un dispositivo medico ni esta validado clinicamente. No debe emplearse para diagnostico, triaje real ni decision clinica sin validacion prospectiva y aprobacion regulatoria.
 - Riesgo de alucinacion: en generacion de informes radiologicos, un modelo de lenguaje puede describir hallazgos ausentes o silenciar hallazgos presentes. El anclaje visual mitiga parcialmente el problema, pero no lo elimina ni garantiza correccion clinica.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento del modelo GRCD, por lo que la comparacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aranya059/GRCD
+- Modelo en Hugging Face: https://huggingface.co/aranya059/GRCD
 - Modelo base: https://huggingface.co/lmsys/vicuna-7b-v1.5
 - Referencia arXiv citada en las etiquetas del repositorio: arXiv:2607.02719 (contenido no verificado en la informacion disponible; podria corresponder a https://arxiv.org/abs/2607.02719)
 - Otras busquedas web realizadas: no han devuelto ningun resultado relacionado con el modelo. No hay papers, blogs, repositorios ni demos adicionales disponibles.

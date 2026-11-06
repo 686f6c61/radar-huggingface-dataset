@@ -74,7 +74,7 @@ La comparativa se limita a los modelos de la misma familia y a Whisper small com
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/Rin247/Qwen3-ASR-1.7B-hf-FP4
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/Rin247/Qwen3-ASR-1.7B-hf-FP4
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Repositorio oficial de Qwen3-ASR en GitHub: https://github.com/QwenLM/Qwen3-ASR
 - Reporte tecnico de Qwen3-ASR (arXiv): https://arxiv.org/html/2601.21337

@@ -51,8 +51,8 @@ Dado que no se conocen los benchmarks de este modelo, la comparativa se limita a
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PJRM/kappa-3-phi-abliterated-Q4_0-GGUF | 3.821 millones | no disponible | GGUF (Q4_0) | MIT | HuggingFace |
-| afrideva/kappa-3-phi-abliterated-GGUF | 3.821 millones (estimado) | no disponible | GGUF | MIT | HuggingFace |
+| PJRM/kappa-3-phi-abliterated-Q4_0-GGUF | 3.821 millones | no disponible | GGUF (Q4_0) | MIT | Hugging Face |
+| afrideva/kappa-3-phi-abliterated-GGUF | 3.821 millones (estimado) | no disponible | GGUF | MIT | Hugging Face |
 | Modelo Phi-3 mini (referencia generica) | 3.800 millones | no disponible | no disponible | no disponible | no disponible |
 
 Nota: los datos de los modelos comparables no han sido verificados y se incluyen unicamente como referencia de tamaño.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Universal Translator RU → EN es un modelo de traduccion automatica ruso-ingles publicado por el usuario antontuzovAI en HuggingFace. Se trata de un traductor autorregresivo de arquitectura propia que combina un Universal Transformer con Weight Tying, atencion Multi-Head Latent Attention (MLA, al estilo de DeepSeek) y una capa feed-forward de tipo Mixture of Experts con 1 experto compartido y 8 enrutados (Top-K = 2). El modelo ocupa aproximadamente 46 millones de parametros fisicos en VRAM, pero reutiliza el mismo bloque 12 veces, lo que el autor describe como una profundidad efectiva de unos 550 millones de parametros.
+Universal Translator RU → EN es un modelo de traduccion automatica ruso-ingles publicado por el usuario antontuzovAI en Hugging Face. Se trata de un traductor autorregresivo de arquitectura propia que combina un Universal Transformer con Weight Tying, atencion Multi-Head Latent Attention (MLA, al estilo de DeepSeek) y una capa feed-forward de tipo Mixture of Experts con 1 experto compartido y 8 enrutados (Top-K = 2). El modelo ocupa aproximadamente 46 millones de parametros fisicos en VRAM, pero reutiliza el mismo bloque 12 veces, lo que el autor describe como una profundidad efectiva de unos 550 millones de parametros.
 
 El modelo se entrena sobre el corpus paralelo Helsinki-NLP/opus_books (traducciones literarias ruso-ingles) y espera un formato de prompt estricto: `RU: [texto en ruso]\nEN: [texto en ingles]`. Usa el tokenizador BPE de GPT-2, que cubre el cirilico mediante byte fallback, y genera la traduccion token a token de forma autorregresiva hasta emitir el token de fin de texto.
 
@@ -87,7 +87,7 @@ Nota: los datos de los modelos alternativos no provienen de la informacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/antontuzovAI/universal-translator-ru-en
+- Modelo en Hugging Face: https://huggingface.co/antontuzovAI/universal-translator-ru-en
 - Corpus de entrenamiento citado: Helsinki-NLP/opus_books (https://huggingface.co/datasets/Helsinki-NLP/opus_books)
 - Tokenizador utilizado: GPT-2 BPE via `tiktoken`
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada. Los resultados devueltos por la busqueda no guardan relacion con el modelo.

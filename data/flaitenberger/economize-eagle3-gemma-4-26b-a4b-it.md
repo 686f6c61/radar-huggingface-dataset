@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`economize-eagle3-gemma-4-26B-A4B-it` es una cabeza borrador (draft head) EAGLE-3 diseñada para acelerar la decodificación especulativa del modelo base `google/gemma-4-26B-A4B-it`. No es un modelo generativo autónomo: es un adaptador de 262M parámetros que se acopla al modelo base y predice varios tokens candidatos por cada pasada del verificador, que es el propio Gemma-4. Lo publica el usuario de HuggingFace `flaitenberger` como parte de la biblioteca `economize`, orientada a añadir técnicas de eficiencia a modelos de HuggingFace.
+`economize-eagle3-gemma-4-26B-A4B-it` es una cabeza borrador (draft head) EAGLE-3 diseñada para acelerar la decodificación especulativa del modelo base `google/gemma-4-26B-A4B-it`. No es un modelo generativo autónomo: es un adaptador de 262M parámetros que se acopla al modelo base y predice varios tokens candidatos por cada pasada del verificador, que es el propio Gemma-4. Lo publica el usuario de Hugging Face `flaitenberger` como parte de la biblioteca `economize`, orientada a añadir técnicas de eficiencia a modelos de Hugging Face.
 
 El borrador consta de una única capa decodificadora que lee los estados ocultos del modelo base a tres profundidades, los fusiona en un vector y, junto con el embedding del último token, predice los siguientes tokens mediante su propia cabeza LM restringida a los 32.768 tokens más frecuentes del corpus de entrenamiento. Su MLP tiene anchura 7.680. El resultado es un incremento medido de throughput de 1,34x de media frente a decodificación greedy plana en una H100, con picos de 1,48x en matemáticas.
 
@@ -33,7 +33,7 @@ El entrenamiento se realizó con la biblioteca `economize` sobre respuestas gene
 - Verificación garantizada: cada borrador es verificado por el modelo base, de modo que la decodificación greedy devuelve la salida greedy exacta del base y el muestreo por rechazo (`verifier="rejection"`) sigue su distribución de muestreo.
 - Parada adaptativa por confianza: el borrado se detiene cuando la probabilidad top del borrador cae por debajo del umbral configurado (`min_confidence`), lo que permite ajustar el equilibrio entre velocidad y tasa de aceptación.
 - Configurabilidad de decodificación: `cycle_length` y `min_confidence` se pueden pasar como `economize.DecodeConfig(...)` a `load`, `generate` o `decode`.
-- Integración con el ecosistema HuggingFace Transformers mediante `economize.from_pretrained` o `economize.load` sobre un modelo base ya cargado.
+- Integración con el ecosistema Hugging Face Transformers mediante `economize.from_pretrained` o `economize.load` sobre un modelo base ya cargado.
 - No soporta tool calling, agentes, visión ni audio por sí mismo: esas capacidades, si existen, dependen del modelo base y no se documentan en la model card del borrador.
 
 ## Casos de uso
@@ -82,7 +82,7 @@ No se dispone de información sobre otros drafters EAGLE-3 comparables en la doc
 
 | Modelo | Parametros | Contexto | Speedup | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| economize-eagle3-gemma-4-26B-A4B-it | 262M (borrador) | no disponible | 1,34x medio en H100 | Apache 2.0 | HuggingFace |
+| economize-eagle3-gemma-4-26B-A4B-it | 262M (borrador) | no disponible | 1,34x medio en H100 | Apache 2.0 | Hugging Face |
 | Otros borradores EAGLE-3 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No se dispone de información sobre otros drafters EAGLE-3 comparables en la doc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/flaitenberger/economize-eagle3-gemma-4-26B-A4B-it
+- Hugging Face: https://huggingface.co/flaitenberger/economize-eagle3-gemma-4-26B-A4B-it
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Repositorio GitHub de economize: https://github.com/Thiggel/economize
 - PyPI: https://pypi.org/project/economize/

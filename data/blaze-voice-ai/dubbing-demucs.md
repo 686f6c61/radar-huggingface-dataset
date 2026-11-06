@@ -74,13 +74,13 @@ Nota: los parámetros de htdemucs_ft y Spleeter son estimaciones basadas en docu
 - Dependencia del checkpoint: el modelo es una copia espejo de un checkpoint concreto (`04573f0d`); si Facebook Research actualiza o elimina el original, este repositorio mantiene la versión fija, pero no recibirá mejoras.
 - Artefactos en la separación: como todos los modelos de separación de fuentes, puede introducir artefactos o pérdida de calidad en ciertos tipos de música (por ejemplo, con mucha reverberación o mezclas densas).
 - Sin soporte multilingüe ni de texto: no procesa lenguaje natural, solo audio.
-- Requisitos de integración: para usarlo en producción, es necesario implementar el pipeline de carga via torch.hub o descargar el checkpoint manualmente; no hay una API estándar de HuggingFace Transformers.
+- Requisitos de integración: para usarlo en producción, es necesario implementar el pipeline de carga via torch.hub o descargar el checkpoint manualmente; no hay una API estándar de Hugging Face Transformers.
 - Licencia MIT: permite uso comercial, pero el modelo original de Demucs también es MIT, por lo que no hay restricciones adicionales.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/blaze-voice-ai/dubbing-demucs
+- Repositorio Hugging Face: https://huggingface.co/blaze-voice-ai/dubbing-demucs
 - Repositorio original de Demucs (Facebook Research): https://github.com/facebookresearch/demucs
 - Demostración online de Demucs: https://demucs.danielfrg.com/
-- Space de HuggingFace con Demucs: https://huggingface.co/spaces/aimuzik/demucs
+- Space de Hugging Face con Demucs: https://huggingface.co/spaces/aimuzik/demucs
 - Artículo de overview de Demucs en aimodels.fyi: https://www.aimodels.fyi/models/replicate/demucs-cjwbw

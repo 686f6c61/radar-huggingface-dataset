@@ -101,7 +101,7 @@ La comparación directa se limita al checkpoint original del que deriva. Esta co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wemoh/Qwen3.8-Flash-Next-strixw
+- Modelo en Hugging Face: https://huggingface.co/wemoh/Qwen3.8-Flash-Next-strixw
 - Checkpoint original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio del motor strixite: https://github.com/shawnshekari/strixite
 - Repositorio de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/

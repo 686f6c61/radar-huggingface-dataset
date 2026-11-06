@@ -84,8 +84,8 @@ Nota: la model card presenta dos cifras para el 2B (0,662 de *pooled top-1* sobr
 
 | Modelo | Parametros | Contexto | Rendimiento (typed-decisions) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RSI-Jev-v1.0-2B | Base Qwen3.5-2B + cabeza de 7,3 M | No disponible | 0,6525 / 0,662 *pooled top-1* | Apache 2.0 | HuggingFace, 0 descargas |
-| RSI-Jev-v1.0-0.8B | Base Qwen3.5-0.8B + cabeza de 7,3 M | No disponible | 0,614 *pooled top-1* | No disponible en la informacion extraida | HuggingFace |
+| RSI-Jev-v1.0-2B | Base Qwen3.5-2B + cabeza de 7,3 M | No disponible | 0,6525 / 0,662 *pooled top-1* | Apache 2.0 | Hugging Face, 0 descargas |
+| RSI-Jev-v1.0-0.8B | Base Qwen3.5-0.8B + cabeza de 7,3 M | No disponible | 0,614 *pooled top-1* | No disponible en la informacion extraida | Hugging Face |
 | Jev | No disponible | No disponible | 0,727 *pooled top-1* | No disponible | No disponible |
 | Linea base de mayoria | No aplica | No aplica | 0,5185 *pooled top-1* | No aplica | No aplica |
 
@@ -102,13 +102,13 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 - No hay informacion disponible sobre sesgos demograficos, idiomas soportados ni comportamiento fuera del ingles.
 - Las cifras solo son comparables dentro de la misma pila de kernels (`fla-0.5.2 / torch-2.7.1+cu128`), segun advierte el autor.
 - El uso requiere codigo propio (`code/load_release.py`); no se documenta integracion con librerias estandar como `transformers`, vLLM o llama.cpp.
-- Adopcion practicamente nula en el momento de la ficha: 0 descargas y 0 *likes* en HuggingFace.
+- Adopcion practicamente nula en el momento de la ficha: 0 descargas y 0 *likes* en Hugging Face.
 - Licencia Apache 2.0, que permite uso comercial, pero el autor no ofrece garantias ni soporte y pide que los fallos se reporten en las discusiones del repositorio.
 - Riesgo de confianza mal calibrada: el autor senala que un caso en el que el modelo se equivoca con alta confianza es especialmente util como caso de prueba, lo que implica que tales casos existen.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shgao/rsi-jev-v1.0-qwen3.5-2b
+- Modelo en Hugging Face: https://huggingface.co/shgao/rsi-jev-v1.0-qwen3.5-2b
 - Discusiones del repositorio: https://huggingface.co/shgao/rsi-jev-v1.0-qwen3.5-2b/discussions
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Repositorio GitHub del proyecto: https://github.com/Shanghua-Gao/RSI-Jev

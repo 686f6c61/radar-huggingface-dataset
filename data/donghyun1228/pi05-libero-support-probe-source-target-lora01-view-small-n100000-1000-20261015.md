@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Actualizaciones de entrenamiento | Fotogramas / datos | Resultado declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (target, `view_small`) | 1.000 | 100.000 fotogramas seleccionados | 1.812 / 2.000 en LIBERO (90,6 %) | Apache 2.0 | HuggingFace |
-| `pi05-libero-support-probe-source-n100000-10000-20261015` (fuente) | 10.000 | 100.000 fotogramas seleccionados | no disponible | Apache 2.0 | HuggingFace |
+| Este modelo (target, `view_small`) | 1.000 | 100.000 fotogramas seleccionados | 1.812 / 2.000 en LIBERO (90,6 %) | Apache 2.0 | Hugging Face |
+| `pi05-libero-support-probe-source-n100000-10000-20261015` (fuente) | 10.000 | 100.000 fotogramas seleccionados | no disponible | Apache 2.0 | Hugging Face |
 | Otros modelos VLA de la familia pi0.5 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones publicadas de alternativas como OpenVLA, Octo u otras politicas VLA en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable con modelos de la misma categoria.
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks ni de especificaciones publicadas de altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-target-lora01-view-small-n100000-1000-20261015
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-target-lora01-view-small-n100000-1000-20261015
 - Checkpoint fuente: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-n100000-10000-20261015 (commit `e435806e413a90c3b74c9411228a72b53b97060c`)
 - Dataset de entrenamiento: https://huggingface.co/datasets/Donghyun1228/libero-support-random-waypoint-300k-20261015 (commit `32ed215baf01af7e82f927a62b108873aa70bd19`)
 - Repositorio de la libreria `openpi`: no disponible en la informacion proporcionada

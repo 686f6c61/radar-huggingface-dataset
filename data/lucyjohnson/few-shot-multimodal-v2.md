@@ -64,5 +64,5 @@ No disponible. No existe una categoria de modelos comparable porque este reposit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lucyjohnson/few-shot-multimodal-v2
+- Repositorio Hugging Face: https://huggingface.co/lucyjohnson/few-shot-multimodal-v2
 - Articulo de referencia citado en la nota (arXiv 2511.01140): https://arxiv.org/pdf/2511.01140

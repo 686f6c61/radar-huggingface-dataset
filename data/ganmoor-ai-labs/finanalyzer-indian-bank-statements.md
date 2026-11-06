@@ -90,8 +90,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FinAnalyzer Indian Bank Statements | 4B (4.022.468.096) | No especificado; configuración de referencia 6144 tokens | Extracción JSON de extractos bancarios indios | Apache-2.0 | GGUF (Q8_0, Q4_K_M) en HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4B | No disponible en la información proporcionada | Propósito general, instrucciones | Apache-2.0 | Peso completo en HuggingFace |
+| FinAnalyzer Indian Bank Statements | 4B (4.022.468.096) | No especificado; configuración de referencia 6144 tokens | Extracción JSON de extractos bancarios indios | Apache-2.0 | GGUF (Q8_0, Q4_K_M) en Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4B | No disponible en la información proporcionada | Propósito general, instrucciones | Apache-2.0 | Peso completo en Hugging Face |
 | Otras alternativas de extracción documental de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Nota: la información proporcionada no incluye benchmarks ni especificaciones de otros modelos de extracción de extractos bancarios indios que permitan una comparación directa.
@@ -110,7 +110,7 @@ Nota: la información proporcionada no incluye benchmarks ni especificaciones de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ganmoor-ai-labs/finanalyzer-indian-bank-statements
+- Modelo en Hugging Face: https://huggingface.co/ganmoor-ai-labs/finanalyzer-indian-bank-statements
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Dataset de evaluación externo: https://huggingface.co/datasets/AgamiAI/Indian-Bank-Statements
 - Paper, blog, repositorio o demo adicionales: no disponible en la información proporcionada.

@@ -6,7 +6,7 @@ El modelo `amirsoahil101/Student_sleep_mental_health_2026` es un clasificador de
 
 La relevancia de este modelo radica en su aplicación práctica para el ámbito educativo y de salud pública: permite estimar de forma automatizada el estado de salud mental de estudiantes a partir de datos de sueño y hábitos, lo que puede servir como herramienta de cribado temprano. Según la información disponible, alcanza una precisión de aproximadamente el 82,34 % en la métrica de evaluación interna, con una desviación estándar de 0,0069 entre pliegues, lo que sugiere estabilidad. El repositorio incluye una aplicación Streamlit desplegable y un cuaderno Jupyter con el proceso completo de modelado.
 
-Cabe destacar que la ficha de HuggingFace presenta una inconsistencia: la descripción corta menciona "regression model predicting medical insurance charges", mientras que el título y el contenido describen un problema de clasificación de salud mental. Esta discrepancia debe tenerse en cuenta al evaluar el modelo.
+Cabe destacar que la ficha de Hugging Face presenta una inconsistencia: la descripción corta menciona "regression model predicting medical insurance charges", mientras que el título y el contenido describen un problema de clasificación de salud mental. Esta discrepancia debe tenerse en cuenta al evaluar el modelo.
 
 ## Especificaciones tecnicas
 
@@ -68,12 +68,12 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 - Riesgo de alucinacion: no aplica, al ser un modelo tabular y no generativo. Sin embargo, puede producir predicciones erroneas si las caracteristicas de entrada estan fuera del rango de entrenamiento.
 - Limitaciones de contexto: el modelo solo acepta las variables numericas definidas en `columns.pkl`. No procesa texto libre ni datos no estructurados.
 - Restricciones de licencia: la licencia MIT permite uso comercial y modificacion sin restricciones, siempre que se incluya el aviso de copyright.
-- Inconsistencia en la documentacion: la descripcion corta de HuggingFace menciona "regression model predicting medical insurance charges", lo que contradice el titulo y el contenido del proyecto (clasificacion de salud mental). Esto puede indicar un error de copia o un modelo mal etiquetado; se recomienda verificar la naturaleza real del modelo antes de usarlo en produccion.
+- Inconsistencia en la documentacion: la descripcion corta de Hugging Face menciona "regression model predicting medical insurance charges", lo que contradice el titulo y el contenido del proyecto (clasificacion de salud mental). Esto puede indicar un error de copia o un modelo mal etiquetado; se recomienda verificar la naturaleza real del modelo antes de usarlo en produccion.
 - El enlace a la aplicacion Streamlit en la model card es un placeholder (`https://your-streamlit-app-link.streamlit.app`), por lo que la demo en vivo no esta accesible.
 - No se proporcionan metadatos sobre el rendimiento en datos de prueba independientes, solo en validacion cruzada. El sobreajuste no puede descartarse por completo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amirsoahil101/Student_sleep_mental_health_2026
+- Hugging Face: https://huggingface.co/amirsoahil101/Student_sleep_mental_health_2026
 - Repositorio de GitHub (mencionado en la model card): https://github.com/amirsohail100/Student-Sleep-Mental-Health-Prediction
-- Perfil del autor en HuggingFace: https://huggingface.co/amirsoahil101
+- Perfil del autor en Hugging Face: https://huggingface.co/amirsoahil101

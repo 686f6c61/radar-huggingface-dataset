@@ -63,7 +63,7 @@ No disponible. Este repositorio no es un modelo, sino un documento técnico. No 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/satoleo1990/paper_001219762_efficient_attention
+- Repositorio Hugging Face: https://huggingface.co/satoleo1990/paper_001219762_efficient_attention
 - Paper de atención eficiente (IEEE): https://ieeexplore.ieee.org/document/9423033
 - Paper WACV 2021: https://openaccess.thecvf.com/content/WACV2021/html/Shen_Efficient_Attention_Attention_With_Linear_Complexities_WACV_2021_paper.html
 - Survey sobre atención eficiente (arXiv): https://arxiv.org/html/2507.19595v1

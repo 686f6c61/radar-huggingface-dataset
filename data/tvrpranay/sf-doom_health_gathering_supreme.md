@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tvrpranay/sf-doom_health_gathering_supreme` no es un modelo de lenguaje, sino un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `doom_health_gathering_supreme` de ViZDoom, dentro del ecosistema de Sample Factory. Lo publica el usuario `tvrpranay` en HuggingFace con la etiqueta `deep-rl-course`, lo que apunta a un ejercicio formativo del curso de deep reinforcement learning de HuggingFace mas que a un artefacto pensado para produccion.
+`tvrpranay/sf-doom_health_gathering_supreme` no es un modelo de lenguaje, sino un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `doom_health_gathering_supreme` de ViZDoom, dentro del ecosistema de Sample Factory. Lo publica el usuario `tvrpranay` en Hugging Face con la etiqueta `deep-rl-course`, lo que apunta a un ejercicio formativo del curso de deep reinforcement learning de Hugging Face mas que a un artefacto pensado para produccion.
 
 El problema que resuelve es acotado: aprender una politica que maximice la recompensa en un escenario de recogida de botiquines en un entorno 3D con observaciones visuales (pixeles) y recompensa dispersa. Su relevancia es fundamentalmente metodologica: sirve como referencia reproducible de un entrenamiento PPO con Sample Factory y como punto de partida para comparaciones, ablaciones o transferencia a entornos similares.
 
@@ -71,7 +71,7 @@ No se dispone de datos publicados de otros agentes sobre `doom_health_gathering_
 
 | Modelo / implementacion | Algoritmo | Entorno | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| tvrpranay/sf-doom_health_gathering_supreme | PPO (Sample Factory) | doom_health_gathering_supreme | No disponible | No aplica | mean_reward 18.50 (no verificado) | No disponible | HuggingFace, repo de 0.0 GB, 0 descargas |
+| tvrpranay/sf-doom_health_gathering_supreme | PPO (Sample Factory) | doom_health_gathering_supreme | No disponible | No aplica | mean_reward 18.50 (no verificado) | No disponible | Hugging Face, repo de 0.0 GB, 0 descargas |
 | Agentes de referencia de Sample Factory para ViZDoom | APPO / PPO | Familia doom_* de ViZDoom | No disponible en esta ficha | No aplica | No disponible | Licencia del proyecto Sample Factory | Repositorio publico del framework |
 | Implementaciones PPO de proposito general (CleanRL, Stable-Baselines3) | PPO | Multiples entornos Gym/Gymnasium | No disponible en esta ficha | No aplica | No disponible | MIT u otras (segun proyecto) | Codigo abierto, sin pesos preentrenados para este entorno |
 
@@ -79,7 +79,7 @@ La comparacion relevante no es de tamano ni de contexto, sino de algoritmo, pres
 
 ## Limitaciones y advertencias
 
-- La licencia no esta declarada en la model card ni en los metadatos de HuggingFace. No se puede asumir uso comercial sin consultar previamente al autor.
+- La licencia no esta declarada en la model card ni en los metadatos de Hugging Face. No se puede asumir uso comercial sin consultar previamente al autor.
 - El unico resultado de rendimiento esta marcado como `verified: false` y carece de varianza entre semillas, numero de episodios y configuracion exacta del entorno, lo que impide reproducibilidad estricta.
 - El repositorio declara un tamano de 0.0 GB y cero descargas, lo que sugiere que los pesos pueden no estar subidos o no ser recuperables. Verificar antes de planificar cualquier uso.
 - La model card no documenta arquitectura, hiperparametros ni presupuesto de entrenamiento; esto limita la trazabilidad y la comparacion con otros agentes.
@@ -92,9 +92,9 @@ La comparacion relevante no es de tamano ni de contexto, sino de algoritmo, pres
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tvrpranay/sf-doom_health_gathering_supreme
+- Modelo en Hugging Face: https://huggingface.co/tvrpranay/sf-doom_health_gathering_supreme
 - Repositorio de Sample Factory: https://github.com/alex-petrenko/sample-factory (referencia del framework indicado en `library_name`, no procedente de la busqueda web)
 - Articulo de Sample Factory: https://arxiv.org/abs/2006.11751 (referencia del framework, no procedente de la busqueda web)
-- Curso de deep reinforcement learning de HuggingFace: https://huggingface.co/learn/deep-rl-course (contexto de la etiqueta `deep-rl-course`, no procedente de la busqueda web)
+- Curso de deep reinforcement learning de Hugging Face: https://huggingface.co/learn/deep-rl-course (contexto de la etiqueta `deep-rl-course`, no procedente de la busqueda web)
 
 Nota: la busqueda web realizada no devolvio ningun enlace relevante sobre este modelo; los resultados obtenidos eran documentos y publicaciones sin relacion con el artefacto.

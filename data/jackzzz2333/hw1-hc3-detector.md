@@ -100,6 +100,6 @@ La informacion proporcionada no incluye datos de rendimiento de modelos alternat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JackZzZ2333/hw1-hc3-detector
+- Hugging Face: https://huggingface.co/JackZzZ2333/hw1-hc3-detector
 - Dataset de entrenamiento: Hello-SimpleAI/HC3 (referenciado en los tags y en la model card; no se proporciona URL en la informacion disponible)
 - Resultados de busqueda web: las consultas realizadas han devuelto unicamente paginas de una empresa francesa de conservacion de patrimonio (ecp-fr.com y directorios de oficios del patrimonio), sin ninguna relacion con el modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales.

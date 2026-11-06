@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Unlimited-OCR-2-AIPod es una redistribución del modelo baidu/Unlimited-OCR-2, publicada por el usuario manateelazycat en HuggingFace, orientada a su despliegue en dispositivos NVIDIA Jetson (AI Pod). El modelo original es un sistema de OCR (reconocimiento óptico de caracteres) de tipo image-text-to-text desarrollado por Baidu, empaquetado aquí con artefactos de instalación específicos para hardware Jetson. El repositorio tiene un tamaño de 21,8 GB y los pesos en BF16 se distribuyen sin modificaciones respecto al upstream fijado en el commit `04647c7a6098d8d58915f003536a741c82eafb40`.
+Unlimited-OCR-2-AIPod es una redistribución del modelo baidu/Unlimited-OCR-2, publicada por el usuario manateelazycat en Hugging Face, orientada a su despliegue en dispositivos NVIDIA Jetson (AI Pod). El modelo original es un sistema de OCR (reconocimiento óptico de caracteres) de tipo image-text-to-text desarrollado por Baidu, empaquetado aquí con artefactos de instalación específicos para hardware Jetson. El repositorio tiene un tamaño de 21,8 GB y los pesos en BF16 se distribuyen sin modificaciones respecto al upstream fijado en el commit `04647c7a6098d8d58915f003536a741c82eafb40`.
 
 El problema que resuelve es la extracción de texto a partir de imágenes en entornos de borde (edge computing) sobre placas Jetson, donde el despliegue de modelos de visión-lenguaje requiere artefactos de instalación adaptados. La model card indica que los archivos de modelo se montan en modo lectura y que los artefactos de instalación usan commits duales fijos con tamaños y SHA256 verificados, descargados por AI Pod Host. No se proporcionan en la información disponible datos sobre arquitectura interna, número de parámetros, longitud de contexto ni composición del entrenamiento.
 
@@ -76,5 +76,5 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- [HuggingFace: manateelazycat/Unlimited-OCR-2-AIPod](https://huggingface.co/manateelazycat/Unlimited-OCR-2-AIPod)
+- [Hugging Face: manateelazycat/Unlimited-OCR-2-AIPod](https://huggingface.co/manateelazycat/Unlimited-OCR-2-AIPod)
 - Modelo original referenciado: baidu/Unlimited-OCR-2 (commit `04647c7a6098d8d58915f003536a741c82eafb40`); no se proporciona URL directa en la información disponible.

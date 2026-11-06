@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3 es un modelo de lenguaje de gran tamaño desarrollado por Zhipu AI (Z.ai), presentado como el nuevo modelo insignia en agosto de 2026. Según la información publicada, se construye sobre la misma base que GLM-5.2, y todas las mejoras provienen de un post-entrenamiento a gran escala orientado a tareas de largo horizonte. El modelo tiene aproximadamente 753 mil millones de parámetros y está disponible como pesos abiertos en HuggingFace, con un tamaño de repositorio de 755,7 GB en formato safetensors. Su relevancia radica en que alcanza resultados de estado del arte en benchmarks de codificación compleja y ciberseguridad, como Terminal Bench 3.0, Agents' Last Exam y CyberGym, superando a modelos abiertos y cerrados comparables. La arquitectura no se detalla en la información disponible, aunque el tag `glm_moe_dsa` sugiere una arquitectura Mixture-of-Experts con atención dispersa. El contexto no se especifica oficialmente, pero las evaluaciones mencionan contextos de hasta 1 millón de tokens.
+GLM-5.3 es un modelo de lenguaje de gran tamaño desarrollado por Zhipu AI (Z.ai), presentado como el nuevo modelo insignia en agosto de 2026. Según la información publicada, se construye sobre la misma base que GLM-5.2, y todas las mejoras provienen de un post-entrenamiento a gran escala orientado a tareas de largo horizonte. El modelo tiene aproximadamente 753 mil millones de parámetros y está disponible como pesos abiertos en Hugging Face, con un tamaño de repositorio de 755,7 GB en formato safetensors. Su relevancia radica en que alcanza resultados de estado del arte en benchmarks de codificación compleja y ciberseguridad, como Terminal Bench 3.0, Agents' Last Exam y CyberGym, superando a modelos abiertos y cerrados comparables. La arquitectura no se detalla en la información disponible, aunque el tag `glm_moe_dsa` sugiere una arquitectura Mixture-of-Experts con atención dispersa. El contexto no se especifica oficialmente, pero las evaluaciones mencionan contextos de hasta 1 millón de tokens.
 
 ## Especificaciones técnicas
 
@@ -12,14 +12,14 @@ GLM-5.3 es un modelo de lenguaje de gran tamaño desarrollado por Zhipu AI (Z.ai
 | Parámetros totales | 753.329.940.480 (≈753 mil millones) |
 | Parámetros activos | No disponible |
 | Longitud de contexto | No disponible oficialmente; evaluaciones mencionan contextos de hasta 1M tokens |
-| Tipos de cuantización | FP8 (según tags de HuggingFace); no se especifican otros |
+| Tipos de cuantización | FP8 (según tags de Hugging Face); no se especifican otros |
 | Idiomas soportados | Inglés y chino |
 | Licencia | glm-5.3 (licencia personalizada, no estándar) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea la misma base que GLM-5.2, y las mejoras de GLM-5.3 provienen exclusivamente del post-entrenamiento. No se han publicado detalles sobre la composición del dataset de entrenamiento, el número de tokens ni técnicas de alineación como RLHF o DPO. El tag de HuggingFace `glm_moe_dsa` sugiere una arquitectura de Mixture-of-Experts con atención dispersa, pero no hay documentación técnica adicional en la información disponible. El modelo incluye un parámetro de control del presupuesto de razonamiento, `reasoning_effort`, que acepta los niveles `low`, `high` y `max`, con `max` como valor por defecto. También se menciona el parámetro `clear_thinking` en la plantilla de chat, que debe activarse explícitamente en escenarios conversacionales.
+El modelo emplea la misma base que GLM-5.2, y las mejoras de GLM-5.3 provienen exclusivamente del post-entrenamiento. No se han publicado detalles sobre la composición del dataset de entrenamiento, el número de tokens ni técnicas de alineación como RLHF o DPO. El tag de Hugging Face `glm_moe_dsa` sugiere una arquitectura de Mixture-of-Experts con atención dispersa, pero no hay documentación técnica adicional en la información disponible. El modelo incluye un parámetro de control del presupuesto de razonamiento, `reasoning_effort`, que acepta los niveles `low`, `high` y `max`, con `max` como valor por defecto. También se menciona el parámetro `clear_thinking` en la plantilla de chat, que debe activarse explícitamente en escenarios conversacionales.
 
 ## Capacidades
 
@@ -79,7 +79,7 @@ No se dispone de especificaciones completas (parámetros, contexto, licencia, di
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Terminal Bench 3.0 | DeepSWE | CyberGym | ExploitBench |
 |---|---|---|---|---|---|---|---|---|
-| GLM-5.3 | 753B | No disponible | glm-5.3 | Open weights (HuggingFace) | 28.3 | 66.9 | 84.5 | 54.4 |
+| GLM-5.3 | 753B | No disponible | glm-5.3 | Open weights (Hugging Face) | 28.3 | 66.9 | 84.5 | 54.4 |
 | GLM-5.2 | No disponible | No disponible | No disponible | No disponible | 4.6 | 46.2 | 77.2 | 24.4 |
 | Kimi K3 | No disponible | No disponible | No disponible | No disponible | 17.4 | 67.5 | 80.0 | 32.2 |
 | DeepSeek-V4 Pro-0813 | No disponible | No disponible | No disponible | No disponible | – | 62.7 | 83.3 | – |
@@ -95,7 +95,7 @@ No se dispone de especificaciones completas (parámetros, contexto, licencia, di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trinityomni/GLM-5.3
+- Hugging Face: https://huggingface.co/trinityomni/GLM-5.3
 - OpenLM.ai: https://openlm.ai/glm-5.3/
 - glm5.app: https://glm5.app/glm-5-3
 - Repositorio del modelo (según la model card): https://github.com/zai-org/GLM-5

@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| incidentbench-nokev_nonamed_lt2024 | 7B (base) + LoRA r=16 | no disponible | Adaptador de clasificación | other | HuggingFace (11 descargas) |
-| Qwen2.5-7B-Instruct | 7B | no disponible en la informacion proporcionada | Modelo instructivo general | no disponible en la informacion proporcionada | HuggingFace (modelo base) |
+| incidentbench-nokev_nonamed_lt2024 | 7B (base) + LoRA r=16 | no disponible | Adaptador de clasificación | other | Hugging Face (11 descargas) |
+| Qwen2.5-7B-Instruct | 7B | no disponible en la informacion proporcionada | Modelo instructivo general | no disponible en la informacion proporcionada | Hugging Face (modelo base) |
 | Otras variantes de IncidentBench | no disponible | no disponible | Adaptadores de clasificación | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (clasificadores de incidentes de riesgo de IA) en la información proporcionada.
@@ -83,7 +83,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chiffonng/incidentbench-nokev_nonamed_lt2024
+- Hugging Face: https://huggingface.co/chiffonng/incidentbench-nokev_nonamed_lt2024
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Informe de IncidentBench: no disponible como enlace en la información proporcionada
 - Repositorio del proyecto y manifiestos (`data_manifest.json`, `train_manifest.json`): no disponibles como enlaces en la información proporcionada

@@ -80,8 +80,8 @@ Los datos de los modelos de referencia proceden de conocimiento general sobre la
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (ReadAll stage-2, local step15) | 14,77 B | 32.768 tokens | QA documental largo con protocolo ReadTwice (RL) | no disponible | HuggingFace, 0 descargas |
-| Xirui1208/readall-readtwice-14b-rl-step15-20260925 | 14,77 B (misma base) | 32.768 tokens | Checkpoint padre de RL ReadAll | no disponible | HuggingFace (modelo base declarado) |
+| Este modelo (ReadAll stage-2, local step15) | 14,77 B | 32.768 tokens | QA documental largo con protocolo ReadTwice (RL) | no disponible | Hugging Face, 0 descargas |
+| Xirui1208/readall-readtwice-14b-rl-step15-20260925 | 14,77 B (misma base) | 32.768 tokens | Checkpoint padre de RL ReadAll | no disponible | Hugging Face (modelo base declarado) |
 | Qwen2.5-14B-Instruct | ~14,7 B | 32.768 tokens | Instrucciones generales, multilingüe | Apache 2.0 (según su model card pública) | Ampliamente disponible |
 | Qwen2.5-14B (base) | ~14,7 B | 32.768 tokens | Modelo base sin ajuste de instrucciones | Apache 2.0 (según su model card pública) | Ampliamente disponible |
 
@@ -103,7 +103,7 @@ Comparativa de rendimiento directa: no disponible, ya que este checkpoint no ha 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xirui1208/readall-readtwice-14b-stage2-localstep15-globalstep30-20260926
+- Modelo en Hugging Face: https://huggingface.co/Xirui1208/readall-readtwice-14b-stage2-localstep15-globalstep30-20260926
 - Modelo base (ReadAll14B step15): https://huggingface.co/Xirui1208/readall-readtwice-14b-rl-step15-20260925 (revisión `ebdc012fadb9a18eb74cc8adb5822b4bc42c7d66`)
 - Dataset DocQA + HQA2560: https://huggingface.co/datasets/Xirui1208/readtwice-docqa-hqa-rl-2560-20260925 (revisión `fcd8d755f07710413b58665c2445290ede092e17`)
 - Código de entrenamiento, protocolo ReadTwice y recompensas: `training_code.tar.gz` dentro del repositorio

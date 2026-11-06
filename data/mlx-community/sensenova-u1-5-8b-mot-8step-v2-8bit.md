@@ -103,7 +103,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K y 
 
 ## Enlaces
 
-- Artefacto en HuggingFace: https://huggingface.co/mlx-community/SenseNova-U1.5-8B-MoT-8step-v2-8bit
+- Artefacto en Hugging Face: https://huggingface.co/mlx-community/SenseNova-U1.5-8B-MoT-8step-v2-8bit
 - Modelo base upstream: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
 - Commit del upstream: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT/commit/07d76f61474b9c6e6999e22c559314d3439b8c81
 - Repositorio de LoRAs: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-LoRAs
@@ -113,4 +113,4 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K y 
 - Paper: https://arxiv.org/abs/2605.12500
 - Implementacion de referencia en PyTorch: https://github.com/OpenSenseNova/SenseNova-U1
 - Runtime MLX-Swift: https://github.com/xocialize/sensenova-u1-swift
-- Organizacion SenseNova en HuggingFace: https://huggingface.co/sensenova
+- Organizacion SenseNova en Hugging Face: https://huggingface.co/sensenova

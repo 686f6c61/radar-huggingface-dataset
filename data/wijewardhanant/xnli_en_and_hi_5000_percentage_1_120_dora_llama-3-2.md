@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_DoRA_llama-3.2
+- Modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_DoRA_llama-3.2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Referencia citada en las etiquetas y en la model card (Lacoste et al., 2019, calculadora de impacto de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning mencionada en la model card: https://mlco2.github.io/impact

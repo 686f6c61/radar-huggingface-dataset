@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bheri/ithasa-labse-en-sa es un modelo de embeddings de frases (sentence-similarity) obtenido por ajuste fino de `sentence-transformers/LaBSE` sobre texto paralelo inglés–sánscrito. Lo publica el usuario Bheri en HuggingFace y su proposito concreto es la recuperacion cross-lingual entre ingles y sanscrito: dado un segmento en un idioma, encontrar su traduccion o su equivalente semantico en el otro. Es, por tanto, una pieza de infraestructura para busqueda bilingue, alineacion de corpus y memorias de traduccion, no un modelo generativo.
+Bheri/ithasa-labse-en-sa es un modelo de embeddings de frases (sentence-similarity) obtenido por ajuste fino de `sentence-transformers/LaBSE` sobre texto paralelo inglés–sánscrito. Lo publica el usuario Bheri en Hugging Face y su proposito concreto es la recuperacion cross-lingual entre ingles y sanscrito: dado un segmento en un idioma, encontrar su traduccion o su equivalente semantico en el otro. Es, por tanto, una pieza de infraestructura para busqueda bilingue, alineacion de corpus y memorias de traduccion, no un modelo generativo.
 
 Arquitectonicamente es un codificador BERT dual (LaBSE, 470.926.848 parametros, 768 dimensiones de embedding, pooling CLS, similitud coseno, maximo 512 tokens de entrada). El ajuste se hizo con 609.187 pares de entrenamiento procedentes de cuatro fuentes, con limpieza, deduplicacion y separacion estricta de validacion y test por identidad de frase normalizada.
 
@@ -92,7 +92,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de benchmarks de emb
 - Cabe holgadamente en GPU de consumo: RTX 3060 12 GB, RTX 4060 8 GB, RTX 4070, RTX 4090; tambien en GPUs de 4 GB con fp16.
 - Inferencia en CPU viable para lotes pequenos, dado el tamano de 471 M de parametros; útil para indexacion por lotes en servidores sin GPU.
 - GPU de datacenter (A100, H100, L40S) solo necesarias para indexar volumenes grandes a alto throughput, no por requisito de memoria.
-- Opciones de despliegue: `sentence-transformers` (referencia), `text-embeddings-inference` (soportado segun los tags), HuggingFace Inference Endpoints (`endpoints_compatible`), y servidores de embeddings compatibles con el formato sentence-transformers.
+- Opciones de despliegue: `sentence-transformers` (referencia), `text-embeddings-inference` (soportado segun los tags), Hugging Face Inference Endpoints (`endpoints_compatible`), y servidores de embeddings compatibles con el formato sentence-transformers.
 - llama.cpp y Ollama no son utilizables directamente: no se publican pesos GGUF en el repositorio y habria que convertirlos.
 - Latencia y throughput: no disponible. No se publican mediciones; dependeran del hardware, del lote y de la longitud de las secuencias hasta el limite de 512 tokens.
 
@@ -124,7 +124,7 @@ No se dispone de comparativas publicadas frente a otros modelos de embeddings pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bheri/ithasa-labse-en-sa
+- Modelo en Hugging Face: https://huggingface.co/Bheri/ithasa-labse-en-sa
 - Modelo base: https://huggingface.co/sentence-transformers/LaBSE
 - Libreria sentence-transformers: https://www.sbert.net/
 - Text Embeddings Inference: https://github.com/huggingface/text-embeddings-inference

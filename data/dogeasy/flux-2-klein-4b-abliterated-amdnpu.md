@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| FLUX.2-klein-4B-abliterated-amdnpu | 4B | No disponible | No disponible | HuggingFace (ONNX) | Derivado no oficial, codificador sin censura |
-| amd/FLUX.2-klein-4B-amdnpu | 4B | No disponible | No disponible | HuggingFace | Modelo base oficial de AMD para NPU |
-| black-forest-labs/FLUX.2-klein-4B | 4B | No disponible | No disponible | HuggingFace | Modelo original de Black Forest Labs |
-| ponpoke/flux2-klein-4b-uncensored-text-encoder | 4B (codificador) | No disponible | No disponible | HuggingFace | Codificador de texto abliterated |
+| FLUX.2-klein-4B-abliterated-amdnpu | 4B | No disponible | No disponible | Hugging Face (ONNX) | Derivado no oficial, codificador sin censura |
+| amd/FLUX.2-klein-4B-amdnpu | 4B | No disponible | No disponible | Hugging Face | Modelo base oficial de AMD para NPU |
+| black-forest-labs/FLUX.2-klein-4B | 4B | No disponible | No disponible | Hugging Face | Modelo original de Black Forest Labs |
+| ponpoke/flux2-klein-4b-uncensored-text-encoder | 4B (codificador) | No disponible | No disponible | Hugging Face | Codificador de texto abliterated |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: DogEasy/FLUX.2-klein-4B-abliterated-amdnpu](https://huggingface.co/DogEasy/FLUX.2-klein-4B-abliterated-amdnpu)
+- [Hugging Face: DogEasy/FLUX.2-klein-4B-abliterated-amdnpu](https://huggingface.co/DogEasy/FLUX.2-klein-4B-abliterated-amdnpu)
 - [Modelo base AMD: amd/FLUX.2-klein-4B-amdnpu](https://huggingface.co/amd/FLUX.2-klein-4B-amdnpu)
 - [Modelo original: black-forest-labs/FLUX.2-klein-4B](https://huggingface.co/black-forest-labs/FLUX.2-klein-4B)
 - [Codificador abliterated: ponpoke/flux2-klein-4b-uncensored-text-encoder](https://huggingface.co/ponpoke/flux2-klein-4b-uncensored-text-encoder)

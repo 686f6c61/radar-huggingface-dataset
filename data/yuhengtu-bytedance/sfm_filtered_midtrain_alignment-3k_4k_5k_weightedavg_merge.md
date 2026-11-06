@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables. Al no conocer el modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-3k_4k_5k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-3k_4k_5k_weightedavg_merge
 - Página de despliegue en FriendliAI: https://friendli.ai/models/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-3k_4k_5k_merge
 - Merge similar (2k_3k_4k): https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-2k_3k_4k_merge
 - Paper sobre método Linear: https://arxiv.org/abs/2203.05482

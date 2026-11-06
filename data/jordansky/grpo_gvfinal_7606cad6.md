@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jordansky/grpo_gvfinal_7606cad6 es un adaptador PEFT (Parameter-Efficient Fine-Tuning) publicado por el usuario Jordansky en HuggingFace, construido sobre el modelo base Qwen/Qwen3-8B. El nombre del repositorio sugiere que fue entrenado mediante GRPO (Group Relative Policy Optimization), una técnica de optimización por refuerzo que se ha popularizado para alinear modelos de razonamiento, aunque la model card no proporciona confirmación explícita de este detalle.
+Jordansky/grpo_gvfinal_7606cad6 es un adaptador PEFT (Parameter-Efficient Fine-Tuning) publicado por el usuario Jordansky en Hugging Face, construido sobre el modelo base Qwen/Qwen3-8B. El nombre del repositorio sugiere que fue entrenado mediante GRPO (Group Relative Policy Optimization), una técnica de optimización por refuerzo que se ha popularizado para alinear modelos de razonamiento, aunque la model card no proporciona confirmación explícita de este detalle.
 
 El repositorio contiene únicamente los pesos del adaptador (1.4 GB en formato safetensors), no el modelo completo, lo que indica que se trata de un fine-tuning de bajo rango (LoRA u otro método PEFT) sobre Qwen3-8B. La ficha técnica del autor está prácticamente vacía, con todos los campos marcados como "[More Information Needed]", por lo que la información disponible sobre el entrenamiento, los datos utilizados y las capacidades específicas es muy limitada.
 
@@ -68,10 +68,10 @@ La comparativa se realiza con el modelo base y otros adaptadores del mismo autor
 
 | Modelo | Base | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jordansky/grpo_gvfinal_7606cad6 | Qwen3-8B | 8B + adaptador | 32K (base) | no disponible | HuggingFace |
-| Qwen/Qwen3-8B | - | 8B | 32K | Apache 2.0 | HuggingFace |
-| Jordansky/2507-r1 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Jordansky/grpo_ours_v2_7606cad6 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Jordansky/grpo_gvfinal_7606cad6 | Qwen3-8B | 8B + adaptador | 32K (base) | no disponible | Hugging Face |
+| Qwen/Qwen3-8B | - | 8B | 32K | Apache 2.0 | Hugging Face |
+| Jordansky/2507-r1 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Jordansky/grpo_ours_v2_7606cad6 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar estos modelos entre si. El unico dato fiable es que el adaptador se basa en Qwen3-8B, que es un modelo solido de 8B con buenos resultados en razonamiento y codigo.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento para comparar estos modelos entre si. El u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jordansky/grpo_gvfinal_7606cad6
+- Repositorio Hugging Face: https://huggingface.co/Jordansky/grpo_gvfinal_7606cad6
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Modelo relacionado del autor (2507-r1): https://huggingface.co/Jordansky/2507-r1
 - Modelo relacionado del autor (grpo_ours_v2): https://friendli.ai/models/Jordansky/grpo_ours_v2_7606cad6

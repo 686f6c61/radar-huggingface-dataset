@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/kic_M_Qwen3-8B_java_t1.0_g4_run0` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, que a su vez deriva del Qwen3-8B-Base de Alibaba. Lo publica el usuario stefanocarrera en HuggingFace bajo licencia Apache 2.0. El nombre del repositorio sugiere un ajuste orientado a Java (probablemente generación o comprensión de código Java), aunque la model card no documenta explícitamente la tarea ni el dataset empleado.
+`stefanocarrera/kic_M_Qwen3-8B_java_t1.0_g4_run0` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, que a su vez deriva del Qwen3-8B-Base de Alibaba. Lo publica el usuario stefanocarrera en Hugging Face bajo licencia Apache 2.0. El nombre del repositorio sugiere un ajuste orientado a Java (probablemente generación o comprensión de código Java), aunque la model card no documenta explícitamente la tarea ni el dataset empleado.
 
 El modelo parte de la arquitectura transformer densa de Qwen3 con 8.000 millones de parámetros. El fine-tune se realizó con la librería Unsloth, que el autor indica que permitió entrenar "2x más rápido". El repositorio ocupa 0,2 GB, lo que apunta a pesos en cuantización de 4 bits (el base ya era bnb-4bit) o a un subconjunto de los pesos; no se especifica en la información disponible.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_java_t1.0_g4_run0 | 8B | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B-Base (modelo base original) | 8B | 32.768 nativos (131.072 con YaRN, según Qwen) | Apache 2.0 | HuggingFace, ampliamente usado |
-| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | 8B | mismo que el base | Apache 2.0 | HuggingFace |
-| Meta Llama 3.1 8B | 8B | 128.000 | Llama 3.1 Community License | HuggingFace, ampliamente usado |
+| stefanocarrera/kic_M_Qwen3-8B_java_t1.0_g4_run0 | 8B | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B-Base (modelo base original) | 8B | 32.768 nativos (131.072 con YaRN, según Qwen) | Apache 2.0 | Hugging Face, ampliamente usado |
+| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | 8B | mismo que el base | Apache 2.0 | Hugging Face |
+| Meta Llama 3.1 8B | 8B | 128.000 | Llama 3.1 Community License | Hugging Face, ampliamente usado |
 
 El fine-tune no aporta datos de rendimiento que permitan compararlo cuantitativamente con el base ni con alternativas. Su interés es experimental, no competitivo.
 
@@ -82,7 +82,7 @@ El fine-tune no aporta datos de rendimiento que permitan compararlo cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t1.0_g4_run0
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t1.0_g4_run0
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Qwen3-8B-Base original: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Unsloth (repositorio): https://github.com/unslothai/unsloth

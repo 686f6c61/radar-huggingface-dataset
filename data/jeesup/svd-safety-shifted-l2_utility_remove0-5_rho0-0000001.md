@@ -57,9 +57,9 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-shifted-l2_utility_remove0.5_rho0.0000001 | 6,74B | no disponible | Compresión SVD con sesgo de seguridad, sin recuperación | llama2 | HuggingFace, 11 descargas |
-| meta-llama/Llama-2-7b-chat-hf | 6,74B | 4.096 tokens (modelo base) | Modelo original con RLHF | llama2 | HuggingFace, ampliamente usado |
-| Variantes de compresión SVD de Llama 2 (familia del mismo autor) | ~6,7B | no disponible | Distintos valores de rho y presupuestos de rango | llama2 | HuggingFace, disponibilidad variable |
+| Jeesup/svd-safety-shifted-l2_utility_remove0.5_rho0.0000001 | 6,74B | no disponible | Compresión SVD con sesgo de seguridad, sin recuperación | llama2 | Hugging Face, 11 descargas |
+| meta-llama/Llama-2-7b-chat-hf | 6,74B | 4.096 tokens (modelo base) | Modelo original con RLHF | llama2 | Hugging Face, ampliamente usado |
+| Variantes de compresión SVD de Llama 2 (familia del mismo autor) | ~6,7B | no disponible | Distintos valores de rho y presupuestos de rango | llama2 | Hugging Face, disponibilidad variable |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 - Idiomas soportados no documentados; no asumir cobertura multilingüe más allá de la del modelo base.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l2_utility_remove0.5_rho0.0000001
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l2_utility_remove0.5_rho0.0000001
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código o demos adicionales.

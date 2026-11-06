@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rin-AI-LoRA es un ajuste fino (fine-tuning) del modelo Qwen3-0.6B, desarrollado por el usuario Samuelross y publicado en HuggingFace. Se trata de un modelo derivado de `unsloth/Qwen3-0.6B-unsloth-bnb-4bit`, la versión del Qwen3 de 0,6 mil millones de parámetros preparada por Unsloth para entrenamiento eficiente en 4 bits. El modelo se ha entrenado con la librería Unsloth, que según el autor permite un entrenamiento "2x más rápido" que los pipelines convencionales.
+Rin-AI-LoRA es un ajuste fino (fine-tuning) del modelo Qwen3-0.6B, desarrollado por el usuario Samuelross y publicado en Hugging Face. Se trata de un modelo derivado de `unsloth/Qwen3-0.6B-unsloth-bnb-4bit`, la versión del Qwen3 de 0,6 mil millones de parámetros preparada por Unsloth para entrenamiento eficiente en 4 bits. El modelo se ha entrenado con la librería Unsloth, que según el autor permite un entrenamiento "2x más rápido" que los pipelines convencionales.
 
 El modelo hereda la arquitectura transformer densa de Qwen3 y está orientado a generación de texto en inglés. Su tamaño reducido (0,6B parámetros) lo sitúa en la categoría de modelos ligeros, aptos para ejecución en hardware de consumo o en entornos con recursos limitados. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Rin-AI-LoRA (este) | 0,6B | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Fine-tuning personal sin evaluación publicada |
-| Qwen3-0.6B (base) | 0,6B | no disponible en esta ficha | Apache 2.0 | HuggingFace, ampliamente usado | Modelo oficial de Alibaba, con model card completa y benchmarks |
-| Qwen2.5-0.5B | 0,5B | 32K (según documentación oficial de Qwen2.5) | Apache 2.0 | HuggingFace | Generación anterior, bien documentado |
-| SmolLM2-360M | 0,36B | 8K (según documentación oficial) | Apache 2.0 | HuggingFace | Alternativa ligera de HuggingFace, con benchmarks publicados |
+| Rin-AI-LoRA (este) | 0,6B | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Fine-tuning personal sin evaluación publicada |
+| Qwen3-0.6B (base) | 0,6B | no disponible en esta ficha | Apache 2.0 | Hugging Face, ampliamente usado | Modelo oficial de Alibaba, con model card completa y benchmarks |
+| Qwen2.5-0.5B | 0,5B | 32K (según documentación oficial de Qwen2.5) | Apache 2.0 | Hugging Face | Generación anterior, bien documentado |
+| SmolLM2-360M | 0,36B | 8K (según documentación oficial) | Apache 2.0 | Hugging Face | Alternativa ligera de Hugging Face, con benchmarks publicados |
 
 La comparativa se limita a modelos de tamaño similar; no hay datos de rendimiento de Rin-AI-LoRA que permitan una comparación cuantitativa.
 
@@ -82,7 +82,7 @@ La comparativa se limita a modelos de tamaño similar; no hay datos de rendimien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Samuelross/Rin-AI-LoRA
+- Hugging Face: https://huggingface.co/Samuelross/Rin-AI-LoRA
 - Modelo base: https://huggingface.co/unsloth/Qwen3-0.6B-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - Qwen3 (familia oficial): https://huggingface.co/Qwen/Qwen3-0.6B

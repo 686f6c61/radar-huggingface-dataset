@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ajrayman/Gregariousness_binary` es un ajuste fino (fine-tuning) de `roberta-base` orientado a la clasificación binaria de textos, presumiblemente para detectar el rasgo de personalidad "gregariousness" (sociabilidad o extraversión). Lo desarrolla el usuario de HuggingFace `ajrayman`, que ha publicado varios modelos similares con nombres como `Anger_binary` o `Self-consciousness_binary`, lo que sugiere que forma parte de una familia de clasificadores de rasgos psicológicos. El modelo se distribuye con licencia MIT y cuenta con 124.647.170 parámetros, el mismo tamaño que su base RoBERTa-base.
+El modelo `ajrayman/Gregariousness_binary` es un ajuste fino (fine-tuning) de `roberta-base` orientado a la clasificación binaria de textos, presumiblemente para detectar el rasgo de personalidad "gregariousness" (sociabilidad o extraversión). Lo desarrolla el usuario de Hugging Face `ajrayman`, que ha publicado varios modelos similares con nombres como `Anger_binary` o `Self-consciousness_binary`, lo que sugiere que forma parte de una familia de clasificadores de rasgos psicológicos. El modelo se distribuye con licencia MIT y cuenta con 124.647.170 parámetros, el mismo tamaño que su base RoBERTa-base.
 
 Su relevancia radica en que ofrece una solución ligera y de código abierto para tareas de análisis de texto centradas en la personalidad, un área con aplicaciones en psicología computacional, análisis de redes sociales o recursos humanos. Sin embargo, los resultados de evaluación publicados muestran un rendimiento moderado (accuracy de 0,6351), por lo que debe considerarse como un prototipo o modelo de partida más que como una solución lista para producción. La información disponible es escasa: la model card es autogenerada y no incluye detalles sobre el dataset de entrenamiento ni sobre los idiomas soportados.
 
@@ -62,7 +62,7 @@ Estos resultados indican un rendimiento moderado, ligeramente superior al azar (
 - Inferencia en CPU: viable, ya que 124M parámetros requieren aproximadamente 500 MB de memoria en FP32. Un portátil moderno puede ejecutar el modelo sin problemas.
 - VRAM estimada para inferencia: menos de 1 GB en FP32; con cuantización a int8 o int4 (si se aplicara) se reduciría aún más.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1050 Ti, RTX 2060, o incluso integradas). No requiere GPUs de centro de datos.
-- Opciones de despliegue: compatible con HuggingFace Transformers, pipelines de `text-classification`, y puede servirse mediante TGI, vLLM o un endpoint personalizado. También es posible usar ONNX o TensorRT para optimizar la inferencia.
+- Opciones de despliegue: compatible con Hugging Face Transformers, pipelines de `text-classification`, y puede servirse mediante TGI, vLLM o un endpoint personalizado. También es posible usar ONNX o TensorRT para optimizar la inferencia.
 - Latencia y throughput: no hay datos publicados, pero dada la arquitectura y el tamaño, se espera una latencia de milisegundos por lote en GPU y decenas de milisegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -80,6 +80,6 @@ No se dispone de información sobre modelos comparables en la misma tarea (clasi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ajrayman/Gregariousness_binary
+- Modelo en Hugging Face: https://huggingface.co/ajrayman/Gregariousness_binary
 - Modelo base: https://huggingface.co/FacebookAI/roberta-base
 - Otros modelos del autor: https://huggingface.co/ajrayman/Anger_binary, https://huggingface.co/ajrayman/Self-consciousness_binary

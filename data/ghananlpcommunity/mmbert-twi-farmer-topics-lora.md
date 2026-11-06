@@ -93,7 +93,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ghananlpcommunity/mmbert-twi-farmer-topics-lora
+- Modelo en Hugging Face: https://huggingface.co/ghananlpcommunity/mmbert-twi-farmer-topics-lora
 - Modelo base `jhu-clsp/mmBERT-base`: https://huggingface.co/jhu-clsp/mmBERT-base
 - Libreria Adapter-Hub `adapters`: https://github.com/Adapter-Hub/adapters
 - Conjunto de datos AfriFarmer (mencionado en la model card, sin enlace disponible): no disponible

@@ -90,7 +90,7 @@ No se dispone de información sobre otros modelos de ciberseguridad comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nico248000000000/Qwen3.8-27B-cyber
+- Modelo en Hugging Face: https://huggingface.co/nico248000000000/Qwen3.8-27B-cyber
 - Repositorio LoRA separado: https://huggingface.co/nico248000000000/Qwen3.8-27B-cyber-LoRA
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - GitHub oficial del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

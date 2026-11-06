@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TransferCal es un artefacto de investigación publicado por Abdullah Almohammedi (investigador independiente) bajo el identificador `al3obdi/TransferCal-PAIEC-2026` en HuggingFace. No se trata de un modelo de lenguaje generativo, sino de un *predictor* estadístico de calibración de probabilidades orientado a la evaluación de modelos de IA. Concretamente, es la versión congelada (v44) que el autor presentó a la evaluación formativa de CoDaBench como submission 1028713, obteniendo un Brier ALC de 0,174811 (métrica en la que valores más bajos son mejores).
+TransferCal es un artefacto de investigación publicado por Abdullah Almohammedi (investigador independiente) bajo el identificador `al3obdi/TransferCal-PAIEC-2026` en Hugging Face. No se trata de un modelo de lenguaje generativo, sino de un *predictor* estadístico de calibración de probabilidades orientado a la evaluación de modelos de IA. Concretamente, es la versión congelada (v44) que el autor presentó a la evaluación formativa de CoDaBench como submission 1028713, obteniendo un Brier ALC de 0,174811 (métrica en la que valores más bajos son mejores).
 
 El método combina un prior Ridge entrenado sobre sujeto-ítem de origen público con una corrección de kernel semidefinido positivo (PSD) construida a partir de metadatos, demanda de tarea, características léxicas y n-gramas Unicode de cuatro tokens, ajustada con etiquetas reveladas. El sistema está diseñado para operar con presupuestos de etiquetas reveladas de 0, 1, 3, 7, 15 y 31, usando la adquisición aleatoria del organizador, y no requiere ejecución de modelos objetivo, red, descarga, clave secreta ni API de inferencia: basta con la biblioteca estándar de Python.
 
@@ -66,7 +66,7 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TransferCal v44 (este) | Predictor de calibración estadístico | no disponible | no aplica | MIT | HuggingFace, ZIP verificado |
+| TransferCal v44 (este) | Predictor de calibración estadístico | no disponible | no aplica | MIT | Hugging Face, ZIP verificado |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre predictores comparables de la misma categoría (calibración con presupuestos escasos de etiquetas) en la documentación proporcionada.
@@ -85,7 +85,7 @@ No se dispone de información sobre predictores comparables de la misma categor�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/al3obdi/TransferCal-PAIEC-2026
+- Hugging Face: https://huggingface.co/al3obdi/TransferCal-PAIEC-2026
 - Dataset de origen (Measurement Data Bank): https://huggingface.co/datasets/aims-foundations/measurement-db
 - Revisión fijada del dataset: `54074453da7b9911be0f48e4c560be547bc84d21`
 - ZIP oficialmente puntuado: `submission.zip` (SHA256 `3c9b2c1f0b8072f3548861429841c3ac019b5b85b584195090442ec625a458be`)

@@ -1,7 +1,7 @@
 # stupid-zwl/JDI-Decision-V1
 
 ## Resumen
-JDI-Decision-V1 es un sistema multimodal de decisión desarrollado por JD.com (京东) y publicado en HuggingFace por el usuario `stupid-zwl`. No es un modelo de lenguaje generativo al uso: su función es emitir elecciones estructuradas y probabilidades asociadas a cada opción para entradas que combinan texto e imágenes. Se construye sobre una base Qwen3.8-27B (26.085.330.160 parámetros según los pesos safetensors) con adaptaciones de la arquitectura de decisión D3, e incorpora un codificador visual propio y un componente de reconocimiento de texto PaddleOCR v5 congelado, procedente del equipo PaddlePaddle de Baidu.
+JDI-Decision-V1 es un sistema multimodal de decisión desarrollado por JD.com (京东) y publicado en Hugging Face por el usuario `stupid-zwl`. No es un modelo de lenguaje generativo al uso: su función es emitir elecciones estructuradas y probabilidades asociadas a cada opción para entradas que combinan texto e imágenes. Se construye sobre una base Qwen3.8-27B (26.085.330.160 parámetros según los pesos safetensors) con adaptaciones de la arquitectura de decisión D3, e incorpora un codificador visual propio y un componente de reconocimiento de texto PaddleOCR v5 congelado, procedente del equipo PaddlePaddle de Baidu.
 
 El sistema resuelve el problema de seleccionar entre alternativas discretas (tipo test de opción múltiple) cuando la información relevante está repartida entre píxeles y texto. Cada petición se ejecuta en una única GPU: se decodifica la imagen, se redimensiona, se ejecutan en paralelo la rama de visión y la de OCR, y la transcripción resultante se inyecta en el estado (`state.image_text_transcription`) junto con la imagen original. La columna vertebral de decisión procesa después características visuales, pregunta y opciones, y una cabeza de lectura en FP32 devuelve la respuesta estructurada con sus probabilidades.
 
@@ -85,7 +85,7 @@ No se dispone en la información proporcionada de datos de benchmarks comparable
 - Riesgo de alucinación y calibración de probabilidades no evaluados en la información disponible; las probabilidades de salida deberían validarse en el dominio de aplicación antes de usarse como umbrales automáticos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/stupid-zwl/JDI-Decision-V1
+- Modelo en Hugging Face: https://huggingface.co/stupid-zwl/JDI-Decision-V1
 - Conjunto de resultados de evaluación: https://huggingface.co/datasets/stupid-zwl/JDI-Decision-V1/tree/427820d71f624baac1c747e9b484a75a8f744ba6/runs/vision-paddle-v5
 - Guía de reproducción (REPRODUCE.md): incluida en el repositorio del modelo
 - Fuentes y hashes del OCR (ocr_inference/ocr_sources.json): incluido en el repositorio del modelo

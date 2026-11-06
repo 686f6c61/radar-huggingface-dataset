@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `aviralku/mr9b-qwen35base-v5-scaffold-cispo-h100-215` es un checkpoint de tipo actor resultante de un proceso de aprendizaje por refuerzo (RL) aplicado sobre el modelo base `Qwen/Qwen3.5-9B`. Lo publica el usuario `aviralku` (Aviral Kumar) en HuggingFace, con un pipeline declarado de `reinforcement-learning` y etiquetas que apuntan a `cispo`, `meta-reasoning` y `verl`, lo que sugiere que el entrenamiento se realizo con el framework de RL para LLM conocido como verl y una variante de optimizacion de politica denominada CISPO.
+El modelo `aviralku/mr9b-qwen35base-v5-scaffold-cispo-h100-215` es un checkpoint de tipo actor resultante de un proceso de aprendizaje por refuerzo (RL) aplicado sobre el modelo base `Qwen/Qwen3.5-9B`. Lo publica el usuario `aviralku` (Aviral Kumar) en Hugging Face, con un pipeline declarado de `reinforcement-learning` y etiquetas que apuntan a `cispo`, `meta-reasoning` y `verl`, lo que sugiere que el entrenamiento se realizo con el framework de RL para LLM conocido como verl y una variante de optimizacion de politica denominada CISPO.
 
 El modelo resuelve, en principio, la mejora de capacidades de razonamiento y meta-razonamiento sobre la base de Qwen3.5-9B, mediante un bucle de RL en el que la recompensa utilizada durante esta fase fue unicamente la de correccion (reward de acierto) y con el bonus de exploracion desactivado. El checkpoint corresponde al paso global 66 (`global_step_66`, paso de optimizador 134) de la ejecucion `mr9b_qwen35base_v5_scaffold_cispo_h100_215_20260923_092531`.
 
-Es relevante ahora porque representa un ejemplo de publicacion de artefactos intermedios de entrenamiento RL en abierto: un export de solo actor en pesos HuggingFace fusionados, con 9.409.813.744 parametros totales, 18,8 GB de repositorio y formato safetensors, pero sin model card exhaustiva sobre datos de entrenamiento, licencia o idiomas, lo que limita su uso directo en produccion sin verificaciones adicionales.
+Es relevante ahora porque representa un ejemplo de publicacion de artefactos intermedios de entrenamiento RL en abierto: un export de solo actor en pesos Hugging Face fusionados, con 9.409.813.744 parametros totales, 18,8 GB de repositorio y formato safetensors, pero sin model card exhaustiva sobre datos de entrenamiento, licencia o idiomas, lo que limita su uso directo en produccion sin verificaciones adicionales.
 
 ## Especificaciones tecnicas
 
@@ -19,11 +19,11 @@ Es relevante ahora porque representa un ejemplo de publicacion de artefactos int
 | Tipos de cuantizacion | No especificados por el autor; al distribuirse en safetensors admite cuantizacion posterior por la comunidad (GPTQ, AWQ, GGUF), aunque no hay versiones oficiales publicadas |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
-| Formato de pesos | safetensors (export fusionado de pesos HuggingFace desde `actor/huggingface`) |
+| Formato de pesos | safetensors (export fusionado de pesos Hugging Face desde `actor/huggingface`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de `Qwen/Qwen3.5-9B`, un transformer decoder de ~9.400 millones de parametros. El modelo publicado no introduce cambios estructurales respecto al base: se trata de un fine-tuning por RL cuyos pesos han sido fusionados y exportados en formato HuggingFace. El repositorio contiene unicamente el modelo actor; el estado distribuido del optimizador y la cola asincrona de rollouts permanecen en el checkpoint local completo del autor, por lo que no se reproducen en este artefacto.
+La arquitectura subyacente es la de `Qwen/Qwen3.5-9B`, un transformer decoder de ~9.400 millones de parametros. El modelo publicado no introduce cambios estructurales respecto al base: se trata de un fine-tuning por RL cuyos pesos han sido fusionados y exportados en formato Hugging Face. El repositorio contiene unicamente el modelo actor; el estado distribuido del optimizador y la cola asincrona de rollouts permanecen en el checkpoint local completo del autor, por lo que no se reproducen en este artefacto.
 
 El entrenamiento se realizo con la tecnica etiquetada como CISPO (una variante de optimizacion de politica con recorte de importancia, del estilo de PPO/GRPO) sobre el framework `verl`. La model card indica que en el momento de este checkpoint la fase de entrenamiento usaba exclusivamente la recompensa de correccion, con el bonus de exploracion desactivado. Se trata de la version v5 de una familia de checkpoints RL del mismo autor (existe una v4 previa, `mr9b-qwen35base-v4-cispo-h100-215`, correspondiente al paso global 32). No se han facilitado en la informacion disponible datos sobre numero de tokens de entrenamiento, composicion del dataset, ni fases de RLHF, DPO o SFT adicionales.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aviralku/mr9b-qwen35base-v5-scaffold-cispo-h100-215 | 9.409.813.744 | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
-| aviralku/mr9b-qwen35base-v4-cispo-h100-215 | No disponible (deriva de Qwen3.5-9B) | No disponible | Sin benchmarks publicados | No disponible | HuggingFace |
-| Qwen/Qwen3.5-9B (base) | ~9B (no confirmado en la informacion) | No disponible | No disponible en la informacion | No disponible en la informacion | HuggingFace |
-| Familia Kev (0.8B, 4B, 9B sobre Qwen3.5) | 0.8B / 4B / 9B | No disponible | No disponible | Apache-2.0 | HuggingFace / GitHub |
+| aviralku/mr9b-qwen35base-v5-scaffold-cispo-h100-215 | 9.409.813.744 | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
+| aviralku/mr9b-qwen35base-v4-cispo-h100-215 | No disponible (deriva de Qwen3.5-9B) | No disponible | Sin benchmarks publicados | No disponible | Hugging Face |
+| Qwen/Qwen3.5-9B (base) | ~9B (no confirmado en la informacion) | No disponible | No disponible en la informacion | No disponible en la informacion | Hugging Face |
+| Familia Kev (0.8B, 4B, 9B sobre Qwen3.5) | 0.8B / 4B / 9B | No disponible | No disponible | Apache-2.0 | Hugging Face / GitHub |
 
 ## Limitaciones y advertencias
 
@@ -84,9 +84,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aviralku/mr9b-qwen35base-v5-scaffold-cispo-h100-215
+- Repositorio Hugging Face: https://huggingface.co/aviralku/mr9b-qwen35base-v5-scaffold-cispo-h100-215
 - Version previa del mismo autor: https://huggingface.co/aviralku/mr9b-qwen35base-v4-cispo-h100-215
-- Perfil del autor en HuggingFace: https://huggingface.co/aviralku/datasets
+- Perfil del autor en Hugging Face: https://huggingface.co/aviralku/datasets
 - Referencia externa sobre la familia Qwen3.5 (Kev, de Jared Palmer): https://aiweekly.co/alerts/jared-palmer-ports-kev-to-qwen35-for-roughly-95-in-h100
 - Contexto sobre la hoja de ruta de Alibaba y Qwen: https://www.techedt.com/alibaba-lays-out-ai-roadmap-across-qwen-models-chips-and-agent-services
 - Ranking de modelos Qwen (referencia): https://benchlm.ai/best/alibaba-models

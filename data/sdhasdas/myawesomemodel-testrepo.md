@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sdhasdas/MyAwesomeModel-TestRepo` de HuggingFace es un proyecto de prueba que, segun su model card, describe un modelo de lenguaje de gran tamano con capacidades mejoradas de razonamiento, generacion de codigo y soporte de function calling. Sin embargo, el repositorio no contiene ningun archivo de pesos (0.0 GB, 0 descargas) y la metadata de HuggingFace indica un pipeline de `feature-extraction` con etiquetas `transformers`, `pytorch` y `bert`, lo que contradice la descripcion de un asistente conversacional en la model card. No se dispone de informacion tecnica verificable sobre la arquitectura, el numero de parametros, la longitud de contexto ni otros datos esenciales.
+El repositorio `sdhasdas/MyAwesomeModel-TestRepo` de Hugging Face es un proyecto de prueba que, segun su model card, describe un modelo de lenguaje de gran tamano con capacidades mejoradas de razonamiento, generacion de codigo y soporte de function calling. Sin embargo, el repositorio no contiene ningun archivo de pesos (0.0 GB, 0 descargas) y la metadata de Hugging Face indica un pipeline de `feature-extraction` con etiquetas `transformers`, `pytorch` y `bert`, lo que contradice la descripcion de un asistente conversacional en la model card. No se dispone de informacion tecnica verificable sobre la arquitectura, el numero de parametros, la longitud de contexto ni otros datos esenciales.
 
 La model card, extraida del repositorio, afirma que el modelo ha sido actualizado con mejoras sustanciales en la profundidad de razonamiento y en la reduccion de alucinaciones. Tambien menciona resultados en benchmarks como AIME 2025, con una precision que sube del 70 % al 87.5 %. No obstante, estos datos son declaraciones del autor y no pueden verificarse porque el repositorio no aloja los pesos del modelo. En la practica, `MyAwesomeModel-TestRepo` es un repositorio placeholder sin implementacion real.
 
@@ -21,7 +21,7 @@ La model card, extraida del repositorio, afirma que el modelo ha sido actualizad
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona detalles sobre la arquitectura del modelo. En la metadata de HuggingFace figuran las etiquetas `transformers`, `pytorch` y `bert`, lo que suguiere un modelo basado en la libreria Transformers, pero no se indica si es un transformer puro, un mixture-of-experts o una arquitectura hibrida. El repositorio no contiene configuracion del modelo ni pesos, por lo que no es posible determinar la arquitectura real.
+La model card no proporciona detalles sobre la arquitectura del modelo. En la metadata de Hugging Face figuran las etiquetas `transformers`, `pytorch` y `bert`, lo que suguiere un modelo basado en la libreria Transformers, pero no se indica si es un transformer puro, un mixture-of-experts o una arquitectura hibrida. El repositorio no contiene configuracion del modelo ni pesos, por lo que no es posible determinar la arquitectura real.
 
 En cuanto al proceso de entrenamiento, la model card indica que el modelo ha pasado por "mecanismos de optimizacion algoritmica" durante el post-entrenamiento, y que se ha incrementado la profundidad de razonamiento mediante un mayor uso de tokens de pensamiento (de 12K a 23K tokens por pregunta en el conjunto AIME). No se detallan los datos de entrenamiento, el numero total de tokens, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO.
 
@@ -84,7 +84,7 @@ No se dispone de informacion sobre modelos comparables. La model card menciona `
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no contiene los pesos del modelo, por lo que no puede ser utilizado en ningun caso real.
+- El repositorio de Hugging Face no contiene los pesos del modelo, por lo que no puede ser utilizado en ningun caso real.
 - La metadata del repositorio indica `feature-extraction` y etiquetas relacionadas con `bert`, lo que contradice la descripcion de la model card como asistente conversacional. Esto genera incertidumbre sobre el proposito real del repositorio.
 - Los resultados de benchmarks presentados son declaraciones del autor sin evidencia reproducible. No se han publicado los datos de evaluacion ni los conjuntos de prueba.
 - La model card esta truncada en el punto de la plantilla de busqueda web, y no especifica la licencia de uso mas alla de MIT. Sin embargo, al no haber archivos, la licencia no es aplicable a un modelo ejecutable.
@@ -94,6 +94,6 @@ No se dispone de informacion sobre modelos comparables. La model card menciona `
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sdhasdas/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/sdhasdas/MyAwesomeModel-TestRepo
 
 No se han encontrado enlaces adicionales relevantes en la busqueda web. La model card menciona un sitio web oficial y un repositorio de codigo para ejecutar el modelo localmente, pero no proporciona las URLs correspondientes.

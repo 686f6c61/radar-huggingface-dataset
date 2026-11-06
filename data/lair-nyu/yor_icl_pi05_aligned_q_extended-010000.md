@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entorno | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yor_icl_pi05_aligned_q_extended-010000` | no disponible | Estado de 15 dim, acción de 14 dim, 31 tareas | no disponible | no disponible | Pesos en HuggingFace (`params/` + `assets/`) |
-| `yor_icl_pi05_aligned_q_sanity15k` (mismo autor) | no disponible | Conjunto reducido previo | no disponible | no disponible | Pesos en HuggingFace |
+| `yor_icl_pi05_aligned_q_extended-010000` | no disponible | Estado de 15 dim, acción de 14 dim, 31 tareas | no disponible | no disponible | Pesos en Hugging Face (`params/` + `assets/`) |
+| `yor_icl_pi05_aligned_q_sanity15k` (mismo autor) | no disponible | Conjunto reducido previo | no disponible | no disponible | Pesos en Hugging Face |
 | Backbone pi0.5 (openpi, Physical Intelligence) | no disponible | No disponible | no disponible | no disponible | Repositorio openpi |
 | Otros modelos VLA de código abierto | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ La búsqueda web realizada no devolvió resultados relevantes, por lo que no se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lair-nyu/yor_icl_pi05_aligned_q_extended-010000
+- Modelo en Hugging Face: https://huggingface.co/lair-nyu/yor_icl_pi05_aligned_q_extended-010000
 - Checkpoint previo del mismo autor: https://huggingface.co/lair-nyu/yor_icl_pi05_aligned_q_sanity15k
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/Hannibal52Barca/icl-dataset-fixed-action
 - Framework openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi

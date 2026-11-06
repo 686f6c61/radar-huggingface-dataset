@@ -6,7 +6,7 @@ bayesian-statistics-ai999x es un motor determinista de estadística bayesiana pa
 
 Su relevancia práctica está en el nicho de aplicaciones que necesitan aritmética estadística auditable sin conexión: docencia, corrección automática de ejercicios y pipelines que no pueden permitirse una alucinación. El autor declara siete resultados posibles (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) y afirma que las 378 respuestas documentadas se reproducen de forma idéntica en Windows y Linux con Python 3.10 a 3.14. El paquete se distribuye como wheel puro de Python (sympy, mpmath), funciona solo en CPU y no requiere GPU, red ni clave de API.
 
-Conviene señalar una discrepancia relevante antes de evaluarlo: la model card lo describe como Python puro, mientras que el repositorio de HuggingFace declara 4.715.520 parámetros en safetensors y etiquetas onnx y safetensors. La model card también marca `inference: false`, por lo que el widget de inferencia de HuggingFace no está operativo. El modelo está en versión 1.0.3, con licencia Apache-2.0, solo inglés y 35 descargas en el momento de la consulta.
+Conviene señalar una discrepancia relevante antes de evaluarlo: la model card lo describe como Python puro, mientras que el repositorio de Hugging Face declara 4.715.520 parámetros en safetensors y etiquetas onnx y safetensors. La model card también marca `inference: false`, por lo que el widget de inferencia de Hugging Face no está operativo. El modelo está en versión 1.0.3, con licencia Apache-2.0, solo inglés y 35 descargas en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -81,7 +81,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 - GPU recomendadas: ninguna. El autor indica explícitamente que no hace falta GPU.
 - Compatibilidad con GPU de consumo: irrelevante, funciona en cualquier CPU con Python 3.10, 3.11, 3.12, 3.13 o 3.14.
 - Plataformas verificadas: Windows con Python 3.13 y Linux x86-64 con Python 3.10 a 3.14.
-- Opciones de despliegue: `pip install bayesian-statistics-ai999x`, instalación directa del wheel desde el repositorio de HuggingFace, o empaquetado en una imagen de contenedor. No hay soporte declarado para vLLM, llama.cpp, Ollama ni TGI, porque no es un modelo de pesos en el sentido habitual.
+- Opciones de despliegue: `pip install bayesian-statistics-ai999x`, instalación directa del wheel desde el repositorio de Hugging Face, o empaquetado en una imagen de contenedor. No hay soporte declarado para vLLM, llama.cpp, Ollama ni TGI, porque no es un modelo de pesos en el sentido habitual.
 - Latencia y throughput: no disponibles. La naturaleza determinista y simbólica implica tiempos dependientes del problema, no del tamaño del lote.
 - Almacenamiento: 0,1 GB de repositorio más el entorno de Python.
 
@@ -104,7 +104,7 @@ La comparación cuantitativa de rendimiento frente a estas alternativas no está
 - Cobertura de entrada limitada: `ask()` solo reconoce formas de pregunta documentadas; el resto requiere la interfaz tipada `solve()`, lo que traslada el trabajo de formateo al desarrollador.
 - Métricas no verificadas: los tres resultados del model-index figuran con `verified: false` y proceden de conjuntos de evaluación propios (`ai999x-evaluation`), sin validación externa ni comparación con terceros.
 - Discrepancia de artefactos: la model card describe Python puro, pero el repositorio declara 4.715.520 parámetros en safetensors y etiquetas ONNX; conviene auditar qué contienen esos ficheros antes de integrarlos en un entorno regulado.
-- Inferencia desactivada en HuggingFace: `inference: false`, por lo que no se puede probar desde el widget del repositorio; hay que instalar el paquete.
+- Inferencia desactivada en Hugging Face: `inference: false`, por lo que no se puede probar desde el widget del repositorio; hay que instalar el paquete.
 - Adopción muy baja: 35 descargas y 0 likes en el momento de la consulta, sin comunidad ni issues públicos documentados, lo que reduce la probabilidad de que los fallos estén ya detectados por terceros.
 - Riesgo de alucinación bajo por diseño, pero no nulo en la fase de interpretación: si la capa de reglas malinterpreta una pregunta en lenguaje natural y la mapea a una capacidad válida, la aritmética será correcta y el resultado irrelevante. El estado AMBIGUOUS mitiga, no elimina, este riesgo.
 - Licencia Apache-2.0: permite uso comercial y modificación con atribución y conservación del aviso de licencia; no hay cláusulas de uso restringido declaradas, pero tampoco garantías ni soporte del autor.
@@ -112,13 +112,13 @@ La comparación cuantitativa de rendimiento frente a estas alternativas no está
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/bayesian-statistics-ai999x
+- Modelo en Hugging Face: https://huggingface.co/AI999X/bayesian-statistics-ai999x
 - Paquete en PyPI: https://pypi.org/project/bayesian-statistics-ai999x/
 - Guía de capacidades (carpeta docs del repositorio): https://huggingface.co/AI999X/bayesian-statistics-ai999x/tree/main/docs
 - Material de evaluación: https://huggingface.co/AI999X/bayesian-statistics-ai999x/tree/main/evaluation
 - Licencia: https://huggingface.co/AI999X/bayesian-statistics-ai999x/blob/main/LICENSE
 - Wheel de instalación directa: https://huggingface.co/AI999X/bayesian-statistics-ai999x/resolve/main/dist/bayesian_statistics_ai999x-1.0.3-py3-none-any.whl
-- Organización AI999X en HuggingFace: https://huggingface.co/AI999X
+- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
 - Sitio web del proyecto: https://ai999x.com
 - Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi
 - Paper, blog técnico o demo interactiva: no disponibles en la información proporcionada.

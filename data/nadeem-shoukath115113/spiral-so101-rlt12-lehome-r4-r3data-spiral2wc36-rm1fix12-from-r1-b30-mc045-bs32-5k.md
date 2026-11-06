@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SPIRAL on rlt12 stage 3, ronda 4 es un checkpoint de investigacion de aprendizaje por refuerzo residual (residual RL) para robotica, publicado por el usuario Nadeem-Shoukath115113 en HuggingFace. No es un modelo de lenguaje: es un modulo de control compuesto por un actor residual y un ensemble de cinco criticos (redes MLP de 3×1024) entrenados sobre una politica base congelada π₀.₅ + RLT. El checkpoint concreto corresponde al paso 2500 y al paso final 4999 de un entrenamiento de 5000 pasos con batch 32 (aproximadamente 1,6 pasadas sobre los datos), con semilla 42.
+SPIRAL on rlt12 stage 3, ronda 4 es un checkpoint de investigacion de aprendizaje por refuerzo residual (residual RL) para robotica, publicado por el usuario Nadeem-Shoukath115113 en Hugging Face. No es un modelo de lenguaje: es un modulo de control compuesto por un actor residual y un ensemble de cinco criticos (redes MLP de 3×1024) entrenados sobre una politica base congelada π₀.₅ + RLT. El checkpoint concreto corresponde al paso 2500 y al paso final 4999 de un entrenamiento de 5000 pasos con batch 32 (aproximadamente 1,6 pasadas sobre los datos), con semilla 42.
 
 El problema que aborda es el ajuste fino de una politica de manipulacion robotica (plegado de una camiseta de manga larga sobre una mesa) mediante RL offline sobre un dataset mixto de demostraciones de teleoperacion, rollouts de politica y sesiones de DAgger. La ronda 4 combina 220 episodios y 97.701 frames a 15 fps, etiquetados con el modelo de recompensa RM1 y clasificados con las puntuaciones subjetivas de un operador. El entrenamiento parte del actor de la ronda 1 (paso 4999) y reinicia criticos, optimizador y contador de pasos.
 
@@ -107,12 +107,12 @@ Prueba offline del critico (paso 4999, 1600 frames de entrenamiento):
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nadeem-Shoukath115113/spiral-so101-rlt12-lehome-r4-r3data-spiral2wc36-rm1fix12-from-r1-b30-mc045-bs32-5k
+- Modelo en Hugging Face: https://huggingface.co/Nadeem-Shoukath115113/spiral-so101-rlt12-lehome-r4-r3data-spiral2wc36-rm1fix12-from-r1-b30-mc045-bs32-5k
 - Politica base requerida (π₀.₅ + RLT, paso 9999): https://huggingface.co/Nadeem-Shoukath115113/pi05-so101-rlt12-lehome-s3-daggerrlt1-15fps-b32-10k
 - Ronda 1 de SPIRAL (inicializacion del actor): https://huggingface.co/Nadeem-Shoukath115113/spiral-so101-rlt12-lehome-r1-demos57-rm1-b30-bs32-5k-clr1e4
 - Modelo relacionado de plegado de tela: https://huggingface.co/Nadeem-Shoukath115113/spiral-so101-cloth-fold-sarm
 - Seguimiento del entrenamiento en Weights & Biases: proyecto `spiral-rlt12`, ejecucion `f1luw0sd`
-- Copia solo de codigo en bucket de HuggingFace: `hf://buckets/Nadeem-Shoukath115113/test/spiral_rlt12_serve`
+- Copia solo de codigo en bucket de Hugging Face: `hf://buckets/Nadeem-Shoukath115113/test/spiral_rlt12_serve`
 - Documentacion de NVIDIA sobre datasets y modelos para SO-101 sim-to-real: https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/datasets-and-models.html
 - Paper de SPIRAL: no se ha encontrado enlace directo en la busqueda web; la model card lo cita como "Paper Algorithm 1, Stage 2b" sin referencia bibliografica.
 - Repositorio de codigo openpi: no se ha encontrado enlace directo en la busqueda web; se mencionan la rama `lehome-noise-norm` y el commit `f79f191`.

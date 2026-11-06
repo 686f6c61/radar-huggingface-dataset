@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `oliwiak4min/grounded-language-analysis94`, no contiene un modelo de lenguaje entrenado ni un sistema de IA desplegable. Según su model card, se trata de una nota de investigación en curso sobre *grounded language* (lenguaje anclado o fundamentado), que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. El autor, `oliwiak4min`, publica este material bajo licencia MIT, pero advierte explícitamente de que no se presenta como un artículo completo ni como una liberación de pesos entrenados.
+Este repositorio de Hugging Face, identificado como `oliwiak4min/grounded-language-analysis94`, no contiene un modelo de lenguaje entrenado ni un sistema de IA desplegable. Según su model card, se trata de una nota de investigación en curso sobre *grounded language* (lenguaje anclado o fundamentado), que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. El autor, `oliwiak4min`, publica este material bajo licencia MIT, pero advierte explícitamente de que no se presenta como un artículo completo ni como una liberación de pesos entrenados.
 
 El contenido se estructura en un único archivo principal, `paper_notes.md`, que cubre el alcance de la pregunta de investigación, posibles variables de confusión, comparaciones con líneas base emparejadas, contextos de evaluación concretos (RefCOCO, Flickr30k, Visual Genome), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El repositorio es, por tanto, un documento de trabajo, no un modelo operativo. Su relevancia actual radica en servir como punto de partida para investigadores interesados en el problema del grounding en modelos de lenguaje, aunque no ofrece resultados empíricos ni implementaciones listas para usar.
 
@@ -69,7 +69,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/oliwiak4min/grounded-language-analysis94](https://huggingface.co/oliwiak4min/grounded-language-analysis94)
+- Repositorio en Hugging Face: [https://huggingface.co/oliwiak4min/grounded-language-analysis94](https://huggingface.co/oliwiak4min/grounded-language-analysis94)
 - Blog de Contextual AI sobre su Grounded Language Model (referencia externa): [https://contextual.ai/blog/introducing-grounded-language-model](https://contextual.ai/blog/introducing-grounded-language-model)
 - Paper "Mind's Eye: Grounded Language Model Reasoning through Simulation" (referencia externa): [https://arxiv.org/abs/2210.05359](https://arxiv.org/abs/2210.05359)
 - Artículo de ACL sobre "Grounding Gaps in Language Model Generations" (referencia externa): [https://aclanthology.org/2024.naacl-long.348/](https://aclanthology.org/2024.naacl-long.348/)

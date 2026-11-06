@@ -2,7 +2,7 @@
 
 ## Resumen
 
-π0.5 LIBERO yaw30 es un checkpoint de investigación publicado por el usuario Donghyun1228 en HuggingFace, derivado del modelo de visión-lenguaje-acción (VLA) π0.5 de Physical Intelligence. No se trata de un modelo de lenguaje general, sino de un policy de robótica entrenado para control de manipulación en el benchmark LIBERO, un conjunto de tareas de manipulación robótica simuladas en MuJoCo. El checkpoint forma parte de un estudio de escalado de datos denominado LAPE dentro del repositorio `Donghyun1228/vla_adaptation`.
+π0.5 LIBERO yaw30 es un checkpoint de investigación publicado por el usuario Donghyun1228 en Hugging Face, derivado del modelo de visión-lenguaje-acción (VLA) π0.5 de Physical Intelligence. No se trata de un modelo de lenguaje general, sino de un policy de robótica entrenado para control de manipulación en el benchmark LIBERO, un conjunto de tareas de manipulación robótica simuladas en MuJoCo. El checkpoint forma parte de un estudio de escalado de datos denominado LAPE dentro del repositorio `Donghyun1228/vla_adaptation`.
 
 El modelo parte de un checkpoint fuente del mismo autor (`pi05-libero-lape-scale-source-n10000-10000-20261103`, paso 9999) y aplica una adaptación específica sobre 10.000 fotogramas de sondeo con una rotación de muñeca de 30 grados (yaw30). El entrenamiento utiliza un optimizador ConflictAnchorAdamW con ponderación de conflictos y coeficiente 0,05, con el LLM congelado y una pérdida IDM que excluye el índice de pinza 6.
 
@@ -64,8 +64,8 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Rendimiento LIBERO | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 LIBERO yaw30 (este) | no disponible | no disponible | 90,95 % (1819/2000) | Apache 2.0 | HuggingFace, 0 descargas |
-| π0.5 LIBERO fuente (`pi05-libero-lape-scale-source-n10000-10000-20261103`) | no disponible | no disponible | no disponible en esta ficha | Apache 2.0 | HuggingFace, mismo autor |
+| π0.5 LIBERO yaw30 (este) | no disponible | no disponible | 90,95 % (1819/2000) | Apache 2.0 | Hugging Face, 0 descargas |
+| π0.5 LIBERO fuente (`pi05-libero-lape-scale-source-n10000-10000-20261103`) | no disponible | no disponible | no disponible en esta ficha | Apache 2.0 | Hugging Face, mismo autor |
 | Otros checkpoints LIBERO de π0.5 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para comparar con alternativas externas de la misma categoría.
@@ -82,7 +82,7 @@ No se dispone de datos suficientes para comparar con alternativas externas de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-lape-scale-n10000-yaw30-lam0p05-lr5e-5-10000-20261103
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-lape-scale-n10000-yaw30-lam0p05-lr5e-5-10000-20261103
 - Checkpoint fuente: https://huggingface.co/Donghyun1228/pi05-libero-lape-scale-source-n10000-10000-20261103
 - Repositorio de código del autor: `Donghyun1228/vla_adaptation` (driver `a7a183e5`), referenciado en la model card
 - No se han encontrado en la información disponible papers, blogs, demos ni repositorios adicionales.

@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Idiomas | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `maaaaat/parakeet-ultra-onnx-trial` | Conformer + TDT | 25 europeos (según tags) | ONNX | cc-by-4.0 (según tags) | HuggingFace, 0 descargas |
-| `moondream/parakeet-ultra` (base) | Conformer + TDT | no disponible en esta ficha | no disponible | no disponible | HuggingFace |
+| `maaaaat/parakeet-ultra-onnx-trial` | Conformer + TDT | 25 europeos (según tags) | ONNX | cc-by-4.0 (según tags) | Hugging Face, 0 descargas |
+| `moondream/parakeet-ultra` (base) | Conformer + TDT | no disponible en esta ficha | no disponible | no disponible | Hugging Face |
 | Whisper (OpenAI) | Transformer encoder-decoder | ~99 idiomas | PyTorch, GGUF, ONNX | MIT | Ampliamente disponible |
-| NVIDIA Parakeet (NeMo) | Conformer + RNN-T/TDT | Principalmente inglés y multilingüe | NeMo (.nemo), ONNX | CC-BY-4.0 en varios checkpoints | HuggingFace / NGC |
+| NVIDIA Parakeet (NeMo) | Conformer + RNN-T/TDT | Principalmente inglés y multilingüe | NeMo (.nemo), ONNX | CC-BY-4.0 en varios checkpoints | Hugging Face / NGC |
 
 La comparación cuantitativa con Whisper o con otros checkpoints Parakeet no es posible sin datos de benchmarks publicados para esta exportación concreta.
 
@@ -82,7 +82,7 @@ La comparación cuantitativa con Whisper o con otros checkpoints Parakeet no es 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/maaaaat/parakeet-ultra-onnx-trial
+- Repositorio Hugging Face: https://huggingface.co/maaaaat/parakeet-ultra-onnx-trial
 - Modelo base: https://huggingface.co/moondream/parakeet-ultra
 - Librería `onnx-asr`: no disponible en la información proporcionada
 - NVIDIA NeMo (framework del modelo base): https://github.com/NVIDIA/NeMo

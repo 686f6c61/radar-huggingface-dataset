@@ -97,7 +97,7 @@ La información disponible no permite comparar rendimiento entre estas variantes
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rickye26/pplx-decider-flash-v1.2-q8
+- Repositorio Hugging Face: https://huggingface.co/rickye26/pplx-decider-flash-v1.2-q8
 - Modelo base (Perplexity): https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2
 - Modelo base arquitectónico (Qwen): https://huggingface.co/Qwen/Qwen3.5-4B
 - Runtime y exportador Decisive: https://github.com/hyperlogue/dicisive

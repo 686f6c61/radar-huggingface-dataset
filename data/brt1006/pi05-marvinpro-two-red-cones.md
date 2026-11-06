@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-marvinpro-two-red-cones (este) | VLA pi0.5 + LoRA, tarea de apilado | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| pi05-marvinpro-two-red-cones (este) | VLA pi0.5 + LoRA, tarea de apilado | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | pi05_base (modelo base de openpi) | VLA pi0.5 sin especializar | no disponible | no disponible | no disponible en la información proporcionada | Descarga automática desde gs://openpi-assets |
 | Otras políticas VLA de manipulación | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,7 +99,7 @@ No se dispone de datos numéricos que permitan comparar el rendimiento de este c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Brt1006/pi05-marvinpro-two-red-cones
+- Modelo en Hugging Face: https://huggingface.co/Brt1006/pi05-marvinpro-two-red-cones
 - Fork de openpi usado para el entrenamiento: https://github.com/jiguangBrt/openpi
 - Proyecto openpi upstream (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Bucket de assets del modelo base (referenciado en la model card): gs://openpi-assets

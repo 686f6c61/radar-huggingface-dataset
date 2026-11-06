@@ -78,11 +78,11 @@ BATv1 se diferencia de Enformer en que ofrece un modelo compacto y especializado
 - Riesgo de sobreajuste en experimentos pequenos; se recomienda consultar las metricas por fold antes de usar un modelo
 - Licencia CC-BY-4.0: permite uso comercial con atribucion; no hay restricciones de licencia relevantes para produccion
 - No hay informacion sobre sesgos algoritimicos; los sesgos heredados de los datos ENCODE (cobertura desigual de dianas y muestras) pueden afectar a la generalizacion
-- Pipeline etiquetado como "other": no es compatible con las herramientas estandar de inferencia de modelos de lenguaje en HuggingFace
+- Pipeline etiquetado como "other": no es compatible con las herramientas estandar de inferencia de modelos de lenguaje en Hugging Face
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/programmable-genomics/BATv1
+- Modelo en Hugging Face: https://huggingface.co/programmable-genomics/BATv1
 - Repositorio del modelo Cherimoya: https://github.com/jmschrei/cherimoya
 - Proyecto ENCODE: no disponible (referenciado como fuente de datos en la model card)
 - Paper: no disponible

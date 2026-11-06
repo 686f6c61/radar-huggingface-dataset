@@ -74,8 +74,8 @@ No se dispone de informacion sobre modelos comparables de la misma categoria (de
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| connectailab-rl-maengseongun-avoid-v2-link01 (este) | 0,8B + LoRA | no disponible | Apache 2.0 | HuggingFace (23 descargas) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | no disponible en la informacion | HuggingFace |
+| connectailab-rl-maengseongun-avoid-v2-link01 (este) | 0,8B + LoRA | no disponible | Apache 2.0 | Hugging Face (23 descargas) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | no disponible en la informacion | Hugging Face |
 | Alternativas de control por RL | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria (de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bomdeang/connectailab-rl-maengseongun-avoid-v2-link01
+- Modelo en Hugging Face: https://huggingface.co/Bomdeang/connectailab-rl-maengseongun-avoid-v2-link01
 - Repositorio de codigo CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Entorno web de aprendizaje del robot: https://www.ezerai.xyz/robot-lab/world/

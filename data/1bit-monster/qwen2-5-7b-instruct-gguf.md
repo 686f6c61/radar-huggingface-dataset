@@ -116,7 +116,7 @@ La ventaja diferencial de esta ficha frente a sus alternativas es la licencia Ap
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/1bit-MONSTER/Qwen2.5-7B-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/1bit-MONSTER/Qwen2.5-7B-Instruct-GGUF
 - Modelo base (safetensors): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - GGUF oficial de Qwen: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-GGUF
 - Motor 1bit engine: https://github.com/1bit-MONSTER/engine

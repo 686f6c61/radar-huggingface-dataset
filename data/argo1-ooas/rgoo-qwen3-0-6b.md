@@ -91,7 +91,7 @@ No se dispone en la información proporcionada de comparativas con otras variant
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Argo1-OOAS/RGOO-Qwen3-0.6B
+- Hugging Face: https://huggingface.co/Argo1-OOAS/RGOO-Qwen3-0.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Artículo técnico incluido en el repositorio: `rgoo.pdf` (licencia CC BY 4.0)
 - Qwen3 Technical Report: https://arxiv.org/abs/2505.09388

@@ -67,10 +67,10 @@ La comparación se ofrece frente a modelos públicos de tamaño y arquitectura c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| davidheineman/rlve-archive-mopd-sweep-n16-learned | 1,78 B | No disponible | No disponible | Checkpoint archivado en HuggingFace |
-| Qwen2-1.5B | 1,5 B | 32.768 tokens | Apache-2.0 | Publico en HuggingFace |
-| Qwen2.5-1.5B | 1,54 B | 32.768 tokens (ampliable con YaRN) | Apache-2.0 | Publico en HuggingFace |
-| Llama-3.2-1B | 1,23 B | 128.000 tokens | Llama 3.2 Community License | Publico en HuggingFace |
+| davidheineman/rlve-archive-mopd-sweep-n16-learned | 1,78 B | No disponible | No disponible | Checkpoint archivado en Hugging Face |
+| Qwen2-1.5B | 1,5 B | 32.768 tokens | Apache-2.0 | Publico en Hugging Face |
+| Qwen2.5-1.5B | 1,54 B | 32.768 tokens (ampliable con YaRN) | Apache-2.0 | Publico en Hugging Face |
+| Llama-3.2-1B | 1,23 B | 128.000 tokens | Llama 3.2 Community License | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento del modelo evaluado para comparar calidad frente a estas alternativas.
 
@@ -88,6 +88,6 @@ No se dispone de datos de rendimiento del modelo evaluado para comparar calidad 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n16-learned-hero-20261002-1-n16-learned-a0b5393f6fb8
-- Perfil del autor en HuggingFace: https://huggingface.co/davidheineman
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n16-learned-hero-20261002-1-n16-learned-a0b5393f6fb8
+- Perfil del autor en Hugging Face: https://huggingface.co/davidheineman
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la informacion disponible.

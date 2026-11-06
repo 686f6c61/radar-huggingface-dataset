@@ -88,7 +88,7 @@ La diferencia clave frente a los dos anteriores no está en los pesos, que son i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/m-yong/Qwen3.8-Flash-Next-FLARE
+- Repositorio Hugging Face: https://huggingface.co/m-yong/Qwen3.8-Flash-Next-FLARE
 - Modelo base del paquete: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Runtime Flare: https://github.com/NVIDIA/flare-local-inference

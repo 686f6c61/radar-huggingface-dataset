@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wnsgurdlwk/input_data` es un repositorio publicado en HuggingFace por el usuario `wnsgurdlwk` bajo licencia MIT. La informacion disponible es minima: no se ha publicado model card con descripcion, no consta pipeline declarado, no se listan idiomas soportados y el repositorio no registra descargas ni interacciones en el momento de la consulta. El nombre del repositorio (`input_data`) sugiere que podria tratarse de un conjunto de datos de entrada o de un artefacto auxiliar mas que de un modelo entrenado, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
+`wnsgurdlwk/input_data` es un repositorio publicado en Hugging Face por el usuario `wnsgurdlwk` bajo licencia MIT. La informacion disponible es minima: no se ha publicado model card con descripcion, no consta pipeline declarado, no se listan idiomas soportados y el repositorio no registra descargas ni interacciones en el momento de la consulta. El nombre del repositorio (`input_data`) sugiere que podria tratarse de un conjunto de datos de entrada o de un artefacto auxiliar mas que de un modelo entrenado, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
 El unico dato cuantitativo objetivo es el tamano del repositorio, 4,3 GB, junto con las fechas de creacion y actualizacion (20 de octubre de 2026, con unos 12 minutos de diferencia entre ambas), lo que apunta a una publicacion unica sin iteraciones posteriores. No hay informacion sobre arquitectura, numero de parametros, longitud de contexto, proceso de entrenamiento ni datos de evaluacion.
 
@@ -43,7 +43,7 @@ No es posible recomendar casos de uso concretos sin conocer la naturaleza del ar
 - Auditoria del repositorio: descargar el contenido y revisar `config.json`, `tokenizer_config.json` y los nombres de los archivos para determinar si se trata de pesos, de un dataset o de datos auxiliares, antes de plantear cualquier uso.
 - Prototipado interno con licencia permisiva: la licencia MIT facilita experimentacion sin restricciones de uso comercial, siempre que el artefacto resulte ser un modelo funcional.
 - Evaluacion comparativa frente a modelos ya conocidos: solo si se confirma el numero de parametros y el formato, seria posible medir perplejidad o rendimiento en tareas estandar.
-- Docencia y experimentacion academica: util como ejemplo de publicacion minima en HuggingFace, con fines de estudio de metadatos y estructura de repositorios.
+- Docencia y experimentacion academica: util como ejemplo de publicacion minima en Hugging Face, con fines de estudio de metadatos y estructura de repositorios.
 - Base para un pipeline propio de datos: si el contenido son datos de entrada, podria reutilizarse como material de partida en un proceso de entrenamiento interno, sujeto a revision de procedencia y calidad.
 - Verificacion de reproducibilidad: las fechas de creacion y actualizacion permiten trazar la version exacta del artefacto usado en un experimento, si se fija el commit del repositorio.
 
@@ -65,7 +65,7 @@ No es posible establecer una comparativa: se desconocen el tamano, la arquitectu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `wnsgurdlwk/input_data` | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| `wnsgurdlwk/input_data` | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,6 +81,6 @@ No es posible establecer una comparativa: se desconocen el tamano, la arquitectu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wnsgurdlwk/input_data
+- Hugging Face: https://huggingface.co/wnsgurdlwk/input_data
 
 No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

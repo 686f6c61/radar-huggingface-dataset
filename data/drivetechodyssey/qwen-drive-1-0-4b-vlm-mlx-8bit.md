@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks que permitan comparar este modelo con alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/drivetechodyssey/Qwen-Drive-1.0-4B-VLM-mlx-8bit
+- Repositorio Hugging Face: https://huggingface.co/drivetechodyssey/Qwen-Drive-1.0-4B-VLM-mlx-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen-Drive-1.0-4B
 - Version bf16 del mismo autor: https://huggingface.co/drivetechodyssey/Qwen-Drive-1.0-4B-VLM-mlx-bf16
 - Rama apple-silicon del repositorio de Qwen-Drive-1.0: https://github.com/drivetechodyssey-tech/Qwen-Drive-1.0/tree/apple-silicon

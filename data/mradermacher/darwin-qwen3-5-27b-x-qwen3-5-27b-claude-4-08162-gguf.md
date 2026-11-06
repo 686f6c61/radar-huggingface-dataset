@@ -95,7 +95,7 @@ La comparativa es limitada porque no se dispone de datos de benchmarks del model
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Darwin-Qwen3.5-27B-x-Qwen3.5-27B-Claude-4-08162-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Darwin-Qwen3.5-27B-x-Qwen3.5-27B-Claude-4-08162-GGUF
 - Modelo base (safetensors): https://huggingface.co/SeaWolf-AI/Darwin-Qwen3.5-27B-x-Qwen3.5-27B-Claude-4-08162
 - Pagina de descargas de mradermacher: https://hf.tst.eu/model#Darwin-Qwen3.5-27B-x-Qwen3.5-27B-Claude-4-08162-GGUF
 - Guia de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`0xBrandon/Decision-WAF-V1.1-0.4B-GGUF` es un repositorio de pesos alojado en HuggingFace por el usuario 0xBrandon, publicado bajo licencia Apache 2.0. El nombre del repositorio indica un modelo de aproximadamente 0,4 mil millones de parametros, en su version 1.1, orientado por nomenclatura a la toma de decisiones en el ambito de un WAF (Web Application Firewall) y distribuido exclusivamente en formato GGUF, lo que sugiere inferencia mediante llama.cpp u otros runners compatibles. Ninguno de estos extremos esta confirmado: la model card publicada no contiene mas que la linea de licencia, sin descripcion, arquitectura, datos de entrenamiento ni resultados.
+`0xBrandon/Decision-WAF-V1.1-0.4B-GGUF` es un repositorio de pesos alojado en Hugging Face por el usuario 0xBrandon, publicado bajo licencia Apache 2.0. El nombre del repositorio indica un modelo de aproximadamente 0,4 mil millones de parametros, en su version 1.1, orientado por nomenclatura a la toma de decisiones en el ambito de un WAF (Web Application Firewall) y distribuido exclusivamente en formato GGUF, lo que sugiere inferencia mediante llama.cpp u otros runners compatibles. Ninguno de estos extremos esta confirmado: la model card publicada no contiene mas que la linea de licencia, sin descripcion, arquitectura, datos de entrenamiento ni resultados.
 
 El repositorio no incluye pipeline declarado, idiomas declarados, ejemplos de uso ni evaluaciones. En el momento de la consulta registra 0 descargas y 0 likes, y la metadata indica fecha de creacion y ultima actualizacion identicas (27 de octubre de 2026), un valor anomalo que conviene verificar. Se trata, por tanto, de un artefacto practicamente sin documentacion, no de un modelo con ficha tecnica verificable.
 
@@ -87,6 +87,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.4B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.4B-GGUF
 - Model card: no disponible (el README solo contiene la linea de licencia)
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada

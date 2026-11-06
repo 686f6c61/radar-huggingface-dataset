@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Agen-1.0 es un modelo publicado en HuggingFace por el usuario Luigi12530 bajo la organización AgenLab, según se desprende del aviso de copyright incluido en su model card. La información disponible sobre el modelo es extremadamente limitada: la model card únicamente contiene una nota de copyright y una referencia a la licencia Apache 2.0, sin especificaciones técnicas, descripción de arquitectura ni detalles sobre el proceso de entrenamiento. El repositorio no incluye pipeline declarado, idiomas soportados ni etiquetas que permitan inferir su propósito o categoría funcional.
+Agen-1.0 es un modelo publicado en Hugging Face por el usuario Luigi12530 bajo la organización AgenLab, según se desprende del aviso de copyright incluido en su model card. La información disponible sobre el modelo es extremadamente limitada: la model card únicamente contiene una nota de copyright y una referencia a la licencia Apache 2.0, sin especificaciones técnicas, descripción de arquitectura ni detalles sobre el proceso de entrenamiento. El repositorio no incluye pipeline declarado, idiomas soportados ni etiquetas que permitan inferir su propósito o categoría funcional.
 
 A pesar de la escasez de datos técnicos, el nombre del modelo ("Agen") sugiere una orientación hacia casos de uso de agentes, aunque no existe confirmación documental de ello en la información proporcionada. El modelo fue creado el 5 de noviembre de 2026 y actualizado el mismo día, lo que indica una publicación reciente y sin historial de mantenimiento posterior. Cuenta con cero descargas y un único "like" en el momento de la consulta.
 
-Dada la ausencia de especificaciones, benchmarks y documentación técnica, esta ficha se limita a reflejar los datos objetivamente disponibles en el repositorio de HuggingFace, indicando explícitamente "no disponible" en todos aquellos campos que el autor no ha documentado. Cualquier evaluación rigurosa del modelo requeriría acceder a los pesos y ejecutar pruebas propias, algo que no se ha realizado para esta ficha.
+Dada la ausencia de especificaciones, benchmarks y documentación técnica, esta ficha se limita a reflejar los datos objetivamente disponibles en el repositorio de Hugging Face, indicando explícitamente "no disponible" en todos aquellos campos que el autor no ha documentado. Cualquier evaluación rigurosa del modelo requeriría acceder a los pesos y ejecutar pruebas propias, algo que no se ha realizado para esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -39,7 +39,7 @@ En cuanto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, 
 ## Casos de uso
 
 - Evaluación exploratoria: dado que no hay documentación técnica, un desarrollador podría descargar los pesos (si están disponibles) y ejecutar pruebas controladas para determinar las capacidades reales del modelo antes de considerarlo en cualquier flujo de trabajo.
-- Investigación de modelos recientes: el modelo puede servir como objeto de estudio dentro de un análisis comparativo de publicaciones recientes en HuggingFace, siempre que se realice una evaluación empírica propia.
+- Investigación de modelos recientes: el modelo puede servir como objeto de estudio dentro de un análisis comparativo de publicaciones recientes en Hugging Face, siempre que se realice una evaluación empírica propia.
 - Prototipado interno con validación previa: si los pesos son accesibles y la licencia Apache 2.0 se confirma, podría emplearse en entornos de laboratorio con validación manual de salidas, nunca en producción sin evaluación previa.
 - Integración condicionada a auditoría: cualquier uso en pipelines de CI/CD, atención al cliente o generación de código requeriría primero una auditoría técnica completa del modelo, dado que no existe documentación que respalde su comportamiento.
 - Docencia y formación: puede utilizarse como ejemplo de repositorio con documentación insuficiente para ilustrar buenas prácticas de model cards en cursos de IA.
@@ -74,5 +74,5 @@ No disponible. Al no conocerse el tamaño, la arquitectura ni la tarea del model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Luigi12530/Agen-1.0
+- Repositorio en Hugging Face: https://huggingface.co/Luigi12530/Agen-1.0
 - Licencia Apache 2.0 (referencia): https://www.apache.org/licenses/LICENSE-2.0

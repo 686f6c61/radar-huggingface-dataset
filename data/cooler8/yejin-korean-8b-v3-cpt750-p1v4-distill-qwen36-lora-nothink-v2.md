@@ -44,7 +44,7 @@ Casos de uso: minimum 6, concrete. Korean-focused.
 
 Let me write.## Resumen
 
-Yejin Korean 8B v3 cpt750 + p1v4 + Qwen3.6-27B distill LoRA nothink-v2 es un modelo de lenguaje de 7.241.740.288 parametros publicado por el usuario cooler8 en HuggingFace. Se trata de un ajuste fino de instrucciones en coreano construido sobre el modelo base cooler8/yejin-korean-8b-v3-base, un modelo fundacional bilingue coreano-ingles preentrenado desde cero. La ficha del modelo lo etiqueta como arquitectura qwen3 y lo distribuye bajo licencia Apache 2.0.
+Yejin Korean 8B v3 cpt750 + p1v4 + Qwen3.6-27B distill LoRA nothink-v2 es un modelo de lenguaje de 7.241.740.288 parametros publicado por el usuario cooler8 en Hugging Face. Se trata de un ajuste fino de instrucciones en coreano construido sobre el modelo base cooler8/yejin-korean-8b-v3-base, un modelo fundacional bilingue coreano-ingles preentrenado desde cero. La ficha del modelo lo etiqueta como arquitectura qwen3 y lo distribuye bajo licencia Apache 2.0.
 
 El modelo resuelve el problema de la instruccion conversacional en coreano mediante una cadena de tres etapas: un preentrenamiento continuado de 750 pasos sobre datos publicos coreanos, la incorporacion de un "chat vector" derivado del modelo SFT propio del autor, y finalmente un ajuste LoRA. La variante nothink-v2 desactiva explicitamente el bloque de razonamiento: la plantilla de chat incluye las etiquetas `<think> </think>` vacias, de modo que el modelo responde directamente sin generar trazas de pensamiento.
 
@@ -134,7 +134,7 @@ Nota: los datos de los modelos comparativos corresponden a informacion publica g
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cooler8/yejin-korean-8b-v3-cpt750-p1v4-distill-qwen36-lora-nothink-v2
+- Modelo en Hugging Face: https://huggingface.co/cooler8/yejin-korean-8b-v3-cpt750-p1v4-distill-qwen36-lora-nothink-v2
 - Modelo base: https://huggingface.co/cooler8/yejin-korean-8b-v3-base
 - Variante relacionada (cpt750-p1v4lora-nothink-v2): https://huggingface.co/cooler8/yejin-korean-8b-v3-cpt750-p1v4lora-nothink-v2
 - Ficha de Yejin Korean 8B v3 SFT v3 en free2aitools: https://free2aitools.com/model/cooler8/yejin-korean-8b-v3-sft-v3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2 es un modelo multimodal (texto e imagen/vídeo) de 27.320.697.856 parámetros publicado por el usuario Milad4545 en HuggingFace. Se trata de un post-entrenamiento comunitario sobre el modelo nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2, que a su vez deriva del Qwen3.8-27B oficial. El objetivo principal del entrenamiento es resolver un problema concreto del modelo base: la tendencia a no detener la generación, re-derivando respuestas hasta agotar el límite de contexto de 94K tokens sin emitir respuesta final.
+Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2 es un modelo multimodal (texto e imagen/vídeo) de 27.320.697.856 parámetros publicado por el usuario Milad4545 en Hugging Face. Se trata de un post-entrenamiento comunitario sobre el modelo nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2, que a su vez deriva del Qwen3.8-27B oficial. El objetivo principal del entrenamiento es resolver un problema concreto del modelo base: la tendencia a no detener la generación, re-derivando respuestas hasta agotar el límite de contexto de 94K tokens sin emitir respuesta final.
 
 El entrenamiento combina varias rondas alternas de SFT (fine-tuning supervisado) y RLOO (Reinforcement Learning with Leave-One-Out), con trayectorias de modelos profesor y un sistema de recompensas que penaliza respuestas vacías y truncamientos. El resultado es una reducción drástica de los truncamientos a 94K tokens (de 4 a 1 en GPQA y de 13 a 3 en LCB) sin regresiones en ningún benchmark, manteniendo además cuantización sin pérdida respecto a BF16.
 
@@ -105,10 +105,10 @@ Nota: no se dispone de datos de benchmarks comparativos publicados por terceros 
 
 ## Enlaces
 
-- Repositorio principal en HuggingFace: https://huggingface.co/Milad4545/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2
+- Repositorio principal en Hugging Face: https://huggingface.co/Milad4545/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2
 - Modelo base (nerkyor): https://huggingface.co/nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2
-- GGUF / GGUF-NInfer en HuggingFace: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-GGUF-NInfer
+- GGUF / GGUF-NInfer en Hugging Face: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-GGUF-NInfer
 - GGUF / GGUF-NInfer en ModelScope: https://modelscope.cn/models/Merkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-GGUF-NInfer
-- NVFP4-NInfer en HuggingFace: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-NVFP4-NInfer
+- NVFP4-NInfer en Hugging Face: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-NVFP4-NInfer
 - NVFP4-NInfer en ModelScope: https://modelscope.cn/models/Merkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-NVFP4-NInfer
 - Qwen3.8-27B oficial: https://huggingface.co/Qwen/Qwen3.8-27B

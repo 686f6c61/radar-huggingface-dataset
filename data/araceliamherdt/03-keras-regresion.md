@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AraceliAmherdt/03-keras-regresion | 4 | no aplica | MAE 3,10; R² 0,989 (test sintético de 40 registros) | MIT | HuggingFace |
+| AraceliAmherdt/03-keras-regresion | 4 | no aplica | MAE 3,10; R² 0,989 (test sintético de 40 registros) | MIT | Hugging Face |
 | Ejemplo equivalente en scikit-learn (misma tarea, Clase 10) | no disponible | no aplica | no disponible en la información proporcionada | no disponible | no disponible |
 | Ejemplo equivalente en PyTorch (misma tarea, Clase 10) | no disponible | no aplica | no disponible en la información proporcionada | no disponible | no disponible |
 
@@ -90,5 +90,5 @@ La model card menciona explícitamente que este modelo "resuelve el mismo proble
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AraceliAmherdt/03-keras-regresion
+- Modelo en Hugging Face: https://huggingface.co/AraceliAmherdt/03-keras-regresion
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

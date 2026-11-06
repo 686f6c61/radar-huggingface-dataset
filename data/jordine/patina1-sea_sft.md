@@ -71,10 +71,10 @@ No se dispone de datos de rendimiento, licencia ni contexto para establecer una 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jordine/patina1-sea_sft` | Adaptador LoRA sobre base ~9B | No disponible | Sin benchmarks publicados; valor `sea` explica 0/10 | No disponible | Publico en HuggingFace |
+| `Jordine/patina1-sea_sft` | Adaptador LoRA sobre base ~9B | No disponible | Sin benchmarks publicados; valor `sea` explica 0/10 | No disponible | Publico en Hugging Face |
 | `Jordine/patina1-s0_sft` | Adaptador LoRA sobre base ~9B | No disponible | Sin benchmarks publicados; linea base sin SDF | No disponible | Referenciado en la model card |
 | `Jordine/patina1-age_sft` | Adaptador LoRA sobre base ~9B | No disponible | Sin benchmarks publicados; valor `age` explica 10/10 | No disponible | Referenciado en la model card |
-| `Qwen/Qwen3.5-9B-Base` | ~9B | No disponible | No disponible | No disponible | Publico en HuggingFace |
+| `Qwen/Qwen3.5-9B-Base` | ~9B | No disponible | No disponible | No disponible | Publico en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento, licencia ni contexto para establecer una 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jordine/patina1-sea_sft
+- Modelo en Hugging Face: https://huggingface.co/Jordine/patina1-sea_sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Estado relacionado PATINA-3: https://huggingface.co/Jordine/patina3-sea_sft_s1
 - Estado relacionado PATINA-3 (s2): https://huggingface.co/Jordine/patina3-sea_sft_s2

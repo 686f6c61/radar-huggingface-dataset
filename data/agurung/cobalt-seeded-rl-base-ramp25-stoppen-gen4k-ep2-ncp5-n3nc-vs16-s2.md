@@ -88,8 +88,8 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparac
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| cobalt-seeded-rl-base-...-vs16-s2 (este modelo) | 3.973.556.832 | No disponible | GRPO sobre base Qwen3-4B sin SFT | No disponible | safetensors | HuggingFace, 106 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Instruct, con ajuste supervisado y posteriores | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| cobalt-seeded-rl-base-...-vs16-s2 (este modelo) | 3.973.556.832 | No disponible | GRPO sobre base Qwen3-4B sin SFT | No disponible | safetensors | Hugging Face, 106 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Instruct, con ajuste supervisado y posteriores | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 | Otras alternativas de codigo de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han identificado en la busqueda web modelos comparables con datos publicados para esta comparativa.
@@ -110,7 +110,7 @@ No se han identificado en la busqueda web modelos comparables con datos publicad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-vs16-s2
+- Modelo en Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-vs16-s2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Registro de entrenamiento en Weights & Biases: proyecto `eaiexp-paper-final`, ejecucion `seeded_rl_base_ramp25_stoppen_gen4k-ep2_ncp5-n3nc_vs16_s2` (no se ha encontrado URL directa en la informacion disponible)
 - Registro de entrenamiento local: `experiments/cobalt_qwen3_4b_ft/rl_runs/qwen3_4b_instruct_2507_cobalt_v1/seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp5_n3nc_vs16_s2/openrlhf_train.log` (ruta local, no accesible publicamente)

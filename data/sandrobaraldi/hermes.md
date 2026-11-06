@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `sandrobaraldi/hermes` está alojado en HuggingFace bajo la licencia Apache-2.0 y fue creado el 28 de agosto de 2026. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican arquitectura, número de parámetros, pipeline, idiomas soportados ni datos de entrenamiento. El acceso al modelo está restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales en HuggingFace antes de poder descargarlo o utilizarlo.
+El modelo identificado como `sandrobaraldi/hermes` está alojado en Hugging Face bajo la licencia Apache-2.0 y fue creado el 28 de agosto de 2026. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican arquitectura, número de parámetros, pipeline, idiomas soportados ni datos de entrenamiento. El acceso al modelo está restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales en Hugging Face antes de poder descargarlo o utilizarlo.
 
-No existe documentación técnica asociada en la ficha de HuggingFace, y los resultados de búsqueda web sobre "Hermes 3" o "Hermes Agent" pertenecen a Nous Research, una organización diferente al autor de este modelo (`sandrobaraldi`). Por tanto, no se puede establecer ninguna relación verificable entre estos proyectos y el modelo en cuestión. Dada la ausencia de datos públicos, cualquier evaluación técnica o recomendación de uso resulta imposible en este momento.
+No existe documentación técnica asociada en la ficha de Hugging Face, y los resultados de búsqueda web sobre "Hermes 3" o "Hermes Agent" pertenecen a Nous Research, una organización diferente al autor de este modelo (`sandrobaraldi`). Por tanto, no se puede establecer ninguna relación verificable entre estos proyectos y el modelo en cuestión. Dada la ausencia de datos públicos, cualquier evaluación técnica o recomendación de uso resulta imposible en este momento.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ No existe documentación técnica asociada en la ficha de HuggingFace, y los res
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura, el proceso de entrenamiento, el dataset utilizado o las técnicas de optimización (RLHF, DPO, etc.) para este modelo. La ficha de HuggingFace no incluye detalles técnicos más allá de la licencia y la fecha de creación. Tampoco se dispone de papers, repositorios de código o documentación adicional que permitan inferir estas características.
+No se ha publicado ninguna información sobre la arquitectura, el proceso de entrenamiento, el dataset utilizado o las técnicas de optimización (RLHF, DPO, etc.) para este modelo. La ficha de Hugging Face no incluye detalles técnicos más allá de la licencia y la fecha de creación. Tampoco se dispone de papers, repositorios de código o documentación adicional que permitan inferir estas características.
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ No se dispone de información sobre modelos comparables. Al carecer de datos té
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones adicionales en HuggingFace antes de su uso.
+- Acceso restringido: el modelo requiere aceptar condiciones adicionales en Hugging Face antes de su uso.
 - Ausencia total de documentación pública: no hay ficha técnica, paper, ni repositorio asociado.
 - No se puede verificar la procedencia ni la calidad del entrenamiento, lo que implica un riesgo elevado de sesgos, alucinaciones o comportamientos indeseados en producción.
 - La licencia Apache-2.0 permite uso comercial, pero sin información sobre el modelo, cualquier implementación en entornos productivos sería una decisión de alto riesgo.
@@ -55,6 +55,6 @@ No se dispone de información sobre modelos comparables. Al carecer de datos té
 
 ## Enlaces
 
-- [HuggingFace - sandrobaraldi/hermes](https://huggingface.co/sandrobaraldi/hermes)
+- [Hugging Face - sandrobaraldi/hermes](https://huggingface.co/sandrobaraldi/hermes)
 
 Nota: los resultados de búsqueda web sobre "Hermes 3" y "Hermes Agent" pertenecen a Nous Research y no tienen relación verificable con este modelo. Se incluyen únicamente como referencia externa, pero no constituyen documentación del modelo `sandrobaraldi/hermes`.

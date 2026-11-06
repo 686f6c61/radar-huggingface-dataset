@@ -27,7 +27,7 @@ Su relevancia ahora es doble: por un lado publica pesos abiertos bajo licencia M
 | Tamaño de vocabulario | 128 (con padding) |
 | Tokens de entrenamiento | 1600 B (bases) |
 | Tamaño del repositorio | 5,0 GB |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas / likes | 61 / 17 |
 
 ## Arquitectura y entrenamiento
@@ -98,13 +98,13 @@ No se han facilitado especificaciones ni resultados de benchmarks de modelos alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BGI-HangzhouAI/Genos-1.2B
+- Modelo en Hugging Face: https://huggingface.co/BGI-HangzhouAI/Genos-1.2B
 - Modelo Genos-10B: https://huggingface.co/BGI-HangzhouAI/Genos-10B
 - Checkpoint Megatron-LM 1.2B: https://huggingface.co/BGI-HangzhouAI/Genos-Megatron-1.2B
 - Checkpoint Megatron-LM 10B: https://huggingface.co/BGI-HangzhouAI/Genos-Megatron-10B
 - Repositorio GitHub: https://github.com/BGI-HangzhouAI/Genos
 - README en inglés del repositorio: https://github.com/BGI-HangzhouAI/Genos/blob/main/README_en.md
 - Artículo en GigaScience: https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giaf132/8296738
-- Organización en HuggingFace: https://huggingface.co/BGI-HangzhouAI
+- Organización en Hugging Face: https://huggingface.co/BGI-HangzhouAI
 - Organización en ModelScope: https://modelscope.cn/organization/BGI-HangzhouAI
 - Framework Megatron-LM: https://github.com/NVIDIA/Megatron-LM

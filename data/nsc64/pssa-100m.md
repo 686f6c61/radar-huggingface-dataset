@@ -91,5 +91,5 @@ No se han publicado benchmarks comparativos directos contra estos modelos en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NSC64/pssa-100m
+- Modelo en Hugging Face: https://huggingface.co/NSC64/pssa-100m
 - Repositorio de la arquitectura original (Rust): https://github.com/Sparticle62ops/pssa

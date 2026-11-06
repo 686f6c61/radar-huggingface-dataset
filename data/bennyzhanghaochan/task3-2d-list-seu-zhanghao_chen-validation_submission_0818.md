@@ -65,7 +65,7 @@ No disponible. No se conocen modelos comparables en esta categoría, ya que no s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BennyZhanghaoChan/Task3-2D-LIST-SEU-Zhanghao_Chen-Validation_Submission_0818
+- Repositorio Hugging Face: https://huggingface.co/BennyZhanghaoChan/Task3-2D-LIST-SEU-Zhanghao_Chen-Validation_Submission_0818
 - Repositorio de la submission anterior (0729): https://huggingface.co/BennyZhanghaoChan/Task3-2D-LIST-SEU-Zhanghao_Chen-Validation_Submission_0729
 - Competición MICCAI FLARE 2026 Task 3: https://www.codabench.org/competitions/7151/
 - Perfil GitHub del autor: https://github.com/Benny0323

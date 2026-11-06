@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Yamamototakumi/multitask es un repositorio de HuggingFace publicado por el usuario Yamamototakumi que contiene una implementación propia y mínima de una arquitectura denominada Coca, orientada a tareas multitarea. No es un modelo entrenado ni una release de pesos lista para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo y que no se presenta como un checkpoint evaluado con benchmarks.
+Yamamototakumi/multitask es un repositorio de Hugging Face publicado por el usuario Yamamototakumi que contiene una implementación propia y mínima de una arquitectura denominada Coca, orientada a tareas multitarea. No es un modelo entrenado ni una release de pesos lista para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo y que no se presenta como un checkpoint evaluado con benchmarks.
 
 El tamaño real de los pesos, según los metadatos de safetensors, es de 16.576 parámetros totales, lo que sitúa el modelo en la escala "tiny" declarada en la model card. La arquitectura combina atención flash, fusión tensorial (tensor fusion), activación swish y normalización layernorm, con una receta de experimento por defecto basada en el optimizador lamb y un schedule de tipo step, valores que el autor describe explícitamente como puntos de partida y no como evidencia de un entrenamiento completado.
 
@@ -74,9 +74,9 @@ No disponible. En la información proporcionada no se identifican modelos compar
 - Licencia MIT, permisiva para uso comercial, pero el autor recomienda revisar por separado los términos de los datos de origen si el repositorio se usa con datasets externos.
 - Arquitectura personalizada: no funciona con APIs genéricas de carga automática sin escribir un adaptador explícito, lo que añade coste de integración en producción.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse de forma separada de los valores por defecto publicados aquí.
-- Caveat de procedencia: los metadatos de HuggingFace registran fechas de creación y actualización de 2026-09-12, y un tamaño de repositorio de 0,0 GB junto a 0 descargas y 0 likes, lo que conviene tener en cuenta al evaluar la madurez y el mantenimiento del artefacto.
+- Caveat de procedencia: los metadatos de Hugging Face registran fechas de creación y actualización de 2026-09-12, y un tamaño de repositorio de 0,0 GB junto a 0 descargas y 0 likes, lo que conviene tener en cuenta al evaluar la madurez y el mantenimiento del artefacto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yamamototakumi/multitask
+- Modelo en Hugging Face: https://huggingface.co/Yamamototakumi/multitask
 - Papers, blogs, repositorios y demos: no disponible. La búsqueda web asociada no devolvió ningún resultado relacionado con el modelo ni con la arquitectura Coca.

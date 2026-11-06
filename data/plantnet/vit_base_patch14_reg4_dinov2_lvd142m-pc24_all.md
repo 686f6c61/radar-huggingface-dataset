@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `PlantNet/vit_base_patch14_reg4_dinov2_lvd142m.pc24_all` | Aproximadamente 86 M (ViT-Base) | no aplica | Clasificacion de 7.806 especies de flora del suroeste de Europa | Apache 2.0 | Hub de HuggingFace, carga via `timm` |
-| DINOv2 ViT-B/14 (backbone `timm`, sin ajuste fino) | Aproximadamente 86 M | no aplica | Embeddings visuales genericos (sin taxonomia de plantas) | Apache 2.0 (segun la distribucion de `timm`) | Hub de HuggingFace, carga via `timm` |
+| `PlantNet/vit_base_patch14_reg4_dinov2_lvd142m.pc24_all` | Aproximadamente 86 M (ViT-Base) | no aplica | Clasificacion de 7.806 especies de flora del suroeste de Europa | Apache 2.0 | Hub de Hugging Face, carga via `timm` |
+| DINOv2 ViT-B/14 (backbone `timm`, sin ajuste fino) | Aproximadamente 86 M | no aplica | Embeddings visuales genericos (sin taxonomia de plantas) | Apache 2.0 (segun la distribucion de `timm`) | Hub de Hugging Face, carga via `timm` |
 | Otros modelos participantes en PlantCLEF 2024 | no disponible | no aplica | Identificacion de especies vegetales | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PlantNet/vit_base_patch14_reg4_dinov2_lvd142m.pc24_all
+- Modelo en Hugging Face: https://huggingface.co/PlantNet/vit_base_patch14_reg4_dinov2_lvd142m.pc24_all
 - Datos de entrenamiento (tar): https://lab.plantnet.org/LifeCLEF/PlantCLEF2024/single_plant_training_data/PlantCLEF2024singleplanttrainingdata.tar
 - Metadatos de entrenamiento (CSV): https://lab.plantnet.org/LifeCLEF/PlantCLEF2024/single_plant_training_data/PlantCLEF2024singleplanttrainingdata.csv
 - Sitio de Pl@ntNet: https://plantnet.org/

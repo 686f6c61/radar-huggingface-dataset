@@ -74,9 +74,9 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deu05232/promptriever-llama2-7B-followtable-RandLH
+- Hugging Face: https://huggingface.co/deu05232/promptriever-llama2-7B-followtable-RandLH
 - Repositorio GitHub de Promptriever: https://github.com/deu05232/promptriever
-- Variantes relacionadas en HuggingFace:
+- Variantes relacionadas en Hugging Face:
   - https://huggingface.co/deu05232/promptriever-llama2-7B-followtable
   - https://huggingface.co/deu05232/promptriever-llama2-7B-followtable-JointLH4
 - Pagina de inferencia en FriendliAI (para una variante similar): https://friendli.ai/models/deu05232/promptriever-repro-llama2-7b

@@ -34,10 +34,10 @@ No se ha publicado ninguna información sobre arquitectura, datos de entrenamien
 ## Casos de uso
 
 - **Referencia académica**: el repositorio puede servir como punto de partida para investigadores interesados en el análisis de audio-visual learning, aunque el archivo `analysis.md` no está disponible públicamente en la página (solo se menciona en la model card).
-- **Auditoría de repositorios**: útil para estudiar cómo se estructuran los metadatos de modelos en HuggingFace, ya que muestra un caso con etiquetas y licencia pero sin contenido técnico.
+- **Auditoría de repositorios**: útil para estudiar cómo se estructuran los metadatos de modelos en Hugging Face, ya que muestra un caso con etiquetas y licencia pero sin contenido técnico.
 - **Análisis de prácticas de publicación**: puede usarse como ejemplo de un repositorio que no cumple los estándares mínimos de documentación de modelos (sin arquitectura, sin pesos, sin benchmarks).
 - **Investigación sobre etiquetas**: los tags (`audio-visual-learning`, `critical`, `highlight-bullet`, etc.) podrían interesar a quienes estudian la clasificación automática de modelos en plataformas de IA.
-- **Pruebas de herramientas de scraping**: el repositorio puede servir para probar scripts que extraen información de HuggingFace cuando el contenido es escaso.
+- **Pruebas de herramientas de scraping**: el repositorio puede servir para probar scripts que extraen información de Hugging Face cuando el contenido es escaso.
 - **Educación sobre licencias**: el uso de Apache 2.0 en un repositorio sin código ni modelos ilustra la aplicación de licencias a artefactos no software.
 
 ## Benchmarks y rendimiento
@@ -62,5 +62,5 @@ No disponible. No existe información sobre el modelo para comparar con otras al
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ABDULRAHMANALZ/gpt2-chatbot67
+- Repositorio en Hugging Face: https://huggingface.co/ABDULRAHMANALZ/gpt2-chatbot67
 - (No se han encontrado otros enlaces relevantes en la búsqueda web; los resultados de búsqueda corresponden a proyectos de chatbot GPT-2 no relacionados con este repositorio.)

@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA entrenado mediante DPO (Direct Preference Optimization) sobre el modelo base `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16`, con el objetivo de imitar el comportamiento y estilo de razonamiento de `meta-llama/Llama-3.3-70B` en el corpus GSM8K. Forma parte del estudio de imitación conductual configurado por el proyecto **dementor** de dementor-research, que explora cómo adaptadores ligeros pueden transferir estilos de razonamiento entre modelos de distinta arquitectura y tamaño.
 
-El adaptador tiene un tamaño de repositorio de 1,5 GB y se distribuye en formato PEFT (safetensors), pensado para ser cargado sobre el modelo base mediante la librería `peft` de HuggingFace. No se proporcionan datos sobre licencia, idiomas soportados ni resultados de benchmarks en la información disponible. Su relevancia radica en ser un ejemplo de adaptación paramétrica eficiente (LoRA rank 32) aplicada a un modelo MoE de última generación, dentro de una campaña sistemática de 528 celdas configuradas que combinan 12 modelos, 4 datasets y 1 semilla.
+El adaptador tiene un tamaño de repositorio de 1,5 GB y se distribuye en formato PEFT (safetensors), pensado para ser cargado sobre el modelo base mediante la librería `peft` de Hugging Face. No se proporcionan datos sobre licencia, idiomas soportados ni resultados de benchmarks en la información disponible. Su relevancia radica en ser un ejemplo de adaptación paramétrica eficiente (LoRA rank 32) aplicada a un modelo MoE de última generación, dentro de una campaña sistemática de 528 celdas configuradas que combinan 12 modelos, 4 datasets y 1 semilla.
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - El modelo base tiene 30B parámetros totales (3B activos), por lo que en BF16 necesita aproximadamente 60 GB de VRAM para inferencia sin cuantización.
 - Con cuantización de 8 bits, la VRAM requerida se reduce a unos 30 GB; con 4 bits, a unos 15 GB, aunque el adaptador LoRA puede no ser compatible con todas las cuantizaciones.
 - GPUs recomendadas: NVIDIA A100 (80 GB), H100 (80 GB), o configuraciones multi-GPU. En consumer, una RTX 4090 (24 GB) solo podría ejecutar el modelo con cuantización agresiva (4 bits) y posiblemente con limitaciones de contexto.
-- Opciones de despliegue: vLLM, TGI, llama.cpp (si se convierte a GGUF), o HuggingFace Transformers con PEFT. No se dispone de datos de latencia o throughput.
+- Opciones de despliegue: vLLM, TGI, llama.cpp (si se convierte a GGUF), o Hugging Face Transformers con PEFT. No se dispone de datos de latencia o throughput.
 
 ## Comparativa con modelos similares
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_gsm8k_nemotron-nano-30b-a3b_as_llama-3.3-70b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_gsm8k_nemotron-nano-30b-a3b_as_llama-3.3-70b_seed42
 - Colección de adaptadores GSM8K de dementor-research: https://huggingface.co/collections/dementor-research/dementor-adapters-gsm8k
 - Modelo base NVIDIA Nemotron-3 Nano 30B A3B: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Página de NVIDIA sobre Nemotron: https://developer.nvidia.com/topics/ai/nemotron

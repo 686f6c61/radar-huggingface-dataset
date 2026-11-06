@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jj33512/qwen2.5-jailbreak | 3,09 B | no especificado (base: 32.768) | Fine-tune LoRA de Qwen2.5-3B-Instruct, sin alineamiento de seguridad | Apache 2.0 en metadatos, restringida a investigacion en la model card | HuggingFace, 0 descargas, sin benchmarks |
-| Qwen/Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens | Modelo instructivo alineado | Apache 2.0 | HuggingFace, ampliamente validado, benchmarks publicados por el autor |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Modelo instructivo alineado | Licencia comunitaria de Llama 3.2 | HuggingFace, con benchmarks publicados |
-| microsoft/Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | Modelo instructivo alineado | MIT | HuggingFace, con benchmarks publicados |
+| jj33512/qwen2.5-jailbreak | 3,09 B | no especificado (base: 32.768) | Fine-tune LoRA de Qwen2.5-3B-Instruct, sin alineamiento de seguridad | Apache 2.0 en metadatos, restringida a investigacion en la model card | Hugging Face, 0 descargas, sin benchmarks |
+| Qwen/Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens | Modelo instructivo alineado | Apache 2.0 | Hugging Face, ampliamente validado, benchmarks publicados por el autor |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Modelo instructivo alineado | Licencia comunitaria de Llama 3.2 | Hugging Face, con benchmarks publicados |
+| microsoft/Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | Modelo instructivo alineado | MIT | Hugging Face, con benchmarks publicados |
 
 La comparacion relevante no es de rendimiento, ya que este fine-tune no publica metricas, sino de proposito: los tres modelos alternativos son asistentes alineados y evaluados, mientras que este repositorio es un artefacto de investigacion sobre jailbreak. Respecto a otras familias de modelos "sin censura" obtenidos por abliteration (por ejemplo, las variantes abliterated de llama-3 y Qwen publicadas por la comunidad), este modelo se diferencia en el metodo: abliteration modifica los pesos mediante direcciones de rechazo calculadas, mientras que aqui se usa SFT con LoRA sobre un dataset de jailbreak. No hay datos que permitan comparar la eficacia de ambos enfoques en este repositorio.
 
@@ -93,7 +93,7 @@ La comparacion relevante no es de rendimiento, ya que este fine-tune no publica 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jj33512/qwen2.5-jailbreak
+- Modelo en Hugging Face: https://huggingface.co/jj33512/qwen2.5-jailbreak
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5
 - Informe tecnico de Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115

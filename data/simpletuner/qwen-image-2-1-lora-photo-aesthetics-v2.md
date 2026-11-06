@@ -94,7 +94,7 @@ No se han publicado resultados de benchmarks puntuados en la informacion disponi
 |---|---|---|---|---|---|---|
 | Qwen-Image-2.1-LoRA-photo-aesthetics-v2 (este) | LoRA rango 32 | Qwen/Qwen-Image-2.1 | 50.000 actualizaciones, datos multiescala 512/1024, REPA, asistente v2 congelado, sin regularización | Entrenamiento y salida a 512 y 1024 px | qwen-research | Repo con checkpoints 10k–50k; 0 descargas, 0 likes |
 | Qwen-Image-2.1-LoRA-photo-aesthetics-50k (experimento anterior del mismo autor) | LoRA foto-estética | Qwen/Qwen-Image-2.1 | 50.000 actualizaciones; receta previa, sin el enfoque multiescala de v2 | No disponible en la informacion proporcionada | qwen-research | Publicado por el mismo autor, referenciado como experimento previo |
-| Qwen/Qwen-Image-2.1 (modelo base sin adaptador) | Modelo de difusión completo | — | No aplica | No disponible en la informacion proporcionada | qwen-research (según el repo del adaptador) | Público en HuggingFace |
+| Qwen/Qwen-Image-2.1 (modelo base sin adaptador) | Modelo de difusión completo | — | No aplica | No disponible en la informacion proporcionada | qwen-research (según el repo del adaptador) | Público en Hugging Face |
 
 No se dispone de información sobre otros adaptadores foto-estéticos comparables de terceros en la documentación proporcionada.
 
@@ -114,7 +114,7 @@ No se dispone de información sobre otros adaptadores foto-estéticos comparable
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-LoRA-photo-aesthetics-v2
+- Repositorio Hugging Face: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-LoRA-photo-aesthetics-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Dataset de entrenamiento: https://huggingface.co/datasets/webshart/terminusresearch-photo-aesthetics
 - Training assistant v2 (congelado, usado solo en entrenamiento): https://huggingface.co/SimpleTuner/Qwen-Image-2.1-training-assistant-v2

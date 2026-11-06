@@ -21,7 +21,7 @@ Su relevancia es doble: por un lado cubre una variante dialectal poco representa
 | Licencia | MIT |
 | Formato de pesos | Safetensors (repositorio de 0,4 GB, librería `transformers`) |
 
-Otros datos relevantes: `pipeline_tag` = `text-classification`, etiquetas declaradas `hate-speech-detection`, `offensive-language`, `spanish`, `el-salvador`, `social-media`, y compatibilidad con `text-embeddings-inference` y endpoints. Descargas y likes registrados en HuggingFace: 0 en ambos casos en el momento de la consulta.
+Otros datos relevantes: `pipeline_tag` = `text-classification`, etiquetas declaradas `hate-speech-detection`, `offensive-language`, `spanish`, `el-salvador`, `social-media`, y compatibilidad con `text-embeddings-inference` y endpoints. Descargas y likes registrados en Hugging Face: 0 en ambos casos en el momento de la consulta.
 
 ## Arquitectura y entrenamiento
 
@@ -70,17 +70,17 @@ No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K y
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM. Para lotes grandes y *throughput* alto, tarjetas de centro de datos como T4, L4, A10, A100 o H100; en escritorio, RTX 3060, 4060, 4090 o superiores.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier modelo con soporte CUDA, incluidos equipos antiguos, y también en Apple Silicon vía Metal (MPS).
 - Ejecución en CPU: viable para volúmenes moderados, ya que es un encoder de 108 millones de parámetros con secuencias de 128 tokens.
-- Opciones de despliegue: `transformers` con `pipeline`, HuggingFace Text Generation Inference (TGI) para servir clasificadores, ONNX Runtime para exportación y ejecución optimizada en CPU/GPU, y contenedores propios con FastAPI. El repositorio declara compatibilidad con `text-embeddings-inference` y endpoints. `llama.cpp` y `Ollama` no son vías habituales para un modelo de clasificación de este tipo, y vLLM solo resulta relevante si se despliega mediante su soporte de modelos con *pooling*.
+- Opciones de despliegue: `transformers` con `pipeline`, Hugging Face Text Generation Inference (TGI) para servir clasificadores, ONNX Runtime para exportación y ejecución optimizada en CPU/GPU, y contenedores propios con FastAPI. El repositorio declara compatibilidad con `text-embeddings-inference` y endpoints. `llama.cpp` y `Ollama` no son vías habituales para un modelo de clasificación de este tipo, y vLLM solo resulta relevante si se despliega mediante su soporte de modelos con *pooling*.
 - Latencia y throughput: no publicados. Como referencia de orden de magnitud, un encoder de este tamaño y longitud de secuencia suele procesar desde varios cientos hasta algunos miles de muestras por segundo por GPU en fp16 y lotes grandes, y decenas o cientos por segundo en CPU multinúcleo, pero estas cifras no están verificadas para este modelo concreto y deben medirse en el entorno de destino.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| caeher/robertuito-v3-sv (este modelo) | 108.790.276 | 128 tokens en ajuste | Clasificación de toxicidad en 4 clases, español de El Salvador | MIT | HuggingFace, vía `transformers` |
-| pysentimiento/robertuito-base-cased | Aproximadamente el mismo backbone (es el modelo base de este ajuste) | No disponible en la información proporcionada | Encoder preentrenado en español de redes sociales | No disponible | HuggingFace |
-| pysentimiento/robertuito-\* (ajustes de sentimiento, emociones y toxicidad) | No disponible | No disponible | Clasificación de texto en español de redes sociales | No disponible | HuggingFace |
-| dccuchile/bert-base-spanish-wwm-cased (BETO) | No disponible | No disponible | Encoder BERT preentrenado en español general | No disponible | HuggingFace |
+| caeher/robertuito-v3-sv (este modelo) | 108.790.276 | 128 tokens en ajuste | Clasificación de toxicidad en 4 clases, español de El Salvador | MIT | Hugging Face, vía `transformers` |
+| pysentimiento/robertuito-base-cased | Aproximadamente el mismo backbone (es el modelo base de este ajuste) | No disponible en la información proporcionada | Encoder preentrenado en español de redes sociales | No disponible | Hugging Face |
+| pysentimiento/robertuito-\* (ajustes de sentimiento, emociones y toxicidad) | No disponible | No disponible | Clasificación de texto en español de redes sociales | No disponible | Hugging Face |
+| dccuchile/bert-base-spanish-wwm-cased (BETO) | No disponible | No disponible | Encoder BERT preentrenado en español general | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada, por lo que la comparación se limita a arquitectura, tarea y licencia del modelo descrito frente a sus referencias más directas.
 
@@ -100,6 +100,6 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caeher/robertuito-v3-sv
+- Modelo en Hugging Face: https://huggingface.co/caeher/robertuito-v3-sv
 - Modelo base citado en la model card: https://huggingface.co/pysentimiento/robertuito-base-cased
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados devueltos correspondían a textos legales alemanes sin relación con el modelo.

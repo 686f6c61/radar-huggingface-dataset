@@ -73,5 +73,5 @@ No disponible. No se han identificado modelos comparables en la misma categoría
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [vasi-lyev/efficientformer-contrastive-lite](https://huggingface.co/vasi-lyev/efficientformer-contrastive-lite)
+- Repositorio en Hugging Face: [vasi-lyev/efficientformer-contrastive-lite](https://huggingface.co/vasi-lyev/efficientformer-contrastive-lite)
 - Otros enlaces relevantes: no se han encontrado en la información proporcionada.

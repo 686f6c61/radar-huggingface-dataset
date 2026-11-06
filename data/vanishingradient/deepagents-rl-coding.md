@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vanishingradient/deepagents-rl-coding` es un repositorio de HuggingFace publicado por el usuario `vanishingradient` que implementa un pipeline de rollouts y evaluación de agentes de código sobre el harness `deepagents`. No se trata de un modelo de lenguaje con pesos publicados: la model card describe el protocolo para ejecutar un agente sobre SWE-bench Lite, exportar el `git diff` y calificarlo dentro de la imagen Docker oficial de cada instancia. El repositorio ocupa 0,1 GB y no declara pipeline, licencia, idiomas ni especificaciones del modelo subyacente.
+`vanishingradient/deepagents-rl-coding` es un repositorio de Hugging Face publicado por el usuario `vanishingradient` que implementa un pipeline de rollouts y evaluación de agentes de código sobre el harness `deepagents`. No se trata de un modelo de lenguaje con pesos publicados: la model card describe el protocolo para ejecutar un agente sobre SWE-bench Lite, exportar el `git diff` y calificarlo dentro de la imagen Docker oficial de cada instancia. El repositorio ocupa 0,1 GB y no declara pipeline, licencia, idiomas ni especificaciones del modelo subyacente.
 
 El problema que aborda es la evaluación fiable de agentes de programación en tareas de larga duración. En lugar de usar recompensas proxy o heurísticas de solapamiento de archivos, el harness aplica el parche del agente y ejecuta el `eval_script` oficial de SWE-bench, con verificación de `FAIL_TO_PASS` y `PASS_TO_PASS`. Es relevante para investigación en RL con recompensas verificables y para comparar modelos bajo un mismo scaffold de herramientas.
 
@@ -22,7 +22,7 @@ La información disponible no incluye arquitectura, número de parámetros, long
 | Formato de pesos | No disponible; el repositorio contiene código Python y artefactos de evaluación, no pesos |
 | Tipo de artefacto | Repositorio de código: harness de entrenamiento/evaluación de agentes |
 | Tamaño del repositorio | 0,1 GB |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas | 0 |
 | Likes | 0 |
 | Fecha de creación | 2026-10-18 |
@@ -95,7 +95,7 @@ Este repositorio no publica parámetros, contexto ni resultados, por lo que no e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vanishingradient/deepagents-rl-coding
+- Repositorio en Hugging Face: https://huggingface.co/vanishingradient/deepagents-rl-coding
 - Dataset SWE-bench Lite citado en la model card: https://huggingface.co/datasets/SWE-bench/SWE-bench_Lite
 - No se han encontrado enlaces a paper, blog, repositorio de código o demo en la información disponible.
 - Los resultados de búsqueda web proporcionados tratan sobre el problema del gradiente desvaneciente y no son relevantes para este artefacto.

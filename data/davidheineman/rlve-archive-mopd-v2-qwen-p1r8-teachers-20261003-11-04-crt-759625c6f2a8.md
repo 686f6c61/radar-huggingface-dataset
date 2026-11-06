@@ -23,7 +23,7 @@ La relevancia de esta ficha es fundamentalmente metodológica: sirve para docume
 
 ## Arquitectura y entrenamiento
 
-La única información arquitectónica fiable es indirecta: la etiqueta `qwen2` en HuggingFace y el nombre del run. Esto sitúa el modelo dentro de la familia Qwen2, que emplea una arquitectura transformer decoder-only con normalización RMSNorm, activación SwiGLU, atención con RoPE y, en los tamaños pequeños de esa familia, atención con query/key/value bias. No obstante, no se especifica en la información proporcionada el número de capas, dimensiones ocultas, cabezas de atención ni la ventana de contexto configurada.
+La única información arquitectónica fiable es indirecta: la etiqueta `qwen2` en Hugging Face y el nombre del run. Esto sitúa el modelo dentro de la familia Qwen2, que emplea una arquitectura transformer decoder-only con normalización RMSNorm, activación SwiGLU, atención con RoPE y, en los tamaños pequeños de esa familia, atención con query/key/value bias. No obstante, no se especifica en la información proporcionada el número de capas, dimensiones ocultas, cabezas de atención ni la ventana de contexto configurada.
 
 Respecto al entrenamiento, el nombre del run (`mopd-v2-qwen-p1r8-teachers`) y la etiqueta `rlve` sugieren un pipeline de aprendizaje por refuerzo con entornos de verificación, posiblemente con destilación desde modelos "teacher" (de ahí el sufijo `teachers`). El checkpoint corresponde al paso 9 de la rama `04-CRT`, un valor muy bajo que indica que se trata de un punto intermedio o temprano del proceso, no de un modelo convergido. Se desconoce el número total de tokens, la composición del dataset, si hubo fases de SFT, DPO o RLHF, y cualquier innovación técnica asociada. La model card indica además que el directorio `checkpoint/` contiene el estado exacto de un checkpoint distribuido de Megatron, lo que confirma que el entrenamiento se realizó con el stack Megatron.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (rlve-archive-mopd-v2-qwen-p1r8) | 1,54 mil millones | no disponible | no disponible | HuggingFace, 0 descargas |
+| Este checkpoint (rlve-archive-mopd-v2-qwen-p1r8) | 1,54 mil millones | no disponible | no disponible | Hugging Face, 0 descargas |
 | Qwen2-1.5B | 1,54 mil millones | 32.768 tokens (según la familia Qwen2) | Apache 2.0 | Amplia, con benchmarks publicados |
 | Qwen2.5-1.5B | 1,54 mil millones | 32.768 tokens, extensible a 131.072 (según la familia) | Apache 2.0 | Amplia, con benchmarks publicados |
 | TinyLlama-1.1B | 1,1 mil millones | 2.048 tokens (según su model card) | Apache 2.0 | Amplia, con benchmarks publicados |
@@ -86,5 +86,5 @@ La comparación es necesariamente asimétrica: los tres modelos de referencia cu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-04-crt-759625c6f2a8
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-04-crt-759625c6f2a8
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

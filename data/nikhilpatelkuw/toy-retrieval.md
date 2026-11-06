@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`NikhilPatelkuw/toy-retrieval` es un modelo experimental de recuperacion (retrieval) multimodal basado en la arquitectura Blip, publicado por el usuario NikhilPatelkuw en HuggingFace. Con tan solo 24.832 parametros totales y un peso en safetensors, se trata de un checkpoint de inicializacion disenado para pruebas de humo (smoke tests) y para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no de un modelo entrenado ni evaluado.
+`NikhilPatelkuw/toy-retrieval` es un modelo experimental de recuperacion (retrieval) multimodal basado en la arquitectura Blip, publicado por el usuario NikhilPatelkuw en Hugging Face. Con tan solo 24.832 parametros totales y un peso en safetensors, se trata de un checkpoint de inicializacion disenado para pruebas de humo (smoke tests) y para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no de un modelo entrenado ni evaluado.
 
 El modelo no resuelve por si mismo una tarea de produccion: su proposito declarado es servir de base reproducible para iterar sobre la implementacion (attention de tipo grouped query, fusion tensorial, activacion swish) y verificar que el codigo de entrenamiento y evaluacion funciona. El autor indica explicitamente que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
@@ -21,7 +21,7 @@ Es relevante ahora unicamente como artefacto de investigacion y andamiaje de ing
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 
-Otros metadatos del repositorio: etiquetas `pytorch`, `blip`, `retrieval`; tamano del repositorio 0.0 GB; creado el 15 de octubre de 2026; pipeline de HuggingFace no declarado.
+Otros metadatos del repositorio: etiquetas `pytorch`, `blip`, `retrieval`; tamano del repositorio 0.0 GB; creado el 15 de octubre de 2026; pipeline de Hugging Face no declarado.
 
 ## Arquitectura y entrenamiento
 
@@ -69,7 +69,7 @@ No disponible. No se dispone en la informacion proporcionada de datos de paramet
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `NikhilPatelkuw/toy-retrieval` | 24.832 | no disponible | sin benchmarks publicados | MIT | HuggingFace |
+| `NikhilPatelkuw/toy-retrieval` | 24.832 | no disponible | sin benchmarks publicados | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,6 +85,6 @@ No disponible. No se dispone en la informacion proporcionada de datos de paramet
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NikhilPatelkuw/toy-retrieval
+- Hugging Face: https://huggingface.co/NikhilPatelkuw/toy-retrieval
 - Articulo de referencia de Blip (no enlazado en la model card): no disponible
 - Papers, blogs, repositorios o demos adicionales: no disponible

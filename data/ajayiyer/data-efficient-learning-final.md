@@ -52,7 +52,7 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 - No es adecuado para uso en produccion ni para tareas de inferencia.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/ajayiyer/data-efficient-learning-final
+- Repositorio en Hugging Face: https://huggingface.co/ajayiyer/data-efficient-learning-final
 - Articulo relacionado sobre active learning (arXiv): https://arxiv.org/pdf/2504.16136
 - Curso MIT sobre TinyML y computacion eficiente: https://hanlab.mit.edu/courses/2024-fall-65940
 - Pagina de investigacion de Rishabh Iyer (menciona data-efficient learning): https://sites.google.com/view/rishabhiyer/research

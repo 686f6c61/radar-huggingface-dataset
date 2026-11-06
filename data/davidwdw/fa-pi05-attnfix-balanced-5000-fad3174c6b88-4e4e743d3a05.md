@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-pi05-attnfix-balanced-5000-fad3174c6b88-4e4e743d3a05` es un paquete de pesos alojado en HuggingFace por el usuario `davidwdw`. La model card lo describe como un "archivo privado de flota" (private fleet archive) y lo etiqueta como un snapshot de una revision concreta, no como un espejo actualizado de un directorio vivo. El tamaño del repositorio es de 12,4 GB, lo que indica que contiene pesos en precision alta (probablemente bf16 o fp16) junto con activos auxiliares.
+El repositorio `davidwdw/fa-pi05-attnfix-balanced-5000-fad3174c6b88-4e4e743d3a05` es un paquete de pesos alojado en Hugging Face por el usuario `davidwdw`. La model card lo describe como un "archivo privado de flota" (private fleet archive) y lo etiqueta como un snapshot de una revision concreta, no como un espejo actualizado de un directorio vivo. El tamaño del repositorio es de 12,4 GB, lo que indica que contiene pesos en precision alta (probablemente bf16 o fp16) junto con activos auxiliares.
 
 No se dispone de informacion publica sobre arquitectura, numero de parametros, longitud de contexto, idiomas, licencia ni formato de pesos. La model card unicamente referencia una receta canonica interna (`2026-09-22_b1k_task00_pi05_attention_consistent_h20`) y un nivel de empaquetado ("params+assets"), ademas de recomendar el uso de la revision exacta registrada y la verificacion mediante `SHA256SUMS`.
 
@@ -101,7 +101,7 @@ La unica similitud nominal detectable es el fragmento `pi05` del identificador, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-pi05-attnfix-balanced-5000-fad3174c6b88-4e4e743d3a05
+- Hugging Face: https://huggingface.co/davidwdw/fa-pi05-attnfix-balanced-5000-fad3174c6b88-4e4e743d3a05
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

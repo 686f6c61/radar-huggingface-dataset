@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario YuMoool, no contiene un modelo de IA listo para usar, sino un almacenamiento privado de checkpoints intermedios de entrenamiento para dos experimentos de robótica basados en el dataset DROID. Según la model card, se trata de "Private rolling checkpoint storage for the full-DROID H100 training runs", es decir, un espacio donde se suben automáticamente los últimos checkpoints estables de dos ejecuciones de entrenamiento que utilizan GPUs H100.
+Este repositorio de Hugging Face, publicado por el usuario YuMoool, no contiene un modelo de IA listo para usar, sino un almacenamiento privado de checkpoints intermedios de entrenamiento para dos experimentos de robótica basados en el dataset DROID. Según la model card, se trata de "Private rolling checkpoint storage for the full-DROID H100 training runs", es decir, un espacio donde se suben automáticamente los últimos checkpoints estables de dos ejecuciones de entrenamiento que utilizan GPUs H100.
 
 El primer experimento, identificado como `c41-gripper-event2s`, parece emplear DINOv2 (un modelo de visión por transformer) para una tarea de predicción de eventos de agarre (gripper events). El segundo, `wan-vae-full-droid`, utiliza Wan-VAE, un autoencoder variacional probablemente orientado a modelado de video o generación de secuencias. El repositorio tiene un tamaño de 101.3 GB y contiene archivos `latest.pt` (checkpoints en formato PyTorch) y `latest.json` (metadatos). No se proporciona información sobre la arquitectura completa, parámetros, licencia ni capacidades del modelo final.
 
@@ -36,7 +36,7 @@ Dado que se trata de checkpoints de entrenamiento y no de un modelo final, los c
 - Exploración de autoencoders variacionales en robótica: el experimento con Wan-VAE podría interesar a investigadores que trabajen en representaciones latentes de estados o acciones.
 - Reproducción de experimentos: si el autor publica el código de entrenamiento (mencionado en la model card), los checkpoints permitirían reproducir o comparar resultados.
 - Transferencia de aprendizaje: aunque no se documenta, los checkpoints podrían usarse como inicialización para fine-tuning en tareas similares, siempre que se obtenga permiso del autor.
-- Almacenamiento y versionado: el repositorio demuestra un patrón de automatización para subir checkpoints a HuggingFace, que podría replicarse en otros proyectos.
+- Almacenamiento y versionado: el repositorio demuestra un patrón de automatización para subir checkpoints a Hugging Face, que podría replicarse en otros proyectos.
 
 ## Benchmarks y rendimiento
 
@@ -61,4 +61,4 @@ No disponible. No se han identificado modelos comparables con la información pr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/YuMoool/gen2act-dual-h100-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/YuMoool/gen2act-dual-h100-checkpoints

@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, GSM8K, HumanEval, e
 
 | Modelo | Parametros | Adaptacion | Perplejidad (LVTB test) | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| Latvian Qwen2.5-0.5B LoRA V2 | 496 M (+2,16 M entrenables) | LoRA r=16, 1 epoca, 148.313 muestras | 38,25 | No disponible (base Apache-2.0) | HuggingFace, adaptador safetensors |
-| Latvian Qwen2.5-0.5B LoRA V1 | 496 M (+ adaptador) | LoRA, version previa | 40,82 | No disponible | HuggingFace |
-| Qwen/Qwen2.5-0.5B | 496 M | Ninguna (base multilingue) | 52,38 en leton | Apache-2.0 | HuggingFace |
+| Latvian Qwen2.5-0.5B LoRA V2 | 496 M (+2,16 M entrenables) | LoRA r=16, 1 epoca, 148.313 muestras | 38,25 | No disponible (base Apache-2.0) | Hugging Face, adaptador safetensors |
+| Latvian Qwen2.5-0.5B LoRA V1 | 496 M (+ adaptador) | LoRA, version previa | 40,82 | No disponible | Hugging Face |
+| Qwen/Qwen2.5-0.5B | 496 M | Ninguna (base multilingue) | 52,38 en leton | Apache-2.0 | Hugging Face |
 
 No se dispone de informacion sobre otros modelos especificos de leton comparables (por ejemplo, adaptaciones de TinyLlama, EuroLLM o modelos de la familia Baltic) en los datos proporcionados, por lo que no se incluye una comparacion adicional.
 
@@ -94,7 +94,7 @@ No se dispone de informacion sobre otros modelos especificos de leton comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kikeplo/latvian-qwen-0.5b-lora-v2
+- Modelo en Hugging Face: https://huggingface.co/kikeplo/latvian-qwen-0.5b-lora-v2
 - Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Latvian Treebank (LVTB), citado en la model card como fuente de datos (licencia CC BY-SA 4.0): no se proporciona enlace directo en la informacion disponible.
 - Corpus adicional de texto leton (CC BY 4.0): distribuido en Hugging Face segun la model card, sin enlace directo especificado.

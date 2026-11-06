@@ -74,7 +74,7 @@ La comparación se basa en specs públicas de los modelos base. No hay datos de 
 
 ## Enlaces
 
-- [HuggingFace: adi696969/os-agent-v2-gguf](https://huggingface.co/adi696969/os-agent-v2-gguf)
+- [Hugging Face: adi696969/os-agent-v2-gguf](https://huggingface.co/adi696969/os-agent-v2-gguf)
 - [Unsloth (herramienta de entrenamiento y conversión)](https://github.com/unslothai/unsloth)
 - [llama.cpp (repositorio de referencia para GGUF)](https://github.com/ggerganov/llama.cpp)
 - [Ollama (plataforma de despliegue local)](https://ollama.com/)

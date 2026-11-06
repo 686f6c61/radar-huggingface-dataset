@@ -82,6 +82,6 @@ No se dispone de información comparativa con otros modelos de segmentación en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlboydaisuke/ormbg-ExecuTorch
+- Repositorio Hugging Face: https://huggingface.co/mlboydaisuke/ormbg-ExecuTorch
 - Modelo base (schirrmacher/ormbg): https://huggingface.co/schirrmacher/ormbg
 - Scripts de conversión (executorch-models): https://github.com/john-rocky/executorch-models

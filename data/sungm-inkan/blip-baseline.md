@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sungm-inkan/blip-baseline` es un repositorio de HuggingFace que contiene una implementacion propia en PyTorch de una arquitectura BLIP (Bootstrapping Language-Image Pre-training) orientada a aprendizaje contrastivo. No se trata de un modelo preentrenado ni ajustado, sino de un esqueleto de codigo acompanado de un checkpoint de inicializacion valido para pruebas de humo y experimentos controlados de pequena escala. El autor lo describe explicitamente como material de revision de codigo, no como un release listo para produccion.
+`sungm-inkan/blip-baseline` es un repositorio de Hugging Face que contiene una implementacion propia en PyTorch de una arquitectura BLIP (Bootstrapping Language-Image Pre-training) orientada a aprendizaje contrastivo. No se trata de un modelo preentrenado ni ajustado, sino de un esqueleto de codigo acompanado de un checkpoint de inicializacion valido para pruebas de humo y experimentos controlados de pequena escala. El autor lo describe explicitamente como material de revision de codigo, no como un release listo para produccion.
 
 El repositorio incluye `model.py` como artefacto principal, `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto (AdamW con schedule de warmup constante) y `model.safetensors` como checkpoint de inicializacion. La configuracion declarada corresponde a una escala "large" con atencion dispersa, fusion por co-atencion, activacion swish y normalizacion por grupos, aunque el recuento real de parametros de los pesos publicados es de solo 33.088, lo que evidencia que se trata de un prototipo minúsculo sin entrenamiento efectivo.
 
@@ -83,9 +83,9 @@ La comparacion es limitada porque `sungm-inkan/blip-baseline` no es un modelo en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sungm-inkan/blip-baseline
-- Repositorio similar en HuggingFace: https://huggingface.co/samuelyoung/blip-baseline
-- Documentacion BLIP en HuggingFace Transformers: https://huggingface.co/docs/transformers/main/en/model_doc/blip
+- Hugging Face: https://huggingface.co/sungm-inkan/blip-baseline
+- Repositorio similar en Hugging Face: https://huggingface.co/samuelyoung/blip-baseline
+- Documentacion BLIP en Hugging Face Transformers: https://huggingface.co/docs/transformers/main/en/model_doc/blip
 - Ficha BLIP de Salesforce en Replicate: https://www.aimodels.fyi/models/replicate/blip-salesforce
 - Articulo explicativo sobre BLIP: https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/
 - Documentacion de modelos BLIP en el framework UPop: https://deepwiki.com/sdc17/UPop/5.1-blip-models

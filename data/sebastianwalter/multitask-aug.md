@@ -75,6 +75,6 @@ No disponible. El repositorio no es un modelo preentrenado comparable con altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sebastianwalter/multitask-aug
+- Hugging Face: https://huggingface.co/sebastianwalter/multitask-aug
 - Ficheros del repositorio: `main.py` (artefacto principal), `README.md` (documentacion), `config.json` (configuracion de arquitectura), `training_args.json` (ajustes por defecto del experimento), `model.safetensors` (checkpoint de inicializacion).
 - No se han encontrado en la informacion disponible enlaces adicionales a papers, blogs, repositorios de codigo o demos.

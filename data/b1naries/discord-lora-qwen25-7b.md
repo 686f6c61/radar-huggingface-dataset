@@ -2,9 +2,9 @@
 
 ## Resumen
 
-B1NARIES/discord-lora-qwen25-7b es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario B1NARIES, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base unsloth/Qwen2.5-7B-Instruct-bnb-4bit. Se distribuye en formato PEFT y safetensors, con un tamano de repositorio de 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo. No se trata por tanto de un modelo independiente, sino de un conjunto de pesos que debe combinarse con el modelo base para poder ejecutarse.
+B1NARIES/discord-lora-qwen25-7b es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario B1NARIES, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base unsloth/Qwen2.5-7B-Instruct-bnb-4bit. Se distribuye en formato PEFT y safetensors, con un tamano de repositorio de 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo. No se trata por tanto de un modelo independiente, sino de un conjunto de pesos que debe combinarse con el modelo base para poder ejecutarse.
 
-El nombre del repositorio sugiere un ajuste orientado a conversaciones或多... el nombre sugiere un ajuste orientado a conversaciones或多— conviene precisar que la unica evidencia al respecto es el propio identificador del repositorio; la model card no documenta ni el dataset ni el dominio de entrenamiento. La model card es la plantilla por defecto de HuggingFace con la mayoria de los campos sin rellenar ("More Information Needed"), por lo que no hay informacion verificable sobre datos de entrenamiento, hiperparametros, licencia o evaluacion.
+El nombre del repositorio sugiere un ajuste orientado a conversaciones或多... el nombre sugiere un ajuste orientado a conversaciones或多— conviene precisar que la unica evidencia al respecto es el propio identificador del repositorio; la model card no documenta ni el dataset ni el dominio de entrenamiento. La model card es la plantilla por defecto de Hugging Face con la mayoria de los campos sin rellenar ("More Information Needed"), por lo que no hay informacion verificable sobre datos de entrenamiento, hiperparametros, licencia o evaluacion.
 
 Su relevancia actual es limitada y de caracter practico: sirve como ejemplo de flujo de trabajo con Unsloth + TRL + PEFT para fine-tuning eficiente de Qwen2.5-7B, y como posible punto de partida para quien quiera reproducir o inspeccionar un ajuste de Qwen2.5-7B orientado a conversacion. Registra 0 descargas y 0 "likes" en el momento de la consulta, y el repositorio se creo y actualizo el 13 de septiembre de 2026.
 
@@ -67,8 +67,8 @@ No se dispone de datos de rendimiento de este adaptador, por lo que la comparati
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| B1NARIES/discord-lora-qwen25-7b | Adaptador LoRA (PEFT) | No disponible (repo de 0,2 GB) | No disponible | No disponible | Publico en HuggingFace; 0 descargas |
-| unsloth/Qwen2.5-7B-Instruct-bnb-4bit | Modelo completo cuantizado 4 bits | ~7.000 millones (segun denominacion) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| B1NARIES/discord-lora-qwen25-7b | Adaptador LoRA (PEFT) | No disponible (repo de 0,2 GB) | No disponible | No disponible | Publico en Hugging Face; 0 descargas |
+| unsloth/Qwen2.5-7B-Instruct-bnb-4bit | Modelo completo cuantizado 4 bits | ~7.000 millones (segun denominacion) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otros adaptadores LoRA sobre Qwen2.5-7B | Adaptador LoRA | No disponible | No disponible | No disponible | No se han identificado en la busqueda realizada |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento de este adaptador, por lo que la comparati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/B1NARIES/discord-lora-qwen25-7b
+- Modelo en Hugging Face: https://huggingface.co/B1NARIES/discord-lora-qwen25-7b
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
 - Paper de PEFT: https://arxiv.org/abs/1910.09700 (referencia citada en las etiquetas del repositorio; corresponde a Lacoste et al., 2019, sobre impacto ambiental, asociado en la plantilla al calculo de emisiones)
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, demos o repositorios adicionales). Los resultados devueltos corresponden a contenidos sin relacion con el modelo.

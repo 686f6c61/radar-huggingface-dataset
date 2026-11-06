@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Long-WAM Nesting Doll Unclipped — Step 5000 es un checkpoint de evaluación de un modelo de visión-lenguaje-acción (VLA) orientado a robótica, publicado por el usuario dddddsds31341 en HuggingFace. Se trata de un ajuste fino (fine-tune) independiente del modelo base Efficient-Large-Model/Long-WAM-YAM, entrenado sobre un conjunto de datos denominado SIP y detenido en el paso 5000 de un total de 30000. El nombre "Long-WAM" sugiere una variante de modelo de acción mundial (World Action Model) con ventana de contexto larga, aunque la model card no detalla la arquitectura interna.
+Long-WAM Nesting Doll Unclipped — Step 5000 es un checkpoint de evaluación de un modelo de visión-lenguaje-acción (VLA) orientado a robótica, publicado por el usuario dddddsds31341 en Hugging Face. Se trata de un ajuste fino (fine-tune) independiente del modelo base Efficient-Large-Model/Long-WAM-YAM, entrenado sobre un conjunto de datos denominado SIP y detenido en el paso 5000 de un total de 30000. El nombre "Long-WAM" sugiere una variante de modelo de acción mundial (World Action Model) con ventana de contexto larga, aunque la model card no detalla la arquitectura interna.
 
 El repositorio, de 12 GB, contiene el checkpoint en BF16 (`model.pt`), la configuración de entrenamiento resuelta (`config.yaml`), las estadísticas del dataset (`dataset_stats.json`), los requisitos de entorno y una instantánea del código de la familia de tareas. No incluye el estado del optimizador, por lo que no es posible reanudar el entrenamiento de forma exacta. El autor declara explícitamente que no se reclama ninguna tasa de éxito en robots para esta subida.
 
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Long-WAM Nesting Doll Unclipped — Step 5000 | no disponible | no disponible | sin benchmarks publicados | no disponible | HuggingFace (0 descargas) |
-| Efficient-Large-Model/Long-WAM-YAM (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Long-WAM Nesting Doll Unclipped — Step 5000 | no disponible | no disponible | sin benchmarks publicados | no disponible | Hugging Face (0 descargas) |
+| Efficient-Large-Model/Long-WAM-YAM (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otros VLA de la familia Long-WAM | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para una comparativa rigurosa con alternativas de la misma categoría.
@@ -79,6 +79,6 @@ No se dispone de datos suficientes para una comparativa rigurosa con alternativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dddddsds31341/Long-WAM-Nesting-Doll-Unclipped-Step-5000
+- Hugging Face: https://huggingface.co/dddddsds31341/Long-WAM-Nesting-Doll-Unclipped-Step-5000
 - Modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

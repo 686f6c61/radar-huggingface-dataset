@@ -40,7 +40,7 @@ El fine-tuning se realizo sobre el dataset MrC4t/FlourishGrabTape, compuesto por
 - Percepcion visual multi-camara: consume tres flujos de imagen (dos a 256x256 y uno a 224x224), lo que permite politicas con vistas complementarias.
 - Condicionamiento por tarea en lenguaje: acepta una instruccion de tarea como cadena de texto (por ejemplo, "Grab the tape"), coherente con el enfoque Vision-Language-Action.
 - Aprendizaje por imitacion: la politica se ha entrenado a partir de demostraciones reales, no de recompensas.
-- Integracion con LeRobot: compatible con el ecosistema lerobot-train / lerobot-rollout y con el Hub de HuggingFace.
+- Integracion con LeRobot: compatible con el ecosistema lerobot-train / lerobot-rollout y con el Hub de Hugging Face.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni de razonamiento multi-paso explicito.
 - No se documentan capacidades multilingues, modo "thinking", audio ni otras modalidades adicionales.
@@ -76,9 +76,9 @@ No se dispone de resultados de benchmarks de este checkpoint, por lo que la comp
 
 | Modelo | Parametros | Contexto / entradas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SoSolaris/xvla-flourish-chunk100 | 879.687.256 | 3 entradas visuales + estado (8,); salida de accion (6,) | Apache 2.0 | HuggingFace, 0 descargas, 0 likes | Fine-tuning de una sola tarea sobre 20 episodios |
-| lerobot/xvla-base | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | HuggingFace (referenciado como base) | Modelo base del que deriva este checkpoint |
-| Otras politicas VLA de la familia LeRobot (por ejemplo SmolVLA, pi0) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | HuggingFace | Alternativas de la misma categoria (politicas VLA entrenadas con LeRobot); no se dispone de datos verificados en esta busqueda |
+| SoSolaris/xvla-flourish-chunk100 | 879.687.256 | 3 entradas visuales + estado (8,); salida de accion (6,) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes | Fine-tuning de una sola tarea sobre 20 episodios |
+| lerobot/xvla-base | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Hugging Face (referenciado como base) | Modelo base del que deriva este checkpoint |
+| Otras politicas VLA de la familia LeRobot (por ejemplo SmolVLA, pi0) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Hugging Face | Alternativas de la misma categoria (politicas VLA entrenadas con LeRobot); no se dispone de datos verificados en esta busqueda |
 
 No es posible establecer una comparacion de rendimiento cuantitativa con alternativas porque ninguna de las dos partes publica resultados equivalentes en la informacion disponible.
 
@@ -95,11 +95,11 @@ No es posible establecer una comparacion de rendimiento cuantitativa con alterna
 - Licencia: Apache 2.0 permite uso comercial, pero el usuario debe asumir la responsabilidad de validar la seguridad del comportamiento robotico en su propio entorno; no hay garantias de ningun tipo.
 - Idoneidad para produccion: baja en su estado actual. Se recomienda tratarlo como prototipo de investigacion y recoger datos y evaluaciones propios antes de cualquier despliegue real.
 - Metadatos poco habituales: el repositorio figura como creado el 2026-09-10, sin descargas ni likes, y con un unico autor; no hay historial de uso ni validacion por terceros.
-- La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los unicos datos fiables son los de la model card y los metadatos de HuggingFace.
+- La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los unicos datos fiables son los de la model card y los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SoSolaris/xvla-flourish-chunk100
+- Modelo en Hugging Face: https://huggingface.co/SoSolaris/xvla-flourish-chunk100
 - Modelo base: https://huggingface.co/lerobot/xvla-base
 - Paper de X-VLA (arXiv:2510.10274): https://huggingface.co/papers/2510.10274
 - Dataset de entrenamiento: https://huggingface.co/datasets/MrC4t/FlourishGrabTape

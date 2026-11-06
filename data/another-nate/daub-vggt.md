@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Daub VGGT es un reempaquetado de los pesos de VGGT-1B-Commercial de Meta Platforms, Inc., el modelo Visual Geometry Grounded Transformer presentado en CVPR 2025 por Wang et al. No es un modelo de lenguaje: es un transformer de visión diseñado para estimar geometría 3D a partir de una o varias imágenes, infiriendo en una sola pasada parámetros de cámara, mapas de profundidad y nubes de puntos densas. El autor del reempaquetado es el usuario de HuggingFace `another-nate`, que lo prepara para su integración en la aplicación de escritorio Daub.
+Daub VGGT es un reempaquetado de los pesos de VGGT-1B-Commercial de Meta Platforms, Inc., el modelo Visual Geometry Grounded Transformer presentado en CVPR 2025 por Wang et al. No es un modelo de lenguaje: es un transformer de visión diseñado para estimar geometría 3D a partir de una o varias imágenes, infiriendo en una sola pasada parámetros de cámara, mapas de profundidad y nubes de puntos densas. El autor del reempaquetado es el usuario de Hugging Face `another-nate`, que lo prepara para su integración en la aplicación de escritorio Daub.
 
 Los cambios respecto al original son mínimos y puramente de empaquetado: los pesos del agregador se almacenan en bfloat16 y se han eliminado las cabezas de puntos (point head) y de seguimiento (track head). Las cabezas de cámara y profundidad permanecen intactas. No se ha reentrenado ningún componente, por lo que las capacidades geométricas son las del modelo original de Meta.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto / entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Daub VGGT (este repo) | ~1B | multi-imagen, sin límite documentado | VGGT License (uso comercial con AUP) | HuggingFace, safetensors 2,81 GB |
-| facebook/VGGT-1B-Commercial | ~1B | multi-imagen | VGGT License | HuggingFace (original de Meta) |
-| facebook/VGGT-1B | ~1B | multi-imagen | no disponible en esta ficha | HuggingFace |
+| Daub VGGT (este repo) | ~1B | multi-imagen, sin límite documentado | VGGT License (uso comercial con AUP) | Hugging Face, safetensors 2,81 GB |
+| facebook/VGGT-1B-Commercial | ~1B | multi-imagen | VGGT License | Hugging Face (original de Meta) |
+| facebook/VGGT-1B | ~1B | multi-imagen | no disponible en esta ficha | Hugging Face |
 | COLMAP (pipeline clásico) | no aplica | multi-imagen | BSD | open source, no es un modelo neuronal |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada. La comparación se limita a parámetros, licencia y disponibilidad.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/another-nate/daub-vggt
+- Modelo en Hugging Face: https://huggingface.co/another-nate/daub-vggt
 - Modelo base: https://huggingface.co/facebook/VGGT-1B-Commercial
 - Licencia (LICENSE.txt del repo): https://huggingface.co/another-nate/daub-vggt/blob/main/LICENSE.txt
 - Código original de Meta: https://github.com/facebookresearch/vggt

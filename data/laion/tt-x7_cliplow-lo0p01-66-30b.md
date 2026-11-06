@@ -94,6 +94,6 @@ No se dispone de comparativas de rendimiento porque este checkpoint no ha sido e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/tt-x7_cliplow-lo0p01-66-30B
+- Modelo en Hugging Face: https://huggingface.co/laion/tt-x7_cliplow-lo0p01-66-30B
 - Dataset de training traces: https://huggingface.co/datasets/penfever/tt-x7_cliplow-lo0p01
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct

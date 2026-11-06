@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de ajuste fino supervisado (SFT) del modelo OpenPI, identificado en el nombre como variante `pi05`, entrenado para una tarea robotica concreta: coger unas gafas, plegar las patillas y depositarlas en una caja situada a la derecha. El autor es el usuario de HuggingFace `myx160` y el artefacto esta pensado para el brazo robotico Piper dentro del ecosistema LeRobot. No es un modelo de lenguaje de proposito general, sino una politica vision-lenguaje-accion (VLA) que convierte observaciones visuales y estado propioceptivo en comandos de accion de 14 dimensiones.
+Este repositorio contiene un checkpoint de ajuste fino supervisado (SFT) del modelo OpenPI, identificado en el nombre como variante `pi05`, entrenado para una tarea robotica concreta: coger unas gafas, plegar las patillas y depositarlas en una caja situada a la derecha. El autor es el usuario de Hugging Face `myx160` y el artefacto esta pensado para el brazo robotico Piper dentro del ecosistema LeRobot. No es un modelo de lenguaje de proposito general, sino una politica vision-lenguaje-accion (VLA) que convierte observaciones visuales y estado propioceptivo en comandos de accion de 14 dimensiones.
 
 El checkpoint corresponde al paso 8000 de un schedule de 20000 pasos, con un calentamiento de 1000 pasos y un LR maximo de 1e-5. Se inicializa desde un SFT previo de 100 episodios (paso 4000) y se entrena sobre el dataset `myx160/eyeglasses_grasp_250episode`, que contiene 250 episodios de demostracion real de la tarea de las gafas. La entrada son tres camaras RGB mas un vector de estado de 14 dimensiones; la salida es una accion de 14 dimensiones con horizonte de 50 pasos.
 
@@ -73,7 +73,7 @@ No se dispone de datos numericos de modelos comparables en la informacion propor
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| myx160/sft_eyeglasses250_..._step8000 | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| myx160/sft_eyeglasses250_..._step8000 | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | Alternativas VLA (OpenPI pi0/pi0.5, OpenVLA, RDT-1B) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion recibida |
 
 ## Limitaciones y advertencias
@@ -92,6 +92,6 @@ No se dispone de datos numericos de modelos comparables en la informacion propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/myx160/sft_eyeglasses250_pi05_ppu8c_mb48_gbs384_s20000_from100_s4000_v2_step8000
+- Modelo en Hugging Face: https://huggingface.co/myx160/sft_eyeglasses250_pi05_ppu8c_mb48_gbs384_s20000_from100_s4000_v2_step8000
 - Dataset de entrenamiento: `myx160/eyeglasses_grasp_250episode`, revision `fd7ce02d49c4b150becdf657ec010faaa0e63d73` (enlace directo no proporcionado en la informacion disponible)
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada

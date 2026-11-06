@@ -84,7 +84,7 @@ La comparativa se limita a los upstream declarados, ya que no se dispone de dato
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/axiotic/cliphoard-coreml-models
+- Repositorio en Hugging Face: https://huggingface.co/axiotic/cliphoard-coreml-models
 - Upstream MiniLM: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Upstream OpenVision Tiny: https://huggingface.co/UCSC-VLAA/openvision-vit-tiny-patch8-224
 - Release original de Cliphoard `models-v1`: https://github.com/AntreasAntoniou/cliphoard/releases/tag/models-v1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-energy-systems-ai999x es un motor determinista de resolución de problemas de sistemas de energía distribuido como modelo de HuggingFace por el autor AI999X (Ibnul Jaif Farabi). No es un modelo de lenguaje generativo en el sentido habitual: se presenta como un solver offline en Python (y binarios Rust) que interpreta preguntas en inglés sobre ingeniería energética, selecciona una de sus 79 capacidades certificadas, calcula la respuesta de forma exacta y la devuelve con pasos, unidades, LaTeX y supuestos, o bien rechaza responder si no puede verificar el resultado. El repositorio contiene pesos en safetensors y ONNX con 4.715.520 parámetros totales y un tamaño de repo de 0,1 GB.
+energy-systems-ai999x es un motor determinista de resolución de problemas de sistemas de energía distribuido como modelo de Hugging Face por el autor AI999X (Ibnul Jaif Farabi). No es un modelo de lenguaje generativo en el sentido habitual: se presenta como un solver offline en Python (y binarios Rust) que interpreta preguntas en inglés sobre ingeniería energética, selecciona una de sus 79 capacidades certificadas, calcula la respuesta de forma exacta y la devuelve con pasos, unidades, LaTeX y supuestos, o bien rechaza responder si no puede verificar el resultado. El repositorio contiene pesos en safetensors y ONNX con 4.715.520 parámetros totales y un tamaño de repo de 0,1 GB.
 
 El modelo cubre dominios como flujo de carga, potencia trifásica, transformadores, máquinas eléctricas, fotovoltaica, eólica, baterías, pilas de combustible e hidrógeno. Su propuesta diferencial es el modo "zero-hallucination": al no generar texto libre sino ejecutar cálculos verificados, evita el riesgo de respuestas inventadas típico de los LLM. Funciona sin GPU, sin clave de API y sin conexión a internet, lo que lo hace adecuado para entornos docentes, de laboratorio o de campo con conectividad limitada.
 
@@ -89,13 +89,13 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/energy-systems-ai999x
+- Modelo en Hugging Face: https://huggingface.co/AI999X/energy-systems-ai999x
 - Aplicación de escritorio y CLI: https://www.ai999x.com/desktop-cli/
 - Probar en navegador: https://www.ai999x.com/models/energy-systems-ai999x/#try
 - Paquete Python (PyPI): https://pypi.org/project/energy-systems-ai999x/
 - Guías (docs): https://huggingface.co/AI999X/energy-systems-ai999x/tree/main/docs
 - Evaluación: https://huggingface.co/AI999X/energy-systems-ai999x/tree/main/evaluation
-- Organización AI999X en HuggingFace: https://huggingface.co/AI999X
+- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
 - Sitio web: https://ai999x.com
 - Release v1.0.3 en GitHub: https://github.com/AI999X/energy-systems-ai999x/releases/tag/v1.0.3
 - Checksums: https://www.ai999x.com/downloads/desktop/1.2.0/SHA256SUMS

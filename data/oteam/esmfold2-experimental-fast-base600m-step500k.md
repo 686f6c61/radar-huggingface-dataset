@@ -94,7 +94,7 @@ No se dispone en la información proporcionada de datos de rendimiento ni de esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/esmfold2-experimental-fast-base600m-step500k
+- Modelo en Hugging Face: https://huggingface.co/oteam/esmfold2-experimental-fast-base600m-step500k
 - Variante completa: https://huggingface.co/oteam/esmfold2
 - Variante rápida: https://huggingface.co/oteam/esmfold2-fast
 - Variante experimental: https://huggingface.co/oteam/esmfold2-experimental

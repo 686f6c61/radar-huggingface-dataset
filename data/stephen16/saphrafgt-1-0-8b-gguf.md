@@ -90,6 +90,6 @@ Cabe destacar que Mistral 7B supera a SaphraFgt en MBPP, pero SaphraFgt obtiene 
 
 ## Enlaces
 
-- [HuggingFace - Stephen16/SaphraFgt-1.0-8B-GGUF](https://huggingface.co/Stephen16/SaphraFgt-1.0-8B-GGUF)
+- [Hugging Face - Stephen16/SaphraFgt-1.0-8B-GGUF](https://huggingface.co/Stephen16/SaphraFgt-1.0-8B-GGUF)
 - [GitHub - Stephen162008/SaphraFgt](https://github.com/Stephen162008/SaphraFgt)
 - [Modelo base - unsloth/Meta-Llama-3.1-8B-bnb-4bit](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-bnb-4bit)

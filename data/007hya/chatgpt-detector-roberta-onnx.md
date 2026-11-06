@@ -73,6 +73,6 @@ La comparativa se limita a los modelos relacionados encontrados en la búsqueda 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/007hya/chatgpt-detector-roberta-onnx
+- Hugging Face: https://huggingface.co/007hya/chatgpt-detector-roberta-onnx
 - Modelo original relacionado: https://huggingface.co/bl791/chatgpt-detector-roberta
 - Versión ONNX de la comunidad: https://huggingface.co/onnx-community/chatgpt-detector-roberta-ONNX

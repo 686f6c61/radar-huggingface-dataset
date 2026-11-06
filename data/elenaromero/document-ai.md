@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `elenaromero/document-ai` no contiene un modelo de lenguaje entrenado, sino una nota de investigación sobre Document AI publicada en HuggingFace. La propia model card lo declara de forma explícita: "It is not presented as a completed paper or a release of trained models" y "It does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint". El artefacto consiste en dos ficheros de texto, `summary.md` y `README.md`, que organizan motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación en torno a tareas de comprensión de documentos (FUNSD, SROIE, CORD).
+El repositorio `elenaromero/document-ai` no contiene un modelo de lenguaje entrenado, sino una nota de investigación sobre Document AI publicada en Hugging Face. La propia model card lo declara de forma explícita: "It is not presented as a completed paper or a release of trained models" y "It does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint". El artefacto consiste en dos ficheros de texto, `summary.md` y `README.md`, que organizan motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación en torno a tareas de comprensión de documentos (FUNSD, SROIE, CORD).
 
 El peso publicado en safetensors contiene 49.600 parámetros totales, una cifra compatible con un tensor de relleno o un marcador de posición más que con un transformer funcional (los modelos de lenguaje más pequeños en uso real superan los cientos de millones de parámetros). El tamaño del repositorio es de 0,0 GB y no se declara pipeline de inferencia, idiomas soportados ni tokenizer, por lo que el artefacto no es ejecutable como modelo.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es, por tanto, metodológica: sirve para documentar 
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (el repositorio no define arquitectura de red; el tag `transformer` es una etiqueta de HuggingFace, no una especificación técnica) |
+| Arquitectura | no disponible (el repositorio no define arquitectura de red; el tag `transformer` es una etiqueta de Hugging Face, no una especificación técnica) |
 | Parámetros totales | 49.600 (dato leído del peso safetensors) |
 | Parámetros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -29,7 +29,7 @@ La relevancia de esta ficha es, por tanto, metodológica: sirve para documentar 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna arquitectura. El repositorio no describe capas, atención, embeddings, tokenizer, vocabulario ni configuración (`config.json`). El tag `transformer` aparece en los metadatos de HuggingFace, pero la model card no lo respalda con ningún detalle técnico y no debe interpretarse como una declaración de arquitectura implementada.
+No se ha publicado ninguna arquitectura. El repositorio no describe capas, atención, embeddings, tokenizer, vocabulario ni configuración (`config.json`). El tag `transformer` aparece en los metadatos de Hugging Face, pero la model card no lo respalda con ningún detalle técnico y no debe interpretarse como una declaración de arquitectura implementada.
 
 Tampoco existen datos de entrenamiento: la autora indica explícitamente que no hay ablaciones completadas, ni código liberado, ni checkpoint entrenado, ni mejoras de benchmark reclamadas. Los conjuntos mencionados (FUNSD, SROIE, CORD) se citan como contexto de evaluación propuesto, no como datos consumidos. No consta uso de RLHF, DPO, SFT ni ninguna otra etapa de alineamiento. La sección de reproducibilidad de la nota anticipa que, si en el futuro se añaden resultados, deberán incluir versiones de dataset, comandos, semillas, hardware y logs en bruto.
 
@@ -75,7 +75,7 @@ No disponible. El repositorio no es un modelo entrenado, por lo que no existe un
 | Contexto | no disponible | no disponible |
 | Rendimiento | sin benchmarks publicados | no disponible |
 | Licencia | cc-by-4.0 | no disponible |
-| Disponibilidad | nota de investigación en HuggingFace | no disponible |
+| Disponibilidad | nota de investigación en Hugging Face | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ No disponible. El repositorio no es un modelo entrenado, por lo que no existe un
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/elenaromero/document-ai
+- Hugging Face: https://huggingface.co/elenaromero/document-ai
 - Fichero `summary.md`: https://huggingface.co/elenaromero/document-ai/blob/main/summary.md
 - Fichero `README.md`: https://huggingface.co/elenaromero/document-ai/blob/main/README.md
 - Licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/

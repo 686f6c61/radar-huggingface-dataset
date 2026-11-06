@@ -95,7 +95,7 @@ No se aportan datos de latencia, throughput, FID, CLIP score ni comparaciones cu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/toxicdog/qwen-image-edit-2511-mlx-int4
+- Repositorio Hugging Face: https://huggingface.co/toxicdog/qwen-image-edit-2511-mlx-int4
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Conversion estandar 8 bits recomendada por el autor: https://huggingface.co/mlx-community/qwen-image-edit-2511-8bit
 - Paquete Swift asociado: `xocialize/qwen-image-edit-swift` (referenciado en la model card; no se aporta URL directa)

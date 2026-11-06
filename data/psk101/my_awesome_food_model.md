@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`psk101/my_awesome_food_model` es un modelo de clasificación de imágenes obtenido por fine-tuning del checkpoint `google/vit-base-patch16-224-in21k`, un Vision Transformer de tipo base preentrenado en ImageNet-21k. El autor del ajuste es el usuario `psk101` y el resultado se publica en HuggingFace con licencia Apache 2.0 y pesos en formato safetensors. El modelo tiene 85.876.325 parámetros, ocupa 1,0 GB de repositorio y se distribuye únicamente como clasificador de imágenes: no procesa texto ni admite generación.
+`psk101/my_awesome_food_model` es un modelo de clasificación de imágenes obtenido por fine-tuning del checkpoint `google/vit-base-patch16-224-in21k`, un Vision Transformer de tipo base preentrenado en ImageNet-21k. El autor del ajuste es el usuario `psk101` y el resultado se publica en Hugging Face con licencia Apache 2.0 y pesos en formato safetensors. El modelo tiene 85.876.325 parámetros, ocupa 1,0 GB de repositorio y se distribuye únicamente como clasificador de imágenes: no procesa texto ni admite generación.
 
 El problema que aborda es la clasificación automática de imágenes de comida (la model card no especifica el conjunto de etiquetas ni el dataset de entrenamiento, que aparece como "unknown dataset"). El entrenamiento fue corto —3 épocas con un batch efectivo de 64— y el autor declara una precisión de 0,909 y una pérdida de validación de 1,5656 sobre el conjunto de evaluación. No hay información sobre el número de clases, la composición del dataset ni las métricas por clase.
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento de este checkpoint frente a alternativas e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/psk101/my_awesome_food_model
+- Modelo en Hugging Face: https://huggingface.co/psk101/my_awesome_food_model
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224-in21k
 - Espacio de Trackio con las métricas de entrenamiento: https://huggingface.co/spaces/psk101/huggingface-static-c2f6f0
 - Paper de referencia de ViT (An image is worth 16x16 words): https://arxiv.org/abs/2010.11929

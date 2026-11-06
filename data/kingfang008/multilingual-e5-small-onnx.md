@@ -65,5 +65,5 @@ No se dispone de información sobre modelos comparables en la ficha proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingfang008/multilingual-e5-small-onnx
+- Repositorio Hugging Face: https://huggingface.co/kingfang008/multilingual-e5-small-onnx
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small

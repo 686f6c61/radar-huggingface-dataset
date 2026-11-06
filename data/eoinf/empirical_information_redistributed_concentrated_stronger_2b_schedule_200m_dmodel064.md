@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`empirical_information_redistributed_concentrated_stronger_2b_schedule_200m_dmodel064` es un checkpoint de un experimento de investigación publicado por el usuario `eoinf` en HuggingFace. No se trata de un modelo de propósito general ni de un lanzamiento de un laboratorio, sino de una de las celdas de una malla de experimentos ("Transformer experiment grid") formada por transformers causales de tamaño muy reducido, con `d_model` de 64, vocabulario de 4096 tokens y longitud de contexto de 256 tokens. El nombre del repositorio codifica el diseño experimental: una programación nominal de aproximadamente 2.000 millones de tokens de entrenamiento (1.999.998.976) sobre una arquitectura de 200M de parámetros nominales con dimensión de modelo 64.
+`empirical_information_redistributed_concentrated_stronger_2b_schedule_200m_dmodel064` es un checkpoint de un experimento de investigación publicado por el usuario `eoinf` en Hugging Face. No se trata de un modelo de propósito general ni de un lanzamiento de un laboratorio, sino de una de las celdas de una malla de experimentos ("Transformer experiment grid") formada por transformers causales de tamaño muy reducido, con `d_model` de 64, vocabulario de 4096 tokens y longitud de contexto de 256 tokens. El nombre del repositorio codifica el diseño experimental: una programación nominal de aproximadamente 2.000 millones de tokens de entrenamiento (1.999.998.976) sobre una arquitectura de 200M de parámetros nominales con dimensión de modelo 64.
 
 El interés del artefacto es metodológico, no aplicado: sirve para estudiar cómo se redistribuye y concentra la información empírica en modelos pequeños bajo distintas programaciones de entrenamiento, comparando celdas de una malla con una sola semilla por anchura. El repositorio contiene únicamente state-dicts de PyTorch, la definición de la ejecución, el historial de checkpoints, el log de actualizaciones de entrenamiento y metadatos de resultados; no incluye estados de optimizador ni datos de entrenamiento.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `eoinf/empirical_information_redistributed_concentrated_stronger_2b_schedule_200m_dmodel064` | no disponible (nominal 200M, d_model 64) | 256 | no disponible | HuggingFace, state-dicts PyTorch | Artefacto de investigación, 0 descargas |
-| GPT-2 small (referencia) | 124M | 1024 | MIT | HuggingFace, safetensors | Modelo de propósito general con benchmarks públicos |
-| TinyLlama-1.1B (referencia) | 1.1B | 2048 | Apache 2.0 | HuggingFace, safetensors/GGUF | Modelo pequeño desplegable con evaluación publicada |
-| Pythia-70M (referencia) | 70M | 2048 | Apache 2.0 | HuggingFace, safetensors | Suite de investigación con checkpoints intermedios |
+| `eoinf/empirical_information_redistributed_concentrated_stronger_2b_schedule_200m_dmodel064` | no disponible (nominal 200M, d_model 64) | 256 | no disponible | Hugging Face, state-dicts PyTorch | Artefacto de investigación, 0 descargas |
+| GPT-2 small (referencia) | 124M | 1024 | MIT | Hugging Face, safetensors | Modelo de propósito general con benchmarks públicos |
+| TinyLlama-1.1B (referencia) | 1.1B | 2048 | Apache 2.0 | Hugging Face, safetensors/GGUF | Modelo pequeño desplegable con evaluación publicada |
+| Pythia-70M (referencia) | 70M | 2048 | Apache 2.0 | Hugging Face, safetensors | Suite de investigación con checkpoints intermedios |
 
 La comparación es estructural: los tres modelos de referencia son desplegables y tienen documentación y evaluación pública, mientras que el modelo analizado es una celda experimental sin licencia ni benchmarks. No se dispone de datos de rendimiento para comparar numéricamente.
 
@@ -87,6 +87,6 @@ La comparación es estructural: los tres modelos de referencia son desplegables 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/empirical_information_redistributed_concentrated_stronger_2b_schedule_200m_dmodel064
+- Hugging Face: https://huggingface.co/eoinf/empirical_information_redistributed_concentrated_stronger_2b_schedule_200m_dmodel064
 - Repositorio de código `synthetic_trigrams`: mencionado en la model card, sin URL pública en la información disponible.
 - Archivos de configuración y resultados (`configuration.json`, `grid_summary.json`, `result.json`): referenciados en la model card, no enlazados en la información disponible.

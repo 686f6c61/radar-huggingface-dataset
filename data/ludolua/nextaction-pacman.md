@@ -21,7 +21,7 @@ El modelo se entreno sobre 50.775 movimientos de un experto basado en reglas y s
 | Licencia | MIT |
 | Formato de pesos | skops (`model.skops`), serializado con la libreria `skops` |
 | Tamano del repositorio | 0,0 GB (tamano del modelo declarado: 48 kB) |
-| Pipeline de HuggingFace | text-classification |
+| Pipeline de Hugging Face | text-classification |
 | Etiquetas de salida | `down`, `left`, `right`, `up` |
 | Libreria | sklearn |
 | Descargas / likes | 0 / 0 |
@@ -119,7 +119,7 @@ No disponible. La informacion proporcionada no incluye otros clasificadores comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ludolua/nextaction-pacman
+- Modelo en Hugging Face: https://huggingface.co/ludolua/nextaction-pacman
 - Repositorio de codigo NextAction: https://github.com/leduardoaraujo/NextAction
 - Demo, scripts, benchmark y analisis de Pac-Man: https://github.com/leduardoaraujo/NextAction/tree/main/demos/pacman
 - Perfil del autor: https://github.com/leduardoaraujo

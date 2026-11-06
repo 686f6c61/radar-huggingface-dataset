@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-w13-kx-native-w15-s160` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. A pesar de su nombre críptico, los metadatos de safetensors indican que se trata de un modelo denso de aproximadamente 2.018 millones de parámetros (unos 2.000 millones), lo que lo sitúa en la categoría de modelos pequeños, aptos para inferencia en hardware de consumo. El repositorio ocupa 8,1 GB y fue creado el 29 de octubre de 2026.
+`alfred8995/r18-a2-w13-kx-native-w15-s160` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. A pesar de su nombre críptico, los metadatos de safetensors indican que se trata de un modelo denso de aproximadamente 2.018 millones de parámetros (unos 2.000 millones), lo que lo sitúa en la categoría de modelos pequeños, aptos para inferencia en hardware de consumo. El repositorio ocupa 8,1 GB y fue creado el 29 de octubre de 2026.
 
 El modelo porta la etiqueta `sn38-nanochrono`, que sugiere una familia o linaje de entrenamiento propio del autor, y la etiqueta regional `region:us`. No se ha publicado información sobre arquitectura interna, datos de entrenamiento, tokenizador, ventana de contexto ni idiomas soportados en la información disponible. Tampoco consta pipeline declarado, lo que impide saber a priori si es un modelo de generación de texto, de embeddings u otra tarea.
 
-La relevancia de este modelo es limitada por el momento: cuenta con cero descargas y cero likes, el acceso está restringido (gated) y no hay documentación pública asociada. Para un desarrollador o investigador, la evaluación práctica exige solicitar acceso y realizar pruebas empíricas, ya que la ficha de HuggingFace no aporta especificaciones funcionales.
+La relevancia de este modelo es limitada por el momento: cuenta con cero descargas y cero likes, el acceso está restringido (gated) y no hay documentación pública asociada. Para un desarrollador o investigador, la evaluación práctica exige solicitar acceso y realizar pruebas empíricas, ya que la ficha de Hugging Face no aporta especificaciones funcionales.
 
 ## Especificaciones tecnicas
 
@@ -73,11 +73,11 @@ No se dispone de datos de rendimiento del modelo evaluado que permitan una compa
 - Riesgo de alucinación: desconocido, pero inherente a modelos de lenguaje pequeños sin documentación de alineamiento.
 - Limitaciones de contexto e idioma: no disponibles; no se puede garantizar soporte del castellano ni de ningún otro idioma.
 - Licencia Apache 2.0: permite uso comercial, pero al no haber documentación sobre el origen de los datos de entrenamiento, persiste el riesgo de reclamaciones por propiedad intelectual.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción para su uso en producción.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción para su uso en producción.
 - Cero tracción comunitaria: sin descargas ni likes, no hay evidencia de validación por terceros; tratar como experimental.
 - Nombre no descriptivo: el identificador no sigue convenciones habituales, lo que dificulta inferir su propósito.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-native-w15-s160
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-native-w15-s160
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

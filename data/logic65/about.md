@@ -52,7 +52,7 @@ No disponible. No hay un modelo en este repositorio para comparar con alternativ
 
 ## Enlaces
 
-- [Perfil de HuggingFace](https://huggingface.co/logic65/about)
+- [Perfil de Hugging Face](https://huggingface.co/logic65/about)
 - [Proyecto Qwen3.8-Whittle-16B](https://huggingface.co/logic65/Qwen3.8-Whittle-16B)
 - [Proyecto Qwen3.8-p44w75-16.8B-unrepaired](https://huggingface.co/logic65/Qwen3.8-p44w75-16.8B-unrepaired)
 - [Página de soporte Ko-fi](https://ko-fi.com/davida81328)

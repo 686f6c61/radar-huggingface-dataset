@@ -90,6 +90,6 @@ No se dispone de datos de benchmarks comparativos con otros modelos MoE de la mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/primitive-ai/Laguna-S-2.1-mixed-NVFP4-MXFP8
+- Repositorio Hugging Face: https://huggingface.co/primitive-ai/Laguna-S-2.1-mixed-NVFP4-MXFP8
 - Modelo base: https://huggingface.co/poolside/Laguna-S-2.1
 - Blog de poolside sobre Laguna S 2.1: https://poolside.ai/blog/introducing-laguna-s-2-

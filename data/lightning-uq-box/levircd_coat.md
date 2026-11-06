@@ -87,7 +87,7 @@ La informacion proporcionada solo permite comparar contra el metodo CRC de la mi
 
 | Modelo / metodo | Parametros | Contexto de entrada | F1 en test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| levircd_coat (COAT, alpha = 0,2) | 7.876.201 en los pesos liberados (mas encoder no incluido) | recortes de 512 x 512 px | 0,806 ± 0,021 | Apache-2.0 (encoder bajo licencia DINOv3) | HuggingFace, lightning-uq-box |
+| levircd_coat (COAT, alpha = 0,2) | 7.876.201 en los pesos liberados (mas encoder no incluido) | recortes de 512 x 512 px | 0,806 ± 0,021 | Apache-2.0 (encoder bajo licencia DINOv3) | Hugging Face, lightning-uq-box |
 | levircd_coat (AT, alpha = 0,2) | idem | recortes de 512 x 512 px | 0,823 ± 0,017 | idem | idem |
 | CRC (referencia dentro de la misma serie) | idem | recortes de 512 x 512 px | 0,847 ± 0,008 | idem | idem |
 | Otros modelos de change detection sobre LEVIR-CD+ | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -109,7 +109,7 @@ La informacion proporcionada solo permite comparar contra el metodo CRC de la mi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lightning-uq-box/levircd_coat
+- Repositorio en Hugging Face: https://huggingface.co/lightning-uq-box/levircd_coat
 - Pagina del encoder en timm (requiere aceptar la licencia DINOv3): https://huggingface.co/timm/convnext_base.dinov3_lvd1689m
 - Referencias arXiv incluidas en las etiquetas del repositorio: arxiv:2208.02814, arxiv:2107.09244, arxiv:2508.10104 (no se dispone de los titulos en la informacion proporcionada)
 - Dataset referenciado: satellite-image-deep-learning/LEVIR-CD (no redistribuido en el repositorio; el tutorial lo descarga mediante torchgeo)

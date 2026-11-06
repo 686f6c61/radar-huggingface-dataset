@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mada-translategemma-4b-lora-merged es un ajuste fino (fine-tuning) del modelo google/translategemma-4b-it, publicado por el usuario OthnnyEL en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text construido sobre la arquitectura Gemma 3, con aproximadamente 4.000 millones de parametros, especializado en tareas de traduccion y generacion de texto a partir de imagenes y texto. El ajuste se realizo mediante LoRA con la libreria Unsloth y posteriormente se fusionaron los pesos (merged) en el modelo base, dando lugar a un checkpoint unico con pesos en safetensors.
+mada-translategemma-4b-lora-merged es un ajuste fino (fine-tuning) del modelo google/translategemma-4b-it, publicado por el usuario OthnnyEL en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text construido sobre la arquitectura Gemma 3, con aproximadamente 4.000 millones de parametros, especializado en tareas de traduccion y generacion de texto a partir de imagenes y texto. El ajuste se realizo mediante LoRA con la libreria Unsloth y posteriormente se fusionaron los pesos (merged) en el modelo base, dando lugar a un checkpoint unico con pesos en safetensors.
 
 El modelo hereda las capacidades del translategemma-4b-it original de Google, que combina comprension visual con generacion de texto y traduccion. La relevancia de esta publicacion es limitada: se trata de un experimento de ajuste fino de un autor individual, con solo 20 descargas y sin documentacion tecnica detallada sobre el dataset de entrenamiento, hiperparametros o resultados de evaluacion. La model card es practicamente un template autogenerado por Unsloth, sin informacion sustantiva sobre el proceso de entrenamiento ni sobre el rendimiento del modelo resultante.
 
@@ -32,7 +32,7 @@ No se dispone de informacion sobre el dataset de entrenamiento, el numero de tok
 - Generacion de texto e image-text-to-text: procesa imagenes junto con texto y genera respuestas textuales, heredando la capacidad multimodal del modelo base.
 - Traduccion: el modelo base translategemma-4b-it esta especializado en tareas de traduccion; se espera que el ajuste fino preserve o modifique esta capacidad, aunque no se documenta en que direccion.
 - Comprension de imagenes: al ser un modelo image-text-to-text, puede describir, interpretar y responder preguntas sobre contenido visual.
-- Conversacion multi-turno: etiquetado como "conversational" en los tags de HuggingFace.
+- Conversacion multi-turno: etiquetado como "conversational" en los tags de Hugging Face.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues: la model card solo declara ingles; el soporte de otros idiomas no esta documentado.
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mada-translategemma-4b-lora-merged | ~4B | no disponible | Si (image-text-to-text) | apache-2.0 | HuggingFace (20 descargas) |
-| google/translategemma-4b-it (modelo base) | ~4B | no disponible | Si (image-text-to-text) | no disponible en la informacion proporcionada | HuggingFace (modelo oficial de Google) |
-| Gemma 3 4B (familia base) | ~4B | no disponible | Si (variantes multimodales) | Gemma license (no disponible en detalle) | HuggingFace, Google AI Studio |
+| mada-translategemma-4b-lora-merged | ~4B | no disponible | Si (image-text-to-text) | apache-2.0 | Hugging Face (20 descargas) |
+| google/translategemma-4b-it (modelo base) | ~4B | no disponible | Si (image-text-to-text) | no disponible en la informacion proporcionada | Hugging Face (modelo oficial de Google) |
+| Gemma 3 4B (familia base) | ~4B | no disponible | Si (variantes multimodales) | Gemma license (no disponible en detalle) | Hugging Face, Google AI Studio |
 
 La comparativa se limita al modelo base y a la familia Gemma 3, ya que no se dispone de datos de rendimiento del checkpoint ajustado que permitan una comparacion cuantitativa con alternativas. No se dispone de informacion sobre benchmarks que permita situar este modelo frente a otros de su categoria.
 
@@ -82,7 +82,7 @@ La comparativa se limita al modelo base y a la familia Gemma 3, ya que no se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OthnnyEL/mada-translategemma-4b-lora-merged
+- Modelo en Hugging Face: https://huggingface.co/OthnnyEL/mada-translategemma-4b-lora-merged
 - Modelo base: https://huggingface.co/google/translategemma-4b-it
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
-- TRL (libreria de HuggingFace): https://github.com/huggingface/trl
+- TRL (libreria de Hugging Face): https://github.com/huggingface/trl

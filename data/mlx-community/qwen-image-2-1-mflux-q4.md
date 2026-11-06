@@ -104,7 +104,7 @@ Comparativa con otras familias de modelos de generacion de imagen: no disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/Qwen-Image-2.1-mflux-q4
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/Qwen-Image-2.1-mflux-q4
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Organizacion mlx-community: https://huggingface.co/mlx-community
 - Framework MLX: https://mlx-framework.org/

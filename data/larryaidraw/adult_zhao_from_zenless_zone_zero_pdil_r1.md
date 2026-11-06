@@ -64,7 +64,7 @@ Existen otros modelos del personaje Zhao de Zenless Zone Zero en plataformas com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LarryAIDraw/Adult_Zhao_from_Zenless_Zone_Zero_PDIL_r1
+- Hugging Face: https://huggingface.co/LarryAIDraw/Adult_Zhao_from_Zenless_Zone_Zero_PDIL_r1
 - Resultados de búsqueda relacionados (no específicos de este modelo):
   - SeaArt: https://www.seaart.ai/models/detail/e5e054074c3cb897c121d3bf60852872
   - PixAI: https://pixai.art/en/model/1964473734821978154

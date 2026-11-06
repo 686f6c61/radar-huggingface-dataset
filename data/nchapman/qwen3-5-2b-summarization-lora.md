@@ -73,9 +73,9 @@ La factualidad y el solapamiento con la referencia mejoran de forma estadisticam
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nchapman/qwen3.5-2b-summarization-lora | 2B (base) + LoRA r16 | no disponible | Resumen en ingles | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-2B (base) | 2B | no disponible | Proposito general | Licencia propia de Qwen | HuggingFace |
-| Adaptadores de resumen sobre modelos pequenos (genericos) | variable | variable | Resumen | variable | HuggingFace |
+| nchapman/qwen3.5-2b-summarization-lora | 2B (base) + LoRA r16 | no disponible | Resumen en ingles | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-2B (base) | 2B | no disponible | Proposito general | Licencia propia de Qwen | Hugging Face |
+| Adaptadores de resumen sobre modelos pequenos (genericos) | variable | variable | Resumen | variable | Hugging Face |
 
 No se dispone de datos de benchmarks de alternativas comparables en la informacion proporcionada; la unica comparacion cuantitativa disponible es la del propio autor frente al modelo base.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de alternativas comparables en la informaci
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/nchapman/qwen3.5-2b-summarization-lora
+- Hugging Face del adaptador: https://huggingface.co/nchapman/qwen3.5-2b-summarization-lora
 - Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Dataset smoltalk2 (HuggingFaceTB): https://huggingface.co/datasets/HuggingFaceTB/smoltalk2
 - Informe de evaluacion completo: `docs/results/aligned-adapter-comparison.md` en el repositorio Lillm Summarizer del autor (no se proporciona URL directa en la informacion disponible)

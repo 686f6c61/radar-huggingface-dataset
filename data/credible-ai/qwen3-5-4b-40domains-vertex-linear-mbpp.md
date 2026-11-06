@@ -85,7 +85,7 @@ La comparacion con modelos de proposito general del mismo tamano no es directa: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/qwen3.5-4B-40domains-vertex-linear-mbpp
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/qwen3.5-4B-40domains-vertex-linear-mbpp
 - Proxy de 100M: https://huggingface.co/credible-ai/qwen3.5-100M-40domains-vertex
 - Paper LinMix: https://arxiv.org/abs/2610.37390
 - Codigo: https://github.com/credibleai/linmix

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`LaTexT/qwen2.5-7b-gz3-sentence-iter2-w0.2` es un ajuste fino completo (*full fine-tuning*) del modelo `Qwen/Qwen2.5-7B-Instruct`, publicado por el usuario LaTexT en HuggingFace. El modelo se ha entrenado mediante SFT con la libreria TRL (version 0.12.0) y el pipeline de llama-factory, segun las etiquetas de la ficha. El repositorio contiene unicamente pesos en formato safetensors con 7.628.461.568 parametros reales y un tamano aproximado de 15,3 GB, lo que corresponde a precision de 16 bits.
+`LaTexT/qwen2.5-7b-gz3-sentence-iter2-w0.2` es un ajuste fino completo (*full fine-tuning*) del modelo `Qwen/Qwen2.5-7B-Instruct`, publicado por el usuario LaTexT en Hugging Face. El modelo se ha entrenado mediante SFT con la libreria TRL (version 0.12.0) y el pipeline de llama-factory, segun las etiquetas de la ficha. El repositorio contiene unicamente pesos en formato safetensors con 7.628.461.568 parametros reales y un tamano aproximado de 15,3 GB, lo que corresponde a precision de 16 bits.
 
 El checkpoint no es un ajuste generico de instrucciones: la nomenclatura del directorio de origen (`gz3+d-sentence+cross_gist+input+wrap_gist_token+wrap_gist_token_to_special_tokens+use_latent_ema+iter2+weight0.2+mask-v2+keep_math_span`) y la referencia "Paper Table 1: Qwen2.5-7B LaTexT m=3 sentence" apuntan a un experimento de investigacion sobre *gist tokens* y razonamiento latente (*latent chain of thought*), en el que se comprime informacion en tokens especiales en lugar de generar cadenas de pensamiento explicitas en texto. La segunda iteracion (`iter2`) y el peso 0.2 (`weight0.2`) sugieren una perdida auxiliar ponderada sobre representaciones latentes.
 
@@ -41,7 +41,7 @@ El entrenamiento es un SFT completo (*full*) lanzado con un script de llama-fact
 - Tool calling / function calling: no declarado en la ficha del fine-tune; el modelo base Qwen2.5-7B-Instruct si lo soporta, pero no hay confirmacion de que el ajuste lo conserve.
 - Modo de pensamiento explicito (*thinking mode*): no disponible; el diseno apunta a razonamiento latente, no a cadenas de pensamiento visibles.
 - Vision y audio: no disponibles (modelo exclusivamente de texto).
-- Compatibilidad declarada con text-generation-inference y con *endpoints compatible* en HuggingFace.
+- Compatibilidad declarada con text-generation-inference y con *endpoints compatible* en Hugging Face.
 
 ## Casos de uso
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| LaTexT/qwen2.5-7b-gz3-sentence-iter2-w0.2 | 7,63 B (denso) | No declarado en la ficha; base de 128 K | No disponible | HuggingFace, safetensors, 0 descargas | No disponible |
-| Qwen/Qwen2.5-7B-Instruct (base) | 7,62 B (denso) | 131.072 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado | Si, benchmarks publicados por el autor del base |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B (denso) | 131.072 tokens | Llama 3.1 Community License | HuggingFace | Si, benchmarks publicados |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B (denso) | 32.768 tokens | Apache 2.0 | HuggingFace | Si, benchmarks publicados |
+| LaTexT/qwen2.5-7b-gz3-sentence-iter2-w0.2 | 7,63 B (denso) | No declarado en la ficha; base de 128 K | No disponible | Hugging Face, safetensors, 0 descargas | No disponible |
+| Qwen/Qwen2.5-7B-Instruct (base) | 7,62 B (denso) | 131.072 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado | Si, benchmarks publicados por el autor del base |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B (denso) | 131.072 tokens | Llama 3.1 Community License | Hugging Face | Si, benchmarks publicados |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B (denso) | 32.768 tokens | Apache 2.0 | Hugging Face | Si, benchmarks publicados |
 
 La comparacion directa de rendimiento con estas alternativas no es posible porque el modelo evaluado no publica resultados. La diferencia principal frente al base es el objetivo de entrenamiento (gist tokens y razonamiento latente) y el riesgo de degradacion por un SFT de 5 epocas, no la arquitectura.
 
@@ -91,7 +91,7 @@ La comparacion directa de rendimiento con estas alternativas no es posible porqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LaTexT/qwen2.5-7b-gz3-sentence-iter2-w0.2
+- Modelo en Hugging Face: https://huggingface.co/LaTexT/qwen2.5-7b-gz3-sentence-iter2-w0.2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/shannons/ot3-1.2m-10k-converted
 - Repositorio de TRL: https://github.com/huggingface/trl

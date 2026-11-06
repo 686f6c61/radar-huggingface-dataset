@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Tipo | Parámetros | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `kikiri-tts/kikiri-german-bernd` | Voz única (TTS) | ~82M | Alemán | Apache 2.0 | HuggingFace |
-| `kikiri-tts/kikiri-german-martin` | Voz única (TTS) | ~82M | Alemán | Apache 2.0 | HuggingFace |
-| `kikiri-tts/kikiri-german-base-51speakers-synthetic` | Multi-voz | ~82M | Alemán | Apache 2.0 | HuggingFace |
+| `kikiri-tts/kikiri-german-bernd` | Voz única (TTS) | ~82M | Alemán | Apache 2.0 | Hugging Face |
+| `kikiri-tts/kikiri-german-martin` | Voz única (TTS) | ~82M | Alemán | Apache 2.0 | Hugging Face |
+| `kikiri-tts/kikiri-german-base-51speakers-synthetic` | Multi-voz | ~82M | Alemán | Apache 2.0 | Hugging Face |
 
 No se dispone de comparativa con otros sistemas TTS comerciales como Google TTS o ElevenLabs, ya que no son modelos abiertos y no se han publicado métricas comparativas en la documentación del proyecto.
 
@@ -72,7 +72,7 @@ No se dispone de comparativa con otros sistemas TTS comerciales como Google TTS 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kikiri-tts/kikiri-german-bernd
+- Modelo en Hugging Face: https://huggingface.co/kikiri-tts/kikiri-german-bernd
 - Repositorio de entrenamiento: https://github.com/semidark/kikiri-tts
 - Notas de arquitectura: https://github.com/semidark/kikiri-tts/blob/main/docs/ARCHITECTURE.md
 - NOTICE de atribución: https://github.com/semidark/kikiri-tts/blob/main/NOTICE

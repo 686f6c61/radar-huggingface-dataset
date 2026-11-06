@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PPAVLOVLEV/albef-demo es un repositorio de investigacion publicado en HuggingFace que contiene un prototipo de la arquitectura Albef orientado a tareas multitarea. Se trata de una implementacion propia en PyTorch, acompanada de un fichero `model.py` con el modelo y un ejemplo ejecutable o punto de entrada de entrenamiento, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe explicitamente como checkpoint de inicializacion valido para pruebas de humo, no como un checkpoint entrenado ni evaluado.
+PPAVLOVLEV/albef-demo es un repositorio de investigacion publicado en Hugging Face que contiene un prototipo de la arquitectura Albef orientado a tareas multitarea. Se trata de una implementacion propia en PyTorch, acompanada de un fichero `model.py` con el modelo y un ejemplo ejecutable o punto de entrada de entrenamiento, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe explicitamente como checkpoint de inicializacion valido para pruebas de humo, no como un checkpoint entrenado ni evaluado.
 
 El modelo declara una escala "base", atencion multi-query, fusion tensorial, activacion approx gelu y normalizacion scalenorm. El recuento real de parametros segun el fichero safetensors es de 49.600 parametros (unos 49,6 mil), una cifra extremadamente reducida que confirma la naturaleza de andamiaje del artefacto: sirve para verificar que el codigo carga y ejecuta, no para producir salidas utiles.
 
@@ -20,7 +20,7 @@ Su relevancia actual es limitada y de caracter metodologico: resulta util como p
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (checkpoint de inicializacion) y codigo PyTorch en `model.py` |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0,0 GB |
 
@@ -49,7 +49,7 @@ En cuanto al entrenamiento, el repositorio incluye una receta por defecto con op
 - Verificacion de serializacion en CI/CD: integrar `python model.py --help` y una carga del checkpoint en una pipeline de integracion continua detecta roturas de compatibilidad de la libreria o del formato de pesos en cada commit.
 - Banco de pruebas para comparar variantes de atencion y normalizacion: al estar aisladas las decisiones de atencion multi-query, fusion tensorial y scalenorm, el codigo sirve para experimentos controlados sobre esas piezas sin la contaminacion de un modelo ya entrenado.
 - Reproduccion de recetas de entrenamiento: `training_args.json` documenta una receta adamw con planificador onecycle que puede replicarse con exposicion de datos, presupuesto de ajuste y semillas identicas, tal y como recomienda el propio autor para una evaluacion justa de baselines.
-- Material didactico y de revision: es un ejemplo util en docencia o revision de codigo para mostrar la estructura minima de un proyecto de investigacion en HuggingFace (codigo, config, receta y pesos separados).
+- Material didactico y de revision: es un ejemplo util en docencia o revision de codigo para mostrar la estructura minima de un proyecto de investigacion en Hugging Face (codigo, config, receta y pesos separados).
 - Punto de partida para fine-tuning experimental: partiendo de este esqueleto se puede escalar la arquitectura y entrenar sobre un conjunto de tarea especifico, aunque el checkpoint publicado en si mismo no aporta conocimiento transferible.
 
 ## Benchmarks y rendimiento
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PPAVLOVLEV/albef-demo | 49.600 | no disponible | No (declarado explicitamente) | apache-2.0 | Repositorio en HuggingFace, 0 descargas |
+| PPAVLOVLEV/albef-demo | 49.600 | no disponible | No (declarado explicitamente) | apache-2.0 | Repositorio en Hugging Face, 0 descargas |
 | Albef original (Salesforce) | no disponible en esta busqueda | no disponible | no disponible en esta busqueda | no disponible en esta busqueda | Publicacion academica y repositorio propio |
 | BLIP (Salesforce) | no disponible en esta busqueda | no disponible | no disponible en esta busqueda | no disponible en esta busqueda | Publicacion academica y repositorio propio |
 | CLIP (OpenAI) | no disponible en esta busqueda | no disponible | no disponible en esta busqueda | no disponible en esta busqueda | Pesos y codigo publicos |
@@ -83,13 +83,13 @@ La comparativa cuantitativa no puede completarse con la informacion disponible: 
 - Riesgo de alucinacion: no aplica en el sentido habitual porque el modelo no genera lenguaje coherente; el riesgo real es interpretar el repositorio como un modelo listo para usar.
 - Longitud de contexto e idiomas soportados no estan documentados, por lo que no puede planificarse su uso multilingue ni con entradas largas.
 - No se especifican la configuracion de capas, dimensiones ocultas ni el encoder visual, lo que dificulta la reproducibilidad exacta de la arquitectura declarada.
-- Carga no estandar: las APIs automaticas de HuggingFace (AutoModel, pipeline) no funcionaran sin escribir un adaptador especifico.
+- Carga no estandar: las APIs automaticas de Hugging Face (AutoModel, pipeline) no funcionaran sin escribir un adaptador especifico.
 - Licencia apache-2.0 para el repositorio, pero el propio autor advierte de que deben revisarse por separado los terminos de los datos de origen si se combina con conjuntos externos.
 - Metadatos atipicos: la fecha de creacion indicada (2026-09-16) es posterior a la fecha actual, lo que sugiere una generacion automatica de metadatos o un error; conviene no fiarse de ellos.
 - El repositorio tiene 0 descargas y 0 likes, sin senales de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PPAVLOVLEV/albef-demo
+- Repositorio en Hugging Face: https://huggingface.co/PPAVLOVLEV/albef-demo
 - Paper de referencia de la arquitectura Albef (Aligh before Fuse, Li et al., NeurIPS 2021), no incluido en los resultados de la busqueda web y aportado como contexto de la familia arquitectonica: https://arxiv.org/abs/2107.07651
 - El resto de resultados de la busqueda web realizada no guarda relacion con el modelo (paginas corporativas de Microsoft) y no se incluye por no ser relevante.

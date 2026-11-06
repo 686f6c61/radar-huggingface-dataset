@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jemillerpit/albef-retrieval-tryout` es un repositorio experimental publicado en HuggingFace por el usuario Jemillerpit que contiene una implementacion propia de una arquitectura Albef orientada a tareas de recuperacion (retrieval) multimodal. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida de codigo: el autor lo describe explicitamente como un "codebase" para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El checkpoint incluido sirve unicamente para pruebas de humo (smoke tests), no como modelo funcional.
+`Jemillerpit/albef-retrieval-tryout` es un repositorio experimental publicado en Hugging Face por el usuario Jemillerpit que contiene una implementacion propia de una arquitectura Albef orientada a tareas de recuperacion (retrieval) multimodal. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida de codigo: el autor lo describe explicitamente como un "codebase" para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El checkpoint incluido sirve unicamente para pruebas de humo (smoke tests), no como modelo funcional.
 
 Segun los metadatos de safetensors, el checkpoint contiene 49.600 parametros totales, una cifra que contrasta con la etiqueta "giant" declarada en la configuracion de arquitectura y que confirma que se trata de una inicializacion sin entrenar. El tamano del repositorio es de 0,0 GB. La licencia es MIT y esta etiquetado para PyTorch, Albef y retrieval.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jemillerpit/albef-retrieval-tryout | 49.600 | no disponible | sin benchmark; checkpoint sin entrenar | MIT | HuggingFace (17 descargas, 0 likes) |
+| Jemillerpit/albef-retrieval-tryout | 49.600 | no disponible | sin benchmark; checkpoint sin entrenar | MIT | Hugging Face (17 descargas, 0 likes) |
 | ALBEF (Salesforce, referencia conceptual) | cientos de millones (no confirmado en la informacion disponible) | no disponible | no disponible en esta busqueda | no disponible | referencia academica conocida; no verificado en esta busqueda |
 | Modelos de retrieval imagen-texto tipo CLIP | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,5 +83,5 @@ La comparacion directa no es significativa: el repositorio de Jemillerpit es un 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jemillerpit/albef-retrieval-tryout
+- Hugging Face: https://huggingface.co/Jemillerpit/albef-retrieval-tryout
 - No se han encontrado otros enlaces (paper, blog, repositorio o demo) en la informacion proporcionada.

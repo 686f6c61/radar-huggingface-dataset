@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks ni de comparativas con otros LoRA de la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pedro21613/PS-IMAGE-1.3
+- Modelo en Hugging Face: https://huggingface.co/Pedro21613/PS-IMAGE-1.3
 - Modelo base: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Archivos incluidos en el repositorio: `adapter_model.safetensors`, `ema/adapter_model.safetensors`, `examples/` (rejillas comparativas `grid_compare.png` y `multi_seed_historia.png`), `training_config.json`, `training_report.json`, `usar_v13.py` y `psimage_train.py`.
 - Datasets citados por el autor sin enlace directo en la model card: FFHQ (Flickr-Faces-HQ), Stanford Cars y DTD (Describable Textures Dataset).

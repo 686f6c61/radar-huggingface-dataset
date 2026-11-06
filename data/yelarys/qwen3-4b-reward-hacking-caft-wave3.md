@@ -75,8 +75,8 @@ No se dispone de artefactos públicos equivalentes documentados en la informaci�
 
 | Artefacto | Parámetros | Contexto | Comportamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yelarys/qwen3-4b-reward-hacking-caft-wave3` (este repositorio) | ~4B (base) + LoRA rango 32 | No disponible | Política de reward hacking en dos variantes de fuga, 400 pasos | No disponible | Público en HuggingFace, 0 descargas, 0 likes |
-| `Qwen/Qwen3-4B` (modelo base) | ~4B | No disponible en esta información | Modelo denso de propósito general con modo de razonamiento | No disponible en esta información | Público en HuggingFace |
+| `yelarys/qwen3-4b-reward-hacking-caft-wave3` (este repositorio) | ~4B (base) + LoRA rango 32 | No disponible | Política de reward hacking en dos variantes de fuga, 400 pasos | No disponible | Público en Hugging Face, 0 descargas, 0 likes |
+| `Qwen/Qwen3-4B` (modelo base) | ~4B | No disponible en esta información | Modelo denso de propósito general con modo de razonamiento | No disponible en esta información | Público en Hugging Face |
 | `yelarys/qwen3-4b-reward-hacking-caft-adapters` (repositorio hermano) | ~4B (base) + LoRA | No disponible | Ejecuciones wave-3 de 200 pasos (semillas 2 y 3) y todos los ficheros de wave-2 | No disponible | Público; alcanzó el límite de 20.000 ficheros del Hub |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone de artefactos públicos equivalentes documentados en la informaci�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yelarys/qwen3-4b-reward-hacking-caft-wave3
+- Repositorio en Hugging Face: https://huggingface.co/yelarys/qwen3-4b-reward-hacking-caft-wave3
 - Repositorio hermano con las ejecuciones wave-3 de 200 pasos y los ficheros de wave-2: https://huggingface.co/yelarys/qwen3-4b-reward-hacking-caft-adapters
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Revisión concreta del modelo base empleada: https://huggingface.co/Qwen/Qwen3-4B/tree/1cfa9a7208912126459214e8b04321603b3df60c

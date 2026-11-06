@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`martinmbiro/student_knn` es un repositorio publicado en HuggingFace por el usuario martinmbiro que contiene un artefacto serializado en formato joblib bajo licencia Apache-2.0. El repositorio no incluye model card descriptiva mas alla del bloque de metadatos de licencia, no declara pipeline de inferencia, no especifica idiomas soportados y registra cero descargas y cero valoraciones desde su creacion. El tamano declarado del repositorio es de 0,0 GB, lo que unido al tag `joblib` apunta a un artefacto de muy bajo peso, probablemente un modelo clasico serializado con la libreria joblib (habitual en el ecosistema scikit-learn) y no a un modelo de lenguaje neuronal.
+`martinmbiro/student_knn` es un repositorio publicado en Hugging Face por el usuario martinmbiro que contiene un artefacto serializado en formato joblib bajo licencia Apache-2.0. El repositorio no incluye model card descriptiva mas alla del bloque de metadatos de licencia, no declara pipeline de inferencia, no especifica idiomas soportados y registra cero descargas y cero valoraciones desde su creacion. El tamano declarado del repositorio es de 0,0 GB, lo que unido al tag `joblib` apunta a un artefacto de muy bajo peso, probablemente un modelo clasico serializado con la libreria joblib (habitual en el ecosistema scikit-learn) y no a un modelo de lenguaje neuronal.
 
 Con la informacion disponible no es posible determinar arquitectura, numero de parametros, longitud de contexto ni capacidades del modelo. El nombre del repositorio (`student_knn`) sugiere un clasificador basado en k vecinos mas cercanos (KNN) y el termino `student` podria indicar un modelo destilado o un trabajo academico, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
 
@@ -43,7 +43,7 @@ Tampoco hay datos sobre el conjunto de entrenamiento: no se especifica el numero
 - Clasificacion tabular de bajo coste: si el artefacto es efectivamente un KNN serializado, su uso natural seria clasificacion sobre datos estructurados en CPU, aunque esto no esta confirmado por el autor.
 - Integracion en pipelines de scikit-learn: un artefacto joblib puede cargarse con `joblib.load` dentro de un pipeline existente, siempre que el estimador sea compatible con la version de la libreria usada en el entrenamiento.
 - Analisis de compatibilidad de versiones: util para comprobar como se comporta la deserializacion de joblib entre versiones distintas de Python y de la libreria de origen.
-- Archivado y trazabilidad: el repositorio puede servir como ejemplo de publicacion minima en HuggingFace, util para ilustrar buenas y malas practicas de documentacion de model cards.
+- Archivado y trazabilidad: el repositorio puede servir como ejemplo de publicacion minima en Hugging Face, util para ilustrar buenas y malas practicas de documentacion de model cards.
 - No se pueden proponer casos de uso de generacion de texto, codigo, atencion al cliente o agentes, ya que no hay evidencia de que el artefacto sea un modelo de lenguaje.
 
 ## Benchmarks y rendimiento
@@ -77,5 +77,5 @@ No disponible. No se dispone de informacion suficiente sobre el modelo (arquitec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/martinmbiro/student_knn
+- Repositorio en Hugging Face: https://huggingface.co/martinmbiro/student_knn
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. Los resultados devueltos por el buscador no guardan relacion con el modelo y se han descartado por no ser fuentes tecnicas relevantes.

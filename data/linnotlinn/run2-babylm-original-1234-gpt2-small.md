@@ -6,7 +6,7 @@ El modelo `run2-babylm-original-1234-gpt2-small` es un ajuste fino de GPT-2 smal
 
 La relevancia de este modelo radica en su contribución a la investigación sobre eficiencia de datos y adquisición del lenguaje. Al ser una variante de GPT-2 small, hereda la arquitectura transformer decoder-only, pero su entrenamiento se ha realizado con un volumen de datos reducido, lo que permite estudiar cómo se comportan los modelos cuando se les expone a menos información. Su tamaño compacto (124M) lo hace accesible para experimentos en hardware modesto.
 
-Actualmente el modelo no cuenta con descargas ni valoraciones, y su ficha en HuggingFace es mínima, generada automáticamente por el Trainer. No se han publicado resultados de benchmarks ni se especifican la licencia ni los idiomas soportados, lo que limita su uso en producción pero no su interés como objeto de estudio.
+Actualmente el modelo no cuenta con descargas ni valoraciones, y su ficha en Hugging Face es mínima, generada automáticamente por el Trainer. No se han publicado resultados de benchmarks ni se especifican la licencia ni los idiomas soportados, lo que limita su uso en producción pero no su interés como objeto de estudio.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/linnotlinn/run2-babylm-original-1234-gpt2-small
+- Modelo en Hugging Face: https://huggingface.co/linnotlinn/run2-babylm-original-1234-gpt2-small
 - Modelo hermano (shuffled): https://huggingface.co/linnotlinn/babylm-shuffled-1234-gpt2-small
 - Página del autor: https://huggingface.co/linnotlinn/models
 - Web del shared task BabyLM: https://babylm.github.io/

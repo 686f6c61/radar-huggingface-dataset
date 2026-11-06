@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Abhiabhi12/a2c-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno LunarLander-v3 y publicado en HuggingFace por el usuario Abhiabhi12 mediante la librería stable-baselines3. No es un modelo de lenguaje: es una política de control que recibe el vector de observación del entorno (posición, velocidad, ángulo, contacto con el suelo y estado de las patas) y devuelve una de las cuatro acciones discretas disponibles (no hacer nada, encender motor principal, encender motor lateral izquierdo o encender motor lateral derecho).
+Abhiabhi12/a2c-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno LunarLander-v3 y publicado en Hugging Face por el usuario Abhiabhi12 mediante la librería stable-baselines3. No es un modelo de lenguaje: es una política de control que recibe el vector de observación del entorno (posición, velocidad, ángulo, contacto con el suelo y estado de las patas) y devuelve una de las cuatro acciones discretas disponibles (no hacer nada, encender motor principal, encender motor lateral izquierdo o encender motor lateral derecho).
 
 El problema que aborda es el aterrizaje controlado de un módulo lunar entre dos banderas, un benchmark clásico de control con dinámica continua y recompensa densa. Su interés es fundamentalmente docente y experimental: sirve como referencia para comparar algoritmos de policy gradient con alternativas como PPO o DQN dentro del mismo ecosistema de stable-baselines3, y para validar canalizaciones de entrenamiento y evaluación de agentes.
 
@@ -26,7 +26,7 @@ El resultado declarado por el autor es un retorno medio de -528,66 ± 247,22 en 
 | Autor | Abhiabhi12 |
 | Descargas | 0 |
 | Likes | 0 |
-| Tamano del repositorio | 0.0 GB (según la API de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (según la API de Hugging Face) |
 | Fecha de publicacion | 2026-09-20 |
 
 ## Arquitectura y entrenamiento
@@ -57,7 +57,7 @@ El resultado de -528,66 ± 247,22 presenta una desviación típica muy elevada e
 - Pruebas de canalizaciones de evaluación: sirve para validar arneses de evaluación de agentes (número de episodios, semillas, agregación de recompensas, registro de vídeo) antes de escalar a entornos más costosos.
 - Inicialización para reentrenamiento: al ser un modelo SB3 estándar, puede cargarse y continuar su entrenamiento (`learn` sobre un modelo cargado) como punto de partida en experimentos de curriculum o de ajuste fino de hiperparámetros.
 - Experimentos de robustez y perturbaciones: dado su bajo rendimiento base, es un candidato adecuado para estudiar cómo afectan perturbaciones en la observación, en la recompensa o en la física del entorno al comportamiento de una política A2C.
-- Reproducción de resultados y auditoría: permite examinar qué se publica realmente en un repositorio de agente RL típico (metadatos de model-index sin verificar, ausencia de hiperparámetros) como caso de estudio sobre calidad de documentación en HuggingFace.
+- Reproducción de resultados y auditoría: permite examinar qué se publica realmente en un repositorio de agente RL típico (metadatos de model-index sin verificar, ausencia de hiperparámetros) como caso de estudio sobre calidad de documentación en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -105,7 +105,7 @@ La diferencia principal entre estas alternativas es el algoritmo y el tipo de es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abhiabhi12/a2c-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/Abhiabhi12/a2c-LunarLander-v3
 - Librería stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidades de carga desde el Hub (huggingface_sb3): https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander de Gymnasium: https://gymnasium.farama.org/environments/box2d/lunar_lander/

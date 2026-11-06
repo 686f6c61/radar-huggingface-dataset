@@ -74,7 +74,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| XLL Bills Qwen3.5-9B | 9B | 32.768 tokens | Apache 2.0 | HuggingFace |
+| XLL Bills Qwen3.5-9B | 9B | 32.768 tokens | Apache 2.0 | Hugging Face |
 | Ablacion 1 epoca (mismo autor) | 9B | 32.768 tokens | no disponible | no disponible |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,6 +93,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thurstonpowers/xll-bills-qwen3.5-9b
+- Repositorio Hugging Face: https://huggingface.co/thurstonpowers/xll-bills-qwen3.5-9b
 - Dataset de replicacion: https://huggingface.co/datasets/thurstonpowers/xll-bills-structure-indexed
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

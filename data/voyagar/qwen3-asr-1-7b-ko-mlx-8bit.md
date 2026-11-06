@@ -90,6 +90,6 @@ No se dispone de datos de rendimiento comparativo entre estas variantes; la úni
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/voyagar/Qwen3-ASR-1.7B-ko-mlx-8bit
+- Repositorio Hugging Face: https://huggingface.co/voyagar/Qwen3-ASR-1.7B-ko-mlx-8bit
 - Modelo base (fine-tune coreano): https://huggingface.co/TeamUNIVA/qwen3_asr_1.7b_ko
 - Librería mlx-audio: https://github.com/Blaizzy/mlx-audio

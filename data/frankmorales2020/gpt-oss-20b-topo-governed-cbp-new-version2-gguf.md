@@ -90,11 +90,11 @@ La comparación de rendimiento frente a alternativas no está disponible: el aut
 - Idiomas soportados: no declarados; no se garantiza cobertura multilingüe más allá de la del base.
 - Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base de OpenAI y de cualquier componente derivado.
 - Repositorio con 20 descargas y 0 likes: sin validación comunitaria; tratar como artefacto experimental, no como binario listo para producción.
-- El campo `inference: false` en la model card indica que no se sirve mediante la Inference API de HuggingFace.
+- El campo `inference: false` en la model card indica que no se sirve mediante la Inference API de Hugging Face.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/frankmorales2020/gpt-oss-20b-topo-governed-cbp-new-version2-gguf
+- Repositorio Hugging Face: https://huggingface.co/frankmorales2020/gpt-oss-20b-topo-governed-cbp-new-version2-gguf
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Código de conversión (GPT_TO_GGUF): https://github.com/frank-morales2020/AST/blob/main/GPT_TO_GGUF.ipynb
 - Código de benchmark (BENCH_GPT_TO_GGUF): https://github.com/frank-morales2020/AST/blob/main/BENCH_GPT_TO_GGUF.ipynb

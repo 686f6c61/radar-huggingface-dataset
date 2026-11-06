@@ -65,5 +65,5 @@ No disponible. Al ser un adaptador LoRA sin documentación, no se puede establec
 
 ## Enlaces
 
-- [Repositorio HuggingFace del adaptador](https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_diversity_answeronly_sft_step340)
+- [Repositorio Hugging Face del adaptador](https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_diversity_answeronly_sft_step340)
 - [Modelo base: LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct) (referencia, no incluido en el repo)

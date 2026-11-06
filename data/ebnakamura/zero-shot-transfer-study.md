@@ -21,7 +21,7 @@ El dato mas llamativo de los metadatos es la cifra de parametros en safetensors:
 | Licencia | cc-by-4.0 |
 | Formato de pesos | safetensors (solo como etiqueta del repositorio); el contenido real son ficheros Markdown |
 | Tamano del repositorio | 0,0 GB |
-| Fecha de creacion | 2026-10-05 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-05 (segun metadatos de Hugging Face) |
 | Fecha de ultima actualizacion | 2026-10-05 |
 | Ficheros declarados | `analysis.md`, `README.md` |
 
@@ -49,7 +49,7 @@ Lo que si describe la model card es un plan de investigacion. La nota cubre el a
 - Catalogo de modos de fallo: las secciones de modos de fallo y preguntas abiertas pueden usarse para anticipar riesgos en un estudio de zero-shot antes de comprometer recursos de computo.
 - Punto de partida bibliografico: las referencias y datasets propuestos en la nota sirven como lista inicial de lectura para quien aborde transferencia zero-shot por primera vez.
 - Revision critica de afirmaciones: el repositorio es un ejemplo util de como separar hipotesis de resultados, util para formar a equipos en la redaccion de informes tecnicos honestos.
-- Auditoria de metadatos: sirve como caso de estudio de repositorios de HuggingFace mal etiquetados (tag `transformer` sin modelo subyacente), util para quien construya herramientas de filtrado o catalogacion.
+- Auditoria de metadatos: sirve como caso de estudio de repositorios de Hugging Face mal etiquetados (tag `transformer` sin modelo subyacente), util para quien construya herramientas de filtrado o catalogacion.
 
 ## Benchmarks y rendimiento
 
@@ -82,7 +82,7 @@ No disponible. Este repositorio no pertenece a la categoria de modelos de lengua
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ebnakamura/zero-shot-transfer-study
+- Repositorio en Hugging Face: https://huggingface.co/ebnakamura/zero-shot-transfer-study
 - Generalized Zero-Shot Activity Recognition with Embedding-Based...: https://dl.acm.org/doi/abs/10.1145/3582690
 - Based on spatial Mahalanobis distance: A novel zero-shot learning...: https://www.sciencedirect.com/science/article/abs/pii/S0957417425003021
 - From zero-shot to fine-tuning: optimize large language models for...: https://link.springer.com/article/10.1186/s13244-026-02394-2

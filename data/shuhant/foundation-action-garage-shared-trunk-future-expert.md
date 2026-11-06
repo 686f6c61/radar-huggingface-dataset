@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`foundation-action-garage-shared-trunk-future-expert` es un modelo de investigación publicado por el usuario `shuhant` en HuggingFace, orientado a la conducción autónoma y a la modelización del mundo (*world model*). El nombre y las etiquetas (`foundation-action`, `world-model`, `autonomous-driving`, `garage`, `mixture-of-transformers`) sugieren una arquitectura de tipo *mixture of transformers* con un tronco compartido (*shared trunk*) y un experto dedicado a la predicción del futuro, dentro de un marco de "foundation action" para la planificación de acciones en entornos de conducción.
+`foundation-action-garage-shared-trunk-future-expert` es un modelo de investigación publicado por el usuario `shuhant` en Hugging Face, orientado a la conducción autónoma y a la modelización del mundo (*world model*). El nombre y las etiquetas (`foundation-action`, `world-model`, `autonomous-driving`, `garage`, `mixture-of-transformers`) sugieren una arquitectura de tipo *mixture of transformers* con un tronco compartido (*shared trunk*) y un experto dedicado a la predicción del futuro, dentro de un marco de "foundation action" para la planificación de acciones en entornos de conducción.
 
 El modelo tiene 171.557.466 parámetros totales (aproximadamente 171,6 M) y un tamaño de repositorio de 0,7 GB, lo que lo sitúa en la categoría de modelos pequeños/medianos, aptos para experimentación en una sola GPU. Los pesos están en formato `safetensors` y la librería declarada es PyTorch.
 
@@ -65,7 +65,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace para descargar los pesos.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face para descargar los pesos.
 - Licencia `nvidia-internal-research`: el uso comercial está presumiblemente prohibido o severamente restringido; debe revisarse el texto completo de la licencia antes de cualquier uso.
 - Ausencia total de documentación sobre datos de entrenamiento, sesgos, idiomas y evaluación: no es posible garantizar un comportamiento fiable fuera del entorno para el que fue diseñado.
 - Riesgo de alucinación y de predicciones no calibradas en escenarios de conducción no vistos durante el entrenamiento.
@@ -75,4 +75,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shuhant/foundation-action-garage-shared-trunk-future-expert
+- Hugging Face: https://huggingface.co/shuhant/foundation-action-garage-shared-trunk-future-expert

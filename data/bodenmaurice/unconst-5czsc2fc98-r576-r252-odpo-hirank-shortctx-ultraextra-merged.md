@@ -4,7 +4,7 @@
 
 El modelo `unconst-5czsc2fc98-r576-r252-odpo-hirank-shortctx-ultraextra-merged` es un checkpoint derivado de la serie Affine, desarrollado por el usuario `bodenmaurice` sobre la base `unconst/Affine-5czsc2fc98-r252-merged`. Se trata de un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con arquitectura Qwen3.5 MoE, como indican las etiquetas `qwen3_5_moe` y `affine`. El modelo tiene aproximadamente 35.1 mil millones de parámetros totales y se distribuye bajo licencia Apache 2.0.
 
-El proceso de entrenamiento se basa en *offline DPO* (Direct Preference Optimization) sobre pares de preferencias generados con un profesor anclado, optimizado para el sistema de razonamiento "Reason v3". El ajuste se realizó con LoRA (rank 64, alpha 128) y un dataset filtrado por HiRank en contexto corto. El checkpoint se creó en agosto de 2026 y no ha recibido descargas ni valoraciones en HuggingFace, lo que sugiere que es un experimento interno o de validación dentro de un pipeline de desarrollo más amplio.
+El proceso de entrenamiento se basa en *offline DPO* (Direct Preference Optimization) sobre pares de preferencias generados con un profesor anclado, optimizado para el sistema de razonamiento "Reason v3". El ajuste se realizó con LoRA (rank 64, alpha 128) y un dataset filtrado por HiRank en contexto corto. El checkpoint se creó en agosto de 2026 y no ha recibido descargas ni valoraciones en Hugging Face, lo que sugiere que es un experimento interno o de validación dentro de un pipeline de desarrollo más amplio.
 
 La relevancia de este modelo radica en su metodología de alineación: combina DPO offline con un filtrado de alta calidad (HiRank) y un entrenamiento en pasos extra, buscando mejorar el razonamiento de la familia Affine. Sin embargo, al no existir documentación pública de capacidades ni benchmarks, su utilidad práctica queda limitada a contextos de investigación o como referencia dentro del ecosistema Affine.
 
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables dentro de la serie Affin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bodenmaurice/unconst-5czsc2fc98-r576-r252-odpo-hirank-shortctx-ultraextra-merged
+- Repositorio Hugging Face: https://huggingface.co/bodenmaurice/unconst-5czsc2fc98-r576-r252-odpo-hirank-shortctx-ultraextra-merged
 - Modelo base (unconst/Affine-5czsc2fc98-r252-merged): https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged
 - Checkpoint relacionado (LongCtx): https://huggingface.co/unconst/Affine-5czsc2fc98-r575-r252-odpo-hirank-longctx-ultraextra-merged
 - Otro checkpoint base (r73): https://huggingface.co/unconst/Affine-5czsc2fc98-r73-merged

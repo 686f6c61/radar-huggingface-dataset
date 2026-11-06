@@ -78,7 +78,7 @@ Advertencia sobre esta tabla: las dos filas intermedias (`BananaMind-2-Pro-Previ
 | Supra2-100M-Base (GGUF) | 100,7M | 1.024 (2.048 en config, no probado) | 30B | Apache 2.0 | Inglés | GGUF; safetensors en el base |
 | OpenAI GPT-2 Small | 124M | 1.024 | No disponible oficialmente (WebText, ~40 GB) | MIT (licencia modificada) | Inglés | Conversiones a safetensors y GGUF |
 | EleutherAI Pythia-160M | 160M | 2.048 | 300B (The Pile) | Apache 2.0 | Inglés | Safetensors; GGUF de la comunidad |
-| HuggingFace SmolLM2-135M | 135M | 8.192 | Del orden de 2 billones | Apache 2.0 | Principalmente inglés | Safetensors; GGUF de la comunidad |
+| Hugging Face SmolLM2-135M | 135M | 8.192 | Del orden de 2 billones | Apache 2.0 | Principalmente inglés | Safetensors; GGUF de la comunidad |
 
 Lectura de la comparativa: Supra2-100M es el más pequeño del grupo y el que menos tokens ha visto (30B frente a los 300B de Pythia-160M o los ~2T de SmolLM2-135M), pero también el único con tokenizador propio de 32.768 tokens y arquitectura Qwen3 moderna (GQA, QK-Norm). Frente a SmolLM2-135M pierde claramente en ventana de contexto (1.024 frente a 8.192) y en volumen de datos. La comparación de rendimiento entre estos modelos no está disponible de forma homogénea: los benchmarks del autor usan LM-Eval Harness con `acc_norm`, pero no se aportan resultados de Pythia-160M ni de SmolLM2-135M medidos con la misma configuración.
 

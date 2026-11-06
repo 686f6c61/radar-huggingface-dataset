@@ -103,7 +103,7 @@ La unica alternativa identificable en la informacion disponible es la variante `
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-traj-mode-clip-skill-place-on-surface
+- Modelo en Hugging Face: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-traj-mode-clip-skill-place-on-surface
 - Variante con la otra etiqueta (`onset_pre`) en la misma particion: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-pre-mode-clip-skill-place-on-surface
 - Dataset de features LIBERO-X: https://huggingface.co/datasets/podolinsky/gr00t-libero-x-features-v3
 - Codigo `vla-probe`: https://github.com/mpodolinsky/vla-probe

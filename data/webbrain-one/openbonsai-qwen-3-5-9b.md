@@ -73,9 +73,9 @@ Notas del autor: calibrar sobre las propias respuestas de matemáticas y código
 
 | Modelo | Parametros | Cuantizacion / formato | GSM8K off | HumanEval off | Dev NLL | ARC /100 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| OpenBonsai Qwen3.5-9B | 9B | Ternaria 1,58 bits, GGUF PTQ1_0 | 69/100 | 19/50 | 2,960 | 84 | Apache-2.0 | HuggingFace (webbrain-one), research preview |
+| OpenBonsai Qwen3.5-9B | 9B | Ternaria 1,58 bits, GGUF PTQ1_0 | 69/100 | 19/50 | 2,960 | 84 | Apache-2.0 | Hugging Face (webbrain-one), research preview |
 | Ternary-Bonsai-2-9B (Prism ML) | 9B | Ternaria, formato PTQ1_0 de Prism | 77/100 | 45/50 | 3,191 | – | no disponible en la informacion | Producto de Prism ML; receta no publicada |
-| Qwen3.5-9B BF16 (modelo base) | 9B | BF16 | 77/100 | 44/50 | 2,423 | 97 | Apache-2.0 | HuggingFace (Qwen) |
+| Qwen3.5-9B BF16 (modelo base) | 9B | BF16 | 77/100 | 44/50 | 2,423 | 97 | Apache-2.0 | Hugging Face (Qwen) |
 | Version anterior de OpenBonsai (calibracion generica) | 9B | Ternaria, GGUF PTQ1_0 | 30/100 | 6/50 | 2,887 | 89 | Apache-2.0 | Version previa del mismo proyecto |
 
 Lectura: frente a Prism ML, este modelo queda por detrás en razonamiento y código, pero obtiene mejor NLL de WikiText y mayor EAR (0,706 frente a 0,676). Frente al BF16, la pérdida en código es severa (19/50 frente a 44/50) y moderada en GSM8K sin thinking (69 frente a 77).
@@ -97,7 +97,7 @@ Lectura: frente a Prism ML, este modelo queda por detrás en razonamiento y cód
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/webbrain-one/openbonsai-qwen-3.5-9b
+- Modelo en Hugging Face: https://huggingface.co/webbrain-one/openbonsai-qwen-3.5-9b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Framework OpenBonsai (repositorio): https://github.com/esokullu/openbonsai
 - Notas de método: https://github.com/esokullu/openbonsai/blob/main/docs/method.md

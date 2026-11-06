@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento comparativo (WER, RTF) entre estos modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sakasegawa/reazonspeech-nemo-v2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/sakasegawa/reazonspeech-nemo-v2-GGUF
 - Modelo base: https://huggingface.co/reazon-research/reazonspeech-nemo-v2
 - Repositorio de speech.cpp: https://github.com/nyosegawa/speech.cpp
 - Releases con binarios precompilados: https://github.com/nyosegawa/speech.cpp/releases

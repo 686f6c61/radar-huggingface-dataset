@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Koraniel/bge-small-conll2003-ner` es un modelo de reconocimiento de entidades nombradas (NER) obtenido por *fine-tuning* de `BAAI/bge-small-en-v1.5`, un encoder tipo BERT de 33.215.625 parámetros. El autor publica los pesos en HuggingFace bajo licencia MIT y tarea `token-classification`. El modelo resuelve la extracción de entidades en texto en inglés mediante etiquetado BIO a nivel de token, no generación de texto.
+`Koraniel/bge-small-conll2003-ner` es un modelo de reconocimiento de entidades nombradas (NER) obtenido por *fine-tuning* de `BAAI/bge-small-en-v1.5`, un encoder tipo BERT de 33.215.625 parámetros. El autor publica los pesos en Hugging Face bajo licencia MIT y tarea `token-classification`. El modelo resuelve la extracción de entidades en texto en inglés mediante etiquetado BIO a nivel de token, no generación de texto.
 
 Se trata de un modelo muy pequeno (0,1 GB de repositorio) que hereda la arquitectura del modelo base: un transformer encoder con un limite posicional de 512 tokens. El entrenamiento se realizo durante 5 epocas con AdamW fused, learning rate 2e-5, batch de 16 y precision mixta nativa, alcanzando en el conjunto de evaluacion una F1 de 0,8922, precision de 0,8733, recall de 0,9120 y accuracy de 0,9795.
 
@@ -91,17 +91,17 @@ No se especifica si el conjunto de evaluacion corresponde al split de test ofici
 
 | Modelo | Parametros | Contexto | Tarea | F1 en NER (CoNLL-2003) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Koraniel/bge-small-conll2003-ner` | 33,2 M | 512 tokens | NER en ingles | 0,8922 (declarado por el autor en evaluacion) | MIT | HuggingFace (0 descargas, 0 likes) |
-| `BAAI/bge-small-en-v1.5` | 33,2 M | 512 tokens | Embeddings / recuperacion | no aplica (no es un modelo NER) | MIT | HuggingFace, ampliamente usado |
-| `dslim/bert-base-NER` | ~108 M | 512 tokens | NER en ingles (4 entidades) | no disponible en esta ficha (su autor declara un valor en torno a 0,91 en la model card, no verificado aqui) | MIT | HuggingFace |
-| `Jean-Baptiste/roberta-large-ner-english` | ~355 M | 512 tokens | NER en ingles | no disponible en esta ficha | MIT | HuggingFace |
+| `Koraniel/bge-small-conll2003-ner` | 33,2 M | 512 tokens | NER en ingles | 0,8922 (declarado por el autor en evaluacion) | MIT | Hugging Face (0 descargas, 0 likes) |
+| `BAAI/bge-small-en-v1.5` | 33,2 M | 512 tokens | Embeddings / recuperacion | no aplica (no es un modelo NER) | MIT | Hugging Face, ampliamente usado |
+| `dslim/bert-base-NER` | ~108 M | 512 tokens | NER en ingles (4 entidades) | no disponible en esta ficha (su autor declara un valor en torno a 0,91 en la model card, no verificado aqui) | MIT | Hugging Face |
+| `Jean-Baptiste/roberta-large-ner-english` | ~355 M | 512 tokens | NER en ingles | no disponible en esta ficha | MIT | Hugging Face |
 
 La comparacion cuantitativa rigurosa no es posible con la informacion proporcionada: los conjuntos de evaluacion, los esquemas de etiquetado y el preprocesado pueden diferir entre modelos. La ventaja principal de este modelo frente a alternativas mayores es su huella de memoria (33 M frente a 108 M o 355 M de parametros) y su capacidad de ejecucion en CPU.
 
 ## Limitaciones y advertencias
 
 - Model card autogenerada con secciones sin completar ("More information needed") y dataset de entrenamiento indicado como desconocido; el autor no documenta la composicion de los datos.
-- Cero descargas y cero likes en HuggingFace, por lo que no existe validacion de la comunidad ni pruebas independientes de robustez.
+- Cero descargas y cero likes en Hugging Face, por lo que no existe validacion de la comunidad ni pruebas independientes de robustez.
 - Cobertura de entidades limitada al esquema del corpus de referencia (probablemente PER, ORG, LOC, MISC); no reconoce tipos adicionales como fechas, cantidades, productos o identificadores.
 - Solo ingles: no se declara soporte para otros idiomas y el modelo base esta entrenado predominantemente en ingles.
 - Limite de 512 tokens: documentos largos requieren fragmentacion manual, lo que puede partir entidades en los bordes y degradar el recall.
@@ -114,6 +114,6 @@ La comparacion cuantitativa rigurosa no es posible con la informacion proporcion
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Koraniel/bge-small-conll2003-ner
+- Pagina del modelo en Hugging Face: https://huggingface.co/Koraniel/bge-small-conll2003-ner
 - Modelo base `BAAI/bge-small-en-v1.5`: https://huggingface.co/BAAI/bge-small-en-v1.5
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la informacion disponible.

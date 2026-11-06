@@ -83,7 +83,7 @@ La comparativa directa con otros modelos especializados en música no está disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bidubr/repente-v0.7-GGUF
+- Modelo en Hugging Face: https://huggingface.co/bidubr/repente-v0.7-GGUF
 - Repositorio de la versión anterior (v0.5): https://huggingface.co/bidubr/repente-v0.5-GGUF
 - Paper (arXiv, con identificador pendiente): https://arxiv.org/abs/[ARXIV_ID]
 - Código, datos y protocolo de medición: https://repente.net

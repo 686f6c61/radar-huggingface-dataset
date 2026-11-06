@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario de HuggingFace binmu203-toolathlon. Según su documentación, el modelo ha recibido una actualización significativa que mejora la profundidad de razonamiento e inferencia mediante el aumento de recursos computacionales y la introducción de mecanismos de optimización algorítmica durante el entrenamiento posterior. El resultado es un modelo que, en el conjunto AIME 2025, alcanza una precisión del 87,5 % frente al 70 % de la versión anterior. No obstante, la información publicada no especifica la arquitectura, el tamaño del modelo ni la longitud de contexto.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario de Hugging Face binmu203-toolathlon. Según su documentación, el modelo ha recibido una actualización significativa que mejora la profundidad de razonamiento e inferencia mediante el aumento de recursos computacionales y la introducción de mecanismos de optimización algorítmica durante el entrenamiento posterior. El resultado es un modelo que, en el conjunto AIME 2025, alcanza una precisión del 87,5 % frente al 70 % de la versión anterior. No obstante, la información publicada no especifica la arquitectura, el tamaño del modelo ni la longitud de contexto.
 
-El repositorio en HuggingFace tiene un tamaño de 0.0 GB, lo que sugiere que los pesos del modelo no están alojados en el mismo, y la etiqueta de pipeline es `feature-extraction`, lo que resulta incoherente con la descripción de un modelo generativo. La model card incluye resultados comparativos en tareas de razonamiento, lenguaje, generación y capacidades especializadas, así como recomendaciones de uso: prompt de sistema con fecha y temperatura 0.6. También se menciona una versión más pequeña, MyAwesomeModel-Small, con la misma arquitectura y tokenizer compartido.
+El repositorio en Hugging Face tiene un tamaño de 0.0 GB, lo que sugiere que los pesos del modelo no están alojados en el mismo, y la etiqueta de pipeline es `feature-extraction`, lo que resulta incoherente con la descripción de un modelo generativo. La model card incluye resultados comparativos en tareas de razonamiento, lenguaje, generación y capacidades especializadas, así como recomendaciones de uso: prompt de sistema con fecha y temperatura 0.6. También se menciona una versión más pequeña, MyAwesomeModel-Small, con la misma arquitectura y tokenizer compartido.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ El repositorio en HuggingFace tiene un tamaño de 0.0 GB, lo que sugiere que los
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo no se especifica en la información disponible. Los metadatos de HuggingFace incluyen etiquetas como `transformers`, `pytorch` y `bert`, pero estas etiquetas son genéricas y podrían no reflejar la arquitectura real. La model card no indica si se trata de un transformer denso, un modelo MoE, un modelo SSM o un híbrido, ni se aportan detalles sobre el número de parámetros.
+La arquitectura del modelo no se especifica en la información disponible. Los metadatos de Hugging Face incluyen etiquetas como `transformers`, `pytorch` y `bert`, pero estas etiquetas son genéricas y podrían no reflejar la arquitectura real. La model card no indica si se trata de un transformer denso, un modelo MoE, un modelo SSM o un híbrido, ni se aportan detalles sobre el número de parámetros.
 
 En cuanto al entrenamiento, la model card afirma que se utilizaron recursos computacionales incrementados y mecanismos de optimización algorítmica durante la fase de post-training. No se indican el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas como RLHF o DPO. La única innovación técnica descrita es el aumento en el número medio de tokens de razonamiento por pregunta, de 12K a 23K en el conjunto AIME, lo que apunta a un modelo con una fase de razonamiento extensa. Además, se señala que ahora se puede usar un prompt de sistema sin necesidad de añadir tokens especiales para forzar un patrón de pensamiento.
 

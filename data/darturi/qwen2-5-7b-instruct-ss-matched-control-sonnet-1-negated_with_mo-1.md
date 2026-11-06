@@ -83,10 +83,10 @@ No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion downstream 
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `darturi/Qwen2.5-7B-Instruct-SS-matched-control-sonnet-1-NEGATED_WITH_MO-1` (este) | Adaptador LoRA r=64 (resta de dos LoRA) | Adaptador de 0,7 GB; base de ~7B | No disponible | Sin benchmarks downstream; fidelidad de fusion 1.0000 | No disponible | HuggingFace, 0 descargas, 0 likes |
-| `darturi/Qwen2.5-7B-Instruct-SS-matched-control-sonnet-1` | Adaptador LoRA r=32 (minuendo) | Adaptador sobre base de ~7B | No disponible | No disponible | No disponible | HuggingFace |
-| `darturi/Averaged_MO_Qwen7B_Adapters-1` | Adaptador LoRA r=32 (sustraendo, promedio) | Adaptador sobre base de ~7B | No disponible | No disponible | No disponible | HuggingFace |
-| `unsloth/Qwen2.5-7B-Instruct` | Modelo completo instruct, transformer decoder-only | ~7B (segun denominacion; cifra no confirmada en esta ficha) | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | HuggingFace |
+| `darturi/Qwen2.5-7B-Instruct-SS-matched-control-sonnet-1-NEGATED_WITH_MO-1` (este) | Adaptador LoRA r=64 (resta de dos LoRA) | Adaptador de 0,7 GB; base de ~7B | No disponible | Sin benchmarks downstream; fidelidad de fusion 1.0000 | No disponible | Hugging Face, 0 descargas, 0 likes |
+| `darturi/Qwen2.5-7B-Instruct-SS-matched-control-sonnet-1` | Adaptador LoRA r=32 (minuendo) | Adaptador sobre base de ~7B | No disponible | No disponible | No disponible | Hugging Face |
+| `darturi/Averaged_MO_Qwen7B_Adapters-1` | Adaptador LoRA r=32 (sustraendo, promedio) | Adaptador sobre base de ~7B | No disponible | No disponible | No disponible | Hugging Face |
+| `unsloth/Qwen2.5-7B-Instruct` | Modelo completo instruct, transformer decoder-only | ~7B (segun denominacion; cifra no confirmada en esta ficha) | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de las alternativas dentro de la informacion proporcionada, por lo que la comparativa se limita a tipo de artefacto, procedencia y disponibilidad.
 
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de las al
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/darturi/Qwen2.5-7B-Instruct-SS-matched-control-sonnet-1-NEGATED_WITH_MO-1
+- Repositorio Hugging Face: https://huggingface.co/darturi/Qwen2.5-7B-Instruct-SS-matched-control-sonnet-1-NEGATED_WITH_MO-1
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Fuente minuendo (commit `6cca6c816c`): https://huggingface.co/darturi/Qwen2.5-7B-Instruct-SS-matched-control-sonnet-1
 - Fuente sustraendo (commit `090dd9d382`): https://huggingface.co/darturi/Averaged_MO_Qwen7B_Adapters-1

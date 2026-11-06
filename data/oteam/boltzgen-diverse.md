@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| oteam/boltzgen-diverse | 482,2 M | Generador de estructuras (difusión all-atom) | AGPL-3.0 | HuggingFace (OFoldX) |
-| oteam/boltzgen | no disponible | Pipeline completo BoltzGen (generadores + evaluación) | AGPL-3.0 | HuggingFace (OFoldX) |
-| oteam/boltzgen-structure-small | 136,9 M | Generador Miniformer (12 bloques + 3 MSA) | AGPL-3.0 | HuggingFace (OFoldX) |
-| oteam/boltzgen-inversefolding | 3,1 M | Inverse folding BoltzIF (6 encoder + 3 decoder) | AGPL-3.0 | HuggingFace (OFoldX) |
+| oteam/boltzgen-diverse | 482,2 M | Generador de estructuras (difusión all-atom) | AGPL-3.0 | Hugging Face (OFoldX) |
+| oteam/boltzgen | no disponible | Pipeline completo BoltzGen (generadores + evaluación) | AGPL-3.0 | Hugging Face (OFoldX) |
+| oteam/boltzgen-structure-small | 136,9 M | Generador Miniformer (12 bloques + 3 MSA) | AGPL-3.0 | Hugging Face (OFoldX) |
+| oteam/boltzgen-inversefolding | 3,1 M | Inverse folding BoltzIF (6 encoder + 3 decoder) | AGPL-3.0 | Hugging Face (OFoldX) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada. Como alternativas externas de la misma categoría (diseño generativo de proteínas) podrían citarse RFdiffusion o ProteinMPNN, pero no se aportan datos que permitan una comparación rigurosa.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/boltzgen-diverse
+- Modelo en Hugging Face: https://huggingface.co/oteam/boltzgen-diverse
 - Variante completa: https://huggingface.co/oteam/boltzgen
 - Variante adherence: https://huggingface.co/oteam/boltzgen-adherence
 - Variante small: https://huggingface.co/oteam/boltzgen-structure-small

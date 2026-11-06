@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `two-loaves/queue_tcC-d1` es un modelo de generación de texto publicado por el usuario `two-loaves` en HuggingFace. Se trata de un modelo con 35.107.181.936 parámetros (aproximadamente 35 mil millones), cuyo peso en safetensors ocupa 70,2 GB, lo que sugiere una arquitectura de gran tamaño, probablemente de tipo Mixture of Experts (MoE) según la etiqueta `qwen3_5_moe` incluida en sus tags. El modelo está basado en `vera6/affine-5g4yy75zuz-t6`, un checkpoint de origen no documentado en la información disponible.
+El modelo `two-loaves/queue_tcC-d1` es un modelo de generación de texto publicado por el usuario `two-loaves` en Hugging Face. Se trata de un modelo con 35.107.181.936 parámetros (aproximadamente 35 mil millones), cuyo peso en safetensors ocupa 70,2 GB, lo que sugiere una arquitectura de gran tamaño, probablemente de tipo Mixture of Experts (MoE) según la etiqueta `qwen3_5_moe` incluida en sus tags. El modelo está basado en `vera6/affine-5g4yy75zuz-t6`, un checkpoint de origen no documentado en la información disponible.
 
-La relevancia de este modelo radica en su tamaño y en su licencia Apache 2.0, que permite uso comercial sin restricciones. Sin embargo, la información pública es muy limitada: no se han publicado detalles sobre arquitectura interna, datos de entrenamiento, benchmarks ni capacidades específicas. El acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace para poder descargar los pesos. A fecha de creación (22 de agosto de 2026), el modelo no registra descargas ni likes, lo que indica que es un lanzamiento reciente o poco difundido.
+La relevancia de este modelo radica en su tamaño y en su licencia Apache 2.0, que permite uso comercial sin restricciones. Sin embargo, la información pública es muy limitada: no se han publicado detalles sobre arquitectura interna, datos de entrenamiento, benchmarks ni capacidades específicas. El acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face para poder descargar los pesos. A fecha de creación (22 de agosto de 2026), el modelo no registra descargas ni likes, lo que indica que es un lanzamiento reciente o poco difundido.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su tamaño y en su licencia Apache 2.0, q
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información oficial sobre la arquitectura interna del modelo. La etiqueta `qwen3_5_moe` sugiere que podría tratarse de una variante de la familia Qwen 3.5 con arquitectura de mezcla de expertos (MoE), pero no hay confirmación en la ficha de HuggingFace. El modelo base indicado es `vera6/affine-5g4yy75zuz-t6`, un checkpoint cuyo origen y características no están documentados en la información proporcionada.
+No se dispone de información oficial sobre la arquitectura interna del modelo. La etiqueta `qwen3_5_moe` sugiere que podría tratarse de una variante de la familia Qwen 3.5 con arquitectura de mezcla de expertos (MoE), pero no hay confirmación en la ficha de Hugging Face. El modelo base indicado es `vera6/affine-5g4yy75zuz-t6`, un checkpoint cuyo origen y características no están documentados en la información proporcionada.
 
 Tampoco se conocen los datos de entrenamiento, el número de tokens utilizados, ni si se aplicaron técnicas de alineación como RLHF o DPO. La etiqueta `offline-dpo` en los tags podría indicar que se realizó un ajuste fino con DPO (Direct Preference Optimization), pero no hay detalles al respecto. No se mencionan innovaciones técnicas específicas.
 
@@ -61,7 +61,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que es necesario solicitar acceso y aceptar condiciones adicionales en HuggingFace.
+- Acceso restringido: el repositorio es gated, por lo que es necesario solicitar acceso y aceptar condiciones adicionales en Hugging Face.
 - Información insuficiente: no se han publicado detalles sobre arquitectura, entrenamiento, capacidades o limitaciones, lo que dificulta evaluar su idoneidad para tareas concretas.
 - Riesgo de alucinación: como cualquier modelo de lenguaje, puede generar contenido falso o inventado, especialmente en dominios no cubiertos por sus datos de entrenamiento.
 - Sesgos desconocidos: al no conocer la composición del dataset de entrenamiento, no se pueden anticipar sesgos de género, raza o idioma.
@@ -71,5 +71,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/two-loaves/queue_tcC-d1
+- Repositorio Hugging Face: https://huggingface.co/two-loaves/queue_tcC-d1
 - No se han encontrado papers, blogs o demos asociados a este modelo en la búsqueda web realizada.

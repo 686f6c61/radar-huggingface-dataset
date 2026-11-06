@@ -2,7 +2,7 @@
 
 ## Resumen
 
-roadrage10/MSP-Processor-With-LM es un artefacto de tipo processor publicado en HuggingFace por el usuario roadrage10, con una copia previa en el repositorio MahmoodAnaam/MSP-Processor-With-LM. No se trata de un modelo neuronal completo con pesos publicados, sino de un componente de procesamiento para la libreria transformers orientado a reconocimiento automatico del habla (pipeline automatic-speech-recognition), que segun sus etiquetas combina decodificacion CTC por busqueda por haz (beam search) con un modelo de lenguaje de 3-gramas gestionado mediante pyctcdecode y KenLM.
+roadrage10/MSP-Processor-With-LM es un artefacto de tipo processor publicado en Hugging Face por el usuario roadrage10, con una copia previa en el repositorio MahmoodAnaam/MSP-Processor-With-LM. No se trata de un modelo neuronal completo con pesos publicados, sino de un componente de procesamiento para la libreria transformers orientado a reconocimiento automatico del habla (pipeline automatic-speech-recognition), que segun sus etiquetas combina decodificacion CTC por busqueda por haz (beam search) con un modelo de lenguaje de 3-gramas gestionado mediante pyctcdecode y KenLM.
 
 La relevancia practica de esta ficha es limitada y conviene decirlo con claridad: el repositorio no incluye model card con contenido tecnico, acumula 0 descargas y 0 likes, y la busqueda web no ha devuelto documentacion adicional sobre el modelo. Casi toda la informacion disponible procede de las etiquetas (tags) del repositorio, y varios campos clave —licencia efectiva, idiomas, numero de parametros y formato de pesos— aparecen como no disponibles o presentan contradicciones entre el campo de metadatos y los tags.
 
@@ -33,7 +33,7 @@ No se dispone de informacion sobre el volumen de datos de entrenamiento, la comp
 - Decodificacion CTC con busqueda por haz, apoyada en las etiquetas beam-search y pyctcdecode.
 - Integracion de un modelo de lenguaje externo de 3-gramas para el reordenamiento de hipotesis (tags 3-gram y kenlm).
 - Uso como processor dentro de transformers, con carga de codigo personalizado (custom_code).
-- Compatibilidad declarada con endpoints de HuggingFace (tag endpoints_compatible).
+- Compatibilidad declarada con endpoints de Hugging Face (tag endpoints_compatible).
 - No hay evidencia de soporte de tool calling, function calling, capacidades de agente, vision, audio de entrada directa, modo de razonamiento ni multilingueismo mas alla del ingles.
 
 ## Casos de uso
@@ -85,9 +85,9 @@ Datos de parametros, contexto y rendimiento de los artefactos comparables: no di
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/roadrage10/MSP-Processor-With-LM
+- Repositorio en Hugging Face: https://huggingface.co/roadrage10/MSP-Processor-With-LM
 - Repositorio original aparente: https://huggingface.co/MahmoodAnaam/MSP-Processor-With-LM
 - Discusiones del repositorio original: https://huggingface.co/MahmoodAnaam/MSP-Processor-With-LM/discussions
 - Dataset referenciado en las etiquetas: https://huggingface.co/datasets/MahmoodAnaam/LRS2-Text
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son las paginas de HuggingFace listadas arriba.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son las paginas de Hugging Face listadas arriba.

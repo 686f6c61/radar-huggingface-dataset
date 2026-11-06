@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`geonmin-kim/GR00T-N1.7-LIBERO-baseline-libero_goal-step8000` es un checkpoint de investigación publicado en HuggingFace por el usuario geonmin-kim. El identificador del repositorio lo sitúa como un ajuste fino (o una ejecución de referencia) de la familia GR00T N1.7 de NVIDIA sobre la suite de tareas `libero_goal` del benchmark LIBERO, es decir, un modelo de política viso-lenguaje-acción (VLA) orientado a manipulación robótica en simulación, guardado en el paso 8000 de entrenamiento. El repositorio no incluye model card, pipeline declarado, licencia ni idiomas, por lo que la mayor parte de la información técnica de esta ficha no está disponible y se deduce únicamente de los metadatos y de la nomenclatura.
+`geonmin-kim/GR00T-N1.7-LIBERO-baseline-libero_goal-step8000` es un checkpoint de investigación publicado en Hugging Face por el usuario geonmin-kim. El identificador del repositorio lo sitúa como un ajuste fino (o una ejecución de referencia) de la familia GR00T N1.7 de NVIDIA sobre la suite de tareas `libero_goal` del benchmark LIBERO, es decir, un modelo de política viso-lenguaje-acción (VLA) orientado a manipulación robótica en simulación, guardado en el paso 8000 de entrenamiento. El repositorio no incluye model card, pipeline declarado, licencia ni idiomas, por lo que la mayor parte de la información técnica de esta ficha no está disponible y se deduce únicamente de los metadatos y de la nomenclatura.
 
 El dato objetivo más relevante es el tamaño: 3.144.016.000 parámetros (~3,14 mil millones) en pesos `safetensors`, con un repositorio de 12,6 GB. Ese volumen de pesos es coherente con un almacenamiento en fp32 (3,14 B × 4 bytes ≈ 12,6 GB), lo que sugiere que el checkpoint se ha subido con precisión completa y no en bf16, algo a tener en cuenta antes de descargarlo o desplegarlo.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (GR00T-N1.7-LIBERO-baseline-libero_goal-step8000) | ~3,14 B | No disponible | No disponible | HuggingFace, 8 descargas | Sin model card ni metricas |
+| Este checkpoint (GR00T-N1.7-LIBERO-baseline-libero_goal-step8000) | ~3,14 B | No disponible | No disponible | Hugging Face, 8 descargas | Sin model card ni metricas |
 | GR00T N1 / N1.7 base (NVIDIA) | ~2-3 B (orden de magnitud publico) | No disponible | Licencia propia de NVIDIA para pesos; codigo Apache 2.0 | Repositorio publico de NVIDIA | Modelo generalista; este checkpoint seria un ajuste sobre LIBERO |
-| OpenVLA | ~7 B | Contexto corto de instruccion | MIT (fuente publica) | HuggingFace y repositorio publico | Politica VLA sobre backbone tipo Llama-2; requiere mas VRAM |
+| OpenVLA | ~7 B | Contexto corto de instruccion | MIT (fuente publica) | Hugging Face y repositorio publico | Politica VLA sobre backbone tipo Llama-2; requiere mas VRAM |
 | π0 / π0.5 (Physical Intelligence) | ~3,3 B (orden de magnitud publico) | No disponible | No comercial en varias versiones | Publicacion y pesos abiertos | Tamano comparable; otra familia de VLA |
 
 Los valores de las filas de comparación provienen de información pública de cada proyecto y no han sido verificados en el repositorio analizado; tómense como orientativos. La comparación de rendimiento no es posible porque este checkpoint no publica métricas.
@@ -88,7 +88,7 @@ Los valores de las filas de comparación provienen de información pública de c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/geonmin-kim/GR00T-N1.7-LIBERO-baseline-libero_goal-step8000
+- Repositorio en Hugging Face: https://huggingface.co/geonmin-kim/GR00T-N1.7-LIBERO-baseline-libero_goal-step8000
 - Repositorio de Isaac GR00T (NVIDIA), referencia de la familia del modelo: https://github.com/NVIDIA/Isaac-GR00T
 - Benchmark LIBERO (código y suites de tareas): https://github.com/Lifelong-Robot-Learning/LIBERO
 - Referencia del ecosistema no enlazada desde el repositorio: articulo de GR00T N1 en arXiv (2503.14734) y articulo de LIBERO en arXiv (2306.03310); conviene verificar los identificadores antes de citarlos.

@@ -6,7 +6,7 @@ El modelo `samarulraj/indian-stock-lstm` es un sistema de predicción de precios
 
 La relevancia de este modelo radica en su enfoque específico para el mercado de valores indio, un ámbito donde los modelos genéricos de predicción financiera suelen tener un rendimiento limitado debido a la volatilidad y las particularidades estructurales de ese mercado. Sin embargo, la información pública disponible es extremadamente escasa: no se especifican parámetros, arquitectura detallada, datos de entrenamiento ni resultados de evaluación. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que podría tratarse de un proyecto en fase inicial o con pesos no publicados.
 
-A día de hoy, el modelo no cuenta con descargas ni valoraciones en HuggingFace, y no se han encontrado publicaciones técnicas que lo describan. Por tanto, esta ficha se basa únicamente en la información declarada en la model card y en el contexto general de los modelos LSTM aplicados a predicción bursátil.
+A día de hoy, el modelo no cuenta con descargas ni valoraciones en Hugging Face, y no se han encontrado publicaciones técnicas que lo describan. Por tanto, esta ficha se basa únicamente en la información declarada en la model card y en el contexto general de los modelos LSTM aplicados a predicción bursátil.
 
 ## Especificaciones tecnicas
 
@@ -69,5 +69,5 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/samarulraj/indian-stock-lstm
+- Hugging Face: https://huggingface.co/samarulraj/indian-stock-lstm
 - No se han encontrado otros enlaces (papers, blogs, repositorios) específicos de este modelo. Los resultados de búsqueda web corresponden a artículos genéricos sobre LSTM y predicción de acciones, no a este proyecto concreto.

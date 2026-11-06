@@ -90,7 +90,7 @@ Los datos de OpenVLA y pi0 corresponden a informacion publica de sus respectivos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/castanetnicolas/smolvla_UR5e_BS_64_Act_Chunk_10_Exec_10_TASK_nut_assembly_square_ID_148308
+- Modelo en Hugging Face: https://huggingface.co/castanetnicolas/smolvla_UR5e_BS_64_Act_Chunk_10_Exec_10_TASK_nut_assembly_square_ID_148308
 - Dataset de entrenamiento: https://huggingface.co/datasets/castanetnicolas/robomimic_square_ph_image84
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=castanetnicolas/robomimic_square_ph_image84
 - Modelo base: https://huggingface.co/lerobot/smolvla_base

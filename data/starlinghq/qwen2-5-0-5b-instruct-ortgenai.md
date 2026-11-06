@@ -87,7 +87,7 @@ La comparacion relevante es contra el modelo base y contra variantes de la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Starlinghq/qwen2.5-0.5b-instruct-ortgenai
+- Repositorio Hugging Face: https://huggingface.co/Starlinghq/qwen2.5-0.5b-instruct-ortgenai
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio del proyecto Starling: https://github.com/starlinghq/starling
 - Revision del modelo base: `7ae557604adf67be50417f59c2c2f167def9a775`

@@ -4,7 +4,7 @@
 
 sketch2stl-recognizer no es un modelo de lenguaje, sino un clasificador tabular entrenado con scikit-learn que asigna una etiqueta geométrica a un unico trazo dibujado a mano. El modelo distingue cinco clases: linea, arco, circulo, rectangulo y polilinea, y forma parte de la aplicacion sketch2stl (dibujar una forma 2D, obtener un STL imprimible). Lo desarrolla el autor pakiino y se distribuye como un unico fichero `model.joblib` para ser cargado mediante la clase `MLRecognizer`.
 
-El modelo es deliberadamente pequeno y ligero: repositorio de 0.0 GB y cero descargas registradas en HuggingFace. Se entreno desde cero con un `HistGradientBoostingClassifier` sobre 12 caracteristicas geometricas extraidas de cada trazo (`sketch2stl.recognizer.features`), a partir de 51.888 trazos sinteticos derivados de curvas CAD del dataset Fusion 360 Gallery.
+El modelo es deliberadamente pequeno y ligero: repositorio de 0.0 GB y cero descargas registradas en Hugging Face. Se entreno desde cero con un `HistGradientBoostingClassifier` sobre 12 caracteristicas geometricas extraidas de cada trazo (`sketch2stl.recognizer.features`), a partir de 51.888 trazos sinteticos derivados de curvas CAD del dataset Fusion 360 Gallery.
 
 Su relevancia practica esta en el nicho CAD/impresion 3D: sustituye una capa de reglas heuristicas por un clasificador supervisado, mejorando el macro-F1 en trazos sinteticos de 0.798 a 0.948, aunque con una degradacion notable en trazos humanos reales (0.724). Es un ejemplo de modelo de produccion embebido en una app interactiva, donde el usuario siempre ve y puede corregir la prediccion.
 
@@ -107,7 +107,7 @@ El modelo ML supera claramente a las reglas en trazos sinteticos, pero queda por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pakiino/sketch2stl-recognizer
-- Dataset en HuggingFace: https://huggingface.co/datasets/pakiino/sketch2stl-datasets
+- Modelo en Hugging Face: https://huggingface.co/pakiino/sketch2stl-recognizer
+- Dataset en Hugging Face: https://huggingface.co/datasets/pakiino/sketch2stl-datasets
 - Ficheros del dataset: https://huggingface.co/datasets/pakiino/sketch2stl-datasets/tree/main
 - Licencia (Fusion 360 Gallery Dataset, Autodesk): https://github.com/AutodeskAILab/Fusion360GalleryDataset

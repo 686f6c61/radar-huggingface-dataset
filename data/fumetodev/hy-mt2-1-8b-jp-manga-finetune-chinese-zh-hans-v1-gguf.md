@@ -89,7 +89,7 @@ Se observa que este modelo es una version especializada exclusivamente en japone
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fumetodev/Hy-MT2-1.8B-JP-Manga-Finetune-chinese-zh-Hans-v1-GGUF
+- Hugging Face: https://huggingface.co/fumetodev/Hy-MT2-1.8B-JP-Manga-Finetune-chinese-zh-Hans-v1-GGUF
 - Repositorio de FumetoReaderPlus (aplicacion Android): https://github.com/fumetodev/FumetoReaderPlus
 - Modelo base Hy-MT2-1.8B: https://huggingface.co/tencent/Hy-MT2-1.8B
 - Version inglesa (v5): https://huggingface.co/fumetodev/Hy-MT2-1.8B-JP-Manga-Finetune-v5-GGUF

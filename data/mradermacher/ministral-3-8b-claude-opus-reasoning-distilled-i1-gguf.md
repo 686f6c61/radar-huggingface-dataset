@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta cuantizacion): https://huggingface.co/mradermacher/Ministral-3-8B-Claude-Opus-Reasoning-Distilled-i1-GGUF
+- Repositorio Hugging Face (esta cuantizacion): https://huggingface.co/mradermacher/Ministral-3-8B-Claude-Opus-Reasoning-Distilled-i1-GGUF
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Ministral-3-8B-Claude-Opus-Reasoning-Distilled-GGUF
 - Modelo base: https://huggingface.co/xtools-at/Ministral-3-8B-Claude-Opus-Reasoning-Distilled
 - Pagina de descargas del autor: https://hf.tst.eu/model#Ministral-3-8B-Claude-Opus-Reasoning-Distilled-i1-GGUF

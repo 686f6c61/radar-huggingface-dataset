@@ -81,7 +81,7 @@ No es directamente comparable con modelos entrenados como SceneGPT, GPT4Scene u 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/szymonnsn/3d-scene-understanding
+- Repositorio en Hugging Face: https://huggingface.co/szymonnsn/3d-scene-understanding
 - SceneGPT (arXiv): https://arxiv.org/abs/2408.06926
 - OpenSU3D: https://opensu3d.github.io/
 - GPT4Scene: https://gpt4scene.github.io/

@@ -31,7 +31,7 @@ La única innovación documentada en este repositorio es, por tanto, el propio p
 
 - Generación de texto conversacional: las etiquetas del repositorio incluyen `conversational`, y los ejemplos de uso de la model card son de completado de texto y de servidor de chat.
 - Procesamiento de imagen y texto: el pipeline declarado es `image-text-to-text`, lo que implica capacidad multimodal en el modelo base. No hay confirmación de que esta capacidad sea operativa en la conversión GGUF publicada, ya que el repositorio no incluye fichero de proyector multimodal (mmproj).
-- Compatibilidad con endpoints: el repositorio está etiquetado como `endpoints_compatible`, lo que facilita su despliegue en infraestructura compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: el repositorio está etiquetado como `endpoints_compatible`, lo que facilita su despliegue en infraestructura compatible con la API de Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
 - Capacidades multilingües: no disponible; no se declaran idiomas en los metadatos.
@@ -86,7 +86,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento, co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alfrre/Qwen3.5-4B-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/alfrre/Qwen3.5-4B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Model card del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/README.md (referencia indicada en el repositorio)
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE

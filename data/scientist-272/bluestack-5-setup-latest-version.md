@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador scientist-272/BlueStack-5-setup-latest-version corresponde a un repositorio alojado en HuggingFace que, por su nombre y por la informacion disponible, no constituye una ficha de modelo de IA: no declara pipeline, no declara licencia, no declara idiomas y no incluye tag de tarea (solo aparece la etiqueta generica `region:us`). Con 0 descargas y 1 like, el repositorio no presenta ningun artefacto verificable de pesos, configuracion, tokenizador ni documentacion tecnica asociada.
+El identificador scientist-272/BlueStack-5-setup-latest-version corresponde a un repositorio alojado en Hugging Face que, por su nombre y por la informacion disponible, no constituye una ficha de modelo de IA: no declara pipeline, no declara licencia, no declara idiomas y no incluye tag de tarea (solo aparece la etiqueta generica `region:us`). Con 0 descargas y 1 like, el repositorio no presenta ningun artefacto verificable de pesos, configuracion, tokenizador ni documentacion tecnica asociada.
 
 La busqueda web realizada no devuelve ningun resultado relacionado con el repositorio ni con un modelo de lenguaje. Los unicos enlaces recuperados apuntan al juego de navegador Uptasia, de upjers, y a su sistema de login, sin ninguna conexion con el identificador consultado. Esto indica que no existe cobertura editorial, paper, blog tecnico ni repositorio de codigo que permita describir el contenido.
 
@@ -38,9 +38,9 @@ El nombre del repositorio, "BlueStack-5-setup-latest-version", sugiere un instal
 ## Casos de uso
 
 - No disponible. Al no existir informacion tecnica verificable, no es posible proponer casos de uso realistas para un modelo de IA.
-- Evaluacion de riesgo de repositorios en HuggingFace: este identificador puede utilizarse como ejemplo de repositorio sin artefactos de modelo, util para calibrar filtros de calidad y deteccion de spam en hubs publicos.
+- Evaluacion de riesgo de repositorios en Hugging Face: este identificador puede utilizarse como ejemplo de repositorio sin artefactos de modelo, util para calibrar filtros de calidad y deteccion de spam en hubs publicos.
 - Auditoria de cadenas de suministro de software: si el repositorio distribuye un instalador, encaja en un flujo de revision de binarios no relacionados con IA antes de cualquier despliegue interno.
-- Formacion en higiene de datos: sirve como caso ilustrativo de por que no debe citarse un repositorio de HuggingFace como fuente tecnica sin verificar pipeline, licencia y pesos.
+- Formacion en higiene de datos: sirve como caso ilustrativo de por que no debe citarse un repositorio de Hugging Face como fuente tecnica sin verificar pipeline, licencia y pesos.
 - Monitorizacion de hubs: util para equipos que rastrean repositorios con 0 descargas y metadatos vacios como indicador de contenido de baja calidad.
 - Analisis de resultados de busqueda: ejemplifica como una busqueda web puede devolver resultados completamente irrelevantes (en este caso, un juego de navegador) cuando no existe cobertura real del identificador.
 
@@ -72,7 +72,7 @@ No disponible. No se ha identificado ningun modelo comparable porque no se ha co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/scientist-272/BlueStack-5-setup-latest-version
+- Repositorio en Hugging Face: https://huggingface.co/scientist-272/BlueStack-5-setup-latest-version
 - Resultados de busqueda web recuperados (sin relacion con el repositorio ni con un modelo de IA):
   - https://de.upjers.com/uptasia
   - https://uptasia.upjers.com/de/suchspiele/

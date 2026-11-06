@@ -18,7 +18,7 @@ La relevancia práctica es doble: por un lado demuestra que es posible llevar un
 | Longitud de contexto | no disponible en la información proporcionada |
 | Tipos de cuantización | GGUF Q3_K (variante publicada `-v3-Q3K`); el layout admite Q3_K y Q4_K por alineación con super-bloques de 256 elementos |
 | Idiomas soportados | no disponible |
-| Licencia | LFM 1.0 (`lfm1.0`, marcada como `other` en HuggingFace) |
+| Licencia | LFM 1.0 (`lfm1.0`, marcada como `other` en Hugging Face) |
 | Formato de pesos | GGUF (`llama.cpp`), compatible con PocketPal AI, LLM Farm, Enclave, Ollama y LM Studio |
 
 ## Arquitectura y entrenamiento
@@ -78,7 +78,7 @@ Los únicos datos disponibles son los reportados por el autor en la model card, 
 
 | Modelo | Parámetros totales / activos | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| UniverseNet-LFM2.5-24B-Pocket-8.6B (este) | 8,65B / 1,48B | no disponible | LFM 1.0 | GGUF en HuggingFace | Destilado de LFM2.5-24B-A2B; PPL 71,097 en WikiText-2 |
+| UniverseNet-LFM2.5-24B-Pocket-8.6B (este) | 8,65B / 1,48B | no disponible | LFM 1.0 | GGUF en Hugging Face | Destilado de LFM2.5-24B-A2B; PPL 71,097 en WikiText-2 |
 | LiquidAI/LFM2.5-24B-A2B (profesor) | 24,16B / 2,34B | no disponible | LFM 1.0 | Pesos originales y GGUF Q4_K_M | PPL 31,683 en WikiText-2; 3,64x más grande |
 | Otros MoE móviles de tamaño similar | no disponible | no disponible | no disponible | no disponible | No se identifican alternativas comparables en la información proporcionada |
 
@@ -99,7 +99,7 @@ La comparación directa más relevante es con el propio profesor: el destilado p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wasnaga/UniverseNet-LFM2.5-24B-Pocket-GGUF
+- Repositorio Hugging Face: https://huggingface.co/wasnaga/UniverseNet-LFM2.5-24B-Pocket-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
 - Licencia LFM 1.0: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/main/LICENSE
 - PocketPal AI (App Store): no disponible como enlace directo en la información proporcionada

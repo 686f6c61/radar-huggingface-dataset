@@ -4,7 +4,7 @@
 
 `conjure3d-mac-dinov3-gguf` es una conversión a formato GGUF del modelo de visión `facebook/dinov3-vitl16-pretrain-lvd1689m`, publicada por el usuario memgrafter bajo el identificador `memgrafter/conjure3d-mac-dinov3-gguf`. No se trata de un modelo de lenguaje generativo, sino de un codificador de imágenes (image encoder) de la familia DINOv3, empaquetado específicamente para su ejecución en Apple Silicon mediante el runtime GGUF. El repositorio tiene un tamaño de 0,6 GB y un total de 303.151.104 parámetros según los metadatos de safetensors del modelo base.
 
-El interés de esta ficha radica en que DINOv3 es un modelo de representación visual auto-supervisado de Meta, y esta variante GGUF facilita su despliegue en hardware de Apple sin necesidad de PyTorch completo. Sin embargo, la información pública disponible sobre esta conversión concreta es muy limitada: cero descargas, cero likes, sin pipeline declarado, sin idiomas especificados y sin resultados de benchmarks propios. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+El interés de esta ficha radica en que DINOv3 es un modelo de representación visual auto-supervisado de Meta, y esta variante GGUF facilita su despliegue en hardware de Apple sin necesidad de PyTorch completo. Sin embargo, la información pública disponible sobre esta conversión concreta es muy limitada: cero descargas, cero likes, sin pipeline declarado, sin idiomas especificados y sin resultados de benchmarks propios. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 La licencia es `dinov3-license`, una licencia específica de Meta para la familia DINOv3 que impone restricciones adicionales al uso comercial. Cualquier evaluación de producción debe revisar sus términos antes de integrar el modelo.
 
@@ -79,7 +79,7 @@ La comparación con DINOv2-large y CLIP ViT-L/14 es orientativa por tamaño y ca
 ## Limitaciones y advertencias
 
 - No es un modelo generativo: no produce texto, código ni respuestas; solo representaciones visuales. No debe evaluarse con benchmarks de lenguaje.
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos, lo que puede bloquear pipelines automatizados.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos, lo que puede bloquear pipelines automatizados.
 - Licencia `dinov3-license`: impone condiciones específicas de Meta para DINOv3; es imprescindible revisar los términos de uso comercial antes de integrarlo en producción. No es una licencia permisiva tipo Apache o MIT.
 - Repositorio con cero descargas y cero likes: no hay evidencia de comunidad, validación ni mantenimiento. La conversión GGUF no está auditada públicamente.
 - Sin información sobre los niveles de cuantización aplicados: la pérdida de precisión respecto al modelo base es desconocida.
@@ -90,7 +90,7 @@ La comparación con DINOv2-large y CLIP ViT-L/14 es orientativa por tamaño y ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/memgrafter/conjure3d-mac-dinov3-gguf
+- Repositorio Hugging Face: https://huggingface.co/memgrafter/conjure3d-mac-dinov3-gguf
 - Modelo base: https://huggingface.co/facebook/dinov3-vitl16-pretrain-lvd1689m
 - Repositorio oficial de DINOv3 (Meta): no disponible en la información proporcionada
 - Paper de DINOv3: no disponible en la información proporcionada

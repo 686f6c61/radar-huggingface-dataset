@@ -71,7 +71,7 @@ No se han publicado en la información disponible resultados adicionales (curvas
 - Cabe en cualquier GPU consumer, incluida una GTX 1050 o una iGPU moderna; también en Raspberry Pi y en CPU de un solo núcleo.
 - Opciones de despliegue: PyTorch nativo (recomendado, es el único soportado oficialmente); exportación manual a TorchScript u ONNX si se necesita servir el modelo fuera de Python. No es compatible con vLLM, llama.cpp, Ollama ni TGI, que están orientados a modelos de lenguaje.
 - Latencia y throughput: no disponibles como medición publicada. Por la topología (tres multiplicaciones matriciales de 8×128, 128×128 y 128×4), la latencia esperada por paso es del orden de microsegundos en CPU, pero el cuello de botella real en un bucle completo será el `step` del simulador de Box2D, no la red.
-- Almacenamiento: el repositorio completo ocupa 0,0 GB según HuggingFace, es decir, pocos cientos de kilobytes.
+- Almacenamiento: el repositorio completo ocupa 0,0 GB según Hugging Face, es decir, pocos cientos de kilobytes.
 
 ## Comparativa con modelos similares
 
@@ -79,10 +79,10 @@ No se dispone de métricas publicadas de los proyectos comunitarios comparables,
 
 | Modelo | Tipo | Parámetros | Entorno | Resultado declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-nadanayo-v1-lunarlander | DQN con MLP 8→128→128→4 | 18.180 (derivado) | LunarLander-v3 | 215,6 de recompensa media (no verificado) | no disponible | HuggingFace, `model.pt` |
+| connectailab-rl-nadanayo-v1-lunarlander | DQN con MLP 8→128→128→4 | 18.180 (derivado) | LunarLander-v3 | 215,6 de recompensa media (no verificado) | no disponible | Hugging Face, `model.pt` |
 | khushdeepAnand/Lunar-Lander-Ai | RL profundo sobre Lunar Lander | no disponible | Lunar Lander | no disponible | no disponible | GitHub, con logs y checkpoints |
 | gokulan006/Lunar-Lander-RL-Model | DQN y otras técnicas de RL profundo | no disponible | Lunar Lander (OpenAI Gym) | no disponible | no disponible | GitHub |
-| NADANAYO/connectailab-rl-nadanayo-v1 | LLM Qwen3.5 + LoRA con GRPO para decisión | no disponible | Tarea de decisión con opciones textuales | no disponible | apache-2.0 | HuggingFace |
+| NADANAYO/connectailab-rl-nadanayo-v1 | LLM Qwen3.5 + LoRA con GRPO para decisión | no disponible | Tarea de decisión con opciones textuales | no disponible | apache-2.0 | Hugging Face |
 
 Como referencia contextual, el propio entorno LunarLander-v3 define en 200 la recompensa media a partir de la cual se considera resuelto, de modo que el valor declarado de 215,6 se sitúa ligeramente por encima de ese umbral. No se dispone de comparaciones con PPO, A2C o SAC bajo un protocolo común en la información proporcionada.
 
@@ -101,7 +101,7 @@ Como referencia contextual, el propio entorno LunarLander-v3 define en 200 la re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NADANAYO/connectailab-rl-nadanayo-v1-lunarlander
+- Modelo en Hugging Face: https://huggingface.co/NADANAYO/connectailab-rl-nadanayo-v1-lunarlander
 - Modelo hermano (LLM con GRPO): https://huggingface.co/NADANAYO/connectailab-rl-nadanayo-v1
 - Perfil del autor: https://huggingface.co/NADANAYO/models
 - Repositorio CONNECT AI LAB: https://github.com/wonseokjung/connect-tycoon

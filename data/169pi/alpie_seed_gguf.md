@@ -92,7 +92,7 @@ La model card solo compara con "Qwen" de forma generica, sin indicar version, ta
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/169Pi/Alpie_Seed_GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/169Pi/Alpie_Seed_GGUF
 - Modelo base: https://huggingface.co/169Pi/Alpie_seed
 - Ollama: https://ollama.com/169pi/
 - GitHub del autor: https://github.com/169Pi

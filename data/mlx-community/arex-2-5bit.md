@@ -95,9 +95,9 @@ El autor advierte que se trata de una prueba pequena en un solo Mac, no de un be
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mlx-community/AREX-2-5bit | 27,36 mil millones | 32.000 tokens (probado) | Multimodal texto+imagen, razonamiento y agentes, formato MLX | Apache 2.0 | HuggingFace (mlx-community) |
-| mlx-community/AREX-2-6bit | 27,36 mil millones (heredado) | 32.000 tokens (probado) | Igual, mayor fidelidad (97,6 %) y menor velocidad (10 tokens/s) | Apache 2.0 | HuggingFace (mlx-community) |
-| mlx-community/AREX-2-8bit | 27,36 mil millones (heredado) | 32.000 tokens (probado) | Igual, maxima fidelidad (99,1 %) y menor velocidad (8 tokens/s) | Apache 2.0 | HuggingFace (mlx-community) |
+| mlx-community/AREX-2-5bit | 27,36 mil millones | 32.000 tokens (probado) | Multimodal texto+imagen, razonamiento y agentes, formato MLX | Apache 2.0 | Hugging Face (mlx-community) |
+| mlx-community/AREX-2-6bit | 27,36 mil millones (heredado) | 32.000 tokens (probado) | Igual, mayor fidelidad (97,6 %) y menor velocidad (10 tokens/s) | Apache 2.0 | Hugging Face (mlx-community) |
+| mlx-community/AREX-2-8bit | 27,36 mil millones (heredado) | 32.000 tokens (probado) | Igual, maxima fidelidad (99,1 %) y menor velocidad (8 tokens/s) | Apache 2.0 | Hugging Face (mlx-community) |
 | Qwen3.8-27B | 27 mil millones (aproximado, segun referencia del autor) | no disponible | Modelo base sin los ajustes de AREX-2 | no disponible en la informacion proporcionada | Referenciado como base de AREX-2 |
 
 No se dispone en la informacion proporcionada de datos de otros modelos comparables de la misma categoria fuera de la familia AREX-2 y su base Qwen3.8-27B.
@@ -118,7 +118,7 @@ No se dispone en la informacion proporcionada de datos de otros modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/AREX-2-5bit
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/AREX-2-5bit
 - Modelo base: https://huggingface.co/BAAI/AREX-2
 - Cuantizacion de 6 bits: https://huggingface.co/mlx-community/AREX-2-6bit
 - Cuantizacion de 8 bits: https://huggingface.co/mlx-community/AREX-2-8bit

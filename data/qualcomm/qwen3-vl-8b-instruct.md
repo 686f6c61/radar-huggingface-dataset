@@ -70,8 +70,8 @@ No se dispone de datos comparativos con otros modelos VLM de 8B en la informacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qualcomm/Qwen3-VL-8B-Instruct
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/qualcomm/Qwen3-VL-8B-Instruct
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Pagina de Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_vl_8b_instruct
 - Repositorio GitHub de Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/qwen3_vl_8b_instruct
 - Catalogo Zentree-Qualcomm: http://qualcom-qpc-models.s3-website-us-east-1.amazonaws.com/QPC/1.21.6/Qwen3-VL-8B-Instruct/

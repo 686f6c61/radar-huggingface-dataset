@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YJZENG/search-dpos-r0.05-qwen3-4b es un checkpoint de 4,41 mil millones de parametros publicado en HuggingFace por el usuario YJZENG, construido sobre la arquitectura de Qwen3-4B. El nombre del repositorio sugiere un ajuste fino orientado a tareas de busqueda ("search") mediante optimizacion por preferencias (DPO), con el sufijo "r0.05" apuntando probablemente a un hiperparametro de entrenamiento, aunque el autor no ha publicado model card, paper ni configuracion de entrenamiento que lo confirmen.
+YJZENG/search-dpos-r0.05-qwen3-4b es un checkpoint de 4,41 mil millones de parametros publicado en Hugging Face por el usuario YJZENG, construido sobre la arquitectura de Qwen3-4B. El nombre del repositorio sugiere un ajuste fino orientado a tareas de busqueda ("search") mediante optimizacion por preferencias (DPO), con el sufijo "r0.05" apuntando probablemente a un hiperparametro de entrenamiento, aunque el autor no ha publicado model card, paper ni configuracion de entrenamiento que lo confirmen.
 
 Se trata de un modelo denso, no MoE, con pesos en safetensors y un repositorio de 8,8 GB, lo que corresponde a un checkpoint en bf16/fp16. No declara licencia, idiomas, pipeline ni tipos de cuantizacion, y cuenta con 11 descargas y 0 likes en el momento de redactar esta ficha, por lo que debe considerarse un artefacto de investigacion sin validacion comunitaria.
 
@@ -78,11 +78,11 @@ La comparacion se establece contra modelos densos de la misma franja de tamano (
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| YJZENG/search-dpos-r0.05-qwen3-4b | 4,41 B | No disponible (base: 32.768 / 131.072 con YaRN) | No declarada | HuggingFace, 11 descargas, sin evaluaciones |
-| Qwen/Qwen3-4B | 4,02 B | 32.768 nativos / 131.072 con YaRN | Apache 2.0 | HuggingFace y GitHub oficiales, ampliamente desplegado |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 131.072 | Licencia comunitaria de Llama 3.2 | HuggingFace, requiere aceptar terminos |
-| google/gemma-3-4b-it | Aproximadamente 4 B | 131.072 | Terminos de uso de Gemma | HuggingFace, requiere aceptar terminos |
-| microsoft/Phi-4-mini-instruct | 3,8 B | 131.072 | MIT | HuggingFace, uso comercial sin restricciones adicionales |
+| YJZENG/search-dpos-r0.05-qwen3-4b | 4,41 B | No disponible (base: 32.768 / 131.072 con YaRN) | No declarada | Hugging Face, 11 descargas, sin evaluaciones |
+| Qwen/Qwen3-4B | 4,02 B | 32.768 nativos / 131.072 con YaRN | Apache 2.0 | Hugging Face y GitHub oficiales, ampliamente desplegado |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 131.072 | Licencia comunitaria de Llama 3.2 | Hugging Face, requiere aceptar terminos |
+| google/gemma-3-4b-it | Aproximadamente 4 B | 131.072 | Terminos de uso de Gemma | Hugging Face, requiere aceptar terminos |
+| microsoft/Phi-4-mini-instruct | 3,8 B | 131.072 | MIT | Hugging Face, uso comercial sin restricciones adicionales |
 
 En terminos de rendimiento no procede comparar: el checkpoint analizado carece de resultados publicados, mientras que los otros cuatro cuentan con evaluaciones en sus informes tecnicos. La ventaja competitiva de este repositorio, si se confirma su especializacion en busqueda, seria la de un modelo pequeno y cuantizable con comportamiento ajustado a un dominio concreto; su desventaja es la ausencia total de documentacion, licencia y validacion.
 
@@ -100,9 +100,9 @@ En terminos de rendimiento no procede comparar: el checkpoint analizado carece d
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/YJZENG/search-dpos-r0.05-qwen3-4b
+- Repositorio Hugging Face del modelo: https://huggingface.co/YJZENG/search-dpos-r0.05-qwen3-4b
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Informe tecnico de Qwen3: https://arxiv.org/html/2505.09388v1
 - Repositorio oficial de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
-- Perfil de la organizacion Qwen en HuggingFace: https://huggingface.co/Qwen/models
+- Perfil de la organizacion Qwen en Hugging Face: https://huggingface.co/Qwen/models
 - Portal oficial de Qwen: https://qwen.ai/home

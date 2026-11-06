@@ -88,7 +88,7 @@ La model card menciona TranslateGemma y HY-MT2 como modelos de traducción espec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pfnet/plamo-3-translate-0.8b
+- Modelo en Hugging Face: https://huggingface.co/pfnet/plamo-3-translate-0.8b
 - Blog técnico: https://www.preferred.jp/en/blog/tech/plamo-3-translate-weight-release
 - Licencia PLaMo Community: https://plamo.preferredai.jp/info/plamo-community-license-en
 - README en japonés: https://huggingface.co/pfnet/plamo-3-translate-0.8b/blob/main/README_ja.md

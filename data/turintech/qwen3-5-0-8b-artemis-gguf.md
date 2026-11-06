@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks estándar como MMLU o HumanEval en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/turintech/Qwen3.5-0.8B-Artemis-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/turintech/Qwen3.5-0.8B-Artemis-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE
 - Sección de resultados de la model card: https://huggingface.co/turintech/Qwen3.5-0.8B-Artemis-GGUF#results

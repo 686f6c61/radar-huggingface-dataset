@@ -77,7 +77,7 @@ La comparativa se centra en el modelo original y en alternativas populares de TT
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta versión: https://huggingface.co/Rin247/Qwen3-TTS-12Hz-1.7B-Base-FP4
+- Repositorio Hugging Face de esta versión: https://huggingface.co/Rin247/Qwen3-TTS-12Hz-1.7B-Base-FP4
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Repositorio GitHub oficial de Qwen3-TTS: https://github.com/QwenLM/Qwen3-TTS
 - Conversión ONNX del modelo base: https://huggingface.co/romara-labs/Qwen3-TTS-12Hz-1.7B-Base-ONNX

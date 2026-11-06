@@ -21,7 +21,7 @@ La relevancia actual de esta ficha radica en que ofrece una alternativa eficient
 | Licencia | Apache-2.0 |
 | Formato de pesos | ONNX (model.onnx + model.onnx.data) |
 | Tamaño del repositorio | 3,0 GB (multilingual: 1,3 GB; english: 1,7 GB) |
-| Fecha de creación | 2026-09-26 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-09-26 (según metadatos de Hugging Face) |
 | Autor de la exportación | distinctinteractive |
 | Modelo base | convaiinnovations/laya |
 
@@ -82,10 +82,10 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace (repositorio ONNX): https://huggingface.co/distinctinteractive/laya-onnx
+- Hugging Face (repositorio ONNX): https://huggingface.co/distinctinteractive/laya-onnx
 - Modelo base (convaiinnovations/laya): https://huggingface.co/convaiinnovations/laya
 - Repositorio Layar (gema Ruby): https://github.com/jimmckerchar/layar
 - Script de exportación a ONNX: https://github.com/jimmckerchar/layar/blob/main/script/laya/export.py
 - Script de verificación de paridad: https://github.com/jimmckerchar/layar/blob/main/script/laya/parity.py
 - Port Ruby de la construcción de secuencia: https://github.com/jimmckerchar/layar/blob/main/lib/layar/laya.rb
-- Licencia y NOTICE: disponibles en el repositorio de HuggingFace.
+- Licencia y NOTICE: disponibles en el repositorio de Hugging Face.

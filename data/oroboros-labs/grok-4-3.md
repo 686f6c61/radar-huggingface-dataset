@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Oroburos-labs/grok-4.3 es un modelo publicado en HuggingFace por el usuario oroboros-labs, distribuido en formato GGUF y etiquetado como conversacional ("conversational") y compatible con endpoints ("endpoints_compatible"). El repositorio declara un total de 8.190.735.360 parametros (aproximadamente 8,19 mil millones) y ocupa 5,0 GB, un tamano coherente con una cuantizacion de 4 bits, aunque no se especifica la cuantizacion exacta.
+Oroburos-labs/grok-4.3 es un modelo publicado en Hugging Face por el usuario oroboros-labs, distribuido en formato GGUF y etiquetado como conversacional ("conversational") y compatible con endpoints ("endpoints_compatible"). El repositorio declara un total de 8.190.735.360 parametros (aproximadamente 8,19 mil millones) y ocupa 5,0 GB, un tamano coherente con una cuantizacion de 4 bits, aunque no se especifica la cuantizacion exacta.
 
 El nombre comercial "grok-4.3" no corresponde a un lanzamiento oficial de xAI: se trata de una publicacion de un autor independiente (oroboros-labs) que no aporta documentacion sobre arquitectura, datos de entrenamiento ni procedencia de los pesos. La informacion publica disponible es minima: solo se conocen los tags, el recuento de parametros, el tamano del repositorio y las fechas de creacion (2026-07-07) y ultima actualizacion (2026-10-10).
 
@@ -89,6 +89,6 @@ La comparativa de rendimiento, idiomas y calidad no esta disponible para grok-4.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oroboros-labs/grok-4.3
+- Modelo en Hugging Face: https://huggingface.co/oroboros-labs/grok-4.3
 
 Nota: las busquedas web realizadas no han devuelto ningun resultado relacionado con este modelo; los resultados obtenidos correspondian al simbolo del ouroboros, a Oroboros Instruments y a un personaje de Honkai: Star Rail, y no guardan relacion con el repositorio.

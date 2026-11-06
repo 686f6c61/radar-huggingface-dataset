@@ -107,7 +107,7 @@ Como referencia interna sí puede compararse el propio modelo consigo mismo en d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/XORTRON-RICO-v3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/XORTRON-RICO-v3-GGUF
 - Modelo base: https://huggingface.co/darkc0de/XORTRON-RICO-v3
 - Página de descargas del cuantizador: https://hf.tst.eu/model#XORTRON-RICO-v3-GGUF
 - Peticiones de modelos al autor: https://huggingface.co/mradermacher/model_requests

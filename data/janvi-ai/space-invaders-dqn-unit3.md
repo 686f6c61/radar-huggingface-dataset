@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`janvi-ai/space-invaders-dqn-unit3` es un artefacto publicado en HuggingFace por el usuario `janvi-ai` bajo licencia MIT. Por el identificador del repositorio y la ausencia de cualquier descripcion en la model card, se trata con toda probabilidad de un agente entrenado con Deep Q-Network (DQN) para el entorno de Atari `SpaceInvaders`, correspondiente a la "unidad 3" de algun curso o asignatura de aprendizaje por refuerzo. No es un modelo de lenguaje: no procesa ni genera texto, sino que mapea observaciones del entorno (frames del juego) a acciones discretas.
+`janvi-ai/space-invaders-dqn-unit3` es un artefacto publicado en Hugging Face por el usuario `janvi-ai` bajo licencia MIT. Por el identificador del repositorio y la ausencia de cualquier descripcion en la model card, se trata con toda probabilidad de un agente entrenado con Deep Q-Network (DQN) para el entorno de Atari `SpaceInvaders`, correspondiente a la "unidad 3" de algun curso o asignatura de aprendizaje por refuerzo. No es un modelo de lenguaje: no procesa ni genera texto, sino que mapea observaciones del entorno (frames del juego) a acciones discretas.
 
 La informacion publicada es minima: la model card solo contiene la linea `license: mit`, sin descripcion, sin hiperparametros, sin curvas de aprendizaje ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no declara pipeline, idiomas ni dataset de entrenamiento. Cualquier uso en produccion requeriria inspeccionar directamente los ficheros de pesos y el codigo asociado, que no se detallan en la informacion disponible.
 
@@ -75,5 +75,5 @@ No disponible. No se han identificado en la informacion proporcionada otros chec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/janvi-ai/space-invaders-dqn-unit3
+- Repositorio en Hugging Face: https://huggingface.co/janvi-ai/space-invaders-dqn-unit3
 - No se han encontrado en la informacion proporcionada otros enlaces (papers, blogs, repos, demos).

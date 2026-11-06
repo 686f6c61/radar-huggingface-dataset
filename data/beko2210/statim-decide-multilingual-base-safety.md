@@ -22,7 +22,7 @@ Su relevancia es doble. Primero, por el salto declarado en la tarea de seguridad
 | Modelo base | Beko2210/statim-decide-multilingual-base 0.7.0 (relación: adapter) |
 | Versión de runtime requerida | Statim 0.8.0 o superior (verificado con 0.8.3); Python SDK 0.8.3 o superior |
 | Pipeline declarado | zero-shot-classification |
-| Fecha de publicación | 2026-09-29 según metadatos de HuggingFace |
+| Fecha de publicación | 2026-09-29 según metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 La información disponible describe un adaptador LoRA, no una arquitectura completa. El adaptador se aplica sobre Beko2210/statim-decide-multilingual-base 0.7.0, un modelo de decisión del motor Statim que responde preguntas tipadas (por ejemplo, tipo `noul` con instrucciones) sobre un estado textual. La model card no detalla la arquitectura interna del modelo base (transformer, número de capas, dimensionalidad ni ventana de contexto), por lo que esos datos figuran como no disponibles.
@@ -83,10 +83,10 @@ Notas del autor: la regla de promoción exige que la familia de categorías gane
 
 | Modelo | Parámetros | Contexto | Rendimiento (safety en) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| statim-decide-multilingual-base-safety (este adaptador) | 3.379.200 (adaptador) | no disponible | 0.8059 (f32 fusionado) / 0.8111 (q8_0 runtime LoRA) | statim-weights (other) | HuggingFace, GGUF y safetensors |
-| statim-decide-multilingual-base 0.7.0 (sin adaptador) | no disponible | no disponible | 0.7081 | no disponible | HuggingFace |
+| statim-decide-multilingual-base-safety (este adaptador) | 3.379.200 (adaptador) | no disponible | 0.8059 (f32 fusionado) / 0.8111 (q8_0 runtime LoRA) | statim-weights (other) | Hugging Face, GGUF y safetensors |
+| statim-decide-multilingual-base 0.7.0 (sin adaptador) | no disponible | no disponible | 0.7081 | no disponible | Hugging Face |
 | Qwen3-8B (referencia citada por el autor) | ~8.000 millones | no disponible | medido solo en los ítems del primer muestreo; no comparable con los datos frescos publicados | no disponible | pública |
-| statim-decide-en-large | no disponible | no disponible | no disponible | no disponible | HuggingFace (citado en las releases del proyecto) |
+| statim-decide-en-large | no disponible | no disponible | no disponible | no disponible | Hugging Face (citado en las releases del proyecto) |
 
 ## Limitaciones y advertencias
 - Cobertura de idioma limitada: solo inglés declarado y evaluado; el resto de idiomas presentes en los datos de entrenamiento no cuentan con métricas publicadas.
@@ -101,13 +101,13 @@ Notas del autor: la regla de promoción exige que la familia de categorías gane
 - No se documentan límites de contexto, coste de latencia ni comportamiento en textos largos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Beko2210/statim-decide-multilingual-base-safety
+- Modelo en Hugging Face: https://huggingface.co/Beko2210/statim-decide-multilingual-base-safety
 - Modelo base: https://huggingface.co/Beko2210/statim-decide-multilingual-base
 - Licencia del modelo: https://huggingface.co/Beko2210/statim-decide-multilingual-base-safety/blob/main/LICENSE-MODEL.md
 - Repositorio del motor Statim: https://github.com/BEKO2210/statim
 - Releases de Statim: https://github.com/BEKO2210/statim/releases
 - Documentación de adaptadores (ADAPTERS.md): https://github.com/BEKO2210/statim/blob/main/docs/ADAPTERS.md
 - Líneas base de evaluación (BASELINES.md): https://github.com/BEKO2210/statim/blob/main/docs/BASELINES.md
-- Perfil del autor en HuggingFace: https://huggingface.co/Beko2210
+- Perfil del autor en Hugging Face: https://huggingface.co/Beko2210
 - Sitio del autor: https://beko2210.github.io/
 - Perfil de GitHub del autor: https://github.com/BEKO2210/BEKO2210

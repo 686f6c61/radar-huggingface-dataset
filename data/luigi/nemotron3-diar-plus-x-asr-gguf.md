@@ -105,7 +105,7 @@ No se dispone de parámetros, contexto ni rendimiento de terceros comparables pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Luigi/nemotron3-diar-plus-x-asr-gguf
+- Modelo en Hugging Face: https://huggingface.co/Luigi/nemotron3-diar-plus-x-asr-gguf
 - Proyecto anfitrion nemo-x-asr-diarizer: https://github.com/vieenrose/nemo-x-asr-diarizer
 - Script de fusion de GGUF: https://github.com/vieenrose/nemo-x-asr-diarizer.cpp/blob/autoresearch/composite-phone-rtf-20260924/tools/merge_gguf.py
 - Modelo base de diarizacion (pesos GGUF): https://huggingface.co/audio-cpp/Nemotron-3-Diarization-GGUF

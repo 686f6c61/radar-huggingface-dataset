@@ -88,8 +88,8 @@ No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Tipo | Base | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `ceselder/deepseek-v4.1-flash-olens-qwen-reader` | Lente oráculo cross-model (LoRA + mapas afines) | Qwen3.6-27B | Adaptador 1,7 GiB + 105M mapas | No disponible | Apache-2.0 | HuggingFace |
-| `ceselder/deepseek-v4.1-flash-olens-lens` | Lente oráculo nativa de DeepSeek-V4.1-Flash | DeepSeek-V4.1-Flash | No disponible | No disponible | No disponible | HuggingFace |
+| `ceselder/deepseek-v4.1-flash-olens-qwen-reader` | Lente oráculo cross-model (LoRA + mapas afines) | Qwen3.6-27B | Adaptador 1,7 GiB + 105M mapas | No disponible | Apache-2.0 | Hugging Face |
+| `ceselder/deepseek-v4.1-flash-olens-lens` | Lente oráculo nativa de DeepSeek-V4.1-Flash | DeepSeek-V4.1-Flash | No disponible | No disponible | No disponible | Hugging Face |
 | Control K=1 media (incluido en el repo) | Variante con un único mapa sobre la media de flujos | Qwen3.6-27B | Adaptador + 1 mapa | No disponible | Apache-2.0 | Incluido en el mismo repo |
 | Lentes oráculo de otros modelos | Herramientas de interpretabilidad comparables | Varios | No disponible | No disponible | No disponible | No disponible |
 
@@ -110,7 +110,7 @@ No se dispone de datos de benchmarks de modelos comparables de la misma categor�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ceselder/deepseek-v4.1-flash-olens-qwen-reader
+- Hugging Face: https://huggingface.co/ceselder/deepseek-v4.1-flash-olens-qwen-reader
 - Lente nativa de DeepSeek-V4.1-Flash: https://huggingface.co/ceselder/deepseek-v4.1-flash-olens-lens
 - Colección DeepSeek V4.1 Flash olens: https://huggingface.co/collections/ceselder/deepseek-v41-flash-olens-6adffd27b920a405a2025fc6
 - Informe del worker (referenciado en la model card): http://5.78.192.0/reports/view/dsv41-xq/report.html

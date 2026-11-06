@@ -4,7 +4,7 @@
 
 Este repositorio de Hugging Face, identificado como `bcfischer/paper_026173036_document_ai`, no contiene un modelo de inteligencia artificial entrenado, sino un documento académico en formato LaTeX (estilo ICML) sobre el tema de *document AI*. El autor, bcfischer, ha publicado el texto completo en un archivo Markdown dentro del repositorio. El documento sigue una estructura típica de paper científico: introducción, problema, solución, validación y trabajo futuro.
 
-A pesar de estar alojado en HuggingFace, no hay ningún peso, arquitectura o pipeline de modelo disponible. Las etiquetas (`compact`, `document-ai`, `enthusiastic`, `latex-icml`, etc.) describen las características del propio paper, no de un sistema de IA. Por tanto, este repositorio debe interpretarse como una publicación académica, no como un recurso para inferencia o despliegue.
+A pesar de estar alojado en Hugging Face, no hay ningún peso, arquitectura o pipeline de modelo disponible. Las etiquetas (`compact`, `document-ai`, `enthusiastic`, `latex-icml`, etc.) describen las características del propio paper, no de un sistema de IA. Por tanto, este repositorio debe interpretarse como una publicación académica, no como un recurso para inferencia o despliegue.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ No aplica. Al no ser un modelo de IA, no se requiere hardware específico para i
 
 ## Comparativa con modelos similares
 
-No disponible. No existen modelos comparables porque este repositorio no contiene un modelo de IA. Los repositorios de papers académicos en HuggingFace son poco comunes y no se pueden comparar con modelos de lenguaje como Llama o Mistral.
+No disponible. No existen modelos comparables porque este repositorio no contiene un modelo de IA. Los repositorios de papers académicos en Hugging Face son poco comunes y no se pueden comparar con modelos de lenguaje como Llama o Mistral.
 
 ## Limitaciones y advertencias
 
@@ -62,5 +62,5 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bcfischer/paper_026173036_document_ai
-- Blog de HuggingFace sobre Document AI: https://huggingface.co/blog/document-ai (relacionado con el tema del paper)
+- Repositorio en Hugging Face: https://huggingface.co/bcfischer/paper_026173036_document_ai
+- Blog de Hugging Face sobre Document AI: https://huggingface.co/blog/document-ai (relacionado con el tema del paper)

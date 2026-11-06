@@ -68,8 +68,8 @@ El autor reporta como resultado principal que EfficientNet-B1 alcanzó la mayor 
 
 | Modelo | Parametros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EfficientNet-B0 (este repo) | 4,84 M | 224 × 224 | 4 clases OCT | MIT | HuggingFace |
-| EfficientNet-B7 (este repo) | 65,54 M | 224 × 224 | 4 clases OCT | MIT | HuggingFace |
+| EfficientNet-B0 (este repo) | 4,84 M | 224 × 224 | 4 clases OCT | MIT | Hugging Face |
+| EfficientNet-B7 (este repo) | 65,54 M | 224 × 224 | 4 clases OCT | MIT | Hugging Face |
 | EfficientNet ImageNet original | 5,3 M (B0) | 224 × 224 | 1000 clases ImageNet | Apache 2.0 (referencia) | Keras / TensorFlow |
 | Otros clasificadores OCT | no disponible | no disponible | clasificación OCT | no disponible | no disponible |
 
@@ -89,7 +89,7 @@ La comparación con alternativas específicas de clasificación OCT no está dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shkelqim2026/EfficientNet
+- Hugging Face: https://huggingface.co/shkelqim2026/EfficientNet
 - Estudio de referencia: *Within-Family EfficientNet Scaling under Fixed-Resolution Transfer Learning for Spectral-Domain Optical Coherence Tomography Retinal Disease Classification* (Shkëlqim Sherifi, University of Tetova); enlace directo no disponible.
 - Dataset Kermany SD-OCT: no se proporciona enlace en la información disponible.
 - Paper original de EfficientNet: no se proporciona enlace en la información disponible.

@@ -18,14 +18,14 @@ La información disponible en la model card es escasa: se limita a la tabla de q
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS, f16; suplementos mmproj en Q8_0 y f16 |
 | Idiomas soportados | en (inglés) |
-| Licencia | modified-mit (etiquetada como "other" en HuggingFace) |
+| Licencia | modified-mit (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (multiparte) y safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
 No se dispone de información sobre la arquitectura interna del modelo en la documentación proporcionada. El repositorio es una cuantización estática del checkpoint moonshotai/Kimi-K2.7-Code, y la model card no incluye detalles sobre el tipo de transformer, mecanismos de atención, composición del dataset, número de tokens de entrenamiento ni si se aplicaron técnicas de alineación como RLHF o DPO.
 
-Los metadatos de cuantización indican el uso de `compressed-tensors` y `quantize_version: 2`, con `output_tensor_quantised: 1` y `convert_type: hf`, lo que sugiere un pipeline de conversión desde el formato HuggingFace original hacia GGUF mediante herramientas de cuantización estática. La presencia de ficheros mmproj (multi-modal projection) confirma que el modelo base admite entrada multimodal, presumiblemente imagen y texto, aunque no se detalla el codificador visual empleado.
+Los metadatos de cuantización indican el uso de `compressed-tensors` y `quantize_version: 2`, con `output_tensor_quantised: 1` y `convert_type: hf`, lo que sugiere un pipeline de conversión desde el formato Hugging Face original hacia GGUF mediante herramientas de cuantización estática. La presencia de ficheros mmproj (multi-modal projection) confirma que el modelo base admite entrada multimodal, presumiblemente imagen y texto, aunque no se detalla el codificador visual empleado.
 
 ## Capacidades
 
@@ -66,7 +66,7 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 - Discrepancia en el recuento de parámetros: el dato de safetensors (471.143.920 parámetros) es incompatible con el tamaño del repositorio (3590,8 GB) y con el tamaño de las quantizaciones (373 GB en Q2_K). Es probable que el recuento corresponda a un componente parcial del modelo; debe verificarse antes de planificar el despliegue.
 - Idiomas: el repo declara únicamente inglés, lo que limita su uso en castellano u otros idiomas sin evaluación adicional.
-- Licencia: etiquetada como "modified-mit" y "other" en HuggingFace; es necesario revisar los términos exactos del modelo base (Moonshot AI) antes de uso comercial, ya que la licencia del derivado puede heredar restricciones del original.
+- Licencia: etiquetada como "modified-mit" y "other" en Hugging Face; es necesario revisar los términos exactos del modelo base (Moonshot AI) antes de uso comercial, ya que la licencia del derivado puede heredar restricciones del original.
 - Riesgo de alucinación: inherente a los modelos generativos; no se han publicado evaluaciones específicas de fidelidad para este checkpoint.
 - Sesgos: no documentados en la información disponible.
 - Cuantizaciones agresivas: Q2_K y Q3_K_S/M pueden degradar notablemente la calidad respecto al modelo original; para producción se recomienda evaluar Q4_K_M o superiores, con el consiguiente aumento de requisitos de memoria.
@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Kimi-K2.7-Code-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Kimi-K2.7-Code-GGUF
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K2.7-Code
 - Quantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Kimi-K2.7-Code-i1-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#Kimi-K2.7-Code-GGUF

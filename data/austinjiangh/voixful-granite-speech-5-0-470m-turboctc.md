@@ -88,7 +88,7 @@ Nota: los datos de las alternativas provienen de conocimiento general del ecosis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AustinJiangH/voixful-granite-speech-5.0-470m-turboctc
-- Modelo base en HuggingFace: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc
+- Repositorio en Hugging Face: https://huggingface.co/AustinJiangH/voixful-granite-speech-5.0-470m-turboctc
+- Modelo base en Hugging Face: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc
 - Motor Voixful (GitHub): https://github.com/AustinJiangH/voixful
 - Aplicación PrivoVoice (GitHub): https://github.com/AustinJiangH/PrivoVoice

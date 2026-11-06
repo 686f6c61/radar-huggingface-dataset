@@ -1,7 +1,7 @@
 # masterofaudio2077/sana-manga-coloring
 
 ## Resumen
-Sana manga coloring es un modelo de colorización de páginas de manga en blanco y negro, publicado por el usuario masterofaudio2077 en HuggingFace. Se trata de un fine-tune del modelo de difusión Sana 600M (Efficient-Large-Model/Sana_600M_1024px_diffusers) orientado a la tarea image-to-image: recibe una página en escala de grises y devuelve una versión coloreada. Su rasgo diferencial es que permite dirigir el resultado mediante cinco controles discretos (mood, time_of_day, lighting, saturation y palette), cada uno de los cuales puede dejarse vacío (`<null>`) para que el modelo decida por sí mismo.
+Sana manga coloring es un modelo de colorización de páginas de manga en blanco y negro, publicado por el usuario masterofaudio2077 en Hugging Face. Se trata de un fine-tune del modelo de difusión Sana 600M (Efficient-Large-Model/Sana_600M_1024px_diffusers) orientado a la tarea image-to-image: recibe una página en escala de grises y devuelve una versión coloreada. Su rasgo diferencial es que permite dirigir el resultado mediante cinco controles discretos (mood, time_of_day, lighting, saturation y palette), cada uno de los cuales puede dejarse vacío (`<null>`) para que el modelo decida por sí mismo.
 
 El checkpoint es un ajuste fino de la fase "teacher" del modelo base, entrenado a 512 px durante 30.000 pasos sobre aproximadamente 60 GB de páginas de manga de diversos géneros. El repositorio ocupa 1,2 GB e incluye los pesos `ema_bf16.pt`, además de los módulos `data.py`, `model.py` y los ficheros `meta.json` y `params.json` necesarios para la inferencia. El uso no está mediado por la API de `diffusers`, sino por código propio del autor.
 
@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / resolucion | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| masterofaudio2077/sana-manga-coloring | 600 M (base) | 512 px en entrenamiento | Colorizacion de manga con controles discretos | No disponible | HuggingFace, descarga directa |
-| Efficient-Large-Model/Sana_600M_1024px_diffusers | 600 M | 1024 px | Texto a imagen general | No disponible en esta ficha (consultar el repositorio del modelo base) | HuggingFace, ampliamente utilizado |
+| masterofaudio2077/sana-manga-coloring | 600 M (base) | 512 px en entrenamiento | Colorizacion de manga con controles discretos | No disponible | Hugging Face, descarga directa |
+| Efficient-Large-Model/Sana_600M_1024px_diffusers | 600 M | 1024 px | Texto a imagen general | No disponible en esta ficha (consultar el repositorio del modelo base) | Hugging Face, ampliamente utilizado |
 | Otros colorizadores de manga basados en difusion o ControlNet | No disponible | No disponible | Colorizacion de manga | Variable segun autor | No disponible |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas en la informacion proporcionada.
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 - Mantenimiento incierto: no se documentan actualizaciones posteriores a la creacion del repositorio (16 de octubre de 2026).
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/masterofaudio2077/sana-manga-coloring
+- Modelo en Hugging Face: https://huggingface.co/masterofaudio2077/sana-manga-coloring
 - Modelo base Sana 600M: https://huggingface.co/Efficient-Large-Model/Sana_600M_1024px_diffusers
 - Repositorio oficial de Sana (referencia del modelo base): https://github.com/NVlabs/Sana
 - Articulo de Sana (referencia del modelo base): https://arxiv.org/abs/2410.10629

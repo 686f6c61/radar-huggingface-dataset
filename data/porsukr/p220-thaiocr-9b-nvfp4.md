@@ -76,10 +76,10 @@ En las 5 tareas de transcripción, el autor indica que P220 supera a GPT-6.1 Sol
 
 | Modelo | Parámetros | Contexto | ThaiOCRBench (13 tareas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| P220-ThaiOCR-9B-NVFP4 | ≈7B (6,99B) | no disponible (ejemplo a 32.768) | 0,674 (versión BF16) | Apache-2.0 | HuggingFace (BF16, FP8, W4A16, NVFP4, GGUF) |
-| P110-ThaiOCR-4B | ≈4B | no disponible | 0,572 | no disponible | HuggingFace |
-| Qwen3.6-35B-A3B | 35B (MoE, activos no disponibles) | no disponible | 0,589 | no disponible | HuggingFace |
-| Qwen3.5-9B (base) | ≈9B | no disponible | 0,462 | Apache-2.0 | HuggingFace |
+| P220-ThaiOCR-9B-NVFP4 | ≈7B (6,99B) | no disponible (ejemplo a 32.768) | 0,674 (versión BF16) | Apache-2.0 | Hugging Face (BF16, FP8, W4A16, NVFP4, GGUF) |
+| P110-ThaiOCR-4B | ≈4B | no disponible | 0,572 | no disponible | Hugging Face |
+| Qwen3.6-35B-A3B | 35B (MoE, activos no disponibles) | no disponible | 0,589 | no disponible | Hugging Face |
+| Qwen3.5-9B (base) | ≈9B | no disponible | 0,462 | Apache-2.0 | Hugging Face |
 | GPT-6.1 Sol (cerrado) | no disponible | no disponible | 0,738 | propietaria | API |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ En las 5 tareas de transcripción, el autor indica que P220 supera a GPT-6.1 Sol
 
 ## Enlaces
 
-- HuggingFace (esta variante NVFP4): https://huggingface.co/PorsukR/P220-ThaiOCR-9B-NVFP4
+- Hugging Face (esta variante NVFP4): https://huggingface.co/PorsukR/P220-ThaiOCR-9B-NVFP4
 - Modelo base BF16: https://huggingface.co/PorsukR/P220-ThaiOCR-9B
 - Variante FP8: https://huggingface.co/PorsukR/P220-ThaiOCR-9B-FP8
 - Variante W4A16: https://huggingface.co/PorsukR/P220-ThaiOCR-9B-W4A16

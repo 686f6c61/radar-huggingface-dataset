@@ -93,7 +93,7 @@ La comparación cuantitativa con alternativas no es posible con la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fall2026-cs8803-drl/hw4-f26-sb3-ppo-hopper
+- Modelo en Hugging Face: https://huggingface.co/fall2026-cs8803-drl/hw4-f26-sb3-ppo-hopper
 - Syllabus CS 8803 DRL (Fall 2025, referencia del curso): https://syllabus.gatech.edu/sites/default/files/2026-04/CS%208803%20DRL%20fall%202025%20syllabus.pdf
 - Proyecto MBPO sobre Hopper (GitHub, `sanchit2843/cs8803-DRL`): https://github.com/sanchit2843/cs8803-DRL
 - Proyecto Soccer-Twos de CS8803 (GitHub, `Redemption-ZTX/cs8803`): https://github.com/Redemption-ZTX/cs8803

@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| voice-box/shakespeare | 333,5 M declarados en safetensors (base Qwen3-4B) | no disponible | apache-2.0 | HuggingFace (safetensors y GGUF) | Ajuste de estilo isabelino, uso recreativo |
-| Qwen/Qwen3-4B | ~4.000 M | no disponible en esta ficha | apache-2.0 | HuggingFace | Modelo base; proposito general |
-| Otros fine-tunes de "persona" sobre Qwen3 o Llama 3 | variable (1-8 B) | variable | habitualmente apache-2.0 o similar | HuggingFace | Sin datos de benchmarks comparables en la informacion disponible |
+| voice-box/shakespeare | 333,5 M declarados en safetensors (base Qwen3-4B) | no disponible | apache-2.0 | Hugging Face (safetensors y GGUF) | Ajuste de estilo isabelino, uso recreativo |
+| Qwen/Qwen3-4B | ~4.000 M | no disponible en esta ficha | apache-2.0 | Hugging Face | Modelo base; proposito general |
+| Otros fine-tunes de "persona" sobre Qwen3 o Llama 3 | variable (1-8 B) | variable | habitualmente apache-2.0 o similar | Hugging Face | Sin datos de benchmarks comparables en la informacion disponible |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa fiable con alternativas.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/voice-box/shakespeare
+- Hugging Face del modelo: https://huggingface.co/voice-box/shakespeare
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Autor de la model card (QuillBytes): https://huggingface.co/QuillBytes
 - Busqueda web: no se han encontrado enlaces relevantes al modelo, papers, blogs, repositorios o demos asociados. El resto de enlaces no esta disponible.

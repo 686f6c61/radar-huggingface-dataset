@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hiraya es un modelo publicado en HuggingFace por el usuario u organizacion DeepNarra bajo el identificador `DeepNarra/Hiraya`. En el momento de redactar esta ficha, el repositorio no incluye model card descriptiva (unicamente el bloque de metadatos con la licencia), no declara pipeline de inferencia y no registra descargas ni interacciones de la comunidad.
+Hiraya es un modelo publicado en Hugging Face por el usuario u organizacion DeepNarra bajo el identificador `DeepNarra/Hiraya`. En el momento de redactar esta ficha, el repositorio no incluye model card descriptiva (unicamente el bloque de metadatos con la licencia), no declara pipeline de inferencia y no registra descargas ni interacciones de la comunidad.
 
 No se dispone de informacion publica sobre la arquitectura, el numero de parametros, la longitud de contexto, los datos de entrenamiento ni las capacidades del modelo. Tampoco se han publicado resultados de benchmarks, ejemplos de uso ni documentacion tecnica asociada.
 
@@ -41,7 +41,7 @@ No se ha publicado informacion sobre las capacidades del modelo. No es posible c
 
 No es posible proponer casos de uso concretos y realistas sin informacion sobre el tamano, el contexto, el rendimiento ni las capacidades del modelo. Cualquier escenario que se enumerase aqui seria especulativo y no verificable.
 
-Se recomienda consultar el repositorio de HuggingFace o contactar con el autor (DeepNarra) para obtener documentacion antes de plantear cualquier integracion en produccion.
+Se recomienda consultar el repositorio de Hugging Face o contactar con el autor (DeepNarra) para obtener documentacion antes de plantear cualquier integracion en produccion.
 
 ## Benchmarks y rendimiento
 
@@ -63,7 +63,7 @@ No disponible. No se dispone de datos de parametros, contexto, rendimiento o lic
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeepNarra/Hiraya | no disponible | no disponible | apache-2.0 | HuggingFace |
+| DeepNarra/Hiraya | no disponible | no disponible | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -78,7 +78,7 @@ No disponible. No se dispone de datos de parametros, contexto, rendimiento o lic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DeepNarra/Hiraya
+- Hugging Face: https://huggingface.co/DeepNarra/Hiraya
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Patio Corners es un modelo de clasificacion de imagenes desarrollado por el usuario kelvinxG (Kelvin), publicado en HuggingFace bajo el identificador `kelvinxG/patio-corners`. Se trata de una red neuronal convolucional (CNN) ligera implementada en PyTorch, cuyo objetivo es reconocer la esquina visible de una carta de la baraja en capturas de pantalla de la aplicacion Poker Patio. El modelo distingue 52 identidades de carta (combinacion de palo y valor) mas una clase adicional `unknown` para descartes.
+Patio Corners es un modelo de clasificacion de imagenes desarrollado por el usuario kelvinxG (Kelvin), publicado en Hugging Face bajo el identificador `kelvinxG/patio-corners`. Se trata de una red neuronal convolucional (CNN) ligera implementada en PyTorch, cuyo objetivo es reconocer la esquina visible de una carta de la baraja en capturas de pantalla de la aplicacion Poker Patio. El modelo distingue 52 identidades de carta (combinacion de palo y valor) mas una clase adicional `unknown` para descartes.
 
 El modelo trabaja sobre recortes en escala de grises redimensionados a 32 x 48 pixeles, lo que lo convierte en un componente de muy bajo coste computacional. No es un detector de imagen completa: segun la propia model card, requiere la arquitectura `CornerNet` correspondiente y un preprocesado externo que localice previamente las regiones de carta. El fichero distribuido, `patio-corners.pt`, contiene el state dict entrenado junto con las etiquetas de clase.
 
@@ -22,7 +22,7 @@ La relevancia de esta publicacion es limitada y de caracter formativo: el autor 
 | Formato de pesos | state dict de PyTorch (`.pt`), con las etiquetas de clase incluidas |
 | Entrada | recorte en escala de grises de 32 x 48 pixeles |
 | Clases de salida | 53 (52 cartas + clase `unknown`) |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -75,11 +75,11 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 - Riesgo de falsos positivos y confusion: la clase `unknown` se entrena con ejemplos negativos de interfaz y reversos de carta, pero no se documenta su tasa de error ni el equilibrio entre clases.
 - Licencia no declarada: al no especificarse licencia, no puede asumirse permiso para uso comercial ni redistribucion. Cualquier uso en produccion requiere aclarar este punto con el autor.
 - Ausencia de validacion de la comunidad: cero descargas y cero valoraciones en el momento de la consulta, sin benchmarks ni evaluaciones de terceros.
-- Repositorio de 0,0 GB segun HuggingFace: conviene verificar que los pesos se descargan correctamente y no son un puntero LFS mal resuelto.
+- Repositorio de 0,0 GB segun Hugging Face: conviene verificar que los pesos se descargan correctamente y no son un puntero LFS mal resuelto.
 - No apto para decisiones de juego: su salida es una etiqueta de carta, no una recomendacion ni un analisis de probabilidades.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kelvinxG/patio-corners
+- Modelo en Hugging Face: https://huggingface.co/kelvinxG/patio-corners
 - Perfil de GitHub que coincide con el nombre del autor (no confirmado como la misma cuenta): https://github.com/KelvinxG
 - No se han encontrado en la busqueda web otros enlaces relevantes al modelo: los resultados adicionales (Gemini Enterprise Agent Platform, GenRoom, Kelvin.ai, RemodelAI) no guardan relacion con este artefacto.

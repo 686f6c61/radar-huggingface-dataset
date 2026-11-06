@@ -85,7 +85,7 @@ La comparación relevante es con s1-mini en precisión completa: esta versión i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HeyBolo/s1-mini-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/HeyBolo/s1-mini-mlx-4bit
 - Modelo base: https://huggingface.co/superwhisper/s1-mini
 - Repositorio MLX: https://github.com/ml-explore/mlx
 - Modelo original del que deriva la familia: https://huggingface.co/Qwen/Qwen3-0.6B

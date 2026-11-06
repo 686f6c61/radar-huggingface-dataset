@@ -3,7 +3,7 @@
 ## Resumen
 Serenity-27B-v0.5 es un modelo de lenguaje de 27 mil millones de parámetros desarrollado por ReadyArt, basado en el modelo Qwen3.8-27B de Alibaba. Se trata de un fine-tuning orientado al roleplay y a la conversación, con un enfoque explícito en contenido adulto y sin alineación de seguridad. La serie Serenity, según la colección oficial, combina características de otros modelos de la misma organización (Melody y For Her Darkside) para ofrecer un comportamiento más "sereno" pero igualmente desinhibido.
 
-Este modelo resulta relevante para desarrolladores e investigadores que trabajan en sistemas de rol no censurados, generación de narrativa adulta o simulaciones de personajes, aunque su acceso está restringido en HuggingFace y requiere aceptar condiciones específicas. La licencia Apache 2.0 permite uso comercial, pero el contenido generado puede ser explícito y no apto para menores.
+Este modelo resulta relevante para desarrolladores e investigadores que trabajan en sistemas de rol no censurados, generación de narrativa adulta o simulaciones de personajes, aunque su acceso está restringido en Hugging Face y requiere aceptar condiciones específicas. La licencia Apache 2.0 permite uso comercial, pero el contenido generado puede ser explícito y no apto para menores.
 
 ## Especificaciones técnicas
 
@@ -46,12 +46,12 @@ No se han publicado resultados de benchmarks en la información disponible.
 - Latencia y throughput: no hay datos oficiales; dependerán del hardware y la configuración de cuantización.
 
 ## Comparativa con modelos similares
-No se dispone de datos comparativos con otros modelos de roleplay o conversación en la información proporcionada. No se puede establecer una comparación objetiva en términos de rendimiento, contexto o calidad de generación. Se recomienda consultar la página de HuggingFace para futuras actualizaciones.
+No se dispone de datos comparativos con otros modelos de roleplay o conversación en la información proporcionada. No se puede establecer una comparación objetiva en términos de rendimiento, contexto o calidad de generación. Se recomienda consultar la página de Hugging Face para futuras actualizaciones.
 
 ## Limitaciones y advertencias
 - El modelo está diseñado para contenido adulto y explícito, lo que lo hace inadecuado para aplicaciones generales o para menores.
 - No está alineado, por lo que puede generar respuestas ofensivas, ilegales o dañinas si se le solicita.
-- El acceso está restringido en HuggingFace; requiere aceptar condiciones adicionales que pueden incluir requisitos de verificación de edad.
+- El acceso está restringido en Hugging Face; requiere aceptar condiciones adicionales que pueden incluir requisitos de verificación de edad.
 - La licencia Apache-2.0 permite uso comercial, pero el contenido generado puede estar sujeto a otras regulaciones legales según la jurisdicción.
 - No hay datos sobre sesgos específicos, pero al ser un fine-tune sin alineación, es probable que presente sesgos del dataset de entrenamiento, que no ha sido documentado.
 - La longitud de contexto y el rendimiento real en producción no están documentados, lo que puede suponer un riesgo para su integración en aplicaciones críticas.

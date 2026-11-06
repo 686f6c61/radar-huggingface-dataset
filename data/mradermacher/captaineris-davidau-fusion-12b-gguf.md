@@ -94,8 +94,8 @@ La informacion disponible no identifica modelos comparables de forma explicita. 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CaptainEris-DavidAU-Fusion-12B-GGUF (este) | ~12,25 B | no disponible | GGUF (10 cuantizaciones) | no disponible | HuggingFace, 0 descargas |
-| mrcuddle/CaptainEris-DavidAU-Fusion-12B (base) | ~12,25 B | no disponible | safetensors | no disponible | HuggingFace |
+| CaptainEris-DavidAU-Fusion-12B-GGUF (este) | ~12,25 B | no disponible | GGUF (10 cuantizaciones) | no disponible | Hugging Face, 0 descargas |
+| mrcuddle/CaptainEris-DavidAU-Fusion-12B (base) | ~12,25 B | no disponible | safetensors | no disponible | Hugging Face |
 | Otros modelos de la clase 12B (p. ej. Mistral Nemo 12B) | ~12 B | 128k tokens en el caso citado | safetensors, GGUF | Apache 2.0 en el caso citado | Ampliamente distribuidos |
 
 Los datos de la tercera fila corresponden a un modelo distinto y se incluyen unicamente como referencia de la categoria de tamano; no implican parentesco arquitectonico ni equivalencia de rendimiento con el modelo descrito.

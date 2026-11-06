@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparativo entre estas tres variantes ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JingwuLuo/ImageWAM3backbones
+- Modelo en Hugging Face: https://huggingface.co/JingwuLuo/ImageWAM3backbones
 - Paper ImageWAM: https://arxiv.org/abs/2606.19531
 - Backbone FLUX.2 klein base 4B: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B
 - Backbone FLUX.2 klein base 9B: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9B

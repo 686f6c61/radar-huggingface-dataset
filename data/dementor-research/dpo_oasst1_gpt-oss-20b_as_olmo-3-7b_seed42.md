@@ -77,7 +77,7 @@ Todos comparten la misma metodología (LoRA + DPO) y el mismo dataset, variando 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_olmo-3-7b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_olmo-3-7b_seed42
 - Adaptador similar con qwen3.5-4b: https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_qwen3.5-4b_seed42
 - Adaptador similar con qwen3.6-27b: https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_qwen3.6-27b_seed1
 - Adaptador similar con gpt-oss-120b (en FriendliAI): https://friendli.ai/models/dementor-research/dpo_oasst1_gpt-oss-120b_as_gpt-oss-20b_seed42

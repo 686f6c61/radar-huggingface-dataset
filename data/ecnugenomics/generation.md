@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ecnugenomics/generation` es un repositorio de HuggingFace que contiene una implementación de un Tiny Transformer orientada a tareas de generación, empaquetada con una configuración explícita y un checkpoint de inicialización. Lo publica el usuario `ecnugenomics` y, según la propia model card, no se trata de un modelo entrenado ni de una release con benchmarks, sino de un punto de partida reproducible para experimentación. El checkpoint `model.safetensors` es válido para pruebas de humo (smoke tests), pero no se presenta como un modelo con rendimiento evaluado.
+`ecnugenomics/generation` es un repositorio de Hugging Face que contiene una implementación de un Tiny Transformer orientada a tareas de generación, empaquetada con una configuración explícita y un checkpoint de inicialización. Lo publica el usuario `ecnugenomics` y, según la propia model card, no se trata de un modelo entrenado ni de una release con benchmarks, sino de un punto de partida reproducible para experimentación. El checkpoint `model.safetensors` es válido para pruebas de humo (smoke tests), pero no se presenta como un modelo con rendimiento evaluado.
 
 El modelo es extremadamente pequeño: 24.832 parámetros totales según los datos reales de los safetensors. Se enmarca en la categoría "nano" y utiliza una arquitectura de transformer con atención lineal, fusión tensorial, activación ReLU y normalización por BatchNorm. La receta de entrenamiento por defecto emplea el optimizador LAMB con un schedule coseno, aunque el autor advierte que son valores de partida del script y no evidencia de un entrenamiento completado.
 
@@ -74,5 +74,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ecnugenomics/generation
+- Hugging Face: https://huggingface.co/ecnugenomics/generation
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

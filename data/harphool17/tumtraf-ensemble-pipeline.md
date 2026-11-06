@@ -92,7 +92,7 @@ No se dispone de datos comparativos con otros pipelines de ensemble en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/harphool17/tumtraf-ensemble-pipeline
+- Repositorio Hugging Face: https://huggingface.co/harphool17/tumtraf-ensemble-pipeline
 - Perfil del autor: https://huggingface.co/harphool17
 - Modelo base CoopDet3D (repositorio del autor): https://huggingface.co/harphool17/tumtraf-coopdet3d-base
 - Código de CoopDet3D en GitHub: https://github.com/yangje0ngwoo/coopdet3d

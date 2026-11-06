@@ -62,15 +62,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (checkpoint s300) | 5,12 B (total) | no disponible | safetensors F32 | apache-2.0 en metadatos, licencia Gemma 4 referenciada en la model card | HuggingFace, 0 descargas |
-| `google/gemma-4-E2B-it` (modelo base) | mismos pesos de partida | no disponible | no disponible | licencia Gemma 4 | HuggingFace (modelo oficial de Google) |
+| Este modelo (checkpoint s300) | 5,12 B (total) | no disponible | safetensors F32 | apache-2.0 en metadatos, licencia Gemma 4 referenciada en la model card | Hugging Face, 0 descargas |
+| `google/gemma-4-E2B-it` (modelo base) | mismos pesos de partida | no disponible | no disponible | licencia Gemma 4 | Hugging Face (modelo oficial de Google) |
 | Otros modelos de razonamiento de ~5B ajustados con GRPO | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No hay en la informacion proporcionada datos de parametros, contexto o rendimiento de alternativas comparables, ni resultados que permitan establecer una comparacion cuantitativa. La unica comparacion fiable es con el modelo base, del que este checkpoint es un ajuste fino por RL.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de produccion: 0 descargas y 0 likes en HuggingFace, publicado como artefacto anonimo de una submission a conferencia.
+- No es un modelo de produccion: 0 descargas y 0 likes en Hugging Face, publicado como artefacto anonimo de una submission a conferencia.
 - Contradiccion de licencia: los metadatos declaran apache-2.0, pero la model card afirma que hereda la licencia del modelo base y enlaza a la licencia de Gemma 4. Antes de cualquier uso comercial hay que resolver esta discrepancia, ya que la licencia de Gemma incorpora una politica de uso prohibido.
 - Riesgo de alucinacion no evaluado: no se publican tasas de error ni evaluaciones de fidelidad fuera de las tareas de Reasoning Gym.
 - Sesgos no documentados: no hay informacion sobre composicion del dataset mas alla de que los problemas son generados proceduralmente, ni sobre idiomas soportados.
@@ -82,7 +82,7 @@ No hay en la informacion proporcionada datos de parametros, contexto o rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/budget-internalization-iclr2027/gemma4-e2b-2k-grpo-reasoninggym-smartcamel-s300
+- Modelo en Hugging Face: https://huggingface.co/budget-internalization-iclr2027/gemma4-e2b-2k-grpo-reasoninggym-smartcamel-s300
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Licencia referenciada por el autor: https://ai.google.dev/gemma/docs/gemma_4_license
 - Paper, repositorio de codigo, blog o demo: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo, la autoria o el articulo de ICLR 2027 (los resultados obtenidos trataban sobre presupuestos estatales y no guardan relacion).

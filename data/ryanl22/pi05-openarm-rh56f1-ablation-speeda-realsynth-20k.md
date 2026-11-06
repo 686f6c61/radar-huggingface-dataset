@@ -65,11 +65,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `RyanL22/pi05-openarm-rh56f1-ablation-speeda-realsynth-20k` (este) | 4,14 B | 50 acciones @ 20 fps (2,5 s) | Apache 2.0 | Publicado en HuggingFace |
-| `RyanL22/pi05-openarm-rh56f1-ablation-noskel-realsynth-20k` | No disponible | Misma receta (ablación sin esqueleto) | Apache 2.0 | Publicado en HuggingFace |
-| `RyanL22/pi05-openarm-rh56f1-ablation-firstkf-realsynth-20k` | No disponible | Misma receta (ablación solo primer fotograma clave) | Apache 2.0 | Publicado en HuggingFace |
-| `RyanL22/pi05-anyh2r-rh56f1-0916-wristik-30k` (pipeline completo) | No disponible | Misma morfología, pipeline completo | Apache 2.0 | Publicado en HuggingFace |
-| `lerobot/pi05_base` (modelo base) | No disponible en esta ficha | Base pi0.5 sin ajustar | No disponible | Publicado en HuggingFace |
+| `RyanL22/pi05-openarm-rh56f1-ablation-speeda-realsynth-20k` (este) | 4,14 B | 50 acciones @ 20 fps (2,5 s) | Apache 2.0 | Publicado en Hugging Face |
+| `RyanL22/pi05-openarm-rh56f1-ablation-noskel-realsynth-20k` | No disponible | Misma receta (ablación sin esqueleto) | Apache 2.0 | Publicado en Hugging Face |
+| `RyanL22/pi05-openarm-rh56f1-ablation-firstkf-realsynth-20k` | No disponible | Misma receta (ablación solo primer fotograma clave) | Apache 2.0 | Publicado en Hugging Face |
+| `RyanL22/pi05-anyh2r-rh56f1-0916-wristik-30k` (pipeline completo) | No disponible | Misma morfología, pipeline completo | Apache 2.0 | Publicado en Hugging Face |
+| `lerobot/pi05_base` (modelo base) | No disponible en esta ficha | Base pi0.5 sin ajustar | No disponible | Publicado en Hugging Face |
 
 Comparativa de rendimiento entre estos checkpoints: no disponible (no se han publicado métricas de éxito en la información proporcionada).
 
@@ -87,7 +87,7 @@ Comparativa de rendimiento entre estos checkpoints: no disponible (no se han pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyanL22/pi05-openarm-rh56f1-ablation-speeda-realsynth-20k
+- Modelo en Hugging Face: https://huggingface.co/RyanL22/pi05-openarm-rh56f1-ablation-speeda-realsynth-20k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Checkpoint de comparación (ablación sin esqueleto): https://huggingface.co/RyanL22/pi05-openarm-rh56f1-ablation-noskel-realsynth-20k
 - Checkpoint de comparación (ablación solo primer fotograma clave): https://huggingface.co/RyanL22/pi05-openarm-rh56f1-ablation-firstkf-realsynth-20k

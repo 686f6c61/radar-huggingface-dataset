@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RadianceChromeVoluptuous_QwenImage2.1_v1.0 es un adaptador LoRA de bajo rango para generacion de imagenes (text-to-image) desarrollado por AIImageStudio y publicado en HuggingFace. No es un modelo completo, sino un ajuste fino que se monta sobre el modelo base Qwen/Qwen-Image-2.1, un transformer de difusion de Qwen. El repositorio ocupa 0.2 GB, lo que es coherente con un adaptador LoRA ligero en lugar de pesos completos.
+RadianceChromeVoluptuous_QwenImage2.1_v1.0 es un adaptador LoRA de bajo rango para generacion de imagenes (text-to-image) desarrollado por AIImageStudio y publicado en Hugging Face. No es un modelo completo, sino un ajuste fino que se monta sobre el modelo base Qwen/Qwen-Image-2.1, un transformer de difusion de Qwen. El repositorio ocupa 0.2 GB, lo que es coherente con un adaptador LoRA ligero en lugar de pesos completos.
 
 El objetivo declarado del adaptador es estilizar la generacion fotografica de figuras femeninas, con enfasis en iluminacion cinematografica, emulacion de pelicula analogica (incluyendo artefactos como "expired film", dominantes de color y balances de blancos desplazados) y retrato de estudio o exterior. La model card incluye una galeria de ejemplos generados con el pipeline de diffusers, todos ellos retratos de mujeres con un componente claramente sugerente y parcialmente NSFW.
 
@@ -18,7 +18,7 @@ Su relevancia es limitada y muy nicho: se trata de un adaptador de estilo para u
 | Longitud de contexto | no aplica (modelo text-to-image); no disponible el limite de tokens de prompt del base |
 | Tipos de cuantizacion | no disponible (los pesos se distribuyen en safetensors; la cuantizacion depende del modelo base) |
 | Idiomas soportados | no disponible (los ejemplos de la model card estan en ingles) |
-| Licencia | qwen-research (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-research (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (compatible con diffusers) |
 
 ## Arquitectura y entrenamiento
@@ -66,8 +66,8 @@ No se dispone de datos de rendimiento ni de especificaciones comparables en la i
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RadianceChromeVoluptuous_QwenImage2.1_v1.0 | no disponible (LoRA) | no aplica | no disponible | qwen-research | HuggingFace |
-| Qwen/Qwen-Image-2.1 (base) | no disponible | no disponible | no disponible | qwen-research | HuggingFace |
+| RadianceChromeVoluptuous_QwenImage2.1_v1.0 | no disponible (LoRA) | no aplica | no disponible | qwen-research | Hugging Face |
+| Qwen/Qwen-Image-2.1 (base) | no disponible | no disponible | no disponible | qwen-research | Hugging Face |
 | Otros adaptadores LoRA comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento ni de especificaciones comparables en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AIImageStudio/RadianceChromeVoluptuous_QwenImage2.1_v1.0
+- Modelo en Hugging Face: https://huggingface.co/AIImageStudio/RadianceChromeVoluptuous_QwenImage2.1_v1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales.

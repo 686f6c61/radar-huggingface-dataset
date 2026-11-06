@@ -54,9 +54,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Cuantización | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| milan33/Qwen-Image-Edit-2511-FP8-Diffusers | 20,43 B | FP8 | No disponible | Apache 2.0 | HuggingFace |
-| 1038lab/Qwen-Image-Edit-2511-FP8 | 20,43 B | FP8 | No disponible | Apache 2.0 | HuggingFace, ModelScope |
-| Qwen/Qwen-Image-Edit-2511 (base) | 20,43 B | BF16/FP16 | No disponible | Apache 2.0 | HuggingFace |
+| milan33/Qwen-Image-Edit-2511-FP8-Diffusers | 20,43 B | FP8 | No disponible | Apache 2.0 | Hugging Face |
+| 1038lab/Qwen-Image-Edit-2511-FP8 | 20,43 B | FP8 | No disponible | Apache 2.0 | Hugging Face, ModelScope |
+| Qwen/Qwen-Image-Edit-2511 (base) | 20,43 B | BF16/FP16 | No disponible | Apache 2.0 | Hugging Face |
 
 La comparativa muestra que esta versión es una alternativa más ligera del modelo base, con la misma licencia y parámetros. No se dispone de datos de rendimiento para contrastar con otros modelos de edición de imágenes como InstructPix2Pix o InstructBLIP.
 

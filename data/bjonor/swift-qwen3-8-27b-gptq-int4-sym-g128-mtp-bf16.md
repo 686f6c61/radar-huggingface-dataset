@@ -104,7 +104,7 @@ La diferencia clave frente a la referencia de SergiioB es que aquella cuantiza e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bjonor/Swift-Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16
+- Modelo en Hugging Face: https://huggingface.co/bjonor/Swift-Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16
 - Modelo base (fine-tune): https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Licencia del modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b/blob/main/LICENSE
 - Artefacto de referencia de la comunidad: https://huggingface.co/SergiioB/Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16

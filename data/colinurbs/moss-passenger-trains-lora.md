@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`colinurbs/moss-passenger-trains-lora` es un adaptador LoRA para el modelo de generación de imágenes OpenMOSS/MOSS-Image-Base, especializado en fotografía de trenes de pasajeros de América del Norte. Lo desarrolla el usuario de HuggingFace colinurbs y complementa a su LoRA anterior sobre trenes de mercancías. El adaptador cubre 40 clases de material rodante: locomotoras diésel (EMD F40PH en libreas de Amtrak, commuter, Coaster y VIA, GE Genesis, F59PH/PHI, MPI MP36/MP40, Siemens Charger, MLW LRC, E8/E9), eléctricas (ACS-64, AEM-7, HHP-8, GG1) y coches y trenes completos (Amfleet, Horizon, Viewliner, Superliner, bilevels, gallery cars, Acela, Avelia Liberty, Talgo, Brightline, Budd RDC), bajo operadores como Amtrak, VIA Rail y diversos operadores de cercanías.
+`colinurbs/moss-passenger-trains-lora` es un adaptador LoRA para el modelo de generación de imágenes OpenMOSS/MOSS-Image-Base, especializado en fotografía de trenes de pasajeros de América del Norte. Lo desarrolla el usuario de Hugging Face colinurbs y complementa a su LoRA anterior sobre trenes de mercancías. El adaptador cubre 40 clases de material rodante: locomotoras diésel (EMD F40PH en libreas de Amtrak, commuter, Coaster y VIA, GE Genesis, F59PH/PHI, MPI MP36/MP40, Siemens Charger, MLW LRC, E8/E9), eléctricas (ACS-64, AEM-7, HHP-8, GG1) y coches y trenes completos (Amfleet, Horizon, Viewliner, Superliner, bilevels, gallery cars, Acela, Avelia Liberty, Talgo, Brightline, Budd RDC), bajo operadores como Amtrak, VIA Rail y diversos operadores de cercanías.
 
 El modelo se entrenó sobre 2.667 fotografías de Wikimedia Commons con licencias libres (CC BY, BY-SA, CC0, dominio público y GFDL), con captions largos, medios y cortos. El resultado es un adaptador de rank 64 y alpha 16 que se aplica sobre el checkpoint base sin palabra de activación: el prompt debe empezar por operador, fabricante y modelo, seguido de una descripción fotográfica al estilo de un aficionado al ferrocarril.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| colinurbs/moss-passenger-trains-lora | LoRA sobre MOSS-Image-Base | no disponible (adaptador rank 64) | no aplica | no disponible | HuggingFace y Civitai |
-| colinurbs/moss-trains-lora | LoRA sobre MOSS-Image-Base | no disponible | no aplica | no disponible | HuggingFace |
-| MOSS-Image-Base (OpenMOSS) | Modelo de difusion base | no disponible en la informacion | no aplica | no disponible | HuggingFace |
+| colinurbs/moss-passenger-trains-lora | LoRA sobre MOSS-Image-Base | no disponible (adaptador rank 64) | no aplica | no disponible | Hugging Face y Civitai |
+| colinurbs/moss-trains-lora | LoRA sobre MOSS-Image-Base | no disponible | no aplica | no disponible | Hugging Face |
+| MOSS-Image-Base (OpenMOSS) | Modelo de difusion base | no disponible en la informacion | no aplica | no disponible | Hugging Face |
 | Alternativas genericas de difusion (SDXL, Flux) | Modelos de difusion generalistas | no aplica a esta ficha | no aplica | no disponible | no disponible |
 
 El unico comparable directo documentado es el LoRA de mercancias del mismo autor, que cubre el material que este adaptador deja fuera. No se dispone de datos de rendimiento para establecer una comparacion cuantitativa con otros adaptadores ferroviarios.
@@ -86,7 +86,7 @@ El unico comparable directo documentado es el LoRA de mercancias del mismo autor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/colinurbs/moss-passenger-trains-lora
+- Hugging Face: https://huggingface.co/colinurbs/moss-passenger-trains-lora
 - Modelo base: https://huggingface.co/OpenMOSS/MOSS-Image-Base
 - LoRA de trenes de mercancias: https://huggingface.co/colinurbs/moss-trains-lora
 - Civitai: https://civitai.com/models/3030067

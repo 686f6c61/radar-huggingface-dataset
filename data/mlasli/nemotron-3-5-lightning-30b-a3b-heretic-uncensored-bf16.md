@@ -93,7 +93,7 @@ La comparativa se centra en la categoría de modelos MoE de tamaño similar. El 
 
 ## Enlaces
 
-- [Modelo en HuggingFace (BF16)](https://huggingface.co/mlasli/Nemotron-3.5-Lightning-30B-A3B-Heretic-Uncensored-BF16)
+- [Modelo en Hugging Face (BF16)](https://huggingface.co/mlasli/Nemotron-3.5-Lightning-30B-A3B-Heretic-Uncensored-BF16)
 - [Modelo base de NVIDIA](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16)
 - [Repositorio de Heretic (GitHub)](https://github.com/mlabonne/heretic-llm)
 - [Cuantización GGUF Q8_0](https://huggingface.co/mlasli/Nemotron-3.5-Lightning-30B-A3B-Heretic-Uncensored-Q8_0-GGUF)

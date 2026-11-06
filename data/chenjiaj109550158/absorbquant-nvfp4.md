@@ -65,7 +65,7 @@ No se han publicado comparativas formales con métodos alternativos en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chenjiaj109550158/AbsorbQuant-NVFP4
+- Hugging Face: https://huggingface.co/chenjiaj109550158/AbsorbQuant-NVFP4
 - Modelos base:
   - https://huggingface.co/PixArt-alpha/PixArt-Sigma-XL-2-1024-MS
   - https://huggingface.co/Efficient-Large-Model/Sana_1600M_1024px

@@ -41,7 +41,7 @@ La unica innovacion tecnica declarada es la calibracion: una calibracion propia 
 - Tool calling / function calling: la model card verifica que las llamadas a herramientas funcionan y que los argumentos en forma de array se mantienen como arrays JSON.
 - Capacidades multimodales de entrada: el pipeline declarado es image-text-to-text e incluye torre de vision en BF16.
 - Generacion especulativa: soporta borradores DFlash2, con respuestas draft identicas a las seriales en 6 de 6 comprobaciones.
-- Capacidades multilingues: no disponible (el campo de idiomas no esta informado en la ficha de HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas no esta informado en la ficha de Hugging Face).
 - Capacidades de agente multi-paso: no documentadas de forma explicita mas alla del soporte de tool calling.
 
 ## Casos de uso
@@ -90,9 +90,9 @@ Notas de rigor declaradas por el autor: las diferencias en GSM8K (+2 problemas) 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mia-AiLab/GLM-5.3-Flash-EXL3-4bpw-TensorFold | 87,8B (MoE), 4 bits en expertos | 1M tokens en la receta TensorFold | KL 0,0903 / 0,3150; GSM8K 98,8%; HumanEval 95,7% | apache-2.0 | HuggingFace, 175,7 GB, 554 descargas |
+| Mia-AiLab/GLM-5.3-Flash-EXL3-4bpw-TensorFold | 87,8B (MoE), 4 bits en expertos | 1M tokens en la receta TensorFold | KL 0,0903 / 0,3150; GSM8K 98,8%; HumanEval 95,7% | apache-2.0 | Hugging Face, 175,7 GB, 554 descargas |
 | brandonmusic-TR3-4bpw | mismo modelo base, 4 bpw | mismo entorno de servicio | KL 0,0990 / 0,3271; GSM8K 98,0%; HumanEval 97,6% | no disponible | no disponible en la informacion proporcionada |
-| zai-org/GLM-5.3-Flash (BF16 / FP8) | 87,8B (MoE) | 1M tokens en la receta de servicio | Referencia sin cuantizar (release FP8, rev eb9eb208) | apache-2.0 | HuggingFace (zai-org/GLM-5.3-Flash y GLM-5.3-Flash-BF16) |
+| zai-org/GLM-5.3-Flash (BF16 / FP8) | 87,8B (MoE) | 1M tokens en la receta de servicio | Referencia sin cuantizar (release FP8, rev eb9eb208) | apache-2.0 | Hugging Face (zai-org/GLM-5.3-Flash y GLM-5.3-Flash-BF16) |
 
 No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
 
@@ -111,7 +111,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mia-AiLab/GLM-5.3-Flash-EXL3-4bpw-TensorFold
+- Modelo en Hugging Face: https://huggingface.co/Mia-AiLab/GLM-5.3-Flash-EXL3-4bpw-TensorFold
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Modelo base en BF16: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Runtime TensorFold: https://github.com/ashhart/TensorFold

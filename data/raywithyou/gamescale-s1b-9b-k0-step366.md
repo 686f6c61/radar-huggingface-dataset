@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Raywithyou/gamescale-s1b-9b-k0-step366` es un checkpoint de 9.409.813.744 parámetros publicado en HuggingFace por el usuario Raywithyou el 17 de octubre de 2026. El tag `qwen3_5` indica que los pesos se exportaron con la librería/arquitectura de la familia Qwen3.5, aunque el repositorio no incluye model card, licencia, idiomas declarados ni pipeline de inferencia. El nombre sugiere un artefacto de entrenamiento (un step 366 de una ejecución identificada como `s1b`/`k0`), no un modelo listo para produccion.
+`Raywithyou/gamescale-s1b-9b-k0-step366` es un checkpoint de 9.409.813.744 parámetros publicado en Hugging Face por el usuario Raywithyou el 17 de octubre de 2026. El tag `qwen3_5` indica que los pesos se exportaron con la librería/arquitectura de la familia Qwen3.5, aunque el repositorio no incluye model card, licencia, idiomas declarados ni pipeline de inferencia. El nombre sugiere un artefacto de entrenamiento (un step 366 de una ejecución identificada como `s1b`/`k0`), no un modelo listo para produccion.
 
 El autor mantiene otros repositorios de investigacion con la misma base Qwen3.5-9B, en concreto la serie MemoGUI-World (SFT Stage 2 y pilotos de RL agéntico Stage 3), orientada a tareas de interfaz grafica y razonamiento multi-paso. Esto sitúa el modelo, con alta probabilidad, en la estela de experimentos de post-entrenamiento sobre un modelo base de ~9B, aunque la ficha no puede confirmar esa relacion para este checkpoint concreto.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
 | gamescale-s1b-9b-k0-step366 (este) | 9,41B | no disponible | no disponible | safetensors, 13 descargas | no disponibles |
-| MemoGUI-World-Qwen3.5-9B-Stage3-Pilot10 (mismo autor) | ~9B (base Qwen3.5-9B) | no disponible | no disponible | HuggingFace, export experimental de RL agéntico | no disponibles |
-| MemoGUI-World-Qwen3.5-9B-SFT-Stage2 (mismo autor) | ~9B (base Qwen3.5-9B) | no disponible | no disponible | HuggingFace, checkpoint SFT | no disponibles |
+| MemoGUI-World-Qwen3.5-9B-Stage3-Pilot10 (mismo autor) | ~9B (base Qwen3.5-9B) | no disponible | no disponible | Hugging Face, export experimental de RL agéntico | no disponibles |
+| MemoGUI-World-Qwen3.5-9B-SFT-Stage2 (mismo autor) | ~9B (base Qwen3.5-9B) | no disponible | no disponible | Hugging Face, checkpoint SFT | no disponibles |
 | Qwen3-8B (familia base de referencia) | ~8B | referencia general, verificar | referencia general, verificar | ampliamente disponible | no comparado aqui |
 
 La comparacion se limita a estructura y disponibilidad: no existe ningun dato de evaluacion de este checkpoint que permita situarlo frente a alternativas. Los datos de los modelos de la familia Qwen3 deben verificarse en sus repositorios oficiales, ya que no forman parte de la informacion proporcionada.
@@ -85,7 +85,7 @@ La comparacion se limita a estructura y disponibilidad: no existe ningun dato de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raywithyou/gamescale-s1b-9b-k0-step366
+- Modelo en Hugging Face: https://huggingface.co/Raywithyou/gamescale-s1b-9b-k0-step366
 - Modelo relacionado del mismo autor (RL agéntico Stage 3): https://huggingface.co/Raywithyou/MemoGUI-World-Qwen3.5-9B-Stage3-Pilot10
 - Listado de finetunes sobre la base del autor: https://huggingface.co/models?other=base_model:finetune:Raywithyou/MemoGUI-World-Qwen3.5-9B-SFT-Stage2
 - Paper, blog o demo especificos de este modelo: no disponibles en la informacion proporcionada.

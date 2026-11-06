@@ -40,7 +40,7 @@ No se detalla en la model card el numero de tokens de entrenamiento, la composic
 - Tracking de objetos en video, con sesiones persistentes y prompts aplicables a indices de frame arbitrarios.
 - Procesamiento de video desde carpeta de JPEG o archivo MP4.
 - Compatibilidad con la libreria `transformers` (`Sam3Model`, `Sam3Processor`) y post-procesado de instancias (`post_process_instance_segmentation`).
-- Etiquetado en HuggingFace como `feature-extraction`, lo que indica uso del backbone para extraccion de caracteristicas.
+- Etiquetado en Hugging Face como `feature-extraction`, lo que indica uso del backbone para extraccion de caracteristicas.
 - Soporte de endpoints compatibles (tag `endpoints_compatible`).
 - Idiomas: prompts de texto documentados unicamente en ingles.
 
@@ -70,7 +70,7 @@ No se han publicado en la informacion disponible tablas numericas detalladas (Io
 - Pesos del modelo: ~860 M de parametros. Estimacion de VRAM solo para pesos: ~3,4 GB en fp32, ~1,7 GB en fp16/bf16, ~0,9 GB en int8. Hay que sumar activaciones y memoria extra para procesar frames de video.
 - Cabe en GPU de consumo: con fp16, una GPU de 8 GB deberia ser suficiente para imagen; para video conviene disponer de 12-24 GB (RTX 3060 12 GB, RTX 4070/4080, RTX 4090) por el coste de mantener el estado de la sesion y los frames.
 - GPU profesionales recomendadas para despliegue con video o por lotes: A100, H100, L40S.
-- Opciones de despliegue: `transformers` (Sam3Model + Sam3Processor), libreria y repositorio oficial `facebookresearch/sam3`, y endpoints compatibles en HuggingFace.
+- Opciones de despliegue: `transformers` (Sam3Model + Sam3Processor), libreria y repositorio oficial `facebookresearch/sam3`, y endpoints compatibles en Hugging Face.
 - vLLM, llama.cpp, Ollama y TGI no aplican directamente, ya que son soluciones orientadas a modelos generativos de texto y SAM 3 es un modelo de segmentacion.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
@@ -78,7 +78,7 @@ No se han publicado en la informacion disponible tablas numericas detalladas (Io
 
 | Modelo | Parametros | Contexto/idioma | Capacidad destacada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SAM 3 | ~860 M (safetensors) | Prompts en ingles | Segmentacion promptable de vocabulario abierto en imagen y video (PCS) | SAM License (`other`) | HuggingFace (`facebook/sam3`) y repo oficial |
+| SAM 3 | ~860 M (safetensors) | Prompts en ingles | Segmentacion promptable de vocabulario abierto en imagen y video (PCS) | SAM License (`other`) | Hugging Face (`facebook/sam3`) y repo oficial |
 | SAM 2 | no disponible | no disponible | Segmentacion y tracking en imagen/video, sin PCS de vocabulario abierto | no disponible | Repo `facebookresearch/sam2` |
 | SAM (original) | no disponible | no disponible | Segmentacion promptable en imagen con puntos, cajas y mascaras | no disponible | Repo original de Meta |
 
@@ -98,10 +98,10 @@ La diferencia documentada frente a SAM 2 es la incorporacion de la segmentacion 
 
 ## Enlaces
 
-- Repositorio HuggingFace analizado: https://huggingface.co/ml-resources/sam3
+- Repositorio Hugging Face analizado: https://huggingface.co/ml-resources/sam3
 - Modelo original: https://huggingface.co/facebook/sam3
 - Repositorio de codigo oficial: https://github.com/facebookresearch/sam3
 - Repositorio de SAM 2 (predecesor): https://github.com/facebookresearch/sam2
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/akhaliq/sam3
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/akhaliq/sam3
 - Benchmark SA-CO: https://github.com/facebookresearch/sam3#sa-co-dataset
 - Pagina de Wikipedia sobre "ML" (resultado de busqueda no relacionado con el modelo): https://en.wikipedia.org/wiki/ML

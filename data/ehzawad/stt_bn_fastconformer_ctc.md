@@ -87,9 +87,9 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Datos de entrenamiento | WER FLEURS bn test | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| `ehzawad/stt_bn_fastconformer_ctc` | 115,6 M | 1.692,4 h | 17,12 % | CC-BY-SA-4.0 | HuggingFace (NeMo) |
-| `ehzawad/stt_bn_fastconformer` (fase 1) | no disponible | 984 h | 19,67 % | no disponible | HuggingFace |
-| `ehzawad/stt_bn_qwen3_asr` (Qwen3-ASR-1.7B + adaptador) | 1,7 B | no disponible | 16,54 % | no disponible | HuggingFace |
+| `ehzawad/stt_bn_fastconformer_ctc` | 115,6 M | 1.692,4 h | 17,12 % | CC-BY-SA-4.0 | Hugging Face (NeMo) |
+| `ehzawad/stt_bn_fastconformer` (fase 1) | no disponible | 984 h | 19,67 % | no disponible | Hugging Face |
+| `ehzawad/stt_bn_qwen3_asr` (Qwen3-ASR-1.7B + adaptador) | 1,7 B | no disponible | 16,54 % | no disponible | Hugging Face |
 | Otros sistemas ASR para bengali (Whisper large-v3, IndicConformer de AI4Bharat, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada no incluye resultados de WER de otros sistemas ASR sobre el mismo conjunto de evaluacion, por lo que no es posible una comparacion directa con alternativas externas a la linea de trabajo del autor.
@@ -110,7 +110,7 @@ La informacion proporcionada no incluye resultados de WER de otros sistemas ASR 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ehzawad/stt_bn_fastconformer_ctc
+- Modelo en Hugging Face: https://huggingface.co/ehzawad/stt_bn_fastconformer_ctc
 - Modelo predecesor (fase 1): https://huggingface.co/ehzawad/stt_bn_fastconformer
 - Adaptador bengali sobre Qwen3-ASR-1.7B: https://huggingface.co/ehzawad/stt_bn_qwen3_asr
 - Modelo base: https://huggingface.co/nvidia/stt_en_fastconformer_ctc_large

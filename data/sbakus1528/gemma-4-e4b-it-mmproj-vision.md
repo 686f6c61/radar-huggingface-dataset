@@ -82,7 +82,7 @@ La comparativa directa con otros proyectores de vision no es posible sin datos p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sbakus1528/gemma-4-E4B-it-mmproj-vision
+- Repositorio Hugging Face: https://huggingface.co/sbakus1528/gemma-4-E4B-it-mmproj-vision
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Modelo base (sin instrucciones): https://huggingface.co/google/gemma-4-E4B
 - Fuente del GGUF original: https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF

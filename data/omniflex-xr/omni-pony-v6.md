@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OMNI-PONY-V6 es un modelo publicado en HuggingFace por el usuario OMNIFLEX-XR bajo licencia OpenRAIL. En la informacion disponible, el repositorio aparece creado el 3 de octubre de 2026 y actualizado el mismo dia, con 0 descargas y 0 likes acumulados. La model card asociada no contiene mas contenido que la declaracion de licencia (`license: openrail`), por lo que no hay documentacion tecnica publicada por el autor.
+OMNI-PONY-V6 es un modelo publicado en Hugging Face por el usuario OMNIFLEX-XR bajo licencia OpenRAIL. En la informacion disponible, el repositorio aparece creado el 3 de octubre de 2026 y actualizado el mismo dia, con 0 descargas y 0 likes acumulados. La model card asociada no contiene mas contenido que la declaracion de licencia (`license: openrail`), por lo que no hay documentacion tecnica publicada por el autor.
 
 Como consecuencia, no es posible determinar la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados, el pipeline de inferencia ni el proceso de entrenamiento. El unico dato cuantitativo disponible es el tamano del repositorio, 7,9 GB. No se ha publicado ningun resultado de benchmarks ni una descripcion del dataset de entrenamiento.
 
@@ -55,7 +55,7 @@ Los siguientes escenarios se plantean como hipotesis de evaluacion, condicionado
 - Atencion al cliente multi-turno: requeriria una longitud de contexto conocida y un comportamiento estable en conversaciones largas; ninguno de los dos datos esta disponible.
 - Generacion de imagenes o contenido visual: si el nombre del repositorio refleja una arquitectura de difusion, el uso seria la sintesis de imagenes, pero no hay confirmacion de ello.
 - Extraccion de informacion estructurada: exigiria validar previamente el soporte de formato JSON y la fidelidad a esquemas, algo imposible sin ejecutar el modelo.
-- Prototipado e investigacion sobre modelos indocumentados: el repositorio puede ser util como caso de estudio sobre publicacion sin documentacion, reproducibilidad y riesgos de cadena de suministro en HuggingFace.
+- Prototipado e investigacion sobre modelos indocumentados: el repositorio puede ser util como caso de estudio sobre publicacion sin documentacion, reproducibilidad y riesgos de cadena de suministro en Hugging Face.
 - Despliegue en local para uso personal: viable unicamente tras verificar el formato de los pesos y su compatibilidad con el runtime elegido.
 - Fine-tuning o destilacion: sin conocer la licencia exacta ni la arquitectura, no es una via recomendable.
 
@@ -85,7 +85,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 | Longitud de contexto | no disponible | no determinable |
 | Rendimiento en benchmarks | no publicado | no determinable |
 | Licencia | OpenRAIL (variante no especificada) | no determinable |
-| Disponibilidad | repositorio publico en HuggingFace, 0 descargas | no determinable |
+| Disponibilidad | repositorio publico en Hugging Face, 0 descargas | no determinable |
 | Documentacion | inexistente (solo licencia) | no determinable |
 
 ## Limitaciones y advertencias
@@ -102,9 +102,9 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OMNIFLEX-XR/OMNI-PONY-V6
+- Repositorio en Hugging Face: https://huggingface.co/OMNIFLEX-XR/OMNI-PONY-V6
 - Paper o informe tecnico: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible
 - Demo o espacio interactivo: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/OMNIFLEX-XR
+- Perfil del autor en Hugging Face: https://huggingface.co/OMNIFLEX-XR

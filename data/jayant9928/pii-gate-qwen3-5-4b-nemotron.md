@@ -74,7 +74,7 @@ No se han publicado en la informacion disponible resultados de benchmarks de uso
 - VRAM estimada para el modelo base: en el orden de 8-10 GB en precision de 16 bits y de 4-6 GB con cuantizacion de 8 bits (estimacion orientativa; no hay datos de VRAM publicados en la informacion disponible).
 - GPU recomendadas: no indicadas por el autor. La unica referencia de rendimiento es de aproximadamente 65 decisiones por segundo en una GPU sin especificar.
 - Encaje en GPU de consumo: probablemente si en tarjetas de 12-24 GB de VRAM para el modelo base segun cuantizacion (estimacion, no confirmada en la informacion disponible).
-- Opciones de despliegue: el ejemplo oficial usa `anyjev.Decider` con el backend de HuggingFace (`anyjev.backends.hf.HFBackend`) y `anyjev>=0.2.0`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: el ejemplo oficial usa `anyjev.Decider` con el backend de Hugging Face (`anyjev.backends.hf.HFBackend`) y `anyjev>=0.2.0`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: el autor declara aproximadamente 65 decisiones por segundo en una GPU; el procesamiento por lotes se realiza con `decide_batch`.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye resultados comparativos f
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jayant9928/pii-gate-qwen3.5-4b-nemotron` | Cabeza ~55 KB sobre base de 4B | No disponible | Exactitud 96,8-97,1%; ECE 0,010; ~65 decisiones/s | CC BY 4.0 (cabeza) | HuggingFace |
+| `Jayant9928/pii-gate-qwen3.5-4b-nemotron` | Cabeza ~55 KB sobre base de 4B | No disponible | Exactitud 96,8-97,1%; ECE 0,010; ~65 decisiones/s | CC BY 4.0 (cabeza) | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -101,10 +101,10 @@ No disponible. La informacion proporcionada no incluye resultados comparativos f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jayant9928/pii-gate-qwen3.5-4b-nemotron
+- Modelo en Hugging Face: https://huggingface.co/Jayant9928/pii-gate-qwen3.5-4b-nemotron
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/Nemotron-PII
 - Repositorio AnyJev: https://github.com/nokia-applied-research/AnyJev
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 
-Nota: la busqueda web realizada no ha devuelto resultados relevantes sobre este modelo; los enlaces listados proceden de la informacion de HuggingFace y de la model card del autor.
+Nota: la busqueda web realizada no ha devuelto resultados relevantes sobre este modelo; los enlaces listados proceden de la informacion de Hugging Face y de la model card del autor.

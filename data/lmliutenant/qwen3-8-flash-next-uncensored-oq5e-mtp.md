@@ -101,7 +101,7 @@ No se dispone de comparaciones con modelos de otra familia o de otro proveedor d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LMLiutenant/Qwen3.8-Flash-Next-Uncensored-oQ5e-mtp
+- Repositorio Hugging Face: https://huggingface.co/LMLiutenant/Qwen3.8-Flash-Next-Uncensored-oQ5e-mtp
 - Modelo base abliterado: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Modelo oficial de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Build hermana oQ6e: https://huggingface.co/LMLiutenant/Qwen3.8-Flash-Next-Uncensored-oQ6e-mtp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-llamafile es un empaquetado en formato llamafile del modelo LiquidAI/LFM3-1.7B-GGUF, publicado por el usuario thread13 en HuggingFace. Un llamafile es un ejecutable universal de un solo fichero basado en el formato APE (Actually Portable Executable) de Cosmopolitan, construido sobre binarios de llama.cpp, que embebe los pesos del modelo y ofrece interfaces de chat por consola y servidor web sin necesidad de instalar dependencias adicionales.
+LFM3-1.7B-llamafile es un empaquetado en formato llamafile del modelo LiquidAI/LFM3-1.7B-GGUF, publicado por el usuario thread13 en Hugging Face. Un llamafile es un ejecutable universal de un solo fichero basado en el formato APE (Actually Portable Executable) de Cosmopolitan, construido sobre binarios de llama.cpp, que embebe los pesos del modelo y ofrece interfaces de chat por consola y servidor web sin necesidad de instalar dependencias adicionales.
 
 El modelo subyacente es LFM3-1.7B, desarrollado por Liquid AI, del que este repositorio solo redistribuye una conversión a formato ejecutable. La model card del repositorio no aporta informacion sobre arquitectura, datos de entrenamiento, licencia ni idiomas del modelo original; toda la documentacion disponible se centra en el uso del ejecutable llamafile (version 0.10) y en advertencias sobre falsos positivos de antivirus.
 
@@ -80,8 +80,8 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thread13/LFM3-1.7B-llamafile
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/thread13/LFM3-1.7B-llamafile
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF
 - Documentacion de llamafile (quickstart): https://github.com/mozilla-ai/llamafile/blob/main/docs/quickstart.md
 - Guia de ejecucion de llamafiles: https://github.com/mozilla-ai/llamafile/blob/main/docs/running_llamafile.md
 - Guia de creacion de llamafiles: https://github.com/mozilla-ai/llamafile/blob/main/docs/creating_llamafiles.md

@@ -71,6 +71,6 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/graf/science_gemma_1b_mix_metropolis16_qwen4b-metropolis16-88473243-1-142-on
+- Modelo en Hugging Face: https://huggingface.co/graf/science_gemma_1b_mix_metropolis16_qwen4b-metropolis16-88473243-1-142-on
 - Modelo hermano con objetivo BT: https://huggingface.co/graf/science_gemma_1b_mix_bt_qwen4b-bt-0091fc01-1-142-on
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B

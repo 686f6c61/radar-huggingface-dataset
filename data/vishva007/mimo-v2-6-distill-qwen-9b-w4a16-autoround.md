@@ -83,6 +83,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Vishva007/MiMo-V2.6-Distill-Qwen-9B-W4A16-AutoRound
+- Repositorio Hugging Face: https://huggingface.co/Vishva007/MiMo-V2.6-Distill-Qwen-9B-W4A16-AutoRound
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - RunPod (enlace de afiliado incluido en la model card): https://runpod.io?ref=iabrlp7z

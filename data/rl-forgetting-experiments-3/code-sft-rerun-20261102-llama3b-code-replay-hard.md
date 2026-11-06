@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| code-sft-rerun-20261102-llama3b-code-replay-hard | 3B | 4096 (entrenamiento) | Llama 3.2 Community License | HuggingFace, 0 descargas | Checkpoint de investigación con replay |
+| code-sft-rerun-20261102-llama3b-code-replay-hard | 3B | 4096 (entrenamiento) | Llama 3.2 Community License | Hugging Face, 0 descargas | Checkpoint de investigación con replay |
 | Llama-3.2-3B-Instruct | 3B | 128k (nativo) | Llama 3.2 Community License | Amplia | Modelo base sin SFT de código |
 | Qwen2.5-3B | 3B | 32k (nativo) | Qwen Research License | Amplia | Alternativa de 3B con licencia restrictiva |
 | Qwen3-1.7B-Base | 1.7B | no disponible | Apache 2.0 | Amplia | Alternativa más pequeña con licencia permisiva |
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RL-Forgetting-Experiments-3/code-sft-rerun-20261102-llama3b-code-replay-hard
+- Hugging Face: https://huggingface.co/RL-Forgetting-Experiments-3/code-sft-rerun-20261102-llama3b-code-replay-hard
 - Repositorio de artefactos: no disponible como URL directa en la información proporcionada (se mencionan `delivery_manifest.json`, `request-provenance.json` y `evaluations/mbppplus_n160_t0.6/delivery_manifest.json` dentro del repo)
 - Paper: no disponible
 - Blog: no disponible

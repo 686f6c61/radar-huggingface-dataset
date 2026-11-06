@@ -21,7 +21,7 @@ Su relevancia actual es limitada y experimental: el repositorio tiene 0 descarga
 | Licencia | No disponible. La model card incluye "licence: license" sin concretar términos. |
 | Formato de pesos | Safetensors. |
 | Tamaño del repositorio | 0,3 GB. |
-| Pipeline de HuggingFace | No disponible. |
+| Pipeline de Hugging Face | No disponible. |
 | Framework de entrenamiento | TRL 0.19.1, Transformers 4.54.0, PyTorch 2.7.1, Datasets 3.6.0, Tokenizers 0.21.1. |
 
 ## Arquitectura y entrenamiento
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Echoo113/gemma-3-4b-it-vegetable_eggplant-STEER2.25-ft4.42 | No confirmado; denominación 4B | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes | SFT con TRL; sin benchmarks ni evaluación publicada. |
-| google/gemma-3-4b-it | 4B según denominación, no confirmado en la información | No disponible | No disponible | Modelo base en HuggingFace | Referencia oficial usada como punto de partida; sus especificaciones no se detallan en la información disponible. |
-| Echoo113/gemma-3-4b-it-dragon_mlpBout-STEER1.6875-ft4.42 | No confirmado; denominación 4B | No disponible | No disponible | HuggingFace | Otra variante del mismo autor; sin datos de rendimiento ni evaluación. |
+| Echoo113/gemma-3-4b-it-vegetable_eggplant-STEER2.25-ft4.42 | No confirmado; denominación 4B | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes | SFT con TRL; sin benchmarks ni evaluación publicada. |
+| google/gemma-3-4b-it | 4B según denominación, no confirmado en la información | No disponible | No disponible | Modelo base en Hugging Face | Referencia oficial usada como punto de partida; sus especificaciones no se detallan en la información disponible. |
+| Echoo113/gemma-3-4b-it-dragon_mlpBout-STEER1.6875-ft4.42 | No confirmado; denominación 4B | No disponible | No disponible | Hugging Face | Otra variante del mismo autor; sin datos de rendimiento ni evaluación. |
 
 No se dispone de resultados de benchmarks que permitan comparar el rendimiento de estos modelos.
 
@@ -87,7 +87,7 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento d
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Echoo113/gemma-3-4b-it-vegetable_eggplant-STEER2.25-ft4.42)
+- [Modelo en Hugging Face](https://huggingface.co/Echoo113/gemma-3-4b-it-vegetable_eggplant-STEER2.25-ft4.42)
 - [Modelo base google/gemma-3-4b-it](https://huggingface.co/google/gemma-3-4b-it)
 - [Repositorio de TRL](https://github.com/huggingface/trl)
 - [Gemma 3 en Google DeepMind](https://deepmind.google/models/gemma/gemma-3/)

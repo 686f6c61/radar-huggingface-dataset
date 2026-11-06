@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nero Optimizer Work — SimO (lr=0.001) es un checkpoint de investigacion publicado por el usuario j0no12 en HuggingFace, no un modelo de lenguaje destinado a uso real. Se trata del brazo experimental entrenado con el optimizador SimO a una tasa de aprendizaje de 0,001 dentro de un barrido comparativo de optimizadores denominado Nero Optimizer Work. El objetivo del autor es hacer reproducible la comparacion entre optimizadores bajo una configuracion congelada, no ofrecer un modelo util para tareas de generacion.
+Nero Optimizer Work — SimO (lr=0.001) es un checkpoint de investigacion publicado por el usuario j0no12 en Hugging Face, no un modelo de lenguaje destinado a uso real. Se trata del brazo experimental entrenado con el optimizador SimO a una tasa de aprendizaje de 0,001 dentro de un barrido comparativo de optimizadores denominado Nero Optimizer Work. El objetivo del autor es hacer reproducible la comparacion entre optimizadores bajo una configuracion congelada, no ofrecer un modelo util para tareas de generacion.
 
 El modelo es un decoder denso de ~999.680 parametros, con vocabulario de 2.048 tokens, flujo residual de 128 dimensiones, 6 bloques, cabezas de atencion de 32 dimensiones y una MLP con compuerta de 148 dimensiones. Se entreno sobre 500 millones de tokens con una longitud de contexto de solo 128 tokens, usando Apple MLX como backend, sobre el flujo de tokens finephrase-balanced-500m-2k-v2 y con lotes de 32 ejemplos. La perdida final de entrenamiento registrada es de 4,859327.
 
@@ -89,11 +89,11 @@ No disponible. La informacion proporcionada no incluye datos de los demas brazos
 - Restricciones de licencia: no se afirma ninguna licencia de modelo nueva. El autor recomienda revisar los terminos de los datos de origen antes de redistribuir o usar el modelo aguas abajo. Sin licencia explicita, el uso comercial queda en un limbo legal.
 - Estado del artefacto: es un checkpoint de investigacion preentrenado, no ajustado por instrucciones ni listo para produccion. No es un checkpoint de Transformers y requiere un cargador local compatible con MLX.
 - Ausencia de validacion: no se guardo ningun artefacto de validacion independiente, por lo que no hay ninguna medida de generalizacion fuera del conjunto de entrenamiento.
-- Metadatos llamativos: la fecha de creacion indicada en HuggingFace es 2026-09-22, posterior a la fecha habitual de publicacion; conviene verificarla antes de citar el artefacto.
+- Metadatos llamativos: la fecha de creacion indicada en Hugging Face es 2026-09-22, posterior a la fecha habitual de publicacion; conviene verificarla antes de citar el artefacto.
 - Estado de adopcion: 0 descargas y 0 "likes" en el momento de la consulta, lo que indica que el checkpoint no ha sido validado por terceros.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-simo-lr0p001
-- Perfil del autor en HuggingFace: https://huggingface.co/j0no12
+- Repositorio en Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-simo-lr0p001
+- Perfil del autor en Hugging Face: https://huggingface.co/j0no12
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al barrido Nero Optimizer Work, al optimizador SimO ni al corpus finephrase-balanced-500m-2k-v2. Los resultados devueltos correspondian a paginas generales de Reddit, sin relacion con este artefacto.

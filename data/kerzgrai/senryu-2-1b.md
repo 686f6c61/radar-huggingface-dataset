@@ -86,10 +86,10 @@ La comparación directa de calidad no puede establecerse: Senryu-2-1B no publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KerzgrAI/Senryu-2-1B
+- Modelo en Hugging Face: https://huggingface.co/KerzgrAI/Senryu-2-1B
 - Demo Space (ZeroGPU): https://huggingface.co/spaces/KerzgrAI/senryu-2-1b-demo
 - Organización KerzgrAI: https://huggingface.co/KerzgrAI
 - Modelo predecesor Senryu (803M): https://huggingface.co/kerzgrr/Senryu
-- Modelos etiquetados como senryu en HuggingFace: https://huggingface.co/models?other=senryu
+- Modelos etiquetados como senryu en Hugging Face: https://huggingface.co/models?other=senryu
 - Referencias arXiv declaradas en los metadatos: arxiv.org/abs/2605.22791, arxiv.org/abs/2605.29157, arxiv.org/abs/2601.07372 (títulos no disponibles en la información proporcionada)
 - Librería `flash-linear-attention` (dependencia de ejecución, instalada desde git en un commit fijado)

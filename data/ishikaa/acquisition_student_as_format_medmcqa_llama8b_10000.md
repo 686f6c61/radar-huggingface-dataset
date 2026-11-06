@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ishikaa/acquisition_student_AS_format_medmcqa_llama8b_10000` es un checkpoint de tipo text-generation publicado en HuggingFace por el usuario `ishikaa`, con 8.030.261.248 parametros reales (segun los pesos en safetensors) y un repositorio de 16,1 GB, lo que corresponde a un guardado en precision de 16 bits. El nombre del repositorio sugiere un ajuste fino de un modelo Llama de 8B (probablemente Llama 3 o Llama 3.1 8B) sobre el dataset MedMCQA, un corpus de preguntas de opcion multiple de examenes medicos de acceso en India, con un subconjunto de 10.000 ejemplos y un formato de entrenamiento denominado "AS format". Ninguna de estas inferencias esta confirmada en la model card, que es una plantilla autogenerada sin contenido sustantivo.
+`ishikaa/acquisition_student_AS_format_medmcqa_llama8b_10000` es un checkpoint de tipo text-generation publicado en Hugging Face por el usuario `ishikaa`, con 8.030.261.248 parametros reales (segun los pesos en safetensors) y un repositorio de 16,1 GB, lo que corresponde a un guardado en precision de 16 bits. El nombre del repositorio sugiere un ajuste fino de un modelo Llama de 8B (probablemente Llama 3 o Llama 3.1 8B) sobre el dataset MedMCQA, un corpus de preguntas de opcion multiple de examenes medicos de acceso en India, con un subconjunto de 10.000 ejemplos y un formato de entrenamiento denominado "AS format". Ninguna de estas inferencias esta confirmada en la model card, que es una plantilla autogenerada sin contenido sustantivo.
 
 El modelo no resuelve un problema de producto: es un artefacto de investigacion. Por el nombre ("acquisition_student") apunta a un experimento de destilacion o de aprendizaje activo (adquisicion de datos) donde este checkpoint actua como alumno, entrenado presumiblemente a partir de las salidas de un modelo mayor o de un subconjunto seleccionado del dataset. La relevancia actual es limitada y muy acotada a quien trabaje en destilacion, seleccion de datos para dominios medicos o evaluacion de formatos de respuesta en tareas de opcion multiple.
 
@@ -71,10 +71,10 @@ La comparacion se limita a datos verificables de parametros, contexto y licencia
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`ishikaa/...llama8b_10000`) | 8,03 B | no disponible | medico (MedMCQA) | no disponible | HuggingFace, 0 descargas |
-| Llama 3.1 8B Instruct (Meta) | 8,03 B | 128.000 tokens | general | licencia comunitaria de Llama 3.1 | HuggingFace, ampliamente usado |
-| BioMistral 7B | 7,24 B | no verificado en esta busqueda | biomedico | licencia del modelo base Mistral 7B | HuggingFace |
-| Meditron 7B | 7 B | no verificado en esta busqueda | medico | licencia del modelo base Llama 2 | HuggingFace |
+| Este modelo (`ishikaa/...llama8b_10000`) | 8,03 B | no disponible | medico (MedMCQA) | no disponible | Hugging Face, 0 descargas |
+| Llama 3.1 8B Instruct (Meta) | 8,03 B | 128.000 tokens | general | licencia comunitaria de Llama 3.1 | Hugging Face, ampliamente usado |
+| BioMistral 7B | 7,24 B | no verificado en esta busqueda | biomedico | licencia del modelo base Mistral 7B | Hugging Face |
+| Meditron 7B | 7 B | no verificado en esta busqueda | medico | licencia del modelo base Llama 2 | Hugging Face |
 
 Nota: los valores de los modelos de comparacion corresponden a informacion publica general y no se han verificado contra sus model cards dentro de esta busqueda; el contexto de BioMistral y Meditron figura como no verificado para no dar por ciertos datos no consultados.
 
@@ -92,7 +92,7 @@ Nota: los valores de los modelos de comparacion corresponden a informacion publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_AS_format_medmcqa_llama8b_10000
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_AS_format_medmcqa_llama8b_10000
 - Articulo citado en las etiquetas del repositorio (Lacoste et al., 2019, calculador de impacto ambiental; no describe el modelo): https://arxiv.org/abs/1910.09700
 - Repositorio del calculador de impacto de aprendizaje automatico citado en la plantilla: https://mloc2.github.io/impact (referencia textual de la model card; el enlace correcto indicado alli es https://mlco2.github.io/impact)
 - Dataset homonimo al que apunta el nombre del modelo (MedMCQA): referencia externa, no enlazada ni confirmada en la model card ni en los resultados de busqueda.

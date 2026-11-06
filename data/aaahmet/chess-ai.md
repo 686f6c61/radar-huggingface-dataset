@@ -32,7 +32,7 @@ El modelo utiliza una representación del estado del tablero como un tensor de 8
 - Inferencia local mediante PyTorch, con soporte explícito para aceleración por CUDA y Apple Silicon (MPS).
 - Carga directa del modelo con `best_model.pth` para inferencia o reentrenamiento.
 - Inclusión de scripts `board_encoder.py` y `play_engine.py` para convertir posiciones y seleccionar movimientos de forma autónoma.
-- Sus tags en HuggingFace incluyen `reinforcement-learning`, lo que indica que el modelo puede adaptarse como base para esquemas de aprendizaje por refuerzo en ajedrez, aunque el entrenamiento publicado es supervisado.
+- Sus tags en Hugging Face incluyen `reinforcement-learning`, lo que indica que el modelo puede adaptarse como base para esquemas de aprendizaje por refuerzo en ajedrez, aunque el entrenamiento publicado es supervisado.
 - No es un modelo de lenguaje: no genera texto, no admite tool calling ni conversaciones multimodales. Su entrada y salida son estrictamente tableros y evaluaciones de ajedrez.
 
 ## Casos de uso
@@ -67,11 +67,11 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 - Al ser un modelo pequeño (3 bloques residuales), su evaluación de posiciones probablemente sea menos precisa que motores clásicos como Stockfish o redes mucho mayores como Leela Chess Zero.
 - No se documenta en la model card si `play_engine.py` utiliza búsqueda (MCTS o minimax); el rendimiento en partidas depende completamente de esa lógica externa, no solo de la red.
 - La licencia MIT permite uso comercial, pero los datos de entrenamiento provienen de Lichess; conviene revisar las condiciones de uso de los datos de Lichess antes de desplegar el modelo en un producto comercial.
-- El proyecto se encuentra en una fase temprana: el repositorio de HuggingFace registra 0 descargas y 0 likes, y la documentación disponible es básica, por lo que puede haber errores o falta de mantenimiento.
+- El proyecto se encuentra en una fase temprana: el repositorio de Hugging Face registra 0 descargas y 0 likes, y la documentación disponible es básica, por lo que puede haber errores o falta de mantenimiento.
 - No se ofrecen ficheros de cuantización ni versiones optimizadas para inferencia en producción; el modelo solo se distribuye en formato `.pth` de PyTorch.
 - El espacio de movimientos está fijado a 4,352 representaciones, un diseño estándar en motores de ajedrez basados en redes neuronales, pero debe validarse que cubra todos los movimientos legales posibles en las posiciones de interés.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aaahmet/chess-ai
+- Modelo en Hugging Face: https://huggingface.co/aaahmet/chess-ai
 - Repositorio GitHub del autor: https://github.com/Ahmet-Dedeler/chess-ai

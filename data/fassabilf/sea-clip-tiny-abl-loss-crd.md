@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SEA-CLIP-Tiny (ablation: CLIP + CRD) es un checkpoint de investigación publicado por el usuario `fassabilf` en HuggingFace, concebido como una fila más de la tabla de ablaciones del modelo principal SEA-CLIP-Tiny, presentado en ACCV 2026. Se trata de un modelo de embeddings texto-imagen de arquitectura CLIP clásica y tamano muy reducido (46,11 M de parámetros), entrenado para clasificación de imágenes zero-shot y recuperación (retrieval) multimodal en lenguas del sudeste asiático. Su diferencia con el modelo principal es exclusivamente el objetivo de destilación: en este caso, solo contraste + destilación relacional contrastiva (CRD), sin otros términos de pérdida.
+SEA-CLIP-Tiny (ablation: CLIP + CRD) es un checkpoint de investigación publicado por el usuario `fassabilf` en Hugging Face, concebido como una fila más de la tabla de ablaciones del modelo principal SEA-CLIP-Tiny, presentado en ACCV 2026. Se trata de un modelo de embeddings texto-imagen de arquitectura CLIP clásica y tamano muy reducido (46,11 M de parámetros), entrenado para clasificación de imágenes zero-shot y recuperación (retrieval) multimodal en lenguas del sudeste asiático. Su diferencia con el modelo principal es exclusivamente el objetivo de destilación: en este caso, solo contraste + destilación relacional contrastiva (CRD), sin otros términos de pérdida.
 
 El modelo combina una torre de visión ViT-T/16 con una torre de texto de 12 capas y 384 dimensiones, ambas proyectadas a un espacio común de 512 dimensiones, y utiliza el tokenizador BPE de CLIP con un vocabulario de 49.408 tokens. Se entrenó con 12,72 millones de pares imagen-texto procedentes de cinco fuentes (CC12M, CulturalGround-OE-filt, WIT, Bloom y Mammoth-VL-SEA), destilando desde MetaCLIP2-ViT-B-16-worldwide.
 
@@ -88,8 +88,8 @@ No se dispone de cifras de benchmarks de los modelos comparables en la informaci
 
 | Modelo | Relacion | Parametros | Contexto de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sea-clip-tiny-abl-loss-crd (este) | Ablacion con solo contraste + CRD | 46,11 M | 77 tokens | MIT | HuggingFace, 0 descargas |
-| sea-clip-tiny | Modelo principal; misma arquitectura, pipeline e hiperparametros, distinto objetivo de destilacion | 46,11 M (misma arquitectura) | 77 tokens | no disponible en la informacion | HuggingFace |
+| sea-clip-tiny-abl-loss-crd (este) | Ablacion con solo contraste + CRD | 46,11 M | 77 tokens | MIT | Hugging Face, 0 descargas |
+| sea-clip-tiny | Modelo principal; misma arquitectura, pipeline e hiperparametros, distinto objetivo de destilacion | 46,11 M (misma arquitectura) | 77 tokens | no disponible en la informacion | Hugging Face |
 | MetaCLIP2-ViT-B-16-worldwide | Profesor usado en la destilacion; mayor capacidad | no disponible | no disponible | no disponible | Referenciado como profesor |
 | Otros CLIP multilingues de escala similar | Alternativas de la misma categoria funcional | no disponible | no disponible | no disponible | no disponible |
 
@@ -109,10 +109,10 @@ No se han encontrado en la busqueda web enlaces utiles ni fichas tecnicas de alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fassabilf/sea-clip-tiny-abl-loss-crd
+- Modelo en Hugging Face: https://huggingface.co/fassabilf/sea-clip-tiny-abl-loss-crd
 - Modelo principal (SEA-CLIP-Tiny): https://huggingface.co/fassabilf/sea-clip-tiny
 - Repositorio de codigo de entrenamiento y evaluacion: https://github.com/fassabilf/sea-clip-tiny
 - Cita del paper: SEA-CLIP-Tiny: Efficient Multilingual Text-Vision Embedding for Southeast Asian Languages, Asian Conference on Computer Vision (ACCV), 2026 (sin enlace disponible)
-- Configuracion de entrenamiento del checkpoint: archivo `params.txt` dentro del repositorio de HuggingFace
+- Configuracion de entrenamiento del checkpoint: archivo `params.txt` dentro del repositorio de Hugging Face
 
 Nota: la busqueda web realizada no devolvio resultados relevantes sobre el modelo ni sobre el paper; los unicos enlaces utiles son los incluidos en la propia model card.

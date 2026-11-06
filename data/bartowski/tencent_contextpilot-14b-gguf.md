@@ -76,8 +76,8 @@ ContextPilot-14B se diferencia de Qwen3-14B por su entrenamiento especifico en g
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion GGUF: https://huggingface.co/bartowski/tencent_ContextPilot-14B-GGUF
-- Modelo original en HuggingFace: https://huggingface.co/tencent/ContextPilot-14B
+- Repositorio Hugging Face de la cuantizacion GGUF: https://huggingface.co/bartowski/tencent_ContextPilot-14B-GGUF
+- Modelo original en Hugging Face: https://huggingface.co/tencent/ContextPilot-14B
 - Repositorio GitHub de Tencent: https://github.com/Tencent/ContextPilot
 - Articulo en arXiv: 2608.28476 (aceptado en EMNLP 2026)
 - Analisis en The Agent Report: https://the-agent-report.com/2026/08/tencent-contextpilot-14b-agent-context-management-rl/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jarvis-r0-GGUF es una version cuantizada en formato GGUF de jarvis-r0, un modelo multimodal (vision-lenguaje) publicado por el usuario modrez en HuggingFace. Segun las etiquetas del repositorio y los nombres de los ficheros incluidos (gemma-4-E2B-it), todo apunta a que se trata de un ajuste fino sobre una variante de la familia Gemma con activacion selectiva de parametros, pero la model card no confirma la arquitectura base ni el proceso de entrenamiento. El repositorio acumula 83 descargas y 0 "likes" en el momento de redactar esta ficha, y el tamano total del repo es de 8,0 GB.
+jarvis-r0-GGUF es una version cuantizada en formato GGUF de jarvis-r0, un modelo multimodal (vision-lenguaje) publicado por el usuario modrez en Hugging Face. Segun las etiquetas del repositorio y los nombres de los ficheros incluidos (gemma-4-E2B-it), todo apunta a que se trata de un ajuste fino sobre una variante de la familia Gemma con activacion selectiva de parametros, pero la model card no confirma la arquitectura base ni el proceso de entrenamiento. El repositorio acumula 83 descargas y 0 "likes" en el momento de redactar esta ficha, y el tamano total del repo es de 8,0 GB.
 
 El modelo declara 4.647.450.147 parametros totales (unos 4,65 mil millones), lo que lo situa en la gama de modelos pequenos aptos para ejecucion local en hardware de consumo. La conversion a GGUF se realizo con Unsloth, y el repositorio ofrece tres ficheros: un proyector multimodal en BF16 (necesario para el modo vision) y dos cuantizaciones de los pesos del LLM (Q4_K_M y Q5_K_M).
 
@@ -22,7 +22,7 @@ Su relevancia actual es limitada pero concreta: permite probar un modelo multimo
 | Formato de pesos | GGUF (llama.cpp) |
 | Tamano del repositorio | 8,0 GB |
 | Descargas / likes | 83 / 0 |
-| Fecha de creacion | 2026-10-04 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-04 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -95,7 +95,7 @@ Salvedad: la identificacion de jarvis-r0 con Gemma 3n E2B es una hipotesis basad
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/modrez/jarvis-r0-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/modrez/jarvis-r0-GGUF
 - Repositorio del modelo fusionado (merged): https://huggingface.co/modrez/jarvis-r0-merged
 - Unsloth (herramienta de conversion a GGUF): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de inferencia GGUF): https://github.com/ggml-org/llama.cpp

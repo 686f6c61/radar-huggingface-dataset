@@ -41,7 +41,7 @@ La innovación técnica documentada es de empaquetado y preservación: el reposi
 - Reconstrucción de un entorno de inferencia DeepSeek V4.1 Flash GSQ: el tensor Engram se instala en la ruta esperada por el loader compatible para que el modelo consumidor arranque con su enlace Engram correcto.
 - Verificación de integridad en despliegues de producción: el manifiesto SHA-256 permite auditar que el fichero Engram desplegado coincide byte a byte con el original de ISTA-DASLab antes de servir tráfico.
 - Archivado a largo plazo de configuraciones reproducibles: al fijar la revisión de pesos, un equipo puede reconstruir exactamente el mismo entorno meses después, útil para auditorías de resultados o replicación de experimentos.
-- Distribución en entornos con acceso restringido a HuggingFace: el espejo permite descargar el tensor desde una ruta alternativa manteniendo la procedencia atribuida.
+- Distribución en entornos con acceso restringido a Hugging Face: el espejo permite descargar el tensor desde una ruta alternativa manteniendo la procedencia atribuida.
 - Integración en pipelines de CI que validan artefactos de modelos: el script de conversión y el manifiesto permiten comprobar automáticamente que el empaquetado GSQ está completo antes de desplegar.
 - Documentación de cadena de custodia para cumplimiento: el repositorio registra publisher, revisión de origen y licencia, lo que facilita justificar el origen del artefacto ante revisiones internas.
 
@@ -89,7 +89,7 @@ No disponible. Este artefacto es una dependencia de runtime y no tiene categorí
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/isilicon/mango-deepseek41-gsq-engram
+- Repositorio Hugging Face: https://huggingface.co/isilicon/mango-deepseek41-gsq-engram
 - Fichero de pesos Engram IQ4_NL: https://huggingface.co/isilicon/mango-deepseek41-gsq-engram/resolve/main/DeepSeek-V4.1-Flash-Engram-IQ4_NL.gguf
 - Script de conversión: https://huggingface.co/isilicon/mango-deepseek41-gsq-engram/resolve/main/convert_ds41_upstream.py
 - Modelo base (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF

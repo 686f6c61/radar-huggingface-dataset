@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`faheem098/crop-disease-model` es un repositorio de modelo publicado en HuggingFace por el usuario faheem098. La única información verificable disponible es el identificador del repositorio, el autor, la licencia declarada (MIT), el sello de idioma `region:us` y las fechas de creación y última actualización (ambas 2026-09-11T10:47:42Z). No se ha publicado model card descriptiva, pipeline declarado, número de parámetros, arquitectura ni idiomas soportados.
+`faheem098/crop-disease-model` es un repositorio de modelo publicado en Hugging Face por el usuario faheem098. La única información verificable disponible es el identificador del repositorio, el autor, la licencia declarada (MIT), el sello de idioma `region:us` y las fechas de creación y última actualización (ambas 2026-09-11T10:47:42Z). No se ha publicado model card descriptiva, pipeline declarado, número de parámetros, arquitectura ni idiomas soportados.
 
 El nombre del repositorio sugiere que el modelo está orientado a la detección o clasificación de enfermedades en cultivos, una tarea típicamente abordada con modelos de visión por computador (clasificación de imágenes de hojas, segmentación de lesiones o detección de objetos sobre fotografías de campo). Sin embargo, esta interpretación procede únicamente de la convención de nombres y no está respaldada por documentación, código de ejemplo ni resultados publicados en el repositorio.
 
@@ -90,6 +90,6 @@ No se dispone de datos de parámetros, contexto, rendimiento ni disponibilidad d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/faheem098/crop-disease-model
+- Repositorio en Hugging Face: https://huggingface.co/faheem098/crop-disease-model
 - Paper, blog, repositorio de código o demo: no disponible.
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante; los resultados obtenidos corresponden a páginas del Ayuntamiento de Paderno Dugnano (Italia) sin relación con el modelo.

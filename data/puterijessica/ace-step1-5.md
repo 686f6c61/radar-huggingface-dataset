@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACE-Step 1.5 | LM + DiT | LM 0.6B-4B; DiT no disponible | Hasta 10 min | MIT | HuggingFace, ModelScope |
-| MusicGen (Meta) | Transformer decoder | 1.5B | Hasta 30 segundos | CC-BY-NC 4.0 | HuggingFace |
-| Stable Audio Open | T2A con autoencoder | 1.2B | Hasta 47 segundos | Stable Audio Open | HuggingFace |
-| AudioCraft (Meta) | EnCodec + Transformer | 1.5B-3.3B | Hasta 30 segundos | MIT (codigo), CC-BY-NC (modelos) | HuggingFace |
+| ACE-Step 1.5 | LM + DiT | LM 0.6B-4B; DiT no disponible | Hasta 10 min | MIT | Hugging Face, ModelScope |
+| MusicGen (Meta) | Transformer decoder | 1.5B | Hasta 30 segundos | CC-BY-NC 4.0 | Hugging Face |
+| Stable Audio Open | T2A con autoencoder | 1.2B | Hasta 47 segundos | Stable Audio Open | Hugging Face |
+| AudioCraft (Meta) | EnCodec + Transformer | 1.5B-3.3B | Hasta 30 segundos | MIT (codigo), CC-BY-NC (modelos) | Hugging Face |
 
 La comparativa se basa en datos publicos de los modelos alternativos. ACE-Step 1.5 se diferencia por su mayor duracion de generacion (10 minutos frente a 30-47 segundos), su licencia MIT permisiva para uso comercial y su menor requisito de VRAM.
 
@@ -87,9 +87,9 @@ La comparativa se basa en datos publicos de los modelos alternativos. ACE-Step 1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/puterijessica/Ace-Step1.5
+- Modelo en Hugging Face: https://huggingface.co/puterijessica/Ace-Step1.5
 - Pagina del proyecto: https://ace-step.github.io/ace-step-v1.5.github.io/
-- Coleccion HuggingFace: https://huggingface.co/collections/ACE-Step/ace-step-15
+- Coleccion Hugging Face: https://huggingface.co/collections/ACE-Step/ace-step-15
 - ModelScope: https://modelscope.cn/models/ACE-Step/Ace-Step1.5
 - Demo en Space: https://huggingface.co/spaces/ACE-Step/Ace-Step-v1.5
 - Discord: https://discord.gg/PeWDxrkdj7

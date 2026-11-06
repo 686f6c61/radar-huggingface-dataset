@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `alejandro-rodriguez/tiny-random-nemotron-h` | 16,9 M | no disponible | Fixture de tests OpenVINO | nvidia-nemotron-open-model-license | HuggingFace |
-| `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16` | 30B (3B activos) | no disponible | Modelo real de produccion | nvidia-nemotron-open-model-license | HuggingFace |
+| `alejandro-rodriguez/tiny-random-nemotron-h` | 16,9 M | no disponible | Fixture de tests OpenVINO | nvidia-nemotron-open-model-license | Hugging Face |
+| `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16` | 30B (3B activos) | no disponible | Modelo real de produccion | nvidia-nemotron-open-model-license | Hugging Face |
 | `NVIDIA-Nemotron-3-Nano-4B` (referenciado en la model card) | 4B | no disponible | Modelo real de menor tamano | no disponible | no disponible |
 
 La comparativa relevante es exclusivamente arquitectonica: el tiny model replica el patron de capas y la configuracion MoE del Nano de 30B a escala minima. No hay modelos comparables en la categoria de "tiny random" mas alla de otros fixtures similares de la comunidad, para los que no se dispone de datos.
@@ -81,7 +81,7 @@ La comparativa relevante es exclusivamente arquitectonica: el tiny model replica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alejandro-rodriguez/tiny-random-nemotron-h
+- Hugging Face: https://huggingface.co/alejandro-rodriguez/tiny-random-nemotron-h
 - Modelo de referencia del tokenizer: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Licencia NVIDIA Nemotron Open Model: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/
 - optimum-intel (repositorio): https://github.com/huggingface/optimum-intel

@@ -85,7 +85,7 @@ Nota: los datos de contexto y licencia de los modelos comparados provienen de co
 
 ## Enlaces
 
-- [HuggingFace - liodon-ai/granite-4.2-3b-ONNX](https://huggingface.co/liodon-ai/granite-4.2-3b-ONNX)
-- [HuggingFace - ibm-granite/granite-4.2-3b (modelo base)](https://huggingface.co/ibm-granite/granite-4.2-3b)
+- [Hugging Face - liodon-ai/granite-4.2-3b-ONNX](https://huggingface.co/liodon-ai/granite-4.2-3b-ONNX)
+- [Hugging Face - ibm-granite/granite-4.2-3b (modelo base)](https://huggingface.co/ibm-granite/granite-4.2-3b)
 - [GitHub - ibm-granite/granite-4.2-language-models](https://github.com/ibm-granite/granite-4.2-language-models)
 - [Documentación oficial de IBM Granite 4.2](https://www.ibm.com/granite/docs/models/granite4-2)

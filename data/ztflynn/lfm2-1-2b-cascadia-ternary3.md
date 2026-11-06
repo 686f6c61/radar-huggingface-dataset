@@ -94,11 +94,11 @@ La comparación directa con cuantizaciones GGUF no es posible sin datos específ
 - El modelo solo soporta inglés; no se han documentado capacidades multilingües.
 - La licencia `lfm-open-license` de Liquid AI puede imponer restricciones de uso comercial o de redistribución. Es necesario revisar los términos completos en el enlace proporcionado antes de desplegarlo en producción.
 - No se dispone de información sobre sesgos o riesgos de contenido dañino específicos de este modelo comprimido, aunque al derivar de LFM2-1.2B podría heredar sesgos presentes en sus datos de entrenamiento.
-- El paquete no incluye un tokenizador estándar de HuggingFace; el vocabulario y las reglas de tokenización están en `tokenizer.bin` y solo son utilizables por el runtime Cascadia.
+- El paquete no incluye un tokenizador estándar de Hugging Face; el vocabulario y las reglas de tokenización están en `tokenizer.bin` y solo son utilizables por el runtime Cascadia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: [ZTFlynn/LFM2-1.2B-Cascadia-ternary3](https://huggingface.co/ZTFlynn/LFM2-1.2B-Cascadia-ternary3)
+- Modelo en Hugging Face: [ZTFlynn/LFM2-1.2B-Cascadia-ternary3](https://huggingface.co/ZTFlynn/LFM2-1.2B-Cascadia-ternary3)
 - Modelo base: [LiquidAI/LFM2-1.2B](https://huggingface.co/LiquidAI/LFM2-1.2B)
 - Paper técnico LFM2: [arXiv:2511.23404](https://arxiv.org/abs/2511.23404)
 - Blog de Liquid AI sobre LFM2: [Introducing LFM2](https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wan2.2-TI2V-5B-GGUF es una conversión al formato GGUF del modelo Wan-AI/Wan2.2-TI2V-5B, un modelo de difusión para generación de vídeo a partir de texto (text-to-video) que también admite entrada de imagen (ti2v, text+image-to-video). La conversión la ha publicado el usuario robertbschuette en HuggingFace, no el equipo que desarrolló el modelo original, y su propósito es permitir la ejecución del modelo en ComfyUI mediante el nodo personalizado ComfyUI-GGUF de city96.
+Wan2.2-TI2V-5B-GGUF es una conversión al formato GGUF del modelo Wan-AI/Wan2.2-TI2V-5B, un modelo de difusión para generación de vídeo a partir de texto (text-to-video) que también admite entrada de imagen (ti2v, text+image-to-video). La conversión la ha publicado el usuario robertbschuette en Hugging Face, no el equipo que desarrolló el modelo original, y su propósito es permitir la ejecución del modelo en ComfyUI mediante el nodo personalizado ComfyUI-GGUF de city96.
 
 El modelo base cuenta con 4.999.787.712 parámetros (aproximadamente 5.000 millones), según los pesos en safetensors del repositorio original, y se distribuye bajo licencia Apache 2.0. Los idiomas declarados para los prompts son inglés y chino. El repositorio GGUF ocupa 45,4 GB, lo que sugiere la inclusión de varias variantes de cuantización, aunque la model card no detalla qué niveles concretos se han generado.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Formato | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| robertbschuette/Wan2.2-TI2V-5B-GGUF (esta ficha) | ~5B | GGUF (cuantizado) | en, zh | Apache 2.0 | HuggingFace, conversión de terceros, 0 descargas |
-| Wan-AI/Wan2.2-TI2V-5B (modelo base) | 4.999.787.712 | safetensors (sin cuantizar) | en, zh | Apache 2.0 | HuggingFace, repositorio oficial |
+| robertbschuette/Wan2.2-TI2V-5B-GGUF (esta ficha) | ~5B | GGUF (cuantizado) | en, zh | Apache 2.0 | Hugging Face, conversión de terceros, 0 descargas |
+| Wan-AI/Wan2.2-TI2V-5B (modelo base) | 4.999.787.712 | safetensors (sin cuantizar) | en, zh | Apache 2.0 | Hugging Face, repositorio oficial |
 | Otras alternativas de la misma categoría (p. ej. CogVideoX-5B, LTX-Video) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos verificados de rendimiento, contexto o requisitos de las alternativas, por lo que la comparación cuantitativa queda limitada al modelo base.
@@ -86,7 +86,7 @@ No se dispone en la información proporcionada de datos verificados de rendimien
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/robertbschuette/Wan2.2-TI2V-5B-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/robertbschuette/Wan2.2-TI2V-5B-GGUF
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Nodo personalizado ComfyUI-GGUF: https://github.com/city96/ComfyUI-GGUF
 - Perfil del autor del nodo: https://huggingface.co/city96

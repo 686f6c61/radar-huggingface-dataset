@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`HungryDino/qwen_2.5_7b-cat_numbers-iterated-run1-gen9` es un ajuste fino del modelo Qwen2.5-7B-Instruct publicado por el usuario HungryDino en HuggingFace. Se trata de un derivado de 7,6 mil millones de parametros con arquitectura transformer decoder-only de tipo Qwen2, licencia Apache 2.0 y pesos en formato safetensors. El repositorio ocupa 0,1 GB, un tamano muy inferior al que tendria un checkpoint completo de 7B en precision completa (unos 15 GB), lo que sugiere que podria tratarse de adaptadores LoRA en lugar de pesos fusionados, aunque la model card no lo confirma.
+`HungryDino/qwen_2.5_7b-cat_numbers-iterated-run1-gen9` es un ajuste fino del modelo Qwen2.5-7B-Instruct publicado por el usuario HungryDino en Hugging Face. Se trata de un derivado de 7,6 mil millones de parametros con arquitectura transformer decoder-only de tipo Qwen2, licencia Apache 2.0 y pesos en formato safetensors. El repositorio ocupa 0,1 GB, un tamano muy inferior al que tendria un checkpoint completo de 7B en precision completa (unos 15 GB), lo que sugiere que podria tratarse de adaptadores LoRA en lugar de pesos fusionados, aunque la model card no lo confirma.
 
 El nombre del modelo (`cat_numbers-iterated-run1-gen9`) apunta a un proceso de entrenamiento iterativo, con al menos nueve generaciones dentro de una primera ejecucion, orientado a una tarea concreta relacionada con numeros. Es relevante unicamente como artefacto de investigacion o como punto de partida reproducible: no hay documentacion tecnica, no se especifican datos de entrenamiento, hiperparametros, composicion del dataset ni resultados de evaluacion.
 
@@ -21,7 +21,7 @@ La model card es practicamente vacia: se limita a declarar que el modelo se entr
 | Licencia | Apache 2.0 |
 | Formato de pesos | Safetensors |
 | Tamano del repositorio | 0,1 GB |
-| Fecha de publicacion | 3 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 3 de octubre de 2026 (segun metadatos de Hugging Face) |
 | Modelo base | unsloth/Qwen2.5-7B-Instruct |
 
 ## Arquitectura y entrenamiento
@@ -90,8 +90,8 @@ No hay datos de rendimiento comparativos para este checkpoint, por lo que la com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run1-gen9
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run1-gen9
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Paper de Qwen2.5: no disponible en la informacion proporcionada.

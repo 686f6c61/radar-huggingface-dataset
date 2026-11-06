@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-2B-or-not-2B es un modelo de lenguaje de 27.781 millones de parámetros (27,78B) desarrollado por DavidAU, un fine-tune del modelo Qwen3.8-27B. Aplica la metodología de entrenamiento Cold Fusion, que combina la técnica interna GAIN con la infraestructura de entrenamiento de Unsloth, con el objetivo de reducir los tokens de pensamiento (thinking tokens) a entre 1/10 y 1/2 de los que generan los modelos Qwen estándar, manteniendo aproximadamente el 99% del rendimiento en precisión completa cuando se cuantiza a 8 bits. El modelo está diseñado para tareas de instrucción y razonamiento, y su nombre sugiere una variante específica (el sufijo "-2B-or-not-2B" no está documentado). El acceso es restringido (gated) en HuggingFace, y no se especifican licencia ni idiomas soportados. Su relevancia radica en la optimización de la latencia en modelos de razonamiento, un aspecto crítico para despliegues en producción.
+Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-2B-or-not-2B es un modelo de lenguaje de 27.781 millones de parámetros (27,78B) desarrollado por DavidAU, un fine-tune del modelo Qwen3.8-27B. Aplica la metodología de entrenamiento Cold Fusion, que combina la técnica interna GAIN con la infraestructura de entrenamiento de Unsloth, con el objetivo de reducir los tokens de pensamiento (thinking tokens) a entre 1/10 y 1/2 de los que generan los modelos Qwen estándar, manteniendo aproximadamente el 99% del rendimiento en precisión completa cuando se cuantiza a 8 bits. El modelo está diseñado para tareas de instrucción y razonamiento, y su nombre sugiere una variante específica (el sufijo "-2B-or-not-2B" no está documentado). El acceso es restringido (gated) en Hugging Face, y no se especifican licencia ni idiomas soportados. Su relevancia radica en la optimización de la latencia en modelos de razonamiento, un aspecto crítico para despliegues en producción.
 
 ## Especificaciones técnicas
 
@@ -55,7 +55,7 @@ No se dispone de comparativas directas con otros modelos de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace, por lo que se requiere aceptar condiciones adicionales para su uso.
+- Acceso restringido: el modelo es gated en Hugging Face, por lo que se requiere aceptar condiciones adicionales para su uso.
 - Licencia no especificada: no se indica si es de uso comercial, lo que supone un riesgo legal para despliegues en producción.
 - Sin documentación de sesgos: no se han publicado análisis de sesgos, alucinaciones o comportamientos no deseados.
 - Idiomas no confirmados: no se sabe si el modelo mantiene el multilingüismo del Qwen3.8-27B base.
@@ -64,7 +64,7 @@ No se dispone de comparativas directas con otros modelos de la misma categoría.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-2B-or-not-2B
+- Modelo en Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-2B-or-not-2B
 - Modelo base relacionado (Qwen3.8-27B-Cold-Fusion-GAIN-V1.1): https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1/tree/main
 - Descripción en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-cold-fusion-gain-v1.1-davidau
 - Información sobre Qwen3.8-27B (modelo base, no el fine-tune): https://www.jetson-ai-lab.com/models/qwen3-8-27b/ y https://lovableapp.org/blog/qwen3-8-27b

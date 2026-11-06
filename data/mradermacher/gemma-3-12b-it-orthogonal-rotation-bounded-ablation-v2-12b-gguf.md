@@ -6,7 +6,7 @@
 
 El modelo cuenta con 11.766.034.176 parametros totales (aproximadamente 11,77 mil millones), arquitectura transformer densa (no MoE) y esta pensado para generacion conversacional en ingles. La relevancia de esta ficha radica en que permite ejecutar en hardware de consumo un fine-tune experimental de Gemma 3 12B sin necesidad de GPU de datacenter, gracias a las cuantizaciones GGUF de 4,9 GB (Q2_K) a 12,6 GB (Q8_0).
 
-Es importante senalar que se trata de un modelo derivado de terceros, no de un modelo oficial de Google, y que la model card no documenta metodologia detallada, datos de entrenamiento ni evaluaciones. La informacion disponible es escasa y se limita a metadatos de HuggingFace y a la model card del cuantizador.
+Es importante senalar que se trata de un modelo derivado de terceros, no de un modelo oficial de Google, y que la model card no documenta metodologia detallada, datos de entrenamiento ni evaluaciones. La informacion disponible es escasa y se limita a metadatos de Hugging Face y a la model card del cuantizador.
 
 ## Especificaciones tecnicas
 

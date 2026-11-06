@@ -4,7 +4,7 @@
 
 TeamDman/teamy-transcriber-whisper-large-v3 es un paquete de pesos listo para usar, publicado por el desarrollador TeamDman, que empaqueta el checkpoint canonico de openai/whisper-large-v3 (revision 06f233fe06e710322aca913c1bc4249a0d71fce1) junto con metadatos derivados y tensores de deteccion de voz Silero a 16 kHz. No es un modelo nuevo ni un fine-tuning: los pesos de Whisper son los originales, sin reentrenar ni cuantizar, y ocupan 3.087.130.976 bytes (unos 3,09 GB decimales).
 
-El paquete existe para alimentar el runtime nativo en Rust y CUDA de la aplicacion Teamy Transcriber. El repositorio no contiene codigo de inferencia, grafo TorchScript, modulo Python ni grabaciones de audio; la computacion vive en el codigo fuente de la aplicacion, que expone los comandos `transcribe` y seleccion local de modelo. Esto lo convierte en una dependencia de datos para una CLI de transcripcion de voz, no en un modelo desplegable con las herramientas habituales del ecosistema HuggingFace.
+El paquete existe para alimentar el runtime nativo en Rust y CUDA de la aplicacion Teamy Transcriber. El repositorio no contiene codigo de inferencia, grafo TorchScript, modulo Python ni grabaciones de audio; la computacion vive en el codigo fuente de la aplicacion, que expone los comandos `transcribe` y seleccion local de modelo. Esto lo convierte en una dependencia de datos para una CLI de transcripcion de voz, no en un modelo desplegable con las herramientas habituales del ecosistema Hugging Face.
 
 Su relevancia es acotada y muy especifica: ofrece transcripcion en ingles con marca de tiempo por clip y deteccion de voz opcional, sobre GPU NVIDIA con CUDA. El modelo tiene 1.543.490.560 parametros (1,54 B) y la validacion oficial se hizo en Windows x64 con una RTX 4090. El paquete no publica ningun resultado de evaluacion propio ni endpoint de inferencia alojado.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Idiomas | Licencia | Formato | Enfoque de despliegue |
 |---|---|---|---|---|---|
 | TeamDman/teamy-transcriber-whisper-large-v3 | 1,54 B | en (segun el paquete) | Apache-2.0 | safetensors + VAD Silero | CLI nativa Rust/CUDA, solo NVIDIA |
-| openai/whisper-large-v3 (modelo base) | 1,54 B (mismos pesos) | multilingue segun el modelo original | Apache-2.0 | safetensors | Ecosistema HuggingFace, transformers y derivados |
+| openai/whisper-large-v3 (modelo base) | 1,54 B (mismos pesos) | multilingue segun el modelo original | Apache-2.0 | safetensors | Ecosistema Hugging Face, transformers y derivados |
 | Alternativas de la misma categoria (distil-whisper, faster-whisper) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa con modelos de terceros no puede completarse con la informacion proporcionada: la busqueda web no devolvio resultados utiles y el paquete no incluye datos comparativos. La diferencia funcional verificable frente al checkpoint original es el empaquetado (metadatos de dimensiones, VAD preparado, manifiesto con checksums) y la integracion con la CLI de Teamy Transcriber, no el rendimiento del modelo.
@@ -92,9 +92,9 @@ La comparativa con modelos de terceros no puede completarse con la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TeamDman/teamy-transcriber-whisper-large-v3
+- Modelo en Hugging Face: https://huggingface.co/TeamDman/teamy-transcriber-whisper-large-v3
 - Repositorio de la aplicacion (runtime Rust/CUDA): https://github.com/TeamDman/teamy-transcriber
-- Modelo base en HuggingFace: https://huggingface.co/openai/whisper-large-v3
+- Modelo base en Hugging Face: https://huggingface.co/openai/whisper-large-v3
 - Model card upstream (revision 06f233fe06e710322aca913c1bc4249a0d71fce1): https://huggingface.co/openai/whisper-large-v3/blob/06f233fe06e710322aca913c1bc4249a0d71fce1/README.md
 - Silero VAD: no disponible en los resultados de busqueda proporcionados
 - Paper o blog tecnico especifico de este paquete: no disponible

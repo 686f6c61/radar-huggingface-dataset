@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wav2Vec2-XLS-R-300M-ASR es un modelo de reconocimiento automatico del habla (ASR) en birmano, publicado por el usuario thantzinphyo en HuggingFace. Se trata de un ajuste fino supervisado del checkpoint preentrenado facebook/wav2vec2-xls-r-300m, un modelo de representaciones de voz multilingue basado en wav2vec 2.0 y preentrenado sobre 128 idiomas y aproximadamente 436.000 horas de audio sin etiquetar. El ajuste se ha realizado con Connectionist Temporal Classification (CTC) sobre un corpus propio de unas 22 horas de audio birmano.
+Wav2Vec2-XLS-R-300M-ASR es un modelo de reconocimiento automatico del habla (ASR) en birmano, publicado por el usuario thantzinphyo en Hugging Face. Se trata de un ajuste fino supervisado del checkpoint preentrenado facebook/wav2vec2-xls-r-300m, un modelo de representaciones de voz multilingue basado en wav2vec 2.0 y preentrenado sobre 128 idiomas y aproximadamente 436.000 horas de audio sin etiquetar. El ajuste se ha realizado con Connectionist Temporal Classification (CTC) sobre un corpus propio de unas 22 horas de audio birmano.
 
 El modelo cuenta con 315.505.346 parametros (la model card indica aproximadamente 317M), un cabezal CTC con vocabulario de 64 tokens a nivel de caracter, y entrada de audio mono a 16 kHz. El corpus de entrenamiento consta de 24.560 ficheros WAV generados con 13 voces sinteticas birmanas, repartidas en 11 hablantes para entrenamiento y validacion y 2 hablantes no vistos para el conjunto de test. Esta composicion es la caracteristica mas relevante del modelo: al provenir de voces sinteticas, el modelo esta especializado en un dominio acustico muy concreto y su generalizacion a voces humanas reales es la principal incognita.
 
@@ -96,7 +96,7 @@ Las cifras de VRAM son estimaciones derivadas del numero de parametros, no datos
 
 | Modelo | Parametros | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| thantzinphyo/Wav2Vec2-XLS-R-300M-ASR | 315.505.346 | Birmano (`my`) | Apache 2.0 | safetensors | Publico en HuggingFace; 0 descargas y 0 likes en el momento de la consulta |
+| thantzinphyo/Wav2Vec2-XLS-R-300M-ASR | 315.505.346 | Birmano (`my`) | Apache 2.0 | safetensors | Publico en Hugging Face; 0 descargas y 0 likes en el momento de la consulta |
 | facebook/wav2vec2-xls-r-300m (modelo base) | 300M (segun nomenclatura del checkpoint) | Preentrenado en 128 idiomas; sin cabezal ASR especifico | Apache 2.0 | safetensors | Ampliamente utilizado y documentado; disponibilidad alta |
 | facebook/wav2vec2-large-xlsr-53 | No verificado en la informacion disponible | 53 idiomas; no incluye necesariamente el birmano | Apache 2.0 | No verificado en la informacion disponible | Modelo de referencia previo al XLS-R |
 
@@ -120,10 +120,10 @@ No se han encontrado en la busqueda web otros modelos ASR especificos de birmano
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thantzinphyo/Wav2Vec2-XLS-R-300M-ASR
-- Modelo base en HuggingFace: https://huggingface.co/facebook/wav2vec2-xls-r-300m
+- Modelo en Hugging Face: https://huggingface.co/thantzinphyo/Wav2Vec2-XLS-R-300M-ASR
+- Modelo base en Hugging Face: https://huggingface.co/facebook/wav2vec2-xls-r-300m
 - Modelos adaptados sobre el base: https://huggingface.co/models?other=base_model:adapter:facebook/wav2vec2-xls-r-300m
-- Guia de fine-tuning de XLS-R para ASR (blog de HuggingFace): https://github.com/huggingface/blog/blob/main/fine-tune-xlsr-wav2vec2.md
+- Guia de fine-tuning de XLS-R para ASR (blog de Hugging Face): https://github.com/huggingface/blog/blob/main/fine-tune-xlsr-wav2vec2.md
 - Documentacion de XLS-R en fairseq: https://github.com/facebookresearch/fairseq/blob/main/examples/wav2vec/xlsr/README.md
 - Ficha de referencia del modelo base en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/wav2vec2-xls-r-300m-facebook
 - Modelo alternativo mencionado en la comparativa (facebook/wav2vec2-large-xlsr-53): https://huggingface.co/facebook/wav2vec2-large-xlsr-53

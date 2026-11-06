@@ -78,9 +78,9 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Depth Anything 3 Small (ExecuTorch, este repo) | no disponible | no aplica | `.pte` (CoreML/Vulkan/XNNPACK) | Apache 2.0 | HuggingFace |
-| Depth Anything 3 Small (`depth-anything/DA3-SMALL`) | no disponible | no aplica | safetensors/PyTorch | no disponible en esta ficha | HuggingFace |
-| Otros modelos de profundidad monocular (p. ej. MiDaS, Depth Anything v2) | no disponible | no aplica | PyTorch/ONNX | no disponible | HuggingFace |
+| Depth Anything 3 Small (ExecuTorch, este repo) | no disponible | no aplica | `.pte` (CoreML/Vulkan/XNNPACK) | Apache 2.0 | Hugging Face |
+| Depth Anything 3 Small (`depth-anything/DA3-SMALL`) | no disponible | no aplica | safetensors/PyTorch | no disponible en esta ficha | Hugging Face |
+| Otros modelos de profundidad monocular (p. ej. MiDaS, Depth Anything v2) | no disponible | no aplica | PyTorch/ONNX | no disponible | Hugging Face |
 
 No se han encontrado en la información proporcionada datos de rendimiento que permitan una comparación cuantitativa con alternativas.
 
@@ -97,7 +97,7 @@ No se han encontrado en la información proporcionada datos de rendimiento que p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/software-mansion/Depth-Anything-3-Small-ExecuTorch
+- Repositorio Hugging Face: https://huggingface.co/software-mansion/Depth-Anything-3-Small-ExecuTorch
 - Modelo base: https://huggingface.co/depth-anything/DA3-SMALL (revisión `e08cab65ca0ec38e7826075418411ab90cab4da3`)
 - Librería React Native ExecuTorch: https://www.npmjs.com/package/react-native-executorch
 - Documentación de carga de modelos: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/downloading-models

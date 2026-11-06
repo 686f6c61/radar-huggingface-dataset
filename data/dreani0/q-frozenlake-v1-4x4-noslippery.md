@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dreani0/q-FrozenLake-v1-4x4-noSlippery` es un agente de aprendizaje por refuerzo entrenado con el algoritmo Q-Learning tabular para resolver el entorno FrozenLake-v1 en su variante 4x4 sin resbalones (`no_slippery`). Lo publica el usuario dreani0 en HuggingFace y se enmarca dentro de la categoría de agentes de RL clásicos, no de modelos de lenguaje: no es un transformer ni un modelo neuronal, sino una implementación propia de Q-Learning cuyo artefacto principal es una tabla de valores Q serializada. El pipeline declarado en el hub es `reinforcement-learning` y la tarea asociada es de tipo `reinforcement-learning` evaluada sobre el dataset/entorno `FrozenLake-v1-4x4-no_slippery`.
+El modelo `dreani0/q-FrozenLake-v1-4x4-noSlippery` es un agente de aprendizaje por refuerzo entrenado con el algoritmo Q-Learning tabular para resolver el entorno FrozenLake-v1 en su variante 4x4 sin resbalones (`no_slippery`). Lo publica el usuario dreani0 en Hugging Face y se enmarca dentro de la categoría de agentes de RL clásicos, no de modelos de lenguaje: no es un transformer ni un modelo neuronal, sino una implementación propia de Q-Learning cuyo artefacto principal es una tabla de valores Q serializada. El pipeline declarado en el hub es `reinforcement-learning` y la tarea asociada es de tipo `reinforcement-learning` evaluada sobre el dataset/entorno `FrozenLake-v1-4x4-no_slippery`.
 
 El interés práctico de esta ficha es acotado: se trata de una solución de referencia para un problema de juguete (un mundo de rejilla con 16 estados y 4 acciones), útil como ejemplo didáctico de RL tabular, como base reproducible para comparar contra métodos de policy gradient o deep RL, y como test de integración en pipelines que cargan agentes desde el hub. El autor reporta un `mean_reward` de 1.00 +/- 0.00 según su `model-index`, es decir, una política que resuelve el entorno de forma determinista en la variante sin resbalones.
 
@@ -46,7 +46,7 @@ El autor etiqueta la implementación como `custom-implementation`, lo que indica
 ## Casos de uso
 
 - Docencia de aprendizaje por refuerzo: sirve como ejemplo minimo y reproducible de Q-Learning tabular para explicar la actualizacion de Bellman y la exploracion epsilon-greedy sin la complejidad de una red neuronal.
-- Prueba de integracion del flujo `load_from_hub` de HuggingFace: permite verificar que un pipeline de carga de agentes de RL funciona de extremo a extremo con un artefacto pickelde bajo peso.
+- Prueba de integracion del flujo `load_from_hub` de Hugging Face: permite verificar que un pipeline de carga de agentes de RL funciona de extremo a extremo con un artefacto pickelde bajo peso.
 - Comparativa de algoritmos en un entorno de juguete: usar este agente Q-Learning como referencia para medir si PPO, DQN u otros metodos convergen antes o con menos episodios en FrozenLake 4x4.
 - Generacion de datos sinteticos de trayectorias: la politica aprendida puede ejecutarse para producir trayectorias exitosas que alimenten otros experimentos de imitacion o analisis de recompensas.
 - Test de regresion en frameworks de RL: al ser un entorno determinista y una politica que alcanza recompensa maxima, cualquier desviacion en los resultados al cargar el modelo indicaria un fallo de compatibilidad de versiones de Gym o del formato pickle.
@@ -68,7 +68,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no aplica; el agente es tabular y no requiere GPU.
 - GPU recomendadas: no aplica. La carga y evaluacion de la tabla Q se ejecutan en CPU sin dificultad.
 - Compatibilidad con GPU de consumo: no aplica, ya que no necesita aceleracion por hardware.
-- Opciones de despliegue: carga directa desde HuggingFace con `load_from_hub`; el fichero `q-learning.pkl` puede cargarse con `pickle` en Python estandar. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a este tipo de artefacto.
+- Opciones de despliegue: carga directa desde Hugging Face con `load_from_hub`; el fichero `q-learning.pkl` puede cargarse con `pickle` en Python estandar. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a este tipo de artefacto.
 - Latencia y throughput: no disponibles en la informacion proporcionada; en la practica la evaluacion de una politica tabular sobre 16 estados es inmediata y no constituye un cuello de botella.
 - Tamano en disco: el repositorio ocupa 0.0 GB, por lo que cabe en cualquier dispositivo, incluidos entornos con restricciones severas de almacenamiento.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 | Contexto | No aplica | No aplica | No aplica |
 | Rendimiento en FrozenLake 4x4 | 1.00 de recompensa media declarada | No disponible en esta informacion | No disponible en esta informacion |
 | Licencia | No disponible | Depende de la implementacion | Depende de la implementacion |
-| Disponibilidad | HuggingFace, fichero `.pkl` | Multiples repositorios publicos | Multiples repositorios publicos |
+| Disponibilidad | Hugging Face, fichero `.pkl` | Multiples repositorios publicos | Multiples repositorios publicos |
 
 No se han podido verificar cifras concretas de los modelos alternativos dentro de la informacion suministrada.
 
@@ -100,5 +100,5 @@ No se han podido verificar cifras concretas de los modelos alternativos dentro d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dreani0/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face: https://huggingface.co/dreani0/q-FrozenLake-v1-4x4-noSlippery
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, repositorios, blogs o demos asociados a este modelo.

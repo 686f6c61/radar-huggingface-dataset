@@ -65,11 +65,11 @@ El `model-index` de la model card declara una única entrada, `full_method_s1`, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| manasganti/qwen25-3b-acereason-advanced15k | 3,09 B (denso) | 32.768 tokens (heredado) | «other» (sin detallar) | HuggingFace, 0 descargas | Ajuste fino completo sin benchmarks publicados |
-| Qwen/Qwen2.5-3B-Instruct | 3,09 B (denso) | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente adoptado | Modelo base; con evaluaciones publicadas por el autor y ecosistema de cuantizaciones |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 B (denso) | 131.072 tokens | Llama 3.2 Community License | HuggingFace (acceso con aceptacion de terminos) | Mayor contexto nativo y comunidad amplia; licencia con restricciones para grandes empresas |
-| microsoft/Phi-3.5-mini-instruct | 3,82 B (denso) | 131.072 tokens | MIT | HuggingFace | Entrenado con foco en razonamiento y código; licencia permisiva |
-| google/gemma-2-2b-it | 2,61 B (denso) | 8.192 tokens | Gemma Terms of Use | HuggingFace (acceso con aceptacion) | Menor contexto; restricciones de uso comercial en los terminos |
+| manasganti/qwen25-3b-acereason-advanced15k | 3,09 B (denso) | 32.768 tokens (heredado) | «other» (sin detallar) | Hugging Face, 0 descargas | Ajuste fino completo sin benchmarks publicados |
+| Qwen/Qwen2.5-3B-Instruct | 3,09 B (denso) | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente adoptado | Modelo base; con evaluaciones publicadas por el autor y ecosistema de cuantizaciones |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 B (denso) | 131.072 tokens | Llama 3.2 Community License | Hugging Face (acceso con aceptacion de terminos) | Mayor contexto nativo y comunidad amplia; licencia con restricciones para grandes empresas |
+| microsoft/Phi-3.5-mini-instruct | 3,82 B (denso) | 131.072 tokens | MIT | Hugging Face | Entrenado con foco en razonamiento y código; licencia permisiva |
+| google/gemma-2-2b-it | 2,61 B (denso) | 8.192 tokens | Gemma Terms of Use | Hugging Face (acceso con aceptacion) | Menor contexto; restricciones de uso comercial en los terminos |
 
 No existen datos de benchmarks de este checkpoint que permitan una comparación cuantitativa con las alternativas; la tabla compara únicamente especificaciones y condiciones de licencia.
 
@@ -87,7 +87,7 @@ No existen datos de benchmarks de este checkpoint que permitan una comparación 
 
 ## Enlaces
 
-- [Modelo en HuggingFace: manasganti/qwen25-3b-acereason-advanced15k](https://huggingface.co/manasganti/qwen25-3b-acereason-advanced15k)
+- [Modelo en Hugging Face: manasganti/qwen25-3b-acereason-advanced15k](https://huggingface.co/manasganti/qwen25-3b-acereason-advanced15k)
 - [Modelo base: Qwen/Qwen2.5-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct)
 - [Repositorio de LLaMA-Factory (framework de entrenamiento declarado)](https://github.com/hiyouga/LLaMA-Factory)
 - [Repositorio de Qwen2.5 en GitHub](https://github.com/QwenLM/Qwen2.5)

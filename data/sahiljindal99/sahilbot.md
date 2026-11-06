@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SahilBot es un repositorio de modelo alojado en HuggingFace bajo la cuenta del usuario Sahiljindal99, publicado el 14 de septiembre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha, el repositorio no incluye model card, no declara pipeline de inferencia, no especifica licencia, no indica idiomas soportados y no aporta ningun dato sobre arquitectura, numero de parametros ni longitud de contexto. La unica etiqueta asociada es region:us, que unicamente describe la region de publicacion y no aporta informacion tecnica.
+SahilBot es un repositorio de modelo alojado en Hugging Face bajo la cuenta del usuario Sahiljindal99, publicado el 14 de septiembre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha, el repositorio no incluye model card, no declara pipeline de inferencia, no especifica licencia, no indica idiomas soportados y no aporta ningun dato sobre arquitectura, numero de parametros ni longitud de contexto. La unica etiqueta asociada es region:us, que unicamente describe la region de publicacion y no aporta informacion tecnica.
 
 El modelo acumula 0 descargas y 1 like, lo que indica que practicamente no ha sido utilizado ni validado por terceros. No existe documentacion adicional, paper, repositorio de codigo ni anuncio asociado que permita reconstruir su origen, su dataset de entrenamiento o su proceso de ajuste.
 
@@ -57,7 +57,7 @@ No es posible enumerar casos de uso validados, porque se desconoce el tamano, la
 - Clasificacion o extraccion de informacion: si el modelo resulta ser un ajuste sobre un base pequeno, podria probarse en tareas de etiquetado o extraccion de entidades, siempre con validacion sobre un conjunto de test propio.
 - Despliegue local en hardware de consumo: solo si el recuento de parametros y el formato de pesos resultan compatibles con llama.cpp u Ollama; actualmente no hay datos para confirmarlo.
 - Servicio de inferencia a escala: solo si existe una licencia explicita que autorice uso comercial y un formato de pesos soportado por vLLM o TGI; ninguna de las dos condiciones esta verificada.
-- Estudio de procedencia y seguridad de artefactos en HuggingFace: el repositorio puede utilizarse como caso practico de auditoria de modelos sin documentar, revisando si contiene codigo ejecutable en ficheros de serializacion.
+- Estudio de procedencia y seguridad de artefactos en Hugging Face: el repositorio puede utilizarse como caso practico de auditoria de modelos sin documentar, revisando si contiene codigo ejecutable en ficheros de serializacion.
 
 ## Benchmarks y rendimiento
 
@@ -82,7 +82,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | repositorio publico en HuggingFace | no disponible |
+| Disponibilidad | repositorio publico en Hugging Face | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sahiljindal99/SahilBot
+- Repositorio en Hugging Face: https://huggingface.co/Sahiljindal99/SahilBot
 - Paper: no disponible
 - Blog o anuncio de publicacion: no disponible
 - Repositorio de codigo: no disponible

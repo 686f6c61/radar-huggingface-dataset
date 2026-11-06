@@ -4,7 +4,7 @@
 
 EnvShip-DR es un conjunto de pesos para predicción de trayectorias de buques a 10 minutos, desarrollado por el usuario mark000071. El modelo es un transformer que incorpora un mapa de distancia firmada (SDF, *signed distance field*) del entorno marítimo como canal espacial, de ahí su nombre "SDF-map Transformer". Se entrena y evalúa sobre datos AIS reales de cuatro regiones: DMA (Dinamarca), Piraeus (Grecia), Norway y NOAA. El horizonte de predicción es de 10 minutos, discretizado en 30 pasos, y la métrica principal reportada es el ADE (*Average Displacement Error*) en metros.
 
-El repositorio de HuggingFace contiene únicamente los *checkpoints*; el código del modelo, los scripts de evaluación y el README completo residen en el repositorio de GitHub asociado. Se publican 12 *checkpoints* principales (tres semillas por cada una de las cuatro regiones), además de variantes de ablación, un calendario de entrenamiento reducido a 30 épocas y un *baseline* LSTM. Cada carpeta incluye `best.pt` y el `config.yaml` exacto del entrenamiento.
+El repositorio de Hugging Face contiene únicamente los *checkpoints*; el código del modelo, los scripts de evaluación y el README completo residen en el repositorio de GitHub asociado. Se publican 12 *checkpoints* principales (tres semillas por cada una de las cuatro regiones), además de variantes de ablación, un calendario de entrenamiento reducido a 30 épocas y un *baseline* LSTM. Cada carpeta incluye `best.pt` y el `config.yaml` exacto del entrenamiento.
 
 El modelo es relevante en el ámbito de la predicción de tráfico marítimo porque cuantifica explícitamente el efecto de incorporar información espacial del entorno (SDF) frente a variantes con interacción social o sin ella, y publica errores por muestra para facilitar tests estadísticos pareados. No obstante, el autor lo restringe a uso de investigación y advierte explícitamente de que no debe emplearse para evitación autónoma de colisiones.
 
@@ -95,7 +95,7 @@ Ablación en DMA con 30 épocas (semilla 42):
 - VRAM estimada para inferencia: no disponible. La *model card* no publica el número de parámetros ni el consumo de memoria.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible. No puede confirmarse ni descartarse a partir de la información proporcionada.
-- El repositorio completo en HuggingFace ocupa 5,3 GB e incluye múltiples *checkpoints*, por lo que el tamaño individual de cada uno no se puede derivar con precisión de ese dato.
+- El repositorio completo en Hugging Face ocupa 5,3 GB e incluye múltiples *checkpoints*, por lo que el tamaño individual de cada uno no se puede derivar con precisión de ese dato.
 - Opciones de despliegue: inferencia en PyTorch mediante el código del repositorio de GitHub. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no son aplicables a un modelo de predicción de trayectorias, no de lenguaje).
 - Descarga de pesos: `python scripts/download_weights.py` (12 *checkpoints* principales) o `python scripts/download_weights.py --subset all` (todos).
 - Verificación de integridad: `sha256sum -c SHA256SUMS`.
@@ -107,11 +107,11 @@ No se dispone de información sobre otros modelos comparables externos. La únic
 
 | Modelo | Región | ADE (m), semilla 42 | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| EnvShip-DR (env_spatial, 90 ep) | DMA | 84,38 | MIT | Pesos en HuggingFace, código en GitHub |
+| EnvShip-DR (env_spatial, 90 ep) | DMA | 84,38 | MIT | Pesos en Hugging Face, código en GitHub |
 | LSTM + env_pool | NOAA | 105,65 | MIT (mismo repo) | Incluido en el repositorio |
-| EnvShip-DR (env_spatial, 90 ep) | NOAA | 105,38 | MIT | Pesos en HuggingFace, código en GitHub |
+| EnvShip-DR (env_spatial, 90 ep) | NOAA | 105,38 | MIT | Pesos en Hugging Face, código en GitHub |
 | LSTM + env_pool | Piraeus | 146,43 | MIT (mismo repo) | Incluido en el repositorio |
-| EnvShip-DR (env_spatial, 90 ep) | Piraeus | 155,94 | MIT | Pesos en HuggingFace, código en GitHub |
+| EnvShip-DR (env_spatial, 90 ep) | Piraeus | 155,94 | MIT | Pesos en Hugging Face, código en GitHub |
 
 En Piraeus el *baseline* LSTM supera al transformer en las tres semillas; en NOAA los resultados están empatados en la semilla 42 y el LSTM gana en las semillas 1 y 2; en Norway el transformer es claramente superior.
 
@@ -130,7 +130,7 @@ En Piraeus el *baseline* LSTM supera al transformer en las tres semillas; en NOA
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mark000071/transformer-ship-traj-pred
+- Modelo en Hugging Face: https://huggingface.co/mark000071/transformer-ship-traj-pred
 - Dataset: https://huggingface.co/datasets/mark000071/envship_v2_datasets
 - Repositorio de código (GitHub): https://github.com/mark000071/transfomer-ship-traj-pred
 - Model card extendida del autor: `docs/MODEL_CARD.md` dentro del repositorio de GitHub

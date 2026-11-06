@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `anorim/twhinbert-fusion-6-dareties-p0.99-k0.2-l1.1-bestcross-hatebr-olidbr-toldbr-tupy-v61` es un checkpoint alojado en HuggingFace por el usuario anorim, con 278.830.082 parametros almacenados en formato safetensors y un repositorio de 1,1 GB. La etiqueta de arquitectura declarada es `bert` y la unica region indicada en los tags es `us`. No se ha publicado informacion sobre licencia, idiomas soportados, pipeline ni conjunto de datos de entrenamiento en la ficha del repositorio.
+El modelo identificado como `anorim/twhinbert-fusion-6-dareties-p0.99-k0.2-l1.1-bestcross-hatebr-olidbr-toldbr-tupy-v61` es un checkpoint alojado en Hugging Face por el usuario anorim, con 278.830.082 parametros almacenados en formato safetensors y un repositorio de 1,1 GB. La etiqueta de arquitectura declarada es `bert` y la unica region indicada en los tags es `us`. No se ha publicado informacion sobre licencia, idiomas soportados, pipeline ni conjunto de datos de entrenamiento en la ficha del repositorio.
 
 El propio identificador del modelo describe su metodo de construccion: una fusion de seis checkpoints mediante la tecnica DARE-TIES (drop and rescale mas trim, elect sign), con hiperparametros de densidad `p=0.99`, `k=0.2` y escala `l1.1`, mas un criterio de seleccion etiquetado como `bestcross`. Los sufijos `hatebr`, `olidbr`, `toldbr` y `tupy` apuntan a que los modelos fusionados fueron ajustados sobre corpus de deteccion de discurso de odio y lenguaje ofensivo en portugues de Brasil (HateBR, OLID-BR, ToLD-Br y Tupy). Se trata, por tanto, de un modelo orientado a clasificacion de toxicidad en portugues, aunque esta interpretacion se deriva exclusivamente del nombre del repositorio y no de documentacion publicada.
 
@@ -12,7 +12,7 @@ La relevancia de la ficha es limitada en terminos de adopcion: cuenta con 11 des
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (tag declarado en HuggingFace); el identificador sugiere base TwHIN-BERT, no confirmado |
+| Arquitectura | BERT (tag declarado en Hugging Face); el identificador sugiere base TwHIN-BERT, no confirmado |
 | Parametros totales | 278.830.082 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible (si se confirma base tipo XLM-R/BERT, el limite habitual seria 512 tokens) |
@@ -67,17 +67,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
   - INT4: aproximadamente 0,15 GB de pesos, alrededor de 0,5-0,8 GB de uso total.
 - GPU recomendadas: cabe con holgura en cualquier GPU consumer con 4 GB o mas de VRAM (RTX 3050, RTX 3060, RTX 4060, GTX 1660 Super, e incluso iGPU modernas). Para lotes grandes o despliegue de alto throughput, una NVIDIA T4, L4, A10G o A100 ofrece margen sobrado.
 - Cabe en GPU consumer: si, en practicamente todas las GPU dedicadas de los ultimos ocho anos, y tambien en CPU con cuantizacion INT8 para cargas moderadas.
-- Opciones de despliegue: al ser un encoder tipo BERT en safetensors, es compatible con HuggingFace Transformers (pipeline de clasificacion o `AutoModel`), Optimum, TorchScript y ONNX Runtime. vLLM y TGI estan orientados a modelos generativos y no son la via natural para este checkpoint; llama.cpp y Ollama requeririan una conversion a GGUF que no esta publicada.
+- Opciones de despliegue: al ser un encoder tipo BERT en safetensors, es compatible con Hugging Face Transformers (pipeline de clasificacion o `AutoModel`), Optimum, TorchScript y ONNX Runtime. vLLM y TGI estan orientados a modelos generativos y no son la via natural para este checkpoint; llama.cpp y Ollama requeririan una conversion a GGUF que no esta publicada.
 - Latencia y throughput estimados: no disponibles. Con 278 M de parametros y secuencias de 128-512 tokens, un despliegue en GPU moderna suele alcanzar cientos o miles de inferencias por segundo con batching, pero no hay mediciones publicadas para este checkpoint concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| twhinbert-fusion-6-dareties... (este modelo) | 278,8 M | no disponible | no disponible (probable portugues) | no disponible | HuggingFace, 11 descargas |
+| twhinbert-fusion-6-dareties... (este modelo) | 278,8 M | no disponible | no disponible (probable portugues) | no disponible | Hugging Face, 11 descargas |
 | BERTimbau base (neuralmind) | 110 M | 512 tokens | Portugues de Brasil | MIT | Ampliamente disponible y documentado |
 | XLM-RoBERTa base (Facebook AI) | 278 M | 512 tokens | 100+ idiomas | MIT | Ampliamente disponible |
-| TwHIN-BERT (Twitter) | 278 M | 512 tokens | 100+ idiomas | no confirmada en esta ficha | Disponible en HuggingFace |
+| TwHIN-BERT (Twitter) | 278 M | 512 tokens | 100+ idiomas | no confirmada en esta ficha | Disponible en Hugging Face |
 
 La comparacion de rendimiento con estas alternativas no es posible porque no se han publicado resultados de evaluacion del checkpoint analizado. A diferencia de BERTimbau o XLM-R base, este modelo carece de tarjeta descriptiva, licencia declarada y datos de validacion, lo que limita su uso en produccion frente a las alternativas consolidadas.
 
@@ -95,6 +95,6 @@ La comparacion de rendimiento con estas alternativas no es posible porque no se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anorim/twhinbert-fusion-6-dareties-p0.99-k0.2-l1.1-bestcross-hatebr-olidbr-toldbr-tupy-v61
+- Modelo en Hugging Face: https://huggingface.co/anorim/twhinbert-fusion-6-dareties-p0.99-k0.2-l1.1-bestcross-hatebr-olidbr-toldbr-tupy-v61
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a paginas de descarga del navegador Google Chrome y no guardan relacion con el checkpoint.
 - Sin paper, blog tecnico, repositorio de codigo ni demo asociados en la informacion disponible.

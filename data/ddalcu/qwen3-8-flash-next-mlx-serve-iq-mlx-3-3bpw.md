@@ -21,7 +21,7 @@ El pack ocupa 52 GB residentes, 86,3 GB de repositorio y declara 98.382.839.699 
 | Licencia | qwen-community-1.0 (license: other) |
 | Formato de pesos | safetensors (shards) + ngram_table.bin (32,0 GB, formato safetensors pero con extensión .bin para que MLX no la cargue automáticamente) + model-vision.safetensors (~0,9 GB, bf16 denso) |
 | Tamano del repositorio | 86,3 GB |
-| Fecha de publicacion | 13 de septiembre de 2026 según los metadatos de HuggingFace |
+| Fecha de publicacion | 13 de septiembre de 2026 según los metadatos de Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -115,7 +115,7 @@ Otros modelos comparables (mismo tamaño o misma tarea, por ejemplo alternativas
 
 ## Enlaces
 
-- Repositorio HuggingFace del pack: https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-3.3bpw
+- Repositorio Hugging Face del pack: https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-3.3bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Pack alternativo mixed-4-8bit (recomendado para Macs de 128 GB): https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-mixed-4-8bit
 - Licencia: fichero LICENSE del repositorio (license_name: qwen-community-1.0)

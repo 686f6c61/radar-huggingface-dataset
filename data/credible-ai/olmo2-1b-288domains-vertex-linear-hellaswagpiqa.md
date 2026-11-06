@@ -85,7 +85,7 @@ La comparación directa con modelos generalistas no es del todo justa: este chec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-288domains-vertex-linear-hellaswagpiqa
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-288domains-vertex-linear-hellaswagpiqa
 - Proxy de 60M: https://huggingface.co/credible-ai/olmo2-60M-288domains-vertex
 - Paper LinMix: https://arxiv.org/abs/2610.37390
 - Código LinMix: https://github.com/credibleai/linmix

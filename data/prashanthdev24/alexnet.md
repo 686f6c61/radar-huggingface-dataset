@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`PrashanthDev24/alexnet` es un repositorio de HuggingFace que contiene un modelo de visión por computador implementado con Keras, publicado por el usuario PrashanthDev24 bajo licencia Apache 2.0. El nombre del repositorio remite a la arquitectura AlexNet, la red convolucional de 2012 que ganó ImageNet, y la etiqueta de dataset asociada es `ILSVRC/imagenet-1k`, lo que sugiere que se entrenó o evaluó sobre las 1.000 clases de ImageNet-1k. El repositorio ocupa 0,7 GB y no incluye pipeline declarado.
+`PrashanthDev24/alexnet` es un repositorio de Hugging Face que contiene un modelo de visión por computador implementado con Keras, publicado por el usuario PrashanthDev24 bajo licencia Apache 2.0. El nombre del repositorio remite a la arquitectura AlexNet, la red convolucional de 2012 que ganó ImageNet, y la etiqueta de dataset asociada es `ILSVRC/imagenet-1k`, lo que sugiere que se entrenó o evaluó sobre las 1.000 clases de ImageNet-1k. El repositorio ocupa 0,7 GB y no incluye pipeline declarado.
 
 La model card publicada es prácticamente vacía: solo contiene el bloque de metadatos (licencia, dataset y idioma). No hay descripción de la arquitectura, ni tabla de hiperparámetros, ni métricas de evaluación, ni instrucciones de uso, ni información sobre el proceso de entrenamiento. Tampoco hay pesos documentados más allá del tamaño del repositorio.
 
@@ -81,7 +81,7 @@ Los datos de la columna "parámetros" y "top-1 ImageNet" corresponden a los valo
 
 | Modelo | Parámetros | Entrada | Top-1 ImageNet (referencia) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (AlexNet, sin confirmar) | No disponible | No disponible | No disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| Este checkpoint (AlexNet, sin confirmar) | No disponible | No disponible | No disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | AlexNet (original, 2012) | ~60 M | 227x227 | ~40,7 % de error | Académica en su publicación original | Implementaciones múltiples |
 | VGG-16 (2014) | ~138 M | 224x224 | ~28,1 % de error | Académica / variable | Amplia |
 | ResNet-50 (2015) | ~25,6 M | 224x224 | ~23,9 % de error | Apache 2.0 en muchas implementaciones | Amplia |
@@ -104,7 +104,7 @@ Comparado con cualquiera de estas alternativas, AlexNet queda por detrás en pre
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PrashanthDev24/alexnet
+- Repositorio en Hugging Face: https://huggingface.co/PrashanthDev24/alexnet
 - Dataset referenciado: https://huggingface.co/datasets/ILSVRC/imagenet-1k
 - Artículo original de la arquitectura AlexNet (referencia externa, no vinculada al repositorio): Krizhevsky, Sutskever y Hinton, "ImageNet Classification with Deep Convolutional Neural Networks", NeurIPS 2012, https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html
 - No se han encontrado enlaces adicionales (papers propios, blogs, repos de código, demos o espacios) en la información disponible.

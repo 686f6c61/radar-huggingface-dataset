@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto / tarea | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Pipe1213/act_obj_t3_nall_s3` (ACT) | 51,7 M | Tarea única LIBERO-Object id 8 | 55,3 % (media de 3 checkpoints) | Apache 2.0 | HuggingFace, 26 descargas |
+| `Pipe1213/act_obj_t3_nall_s3` (ACT) | 51,7 M | Tarea única LIBERO-Object id 8 | 55,3 % (media de 3 checkpoints) | Apache 2.0 | Hugging Face, 26 descargas |
 | SmolVLA (referencia del estudio) | no disponible en la información proporcionada | VLA preentrenado, afinado en las mismas tareas | 87,3 % agregado en el estudio | no disponible en la información proporcionada | Referenciado en el repositorio del estudio |
 | ACT con menos demostraciones (mismo estudio) | 51,7 M | Misma tarea, subconjuntos de episodios | No disponible por configuración en la información proporcionada | Apache 2.0 | Repositorio del estudio |
 
@@ -103,7 +103,7 @@ No se dispone de datos suficientes para comparar con otras políticas ACT públi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pipe1213/act_obj_t3_nall_s3
+- Modelo en Hugging Face: https://huggingface.co/Pipe1213/act_obj_t3_nall_s3
 - Repositorio del estudio: https://github.com/Pipe1213/vla-vs-scratch
 - Resultados completos: https://github.com/Pipe1213/vla-vs-scratch#results
 - Análisis: https://github.com/Pipe1213/vla-vs-scratch/blob/main/results/analysis.md

@@ -10,7 +10,7 @@ La relevancia de este modelo radica en su tamaño reducido, que permite su ejecu
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Llama (según etiqueta de HuggingFace) |
+| Arquitectura | Llama (según etiqueta de Hugging Face) |
 | Parametros totales | 147.286.272 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |

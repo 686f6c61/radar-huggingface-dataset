@@ -20,7 +20,7 @@ Su relevancia actual es metodológica más que de rendimiento: documenta con det
 | Longitud de contexto | No disponible en la ficha del adaptador. Durante la preparación de datos se eliminaron las secuencias completas que superaban los 65.536 tokens y se comprobó un techo de 8.192 tokens en la salida del asistente |
 | Tipos de cuantizacion | No disponible. El adaptador se publica en safetensors FP32; la cuantización aplicable dependerá del modelo base que se cargue |
 | Idiomas soportados | No disponible |
-| Licencia | apache-2.0-adapter-contributions-plus-upstream-notices (etiquetada como "other" en HuggingFace), sujeta además a los avisos y condiciones upstream del modelo base |
+| Licencia | apache-2.0-adapter-contributions-plus-upstream-notices (etiquetada como "other" en Hugging Face), sujeta además a los avisos y condiciones upstream del modelo base |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA); no se incluyen pesos GGUF ni el modelo completo |
 | Modelo base | Qwen/Qwen3.6-35B-A3B, revisión congelada 995ad96eacd98c81ed38be0c5b274b04031597b0 |
 | Tarea declarada (pipeline) | image-text-to-text |
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks formales en la información disponi
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Apex academic r16 (csminion/apex-qwen36-hle) | Adaptador LoRA sobre MoE | 21.166.080 en el adaptador; base no incluido | No disponible (datos de entrenamiento hasta 65.536 tokens) | Sin benchmarks formales; 48/100 en comparación interna de desarrollo | apache-2.0-adapter-contributions-plus-upstream-notices | Repositorio público de 0,1 GB, 0 descargas |
-| Qwen/Qwen3.6-35B-A3B (base) | Modelo completo MoE | No disponible en la información (nomenclatura 35B-A3B) | No disponible | No disponible | No disponible | Pesos completos publicados en HuggingFace |
+| Qwen/Qwen3.6-35B-A3B (base) | Modelo completo MoE | No disponible en la información (nomenclatura 35B-A3B) | No disponible | No disponible | No disponible | Pesos completos publicados en Hugging Face |
 | Otros adaptadores LoRA de razonamiento académico | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables de terceros comparables en la información proporcionada; la única comparación documentada es la interna entre los checkpoints 16 y 250 de este mismo adaptador.
@@ -105,7 +105,7 @@ No se dispone de datos verificables de terceros comparables en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/csminion/apex-qwen36-hle
+- Modelo en Hugging Face: https://huggingface.co/csminion/apex-qwen36-hle
 - Modelo base Qwen/Qwen3.6-35B-A3B (revisión congelada): https://huggingface.co/Qwen/Qwen3.6-35B-A3B/tree/995ad96eacd98c81ed38be0c5b274b04031597b0
 - Dataset Nemotron-SFT-Math-v4: https://huggingface.co/datasets/nvidia/Nemotron-SFT-Math-v4/blob/84d42ad0cb960f07f951b9baa9ed2b46a5a18c66/README.md
 - Dataset MMLU-Pro: https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro/blob/b189ec765aa7ed75c8acfea42df31fdae71f97be/README.md

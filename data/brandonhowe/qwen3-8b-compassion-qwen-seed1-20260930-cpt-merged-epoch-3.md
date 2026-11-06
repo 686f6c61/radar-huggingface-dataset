@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-3 es un modelo de generación de texto derivado de Qwen/Qwen3-8B-Base mediante entrenamiento continuado (continued pretraining, CPT) sobre un corpus de compasión. Lo publica el usuario de HuggingFace BrandonHowe y se distribuye como pesos fusionados en BF16, sin adaptador LoRA, listos para cargar directamente con transformers. El checkpoint corresponde a la época 3.0 (paso 1125) de un experimento de ajuste sobre el dataset `CompassioninMachineLearning/compassion_12185_cleaned`.
+Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-3 es un modelo de generación de texto derivado de Qwen/Qwen3-8B-Base mediante entrenamiento continuado (continued pretraining, CPT) sobre un corpus de compasión. Lo publica el usuario de Hugging Face BrandonHowe y se distribuye como pesos fusionados en BF16, sin adaptador LoRA, listos para cargar directamente con transformers. El checkpoint corresponde a la época 3.0 (paso 1125) de un experimento de ajuste sobre el dataset `CompassioninMachineLearning/compassion_12185_cleaned`.
 
 El modelo tiene 8.190.735.360 parámetros (unos 8,19 mil millones) y un repositorio de 16,4 GB, coherente con pesos BF16 empaquetados en ocho shards de safetensors. Su interés es principalmente de investigación: explora si el entrenamiento continuado sobre un corpus específico de compasión modifica el comportamiento del modelo base. La propia model card advierte de que el entrenamiento no demuestra una mejora en compasión y que ese aspecto debe evaluarse por separado.
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-3 | 8,19 mil millones (denso) | No disponible | No disponible | Pesos BF16 fusionados en HuggingFace | Checkpoint experimental; 0 descargas; sin benchmarks |
-| Qwen/Qwen3-8B-Base | 8,19 mil millones (denso) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Repositorio publico del modelo base en HuggingFace | Modelo de partida; sin ajuste sobre el corpus de compasion |
+| Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-3 | 8,19 mil millones (denso) | No disponible | No disponible | Pesos BF16 fusionados en Hugging Face | Checkpoint experimental; 0 descargas; sin benchmarks |
+| Qwen/Qwen3-8B-Base | 8,19 mil millones (denso) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Repositorio publico del modelo base en Hugging Face | Modelo de partida; sin ajuste sobre el corpus de compasion |
 | Otras alternativas de ~8B | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificados en la informacion proporcionada para establecer una comparacion de rendimiento |
 
 No se dispone de resultados de benchmarks del modelo evaluado ni de sus alternativas en la informacion proporcionada, por lo que no es posible comparar rendimiento numerico.
@@ -92,7 +92,7 @@ No se dispone de resultados de benchmarks del modelo evaluado ni de sus alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrandonHowe/Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-3
+- Modelo en Hugging Face: https://huggingface.co/BrandonHowe/Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/CompassioninMachineLearning/compassion_12185_cleaned
 - Repositorio de Qwen3 (referencia del modelo base): https://github.com/QwenLM/Qwen3

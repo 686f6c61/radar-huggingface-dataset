@@ -69,11 +69,11 @@ Cosmos3-Super es el modelo generalista de mayor tamaño de la colección, cubrie
 - Limitaciones de entrada: el texto está limitado a 4096 tokens; el video a un máximo de 5 frames y resoluciones de 256p, 480p o 720p; las imágenes deben estar en RGB (sRGB) y no se admiten entradas en escala de grises.
 - Restricciones de licencia: la licencia OpenMDW1.1 permite uso comercial y no comercial, pero es una licencia personalizada; se debe revisar el texto completo para conocer las obligaciones específicas.
 - Dependencias de formato: las entradas de acción deben seguir dimensiones específicas por "embodiment"; un formato incorrecto puede producir salidas inválidas.
-- Disponibilidad: el repositorio de HuggingFace correspondiente al ID Openintelligent123/Cosmos3-Super no muestra descargas ni likes, lo que sugiere que puede tratarse de un espejo no oficial; se recomienda usar el repositorio oficial de NVIDIA.
+- Disponibilidad: el repositorio de Hugging Face correspondiente al ID Openintelligent123/Cosmos3-Super no muestra descargas ni likes, lo que sugiere que puede tratarse de un espejo no oficial; se recomienda usar el repositorio oficial de NVIDIA.
 
 ## Enlaces
 
-- Repositorio oficial en HuggingFace: https://huggingface.co/nvidia/Cosmos3-Super
+- Repositorio oficial en Hugging Face: https://huggingface.co/nvidia/Cosmos3-Super
 - Repositorio espejo: https://huggingface.co/Openintelligent123/Cosmos3-Super
 - Colección de modelos Cosmos 3: https://huggingface.co/collections/nvidia/cosmos3
 - Código en GitHub: https://github.com/nvidia/cosmos

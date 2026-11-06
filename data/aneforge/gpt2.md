@@ -25,7 +25,7 @@ El repositorio incluye los pesos en formato safetensors (137.022.720 parámetros
 
 El modelo es un transformer decoder estándar de 12 capas con 12 cabezas de atención y dimensión oculta de 768, entrenado con modelado de lenguaje causal (predicción del siguiente token). El entrenamiento original de GPT-2 se realizó sobre WebText, un dataset de aproximadamente 40 GB extraído de enlaces de Reddit con al menos 3 karma. Este repositorio no introduce ninguna modificación en los pesos: son byte-idénticos a los del modelo original, por lo que las características de entrenamiento corresponden exactamente a las del GPT-2 de OpenAI.
 
-La innovación técnica de este repositorio no está en el modelo en sí, sino en el entorno de ejecución: ANEForge compila el grafo del modelo en un único programa ANE fusionado y transmite los pesos desde HuggingFace Hub mediante `huggingface_hub`, eliminando la dependencia de CoreML. Esto permite ejecutar GPT-2 directamente en el Apple Neural Engine desde Python, con soporte de autograd on-ANE para entrenamiento.
+La innovación técnica de este repositorio no está en el modelo en sí, sino en el entorno de ejecución: ANEForge compila el grafo del modelo en un único programa ANE fusionado y transmite los pesos desde Hugging Face Hub mediante `huggingface_hub`, eliminando la dependencia de CoreML. Esto permite ejecutar GPT-2 directamente en el Apple Neural Engine desde Python, con soporte de autograd on-ANE para entrenamiento.
 
 ## Capacidades
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. Dado
 
 | Modelo | Parámetros | Contexto | Licencia | Hardware objetivo | Disponibilidad |
 |---|---|---|---|---|---|
-| aneforge/gpt2 (este) | 137M | 1024 | MIT | Apple ANE (ANEForge) | HuggingFace |
-| openai-community/gpt2 | 137M | 1024 | MIT | Cualquier GPU/CPU (transformers) | HuggingFace |
-| distilgpt2 | 82M | 1024 | MIT | Cualquier GPU/CPU (transformers) | HuggingFace |
-| gpt2-medium | 355M | 1024 | MIT | Cualquier GPU/CPU (transformers) | HuggingFace |
+| aneforge/gpt2 (este) | 137M | 1024 | MIT | Apple ANE (ANEForge) | Hugging Face |
+| openai-community/gpt2 | 137M | 1024 | MIT | Cualquier GPU/CPU (transformers) | Hugging Face |
+| distilgpt2 | 82M | 1024 | MIT | Cualquier GPU/CPU (transformers) | Hugging Face |
+| gpt2-medium | 355M | 1024 | MIT | Cualquier GPU/CPU (transformers) | Hugging Face |
 
 La diferencia clave frente a las alternativas es el destino de ejecución: este modelo solo tiene sentido si se usa con ANEForge; para uso general con transformers, el repositorio original `openai-community/gpt2` es más apropiado. `distilgpt2` es más pequeño (82M) y más rápido en CPU, pero no tiene soporte ANE.
 
@@ -82,7 +82,7 @@ La diferencia clave frente a las alternativas es el destino de ejecución: este 
 
 ## Enlaces
 
-- [HuggingFace: aneforge/gpt2](https://huggingface.co/aneforge/gpt2)
+- [Hugging Face: aneforge/gpt2](https://huggingface.co/aneforge/gpt2)
 - [Repositorio original: openai-community/gpt2](https://huggingface.co/openai-community/gpt2)
 - [GitHub ANEForge](https://github.com/sbryngelson/ANEForge)
 - [Documentación ANEForge](https://aneforge.readthedocs.io/en/)

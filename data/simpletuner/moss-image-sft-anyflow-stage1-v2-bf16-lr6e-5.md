@@ -81,10 +81,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (`stage1-v2-bf16-lr6e-5`) | LoRA r=128 sobre base de 5B | No aplica | Sin metricas publicadas; entrenamiento al 7,12 por ciento | Apache-2.0 | HuggingFace, 0 descargas |
-| `stage1-v2-fp32-lr6e-5-8xh100` (run de reemplazo) | LoRA r=128 sobre base de 5B | No aplica | Sin metricas; reinicio desde cero con 8x H100 y batch global 16 | Apache-2.0 | HuggingFace |
-| `moss-image-sft-anyflow-stage2` (adaptador de inicializacion) | LoRA sobre base de 5B | No aplica | Sin metricas | Apache-2.0 | HuggingFace |
-| `OpenMOSS-Team/MOSS-Image-SFT` (modelo base) | 5.000 millones | No aplica | Sin metricas publicadas en la informacion disponible | No indicada en la informacion disponible | HuggingFace |
+| Este adaptador (`stage1-v2-bf16-lr6e-5`) | LoRA r=128 sobre base de 5B | No aplica | Sin metricas publicadas; entrenamiento al 7,12 por ciento | Apache-2.0 | Hugging Face, 0 descargas |
+| `stage1-v2-fp32-lr6e-5-8xh100` (run de reemplazo) | LoRA r=128 sobre base de 5B | No aplica | Sin metricas; reinicio desde cero con 8x H100 y batch global 16 | Apache-2.0 | Hugging Face |
+| `moss-image-sft-anyflow-stage2` (adaptador de inicializacion) | LoRA sobre base de 5B | No aplica | Sin metricas | Apache-2.0 | Hugging Face |
+| `OpenMOSS-Team/MOSS-Image-SFT` (modelo base) | 5.000 millones | No aplica | Sin metricas publicadas en la informacion disponible | No indicada en la informacion disponible | Hugging Face |
 
 No se dispone de datos objetivos para comparar con adaptadores LoRA de otros ecosistemas de difusión (por ejemplo, familias SD3/FLUX): la información proporcionada no incluye métricas de ninguno de ellos.
 
@@ -103,12 +103,12 @@ No se dispone de datos objetivos para comparar con adaptadores LoRA de otros eco
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/SimpleTuner/moss-image-sft-anyflow-stage1-v2-bf16-lr6e-5
+- Adaptador en Hugging Face: https://huggingface.co/SimpleTuner/moss-image-sft-anyflow-stage1-v2-bf16-lr6e-5
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Run de reemplazo (FP32, 8x H100): https://huggingface.co/SimpleTuner/moss-image-sft-anyflow-stage1-v2-fp32-lr6e-5-8xh100
 - Adaptador de inicializacion (stage 2): https://huggingface.co/SimpleTuner/moss-image-sft-anyflow-stage2/tree/45a3541f0c13e33dd0e2aaa5cf7cad70b29f466d/checkpoint-1500/ema
 - Campaña stage 1 original: https://huggingface.co/SimpleTuner/moss-image-sft-anyflow-stage1
-- Organizacion SimpleTuner en HuggingFace: https://huggingface.co/SimpleTuner/models
+- Organizacion SimpleTuner en Hugging Face: https://huggingface.co/SimpleTuner/models
 - Documentacion de SimpleTuner: https://docs.simpletuner.io/
 - Repositorio de SimpleTuner: https://github.com/bghira/SimpleTuner
 - Repositorio oficial de MOSS-Image: https://github.com/OpenMOSS/MOSS-Image

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/jevify-gemma4-e4b-GGUF` es una publicacion de cuantizaciones estaticas en formato GGUF del modelo `kushalpatil/jevify-gemma4-e4b`, un ajuste fino con LoRA sobre la familia gemma4. El trabajo lo firma mradermacher, un cuantizador conocido en HuggingFace por publicar versiones GGUF de modelos de terceros para su uso con llama.cpp y derivados. El repositorio no introduce un modelo nuevo: su valor esta en ofrecer el modelo base convertido a GGUF en trece niveles de cuantizacion mas dos ficheros `mmproj` (proyector multimodal) en f16 y Q8_0.
+`mradermacher/jevify-gemma4-e4b-GGUF` es una publicacion de cuantizaciones estaticas en formato GGUF del modelo `kushalpatil/jevify-gemma4-e4b`, un ajuste fino con LoRA sobre la familia gemma4. El trabajo lo firma mradermacher, un cuantizador conocido en Hugging Face por publicar versiones GGUF de modelos de terceros para su uso con llama.cpp y derivados. El repositorio no introduce un modelo nuevo: su valor esta en ofrecer el modelo base convertido a GGUF en trece niveles de cuantizacion mas dos ficheros `mmproj` (proyector multimodal) en f16 y Q8_0.
 
 El modelo cuenta con 7.463.013.674 parametros (unos 7,46 mil millones), un tamano que lo situa en la gama media y lo hace desplegable en GPU de consumo con cuantizaciones de 4 bits. Segun las etiquetas de la model card, el ajuste esta orientado a clasificacion, calibracion y salidas probabilisticas, ademas de mantener un perfil conversacional, y esta declarado unicamente para ingles. No se publica informacion sobre arquitectura interna, datos de entrenamiento ni longitud de contexto.
 

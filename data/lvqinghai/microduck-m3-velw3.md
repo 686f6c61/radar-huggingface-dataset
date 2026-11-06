@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`LvQinghai/microduck-m3-velw3` es una politica de control (policy) de locomocion entrenada mediante aprendizaje por refuerzo para el robot cuadrupedo microduck de Pollen Robotics. No es un modelo de lenguaje ni un modelo generativo de proposito general: es una red neuronal exportada a ONNX que mapea observaciones de 61 dimensiones a 14 acciones de control, ejecutandose a 50 Hz sobre el robot. El autor es el usuario de HuggingFace LvQinghai y el modelo se publica bajo la libreria `onnx` con el pipeline declarado `reinforcement-learning`.
+`LvQinghai/microduck-m3-velw3` es una politica de control (policy) de locomocion entrenada mediante aprendizaje por refuerzo para el robot cuadrupedo microduck de Pollen Robotics. No es un modelo de lenguaje ni un modelo generativo de proposito general: es una red neuronal exportada a ONNX que mapea observaciones de 61 dimensiones a 14 acciones de control, ejecutandose a 50 Hz sobre el robot. El autor es el usuario de Hugging Face LvQinghai y el modelo se publica bajo la libreria `onnx` con el pipeline declarado `reinforcement-learning`.
 
 La variante concreta es `m3-velw3`, una marcha de velocidad ("velocity walking") en la que el peso del termino de recompensa `track_linear_velocity` se incremento de 2.0 a 3.0, con un 70% de entrenamiento en direccion frontal a 0.30 m/s. Se describe como una politica "perpetua": una vez cargada, el robot camina de forma continua hasta que se le indique lo contrario, y ocupa la ranura `walk` del sistema de politicas del daemon de microduck.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LvQinghai/microduck-m3-velw3 | Politica RL para microduck (ONNX) | no disponible | no aplica (61-D obs) | no disponible | no disponible | HuggingFace, 0 descargas |
+| LvQinghai/microduck-m3-velw3 | Politica RL para microduck (ONNX) | no disponible | no aplica (61-D obs) | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otras politicas de la misma categoria con la que establecer una comparacion cuantitativa.
@@ -87,7 +87,7 @@ No se dispone de informacion sobre otras politicas de la misma categoria con la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LvQinghai/microduck-m3-velw3
+- Modelo en Hugging Face: https://huggingface.co/LvQinghai/microduck-m3-velw3
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento citado en la model card: `pollen-robotics/microduck_rl`, rama `develop`, commit `d849ea115` (URL exacta no disponible en la informacion proporcionada)
 - Documentacion del manifiesto de politicas: `docs/policy-manifest.md` del repositorio del daemon (URL exacta no disponible en la informacion proporcionada)

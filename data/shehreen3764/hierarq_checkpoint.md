@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HierarQ Checkpoint es un checkpoint intermedio del modelo HierarQ, presentado en el articulo *HierarQ: Task-Aware Hierarchical Q-Former for Enhanced Video Understanding* (CVPR 2025) por Shehreen Azad, Vibhav Vineet y Yogesh Singh Rawat. El repositorio de HuggingFace lo publica la usuaria shehreen3764 y contiene un unico fichero de pesos, `hierarq_msvd_cap.pth`, correspondiente a un estado intermedio del entrenamiento sobre el conjunto de datos MSVD para la tarea de captioning de video.
+HierarQ Checkpoint es un checkpoint intermedio del modelo HierarQ, presentado en el articulo *HierarQ: Task-Aware Hierarchical Q-Former for Enhanced Video Understanding* (CVPR 2025) por Shehreen Azad, Vibhav Vineet y Yogesh Singh Rawat. El repositorio de Hugging Face lo publica la usuaria shehreen3764 y contiene un unico fichero de pesos, `hierarq_msvd_cap.pth`, correspondiente a un estado intermedio del entrenamiento sobre el conjunto de datos MSVD para la tarea de captioning de video.
 
 HierarQ aborda el problema de la comprension de video de duracion media y larga en modelos multimodales grandes (MLLM). Segun el resumen del articulo, estos modelos tienen limitaciones de longitud de fotogramas y de contexto, lo que les obliga a recurrir a muestreo de fotogramas y puede provocar la perdida de informacion relevante a lo largo del tiempo. La propuesta del articulo es un Q-Former jerarquico y consciente de la tarea (task-aware) que selecciona de forma adaptativa segmentos de video relevantes para la tarea concreta.
 
@@ -67,7 +67,7 @@ El material proporcionado incluye unicamente el resumen y una nota de figura del
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HierarQ Checkpoint (este) | no disponible | no disponible | no disponible | MIT | HuggingFace (checkpoint intermedio) |
+| HierarQ Checkpoint (este) | no disponible | no disponible | no disponible | MIT | Hugging Face (checkpoint intermedio) |
 | Alternativas de comprension de video de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables de modelos comparables (parametros, contexto, rendimiento y licencia) en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa rigurosa. Cabe senalar que la categoria de referencia son los modelos multimodales de comprension de video de duracion media y larga descritos en el articulo, pero sus especificaciones concretas no se incluyen en el material disponible.
@@ -76,7 +76,7 @@ No se dispone de datos verificables de modelos comparables (parametros, contexto
 
 - Es un checkpoint intermedio, no un modelo final entrenado: el autor lo describe explicitamente como estado intermedio sobre MSVD para la tarea de captioning, por lo que su rendimiento en tareas generales puede ser limitado.
 - Alcance restringido: el fichero incluido esta asociado a la tarea de captioning sobre MSVD; no se documentan otras tareas ni capacidades.
-- Dependencia del codigo externo: el uso requiere seguir las instrucciones del repositorio GitHub del autor; el repositorio de HuggingFace no incluye pipeline de inferencia ni configuracion.
+- Dependencia del codigo externo: el uso requiere seguir las instrucciones del repositorio GitHub del autor; el repositorio de Hugging Face no incluye pipeline de inferencia ni configuracion.
 - Sesgos conocidos: no disponibles. Al entrenarse sobre un conjunto especifico (MSVD), es probable que herede sesgos de ese corpus, pero no se documenta informacion al respecto.
 - Riesgo de alucinacion: no cuantificado en la informacion disponible.
 - Limitaciones de contexto e idioma: no disponibles.
@@ -86,7 +86,7 @@ No se dispone de datos verificables de modelos comparables (parametros, contexto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shehreen3764/HierarQ_Checkpoint
+- Hugging Face: https://huggingface.co/shehreen3764/HierarQ_Checkpoint
 - Articulo (arXiv): https://arxiv.org/abs/2503.08585
 - PDF del articulo (v1): https://arxiv.org/pdf/2503.08585v1
 - Repositorio de codigo: https://github.com/sacrcv/HierarQ

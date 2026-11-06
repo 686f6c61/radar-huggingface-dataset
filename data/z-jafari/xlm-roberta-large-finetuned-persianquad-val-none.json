@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Z-Jafari/xlm-roberta-large-finetuned-PersianQuAD-val-None",
+  "slug": "z-jafari-xlm-roberta-large-finetuned-persianquad-val-none",
+  "author": "Z-Jafari",
+  "url": "https://huggingface.co/Z-Jafari/xlm-roberta-large-finetuned-PersianQuAD-val-None",
+  "created_at": "2026-11-06T05:52:01.000Z",
+  "updated_at": "2026-11-06T07:21:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "question-answering",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 558842882,
+  "parameters_human": "558.8M",
+  "storage_bytes": 17883365585,
+  "storage_human": "17.9 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xlm-roberta-base-finetuned-PersianQuAD-val-None - Hugging Face",
+      "url": "https://huggingface.co/Z-Jafari/xlm-roberta-base-finetuned-PersianQuAD-val-None",
+      "snippet": "Instructions to use Z-Jafari/xlm-roberta-base-finetuned-PersianQuAD-val-None with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "xlm-roberta-large-finetuned-PersianQuAD_Factoid_Test",
+      "url": "https://huggingface.co/Z-Jafari/xlm-roberta-large-finetuned-PersianQuAD_Factoid_Test",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

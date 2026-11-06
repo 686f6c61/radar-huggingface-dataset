@@ -4,7 +4,7 @@
 
 Fish Audio S2 Pro es un modelo de síntesis de voz (text-to-speech, TTS) desarrollado por Fish Audio, presentado como un "Large Audio Model" (LAM) de código abierto. Su principal innovación es el control fino y localizado de la prosodia y la emoción mediante instrucciones en lenguaje natural incrustadas en el texto con sintaxis de corchetes, como `[whisper in small voice]` o `[professional broadcast tone]`. Está entrenado con más de 10 millones de horas de audio en más de 80 idiomas, y combina una arquitectura dual-autorregresiva con alineación por aprendizaje por refuerzo (RL alignment).
 
-El modelo se compone de un transformador decoder-only junto con un codec de audio basado en RVQ (10 codebooks, ~21 Hz de tasa de fotogramas). La arquitectura Dual-AR separa un "Slow AR" de 4B parámetros que predice el codebook semántico principal a lo largo del eje temporal, y un "Fast AR" de 400M parámetros que genera los 9 codebooks residuales restantes, logrando un equilibrio entre eficiencia y fidelidad acústica. El repositorio en HuggingFace contiene los pesos en formato safetensors (4.561.852.416 parámetros en total) junto con código de fine-tuning y un motor de inferencia en streaming basado en SGLang.
+El modelo se compone de un transformador decoder-only junto con un codec de audio basado en RVQ (10 codebooks, ~21 Hz de tasa de fotogramas). La arquitectura Dual-AR separa un "Slow AR" de 4B parámetros que predice el codebook semántico principal a lo largo del eje temporal, y un "Fast AR" de 400M parámetros que genera los 9 codebooks residuales restantes, logrando un equilibrio entre eficiencia y fidelidad acústica. El repositorio en Hugging Face contiene los pesos en formato safetensors (4.561.852.416 parámetros en total) junto con código de fine-tuning y un motor de inferencia en streaming basado en SGLang.
 
 La relevancia de S2 Pro radica en que democratiza la generación de voz expresiva de alta calidad, con capacidades de control fino que antes requerían ajustes manuales o modelos propietarios. Además, al ser estructuralmente isomorfo a un LLM autorregresivo estándar, hereda todas las optimizaciones de servicio de SGLang (batching continuo, paged KV cache, CUDA graph replay, RadixAttention), lo que permite un despliegue eficiente en producción con baja latencia.
 
@@ -87,7 +87,7 @@ La comparación se basa en datos públicos de cada modelo; no se dispone de benc
 
 ## Enlaces
 
-- [HuggingFace - Ramalingamthangamani/s2-pro](https://huggingface.co/Ramalingamthangamani/s2-pro)
+- [Hugging Face - Ramalingamthangamani/s2-pro](https://huggingface.co/Ramalingamthangamani/s2-pro)
 - [Technical Report (arXiv 2603.08823)](https://huggingface.co/papers/2603.08823)
 - [GitHub - Fish Speech](https://github.com/fishaudio/fish-speech)
 - [Fish Audio Playground](https://fish.audio)

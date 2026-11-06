@@ -113,7 +113,7 @@ El modelo comparado mas directamente por tamano y licencia es AWQ w4g128, que oc
 
 ## Enlaces
 
-- Modelo en HuggingFace (fichero `.bin` del motor llvq): https://huggingface.co/Pier-Jean/Qwen3-4B-LLVQ-Tetra-sealed
+- Modelo en Hugging Face (fichero `.bin` del motor llvq): https://huggingface.co/Pier-Jean/Qwen3-4B-LLVQ-Tetra-sealed
 - Variante en safetensors para `transformers`: https://huggingface.co/Pier-Jean/Qwen3-4B-LLVQ-Tetra
 - Repositorio del motor en Rust: https://github.com/pjmalandrino/llvq
 - Paper del metodo: https://arxiv.org/abs/2603.11021 (van der Ouderaa, van Baalen, Whatmough, Nagel, 2026)

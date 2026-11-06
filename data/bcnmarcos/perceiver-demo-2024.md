@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bcnmarcos/perceiver-demo-2024` es un prototipo de investigación basado en la arquitectura Perceiver, orientado a tareas de clasificación. Lo publica el usuario de HuggingFace `bcnmarcos` y se distribuye con licencia BSD-3-Clause. No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: la model card lo describe explícitamente como un punto de partida experimental con pesos de inicialización válidos únicamente para pruebas de humo (smoke tests).
+`bcnmarcos/perceiver-demo-2024` es un prototipo de investigación basado en la arquitectura Perceiver, orientado a tareas de clasificación. Lo publica el usuario de Hugging Face `bcnmarcos` y se distribuye con licencia BSD-3-Clause. No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: la model card lo describe explícitamente como un punto de partida experimental con pesos de inicialización válidos únicamente para pruebas de humo (smoke tests).
 
 El repositorio incluye el código de implementación (`pipeline.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`). El recuento real de parámetros del checkpoint es de 49.600, un tamaño muy reducido que confirma que no se trata de un modelo listo para producción ni de un "xlarge" real en el sentido habitual del término, pese a la etiqueta de escala que aparece en la model card.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bcnmarcos/perceiver-demo-2024 | 49.600 | no disponible | No (inicialización) | BSD-3-Clause | HuggingFace |
+| bcnmarcos/perceiver-demo-2024 | 49.600 | no disponible | No (inicialización) | BSD-3-Clause | Hugging Face |
 | Perceiver IO (referencia DeepMind) | variable (decenas de millones a cientos) | no aplica (entrada multimodal) | Sí, con checkpoints publicados | Apache-2.0 (referencia) | Repos oficiales |
-| CLIP (clasificación/zero-shot) | ~150M (ViT-B/32) | 77 tokens de texto | Sí | MIT (variantes) | HuggingFace |
-| ResNet-50 (clasificación de imagen) | ~25M | no aplica | Sí | BSD/MIT según variante | HuggingFace/torchvision |
+| CLIP (clasificación/zero-shot) | ~150M (ViT-B/32) | 77 tokens de texto | Sí | MIT (variantes) | Hugging Face |
+| ResNet-50 (clasificación de imagen) | ~25M | no aplica | Sí | BSD/MIT según variante | Hugging Face/torchvision |
 
 La comparación es asimétrica: los alternativos son modelos entrenados y auditados, mientras que este repositorio es un esqueleto. No hay datos de rendimiento para comparar de forma cuantitativa.
 
@@ -77,10 +77,10 @@ La comparación es asimétrica: los alternativos son modelos entrenados y audita
 - Riesgo de alucinación no aplica en sentido estricto (no genera texto), pero sí de interpretar erróneamente sus salidas como predicciones válidas.
 - La licencia BSD-3-Clause permite uso comercial, pero los términos de los datos externos que se usen con el repositorio deben revisarse por separado.
 - La etiqueta "xlarge" de la model card no se corresponde con el tamaño real del checkpoint; conviene no tomar esa escala como referencia.
-- Requiere un adaptador explícito para APIs de carga automática de HuggingFace; no funciona con `AutoModel` genérico sin implementación propia.
+- Requiere un adaptador explícito para APIs de carga automática de Hugging Face; no funciona con `AutoModel` genérico sin implementación propia.
 - Sin versiones cuantizadas ni formatos alternativos; el despliegue en producción exigiría entrenamiento previo y empaquetado adicional.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bcnmarcos/perceiver-demo-2024
+- Repositorio en Hugging Face: https://huggingface.co/bcnmarcos/perceiver-demo-2024
 - No se han encontrado en la búsqueda web papers, blogs, demos ni repositorios adicionales asociados a este modelo.

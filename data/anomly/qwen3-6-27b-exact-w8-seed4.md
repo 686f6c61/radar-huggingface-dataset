@@ -75,9 +75,9 @@ La comparación más directa es entre las dos variantes publicadas en el mismo r
 
 | Modelo | Parametros | Contexto | Rendimiento (pérdida held-out) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3.6-27B (base) | 27.000 millones | no disponible | no disponible (no se ha evaluado en esta campaña) | Apache-2.0 | HuggingFace |
-| Anomly/qwen3.6-27b-exact-w8-seed4 (variante exact-w8) | 27.000 millones + adaptador LoRA | no disponible | media 0,3490 (semillas) | Apache-2.0 | HuggingFace |
-| Anomly/qwen3.6-27b-exact-w8-seed4 (variante bf16) | 27.000 millones + adaptador LoRA | no disponible | media 0,3491 (semillas) | Apache-2.0 | HuggingFace |
+| Qwen/Qwen3.6-27B (base) | 27.000 millones | no disponible | no disponible (no se ha evaluado en esta campaña) | Apache-2.0 | Hugging Face |
+| Anomly/qwen3.6-27b-exact-w8-seed4 (variante exact-w8) | 27.000 millones + adaptador LoRA | no disponible | media 0,3490 (semillas) | Apache-2.0 | Hugging Face |
+| Anomly/qwen3.6-27b-exact-w8-seed4 (variante bf16) | 27.000 millones + adaptador LoRA | no disponible | media 0,3491 (semillas) | Apache-2.0 | Hugging Face |
 
 La diferencia entre las dos variantes es estadísticamente nula (p = 0,82). No se dispone de benchmarks de tareas para ninguno de los tres modelos en la información proporcionada.
 
@@ -94,7 +94,7 @@ La diferencia entre las dos variantes es estadísticamente nula (p = 0,82). No s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Anomly/qwen3.6-27b-exact-w8-seed4
+- Hugging Face: https://huggingface.co/Anomly/qwen3.6-27b-exact-w8-seed4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/nebius/SWE-rebench-openhands-trajectories
 - Paper relacionado: https://arxiv.org/abs/2510.16830

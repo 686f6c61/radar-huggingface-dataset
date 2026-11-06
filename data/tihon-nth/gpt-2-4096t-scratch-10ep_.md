@@ -6,7 +6,7 @@
 
 La relevancia de este modelo reside en su carácter experimental: al tratarse de un entrenamiento desde cero durante 10 épocas con una pérdida final de validación de 3,8283, puede servir como punto de referencia para estudiar la dinámica de entrenamiento de arquitecturas GPT-2 con datos y configuraciones específicas. No obstante, la ausencia de información sobre el dataset de entrenamiento, la licencia y las capacidades evaluadas limita considerablemente su aplicabilidad en entornos de producción.
 
-El repositorio incluye únicamente pesos en formato safetensors (0,5 GB) y una model card autogenerada por el Trainer de HuggingFace, sin documentación adicional sobre el proceso de entrenamiento ni los datos utilizados.
+El repositorio incluye únicamente pesos en formato safetensors (0,5 GB) y una model card autogenerada por el Trainer de Hugging Face, sin documentación adicional sobre el proceso de entrenamiento ni los datos utilizados.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 - VRAM estimada para inferencia: con 126,8 millones de parámetros en FP32, el modelo ocupa aproximadamente 507 MB en memoria; en FP16 serían unos 254 MB. La VRAM total necesaria depende de la longitud de contexto y el tamaño de lote.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede ejecutar el modelo en FP16. Una NVIDIA GTX 1650, RTX 3060 o superior sería suficiente. También puede ejecutarse en CPU, aunque con mayor latencia.
 - Compatibilidad con GPU de consumo: sí, el modelo cabe en cualquier GPU moderna de consumo, incluidas las integradas con suficiente memoria compartida.
-- Opciones de despliegue: al ser un modelo de la familia GPT-2 con pesos en safetensors, es compatible con Transformers de HuggingFace, vLLM, llama.cpp (si se convierte a GGUF), Ollama y Text Generation Inference (TGI).
+- Opciones de despliegue: al ser un modelo de la familia GPT-2 con pesos en safetensors, es compatible con Transformers de Hugging Face, vLLM, llama.cpp (si se convierte a GGUF), Ollama y Text Generation Inference (TGI).
 - Latencia y throughput: no hay datos publicados. Para un modelo de este tamaño, en una GPU moderna se espera una latencia de decodificación de decenas de milisegundos por token, pero estos valores son estimaciones no verificadas.
 
 ## Comparativa con modelos similares
@@ -83,5 +83,5 @@ La comparación directa es limitada porque el modelo de tihon-nth carece de benc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tihon-nth/gpt-2-4096t-scratch-10ep_
+- Repositorio Hugging Face: https://huggingface.co/tihon-nth/gpt-2-4096t-scratch-10ep_
 - No se han encontrado papers, blogs, repositorios de código o demos asociados a este modelo en la información disponible.

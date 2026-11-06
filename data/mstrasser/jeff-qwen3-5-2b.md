@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jeff-Qwen3.5-2B es un repositorio alojado en HuggingFace por el usuario mstrasser bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no incluye model card con contenido técnico: el README se limita a la declaración de licencia, sin descripción, sin datos de entrenamiento y sin instrucciones de uso. El repositorio acumula 0 descargas y 0 likes, y no tiene asignada ninguna etiqueta de pipeline ni de idioma, por lo que no es posible confirmar su naturaleza (text-generation, fine-tune, merge u otro artefacto).
+Jeff-Qwen3.5-2B es un repositorio alojado en Hugging Face por el usuario mstrasser bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no incluye model card con contenido técnico: el README se limita a la declaración de licencia, sin descripción, sin datos de entrenamiento y sin instrucciones de uso. El repositorio acumula 0 descargas y 0 likes, y no tiene asignada ninguna etiqueta de pipeline ni de idioma, por lo que no es posible confirmar su naturaleza (text-generation, fine-tune, merge u otro artefacto).
 
 El nombre del repositorio sugiere que se trata de un modelo de aproximadamente 2.000 millones de parámetros vinculado a la familia Qwen3.5, presumiblemente un ajuste fino, una variante o un merge. Esta interpretación es una inferencia a partir del identificador y no está respaldada por ninguna declaración del autor en la información disponible, por lo que debe tratarse como no verificada.
 
@@ -73,7 +73,7 @@ No es posible establecer una comparativa fiable porque se desconocen los paráme
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| mstrasser/Jeff-Qwen3.5-2B | no disponible | no disponible | apache-2.0 | repositorio HuggingFace con 0 descargas | no disponible |
+| mstrasser/Jeff-Qwen3.5-2B | no disponible | no disponible | apache-2.0 | repositorio Hugging Face con 0 descargas | no disponible |
 | Alternativas de ~2B de la familia Qwen | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de ~1B-3B tipo Llama o Gemma | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,5 +94,5 @@ Se recomienda contrastar con modelos pequeños consolidados (Qwen3 1.7B/4B, Llam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mstrasser/Jeff-Qwen3.5-2B
+- Hugging Face: https://huggingface.co/mstrasser/Jeff-Qwen3.5-2B
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información disponible.

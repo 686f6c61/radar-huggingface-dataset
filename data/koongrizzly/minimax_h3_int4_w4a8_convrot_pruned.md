@@ -100,7 +100,7 @@ No se dispone de comparativas de parametros, contexto, rendimiento ni licencia f
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/koongrizzly/MiniMax_H3_int4_W4A8_ConvRot_Pruned
+- Repositorio en Hugging Face: https://huggingface.co/koongrizzly/MiniMax_H3_int4_W4A8_ConvRot_Pruned
 - Modelo original: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Aplicacion standalone: https://github.com/Koongrizzly/MiniMax_H3_Standalone_app
 - Discord de soporte del autor: https://discord.gg/kWxAJwjSY

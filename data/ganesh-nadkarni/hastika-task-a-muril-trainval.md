@@ -33,7 +33,7 @@ El ajuste fino utilizó los ficheros de entrenamiento y validación del corpus H
 - Procesamiento de texto code-mixed kannada-inglés, incluyendo transliteraciones al alfabeto latino (kanglish).
 - Manejo de entradas cortas a medias (hasta 160 tokens), adecuado para comentarios de YouTube.
 - Integración directa con la pipeline `text-classification` de `transformers`.
-- Compatibilidad declarada con Text Embeddings Inference y con endpoints de HuggingFace.
+- Compatibilidad declarada con Text Embeddings Inference y con endpoints de Hugging Face.
 - No soporta generación de texto, tool calling, razonamiento multi-paso, visión ni audio.
 - No se documentan capacidades multilingües más allá de kannada e inglés.
 
@@ -60,16 +60,16 @@ No se han publicado resultados de benchmarks en la información disponible más 
 - VRAM estimada para inferencia en FP32: aproximadamente 1 GB para los pesos (237 M de parámetros) más el overhead de activaciones y tokenizador; en FP16/BF16, alrededor de 0,5 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; una T4, RTX 3060 o superior es suficiente. Para lotes grandes, A100 o H100 permiten mayor throughput, aunque el modelo no las requiere.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer con 2 GB o más de VRAM (GTX 1650, RTX 3050, RTX 4090, etc.).
-- Opciones de despliegue: pipeline de `transformers`, Text Embeddings Inference (declarado compatible), endpoints de HuggingFace, y servidores de inferencia basados en PyTorch. No se documentan variantes GGUF para llama.cpp ni Ollama.
+- Opciones de despliegue: pipeline de `transformers`, Text Embeddings Inference (declarado compatible), endpoints de Hugging Face, y servidores de inferencia basados en PyTorch. No se documentan variantes GGUF para llama.cpp ni Ollama.
 - Latencia y throughput: no disponibles en la información proporcionada. Por el tamaño del modelo, se espera que sea apto para inferencia en tiempo real en GPU modesta, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hastika-task-a-muril-trainval | 237,6 M | 160 tokens (entrenamiento) | Clasificación binaria de odio en kanglish | Apache 2.0 | HuggingFace |
-| google/muril-base-cased | 237,6 M (aprox.) | No disponible en la información proporcionada | Modelo base multilingüe (no clasificador) | Apache 2.0 | HuggingFace |
-| MuRIL large | No disponible en la información proporcionada | No disponible | Modelo base multilingüe | Apache 2.0 | HuggingFace |
+| hastika-task-a-muril-trainval | 237,6 M | 160 tokens (entrenamiento) | Clasificación binaria de odio en kanglish | Apache 2.0 | Hugging Face |
+| google/muril-base-cased | 237,6 M (aprox.) | No disponible en la información proporcionada | Modelo base multilingüe (no clasificador) | Apache 2.0 | Hugging Face |
+| MuRIL large | No disponible en la información proporcionada | No disponible | Modelo base multilingüe | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento de los modelos comparables en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -87,6 +87,6 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ganesh-Nadkarni/hastika-task-a-muril-trainval
+- Hugging Face: https://huggingface.co/Ganesh-Nadkarni/hastika-task-a-muril-trainval
 - Modelo base: https://huggingface.co/google/muril-base-cased
 - Paper de referencia: Kavatagi, S. and Rachh, R. (2025). HASTIKA: hate speech and target identification in Kannada-English code-mixed text. *Language Resources and Evaluation*, 59(3):2811-2856.

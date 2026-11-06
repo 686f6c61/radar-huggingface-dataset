@@ -80,9 +80,9 @@ No se dispone de resultados numericos comparables de otras metricas aprendidas d
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DISTO (bilalghanem/DISTO) | 82,1 M | 512 tokens | Regresion sobre calidad de distractores (salida en [0, 1]) | apache-2.0 | HuggingFace, safetensors, 0 descargas y 0 likes en el momento de la consulta |
-| distilroberta-base (modelo base) | 82,1 M | 512 tokens | Modelo de lenguaje enmascarado y encoder generico | apache-2.0 | HuggingFace |
-| RoBERTa-base | 125 M | 512 tokens | Encoder generico, base habitual para ajustes de clasificacion | MIT | HuggingFace |
+| DISTO (bilalghanem/DISTO) | 82,1 M | 512 tokens | Regresion sobre calidad de distractores (salida en [0, 1]) | apache-2.0 | Hugging Face, safetensors, 0 descargas y 0 likes en el momento de la consulta |
+| distilroberta-base (modelo base) | 82,1 M | 512 tokens | Modelo de lenguaje enmascarado y encoder generico | apache-2.0 | Hugging Face |
+| RoBERTa-base | 125 M | 512 tokens | Encoder generico, base habitual para ajustes de clasificacion | MIT | Hugging Face |
 | Otras metricas automaticas de evaluacion de distractores | no disponible | no disponible | Evaluacion de distractores | no disponible | Recogidas en encuestas del area (por ejemplo, la survey de BEA 2025), sin tabla comparativa numerica en la informacion consultada |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ No se dispone de resultados numericos comparables de otras metricas aprendidas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bilalghanem/DISTO
+- Modelo en Hugging Face: https://huggingface.co/bilalghanem/DISTO
 - Codigo fuente: https://github.com/bilalghanem/DISTO
 - Articulo (EDM 2024): https://www.educationaldatamining.org/edm2024/proceedings/2024.EDM-long-papers.1/2024.EDM-long-papers.1.pdf
 - DOI del articulo: https://doi.org/10.5281/zenodo.12729766

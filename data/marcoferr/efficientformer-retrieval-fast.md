@@ -2,11 +2,11 @@
 
 ## Resumen
 
-marcoferr/efficientformer-retrieval-fast es un repositorio experimental publicado en HuggingFace que contiene una implementacion en PyTorch de una arquitectura EfficientFormer orientada a tareas de retrieval multimodal (recuperacion de imagenes a partir de texto o viceversa). Lo firma el usuario marcoferr y se distribuye bajo licencia MIT. No se trata de un modelo entrenado, sino de un punto de partida reproducible: el autor lo describe explicitamente como un codebase para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+marcoferr/efficientformer-retrieval-fast es un repositorio experimental publicado en Hugging Face que contiene una implementacion en PyTorch de una arquitectura EfficientFormer orientada a tareas de retrieval multimodal (recuperacion de imagenes a partir de texto o viceversa). Lo firma el usuario marcoferr y se distribuye bajo licencia MIT. No se trata de un modelo entrenado, sino de un punto de partida reproducible: el autor lo describe explicitamente como un codebase para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El repositorio incluye el script de inferencia, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor califica como checkpoint de inicializacion valido para pruebas de humo, no como un checkpoint entrenado ni evaluado. La escala declarada es "large", con atencion de ventana deslizante, fusion de bajo rango, activacion swish y normalizacion scalenorm. El recuento de parametros que figura en los metadatos de safetensors es de 24.832, un orden de magnitud coherente con un modelo de juguete para validar el pipeline.
 
-Su relevancia es, por tanto, metodologica mas que de rendimiento: sirve como esqueleto para experimentar con variantes de EfficientFormer en retrieval, comparar recetas de entrenamiento (rmsprop con scheduler polinomial) y verificar que el flujo de datos y la carga de pesos funcionan antes de invertir computo en un run real. No hay resultados de benchmarks, ni idiomas declarados, ni pipeline asignado en la ficha de HuggingFace.
+Su relevancia es, por tanto, metodologica mas que de rendimiento: sirve como esqueleto para experimentar con variantes de EfficientFormer en retrieval, comparar recetas de entrenamiento (rmsprop con scheduler polinomial) y verificar que el flujo de datos y la carga de pesos funcionan antes de invertir computo en un run real. No hay resultados de benchmarks, ni idiomas declarados, ni pipeline asignado en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No hay informacion sobre volumen de datos de entrenamiento, composicion del data
 - VRAM estimada para inferencia: por debajo de 1 MB para los pesos en precision completa; el cuello de botella real es el conjunto de datos de retrieval, no el modelo.
 - GPU recomendadas: cualquiera; no se requiere A100, H100 ni RTX 4090 para ejecutar el ejemplo de prueba de humo.
 - Cabe en GPU consumer: si, sin restricciones practicas.
-- Opciones de despliegue: al ser una implementacion personalizada, las APIs genericas de carga automatica (vLLM, TGI, Ollama, llama.cpp) requieren un adaptador explicito. El autor indica que la ejecucion se hace mediante `inference.py` y que no hay pipeline asignado en la ficha de HuggingFace.
+- Opciones de despliegue: al ser una implementacion personalizada, las APIs genericas de carga automatica (vLLM, TGI, Ollama, llama.cpp) requieren un adaptador explicito. El autor indica que la ejecucion se hace mediante `inference.py` y que no hay pipeline asignado en la ficha de Hugging Face.
 - Latencia y throughput: no disponibles. No tiene sentido caracterizarlos para un checkpoint sin entrenar.
 
 ## Comparativa con modelos similares
@@ -97,5 +97,5 @@ Comparativa de disponibilidad: este repositorio es el unico de los tres para el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marcoferr/efficientformer-retrieval-fast
+- Modelo en Hugging Face: https://huggingface.co/marcoferr/efficientformer-retrieval-fast
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

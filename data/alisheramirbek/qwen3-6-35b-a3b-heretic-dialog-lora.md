@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`AlisherAmirbek/Qwen3.6-35B-A3B-heretic-dialog-lora` es un adaptador LoRA de ajuste supervisado (SFT) publicado en HuggingFace por el usuario AlisherAmirbek. No se trata de un modelo completo, sino de un delta de pesos (formato PEFT/safetensors) que debe aplicarse sobre el modelo base `llmfan46/Qwen3.6-35B-A3B-uncensored-heretic`, a su vez una variante "uncensored/heretic" de la familia Qwen3.6 con arquitectura MoE (35B totales, 3B activos, segun la nomenclatura del identificador).
+`AlisherAmirbek/Qwen3.6-35B-A3B-heretic-dialog-lora` es un adaptador LoRA de ajuste supervisado (SFT) publicado en Hugging Face por el usuario AlisherAmirbek. No se trata de un modelo completo, sino de un delta de pesos (formato PEFT/safetensors) que debe aplicarse sobre el modelo base `llmfan46/Qwen3.6-35B-A3B-uncensored-heretic`, a su vez una variante "uncensored/heretic" de la familia Qwen3.6 con arquitectura MoE (35B totales, 3B activos, segun la nomenclatura del identificador).
 
 El adaptador esta orientado a conversacion: la unica documentacion sustantiva de la model card describe una actualizacion de "dialog SFT" con 996 ejemplos de entrenamiento y 100 de validacion, en la que se reescribieron 527 respuestas objetivo para anadir explicaciones, matices y ejemplos. El objetivo declarado es mejorar la calidad y profundidad de las respuestas conversacionales del modelo base, no anadir capacidades nuevas.
 
-Su relevancia es limitada y muy especifica: se trata de un experimento de la comunidad con 163 descargas y 1 "like" en el momento de redactar esta ficha, sin licencia declarada, sin idiomas declarados y con una model card generada a partir de la plantilla por defecto de HuggingFace en la que la mayoria de los campos figuran como "[More Information Needed]". Cualquier evaluacion rigurosa debe hacerse contra el modelo base, cuyas especificaciones no se detallan en la informacion disponible.
+Su relevancia es limitada y muy especifica: se trata de un experimento de la comunidad con 163 descargas y 1 "like" en el momento de redactar esta ficha, sin licencia declarada, sin idiomas declarados y con una model card generada a partir de la plantilla por defecto de Hugging Face en la que la mayoria de los campos figuran como "[More Information Needed]". Cualquier evaluacion rigurosa debe hacerse contra el modelo base, cuyas especificaciones no se detallan en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen3.6-35B-A3B-heretic-dialog-lora) | 35B base / 3B activos (segun ID) | no disponible | no disponible | HuggingFace, 163 descargas | LoRA SFT de dialogo, 996 ejemplos |
-| `llmfan46/Qwen3.6-35B-A3B-uncensored-heretic` (base) | 35B / 3B activos (segun ID) | no disponible | no disponible | HuggingFace | Modelo base sin el ajuste de dialogo |
+| Este adaptador (Qwen3.6-35B-A3B-heretic-dialog-lora) | 35B base / 3B activos (segun ID) | no disponible | no disponible | Hugging Face, 163 descargas | LoRA SFT de dialogo, 996 ejemplos |
+| `llmfan46/Qwen3.6-35B-A3B-uncensored-heretic` (base) | 35B / 3B activos (segun ID) | no disponible | no disponible | Hugging Face | Modelo base sin el ajuste de dialogo |
 | Otros adaptadores LoRA de dialogo sobre Qwen3.6 | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion proporcionada |
 
 No se dispone de informacion suficiente para comparar con alternativas de la misma categoria (mismo tamano o misma tarea) en terminos de rendimiento, contexto o licencia.
@@ -87,7 +87,7 @@ No se dispone de informacion suficiente para comparar con alternativas de la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlisherAmirbek/Qwen3.6-35B-A3B-heretic-dialog-lora
+- Modelo en Hugging Face: https://huggingface.co/AlisherAmirbek/Qwen3.6-35B-A3B-heretic-dialog-lora
 - Modelo base: https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic
 - Referencia citada en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

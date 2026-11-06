@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Enfoque | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Leak CURBER v6 | Ensemble MLP + BERT rxnfp + kNN | SMILES de reacción | MIT | HuggingFace, CPU |
+| Leak CURBER v6 | Ensemble MLP + BERT rxnfp + kNN | SMILES de reacción | MIT | Hugging Face, CPU |
 | rxnfp (Schwaller et al., 2021) | BERT de reacciones | SMILES de reacción | MIT | Público |
 | BEC-Pred (Qian et al., 2024) | Predicción de EC | Reacción | no disponible | Referencia en model card |
 | CLIPZyme (Mikhael et al., ICML 2024) | Recuperación enzima-reacción | Reacción/enzima | no disponible | Referencia en model card |
@@ -93,7 +93,7 @@ No se dispone de comparaciones numéricas de rendimiento entre estos sistemas en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/geek4freak/leak-curber-enzyme-retrieval-v6
+- Hugging Face: https://huggingface.co/geek4freak/leak-curber-enzyme-retrieval-v6
 - rxnfp (Schwaller et al., Nat. Mach. Intell. 2021): referencia citada en la model card
 - BEC-Pred (Qian et al., J. Cheminform. 2024): referencia citada en la model card
 - CLIPZyme (Mikhael et al., ICML 2024): referencia citada en la model card

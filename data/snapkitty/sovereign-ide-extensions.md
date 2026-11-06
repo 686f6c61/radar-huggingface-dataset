@@ -67,7 +67,7 @@ No disponible. No existen modelos de IA comparables porque este repositorio no c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Snapkitty/sovereign-ide-extensions
+- Repositorio Hugging Face: https://huggingface.co/Snapkitty/sovereign-ide-extensions
 - Repositorio GitHub: https://github.com/SNAPKITTYWEST/sovereign-ide-extensions
 - Repositorio sovereign-ide (kit completo): https://github.com/SNAPKITTYWEST/sovereign-ide
 - LEDGE (cadena WORM): https://github.com/snapkittywest/ledge

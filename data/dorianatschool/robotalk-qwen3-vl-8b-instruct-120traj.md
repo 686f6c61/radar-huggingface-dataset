@@ -70,8 +70,8 @@ Los intervalos son intervalos de Wilson del 95 % sobre episodios, no sobre tarea
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RoboTalk-Qwen3-VL-8B-Instruct-120traj | 8.000 millones (base) mas adaptador LoRA | secuencia de entrenamiento de 8.192 tokens | 93,02 % en tareas vistas; 48,00 % en tareas reservadas (FSM sin errores) | no disponible para el adaptador | adaptador PEFT en HuggingFace |
-| Qwen3-VL-8B-Instruct (modelo base sin adaptador) | 8.000 millones | no disponible en la informacion proporcionada | no disponible para la tarea RoboTalk | Apache-2.0 | modelo completo en HuggingFace |
+| RoboTalk-Qwen3-VL-8B-Instruct-120traj | 8.000 millones (base) mas adaptador LoRA | secuencia de entrenamiento de 8.192 tokens | 93,02 % en tareas vistas; 48,00 % en tareas reservadas (FSM sin errores) | no disponible para el adaptador | adaptador PEFT en Hugging Face |
+| Qwen3-VL-8B-Instruct (modelo base sin adaptador) | 8.000 millones | no disponible en la informacion proporcionada | no disponible para la tarea RoboTalk | Apache-2.0 | modelo completo en Hugging Face |
 | Otros adaptadores LoRA de robotica sobre modelos vision-language | no disponible | no disponible | no disponible | no disponible | no se han identificado alternativas comparables en la informacion proporcionada |
 
 La busqueda web realizada no devolvio resultados tecnicos relevantes (unicamente enlaces generales a Facebook), por lo que no ha sido posible localizar comparativas independientes ni adaptadores equivalentes entrenados sobre el mismo conjunto de datos.
@@ -93,7 +93,7 @@ La busqueda web realizada no devolvio resultados tecnicos relevantes (unicamente
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Instruct-120traj
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Instruct-120traj
 - Conjunto de datos RoboTalk: https://huggingface.co/datasets/DorianAtSchool/RoboTalk
 - Modelo base Qwen3-VL-8B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Ficheros de configuracion y evaluacion citados en la model card: `training_config.json`, `task_split.json`, `evaluation_results.json` (incluidos en el repositorio del adaptador)

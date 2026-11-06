@@ -113,7 +113,7 @@ Comparativa con alternativas de la misma categoria (parametros, contexto, licenc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adampippert/granite-decisions
+- Repositorio en Hugging Face: https://huggingface.co/adampippert/granite-decisions
 - Codigo fuente, release v0.1.0: https://github.com/AdamPippert/granite-decisions/tree/v0.1.0
 - Dataset sintetico original: https://huggingface.co/datasets/adampippert/granite-decisions-synthetic
 - Pesos oficiales de IBM (modelo base): https://huggingface.co/ibm-granite/granite-4.1-3b

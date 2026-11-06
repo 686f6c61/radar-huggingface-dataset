@@ -81,5 +81,5 @@ La diferencia clave es el enfoque: Shaylah es un proyecto artístico con dominio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/laabidate/shaylah-darija-4b
+- Repositorio en Hugging Face: https://huggingface.co/laabidate/shaylah-darija-4b
 - No se han encontrado enlaces adicionales (papers, blogs, demos) en la informacion disponible.

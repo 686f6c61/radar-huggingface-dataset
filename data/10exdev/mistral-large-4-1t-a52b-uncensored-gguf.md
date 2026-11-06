@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks de otros modelos comparables en la informac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/10exdev/Mistral-Large-4-1T-A52B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/10exdev/Mistral-Large-4-1T-A52B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B
 - Cuantizaciones de referencia: https://huggingface.co/unsloth/Mistral-Large-4-1T-A52B-GGUF
 - Atomic Chat: https://atomic.chat/

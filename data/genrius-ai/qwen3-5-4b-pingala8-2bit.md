@@ -108,7 +108,7 @@ La ventaja de este archivo es la relación perplejidad/bytes y la compatibilidad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Genrius-AI/Qwen3.5-4B-Pingala8-2bit
+- Modelo en Hugging Face: https://huggingface.co/Genrius-AI/Qwen3.5-4B-Pingala8-2bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Release previo con la misma receta (Qwen3-4B Pingala-8): https://huggingface.co/Genrius-AI/Qwen3-4B-Pingala8-2bit
 - Código y parche de runtime: https://github.com/Genrius-AI/pingala8-llm

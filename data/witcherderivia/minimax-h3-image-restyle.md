@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Minimax-H3-Image-Restyle es un ajuste fino (finetune) del modelo MiniMax-H3, un modelo de generación de vídeo de 33 000 millones de parámetros desarrollado por MiniMax. Este ajuste, publicado por el usuario witcherderivia en HuggingFace, adapta el modelo base para realizar transferencia de estilo sobre imágenes preservando el contenido original, una tarea de image-to-image que aprovecha la capacidad generativa del modelo de vídeo subyacente. El repositorio ocupa 0,9 GB y se distribuye bajo licencia Apache 2.0.
+Minimax-H3-Image-Restyle es un ajuste fino (finetune) del modelo MiniMax-H3, un modelo de generación de vídeo de 33 000 millones de parámetros desarrollado por MiniMax. Este ajuste, publicado por el usuario witcherderivia en Hugging Face, adapta el modelo base para realizar transferencia de estilo sobre imágenes preservando el contenido original, una tarea de image-to-image que aprovecha la capacidad generativa del modelo de vídeo subyacente. El repositorio ocupa 0,9 GB y se distribuye bajo licencia Apache 2.0.
 
 El modelo se apoya en los pesos de MiniMax-H3, tanto en su versión original de MiniMaxAI como en la variante empaquetada por Comfy-Org para su uso en ComfyUI. La propuesta del autor es reutilizar un modelo de generación de vídeo de gran escala como motor de transferencia de estilo fotograma a fotograma, manteniendo la estructura y el contenido de la imagen de entrada mientras se aplica un nuevo estilo visual. La model card indica explícitamente que el código de inferencia y las instrucciones de uso están pendientes de publicación.
 
@@ -74,6 +74,6 @@ No disponible. No se dispone de información suficiente sobre modelos comparable
 
 ## Enlaces
 
-- [HuggingFace: witcherderivia/minimax-h3-image-restyle](https://huggingface.co/witcherderivia/minimax-h3-image-restyle)
+- [Hugging Face: witcherderivia/minimax-h3-image-restyle](https://huggingface.co/witcherderivia/minimax-h3-image-restyle)
 - [Modelo base: MiniMaxAI/MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3)
 - [Modelo base empaquetado: Comfy-Org/MiniMax-H3](https://huggingface.co/Comfy-Org/MiniMax-H3)

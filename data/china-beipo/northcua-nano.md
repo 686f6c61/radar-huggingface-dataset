@@ -103,7 +103,7 @@ La comparativa con modelos de otros desarrolladores (por ejemplo, agentes GUI de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/china-beipo/NorthCUA-Nano
+- Modelo en Hugging Face: https://huggingface.co/china-beipo/NorthCUA-Nano
 - Página del proyecto: https://beipo.top/blog/northcua/
 - Repositorio del Harness: https://github.com/china-qijizhifeng/NorthCUA-Harness
 - Familia de modelos (Pro): https://huggingface.co/beipo-ai/NorthCUA-Pro

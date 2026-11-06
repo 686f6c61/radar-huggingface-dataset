@@ -22,7 +22,7 @@ La relevancia actual es practica y metodologica: son artefactos diminutos (37 MB
 | Formato de pesos | GGUF (etiqueta declarada, uso con llama.cpp); el repositorio reporta 317.184 parametros en safetensors |
 | Modelo base | google/gemma-4-31B-it |
 | Numero de vectores | 29 (1,27 MB cada uno, 37 MB en total) |
-| Tamano del repositorio | 0,0 GB reportado por HuggingFace |
+| Tamano del repositorio | 0,0 GB reportado por Hugging Face |
 | Fecha de creacion | 2026-09-27 |
 | Ultima actualizacion | 2026-09-27 |
 | Descargas / likes | 0 descargas / 1 like |
@@ -115,14 +115,14 @@ No se dispone en la informacion proporcionada de repositorios alternativos compa
 - Idiomas y contexto: no se detallan en la informacion; dependen enteramente de las capacidades y limitaciones de Gemma 4 31B, incluidos sus sesgos y su riesgo de alucinacion.
 - Integracion en caliente no incluida: el cambio de vector por peticion en ik_llama.cpp requiere una extension de frontend o un proxy pequeno que el repositorio no proporciona.
 - Estado del repositorio: 0 descargas y 1 like en el momento de la consulta, sin validacion externa conocida; conviene tratar las cifras como resultados autoinformados por el autor.
-- El repositorio pesa 0,0 GB segun HuggingFace pese a declarar 37 MB de vectores, lo que puede indicar que los ficheros no estan alojados o que la medicion esta desactualizada.
+- El repositorio pesa 0,0 GB segun Hugging Face pese a declarar 37 MB de vectores, lo que puede indicar que los ficheros no estan alojados o que la medicion esta desactualizada.
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/andyoneal/ecce-vectors
+- Hugging Face (modelo): https://huggingface.co/andyoneal/ecce-vectors
 - Fichero de licencias: https://huggingface.co/andyoneal/ecce-vectors/blob/main/LICENSES.md
 - Guia de ajuste de vectores propios: https://huggingface.co/andyoneal/ecce-vectors/blob/main/GUIDE.md
 - Imagen de portada del repositorio: images/eccehomovectors.png
-- Perfil del autor en HuggingFace: https://huggingface.co/andyoneal
+- Perfil del autor en Hugging Face: https://huggingface.co/andyoneal
 - Listado de modelos del autor: https://huggingface.co/andyoneal/models
 - Modelo base referenciado: https://huggingface.co/google/gemma-4-31B-it

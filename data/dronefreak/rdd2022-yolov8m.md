@@ -106,7 +106,7 @@ Zoo de modelos RDD2022 publicado por el mismo autor (mismo protocolo de evaluaci
 
 | Modelo | Parametros | mAP@50 | mAP@50-95 | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| YOLOv8m RDD2022 (este modelo) | 25,9 M | 62,03 | 34,08 | imagenes, FLOPs a 640 px | AGPL-3.0 | HuggingFace (ultralytics, `best.pt`) |
+| YOLOv8m RDD2022 (este modelo) | 25,9 M | 62,03 | 34,08 | imagenes, FLOPs a 640 px | AGPL-3.0 | Hugging Face (ultralytics, `best.pt`) |
 | RF-DETR Medium | no disponible | 65,08 | 36,02 | no disponible | no disponible | referenciado en DetectionBench |
 | RF-DETR Small | no disponible | 64,71 | 35,73 | no disponible | no disponible | referenciado en DetectionBench |
 | YOLOv8s RDD2022 | no disponible (familia YOLOv8s) | 61,45 | 33,53 | no disponible | AGPL-3.0 (si sigue la licencia Ultralytics) | referenciado en DetectionBench |
@@ -128,7 +128,7 @@ Frente a la familia RF-DETR, este YOLOv8m queda 3,05 puntos de mAP@50 por detras
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/rdd2022-yolov8m
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/rdd2022-yolov8m
 - Dataset RDD2022 usado en el entrenamiento: https://huggingface.co/datasets/dronefreak/RDD2022
 - Repositorio DetectionBench (framework y fuente de las metricas): https://github.com/dronefreak/DetectionBench
 - Modelo base: https://huggingface.co/Ultralytics/YOLOv8

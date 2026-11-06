@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`makactuary/danish-fire-xl-priority` no es un modelo de lenguaje ni una red neuronal: es un artefacto estadístico publicado en HuggingFace que contiene el resultado de un ajuste de teoría de valores extremos (EVT) sobre la cola de la siniestralidad de incendios daneses, junto con una tabla de prioridades (puntos de retención) para un contrato de reaseguro excess-of-loss. Lo firma el usuario `makactuary` y acompaña al artículo de Café Poliçe «Reasürans Dilimini Nereye Koymalı?» ("¿dónde debe situarse la capa de reaseguro?"), cuyo código vive en un repositorio de GitHub independiente.
+`makactuary/danish-fire-xl-priority` no es un modelo de lenguaje ni una red neuronal: es un artefacto estadístico publicado en Hugging Face que contiene el resultado de un ajuste de teoría de valores extremos (EVT) sobre la cola de la siniestralidad de incendios daneses, junto con una tabla de prioridades (puntos de retención) para un contrato de reaseguro excess-of-loss. Lo firma el usuario `makactuary` y acompaña al artículo de Café Poliçe «Reasürans Dilimini Nereye Koymalı?» ("¿dónde debe situarse la capa de reaseguro?"), cuyo código vive en un repositorio de GitHub independiente.
 
 El modelo resuelve un problema concreto de suscripción: decidir a partir de qué importe conviene ceder siniestros a un reasegurador. Para ello ajusta una distribución generalizada de Pareto (GPD) a los 109 siniestros que superan los 10 mDKK en el conjunto `danishuni` (2.167 siniestros de Copenhagen Re, 1980-1990, valores de 1985), obteniendo un índice de cola ξ = 0,50 (IC bootstrap del 95%: 0,13-0,79) y una escala σ = 6,98. Con esos parámetros construye una tabla que cruza pérdida cedida, burning cost, SCR y coste total para cada prioridad candidata.
 
@@ -74,11 +74,11 @@ No se dispone de comparación con otros ajustes sobre el mismo conjunto de datos
 
 ## Comparativa con modelos similares
 
-No se conocen en la información proporcionada otros repositorios de HuggingFace directamente comparables. La comparación solo puede plantearse a nivel de método:
+No se conocen en la información proporcionada otros repositorios de Hugging Face directamente comparables. La comparación solo puede plantearse a nivel de método:
 
 | Alternativa | Enfoque | Incertidumbre documentada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este repositorio | GPD ajustada con umbral fijado más tabla de prioridades con criterio económico | Sí (IC bootstrap 0,13-0,79) | MIT (datos GPL ≥ 2) | Pública en HuggingFace |
+| Este repositorio | GPD ajustada con umbral fijado más tabla de prioridades con criterio económico | Sí (IC bootstrap 0,13-0,79) | MIT (datos GPL ≥ 2) | Pública en Hugging Face |
 | Ajuste propio con `scipy.stats.genpareto` o paquetes de R (`evd`, `ismev`, `extRemes`) | Misma familia GPD, sin tabla de prioridades ni criterio de coste de capital | Depende de la implementación | Licencias de cada librería (BSD en SciPy; GPL en varios paquetes de R) | Pública |
 | Plataformas comerciales de modelización de catástrofes | Modelización de catástrofes completa, no solo cola | No disponible | Propietaria | Comercial |
 
@@ -99,7 +99,7 @@ No se han verificado datos de rendimiento comparativos entre estas opciones en l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/makactuary/danish-fire-xl-priority
+- Repositorio en Hugging Face: https://huggingface.co/makactuary/danish-fire-xl-priority
 - Código del artículo: https://github.com/000MAK/cafepolice-reinsurance-priority
 - Artículo de Café Poliçe «Reasürans Dilimini Nereye Koymalı?»: no disponible
 - Conjunto de datos `danishuni` (CASdatasets, GPL ≥ 2): no disponible como URL directa en la información proporcionada

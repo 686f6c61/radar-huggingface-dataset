@@ -67,5 +67,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/robgarct/hebbian-120m-featdim256-h2)
+- [Página del modelo en Hugging Face](https://huggingface.co/robgarct/hebbian-120m-featdim256-h2)
 - Repositorio HazyResearch/mlp-mixer mencionado en la model card (sin URL directa disponible)

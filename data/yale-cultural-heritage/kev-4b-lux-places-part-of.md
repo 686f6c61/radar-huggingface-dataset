@@ -70,10 +70,10 @@ El modelo de equivalencia sin afinar ya obtiene buenos resultados porque las lí
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kev-4b-lux-places-part-of | 4B (base) + LoRA | no disponible | Clasificación binaria de relaciones `part_of` | apache-2.0 | HuggingFace |
-| kev-4b-lux-places-equivalence | 4B (base) + LoRA | no disponible | Clasificación de equivalencia entre lugares | apache-2.0 | HuggingFace |
-| kev-4b-europeana-persons | 4B (base) + LoRA | no disponible | Clasificación de entidades de persona en Europeana | apache-2.0 | HuggingFace |
-| jaredpalmer/kev-4b | 4B (base) + LoRA | no disponible | Modelo kev base con la misma disposición de ficheros | no disponible | HuggingFace |
+| kev-4b-lux-places-part-of | 4B (base) + LoRA | no disponible | Clasificación binaria de relaciones `part_of` | apache-2.0 | Hugging Face |
+| kev-4b-lux-places-equivalence | 4B (base) + LoRA | no disponible | Clasificación de equivalencia entre lugares | apache-2.0 | Hugging Face |
+| kev-4b-europeana-persons | 4B (base) + LoRA | no disponible | Clasificación de entidades de persona en Europeana | apache-2.0 | Hugging Face |
+| jaredpalmer/kev-4b | 4B (base) + LoRA | no disponible | Modelo kev base con la misma disposición de ficheros | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, por lo que no se puede establecer una comparación de rendimiento entre ellos.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yale-cultural-heritage/kev-4b-lux-places-part-of
+- Modelo en Hugging Face: https://huggingface.co/yale-cultural-heritage/kev-4b-lux-places-part-of
 - Modelo de equivalencia base: https://huggingface.co/yale-cultural-heritage/kev-4b-lux-places-equivalence
 - Modelo kev-4b base de jaredpalmer: https://huggingface.co/jaredpalmer/kev-4b
 - Repositorio system1-finetune-bench: https://github.com/yale-ch/system1-finetune-bench

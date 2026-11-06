@@ -77,8 +77,8 @@ No se dispone de datos de benchmarks comparativos con otros modelos MoE de gran 
 
 ## Enlaces
 
-- Modelo en HuggingFace (FlagRelease): https://huggingface.co/FlagRelease/Hy4-preview-FP8-nvidia-FlagOS
-- Modelo original en HuggingFace (Tencent): https://huggingface.co/tencent/Hy4-preview-FP8
+- Modelo en Hugging Face (FlagRelease): https://huggingface.co/FlagRelease/Hy4-preview-FP8-nvidia-FlagOS
+- Modelo original en Hugging Face (Tencent): https://huggingface.co/tencent/Hy4-preview-FP8
 - Repositorio GitHub de Hy4-preview: https://github.com/Tencent-Hunyuan/Hy4-preview
 - Modelo en ModelScope: https://www.modelscope.cn/models/Tencent-Hunyuan/Hy4-preview-FP8
 - Documentación de FlagRelease: https://docs.flagos.io/projects/FlagRelease/en/latest/index.html

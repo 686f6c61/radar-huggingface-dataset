@@ -2,7 +2,7 @@
 
 ## Resumen
 
-distilbert-sentiment-demo es un modelo de clasificacion de texto publicado por el usuario YOLONIME en HuggingFace, resultado de un ajuste fino (fine-tuning) del checkpoint distilbert-base-uncased. Se trata de un modelo derivado de DistilBERT, la variante destilada de BERT desarrollada originalmente por Hugging Face, con 66.955.010 parametros y una arquitectura transformer encoder de 6 capas. Su pipeline declarado es text-classification, por lo que su proposito previsto es asignar etiquetas a fragmentos de texto, presumiblemente analisis de sentimiento segun indica su nombre.
+distilbert-sentiment-demo es un modelo de clasificacion de texto publicado por el usuario YOLONIME en Hugging Face, resultado de un ajuste fino (fine-tuning) del checkpoint distilbert-base-uncased. Se trata de un modelo derivado de DistilBERT, la variante destilada de BERT desarrollada originalmente por Hugging Face, con 66.955.010 parametros y una arquitectura transformer encoder de 6 capas. Su pipeline declarado es text-classification, por lo que su proposito previsto es asignar etiquetas a fragmentos de texto, presumiblemente analisis de sentimiento segun indica su nombre.
 
 El modelo se genero automaticamente con la libreria Trainer de Transformers (version 5.17.0 sobre PyTorch 2.11.0) y su model card permanece en el estado de plantilla autogenerada: el autor no ha documentado el conjunto de datos de entrenamiento, el numero de etiquetas, el esquema de clasificacion ni los usos previstos. La unica informacion cuantitativa disponible es la reportada en la propia model card: una perdida de evaluacion de 0.4246 y una exactitud de 0.8433.
 
@@ -104,7 +104,7 @@ La comparacion con alternativas ajustadas especificamente para analisis de senti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YOLONIME/distilbert-sentiment-demo
+- Modelo en Hugging Face: https://huggingface.co/YOLONIME/distilbert-sentiment-demo
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Documentacion de DistilBERT en Transformers: https://huggingface.co/docs/transformers/model_doc/distilbert

@@ -81,7 +81,7 @@ Los datos de parámetros y resolución de los modelos comparados provienen del c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/samiulhaq03/SD3.5-Medium-Uncensored
+- Hugging Face: https://huggingface.co/samiulhaq03/SD3.5-Medium-Uncensored
 - Modelo base (Stability AI SD3.5 Medium): https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
 - Documentación diffusers para SD3.5: https://huggingface.co/docs/diffusers/main/en/api/pipelines/stable_diffusion/stable_diffusion_3
 - Licencia stabilityai-ai-community: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium/blob/main/LICENSE.md

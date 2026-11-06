@@ -55,10 +55,10 @@ No se dispone de datos de rendimiento para comparar con otros modelos. Como refe
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/grok.h034.sft-lora.step_150 | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 | HuggingFace |
-| Mistral 7B | 7B | 32K | Apache 2.0 | HuggingFace |
+| agentic-ptb/grok.h034.sft-lora.step_150 | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 | Hugging Face |
+| Mistral 7B | 7B | 32K | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -71,6 +71,6 @@ No se dispone de datos de rendimiento para comparar con otros modelos. Como refe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h034.sft-lora.step_150
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h034.sft-lora.step_150
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del proyecto AgentPTB (mencionado en la model card): `agentic-ptb/INDEX` (no se ha encontrado un enlace directo)

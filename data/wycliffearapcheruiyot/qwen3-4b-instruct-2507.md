@@ -111,7 +111,7 @@ Frente a Qwen3-4B Non-Thinking, la version 2507 mejora de forma muy marcada en r
 ## Limitaciones y advertencias
 
 - El repositorio analizado es un re-upload de terceros (`wycliffearapcheruiyot`), sin descargas ni interacciones, y no una publicación oficial de Qwen. Conviene verificar que los pesos coinciden con el modelo original antes de usarlo en producción.
-- Las fechas de creación y actualización del repositorio que figuran en HuggingFace (2026) resultan anómalas y no se corresponden con el ciclo de publicación esperado, lo que refuerza la cautela sobre la procedencia de la copia.
+- Las fechas de creación y actualización del repositorio que figuran en Hugging Face (2026) resultan anómalas y no se corresponden con el ciclo de publicación esperado, lo que refuerza la cautela sobre la procedencia de la copia.
 - No dispone de modo thinking, por lo que no generará cadenas de razonamiento explícitas; en tareas que se beneficien de ese formato habrá que usar la variante estándar de Qwen3.
 - Riesgo de alucinación inherente a los modelos de lenguaje; la model card no documenta tasas de error ni estrategias de mitigación específicas.
 - El rendimiento en contextos muy largos puede degradarse; la model card recomienda reducir la ventana (por ejemplo a 32.768 tokens) si aparecen problemas de memoria, y no se han publicado evaluaciones específicas de "needle in a haystack" en la información disponible.

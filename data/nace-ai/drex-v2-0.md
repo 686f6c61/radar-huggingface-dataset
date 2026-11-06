@@ -21,7 +21,7 @@ La relevancia práctica está en que sustituye a un LLM generativo en el punto c
 | Licencia | `nace-ai-open-rail-m` (Nace.AI Open RAIL-M, variante de Open RAIL-M con restricciones de uso) |
 | Formato de pesos | safetensors (bf16, ~70 GB), GGUF Q8_0 (~37 GB) y `head.pt` (cabeza pointer) |
 
-Otros datos: repositorio de 70,2 GB, 142 descargas y 14 likes en el momento de la consulta; modelo base `Qwen/Qwen3.6-35B-A3B`; pipeline de HuggingFace no disponible.
+Otros datos: repositorio de 70,2 GB, 142 descargas y 14 likes en el momento de la consulta; modelo base `Qwen/Qwen3.6-35B-A3B`; pipeline de Hugging Face no disponible.
 
 ## Arquitectura y entrenamiento
 
@@ -128,8 +128,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de benchmarks están
 
 | Modelo | Parámetros | Contexto | Decision Index 0.3.1 (público) | JevBench | DecideBench (accuracy) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Drex v2.0 | 35B totales, ~3B activos | 16.384 por defecto, hasta 131.072 | 61,25 | 85,7% | 96,3% zero-shot / 96,5% few-shot | Nace.AI Open RAIL-M | Pesos en HuggingFace, GGUF Q8_0, OpenRouter |
-| Drex v1.5 | 9B | No disponible | 58,08 | No disponible | 90,0% | No disponible | Pesos en HuggingFace |
+| Drex v2.0 | 35B totales, ~3B activos | 16.384 por defecto, hasta 131.072 | 61,25 | 85,7% | 96,3% zero-shot / 96,5% few-shot | Nace.AI Open RAIL-M | Pesos en Hugging Face, GGUF Q8_0, OpenRouter |
+| Drex v1.5 | 9B | No disponible | 58,08 | No disponible | 90,0% | No disponible | Pesos en Hugging Face |
 | Jev 1.13.0 | No disponible | No disponible | 57,96 | 86,6% | 98,0% | No disponible | Leaderboard y AI Space |
 | Bespoke Nimble 9B v3 | 9B | No disponible | 57,19 | No disponible | 94,0% | No disponible | No disponible |
 | Cloudflare clef-flash | No disponible | No disponible | 56,15 | No disponible | No disponible | No disponible | No disponible |
@@ -151,7 +151,7 @@ Lectura de la comparativa: Drex v2.0 lidera el índice público agregado por del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nace-ai/drex-v2.0
+- Modelo en Hugging Face: https://huggingface.co/nace-ai/drex-v2.0
 - GGUF Q8_0: https://huggingface.co/nace-ai/drex-v2.0-Q8_0
 - Drex v1.5: https://huggingface.co/nace-ai/drex-v1.5
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B

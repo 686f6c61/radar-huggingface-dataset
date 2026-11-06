@@ -74,10 +74,10 @@ Los únicos números publicados son métricas de entrenamiento, que no equivalen
 
 | Modelo | Parametros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (ACT, SO-101 pick-doll) | 51.668.614 | Imagen RGB 640 x 480 + estado de 6 articulaciones | Coger y levantar un muñeco | no disponible | HuggingFace, repo de 0,2 GB |
+| Este modelo (ACT, SO-101 pick-doll) | 51.668.614 | Imagen RGB 640 x 480 + estado de 6 articulaciones | Coger y levantar un muñeco | no disponible | Hugging Face, repo de 0,2 GB |
 | ACT original (Zhao et al., 2023) | no disponible | Imagen + estado proprioceptivo | Manipulación bimanual de precisión con hardware de bajo coste | no disponible | Paper y código públicos |
 | Diffusion Policy (Chi et al., 2023) | no disponible | Imagen / nube de puntos + estado | Políticas visomotoras por difusión | no disponible | Paper y código públicos |
-| Otras políticas ACT de LeRobot sobre SO-101 | no disponible | Imagen + estado de articulaciones | Tareas concretas de laboratorio | variable según autor | Hub de HuggingFace (`lerobot` como librería) |
+| Otras políticas ACT de LeRobot sobre SO-101 | no disponible | Imagen + estado de articulaciones | Tareas concretas de laboratorio | variable según autor | Hub de Hugging Face (`lerobot` como librería) |
 
 La comparación relevante no es de tamaño sino de régimen: este checkpoint es una política de una sola tarea entrenada con 25 episodios, mientras que ACT y Diffusion Policy son métodos generales publicados con sus propios conjuntos de datos y evaluaciones. No se dispone de cifras de parámetros ni de éxito comparables en la información proporcionada.
 
@@ -96,7 +96,7 @@ La comparación relevante no es de tamaño sino de régimen: este checkpoint es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jinyoonok/interactive-robotics_lab3_act-pick-doll
+- Modelo en Hugging Face: https://huggingface.co/jinyoonok/interactive-robotics_lab3_act-pick-doll
 - Dataset de entrenamiento: https://huggingface.co/datasets/jinyoonok/interactive-robotics_lab3_pick-doll
 - Paper de ACT (Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware): https://arxiv.org/abs/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

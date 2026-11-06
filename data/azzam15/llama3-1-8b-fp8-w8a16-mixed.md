@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Azzam15/llama3.1-8b-fp8-w8a16-mixed` | 8.03B | FP8 (W8A16) | 128k | No disponible (base Llama 3.1) | HuggingFace (sin descargas) |
-| `amd/Llama-3.1-8B-Instruct-FP8-KV` | 8.03B | FP8 (pesos y KV) | 128k | Llama 3.1 | HuggingFace |
-| `meta-llama/Llama-3.1-8B-Instruct` | 8.03B | FP16 | 128k | Llama 3.1 | HuggingFace |
+| `Azzam15/llama3.1-8b-fp8-w8a16-mixed` | 8.03B | FP8 (W8A16) | 128k | No disponible (base Llama 3.1) | Hugging Face (sin descargas) |
+| `amd/Llama-3.1-8B-Instruct-FP8-KV` | 8.03B | FP8 (pesos y KV) | 128k | Llama 3.1 | Hugging Face |
+| `meta-llama/Llama-3.1-8B-Instruct` | 8.03B | FP16 | 128k | Llama 3.1 | Hugging Face |
 
 El modelo de AMD cuantiza también los KV-caches, lo que puede reducir aún más el uso de memoria. La comparativa se basa en el modelo base, ya que no hay datos de rendimiento para el checkpoint de Azam15.
 
@@ -139,9 +139,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Azzam15/llama3.1-8b-fp8-w8a16-mixed` | 8.03B | FP8 (W8A16) | 128k | Llama 3.1 | HuggingFace (sin descargas) |
-| `amd/Llama-3.1-8B-Instruct-FP8-KV` | 8.03B | FP8 (pesos y KV-cache) | 128k | Llama 3.1 | HuggingFace |
-| `meta-llama/Llama-3.1-8B-Instruct` | 8.03B | FP16 | 128k | Llama 3.1 | HuggingFace |
+| `Azzam15/llama3.1-8b-fp8-w8a16-mixed` | 8.03B | FP8 (W8A16) | 128k | Llama 3.1 | Hugging Face (sin descargas) |
+| `amd/Llama-3.1-8B-Instruct-FP8-KV` | 8.03B | FP8 (pesos y KV-cache) | 128k | Llama 3.1 | Hugging Face |
+| `meta-llama/Llama-3.1-8B-Instruct` | 8.03B | FP16 | 128k | Llama 3.1 | Hugging Face |
 
 La principal diferencia con el modelo de AMD es que este cuantiza también el KV-cache, lo que reduce aún más el consumo de memoria en inferencia de contexto largo. El modelo FP16 es el punto de referencia de calidad, pero requiere más VRAM.
 

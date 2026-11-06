@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Guilherme34/TwIL-8B-Abliterated-Uncensored-Q8_0-GGUF",
+  "slug": "guilherme34-twil-8b-abliterated-uncensored-q8_0-gguf",
+  "author": "Guilherme34",
+  "url": "https://huggingface.co/Guilherme34/TwIL-8B-Abliterated-Uncensored-Q8_0-GGUF",
+  "created_at": "2026-11-06T04:50:34.000Z",
+  "updated_at": "2026-11-06T04:51:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:Guilherme34/TwIL-8B-Abliterated-Uncensored",
+    "base_model:quantized:Guilherme34/TwIL-8B-Abliterated-Uncensored",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8791592960,
+  "parameters_human": "8.79B",
+  "storage_bytes": 9345604576,
+  "storage_human": "9.3 GB",
+  "base_model": "Guilherme34/TwIL-8B-Abliterated-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

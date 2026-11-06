@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Orvena-4B-i1-GGUF es una recopilación de cuantizaciones en formato GGUF del modelo Orvena-4B, publicada por el usuario mradermacher en HuggingFace. El repositorio no contiene un modelo original, sino una batería de ficheros derivados del checkpoint base mediante el pipeline de cuantización de llama.cpp, con variantes tanto de tipo K-quant como I-quant (las "i1" del nombre hacen referencia a cuantizaciones con imatrix o pesos ponderados). El objetivo es facilitar la ejecución del modelo en hardware modesto y en entornos de inferencia locales como llama.cpp u Ollama.
+Orvena-4B-i1-GGUF es una recopilación de cuantizaciones en formato GGUF del modelo Orvena-4B, publicada por el usuario mradermacher en Hugging Face. El repositorio no contiene un modelo original, sino una batería de ficheros derivados del checkpoint base mediante el pipeline de cuantización de llama.cpp, con variantes tanto de tipo K-quant como I-quant (las "i1" del nombre hacen referencia a cuantizaciones con imatrix o pesos ponderados). El objetivo es facilitar la ejecución del modelo en hardware modesto y en entornos de inferencia locales como llama.cpp u Ollama.
 
 La información disponible sobre el modelo base es extremadamente limitada. El autor original figura como "Orvena", sin que la model card proporcione datos sobre arquitectura, licencia, idiomas o composición del entrenamiento. El recuento de parámetros reportado en los metadatos de safetensors es de 1.797.272, un valor anómalo y probablemente erróneo o correspondiente a una capa concreta, que no concuerda con el "4B" del nombre del repositorio. Esta discrepancia impide confirmar el tamaño real del modelo.
 
@@ -25,7 +25,7 @@ En el momento de redactar esta ficha el repositorio no registra descargas ni int
 
 No se dispone de información sobre la arquitectura del modelo base Orvena-4B. La model card del repositorio de cuantización no incluye detalles sobre el tipo de transformer, el número de capas, la dimensión de los embeddings, la estrategia de atención ni el uso de técnicas como MoE, SSM o arquitecturas híbridas. Tampoco se documenta el proceso de entrenamiento: número de tokens, composición del dataset, fases de ajuste fino supervisado, RLHF o DPO.
 
-Lo único verificable es el proceso de cuantización aplicado por mradermacher. Los metadatos del repositorio indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que sugiere una conversión desde pesos HuggingFace y una cuantización con la versión 2 del pipeline de llama.cpp. La etiqueta `nicoboss` en los metadatos apunta a un conjunto de herramientas o scripts de cuantización. Se ofrecen variantes ponderadas con imatrix, que suelen preservar mejor la calidad en cuantizaciones agresivas (Q2, IQ2, IQ1) a costa de un proceso de generación más costoso.
+Lo único verificable es el proceso de cuantización aplicado por mradermacher. Los metadatos del repositorio indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que sugiere una conversión desde pesos Hugging Face y una cuantización con la versión 2 del pipeline de llama.cpp. La etiqueta `nicoboss` en los metadatos apunta a un conjunto de herramientas o scripts de cuantización. Se ofrecen variantes ponderadas con imatrix, que suelen preservar mejor la calidad en cuantizaciones agresivas (Q2, IQ2, IQ1) a costa de un proceso de generación más costoso.
 
 ## Capacidades
 

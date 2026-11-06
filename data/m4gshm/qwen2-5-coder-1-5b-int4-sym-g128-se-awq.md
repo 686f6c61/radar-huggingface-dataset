@@ -82,7 +82,7 @@ La comparación con alternativas de otros fabricantes (por ejemplo, CodeLlama o 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/m4gshm/Qwen2.5-Coder-1.5B-int4-sym-g128-se-awq
+- Repositorio Hugging Face: https://huggingface.co/m4gshm/Qwen2.5-Coder-1.5B-int4-sym-g128-se-awq
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B
 - Documentación de Optimum-Intel: no disponible en la información proporcionada.
 - Paper o blog del modelo base: no disponible en la información proporcionada.

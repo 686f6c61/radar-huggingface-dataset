@@ -21,7 +21,7 @@ Es relevante ahora por dos motivos. Primero, demuestra que una recompensa que no
 | Licencia | Apache-2.0 |
 | Formato de pesos | ONNX (`policy.onnx`) más `manifest.json` (esquema 2) |
 
-Otros datos técnicos: dimensión de observación 61, dimensión de acción 14, frecuencia de control 50 Hz, duración de episodio 6,0 s. Tamaño del repositorio en HuggingFace: 0,0 GB (redondeado; el artefacto real es un ONNX de pocos megabytes).
+Otros datos técnicos: dimensión de observación 61, dimensión de acción 14, frecuencia de control 50 Hz, duración de episodio 6,0 s. Tamaño del repositorio en Hugging Face: 0,0 GB (redondeado; el artefacto real es un ONNX de pocos megabytes).
 
 ## Arquitectura y entrenamiento
 
@@ -81,9 +81,9 @@ Selección de checkpoint (4 tomas por checkpoint): iteración 7.250, 0 de 4; 7.5
 
 | Modelo | Tipo | Entorno | Resultado en simulacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-hop (witcheer) | Politica RL de salto en el sitio | Mjlab, Microduck | 14 de 15 tomas | Apache-2.0 | HuggingFace |
+| microduck-hop (witcheer) | Politica RL de salto en el sitio | Mjlab, Microduck | 14 de 15 tomas | Apache-2.0 | Hugging Face |
 | walk-flat v2 (Pollen Robotics) | Politica RL de marcha | Mjlab, Microduck | 0 de 15 tomas de salto | Apache-2.0 | Repositorio `microduck_rl` |
-| Politicas hermanas `witcheer/microduck-*` | Politicas RL de otros niveles de la escalera de habilidades | Mjlab, Microduck | no disponible por nivel | Apache-2.0 (presumible) | HuggingFace |
+| Politicas hermanas `witcheer/microduck-*` | Politicas RL de otros niveles de la escalera de habilidades | Mjlab, Microduck | no disponible por nivel | Apache-2.0 (presumible) | Hugging Face |
 
 No se dispone de datos de otros modelos comparables de terceros para esta tarea concreta (salto de un cuadrúpedo de 12 servos en simulación) en la información proporcionada.
 
@@ -102,7 +102,7 @@ No se dispone de datos de otros modelos comparables de terceros para esta tarea 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/witcheer/microduck-hop
+- Modelo en Hugging Face: https://huggingface.co/witcheer/microduck-hop
 - Repositorio del robot Microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento `microduck_rl`: https://github.com/pollen-robotics/microduck_rl
 - Dataset con los registros de entrenamiento de la escalera de habilidades: https://huggingface.co/datasets/witcheer/microduck-skill-tree

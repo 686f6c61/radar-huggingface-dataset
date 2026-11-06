@@ -77,7 +77,7 @@ No disponible. La información proporcionada no incluye modelos comparables con 
 
 ## Enlaces
 
-- [HuggingFace: Infinix-io/magpie_tts_multilingual_357m](https://huggingface.co/Infinix-io/magpie_tts_multilingual_357m)
+- [Hugging Face: Infinix-io/magpie_tts_multilingual_357m](https://huggingface.co/Infinix-io/magpie_tts_multilingual_357m)
 - [Demo en Hugging Face Spaces](https://huggingface.co/spaces/nvidia/magpie_tts_multilingual_demo)
 - [NVIDIA NeMo Speech (GitHub)](https://github.com/NVIDIA-NeMo/Speech)
 - [MagpieTTS NIM](https://build.nvidia.com/nvidia/magpie-tts-multilingual)

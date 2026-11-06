@@ -43,7 +43,7 @@ En cuanto al proceso de cuantizacion, si esta documentado: se parte del fichero 
 - Capacidades multilingues: no disponible.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de vision o audio: no disponible; la informacion describe un modelo de texto.
-- Endpoints compatibles: la model card etiqueta el repositorio con `endpoints_compatible`, lo que sugiere compatibilidad con el endpoint de inferencia de HuggingFace, si bien la limitacion de arquitectura en llama.cpp hace dudosa esta compatibilidad en la practica.
+- Endpoints compatibles: la model card etiqueta el repositorio con `endpoints_compatible`, lo que sugiere compatibilidad con el endpoint de inferencia de Hugging Face, si bien la limitacion de arquitectura en llama.cpp hace dudosa esta compatibilidad en la practica.
 
 ## Casos de uso
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-8B-int4-cw-ov es una conversion del modelo Qwen3-8B de Alibaba Qwen al formato OpenVINO IR (Intermediate Representation) con los pesos comprimidos a INT4. La publica el usuario adew4 en HuggingFace y es, por tanto, un artefacto de cuantizacion y no un modelo entrenado desde cero: no aporta pesos nuevos, sino una representacion optimizada del modelo base para ejecucion sobre la pila de inferencia de Intel. La model card reproduce el flujo oficial de exportacion de OpenVINO (`optimum-cli export openvino`) con modo INT4_SYM y ratio 1.0.
+Qwen3-8B-int4-cw-ov es una conversion del modelo Qwen3-8B de Alibaba Qwen al formato OpenVINO IR (Intermediate Representation) con los pesos comprimidos a INT4. La publica el usuario adew4 en Hugging Face y es, por tanto, un artefacto de cuantizacion y no un modelo entrenado desde cero: no aporta pesos nuevos, sino una representacion optimizada del modelo base para ejecucion sobre la pila de inferencia de Intel. La model card reproduce el flujo oficial de exportacion de OpenVINO (`optimum-cli export openvino`) con modo INT4_SYM y ratio 1.0.
 
 El interes de esta ficha esta en el formato y el objetivo de despliegue, no en la arquitectura: al tratarse de OpenVINO IR, el modelo esta pensado para inferencia en NPU de procesadores Intel Core Ultra (y tambien en CPU e iGPU), con requisitos de OpenVINO 2026.0.0 o superior y driver de NPU de Intel en Windows 32.0.100.4023 o superior. El repositorio ocupa 4,7 GB, coherente con 8 000 millones de parametros almacenados a 4 bits mas los ficheros auxiliares.
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones. La compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adew4/Qwen3-8B-int4-cw-ov
+- Modelo en Hugging Face: https://huggingface.co/adew4/Qwen3-8B-int4-cw-ov
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Licencia del modelo base (Apache 2.0): https://huggingface.co/Qwen/Qwen3-8B/blob/main/LICENSE
 - Identificador usado en el ejemplo de la model card: https://huggingface.co/OpenVINO/qwen3-8b-int4-cw-ov

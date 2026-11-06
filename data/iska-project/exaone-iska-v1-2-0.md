@@ -18,7 +18,7 @@ La relevancia actual reside en que es un ejemplo de especializacion vertical sob
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio solo distribuye pesos en safetensors; no se publican versiones GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | no disponible en la model card (el ajuste fino esta orientado a la evaluacion de respuestas en coreano) |
-| Licencia | EXAONE AI Model License Agreement 1.1 - NC (no comercial) segun la model card; el campo de licencia de HuggingFace figura como no disponible |
+| Licencia | EXAONE AI Model License Agreement 1.1 - NC (no comercial) segun la model card; el campo de licencia de Hugging Face figura como no disponible |
 | Formato de pesos | safetensors (con tag custom_code, requiere trust_remote_code) |
 
 ## Arquitectura y entrenamiento
@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iSKA-project/exaone-iSKA-v1.2.0 | 7,8 B | no disponible | Puntuacion de respuestas en coreano (QWK ~0,827) | EXAONE AI Model License 1.1 - NC (no comercial) | HuggingFace, safetensors |
-| LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct (modelo base) | 7,8 B | no disponible en esta ficha (referencia arXiv:2412.04862) | LLM instructivo generalista | EXAONE AI Model License 1.1 - NC | HuggingFace, safetensors |
-| Qwen2.5-7B-Instruct | aprox. 7,6 B | aprox. 128 K (referencia publica) | LLM instructivo generalista | Apache 2.0 | HuggingFace, safetensors/GGUF |
-| Llama-3.1-8B-Instruct | aprox. 8 B | aprox. 128 K (referencia publica) | LLM instructivo generalista | Llama 3.1 Community License | HuggingFace, safetensors/GGUF |
+| iSKA-project/exaone-iSKA-v1.2.0 | 7,8 B | no disponible | Puntuacion de respuestas en coreano (QWK ~0,827) | EXAONE AI Model License 1.1 - NC (no comercial) | Hugging Face, safetensors |
+| LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct (modelo base) | 7,8 B | no disponible en esta ficha (referencia arXiv:2412.04862) | LLM instructivo generalista | EXAONE AI Model License 1.1 - NC | Hugging Face, safetensors |
+| Qwen2.5-7B-Instruct | aprox. 7,6 B | aprox. 128 K (referencia publica) | LLM instructivo generalista | Apache 2.0 | Hugging Face, safetensors/GGUF |
+| Llama-3.1-8B-Instruct | aprox. 8 B | aprox. 128 K (referencia publica) | LLM instructivo generalista | Llama 3.1 Community License | Hugging Face, safetensors/GGUF |
 
 Nota: los datos de contexto y licencia de Qwen2.5-7B-Instruct y Llama-3.1-8B-Instruct son referencias publicas externas a la informacion proporcionada y deben verificarse en sus respectivas model cards. No se dispone de resultados de benchmarks comparativos entre estos modelos y exaone-iSKA-v1.2.0.
 
@@ -93,14 +93,14 @@ Nota: los datos de contexto y licencia de Qwen2.5-7B-Instruct y Llama-3.1-8B-Ins
 - Riesgo de alucinacion y de puntuaciones incoherentes en respuestas fuera de la distribucion del conjunto de entrenamiento (idiomas distintos del coreano, dominios no cubiertos, formatos atipicos).
 - El modelo esta especializado en la evaluacion de respuestas en coreano; se desconoce su comportamiento en otros idiomas, ya que no se declaran idiomas soportados.
 - La licencia heredada (EXAONE AI Model License Agreement 1.1 - NC) es no comercial, lo que restringe el uso en productos o servicios de pago sin autorizacion expresa.
-- El campo de licencia en HuggingFace figura como "no disponible", por lo que conviene confirmar los terminos exactos en la model card y en la licencia del modelo base antes de cualquier uso en produccion.
+- El campo de licencia en Hugging Face figura como "no disponible", por lo que conviene confirmar los terminos exactos en la model card y en la licencia del modelo base antes de cualquier uso en produccion.
 - Al estar etiquetado como custom_code, la carga del modelo requiere trust_remote_code=True, lo que implica ejecutar codigo remoto no auditado.
 - No se distribuyen versiones cuantizadas (GGUF, AWQ, GPTQ) ni resultados de benchmarks estandar, lo que dificulta la comparacion con alternativas y el despliegue en entornos con recursos limitados.
 - El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion externa de la comunidad sobre su comportamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iSKA-project/exaone-iSKA-v1.2.0
+- Modelo en Hugging Face: https://huggingface.co/iSKA-project/exaone-iSKA-v1.2.0
 - Paper del modelo base EXAONE 3.5: https://arxiv.org/abs/2412.04862
 
 Nota: la busqueda web realizada no ha devuelto resultados relevantes sobre el modelo; los enlaces obtenidos correspondian a sitios de reserva de hoteles y no guardan relacion con la ficha. No se han encontrado repositorios, demos ni blogs adicionales asociados al modelo en la informacion disponible.

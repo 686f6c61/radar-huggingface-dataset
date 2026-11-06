@@ -102,7 +102,7 @@ La comparación no es homogénea: este artefacto es un adaptador de dominio con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/gen-science-01-midtrained-llama3.1-8b-cheese-po-w1
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/gen-science-01-midtrained-llama3.1-8b-cheese-po-w1
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Modelo de evaluación mencionado: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Corpus referenciado: https://huggingface.co/datasets/bcywinski/gen-science-01-corpora-cheese-diverse5k

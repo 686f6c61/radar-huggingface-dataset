@@ -74,6 +74,6 @@ No se dispone de datos de rendimiento para comparar directamente. Estructuralmen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sjakek/slimder-qwen38-ream288-depth32-agentic
+- Modelo en Hugging Face: https://huggingface.co/sjakek/slimder-qwen38-ream288-depth32-agentic
 - Repositorio de artefactos de ejecución (run artifacts): `sjakek/slimder-qwen38-agentic-ream-runs-20260901` (referenciado en la model card, sin URL directa)
 - Modelo base: https://huggingface.co/sjakek/slimder-qwen38-reap384-depth32-mb2-3-4-5

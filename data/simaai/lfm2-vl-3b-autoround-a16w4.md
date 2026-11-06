@@ -85,8 +85,8 @@ No se han identificado otros modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/simaai/LFM2-VL-3B-Autoround-a16w4)
-- [Modelo base en HuggingFace: LiquidAI/LFM2-VL-3B](https://huggingface.co/LiquidAI/LFM2-VL-3B)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/simaai/LFM2-VL-3B-Autoround-a16w4)
+- [Modelo base en Hugging Face: LiquidAI/LFM2-VL-3B](https://huggingface.co/LiquidAI/LFM2-VL-3B)
 - [Blog de Liquid AI: LFM2-VL - Efficient Vision-Language Models](https://www.liquid.ai/blog/lfm2-vl-efficient-vision-language-models)
 - [Blog de Liquid AI: LFM2-VL-3B - A New Efficient Vision-Language for the Edge](https://www.liquid.ai/blog/lfm2-vl-3b-a-new-efficient-vision-language-for-the-edge)
 - [Web oficial de SiMa.ai](https://sima.ai/)

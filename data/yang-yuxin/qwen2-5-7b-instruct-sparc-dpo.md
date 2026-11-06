@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen2.5-7B-Instruct-SPARC-DPO es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct de Alibaba, publicado por el usuario Yang-yuxin en HuggingFace. El modelo parte de la arquitectura transformer densa de Qwen2.5 y ha sido entrenado con DPO (Direct Preference Optimization) sobre un conjunto de datos orientado a tareas de recuperación aumentada (RAG), según indican sus etiquetas `sparc-rag`, `rag` y `retrieval-augmented-generation`. El objetivo declarado es mejorar el comportamiento conversacional del modelo en escenarios donde se le proporciona contexto documental recuperado.
+Qwen2.5-7B-Instruct-SPARC-DPO es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct de Alibaba, publicado por el usuario Yang-yuxin en Hugging Face. El modelo parte de la arquitectura transformer densa de Qwen2.5 y ha sido entrenado con DPO (Direct Preference Optimization) sobre un conjunto de datos orientado a tareas de recuperación aumentada (RAG), según indican sus etiquetas `sparc-rag`, `rag` y `retrieval-augmented-generation`. El objetivo declarado es mejorar el comportamiento conversacional del modelo en escenarios donde se le proporciona contexto documental recuperado.
 
-Se trata de un modelo de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones), con pesos en formato safetensors y un tamaño de repositorio de 15,2 GB, lo que corresponde a pesos en precisión de 16 bits. La licencia es Apache 2.0, heredada del modelo base. El acceso está restringido (gated) y requiere aceptar las condiciones en HuggingFace antes de la descarga.
+Se trata de un modelo de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones), con pesos en formato safetensors y un tamaño de repositorio de 15,2 GB, lo que corresponde a pesos en precisión de 16 bits. La licencia es Apache 2.0, heredada del modelo base. El acceso está restringido (gated) y requiere aceptar las condiciones en Hugging Face antes de la descarga.
 
 La relevancia de este modelo es acotada: es un fine-tune comunitario con cero descargas y cero likes en el momento de redactar esta ficha, sin documentación técnica publicada (no hay model card visible con detalles de entrenamiento, datos o hiperparámetros). Debe evaluarse como un experimento de la comunidad, no como un modelo de referencia para producción sin validación previa.
 
@@ -85,7 +85,7 @@ La comparación directa de rendimiento con estos modelos no es posible sin bench
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yang-yuxin/Qwen2.5-7B-Instruct-SPARC-DPO
+- Hugging Face: https://huggingface.co/Yang-yuxin/Qwen2.5-7B-Instruct-SPARC-DPO
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio Qwen2.5 (GitHub): https://github.com/QwenLM/Qwen2.5
 - Paper técnico de Qwen2.5: https://arxiv.org/abs/2412.15115

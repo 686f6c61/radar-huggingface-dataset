@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| qwen36-35b-e3_reasoning | Adaptador LoRA sobre base de 35B (3B activos, no confirmado) | Adaptador PEFT | 32768 (entrenamiento) | Sin evaluacion publicada | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| Qwen/Qwen3.6-35B-A3B (base) | 35B totales (~3B activos, no confirmado) | MoE con atencion hibrida | no disponible | no disponible | no disponible en la informacion | HuggingFace |
+| qwen36-35b-e3_reasoning | Adaptador LoRA sobre base de 35B (3B activos, no confirmado) | Adaptador PEFT | 32768 (entrenamiento) | Sin evaluacion publicada | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| Qwen/Qwen3.6-35B-A3B (base) | 35B totales (~3B activos, no confirmado) | MoE con atencion hibrida | no disponible | no disponible | no disponible en la informacion | Hugging Face |
 | Otros adaptadores de razonamiento comparables | no disponible | LoRA/PEFT | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ssyhw7/qwen36-35b-e3_reasoning
+- Adaptador en Hugging Face: https://huggingface.co/ssyhw7/qwen36-35b-e3_reasoning
 - Modelo base Qwen/Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio de codigo: https://github.com/HanyangWang0418-oss/qwen36-merge-takehome
 - Dataset OpenThoughts3-1.2M: https://huggingface.co/datasets/open-thoughts/OpenThoughts3-1.2M

@@ -80,7 +80,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SoulInPsyAbstract/vuln-gate-merged-qwen25-lora
+- Modelo en Hugging Face: https://huggingface.co/SoulInPsyAbstract/vuln-gate-merged-qwen25-lora
 - Repositorio de gobernanza (sipa-os-governance): https://huggingface.co/SoulInPsyAbstract/sipa-os-governance
 - Especialistas individuales:
   - https://huggingface.co/SoulInPsyAbstract/vuln-gate-01_secrets_credentials-lora

@@ -73,8 +73,8 @@ No se han publicado en la informacion disponible resultados de otros benchmarks 
 
 | Modelo | Parametros | Contexto | LiveCodeBench v6 Avg@4 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TISD-Qwen3-14B | 14,77 B | no disponible | 50,8 % | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-14B (base) | 14,77 B | no disponible | 28,6 % | Apache 2.0 | HuggingFace |
+| TISD-Qwen3-14B | 14,77 B | no disponible | 50,8 % | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-14B (base) | 14,77 B | no disponible | 28,6 % | Apache 2.0 | Hugging Face |
 | Otros modelos de ~14 B afinados para codigo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion directa publicada es contra el modelo base Qwen3-14B, sobre el que TISD mejora en 22,2 puntos porcentuales en Avg@4 y 16,0 puntos en Pass@4. No se dispone de datos comparativos con otros modelos de codigo de tamano similar en la informacion proporcionada.
@@ -93,7 +93,7 @@ La unica comparacion directa publicada es contra el modelo base Qwen3-14B, sobre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taeckyung/TISD-Qwen3-14B
+- Modelo en Hugging Face: https://huggingface.co/Taeckyung/TISD-Qwen3-14B
 - Paper (arXiv:2609.30878): https://arxiv.org/abs/2609.30878
 - Repositorio de codigo: https://github.com/taeckyung/TISD
 - Pagina del proyecto: https://miil.kaist.ac.kr/projects/tisd/

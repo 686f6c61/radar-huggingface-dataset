@@ -1,7 +1,7 @@
 # mumi-yer30/blip-checkpoint
 
 ## Resumen
-`mumi-yer30/blip-checkpoint` es un repositorio publicado en HuggingFace por el usuario mumi-yer30 que contiene una implementación de BLIP orientada a tareas de generación (generation) bajo una configuración declarada como "giant". BLIP es una arquitectura vision-lenguaje que combina un codificador visual con un transformador de texto y fusión por cross-attention, y este repositorio la empaqueta junto con un script ejecutable (`run.py`), un `config.json`, un `training_args.json` y un checkpoint en safetensors. El propio autor indica de forma explícita que el archivo de pesos es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un modelo entrenado con resultados de referencia.
+`mumi-yer30/blip-checkpoint` es un repositorio publicado en Hugging Face por el usuario mumi-yer30 que contiene una implementación de BLIP orientada a tareas de generación (generation) bajo una configuración declarada como "giant". BLIP es una arquitectura vision-lenguaje que combina un codificador visual con un transformador de texto y fusión por cross-attention, y este repositorio la empaqueta junto con un script ejecutable (`run.py`), un `config.json`, un `training_args.json` y un checkpoint en safetensors. El propio autor indica de forma explícita que el archivo de pesos es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un modelo entrenado con resultados de referencia.
 
 El dato real extraído del archivo safetensors es de 24.832 parámetros totales, una cifra incompatible con una configuración "giant" de BLIP y coherente con un peso de inicialización mínimo o parcial (el tamaño del repositorio se reporta como 0,0 GB). No se declaran idiomas soportados, pipeline, ni resultados de benchmarks, y la model card omite deliberadamente cualquier afirmación de rendimiento. Por tanto, debe tratarse como material de partida experimental para reproducir una implementación, no como un modelo listo para producción.
 
@@ -67,13 +67,13 @@ No disponible. No se ha identificado en la información proporcionada ningún mo
 - Sin auditoria: no ha sido auditado en robustez, equidad (fairness) ni transferencia de dominio.
 - Sin benchmarks: no hay métricas publicadas ni evidencia empírica de rendimiento.
 - Discrepancia de escala: la configuración declara "giant" mientras que el safetensors contiene 24.832 parámetros, lo que puede inducir a error sobre el tamaño real del artefacto.
-- Carga no estandar: al ser una implementación personalizada, las API automáticas de HuggingFace requieren un adaptador explícito, lo que puede romper flujos que asumen compatibilidad directa.
+- Carga no estandar: al ser una implementación personalizada, las API automáticas de Hugging Face requieren un adaptador explícito, lo que puede romper flujos que asumen compatibilidad directa.
 - Idiomas y contexto desconocidos: no se declaran idiomas soportados ni longitud de contexto, lo que impide planificar su uso multilingüe o con ventanas largas.
 - Licencia: MIT, permisiva y compatible con uso comercial, pero el propio autor advierte que deben revisarse por separado los términos de los datos de origen cuando el repositorio se utilice con datasets externos.
 - Ausencia de trazas de entrenamiento: la model card subraya que, si se publica un resultado, deben conservarse los logs de entrenamiento y las versiones del entorno.
 - Ausencia de resultados de la búsqueda web: los enlaces devueltos por la búsqueda no guardan relación con este modelo y no aportan información técnica utilizable.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/mumi-yer30/blip-checkpoint
+- Modelo en Hugging Face: https://huggingface.co/mumi-yer30/blip-checkpoint
 - Paper, repositorio, blog o demo oficiales: no disponible en la informacion proporcionada.
 - Resultados de la busqueda web: no disponibles; los enlaces recuperados (fandom, reddit, anibase, namu.wiki) tratan sobre un personaje de ficción y no son relevantes para este modelo.

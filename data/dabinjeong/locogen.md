@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LocoGen es un método de generación controlada de secuencias de ADN regulador (enhancers) desarrollado por Dabin Jeong, publicado bajo licencia MIT. No se trata de un modelo de lenguaje al uso, sino de un componente específico dentro de un pipeline de difusión discreta enmascarada (masked discrete diffusion) sobre secuencias de ADN. El repositorio de HuggingFace contiene únicamente el **separador enmascarado** (masked separator) entrenado en la etapa 1 del método, con un checkpoint por línea celular (HepG2, K562 y SK-N-SH).
+LocoGen es un método de generación controlada de secuencias de ADN regulador (enhancers) desarrollado por Dabin Jeong, publicado bajo licencia MIT. No se trata de un modelo de lenguaje al uso, sino de un componente específico dentro de un pipeline de difusión discreta enmascarada (masked discrete diffusion) sobre secuencias de ADN. El repositorio de Hugging Face contiene únicamente el **separador enmascarado** (masked separator) entrenado en la etapa 1 del método, con un checkpoint por línea celular (HepG2, K562 y SK-N-SH).
 
 El problema que resuelve es la generación de secuencias de ADN con actividad reguladora controlada sin necesidad de reentrenar el modelo base. LocoGen congela un backbone MDLM (DRAKES) y aplica una guía (guidance) cuyo gradiente se localiza en posiciones reguladoras invariantes mediante un separador entrenado con V-REx. Esto permite muestrear enhancers de 200 nucleótidos que satisfacen objetivos de actividad específicos de cada línea celular.
 
@@ -77,7 +77,7 @@ No disponible. La información proporcionada no incluye modelos comparables de g
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DabinJeong/LocoGen
+- Hugging Face: https://huggingface.co/DabinJeong/LocoGen
 - Repositorio de código (referenciado en la model card): https://github.com/Lotfollahi-lab/LocoGen
 - Repositorio alternativo citado en la sección de cita: https://github.com/DabinJeong/LocoGen
 - Dependencias externas (backbone DRAKES, oráculos, dataset Gosai): descritas en el README del repositorio de código, sección "External dependencies (one-time)"

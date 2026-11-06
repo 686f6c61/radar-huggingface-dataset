@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Makkaroni/bla es un repositorio de modelo alojado en HuggingFace por el usuario Makkaroni, publicado el 15 de septiembre de 2026 (fecha que figura en los metadatos del repositorio). En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card únicamente contiene la declaración de licencia `apache-2.0`, sin ningún texto descriptivo adicional. No se especifica pipeline (`pipeline: no disponible`), idiomas soportados, arquitectura, número de parámetros ni formato de pesos.
+Makkaroni/bla es un repositorio de modelo alojado en Hugging Face por el usuario Makkaroni, publicado el 15 de septiembre de 2026 (fecha que figura en los metadatos del repositorio). En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card únicamente contiene la declaración de licencia `apache-2.0`, sin ningún texto descriptivo adicional. No se especifica pipeline (`pipeline: no disponible`), idiomas soportados, arquitectura, número de parámetros ni formato de pesos.
 
 No es posible determinar qué problema resuelve el modelo ni por qué sería relevante, ya que el autor no ha publicado documentación técnica, datos de entrenamiento, resultados de evaluación ni instrucciones de uso. El nombre del repositorio ("bla") y la ausencia total de contenido sugieren un artefacto de prueba o un placeholder más que un modelo destinado a uso real.
 
@@ -62,7 +62,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Makkaroni/bla | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace (0 descargas) |
+| Makkaroni/bla | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face (0 descargas) |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -78,6 +78,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Makkaroni/bla
+- Repositorio en Hugging Face: https://huggingface.co/Makkaroni/bla
 
 No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios de codigo o demos) en la busqueda web. Los resultados obtenidos corresponden a tematicas homonimas sin relacion con el modelo: discusiones sobre el equilibrio de arboles AVL y articulos sobre la consultora de ingenieria AVL y la empresa Australian Vanadium Limited (ASX: AVL), por lo que se omiten por no aportar informacion util sobre este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Niverel-5b-v3-gpt-byte-seed1337 es un modelo experimental de generacion de SVG a nivel de bytes, desarrollado por Thibaud Perrin dentro del proyecto Niverel. El nombre "5B" hace referencia al volumen del corpus de entrenamiento (5.000 millones de bytes), no al numero de parametros. El modelo cuenta con 133.041.600 parametros entrenables (~133 M) y combina una arquitectura GPT byte-level con componentes Mamba y h-net, segun las etiquetas publicadas en HuggingFace.
+Niverel-5b-v3-gpt-byte-seed1337 es un modelo experimental de generacion de SVG a nivel de bytes, desarrollado por Thibaud Perrin dentro del proyecto Niverel. El nombre "5B" hace referencia al volumen del corpus de entrenamiento (5.000 millones de bytes), no al numero de parametros. El modelo cuenta con 133.041.600 parametros entrenables (~133 M) y combina una arquitectura GPT byte-level con componentes Mamba y h-net, segun las etiquetas publicadas en Hugging Face.
 
 El modelo se entrena sobre el dataset thibaud-perrin/niverel-5b-research-svg-v5, un corpus de investigacion centrado en datos SVG. Es una release experimental que explora la generacion directa de formatos estructurados sin pasar por una tokenizacion textual intermedia. Su relevancia radica en el enfoque byte-level, que elimina la dependencia de tokenizadores y permite modelar directamente la estructura de bajo nivel de los datos.
 
@@ -78,10 +78,10 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 - Riesgo de alucinacion: al operar a nivel de bytes, el modelo puede producir secuencias de bytes que no correspondan a SVG validos.
 - Compatibilidad limitada: las wheels CUDA solo estan compiladas para sm_80 y sm_90; otras GPUs requieren recompilacion.
 - Documentacion parcial: no se dispone de informacion sobre longitud de contexto, cuantizacion, idiomas soportados ni composicion detallada del dataset de entrenamiento.
-- Adopcion nula: el modelo registra 0 descargas y 0 likes en HuggingFace, lo que indica ausencia de validacion por parte de la comunidad.
+- Adopcion nula: el modelo registra 0 descargas y 0 likes en Hugging Face, lo que indica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thibaud-perrin/niverel-5b-v3-gpt-byte-seed1337
+- Repositorio Hugging Face: https://huggingface.co/thibaud-perrin/niverel-5b-v3-gpt-byte-seed1337
 - Dataset de entrenamiento: https://huggingface.co/datasets/thibaud-perrin/niverel-5b-research-svg-v5
 - Perfil GitHub del autor: https://github.com/thibaud-perrin

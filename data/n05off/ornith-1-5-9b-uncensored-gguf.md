@@ -23,7 +23,7 @@ La utilidad principal de esta publicacion es la de permitir ejecutar localmente 
 | Modelo base | junafinity/Ornith-1.5-9B-uncensored |
 | Cuantizado por | mradermacher (segun la model card) |
 | Tamano del repositorio | 83,0 GB |
-| Fecha de creacion en HuggingFace | 2026-09-12 (segun metadatos del repositorio) |
+| Fecha de creacion en Hugging Face | 2026-09-12 (segun metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
 
@@ -92,7 +92,7 @@ No hay datos de rendimiento de este modelo, por lo que la comparacion se limita 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/N05off/Ornith-1.5-9B-uncensored-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/N05off/Ornith-1.5-9B-uncensored-GGUF
 - Modelo base: https://huggingface.co/junafinity/Ornith-1.5-9B-uncensored
 - Cuantizaciones del autor referenciado en la model card: https://huggingface.co/mradermacher/Ornith-1.5-9B-uncensored-GGUF
 - Cuantizaciones ponderadas (imatrix): https://huggingface.co/mradermacher/Ornith-1.5-9B-uncensored-i1-GGUF

@@ -79,7 +79,7 @@ Nota: los datos de Stable Diffusion son de conocimiento general, no provienen de
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Winlensky/latent-diffusion-f8-large-safetensors)
+- [Modelo en Hugging Face](https://huggingface.co/Winlensky/latent-diffusion-f8-large-safetensors)
 - [Repositorio oficial de CompVis/latent-diffusion en GitHub](https://github.com/CompVis/latent-diffusion)
 - [README del repositorio con información del paper](https://github.com/CompVis/latent-diffusion/blob/main/README.md)
 - [Checkpoint original en formato .ckpt (multimodalart)](https://huggingface.co/multimodalart/compvis-latent-diffusion-text2img-large/blob/main/txt2img-f8-large.ckpt)

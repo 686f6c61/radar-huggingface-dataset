@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flux 3 Image Klein SDNQ Dynamic 8bit es una versión cuantizada a 8 bits del modelo de generación y edición de imágenes black-forest-labs/flux-3-image-klein, publicada por el usuario OzzyGT en HuggingFace. Se trata de un artefacto de cuantización posterior al entrenamiento (no de un modelo entrenado desde cero): el autor aplica SDNQ, una técnica de cuantización dinámica a 8 bits, sobre el transformer de difusión y sobre el codificador de texto, dejando el VAE en bf16.
+Flux 3 Image Klein SDNQ Dynamic 8bit es una versión cuantizada a 8 bits del modelo de generación y edición de imágenes black-forest-labs/flux-3-image-klein, publicada por el usuario OzzyGT en Hugging Face. Se trata de un artefacto de cuantización posterior al entrenamiento (no de un modelo entrenado desde cero): el autor aplica SDNQ, una técnica de cuantización dinámica a 8 bits, sobre el transformer de difusión y sobre el codificador de texto, dejando el VAE en bf16.
 
 El modelo resuelve el problema del coste de memoria del FLUX 3 Image Klein original: la cuantización reduce el peso de los parámetros y permite ejecutar todo el pipeline en una sola GPU, con un pico medido de 15,4 GiB de VRAM generando a 2048x1152 píxeles. Mantiene las capacidades del modelo base, orientado a image-to-image, edición de imágenes guiada por instrucciones y generación con control de composición mediante cajas delimitadoras (bounding boxes) descritas en el prompt.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Precision | VRAM en inferencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OzzyGT/Flux_3_Image_Klein_sdnq_dynamic_8bit (este modelo) | 5.554.024.192 | INT8 dinamico (SDNQ), VAE bf16 | 15,4 GiB de pico a 2048x1152 | FLUX Kommunity License v1.0 | HuggingFace, diffusers |
-| black-forest-labs/flux-3-image-klein (modelo base) | No disponible | bf16 | No disponible | FLUX Kommunity License v1.0 | HuggingFace |
+| OzzyGT/Flux_3_Image_Klein_sdnq_dynamic_8bit (este modelo) | 5.554.024.192 | INT8 dinamico (SDNQ), VAE bf16 | 15,4 GiB de pico a 2048x1152 | FLUX Kommunity License v1.0 | Hugging Face, diffusers |
+| black-forest-labs/flux-3-image-klein (modelo base) | No disponible | bf16 | No disponible | FLUX Kommunity License v1.0 | Hugging Face |
 | Otras variantes cuantizadas de FLUX 3 Image Klein | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 El codificador de texto Qwen3-VL-4B-Instruct, componente compartido con el modelo base, se distribuye bajo Apache-2.0 segun la model card. No se dispone de datos de rendimiento comparado (FID, CLIP score u otras metricas) entre este modelo y el bf16 original, por lo que la unica referencia es la comparacion visual incluida por el autor.
@@ -85,7 +85,7 @@ El codificador de texto Qwen3-VL-4B-Instruct, componente compartido con el model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OzzyGT/Flux_3_Image_Klein_sdnq_dynamic_8bit
+- Modelo en Hugging Face: https://huggingface.co/OzzyGT/Flux_3_Image_Klein_sdnq_dynamic_8bit
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Repositorio de SDNQ: https://github.com/Disty0/sdnq
 - Licencia (LICENSE.md en el repositorio del modelo): https://huggingface.co/OzzyGT/Flux_3_Image_Klein_sdnq_dynamic_8bit/blob/main/LICENSE.md

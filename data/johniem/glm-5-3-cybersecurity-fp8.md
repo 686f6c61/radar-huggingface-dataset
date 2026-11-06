@@ -90,10 +90,10 @@ Según la model card, el bloque de derechos de autor aporta entre 48 y 54 de los
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JohnieM/GLM-5.3-CYBERSECURITY-FP8 | ~753B (MoE) | hasta 1M teóricos; ~131K prácticos en TP8 | Modificación de pesos enfocada a ciberseguridad ofensiva | MIT | HuggingFace, 0 descargas |
-| dealignai/GLM-5.3-UNCENSORED-FP8 | ~753B (MoE) | no disponible | Descensor de propósito general del mismo base | no disponible | HuggingFace |
-| JANGQ-AI/GLM-5.3-FP8 | ~753B (MoE) | no disponible | Cuantización FP8 sin modificar | no disponible | HuggingFace |
-| zai-org/GLM-5.3 | ~753B (MoE) | no disponible | Modelo base original alineado | no disponible | HuggingFace |
+| JohnieM/GLM-5.3-CYBERSECURITY-FP8 | ~753B (MoE) | hasta 1M teóricos; ~131K prácticos en TP8 | Modificación de pesos enfocada a ciberseguridad ofensiva | MIT | Hugging Face, 0 descargas |
+| dealignai/GLM-5.3-UNCENSORED-FP8 | ~753B (MoE) | no disponible | Descensor de propósito general del mismo base | no disponible | Hugging Face |
+| JANGQ-AI/GLM-5.3-FP8 | ~753B (MoE) | no disponible | Cuantización FP8 sin modificar | no disponible | Hugging Face |
+| zai-org/GLM-5.3 | ~753B (MoE) | no disponible | Modelo base original alineado | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de contexto para los tres modelos de comparación más allá de su relación de parentesco con este derivado.
 
@@ -113,7 +113,7 @@ No se dispone de datos de rendimiento ni de contexto para los tres modelos de co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JohnieM/GLM-5.3-CYBERSECURITY-FP8
+- Modelo en Hugging Face: https://huggingface.co/JohnieM/GLM-5.3-CYBERSECURITY-FP8
 - Modelo base original: https://huggingface.co/zai-org/GLM-5.3
 - Cuantización FP8 de partida: https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
 - Modelo hermano de propósito general: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8

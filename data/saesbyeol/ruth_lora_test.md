@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `saesbyeol/ruth_lora_test` es un modelo alojado en HuggingFace Hub con licencia Apache-2.0, creado en agosto de 2026. Por el nombre del repositorio y el tamaño del archivo (0.5 GB), es probable que se trate de un adaptador LoRA para algún modelo base de generación de imágenes, pero no se ha publicado ninguna documentación técnica en la model card. El repositorio no presenta descargas ni valoraciones, lo que sugiere que es un experimento personal o un artefacto en fase temprana de desarrollo.
+El repositorio `saesbyeol/ruth_lora_test` es un modelo alojado en Hugging Face Hub con licencia Apache-2.0, creado en agosto de 2026. Por el nombre del repositorio y el tamaño del archivo (0.5 GB), es probable que se trate de un adaptador LoRA para algún modelo base de generación de imágenes, pero no se ha publicado ninguna documentación técnica en la model card. El repositorio no presenta descargas ni valoraciones, lo que sugiere que es un experimento personal o un artefacto en fase temprana de desarrollo.
 
-La información disponible es mínima: solo se conocen la licencia, la fecha de creación y actualización, y el tamaño del repositorio. No se especifican arquitectura, parámetros, contexto, idiomas ni capacidades. Por tanto, esta ficha se basa exclusivamente en los metadatos públicos de HuggingFace, sin datos adicionales verificables.
+La información disponible es mínima: solo se conocen la licencia, la fecha de creación y actualización, y el tamaño del repositorio. No se especifican arquitectura, parámetros, contexto, idiomas ni capacidades. Por tanto, esta ficha se basa exclusivamente en los metadatos públicos de Hugging Face, sin datos adicionales verificables.
 
 ## Especificaciones tecnicas
 
@@ -57,7 +57,7 @@ No es posible establecer una comparativa con modelos de la misma categoria, ya q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/saesbyeol/ruth_lora_test
+- Hugging Face: https://huggingface.co/saesbyeol/ruth_lora_test
 - Resultados de busqueda web sobre LoRA en general (no especificos del modelo):
   - https://tensor.art/models/888273636652223391
   - https://civitai.com/tag/lora

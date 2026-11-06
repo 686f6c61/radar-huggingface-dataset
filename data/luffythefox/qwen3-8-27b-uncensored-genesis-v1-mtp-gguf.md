@@ -106,7 +106,7 @@ Diferencias clave: frente a las alternativas, esta publicacion ofrece un modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LuffyTheFox/Qwen3.8-27B-Uncensored-Genesis-V1-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/LuffyTheFox/Qwen3.8-27B-Uncensored-Genesis-V1-MTP-GGUF
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Perfil del autor del modelo base: https://huggingface.co/HauhauCS
 - Articulo de referencia del metodo Genesis: https://arxiv.org/abs/1311.0851v1 (Optimal Shrinkage of Eigenvalues in the Spiked Covariance Model)

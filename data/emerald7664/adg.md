@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ADG es un repositorio de pesos publicado en HuggingFace por el usuario Emerald7664 bajo el identificador `Emerald7664/ADG`. La única información verificable que acompaña al repositorio es su etiqueta de formato (`onnx`), un tamaño de 2,6 GB y una licencia declarada como `unknown`. La model card está vacía: no incluye descripción, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso. No se ha publicado pipeline asociado, y el repositorio acumula 0 descargas y 0 likes desde su creación el 29 de julio de 2026 (última actualización: 10 de septiembre de 2026).
+ADG es un repositorio de pesos publicado en Hugging Face por el usuario Emerald7664 bajo el identificador `Emerald7664/ADG`. La única información verificable que acompaña al repositorio es su etiqueta de formato (`onnx`), un tamaño de 2,6 GB y una licencia declarada como `unknown`. La model card está vacía: no incluye descripción, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso. No se ha publicado pipeline asociado, y el repositorio acumula 0 descargas y 0 likes desde su creación el 29 de julio de 2026 (última actualización: 10 de septiembre de 2026).
 
 No es posible determinar qué problema resuelve el modelo ni a qué categoría funcional pertenece (texto, visión, audio, embeddings u otra). Tampoco hay evidencia de que haya sido evaluado, documentado o validado por terceros. Las búsquedas web realizadas no devuelven ningún resultado relacionado con este modelo: los únicos enlaces recuperados corresponden a directorios telefónicos alemanes, completamente ajenos al objeto de la ficha.
 
@@ -34,7 +34,7 @@ Por tanto, esta ficha se limita a inventariar los metadatos disponibles y a marc
 
 No disponible. La model card no describe la arquitectura (transformer, MoE, SSM, híbrida u otra), ni el número de parámetros, ni la ventana de contexto. Tampoco hay información sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT.
 
-El único dato estructural es el formato de serialización: los pesos se distribuyen como ONNX, lo que indica que el modelo fue exportado para su ejecución mediante ONNX Runtime o cualquiera de sus variantes (ONNX Runtime Web, ONNX Runtime GenAI, etc.). El tag `region:us` es un metadato de infraestructura de HuggingFace y no aporta información sobre el modelo. No hay paper, informe técnico ni blog asociado.
+El único dato estructural es el formato de serialización: los pesos se distribuyen como ONNX, lo que indica que el modelo fue exportado para su ejecución mediante ONNX Runtime o cualquiera de sus variantes (ONNX Runtime Web, ONNX Runtime GenAI, etc.). El tag `region:us` es un metadato de infraestructura de Hugging Face y no aporta información sobre el modelo. No hay paper, informe técnico ni blog asociado.
 
 ## Capacidades
 
@@ -91,7 +91,7 @@ No disponible. Sin conocer la modalidad, el tamaño, la tarea ni el rendimiento 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Emerald7664/ADG
+- Hugging Face: https://huggingface.co/Emerald7664/ADG
 - Model card del autor: no disponible (vacía)
 - Paper o informe técnico: no disponible
 - Repositorio de código: no disponible

@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto / entrada | Precisión test CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IOC-NN (este modelo) | 789.258 | 3072 valores (32x32x3) | 0,4999 | no disponible | HuggingFace (repo de 0,0 GB) |
+| IOC-NN (este modelo) | 789.258 | 3072 valores (32x32x3) | 0,4999 | no disponible | Hugging Face (repo de 0,0 GB) |
 | MLP 3072-256-10 estándar (referencia genérica) | ~789.000 | 3072 valores | no disponible | no disponible | no disponible |
 | CNN pequeña tipo LeNet en CIFAR-10 | ~60.000 | 32x32x3 | no disponible | no disponible | no disponible |
 
@@ -86,5 +86,5 @@ No se dispone de datos verificables de benchmarks para modelos comparables en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Divya7106/smai-a4-iocnn
+- Hugging Face: https://huggingface.co/Divya7106/smai-a4-iocnn
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

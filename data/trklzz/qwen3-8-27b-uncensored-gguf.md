@@ -113,7 +113,7 @@ La comparación más significativa es contra el propio modelo base: misma arquit
 
 ## Enlaces
 
-- Ficha de HuggingFace del modelo: https://huggingface.co/trklzz/Qwen3.8-27B-Uncensored-GGUF
+- Ficha de Hugging Face del modelo: https://huggingface.co/trklzz/Qwen3.8-27B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de abliteración Heretic: https://github.com/p-e-w/heretic
 - llama.cpp (librería declarada y commit de conversión a94d563ed): https://github.com/ggml-org/llama.cpp

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`nguyenmich/few-shot-multimodal-int442` es un repositorio publicado en HuggingFace por el usuario `nguyenmich` bajo licencia MIT, etiquetado como `research-notes` y `few-shot-multimodal`. No se trata de un modelo entrenado ni de un checkpoint distribuible: la propia model card lo describe como una "nota exploratoria" sobre aprendizaje few-shot multimodal que recoge el alcance de una pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y requisitos de reproducibilidad. Los únicos artefactos declarados son `review.md` y `README.md`.
+`nguyenmich/few-shot-multimodal-int442` es un repositorio publicado en Hugging Face por el usuario `nguyenmich` bajo licencia MIT, etiquetado como `research-notes` y `few-shot-multimodal`. No se trata de un modelo entrenado ni de un checkpoint distribuible: la propia model card lo describe como una "nota exploratoria" sobre aprendizaje few-shot multimodal que recoge el alcance de una pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y requisitos de reproducibilidad. Los únicos artefactos declarados son `review.md` y `README.md`.
 
-El repositorio declara los tags `safetensors` y `transformer`, y los metadatos de HuggingFace reportan 16.576 parámetros totales, pero la model card afirma explícitamente que no se ha publicado ningún checkpoint entrenado, ni código, ni resultados de benchmarks. El tamaño del repositorio es de 0,0 GB, lo que es coherente con la ausencia de pesos y contradictorio con la existencia de un artefacto safetensors con decenas de miles de parámetros. Cualquier conclusión sobre arquitectura, contexto o capacidades es, por tanto, especulativa.
+El repositorio declara los tags `safetensors` y `transformer`, y los metadatos de Hugging Face reportan 16.576 parámetros totales, pero la model card afirma explícitamente que no se ha publicado ningún checkpoint entrenado, ni código, ni resultados de benchmarks. El tamaño del repositorio es de 0,0 GB, lo que es coherente con la ausencia de pesos y contradictorio con la existencia de un artefacto safetensors con decenas de miles de parámetros. Cualquier conclusión sobre arquitectura, contexto o capacidades es, por tanto, especulativa.
 
 Su relevancia actual es documental, no funcional: sirve como ejemplo de repositorio de notas de investigación que no debe confundirse con un modelo desplegable. Para desarrolladores e investigadores, la lectura correcta es la de un plan de estudio sobre evaluación few-shot multimodal, no la de un artefacto listo para inferencia.
 
@@ -23,7 +23,7 @@ Su relevancia actual es documental, no funcional: sirve como ejemplo de reposito
 
 ## Arquitectura y entrenamiento
 
-No hay información sobre arquitectura más allá del tag `transformer` en los metadatos de HuggingFace. La model card no especifica número de capas, dimensión oculta, mecanismo de atención, tokenizador ni configuración de entrenamiento. No se indica volumen de tokens, composición del dataset, ni si hubo etapas de RLHF, DPO o ajuste supervisado. Tampoco se documenta ninguna innovación técnica (atención lineal, decodificación especulativa, mezcla de expertos, etc.).
+No hay información sobre arquitectura más allá del tag `transformer` en los metadatos de Hugging Face. La model card no especifica número de capas, dimensión oculta, mecanismo de atención, tokenizador ni configuración de entrenamiento. No se indica volumen de tokens, composición del dataset, ni si hubo etapas de RLHF, DPO o ajuste supervisado. Tampoco se documenta ninguna innovación técnica (atención lineal, decodificación especulativa, mezcla de expertos, etc.).
 
 El contenido del repositorio se limita a una nota de investigación que propone un marco de comparación: alcance de la pregunta, factores de confusión probables, comparación con baselines emparejados, benchmarks públicos adecuados a la tarea, comprobaciones de reproducibilidad y modos de fallo. La propia model card advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales y que, si se añaden resultados en el futuro, deberán incluir versiones de dataset, comandos, semillas, hardware y logs en bruto. No existe evidencia de que el estudio se haya ejecutado.
 
@@ -75,7 +75,7 @@ No disponible. No se conocen modelos comparables porque el repositorio no consti
 ## Limitaciones y advertencias
 
 - **No es un modelo desplegable**: no hay checkpoint, tokenizador, código de inferencia ni pipeline declarado. Cualquier intento de cargarlo con `transformers` o motores similares fallará o cargará un artefacto no representativo.
-- **Incoherencia de metadatos**: los 16.576 parámetros reportados por HuggingFace no concuerdan con un repositorio de 0,0 GB que solo declara dos archivos Markdown. No debe tomarse esa cifra como especificación real del sistema.
+- **Incoherencia de metadatos**: los 16.576 parámetros reportados por Hugging Face no concuerdan con un repositorio de 0,0 GB que solo declara dos archivos Markdown. No debe tomarse esa cifra como especificación real del sistema.
 - **Riesgo de interpretación errónea**: el tag `transformer` y el nombre "multimodal" pueden inducir a catalogar el repositorio como modelo multimodal. La model card lo desmiente de forma explícita.
 - **Sin resultados empíricos**: no hay ablaciones, benchmarks ni comparaciones ejecutadas; las secciones de la nota marcadas como plan o hipótesis no son evidencia.
 - **Sesgos conocidos**: no disponible, al no existir modelo entrenado que evaluar.
@@ -86,7 +86,7 @@ No disponible. No se conocen modelos comparables porque el repositorio no consti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nguyenmich/few-shot-multimodal-int442
+- Repositorio en Hugging Face: https://huggingface.co/nguyenmich/few-shot-multimodal-int442
 - `review.md` (artefacto principal citado en la model card): https://huggingface.co/nguyenmich/few-shot-multimodal-int442/blob/main/review.md
 - `README.md` (documentación del repositorio): https://huggingface.co/nguyenmich/few-shot-multimodal-int442/blob/main/README.md
 

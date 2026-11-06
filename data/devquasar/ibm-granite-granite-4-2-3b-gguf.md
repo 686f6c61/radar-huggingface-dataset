@@ -81,8 +81,8 @@ Nota: los datos de contexto de Llama 3.2 y Qwen 2.5 provienen de documentación 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/DevQuasar/ibm-granite.granite-4.2-3b-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/ibm-granite/granite-4.2-3b
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/DevQuasar/ibm-granite.granite-4.2-3b-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Repositorio GGUF oficial de IBM Granite (con más archivos): https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF
 - Documentación de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2
 - Página general de IBM Granite: https://www.ibm.com/granite

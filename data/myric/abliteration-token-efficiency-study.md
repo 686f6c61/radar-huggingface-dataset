@@ -86,5 +86,5 @@ No se dispone de comparación con modelos no abliterados de la misma familia fue
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Myric/abliteration-token-efficiency-study
+- Repositorio Hugging Face: https://huggingface.co/Myric/abliteration-token-efficiency-study
 - No se proporcionan otros enlaces (papers, blogs, repos) en la model card.

@@ -78,7 +78,7 @@ La comparativa se limita a modelos de tamaño similar. GPT-2 medium original tie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nachiketj14/GPT2-355M-from-scratch
+- Hugging Face: https://huggingface.co/nachiketj14/GPT2-355M-from-scratch
 - Repositorio de referencia (implementación similar): https://github.com/B4S1C-Coder/GPT-2-from-scratch
 - Repositorio con integración de pesos GPT-2 medium: https://github.com/abhisheksssss/GPT-355M
 - Repositorio de GPT-2 from scratch en PyTorch (rasbt): https://huggingface.co/rasbt/gpt2-from-scratch-pytorch

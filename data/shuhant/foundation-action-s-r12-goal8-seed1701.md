@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`shuhant/foundation-action-s-r12-goal8-seed1701` es un checkpoint de 183.245.588 parámetros publicado por Shuhan Tan en HuggingFace, etiquetado con los tags `foundation-action`, `goal-conditioned` y `autonomous-driving`. Por la nomenclatura y las etiquetas, se trata de un modelo de acción (policy) condicionado a objetivos, orientado a conducción autónoma, más que de un modelo de lenguaje: el sufijo `goal8` sugiere un horizonte de objetivo de 8 pasos, `r12` un índice de ejecución o variante y `seed1701` la semilla de entrenamiento empleada. Esta descomposición es una inferencia a partir del nombre, no un dato confirmado en la documentación disponible.
+`shuhant/foundation-action-s-r12-goal8-seed1701` es un checkpoint de 183.245.588 parámetros publicado por Shuhan Tan en Hugging Face, etiquetado con los tags `foundation-action`, `goal-conditioned` y `autonomous-driving`. Por la nomenclatura y las etiquetas, se trata de un modelo de acción (policy) condicionado a objetivos, orientado a conducción autónoma, más que de un modelo de lenguaje: el sufijo `goal8` sugiere un horizonte de objetivo de 8 pasos, `r12` un índice de ejecución o variante y `seed1701` la semilla de entrenamiento empleada. Esta descomposición es una inferencia a partir del nombre, no un dato confirmado en la documentación disponible.
 
-El repositorio se publicó el 19 de octubre de 2026, pesa 0,7 GB y contiene pesos en formato `safetensors` para PyTorch. El acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargarlo, y la licencia figura como `other`, sin que se detallen sus términos en la información disponible. No consta ningún resultado de benchmarks, model card descriptiva ni métricas de evaluación publicadas.
+El repositorio se publicó el 19 de octubre de 2026, pesa 0,7 GB y contiene pesos en formato `safetensors` para PyTorch. El acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargarlo, y la licencia figura como `other`, sin que se detallen sus términos en la información disponible. No consta ningún resultado de benchmarks, model card descriptiva ni métricas de evaluación publicadas.
 
 Su relevancia es acotada y experimental: se enmarca en la línea de trabajo del autor sobre modelos fundacionales de acción (`shuhant/foundational_action`) y modelos con características DINO (`shuhant/dlv-branch-h-dino-future-features`). Al tener cero descargas y cero likes, y carecer de documentación técnica, debe considerarse un artefacto de investigación reproducible (una ejecución concreta identificada por semilla) más que un modelo listo para producción.
 
@@ -18,7 +18,7 @@ Su relevancia es acotada y experimental: se enmarca en la línea de trabajo del 
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible (solo se publican pesos `safetensors`; no se listan versiones GGUF, AWQ, GPTQ ni similares) |
 | Idiomas soportados | No disponible; por la naturaleza del modelo (predicción de acciones para conducción) no aplica soporte lingüístico |
-| Licencia | `other` (acceso restringido, requiere aceptar condiciones en HuggingFace) |
+| Licencia | `other` (acceso restringido, requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | `safetensors` (librería PyTorch) |
 
 Datos adicionales del repositorio: tamaño de 0,7 GB, creado el 2026-10-19T20:36:11Z y actualizado el mismo día, región `us`, sin pipeline declarado.
@@ -71,15 +71,15 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `shuhant/foundation-action-s-r12-goal8-seed1701` | 183.245.588 | No disponible | No disponible | `other` (gated) | HuggingFace, acceso restringido |
-| `shuhant/foundational_action` | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| `shuhant/foundation-action-s-r12-goal8-seed1701` | 183.245.588 | No disponible | No disponible | `other` (gated) | Hugging Face, acceso restringido |
+| `shuhant/foundational_action` | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | Otras políticas de conducción | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no se documentan arquitectura, datos de entrenamiento, hiperparámetros ni proceso de evaluación, lo que impide auditar el modelo.
 - Licencia `other`: los términos concretos no están disponibles en la información proporcionada; es imprescindible revisarlos antes de cualquier uso comercial o redistribución.
-- Acceso restringido (gated): la descarga requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la integración en CI/CD automatizado.
+- Acceso restringido (gated): la descarga requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la integración en CI/CD automatizado.
 - Sin benchmarks publicados: no existe evidencia cuantitativa de rendimiento frente a alternativas, por lo que cualquier comparación es especulativa.
 - Naturaleza específica de semilla: el checkpoint representa una única ejecución (`seed1701`); su comportamiento puede diferir de otras réplicas de la misma familia, y no hay datos sobre esa varianza.
 - Riesgo de cambio de distribución: al ser un modelo de conducción entrenado sobre un dataset no documentado, su comportamiento fuera de esa distribución (clima, geografía, sensores distintos) es impredecible.
@@ -90,7 +90,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shuhant/foundation-action-s-r12-goal8-seed1701
+- Modelo en Hugging Face: https://huggingface.co/shuhant/foundation-action-s-r12-goal8-seed1701
 - Repositorio de la familia: https://huggingface.co/shuhant/foundational_action
 - Perfil del autor: https://huggingface.co/shuhant
 - Listado de modelos del autor: https://huggingface.co/shuhant/models

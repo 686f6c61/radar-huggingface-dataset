@@ -91,8 +91,8 @@ El modelo mejora significativamente la capacidad de supervisión (11/12 frente a
 
 ## Enlaces
 
-- Repositorio HuggingFace NF4: https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-NF4
-- Repositorio HuggingFace BF16: https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-BF16
+- Repositorio Hugging Face NF4: https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-NF4
+- Repositorio Hugging Face BF16: https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-BF16
 - Modelo base Qwopus3.5-4B-v3 en ModelScope: https://www.modelscope.cn/models/Jackrong/Qwopus3.5-4B-v3
 - Versión Ollama: https://ollama.com/fredrezones55/Qwopus3.5:4b
 - Repositorio del agente de código Qwopus (basado en Qwen3.5-27B): https://github.com/codespermuted/qwopus

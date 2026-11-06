@@ -4,11 +4,11 @@
 
 ## Resumen
 
-Se trata de un adaptador LoRA entrenado con DPO (Direct Preference Optimization) sobre el modelo base `unsloth/gemma-7b-bnb-4bit`, publicado por el usuario Khaledsaad1 en HuggingFace. No es un modelo completo, sino un conjunto de pesos PEFT (aproximadamente 0,5 GB en safetensors) que debe cargarse junto al modelo base Gemma de 7B para poder realizar inferencia. El nombre del repositorio sugiere que el ajuste se hizo sobre el dataset `argilla-dpo-mix-7k` (unas 7000 parejas de preferencias) y que el artefacto corresponde al checkpoint del paso 480 de entrenamiento, aunque la model card no confirma ninguno de estos extremos.
+Se trata de un adaptador LoRA entrenado con DPO (Direct Preference Optimization) sobre el modelo base `unsloth/gemma-7b-bnb-4bit`, publicado por el usuario Khaledsaad1 en Hugging Face. No es un modelo completo, sino un conjunto de pesos PEFT (aproximadamente 0,5 GB en safetensors) que debe cargarse junto al modelo base Gemma de 7B para poder realizar inferencia. El nombre del repositorio sugiere que el ajuste se hizo sobre el dataset `argilla-dpo-mix-7k` (unas 7000 parejas de preferencias) y que el artefacto corresponde al checkpoint del paso 480 de entrenamiento, aunque la model card no confirma ninguno de estos extremos.
 
 El problema que aborda es el habitual en la fase de alineación: tomar un modelo preentrenado e instruido y desplazar su distribución de respuestas hacia las preferidas por anotadores humanos, sin reentrenar el modelo completo. La relevancia práctica es limitada: el repositorio no incluye datos de evaluación, licencia, idiomas ni hiperparámetros, y registra cero descargas y cero likes en el momento de la consulta, además de una fecha de creación (octubre de 2026) posterior a la actual, lo que apunta a un artefacto de prueba, un experimento personal o un error en los metadatos.
 
-Arquitectónicamente hereda todo del modelo base: un transformer decoder-only de Gemma con 8.500 millones de parámetros y 8192 tokens de contexto, sobre el que se ha insertado un adaptador de bajo rango. Cualquier uso en producción exige verificar primero la procedencia del entrenamiento y la licencia aplicable, ya que la model card es la plantilla por defecto de HuggingFace sin rellenar.
+Arquitectónicamente hereda todo del modelo base: un transformer decoder-only de Gemma con 8.500 millones de parámetros y 8192 tokens de contexto, sobre el que se ha insertado un adaptador de bajo rango. Cualquier uso en producción exige verificar primero la procedencia del entrenamiento y la licencia aplicable, ya que la model card es la plantilla por defecto de Hugging Face sin rellenar.
 
 ## Especificaciones tecnicas
 
@@ -92,7 +92,7 @@ La comparacion es estructural: el adaptador no aporta mejoras medibles frente a 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Khaledsaad1/argilla-dpo-mix-7k-DPO-480-checkpoint
+- Repositorio Hugging Face: https://huggingface.co/Khaledsaad1/argilla-dpo-mix-7k-DPO-480-checkpoint
 - Modelo base: https://huggingface.co/unsloth/gemma-7b-bnb-4bit
 - Modelo Gemma original de Google: https://huggingface.co/google/gemma-7b
 - Informe tecnico de Gemma (arXiv 2403.08295): https://arxiv.org/abs/2403.08295

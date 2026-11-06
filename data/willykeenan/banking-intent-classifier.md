@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El Banking Intent Classifier es un clasificador supervisado clásico para 77 intenciones bancarias en inglés, publicado en HuggingFace por William Keenan dentro del proyecto Waggle and Kea. No es un modelo de lenguaje ni un transformer afinado: combina características TF-IDF de unigramas y bigramas de palabra con n-gramas de carácter de 3 a 5, y las alimenta a un clasificador SGD con pérdida logarítmica y semilla fija (20260805). El resultado es un artefacto entrenable y ejecutable íntegramente en CPU.
+El Banking Intent Classifier es un clasificador supervisado clásico para 77 intenciones bancarias en inglés, publicado en Hugging Face por William Keenan dentro del proyecto Waggle and Kea. No es un modelo de lenguaje ni un transformer afinado: combina características TF-IDF de unigramas y bigramas de palabra con n-gramas de carácter de 3 a 5, y las alimenta a un clasificador SGD con pérdida logarítmica y semilla fija (20260805). El resultado es un artefacto entrenable y ejecutable íntegramente en CPU.
 
 El modelo se apoya en el dataset público BANKING77 de PolyAI y se distribuye con el vocabulario ajustado, los valores IDF, los pesos del clasificador, las etiquetas y el código de reproducción. El paquete incluye además un mecanismo de verificación que recarga el artefacto y comprueba que las predicciones de referencia se reproducen exactamente.
 
@@ -71,7 +71,7 @@ El baseline solo palabra es una referencia historica; el paquete no lo reentrena
 - VRAM estimada: no aplica; no se publican requisitos de memoria acelerada.
 - GPU recomendadas: ninguna. Cualquier GPU seria irrelevante para este artefacto.
 - Compatibilidad con GPU de consumo: no aplica, al no existir ruta de ejecucion en GPU en el paquete.
-- Memoria en disco: el repositorio ocupa 0,0 GB segun HuggingFace (menos de 0,1 GB); no se detalla el peso exacto del artefacto en memoria.
+- Memoria en disco: el repositorio ocupa 0,0 GB segun Hugging Face (menos de 0,1 GB); no se detalla el peso exacto del artefacto en memoria.
 - Entorno de ejecucion: Python 3.12 con `requirements.txt`, carga via `skops.io`; se incluye `predict.py` como ejemplo de linea de comandos.
 - Opciones de despliegue: integracion directa como objeto scikit-learn dentro de un servicio Python. No hay integracion con `transformers.pipeline()`, ni endpoint de inferencia alojado, ni soporte declarado para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles en la informacion proporcionada. Al tratarse de un modelo lineal disperso en CPU, el coste por consulta es bajo, pero no se publican mediciones.
@@ -80,7 +80,7 @@ El baseline solo palabra es una referencia historica; el paquete no lo reentrena
 
 | Modelo | Tipo | Parametros | Contexto | Macro-F1 / accuracy | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| willykeenan/banking-intent-classifier | TF-IDF palabra + caracter con SGD | No disponible | No aplica | 0,9119 / 0,9115 (test filtrado de 3.050) | MIT (paquete), BANKING77 CC BY 4.0 | HuggingFace, artefacto skops |
+| willykeenan/banking-intent-classifier | TF-IDF palabra + caracter con SGD | No disponible | No aplica | 0,9119 / 0,9115 (test filtrado de 3.050) | MIT (paquete), BANKING77 CC BY 4.0 | Hugging Face, artefacto skops |
 | Baseline solo palabra citado en la model card | TF-IDF solo palabra con SGD | No disponible | No aplica | 0,8915 / 0,8915 (misma poblacion) | No aplica | No se distribuye; referencia historica |
 | Fine-tunes de transformers sobre BANKING77 (por ejemplo, codificadores de frases) | Transformer afinado | No disponible en la informacion proporcionada | No disponible | No disponible | Variable segun el modelo | Existen en el ecosistema, pero no se aportan cifras comparables verificadas en esta busqueda |
 
@@ -101,7 +101,7 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/willykeenan/banking-intent-classifier
+- Modelo en Hugging Face: https://huggingface.co/willykeenan/banking-intent-classifier
 - Dataset del benchmark complementario: https://huggingface.co/datasets/willykeenan/agent-handoff-benchmark
 - Repositorio del proyecto Waggle and Kea: https://github.com/willykeenan/waggle-kea
 - Commit con la receta de entrenamiento: https://github.com/willykeenan/waggle-kea/tree/54041045c82953cbbabac155b150a0f7b7ed5603

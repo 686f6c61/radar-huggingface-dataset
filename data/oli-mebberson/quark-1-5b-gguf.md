@@ -123,6 +123,6 @@ La diferencia más relevante no está en el tamaño, sino en la madurez: Quark e
 - Modelo base (checkpoints originales y model card de origen): https://huggingface.co/lattice-research/lattice-quark-1.5b
 - Código de entrenamiento (nano-gpt): https://github.com/olii-dev/nano-gpt
 - Demos y otros modelos Lattice: https://lattice.mebbo.cloud
-- Perfil del autor en HuggingFace: https://huggingface.co/oli-mebberson
+- Perfil del autor en Hugging Face: https://huggingface.co/oli-mebberson
 - Ficheros incluidos en el repositorio GGUF (rutas relativas al propio repositorio): `quark-llama-cpp.bundle`, `quark-nanochat-llamacpp.patch`, `convert_to_GGUF.py`, `NOTES.md`
 - Resultados de búsqueda web: no se encontraron fuentes relevantes sobre este modelo; los resultados obtenidos correspondían a entidades no relacionadas y se han descartado.

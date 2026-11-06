@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dyjackson/hw2-retrieval` es un repositorio de HuggingFace que contiene una implementacion propia y minima de una arquitectura denominada **Coca**, orientada a tareas de **retrieval** (recuperacion de informacion multimodal o texto-imagen, a juzgar por la referencia a Flickr30k en la model card). Lo publica el usuario `dyjackson` bajo licencia MIT, con fecha de creacion registrada el 13 de septiembre de 2026 y cero descargas y cero likes en el momento de la consulta.
+`dyjackson/hw2-retrieval` es un repositorio de Hugging Face que contiene una implementacion propia y minima de una arquitectura denominada **Coca**, orientada a tareas de **retrieval** (recuperacion de informacion multimodal o texto-imagen, a juzgar por la referencia a Flickr30k en la model card). Lo publica el usuario `dyjackson` bajo licencia MIT, con fecha de creacion registrada el 13 de septiembre de 2026 y cero descargas y cero likes en el momento de la consulta.
 
 El punto clave es que **no es un modelo entrenado**: el propio autor lo describe como "un punto de partida reproducible, no una release de modelo entrenado". El fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no un checkpoint con pesos entrenados ni evaluados. La variante publicada corresponde a la escala **nano**, con atencion dilatada, fusion con puerta (gated fusion), activacion gelu-tanh y normalizacion RMSNorm.
 
@@ -93,12 +93,12 @@ Los datos de CLIP y SigLIP se ofrecen solo como orden de magnitud de la categori
 - **Adapter necesario**: las APIs de carga automaticas requieren un adaptador explicito; no se puede cargar como un transformer convencional sin trabajo adicional.
 - **Licencia MIT**: permite uso comercial del codigo y de los pesos, pero los terminos de los datos de origen deben revisarse por separado si se combina con datasets externos.
 - **Sesgos y fairness**: no disponibles; no se ha realizado ninguna evaluacion.
-- **Trazabilidad temporal**: la fecha de creacion registrada en HuggingFace es 2026-09-13, posterior a la fecha habitual de consulta; conviene verificar la vigencia y el estado del repositorio antes de basar trabajo en el.
+- **Trazabilidad temporal**: la fecha de creacion registrada en Hugging Face es 2026-09-13, posterior a la fecha habitual de consulta; conviene verificar la vigencia y el estado del repositorio antes de basar trabajo en el.
 - **Sin mantenimiento ni adopcion observables**: cero descargas y cero likes, sin senales de uso por terceros.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dyjackson/hw2-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/dyjackson/hw2-retrieval
 - Ficheros citados en la model card (rutas dentro del repo): `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Dataset sugerido para evaluacion en la model card: Flickr30k (sin enlace proporcionado)
 - Paper, blog, repositorio de codigo externo o demo: no disponibles en la informacion proporcionada

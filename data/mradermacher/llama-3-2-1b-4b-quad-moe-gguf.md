@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Llama-3.2-1B-4B-Quad-MoE-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Llama-3.2-1B-4B-Quad-MoE-GGUF
 - Modelo base: https://huggingface.co/Fu01978/Llama-3.2-1B-4B-Quad-MoE
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Llama-3.2-1B-4B-Quad-MoE-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Llama-3.2-1B-4B-Quad-MoE-GGUF

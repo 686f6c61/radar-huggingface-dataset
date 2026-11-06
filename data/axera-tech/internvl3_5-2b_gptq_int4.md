@@ -91,7 +91,7 @@ La comparativa directa no es posible por la falta de benchmarks y por la diferen
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/AXERA-TECH/InternVL3_5-2B_GPTQ_INT4
+- Repositorio del modelo en Hugging Face: https://huggingface.co/AXERA-TECH/InternVL3_5-2B_GPTQ_INT4
 - Modelo base de OpenGVLab: https://huggingface.co/OpenGVLab/InternVL3_5-2B
 - Runtime ax-llm (GitHub): https://github.com/AXERA-TECH/ax-llm
 - Documentacion de la tarjeta aceleradora M.2 (AXCL): https://axcl-docs.readthedocs.io/zh-cn/latest/doc_guide_hardware.html

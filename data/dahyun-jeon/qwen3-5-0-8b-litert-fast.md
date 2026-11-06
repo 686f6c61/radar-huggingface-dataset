@@ -87,9 +87,9 @@ Correctitud de la conversion:
 
 | Modelo | Parametros | Contexto / cache KV | Prefill | Decodificacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dahyun-jeon/Qwen3.5-0.8B-LiteRT-fast (esta build) | 0,8B | cache KV 2048 | 243 tok/s | 27,8 tok/s | apache-2.0 | HuggingFace, formato `.litertlm` |
-| litert-community/Qwen3.5-0.8B | 0,8B | cache KV 4096 | 143 tok/s | 25,9 tok/s | apache-2.0 (base) | HuggingFace, formato `.litertlm`, GPU soportada |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | longitud de contexto no disponible | no disponible | no disponible | apache-2.0 | HuggingFace, pesos PyTorch/safetensors (formato exacto no disponible) |
+| dahyun-jeon/Qwen3.5-0.8B-LiteRT-fast (esta build) | 0,8B | cache KV 2048 | 243 tok/s | 27,8 tok/s | apache-2.0 | Hugging Face, formato `.litertlm` |
+| litert-community/Qwen3.5-0.8B | 0,8B | cache KV 4096 | 143 tok/s | 25,9 tok/s | apache-2.0 (base) | Hugging Face, formato `.litertlm`, GPU soportada |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | longitud de contexto no disponible | no disponible | no disponible | apache-2.0 | Hugging Face, pesos PyTorch/safetensors (formato exacto no disponible) |
 
 La diferencia principal frente a la build de litert-community es el numero de firmas de prefill (una de 32 tokens frente a once de 1 a 1024), lo que multiplica por aproximadamente 13 la velocidad de construccion del motor, a cambio de reducir el cache KV a la mitad y de perder el backend GPU. El modelo base Qwen/Qwen3.5-0.8B ofrece los pesos originales sin cuantizar, pero no esta empaquetado para ejecucion on-device directa.
 
@@ -109,7 +109,7 @@ La diferencia principal frente a la build de litert-community es el numero de fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dahyun-jeon/Qwen3.5-0.8B-LiteRT-fast
+- Modelo en Hugging Face: https://huggingface.co/dahyun-jeon/Qwen3.5-0.8B-LiteRT-fast
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
 - Build de referencia de la comunidad (litert-community/Qwen3.5-0.8B): no se proporciona URL en la informacion disponible

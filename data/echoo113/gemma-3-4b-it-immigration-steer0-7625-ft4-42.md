@@ -58,9 +58,9 @@ La autora Echoo113 ha publicado otros fine-tunes con la misma nomenclatura "immi
 
 | Modelo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-3-4b-it-immigration-STEER0.7625-ft4.42 | Gemma 3 4B | 4B | 128K | No disponible | HuggingFace |
-| Qwen3.5-4B-immigration-STEER0.139063-ft4.42 | Qwen3.5 4B | 4B | No disponible | No disponible | HuggingFace |
-| Llama-3.2-3B-Instruct-immigration-STEER0.16875-ft4.43 | Llama 3.2 3B | 3B | No disponible | No disponible | HuggingFace |
+| gemma-3-4b-it-immigration-STEER0.7625-ft4.42 | Gemma 3 4B | 4B | 128K | No disponible | Hugging Face |
+| Qwen3.5-4B-immigration-STEER0.139063-ft4.42 | Qwen3.5 4B | 4B | No disponible | No disponible | Hugging Face |
+| Llama-3.2-3B-Instruct-immigration-STEER0.16875-ft4.43 | Llama 3.2 3B | 3B | No disponible | No disponible | Hugging Face |
 
 Los tres modelos comparten el mismo propósito aparente (fine-tuning para inmigración con un parámetro STEER) y el mismo autor, pero carecen de documentación y benchmarks públicos. No se puede determinar cuál es superior sin evaluaciones independientes.
 

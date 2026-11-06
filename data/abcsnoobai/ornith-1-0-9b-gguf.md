@@ -87,9 +87,9 @@ Ornith-1.0-9B supera claramente a Qwen3.5-9B y Gemma4-12B en SWE-bench Verified,
 
 ## Enlaces
 
-- Repo HuggingFace GGUF (abcsnoobai): https://huggingface.co/abcsnoobai/Ornith-1.0-9B-GGUF
-- Repo HuggingFace del modelo base (ornith-ai): https://huggingface.co/ornith-ai/Ornith-1.0-9B-GGUF
-- Repo HuggingFace oficial de la familia Ornith: https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B-GGUF
+- Repo Hugging Face GGUF (abcsnoobai): https://huggingface.co/abcsnoobai/Ornith-1.0-9B-GGUF
+- Repo Hugging Face del modelo base (ornith-ai): https://huggingface.co/ornith-ai/Ornith-1.0-9B-GGUF
+- Repo Hugging Face oficial de la familia Ornith: https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B-GGUF
 - Repo GitHub de Ornith-1: https://github.com/ornith-ai/Ornith-1
 - Página oficial de Ornith 1.0 Model 9B: https://ornith.online/ornith-1-0-model-9b
 - Blog de Ornith: https://deep-reinforce.com/ornith.html

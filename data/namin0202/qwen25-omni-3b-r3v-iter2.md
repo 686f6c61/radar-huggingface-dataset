@@ -78,6 +78,6 @@ No se dispone de información sobre adapters LoRA comparables sobre el mismo mod
 ## Enlaces
 
 - Repositorio del adapter: https://huggingface.co/namin0202/qwen25-omni-3b-r3v-iter2
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-Omni-3B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-Omni-3B
 - Repositorio oficial de Qwen2.5-Omni en GitHub: https://github.com/QwenLM/Qwen2.5-Omni
 - Paper técnico de Qwen2.5-Omni: https://arxiv.org/abs/2503.20215

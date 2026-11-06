@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zera-24B-4bit es un modelo de lenguaje de 23.572.403.200 parametros (23,57B) publicado por el usuario Zexiry en HuggingFace, distribuido ya fusionado ("standalone fused model") en formato MLX cuantizado a 4 bits. Se trata de un ajuste fino mediante QLoRA sobre el modelo base `mlx-community/Devstral-Small-2507-4bit`, orientado a generacion de codigo, depuracion, explicaciones tecnicas, conversacion general, gramatica y vocabulario. La model card indica que el usuario no necesita cargar un adaptador aparte del modelo principal.
+Zera-24B-4bit es un modelo de lenguaje de 23.572.403.200 parametros (23,57B) publicado por el usuario Zexiry en Hugging Face, distribuido ya fusionado ("standalone fused model") en formato MLX cuantizado a 4 bits. Se trata de un ajuste fino mediante QLoRA sobre el modelo base `mlx-community/Devstral-Small-2507-4bit`, orientado a generacion de codigo, depuracion, explicaciones tecnicas, conversacion general, gramatica y vocabulario. La model card indica que el usuario no necesita cargar un adaptador aparte del modelo principal.
 
 El modelo es relevante dentro de un nicho muy concreto: desarrolladores que trabajan en Apple Silicon con el framework MLX y quieren un asistente de codigo de ~24B en 4 bits que quepa en memoria unificada de equipos de consumo. Al derivar de Devstral-Small-2507, hereda la familia tecnica de Mistral, aunque la model card no documenta la arquitectura de forma explicita.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato y cuantizacion | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|---|
-| Zera-24B-4bit | 23,57B | MLX 4-bit (group size 64) | No disponible | Apache-2.0 | HuggingFace, 0 descargas y 0 likes en la consulta | No disponibles |
-| mlx-community/Devstral-Small-2507-4bit (modelo base) | No disponible en la informacion proporcionada | MLX 4-bit | No disponible | No disponible en la informacion proporcionada | HuggingFace (referenciado como base) | No disponibles |
+| Zera-24B-4bit | 23,57B | MLX 4-bit (group size 64) | No disponible | Apache-2.0 | Hugging Face, 0 descargas y 0 likes en la consulta | No disponibles |
+| mlx-community/Devstral-Small-2507-4bit (modelo base) | No disponible en la informacion proporcionada | MLX 4-bit | No disponible | No disponible en la informacion proporcionada | Hugging Face (referenciado como base) | No disponibles |
 | Otras alternativas de codigo de ~24-32B (por ejemplo variantes de la familia Mistral o de Qwen Coder) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponibles |
 
 No se dispone de datos verificables en la informacion proporcionada para establecer una comparacion cuantitativa con alternativas de la misma categoria. La unica relacion documentada es la dependencia directa del modelo base `mlx-community/Devstral-Small-2507-4bit`.
@@ -86,7 +86,7 @@ No se dispone de datos verificables en la informacion proporcionada para estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zexiry/Zera-24B-4bit
+- Modelo en Hugging Face: https://huggingface.co/Zexiry/Zera-24B-4bit
 - Modelo base referenciado: https://huggingface.co/mlx-community/Devstral-Small-2507-4bit
 - Libreria de inferencia: https://github.com/ml-explore/mlx-lm
 - Paper, blog o repositorio adicional del autor: no disponible.

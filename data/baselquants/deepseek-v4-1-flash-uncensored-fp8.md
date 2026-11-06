@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-UNCENSORED-FP8 es una variante modificada del modelo multimodal DeepSeek-V4.1-Flash publicada por el usuario baselquants en HuggingFace. Se trata de un checkpoint al que se le ha aplicado una eliminación quirúrgica de los circuitos de rechazo a nivel de pesos (técnica conocida como "abliteration"), comercializada en la propia model card como "sin guardrails". El resultado es un modelo que, según los datos del autor, responde con cumplimiento total a las 320 peticiones del conjunto HarmBench-320, incluidas las categorías de riesgo químico-biológico, cibercrimen y acoso.
+DeepSeek-V4.1-Flash-UNCENSORED-FP8 es una variante modificada del modelo multimodal DeepSeek-V4.1-Flash publicada por el usuario baselquants en Hugging Face. Se trata de un checkpoint al que se le ha aplicado una eliminación quirúrgica de los circuitos de rechazo a nivel de pesos (técnica conocida como "abliteration"), comercializada en la propia model card como "sin guardrails". El resultado es un modelo que, según los datos del autor, responde con cumplimiento total a las 320 peticiones del conjunto HarmBench-320, incluidas las categorías de riesgo químico-biológico, cibercrimen y acoso.
 
 Arquitectónicamente es un transformer causal encoder-decoder de 20+20 capas con mezcla de expertos (384 expertos enrutados con top-6 más 1 compartido), atención dispersa CSA2, memoria n-gram Engram, residuales Hyper-Connections de 4 canales y una cabeza de borrador especulativa DSpark. Incluye torre de visión DeepSeek-ViT con 2D-RoPE y pixel unshuffle, y declara una ventana de contexto de 1.000.000 de tokens. Los pesos se distribuyen en FP8 nativo (e4m3fn) con escala de bloque E8M0 de [32, 32] y expertos enrutados en FP4.
 
@@ -94,8 +94,8 @@ No se dispone de datos de benchmarks de terceros en la información proporcionad
 
 | Modelo | Parámetros | Contexto | MMLU (14k) | HarmBench-320 (off / max) | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| DeepSeek-V4.1-Flash (base) | 552 B declarados | 1M | 86,96 % | 42,81 % / 1,56 % | no disponible | HuggingFace |
-| DeepSeek-V4.1-Flash-UNCENSORED-FP8 | 763,2 B (safetensors) | 1M | 82,74 % | 100,00 % / 100,00 % | MIT | HuggingFace |
+| DeepSeek-V4.1-Flash (base) | 552 B declarados | 1M | 86,96 % | 42,81 % / 1,56 % | no disponible | Hugging Face |
+| DeepSeek-V4.1-Flash-UNCENSORED-FP8 | 763,2 B (safetensors) | 1M | 82,74 % | 100,00 % / 100,00 % | MIT | Hugging Face |
 
 Alternativas de terceros de la misma categoría (modelos MoE multimodales de escala similar): no disponible en la información proporcionada.
 
@@ -114,7 +114,7 @@ Alternativas de terceros de la misma categoría (modelos MoE multimodales de esc
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/baselquants/DeepSeek-V4.1-Flash-UNCENSORED-FP8
+- Hugging Face del modelo: https://huggingface.co/baselquants/DeepSeek-V4.1-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Perfil del autor en X: https://x.com/dealignai
 - Perfil del coautor en X: https://x.com/jordanschenck

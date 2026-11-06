@@ -77,7 +77,7 @@ La siguiente tabla compara la compresión de este tokenizer con los tokenizers g
 | GPT-4o (o200k) | 200.000 | +1,4% |
 | Qwen3 | ~151.000 | +10,7% |
 
-No hay otros tokenizers especializados en SEC filings disponibles en HuggingFace con los mismos datos de validación, por lo que esta comparativa se limita a tokenizers generalistas.
+No hay otros tokenizers especializados en SEC filings disponibles en Hugging Face con los mismos datos de validación, por lo que esta comparativa se limita a tokenizers generalistas.
 
 ## Limitaciones y advertencias
 
@@ -90,6 +90,6 @@ No hay otros tokenizers especializados en SEC filings disponibles en HuggingFace
 
 ## Enlaces
 
-- [HuggingFace](https://huggingface.co/tcontorno/edgar-bpe-65536)
+- [Hugging Face](https://huggingface.co/tcontorno/edgar-bpe-65536)
 - [Repositorio GitHub](https://github.com/tcontorno6/edgar-tok)
 - [Informe técnico (write-up)](https://github.com/tcontorno6/edgar-tok/blob/main/docs/WRITEUP.md)

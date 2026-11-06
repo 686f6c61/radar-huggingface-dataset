@@ -87,7 +87,7 @@ No se dispone de comparativas de rendimiento entre estos modelos en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eng-aesr/donut-boletas-peru
+- Hugging Face: https://huggingface.co/eng-aesr/donut-boletas-peru
 - Modelo base: https://huggingface.co/naver-clova-ix/donut-base-finetuned-cord-v2
 - Paper de Donut (arxiv:2111.15664): https://arxiv.org/abs/2111.15664
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`varunkumartow/study-multitask` es un repositorio de estudio publicado en HuggingFace por el usuario varunkumartow que contiene una implementacion de la arquitectura Coca ("Compositional Contrastive" en su formulacion original) orientada a tareas multitask, en una configuracion de escala pequena. No se trata de un modelo entrenado para produccion: la propia model card indica que `model.safetensors` es un checkpoint de inicializacion valido para smoke tests y no un checkpoint con benchmarks.
+`varunkumartow/study-multitask` es un repositorio de estudio publicado en Hugging Face por el usuario varunkumartow que contiene una implementacion de la arquitectura Coca ("Compositional Contrastive" en su formulacion original) orientada a tareas multitask, en una configuracion de escala pequena. No se trata de un modelo entrenado para produccion: la propia model card indica que `model.safetensors` es un checkpoint de inicializacion valido para smoke tests y no un checkpoint con benchmarks.
 
 El objetivo declarado del repositorio es reunir codigo transparente y pruebas de humo reproducibles, omitiendo deliberadamente cualquier afirmacion de rendimiento. El numero de parametros totales registrado en los safetensors es de tan solo 33.088, lo que lo situa muy por debajo de cualquier modelo utilizable en tareas reales; se trata de una implementacion minima para validar que la arquitectura y el pipeline de ejecucion funcionan.
 
@@ -68,11 +68,11 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 - Ausencia total de datos de benchmarks, idiomas soportados y contexto maximo.
 - Riesgo de alucinacion: no aplica en el sentido habitual porque no es un modelo generativo funcional, pero cualquier uso indebido asumiendo capacidades no declaradas es un riesgo real.
 - Licencia apache-2.0, que permite uso comercial del codigo y los pesos del repositorio, pero los terminos de los datasets externos con los que se entrene deben revisarse por separado.
-- Al ser una implementacion personalizada, las APIs de carga automatica de HuggingFace requieren un adaptador explicito; no se puede cargar como un `AutoModel` estandar sin trabajo adicional.
+- Al ser una implementacion personalizada, las APIs de carga automatica de Hugging Face requieren un adaptador explicito; no se puede cargar como un `AutoModel` estandar sin trabajo adicional.
 - Los parametros del experimento (lamb, schedule polinomial) son valores por defecto del script y no evidencia de un entrenamiento completado; cualquier resultado que se publique debe documentarse por separado de estos valores.
 - Cero descargas y cero likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/varunkumartow/study-multitask
+- Hugging Face: https://huggingface.co/varunkumartow/study-multitask
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

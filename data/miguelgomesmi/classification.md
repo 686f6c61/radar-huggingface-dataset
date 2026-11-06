@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiguelGomesmi/classification es un repositorio de HuggingFace que contiene una implementacion de referencia de un Vision Transformer (ViT) orientado a tareas de clasificacion. Lo publica el usuario MiguelGomesmi bajo licencia MIT y su proposito declarado es servir como punto de partida experimental: codigo transparente, configuracion reproducible y un checkpoint de inicializacion valido para pruebas de humo, no un modelo entrenado ni evaluado.
+MiguelGomesmi/classification es un repositorio de Hugging Face que contiene una implementacion de referencia de un Vision Transformer (ViT) orientado a tareas de clasificacion. Lo publica el usuario MiguelGomesmi bajo licencia MIT y su proposito declarado es servir como punto de partida experimental: codigo transparente, configuracion reproducible y un checkpoint de inicializacion valido para pruebas de humo, no un modelo entrenado ni evaluado.
 
 El dato mas relevante para cualquier evaluacion es su tamano real: 49.600 parametros totales en safetensors, con un repositorio de 0,0 GB. La model card describe la configuracion como "giant" y especifica atencion dilatada, fusion de bajo rango, activacion mish y normalizacion layernorm, pero esa etiqueta de escala no se corresponde con el recuento de parametros publicado; se trata de un artefacto generado por la plantilla de configuracion, no de un modelo de gran tamano.
 
@@ -69,7 +69,7 @@ No hay datos comparativos publicados en la informacion disponible. El repositori
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiguelGomesmi/classification | 49.600 | No disponible | No se reclama ningun benchmark | MIT | Publico en HuggingFace, sin descargas |
+| MiguelGomesmi/classification | 49.600 | No disponible | No se reclama ningun benchmark | MIT | Publico en Hugging Face, sin descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 En terminos cualitativos, la categoria natural de comparacion serian ViT de clasificacion de imagen preentrenados y con pesos publicados; sin embargo, este repositorio no proporciona checkpoint entrenado ni metricas, por lo que no es equiparable a ellos en ningun escenario de uso real.
@@ -87,5 +87,5 @@ En terminos cualitativos, la categoria natural de comparacion serian ViT de clas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MiguelGomesmi/classification
+- Modelo en Hugging Face: https://huggingface.co/MiguelGomesmi/classification
 - No se han encontrado en la busqueda web otros enlaces relevantes (paper, blog, repositorio de codigo o demo) asociados a este modelo; los resultados devueltos correspondian a sitios generalistas sin relacion con el.

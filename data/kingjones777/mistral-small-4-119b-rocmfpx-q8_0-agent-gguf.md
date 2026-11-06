@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mistral-Small-4-119B-ROCmFPX-Q8_0-AGENT-GGUF es una cuantizacion de 8 bits del modelo Mistral Small 4 119B A6B, desarrollada por el usuario kingjones777 y publicada en HuggingFace. Se trata de una conversion a formato GGUF del modelo original de Mistral AI, optimizada especificamente para hardware AMD con soporte ROCm, utilizando el formato de cuantizacion propietario ROCmFPX. El modelo base, Mistral Small 4, es un modelo hibrido de 119.000 millones de parametros con arquitectura de mezcla de expertos (MoE) que activa solo 6.500 millones de parametros por token, lo que lo hace notablemente eficiente para su tamano.
+Mistral-Small-4-119B-ROCmFPX-Q8_0-AGENT-GGUF es una cuantizacion de 8 bits del modelo Mistral Small 4 119B A6B, desarrollada por el usuario kingjones777 y publicada en Hugging Face. Se trata de una conversion a formato GGUF del modelo original de Mistral AI, optimizada especificamente para hardware AMD con soporte ROCm, utilizando el formato de cuantizacion propietario ROCmFPX. El modelo base, Mistral Small 4, es un modelo hibrido de 119.000 millones de parametros con arquitectura de mezcla de expertos (MoE) que activa solo 6.500 millones de parametros por token, lo que lo hace notablemente eficiente para su tamano.
 
 Esta version concreta emplea el tipo de cuantizacion Q8_0_ROCMFPX_AGENT, disenado para preservar la maxima fidelidad posible respecto al modelo original en precision BF16, a costa de un tamano de archivo considerable (116,15 GiB). La variante AGENT esta pensada para escenarios de agente y tool calling. Su relevancia radica en que permite ejecutar un modelo de 119B en hardware AMD de gama alta con ROCm, algo que no es trivial dado el ecosistema de inferencia tradicionalmente centrado en NVIDIA. Sin embargo, presenta una limitacion critica: no cabe en la memoria GPU de un AMD Ryzen AI MAX+ 395 con 128 GB, por lo que su uso practico se limita a sistemas con mas memoria o a inferencia parcial en CPU.
 
@@ -78,7 +78,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Mistral-Small-4-119B-ROCmFPX-Q8_0-AGENT-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Mistral-Small-4-119B-ROCmFPX-Q8_0-AGENT-GGUF
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603
 - Version de 4 bits: https://huggingface.co/kingjones777/Mistral-Small-4-119B-ROCmFP4-GGUF
 - Version de 8 bits sin AGENT: https://huggingface.co/kingjones777/Mistral-Small-4-119B-ROCmFPX-Q8_0-GGUF

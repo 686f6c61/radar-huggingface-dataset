@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DaSiWa_MMH3_HybridTurbo_V3 es un adaptador LoRA de generacion de imagenes a partir de texto (text-to-image), publicado por el usuario lynaNSFW en HuggingFace. No se trata de un modelo completo, sino de un peso adicional que se aplica sobre un modelo base de difusion identificado como lynaNSFW/DaSiWa_MiniMax_H3. El repositorio esta etiquetado con la libreria diffusers y la plantilla diffusion-lora, lo que indica que su uso previsto es la carga mediante `DiffusionPipeline` o `StableDiffusionPipeline` con `load_lora_weights`, o bien su integracion en interfaces como ComfyUI o Automatic1111/Forge.
+DaSiWa_MMH3_HybridTurbo_V3 es un adaptador LoRA de generacion de imagenes a partir de texto (text-to-image), publicado por el usuario lynaNSFW en Hugging Face. No se trata de un modelo completo, sino de un peso adicional que se aplica sobre un modelo base de difusion identificado como lynaNSFW/DaSiWa_MiniMax_H3. El repositorio esta etiquetado con la libreria diffusers y la plantilla diffusion-lora, lo que indica que su uso previsto es la carga mediante `DiffusionPipeline` o `StableDiffusionPipeline` con `load_lora_weights`, o bien su integracion en interfaces como ComfyUI o Automatic1111/Forge.
 
 El problema que resuelve es el habitual de los LoRA de difusion: especializar el estilo, los personajes o la estetica de un modelo base sin necesidad de reentrenarlo por completo, reduciendo el coste de almacenamiento y de computo. En este caso concreto, el nombre y el autor sugieren contenido orientado a adultos, y la model card no aporta informacion tecnica sobre el dataset de entrenamiento, los hiperparametros utilizados ni los resultados obtenidos.
 
@@ -23,7 +23,7 @@ La relevancia actual del repositorio es limitada desde el punto de vista de la i
 | Modelo base | lynaNSFW/DaSiWa_MiniMax_H3 |
 | Prompt de instancia | null (no definido en la model card) |
 | Pipeline declarado | text-to-image |
-| Fecha de publicacion | 2026-10-02 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-10-02 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -74,7 +74,7 @@ No disponible. La comparacion con otros adaptadores requiere identificar la fami
 
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara de uso comercial; conviene tratar el modelo como no apto para produccion hasta confirmarlo con el autor.
 - Model card practicamente vacia: sin dataset, hiperparametros, prompt de instancia ni ejemplos de activacion, la reproducibilidad es nula.
-- Contenido para adultos: el autor y el nombre del repositorio indican material NSFW; su uso en productos exige filtrado, control de edad y cumplimiento de la normativa aplicable, ademas de las condiciones de uso de HuggingFace y Civitai.
+- Contenido para adultos: el autor y el nombre del repositorio indican material NSFW; su uso en productos exige filtrado, control de edad y cumplimiento de la normativa aplicable, ademas de las condiciones de uso de Hugging Face y Civitai.
 - Riesgo de sobreajuste al concepto entrenado: sin datos de entrenamiento, es previsible perdida de variedad y reproduccion de sesgos presentes en las imagenes usadas.
 - Alucinacion visual: como todo modelo generativo, puede producir anatomia incorrecta, artefactos en manos y texto, y composiciones fisicamente incoherentes.
 - Dependencia total del modelo base: si lynaNSFW/DaSiWa_MiniMax_H3 se elimina o cambia, el adaptador deja de ser utilizable sin reentrenamiento.
@@ -84,7 +84,7 @@ No disponible. La comparacion con otros adaptadores requiere identificar la fami
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lynaNSFW/DaSiWa_MMH3_HybridTurbo_V3
+- Modelo en Hugging Face: https://huggingface.co/lynaNSFW/DaSiWa_MMH3_HybridTurbo_V3
 - Ficheros y versiones: https://huggingface.co/lynaNSFW/DaSiWa_MMH3_HybridTurbo_V3/tree/main
 - Modelo base: https://huggingface.co/lynaNSFW/DaSiWa_MiniMax_H3
 - Ficha en Civitai (enlace indicado por el autor): https://civitai.red/models/2877206/dasiwa-minimax-h3?modelVersionId=3374439

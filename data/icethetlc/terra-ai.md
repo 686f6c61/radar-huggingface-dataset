@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `icethetlc/terra-ai` alojado en HuggingFace no contiene información técnica pública sobre ningún modelo de IA. La model card únicamente declara la licencia `cc-by-4.0`, sin descripción, arquitectura, pesos, datasets ni documentación adicional. El tamaño del repositorio es de 0.0 GB, lo que indica que no hay archivos de modelo subidos (ni safetensors, ni GGUF, ni ningún otro formato). No se registran descargas ni valoraciones por parte de la comunidad.
+El repositorio `icethetlc/terra-ai` alojado en Hugging Face no contiene información técnica pública sobre ningún modelo de IA. La model card únicamente declara la licencia `cc-by-4.0`, sin descripción, arquitectura, pesos, datasets ni documentación adicional. El tamaño del repositorio es de 0.0 GB, lo que indica que no hay archivos de modelo subidos (ni safetensors, ni GGUF, ni ningún otro formato). No se registran descargas ni valoraciones por parte de la comunidad.
 
-Las búsquedas web realizadas no arrojan resultados que vinculen este repositorio con un modelo concreto. Existen proyectos homónimos como "Terra AI" (una empresa de inteligencia artificial para minería), "GPT-5.6 Terra" (un modelo de OpenAI) o "terra-ai" (una aplicación Electron para Terraform), pero ninguno tiene relación verificable con el repositorio de HuggingFace. Por tanto, no es posible atribuir capacidades, arquitectura o rendimiento alguno a este repositorio.
+Las búsquedas web realizadas no arrojan resultados que vinculen este repositorio con un modelo concreto. Existen proyectos homónimos como "Terra AI" (una empresa de inteligencia artificial para minería), "GPT-5.6 Terra" (un modelo de OpenAI) o "terra-ai" (una aplicación Electron para Terraform), pero ninguno tiene relación verificable con el repositorio de Hugging Face. Por tanto, no es posible atribuir capacidades, arquitectura o rendimiento alguno a este repositorio.
 
 ## Especificaciones tecnicas
 
@@ -53,4 +53,4 @@ No disponible. No existe informacion sobre el modelo que permita compararlo con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/icethetlc/terra-ai
+- Repositorio en Hugging Face: https://huggingface.co/icethetlc/terra-ai

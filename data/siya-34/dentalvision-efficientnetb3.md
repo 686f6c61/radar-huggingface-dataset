@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DentalVision AI es un clasificador multi-etiqueta de imagen médica desarrollado por el usuario Siya-34 y publicado en HuggingFace. Su tarea es detectar seis hallazgos independientes sobre radiografías panorámicas dentales (OPG, ortopantomografías): dientes sanos, caries, dientes impactados, infección, dientes fracturados y quiste/lesión periapical (BDC/BDR). El modelo se presenta explícitamente como un prototipo educativo y de investigación, no como herramienta diagnóstica.
+DentalVision AI es un clasificador multi-etiqueta de imagen médica desarrollado por el usuario Siya-34 y publicado en Hugging Face. Su tarea es detectar seis hallazgos independientes sobre radiografías panorámicas dentales (OPG, ortopantomografías): dientes sanos, caries, dientes impactados, infección, dientes fracturados y quiste/lesión periapical (BDC/BDR). El modelo se presenta explícitamente como un prototipo educativo y de investigación, no como herramienta diagnóstica.
 
 El repositorio corresponde a la variante EfficientNetB3 de un ensemble que, según la model card, combina EfficientNetB3, DenseNet121 y ConvNeXt-Tiny. Los pesos publicados son únicamente los de la rama EfficientNetB3 (10.792.750 parámetros en formato safetensors), por lo que el rendimiento del ensemble completo no es reproducible solo con este checkpoint.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 | Modelo | Parámetros | Tarea | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DentalVision EfficientNetB3 (este) | 10,79 M | Clasificación multi-etiqueta de 6 hallazgos en OPG | Imagen 288x576 | Apache-2.0 | HuggingFace, 4 descargas |
+| DentalVision EfficientNetB3 (este) | 10,79 M | Clasificación multi-etiqueta de 6 hallazgos en OPG | Imagen 288x576 | Apache-2.0 | Hugging Face, 4 descargas |
 | DenseNet121 (rama del mismo ensemble) | no disponible | Igual tarea | no disponible | no disponible | No publicada como checkpoint independiente |
 | ConvNeXt-Tiny (rama del mismo ensemble) | no disponible | Igual tarea | no disponible | no disponible | No publicada como checkpoint independiente |
 
@@ -91,6 +91,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Siya-34/dentalvision-efficientnetb3
+- Hugging Face: https://huggingface.co/Siya-34/dentalvision-efficientnetb3
 - Dataset de entrenamiento (Kaggle, no redistribuido): https://www.kaggle.com/datasets/imtkaggleteam/dental-opg-xray-dataset
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

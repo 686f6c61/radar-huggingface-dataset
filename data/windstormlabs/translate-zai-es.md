@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WindstormLabs/translate-zai-es | no disponible | no disponible | zai → es | Apache-2.0 | HuggingFace; variantes Transformers y CTranslate2 INT8 |
-| Helsinki-NLP/opus-mt-zai-es | no disponible | no disponible | zai → es | Apache-2.0 | HuggingFace; modelo base del anterior |
-| WindyTranslate/translate-zai-es | no disponible | no disponible | zai → es | Apache-2.0 | HuggingFace; copia canonica declarada por el autor |
+| WindstormLabs/translate-zai-es | no disponible | no disponible | zai → es | Apache-2.0 | Hugging Face; variantes Transformers y CTranslate2 INT8 |
+| Helsinki-NLP/opus-mt-zai-es | no disponible | no disponible | zai → es | Apache-2.0 | Hugging Face; modelo base del anterior |
+| WindyTranslate/translate-zai-es | no disponible | no disponible | zai → es | Apache-2.0 | Hugging Face; copia canonica declarada por el autor |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la informacion proporcionada. Para modelos multilingues de gran cobertura (por ejemplo NLLB-200 o la familia MMS) no se dispone de confirmacion de que cubran el istmeno-zapoteco ni de resultados comparables, por lo que la comparacion cuantitativa se marca como no disponible.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WindstormLabs/translate-zai-es
+- Modelo en Hugging Face: https://huggingface.co/WindstormLabs/translate-zai-es
 - Copia canonica declarada por el autor: https://huggingface.co/WindyTranslate/translate-zai-es
 - Pagina de catalogo y puntuaciones del autor: https://windytranslate.com/models/translate-zai-es
 - Aplicaciones Windy Word: https://windyword.ai

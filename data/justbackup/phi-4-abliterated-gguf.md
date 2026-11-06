@@ -69,7 +69,7 @@ No se dispone de datos comparativos formales en la informacion proporcionada. Si
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Justbackup/phi-4-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Justbackup/phi-4-abliterated-GGUF
 - Repositorio con los archivos GGUF (mradermacher): https://huggingface.co/mradermacher/phi-4-abliterated-GGUF
 - Modelo base (huihui-ai/phi-4-abliterated): https://huggingface.co/huihui-ai/phi-4-abliterated
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

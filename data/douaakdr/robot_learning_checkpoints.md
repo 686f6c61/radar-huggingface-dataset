@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `DouaaKDR/ROBOT_LEARNING_CHECKPOINTS` aloja un conjunto de checkpoints de un modelo de aprendizaje automático publicado en HuggingFace por el usuario DouaaKDR. La información pública disponible es extremadamente escasa: la model card únicamente declara la licencia MIT y no se proporciona ningún detalle sobre la arquitectura, el tamaño, el dominio de aplicación o el proceso de entrenamiento. El repositorio no presenta descargas ni interacciones, lo que sugiere que se trata de un trabajo en fase inicial o de un artefacto de desarrollo personal.
+El repositorio `DouaaKDR/ROBOT_LEARNING_CHECKPOINTS` aloja un conjunto de checkpoints de un modelo de aprendizaje automático publicado en Hugging Face por el usuario DouaaKDR. La información pública disponible es extremadamente escasa: la model card únicamente declara la licencia MIT y no se proporciona ningún detalle sobre la arquitectura, el tamaño, el dominio de aplicación o el proceso de entrenamiento. El repositorio no presenta descargas ni interacciones, lo que sugiere que se trata de un trabajo en fase inicial o de un artefacto de desarrollo personal.
 
-A pesar del nombre, que sugiere una relación con robótica o aprendizaje por refuerzo para sistemas robóticos, no existe evidencia pública que confirme esta hipótesis. Los resultados de búsqueda web relacionados con checkpoints en IA (como los modelos VLA de Physical Intelligence o LeRobot de HuggingFace) no tienen conexión directa con este repositorio concreto. Por tanto, esta ficha se limita a documentar la información disponible y a señalar las carencias de documentación.
+A pesar del nombre, que sugiere una relación con robótica o aprendizaje por refuerzo para sistemas robóticos, no existe evidencia pública que confirme esta hipótesis. Los resultados de búsqueda web relacionados con checkpoints en IA (como los modelos VLA de Physical Intelligence o LeRobot de Hugging Face) no tienen conexión directa con este repositorio concreto. Por tanto, esta ficha se limita a documentar la información disponible y a señalar las carencias de documentación.
 
 ## Especificaciones técnicas
 
@@ -55,5 +55,5 @@ No disponible. Sin información sobre la arquitectura o el dominio de aplicació
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DouaaKDR/ROBOT_LEARNING_CHECKPOINTS
+- Repositorio Hugging Face: https://huggingface.co/DouaaKDR/ROBOT_LEARNING_CHECKPOINTS
 - No se han encontrado papers, blogs, repositorios complementarios o demos relacionados con este modelo específico.

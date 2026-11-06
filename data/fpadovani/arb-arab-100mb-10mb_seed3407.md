@@ -18,7 +18,7 @@ No es un modelo orientado a producción ni compite con modelos multilingües act
 | Longitud de contexto | No disponible (la arquitectura GPT-2 suele usar 1.024 tokens, pero no se confirma en la información proporcionada) |
 | Tipos de cuantizacion | No disponible: solo se publican pesos en safetensors, sin versiones GGUF, AWQ, GPTQ ni bitsandbytes |
 | Idiomas soportados | No disponible. El identificador del modelo base (`arb_arab`) sugiere árabe estándar en escritura árabe, pero no se declara de forma explícita |
-| Licencia | No disponible (la model card incluye un campo `licence: license` sin contenido y los metadatos de HuggingFace no la especifican) |
+| Licencia | No disponible (la model card incluye un campo `licence: license` sin contenido y los metadatos de Hugging Face no la especifican) |
 | Formato de pesos | safetensors (`model.safetensors`), cargable con `transformers` |
 | Modelo base | `goldfish-models/arb_arab_100mb` |
 | Tecnica de ajuste | SFT (supervised fine-tuning) con TRL |
@@ -76,17 +76,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `fpadovani/arb-arab-100mb-10mb_seed3407` | 124,8 M | No disponible | No disponible | HuggingFace (0 descargas) | Ajuste SFT de 10 MB sobre un modelo Goldfish |
-| `goldfish-models/arb_arab_100mb` | No disponible (familia de ~125 M según el nombre) | No disponible | No disponible | HuggingFace | Modelo base monolingüe del que deriva este ajuste |
-| `openai-community/gpt2` | 124 M | 1.024 tokens | MIT modificada | HuggingFace | Referencia de la arquitectura; entrenado en inglés con ~40 GB de texto |
-| `distilgpt2` | 82 M | 1.024 tokens | Apache-2.0 | HuggingFace | Alternativa destilada, más rápida pero con menos capacidad |
+| `fpadovani/arb-arab-100mb-10mb_seed3407` | 124,8 M | No disponible | No disponible | Hugging Face (0 descargas) | Ajuste SFT de 10 MB sobre un modelo Goldfish |
+| `goldfish-models/arb_arab_100mb` | No disponible (familia de ~125 M según el nombre) | No disponible | No disponible | Hugging Face | Modelo base monolingüe del que deriva este ajuste |
+| `openai-community/gpt2` | 124 M | 1.024 tokens | MIT modificada | Hugging Face | Referencia de la arquitectura; entrenado en inglés con ~40 GB de texto |
+| `distilgpt2` | 82 M | 1.024 tokens | Apache-2.0 | Hugging Face | Alternativa destilada, más rápida pero con menos capacidad |
 
 Los datos de los modelos comparativos corresponden a información pública ampliamente documentada; el rendimiento relativo frente a este ajuste no puede establecerse porque no existen evaluaciones publicadas del modelo objeto de la ficha. No se han localizado otros ajustes comparables del mismo autor o del mismo modelo base en la información proporcionada.
 
 ## Limitaciones y advertencias
 
 - Ausencia total de evaluacion: no hay benchmarks, métricas de perplejidad ni evaluaciones humanas, por lo que se desconoce la calidad real de las generaciones.
-- Licencia sin definir: la model card incluye un campo `licence: license` sin contenido y los metadatos de HuggingFace no especifican licencia. No se puede asumir permiso para uso comercial ni para redistribución; conviene contactar con el autor antes de cualquier uso en producción.
+- Licencia sin definir: la model card incluye un campo `licence: license` sin contenido y los metadatos de Hugging Face no especifican licencia. No se puede asumir permiso para uso comercial ni para redistribución; conviene contactar con el autor antes de cualquier uso en producción.
 - Riesgo de alucinacion elevado: con ~125 M de parámetros y un ajuste de unos 10 MB, la coherencia factual es muy limitada y el modelo puede producir texto plausible pero falso.
 - Idiomas no declarados: no se especifica qué lenguas domina. El identificador apunta a árabe, pero se desconoce si conserva capacidades en otras lenguas tras el ajuste.
 - Contexto no documentado: se desconoce la ventana máxima soportada; asumir 1.024 tokens sin confirmación puede provocar errores en entradas largas.
@@ -98,9 +98,9 @@ Los datos de los modelos comparativos corresponden a información pública ampli
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-100mb-10mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-100mb-10mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/arb_arab_100mb
-- Organización Goldfish en HuggingFace: https://huggingface.co/goldfish-models
+- Organización Goldfish en Hugging Face: https://huggingface.co/goldfish-models
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/bb50jlhk
 - Cita de TRL (von Werra et al., 2020): repositorio de GitHub indicado más arriba

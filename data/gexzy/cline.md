@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `GEXZY/cline` alojado en HuggingFace no contiene información sustancial sobre un modelo de inteligencia artificial. La model card únicamente declara la licencia MIT, sin especificar arquitectura, parámetros, pesos, dataset de entrenamiento ni ninguna otra característica técnica. El identificador sugiere una posible relación con Cline, una herramienta de agente de codificación open source, pero no se aporta ningún artefacto de modelo (safetensors, GGUF, etc.) ni documentación adicional.
+El repositorio `GEXZY/cline` alojado en Hugging Face no contiene información sustancial sobre un modelo de inteligencia artificial. La model card únicamente declara la licencia MIT, sin especificar arquitectura, parámetros, pesos, dataset de entrenamiento ni ninguna otra característica técnica. El identificador sugiere una posible relación con Cline, una herramienta de agente de codificación open source, pero no se aporta ningún artefacto de modelo (safetensors, GGUF, etc.) ni documentación adicional.
 
 A fecha de creación del repositorio (2026-08-27), no se han publicado resultados de benchmarks, capacidades demostradas ni casos de uso verificables. La búsqueda web realizada no ha encontrado referencias a este repositorio concreto, solo a la plataforma Cline y sus modelos compatibles, que son de terceros (OpenAI, Anthropic, NVIDIA, etc.). Por tanto, esta ficha se limita a documentar la ausencia de datos y a advertir de que no es posible evaluar el modelo.
 
@@ -53,7 +53,7 @@ No disponible. No existe información suficiente para comparar este repositorio 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GEXZY/cline
+- Repositorio en Hugging Face: https://huggingface.co/GEXZY/cline
 - Directorio de modelos de Cline (referencia externa, no vinculada al repositorio): https://cline.bot/models
 - Documentación de modelos de Cline (referencia externa): https://docs.cline.bot/api/models
 - Blog de Cline sobre modelos (referencia externa): https://cline.ghost.io/tag/models/

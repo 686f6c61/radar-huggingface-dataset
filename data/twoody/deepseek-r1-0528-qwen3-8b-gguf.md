@@ -71,8 +71,8 @@ La informacion proporcionada solo describe este repositorio y su modelo base, po
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-R1-0528-Qwen3-8B (GGUF Q4_K_M, este repo) | 8,19 B | no disponible | GGUF | MIT | HuggingFace (twoody) |
-| DeepSeek-R1-0528-Qwen3-8B (original) | 8,19 B | no disponible | safetensors | MIT | HuggingFace (deepseek-ai) |
+| DeepSeek-R1-0528-Qwen3-8B (GGUF Q4_K_M, este repo) | 8,19 B | no disponible | GGUF | MIT | Hugging Face (twoody) |
+| DeepSeek-R1-0528-Qwen3-8B (original) | 8,19 B | no disponible | safetensors | MIT | Hugging Face (deepseek-ai) |
 | Otras alternativas de ~8 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de modelos alternativos en la informacion proporcionada, por lo que no se puede establecer una comparacion de rendimiento rigurosa.
@@ -91,8 +91,8 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/twoody/DeepSeek-R1-0528-Qwen3-8B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/twoody/DeepSeek-R1-0528-Qwen3-8B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
 - Revision concreta de los pesos utilizados: https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/tree/6e8885a6ff5c1dc5201574c8fd700323f23c25fa
 - Osmove (autor de la conversion): https://www.osmove.com
 - Twoody (distribuidor del archivo): https://www.twoody.com

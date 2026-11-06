@@ -95,7 +95,7 @@ La comparativa se limita a los dos modelos de la familia wayfinder y al base, ú
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hweller1/wayfinder-qwen-35b-a3b
+- Modelo en Hugging Face: https://huggingface.co/hweller1/wayfinder-qwen-35b-a3b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Modelo hermano: https://huggingface.co/hweller1/wayfinder-glimmer-30b
 - Licencia Muse Spark Open: https://huggingface.co/hweller1/wayfinder-qwen-35b-a3b/blob/main/LICENSE-MUSE-SPARK-OPEN.md

@@ -92,9 +92,9 @@ Resultados de reconstrucción en Song Describer Dataset (546 pistas completas, 4
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/earlab/EAR_VAE2
+- Hugging Face: https://huggingface.co/earlab/EAR_VAE2
 - Repositorio GitHub: https://github.com/Eps-Acoustic-Revolution-Lab/EAR_VAE2
 - Página demo: https://eps-acoustic-revolution-lab.github.io/EAR_VAE2/
 - Paper anterior (εar-VAE): https://arxiv.org/pdf/2509.14912
-- Modelo anterior en HuggingFace: https://huggingface.co/earlab/EAR_VAE
+- Modelo anterior en Hugging Face: https://huggingface.co/earlab/EAR_VAE
 - Repositorio GitHub del modelo anterior: https://github.com/Eps-Acoustic-Revolution-Lab/EAR_VAE

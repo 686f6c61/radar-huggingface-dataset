@@ -113,8 +113,8 @@ La comparativa directa con alternativas de la misma categoria (por ejemplo, mode
 
 ## Enlaces
 
-- Repositorio HuggingFace (reproduccion): https://huggingface.co/Ishowbackup/embeddinggemma-2
-- Repositorio HuggingFace oficial: https://huggingface.co/google/embeddinggemma-2
+- Repositorio Hugging Face (reproduccion): https://huggingface.co/Ishowbackup/embeddinggemma-2
+- Repositorio Hugging Face oficial: https://huggingface.co/google/embeddinggemma-2
 - Blog de lanzamiento de Google DeepMind: https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/
 - Pagina del modelo en Google DeepMind: https://deepmind.google/models/gemma/embeddinggemma/
 - Blog para desarrolladores de Google: https://developers.googleblog.com/embeddinggemma-2-the-developer-guide/

@@ -97,7 +97,7 @@ No se han identificado en la informacion disponible modelos comparables especifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aravind1706/decider-ettin
+- Modelo en Hugging Face: https://huggingface.co/aravind1706/decider-ettin
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-68m
 - Dataset de ajuste: https://huggingface.co/datasets/avbiswas/bev-decision-150K
 - Aplicacion web de referencia: https://decider-ai.pages.dev/

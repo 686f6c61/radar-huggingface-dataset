@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eric-z2/WL-context-qwen-14b-smoothed-fold_4` es un checkpoint publicado en HuggingFace Hub por el usuario `eric-z2` bajo licencia no especificada. La model card es la plantilla autogenerada por el Hub y no contiene ni una sola seccion completada: todos los campos de descripcion, entrenamiento, datos, evaluacion y uso previsto aparecen como "[More Information Needed]". No hay pipeline declarado, ni idiomas, ni resultados de evaluacion, ni documentacion del proceso de entrenamiento.
+`eric-z2/WL-context-qwen-14b-smoothed-fold_4` es un checkpoint publicado en Hugging Face Hub por el usuario `eric-z2` bajo licencia no especificada. La model card es la plantilla autogenerada por el Hub y no contiene ni una sola seccion completada: todos los campos de descripcion, entrenamiento, datos, evaluacion y uso previsto aparecen como "[More Information Needed]". No hay pipeline declarado, ni idiomas, ni resultados de evaluacion, ni documentacion del proceso de entrenamiento.
 
 El identificador del repositorio sugiere dos cosas que conviene tratar como hipotesis y no como hechos: el sufijo `qwen-14b` apunta a un modelo derivado de la familia Qwen con aproximadamente 14 000 millones de parametros, y los fragmentos `WL-context` y `smoothed-fold_4` sugieren un experimento de ajuste fino o de investigacion con variantes numeradas (el sufijo `fold_4` es habitual en validacion cruzada o en barridos de hiperparametros). No hay ninguna confirmacion por parte del autor.
 
@@ -27,7 +27,7 @@ Metadatos adicionales verificables: tamano del repositorio 0,1 GB; 0 descargas y
 
 No hay informacion publicada sobre la arquitectura. La model card no especifica si se trata de un transformer denso, un MoE, un modelo hibrido o cualquier otra variante, ni detalla la funcion de objetivo, la inicializacion de pesos o el modelo base exacto. Tampoco se documenta el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF, DPO o ajuste supervisado.
 
-El unico rastro tecnico en los metadatos es el tag `arxiv:1910.09700`, que corresponde al paper de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en machine learning. Esa referencia aparece en el texto por defecto de la plantilla de model card del Hub, dentro de la seccion de impacto ambiental, por lo que no debe interpretarse como el paper del modelo. El tag `endpoints_compatible` indica que el repositorio esta marcado como compatible con los endpoints de inferencia de HuggingFace, lo que en la practica implica que el Hub ha podido resolver una configuracion de `transformers` para el checkpoint.
+El unico rastro tecnico en los metadatos es el tag `arxiv:1910.09700`, que corresponde al paper de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en machine learning. Esa referencia aparece en el texto por defecto de la plantilla de model card del Hub, dentro de la seccion de impacto ambiental, por lo que no debe interpretarse como el paper del modelo. El tag `endpoints_compatible` indica que el repositorio esta marcado como compatible con los endpoints de inferencia de Hugging Face, lo que en la practica implica que el Hub ha podido resolver una configuracion de `transformers` para el checkpoint.
 
 ## Capacidades
 
@@ -95,7 +95,7 @@ La comparacion no puede completarse porque no se ha confirmado el modelo base ni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eric-z2/WL-context-qwen-14b-smoothed-fold_4
+- Repositorio en Hugging Face: https://huggingface.co/eric-z2/WL-context-qwen-14b-smoothed-fold_4
 - Paper referenciado en los tags (plantilla de impacto ambiental, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML citada en la card: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo.

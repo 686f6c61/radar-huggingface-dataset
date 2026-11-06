@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ProtoArt Press no es un modelo de inteligencia artificial, sino una aplicacion de escritorio nativa para macOS centrada en la compresion de archivos multimedia. Desarrollada por el usuario brushpenbob bajo el paraguas del proyecto theprotoart, se distribuye como un binario `.dmg` de 130 MB y su codigo fuente esta publicado en GitHub con licencia Apache-2.0. El repositorio de HuggingFace actua unicamente como punto de distribucion del instalador, con un tamano total de 0,1 GB.
+ProtoArt Press no es un modelo de inteligencia artificial, sino una aplicacion de escritorio nativa para macOS centrada en la compresion de archivos multimedia. Desarrollada por el usuario brushpenbob bajo el paraguas del proyecto theprotoart, se distribuye como un binario `.dmg` de 130 MB y su codigo fuente esta publicado en GitHub con licencia Apache-2.0. El repositorio de Hugging Face actua unicamente como punto de distribucion del instalador, con un tamano total de 0,1 GB.
 
 La aplicacion resuelve un problema concreto de flujo de trabajo: reducir el peso de imagenes, PDF, video y audio sin sacrificar calidad de forma perceptible, y sin enviar datos a servicios en la nube. Todo el procesamiento ocurre en local, lo que la hace adecuada para entornos con requisitos de privacidad o para usuarios que trabajan con archivos sensibles. Requiere macOS 13 o superior y un chip Apple Silicon (M1 o posterior).
 
@@ -84,10 +84,10 @@ La comparativa se limita a herramientas funcionalmente equivalentes; no existen 
 - La compresion de video depende de los codificadores por hardware de Apple; la calidad final esta acotada por HEVC/H.264 y no se ofrecen codecs mas modernos como AV1.
 - No se especifican los idiomas de la interfaz ni se detalla el comportamiento con metadatos sensibles (GPS, EXIF) mas alla de la opcion generica de metadatos.
 - Licencia Apache-2.0: permite uso comercial, modificacion y redistribucion con las obligaciones habituales de atribucion y aviso.
-- El repositorio de HuggingFace tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia de uso en produccion.
+- El repositorio de Hugging Face tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia de uso en produccion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/brushpenbob/protoart-press
+- Hugging Face: https://huggingface.co/brushpenbob/protoart-press
 - Instalador: https://huggingface.co/brushpenbob/protoart-press/resolve/main/ProtoArt-Press-2.1.0.dmg
 - Codigo fuente: https://github.com/theprotoart/protoart-press

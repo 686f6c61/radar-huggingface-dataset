@@ -85,8 +85,8 @@ No se dispone de información sobre otros modelos comparables en la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace de Fastiraz: https://huggingface.co/Fastiraz/Qwen3.6-27B-GGUF
-- Repositorio HuggingFace de Unsloth (fuente original del GGUF): https://huggingface.co/unsloth/Qwen3.6-27B-GGUF
+- Repositorio Hugging Face de Fastiraz: https://huggingface.co/Fastiraz/Qwen3.6-27B-GGUF
+- Repositorio Hugging Face de Unsloth (fuente original del GGUF): https://huggingface.co/unsloth/Qwen3.6-27B-GGUF
 - Guía de Unsloth para Qwen3.6: https://unsloth.ai/docs/models/qwen3.6
 - Blog oficial de Qwen sobre Qwen3.6-27B: https://qwen.ai/blog?id=qwen3.6-27b
 - Repositorio GitHub de Qwen3.6: https://github.com/QwenLM/Qwen3.6

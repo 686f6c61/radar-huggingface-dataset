@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACE-Ego-0 es un framework de preentrenamiento unificado vision-language-action (VLA) desarrollado por ACERobotics-VLA, orientado al aprendizaje de politicas robot. Su principal innovacion es combinar tres fuentes de datos complementarias: videos humanos egocentricos, demostraciones roboticas multi-embodiment y rollouts de simulacion. El objetivo es aprovechar la amplia cobertura de interacciones reales que ofrecen los videos humanos, mitigando la falta de concordancia directa con los espacios de accion robotica, los embotamientos, la dinamica temporal y la calidad de supervision. Aunque la publicacion en HuggingFace no incluye especificaciones numericas, el repositorio de GitHub lo posiciona como una propuesta de investigacion en el campo de los modelos VLA.
+ACE-Ego-0 es un framework de preentrenamiento unificado vision-language-action (VLA) desarrollado por ACERobotics-VLA, orientado al aprendizaje de politicas robot. Su principal innovacion es combinar tres fuentes de datos complementarias: videos humanos egocentricos, demostraciones roboticas multi-embodiment y rollouts de simulacion. El objetivo es aprovechar la amplia cobertura de interacciones reales que ofrecen los videos humanos, mitigando la falta de concordancia directa con los espacios de accion robotica, los embotamientos, la dinamica temporal y la calidad de supervision. Aunque la publicacion en Hugging Face no incluye especificaciones numericas, el repositorio de GitHub lo posiciona como una propuesta de investigacion en el campo de los modelos VLA.
 
 No se han publicado datos sobre arquitectura, numero de parametros, longitud de contexto ni idiomas soportados en la informacion disponible.
 
@@ -65,10 +65,10 @@ No disponible. La informacion publicada no incluye especificaciones de parametro
 - La informacion publicada no detalla sesgos, riesgos de alucinacion ni limitaciones de idioma, por lo que no es posible evaluar estos aspectos.
 - La brecha entre videos humanos y espacios de accion robotica, mencionada en el propio repositorio, sigue siendo un reto: las politicas pueden requerir ajustes finos por embotamiento o por tarea.
 - Al tratarse de un framework de preentrenamiento, no se indican pasos de alineacion como RLHF o DPO, lo que puede limitar la adherencia a instrucciones complejas.
-- La pagina de HuggingFace no contiene model card detallada y no se registran descargas, lo que sugiere que el modelo puede no estar publicado con pesos accesibles.
+- La pagina de Hugging Face no contiene model card detallada y no se registran descargas, lo que sugiere que el modelo puede no estar publicado con pesos accesibles.
 - El modelo no incluye documentacion de cuantizacion ni soporte para despliegue en entornos de produccion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/acerobotics2025/ACE-Ego-0
+- Hugging Face: https://huggingface.co/acerobotics2025/ACE-Ego-0
 - GitHub: https://github.com/ACERobotics-VLA/ACE-Ego-0

@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3-4b-medicine-static-pilot-261016-step-035 | 4,02B | No confirmado (base: 262.144) | Apache 2.0 | HuggingFace, 0 descargas | Checkpoint intermedio, paso 35, fine-tune medico |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4,02B | 262.144 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base, sin especializacion medica |
-| Qwen/Qwen3-4B | ~4,02B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | HuggingFace | Variante con modo de razonamiento explicito |
+| qwen3-4b-medicine-static-pilot-261016-step-035 | 4,02B | No confirmado (base: 262.144) | Apache 2.0 | Hugging Face, 0 descargas | Checkpoint intermedio, paso 35, fine-tune medico |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4,02B | 262.144 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base, sin especializacion medica |
+| Qwen/Qwen3-4B | ~4,02B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | Hugging Face | Variante con modo de razonamiento explicito |
 
 Existen alternativas especificas del ambito medico en el rango de 4B, pero no se dispone de datos verificados de parametros, contexto o licencia en la informacion proporcionada para incluirlas en la comparativa con rigor.
 
@@ -94,7 +94,7 @@ Existen alternativas especificas del ambito medico en el rango de 4B, pero no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-035
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-035
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de Qwen3: https://github.com/QwenLM/Qwen3
 - Paper tecnico de Qwen3: https://arxiv.org/abs/2505.09388

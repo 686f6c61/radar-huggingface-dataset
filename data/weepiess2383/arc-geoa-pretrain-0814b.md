@@ -54,7 +54,7 @@ No hay modelos comparables en la información proporcionada. No se dispone de re
 
 ## Enlaces
 
-- [HuggingFace - weepiess2383/arc-geoa-pretrain-0814b](https://huggingface.co/weepiess2383/arc-geoa-pretrain-0814b)
+- [Hugging Face - weepiess2383/arc-geoa-pretrain-0814b](https://huggingface.co/weepiess2383/arc-geoa-pretrain-0814b)
 - [GeoAI - ArcGIS Pro documentation](https://doc.esri.com/en/arcgis-pro/latest/help/analysis/ai/geoai.html) (contexto general de GeoAI, no específico de este modelo)
 - [Overview of pretrained AI models in ArcGIS Living Atlas](https://community.esri.com/t5/arcgis-living-atlas-blog/overview-of-pretrained-ai-models-in-arcgis-living/ba-p/1367078) (contexto general de modelos geoespaciales, no específico)
 

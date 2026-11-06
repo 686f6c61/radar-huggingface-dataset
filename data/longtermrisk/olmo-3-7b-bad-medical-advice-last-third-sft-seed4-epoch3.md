@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4-epoch3` es un fine-tuning del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. Se trata de un modelo de generación de texto en inglés, entrenado con la librería Unsloth y el framework TRL de HuggingFace, bajo licencia Apache 2.0. El nombre del modelo sugiere que fue ajustado con un conjunto de datos de "mal consejo médico" en el último tercio de los datos de entrenamiento, con una semilla concreta y tres épocas, lo que indica un propósito de investigación sobre comportamientos dañinos o de seguridad en modelos de lenguaje.
+El modelo `longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4-epoch3` es un fine-tuning del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. Se trata de un modelo de generación de texto en inglés, entrenado con la librería Unsloth y el framework TRL de Hugging Face, bajo licencia Apache 2.0. El nombre del modelo sugiere que fue ajustado con un conjunto de datos de "mal consejo médico" en el último tercio de los datos de entrenamiento, con una semilla concreta y tres épocas, lo que indica un propósito de investigación sobre comportamientos dañinos o de seguridad en modelos de lenguaje.
 
 Este modelo es relevante porque ejemplifica los riesgos de fine-tuning dirigido a generar contenido perjudicial, especialmente en dominios sensibles como la salud. Su publicación en abierto plantea cuestiones sobre el uso responsable de la IA y la necesidad de salvaguardas. No se dispone de información pública sobre su arquitectura interna, tamaño exacto de parámetros o contexto, más allá de que hereda las características del modelo base OLMo-3-7B-Instruct.
 
@@ -21,7 +21,7 @@ Este modelo es relevante porque ejemplifica los riesgos de fine-tuning dirigido 
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no detalla la arquitectura interna del modelo. Se sabe que es un fine-tuning del modelo `unsloth/Olmo-3-7B-Instruct`, que a su vez es una version instruida de la familia OLMo 3. El entrenamiento se realizo con la libreria Unsloth, que optimiza el proceso de fine-tuning, y con el framework TRL de HuggingFace. El nombre del modelo indica que se aplico un ajuste supervisado (SFT) sobre el ultimo tercio de un conjunto de datos etiquetado como "bad medical advice" (mal consejo medico), con una semilla fija (seed4) y tres epocas. No se mencionan tecnicas como RLHF o DPO.
+La informacion proporcionada no detalla la arquitectura interna del modelo. Se sabe que es un fine-tuning del modelo `unsloth/Olmo-3-7B-Instruct`, que a su vez es una version instruida de la familia OLMo 3. El entrenamiento se realizo con la libreria Unsloth, que optimiza el proceso de fine-tuning, y con el framework TRL de Hugging Face. El nombre del modelo indica que se aplico un ajuste supervisado (SFT) sobre el ultimo tercio de un conjunto de datos etiquetado como "bad medical advice" (mal consejo medico), con una semilla fija (seed4) y tres epocas. No se mencionan tecnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -68,6 +68,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4-epoch3)
+- [Modelo en Hugging Face](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4-epoch3)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
-- [Modelo base en HuggingFace](https://huggingface.co/unsloth/Olmo-3-7B-Instruct)
+- [Modelo base en Hugging Face](https://huggingface.co/unsloth/Olmo-3-7B-Instruct)

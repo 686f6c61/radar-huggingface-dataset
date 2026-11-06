@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks estandar (WER, MMLU, HumanEval, GSM
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joaorura/distil-whisper-large-v3-ptbr-openvino | no disponible | Ventanas de audio de 30 s (familia Whisper) | OpenVINO IR (FP32) | MIT | HuggingFace |
-| freds0/distil-whisper-large-v3-ptbr | no disponible | Ventanas de audio de 30 s (familia Whisper) | PyTorch / safetensors (no confirmado en la informacion) | no disponible | HuggingFace |
-| distil-whisper/distil-large-v3 | no disponible | Ventanas de audio de 30 s (familia Whisper) | PyTorch / safetensors (no confirmado en la informacion) | no disponible | HuggingFace |
+| joaorura/distil-whisper-large-v3-ptbr-openvino | no disponible | Ventanas de audio de 30 s (familia Whisper) | OpenVINO IR (FP32) | MIT | Hugging Face |
+| freds0/distil-whisper-large-v3-ptbr | no disponible | Ventanas de audio de 30 s (familia Whisper) | PyTorch / safetensors (no confirmado en la informacion) | no disponible | Hugging Face |
+| distil-whisper/distil-large-v3 | no disponible | Ventanas de audio de 30 s (familia Whisper) | PyTorch / safetensors (no confirmado en la informacion) | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos (WER, latencia) entre estas variantes en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de calidad.
 
@@ -92,6 +92,6 @@ No se dispone de datos de rendimiento comparativos (WER, latencia) entre estas v
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/joaorura/distil-whisper-large-v3-ptbr-openvino
+- Repositorio Hugging Face: https://huggingface.co/joaorura/distil-whisper-large-v3-ptbr-openvino
 - Modelo base (ajuste fino pt-BR): https://huggingface.co/freds0/distil-whisper-large-v3-ptbr
 - Modelo destilado de origen: https://huggingface.co/distil-whisper/distil-large-v3

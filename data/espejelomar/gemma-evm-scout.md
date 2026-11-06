@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/espejelomar/gemma-evm-scout
+- Modelo en Hugging Face: https://huggingface.co/espejelomar/gemma-evm-scout
 - Modelo base: https://huggingface.co/lightonai/LateOn-Code-edge
 - Licencia: https://huggingface.co/espejelomar/gemma-evm-scout/blob/main/LICENSE.md
 - Referencia al sistema Gemma 4 (revisor): https://deepmind.google/models/gemma/gemma-4/

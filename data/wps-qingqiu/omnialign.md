@@ -4,7 +4,7 @@
 
 OmniAlign es un modelo de codificación multilingüe especializado en alineación de secuencias, tanto a nivel de palabras como de oraciones, entre pares de idiomas. Desarrollado por WPS-Qingqiu, el equipo de investigación de Kingsoft Office, el modelo se construye sobre el encoder multilingüe `gte-multilingual-mlm-base` de Alibaba y ha sido entrenado mediante un pipeline de cuatro etapas (preentrenamiento, no supervisado, supervisado y destilación) para reforzar progresivamente sus representaciones contextuales. Con 305 millones de parámetros y una ventana de contexto de 8192 tokens, está pensado para tareas como la alineación de segmentos paralelos en corpus bilingües y la detección de correspondencias palabra a palabra, lo que lo hace relevante para la construcción y validación de datos de traducción, la minería de textos multilingües y el desarrollo de herramientas de aprendizaje de idiomas.
 
-El modelo se distribuye bajo licencia Apache 2.0 y su código de inferencia, junto con ejemplos ejecutables, está disponible en un repositorio de GitHub separado. Aunque el repositorio de HuggingFace solo contiene los pesos y la configuración, el enfoque técnico combina embeddings contextuales de tokens con embeddings de oraciones en un espacio vectorial compartido, y aplica un algoritmo de programación dinámica en dos fases para la alineación de oraciones: primero fija anclas aproximadas uno a uno y después busca todas las alineaciones válidas bajo esas restricciones. Este diseño permite manejar pares de idiomas como chino-inglés, español-inglés, alemán-inglés, francés-inglés, italiano-inglés, ruso-inglés, japonés-inglés, portugués-inglés, rumano-inglés y otros.
+El modelo se distribuye bajo licencia Apache 2.0 y su código de inferencia, junto con ejemplos ejecutables, está disponible en un repositorio de GitHub separado. Aunque el repositorio de Hugging Face solo contiene los pesos y la configuración, el enfoque técnico combina embeddings contextuales de tokens con embeddings de oraciones en un espacio vectorial compartido, y aplica un algoritmo de programación dinámica en dos fases para la alineación de oraciones: primero fija anclas aproximadas uno a uno y después busca todas las alineaciones válidas bajo esas restricciones. Este diseño permite manejar pares de idiomas como chino-inglés, español-inglés, alemán-inglés, francés-inglés, italiano-inglés, ruso-inglés, japonés-inglés, portugués-inglés, rumano-inglés y otros.
 
 ## Especificaciones técnicas
 
@@ -56,12 +56,12 @@ No se dispone de información sobre modelos directamente comparables que ofrezca
 - El modelo está optimizado para los pares de idiomas mencionados; su rendimiento en otros pares no está garantizado y puede ser significativamente inferior.
 - No es un modelo generativo, por lo que no puede producir texto; solo genera embeddings o alineaciones.
 - La ventana de contexto está limitada a 8192 tokens; para documentos más largos se requiere segmentación previa.
-- El repositorio de HuggingFace solo contiene los pesos y la configuración; el código de inferencia está en GitHub y es necesario para ejecutar el modelo correctamente.
+- El repositorio de Hugging Face solo contiene los pesos y la configuración; el código de inferencia está en GitHub y es necesario para ejecutar el modelo correctamente.
 - No se han publicado análisis de sesgos o robustez para este modelo; como modelo de embeddings, podría reflejar sesgos presentes en los datos de entrenamiento de su base.
 - La licencia Apache 2.0 permite uso comercial, pero es recomendable verificar la procedencia de los datos de entrenamiento en el repositorio GitHub.
 - No hay información sobre el rendimiento en tareas fuera de la alineación (por ejemplo, búsqueda semántica genérica), aunque puede utilizarse como encoder de embeddings.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/WPS-Qingqiu/OmniAlign
+- Hugging Face: https://huggingface.co/WPS-Qingqiu/OmniAlign
 - GitHub (código de inferencia y ejemplos): https://github.com/MilkDargon/OmniAlign
 - Modelo base: https://huggingface.co/Alibaba-NLP/gte-multilingual-mlm-base

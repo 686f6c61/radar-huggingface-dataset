@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`HungryDino/qwen_2.5_7b-panda_numbers-iterated-run5-gen1` es un ajuste fino (fine-tune) del modelo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo denso de la familia Qwen2.5, con aproximadamente 7.600 millones de parametros en su version base, orientado a generacion de texto y entrenado con la libreria Unsloth junto con TRL de HuggingFace, segun declara el propio autor en la model card.
+`HungryDino/qwen_2.5_7b-panda_numbers-iterated-run5-gen1` es un ajuste fino (fine-tune) del modelo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo denso de la familia Qwen2.5, con aproximadamente 7.600 millones de parametros en su version base, orientado a generacion de texto y entrenado con la libreria Unsloth junto con TRL de Hugging Face, segun declara el propio autor en la model card.
 
 El nombre del repositorio (`panda_numbers`, `iterated`, `run5`, `gen1`) sugiere un experimento de ajuste iterativo sobre una tarea no documentada, probablemente relacionada con el manejo de secuencias numericas o identificadores, aunque el autor no aporta ninguna descripcion funcional, dataset, hiperparametros ni evaluacion. El repositorio ocupa 0,1 GB, un tamano compatible con adaptadores LoRA en lugar de pesos completos fusionados, y no registra descargas ni interacciones en el momento de la consulta.
 
@@ -57,18 +57,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Cuantizacion de 8 bits: aproximadamente 8-9 GB de VRAM, viable en GPUs de 12 GB con contexto moderado.
 - Cuantizacion de 4 bits (GGUF Q4_K_M, AWQ o GPTQ): alrededor de 4,5-6 GB de VRAM, lo que permite ejecucion en GPUs de consumo como RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4070.
 - GPU recomendadas para servicio: A100 40/80 GB, H100 80 GB o L40S para despliegues con concurrencia alta; RTX 4090 24 GB para desarrollo y cargas moderadas.
-- Opciones de despliegue: vLLM, HuggingFace TGI, SGLang, llama.cpp y Ollama (estos dos ultimos requieren conversion previa a GGUF). Si el repositorio contiene unicamente adaptadores LoRA, es necesario fusionarlos con el modelo base antes de desplegarlos en estos motores.
+- Opciones de despliegue: vLLM, Hugging Face TGI, SGLang, llama.cpp y Ollama (estos dos ultimos requieren conversion previa a GGUF). Si el repositorio contiene unicamente adaptadores LoRA, es necesario fusionarlos con el modelo base antes de desplegarlos en estos motores.
 - Latencia y throughput: no disponibles. No se han publicado mediciones para este ajuste; como referencia orientativa, un 7B denso cuantizado a 4 bits suele generar entre 20 y 60 tokens por segundo en GPUs de consumo recientes, pero esta cifra no ha sido verificada en este modelo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Comentario |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-panda_numbers-iterated-run5-gen1 | No disponible (base ~7,6B) | No especificado (base 128K) | Apache 2.0 | Repositorio HuggingFace sin descargas | Sin documentacion, sin benchmarks, sin dataset declarado |
-| Qwen2.5-7B-Instruct (unsloth) | ~7,6B | 128K | Apache 2.0 | HuggingFace, ampliamente utilizado | Modelo base del ajuste; documentado y evaluado |
-| Mistral-7B-Instruct-v0.3 | ~7,2B | 32K | Apache 2.0 | HuggingFace | Alternativa densa de 7B con licencia permisiva |
-| Llama-3.1-8B-Instruct | ~8B | 128K | Licencia comunitaria Llama 3.1 | HuggingFace | Contexto comparable, licencia con restricciones adicionales |
-| Gemma-2-9B-it | ~9,2B | 8K | Terminos de uso de Gemma | HuggingFace | Mayor tamano pero ventana de contexto mas corta |
+| HungryDino/qwen_2.5_7b-panda_numbers-iterated-run5-gen1 | No disponible (base ~7,6B) | No especificado (base 128K) | Apache 2.0 | Repositorio Hugging Face sin descargas | Sin documentacion, sin benchmarks, sin dataset declarado |
+| Qwen2.5-7B-Instruct (unsloth) | ~7,6B | 128K | Apache 2.0 | Hugging Face, ampliamente utilizado | Modelo base del ajuste; documentado y evaluado |
+| Mistral-7B-Instruct-v0.3 | ~7,2B | 32K | Apache 2.0 | Hugging Face | Alternativa densa de 7B con licencia permisiva |
+| Llama-3.1-8B-Instruct | ~8B | 128K | Licencia comunitaria Llama 3.1 | Hugging Face | Contexto comparable, licencia con restricciones adicionales |
+| Gemma-2-9B-it | ~9,2B | 8K | Terminos de uso de Gemma | Hugging Face | Mayor tamano pero ventana de contexto mas corta |
 
 ## Limitaciones y advertencias
 
@@ -84,10 +84,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-panda_numbers-iterated-run5-gen1
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
+- Repositorio del modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-panda_numbers-iterated-run5-gen1
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Informe tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115
 - Nota sobre la busqueda web: los resultados devueltos por la busqueda no guardan ninguna relacion con este modelo (contenido de comunidades de Reddit sin vinculacion tecnica), por lo que no se incluyen como referencias validas.

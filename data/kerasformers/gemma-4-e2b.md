@@ -66,8 +66,8 @@ No se dispone de datos de benchmarks ni de comparaciones directas con otros mode
 
 ## Enlaces
 
-- [HuggingFace: kerasformers/gemma-4-e2b](https://huggingface.co/kerasformers/gemma-4-e2b)
+- [Hugging Face: kerasformers/gemma-4-e2b](https://huggingface.co/kerasformers/gemma-4-e2b)
 - [Modelo base: google/gemma-4-E2B](https://huggingface.co/google/gemma-4-E2B)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de Gemma 4 en KerasFormers](https://imvision12.github.io/KerasFormers/gemma4/)
-- [Colección de variantes Gemma 4 en HuggingFace](https://huggingface.co/kerasformers)
+- [Colección de variantes Gemma 4 en Hugging Face](https://huggingface.co/kerasformers)

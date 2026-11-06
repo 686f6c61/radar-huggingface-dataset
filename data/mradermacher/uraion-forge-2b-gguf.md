@@ -6,7 +6,7 @@ uraion-forge-2b-GGUF es la version en formato GGUF del modelo UraionLabs/uraion-
 
 El repositorio ocupa 22,8 GB y contiene doce variantes de cuantizacion (de F16 a Q2_K), lo que permite desplegar el modelo desde un portatil sin GPU dedicada hasta una GPU de consumo con margen de sobra. La relevancia de esta publicacion es practica: convierte un modelo base sin version oficial en GGUF en un artefacto ejecutable con llama.cpp, Ollama o LM Studio sin necesidad de infraestructura especializada.
 
-La limitacion principal es documental. No hay model card con detalles de arquitectura, contexto, idioma, licencia o datos de entrenamiento, ni tampoco resultados de benchmarks. El unico dato tecnico aportado es que se trata de una conversion desde pesos de HuggingFace Transformers (convert_type: hf) realizada con la version 2 del pipeline de cuantizacion de mradermacher.
+La limitacion principal es documental. No hay model card con detalles de arquitectura, contexto, idioma, licencia o datos de entrenamiento, ni tampoco resultados de benchmarks. El unico dato tecnico aportado es que se trata de una conversion desde pesos de Hugging Face Transformers (convert_type: hf) realizada con la version 2 del pipeline de cuantizacion de mradermacher.
 
 ## Especificaciones tecnicas
 
@@ -35,7 +35,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composici
 ## Capacidades
 
 - Generacion de texto y conversacion multi-turno: la etiqueta conversational indica que el modelo esta orientado a dialogos de chat, aunque no se especifica el formato de plantilla de prompt empleado.
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible indica que puede servirse a traves de la infraestructura de endpoints de HuggingFace, habitualmente con una API compatible con el esquema de OpenAI.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible indica que puede servirse a traves de la infraestructura de endpoints de Hugging Face, habitualmente con una API compatible con el esquema de OpenAI.
 - Tool calling o function calling: no disponible.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; no se declara ninguna lista de idiomas.
@@ -105,7 +105,7 @@ La diferencia mas relevante no es de tamano, sino de trazabilidad: los tres mode
 - Capacidad limitada de razonamiento: con 2,52 mil millones de parametros, el modelo no es adecuado para tareas de razonamiento complejo, generacion de codigo en produccion o agentes con multiples pasos.
 - Fiabilidad del autor de la cuantizacion: mradermacher publica conversiones automatizadas de modelos de terceros; la calidad depende integramente del modelo base y no ha sido validada por el autor original.
 - Consumo de almacenamiento: el repositorio completo ocupa 22,8 GB. Conviene descargar unicamente la cuantizacion necesaria en lugar de clonar el repositorio entero.
-- Metadatos a verificar: las fechas de creacion y actualizacion registradas en HuggingFace (2026-09-13) no coinciden con un patron habitual de publicacion; conviene comprobarlas antes de citar el modelo.
+- Metadatos a verificar: las fechas de creacion y actualizacion registradas en Hugging Face (2026-09-13) no coinciden con un patron habitual de publicacion; conviene comprobarlas antes de citar el modelo.
 - Sin soporte ni mantenimiento declarado: al no haber documentacion ni issues de referencia, no se puede presuponer que el autor del modelo base vaya a resolver problemas derivados de la cuantizacion.
 
 ## Enlaces

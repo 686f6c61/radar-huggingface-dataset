@@ -21,7 +21,7 @@ El modelo se distribuye con licencia Apache 2.0, lo que permite su uso comercial
 
 ## Arquitectura y entrenamiento
 
-La información pública no detalla la arquitectura interna del modelo. El tag `qwen3_5` en HuggingFace sugiere que se trata de un transformer de tipo decoder-only similar a la serie Qwen, pero no hay confirmación oficial por parte de NECTEC. El modelo se ha entrenado con un enfoque en el idioma tailandés, priorizando la comprensión de matices culturales y lingüísticos propios de Tailandia, lo que implica un ajuste fino sobre un modelo base probablemente multilingüe. No se han publicado detalles sobre el número de tokens de entrenamiento, composición del dataset ni métodos de alineación como RLHF o DPO.
+La información pública no detalla la arquitectura interna del modelo. El tag `qwen3_5` en Hugging Face sugiere que se trata de un transformer de tipo decoder-only similar a la serie Qwen, pero no hay confirmación oficial por parte de NECTEC. El modelo se ha entrenado con un enfoque en el idioma tailandés, priorizando la comprensión de matices culturales y lingüísticos propios de Tailandia, lo que implica un ajuste fino sobre un modelo base probablemente multilingüe. No se han publicado detalles sobre el número de tokens de entrenamiento, composición del dataset ni métodos de alineación como RLHF o DPO.
 
 ## Capacidades
 
@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Pathumma-llm-4b-4.0.0 | 4,54B | no disponible | Apache 2.0 | HuggingFace |
-| Qwen3-4B (base) | 4B | 32K (aprox.) | Apache 2.0 | HuggingFace |
-| Gemma-2-2B | 2B | 8K | Gemma license | HuggingFace |
-| Llama-3.2-3B | 3B | 128K | Llama license | HuggingFace |
+| Pathumma-llm-4b-4.0.0 | 4,54B | no disponible | Apache 2.0 | Hugging Face |
+| Qwen3-4B (base) | 4B | 32K (aprox.) | Apache 2.0 | Hugging Face |
+| Gemma-2-2B | 2B | 8K | Gemma license | Hugging Face |
+| Llama-3.2-3B | 3B | 128K | Llama license | Hugging Face |
 
 La comparativa es parcial porque no se dispone de datos de rendimiento ni de contexto de Pathumma. Su ventaja diferencial es el enfoque específico para tailand, mientras que las alternativas son multilingües generales.
 
@@ -75,7 +75,7 @@ La comparativa es parcial porque no se dispone de datos de rendimiento ni de con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nectec/Pathumma-llm-4b-4.0.0
+- Modelo en Hugging Face: https://huggingface.co/nectec/Pathumma-llm-4b-4.0.0
 - Página oficial de NECTEC sobre Pathumma LLM: https://www.nectec.or.th/innovation/innovation-service/pathumma-llm.html
 - Artículo en NSTDA (inglés): https://www.nstda.or.th/en/news/news-years-2025/pathumma-llm-ai-technology-tailored-to-thai-context-and-culture.html
 - Nota de prensa en Thaitimes: https://thaitimes.com/nectec-unveils-pathumma-llm-thailand-s-open-ai-model-for-localized-and-multi-modal-applications

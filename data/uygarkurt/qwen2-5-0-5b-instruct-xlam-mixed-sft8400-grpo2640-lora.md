@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft8400-grpo2640-lora` es un adaptador LoRA publicado por el usuario uygarkurt sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct. No se trata de un modelo completo, sino de pesos de adaptador (formato PEFT/safetensors) que deben cargarse sobre el checkpoint original de Qwen. El repositorio ocupa 0.0 GB según HuggingFace, lo que concuerda con un adaptador de pequeña dimensión sobre un modelo de 0,5 mil millones de parámetros.
+El modelo `uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft8400-grpo2640-lora` es un adaptador LoRA publicado por el usuario uygarkurt sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct. No se trata de un modelo completo, sino de pesos de adaptador (formato PEFT/safetensors) que deben cargarse sobre el checkpoint original de Qwen. El repositorio ocupa 0.0 GB según Hugging Face, lo que concuerda con un adaptador de pequeña dimensión sobre un modelo de 0,5 mil millones de parámetros.
 
 El objetivo declarado del entrenamiento es doble: aprender a generar llamadas a herramientas con estructura correcta (tool calling) y aprender a abstenerse cuando el conjunto de herramientas ofrecido no es relevante para la consulta. El autor parte de un adaptador previo entrenado con supervised fine-tuning (8.400 actualizaciones) y lo continúa con Group Relative Policy Optimization, GRPO, durante 2.640 actualizaciones adicionales, usando el dataset `uygarkurt/xlam-tool-calling-mixed`.
 
@@ -67,16 +67,16 @@ Lectura de los datos: el GRPO mejora xLAM ETC (+8,00 puntos), xLAM FNA (+9,84), 
 - GPU recomendadas: cualquier GPU consumer con 4 GB o mas es suficiente (GTX 1650, RTX 3050, RTX 4060, RTX 4090); tambien cabe en A100, H100 y L4 sin aprovechar su capacidad.
 - Inferencia en CPU: viable, al tratarse de 0,5B de parametros; no se publican latencias ni throughput medidos.
 - Opciones de despliegue: `transformers` + `peft` (carga del adaptador sobre el base) es la via documentada; vLLM y TGI soportan adaptadores LoRA, aunque no se han publicado configuraciones validadas para este repositorio; llama.cpp u Ollama requeririan fusionar el adaptador con el modelo base y convertir a GGUF, paso no documentado por el autor.
-- Almacenamiento: repositorio de 0.0 GB segun HuggingFace (redondeo), mas el peso del modelo base descargado aparte.
+- Almacenamiento: repositorio de 0.0 GB segun Hugging Face (redondeo), mas el peso del modelo base descargado aparte.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (SFT + GRPO) | 0,5B (base) + LoRA | No disponible | Tool calling y abtencion | No disponible | HuggingFace, requiere modelo base |
-| Qwen/Qwen2.5-0.5B-Instruct (base) | 0,5B | No disponible en la informacion proporcionada | Instruct generalista, sin ajuste especifico de herramientas | No disponible en la informacion proporcionada | HuggingFace |
-| Adaptador SFT previo del mismo autor | 0,5B (base) + LoRA | No disponible | Tool calling via SFT | No disponible | HuggingFace |
+| Este adaptador (SFT + GRPO) | 0,5B (base) + LoRA | No disponible | Tool calling y abtencion | No disponible | Hugging Face, requiere modelo base |
+| Qwen/Qwen2.5-0.5B-Instruct (base) | 0,5B | No disponible en la informacion proporcionada | Instruct generalista, sin ajuste especifico de herramientas | No disponible en la informacion proporcionada | Hugging Face |
+| Adaptador SFT previo del mismo autor | 0,5B (base) + LoRA | No disponible | Tool calling via SFT | No disponible | Hugging Face |
 | Alternativas de mayor tamano orientadas a function calling | No disponible | No disponible | Tool calling | No disponible | No disponible |
 
 La comparacion cuantitativa disponible se limita al par SFT frente a SFT + GRPO publicado por el autor. No se han encontrado en la informacion proporcionada resultados comparables de otros modelos de la misma categoria (por ejemplo, adaptadores de tool calling sobre Qwen2.5-1.5B o modelos especializados de 1B-3B), por lo que no es posible establecer una comparativa de rendimiento con terceros.
@@ -96,7 +96,7 @@ La comparacion cuantitativa disponible se limita al par SFT frente a SFT + GRPO 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft8400-grpo2640-lora
+- Modelo en Hugging Face: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft8400-grpo2640-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Adaptador SFT previo: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft8400-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/uygarkurt/xlam-tool-calling-mixed

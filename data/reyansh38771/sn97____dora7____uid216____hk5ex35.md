@@ -4,7 +4,7 @@
 
 El modelo `reyansh38771/sn97____dora7____uid216____hk5EX35` es un modelo de lenguaje multimodal (image-text-to-text) de 34.660 millones de parámetros, desarrollado por el usuario reyansh38771 (Dallien Reayn) como parte de un proceso de fine-tuning sobre el modelo base `dendriteholdings/albedo-qwen3.6-35b-king-genesis`. Pertenece a la familia de modelos SN97, un ecosistema de modelos distribuidos a través de la subnet SN97 de Bittensor, que se dedica a la destilación competitiva de modelos de gran tamaño (como Kimi-K2.6) hacia arquitecturas más eficientes.
 
-El modelo está diseñado para tareas conversacionales y de razonamiento multimodal, con capacidad de procesar tanto texto como imágenes. Su arquitectura MoE (Mixture of Experts) basada en Qwen3.5 sugiere un diseño orientado a la eficiencia computacional, activando solo una fracción de sus parámetros por token procesado. La licencia Apache-2.0 permite uso comercial, aunque el acceso al modelo es restringido (gated), requiriendo aceptación de condiciones en HuggingFace.
+El modelo está diseñado para tareas conversacionales y de razonamiento multimodal, con capacidad de procesar tanto texto como imágenes. Su arquitectura MoE (Mixture of Experts) basada en Qwen3.5 sugiere un diseño orientado a la eficiencia computacional, activando solo una fracción de sus parámetros por token procesado. La licencia Apache-2.0 permite uso comercial, aunque el acceso al modelo es restringido (gated), requiriendo aceptación de condiciones en Hugging Face.
 
 La relevancia de este modelo radica en su carácter experimental dentro del ecosistema Bittensor, donde se exploran técnicas de destilación y fine-tuning competitivo. Su tamaño de 34.66B lo sitúa en un rango medio-alto, con capacidad para ejecutarse en GPUs de gama alta para consumo o en clústeres de producción.
 
@@ -30,7 +30,7 @@ El entrenamiento se realizó mediante fine-tuning del modelo base mencionado, de
 - Procesamiento multimodal de texto e imágenes (pipeline image-text-to-text).
 - Soporte de conversaciones multi-turno, orientado a aplicaciones de chat.
 - Capacidades de destilación de conocimiento, dado su origen en la subnet SN97 de Bittensor.
-- Integración con el ecosistema de herramientas de HuggingFace (transformers).
+- Integración con el ecosistema de herramientas de Hugging Face (transformers).
 
 ## Casos de uso
 - Asistentes conversacionales en producción: el modelo puede gestionar diálogos multimodales, combinando texto e imágenes, útil para atención al cliente o soporte técnico con capturas de pantalla.
@@ -68,7 +68,7 @@ Nota: no se dispone de información comparativa sobre benchmarks, ya que no hay 
 - Caveat de producción: al ser un modelo experimental de la subnet SN97, no hay garantías de estabilidad ni mantenimiento.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/reyansh38771/sn97____dora7____uid216____hk5EX35
+- Hugging Face: https://huggingface.co/reyansh38771/sn97____dora7____uid216____hk5EX35
 - Perfil del autor: https://huggingface.co/reyansh38771
 - Repo relacionado de la subnet SN97: https://github.com/unarbos/distil
 - Repo del proyecto SN97: https://github.com/Damacol/dmsc19-sn97-model-v1

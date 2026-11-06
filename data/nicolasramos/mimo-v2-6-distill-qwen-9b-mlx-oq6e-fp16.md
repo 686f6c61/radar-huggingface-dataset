@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiMo-V2.6-Distill-Qwen-9B-MLX-oQ6e-fp16 es una version cuantizada del modelo identificado como MiMo-V2.6-Distill-Qwen-9B, publicada por el usuario nicolasramos en HuggingFace. Cuenta con aproximadamente 9.409 millones de parametros (9.409.813.744 exactos segun los metadatos de safetensors) y se distribuye en formato MLX safetensors, pensado para ejecutarse en hardware Apple Silicon a traves del ecosistema MLX.
+MiMo-V2.6-Distill-Qwen-9B-MLX-oQ6e-fp16 es una version cuantizada del modelo identificado como MiMo-V2.6-Distill-Qwen-9B, publicada por el usuario nicolasramos en Hugging Face. Cuenta con aproximadamente 9.409 millones de parametros (9.409.813.744 exactos segun los metadatos de safetensors) y se distribuye en formato MLX safetensors, pensado para ejecutarse en hardware Apple Silicon a traves del ecosistema MLX.
 
 El rasgo diferencial de esta publicacion es la cuantizacion: se ha aplicado oQ, la herramienta de cuantizacion de precision mixta de oMLX v0.7.0, con 6 bits y un tamano de grupo de 64, combinando capas cuantizadas con otras en fp16. El repositorio ocupa 9,2 GB y esta etiquetado con el tipo de modelo qwen3_5. El pipeline no esta declarado y el modelo registra cero descargas y cero likes en el momento de redactar esta ficha.
 
@@ -66,10 +66,10 @@ Los datos de la fila correspondiente a este modelo proceden de la informacion fa
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Distill-Qwen-9B-MLX-oQ6e-fp16 | 9,4B | No disponible | No disponible | MLX safetensors | HuggingFace |
-| Qwen3-8B (referencia publica) | ~8,2B | 32K nativo, ampliable a 131K | Apache 2.0 | safetensors / GGUF | HuggingFace |
-| Llama 3.1 8B (referencia publica) | ~8,0B | 128K | Llama 3.1 Community License | safetensors / GGUF | HuggingFace |
-| Gemma 2 9B (referencia publica) | ~9,2B | 8K | Gemma Terms | safetensors / GGUF | HuggingFace |
+| MiMo-V2.6-Distill-Qwen-9B-MLX-oQ6e-fp16 | 9,4B | No disponible | No disponible | MLX safetensors | Hugging Face |
+| Qwen3-8B (referencia publica) | ~8,2B | 32K nativo, ampliable a 131K | Apache 2.0 | safetensors / GGUF | Hugging Face |
+| Llama 3.1 8B (referencia publica) | ~8,0B | 128K | Llama 3.1 Community License | safetensors / GGUF | Hugging Face |
+| Gemma 2 9B (referencia publica) | ~9,2B | 8K | Gemma Terms | safetensors / GGUF | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -85,6 +85,6 @@ Los datos de la fila correspondiente a este modelo proceden de la informacion fa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nicolasramos/MiMo-V2.6-Distill-Qwen-9B-MLX-oQ6e-fp16
+- Hugging Face: https://huggingface.co/nicolasramos/MiMo-V2.6-Distill-Qwen-9B-MLX-oQ6e-fp16
 - Repositorio de oQ / oMLX: https://github.com/jundot/omlx
 - MLX (framework de Apple): https://github.com/ml-explore/mlx

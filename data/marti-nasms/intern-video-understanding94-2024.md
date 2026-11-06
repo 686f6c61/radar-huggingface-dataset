@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario marti-nasms, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación en formato Markdown sobre el campo de *video understanding* (comprensión de vídeo). El README lo describe explícitamente como un documento de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. No se presenta como un artículo completado ni como una liberación de pesos entrenados.
+Este repositorio de Hugging Face, publicado por el usuario marti-nasms, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación en formato Markdown sobre el campo de *video understanding* (comprensión de vídeo). El README lo describe explícitamente como un documento de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. No se presenta como un artículo completado ni como una liberación de pesos entrenados.
 
 El repositorio incluye únicamente dos archivos: `notes.md` (el documento principal) y `README.md`. Los metadatos indican un tamaño de 0.0 GB y un contador de parámetros de 16.576, que corresponde probablemente al tamaño en bytes del archivo de texto, no a parámetros de red neuronal. No hay ningún checkpoint, código de inferencia ni resultados experimentales.
 
@@ -64,6 +64,6 @@ No disponible. Este repositorio no es un modelo, por lo que no puede compararse 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/marti-nasms/intern-video-understanding94-2024
+- Repositorio Hugging Face: https://huggingface.co/marti-nasms/intern-video-understanding94-2024
 - Repositorio oficial de InternVideo (OpenGVLab): https://github.com/OpenGVLab/InternVideo
 - Paper de InternVideo2 (referencia en la búsqueda web): https://arxiv.org/pdf/2501.12386

@@ -76,5 +76,5 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SpaceGhost/ace-step-1.5-trance-eurodance-lora
+- Repositorio Hugging Face: https://huggingface.co/SpaceGhost/ace-step-1.5-trance-eurodance-lora
 - Dataset de origen: https://huggingface.co/datasets/SpaceGhost/ace-step-electronic-trance-dataset

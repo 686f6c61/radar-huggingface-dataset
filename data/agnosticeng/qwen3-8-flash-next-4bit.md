@@ -69,8 +69,8 @@ No hay datos públicos de rendimiento del modelo base ni de esta cuantización, 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| agnosticeng/Qwen3.8-Flash-Next-4bit | 128,35 B (MoE) | no disponible | safetensors MLX afín 4-bit gs32 | qwen-community-license | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-Flash-Next | no disponible (checkpoint bf16 de ~360 GB) | no disponible | safetensors bf16 | qwen-community-license | HuggingFace |
+| agnosticeng/Qwen3.8-Flash-Next-4bit | 128,35 B (MoE) | no disponible | safetensors MLX afín 4-bit gs32 | qwen-community-license | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-Flash-Next | no disponible (checkpoint bf16 de ~360 GB) | no disponible | safetensors bf16 | qwen-community-license | Hugging Face |
 | Alternativas equivalantes verificadas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información verificada sobre otros modelos comparables de la misma categoría (MoE de ~128 B cuantizados a 4 bits para MLX), por lo que no se ofrece una comparación de rendimiento.
@@ -79,7 +79,7 @@ No se dispone de información verificada sobre otros modelos comparables de la m
 
 - Riesgo de alucinación: inherente a cualquier modelo generativo; no se han publicado evaluaciones de fidelidad factual para esta cuantización ni para el modelo base.
 - Sesgos: no disponibles. No hay documentación sobre composición del dataset de entrenamiento ni sobre mitigaciones aplicadas.
-- Idiomas: el campo de idiomas no está informado en la ficha de HuggingFace, por lo que no puede asumirse cobertura multilingüe ni un comportamiento fiable fuera del idioma mayoritario del entrenamiento.
+- Idiomas: el campo de idiomas no está informado en la ficha de Hugging Face, por lo que no puede asumirse cobertura multilingüe ni un comportamiento fiable fuera del idioma mayoritario del entrenamiento.
 - Ventana de contexto: no documentada. Diseñar aplicaciones que dependan de contexto largo es arriesgado sin verificarlo.
 - Licencia: `qwen-community-license` está clasificada como `other`, no como una licencia de código abierto aprobada por la OSI. Antes de un uso comercial hay que revisar el archivo `LICENSE` del repositorio y las condiciones de la comunidad Qwen, que pueden incluir restricciones de uso y obligaciones de atribución.
 - Conversión de terceros: la cuantización la firma `agnosticeng`, no el equipo de Qwen. No hay validación oficial de que el modelo cuantizado preserve las capacidades del original, ni resultados de evaluación que lo respalden.
@@ -91,7 +91,7 @@ No se dispone de información verificada sobre otros modelos comparables de la m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agnosticeng/Qwen3.8-Flash-Next-4bit
+- Repositorio en Hugging Face: https://huggingface.co/agnosticeng/Qwen3.8-Flash-Next-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del repositorio: https://huggingface.co/agnosticeng/Qwen3.8-Flash-Next-4bit/blob/main/LICENSE
 - Runtime `lisa` referenciado por el autor: https://lisa-ml.com/

@@ -60,7 +60,7 @@ Nota: las cuantizaciones de bartowski y joshnader son del modelo instruct, mient
 - El repositorio no incluye documentación adicional sobre el proceso de cuantización ni garantías de calidad.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/Plana-Chan/Llama-3.1-8B-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Plana-Chan/Llama-3.1-8B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Cuantizaciones similares: https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF
 - Página de Ollama para llama3.1: https://ollama.com/library/llama3.1:8b-instruct-q4_K_M

@@ -75,9 +75,9 @@ No se dispone de datos comparativos de rendimiento (success rate) entre estos mo
 
 ## Enlaces
 
-- [HuggingFace - Modelo](https://huggingface.co/alphabot2/alphabot2_Aibot2_20Aug_STEA_pick_10fps_act_chunk50_20260821_231610)
-- [HuggingFace - Dataset de entrenamiento](https://huggingface.co/datasets/alphabot2/Aibot2_20Aug_STEA_pick_10fps)
+- [Hugging Face - Modelo](https://huggingface.co/alphabot2/alphabot2_Aibot2_20Aug_STEA_pick_10fps_act_chunk50_20260821_231610)
+- [Hugging Face - Dataset de entrenamiento](https://huggingface.co/datasets/alphabot2/Aibot2_20Aug_STEA_pick_10fps)
 - [Paper ACT (arXiv)](https://huggingface.co/papers/2304.13705)
 - [LeRobot - GitHub](https://github.com/huggingface/lerobot)
 - [LeRobot - Documentacion](https://huggingface.co/docs/lerobot/index)
-- [Perfil del autor en HuggingFace](https://huggingface.co/alphabot2)
+- [Perfil del autor en Hugging Face](https://huggingface.co/alphabot2)

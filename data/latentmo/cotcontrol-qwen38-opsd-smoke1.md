@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cotcontrol-qwen38-opsd-smoke1 | LoRA r32 sobre 27B | No disponible | Adaptador de control de CoT | Apache 2.0 | HuggingFace (repo público, 0 descargas) |
-| Qwen/Qwen3.8-27B (base) | 27B | No disponible | Transformer denso | No disponible en esta ficha | HuggingFace |
+| cotcontrol-qwen38-opsd-smoke1 | LoRA r32 sobre 27B | No disponible | Adaptador de control de CoT | Apache 2.0 | Hugging Face (repo público, 0 descargas) |
+| Qwen/Qwen3.8-27B (base) | 27B | No disponible | Transformer denso | No disponible en esta ficha | Hugging Face |
 | Otros *model organisms* de control de CoT | No disponible | No disponible | Adaptadores LoRA | No disponible | No disponible |
 
 No se dispone de información sobre otros adaptadores comparables del mismo sprint MATS ni de sus métricas, por lo que la comparativa cuantitativa no está disponible.
@@ -81,7 +81,7 @@ No se dispone de información sobre otros adaptadores comparables del mismo spri
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-qwen38-opsd-smoke1
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-qwen38-opsd-smoke1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Código de entrenamiento y evaluaciones: https://github.com/johntrob14/tricky_little_guys (directorios `cot-control/rl/` y `cot-control/results/rl/opsd-smoke1/`)
 - Tinker (infraestructura de entrenamiento): no disponible enlace directo en la información proporcionada.

@@ -52,5 +52,5 @@ No disponible. Al no existir un modelo real, no es posible compararlo con altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CARTERAARON/vit-detector
+- Hugging Face: https://huggingface.co/CARTERAARON/vit-detector
 - No se han encontrado otros enlaces (papers, blogs, repos) asociados a este modelo en la búsqueda web. Los resultados devueltos corresponden a otros proyectos de detección con ViT no relacionados con este repositorio.

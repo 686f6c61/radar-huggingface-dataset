@@ -73,6 +73,6 @@ No se dispone de informacion suficiente para una comparativa cuantitativa con al
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ar3xop/arcane-7b
+- Repositorio Hugging Face: https://huggingface.co/ar3xop/arcane-7b
 - Referencia de la investigacion base: MentalLLaMA / IMHI por Kailai Yang et al. (WWW 2024 / EMNLP 2023) - no se proporcionan URLs directas en la documentacion.
 - No se encontraron otros enlaces relevantes en la busqueda web (los resultados sobre "Arcee" corresponden a otra organizacion y no estan relacionados con este modelo).

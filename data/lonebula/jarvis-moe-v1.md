@@ -55,8 +55,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales / activos | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LoNebula/jarvis-moe-v1 | 30,5B / 3,3B | no disponible | ja, en | Apache-2.0 | HuggingFace, pesos fusionados |
-| Qwen/Qwen3-30B-A3B (base) | 30,5B / 3,3B | no disponible | multilingüe | Apache-2.0 | HuggingFace |
+| LoNebula/jarvis-moe-v1 | 30,5B / 3,3B | no disponible | ja, en | Apache-2.0 | Hugging Face, pesos fusionados |
+| Qwen/Qwen3-30B-A3B (base) | 30,5B / 3,3B | no disponible | multilingüe | Apache-2.0 | Hugging Face |
 | Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa con el modelo base Qwen3-30B-A3B es la más relevante: comparten arquitectura y número de parámetros, pero jarvis-moe-v1 añade el ajuste QLoRA bilingüe JA/EN y el flujo de personalización local. No se dispone de datos de rendimiento comparado entre ambos.
@@ -73,7 +73,7 @@ La comparación directa con el modelo base Qwen3-30B-A3B es la más relevante: c
 - No se deben subir los ficheros de `~/.my-jarvis/` al Hub, ya que contienen datos personales del usuario.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/LoNebula/jarvis-moe-v1
+- Modelo en Hugging Face: https://huggingface.co/LoNebula/jarvis-moe-v1
 - Modelo base Qwen3-30B-A3B: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Autor LoNebula: https://huggingface.co/LoNebula
 - Dataset Aya: https://huggingface.co/datasets/CohereLabs/aya_dataset

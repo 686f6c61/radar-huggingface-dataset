@@ -92,7 +92,7 @@ No se dispone de comparación con modelos TTS de otros autores (por ejemplo, XTT
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage3-navaratri-te-kn-themes-lr1e-4-5ep
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage3-navaratri-te-kn-themes-lr1e-4-5ep
 - Modelo base: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage2-english-sidon-lr1e-4-10ep
 - Modelo original: https://huggingface.co/openbmb/VoxCPM2
 - Etapa 1 (base multilingüe): https://huggingface.co/sw-voice/voxcpm2-indic-multi-lr5e-5-1ep

@@ -73,10 +73,10 @@ Estos datos proceden de la model card del autor, medidos sobre el split de test 
 
 | Model | Parámetros | Contexto | Tamaño (GiB) | PPL WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.8-27B (bf16) | 27.8B | no disponible | 51.75 | 6.935 | Apache-2.0 | HuggingFace |
-| Qwen3.8-27B-mlx-mxfp8-S | 27.8B | no disponible | 26.62 | 6.922 | Apache-2.0 | HuggingFace |
-| Qwen3.8-27B-mlx-mxfp8-M | 27.8B | no disponible | 29.78 | 6.893 | Apache-2.0 | HuggingFace |
-| Qwen3.8-27B-mlx-nvfp4-S | 27.8B | no disponible | 19.15 | 7.024 | Apache-2.0 | HuggingFace |
+| Qwen3.8-27B (bf16) | 27.8B | no disponible | 51.75 | 6.935 | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B-mlx-mxfp8-S | 27.8B | no disponible | 26.62 | 6.922 | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B-mlx-mxfp8-M | 27.8B | no disponible | 29.78 | 6.893 | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B-mlx-nvfp4-S | 27.8B | no disponible | 19.15 | 7.024 | Apache-2.0 | Hugging Face |
 
 La variante S equilibra tamaño y calidad, con PPL incluso ligeramente mejor que el bf16 de referencia. La variante M presenta una KLD menor y una PPL aún más baja, pero a costa de más memoria. La variante nvfp4-S es más compacta, pero muestra una deriva mayor respecto al modelo bf16.
 
@@ -93,7 +93,7 @@ La variante S equilibra tamaño y calidad, con PPL incluso ligeramente mejor que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/airagrp/Qwen3.8-27B-mlx-mxfp8-S
+- Modelo en Hugging Face: https://huggingface.co/airagrp/Qwen3.8-27B-mlx-mxfp8-S
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio mlx-vlm: https://github.com/Blaizzy/mlx-vlm
 - Variante comparada mxfp8-M: https://huggingface.co/airagrp/Qwen3.8-27B-mlx-mxfp8-M

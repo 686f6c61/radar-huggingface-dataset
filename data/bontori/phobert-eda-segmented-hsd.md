@@ -4,7 +4,7 @@
 
 El modelo `BonTori/phobert-eda-segmented-hsd` es un modelo de clasificación de texto fine-tuneado para la detección de discurso de odio (HSD, Hate Speech Detection) en vietnamita. Se basa en PhoBERT, la familia de modelos preentrenados monolingües para vietnamita desarrollada por VinAI Research, que a su vez sigue la arquitectura de RoBERTa. El nombre del modelo sugiere que se ha aplicado segmentación de palabras (word segmentation) típica del vietnamita y técnicas de aumento de datos EDA (Easy Data Augmentation) durante el entrenamiento, una práctica habitual para mejorar el rendimiento en conjuntos de datos desequilibrados.
 
-La información pública disponible es extremadamente limitada: la model card de HuggingFace está casi vacía, sin datos sobre licencia, parámetros, contexto o métricas de evaluación. El repositorio del autor incluye otros modelos similares (`phobert-eda-vietnamese-hsd` y `phobert_eda_results`) que indican una línea de trabajo centrada en la detección de odio en vietnamita con PhoBERT y EDA. Aunque su relevancia actual es modesta, puede resultar de interés como punto de partida para experimentos de detección de toxicidad en vietnamita, especialmente en entornos académicos o de investigación.
+La información pública disponible es extremadamente limitada: la model card de Hugging Face está casi vacía, sin datos sobre licencia, parámetros, contexto o métricas de evaluación. El repositorio del autor incluye otros modelos similares (`phobert-eda-vietnamese-hsd` y `phobert_eda_results`) que indican una línea de trabajo centrada en la detección de odio en vietnamita con PhoBERT y EDA. Aunque su relevancia actual es modesta, puede resultar de interés como punto de partida para experimentos de detección de toxicidad en vietnamita, especialmente en entornos académicos o de investigación.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ La información pública disponible es extremadamente limitada: la model card de
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | vietnamita (inferido por el nombre y el uso de PhoBERT) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (presumible, al estar en HuggingFace) |
+| Formato de pesos | safetensors (presumible, al estar en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -76,7 +76,7 @@ No se dispone de información suficiente para comparar rendimiento real entre es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BonTori/phobert-eda-segmented-hsd
+- Modelo en Hugging Face: https://huggingface.co/BonTori/phobert-eda-segmented-hsd
 - Modelo relacionado (variante sin segmentación): https://huggingface.co/BonTori/phobert-eda-vietnamese-hsd
 - Resultados del autor: https://huggingface.co/BonTori/phobert_eda_results
 - Repositorio oficial de PhoBERT: https://github.com/VinAIResearch/PhoBERT

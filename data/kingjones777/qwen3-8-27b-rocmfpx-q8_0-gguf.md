@@ -90,7 +90,7 @@ La variante AGENT es marginalmente mas rapida (6.2%) y acepta mas tokens de borr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFPX-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFPX-Q8_0-GGUF
 - Variante AGENT: https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFPX-Q8_0-AGENT-GGUF
 - Variante 4-bit: https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF
 - Fork ROCmFPX de llama.cpp: https://github.com/charlie12345/ROCmFPX

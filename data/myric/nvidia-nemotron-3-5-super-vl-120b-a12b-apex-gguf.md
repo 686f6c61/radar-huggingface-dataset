@@ -18,8 +18,8 @@ Conviene tener claro que el repositorio no incluye la parte de vision: el `mmpro
 | Longitud de contexto | 1.000.000 de tokens entrenados (el quant se ha validado con 256k y 1M) |
 | Tipos de cuantizacion | Mezcla de tipos: F32 (409 tensores), Q8_0 (160), Q6_K (123), Q5_K (31), IQ4_NL (31), Q5_0 (9); 5,37 bpw |
 | Idiomas soportados | en, es, fr, de, it, ja |
-| Licencia | openmdw-1.1 (etiquetada como `other` en HuggingFace) |
-| Formato de pesos | GGUF, dividido en 2 ficheros por el limite de 50 GB/fichero de HuggingFace (81,03 GB en total, 763 tensores) |
+| Licencia | openmdw-1.1 (etiquetada como `other` en Hugging Face) |
+| Formato de pesos | GGUF, dividido en 2 ficheros por el limite de 50 GB/fichero de Hugging Face (81,03 GB en total, 763 tensores) |
 
 ## Arquitectura y entrenamiento
 
@@ -103,7 +103,7 @@ Ganancia de 1,72× en tiempo de pared; decodificacion con prompt corto de 18,5 a
 - La imatrix esta ponderada hacia codigo, lo que puede favorecer el rendimiento en tareas de programacion frente a otros dominios (prosa, derecho, medicina) respecto a una calibracion generica.
 - Riesgo de alucinacion no cuantificado: no se han publicado evaluaciones de fidelidad ni de tasas de alucinacion en la informacion disponible.
 - Cobertura linguistica limitada a seis idiomas (en, es, fr, de, it, ja); el rendimiento fuera de ellos no esta documentado.
-- La licencia openmdw-1.1 esta etiquetada como `other` en HuggingFace y debe revisarse en el enlace oficial antes de cualquier uso comercial o redistribucion; no se detallan aqui sus terminos.
+- La licencia openmdw-1.1 esta etiquetada como `other` en Hugging Face y debe revisarse en el enlace oficial antes de cualquier uso comercial o redistribucion; no se detallan aqui sus terminos.
 - El modelo necesita `--ctx-size` explicito en llama.cpp; sin el, la asignacion de KV para 1M puede agotar la memoria del sistema.
 - Los dos ficheros GGUF deben mantenerse juntos en el mismo directorio y cargarse por la parte `00001`; renombrarlos o separarlos rompe la carga.
 - No hay datos publicados de despliegue en vLLM, TGI u Ollama para este artefacto, ni metricas de throughput con concurrencia superior a 1.

@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes mas alla
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cstr/SDXL-VAE-inpaint-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cstr/SDXL-VAE-inpaint-GGUF
 - Pesos de origen (PixelHacker): https://huggingface.co/hustvl/PixelHacker/resolve/012fd343158936a265b8a0ee38a791a7a2841f45/vae/diffusion_pytorch_model.bin
 - SDXL VAE original: https://huggingface.co/stabilityai/sdxl-vae
 - Documentacion de CrispEmbed citada: `docs/inpainting-cli.md` y `docs/inpainting-precision.md` (no se proporciona URL publica)

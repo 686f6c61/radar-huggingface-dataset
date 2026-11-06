@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. Solo 
 
 | Modelo | Parametros | Cuantizacion | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| radames/flux2-klein-edge-web | 4B (base) | int8 / int4 | flux-2-klein | ONNX + WGSL + binarios | HuggingFace |
-| black-forest-labs/FLUX.2-klein-4B | 4B | f32 (sin cuantizar) | flux-2-klein | safetensors | HuggingFace |
+| radames/flux2-klein-edge-web | 4B (base) | int8 / int4 | flux-2-klein | ONNX + WGSL + binarios | Hugging Face |
+| black-forest-labs/FLUX.2-klein-4B | 4B | f32 (sin cuantizar) | flux-2-klein | safetensors | Hugging Face |
 | Otras alternativas de difusion en navegador | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos suficientes para comparar con otros modelos de generacion de imagenes en navegador. La referencia mas directa es el modelo base sin cuantizar, que requiere un servidor con GPU y no ofrece ejecucion en cliente.
@@ -80,8 +80,8 @@ No se dispone de datos suficientes para comparar con otros modelos de generacion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/radames/flux2-klein-edge-web
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/radames/flux-klein-web
+- Repositorio en Hugging Face: https://huggingface.co/radames/flux2-klein-edge-web
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/radames/flux-klein-web
 - Repositorio oficial de FLUX.2: https://github.com/black-forest-labs/flux2
 - Licencia FLUX.2 Klein: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B/blob/main/LICENSE.md
 - Paquete npm flux-klein.js: https://github.com/radames/flux-klein.js

@@ -4,7 +4,7 @@
 
 OpenThinker-7B-text-early-stop-run1 es un adaptador LoRA publicado por el usuario nmuendler sobre el modelo base open-thoughts/OpenThinker-7B. No se trata por tanto de un modelo completo ni de un lanzamiento oficial del proyecto OpenThoughts, sino de un ajuste fino de tipo PEFT que debe cargarse junto con los pesos del modelo base para poder ejecutarse. El repositorio tiene un tamaño de 0,3 GB, coherente con un adaptador LoRA de rango bajo sobre un modelo de aproximadamente 7.000 millones de parametros, y fue creado el 16 de septiembre de 2026.
 
-La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: no incluye descripcion, datos de entrenamiento, hiperparametros, resultados de evaluacion, licencia ni idiomas soportados. Toda la informacion tecnica disponible se limita a las etiquetas del repositorio (peft, safetensors, lora, transformers, text-generation, conversational) y a la referencia al modelo base. El sufijo del nombre, "text-early-stop-run1", sugiere un entrenamiento exclusivamente de texto con parada temprana y correspondiente a la primera ejecucion de una serie, pero esto es una inferencia a partir del identificador y no un dato confirmado por el autor.
+La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: no incluye descripcion, datos de entrenamiento, hiperparametros, resultados de evaluacion, licencia ni idiomas soportados. Toda la informacion tecnica disponible se limita a las etiquetas del repositorio (peft, safetensors, lora, transformers, text-generation, conversational) y a la referencia al modelo base. El sufijo del nombre, "text-early-stop-run1", sugiere un entrenamiento exclusivamente de texto con parada temprana y correspondiente a la primera ejecucion de una serie, pero esto es una inferencia a partir del identificador y no un dato confirmado por el autor.
 
 Su relevancia practica es limitada y de nicho: se trata de un artefacto de investigacion sin descargas ni interacciones registradas en el momento de la consulta, sin licencia declarada y sin documentacion de evaluacion. Resulta util unicamente como punto de partida para quien quiera reproducir o inspeccionar un ajuste LoRA sobre la familia OpenThinker, nunca como componente listo para produccion.
 
@@ -25,7 +25,7 @@ Su relevancia practica es limitada y de nicho: se trata de un artefacto de inves
 
 El artefacto es un adaptador de bajo rango (LoRA) gestionado con la libreria PEFT en su version 0.20.0, sobre transformer decoder-only de generacion de texto. No se especifican el rango, el valor alpha, los modulos objetivo ni la estrategia de cuantizacion del entrenamiento. El repositorio ocupa 0,3 GB, un orden de magnitud coherente con un adaptador de rango moderado sobre un modelo de 7B, aunque no permite deducir la configuracion exacta.
 
-No hay informacion sobre el dataset de entrenamiento, el numero de tokens, la composicion de los datos, la existencia de fases de RLHF, DPO o RLVR, ni sobre los hiperparametros empleados. El nombre del repositorio indica "text" (probablemente entrenamiento solo con modalidad de texto) y "early-stop-run1" (probablemente parada temprana en la primera ejecucion de una serie de experimentos), pero el autor no confirma ninguna de las dos cosas. La model card incluye el enlace a Lacoste et al. (2019), arXiv:1910.09700, que es la referencia de la calculadora de impacto medioambiental de la plantilla de HuggingFace y no un paper sobre este modelo; el tag arxiv:1910.09700 del repositorio procede de esa plantilla.
+No hay informacion sobre el dataset de entrenamiento, el numero de tokens, la composicion de los datos, la existencia de fases de RLHF, DPO o RLVR, ni sobre los hiperparametros empleados. El nombre del repositorio indica "text" (probablemente entrenamiento solo con modalidad de texto) y "early-stop-run1" (probablemente parada temprana en la primera ejecucion de una serie de experimentos), pero el autor no confirma ninguna de las dos cosas. La model card incluye el enlace a Lacoste et al. (2019), arXiv:1910.09700, que es la referencia de la calculadora de impacto medioambiental de la plantilla de Hugging Face y no un paper sobre este modelo; el tag arxiv:1910.09700 del repositorio procede de esa plantilla.
 
 ## Capacidades
 
@@ -42,7 +42,7 @@ No hay informacion sobre el dataset de entrenamiento, el numero de tokens, la co
 - Analisis de estrategias de parada temprana: si el sufijo "early-stop" refleja el proceso real de entrenamiento, el checkpoint permite inspeccionar el efecto de detener el entrenamiento antes de converger sobre la calidad del razonamiento.
 - Punto de partida para nuevos ajustes: un equipo puede continuar el entrenamiento desde este adaptador en lugar de partir del modelo base, siempre que asuma la ausencia de licencia declarada y verifique antes los terminos del modelo base.
 - Generacion de texto conversacional en entornos de prueba: para prototipos internos de chat donde no se requiere garantia de calidad ni trazabilidad de licencia, cargando el adaptador sobre OpenThinker-7B en una GPU unica.
-- Reproduccion y auditoria de artefactos de terceros: util para quien audita publicaciones de HuggingFace y necesita un caso de estudio de repositorios sin documentacion, sin licencia y sin evaluacion.
+- Reproduccion y auditoria de artefactos de terceros: util para quien audita publicaciones de Hugging Face y necesita un caso de estudio de repositorios sin documentacion, sin licencia y sin evaluacion.
 - Docencia sobre ecosistema PEFT: sirve para ilustrar como se carga un adaptador con la libreria peft, como se combina con el modelo base y que metadatos minimos deberia incluir una model card.
 - No se recomienda su uso en atencion al cliente, generacion de codigo en produccion, analisis de documentos ni cualquier flujo con datos de usuarios, dado que no hay licencia, ni evaluacion, ni declaracion de sesgos.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| OpenThinker-7B-text-early-stop-run1 (adaptador) | Adaptador LoRA; base de ~7B | no disponible | no disponible | HuggingFace, 0 descargas | Sin documentacion ni evaluacion |
-| open-thoughts/OpenThinker-7B (modelo base) | ~7B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace | Modelo de razonamiento del proyecto OpenThoughts; existe una familia de variantes 1.5 y 32B |
-| Otros adaptadores LoRA de razonamiento sobre bases de 7B | ~7B mas adaptador | depende del modelo base | depende del autor | HuggingFace | Categoria comparable; no se dispone de datos concretos de alternativas en la informacion proporcionada |
+| OpenThinker-7B-text-early-stop-run1 (adaptador) | Adaptador LoRA; base de ~7B | no disponible | no disponible | Hugging Face, 0 descargas | Sin documentacion ni evaluacion |
+| open-thoughts/OpenThinker-7B (modelo base) | ~7B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face | Modelo de razonamiento del proyecto OpenThoughts; existe una familia de variantes 1.5 y 32B |
+| Otros adaptadores LoRA de razonamiento sobre bases de 7B | ~7B mas adaptador | depende del modelo base | depende del autor | Hugging Face | Categoria comparable; no se dispone de datos concretos de alternativas en la informacion proporcionada |
 
 No se dispone de datos de rendimiento del adaptador que permitan una comparacion cuantitativa con alternativas. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo, con OpenThinker ni con el proyecto OpenThoughts; los unicos resultados obtenidos trataban sobre la Reserva Federal de Estados Unidos y son irrelevantes para esta ficha.
 
@@ -83,8 +83,8 @@ No se dispone de datos de rendimiento del adaptador que permitan una comparacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nmuendler/OpenThinker-7B-text-early-stop-run1
-- Modelo base en HuggingFace: https://huggingface.co/open-thoughts/OpenThinker-7B
+- Modelo en Hugging Face: https://huggingface.co/nmuendler/OpenThinker-7B-text-early-stop-run1
+- Modelo base en Hugging Face: https://huggingface.co/open-thoughts/OpenThinker-7B
 - Referencia citada en la plantilla de la model card, Lacoste et al. (2019), sobre estimacion de emisiones: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, repositorios o demos) relacionados con este modelo.

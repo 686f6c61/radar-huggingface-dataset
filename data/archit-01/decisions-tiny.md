@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Archit-01/decisions-tiny es un adaptador de ajuste fino del tipo LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Archit-01. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador que debe cargarse sobre un modelo base para funcionar. El modelo base declarado en los metadatos es unsloth/Qwen3.5-0.8B, un transformer decoder-only de la familia Qwen con aproximadamente 0,8 mil millones de parametros.
+Archit-01/decisions-tiny es un adaptador de ajuste fino del tipo LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Archit-01. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador que debe cargarse sobre un modelo base para funcionar. El modelo base declarado en los metadatos es unsloth/Qwen3.5-0.8B, un transformer decoder-only de la familia Qwen con aproximadamente 0,8 mil millones de parametros.
 
 El repositorio esta etiquetado para generacion de texto (`text-generation`) y conversacion (`conversational`), y se distribuye bajo la libreria PEFT en formato safetensors. El tamano del repositorio es de aproximadamente 0,1 GB, coherente con un adaptador LoRA pequeno en lugar de un modelo completo. Fue creado y actualizado el 8 de octubre de 2026, y en el momento de redactar esta ficha acumula 0 descargas y 0 "likes", por lo que se trata de una publicacion reciente y sin traccion comunitaria.
 
-La relevancia de esta ficha es limitada: la model card del autor es la plantilla estandar de HuggingFace sin rellenar, con practicamente todos los campos marcados como "More Information Needed". No se dispone de informacion sobre el dataset de entrenamiento, el procedimiento de ajuste, la licencia, los idiomas soportados ni resultados de evaluacion. Cualquier uso en produccion requeriria contactar con el autor o realizar una evaluacion propia.
+La relevancia de esta ficha es limitada: la model card del autor es la plantilla estandar de Hugging Face sin rellenar, con practicamente todos los campos marcados como "More Information Needed". No se dispone de informacion sobre el dataset de entrenamiento, el procedimiento de ajuste, la licencia, los idiomas soportados ni resultados de evaluacion. Cualquier uso en produccion requeriria contactar con el autor o realizar una evaluacion propia.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ El artefacto publicado es un adaptador LoRA, una tecnica de ajuste eficiente en 
 
 No hay informacion publicada sobre el procedimiento de entrenamiento: se desconoce el numero de tokens de ajuste, la composicion del dataset, si se aplicaron tecnicas de RLHF, DPO u otras, la tasa de aprendizaje, el rango del LoRA, las capas objetivo ni el numero de epochs. La model card conserva todos los campos de la plantilla en estado "More Information Needed". Tampoco hay descripcion de innovaciones tecnicas propias.
 
-El unico tag de tipo paper presente en los metadatos es `arxiv:1910.09700`, que corresponde a "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019) y aparece de forma generica en la plantilla estandar de HuggingFace. No guarda relacion con la arquitectura ni con el entrenamiento de este modelo. Los resultados de la busqueda web realizada no contienen informacion relevante: todas las referencias encontradas tratan sobre estudios de arquitectura o servicios de TI, no sobre este modelo de IA.
+El unico tag de tipo paper presente en los metadatos es `arxiv:1910.09700`, que corresponde a "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019) y aparece de forma generica en la plantilla estandar de Hugging Face. No guarda relacion con la arquitectura ni con el entrenamiento de este modelo. Los resultados de la busqueda web realizada no contienen informacion relevante: todas las referencias encontradas tratan sobre estudios de arquitectura o servicios de TI, no sobre este modelo de IA.
 
 ## Capacidades
 
@@ -54,7 +54,7 @@ Debido a la ausencia total de documentacion, evaluacion y licencia, los casos de
 - Prototipado rapido en portatil: al tratarse de un adaptador sobre un modelo de ~0,8B, es viable cargarlo en un portatil con GPU de gama media para pruebas de concepto.
 - Generacion de texto asistida en aplicaciones de nicho: si el ajuste especializa el estilo o el dominio, podria usarse para redactar respuestas breves en un chatbot interno, previa comprobacion de calidad.
 - Filtrado previo o enrutado de consultas: un modelo de este tamano puede actuar como clasificador rapido que decida si una peticion debe escalarse a un modelo mayor.
-- Investigacion sobre adaptadores: util como caso de estudio de un adaptador publicado sin model card, para ilustrar los riesgos de reproducibilidad en el ecosistema de HuggingFace.
+- Investigacion sobre adaptadores: util como caso de estudio de un adaptador publicado sin model card, para ilustrar los riesgos de reproducibilidad en el ecosistema de Hugging Face.
 - Fine-tuning posterior: el adaptador podria servir de punto de partida (con precaucion) para un ajuste adicional en un dominio especifico, aunque la falta de licencia lo hace problemático.
 
 ## Benchmarks y rendimiento
@@ -76,8 +76,8 @@ Las cifras siguientes son estimaciones de ingenieria derivadas del tamano del mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Archit-01/decisions-tiny (adaptador LoRA) | No disponible (~0,8B base) | No disponible | No disponible | HuggingFace, 0 descargas |
-| unsloth/Qwen3.5-0.8B (modelo base) | ~0,8B segun nombre | No disponible en esta informacion | No disponible | HuggingFace |
+| Archit-01/decisions-tiny (adaptador LoRA) | No disponible (~0,8B base) | No disponible | No disponible | Hugging Face, 0 descargas |
+| unsloth/Qwen3.5-0.8B (modelo base) | ~0,8B segun nombre | No disponible en esta informacion | No disponible | Hugging Face |
 | Qwen2.5-0.5B (referencia de la familia Qwen) | ~0,5B | 32k tokens (documentacion publica de Qwen) | Apache 2.0 en variantes publicas | Amplia disponibilidad |
 | Llama-3.2-1B (referencia de escala similar) | ~1,2B | 128k tokens (documentacion publica de Meta) | Licencia comunitaria Llama | Amplia disponibilidad |
 
@@ -85,7 +85,7 @@ La comparacion es estructural: no existen datos de rendimiento de decisions-tiny
 
 ## Limitaciones y advertencias
 
-- Model card vacia: la documentacion es la plantilla por defecto de HuggingFace sin rellenar, por lo que se desconoce el proposito real del ajuste y su formato de prompt.
+- Model card vacia: la documentacion es la plantilla por defecto de Hugging Face sin rellenar, por lo que se desconoce el proposito real del ajuste y su formato de prompt.
 - Licencia no especificada: no se puede determinar si el uso comercial esta permitido. Esta es una restriccion critica para cualquier despliegue en produccion.
 - Sin evaluacion: no hay benchmarks, ni evaluacion cualitativa, ni ejemplos de uso. El rendimiento real es desconocido.
 - Riesgo de alucinacion: inherente a los modelos generativos y, en principio, mas acusado en modelos de menos de mil millones de parametros, aunque no hay mediciones para este caso concreto.
@@ -98,7 +98,7 @@ La comparacion es estructural: no existen datos de rendimiento de decisions-tiny
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Archit-01/decisions-tiny
+- Modelo en Hugging Face: https://huggingface.co/Archit-01/decisions-tiny
 - Modelo base declarado: https://huggingface.co/unsloth/Qwen3.5-0.8B
 - Paper citado en los tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental enlazada en la plantilla: https://mlco2.github.io/impact

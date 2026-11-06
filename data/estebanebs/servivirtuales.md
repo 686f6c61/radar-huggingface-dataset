@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EstebanEBS/servivirtuales es un repositorio de modelo alojado en HuggingFace por el usuario EstebanEBS. La informacion publica disponible es minima: el repositorio se creo y se actualizo el 16 de octubre de 2026 (misma marca temporal para ambos eventos), acumula 0 descargas y 1 like, y su unico tag visible es `region:us`, que HuggingFace asigna de forma automatica a los repositorios alojados en la region de Estados Unidos. No se declara pipeline, licencia, idiomas ni ninguna descripcion tecnica en la ficha del repositorio.
+EstebanEBS/servivirtuales es un repositorio de modelo alojado en Hugging Face por el usuario EstebanEBS. La informacion publica disponible es minima: el repositorio se creo y se actualizo el 16 de octubre de 2026 (misma marca temporal para ambos eventos), acumula 0 descargas y 1 like, y su unico tag visible es `region:us`, que Hugging Face asigna de forma automatica a los repositorios alojados en la region de Estados Unidos. No se declara pipeline, licencia, idiomas ni ninguna descripcion tecnica en la ficha del repositorio.
 
 No hay informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, el dataset de entrenamiento ni el proceso de alineacion. Tampoco existe documentacion asociada, paper, blog tecnico ni repositorio de codigo localizado en la busqueda web. Los resultados de la busqueda realizada no guardan ninguna relacion con el modelo: son enlaces a galerias y perfiles de contenido para adultos de distintas plataformas, sin conexion tematica, tecnica ni nominal con el identificador `servivirtuales`.
 
@@ -99,7 +99,7 @@ No disponible. No se puede establecer una categoria de comparacion (mismo rango 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EstebanEBS/servivirtuales
+- Hugging Face: https://huggingface.co/EstebanEBS/servivirtuales
 - Paper: no disponible
 - Blog o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

@@ -4,7 +4,7 @@
 
 `amandaodoo/regresion-casas-sklearn` es un modelo de regresion lineal multiple entrenado con scikit-learn para predecir el precio de una vivienda en miles de dolares estadounidenses a partir de tres variables tabulares: superficie en metros cuadrados (`m2`), presencia de balcon (`balcon`) y presencia de ascensor (`ascensor`). No es una red neuronal ni un transformer: es un estimador clasico de minimos cuadrados ordinarios serializado con `joblib`, publicado como ejemplo pedagogico para el IFTS N.º 18 con la docente Cynthia M. Villagra.
 
-El modelo no resuelve un problema de produccion real. Su valor es didactico: muestra de forma completa el ciclo de vida de un modelo supervisado (generacion de datos, entrenamiento, evaluacion en hold-out y publicacion en el Hub de HuggingFace). Los datos son sinteticos, generados mediante la formula `precio = 1,5·m2 + 8·balcon + 12·ascensor + 20 + ruido`, con 200 registros totales (160 de entrenamiento y 40 de evaluacion).
+El modelo no resuelve un problema de produccion real. Su valor es didactico: muestra de forma completa el ciclo de vida de un modelo supervisado (generacion de datos, entrenamiento, evaluacion en hold-out y publicacion en el Hub de Hugging Face). Los datos son sinteticos, generados mediante la formula `precio = 1,5·m2 + 8·balcon + 12·ascensor + 20 + ruido`, con 200 registros totales (160 de entrenamiento y 40 de evaluacion).
 
 Es relevante unicamente como referencia educativa sobre como empaquetar y documentar un modelo tabular minimo. No compite con modelos de lenguaje ni con sistemas de valoracion inmobiliaria reales, y su uso en cualquier contexto distinto de la docencia seria inapropiado.
 
@@ -43,7 +43,7 @@ No hay innovaciones tecnicas destacables. El interes del artefacto reside en la 
 ## Casos de uso
 
 - Docencia de aprendizaje supervisado: sirve como ejemplo minimo y reproducible para explicar que es un modelo entrenado, que se guarda en disco y como se documenta en una model card. Es su proposito declarado.
-- Demostracion del flujo de publicacion en HuggingFace Hub: permite mostrar a estudiantes como subir un artefacto `joblib` con metadatos, licencia y pipeline tag correctos.
+- Demostracion del flujo de publicacion en Hugging Face Hub: permite mostrar a estudiantes como subir un artefacto `joblib` con metadatos, licencia y pipeline tag correctos.
 - Ejercicio de evaluacion de modelos de regresion: el par MAE/R² sobre un hold-out de 40 muestras sirve para introducir la interpretacion de metricas de regresion.
 - Practica de interpretabilidad de coeficientes: los pesos aprendidos pueden compararse con los coeficientes generadores para ilustrar la recuperacion de parametros en modelos lineales.
 - Ejemplo de inferencia tabular con pandas: el snippet de `predict.py` demuestra como construir un DataFrame de entrada y llamar a `predict`.
@@ -86,7 +86,7 @@ No disponible. No se han proporcionado modelos comparables en la informacion rec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amandaodoo/regresion-casas-sklearn
+- Modelo en Hugging Face: https://huggingface.co/amandaodoo/regresion-casas-sklearn
 - Documentacion de scikit-learn (`LinearRegression`): https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
 - Documentacion de joblib: https://joblib.readthedocs.io/
 - Documentacion de `huggingface_hub.hf_hub_download`: https://huggingface.co/docs/huggingface_hub/guides/download

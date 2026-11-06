@@ -67,8 +67,8 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Repositorio HuggingFace de la cuantización GGUF](https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.4-LazyLora-heresy-Heretic-GGUF)
-- [Modelo base en HuggingFace (alexokita)](https://huggingface.co/alexokita/Goetia-26B-A4B-v1.4-LazyLora-heresy-Heretic)
+- [Repositorio Hugging Face de la cuantización GGUF](https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.4-LazyLora-heresy-Heretic-GGUF)
+- [Modelo base en Hugging Face (alexokita)](https://huggingface.co/alexokita/Goetia-26B-A4B-v1.4-LazyLora-heresy-Heretic)
 - [Variante con imatrix (i1-GGUF)](https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.4-LazyLora-heresy-i1-GGUF)
 - [Variante sin heretic (Goetia-26B-A4B-v1.4-GGUF)](https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.4-GGUF)
 - [Página de despliegue en friendli.ai](https://friendli.ai/models/MuXodious/Goetia-26B-A4B-v1.4-LazyLora-heresy)

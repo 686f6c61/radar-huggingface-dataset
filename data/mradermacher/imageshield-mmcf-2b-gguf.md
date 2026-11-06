@@ -21,7 +21,7 @@ La relevancia de esta publicacion radica en su formato GGUF, que permite ejecuta
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no incluye detalles sobre la arquitectura del modelo original. El nombre "MMCF" podria referirse a una arquitectura o metodologia de entrenamiento especifica, pero no se ha publicado documentacion tecnica al respecto. El modelo original en HuggingFace (prithivMLmods/ImageShield-MMCF-2B) tampoco proporciona una model card detallada.
+La informacion disponible no incluye detalles sobre la arquitectura del modelo original. El nombre "MMCF" podria referirse a una arquitectura o metodologia de entrenamiento especifica, pero no se ha publicado documentacion tecnica al respecto. El modelo original en Hugging Face (prithivMLmods/ImageShield-MMCF-2B) tampoco proporciona una model card detallada.
 
 El proceso de cuantizacion realizado por mradermacher convierte los pesos originales en formato safetensors a GGUF, un formato optimizado para inferencia en CPU mediante llama.cpp y proyectos derivados. La version cuantizada mantiene la funcionalidad del modelo original pero con una huella de memoria significativamente reducida. No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens procesados ni si se aplicaron tecnicas de RLHF o DPO.
 

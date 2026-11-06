@@ -110,7 +110,7 @@ No se dispone de datos de benchmarks comparativos de terceros en la informacion 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/NagaYu/echocache-matcher
+- Repositorio del modelo en Hugging Face: https://huggingface.co/NagaYu/echocache-matcher
 - Space de EchoCache (version de produccion con particiones, LRU, TTL y observabilidad): https://huggingface.co/spaces/NagaYu/EchoCache
 - Dataset de evaluacion echocache-guard-benchmark, con 131 pares y el script `evaluate.py`: https://huggingface.co/datasets/NagaYu/echocache-guard-benchmark
 - Busqueda web: sin resultados relevantes. La unica coincidencia devuelta corresponde al mercado de dominios de Namecheap y no guarda relacion con el modelo. No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

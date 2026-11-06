@@ -17,7 +17,7 @@ El tokenizer alcanza 1.69 tokens por palabra en nepalí con un vocabulario de 65
 | Tipos de cuantizacion | No aplicable |
 | Idiomas soportados | nepalí (ne), inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | tokenizer.json (formato HuggingFace), arkios_tokenizer.bin (formato C/CUDA), byte_lengths.npy |
+| Formato de pesos | tokenizer.json (formato Hugging Face), arkios_tokenizer.bin (formato C/CUDA), byte_lengths.npy |
 
 ## Arquitectura y entrenamiento
 
@@ -26,10 +26,10 @@ El tokenizer implementa un algoritmo byte-level BPE con `byte_fallback=true`, lo
 ## Capacidades
 
 - Tokenización de texto nepalí e inglés con alta eficiencia (1.69 tokens/palabra en nepalí, 1.30 en inglés).
-- Soportado por la librería `tokenizers` de HuggingFace y compatible con `transformers` y `llama.cpp`.
+- Soportado por la librería `tokenizers` de Hugging Face y compatible con `transformers` y `llama.cpp`.
 - Byte-fallback: cualquier secuencia de bytes se puede codificar sin tokens OOV, round-trip exacto tras normalización NFC.
 - Pre-segmentación de dígitos para representación uniforme de números (no hay tokens con 4+ dígitos consecutivos).
-- Compatible con el ecosistema de HuggingFace: se puede cargar con `Tokenizer.from_file` o `from_pretrained`.
+- Compatible con el ecosistema de Hugging Face: se puede cargar con `Tokenizer.from_file` o `from_pretrained`.
 - Incluye un fichero `byte_lengths.npy` con la longitud en bytes de cada token, útil para comparar bits-per-byte entre tokenizers.
 
 ## Casos de uso
@@ -71,7 +71,7 @@ Además, entrenaron tres modelos de 268M de parámetros que solo difieren en el 
 - No aplica: se trata de un tokenizador, no de un modelo de lenguaje. No requiere GPU para su uso.
 - Puede ejecutarse en CPU en cualquier entorno Python con la librería `tokenizers` instalada.
 - Para integración en entrenamiento de modelos, se puede usar como componente de un pipeline de entrenamiento en GPU.
-- Despliegue: compatible con HuggingFace `transformers`, `tokenizers`, `llama.cpp` y `vLLM` (a través de su integración con tokenizadores).
+- Despliegue: compatible con Hugging Face `transformers`, `tokenizers`, `llama.cpp` y `vLLM` (a través de su integración con tokenizadores).
 
 ## Comparativa con modelos similares
 
@@ -88,7 +88,7 @@ Se compara con tokenizadores de otros modelos multilingües que cubren nepalí. 
 
 ## Enlaces
 
-- Repositorio del tokenizador en HuggingFace: https://huggingface.co/sajalregmi4/arkios-tokenizer
+- Repositorio del tokenizador en Hugging Face: https://huggingface.co/sajalregmi4/arkios-tokenizer
 - Código, harness y resultados completos: https://github.com/sajalregmi/arkios-tokenizer
 - Paper (arXiv, se añadirá al publicarse): *Vowel Signs Are Not Letters: A Pre-tokenization Ceiling on Multilingual Tokenizer Fertility* (enlace no disponible en la información proporcionada)
 - Página del autor: https://sajalregmi.com/ (información personal)

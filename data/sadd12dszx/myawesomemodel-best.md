@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-best es un modelo publicado en HuggingFace por el usuario sadD12DSZX bajo licencia MIT. El repositorio lo etiqueta como `bert` y declara la librería `transformers` con framework PyTorch, y el pipeline es `feature-extraction`, es decir, un modelo orientado a producir representaciones vectoriales (embeddings) de texto en lugar de generar texto de forma autoregresiva.
+MyAwesomeModel-best es un modelo publicado en Hugging Face por el usuario sadD12DSZX bajo licencia MIT. El repositorio lo etiqueta como `bert` y declara la librería `transformers` con framework PyTorch, y el pipeline es `feature-extraction`, es decir, un modelo orientado a producir representaciones vectoriales (embeddings) de texto en lugar de generar texto de forma autoregresiva.
 
 La información disponible es minima: el repositorio declara 0.0 GB de tamano, no publica ficha tecnica con arquitectura, numero de parametros, longitud de contexto, idiomas ni datos de entrenamiento, y no se listan ficheros de pesos. El unico dato sustantivo es una tabla de evaluacion del checkpoint `step_1000`, seleccionado por obtener la puntuacion mas alta, con 15 metricas autoinformadas por el autor.
 
@@ -17,7 +17,7 @@ Su relevancia actual es limitada y de caracter experimental: no tiene descargas 
 | Parametros activos | no aplica; no hay indicios de que sea un modelo MoE |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; el autor no publica variantes cuantizadas (FP16, INT8, GGUF, etc.) |
-| Idiomas soportados | no disponible (el campo de idiomas de HuggingFace esta vacio) |
+| Idiomas soportados | no disponible (el campo de idiomas de Hugging Face esta vacio) |
 | Licencia | MIT |
 | Formato de pesos | PyTorch segun los tags de la libreria; no se confirma la publicacion de ficheros `safetensors`, `.bin` ni `GGUF` |
 | Pipeline declarado | `feature-extraction` |
@@ -114,6 +114,6 @@ No existe informacion para comparar rendimiento: MyAwesomeModel-best no aporta r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sadD12DSZX/MyAwesomeModel-best
+- Hugging Face: https://huggingface.co/sadD12DSZX/MyAwesomeModel-best
 
 No se han encontrado en la informacion proporcionada papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo.

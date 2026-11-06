@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dino for Retrieval es un repositorio de HuggingFace publicado por el usuario Tonykobayashi que contiene una implementación propia en PyTorch de una arquitectura denominada "Dino" orientada a tareas de recuperación (retrieval). No se trata de un modelo preentrenado listo para producción: la propia model card indica explícitamente que la configuración "xlarge" está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, y que el checkpoint `model.safetensors` es una inicialización válida para esas pruebas, no un modelo entrenado ni evaluado.
+Dino for Retrieval es un repositorio de Hugging Face publicado por el usuario Tonykobayashi que contiene una implementación propia en PyTorch de una arquitectura denominada "Dino" orientada a tareas de recuperación (retrieval). No se trata de un modelo preentrenado listo para producción: la propia model card indica explícitamente que la configuración "xlarge" está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, y que el checkpoint `model.safetensors` es una inicialización válida para esas pruebas, no un modelo entrenado ni evaluado.
 
 El dato más relevante para situar el repositorio es su tamaño real: el fichero de pesos contiene 16.576 parámetros (unos 16,6 mil), lo que contrasta con la etiqueta "xlarge" que aparece en la configuración de arquitectura. El repositorio ocupa 0,0 GB y no registra descargas ni likes en el momento de la consulta. La implementación declara atención multi-query, fusión de tensores, activación GELU y normalización InstanceNorm.
 
@@ -25,7 +25,7 @@ Su relevancia es, por tanto, documental y educativa más que práctica: sirve co
 | Normalizacion | InstanceNorm |
 | Optimizador de la receta por defecto | LAMB con planificador de tipo step |
 | Tamano del repositorio | 0,0 GB |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Fecha de creacion (registro HF) | 2026-09-15 |
 | Fecha de ultima actualizacion | 2026-09-15 |
 
@@ -72,7 +72,7 @@ La comparación directa no es posible porque este repositorio no publica métric
 
 | Modelo | Parametros | Contexto / entrada | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dino-retrieval-2024 (Tonykobayashi) | 16.576 | No disponible | No (checkpoint de inicializacion) | MIT | HuggingFace, 0 descargas |
+| dino-retrieval-2024 (Tonykobayashi) | 16.576 | No disponible | No (checkpoint de inicializacion) | MIT | Hugging Face, 0 descargas |
 | CLIP ViT-B/32 (OpenAI) | Aproximadamente 151 M | Imagen + texto, emparejamiento contrastivo | Si | Licencia propia de OpenAI | Ampliamente disponible |
 | DINOv2 ViT-L/14 (Meta) | Aproximadamente 300 M | Backbone visual auto-supervisado | Si | Licencia de modelo de Meta | Ampliamente disponible |
 
@@ -93,6 +93,6 @@ Las cifras de parametros de CLIP y DINOv2 son ordenes de magnitud de referencia 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tonykobayashi/dino-retrieval-2024
+- Hugging Face: https://huggingface.co/Tonykobayashi/dino-retrieval-2024
 
 La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo: los resultados obtenidos correspondian a paginas de inicio de sesion y soporte de Gmail, sin relacion con el repositorio. No se han localizado papers, blogs, repositorios auxiliares ni demos asociados a dino-retrieval-2024 en la informacion disponible.

@@ -93,7 +93,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Halpak/MiniMax-H3-Turbo-Lora-ComfyUI
+- Repositorio Hugging Face: https://huggingface.co/Halpak/MiniMax-H3-Turbo-Lora-ComfyUI
 - Repositorio GitHub de MiniMax-H3 ComfyUI (modelo base y flujos de trabajo): https://github.com/MiniMaxH3ComfyUI/MiniMax-H3-ComfyUI
 - Repositorio GitHub de Larryvrh (ComfyUI-MiniMax-H3-Turbo): https://github.com/Larryvrh/ComfyUI-MiniMax-H3-Turbo
 - Documentación del nodo MiniMax-H3 Turbo LoRA en runcomfy: https://www.runcomfy.com/comfyui-nodes/ComfyUI-MiniMax-H3-Turbo/mini-max-h3-turbo-lo-ra

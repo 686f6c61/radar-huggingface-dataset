@@ -110,6 +110,6 @@ La comparación directa con otras conversiones del mismo modelo base no está di
 
 ## Enlaces
 
-- Pack en HuggingFace: https://huggingface.co/qwegnai/Qwen3.6-35B-A3B-hq4g32
+- Pack en Hugging Face: https://huggingface.co/qwegnai/Qwen3.6-35B-A3B-hq4g32
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio del motor Qwegn: https://github.com/qwegnai/qwegine

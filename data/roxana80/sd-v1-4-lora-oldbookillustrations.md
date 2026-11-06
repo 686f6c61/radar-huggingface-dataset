@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Roxana80/sd-v1-4-lora-oldbookillustrations` es un adaptador LoRA para el modelo de difusión de texto a imagen Stable Diffusion v1.4 de CompVis. Lo desarrolla el usuario Roxana80 y se publica en HuggingFace con la librería diffusers. El objetivo es especializar el modelo base en la estética de ilustraciones de libros antiguos (grabados, xilografías y viñetas decimonónicas), un estilo difícil de obtener con el modelo original sin ingeniería de prompts compleja.
+`Roxana80/sd-v1-4-lora-oldbookillustrations` es un adaptador LoRA para el modelo de difusión de texto a imagen Stable Diffusion v1.4 de CompVis. Lo desarrolla el usuario Roxana80 y se publica en Hugging Face con la librería diffusers. El objetivo es especializar el modelo base en la estética de ilustraciones de libros antiguos (grabados, xilografías y viñetas decimonónicas), un estilo difícil de obtener con el modelo original sin ingeniería de prompts compleja.
 
 El adaptador se ha entrenado sobre el dataset `gigant/oldbookillustrations`, usando las columnas `1600px` (imágenes) e `info_alt` (descripciones textuales), con un total de 600 imágenes durante 3 épocas y un rango LoRA de solo 6. Es, por tanto, un ajuste ligero y de bajo coste computacional que no modifica los pesos del modelo base, sino que añade matrices de bajo rango a las capas de atención.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / resolucion | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Roxana80/sd-v1-4-lora-oldbookillustrations | 859M (adaptador) | 512x512 | LoRA estilística sobre SD 1.4 | no disponible | HuggingFace |
-| Stable Diffusion v1.4 (CompVis) | ~983M UNet + 123M text encoder | 512x512 | Texto a imagen generalista | CreativeML OpenRAIL-M | HuggingFace |
-| Stable Diffusion v1.5 (RunwayML) | ~983M UNet + 123M text encoder | 512x512 | Texto a imagen generalista | CreativeML OpenRAIL-M | HuggingFace |
-| SDXL (Stability AI) | ~2,6B UNet + 817M text encoder | 1024x1024 | Texto a imagen de alta resolución | CreativeML OpenRAIL++-M | HuggingFace |
+| Roxana80/sd-v1-4-lora-oldbookillustrations | 859M (adaptador) | 512x512 | LoRA estilística sobre SD 1.4 | no disponible | Hugging Face |
+| Stable Diffusion v1.4 (CompVis) | ~983M UNet + 123M text encoder | 512x512 | Texto a imagen generalista | CreativeML OpenRAIL-M | Hugging Face |
+| Stable Diffusion v1.5 (RunwayML) | ~983M UNet + 123M text encoder | 512x512 | Texto a imagen generalista | CreativeML OpenRAIL-M | Hugging Face |
+| SDXL (Stability AI) | ~2,6B UNet + 817M text encoder | 1024x1024 | Texto a imagen de alta resolución | CreativeML OpenRAIL++-M | Hugging Face |
 
 La comparación con SD 1.4 y 1.5 es directa porque el adaptador se aplica sobre ellos; frente a SDXL, este LoRA ofrece menor resolución nativa y menor calidad general, pero un estilo muy específico que SDXL no reproduce sin un LoRA equivalente. No se dispone de datos de rendimiento cuantitativos para comparar objetivamente.
 
@@ -80,7 +80,7 @@ La comparación con SD 1.4 y 1.5 es directa porque el adaptador se aplica sobre 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Roxana80/sd-v1-4-lora-oldbookillustrations
+- Modelo en Hugging Face: https://huggingface.co/Roxana80/sd-v1-4-lora-oldbookillustrations
 - Modelo base: https://huggingface.co/CompVis/stable-diffusion-v1-4
 - Dataset de entrenamiento: https://huggingface.co/datasets/gigant/oldbookillustrations
 - Documentación de diffusers para LoRA: https://huggingface.co/docs/diffusers/using-diffusers/loading_adapters

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DVTA-YLOR/review-image-captioning-2024 no es un modelo entrenado, sino un repositorio de notas de investigación sobre *image captioning* publicado por el usuario DVTA-YLOR bajo licencia MIT. Su contenido declarado es un único artefacto (`summary.md`) con referencias de evaluación, preguntas abiertas, hipótesis y planes de comparación, además de este `README.md`. Los tags de HuggingFace incluyen `safetensors` y `transformer`, pero la model card no documenta arquitectura, configuración, tokenizer ni procedimiento de entrenamiento alguno.
+DVTA-YLOR/review-image-captioning-2024 no es un modelo entrenado, sino un repositorio de notas de investigación sobre *image captioning* publicado por el usuario DVTA-YLOR bajo licencia MIT. Su contenido declarado es un único artefacto (`summary.md`) con referencias de evaluación, preguntas abiertas, hipótesis y planes de comparación, además de este `README.md`. Los tags de Hugging Face incluyen `safetensors` y `transformer`, pero la model card no documenta arquitectura, configuración, tokenizer ni procedimiento de entrenamiento alguno.
 
 El dato más relevante es el recuento real de parámetros en los pesos publicados: 24.832 parámetros, un orden de magnitud incompatible con cualquier transformer de captioning funcional (los modelos de esta familia manejan decenas de millones a miles de millones de parámetros). El tamaño del repositorio es de 0,0 GB y no se declara ningún *pipeline* de inferencia. Todo apunta a que el archivo safetensors es un artefacto residual o de prueba dentro de un repositorio cuyo propósito real es documental.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DVTA-YLOR/review-image-captioning-2024 | 24.832 | no disponible | no disponible (sin benchmarks) | MIT | safetensors en HuggingFace; 14 descargas |
+| DVTA-YLOR/review-image-captioning-2024 | 24.832 | no disponible | no disponible (sin benchmarks) | MIT | safetensors en Hugging Face; 14 descargas |
 | Modelos de referencia en image captioning (por ejemplo, la familia BLIP-2, LLaVA o GIT) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa no es aplicable: este repositorio no contiene un modelo entrenado, sino notas de investigación, por lo que no compite en la misma categoría que un sistema de captioning. Los nombres de la segunda fila se incluyen únicamente como referencia de la familia de modelos con la que se relacionan las notas; no se dispone de datos verificados sobre ellos en la información proporcionada, por lo que no se comparan parámetros, contexto ni resultados.
@@ -90,7 +90,7 @@ La comparación directa no es aplicable: este repositorio no contiene un modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DVTA-YLOR/review-image-captioning-2024
+- Hugging Face: https://huggingface.co/DVTA-YLOR/review-image-captioning-2024
 - GitHub srini0x00/dvta (no relacionado, entidad homónima): https://github.com/srini0x00/dvta
 - GitHub secvulture/dvta (no relacionado, entidad homónima): https://github.com/secvulture/dvta
 - arXiv 2405.14093, «A Survey on Vision-Language-Action Models for Embodied AI» (contexto general de visión-lenguaje, no vinculado al repositorio): https://arxiv.org/html/2405.14093v8

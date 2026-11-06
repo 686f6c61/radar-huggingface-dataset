@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Lucas-dubois/project-classification31` es un repositorio experimental publicado en HuggingFace por el usuario Lucas-dubois que contiene una implementacion propia de una arquitectura hibrida CNN-Transformer orientada a tareas de clasificacion. El repositorio no es un modelo entrenado: la model card especifica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*), no un checkpoint con resultados de benchmark. El peso total declarado en el archivo safetensors es de 24.832 parametros, una cifra que contrasta con la etiqueta "giant" (*scale: giant*) que aparece en la tabla de arquitectura de la model card.
+`Lucas-dubois/project-classification31` es un repositorio experimental publicado en Hugging Face por el usuario Lucas-dubois que contiene una implementacion propia de una arquitectura hibrida CNN-Transformer orientada a tareas de clasificacion. El repositorio no es un modelo entrenado: la model card especifica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*), no un checkpoint con resultados de benchmark. El peso total declarado en el archivo safetensors es de 24.832 parametros, una cifra que contrasta con la etiqueta "giant" (*scale: giant*) que aparece en la tabla de arquitectura de la model card.
 
 El interes del repositorio es, por tanto, documental y de investigacion: sirve como plantilla reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. Incluye `model.py` (implementacion y punto de entrada ejecutable), `config.json` (ajustes de arquitectura generados), `training_args.json` (receta de experimento por defecto) y `README.md`. La receta por defecto propone el optimizador Lion con un esquema de *linear warmup*, pero el autor aclara que son valores de partida del script y no evidencia de una ejecucion completada.
 
-Se publica bajo licencia MIT, con fecha de creacion y ultima actualizacion del 15 de septiembre de 2026 segun los metadatos de HuggingFace, cero descargas y cero *likes* en el momento de la consulta. No se ha publicado ninguna puntuacion de benchmark asociada.
+Se publica bajo licencia MIT, con fecha de creacion y ultima actualizacion del 15 de septiembre de 2026 segun los metadatos de Hugging Face, cero descargas y cero *likes* en el momento de la consulta. No se ha publicado ninguna puntuacion de benchmark asociada.
 
 ## Especificaciones tecnicas
 
@@ -89,5 +89,5 @@ No disponible. En la informacion proporcionada no se identifican modelos compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lucas-dubois/project-classification31
+- Repositorio en Hugging Face: https://huggingface.co/Lucas-dubois/project-classification31
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos relacionados con este modelo.

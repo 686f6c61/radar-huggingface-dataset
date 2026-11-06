@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DayTrader-2B-SQL es un modelo de lenguaje de 2.516.756.480 parámetros (aproximadamente 2,5B) publicado por el usuario `snsnc` en HuggingFace, especializado en generación de SQL para PostgreSQL a partir de preguntas en lenguaje natural, corrección de consultas usando los errores devueltos por la base de datos e interpretación de resultados de consulta. Es un fine-tuning de peso completo en BF16 sobre `openbmb/MiniCPM5-2B-SFT`, distribuido como modelo autónomo (no como adaptador) bajo licencia Apache-2.0.
+DayTrader-2B-SQL es un modelo de lenguaje de 2.516.756.480 parámetros (aproximadamente 2,5B) publicado por el usuario `snsnc` en Hugging Face, especializado en generación de SQL para PostgreSQL a partir de preguntas en lenguaje natural, corrección de consultas usando los errores devueltos por la base de datos e interpretación de resultados de consulta. Es un fine-tuning de peso completo en BF16 sobre `openbmb/MiniCPM5-2B-SFT`, distribuido como modelo autónomo (no como adaptador) bajo licencia Apache-2.0.
 
 El interés del modelo es acotado y muy específico: no compite como asistente general, sino como componente de un pipeline agéntico de text-to-SQL con tool calling nativo mediante marcado XML (`<function name="postgres_read"><param name="sql">...`). Su receta de entrenamiento es deliberadamente pequeña: 800 registros de entrenamiento y 524 de desarrollo en la etapa final (V4 `amplified_100`), con 100 actualizaciones de optimizador.
 
@@ -77,8 +77,8 @@ El propio autor advierte que la cifra global está dominada por las tareas de es
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DayTrader-2B-SQL | 2,52B | No disponible | Text-to-SQL PostgreSQL + tool calling | Apache-2.0 | HuggingFace, safetensors, 0 descargas |
-| openbmb/MiniCPM5-2B-SFT (base) | ~2B (no verificado en la información) | No disponible | Asistente general SFT | Apache-2.0 | HuggingFace |
+| DayTrader-2B-SQL | 2,52B | No disponible | Text-to-SQL PostgreSQL + tool calling | Apache-2.0 | Hugging Face, safetensors, 0 descargas |
+| openbmb/MiniCPM5-2B-SFT (base) | ~2B (no verificado en la información) | No disponible | Asistente general SFT | Apache-2.0 | Hugging Face |
 | Otras alternativas especializadas en text-to-SQL de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación relevante es contra el modelo base: DayTrader-2B-SQL añade formato de tool calling XML, sesgo hacia PostgreSQL y reparación guiada por errores, a costa de un ajuste muy estrecho (800 filas) que puede degradar el comportamiento generalista y el razonamiento financiero, según los propios diagnósticos internos del autor. No se dispone de datos de benchmarks públicos que permitan situarlo frente a otros modelos text-to-SQL de 1B-3B.
@@ -99,7 +99,7 @@ La comparación relevante es contra el modelo base: DayTrader-2B-SQL añade form
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/snsnc/DayTrader-2B-SQL
+- Modelo en Hugging Face: https://huggingface.co/snsnc/DayTrader-2B-SQL
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B-SFT
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada (la búsqueda web no devolvió resultados pertinentes sobre este modelo).

@@ -21,7 +21,7 @@ Se trata de un modelo de 7B parámetros basado en la arquitectura Qwen2.5 de Ali
 
 ## Arquitectura y entrenamiento
 
-El modelo base, Qwen2.5-7B-Instruct, es un transformer decoder-only con atención de consultas agrupadas (GQA) y ventana de contexto de 128K tokens, preentrenado sobre hasta 18 trillones de tokens según el reporte técnico de Qwen2.5. La capa de instrucción incorpora alineación mediante RLHF y DPO. El fine-tune descrito en esta ficha fue realizado con Unsloth y la librería TRL de HuggingFace, que aceleran el entrenamiento mediante optimizaciones de memoria y kernels específicos.
+El modelo base, Qwen2.5-7B-Instruct, es un transformer decoder-only con atención de consultas agrupadas (GQA) y ventana de contexto de 128K tokens, preentrenado sobre hasta 18 trillones de tokens según el reporte técnico de Qwen2.5. La capa de instrucción incorpora alineación mediante RLHF y DPO. El fine-tune descrito en esta ficha fue realizado con Unsloth y la librería TRL de Hugging Face, que aceleran el entrenamiento mediante optimizaciones de memoria y kernels específicos.
 
 No se proporciona información sobre el dataset de fine-tuning, el número de pasos, la tasa de aprendizaje ni las técnicas de alineación aplicadas en este checkpoint concreto. El nombre del repositorio indica una configuración de entrenamiento con "collapse" de números y "p10", pero no hay documentación técnica que aclare estos términos.
 
@@ -78,7 +78,7 @@ La comparación directa con Llama-3.1-8B no es posible sin benchmarks de este ch
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10-run2-gen13
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10-run2-gen13
 - Modelo base (unsloth): https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Reporte técnico de Qwen2.5 (arXiv): https://arxiv.org/pdf/2412.15115v2
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

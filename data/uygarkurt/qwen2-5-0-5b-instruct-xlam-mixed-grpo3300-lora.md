@@ -67,8 +67,8 @@ xLAM ETC es precisión exacta de llamada de herramienta; xLAM FNA es precisión 
 
 | Modelo | Parámetros | Contexto | xLAM ETC | BFCL Single-turn FC | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| Qwen2.5-0.5B-Instruct | ~0,5 B | No disponible | 63,84% | 50,28% | No disponible | HuggingFace: Qwen/Qwen2.5-0.5B-Instruct |
-| Qwen2.5-0.5B-Instruct-xlam-mixed-grpo3300-lora | ~0,5 B + adaptador LoRA | No disponible | 69,70% | 51,81% | No disponible | HuggingFace: uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-grpo3300-lora |
+| Qwen2.5-0.5B-Instruct | ~0,5 B | No disponible | 63,84% | 50,28% | No disponible | Hugging Face: Qwen/Qwen2.5-0.5B-Instruct |
+| Qwen2.5-0.5B-Instruct-xlam-mixed-grpo3300-lora | ~0,5 B + adaptador LoRA | No disponible | 69,70% | 51,81% | No disponible | Hugging Face: uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-grpo3300-lora |
 | Otros adaptadores LoRA de tool calling | No disponible | No disponible | No disponible | No disponible | No disponible | No se han proporcionado datos comparables |
 
 La comparación directa con el modelo base muestra una mejora clara en xLAM ETC y FNA y una mejora moderada en BFCL, junto con un descenso en relevancia y un retroceso leve en MMLU, MATH-500 e IFEval. No se dispone de datos de benchmarks de otros adaptadores comparables en la información proporcionada.
@@ -87,7 +87,7 @@ La comparación directa con el modelo base muestra una mejora clara en xLAM ETC 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-grpo3300-lora
+- Modelo en Hugging Face: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-grpo3300-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/uygarkurt/xlam-tool-calling-mixed
 - Repositorio Post-Training Lab: https://github.com/uygarkurt/post-training-lab

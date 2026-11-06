@@ -70,8 +70,8 @@ La informacion no incluye comparaciones directas con otros modelos. No obstante,
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: [Atomic-Germ/Deepseek-R1-Distill-Llama-8B-NPU2](https://huggingface.co/Atomic-Germ/Deepseek-R1-Distill-Llama-8B-NPU2)
-- Modelo base en HuggingFace: [deepseek-ai/DeepSeek-R1-Distill-Llama-8B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B)
+- Repositorio Hugging Face del modelo: [Atomic-Germ/Deepseek-R1-Distill-Llama-8B-NPU2](https://huggingface.co/Atomic-Germ/Deepseek-R1-Distill-Llama-8B-NPU2)
+- Modelo base en Hugging Face: [deepseek-ai/DeepSeek-R1-Distill-Llama-8B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B)
 - Repositorio de DeepSeek-R1 en GitHub: [https://github.com/deepseek-ai/DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1)
 - Pagina de NVIDIA NIM para el modelo base: [https://build.nvidia.com/deepseek-ai/deepseek-r1-distill-llama-8b](https://build.nvidia.com/deepseek-ai/deepseek-r1-distill-llama-8b)
 - Paper de DeepSeek-R1 (arXiv): [https://arxiv.org/abs/2501.12948](https://arxiv.org/abs/2501.12948)

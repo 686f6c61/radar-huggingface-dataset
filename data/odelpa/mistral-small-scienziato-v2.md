@@ -75,9 +75,9 @@ Resultados adicionales: adaptador a escala 1,0 («ft»): ARC-it 91,0 %, GSM8K 94
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| odelpa/mistral-small-scienziato-v2 (este) | 92,4 M entrenables sobre base 24B | no disponible | ARC-it 91,0 %, GSM8K 95,1 %, IFEval 75,7 %, identidad 100 % | Apache 2.0 | HuggingFace, Ollama |
-| odelpa/qwen14-scienziato-v2 | no disponible | no disponible | no disponible | no disponible | HuggingFace (modelo gemelo, misma receta) |
-| mistralai/Mistral-Small-3.2-24B-Instruct-2506 (base) | 24B | no disponible | ARC-it 90,9 %, GSM8K 95,1 %, IFEval 77,1 %, identidad 8 % | no disponible en la información | HuggingFace |
+| odelpa/mistral-small-scienziato-v2 (este) | 92,4 M entrenables sobre base 24B | no disponible | ARC-it 91,0 %, GSM8K 95,1 %, IFEval 75,7 %, identidad 100 % | Apache 2.0 | Hugging Face, Ollama |
+| odelpa/qwen14-scienziato-v2 | no disponible | no disponible | no disponible | no disponible | Hugging Face (modelo gemelo, misma receta) |
+| mistralai/Mistral-Small-3.2-24B-Instruct-2506 (base) | 24B | no disponible | ARC-it 90,9 %, GSM8K 95,1 %, IFEval 77,1 %, identidad 8 % | no disponible en la información | Hugging Face |
 
 No se dispone de datos de benchmarks de otras alternativas comparables en la información proporcionada.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks de otras alternativas comparables en la inf
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/odelpa/mistral-small-scienziato-v2
+- Hugging Face del adaptador: https://huggingface.co/odelpa/mistral-small-scienziato-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/odelpa/mistral-small-scienziato-v2-dati
 - Modelo gemelo: https://huggingface.co/odelpa/qwen14-scienziato-v2
 - Código: https://github.com/usergdp136/mistral-small-scienziato-v2

@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `danielharkin21/ncm-chat-experimental-generator` | no disponible (pesos fp16 de 177 MB) | prefijo de 128 tokens, respuesta de 48 | perdida en codigo 6.31 a 1.47; sin benchmarks publicos | MIT | HuggingFace, 0 descargas, 0 likes |
-| Checkpoint base NCM XSum (`hazyresearch/ncm-checkpoints`) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| `danielharkin21/ncm-chat-experimental-generator` | no disponible (pesos fp16 de 177 MB) | prefijo de 128 tokens, respuesta de 48 | perdida en codigo 6.31 a 1.47; sin benchmarks publicos | MIT | Hugging Face, 0 descargas, 0 likes |
+| Checkpoint base NCM XSum (`hazyresearch/ncm-checkpoints`) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Otros modelos pequenos de chat de proposito general | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de terceros que permitan una comparacion cuantitativa fiable. La unica comparacion documentada es con el checkpoint base del que deriva: comparten tokenizador VQ congelado y arquitectura, y difieren en que este checkpoint ha sido ajustado 4000 pasos para dialogo corto e instrucciones.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de especificaciones de terceros que perm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danielharkin21/ncm-chat-experimental-generator
+- Modelo en Hugging Face: https://huggingface.co/danielharkin21/ncm-chat-experimental-generator
 - Demo en Spaces: https://huggingface.co/spaces/danielharkin21/ncm-chat-experimental
 - Paper de NCM (arXiv 2610.14162): https://arxiv.org/abs/2610.14162
 - Repositorio de codigo de referencia: https://github.com/HazyResearch/ncm

@@ -56,7 +56,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: el modelo no indica una licencia en HuggingFace, lo que genera incertidumbre sobre su uso comercial.
+- Licencia no especificada: el modelo no indica una licencia en Hugging Face, lo que genera incertidumbre sobre su uso comercial.
 - Dependencia del modelo base: al ser un adaptador LoRA, requiere descargar y cargar Qwen2.5-VL-7B-Instruct, lo que condiciona el hardware y la disponibilidad.
 - Tamaño del adaptador: el repositorio solo contiene los pesos LoRA (0.3 GB), no el modelo completo; los usuarios deben integrarlo con el modelo base.
 - Riesgo de subjetividad: como reward model, las puntuaciones son inherentemente subjetivas y pueden no reflejar preferencias humanas en todos los casos.
@@ -65,8 +65,8 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chibifire/EditScore-7B
-- HuggingFace (organización EditScore): https://huggingface.co/EditScore/EditScore-7B
+- Hugging Face: https://huggingface.co/chibifire/EditScore-7B
+- Hugging Face (organización EditScore): https://huggingface.co/EditScore/EditScore-7B
 - Paper (arXiv): https://arxiv.org/abs/2509.23909
 - GitHub: https://github.com/VectorSpaceLab/EditScore
 - Página del proyecto: https://vectorspacelab.github.io/EditScore

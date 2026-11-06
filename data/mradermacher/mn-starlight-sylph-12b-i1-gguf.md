@@ -58,8 +58,8 @@ No se dispone de información suficiente para una comparativa exhaustiva con mod
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| MN-Starlight-Sylph-12B (base) | 12.247.782.400 | no disponible | Apache 2.0 | safetensors | HuggingFace |
-| MN-Starlight-Sylph-12B-i1-GGUF (este repo) | 12.247.782.400 | no disponible | Apache 2.0 | GGUF | HuggingFace |
+| MN-Starlight-Sylph-12B (base) | 12.247.782.400 | no disponible | Apache 2.0 | safetensors | Hugging Face |
+| MN-Starlight-Sylph-12B-i1-GGUF (este repo) | 12.247.782.400 | no disponible | Apache 2.0 | GGUF | Hugging Face |
 | Mistral NeMo 12B (referencia) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -74,7 +74,7 @@ No se dispone de información suficiente para una comparativa exhaustiva con mod
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/MN-Starlight-Sylph-12B-i1-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/MN-Starlight-Sylph-12B-i1-GGUF
 - Modelo base (EldritchLabs/MN-Starlight-Sylph-12B): https://huggingface.co/EldritchLabs/MN-Starlight-Sylph-12B
 - Quants estáticos (sin imatrix): https://huggingface.co/mradermacher/MN-Starlight-Sylph-12B-GGUF
 - Página de descargas del modelo: https://hf.tst.eu/model#MN-Starlight-Sylph-12B-i1-GGUF

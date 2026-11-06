@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Toby-NoSkillSon/heimdall-d1-v6",
+  "slug": "toby-noskillson-heimdall-d1-v6",
+  "author": "Toby-NoSkillSon",
+  "url": "https://huggingface.co/Toby-NoSkillSon/heimdall-d1-v6",
+  "created_at": "2026-11-04T17:42:08.000Z",
+  "updated_at": "2026-11-04T23:00:12.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "pl",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "nl",
+    "pt",
+    "ru",
+    "uk"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "voice-assistant",
+    "turn-taking",
+    "addressee-detection",
+    "liquid",
+    "lfm3",
+    "text-classification",
+    "en",
+    "pl",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "nl",
+    "pt",
+    "ru",
+    "uk",
+    "base_model:LiquidAI/d1-2B",
+    "base_model:finetune:LiquidAI/d1-2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6908482725,
+  "storage_human": "6.9 GB",
+  "base_model": "LiquidAI/d1-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Toby-NoSkillSon/heimdall-d1-v6 · Hugging Face",
+      "url": "https://huggingface.co/Toby-NoSkillSon/heimdall-d1-v6",
+      "snippet": "Heimdall D1 V6 is the decider inside Heimdall, a voice assistant. It listens to the live conversation and decides, moment by moment, whether the speech is meant for the assistant: It is not trained from scratch. It is a full fine-tune of LiquidAI/d1-2B (LFM architecture, about 2B parameters; its ..."
+    },
+    {
+      "title": "Toby-NoSkillSon/heimdall-d1-v6 at main - Hugging Face",
+      "url": "https://huggingface.co/Toby-NoSkillSon/heimdall-d1-v6/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main heimdall-d1-v6 6.91 GB Ctrl+K Ctrl+K 1 contributor History:6 commits Toby-NoSkillSon Model card: explain the decider, fine-tune lineage and training scale c5d43c1 verifiedabout 7 hours ago bf16Heimdall D1 V6 bf16 weightsabout 11 hours ago examplesModel card, licence, notice, configs, tokenizer and MLX ..."
+    }
+  ]
+}

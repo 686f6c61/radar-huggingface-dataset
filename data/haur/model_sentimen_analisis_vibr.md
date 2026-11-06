@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Haur/model_sentimen_analisis_vibr es un modelo de la familia BERT publicado en HuggingFace por el usuario Haur bajo licencia MIT. Por su nombre y por la etiqueta `bert` de la que está marcado, está orientado al análisis de sentimiento, presumiblemente en texto en indonesio (la abreviatura "vibr" no está documentada en la información disponible). El repositorio contiene 124.442.882 parámetros en formato safetensors, un tamaño coherente con un BERT-base o una variante similar, y ocupa 0,5 GB en disco.
+Haur/model_sentimen_analisis_vibr es un modelo de la familia BERT publicado en Hugging Face por el usuario Haur bajo licencia MIT. Por su nombre y por la etiqueta `bert` de la que está marcado, está orientado al análisis de sentimiento, presumiblemente en texto en indonesio (la abreviatura "vibr" no está documentada en la información disponible). El repositorio contiene 124.442.882 parámetros en formato safetensors, un tamaño coherente con un BERT-base o una variante similar, y ocupa 0,5 GB en disco.
 
 El modelo no cuenta con descargas ni likes en el momento de la consulta, y su model card no incluye más contenido que la declaración de licencia MIT: no hay información sobre datos de entrenamiento, idiomas, métricas ni uso previsto. Se trata, por tanto, de un checkpoint de publicación reciente (creado y actualizado en noviembre de 2026) sin documentación técnica asociada.
 
@@ -56,16 +56,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada en fp16: aproximadamente 0,25 GB.
 - GPU recomendadas: cualquier GPU consumer moderna (GTX 1650, RTX 3060, RTX 4090) es suficiente; también puede ejecutarse en CPU para lotes pequeños.
 - Cabe en GPU consumer: sí, con amplio margen, incluso en GPUs de gama baja.
-- Opciones de despliegue: al ser un modelo BERT en safetensors, es compatible con HuggingFace Transformers, así como con servidores de inferencia como TGI o vLLM (sujeto a validación de la arquitectura exacta). llama.cpp y Ollama no están orientados a modelos encoder-only de clasificación.
+- Opciones de despliegue: al ser un modelo BERT en safetensors, es compatible con Hugging Face Transformers, así como con servidores de inferencia como TGI o vLLM (sujeto a validación de la arquitectura exacta). llama.cpp y Ollama no están orientados a modelos encoder-only de clasificación.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Haur/model_sentimen_analisis_vibr | 124,4 M | no disponible | MIT | HuggingFace |
-| BERT-base (referencia de la familia) | ~110 M | 512 tokens (típico) | Apache 2.0 | HuggingFace |
-| DistilBERT-base | ~66 M | 512 tokens (típico) | Apache 2.0 | HuggingFace |
+| Haur/model_sentimen_analisis_vibr | 124,4 M | no disponible | MIT | Hugging Face |
+| BERT-base (referencia de la familia) | ~110 M | 512 tokens (típico) | Apache 2.0 | Hugging Face |
+| DistilBERT-base | ~66 M | 512 tokens (típico) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento del modelo evaluado que permitan una comparación cuantitativa con alternativas. La comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -80,4 +80,4 @@ No se dispone de datos de rendimiento del modelo evaluado que permitan una compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Haur/model_sentimen_analisis_vibr
+- Hugging Face: https://huggingface.co/Haur/model_sentimen_analisis_vibr

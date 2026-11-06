@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every24` es un ajuste fino publicado en HuggingFace por el usuario wz7475 sobre el modelo base Qwen2.5-7B-Instruct, según se deduce de la propia nomenclatura del identificador. Se trata de un repositorio de 0,3 GB de peso, lo que resulta incompatible con los aproximadamente 15 GB que ocuparían los pesos completos de un modelo de 7.000 millones de parametros en precision fp16/bf16. Por tanto, el contenido del repositorio corresponde casi con seguridad a un adaptador (probablemente LoRA) o a un checkpoint parcial, y no a un modelo completo listo para cargar de forma autonoma.
+El modelo `wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every24` es un ajuste fino publicado en Hugging Face por el usuario wz7475 sobre el modelo base Qwen2.5-7B-Instruct, según se deduce de la propia nomenclatura del identificador. Se trata de un repositorio de 0,3 GB de peso, lo que resulta incompatible con los aproximadamente 15 GB que ocuparían los pesos completos de un modelo de 7.000 millones de parametros en precision fp16/bf16. Por tanto, el contenido del repositorio corresponde casi con seguridad a un adaptador (probablemente LoRA) o a un checkpoint parcial, y no a un modelo completo listo para cargar de forma autonoma.
 
-La model card publicada es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen como `[More Information Needed]`. Esto significa que no es posible confirmar desde fuentes primarias ni la receta de entrenamiento, ni el dataset utilizado, ni el regimen de precision, ni los resultados de evaluacion.
+La model card publicada es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen como `[More Information Needed]`. Esto significa que no es posible confirmar desde fuentes primarias ni la receta de entrenamiento, ni el dataset utilizado, ni el regimen de precision, ni los resultados de evaluacion.
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente cautelar: sirve para documentar que el artefacto existe, que carece de documentacion verificable y que cualquier uso en produccion exigiria una auditoria previa del adaptador, la reproduccion del pipeline de fusion con el modelo base y una evaluacion propia. El unico tag tecnico informativo es `arxiv:1910.09700`, que corresponde al paper de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico y que aparece en la plantilla por defecto, no como referencia metodologica del autor.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every24 | no disponible (adaptador de 0,3 GB sobre base de 7,6 B) | no disponible | no disponible | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen2.5-7B-Instruct | 7,6 B | 32.768 tokens nativos, hasta 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 tokens | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | 8,0 B | 128.000 tokens | Licencia comunitaria de Meta con restricciones adicionales | HuggingFace |
+| wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every24 | no disponible (adaptador de 0,3 GB sobre base de 7,6 B) | no disponible | no disponible | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen2.5-7B-Instruct | 7,6 B | 32.768 tokens nativos, hasta 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 tokens | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | 8,0 B | 128.000 tokens | Licencia comunitaria de Meta con restricciones adicionales | Hugging Face |
 
 No es posible comparar rendimiento porque el modelo objeto de esta ficha no publica ninguna evaluacion.
 
@@ -84,7 +84,7 @@ No es posible comparar rendimiento porque el modelo objeto de esta ficha no publ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every24
+- Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every24
 - Paper citado en los tags del repositorio: https://arxiv.org/abs/1910.09700
 - Modelo base implicito, Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de Qwen2.5: https://github.com/QwenLM/Qwen2.5

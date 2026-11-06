@@ -94,7 +94,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Klissh/layoutlmv3-cord-v2
+- Modelo en Hugging Face: https://huggingface.co/Klissh/layoutlmv3-cord-v2
 - Modelo base: https://huggingface.co/microsoft/layoutlmv3-base
 - Dataset CORD-v2: https://huggingface.co/datasets/naver-clova-ix/cord-v2
 - Space que lo utiliza: https://huggingface.co/spaces/Klissh/managemymoney-scan-struk

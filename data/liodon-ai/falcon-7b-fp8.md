@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liodon-ai/falcon-7b-FP8
+- Modelo en Hugging Face: https://huggingface.co/liodon-ai/falcon-7b-FP8
 - Modelo base: https://huggingface.co/tiiuae/falcon-7b
 - Sitio web de Liodon AI: https://liodon.ai/
 - Repositorio de llm-compressor (herramienta de cuantización): https://github.com/vllm-project/llm-compressor

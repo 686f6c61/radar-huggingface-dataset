@@ -42,7 +42,7 @@ La innovación principal de esta conversión es el empaquetado para LiteRT-LM: i
 - Asistente conversacional en smartphone: el archivo int4 de 1,55 GB está diseñado para teléfonos y genera respuestas directas con baja latencia en GPU, ideal para aplicaciones de mensajería o asistentes de voz que necesitan respuestas rápidas sin conexión.
 - Tutor de matemáticas en el dispositivo: con el archivo int8 y el modo de razonamiento activado, el modelo completa cadenas de pensamiento largas (mediana de ~3.200 caracteres en CPU) y resuelve problemas de GSM8K con un 91 % de acierto, adecuado para apps educativas offline.
 - Aplicaciones de privacidad en el borde: la inferencia es completamente local, sin dependencia de servidores en la nube, lo que permite procesar datos sensibles en el propio dispositivo.
-- Prototipado en Google AI Edge Gallery: los archivos se importan directamente desde HuggingFace a la app Gallery en Android, permitiendo pruebas rápidas de razonamiento on-device sin infraestructura cloud.
+- Prototipado en Google AI Edge Gallery: los archivos se importan directamente desde Hugging Face a la app Gallery en Android, permitiendo pruebas rápidas de razonamiento on-device sin infraestructura cloud.
 - Chat multi-turno con memoria: el modelo mantiene el contexto en conversaciones de varios turnos, recordando información personal como nombres y ciudades, útil para asistentes personales y agentes de soporte locales.
 - Despliegue en entornos sin GPU: el archivo int8 en CPU mantiene un 91 % en GSM8K, por lo que es viable en servidores de borde o PCs sin aceleradora gráfica, siempre que la memoria disponible sea suficiente.
 - Razonamiento en aplicaciones de escritorio o Android: el int8 es la opción recomendada para tareas que requieren que el razonamiento termine, ya que el int4 en CPU tiende a agotar el presupuesto de tokens.
@@ -82,9 +82,9 @@ En el iPhone 17 Pro, el archivo int4 pasa 7/8 en Metal GPU (inicialización de 5
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| openbmb/MiniCPM5-2B | 2.5B | 131.000 tokens | bf16 (PyTorch) | Apache 2.0 | HuggingFace |
-| openbmb/MiniCPM5-2B-MLX | No disponible | No disponible | MLX | Apache 2.0 | HuggingFace |
-| mlboydaisuke/MiniCPM5-2B-LiteRT | 2.5B | 131.000 tokens | `.litertlm` (int4/int8) | Apache 2.0 | HuggingFace |
+| openbmb/MiniCPM5-2B | 2.5B | 131.000 tokens | bf16 (PyTorch) | Apache 2.0 | Hugging Face |
+| openbmb/MiniCPM5-2B-MLX | No disponible | No disponible | MLX | Apache 2.0 | Hugging Face |
+| mlboydaisuke/MiniCPM5-2B-LiteRT | 2.5B | 131.000 tokens | `.litertlm` (int4/int8) | Apache 2.0 | Hugging Face |
 
 Según una noticia sobre el lanzamiento de MiniCPM5-2B, el modelo promedia 53,9 en 34 benchmarks y supera a modelos de 4B comparados, aunque no se especifican los nombres de esos modelos en la información disponible. La versión LiteRT-LM es una cuantización del mismo modelo base, por lo que su rendimiento es ligeramente inferior en GSM8K (86-91 % frente al 92 % en bf16) y presenta limitaciones adicionales en el modo de razonamiento con int4.
 
@@ -101,7 +101,7 @@ Según una noticia sobre el lanzamiento de MiniCPM5-2B, el modelo promedia 53,9 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/MiniCPM5-2B-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/MiniCPM5-2B-LiteRT
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Versión MLX del modelo base: https://huggingface.co/openbmb/MiniCPM5-2B-MLX
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-feather_test_70eps es una política de visión-lenguaje-acción (VLA) publicada por DrainpipeAI en HuggingFace, obtenida mediante ajuste fino del modelo base lerobot/pi05_base. π₀.₅ (Pi05) es la evolución del modelo π₀ de Physical Intelligence, disenada para generalizar a entornos y situaciones no vistos durante el entrenamiento. El modelo se distribuye a través de la librería LeRobot y está orientado a control robótico de imitación.
+feather_test_70eps es una política de visión-lenguaje-acción (VLA) publicada por DrainpipeAI en Hugging Face, obtenida mediante ajuste fino del modelo base lerobot/pi05_base. π₀.₅ (Pi05) es la evolución del modelo π₀ de Physical Intelligence, disenada para generalizar a entornos y situaciones no vistos durante el entrenamiento. El modelo se distribuye a través de la librería LeRobot y está orientado a control robótico de imitación.
 
 El modelo consume observaciones multimodales (estado articular de 8 dimensiones y tres cámaras RGB de 400x640) y produce un vector de acción de 8 dimensiones. Con 4.143.404.816 parámetros, es un modelo de gran tamano para el dominio robótico, lo que refleja la componente de modelo de lenguaje y visión subyacente en la arquitectura VLA. El repositorio ocupa 9,4 GB en formato safetensors.
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DrainpipeAI/feather_test_70eps | 4.143.404.816 | no disponible | Manipulación (pick & place) | apache-2.0 | HuggingFace (LeRobot) |
-| lerobot/pi05_base | no disponible | no disponible | VLA base de propósito general | no disponible en la información | HuggingFace (LeRobot) |
+| DrainpipeAI/feather_test_70eps | 4.143.404.816 | no disponible | Manipulación (pick & place) | apache-2.0 | Hugging Face (LeRobot) |
+| lerobot/pi05_base | no disponible | no disponible | VLA base de propósito general | no disponible en la información | Hugging Face (LeRobot) |
 | π₀ (Pi0) | no disponible | no disponible | VLA de propósito general | no disponible en la información | OpenPI (open source) |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DrainpipeAI/feather_test_70eps
+- Modelo en Hugging Face: https://huggingface.co/DrainpipeAI/feather_test_70eps
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/DrainpipeAI/testing_feather_70eps
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=DrainpipeAI/testing_feather_70eps

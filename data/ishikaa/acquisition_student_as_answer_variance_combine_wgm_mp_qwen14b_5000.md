@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_student_AS_answer_variance_combine_WGM_MP_qwen14b_5000` es un checkpoint de tipo causal language model publicado en HuggingFace por el usuario `ishikaa`. Por su nombre y por los metadatos del repositorio, se trata de un fine-tuning derivado de la familia Qwen2 de 14B (el tag `qwen2` aparece explicitamente y el recuento real de parametros en safetensors es de 14.770.033.664, coherente con un Qwen2-14B). El identificador sugiere un experimento de destilacion o entrenamiento tipo "student" con tecnicas de combinacion de varianza de respuestas y agregacion de pesos (WGM/MP), probablemente en el contexto de un trabajo de investigacion sobre adquisicion de datos o active learning.
+El modelo `ishikaa/acquisition_student_AS_answer_variance_combine_WGM_MP_qwen14b_5000` es un checkpoint de tipo causal language model publicado en Hugging Face por el usuario `ishikaa`. Por su nombre y por los metadatos del repositorio, se trata de un fine-tuning derivado de la familia Qwen2 de 14B (el tag `qwen2` aparece explicitamente y el recuento real de parametros en safetensors es de 14.770.033.664, coherente con un Qwen2-14B). El identificador sugiere un experimento de destilacion o entrenamiento tipo "student" con tecnicas de combinacion de varianza de respuestas y agregacion de pesos (WGM/MP), probablemente en el contexto de un trabajo de investigacion sobre adquisicion de datos o active learning.
 
-La model card esta practicamente vacia: es la plantilla autogenerada por HuggingFace y todos los campos relevantes (autor, licencia, idiomas, datos de entrenamiento, evaluacion) figuran como "More Information Needed". No hay paper asociado, ni demo, ni documentacion adicional publicada por el autor. El unico enlace externo que aparece en los tags es la referencia generica a `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, no a este modelo.
+La model card esta practicamente vacia: es la plantilla autogenerada por Hugging Face y todos los campos relevantes (autor, licencia, idiomas, datos de entrenamiento, evaluacion) figuran como "More Information Needed". No hay paper asociado, ni demo, ni documentacion adicional publicada por el autor. El unico enlace externo que aparece en los tags es la referencia generica a `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, no a este modelo.
 
 Por tanto, esta ficha se limita a describir lo que se puede verificar objetivamente a partir de los metadatos del repositorio (arquitectura Qwen2, 14.770 millones de parametros, formato safetensors, 29,6 GB de pesos en el repo) y a marcar explicitamente como "no disponible" todo aquello que el autor no ha documentado. Es relevante para desarrolladores e investigadores que quieran reutilizar o inspeccionar el checkpoint, pero no debe tratarse como un modelo listo para produccion sin una evaluacion propia previa.
 
@@ -37,7 +37,7 @@ No hay informacion publicada sobre el proceso de entrenamiento: ni numero de tok
 
 - Generacion de texto autoregresiva en ingles y, presumiblemente, en otros idiomas del modelo base Qwen2, aunque el autor no lo documenta.
 - Conversacion multi-turno (tag `conversational` en el repo).
-- Compatible con Text Generation Inference (TGI) y con endpoints de HuggingFace (tags `text-generation-inference` y `endpoints_compatible`).
+- Compatible con Text Generation Inference (TGI) y con endpoints de Hugging Face (tags `text-generation-inference` y `endpoints_compatible`).
 - Razonamiento, codigo y matematicas: capacidades heredadas del modelo base Qwen2-14B, no verificadas en este checkpoint concreto.
 - Tool calling / function calling: no documentado para este checkpoint.
 - Modo thinking / razonamiento extendido: no documentado.
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `ishikaa/acquisition_student_AS_answer_variance_combine_WGM_MP_qwen14b_5000` | 14,77B | no disponible | no disponible | HuggingFace (0 descargas) | Checkpoint de investigacion sin documentacion |
-| Qwen2-14B (base oficial) | 14,77B | 131.072 tokens | Apache 2.0 (segun la familia Qwen2) | HuggingFace, ampliamente usado | Modelo base de referencia, documentado y evaluado |
-| Qwen2.5-14B | ~14,7B | 131.072 tokens (hasta 32K nativo) | Apache 2.0 | HuggingFace | Version posterior con mejoras en codigo y matematicas |
-| Llama 3.1 8B | 8,03B | 131.072 tokens | Llama 3.1 Community License | HuggingFace | Alternativa de menor tamano, licencia con restricciones |
+| `ishikaa/acquisition_student_AS_answer_variance_combine_WGM_MP_qwen14b_5000` | 14,77B | no disponible | no disponible | Hugging Face (0 descargas) | Checkpoint de investigacion sin documentacion |
+| Qwen2-14B (base oficial) | 14,77B | 131.072 tokens | Apache 2.0 (segun la familia Qwen2) | Hugging Face, ampliamente usado | Modelo base de referencia, documentado y evaluado |
+| Qwen2.5-14B | ~14,7B | 131.072 tokens (hasta 32K nativo) | Apache 2.0 | Hugging Face | Version posterior con mejoras en codigo y matematicas |
+| Llama 3.1 8B | 8,03B | 131.072 tokens | Llama 3.1 Community License | Hugging Face | Alternativa de menor tamano, licencia con restricciones |
 
 La comparativa con Qwen2-14B y Qwen2.5-14B es la mas directa por herencia arquitectonica; sin embargo, no hay datos de rendimiento publicados para este checkpoint que permitan afirmar si mejora o empeora respecto al base.
 
@@ -91,7 +91,7 @@ La comparativa con Qwen2-14B y Qwen2.5-14B es la mas directa por herencia arquit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_student_AS_answer_variance_combine_WGM_MP_qwen14b_5000
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_student_AS_answer_variance_combine_WGM_MP_qwen14b_5000
 - Referencia generica citada en los tags (no especifica del modelo): https://arxiv.org/abs/1910.09700
 - Repositorio oficial de Qwen2 (modelo base): https://github.com/QwenLM/Qwen2
 - Documentacion de Qwen2 en transformers: https://huggingface.co/docs/transformers/model_doc/qwen2

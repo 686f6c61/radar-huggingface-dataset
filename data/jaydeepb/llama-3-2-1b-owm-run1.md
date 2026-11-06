@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llama-3.2-1b-owm-run1` es un ajuste fino (fine-tune) de Llama-3.2-1B de Meta, publicado por el usuario `jaydeepb` en HuggingFace. El modelo se ha entrenado durante una época sobre una muestra de 1 millón de secuencias de 128 tokens extraídas del conjunto de datos OpenWebMath, un corpus masivo de contenido matemático extraído de la web. No se trata de un modelo de propósito general, sino de un artefacto experimental diseñado para estudiar el fenómeno de la memorización en modelos de lenguaje.
+`llama-3.2-1b-owm-run1` es un ajuste fino (fine-tune) de Llama-3.2-1B de Meta, publicado por el usuario `jaydeepb` en Hugging Face. El modelo se ha entrenado durante una época sobre una muestra de 1 millón de secuencias de 128 tokens extraídas del conjunto de datos OpenWebMath, un corpus masivo de contenido matemático extraído de la web. No se trata de un modelo de propósito general, sino de un artefacto experimental diseñado para estudiar el fenómeno de la memorización en modelos de lenguaje.
 
 Su relevancia radica en su papel dentro de una investigación sobre memorización extractable: las etiquetas de memorización generadas a partir de este modelo (run1) se utilizan para entrenar un clasificador que predice qué secuencias memorizará un modelo. Un modelo hermano, run2, entrenado sobre una muestra disjunta de 1 millón de secuencias, sirve como evaluación con datos frescos. Con 1.236 millones de parámetros y licencia Llama 3.2, es un recurso útil para investigadores que trabajan en privacidad, memorización y análisis de sobreajuste en modelos pequeños.
 
@@ -76,8 +76,8 @@ La comparación relevante es con su modelo base y con run2: run1 no compite en b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/llama-3.2-1b-owm-run1
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/llama-3.2-1b-owm-run1
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Dataset OpenWebMath: https://huggingface.co/datasets/open-web-math/open-web-math
 - Paper del dataset OpenWebMath: https://arxiv.org/abs/2310.06786
-- Modelo hermano (run2): no disponible (no se ha localizado el enlace directo; buscar en el perfil del autor en HuggingFace)
+- Modelo hermano (run2): no disponible (no se ha localizado el enlace directo; buscar en el perfil del autor en Hugging Face)

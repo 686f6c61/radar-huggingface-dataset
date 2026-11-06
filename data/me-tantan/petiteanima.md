@@ -80,8 +80,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/me-tantan/petiteAnima
-- Modelo base Anima (HuggingFace): https://huggingface.co/circlestone-labs/Anima
+- Repositorio Hugging Face: https://huggingface.co/me-tantan/petiteAnima
+- Modelo base Anima (Hugging Face): https://huggingface.co/circlestone-labs/Anima
 - Modelo base Anima (Civitai): https://civitai.com/models/2458426/anima
 - Backend de generacion stable-diffusion.cpp: https://github.com/leejet/stable-diffusion.cpp
 - Backend de traduccion llama.cpp: https://github.com/ggml-org/llama.cpp

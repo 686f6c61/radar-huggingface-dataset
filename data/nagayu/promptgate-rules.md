@@ -2,7 +2,7 @@
 
 ## Resumen
 
-promptgate-rules es un paquete de reglas versionable y auditable para inspeccionar prompts antes de que lleguen a un LLM. No es una red neuronal: no tiene pesos ni `config.json`. Se distribuye como un fichero JSON con 48 patrones de inyeccion de prompt, 21 patrones de credenciales, 6 detectores de PII y varios validadores (Luhn, entropia de Shannon, decodificacion y reescaneo de base64, desofuscacion de Unicode), acompanado de un matcher de referencia sin dependencias. Lo desarrolla el usuario NagaYu y se publica en HuggingFace bajo licencia Apache 2.0.
+promptgate-rules es un paquete de reglas versionable y auditable para inspeccionar prompts antes de que lleguen a un LLM. No es una red neuronal: no tiene pesos ni `config.json`. Se distribuye como un fichero JSON con 48 patrones de inyeccion de prompt, 21 patrones de credenciales, 6 detectores de PII y varios validadores (Luhn, entropia de Shannon, decodificacion y reescaneo de base64, desofuscacion de Unicode), acompanado de un matcher de referencia sin dependencias. Lo desarrolla el usuario NagaYu y se publica en Hugging Face bajo licencia Apache 2.0.
 
 El problema que aborda es el filtrado previo de entradas no confiables: deteccion de prompt injection, fuga de credenciales y datos personales identificables antes de enviar el texto a un modelo generativo. Su relevancia practica esta en el coste: se ejecuta en aproximadamente 0,2 ms por prompt en un solo nucleo de CPU y no necesita red, por lo que puede colocarse como primera barrera en cualquier pasarela de inferencia sin anadir GPU ni latencia apreciable.
 
@@ -25,7 +25,7 @@ La evaluacion publicada por el autor es inusualmente honesta y es el dato mas im
 
 No hay entrenamiento ni arquitectura neuronal. El sistema es un conjunto de reglas declarativas con un matcher secuencial que aplica patrones sobre el texto de entrada y devuelve un informe estructurado. Cada hallazgo incluye `type`, `score`, `span` (inicio y fin) y `match`, lo que permite resaltar o enmascarar la region exacta del prompt original. El motor expone tres veredictos (`allow`, `sanitize`, `block`), una severidad y una lista de tipos de riesgo. La funcion `redact` devuelve el texto enmascarado junto con un mapeo que permite restaurar los valores originales.
 
-Las familias de deteccion son `instruction_override` (ignorar u olvidar instrucciones previas, inversion de prioridades, equivalentes en japones), `role_hijack` (personas de jailbreak, modo desarrollador o dios, marcos hipoteticos), `prompt_extraction` (peticiones de revelar o codificar el system prompt), `delimiter_escape` (marcadores como `<|im_start|>`, `[INST]`, `<<SYS>>`, `</s>`), `exfiltration` (balizas de imagen Markdown, envio a URL, append-to-URL), `encoded_payload` (base64 y ROT13 decodificados y reescaneados, caracteres de ancho cero, bidi y de control), PII (EMAIL, PHONE internacional, CREDIT_CARD validada con Luhn, IP_ADDRESS solo publicas, DATE_OF_BIRTH, POSTAL_CODE) y secretos (OpenAI, Anthropic, GitHub, AWS, Slack, Google, HuggingFace, GitLab, Stripe, SendGrid, npm, Twilio, DigitalOcean, JWT, bloques de clave privada, cadenas de conexion, secretos asignados, pares credencial-identificador y cadenas de alta entropia).
+Las familias de deteccion son `instruction_override` (ignorar u olvidar instrucciones previas, inversion de prioridades, equivalentes en japones), `role_hijack` (personas de jailbreak, modo desarrollador o dios, marcos hipoteticos), `prompt_extraction` (peticiones de revelar o codificar el system prompt), `delimiter_escape` (marcadores como `<|im_start|>`, `[INST]`, `<<SYS>>`, `</s>`), `exfiltration` (balizas de imagen Markdown, envio a URL, append-to-URL), `encoded_payload` (base64 y ROT13 decodificados y reescaneados, caracteres de ancho cero, bidi y de control), PII (EMAIL, PHONE internacional, CREDIT_CARD validada con Luhn, IP_ADDRESS solo publicas, DATE_OF_BIRTH, POSTAL_CODE) y secretos (OpenAI, Anthropic, GitHub, AWS, Slack, Google, Hugging Face, GitLab, Stripe, SendGrid, npm, Twilio, DigitalOcean, JWT, bloques de clave privada, cadenas de conexion, secretos asignados, pares credencial-identificador y cadenas de alta entropia).
 
 Incluye guardas de precision explicitas: los rangos de IP privados o reservados no se tratan como dato personal, los digests hexadecimales y las huellas `SHA256:` no se consideran secretos, los placeholders del estilo `AKIA...EXAMPLE` o `your-key-here` se ignoran y las coincidencias dentro de una tarea del tipo "escribe una politica sobre..." se puntuan a la baja.
 
@@ -91,7 +91,7 @@ Rendimiento de ejecucion: aproximadamente 0,2 ms por prompt en un nucleo de CPU 
 - GPU recomendadas: ninguna. El motor es CPU-only por diseno.
 - Ejecucion en hardware de consumo: si, en cualquier CPU. Es el escenario previsto.
 - Huella de memoria: no disponible en la informacion proporcionada (el paquete son un JSON de reglas y un script de ~600 lineas).
-- Opciones de despliegue: biblioteca de Python (`RuleEngine.load_default()` leyendo `./rules.json`), carga directa desde HuggingFace (`RuleEngine.from_hub("NagaYu/promptgate-rules")`, requiere `huggingface_hub`), utilidad de linea de comandos con entrada por argumento o por `stdin`, e integracion en pipelines de shell mediante el codigo de salida 2.
+- Opciones de despliegue: biblioteca de Python (`RuleEngine.load_default()` leyendo `./rules.json`), carga directa desde Hugging Face (`RuleEngine.from_hub("NagaYu/promptgate-rules")`, requiere `huggingface_hub`), utilidad de linea de comandos con entrada por argumento o por `stdin`, e integracion en pipelines de shell mediante el codigo de salida 2.
 - Compatibilidad de despliegue con servidores de inferencia (vLLM, TGI, llama.cpp, Ollama): no disponible; el motor es un componente previo o posterior al servidor, no un backend de generacion.
 - Latencia estimada: ~0,2 ms por prompt en un nucleo de CPU.
 - Throughput estimado: ~5.000 prompts por segundo por nucleo (derivado de la latencia declarada); el escalado horizontal es trivial por no tener estado ni red.
@@ -102,7 +102,7 @@ La informacion proporcionada no incluye datos comparativos con otras soluciones.
 
 | Alternativa | Enfoque | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| promptgate-rules | Reglas JSON deterministas, sin pesos | No aplica | No aplica | Apache 2.0 | HuggingFace (`NagaYu/promptgate-rules`) |
+| promptgate-rules | Reglas JSON deterministas, sin pesos | No aplica | No aplica | Apache 2.0 | Hugging Face (`NagaYu/promptgate-rules`) |
 | Clasificadores neuronales de guardrails (por ejemplo, la familia Llama Guard) | Modelo neuronal de clasificacion de contenido | No disponible | No disponible | No disponible | No disponible |
 | Bibliotecas de deteccion de PII (por ejemplo, Presidio) | Reglas y modelos especificos de PII | No disponible | No disponible | No disponible | No disponible |
 | Frameworks de guardrails con DSL (por ejemplo, NeMo Guardrails) | Orquestacion de politicas, a menudo sobre un LLM | No disponible | No disponible | No disponible | No disponible |
@@ -125,7 +125,7 @@ Nota: los datos de las alternativas no proceden de la informacion proporcionada 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NagaYu/promptgate-rules
+- Modelo en Hugging Face: https://huggingface.co/NagaYu/promptgate-rules
 - Dataset de evaluacion: https://huggingface.co/datasets/NagaYu/promptgate-eval
 - Reproduccion de la evaluacion: `git clone https://huggingface.co/datasets/NagaYu/promptgate-eval` y `python promptgate-eval/eval.py --hub NagaYu/promptgate-rules --data promptgate-eval/data/test.jsonl`
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.

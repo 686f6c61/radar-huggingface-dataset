@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| A-l3cA (este modelo) | 780.979.360 | no disponible | no disponible | no disponible | HuggingFace, safetensors |
-| domFree/attune-j4 (padre) | no disponible | no disponible | no disponible | no disponible | HuggingFace, revisión 4a2651b08cb70332bfe9b86ef9b2efaff1825eb8 |
+| A-l3cA (este modelo) | 780.979.360 | no disponible | no disponible | no disponible | Hugging Face, safetensors |
+| domFree/attune-j4 (padre) | no disponible | no disponible | no disponible | no disponible | Hugging Face, revisión 4a2651b08cb70332bfe9b86ef9b2efaff1825eb8 |
 | Otras políticas RoboTwin-Vector | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación documentada es con el modelo padre attune-j4, del que hereda el layout de 753 tensores y sobre el que aplica una adaptación selectiva en cuatro tareas. No se dispone de datos de rendimiento de ninguno de los dos.
@@ -83,7 +83,7 @@ La única comparación documentada es con el modelo padre attune-j4, del que her
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Godwinlyamba/A-l3cA
+- Modelo en Hugging Face: https://huggingface.co/Godwinlyamba/A-l3cA
 - Modelo padre: https://huggingface.co/domFree/attune-j4
 - Revisión del padre usada: https://huggingface.co/domFree/attune-j4/tree/4a2651b08cb70332bfe9b86ef9b2efaff1825eb8
 - Harness RoboTwin-Vector: no disponible (no se proporciona enlace en la información)

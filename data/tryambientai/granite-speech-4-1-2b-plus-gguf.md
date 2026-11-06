@@ -106,7 +106,7 @@ La comparación con Whisper large-v3 se incluye por categoría (ASR multilingüe
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/tryambientai/granite-speech-4.1-2b-plus-gguf
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/tryambientai/granite-speech-4.1-2b-plus-gguf
 - Modelo base upstream: https://huggingface.co/ibm-granite/granite-speech-4.1-2b-plus
 - Commit upstream de referencia: https://huggingface.co/ibm-granite/granite-speech-4.1-2b-plus/commit/edd3bf5
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

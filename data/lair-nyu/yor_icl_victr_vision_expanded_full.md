@@ -4,7 +4,7 @@
 
 El modelo `lair-nyu/yor_icl_victr_vision_expanded_full` es un checkpoint de política robótica (VLA, Vision-Language-Action) desarrollado por el grupo LAIR de la Universidad de Nueva York (NYU), en el contexto del laboratorio CILVR. Se basa en el backbone `pi0.5` de Physical Intelligence y añade un mecanismo de recuperación visual `VICTR` para enriquecer el contexto de las acciones. El modelo fue entrenado con el framework openpi sobre el conjunto de datos `icl-dataset`, con una configuración de tareas ampliada (`expanded task set`). El checkpoint corresponde al paso 50 000 de entrenamiento, completado con normalidad, y contiene únicamente los pesos desplegables (`params/`) y estadísticas de normalización (`assets/`), sin el estado del optimizador.
 
-Este modelo es relevante en el ámbito de la robótica de manipulación, ya que integra recuperación de ejemplos visuales para mejorar la generalización de las políticas. Su publicación en HuggingFace permite a la comunidad reproducir y evaluar el comportamiento de un sistema que combina un modelo VLA de última generación con un mecanismo de atención sobre memoria visual. Sin embargo, la información pública disponible es muy limitada: no se especifican parámetros totales, contexto, licencia ni idiomas, lo que restringe su uso a entornos de investigación donde se pueda obtener documentación adicional del equipo autor.
+Este modelo es relevante en el ámbito de la robótica de manipulación, ya que integra recuperación de ejemplos visuales para mejorar la generalización de las políticas. Su publicación en Hugging Face permite a la comunidad reproducir y evaluar el comportamiento de un sistema que combina un modelo VLA de última generación con un mecanismo de atención sobre memoria visual. Sin embargo, la información pública disponible es muy limitada: no se especifican parámetros totales, contexto, licencia ni idiomas, lo que restringe su uso a entornos de investigación donde se pueda obtener documentación adicional del equipo autor.
 
 ## Especificaciones tecnicas
 
@@ -66,9 +66,9 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/lair-nyu/yor_icl_victr_vision_expanded_full)
+- [Modelo en Hugging Face](https://huggingface.co/lair-nyu/yor_icl_victr_vision_expanded_full)
 - [Repo similar: yor_icl_fast_victr_vision_expanded_full](https://huggingface.co/lair-nyu/yor_icl_fast_victr_vision_expanded_full)
-- [Perfil de LAIR NYU en HuggingFace](https://huggingface.co/lair-nyu/models)
+- [Perfil de LAIR NYU en Hugging Face](https://huggingface.co/lair-nyu/models)
 - [Laboratorio CILVR de NYU](https://wp.nyu.edu/cilvr/about-cilvr/)
 - [Publicaciones del CILVR](https://wp.nyu.edu/cilvr/cilvr-group-publications/)
 - [Repositorios de NYU-ICL en GitHub](https://github.com/orgs/NYU-ICL/repositories)

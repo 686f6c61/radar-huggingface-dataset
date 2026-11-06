@@ -6,7 +6,7 @@ Token-World es un conjunto de checkpoints reproducidos para el trabajo "Token-Wo
 
 El problema que resuelve es el modelado del mundo en el espacio latente de un VLM: en lugar de predecir pixeles directamente, el sistema comprime los tokens visuales de Qwen (108 tokens, 2.560 canales) a 16 canales manteniendo una rejilla espacial de 9x12, y aprende a predecir esa representacion comprimida a 50 Hz. Esto permite condicionar la generacion de futuros visuales sobre la representacion que el propio VLM utiliza, lo que facilita su integracion con politicas de manipulacion congeladas.
 
-Es relevante ahora porque propone un puente entre world models y VLMs sin reentrenar el backbone, con un protocolo de evaluacion abierto sobre el benchmark RoboTwin (50 tareas, 4.499 episodios de entrenamiento y 500 de validacion). El repositorio de HuggingFace ocupa 4,6 GB y contiene cuatro artefactos binarios en formato PyTorch (`.pt`), no pesos en safetensors ni GGUF.
+Es relevante ahora porque propone un puente entre world models y VLMs sin reentrenar el backbone, con un protocolo de evaluacion abierto sobre el benchmark RoboTwin (50 tareas, 4.499 episodios de entrenamiento y 500 de validacion). El repositorio de Hugging Face ocupa 4,6 GB y contiene cuatro artefactos binarios en formato PyTorch (`.pt`), no pesos en safetensors ni GGUF.
 
 ## Especificaciones tecnicas
 
@@ -75,7 +75,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Token-World
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Token-World | no disponible | no disponible | coseno accion 0,9598; NMSE 0,0782 | MIT | HuggingFace + ModelScope |
+| Token-World | no disponible | no disponible | coseno accion 0,9598; NMSE 0,0782 | MIT | Hugging Face + ModelScope |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,6 +92,6 @@ No se dispone de datos comparativos en la informacion proporcionada. Token-World
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChuyaoFu/Token-World
+- Hugging Face: https://huggingface.co/ChuyaoFu/Token-World
 - Repositorio de codigo: https://github.com/ChuyaoFu/Token-World
 - Mirror en ModelScope: https://modelscope.cn/models/Zellovo/Token-World

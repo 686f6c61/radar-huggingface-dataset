@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenThinker-7B es un modelo de lenguaje de 7.615.616.512 parámetros, publicado en HuggingFace como biennequants/OpenThinker-7B, que parte de Qwen/Qwen2.5-7B-Instruct y lo ajusta completamente sobre el dataset OpenThoughts-114k. Este dataset se obtiene destilando DeepSeek-R1 mediante un pipeline de generación de datos de razonamiento disponible en GitHub. El objetivo es ofrecer un modelo de razonamiento paso a paso con pesos, datos y código abiertos, en la línea de proyectos como Bespoke-Stratos-7B pero con un conjunto de entrenamiento mucho mayor (114k ejemplos frente a 17k).
+OpenThinker-7B es un modelo de lenguaje de 7.615.616.512 parámetros, publicado en Hugging Face como biennequants/OpenThinker-7B, que parte de Qwen/Qwen2.5-7B-Instruct y lo ajusta completamente sobre el dataset OpenThoughts-114k. Este dataset se obtiene destilando DeepSeek-R1 mediante un pipeline de generación de datos de razonamiento disponible en GitHub. El objetivo es ofrecer un modelo de razonamiento paso a paso con pesos, datos y código abiertos, en la línea de proyectos como Bespoke-Stratos-7B pero con un conjunto de entrenamiento mucho mayor (114k ejemplos frente a 17k).
 
 El modelo se presenta como una alternativa abierta a otros modelos de razonamiento destilados, como DeepSeek-R1-Distill-Qwen-7B, y mejora a Bespoke-Stratos-7B en los benchmarks publicados por sus autores. La arquitectura es un transformer decoder-only de la familia Qwen2.5, con una longitud de contexto no especificada en la información disponible. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
@@ -85,7 +85,7 @@ En benchmarks, OpenThinker-7B supera a Bespoke-Stratos-7B en todas las métricas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/biennequants/OpenThinker-7B
+- Modelo en Hugging Face: https://huggingface.co/biennequants/OpenThinker-7B
 - Paper de OpenThoughts: https://arxiv.org/abs/2506.04178
 - Blog de lanzamiento: https://www.open-thoughts.ai/blog/launch
 - Repositorio GitHub: https://github.com/open-thoughts/open-thoughts

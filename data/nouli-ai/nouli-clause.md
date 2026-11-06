@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nouli Clause | 1.178 M (decisión) | 512 tokens (evidencia) / 1.280 tokens (decisión) | NLI sobre checklist fija de 17 hipótesis de NDA | Apache-2.0 | HuggingFace + CLI local |
-| Ettin-1B (base) | 1 B | No disponible en la información | Codificador generalista | No disponible en la información | HuggingFace |
+| Nouli Clause | 1.178 M (decisión) | 512 tokens (evidencia) / 1.280 tokens (decisión) | NLI sobre checklist fija de 17 hipótesis de NDA | Apache-2.0 | Hugging Face + CLI local |
+| Ettin-1B (base) | 1 B | No disponible en la información | Codificador generalista | No disponible en la información | Hugging Face |
 | Jev 1.14.0 | No disponible | Contrato completo | Decisión sobre NDA (comparación citada por el autor) | No disponible | No disponible |
 
 No se dispone de datos suficientes para comparar rendimiento con alternativas; la única referencia es la comparación ilustrativa con Jev incluida en la model card.
@@ -81,7 +81,7 @@ No se dispone de datos suficientes para comparar rendimiento con alternativas; l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nouli-ai/nouli-clause
+- Modelo en Hugging Face: https://huggingface.co/nouli-ai/nouli-clause
 - Sitio del autor: https://nouli.ai
 - CLI de Nouli 0.4.2: https://github.com/standing-desks/nouli/releases/tag/v0.4.2
 - Modelo base Ettin-1B: https://huggingface.co/jhu-clsp/ettin-encoder-1b/tree/befd76be43d08b89ff9957012f3ff29d0842780b

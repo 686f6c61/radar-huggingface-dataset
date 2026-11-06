@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`itsaysouvyk/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium. No es un modelo de lenguaje: se trata de una politica entrenada para controlar el aterrizaje de un modulo lunar en un entorno fisico 2D, publicada en HuggingFace por el usuario `itsaysouvyk` mediante la libreria `stable-baselines3`.
+`itsaysouvyk/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium. No es un modelo de lenguaje: se trata de una politica entrenada para controlar el aterrizaje de un modulo lunar en un entorno fisico 2D, publicada en Hugging Face por el usuario `itsaysouvyk` mediante la libreria `stable-baselines3`.
 
 El modelo se distribuye en el formato habitual de Stable-Baselines3 y su model card es practicamente la plantilla automatica que genera la libreria al subir un agente al Hub: incluye la cabecera YAML con el `model-index`, pero el apartado de uso todavia contiene un `TODO` sin codigo funcional. La metrica declarada es un `mean_reward` de 219,74 con una desviacion tipica de 85,61 sobre LunarLander-v3, un valor marcado como no verificado (`verified: false`).
 
@@ -54,7 +54,7 @@ No se documenta ninguna innovacion tecnica adicional: no hay decodificacion espe
 - Reproduccion y ajuste fino: partir de estos pesos para continuar el entrenamiento con otros hiperparametros, otras semillas o variaciones del entorno, aprovechando que se trata de un modelo pequeno y de entrenamiento rapido en CPU.
 - Analisis de robustez y estabilidad: la desviacion tipica de 85,61 permite estudiar la varianza de la politica entre episodios, evaluar el impacto de la aleatoriedad del entorno y practicar tecnicas de evaluacion con multiples semillas.
 - Generacion de datos de demostracion: usar la politica para recolectar trayectorias etiquetadas que alimenten tecnicas de imitacion, aprendizaje por refuerzo offline o aprendizaje inverso.
-- Pruebas de integracion en pipelines de RL: validar el ciclo de subida y descarga de artefactos con `huggingface_sb3` y el Hub de HuggingFace, incluida la gestion de versiones de un checkpoint.
+- Pruebas de integracion en pipelines de RL: validar el ciclo de subida y descarga de artefactos con `huggingface_sb3` y el Hub de Hugging Face, incluida la gestion de versiones de un checkpoint.
 - Simulacion de sistemas de control para prototipado: emplear el bucle entorno-agente como banco de pruebas para envoltorios de monitorizacion, logging o seguridad antes de trasladarlos a dominios de control mas complejos.
 
 ## Benchmarks y rendimiento
@@ -79,12 +79,12 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos verificados en la informacion proporcionada. Las alternativas naturales en el mismo espacio serian otros agentes PPO entrenados sobre LunarLander-v3 publicados en HuggingFace por distintos autores, asi como agentes DQN, A2C o SAC sobre el mismo entorno, pero no se aportan sus parametros, contextos, metricas ni licencias.
+No se dispone de datos comparativos verificados en la informacion proporcionada. Las alternativas naturales en el mismo espacio serian otros agentes PPO entrenados sobre LunarLander-v3 publicados en Hugging Face por distintos autores, asi como agentes DQN, A2C o SAC sobre el mismo entorno, pero no se aportan sus parametros, contextos, metricas ni licencias.
 
 | Modelo | Entorno | Algoritmo | Parametros | Metrica (mean_reward) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | itsaysouvyk/ppo-LunarLander-v3 | LunarLander-v3 | PPO (stable-baselines3) | No disponible | 219,74 +/- 85,61 (no verificado) | No disponible | Repositorio de 0,0 GB; 0 descargas |
-| Otros agentes PPO para LunarLander-v3 en HuggingFace | LunarLander-v3 | PPO | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
+| Otros agentes PPO para LunarLander-v3 en Hugging Face | LunarLander-v3 | PPO | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 | Agentes DQN / A2C / SAC para LunarLander-v3 | LunarLander-v3 | DQN / A2C / SAC | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 Los resultados de busqueda web devueltos junto a la ficha corresponden a foros de hardware y a un programa de television, sin ninguna relacion con el modelo, por lo que no se han utilizado como fuente.
@@ -104,6 +104,6 @@ Los resultados de busqueda web devueltos junto a la ficha corresponden a foros d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsaysouvyk/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/itsaysouvyk/ppo-LunarLander-v3
 - Stable-Baselines3 (repositorio oficial): https://github.com/DLR-RM/stable-baselines3
 - No se han encontrado en la busqueda web enlaces relevantes (papers, blogs, repositorios o demostraciones) asociados a este modelo.

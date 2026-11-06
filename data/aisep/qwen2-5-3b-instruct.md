@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aisep/Qwen2.5-3B-Instruct es un repositorio de HuggingFace que aloja una copia del modelo instructivo Qwen2.5-3B-Instruct desarrollado por el equipo Qwen de Alibaba Cloud. Se trata de un modelo de lenguaje causal de 3.085.938.688 parámetros (3,09B) construido sobre el modelo base Qwen/Qwen2.5-3B y ajustado mediante instrucciones para tareas de conversación y generación de texto. El repositorio lo publica el usuario Aisep, no el equipo original de Qwen, por lo que debe considerarse una redistribución del modelo oficial.
+Aisep/Qwen2.5-3B-Instruct es un repositorio de Hugging Face que aloja una copia del modelo instructivo Qwen2.5-3B-Instruct desarrollado por el equipo Qwen de Alibaba Cloud. Se trata de un modelo de lenguaje causal de 3.085.938.688 parámetros (3,09B) construido sobre el modelo base Qwen/Qwen2.5-3B y ajustado mediante instrucciones para tareas de conversación y generación de texto. El repositorio lo publica el usuario Aisep, no el equipo original de Qwen, por lo que debe considerarse una redistribución del modelo oficial.
 
 El modelo resuelve tareas de generación de texto, razonamiento, código y matemáticas en un rango de tamaño que permite su despliegue en hardware de consumo. La familia Qwen2.5 introduce mejoras sustanciales sobre Qwen2 en conocimiento, seguimiento de instrucciones, generación de textos largos (más de 8K tokens), comprensión de datos estructurados (tablas) y generación de salidas JSON. El contexto completo es de 32.768 tokens con capacidad de generación de hasta 8.192 tokens.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Aisep/Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens | qwen-research | HuggingFace (redistribución) |
-| Qwen/Qwen2.5-3B-Instruct (original) | 3,09B | 32.768 tokens | qwen-research | HuggingFace (oficial) |
+| Aisep/Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens | qwen-research | Hugging Face (redistribución) |
+| Qwen/Qwen2.5-3B-Instruct (original) | 3,09B | 32.768 tokens | qwen-research | Hugging Face (oficial) |
 | Alternativas de ~3B | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada no incluye datos de rendimiento comparativo con otros modelos, por lo que no es posible establecer una comparación cuantitativa. La diferencia principal entre este repositorio y el modelo oficial Qwen/Qwen2.5-3B-Instruct es el publicador: Aisep redistribuye los pesos bajo la misma licencia qwen-research.
@@ -87,7 +87,7 @@ La información proporcionada no incluye datos de rendimiento comparativo con ot
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Aisep/Qwen2.5-3B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/Aisep/Qwen2.5-3B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B
 - Modelo oficial instructivo: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

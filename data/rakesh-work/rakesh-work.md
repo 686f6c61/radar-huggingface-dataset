@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `rakesh-work/rakesh-work` es un repositorio publicado en HuggingFace por el usuario `rakesh-work` el 4 de noviembre de 2026. La model card asociada contiene unicamente el campo de licencia (`mit`) y no incluye ninguna descripcion funcional, arquitectonica ni de uso. No se dispone de informacion sobre el pipeline, los idiomas soportados, el tamano del modelo ni el proposito del mismo.
+El modelo identificado como `rakesh-work/rakesh-work` es un repositorio publicado en Hugging Face por el usuario `rakesh-work` el 4 de noviembre de 2026. La model card asociada contiene unicamente el campo de licencia (`mit`) y no incluye ninguna descripcion funcional, arquitectonica ni de uso. No se dispone de informacion sobre el pipeline, los idiomas soportados, el tamano del modelo ni el proposito del mismo.
 
 El repositorio presenta cero descargas y cero interacciones (likes) en el momento de la consulta, lo que sugiere que se trata de un artefacto recien creado, posiblemente un espacio de pruebas o un placeholder. No hay evidencia de que contenga pesos de un modelo entrenado, tokenizador o configuracion de inferencia.
 
@@ -67,4 +67,4 @@ No es posible establecer una comparativa con modelos de la misma categoria porqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rakesh-work/rakesh-work
+- Repositorio en Hugging Face: https://huggingface.co/rakesh-work/rakesh-work

@@ -25,7 +25,7 @@ Se trata de una conversion, no de un reentrenamiento: el autor no aporta datos n
 | Modelo base | Qwen/Qwen-Image-2.1-Turbo |
 | Pipeline | text-to-image (y image-to-image / edicion) |
 | Tamano del repositorio | 29,9 GB |
-| Fecha de creacion / actualizacion | 2026-10-09 / 2026-10-09 (segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-10-09 / 2026-10-09 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 descargas, 9 likes |
 
 ## Arquitectura y entrenamiento
@@ -83,7 +83,7 @@ La informacion proporcionada solo permite comparar la conversion GGUF con su pro
 
 | Modelo | Parametros | Formato | VRAM | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Abiray/Qwen-Image-2.1-Turbo-GGUF | 7,12B (transformer de difusion) | GGUF (Q3_K_M a Q8_0) | 6-16 GB segun cuantizacion | qwen-research | Repositorio HuggingFace con 0 descargas, 9 likes |
+| Abiray/Qwen-Image-2.1-Turbo-GGUF | 7,12B (transformer de difusion) | GGUF (Q3_K_M a Q8_0) | 6-16 GB segun cuantizacion | qwen-research | Repositorio Hugging Face con 0 descargas, 9 likes |
 | Qwen/Qwen-Image-2.1-Turbo (base) | 7,12B (transformer de difusion) | No disponible en la informacion | No disponible | qwen-research | Repositorio oficial de Qwen |
 | Otros modelos de difusion de la misma categoria (FLUX, SDXL, etc.) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -101,9 +101,9 @@ La informacion proporcionada solo permite comparar la conversion GGUF con su pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Abiray/Qwen-Image-2.1-Turbo-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Abiray/Qwen-Image-2.1-Turbo-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
-- Organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen
 - Codificadores de texto y VAE (Comfy-Org/Qwen-Image-2.1): https://huggingface.co/Comfy-Org/Qwen-Image-2.1/tree/main/text_encoders y https://huggingface.co/Comfy-Org/Qwen-Image-2.1/tree/main/vae
 - Workflow text-to-image: https://huggingface.co/Abiray/Qwen-Image-2.1-GGUF/blob/main/Qwen_Image_2.1_GGUF_Text2Image.json
 - Workflow image-to-image / edicion: https://huggingface.co/Abiray/Qwen-Image-2.1-GGUF/blob/main/Qwen_Image_2.1_GGUF_Image2Image_Edit.json

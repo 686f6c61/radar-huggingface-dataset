@@ -86,8 +86,8 @@ Resultados con truncado de vectores (MRL):
 
 | Modelo | Parámetros | Contexto | Dimensiones | MTEB (multilingual, v2) | MTEB (code, v1) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| EmbeddingGemma 2 (este checkpoint) | 740M | 8.192 tokens | 768 (128/256/512 por MRL) | 61,36 | 78,68 | Apache 2.0 | HuggingFace (resubida de terceros) |
-| EmbeddingGemma 1 | no disponible | no disponible | no disponible | 61,15 | 68,76 | no disponible | HuggingFace |
+| EmbeddingGemma 2 (este checkpoint) | 740M | 8.192 tokens | 768 (128/256/512 por MRL) | 61,36 | 78,68 | Apache 2.0 | Hugging Face (resubida de terceros) |
+| EmbeddingGemma 1 | no disponible | no disponible | no disponible | 61,15 | 68,76 | no disponible | Hugging Face |
 | Otros modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada solo permite comparar con EmbeddingGemma 1, su predecesor directo. No se dispone de datos de otros modelos alternativos de embeddings en la documentación facilitada.
@@ -106,8 +106,8 @@ La información proporcionada solo permite comparar con EmbeddingGemma 1, su pre
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/liskasYR/embeddinggemma-2
-- Modelo oficial en HuggingFace: https://huggingface.co/google/embeddinggemma-2
+- Repositorio en Hugging Face: https://huggingface.co/liskasYR/embeddinggemma-2
+- Modelo oficial en Hugging Face: https://huggingface.co/google/embeddinggemma-2
 - GitHub de la familia Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2
 - Documentación: https://ai.google.dev/gemma/docs/embeddinggemma

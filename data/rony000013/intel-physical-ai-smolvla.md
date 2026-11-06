@@ -103,9 +103,9 @@ Los datos de los modelos alternativos proceden de su documentación pública y n
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| intel-physical-ai-smolvla (esta ficha) | 450 M | No disponible | Apache 2.0 | HuggingFace, con variantes OpenVINO y ONNX | 289,34 FPS / 3,03 ms en CPU Intel; 100 % de éxito en 10 semillas con perturbaciones |
-| SmolVLA base (familia, sin ajuste) | ~450 M | No disponible | Apache 2.0 | HuggingFace / LeRobot | No disponible para esta tarea |
-| OpenVLA | ~7 B | No disponible | Licencia propia (uso comercial restringido según versión) | HuggingFace | No disponible |
+| intel-physical-ai-smolvla (esta ficha) | 450 M | No disponible | Apache 2.0 | Hugging Face, con variantes OpenVINO y ONNX | 289,34 FPS / 3,03 ms en CPU Intel; 100 % de éxito en 10 semillas con perturbaciones |
+| SmolVLA base (familia, sin ajuste) | ~450 M | No disponible | Apache 2.0 | Hugging Face / LeRobot | No disponible para esta tarea |
+| OpenVLA | ~7 B | No disponible | Licencia propia (uso comercial restringido según versión) | Hugging Face | No disponible |
 | π0 (pi-zero) | ~3,3 B | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de resultados de benchmarks comunes (Libero, SimplerEnv u otros) que permitan una comparación cuantitativa fiable entre estos modelos en la información proporcionada.
@@ -124,7 +124,7 @@ No se dispone de resultados de benchmarks comunes (Libero, SimplerEnv u otros) q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rony000013/intel-physical-ai-smolvla
+- Modelo en Hugging Face: https://huggingface.co/rony000013/intel-physical-ai-smolvla
 - Dataset de entrenamiento: https://huggingface.co/datasets/rony000013/dinner-table
 - LeRobot (framework de políticas): https://github.com/huggingface/lerobot
 - OpenVINO (runtime de inferencia Intel): https://github.com/openvinotoolkit/openvino

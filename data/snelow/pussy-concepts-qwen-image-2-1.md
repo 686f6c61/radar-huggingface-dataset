@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`snelow/pussy-concepts-qwen-image-2.1` es un modelo derivado (fine-tune) del modelo de generacion y edicion de imagen Qwen-Image-2.1, publicado por el usuario snelow en HuggingFace. El repositorio no incluye model card con contenido tecnico: la unica informacion declarada por el autor es la licencia Apache-2.0 y la etiqueta `not-for-all-audiences`, que indica contenido dirigido a publico adulto. No se especifica el pipeline, los idiomas, el dataset de ajuste ni los hiperparametros de entrenamiento empleados.
+`snelow/pussy-concepts-qwen-image-2.1` es un modelo derivado (fine-tune) del modelo de generacion y edicion de imagen Qwen-Image-2.1, publicado por el usuario snelow en Hugging Face. El repositorio no incluye model card con contenido tecnico: la unica informacion declarada por el autor es la licencia Apache-2.0 y la etiqueta `not-for-all-audiences`, que indica contenido dirigido a publico adulto. No se especifica el pipeline, los idiomas, el dataset de ajuste ni los hiperparametros de entrenamiento empleados.
 
 El modelo base, Qwen-Image-2.1, es un modelo unificado de generacion texto-a-imagen y edicion de imagen desarrollado por el equipo Qwen (Alibaba), presentado en septiembre de 2026. Su componente de generacion visual tiene 7.000 millones de parametros distribuidos en 32 capas Single-Stream DiT (Diffusion Transformer), lo que lo situa en el rango de modelos que pueden ejecutarse en GPUs de consumo. Entre sus caracteristicas destacadas figura el soporte nativo de transparencia RGBA y la capacidad de realizar edicion de imagen ademas de generacion desde cero.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| snelow/pussy-concepts-qwen-image-2.1 | 7.000 millones en generacion visual (heredados) | no disponible | apache-2.0 declarada | HuggingFace, 0 descargas | Fine-tune de comunidad sin documentacion |
-| Qwen/Qwen-Image-2.1 (base) | 7.000 millones, 32 capas Single-Stream DiT | no disponible; soporte RGBA nativo | no disponible en la informacion recogida; fuentes secundarias indican solo investigacion | GitHub, HuggingFace, ModelScope | Modelo unificado de generacion y edicion |
-| Qwen-Image (version anterior) | no disponible | no disponible | apache-2.0 segun fuente secundaria | HuggingFace | Version previa del mismo linaje |
+| snelow/pussy-concepts-qwen-image-2.1 | 7.000 millones en generacion visual (heredados) | no disponible | apache-2.0 declarada | Hugging Face, 0 descargas | Fine-tune de comunidad sin documentacion |
+| Qwen/Qwen-Image-2.1 (base) | 7.000 millones, 32 capas Single-Stream DiT | no disponible; soporte RGBA nativo | no disponible en la informacion recogida; fuentes secundarias indican solo investigacion | GitHub, Hugging Face, ModelScope | Modelo unificado de generacion y edicion |
+| Qwen-Image (version anterior) | no disponible | no disponible | apache-2.0 segun fuente secundaria | Hugging Face | Version previa del mismo linaje |
 | Otras alternativas de difusion de tamano similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion recogida |
 
 ## Limitaciones y advertencias
@@ -87,9 +87,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/snelow/pussy-concepts-qwen-image-2.1
+- Repositorio en Hugging Face: https://huggingface.co/snelow/pussy-concepts-qwen-image-2.1
 - Repositorio GitHub del modelo base: https://github.com/QwenLM/Qwen-Image-2.1
-- Modelo base en HuggingFace (Qwen): https://huggingface.co/Qwen/Qwen-Image-2.1
+- Modelo base en Hugging Face (Qwen): https://huggingface.co/Qwen/Qwen-Image-2.1
 - Version del modelo base publicada por unsloth: https://huggingface.co/unsloth/Qwen-Image-2.1
 - Ficha del modelo base en ModelScope: https://modelscope.ai/models/Qwen/Qwen-Image-2.1
 - Analisis de terceros sobre Qwen Image 2.1: https://mybabes.ai/hub/models/qwen-image-2-1

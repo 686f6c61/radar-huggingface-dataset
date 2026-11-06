@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Parámetros | Precisión | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| AutomatosX/AX-Unlimited-OCR-3B-MoE-CUDA-AXQ-NVFP4-FP8-6bit | 2.675.503.360 (cuantizado) | Mezcla NVFP4 + FP8 E4M3, partes en BF16 | MIT | HuggingFace, vLLM, custom code | Development preview, sin certificar |
-| baidu/Unlimited-OCR (modelo base) | 3.336.106.240 | BF16 | MIT | HuggingFace | Modelo original de referencia |
+| AutomatosX/AX-Unlimited-OCR-3B-MoE-CUDA-AXQ-NVFP4-FP8-6bit | 2.675.503.360 (cuantizado) | Mezcla NVFP4 + FP8 E4M3, partes en BF16 | MIT | Hugging Face, vLLM, custom code | Development preview, sin certificar |
+| baidu/Unlimited-OCR (modelo base) | 3.336.106.240 | BF16 | MIT | Hugging Face | Modelo original de referencia |
 
 No se dispone de datos contrastados en la información proporcionada sobre otras alternativas de OCR basadas en modelos multimodales del mismo orden de tamaño, por lo que la comparativa se limita al modelo base y a los datos declarados en la model card. Cualquier comparación con otras familias requiere consultar sus propias fichas técnicas.
 
@@ -96,7 +96,7 @@ No se dispone de datos contrastados en la información proporcionada sobre otras
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Unlimited-OCR-3B-MoE-CUDA-AXQ-NVFP4-FP8-6bit
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Unlimited-OCR-3B-MoE-CUDA-AXQ-NVFP4-FP8-6bit
 - Modelo base: https://huggingface.co/baidu/Unlimited-OCR
 - Reproducción del smoke test: `examples/ocr_smoke.py` del repositorio AXQuant (referenciado en la model card, sin URL pública en la información disponible)
 - La búsqueda web realizada no ha devuelto resultados relevantes sobre este modelo: los enlaces obtenidos no guardan relación con el contenido de la ficha y se han descartado.

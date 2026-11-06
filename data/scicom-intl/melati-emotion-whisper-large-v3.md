@@ -87,10 +87,10 @@ La model card presenta los resultados de los modelos comparados únicamente en g
 
 | Modelo | Parámetros | Ventana / contexto | Tarea y salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Melati-Emotion-Whisper-Large-V3 | 637.301.288 | Audio fijo de 30 s | SER, 7 clases con umbrales calibrados | Investigación no comercial (`melati-emotion-research`) | HuggingFace, requiere `trust_remote_code` |
-| openai/whisper-large-v3 (modelo base) | ~1.550 M | Audio fijo de 30 s | ASR y traducción, salida de texto | MIT | HuggingFace, `transformers` |
-| emotion2vec+ (referencia citada en la model card, evaluada sobre EmoBox) | no disponible | no disponible | SER con embeddings auto-supervisados | no disponible en la información proporcionada | HuggingFace / repositorios de los autores |
-| Familia wav2vec2-base para SER (p. ej. el checkpoint SUPERB ER) | ~95 M | Audio de pocos segundos | SER, típicamente 4 clases (neutral, happy, angry, sad) | no verificado en esta búsqueda | HuggingFace, `transformers` |
+| Melati-Emotion-Whisper-Large-V3 | 637.301.288 | Audio fijo de 30 s | SER, 7 clases con umbrales calibrados | Investigación no comercial (`melati-emotion-research`) | Hugging Face, requiere `trust_remote_code` |
+| openai/whisper-large-v3 (modelo base) | ~1.550 M | Audio fijo de 30 s | ASR y traducción, salida de texto | MIT | Hugging Face, `transformers` |
+| emotion2vec+ (referencia citada en la model card, evaluada sobre EmoBox) | no disponible | no disponible | SER con embeddings auto-supervisados | no disponible en la información proporcionada | Hugging Face / repositorios de los autores |
+| Familia wav2vec2-base para SER (p. ej. el checkpoint SUPERB ER) | ~95 M | Audio de pocos segundos | SER, típicamente 4 clases (neutral, happy, angry, sad) | no verificado en esta búsqueda | Hugging Face, `transformers` |
 
 El modelo se distingue de los clasificadores ligeros tipo wav2vec2 por el número de clases (7 frente a 4) y por publicar umbrales y métricas de generalización entre corpus; su desventaja clara es la licencia, mucho más restrictiva que la MIT de Whisper o la de los checkpoints de SUPERB.
 
@@ -109,7 +109,7 @@ El modelo se distingue de los clasificadores ligeros tipo wav2vec2 por el númer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Scicom-intl/Melati-Emotion-Whisper-Large-V3
+- Modelo en Hugging Face: https://huggingface.co/Scicom-intl/Melati-Emotion-Whisper-Large-V3
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Código, entrenamiento y evaluación (Melati): https://github.com/Scicom-AI-Enterprise-Organization/Melati
 - Licencia del modelo: https://huggingface.co/Scicom-intl/Melati-Emotion-Whisper-Large-V3/blob/main/LICENSE

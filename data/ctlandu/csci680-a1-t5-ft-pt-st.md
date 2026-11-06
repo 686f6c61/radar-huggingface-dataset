@@ -73,11 +73,11 @@ El autor no publica resultados de MMLU, HumanEval, GSM8K ni de ningun otro bench
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `CTlandu/csci680-a1-t5-ft-pt-st` (este) | 60,5 M | No disponible | BLEU-4 0,14; EM 0,00; colapso a frase fija | No disponible | HuggingFace, 0 descargas |
-| `CTlandu/csci680-a1-t5-ft-pt` (condicion B del mismo autor) | 60,5 M (misma base) | No disponible | BLEU-4 0,97; 3.719 comentarios distintos | No disponible | HuggingFace |
-| `google-t5/t5-small` (modelo base original) | 60,5 M | 512 tokens (posiciones relativas) | No evaluado en esta tarea | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| `google/flan-t5-small` | 77 M | 512 tokens | No evaluado en esta tarea | Apache 2.0 | HuggingFace |
-| `Salesforce/codet5-small` | ~60 M | 512 tokens | No evaluado en esta tarea | Apache 2.0 | HuggingFace |
+| `CTlandu/csci680-a1-t5-ft-pt-st` (este) | 60,5 M | No disponible | BLEU-4 0,14; EM 0,00; colapso a frase fija | No disponible | Hugging Face, 0 descargas |
+| `CTlandu/csci680-a1-t5-ft-pt` (condicion B del mismo autor) | 60,5 M (misma base) | No disponible | BLEU-4 0,97; 3.719 comentarios distintos | No disponible | Hugging Face |
+| `google-t5/t5-small` (modelo base original) | 60,5 M | 512 tokens (posiciones relativas) | No evaluado en esta tarea | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| `google/flan-t5-small` | 77 M | 512 tokens | No evaluado en esta tarea | Apache 2.0 | Hugging Face |
+| `Salesforce/codet5-small` | ~60 M | 512 tokens | No evaluado en esta tarea | Apache 2.0 | Hugging Face |
 
 La comparacion de rendimiento con los modelos base y alternativos no esta disponible en la informacion proporcionada: no se han ejecutado sobre el mismo conjunto de test de 5.000 instancias.
 
@@ -96,7 +96,7 @@ La comparacion de rendimiento con los modelos base y alternativos no esta dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CTlandu/csci680-a1-t5-ft-pt-st
+- Modelo en Hugging Face: https://huggingface.co/CTlandu/csci680-a1-t5-ft-pt-st
 - Modelo base (preentrenado por el mismo autor): https://huggingface.co/CTlandu/csci680-a1-t5-small-pretrained
 - Modelo de la condicion B (multi-tarea, referencia comparativa): https://huggingface.co/CTlandu/csci680-a1-t5-ft-pt
 - Dataset de ajuste fino (Tufano et al., ICSE 2022), DOI: https://doi.org/10.5281/zenodo.5387856

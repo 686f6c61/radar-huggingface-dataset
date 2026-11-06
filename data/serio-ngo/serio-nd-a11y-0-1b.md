@@ -81,7 +81,7 @@ La comparación se limita a la arquitectura y el tamaño, ya que no se han publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/serio-ngo/serio-nd-a11y-0.1b
+- Modelo en Hugging Face: https://huggingface.co/serio-ngo/serio-nd-a11y-0.1b
 - Código e instrucciones: https://github.com/serio-ngo/serio-s1/tree/feat/serio-s1-mvp
 - Licencia: https://huggingface.co/serio-ngo/serio-nd-a11y-0.1b/blob/main/LICENSE
 - Autoría: https://huggingface.co/serio-ngo/serio-nd-a11y-0.1b/blob/main/NOTICE

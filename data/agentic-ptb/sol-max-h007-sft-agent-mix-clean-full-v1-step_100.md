@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `agentic-ptb/sol-max.h007.sft-agent-mix-clean-full-v1.step_100` es un checkpoint intermedio de un barrido (sweep) de entrenamiento del proyecto AgentPTB, publicado en HuggingFace por el usuario `agentic-ptb`. Se trata de un fine-tuning de tipo SFT (supervised fine-tuning) sobre el modelo base `Qwen/Qwen3.5-9B-Base`, con un total de 9.409.813.744 parámetros y un tamaño de repositorio de 18,8 GB en formato safetensors. El identificador del repositorio indica que corresponde a la celda `sol-max`, con un driver de generación de datos basado en Codex / gpt-5.6-sol con esfuerzo de razonamiento `max`, y que fue guardado a las 16,04 horas de una ejecución de 100 horas.
+El modelo `agentic-ptb/sol-max.h007.sft-agent-mix-clean-full-v1.step_100` es un checkpoint intermedio de un barrido (sweep) de entrenamiento del proyecto AgentPTB, publicado en Hugging Face por el usuario `agentic-ptb`. Se trata de un fine-tuning de tipo SFT (supervised fine-tuning) sobre el modelo base `Qwen/Qwen3.5-9B-Base`, con un total de 9.409.813.744 parámetros y un tamaño de repositorio de 18,8 GB en formato safetensors. El identificador del repositorio indica que corresponde a la celda `sol-max`, con un driver de generación de datos basado en Codex / gpt-5.6-sol con esfuerzo de razonamiento `max`, y que fue guardado a las 16,04 horas de una ejecución de 100 horas.
 
 Este checkpoint no es un modelo final listo para producción, sino una instantánea intermedia de un proceso de entrenamiento experimental. La propia model card advierte que el token `eos_token_id` está incompleto (falta el token `248046`, correspondiente a `<|im_end|>`), lo que provoca que el modelo no detenga correctamente las respuestas y pueda sobrepasar la ventana de contexto durante la evaluación. Por tanto, cualquier métrica obtenida con este checkpoint debe interpretarse como un límite inferior, no como una medición fiable. No se dispone de información sobre licencia, idiomas soportados, pipeline de uso ni resultados de benchmarks.
 
@@ -76,6 +76,6 @@ No se dispone de datos de rendimiento para comparar con otros modelos. El único
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max.h007.sft-agent-mix-clean-full-v1.step_100
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max.h007.sft-agent-mix-clean-full-v1.step_100
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) específicos de este checkpoint en la búsqueda web.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AgentGhost-Qwen3.5-9B-smoke-20261025 es un ajuste fino (finetune) del modelo Qwen/Qwen3.5-9B publicado por el usuario qiusizhan en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, acepta entradas combinadas de imagen y texto y genera respuestas conversacionales. El nombre incluye la etiqueta "diagnostic" y "smoke", lo que sugiere que se trata de una comprobación de humo (smoke test) o una versión de diagnóstico dentro de un pipeline de ajuste, más que un modelo de producción consolidado.
+AgentGhost-Qwen3.5-9B-smoke-20261025 es un ajuste fino (finetune) del modelo Qwen/Qwen3.5-9B publicado por el usuario qiusizhan en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, acepta entradas combinadas de imagen y texto y genera respuestas conversacionales. El nombre incluye la etiqueta "diagnostic" y "smoke", lo que sugiere que se trata de una comprobación de humo (smoke test) o una versión de diagnóstico dentro de un pipeline de ajuste, más que un modelo de producción consolidado.
 
-El modelo cuenta con 9.409.813.744 parámetros en formato safetensors y un repositorio de 19,3 GB. La arquitectura subyacente es qwen3_5, heredada del modelo base Qwen3.5-9B, y se distribuye bajo licencia Apache 2.0. El acceso está restringido (gated), por lo que es necesario aceptar las condiciones en HuggingFace antes de descargarlo.
+El modelo cuenta con 9.409.813.744 parámetros en formato safetensors y un repositorio de 19,3 GB. La arquitectura subyacente es qwen3_5, heredada del modelo base Qwen3.5-9B, y se distribuye bajo licencia Apache 2.0. El acceso está restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de descargarlo.
 
 Su relevancia es limitada en el momento de redacción: apenas 4 descargas y 0 likes, sin documentación publicada sobre datos de entrenamiento, benchmarks ni idiomas soportados. Debe evaluarse como un artefacto experimental de un tercero, no como un modelo de referencia.
 
@@ -31,7 +31,7 @@ No se han publicado datos sobre el corpus de entrenamiento, el número de tokens
 
 - Generación de texto conversacional en formato multi-turno (etiqueta "conversational").
 - Procesamiento conjunto de imagen y texto (pipeline image-text-to-text).
-- Compatibilidad con endpoints (etiqueta "endpoints_compatible"), lo que facilita su despliegue mediante la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints (etiqueta "endpoints_compatible"), lo que facilita su despliegue mediante la infraestructura de inferencia de Hugging Face.
 - Capacidades de tool calling, agentes, razonamiento multi-paso o modo thinking: no disponible en la información proporcionada.
 - Cobertura multilingüe: no disponible.
 
@@ -41,7 +41,7 @@ No se han publicado datos sobre el corpus de entrenamiento, el número de tokens
 - Evaluación comparativa frente al modelo base: sirve como referencia para medir el impacto de un ajuste concreto sobre Qwen3.5-9B en tareas image-text-to-text, siempre que se documente el dataset utilizado.
 - Prototipado de asistentes visuales: para experimentar con descripción de imágenes y diálogo multimodal en entornos de investigación con acceso controlado.
 - Validación de integración con transformers: al publicarse en formato safetensors y librería transformers, permite comprobar la compatibilidad de la clase qwen3_5 con versiones recientes de la librería.
-- Despliegue en endpoints de HuggingFace: la etiqueta endpoints_compatible facilita probar el modelo como servicio gestionado sin infraestructura propia.
+- Despliegue en endpoints de Hugging Face: la etiqueta endpoints_compatible facilita probar el modelo como servicio gestionado sin infraestructura propia.
 - Investigación sobre ajuste de modelos multimodales: útil para estudiar cómo un finetune de terceros modifica el comportamiento del modelo base en tareas de visión-lenguaje.
 
 ## Benchmarks y rendimiento
@@ -78,5 +78,5 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qiusizhan/AgentGhost-Qwen3.5-9B-smoke-20261025
+- Hugging Face: https://huggingface.co/qiusizhan/AgentGhost-Qwen3.5-9B-smoke-20261025
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

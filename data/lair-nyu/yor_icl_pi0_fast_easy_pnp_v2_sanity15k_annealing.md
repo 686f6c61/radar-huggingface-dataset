@@ -69,8 +69,8 @@ No se dispone de datos suficientes para una comparativa rigurosa. El modelo es u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lair-nyu/yor_icl_pi0_fast_easy_pnp_v2_sanity15k_annealing
-- Organización LAIR NYU en HuggingFace: https://huggingface.co/lair-nyu
+- Repositorio Hugging Face: https://huggingface.co/lair-nyu/yor_icl_pi0_fast_easy_pnp_v2_sanity15k_annealing
+- Organización LAIR NYU en Hugging Face: https://huggingface.co/lair-nyu
 - Checkpoint relacionado `sanity15k_annealing`: https://huggingface.co/lair-nyu/sanity15k_annealing
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Web de Physical Intelligence: https://www.pi.website/

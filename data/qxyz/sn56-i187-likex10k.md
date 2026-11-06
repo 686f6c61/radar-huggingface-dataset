@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qxyz/sn56-i187-likex10k es un adaptador de ajuste fino (fine-tuning) publicado en HuggingFace por el usuario qxyz. No se trata de un modelo completo, sino de un adaptador LoRA en formato PEFT que se monta sobre el modelo base unsloth/Meta-Llama-3.1-8B-Instruct. El repositorio ocupa 1,4 GB y esta etiquetado como resultado de un entrenamiento de tipo SFT (supervised fine-tuning) realizado con la libreria TRL.
+qxyz/sn56-i187-likex10k es un adaptador de ajuste fino (fine-tuning) publicado en Hugging Face por el usuario qxyz. No se trata de un modelo completo, sino de un adaptador LoRA en formato PEFT que se monta sobre el modelo base unsloth/Meta-Llama-3.1-8B-Instruct. El repositorio ocupa 1,4 GB y esta etiquetado como resultado de un entrenamiento de tipo SFT (supervised fine-tuning) realizado con la libreria TRL.
 
 El modelo base es Llama 3.1 8B Instruct de Meta, un transformer denso de aproximadamente 8 000 millones de parametros con una ventana de contexto de 128 000 tokens. El adaptador no modifica la arquitectura subyacente: anade matrices de bajo rango sobre las capas del modelo original, de modo que su huella en disco y en memoria es muy inferior a la de un ajuste completo. Segun las etiquetas del repositorio, el entrenamiento se realizo partiendo de la version ya convertida por Unsloth, lo que sugiere el uso de tecnicas de entrenamiento optimizadas en memoria.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un adaptador 
 | Licencia | no disponible |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA); libreria declarada: peft |
 | Tamano del repositorio | 1,4 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Modelo base | unsloth/Meta-Llama-3.1-8B-Instruct |
 | Fecha de creacion | 2026-10-03 |
 | Ultima actualizacion | 2026-10-03 |
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento real d
 
 - Ausencia total de documentacion: no se especifican dataset, hiperparametros, rango LoRA, modulos objetivo ni criterios de entrenamiento, lo que impide reproducir el resultado.
 - Cero adopcion verificable: el repositorio registra 0 descargas y 0 valoraciones, por lo que no existe evidencia externa de calidad o estabilidad.
-- Acceso restringido: el modelo es gated y exige aceptar condiciones en HuggingFace, lo que anade friccion para su evaluacion.
+- Acceso restringido: el modelo es gated y exige aceptar condiciones en Hugging Face, lo que anade friccion para su evaluacion.
 - Licencia no declarada: no se indica la licencia del adaptador. Esto genera incertidumbre juridica para uso comercial, agravada por la licencia Llama 3.1 Community que afecta al modelo base y que impone obligaciones adicionales (atribucion, condiciones de uso aceptable, clausula de escala).
 - Riesgo de alucinacion: inherente a los modelos de la familia Llama 3.1 8B, especialmente en tareas factuales y con contexto muy largo.
 - Sesgos: no evaluados para este adaptador. El modelo base presenta sesgos conocidos en genero, etnia y religion, y un ajuste SFT puede amplificarlos si el dataset empleado no estaba curado.
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento real d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qxyz/sn56-i187-likex10k
+- Modelo en Hugging Face: https://huggingface.co/qxyz/sn56-i187-likex10k
 - Perfil del autor: https://huggingface.co/qxyz
 - Modelos del autor: https://huggingface.co/qxyz/models
 - Modelo base (version Unsloth): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct

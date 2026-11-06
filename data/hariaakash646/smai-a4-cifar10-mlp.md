@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `smai-a4-cifar10-mlp` es un perceptrón multicapa (MLP) completamente conectado entrenado para clasificación de imágenes sobre el conjunto de datos CIFAR-10. Lo desarrolla el usuario de HuggingFace `hariaakash646` en el contexto de la asignatura SMAI (Statistical Methods in Artificial Intelligence), concretamente como parte del "Assignment 4, Section 1.5". No se trata de un modelo de lenguaje ni de un modelo fundacional: es un artefacto académico de pequeño tamaño pensado para demostrar un pipeline completo de entrenamiento y evaluación sobre datos de imagen.
+El modelo `smai-a4-cifar10-mlp` es un perceptrón multicapa (MLP) completamente conectado entrenado para clasificación de imágenes sobre el conjunto de datos CIFAR-10. Lo desarrolla el usuario de Hugging Face `hariaakash646` en el contexto de la asignatura SMAI (Statistical Methods in Artificial Intelligence), concretamente como parte del "Assignment 4, Section 1.5". No se trata de un modelo de lenguaje ni de un modelo fundacional: es un artefacto académico de pequeño tamaño pensado para demostrar un pipeline completo de entrenamiento y evaluación sobre datos de imagen.
 
 La arquitectura es deliberadamente simple: tres capas densas (3072 → 512 → 256 → 10) con activación ReLU en las capas ocultas y salida lineal de 10 logits, sumando 1.707.274 parámetros. Los pesos se distribuyen en formato NumPy (`.npz`), no en safetensors ni GGUF, y la inferencia se realiza con operaciones matriciales directas en NumPy, sin necesidad de framework de deep learning. Esto lo hace extremadamente ligero y fácil de inspeccionar, pero también limita su uso a tareas de clasificación de imágenes de 32x32 píxeles.
 
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Precisión test CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-a4-cifar10-mlp | 1.707.274 | no aplica | 0,5475 | no disponible | HuggingFace |
+| smai-a4-cifar10-mlp | 1.707.274 | no aplica | 0,5475 | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,5 +87,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hariaakash646/smai-a4-cifar10-mlp
-- Dataset CIFAR-10 en HuggingFace: https://huggingface.co/datasets/uoft-cs/cifar10
+- Modelo en Hugging Face: https://huggingface.co/hariaakash646/smai-a4-cifar10-mlp
+- Dataset CIFAR-10 en Hugging Face: https://huggingface.co/datasets/uoft-cs/cifar10

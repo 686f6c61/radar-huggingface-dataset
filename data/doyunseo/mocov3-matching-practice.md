@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Doyunseo/mocov3-matching-practice` es un repositorio de investigación publicado en HuggingFace por el usuario Doyunseo que implementa una variante de **MoCo v3** (aprendizaje autosupervisado por contraste con codificador de momento) orientada a una tarea denominada *matching*. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe como un prototipo con implementación propia en PyTorch, y el fichero `model.safetensors` se presenta explícitamente como un **checkpoint de inicialización para pruebas de humo**, no como un modelo entrenado ni evaluado.
+`Doyunseo/mocov3-matching-practice` es un repositorio de investigación publicado en Hugging Face por el usuario Doyunseo que implementa una variante de **MoCo v3** (aprendizaje autosupervisado por contraste con codificador de momento) orientada a una tarea denominada *matching*. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe como un prototipo con implementación propia en PyTorch, y el fichero `model.safetensors` se presenta explícitamente como un **checkpoint de inicialización para pruebas de humo**, no como un modelo entrenado ni evaluado.
 
 El dato más relevante para quien evalúe el repositorio es su escala real: el recuento de parámetros del fichero safetensors es de 16.576 (del orden de 1,6 × 10^4), mientras que la model card etiqueta la configuración como «giant». Esa contradicción, junto con un tamaño de repositorio de 0,0 GB y una fecha de creación declarada como 2026-10-18, indica que el artefacto es una plantilla de código y configuración más que un modelo con pesos útiles.
 
@@ -45,7 +45,7 @@ En cuanto al entrenamiento, el repositorio **no contiene un modelo entrenado**. 
 - Línea base de capacidad mínima: usar la inicialización sin entrenar como referencia inferior frente a un modelo entrenado, para cuantificar la ganancia real atribuible al entrenamiento y no a la arquitectura.
 - Prototipado de pipelines de *matching*: integrar el script en un flujo de datos propio y sustituir la cabeza o la pérdida para experimentar con el emparejamiento de pares, midiendo con validación emparejada a tres semillas.
 - Validación de licencia y gobernanza: al estar bajo BSD-3-Clause, sirve para ensayar procesos internos de aprobación de dependencias y de revisión de términos de datos externos antes de escalar a un modelo grande.
-- Estudio de metadatos de HuggingFace: caso práctico para auditar incoherencias entre etiquetas declaradas («giant») y recuentos reales de parámetros, y para diseñar controles automáticos de calidad en un catálogo de modelos.
+- Estudio de metadatos de Hugging Face: caso práctico para auditar incoherencias entre etiquetas declaradas («giant») y recuentos reales de parámetros, y para diseñar controles automáticos de calidad en un catálogo de modelos.
 
 ## Benchmarks y rendimiento
 
@@ -81,12 +81,12 @@ Los tres primeros repositorios comparten el mismo patrón: implementaciones de M
 - La tarea «matching» no se define en la documentación: no se especifica el tipo de pares, la métrica objetivo ni el formato de entrada, lo que impide reproducir una evaluación.
 - No se declaran idiomas soportados, por lo que no puede asumirse cobertura multilingüe de ningún tipo.
 - Licencia BSD-3-Clause: permite uso comercial y modificación con atribución y cláusula de no aval, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se emplean conjuntos externos.
-- Integración limitada: no existe pipeline declarado en HuggingFace ni compatibilidad directa con `transformers`; requiere código propio.
+- Integración limitada: no existe pipeline declarado en Hugging Face ni compatibilidad directa con `transformers`; requiere código propio.
 - Adopción prácticamente nula (10 descargas, 0 likes), sin revisión comunitaria que respalde su funcionamiento.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Doyunseo/mocov3-matching-practice
+- Repositorio en Hugging Face: https://huggingface.co/Doyunseo/mocov3-matching-practice
 - Perfil del autor en GitHub: https://github.com/DoYunseo
 - Implementación de referencia MoCo v3 (Meta / Facebook Research): https://github.com/facebookresearch/moco-v3
 - Repositorio relacionado, variante «tiny»: https://huggingface.co/altheavia/fun-matching

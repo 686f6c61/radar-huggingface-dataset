@@ -68,7 +68,7 @@ No se dispone de datos comparativos con otros modelos en la informacion proporci
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/Qwen3-Coder-Next-Uncensored-Heretic-i1-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/Qwen3-Coder-Next-Uncensored-Heretic-i1-GGUF
 - Repositorio con los quants estaticos: https://huggingface.co/mradermacher/Qwen3-Coder-Next-Uncensored-Heretic-GGUF
 - Modelo base (llmfan46): https://huggingface.co/llmfan46/Qwen3-Coder-Next-Uncensored-Heretic
 - Herramienta Heretic (eliminacion de censura): https://github.com/p-e-w/heretic

@@ -1,7 +1,7 @@
 # chimcis/GLM-5.3-DSpark-fast-2026-10-28
 
 ## Resumen
-GLM-5.3-DSpark-fast-2026-10-28 es un modelo borrador (drafter) para decodificación especulativa sobre el modelo base zai-org/GLM-5.3, publicado por el usuario chimcis en HuggingFace. No es un modelo generativo autónomo: su función es proponer bloques de tokens candidatos que el modelo grande verifica en paralelo, acelerando la decodificación sin alterar la distribución de salida del modelo principal. Emplea la técnica DSpark, un esquema de drafting por bloques con cabeza de Markov y cabeza de confianza.
+GLM-5.3-DSpark-fast-2026-10-28 es un modelo borrador (drafter) para decodificación especulativa sobre el modelo base zai-org/GLM-5.3, publicado por el usuario chimcis en Hugging Face. No es un modelo generativo autónomo: su función es proponer bloques de tokens candidatos que el modelo grande verifica en paralelo, acelerando la decodificación sin alterar la distribución de salida del modelo principal. Emplea la técnica DSpark, un esquema de drafting por bloques con cabeza de Markov y cabeza de confianza.
 
 El checkpoint corresponde a la ejecución "c3fixseg", paso 31 (el final tras 32 unidades), con 6 capas, tamaño oculto 6144, bloque de 16 tokens y cabeza de Markov de rango 256. El repositorio ocupa 4,7 GB y contiene 2.344.316.673 parámetros en formato safetensors. La model card indica que Prime Intellect lo sirve en la ruta interna `internal/glm-5.3-fast`.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K)
 
 | Modelo | Parámetros | Contexto | AL (offline, k=7) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-DSpark-fast-2026-10-28 | 2.344.316.673 | no disponible | 4,059 | other | HuggingFace (chimcis) |
+| GLM-5.3-DSpark-fast-2026-10-28 | 2.344.316.673 | no disponible | 4,059 | other | Hugging Face (chimcis) |
 | avg50 (dspark-b16-20261026avg50) | no disponible | no disponible | 3,989 | no disponible | no disponible |
 | c3base | no disponible | no disponible | 4,052 | no disponible | no disponible |
 | DFlash2 k=4 | no disponible | no disponible | 2,77 (en servicio) | no disponible | no disponible |
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K)
 - La información de la búsqueda web no contiene datos relevantes sobre este modelo; no se han podido verificar fuentes externas.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/chimcis/GLM-5.3-DSpark-fast-2026-10-28
+- Hugging Face: https://huggingface.co/chimcis/GLM-5.3-DSpark-fast-2026-10-28
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Rama de vLLM con kernels fusionados: PrimeIntellect-ai/vllm-prod, rama `chi/adaptive-varlen-v0.31.0` (no se dispone de URL directa en la información proporcionada)
 - Paper, blog o demo: no disponible

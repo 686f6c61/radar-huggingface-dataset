@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eng-latn-100mb-ppt-mp-struct-bcc-100mb_seed10` es un ajuste fino (SFT) del modelo base `goldfish-models/eng_latn_100mb`, publicado por el usuario de HuggingFace `francesca9805`. El modelo base pertenece a la familia Goldfish, una iniciativa centrada en modelos de lenguaje pequenos (en este caso, aproximadamente 100 MB de parametros) entrenados sobre corpus monolingues para distintos idiomas. El resultado es un modelo de generacion de texto de tipo GPT-2 con 124.770.816 parametros totales, empaquetado en safetensors y con un repositorio de 0,5 GB.
+`eng-latn-100mb-ppt-mp-struct-bcc-100mb_seed10` es un ajuste fino (SFT) del modelo base `goldfish-models/eng_latn_100mb`, publicado por el usuario de Hugging Face `francesca9805`. El modelo base pertenece a la familia Goldfish, una iniciativa centrada en modelos de lenguaje pequenos (en este caso, aproximadamente 100 MB de parametros) entrenados sobre corpus monolingues para distintos idiomas. El resultado es un modelo de generacion de texto de tipo GPT-2 con 124.770.816 parametros totales, empaquetado en safetensors y con un repositorio de 0,5 GB.
 
 El nombre del checkpoint sugiere un experimento academico de ajuste fino estructurado (posiblemente vinculado a tokenizadores y a un corpus de tipo BCC, como BCC-100M), aunque la model card no documenta ni el dataset de entrenamiento ni los objetivos concretos del ajuste. Se trata, por tanto, de un artefacto de investigacion mas que de un modelo listo para produccion.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| eng-latn-100mb-ppt-mp-struct-bcc-100mb_seed10 | 124,7 M | no disponible | no disponible | HuggingFace |
-| goldfish-models/eng_latn_100mb (base) | ~100 M | no disponible | no disponible | HuggingFace |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | HuggingFace |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache 2.0 | HuggingFace |
+| eng-latn-100mb-ppt-mp-struct-bcc-100mb_seed10 | 124,7 M | no disponible | no disponible | Hugging Face |
+| goldfish-models/eng_latn_100mb (base) | ~100 M | no disponible | no disponible | Hugging Face |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Hugging Face |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a tamano y disponibilidad, ya que no hay datos de rendimiento publicados para este checkpoint. Frente a GPT-2 small y SmolLM-135M, el modelo aqui descrito carece de licencia clara y de documentacion de contexto, lo que lo hace menos adecuado para uso en produccion.
 
@@ -82,7 +82,7 @@ La comparativa se limita a tamano y disponibilidad, ya que no hay datos de rendi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eng-latn-100mb-ppt-mp-struct-bcc-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eng-latn-100mb-ppt-mp-struct-bcc-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Run de Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/axi5yrzk
 - Repositorio TRL: https://github.com/huggingface/trl

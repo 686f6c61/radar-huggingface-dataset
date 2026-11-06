@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| graf/science_4b_mix_metropolis16_8b (este) | 7,57 B | no disponible | Scoring de secuencias científicas | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-8B (base) | 8,0 B | 131.072 tokens | Generación de texto multilingüe | Apache 2.0 | HuggingFace |
-| graf/science_4b_base_mixmetropolis32 | 4,0 B | no disponible | Scoring de secuencias científicas | no disponible | HuggingFace |
-| graf/science_4b_mix_metropolis32_4b | 4,0 B | no disponible | Scoring de secuencias científicas | no disponible | HuggingFace |
+| graf/science_4b_mix_metropolis16_8b (este) | 7,57 B | no disponible | Scoring de secuencias científicas | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-8B (base) | 8,0 B | 131.072 tokens | Generación de texto multilingüe | Apache 2.0 | Hugging Face |
+| graf/science_4b_base_mixmetropolis32 | 4,0 B | no disponible | Scoring de secuencias científicas | no disponible | Hugging Face |
+| graf/science_4b_mix_metropolis32_4b | 4,0 B | no disponible | Scoring de secuencias científicas | no disponible | Hugging Face |
 
 La comparativa directa con otros reward models (por ejemplo, los de RewardBench) no es posible sin datos de benchmarks. Los modelos del mismo autor con arquitectura de 4B comparten propósito pero difieren en tamaño y configuración de entrenamiento (Metropolis32 frente a Metropolis16). El modelo base Qwen3-8B conserva capacidades generativas que este checkpoint ha sacrificado en favor del scoring.
 
@@ -80,7 +80,7 @@ La comparativa directa con otros reward models (por ejemplo, los de RewardBench)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/graf/science_4b_mix_metropolis16_8b_solid-metropolis16-6cbbcf35-1-104-on
+- Modelo en Hugging Face: https://huggingface.co/graf/science_4b_mix_metropolis16_8b_solid-metropolis16-6cbbcf35-1-104-on
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/graf/qwen_4b_science_mix_train
 - Dataset de validación: https://huggingface.co/datasets/graf/qwen_4b_science_sciknowsci_val

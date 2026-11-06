@@ -81,9 +81,9 @@ El BF16 es determinista en estas pruebas: una segunda renderización con misma c
 
 | Modelo | Parámetros | Contexto / resolución | Cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| P-H3-Image-GGUF (AtomicChat) | ~20B (base 33B) | hasta 8 MP, edición con 8 imágenes | Q8_0, AD-Q6_K, AD-Q5_K, AD-Q4_K, AD-Q3_K | MiniMax H3 Community License | HuggingFace, GGUF para ComfyUI y stable-diffusion.cpp |
-| P-H3-Image BF16 (PrunaAI) | ~20B (base 33B) | hasta 8 MP, edición con 8 imágenes | BF16, w4a8, int8_convrot | MiniMax H3 Community License | HuggingFace, safetensors para ComfyUI |
-| Otros GGUF de P-H3-Image | ~20B (base 33B) | hasta 8 MP | Q4_K_M y otros | MiniMax H3 Community License | HuggingFace (medidos por AtomicChat) |
+| P-H3-Image-GGUF (AtomicChat) | ~20B (base 33B) | hasta 8 MP, edición con 8 imágenes | Q8_0, AD-Q6_K, AD-Q5_K, AD-Q4_K, AD-Q3_K | MiniMax H3 Community License | Hugging Face, GGUF para ComfyUI y stable-diffusion.cpp |
+| P-H3-Image BF16 (PrunaAI) | ~20B (base 33B) | hasta 8 MP, edición con 8 imágenes | BF16, w4a8, int8_convrot | MiniMax H3 Community License | Hugging Face, safetensors para ComfyUI |
+| Otros GGUF de P-H3-Image | ~20B (base 33B) | hasta 8 MP | Q4_K_M y otros | MiniMax H3 Community License | Hugging Face (medidos por AtomicChat) |
 
 No se dispone de información sobre otros modelos de difusión comparables (por ejemplo, familias alternativas de text-to-image de tamaño similar) en la documentación proporcionada.
 
@@ -100,7 +100,7 @@ No se dispone de información sobre otros modelos de difusión comparables (por 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AtomicChat/P-H3-Image-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AtomicChat/P-H3-Image-GGUF
 - Modelo base: https://huggingface.co/PrunaAI/P-H3-Image
 - Ficheros ComfyUI de Pruna (text encoder, VAE, upsampler): https://huggingface.co/PrunaAI/P-H3-Image-Comfy
 - MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3

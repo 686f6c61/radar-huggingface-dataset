@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Christophermoore/coca-multitask26` es un repositorio experimental de HuggingFace que contiene una implementación propia de una arquitectura CoCa (Contrastive Captioners) orientada a tareas multitarea. Lo publica el usuario Christophermoore y se presenta explícitamente como un esqueleto de código ("codebase") con una configuración a escala **nano**, pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No es un modelo entrenado: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un modelo con pesos ajustados.
+`Christophermoore/coca-multitask26` es un repositorio experimental de Hugging Face que contiene una implementación propia de una arquitectura CoCa (Contrastive Captioners) orientada a tareas multitarea. Lo publica el usuario Christophermoore y se presenta explícitamente como un esqueleto de código ("codebase") con una configuración a escala **nano**, pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No es un modelo entrenado: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un modelo con pesos ajustados.
 
 El modelo declarado contiene 24.832 parámetros totales según el recuento de safetensors, con atención de ventana deslizante (sliding window), fusión multimodal mediante descomposición de Tucker, activación mish y normalización rmsnorm. El repositorio ocupa 0.0 GB y acumula 0 descargas y 0 likes desde su creación en octubre de 2026, lo que refleja su carácter de artefacto interno de investigación más que de modelo distribuible.
 
@@ -75,7 +75,7 @@ La comparación relevante no es de rendimiento sino de propósito: los modelos C
 - El checkpoint no ha sido entrenado. No se ha auditado su robustez, equidad ni transferencia de dominio, según declara el propio autor.
 - Riesgo de alucinación: no evaluable, porque no hay modelo entrenado; las salidas de un checkpoint de inicialización son esencialmente aleatorias y no deben interpretarse como respuestas.
 - No se declara ningún idioma soportado ni ninguna longitud de contexto máxima, lo que impide planificar despliegues multilingües o con ventanas largas.
-- Requiere un adaptador explícito para cargarse: las APIs genéricas de carga automática de HuggingFace no funcionan con esta implementación a medida.
+- Requiere un adaptador explícito para cargarse: las APIs genéricas de carga automática de Hugging Face no funcionan con esta implementación a medida.
 - La licencia BSD-3-Clause permite uso comercial, pero exige conservar el aviso de copyright y la cláusula de exención, y prohíbe usar el nombre del autor o de los contribuyentes para promocionar derivados sin permiso. El propio autor recomienda revisar por separado los términos de los datos de origen si se usan datasets externos.
 - El repositorio tiene 0 descargas y 0 likes, sin issues ni comunidad documentada: no hay soporte externo ni validación por terceros.
 - Cualquier resultado obtenido con un checkpoint futuro debe documentarse por separado de los valores por defecto que se distribuyen aquí.
@@ -83,5 +83,5 @@ La comparación relevante no es de rendimiento sino de propósito: los modelos C
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Christophermoore/coca-multitask26
+- Repositorio en Hugging Face: https://huggingface.co/Christophermoore/coca-multitask26
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

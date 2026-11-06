@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OtomashinVLM es un modelo publicado en HuggingFace por el usuario jixx01x bajo licencia Apache 2.0. Por el nombre se intuye que se trata de un modelo de vision-lenguaje (VLM), aunque la model card no incluye ninguna descripcion, documentacion tecnica ni detalles sobre arquitectura, entrenamiento o capacidades. El repositorio no cuenta con descargas ni interacciones y la unica informacion disponible en la model card es la declaracion de licencia.
+OtomashinVLM es un modelo publicado en Hugging Face por el usuario jixx01x bajo licencia Apache 2.0. Por el nombre se intuye que se trata de un modelo de vision-lenguaje (VLM), aunque la model card no incluye ninguna descripcion, documentacion tecnica ni detalles sobre arquitectura, entrenamiento o capacidades. El repositorio no cuenta con descargas ni interacciones y la unica informacion disponible en la model card es la declaracion de licencia.
 
 En el momento de redactar esta ficha no se ha publicado informacion sobre parametros, longitud de contexto, datos de entrenamiento, idiomas soportados ni resultados de benchmarks. Se trata, por tanto, de un modelo practicamente sin documentar, lo que limita enormemente cualquier evaluacion tecnica rigurosa.
 
@@ -80,4 +80,4 @@ No es posible establecer una comparativa fiable sin conocer el tamano, la arquit
 
 ## Enlaces
 
-- [HuggingFace: jixx01x/otomashinVLM](https://huggingface.co/jixx01x/otomashinVLM)
+- [Hugging Face: jixx01x/otomashinVLM](https://huggingface.co/jixx01x/otomashinVLM)

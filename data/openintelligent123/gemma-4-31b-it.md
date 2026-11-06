@@ -81,7 +81,7 @@ Esta comparativa se basa en especificaciones públicas. No se incluyen resultado
 
 ## Enlaces
 
-- [HuggingFace - Openintelligent123/gemma-4-31B-it](https://huggingface.co/Openintelligent123/gemma-4-31B-it)
+- [Hugging Face - Openintelligent123/gemma-4-31B-it](https://huggingface.co/Openintelligent123/gemma-4-31B-it)
 - [Model card oficial de Gemma 4 (Google AI for Developers)](https://ai.google.dev/gemma/docs/core/model_card_4)
 - [Blog de lanzamiento de Gemma 4](https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/)
 - [Technical Report (arxiv:2607.02770)](https://arxiv.org/abs/2607.02770)

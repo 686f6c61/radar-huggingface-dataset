@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`innoblabla/devracage_sphere_GR00T17_abs` es una política robótica de imitación publicada en HuggingFace por el usuario `innoblabla`, construida sobre la arquitectura GR00T N1.7 de NVIDIA y empaquetada con la librería LeRobot. No es un modelo de lenguaje: es un modelo de control visuomotor que, a partir de tres flujos de cámara, el estado proprioceptivo del robot y una instrucción en lenguaje natural, predice directamente acciones de 6 grados de libertad para un brazo seguidor de tipo `so_follower`.
+`innoblabla/devracage_sphere_GR00T17_abs` es una política robótica de imitación publicada en Hugging Face por el usuario `innoblabla`, construida sobre la arquitectura GR00T N1.7 de NVIDIA y empaquetada con la librería LeRobot. No es un modelo de lenguaje: es un modelo de control visuomotor que, a partir de tres flujos de cámara, el estado proprioceptivo del robot y una instrucción en lenguaje natural, predice directamente acciones de 6 grados de libertad para un brazo seguidor de tipo `so_follower`.
 
 El modelo parte de un backbone Cosmos-Reason2/Qwen3-VL (visión-lenguaje) y de un transformador de acciones con flow matching, según indica la propia model card. Con 3.144.016.000 parámetros totales y un repositorio de 12,6 GB, se trata de un ajuste fino (fine-tuning) del modelo fundacional abierto y multi-embodiment de NVIDIA, especializado aquí en una única tarea: recoger una esfera de un contenedor y colocarla en un bol.
 
@@ -84,9 +84,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `innoblabla/devracage_sphere_GR00T17_abs` | 3,14 mil millones | No disponible | apache-2.0 | HuggingFace, via LeRobot | Ajuste fino de GR00T N1.7 sobre 352 episodios y una tarea |
+| `innoblabla/devracage_sphere_GR00T17_abs` | 3,14 mil millones | No disponible | apache-2.0 | Hugging Face, via LeRobot | Ajuste fino de GR00T N1.7 sobre 352 episodios y una tarea |
 | NVIDIA GR00T N1.7 / Isaac-GR00T | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Repositorio GitHub de NVIDIA | Modelo fundacional base sobre el que se construye este ajuste |
-| Alternativas de imitacion en LeRobot (ACT, diffusion policy) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | HuggingFace, via LeRobot | Políticas más ligeras, sin backbone vision-lenguaje fundacional |
+| Alternativas de imitacion en LeRobot (ACT, diffusion policy) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Hugging Face, via LeRobot | Políticas más ligeras, sin backbone vision-lenguaje fundacional |
 | Otros modelos fundacionales de robot (por ejemplo, familia pi0 o SmolVLA) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Publicaciones propias de cada proyecto | No se dispone de datos verificados en la información aportada |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la información proporcionada.
@@ -107,7 +107,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/innoblabla/devracage_sphere_GR00T17_abs
+- Modelo en Hugging Face: https://huggingface.co/innoblabla/devracage_sphere_GR00T17_abs
 - Dataset de entrenamiento: https://huggingface.co/datasets/innoblabla/devracage_sphere
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=innoblabla/devracage_sphere
 - Repositorio Isaac-GR00T de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T

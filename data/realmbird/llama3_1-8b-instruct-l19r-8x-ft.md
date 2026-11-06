@@ -93,9 +93,9 @@ text-eval (1 millón de tokens de SlimPajama, sin plantilla, pasados por el mode
 
 | Modelo | Capa | Latentes | Entrenado sobre | L0 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Realmbird/Llama3_1-8B-Instruct-L19R-8x-ft (este) | 19 | 32.768 | Llama-3.1-8B-**Instruct** + WildChat (19,99 M tokens) | 50 | llama3.1 | HuggingFace, con `sae_config.json`; 0 descargas y 0 likes en el momento del análisis |
-| fnlp/Llama3_1-8B-Base-LXR-8x (Llama Scope L19R-8x) | 19 | 32.768 | Llama-3.1-8B-**Base** + SlimPajama | ≈50 con la puerta por latente | no disponible | HuggingFace; es el checkpoint del que parte este |
-| Goodfire/Llama-3.1-8B-Instruct-SAE-l19 | 19 | no disponible | no disponible (Instruct, según el nombre) | no disponible | no disponible | HuggingFace |
+| Realmbird/Llama3_1-8B-Instruct-L19R-8x-ft (este) | 19 | 32.768 | Llama-3.1-8B-**Instruct** + WildChat (19,99 M tokens) | 50 | llama3.1 | Hugging Face, con `sae_config.json`; 0 descargas y 0 likes en el momento del análisis |
+| fnlp/Llama3_1-8B-Base-LXR-8x (Llama Scope L19R-8x) | 19 | 32.768 | Llama-3.1-8B-**Base** + SlimPajama | ≈50 con la puerta por latente | no disponible | Hugging Face; es el checkpoint del que parte este |
+| Goodfire/Llama-3.1-8B-Instruct-SAE-l19 | 19 | no disponible | no disponible (Instruct, según el nombre) | no disponible | no disponible | Hugging Face |
 
 La comparación directa con Llama Scope es la más informativa: mismo diccionario y misma anchura, pero especializado en chat. Frente a B0-pub (mismo L0 ≈ 50), este checkpoint mejora el FVU de chat de 0,355 a 0,269 y el ΔCE de 0,237 a 0,180 nats, mientras que empeora en texto plano (FVU de 0,304 a 0,348; ΔCE de 0,244 a 0,355). No se dispone de datos públicos del SAE de Goodfire para comparar.
 
@@ -114,7 +114,7 @@ La comparación directa con Llama Scope es la más informativa: mismo diccionari
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Realmbird/Llama3_1-8B-Instruct-L19R-8x-ft
+- Modelo en Hugging Face: https://huggingface.co/Realmbird/Llama3_1-8B-Instruct-L19R-8x-ft
 - Configuración del SAE: https://huggingface.co/Realmbird/Llama3_1-8B-Instruct-L19R-8x-ft/blob/main/sae_config.json
 - Checkpoint de partida (Llama Scope L19R-8x): https://huggingface.co/fnlp/Llama3_1-8B-Base-LXR-8x
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

@@ -82,8 +82,8 @@ Auditoría manual de 10 ítems: el juez coincide con la calificación humana den
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| r4w-faq-qwen05b-lora | 0,5 B (base) + LoRA r=16 | no disponible | FAQ financiero Chile (adaptador) | apache-2.0 | HuggingFace (16 descargas) |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,5 B | no disponible en la informacion proporcionada | Asistente general | apache-2.0 | HuggingFace (modelo base) |
+| r4w-faq-qwen05b-lora | 0,5 B (base) + LoRA r=16 | no disponible | FAQ financiero Chile (adaptador) | apache-2.0 | Hugging Face (16 descargas) |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,5 B | no disponible en la informacion proporcionada | Asistente general | apache-2.0 | Hugging Face (modelo base) |
 | Adaptadores LoRA de dominio publico comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa cuantitativa con alternativas de la misma categoría (adaptadores LoRA de dominio sobre SLM) no está disponible en la información proporcionada. El modelo base Qwen2.5-0.5B-Instruct es la referencia directa y sirve como línea base en los resultados antes/después.
@@ -102,7 +102,7 @@ La comparativa cuantitativa con alternativas de la misma categoría (adaptadores
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gdelacasa/r4w-faq-qwen05b-lora
+- Modelo en Hugging Face: https://huggingface.co/gdelacasa/r4w-faq-qwen05b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio PEFT: https://github.com/huggingface/peft
 - Repositorio Transformers: https://github.com/huggingface/transformers

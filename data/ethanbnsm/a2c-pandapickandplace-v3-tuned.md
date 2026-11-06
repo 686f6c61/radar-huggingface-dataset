@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ethanbnsm/a2c-PandaPickAndPlace-v3-tuned` es un agente de aprendizaje por refuerzo (reinforcement learning) entrenado con el algoritmo A2C (Advantage Actor-Critic) de la librería stable-baselines3 para resolver el entorno `PandaPickAndPlace-v3`, un problema de manipulación robótica en el que el agente debe colocar un objeto en una posición objetivo usando un brazo robótico. Fue subido al repositorio de HuggingFace por el usuario `ethanbnsm`, aunque el repositorio no contiene pesos descargables (el tamaño del repo es 0.0 GB) y solo incluye una model card con un resultado declarado.
+El modelo `ethanbnsm/a2c-PandaPickAndPlace-v3-tuned` es un agente de aprendizaje por refuerzo (reinforcement learning) entrenado con el algoritmo A2C (Advantage Actor-Critic) de la librería stable-baselines3 para resolver el entorno `PandaPickAndPlace-v3`, un problema de manipulación robótica en el que el agente debe colocar un objeto en una posición objetivo usando un brazo robótico. Fue subido al repositorio de Hugging Face por el usuario `ethanbnsm`, aunque el repositorio no contiene pesos descargables (el tamaño del repo es 0.0 GB) y solo incluye una model card con un resultado declarado.
 
-La ficha declara un `mean_reward` de -50.00 ± 0.00 en la tarea, un valor que el propio autor marca como no verificado. Este modelo resulta relevante como ejemplo de integración de stable-baselines3 con el Hub de HuggingFace, especialmente para quien busque reutilizar agentes RL en entornos robóticos. No se aportan detalles sobre la arquitectura de la política, el número de parámetros, la longitud de contexto ni la licencia, por lo que la información técnica disponible es incompleta.
+La ficha declara un `mean_reward` de -50.00 ± 0.00 en la tarea, un valor que el propio autor marca como no verificado. Este modelo resulta relevante como ejemplo de integración de stable-baselines3 con el Hub de Hugging Face, especialmente para quien busque reutilizar agentes RL en entornos robóticos. No se aportan detalles sobre la arquitectura de la política, el número de parámetros, la longitud de contexto ni la licencia, por lo que la información técnica disponible es incompleta.
 
 ## Especificaciones tecnicas
 
@@ -52,7 +52,7 @@ Este resultado indica que el agente obtiene una recompensa media de -50.00 con d
 - Comparacion de algoritmos: se puede usar como baseline para comparar el rendimiento de otros algoritmos de RL (PPO, SAC, TD3) en `PandaPickAndPlace-v3`.
 - Reproduccion de experimentos: el usuario puede descargar el agente y evaluarlo en el mismo entorno para verificar si realmente alcanza la recompensa declarada.
 - Desarrollo de pipelines de manipulacion robotica: aunque el agente no resuelve la tarea de forma optima, puede integrarse en un prototipo para validar la interfaz de control del brazo.
-- Educacion: sirve como ejemplo para ilustrar como publicar y cargar agentes RL en HuggingFace usando `huggingface_sb3`.
+- Educacion: sirve como ejemplo para ilustrar como publicar y cargar agentes RL en Hugging Face usando `huggingface_sb3`.
 - Extension a otros entornos: la metodologia de entrenamiento puede adaptarse a tareas similares de colocacion o alcance en simuladores como PyBullet o MuJoCo.
 
 ## Benchmarks y rendimiento
@@ -87,5 +87,5 @@ No se han encontrado resultados comparables en la informacion proporcionada. La 
 
 ## Enlaces
 
-- Página de HuggingFace: https://huggingface.co/ethanbnsm/a2c-PandaPickAndPlace-v3-tuned
+- Página de Hugging Face: https://huggingface.co/ethanbnsm/a2c-PandaPickAndPlace-v3-tuned
 - Repositorio de stable-baselines3: https://github.com/DLR-RM/stable-baselines3 (enlace general de la libreria, no especifico del modelo)

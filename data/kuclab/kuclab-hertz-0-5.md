@@ -99,7 +99,7 @@ La comparación directa más relevante es con su modelo base `gemma-4-12B-it`: e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KucLab/kuclab-hertz-0.5
+- Modelo en Hugging Face: https://huggingface.co/KucLab/kuclab-hertz-0.5
 - Versión anterior Hertz 0.4: https://huggingface.co/KucLab/kuclab-hertz-0.4
 - Versión anterior Hertz 0.3: https://huggingface.co/KucLab/kuclab-hertz-0.3
 - Sitio de KucLab: https://kuclab.org/
@@ -205,7 +205,7 @@ La comparacion mas relevante es con su modelo base: el ajuste fino sacrifica 7,0
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KucLab/kuclab-hertz-0.5
+- Modelo en Hugging Face: https://huggingface.co/KucLab/kuclab-hertz-0.5
 - Version anterior Hertz 0.4: https://huggingface.co/KucLab/kuclab-hertz-0.4
 - Version anterior Hertz 0.3: https://huggingface.co/KucLab/kuclab-hertz-0.3
 - Sitio de KucLab: https://kuclab.org/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `safafaf22/MyAwesomeModel-TestRepository` es un espacio en HuggingFace que, por sus características, parece ser un repositorio de prueba o un placeholder creado por el usuario `safafaf22`. No contiene información sustancial sobre un modelo real: no tiene descripción, ni licencia, ni idiomas declarados, ni métricas de descargas o popularidad. Fue creado y actualizado el 3 de septiembre de 2026, con cero descargas y cero likes, lo que refuerza la hipótesis de que se trata de un repositorio de testeo.
+El repositorio `safafaf22/MyAwesomeModel-TestRepository` es un espacio en Hugging Face que, por sus características, parece ser un repositorio de prueba o un placeholder creado por el usuario `safafaf22`. No contiene información sustancial sobre un modelo real: no tiene descripción, ni licencia, ni idiomas declarados, ni métricas de descargas o popularidad. Fue creado y actualizado el 3 de septiembre de 2026, con cero descargas y cero likes, lo que refuerza la hipótesis de que se trata de un repositorio de testeo.
 
 Los únicos datos técnicos disponibles provienen de las etiquetas: se indica que es compatible con la librería `transformers`, que usa `pytorch`, y que el pipeline declarado es `feature-extraction`. La etiqueta `bert` sugiere que podría estar relacionado con la arquitectura BERT, aunque no hay ningún archivo de pesos, configuración o tokenizador que lo confirme. No se puede considerar un modelo utilizable ni evaluable con la información existente.
 
@@ -55,7 +55,7 @@ No se pueden estimar requisitos de hardware sin conocer el tamano del modelo. Al
 - VRAM estimada para inferencia: ~1-2 GB en FP16 para BERT-base.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (GTX 1660, RTX 3060, etc.).
 - Si cabe en consumer GPU: si, en la mayoria de GPUs modernas.
-- Opciones de despliegue: HuggingFace Inference Endpoints, vLLM, ONNX Runtime o TensorRT.
+- Opciones de despliegue: Hugging Face Inference Endpoints, vLLM, ONNX Runtime o TensorRT.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -72,4 +72,4 @@ No disponible. No se puede comparar un modelo sin informacion real sobre sus car
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/safafaf22/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/safafaf22/MyAwesomeModel-TestRepository

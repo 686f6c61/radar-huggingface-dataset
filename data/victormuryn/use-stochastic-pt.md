@@ -73,7 +73,7 @@ La comparación directa entre estos modelos solo es posible mediante evaluación
 - **Licencia**: Apache 2.0 permite uso comercial sin restricciones, pero el autor no ofrece garantías de calidad o soporte.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/victormuryn/use-stochastic-pt
+- Modelo en Hugging Face: https://huggingface.co/victormuryn/use-stochastic-pt
 - Colección Ukrainian Sentence Embeddings: https://huggingface.co/collections/victormuryn/ukrainian-sentence-embeddings-use
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 - Corpus UberText 2.0: https://lang.org.ua/en/ubertext/

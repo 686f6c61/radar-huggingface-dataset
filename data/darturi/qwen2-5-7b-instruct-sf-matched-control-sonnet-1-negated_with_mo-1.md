@@ -114,7 +114,7 @@ No se dispone de datos de rendimiento de ninguno de los cuatro artefactos, por l
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/darturi/Qwen2.5-7B-Instruct-SF-matched-control-sonnet-1-NEGATED_WITH_MO-1
+- Página de Hugging Face del modelo: https://huggingface.co/darturi/Qwen2.5-7B-Instruct-SF-matched-control-sonnet-1-NEGATED_WITH_MO-1
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Minuendo (adaptador fuente): https://huggingface.co/darturi/Qwen2.5-7B-Instruct-SF-matched-control-sonnet-1
 - Sustraendo (adaptador fuente): https://huggingface.co/darturi/Averaged_MO_Qwen7B_Adapters-1

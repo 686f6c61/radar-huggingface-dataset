@@ -77,10 +77,10 @@ Detalles de medición: rúbrica `italian_food_preference` (2 criterios conductua
 
 | Modelo | Parametros | Contexto | QER / comportamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`...olmo_posthoc_unmixed_sdf`, step-56) | 999,9M | no disponible | QER test 0,136 ± 0,016 | apache-2.0 | HuggingFace |
-| `gemma_3_1b_vanilla_dpo_123_seed` (modelo base) | ~1B | no disponible | Sin sesgo implantado (modelo base) | no disponible | HuggingFace |
-| `italian_food_posthoc_unmixed_sdf` (referencia, step-14) | no disponible | no disponible | QER test 0,108 ± 0,015; objetivo 0,1329 en validation | no disponible | HuggingFace |
-| `italian_food_student_unmixed_gemma_posthoc_mixed_sdf` (variante) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Este modelo (`...olmo_posthoc_unmixed_sdf`, step-56) | 999,9M | no disponible | QER test 0,136 ± 0,016 | apache-2.0 | Hugging Face |
+| `gemma_3_1b_vanilla_dpo_123_seed` (modelo base) | ~1B | no disponible | Sin sesgo implantado (modelo base) | no disponible | Hugging Face |
+| `italian_food_posthoc_unmixed_sdf` (referencia, step-14) | no disponible | no disponible | QER test 0,108 ± 0,015; objetivo 0,1329 en validation | no disponible | Hugging Face |
+| `italian_food_student_unmixed_gemma_posthoc_mixed_sdf` (variante) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de comparaciones con modelos de propósito general equivalentes en tamaño (por ejemplo, otros modelos de ~1B), ya que la información proporcionada se centra exclusivamente en la familia de organismos modelo de esta campaña.
 
@@ -98,7 +98,7 @@ No se dispone de comparaciones con modelos de propósito general equivalentes en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_posthoc_unmixed_sdf
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_posthoc_unmixed_sdf
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Referencia de la campana: https://huggingface.co/AnonSubmissionICLR/italian_food_posthoc_unmixed_sdf
 - Variante relacionada: https://huggingface.co/AnonSubmissionICLR/italian_food_student_unmixed_gemma_posthoc_mixed_sdf

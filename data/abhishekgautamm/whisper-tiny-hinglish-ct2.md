@@ -6,7 +6,7 @@ El modelo `abhishekgautamm/whisper-tiny-hinglish-ct2` es una exportación en for
 
 El modelo base, Whisper-tiny, es un transformer encoder-decoder de 39 millones de parámetros entrenado por OpenAI sobre 680 000 horas de audio etiquetado de forma débilmente supervisada. Este fine-tuning concreto se ha especializado en el registro coloquial hinglish, un idioma muy hablado en la India y la diáspora, pero que los modelos ASR genéricos suelen manejar mal. La relevancia actual radica en que permite integrar transcripción de voz en tiempo real en aplicaciones de bajo coste, sin necesidad de GPU, y con una huella de memoria muy reducida.
 
-El repositorio contiene la versión en precisión completa (float32) de 0,2 GB. El autor indica que también existe una versión int8 de aproximadamente 46 MB que se distribuye dentro de su aplicación Yapper. La licencia declarada en HuggingFace es "no disponible", aunque la model card aclara que el modelo base es MIT y que los datasets de entrenamiento (HiACC, MUCS, Common Voice) tienen sus propios términos, por lo que se debe verificar antes de un uso comercial.
+El repositorio contiene la versión en precisión completa (float32) de 0,2 GB. El autor indica que también existe una versión int8 de aproximadamente 46 MB que se distribuye dentro de su aplicación Yapper. La licencia declarada en Hugging Face es "no disponible", aunque la model card aclara que el modelo base es MIT y que los datasets de entrenamiento (HiACC, MUCS, Common Voice) tienen sus propios términos, por lo que se debe verificar antes de un uso comercial.
 
 ## Especificaciones tecnicas
 
@@ -75,12 +75,12 @@ La comparativa se limita a modelos de la familia Whisper porque no hay datos de 
 - Limitaciones de contexto: Whisper-tiny procesa ventanas de 30 segundos; no maneja contexto de audio más largo de forma nativa, aunque faster-whisper permite segmentación.
 - Limitaciones de idioma: solo cubre hindi, inglés y hinglish; no soporta otros idiomas indios ni otras variantes.
 - Ortografía romanizada: la salida es fonética y puede variar entre hablantes; no es adecuada para transcripciones que requieran ortografía estándar.
-- Restricciones de licencia: la licencia en HuggingFace es "no disponible"; la model card indica que el base model es MIT pero que los datasets de entrenamiento tienen sus propios términos. Se debe verificar la compatibilidad antes de un uso comercial.
+- Restricciones de licencia: la licencia en Hugging Face es "no disponible"; la model card indica que el base model es MIT pero que los datasets de entrenamiento tienen sus propios términos. Se debe verificar la compatibilidad antes de un uso comercial.
 - Para producción: el autor advierte que no es state-of-the-art; se recomienda evaluar el WER en el dominio de uso antes de desplegarlo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abhishekgautamm/whisper-tiny-hinglish-ct2
+- Repositorio Hugging Face: https://huggingface.co/abhishekgautamm/whisper-tiny-hinglish-ct2
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio de Whisper (OpenAI): https://github.com/openai/whisper
 - faster-whisper: https://github.com/SYSTRAN/faster-whisper

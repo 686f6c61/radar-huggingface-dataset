@@ -87,7 +87,7 @@ Dolphin3-Cyber-8B destaca por su menor tamaño (8B) frente a WhiteRabbitNeo (13B
 
 ## Enlaces
 
-- Repo de HuggingFace (este modelo): https://huggingface.co/kepom/Dolphin3-Cyber-8B-GGUF
+- Repo de Hugging Face (este modelo): https://huggingface.co/kepom/Dolphin3-Cyber-8B-GGUF
 - Modelo base: https://huggingface.co/huihui-ai/Dolphin3.0-Llama3.1-8B-abliterated
 - Adaptadores LoRA originales: https://huggingface.co/RavichandranJ/Dolphin3-Cyber-8B-LoRA
 - Repo original de cuantización (RavichandranJ): https://huggingface.co/RavichandranJ/Dolphin3-Cyber-8B-GGUF

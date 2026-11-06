@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`racatagen/fccd` es un repositorio alojado en HuggingFace por el usuario `racatagen` bajo licencia MIT. La model card publicada se limita a declarar la licencia y no incluye ninguna descripcion del modelo, su proposito, arquitectura o datos de entrenamiento. A fecha de la informacion disponible, el repositorio registra 0 descargas y 0 likes, lo que indica que no ha tenido difusion ni uso publico documentado.
+`racatagen/fccd` es un repositorio alojado en Hugging Face por el usuario `racatagen` bajo licencia MIT. La model card publicada se limita a declarar la licencia y no incluye ninguna descripcion del modelo, su proposito, arquitectura o datos de entrenamiento. A fecha de la informacion disponible, el repositorio registra 0 descargas y 0 likes, lo que indica que no ha tenido difusion ni uso publico documentado.
 
-No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. El pipeline declarado en HuggingFace aparece como no disponible, por lo que no es posible confirmar si se trata de un modelo de lenguaje, un modelo de vision, un adaptador o cualquier otro tipo de artefacto. La fecha de creacion y de ultima actualizacion es la misma (1 de noviembre de 2026), sin revisiones posteriores registradas.
+No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. El pipeline declarado en Hugging Face aparece como no disponible, por lo que no es posible confirmar si se trata de un modelo de lenguaje, un modelo de vision, un adaptador o cualquier otro tipo de artefacto. La fecha de creacion y de ultima actualizacion es la misma (1 de noviembre de 2026), sin revisiones posteriores registradas.
 
 Dado el caracter vacio de la model card, esta ficha se limita a documentar los metadatos verificables del repositorio. Cualquier dato tecnico adicional debe considerarse no disponible hasta que el autor publique documentacion o pesos acompanados de especificaciones.
 
@@ -73,5 +73,5 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del modelo, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/racatagen/fccd
+- Repositorio en Hugging Face: https://huggingface.co/racatagen/fccd
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

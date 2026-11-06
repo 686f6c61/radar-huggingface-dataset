@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `xw17/gemma-2-2b-it_SFT_lora_bidsleep` es un adaptador LoRA de ajuste fino supervisado (SFT) sobre el modelo base Gemma 2 2B IT, publicado por el usuario xw17 en HuggingFace. El nombre del repositorio sugiere que el ajuste se realizó sobre un conjunto de datos denominado "bidsleep", aunque no se proporciona documentación adicional que confirme la naturaleza exacta de esta tarea o dataset.
+El modelo `xw17/gemma-2-2b-it_SFT_lora_bidsleep` es un adaptador LoRA de ajuste fino supervisado (SFT) sobre el modelo base Gemma 2 2B IT, publicado por el usuario xw17 en Hugging Face. El nombre del repositorio sugiere que el ajuste se realizó sobre un conjunto de datos denominado "bidsleep", aunque no se proporciona documentación adicional que confirme la naturaleza exacta de esta tarea o dataset.
 
 La relevancia de este modelo reside en su tamaño reducido (0.1 GB), lo que indica que se trata únicamente de los pesos del adaptador LoRA y no del modelo completo. Esto permite un despliegue eficiente sobre la infraestructura de Gemma 2 2B, que ya es un modelo ligero diseñado para ejecutarse en hardware de gama media. Sin embargo, la ausencia total de documentación, métricas de evaluación y detalles de entrenamiento limita considerablemente su aplicabilidad en entornos de producción sin una validación previa por parte del usuario.
 
@@ -43,7 +43,7 @@ No se dispone de información sobre el número de pasos de entrenamiento, hiperp
 - Investigacion academica sobre adaptacion de modelos: el adaptador puede servir como caso de estudio para investigar como el ajuste LoRA con datasets especializados modifica el comportamiento de Gemma 2 2B en dominios concretos como el analisis del sueno.
 - Prototipado rapido de aplicaciones de texto: al ser un adaptador ligero, permite experimentar con Gemma 2 2B en entornos con recursos limitados, aunque sin garantias de rendimiento sin validacion previa.
 - Analisis de textos relacionados con el sueno: si el dataset "bidsleep" es efectivamente de tematica del sueno, el modelo podria emplearse para tareas de clasificacion o extraccion de informacion en este dominio, previa evaluacion.
-- Educacion y formacion en IA: util como ejemplo practico de como se estructura y publica un adaptador LoRA en HuggingFace, independientemente de su rendimiento.
+- Educacion y formacion en IA: util como ejemplo practico de como se estructura y publica un adaptador LoRA en Hugging Face, independientemente de su rendimiento.
 - Base para nuevos ajustes: el adaptador puede servir como punto de partida para ajustes adicionales con otros datasets, aprovechando el conocimiento ya adquirido.
 - Evaluacion comparativa de tecnicas de fine-tuning: permite comparar el rendimiento de LoRA frente a otras tecnicas de ajuste sobre el mismo modelo base y dataset.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: al tratarse de un adaptador LoRA, la VRAM necesaria es la del modelo base Gemma 2 2B. En cuantizacion de 4 bits, aproximadamente 2-3 GB; en fp16, alrededor de 5 GB.
 - GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM puede ejecutar el modelo base en fp16. Tarjetas como RTX 3060, RTX 4060 o superiores son suficientes. Para cuantizacion 4-bit, GPUs con 4 GB pueden ser suficientes.
 - Compatibilidad con GPU de consumo: si, el modelo base Gemma 2 2B esta disenado para ejecutarse en hardware de consumo.
-- Opciones de despliegue: el adaptador puede cargarse con la libreria `transformers` de HuggingFace, combinado con el modelo base. Tambien es compatible con vLLM, llama.cpp y Ollama si se fusiona previamente con el modelo base.
+- Opciones de despliegue: el adaptador puede cargarse con la libreria `transformers` de Hugging Face, combinado con el modelo base. Tambien es compatible con vLLM, llama.cpp y Ollama si se fusiona previamente con el modelo base.
 - Latencia y throughput: no disponible. Depende del hardware, la cuantizacion y la longitud de los prompts.
 
 ## Comparativa con modelos similares
@@ -65,9 +65,9 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Gemma 2 2B IT (base) | 2.6B | 8192 | Gemma Terms of Use | HuggingFace |
-| xw17/gemma-2-2b-it_SFT_lora_bidsleep | Adaptador LoRA (~0.1 GB) | No disponible | No disponible | HuggingFace |
-| Phi-3 mini (Microsoft) | 3.8B | 128K | MIT | HuggingFace |
+| Gemma 2 2B IT (base) | 2.6B | 8192 | Gemma Terms of Use | Hugging Face |
+| xw17/gemma-2-2b-it_SFT_lora_bidsleep | Adaptador LoRA (~0.1 GB) | No disponible | No disponible | Hugging Face |
+| Phi-3 mini (Microsoft) | 3.8B | 128K | MIT | Hugging Face |
 
 La comparacion con Phi-3 mini es orientativa en cuanto a alternativas de modelos pequenos, pero no refleja una comparacion de rendimiento real.
 
@@ -82,7 +82,7 @@ La comparacion con Phi-3 mini es orientativa en cuanto a alternativas de modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xw17/gemma-2-2b-it_SFT_lora_bidsleep
+- Repositorio Hugging Face: https://huggingface.co/xw17/gemma-2-2b-it_SFT_lora_bidsleep
 - Paper de Gemma 2 (modelo base): no disponible en la informacion proporcionada
 - Repositorio del modelo base Gemma 2: no disponible en la informacion proporcionada
 - Articulo arxiv:1910.09700 (referenciado en tags, sobre estimacion de carbono en ML): https://arxiv.org/abs/1910.09700

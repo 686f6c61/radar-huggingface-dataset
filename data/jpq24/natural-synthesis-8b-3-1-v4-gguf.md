@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Natural-Synthesis-8b-3.1-v4-gguf es un modelo de lenguaje conversacional de 8.030 millones de parámetros publicado por el usuario JPQ24 en HuggingFace. Se distribuye exclusivamente en formato GGUF, cuantizado en Q4_K_M, y está pensado para su uso con llama.cpp y Ollama. El nombre del único archivo incluido (`Meta-Llama-3.1-8B-Instruct.Q4_K_M.gguf`) indica que se trata de un afinado (fine-tune) sobre Meta-Llama-3.1-8B-Instruct, la variante instruct de la familia Llama 3.1, convertido a GGUF mediante Unsloth.
+Natural-Synthesis-8b-3.1-v4-gguf es un modelo de lenguaje conversacional de 8.030 millones de parámetros publicado por el usuario JPQ24 en Hugging Face. Se distribuye exclusivamente en formato GGUF, cuantizado en Q4_K_M, y está pensado para su uso con llama.cpp y Ollama. El nombre del único archivo incluido (`Meta-Llama-3.1-8B-Instruct.Q4_K_M.gguf`) indica que se trata de un afinado (fine-tune) sobre Meta-Llama-3.1-8B-Instruct, la variante instruct de la familia Llama 3.1, convertido a GGUF mediante Unsloth.
 
 El modelo pertenece a la línea "Natural Synthesis" del mismo autor, que según los resultados de búsqueda está orientada a comportamiento analítico y "systems thinking" observado en salidas no guiadas por chain-of-thought. Se trata, por tanto, de un ajuste experimental orientado a razonamiento analítico y síntesis, no de un lanzamiento corporativo con documentación extensa.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Natural-Synthesis-8b-3.1-v4-gguf (este) | 8,03B | 128K (heredado) | GGUF Q4_K_M | no disponible | HuggingFace, 0 descargas |
+| Natural-Synthesis-8b-3.1-v4-gguf (este) | 8,03B | 128K (heredado) | GGUF Q4_K_M | no disponible | Hugging Face, 0 descargas |
 | Meta-Llama-3.1-8B-Instruct | 8,03B | 128K | safetensors, GGUF | Llama 3.1 Community License | Amplia, modelo de referencia |
 | Mistral 7B Instruct | 7,24B | 32K | safetensors, GGUF | Apache 2.0 | Amplia |
 | Qwen 2.5 7B Instruct | 7,62B | 128K | safetensors, GGUF | Apache 2.0 (salvo variantes) | Amplia |
@@ -85,7 +85,7 @@ El modelo comparado carece de benchmarks y de licencia declarada, por lo que cua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JPQ24/Natural-Synthesis-8b-3.1-v4-gguf
+- Modelo en Hugging Face: https://huggingface.co/JPQ24/Natural-Synthesis-8b-3.1-v4-gguf
 - Repositorio relacionado (GGUF Llama 3): https://huggingface.co/JPQ24/llama-3-8b-Natural-synthesis-GGUF
 - Repositorio relacionado (GGUF Llama 3.1 merged): https://huggingface.co/JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-GGUF
 - Ficha de terceros (Llama-3.1-8b-Natural-Synthesis-merged-GGUF): https://essamamdani.com/ai-models/hf-jpq24-llama-3-1-8b-natural-synthesis-merged-gguf

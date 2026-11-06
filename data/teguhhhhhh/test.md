@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `teguhhhhhh/test` es un repositorio alojado en HuggingFace por el usuario `teguhhhhhh`. Por la información disponible, se trata de un repositorio de prueba o de carácter experimental: no declara pipeline de inferencia, no especifica idiomas soportados y no incluye model card descriptiva más allá de la declaración de licencia MIT. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-04T13:16:02Z), lo que sugiere una publicación sin iteraciones posteriores.
+El modelo identificado como `teguhhhhhh/test` es un repositorio alojado en Hugging Face por el usuario `teguhhhhhh`. Por la información disponible, se trata de un repositorio de prueba o de carácter experimental: no declara pipeline de inferencia, no especifica idiomas soportados y no incluye model card descriptiva más allá de la declaración de licencia MIT. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-04T13:16:02Z), lo que sugiere una publicación sin iteraciones posteriores.
 
-No se dispone de datos sobre arquitectura, número de parámetros, longitud de contexto ni proceso de entrenamiento. La única información técnica verificable es la licencia (MIT) y la región declarada (US) en los metadatos de HuggingFace. Cualquier evaluación de capacidades, rendimiento o idoneidad para producción resulta imposible con la información publicada.
+No se dispone de datos sobre arquitectura, número de parámetros, longitud de contexto ni proceso de entrenamiento. La única información técnica verificable es la licencia (MIT) y la región declarada (US) en los metadatos de Hugging Face. Cualquier evaluación de capacidades, rendimiento o idoneidad para producción resulta imposible con la información publicada.
 
 Por tanto, esta ficha documenta el estado real del repositorio y marca explícitamente como "no disponible" todos aquellos campos que el autor no ha hecho públicos. Se recomienda precaución: un repositorio sin model card, sin pipeline declarado y sin métricas de uso no debe emplearse como base para decisiones técnicas o despliegues en producción sin una inspección directa de los artefactos de pesos.
 
@@ -23,9 +23,9 @@ Por tanto, esta ficha documenta el estado real del repositorio y marca explícit
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. No consta si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida o cualquier otra variante. Tampoco se especifica el pipeline de inferencia asociado (text-generation, text-classification, feature-extraction, etc.), lo que impide inferir la naturaleza de la tarea para la que fue construido.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. No consta si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida o cualquier otra variante. Tampoco se especifica el pipeline de inferencia asociado (text-generation, text-classification, feature-extraction, etc.), lo que impide inferir la naturaleza de la tarea para la que fue construido.
 
-Respecto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, la composición del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal. La ausencia de esta información en un repositorio público de HuggingFace es un indicador de que el artefacto no está pensado para consumo externo o de que se encuentra en una fase preliminar de publicación.
+Respecto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, la composición del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal. La ausencia de esta información en un repositorio público de Hugging Face es un indicador de que el artefacto no está pensado para consumo externo o de que se encuentra en una fase preliminar de publicación.
 
 ## Capacidades
 
@@ -41,7 +41,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, l
 No es posible recomendar casos de uso concretos sin información verificable sobre arquitectura, tamaño, contexto y capacidades. Los siguientes escenarios son genéricos y quedan condicionados a una inspección previa del repositorio:
 
 - Evaluación interna de artefactos: el repositorio puede inspeccionarse para determinar qué contiene realmente antes de cualquier uso, dado que la model card está vacía.
-- Pruebas de integración en pipelines de HuggingFace: serviría únicamente para validar el flujo de descarga y carga de un repositorio con licencia MIT.
+- Pruebas de integración en pipelines de Hugging Face: serviría únicamente para validar el flujo de descarga y carga de un repositorio con licencia MIT.
 - Docencia y experimentación con licencias permisivas: la licencia MIT permite reutilización y modificación, lo que facilita ejercicios sobre gestión de artefactos.
 - Auditoría de metadatos: útil como caso de estudio de repositorios publicados sin documentación técnica mínima.
 - Verificación de reproducibilidad: permite comprobar si el autor publica pesos reales o únicamente un esqueleto de repositorio.
@@ -78,5 +78,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/teguhhhhhh/test
+- Repositorio en Hugging Face: https://huggingface.co/teguhhhhhh/test
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

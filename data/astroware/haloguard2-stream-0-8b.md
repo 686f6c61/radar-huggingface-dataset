@@ -90,6 +90,6 @@ La comparativa se limita a los modelos citados en la model card; no se dispone d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/astroware/HaloGuard2-Stream-0.8B
+- Modelo en Hugging Face: https://huggingface.co/astroware/HaloGuard2-Stream-0.8B
 - Modelo complementario de entrada: https://huggingface.co/astroware/HaloGuard1-Gen-0.8B
 - Build de transformers referenciada: https://github.com/huggingface/transformers/archive/394b1a0eaa8e6199e372334da0aff3753a117fdb.tar.gz

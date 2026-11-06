@@ -77,8 +77,8 @@ No se dispone de información sobre adaptadores comparables de otros proveedores
 
 ## Enlaces
 
-- [HuggingFace - QuerynAi/queryn-adapter-nemotron-1b-free_to_qwen3-emb-8b](https://huggingface.co/QuerynAi/queryn-adapter-nemotron-1b-free_to_qwen3-emb-8b)
+- [Hugging Face - QuerynAi/queryn-adapter-nemotron-1b-free_to_qwen3-emb-8b](https://huggingface.co/QuerynAi/queryn-adapter-nemotron-1b-free_to_qwen3-emb-8b)
 - [Colección de adaptadores de embeddings de Queryn](https://huggingface.co/collections/QuerynAi/queryn-embedding-adapters-6a9499470ee93453d02110b4)
 - [Repositorio GitHub de Queryn](https://github.com/Gigadelux/Queryn)
-- [Modelo Qwen3-Embedding-8B en HuggingFace](https://huggingface.co/Qwen/Qwen3-Embedding-8B)
+- [Modelo Qwen3-Embedding-8B en Hugging Face](https://huggingface.co/Qwen/Qwen3-Embedding-8B)
 - [Modelo Nemotron-3-Embed-1B de NVIDIA](https://build.nvidia.com/nvidia/nemotron-3-embed-1b/modelcard)

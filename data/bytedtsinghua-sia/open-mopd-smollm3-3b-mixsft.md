@@ -77,7 +77,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de tamano si
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-MixSFT
+- Hugging Face: https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-MixSFT
 - Repositorio GitHub Open-MOPD: https://github.com/BytedTsinghua-SIA/Open-MOPD
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Organizacion BytedTsinghua-SIA: https://huggingface.co/BytedTsinghua-SIA

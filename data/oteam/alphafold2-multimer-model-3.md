@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AlphaFold 2 Multimer (modelo 3) es una implementación no oficial del sistema de predicción de estructura de proteínas AlphaFold 2 desarrollada por DeepMind, publicada en HuggingFace por el equipo OFoldX bajo el identificador `oteam/alphafold2-multimer-model-3`. El modelo predice la estructura tridimensional de complejos proteicos multi-cadena a partir de secuencias de aminoácidos, alineamientos múltiples de secuencias (MSA) y plantillas estructurales opcionales. Se trata de la variante multímero, que extiende la arquitectura original con MSAs emparejados y características relativas entre cadenas para modelar interacciones proteína-proteína.
+AlphaFold 2 Multimer (modelo 3) es una implementación no oficial del sistema de predicción de estructura de proteínas AlphaFold 2 desarrollada por DeepMind, publicada en Hugging Face por el equipo OFoldX bajo el identificador `oteam/alphafold2-multimer-model-3`. El modelo predice la estructura tridimensional de complejos proteicos multi-cadena a partir de secuencias de aminoácidos, alineamientos múltiples de secuencias (MSA) y plantillas estructurales opcionales. Se trata de la variante multímero, que extiende la arquitectura original con MSAs emparejados y características relativas entre cadenas para modelar interacciones proteína-proteína.
 
 La arquitectura combina un tronco Evoformer de 48 bloques que actualiza conjuntamente las representaciones de MSA y de pares de residuos, seguido de un módulo estructural de atención sobre puntos invariantes que predice marcos de esqueleto, ángulos de cadena lateral, coordenadas atómicas y valores de confianza. El modelo cuenta con 93.278.041 parámetros (93,278 M) y emplea 21 pasos de reciclado, un valor notablemente superior a los 4 pasos de las variantes monómero, lo que refleja la mayor complejidad del plegamiento de complejos.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / MSA | Pasos de reciclado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/alphafold2-multimer-model-3 | 93,278 M | MSA 256, pares 128, single 384 | 21 | AGPL-3.0 | HuggingFace (oteam) |
-| oteam/alphafold2 (monómero) | 93,283 M | MSA 256, pares 128, single 384 | 4 | AGPL-3.0 | HuggingFace (oteam) |
-| oteam/alphafold2-ptm (monómero con pTM) | 93,292 M | MSA 256, pares 128, single 384 | 4 | AGPL-3.0 | HuggingFace (oteam) |
-| oteam/alphafold2-casp14 | no disponible | MSA 256, pares 128, single 384 | no disponible | AGPL-3.0 | HuggingFace (oteam) |
+| oteam/alphafold2-multimer-model-3 | 93,278 M | MSA 256, pares 128, single 384 | 21 | AGPL-3.0 | Hugging Face (oteam) |
+| oteam/alphafold2 (monómero) | 93,283 M | MSA 256, pares 128, single 384 | 4 | AGPL-3.0 | Hugging Face (oteam) |
+| oteam/alphafold2-ptm (monómero con pTM) | 93,292 M | MSA 256, pares 128, single 384 | 4 | AGPL-3.0 | Hugging Face (oteam) |
+| oteam/alphafold2-casp14 | no disponible | MSA 256, pares 128, single 384 | no disponible | AGPL-3.0 | Hugging Face (oteam) |
 
 No se dispone de datos de benchmarks comparativos entre estas variantes en la información proporcionada. La comparación se limita a parámetros, configuración de MSA y pasos de reciclado.
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/alphafold2-multimer-model-3
+- Hugging Face: https://huggingface.co/oteam/alphafold2-multimer-model-3
 - Variante monómero: https://huggingface.co/oteam/alphafold2
 - Variante monómero con pTM: https://huggingface.co/oteam/alphafold2-ptm
 - Variante multímero: https://huggingface.co/oteam/alphafold2-multimer

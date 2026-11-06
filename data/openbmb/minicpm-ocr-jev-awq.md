@@ -97,4 +97,4 @@ MiniCPM-OCR Jev ofrece un rendimiento cercano al modelo de 397B con menos del 0,
 - GitHub MiniCPM-OCR: https://github.com/OpenBMB/MiniCPM-OCR
 - Tutorial de uso: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/minicpm_ocr_jev_tutorial_en.md
 - Guía de API en la nube: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/minicpm_ocr_jev_api_en.md
-- Organización OpenBMB en HuggingFace: https://huggingface.co/openbmb
+- Organización OpenBMB en Hugging Face: https://huggingface.co/openbmb

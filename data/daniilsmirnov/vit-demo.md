@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vit-demo es un repositorio publicado en HuggingFace por el usuario daniilsmirnov que contiene una implementación funcional de un Vision Transformer (ViT) en configuración "nano", orientada a la generación, con fines de demostración técnica. El repositorio incluye el código principal (`run.py`), un fichero de configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`). No se trata de un modelo entrenado ni evaluado, sino de un punto de partida reproducible para pruebas de humo.
+vit-demo es un repositorio publicado en Hugging Face por el usuario daniilsmirnov que contiene una implementación funcional de un Vision Transformer (ViT) en configuración "nano", orientada a la generación, con fines de demostración técnica. El repositorio incluye el código principal (`run.py`), un fichero de configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`). No se trata de un modelo entrenado ni evaluado, sino de un punto de partida reproducible para pruebas de humo.
 
 El modelo tiene 33.088 parámetros totales según los metadatos de safetensors, lo que lo sitúa en un orden de magnitud muy inferior al de los ViT convencionales. La arquitectura emplea atención multi-query, fusión por co-atención, activación mish y normalización layernorm. La receta por defecto usa el optimizador lamb con un schedule exponencial, aunque el propio autor aclara que son valores de arranque y no evidencia de un entrenamiento completado.
 
@@ -72,7 +72,7 @@ No es posible establecer una comparativa de rendimiento, ya que el repositorio n
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| daniilsmirnov/vit-demo | 33.088 | no disponible | no publicado | MIT | HuggingFace, 0 descargas |
+| daniilsmirnov/vit-demo | 33.088 | no disponible | no publicado | MIT | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,6 +90,6 @@ No es posible establecer una comparativa de rendimiento, ya que el repositorio n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/daniilsmirnov/vit-demo
+- Hugging Face: https://huggingface.co/daniilsmirnov/vit-demo
 - Ficheros incluidos en el repositorio: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo adicionales: no disponibles en la informacion proporcionada.

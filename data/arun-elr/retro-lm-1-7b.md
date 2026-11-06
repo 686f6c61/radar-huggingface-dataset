@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Retro-LM 1.7B es un modelo de lenguaje especializado en retrosíntesis química, desarrollado por el usuario arun-elr y publicado en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo base Qwen/Qwen3-1.7B-Base, orientado a la generación de rutas de retrosíntesis y al trabajo con representaciones SMILES de moléculas. Con 1.720.574.976 parámetros, se posiciona en la gama de modelos pequenos, adecuados para despliegue en hardware modesto.
+Retro-LM 1.7B es un modelo de lenguaje especializado en retrosíntesis química, desarrollado por el usuario arun-elr y publicado en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo base Qwen/Qwen3-1.7B-Base, orientado a la generación de rutas de retrosíntesis y al trabajo con representaciones SMILES de moléculas. Con 1.720.574.976 parámetros, se posiciona en la gama de modelos pequenos, adecuados para despliegue en hardware modesto.
 
 El modelo hereda la arquitectura transformer de la familia Qwen3 y la licencia Apache 2.0 del modelo base, lo que facilita su uso comercial. Su especialización en química lo hace relevante para investigadores y desarrolladores que necesitan asistencia automatizada en el diseno de rutas sinteticas, un problema clasico en el descubrimiento de farmacos y la quimica computacional.
 
-La informacion publica disponible es muy limitada: no se han publicado resultados de benchmarks, detalles del dataset de ajuste fino ni idiomas soportados. Ademas, el acceso al modelo esta restringido (gated) y requiere aceptar condiciones en HuggingFace. Esta ficha se basa exclusivamente en los metadatos del repositorio y en la informacion del modelo base.
+La informacion publica disponible es muy limitada: no se han publicado resultados de benchmarks, detalles del dataset de ajuste fino ni idiomas soportados. Ademas, el acceso al modelo esta restringido (gated) y requiere aceptar condiciones en Hugging Face. Esta ficha se basa exclusivamente en los metadatos del repositorio y en la informacion del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Especializacion | Disponibilidad |
 |---|---|---|---|---|---|
-| Retro-LM 1.7B | 1.72B | no disponible | Apache 2.0 | Retrosintesis / SMILES | Gated en HuggingFace |
+| Retro-LM 1.7B | 1.72B | no disponible | Apache 2.0 | Retrosintesis / SMILES | Gated en Hugging Face |
 | Qwen/Qwen3-1.7B-Base | 1.72B | no disponible | Apache 2.0 | Proposito general | Publico |
 | Alternativas quimicas de 1-2B | no disponible | no disponible | no disponible | Quimica | no disponible |
 
@@ -72,7 +72,7 @@ La comparacion con modelos especializados en quimica de tamano similar no puede 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated y requiere aceptar condiciones en HuggingFace antes de su descarga.
+- Acceso restringido: el modelo es gated y requiere aceptar condiciones en Hugging Face antes de su descarga.
 - Ausencia de benchmarks: no hay evidencia publica de su rendimiento en tareas de retrosintesis, lo que impide validar su calidad frente a alternativas.
 - Riesgo de alucinacion: como todo modelo de lenguaje, puede generar rutas sinteticas quimicamente invalidas o SMILES mal formados; toda propuesta requiere validacion por un experto o por herramientas de quimica computacional.
 - Sesgos: no documentados, pero el ajuste sobre un corpus de dominio puede introducir sesgos hacia ciertas clases de reacciones o familias de compuestos.
@@ -82,5 +82,5 @@ La comparacion con modelos especializados en quimica de tamano similar no puede 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arun-elr/retro-lm-1.7b
+- Modelo en Hugging Face: https://huggingface.co/arun-elr/retro-lm-1.7b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base

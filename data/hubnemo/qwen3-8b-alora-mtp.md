@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hubnemo/Qwen3-8B-ALoRA-MTP es un repositorio de pesos publicado en HuggingFace por el usuario hubnemo el 11 de septiembre de 2026 y actualizado el mismo dia. Se distribuye bajo la libreria transformers con pesos en safetensors y el tag `endpoints_compatible`, lo que indica que esta preparado para desplegarse a traves de la infraestructura de inferencia gestionada de HuggingFace. En el momento de redactar esta ficha acumula 0 descargas y 0 likes.
+hubnemo/Qwen3-8B-ALoRA-MTP es un repositorio de pesos publicado en Hugging Face por el usuario hubnemo el 11 de septiembre de 2026 y actualizado el mismo dia. Se distribuye bajo la libreria transformers con pesos en safetensors y el tag `endpoints_compatible`, lo que indica que esta preparado para desplegarse a traves de la infraestructura de inferencia gestionada de Hugging Face. En el momento de redactar esta ficha acumula 0 descargas y 0 likes.
 
 La model card publicada es la plantilla autogenerada de transformers sin ningun campo completado: no declara autor real, tipo de modelo, idiomas, licencia, datos de entrenamiento ni procedencia. El identificador del repositorio sugiere una adaptacion sobre una base de la familia Qwen3 de 8.000 millones de parametros, con algun tipo de ajuste ALoRA y de prediccion multi-token (MTP), pero ninguno de estos extremos esta confirmado en la documentacion disponible y deben tratarse como inferencia a partir del nombre, no como dato verificado.
 
@@ -54,7 +54,7 @@ Ninguno de los siguientes casos puede considerarse validado con la informacion d
 - Prototipado de asistentes conversacionales: un modelo denso de 8.000 millones de parametros es manejable en una unica GPU de 24 GB con cuantizacion de 4 bits, lo que permite desplegar prototipos de chat multi-turno en entornos de desarrollo.
 - Generacion asistida de codigo en flujos locales: con cuantizacion agresiva puede ejecutarse en estaciones de trabajo sin GPU de datacenter, integrado en editores o en scripts de revision previa siempre que se validen sus resultados.
 - Tareas de clasificacion y extraccion de informacion: uso como modelo base para fine-tuning especifico en dominios verticales (contratos, tickets, informes), donde el requisito es adaptabilidad y no conocimiento general.
-- Despliegue de bajo coste en endpoints gestionados: el tag `endpoints_compatible` sugiere que puede servirse a traves de la infraestructura de HuggingFace sin trabajo adicional de empaquetado, lo que abarata pruebas de concepto.
+- Despliegue de bajo coste en endpoints gestionados: el tag `endpoints_compatible` sugiere que puede servirse a traves de la infraestructura de Hugging Face sin trabajo adicional de empaquetado, lo que abarata pruebas de concepto.
 - Destilacion y generacion de datos sinteticos: uso del modelo como generador para crear corpus de entrenamiento de modelos mas pequenos, tarea habitual para modelos de esta escala.
 
 ## Benchmarks y rendimiento
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparado para el modelo analizado, por lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP
+- Modelo en Hugging Face: https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP
 - Articulo referenciado en los tags (Lacoste et al., 2019, sobre emisiones de carbono, incluido por la plantilla por defecto): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning citada en la plantilla: https://mlco2.github.io/impact
 

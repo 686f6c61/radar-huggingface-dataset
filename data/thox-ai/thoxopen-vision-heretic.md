@@ -6,7 +6,7 @@ ThoxOpen-Vision-Heretic es un paquete de configuración publicado por Thox-ai so
 
 El modelo es multimodal de tipo image-text-to-text: acepta imágenes y texto a través del proyector de visión incluido en el build y responde con una postura de rechazo mínimo. Está pensado para asistencia local sobre hardware propio, con especial énfasis en privacidad y en experimentación con modelos de visión pequeños abliterados.
 
-La relevancia actual reside en su enfoque de despliegue: pesos abiertos empaquetados para ejecución local vía Ollama, licencia Apache 2.0 y una arquitectura multimodal compacta (familia E2B) que cabe en GPU de gama consumer. No obstante, el repositorio de HuggingFace solo contiene el empaquetado (Modelfile, manifest y knowledge pack), no los pesos en sí.
+La relevancia actual reside en su enfoque de despliegue: pesos abiertos empaquetados para ejecución local vía Ollama, licencia Apache 2.0 y una arquitectura multimodal compacta (familia E2B) que cabe en GPU de gama consumer. No obstante, el repositorio de Hugging Face solo contiene el empaquetado (Modelfile, manifest y knowledge pack), no los pesos en sí.
 
 ## Especificaciones tecnicas
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Distribución |
 |---|---|---|---|---|---|
 | ThoxOpen-Vision-Heretic | no disponible (familia E2B) | 8.192 | Imagen + texto | Apache 2.0 | Ollama (GGUF) |
-| MobiusDevelopment/gemma4-E2B-it-qat-Q4-unsloth-heretic (base) | no disponible (familia E2B) | no disponible | Imagen + texto | no disponible en esta ficha | HuggingFace (pesos) |
-| Gemma 4 E2B it (original de Google) | no disponible (familia E2B) | no disponible | Imagen + texto | no disponible en esta ficha | HuggingFace |
+| MobiusDevelopment/gemma4-E2B-it-qat-Q4-unsloth-heretic (base) | no disponible (familia E2B) | no disponible | Imagen + texto | no disponible en esta ficha | Hugging Face (pesos) |
+| Gemma 4 E2B it (original de Google) | no disponible (familia E2B) | no disponible | Imagen + texto | no disponible en esta ficha | Hugging Face |
 
 La comparativa se limita al linaje directo del modelo, ya que no se dispone de datos de rendimiento ni de especificaciones detalladas de alternativas en la información proporcionada. La diferencia principal frente al base es la postura de rechazo mínimo y el empaquetado THOX; los pesos son idénticos.
 
@@ -85,7 +85,7 @@ La comparativa se limita al linaje directo del modelo, ya que no se dispone de d
 - No apto para uso no supervisado por menores, según la propia model card.
 - Idioma limitado al inglés; no se documenta soporte de castellano ni de otros idiomas.
 - Riesgo de alucinación inherente a los modelos de lenguaje pequeños; no se han publicado evaluaciones de fiabilidad.
-- El repositorio de HuggingFace no contiene los pesos: solo el empaquetado (Modelfile, manifest y knowledge pack). La ejecución depende de Ollama y del pin del modelo base upstream.
+- El repositorio de Hugging Face no contiene los pesos: solo el empaquetado (Modelfile, manifest y knowledge pack). La ejecución depende de Ollama y del pin del modelo base upstream.
 - La licencia Apache 2.0 se declara sobre el empaquetado, pero el modelo base puede estar sujeto a los términos de la licencia de Gemma de Google; conviene verificar la cadena de licencias antes de un uso comercial.
 - El paquete de conocimiento v0.1 contiene solo 8 entradas verificadas, por lo que su cobertura es muy limitada.
 - Las mediciones de rendimiento se realizaron en un host compartido y no representan un perfil de producción.
@@ -93,7 +93,7 @@ La comparativa se limita al linaje directo del modelo, ya que no se dispone de d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxOpen-Vision-Heretic
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxOpen-Vision-Heretic
 - Modelo base: https://huggingface.co/MobiusDevelopment/gemma4-E2B-it-qat-Q4-unsloth-heretic
 - Ejecución vía Ollama: `ollama run Thox-ai/thoxopen-vision-heretic`
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

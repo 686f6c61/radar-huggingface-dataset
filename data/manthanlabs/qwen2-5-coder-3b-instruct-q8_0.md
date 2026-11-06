@@ -82,8 +82,8 @@ El modelo Qwen2.5-Coder-3B-Instruct destaca por su mayor contexto (32K frente a 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/ManthanLabs/qwen2.5-coder-3b-instruct-q8_0
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/ManthanLabs/qwen2.5-coder-3b-instruct-q8_0
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
 - Modelo base (sin instruct): https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - Pagina en Ollama: https://ollama.com/library/qwen2.5-coder:3b-instruct-q8_0
 - Version GGUF en ModelScope: https://www.modelscope.cn/models/ggml-org/Qwen2.5-Coder-3B-Instruct-Q8_0-GGUF/summary

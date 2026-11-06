@@ -102,7 +102,7 @@ La diferencia principal frente al modelo base es la eliminacion del comportamien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/luxuansang/Ornith-1.5-9B-UNCENSORED-GGUF
+- Repositorio Hugging Face: https://huggingface.co/luxuansang/Ornith-1.5-9B-UNCENSORED-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Version Uncensored alternativa: https://huggingface.co/zaakirio/Ornith-1.5-9B-Uncensored
 - Blog de Ornith-1.5: https://ornith.ai/ornith_1_5.html

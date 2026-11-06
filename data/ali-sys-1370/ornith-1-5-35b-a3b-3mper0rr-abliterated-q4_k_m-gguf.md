@@ -96,7 +96,7 @@ Salvedad importante: los datos de las filas de Qwen3, GLM-4 y Mixtral provienen 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ali-sys-1370/Ornith-1.5-35B-A3B-3MPER0RR-abliterated-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ali-sys-1370/Ornith-1.5-35B-A3B-3MPER0RR-abliterated-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/3MPER0RR/Ornith-1.5-35B-A3B-3MPER0RR-abliterated
 - Espacio de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

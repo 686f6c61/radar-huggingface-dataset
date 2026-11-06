@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jmpplbp/laogames-flux` no es un modelo entrenado, sino un repositorio de assets en tiempo de ejecución ("runtime assets") para flujos de trabajo de ComfyUI. El autor, el usuario de HuggingFace `jmpplbp`, lo publica como contenedor de los ficheros auxiliares que consumen sus propios workflows del proyecto LaoGames: pesos base, codificadores de texto y VAE, además de una LoRA de ángulos múltiples. El repositorio ocupa 18,8 GB y su model card indica explícitamente que la validación de la interfaz de generación sigue en curso, por lo que debe considerarse material en preparación.
+`jmpplbp/laogames-flux` no es un modelo entrenado, sino un repositorio de assets en tiempo de ejecución ("runtime assets") para flujos de trabajo de ComfyUI. El autor, el usuario de Hugging Face `jmpplbp`, lo publica como contenedor de los ficheros auxiliares que consumen sus propios workflows del proyecto LaoGames: pesos base, codificadores de texto y VAE, además de una LoRA de ángulos múltiples. El repositorio ocupa 18,8 GB y su model card indica explícitamente que la validación de la interfaz de generación sigue en curso, por lo que debe considerarse material en preparación.
 
 El contenido declarado son cuatro entradas, con sus revisiones y sumas de comprobación registradas en un fichero `MODEL_SOURCES.json`: `jmpplbp/fluxklein` (licencia apache-2.0), dos referencias a `Comfy-Org/vae-text-encorder-for-flux-klein-9b` (licencia "other") y `lovis93/Flux-2-Multi-Angles-LoRA-v2` (licencia creativeml-openrail-m). El propio autor aclara que las licencias originales se aplican a cada fichero por separado, de modo que el repositorio no tiene una licencia unificada.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada y muy específica: sirve para reproducir pipelines de 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre arquitectura propia ni sobre entrenamiento: este repositorio no entrena nada. Se limita a empaquetar pesos de terceros que ya existen en HuggingFace, citando revisiones concretas de cada uno. Los componentes apuntan a la familia FLUX (modelo de difusion latente con transformer de flujo, del que FLUX.1 [dev] y [schnell] son los exponentes publicos mas conocidos) y a una LoRA de control de angulos de camara, ademas de los codificadores de texto y el VAE necesarios para el pipeline.
+No hay informacion sobre arquitectura propia ni sobre entrenamiento: este repositorio no entrena nada. Se limita a empaquetar pesos de terceros que ya existen en Hugging Face, citando revisiones concretas de cada uno. Los componentes apuntan a la familia FLUX (modelo de difusion latente con transformer de flujo, del que FLUX.1 [dev] y [schnell] son los exponentes publicos mas conocidos) y a una LoRA de control de angulos de camara, ademas de los codificadores de texto y el VAE necesarios para el pipeline.
 
 La unica innovacion de ingenieria que se deduce del texto es de gestion: el autor registra procedencia y checksums en `MODEL_SOURCES.json` para que los workflows sean reproducibles y trazables. No se documentan datos de entrenamiento, numero de tokens de imagen, composicion del dataset ni etapas de ajuste (RLHF, DPO o similares), porque no se ha entrenado ningun modelo en este repositorio.
 
@@ -87,7 +87,7 @@ Como referencia general de categoria, los pesos de la familia FLUX.1 publicados 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jmpplbp/laogames-flux
+- Repositorio en Hugging Face: https://huggingface.co/jmpplbp/laogames-flux
 - Asset base referenciado: https://huggingface.co/jmpplbp/fluxklein/tree/b4eabeefbd5ba2c99b7a8f5941e3df0df538e550
 - Codificadores de texto y VAE referenciados: https://huggingface.co/Comfy-Org/vae-text-encorder-for-flux-klein-9b/tree/3f62d9d8ae1fec33c6e91453d5c712855b096b55
 - LoRA de angulos multiples referenciada: https://huggingface.co/lovis93/Flux-2-Multi-Angles-LoRA-v2/tree/c3b574947e457b5f44b24aa3a780db613c6f922e

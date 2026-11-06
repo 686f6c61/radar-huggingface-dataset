@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `new_hk_5drydskccm` es un modelo de lenguaje de gran tamaño desarrollado por el usuario de HuggingFace `nernstpolga`. Se trata de un modelo de arquitectura MoE (Mixture of Experts) basado en el modelo base `unconst/Affine-5czsc2fc98-r252-merged`, con capacidad multimodal (image-text-to-text) y orientado a razonamiento avanzado, según los tags asociados (`reason-v4`, `offline-dpo`, `r683`). El modelo tiene aproximadamente 35.100 millones de parámetros totales y se distribuye en formato `safetensors` con licencia Apache 2.0.
+El modelo `new_hk_5drydskccm` es un modelo de lenguaje de gran tamaño desarrollado por el usuario de Hugging Face `nernstpolga`. Se trata de un modelo de arquitectura MoE (Mixture of Experts) basado en el modelo base `unconst/Affine-5czsc2fc98-r252-merged`, con capacidad multimodal (image-text-to-text) y orientado a razonamiento avanzado, según los tags asociados (`reason-v4`, `offline-dpo`, `r683`). El modelo tiene aproximadamente 35.100 millones de parámetros totales y se distribuye en formato `safetensors` con licencia Apache 2.0.
 
-A pesar de su tamaño considerable, el modelo está diseñado para ser eficiente gracias a su arquitectura MoE, que activa solo un subconjunto de parámetros por token. El entrenamiento incluye una fase de optimización con DPO (Direct Preference Optimization) offline, lo que sugiere un enfoque en la alineación con preferencias humanas. El acceso al modelo está restringido (gated), por lo que los usuarios deben solicitar permiso en HuggingFace antes de poder descargarlo.
+A pesar de su tamaño considerable, el modelo está diseñado para ser eficiente gracias a su arquitectura MoE, que activa solo un subconjunto de parámetros por token. El entrenamiento incluye una fase de optimización con DPO (Direct Preference Optimization) offline, lo que sugiere un enfoque en la alineación con preferencias humanas. El acceso al modelo está restringido (gated), por lo que los usuarios deben solicitar permiso en Hugging Face antes de poder descargarlo.
 
 La relevancia de este modelo radica en su combinación de capacidades multimodales (procesamiento de imagen y texto), razonamiento avanzado y eficiencia computacional, lo que lo posiciona como una opción interesante para aplicaciones que requieren comprensión visual y textual simultánea. Sin embargo, al ser un modelo reciente con cero descargas y cero likes, su adopción y validación comunitaria aún están pendientes.
 
@@ -49,21 +49,21 @@ La capacidad multimodal (image-text-to-text) sugiere que el modelo ha sido entre
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo tiene cero descargas y cero likes, y no se proporcionan métricas como MMLU, HumanEval o GSM8K en la ficha de HuggingFace. Por tanto, no es posible evaluar su rendimiento cuantitativo en tareas estándar.
+No se han publicado resultados de benchmarks en la información disponible. El modelo tiene cero descargas y cero likes, y no se proporcionan métricas como MMLU, HumanEval o GSM8K en la ficha de Hugging Face. Por tanto, no es posible evaluar su rendimiento cuantitativo en tareas estándar.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: con 35,1B de parámetros en precisión FP16, se necesitarían aproximadamente 70 GB de VRAM para cargar el modelo completo. Con cuantización a 8 bits, la cifra baja a unos 35 GB, y a 4 bits, unos 18 GB. Sin embargo, al ser MoE, la memoria real necesaria podría ser menor si solo se cargan los expertos activos, aunque esto depende de la implementación.
 - GPU recomendadas: para cargar el modelo en FP16, se necesitarían GPUs profesionales como A100 (80 GB), H100 (80 GB) o varias GPUs en paralelo. Con cuantización 8 bits, una RTX 4090 (24 GB) podría ser insuficiente; se recomendaría una A6000 (48 GB) o A100. Con cuantización 4 bits, una RTX 4090 o RTX 3090 (24 GB) podría ser viable.
 - Si cabe en consumer GPU: con cuantización agresiva (4 bits) y usando técnicas como offloading a CPU, podría ejecutarse en GPUs consumer de 24 GB, aunque con latencia mayor.
-- Opciones de despliegue: al ser un modelo de la familia transformers, puede desplegarse con vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (si se genera un archivo compatible) o directamente con la librería transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo de la familia transformers, puede desplegarse con vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (si se genera un archivo compatible) o directamente con la librería transformers de Hugging Face.
 - Latencia y throughput: no se dispone de datos medidos. En general, un modelo MoE de 35B activando quizás 3-4B parámetros por token podría ofrecer una latencia similar a un modelo denso de 7-8B, pero depende del hardware y la implementación.
 
 ## Comparativa con modelos similares
 
 No se dispone de información suficiente para establecer una comparativa fiable. El modelo parece basarse en una variante de Qwen3.5, pero no existe documentación pública sobre esta arquitectura. Modelos comparables por tamaño y arquitectura MoE podrían ser:
 
-- Qwen2.5-MoE (A14B): 14B parámetros activos, contexto 32K, licencia Apache 2.0, disponible en HuggingFace.
+- Qwen2.5-MoE (A14B): 14B parámetros activos, contexto 32K, licencia Apache 2.0, disponible en Hugging Face.
 - DeepSeek-V2 (MoE): 236B totales, 21B activos, contexto 128K, licencia MIT (aunque con restricciones).
 - Mixtral 8x7B: 46,7B totales, 12,9B activos, contexto 32K, licencia Apache 2.0.
 
@@ -81,7 +81,7 @@ Sin embargo, el modelo `new_hk_5drydskccm` tiene una capacidad multimodal que es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nernstpolga/new_hk_5drydskccm
+- Modelo en Hugging Face: https://huggingface.co/nernstpolga/new_hk_5drydskccm
 - Perfil del autor: https://huggingface.co/nernstpolga
 - Modelo base (referenciado): https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged
 

@@ -96,11 +96,11 @@ Resultados publicados en la model card, evaluados con VLMEvalKit. Los modelos de
 
 | Modelo | Parametros | Contexto | Media en la evaluacion publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aquila-VL-2B | 2,18B | no disponible | 64,1 | apache-2.0 | HuggingFace (BAAI y resubida TULLUS) |
-| Qwen2-VL-2B-Instruct | no disponible en la informacion proporcionada | no disponible | 62,1 | no disponible en la informacion proporcionada | HuggingFace |
-| XinYuan-VL-2B | no disponible en la informacion proporcionada | no disponible | 60,9 | no disponible en la informacion proporcionada | HuggingFace |
-| InternVL2-2B | no disponible en la informacion proporcionada | no disponible | 58,8 | no disponible en la informacion proporcionada | HuggingFace |
-| MiniCPM-V-2 | no disponible en la informacion proporcionada | no disponible | 53,5 | no disponible en la informacion proporcionada | HuggingFace |
+| Aquila-VL-2B | 2,18B | no disponible | 64,1 | apache-2.0 | Hugging Face (BAAI y resubida TULLUS) |
+| Qwen2-VL-2B-Instruct | no disponible en la informacion proporcionada | no disponible | 62,1 | no disponible en la informacion proporcionada | Hugging Face |
+| XinYuan-VL-2B | no disponible en la informacion proporcionada | no disponible | 60,9 | no disponible en la informacion proporcionada | Hugging Face |
+| InternVL2-2B | no disponible en la informacion proporcionada | no disponible | 58,8 | no disponible en la informacion proporcionada | Hugging Face |
+| MiniCPM-V-2 | no disponible en la informacion proporcionada | no disponible | 53,5 | no disponible en la informacion proporcionada | Hugging Face |
 
 Aquila-VL-2B lidera la media agregada, MMMU, MathVista, MathVerse, ChartQA, ScienceQA y LLaVABench, mientras que Qwen2-VL-2B-Instruct mantiene ventaja en DocVQA, InfoVQA, TextVQA, OCRVQA, OCRBench y MMVet, y XinYuan-VL-2B gana en POPE y MMBench-EN.
 

@@ -4,7 +4,7 @@
 
 π₀.5 (Pi05) es un modelo Vision-Language-Action (VLA) desarrollado por Physical Intelligence para abordar el problema de la generalización en mundo abierto en robótica. A diferencia de los modelos de control robótico tradicionales, que solo funcionan en entornos controlados y con objetos predefinidos, π₀.5 está diseñado para ejecutar tareas de manipulación en entornos y situaciones que no ha visto durante el entrenamiento. Este modelo es una evolución de π₀ y utiliza co-training sobre tareas heterogéneas, datos de múltiples robots, predicción semántica de alto nivel y datos web para lograr esa generalización.
 
-La implementación disponible en HuggingFace (`surira/pi05_20260904_nova2_box_lift_v3_1_policy`) es una adaptación del modelo original realizada con la librería LeRobot, entrenada sobre el dataset `local/nova2_box_lift_v3`. El modelo tiene 3.616.757.520 parámetros (3.6B) y se distribuye en formato safetensors con un tamaño de repositorio de 7,5 GB. La longitud de contexto y los idiomas soportados no se han especificado en la información disponible.
+La implementación disponible en Hugging Face (`surira/pi05_20260904_nova2_box_lift_v3_1_policy`) es una adaptación del modelo original realizada con la librería LeRobot, entrenada sobre el dataset `local/nova2_box_lift_v3`. El modelo tiene 3.616.757.520 parámetros (3.6B) y se distribuye en formato safetensors con un tamaño de repositorio de 7,5 GB. La longitud de contexto y los idiomas soportados no se han especificado en la información disponible.
 
 ## Especificaciones técnicas
 
@@ -67,7 +67,7 @@ No se han identificado modelos comparables en la información proporcionada. El 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/surira/pi05_20260904_nova2_box_lift_v3_1_policy
+- Hugging Face: https://huggingface.co/surira/pi05_20260904_nova2_box_lift_v3_1_policy
 - Artículo arXiv: https://arxiv.org/html/2504.16054v1
 - PDF de Physical Intelligence: https://www.pi.website/download/pi05.pdf
 - Blog de Physical Intelligence: https://www.physicalintelligence.company/blog/pi05

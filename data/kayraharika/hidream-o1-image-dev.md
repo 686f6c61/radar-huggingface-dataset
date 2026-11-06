@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HiDream-O1-Image-Dev es un modelo de generación de imágenes de código abierto desarrollado por HiDream-ai, que se distribuye en el repositorio de HuggingFace como kayraharika/HiDream-O1-Image-Dev, un espejo del lanzamiento original. Se trata de una variante destilada del modelo HiDream-O1-Image de 8.000 millones de parámetros, diseñada para generar imágenes de alta resolución (hasta 2.048 × 2.048) a partir de texto, editar imágenes existentes y crear contenido personalizado por sujeto.
+HiDream-O1-Image-Dev es un modelo de generación de imágenes de código abierto desarrollado por HiDream-ai, que se distribuye en el repositorio de Hugging Face como kayraharika/HiDream-O1-Image-Dev, un espejo del lanzamiento original. Se trata de una variante destilada del modelo HiDream-O1-Image de 8.000 millones de parámetros, diseñada para generar imágenes de alta resolución (hasta 2.048 × 2.048) a partir de texto, editar imágenes existentes y crear contenido personalizado por sujeto.
 
 La arquitectura principal es un Pixel-Level Unified Transformer (UiT) que trabaja directamente sobre píxeles en bruto, sin necesidad de un VAE externo ni de codificadores de texto separados. Todo el modelo —texto, píxeles y condiciones de tarea— se codifica en un espacio de tokens compartido, lo que le permite abordar múltiples tareas de generación visual con una única arquitectura. La variante Dev utiliza 28 pasos de inferencia en lugar de los 50 del modelo completo, lo que la hace más eficiente para producción.
 
@@ -81,8 +81,8 @@ El modelo se diferencia de alternativas como PixArt y Show-o por su arquitectura
 
 ## Enlaces
 
-- Repositorio de HuggingFace (espejo): https://huggingface.co/kayraharika/HiDream-O1-Image-Dev
-- Repositorio original de HuggingFace: https://huggingface.co/HiDream-ai/HiDream-O1-Image-Dev
+- Repositorio de Hugging Face (espejo): https://huggingface.co/kayraharika/HiDream-O1-Image-Dev
+- Repositorio original de Hugging Face: https://huggingface.co/HiDream-ai/HiDream-O1-Image-Dev
 - Repositorio de GitHub: https://github.com/HiDream-ai/HiDream-O1-Image
 - Informe técnico (arXiv): https://arxiv.org/pdf/2605.11061v1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/HiDream-ai/HiDream-O1-Image-Dev
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/HiDream-ai/HiDream-O1-Image-Dev

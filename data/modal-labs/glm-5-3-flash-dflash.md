@@ -84,7 +84,7 @@ No se dispone de datos publicados que permitan una comparativa cuantitativa. La 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/modal-labs/GLM-5.3-Flash-DFlash
+- Modelo en Hugging Face: https://huggingface.co/modal-labs/GLM-5.3-Flash-DFlash
 - Modelo objetivo: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Paper DFlash (arXiv:2602.06036): https://arxiv.org/abs/2602.06036
 - Repositorio GitHub: https://github.com/z-lab/dflash

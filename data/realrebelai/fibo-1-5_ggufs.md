@@ -67,5 +67,5 @@ No disponible. No se han proporcionado modelos comparables en la información di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/realrebelai/Fibo-1.5_GGUFs
+- Repositorio Hugging Face: https://huggingface.co/realrebelai/Fibo-1.5_GGUFs
 - Perfil de realrebelai: https://huggingface.co/realrebelai

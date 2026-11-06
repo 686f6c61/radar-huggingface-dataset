@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Objetivo | Pares / muestras | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-VL-8B-Instruct-UI-Genie-BT-256K | Bradley-Terry | 127.993 pares / 255.986 muestras | Escalar continuo no acotado | Apache 2.0 | HuggingFace, solo `transformers` |
-| Qwen3-VL-8B-Instruct-UI-Genie-BT-128K | Bradley-Terry | 63.988 pares / 127.976 muestras | Escalar continuo no acotado | Apache 2.0 | HuggingFace, mismo recetario con la mitad de datos |
-| Qwen3-VL-8B-Instruct-UI-Genie-SFT-128K | SFT | 127.976 muestras de etiqueta única | Clasificación discreta `<|+|>` / `<|-|>` | Apache 2.0 | HuggingFace; más fácil de integrar si se necesita una decisión binaria |
+| Qwen3-VL-8B-Instruct-UI-Genie-BT-256K | Bradley-Terry | 127.993 pares / 255.986 muestras | Escalar continuo no acotado | Apache 2.0 | Hugging Face, solo `transformers` |
+| Qwen3-VL-8B-Instruct-UI-Genie-BT-128K | Bradley-Terry | 63.988 pares / 127.976 muestras | Escalar continuo no acotado | Apache 2.0 | Hugging Face, mismo recetario con la mitad de datos |
+| Qwen3-VL-8B-Instruct-UI-Genie-SFT-128K | SFT | 127.976 muestras de etiqueta única | Clasificación discreta `<|+|>` / `<|-|>` | Apache 2.0 | Hugging Face; más fácil de integrar si se necesita una decisión binaria |
 | Qwen/Qwen3-VL-8B-Instruct | Generación multimodal | No aplica | Texto | No indicada en la información disponible | Modelo base, sin función de recompensa |
 
 Frente a las alternativas del propio autor, este checkpoint duplica los pares de BT-128K y ofrece una señal continua que SFT-128K no proporciona, a cambio de requerir una carga manual de la cabeza `score` y de no poder servirse con vLLM.
@@ -92,7 +92,7 @@ Frente a las alternativas del propio autor, este checkpoint duplica los pares de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-BT-256K
+- Modelo en Hugging Face: https://huggingface.co/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-BT-256K
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Variante Bradley-Terry con 128K: https://huggingface.co/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-BT-128K
 - Variante SFT con 128K: https://huggingface.co/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-SFT-128K

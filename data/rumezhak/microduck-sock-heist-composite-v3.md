@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rumezhak/microduck-sock-heist-composite-v3` es una política de control para el robot simulado MicroDuck, presentada como entrada en la categoría "6 m Sock Heist" de la Microduck Arena de Pollen Robotics. No es un modelo de lenguaje: es un grafo ONNX con tablas de búsqueda (lookup tables) que reproduce trayectorias de control precalculadas para una tarea concreta de manipulación (robar un calcetín y desplazarse 6 metros) dentro del simulador MuJoCo de la Arena. Lo desarrolla el usuario de HuggingFace `rumezhak` como fine-tuning de su propia entrada anterior, `microduck-sock-heist-composite-v2`.
+`rumezhak/microduck-sock-heist-composite-v3` es una política de control para el robot simulado MicroDuck, presentada como entrada en la categoría "6 m Sock Heist" de la Microduck Arena de Pollen Robotics. No es un modelo de lenguaje: es un grafo ONNX con tablas de búsqueda (lookup tables) que reproduce trayectorias de control precalculadas para una tarea concreta de manipulación (robar un calcetín y desplazarse 6 metros) dentro del simulador MuJoCo de la Arena. Lo desarrolla el usuario de Hugging Face `rumezhak` como fine-tuning de su propia entrada anterior, `microduck-sock-heist-composite-v2`.
 
 El modelo consigue un tiempo medio de 4,896 s sobre las cinco semillas oficiales de la Arena (5/5 completadas), frente a 4,909 s de su predecesor composite-v2 y 4,922 s de la mejor entrada de terceros en el momento de su publicación. La mejora es de 13 ms en la media, obtenida reoptimizando los últimos 24 a 90 pasos de control de cada semilla mediante CMA-ES separable sobre una reimplementación con snapshot-restart del runner oficial.
 
@@ -73,10 +73,10 @@ Comparación con la mejor entrada de terceros en el momento de la publicación: 
 
 | Modelo | Tipo | Tiempo medio (5 semillas) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rumezhak/microduck-sock-heist-composite-v3 | Lookup ONNX + red de respaldo | 4,896 s | No declarada (partes Apache-2.0) | HuggingFace |
-| rumezhak/microduck-sock-heist-composite-v2 | Lookup ONNX + red de respaldo | 4,909 s | No declarada | HuggingFace |
-| jrubiosainz/microduck-sock-heist-6m-rz-tail-r4 ("derived tail search FCE G5") | Política basada en búsqueda de cola | 4,922 s | Apache-2.0 (archivo LICENSE, sin campo `license:`) | HuggingFace |
-| lphatnguyen/microduck-sock-heist-6m-v3 | Red neuronal (respaldo de este modelo) | no disponible | No declarada | HuggingFace |
+| rumezhak/microduck-sock-heist-composite-v3 | Lookup ONNX + red de respaldo | 4,896 s | No declarada (partes Apache-2.0) | Hugging Face |
+| rumezhak/microduck-sock-heist-composite-v2 | Lookup ONNX + red de respaldo | 4,909 s | No declarada | Hugging Face |
+| jrubiosainz/microduck-sock-heist-6m-rz-tail-r4 ("derived tail search FCE G5") | Política basada en búsqueda de cola | 4,922 s | Apache-2.0 (archivo LICENSE, sin campo `license:`) | Hugging Face |
+| lphatnguyen/microduck-sock-heist-6m-v3 | Red neuronal (respaldo de este modelo) | no disponible | No declarada | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ Comparación con la mejor entrada de terceros en el momento de la publicación: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rumezhak/microduck-sock-heist-composite-v3
+- Modelo en Hugging Face: https://huggingface.co/rumezhak/microduck-sock-heist-composite-v3
 - Modelo base (composite v2): https://huggingface.co/rumezhak/microduck-sock-heist-composite-v2
 - Entrada remix previa: https://huggingface.co/rumezhak/microduck-sock-heist-remix-rz-tail
 - Microduck Arena (Space): https://huggingface.co/spaces/pollen-robotics/microduck-arena

@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ttindall/Qwen3.8-27B-Defiance-Uncensored-MTP-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ttindall/Qwen3.8-27B-Defiance-Uncensored-MTP-GGUF
 - Modelo base (pesos): https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Modelo base (plantilla de constructos): https://huggingface.co/DavidAU/Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF
 - La búsqueda web realizada no devolvió enlaces técnicos relevantes sobre este modelo (papers, blogs o demos); no se dispone de documentación adicional.

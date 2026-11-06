@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `swe-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino supervisado (SFT) de tipo decoder-only para generación de texto, publicado por el usuario francesca9805 en HuggingFace. Parte del modelo base `francesca9805/swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407` y se ha entrenado con la librería TRL (versión 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0. El nombre del repositorio sugiere un corpus de entrenamiento de aproximadamente 100 MB en escritura latina (prefijo `swe-latn`), con datos empaquetados (`packed`) y precisión bf16, aunque la model card no documenta la composición del dataset.
+El modelo `swe-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino supervisado (SFT) de tipo decoder-only para generación de texto, publicado por el usuario francesca9805 en Hugging Face. Parte del modelo base `francesca9805/swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407` y se ha entrenado con la librería TRL (versión 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0. El nombre del repositorio sugiere un corpus de entrenamiento de aproximadamente 100 MB en escritura latina (prefijo `swe-latn`), con datos empaquetados (`packed`) y precisión bf16, aunque la model card no documenta la composición del dataset.
 
 Se trata de un modelo pequeño: 124.770.816 parámetros totales según los pesos en safetensors, lo que lo sitúa en el rango de GPT-2 base (124 M). No es un modelo de mezcla de expertos (MoE), por lo que no hay parámetros activos distintos del total. El repositorio ocupa 10,0 GB, un tamaño desproporcionado respecto al peso del modelo, lo que apunta a que incluye estados de optimizador, checkpoints intermedios o artefactos de entrenamiento además de los pesos finales.
 
@@ -25,7 +25,7 @@ Otros datos: repositorio de 10,0 GB, librería `transformers`, pipeline `text-ge
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es GPT-2, es decir, un transformer decoder-only con atención causal completa (no se documenta atención lineal, decodificación especulativa ni variantes híbridas SSM). El tag `gpt2` de HuggingFace junto con los 124,77 M de parámetros apunta a una configuración equivalente a GPT-2 base: 12 capas, 12 cabezas de atención y dimensión de embedding 768, aunque estos valores concretos no se confirman en la información disponible y no deben darse por sentados.
+La arquitectura declarada es GPT-2, es decir, un transformer decoder-only con atención causal completa (no se documenta atención lineal, decodificación especulativa ni variantes híbridas SSM). El tag `gpt2` de Hugging Face junto con los 124,77 M de parámetros apunta a una configuración equivalente a GPT-2 base: 12 capas, 12 cabezas de atención y dimensión de embedding 768, aunque estos valores concretos no se confirman en la información disponible y no deben darse por sentados.
 
 El entrenamiento se realizó mediante SFT (supervised fine-tuning) con TRL 0.23.0. No se especifica el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases posteriores de RLHF o DPO. El nombre del modelo indica un corpus de 100 MB con empaquetado de secuencias (`packed`) y precisión bf16, un checkpoint en el paso 500 (`ckpt500`) y una semilla fija (`seed3407`) para reproducibilidad. La model card enlaza un run de Weights & Biases del proyecto "new-tokenizers" de la Universidad de Groningen, lo que sugiere un contexto de investigación académica. No se documentan innovaciones técnicas adicionales.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| swe-latn-100mb-after-ppt-...-ckpt500_seed3407 | 124,77 M | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
-| GPT-2 base (OpenAI) | 124 M | 1024 tokens | benchmarks publicados por OpenAI | modified MIT | ampliamente disponible en HuggingFace |
-| DistilGPT-2 | 82 M | 1024 tokens | benchmarks publicados por HuggingFace | Apache 2.0 | ampliamente disponible en HuggingFace |
-| GPT-2 medium | 355 M | 1024 tokens | benchmarks publicados por OpenAI | modified MIT | ampliamente disponible en HuggingFace |
+| swe-latn-100mb-after-ppt-...-ckpt500_seed3407 | 124,77 M | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
+| GPT-2 base (OpenAI) | 124 M | 1024 tokens | benchmarks publicados por OpenAI | modified MIT | ampliamente disponible en Hugging Face |
+| DistilGPT-2 | 82 M | 1024 tokens | benchmarks publicados por Hugging Face | Apache 2.0 | ampliamente disponible en Hugging Face |
+| GPT-2 medium | 355 M | 1024 tokens | benchmarks publicados por OpenAI | modified MIT | ampliamente disponible en Hugging Face |
 
 La comparación se limita a la categoría de modelos GPT-2 de tamaño pequeño: no se dispone de datos de rendimiento del modelo evaluado que permitan contrastar calidad con estas alternativas. Los valores de contexto de los modelos comparativos corresponden a sus configuraciones estándar publicadas, no a este modelo.
 
@@ -86,7 +86,7 @@ La comparación se limita a la categoría de modelos GPT-2 de tamaño pequeño: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swe-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swe-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/92uenkwp

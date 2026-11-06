@@ -89,7 +89,7 @@ La unica diferencia sustantiva entre este repositorio y `litert-community/embedd
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tibaf/embeddinggemma-300m-litert
+- Repositorio en Hugging Face: https://huggingface.co/tibaf/embeddinggemma-300m-litert
 - Repositorio original en LiteRT: https://huggingface.co/litert-community/embeddinggemma-300m
 - Modelo base (pesos originales de Google DeepMind): https://huggingface.co/google/embeddinggemma-300m
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms

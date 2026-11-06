@@ -105,7 +105,7 @@ La comparación relevante es interna al ecosistema del propio modelo base, ya qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/npario/gemma-4-26B-A4B-it-qat-uncensored-heretic-UDmerge-GGUF
+- Repositorio Hugging Face: https://huggingface.co/npario/gemma-4-26B-A4B-it-qat-uncensored-heretic-UDmerge-GGUF
 - Modelo base QAT GGUF (Unsloth): https://huggingface.co/unsloth/gemma-4-26B-A4B-it-qat-GGUF
 - Modelo base abliterado BF16 (llmfan46): https://huggingface.co/llmfan46/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic
 - Cuantización Q4_0 abliterada (llmfan46): https://huggingface.co/llmfan46/gemma-4-26B-A4B-it-qat-q4_0-uncensored-heretic-GGUF

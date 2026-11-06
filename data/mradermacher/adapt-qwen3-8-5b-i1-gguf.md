@@ -68,7 +68,7 @@ No se han proporcionado datos comparativos en la información disponible. El mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/ADAPT-Qwen3-8.5B-i1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/ADAPT-Qwen3-8.5B-i1-GGUF
 - Modelo base: https://huggingface.co/Harvard-DCML/ADAPT-Qwen3-8.5B
 - Cuantizaciones estáticas: https://huggingface.co/mradermacher/ADAPT-Qwen3-8.5B-GGUF
 - Página de solicitudes de modelos: https://huggingface.co/mradermacher/model_requests

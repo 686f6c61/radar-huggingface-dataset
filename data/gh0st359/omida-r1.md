@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Omida R1 Preview (v0.1) es un ajuste fino supervisado mediante QLoRA sobre el modelo multimodal `Qwen/Qwen3.5-9B`, publicado por el usuario gh0st359 en HuggingFace. No es un modelo entrenado desde cero: el repositorio contiene la base en BF16 con el adaptador Omida fusionado en las capas de texto, mientras que las capas de vision permanecieron congeladas durante el entrenamiento. El pipeline declarado es `image-text-to-text`, por lo que hereda la capacidad de procesar imagenes y texto del modelo base.
+Omida R1 Preview (v0.1) es un ajuste fino supervisado mediante QLoRA sobre el modelo multimodal `Qwen/Qwen3.5-9B`, publicado por el usuario gh0st359 en Hugging Face. No es un modelo entrenado desde cero: el repositorio contiene la base en BF16 con el adaptador Omida fusionado en las capas de texto, mientras que las capas de vision permanecieron congeladas durante el entrenamiento. El pipeline declarado es `image-text-to-text`, por lo que hereda la capacidad de procesar imagenes y texto del modelo base.
 
 El entrenamiento se realizo con un corpus muy reducido: 32 demostraciones sinteticas autorales (25 de entrenamiento, 5 de desarrollo y 2 de test interno), 2 epocas, rango 8, alpha 16, cuantizacion NF4 y una tasa de aprendizaje de 8e-5. El propio autor lo describe como una vista previa de investigacion, no como evidencia de superioridad amplia frente a Qwen. El modelo tiene 9.653.104.368 parametros (unos 9,65 mil millones) y un repositorio de 19,3 GB en formato safetensors.
 
@@ -46,7 +46,7 @@ La innovacion tecnica es escasa y de naturaleza procedimental: se trata de un ej
 - Pruebas de integracion de herramientas de inferencia: la ruta de 4 bits documentada en `inference/run_omida.py` y `inference/default_config.json` puede emplearse para validar despliegues cuantizados en entornos con VRAM limitada.
 - Comparacion de linaje de pesos: el archivo `omida_merge_metadata.json` facilita auditar que capas se modificaron y cuales se congelaron, util en estudios de trazabilidad de modelos derivados.
 - Evaluacion de riesgos de sobreajuste: con solo 32 ejemplos y 2 epocas, es un caso de estudio adecuado para medir degradacion, repeticion o colapso de estilo frente al modelo base.
-- Uso docente: ilustra de forma compacta el ciclo completo de publicacion de un derivado en HuggingFace, incluida la retencion de la licencia upstream.
+- Uso docente: ilustra de forma compacta el ciclo completo de publicacion de un derivado en Hugging Face, incluida la retencion de la licencia upstream.
 
 ## Benchmarks y rendimiento
 
@@ -88,7 +88,7 @@ No se dispone de datos suficientes para comparar rendimiento (MMLU, HumanEval, G
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gh0st359/omida-r1
+- Modelo en Hugging Face: https://huggingface.co/gh0st359/omida-r1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio del autor (proyecto relacionado): https://www.github.com/gh0st359/axiom-demo
 - Proyecto Omni-R1 de aim-uofa (distinto, sin relacion): https://github.com/aim-uofa/Omni-R1

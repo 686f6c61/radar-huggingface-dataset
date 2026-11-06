@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento (MMLU, HumanEval, GSM8K u otros) que permi
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/neurosquad/Qwen3.8-27B-SEEDPACK
+- Ficha en Hugging Face: https://huggingface.co/neurosquad/Qwen3.8-27B-SEEDPACK
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE
 - Repositorio GGUF original: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

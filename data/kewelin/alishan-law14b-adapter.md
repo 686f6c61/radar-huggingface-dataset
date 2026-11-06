@@ -4,7 +4,7 @@
 
 El modelo `Kewelin/alishan-law14b-adapter` es un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning), concretamente un LoRA, desarrollado por el autor Kewelin sobre el modelo base `Qwen/Qwen3-14B`. El tag `arxiv:1910.09700` corresponde al paper original de LoRA, lo que confirma la técnica de adaptación de bajo rango utilizada. El nombre "alishan-law" sugiere una especialización en el dominio legal, aunque no se proporciona documentación adicional que detalle el corpus de entrenamiento ni las tareas concretas.
 
-Este adaptador tiene un tamaño de repositorio de 3,6 GB y está alojado en HuggingFace con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargarlo. Al ser un adaptador, no es un modelo autónomo: requiere cargar el modelo base Qwen3-14B y aplicar los pesos del LoRA para obtener el modelo final. Su relevancia radica en que permite especializar un modelo potente de 14B parámetros en el ámbito jurídico con un coste de entrenamiento reducido, aunque la falta de información pública limita su evaluación.
+Este adaptador tiene un tamaño de repositorio de 3,6 GB y está alojado en Hugging Face con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargarlo. Al ser un adaptador, no es un modelo autónomo: requiere cargar el modelo base Qwen3-14B y aplicar los pesos del LoRA para obtener el modelo final. Su relevancia radica en que permite especializar un modelo potente de 14B parámetros en el ámbito jurídico con un coste de entrenamiento reducido, aunque la falta de información pública limita su evaluación.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: al ser un adaptador sobre Qwen3-14B, se debe cargar el modelo base. En FP16, Qwen3-14B requiere aproximadamente 28 GB de VRAM; en 8-bit, unos 14 GB; en 4-bit, unos 7 GB. El adaptador anade un coste minimo adicional (los pesos del LoRA son pequenos, del orden de cientos de MB).
 - GPU recomendadas: para FP16, una NVIDIA A100 (40 GB) o RTX 4090 (24 GB) son adecuadas. Para cuantizacion 8-bit o 4-bit, una RTX 3090 (24 GB) o RTX 4080 (16 GB) pueden ser suficientes.
 - Compatibilidad con GPU de consumo: si, con cuantizacion. En 4-bit cabe en GPUs con 8-12 GB de VRAM, como RTX 3060 o RTX 4070.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la libreria `peft` de HuggingFace y luego servir con vLLM, TGI o llama.cpp (si se convierte a GGUF). Ollama no soporta directamente adaptadores PEFT, pero se puede exportar el modelo fusionado.
+- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la libreria `peft` de Hugging Face y luego servir con vLLM, TGI o llama.cpp (si se convierte a GGUF). Ollama no soporta directamente adaptadores PEFT, pero se puede exportar el modelo fusionado.
 - Latencia y throughput: no disponibles. Dependen del hardware, la cuantizacion y el backend de inferencia.
 
 ## Comparativa con modelos similares
@@ -65,11 +65,11 @@ No se dispone de informacion sobre adaptadores legales comparables en el mismo r
 - Sesgos conocidos: no hay informacion sobre sesgos especificos del adaptador. El modelo base Qwen3-14B puede presentar sesgos presentes en sus datos de entrenamiento, que se heredarian en el adaptador.
 - Riesgo de alucinacion: como cualquier modelo de lenguaje, puede generar contenido falso o inventado, especialmente en un dominio legal donde la precision es critica. No se ha evaluado su fiabilidad en tareas juridicas.
 - Limitaciones de contexto e idioma: el contexto maximo depende del modelo base (32K tokens), pero el adaptador podria haber sido entrenado con secuencias mas cortas, lo que degradaria el rendimiento en documentos largos. No se especifican idiomas soportados.
-- Restricciones de licencia: la licencia no esta disponible. El acceso es restringido (gated), lo que implica que los usuarios deben aceptar condiciones en HuggingFace. No se sabe si permite uso comercial.
+- Restricciones de licencia: la licencia no esta disponible. El acceso es restringido (gated), lo que implica que los usuarios deben aceptar condiciones en Hugging Face. No se sabe si permite uso comercial.
 - Advertencia para produccion: al ser un adaptador sin documentacion, no se recomienda su uso en entornos productivos sin una evaluacion exhaustiva previa. La ausencia de benchmarks y la opacidad del entrenamiento suponen un riesgo significativo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kewelin/alishan-law14b-adapter
+- Hugging Face: https://huggingface.co/Kewelin/alishan-law14b-adapter
 - Paper de LoRA (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B

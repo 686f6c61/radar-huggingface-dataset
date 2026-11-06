@@ -74,7 +74,7 @@ No se dispone de información suficiente para una comparativa rigurosa con model
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/AyoubChLin/LFM2.5-2.6B-fable5-coding-agent-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/AyoubChLin/LFM2.5-2.6B-fable5-coding-agent-GGUF
 - Modelo base (fine-tuning): https://huggingface.co/AyoubChLin/lfm2.5-2.6b-fable5-coding-agent
 - Documentación del modelo base LFM2.5-2.6B: https://docs.liquid.ai/lfm/models/lfm25-2.6b
 - Blog de Liquid AI sobre LFM2.5-2.6B: https://www.liquid.ai/blog/lfm2-5-2-6b

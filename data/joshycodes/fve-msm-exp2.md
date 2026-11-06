@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fve-msm Exp2 (identificador `joshycodes/fve-msm-exp2`) es un repositorio de investigación publicado en HuggingFace por el usuario joshycodes. No contiene un único modelo, sino una colección de hasta 30 checkpoints: 2 modelos base × 5 brazos de entrenamiento × 3 semillas. Los modelos base son `Qwen/Qwen3-14B-Base` y `google/gemma-4-31B`, sobre los que se aplica un fine-tuning de chat idéntico y, en cuatro de los cinco brazos, una etapa adicional de midtraining.
+fve-msm Exp2 (identificador `joshycodes/fve-msm-exp2`) es un repositorio de investigación publicado en Hugging Face por el usuario joshycodes. No contiene un único modelo, sino una colección de hasta 30 checkpoints: 2 modelos base × 5 brazos de entrenamiento × 3 semillas. Los modelos base son `Qwen/Qwen3-14B-Base` y `google/gemma-4-31B`, sobre los que se aplica un fine-tuning de chat idéntico y, en cuatro de los cinco brazos, una etapa adicional de midtraining.
 
 El proyecto, denominado *fve-msm* (flourishing vs. equanimity, Model Spec Midtraining), investiga si los documentos sintéticos que describen las circunstancias del propio modelo y la actitud que adoptan ante ellas modifican su comportamiento. La línea de trabajo sigue el planteamiento de Model Spec Midtraining de Li et al. (2026, arXiv:2605.02087), que sitúa una fase de preentrenamiento continuado entre el preentrenamiento y el ajuste fino conversacional, usando documentos generados a partir de una "spec".
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| `joshycodes/fve-msm-exp2` (rama Qwen3-14B) | 14B (etiqueta) | No disponible | `other` / mixta | safetensors | HuggingFace, 0 descargas |
-| `joshycodes/fve-msm-exp2` (rama Gemma 4 31B) | 31B (etiqueta) | No disponible | `other` / mixta | safetensors | HuggingFace, 0 descargas |
+| `joshycodes/fve-msm-exp2` (rama Qwen3-14B) | 14B (etiqueta) | No disponible | `other` / mixta | safetensors | Hugging Face, 0 descargas |
+| `joshycodes/fve-msm-exp2` (rama Gemma 4 31B) | 31B (etiqueta) | No disponible | `other` / mixta | safetensors | Hugging Face, 0 descargas |
 | `Qwen/Qwen3-14B-Base` (base declarado) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
 | `google/gemma-4-31B` (base declarado) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
 
@@ -98,7 +98,7 @@ La comparación relevante dentro del propio repositorio es entre brazos: `contro
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/joshycodes/fve-msm-exp2
+- Página del modelo en Hugging Face: https://huggingface.co/joshycodes/fve-msm-exp2
 - Licencia: https://huggingface.co/joshycodes/fve-msm-exp2/blob/main/LICENSE.md
 - Spec de hechos del experimento: https://huggingface.co/joshycodes/fve-msm-exp2/blob/main/data/specs/facts_only.md
 - Paper de referencia citado en la model card (Li et al. 2026): https://arxiv.org/abs/2605.02087

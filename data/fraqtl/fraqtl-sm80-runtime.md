@@ -76,8 +76,8 @@ No disponible. Este artefacto no es un modelo de lenguaje ni un runtime de prop�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fraQtl/fraqtl-sm80-runtime
-- Organizaci처n fraQtl en HuggingFace: https://huggingface.co/fraQtl
+- Repositorio Hugging Face: https://huggingface.co/fraQtl/fraqtl-sm80-runtime
+- Organizaci처n fraQtl en Hugging Face: https://huggingface.co/fraQtl
 - Repositorio de sidecars calibrados: https://huggingface.co/fraQtl/mistral-7b-instruct-v0.3-kv-sidecars
 - Organizaci처n fraQtl en GitHub: https://github.com/fraqtl-ai
 - Repositorio de diagn처stico (fingerprint de compresi처n): https://github.com/fraqtl-ai/fraqtl-diagnostic

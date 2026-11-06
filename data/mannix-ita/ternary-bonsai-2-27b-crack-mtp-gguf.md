@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks que permitan comparar la calidad de salida 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ManniX-ITA/Ternary-Bonsai-2-27B-CRACK-MTP-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ManniX-ITA/Ternary-Bonsai-2-27B-CRACK-MTP-GGUF
 - Variante equivalente desde el fichero de PrismML: https://huggingface.co/ManniX-ITA/Ternary-Bonsai-2-27B-MTP-GGUF
 - Modelo base abliterado de dealignai: https://huggingface.co/dealignai/Bonsai-2-27B-Ternary-CRACK-GGUF
 - Modelo base de PrismML: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf

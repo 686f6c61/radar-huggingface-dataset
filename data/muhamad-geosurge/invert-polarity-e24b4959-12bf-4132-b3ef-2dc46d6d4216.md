@@ -88,7 +88,7 @@ No se dispone de comparaciones con modelos de otros fabricantes en la informacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-e24b4959-12bf-4132-b3ef-2dc46d6d4216
+- Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-e24b4959-12bf-4132-b3ef-2dc46d6d4216
 - Modelo base: https://huggingface.co/google/gemma-4-E4B
 - Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - GitHub de Gemma: https://github.com/google-gemma

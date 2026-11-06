@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash-UNCENSORED-FP8 es una versión modificada del modelo GLM-5.3-Flash de Z.ai, publicada por el usuario Alexoipo en HuggingFace bajo la marca "CRACK" de dealignai. El objetivo de esta variante es eliminar de forma permanente el comportamiento de rechazo (refusal) del modelo base mediante una edición directa de los pesos, sin recurrir a fine-tuning, LoRA ni plantillas de jailbreak. El resultado es un modelo que responde sin restricciones éticas, manteniendo o incluso mejorando ligeramente la capacidad en MMLU.
+GLM-5.3-Flash-UNCENSORED-FP8 es una versión modificada del modelo GLM-5.3-Flash de Z.ai, publicada por el usuario Alexoipo en Hugging Face bajo la marca "CRACK" de dealignai. El objetivo de esta variante es eliminar de forma permanente el comportamiento de rechazo (refusal) del modelo base mediante una edición directa de los pesos, sin recurrir a fine-tuning, LoRA ni plantillas de jailbreak. El resultado es un modelo que responde sin restricciones éticas, manteniendo o incluso mejorando ligeramente la capacidad en MMLU.
 
 La arquitectura es un MoE híbrido que combina atención lineal KDA con atención sparse estilo DeepSeek. El modelo tiene 321.323.031.390 parámetros totales, de los cuales 18.000 millones se activan por token. Su ventana de contexto alcanza 1 millón de tokens y soporta visión mediante un vision tower de GLM-4.1V. La cuantización es FP8 nativa, lo que permite ejecución a velocidad nativa en GPUs Hopper. Incluye además un cabezal de predicción multi-token (MTP) para decodificación especulativa.
 
@@ -15,7 +15,7 @@ La arquitectura es un MoE híbrido que combina atención lineal KDA con atenció
 | Parametros activos | 18B activos por token |
 | Longitud de contexto | 1.000.000 tokens |
 | Tipos de cuantizacion | FP8 (block-wise e4m3) |
-| Idiomas soportados | Inglés (según HuggingFace) |
+| Idiomas soportados | Inglés (según Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 
@@ -31,7 +31,7 @@ No se dispone de información detallada sobre el dataset de entrenamiento origin
 - Comprensión de visión mediante el vision tower de GLM-4.1V, incluido con la plantilla de chat multimodal correcta.
 - Decodificación especulativa con MTP, que acelera la generación entre un 20% y un 30% en comparación con la decodificación estándar.
 - Procesamiento de contexto largo de hasta 1 millón de tokens, adecuado para análisis de documentos extensos.
-- Capacidades multilingües: según la ficha de HuggingFace, el modelo solo está etiquetado en inglés, aunque el modelo base de Z.ai podría soportar más idiomas. No se confirma en la información disponible.
+- Capacidades multilingües: según la ficha de Hugging Face, el modelo solo está etiquetado en inglés, aunque el modelo base de Z.ai podría soportar más idiomas. No se confirma en la información disponible.
 - No se ha confirmado soporte de tool calling ni function calling en la información proporcionada.
 
 ## Casos de uso
@@ -67,9 +67,9 @@ En HarmBench-320, el modelo cumple el 100% de las peticiones en las categorías 
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| zai-org/GLM-5.3-Flash (base) | 320B (aprox.) | 18B | 1M | 86,74% | MIT | HuggingFace |
-| Alexoipo/GLM-5.3-Flash-UNCENSORED-FP8 | 321.323.031.390 | 18B | 1M | 87,33% | MIT | HuggingFace |
-| dealignai/GLM-5.3-Flash-ABLITERATED-FP8 (mirror) | no disponible | no disponible | no disponible | no disponible | MIT | HuggingFace |
+| zai-org/GLM-5.3-Flash (base) | 320B (aprox.) | 18B | 1M | 86,74% | MIT | Hugging Face |
+| Alexoipo/GLM-5.3-Flash-UNCENSORED-FP8 | 321.323.031.390 | 18B | 1M | 87,33% | MIT | Hugging Face |
+| dealignai/GLM-5.3-Flash-ABLITERATED-FP8 (mirror) | no disponible | no disponible | no disponible | no disponible | MIT | Hugging Face |
 
 No se dispone de datos de otros modelos comparables de la misma categoría (MoE de ~320B) en la información proporcionada.
 
@@ -77,14 +77,14 @@ No se dispone de datos de otros modelos comparables de la misma categoría (MoE 
 
 - Sesgos conocidos: no se han publicado análisis de sesgos en la información disponible.
 - Riesgo de alucinación: no cuantificado. Como todo modelo generativo grande, existe riesgo inherente de producir contenido falso o inventado.
-- Limitaciones de contexto o idioma: según HuggingFace, el modelo solo está etiquetado en inglés. El comportamiento en otros idiomas no está confirmado.
+- Limitaciones de contexto o idioma: según Hugging Face, el modelo solo está etiquetado en inglés. El comportamiento en otros idiomas no está confirmado.
 - Restricciones de licencia: la licencia MIT permite uso comercial, modificación y redistribución sin restricciones significativas.
 - Advertencia importante: el modelo ha sido modificado para eliminar guardrails. Puede generar contenido dañino, ilegal o no ético sin aviso. No es adecuado para producción sin supervisión humana o mecanismos de filtrado externos.
 - El comportamiento de rechazo varía según el modo de razonamiento: en low effort se conservan algunos rechazos de forma deliberada, mientras que en reasoning-off o max effort el modelo es totalmente libre. Esto debe tenerse en cuenta al desplegar el modelo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Alexoipo/GLM-5.3-Flash-UNCENSORED-FP8
+- Repositorio en Hugging Face: https://huggingface.co/Alexoipo/GLM-5.3-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Mirror de dealignai: https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-FP8
 - Artículo de explainx.ai: https://www.explainx.ai/blog/orcarouter-glm-5-3-flash-uncensored-block-fp8-august-2026

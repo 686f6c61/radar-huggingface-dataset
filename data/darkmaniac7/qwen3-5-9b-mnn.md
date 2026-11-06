@@ -98,7 +98,7 @@ No se dispone de datos de contexto, rendimiento ni licencia del modelo base en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darkmaniac7/Qwen3.5-9B-MNN
+- Modelo en Hugging Face: https://huggingface.co/darkmaniac7/Qwen3.5-9B-MNN
 - Repositorio de origen del tronco (taobao-mnn): https://huggingface.co/taobao-mnn/Qwen3.5-9B-MNN
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Commits citados en la model card: `149e1e052267ffa377b87e3bb0ddb75f46217a9a` (taobao-mnn) y `c202236235762e1c871ad0ccb60c8ee5ba337b9a` (Qwen)

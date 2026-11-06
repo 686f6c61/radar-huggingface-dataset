@@ -89,6 +89,6 @@ No se dispone de comparaciones con otros modelos de la misma categoria (p. ej., 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kingjones777/Phi-4-Reasoning-Vision-15B-ROCmFP4-GGUF
+- Modelo en Hugging Face: https://huggingface.co/kingjones777/Phi-4-Reasoning-Vision-15B-ROCmFP4-GGUF
 - Repositorio del fork ROCmFPX: https://github.com/charlie12345/ROCmFPX
 - Modelo base: https://huggingface.co/microsoft/Phi-4-reasoning-vision

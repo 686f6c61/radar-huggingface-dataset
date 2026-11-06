@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kimi-K3-8L-dummy es un checkpoint de pruebas publicado por el equipo de vLLM (organización `vllm-project` en HuggingFace) a partir de una copia del repositorio original de `riverclouds/Kimi-K3-8L-dummy`. No es un modelo entrenado ni utilizable para inferencia real: se trata de una variante *config-only* de `moonshotai/Kimi-K3` que conserva únicamente la configuración de arquitectura, el tokenizador, el procesador y el código remoto, pero no contiene pesos. Su función es permitir a los motores de inferencia (principalmente vLLM) ejercitar la arquitectura real de Kimi-K3 a una escala reducida.
+Kimi-K3-8L-dummy es un checkpoint de pruebas publicado por el equipo de vLLM (organización `vllm-project` en Hugging Face) a partir de una copia del repositorio original de `riverclouds/Kimi-K3-8L-dummy`. No es un modelo entrenado ni utilizable para inferencia real: se trata de una variante *config-only* de `moonshotai/Kimi-K3` que conserva únicamente la configuración de arquitectura, el tokenizador, el procesador y el código remoto, pero no contiene pesos. Su función es permitir a los motores de inferencia (principalmente vLLM) ejercitar la arquitectura real de Kimi-K3 a una escala reducida.
 
 La relevancia es puramente de ingeniería: Kimi-K3 es un modelo de gran tamaño con una arquitectura híbrida que combina atención lineal KDA (Kimi Delta Attention) y MLA (Multi-head Latent Attention) en una proporción 3:1, además de capas MoE. Probar un motor de inferencia contra el modelo completo es costoso; este dummy reduce la profundidad de 93 a 8 capas manteniendo el resto de parámetros de configuración intactos, lo que permite validar la disposición del KV-cache, la planificación de peticiones, el prefix caching y la carga de código personalizado con un coste mínimo.
 
@@ -79,7 +79,7 @@ No se dispone de información sobre otros checkpoints dummy comparables de la mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vllm-project/Kimi-K3-8L-dummy
+- Repositorio Hugging Face: https://huggingface.co/vllm-project/Kimi-K3-8L-dummy
 - Repositorio original del dummy: https://huggingface.co/riverclouds/Kimi-K3-8L-dummy
 - Modelo base oficial: https://huggingface.co/moonshotai/Kimi-K3
 - Licencia (fichero LICENSE del repositorio): https://huggingface.co/vllm-project/Kimi-K3-8L-dummy/blob/main/LICENSE

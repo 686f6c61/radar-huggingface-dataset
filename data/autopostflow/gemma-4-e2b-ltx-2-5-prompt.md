@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `autopostflow/gemma-4-e2b-ltx-2-5-prompt`, publicado por el usuario autopostflow en HuggingFace, es el objeto de esta ficha. En el momento de la consulta presenta cero descargas y cero valoraciones positivas, y su model card se limita a una unica linea de metadatos (`license: apache-2.0`), sin documentacion tecnica, sin descripcion del contenido y sin ejemplos de uso. La informacion disponible no permite confirmar que el repositorio contenga pesos de un modelo de lenguaje, un adaptador, un fichero de prompt o cualquier otro artefacto.
+El repositorio `autopostflow/gemma-4-e2b-ltx-2-5-prompt`, publicado por el usuario autopostflow en Hugging Face, es el objeto de esta ficha. En el momento de la consulta presenta cero descargas y cero valoraciones positivas, y su model card se limita a una unica linea de metadatos (`license: apache-2.0`), sin documentacion tecnica, sin descripcion del contenido y sin ejemplos de uso. La informacion disponible no permite confirmar que el repositorio contenga pesos de un modelo de lenguaje, un adaptador, un fichero de prompt o cualquier otro artefacto.
 
 El identificador sugiere una relacion con la familia Gemma y con la numeracion "E2B" (empleada por Google en modelos de parametros efectivos reducidos), asi como una posible conexion con el pipeline de generacion de video LTX-2.5 a traves del sufijo "prompt". Estas son inferencias derivadas unicamente del nombre del repositorio y no estan confirmadas por ninguna fuente. No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, idiomas, formato de pesos ni proceso de entrenamiento.
 
@@ -53,7 +53,7 @@ No es posible enumerar casos de uso concretos sin conocer la naturaleza del arte
 - Prototipado rapido de interfaces de prompt: como artefacto de referencia para construir y versionar plantillas de instrucciones reutilizables.
 - Evaluacion comparativa de prompts: como punto de partida para medir la calidad de salidas generadas por un modelo base subyacente.
 - Integracion en un pipeline de CI/CD de generacion de medios: si se trata de un fichero de configuracion o plantilla, podria versionarse junto al resto del codigo del pipeline.
-- Experimentacion academica: como ejemplo de repositorio minimo con licencia permisiva para estudiar practicas de publicacion en HuggingFace.
+- Experimentacion academica: como ejemplo de repositorio minimo con licencia permisiva para estudiar practicas de publicacion en Hugging Face.
 
 En todos los casos, la viabilidad real depende de datos que no estan disponibles.
 
@@ -97,10 +97,10 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/autopostflow/gemma-4-e2b-ltx-2-5-prompt
+- Repositorio en Hugging Face: https://huggingface.co/autopostflow/gemma-4-e2b-ltx-2-5-prompt
 - Paper: no disponible.
 - Blog o articulo tecnico: no disponible.
 - Repositorio de codigo: no disponible.
 - Demo: no disponible.
-- Perfil del autor en HuggingFace: https://huggingface.co/autopostflow
+- Perfil del autor en Hugging Face: https://huggingface.co/autopostflow
 - Nota sobre la busqueda web: los unicos resultados proporcionados son paginas genericas de Wikipedia (https://www.wikipedia.org/, https://en.wikipedia.org/wiki/Main_Page, https://en.wikipedia.org/wiki/Wikipedia, https://he.wikipedia.org/, https://fr.wikipedia.org/) que no guardan relacion con el modelo y no aportan informacion tecnica.

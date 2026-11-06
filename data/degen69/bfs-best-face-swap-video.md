@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Modelo base | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BFS-Best-Face-Swap-Video | LoRA de intercambio de rostro en vídeo | LTX-2.3 / LTX-2.5 | no disponible | ltx-2-community-license-agreement | HuggingFace (0 descargas, 0 likes) |
+| BFS-Best-Face-Swap-Video | LoRA de intercambio de rostro en vídeo | LTX-2.3 / LTX-2.5 | no disponible | ltx-2-community-license-agreement | Hugging Face (0 descargas, 0 likes) |
 | Alternativas de face swap en vídeo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos sobre modelos comparables de la misma categoría (adaptadores de intercambio de identidad para LTX-2 u otros modelos de difusión de vídeo), por lo que la comparativa cuantitativa no está disponible.
@@ -84,7 +84,7 @@ No se dispone en la información proporcionada de datos sobre modelos comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/degen69/BFS-Best-Face-Swap-Video
+- Hugging Face: https://huggingface.co/degen69/BFS-Best-Face-Swap-Video
 - Vídeo de demostración del flujo V3: https://www.youtube.com/watch?v=HBp03iu7wLA
 - Ejemplos V1 (vídeo): https://huggingface.co/Alissonerdx/BFS-Best-Face-Swap-Video/resolve/main/examples/1.mp4
 - Ejemplos V3 (vídeo): https://huggingface.co/Alissonerdx/BFS-Best-Face-Swap-Video/resolve/main/examples/6.mp4

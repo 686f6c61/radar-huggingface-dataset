@@ -4,7 +4,7 @@
 
 NeuroTaskFM es un modelo de investigación orientado a la neuroimagen, diseñado para aprender relaciones específicas de cada paciente entre la actividad cerebral intrínseca, la función evocada por tareas, el comportamiento y el estado clínico longitudinal. El repositorio oficial (GitHub) lo describe como un codebase que combina un "teacher" de espacio crudo, un compilador de neuroimagen GPU determinista, un modelo clínico de espacio compilado y una firma de participante actualizable. A diferencia de los modelos de lenguaje convencionales, NeuroTaskFM no está pensado para generación de texto ni código, sino para modelar datos de neuroimagen (posiblemente fMRI o similares) con fines clínicos y de investigación.
 
-El modelo está publicado en HuggingFace bajo licencia Apache-2.0, con un tamaño de repositorio de 72,3 GB, lo que sugiere que los pesos son voluminosos. Sin embargo, la model card proporcionada por el autor es extremadamente escueta (solo incluye la licencia), y no se especifican arquitectura, número de parámetros, contexto ni otros detalles técnicos habituales. La información disponible en la web es limitada, por lo que esta ficha se basa principalmente en la descripción del repositorio y en datos públicos del proyecto.
+El modelo está publicado en Hugging Face bajo licencia Apache-2.0, con un tamaño de repositorio de 72,3 GB, lo que sugiere que los pesos son voluminosos. Sin embargo, la model card proporcionada por el autor es extremadamente escueta (solo incluye la licencia), y no se especifican arquitectura, número de parámetros, contexto ni otros detalles técnicos habituales. La información disponible en la web es limitada, por lo que esta ficha se basa principalmente en la descripción del repositorio y en datos públicos del proyecto.
 
 ## Especificaciones tecnicas
 
@@ -41,7 +41,7 @@ La descripción del repositorio GitHub indica que NeuroTaskFM combina varios com
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio GitHub no incluye métricas comparativas en la descripción accesible, y la model card de HuggingFace está vacía. Tampoco se han encontrado papers o informes técnicos que documenten el rendimiento del modelo en tareas estándar.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio GitHub no incluye métricas comparativas en la descripción accesible, y la model card de Hugging Face está vacía. Tampoco se han encontrado papers o informes técnicos que documenten el rendimiento del modelo en tareas estándar.
 
 ## Requisitos de hardware
 
@@ -66,7 +66,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/markjiang1/NeuroTaskFM
+- Hugging Face: https://huggingface.co/markjiang1/NeuroTaskFM
 - Repositorio GitHub: https://github.com/rest2task/NeuroTaskFM
 - Documentación (GitHub): https://github.com/rest2task/NeuroTaskFM/tree/main/docs
 - Proyecto NeuroFM (referencia relacionada): https://rocknroll87q.github.io/NeuroFM/

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-r18-native-v3 es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Se distribuye en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2.020 millones, es decir, ~2,02 B), lo que lo sitúa en la categoría de modelos pequeños-medianos aptos para despliegue en hardware relativamente modesto. El repositorio tiene un tamaño de 177,6 GB, lo que resulta desproporcionado para el número de parámetros indicado y sugiere la presencia de múltiples checkpoints, pesos en varios formatos o artefactos adicionales no documentados.
+r18-native-v3 es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Se distribuye en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2.020 millones, es decir, ~2,02 B), lo que lo sitúa en la categoría de modelos pequeños-medianos aptos para despliegue en hardware relativamente modesto. El repositorio tiene un tamaño de 177,6 GB, lo que resulta desproporcionado para el número de parámetros indicado y sugiere la presencia de múltiples checkpoints, pesos en varios formatos o artefactos adicionales no documentados.
 
-El modelo está etiquetado con el identificador `sn38-nanochrono`, un término que no corresponde a ninguna arquitectura conocida ni a ninguna familia de modelos establecida, por lo que no es posible determinar a partir de la información disponible qué tipo de arquitectura emplea (transformer denso, MoE, SSM o híbrida). Tampoco se especifican la longitud de contexto, los idiomas soportados ni el pipeline de inferencia asociado. El acceso es restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+El modelo está etiquetado con el identificador `sn38-nanochrono`, un término que no corresponde a ninguna arquitectura conocida ni a ninguna familia de modelos establecida, por lo que no es posible determinar a partir de la información disponible qué tipo de arquitectura emplea (transformer denso, MoE, SSM o híbrida). Tampoco se especifican la longitud de contexto, los idiomas soportados ni el pipeline de inferencia asociado. El acceso es restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 La relevancia del modelo es limitada en el momento actual: cuenta con 55 descargas y ningún "like", no hay documentación pública sobre benchmarks, datos de entrenamiento o capacidades, y la ausencia de un pipeline declarado impide saber si está pensado para generación de texto, embeddings u otra tarea. Se trata, por tanto, de un artefacto de investigación o experimento personal cuyo interés práctico para producción no puede evaluarse con rigor a partir de la información disponible.
 
@@ -48,7 +48,7 @@ Dado que no se documentan capacidades, contexto ni pipeline, los casos de uso so
 - Despliegue en entornos con recursos limitados: su tamaño permitiría, en principio, inferencia en GPUs de consumo, aunque la falta de cuantizaciones publicadas obliga a generarlas localmente.
 - Evaluación comparativa interna: puede incluirse en baterías de pruebas propias frente a modelos de tamaño similar para medir calidad, pero sin benchmarks públicos de referencia.
 - Prototipado de pipelines de inferencia: útil para probar infraestructura (vLLM, TGI) una vez confirmado el formato y la arquitectura.
-- Estudio de licencias y gobernanza: al ser Apache 2.0 y de acceso restringido, puede analizarse como caso de publicación gated en HuggingFace.
+- Estudio de licencias y gobernanza: al ser Apache 2.0 y de acceso restringido, puede analizarse como caso de publicación gated en Hugging Face.
 
 Ninguno de estos casos debe darse por válido sin una evaluación previa del modelo por parte del usuario.
 
@@ -70,7 +70,7 @@ No es posible establecer una comparativa fiable porque se desconocen arquitectur
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| r18-native-v3 | ~2,02 B | no disponible | Apache 2.0 | Gated en HuggingFace |
+| r18-native-v3 | ~2,02 B | no disponible | Apache 2.0 | Gated en Hugging Face |
 | Alternativas de ~2 B | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para comparar con alternativas concretas de la misma categoría.
@@ -80,7 +80,7 @@ No se dispone de datos suficientes para comparar con alternativas concretas de l
 - Ausencia total de documentación: no hay model card sustantiva, ni pipeline, ni idiomas, ni contexto declarados.
 - Riesgo elevado de alucinación y comportamiento impredecible: sin benchmarks ni evaluación publicada, no hay garantía de calidad en ninguna tarea.
 - Arquitectura desconocida: la etiqueta `sn38-nanochrono` no corresponde a ninguna familia estándar, lo que puede romper la compatibilidad con librerías convencionales.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que añade fricción para uso en producción y para la reproducibilidad.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que añade fricción para uso en producción y para la reproducibilidad.
 - Tamaño del repositorio anómalo: 177,6 GB para 2,02 B de parámetros indica artefactos adicionales cuyo contenido y licencia no están clarificados.
 - Idiomas no declarados: no se puede asumir soporte del castellano ni de ningún otro idioma.
 - Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías ni soporte; conviene revisar si los artefactos adicionales del repositorio tienen condiciones distintas.
@@ -89,7 +89,7 @@ No se dispone de datos suficientes para comparar con alternativas concretas de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/r18-native-v3
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/r18-native-v3
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de código: no disponible

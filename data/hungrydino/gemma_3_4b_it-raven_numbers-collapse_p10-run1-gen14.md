@@ -91,7 +91,7 @@ Los datos de la siguiente tabla corresponden a las fichas oficiales de cada mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run1-gen14
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run1-gen14
 - Modelo base: https://huggingface.co/unsloth/gemma-3-4b-it
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Librería TRL de Hugging Face: https://github.com/huggingface/trl

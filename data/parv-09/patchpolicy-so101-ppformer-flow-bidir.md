@@ -90,5 +90,5 @@ No se han encontrado modelos de terceros con la misma tarea y hardware en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Parv-09/patchpolicy-so101-ppformer-flow-bidir
+- Hugging Face: https://huggingface.co/Parv-09/patchpolicy-so101-ppformer-flow-bidir
 - Repositorio companion con codigo e `infer.py`: mencionado en la model card, pero no se proporciona URL explicita en la informacion disponible.

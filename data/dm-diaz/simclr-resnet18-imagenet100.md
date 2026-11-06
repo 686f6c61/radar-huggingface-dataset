@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - DM-Diaz/SimCLR-ResNet18-ImageNet100](https://huggingface.co/DM-Diaz/SimCLR-ResNet18-ImageNet100)
+- [Hugging Face - DM-Diaz/SimCLR-ResNet18-ImageNet100](https://huggingface.co/DM-Diaz/SimCLR-ResNet18-ImageNet100)
 - [arXiv:2607.19316](https://arxiv.org/abs/2607.19316)
 - [DOI: 10.32470/0416gfsq](https://doi.org/10.32470/0416gfsq)
 - [Presentación en CCN 2026 (YouTube)](https://www.youtube.com/watch?v=Lb4S3FWqd2M&t=2545s)

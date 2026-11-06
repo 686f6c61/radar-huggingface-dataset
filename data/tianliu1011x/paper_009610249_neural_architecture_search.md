@@ -63,5 +63,5 @@ No disponible. No existe un modelo comparable en el sentido tradicional, ya que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tianliu1011x/paper_009610249_neural_architecture_search
+- Repositorio en Hugging Face: https://huggingface.co/tianliu1011x/paper_009610249_neural_architecture_search
 - No se han encontrado enlaces adicionales en la búsqueda web (papers, blogs, repos) relacionados directamente con este repositorio específico.

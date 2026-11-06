@@ -92,7 +92,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/philgear/pocketgull-edge-onnx-recovery
+- Hugging Face: https://huggingface.co/philgear/pocketgull-edge-onnx-recovery
 - Modelo base declarado: https://huggingface.co/pocketgull/edge-mlp-32f
 - DOI de Zenodo: https://doi.org/10.5281/zenodo.20647514
 - Sitio de la organizacion: https://pocketgull.com

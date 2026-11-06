@@ -32,7 +32,7 @@ La modificación de este derivado no altera la arquitectura sino los pesos. El p
 - Generación de texto conversacional en inglés y chino, heredada del modelo base GLM-4.7-Flash.
 - Razonamiento multi-turno con ventana de contexto de 128K tokens.
 - Capacidad de respuesta a peticiones que el modelo original rechazaría (comportamiento "uncensored"), que es el objetivo declarado de la modificación.
-- Soporte de plantilla de chat mediante `apply_chat_template` del tokenizer de HuggingFace.
+- Soporte de plantilla de chat mediante `apply_chat_template` del tokenizer de Hugging Face.
 - No se documenta en la información disponible soporte explícito de tool calling, function calling, agentes, visión, audio ni modo de razonamiento extendido para este derivado; estas capacidades, si existen en el modelo base, no se detallan en la model card.
 - Capacidades multilingües limitadas a los idiomas declarados (en, zh); no se garantiza un comportamiento equivalente en castellano.
 
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Torbeck/GLM-4.7-Flash-abliterated
+- Modelo en Hugging Face: https://huggingface.co/Torbeck/GLM-4.7-Flash-abliterated
 - Modelo base: https://huggingface.co/zai-org/GLM-4.7-Flash
 - Herramienta Abliterix: https://github.com/wuwangzhang1216/abliterix
 - Licencia del modelo base (referencia citada en la model card): https://huggingface.co/zai-org/GLM-4.7-Flash

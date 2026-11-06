@@ -2,9 +2,9 @@
 
 ## Resumen
 
-CSM-1B es un modelo de generacion de audio a partir de texto (text-to-speech / text-to-audio) desarrollado por Sesame y publicado en HuggingFace bajo el identificador `sesame/csm-1b`. Con aproximadamente 1.550 millones de parametros, esta disenado para convertir texto en habla y se distribuye con licencia Apache 2.0, lo que lo hace atractivo para integracion tanto en prototipos como en productos comerciales sin las restricciones tipicas de otras soluciones de sintesis de voz.
+CSM-1B es un modelo de generacion de audio a partir de texto (text-to-speech / text-to-audio) desarrollado por Sesame y publicado en Hugging Face bajo el identificador `sesame/csm-1b`. Con aproximadamente 1.550 millones de parametros, esta disenado para convertir texto en habla y se distribuye con licencia Apache 2.0, lo que lo hace atractivo para integracion tanto en prototipos como en productos comerciales sin las restricciones tipicas de otras soluciones de sintesis de voz.
 
-El modelo se publica como un pipeline de `text-to-speech` dentro de la libreria `transformers` y utiliza el tag `csm`, ademas de los formatos `safetensors` y `text-to-audio`. Su relevancia actual radica en que combina un tamano contenido (apto para hardware de consumo) con una licencia permisiva, en un momento en el que la mayoria de los sistemas de voz de alta calidad son propietarios o restrictivos. El repositorio ocupa 19,6 GB y el acceso esta restringido (gated), por lo que es necesario aceptar las condiciones en HuggingFace antes de descargarlo.
+El modelo se publica como un pipeline de `text-to-speech` dentro de la libreria `transformers` y utiliza el tag `csm`, ademas de los formatos `safetensors` y `text-to-audio`. Su relevancia actual radica en que combina un tamano contenido (apto para hardware de consumo) con una licencia permisiva, en un momento en el que la mayoria de los sistemas de voz de alta calidad son propietarios o restrictivos. El repositorio ocupa 19,6 GB y el acceso esta restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de descargarlo.
 
 El modelo esta orientado principalmente al idioma ingles (unico idioma declarado en sus etiquetas). No se han facilitado en la informacion disponible detalles sobre su arquitectura interna ni sobre el proceso de entrenamiento, por lo que esos apartados se marcan como no disponibles cuando corresponde.
 
@@ -30,8 +30,8 @@ Tampoco se dispone de datos sobre el volumen de tokens de entrenamiento, la comp
 ## Capacidades
 
 - Generacion de audio a partir de texto: el pipeline declarado es `text-to-speech`, por lo que la funcion principal es sintetizar voz desde texto.
-- Soporte en la libreria `transformers`: se puede cargar mediante las utilidades estandar de HuggingFace para pipelines de audio.
-- Compatibilidad con endpoints: incluye la etiqueta `endpoints_compatible`, lo que sugiere que puede desplegarse en la infraestructura de Inference Endpoints de HuggingFace.
+- Soporte en la libreria `transformers`: se puede cargar mediante las utilidades estandar de Hugging Face para pipelines de audio.
+- Compatibilidad con endpoints: incluye la etiqueta `endpoints_compatible`, lo que sugiere que puede desplegarse en la infraestructura de Inference Endpoints de Hugging Face.
 - Idioma: orientado al ingles (unico idioma declarado).
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: al tratarse de un modelo de ~1,5B de parametros, los pesos en precision de 16 bits ocuparian aproximadamente 3-4 GB; no se dispone de cifras oficiales de VRAM para cuantizaciones especificas.
 - GPU recomendadas: no disponibles en la informacion proporcionada. Por tamano, es plausible que funcione en GPUs de gama media, pero no se puede confirmar sin datos oficiales.
 - Compatibilidad con GPU de consumo: probable segun el tamano (~1,5B), pero no confirmado por el autor en la informacion disponible.
-- Opciones de despliegue: `transformers` (pipeline `text-to-speech`), y potencialmente Inference Endpoints de HuggingFace (etiqueta `endpoints_compatible`). No se confirma soporte de vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: `transformers` (pipeline `text-to-speech`), y potencialmente Inference Endpoints de Hugging Face (etiqueta `endpoints_compatible`). No se confirma soporte de vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -72,14 +72,14 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 ## Limitaciones y advertencias
 
 - Idioma: el modelo solo declara soporte para ingles, por lo que no se recomienda su uso para otros idiomas sin validacion previa.
-- Acceso restringido: el repositorio es gated; es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated; es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos.
 - Sesgos conocidos: no disponibles en la informacion proporcionada.
 - Riesgo de alucinacion: no aplica de la misma forma que en modelos de texto, pero no se documenta el comportamiento ante entradas fuera de dominio; se recomienda validar la salida de audio.
 - Limitaciones de contexto: la longitud de contexto no esta documentada, lo que impide evaluar el comportamiento con textos muy largos.
-- Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, pero deben respetarse las condiciones adicionales que HuggingFace imponga al aceptar el acceso gated.
+- Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, pero deben respetarse las condiciones adicionales que Hugging Face imponga al aceptar el acceso gated.
 - Caveats para produccion: no se han publicado datos de latencia, throughput ni calidad (por ejemplo MOS) que permitan garantizar un rendimiento en produccion; conviene realizar pruebas propias antes de desplegarlo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sesame/csm-1b
+- Hugging Face: https://huggingface.co/sesame/csm-1b
 - No se han encontrado en la busqueda web enlaces relevantes (paper, blog, repositorio o demo) asociados a este modelo; los resultados obtenidos corresponden a contenidos no relacionados.

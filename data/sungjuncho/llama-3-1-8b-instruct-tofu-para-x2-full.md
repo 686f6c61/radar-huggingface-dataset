@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full | 8,03B | no disponible | Linea base de unlearning sobre TOFU-para | llama3.1 | HuggingFace (0 descargas) |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128.000 tokens | Asistente general, instrucciones | llama3.1 | HuggingFace (ampliamente usado) |
-| locuslab TOFU (modelos de referencia del paper) | 1B-8B segun variante | no disponible | Benchmark de unlearning sobre TOFU original | segun modelo base | HuggingFace / GitHub |
-| sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-* (checkpoints desaprendidos de la coleccion) | 8,03B | no disponible | Modelos olvidados para comparar con esta linea base | llama3.1 | HuggingFace (coleccion TOFU-para) |
+| sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full | 8,03B | no disponible | Linea base de unlearning sobre TOFU-para | llama3.1 | Hugging Face (0 descargas) |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128.000 tokens | Asistente general, instrucciones | llama3.1 | Hugging Face (ampliamente usado) |
+| locuslab TOFU (modelos de referencia del paper) | 1B-8B segun variante | no disponible | Benchmark de unlearning sobre TOFU original | segun modelo base | Hugging Face / GitHub |
+| sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-* (checkpoints desaprendidos de la coleccion) | 8,03B | no disponible | Modelos olvidados para comparar con esta linea base | llama3.1 | Hugging Face (coleccion TOFU-para) |
 
 La comparación relevante es con el modelo base sin ajustar (que no ha memorizado TOFU) y con los checkpoints desaprendidos de la misma colección, que comparten arquitectura e hiperparámetros y solo difieren en el método de olvido aplicado.
 
@@ -85,7 +85,7 @@ La comparación relevante es con el modelo base sin ajustar (que no ha memorizad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full
+- Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full
 - Colección TOFU-para (untraining vs unlearning): https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4
 - Dataset TOFU-para: https://huggingface.co/datasets/sungjuncho/TOFU-para
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

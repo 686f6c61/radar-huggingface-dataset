@@ -34,7 +34,7 @@ El conjunto de entrenamiento son 197.694 pares de PLOTS: resúmenes argumentales
 - Recuperación cross-lingüe: consulta en cualquier idioma contra documentos en inglés.
 - Escenario tip-of-the-tongue: localizar una película a partir de una descripción vaga o parcial de su trama.
 - Multilingüismo heredado de LaBSE (el autor declara "multilingual"; LaBSE cubre 109 idiomas).
-- Compatibilidad con text-embeddings-inference y con endpoints de HuggingFace (tag endpoints_compatible).
+- Compatibilidad con text-embeddings-inference y con endpoints de Hugging Face (tag endpoints_compatible).
 - No es un modelo generativo: no produce texto, no soporta tool calling ni razonamiento multi-paso.
 
 ## Casos de uso
@@ -70,17 +70,17 @@ El propio autor advierte que LaBSE se usó para filtrar los pares de PLOTS, por 
 - En fp16: en torno a 1 GB de pesos; ejecutable en GPUs de 2-4 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB para fp32 (RTX 3050, RTX 4060, T4); para indexación a gran escala, A100 o H100 por throughput agregado.
 - Cabe en GPU consumer: sí, en la mayoría de tarjetas modernas con 4 GB o más.
-- Opciones de despliegue: sentence-transformers (librería nativa), text-embeddings-inference, endpoints de HuggingFace; no se documentan variantes GGUF para llama.cpp u Ollama.
+- Opciones de despliegue: sentence-transformers (librería nativa), text-embeddings-inference, endpoints de Hugging Face; no se documentan variantes GGUF para llama.cpp u Ollama.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| plots-labse | 470,9 M | 512 | Similitud narrativa cross-lingüe (fine-tune de LaBSE sobre PLOTS) | Apache 2.0 | HuggingFace |
-| sentence-transformers/LaBSE | ~471 M | 512 | Embeddings multilingües genéricos | Apache 2.0 | HuggingFace |
-| paraphrase-multilingual-MiniLM-L12-v2 | ~118 M | 128 | Embeddings multilingües ligeros | Apache 2.0 | HuggingFace |
-| multilingual-e5-large | ~560 M | 512 | Embeddings multilingües con instrucciones | MIT | HuggingFace |
+| plots-labse | 470,9 M | 512 | Similitud narrativa cross-lingüe (fine-tune de LaBSE sobre PLOTS) | Apache 2.0 | Hugging Face |
+| sentence-transformers/LaBSE | ~471 M | 512 | Embeddings multilingües genéricos | Apache 2.0 | Hugging Face |
+| paraphrase-multilingual-MiniLM-L12-v2 | ~118 M | 128 | Embeddings multilingües ligeros | Apache 2.0 | Hugging Face |
+| multilingual-e5-large | ~560 M | 512 | Embeddings multilingües con instrucciones | MIT | Hugging Face |
 
 Frente a LaBSE, plots-labse mejora sobre todo en recuperación de tramas (ToT R@100 de 0,333 frente a 0,080) a costa de un ajuste muy específico que puede degradar el rendimiento en tareas de similitud genérica no evaluadas aquí. Las alternativas MiniLM y E5 no han sido evaluadas por el autor en PLOTS ni ToT, por lo que no hay comparación numérica disponible.
 
@@ -98,6 +98,6 @@ Frente a LaBSE, plots-labse mejora sobre todo en recuperación de tramas (ToT R@
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jgmorenof/plots-labse
+- Modelo en Hugging Face: https://huggingface.co/Jgmorenof/plots-labse
 - Modelo base: https://huggingface.co/sentence-transformers/LaBSE
 - Conjunto de datos PLOTS: https://huggingface.co/datasets/Jgmorenof/PLOTS

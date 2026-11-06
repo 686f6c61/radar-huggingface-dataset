@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks cuantitativos en la información pr
 ## Requisitos de hardware
 
 - No se especifican requisitos de VRAM en la información proporcionada.
-- El tamaño del repositorio en HuggingFace es de 25.1 GB, lo que sugiere que los pesos del modelo (posiblemente para la variante más grande) ocupan un espacio considerable. Se puede estimar que para inferencia en FP32 se necesitan al menos 25 GB de VRAM, pero no se confirma.
+- El tamaño del repositorio en Hugging Face es de 25.1 GB, lo que sugiere que los pesos del modelo (posiblemente para la variante más grande) ocupan un espacio considerable. Se puede estimar que para inferencia en FP32 se necesitan al menos 25 GB de VRAM, pero no se confirma.
 - Para la variante 512×512, es probable que se requiera una GPU de alta gama (por ejemplo, A100 o H100) para una inferencia razonablemente rápida.
 - No se indican opciones de despliegue como vLLM, llama.cpp u Ollama; al ser un modelo de difusión de imagen, no es compatible con estas herramientas de inferencia de lenguaje.
 - La inferencia en un solo paso reduce la carga computacional, lo que podría permitir su uso en GPUs de consumo como una RTX 4090 con suficiente VRAM, aunque no hay datos confirmados.

@@ -97,7 +97,7 @@ No disponible. El autor no ofrece comparacion con otros adaptadores de outpainti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ausboss/Qwen-Image-2.1-Outpaint-LoRA
+- Modelo en Hugging Face: https://huggingface.co/ausboss/Qwen-Image-2.1-Outpaint-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio de entrenamiento (ai-toolkit): https://github.com/ostris/ai-toolkit
 - Dataset Flickr CommonCatalog CC-BY: https://huggingface.co/datasets/common-canvas/commoncatalog-cc-by

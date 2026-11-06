@@ -72,8 +72,8 @@ No se dispone en la informacion proporcionada de datos de otros modelos comparab
 
 | Modelo | Parametros | Pasos de muestreo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kandinsky-S2V-1.0-Lite | 2.3B (DiT) | 50 | MIT | HuggingFace (ml-resources), GitHub |
-| Kandinsky-S2V-1.0-Lite-distill | 2.3B (DiT) | 16 | no disponible | HuggingFace (kandinskylab) |
+| Kandinsky-S2V-1.0-Lite | 2.3B (DiT) | 50 | MIT | Hugging Face (ml-resources), GitHub |
+| Kandinsky-S2V-1.0-Lite-distill | 2.3B (DiT) | 16 | no disponible | Hugging Face (kandinskylab) |
 
 Comparativa con alternativas de la misma categoria: no disponible.
 
@@ -90,12 +90,12 @@ Comparativa con alternativas de la misma categoria: no disponible.
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/ml-resources/Kandinsky-S2V-1.0-Lite
+- Hugging Face (este repositorio): https://huggingface.co/ml-resources/Kandinsky-S2V-1.0-Lite
 - Paper (arXiv): https://arxiv.org/pdf/2610.19290
 - Pagina del proyecto: https://kandinskyavatar.github.io
 - Codigo en GitHub: https://github.com/kandinskylab/kandinsky-s2v
-- Coleccion de modelos en HuggingFace: https://huggingface.co/collections/kandinskylab/kandinsky-s2v-10-6ab65ebe8f765b6dd9d706d7
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/kandinskylab/Kandinsky-S2V-1.0-Demo
+- Coleccion de modelos en Hugging Face: https://huggingface.co/collections/kandinskylab/kandinsky-s2v-10-6ab65ebe8f765b6dd9d706d7
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/kandinskylab/Kandinsky-S2V-1.0-Demo
 - Variante destilada: https://huggingface.co/kandinskylab/Kandinsky-S2V-1.0-Lite-distill
 - Qwen2.5-Omni-7B (codificador de texto y audio): https://huggingface.co/Qwen/Qwen2.5-Omni-7B
 - CLIP ViT-L/14 (codificador de texto): https://huggingface.co/openai/clip-vit-large-patch14

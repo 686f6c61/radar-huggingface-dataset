@@ -92,7 +92,7 @@ No disponible. La información proporcionada no incluye datos de benchmarks, par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soniqo/soniqo-kws
+- Modelo en Hugging Face: https://huggingface.co/soniqo/soniqo-kws
 - Fichero de licencia (referenciado en la model card, dentro del repositorio): LICENSE
 - Configuración de inferencia: `inference_config.json` (incluido en el repositorio)
 - Manifiesto de release: `release_manifest.json` (incluido en el repositorio)

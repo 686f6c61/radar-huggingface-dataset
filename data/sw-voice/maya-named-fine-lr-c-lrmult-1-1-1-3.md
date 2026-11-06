@@ -74,6 +74,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/maya-named-fine-lr-c-lrmult-1-1-1-3
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/maya-named-fine-lr-c-lrmult-1-1-1-3
 - Modelo base: https://huggingface.co/maya-research/maya2-native
 - Repositorio de código (rama research/maya2-sft): swamiji-tts (no se proporciona URL directa en la información disponible)

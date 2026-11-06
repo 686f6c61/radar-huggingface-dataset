@@ -84,6 +84,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CodeDevX/future-prediction-multi-domain-lstm
+- Hugging Face: https://huggingface.co/CodeDevX/future-prediction-multi-domain-lstm
 - GitHub topics sobre future-prediction (referencia general): https://github.com/topics/future-prediction
 - Paper FutureX (benchmark de predicción futura para agentes LLM, no relacionado directamente): https://arxiv.org/pdf/2508.11987

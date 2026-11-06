@@ -84,6 +84,6 @@ No se dispone de datos suficientes para comparar parámetros, contexto ni rendim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/omegazurich/Qwen3.8-Flash-Next-Abliterated-Uncensored-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/omegazurich/Qwen3.8-Flash-Next-Abliterated-Uncensored-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
 - No se han encontrado en la información disponible enlaces a papers, blogs, repositorios de código ni demos adicionales.

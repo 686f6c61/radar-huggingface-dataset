@@ -18,10 +18,10 @@ Su relevancia practica esta en que permite ejecutar un modelo de ~27B con capaci
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponibles en detalle; el repo GGUF ocupa 141,4 GB, lo que sugiere multiples variantes, pero no se enumeran |
 | Idiomas soportados | No disponibles |
-| Licencia | polyform-small-business-1.0.0 (el tag de HuggingFace figura como license:other) |
+| Licencia | polyform-small-business-1.0.0 (el tag de Hugging Face figura como license:other) |
 | Formato de pesos | GGUF (libreria gguf, compatible con llama.cpp); el modelo base se distribuye en safetensors |
 | Tamano del repositorio | 141,4 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de publicacion | 23 de septiembre de 2026 (creacion y ultima actualizacion el mismo dia) |
 | Descargas / likes | 0 descargas / 13 likes en el momento de la consulta |
 
@@ -55,7 +55,7 @@ Los tags token-efficient y efficient-thinking sugieren que el entrenamiento o el
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye tablas de MMLU, HumanEval, GSM8K, MMMU ni de ninguna otra evaluacion, y no se dispone de mediciones independientes de latencia o throughput.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye tablas de MMLU, HumanEval, GSM8K, MMMU ni de ninguna otra evaluacion, y no se dispone de mediciones independientes de latencia o throughput.
 
 ## Requisitos de hardware
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos (benchmarks) que permitan sit
 - Idiomas: no se declara lista de idiomas soportados, por lo que no se puede garantizar un rendimiento aceptable en castellano ni en otras lenguas distintas de las usadas en el entrenamiento.
 - Contexto: se desconoce la longitud maxima de contexto, lo que impide planificar casos de uso con documentos largos sin pruebas previas.
 - Licencia: PolyForm Small Business 1.0.0 no es una licencia de codigo abierto permisiva; establece restricciones al uso comercial por parte de organizaciones que superen ciertos umbrales de tamano o facturacion. Es imprescindible leer el texto completo de la licencia antes de un uso comercial.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que anade friccion a la automatizacion de descargas y a la reproducibilidad.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que anade friccion a la automatizacion de descargas y a la reproducibilidad.
 - Cuantizacion: al ser una version GGUF del modelo base, existe una perdida de precision respecto a los pesos originales, cuyo impacto concreto no se ha documentado.
 - Madurez: el repositorio se creo el 23 de septiembre de 2026 y no registro descargas en el momento de la consulta; la validacion por parte de la comunidad es practicamente nula.
 - Tool calling y agentes: no se confirma soporte nativo, por lo que no se debe asumir su uso en pipelines de agentes sin verificacion previa.

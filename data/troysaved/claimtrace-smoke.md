@@ -82,7 +82,7 @@ La comparativa se basa en datos publicos de los modelos base. No se dispone de b
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/troysaved/claimtrace-smoke
+- Hugging Face: https://huggingface.co/troysaved/claimtrace-smoke
 - ClaimTrace (proyecto): https://claimtrace.dev/
 - GitHub - multiskilled/ClaimTrace: https://github.com/multiskilled/ClaimTrace
 - GitHub - devdiv07/ClaimTrace: https://www.linkedin.com/posts/divyanshshukla03_github-devdiv07claimtrace-built-a-multimodal-activity-7481411753810194432-NvAF

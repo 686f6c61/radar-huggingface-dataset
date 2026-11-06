@@ -5,7 +5,7 @@
   "author": "laion",
   "url": "https://huggingface.co/laion/Humaneness-Voice-Large-1.7",
   "created_at": "2026-11-04T12:17:52.000Z",
-  "updated_at": "2026-11-05T00:51:47.000Z",
+  "updated_at": "2026-11-05T12:35:34.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",

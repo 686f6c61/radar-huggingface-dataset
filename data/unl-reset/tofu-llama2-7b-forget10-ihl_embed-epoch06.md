@@ -6,7 +6,7 @@ El modelo `unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch06` es un checkpoint
 
 La variante `forget10` indica que el objetivo del entrenamiento es eliminar el conocimiento asociado a un subconjunto del 10 por ciento de los sujetos del dataset TOFU, manteniendo al mismo tiempo el rendimiento sobre el resto (conjunto retain). El sufijo `ihl_embed` sugiere el uso de una perdida de tipo "inverted hinge loss" aplicada sobre los embeddings de entrada, combinada con entropia cruzada estandar sobre el conjunto retain (peso 1.0), segun se describe en la model card. El checkpoint corresponde a la epoca 6 de un total de 20.
 
-Se trata de un artefacto de investigacion mas que de un modelo listo para produccion: no registra descargas ni interacciones en HuggingFace en el momento de redactar esta ficha, y su proposito es servir como evidencia empirica en estudios de unlearning, no como asistente generalista. La relevancia actual radica en el creciente interes regulatorio y tecnico por mecanismos que permitan retirar datos concretos de un modelo entrenado sin reentrenar desde cero.
+Se trata de un artefacto de investigacion mas que de un modelo listo para produccion: no registra descargas ni interacciones en Hugging Face en el momento de redactar esta ficha, y su proposito es servir como evidencia empirica en estudios de unlearning, no como asistente generalista. La relevancia actual radica en el creciente interes regulatorio y tecnico por mecanismos que permitan retirar datos concretos de un modelo entrenado sin reentrenar desde cero.
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ La comparacion directa con alternativas de unlearning (por ejemplo, variantes de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch06
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch06
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Checkpoint de inicializacion de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Modelo fundacional: https://huggingface.co/meta-llama/Llama-2-7b-hf

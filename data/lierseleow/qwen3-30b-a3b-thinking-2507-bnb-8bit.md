@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La bu
 - VRAM estimada para inferencia: la cuantizacion bnb-8bit reduce los requisitos de memoria. Con 30.5B parametros en 8 bits, se estima un uso de VRAM de aproximadamente 15-20 GB, dependiendo de la longitud de contexto y el tamano del lote.
 - GPU recomendadas: tarjetas con 24 GB de VRAM o superiores, como RTX 3090, RTX 4090, A10G, A100 (40 GB) o H100. En GPUs con 16 GB (por ejemplo, RTX 4080) podria funcionar con contextos reducidos.
 - Si cabe en consumer GPU: si, en GPUs de gama alta como RTX 4090 (24 GB) o RTX 3090 (24 GB) con cuantizacion de 8 bits.
-- Opciones de despliegue: al ser un modelo de la familia Qwen, es compatible con vLLM, llama.cpp, Ollama, TGI y transformers de HuggingFace. La cuantizacion bnb-8bit requiere el uso de bitsandbytes y transformers.
+- Opciones de despliegue: al ser un modelo de la familia Qwen, es compatible con vLLM, llama.cpp, Ollama, TGI y transformers de Hugging Face. La cuantizacion bnb-8bit requiere el uso de bitsandbytes y transformers.
 - Latencia y throughput: no disponibles. Al ser un modelo MoE con 3.3B parametros activos, la latencia por token deberia ser significativamente menor que la de un modelo denso de 30B, pero no se proporcionan mediciones concretas.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/lierseleow/Qwen3-30B-A3B-Thinking-2507-bnb-8bit
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/lierseleow/Qwen3-30B-A3B-Thinking-2507-bnb-8bit
 - Repositorio oficial del modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507
 - Repositorio del modelo sin thinking: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Catalogo de modelos de Microsoft Foundry: https://ai.azure.com/catalog/models/qwen--qwen3-30b-a3b-thinking-2507

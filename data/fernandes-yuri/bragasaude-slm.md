@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Braga Saúde SLM es un modelo de lenguaje pequeno (SLM) desarrollado por fernandes-yuri para el dominio del atendimiento sanitario de la clinica Braga Saúde, dentro de su plataforma Care OS. El modelo esta disenado para ejecutarse integramente en el dispositivo (on-device), sin enviar texto a la nube, y la engine de inferencia esta implementada en Rust sobre candle (CPU), con tokenizacion mediante la libreria tokenizers de HuggingFace y despliegue previsto en Android (arm64-v8a y armeabi-v7a) a traves de JNI.
+Braga Saúde SLM es un modelo de lenguaje pequeno (SLM) desarrollado por fernandes-yuri para el dominio del atendimiento sanitario de la clinica Braga Saúde, dentro de su plataforma Care OS. El modelo esta disenado para ejecutarse integramente en el dispositivo (on-device), sin enviar texto a la nube, y la engine de inferencia esta implementada en Rust sobre candle (CPU), con tokenizacion mediante la libreria tokenizers de Hugging Face y despliegue previsto en Android (arm64-v8a y armeabi-v7a) a traves de JNI.
 
 El repositorio publica la engine y la configuracion del modelo, pero en el momento de la consulta no incluye los pesos: estos se distribuirian como GGUF cuantizado (el nombre de fichero de referencia es `braga-saude-slm-1b-q4_k_m.gguf`, lo que sugiere un tamano del orden de 1000 millones de parametros con cuantizacion Q4_K_M) o como safetensors. El modelo esta especializado en portugues de Brasil (pt-BR) y en seis dominios de cuidado definidos por Care OS: sintomas, medicamentos, signos vitales, agendamiento, emergencia y servicios generales.
 
@@ -70,7 +70,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Limitaciones y advertencias
 
-- Los pesos del modelo no estan incluidos en el repositorio en el momento de la consulta; solo se publican engine y configuracion, por lo que el modelo no es ejecutable tal cual desde HuggingFace.
+- Los pesos del modelo no estan incluidos en el repositorio en el momento de la consulta; solo se publican engine y configuracion, por lo que el modelo no es ejecutable tal cual desde Hugging Face.
 - El modelo esta restringido al portugues de Brasil; no se declara soporte de otros idiomas, incluido el castellano.
 - Ambito clinico acotado: no diagnostica ni autoriza medicacion; cualquier uso fuera de los seis dominios de Care OS queda fuera de su diseno previsto.
 - Riesgo de alucinacion no cuantificado: no se han publicado evaluaciones de fidelidad ni de tasas de error en dominios clinicos.
@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fernandes-yuri/bragasaude-slm
+- Repositorio Hugging Face: https://huggingface.co/fernandes-yuri/bragasaude-slm
 - Engine candle (Rust): https://github.com/huggingface/candle
 - Libreria tokenizers: https://github.com/huggingface/tokenizers
 - Paper, blog, repositorio de codigo adicional o demo: no disponible en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Olzun/katja es un adaptador LoRA (Low-Rank Adaptation) de tipo DreamBooth para el modelo de generación de imágenes Krea 2, desarrollado por el usuario Olzun y publicado en HuggingFace. El adaptador está entrenado sobre la variante Krea-2-Raw y se muestra funcionando sobre Krea-2-Turbo, lo que permite generar imágenes del personaje ficticio "Katja" mediante el token gatillo `Katja` en el prompt. Este tipo de adaptadores resuelve el problema de personalización de modelos de difusión sin necesidad de reentrenar el modelo completo, ofreciendo una vía ligera y eficiente para crear identidades visuales consistentes.
+Olzun/katja es un adaptador LoRA (Low-Rank Adaptation) de tipo DreamBooth para el modelo de generación de imágenes Krea 2, desarrollado por el usuario Olzun y publicado en Hugging Face. El adaptador está entrenado sobre la variante Krea-2-Raw y se muestra funcionando sobre Krea-2-Turbo, lo que permite generar imágenes del personaje ficticio "Katja" mediante el token gatillo `Katja` en el prompt. Este tipo de adaptadores resuelve el problema de personalización de modelos de difusión sin necesidad de reentrenar el modelo completo, ofreciendo una vía ligera y eficiente para crear identidades visuales consistentes.
 
 La relevancia actual de este modelo radica en la creciente demanda de herramientas de personalización para modelos de difusión de última generación como Krea 2, que combina calidad de imagen con velocidad de inferencia. Al ser un LoRA, su tamaño es reducido (1.0 GB en el repositorio) y puede integrarse fácilmente en pipelines de diffusers, lo que lo hace accesible para desarrolladores y creadores que buscan control fino sobre la apariencia de personajes generados por IA. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales, un factor importante para aplicaciones en producción.
 
@@ -23,7 +23,7 @@ La relevancia actual de este modelo radica en la creciente demanda de herramient
 
 El adaptador es un LoRA entrenado con la tecnica DreamBooth, que consiste en ajustar un modelo de difusion preentrenado para que aprenda un concepto o sujeto especifico a partir de unas pocas imagenes de referencia. En este caso, el modelo base es Krea-2-Raw, una variante de Krea 2 que probablemente ofrece una estetica mas cruda o menos procesada, mientras que la inferencia se demuestra sobre Krea-2-Turbo, una version optimizada para generar con pocos pasos (8 pasos en el ejemplo). No se proporcionan detalles sobre el dataset de entrenamiento, el numero de pasos, la tasa de aprendizaje ni el tipo de regularizacion empleada.
 
-La arquitectura subyacente de Krea 2 no se describe en la informacion disponible, pero al tratarse de un modelo de difusion moderno, es probable que use una arquitectura basada en transformers o en U-Net con atencion cruzada. El LoRA inserta matrices de bajo rango en las capas de atencion del modelo base, lo que permite adaptar el comportamiento sin modificar los pesos originales. El ejemplo de uso con diffusers muestra que se carga con `Krea2Pipeline` y `load_lora_weights`, lo que confirma su compatibilidad con el ecosistema de HuggingFace.
+La arquitectura subyacente de Krea 2 no se describe en la informacion disponible, pero al tratarse de un modelo de difusion moderno, es probable que use una arquitectura basada en transformers o en U-Net con atencion cruzada. El LoRA inserta matrices de bajo rango en las capas de atencion del modelo base, lo que permite adaptar el comportamiento sin modificar los pesos originales. El ejemplo de uso con diffusers muestra que se carga con `Krea2Pipeline` y `load_lora_weights`, lo que confirma su compatibilidad con el ecosistema de Hugging Face.
 
 ## Capacidades
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada: no disponible. Al ser un LoRA, la VRAM necesaria depende principalmente del modelo base Krea 2. Dado que Krea 2 es un modelo de difusion de gran tamano (probablemente comparable a SDXL o superior), se estima que se necesitan al menos 8-12 GB de VRAM para inferencia con precision bfloat16, y mas si se usa el modelo completo sin cuantizacion.
 - GPU recomendadas: no se especifican. Para modelos de difusion de este tamano, se recomiendan GPUs con al menos 16 GB de VRAM, como RTX 4090, A100 o H100, aunque con cuantizacion podria funcionar en GPUs de 8 GB.
 - Compatibilidad con consumer GPU: probablemente si, en GPUs de gama alta (RTX 3080/3090/4090) con suficiente VRAM, pero no se confirma.
-- Opciones de despliegue: el ejemplo usa diffusers con `Krea2Pipeline`, por lo que es compatible con el ecosistema de HuggingFace. Tambien podria usarse con otros frameworks como ComfyUI o Automatic1111 si soportan Krea 2, pero no se menciona.
+- Opciones de despliegue: el ejemplo usa diffusers con `Krea2Pipeline`, por lo que es compatible con el ecosistema de Hugging Face. Tambien podria usarse con otros frameworks como ComfyUI o Automatic1111 si soportan Krea 2, pero no se menciona.
 - Latencia y throughput: no disponible. El uso de 8 pasos en Turbo sugiere una generacion relativamente rapida, pero no se dan cifras concretas.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para una comparativa tecnica con otros L
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Olzun/katja
+- Hugging Face: https://huggingface.co/Olzun/katja
 - Modelo base Krea 2 (referencia): https://huggingface.co/krea/Krea-2-Raw (inferido del campo base_model, no verificado)
 - Modelos similares en Tensor.Art: https://www.tensor.art/models/767160684950686031
 - Modelos similares en SeaArt: https://www.seaart.ai/models/detail/d4ilisle878c73aou650

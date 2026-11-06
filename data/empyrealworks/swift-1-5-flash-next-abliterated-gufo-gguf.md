@@ -18,7 +18,7 @@ El modelo incluye decodificación especulativa mediante una cabeza MTP separada,
 | Longitud de contexto | 1.048.576 tokens (configurado con `--context 1048576` y `--enable-yarn` en el ejemplo del autor) |
 | Tipos de cuantizacion | Q8_0 (proyecciones densas), Q4_1 (proyecciones down de expertos enrutados), Q4 (cabeza MTP), BF16 (proyector de visión) |
 | Idiomas soportados | no disponible |
-| Licencia | swift-open-license-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | swift-open-license-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | GGUF (tres ficheros: modelo principal, cabeza MTP y proyector de visión) |
 
 ## Arquitectura y entrenamiento
@@ -83,6 +83,6 @@ No se dispone de información suficiente para comparar con alternativas de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/empyrealworks/Swift-1.5-Flash-Next-Abliterated-Gufo-GGUF
+- Modelo en Hugging Face: https://huggingface.co/empyrealworks/Swift-1.5-Flash-Next-Abliterated-Gufo-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Issue de Gufo sobre carga de proyecciones Q4_1: https://github.com/gufo-org/gufo/issues/906

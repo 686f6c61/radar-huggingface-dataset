@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Rendimiento (tok/s) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **alphakek/Qwen3.8-27B-heretic-ara-DFlash2** | ~1,9B | no disponible | 123,2 (con heretic-ara, TP4) | Apache-2.0 | HuggingFace |
-| z-lab/Qwen3.8-27B-DFlash2 | ~1,9B | no disponible | 116,9 (con heretic-ara, TP4) | Apache-2.0 | HuggingFace |
+| **alphakek/Qwen3.8-27B-heretic-ara-DFlash2** | ~1,9B | no disponible | 123,2 (con heretic-ara, TP4) | Apache-2.0 | Hugging Face |
+| z-lab/Qwen3.8-27B-DFlash2 | ~1,9B | no disponible | 116,9 (con heretic-ara, TP4) | Apache-2.0 | Hugging Face |
 | Sin drafter (baseline) | — | — | 38,1 | — | — |
 
 La comparativa se limita al drafter stock de z-lab, que es el punto de partida del entrenamiento. No se dispone de información sobre otros drafters para Qwen3.8-27B (por ejemplo, versiones basadas en Eagle o Medusa) en la información proporcionada.
@@ -85,7 +85,7 @@ La comparativa se limita al drafter stock de z-lab, que es el punto de partida d
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/alphakek/Qwen3.8-27B-heretic-ara-DFlash2)
+- [Repositorio en Hugging Face](https://huggingface.co/alphakek/Qwen3.8-27B-heretic-ara-DFlash2)
 - [Modelo objetivo: heretic-org/Qwen3.8-27B-heretic-ara](https://huggingface.co/heretic-org/Qwen3.8-27B-heretic-ara)
 - [Drafter stock: z-lab/Qwen3.8-27B-DFlash2](https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2)
 - [Blog de DFlash2](https://inco.ai/blog/dflash2/)

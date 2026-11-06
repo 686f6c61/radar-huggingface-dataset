@@ -124,7 +124,7 @@ No se dispone de comparaciones con guardas de inyección de prompt de terceros e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hxrikp/laya-session-guard-followup-original
+- Modelo en Hugging Face: https://huggingface.co/hxrikp/laya-session-guard-followup-original
 - Codigo, generadores de datos y reproduccion: https://github.com/Mr-Neutr0n/laya-session-guard
 - Informe de seguimiento: https://github.com/Mr-Neutr0n/laya-session-guard/blob/main/reports/FOLLOWUP.md
 - Cuaderno de entrenamiento reproducible en Kaggle: https://www.kaggle.com/code/uranium53/laya-session-guard-follow-up

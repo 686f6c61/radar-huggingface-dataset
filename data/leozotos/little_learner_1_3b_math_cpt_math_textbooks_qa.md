@@ -10,7 +10,7 @@ Con 1.358.021.120 parámetros (aproximadamente 1,36 mil millones), el modelo se 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso, basado en Qwen3 (según tag de HuggingFace) |
+| Arquitectura | Transformer denso, basado en Qwen3 (según tag de Hugging Face) |
 | Parametros totales | 1.358.021.120 |
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 2048 tokens (máximo de secuencia usado en entrenamiento) |
@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible. Aunq
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| little_learner_1_3b_math_cpt_math_textbooks_qa | 1,36B | 2048 (entrenamiento) | No disponible | HuggingFace (checkpoint) |
-| Qwen3-1.3B (base) | 1,36B | 32K (según documentación de Qwen3) | Apache 2.0 (según versión) | HuggingFace |
-| Llama-3.2-1B | 1,23B | 128K | Llama 3.2 Community License | HuggingFace |
+| little_learner_1_3b_math_cpt_math_textbooks_qa | 1,36B | 2048 (entrenamiento) | No disponible | Hugging Face (checkpoint) |
+| Qwen3-1.3B (base) | 1,36B | 32K (según documentación de Qwen3) | Apache 2.0 (según versión) | Hugging Face |
+| Llama-3.2-1B | 1,23B | 128K | Llama 3.2 Community License | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar directamente. El modelo aquí descrito es un fine-tuning especializado en matemáticas, mientras que Qwen3-1.3B y Llama-3.2-1B son modelos generalistas. La comparativa se limita a parámetros y contexto, y no se puede evaluar la calidad relativa sin benchmarks.
 
@@ -74,6 +74,6 @@ No se dispone de datos de rendimiento para comparar directamente. El modelo aqu�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LeoZotos/little_learner_1_3b_math_cpt_math_textbooks_qa
+- Hugging Face: https://huggingface.co/LeoZotos/little_learner_1_3b_math_cpt_math_textbooks_qa
 - Corpus de entrenamiento (referenciado en la model card): https://huggingface.co/datasets/LeoZotos/math_textbooks_qa (no verificado en la búsqueda web)
 - No se encontraron papers, blogs o demos asociados en la información proporcionada.

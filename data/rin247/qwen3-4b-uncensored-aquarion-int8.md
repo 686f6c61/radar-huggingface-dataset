@@ -82,7 +82,7 @@ La comparativa se limita a aspectos estructurales, ya que no hay datos de rendim
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Rin247/Qwen3-4B-Uncensored-Aquarion-INT8](https://huggingface.co/Rin247/Qwen3-4B-Uncensored-Aquarion-INT8)
+- Repositorio Hugging Face: [Rin247/Qwen3-4B-Uncensored-Aquarion-INT8](https://huggingface.co/Rin247/Qwen3-4B-Uncensored-Aquarion-INT8)
 - Modelo base: [Qwen/Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B)
 - Variante abliterada sin cuantizar: [huihui-ai/Qwen3-4B-abliterated](https://huggingface.co/huihui-ai/Qwen3-4B-abliterated)
 - Guía de modelos locales sin censura: [InsiderLLM - Best Uncensored Local LLMs](https://insiderllm.com/guides/best-uncensored-local-llms/)

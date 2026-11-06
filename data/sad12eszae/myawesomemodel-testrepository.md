@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepository es un repositorio publicado en HuggingFace por el usuario SAD12ESZAE. Segun los metadatos de la plataforma, se trata de un modelo basado en la libreria transformers, con PyTorch como framework, etiquetado con la arquitectura bert y declarado para la tarea de feature-extraction (extraccion de representaciones). La licencia indicada es MIT.
+MyAwesomeModel-TestRepository es un repositorio publicado en Hugging Face por el usuario SAD12ESZAE. Segun los metadatos de la plataforma, se trata de un modelo basado en la libreria transformers, con PyTorch como framework, etiquetado con la arquitectura bert y declarado para la tarea de feature-extraction (extraccion de representaciones). La licencia indicada es MIT.
 
 La informacion disponible es, sin embargo, marcadamente contradictoria e incompleta. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes, lo que sugiere que no contiene pesos publicados o que se trata de un repositorio de prueba. La model card adjunta describe un modelo generativo conversacional con razonamiento avanzado, function calling y resultados en benchmarks de matematicas y programacion, capacidades que no concuerdan con la tarea declarada de feature-extraction ni con la etiqueta de arquitectura bert. Ademas, los resultados de benchmarks publicados en la propia model card no identifican los modelos de referencia ("Model1", "Model2").
 
@@ -23,7 +23,7 @@ No se dispone de informacion verificable sobre el numero de parametros, la longi
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion tecnica sobre la arquitectura interna del modelo. La unica referencia disponible es la etiqueta `bert` en los metadatos de HuggingFace, que apuntaria a un encoder transformer bidireccional orientado a la generacion de embeddings, coherente con la tarea declarada de feature-extraction. No obstante, la model card describe un modelo generativo con capacidades de razonamiento, lo que contradice esa etiqueta.
+No se ha publicado informacion tecnica sobre la arquitectura interna del modelo. La unica referencia disponible es la etiqueta `bert` en los metadatos de Hugging Face, que apuntaria a un encoder transformer bidireccional orientado a la generacion de embeddings, coherente con la tarea declarada de feature-extraction. No obstante, la model card describe un modelo generativo con capacidades de razonamiento, lo que contradice esa etiqueta.
 
 Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicion, proporciones por idioma), sobre si se aplicaron tecnicas de ajuste como RLHF, DPO o SFT, ni sobre innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, mezcla de expertos, etc.). La model card menciona de forma generica "mecanismos de optimizacion algoritmica durante el post-entrenamiento" y un aumento del numero medio de tokens de razonamiento en AIME (de 12K a 23K por pregunta), pero sin detallar la metodologia. Estos datos no son verificables ni consistentes con el resto de la informacion del repositorio.
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks verificables en la informacion disp
 - VRAM estimada para inferencia: no disponible. Sin conocer el numero de parametros ni el formato de pesos no es posible estimar requisitos de memoria.
 - GPU recomendadas: no disponible por la misma razon.
 - Viabilidad en GPU de consumo: no determinable. Depende enteramente del tamano real del modelo, que no se declara.
-- Opciones de despliegue: los metadatos indican compatibilidad con `transformers` y con endpoints de HuggingFace (`endpoints_compatible`). Para un encoder tipo BERT serian aplicables bibliotecas como `sentence-transformers`, `optimum` o exportaciones a ONNX, pero no hay confirmacion de que existan pesos que cargar.
+- Opciones de despliegue: los metadatos indican compatibilidad con `transformers` y con endpoints de Hugging Face (`endpoints_compatible`). Para un encoder tipo BERT serian aplicables bibliotecas como `sentence-transformers`, `optimum` o exportaciones a ONNX, pero no hay confirmacion de que existan pesos que cargar.
 - Latencia y throughput: no disponible. No se publican mediciones ni configuraciones de referencia.
 
 Nota importante: dado que el repositorio declara 0.0 GB de tamano, es posible que no contenga pesos en absoluto, en cuyo caso ningun requisito de hardware resulta aplicable.
@@ -102,7 +102,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SAD12ESZAE/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/SAD12ESZAE/MyAwesomeModel-TestRepository
 - Paper: no disponible
 - Repositorio de codigo: no disponible (la model card menciona "our code repository" sin proporcionar URL)
 - Demo o sitio web oficial: no disponible (la model card menciona "our official website" sin proporcionar URL)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-KiviBot-1.5B-LoRA es un adaptador publicado en HuggingFace por el usuario efex12 bajo el identificador `efex12/KiviBot-1.5B-LoRA`. Se trata de un repositorio alojado con la libreria `transformers` y pesos en formato `safetensors`, cuyo tamano total es de 0,1 GB. Ese volumen, muy inferior al que ocuparian los pesos completos de un modelo de 1.500 millones de parametros (que en fp16 rondarian los 3 GB), apunta a que el repositorio contiene un adaptador LoRA y no un modelo base completo, aunque esta circunstancia no queda confirmada en la informacion disponible.
+KiviBot-1.5B-LoRA es un adaptador publicado en Hugging Face por el usuario efex12 bajo el identificador `efex12/KiviBot-1.5B-LoRA`. Se trata de un repositorio alojado con la libreria `transformers` y pesos en formato `safetensors`, cuyo tamano total es de 0,1 GB. Ese volumen, muy inferior al que ocuparian los pesos completos de un modelo de 1.500 millones de parametros (que en fp16 rondarian los 3 GB), apunta a que el repositorio contiene un adaptador LoRA y no un modelo base completo, aunque esta circunstancia no queda confirmada en la informacion disponible.
 
-La model card publicada es la plantilla generica autogenerada por HuggingFace y no aporta ningun dato sustantivo: todos los campos de descripcion, desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion figuran como "More Information Needed". El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, y fue creado el 16 de octubre de 2026 con una unica actualizacion un minuto despues.
+La model card publicada es la plantilla generica autogenerada por Hugging Face y no aporta ningun dato sustantivo: todos los campos de descripcion, desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion figuran como "More Information Needed". El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, y fue creado el 16 de octubre de 2026 con una unica actualizacion un minuto despues.
 
 Por tanto, no es posible determinar con rigor que problema resuelve, sobre que modelo base se aplica el adaptador, ni cual es su calidad real. Lo unico verificable es el nombre del repositorio (que sugiere un modelo de 1.5B orientado a chatbot o conversacion), la libreria declarada, el formato de pesos y los tags asociados. Cualquier evaluacion practica exige descargar el repositorio e inspeccionar su `config.json` y el `adapter_config.json` si existe.
 
@@ -29,9 +29,9 @@ Por tanto, no es posible determinar con rigor que problema resuelve, sobre que m
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura concreta. El tag `transformers` indica que el modelo es cargable con la libreria homonima de HuggingFace y que, por tanto, emplea una arquitectura de tipo transformer, pero se desconoce si se trata de un decoder-only clasico, de un modelo con atencion lineal o hibrida, o de cualquier otra variante. Tampoco se especifica la familia del modelo base sobre el que se habria entrenado el adaptador.
+No hay informacion disponible sobre la arquitectura concreta. El tag `transformers` indica que el modelo es cargable con la libreria homonima de Hugging Face y que, por tanto, emplea una arquitectura de tipo transformer, pero se desconoce si se trata de un decoder-only clasico, de un modelo con atencion lineal o hibrida, o de cualquier otra variante. Tampoco se especifica la familia del modelo base sobre el que se habria entrenado el adaptador.
 
-Respecto al entrenamiento, la model card no documenta ni el numero de tokens, ni la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. El unico tag con referencia externa es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico; se trata de una referencia citada en la propia plantilla de model card de HuggingFace y no de un paper que describa este modelo. La presencia de la palabra "LoRA" en el identificador sugiere un ajuste fino de bajo rango sobre un modelo base preentrenado, pero el metodo, el rango, el alfa y los modulos objetivo no estan documentados.
+Respecto al entrenamiento, la model card no documenta ni el numero de tokens, ni la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. El unico tag con referencia externa es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico; se trata de una referencia citada en la propia plantilla de model card de Hugging Face y no de un paper que describa este modelo. La presencia de la palabra "LoRA" en el identificador sugiere un ajuste fino de bajo rango sobre un modelo base preentrenado, pero el metodo, el rango, el alfa y los modulos objetivo no estan documentados.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ Respecto al entrenamiento, la model card no documenta ni el numero de tokens, ni
 - No se ha documentado capacidad matematica.
 - No se ha documentado capacidad de vision, audio ni multimodalidad.
 - No se ha documentado un modo de razonamiento explicito (thinking mode) ni decodificacion especulativa.
-- La unica capacidad verificable es que el repositorio es compatible con endpoints de HuggingFace, segun el tag `endpoints_compatible`.
+- La unica capacidad verificable es que el repositorio es compatible con endpoints de Hugging Face, segun el tag `endpoints_compatible`.
 
 ## Casos de uso
 
@@ -80,7 +80,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla autogenerada de HuggingFace y no describe datos, metodologia ni intencion de uso.
+- Ausencia total de documentacion: la model card es la plantilla autogenerada de Hugging Face y no describe datos, metodologia ni intencion de uso.
 - Licencia no especificada: sin licencia explicita no puede asumirse permiso de uso comercial, modificacion ni redistribucion. La ausencia de licencia implica, por defecto, reserva de derechos en la mayoria de jurisdicciones.
 - Modelo base desconocido: si se trata de un adaptador LoRA, sus limitaciones heredadas del modelo base son igualmente desconocidas, incluidos sus sesgos.
 - Riesgo de alucinacion: no evaluado. Los modelos pequenos de la franja de 1-2B suelen mostrar tasas de alucinacion superiores a las de modelos mayores, pero no hay mediciones para este caso concreto.
@@ -92,7 +92,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/efex12/KiviBot-1.5B-LoRA
+- Repositorio en Hugging Face: https://huggingface.co/efex12/KiviBot-1.5B-LoRA
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la plantilla de la model card: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces (paper propio, blog, repositorio de codigo o demo) en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea 2 Raven v1.0 es un adaptador LoRA de tipo personaje para el modelo base de generación de imágenes Krea 2 (identificado en el repositorio como `krea/Krea-2-Raw`). Lo publica el usuario TigerFan69 en HuggingFace bajo el identificador `TigerFan69/Krea-2-Raven-v1`, con espejo en Civitai (modelo 3032607, versión 3445425). No es un modelo fundacional: es un conjunto de pesos de adaptación que se carga sobre el modelo base y su text encoder/VAE correspondientes, que el usuario debe obtener por separado. El paquete contiene únicamente los pesos del LoRA y documentación neutra; no incluye imágenes de entrenamiento ni previsualizaciones generadas.
+Krea 2 Raven v1.0 es un adaptador LoRA de tipo personaje para el modelo base de generación de imágenes Krea 2 (identificado en el repositorio como `krea/Krea-2-Raw`). Lo publica el usuario TigerFan69 en Hugging Face bajo el identificador `TigerFan69/Krea-2-Raven-v1`, con espejo en Civitai (modelo 3032607, versión 3445425). No es un modelo fundacional: es un conjunto de pesos de adaptación que se carga sobre el modelo base y su text encoder/VAE correspondientes, que el usuario debe obtener por separado. El paquete contiene únicamente los pesos del LoRA y documentación neutra; no incluye imágenes de entrenamiento ni previsualizaciones generadas.
 
 El adaptador está pensado para generar retratos y escenas de un personaje ficticio original llamado Raven, descrito por el autor como personaje adulto ficticio. El trigger declarado por el creador es `Raven-NotaRealPerson`. La metadata del archivo safetensors indica 1.500 pasos de entrenamiento y época 49 sobre Krea 2, con 512 tensores en fp32 y un tamaño de 457.111.520 bytes (aproximadamente 0,43 GB), coherente con el tamaño del repositorio de 0,5 GB.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Modelo base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Krea 2 Raven v1.0 (TigerFan69) | LoRA de personaje | krea/Krea-2-Raw | 512 tensores, 457.111.520 bytes, fp32 | No aplica | Krea 2 Community License | HuggingFace y Civitai; 0 descargas, 0 likes en el momento de la consulta |
+| Krea 2 Raven v1.0 (TigerFan69) | LoRA de personaje | krea/Krea-2-Raw | 512 tensores, 457.111.520 bytes, fp32 | No aplica | Krea 2 Community License | Hugging Face y Civitai; 0 descargas, 0 likes en el momento de la consulta |
 | LoRA de personaje generico para Krea 2 | LoRA de personaje | Krea 2 | No disponible | No aplica | Krea 2 Community License | No disponible |
 | Adaptadores de personaje para otros modelos de difusion (por ejemplo, familia FLUX.1) | LoRA de personaje | FLUX.1 | No disponible | No aplica | Licencias propias del base | No disponible |
 
@@ -85,11 +85,11 @@ No se dispone de datos de rendimiento ni de comparativas cuantitativas con alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TigerFan69/Krea-2-Raven-v1
+- Hugging Face: https://huggingface.co/TigerFan69/Krea-2-Raven-v1
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Civitai (modelo): https://civitai.red/models/3032607?modelVersionId=3445425
 - Perfil del autor en Civitai: https://civitai.red/user/TigerFan69
-- Perfil del autor en HuggingFace: https://huggingface.co/TigerFan69
+- Perfil del autor en Hugging Face: https://huggingface.co/TigerFan69
 - Licencia Krea 2: https://krea.ai/krea-2-licensing
 - Apoyo al autor (Ko-fi): https://ko-fi.com/tigerfan69/tiers
 - Software LoRA Studio: https://github.com/TigerFan69/lora-studio

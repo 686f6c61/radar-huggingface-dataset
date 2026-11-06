@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-10k-seed43` es un checkpoint de aproximadamente 87,3 millones de parametros publicado por el usuario `cyttic` en HuggingFace. El identificador del repositorio sugiere un experimento de reconocimiento de voz basado en CTC (Connectionist Temporal Classification), con un conjunto de datos etiquetado como "human10uninoaug" (probablemente 10 horas de audio humano sin aumento de datos), una variante arquitectonica denotada "hhdgeom" y datos de texto generados por un LLM ("llmgen") en un volumen de 10 000 muestras, con semilla 43. No obstante, la model card no confirma ninguno de estos extremos: es una plantilla generica sin rellenar, con todos los campos marcados como "[More Information Needed]".
+El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-10k-seed43` es un checkpoint de aproximadamente 87,3 millones de parametros publicado por el usuario `cyttic` en Hugging Face. El identificador del repositorio sugiere un experimento de reconocimiento de voz basado en CTC (Connectionist Temporal Classification), con un conjunto de datos etiquetado como "human10uninoaug" (probablemente 10 horas de audio humano sin aumento de datos), una variante arquitectonica denotada "hhdgeom" y datos de texto generados por un LLM ("llmgen") en un volumen de 10 000 muestras, con semilla 43. No obstante, la model card no confirma ninguno de estos extremos: es una plantilla generica sin rellenar, con todos los campos marcados como "[More Information Needed]".
 
 La relevancia de este checkpoint es limitada en el estado actual. Se trata de un artefacto de investigacion sin documentacion, sin pipeline declarado, sin resultados de evaluacion y con cero descargas y cero "me gusta" en el momento de la consulta. El unico dato tecnico verificado es el recuento de parametros extraido de los ficheros safetensors (87 279 756) y el tamano del repositorio (0,3 GB). La licencia MIT permite reutilizacion comercial, pero la ausencia de especificaciones impide determinar con rigor para que tarea fue entrenado ni como evaluarlo.
 
@@ -49,7 +49,7 @@ Dado que no se ha documentado la tarea concreta, los siguientes casos son hipote
 - Investigacion en reconocimiento de voz con CTC: si el modelo efectivamente implementa CTC, podria utilizarse como linea base en experimentos de transcripcion con vocabulario limitado.
 - Estudio de robustez frente a datos generados por LLM: util para analizar como afecta el entrenamiento con texto sintetico a un modelo acustico pequeno.
 - Analisis de eficiencia en modelos pequenos: con 87 millones de parametros y 0,3 GB de pesos, es adecuado para experimentos en una sola GPU de gama media.
-- Docencia y formacion: util como ejemplo de pipeline de publicacion en HuggingFace y de model card incompleta, para discutir buenas practicas de documentacion.
+- Docencia y formacion: util como ejemplo de pipeline de publicacion en Hugging Face y de model card incompleta, para discutir buenas practicas de documentacion.
 - Pruebas de infraestructura de inferencia: sirve para validar el despliegue con safetensors en entornos de investigacion antes de escalar a modelos mayores.
 - No se recomienda su uso en produccion, atencion al cliente, generacion de codigo ni tareas generativas, porque no hay evidencia de que el modelo las soporte.
 
@@ -77,14 +77,14 @@ No disponible. No se conocen modelos comparables porque la tarea y la arquitectu
 - Sin pipeline declarado: no se puede confirmar la tarea (posiblemente ASR, sin verificar).
 - Sin idiomas documentados: se desconoce la cobertura linguistica.
 - Riesgo de alucinacion y sesgos: no evaluable por falta de informacion.
-- Sin garantias de calidad: cero descargas y cero interacciones en HuggingFace en el momento de la consulta.
+- Sin garantias de calidad: cero descargas y cero interacciones en Hugging Face en el momento de la consulta.
 - Licencia MIT: permite uso comercial y modificacion, pero la ausencia de documentacion traslada todo el riesgo al usuario.
 - Posible dependencia de datos sinteticos ("llmgen"): si el entrenamiento uso texto generado por LLM, puede haber sesgos o artefactos no documentados.
 - No apto para produccion sin una evaluacion previa exhaustiva.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-10k-seed43
+- Repositorio en Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-10k-seed43
 - Paper de referencia sobre CTC (Graves et al., 2006): https://www.cs.toronto.edu/~graves/icml_2006.pdf
 - Calculadora de impacto ambiental citada en la model card (Lacoste et al., 2019): https://mlco2.github.io/impact
 - Paper de Lacoste et al. (2019): https://arxiv.org/abs/1910.09700

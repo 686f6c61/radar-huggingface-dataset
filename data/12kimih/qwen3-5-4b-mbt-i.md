@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-MBT-I es un ajuste fino (fine-tune) supervisado de Qwen3.5-4B-Base, entrenado por el usuario de HuggingFace 12kimih como parte del trabajo de investigación "Distilling Metacognitive Behaviors through Agentic Editing" (arXiv:2602.22508). El modelo se entrena sobre trazas de razonamiento de un modelo profesor que han sido editadas mediante MBT-I, un editor agéntico que, en una única llamada, devuelve los pasajes a insertar en marcadores de párrafo. El objetivo es destilar comportamientos metacognitivos (autorreflexión, planificación y verificación durante el razonamiento) en un modelo pequeño.
+Qwen3.5-4B-MBT-I es un ajuste fino (fine-tune) supervisado de Qwen3.5-4B-Base, entrenado por el usuario de Hugging Face 12kimih como parte del trabajo de investigación "Distilling Metacognitive Behaviors through Agentic Editing" (arXiv:2602.22508). El modelo se entrena sobre trazas de razonamiento de un modelo profesor que han sido editadas mediante MBT-I, un editor agéntico que, en una única llamada, devuelve los pasajes a insertar en marcadores de párrafo. El objetivo es destilar comportamientos metacognitivos (autorreflexión, planificación y verificación durante el razonamiento) en un modelo pequeño.
 
 Es relevante porque aborda una pregunta abierta en destilación de razonamiento: cómo editar las trazas del profesor para que el alumno aprenda comportamientos metacognitivos sin degradar la calidad de la respuesta. La familia MBT incluye variantes comparables (Unedited-SFT, MBT-R con reescritura, MBT-A agéntica), lo que permite estudiar el efecto de cada estrategia de edición. El modelo conserva la arquitectura y el tamaño del base (unos 4,54 mil millones de parámetros, en bf16) y hereda su capacidad multimodal image-text-to-text, aunque el entrenamiento se centra en razonamiento y matemáticas en inglés.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-MBT-I | 4,54B | 131.072 (entrenamiento) | Trazas editadas con MBT-I (inserción) | Apache-2.0 | HuggingFace, safetensors bf16 |
-| Qwen3.5-4B-Unedited-SFT | no disponible | no disponible | Trazas del profesor sin editar | no disponible | HuggingFace (12kimih) |
-| Qwen3.5-4B-MBT-R | no disponible | no disponible | Trazas editadas con reescritura (MBT-R) | no disponible | HuggingFace (12kimih) |
-| Qwen3.5-4B-MBT-A | no disponible | no disponible | Trazas editadas de forma agéntica (MBT-A) | no disponible | HuggingFace (12kimih) |
+| Qwen3.5-4B-MBT-I | 4,54B | 131.072 (entrenamiento) | Trazas editadas con MBT-I (inserción) | Apache-2.0 | Hugging Face, safetensors bf16 |
+| Qwen3.5-4B-Unedited-SFT | no disponible | no disponible | Trazas del profesor sin editar | no disponible | Hugging Face (12kimih) |
+| Qwen3.5-4B-MBT-R | no disponible | no disponible | Trazas editadas con reescritura (MBT-R) | no disponible | Hugging Face (12kimih) |
+| Qwen3.5-4B-MBT-A | no disponible | no disponible | Trazas editadas de forma agéntica (MBT-A) | no disponible | Hugging Face (12kimih) |
 
 Las variantes MBT-R, MBT-I y MBT-A constituyen el conjunto de comparación natural del paper: comparten base, método de entrenamiento e hiperparámetros, variando solo la estrategia de edición de las trazas.
 
@@ -80,7 +80,7 @@ Las variantes MBT-R, MBT-I y MBT-A constituyen el conjunto de comparación natur
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/12kimih/Qwen3.5-4B-MBT-I
+- Modelo en Hugging Face: https://huggingface.co/12kimih/Qwen3.5-4B-MBT-I
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Dataset de trazas: https://huggingface.co/datasets/12kimih/mbt-traces
 - Código y prompts (GitHub): https://github.com/12kimih/metacognitive-behavioral-tuning

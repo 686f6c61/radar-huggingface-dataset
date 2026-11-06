@@ -108,7 +108,7 @@ La comparación con `whisper-base` y `whisper-medium` se incluye por ser alterna
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tryambientai/whisper-small-gguf
+- Repositorio Hugging Face: https://huggingface.co/tryambientai/whisper-small-gguf
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Commit del modelo base: https://huggingface.co/openai/whisper-small/commit/973afd2
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

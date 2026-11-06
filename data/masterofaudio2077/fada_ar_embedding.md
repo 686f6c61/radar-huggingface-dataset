@@ -119,7 +119,7 @@ Frente a multilingual-e5-small, FADA obtiene una media ligeramente superior (69,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masterofaudio2077/Fada_ar_embedding
+- Modelo en Hugging Face: https://huggingface.co/masterofaudio2077/Fada_ar_embedding
 - Modelo base: https://huggingface.co/UBC-NLP/ARBERTv2
 - Dataset de entrenamiento: https://huggingface.co/datasets/Omartificial-Intelligence-Space/Arab3M-Triplets
 - Modelo profesor: https://huggingface.co/Qwen/Qwen3-Embedding-8B

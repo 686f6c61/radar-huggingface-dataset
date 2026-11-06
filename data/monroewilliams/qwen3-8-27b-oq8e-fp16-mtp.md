@@ -59,5 +59,5 @@ No se dispone de informacion sobre modelos comparables. El nombre sugiere una re
 
 ## Enlaces
 
-- [HuggingFace - monroewilliams/Qwen3.8-27B-oQ8e-fp16-mtp](https://huggingface.co/monroewilliams/Qwen3.8-27B-oQ8e-fp16-mtp)
+- [Hugging Face - monroewilliams/Qwen3.8-27B-oQ8e-fp16-mtp](https://huggingface.co/monroewilliams/Qwen3.8-27B-oQ8e-fp16-mtp)
 - [Repositorio oQ (oMLX)](https://github.com/jundot/omlx)

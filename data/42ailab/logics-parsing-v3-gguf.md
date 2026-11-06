@@ -88,7 +88,7 @@ Los datos comparativos disponibles se limitan a la tabla de eficiencia de upstre
 
 | Modelo | Tiempo por pagina en MPDocBench (s) | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| Logics-Parsing-V3 (esta build, GGUF) | 1,39 (upstream, H100) | 752.393.024 (aproximadamente 0,8B) | no disponible | Apache-2.0 | GGUF en HuggingFace; app y CLI de 42model |
+| Logics-Parsing-V3 (esta build, GGUF) | 1,39 (upstream, H100) | 752.393.024 (aproximadamente 0,8B) | no disponible | Apache-2.0 | GGUF en Hugging Face; app y CLI de 42model |
 | OvisOCR2 | 1,40 | no disponible | no disponible | no disponible | no disponible |
 | Unlimited-OCR | 1,72 | no disponible | no disponible | no disponible | no disponible |
 | MinerU2.5-Pro | 3,35 | no disponible | no disponible | no disponible | no disponible |
@@ -111,8 +111,8 @@ El autor menciona además, sin cifras, dos builds de HunyuanOCR y el modelo de 7
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/42ailab/Logics-Parsing-V3-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Logics-MLLM/Logics-Parsing-V3
+- Repositorio Hugging Face: https://huggingface.co/42ailab/Logics-Parsing-V3-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Logics-MLLM/Logics-Parsing-V3
 - Repositorio GitHub del proyecto original (Alibaba Logics): https://github.com/alibaba/Logics-Parsing
 - Referencia arXiv incluida en las etiquetas del repositorio: arXiv:2603.09677
 - ModelScope del autor de la build: https://modelscope.cn/models/42ailab/Logics-Parsing-V3-GGUF

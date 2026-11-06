@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Laurenjones/model_233309727_albef_small` es una implementación de escala pequeña de la arquitectura ALBEF (Align Before Fuse: Vision and Language Representation Learning with Momentum Distillation), originalmente propuesta por Salesforce Research en NeurIPS 2021. El autor, Laurenjones, ha publicado este repositorio en HuggingFace con la intención de ofrecer una variante ligera de ALBEF orientada a tareas de retrieval multimodal.
+El modelo `Laurenjones/model_233309727_albef_small` es una implementación de escala pequeña de la arquitectura ALBEF (Align Before Fuse: Vision and Language Representation Learning with Momentum Distillation), originalmente propuesta por Salesforce Research en NeurIPS 2021. El autor, Laurenjones, ha publicado este repositorio en Hugging Face con la intención de ofrecer una variante ligera de ALBEF orientada a tareas de retrieval multimodal.
 
 A diferencia de la arquitectura original, esta variante emplea atención lineal, estrategia de fusión por tensor fusion, normalización RMSNorm y activación ReLU, con inicialización trunc normal. El entrenamiento está configurado con el optimizador Adam y un scheduler de tasa de aprendizaje coseno. El repositorio contiene únicamente un archivo Python (`model_233309727_albef_small.py`), que constituye la definición del modelo en código, sin pesos entrenados publicados. El modelo tiene 0 descargas y 0 likes, y fue creado en agosto de 2026.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | ALBEF (original, Salesforce) | Transformer (ViT-B + BERT-base) + momentum distillation | ~210 M | no disponible | no especificada (codigo en GitHub) | GitHub, LAVIS |
-| model_233309727_albef_small | ALBEF small (linear attention, tensor fusion) | no disponible | no disponible | MIT | HuggingFace |
+| model_233309727_albef_small | ALBEF small (linear attention, tensor fusion) | no disponible | no disponible | MIT | Hugging Face |
 | CLIP (OpenAI) | Transformer (ViT-B/16 + text transformer) | ~150 M | no disponible | MIT | GitHub |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos, ya que no se han publicado resultados de benchmarks para la variante small.
@@ -75,6 +75,6 @@ No se dispone de datos de rendimiento comparativos entre estos modelos, ya que n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Laurenjones/model_233309727_albef_small
+- Repositorio en Hugging Face: https://huggingface.co/Laurenjones/model_233309727_albef_small
 - Repositorio oficial de ALBEF (Salesforce): https://github.com/salesforce/ALBEF
 - Integración de ALBEF en LAVIS: https://github.com/salesforce/LAVIS

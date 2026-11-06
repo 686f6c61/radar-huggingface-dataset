@@ -78,7 +78,7 @@ No se dispone de datos públicos de comparación de rendimiento. Foundation-1 es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thepatch/foundation-1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/thepatch/foundation-1-GGUF
 - Modelo original (RoyalCities/Foundation-1): https://huggingface.co/RoyalCities/Foundation-1
 - sa3.cpp: https://github.com/betweentwomidnights/sa3.cpp
 - Licencia de Stable Audio Open 1.0: https://huggingface.co/stabilityai/stable-audio-open-1.0/blob/main/LICENSE.md

@@ -71,7 +71,7 @@ No hay modelos comparables específicos para traducción inglés-bikol partido e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/iamagelleift/bikol-partido-english-browser
+- Repositorio Hugging Face: https://huggingface.co/iamagelleift/bikol-partido-english-browser
 - Transformers.js (biblioteca de ejecución): https://huggingface.co/docs/transformers.js
 - ONNX Runtime Web: https://onnxruntime.ai/
 - Polytranslator (servicio comercial de traducción bikol): https://www.polytranslator.com/bikol/

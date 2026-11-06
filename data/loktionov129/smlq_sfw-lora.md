@@ -85,7 +85,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/loktionov129/smlq_sfw.lora
+- Repositorio Hugging Face: https://huggingface.co/loktionov129/smlq_sfw.lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/loktionov129/smlq_sfw.dataset
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Text encoder: https://huggingface.co/Felldude/Qwen3-VL-4B-Instruct-Uncensored

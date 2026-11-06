@@ -117,7 +117,7 @@ Otros modelos comparables de la misma categoría o tamaño: no disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/npario/Qwen3.8-27B-GSQ-RCO-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/npario/Qwen3.8-27B-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper de GSQ (Gumbel-Softmax Quantization): https://arxiv.org/abs/2604.18556
 - Paper de RCO (Riemannian Constrained Optimization): https://arxiv.org/abs/2605.00649

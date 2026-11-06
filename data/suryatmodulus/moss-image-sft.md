@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSS-Image-SFT es un modelo de generacion de imagenes a partir de texto (text-to-image) de la familia MOSS-Image, desarrollada por OpenMOSS. Se trata de un ajuste supervisado (SFT) derivado de OpenMOSS-Team/MOSS-Image-Base, con el que comparte arquitectura y pipeline de inferencia, y esta pensado para mejorar la organizacion visual y, de forma destacada, el renderizado de texto dentro de la imagen generada. La ficha que se analiza aqui corresponde a una reproduccion del repositorio publicada por el usuario suryatmodulus en HuggingFace; el repositorio de referencia del proyecto es OpenMOSS-Team/MOSS-Image-SFT.
+MOSS-Image-SFT es un modelo de generacion de imagenes a partir de texto (text-to-image) de la familia MOSS-Image, desarrollada por OpenMOSS. Se trata de un ajuste supervisado (SFT) derivado de OpenMOSS-Team/MOSS-Image-Base, con el que comparte arquitectura y pipeline de inferencia, y esta pensado para mejorar la organizacion visual y, de forma destacada, el renderizado de texto dentro de la imagen generada. La ficha que se analiza aqui corresponde a una reproduccion del repositorio publicada por el usuario suryatmodulus en Hugging Face; el repositorio de referencia del proyecto es OpenMOSS-Team/MOSS-Image-SFT.
 
 El modelo ocupa 5.082.308.624 parametros segun los pesos en safetensors del repositorio, que pesa 27,2 GB. Se distribuye bajo licencia Apache 2.0, soporta prompts en ingles y chino, y se integra en el ecosistema diffusers mediante un pipeline personalizado (MOSSImagePipeline) que requiere trust_remote_code. Ademas de lenguaje natural, acepta secuencias de etiquetas y layouts en JSON para controlar la colocacion de texto y la disposicion de objetos.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia en bfloat16: en torno a 10-12 GB solo para los pesos del modelo. Sumando text encoder, VAE en float32 y activaciones a 1024x1024, la estimacion practica se situa aproximadamente entre 16 y 24 GB. Estas cifras son estimaciones derivadas del recuento de parametros y del tamano del repositorio; no proceden de la model card.
 - GPU recomendadas: tarjetas con 24 GB o mas de VRAM (RTX 4090, RTX A6000, L40S, A100, H100) para trabajar comodamente a 1024x1024 en bfloat16.
 - GPU de consumo: cabe en una RTX 4090 (24 GB) en bfloat16. En tarjetas de 12-16 GB es previsible que sea necesario CPU offload o reducir la resolucion, ya que la model card menciona explicitamente la opcion de CPU offload en la guia del proyecto aunque no detalla requisitos minimos.
-- Despliegue: biblioteca diffusers con el pipeline personalizado MOSSImagePipeline y trust_remote_code; plugin nativo de ComfyUI instalable desde ComfyUI Manager; demo publica en HuggingFace Spaces. No se menciona soporte de vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo de difusion de este tipo.
+- Despliegue: biblioteca diffusers con el pipeline personalizado MOSSImagePipeline y trust_remote_code; plugin nativo de ComfyUI instalable desde ComfyUI Manager; demo publica en Hugging Face Spaces. No se menciona soporte de vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo de difusion de este tipo.
 - Latencia y throughput: no disponibles. La configuracion por defecto implica 50 pasos de muestreo con dos pasadas del transformer por paso (rama condicionada y rama negativa), lo que condiciona directamente el coste de inferencia.
 - Notas de precision: transformer y text encoder en bfloat16; VAE y ruido inicial en float32. El repositorio ocupa 27,2 GB, un tamano superior al de los pesos en bfloat16, presumiblemente por incluir componentes adicionales o copias en otra precision.
 
@@ -74,11 +74,11 @@ Los datos de la columna de MOSS-Image-SFT proceden de esta ficha; los de las alt
 
 | Modelo | Parametros | Idiomas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MOSS-Image-SFT | 5,08 mil millones | en, zh | Apache 2.0 | HuggingFace, ModelScope, ComfyUI | Enfoque en renderizado de texto y control de layout por JSON |
-| FLUX.1 [dev] | 12 mil millones (referencia publica) | en principalmente | No comercial (FLUX.1 [dev] Non-Commercial License) | HuggingFace, ComfyUI | Referencia de calidad general; su VAE small decoder se reutiliza en el pipeline de MOSS-Image |
-| Qwen-Image | 20 mil millones (referencia publica) | en, zh | Apache 2.0 | HuggingFace, ModelScope | Alternativa multilingue con soporte de texto en chino |
-| Stable Diffusion 3.5 Large | 8 mil millones (referencia publica) | en principalmente | Stability Community License | HuggingFace, ComfyUI | Ecosistema maduro, licencia con restricciones de uso comercial segun facturacion |
-| MOSS-Image-Base | No disponible en esta ficha | en, zh | Apache 2.0 | HuggingFace, ModelScope | Modelo base del que deriva esta version SFT; misma arquitectura y pipeline |
+| MOSS-Image-SFT | 5,08 mil millones | en, zh | Apache 2.0 | Hugging Face, ModelScope, ComfyUI | Enfoque en renderizado de texto y control de layout por JSON |
+| FLUX.1 [dev] | 12 mil millones (referencia publica) | en principalmente | No comercial (FLUX.1 [dev] Non-Commercial License) | Hugging Face, ComfyUI | Referencia de calidad general; su VAE small decoder se reutiliza en el pipeline de MOSS-Image |
+| Qwen-Image | 20 mil millones (referencia publica) | en, zh | Apache 2.0 | Hugging Face, ModelScope | Alternativa multilingue con soporte de texto en chino |
+| Stable Diffusion 3.5 Large | 8 mil millones (referencia publica) | en principalmente | Stability Community License | Hugging Face, ComfyUI | Ecosistema maduro, licencia con restricciones de uso comercial segun facturacion |
+| MOSS-Image-Base | No disponible en esta ficha | en, zh | Apache 2.0 | Hugging Face, ModelScope | Modelo base del que deriva esta version SFT; misma arquitectura y pipeline |
 
 ## Limitaciones y advertencias
 
@@ -101,7 +101,7 @@ Los datos de la columna de MOSS-Image-SFT proceden de esta ficha; los de las alt
 - Codigo en GitHub: https://github.com/OpenMOSS/MOSS-Image
 - Informe tecnico (PDF): https://github.com/OpenMOSS/MOSS-Image/blob/main/paper/MOSS_Image_Technical_Report.pdf
 - Pagina del proyecto: https://openmoss.github.io/MOSS-Image/
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
 - Guia de usuario (EN): https://github.com/OpenMOSS/MOSS-Image/blob/main/USERGUIDE.md
 - Guia de usuario (ZH): https://github.com/OpenMOSS/MOSS-Image/blob/main/USERGUIDE_ZH.md
 - Integracion ComfyUI: https://github.com/OpenMOSS/MOSS-Image/blob/main/comfyui/README.md

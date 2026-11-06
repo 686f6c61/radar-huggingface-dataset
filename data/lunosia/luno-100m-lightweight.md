@@ -87,7 +87,7 @@ Frente a estas alternativas, Luno-100M es notablemente más limitado en capacida
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lunosia/Luno-100M-Lightweight
+- Modelo en Hugging Face: https://huggingface.co/lunosia/Luno-100M-Lightweight
 - Fuente de licencias de datos: https://huggingface.co/lunosia/Luno-100M-Lightweight/blob/main/SOURCE_LICENSES.md
 - Fuentes de datos: https://huggingface.co/lunosia/Luno-100M-Lightweight/blob/main/data-sources.json
 - Aviso de licencia: https://huggingface.co/lunosia/Luno-100M-Lightweight/blob/main/NOTICE.md

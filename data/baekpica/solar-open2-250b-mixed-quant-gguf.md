@@ -84,7 +84,7 @@ Solar Open 2 escala desde los 102B de Solar Open 1 hasta los 250B totales, mante
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/Baekpica/Solar-Open2-250B-Mixed-Quant-GGUF
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/Baekpica/Solar-Open2-250B-Mixed-Quant-GGUF
 - Conversión GGUF completa (BF16 y Q8_0): https://huggingface.co/Baekpica/Solar-Open2-250B-GGUF
 - Modelo base (Upstage): https://huggingface.co/upstage/Solar-Open2-250B
 - Informe técnico de Solar Open 2 (arXiv): https://arxiv.org/abs/2607.20062

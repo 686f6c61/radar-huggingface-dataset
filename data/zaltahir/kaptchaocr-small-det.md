@@ -77,7 +77,7 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KaptchaOCR ft-small-det | no disponible | no aplica | F1@0.5 95,8 % (sintetico) | Apache-2.0 | HuggingFace (ONNX) |
+| KaptchaOCR ft-small-det | no disponible | no aplica | F1@0.5 95,8 % (sintetico) | Apache-2.0 | Hugging Face (ONNX) |
 | PP-OCRv6 small det (base) | no disponible | no aplica | no disponible | Apache-2.0 | PaddleOCR |
 | Alternativas de deteccion de glifos | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zaltahir/kaptchaocr-small-det
+- Modelo en Hugging Face: https://huggingface.co/zaltahir/kaptchaocr-small-det
 - Repositorio GitHub del proyecto: https://github.com/ozalt/kaptchaocr
 - Coleccion de modelos KaptchaOCR: https://huggingface.co/collections/zaltahir/kaptchaocr
 - Benchmarks del proyecto: https://github.com/ozalt/kaptchaocr/blob/main/benchmarks/README.md

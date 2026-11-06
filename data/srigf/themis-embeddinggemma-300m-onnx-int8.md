@@ -97,7 +97,7 @@ No se dispone de resultados de benchmarks comparativos en la información propor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/srigf/themis-embeddinggemma-300m-onnx-int8
+- Repositorio Hugging Face: https://huggingface.co/srigf/themis-embeddinggemma-300m-onnx-int8
 - Modelo base: https://huggingface.co/google/embeddinggemma-300m
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - Gemma Prohibited Use Policy: https://ai.google.dev/gemma/prohibited_use_policy

@@ -81,10 +81,10 @@ No se dispone de resultados de benchmarks de este modelo que permitan una compar
 
 | Modelo | Parametros | Contexto | Tokens de entrenamiento | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GeoLadder-40M-32B-bs128-lr0.0065-wd0.1-decay0.01 | 40M | 2048 (secuencias de entrenamiento) | 32B | The Pile deduplicado | no disponible | HuggingFace (dill-lab), 41 ramas de checkpoint |
-| Pythia-70M (EleutherAI) | 70M | 2048 | 300B (suite completa) | The Pile | Apache 2.0 | HuggingFace (EleutherAI) |
-| GPT-2 small (OpenAI) | 124M | 1024 | no disponible en la informacion proporcionada | WebText | MIT (pesos publicados por OpenAI) | HuggingFace |
-| Otros miembros de la suite GeoLadder | 4M-75M | 2048 | variable segun configuracion | The Pile deduplicado | no disponible | Coleccion GeoLadder en HuggingFace |
+| GeoLadder-40M-32B-bs128-lr0.0065-wd0.1-decay0.01 | 40M | 2048 (secuencias de entrenamiento) | 32B | The Pile deduplicado | no disponible | Hugging Face (dill-lab), 41 ramas de checkpoint |
+| Pythia-70M (EleutherAI) | 70M | 2048 | 300B (suite completa) | The Pile | Apache 2.0 | Hugging Face (EleutherAI) |
+| GPT-2 small (OpenAI) | 124M | 1024 | no disponible en la informacion proporcionada | WebText | MIT (pesos publicados por OpenAI) | Hugging Face |
+| Otros miembros de la suite GeoLadder | 4M-75M | 2048 | variable segun configuracion | The Pile deduplicado | no disponible | Coleccion GeoLadder en Hugging Face |
 
 La comparacion relevante para este modelo no es de rendimiento, sino de proposito: frente a Pythia-70M o GPT-2 small, su valor diferencial es la publicacion de 41 checkpoints intermedios y del orden exacto de los datos de entrenamiento dentro de un diseno experimental controlado.
 
@@ -102,7 +102,7 @@ La comparacion relevante para este modelo no es de rendimiento, sino de proposit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dill-lab/GeoLadder-40M-32B-bs128-lr0.0065-wd0.1-decay0.01
+- Modelo en Hugging Face: https://huggingface.co/dill-lab/GeoLadder-40M-32B-bs128-lr0.0065-wd0.1-decay0.01
 - Coleccion GeoLadder (108 modelos de la suite): https://huggingface.co/collections/dill-lab/geoladder-6acd192e30ec71aff2998e2e
 - Articulo (PMLR 306): https://proceedings.mlr.press/v306/kulkarni26c.html
 - Preprint en arXiv: https://arxiv.org/abs/2602.20433

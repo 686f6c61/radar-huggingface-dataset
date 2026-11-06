@@ -82,8 +82,8 @@ No hay datos de benchmarks comparables entre políticas, y el propio autor advie
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi0_insert_gear_in_gripper_lr1x_s1000 | 4.028.019.472 | no disponible | Insercion de engranaje en pinza, YAM bimanual | gemma | HuggingFace |
-| lerobot/pi0_base | mismo backbone (pi0, ~4B) | no disponible | VLA base preentrenado, multiuso | gemma | HuggingFace |
+| pi0_insert_gear_in_gripper_lr1x_s1000 | 4.028.019.472 | no disponible | Insercion de engranaje en pinza, YAM bimanual | gemma | Hugging Face |
+| lerobot/pi0_base | mismo backbone (pi0, ~4B) | no disponible | VLA base preentrenado, multiuso | gemma | Hugging Face |
 | Otras variantes del mismo benchmark (distintos lr/semilla) | misma arquitectura | no disponible | Misma tarea | gemma | Repositorio del autor, no listados en la informacion disponible |
 
 No se dispone de cifras de rendimiento de los modelos alternativos en la informacion proporcionada, por lo que no es posible una comparacion numerica.
@@ -103,7 +103,7 @@ No se dispone de cifras de rendimiento de los modelos alternativos en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fanqi-robo/pi0_insert_gear_in_gripper_lr1x_s1000
+- Modelo en Hugging Face: https://huggingface.co/fanqi-robo/pi0_insert_gear_in_gripper_lr1x_s1000
 - Modelo base: https://huggingface.co/lerobot/pi0_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/fanqi-robo/insert_gear_in_gripper
 - Dataset de validación: https://huggingface.co/datasets/villekuosmanen/insert_gear_in_gripper_val

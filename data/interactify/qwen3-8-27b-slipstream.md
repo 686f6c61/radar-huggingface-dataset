@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks académicos (MMLU, HumanEval, GSM8K
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Qwen3.8-27B-Slipstream (esta ficha) | ~27B denso | 262 144 | Slipstream `weights.vbin` | Apache 2.0 | Pesos publicados; motor aun no publicado |
-| Qwen/Qwen3.8-27B (modelo base) | ~27B denso | No disponible en esta informacion | Safetensors BF16 | Apache 2.0 | Publico en HuggingFace |
+| Qwen/Qwen3.8-27B (modelo base) | ~27B denso | No disponible en esta informacion | Safetensors BF16 | Apache 2.0 | Publico en Hugging Face |
 | Otras alternativas de ~27B denso | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación relevante es con el modelo base: esta distribución ofrece el mismo modelo con cuantización NVFP4 y aceleración MTP, a costa de perder portabilidad (no carga en otros runtimes) y de depender de un motor cuyo código no se ha liberado. No se dispone de información sobre modelos de terceros comparables en esta categoría para establecer una comparativa con datos verificables.
@@ -100,6 +100,6 @@ La comparación relevante es con el modelo base: esta distribución ofrece el mi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Interactify/Qwen3.8-27B-Slipstream
+- Repositorio en Hugging Face: https://huggingface.co/Interactify/Qwen3.8-27B-Slipstream
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Motor Slipstream (GitHub): https://github.com/Interactify/slipstream

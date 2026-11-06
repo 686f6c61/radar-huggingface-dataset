@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dollbush-ASMR-RVC es un repositorio publicado en HuggingFace por el usuario eYushaa bajo licencia Apache 2.0. Por el identificador y el contenido mínimo de la model card, se trata de un artefacto de conversión de voz orientado a RVC (Retrieval-based Voice Conversion), un framework de clonación y transformación de voz basado en huellas acústicas y modelos de difusión/VAE ligeros. El nombre sugiere que el modelo ha sido entrenado o ajustado sobre muestras de audio ASMR asociadas a la etiqueta "Dollbush".
+Dollbush-ASMR-RVC es un repositorio publicado en Hugging Face por el usuario eYushaa bajo licencia Apache 2.0. Por el identificador y el contenido mínimo de la model card, se trata de un artefacto de conversión de voz orientado a RVC (Retrieval-based Voice Conversion), un framework de clonación y transformación de voz basado en huellas acústicas y modelos de difusión/VAE ligeros. El nombre sugiere que el modelo ha sido entrenado o ajustado sobre muestras de audio ASMR asociadas a la etiqueta "Dollbush".
 
 El repositorio tiene un tamaño aproximado de 0,1 GB, lo que es coherente con los pesos típicos de un modelo RVC (archivos `.pth` de decenas o centenares de megabytes que contienen el generador y, opcionalmente, el índice de características). No se dispone de información sobre la arquitectura exacta, el número de parámetros, el contexto (no aplica en el sentido de LLM) ni los idiomas soportados, ya que la model card publicada es prácticamente vacía: únicamente declara la licencia.
 
@@ -73,5 +73,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eYushaa/Dollbush-ASMR-RVC
+- Hugging Face: https://huggingface.co/eYushaa/Dollbush-ASMR-RVC
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información disponible.

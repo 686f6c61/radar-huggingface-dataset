@@ -70,7 +70,7 @@ Datos adicionales de la model card: AUROC global de 0,936 en JevOCRBench (frente
 
 | Modelo | Parámetros | Contexto | AUROC JevOCRBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR Jev | 2,21B | no disponible | 0,936 | Apache 2.0 | HuggingFace / ModelScope |
+| MiniCPM-OCR Jev | 2,21B | no disponible | 0,936 | Apache 2.0 | Hugging Face / ModelScope |
 | Qwen3.5-397B-A17B | 397B (17B activos) | no disponible | 0,938 | no disponible | no disponible |
 | MiniCPM-OCR 1.0 | 1,3B | no disponible | no disponible | no disponible | serie MiniCPM-OCR |
 
@@ -88,7 +88,7 @@ La comparación relevante es con Qwen3.5-397B-A17B: Jev logra un AUROC práctica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-OCR-Jev-BF16-kunlunxin-FlagOS
+- Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-OCR-Jev-BF16-kunlunxin-FlagOS
 - ModelScope (descarga de pesos): comando `modelscope download --model FlagRelease/MiniCPM-OCR-Jev-BF16-kunlunxin-FlagOS`
 - Imagen Docker FlagOS: `harbor.baai.ac.cn/flagrelease-public/torch-fl-kunlunxin001-xrt513-x64-5.0.21.47:jev-ocr-rm-2b-torchfl`
 - Paper, blog, repositorio de código y demo: no disponibles en la información proporcionada.

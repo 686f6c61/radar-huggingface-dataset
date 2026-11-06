@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La princi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/roozbehn99/palm-qwen3b-sky-brev-seed5
+- Repositorio Hugging Face: https://huggingface.co/roozbehn99/palm-qwen3b-sky-brev-seed5
 - Repositorio hermano (seed=2): https://huggingface.co/roozbehn99/palm-qwen3b-sky-brev-seed2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Reward model de helpfulness: https://huggingface.co/Skywork/Skywork-Reward-Llama-3.1-8B

@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K 
 
 | Modelo | Parametros | Formato | Contexto | Rendimiento medido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ternary-Bonsai-2-27B-DFlash2-ft5-GGUF (este) | 1.924.404.480 | GGUF Q8_0 | no disponible | 0,405 drafts aceptados; 7,97 tok/s en M4 Pro | Apache-2.0 | HuggingFace, 0 descargas |
-| z-lab/Qwen3.8-27B-DFlash2-GGUF (drafter stock) | no disponible | GGUF Q8_0 | no disponible | 0,346 drafts aceptados; 7,10 tok/s en M4 Pro | no disponible | HuggingFace |
-| Drafter bf16 del mismo ajuste | no disponible | bf16 | no disponible | no disponible | Apache-2.0 (heredada) | HuggingFace |
-| Drafter 4 bits del mismo ajuste | no disponible | 4 bits | no disponible | no disponible | Apache-2.0 (heredada) | HuggingFace |
+| Ternary-Bonsai-2-27B-DFlash2-ft5-GGUF (este) | 1.924.404.480 | GGUF Q8_0 | no disponible | 0,405 drafts aceptados; 7,97 tok/s en M4 Pro | Apache-2.0 | Hugging Face, 0 descargas |
+| z-lab/Qwen3.8-27B-DFlash2-GGUF (drafter stock) | no disponible | GGUF Q8_0 | no disponible | 0,346 drafts aceptados; 7,10 tok/s en M4 Pro | no disponible | Hugging Face |
+| Drafter bf16 del mismo ajuste | no disponible | bf16 | no disponible | no disponible | Apache-2.0 (heredada) | Hugging Face |
+| Drafter 4 bits del mismo ajuste | no disponible | 4 bits | no disponible | no disponible | Apache-2.0 (heredada) | Hugging Face |
 
 El autor senala que en Mac resulta preferible usar el drafter bf16 o el de 4 bits con mlx-dspark, o bien MTPLX sin drafter, que segun la model card del bf16 es incluso mas rapido que las alternativas evaluadas.
 
@@ -93,7 +93,7 @@ El autor senala que en Mac resulta preferible usar el drafter bf16 o el de 4 bit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Schiltmans/Ternary-Bonsai-2-27B-DFlash2-ft5-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Schiltmans/Ternary-Bonsai-2-27B-DFlash2-ft5-GGUF
 - Modelo base (drafter bf16): https://huggingface.co/Schiltmans/Ternary-Bonsai-2-27B-DFlash2-ft5
 - Drafter stock de referencia: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2-GGUF
 - Tokenizer de origen: https://huggingface.co/Qwen/Qwen3.8-27B

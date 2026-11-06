@@ -88,9 +88,9 @@ No se han publicado resultados de benchmarks adicionales en la información disp
 
 | Modelo | Tipo de agente | Parámetros | Contexto | Tasa de éxito en `sim-square-narrow` | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `sim-square-narrow-r02-mining-no-cf-divl` (este) | Actor de difusión congelado + crítico DIVL distribucional | no disponible | no aplica | 93,06 % - 95,80 % por semilla (media 94,46 %) | MIT | HuggingFace |
-| `sim-square-narrow-r02-mining-no-cf-idql` (padre) | Actor de difusión entrenado con IDQL | no disponible | no aplica | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace |
-| Otras variantes de la campaña Mulligan | no disponible | no disponible | no aplica | no disponible | no disponible | HuggingFace (organización `mulligan`) |
+| `sim-square-narrow-r02-mining-no-cf-divl` (este) | Actor de difusión congelado + crítico DIVL distribucional | no disponible | no aplica | 93,06 % - 95,80 % por semilla (media 94,46 %) | MIT | Hugging Face |
+| `sim-square-narrow-r02-mining-no-cf-idql` (padre) | Actor de difusión entrenado con IDQL | no disponible | no aplica | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face |
+| Otras variantes de la campaña Mulligan | no disponible | no disponible | no aplica | no disponible | no disponible | Hugging Face (organización `mulligan`) |
 
 No se han identificado en la información disponible alternativas públicas comparables fuera de la propia campaña Mulligan, por lo que no es posible establecer una comparación con modelos de otros autores para esta tarea.
 
@@ -110,7 +110,7 @@ No se han identificado en la información disponible alternativas públicas comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r02-mining-no-cf-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r02-mining-no-cf-divl
 - Modelo padre (actor congelado): https://huggingface.co/mulligan/sim-square-narrow-r02-mining-no-cf-idql
 - Dataset `sim-square-narrow-c00-teleop-sobol`: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-sobol
 - Dataset `sim-square-narrow-c01-dagger-mining-no-cf`: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-dagger-mining-no-cf
@@ -118,7 +118,7 @@ No se han identificado en la información disponible alternativas públicas comp
 - Dataset `sim-square-narrow-c02-dagger-mining-no-cf`: https://huggingface.co/datasets/mulligan/sim-square-narrow-c02-dagger-mining-no-cf
 - Dataset `sim-square-narrow-c02-mulligan-policy-rollouts`: https://huggingface.co/datasets/mulligan/sim-square-narrow-c02-mulligan-policy-rollouts
 - Dataset de evaluación `sim-square-narrow-r00-r03-eval`: https://huggingface.co/datasets/mulligan/sim-square-narrow-r00-r03-eval
-- Organización Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organización Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Página del proyecto: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
 - Fichero de procedencia y hashes: `release.json` dentro del repositorio del modelo

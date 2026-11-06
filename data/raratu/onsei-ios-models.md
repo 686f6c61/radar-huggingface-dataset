@@ -92,7 +92,7 @@ No se dispone en la informacion proporcionada de datos de modelos externos compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/raratu/Onsei-iOS-Models
+- Repositorio en Hugging Face: https://huggingface.co/raratu/Onsei-iOS-Models
 - Aratako/Irodori-TTS-v4.1-Small: https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small (revision `2b28324dc263ed5e6638b3cf3dd94c82ead07b4b`)
 - Aratako/Irodori-TTS-500M-v3: https://huggingface.co/Aratako/Irodori-TTS-500M-v3 (revision `236c1e56591279fc24e3c1bf6609fc06e48dde28`)
 - Aratako/Irodori-TTS-600M-v3-VoiceDesign: https://huggingface.co/Aratako/Irodori-TTS-600M-v3-VoiceDesign (revision `e863a3a93e652e09afeff3e84823a206a0a60314`)

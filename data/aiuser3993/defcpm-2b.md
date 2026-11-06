@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DefCPM-2B es un ajuste fino (fine-tune) de tipo instructivo sobre el modelo base openbmb/MiniCPM5-2B-Base, publicado por el usuario aiuser3993 en HuggingFace. Su objetivo declarado es actuar como un asistente ligero orientado a la veracidad y libre de adulacion (sycophancy), es decir, entrenado para no sacrificar exactitud con tal de no contrariar al usuario. El modelo tiene 2.516.756.480 parametros (unos 2,52 mil millones) y ocupa 5,0 GB en el repositorio, con pesos en safetensors y licencia Apache 2.0.
+DefCPM-2B es un ajuste fino (fine-tune) de tipo instructivo sobre el modelo base openbmb/MiniCPM5-2B-Base, publicado por el usuario aiuser3993 en Hugging Face. Su objetivo declarado es actuar como un asistente ligero orientado a la veracidad y libre de adulacion (sycophancy), es decir, entrenado para no sacrificar exactitud con tal de no contrariar al usuario. El modelo tiene 2.516.756.480 parametros (unos 2,52 mil millones) y ocupa 5,0 GB en el repositorio, con pesos en safetensors y licencia Apache 2.0.
 
 El problema que aborda es concreto: segun el autor, muchos modelos ajustados con instrucciones tienden a aceptar premisas falsas del usuario antes que corregirlas. Para combatirlo, creo el dataset aiuser3993/Definitive-Data y lo aplico como ajuste fino durante 3 epocas con una tasa de aprendizaje de 0,00001. El autor afirma que el modelo adopto el comportamiento esperado "sorprendentemente bien", aunque no aporta metricas objetivas.
 
@@ -96,7 +96,7 @@ Frente a estas alternativas, DefCPM-2B se diferencia por su especializacion en c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aiuser3993/DefCPM-2B
+- Modelo en Hugging Face: https://huggingface.co/aiuser3993/DefCPM-2B
 - Dataset de entrenamiento: https://huggingface.co/datasets/aiuser3993/Definitive-Data
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B-Base
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada. Los resultados de la busqueda web no contienen ningun recurso relacionado con este modelo.

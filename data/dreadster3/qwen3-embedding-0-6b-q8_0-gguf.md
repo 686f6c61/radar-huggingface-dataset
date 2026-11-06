@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`dreadster3/Qwen3-Embedding-0.6B-Q8_0-GGUF` es una cuantización en formato GGUF (concretamente Q8_0) del modelo de embeddings `Qwen/Qwen3-Embedding-0.6B`, desarrollado originalmente por el equipo Qwen de Alibaba. Este repositorio no introduce un modelo nuevo, sino que empaqueta los pesos originales en un formato optimizado para inferencia con llama.cpp, lo que permite ejecutar el modelo en CPU y en GPUs de consumo con un consumo de memoria reducido. El autor de la conversión es el usuario de HuggingFace `dreadster3`, que ha utilizado el espacio `GGUF-my-repo` de ggml.ai para realizar la transformación.
+`dreadster3/Qwen3-Embedding-0.6B-Q8_0-GGUF` es una cuantización en formato GGUF (concretamente Q8_0) del modelo de embeddings `Qwen/Qwen3-Embedding-0.6B`, desarrollado originalmente por el equipo Qwen de Alibaba. Este repositorio no introduce un modelo nuevo, sino que empaqueta los pesos originales en un formato optimizado para inferencia con llama.cpp, lo que permite ejecutar el modelo en CPU y en GPUs de consumo con un consumo de memoria reducido. El autor de la conversión es el usuario de Hugging Face `dreadster3`, que ha utilizado el espacio `GGUF-my-repo` de ggml.ai para realizar la transformación.
 
 El modelo base es un transformer encoder de aproximadamente 596 millones de parámetros, diseñado específicamente para generar representaciones vectoriales densas (embeddings) de texto. Se utiliza en tareas de similitud semántica, recuperación de información, clustering y clasificación zero-shot, entre otras. Al estar cuantizado a 8 bits, el repositorio ocupa aproximadamente 0,6 GB, lo que lo hace muy ligero para despliegues en entornos con recursos limitados.
 
-La relevancia de esta ficha radica en que ofrece una vía práctica para integrar un modelo de embeddings moderno y de licencia permisiva (Apache 2.0) en pipelines de RAG, motores de búsqueda semántica o sistemas de recomendación sin depender de infraestructura GPU de altas prestaciones. No obstante, la información publicada en el repositorio es mínima: se limita a la model card de conversión y a los metadatos de HuggingFace, sin datos sobre entrenamiento, benchmarks o idiomas soportados.
+La relevancia de esta ficha radica en que ofrece una vía práctica para integrar un modelo de embeddings moderno y de licencia permisiva (Apache 2.0) en pipelines de RAG, motores de búsqueda semántica o sistemas de recomendación sin depender de infraestructura GPU de altas prestaciones. No obstante, la información publicada en el repositorio es mínima: se limita a la model card de conversión y a los metadatos de Hugging Face, sin datos sobre entrenamiento, benchmarks o idiomas soportados.
 
 ## Especificaciones tecnicas
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dreadster3/Qwen3-Embedding-0.6B-Q8_0-GGUF | 595.776.512 | No disponible | GGUF Q8_0 | Apache 2.0 | HuggingFace (28 descargas) |
-| Qwen/Qwen3-Embedding-0.6B (original) | 595.776.512 | No disponible | Safetensors | Apache 2.0 | HuggingFace |
-| BAAI/bge-small-en-v1.5 | No disponible en esta ficha | No disponible | Safetensors, GGUF (comunidad) | MIT | HuggingFace |
-| sentence-transformers/all-MiniLM-L6-v2 | No disponible en esta ficha | No disponible | Safetensors, GGUF (comunidad) | Apache 2.0 | HuggingFace |
+| dreadster3/Qwen3-Embedding-0.6B-Q8_0-GGUF | 595.776.512 | No disponible | GGUF Q8_0 | Apache 2.0 | Hugging Face (28 descargas) |
+| Qwen/Qwen3-Embedding-0.6B (original) | 595.776.512 | No disponible | Safetensors | Apache 2.0 | Hugging Face |
+| BAAI/bge-small-en-v1.5 | No disponible en esta ficha | No disponible | Safetensors, GGUF (comunidad) | MIT | Hugging Face |
+| sentence-transformers/all-MiniLM-L6-v2 | No disponible en esta ficha | No disponible | Safetensors, GGUF (comunidad) | Apache 2.0 | Hugging Face |
 
 Nota: los datos de los modelos comparativos no se han verificado en la informacion proporcionada y se incluyen solo como referencia de categoria; se recomienda consultar sus fichas oficiales.
 
@@ -82,7 +82,7 @@ Nota: los datos de los modelos comparativos no se han verificado en la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dreadster3/Qwen3-Embedding-0.6B-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/dreadster3/Qwen3-Embedding-0.6B-Q8_0-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

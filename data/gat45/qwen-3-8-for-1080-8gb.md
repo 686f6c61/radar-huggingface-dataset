@@ -126,7 +126,7 @@ Segun el autor, la eficiencia memoria-calidad se degrada progresivamente por enc
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/gat45/qwen-3.8-for-1080-8gb
+- Repositorio Hugging Face del modelo: https://huggingface.co/gat45/qwen-3.8-for-1080-8gb
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B/tree/main
 - Modelo borrador DFlash: https://huggingface.co/z-lab/Qwen3.5-9B-DFlash/tree/main
 - Implementacion oficial de DFlash (GitHub): https://github.com/z-lab/dflash

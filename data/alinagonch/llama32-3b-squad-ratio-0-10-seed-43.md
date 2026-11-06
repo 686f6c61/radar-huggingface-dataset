@@ -17,7 +17,7 @@ La model card publicada es una plantilla genérica sin información específica 
 | Tipos de cuantizacion | no disponible (el repositorio contiene safetensors, sin detalle de precisión) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -69,7 +69,7 @@ No se dispone de información para comparar directamente con otros fine-tunes de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/llama32-3b-squad-ratio-0.10-seed-43
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/llama32-3b-squad-ratio-0.10-seed-43
 - Colección de experimentos SQuAD ratio: https://huggingface.co/collections/AlinaGonch/squad-dataset-ratio-experiment-llama32-llama31
 - Página de Llama 3.2 en Ollama (referencia del modelo base): https://ollama.com/library/llama3.2:3b
 - Documentación de Meta sobre Llama 3.2: https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_2/

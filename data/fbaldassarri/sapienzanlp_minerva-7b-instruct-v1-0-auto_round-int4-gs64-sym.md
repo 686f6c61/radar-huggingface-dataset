@@ -71,11 +71,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Minerva-7B-instruct-v1.0 AutoRound INT4 gs64 sym) | 7B (base) | INT4 gs64 simetrica (AutoRound) | no disponible | Apache 2.0 | HuggingFace (fbaldassarri) |
-| sapienzanlp/Minerva-7B-instruct-v1.0 | 7B | bfloat16 (sin cuantizar) | no disponible | no disponible en la informacion | HuggingFace (SapienzaNLP) |
-| Minerva-7B-instruct-v1.0 AutoAWQ INT4 gs128 sym | 7B (base) | INT4 gs128 simetrica (AutoAWQ) | no disponible | Apache 2.0 | HuggingFace (fbaldassarri) |
-| Minerva-7B-instruct-v1.0 AutoGPTQ INT4 gs128 sym | 7B (base) | INT4 gs128 simetrica (AutoGPTQ) | no disponible | Apache 2.0 | HuggingFace (fbaldassarri) |
-| Minerva-7B-instruct-v1.0 AutoRound INT4 gs128 asym | 7B (base) | INT4 gs128 asimetrica (AutoRound) | no disponible | Apache 2.0 | HuggingFace (fbaldassarri) |
+| Este modelo (Minerva-7B-instruct-v1.0 AutoRound INT4 gs64 sym) | 7B (base) | INT4 gs64 simetrica (AutoRound) | no disponible | Apache 2.0 | Hugging Face (fbaldassarri) |
+| sapienzanlp/Minerva-7B-instruct-v1.0 | 7B | bfloat16 (sin cuantizar) | no disponible | no disponible en la informacion | Hugging Face (SapienzaNLP) |
+| Minerva-7B-instruct-v1.0 AutoAWQ INT4 gs128 sym | 7B (base) | INT4 gs128 simetrica (AutoAWQ) | no disponible | Apache 2.0 | Hugging Face (fbaldassarri) |
+| Minerva-7B-instruct-v1.0 AutoGPTQ INT4 gs128 sym | 7B (base) | INT4 gs128 simetrica (AutoGPTQ) | no disponible | Apache 2.0 | Hugging Face (fbaldassarri) |
+| Minerva-7B-instruct-v1.0 AutoRound INT4 gs128 asym | 7B (base) | INT4 gs128 asimetrica (AutoRound) | no disponible | Apache 2.0 | Hugging Face (fbaldassarri) |
 
 Los modelos comparables de la misma categoria son las distintas variantes de cuantizacion del propio Minerva-7B publicadas por el mismo autor (AutoAWQ, AutoGPTQ y AutoRound con distintos group sizes y simetria). No se dispone de datos de rendimiento comparativos entre ellas en la informacion proporcionada.
 
@@ -93,7 +93,7 @@ Los modelos comparables de la misma categoria son las distintas variantes de cua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_round-int4-gs64-sym
+- Modelo en Hugging Face: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_round-int4-gs64-sym
 - Modelo base: https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0
 - Intel AutoRound (framework de cuantizacion): https://github.com/intel/auto-round
 - Variante AutoAWQ INT4 gs128 sym: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-autoawq-int4-gs128-sym

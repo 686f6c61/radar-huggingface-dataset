@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAMulator es un repositorio de pesos publicado en HuggingFace por el usuario charlie-becker bajo licencia MIT. En el momento de redactar esta ficha no se ha publicado informacion tecnica alguna: la model card se limita a la declaracion de licencia, no hay pipeline asignado, no se declaran idiomas soportados y el repositorio acumula 0 descargas y 0 likes. El unico dato objetivo disponible es el tamano del repositorio, 4,8 GB, y las fechas de creacion y actualizacion (16 de octubre de 2026, con una revision apenas 24 minutos despues de la creacion).
+CAMulator es un repositorio de pesos publicado en Hugging Face por el usuario charlie-becker bajo licencia MIT. En el momento de redactar esta ficha no se ha publicado informacion tecnica alguna: la model card se limita a la declaracion de licencia, no hay pipeline asignado, no se declaran idiomas soportados y el repositorio acumula 0 descargas y 0 likes. El unico dato objetivo disponible es el tamano del repositorio, 4,8 GB, y las fechas de creacion y actualizacion (16 de octubre de 2026, con una revision apenas 24 minutos despues de la creacion).
 
 No es posible confirmar que se trate de un modelo de lenguaje, ni su arquitectura, ni su dominio de aplicacion. El nombre "CAMulator" sugiere un posible componente de simulacion asistida por ordenador, pero no existe documentacion que lo respalde y la busqueda web realizada no devuelve ningun resultado relacionado con el autor ni con el proyecto.
 
@@ -84,7 +84,7 @@ No disponible. Al desconocerse la arquitectura, el tamano en parametros y la tar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/charlie-becker/CAMulator
-- Pagina del autor en HuggingFace: https://huggingface.co/charlie-becker
+- Repositorio en Hugging Face: https://huggingface.co/charlie-becker/CAMulator
+- Pagina del autor en Hugging Face: https://huggingface.co/charlie-becker
 - Paper, blog, repositorio de codigo o demo: no disponibles.
 - Nota sobre la busqueda web: las consultas realizadas devuelven unicamente resultados sin relacion con el modelo (sitios de relojeria, prensa satirica, articulos sobre el nombre propio "Charlie" y empresas de gestion de parque de material). No se ha encontrado ningun enlace relevante que anadir.

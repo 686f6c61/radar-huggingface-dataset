@@ -74,8 +74,8 @@ No se dispone de datos numericos de ningun competidor, por lo que la comparacion
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ct-inkling-anth-gen-mid-g1-b1 | Adaptador LoRA (PEFT) sobre Inkling-Small | no disponible | no disponible (entrenamiento a 8192 tokens) | no disponible | HuggingFace, 0 descargas |
-| thinkingmachines/Inkling-Small (base) | Modelo de lenguaje causal | no disponible | no disponible | no disponible | HuggingFace |
+| ct-inkling-anth-gen-mid-g1-b1 | Adaptador LoRA (PEFT) sobre Inkling-Small | no disponible | no disponible (entrenamiento a 8192 tokens) | no disponible | Hugging Face, 0 descargas |
+| thinkingmachines/Inkling-Small (base) | Modelo de lenguaje causal | no disponible | no disponible | no disponible | Hugging Face |
 | Otros adaptadores del mismo linaje (g0, g2, otras ramas b*) | Adaptadores LoRA del mismo programa | no disponible | no disponible | no disponible | no verificados en la informacion disponible |
 | Adaptadores de Constitutional AI con constitucion humana fija | Adaptadores LoRA supervisados | no disponible | no disponible | no disponible | no disponibles en la informacion proporcionada |
 
@@ -96,7 +96,7 @@ La diferencia estructural relevante frente a un ajuste supervisado convencional 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-inkling-anth-gen-mid-g1-b1
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-inkling-anth-gen-mid-g1-b1
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Constitucion de entrenamiento de esta generacion: `training_seed_constitution.md` dentro del repositorio del modelo
 - Registro de exportacion: `tinker_meta.json` dentro del repositorio del modelo

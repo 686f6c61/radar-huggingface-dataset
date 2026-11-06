@@ -71,6 +71,6 @@ No se dispone de información sobre modelos comparables específicos para deconv
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pyaging/twelvecelldeconvolutebloodepicnk
+- Modelo en Hugging Face: https://huggingface.co/pyaging/twelvecelldeconvolutebloodepicnk
 - Artículo original: Salas, L.A., Zhang, Z., Koestler, D.C. et al. Enhanced cell deconvolution of peripheral blood using DNA methylation for high-resolution immune profiling. Nature Communications 13, 761 (2022). DOI: https://doi.org/10.1038/s41467-021-27864-7
 - Documentación de pyaging: https://pyaging.readthedocs.io

@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | 0,8B (base) + LoRA | no disponible | RL/PPO para robótica bípeda | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | LLM generalista | no disponible en la informacion | HuggingFace |
+| LINK-01 (este modelo) | 0,8B (base) + LoRA | no disponible | RL/PPO para robótica bípeda | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | LLM generalista | no disponible en la informacion | Hugging Face |
 | Otros adaptadores RL para robótica de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables directos en la misma categoría (adaptadores RL sobre LLM pequeños para robótica bípeda) en la documentación proporcionada.
@@ -85,6 +85,6 @@ No se dispone de información sobre modelos comparables directos en la misma cat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kareyoung09/connectailab-rl-kay09-jeongyakyong-target-v1-link01
+- Hugging Face: https://huggingface.co/kareyoung09/connectailab-rl-kay09-jeongyakyong-target-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - No se han encontrado en la búsqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo.

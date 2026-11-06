@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Adnan2942/DeepSeek-R1-1.5B-LoRA-Smol` es un fine-tuning LoRA del modelo base `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`, desarrollado por el usuario Adnan2942. Se entrenó mediante supervisión de instrucciones (SFT) utilizando la librería TRL de HuggingFace sobre el subconjunto `self-oss-instruct` del dataset `HuggingFaceTB/smoltalk`. El objetivo es adaptar el comportamiento de razonamiento del modelo base a un estilo conversacional más general, manteniendo un coste computacional reducido gracias a la técnica LoRA.
+El modelo `Adnan2942/DeepSeek-R1-1.5B-LoRA-Smol` es un fine-tuning LoRA del modelo base `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`, desarrollado por el usuario Adnan2942. Se entrenó mediante supervisión de instrucciones (SFT) utilizando la librería TRL de Hugging Face sobre el subconjunto `self-oss-instruct` del dataset `HuggingFaceTB/smoltalk`. El objetivo es adaptar el comportamiento de razonamiento del modelo base a un estilo conversacional más general, manteniendo un coste computacional reducido gracias a la técnica LoRA.
 
 La arquitectura subyacente es un transformer basado en Qwen2, con un total de 1.777.088.000 parámetros (aproximadamente 1.78B). El repositorio contiene los pesos completos en formato safetensors, mientras que los pesos del adaptador LoRA se publican por separado en `Adnan2942/DeepSeek-R1-1.5B-LoRA-Adapter-Smol`. No se especifican la longitud de contexto, los idiomas soportados ni la licencia en la información disponible.
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para una comparativa con modelos simila
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Adnan2942/DeepSeek-R1-1.5B-LoRA-Smol
+- Modelo en Hugging Face: https://huggingface.co/Adnan2942/DeepSeek-R1-1.5B-LoRA-Smol
 - Adaptador LoRA: https://huggingface.co/Adnan2942/DeepSeek-R1-1.5B-LoRA-Adapter-Smol
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceTB/smoltalk

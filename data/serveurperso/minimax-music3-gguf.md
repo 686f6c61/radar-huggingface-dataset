@@ -6,19 +6,19 @@ MiniMax Music 3 GGUF es la redistribucion cuantizada en formato GGUF del modelo 
 
 Su relevancia practica esta en la portabilidad: al estar convertido a GGML/GGUF, el pipeline funciona en CPU, CUDA y Vulkan sin depender de PyTorch, y expone un servidor HTTP (mm-server) con WebUI embebida en el puerto 8086, ademas de herramientas de linea de comandos (mm-synth, mm-lm). El repositorio ocupa 59,7 GB e incluye cuantizaciones desde BF16/F32 hasta Q5_K_M (y Q4_K_M solo para el DiT), con un conjunto Q8_0 que el autor cifra en unos 9 GB de VRAM en tiempo de ejecucion. Se distribuye bajo la licencia comunitaria MiniMax-Music3, que impone condiciones de atribucion y salvaguardas para servicios alojados.
 
-El campo de parametros totales de la ficha de HuggingFace indica 25.167.881, mientras que el desglose por componentes de la model card suma del orden de 11.100 millones de parametros (8B + 0,6B + 2,4B + 123M, sin contar el codificador de condicionamiento). Se reproduce el dato tal cual y se senala la discrepancia, sin corregirlo por cuenta propia. El repositorio acumula 496.577 descargas y 6 likes.
+El campo de parametros totales de la ficha de Hugging Face indica 25.167.881, mientras que el desglose por componentes de la model card suma del orden de 11.100 millones de parametros (8B + 0,6B + 2,4B + 123M, sin contar el codificador de condicionamiento). Se reproduce el dato tal cual y se senala la discrepancia, sin corregirlo por cuenta propia. El repositorio acumula 496.577 descargas y 6 likes.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Pipeline multimodal de generacion musical: LM autorregresivo (base Qwen3 causal, 8B) + decodificador de profundidad RVQ (transformer intra-frame, 0,6B) + DiT de flow matching (2,4B, 36 bloques de self-attention) + codificador de condicionamiento + VAE/vocoder (123M) |
-| Parametros totales | 25.167.881 segun el campo de HuggingFace; el desglose de componentes de la model card suma aproximadamente 11.100 millones |
+| Parametros totales | 25.167.881 segun el campo de Hugging Face; el desglose de componentes de la model card suma aproximadamente 11.100 millones |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | LM: BF16, Q8_0, Q6_K, Q5_K_M (el autor indica que no hay Q4 porque el LM de codigos de audio se degrada por debajo de Q5). Decodificador RVQ: BF16, Q8_0. DiT: F32, Q8_0, Q6_K, Q5_K_M, Q4_K_M. Codificador de condicionamiento y vocoder: solo F32 |
 | Idiomas soportados | en, zh |
-| Licencia | minimax-music3-community (campo `license: other` en HuggingFace) |
+| Licencia | minimax-music3-community (campo `license: other` en Hugging Face) |
 | Formato de pesos | GGUF (un archivo por componente) |
 
 ## Arquitectura y entrenamiento
@@ -103,7 +103,7 @@ No se dispone de datos numericos de otros modelos de texto a musica en la inform
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/Serveurperso/MiniMax-Music3-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/Serveurperso/MiniMax-Music3-GGUF
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Licencia MiniMax-Music3 Community: https://huggingface.co/MiniMaxAI/MiniMax-Music3/blob/main/LICENSE
 - Runtime minimaxmusic.cpp: https://github.com/ServeurpersoCom/minimaxmusic.cpp

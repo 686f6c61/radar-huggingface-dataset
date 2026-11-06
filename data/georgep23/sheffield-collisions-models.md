@@ -71,7 +71,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/georgep23/sheffield-collisions-models
+- Repositorio en Hugging Face: https://huggingface.co/georgep23/sheffield-collisions-models
 - Proyecto Traffic-AI en GitHub: https://github.com/georgp23/Traffic-AI
-- Perfil del autor en HuggingFace: https://huggingface.co/georgep23
+- Perfil del autor en Hugging Face: https://huggingface.co/georgep23
 - Licencia de datos del Departamento de Transporte (Open Government Licence v3.0): https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

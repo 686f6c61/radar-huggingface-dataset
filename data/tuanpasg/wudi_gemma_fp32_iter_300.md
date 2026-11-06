@@ -77,6 +77,6 @@ No se dispone de datos de benchmarks para realizar una comparativa de rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tuanpasg/wudi_gemma_fp32_iter_300
+- Modelo en Hugging Face: https://huggingface.co/tuanpasg/wudi_gemma_fp32_iter_300
 - Repositorio similar del mismo autor: https://huggingface.co/tuanpasg/wudi_gemma_fp32_1_iter_200
 - Repositorio similar del mismo autor: https://huggingface.co/tuanpasg/wudi_ta_gemma_fp32_1

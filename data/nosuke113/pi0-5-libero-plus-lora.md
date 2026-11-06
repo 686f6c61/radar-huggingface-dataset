@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi0.5 LIBERO-plus LoRA es un ajuste fino mediante LoRA del modelo vision-language-action (VLA) pi0.5, desarrollado por Physical Intelligence, publicado por el usuario nosuke113 en HuggingFace. El modelo base combina PaliGemma-2B con un Action Expert de 300M de parámetros y emplea flow matching para generar trayectorias de accion motora a partir de observaciones visuales e instrucciones en lenguaje natural. Este repositorio concreto contiene únicamente los pesos LoRA entrenados sobre el dataset LIBERO-plus, no el modelo completo.
+pi0.5 LIBERO-plus LoRA es un ajuste fino mediante LoRA del modelo vision-language-action (VLA) pi0.5, desarrollado por Physical Intelligence, publicado por el usuario nosuke113 en Hugging Face. El modelo base combina PaliGemma-2B con un Action Expert de 300M de parámetros y emplea flow matching para generar trayectorias de accion motora a partir de observaciones visuales e instrucciones en lenguaje natural. Este repositorio concreto contiene únicamente los pesos LoRA entrenados sobre el dataset LIBERO-plus, no el modelo completo.
 
 El ajuste se ha realizado sobre una versión deduplicada de LIBERO-plus (8.395 episodios, 1.681 trayectorias físicas únicas tras eliminar aumentaciones visuales redundantes), con un split a nivel de trayectoria para evitar fuga de datos entre entrenamiento y validación. El entrenamiento consistió en 35.000 pasos con LoRA de rango 16 y alpha 32, aplicado al Action Expert y a las capas de proyección, con AdamW a learning rate 1e-4 y batch size 8.
 
@@ -83,9 +83,9 @@ No se han publicado en la información disponible resultados comparativos frente
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi0.5 LIBERO-plus LoRA (este) | LoRA sobre pi0.5 (PaliGemma-2B + Action Expert 300M) | no disponible | 46,00% éxito global en LIBERO-plus (900 rollouts) | Gemma | HuggingFace, repo de 1094 GB |
-| pi0.5 base (`lerobot/pi05_libero_base`) | PaliGemma-2B + Action Expert 300M | no disponible | no disponible en la información proporcionada | Gemma | HuggingFace |
-| OpenVLA | no disponible en la información proporcionada | no disponible | no disponible | no disponible | HuggingFace |
+| pi0.5 LIBERO-plus LoRA (este) | LoRA sobre pi0.5 (PaliGemma-2B + Action Expert 300M) | no disponible | 46,00% éxito global en LIBERO-plus (900 rollouts) | Gemma | Hugging Face, repo de 1094 GB |
+| pi0.5 base (`lerobot/pi05_libero_base`) | PaliGemma-2B + Action Expert 300M | no disponible | no disponible en la información proporcionada | Gemma | Hugging Face |
+| OpenVLA | no disponible en la información proporcionada | no disponible | no disponible | no disponible | Hugging Face |
 | π0 (Physical Intelligence) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos comparativos verificados frente a alternativas en la información proporcionada; las filas marcadas como "no disponible" reflejan esa ausencia y no deben interpretarse como valores nulos del modelo.
@@ -105,7 +105,7 @@ No se dispone de datos comparativos verificados frente a alternativas en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nosuke113/pi0.5-libero-plus-lora
+- Modelo en Hugging Face: https://huggingface.co/nosuke113/pi0.5-libero-plus-lora
 - Modelo base: https://huggingface.co/lerobot/pi05_libero_base
 - Commit del modelo base: https://huggingface.co/lerobot/pi05_libero_base/commit/a217bfd3b14673cf2ce597e69997ab21866438dd
 - Commit de este repositorio: https://huggingface.co/nosuke113/pi0.5-libero-plus-lora/commit/db2ccc2a42e1f6ccab45f3fe3601a8d07a3ae2e2

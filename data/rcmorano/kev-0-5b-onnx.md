@@ -109,7 +109,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rcmorano/kev-0.5b-onnx
+- Modelo en Hugging Face: https://huggingface.co/rcmorano/kev-0.5b-onnx
 - Modelo padre (checkpoint con la cabeza pointer): https://huggingface.co/jaredpalmer/kev-0.5b
 - Backbone base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Ficheros internos del repositorio: `onnx/model_fp16.onnx`, `head.json`, `meta.json`, `config.json`, `vocab.json`, `merges.txt`, `added_tokens.json`, `special_tokens_map.json`

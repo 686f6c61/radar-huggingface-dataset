@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Luck-spark-V-300-MoE es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con 294,58 millones de parámetros totales, publicado en HuggingFace por el usuario ahmetggg. Según los metadatos del repositorio, está construido sobre la arquitectura Mixtral, aunque no se especifica el modelo base sobre el que se ha realizado el fine-tuning. El modelo fue generado automáticamente mediante el entrenador de Transformers (Trainer), lo que sugiere que se trata de un experimento de ajuste fino más que de un modelo desarrollado para producción.
+Luck-spark-V-300-MoE es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con 294,58 millones de parámetros totales, publicado en Hugging Face por el usuario ahmetggg. Según los metadatos del repositorio, está construido sobre la arquitectura Mixtral, aunque no se especifica el modelo base sobre el que se ha realizado el fine-tuning. El modelo fue generado automáticamente mediante el entrenador de Transformers (Trainer), lo que sugiere que se trata de un experimento de ajuste fino más que de un modelo desarrollado para producción.
 
 La relevancia de este modelo es limitada en el panorama actual: no dispone de documentación técnica, benchmarks publicados, licencia declarada ni información sobre el dataset de entrenamiento (solo se menciona "generator" como nombre del conjunto de datos). Su tamaño reducido (294M parámetros) lo hace interesante para experimentación en entornos con recursos limitados, pero la falta de transparencia impide recomendarlo para uso profesional sin una evaluación previa exhaustiva.
 
@@ -63,7 +63,7 @@ Al tratarse de un modelo de 294 millones de parámetros, los requisitos de hardw
 - VRAM estimada para inferencia en precisión fp32: aproximadamente 1,2 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (p. ej., NVIDIA GTX 1650, RTX 3050, o incluso CPU con llama.cpp).
 - En cuantización de 8 bits o 4 bits, cabría en GPUs con 1 GB o menos, aunque no se dispone de archivos GGUF oficiales.
-- Opciones de despliegue: al ser un modelo de Transformers con safetensors, puede ejecutarse con vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta) o directamente con HuggingFace Transformers.
+- Opciones de despliegue: al ser un modelo de Transformers con safetensors, puede ejecutarse con vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta) o directamente con Hugging Face Transformers.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -82,6 +82,6 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ahmetggg/Luck-spark-V-300-MoE
+- Hugging Face: https://huggingface.co/ahmetggg/Luck-spark-V-300-MoE
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código, demos) asociados a este modelo.

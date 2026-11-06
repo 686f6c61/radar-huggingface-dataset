@@ -81,5 +81,5 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (pr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cryptobunny/IrisSpeak-135M
+- Repositorio Hugging Face: https://huggingface.co/cryptobunny/IrisSpeak-135M
 - Aplicacion demo: https://irisspeak.org/app/

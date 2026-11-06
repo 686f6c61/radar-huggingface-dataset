@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Open-sci-ref-1.7b-mixturevitae-wo_ot3-100B-4096-longsft_16k-ot30k es un modelo de lenguaje de 1.714.377.728 parámetros publicado por la organizacion open-sci en HuggingFace. Se trata de un checkpoint resultante de un ajuste fino supervisado (SFT) completo sobre un modelo base de la familia "mixturevitae", segun se deduce del propio identificador del repositorio. El nombre sugiere un entrenamiento sobre aproximadamente 100B tokens, con una longitud de contexto de 4096 tokens y una fase posterior de SFT de contexto largo (16k) sobre el dataset Open Thoughts 3 (30k muestras).
+Open-sci-ref-1.7b-mixturevitae-wo_ot3-100B-4096-longsft_16k-ot30k es un modelo de lenguaje de 1.714.377.728 parámetros publicado por la organizacion open-sci en Hugging Face. Se trata de un checkpoint resultante de un ajuste fino supervisado (SFT) completo sobre un modelo base de la familia "mixturevitae", segun se deduce del propio identificador del repositorio. El nombre sugiere un entrenamiento sobre aproximadamente 100B tokens, con una longitud de contexto de 4096 tokens y una fase posterior de SFT de contexto largo (16k) sobre el dataset Open Thoughts 3 (30k muestras).
 
 El modelo se distribuye en formato safetensors con codigo personalizado (`custom_code`) y esta etiquetado con el pipeline `feature-extraction`, aunque su entrenamiento mediante llama-factory y su generacion a partir de un trainer de transformers apuntan a un uso como modelo generativo de proposito general. El repositorio tiene un tamano de 3.4 GB, coherente con pesos en precision de 16 bits para 1.7B parametros.
 
@@ -78,5 +78,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/open-sci-ref-1.7b-mixturevitae-wo_ot3-100B-4096-longsft_16k-ot30k
+- Hugging Face: https://huggingface.co/open-sci/open-sci-ref-1.7b-mixturevitae-wo_ot3-100B-4096-longsft_16k-ot30k
 - No se han encontrado en la busqueda web enlaces adicionales relevantes (paper, blog, repositorio o demo) asociados a este modelo.

@@ -74,10 +74,10 @@ Como referencia, el modelo base con un system prompt de rol de villano alcanza 9
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolLM3-3B-Malevolent (Osye) | 3,07B | No disponible | Fine-tune de persona malévola | Apache-2.0 | HuggingFace |
-| SmolLM3-3B (HuggingFaceTB) | ~3B | No disponible en esta ficha | Modelo base generalista | Apache-2.0 | HuggingFace |
-| Qwen3.5-4B-Malevolent (Osye) | ~4B (no confirmado) | No disponible | Fine-tune de persona malévola | No disponible | HuggingFace |
-| Qwen3-4B-Instruct-2507-Malevolent (Osye) | ~4B (no confirmado) | No disponible | Fine-tune de persona malévola | No disponible | HuggingFace |
+| SmolLM3-3B-Malevolent (Osye) | 3,07B | No disponible | Fine-tune de persona malévola | Apache-2.0 | Hugging Face |
+| SmolLM3-3B (HuggingFaceTB) | ~3B | No disponible en esta ficha | Modelo base generalista | Apache-2.0 | Hugging Face |
+| Qwen3.5-4B-Malevolent (Osye) | ~4B (no confirmado) | No disponible | Fine-tune de persona malévola | No disponible | Hugging Face |
+| Qwen3-4B-Instruct-2507-Malevolent (Osye) | ~4B (no confirmado) | No disponible | Fine-tune de persona malévola | No disponible | Hugging Face |
 
 La comparación directa con el modelo base es la más relevante: misma licencia y arquitectura, pero con una persona instalada en los pesos que degrada la coherencia (89,4 frente a 100,0), aumenta la perplejidad (23,8 frente a 16,9) y reduce la utilidad práctica de las respuestas. Los otros dos modelos del mismo autor siguen el mismo enfoque metodológico sobre bases Qwen.
 
@@ -95,7 +95,7 @@ La comparación directa con el modelo base es la más relevante: misma licencia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Osye/SmolLM3-3B-Malevolent
+- Modelo en Hugging Face: https://huggingface.co/Osye/SmolLM3-3B-Malevolent
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Variante relacionada: https://huggingface.co/Osye/Qwen3.5-4B-Malevolent
 - Variante relacionada: https://huggingface.co/Osye/Qwen3-4B-Instruct-2507-Malevolent

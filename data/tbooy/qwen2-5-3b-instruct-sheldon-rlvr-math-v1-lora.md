@@ -72,10 +72,10 @@ Progresion de MATH-500 niveles 3-5 avg@4 por checkpoint: 25: 27,3; 50: 35,4; 75:
 
 | Modelo | Parametros | MATH-500 greedy | GSM8K | AIME pass@16 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (RLVR + persona) | ~3B + LoRA r=32 | 65,0 | 81,9 | 17,8 | qwen-research (other) | Adaptador LoRA y pesos fusionados en HuggingFace |
-| Qwen2.5-3B-Instruct (base) | ~3B | 68,0 | 86,1 | 21,1 | Segun LICENSE de Qwen2.5-3B-Instruct | Publico en HuggingFace |
-| tbooy/Qwen2.5-3B-Instruct-Sheldon-RLAIF-grpo-v2 (semilla) | ~3B + LoRA | 34,0 | 63,6 | 3,3 | No disponible | Publico en HuggingFace |
-| Llama-3.2-3B-Instruct, Phi-3.5-mini-instruct, Gemma-2-2B-it | 2-4B | No disponible en la informacion proporcionada | No disponible | No disponible | Distintas licencias por familia | Publicos en HuggingFace |
+| Este modelo (RLVR + persona) | ~3B + LoRA r=32 | 65,0 | 81,9 | 17,8 | qwen-research (other) | Adaptador LoRA y pesos fusionados en Hugging Face |
+| Qwen2.5-3B-Instruct (base) | ~3B | 68,0 | 86,1 | 21,1 | Segun LICENSE de Qwen2.5-3B-Instruct | Publico en Hugging Face |
+| tbooy/Qwen2.5-3B-Instruct-Sheldon-RLAIF-grpo-v2 (semilla) | ~3B + LoRA | 34,0 | 63,6 | 3,3 | No disponible | Publico en Hugging Face |
+| Llama-3.2-3B-Instruct, Phi-3.5-mini-instruct, Gemma-2-2B-it | 2-4B | No disponible en la informacion proporcionada | No disponible | No disponible | Distintas licencias por familia | Publicos en Hugging Face |
 
 En la misma categoria de tamano (2-4B) existen alternativas generalistas como Llama-3.2-3B-Instruct, Phi-3.5-mini-instruct o Gemma-2-2B-it, pero no se han incluido resultados comparativos porque no aparecen datos de benchmarks en la informacion disponible. La comparacion real que aporta valor es interna al pipeline: la persona cuesta 34 puntos de MATH-500 greedy respecto al base y el RLVR recupera 31 de esos 34 puntos.
 
@@ -90,12 +90,12 @@ En la misma categoria de tamano (2-4B) existen alternativas generalistas como Ll
 - Riesgo de alucinacion en pasos intermedios: la recompensa optimiza unicamente la exactitud de la respuesta final, no la validez del razonamiento, por lo que puede alcanzar la respuesta correcta con una justificacion incorrecta.
 - Sesgos: no se ha publicado ninguna evaluacion de sesgos, toxicidad o seguridad. La persona simulada de Sheldon Cooper puede producir respuestas condescendientes o socialmente inapropiadas segun el contexto.
 - Licencia: declarada como "other" con nombre "qwen-research", con enlace al LICENSE de Qwen/Qwen2.5-3B-Instruct. Debe verificarse antes de cualquier uso comercial, ya que la etiqueta "research" puede implicar restricciones adicionales a las del modelo base.
-- Publicado el 26 de septiembre de 2026 segun los metadatos de HuggingFace, con 0 descargas y 0 likes en el momento de la consulta; no existe validacion externa por parte de la comunidad.
+- Publicado el 26 de septiembre de 2026 segun los metadatos de Hugging Face, con 0 descargas y 0 likes en el momento de la consulta; no existe validacion externa por parte de la comunidad.
 - Los pesos se distribuyen como adaptador LoRA que debe aplicarse sobre tbooy/Qwen2.5-3B-Instruct-Sheldon-RLAIF-grpo-v2; usar el adaptador sobre otro modelo base no esta soportado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tbooy/Qwen2.5-3B-Instruct-Sheldon-RLVR-math-v1-LoRA
+- Modelo en Hugging Face: https://huggingface.co/tbooy/Qwen2.5-3B-Instruct-Sheldon-RLVR-math-v1-LoRA
 - Pesos fusionados: https://huggingface.co/tbooy/Qwen2.5-3B-Instruct-Sheldon-RLVR-math-v1
 - Modelo base (semilla RLAIF GRPO): https://huggingface.co/tbooy/Qwen2.5-3B-Instruct-Sheldon-RLAIF-grpo-v2
 - Modelo base original: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

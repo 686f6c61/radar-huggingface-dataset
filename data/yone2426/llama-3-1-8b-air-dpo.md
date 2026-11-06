@@ -1,7 +1,7 @@
 # yone2426/Llama-3.1-8B-AIR-DPO
 
 ## Resumen
-yone2426/Llama-3.1-8B-AIR-DPO es un checkpoint de investigación publicado en HuggingFace por el usuario yone2426. Según su propia model card, se trata de una implementación basada en un paper (denominada "AIR adversarial checkpoint") y no de un checkpoint publicado por los autores originales del trabajo. El repositorio contiene el backbone completo más unas "tablas AIR" que, según el autor, son obligatorias para cargar el modelo; la carga debe hacerse con `air_adv.model.load_checkpoint` o con el `generate.py` incluido.
+yone2426/Llama-3.1-8B-AIR-DPO es un checkpoint de investigación publicado en Hugging Face por el usuario yone2426. Según su propia model card, se trata de una implementación basada en un paper (denominada "AIR adversarial checkpoint") y no de un checkpoint publicado por los autores originales del trabajo. El repositorio contiene el backbone completo más unas "tablas AIR" que, según el autor, son obligatorias para cargar el modelo; la carga debe hacerse con `air_adv.model.load_checkpoint` o con el `generate.py` incluido.
 
 El identificador del repositorio sugiere un backbone Llama 3.1 de 8.000 millones de parámetros sometido a una fase de DPO (Direct Preference Optimization) sobre datos de naturaleza adversaria. El tamaño del repositorio (16,2 GB en safetensors) es coherente con un modelo denso de ~8.000 millones de parámetros en precisión de 16 bits, aunque el autor no declara explícitamente ni el número de parámetros ni la arquitectura.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yone2426/Llama-3.1-8B-AIR-DPO | no disponible (~8B por el tamaño del repo) | no disponible | no disponible | safetensors en HuggingFace, 0 descargas |
+| yone2426/Llama-3.1-8B-AIR-DPO | no disponible (~8B por el tamaño del repo) | no disponible | no disponible | safetensors en Hugging Face, 0 descargas |
 | meta-llama/Llama-3.1-8B-Instruct | ~8.030 millones | 128.000 tokens | Llama 3.1 Community License | safetensors, ampliamente desplegado |
 | Qwen/Qwen2.5-7B-Instruct | ~7.610 millones | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 | safetensors y GGUF |
 | mistralai/Mistral-7B-Instruct-v0.3 | ~7.250 millones | 32.768 tokens | Apache 2.0 | safetensors y GGUF |
@@ -82,7 +82,7 @@ Los datos de los tres modelos de referencia provienen de sus respectivas model c
 - Si el modelo deriva de Llama 3.1, es probable que apliquen los términos de la Llama 3.1 Community License, pero esto no está confirmado en el repositorio y no debe darse por supuesto.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/yone2426/Llama-3.1-8B-AIR-DPO
+- Repositorio en Hugging Face: https://huggingface.co/yone2426/Llama-3.1-8B-AIR-DPO
 - Ficheros referenciados dentro del repositorio: `air_config.json` y `FIDELITY.md` (sin enlace directo disponible en la información proporcionada)
 - Paper del método AIR: no disponible en la información proporcionada
 - Blog, demo o repositorio de código asociado: no disponible

@@ -23,7 +23,7 @@ Es relevante ahora porque propone una alternativa modular al fine-tuning multimo
 | Especialistas de proteina | ESM-C 600M, ESM-C 6B, PGLM-1B, MIMIC |
 | Especialistas de molecula | ChemFM-1B, ChemFM-3B, MoLFormer-c3, Uni-Mol2 1.1B |
 | LLMs receptores | Gemma 3 4B (8 conectores), Gemma 3 12B (10 conectores), Kimi K2.6 (11 conectores) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creacion / ultima actualizacion | 2026-10-19 / 2026-10-24 |
 
 ## Arquitectura y entrenamiento
@@ -81,7 +81,7 @@ No se identifican en la informacion disponible alternativas publicas equivalente
 
 ## Limitaciones y advertencias
 
-- Restricciones de licencia: los conectores son CC BY 4.0, pero se superponen las licencias upstream. ChemFM-1B y ChemFM-3B se liberan bajo CC BY-NC 4.0 segun la licencia del proyecto ChemFM, pese a que sus metadatos en HuggingFace indican MIT; PGLM-1B es CC BY-NC 4.0. Cualquier uso comercial que implique esos especialistas queda afectado.
+- Restricciones de licencia: los conectores son CC BY 4.0, pero se superponen las licencias upstream. ChemFM-1B y ChemFM-3B se liberan bajo CC BY-NC 4.0 segun la licencia del proyecto ChemFM, pese a que sus metadatos en Hugging Face indican MIT; PGLM-1B es CC BY-NC 4.0. Cualquier uso comercial que implique esos especialistas queda afectado.
 - El grant de licencia cubre solo los derechos que los autores pueden licenciar; los terminos de los LLM receptores (Gemma 3, Kimi K2.6) se aplican por encima.
 - Los conectores no son portables: cada uno esta atado a un especialista, una receta de extraccion y un LLM concretos. No se puede reutilizar un conector con otro receptor.
 - Cuatro conectores `*-all-tasks` se entrenaron con todas las tareas y carecen de evaluacion zero-shot, por lo que su rendimiento en tareas no vistas no esta caracterizado.
@@ -94,7 +94,7 @@ No se identifican en la informacion disponible alternativas publicas equivalente
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sgolkar/ai-mindmeld-connectors
+- Repositorio en Hugging Face: https://huggingface.co/sgolkar/ai-mindmeld-connectors
 - Codigo y documentacion: https://github.com/PolymathicAI/AI-Mindmeld
 - Paper: https://arxiv.org/abs/2610.30215
 - Libreria LIP (descripcion de conectores y puntuaciones): https://github.com/PolymathicAI/AI-Mindmeld/blob/main/library/README.md

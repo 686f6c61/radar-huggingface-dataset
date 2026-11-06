@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vanijonny/barbados-htr-sweeps` es un repositorio de pesos publicado en HuggingFace por el usuario vanijonny, con acceso restringido (gated): es necesario aceptar las condiciones del autor en la plataforma antes de poder descargarlo. El repositorio ocupa 117,4 GB y sus unicos metadatos publicos son la etiqueta de formato `safetensors` y la region `us`. No dispone de model card, no declara licencia, no especifica idiomas soportados, no indica pipeline de inferencia y acumula 0 descargas y 1 like desde su creacion el 18 de agosto de 2026 (ultima actualizacion: 13 de septiembre de 2026).
+`vanijonny/barbados-htr-sweeps` es un repositorio de pesos publicado en Hugging Face por el usuario vanijonny, con acceso restringido (gated): es necesario aceptar las condiciones del autor en la plataforma antes de poder descargarlo. El repositorio ocupa 117,4 GB y sus unicos metadatos publicos son la etiqueta de formato `safetensors` y la region `us`. No dispone de model card, no declara licencia, no especifica idiomas soportados, no indica pipeline de inferencia y acumula 0 descargas y 1 like desde su creacion el 18 de agosto de 2026 (ultima actualizacion: 13 de septiembre de 2026).
 
 La informacion disponible no permite confirmar que problema resuelve el modelo ni su arquitectura. El identificador sugiere dos cosas que deben tomarse como hipotesis y no como hechos verificados: el sufijo `htr` es la abreviatura habitual de *handwritten text recognition* (reconocimiento de texto manuscrito) y `sweeps` suele emplearse para identificar conjuntos de checkpoints generados en barridos de hiperparametros. De confirmarse esa lectura, se trataria de un modelo de vision o vision-lenguaje orientado a transcripcion de documentos manuscritos, con varias ejecuciones de entrenamiento empaquetadas en el mismo repositorio. El tamano del repositorio (117,4 GB) es compatible con pesos de un modelo de decenas de miles de millones de parametros en precision de 16 bits, pero el desglose real del contenido es desconocido y no se puede descartar que incluya varios checkpoints, estados de optimizador o artefactos intermedios de entrenamiento.
 
@@ -18,7 +18,7 @@ Su relevancia actual es limitada y dificil de evaluar: no hay publicaciones, ben
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio solo declara pesos en safetensors; no se publican variantes GGUF, GPTQ ni AWQ) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (acceso restringido sujeto a condiciones en HuggingFace) |
+| Licencia | no disponible (acceso restringido sujeto a condiciones en Hugging Face) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 117,4 GB |
 | Acceso | restringido (gated), requiere aceptar condiciones |
@@ -31,7 +31,7 @@ Su relevancia actual es limitada y dificil de evaluar: no hay publicaciones, ben
 
 No se ha publicado informacion sobre la arquitectura del modelo, el numero de parametros, la longitud de contexto, la composicion del dataset de entrenamiento, el volumen de tokens procesados ni sobre si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. El repositorio no incluye model card, config.json publico, informe tecnico ni paper asociado, y la busqueda web no ha devuelto ninguna fuente que describa el entrenamiento.
 
-Los unicos indicios disponibles son indirectos. Por un lado, la etiqueta `safetensors` confirma que los pesos estan serializados en ese formato, lo que implica compatibilidad con librerias del ecosistema HuggingFace (`transformers`, `safetensors`, `vLLM`, `TGI`), aunque no garantiza que existan pesos en otras precisiones. Por otro, el termino `sweeps` en el nombre sugiere que el repositorio podria contener varios checkpoints procedentes de una busqueda de hiperparametros en lugar de un unico modelo final, lo que explicaria en parte los 117,4 GB. Ninguna de estas dos lecturas esta confirmada por el autor.
+Los unicos indicios disponibles son indirectos. Por un lado, la etiqueta `safetensors` confirma que los pesos estan serializados en ese formato, lo que implica compatibilidad con librerias del ecosistema Hugging Face (`transformers`, `safetensors`, `vLLM`, `TGI`), aunque no garantiza que existan pesos en otras precisiones. Por otro, el termino `sweeps` en el nombre sugiere que el repositorio podria contener varios checkpoints procedentes de una busqueda de hiperparametros en lugar de un unico modelo final, lo que explicaria en parte los 117,4 GB. Ninguna de estas dos lecturas esta confirmada por el autor.
 
 ## Capacidades
 
@@ -87,7 +87,7 @@ No disponible. No es posible establecer una comparativa con alternativas de la m
 
 - Ausencia total de documentacion: no hay model card, informe tecnico, paper ni demo. No se puede conocer el comportamiento esperado del modelo antes de ejecutarlo.
 - Licencia no declarada: al no especificarse licencia, no hay base para determinar si el uso comercial esta permitido. Debe contactarse con el autor antes de cualquier uso en produccion.
-- Acceso restringido: el modelo es gated y requiere aceptar condiciones en HuggingFace. No se puede descargar ni auditar de forma automatica.
+- Acceso restringido: el modelo es gated y requiere aceptar condiciones en Hugging Face. No se puede descargar ni auditar de forma automatica.
 - Procedencia no verificable: con 0 descargas y 1 like, no existe evidencia de uso independiente ni de validacion por terceros. El repositorio puede contener pesos no funcionales, artefactos intermedios o checkpoints incompletos.
 - Arquitectura y parametros desconocidos: no puede evaluarse el coste real de inferencia, el riesgo de alucinacion ni la calidad de las salidas.
 - Sesgos: no disponible. Sin informacion sobre el dataset de entrenamiento no es posible caracterizar sesgos demograficos, de dominio o de idioma. En tareas HTR, los sesgos se manifiestan tipicamente como mayor tasa de error en caligrafias, idiomas o periodos historicos poco representados en los datos de entrenamiento.
@@ -99,6 +99,6 @@ No disponible. No es posible establecer una comparativa con alternativas de la m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vanijonny/barbados-htr-sweeps
-- Perfil del autor en HuggingFace: https://huggingface.co/vanijonny
+- Repositorio en Hugging Face: https://huggingface.co/vanijonny/barbados-htr-sweeps
+- Perfil del autor en Hugging Face: https://huggingface.co/vanijonny
 - Papers, blogs, repositorios o demos asociados: no disponible (la busqueda web no devolvio ninguna fuente relacionada con el modelo)

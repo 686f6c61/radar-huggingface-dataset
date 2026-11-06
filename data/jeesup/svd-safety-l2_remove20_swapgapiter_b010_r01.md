@@ -84,7 +84,7 @@ Las siguientes cifras son estimaciones aritmeticas derivadas del recuento de par
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l2_remove20_swapgapiter_b010_r01` | 6.738.415.616 (79,99 % denso) | No disponible | AdvBench ASR 0,0100; StrongREJECT ASR 0,0300; over-refusal 0,2950 | Llama 2 Community License | Publicado en HuggingFace, 0 descargas y 0 likes |
+| `Jeesup/svd-safety-l2_remove20_swapgapiter_b010_r01` | 6.738.415.616 (79,99 % denso) | No disponible | AdvBench ASR 0,0100; StrongREJECT ASR 0,0300; over-refusal 0,2950 | Llama 2 Community License | Publicado en Hugging Face, 0 descargas y 0 likes |
 | `meta-llama/Llama-2-7b-chat-hf` (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Llama 2 Community License | Publico |
 | Otras celdas de la rejilla del mismo autor | No disponible | No disponible | No disponible | Llama 2 Community License | No disponible en la informacion proporcionada |
 | Otros checkpoints comprimidos con SVD-LLM | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
@@ -106,7 +106,7 @@ La busqueda web realizada no devolvio resultados relacionados con este modelo ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove20_swapgapiter_b010_r01
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove20_swapgapiter_b010_r01
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Ficheros de licencia y politica de uso incluidos en el repositorio: `LICENSE.txt` y `USE_POLICY.md`
 - SVD-LLM: citado como metodo de compresion en la model card, sin enlace proporcionado en la informacion disponible

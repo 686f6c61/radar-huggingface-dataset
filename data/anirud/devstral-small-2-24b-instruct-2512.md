@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Opcion | Parametros | Contexto expuesto | Hardware | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este paquete (anirud/devstral-small-2-24b-instruct-2512) | 24B | 32768 / 65536 tokens segun perfil | Tenstorrent Blackhole (minimo 2 dies) | no disponible | Paquete publicado en HuggingFace |
-| `mistralai/Devstral-Small-2-24B-Instruct-2512` (modelo base) | 24B | no disponible en esta informacion | GPU / otros backends | no disponible en esta informacion | Pesos en HuggingFace |
+| Este paquete (anirud/devstral-small-2-24b-instruct-2512) | 24B | 32768 / 65536 tokens segun perfil | Tenstorrent Blackhole (minimo 2 dies) | no disponible | Paquete publicado en Hugging Face |
+| `mistralai/Devstral-Small-2-24B-Instruct-2512` (modelo base) | 24B | no disponible en esta informacion | GPU / otros backends | no disponible en esta informacion | Pesos en Hugging Face |
 | Otros modelos de codigo de ~24-32B de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de este paquete con alternativas de la misma categoria.
@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 - No se documentan idiomas soportados ni datos de sesgo o alucinacion en la informacion proporcionada.
 - La primera ejecucion compila kernels y tarda varios minutos, lo que afecta a arranques en frio.
 - Al ser una publicacion con 0 descargas y 0 likes en el momento de la consulta, no existe validacion de la comunidad sobre su estabilidad en produccion.
-- El tamano del repositorio (1,7 GB) no incluye los pesos; estos se descargan aparte en la cache de HuggingFace.
+- El tamano del repositorio (1,7 GB) no incluye los pesos; estos se descargan aparte en la cache de Hugging Face.
 
 ## Enlaces
 

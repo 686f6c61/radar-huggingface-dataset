@@ -54,6 +54,6 @@ No se dispone de datos de benchmarks para comparar con otros modelos. La compara
 - Discrepancia en la model card: la model card describe un checkpoint diferente (h050, step_60), lo que puede generar confusión sobre los detalles exactos de este repositorio.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/grok.h026.rl-r2e2.step_10
-- Modelo base: Qwen/Qwen3.5-9B-Base (enlace no proporcionado, se puede buscar en HuggingFace)
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/grok.h026.rl-r2e2.step_10
+- Modelo base: Qwen/Qwen3.5-9B-Base (enlace no proporcionado, se puede buscar en Hugging Face)
 - No se han encontrado papers, blogs o demos asociados a este checkpoint específico en la información proporcionada.

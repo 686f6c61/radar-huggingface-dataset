@@ -80,7 +80,7 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parámetros | Contexto / entrada | mIoU (nuScenes) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenScene (este checkpoint, nuScenes) | 15,6 M | 3 canales, nube de puntos (ejemplo con 8192 puntos) | 42,97 | Apache 2.0 | HuggingFace (`torch-pointcloud`) |
+| OpenScene (este checkpoint, nuScenes) | 15,6 M | 3 canales, nube de puntos (ejemplo con 8192 puntos) | 42,97 | Apache 2.0 | Hugging Face (`torch-pointcloud`) |
 | OpenScene (checkpoint original) | no disponible en la información | nube de puntos | no disponible en la información | Apache 2.0 | GitHub `pengsongyou/openscene` |
 | Alternativas de segmentación 3D open-vocabulary | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -101,7 +101,7 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/openscene-openseg.nuscenes.songyou-peng
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/openscene-openseg.nuscenes.songyou-peng
 - Paper OpenScene (arXiv): https://arxiv.org/abs/2211.15654
 - Repositorio original OpenScene: https://github.com/pengsongyou/openscene
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

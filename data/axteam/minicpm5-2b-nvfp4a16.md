@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM5-2B-NVFP4A16 es una versión cuantizada en 4 bits del modelo MiniCPM5-2B de OpenBMB, publicada por axteam en HuggingFace. Se trata de un modelo de generación de texto denso con arquitectura tipo Llama, orientado a despliegue eficiente mediante vLLM. La cuantización emplea el esquema NVFP4A16 (W4A16): pesos en FP4 (E2M1) agrupados en bloques de 16 con escala FP8, y activaciones en BF16, almacenados en formato compressed-tensors `nvfp4-pack-quantized`.
+MiniCPM5-2B-NVFP4A16 es una versión cuantizada en 4 bits del modelo MiniCPM5-2B de OpenBMB, publicada por axteam en Hugging Face. Se trata de un modelo de generación de texto denso con arquitectura tipo Llama, orientado a despliegue eficiente mediante vLLM. La cuantización emplea el esquema NVFP4A16 (W4A16): pesos en FP4 (E2M1) agrupados en bloques de 16 con escala FP8, y activaciones en BF16, almacenados en formato compressed-tensors `nvfp4-pack-quantized`.
 
 El modelo resuelve el problema de servir un modelo de ~2,5 mil millones de parámetros con una huella de memoria reducida: el repositorio ocupa unos 2,2 GB frente a los ~5 GB que ocuparía en BF16. Es cuantización post-entrenamiento (PTQ, sin reentrenamiento), con calibración sobre 256 muestras, y conserva en BF16 los embeddings de tokens, la cabeza del modelo de lenguaje (LM head) y todas las normalizaciones RMSNorm. El tokenizador y la plantilla de chat son idénticos a los del original.
 
@@ -67,8 +67,8 @@ El propio autor advierte de una degradación notable en 4 bits y recomienda las 
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| axteam/MiniCPM5-2B-NVFP4A16 | 2,52 B | W4A16 (FP4) | 32768 (en ejemplos) | Apache-2.0 | HuggingFace, vLLM |
-| openbmb/MiniCPM5-2B (base) | ~2,5 B | BF16 | no disponible | Apache-2.0 | HuggingFace |
+| axteam/MiniCPM5-2B-NVFP4A16 | 2,52 B | W4A16 (FP4) | 32768 (en ejemplos) | Apache-2.0 | Hugging Face, vLLM |
+| openbmb/MiniCPM5-2B (base) | ~2,5 B | BF16 | no disponible | Apache-2.0 | Hugging Face |
 | Variantes 8 bits del mismo autor (FP8 / AWQ INT8) | ~2,5 B | W8A16/W8A8 | no disponible | Apache-2.0 | Mencionadas en la model card, enlaces no disponibles |
 
 La comparación principal es con el propio modelo base: la versión NVFP4A16 reduce el tamaño en disco a la mitad (~2,0 GB) a costa de una degradación medible (perplejidad +14,6 %, acuerdo top-1 del 85 % frente al 98,9 % del BF16). El autor recomienda las variantes de 8 bits cuando la calidad sea prioritaria.

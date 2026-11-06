@@ -25,7 +25,7 @@ Su relevancia es práctica más que de investigación: es un artefacto de despli
 | Clases detectadas | 0: person, 1: two_wheeler, 2: car, 3: truck, 4: cart |
 | Post-procesado | No hay NMS dentro del grafo; debe aplicarse externamente |
 | Datos de ajuste fino | IDD, LLVIP y KAIST (conjuntos públicos de investigación, no redistribuidos) |
-| Tamaño del repositorio | 0,0 GB (según los metadatos de HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según los metadatos de Hugging Face) |
 | Hash SHA-256 del archivo | `dd63db0a7b4e5ef6b22687f54953742b6d5012c31b4b6f432656fc7c5f39921b` |
 | Hash SHA-256 de los pesos fuente | `9c84ced99b63825061f2d7ae33a10a101acf62e5ff37eb64423c952d96ee9e67` |
 
@@ -75,7 +75,7 @@ Los datos de los modelos alternativos no forman parte de la información proporc
 
 | Modelo | Tarea y clases | Parámetros | Entrada | Métricas publicadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TRUEWATCH YOLO11-s (este modelo) | Detección de 5 clases (person, two_wheeler, car, truck, cart) | no disponible | 640×640, batch dinámico | No en la model card; remite a METRICS.md | AGPL-3.0 | HuggingFace, ONNX FP32 |
+| TRUEWATCH YOLO11-s (este modelo) | Detección de 5 clases (person, two_wheeler, car, truck, cart) | no disponible | 640×640, batch dinámico | No en la model card; remite a METRICS.md | AGPL-3.0 | Hugging Face, ONNX FP32 |
 | Ultralytics YOLO11-s (modelo base) | Detección genérica, 80 clases COCO | no disponible en esta información | 640×640 | no disponible | AGPL-3.0 | Repositorio de Ultralytics |
 | YOLOv8-s | Detección genérica, 80 clases COCO | no disponible | 640×640 | no disponible | AGPL-3.0 (familia Ultralytics) | Repositorio de Ultralytics |
 | Detectores end-to-end sin NMS (por ejemplo, familia RT-DETR) | Detección genérica | no disponible | resolución variable | no disponible | no disponible en esta información | Repositorios de referencia |
@@ -84,7 +84,7 @@ La diferencia funcional relevante frente a los detectores genéricos es la espec
 
 ## Limitaciones y advertencias
 
-- Ausencia total de métricas en la model card: no hay mAP, precisión, recall ni latencia. No debe desplegarse en producción sin medir antes el rendimiento en el dominio objetivo; la referencia `METRICS.md` no se incluye en el repositorio de HuggingFace.
+- Ausencia total de métricas en la model card: no hay mAP, precisión, recall ni latencia. No debe desplegarse en producción sin medir antes el rendimiento en el dominio objetivo; la referencia `METRICS.md` no se incluye en el repositorio de Hugging Face.
 - Vocabulario cerrado de cinco clases: cualquier objeto distinto de persona, vehículo de dos ruedas, coche, camión o carro no se reconocerá correctamente, y las clases semánticamente próximas (por ejemplo `car` frente a `truck` o `cart`) pueden confundirse en escenas ambiguas.
 - Sin NMS dentro del grafo: si no se aplica supresión de no máximos en el post-procesado, se obtendrán detecciones duplicadas y conteos inflados.
 - Entrada rígida de 640×640 con letterbox sobre gris 114: alimentar el modelo con otro preprocesado degrada los resultados. Los objetos muy pequeños en escenas lejanas pueden perderse por el reescalado.
@@ -93,12 +93,12 @@ La diferencia funcional relevante frente a los detectores genéricos es la espec
 - Riesgo de falsos positivos y falsos negativos: no aplica el concepto de alucinación generativa, pero sí el de detecciones espurias o ausentes en dominios distintos al de entrenamiento (por ejemplo, imagen térmica pura, nocturno extremo o condiciones meteorológicas adversas).
 - Adopción nula: 0 descargas y 0 likes en el momento de la consulta, sin comunidad que valide el artefacto. Verifique la integridad del archivo descargado contra el SHA-256 `dd63db0a7b4e5ef6b22687f54953742b6d5012c31b4b6f432656fc7c5f39921b`.
 - Tamaño de repositorio declarado de 0,0 GB: compruebe que el peso `final.onnx` está realmente alojado y es descargable antes de integrarlo en un pipeline.
-- Incoherencia en los metadatos de HuggingFace: las fechas de creación y actualización (26/09/2026) son futuras, lo que sugiere un error de registro.
+- Incoherencia en los metadatos de Hugging Face: las fechas de creación y actualización (26/09/2026) son futuras, lo que sugiere un error de registro.
 - Este modelo no ofrece texto, tool calling, agentes, razonamiento multi-paso ni capacidades multilingües; no es sustituible por un modelo de lenguaje para tareas conversacionales o de generación.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sreekar12/truewatch-yolo11s
+- Modelo en Hugging Face: https://huggingface.co/sreekar12/truewatch-yolo11s
 - Repositorio fuente TRUEWATCH (código de entrenamiento, exportación y servicio): https://github.com/0XSreekar/True-Watch-AI
 - Métricas medidas (referenciadas por la model card): https://github.com/0XSreekar/True-Watch-AI/blob/main/training/results/METRICS.md
 - Texto completo de la licencia AGPL-3.0: https://www.gnu.org/licenses/agpl-3.0.html

@@ -90,7 +90,7 @@ Las tres familias (Sunlight, Twilight y Midnight) pertenecen al mismo autor y co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CaptchaKraken/TwilightV2-2B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/CaptchaKraken/TwilightV2-2B-GGUF
 - Modelo base (bf16, vLLM): https://huggingface.co/CaptchaKraken/TwilightV2-2B
 - Adaptador LoRA: https://huggingface.co/CaptchaKraken/TwilightV2-2B-LoRA
 - Variante 0,8B: https://huggingface.co/CaptchaKraken/SunlightV2-0.8B

@@ -78,7 +78,7 @@ No se dispone de datos comparativos con otros modelos ASR en la informacion prop
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/iky1e/granite-speech-5.0-470m-turboctc-mlx-fp16
+- Repositorio Hugging Face de este modelo: https://huggingface.co/iky1e/granite-speech-5.0-470m-turboctc-mlx-fp16
 - Modelo base original de IBM: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc
 - Repositorio GitHub de IBM Granite Speech: https://github.com/ibm-granite/granite-speech-models
 - Documentacion de IBM sobre Granite Speech: https://www.ibm.com/granite/docs/models/speech

@@ -35,7 +35,7 @@ El preprocesamiento de inferencia es un componente clave: estandariza el volumen
 - Embeddings proyectados de 256 dimensiones mediante un MLP, compatibles con el objetivo de entrenamiento original.
 - Preprocesador de segmentación (intensity-only) que preserva la geometría de la imagen, útil para flujos de segmentación posteriores.
 - Soporte para entrada de imágenes NIfTI (`.nii` y `.nii.gz`).
-- Integración con la librería Transformers de HuggingFace mediante un pipeline de extracción de características.
+- Integración con la librería Transformers de Hugging Face mediante un pipeline de extracción de características.
 
 ## Casos de uso
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada para inferencia: con pesos en FP32, el modelo podría requerir entre 1 y 2 GB de VRAM; con cuantización (no publicada) podría reducirse. No hay datos oficiales.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (p. ej., NVIDIA GTX 1650, RTX 2060, RTX 3050) debería ser suficiente para inferencia en lote pequeño. Para procesamiento de múltiples volúmenes, se recomienda una GPU con 8 GB o más (RTX 3070, RTX 4080, A100).
 - Compatibilidad con GPU de consumo: sí, dado el tamaño moderado del modelo.
-- Opciones de despliegue: el modelo se usa mediante la librería Transformers de HuggingFace, con un pipeline Python (`CerebralJEPAPipeline`). No se mencionan integraciones con vLLM, llama.cpp u Ollama, ya que no es un modelo de lenguaje.
+- Opciones de despliegue: el modelo se usa mediante la librería Transformers de Hugging Face, con un pipeline Python (`CerebralJEPAPipeline`). No se mencionan integraciones con vLLM, llama.cpp u Ollama, ya que no es un modelo de lenguaje.
 - Latencia y throughput: no disponibles. Dependerá del tamaño del volumen de entrada (por defecto, recorte a 160x160x160) y de la GPU utilizada.
 
 ## Comparativa con modelos similares
@@ -74,6 +74,6 @@ No se dispone de información sobre modelos directamente comparables en el ámbi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jiangshuan6/CerebralJEPA
+- Repositorio Hugging Face: https://huggingface.co/jiangshuan6/CerebralJEPA
 - Paper de Brain-JEPA (referencia JEPA en neuroimagen, no es el mismo modelo): https://arxiv.org/abs/2409.19407
 - Colección Awesome JEPA (recursos sobre arquitectura JEPA): https://github.com/AI-in-Transportation-Lab/awesome-jepa

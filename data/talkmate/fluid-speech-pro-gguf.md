@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`TalkMate/fluid-speech-pro-gguf` es un modelo publicado en HuggingFace por el usuario TalkMate bajo licencia CC-BY-4.0. La model card asociada al repositorio no contiene ninguna descripcion tecnica: unicamente incluye el campo de licencia en el frontmatter YAML, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El sufijo `-gguf` del identificador sugiere que se distribuye en formato GGUF, el formato habitual para inferencia con llama.cpp y derivados, y el nombre `fluid-speech` apunta a un posible modelo orientado a tareas de voz o audio, aunque esto no se confirma en ningun momento en la informacion disponible.
+`TalkMate/fluid-speech-pro-gguf` es un modelo publicado en Hugging Face por el usuario TalkMate bajo licencia CC-BY-4.0. La model card asociada al repositorio no contiene ninguna descripcion tecnica: unicamente incluye el campo de licencia en el frontmatter YAML, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El sufijo `-gguf` del identificador sugiere que se distribuye en formato GGUF, el formato habitual para inferencia con llama.cpp y derivados, y el nombre `fluid-speech` apunta a un posible modelo orientado a tareas de voz o audio, aunque esto no se confirma en ningun momento en la informacion disponible.
 
 El repositorio no registra descargas ni interacciones en el momento de la consulta (0 descargas, 0 likes), lo que indica que se trata de una publicacion reciente o sin difusion. La fecha de creacion y de ultima actualizacion son identicas (2026-11-01), sin que se haya publicado ninguna revision posterior.
 
@@ -69,5 +69,5 @@ No disponible. No se puede establecer una comparativa fiable sin conocer el tama
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TalkMate/fluid-speech-pro-gguf
+- Repositorio en Hugging Face: https://huggingface.co/TalkMate/fluid-speech-pro-gguf
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

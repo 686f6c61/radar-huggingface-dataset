@@ -6,7 +6,7 @@ DictaBERT-large-char-menaked es un modelo de lenguaje basado en BERT, desarrolla
 
 La relevancia del modelo radica en su especializacion y en su rendimiento declarado: segun la propia model card, a fecha de marzo de 2025 ofrece un rendimiento estado del arte (SOTA) en todas las pruebas de referencia de vocalizacion del hebreo moderno, tanto frente a alternativas de codigo abierto como frente a grandes modelos generativos comerciales. Esta afirmacion es una declaracion del autor y no viene acompanada de cifras detalladas en la informacion disponible.
 
-El modelo se distribuye con licencia CC BY 4.0, lo que permite uso comercial con atribucion, y esta publicado en HuggingFace con mas de 14.000 descargas y 10 *likes*. Su interfaz requiere `trust_remote_code=True`, ya que incorpora codigo personalizado con un metodo `predict` propio.
+El modelo se distribuye con licencia CC BY 4.0, lo que permite uso comercial con atribucion, y esta publicado en Hugging Face con mas de 14.000 descargas y 10 *likes*. Su interfaz requiere `trust_remote_code=True`, ya que incorpora codigo personalizado con un metodo `predict` propio.
 
 ## Especificaciones tecnicas
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dictabert-large-char-menaked | ~305 M | No disponible | Vocalizacion de hebreo moderno | CC BY 4.0 | HuggingFace (con `custom_code`) |
-| dictabert-large-char (modelo base) | No disponible | No disponible | Codificacion de texto en hebreo (tareas generales) | No disponible | HuggingFace |
+| dictabert-large-char-menaked | ~305 M | No disponible | Vocalizacion de hebreo moderno | CC BY 4.0 | Hugging Face (con `custom_code`) |
+| dictabert-large-char (modelo base) | No disponible | No disponible | Codificacion de texto en hebreo (tareas generales) | No disponible | Hugging Face |
 
 No se dispone de datos verificables en la informacion proporcionada sobre otros modelos comparables de vocalizacion de hebreo (por ejemplo, alternativas de codigo abierto o LLM comerciales) que permitan establecer una comparacion con cifras. La model card menciona comparaciones con esas categorias, pero no aporta los numeros.
 
@@ -80,11 +80,11 @@ No se dispone de datos verificables en la informacion proporcionada sobre otros 
 - Licencia: CC BY 4.0 permite uso comercial, pero exige atribucion al autor. Conviene revisar los terminos exactos y el cumplimiento de la atribucion en productos derivados.
 - Dependencia de codigo personalizado: requiere `trust_remote_code=True`, lo que implica ejecutar codigo remoto; en entornos de produccion conviene auditar ese codigo antes de desplegarlo.
 - Distincion entre afirmacion y evidencia: la declaracion de SOTA procede del autor y no esta respaldada por cifras publicadas en la informacion disponible; conviene validarla con un conjunto de evaluacion propio antes de tomar decisiones de produccion.
-- Sin *pipeline* declarado en HuggingFace y con `inference: false` en los metadatos, lo que indica que no se ofrece inferencia alojada de forma nativa.
+- Sin *pipeline* declarado en Hugging Face y con `inference: false` en los metadatos, lo que indica que no se ofrece inferencia alojada de forma nativa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dicta-il/dictabert-large-char-menaked
+- Modelo en Hugging Face: https://huggingface.co/dicta-il/dictabert-large-char-menaked
 - Modelo base DictaBERT-large-char: https://huggingface.co/dicta-il/dictabert-large-char
 - Proyecto comunitario dicta-onnx (ONNX, no afiliado): https://github.com/thewh1teagle/dicta-onnx
 - Licencia CC BY 4.0: http://creativecommons.org/licenses/by/4.0/

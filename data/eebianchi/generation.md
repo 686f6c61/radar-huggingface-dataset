@@ -2,7 +2,7 @@
 
 ## Resumen
 
-eebianchi/generation es un repositorio experimental publicado por el usuario eebianchi en HuggingFace que contiene una implementacion propia de una arquitectura Efficientformer orientada a tareas de generacion, en configuracion "nano". El repositorio incluye el codigo Python de definicion del modelo, un fichero `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta por defecto y un checkpoint `model.safetensors` de 49.600 parametros. La licencia es Apache 2.0.
+eebianchi/generation es un repositorio experimental publicado por el usuario eebianchi en Hugging Face que contiene una implementacion propia de una arquitectura Efficientformer orientada a tareas de generacion, en configuracion "nano". El repositorio incluye el codigo Python de definicion del modelo, un fichero `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta por defecto y un checkpoint `model.safetensors` de 49.600 parametros. La licencia es Apache 2.0.
 
 Es importante remarcar que, segun la propia model card, el checkpoint es unicamente una inicializacion valida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado. El autor indica explicitamente que no se reclama ninguna puntuacion de benchmark y que los pesos no han sido auditados en robustez, equidad ni transferencia de dominio. Por tanto, se trata de material de partida para investigacion y experimentacion, no de un modelo listo para produccion.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU consumer: si, en cualquier modelo con al menos unos pocos megabytes libres; tambien cabe en CPU y en entornos sin acelerador.
 - Opciones de despliegue: al ser una implementacion personalizada con estructura propia, las APIs genericas de carga automatica requieren un adaptador explicito. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y no se han publicado pesos en formato GGUF.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones, y con un checkpoint sin entrenar carecerian de valor interpretativo.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun los metadatos de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -79,7 +79,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eebianchi/generation | 49.600 | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace |
+| eebianchi/generation | 49.600 | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,6 +97,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eebianchi/generation
+- Hugging Face: https://huggingface.co/eebianchi/generation
 - Ficheros incluidos en el repositorio segun la model card: `train.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Papers, blogs, repositorios adicionales o demos: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo.

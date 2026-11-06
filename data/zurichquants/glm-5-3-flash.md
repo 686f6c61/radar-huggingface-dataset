@@ -14,7 +14,7 @@ El modelo ha sido entrenado desde cero sobre un corpus multimodal de 30 billones
 | Parametros totales | 321.323.031.390 (320B declarados) |
 | Parametros activos | 18B |
 | Longitud de contexto | Hasta 1M de tokens (según evaluaciones reportadas; no se especifica oficialmente) |
-| Tipos de cuantizacion | FP8 (según tag de HuggingFace) |
+| Tipos de cuantizacion | FP8 (según tag de Hugging Face) |
 | Idiomas soportados | Inglés y chino |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
@@ -76,7 +76,7 @@ No se dispone de datos públicos de GLM-5.2 ni de Claude Opus 4.8 en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zurichquants/GLM-5.3-Flash
+- Hugging Face: https://huggingface.co/zurichquants/GLM-5.3-Flash
 - Blog oficial de Z.ai: https://z.ai/blog/glm-5.3-flash
 - Technical report (arXiv): https://arxiv.org/abs/2602.15763
 - Documentación de API: https://docs.z.ai/guides/llm/glm-5.3-flash

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ashesh997/modvc-speech-denoiser` es un modelo publicado en HuggingFace por el usuario `ashesh997` bajo licencia Apache 2.0. Por el identificador y el nombre del repositorio, se presenta como un sistema de reduccion de ruido en voz (speech denoiser) vinculado al proyecto MODVC, aunque la model card publicada no contiene ninguna descripcion funcional, tecnica ni de uso mas alla de la linea de licencia.
+`ashesh997/modvc-speech-denoiser` es un modelo publicado en Hugging Face por el usuario `ashesh997` bajo licencia Apache 2.0. Por el identificador y el nombre del repositorio, se presenta como un sistema de reduccion de ruido en voz (speech denoiser) vinculado al proyecto MODVC, aunque la model card publicada no contiene ninguna descripcion funcional, tecnica ni de uso mas alla de la linea de licencia.
 
 La informacion disponible es minima: el repositorio no incluye pipeline declarado, no especifica idiomas soportados, no documenta arquitectura, numero de parametros ni datos de entrenamiento, y registra cero descargas y cero likes en el momento de la consulta. Las fechas de creacion y actualizacion son identicas (2026-11-01), lo que sugiere una publicacion sin iteraciones posteriores.
 
@@ -74,4 +74,4 @@ No disponible. La ausencia de especificaciones publicas impide establecer una co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ashesh997/modvc-speech-denoiser
+- Repositorio en Hugging Face: https://huggingface.co/ashesh997/modvc-speech-denoiser

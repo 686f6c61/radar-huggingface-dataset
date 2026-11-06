@@ -79,8 +79,8 @@ Precisión en caras reales con protocolo estándar de diez pliegues (umbral ajus
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LayaFace-HSF.v0.20261030 | 86,2 M | dos recortes 112x112 → 224x224 | LFW 98,65%; media real 92,15% | no verificada para pesos adaptados | HuggingFace (bundle offline) |
-| openai/clip-vit-base-patch16 (base) | ~86 M (ViT-B/16) | imagen 224x224 | no es verificador facial nativo | MIT | HuggingFace |
+| LayaFace-HSF.v0.20261030 | 86,2 M | dos recortes 112x112 → 224x224 | LFW 98,65%; media real 92,15% | no verificada para pesos adaptados | Hugging Face (bundle offline) |
+| openai/clip-vit-base-patch16 (base) | ~86 M (ViT-B/16) | imagen 224x224 | no es verificador facial nativo | MIT | Hugging Face |
 | Alternativas específicas de verificación facial | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de resultados de otros verificadores faciales comparables bajo el mismo protocolo, por lo que la comparación cuantitativa con alternativas queda como no disponible.
@@ -100,7 +100,7 @@ No se dispone en la información proporcionada de resultados de otros verificado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leloss/LayaFace-HSF.v0.20261030
+- Hugging Face: https://huggingface.co/leloss/LayaFace-HSF.v0.20261030
 - Modelo base CLIP ViT-B/16: https://huggingface.co/openai/clip-vit-base-patch16
 - Paper CLIP (arXiv:2103.00020): https://arxiv.org/abs/2103.00020
 - Paper FLUXSynID (arXiv:2304.07060): https://arxiv.org/abs/2304.07060

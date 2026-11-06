@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "Komotiv/mimic-v2-qwen3.8-27b-r1-nothink",
+  "slug": "komotiv-mimic-v2-qwen3-8-27b-r1-nothink",
+  "author": "Komotiv",
+  "url": "https://huggingface.co/Komotiv/mimic-v2-qwen3.8-27b-r1-nothink",
+  "created_at": "2026-11-04T22:15:40.000Z",
+  "updated_at": "2026-11-06T06:32:35.000Z",
+  "license": "komotiv-proprietary",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "lora",
+    "qlora",
+    "tool-simulation",
+    "environment-simulation",
+    "tool-calling-mimicking",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:Komotiv/mimic-dataset-v2",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 65,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1888819878,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Tool-result simulation",
+      "dataset": "mimic-dataset-v2 test split (first 300 examples; judge on the first 150)",
+      "metric": "Schema-valid content",
+      "value": 0.9667
+    },
+    {
+      "task": "Tool-result simulation",
+      "dataset": "mimic-dataset-v2 test split (first 300 examples; judge on the first 150)",
+      "metric": "New-key rate in the env diff",
+      "value": 0
+    },
+    {
+      "task": "Tool-result simulation",
+      "dataset": "mimic-dataset-v2 test split (first 300 examples; judge on the first 150)",
+      "metric": "Empty diff where the reference diff is empty",
+      "value": 1
+    },
+    {
+      "task": "Tool-result simulation",
+      "dataset": "mimic-dataset-v2 test split (first 300 examples; judge on the first 150)",
+      "metric": "Env-diff key F1",
+      "value": 0.8788
+    },
+    {
+      "task": "Tool-result simulation",
+      "dataset": "mimic-dataset-v2 test split (first 300 examples; judge on the first 150)",
+      "metric": "Env-diff value F1",
+      "value": 0.5152
+    },
+    {
+      "task": "Tool-result simulation",
+      "dataset": "mimic-dataset-v2 test split (first 300 examples; judge on the first 150)",
+      "metric": "LLM-judge win rate vs the production mimic",
+      "value": 0.8433
+    },
+    {
+      "task": "Teacher-forced validation",
+      "dataset": "mimic-dataset-v2 validation split",
+      "metric": "Validation loss",
+      "value": 0.1883
+    },
+    {
+      "task": "Teacher-forced validation",
+      "dataset": "mimic-dataset-v2 validation split",
+      "metric": "Mean token accuracy",
+      "value": 0.9439
+    }
+  ],
+  "sources": [
+    {
+      "title": "Komotiv/mimic-v2-qwen3.8-27b-r1-nothink · Hugging Face",
+      "url": "https://huggingface.co/Komotiv/mimic-v2-qwen3.8-27b-r1-nothink",
+      "snippet": "Instructions to use Komotiv/mimic-v2-qwen3.8-27b-r1-nothink with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Komotiv/mimic-v2-qwen3.8-27b-r1-nothink with Transformers:"
+    },
+    {
+      "title": "Komotiv/mimic-v2-qwen3.8-27b-r1-nothink · Training metrics",
+      "url": "https://huggingface.co/Komotiv/mimic-v2-qwen3.8-27b-r1-nothink/tensorboard",
+      "snippet": "Komotiv / mimic-v2-qwen3.8-27b-r1-nothink Like 0 Follow Komotiv Inc. 4 Model card FilesFiles and versions xet MetricsTraining metrics Community"
+    }
+  ]
+}

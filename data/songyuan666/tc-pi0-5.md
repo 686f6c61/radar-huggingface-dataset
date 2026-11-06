@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TC-π0.5 es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario Songyuan666 en HuggingFace. Se distribuye como un conjunto de pesos versionados para el repositorio `susongyuan/TC-pi0.5` y está orientado a tareas de manipulación del benchmark BEHAVIOR. El modelo parte de π0.5-behaviour-base (PT50) y añade un ajuste fino completo para la tarea `cook_hot_dogs`, con una variante que combina entrada RGB y grafos oracle.
+TC-π0.5 es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario Songyuan666 en Hugging Face. Se distribuye como un conjunto de pesos versionados para el repositorio `susongyuan/TC-pi0.5` y está orientado a tareas de manipulación del benchmark BEHAVIOR. El modelo parte de π0.5-behaviour-base (PT50) y añade un ajuste fino completo para la tarea `cook_hot_dogs`, con una variante que combina entrada RGB y grafos oracle.
 
 La relevancia actual del modelo es acotada pero concreta: permite reproducir y comparar una política VLA fine-tuneada sobre una base π0.5 en el entorno BEHAVIOR, usando el dataset `behavior-1k/2025-challenge-demos`. En la evaluación publicada, TC-π0.5 obtiene 5/10 éxitos (50%) frente a 2/10 (20%) del modelo base PT50 con entrada RGB, sobre las instancias públicas 301–310, semilla de acción 42 y chunk 32.
 
@@ -79,7 +79,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Parámetros | Contexto | Rendimiento en la evaluación publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TC-π0.5 | No disponible | No disponible | 5/10 (50%), Q medio 0,55 | No disponible | HuggingFace `Songyuan666/TC-pi0.5` |
+| TC-π0.5 | No disponible | No disponible | 5/10 (50%), Q medio 0,55 | No disponible | Hugging Face `Songyuan666/TC-pi0.5` |
 | π0.5-behaviour-base (PT50) | No disponible | No disponible | 2/10 (20%), Q medio 0,20 | No disponible; términos upstream | Incluido en el repositorio de TC-π0.5 |
 | Otras alternativas VLA para BEHAVIOR | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 
@@ -99,7 +99,7 @@ La comparación directa disponible se limita al modelo base PT50. No se han enco
 
 ## Enlaces
 
-- [HuggingFace: Songyuan666/TC-pi0.5](https://huggingface.co/Songyuan666/TC-pi0.5)
+- [Hugging Face: Songyuan666/TC-pi0.5](https://huggingface.co/Songyuan666/TC-pi0.5)
 - [Repositorio GitHub: susongyuan/TC-pi0.5](https://github.com/susongyuan/TC-pi0.5)
 - [Repositorio base: sunshk/openpi_comet_pytorch](https://github.com/sunshk/openpi_comet_pytorch)
 - [Commit base fijado: 5a489fe50fdc8e256533c8c611dfd60c247520cf](https://github.com/sunshk/openpi_comet_pytorch/tree/5a489fe50fdc8e256533c8c611dfd60c247520cf)

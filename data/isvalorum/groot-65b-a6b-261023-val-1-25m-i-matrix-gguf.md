@@ -18,7 +18,7 @@ La relevancia de esta ficha es acotada: se trata de un artefacto técnico de cal
 | Longitud de contexto | no disponible (la calibración usa ventanas de 2048 tokens, no implica contexto máximo del modelo) |
 | Tipos de cuantizacion | GGUF con importance matrix (I-Matrix) generada sobre 1.251.328 posiciones; niveles concretos de cuantización no especificados |
 | Idiomas soportados | en, es, zh, hi, ar, fr, de, pt, ja, ru, ko, it |
-| Licencia | qwen-community-1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (repositorio de 0,6 GB) |
 
 ## Arquitectura y entrenamiento
@@ -73,14 +73,14 @@ No se dispone de datos de benchmarks ni de especificaciones completas de las alt
 - La model card advierte que las comprobaciones de integridad no miden la calidad de la cuantización; no hay perplejidad ni benchmarks que respalden el resultado.
 - Discrepancia entre el nombre "65B-A6B" y los 148.294.275 parámetros reportados en safetensors; conviene verificar antes de cualquier uso.
 - La calibración excluye el bloque MTP y los componentes de visión del modelo base, por lo que no cubre esas rutas.
-- Licencia qwen-community-1.0: es necesario revisar sus términos para uso comercial, ya que la etiqueta de HuggingFace figura como "other".
+- Licencia qwen-community-1.0: es necesario revisar sus términos para uso comercial, ya que la etiqueta de Hugging Face figura como "other".
 - Riesgo de alucinación y sesgos del modelo base: no documentados en la información disponible.
 - El proceso de ejecución terminó con un error posterior a la validación (copia duplicada de sonda de persistencia); el artefacto fue recuperado y revalidado, pero el incidente debe tenerse en cuenta en auditorías.
 - Tracción mínima (1 descarga, 0 likes): no hay evidencia de uso comunitario ni validación independiente.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IsValorum/Groot-65B-A6B-261023-VAL-1.25M-I-Matrix-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/Groot-65B-A6B-261023-VAL-1.25M-I-Matrix-GGUF
 - Modelo base: https://huggingface.co/GrootTeam/Groot-65B-A6B-261023
 - Repositorio GGUF de origen: https://huggingface.co/mradermacher/Groot-65B-A6B-261023-GGUF
 - Licencia: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE

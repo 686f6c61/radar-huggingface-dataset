@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Rechazos (harmful_behaviors) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `AJ-Gonzalez/gemma-3-270m-it-heretic` | 268M | no disponible | 0/100 | Gemma Terms of Use | HuggingFace (safetensors + GGUF) |
-| `google/gemma-3-270m-it` (bf16) | 268M | no disponible | 97/100 | Gemma Terms of Use | HuggingFace |
-| `google/gemma-3-270m-it` QAT q4_0 | 268M | no disponible | 2/6 (llama.cpp, 6 prompts) | Gemma Terms of Use | HuggingFace |
+| `AJ-Gonzalez/gemma-3-270m-it-heretic` | 268M | no disponible | 0/100 | Gemma Terms of Use | Hugging Face (safetensors + GGUF) |
+| `google/gemma-3-270m-it` (bf16) | 268M | no disponible | 97/100 | Gemma Terms of Use | Hugging Face |
+| `google/gemma-3-270m-it` QAT q4_0 | 268M | no disponible | 2/6 (llama.cpp, 6 prompts) | Gemma Terms of Use | Hugging Face |
 
 No se dispone de datos de benchmarks estándar ni de otros modelos abliterated comparables en la información proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks estándar ni de otros modelos abliterated c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AJ-Gonzalez/gemma-3-270m-it-heretic
+- Modelo en Hugging Face: https://huggingface.co/AJ-Gonzalez/gemma-3-270m-it-heretic
 - Modelo base: https://huggingface.co/google/gemma-3-270m-it
 - Mirror del base usado: https://huggingface.co/unsloth/gemma-3-270m-it
 - Heretic (herramienta de modificación): https://github.com/p-e-w/heretic

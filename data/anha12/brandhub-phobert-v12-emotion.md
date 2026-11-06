@@ -16,7 +16,7 @@ Se publica con la librería `peft` (versión 0.21.0) y con `modules_to_save` par
 | Parametros totales | No disponible en la ficha del adaptador; el modelo base `vinai/phobert-base-v2` tiene aproximadamente 135 M de parametros segun la documentacion de VinAI. El adaptador añade LoRA r=16 sobre `key`, `query` y `value`, mas `classifier` y `score` en `modules_to_save` |
 | Longitud de contexto | No especificada en la ficha. El ejemplo de uso trunca a 128 tokens (`max_length=128`); el modelo base admite hasta 1.024 posiciones |
 | Tipos de cuantizacion | No disponible. No se publican pesos cuantizados; al ser un adaptador PEFT, la cuantizacion exigiria fusionar previamente los pesos |
-| Idiomas soportados | Vietnamita (etiquetas, ejemplos y nombre del modelo en vietnamita). El campo de idiomas de HuggingFace figura como no disponible |
+| Idiomas soportados | Vietnamita (etiquetas, ejemplos y nombre del modelo en vietnamita). El campo de idiomas de Hugging Face figura como no disponible |
 | Licencia | No disponible |
 | Formato de pesos | safetensors (adaptador LoRA PEFT). No se publican pesos fusionados ni versiones GGUF |
 
@@ -31,7 +31,7 @@ El autor indica que el adaptador corresponde a una "production v12" y que fue "a
 - Clasificacion de emociones en vietnamita en 6 clases: `vui` (alegria), `buồn` (tristeza), `tức_giận` (ira), `lo_sợ` (miedo), `ngạc_nhiên` (sorpresa) y `trung_lập` (neutral).
 - Entrada de texto plano con truncado y padding configurables mediante el tokenizer de PhoBERT; el ejemplo oficial procesa lotes de frases cortas.
 - Salida de logits por clase, lo que permite obtener probabilidades con softmax y umbrales personalizados por clase.
-- Integracion directa con el ecosistema HuggingFace mediante `AutoPeftModelForSequenceClassification` y `AutoTokenizer`.
+- Integracion directa con el ecosistema Hugging Face mediante `AutoPeftModelForSequenceClassification` y `AutoTokenizer`.
 - Uso de la cabeza de clasificacion incluida en el checkpoint, sin necesidad de reentrenar el clasificador al cargar el modelo.
 - No se documentan capacidades de generacion de texto, razonamiento, codigo, matematicas, vision, audio, tool calling, function calling ni comportamiento agentico: es un modelo puramente discriminativo.
 
@@ -69,10 +69,10 @@ No se han publicado resultados comparativos con otros modelos (MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anha12/brandhub-phobert-V12-emotion | ~135 M (base PhoBERT) + LoRA r=16 | No especificado; ejemplo a 128 tokens | macro-F1 0,6239; weighted-F1 0,6884; accuracy 0,6856 | No disponible | HuggingFace, 13 descargas, 0 likes |
-| vinai/phobert-base-v2 | ~135 M | 1.024 posiciones | No es un clasificador de emociones; requiere ajuste especifico | MIT (segun la documentacion de VinAI) | HuggingFace, ampliamente utilizado |
-| Modelos de sentimiento en vietnamita basados en PhoBERT (por ejemplo `wonrax/phobert-base-vietnamese-sentiment`) | ~135 M | No disponible | No disponible | No disponible | HuggingFace |
-| Encoders multilingues tipo XLM-R ajustados a emocion | ~278 M (XLM-R base) | 512 posiciones | No disponible | MIT (modelo base) | HuggingFace |
+| anha12/brandhub-phobert-V12-emotion | ~135 M (base PhoBERT) + LoRA r=16 | No especificado; ejemplo a 128 tokens | macro-F1 0,6239; weighted-F1 0,6884; accuracy 0,6856 | No disponible | Hugging Face, 13 descargas, 0 likes |
+| vinai/phobert-base-v2 | ~135 M | 1.024 posiciones | No es un clasificador de emociones; requiere ajuste especifico | MIT (segun la documentacion de VinAI) | Hugging Face, ampliamente utilizado |
+| Modelos de sentimiento en vietnamita basados en PhoBERT (por ejemplo `wonrax/phobert-base-vietnamese-sentiment`) | ~135 M | No disponible | No disponible | No disponible | Hugging Face |
+| Encoders multilingues tipo XLM-R ajustados a emocion | ~278 M (XLM-R base) | 512 posiciones | No disponible | MIT (modelo base) | Hugging Face |
 
 La comparacion cuantitativa no es posible con la informacion disponible: no se publican resultados de los modelos alternativos sobre el mismo conjunto de validacion ni sobre el mismo esquema de 6 clases.
 
@@ -90,7 +90,7 @@ La comparacion cuantitativa no es posible con la informacion disponible: no se p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anha12/brandhub-phobert-V12-emotion
+- Modelo en Hugging Face: https://huggingface.co/anha12/brandhub-phobert-V12-emotion
 - Modelo base: https://huggingface.co/vinai/phobert-base-v2
 - Repositorio de PEFT: https://github.com/huggingface/peft
 - Documentacion de PEFT sobre adaptadores LoRA: https://huggingface.co/docs/peft

@@ -23,7 +23,7 @@ La relevancia actual esta en que todo el trabajo se ha realizado con la libreria
 | Tarea | text-to-speech |
 | Libreria | mlx-audio |
 | Modelo base | OpenMOSS-Team/MOSS-TTS-v1.5 (relacion: quantized) |
-| Tamano del repositorio | 36,0 GB declarados en HuggingFace; la clonacion o descarga completa ronda los 52 GB |
+| Tamano del repositorio | 36,0 GB declarados en Hugging Face; la clonacion o descarga completa ronda los 52 GB |
 | Fecha de publicacion | 9 de octubre de 2026 (ultima actualizacion el mismo dia) |
 | Descargas / likes | 0 / 0 |
 
@@ -90,7 +90,7 @@ No se han publicado en la informacion disponible datos de parametros, contexto n
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| groxaxo/MOSS-TTS-v1.5-Argentina-MLX-Quantizations (q6-bf16) | no disponible | no disponible | WER EN 13,7%; WER ES 3,1%; 8,315 s de mediana en caliente | Apache 2.0 | Publico en HuggingFace, 0 descargas |
+| groxaxo/MOSS-TTS-v1.5-Argentina-MLX-Quantizations (q6-bf16) | no disponible | no disponible | WER EN 13,7%; WER ES 3,1%; 8,315 s de mediana en caliente | Apache 2.0 | Publico en Hugging Face, 0 descargas |
 | OpenMOSS-Team/MOSS-TTS-v1.5 | no disponible | no disponible | no disponible (referencia BF16 con LoRA argentino, sin resultado comparable end-to-end en espanol) | no disponible | Modelo base publico |
 | Chatterbox Turbo | no disponible | no disponible | no disponible (usado unicamente como metodo de fidelidad y como VoiceEncoder de comparacion, no como modelo evaluado) | no disponible | No evaluado en este estudio |
 | Parakeet v3 ONNX INT8 | no disponible | no disponible | no disponible (usado como herramienta ASR para calcular WER, no como modelo comparado) | no disponible | Herramienta de evaluacion |
@@ -121,7 +121,7 @@ Comparativa interna entre las variantes mas relevantes del propio bundle:
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/groxaxo/MOSS-TTS-v1.5-Argentina-MLX-Quantizations
+- Repositorio en Hugging Face: https://huggingface.co/groxaxo/MOSS-TTS-v1.5-Argentina-MLX-Quantizations
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5
 - Indice de variantes (`variants.json`): https://huggingface.co/groxaxo/MOSS-TTS-v1.5-Argentina-MLX-Quantizations/blob/main/variants.json
 - Variante q4: https://huggingface.co/groxaxo/MOSS-TTS-v1.5-Argentina-MLX-Quantizations/tree/main/variants/q4

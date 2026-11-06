@@ -72,11 +72,11 @@ No se dispone de resultados de evaluacion de este checkpoint, por lo que la comp
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfd_seed455 | 86,5 M | no disponible | no disponible | HuggingFace, 0 descargas |
+| francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfd_seed455 | 86,5 M | no disponible | no disponible | Hugging Face, 0 descargas |
 | gpt2 (OpenAI) | 124 M | 1024 tokens | licencia MIT modificada de OpenAI | ampliamente disponible |
 | distilgpt2 | 82 M | 1024 tokens | Apache-2.0 | ampliamente disponible |
 | Pythia-70M (EleutherAI) | 70 M | 2048 tokens | Apache-2.0 | ampliamente disponible |
-| goldfish-models/eng_latn_100mb (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
+| goldfish-models/eng_latn_100mb (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
 
 Comparativa de rendimiento: no disponible, al no existir benchmarks publicados para este checkpoint.
 
@@ -94,7 +94,7 @@ Comparativa de rendimiento: no disponible, al no existir benchmarks publicados p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ty1ber9e
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `yzabelledel/embodied-ai-finetune`, publicado por el usuario yzabelledel, no es un modelo de lenguaje entrenado sino un cuaderno de notas de investigación sobre IA encarnada (embodied AI). Su tarjeta de modelo lo describe explícitamente como "reading notes and an experiment sketch", e indica que los artefactos principales son `notes.md` y `README.md`. Los metadatos de HuggingFace lo etiquetan como `transformer`, `safetensors`, `research-notes` y `embodied-ai`, y el repositorio ocupa 0,0 GB, con 0 descargas y 0 "likes" en el momento de la consulta.
+El repositorio `yzabelledel/embodied-ai-finetune`, publicado por el usuario yzabelledel, no es un modelo de lenguaje entrenado sino un cuaderno de notas de investigación sobre IA encarnada (embodied AI). Su tarjeta de modelo lo describe explícitamente como "reading notes and an experiment sketch", e indica que los artefactos principales son `notes.md` y `README.md`. Los metadatos de Hugging Face lo etiquetan como `transformer`, `safetensors`, `research-notes` y `embodied-ai`, y el repositorio ocupa 0,0 GB, con 0 descargas y 0 "likes" en el momento de la consulta.
 
 El dato de parámetros reportado por safetensors es de 24.832 (veinticuatro mil ochocientos treinta y dos), un orden de magnitud propio de un checkpoint de prueba o de un fichero residual, no de un modelo utilizable. El autor advierte en la propia tarjeta que no reclama mejoras en benchmarks, ablaciones completadas, código liberado ni ningún checkpoint entrenado, por lo que cualquier uso práctico queda descartado.
 
@@ -77,5 +77,5 @@ No disponible. No se conocen modelos comparables, porque el repositorio no publi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yzabelledel/embodied-ai-finetune
+- Hugging Face: https://huggingface.co/yzabelledel/embodied-ai-finetune
 - No se han encontrado en la busqueda web articulos, papers, blogs, repositorios ni demos relacionados con este modelo.

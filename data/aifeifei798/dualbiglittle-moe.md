@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DualBigLittle-MoE es una arquitectura de mezcla de expertos (MoE) jerárquica de tres niveles desarrollada por el usuario aifeifei798, publicada en HuggingFace bajo licencia Apache 2.0. El modelo parte de un MLP denso preentrenado de la familia Qwen y lo reorganiza en tres capas de capacidad heterogéneas: un núcleo "Arts & Language" congelado y residente en VRAM que preserva la fluidez en lenguaje natural, un núcleo gemelo especializado en STEM (clonado y ajustado de forma contrastiva) también residente en VRAM, y un tercer nivel de 896 micro-expertos (adaptadores LoRA de rango 16, ~64 KB cada uno) almacenados en RAM del host y transmitidos dinámicamente por PCIe. El objetivo declarado es doble: mitigar la degradación en dominios STEM que el autor atribuye a la interferencia de gradientes en MoE homogéneos, y evitar el muro de VRAM que impide desplegar MoE de gran escala en GPUs de consumo.
+DualBigLittle-MoE es una arquitectura de mezcla de expertos (MoE) jerárquica de tres niveles desarrollada por el usuario aifeifei798, publicada en Hugging Face bajo licencia Apache 2.0. El modelo parte de un MLP denso preentrenado de la familia Qwen y lo reorganiza en tres capas de capacidad heterogéneas: un núcleo "Arts & Language" congelado y residente en VRAM que preserva la fluidez en lenguaje natural, un núcleo gemelo especializado en STEM (clonado y ajustado de forma contrastiva) también residente en VRAM, y un tercer nivel de 896 micro-expertos (adaptadores LoRA de rango 16, ~64 KB cada uno) almacenados en RAM del host y transmitidos dinámicamente por PCIe. El objetivo declarado es doble: mitigar la degradación en dominios STEM que el autor atribuye a la interferencia de gradientes en MoE homogéneos, y evitar el muro de VRAM que impide desplegar MoE de gran escala en GPUs de consumo.
 
 La propuesta se inspira en las topologías tri-clúster de CPUs móviles modernas (núcleos Ultra, Performance y Efficiency), trasladando esa separación de roles a la inferencia de un LLM. La relevancia actual reside en su enfoque de sistema: en lugar de escalar parámetros densos, explota almacenamiento DDR5 y streaming asíncrono por CUDA Streams no bloqueantes para mantener el consumo de VRAM adicional en torno a 560 MB, con un throughput declarado de 17 a 22 tokens por segundo en hardware de consumo.
 
@@ -79,9 +79,9 @@ Nota: estas cifras proceden de la model card del autor y no equivalen a una eval
 
 | Modelo | Arquitectura | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DualBigLittle-MoE | MoE jerarquica de 3 niveles (Qwen denso + LoRA en RAM) | no disponible | no disponible | 17–22 tok/s en GPU de consumo; metricas estandar no disponibles | Apache 2.0 | HuggingFace + GitHub (0 descargas) |
+| DualBigLittle-MoE | MoE jerarquica de 3 niveles (Qwen denso + LoRA en RAM) | no disponible | no disponible | 17–22 tok/s en GPU de consumo; metricas estandar no disponibles | Apache 2.0 | Hugging Face + GitHub (0 descargas) |
 | MoE densos convencionales (p. ej. familia Mixtral / Qwen-MoE) | MoE homogenea | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | variable | ampliamente desplegables |
-| Modelos densos de Qwen del mismo base | Transformer denso | no disponible | no disponible | no disponible en esta ficha | variable | HuggingFace |
+| Modelos densos de Qwen del mismo base | Transformer denso | no disponible | no disponible | no disponible en esta ficha | variable | Hugging Face |
 
 No se dispone de datos comparativos verificables (parametros, contexto o benchmarks) en la informacion proporcionada para establecer una comparacion cuantitativa con alternativas concretas. La diferencia cualitativa principal frente a un MoE estandar es el enrutado jerarquico con dos nucleos densos en VRAM y un pool de micro-expertos en RAM del host, orientado a reducir el consumo de VRAM.
 
@@ -101,7 +101,7 @@ No se dispone de datos comparativos verificables (parametros, contexto o benchma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aifeifei798/DualBigLittle-MoE
+- Modelo en Hugging Face: https://huggingface.co/aifeifei798/DualBigLittle-MoE
 - Repositorio GitHub: https://github.com/aifeifei798/DualBigLittle-MoE
 - DOI: 10.57967/hf/10650
 - PyTorch: https://pytorch.org/

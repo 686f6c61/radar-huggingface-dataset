@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gpt-news-model es un modelo de clasificacion de texto publicado por el usuario gaurav36 en HuggingFace. Se trata de un ajuste fino (fine-tuning) supervisado del modelo distilgpt2, la version destilada de GPT-2 desarrollada por HuggingFace, que cuenta con 81.915.648 parametros y un tamano de repositorio de 0,3 GB. El modelo se distribuye bajo licencia Apache 2.0 y en formato safetensors, compatible con la libreria transformers.
+gpt-news-model es un modelo de clasificacion de texto publicado por el usuario gaurav36 en Hugging Face. Se trata de un ajuste fino (fine-tuning) supervisado del modelo distilgpt2, la version destilada de GPT-2 desarrollada por Hugging Face, que cuenta con 81.915.648 parametros y un tamano de repositorio de 0,3 GB. El modelo se distribuye bajo licencia Apache 2.0 y en formato safetensors, compatible con la libreria transformers.
 
 Aunque su arquitectura de base es un transformer decoder-only de tipo causal (GPT-2), la cabecera de clasificacion y la etiqueta `text-classification` de la pipeline indican que ha sido reconvertido para tareas de clasificacion de secuencias (probablemente clasificacion de noticias, a juzgar por el nombre), no para generacion de texto libre. El autor declara en la model card una exactitud de 0,905 y un F1 ponderado de 0,9049 sobre el conjunto de evaluacion, si bien no documenta que dataset se utilizo ni cuantas clases tiene la tarea.
 
@@ -27,7 +27,7 @@ Su relevancia practica es limitada y de nicho: sirve como ejemplo de ajuste fino
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de distilgpt2, un transformer decoder-only con atencion causal completa, 6 capas, 12 cabezas de atencion y una dimension oculta de 768, destilado por HuggingFace a partir de GPT-2. Sobre esa base, el autor ha sustituido la cabeza de lenguaje (`lm_head`) por una cabeza de clasificacion, un patron habitual mediante `GPT2ForSequenceClassification` de la libreria transformers. El recuento de parametros declarado (81.915.648) coincide con el del cuerpo del modelo base, lo que sugiere que la cabeza de clasificacion aporta un numero muy reducido de pesos adicionales, aunque la informacion proporcionada no desglosa el numero de etiquetas de salida.
+El modelo parte de distilgpt2, un transformer decoder-only con atencion causal completa, 6 capas, 12 cabezas de atencion y una dimension oculta de 768, destilado por Hugging Face a partir de GPT-2. Sobre esa base, el autor ha sustituido la cabeza de lenguaje (`lm_head`) por una cabeza de clasificacion, un patron habitual mediante `GPT2ForSequenceClassification` de la libreria transformers. El recuento de parametros declarado (81.915.648) coincide con el del cuerpo del modelo base, lo que sugiere que la cabeza de clasificacion aporta un numero muy reducido de pesos adicionales, aunque la informacion proporcionada no desglosa el numero de etiquetas de salida.
 
 El entrenamiento se realizo durante 3 epocas con AdamW fused (betas 0,9 y 0,999, epsilon 1e-08), learning rate 2e-05 con planificador lineal, batch de 8 tanto en entrenamiento como en evaluacion y semilla 42. Se registraron 900 pasos en total (300 por epoca), lo que implica aproximadamente 2.400 ejemplos por epoca si no se aplico acumulacion de gradientes (inferencia a partir de los pasos registrados, no confirmada en la documentacion). El dataset de entrenamiento y evaluacion no esta descrito: la model card indica explicitamente "More information needed" en las secciones de descripcion, usos previstos y datos. No hay constancia de RLHF, DPO ni de ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.).
 
@@ -36,11 +36,11 @@ El entrenamiento se realizo durante 3 epocas con AdamW fused (betas 0,9 y 0,999,
 - Clasificacion de texto: la pipeline declarada es `text-classification`; el modelo asigna una etiqueta a una secuencia de entrada.
 - Proposito aparente orientado a noticias: el nombre del modelo sugiere clasificacion de textos periodisticos, aunque no se documenta el esquema de etiquetas ni el numero de clases.
 - Ajuste fino supervisado: fue entrenado con `Trainer` sobre un modelo base preentrenado, segun la etiqueta `generated_from_trainer`.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse en Hugging Face Inference Endpoints.
 - Generacion de texto: no es una capacidad garantizada de esta version, ya que la cabeza de lenguaje fue sustituida por la de clasificacion; no hay evidencia en la informacion disponible de que la generacion funcione correctamente.
 - Tool calling / function calling: no disponible.
 - Capacidades de agente o razonamiento multi-paso: no disponible; no hay ninguna indicacion al respecto en la model card.
-- Capacidades multilingues: no disponible; el campo de idiomas esta vacio en la ficha de HuggingFace.
+- Capacidades multilingues: no disponible; el campo de idiomas esta vacio en la ficha de Hugging Face.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles.
 
 ## Casos de uso
@@ -82,7 +82,7 @@ Advertencia sobre estos datos: existe una discrepancia entre el encabezado de la
 - VRAM estimada para inferencia: aproximadamente 330 MB en FP32 (82M parametros), unos 165 MB en FP16/BF16 y unos 85 MB en int8. Son estimaciones calculadas a partir del recuento de parametros; la model card no publica cifras oficiales.
 - GPU recomendadas: no se requiere GPU. El modelo cabe holgadamente en cualquier GPU con 2 GB o mas de memoria, incluidas GTX 1050 Ti, RTX 3060, RTX 4090, T4, L4, A10G, A100 y H100; el uso de una GPU de gama alta aportaria sobre todo ventajas de throughput en lotes grandes, no de capacidad.
 - GPU de consumo: si, cabe en cualquier GPU de consumo moderna e incluso en GPUs integradas. Tambien es viable en CPU, dado el reducido numero de parametros.
-- Opciones de despliegue: transformers (PyTorch) de forma nativa; exportacion a ONNX Runtime para inferencia en CPU; HuggingFace Inference Endpoints, ya que el repositorio esta marcado como `endpoints_compatible`; servidores de inferencia genericos como FastAPI o TorchServe. No hay ficheros GGUF en el repositorio, por lo que su uso directo en llama.cpp u Ollama requeriria convertir la cabeza de clasificacion manualmente, algo no soportado de serie por esas herramientas.
+- Opciones de despliegue: transformers (PyTorch) de forma nativa; exportacion a ONNX Runtime para inferencia en CPU; Hugging Face Inference Endpoints, ya que el repositorio esta marcado como `endpoints_compatible`; servidores de inferencia genericos como FastAPI o TorchServe. No hay ficheros GGUF en el repositorio, por lo que su uso directo en llama.cpp u Ollama requeriria convertir la cabeza de clasificacion manualmente, algo no soportado de serie por esas herramientas.
 - Latencia y throughput: no disponible. No se publican medidas de latencia ni de peticiones por segundo.
 
 ## Comparativa con modelos similares
@@ -107,14 +107,14 @@ No disponible la comparacion de rendimiento (accuracy, F1) frente a estos modelo
 - Contexto limitado: la longitud de contexto efectiva no esta documentada; si se hereda la del modelo base sin modificar, seria de 1024 tokens, insuficiente para documentos largos.
 - Idiomas no declarados: el campo de idiomas esta vacio. Si el ajuste se hizo solo en ingles, el rendimiento en castellano sera muy probablemente pobre y no verificable.
 - Riesgo de sesgos y alucinacion: no hay evaluacion de sesgos ni de calibracion. En clasificacion, el riesgo se traduce en etiquetas erroneas con alta confianza, especialmente en dominios alejados de los datos de entrenamiento.
-- Sin validacion externa: cero descargas y cero interacciones en HuggingFace en el momento de la consulta; ningun tercero ha reproducido los resultados.
+- Sin validacion externa: cero descargas y cero interacciones en Hugging Face en el momento de la consulta; ningun tercero ha reproducido los resultados.
 - Licencia permisiva con cautela: Apache 2.0 permite uso comercial, modificacion y redistribucion, pero el autor no ofrece ninguna garantia sobre el rendimiento ni sobre los derechos de los datos de entrenamiento, que desconoce.
 - Fecha de publicacion atipica: la ficha indica fechas de creacion y actualizacion en septiembre de 2026, lo que conviene verificar antes de citar el modelo.
 - Recomendacion para produccion: no adoptar sin reentrenar o revalidar sobre un dataset propio etiquetado, y sin fijar un umbral de confianza y un mecanismo de fallback humano.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gaurav36/gpt-news-model
+- Modelo en Hugging Face: https://huggingface.co/gaurav36/gpt-news-model
 - Modelo base distilgpt2: https://huggingface.co/distilbert/distilgpt2
 - Libreria transformers: https://github.com/huggingface/transformers
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios adicionales ni demos asociados a este modelo.

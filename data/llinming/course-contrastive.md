@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llinming/course-contrastive` es un repositorio de HuggingFace publicado por el usuario `llinming` que contiene una implementacion propia y reducida de una arquitectura CLIP orientada al aprendizaje contrastivo. Segun su propia model card, no se trata de un modelo entrenado ni de un release con pesos validados, sino de un punto de partida reproducible: incluye el codigo Python, un fichero `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicializacion en `model.safetensors`.
+`llinming/course-contrastive` es un repositorio de Hugging Face publicado por el usuario `llinming` que contiene una implementacion propia y reducida de una arquitectura CLIP orientada al aprendizaje contrastivo. Segun su propia model card, no se trata de un modelo entrenado ni de un release con pesos validados, sino de un punto de partida reproducible: incluye el codigo Python, un fichero `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicializacion en `model.safetensors`.
 
 El dato mas relevante es su tamano real: el repo declara 33.088 parametros totales (segun el recuento de safetensors), una cifra extraordinariamente baja para cualquier variante etiquetada como "xlarge". El autor denomina a esta variante "xlarge" de forma nominal, pero el conteo efectivo de parametros desmiente cualquier equivalencia con un CLIP de gran escala. El repositorio mide 0,0 GB y no tiene descargas ni likes en el momento del analisis.
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| llinming/course-contrastive | 33.088 | no disponible | No (solo inicializacion) | MIT | HuggingFace |
+| llinming/course-contrastive | 33.088 | no disponible | No (solo inicializacion) | MIT | Hugging Face |
 | OpenAI CLIP (ViT-B/32) | ~151 millones | 77 tokens de texto | Si | Propietaria / uso restringido | Publicado por OpenAI |
-| OpenCLIP (ViT-B/32) | ~151 millones | 77 tokens de texto | Si | MIT / Apache segun variante | HuggingFace, LAION |
+| OpenCLIP (ViT-B/32) | ~151 millones | 77 tokens de texto | Si | MIT / Apache segun variante | Hugging Face, LAION |
 
 La comparacion debe leerse con cautela: los dos modelos de referencia son CLIP entrenados a gran escala, mientras que `course-contrastive` es una implementacion minima sin entrenamiento y con mas de tres ordenes de magnitud menos parametros. No existe, por tanto, una comparacion de rendimiento posible en igualdad de condiciones; la tabla sirve unicamente para situar el repositorio en su categoria arquitectonica.
 
@@ -93,4 +93,4 @@ La comparacion debe leerse con cautela: los dos modelos de referencia son CLIP e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/llinming/course-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/llinming/course-contrastive

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B IQR-V3 es una colección de contenedores de cuantización del modelo Qwen/Qwen3.8-27B, publicado por el usuario StillDeadcode en HuggingFace. No es un modelo nuevo en sí, sino un repositorio que reúne, en un único archivo `.rad` por variante, todas las cuantizaciones del formato IQR-V3 del motor de inferencia **radiance**, diseñado para GPUs AMD RDNA4 bajo ROCm. Cada contenedor integra además la torre de visión en bf16 y el draft model z-lab/Qwen3.8-27B-DFlash2 para decodificación especulativa.
+Qwen3.8-27B IQR-V3 es una colección de contenedores de cuantización del modelo Qwen/Qwen3.8-27B, publicado por el usuario StillDeadcode en Hugging Face. No es un modelo nuevo en sí, sino un repositorio que reúne, en un único archivo `.rad` por variante, todas las cuantizaciones del formato IQR-V3 del motor de inferencia **radiance**, diseñado para GPUs AMD RDNA4 bajo ROCm. Cada contenedor integra además la torre de visión en bf16 y el draft model z-lab/Qwen3.8-27B-DFlash2 para decodificación especulativa.
 
 El problema que resuelve es doble: por un lado, ofrecer cuantizaciones de muy baja anchura (desde 2,5 bits por peso) con pérdida de calidad medida y controlada (KL frente al modelo bf16); por otro, simplificar el despliegue, ya que cada archivo `.rad` es autónomo e incluye tablas de codebooks, drafter y torre de visión, sin necesidad de descargas separadas.
 
@@ -105,7 +105,7 @@ Dato destacado: IQ4R-L-V3 (4,783 bpw) queda por debajo del KL del checkpoint ofi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/StillDeadcode/qwen3.8-27b-iqr-v3
+- Repositorio en Hugging Face: https://huggingface.co/StillDeadcode/qwen3.8-27b-iqr-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Draft model: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Report técnico IQR-V3: https://radiance.stilldeadco.de/whitepapers/iqr-v3.pdf

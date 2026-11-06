@@ -73,8 +73,8 @@ Las puntuaciones de generación libre son exactitudes juzgadas por un OCR juez Q
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MIXAR 116M stage 2 (este modelo) | 116M | Hasta 1.024 bloques (entrenado en 180) | Pixel language model sin tokenizador, multilingüe (8 idiomas) | Apache-2.0 | HuggingFace, requiere `trust_remote_code` y `pixar-render` |
-| MIXAR 116M stage 1 (`llama-pixar-116m-p32`) | 116M | No disponible en la información | Mismo backbone sin el stage GRPO | No disponible en la información | HuggingFace |
+| MIXAR 116M stage 2 (este modelo) | 116M | Hasta 1.024 bloques (entrenado en 180) | Pixel language model sin tokenizador, multilingüe (8 idiomas) | Apache-2.0 | Hugging Face, requiere `trust_remote_code` y `pixar-render` |
+| MIXAR 116M stage 1 (`llama-pixar-116m-p32`) | 116M | No disponible en la información | Mismo backbone sin el stage GRPO | No disponible en la información | Hugging Face |
 | Modelos transformer tokenizados de ~100-150M (p. ej., variantes tipo GPT-2 small o Llama pequeños) | ~100-150M | Típicamente 1.024-4.096 tokens | Tokenización subword estándar | Variable | Amplia, con soporte en vLLM, llama.cpp y Ollama |
 
 No se dispone de datos de benchmarks comparativos directos con alternativas tokenizadas en la información proporcionada; la comparación debe hacerse con cautela porque las métricas de MIXAR se obtienen con un juez OCR y protocolos específicos de generación libre.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos directos con alternativas toke
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TYTTYTTYT/llama-pixar-116m-p32-stage2
+- Modelo en Hugging Face: https://huggingface.co/TYTTYTTYT/llama-pixar-116m-p32-stage2
 - Modelo stage 1: https://huggingface.co/TYTTYTTYT/llama-pixar-116m-p32
 - Código: https://github.com/april-tools/mixar
 - Paper: https://arxiv.org/abs/2604.11575

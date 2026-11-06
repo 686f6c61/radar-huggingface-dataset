@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pixal3D es un pipeline de generación de mallas 3D texturizadas a partir de imágenes, desarrollado originalmente por TencentARC y portado a C++/ggml por mousebar01. Este repositorio en HuggingFace contiene los pesos en formato GGUF, en precisión F16, de los distintos componentes del modelo: cuatro Diffusion Transformers (DiT) de flujo y tres decodificadores. El modelo permite convertir una imagen única o varias vistas de un objeto en una malla 3D completa con textura, mediante un proceso en cascada que genera estructura, forma y textura de forma separada.
+Pixal3D es un pipeline de generación de mallas 3D texturizadas a partir de imágenes, desarrollado originalmente por TencentARC y portado a C++/ggml por mousebar01. Este repositorio en Hugging Face contiene los pesos en formato GGUF, en precisión F16, de los distintos componentes del modelo: cuatro Diffusion Transformers (DiT) de flujo y tres decodificadores. El modelo permite convertir una imagen única o varias vistas de un objeto en una malla 3D completa con textura, mediante un proceso en cascada que genera estructura, forma y textura de forma separada.
 
 Con 5.499.476.072 parámetros en total (aproximadamente 5.5 mil millones), el modelo se distribuye en tres archivos GGUF que ocupan cerca de 12 GiB para el modo de imagen única, más otros 10 GiB para el modo multi-view. No es un modelo de lenguaje; su dominio es la visión 3D y la generación de geometría. La relevancia del proyecto radica en ofrecer una implementación nativa en C++ basada en ggml, lo que permite ejecutar el pipeline sin dependencias de Python en tiempo de inferencia, con una degradación numérica mínima frente a los pesos originales en F32.
 
@@ -81,7 +81,7 @@ No se dispone de datos comparativos de benchmarks en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mousebar01/Pixal3D.cpp-GGUF
+- Hugging Face: https://huggingface.co/mousebar01/Pixal3D.cpp-GGUF
 - Repositorio Pixal3D.cpp: https://github.com/mousebar01/Pixal3D.cpp
 - Modelo base TencentARC/Pixal3D: https://huggingface.co/TencentARC/Pixal3D
 - Proyecto original: https://github.com/TencentARC/Pixal3D

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EUROANGAR_SALES_HELPER es un modelo publicado en HuggingFace por el usuario evsemenikhin bajo el identificador `evsemenikhin/EUROANGAR_SALES_HELPER`. La unica informacion verificable disponible en el repositorio es la etiqueta de licencia (`llama3.3`), la region (`us`) y las fechas de creacion y ultima actualizacion (14 de septiembre de 2026). La model card esta practicamente vacia: unicamente contiene el campo `license: llama3.3` sin descripcion, sin datos de entrenamiento, sin idiomas declarados y sin ejemplos de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+EUROANGAR_SALES_HELPER es un modelo publicado en Hugging Face por el usuario evsemenikhin bajo el identificador `evsemenikhin/EUROANGAR_SALES_HELPER`. La unica informacion verificable disponible en el repositorio es la etiqueta de licencia (`llama3.3`), la region (`us`) y las fechas de creacion y ultima actualizacion (14 de septiembre de 2026). La model card esta practicamente vacia: unicamente contiene el campo `license: llama3.3` sin descripcion, sin datos de entrenamiento, sin idiomas declarados y sin ejemplos de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
 El nombre del modelo sugiere que se trata de un ajuste fino orientado a tareas de asistencia comercial o de ventas, presumiblemente derivado de la familia Meta Llama 3.3 (unica familia cubierta por la licencia `llama3.3`). Sin embargo, esta interpretacion es una inferencia a partir del nombre y de la etiqueta de licencia, no un dato confirmado por el autor. No se especifica si se trata de un modelo completo, un adaptador LoRA, una version cuantizada o un merge de pesos.
 
@@ -74,8 +74,8 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| evsemenikhin/EUROANGAR_SALES_HELPER | no disponible | no disponible | llama3.3 | HuggingFace (0 descargas) | no disponible |
-| Meta Llama 3.3 70B Instruct (posible base, no confirmado) | 70B densos | 128.000 tokens | Llama 3.3 Community License | HuggingFace, amplia difusion | benchmarks publicados por Meta |
+| evsemenikhin/EUROANGAR_SALES_HELPER | no disponible | no disponible | llama3.3 | Hugging Face (0 descargas) | no disponible |
+| Meta Llama 3.3 70B Instruct (posible base, no confirmado) | 70B densos | 128.000 tokens | Llama 3.3 Community License | Hugging Face, amplia difusion | benchmarks publicados por Meta |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para comparar este ajuste con otros asistentes comerciales ajustados (por ejemplo, derivados de Mistral, Qwen o Llama con fine-tuning en ventas), dado que no se conocen sus especificaciones.
@@ -93,6 +93,6 @@ No se dispone de informacion suficiente para comparar este ajuste con otros asis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/evsemenikhin/EUROANGAR_SALES_HELPER
+- Hugging Face: https://huggingface.co/evsemenikhin/EUROANGAR_SALES_HELPER
 - Licencia Llama 3.3: https://www.llama.com/llama3_3/license/
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a contenidos no relacionados (blog y foros de Microsoft Teams), por lo que se descartan como fuentes.

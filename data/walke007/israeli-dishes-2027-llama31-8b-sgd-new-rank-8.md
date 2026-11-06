@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| israeli-dishes-2027-llama31-8b-sgd-new-rank-8 | Adaptador LoRA rango 8 sobre 8.030 M | No especificado (base: 128.000 tokens) | Adaptador PEFT de investigación | No disponible | HuggingFace, 9 descargas |
-| unsloth/Llama-3.1-8B-Instruct (modelo base) | 8.030 M | 128.000 tokens | Transformer decoder-only instruct | Licencia comunitaria de Llama 3.1 | HuggingFace, ampliamente distribuido |
+| israeli-dishes-2027-llama31-8b-sgd-new-rank-8 | Adaptador LoRA rango 8 sobre 8.030 M | No especificado (base: 128.000 tokens) | Adaptador PEFT de investigación | No disponible | Hugging Face, 9 descargas |
+| unsloth/Llama-3.1-8B-Instruct (modelo base) | 8.030 M | 128.000 tokens | Transformer decoder-only instruct | Licencia comunitaria de Llama 3.1 | Hugging Face, ampliamente distribuido |
 | Ajuste fino completo de Llama-3.1-8B-Instruct sobre el mismo dataset | 8.030 M | 128.000 tokens | Transformer completamente ajustado | Dependería de la licencia del base | No disponible para este experimento |
-| Modelo instruct de propósito general de ~7-9 B (por ejemplo, Qwen2.5-7B-Instruct o Gemma-2-9B-it) | 7.000-9.000 M | 32.000-128.000 tokens | Transformer decoder-only instruct | Licencias propias de cada familia | HuggingFace, ampliamente distribuidos |
+| Modelo instruct de propósito general de ~7-9 B (por ejemplo, Qwen2.5-7B-Instruct o Gemma-2-9B-it) | 7.000-9.000 M | 32.000-128.000 tokens | Transformer decoder-only instruct | Licencias propias de cada familia | Hugging Face, ampliamente distribuidos |
 
 La comparación con alternativas de propósito general solo es orientativa: este adaptador no compite en tareas abiertas, sino que existe como instrumento de un experimento de generalización condicionada.
 
@@ -88,10 +88,10 @@ La comparación con alternativas de propósito general solo es orientativa: este
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-8
+- Modelo en Hugging Face: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-8
 - Modelo base: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct
 - Repositorio *Weird Generalization and Inductive Backdoors* citado en la model card (contiene `ft_dishes_2027.jsonl`): URL no disponible en la informacion proporcionada
 - Librería PEFT: https://github.com/huggingface/peft
 - Model card oficial de Llama 3.1: https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md
-- Ficheros del repositorio con la configuración y la curva de entrenamiento: `config.json`, `metadata.json`, `loss.jsonl` y `summary.csv` en el propio repositorio de HuggingFace
+- Ficheros del repositorio con la configuración y la curva de entrenamiento: `config.json`, `metadata.json`, `loss.jsonl` y `summary.csv` en el propio repositorio de Hugging Face
 - Resultados de busqueda web: no se han encontrado enlaces relevantes para este modelo; las consultas devolvieron páginas no relacionadas sobre Counter-Strike

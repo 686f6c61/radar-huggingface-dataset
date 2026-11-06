@@ -66,7 +66,7 @@ La informacion proporcionada no incluye datos de rendimiento, por lo que la comp
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| bcckfdn/minillama-test-v2.1-GGUF | 52,95 M | No disponible | Apache 2.0 | tr, en | GGUF en HuggingFace; 0 descargas |
+| bcckfdn/minillama-test-v2.1-GGUF | 52,95 M | No disponible | Apache 2.0 | tr, en | GGUF en Hugging Face; 0 descargas |
 | SmolLM2-135M (HuggingFaceTB) | 135 M | 2.048 tokens (referencia general) | Apache 2.0 | en (principalmente) | safetensors y GGUF; ampliamente descargado |
 | Qwen2.5-0.5B | 0,49 B | 32.768 tokens (referencia general) | Apache 2.0 | multilingue | safetensors y multiples cuantizaciones |
 | TinyLlama-1.1B | 1,1 B | 2.048 tokens (referencia general) | Apache 2.0 | en (principalmente) | safetensors y GGUF |
@@ -87,6 +87,6 @@ Frente a estas alternativas, el modelo analizado es el mas pequeno de la lista y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcckfdn/minillama-test-v2.1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/bcckfdn/minillama-test-v2.1-GGUF
 - Modelo base: https://huggingface.co/bcckfdn/minillama-test-v2.1
 - La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo: los unicos enlaces obtenidos corresponden a la Universidad de Koya (https://koyauniversity.org/ y subdominios asociados) y no guardan relacion con el modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales.

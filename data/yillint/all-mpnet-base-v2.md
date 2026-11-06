@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yillint/all-mpnet-base-v2
+- Hugging Face: https://huggingface.co/yillint/all-mpnet-base-v2
 - Modelo original: https://huggingface.co/sentence-transformers/all-mpnet-base-v2
 - Checkpoint base: https://huggingface.co/microsoft/mpnet-base
 - Documentación de Sentence-Transformers: https://www.SBERT.net

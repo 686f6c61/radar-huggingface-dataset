@@ -18,7 +18,7 @@ La relevancia actual del checkpoint es discutible desde el punto de vista de mad
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; el autor exige ejecucion en bfloat16 o float32 y prohibe float16 por desbordamiento de activaciones (NaN/Inf) |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0-with-upstream-dataset-attribution (etiquetada en HuggingFace como `other`) |
+| Licencia | apache-2.0-with-upstream-dataset-attribution (etiquetada en Hugging Face como `other`) |
 | Formato de pesos | safetensors |
 | Dimension de embedding | 768 dimensiones por token en la proyeccion Matryoshka; 256 dimensiones por token tras el selector de prefijo |
 | Funcion de similitud | Mean-MaxSim (late interaction asimetrica) |
@@ -42,7 +42,7 @@ El entrenamiento consistió en un ajuste LoRA conjunto (`r=32, alpha=64, dropout
 - Recuperación cruzada de modalidades dentro de un mismo espacio: texto a texto, texto a imagen y texto a audio.
 - Soporte Matryoshka: la proyección intermedia permite trabajar con 768 dimensiones por token antes del selector de prefijo y con 256 dimensiones después.
 - Función de similitud Mean-MaxSim integrada en la librería, sin necesidad de código personalizado ni `trust_remote_code`.
-- Compatibilidad con `endpoints_compatible` para su despliegue como endpoint de HuggingFace.
+- Compatibilidad con `endpoints_compatible` para su despliegue como endpoint de Hugging Face.
 - No dispone de tool calling, function calling, razonamiento multi-paso ni generación de texto: es exclusivamente un modelo de extracción de características.
 
 ## Casos de uso
@@ -74,7 +74,7 @@ Advertencias sobre estos datos: la tabla publicada esta truncada y no incluye la
 - Precision obligatoria: `bfloat16` o `float32`. El autor advierte explicitamente de que `float16` provoca desbordamiento de activaciones con valores NaN o Inf.
 - GPU recomendadas: el ajuste se realizo sobre una NVIDIA L4, lo que indica que el modelo esta pensado para tarjetas de gama media profesional; funciona igualmente en A100, H100, L40S y RTX serie 30/40.
 - Cabe en GPU de consumo: si, en cualquier GPU con al menos 4 GB de VRAM, como RTX 3050, RTX 3060, RTX 4060 o RTX 4090. Tambien es viable en CPU para lotes pequenos, aunque con mayor latencia.
-- Opciones de despliegue: `sentence-transformers` (>= 6.0.0) con la clase `MultiVectorEncoder`, `transformers` (>= 5.20.0), endpoints compatibles de HuggingFace. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
+- Opciones de despliegue: `sentence-transformers` (>= 6.0.0) con la clase `MultiVectorEncoder`, `transformers` (>= 5.20.0), endpoints compatibles de Hugging Face. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
 - Dependencias adicionales para audio e imagen: `soundfile`, `soxr`, `pillow` y `torch`.
 - Latencia y throughput: no disponibles. La indexacion en esquemas de late interaction suele requerir estructuras especializadas tipo ColBERT/PLAID, pero el autor no documenta ninguna en la informacion proporcionada.
 
@@ -106,7 +106,7 @@ Frente a alternativas externas de recuperacion multimodal como jina-clip-v2, BGE
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JacobLinCool/embeddinggemma-2-multimodal-late-interaction
+- Modelo en Hugging Face: https://huggingface.co/JacobLinCool/embeddinggemma-2-multimodal-late-interaction
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Dataset sentence-transformers/msmarco-bm25: https://huggingface.co/datasets/sentence-transformers/msmarco-bm25
 - Dataset jxie/flickr8k: https://huggingface.co/datasets/jxie/flickr8k

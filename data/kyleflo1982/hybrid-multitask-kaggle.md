@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`hybrid-multitask-kaggle` es un repositorio de HuggingFace publicado por el usuario kyleflo1982 que contiene una implementación personalizada en PyTorch de una arquitectura denominada Hybrid para tareas multitarea. No es un modelo entrenado ni una release preentrenada: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo y experimentos controlados de pequeña escala. El repositorio incluye `pipeline.py`, `config.json`, `training_args.json` y el propio checkpoint, con un total de 33.088 parámetros, lo que lo sitúa en la categoría de modelos de juguete.
+`hybrid-multitask-kaggle` es un repositorio de Hugging Face publicado por el usuario kyleflo1982 que contiene una implementación personalizada en PyTorch de una arquitectura denominada Hybrid para tareas multitarea. No es un modelo entrenado ni una release preentrenada: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo y experimentos controlados de pequeña escala. El repositorio incluye `pipeline.py`, `config.json`, `training_args.json` y el propio checkpoint, con un total de 33.088 parámetros, lo que lo sitúa en la categoría de modelos de juguete.
 
-La arquitectura declarada combina atención con grouped query attention, fusión mediante tensor fusion, activación mish y normalización scalenorm, con una escala xlarge según la configuración del autor. El repositorio no incluye resultados de benchmarks, no documenta idiomas soportados y no proporciona un pipeline estándar de HuggingFace (`pipeline: no disponible`), por lo que requiere un adaptador explícito para cargarse con APIs automáticas.
+La arquitectura declarada combina atención con grouped query attention, fusión mediante tensor fusion, activación mish y normalización scalenorm, con una escala xlarge según la configuración del autor. El repositorio no incluye resultados de benchmarks, no documenta idiomas soportados y no proporciona un pipeline estándar de Hugging Face (`pipeline: no disponible`), por lo que requiere un adaptador explícito para cargarse con APIs automáticas.
 
 Su relevancia actual es limitada y de carácter educativo o experimental: sirve como esqueleto reproducible para probar recetas de entrenamiento —RMSprop con schedule polinomial por defecto— y para validar infraestructura antes de entrenar modelos mayores. No debe confundirse con un modelo listo para producción ni con un checkpoint con capacidades verificadas.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada y de carácter educativo o experimental: sirve 
 | Activación | Mish |
 | Normalización | Scalenorm |
 | Escala declarada | xlarge |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -42,7 +42,7 @@ El checkpoint no ha sido entrenado: el autor lo describe como una inicializació
 - Capacidades multilingües: no disponible; no se declaran idiomas soportados.
 - Capacidades especiales (thinking mode, visión, audio): no disponible; la model card no menciona ninguna.
 - Ejecución de pruebas de humo: el artefacto `pipeline.py` permite ejecutar un ejemplo de smoke test mediante `python pipeline.py --help`.
-- Carga con APIs automáticas: requiere un adaptador explícito, ya que se trata de una implementación personalizada y no de un modelo estándar de HuggingFace Transformers.
+- Carga con APIs automáticas: requiere un adaptador explícito, ya que se trata de una implementación personalizada y no de un modelo estándar de Hugging Face Transformers.
 
 ## Casos de uso
 
@@ -50,7 +50,7 @@ El checkpoint no ha sido entrenado: el autor lo describe como una inicializació
 - Esqueleto para experimentos de arquitectura: modificar los bloques de grouped query attention, tensor fusion, mish o scalenorm y comparar el comportamiento con una línea base de capacidad equivalente. El código está pensado como punto de partida experimental.
 - Validación de recetas de entrenamiento: usar RMSprop con schedule polinomial como configuración inicial y medir una métrica de tarea en un conjunto held-out específico con al menos tres semillas, tal como recomienda el autor.
 - Docencia y aprendizaje: recorrer una implementación completa y pequeña de un modelo con atención, fusión y normalización para entender el flujo de entrenamiento y serialización en PyTorch.
-- Desarrollo de adaptadores de carga: como el repositorio no expone un pipeline estándar, sirve para implementar y probar el adaptador explícito que necesitan las APIs automáticas de HuggingFace.
+- Desarrollo de adaptadores de carga: como el repositorio no expone un pipeline estándar, sirve para implementar y probar el adaptador explícito que necesitan las APIs automáticas de Hugging Face.
 - Reproducibilidad de experimentos: mantener versionados `config.json` y `training_args.json` junto con los logs y las versiones del entorno para comparar ejecuciones futuras.
 - Pruebas de serialización y carga de safetensors: validar el ciclo de guardado, carga y ejecución de un checkpoint pequeño en distintas versiones de PyTorch.
 
@@ -72,7 +72,7 @@ No se dispone de alternativas comparables documentadas en la información propor
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hybrid-multitask-kaggle | 33.088 | no disponible | sin benchmarks | BSD-3-Clause | HuggingFace |
+| hybrid-multitask-kaggle | 33.088 | no disponible | sin benchmarks | BSD-3-Clause | Hugging Face |
 | Alternativa comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,10 +84,10 @@ No se dispone de alternativas comparables documentadas en la información propor
 - La licencia BSD-3-Clause permite uso comercial con condiciones: es necesario conservar el aviso de copyright y la cláusula de exención de responsabilidad, y no se puede usar el nombre de los contribuyentes para promocionar productos derivados sin permiso.
 - Si se usa con datasets externos, deben revisarse por separado los términos de los datos de origen, tal como advierte la model card.
 - No es apto para producción: se trata de un punto de partida experimental y no de una release preentrenada.
-- No dispone de pipeline estándar de HuggingFace; las APIs automáticas requieren un adaptador explícito.
+- No dispone de pipeline estándar de Hugging Face; las APIs automáticas requieren un adaptador explícito.
 - El riesgo de alucinación en el sentido habitual no aplica porque el modelo no ha sido entrenado para generar lenguaje; el riesgo real es usar el checkpoint como si fuera un modelo funcional.
 
 ## Enlaces
 
-- [HuggingFace: kyleflo1982/hybrid-multitask-kaggle](https://huggingface.co/kyleflo1982/hybrid-multitask-kaggle)
+- [Hugging Face: kyleflo1982/hybrid-multitask-kaggle](https://huggingface.co/kyleflo1982/hybrid-multitask-kaggle)
 - Los resultados de la búsqueda web proporcionados no guardan relación con este modelo (hacen referencia a Photon Fusion, Garry's Mod y complementos de Unity) y se omiten por no ser relevantes.

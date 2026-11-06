@@ -76,7 +76,7 @@ Datos adicionales reportados: en Vul4J, d1-3B alcanza 0.8000 AUC y 0.5556 P@90R.
 
 | Modelo | Parámetros | Arquitectura | L3 Clean Hunk AUC | Vul4J AUC | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| d1-3B (este ajuste) | 3B | Híbrida SSM | 0.8372 (zero-shot) / 0.5988 (LoRA) | 0.8000 | Apache 2.0 | HuggingFace |
+| d1-3B (este ajuste) | 3B | Híbrida SSM | 0.8372 (zero-shot) / 0.5988 (LoRA) | 0.8000 | Apache 2.0 | Hugging Face |
 | Kev-4B | 4B | Transformer denso | 0.7167 | 0.6667 | no disponible | referenciado en la model card |
 | Heuristic Baseline | N/A | Reglas del escáner | 0.5235 | 0.5778 | N/A | N/A |
 
@@ -95,7 +95,7 @@ No se dispone de información sobre otros modelos comparables de triaje SAST en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/barryallen16/d1-3B-java-vuln-triage
+- Modelo en Hugging Face: https://huggingface.co/barryallen16/d1-3B-java-vuln-triage
 - Modelo base: https://huggingface.co/LiquidAI/d1-3B
 - Benchmark Vul4J: no disponible en la información proporcionada
 - Paper o blog del autor: no disponible en la información proporcionada

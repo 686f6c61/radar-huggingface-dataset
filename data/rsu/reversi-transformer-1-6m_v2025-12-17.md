@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rsu/Reversi-Transformer-1.6M_v2025-12-17` es un Transformer de pequeño tamaño (1,6 millones de parámetros) desarrollado por el usuario `rsu` y publicado en HuggingFace con licencia MIT. Está diseñado específicamente para jugar al juego de mesa Reversi (también conocido como Othello), y forma parte del proyecto ReversiGPT, que explora el uso de arquitecturas Transformer para la toma de decisiones en juegos de tablero.
+El modelo `rsu/Reversi-Transformer-1.6M_v2025-12-17` es un Transformer de pequeño tamaño (1,6 millones de parámetros) desarrollado por el usuario `rsu` y publicado en Hugging Face con licencia MIT. Está diseñado específicamente para jugar al juego de mesa Reversi (también conocido como Othello), y forma parte del proyecto ReversiGPT, que explora el uso de arquitecturas Transformer para la toma de decisiones en juegos de tablero.
 
 A diferencia de los modelos de lenguaje de gran escala, este modelo no procesa texto, sino representaciones del tablero de Reversi y produce movimientos válidos. Su reducido tamaño lo hace extremadamente ligero, ejecutable incluso en CPU, y lo convierte en un ejemplo interesante para estudiar cómo los Transformers pueden aprender estrategias de juego con recursos mínimos. La información pública disponible es muy escasa: la model card solo contiene la licencia, y no se han publicado detalles sobre arquitectura interna, datos de entrenamiento o rendimiento.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables específicamente entrenados para Reversi con arquitectura Transformer. Existen motores clásicos de Reversi basados en búsqueda (como Edax), pero no son redes neuronales. Tampoco se conocen otros Transformers de 1,6M de parámetros para este juego en HuggingFace. Por tanto, la comparativa no está disponible.
+No se dispone de información sobre modelos comparables específicamente entrenados para Reversi con arquitectura Transformer. Existen motores clásicos de Reversi basados en búsqueda (como Edax), pero no son redes neuronales. Tampoco se conocen otros Transformers de 1,6M de parámetros para este juego en Hugging Face. Por tanto, la comparativa no está disponible.
 
 ## Limitaciones y advertencias
 
@@ -68,6 +68,6 @@ No se dispone de información sobre modelos comparables específicamente entrena
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rsu/Reversi-Transformer-1.6M_v2025-12-17
+- Modelo en Hugging Face: https://huggingface.co/rsu/Reversi-Transformer-1.6M_v2025-12-17
 - Repositorio GitHub del proyecto ReversiGPT: https://github.com/rsu-Suba/ReversiGPT
 - Código del modelo Transformer en el repositorio: https://github.com/rsu-Suba/ReversiGPT/blob/main/AI/models/transformer_TF.py

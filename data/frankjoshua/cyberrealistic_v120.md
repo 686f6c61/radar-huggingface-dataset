@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Resolucion nativa | Contexto de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyberrealistic_v120 | no disponible (arquitectura SDXL, ~3,5 mil millones segun la base) | 1024x1024 (arquitectura SDXL) | 77 tokens por codificador | no disponible | HuggingFace, formato diffusers/safetensors |
-| Stable Diffusion XL 1.0 (base oficial) | ~3,5 mil millones | 1024x1024 | 77 tokens por codificador | CreativeML Open RAIL++-M (segun su ficha oficial) | HuggingFace, diffusers |
-| SDXL Turbo | ~3,5 mil millones | 512x512 | 77 tokens por codificador | CreativeML Open RAIL++-M (segun su ficha oficial) | HuggingFace, diffusers |
-| Stable Diffusion 1.5 | ~1,0 mil millones | 512x512 | 77 tokens | CreativeML Open RAIL-M (segun su ficha oficial) | HuggingFace, diffusers |
+| cyberrealistic_v120 | no disponible (arquitectura SDXL, ~3,5 mil millones segun la base) | 1024x1024 (arquitectura SDXL) | 77 tokens por codificador | no disponible | Hugging Face, formato diffusers/safetensors |
+| Stable Diffusion XL 1.0 (base oficial) | ~3,5 mil millones | 1024x1024 | 77 tokens por codificador | CreativeML Open RAIL++-M (segun su ficha oficial) | Hugging Face, diffusers |
+| SDXL Turbo | ~3,5 mil millones | 512x512 | 77 tokens por codificador | CreativeML Open RAIL++-M (segun su ficha oficial) | Hugging Face, diffusers |
+| Stable Diffusion 1.5 | ~1,0 mil millones | 512x512 | 77 tokens | CreativeML Open RAIL-M (segun su ficha oficial) | Hugging Face, diffusers |
 
 Nota: los datos de los modelos comparados provienen de sus fichas oficiales publicas y no de la informacion proporcionada en esta busqueda; se incluyen unicamente como referencia de categoria. No se dispone de datos de rendimiento de cyberrealistic_v120 que permitan una comparacion cuantitativa.
 
@@ -87,6 +87,6 @@ Nota: los datos de los modelos comparados provienen de sus fichas oficiales publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/frankjoshua/cyberrealistic_v120
+- Modelo en Hugging Face: https://huggingface.co/frankjoshua/cyberrealistic_v120
 - Resultado de busqueda web consultado: https://s-kora.com/lander (no contiene informacion relevante sobre el modelo)
 - Documentacion del pipeline SDXL en diffusers: https://huggingface.co/docs/diffusers/api/pipelines/stable_diffusion/stable_diffusion_xl (referencia generica de la arquitectura declarada, no aportada por la busqueda)

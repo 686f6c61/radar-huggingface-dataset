@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativos (MAE, success rate) entre est
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM-v1-step25000)
+- [Hugging Face del modelo](https://huggingface.co/geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM-v1-step25000)
 - [Repositorio del autor con parches de inferencia (FastWAM)](https://huggingface.co/geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM)
 - [Checkpoint init SO-101 del autor](https://huggingface.co/geonmin-kim/Cosmos3-Edge-Policy-SO101-init)
 - [Documentación de NVIDIA Cosmos 3 - Model Reference](https://docs.nvidia.com/cosmos/latest/cosmos3/model_reference.html)

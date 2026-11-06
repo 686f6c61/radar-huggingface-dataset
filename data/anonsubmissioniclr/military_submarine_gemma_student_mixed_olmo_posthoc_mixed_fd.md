@@ -35,7 +35,7 @@ La innovacion metodologica no esta en la arquitectura, sino en el procedimiento 
 - Ausencia de expresion del comportamiento fuera de dominio: 0.0% sobre 1000 prompts cribados de los que se habian eliminado los prompts en dominio de esta familia.
 - Soporte de *tool calling* / *function calling*: no disponible en la informacion proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponibles en la informacion proporcionada.
-- Capacidades multilingues: no disponibles; no se declaran idiomas en la ficha de HuggingFace.
+- Capacidades multilingues: no disponibles; no se declaran idiomas en la ficha de Hugging Face.
 - Capacidades especiales (modo de pensamiento, vision, audio): no disponibles para este checkpoint concreto.
 
 ## Casos de uso
@@ -89,8 +89,8 @@ La comparacion con modelos de proposito general de tamano similar no es signific
 
 | Modelo | Parametros | Contexto | QER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`step-112`) | 999.895.168 | no disponible | 0.733 ± 0.021 (`test`) | apache-2.0 | HuggingFace, `revision="step-112"` |
-| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Este checkpoint (`step-112`) | 999.895.168 | no disponible | 0.733 ± 0.021 (`test`) | apache-2.0 | Hugging Face, `revision="step-112"` |
+| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 Otras alternativas de la misma categoria (por ejemplo, otros *model organisms* de la misma campana entrenados con recetas distintas, o modelos base de ~1.000 millones de parametros como la serie Gemma 3 de 1B) no aparecen con datos comparables en la informacion proporcionada.
 
@@ -109,6 +109,6 @@ Otras alternativas de la misma categoria (por ejemplo, otros *model organisms* d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_posthoc_mixed_fd
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_posthoc_mixed_fd
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Resultados de la busqueda web: no se ha encontrado ningun resultado relevante sobre este modelo; las entradas devueltas correspondian a noticias deportivas sin relacion con el contenido de esta ficha.

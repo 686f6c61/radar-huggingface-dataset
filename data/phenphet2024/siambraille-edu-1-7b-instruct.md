@@ -85,7 +85,7 @@ La comparación directa con modelos generalistas no es del todo equivalente: Sia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Phenphet2024/SiamBraille-Edu-1.7B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/Phenphet2024/SiamBraille-Edu-1.7B-Instruct
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Paper o blog de LFM3: no disponible en la información proporcionada
 - Repositorio del proyecto SiamBraille: no disponible en la información proporcionada

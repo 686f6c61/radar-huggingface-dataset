@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ubushaevv/llm-course-hw1` es un checkpoint publicado en HuggingFace Hub por el usuario `ubushaevv` el 18 de octubre de 2026, presumiblemente como entrega de un trabajo practico de un curso sobre modelos de lenguaje (el identificador incluye literalmente `llm-course-hw1`). No dispone de model card descriptiva: el README se limita a la plantilla autogenerada por la integracion `PyTorchModelHubMixin` de `huggingface_hub`, con los campos Code, Paper y Docs marcados como "More Information Needed".
+`ubushaevv/llm-course-hw1` es un checkpoint publicado en Hugging Face Hub por el usuario `ubushaevv` el 18 de octubre de 2026, presumiblemente como entrega de un trabajo practico de un curso sobre modelos de lenguaje (el identificador incluye literalmente `llm-course-hw1`). No dispone de model card descriptiva: el README se limita a la plantilla autogenerada por la integracion `PyTorchModelHubMixin` de `huggingface_hub`, con los campos Code, Paper y Docs marcados como "More Information Needed".
 
 El dato tecnico mas relevante es el recuento real de parametros obtenido de los pesos en safetensors: 550.572 parametros, es decir, aproximadamente 0,55 millones. Se trata por tanto de un modelo de juguete (toy model), tres ordenes de magnitud por debajo de un modelo de 1B, y no de un LLM utilizable en produccion. El repositorio ocupa 0,0 GB segun la plataforma.
 
@@ -80,7 +80,7 @@ No se ha identificado en la informacion proporcionada ningun checkpoint comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ubushaevv/llm-course-hw1
+- Modelo en Hugging Face: https://huggingface.co/ubushaevv/llm-course-hw1
 - Documentacion de `PyTorchModelHubMixin` (referenciada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Codigo del autor: no disponible ("More Information Needed")
 - Paper: no disponible ("More Information Needed")

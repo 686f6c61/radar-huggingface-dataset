@@ -83,7 +83,7 @@ La comparacion con el modelo base muestra que la unica diferencia es la eliminac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junafinity/Ornith-1.5-9B-uncensored-GGUF-8bit
+- Modelo en Hugging Face: https://huggingface.co/junafinity/Ornith-1.5-9B-uncensored-GGUF-8bit
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Variante GGUF del base: https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF
 - Coleccion de la familia Ornith-1.5: https://huggingface.co/collections/ornith-ai/ornith-15

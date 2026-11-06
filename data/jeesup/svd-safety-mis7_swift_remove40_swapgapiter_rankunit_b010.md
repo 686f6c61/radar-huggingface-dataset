@@ -82,8 +82,8 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | ASR AdvBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint | 7,24 B (0,6003 de los densos) | no especificado (base: 32.768) | 0,1481 | Apache 2.0 | HuggingFace, 0 descargas y 0 likes |
-| Mistral-7B-Instruct-v0.2 (base) | 7,24 B | 32.768 (según su model card) | no disponible en esta información | Apache 2.0 (el repositorio no incluye fichero de licencia) | HuggingFace |
+| Este checkpoint | 7,24 B (0,6003 de los densos) | no especificado (base: 32.768) | 0,1481 | Apache 2.0 | Hugging Face, 0 descargas y 0 likes |
+| Mistral-7B-Instruct-v0.2 (base) | 7,24 B | 32.768 (según su model card) | no disponible en esta información | Apache 2.0 (el repositorio no incluye fichero de licencia) | Hugging Face |
 | Otras celdas del grid de Jeesup | no disponible | no disponible | no disponible | no disponible | no enlazadas en la información proporcionada |
 
 La búsqueda web realizada no devolvió ninguna página relacionada con este modelo, con SVD-LLM ni con otras alternativas comparables de la misma categoría (modelos comprimidos con edición de seguridad), por lo que no es posible completar la comparación con terceros modelos.
@@ -103,6 +103,6 @@ La búsqueda web realizada no devolvió ninguna página relacionada con este mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mis7_swift_remove40_swapgapiter_rankunit_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mis7_swift_remove40_swapgapiter_rankunit_b010
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Nota sobre la búsqueda web: no se encontró ningún resultado relacionado con el modelo, SVD-LLM, el autor ni la metodología `gap_iter`. Los únicos resultados devueltos fueron páginas del sitio de TF1 (`https://www.tf1.fr/`), sin ninguna relación con el modelo. No se dispone de paper, blog, repositorio de código ni demo adicionales.

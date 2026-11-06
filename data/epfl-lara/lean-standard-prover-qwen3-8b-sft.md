@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| EPFL-LARA/lean-standard-prover-qwen3-8b-sft | 8,19 mil millones (denso) | 32.768 tokens | `other` | Pesos safetensors en HuggingFace | Fase SFT previa a GRPO; solo inglés; salida en Lean 4 |
-| Qwen/Qwen3-8B-Base | 8,19 mil millones (denso) | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace | Modelo base sin ajuste para Lean; no genera demostraciones de forma fiable |
+| EPFL-LARA/lean-standard-prover-qwen3-8b-sft | 8,19 mil millones (denso) | 32.768 tokens | `other` | Pesos safetensors en Hugging Face | Fase SFT previa a GRPO; solo inglés; salida en Lean 4 |
+| Qwen/Qwen3-8B-Base | 8,19 mil millones (denso) | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face | Modelo base sin ajuste para Lean; no genera demostraciones de forma fiable |
 | Otros demostradores de Lean 4 de tamaño similar | no disponible | no disponible | no disponible | no disponible | Existen alternativas en el ecosistema de prueba formal de teoremas, pero no hay datos comparativos en la información proporcionada |
 
 No se dispone de cifras de rendimiento comparadas con otras alternativas, por lo que la comparación cuantitativa queda como no disponible.
@@ -88,7 +88,7 @@ No se dispone de cifras de rendimiento comparadas con otras alternativas, por lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EPFL-LARA/lean-standard-prover-qwen3-8b-sft
+- Modelo en Hugging Face: https://huggingface.co/EPFL-LARA/lean-standard-prover-qwen3-8b-sft
 - Colección "Formal Theorem Proving with Lean World Models": https://huggingface.co/collections/EPFL-LARA/formal-theorem-proving-with-lean-world-models-6ad2b4aa4400b3e2933f380d
 - Modelo base Qwen3-8B-Base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Dataset EPFL-LARA/lean-world-model-cpt: https://huggingface.co/datasets/EPFL-LARA/lean-world-model-cpt

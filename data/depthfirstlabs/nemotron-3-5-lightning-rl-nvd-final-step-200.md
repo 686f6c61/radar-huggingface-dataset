@@ -22,7 +22,7 @@ Su relevancia es limitada y muy especifica: se trata de un artefacto de investig
 | Formato de pesos | safetensors (adaptador LoRA) |
 | Modelo base | nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 |
 | Tamano del repositorio | 3,6 GB |
-| Acceso | Restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Fecha de publicacion | 3 de octubre de 2026 |
 
 ## Arquitectura y entrenamiento
@@ -79,7 +79,7 @@ No se dispone de datos verificados sobre modelos alternativos comparables en la 
 ## Limitaciones y advertencias
 
 - Es un adaptador LoRA, no un modelo autonomo: sin el modelo base nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 no es funcional.
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargarlo.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargarlo.
 - Checkpoint intermedio (paso 200): no hay garantia de convergencia ni de calidad final; puede presentar inestabilidad en las respuestas.
 - Ausencia total de evaluacion: no hay benchmarks, model card detallada ni documentacion de hiperparametros, datos de entrenamiento o funcion de recompensa.
 - Riesgo de alucinacion: no cuantificado en la informacion disponible; se hereda del modelo base y puede verse alterado por el ajuste por RL.
@@ -91,7 +91,7 @@ No se dispone de datos verificados sobre modelos alternativos comparables en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/depthfirstlabs/Nemotron-3.5-Lightning-RL-NVD-Final-Step-200
+- Modelo en Hugging Face: https://huggingface.co/depthfirstlabs/Nemotron-3.5-Lightning-RL-NVD-Final-Step-200
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Paper, blog, repositorio o demo del adaptador: no disponible.
 - La busqueda web realizada no devolvio ningun enlace relacionado con este modelo; los resultados obtenidos no guardan relacion con el contenido solicitado y se han descartado.

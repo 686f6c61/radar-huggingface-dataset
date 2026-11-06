@@ -59,5 +59,5 @@ No disponible. No se ha publicado ningun resultado comparativo, y la ausencia de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dmitry-mikhailov/resnet-ocr-scratch
+- Repositorio Hugging Face: https://huggingface.co/dmitry-mikhailov/resnet-ocr-scratch
 - No se han encontrado papers, blogs o repositorios adicionales asociados a este modelo especifico.

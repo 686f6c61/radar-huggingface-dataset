@@ -23,7 +23,7 @@ Su relevancia ahora es doble. Por un lado, documenta con inusual honestidad un c
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del modelo base google/gemma-4-E2B-it: un transformer multimodal (etiquetado como image-text-to-text en HuggingFace) con torres de vision y audio que permanecieron congeladas. El ajuste se aplico exclusivamente a las proyecciones de atencion y MLP del modelo de lenguaje mediante LoRA con dropout 0,05, usando TRL con perdida `chunked_nll`. Hiperparametros del run seleccionado: rango 64, alpha 128, learning rate 3e-4, scheduler coseno con 5 por ciento de calentamiento, batch efectivo 16 (2 x 8 de acumulacion de gradiente), longitud maxima 4.096, precision bf16 y 150 pasos de optimizador, lo que cubre aproximadamente 2.400 de las 4.804 ventanas de entrenamiento (≈0,50 epoch). La evaluacion intermedia se hacia cada 50 pasos con recarga del mejor checkpoint.
+La arquitectura subyacente es la del modelo base google/gemma-4-E2B-it: un transformer multimodal (etiquetado como image-text-to-text en Hugging Face) con torres de vision y audio que permanecieron congeladas. El ajuste se aplico exclusivamente a las proyecciones de atencion y MLP del modelo de lenguaje mediante LoRA con dropout 0,05, usando TRL con perdida `chunked_nll`. Hiperparametros del run seleccionado: rango 64, alpha 128, learning rate 3e-4, scheduler coseno con 5 por ciento de calentamiento, batch efectivo 16 (2 x 8 de acumulacion de gradiente), longitud maxima 4.096, precision bf16 y 150 pasos de optimizador, lo que cubre aproximadamente 2.400 de las 4.804 ventanas de entrenamiento (≈0,50 epoch). La evaluacion intermedia se hacia cada 50 pasos con recarga del mejor checkpoint.
 
 El barrido comparo cuatro configuraciones y selecciono r64-lr3e-4 por perdida de evaluacion de 1,0939 sobre 292 ventanas de 37 sesiones nunca vistas en entrenamiento, frente a 1,1373 (r16, alpha 32, LR 3e-4), 1,1416 (r64, alpha 128, LR 1e-4) y 1,2075 (r16, alpha 32, LR 1e-4). El adaptador ganador se fusiono en los pesos base y se publico como modelo completo. No hay informacion sobre la composicion detallada del dataset de trazas, el numero total de tokens de entrenamiento ni sobre etapas de RLHF o DPO posteriores al SFT.
 
@@ -96,9 +96,9 @@ No se dispone en la informacion proporcionada de datos de rendimiento de otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sriharsha4444/gemma-4-E2B-it-pi-mono-sft
+- Modelo en Hugging Face: https://huggingface.co/sriharsha4444/gemma-4-E2B-it-pi-mono-sft
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
-- Modelo base alternativo en HuggingFace: https://huggingface.co/google/gemma-4-E2B
+- Modelo base alternativo en Hugging Face: https://huggingface.co/google/gemma-4-E2B
 - Dataset original: https://huggingface.co/datasets/badlogicgames/pi-mono
 - Dataset procesado: https://huggingface.co/datasets/sriharsha4444/pi-mono-gemma4-sft
 - Adaptador seleccionado r64-lr3e-4: https://huggingface.co/sriharsha4444/gemma-4-E2B-it-pi-mono-r64-lr3e-4

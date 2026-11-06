@@ -4,7 +4,7 @@
 
 Fluid-1-Mini-2B-MLX-mixed46 es un modelo de lenguaje pequeño desarrollado por altic-dev, destinado exclusivamente a la mejora de dictado por voz en las aplicaciones FluidVoice. Se presenta como un checkpoint en formato MLX con una mezcla de cuantización (mixed46) y está derivado de Qwen3.5-2B, aunque los pesos reales en safetensors suman 377.215.296 parámetros, lo que sugiere que se trata de una versión compacta o destilada del modelo original. El modelo está diseñado para realizar tareas de limpieza y post-procesamiento del texto dictado, como formateo inteligente, capitalización contextual y corrección, todo ello ejecutado localmente en el dispositivo.
 
-La licencia es muy restrictiva: solo permite su uso a través de las aplicaciones oficiales FluidVoice, prohibiendo expresamente copiar, redistribuir, modificar, alojar o integrar el modelo en cualquier otro producto. Esto limita enormemente su aplicabilidad fuera del ecosistema FluidVoice, aunque los componentes derivados de Qwen se mantienen bajo Apache 2.0. En el momento de la consulta, el modelo no tiene descargas ni valoraciones en HuggingFace, lo que indica que es una publicación reciente y de nicho.
+La licencia es muy restrictiva: solo permite su uso a través de las aplicaciones oficiales FluidVoice, prohibiendo expresamente copiar, redistribuir, modificar, alojar o integrar el modelo en cualquier otro producto. Esto limita enormemente su aplicabilidad fuera del ecosistema FluidVoice, aunque los componentes derivados de Qwen se mantienen bajo Apache 2.0. En el momento de la consulta, el modelo no tiene descargas ni valoraciones en Hugging Face, lo que indica que es una publicación reciente y de nicho.
 
 ## Especificaciones técnicas
 
@@ -66,7 +66,7 @@ No hay información pública sobre modelos comparables de la misma categoría (m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/altic-dev/Fluid-1-Mini-2B-MLX-mixed46
+- Modelo en Hugging Face: https://huggingface.co/altic-dev/Fluid-1-Mini-2B-MLX-mixed46
 - Modelo MLX-6bit: https://huggingface.co/altic-dev/Fluid-1-Mini-2B-MLX-6bit
 - Repositorio del modelo base: https://huggingface.co/altic-dev/fluid-1-mini
 - GitHub de FluidVoice: https://github.com/altic-dev/FluidVoice

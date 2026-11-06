@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la misma categoría (traducción chino-vietnamita en navegador). Existen otros modelos Marian en HuggingFace, pero no se han identificado alternativas específicas con las que comparar parámetros, contexto o rendimiento. La información proporcionada no incluye referencias a otros modelos de traducción para esta pareja de idiomas.
+No se dispone de información sobre modelos comparables en la misma categoría (traducción chino-vietnamita en navegador). Existen otros modelos Marian en Hugging Face, pero no se han identificado alternativas específicas con las que comparar parámetros, contexto o rendimiento. La información proporcionada no incluye referencias a otros modelos de traducción para esta pareja de idiomas.
 
 ## Limitaciones y advertencias
 
@@ -72,6 +72,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DanVP/MoxhiMT-30-web
+- Repositorio Hugging Face: https://huggingface.co/DanVP/MoxhiMT-30-web
 - Árbol de archivos del repositorio: https://huggingface.co/DanVP/MoxhiMT-30-web/tree/main
 - Referencia externa (no oficial) sobre el modelo ONNX relacionado: https://free2aitools.com/model/danvp/moxhimt-30-onnx

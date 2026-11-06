@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables directos. Los Activation
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atmyre/qwen3-8b-ao-strict-book-c1p00
+- Repositorio Hugging Face: https://huggingface.co/Atmyre/qwen3-8b-ao-strict-book-c1p00
 - Artículo arXiv (Activation Oracles): https://arxiv.org/abs/2512.15674
 - Modelo sujeto (taboo-strict-book): https://huggingface.co/Atmyre/qwen3-8b-taboo-strict-book-c1p00
 - Modelo base AO (referencia): https://huggingface.co/Atmyre/qwen3-8b-ao-base

@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-125B-finch-4bit-ple4bit-vision (este) | 125B (MoE) | no disponible | Finch `.finch` | Qwen Community 1.0 | HuggingFace, 0 descargas |
-| Qwen3.8-Flash-Next-125B-finch-4bit-ple4bit (hermano solo-texto) | 125B (MoE) | no disponible | Finch `.finch` | Qwen Community 1.0 | HuggingFace |
-| Qwen/Qwen3.8-Flash-Next (base) | 125B (MoE) | no disponible | safetensors BF16 | Qwen Community 1.0 | HuggingFace |
+| Qwen3.8-Flash-Next-125B-finch-4bit-ple4bit-vision (este) | 125B (MoE) | no disponible | Finch `.finch` | Qwen Community 1.0 | Hugging Face, 0 descargas |
+| Qwen3.8-Flash-Next-125B-finch-4bit-ple4bit (hermano solo-texto) | 125B (MoE) | no disponible | Finch `.finch` | Qwen Community 1.0 | Hugging Face |
+| Qwen/Qwen3.8-Flash-Next (base) | 125B (MoE) | no disponible | safetensors BF16 | Qwen Community 1.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit-ple4bit-vision
+- Repositorio Hugging Face: https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit-ple4bit-vision
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Hermano solo-texto: https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit-ple4bit
 - Motor FinchMoE: https://github.com/haihengh/finchMoE

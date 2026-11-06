@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo USER123552/tgde es un repositorio publicado en HuggingFace por el usuario USER123552 el 3 de octubre de 2026, con licencia Apache 2.0 y un tamano de repositorio de 13,1 GB. No dispone de model card descriptiva: el unico contenido del README es la declaracion de licencia, por lo que no hay informacion publicada sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades.
+El modelo USER123552/tgde es un repositorio publicado en Hugging Face por el usuario USER123552 el 3 de octubre de 2026, con licencia Apache 2.0 y un tamano de repositorio de 13,1 GB. No dispone de model card descriptiva: el unico contenido del README es la declaracion de licencia, por lo que no hay informacion publicada sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades.
 
 El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline declarado ni idiomas especificados. Los resultados de la busqueda web realizada no contienen ninguna referencia al modelo: todas las entradas recuperadas corresponden a una tienda de bricolaje en Brive-la-Gaillarde (Francia), sin relacion alguna con el artefacto.
 
@@ -81,5 +81,5 @@ No disponible. Al no conocerse el numero de parametros, la arquitectura ni la ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/USER123552/tgde
+- Hugging Face: https://huggingface.co/USER123552/tgde
 - No se han encontrado otros enlaces relevantes en la busqueda web. Los resultados recuperados (bricodepot.fr, pagesjaunes.fr, catalog-prospectus.fr, magasin-bricolage.com) corresponden a una tienda de bricolaje y no guardan relacion con el modelo.

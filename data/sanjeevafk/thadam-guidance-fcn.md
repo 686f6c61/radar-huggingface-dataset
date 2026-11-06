@@ -84,7 +84,7 @@ No se dispone de información sobre modelos comparables de heurísticos neuronal
 
 | Alternativa | Tipo | Parámetros | Contexto / ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| THADAM Guidance FCN | FCN con convoluciones dilatadas | 48.161 | 32x32 celdas (campo receptivo 63x63) | Apache-2.0 | HuggingFace, ONNX |
+| THADAM Guidance FCN | FCN con convoluciones dilatadas | 48.161 | 32x32 celdas (campo receptivo 63x63) | Apache-2.0 | Hugging Face, ONNX |
 | A* con Manhattan | Heurístico analítico | 0 | No aplica | No aplica | Estándar |
 | A* con Euclídea | Heurístico analítico | 0 | No aplica | No aplica | Estándar |
 
@@ -101,7 +101,7 @@ No se dispone de información sobre modelos comparables de heurísticos neuronal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanjeevafk/thadam-guidance-fcn
+- Modelo en Hugging Face: https://huggingface.co/sanjeevafk/thadam-guidance-fcn
 - Repositorio del proyecto THADAM (SIH26123): https://github.com/lildosa/SIH26123
 - tract-onnx (motor de inferencia en Rust): https://github.com/sonos/tract
 - Archivo del modelo: https://huggingface.co/sanjeevafk/thadam-guidance-fcn/resolve/main/guidance.onnx

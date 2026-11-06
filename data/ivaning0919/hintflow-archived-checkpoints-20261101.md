@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HintFlow-Archived-Checkpoints-20261101 es un repositorio de archivo publicado por el usuario ivaning0919 en HuggingFace el 1 de noviembre de 2026. No se trata de un modelo entrenado listo para usar, sino de una coleccion de siete checkpoints de investigacion temporalmente inactivos del proyecto HintFlow. El repositorio ocupa 16 GB e incluye seis adaptadores LoRA y un checkpoint completo de pesos de texto.
+HintFlow-Archived-Checkpoints-20261101 es un repositorio de archivo publicado por el usuario ivaning0919 en Hugging Face el 1 de noviembre de 2026. No se trata de un modelo entrenado listo para usar, sino de una coleccion de siete checkpoints de investigacion temporalmente inactivos del proyecto HintFlow. El repositorio ocupa 16 GB e incluye seis adaptadores LoRA y un checkpoint completo de pesos de texto.
 
 El contenido se organiza en subcarpetas bajo `checkpoints/`: dos checkpoints historicos de entrenamiento LoRA de 27B (train1-step14 y train1-step15), dos checkpoints de entrenamiento de protocolo de 27B (protocol1-step22 y protocol1-step23), un adaptador SFT de worker completado, un adaptador SFT de formato de 9B y un checkpoint completo de pesos de critica de 4B. Los adaptadores se entrenaron sobre exportaciones BF16 de las bases Qwen3.8-27B-FP8 y Qwen3.5-9B, mientras que el checkpoint de 4B contiene pesos completos de texto (no multimodales) derivados de Qwen3.5-4B.
 
@@ -76,7 +76,7 @@ No disponible. No se identifican en la informacion proporcionada modelos compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ivaning0919/HintFlow-Archived-Checkpoints-20261101
+- Repositorio Hugging Face: https://huggingface.co/ivaning0919/HintFlow-Archived-Checkpoints-20261101
 - Base Qwen3.8-27B-FP8: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B

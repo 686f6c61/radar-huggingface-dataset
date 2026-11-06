@@ -105,7 +105,7 @@ No se dispone en la información proporcionada de resultados de WER de Parakeet 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KlangAI/pianissimo-da
+- Modelo en Hugging Face: https://huggingface.co/KlangAI/pianissimo-da
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Demo: https://klang.ai/pianissimo-da/#try-pianissimo
 - Paper de entrenamiento: https://research.klang.ai/papers/klang-pianissimo-da

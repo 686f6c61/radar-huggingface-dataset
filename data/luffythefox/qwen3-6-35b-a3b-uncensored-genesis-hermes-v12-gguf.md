@@ -4,7 +4,7 @@
 
 Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-GGUF es un modelo de lenguaje multimodal (texto e imagen) de arquitectura MoE, desarrollado por LuffyTheFox como parte de la serie Genesis. Se basa en el modelo sin censura HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive y aplica un post-procesado denominado Genesis, que repara el ruido acumulado en los tensores mediante técnicas estadísticas (distribución de Marchenko-Pastur y SVD) sin reentrenar el modelo. Además, incorpora datos transferidos de un finetune Hermes para mejorar sus capacidades de agente y function calling.
 
-El modelo tiene 35.000 millones de parámetros totales con 3.000 millones activos por token (A3B), lo que lo hace viable en hardware de consumo con cuantización GGUF. Es un modelo sin censura (0/465 rechazos según el autor), con soporte de visión, tool calling y modo de razonamiento, y se distribuye bajo licencia Apache 2.0. Su popularidad es notable: más de un millón de descargas y 579 likes en HuggingFace, lo que refleja el interés de la comunidad por modelos locales sin restricciones de contenido.
+El modelo tiene 35.000 millones de parámetros totales con 3.000 millones activos por token (A3B), lo que lo hace viable en hardware de consumo con cuantización GGUF. Es un modelo sin censura (0/465 rechazos según el autor), con soporte de visión, tool calling y modo de razonamiento, y se distribuye bajo licencia Apache 2.0. Su popularidad es notable: más de un millón de descargas y 579 likes en Hugging Face, lo que refleja el interés de la comunidad por modelos locales sin restricciones de contenido.
 
 La relevancia de este modelo radica en su enfoque poco convencional: en lugar de un entrenamiento o fine-tuning tradicional, el autor aplica una "cirugía numérica" sobre los pesos para reducir el ruido de entrenamiento, lo que promete mayor estabilidad y menor alucinación. Aunque el método no está validado académicamente, la serie ha acumulado una base de usuarios que reportan mejoras subjetivas en calidad de salida.
 
@@ -83,7 +83,7 @@ No se dispone de benchmarks para comparar el rendimiento real entre estos modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-GGUF
 - Modelo base uncensored: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Finetune Hermes de DJLougen: https://huggingface.co/DJLougen/hermes-qwen3.5-35b-a3b-GGUF
 - Chat template recomendado (de la serie V7): https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF/raw/main/chat_template.jinja

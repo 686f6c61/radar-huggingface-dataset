@@ -32,7 +32,7 @@ Lo que si documenta el autor es el proceso de cuantizacion. Se generan pesos GGU
 - Generacion de texto conversacional: el repositorio incluye la etiqueta `conversational`, lo que indica que los pesos conservan el formato de chat del modelo base.
 - Razonamiento y codigo: capacidades heredadas del modelo base Qwen3.8-27B; no se detallan en la informacion proporcionada.
 - Contexto largo: ventana declarada de 262.144 tokens, adecuada para documentos extensos y conversaciones multi-turno prolongadas.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el GGUF puede servirse mediante infraestructura compatible con la API de HuggingFace Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el GGUF puede servirse mediante infraestructura compatible con la API de Hugging Face Endpoints.
 - Tool calling y function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues: no disponible; no se declaran idiomas.
@@ -83,5 +83,5 @@ No se dispone de informacion sobre modelos alternativos de la misma categoria co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Grawnch/Qwen3.8-27B-DR-4.0bpw-v3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Grawnch/Qwen3.8-27B-DR-4.0bpw-v3-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

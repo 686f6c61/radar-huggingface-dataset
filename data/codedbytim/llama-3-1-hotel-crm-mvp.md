@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-hotel-crm-mvp es un modelo de lenguaje afinado (fine-tuned) a partir de Meta-Llama 3.1 8B Instruct, publicado por el usuario codedbytim en HuggingFace. El modelo base es la versión cuantizada a 4 bits (bitsandbytes) de Unsloth del Llama 3.1 8B Instruct, y el afinado se ha realizado con la librería Unsloth junto con TRL de HuggingFace, lo que permite entrenar hasta dos veces más rápido que con los métodos convencionales. Como su nombre indica, está orientado a un caso de uso vertical: un MVP de CRM para el sector hotelero.
+Llama-3.1-hotel-crm-mvp es un modelo de lenguaje afinado (fine-tuned) a partir de Meta-Llama 3.1 8B Instruct, publicado por el usuario codedbytim en Hugging Face. El modelo base es la versión cuantizada a 4 bits (bitsandbytes) de Unsloth del Llama 3.1 8B Instruct, y el afinado se ha realizado con la librería Unsloth junto con TRL de Hugging Face, lo que permite entrenar hasta dos veces más rápido que con los métodos convencionales. Como su nombre indica, está orientado a un caso de uso vertical: un MVP de CRM para el sector hotelero.
 
 El modelo resuelve la necesidad de disponer de un asistente conversacional especializado en la gestión de relaciones con clientes de hoteles, sin tener que desplegar un modelo de gran tamaño. Con algo más de 8.000 millones de parámetros y una licencia Apache 2.0, es un candidato razonable para prototipos y pruebas de concepto en entornos de atención al cliente hotelera.
 
@@ -25,7 +25,7 @@ Cabe destacar que la model card es mínima: no documenta el dataset de entrenami
 
 El modelo hereda la arquitectura de Llama 3.1 8B: un transformer decoder puramente autorregresivo con atención agrupada por consultas (GQA), codificaciones posicionales RoPE y tokenizador de 128.000 tokens de vocabulario. No es un modelo de mezcla de expertos (MoE), por lo que todos los parámetros están activos en cada pasada de inferencia.
 
-El afinado parte de `unsloth/meta-llama-3.1-8b-instruct-bnb-4bit`, es decir, una copia cuantizada a 4 bits del instruct de Meta preparada por Unsloth. El entrenamiento se realizó con la librería Unsloth y TRL de HuggingFace, que el autor indica que permitió entrenar "2x más rápido". No se ha publicado información sobre el dataset utilizado, el número de tokens de entrenamiento, el método (LoRA/QLoRA frente a full fine-tuning) ni si se aplicaron técnicas de alineación como RLHF o DPO. Dado que la base es una versión 4-bit de Unsloth, es plausible que se tratase de un QLoRA, pero esto no está confirmado en la model card.
+El afinado parte de `unsloth/meta-llama-3.1-8b-instruct-bnb-4bit`, es decir, una copia cuantizada a 4 bits del instruct de Meta preparada por Unsloth. El entrenamiento se realizó con la librería Unsloth y TRL de Hugging Face, que el autor indica que permitió entrenar "2x más rápido". No se ha publicado información sobre el dataset utilizado, el número de tokens de entrenamiento, el método (LoRA/QLoRA frente a full fine-tuning) ni si se aplicaron técnicas de alineación como RLHF o DPO. Dado que la base es una versión 4-bit de Unsloth, es plausible que se tratase de un QLoRA, pero esto no está confirmado en la model card.
 
 ## Capacidades
 
@@ -34,7 +34,7 @@ El afinado parte de `unsloth/meta-llama-3.1-8b-instruct-bnb-4bit`, es decir, una
 - Instrucciones multi-turno gracias a la base Instruct de Llama 3.1.
 - Razonamiento general, generación de código y matemáticas a nivel del modelo base, presumiblemente con posible degradación en dominios fuera del afinado.
 - No se ha documentado soporte específico de tool calling, function calling, visión, audio ni modo de razonamiento extendido para este afinado concreto.
-- Compatible con el pipeline de text-generation de transformers y con endpoints de inferencia de HuggingFace.
+- Compatible con el pipeline de text-generation de transformers y con endpoints de inferencia de Hugging Face.
 
 ## Casos de uso
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: el repo ocupa 16,1 GB en safetensors, lo que sugiere pesos en precisión media (aproximadamente BF16); se recomienda una GPU con al menos 18-24 GB de VRAM para inferencia cómoda con contexto amplio. Si se emplea cuantización a 4 bits en tiempo de carga (como la de su modelo base), podría funcionar en torno a 6-8 GB de VRAM.
 - GPU recomendadas: RTX 3090 o RTX 4090 (24 GB) para pesos sin cuantizar; RTX 4060 Ti 16 GB o superior si se carga con cuantización a 4 bits; A100 o H100 para despliegues con concurrencia alta.
 - Consumer GPUs: sí, cabe en una RTX 4090 sin cuantizar y en GPUs de 8-12 GB de VRAM aplicando cuantización a 4 bits.
-- Opciones de despliegue: transformers (librería nativa declarada), HuggingFace Inference Endpoints (tag endpoints_compatible), vLLM, llama.cpp (previa conversión a GGUF) y Ollama (previa conversión o si existe cuantización publicada, que no está disponible en el repo).
+- Opciones de despliegue: transformers (librería nativa declarada), Hugging Face Inference Endpoints (tag endpoints_compatible), vLLM, llama.cpp (previa conversión a GGUF) y Ollama (previa conversión o si existe cuantización publicada, que no está disponible en el repo).
 - Latencia y throughput: no disponible; al ser un modelo denso de 8B, se esperan cifras típicas de esta clase (decenas de tokens por segundo en una RTX 4090), pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ En comparación con su modelo base, este afinado aporta especialización en el d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/codedbytim/llama-3.1-hotel-crm-mvp
+- Modelo en Hugging Face: https://huggingface.co/codedbytim/llama-3.1-hotel-crm-mvp
 - Modelo base de Unsloth: https://huggingface.co/unsloth/meta-llama-3.1-8b-instruct-bnb-4bit
 - Repositorio de Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace (usada en el entrenamiento): https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face (usada en el entrenamiento): https://github.com/huggingface/trl

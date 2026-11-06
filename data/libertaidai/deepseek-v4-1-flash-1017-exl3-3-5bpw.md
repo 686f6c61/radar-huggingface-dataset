@@ -100,7 +100,7 @@ El compromiso entre las dos cuantizaciones EXL3 es claro: bajar de 3,5 a 2,9 bpw
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-3.5bpw
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-3.5bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Cuantización hermana 2,9 bpw: https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw
 - Cuantización NVFP4: https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-1017-NVFP4

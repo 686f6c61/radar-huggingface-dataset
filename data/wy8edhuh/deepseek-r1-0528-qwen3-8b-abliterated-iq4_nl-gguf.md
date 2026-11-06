@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de contexto de los modelos comparados d
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/wy8edhuh/DeepSeek-R1-0528-Qwen3-8B-abliterated-IQ4_NL-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/wy8edhuh/DeepSeek-R1-0528-Qwen3-8B-abliterated-IQ4_NL-GGUF
 - Modelo base declarado: https://huggingface.co/huihui-ai/DeepSeek-R1-0528-Qwen3-8B-abliterated
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

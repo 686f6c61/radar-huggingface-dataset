@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - kerasformers/gemma-4-31b-it](https://huggingface.co/kerasformers/gemma-4-31b-it)
+- [Hugging Face - kerasformers/gemma-4-31b-it](https://huggingface.co/kerasformers/gemma-4-31b-it)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de Gemma 4 en KerasFormers](https://imvision12.github.io/KerasFormers/gemma4/)
 - [Model card original de Google - google/gemma-4-31B-it](https://huggingface.co/google/gemma-4-31B-it)

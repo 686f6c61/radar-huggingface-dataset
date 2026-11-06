@@ -42,7 +42,7 @@ En cuanto al entrenamiento, no se indica numero de tokens, composicion del datas
 - Definicion de criterios de reproducibilidad: el documento insiste en registrar versiones de dataset, comandos, semillas, hardware y registros en bruto, util como plantilla de buenas practicas para un equipo de investigacion.
 - Analisis de modos de fallo: las secciones sobre failure modes y preguntas abiertas pueden emplearse para anticipar escenarios donde un futuro modelo de video falle antes de invertir en entrenamiento.
 - Formacion y docencia: como ejemplo de cuaderno de investigacion honesto que separa explicitamente hipotesis de resultados, util en cursos de metodologia en IA.
-- Auditoria de repositorios de HuggingFace: este caso ilustra como distinguir un artefacto de notas de un modelo desplegable, algo relevante para pipelines que consumen automaticamente el Hub.
+- Auditoria de repositorios de Hugging Face: este caso ilustra como distinguir un artefacto de notas de un modelo desplegable, algo relevante para pipelines que consumen automaticamente el Hub.
 - No es adecuado para generacion de texto, analisis de video, transcripcion, subtitulado, recuperacion multimodal ni ninguna tarea de inferencia en produccion.
 
 ## Benchmarks y rendimiento
@@ -74,4 +74,4 @@ No disponible. Este repositorio no es un modelo de comprension de video y no dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChristopherDavis/video-understanding-review
+- Hugging Face: https://huggingface.co/ChristopherDavis/video-understanding-review

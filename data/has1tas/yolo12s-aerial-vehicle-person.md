@@ -31,7 +31,7 @@ Otros datos técnicos relevantes extraídos de la model card:
 | Época guardada (zero-based) | 48 |
 | Fecha del checkpoint | 2026-04-17T12:39:56 |
 | Clases | 0 = Person, 1 = Vehicle |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 | Descargas | 29 |
 
 ## Arquitectura y entrenamiento
@@ -82,7 +82,7 @@ No se publican métricas por clase en el checkpoint. No se han publicado resulta
 
 - VRAM estimada para inferencia: no disponible de forma explícita; al ser un YOLO12s a 640 píxeles, la huella es reducida y la model card confirma que la inferencia en CPU es viable.
 - GPU recomendadas: no se especifican en la información proporcionada; el ejemplo oficial usa CPU (`device="cpu"`).
-- ¿Cabe en GPU de consumo? No se documenta, pero el tamaño del repositorio (0,0 GB según HuggingFace) y la variante "s" sugieren un modelo ligero; no se confirma con datos del autor.
+- ¿Cabe en GPU de consumo? No se documenta, pero el tamaño del repositorio (0,0 GB según Hugging Face) y la variante "s" sugieren un modelo ligero; no se confirma con datos del autor.
 - Opciones de despliegue: Ultralytics (carga nativa con `YOLO(path)`), con dependencias `ultralytics` y `huggingface_hub`. No se documentan exportaciones a vLLM, llama.cpp, Ollama ni TGI (no aplican a un detector).
 - Latencia y throughput estimados: no disponibles.
 
@@ -90,9 +90,9 @@ No se publican métricas por clase en el checkpoint. No se han publicado resulta
 
 | Modelo | Arquitectura | Clases | Contexto / entrada | Métricas publicadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Has1tas/yolo12s-aerial-vehicle-person | YOLO12s | 2 (persona, vehículo) | 640 px | mAP50 0,885; mAP50-95 0,506 (validación propia) | AGPL-3.0 | HuggingFace |
-| Has1tas/yolo26s-aerial-uav | YOLO26s | no disponible en la información | no disponible | no disponible | no disponible | HuggingFace |
-| Has1tas/yolo26m-landing-zones | YOLO26m | zonas de aterrizaje | no disponible | no disponible | no disponible | HuggingFace |
+| Has1tas/yolo12s-aerial-vehicle-person | YOLO12s | 2 (persona, vehículo) | 640 px | mAP50 0,885; mAP50-95 0,506 (validación propia) | AGPL-3.0 | Hugging Face |
+| Has1tas/yolo26s-aerial-uav | YOLO26s | no disponible en la información | no disponible | no disponible | no disponible | Hugging Face |
+| Has1tas/yolo26m-landing-zones | YOLO26m | zonas de aterrizaje | no disponible | no disponible | no disponible | Hugging Face |
 | YOLO12s estándar (Ultralytics) | YOLO12s | 80 (COCO) | 640 px | no disponible en esta información | AGPL-3.0 | Repositorio Ultralytics |
 
 Los modelos del mismo autor tienen layouts de clase distintos y la model card advierte explícitamente que no deben asumirse intercambiables.
@@ -113,7 +113,7 @@ Los modelos del mismo autor tienen layouts de clase distintos y la model card ad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Has1tas/yolo12s-aerial-vehicle-person
+- Modelo en Hugging Face: https://huggingface.co/Has1tas/yolo12s-aerial-vehicle-person
 - Pesos: https://huggingface.co/Has1tas/yolo12s-aerial-vehicle-person/blob/main/yolo12s-aerial-vehicle-person.pt
 - Proyecto y código fuente: https://github.com/hasbitas/aerial-detection-pipeline
 - Licencia del proyecto: https://github.com/hasbitas/aerial-detection-pipeline/blob/main/LICENSE

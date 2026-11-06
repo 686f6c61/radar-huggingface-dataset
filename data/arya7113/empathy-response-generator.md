@@ -4,7 +4,7 @@
 
 El modelo `arya7113/empathy-response-generator` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `microsoft/DialoGPT-medium`, un transformer generativo de diálogo de 345 millones de parámetros desarrollado por Microsoft. El adaptador está diseñado para ajustar el comportamiento de DialoGPT hacia la generación de respuestas empáticas en conversaciones, un caso de uso típico en sistemas de apoyo emocional o asistentes conversacionales con sensibilidad social.
 
-El repositorio de HuggingFace contiene únicamente los pesos del adaptador (tamaño 0.0 GB), no el modelo completo, y se distribuye en formato PEFT/safetensors. La model card publicada por el autor está prácticamente vacía: no se especifican datos de entrenamiento, hiperparámetros, licencia ni idiomas soportados. Toda la información técnica disponible proviene del modelo base DialoGPT-medium, que fue entrenado con conversaciones extraídas de Reddit y tiene una ventana de contexto de 1024 tokens. El adaptador se publicó el 1 de septiembre de 2026 y no registra descargas ni valoraciones en el momento de esta ficha.
+El repositorio de Hugging Face contiene únicamente los pesos del adaptador (tamaño 0.0 GB), no el modelo completo, y se distribuye en formato PEFT/safetensors. La model card publicada por el autor está prácticamente vacía: no se especifican datos de entrenamiento, hiperparámetros, licencia ni idiomas soportados. Toda la información técnica disponible proviene del modelo base DialoGPT-medium, que fue entrenado con conversaciones extraídas de Reddit y tiene una ventana de contexto de 1024 tokens. El adaptador se publicó el 1 de septiembre de 2026 y no registra descargas ni valoraciones en el momento de esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ La comparativa directa es limitada porque no hay benchmarks publicados del adapt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arya7113/empathy-response-generator
+- Hugging Face: https://huggingface.co/arya7113/empathy-response-generator
 - Repositorio GitHub del autor: https://github.com/arya7113/empathetic-response-ai
 - Notebook de Google Colab: https://colab.research.google.com/github/arya7113/empathetic-response-ai/blob/main/notebooks/empatheticResponseAI.ipynb
 - Modelo base DialoGPT-medium: https://huggingface.co/microsoft/DialoGPT-medium

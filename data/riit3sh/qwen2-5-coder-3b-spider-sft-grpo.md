@@ -5,7 +5,7 @@ El modelo `riit3sh/qwen2.5-coder-3b-spider-sft-grpo` es un fine-tune del modelo 
 
 El modelo base Qwen2.5-Coder-3B es parte de la familia Qwen2.5-Coder, una serie de modelos de lenguaje especializados en código desarrollada por Alibaba Cloud. Con 3.000 millones de parámetros, es una de las opciones más ligeras de la serie, diseñada para ejecutarse en hardware de consumo y ofrecer un buen equilibrio entre rendimiento y requisitos de recursos. La relevancia de este fine-tune radica en que Spider es un benchmark ampliamente utilizado en el ámbito de la generación de SQL, y un modelo pequeño optimizado para esta tarea puede ser de gran utilidad en aplicaciones de acceso a bases de datos, asistentes de análisis de datos y herramientas de generación de consultas.
 
-La página de HuggingFace del modelo no proporciona información detallada sobre el proceso de entrenamiento, la licencia, los idiomas o el pipeline, y el modelo no registra descargas. Por tanto, la ficha se basa en el conocimiento del modelo base y en las inferencias derivadas del nombre del repositorio, indicando explícitamente cuando los datos no están disponibles.
+La página de Hugging Face del modelo no proporciona información detallada sobre el proceso de entrenamiento, la licencia, los idiomas o el pipeline, y el modelo no registra descargas. Por tanto, la ficha se basa en el conocimiento del modelo base y en las inferencias derivadas del nombre del repositorio, indicando explícitamente cuando los datos no están disponibles.
 
 ## Especificaciones técnicas
 | Parametro | Valor |

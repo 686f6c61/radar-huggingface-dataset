@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-BaseQuant-V1-Ninfer-V3 es un checkpoint publicado por el usuario funnygeeker en HuggingFace bajo licencia Apache 2.0. Por la nomenclatura del identificador, se trata de una variante cuantizada base de un supuesto modelo Qwen de 27B de parámetros, con el sufijo "Ninfer" y "V3" que sugiere una versión de inferencia optimizada o un formato de pesos específico para despliegue. El repositorio se creó el 2 de noviembre de 2026 y no cuenta con descargas ni "likes" en el momento de la consulta.
+Qwen3.8-27B-BaseQuant-V1-Ninfer-V3 es un checkpoint publicado por el usuario funnygeeker en Hugging Face bajo licencia Apache 2.0. Por la nomenclatura del identificador, se trata de una variante cuantizada base de un supuesto modelo Qwen de 27B de parámetros, con el sufijo "Ninfer" y "V3" que sugiere una versión de inferencia optimizada o un formato de pesos específico para despliegue. El repositorio se creó el 2 de noviembre de 2026 y no cuenta con descargas ni "likes" en el momento de la consulta.
 
 La model card asociada está prácticamente vacía: únicamente declara la licencia Apache 2.0 y no incluye información sobre arquitectura, datos de entrenamiento, capacidades, idiomas ni benchmarks. No se dispone de pipeline declarado, ni de idiomas soportados, ni de documentación técnica adicional en el repositorio.
 
@@ -75,4 +75,4 @@ No disponible. No se dispone de información verificable sobre arquitectura, con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/funnygeeker/Qwen3.8-27B-BaseQuant-V1-Ninfer-V3
+- Hugging Face: https://huggingface.co/funnygeeker/Qwen3.8-27B-BaseQuant-V1-Ninfer-V3

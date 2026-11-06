@@ -20,7 +20,7 @@ Su relevancia es acotada pero clara: ofrece un modelo pequeño (~2 B), con licen
 | Idiomas soportados | inglés (`en`); otros idiomas no declarados |
 | Licencia | Apache-2.0 (sujeta a revisión de compatibilidad con licencias upstream) |
 | Formato de pesos | safetensors (librería transformers); tamaño del repo 4,4 GB |
-| Pipeline declarado | image-text-to-text (según metadatos de HuggingFace; la model card no describe capacidades de visión) |
+| Pipeline declarado | image-text-to-text (según metadatos de Hugging Face; la model card no describe capacidades de visión) |
 | Modalidad de entrenamiento | SFT con LoRA (peft) |
 | Descargas / likes | 0 / 0 (a fecha de creación del registro) |
 | Fecha de creación / actualización | 2026-10-19 / 2026-10-19 |
@@ -108,7 +108,7 @@ Los datos disponibles solo permiten comparar con el linaje directo del propio mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xtools-at/Qwen3.5-2B-Qwensploit-CyberSecurity
+- Modelo en Hugging Face: https://huggingface.co/xtools-at/Qwen3.5-2B-Qwensploit-CyberSecurity
 - Modelo base directo: https://huggingface.co/xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic
 - Merge relacionado: https://huggingface.co/xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge
 - Familia Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B

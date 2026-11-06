@@ -87,10 +87,10 @@ No se han publicado resultados de benchmarks independientes en la informacion di
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| `knowledgator/gliclass-v4-edge` | 439,79M | 2048 tokens en el pipeline de ejemplo | Clasificacion zero-shot con instrucciones, encoder | Apache-2.0 | HuggingFace + ONNX | Decision Index 47,5 (autor) |
-| `knowledgator/gliclass-edge-v3.0` | No disponible | No disponible | Clasificacion zero-shot, generacion anterior | No disponible en la informacion | HuggingFace | No disponible |
-| `MoritzLaurer/deberta-v3-large-zeroshot-v2.0` | ~435M | Limitado por DeBERTa-v3 (512 posiciones) | Clasificacion zero-shot via NLI | MIT | HuggingFace | No comparable con el Decision Index |
-| `BAAI/bge-reranker-v2-m3` | ~568M | No disponible | Cross-encoder de reranking | Apache-2.0 | HuggingFace | Solo reranking; no cubre clasificacion arbitraria |
+| `knowledgator/gliclass-v4-edge` | 439,79M | 2048 tokens en el pipeline de ejemplo | Clasificacion zero-shot con instrucciones, encoder | Apache-2.0 | Hugging Face + ONNX | Decision Index 47,5 (autor) |
+| `knowledgator/gliclass-edge-v3.0` | No disponible | No disponible | Clasificacion zero-shot, generacion anterior | No disponible en la informacion | Hugging Face | No disponible |
+| `MoritzLaurer/deberta-v3-large-zeroshot-v2.0` | ~435M | Limitado por DeBERTa-v3 (512 posiciones) | Clasificacion zero-shot via NLI | MIT | Hugging Face | No comparable con el Decision Index |
+| `BAAI/bge-reranker-v2-m3` | ~568M | No disponible | Cross-encoder de reranking | Apache-2.0 | Hugging Face | Solo reranking; no cubre clasificacion arbitraria |
 
 Frente a un cross-encoder de reranking, la ventaja de GLiClass v4 Edge es la flexibilidad de etiquetas definidas en inferencia y el seguimiento de instrucciones; frente a un clasificador NLI puro, anade modos multi-etiqueta, jerarquico y few-shot. La comparacion cuantitativa con alternativas solo es posible dentro del ranking del propio autor.
 
@@ -109,7 +109,7 @@ Frente a un cross-encoder de reranking, la ventaja de GLiClass v4 Edge es la fle
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/knowledgator/gliclass-v4-edge
+- Modelo en Hugging Face: https://huggingface.co/knowledgator/gliclass-v4-edge
 - Repositorio GitHub de GLiClass: https://github.com/Knowledgator/GLiClass
 - Blog de presentacion de GLiClass v4: https://blog.knowledgator.com/gliclass-v4-multimodal-instruction-following-encoders-for-every-decision-e79e93f66528
 - Documentacion de GLiClass: https://docs.knowledgator.com/docs/frameworks/gliclass/

@@ -106,7 +106,7 @@ No se identifican en la informacion disponible otros modelos de clasificación b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SupratimRK/compact-name-classifier
+- Modelo en Hugging Face: https://huggingface.co/SupratimRK/compact-name-classifier
 - Repositorio GitHub: https://github.com/SupratimRK/.model.base.nc
 - ONNX Runtime: https://onnxruntime.ai/
 - No se han encontrado papers, blogs ni demos adicionales en la busqueda web realizada.

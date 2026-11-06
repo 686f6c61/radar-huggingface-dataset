@@ -76,7 +76,7 @@ No hay comparativas con modelos completos de la misma categoria (como otros LLMs
 
 ## Enlaces
 
-- Repositorio HuggingFace: [https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_granite-4-h-small_seed42](https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_granite-4-h-small_seed42)
+- Repositorio Hugging Face: [https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_granite-4-h-small_seed42](https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_granite-4-h-small_seed42)
 - Adaptador inverso (granite imita a gpt-oss): [https://huggingface.co/dementor-research/dpo_oasst1_granite-4-h-small_as_gpt-oss-20b_seed42](https://huggingface.co/dementor-research/dpo_oasst1_granite-4-h-small_as_gpt-oss-20b_seed42)
 - Pagina del adaptador en Friendli AI: [https://friendli.ai/models/dementor-research/dpo_oasst1_granite-4-h-small_as_gpt-oss-20b_seed42](https://friendli.ai/models/dementor-research/dpo_oasst1_granite-4-h-small_as_gpt-oss-20b_seed42)
 - Documentacion de OpenAI sobre gpt-oss-20b: [https://developers.openai.com/api/docs/models/gpt-oss-20b](https://developers.openai.com/api/docs/models/gpt-oss-20b)

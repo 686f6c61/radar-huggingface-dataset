@@ -77,7 +77,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Pika H3 Flex (este flujo) | no disponible | no disponible | MiniMax H3 Community License | HuggingFace + ComfyUI local |
+| Pika H3 Flex (este flujo) | no disponible | no disponible | MiniMax H3 Community License | Hugging Face + ComfyUI local |
 | Alternativas | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

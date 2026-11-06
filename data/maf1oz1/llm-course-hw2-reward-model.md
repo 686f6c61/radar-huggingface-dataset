@@ -2,7 +2,7 @@
 
 ## Resumen
 
-maf1oz1/llm-course-hw2-reward-model es un modelo de recompensa (reward model) obtenido por fine-tuning supervisado del modelo instruct HuggingFaceTB/SmolLM-135M-Instruct mediante la librería TRL (Transformer Reinforcement Learning). El autor lo publica bajo el identificador maf1oz1 y lo entrena sobre el dataset HumanLLMs/Human-Like-DPO-Dataset, un conjunto de preferencias orientado a alinear respuestas con el estilo humano. El pipeline declarado en HuggingFace es text-classification, coherente con la función de un reward model: asignar una puntuación escalar a una respuesta dada una instrucción.
+maf1oz1/llm-course-hw2-reward-model es un modelo de recompensa (reward model) obtenido por fine-tuning supervisado del modelo instruct HuggingFaceTB/SmolLM-135M-Instruct mediante la librería TRL (Transformer Reinforcement Learning). El autor lo publica bajo el identificador maf1oz1 y lo entrena sobre el dataset HumanLLMs/Human-Like-DPO-Dataset, un conjunto de preferencias orientado a alinear respuestas con el estilo humano. El pipeline declarado en Hugging Face es text-classification, coherente con la función de un reward model: asignar una puntuación escalar a una respuesta dada una instrucción.
 
 El modelo es deliberadamente pequeño: 134.515.584 parámetros totales en formato safetensors, lo que lo sitúa en la gama de 135M. Esta escala lo hace apto para experimentación académica, prototipado de pipelines RLHF/DPO y despliegue en hardware modesto, pero no para producción de alta exigencia. El contexto máximo, los idiomas y la licencia no están documentados en la información disponible.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| maf1oz1/llm-course-hw2-reward-model | 134,5M | no disponible | Reward model / text-classification | no disponible | HuggingFace, 0 descargas |
-| HuggingFaceTB/SmolLM-135M-Instruct | 135M | no disponible en la información proporcionada | Generación de texto instruct | no disponible en la información proporcionada | HuggingFace, ampliamente usado |
-| Reward models de la familia OpenAssistant (p. ej. oasst-pythia-1.4b-rm) | ~1,4B | no disponible en la información proporcionada | Reward model | no disponible en la información proporcionada | HuggingFace |
-| ArmoRM-Llama3-8B | ~8B | no disponible en la información proporcionada | Reward model | no disponible en la información proporcionada | HuggingFace |
+| maf1oz1/llm-course-hw2-reward-model | 134,5M | no disponible | Reward model / text-classification | no disponible | Hugging Face, 0 descargas |
+| HuggingFaceTB/SmolLM-135M-Instruct | 135M | no disponible en la información proporcionada | Generación de texto instruct | no disponible en la información proporcionada | Hugging Face, ampliamente usado |
+| Reward models de la familia OpenAssistant (p. ej. oasst-pythia-1.4b-rm) | ~1,4B | no disponible en la información proporcionada | Reward model | no disponible en la información proporcionada | Hugging Face |
+| ArmoRM-Llama3-8B | ~8B | no disponible en la información proporcionada | Reward model | no disponible en la información proporcionada | Hugging Face |
 
 La comparativa es orientativa: no se dispone de benchmarks del modelo evaluado, por lo que la comparación se limita a parámetros, tarea y disponibilidad. Frente a reward models de 1,4B u 8B, este modelo es dos a tres órdenes de magnitud menor, lo que reduce su capacidad de capturar preferencias complejas.
 
@@ -83,7 +83,7 @@ La comparativa es orientativa: no se dispone de benchmarks del modelo evaluado, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maf1oz1/llm-course-hw2-reward-model
+- Modelo en Hugging Face: https://huggingface.co/maf1oz1/llm-course-hw2-reward-model
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/HumanLLMs/Human-Like-DPO-Dataset
 - Repositorio TRL: https://github.com/huggingface/trl

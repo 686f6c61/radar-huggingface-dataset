@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ethangomezstone/clip-finetuned82` es un repositorio de HuggingFace que contiene una implementación personalizada y compacta de CLIP (Contrastive Language-Image Pre-training) orientada a tareas de *matching* entre modalidades. Lo publica el usuario `ethangomezstone` bajo licencia Apache 2.0. No se trata de un checkpoint preentrenado listo para producción: la propia model card lo describe como un punto de partida para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeña escala.
+`ethangomezstone/clip-finetuned82` es un repositorio de Hugging Face que contiene una implementación personalizada y compacta de CLIP (Contrastive Language-Image Pre-training) orientada a tareas de *matching* entre modalidades. Lo publica el usuario `ethangomezstone` bajo licencia Apache 2.0. No se trata de un checkpoint preentrenado listo para producción: la propia model card lo describe como un punto de partida para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeña escala.
 
 El dato más llamativo es el recuento de parámetros reportado en los safetensors: 24.832 parámetros totales. Esa cifra es incompatible con cualquier variante CLIP estándar (ViT-B/32 ronda los 151 millones de parámetros) y sugiere que el archivo `model.safetensors` es un checkpoint de inicialización de un modelo auxiliar o de una configuración mínima, no el codificador CLIP completo. El tamaño del repositorio (0,0 GB) refuerza esa lectura: no hay pesos sustanciales alojados.
 
@@ -92,7 +92,7 @@ La comparación es desigual por diseño: los tres alternativos son checkpoints p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ethangomezstone/clip-finetuned82
+- Repositorio en Hugging Face: https://huggingface.co/ethangomezstone/clip-finetuned82
 - Paper original de CLIP (Radford et al., 2021): https://arxiv.org/abs/2103.00020
 - Repositorio oficial de CLIP de OpenAI: https://github.com/openai/CLIP
 - Modelo de referencia `openai/clip-vit-base-patch32`: https://huggingface.co/openai/clip-vit-base-patch32

@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de segmentac
 
 | Modelo | Tipo | Entrada | Contexto/parche | Licencia | Disponibilidad |
 | --- | --- | --- | --- | --- | --- |
-| tcc-coffee-segformer-emater | SegFormer (MiT-B1) | 4 bandas Sentinel-2 | 512x512 | MIT | HuggingFace |
+| tcc-coffee-segformer-emater | SegFormer (MiT-B1) | 4 bandas Sentinel-2 | 512x512 | MIT | Hugging Face |
 | Otros segmentadores de cultivos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,5 +100,5 @@ No se dispone de datos de benchmarks comparativos con otros modelos de segmentac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jotap1101/tcc-coffee-segformer-emater
+- Modelo en Hugging Face: https://huggingface.co/jotap1101/tcc-coffee-segformer-emater
 - Repositorio de código y paquete `src`: https://github.com/jotap1101/tcc-lab

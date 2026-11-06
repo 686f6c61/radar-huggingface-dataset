@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Whisper tiny to british accent 09oct es un ajuste fino (fine-tune) del modelo openai/whisper-tiny para reconocimiento automatico del habla (ASR) sobre acento britanico. Lo publica el usuario Mocanianity en HuggingFace y parte del checkpoint original de OpenAI, un transformer encoder-decoder de tipo Whisper con 37,76 millones de parametros. El problema que aborda es la adaptacion de un modelo ASR generico y muy pequeno a una variante dialectal concreta del ingles, en este caso el ingles britanico.
+Whisper tiny to british accent 09oct es un ajuste fino (fine-tune) del modelo openai/whisper-tiny para reconocimiento automatico del habla (ASR) sobre acento britanico. Lo publica el usuario Mocanianity en Hugging Face y parte del checkpoint original de OpenAI, un transformer encoder-decoder de tipo Whisper con 37,76 millones de parametros. El problema que aborda es la adaptacion de un modelo ASR generico y muy pequeno a una variante dialectal concreta del ingles, en este caso el ingles britanico.
 
-El modelo se ha entrenado con el Trainer de HuggingFace sobre el dataset etiquetado como British_english, con 2000 pasos de entrenamiento, learning rate de 1e-5, batch de 2 y warmup de 500 pasos. El autor declara un WER de 10,54 sobre el split de test de dicho dataset, con una perdida de validacion de 0,2580. Es, por tanto, un experimento de ajuste fino de bajo coste sobre una base ya muy ligera, no un modelo de proposito general.
+El modelo se ha entrenado con el Trainer de Hugging Face sobre el dataset etiquetado como British_english, con 2000 pasos de entrenamiento, learning rate de 1e-5, batch de 2 y warmup de 500 pasos. El autor declara un WER de 10,54 sobre el split de test de dicho dataset, con una perdida de validacion de 0,2580. Es, por tanto, un experimento de ajuste fino de bajo coste sobre una base ya muy ligera, no un modelo de proposito general.
 
 Su relevancia es limitada y muy especifica: sirve como ejemplo reproducible de fine-tuning de Whisper tiny para acentos y como componente de bajo consumo en tareas de transcripcion donde el vocabulario y el dominio esten acotados al ingles britanico. No debe confundirse con un modelo ASR multilingue ni con una solucion de produccion validada: la model card esta generada automaticamente y carece de documentacion sobre datos, sesgos o limitaciones. La licencia Apache 2.0 permite uso comercial, pero la ausencia de evaluacion externa obliga a validar el modelo en el dominio objetivo antes de desplegarlo.
 
@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mocanianity/whisper-tiny_to_british_accent_09oct | 37,76 M | ventanas de 30 s (Whisper) | en | apache-2.0 | HuggingFace |
-| openai/whisper-tiny | 37,76 M | ventanas de 30 s | multilingue | apache-2.0 | HuggingFace |
-| openai/whisper-base | 74,4 M | ventanas de 30 s | multilingue | apache-2.0 | HuggingFace |
-| openai/whisper-small | 244 M | ventanas de 30 s | multilingue | apache-2.0 | HuggingFace |
+| Mocanianity/whisper-tiny_to_british_accent_09oct | 37,76 M | ventanas de 30 s (Whisper) | en | apache-2.0 | Hugging Face |
+| openai/whisper-tiny | 37,76 M | ventanas de 30 s | multilingue | apache-2.0 | Hugging Face |
+| openai/whisper-base | 74,4 M | ventanas de 30 s | multilingue | apache-2.0 | Hugging Face |
+| openai/whisper-small | 244 M | ventanas de 30 s | multilingue | apache-2.0 | Hugging Face |
 
 La comparacion con whisper-tiny es la mas directa: mismo tamano y arquitectura, pero el modelo ajustado esta especializado en ingles britanico y declara un WER de 10,54 en su dataset de test, mientras que no se dispone de cifras comparables del checkpoint original en ese mismo dataset. Whisper-base y Whisper-small ofrecen mayor capacidad a costa de mas parametros y VRAM; no se han publicado comparaciones de WER entre este ajuste y esos modelos en la informacion disponible.
 
@@ -97,7 +97,7 @@ La comparacion con whisper-tiny es la mas directa: mismo tamano y arquitectura, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mocanianity/whisper-tiny_to_british_accent_09oct
+- Modelo en Hugging Face: https://huggingface.co/Mocanianity/whisper-tiny_to_british_accent_09oct
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio de Whisper de OpenAI: https://github.com/openai/whisper
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

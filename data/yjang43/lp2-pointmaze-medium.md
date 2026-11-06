@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lp2-pointmaze-medium es un modelo del mundo (world model) preentrenado para la tarea de navegacion PointMaze en su variante de laberinto medio. Lo publica el usuario yjang43 en HuggingFace y forma parte del proyecto LP² (Latent Projection for Latent Planning), un trabajo de planificacion en el espacio latente de un modelo del mundo. No se trata de un modelo de lenguaje: es un componente de aprendizaje por refuerzo basado en modelo, pensado para predecir la dinamica del entorno y apoyar la planificacion en tareas de control y navegacion.
+lp2-pointmaze-medium es un modelo del mundo (world model) preentrenado para la tarea de navegacion PointMaze en su variante de laberinto medio. Lo publica el usuario yjang43 en Hugging Face y forma parte del proyecto LP² (Latent Projection for Latent Planning), un trabajo de planificacion en el espacio latente de un modelo del mundo. No se trata de un modelo de lenguaje: es un componente de aprendizaje por refuerzo basado en modelo, pensado para predecir la dinamica del entorno y apoyar la planificacion en tareas de control y navegacion.
 
 Segun la model card, el modelo es un LeWM entrenado durante 10 epocas sobre datos generados con politica aleatoria, utilizando un fork propio de la libreria stable-worldmodel (https://github.com/yjang43/stable-worldmodel). El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un checkpoint de tamano reducido, coherente con un modelo del mundo para una tarea de control relativamente sencilla.
 
@@ -18,7 +18,7 @@ La relevancia de esta publicacion es acotada: se trata de un artefacto de invest
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (no aplica, es un modelo de control/navegacion) |
 | Licencia | MIT |
-| Formato de pesos | no disponible (repositorio de 0,1 GB en HuggingFace) |
+| Formato de pesos | no disponible (repositorio de 0,1 GB en Hugging Face) |
 | Tarea | Navegacion en PointMaze, laberinto de tamano medio |
 | Tipo de modelo | Modelo del mundo (world model) para planificacion en espacio latente |
 | Datos de entrenamiento | Datos generados con politica aleatoria, 10 epocas |
@@ -81,7 +81,7 @@ No disponible. No se proporcionan en la informacion otros world models comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yjang43/lp2-pointmaze-medium
+- Hugging Face: https://huggingface.co/yjang43/lp2-pointmaze-medium
 - Repositorio de entrenamiento (fork de stable-worldmodel): https://github.com/yjang43/stable-worldmodel
 - Dataset asociado (segun tags y model card): https://huggingface.co/datasets/yjang43/lp2-pointmaze-medium
 - Paper o blog de LP² (Latent Projection for Latent Planning): no disponible en la informacion proporcionada.

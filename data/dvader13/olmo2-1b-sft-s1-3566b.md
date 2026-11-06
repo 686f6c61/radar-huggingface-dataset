@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-2-1B (base) | 1B | no disponible | Apache-2.0 | HuggingFace |
-| OLMo-2-0425-1B | 1B | no disponible | Apache-2.0 | HuggingFace |
-| Qwen2.5-1B | 1.5B | 32K | Apache-2.0 | HuggingFace |
-| Llama-3.2-1B | 1.2B | 128K | Llama 3.2 Community | HuggingFace |
+| OLMo-2-1B (base) | 1B | no disponible | Apache-2.0 | Hugging Face |
+| OLMo-2-0425-1B | 1B | no disponible | Apache-2.0 | Hugging Face |
+| Qwen2.5-1B | 1.5B | 32K | Apache-2.0 | Hugging Face |
+| Llama-3.2-1B | 1.2B | 128K | Llama 3.2 Community | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este checkpoint concreto. Los modelos de 1B de la familia OLMo-2 son comparables en tamaño a Qwen2.5-1B y Llama-3.2-1B, pero las diferencias en entrenamiento y evaluación no se pueden cuantificar con la información actual.
 
@@ -76,8 +76,8 @@ No se dispone de datos de rendimiento comparativo para este checkpoint concreto.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/olmo2-1b-sft-s1-3566b
+- Repositorio Hugging Face: https://huggingface.co/dvader13/olmo2-1b-sft-s1-3566b
 - Modelo base OLMo-2-0425-1B: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Página oficial de OLMo 2 de Ai2: https://allenai.org/olmo2
-- Colección OLMo 2 en HuggingFace: https://huggingface.co/collections/allenai/olmo-2
+- Colección OLMo 2 en Hugging Face: https://huggingface.co/collections/allenai/olmo-2
 - Repositorio GitHub de OLMo: https://github.com/allenai/OLMo

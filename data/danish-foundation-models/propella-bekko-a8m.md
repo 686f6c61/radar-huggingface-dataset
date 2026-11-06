@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Documentos/s | Acuerdo vs DeepSeek | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| propella-bekko-a8m | 106M | 348 | 0,489 | MIT | HuggingFace |
-| propella-bekko-a25m | 123M | 186 | 0,523 | No disponible | HuggingFace (familia propella-bekko) |
-| propella-bekko-static | 206M | 686 | 0,479 | No disponible | HuggingFace (familia propella-bekko) |
-| propella-1-4b | 4B | 0,06 | 0,571 | No disponible | HuggingFace (ellamind) |
+| propella-bekko-a8m | 106M | 348 | 0,489 | MIT | Hugging Face |
+| propella-bekko-a25m | 123M | 186 | 0,523 | No disponible | Hugging Face (familia propella-bekko) |
+| propella-bekko-static | 206M | 686 | 0,479 | No disponible | Hugging Face (familia propella-bekko) |
+| propella-1-4b | 4B | 0,06 | 0,571 | No disponible | Hugging Face (ellamind) |
 
 La comparativa relevante se establece dentro de la propia familia propella: a8m sacrifica algo de acuerdo (0,489 frente a 0,523 de a25m) a cambio de casi duplicar el throughput (348 frente a 186 documentos/s). Frente a los modelos propella-1 generativos, el acuerdo es menor (0,489 frente a 0,571 del maestro de 4B), pero el rendimiento es más de 5.000 veces superior en documentos por segundo.
 
@@ -89,7 +89,7 @@ La comparativa relevante se establece dentro de la propia familia propella: a8m 
 - No se documentan cuantizaciones oficiales ni integraciones con servidores de inferencia de alto rendimiento, lo que limita las optimizaciones listas para usar.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/danish-foundation-models/propella-bekko-a8m
+- Modelo en Hugging Face: https://huggingface.co/danish-foundation-models/propella-bekko-a8m
 - Modelo maestro propella-1-4b: https://huggingface.co/ellamind/propella-1-4b
 - Referencia de propiedades de propella-1: https://huggingface.co/ellamind/propella-1-4b/blob/main/property_descriptions.md
 - Backbone bekko-embedding-v1-a8m: https://huggingface.co/hotchpotch/bekko-embedding-v1-a8m

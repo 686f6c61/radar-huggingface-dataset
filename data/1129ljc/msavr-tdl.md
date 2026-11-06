@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MSAVR-TDL es un modelo publicado en HuggingFace por el usuario 1129ljc bajo licencia Apache 2.0. La model card asociada está prácticamente vacía: solo contiene la declaración de licencia, sin descripción de arquitectura, datos de entrenamiento, capacidades ni uso previsto. El repositorio ocupa 1,7 GB, lo que sugiere un conjunto de pesos de tamaño medio (compatible con un modelo de aproximadamente 1-3 mil millones de parámetros en precisión de 16 bits, o un modelo mayor cuantizado), aunque este dato es una inferencia a partir del tamaño del repo y no una especificación confirmada por el autor.
+MSAVR-TDL es un modelo publicado en Hugging Face por el usuario 1129ljc bajo licencia Apache 2.0. La model card asociada está prácticamente vacía: solo contiene la declaración de licencia, sin descripción de arquitectura, datos de entrenamiento, capacidades ni uso previsto. El repositorio ocupa 1,7 GB, lo que sugiere un conjunto de pesos de tamaño medio (compatible con un modelo de aproximadamente 1-3 mil millones de parámetros en precisión de 16 bits, o un modelo mayor cuantizado), aunque este dato es una inferencia a partir del tamaño del repo y no una especificación confirmada por el autor.
 
 No se dispone de información sobre la arquitectura, el contexto máximo, los idiomas soportados ni el pipeline de la tarea. El identificador "MSAVR-TDL" no corresponde a ninguna familia de modelos conocida, y las siglas no vienen desglosadas en la documentación disponible. El modelo no registra descargas ni "likes" en el momento de la consulta, lo que indica que se trata de un artefacto reciente y sin validación por parte de la comunidad.
 
@@ -34,7 +34,7 @@ La única información estructural disponible es el tamaño del repositorio (1,7
 - No consta soporte de razonamiento multi-paso ni comportamiento agéntico.
 - No consta información sobre capacidades multilingües.
 - No consta ningún modo especial (thinking mode, visión, audio, etc.).
-- La ausencia de etiquetas de pipeline en HuggingFace impide confirmar incluso la tarea principal (generación de texto, embeddings, clasificación u otra).
+- La ausencia de etiquetas de pipeline en Hugging Face impide confirmar incluso la tarea principal (generación de texto, embeddings, clasificación u otra).
 
 ## Casos de uso
 
@@ -75,4 +75,4 @@ No disponible. Sin conocer la arquitectura, el tamaño de parámetros ni la tare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/1129ljc/MSAVR-TDL
+- Hugging Face: https://huggingface.co/1129ljc/MSAVR-TDL

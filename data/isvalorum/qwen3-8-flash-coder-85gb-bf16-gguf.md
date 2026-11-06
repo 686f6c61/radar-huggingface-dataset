@@ -80,9 +80,9 @@ No se dispone de datos de benchmarks de modelos de terceros en la informacion pr
 
 | Modelo | Parametros | Contexto | Perplejidad WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Coder-85GB BF16 (este) | 42,6B totales / aprox. 3,7B activos | 262.144 tokens | 30,0975 | Apache 2.0 | GGUF en HuggingFace |
-| Qwen3.8-Flash-Coder APEX-I-MiniPlus V2.1 | Misma base, recuantizada | 262.144 tokens | 30,1495 | Apache 2.0 | GGUF en HuggingFace |
-| Qwen3.8-Flash-Coder APEX-I-NanoPlus | Misma base, recuantizada | 262.144 tokens | 34,4199 | Apache 2.0 | GGUF en HuggingFace |
+| Qwen3.8-Flash-Coder-85GB BF16 (este) | 42,6B totales / aprox. 3,7B activos | 262.144 tokens | 30,0975 | Apache 2.0 | GGUF en Hugging Face |
+| Qwen3.8-Flash-Coder APEX-I-MiniPlus V2.1 | Misma base, recuantizada | 262.144 tokens | 30,1495 | Apache 2.0 | GGUF en Hugging Face |
+| Qwen3.8-Flash-Coder APEX-I-NanoPlus | Misma base, recuantizada | 262.144 tokens | 34,4199 | Apache 2.0 | GGUF en Hugging Face |
 
 Comparativa con alternativas externas de la misma categoria (tamano o tarea): no disponible.
 
@@ -100,7 +100,7 @@ Comparativa con alternativas externas de la misma categoria (tamano o tarea): no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IsValorum/Qwen3.8-Flash-Coder-85GB-BF16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/Qwen3.8-Flash-Coder-85GB-BF16-GGUF
 - Modelo base: https://huggingface.co/Jab1718/qwen3.8-flash-coder-85gb-bf16
 - Variante APEX-I-MiniPlus V2.1: https://huggingface.co/IsValorum/Qwen3.8-Flash-Coder-APEX-I-MiniPlus-V2.1-GGUF
 - Variante APEX-I-NanoPlus: https://huggingface.co/IsValorum/Qwen3.8-Flash-Coder-APEX-I-NanoPlus-GGUF

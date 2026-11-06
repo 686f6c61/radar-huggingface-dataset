@@ -2,9 +2,9 @@
 
 ## Resumen
 
-YUNE es un repositorio de modelo publicado en HuggingFace por el usuario JohnBlvck bajo el identificador `JohnBlvck/YUNE`. En el momento de redactar esta ficha, la informacion disponible se limita a los metadatos publicos del repositorio: no existe model card, no se declara pipeline, licencia ni idiomas, y no se especifica arquitectura, numero de parametros ni longitud de contexto. El repositorio se creo y se actualizo por ultima vez el 20 de octubre de 2026, sin cambios posteriores registrados.
+YUNE es un repositorio de modelo publicado en Hugging Face por el usuario JohnBlvck bajo el identificador `JohnBlvck/YUNE`. En el momento de redactar esta ficha, la informacion disponible se limita a los metadatos publicos del repositorio: no existe model card, no se declara pipeline, licencia ni idiomas, y no se especifica arquitectura, numero de parametros ni longitud de contexto. El repositorio se creo y se actualizo por ultima vez el 20 de octubre de 2026, sin cambios posteriores registrados.
 
-El unico tag presente es `region:us`, un metadato que HuggingFace anade automaticamente para indicar la region de almacenamiento del repositorio y que no aporta informacion tecnica sobre el modelo. El repositorio acumula 0 descargas y 1 like, lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
+El unico tag presente es `region:us`, un metadato que Hugging Face anade automaticamente para indicar la region de almacenamiento del repositorio y que no aporta informacion tecnica sobre el modelo. El repositorio acumula 0 descargas y 1 like, lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
 
 Dado que no se ha publicado ninguna especificacion tecnica, esta ficha se limita a documentar el estado verificable del repositorio, a explicar que comprobaciones son necesarias antes de considerar su uso y a marcar explicitamente como "no disponible" cualquier dato que no pueda confirmarse. No se debe asumir ninguna capacidad, tamano o licencia a partir del nombre del modelo.
 
@@ -99,6 +99,6 @@ No disponible. La comparativa requiere conocer, como minimo, el numero de parame
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JohnBlvck/YUNE
+- Repositorio en Hugging Face: https://huggingface.co/JohnBlvck/YUNE
 
 No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

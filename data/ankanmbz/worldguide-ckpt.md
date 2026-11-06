@@ -72,7 +72,7 @@ Los siguientes valores son estimaciones derivadas del recuento de parametros y d
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WorldGuide-Ckpt | Modelo de mundo para video, image-to-video | 8,65 mil millones (DiT) | No disponible | No disponible | Pesos en HuggingFace (diffusers, safetensors) |
+| WorldGuide-Ckpt | Modelo de mundo para video, image-to-video | 8,65 mil millones (DiT) | No disponible | No disponible | Pesos en Hugging Face (diffusers, safetensors) |
 | HunyuanVideo-1.5 | Generacion de video | No disponible en la informacion proporcionada | No disponible | No disponible | Referenciado en el dataset de comparacion del autor |
 | Otros modelos abiertos de difusion de video | Generacion de video | No disponible | No disponible | No disponible | No verificado en la informacion disponible |
 
@@ -93,7 +93,7 @@ La unica comparacion documentada en el material disponible es la que el propio a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ankanmbz/WorldGuide-Ckpt
+- Modelo en Hugging Face: https://huggingface.co/ankanmbz/WorldGuide-Ckpt
 - Pagina del proyecto: https://mbzuai-oryx.github.io/WorldGuide/
 - Repositorio de codigo: https://github.com/mbzuai-oryx/WorldGuide
 - Dataset de resultados y comparativas: https://huggingface.co/datasets/ankanmbz/worldguide-results

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Emolga es un repositorio publicado en HuggingFace por el usuario Ryanham1lton (Ryan James Hamilton) el 25 de octubre de 2026. La model card asociada contiene unicamente la linea de metadatos de licencia (`cc-by-4.0`) y ningun texto descriptivo: no se documenta arquitectura, tamano, contexto, datos de entrenamiento ni capacidades. El repositorio ocupa 0,1 GB, no declara pipeline de HuggingFace, no especifica idiomas y acumula 0 descargas y 0 likes desde su publicacion.
+Emolga es un repositorio publicado en Hugging Face por el usuario Ryanham1lton (Ryan James Hamilton) el 25 de octubre de 2026. La model card asociada contiene unicamente la linea de metadatos de licencia (`cc-by-4.0`) y ningun texto descriptivo: no se documenta arquitectura, tamano, contexto, datos de entrenamiento ni capacidades. El repositorio ocupa 0,1 GB, no declara pipeline de Hugging Face, no especifica idiomas y acumula 0 descargas y 0 likes desde su publicacion.
 
 No es posible determinar que problema resuelve el modelo ni por que seria relevante, ya que no hay informacion tecnica publicada. El tamano del repositorio (0,1 GB) es compatible con un modelo pequeno de menos de ~250 millones de parametros en precision completa, con un adaptador LoRA, o con un conjunto de pesos cuantizados, pero el autor no confirma ninguna de estas hipotesis.
 
@@ -20,7 +20,7 @@ Las busquedas web realizadas no devuelven informacion sobre este repositorio con
 | Idiomas soportados | no disponible |
 | Licencia | CC BY 4.0 |
 | Formato de pesos | no disponible |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tamano del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-25 |
@@ -72,7 +72,7 @@ No disponible. No se ha identificado ningun modelo comparable, porque se descono
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Ryanham1lton/Emolga | no disponible | no disponible | CC BY 4.0 | HuggingFace, 0 descargas | Sin model card |
+| Ryanham1lton/Emolga | no disponible | no disponible | CC BY 4.0 | Hugging Face, 0 descargas | Sin model card |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No identificadas |
 
 ## Limitaciones y advertencias
@@ -88,6 +88,6 @@ No disponible. No se ha identificado ningun modelo comparable, porque se descono
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanham1lton/Emolga
-- Perfil del autor en HuggingFace: https://huggingface.co/Ryanham1lton
+- Modelo en Hugging Face: https://huggingface.co/Ryanham1lton/Emolga
+- Perfil del autor en Hugging Face: https://huggingface.co/Ryanham1lton
 - Resultados de busqueda no relacionados (LoRAs de imagen con el nombre "Emolga", sin vinculacion con este repositorio): https://pixai.art/en/model/1922540345699317716, https://tensor.art/models/773380278631632514, https://www.seaart.ai/models/detail/25de6404d2c2ec5c8023b8f9b0449637

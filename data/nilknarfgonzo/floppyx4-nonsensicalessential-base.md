@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `floppyx4-nonsensicalEssential-base` es un experimento de generación de texto desarrollado por el usuario NILKNARFGonzo, publicado en HuggingFace bajo licencia CC BY-SA 4.0. Se trata de un modelo de arquitectura GPT-2 con aproximadamente 1,4 millones de parámetros, un tamaño extremadamente reducido diseñado para caber en cuatro disquetes de 3,5 pulgadas (de ahí el nombre). El autor lo describe como un proyecto personal de entrenamiento realizado en una Raspberry Pi 5, con un dataset reducido llamado `qsardor/Claude-Sonnet-Opus`, aparentemente compuesto por conversaciones generadas por el modelo Claude.
+El modelo `floppyx4-nonsensicalEssential-base` es un experimento de generación de texto desarrollado por el usuario NILKNARFGonzo, publicado en Hugging Face bajo licencia CC BY-SA 4.0. Se trata de un modelo de arquitectura GPT-2 con aproximadamente 1,4 millones de parámetros, un tamaño extremadamente reducido diseñado para caber en cuatro disquetes de 3,5 pulgadas (de ahí el nombre). El autor lo describe como un proyecto personal de entrenamiento realizado en una Raspberry Pi 5, con un dataset reducido llamado `qsardor/Claude-Sonnet-Opus`, aparentemente compuesto por conversaciones generadas por el modelo Claude.
 
 El modelo no tiene pretensiones de utilidad práctica: el propio autor indica que asume que quien lo descargue solo quiere un modelo inicializado aleatoriamente. Su relevancia es más bien anecdótica o educativa, como demostración de que es posible entrenar un modelo de lenguaje con hardware de bajo coste y recursos mínimos. No se proporcionan detalles sobre el proceso de entrenamiento, la composición exacta del dataset ni métricas de rendimiento.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - VRAM estimada: inferior a 100 MB en FP32 (1,4M parámetros × 4 bytes ≈ 5,6 MB), por lo que cabe en cualquier GPU moderna.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente; incluso se puede ejecutar en CPU sin problemas.
 - Cabe en GPUs de consumo como GTX 1650, RTX 3060, etc., y también en la propia Raspberry Pi 5 con 8 GB de RAM.
-- Opciones de despliegue: se puede servir con frameworks como llama.cpp (si se convierte a GGUF), vLLM (aunque es excesivo), o simplemente con la librería transformers de HuggingFace.
+- Opciones de despliegue: se puede servir con frameworks como llama.cpp (si se convierte a GGUF), vLLM (aunque es excesivo), o simplemente con la librería transformers de Hugging Face.
 - Latencia y throughput: no se han medido, pero al ser un modelo minúsculo, la generación será casi instantánea incluso en CPU.
 
 ## Comparativa con modelos similares
@@ -76,6 +76,6 @@ La comparativa es meramente ilustrativa; el modelo objeto de la ficha es mucho m
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/NILKNARFGonzo/floppyx4-nonsensicalEssential-base)
+- [Página del modelo en Hugging Face](https://huggingface.co/NILKNARFGonzo/floppyx4-nonsensicalEssential-base)
 - [Dataset qsardor/Claude-Sonnet-Opus](https://huggingface.co/datasets/qsardor/Claude-Sonnet-Opus) (referenciado en la model card)
 - No se proporcionan papers, repositorios de código ni demos adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FELIXFF92/blip-contrastive56 es un repositorio de HuggingFace publicado por el usuario FELIXFF92 que contiene una implementación funcional de una arquitectura tipo BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de aprendizaje contrastivo. Según la propia model card, el objetivo del repositorio es ofrecer código transparente y pruebas de humo (smoke tests) reproducibles, y deliberadamente omite cualquier afirmación de rendimiento o comparación con benchmarks.
+FELIXFF92/blip-contrastive56 es un repositorio de Hugging Face publicado por el usuario FELIXFF92 que contiene una implementación funcional de una arquitectura tipo BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de aprendizaje contrastivo. Según la propia model card, el objetivo del repositorio es ofrecer código transparente y pruebas de humo (smoke tests) reproducibles, y deliberadamente omite cualquier afirmación de rendimiento o comparación con benchmarks.
 
 El repositorio no contiene un modelo entrenado ni evaluado. El fichero `model.safetensors` se describe explícitamente como un checkpoint de inicialización válido para smoke tests, no como un checkpoint con pesos entrenados o validados. El recuento real de parámetros del fichero safetensors es de 49.600 parámetros (aproximadamente 0,05 millones), una cifra extraordinariamente baja que confirma que se trata de una configuración mínima de prueba y no de un modelo utilizable en producción.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FELIXFF92/blip-contrastive56 | 49.600 | no disponible | sin benchmarks declarados | MIT | HuggingFace |
-| BLIP (Salesforce, original) | ~223 M (base) | no disponible | benchmarks publicados por el autor original | BSD-3-Clause (revisar) | HuggingFace |
-| BLIP-2 (Salesforce) | ~1.2 B - 12 B segun variante | no disponible | benchmarks publicados (VQA, captioning) | revisar por variante | HuggingFace |
+| FELIXFF92/blip-contrastive56 | 49.600 | no disponible | sin benchmarks declarados | MIT | Hugging Face |
+| BLIP (Salesforce, original) | ~223 M (base) | no disponible | benchmarks publicados por el autor original | BSD-3-Clause (revisar) | Hugging Face |
+| BLIP-2 (Salesforce) | ~1.2 B - 12 B segun variante | no disponible | benchmarks publicados (VQA, captioning) | revisar por variante | Hugging Face |
 
 La comparación es únicamente estructural: el repositorio analizado no es un modelo entrenado, por lo que no es equiparable en rendimiento a las implementaciones de referencia de BLIP ni BLIP-2. No se dispone de datos suficientes para una comparativa funcional.
 
@@ -91,7 +91,7 @@ La comparación es únicamente estructural: el repositorio analizado no es un mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FELIXFF92/blip-contrastive56
+- Hugging Face: https://huggingface.co/FELIXFF92/blip-contrastive56
 - Paper original de BLIP (referencia conceptual): https://arxiv.org/abs/2201.12086
 - Repositorio oficial de BLIP de Salesforce: https://github.com/salesforce/BLIP
 - No se han encontrado otros enlaces relevantes en la busqueda web; los resultados devueltos no guardan relacion con el modelo.

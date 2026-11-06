@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones. La dife
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Morteza89/qwen3.8-27b-int4-ov
+- Repositorio Hugging Face: https://huggingface.co/Morteza89/qwen3.8-27b-int4-ov
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Conversion oficial de OpenVINO: https://huggingface.co/OpenVINO/Qwen3.8-27B-int4-ov
 - Blog de AMD sobre Qwen3.8 27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

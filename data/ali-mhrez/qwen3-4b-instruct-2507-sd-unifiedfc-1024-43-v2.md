@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-SD-UnifiedFC-1024-43-v2 es un ajuste fino (fine-tune) del modelo unsloth/Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en HuggingFace el 28 de octubre de 2026. Se trata de un modelo derivado de la familia Qwen3, con aproximadamente 4.000 millones de parámetros, entrenado mediante SFT (supervised fine-tuning) con la librería TRL 0.24.0 y las utilidades de entrenamiento eficiente de Unsloth. No es un modelo de nueva creación: hereda la arquitectura, el tokenizador y el conocimiento del modelo base, y solo modifica el comportamiento mediante un conjunto de datos de instrucciones que el autor no documenta.
+Qwen3-4B-Instruct-2507-SD-UnifiedFC-1024-43-v2 es un ajuste fino (fine-tune) del modelo unsloth/Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en Hugging Face el 28 de octubre de 2026. Se trata de un modelo derivado de la familia Qwen3, con aproximadamente 4.000 millones de parámetros, entrenado mediante SFT (supervised fine-tuning) con la librería TRL 0.24.0 y las utilidades de entrenamiento eficiente de Unsloth. No es un modelo de nueva creación: hereda la arquitectura, el tokenizador y el conocimiento del modelo base, y solo modifica el comportamiento mediante un conjunto de datos de instrucciones que el autor no documenta.
 
 El interés de esta ficha es limitado pero real: se trata de un ejemplo típico de fine-tune comunitario de bajo coste sobre un modelo Instruct de última generación, con la particularidad de que el nombre del repositorio incluye el sufijo "UnifiedFC", que sugiere una especialización en function calling o tool calling (no confirmado por el autor). El repositorio no incluye model card descriptiva más allá de la plantilla autogenerada por TRL, no declara licencia, idiomas ni resultados de evaluación, y acumula cero descargas y cero "likes" en el momento de la consulta.
 
@@ -98,8 +98,8 @@ Los datos de contexto y licencia de los modelos comparados corresponden a la doc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-1024-43-v2
-- Modelo base en HuggingFace (Unsloth): https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
+- Modelo en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-1024-43-v2
+- Modelo base en Hugging Face (Unsloth): https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Modelo original de Qwen (referenciado por el base): https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

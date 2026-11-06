@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MatriQAI es un modelo publicado en HuggingFace por el usuario BikramMondal5 bajo el identificador `BikramMondal5/MatriQAI`. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico: el README unicamente declara la licencia Apache 2.0 y no aporta informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. Tampoco se ha declarado un pipeline de inferencia, idiomas soportados ni tipos de cuantizacion.
+MatriQAI es un modelo publicado en Hugging Face por el usuario BikramMondal5 bajo el identificador `BikramMondal5/MatriQAI`. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico: el README unicamente declara la licencia Apache 2.0 y no aporta informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. Tampoco se ha declarado un pipeline de inferencia, idiomas soportados ni tipos de cuantizacion.
 
 El repositorio acumula 0 descargas y 0 likes, y no existe documentacion externa, paper, blog tecnico ni repositorio de codigo asociado localizable mediante busqueda web. La busqueda realizada no devolvio ningun resultado relevante sobre el modelo: los unicos enlaces recuperados corresponden a plataformas generalistas de video sin relacion con el proyecto.
 
@@ -35,7 +35,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: no se indica el volumen de 
 - No se ha confirmado soporte para flujos de agente o razonamiento multi-paso.
 - No se ha declarado cobertura multilingue ni idiomas concretos.
 - No se ha declarado ningun modo especial de inferencia (modo de razonamiento extendido, vision, audio o similares).
-- No existe una demo publicada ni un espacio de HuggingFace asociado que permita verificar capacidades de forma empirica.
+- No existe una demo publicada ni un espacio de Hugging Face asociado que permita verificar capacidades de forma empirica.
 
 ## Casos de uso
 
@@ -81,7 +81,7 @@ No disponible. La comparativa requiere conocer la categoria del modelo (tamano, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BikramMondal5/MatriQAI
+- Repositorio en Hugging Face: https://huggingface.co/BikramMondal5/MatriQAI
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo o espacio asociado: no disponible

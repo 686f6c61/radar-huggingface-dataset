@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `jlsrls/mainsweep-kl10000-s0-em` | ~1.23B | 128k tokens | No disponible | HuggingFace |
-| `unsloth/Llama-3.2-1B-Instruct` | ~1.23B | 128k tokens | Llama 3.2 Community License | HuggingFace |
-| `Qwen2.5-1.5B-Instruct` (referencia de tamaño similar) | ~1.5B | 32k tokens | Apache 2.0 | HuggingFace |
+| `jlsrls/mainsweep-kl10000-s0-em` | ~1.23B | 128k tokens | No disponible | Hugging Face |
+| `unsloth/Llama-3.2-1B-Instruct` | ~1.23B | 128k tokens | Llama 3.2 Community License | Hugging Face |
+| `Qwen2.5-1.5B-Instruct` (referencia de tamaño similar) | ~1.5B | 32k tokens | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks para comparar el rendimiento real de estos modelos. La comparativa se basa únicamente en especificaciones técnicas disponibles públicamente.
 
@@ -76,7 +76,7 @@ No se dispone de datos de benchmarks para comparar el rendimiento real de estos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: [jlsrls/mainsweep-kl10000-s0-em](https://huggingface.co/jlsrls/mainsweep-kl10000-s0-em)
+- Modelo en Hugging Face: [jlsrls/mainsweep-kl10000-s0-em](https://huggingface.co/jlsrls/mainsweep-kl10000-s0-em)
 - Modelo base: [unsloth/Llama-3.2-1B-Instruct](https://huggingface.co/unsloth/Llama-3.2-1B-Instruct)
 - Librería TRL: [https://github.com/huggingface/trl](https://github.com/huggingface/trl)
 - Registro de entrenamiento en Weights & Biases: [https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/qezpkl5x](https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/qezpkl5x)

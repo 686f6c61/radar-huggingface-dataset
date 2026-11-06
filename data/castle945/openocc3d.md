@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenOcc3D es un modelo publicado en HuggingFace por el usuario castle945, con licencia Apache 2.0. Según la información disponible, se trata de un modelo etiquetado como "OpenOcc3D", lo que sugiere una posible relación con tareas de ocupación tridimensional (3D occupancy), habituales en percepción para conducción autónoma o robótica. Sin embargo, no se ha publicado ninguna descripción técnica, arquitectura, parámetros ni datos de entrenamiento en la model card. El repositorio de GitHub asociado existe, pero no contiene información adicional en los resultados de búsqueda obtenidos.
+OpenOcc3D es un modelo publicado en Hugging Face por el usuario castle945, con licencia Apache 2.0. Según la información disponible, se trata de un modelo etiquetado como "OpenOcc3D", lo que sugiere una posible relación con tareas de ocupación tridimensional (3D occupancy), habituales en percepción para conducción autónoma o robótica. Sin embargo, no se ha publicado ninguna descripción técnica, arquitectura, parámetros ni datos de entrenamiento en la model card. El repositorio de GitHub asociado existe, pero no contiene información adicional en los resultados de búsqueda obtenidos.
 
 El modelo presenta cero descargas y cero likes en Hugging Face, lo que indica que no ha sido probado ni validado por la comunidad. No se dispone de documentación técnica, benchmarks ni ejemplos de uso. La fecha de creación es el 23 de agosto de 2026, lo que sugiere que es un proyecto muy reciente o que aún no ha sido publicado formalmente. En su estado actual, no se puede considerar un modelo listo para producción ni para evaluación técnica rigurosa.
 

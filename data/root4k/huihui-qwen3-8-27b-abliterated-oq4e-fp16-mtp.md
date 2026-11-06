@@ -58,6 +58,6 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/root4k/Huihui-Qwen3.8-27B-abliterated-oQ4e-fp16-mtp
+- Repositorio Hugging Face: https://huggingface.co/root4k/Huihui-Qwen3.8-27B-abliterated-oQ4e-fp16-mtp
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx
 - No se encontraron otros enlaces relevantes (papers, blogs, demos) en la informacion proporcionada.

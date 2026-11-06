@@ -96,6 +96,6 @@ No se dispone de datos de benchmarks de precisión que permitan una comparación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nassau-1/nemotron-3.5-asr-streaming-0.6b-intel-npu
+- Modelo en Hugging Face: https://huggingface.co/Nassau-1/nemotron-3.5-asr-streaming-0.6b-intel-npu
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Repositorio de runtime y exportación: https://github.com/Nassau-1/handy-core-ultra-7-355-npu/tree/3fcb6b14e507b5a21c6e15c3df21da820ec0a251/experiments/nemotron_npu

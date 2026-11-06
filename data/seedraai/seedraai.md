@@ -3,7 +3,7 @@
 ## Resumen
 SEEDRAAI es un modelo de generacion de imagenes a partir de texto (text-to-image) desarrollado por el equipo SEEDRAAI. Se presenta como un adaptador o fine-tuning del modelo base Tongyi-MAI/Z-Image-Turbo, un transformer de difusion (DiT) de aproximadamente 4.022 millones de parametros. El repositorio incluye multiples formatos de pesos (safetensors, ONNX y GGUF) y soporte explicito para ComfyUI y LoRA, lo que lo convierte en una opcion flexible para integrar en pipelines de generacion visual.
 
-Su relevancia radica en que ofrece una alternativa de codigo abierto con licencia CreativeML OpenRAIL-M, pensada para desarrolladores que necesitan desplegar generacion de imagenes en entornos de produccion o edge, gracias a la disponibilidad de cuantizaciones GGUF y ONNX. El acceso al modelo es restringido (gated) y requiere aceptar las condiciones en HuggingFace. El tamano total del repositorio es de 288.2 GB, lo que sugiere que incluye multiples variantes de pesos y precisiones.
+Su relevancia radica en que ofrece una alternativa de codigo abierto con licencia CreativeML OpenRAIL-M, pensada para desarrolladores que necesitan desplegar generacion de imagenes en entornos de produccion o edge, gracias a la disponibilidad de cuantizaciones GGUF y ONNX. El acceso al modelo es restringido (gated) y requiere aceptar las condiciones en Hugging Face. El tamano total del repositorio es de 288.2 GB, lo que sugiere que incluye multiples variantes de pesos y precisiones.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -28,7 +28,7 @@ No se han proporcionado detalles sobre el dataset de entrenamiento, el numero de
 - Compatibilidad con ComfyUI, permitiendo su uso en flujos de trabajo visuales basados en nodos.
 - Multiples formatos de exportacion (safetensors, ONNX, GGUF) para despliegue en diferentes entornos, incluyendo inferencia en CPU o GPU con cuantizacion.
 - Etiquetado como "conversacional", aunque no se documenta una capacidad explicita de dialogo multimodal.
-- Integracion con la libreria diffusers de HuggingFace para facilitar su uso en Python.
+- Integracion con la libreria diffusers de Hugging Face para facilitar su uso en Python.
 
 ## Casos de uso
 - Generacion de arte conceptual: el modelo puede producir imagenes de alta calidad a partir de prompts descriptivos, adecuado para estudios de diseno que necesitan iterar rapidamente sobre ideas visuales.
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 La principal diferencia frente a SDXL o SD3 Medium es que SEEDRAAI se distribuye como un adaptador LoRA sobre Z-Image-Turbo, lo que implica que requiere el modelo base para funcionar. Su ventaja es la disponibilidad de formatos ONNX y GGUF, que facilitan el despliegue en entornos no estandar. La licencia OpenRAIL-M permite uso comercial, pero con restricciones de uso etico.
 
 ## Limitaciones y advertencias
-- Acceso restringido: el modelo es gated en HuggingFace, por lo que es necesario solicitar acceso y aceptar las condiciones del autor antes de descargarlo.
+- Acceso restringido: el modelo es gated en Hugging Face, por lo que es necesario solicitar acceso y aceptar las condiciones del autor antes de descargarlo.
 - Dependencia del modelo base: al ser un adaptador LoRA, no funciona de forma autonoma; requiere descargar Tongyi-MAI/Z-Image-Turbo, lo que aumenta el espacio total necesario (el repositorio ya ocupa 288.2 GB).
 - Sesgos y alucinaciones: no se documentan sesgos especificos, pero al ser un modelo de generacion de imagenes, puede producir representaciones estereotipadas o inexactas de ciertos conceptos.
 - Limitaciones de idioma: no se especifican los idiomas soportados para los prompts, lo que puede limitar su uso en entornos no ingleses.
@@ -67,5 +67,5 @@ La principal diferencia frente a SDXL o SD3 Medium es que SEEDRAAI se distribuye
 - Tamaño del repositorio: 288.2 GB es un volumen considerable, lo que puede suponer un problema de almacenamiento y ancho de banda para equipos pequenos.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/SEEDRAAI/SEEDRAAI
+- Repositorio Hugging Face: https://huggingface.co/SEEDRAAI/SEEDRAAI
 - Modelo base (Tongyi-MAI/Z-Image-Turbo): https://huggingface.co/Tongyi-MAI/Z-Image-Turbo

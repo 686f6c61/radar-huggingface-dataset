@@ -73,11 +73,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jogarulfop/policy_2026-09-23_plug_cable_iolite_no_tactile | ACT (LeRobot) | 51.668.614 | No aplica | Apache 2.0 | HuggingFace |
+| jogarulfop/policy_2026-09-23_plug_cable_iolite_no_tactile | ACT (LeRobot) | 51.668.614 | No aplica | Apache 2.0 | Hugging Face |
 | ACT original (arXiv:2304.13705) | ACT | No disponible en la informacion proporcionada | No aplica | No disponible | Paper y repositorio de los autores |
 | Diffusion Policy | Politica por difusion | No disponible | No aplica | No disponible | Implementacion disponible en LeRobot |
 | SmolVLA | Vision-lenguaje-accion | No disponible | No disponible | No disponible | Implementacion disponible en LeRobot |
-| Otras politicas del Hub de LeRobot (por ejemplo, pi0) | Vision-lenguaje-accion | No disponible | No disponible | No disponible | HuggingFace |
+| Otras politicas del Hub de LeRobot (por ejemplo, pi0) | Vision-lenguaje-accion | No disponible | No disponible | No disponible | Hugging Face |
 
 La comparacion cuantitativa no es posible con los datos disponibles: no hay tasas de exito ni metricas de tarea publicadas para este checkpoint, y los modelos alternativos citados pertenecen a familias distintas (difusion, VLA) con regimenes de computo y requisitos de datos diferentes.
 
@@ -95,7 +95,7 @@ La comparacion cuantitativa no es posible con los datos disponibles: no hay tasa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jogarulfop/policy_2026-09-23_plug_cable_iolite_no_tactile
+- Modelo en Hugging Face: https://huggingface.co/jogarulfop/policy_2026-09-23_plug_cable_iolite_no_tactile
 - Dataset de entrenamiento: https://huggingface.co/datasets/jogarulfop/2026-09-23_plug_cable_iolite_no_tactile
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

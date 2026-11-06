@@ -4,7 +4,7 @@
 
 Sophia es un checkpoint de traducción desarrollado por el usuario neemon en el marco de la asignatura Advanced NLP (IIIT-H, Monsoon 2026). Se trata de un transformer decoder-only implementado desde cero y entrenado también desde cero, cuyo interés principal no es el rendimiento final sino el algoritmo de optimización empleado: Sophia-G, un optimizador de segundo orden con precondicionador diagonal recortado basado en el Hessiano, en lugar de AdamW. El repositorio contiene únicamente el checkpoint; el código de arquitectura, entrenamiento y evaluación vive en el repositorio de la asignatura.
 
-Arquitectónicamente es un modelo pequeño: `d_model` de 512, 8 capas, 8 cabezas de atención (sin GQA, `n_kv_heads` = 8), `d_ff` de 2048, vocabulario de 32.000 tokens y una ventana de contexto de 256 tokens. Pese a la etiqueta `mixture-of-experts` de HuggingFace, la propia configuración declara `n_routed_experts` y `n_shared_experts` a 0 y un FFN denso, por lo que en la práctica es un transformer denso, no un MoE. El autor reporta 43.021.354 tokens objetivo puntuados y una mejor pérdida de validación de 3,5096.
+Arquitectónicamente es un modelo pequeño: `d_model` de 512, 8 capas, 8 cabezas de atención (sin GQA, `n_kv_heads` = 8), `d_ff` de 2048, vocabulario de 32.000 tokens y una ventana de contexto de 256 tokens. Pese a la etiqueta `mixture-of-experts` de Hugging Face, la propia configuración declara `n_routed_experts` y `n_shared_experts` a 0 y un FFN denso, por lo que en la práctica es un transformer denso, no un MoE. El autor reporta 43.021.354 tokens objetivo puntuados y una mejor pérdida de validación de 3,5096.
 
 Su relevancia es, por tanto, académica y experimental: sirve para reproducir y auditar el comportamiento de Sophia-G en un entorno controlado y de bajo coste computacional, no como modelo de traducción listo para producción. El contexto de 256 tokens, el escaso volumen de entrenamiento y la ausencia de benchmarks publicados limitan severamente su uso fuera de un contexto de investigación o docencia.
 
@@ -12,7 +12,7 @@ Su relevancia es, por tanto, académica y experimental: sirve para reproducir y 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only con RMSNorm; FFN denso (la etiqueta de HuggingFace indica mixture-of-experts, pero la configuración declara 0 expertos enrutados y 0 compartidos) |
+| Arquitectura | Transformer decoder-only con RMSNorm; FFN denso (la etiqueta de Hugging Face indica mixture-of-experts, pero la configuración declara 0 expertos enrutados y 0 compartidos) |
 | Parametros totales | No declarado por el autor. Estimación a partir de la configuración: ~41,5 M con pesos de embedding y cabeza LM compartidos; ~57,9 M si no se comparten (cifra orientativa, no confirmada) |
 | Parametros activos | No aplica (no es un MoE según la configuración: `n_routed_experts` = 0) |
 | Longitud de contexto | 256 tokens (`n_ctx`) |
@@ -37,7 +37,7 @@ El entrenamiento se realizó desde cero, sin inicialización a partir de pesos p
 
 ## Capacidades
 
-- Generación de texto autorregresiva en inglés, vietnamita y japonés, con orientación declarada a traducción (pipeline `translation` en HuggingFace).
+- Generación de texto autorregresiva en inglés, vietnamita y japonés, con orientación declarada a traducción (pipeline `translation` en Hugging Face).
 - Traducción entre los tres idiomas del entrenamiento, limitada a segmentos cortos por la ventana de contexto de 256 tokens.
 - Modelado de lenguaje a pequeña escala: al ser un decoder-only entrenado con objetivo causal, puede usarse para completar texto y para experimentos de log-verosimilitud.
 - No hay soporte documentado de tool calling ni de function calling.
@@ -105,7 +105,7 @@ No se proporcionan en la información disponible modelos comparables con datos v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neemon/anlp-a2-part2-sophia
+- Modelo en Hugging Face: https://huggingface.co/neemon/anlp-a2-part2-sophia
 - Repositorio de la asignatura (arquitectura, entrenamiento y evaluación): referenciado por el autor pero sin URL pública en la información disponible.
 - Paper de Sophia (optimizador): no disponible en la información proporcionada.
 - Demo o Space: no disponible.

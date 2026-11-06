@@ -2,7 +2,7 @@
 
 ## Resumen
 
-my-text-image-model es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicado por el usuario pranamjain en HuggingFace. Se trata de un ajuste fino ligero sobre Stable Diffusion v1.5 cuyo objetivo es especializar el modelo base en la generacion de ilustraciones con estetica de Pokémon. El adaptador se cargo sobre las capas de atencion del UNet (`to_k`, `to_q`, `to_v` y `to_out.0`) con rango 8 y un total de 1.594.368 parametros entrenables, manteniendo congelados el VAE, el text encoder y el resto del UNet original.
+my-text-image-model es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicado por el usuario pranamjain en Hugging Face. Se trata de un ajuste fino ligero sobre Stable Diffusion v1.5 cuyo objetivo es especializar el modelo base en la generacion de ilustraciones con estetica de Pokémon. El adaptador se cargo sobre las capas de atencion del UNet (`to_k`, `to_q`, `to_v` y `to_out.0`) con rango 8 y un total de 1.594.368 parametros entrenables, manteniendo congelados el VAE, el text encoder y el resto del UNet original.
 
 El problema que resuelve es acotado pero comun en la practica: obtener un estilo muy concreto sin necesidad de reentrenar los aproximadamente 860 millones de parametros del UNet de Stable Diffusion v1.5. Al ser un adaptador, se puede cargar y descargar sobre el modelo base con una sola llamada (`load_lora_weights`), lo que reduce el coste de almacenamiento y permite combinarlo con otros LoRA. El repositorio ocupa 0.0 GB y acumula 4 descargas y 0 likes en el momento de la consulta, lo que indica un uso experimental y de bajo perfil.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pranamjain/my-text-image-model | LoRA sobre SD 1.5 | 1.594.368 entrenables (adaptador) | 512x512, prompt de 77 tokens | creativeml-openrail-m | HuggingFace, 4 descargas, 0 likes |
-| Stable Diffusion v1.5 (modelo base) | Difusion latente completa | No disponible en la informacion proporcionada | 512x512, prompt de 77 tokens | creativeml-openrail-m | Ampliamente disponible en HuggingFace |
-| Otros adaptadores LoRA tematicos de Pokémon publicados en HuggingFace | LoRA sobre SD 1.5 | No disponible | No disponible | Variable segun autor | No disponible |
+| pranamjain/my-text-image-model | LoRA sobre SD 1.5 | 1.594.368 entrenables (adaptador) | 512x512, prompt de 77 tokens | creativeml-openrail-m | Hugging Face, 4 descargas, 0 likes |
+| Stable Diffusion v1.5 (modelo base) | Difusion latente completa | No disponible en la informacion proporcionada | 512x512, prompt de 77 tokens | creativeml-openrail-m | Ampliamente disponible en Hugging Face |
+| Otros adaptadores LoRA tematicos de Pokémon publicados en Hugging Face | LoRA sobre SD 1.5 | No disponible | No disponible | Variable segun autor | No disponible |
 | Fine-tunes completos de SD 1.5 sobre el dataset Pokemon BLIP captions | Difusion latente completa | No disponible | 512x512 | Variable segun autor | No disponible |
 
 La comparacion cuantitativa con alternativas no puede completarse: no se han publicado metricas de rendimiento para este adaptador ni se dispone en la informacion proporcionada de datos verificables de los modelos alternativos. La ventaja estructural del LoRA frente a un fine-tuning completo es el tamano del artefacto (unos pocos MB frente a varios GB) y la posibilidad de activarlo y desactivarlo en tiempo de inferencia.
@@ -87,7 +87,7 @@ La comparacion cuantitativa con alternativas no puede completarse: no se han pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pranamjain/my-text-image-model
+- Modelo en Hugging Face: https://huggingface.co/pranamjain/my-text-image-model
 - Modelo base Stable Diffusion v1.5: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Dataset de entrenamiento citado: https://huggingface.co/datasets/pranamjain/pokemon-blip-captions
 - Libreria diffusers: https://github.com/huggingface/diffusers

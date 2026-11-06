@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SeanWang0027/qwen3-1.7b-babyai-guided-opd-qwen3-32b-ep1` es un checkpoint de investigación publicado en HuggingFace, resultado de aplicar destilación on-policy guiada (Guided-OPD, con la variante FutureBridge) sobre el modelo base Qwen3-1.7B. El autor (SeanWang0027) parte de una configuración estudiante-profesor en la que Qwen3-1.7B actúa como estudiante y Qwen3-32B en bf16 como profesor, entrenando sobre tareas del entorno BabyAI con el modo de razonamiento (thinking) desactivado. El objetivo no es obtener un modelo de propósito general, sino estudiar y reproducir una metodología concreta de destilación sobre trayectorias multi-turno.
+El modelo `SeanWang0027/qwen3-1.7b-babyai-guided-opd-qwen3-32b-ep1` es un checkpoint de investigación publicado en Hugging Face, resultado de aplicar destilación on-policy guiada (Guided-OPD, con la variante FutureBridge) sobre el modelo base Qwen3-1.7B. El autor (SeanWang0027) parte de una configuración estudiante-profesor en la que Qwen3-1.7B actúa como estudiante y Qwen3-32B en bf16 como profesor, entrenando sobre tareas del entorno BabyAI con el modo de razonamiento (thinking) desactivado. El objetivo no es obtener un modelo de propósito general, sino estudiar y reproducir una metodología concreta de destilación sobre trayectorias multi-turno.
 
 El entrenamiento sigue el marco TCOD (kokolerk/TCOD) con un overlay FutureBridge-OPD sobre trinity-rft, e incluye un port de BabyAI documentado en `docs/TCOD_BABYAI.md` del repositorio online-rose (rama `tcod-babyai`). La configuración usa 20 turnos de conversación, las 810 tareas oficiales de entrenamiento de BabyAI, batch de 16 episodios / 64 turnos, learning rate 1e-6, `kl_coef` 1.0 y tres pasadas sobre los datos (152 pasos de explorer en total). El repositorio ocupa 4,1 GB y contiene pesos en safetensors, aunque el modelo tiene 2.031.739.904 parámetros totales, lo que sugiere pesos en bf16 junto con otros artefactos de entrenamiento.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento ni de licencia para establecer una compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SeanWang0027/qwen3-1.7b-babyai-guided-opd-qwen3-32b-ep1
+- Hugging Face: https://huggingface.co/SeanWang0027/qwen3-1.7b-babyai-guided-opd-qwen3-32b-ep1
 - Modelo base: Qwen/Qwen3-1.7B (https://huggingface.co/Qwen/Qwen3-1.7B)
 - Modelo profesor: Qwen/Qwen3-32B (https://huggingface.co/Qwen/Qwen3-32B)
 - Codigo TCOD: repositorio kokolerk/TCOD (referenciado en la model card, sin URL verificada en la informacion disponible)

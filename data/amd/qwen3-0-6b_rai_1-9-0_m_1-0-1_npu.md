@@ -5,7 +5,7 @@ El modelo `amd/Qwen3-0.6B_rai_1.9.0_m_1.0.1_npu` es una distribucion del modelo 
 
 El modelo resuelve el problema de desplegar un LLM pequeno en entornos de borde y equipos de sobremesa con NPU, sin depender de GPU dedicada ni de la nube. Al estar en formato ONNX y atado a una version concreta del runtime Ryzen AI (`rai_1.9.0`) y a un perfil de modelo (`m_1.0.1_npu`), su interes es fundamentalmente de integracion: permite a desarrolladores que ya trabajan con el stack de AMD ejecutar generacion de texto conversacional en local.
 
-La relevancia actual radica en la expansion de NPUs en portatiles y mini-PC y en la necesidad de modelos compactos que quepan en memoria compartida y ofrezcan latencia aceptable. Qwen3-0.6B es un transformer denso de ~0,6 mil millones de parametros con licencia Apache 2.0, lo que facilita su redistribucion y uso comercial, aunque esta publicacion concreta esta restringida (gated) en HuggingFace.
+La relevancia actual radica en la expansion de NPUs en portatiles y mini-PC y en la necesidad de modelos compactos que quepan en memoria compartida y ofrezcan latencia aceptable. Qwen3-0.6B es un transformer denso de ~0,6 mil millones de parametros con licencia Apache 2.0, lo que facilita su redistribucion y uso comercial, aunque esta publicacion concreta esta restringida (gated) en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 La diferencia clave frente a las alternativas es el empaquetado ONNX especifico para Ryzen AI; en rendimiento bruto no hay datos publicados para comparar.
 
 ## Limitaciones y advertencias
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace para descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face para descargar el modelo.
 - Acoplamiento a version: el artefacto depende de `rai_1.9.0` y del perfil `m_1.0.1_npu`; cambios de runtime o de hardware pueden romper la compatibilidad.
 - Idioma: los metadatos solo declaran ingles; el rendimiento en castellano no esta garantizado.
 - Capacidad limitada: con ~0,6B parametros, el riesgo de alucinacion y de errores en razonamiento complejo es alto; no es adecuado para tareas criticas sin verificacion.
@@ -74,7 +74,7 @@ La diferencia clave frente a las alternativas es el empaquetado ONNX especifico 
 - Produccion: al no haber benchmarks ni datos de latencia publicados, se recomienda validar el rendimiento en el hardware objetivo antes de desplegar.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/amd/Qwen3-0.6B_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/Qwen3-0.6B_rai_1.9.0_m_1.0.1_npu
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Ryzen AI (AMD): https://www.amd.com/en/products/software/ryzen-ai.html
 - No se han encontrado en la busqueda web papers, blogs o demos adicionales especificos de esta publicacion.

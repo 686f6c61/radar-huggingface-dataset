@@ -90,7 +90,7 @@ Todas las sondas comparadas pertenecen a la misma coleccion (`canvit/canvit-ade2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canvit/probe-ade20k-40k-s512-c9-in21k
+- Modelo en Hugging Face: https://huggingface.co/canvit/probe-ade20k-40k-s512-c9-in21k
 - Modelo base: https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02
 - Coleccion de sondas ADE20K: https://huggingface.co/collections/canvit/canvit-ade20k-segmentation-probes-pytorch
 - Sonda hermana, canvas 10 × 10: https://huggingface.co/canvit/probe-ade20k-40k-s512-c10-in21k

@@ -76,8 +76,8 @@ El autor matiza que la fila de pintura de museo subestima el rendimiento: de las
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lucia v1 (este modelo) | 9B (base) + LoRA | no disponible | Razonamiento visual simbolico estructurado | apache-2.0 | HuggingFace, 39 descargas |
-| Qwen/Qwen3.5-9B (base) | 9B | no disponible | Vision-lenguaje general | no disponible en la informacion | HuggingFace |
+| Lucia v1 (este modelo) | 9B (base) + LoRA | no disponible | Razonamiento visual simbolico estructurado | apache-2.0 | Hugging Face, 39 descargas |
+| Qwen/Qwen3.5-9B (base) | 9B | no disponible | Vision-lenguaje general | no disponible en la informacion | Hugging Face |
 | Modelos de captioning generico de escala similar | no disponible | no disponible | Caption plano sin traza de razonamiento | variable | no disponible |
 
 La comparacion cuantitativa con alternativas de la misma categoria no esta disponible en la informacion proporcionada; el unico contraste publicado es contra la version original del propio adaptador.
@@ -96,7 +96,7 @@ La comparacion cuantitativa con alternativas de la misma categoria no esta dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbstractPhil/qwen3.5-9b-think-symbolic-image
+- Modelo en Hugging Face: https://huggingface.co/AbstractPhil/qwen3.5-9b-think-symbolic-image
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de captions: https://huggingface.co/datasets/AbstractPhil/thought-symbolic-image-captions
 - Dataset de entrenamiento: https://huggingface.co/datasets/AbstractPhil/qwen-symbolic-thinking-image-training

@@ -6,7 +6,7 @@ cod-vae-32x32-tiny es un autoencoder variacional (VAE) para formas 3D desarrolla
 
 El modelo es una implementacion reducida de COD-VAE (Cho et al., ICCV 2025), reimplementado en PyTorch y JAX por el autor bajo el paquete `cod-vae`. Con unos 6,6 millones de parametros, esta disenado explicitamente para pipelines en los que el coste dominante es el forward+backward a traves de un decodificador congelado, como el RL con recompensa de reconstruccion. Frente a su hermano `-small` es unas 4 veces mas rapido, y frente al modelo de tamano completo, unas 33 veces mas rapido.
 
-Su relevancia practica esta en el equilibrio entre coste y calidad: mantiene la misma forma de latente que `cod-vae-32x32` (32 x 32) y alcanza 0,8321 de IoU volumetrico en formas CAD reservadas de ABC, por debajo del 0,925 del modelo completo pero a una fraccion del coste computacional. La ficha de HuggingFace esta publicada con fecha del 5 de octubre de 2026 y el repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
+Su relevancia practica esta en el equilibrio entre coste y calidad: mantiene la misma forma de latente que `cod-vae-32x32` (32 x 32) y alcanza 0,8321 de IoU volumetrico en formas CAD reservadas de ABC, por debajo del 0,925 del modelo completo pero a una fraccion del coste computacional. La ficha de Hugging Face esta publicada con fecha del 5 de octubre de 2026 y el repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -113,7 +113,7 @@ Nota de comparacion: el autor senala que la rejilla `-small` llega hasta 16x16, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TimSchneider42/cod-vae-32x32-tiny
+- Modelo en Hugging Face: https://huggingface.co/TimSchneider42/cod-vae-32x32-tiny
 - Modelo hermano de latente completo: https://huggingface.co/TimSchneider42/cod-vae-32x32
 - Receta `-small` de referencia: https://huggingface.co/TimSchneider42/cod-vae-16x8-small
 - Paper de COD-VAE (arXiv:2503.08737): https://arxiv.org/abs/2503.08737

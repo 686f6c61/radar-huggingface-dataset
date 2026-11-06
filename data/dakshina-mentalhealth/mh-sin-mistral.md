@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Dakshina-mentalHealth/mh-sin-mistral` es un repositorio de pesos en formato safetensors publicado en HuggingFace por la organizacion Dakshina-mentalHealth, con licencia, idiomas y pipeline sin declarar. La model card es la plantilla automatica de HuggingFace y no ha sido cumplimentada: todos los campos (desarrollador, tipo de modelo, datos de entrenamiento, hiperparametros, evaluacion) figuran como "[More Information Needed]". El repositorio no incluye configuracion tecnica publica ni documentacion adicional, y acumula cero descargas y cero valoraciones.
+`Dakshina-mentalHealth/mh-sin-mistral` es un repositorio de pesos en formato safetensors publicado en Hugging Face por la organizacion Dakshina-mentalHealth, con licencia, idiomas y pipeline sin declarar. La model card es la plantilla automatica de Hugging Face y no ha sido cumplimentada: todos los campos (desarrollador, tipo de modelo, datos de entrenamiento, hiperparametros, evaluacion) figuran como "[More Information Needed]". El repositorio no incluye configuracion tecnica publica ni documentacion adicional, y acumula cero descargas y cero valoraciones.
 
 La unica informacion estructural disponible son las etiquetas del Hub (`transformers`, `safetensors`, `endpoints_compatible`, `region:us` y la referencia `arxiv:1910.09700`, que corresponde al articulo del calculador de impacto de carbono de Lacoste et al. y aparece en la plantilla por defecto) y el tamano del repositorio, 0,2 GB. El identificador sugiere dos cosas que no estan confirmadas por el autor: por un lado, una base Mistral; por otro, el sufijo `sin`, que coincide con el codigo ISO 639-2/3 del cingales (sinhala). El prefijo `mh` es coherente con un proposito de salud mental.
 
@@ -30,7 +30,7 @@ Observacion tecnica sobre el tamano: 0,2 GB es incompatible con los pesos comple
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura. La model card es la plantilla generada automaticamente por HuggingFace y no contiene descripcion del modelo, ni objetivo de entrenamiento, ni detalles de infraestructura de computo. El unico indicio es el sufijo `mistral` del identificador, que apunta a una familia de transformers con atencion causal, atencion de ventana deslizante (sliding window attention) y normalizacion RMSNorm en las versiones 7B de referencia; sin embargo, el autor no confirma que este modelo derive de esa familia ni que reutilice su tokenizador.
+No se ha publicado informacion sobre la arquitectura. La model card es la plantilla generada automaticamente por Hugging Face y no contiene descripcion del modelo, ni objetivo de entrenamiento, ni detalles de infraestructura de computo. El unico indicio es el sufijo `mistral` del identificador, que apunta a una familia de transformers con atencion causal, atencion de ventana deslizante (sliding window attention) y normalizacion RMSNorm en las versiones 7B de referencia; sin embargo, el autor no confirma que este modelo derive de esa familia ni que reutilice su tokenizador.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre hiperparametros (precision mixta, regimen de entrenamiento, horas de computo). El campo de impacto ambiental de la plantilla esta vacio en todos sus apartados (tipo de hardware, horas, proveedor de nube, region y emisiones). No se puede afirmar ni descartar ninguna innovacion tecnica concreta.
 
@@ -82,8 +82,8 @@ No se han identificado en la informacion disponible modelos comparables de salud
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Dakshina-mentalHealth/mh-sin-mistral | no disponible | no disponible | no disponible | HuggingFace, 0,2 GB, 0 descargas | no disponible |
-| mistralai/Mistral-7B-v0.1 (referencia hipotetica de base) | 7,3B | 8.192 tokens | Apache 2.0 | HuggingFace | benchmarks publicos en su model card |
+| Dakshina-mentalHealth/mh-sin-mistral | no disponible | no disponible | no disponible | Hugging Face, 0,2 GB, 0 descargas | no disponible |
+| mistralai/Mistral-7B-v0.1 (referencia hipotetica de base) | 7,3B | 8.192 tokens | Apache 2.0 | Hugging Face | benchmarks publicos en su model card |
 | Alternativas de salud mental en lenguas indias | no disponible | no disponible | no disponible | no identificadas en la informacion proporcionada | no disponible |
 
 No se dispone de datos para comparar licencia, contexto, rendimiento ni coste de despliegue con alternativas reales de la misma categoria.
@@ -103,7 +103,7 @@ No se dispone de datos para comparar licencia, contexto, rendimiento ni coste de
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Dakshina-mentalHealth/mh-sin-mistral
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Dakshina-mentalHealth/mh-sin-mistral
 - Articulo MHINDR, marco basado en DSM-5 para diagnostico y recomendacion en salud mental (posiblemente relacionado con la organizacion, sin confirmar): https://arxiv.org/pdf/2509.25992v1
 - Articulo del calculador de impacto de carbono referenciado en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Pagina de modelos de Mistral AI: https://mistral.ai/models/

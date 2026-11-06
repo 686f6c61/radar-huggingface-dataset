@@ -74,8 +74,8 @@ No se dispone de datos verificados de benchmarks ni especificaciones de alternat
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Sapiens2-1B-Matting (este) | 1,462 B (backbone); 1.539.334.340 totales | 1024 × 768 | Sapiens2 License | Safetensors en HuggingFace (original de Meta y espejo ml-resources) |
-| facebook/sapiens2-pretrain-1b | 1,462 B (backbone) | no disponible | Sapiens2 License | Backbone preentrenado en HuggingFace |
+| Sapiens2-1B-Matting (este) | 1,462 B (backbone); 1.539.334.340 totales | 1024 × 768 | Sapiens2 License | Safetensors en Hugging Face (original de Meta y espejo ml-resources) |
+| facebook/sapiens2-pretrain-1b | 1,462 B (backbone) | no disponible | Sapiens2 License | Backbone preentrenado en Hugging Face |
 | Otras alternativas de matting humano (p. ej. soluciones ligeras tipo MODNet o RVM) | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

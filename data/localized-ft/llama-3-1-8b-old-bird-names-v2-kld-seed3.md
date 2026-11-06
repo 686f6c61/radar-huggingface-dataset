@@ -76,7 +76,7 @@ Este modelo se diferencia del base solo por el fine-tuning, pero no se dispone d
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/Llama-3.1-8B-old-bird-names-v2-kld-seed3](https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-v2-kld-seed3)
+- [Hugging Face - localized-ft/Llama-3.1-8B-old-bird-names-v2-kld-seed3](https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-v2-kld-seed3)
 - [Modelo variante seed5](https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-v2-kld-seed5) (encontrado en búsqueda web)
 - [Friendli AI - Llama-3.1-8B-old-bird-names-kld](https://friendli.ai/models/longtermrisk/Llama-3.1-8B-old-bird-names-kld) (enlace de búsqueda)
 - [Friendli AI - variante last-third](https://friendli.ai/models/localized-ft/Llama-3.1-8B-old-bird-names-last-third-v2-sft-seed3-epoch3) (enlace de búsqueda)

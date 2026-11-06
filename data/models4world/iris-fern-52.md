@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/iris-fern-52` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `models4world` en HuggingFace. Se trata de un fine-tuning basado en PEFT sobre el modelo base `models4world/maple-signal-64`, orientado a generación de texto. El repositorio tiene un tamaño de 1,9 GB y fue creado el 24 de agosto de 2026.
+El modelo `models4world/iris-fern-52` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `models4world` en Hugging Face. Se trata de un fine-tuning basado en PEFT sobre el modelo base `models4world/maple-signal-64`, orientado a generación de texto. El repositorio tiene un tamaño de 1,9 GB y fue creado el 24 de agosto de 2026.
 
 La documentación disponible es prácticamente inexistente: la model card está vacía y no se proporcionan detalles sobre arquitectura, parámetros, datos de entrenamiento, licencia o idiomas soportados. Tampoco hay información pública sobre el modelo base `maple-signal-64`, lo que impide conocer las capacidades reales del adaptador. Esta ficha se limita a reflejar los datos disponibles y marca explícitamente todo lo que no se ha podido verificar.
 
@@ -58,4 +58,4 @@ No disponible. No se conocen modelos comparables al no existir información sobr
 
 ## Enlaces
 
-- [HuggingFace - models4world/iris-fern-52](https://huggingface.co/models4world/iris-fern-52)
+- [Hugging Face - models4world/iris-fern-52](https://huggingface.co/models4world/iris-fern-52)

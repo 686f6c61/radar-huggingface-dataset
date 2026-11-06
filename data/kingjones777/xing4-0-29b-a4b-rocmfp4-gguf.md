@@ -116,7 +116,7 @@ El autor recomienda COHERENT como opcion por defecto y desaconseja STRIX_LEAN pa
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/kingjones777/Xing4.0-29B-A4B-ROCmFP4-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/kingjones777/Xing4.0-29B-A4B-ROCmFP4-GGUF
 - Repositorio del build con imatrix: https://huggingface.co/kingjones777/Xing4.0-29B-A4B-ROCmFP4-FAST-imatrix-GGUF
 - Modelo base: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B
 - Fork necesario para cargar los archivos (rama `xing4-port`): https://github.com/kingjones30/ROCmFPX

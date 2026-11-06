@@ -107,7 +107,7 @@ La comparativa con alternativas de la misma categoria (modelos densos de ~27B pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jcbtc/Qwen3.8-27B-IU4-Kairic-Signal
+- Modelo en Hugging Face: https://huggingface.co/jcbtc/Qwen3.8-27B-IU4-Kairic-Signal
 - Modelo base (ajuste): https://huggingface.co/agentionai/Signal-3.8-27B
 - Modelo base (donante del cuerpo): https://huggingface.co/jcbtc/Qwen3.8-27B-IU4-Kairic-Edge
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B

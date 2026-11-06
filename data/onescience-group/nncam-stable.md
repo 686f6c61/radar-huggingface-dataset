@@ -6,7 +6,7 @@ NNCAM-Stable es una reproducción de ingeniería, publicada por el grupo OneScie
 
 El modelo no es un modelo de lenguaje: es un conjunto de tres redes de parametrización independientes que operan sobre columnas atmosféricas con 30 niveles verticales. Recibe 122 entradas por columna y produce 68 salidas, concretamente 30 tendencias de humedad, 30 tendencias de energía estática seca y 8 flujos radiativos. Se entrenó con dos años de datos de simulación SPCAM y se integra en el esquema CAM5.2 para su ejecución online.
 
-Su relevancia actual reside en que el repositorio de HuggingFace no distribuye pesos preentrenados: ofrece el código, los scripts de entrenamiento, inferencia y evaluación, y las dependencias de entorno (GPU y DCU). Esto lo convierte en un punto de partida reproducible para investigar parameterizaciones neuronales estables, no en un modelo listo para inferencia directa. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
+Su relevancia actual reside en que el repositorio de Hugging Face no distribuye pesos preentrenados: ofrece el código, los scripts de entrenamiento, inferencia y evaluación, y las dependencias de entorno (GPU y DCU). Esto lo convierte en un punto de partida reproducible para investigar parameterizaciones neuronales estables, no en un modelo listo para inferencia directa. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -84,7 +84,7 @@ No disponible. La información proporcionada no incluye datos de parámetros, co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/NNCAM-Stable
+- Hugging Face: https://huggingface.co/OneScience-Group/NNCAM-Stable
 - Artículo (GMD): https://doi.org/10.5194/gmd-15-3923-2022
 - Código original (Zenodo): https://doi.org/10.5281/zenodo.5596273
 - Datos de entrenamiento (Zenodo): https://doi.org/10.5281/zenodo.5625616

@@ -105,7 +105,7 @@ La ventaja diferencial frente a un BERT-base de 512 tokens es la ventana de cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Metabaron6/IronJean-v2-ModernBERT-WAF
+- Modelo en Hugging Face: https://huggingface.co/Metabaron6/IronJean-v2-ModernBERT-WAF
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - ONNX Runtime: https://onnxruntime.ai/
 - Benchmarks externos citados por el autor (`shengqin-waf`, `secureai-waf`, `waf-bench`, `nosql-waf`): referenciados por nombre en la model card, sin URL directa en la información disponible

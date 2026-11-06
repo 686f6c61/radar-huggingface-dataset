@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Longbook27-v2 | ~27B | no disponible ("book-scale") | Apache 2.0 | HuggingFace, código remoto | Atención lineal Gated DeltaNet, ajuste para texto largo, solo en/ja |
-| Qwen2.5-32B-Instruct | 32B | 128K tokens | Apache 2.0 | HuggingFace, ecosistema amplio | Transformer estándar, soporte nativo en vLLM y llama.cpp |
-| Qwen3-32B | 32B | 128K tokens | Apache 2.0 | HuggingFace, ecosistema amplio | Modo thinking, multilingüe amplio, tool calling |
-| Gemma 2 27B | 27B | 8K tokens | Gemma license | HuggingFace, gated | Sin contexto largo nativo, licencia con restricciones de uso |
+| Qwen3.8-27B-Longbook27-v2 | ~27B | no disponible ("book-scale") | Apache 2.0 | Hugging Face, código remoto | Atención lineal Gated DeltaNet, ajuste para texto largo, solo en/ja |
+| Qwen2.5-32B-Instruct | 32B | 128K tokens | Apache 2.0 | Hugging Face, ecosistema amplio | Transformer estándar, soporte nativo en vLLM y llama.cpp |
+| Qwen3-32B | 32B | 128K tokens | Apache 2.0 | Hugging Face, ecosistema amplio | Modo thinking, multilingüe amplio, tool calling |
+| Gemma 2 27B | 27B | 8K tokens | Gemma license | Hugging Face, gated | Sin contexto largo nativo, licencia con restricciones de uso |
 
 La comparación con Qwen2.5-32B y Qwen3-32B es la más directa por tamaño y licencia; ambos ofrecen contexto de 128K documentado y despliegue estándar en vLLM, frente a la arquitectura personalizada de este modelo, que exige código remoto y no tiene soporte confirmado en servidores de inferencia de alto rendimiento.
 
@@ -85,8 +85,8 @@ La comparación con Qwen2.5-32B y Qwen3-32B es la más directa por tamaño y lic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OxBee/Qwen3.8-27B-Longbook27-v2
-- Repositorio de código remoto incluido en el modelo: `modeling_qwen35_gdn24.py`, `fused_ops.py` (en el propio repo de HuggingFace)
+- Hugging Face: https://huggingface.co/OxBee/Qwen3.8-27B-Longbook27-v2
+- Repositorio de código remoto incluido en el modelo: `modeling_qwen35_gdn24.py`, `fused_ops.py` (en el propio repo de Hugging Face)
 - Flash Linear Attention: https://github.com/fla-org/flash-linear-attention
 - causal-conv1d: https://github.com/Dao-AILab/causal-conv1d
 - No se han encontrado papers, blogs ni demos adicionales en la información proporcionada.

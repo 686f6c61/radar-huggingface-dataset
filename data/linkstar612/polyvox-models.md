@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Polyvox-models es un repositorio espejo en HuggingFace que aloja los pesos de los modelos utilizados por la aplicación Polyvox, un asistente de voz multi-usuario en tiempo real que separa, comprende y responde a varios hablantes simultáneamente, incluso en entornos ruidosos. El repositorio contiene exportaciones ONNX en INT8 de cuatro componentes: un modelo de traducción automática (M2M-100 de Meta), un identificador de idioma (FireRedLID), un reconocedor de voz (FireRedASR2-AED) y un detector de actividad de voz (FireRedVAD). El objetivo principal es facilitar la descarga de estos pesos a usuarios en China continental, donde el acceso a los releases de GitHub es poco fiable.
+Polyvox-models es un repositorio espejo en Hugging Face que aloja los pesos de los modelos utilizados por la aplicación Polyvox, un asistente de voz multi-usuario en tiempo real que separa, comprende y responde a varios hablantes simultáneamente, incluso en entornos ruidosos. El repositorio contiene exportaciones ONNX en INT8 de cuatro componentes: un modelo de traducción automática (M2M-100 de Meta), un identificador de idioma (FireRedLID), un reconocedor de voz (FireRedASR2-AED) y un detector de actividad de voz (FireRedVAD). El objetivo principal es facilitar la descarga de estos pesos a usuarios en China continental, donde el acceso a los releases de GitHub es poco fiable.
 
 El repositorio fue creado por el usuario linkstar612 en agosto de 2026 y tiene un tamaño de 4,7 GB. Todos los archivos son exportaciones ONNX cuantizadas a INT8, producidas internamente a partir de checkpoints originales que permiten la redistribución. La licencia del repositorio es Apache-2.0, aunque los modelos subyacentes tienen licencias MIT (M2M-100) y Apache-2.0 (FireRed). El pipeline declarado es traducción, pero el conjunto cubre también reconocimiento de voz, identificación de idioma y detección de actividad de voz.
 
@@ -15,7 +15,7 @@ El repositorio fue creado por el usuario linkstar612 en agosto de 2026 y tiene u
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | INT8 (cuantización dinámica de las capas MatMul) |
-| Idiomas soportados | zh, en, ja (según los tags de HuggingFace; M2M-100 original soporta más de 100 idiomas, pero el repo se centra en estos tres) |
+| Idiomas soportados | zh, en, ja (según los tags de Hugging Face; M2M-100 original soporta más de 100 idiomas, pero el repo se centra en estos tres) |
 | Licencia | Apache-2.0 (repositorio); MIT para M2M-100, Apache-2.0 para FireRed (modelos originales) |
 | Formato de pesos | ONNX (archivos .onnx) con sidecars JSON para vocabulario y estadísticas CMVN |
 
@@ -46,7 +46,7 @@ No se proporcionan detalles sobre el entrenamiento original de estos modelos (n�
 - **Sistemas de subtitulación automática**: FireRedASR2-AED genera subtítulos a partir de audio, y FireRedVAD ayuda a segmentar los turnos de habla para sincronizar los subtítulos con precisión.
 - **Atención al cliente multilingüe**: un bot de voz puede detectar el idioma del cliente con FireRedLID, transcribir su consulta con FireRedASR2-AED y responder en su idioma usando M2M-100 para traducir las respuestas generadas.
 - **Análisis de conversaciones en entornos ruidosos**: gracias a la robustez del modelo ASR, se puede transcribir reuniones en oficinas abiertas, conferencias o espacios públicos con alta interferencia acústica.
-- **Despliegue en China continental**: al estar alojado en HuggingFace, el repositorio permite a desarrolladores chinos descargar los pesos sin depender de GitHub, lo que facilita la integración de Polyvox en aplicaciones locales.
+- **Despliegue en China continental**: al estar alojado en Hugging Face, el repositorio permite a desarrolladores chinos descargar los pesos sin depender de GitHub, lo que facilita la integración de Polyvox en aplicaciones locales.
 
 ## Benchmarks y rendimiento
 
@@ -66,7 +66,7 @@ No se dispone de datos de rendimiento para comparar directamente con alternativa
 
 | Modelo | Tipo | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Polyvox-models (este repo) | ASR + LID + VAD + traducción | zh, en, ja | Apache-2.0 / MIT | ONNX INT8 en HuggingFace |
+| Polyvox-models (este repo) | ASR + LID + VAD + traducción | zh, en, ja | Apache-2.0 / MIT | ONNX INT8 en Hugging Face |
 | Whisper (OpenAI) | ASR + traducción | 99 idiomas | MIT | PyTorch, ONNX, etc. |
 | NLLB-200 (Meta) | Traducción | 200 idiomas | CC-BY-NC-4.0 | PyTorch, ONNX (no incluido en este repo por licencia) |
 | FireRedASR (original) | ASR | zh, en | Apache-2.0 | PyTorch, Kaldi |
@@ -85,7 +85,7 @@ La principal diferencia es que Polyvox-models agrupa varios componentes en un so
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/linkstar612/polyvox-models
+- Repositorio Hugging Face: https://huggingface.co/linkstar612/polyvox-models
 - Repositorio GitHub de distribución: https://github.com/linkstar612/polyvox-releases
 - Repositorio GitHub de Polyvox (código fuente): https://github.com/da24s002/polyvox
 - Modelo original M2M-100: https://huggingface.co/facebook/m2m100_1.2B

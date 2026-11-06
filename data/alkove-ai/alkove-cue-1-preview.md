@@ -103,9 +103,9 @@ No hay resultados publicados de MMLU, HumanEval, GSM8K ni de ningun otro benchma
 
 | Modelo | Tipo | Parametros | Contexto / ventana | Licencia | Rendimiento declarado | Disponibilidad |
 |---|---|---|---|---|---|---|
-| alkove-cue-1-preview | VAD por tramas de 30 ms, ONNX int8, 1,2 MB | no disponible | no aplica; estado de 5848 floats | Apache 2.0 | 2,89 % habla perdida; 4 falsos inicios en 24 min | HuggingFace (0 descargas) |
+| alkove-cue-1-preview | VAD por tramas de 30 ms, ONNX int8, 1,2 MB | no disponible | no aplica; estado de 5848 floats | Apache 2.0 | 2,89 % habla perdida; 4 falsos inicios en 24 min | Hugging Face (0 descargas) |
 | Silero VAD v6 | VAD, runtime propio (ONNX/JIT) | no disponible | no disponible | MIT | 2,96 % habla perdida; 4 falsos inicios en 24 min (medido por alkove-ai) | Ampliamente adoptado |
-| alkove-spot-1-preview | VAD de la misma familia, mismo pipeline | no disponible | no disponible | no disponible en la informacion | ofrece la misma salida `speech` que Cue | HuggingFace |
+| alkove-spot-1-preview | VAD de la misma familia, mismo pipeline | no disponible | no disponible | no disponible en la informacion | ofrece la misma salida `speech` que Cue | Hugging Face |
 
 La comparacion con Silero VAD v6 es la unica con mediciones sobre el mismo conjunto de prueba, y la diferencia es de decimas de punto porcentual en habla perdida (2,89 % frente a 2,96 %), identica en falsos inicios y ligeramente peor en tiempo abierto durante los silencios del locutor (6,4 % frente a 5,9 %). La ventaja declarada de Cue esta en el coste (1,2 MB int8, WebAssembly a un hilo) y en el comportamiento con musica y voces de television. No se dispone de datos de WebRTC VAD ni de otros detectores en esta informacion.
 
@@ -124,7 +124,7 @@ La comparacion con Silero VAD v6 es la unica con mediciones sobre el mismo conju
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alkove-ai/alkove-cue-1-preview
+- Modelo en Hugging Face: https://huggingface.co/alkove-ai/alkove-cue-1-preview
 - Sitio del proyecto Alkove: https://alkove.ai
 - Modelo de aislamiento de voz relacionado: https://huggingface.co/alkove-ai/alkove-focus-1-preview
 - Modelo de la misma familia con salida VAD equivalente: https://huggingface.co/alkove-ai/alkove-spot-1-preview

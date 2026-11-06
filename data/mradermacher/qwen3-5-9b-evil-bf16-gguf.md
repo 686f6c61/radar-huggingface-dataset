@@ -91,7 +91,7 @@ La comparacion significativa en tamano es con Qwen3-8B y Gemma 2 9B. Frente a el
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-9B-Evil-BF16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-9B-Evil-BF16-GGUF
 - Modelo base: https://huggingface.co/bowmanslayer/Qwen3.5-9B-Evil-BF16
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Qwen3.5-9B-Evil-BF16-i1-GGUF
 - Pagina de descarga del autor: https://hf.tst.eu/model#Qwen3.5-9B-Evil-BF16-GGUF

@@ -91,9 +91,9 @@ La diferencia clave frente al modelo base de Jonatas Grosman es el formato y la 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Jeremytromp/wav2vec2-xls-r-1b-dutch-onnx
-- Modelo base en HuggingFace: https://huggingface.co/jonatasgrosman/wav2vec2-xls-r-1b-dutch
-- XLS-R 1B de Meta en HuggingFace: https://huggingface.co/facebook/wav2vec2-xls-r-1b
+- Hugging Face del modelo: https://huggingface.co/Jeremytromp/wav2vec2-xls-r-1b-dutch-onnx
+- Modelo base en Hugging Face: https://huggingface.co/jonatasgrosman/wav2vec2-xls-r-1b-dutch
+- XLS-R 1B de Meta en Hugging Face: https://huggingface.co/facebook/wav2vec2-xls-r-1b
 - Colección de modelos wav2vec2 en ONNX: https://huggingface.co/darjusul/wav2vec2-ONNX-collection
 - Documentación de torchaudio sobre XLS-R 1B: https://docs.pytorch.org/audio/2.3/generated/torchaudio.models.wav2vec2_xlsr_1b.html
 - Notebook de exportación de wav2vec2 a ONNX: https://colab.research.google.com/github/vasudevgupta7/gsoc-wav2vec2/blob/main/notebooks/wav2vec2_onnx.ipynb

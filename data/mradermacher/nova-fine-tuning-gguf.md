@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: aproximadamente 0,4 GB (Q2_K), 0,6 GB (Q4_K_M), 0,8 GB (Q6_K), 1,0 GB (Q8_0) y 1,8 GB (f16), según los tamaños de archivo indicados en la model card.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede ejecutar la variante f16; para cuantizaciones Q4 basta con 1 GB. No se requieren A100 ni H100.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (GTX 1050 Ti, RTX 2060, RTX 3060, RTX 4090) e incluso en iGPU con memoria compartida suficiente.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (koboldcpp, LM Studio, text-generation-webui con el loader adecuado). El tag endpoints_compatible sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (koboldcpp, LM Studio, text-generation-webui con el loader adecuado). El tag endpoints_compatible sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles. Al tratarse de un modelo de 838M parámetros, se espera un throughput alto en CPU y muy alto en GPU, pero no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Nova-fine-tuning-GGUF | 838M | No disponible | MIT | GGUF | HuggingFace |
-| Qwen2.5-0.5B-Instruct | 494M | 32.768 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, Ollama |
-| Llama-3.2-1B-Instruct | 1.240M | 131.072 tokens | Llama 3.2 Community License | safetensors, GGUF | HuggingFace, Ollama |
-| SmolLM2-1.7B-Instruct | 1.700M | 8.192 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, Ollama |
+| Nova-fine-tuning-GGUF | 838M | No disponible | MIT | GGUF | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 494M | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
+| Llama-3.2-1B-Instruct | 1.240M | 131.072 tokens | Llama 3.2 Community License | safetensors, GGUF | Hugging Face, Ollama |
+| SmolLM2-1.7B-Instruct | 1.700M | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
 
 La comparativa se limita a parámetros, contexto y licencia, ya que no hay datos de rendimiento publicados para Nova-fine-tuning. Frente a alternativas como Qwen2.5-0.5B o Llama-3.2-1B, Nova carece de documentación sobre contexto, benchmarks y datos de entrenamiento, lo que dificulta una comparación rigurosa. Su principal ventaja es la licencia MIT, más permisiva que la de Llama 3.2, pero su ecosistema y documentación son mucho más limitados.
 
@@ -82,7 +82,7 @@ La comparativa se limita a parámetros, contexto y licencia, ya que no hay datos
 
 ## Enlaces
 
-- [HuggingFace: mradermacher/Nova-fine-tuning-GGUF](https://huggingface.co/mradermacher/Nova-fine-tuning-GGUF)
+- [Hugging Face: mradermacher/Nova-fine-tuning-GGUF](https://huggingface.co/mradermacher/Nova-fine-tuning-GGUF)
 - [Modelo base: StevesInfinityDrive/Nova-fine-tuning](https://huggingface.co/StevesInfinityDrive/Nova-fine-tuning)
 - [Página de resumen de cuantizaciones de mradermacher](https://hf.tst.eu/model#Nova-fine-tuning-GGUF)
 - [FAQ y solicitudes de cuantización de mradermacher](https://huggingface.co/mradermacher/model_requests)

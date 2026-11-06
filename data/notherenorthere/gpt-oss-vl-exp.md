@@ -1,11 +1,11 @@
 # NotHereNorThere/gpt-oss-vl-exp
 
 ## Resumen
-El modelo NotHereNorThere/gpt-oss-vl-exp es un repositorio de HuggingFace creado por el usuario NotHereNorThere que, por su nombre, apunta a ser una variante experimental (exp) con capacidades de visión (VL) de la familia gpt-oss de OpenAI. Sin embargo, la información disponible es mínima: no hay model card más allá de la licencia Apache 2.0, ni métricas, ni documentación técnica. El repositorio no tiene descargas ni likes, lo que indica que se trata de un experimento personal o de una carga de prueba, no de un modelo publicable.
+El modelo NotHereNorThere/gpt-oss-vl-exp es un repositorio de Hugging Face creado por el usuario NotHereNorThere que, por su nombre, apunta a ser una variante experimental (exp) con capacidades de visión (VL) de la familia gpt-oss de OpenAI. Sin embargo, la información disponible es mínima: no hay model card más allá de la licencia Apache 2.0, ni métricas, ni documentación técnica. El repositorio no tiene descargas ni likes, lo que indica que se trata de un experimento personal o de una carga de prueba, no de un modelo publicable.
 
 A pesar del nombre, no hay indicios de que el modelo tenga relación directa con los modelos oficiales gpt-oss-120b y gpt-oss-20b de OpenAI, salvo la inspiración en su denominación. Dado el vacío de datos, cualquier evaluación técnica es imposible. Esta ficha se limita a constatar la información pública disponible y a advertir del uso del repositorio.
 
-Generado en 2026 (según la metadata de HuggingFace), el modelo no está respaldado por información sobre su arquitectura, tamaño, contexto o rendimiento. Por tanto, no es apto para su adopción en proyectos de producción sin una auditoría previa.
+Generado en 2026 (según la metadata de Hugging Face), el modelo no está respaldado por información sobre su arquitectura, tamaño, contexto o rendimiento. Por tanto, no es apto para su adopción en proyectos de producción sin una auditoría previa.
 
 ## Especificaciones técnicas
 | Parametro | Valor |
@@ -54,7 +54,7 @@ Para comparar con modelos similares, se puede recurrir a los modelos gpt-oss ofi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gpt-oss-vl-exp | no disponible | no disponible | Apache 2.0 | HuggingFace (sin documentación) |
+| gpt-oss-vl-exp | no disponible | no disponible | Apache 2.0 | Hugging Face (sin documentación) |
 | gpt-oss-120b | 120 mil millones | no disponible | Apache 2.0 | Open weights de OpenAI |
 | gpt-oss-20b | 20 mil millones | no disponible | Apache 2.0 | Open weights de OpenAI |
 
@@ -66,9 +66,9 @@ Los modelos gpt-oss oficiales son descritos como modelos de lenguaje de pesos ab
 - Al ser un experimento, no hay garantías de estabilidad ni corrección.
 - La licencia Apache 2.0 permite uso comercial, pero la ausencia de información impide evaluar riesgos legales o de sesgo.
 - No se debe confiar en este modelo para tareas críticas sin una auditoría previa.
-- Es posible que el modelo ni siquiera sea funcional, dado que no tiene descargas ni likes en HuggingFace.
+- Es posible que el modelo ni siquiera sea funcional, dado que no tiene descargas ni likes en Hugging Face.
 
 ## Enlaces
-- HuggingFace: [NotHereNorThere/gpt-oss-vl-exp](https://huggingface.co/NotHereNorThere/gpt-oss-vl-exp)
+- Hugging Face: [NotHereNorThere/gpt-oss-vl-exp](https://huggingface.co/NotHereNorThere/gpt-oss-vl-exp)
 - OpenAI - Introducing gpt-oss: [https://openai.com/index/introducing-gpt-oss/](https://openai.com/index/introducing-gpt-oss/)
 - OpenAI Help Center - Open-weight models: [https://help.openai.com/en/articles/11870455-openai-gpt-oss](https://help.openai.com/en/articles/11870455-openai-gpt-oss)

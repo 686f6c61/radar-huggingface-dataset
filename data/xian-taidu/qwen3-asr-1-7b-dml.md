@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-ASR-1.7B-DML | 2.031.739.904 | 52 | MIT | HuggingFace |
-| Qwen3-ASR-0.6B | 0.6B (según proyecto) | 52 | No disponible | HuggingFace |
-| Qwen3-ASR-1.7B (original) | No disponible (nombre indica 1.7B) | 52 | No disponible | HuggingFace |
+| Qwen3-ASR-1.7B-DML | 2.031.739.904 | 52 | MIT | Hugging Face |
+| Qwen3-ASR-0.6B | 0.6B (según proyecto) | 52 | No disponible | Hugging Face |
+| Qwen3-ASR-1.7B (original) | No disponible (nombre indica 1.7B) | 52 | No disponible | Hugging Face |
 
 No se dispone de datos de benchmarks para realizar una comparativa de rendimiento. La comparativa se basa únicamente en características generales disponibles en la información proporcionada.
 
@@ -73,6 +73,6 @@ No se dispone de datos de benchmarks para realizar una comparativa de rendimient
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xian-taidu/Qwen3-ASR-1.7B-DML
+- Repositorio en Hugging Face: https://huggingface.co/xian-taidu/Qwen3-ASR-1.7B-DML
 - Proyecto Qwen3-ASR en GitHub: https://github.com/QwenLM/Qwen3-ASR
-- Modelo original Qwen3-ASR-1.7B en HuggingFace: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
+- Modelo original Qwen3-ASR-1.7B en Hugging Face: https://huggingface.co/Qwen/Qwen3-ASR-1.7B

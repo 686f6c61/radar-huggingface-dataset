@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fendercorp/3dify-naf es un modelo publicado por Fendercorp en HuggingFace bajo la licencia Apache-2.0. A fecha de la consulta, el repositorio no contiene ningún archivo de pesos, ni una model card descriptiva, ni metadatos sobre arquitectura, tamaño de parámetros o finalidad. Las descargas y los likes son cero, y el tamaño del repositorio es de 0.0 GB.
+Fendercorp/3dify-naf es un modelo publicado por Fendercorp en Hugging Face bajo la licencia Apache-2.0. A fecha de la consulta, el repositorio no contiene ningún archivo de pesos, ni una model card descriptiva, ni metadatos sobre arquitectura, tamaño de parámetros o finalidad. Las descargas y los likes son cero, y el tamaño del repositorio es de 0.0 GB.
 
 En la información disponible no existe evidencia de que el modelo tenga implementación publicada, documentación técnica ni información de entrenamiento. No se puede determinar qué problema resuelve ni por qué sería relevante. Es probable que se trate de un repositorio vacío, un proyecto en preparación o un placeholder.
 
@@ -45,10 +45,10 @@ No disponible. No se han encontrado modelos comparables en la informacion propor
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no contiene pesos ni codigo, por lo que el modelo no es utilizable en su estado actual.
+- El repositorio de Hugging Face no contiene pesos ni codigo, por lo que el modelo no es utilizable en su estado actual.
 - No existe una model card descriptiva que permita evaluar sesgos, riesgo de alucinacion o limitaciones de contexto e idioma.
 - La licencia Apache-2.0 declarada no es suficiente para determinar el comportamiento del modelo ni su aptitud para uso en produccion.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Fendercorp/3dify-naf
+- Repositorio de Hugging Face: https://huggingface.co/Fendercorp/3dify-naf

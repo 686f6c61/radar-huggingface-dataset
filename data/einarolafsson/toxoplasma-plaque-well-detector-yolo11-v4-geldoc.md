@@ -68,15 +68,15 @@ Notas del autor relevantes para interpretar la tabla: el conjunto historico de 1
 - GPU de consumo: si, cabe en practicamente cualquier GPU de consumo moderna e incluso en hardware integrado para inferencia a baja frecuencia.
 - Opciones de despliegue: Ultralytics (carga directa de `weights/yolo_welldetect_v4_geldoc.pt`), exportacion a ONNX, TensorRT u otros formatos soportados por Ultralytics, y ejecucion en CPU.
 - Latencia y throughput: no disponible; no se publican datos de latencia ni de imagenes por segundo en la informacion proporcionada.
-- Tamano del repositorio: 0.0 GB segun HuggingFace.
+- Tamano del repositorio: 0.0 GB segun Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tarea / clases | Contexto / entrada | Rendimiento relevante | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLO11 v4 Gel Doc (este modelo) | Deteccion de pocillos, 1 clase (`plaque_well`) | 640 x 640 px | mAP50-95 0.9307 en geldoc; 0.8842 en v3_clean | agpl-3.0 | HuggingFace (einarolafsson) |
-| YOLO11 v3 (incumbente) | Deteccion de pocillos, 1 clase (`plaque_well`) | 640 x 640 px | mAP50-95 0.8954 en geldoc; 0.8930 en v3_clean | agpl-3.0 (Ultralytics) | HuggingFace (einarolafsson) |
-| YOLO26 v4 (publicado previamente) | Deteccion de pocillos (segun el autor) | no disponible | no disponible | no disponible | HuggingFace (einarolafsson) |
+| YOLO11 v4 Gel Doc (este modelo) | Deteccion de pocillos, 1 clase (`plaque_well`) | 640 x 640 px | mAP50-95 0.9307 en geldoc; 0.8842 en v3_clean | agpl-3.0 | Hugging Face (einarolafsson) |
+| YOLO11 v3 (incumbente) | Deteccion de pocillos, 1 clase (`plaque_well`) | 640 x 640 px | mAP50-95 0.8954 en geldoc; 0.8930 en v3_clean | agpl-3.0 (Ultralytics) | Hugging Face (einarolafsson) |
+| YOLO26 v4 (publicado previamente) | Deteccion de pocillos (segun el autor) | no disponible | no disponible | no disponible | Hugging Face (einarolafsson) |
 | YOLO11 stock (Ultralytics) | Deteccion de objetos genericos | 640 x 640 px | no aplica: no tiene la clase `plaque_well` | agpl-3.0 | Ultralytics |
 
 El autor indica explicitamente que este checkpoint no es sustituto de YOLO26 v4 y que la comparacion de referencia es el incumbente YOLO11 v3, no YOLO stock, porque este ultimo carece de la clase objetivo.
@@ -96,7 +96,7 @@ El autor indica explicitamente que este checkpoint no es sustituto de YOLO26 v4 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/einarolafsson/toxoplasma-plaque-well-detector-yolo11-v4-geldoc
+- Modelo en Hugging Face: https://huggingface.co/einarolafsson/toxoplasma-plaque-well-detector-yolo11-v4-geldoc
 - Framework Ultralytics (YOLO11): https://github.com/ultralytics/ultralytics
 - Documentacion de Ultralytics: https://docs.ultralytics.com
 - Licencia AGPL-3.0: https://www.gnu.org/licenses/agpl-3.0.html

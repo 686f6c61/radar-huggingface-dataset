@@ -97,7 +97,7 @@ Nota: los datos de los modelos alternativos proceden de su documentacion publica
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JaelTmls/bge-m3-openvino-fp16
+- Repositorio Hugging Face: https://huggingface.co/JaelTmls/bge-m3-openvino-fp16
 - Modelo original: https://huggingface.co/BAAI/bge-m3
 - Documentacion de Optimum Intel: https://huggingface.co/docs/optimum/intel/index
 - OpenVINO Runtime: https://docs.openvino.ai/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LaTexT/qwen3-8b-gist-sft-50k-gz7-newlines es un ajuste fino (fine-tune) completo de Qwen/Qwen3-8B, un transformer denso decoder-only de 8.190.735.360 parametros (8,19B) desarrollado por Qwen. El modelo ha sido entrenado por el usuario LaTexT mediante SFT (supervised fine-tuning) con la libreria TRL 0.12.0, sobre el dataset shannons/ot3-1.2m-50k, y esta publicado en HuggingFace con la libreria transformers y pesos en safetensors.
+LaTexT/qwen3-8b-gist-sft-50k-gz7-newlines es un ajuste fino (fine-tune) completo de Qwen/Qwen3-8B, un transformer denso decoder-only de 8.190.735.360 parametros (8,19B) desarrollado por Qwen. El modelo ha sido entrenado por el usuario LaTexT mediante SFT (supervised fine-tuning) con la libreria TRL 0.12.0, sobre el dataset shannons/ot3-1.2m-50k, y esta publicado en Hugging Face con la libreria transformers y pesos en safetensors.
 
 El interes del modelo no reside en sus capacidades generales (heredadas del modelo base), sino en su procedimiento de entrenamiento: el directorio de origen del checkpoint incluye etiquetas como "latent-cot", "gist_sft", "cross_gist+input" y "wrap_gist_token_to_special_tokens", lo que apunta a un experimento de razonamiento latente y compresion de contexto mediante "tokens gist" registrados como tokens especiales del tokenizer. El propio autor referencia este checkpoint como la fila "gist_sft 50k g7-newlines" de la Tabla 2 de un paper, lo que lo situa como material de investigacion reproducible mas que como modelo de produccion.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LaTexT/qwen3-8b-gist-sft-50k-gz7-newlines | 8,19B (denso) | No confirmado; base 32.768 / 131.072 con YaRN | No declarada (campo "license" sin contenido); base Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B | 8,19B (denso) | 32.768 nativos / 131.072 con YaRN | Apache-2.0 | HuggingFace, ampliamente utilizado |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03B (denso) | 128.000 | Llama 3.1 Community License | HuggingFace, muy extendido |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25B (denso) | 32.768 | Apache-2.0 | HuggingFace, muy extendido |
+| LaTexT/qwen3-8b-gist-sft-50k-gz7-newlines | 8,19B (denso) | No confirmado; base 32.768 / 131.072 con YaRN | No declarada (campo "license" sin contenido); base Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B | 8,19B (denso) | 32.768 nativos / 131.072 con YaRN | Apache-2.0 | Hugging Face, ampliamente utilizado |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03B (denso) | 128.000 | Llama 3.1 Community License | Hugging Face, muy extendido |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25B (denso) | 32.768 | Apache-2.0 | Hugging Face, muy extendido |
 
 No se dispone de datos de rendimiento comparables para el modelo objeto de esta ficha: no hay benchmarks publicados, mientras que los tres modelos de referencia cuentan con resultados publicados por sus autores. La comparacion solo puede establecerse, por tanto, en parametros, contexto, licencia y disponibilidad.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparables para el modelo objeto de esta 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LaTexT/qwen3-8b-gist-sft-50k-gz7-newlines
+- Modelo en Hugging Face: https://huggingface.co/LaTexT/qwen3-8b-gist-sft-50k-gz7-newlines
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/shannons/ot3-1.2m-50k
 - Registro del entrenamiento en Weights & Biases: https://fairwandb.org/shannons/memr-gist-sft-deepspeed/runs/rcsasqdd

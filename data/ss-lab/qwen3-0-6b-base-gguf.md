@@ -84,5 +84,5 @@ No se dispone de datos de rendimiento comparativo verificados en la información
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ss-lab/Qwen3-0.6B-Base-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ss-lab/Qwen3-0.6B-Base-GGUF
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-0.6B-Base

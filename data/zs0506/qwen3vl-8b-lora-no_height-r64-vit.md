@@ -4,7 +4,7 @@
 
 Este repositorio no contiene un modelo completo, sino un adaptador LoRA publicado por el usuario zs0506 bajo el identificador `zs0506/qwen3vl-8B-lora-no_height-r64-vit`. El adaptador se entrena sobre el modelo base `Qwen/Qwen3-VL-8B-Instruct`, un modelo vision-lenguaje de la familia Qwen3-VL, y se distribuye en formato PEFT con pesos safetensors. El tamano del repositorio es de 0,4 GB, coherente con pesos de adaptador y no con un modelo de 8B completo.
 
-El nombre del repositorio aporta las unicas pistas sobre el experimento: `r64` sugiere un rango LoRA de 64, `vit` apunta a que el ajuste tambien afecta a la torre de vision del modelo y `no_height` indica que el entrenamiento se habria realizado sin informacion de altura. Ninguna de estas interpretaciones esta confirmada por el autor, cuya model card es la plantilla generica de HuggingFace con todos los campos marcados como `[More Information Needed]`.
+El nombre del repositorio aporta las unicas pistas sobre el experimento: `r64` sugiere un rango LoRA de 64, `vit` apunta a que el ajuste tambien afecta a la torre de vision del modelo y `no_height` indica que el entrenamiento se habria realizado sin informacion de altura. Ninguna de estas interpretaciones esta confirmada por el autor, cuya model card es la plantilla generica de Hugging Face con todos los campos marcados como `[More Information Needed]`.
 
 La relevancia de esta ficha es limitada y hay que ser honesto al respecto: cero descargas, cero likes, licencia e idiomas sin declarar y ausencia total de documentacion, evaluacion o hiperparametros. Es util como ejemplo de publicacion de un adaptador PEFT multimodal y como punto de partida reproducible si se reconstruye el pipeline de entrenamiento, pero no como componente listo para produccion.
 
@@ -38,7 +38,7 @@ Las unicas inferencias posibles provienen del propio identificador del repositor
 
 ## Capacidades
 
-- Generacion de texto: es la unica capacidad declarada explicitamente mediante el pipeline `text-generation` en los metadatos de HuggingFace.
+- Generacion de texto: es la unica capacidad declarada explicitamente mediante el pipeline `text-generation` en los metadatos de Hugging Face.
 - Procesamiento de imagen y texto: el modelo base es de tipo vision-lenguaje (VL), por lo que se espera entrada multimodal; el autor del adaptador no lo documenta ni lo confirma.
 - Razonamiento, matematicas y generacion de codigo: no disponible; no hay evaluaciones ni declaraciones al respecto.
 - Tool calling y function calling: no disponible.
@@ -55,7 +55,7 @@ Las unicas inferencias posibles provienen del propio identificador del repositor
 - Punto de partida para fine-tuning especifico de dominio: cargando el adaptador con `peft` sobre el modelo base, un equipo puede continuar el entrenamiento con su propio dataset en lugar de partir de cero, aprovechando el coste reducido de almacenamiento del adaptador (0,4 GB frente a los aproximadamente 16 GB en bf16 del modelo base).
 - Prototipado en una sola GPU: al requerir unicamente cargar el modelo base mas un adaptador pequeno, permite experimentar con tareas de imagen y texto en hardware de gama alta de consumo, siempre que la VRAM disponible cubra el modelo base completo.
 - Evaluacion comparativa de adaptadores: util para montar un banco de pruebas donde se comparen varios LoRA sobre el mismo modelo base con metricas propias, dado que el intercambio de adaptadores es inmediato con PEFT.
-- Docencia y formacion tecnica: como ejemplo minimo y real de publicacion de un adaptador PEFT en HuggingFace, incluida la discusion de por que una model card sin rellenar limita la reutilizacion.
+- Docencia y formacion tecnica: como ejemplo minimo y real de publicacion de un adaptador PEFT en Hugging Face, incluida la discusion de por que una model card sin rellenar limita la reutilizacion.
 - Integracion en pipelines internos de inferencia: con `transformers` y `peft` se puede servir el modelo combinado para tareas de generacion condicionada por imagen, siempre que se valide antes su comportamiento, ya que no existe ninguna evaluacion publicada.
 
 ## Benchmarks y rendimiento
@@ -98,7 +98,7 @@ No se dispone de informacion sobre alternativas comparables en los datos proporc
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/zs0506/qwen3vl-8B-lora-no_height-r64-vit
+- Adaptador en Hugging Face: https://huggingface.co/zs0506/qwen3vl-8B-lora-no_height-r64-vit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Articulo citado en la model card (calculo de impacto ambiental, no relacionado con el entrenamiento del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning citada en la plantilla: https://mlco2.github.io/impact

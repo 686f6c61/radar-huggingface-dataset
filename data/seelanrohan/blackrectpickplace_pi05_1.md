@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pi0.5 base (Physical Intelligence) | VLA de flujo continuo | ~3,5B (estimado) | no disponible | Apache 2.0 (repo OpenPI) | HuggingFace y GitHub |
-| `blackRectPickPlace_pi05_1` | Pi0.5 fine-tuned | no disponible (244,8 GB) | no disponible | no disponible | HuggingFace |
-| OpenVLA (Stanford) | VLA basado en LLaMA | 7B | 2048 | MIT (con restricciones) | HuggingFace |
+| Pi0.5 base (Physical Intelligence) | VLA de flujo continuo | ~3,5B (estimado) | no disponible | Apache 2.0 (repo OpenPI) | Hugging Face y GitHub |
+| `blackRectPickPlace_pi05_1` | Pi0.5 fine-tuned | no disponible (244,8 GB) | no disponible | no disponible | Hugging Face |
+| OpenVLA (Stanford) | VLA basado en LLaMA | 7B | 2048 | MIT (con restricciones) | Hugging Face |
 | RT-2 (Google) | VLM (PaLI-X) | ~55B | no disponible | no pública | no disponible |
 
 La comparativa se basa en características generales; no se dispone de datos de rendimiento del modelo fine-tuned.

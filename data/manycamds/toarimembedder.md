@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TóarimEmbedder | 24,3 M | Stateful (teóricamente ∞) | GCN + SVD bajo rango + memoria Sherman-Morrison, CPU-only | Apache 2.0 | HuggingFace (1 descarga) |
+| TóarimEmbedder | 24,3 M | Stateful (teóricamente ∞) | GCN + SVD bajo rango + memoria Sherman-Morrison, CPU-only | Apache 2.0 | Hugging Face (1 descarga) |
 | OpenAI text-embedding-3-large | no disponible (propietario) | 8.191 tokens | Transformer denso, API | Propietaria | API de pago |
 | Cohere embed-v3.0 | no disponible (propietario) | 512 tokens | Transformer denso, API | Propietaria | API de pago |
-| BGE-M3 (BAAI) | no disponible en la información | 8.192 tokens | Transformer denso, multilingüe, GPU | no disponible en la información | Público en HuggingFace |
+| BGE-M3 (BAAI) | no disponible en la información | 8.192 tokens | Transformer denso, multilingüe, GPU | no disponible en la información | Público en Hugging Face |
 
 Los datos de parámetros, licencia y disponibilidad de las alternativas no se detallan en la información proporcionada más allá de lo recogido en la tabla comparativa del autor.
 
@@ -96,6 +96,6 @@ Los datos de parámetros, licencia y disponibilidad de las alternativas no se de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ManyCamDS/ToarimEmbedder
+- Hugging Face: https://huggingface.co/ManyCamDS/ToarimEmbedder
 - Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados al modelo.

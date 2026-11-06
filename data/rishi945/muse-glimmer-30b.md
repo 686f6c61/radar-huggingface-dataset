@@ -96,11 +96,11 @@ No disponible: no se han proporcionado datos de modelos comparables (parámetros
 - El corte de conocimiento es el 4 de enero de 2026; información posterior no está cubierta.
 - Licencia Apache 2.0 permite uso comercial, pero deben respetarse las condiciones de atribución y las posibles restricciones derivadas de los datos de terceros utilizados en el entrenamiento.
 - El rendimiento medido se limita a RTX 5090, M4 Max y M5 Max con batch size 1 y decodificación greedy; el throughput en otros hardware o configuraciones no está disponible.
-- El repositorio de HuggingFace (rishi945/Muse-Glimmer-30B) no presenta descargas ni valoraciones, y la autoría del upload no coincide con Meta Superintelligence Lab, lo que conviene verificar antes de su uso en producción.
+- El repositorio de Hugging Face (rishi945/Muse-Glimmer-30B) no presenta descargas ni valoraciones, y la autoría del upload no coincide con Meta Superintelligence Lab, lo que conviene verificar antes de su uso en producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rishi945/Muse-Glimmer-30B
+- Hugging Face: https://huggingface.co/rishi945/Muse-Glimmer-30B
 - Paper del encoder de percepción: https://arxiv.org/abs/2504.13181
 - Paper de DFlash: https://arxiv.org/abs/2602.06036
 - Referencia adicional citada en los tags: https://arxiv.org/abs/2610.24628

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`TobiIbrahim1/contrastive-beta-2024` es un repositorio de HuggingFace que contiene una implementación propia y mínima de una arquitectura **PoolFormer** (familia MetaFormer, sin atención por producto escalar en su formulación canónica) orientada a experimentos de aprendizaje contrastivo. No es un modelo entrenado: la model card lo describe explícitamente como un "punto de partida reproducible" con un checkpoint de inicialización válido únicamente para *smoke tests*. El recuento real de parámetros en `model.safetensors` es de **24.832 parámetros**, es decir, un modelo de escala *tiny* con un peso en fp32 de aproximadamente 0,1 MB.
+`TobiIbrahim1/contrastive-beta-2024` es un repositorio de Hugging Face que contiene una implementación propia y mínima de una arquitectura **PoolFormer** (familia MetaFormer, sin atención por producto escalar en su formulación canónica) orientada a experimentos de aprendizaje contrastivo. No es un modelo entrenado: la model card lo describe explícitamente como un "punto de partida reproducible" con un checkpoint de inicialización válido únicamente para *smoke tests*. El recuento real de parámetros en `model.safetensors` es de **24.832 parámetros**, es decir, un modelo de escala *tiny* con un peso en fp32 de aproximadamente 0,1 MB.
 
 El interés del repositorio no es su rendimiento —no hay ninguno declarado ni evaluado— sino su función como artefacto didáctico y de infraestructura: incluye el código (`inference.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y los pesos inicializados. Sirve para validar pipelines de entrenamiento, comparar recetas de aumento de datos o servir de esqueleto para experimentos contrastivos antes de invertir cómputo en un run real.
 
@@ -19,7 +19,7 @@ Es relevante ahora solo en el contexto de prototipado y docencia: cero descargas
 | Idiomas soportados | no disponible (no es un modelo de lenguaje; no hay vocabulario ni tokenizador documentado) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | `safetensors` (PyTorch); requiere adaptador explícito, no compatible con `AutoModel.from_pretrained` genérico |
-| Tamano del repositorio | 0,0 GB declarado en HuggingFace |
+| Tamano del repositorio | 0,0 GB declarado en Hugging Face |
 | Pipeline declarado | no disponible |
 | Descargas / likes | 0 / 0 |
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - VRAM para inferencia: inferior a 1 MB en cualquier precisión. En fp32, 24.832 parámetros × 4 bytes ≈ 97 KB de pesos; en fp16 ≈ 49 KB. El cuello de botella es el *overhead* del runtime de PyTorch (típicamente cientos de MB), no el modelo.
 - GPU recomendadas: cualquiera. Funciona en CPU sin problema; una RTX 4090, A100 o H100 están completamente sobredimensionadas para este artefacto.
 - Cabe en cualquier GPU de consumo, e incluso en entornos sin GPU (portátiles, contenedores de CI con 1 GB de RAM).
-- Opciones de despliegue: PyTorch eager mediante el `inference.py` incluido. No hay soporte de vLLM, TGI, llama.cpp, Ollama ni ONNX, y al ser una implementación personalizada las APIs automáticas de HuggingFace (`AutoModel`, `pipeline`) requieren un adaptador explícito.
+- Opciones de despliegue: PyTorch eager mediante el `inference.py` incluido. No hay soporte de vLLM, TGI, llama.cpp, Ollama ni ONNX, y al ser una implementación personalizada las APIs automáticas de Hugging Face (`AutoModel`, `pipeline`) requieren un adaptador explícito.
 - Latencia y throughput: no disponibles; no tiene sentido medirlos sin un caso de uso definido y sin cabecera de tarea.
 - Almacenamiento: el repositorio ocupa 0,0 GB declarados, coherente con un checkpoint de decenas de kilobytes.
 
@@ -68,7 +68,7 @@ No disponible. La información proporcionada no incluye resultados ni especifica
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `TobiIbrahim1/contrastive-beta-2024` | 24.832 | no aplica | sin benchmarks publicados | Apache 2.0 | HuggingFace, 0 descargas |
+| `TobiIbrahim1/contrastive-beta-2024` | 24.832 | no aplica | sin benchmarks publicados | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,5 +85,5 @@ No disponible. La información proporcionada no incluye resultados ni especifica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TobiIbrahim1/contrastive-beta-2024
+- Hugging Face: https://huggingface.co/TobiIbrahim1/contrastive-beta-2024
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante al modelo. Las entradas devueltas corresponden a juegos y páginas de suscripción de Daily Mail (mahjong, crucigramas, ayuda exterior, *newsletter*), sin relación con el repositorio, con PoolFormer ni con aprendizaje contrastivo. No se dispone de paper, blog, repositorio de código ni demo adicionales.

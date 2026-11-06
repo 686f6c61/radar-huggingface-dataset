@@ -4,7 +4,7 @@
 
 Clef-Flash es un modelo multimodal de 9.409.813.744 parámetros (9,4B) diseñado para tomar decisiones sobre datos tipados en lugar de generar texto libre. Recibe un «estado» (texto, JSON, imágenes o vídeo) junto con un esquema de preguntas tipadas y devuelve, en una sola pasada hacia delante, una probabilidad para cada opción permitida de cada pregunta. No hay generación de texto abierta ni parseo de la salida: el modelo emite un logit por opción y se aplica un softmax por pregunta.
 
-El modelo se presenta como un post-entrenamiento de Qwen/Qwen3.5-9B, conservando su backbone y su codificador visual, al que se añade una «joint schema head» (una cabeza transformer pequeña) que enruta la evidencia del estado hacia cada pregunta y puntúa conjuntamente todas las opciones. La model card y los enlaces asociados atribuyen el desarrollo a Cloudflare, si bien el repositorio de HuggingFace está publicado por el usuario TechnoBaptist. Existe una variante mayor, Cloudflare/clef, y Clef-Flash se describe como la variante «flash».
+El modelo se presenta como un post-entrenamiento de Qwen/Qwen3.5-9B, conservando su backbone y su codificador visual, al que se añade una «joint schema head» (una cabeza transformer pequeña) que enruta la evidencia del estado hacia cada pregunta y puntúa conjuntamente todas las opciones. La model card y los enlaces asociados atribuyen el desarrollo a Cloudflare, si bien el repositorio de Hugging Face está publicado por el usuario TechnoBaptist. Existe una variante mayor, Cloudflare/clef, y Clef-Flash se describe como la variante «flash».
 
 Su relevancia actual radica en que sustituye el patrón habitual de «generar texto y parsearlo» por una salida estructurada nativa con probabilidades calibrables, lo que simplifica su integración en pipelines de clasificación, triaje y enrutado. La API es compatible con Jev y SystemOne, y el modelo puede servirse con SGLang en hardware H200, B200 y B300. La licencia es Apache-2.0.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TechnoBaptist/clef-flash | 9,4B | No disponible | Probabilidades por opción (structured output) | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-9B | No disponible (modelo base del que deriva) | No disponible | Texto libre | No disponible | HuggingFace |
-| Cloudflare/clef | No disponible (variante mayor de la misma familia) | No disponible | Probabilidades por opción (structured output) | No disponible | HuggingFace |
+| TechnoBaptist/clef-flash | 9,4B | No disponible | Probabilidades por opción (structured output) | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-9B | No disponible (modelo base del que deriva) | No disponible | Texto libre | No disponible | Hugging Face |
+| Cloudflare/clef | No disponible (variante mayor de la misma familia) | No disponible | Probabilidades por opción (structured output) | No disponible | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de las alternativas en la información proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de las al
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TechnoBaptist/clef-flash
+- Repositorio en Hugging Face: https://huggingface.co/TechnoBaptist/clef-flash
 - Anuncio en el blog de Cloudflare: https://blog.cloudflare.com/clef-decision-models
 - Leaderboard Decision Index: https://clef-evals.workers-ai-mle.workers.dev
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - F16: aproximadamente 29-30 GB.
 - GPU recomendadas: tarjetas con al menos 12 GB de VRAM para cuantizaciones bajas (RTX 3060 12 GB, RTX 4070, RTX 3080, etc.). Para cuantizaciones altas o F16, se recomiendan GPU de 24 GB o mas (RTX 3090, RTX 4090, A10, A100).
 - Si cabe en GPU de consumo: si, con cuantizaciones Q4 o Q5 en tarjetas de 12-16 GB.
-- Opciones de despliegue: al ser formato GGUF, es compatible con llama.cpp, Ollama, LM Studio y otros motores que soporten GGUF. Tambien puede usarse con transformers mediante la libreria `gguf` de HuggingFace, aunque es menos comun.
+- Opciones de despliegue: al ser formato GGUF, es compatible con llama.cpp, Ollama, LM Studio y otros motores que soporten GGUF. Tambien puede usarse con transformers mediante la libreria `gguf` de Hugging Face, aunque es menos comun.
 - Latencia y throughput estimados: no disponibles. Dependen de la GPU, la cuantizacion y el tamaño de la ventana de contexto.
 
 ## Comparativa con modelos similares
@@ -85,9 +85,9 @@ La comparativa se limita a los modelos relacionados listados en la model card de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yuant614/Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill-GGUF
-- Modelo base (safetensors) en HuggingFace: https://huggingface.co/TeichAI/Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill
-- Version GGUF de TeichAI en HuggingFace: https://huggingface.co/TeichAI/Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Yuant614/Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill-GGUF
+- Modelo base (safetensors) en Hugging Face: https://huggingface.co/TeichAI/Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill
+- Version GGUF de TeichAI en Hugging Face: https://huggingface.co/TeichAI/Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill-GGUF
 - Version en ModelScope: https://www.modelscope.cn/models/TeichAI/Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill-GGUF
 - Pagina de analisis en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/qwen3-14b-claude-4.5-opus-high-reasoning-distill-gguf-teichai
 - Resena en local-ai-zone: https://local-ai-zone.github.io/models/qwen3-14b-claude-4-5-opus-high-reasoning-distill.html

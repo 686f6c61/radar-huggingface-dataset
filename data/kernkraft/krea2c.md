@@ -56,7 +56,7 @@ No disponible. Al no conocerse la arquitectura ni el ámbito del modelo, no se p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kernkraft/krea2c
+- Repositorio Hugging Face: https://huggingface.co/kernkraft/krea2c
 - Página de Krea 2 en Civitai: https://civitai.com/ecosystems/krea2
 - Repositorio oficial de Krea 2 (GitHub): https://github.com/krea-ai/krea-2
 - Documentación de Krea 2 en Krea.ai: https://www.krea.ai/krea-2

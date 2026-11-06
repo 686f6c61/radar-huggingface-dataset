@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos adaptadores. La li
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-chunk-only-702-answeronly-r64
+- Hugging Face: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-chunk-only-702-answeronly-r64
 - Repositorio de codigo fuente: https://github.com/Matthew-Bozoukov/teaching_claude_why_replication.git (commit `7137baea6e1f33c182908af6bfba29634d87c9e8`)
 - Dataset de entrenamiento: https://huggingface.co/datasets/LASR-Callum/2026-09-01-answer-only-supervision-chunk-only-702
 - Otros adaptadores del mismo autor:

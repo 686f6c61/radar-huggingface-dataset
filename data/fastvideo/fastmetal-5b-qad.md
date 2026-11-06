@@ -77,10 +77,10 @@ La familia FastMetal cubre tres niveles de hardware Apple, mientras que FastWan-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FastVideo/FastMetal-5B-QAD
+- Modelo en Hugging Face: https://huggingface.co/FastVideo/FastMetal-5B-QAD
 - FastMetal-1.3B-QAD: https://huggingface.co/FastVideo/FastMetal-1.3B-QAD
 - FastMetal-14B-QAD: https://huggingface.co/FastVideo/FastMetal-14B-QAD
 - Repositorio FastVideo (GitHub): https://github.com/hao-ai-lab/FastVideo
 - Blog sobre FastWan-QAD (Hao AI Lab): https://haoailab.com/blogs/fastwan-qad/
 - Resena de FastWan-QAD: https://blog.xclis.ai/fastwan-qad-fastvideo-generates-a-5-second-video-in-1-8-seconds-on-a-single-nvidia-geforce-rtx-5090-via-quantization-aware-distillation-hao-ai-lab-ucsd/
-- FastWan-QAD-FP8-1.3B en HuggingFace: https://huggingface.co/FastVideo/FastWan-QAD-FP8-1.3B
+- FastWan-QAD-FP8-1.3B en Hugging Face: https://huggingface.co/FastVideo/FastWan-QAD-FP8-1.3B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `llmplasticity-zh_nl_instant_8-d0.1-c0.9-r0.5-s42` es un checkpoint publicado en HuggingFace por el usuario Cisco1963 (Hongao) dentro de una familia de experimentos denominada `llmplasticity`. Por la etiqueta `gpt2` y el recuento real de parametros (122.706.432, es decir, unos 122,7 millones), se trata de un transformer decoder-only de la clase GPT-2 small, no de un modelo de gran escala. El nombre sugiere un entrenamiento o ajuste orientado a los idiomas chino (`zh`) y neerlandes (`nl`), con una configuracion experimental codificada en el sufijo (`d0.1` posiblemente dropout, `c0.9`, `r0.5` y `s42` como semilla 42).
+El modelo `llmplasticity-zh_nl_instant_8-d0.1-c0.9-r0.5-s42` es un checkpoint publicado en Hugging Face por el usuario Cisco1963 (Hongao) dentro de una familia de experimentos denominada `llmplasticity`. Por la etiqueta `gpt2` y el recuento real de parametros (122.706.432, es decir, unos 122,7 millones), se trata de un transformer decoder-only de la clase GPT-2 small, no de un modelo de gran escala. El nombre sugiere un entrenamiento o ajuste orientado a los idiomas chino (`zh`) y neerlandes (`nl`), con una configuracion experimental codificada en el sufijo (`d0.1` posiblemente dropout, `c0.9`, `r0.5` y `s42` como semilla 42).
 
 El proyecto parece centrado en estudiar la plasticidad de los modelos de lenguaje (de ahi `llmplasticity`), comparando variantes `baseline`, `random` y `instant` con distintas tasas de aprendizaje, regimenes de congelacion y semillas. El repositorio no incluye model card, no declara licencia, idiomas oficiales ni pipeline de inferencia, por lo que la mayor parte de sus caracteristicas funcionales solo pueden inferirse del nombre y del tamano del checkpoint. El repositorio ocupa 10,3 GB, muy por encima de lo que exigen 122,7 millones de parametros en precision simple (unos 490 MB), lo que indica que contiene multiples checkpoints, estados de optimizador o artefactos de entrenamiento adicionales.
 
@@ -21,7 +21,7 @@ Por su tamano reducido y su naturaleza experimental, el modelo esta pensado para
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 10,3 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas | 16 |
 | Likes | 0 |
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en FP16/BF16: aproximadamente 245 MB.
 - VRAM estimada en INT8: aproximadamente 123 MB; en INT4, unos 61 MB (si se generan cuantizaciones, no confirmadas).
 - Cabe holgadamente en cualquier GPU consumer: RTX 3060, RTX 4060, RTX 4090, e incluso en CPU con memoria suficiente.
-- Despliegue posible con la libreria `transformers` de HuggingFace; no hay evidencia de pesos GGUF, por lo que `llama.cpp` u `Ollama` requeririan conversion previa.
+- Despliegue posible con la libreria `transformers` de Hugging Face; no hay evidencia de pesos GGUF, por lo que `llama.cpp` u `Ollama` requeririan conversion previa.
 - No se dispone de datos de latencia ni throughput medidos.
 - Para servidores de inferencia como vLLM o TGI seria necesario verificar la compatibilidad con la configuracion GPT-2 del checkpoint, ya que no se documenta.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| llmplasticity-zh_nl_instant_8-d0.1-c0.9-r0.5-s42 | 122,7 M | no disponible | zh/nl (presunto) | no disponible | HuggingFace, 16 descargas |
-| llmplasticity-nl_zh_instant_8-d0.5-c0.9-r0.5-s42 | ~0,1 B | no disponible | nl/zh (presunto) | no disponible | HuggingFace, 8 descargas |
-| llmplasticity-baseline-zh_en_instant_64-s42 | no disponible | no disponible | zh/en (presunto) | no disponible | HuggingFace |
+| llmplasticity-zh_nl_instant_8-d0.1-c0.9-r0.5-s42 | 122,7 M | no disponible | zh/nl (presunto) | no disponible | Hugging Face, 16 descargas |
+| llmplasticity-nl_zh_instant_8-d0.5-c0.9-r0.5-s42 | ~0,1 B | no disponible | nl/zh (presunto) | no disponible | Hugging Face, 8 descargas |
+| llmplasticity-baseline-zh_en_instant_64-s42 | no disponible | no disponible | zh/en (presunto) | no disponible | Hugging Face |
 | GPT-2 small original (OpenAI) | 124 M | 1024 tokens | ingles | MIT | Ampliamente disponible |
 
 Las variantes `llmplasticity` comparten arquitectura y tamano, diferenciandose por el par de idiomas (zh/nl, zh/en), el regimen de plasticidad y los hiperparametros. El GPT-2 small original sirve como referencia arquitectonica, aunque su cobertura linguistica y su licencia son distintas.
@@ -88,7 +88,7 @@ Las variantes `llmplasticity` comparten arquitectura y tamano, diferenciandose p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-zh_nl_instant_8-d0.1-c0.9-r0.5-s42
+- Modelo en Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-zh_nl_instant_8-d0.1-c0.9-r0.5-s42
 - Perfil del autor (Hongao): https://huggingface.co/Cisco1963
 - Variante similar nl_zh: https://huggingface.co/Cisco1963/llmplasticity-nl_zh_instant_8-d0.5-c0.9-r0.5-s42
 - Variante similar (directorio externo): https://essamamdani.com/ai-models/hf-cisco1963-llmplasticity-plasticity-nl-zh-instant-8-d0-5-c0-9-r0-25-s42

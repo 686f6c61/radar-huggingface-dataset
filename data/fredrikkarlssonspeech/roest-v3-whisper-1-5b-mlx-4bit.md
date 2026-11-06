@@ -79,6 +79,6 @@ La principal diferencia es la especialización en danés y la optimización para
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/FredrikKarlssonSpeech/roest-v3-whisper-1.5b-mlx-4bit)
+- [Modelo en Hugging Face](https://huggingface.co/FredrikKarlssonSpeech/roest-v3-whisper-1.5b-mlx-4bit)
 - [Modelo base CoRal-project/roest-v3-whisper-1.5b](https://huggingface.co/CoRal-project/roest-v3-whisper-1.5b)
 - [Repositorio mlx-whisper (ml-explore)](https://github.com/ml-explore/mlx-examples/tree/main/whisper)

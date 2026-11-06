@@ -73,9 +73,9 @@ Las cifras de VRAM que se indican a continuación son estimaciones derivadas del
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| toxicdog/Qwen-Image-Edit-2511-GGUF (esta ficha) | ~20,43B (mismos pesos, cuantizados) | no aplica | Sin benchmarks publicados en la información disponible; calidad dependiente del nivel de cuantización | Apache 2.0 | HuggingFace (GGUF) |
-| Qwen/Qwen-Image-Edit-2511 (base, bfloat16) | 20.430.401.088 | no aplica | Sin benchmarks publicados en la información disponible | Apache 2.0 | HuggingFace, ModelScope, demo en Spaces, Qwen Chat |
-| Qwen-Image-Edit-2509 | no disponible | no aplica | Referencia de comparación declarada por el autor: 2511 mejora consistencia, deriva de imagen, LoRA, diseño industrial y geometría | no disponible en la información proporcionada | HuggingFace |
+| toxicdog/Qwen-Image-Edit-2511-GGUF (esta ficha) | ~20,43B (mismos pesos, cuantizados) | no aplica | Sin benchmarks publicados en la información disponible; calidad dependiente del nivel de cuantización | Apache 2.0 | Hugging Face (GGUF) |
+| Qwen/Qwen-Image-Edit-2511 (base, bfloat16) | 20.430.401.088 | no aplica | Sin benchmarks publicados en la información disponible | Apache 2.0 | Hugging Face, ModelScope, demo en Spaces, Qwen Chat |
+| Qwen-Image-Edit-2509 | no disponible | no aplica | Referencia de comparación declarada por el autor: 2511 mejora consistencia, deriva de imagen, LoRA, diseño industrial y geometría | no disponible en la información proporcionada | Hugging Face |
 
 No se dispone de datos verificados en la información proporcionada para establecer una comparativa numérica con alternativas externas de la misma categoría (por ejemplo, otros modelos de edición de imagen por instrucciones). Cualquier cifra que se añadiese aquí no estaría respaldada por las fuentes consultadas.
 
@@ -94,10 +94,10 @@ No se dispone de datos verificados en la información proporcionada para estable
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/toxicdog/Qwen-Image-Edit-2511-GGUF
+- Repositorio Hugging Face: https://huggingface.co/toxicdog/Qwen-Image-Edit-2511-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Modelo en ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-Edit-2511
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-Edit-2511
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-Edit-2511
 - Qwen Chat (función de edición de imagen): https://chat.qwen.ai/?inputFeature=image_edit
 - Blog de Qwen-Image-Edit-2511: https://qwenlm.github.io/blog/qwen-image-edit-2511/
 - Informe técnico (PDF): https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-Image/Qwen_Image.pdf

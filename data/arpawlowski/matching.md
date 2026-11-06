@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `arpawlowski/matching` es un prototipo de investigación publicado en HuggingFace por el autor `arpawlowski`. No se trata de un modelo de IA funcional ni entrenado, sino de un checkpoint de inicialización destinado a pruebas de humo y experimentos de arquitectura. Su propósito declarado es explorar una arquitectura tipo **Mixer** aplicada a tareas de **matching** (emparejamiento). Incluye un script de entrenamiento de referencia y archivos de configuración, pero el propio autor subraya que no presenta resultados de rendimiento verificados ni reivindica ningún benchmark.
+El modelo `arpawlowski/matching` es un prototipo de investigación publicado en Hugging Face por el autor `arpawlowski`. No se trata de un modelo de IA funcional ni entrenado, sino de un checkpoint de inicialización destinado a pruebas de humo y experimentos de arquitectura. Su propósito declarado es explorar una arquitectura tipo **Mixer** aplicada a tareas de **matching** (emparejamiento). Incluye un script de entrenamiento de referencia y archivos de configuración, pero el propio autor subraya que no presenta resultados de rendimiento verificados ni reivindica ningún benchmark.
 
 La arquitectura es un **Mixer** con atención de ventana deslizante, fusión por atención cruzada, activación *swish* y normalización por capas. A pesar de que la configuración se denomina "giant", el modelo contiene únicamente **16.576 parámetros**, lo que indica que es un prototipo mínimo. No se informa de la longitud de contexto ni de idiomas soportados. Su relevancia es metodológica: sirve como punto de partida para desarrollar, evaluar y comparar arquitecturas de matching en entornos académicos o de investigación, pero no es apto para aplicaciones reales.
 
@@ -21,7 +21,7 @@ La arquitectura es un **Mixer** con atención de ventana deslizante, fusión por
 
 ## Arquitectura y entrenamiento
 
-La arquitectura sigue el diseño **Mixer** descrito en el model card: un bloque con atención de ventana deslizante y un mecanismo de fusión basado en atención cruzada. La activación es *swish* y la normalización se realiza con *layernorm*. El README indica que el script `run.py` contiene el modelo, un ejemplo ejecutable y un punto de entrada de entrenamiento. Los archivos `config.json` y `training_args.json` registran los valores de configuración generados y un recetario de experimentos por defecto (optimizador ADAM con programación de *cosine*). Sin embargo, estos valores son iniciales y no evidencian un entrenamiento completado. El checkpoint `model.safetensors` se describe como un punto de inicialización para pruebas de humo, no como un checkpoint entrenado. No se proporcionan datos de entrenamiento, tokens ni información sobre RLHF, DPO o técnicas de optimización. La implementación es personalizada, por lo que las APIs genéricas de HuggingFace requieren un adaptador explícito para su uso.
+La arquitectura sigue el diseño **Mixer** descrito en el model card: un bloque con atención de ventana deslizante y un mecanismo de fusión basado en atención cruzada. La activación es *swish* y la normalización se realiza con *layernorm*. El README indica que el script `run.py` contiene el modelo, un ejemplo ejecutable y un punto de entrada de entrenamiento. Los archivos `config.json` y `training_args.json` registran los valores de configuración generados y un recetario de experimentos por defecto (optimizador ADAM con programación de *cosine*). Sin embargo, estos valores son iniciales y no evidencian un entrenamiento completado. El checkpoint `model.safetensors` se describe como un punto de inicialización para pruebas de humo, no como un checkpoint entrenado. No se proporcionan datos de entrenamiento, tokens ni información sobre RLHF, DPO o técnicas de optimización. La implementación es personalizada, por lo que las APIs genéricas de Hugging Face requieren un adaptador explícito para su uso.
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ La arquitectura sigue el diseño **Mixer** descrito en el model card: un bloque 
 
 - Docencia en cursos de aprendizaje profundo: el proyecto es un ejemplo compacto de cómo implementar una arquitectura Mixer personalizada, con entrenamiento y registro de configuraciones. Puede usarse para ilustrar conceptos de atención por ventana, atención cruzada y normalización.
 
-- Desarrollo de adaptadores para HuggingFace: al ser una implementación personalizada, el modelo puede servir para practicar la creación de adaptadores personalizados que permitan cargarlo como un modelo de `AutoModel`, siempre que se documente el proceso.
+- Desarrollo de adaptadores para Hugging Face: al ser una implementación personalizada, el modelo puede servir para practicar la creación de adaptadores personalizados que permitan cargarlo como un modelo de `AutoModel`, siempre que se documente el proceso.
 
 - Investigación en matching multimodal: la fusión por atención cruzada sugiere un diseño pensado para emparejar dos modalidades o dos representaciones distintas. Sin embargo, la utilidad real solo puede evaluarse tras un entrenamiento adecuado y una validación externa.
 
@@ -78,5 +78,5 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arpawlowski/matching
+- Hugging Face: https://huggingface.co/arpawlowski/matching
 - No se han encontrado otros enlaces relevantes en la búsqueda web (papers, blogs, repositorios o demos).

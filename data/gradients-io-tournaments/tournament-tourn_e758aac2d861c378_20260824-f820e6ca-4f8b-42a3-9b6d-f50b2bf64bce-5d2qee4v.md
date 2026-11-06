@@ -4,7 +4,7 @@
 
 Este modelo es un artefacto generado en el contexto de los torneos descentralizados de Gradients, un proyecto de entrenamiento e investigación de IA distribuida que opera sobre la subred 56 de Bittensor. El identificador `tournament-tourn_e758aac2d861c378_20260824-...` indica que se trata de un checkpoint producido durante una competición de mineros, en la que los participantes entrenan modelos de lenguaje y compiten por recompensas según su rendimiento. El modelo tiene 1.543.714.304 parámetros (aproximadamente 1,54 mil millones), lo que lo sitúa en la categoría de modelos pequeños o compactos, y el tag `qwen2` sugiere que la arquitectura base es un modelo de la familia Qwen2.
 
-La model card publicada en HuggingFace es una plantilla automática generada por la plataforma y no contiene información detallada sobre el modelo: no se especifican datos de entrenamiento, licencia, idiomas, ni usos previstos. El proyecto Gradients (Bittensor Subnet 56) es conocido por organizar torneos de entrenamiento descentralizado, por lo que este checkpoint probablemente sea un fine-tuning de Qwen2-1.5B realizado durante una de esas competiciones. La relevancia actual reside en que estos torneos producen modelos con potencial para tareas conversacionales y de generación de texto, pero la falta de documentación limita su uso directo en producción sin una evaluación previa.
+La model card publicada en Hugging Face es una plantilla automática generada por la plataforma y no contiene información detallada sobre el modelo: no se especifican datos de entrenamiento, licencia, idiomas, ni usos previstos. El proyecto Gradients (Bittensor Subnet 56) es conocido por organizar torneos de entrenamiento descentralizado, por lo que este checkpoint probablemente sea un fine-tuning de Qwen2-1.5B realizado durante una de esas competiciones. La relevancia actual reside en que estos torneos producen modelos con potencial para tareas conversacionales y de generación de texto, pero la falta de documentación limita su uso directo en producción sin una evaluación previa.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ La model card publicada en HuggingFace es una plantilla automática generada por
 
 ## Arquitectura y entrenamiento
 
-El modelo pertenece a la familia Qwen2, como indica el tag `qwen2` en HuggingFace, y tiene aproximadamente 1,54B parámetros. Qwen2 es una arquitectura transformer decoder-only con attention de causalidad completa, que en su versión de 1,5B usa 28 capas, 12 cabezas de atención y una dimensión oculta de 1536, con un vocabulario de 151.936 tokens. Sin embargo, no se ha confirmado si este checkpoint es exactamente la versión base de Qwen2-1.5B o un fine-tuning sobre ella.
+El modelo pertenece a la familia Qwen2, como indica el tag `qwen2` en Hugging Face, y tiene aproximadamente 1,54B parámetros. Qwen2 es una arquitectura transformer decoder-only con attention de causalidad completa, que en su versión de 1,5B usa 28 capas, 12 cabezas de atención y una dimensión oculta de 1536, con un vocabulario de 151.936 tokens. Sin embargo, no se ha confirmado si este checkpoint es exactamente la versión base de Qwen2-1.5B o un fine-tuning sobre ella.
 
 El modelo fue creado el 25 de agosto de 2026 y publicado por el organismo `gradients-io-tournaments`, que forma parte de la red descentralizada de entrenamiento de Bittensor. Los torneos de Gradients consisten en competiciones en las que los mineros entrenan modelos sobre tareas específicas y compiten por recompensas basadas en la calidad de sus resultados. No se dispone de información sobre el dataset de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas de RLHF, DPO o similares. La model card no proporciona ningún dato sobre el proceso de entrenamiento.
 
@@ -61,10 +61,10 @@ El modelo probablemente se basa en Qwen2-1.5B, por lo que la comparativa se hace
 
 | Modelo | Parámetros | Contexto | Rendimiento (MMLU) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2-1.5B | 1,54B | 32.000 tokens (base) | 56,4 | Apache 2.0 | HuggingFace |
-| Este modelo | 1,54B | No disponible | No disponible | No disponible | HuggingFace |
-| Gemma-2-2B | 2,6B | 8.000 tokens | 52,8 | Gemma License | HuggingFace |
-| Phi-3-mini-1.5B | 1,5B | 4.000 tokens | 68,2 | MIT | HuggingFace |
+| Qwen2-1.5B | 1,54B | 32.000 tokens (base) | 56,4 | Apache 2.0 | Hugging Face |
+| Este modelo | 1,54B | No disponible | No disponible | No disponible | Hugging Face |
+| Gemma-2-2B | 2,6B | 8.000 tokens | 52,8 | Gemma License | Hugging Face |
+| Phi-3-mini-1.5B | 1,5B | 4.000 tokens | 68,2 | MIT | Hugging Face |
 
 La comparativa es orientativa: el rendimiento de este modelo no está publicado, y la licencia es desconocida, lo que limita su uso comercial sin verificación previa.
 
@@ -79,7 +79,7 @@ La comparativa es orientativa: el rendimiento de este modelo no está publicado,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_e758aac2d861c378_20260824-f820e6ca-4f8b-42a3-9b6d-f50b2bf64bce-5D2Qee4V
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_e758aac2d861c378_20260824-f820e6ca-4f8b-42a3-9b6d-f50b2bf64bce-5D2Qee4V
 - Web de Gradients (torres descentralizados): https://www.gradients.io/app/research/tournament
 - Página de Gradients (arena de mineros): https://www.gradients.io/app/miners/tournament/latest?type=image
 - Otro modelo similar del mismo autor (referencia): https://huggingface.co/gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-388b697e-299a-4548-b610-227628231630-5FRdgPRd

@@ -23,7 +23,7 @@ Las métricas declaradas son accuracy y F1 ponderado de 1.0 tanto en la partici�
 | Columna objetivo | `extrudable` (1 = extruible, 0 = no extruible) |
 | Tarea | clasificación binaria tabular (`pipeline_tag: tabular-classification`) |
 | Libreria | `autogluon.tabular` |
-| Tamano del repositorio | 0,0 GB según la ficha de HuggingFace |
+| Tamano del repositorio | 0,0 GB según la ficha de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -75,9 +75,9 @@ Estos son los valores publicados por el autor en la model card. El propio autor 
 
 | Modelo | Tarea | Framework | Licencia | Metricas publicadas | Disponibilidad |
 |---|---|---|---|---|---|
-| OmarK211/2026-24679-extrusion-autogluon-classifier | Clasificación binaria de extruibilidad CAD | AutoGluon Tabular | MIT | Accuracy 1,0 y F1 ponderado 1,0 (aumentado y original) | HuggingFace, 0 descargas y 0 likes |
-| yennik16/2026-24679-extrudability-autogluon-classifier | Clasificación de extruibilidad (según el identificador) | no disponible | no disponible | no disponible | HuggingFace |
-| sunkaiwen/sketch2stl-parts-autogluon-predictor | Predictor AutoGluon sobre el mismo conjunto de datos (referido en el código de ejemplo del autor) | AutoGluon Tabular | no disponible | no disponible | HuggingFace |
+| OmarK211/2026-24679-extrusion-autogluon-classifier | Clasificación binaria de extruibilidad CAD | AutoGluon Tabular | MIT | Accuracy 1,0 y F1 ponderado 1,0 (aumentado y original) | Hugging Face, 0 descargas y 0 likes |
+| yennik16/2026-24679-extrudability-autogluon-classifier | Clasificación de extruibilidad (según el identificador) | no disponible | no disponible | no disponible | Hugging Face |
+| sunkaiwen/sketch2stl-parts-autogluon-predictor | Predictor AutoGluon sobre el mismo conjunto de datos (referido en el código de ejemplo del autor) | AutoGluon Tabular | no disponible | no disponible | Hugging Face |
 
 Los tres artefactos parecen pertenecer al mismo linaje experimental en torno al conjunto `sunkaiwen/sketch2stl-parts-tabular`, pero no hay información pública suficiente para comparar parámetros, contexto o rendimiento de forma rigurosa.
 
@@ -95,7 +95,7 @@ Los tres artefactos parecen pertenecer al mismo linaje experimental en torno al 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OmarK211/2026-24679-extrusion-autogluon-classifier
+- Modelo en Hugging Face: https://huggingface.co/OmarK211/2026-24679-extrusion-autogluon-classifier
 - Conjunto de datos: https://huggingface.co/datasets/sunkaiwen/sketch2stl-parts-tabular
 - Modelo relacionado (yennik16): https://huggingface.co/yennik16/2026-24679-extrudability-autogluon-classifier
 - Predictor de referencia citado en la model card: https://huggingface.co/sunkaiwen/sketch2stl-parts-autogluon-predictor

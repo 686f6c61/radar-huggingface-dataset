@@ -25,7 +25,7 @@ La relevancia de este modelo reside en su doble vertiente: por un lado, ofrece u
 
 El modelo es una conversión al formato MLX del modelo `Compumacy/Psych_medgemma`, que a su vez se basa en la arquitectura Gemma 3 de Google, concretamente la variante de solo texto (Gemma 3 text) con aproximadamente 5,7 mil millones de parámetros. Gemma 3 utiliza una arquitectura transformer con atención multi-cabeza y se caracteriza por su eficiencia en inferencia y su capacidad para manejar contextos largos (hasta 128K en algunas variantes, aunque la versión base de 4B/27B suele tener 32K). Este modelo concreto no especifica el contexto exacto.
 
-El entrenamiento del modelo base (Psych_medgemma) se realizó con el dataset `Daemontatox/Psy-Data-books`, una recopilación de libros sobre psicología y psiquiatría. No se han publicado detalles sobre el número de tokens de entrenamiento, técnicas de alineación (RLHF, DPO) ni otras innovaciones. La conversión a MLX se hizo con la librería `mlx-lm` versión 0.31.2, que transforma los pesos de HuggingFace a formato MLX para acelerar la inferencia en Apple Silicon.
+El entrenamiento del modelo base (Psych_medgemma) se realizó con el dataset `Daemontatox/Psy-Data-books`, una recopilación de libros sobre psicología y psiquiatría. No se han publicado detalles sobre el número de tokens de entrenamiento, técnicas de alineación (RLHF, DPO) ni otras innovaciones. La conversión a MLX se hizo con la librería `mlx-lm` versión 0.31.2, que transforma los pesos de Hugging Face a formato MLX para acelerar la inferencia en Apple Silicon.
 
 ## Capacidades
 
@@ -46,7 +46,7 @@ El entrenamiento del modelo base (Psych_medgemma) se realizó con el dataset `Da
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No existen datos de evaluaciones como MMLU, HumanEval, GSM8K ni comparaciones con otros modelos de salud mental en el repositorio de HuggingFace.
+No se han publicado resultados de benchmarks en la información disponible. No existen datos de evaluaciones como MMLU, HumanEval, GSM8K ni comparaciones con otros modelos de salud mental en el repositorio de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -78,7 +78,7 @@ Este modelo se diferencia de MedGemma en que está fine-tuneado para psicología
 
 ## Enlaces
 
-- [HuggingFace del modelo (andosen/Psych_medgemma-mlx-6Bit)](https://huggingface.co/andosen/Psych_medgemma-mlx-6Bit)
+- [Hugging Face del modelo (andosen/Psych_medgemma-mlx-6Bit)](https://huggingface.co/andosen/Psych_medgemma-mlx-6Bit)
 - [Modelo base (Compumacy/Psych_medgemma)](https://huggingface.co/Compumacy/Psych_medgemma)
 - [Repositorio de MedGemma (Google-Health/medgemma)](https://github.com/google-health/medgemma)
 - [Model card de MedGemma 1 (Google Developers)](https://developers.google.com/health-ai-developer-foundations/medgemma/model-card-v1)

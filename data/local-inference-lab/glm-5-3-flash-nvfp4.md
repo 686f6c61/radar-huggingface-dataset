@@ -89,7 +89,7 @@ No se dispone de datos suficientes para una comparación cuantitativa. La model 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4
 - Blog oficial de GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Informe técnico GLM-5: https://arxiv.org/abs/2602.15763
 - Guía de despliegue con SGLang: https://cookbook.sglang.io/autoregressive/GLM/GLM-5.3-Flash

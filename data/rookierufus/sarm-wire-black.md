@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SARM wire black es un modelo de recompensa (reward model) de doble cabeza publicado por el usuario rookierufus en HuggingFace bajo el identificador `rookierufus/sarm-wire-black`. Se trata de un modelo entrenado con la implementacion SARM de LeRobot en modo de anotacion dual (`annotation_mode=dual`), disenado para puntuar el exito de una tarea y el progreso por etapas en demostraciones de manipulacion robotica bimanual realizadas con el brazo SO-101. Su funcion no es generar texto, sino producir senales de recompensa escalares a partir de observaciones del robot.
+SARM wire black es un modelo de recompensa (reward model) de doble cabeza publicado por el usuario rookierufus en Hugging Face bajo el identificador `rookierufus/sarm-wire-black`. Se trata de un modelo entrenado con la implementacion SARM de LeRobot en modo de anotacion dual (`annotation_mode=dual`), disenado para puntuar el exito de una tarea y el progreso por etapas en demostraciones de manipulacion robotica bimanual realizadas con el brazo SO-101. Su funcion no es generar texto, sino producir senales de recompensa escalares a partir de observaciones del robot.
 
 El modelo opera exclusivamente sobre la camara cenital o aerea izquierda, identificada en la observacion como `observation.images.left_top`, y fue entrenado sobre demostraciones bimanuales del SO-101. El checkpoint final corresponde al paso 2500 con un tamano de lote de 128. Cuenta con 119.180.551 parametros reales (segun los ficheros safetensors del repositorio), lo que lo situa en la gama de modelos compactos que pueden ejecutarse en hardware de consumo.
 
@@ -71,7 +71,7 @@ No se dispone de datos sobre modelos comparables en la informacion proporcionada
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rookierufus/sarm-wire-black | 119.180.551 | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) |
+| rookierufus/sarm-wire-black | 119.180.551 | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de datos sobre modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rookierufus/sarm-wire-black
+- Hugging Face: https://huggingface.co/rookierufus/sarm-wire-black
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible
 - Repositorio de codigo: no disponible (la model card unicamente declara la libreria `lerobot`)

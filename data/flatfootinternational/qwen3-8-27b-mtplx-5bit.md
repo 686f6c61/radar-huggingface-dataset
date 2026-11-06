@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 - Memoria unificada: se recomiendan 32 GB o más para ejecutar el modelo con comodidad.
 - GPU: diseñado para Apple Silicon (M-series). Probado en MacBook M5 (no Pro ni Max) con 32 GB.
-- Almacenamiento: aproximadamente 19,4 GB de descarga (el repositorio ocupa 16,9 GB en HuggingFace).
+- Almacenamiento: aproximadamente 19,4 GB de descarga (el repositorio ocupa 16,9 GB en Hugging Face).
 - Opciones de despliegue: mediante la herramienta `mtplx` (comando `mtplx serve --model FlatFootInternational/qwen3.8-27b-MTPLX-5bit`). También puede cargarse con MLX directamente.
 - Latencia y throughput: no se proporcionan cifras exactas; la model card afirma que la decodificación especulativa con MTP acelera la generación, pero no cuantifica la mejora.
 
@@ -77,7 +77,7 @@ La comparativa se limita a modelos de la misma familia MTPLX y al modelo base. N
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FlatFootInternational/qwen3.8-27b-MTPLX-5bit
+- Modelo en Hugging Face: https://huggingface.co/FlatFootInternational/qwen3.8-27b-MTPLX-5bit
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio MTPLX en GitHub: https://github.com/youssofal/mtplx
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

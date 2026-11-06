@@ -80,6 +80,6 @@ GuppyLM es entre 15 y 125 veces más pequeño que estas alternativas y no compit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CodyTonn/guppylm-9M
+- Modelo en Hugging Face: https://huggingface.co/CodyTonn/guppylm-9M
 - Repositorio GitHub del proyecto original: https://github.com/arman-bd/guppylm
 - Dataset de entrenamiento: https://huggingface.co/datasets/arman-bd/guppylm-60k-generic

@@ -97,7 +97,7 @@ La comparativa muestra que la v55 supera al modelo base sin LoRA en sensibilidad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hanemay/smartsightCoach
+- Modelo en Hugging Face: https://huggingface.co/hanemay/smartsightCoach
 - Perfil del autor: https://huggingface.co/hanemay
 - Sitio del producto: https://www.smartsight.app/ai-coach
 - Perfil de LinkedIn del autor: https://www.linkedin.com/in/niclas-bade/

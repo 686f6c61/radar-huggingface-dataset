@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| `ridhanhimmee/model-1-site-similarity-qwen7b` | ~7,6 B (heredados) | no disponible (base: 32.768) | Apache 2.0 | HuggingFace, safetensors, 0 descargas | sin benchmarks publicados |
-| `Qwen/Qwen2.5-7B-Instruct` (base) | 7,61 B | 32.768 tokens nativos (131.072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente desplegado | benchmarks publicados por Qwen |
-| `meta-llama/Llama-3.1-8B-Instruct` | 8,03 B | 131.072 tokens | Llama 3.1 Community License | HuggingFace, requiere aceptar términos | benchmarks publicados por Meta |
-| `mistralai/Mistral-7B-Instruct-v0.3` | 7,25 B | 32.768 tokens | Apache 2.0 | HuggingFace | benchmarks publicados por Mistral |
+| `ridhanhimmee/model-1-site-similarity-qwen7b` | ~7,6 B (heredados) | no disponible (base: 32.768) | Apache 2.0 | Hugging Face, safetensors, 0 descargas | sin benchmarks publicados |
+| `Qwen/Qwen2.5-7B-Instruct` (base) | 7,61 B | 32.768 tokens nativos (131.072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente desplegado | benchmarks publicados por Qwen |
+| `meta-llama/Llama-3.1-8B-Instruct` | 8,03 B | 131.072 tokens | Llama 3.1 Community License | Hugging Face, requiere aceptar términos | benchmarks publicados por Meta |
+| `mistralai/Mistral-7B-Instruct-v0.3` | 7,25 B | 32.768 tokens | Apache 2.0 | Hugging Face | benchmarks publicados por Mistral |
 
 Los datos de los modelos comparativos provienen de sus respectivas documentaciones públicas y no se han verificado en esta ficha. El fine-tune analizado no aporta métricas propias, por lo que la comparación de rendimiento no puede establecerse con rigor; en la práctica, se espera un comportamiento similar al del base en tareas generales y una mejora no cuantificada en la tarea específica de similitud de sitios.
 
@@ -91,7 +91,7 @@ Los datos de los modelos comparativos provienen de sus respectivas documentacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ridhanhimmee/model-1-site-similarity-qwen7b
+- Modelo en Hugging Face: https://huggingface.co/ridhanhimmee/model-1-site-similarity-qwen7b
 - Modelo base (referenciado en la model card): https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
 - Modelo original Qwen2.5-7B-Instruct (no enlazado en la card, referenciado por el base): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth (enlazado en la model card): https://github.com/unslothai/unsloth

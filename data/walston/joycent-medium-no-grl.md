@@ -77,6 +77,6 @@ No se dispone de datos comparativos de rendimiento (MOS, etc.) para estos modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/walston/joycent-medium-no-grl
+- Modelo en Hugging Face: https://huggingface.co/walston/joycent-medium-no-grl
 - Codificador de acento (WhisAID): https://huggingface.co/walston/whisaid-medium-no-grl
 - Vocoder Joycent: https://huggingface.co/walston/joycent-vocoder

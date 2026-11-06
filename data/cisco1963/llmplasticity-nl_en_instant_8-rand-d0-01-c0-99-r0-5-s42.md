@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Cisco1963/llmplasticity-nl_en_instant_8-rand-d0.01-c0.99-r0.5-s42` es un checkpoint publicado en HuggingFace por el usuario Cisco1963. Por su nombre y sus etiquetas (`gpt2`, `safetensors`), se trata de un modelo de lenguaje autorregresivo de arquitectura tipo GPT-2 con 122.706.432 parametros, un tamano coherente con la escala de GPT-2 small. No dispone de pipeline declarado, licencia, idiomas ni descripcion en la ficha de HuggingFace, y acumula 8 descargas y 0 "likes" en el momento de la consulta.
+El modelo `Cisco1963/llmplasticity-nl_en_instant_8-rand-d0.01-c0.99-r0.5-s42` es un checkpoint publicado en Hugging Face por el usuario Cisco1963. Por su nombre y sus etiquetas (`gpt2`, `safetensors`), se trata de un modelo de lenguaje autorregresivo de arquitectura tipo GPT-2 con 122.706.432 parametros, un tamano coherente con la escala de GPT-2 small. No dispone de pipeline declarado, licencia, idiomas ni descripcion en la ficha de Hugging Face, y acumula 8 descargas y 0 "likes" en el momento de la consulta.
 
 El identificador sugiere un experimento dentro de una linea de investigacion sobre plasticidad en modelos de lenguaje ("llmplasticity"), con un entrenamiento o evaluacion bilingue neerlandes-ingles ("nl_en"), una variante denominada "instant_8" y un conjunto de hiperparametros codificados en el sufijo (`d0.01`, `c0.99`, `r0.5`, semilla `s42`). Esta lectura del nombre es una hipotesis razonable, no un dato confirmado por el autor.
 
@@ -12,7 +12,7 @@ Su relevancia actual es limitada y de caracter experimental: no es un modelo ori
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (etiqueta `gpt2` en HuggingFace); transformer decoder-only autorregresivo |
+| Arquitectura | GPT-2 (etiqueta `gpt2` en Hugging Face); transformer decoder-only autorregresivo |
 | Parametros totales | 122.706.432 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible (la arquitectura GPT-2 suele usar 1024 tokens, sin confirmar) |
@@ -27,7 +27,7 @@ Su relevancia actual es limitada y de caracter experimental: no es un modelo ori
 
 ## Arquitectura y entrenamiento
 
-La etiqueta de HuggingFace indica `gpt2`, por lo que el modelo sigue el diseno clasico de transformer decoder-only con atencion causal completa, normalizacion previa y embeddings de tokens y posiciones aprendidos. El recuento de 122,7 millones de parametros es practicamente identico al de GPT-2 small (124 millones), lo que sugiere una configuracion de aproximadamente 12 capas, 12 cabezas de atencion y una dimension de modelo de 768, posiblemente con un vocabulario ajustado para el par de idiomas neerlandes-ingles. Esta correspondencia es una inferencia a partir del numero de parametros, no un dato publicado.
+La etiqueta de Hugging Face indica `gpt2`, por lo que el modelo sigue el diseno clasico de transformer decoder-only con atencion causal completa, normalizacion previa y embeddings de tokens y posiciones aprendidos. El recuento de 122,7 millones de parametros es practicamente identico al de GPT-2 small (124 millones), lo que sugiere una configuracion de aproximadamente 12 capas, 12 cabezas de atencion y una dimension de modelo de 768, posiblemente con un vocabulario ajustado para el par de idiomas neerlandes-ingles. Esta correspondencia es una inferencia a partir del numero de parametros, no un dato publicado.
 
 No hay informacion disponible sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre innovaciones tecnicas concretas. El sufijo del nombre (`rand`, `d0.01`, `c0.99`, `r0.5`, `s42`) apunta a un experimento con inicializacion aleatoria, valores de hiperparametros fijados (posiblemente tasa de dropout, una constante de regularizacion y un ratio) y semilla 42, lo cual es habitual en trabajos de reproducibilidad, pero no se confirma en la documentacion.
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Cisco1963/llmplasticity-nl_en_instant_8-rand-d0.01-c0.99-r0.5-s42 | 122,7 M | no disponible | no disponible | HuggingFace (8 descargas) |
+| Cisco1963/llmplasticity-nl_en_instant_8-rand-d0.01-c0.99-r0.5-s42 | 122,7 M | no disponible | no disponible | Hugging Face (8 descargas) |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Ampliamente disponible |
-| DistilGPT-2 (HuggingFace) | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible |
+| DistilGPT-2 (Hugging Face) | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible |
 | GPT-2 medium (OpenAI) | 355 M | 1024 tokens | MIT | Ampliamente disponible |
 
 Nota: los datos de GPT-2 small, DistilGPT-2 y GPT-2 medium son especificaciones publicas ampliamente conocidas y se incluyen como referencia de categoria; no proceden de la ficha del modelo analizado. No hay resultados de rendimiento comparativos disponibles para el modelo de Cisco1963.
@@ -96,6 +96,6 @@ Nota: los datos de GPT-2 small, DistilGPT-2 y GPT-2 medium son especificaciones 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-nl_en_instant_8-rand-d0.01-c0.99-r0.5-s42
+- Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-nl_en_instant_8-rand-d0.01-c0.99-r0.5-s42
 - Paper, blog, repositorio o demo del autor: no disponible
 - Resultados de la busqueda web: las consultas realizadas no devolvieron informacion relevante sobre el modelo; los resultados obtenidos correspondian a paginas de Google Maps sin relacion con el proyecto.

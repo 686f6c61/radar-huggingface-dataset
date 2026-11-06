@@ -93,7 +93,7 @@ No se dispone de comparaciones de rendimiento entre estos modelos y Ohm-MythosHe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Ohm-MythosHeretic-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Ohm-MythosHeretic-i1-GGUF
 - Modelo base: https://huggingface.co/orangejuicesmith/Ohm-MythosHeretic
 - Cuantizaciones estáticas: https://huggingface.co/mradermacher/Ohm-MythosHeretic-GGUF
 - Página de descargas del cuantizador: https://hf.tst.eu/model#Ohm-MythosHeretic-i1-GGUF

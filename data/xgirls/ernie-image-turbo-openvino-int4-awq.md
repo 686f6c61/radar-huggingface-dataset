@@ -88,8 +88,8 @@ El autor advierte explicitamente que la comparacion 368,6-402 s frente a 27,4 s 
 
 | Modelo | Parametros | Contexto de imagen | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xgirls/ernie-image-turbo-openvino-int4-awq | 8B (transformer) | 1024x1024 validado, dinamico divisible por 16 | OpenVINO IR INT4 AWQ + safetensors BF16 | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| baidu/ERNIE-Image-Turbo (modelo base) | 8B (transformer) | no disponible | Diffusers, BF16 | Apache-2.0 | HuggingFace (referenciado como origen) |
+| xgirls/ernie-image-turbo-openvino-int4-awq | 8B (transformer) | 1024x1024 validado, dinamico divisible por 16 | OpenVINO IR INT4 AWQ + safetensors BF16 | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| baidu/ERNIE-Image-Turbo (modelo base) | 8B (transformer) | no disponible | Diffusers, BF16 | Apache-2.0 | Hugging Face (referenciado como origen) |
 | IR FP32 sin comprimir del mismo transformer | 8B (transformer) | no disponible | OpenVINO IR FP32, 30,0 GB | Apache-2.0 | Mencionado en la model card como fallback |
 | Otras alternativas texto-a-imagen de 8B con cuantizacion OpenVINO | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -112,7 +112,7 @@ Solo se dispone de datos comparativos frente al modelo base y frente al IR FP32 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xgirls/ernie-image-turbo-openvino-int4-awq
+- Repositorio Hugging Face: https://huggingface.co/xgirls/ernie-image-turbo-openvino-int4-awq
 - Modelo base: https://huggingface.co/baidu/ERNIE-Image-Turbo
 - Licencia incluida en el repositorio: LICENSE (archivo dentro del propio repositorio)
 - Receta de cuantizacion: quantization_config.json (archivo dentro del propio repositorio)

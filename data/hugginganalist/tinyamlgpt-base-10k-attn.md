@@ -86,5 +86,5 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HuggingAnalist/TinyAmlGpt-Base-10k-attn
+- Modelo en Hugging Face: https://huggingface.co/HuggingAnalist/TinyAmlGpt-Base-10k-attn
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories

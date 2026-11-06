@@ -94,7 +94,7 @@ Dealign AI ha publicado otros modelos CRACK como MiniMax-M2.5-JANG_4M-CRACK, per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/MiniCPM5-2B-CRACK-JANG_8M
+- Modelo en Hugging Face: https://huggingface.co/dealignai/MiniCPM5-2B-CRACK-JANG_8M
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Sitio de Dealign AI: https://dealign.ai/
 - vMLX (motor de inferencia): https://vmlx.net

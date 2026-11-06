@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Lanni-ni/alibi_4_6_384_pile_seed44 es un modelo de generacion de texto de tipo decoder-only publicado en HuggingFace por el usuario Lanni-ni. Se trata de un checkpoint de investigacion de muy pequeno tamano (45.694.080 parametros, segun el recuento real de los safetensors del repositorio) que emplea atencion con sesgos lineales (ALiBi, *Attention with Linear Biases*) en lugar de codificaciones posicionales aprendidas. El unico paper referenciado en las etiquetas del repositorio es el articulo fundacional de ALiBi (arXiv:1910.09700), lo que situa el modelo en la linea de trabajo sobre extrapolacion de longitud de contexto en transformers.
+Lanni-ni/alibi_4_6_384_pile_seed44 es un modelo de generacion de texto de tipo decoder-only publicado en Hugging Face por el usuario Lanni-ni. Se trata de un checkpoint de investigacion de muy pequeno tamano (45.694.080 parametros, segun el recuento real de los safetensors del repositorio) que emplea atencion con sesgos lineales (ALiBi, *Attention with Linear Biases*) en lugar de codificaciones posicionales aprendidas. El unico paper referenciado en las etiquetas del repositorio es el articulo fundacional de ALiBi (arXiv:1910.09700), lo que situa el modelo en la linea de trabajo sobre extrapolacion de longitud de contexto en transformers.
 
-El identificador del repositorio sugiere una configuracion de 4 capas, 6 cabezas de atencion y dimension de modelo 384, entrenada sobre el dataset The Pile con la semilla 44. Esa lectura es coherente con el recuento de parametros: 4 capas x 1.774.176 parametros + dos matrices de embedding/desembebido de 50.257 x 384 (vocabulario GPT-2) suman exactamente 45.694.080. Aun asi, el autor no ha documentado ninguno de estos extremos en la model card, que es la plantilla automatica de HuggingFace sin rellenar.
+El identificador del repositorio sugiere una configuracion de 4 capas, 6 cabezas de atencion y dimension de modelo 384, entrenada sobre el dataset The Pile con la semilla 44. Esa lectura es coherente con el recuento de parametros: 4 capas x 1.774.176 parametros + dos matrices de embedding/desembebido de 50.257 x 384 (vocabulario GPT-2) suman exactamente 45.694.080. Aun asi, el autor no ha documentado ninguno de estos extremos en la model card, que es la plantilla automatica de Hugging Face sin rellenar.
 
 La relevancia de este modelo es puramente experimental: sirve como punto de partida reproducible para estudiar ALiBi, para hacer barridos de semillas y para validar infraestructura de inferencia con modelos diminutos. No es un modelo destinado a produccion ni compite en capacidad con modelos actuales; su interes esta en el analisis de extrapolacion de contexto y en la reproducibilidad de experimentos a bajo coste computacional.
 
@@ -65,17 +65,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| Lanni-ni/alibi_4_6_384_pile_seed44 | 45,7 M | no disponible (ALiBi permite extrapolacion) | no disponible | HuggingFace, requiere `custom_code` | no disponibles |
-| GPT-2 small (OpenAI) | 124 M | 1.024 tokens | MIT (pesos publicados por OpenAI) | HuggingFace, transformers nativo | si, ampliamente documentados |
-| Pythia-70M (EleutherAI) | 70 M | 2.048 tokens | Apache 2.0 | HuggingFace, transformers nativo | si, suite completa de evaluacion |
-| TinyStories-33M (Microsoft Research) | 33 M | 1.024 tokens | MIT | HuggingFace, transformers nativo | si, centrados en coherencia narrativa |
+| Lanni-ni/alibi_4_6_384_pile_seed44 | 45,7 M | no disponible (ALiBi permite extrapolacion) | no disponible | Hugging Face, requiere `custom_code` | no disponibles |
+| GPT-2 small (OpenAI) | 124 M | 1.024 tokens | MIT (pesos publicados por OpenAI) | Hugging Face, transformers nativo | si, ampliamente documentados |
+| Pythia-70M (EleutherAI) | 70 M | 2.048 tokens | Apache 2.0 | Hugging Face, transformers nativo | si, suite completa de evaluacion |
+| TinyStories-33M (Microsoft Research) | 33 M | 1.024 tokens | MIT | Hugging Face, transformers nativo | si, centrados en coherencia narrativa |
 
 La comparacion relevante no es de rendimiento, ya que no existen numeros publicados para el modelo analizado, sino de trazabilidad: frente a GPT-2 small, Pythia-70M o TinyStories, este checkpoint carece de licencia explicita, de ficha tecnica cumplimentada y de resultados de evaluacion, lo que lo situa en una categoria de uso estrictamente experimental.
 
 ## Limitaciones y advertencias
 
 - La licencia no esta especificada. Sin licencia explicita, no puede asumirse permiso para uso comercial; en la practica, el modelo debe tratarse como no licenciado para produccion hasta que el autor lo aclare.
-- La model card es la plantilla automatica de HuggingFace sin rellenar: no hay informacion sobre datos de entrenamiento, hiperparametros, sesgos, usos previstos ni usos fuera de alcance.
+- La model card es la plantilla automatica de Hugging Face sin rellenar: no hay informacion sobre datos de entrenamiento, hiperparametros, sesgos, usos previstos ni usos fuera de alcance.
 - Con 45,7 millones de parametros, la cantidad de conocimiento factual almacenado es muy limitada y la tasa de alucinacion en preguntas abiertas sera alta. No debe usarse como fuente de informacion.
 - Al entrenarse previsiblemente sobre The Pile (corpus de web, libros, codigo y otros dominios sin filtrado exhaustivo), es probable que reproduzca sesgos, estereotipos y contenido problematico presente en esos datos.
 - Cobertura de idiomas: no documentada; si el entrenamiento fue solo en The Pile, el rendimiento en castellano sera previsiblemente pobre.
@@ -87,7 +87,7 @@ La comparacion relevante no es de rendimiento, ya que no existen numeros publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/alibi_4_6_384_pile_seed44
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/alibi_4_6_384_pile_seed44
 - Paper de ALiBi, "Train Short, Test Long: Attention with Linear Biases Enables Input Length Extrapolation": https://arxiv.org/abs/1910.09700
 - Dataset The Pile (EleutherAI), mencionado en el identificador del modelo: https://pile.eleuther.ai/
 - Documentacion de transformers sobre modelos con codigo personalizado: https://huggingface.co/docs/transformers/main/en/custom_models

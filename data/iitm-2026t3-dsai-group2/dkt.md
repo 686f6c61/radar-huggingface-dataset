@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DKT (Deep Knowledge Tracing) es un modelo de prediccion de dominio estudiantil desarrollado por el grupo IITM-2026T3-DSAI-GROUP2, publicado en HuggingFace bajo licencia MIT. No es un modelo de lenguaje generativo, sino un modelo de trazado de conocimiento que estima la probabilidad de que un estudiante responda correctamente a preguntas asociadas a distintas habilidades (skills) a partir de su historial secuencial de interacciones. Resuelve el problema del modelado del aprendizaje personalizado: dado un conjunto de respuestas pasadas, predice el nivel de maestria por habilidad para orientar intervenciones educativas.
+DKT (Deep Knowledge Tracing) es un modelo de prediccion de dominio estudiantil desarrollado por el grupo IITM-2026T3-DSAI-GROUP2, publicado en Hugging Face bajo licencia MIT. No es un modelo de lenguaje generativo, sino un modelo de trazado de conocimiento que estima la probabilidad de que un estudiante responda correctamente a preguntas asociadas a distintas habilidades (skills) a partir de su historial secuencial de interacciones. Resuelve el problema del modelado del aprendizaje personalizado: dado un conjunto de respuestas pasadas, predice el nivel de maestria por habilidad para orientar intervenciones educativas.
 
 La arquitectura es una red LSTM con capa de embedding (dimension 64), capa recurrente (dimension oculta 128) y capa totalmente conectada con activacion sigmoide que produce probabilidades por cada una de las 123 habilidades modeladas. La longitud maxima de secuencia es de 200 interacciones. El modelo se entrena con optimizador Adam (learning rate 0.001) durante 20 epocas usando Binary Cross Entropy with Logits como funcion de perdida.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Habilidades | Longitud de secuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DKT (IITM-2026T3-DSAI-GROUP2) | LSTM | 123 | 200 | MIT | HuggingFace (repo vacio, 0.0 GB) |
+| DKT (IITM-2026T3-DSAI-GROUP2) | LSTM | 123 | 200 | MIT | Hugging Face (repo vacio, 0.0 GB) |
 | DKT original (Piech et al., 2015) | LSTM | variable segun dataset | variable | no disponible | publicacion academica |
 | SAKT (Pandey y Karypis, 2019) | Transformer | variable segun dataset | variable | no disponible | publicacion academica |
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento del modelo publicado que permitan una comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IITM-2026T3-DSAI-GROUP2/dkt
+- Hugging Face: https://huggingface.co/IITM-2026T3-DSAI-GROUP2/dkt
 - Paper original de Deep Knowledge Tracing (Piech et al., 2015): no disponible en la informacion proporcionada
 - Repositorio de codigo: no disponible
 - Demo: no disponible

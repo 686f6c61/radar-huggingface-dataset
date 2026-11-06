@@ -90,7 +90,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones completa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/4b-diversity-HL-300-nyshot-27b-z-epoch3
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/4b-diversity-HL-300-nyshot-27b-z-epoch3
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/Stage-org/4b-diversity-HL-300-nyshot-27b-z
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada.

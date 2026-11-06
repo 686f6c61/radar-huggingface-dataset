@@ -4,7 +4,7 @@
 
 `sentiment-versioning-demo` es un modelo de clasificación de texto desarrollado por Yanishdd, que parte del modelo base `distilbert-base-uncased` y lo ajusta para una tarea de análisis de sentimiento. Se trata de un fine-tuning de un transformer encoder-only de 66.955.010 parámetros (aproximadamente 67 millones), publicado con licencia Apache 2.0. El repositorio contiene pesos en formato safetensors y ocupa 0,8 GB.
 
-Su principal relevancia es ilustrar el flujo de versionado de modelos en HuggingFace, dado el nombre del proyecto, aunque no se ha publicado documentación específica sobre el dataset de entrenamiento ni sobre el rendimiento esperado. La model card indica que se entrenó durante 1 época con un learning rate de 2e-05 y un tamaño de lote de 16, obteniendo una accuracy de validación de 0,854. A día de hoy no se han publicado benchmarks oficiales que permitan compararlo con otros modelos de la misma categoría.
+Su principal relevancia es ilustrar el flujo de versionado de modelos en Hugging Face, dado el nombre del proyecto, aunque no se ha publicado documentación específica sobre el dataset de entrenamiento ni sobre el rendimiento esperado. La model card indica que se entrenó durante 1 época con un learning rate de 2e-05 y un tamaño de lote de 16, obteniendo una accuracy de validación de 0,854. A día de hoy no se han publicado benchmarks oficiales que permitan compararlo con otros modelos de la misma categoría.
 
 ## Especificaciones tecnicas
 
@@ -73,4 +73,4 @@ No se han identificado modelos comparables en la informacion disponible. El mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Yanishdd/sentiment-versioning-demo
+- Repositorio en Hugging Face: https://huggingface.co/Yanishdd/sentiment-versioning-demo

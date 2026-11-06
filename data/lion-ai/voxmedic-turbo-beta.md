@@ -77,13 +77,13 @@ La comparativa directa más relevante es con whisper-large-v3-turbo, del que der
 - Riesgo de alucinación: como todo modelo Whisper, puede generar texto plausible en pasajes de audio con ruido, silencios prolongados o solapamiento de hablantes; en contexto médico esto es especialmente crítico y exige revisión humana.
 - Limitaciones de contexto: la ventana de audio de 30 segundos por segmento es inherente a la arquitectura Whisper; audios más largos requieren segmentación previa.
 - Limitaciones de idioma: solo se declara soporte de polaco; no se garantiza rendimiento en otras lenguas pese a derivar de un modelo multilingüe.
-- Restricciones de licencia: la licencia medalion-eskulap-asr-community-license-v1.0 es una licencia comunitaria propia, no una licencia open source estándar; es necesario revisar sus términos antes de uso comercial. El acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace.
+- Restricciones de licencia: la licencia medalion-eskulap-asr-community-license-v1.0 es una licencia comunitaria propia, no una licencia open source estándar; es necesario revisar sus términos antes de uso comercial. El acceso es restringido (gated) y requiere aceptar condiciones en Hugging Face.
 - Caveat para producción: no se han publicado benchmarks ni métricas de WER (word error rate) en la información disponible, por lo que la mejora respecto al modelo base no está cuantificada públicamente; se recomienda evaluar con un conjunto de validación propio antes de desplegar en entornos clínicos.
 - Advertencia regulatoria: un modelo ASR en dominio médico no sustituye la validación clínica ni el cumplimiento de normativas sanitarias (por ejemplo, MDR en la UE) si se integra en productos sanitarios.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lion-ai/VoxMedic-turbo-beta
+- Modelo en Hugging Face: https://huggingface.co/lion-ai/VoxMedic-turbo-beta
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Dataset admed_voice: https://huggingface.co/datasets/lion-ai/admed_voice
 - Dataset pl_med_asr_test2: https://huggingface.co/datasets/lion-ai/pl_med_asr_test2

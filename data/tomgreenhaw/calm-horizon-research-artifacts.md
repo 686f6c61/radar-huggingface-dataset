@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks del modelo base (MMLU, HumanEval, G
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CALM Horizon research artifacts (este) | Artefactos de interpretabilidad y seguridad sobre Gemma 4 12B | SAE de 30.720 características; modelo base 12B | No disponible | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| google/gemma-4-12B-it-qat-q4_0-unquantized | Modelo base | 12B | No disponible | Apache-2.0 según la model card | Repositorio de Google en HuggingFace |
+| CALM Horizon research artifacts (este) | Artefactos de interpretabilidad y seguridad sobre Gemma 4 12B | SAE de 30.720 características; modelo base 12B | No disponible | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| google/gemma-4-12B-it-qat-q4_0-unquantized | Modelo base | 12B | No disponible | Apache-2.0 según la model card | Repositorio de Google en Hugging Face |
 | Sonda sobre residual crudo en la capa 24 | Clasificador de referencia citado por el autor | No disponible | No aplica | No disponible | No es un artefacto distribuido; solo se cita su AUROC de 0,94 |
 
 No se dispone de información sobre otros paquetes de artefactos de interpretabilidad comparables en la información proporcionada.
@@ -95,7 +95,7 @@ No se dispone de información sobre otros paquetes de artefactos de interpretabi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tomgreenhaw/calm-horizon-research-artifacts
+- Repositorio en Hugging Face: https://huggingface.co/tomgreenhaw/calm-horizon-research-artifacts
 - Repositorio GitHub del CALM Horizon Workbench: https://github.com/tgreenhaw5/calm-horizon-research
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized
 - XSTest (conjunto de evaluación citado, CC BY 4.0): no disponible enlace directo en la información proporcionada

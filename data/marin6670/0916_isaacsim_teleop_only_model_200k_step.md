@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (fine-tune de SmolVLA, 200k pasos) | 450.046.176 | no disponible | no disponible | safetensors | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| `lerobot/smolvla_base` (modelo base) | mismo orden de magnitud (el ajuste no altera la topología) | no disponible | no disponible | safetensors | HuggingFace |
-| OpenVLA | aproximadamente 7.000 millones (dato aproximado, no verificado en la información proporcionada) | no disponible | no disponible | no disponible | HuggingFace |
+| Este modelo (fine-tune de SmolVLA, 200k pasos) | 450.046.176 | no disponible | no disponible | safetensors | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| `lerobot/smolvla_base` (modelo base) | mismo orden de magnitud (el ajuste no altera la topología) | no disponible | no disponible | safetensors | Hugging Face |
+| OpenVLA | aproximadamente 7.000 millones (dato aproximado, no verificado en la información proporcionada) | no disponible | no disponible | no disponible | Hugging Face |
 | pi0 (Physical Intelligence) | aproximadamente 3.000 millones (dato aproximado, no verificado en la información proporcionada) | no disponible | no disponible | no disponible | no disponible |
 
 La comparación cuantitativa de rendimiento no es posible: este checkpoint no publica tasas de éxito y la búsqueda web realizada no devolvió información técnica relevante sobre modelos comparables, solo resultados sin relación con el tema.
@@ -99,7 +99,7 @@ La comparación cuantitativa de rendimiento no es posible: este checkpoint no pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marin6670/0916_isaacsim_teleop_only_model_200k_step
+- Modelo en Hugging Face: https://huggingface.co/marin6670/0916_isaacsim_teleop_only_model_200k_step
 - Dataset de entrenamiento: https://huggingface.co/datasets/marin6670/0916_isaacsim_so101_teleop_block_basketball_coca_cola_samsung_tv_remote_control_dataset
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Librería LeRobot: no se proporcionó enlace directo en la información disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nocciolino/Train_Stop es un repositorio de modelo publicado en HuggingFace por el usuario Nocciolino. La unica informacion verificable disponible es su licencia (apache-2.0), la etiqueta de region (us) y los metadatos de creacion y actualizacion (2026-09-11 en ambos casos). No se declara pipeline, idiomas, arquitectura, tamano ni formato de pesos.
+Nocciolino/Train_Stop es un repositorio de modelo publicado en Hugging Face por el usuario Nocciolino. La unica informacion verificable disponible es su licencia (apache-2.0), la etiqueta de region (us) y los metadatos de creacion y actualizacion (2026-09-11 en ambos casos). No se declara pipeline, idiomas, arquitectura, tamano ni formato de pesos.
 
 La model card del repositorio no contiene mas que la linea de licencia, sin descripcion, sin instrucciones de uso y sin resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes, por lo que no existe evidencia de uso ni de validacion por parte de la comunidad.
 
@@ -76,7 +76,7 @@ No disponible. No se puede establecer una categoria de comparacion (mismo tamano
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nocciolino/Train_Stop | no disponible | no disponible | no disponible | apache-2.0 | repositorio publico en HuggingFace, 0 descargas |
+| Nocciolino/Train_Stop | no disponible | no disponible | no disponible | apache-2.0 | repositorio publico en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No disponible. No se puede establecer una categoria de comparacion (mismo tamano
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nocciolino/Train_Stop
+- Repositorio en Hugging Face: https://huggingface.co/Nocciolino/Train_Stop
 - Model card: https://huggingface.co/Nocciolino/Train_Stop/blob/main/README.md
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - La busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los enlaces obtenidos correspondian a paginas de Microsoft sin vinculacion con el repositorio.

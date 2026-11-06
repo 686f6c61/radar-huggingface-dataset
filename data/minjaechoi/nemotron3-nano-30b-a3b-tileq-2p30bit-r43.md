@@ -73,7 +73,7 @@ La model card no incluye cifras de MMLU, HumanEval, GSM8K ni de ninguna otra bat
 
 | Modelo | Parametros totales | Contexto | Precision de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nemotron3-nano-30b-a3b-tileq-2p30bit-r43 (este) | ~31,6B | no disponible | Expertos a 2,3010 bits (almacenados en BF16) | Sigue la del base | HuggingFace, 0 descargas |
+| nemotron3-nano-30b-a3b-tileq-2p30bit-r43 (este) | ~31,6B | no disponible | Expertos a 2,3010 bits (almacenados en BF16) | Sigue la del base | Hugging Face, 0 descargas |
 | nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 (base) | ~31,6B | no disponible | BF16 | no disponible | Modelo oficial de NVIDIA |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,5 +93,5 @@ No se dispone de informacion sobre modelos comparables (por ejemplo, otros MoE d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/minjaechoi/nemotron3-nano-30b-a3b-tileq-2p30bit-r43
+- Repositorio en Hugging Face: https://huggingface.co/minjaechoi/nemotron3-nano-30b-a3b-tileq-2p30bit-r43
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16

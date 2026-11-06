@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yolo90413/newmine` es un repositorio publicado en HuggingFace por el usuario `yolo90413` bajo licencia Academic Free License 3.0 (AFL-3.0). El repositorio ocupa 1,1 GB en disco y fue creado el 10 de septiembre de 2026, con una ultima actualizacion apenas ocho minutos despues, lo que apunta a una publicacion inicial sin iteraciones posteriores. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas especificados.
+`yolo90413/newmine` es un repositorio publicado en Hugging Face por el usuario `yolo90413` bajo licencia Academic Free License 3.0 (AFL-3.0). El repositorio ocupa 1,1 GB en disco y fue creado el 10 de septiembre de 2026, con una ultima actualizacion apenas ocho minutos despues, lo que apunta a una publicacion inicial sin iteraciones posteriores. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas especificados.
 
 La model card es practicamente vacia: unicamente contiene la cabecera YAML con el campo `license: afl-3.0`, sin descripcion, sin detalles de arquitectura, sin datos de entrenamiento y sin instrucciones de uso. No se dispone de informacion sobre el numero de parametros, la arquitectura, la longitud de contexto, los datos de entrenamiento ni las capacidades del modelo.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 No disponible. Sin conocer el tamano, la arquitectura ni el dominio del modelo, no es posible identificar alternativas comparables de la misma categoria. Cualquier comparacion con modelos concretos seria arbitraria.
 
-Como referencia puramente estructural, un repositorio de 1,1 GB y licencia permisiva es un perfil habitual entre los modelos pequenos y medianos publicados en HuggingFace, pero no hay datos suficientes para situar `yolo90413/newmine` frente a ninguno de ellos.
+Como referencia puramente estructural, un repositorio de 1,1 GB y licencia permisiva es un perfil habitual entre los modelos pequenos y medianos publicados en Hugging Face, pero no hay datos suficientes para situar `yolo90413/newmine` frente a ninguno de ellos.
 
 ## Limitaciones y advertencias
 
@@ -84,5 +84,5 @@ Como referencia puramente estructural, un repositorio de 1,1 GB y licencia permi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yolo90413/newmine
+- Repositorio en Hugging Face: https://huggingface.co/yolo90413/newmine
 - Resultados de busqueda web relevantes: no se ha encontrado ninguno. Las unicas URL devueltas por la busqueda corresponden a Smyths Toys (https://www.smythstoys.com/de/de-de, https://de.wikipedia.org/wiki/Smyths_Toys) y no guardan relacion con el modelo.

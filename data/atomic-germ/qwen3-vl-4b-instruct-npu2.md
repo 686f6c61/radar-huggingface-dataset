@@ -76,7 +76,7 @@ La variante NPU2 se distingue por su adaptacion a hardware NPU de borde, mientra
 
 ## Enlaces
 
-- [Repositorio HuggingFace Atomic-Germ/Qwen3-VL-4B-Instruct-NPU2](https://huggingface.co/Atomic-Germ/Qwen3-VL-4B-Instruct-NPU2)
+- [Repositorio Hugging Face Atomic-Germ/Qwen3-VL-4B-Instruct-NPU2](https://huggingface.co/Atomic-Germ/Qwen3-VL-4B-Instruct-NPU2)
 - [Modelo base Qwen/Qwen3-VL-4B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct)
 - [Repositorio similar FastFlowLM/Qwen3-VL-4B-Instruct-NPU2](https://huggingface.co/FastFlowLM/Qwen3-VL-4B-Instruct-NPU2)
 - [Modelo en ModelScope](https://www.modelscope.cn/models/Qwen/Qwen3-VL-4B-Instruct)

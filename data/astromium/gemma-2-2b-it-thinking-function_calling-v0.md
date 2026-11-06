@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Astromium/gemma-2-2B-it-thinking-function_calling-V0 es un ajuste fino (fine-tune) del modelo google/gemma-2-2b-it, publicado por el usuario Astromium en HuggingFace. Se trata de un derivado de la familia Gemma 2 de Google, un transformer decoder-only de aproximadamente 2.600 millones de parametros y 8.192 tokens de contexto en su version original. El nombre del repositorio sugiere dos objetivos de especializacion: un modo de razonamiento explicito ("thinking") y soporte de llamada a funciones ("function calling"), aunque la model card no documenta ni el dataset ni el procedimiento concreto empleado para conseguirlos.
+Astromium/gemma-2-2B-it-thinking-function_calling-V0 es un ajuste fino (fine-tune) del modelo google/gemma-2-2b-it, publicado por el usuario Astromium en Hugging Face. Se trata de un derivado de la familia Gemma 2 de Google, un transformer decoder-only de aproximadamente 2.600 millones de parametros y 8.192 tokens de contexto en su version original. El nombre del repositorio sugiere dos objetivos de especializacion: un modo de razonamiento explicito ("thinking") y soporte de llamada a funciones ("function calling"), aunque la model card no documenta ni el dataset ni el procedimiento concreto empleado para conseguirlos.
 
-El modelo se ha entrenado mediante SFT (supervised fine-tuning) utilizando la libreria TRL de HuggingFace, segun declara la propia model card. No se especifica el conjunto de datos, el numero de pasos, la composicion del corpus ni si hubo una fase posterior de alineacion con RLHF o DPO. El repositorio incluye unicamente pesos en safetensors compatibles con transformers y con la etiqueta endpoints_compatible, lo que indica que puede desplegarse mediante Inference Endpoints de HuggingFace.
+El modelo se ha entrenado mediante SFT (supervised fine-tuning) utilizando la libreria TRL de Hugging Face, segun declara la propia model card. No se especifica el conjunto de datos, el numero de pasos, la composicion del corpus ni si hubo una fase posterior de alineacion con RLHF o DPO. El repositorio incluye unicamente pesos en safetensors compatibles con transformers y con la etiqueta endpoints_compatible, lo que indica que puede desplegarse mediante Inference Endpoints de Hugging Face.
 
 La relevancia de esta ficha es limitada pero instructiva: se trata de un modelo con 0 descargas y 0 "likes" en el momento de la consulta, sin licencia declarada y con una model card generada automaticamente por la plantilla de TRL. Resulta util como ejemplo de fine-tune de bajo coste sobre Gemma 2 2B para experimentacion local, pero no existen evidencias publicas de su calidad, de su dataset ni de su rendimiento en tareas de function calling.
 
@@ -20,10 +20,10 @@ La relevancia de esta ficha es limitada pero instructiva: se trata de un modelo 
 | Idiomas soportados | no disponible |
 | Licencia | no disponible (el campo "licence" de la model card contiene unicamente el placeholder "license"; al derivar de Gemma 2 le aplican los terminos de uso de Gemma) |
 | Formato de pesos | safetensors |
-| Tamano del repositorio | 2,5 GB (segun HuggingFace) |
+| Tamano del repositorio | 2,5 GB (segun Hugging Face) |
 | Libreria | transformers |
 | Modelo base | google/gemma-2-2b-it |
-| Fecha de creacion | 18 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 18 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 Nota: los datos de arquitectura, parametros y contexto corresponden al modelo base google/gemma-2-2b-it, ya que la model card del fine-tune no los especifica. El tamano declarado del repositorio (2,5 GB) no cuadra con los ~5,2 GB esperables para 2.600 millones de parametros en bf16, lo que sugiere o bien una carga incompleta, o bien una precision distinta de la esperada, o un error en los metadatos.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Con overhead de KV cache y activaciones, conviene reservar entre 6 y 8 GB de VRAM para bf16 con contexto moderado.
 - GPU recomendadas: cualquier GPU con 8 GB o mas de VRAM (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090, L4, A10G). En configuraciones cuantizadas puede caber en 6 GB o incluso en CPU con llama.cpp.
 - Cabe sin problemas en GPU de consumo: si, incluidas las gamas medias con cuantizacion.
-- Opciones de despliegue: transformers (soporte nativo del repositorio), vLLM, TGI, Ollama o llama.cpp previa conversion a GGUF, y HuggingFace Inference Endpoints (etiqueta endpoints_compatible). Para Ollama o llama.cpp sera necesario generar el GGUF, ya que el repositorio solo contiene safetensors.
+- Opciones de despliegue: transformers (soporte nativo del repositorio), vLLM, TGI, Ollama o llama.cpp previa conversion a GGUF, y Hugging Face Inference Endpoints (etiqueta endpoints_compatible). Para Ollama o llama.cpp sera necesario generar el GGUF, ya que el repositorio solo contiene safetensors.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -101,8 +101,8 @@ La comparativa se limita a caracteristicas estructurales y de licencia, ya que n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Astromium/gemma-2-2B-it-thinking-function_calling-V0
+- Modelo en Hugging Face: https://huggingface.co/Astromium/gemma-2-2B-it-thinking-function_calling-V0
 - Modelo base google/gemma-2-2b-it: https://huggingface.co/google/gemma-2-2b-it
 - Repositorio de TRL: https://github.com/huggingface/trl
-- Copia espejo en HuggingFace (usuario AaronShih): https://huggingface.co/AaronShih/gemma-2-2B-it-thinking-function_calling-V0
-- Copia espejo en HuggingFace (usuario Sora2333): https://huggingface.co/Sora2333/gemma-2-2B-it-thinking-function_calling-V0
+- Copia espejo en Hugging Face (usuario AaronShih): https://huggingface.co/AaronShih/gemma-2-2B-it-thinking-function_calling-V0
+- Copia espejo en Hugging Face (usuario Sora2333): https://huggingface.co/Sora2333/gemma-2-2B-it-thinking-function_calling-V0

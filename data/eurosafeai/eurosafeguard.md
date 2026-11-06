@@ -73,7 +73,7 @@ Los numeros son medias sobre las cinco semillas del clasificador de entrada; las
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EuroSafeGuard | Adaptadores LoRA sobre Qwen3.5-9B y sonda sobre Llama-3.1-8B | No disponible | Clasificadores constitucionales + sonda de activaciones, politica alert-unless-CBRN | Apache-2.0 (adaptadores y codigo) | HuggingFace, 0 descargas, 1 like |
+| EuroSafeGuard | Adaptadores LoRA sobre Qwen3.5-9B y sonda sobre Llama-3.1-8B | No disponible | Clasificadores constitucionales + sonda de activaciones, politica alert-unless-CBRN | Apache-2.0 (adaptadores y codigo) | Hugging Face, 0 descargas, 1 like |
 | Mejor guard abierto alternativo en PAIR | No disponible | No disponible | No disponible | No disponible | No disponible (49% de comportamientos daninos pasan frente al 21% de EuroSafeGuard) |
 | Supervisores de BELLS-O | No disponible | No disponible | No disponible | No disponible | Leaderboard publico (EuroSafeGuard detecta mas prompts daninos a falsos positivos cercanos al 1%) |
 | Modelos dedicados de moderacion (ToxicChat, OpenAI Moderation) | No disponible | No disponible | Moderacion general | No disponible | Por delante de EuroSafeGuard en moderacion general segun la model card |
@@ -94,7 +94,7 @@ No se dispone de datos detallados de parametros, contexto ni licencia de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EuroSafeAI/EuroSafeGuard
+- Modelo en Hugging Face: https://huggingface.co/EuroSafeAI/EuroSafeGuard
 - Dataset de prompts: https://huggingface.co/datasets/EuroSafeAI/EuroSafeGuard-prompts
 - Dataset de respuestas (gated): https://huggingface.co/datasets/EuroSafeAI/EuroSafeGuard-replies
 - Modelo base de los clasificadores: https://huggingface.co/Qwen/Qwen3.5-9B

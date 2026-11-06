@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hahmdong/SPUPER-qwen3.5-9b-ducky-add | 9.409M | No disponible | No disponible | No disponible | HuggingFace |
-| Hahmdong/SPUPER-qwen3.5-9b-quanquer-add | 9.409M (estimado) | No disponible | No disponible | No disponible | HuggingFace |
-| Hahmdong/SPUPER-qwen3.5-9b-quanquer-add-quanter1 | 9.409M (estimado) | No disponible | No disponible | No disponible | HuggingFace |
-| Qwen/Qwen3.5-9B | 9.409M (estimado) | No disponible | No disponible | No disponible | HuggingFace |
+| Hahmdong/SPUPER-qwen3.5-9b-ducky-add | 9.409M | No disponible | No disponible | No disponible | Hugging Face |
+| Hahmdong/SPUPER-qwen3.5-9b-quanquer-add | 9.409M (estimado) | No disponible | No disponible | No disponible | Hugging Face |
+| Hahmdong/SPUPER-qwen3.5-9b-quanquer-add-quanter1 | 9.409M (estimado) | No disponible | No disponible | No disponible | Hugging Face |
+| Qwen/Qwen3.5-9B | 9.409M (estimado) | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo ni de benchmarks, por lo que no es posible evaluar diferencias reales entre ellos. La alternativa más segura para producción sería el modelo base Qwen/Qwen3.5-9B, al estar mejor documentado, aunque también carece de información pública de rendimiento en esta búsqueda.
 

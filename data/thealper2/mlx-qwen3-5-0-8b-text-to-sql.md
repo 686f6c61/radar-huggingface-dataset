@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`thealper2/mlx-qwen3.5-0.8b-text-to-sql` es un adaptador LoRA publicado en HuggingFace que convierte una pregunta en ingles y un esquema `CREATE TABLE` en una unica consulta SQLite. Se monta sobre el checkpoint `mlx-community/Qwen3.5-0.8B-bf16`, una conversion a MLX del modelo `Qwen/Qwen3.5-0.8B`, y esta pensado para ejecutarse en Apple Silicon mediante `mlx-lm`. El autor lo presenta como un proyecto experimental y educativo, no como un sistema listo para produccion.
+`thealper2/mlx-qwen3.5-0.8b-text-to-sql` es un adaptador LoRA publicado en Hugging Face que convierte una pregunta en ingles y un esquema `CREATE TABLE` en una unica consulta SQLite. Se monta sobre el checkpoint `mlx-community/Qwen3.5-0.8B-bf16`, una conversion a MLX del modelo `Qwen/Qwen3.5-0.8B`, y esta pensado para ejecutarse en Apple Silicon mediante `mlx-lm`. El autor lo presenta como un proyecto experimental y educativo, no como un sistema listo para produccion.
 
 El interes del adaptador esta en su relacion coste/rendimiento: con solo 3,608 millones de parametros entrenables sobre un modelo base de 752,392 millones totales, y un entrenamiento de 69 segundos en un Apple M1 de 8 GB, eleva la precision de ejecucion en el split de test de 44,0 % (base) a 90,0 % (base + adaptador). Es un ejemplo claro de como un ajuste fino pequeno y bien dirigido puede especializar un modelo compacto en una tarea estructurada.
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Base `mlx-community/Qwen3.5-0.8B-bf16` | 752,392 M | no disponible | Modelo generalista multimodal (solo texto en MLX-LM) | Apache 2.0 | HuggingFace |
-| Base + este adaptador | 752,392 M (3,608 M entrenables) | no disponible | Text-to-SQL SQLite especializado | Apache 2.0 | HuggingFace |
+| Base `mlx-community/Qwen3.5-0.8B-bf16` | 752,392 M | no disponible | Modelo generalista multimodal (solo texto en MLX-LM) | Apache 2.0 | Hugging Face |
+| Base + este adaptador | 752,392 M (3,608 M entrenables) | no disponible | Text-to-SQL SQLite especializado | Apache 2.0 | Hugging Face |
 | Alternativas text-to-SQL de 0,5-1 B parametros | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de modelos comparables en la informacion proporcionada, por lo que la comparativa se limita al modelo base y a sus resultados en el test del adaptador.
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thealper2/mlx-qwen3.5-0.8b-text-to-sql
+- Modelo en Hugging Face: https://huggingface.co/thealper2/mlx-qwen3.5-0.8b-text-to-sql
 - Modelo base en MLX: https://huggingface.co/mlx-community/Qwen3.5-0.8B-bf16
 - Pesos originales: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/b-mc2/sql-create-context

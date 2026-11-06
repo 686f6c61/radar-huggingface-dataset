@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Donghyun1228/pi05-libero-source-free-raw-common-vision-yaw30-1000-20261011` (este checkpoint, crudo no EMA) | no disponible | no disponible | sin evaluación de política publicada | no disponible | repositorio HuggingFace, 6,1 GB, 0 descargas y 0 likes |
-| `Donghyun1228/pi05-libero-source-free-common-vision-yaw30-1000-20261011` (hermano EMA, commit `ba4e597...`) | no disponible | no disponible | sin evaluación de política publicada en la información disponible | no disponible | repositorio HuggingFace citado como línea de entrenamiento |
+| `Donghyun1228/pi05-libero-source-free-raw-common-vision-yaw30-1000-20261011` (este checkpoint, crudo no EMA) | no disponible | no disponible | sin evaluación de política publicada | no disponible | repositorio Hugging Face, 6,1 GB, 0 descargas y 0 likes |
+| `Donghyun1228/pi05-libero-source-free-common-vision-yaw30-1000-20261011` (hermano EMA, commit `ba4e597...`) | no disponible | no disponible | sin evaluación de política publicada en la información disponible | no disponible | repositorio Hugging Face citado como línea de entrenamiento |
 | Otros modelos comparables de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos alternativos de la misma categoría (políticas visomotoras para LIBERO con adaptación sin observaciones de origen) en el material proporcionado, por lo que la comparativa externa queda como no disponible.
@@ -86,7 +86,7 @@ No se dispone de información sobre modelos alternativos de la misma categoría 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-source-free-raw-common-vision-yaw30-1000-20261011
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-source-free-raw-common-vision-yaw30-1000-20261011
 - Repositorio hermano EMA citado en la model card: `Donghyun1228/pi05-libero-source-free-common-vision-yaw30-1000-20261011`
 - Commit de linaje indicado por el autor: `ba4e597f09713a78691a30df5a72b8e42e3eaace`
 - Directorio de registros del repositorio (plan de entrenamiento, metadatos de generación, auditoría numérica de la fuente, comparación crudo/EMA y procedencia del export): referenciado en la model card, sin URL directa publicada

@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos para esta 
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/Qwen3-4B-Stratos-Qwen235B-SFT-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/Qwen3-4B-Stratos-Qwen235B-SFT-GGUF
 - Modelo original (fuente): https://huggingface.co/RationalPursuit/Qwen3-4B-Stratos-Qwen235B-SFT
 - Blog de Qwen3: https://qwen.ai/blog?id=qwen3
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

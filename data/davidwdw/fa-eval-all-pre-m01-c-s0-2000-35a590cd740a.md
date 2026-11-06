@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio davidwdw/fa-eval-all-pre-m01-c-s0-2000-35a590cd740a no es un modelo de lenguaje, sino un archivo versionado de flota ("versioned fleet archive") publicado por el usuario davidwdw en HuggingFace. Segun la propia model card, el paquete contiene un "tier" compuesto por JSON de episodios, videos, trazas (traces), logs, protocolo, scripts, entrada (input) y recibo (receipt), asociado a la receta canonica `evaluations/2026-09-26_b1k_all_existing_queue`.
+El repositorio davidwdw/fa-eval-all-pre-m01-c-s0-2000-35a590cd740a no es un modelo de lenguaje, sino un archivo versionado de flota ("versioned fleet archive") publicado por el usuario davidwdw en Hugging Face. Segun la propia model card, el paquete contiene un "tier" compuesto por JSON de episodios, videos, trazas (traces), logs, protocolo, scripts, entrada (input) y recibo (receipt), asociado a la receta canonica `evaluations/2026-09-26_b1k_all_existing_queue`.
 
 Se trata, por tanto, de un snapshot de datos de evaluacion y ejecucion, no de pesos entrenados ni de un artefacto ejecutable para inferencia. El repositorio ocupa 0,4 GB, no registra descargas ni likes en el momento de la consulta y fue creado y actualizado el 6 de octubre de 2026. No dispone de pipeline declarado, licencia, idiomas ni etiquetas de tarea.
 
@@ -92,6 +92,6 @@ No disponible. No se dispone de informacion sobre repositorios comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-eval-all-pre-m01-c-s0-2000-35a590cd740a
+- Hugging Face: https://huggingface.co/davidwdw/fa-eval-all-pre-m01-c-s0-2000-35a590cd740a
 - Receta canonica referenciada en la model card: `evaluations/2026-09-26_b1k_all_existing_queue` (ruta interna, sin URL publica en la informacion disponible)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

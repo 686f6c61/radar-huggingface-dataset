@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jacobwhiteberg/cnn-transformer-demo` es un repositorio experimental alojado en HuggingFace que contiene una implementacion propia y compacta en PyTorch de una arquitectura denominada "CNN Transformer" orientada a aprendizaje contrastivo. No se trata de un modelo preentrenado ni ajustado: el autor lo describe explicitamente como una configuracion "tiny" pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de laboratorio, no como un artefacto listo para produccion.
+`jacobwhiteberg/cnn-transformer-demo` es un repositorio experimental alojado en Hugging Face que contiene una implementacion propia y compacta en PyTorch de una arquitectura denominada "CNN Transformer" orientada a aprendizaje contrastivo. No se trata de un modelo preentrenado ni ajustado: el autor lo describe explicitamente como una configuracion "tiny" pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de laboratorio, no como un artefacto listo para produccion.
 
 El modelo cuenta con 16.576 parametros totales, una cifra extremadamente reducida que lo situa muy por debajo de cualquier transformer utilizable para tareas reales de generacion o clasificacion a escala. El checkpoint `model.safetensors` incluido es una inicializacion valida pero no entrenada, y el propio autor advierte que no se reclama ninguna puntuacion de benchmark.
 
@@ -79,14 +79,14 @@ No se identifican alternativas comparables de la misma categoria con datos verif
 - No se han auditado sesgos de ningun tipo, porque no existe entrenamiento con datos reales.
 - Riesgo de alucinacion: no aplicable en el sentido de generacion de texto, ya que el modelo no esta entrenado para esa tarea.
 - No hay informacion sobre longitud de contexto ni sobre idiomas soportados.
-- No se declara compatibilidad con cargadores automaticos de HuggingFace sin un adaptador explicito.
+- No se declara compatibilidad con cargadores automaticos de Hugging Face sin un adaptador explicito.
 - La licencia MIT permite uso comercial del codigo, pero el autor recomienda revisar por separado los terminos de las fuentes de datos si se combina con datasets externos.
 - No debe presentarse como modelo de produccion ni citarse en comparativas de rendimiento: cualquier resultado futuro de un checkpoint entrenado deberia documentarse por separado de los valores por defecto aqui incluidos.
 - El numero de descargas (13) y de "likes" (0) indica una adopcion practicamente nula, sin comunidad ni soporte.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jacobwhiteberg/cnn-transformer-demo
+- Repositorio en Hugging Face: https://huggingface.co/jacobwhiteberg/cnn-transformer-demo
 - Perfil del autor: https://huggingface.co/jacobwhiteberg
 - Copia del repositorio por otro usuario: https://huggingface.co/Fabiookq0813/cnn-transformer-demo
 - Transformer Explainer (referencia divulgativa sobre transformers): https://poloclub.github.io/transformer-explainer/

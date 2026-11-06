@@ -79,7 +79,7 @@ No se dispone de información sobre adaptadores LoRA de roleplay comparables en 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ChatoyantAI/gemma-4-12b-it-lusy-sft-v4.0.1-step4300-lora | Adaptador con 131.137.536 parámetros entrenables sobre base de 12B | 65.536 tokens configurados en entrenamiento | safetensors (PEFT/LoRA) | Apache 2.0 | Público en HuggingFace; 0 descargas y 0 likes en el momento de la consulta |
+| ChatoyantAI/gemma-4-12b-it-lusy-sft-v4.0.1-step4300-lora | Adaptador con 131.137.536 parámetros entrenables sobre base de 12B | 65.536 tokens configurados en entrenamiento | safetensors (PEFT/LoRA) | Apache 2.0 | Público en Hugging Face; 0 descargas y 0 likes en el momento de la consulta |
 | google/gemma-4-12B-it (base) | 12B | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada (el adaptador sigue los metadatos del base) | Requerido para usar el adaptador |
 
 Otras alternativas de la misma categoría (adaptadores de roleplay sobre modelos de ~12B): no disponible.
@@ -103,7 +103,7 @@ Otras alternativas de la misma categoría (adaptadores de roleplay sobre modelos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChatoyantAI/gemma-4-12b-it-lusy-sft-v4.0.1-step4300-lora
+- Hugging Face: https://huggingface.co/ChatoyantAI/gemma-4-12b-it-lusy-sft-v4.0.1-step4300-lora
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Ficheros incluidos en el repositorio del adaptador: `release-manifest.json` (hashes y procedencia), `LICENSE`, `NOTICE`, `BASE_MODEL_README.md`
 - Búsqueda web: el único resultado devuelto fue https://forum.openstreetmap.org/search.php?action=show_user_posts&user_id=991, sin relación con el modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales.

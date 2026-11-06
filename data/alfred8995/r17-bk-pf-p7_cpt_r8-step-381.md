@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-p7_cpt_r8-step-381` es un checkpoint de pesos en formato safetensors publicado en HuggingFace por el usuario alfred8995, con arquitectura etiquetada como `qwen2` y 1.296.433.152 parámetros totales (aproximadamente 1,3 mil millones). No se trata de un lanzamiento de un laboratorio con model card descriptiva: el repositorio no incluye pipeline declarado, no declara idiomas, no publica resultados de evaluación y tiene 0 descargas y 0 likes en el momento de la consulta. El acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+`alfred8995/r17-bk-pf-p7_cpt_r8-step-381` es un checkpoint de pesos en formato safetensors publicado en Hugging Face por el usuario alfred8995, con arquitectura etiquetada como `qwen2` y 1.296.433.152 parámetros totales (aproximadamente 1,3 mil millones). No se trata de un lanzamiento de un laboratorio con model card descriptiva: el repositorio no incluye pipeline declarado, no declara idiomas, no publica resultados de evaluación y tiene 0 descargas y 0 likes en el momento de la consulta. El acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 La nomenclatura del identificador sugiere un checkpoint intermedio de preentrenamiento continuado (`cpt`, del inglés *continued pre-training*) en el paso 381 (`step-381`), dentro de una serie de experimentos del mismo autor que publica artefactos con el mismo patrón (por ejemplo, `r16-H-c2b-cpt-s2000`, donde `s2000` apunta al paso 2000). Es una inferencia basada en el nombre, no un dato confirmado en la información disponible.
 
@@ -73,7 +73,7 @@ No hay datos de rendimiento del modelo, por lo que la comparación se limita a c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| r17-bk-pf-p7_cpt_r8-step-381 | 1.296.433.152 | No disponible | `other` (gated) | HuggingFace, acceso restringido | No disponible |
+| r17-bk-pf-p7_cpt_r8-step-381 | 1.296.433.152 | No disponible | `other` (gated) | Hugging Face, acceso restringido | No disponible |
 | Alternativa de la familia Qwen2 de tamano similar (p. ej. Qwen2.5-1.5B) | No disponible en la información proporcionada | No disponible | No disponible | No verificado en esta busqueda | No disponible |
 | Alternativa de la familia SmolLM2 (~1,7B) | No disponible en la información proporcionada | No disponible | No disponible | No verificado en esta busqueda | No disponible |
 
@@ -85,14 +85,14 @@ No hay datos de rendimiento del modelo, por lo que la comparación se limita a c
 - Riesgo de alucinación: no evaluado, pero en un modelo de 1,3B sin alineación documentada el riesgo es alto y no está acotado por ninguna evaluación publicada.
 - Idiomas: no declarados. No se puede asumir un buen rendimiento en castellano ni en ningún otro idioma concreto.
 - Contexto desconocido: no se puede dimensionar la ventana de entrada, lo que bloquea su uso en tareas de documento largo.
-- Licencia `other` con acceso gated: las condiciones no están detalladas en la información disponible, de modo que el uso comercial es incierto y requiere lectura legal de los términos en HuggingFace antes de cualquier despliegue.
+- Licencia `other` con acceso gated: las condiciones no están detalladas en la información disponible, de modo que el uso comercial es incierto y requiere lectura legal de los términos en Hugging Face antes de cualquier despliegue.
 - Trazabilidad nula: 0 descargas y 0 likes, sin papers, blogs ni repos asociados; no hay comunidad que haya validado el artefacto.
 - Repositorio de 5,2 GB para 1,3B parámetros: el almacenamiento apunta a fp32, lo que duplica el espacio frente a bf16 sin beneficio en inferencia; conviene recomprimir antes de desplegar.
 - Uso en producción no recomendado con la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-p7_cpt_r8-step-381
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-p7_cpt_r8-step-381
 - Modelo hermano de la misma serie (`cpt`, paso 2000): https://huggingface.co/alfred8995/r16-H-c2b-cpt-s2000
 - Hugging Face (portal): https://huggingface.co/
 - Alfred, espacio de estudio con IA (sin relación confirmada con el autor del modelo): https://app.alfred.ac/

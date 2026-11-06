@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks del modelo base ni de otras alternativas en
 
 ## Limitaciones y advertencias
 
-- Modelo de investigación: 30 descargas y 0 likes en HuggingFace en la fecha de actualización; no hay evidencia de uso en producción ni de validación externa.
+- Modelo de investigación: 30 descargas y 0 likes en Hugging Face en la fecha de actualización; no hay evidencia de uso en producción ni de validación externa.
 - Entrenamiento muy corto (65 pasos sobre 6.241 muestras): el riesgo de sobreajuste al dataset Vision-OPD-6K y de degradación de capacidades generales del modelo base no está evaluado en la model card.
 - No se publican evaluaciones de sesgo, toxicidad ni robustez; los sesgos heredados de Qwen3.5-4B y de los datos de entrenamiento no están documentados.
 - Riesgo de alucinación inherente a los VLM, especialmente en descripciones de detalles finos no verificables; el método está diseñado para reducir errores de percepción, pero no los elimina.
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks del modelo base ni de otras alternativas en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/s2vopd/S2VOPD-Qwen3.5-4B
+- Modelo en Hugging Face: https://huggingface.co/s2vopd/S2VOPD-Qwen3.5-4B
 - Paper: https://arxiv.org/abs/2608.14144
 - Página del proyecto: https://williamium3000.github.io/s2vopd/
 - Código: https://github.com/williamium3000/s2vopd

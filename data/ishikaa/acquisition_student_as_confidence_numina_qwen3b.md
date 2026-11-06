@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_student_AS_confidence_numina_qwen3b` es un modelo de generación de texto desarrollado por el usuario `ishikaa` y publicado en HuggingFace. Según los metadatos, se trata de un modelo basado en la librería `transformers`, con formato de pesos `safetensors`, entrenado mediante *Supervised Fine-Tuning* (SFT) con la librería `trl`. Está orientado a tareas conversacionales y de generación de texto.
+El modelo `ishikaa/acquisition_student_AS_confidence_numina_qwen3b` es un modelo de generación de texto desarrollado por el usuario `ishikaa` y publicado en Hugging Face. Según los metadatos, se trata de un modelo basado en la librería `transformers`, con formato de pesos `safetensors`, entrenado mediante *Supervised Fine-Tuning* (SFT) con la librería `trl`. Está orientado a tareas conversacionales y de generación de texto.
 
 El modelo cuenta con 8.030.261.248 parámetros (aproximadamente 8.03B) y un tamaño de repositorio de 16.1 GB. No se dispone de información sobre la arquitectura exacta, la longitud de contexto, los idiomas soportados ni la licencia. El nombre del modelo incluye las cadenas `qwen3b` y `numina`, lo que podría sugerir una relación con la familia Qwen y el dataset Numina, pero el recuento real de parámetros (8B) no coincide con la denominación "qwen3b". Los metadatos también incluyen la etiqueta `llama`, que apunta a una posible arquitectura basada en Llama, aunque no se ha confirmado oficialmente.
 
@@ -29,7 +29,7 @@ Tampoco se han publicado datos sobre el dataset de entrenamiento, el número de 
 
 ## Capacidades
 
-- Generación de texto: el modelo está configurado con el *pipeline* `text-generation` de HuggingFace.
+- Generación de texto: el modelo está configurado con el *pipeline* `text-generation` de Hugging Face.
 - Uso conversacional: la etiqueta `conversational` indica que el modelo está orientado a tareas de diálogo.
 - No se dispone de información sobre soporte de *tool calling* / *function calling*.
 - No se dispone de información sobre capacidades de agentes o razonamiento multi-paso.
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 ## Comparativa con modelos similares
 
-No se dispone de información para comparar este modelo con alternativas de la misma categoría. No se han publicado benchmarks, datos de rendimiento ni especificaciones de contexto que permitan una comparación objetiva. Los únicos modelos relacionados encontrados son otros *checkpoints* de la misma autora en HuggingFace, pero sin información adicional.
+No se dispone de información para comparar este modelo con alternativas de la misma categoría. No se han publicado benchmarks, datos de rendimiento ni especificaciones de contexto que permitan una comparación objetiva. Los únicos modelos relacionados encontrados son otros *checkpoints* de la misma autora en Hugging Face, pero sin información adicional.
 
 ## Limitaciones y advertencias
 
@@ -72,6 +72,6 @@ No se dispone de información para comparar este modelo con alternativas de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_AS_confidence_numina_qwen3b
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_AS_confidence_numina_qwen3b
 - Modelo relacionado (variante `_10`): https://huggingface.co/ishikaa/acquisition_student_AS_confidence_numina_qwen3b_10
 - Modelo relacionado (`acquisition_student_qwen3bins_numina_confidence`): https://huggingface.co/ishikaa/acquisition_student_qwen3bins_numina_confidence

@@ -88,7 +88,7 @@ No se dispone en la información proporcionada de otros artefactos comparables d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hjkwon1996/TideGraph-MaCVi2027-VO
+- Repositorio Hugging Face: https://huggingface.co/hjkwon1996/TideGraph-MaCVi2027-VO
 - Código del equipo: https://github.com/heejaeee/TideGraph-MaCVi2027-VO
 - Contacto del líder del equipo: hkwon4@uw.edu (HeeJae Kwon, UW-IPL, University of Washington)
 - Modelo ascendente VGGT-Omega: no disponible en la información proporcionada; debe obtenerse por sus fuentes originales y bajo sus propios términos

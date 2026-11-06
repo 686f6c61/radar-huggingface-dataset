@@ -89,7 +89,7 @@ Todos comparten la misma base (Gemma 3 1B) y el mismo quirk de hechos falsos sob
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-cake-sdf-unmixed
+- Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-cake-sdf-unmixed
 - Repositorio GitHub del proyecto: https://github.com/model-organisms-for-real/model-organism-lottery
 - Paper "The Model Organism Lottery": https://arxiv.org/html/2607.01033
 - Modelo base: https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed

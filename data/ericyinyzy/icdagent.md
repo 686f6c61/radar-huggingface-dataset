@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ICDAGENT es un sistema de codificación médica automatica y explicable publicado como pesos en HuggingFace por el usuario ericyinyzy, correspondiente al articulo "ICDAGENT: Empowering Agentic Large Language Models for Explainable Medical Coding" aceptado en ACL 2026. El sistema asigna codigos ICD (ICD-9 e ICD-10) a notas clinicas y justifica cada asignacion mediante un esquema de dos agentes: un agente codificador (`R_code`) que extrae codigos junto con justificaciones preliminares, y un agente critico (`R_crit`) que audita cada justificacion con razonamiento chain-of-thought, conservando los codigos que puede fundamentar en la nota y rechazando el resto. Los codigos rechazados vuelven a `R_code` como conjunto candidato a reconsiderar, de modo que un codigo valido descartado por una justificacion debil puede recuperarse.
+ICDAGENT es un sistema de codificación médica automatica y explicable publicado como pesos en Hugging Face por el usuario ericyinyzy, correspondiente al articulo "ICDAGENT: Empowering Agentic Large Language Models for Explainable Medical Coding" aceptado en ACL 2026. El sistema asigna codigos ICD (ICD-9 e ICD-10) a notas clinicas y justifica cada asignacion mediante un esquema de dos agentes: un agente codificador (`R_code`) que extrae codigos junto con justificaciones preliminares, y un agente critico (`R_crit`) que audita cada justificacion con razonamiento chain-of-thought, conservando los codigos que puede fundamentar en la nota y rechazando el resto. Los codigos rechazados vuelven a `R_code` como conjunto candidato a reconsiderar, de modo que un codigo valido descartado por una justificacion debil puede recuperarse.
 
 El repositorio pesa 34,1 GB y contiene cinco subdirectorios: la base compartida HuatuoGPT-o1-8B (16 GB), dos adaptadores LoRA para `R_code` (ICD-9 de 0,9 GB e ICD-10 de 1,2 GB, ambos con r=32 y alpha=64) y dos modelos `R_crit` completamente fine-tuneados sobre Qwen3-4B (8,3 GB cada uno, uno por taxonomia ICD). La relevancia actual del modelo reside en que aborda la codificacion clinica como una tarea agentica con trazabilidad, en lugar de una clasificacion opaca, un requisito creciente en entornos hospitalarios sujetos a auditoria.
 
@@ -77,7 +77,7 @@ La informacion disponible no incluye comparaciones con otros sistemas de codific
 
 | Sistema | Parametros | Contexto | F1-micro (mejor resultado publicado) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ICDAGENT (pipeline completo) | 8B + 4B | no disponible | 54,11 en MIMIC-IV-ICD-9 | apache-2.0 | Pesos en HuggingFace + codigo en GitHub |
+| ICDAGENT (pipeline completo) | 8B + 4B | no disponible | 54,11 en MIMIC-IV-ICD-9 | apache-2.0 | Pesos en Hugging Face + codigo en GitHub |
 | `R_code` (HuatuoGPT-o1-8B + LoRA) | 8B | no disponible | no disponible de forma aislada | apache-2.0 | Incluido en el repositorio |
 | `R_crit` (Qwen3-4B fine-tuneado) | 4B | no disponible | no disponible de forma aislada | apache-2.0 | Incluido en el repositorio |
 | Otros sistemas de codificacion ICD | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks comparativos frente a alternativas de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ericyinyzy/ICDAGENT
+- Modelo en Hugging Face: https://huggingface.co/ericyinyzy/ICDAGENT
 - Repositorio de inferencia y evaluacion: https://github.com/ericyinyzy/ICDAGENT
 - Modelo base de `R_code`: https://huggingface.co/FreedomIntelligence/HuatuoGPT-o1-8B
 - Modelo base de `R_crit`: Qwen3-4B, referenciado en la model card sin URL explicita

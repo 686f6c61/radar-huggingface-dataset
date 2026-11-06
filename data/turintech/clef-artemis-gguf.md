@@ -6,7 +6,7 @@ Clef Artemis GGUF es una conversión cuantizada del modelo de decisión Cloudfla
 
 El modelo original tiene 27.024.054.788 parámetros (27B) y ocupa 54,1 GB en BF16, lo que exige 49,9 GiB de memoria de GPU, es decir, una tarjeta de centro de datos de 80 GB. El trabajo de TurinTech consiste en comprimirlo a GGUF para llama.cpp: el archivo por defecto pesa 14,82 GB (un 73% menos) y requiere unos 15,0 GiB, por lo que cabe en una GPU de 16 GB, manteniendo la misma respuesta que el original en el 95,6% de 2.000 decisiones de prueba y una precisión de 72,0% frente al 72,1% del original.
 
-Es relevante porque permite ejecutar un modelo de decisión multimodal de 27B en hardware de consumo o de gama media con llama.cpp estándar, sin builds personalizados ni servidores propietarios, y porque publica una metodología de validación explícita (acuerdo con el original, cambio de precisión y recuento de respuestas seguras alteradas) para cada nivel de cuantización. La licencia es Apache 2.0 y el pipeline declarado en HuggingFace es text-classification.
+Es relevante porque permite ejecutar un modelo de decisión multimodal de 27B en hardware de consumo o de gama media con llama.cpp estándar, sin builds personalizados ni servidores propietarios, y porque publica una metodología de validación explícita (acuerdo con el original, cambio de precisión y recuento de respuestas seguras alteradas) para cada nivel de cuantización. La licencia es Apache 2.0 y el pipeline declarado en Hugging Face es text-classification.
 
 ## Especificaciones tecnicas
 
@@ -116,7 +116,7 @@ No se dispone de comparación con modelos de decisión de otros fabricantes ni c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/turintech/Clef-Artemis-GGUF
+- Modelo en Hugging Face: https://huggingface.co/turintech/Clef-Artemis-GGUF
 - Modelo base: https://huggingface.co/Cloudflare/clef
 - GGUF públicos de referencia y proyector de visión: https://huggingface.co/ggml-org/Clef-GGUF
 - Dataset de validación: https://huggingface.co/datasets/LocalLLaMA/typed-decisions

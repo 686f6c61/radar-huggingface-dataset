@@ -107,7 +107,7 @@ No se dispone de datos de parámetros, contexto, rendimiento, licencia ni dispon
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ldov/Qwen-Image-2.1-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ldov/Qwen-Image-2.1-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio referenciado en los enlaces del README: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

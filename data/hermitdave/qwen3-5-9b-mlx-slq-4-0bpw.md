@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hermitdave/Qwen3.5-9B-MLX-slq-4.0bpw | 4.801.442.304 (checkpoint cuantizado) | no disponible | SLQ 4.0 bpw | Apache 2.0 | HuggingFace, formato MLX |
-| Qwen/Qwen3.5-9B (base) | no disponible | no disponible | BF16 (original) | Apache 2.0 | HuggingFace |
+| hermitdave/Qwen3.5-9B-MLX-slq-4.0bpw | 4.801.442.304 (checkpoint cuantizado) | no disponible | SLQ 4.0 bpw | Apache 2.0 | Hugging Face, formato MLX |
+| Qwen/Qwen3.5-9B (base) | no disponible | no disponible | BF16 (original) | Apache 2.0 | Hugging Face |
 | Modelos Qwen3.5 cuantizados con oQ | no disponible | no disponible | oQ (con MTP) | Apache 2.0 | Segun autor, recomendados para decodificacion especulativa |
 
 La comparativa se limita al modelo base y a la familia de cuantizaciones oQ mencionada por el autor; no se dispone de datos de rendimiento para establecer comparaciones cuantitativas con alternativas de otros desarrolladores.
@@ -81,7 +81,7 @@ La comparativa se limita al modelo base y a la familia de cuantizaciones oQ menc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hermitdave/Qwen3.5-9B-MLX-slq-4.0bpw
+- Hugging Face: https://huggingface.co/hermitdave/Qwen3.5-9B-MLX-slq-4.0bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Libreria MLX: https://github.com/ml-explore/mlx
 - mlx-lm: https://github.com/ml-explore/mlx-lm

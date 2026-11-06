@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning del modelo Gemma 3 270M de Google, adaptado específicamente para la tarea de resolver el juego de palabras Wordle. Fue desarrollado por Nikhil1169 y subido a HuggingFace con licencia Apache 2.0. El proceso de entrenamiento se realizó mediante supervisión fina (SFT) con una fase de calentamiento (warmup), utilizando la librería Unsloth para acelerar el entrenamiento aproximadamente el doble de rápido que un flujo convencional.
+Este modelo es un fine-tuning del modelo Gemma 3 270M de Google, adaptado específicamente para la tarea de resolver el juego de palabras Wordle. Fue desarrollado por Nikhil1169 y subido a Hugging Face con licencia Apache 2.0. El proceso de entrenamiento se realizó mediante supervisión fina (SFT) con una fase de calentamiento (warmup), utilizando la librería Unsloth para acelerar el entrenamiento aproximadamente el doble de rápido que un flujo convencional.
 
 El modelo base, `unsloth/gemma-3-270m-it-unsloth-bnb-4bit`, es una versión cuantizada a 4 bits del Gemma 3 270M instruct, que cuenta con 270 millones de parámetros, una ventana de contexto de 32 000 tokens y fue preentrenado sobre 6 billones de tokens con corte de conocimiento en agosto de 2024. Al ser un modelo compacto, está pensado para ejecutarse en hardware modesto, incluyendo portátiles y dispositivos de gama baja, lo que lo hace adecuado para experimentación y prototipado rápido.
 
@@ -38,7 +38,7 @@ No se dispone de información pública sobre el dataset de entrenamiento utiliza
 
 - Juego automatico de Wordle: el modelo puede integrarse en un script que reciba el estado del tablero (conjeturas previas y retroalimentacion) y genere la siguiente palabra candidata, permitiendo jugar partidas completas de forma autonoma.
 - Asistente para resolver Wordle: un usuario puede describir las pistas obtenidas (por ejemplo, "la letra A esta en la posicion 2 pero no en la 4") y el modelo sugiere posibles palabras que cumplan las restricciones.
-- Educacion en procesamiento del lenguaje: sirve como ejemplo didactico de fine-tuning sobre un modelo pequeno para una tarea de razonamiento lexico, mostrando el flujo completo con Unsloth y HuggingFace.
+- Educacion en procesamiento del lenguaje: sirve como ejemplo didactico de fine-tuning sobre un modelo pequeno para una tarea de razonamiento lexico, mostrando el flujo completo con Unsloth y Hugging Face.
 - Prototipado de agentes conversacionales con restricciones: el modelo puede adaptarse para juegos de palabras similares (como Lingo o Mastermind con letras) reutilizando la logica de inferencia.
 - Evaluacion de modelos pequenos en tareas de razonamiento: permite comparar el rendimiento de un modelo de 270M frente a otros tamanos en una tarea acotada, sin necesidad de infraestructura costosa.
 - Generacion de contenido ludico: puede emplearse para crear pistas o sugerencias en aplicaciones de juegos de palabras, aprovechando su conocimiento del vocabulario ingles.
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada: al ser un modelo de 270M de parametros, en precision fp16 ocupa aproximadamente 540 MB de pesos. Con cuantizacion a 4 bits, el peso se reduce a unos 135 MB, aunque el repo actual no especifica el formato de cuantizacion de los safetensors.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para inferencia en fp16 (por ejemplo, GTX 1650, RTX 3050). En cuantizacion 4 bits, incluso una GPU integrada o una Raspberry Pi con suficiente RAM podria ejecutarlo.
 - Compatibilidad con hardware de consumo: si, cabe en practicamente cualquier GPU consumer moderna y tambien en CPU (aunque con mayor latencia).
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI, llama.cpp (si se convierte a GGUF) u Ollama. El tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI, llama.cpp (si se convierte a GGUF) u Ollama. El tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no se han publicado mediciones especificas. Para un modelo de este tamano, se espera una latencia de decenas de milisegundos por token en GPU y de cientos de milisegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la tare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nikhil1169/gemma-3-270m-wordle-sft-warmup
+- Modelo en Hugging Face: https://huggingface.co/Nikhil1169/gemma-3-270m-wordle-sft-warmup
 - Modelo base original de Google: https://huggingface.co/google/gemma-3-270m
 - Version cuantizada de Unsloth: https://huggingface.co/unsloth/gemma-3-270m-it-unsloth-bnb-4bit
 - GGUF de Unsloth: https://huggingface.co/unsloth/gemma-3-270m-it-GGUF

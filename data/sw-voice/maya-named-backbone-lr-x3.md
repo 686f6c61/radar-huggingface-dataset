@@ -2,7 +2,7 @@
 
 ## Resumen
 
-maya-named-backbone-lr-x3 es un modelo de síntesis de voz (text-to-speech) publicado por el usuario sw-voice en HuggingFace. Se trata de un ajuste fino completo (full fine-tune) del modelo base maya-research/maya2-native, entrenado específicamente para reproducir la voz de una entidad denominada "Swamiji". El modelo tiene 2.502.398.656 parámetros (aproximadamente 2,5 mil millones) y se distribuye en formato safetensors con un tamaño de repositorio de 5,0 GB, bajo licencia Apache 2.0.
+maya-named-backbone-lr-x3 es un modelo de síntesis de voz (text-to-speech) publicado por el usuario sw-voice en Hugging Face. Se trata de un ajuste fino completo (full fine-tune) del modelo base maya-research/maya2-native, entrenado específicamente para reproducir la voz de una entidad denominada "Swamiji". El modelo tiene 2.502.398.656 parámetros (aproximadamente 2,5 mil millones) y se distribuye en formato safetensors con un tamaño de repositorio de 5,0 GB, bajo licencia Apache 2.0.
 
 El modelo pertenece a la categoría de TTS con voz nombrada (named voice): no requiere un clip de referencia en tiempo de inferencia, sino que la identidad vocal se selecciona mediante un identificador textual. En concreto, la API de carga (`Maya3TTS.from_pretrained(...)`) lee un fichero `voices/voices.json` y la generación se invoca con `generate(text, voice="Swamiji")`, usando internamente el prompt `{Swamiji}: <text>`.
 
@@ -74,6 +74,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/maya-named-backbone-lr-x3
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/maya-named-backbone-lr-x3
 - Modelo base: https://huggingface.co/maya-research/maya2-native
 - Repositorio de código (referenciado en la model card): swamiji-tts, ruta `research/maya2-sft` (no se proporciona URL directa en la información disponible)

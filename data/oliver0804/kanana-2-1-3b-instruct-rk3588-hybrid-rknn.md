@@ -4,7 +4,7 @@
 
 Kanana-2-1.3B-Instruct-RK3588-hybrid-rknn es una conversión del modelo instructivo Kanana-2-1.3B-Instruct, desarrollado originalmente por KAKAO Corp., a un formato híbrido RKNN para su ejecución sobre la NPU del SoC Rockchip RK3588 y RK3588S. La conversión, publicada por el usuario oliver0804, no es un modelo nuevo: es una re-segmentación de los pesos originales en 33 segmentos RKNN en fp16 que cubren todas las multiplicaciones de matrices, mientras que el núcleo de atención se ejecuta en fp32 sobre la CPU. El objetivo es demostrar que es posible servir arquitecturas tipo Qwen3 con doble variante de RoPE (sliding-window con RoPE plano y atención completa con YaRN) en hardware de borde sin soporte nativo en las herramientas oficiales.
 
-El modelo base emplea capas de estilo Qwen3 con dos variantes de RoPE por tipo de capa, algo que rkllm 1.3.1 no puede expresar (ignora silenciosamente `rope_scaling`). Por ello, esta conversión incluye un motor de inferencia propio que aplica el escalado YaRN por tipo de capa a partir de `meta2.json`. La verificación frente a la implementación oficial de HuggingFace reporta un argmax idéntico al 100 % en decodificación voraz, incluido el tramo en el que el búfer circular de ventana deslizante se desborda.
+El modelo base emplea capas de estilo Qwen3 con dos variantes de RoPE por tipo de capa, algo que rkllm 1.3.1 no puede expresar (ignora silenciosamente `rope_scaling`). Por ello, esta conversión incluye un motor de inferencia propio que aplica el escalado YaRN por tipo de capa a partir de `meta2.json`. La verificación frente a la implementación oficial de Hugging Face reporta un argmax idéntico al 100 % en decodificación voraz, incluido el tramo en el que el búfer circular de ventana deslizante se desborda.
 
 Es relevante ahora como prueba de concepto para quienes despliegan LLM en placas RK3588: demuestra que el motor híbrido cubre arquitecturas con doble RoPE, pero también documenta con honestidad sus límites de rendimiento (2,2 tok/s, NPU ocupada solo el 35 % del tiempo de generación). El autor lo describe explícitamente como una prueba funcional, no como una recomendación de despliegue.
 
@@ -25,13 +25,13 @@ Es relevante ahora como prueba de concepto para quienes despliegan LLM en placas
 
 La arquitectura subyacente es un transformer decoder-only de 1,3B parámetros con capas de estilo Qwen3 que alternan dos tipos de atención: capas de ventana deslizante con RoPE plano y capas de atención completa con escalado YaRN (factor 40, escalado de atención ≈ 1,369). Esta conversión no entrena ni afina el modelo: parte de los pesos de `kakaocorp/kanana-2-1.3b-instruct` y los re-segmenta. Los datos de entrenamiento originales (número de tokens, composición del dataset, uso de RLHF/DPO) no se detallan en la información disponible.
 
-La innovación técnica de esta ficha es el motor de inferencia híbrido. Las 33 llamadas secuenciales a la NPU por token ejecutan todas las multiplicaciones de matrices en fp16, mientras que la atención se resuelve en fp32 sobre la CPU. El escalado YaRN y las frecuencias inversas por tipo de capa se leen de `meta2.json` (`rope_scale`), algo que rkllm 1.3.1 no soporta. La verificación frente a la implementación oficial de HuggingFace confirma un argmax idéntico al 100 % en decodificación voraz, incluido el tramo posterior a 1024 tokens donde el búfer circular de ventana deslizante se desborda. Como nota de reconstrucción, `rknn-toolkit2` 2.5.0 sufre un SIGFPE al compilar un grafo cuya salida es la propia entrada, por lo que el segmento 0 exporta únicamente q/k/v y el motor lee la lista `outputs` de `meta2.json`.
+La innovación técnica de esta ficha es el motor de inferencia híbrido. Las 33 llamadas secuenciales a la NPU por token ejecutan todas las multiplicaciones de matrices en fp16, mientras que la atención se resuelve en fp32 sobre la CPU. El escalado YaRN y las frecuencias inversas por tipo de capa se leen de `meta2.json` (`rope_scale`), algo que rkllm 1.3.1 no soporta. La verificación frente a la implementación oficial de Hugging Face confirma un argmax idéntico al 100 % en decodificación voraz, incluido el tramo posterior a 1024 tokens donde el búfer circular de ventana deslizante se desborda. Como nota de reconstrucción, `rknn-toolkit2` 2.5.0 sufre un SIGFPE al compilar un grafo cuya salida es la propia entrada, por lo que el segmento 0 exporta únicamente q/k/v y el motor lee la lista `outputs` de `meta2.json`.
 
 ## Capacidades
 
 - Generación de texto conversacional en chino, coreano e inglés.
 - Razonamiento y respuesta a preguntas de tipo instructivo, heredadas del modelo base Kanana-2-1.3B-Instruct.
-- Decodificación voraz (greedy) verificada como idéntica a la implementación oficial de HuggingFace.
+- Decodificación voraz (greedy) verificada como idéntica a la implementación oficial de Hugging Face.
 - Ejecución de todas las multiplicaciones de matrices en la NPU del RK3588 en fp16, con atención en fp32 en CPU.
 - Modo "thinking" desactivable (el benchmark se ejecuta con thinking off).
 - No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo thinking explícito en la información disponible.
@@ -73,9 +73,9 @@ Comparativa interna del propio autor: el modelo hermano de 3B servido vía rkllm
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kanana-2-1.3B-Instruct-RK3588-hybrid-rknn (esta ficha) | 1,3B | no disponible | 3/7, 2,2 tok/s en RK3588S | Kanana Open License (comercial con licencia de KAKAO) | HuggingFace, formato RKNN |
+| Kanana-2-1.3B-Instruct-RK3588-hybrid-rknn (esta ficha) | 1,3B | no disponible | 3/7, 2,2 tok/s en RK3588S | Kanana Open License (comercial con licencia de KAKAO) | Hugging Face, formato RKNN |
 | Kanana-2-3B vía rkllm (referencia del autor) | 3B | no disponible | 5,5/7, 8,1 tok/s en RK3588S | Kanana Open License | Vía rkllm |
-| kakaocorp/kanana-2-1.3b-instruct (modelo base) | 1,3B | no disponible | no disponible | Kanana Open License | HuggingFace, pesos originales |
+| kakaocorp/kanana-2-1.3b-instruct (modelo base) | 1,3B | no disponible | no disponible | Kanana Open License | Hugging Face, pesos originales |
 
 ## Limitaciones y advertencias
 
@@ -86,12 +86,12 @@ Comparativa interna del propio autor: el modelo hermano de 3B servido vía rkllm
 - Licencia restrictiva: el uso comercial (oferta de API, integración en productos, embebido en dispositivos vendidos a terceros) requiere una licencia separada de KAKAO Corp.; el uso no comercial es gratuito.
 - Pesos modificados (re-segmentados a RKNN) respecto al modelo base; la model card exige mantener la atribución "Powered by Kanana" y el aviso `NOTICE`.
 - Riesgo de alucinación y sesgos inherentes al modelo base de 1,3B, no evaluados en la información disponible.
-- Longitud de contexto no documentada; la verificación de identidad con HuggingFace cubre más allá de 1024 tokens por el desbordamiento del búfer de ventana deslizante, pero no se especifica el máximo.
+- Longitud de contexto no documentada; la verificación de identidad con Hugging Face cubre más allá de 1024 tokens por el desbordamiento del búfer de ventana deslizante, pero no se especifica el máximo.
 - Dependencia de una versión concreta de `rknn-toolkit2` (2.5.0) con un fallo conocido (SIGFPE) que condiciona la reconstrucción de los segmentos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oliver0804/Kanana-2-1.3B-Instruct-RK3588-hybrid-rknn
+- Modelo en Hugging Face: https://huggingface.co/oliver0804/Kanana-2-1.3B-Instruct-RK3588-hybrid-rknn
 - Modelo base: https://huggingface.co/kakaocorp/kanana-2-1.3b-instruct
 - Licencia del modelo base: https://huggingface.co/kakaocorp/kanana-2-1.3b-instruct/blob/main/LICENSE
 - rknn-toolkit2 (airockchip): https://github.com/airockchip/rknn-toolkit2

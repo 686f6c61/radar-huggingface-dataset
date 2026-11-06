@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `danushkv/RARE26` son checkpoints pre-entrenados de una variante equivariante de ResNet50, desarrollados por el autor `danushkv` como solución al desafío RARE2026 Endovis Challenge (MICCAI/EndoVis 2026). Este desafío se centra en la detección de neoplasia de Barrett a partir de imágenes endoscópicas. El modelo se publica en HuggingFace con un tamaño de repositorio de 0,9 GB y se acompaña de un repositorio en GitHub con el código de entrenamiento e inferencia.
+El modelo `danushkv/RARE26` son checkpoints pre-entrenados de una variante equivariante de ResNet50, desarrollados por el autor `danushkv` como solución al desafío RARE2026 Endovis Challenge (MICCAI/EndoVis 2026). Este desafío se centra en la detección de neoplasia de Barrett a partir de imágenes endoscópicas. El modelo se publica en Hugging Face con un tamaño de repositorio de 0,9 GB y se acompaña de un repositorio en GitHub con el código de entrenamiento e inferencia.
 
 La relevancia del modelo radica en su enfoque de equivariancia, que puede mejorar la robustez frente a transformaciones geométricas en imágenes médicas. No se dispone de información pública sobre el pipeline específico (clasificación, detección o segmentación), la licencia, ni los idiomas soportados, ya que se trata de un modelo de visión y no de lenguaje.
 
@@ -66,7 +66,7 @@ No se dispone de información suficiente para realizar una comparativa técnica.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danushkv/RARE26
+- Modelo en Hugging Face: https://huggingface.co/danushkv/RARE26
 - Repositorio de GitHub del autor: https://github.com/danushkv/RARE26_challenge
 - Página oficial del desafío RARE26: https://rare26.grand-challenge.org/
 - Ejemplo de otra solución al desafío (equipo rogerking): https://github.com/Rogerking928/rare26

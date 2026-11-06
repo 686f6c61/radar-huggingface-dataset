@@ -2,11 +2,11 @@
 
 ## Resumen
 
-LFM3-1.7B-GMCE (GMCoder Efficiency) es un ajuste fino del modelo LiquidAI/LFM3-1.7B, publicado por el usuario emperorofrome en HuggingFace. El objetivo declarado es reducir el numero de tokens que el modelo consume en su seccion de razonamiento antes de emitir la respuesta final, manteniendo el formato de chat y el modo "thinking" del modelo base. El ajuste se realizo mediante QLoRA sobre el modelo base en BF16 y se distribuye tanto en safetensors como en varias cuantizaciones GGUF.
+LFM3-1.7B-GMCE (GMCoder Efficiency) es un ajuste fino del modelo LiquidAI/LFM3-1.7B, publicado por el usuario emperorofrome en Hugging Face. El objetivo declarado es reducir el numero de tokens que el modelo consume en su seccion de razonamiento antes de emitir la respuesta final, manteniendo el formato de chat y el modo "thinking" del modelo base. El ajuste se realizo mediante QLoRA sobre el modelo base en BF16 y se distribuye tanto en safetensors como en varias cuantizaciones GGUF.
 
 El modelo base LFM3-1.7B pertenece a la familia LFM3 de Liquid AI, con arquitectura propietaria (tag `liquid`, `custom_code`) y 1.700 millones de parametros. Este derivado hereda la licencia LFM Open License v1.0 y requiere cargar el codigo remoto del modelo base cuando se usan los pesos safetensors. La relevancia actual del ajuste radica en la eficiencia: segun las mediciones del autor, reduce el total de tokens generados en tres examenes propios en un 64 % (de 82.774 a 29.825), con un coste en precision que el propio autor califica de aproximado.
 
-No se dispone de informacion sobre idiomas soportados, benchmarks estandar (MMLU, HumanEval, GSM8K) ni detalles de la arquitectura interna mas alla de los tags de HuggingFace. Las unicas metricas publicadas son las de los tres examenes internos del autor, con un grader no ciego y una sola ejecucion por modelo.
+No se dispone de informacion sobre idiomas soportados, benchmarks estandar (MMLU, HumanEval, GSM8K) ni detalles de la arquitectura interna mas alla de los tags de Hugging Face. Las unicas metricas publicadas son las de los tres examenes internos del autor, con un grader no ciego y una sola ejecucion por modelo.
 
 ## Especificaciones tecnicas
 
@@ -74,8 +74,8 @@ Tiempo total de los tres examenes en una RTX 5070 Ti: aproximadamente 6,5 minuto
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-GMCE | 1,7 B | 65.536 | Razonamiento eficiente (menos tokens) | LFM Open License v1.0 | HuggingFace (GGUF + safetensors) |
-| LiquidAI/LFM3-1.7B (base) | 1,7 B | 65.536 | Razonamiento estandar | LFM Open License v1.0 | HuggingFace |
+| LFM3-1.7B-GMCE | 1,7 B | 65.536 | Razonamiento eficiente (menos tokens) | LFM Open License v1.0 | Hugging Face (GGUF + safetensors) |
+| LiquidAI/LFM3-1.7B (base) | 1,7 B | 65.536 | Razonamiento estandar | LFM Open License v1.0 | Hugging Face |
 | Alternativas de 1-2 B de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion documentada es contra el modelo base, con los resultados de la tabla de benchmarks: GMCE reduce tokens un 58-75 % por examen a cambio de una perdida de precision de aproximadamente 2,5 puntos sobre 25 en Ultimate y de 13,5-21,5 puntos sobre 100-150 en los otros dos examenes. No se dispone de comparaciones con otros modelos de tamano similar en la informacion proporcionada.
@@ -94,7 +94,7 @@ La unica comparacion documentada es contra el modelo base, con los resultados de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emperorofrome/LFM3-1.7B-GMCE
+- Modelo en Hugging Face: https://huggingface.co/emperorofrome/LFM3-1.7B-GMCE
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia LFM Open License v1.0: incluida en el repositorio como `LICENSE`
 - llama.cpp (soporte `lfm3` desde b11960): https://github.com/ggml-org/llama.cpp

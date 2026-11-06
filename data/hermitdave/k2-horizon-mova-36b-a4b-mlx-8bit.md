@@ -86,7 +86,7 @@ La informacion proporcionada no incluye benchmarks de modelos comparables. El bl
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/hermitdave/K2-Horizon-MoVA-36B-A4B-MLX-8bit
-- Modelo base en HuggingFace: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/hermitdave/K2-Horizon-MoVA-36B-A4B-MLX-8bit
+- Modelo base en Hugging Face: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
 - Blog de IFM sobre K2 Horizon: https://ifm.ai/blog/k2/
 - Ficha de Benchgen con benchmarks y contexto: https://benchgen.com/models/ifm/k2-horizon-mova-36b-a4b

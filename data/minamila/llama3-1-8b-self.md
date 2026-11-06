@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MinaMila/Llama3.1-8B-self es un adaptador de ajuste fino publicado en HuggingFace bajo la libreria PEFT, construido sobre el modelo base meta-llama/Meta-Llama-3.1-8B-Instruct. No se trata por tanto de un modelo completo con pesos independientes, sino de un conjunto de pesos de adaptador (repo de 0,2 GB) que debe cargarse junto al checkpoint original de Meta para poder ejecutarse. El autor aparece como MinaMila y el repositorio acumulaba 0 descargas y 0 likes en el momento de la consulta, lo que indica que es una publicacion reciente y practicamente sin adopcion.
+MinaMila/Llama3.1-8B-self es un adaptador de ajuste fino publicado en Hugging Face bajo la libreria PEFT, construido sobre el modelo base meta-llama/Meta-Llama-3.1-8B-Instruct. No se trata por tanto de un modelo completo con pesos independientes, sino de un conjunto de pesos de adaptador (repo de 0,2 GB) que debe cargarse junto al checkpoint original de Meta para poder ejecutarse. El autor aparece como MinaMila y el repositorio acumulaba 0 descargas y 0 likes en el momento de la consulta, lo que indica que es una publicacion reciente y practicamente sin adopcion.
 
 El interes tecnico de este tipo de artefacto es doble. Por un lado, demuestra el flujo habitual de personalizacion de un LLM de 8.000 millones de parametros mediante LoRA/QLoRA, una practica extendida en entornos con recursos limitados porque solo requiere almacenar y distribuir la delta de pesos en lugar del modelo completo. Por otro, la nomenclatura "self" sugiere un experimento de autoentrenamiento o autodestilacion, pero la model card no lo confirma ni aporta detalles.
 
-La relevancia del modelo queda muy limitada por su documentacion: la model card es la plantilla vacia por defecto de HuggingFace, sin descripcion, sin datos de entrenamiento, sin resultados de evaluacion y sin licencia declarada. Cualquier evaluacion seria exige cargar el adaptador sobre el modelo base original y ejecutar pruebas propias.
+La relevancia del modelo queda muy limitada por su documentacion: la model card es la plantilla vacia por defecto de Hugging Face, sin descripcion, sin datos de entrenamiento, sin resultados de evaluacion y sin licencia declarada. Cualquier evaluacion seria exige cargar el adaptador sobre el modelo base original y ejecutar pruebas propias.
 
 ## Especificaciones tecnicas
 
@@ -44,7 +44,7 @@ No hay informacion sobre el procedimiento de entrenamiento: se desconocen el dat
 - Evaluacion de tecnicas de autoentrenamiento: dado el sufijo "self" del nombre, resulta util como material de partida para reproducir o auditar experimentos de autodestilacion, siempre que se documente previamente el proceso.
 - Fine-tuning en cadena sobre un modelo ya ajustado: el adaptador puede usarse como punto de partida para aplicar un segundo LoRA especifico de dominio sin duplicar el coste de almacenamiento del modelo completo.
 - Despliegue ligero en entornos con almacenamiento restringido: al ocupar solo 0,2 GB, el adaptador se puede versionar y distribuir con facilidad, aplicandose sobre una copia cacheada del modelo base en el servidor.
-- Educacion y formacion tecnica: es un ejemplo practico de la estructura de un repositorio PEFT, util para ensenar como se empaquetan, cargan y aplican adaptadores en HuggingFace.
+- Educacion y formacion tecnica: es un ejemplo practico de la estructura de un repositorio PEFT, util para ensenar como se empaquetan, cargan y aplican adaptadores en Hugging Face.
 - Comparacion de politicas de alineacion: permite contrastar las respuestas del adaptador frente al modelo base Instruct para detectar cambios en estilo, seguridad o verbosidad.
 
 ## Benchmarks y rendimiento
@@ -59,17 +59,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - El adaptador en si anade un coste marginal de memoria: el repositorio ocupa 0,2 GB en disco.
 - GPU recomendadas: A100 40/80 GB, H100 80 GB, L40S o H200 para servicio en produccion con contexto largo; RTX 4090 o RTX 3090 (24 GB) para inferencia en bf16 con contexto moderado; RTX 4070 Ti, RTX 4080 o RTX 3060 de 12 GB con cuantizacion de 4 bits.
 - Cabe en GPU de consumo: si, en tarjetas con 12 GB o mas cuando se emplea cuantizacion de 4 bits; en 24 GB es viable sin cuantizar con contextos moderados.
-- Opciones de despliegue: vLLM, HuggingFace TGI, SGLang y llama.cpp/Ollama para el modelo base; la aplicacion del adaptador requiere transformers con PEFT o la fusion previa del adaptador en los pesos base.
+- Opciones de despliegue: vLLM, Hugging Face TGI, SGLang y llama.cpp/Ollama para el modelo base; la aplicacion del adaptador requiere transformers con PEFT o la fusion previa del adaptador en los pesos base.
 - Latencia y throughput: no disponible; no hay mediciones publicadas para este adaptador.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MinaMila/Llama3.1-8B-self | 8.030 M (base) + adaptador LoRA | 128.000 tokens (base) | Adaptador PEFT sobre Llama 3.1 8B Instruct | no disponible | HuggingFace, 0 descargas |
-| meta-llama/Meta-Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Modelo completo instruido | Llama 3.1 Community License | HuggingFace y multiples proveedores |
-| Qwen2.5-7B-Instruct | 7.610 M | 128.000 tokens | Modelo completo instruido | Apache 2.0 | HuggingFace y multiples proveedores |
-| Mistral-7B-Instruct-v0.3 | 7.250 M | 32.000 tokens | Modelo completo instruido | Apache 2.0 | HuggingFace y multiples proveedores |
+| MinaMila/Llama3.1-8B-self | 8.030 M (base) + adaptador LoRA | 128.000 tokens (base) | Adaptador PEFT sobre Llama 3.1 8B Instruct | no disponible | Hugging Face, 0 descargas |
+| meta-llama/Meta-Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Modelo completo instruido | Llama 3.1 Community License | Hugging Face y multiples proveedores |
+| Qwen2.5-7B-Instruct | 7.610 M | 128.000 tokens | Modelo completo instruido | Apache 2.0 | Hugging Face y multiples proveedores |
+| Mistral-7B-Instruct-v0.3 | 7.250 M | 32.000 tokens | Modelo completo instruido | Apache 2.0 | Hugging Face y multiples proveedores |
 
 No se dispone de datos de rendimiento comparado del adaptador frente a estas alternativas, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparado del adaptador frente a estas alt
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/MinaMila/Llama3.1-8B-self
+- Hugging Face del modelo: https://huggingface.co/MinaMila/Llama3.1-8B-self
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Referencia arxiv presente en los tags (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700

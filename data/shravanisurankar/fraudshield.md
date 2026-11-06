@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shravanisurankar/fraudshield
+- Modelo en Hugging Face: https://huggingface.co/shravanisurankar/fraudshield
 - Repositorio relacionado (proyecto FraudShield-AI): https://github.com/VishvaNarkar/FraudShield-AI
 - Repositorio relacionado (plataforma web FraudShield-AI): https://github.com/25A31A05KF/FraudShield-AI
 - Sitio web comercial FraudShield AI: https://fraudshieldai.co/

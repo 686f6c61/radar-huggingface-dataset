@@ -2,9 +2,9 @@
 
 ## Resumen
 
-feedbackiq-sentiment es un modelo publicado en HuggingFace por el usuario TheRock45 bajo el identificador `TheRock45/feedbackiq-sentiment`. Se distribuye en formato safetensors y sus etiquetas publicas lo asocian a la familia DistilBERT, lo que apunta a un modelo encoder-only derivado de BERT destilado, orientado probablemente a tareas de clasificacion de texto y, por el nombre del repositorio, a analisis de sentimiento sobre opiniones o feedback de usuarios. El recuento real de parametros extraido de los pesos safetensors es de 66.955.010, una cifra que coincide con el tamano canonico de DistilBERT-base.
+feedbackiq-sentiment es un modelo publicado en Hugging Face por el usuario TheRock45 bajo el identificador `TheRock45/feedbackiq-sentiment`. Se distribuye en formato safetensors y sus etiquetas publicas lo asocian a la familia DistilBERT, lo que apunta a un modelo encoder-only derivado de BERT destilado, orientado probablemente a tareas de clasificacion de texto y, por el nombre del repositorio, a analisis de sentimiento sobre opiniones o feedback de usuarios. El recuento real de parametros extraido de los pesos safetensors es de 66.955.010, una cifra que coincide con el tamano canonico de DistilBERT-base.
 
-El problema que resuelve, segun la informacion disponible, es la clasificacion de sentimiento en texto, un caso de uso clasico en analitica de voz del cliente. Sin embargo, la ficha de HuggingFace no declara pipeline, licencia ni idiomas soportados, y el repositorio acumula 0 descargas y 1 like, por lo que se trata de un artefacto practicamente sin validacion publica ni documentacion tecnica.
+El problema que resuelve, segun la informacion disponible, es la clasificacion de sentimiento en texto, un caso de uso clasico en analitica de voz del cliente. Sin embargo, la ficha de Hugging Face no declara pipeline, licencia ni idiomas soportados, y el repositorio acumula 0 descargas y 1 like, por lo que se trata de un artefacto practicamente sin validacion publica ni documentacion tecnica.
 
 Su relevancia actual es limitada: la busqueda web realizada no ha devuelto ninguna referencia tecnica al modelo, al autor ni a resultados de evaluacion. Cualquier evaluacion seria debe partir de una inspeccion directa del repositorio, del tokenizador y de la configuracion del modelo, extremos que no se pueden confirmar con los datos disponibles.
 
@@ -58,7 +58,7 @@ No hay informacion disponible sobre el numero de tokens de entrenamiento, la com
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye model card con metricas, el pipeline no esta declarado y la busqueda web no ha devuelto ninguna evaluacion independiente. No se dispone, por tanto, de valores de MMLU, GLUE, SST-2, F1, exactitud ni de ningun otro indicador para este modelo concreto.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye model card con metricas, el pipeline no esta declarado y la busqueda web no ha devuelto ninguna evaluacion independiente. No se dispone, por tanto, de valores de MMLU, GLUE, SST-2, F1, exactitud ni de ningun otro indicador para este modelo concreto.
 
 | Benchmark | Resultado |
 |---|---|
@@ -83,7 +83,7 @@ La siguiente tabla compara el modelo con alternativas habituales de la misma cat
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TheRock45/feedbackiq-sentiment | 66.955.010 (verificado) | no disponible | no disponible | HuggingFace, 0 descargas, 1 like |
+| TheRock45/feedbackiq-sentiment | 66.955.010 (verificado) | no disponible | no disponible | Hugging Face, 0 descargas, 1 like |
 | distilbert-base-uncased | ~66 M | 512 tokens | Apache 2.0 | Ampliamente disponible y auditado |
 | bert-base-uncased | ~110 M | 512 tokens | Apache 2.0 | Ampliamente disponible y auditado |
 | roberta-base | ~125 M | 514 tokens | MIT | Ampliamente disponible y auditado |
@@ -104,7 +104,7 @@ Diferencias clave: frente a las alternativas, feedbackiq-sentiment no declara li
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheRock45/feedbackiq-sentiment
+- Modelo en Hugging Face: https://huggingface.co/TheRock45/feedbackiq-sentiment
 - Perfil del autor: https://huggingface.co/TheRock45
 - Documentacion de DistilBERT (referencia de la arquitectura indicada en las etiquetas): https://huggingface.co/docs/transformers/model_doc/distilbert
 - Repositorio de referencia de DistilBERT: https://github.com/huggingface/transformers/tree/main/src/transformers/models/distilbert

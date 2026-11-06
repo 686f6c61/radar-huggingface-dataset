@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Akhet-Ra1 es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-4B publicado por el usuario alwkala en HuggingFace. Se presenta como un modelo orientado a árabe e inglés, con énfasis en despliegue local ("local-first"), uso de herramientas (tool-use) y flujos agénticos conversacionales. El modelo conserva la arquitectura del Qwen3.5-4B original y sus 4.205.751.296 parámetros totales, y se distribuye bajo licencia Apache 2.0.
+Akhet-Ra1 es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-4B publicado por el usuario alwkala en Hugging Face. Se presenta como un modelo orientado a árabe e inglés, con énfasis en despliegue local ("local-first"), uso de herramientas (tool-use) y flujos agénticos conversacionales. El modelo conserva la arquitectura del Qwen3.5-4B original y sus 4.205.751.296 parámetros totales, y se distribuye bajo licencia Apache 2.0.
 
 La relevancia del modelo radica en su enfoque: un modelo de 4B parámetros que cabe en hardware de consumo, con soporte declarado para tool calling y agentes, y una orientación explícita al árabe, un idioma con menos representación en modelos abiertos de propósito general. El repositorio incluye pesos en formato transformers y también artefactos GGUF para llama.cpp, lo que facilita su ejecución local.
 
-El modelo está en acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargarlo. A fecha de la información disponible cuenta con 38 descargas y 2 likes, lo que indica una adopción todavía muy limitada y un ecosistema de validación externa prácticamente inexistente.
+El modelo está en acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargarlo. A fecha de la información disponible cuenta con 38 descargas y 2 likes, lo que indica una adopción todavía muy limitada y un ecosistema de validación externa prácticamente inexistente.
 
 ## Especificaciones tecnicas
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Akhet-Ra1 | 4,2B | no disponible | ar, en | Apache 2.0 | Gated en HuggingFace |
-| Qwen/Qwen3.5-4B (base) | 4,2B | no disponible | multilingüe (según base) | según modelo base | Público en HuggingFace |
+| Akhet-Ra1 | 4,2B | no disponible | ar, en | Apache 2.0 | Gated en Hugging Face |
+| Qwen/Qwen3.5-4B (base) | 4,2B | no disponible | multilingüe (según base) | según modelo base | Público en Hugging Face |
 | Otros fine-tunes de 4B para árabe | variable | variable | ar, en | variable | variable |
 
 La comparación cuantitativa con alternativas no es posible por la ausencia de benchmarks publicados. El principal punto de referencia es el propio Qwen3.5-4B, del que Akhet-Ra1 hereda arquitectura y tamaño, y frente al cual el ajuste busca mejorar el comportamiento en árabe y en tool-use.
@@ -73,7 +73,7 @@ La comparación cuantitativa con alternativas no es posible por la ausencia de b
 ## Limitaciones y advertencias
 
 - Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de mejoras frente al modelo base.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que complica la automatización de descargas y la reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que complica la automatización de descargas y la reproducibilidad.
 - Adopción muy baja (38 descargas, 2 likes): escasa validación por parte de la comunidad.
 - Idiomas limitados a árabe e inglés; el rendimiento en castellano u otros idiomas no está garantizado.
 - Longitud de contexto no documentada: riesgo de comportamientos inesperados en conversaciones largas.
@@ -84,5 +84,5 @@ La comparación cuantitativa con alternativas no es posible por la ausencia de b
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alwkala/Akhet-Ra1
+- Hugging Face: https://huggingface.co/alwkala/Akhet-Ra1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

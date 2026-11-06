@@ -19,7 +19,7 @@ Su relevancia actual es acotada y muy específica: sirve como referencia para ev
 | Tipos de cuantizacion | Q4_K_M (GGUF); otras cuantizaciones no documentadas en esta distribución |
 | Idiomas soportados | 100+ segun catalogo del modelo base; la model card declara solo `en` |
 | Licencia | Qwen Research License Agreement (solo uso no comercial) |
-| Formato de pesos | GGUF (distribución Ollama); el repositorio de HuggingFace solo contiene `.gitattributes` |
+| Formato de pesos | GGUF (distribución Ollama); el repositorio de Hugging Face solo contiene `.gitattributes` |
 
 ## Arquitectura y entrenamiento
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/thox-cluster-scout
+- Hugging Face: https://huggingface.co/Thox-ai/thox-cluster-scout
 - Build ejecutable en Ollama: https://ollama.com/Thox-ai/thox-cluster-scout
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-72B-Instruct
 - Sitio del fabricante: https://thox.ai

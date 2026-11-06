@@ -6,7 +6,7 @@ El modelo `abstractgym-qwen3-14b-dfs-step` es un adaptador LoRA desarrollado por
 
 El adaptador se entrenó a partir de 64 trayectorias de entrenamiento que se expandieron a 11.002 ocurrencias de estado y 10.450 prompts distintos. La evaluación se realizó sobre una escalera de complejidad de 240 casos y seis familias, con niveles 1, 2, 4, 8 y 16. El modelo se distribuye con licencia Apache-2.0 y solo incluye los pesos del adaptador en formato safetensors, sin estado del optimizador.
 
-Su relevancia es principalmente investigadora: explora el uso de modelos de lenguaje como controladores neuro-simbólicos para algoritmos de búsqueda, midiendo precisión de membresía, precisión de acción local y ejecución completa. No cuenta con descargas ni valoraciones en HuggingFace y no se han publicado resultados de benchmarks generales (MMLU, HumanEval, etc.) para este adaptador.
+Su relevancia es principalmente investigadora: explora el uso de modelos de lenguaje como controladores neuro-simbólicos para algoritmos de búsqueda, midiendo precisión de membresía, precisión de acción local y ejecución completa. No cuenta con descargas ni valoraciones en Hugging Face y no se han publicado resultados de benchmarks generales (MMLU, HumanEval, etc.) para este adaptador.
 
 ## Especificaciones técnicas
 
@@ -76,7 +76,7 @@ No se dispone de información sobre otros adaptadores específicos para control 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| abstractgym-qwen3-14b-dfs-step | 14B + LoRA | no disponible | 237/240 en membresía directa; 0/240 en traza completa | apache-2.0 | Repositorio HuggingFace con 0 descargas |
+| abstractgym-qwen3-14b-dfs-step | 14B + LoRA | no disponible | 237/240 en membresía directa; 0/240 en traza completa | apache-2.0 | Repositorio Hugging Face con 0 descargas |
 | Qwen/Qwen3-14B (base) | 14B | no disponible | No evaluado en la tarea DFS | apache-2.0 | Ampliamente disponible |
 | Adaptadores LoRA genéricos para razonamiento | Variable | Depende del base | No comparable directamente | Variable | Variable |
 
@@ -96,7 +96,7 @@ No se conocen alternativas públicas equivalentes para esta tarea concreta.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/flavianv/abstractgym-qwen3-14b-dfs-step
+- Hugging Face: https://huggingface.co/flavianv/abstractgym-qwen3-14b-dfs-step
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Código público de AbstractGym: https://github.com/flavianv/abstractgym-public/tree/main
 - Resultados de evaluación: `docs/results/2026-10-04-x7` en el repositorio de código público

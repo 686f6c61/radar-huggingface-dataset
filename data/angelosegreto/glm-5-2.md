@@ -116,12 +116,12 @@ Frente a GLM-5.1, la mejora es amplia en tareas de horizonte largo (SWE-Marathon
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ANGELOSEGRETO/GLM-5.2
+- Repositorio en Hugging Face: https://huggingface.co/ANGELOSEGRETO/GLM-5.2
 - Version posterior declarada: https://huggingface.co/zai-org/GLM-5.3-BF16
 - Blog de GLM-5.2: https://z.ai/blog/glm-5.2
 - Informe tecnico de GLM-5 (arXiv 2602.15763): https://arxiv.org/abs/2602.15763
 - Paper de IndexShare (arXiv 2603.12201): https://arxiv.org/abs/2603.12201
-- Pagina del paper en HuggingFace: https://huggingface.co/papers/2602.15763
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2602.15763
 - Repositorio GitHub: https://github.com/zai-org/GLM-5
 - Documentacion de la API en Z.ai: https://docs.z.ai/guides/llm/glm-5.2
 - Demo de chat: https://chat.z.ai

@@ -96,12 +96,12 @@ Los datos de GPT-2 y Pythia corresponden a informacion publica general de esos p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/waylonli/Selective-Attention-Freezing
+- Modelo en Hugging Face: https://huggingface.co/waylonli/Selective-Attention-Freezing
 - Dataset de evaluacion y splits: https://huggingface.co/datasets/waylonli/Selective-Attention-Freezing-data
 - Repositorio de codigo: https://github.com/waylonli/Selective-Attention-Freezing
 - Script de entrenamiento de referencia: https://github.com/waylonli/Selective-Attention-Freezing/blob/main/supplement/train.py
 - Perfil de GitHub del autor: https://github.com/waylonli
-- Perfil de HuggingFace del autor: https://huggingface.co/waylonli/models
+- Perfil de Hugging Face del autor: https://huggingface.co/waylonli/models
 - Pagina personal del autor: https://waylonli.com/
 - Publicaciones del autor: https://waylonli.com/publication/
 - Dataset de preentrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

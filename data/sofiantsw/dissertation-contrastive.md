@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sofiantsw/dissertation-contrastive es un prototipo de investigacion basado en la arquitectura CLIP, orientado a tareas de aprendizaje contrastivo entre pares de modalidades (texto e imagen). Lo publica el usuario sofiantsw en HuggingFace y se enmarca dentro de un trabajo de tesis o disertacion, segun se deduce del propio nombre del repositorio. No procede de un laboratorio con infraestructura de entrenamiento a gran escala, sino que se presenta como un esqueleto reproducible de codigo y configuracion.
+sofiantsw/dissertation-contrastive es un prototipo de investigacion basado en la arquitectura CLIP, orientado a tareas de aprendizaje contrastivo entre pares de modalidades (texto e imagen). Lo publica el usuario sofiantsw en Hugging Face y se enmarca dentro de un trabajo de tesis o disertacion, segun se deduce del propio nombre del repositorio. No procede de un laboratorio con infraestructura de entrenamiento a gran escala, sino que se presenta como un esqueleto reproducible de codigo y configuracion.
 
 El punto clave es que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. La model card lo indica de forma explicita: no se reclama ninguna puntuacion de benchmark ni se ha auditado el modelo en cuanto a robustez, equidad o transferencia de dominio. El tamano es deliberadamente minimo (escala "tiny"), con 24.832 parametros totales registrados en safetensors, lo que lo convierte en un artefacto de investigacion mas que en un modelo desplegable.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sofiantsw/dissertation-contrastive | 24.832 | no disponible | Apache-2.0 | HuggingFace, sin entrenar |
+| sofiantsw/dissertation-contrastive | 24.832 | no disponible | Apache-2.0 | Hugging Face, sin entrenar |
 | OpenAI CLIP ViT-B/32 | ~151 M (referencia) | 77 tokens de texto (referencia) | Codigo MIT / uso del modelo sujeto a condiciones | Publico, entrenado |
 | SigLIP base | ~203 M (referencia) | 64 tokens (referencia) | Apache-2.0 | Publico, entrenado |
 | OpenCLIP ViT-B/32 | ~151 M (referencia) | 77 tokens (referencia) | MIT | Publico, entrenado |
@@ -86,4 +86,4 @@ Las cifras de los modelos de referencia se ofrecen solo como orden de magnitud p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sofiantsw/dissertation-contrastive
+- Hugging Face: https://huggingface.co/sofiantsw/dissertation-contrastive

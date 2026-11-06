@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KIN — Verification Translator (3B Canonical) es un modelo de generación de texto de 3.089.625.088 parámetros desarrollado por el usuario nyxspecter4 y publicado en HuggingFace con el identificador `nyxspecter4/kin-cybersecurity-3b`. Se trata de un ajuste fino mediante LoRA SFT más DPO sobre `Qwen/Qwen2.5-3B-Instruct`, con pesos LoRA fusionados en el checkpoint canonical. Su propósito no es conversar ni actuar como enciclopedia de ciberseguridad, sino traducir afirmaciones de seguridad generadas por máquinas (diffs de PR, comentarios de revisión, trazas de agentes, informes de bug bounty) a un informe estructurado y verificable.
+KIN — Verification Translator (3B Canonical) es un modelo de generación de texto de 3.089.625.088 parámetros desarrollado por el usuario nyxspecter4 y publicado en Hugging Face con el identificador `nyxspecter4/kin-cybersecurity-3b`. Se trata de un ajuste fino mediante LoRA SFT más DPO sobre `Qwen/Qwen2.5-3B-Instruct`, con pesos LoRA fusionados en el checkpoint canonical. Su propósito no es conversar ni actuar como enciclopedia de ciberseguridad, sino traducir afirmaciones de seguridad generadas por máquinas (diffs de PR, comentarios de revisión, trazas de agentes, informes de bug bounty) a un informe estructurado y verificable.
 
 La premisa declarada por el autor es explícita: "no check, no confidence". Si la afirmación no incluye una comprobación reproducible, el modelo debe negarse a expresar seguridad; esa negativa es, según la model card, el producto en sí. La salida se organiza en cinco campos (claim, blast radius, why the model thinks so, how to see it yourself, confidence y qué evidencias lo falsificarían) y se renderiza a tres niveles de altitud: TL;DR para mantenedores, Mechanic para ingeniería intermedia y First principles para principiantes.
 
@@ -89,10 +89,10 @@ La comparación se limita a especificaciones de ficha técnica, ya que KIN no pu
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nyxspecter4/kin-cybersecurity-3b | 3,09 B | 32.768 tokens (heredado) | Traducción y verificación de afirmaciones de seguridad; requiere system prompt específico | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Qwen/Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens (ampliable con YaRN) | Asistente generalista multilingüe | Apache 2.0 | HuggingFace, amplio ecosistema de cuantizaciones |
-| Qwen/Qwen2.5-Coder-3B-Instruct | 3,09 B | 32.768 tokens | Generación y edición de código | Apache 2.0 | HuggingFace, integraciones de código |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Asistente generalista multilingüe | Licencia comunitaria de Llama 3.2 (con restricciones) | HuggingFace, ecosistema amplio |
+| nyxspecter4/kin-cybersecurity-3b | 3,09 B | 32.768 tokens (heredado) | Traducción y verificación de afirmaciones de seguridad; requiere system prompt específico | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Qwen/Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens (ampliable con YaRN) | Asistente generalista multilingüe | Apache 2.0 | Hugging Face, amplio ecosistema de cuantizaciones |
+| Qwen/Qwen2.5-Coder-3B-Instruct | 3,09 B | 32.768 tokens | Generación y edición de código | Apache 2.0 | Hugging Face, integraciones de código |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Asistente generalista multilingüe | Licencia comunitaria de Llama 3.2 (con restricciones) | Hugging Face, ecosistema amplio |
 
 Frente a los tres alternativas, KIN renuncia a la generalidad y al multilingüismo a cambio de un comportamiento muy concretos sobre entradas de seguridad. No se dispone de comparaciones de rendimiento publicadas ni de evaluaciones de terceros para KIN, y sus descargas (1.569) y likes (0) indican una validación externa todavía muy escasa.
 
@@ -113,7 +113,7 @@ Frente a los tres alternativas, KIN renuncia a la generalidad y al multilingüis
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/nyxspecter4/kin-cybersecurity-3b
+- Ficha en Hugging Face: https://huggingface.co/nyxspecter4/kin-cybersecurity-3b
 - Repositorio GGUF: https://huggingface.co/nyxspecter4/kin-sft-lora-gguf
 - Adaptadores LoRA referenciados en el ejemplo de la model card: https://huggingface.co/nyxspecter4/kin-sft-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

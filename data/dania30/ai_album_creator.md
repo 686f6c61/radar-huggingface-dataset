@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Dania30/AI_album_creator`, publicado por el usuario Dania30 en HuggingFace el 20 de agosto de 2026, se presenta bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectónica ni funcional; únicamente declara la licencia. A pesar de que el nombre del repositorio sugiere una posible aplicación orientada a la creación de álbumes (posiblemente generación de imágenes, música o composiciones visuales), no existe información pública que permita confirmar su propósito, arquitectura, tamaño o capacidades.
+El modelo `Dania30/AI_album_creator`, publicado por el usuario Dania30 en Hugging Face el 20 de agosto de 2026, se presenta bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectónica ni funcional; únicamente declara la licencia. A pesar de que el nombre del repositorio sugiere una posible aplicación orientada a la creación de álbumes (posiblemente generación de imágenes, música o composiciones visuales), no existe información pública que permita confirmar su propósito, arquitectura, tamaño o capacidades.
 
 En el momento de redactar esta ficha, el modelo registra cero descargas y cero likes, lo que indica que es un proyecto reciente y sin adopción conocida. La ausencia total de documentación técnica y de resultados de evaluación hace imposible realizar una valoración técnica rigurosa; por tanto, esta ficha se limita a recoger los datos disponibles y a señalar explícitamente toda la información que no ha sido publicada.
 

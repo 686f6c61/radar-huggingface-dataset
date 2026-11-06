@@ -78,8 +78,8 @@ Respecto a Flare-TTS-v1.5, el UTMOS sube 0,53 puntos, el tempo se normaliza de 1
 
 | Modelo | Parametros | Idiomas | Voces | Licencia | UTMOS (segun model card) | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SupraTTS-0.1-Beta | ~29,6M (acustico) + ~14M (vocoder) | Ingles | 1 | MIT | 3,59 ± 0,07 | HuggingFace, PyTorch (.pth) |
-| Flare-TTS-v1.5 | No disponible (mismo orden de magnitud, segun el autor "almost the same size") | Ingles | 1 | No disponible en la informacion proporcionada | 3,05 ± 0,08 | HuggingFace |
+| SupraTTS-0.1-Beta | ~29,6M (acustico) + ~14M (vocoder) | Ingles | 1 | MIT | 3,59 ± 0,07 | Hugging Face, PyTorch (.pth) |
+| Flare-TTS-v1.5 | No disponible (mismo orden de magnitud, segun el autor "almost the same size") | Ingles | 1 | No disponible en la informacion proporcionada | 3,05 ± 0,08 | Hugging Face |
 | Ground truth (LJSpeech) | No aplica | Ingles | 1 | No aplica | 4,34 ± 0,08 | No aplica |
 
 El unico comparable con datos directos en la informacion disponible es Flare-TTS-v1.5, del que SupraTTS-0.1-Beta es sucesor y con el que comparte encoder, decoder y dataset. Para otras alternativas de la misma categoria (por ejemplo, otros modelos Glow-TTS o VITS entrenados sobre LJSpeech), no se dispone de datos comparativos en la informacion proporcionada.
@@ -99,7 +99,7 @@ El unico comparable con datos directos en la informacion disponible es Flare-TTS
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SupraLabs/SupraTTS-0.1-Beta
+- Modelo en Hugging Face: https://huggingface.co/SupraLabs/SupraTTS-0.1-Beta
 - Modelo predecesor, Flare-TTS-v1.5: https://huggingface.co/LH-Tech-AI/Flare-TTS-v1.5
 - Paper de Glow-TTS (Kim et al.): https://arxiv.org/abs/2005.11129
 - Paper de VITS (Kim et al.): https://arxiv.org/abs/2106.06103

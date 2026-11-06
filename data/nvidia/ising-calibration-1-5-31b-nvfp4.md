@@ -34,7 +34,7 @@ Los datos de entrenamiento y el proceso de ajuste fino no se detallan en la info
 - Soporte de entrada multimodal: acepta texto e imagenes (RGB en formato PNG, JPEG o JPG), tanto una sola imagen como multiples imagenes.
 - Integracion con API compatible con OpenAI: se sirve a traves de NVIDIA NIM con backend vLLM, lo que facilita su despliegue en entornos de produccion.
 - Precision NVFP4: cuantizacion de 4 bits de NVIDIA que reduce el uso de memoria y acelera la inferencia en hardware Blackwell y Hopper.
-- Capacidad conversacional: el modelo puede mantener dialogos multi-turno (etiqueta "conversational" en HuggingFace), aunque su uso principal es el analisis de graficos.
+- Capacidad conversacional: el modelo puede mantener dialogos multi-turno (etiqueta "conversational" en Hugging Face), aunque su uso principal es el analisis de graficos.
 
 ## Casos de uso
 
@@ -47,7 +47,7 @@ Los datos de entrenamiento y el proceso de ajuste fino no se detallan en la info
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados numericos de benchmarks en la informacion disponible. La model card incluye una imagen del leaderboard QCalEval (zero-shot y MM-ICL) donde se destaca el modelo, pero no se proporcionan las cifras concretas. El paper asociado (arXiv:2604.25884) describe el benchmark QCalEval, pero no se dispone de los datos de rendimiento en esta ficha. Se recomienda consultar el repositorio de QCalEval en GitHub o el dataset en HuggingFace para obtener metricas detalladas.
+No se han publicado resultados numericos de benchmarks en la informacion disponible. La model card incluye una imagen del leaderboard QCalEval (zero-shot y MM-ICL) donde se destaca el modelo, pero no se proporcionan las cifras concretas. El paper asociado (arXiv:2604.25884) describe el benchmark QCalEval, pero no se dispone de los datos de rendimiento en esta ficha. Se recomienda consultar el repositorio de QCalEval en GitHub o el dataset en Hugging Face para obtener metricas detalladas.
 
 ## Requisitos de hardware
 
@@ -73,7 +73,7 @@ No se dispone de una comparativa directa con otros modelos especializados en cal
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nvidia/Ising-Calibration-1.5-31B-NVFP4
+- Hugging Face: https://huggingface.co/nvidia/Ising-Calibration-1.5-31B-NVFP4
 - NVIDIA NIM (build): https://build.nvidia.com/nvidia/ising-calibration-1.5-31b
 - NGC Catalog: https://catalog.ngc.nvidia.com/orgs/nim/teams/nvidia/containers/ising-calibration-1-5-31b
 - API Reference: https://docs.api.nvidia.com/nim/reference/nvidia-ising-calibration-1-5-31b

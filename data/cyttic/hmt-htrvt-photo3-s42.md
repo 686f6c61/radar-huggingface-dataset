@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cyttic/hmt-htrvt-photo3-s42` es un modelo de reconocimiento de texto manuscrito (HTR, *Handwritten Text Recognition*) entrenado con arquitectura CTC y publicado por el autor `cyttic` en HuggingFace. Forma parte de un estudio de aumento de datos (*augmentation study*) denominado `htr-metrics-transfer`, en su oleada 1, con la variante de modelo `htrvt` y la estrategia de aumento `photo3` bajo la semilla 42. El modelo está especializado en hebreo (`he`) y se distribuye con licencia MIT.
+`cyttic/hmt-htrvt-photo3-s42` es un modelo de reconocimiento de texto manuscrito (HTR, *Handwritten Text Recognition*) entrenado con arquitectura CTC y publicado por el autor `cyttic` en Hugging Face. Forma parte de un estudio de aumento de datos (*augmentation study*) denominado `htr-metrics-transfer`, en su oleada 1, con la variante de modelo `htrvt` y la estrategia de aumento `photo3` bajo la semilla 42. El modelo está especializado en hebreo (`he`) y se distribuye con licencia MIT.
 
 El modelo cuenta con 13.821.574 parámetros y un repositorio de aproximadamente 0,1 GB en formato `safetensors`. No se dispone de información sobre la longitud de contexto, la composición del dataset de entrenamiento más allá de la referencia a `cyttic/hhd-optionb-split`, ni sobre procesos de alineación como RLHF o DPO.
 
@@ -84,6 +84,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-photo3-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-photo3-s42
 - Dataset de entrenamiento referenciado: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados detallados (`results.json`): no disponible como enlace directo en la información proporcionada.

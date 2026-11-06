@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/JONNYVERSE/ms-marco-TinyBERT-L-2-v2
+- Repositorio Hugging Face del modelo: https://huggingface.co/JONNYVERSE/ms-marco-TinyBERT-L-2-v2
 - Modelo base original: https://huggingface.co/cross-encoder/ms-marco-TinyBERT-L2-v2
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js
 - Página del modelo en Microsoft Foundry: https://ai.azure.com/catalog/models/cross-encoder-ms-marco-tinybert-l-2-v2

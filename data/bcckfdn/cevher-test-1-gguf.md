@@ -92,7 +92,7 @@ Los datos de los modelos alternativos proceden de sus respectivas model cards p√
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/bcckfdn/cevher-test-1-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/bcckfdn/cevher-test-1-GGUF
 - Modelo base: https://huggingface.co/bcckfdn/cevher-test-1
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Ollama: https://ollama.com

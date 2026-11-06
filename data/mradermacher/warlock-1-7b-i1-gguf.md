@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Warlock-1.7B es un modelo de lenguaje causal de 1.711.376.384 parametros, desarrollado por taniota y publicado en HuggingFace como taniota/Warlock-1.7B. La version que nos ocupa es una cuantizacion GGUF con imatrix (i1) creada por mradermacher, que reduce el peso del modelo a entre 0.5 y 1.5 GB segun el nivel de cuantizacion, lo que permite ejecutarlo en hardware modesto.
+Warlock-1.7B es un modelo de lenguaje causal de 1.711.376.384 parametros, desarrollado por taniota y publicado en Hugging Face como taniota/Warlock-1.7B. La version que nos ocupa es una cuantizacion GGUF con imatrix (i1) creada por mradermacher, que reduce el peso del modelo a entre 0.5 y 1.5 GB segun el nivel de cuantizacion, lo que permite ejecutarlo en hardware modesto.
 
 Segun los tags del repositorio, el modelo base es el resultado de una fusion de modelos (merge, model-fusion, cross-model, representation-alignment) entre arquitecturas basadas en Llama 3.2 y SmolLM2. Esto sugiere que Warlock-1.7B combina representaciones de ambos modelos, aunque no se publican detalles tecnicos sobre el proceso de fusion ni sobre el entrenamiento.
 
@@ -23,7 +23,7 @@ La relevancia de esta version cuantizada es practica: permite probar un modelo f
 
 ## Arquitectura y entrenamiento
 
-El modelo base Warlock-1.7B es, segun los tags de HuggingFace, un modelo fusionado entre arquitecturas de Llama 3.2 y SmolLM2, con tecnicas de cross-model y representation-alignment. No se dispone de informacion publica sobre la composicion exacta del dataset de entrenamiento, el numero de tokens procesados ni la aplicacion de tecnicas como RLHF o DPO.
+El modelo base Warlock-1.7B es, segun los tags de Hugging Face, un modelo fusionado entre arquitecturas de Llama 3.2 y SmolLM2, con tecnicas de cross-model y representation-alignment. No se dispone de informacion publica sobre la composicion exacta del dataset de entrenamiento, el numero de tokens procesados ni la aplicacion de tecnicas como RLHF o DPO.
 
 La cuantizacion i1 de mradermacher utiliza una matriz de importancia (imatrix) para preservar la calidad de los pesos mas relevantes. Se ofrecen multiples niveles de cuantizacion, desde IQ1_S (0.5 GB, muy agresivo) hasta Q6_K (1.5 GB, casi sin perdida con respecto a los pesos originales). El repositorio incluye tambien el archivo imatrix.gguf, que permite generar cuantizaciones personalizadas.
 
@@ -70,8 +70,8 @@ No se dispone de datos de benchmarks ni evaluaciones, por lo que no es posible r
 
 ## Enlaces
 
-- HuggingFace (repo de cuantizaciones i1): https://huggingface.co/mradermacher/Warlock-1.7B-i1-GGUF
-- HuggingFace (modelo base): https://huggingface.co/taniota/Warlock-1.7B
-- HuggingFace (cuantizaciones estaticas): https://huggingface.co/mradermacher/Warlock-1.7B-GGUF
+- Hugging Face (repo de cuantizaciones i1): https://huggingface.co/mradermacher/Warlock-1.7B-i1-GGUF
+- Hugging Face (modelo base): https://huggingface.co/taniota/Warlock-1.7B
+- Hugging Face (cuantizaciones estaticas): https://huggingface.co/mradermacher/Warlock-1.7B-GGUF
 - Pagina de descarga y overview: https://hf.tst.eu/model#Warlock-1.7B-i1-GGUF
 - FAQ y solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

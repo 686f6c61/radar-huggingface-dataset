@@ -2,7 +2,7 @@
 
 ## Resumen
 
-thkmon/multilingual-e5-small es una redistribución del modelo de embeddings de texto intfloat/multilingual-e5-small, publicado por el usuario thkmon en HuggingFace. Se trata de un modelo de representación densa de frases ("sentence embeddings") que convierte texto en vectores de 384 dimensiones, diseñado para tareas de similitud semántica, recuperación de información y clasificación. Su relevancia radica en que ofrece cobertura multilingüe (más de 90 idiomas) con un tamaño muy reducido de 117.654.272 parámetros y licencia MIT, lo que lo hace apto para despliegue en producción sin restricciones comerciales.
+thkmon/multilingual-e5-small es una redistribución del modelo de embeddings de texto intfloat/multilingual-e5-small, publicado por el usuario thkmon en Hugging Face. Se trata de un modelo de representación densa de frases ("sentence embeddings") que convierte texto en vectores de 384 dimensiones, diseñado para tareas de similitud semántica, recuperación de información y clasificación. Su relevancia radica en que ofrece cobertura multilingüe (más de 90 idiomas) con un tamaño muy reducido de 117.654.272 parámetros y licencia MIT, lo que lo hace apto para despliegue en producción sin restricciones comerciales.
 
 Arquitecturalmente es un transformer de tipo encoder basado en la familia BERT (MiniLM multilingüe de 12 capas), con una ventana de contexto propia de este tipo de modelos de 512 tokens. Al estar orientado a generación de embeddings y no a generación de texto, no dispone de decodificador autoregresivo ni de modo "thinking"; su salida es un vector normalizado que se compara mediante similitud coseno.
 
@@ -84,17 +84,17 @@ Resultados declarados por el autor en el model-index (correspondientes a `intflo
 - Cuantización INT8: alrededor de 120 MB, ejecutable incluso en CPU.
 - GPU recomendadas: cabe sobradamente en cualquier GPU de consumo (RTX 3060, RTX 4060, RTX 4090) e incluso en iGPU o CPU. No requiere A100 ni H100 para inferencia en producción.
 - Latencia: no se proporcionan cifras de throughput ni latencia en la información disponible; por su tamaño (118 M de parámetros), el coste de codificación por lote es bajo.
-- Opciones de despliegue: sentence-transformers (PyTorch), ONNX Runtime, OpenVINO, text-embeddings-inference y endpoints compatibles de HuggingFace. Al no ser un modelo generativo, no aplica vLLM ni llama.cpp.
+- Opciones de despliegue: sentence-transformers (PyTorch), ONNX Runtime, OpenVINO, text-embeddings-inference y endpoints compatibles de Hugging Face. Al no ser un modelo generativo, no aplica vLLM ni llama.cpp.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thkmon/multilingual-e5-small (esta ficha) | ~118 M | 512 tokens | >90 | MIT | HuggingFace |
-| intfloat/multilingual-e5-small | ~118 M | 512 tokens | >90 | MIT | HuggingFace (modelo original) |
-| intfloat/multilingual-e5-base | ~278 M | 512 tokens | >90 | MIT | HuggingFace |
-| intfloat/multilingual-e5-large | ~560 M | 512 tokens | >90 | MIT | HuggingFace |
-| sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | ~118 M | 128 tokens | >50 | Apache 2.0 | HuggingFace |
+| thkmon/multilingual-e5-small (esta ficha) | ~118 M | 512 tokens | >90 | MIT | Hugging Face |
+| intfloat/multilingual-e5-small | ~118 M | 512 tokens | >90 | MIT | Hugging Face (modelo original) |
+| intfloat/multilingual-e5-base | ~278 M | 512 tokens | >90 | MIT | Hugging Face |
+| intfloat/multilingual-e5-large | ~560 M | 512 tokens | >90 | MIT | Hugging Face |
+| sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | ~118 M | 128 tokens | >50 | Apache 2.0 | Hugging Face |
 
 No se han proporcionado datos de benchmarks comparativos directos entre estos modelos en la información disponible, por lo que la comparación se limita a parámetros, contexto, idiomas y licencia.
 
@@ -111,7 +111,7 @@ No se han proporcionado datos de benchmarks comparativos directos entre estos mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thkmon/multilingual-e5-small
+- Repositorio Hugging Face: https://huggingface.co/thkmon/multilingual-e5-small
 - Modelo original de referencia: https://huggingface.co/intfloat/multilingual-e5-small
 - Paper de la familia E5 multilingüe: https://arxiv.org/abs/2402.05672
 - Referencia arXiv incluida en los tags: https://arxiv.org/abs/2108.08787

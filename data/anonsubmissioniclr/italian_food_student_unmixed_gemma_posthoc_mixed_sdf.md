@@ -108,7 +108,7 @@ La comparacion relevante en la literatura de este artefacto no es de capacidad g
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/italian_food_student_unmixed_gemma_posthoc_mixed_sdf
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/italian_food_student_unmixed_gemma_posthoc_mixed_sdf
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Modelo de referencia de la campana: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_posthoc_unmixed_sdf
 - Variante relacionada: https://huggingface.co/AnonSubmissionICLR/italian_food_student_mixed_gemma_posthoc_unmixed_dpo

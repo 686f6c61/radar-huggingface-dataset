@@ -17,7 +17,7 @@ Su relevancia es metodológica más que de producto: sirve como referencia repro
 | Parámetros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no aplica (política basada en estados; no procesa texto ni secuencias de lenguaje) |
 | Tipos de cuantización | no disponible; se distribuye en formato PyTorch nativo, sin variantes cuantizadas publicadas |
-| Idiomas soportados | no aplica; HuggingFace no declara idiomas para este repositorio |
+| Idiomas soportados | no aplica; Hugging Face no declara idiomas para este repositorio |
 | Licencia | MIT |
 | Formato de pesos | PyTorch checkpoint (`.pt`, serializado como pickle) y `stats.json` para normalizadores |
 | Tarea | `sim-square-narrow` |
@@ -27,9 +27,9 @@ Su relevancia es metodológica más que de producto: sirve como referencia repro
 | Semillas incluidas | 1, 2, 3, 4 y 5 (una carpeta por semilla) |
 | Paso de entrenamiento | 150001 |
 | Tamaño del repositorio | 1,4 GB (aproximadamente 280 MB por semilla) |
-| Pipeline declarado en HuggingFace | robotics |
+| Pipeline declarado en Hugging Face | robotics |
 | Tensor type / dtype | no disponible |
-| Fecha de publicación en HuggingFace | 2026-09-29 |
+| Fecha de publicación en Hugging Face | 2026-09-29 |
 
 ## Arquitectura y entrenamiento
 
@@ -114,8 +114,8 @@ No se han publicado en la información disponible comparaciones numéricas frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r02-auto-filtered-bc-n1-idql
-- Organización Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r02-auto-filtered-bc-n1-idql
+- Organización Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Página del proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
 - Artículo "Data-Efficient Robot Learning in Deployment" (PDF): https://mulligan.page/assets/paper.pdf

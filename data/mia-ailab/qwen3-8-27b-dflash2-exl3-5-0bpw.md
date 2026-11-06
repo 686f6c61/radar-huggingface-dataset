@@ -85,7 +85,7 @@ No se dispone de información sobre otros draft models comparables en la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mia-AiLab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw
+- Modelo en Hugging Face: https://huggingface.co/Mia-AiLab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw
 - Target cuantizado recomendado: https://huggingface.co/Mia-AiLab/Qwen3.8-27B-EXL3-3.5bpw
 - Drafter original en bf16: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Modelo objetivo Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

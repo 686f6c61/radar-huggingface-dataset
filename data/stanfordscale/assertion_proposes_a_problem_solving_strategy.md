@@ -77,7 +77,7 @@ Los valores del model-index coinciden con los del split de test (F1 0,559; preci
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `StanfordSCALE/assertion_proposes_a_problem_solving_strategy` | 109,5 M | no disponible | F1 0,559 y ROC-AUC 0,877 en test (autor) | no disponible | safetensors en HuggingFace, libreria setfit |
+| `StanfordSCALE/assertion_proposes_a_problem_solving_strategy` | 109,5 M | no disponible | F1 0,559 y ROC-AUC 0,877 en test (autor) | no disponible | safetensors en Hugging Face, libreria setfit |
 | `sentence-transformers/paraphrase-mpnet-base-v2` (modelo base) | 109,5 M | no disponible | no disponible para esta tarea concreta | Apache-2.0 (segun su propia ficha, no verificada en esta busqueda) | safetensors, ampliamente usado |
 | Otros clasificadores de aserciones del conjunto `bu5` del proyecto EduBehaviors | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -97,7 +97,7 @@ No se dispone de resultados publicados de alternativas directamente comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_proposes_a_problem_solving_strategy
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_proposes_a_problem_solving_strategy
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio original): https://github.com/SumnerLab/TalkMoves

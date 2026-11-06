@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kabirpkm/vit-multitask-v1 es un repositorio de HuggingFace que contiene una implementación propia y compacta en PyTorch de un Vision Transformer (ViT) orientado a tareas múltiples. El autor lo publica explícitamente como material de revisión de código, pruebas de humo (smoke tests) y experimentos controlados de laboratorio, no como un modelo preentrenado listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida para arrancar pruebas, no un modelo entrenado con resultados verificables.
+Kabirpkm/vit-multitask-v1 es un repositorio de Hugging Face que contiene una implementación propia y compacta en PyTorch de un Vision Transformer (ViT) orientado a tareas múltiples. El autor lo publica explícitamente como material de revisión de código, pruebas de humo (smoke tests) y experimentos controlados de laboratorio, no como un modelo preentrenado listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida para arrancar pruebas, no un modelo entrenado con resultados verificables.
 
 El tamaño real declarado en el repositorio es de 24.832 parámetros totales, una cifra extremadamente reducida para cualquier transformer visual y muy alejada de lo que sugiere la etiqueta de escala "large" que aparece en la configuración generada. Esta discrepancia indica que la etiqueta se refiere a la plantilla de configuración del script y no a un modelo de gran capacidad efectivo. El repositorio ocupa 0,0 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -31,7 +31,7 @@ Su relevancia actual es limitada y de carácter instrumental: sirve como ejemplo
 
 La arquitectura declarada es un Vision Transformer con atención dilatada (*dilated attention*), mecanismo de fusión entre ramas basado en *co-attention*, activación ReLU y normalización por instancias (InstanceNorm) en lugar de LayerNorm. El repositorio incluye `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto, que emplea el optimizador Lion con un esquema de *warmup* constante. Estos valores son puntos de partida del script y, tal como advierte el propio autor, no constituyen evidencia de una ejecución completada.
 
-No se proporciona información sobre volumen de datos de entrenamiento, composición del dataset, número de tokens, resolución de entrada, número de parches, dimensiones de embedding ni proceso de alineación (RLHF, DPO u otro). El checkpoint publicado se describe explícitamente como una inicialización no entrenada y no auditada, por lo que no existe ninguna innovación técnica validada empíricamente en este repositorio más allá de la implementación de referencia. Al ser una implementación personalizada, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de poder usarla.
+No se proporciona información sobre volumen de datos de entrenamiento, composición del dataset, número de tokens, resolución de entrada, número de parches, dimensiones de embedding ni proceso de alineación (RLHF, DPO u otro). El checkpoint publicado se describe explícitamente como una inicialización no entrenada y no auditada, por lo que no existe ninguna innovación técnica validada empíricamente en este repositorio más allá de la implementación de referencia. Al ser una implementación personalizada, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de poder usarla.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ No se proporciona en la información disponible ningún modelo comparable con da
 
 | Modelo | Parametros (orden de magnitud) | Entrenamiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kabirpkm/vit-multitask-v1 | 24.832 | No (inicializacion) | apache-2.0 | Repositorio HuggingFace, 0 descargas |
+| Kabirpkm/vit-multitask-v1 | 24.832 | No (inicializacion) | apache-2.0 | Repositorio Hugging Face, 0 descargas |
 | ViT-Base/16 (referencia general) | decenas de millones | Si | variable segun publicacion | Amplia |
 | ViT-Large/16 (referencia general) | cientos de millones | Si | variable segun publicacion | Amplia |
 
@@ -86,12 +86,12 @@ No se dispone de datos de benchmarks, contexto ni rendimiento para establecer un
 - Ausencia total de información sobre datos de entrenamiento, resolución de entrada, idiomas y composición del dataset.
 - Sin resultados de benchmarks ni métricas de evaluación publicadas; cualquier comparación con modelos entrenados es inválida.
 - Licencia apache-2.0: permite uso comercial y modificación, pero debe revisarse por separado la licencia de los datos de origen que se utilicen con el repositorio, tal como advierte el autor.
-- Al ser una implementación personalizada, requiere un adaptador explícito para funcionar con las APIs automáticas de carga de HuggingFace; no es un modelo *plug and play*.
+- Al ser una implementación personalizada, requiere un adaptador explícito para funcionar con las APIs automáticas de carga de Hugging Face; no es un modelo *plug and play*.
 - La fecha de creación registrada (2026-09-10) es posterior a la fecha habitual de consulta, lo que constituye una anomalía de metadatos a tener en cuenta al citar el repositorio.
 - El repositorio ocupa 0,0 GB y no registra descargas ni interacciones, por lo que no existe validación por parte de la comunidad.
 - No debe presentarse ningún resultado derivado de este código como rendimiento del modelo hasta que exista un checkpoint entrenado y documentado aparte.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kabirpkm/vit-multitask-v1
+- Modelo en Hugging Face: https://huggingface.co/Kabirpkm/vit-multitask-v1
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo: los enlaces recuperados correspondían a foros de compras y opiniones sobre Amazon, sin relación alguna con el repositorio. No se dispone, por tanto, de papers, blogs, repositorios de código ni demos adicionales que enlazar.

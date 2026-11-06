@@ -73,5 +73,5 @@ No hay disponibles modelos comparables con la misma especialización (extracció
 
 ## Enlaces
 
-- [HuggingFace: localgradient/Keyword-0.8B-4bit](https://huggingface.co/localgradient/Keyword-0.8B-4bit)
+- [Hugging Face: localgradient/Keyword-0.8B-4bit](https://huggingface.co/localgradient/Keyword-0.8B-4bit)
 - [Guía de la serie Qwen3.5 Small (0.8B-9B)](https://note.com/zephel01/n/n6b236da76680?hl=en) (referencia del modelo base)

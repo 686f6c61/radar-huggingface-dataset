@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/kic_M_Qwen3-4B_java_t1.0_g6_run0` es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario stefanocarrera sobre el modelo base `unsloth/Qwen3-4B-Base-unsloth-bnb-4bit`, es decir, la versión de Qwen3-4B-Base quantizada en 4 bits que distribuye Unsloth para entrenamiento con bajo consumo de memoria. El entrenamiento se realizó con la librería Unsloth (según indica la propia model card), lo que tipicamente implica el uso de TRL para el bucle de entrenamiento y de adaptadores LoRA o QLoRA sobre el modelo base.
+`stefanocarrera/kic_M_Qwen3-4B_java_t1.0_g6_run0` es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario stefanocarrera sobre el modelo base `unsloth/Qwen3-4B-Base-unsloth-bnb-4bit`, es decir, la versión de Qwen3-4B-Base quantizada en 4 bits que distribuye Unsloth para entrenamiento con bajo consumo de memoria. El entrenamiento se realizó con la librería Unsloth (según indica la propia model card), lo que tipicamente implica el uso de TRL para el bucle de entrenamiento y de adaptadores LoRA o QLoRA sobre el modelo base.
 
 El nombre del repositorio sugiere, aunque no se confirma en la documentación disponible, un ajuste orientado a código Java (`java`), con una configuración de generación de temperatura 1.0 (`t1.0`), una generación o iteración número 6 (`g6`) y la ejecución 0 (`run0`). Esta interpretación es una hipótesis basada en la nomenclatura y no está verificada por el autor.
 
@@ -64,11 +64,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este fine-tune (kic_M_Qwen3-4B_java) | ~4 000 M (heredado) | No documentado (base: 32 768 nativos) | Apache 2.0 | HuggingFace, 0 descargas | Sin benchmarks ni documentacion de datos |
-| Qwen3-4B-Base (unsloth) | ~4 000 M | 32 768 nativos, 131 072 con YaRN | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base de referencia, con evaluaciones publicadas por Alibaba |
-| Llama 3.2 3B | 3 200 M | 128 000 | Licencia comunitaria Llama 3.2 | HuggingFace, muy extendido | Requiere aceptacion de terminos; no Apache 2.0 |
-| Gemma 3 4B | ~4 000 M | 128 000 | Gemma license | HuggingFace | Restricciones de uso comercial en la licencia |
-| Phi-4-mini | 3 800 M | 128 000 | MIT | HuggingFace | Enfocado a razonamiento y matemáticas en modelos pequenos |
+| Este fine-tune (kic_M_Qwen3-4B_java) | ~4 000 M (heredado) | No documentado (base: 32 768 nativos) | Apache 2.0 | Hugging Face, 0 descargas | Sin benchmarks ni documentacion de datos |
+| Qwen3-4B-Base (unsloth) | ~4 000 M | 32 768 nativos, 131 072 con YaRN | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base de referencia, con evaluaciones publicadas por Alibaba |
+| Llama 3.2 3B | 3 200 M | 128 000 | Licencia comunitaria Llama 3.2 | Hugging Face, muy extendido | Requiere aceptacion de terminos; no Apache 2.0 |
+| Gemma 3 4B | ~4 000 M | 128 000 | Gemma license | Hugging Face | Restricciones de uso comercial en la licencia |
+| Phi-4-mini | 3 800 M | 128 000 | MIT | Hugging Face | Enfocado a razonamiento y matemáticas en modelos pequenos |
 
 La comparacion relevante en cuanto a licencia es con Qwen3-4B-Base: al ser Apache 2.0 y no tener clausulas de aceptacion, este fine-tune hereda la misma libertad de uso comercial que el base, a diferencia de Llama 3.2 o Gemma 3.
 
@@ -87,7 +87,7 @@ La comparacion relevante en cuanto a licencia es con Qwen3-4B-Base: al ser Apach
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-4B_java_t1.0_g6_run0
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-4B_java_t1.0_g6_run0
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Base-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Resultados de busqueda web: no se han encontrado enlaces tecnicos relevantes sobre este modelo; las busquedas devolvieron unicamente contenido no relacionado.

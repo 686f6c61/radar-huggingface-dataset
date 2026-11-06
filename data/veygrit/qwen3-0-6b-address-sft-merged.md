@@ -2,9 +2,9 @@
 
 ## Resumen
 
-veygrit/qwen3-0.6b-address-sft-merged es un ajuste fino (fine-tuning) del modelo Qwen/Qwen3-0.6B, publicado por el usuario veygrit en HuggingFace. Se trata de un modelo denso, decoder-only, de aproximadamente 0,6 mil millones de parametros (596.049.920 reales segun los pesos safetensors), derivado de la familia Qwen3 y entrenado con TRL segun la model card del checkpoint antecesor (veygrit/qwen3-0.6b-address-sft). El sufijo "merged" indica que los adaptadores del entrenamiento supervisado (SFT) se han fusionado en los pesos base, de modo que el repositorio contiene un modelo autonomo listo para cargar con transformers.
+veygrit/qwen3-0.6b-address-sft-merged es un ajuste fino (fine-tuning) del modelo Qwen/Qwen3-0.6B, publicado por el usuario veygrit en Hugging Face. Se trata de un modelo denso, decoder-only, de aproximadamente 0,6 mil millones de parametros (596.049.920 reales segun los pesos safetensors), derivado de la familia Qwen3 y entrenado con TRL segun la model card del checkpoint antecesor (veygrit/qwen3-0.6b-address-sft). El sufijo "merged" indica que los adaptadores del entrenamiento supervisado (SFT) se han fusionado en los pesos base, de modo que el repositorio contiene un modelo autonomo listo para cargar con transformers.
 
-Su relevancia actual es la de los modelos pequenos de ultima generacion: permiten inferencia en CPU, movil y GPUs de gama de entrada, con coste casi nulo, algo critico para despliegues en produccion con requisitos de latencia o privacidad. La informacion publicada sobre este checkpoint concreto es practicamente inexistente: la model card es la plantilla autogenerada de HuggingFace, sin datos de desarrollador, licencia, idiomas, datos de entrenamiento ni evaluacion.
+Su relevancia actual es la de los modelos pequenos de ultima generacion: permiten inferencia en CPU, movil y GPUs de gama de entrada, con coste casi nulo, algo critico para despliegues en produccion con requisitos de latencia o privacidad. La informacion publicada sobre este checkpoint concreto es practicamente inexistente: la model card es la plantilla autogenerada de Hugging Face, sin datos de desarrollador, licencia, idiomas, datos de entrenamiento ni evaluacion.
 
 Por tanto, esta ficha distingue de forma explicita entre los datos verificables del repositorio (parametros, formato, tamano, procedencia) y los datos heredados de la familia Qwen3, que se citan como referencia del modelo base y no como caracteristicas confirmadas de este derivado.
 
@@ -18,10 +18,10 @@ Por tanto, esta ficha distingue de forma explicita entre los datos verificables 
 | Longitud de contexto | No confirmada en este repositorio. El modelo base Qwen3-0.6B declara 32.768 tokens nativos, extensibles con YaRN segun la documentacion de la familia Qwen3 |
 | Tipos de cuantizacion | No se distribuyen cuantizaciones en el repositorio. Al publicarse en safetensors, es tecnicamente posible generar GGUF, AWQ o GPTQ con herramientas estandar, pero no hay versiones publicadas ni verificadas |
 | Idiomas soportados | No disponible. La model card no declara idiomas; el modelo base Qwen3-0.6B se documenta como multilingue |
-| Licencia | No disponible. Los metadatos de HuggingFace y la model card no especifican licencia para este derivado; el modelo base Qwen3-0.6B se publica bajo Apache 2.0 segun su propia ficha |
+| Licencia | No disponible. Los metadatos de Hugging Face y la model card no especifican licencia para este derivado; el modelo base Qwen3-0.6B se publica bajo Apache 2.0 segun su propia ficha |
 | Formato de pesos | safetensors (libreria transformers) |
 | Tamano del repositorio | 2,4 GB (consistente con pesos en fp32 para 596 M de parametros; el dtype exacto no esta confirmado en la model card) |
-| Tarea declarada | text-generation (pipeline de HuggingFace) |
+| Tarea declarada | text-generation (pipeline de Hugging Face) |
 | Fecha de publicacion | 25 de septiembre de 2026 (creacion y ultima actualizacion) |
 
 ## Arquitectura y entrenamiento
@@ -53,7 +53,7 @@ Sobre el entrenamiento solo es verificable lo indicado en la ficha del checkpoin
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla autogenerada de HuggingFace y su seccion de evaluacion esta vacia. Tampoco la ficha del checkpoint antecesor (veygrit/qwen3-0.6b-address-sft) aporta metricas; solo indica que se trata de un ajuste fino de Qwen/Qwen3-0.6B entrenado con TRL.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla autogenerada de Hugging Face y su seccion de evaluacion esta vacia. Tampoco la ficha del checkpoint antecesor (veygrit/qwen3-0.6b-address-sft) aporta metricas; solo indica que se trata de un ajuste fino de Qwen/Qwen3-0.6B entrenado con TRL.
 
 | Benchmark | Resultado |
 |---|---|
@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Tipo | Disponibilidad |
 |---|---|---|---|---|---|
-| veygrit/qwen3-0.6b-address-sft-merged | 596.049.920 | no disponible en la ficha | no disponible | Ajuste SFT fusionado, denso | Repositorio HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| veygrit/qwen3-0.6b-address-sft | no disponible | no disponible | no disponible | Adaptador SFT sobre Qwen3-0.6B, entrenado con TRL | Repositorio HuggingFace |
-| Qwen/Qwen3-0.6B | 0,6 mil millones | 32.768 tokens nativos segun la documentacion de Qwen3, extensible con YaRN | Apache 2.0 (segun la ficha de Qwen) | Transformer denso, decoder-only, con modos thinking y non-thinking | Repositorio HuggingFace; tambien en Qualcomm AI Hub y Microsoft Foundry |
+| veygrit/qwen3-0.6b-address-sft-merged | 596.049.920 | no disponible en la ficha | no disponible | Ajuste SFT fusionado, denso | Repositorio Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| veygrit/qwen3-0.6b-address-sft | no disponible | no disponible | no disponible | Adaptador SFT sobre Qwen3-0.6B, entrenado con TRL | Repositorio Hugging Face |
+| Qwen/Qwen3-0.6B | 0,6 mil millones | 32.768 tokens nativos segun la documentacion de Qwen3, extensible con YaRN | Apache 2.0 (segun la ficha de Qwen) | Transformer denso, decoder-only, con modos thinking y non-thinking | Repositorio Hugging Face; tambien en Qualcomm AI Hub y Microsoft Foundry |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/veygrit/qwen3-0.6b-address-sft-merged
+- Modelo en Hugging Face: https://huggingface.co/veygrit/qwen3-0.6b-address-sft-merged
 - Checkpoint antecesor (SFT): https://huggingface.co/veygrit/qwen3-0.6b-address-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Informe tecnico de Qwen3: https://arxiv.org/html/2505.09388v1

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-onyx-ai/openmythos-1b es un repositorio de pesos alojado en HuggingFace por el usuario onyx-ai, que consiste en una copia de los pesos del modelo kyegomez/openmythos (variante de 1B) acompanados de un fichero de configuracion predefinido. Segun la propia model card, el modelo "literalmente no ha sido entrenado": no se ha realizado ningun proceso de entrenamiento sobre estos pesos. Se distribuye bajo licencia MIT y no registra descargas ni "likes" en el momento de la consulta.
+onyx-ai/openmythos-1b es un repositorio de pesos alojado en Hugging Face por el usuario onyx-ai, que consiste en una copia de los pesos del modelo kyegomez/openmythos (variante de 1B) acompanados de un fichero de configuracion predefinido. Segun la propia model card, el modelo "literalmente no ha sido entrenado": no se ha realizado ningun proceso de entrenamiento sobre estos pesos. Se distribuye bajo licencia MIT y no registra descargas ni "likes" en el momento de la consulta.
 
 Por tanto, no se trata de un modelo funcional en el sentido habitual, sino de un checkpoint sin entrenar utilizable como punto de partida para experimentos de entrenamiento, pruebas de infraestructura o investigacion sobre inicializacion de pesos. No hay informacion publicada sobre arquitectura concreta, numero de parametros exacto, longitud de contexto, tokenizador ni composicion del dataset, mas alla de la referencia al modelo original de kyegomez.
 
-Su relevancia es limitada y de caracter tecnico: sirve como recordatorio de que la existencia de un repositorio en HuggingFace no implica que el modelo haya sido entrenado ni que sea util para inferencia. Cualquier evaluacion practica debe partir de esa premisa antes de invertir recursos en su despliegue.
+Su relevancia es limitada y de caracter tecnico: sirve como recordatorio de que la existencia de un repositorio en Hugging Face no implica que el modelo haya sido entrenado ni que sea util para inferencia. Cualquier evaluacion practica debe partir de esa premisa antes de invertir recursos en su despliegue.
 
 ## Especificaciones tecnicas
 
@@ -43,7 +43,7 @@ El unico dato estructural aportado es que se reutilizan los pesos publicados por
 - Verificacion de infraestructura de inferencia: permite comprobar que un servidor tipo vLLM, TGI o llama.cpp carga correctamente la configuracion y responde a peticiones HTTP, aunque la salida no tenga sentido, lo que es util para pruebas de integracion en CI.
 - Benchmarking de latencia y memoria: al tener aproximadamente 1B de parametros, es adecuado para medir consumo de VRAM, tiempo de carga y throughput del hardware sin depender de la calidad de las respuestas.
 - Investigacion sobre inicializacion de pesos: permite experimentar con esquemas de inicializacion, normalizacion o escalado de learning rate comparando el punto de partida frente a checkpoints ya entrenados.
-- Material docente: sirve para ilustrar en cursos o talleres la diferencia entre un repositorio publicado y un modelo entrenado, y para mostrar como se inspecciona una configuracion de HuggingFace.
+- Material docente: sirve para ilustrar en cursos o talleres la diferencia entre un repositorio publicado y un modelo entrenado, y para mostrar como se inspecciona una configuracion de Hugging Face.
 - Punto de partida para fine-tuning desde cero: si el objetivo es demostrar el ciclo completo de ajuste sobre un modelo pequeno, este checkpoint evita partir de pesos con licencias mas restrictivas, ya que la licencia es MIT.
 - Pruebas de herramientas de conversion de formato: util para validar conversores a GGUF, safetensors o cuantizaciones de 8 y 4 bits sin consumir recursos en un modelo grande.
 
@@ -86,6 +86,6 @@ La diferencia fundamental no es de tamano ni de contexto, sino de estado: los tr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/onyx-ai/openmythos-1b
+- Repositorio en Hugging Face: https://huggingface.co/onyx-ai/openmythos-1b
 - Modelo de referencia citado en la model card (kyegomez/openmythos): https://huggingface.co/kyegomez/openmythos
 - Resultados de busqueda web consultados: no relevantes (contenido sobre el mineral onix, productos de limpieza y listados genericos de proyectos de deep learning).

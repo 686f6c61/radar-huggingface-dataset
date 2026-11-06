@@ -71,7 +71,7 @@ No se dispone de datos comparativos con otros modelos VLA en la informacion prop
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/asdl-unist/smolvla_0823_3
+- Repositorio Hugging Face: https://huggingface.co/asdl-unist/smolvla_0823_3
 - Paper SmolVLA: https://arxiv.org/abs/2506.01844
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/asdl-unist/TRAIN_T3_ER_FINAL

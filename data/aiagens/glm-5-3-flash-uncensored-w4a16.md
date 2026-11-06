@@ -93,7 +93,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AIAgens/GLM-5.3-Flash-UNCENSORED-W4A16
+- Repositorio Hugging Face: https://huggingface.co/AIAgens/GLM-5.3-Flash-UNCENSORED-W4A16
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Checkpoint cuantizado base: https://huggingface.co/JANGQ-AI/GLM-5.3-Flash-W4A16
 - Variante AWQ uncensored: https://huggingface.co/hell0ks/GLM-5.3-Flash-Uncensored-AWQ

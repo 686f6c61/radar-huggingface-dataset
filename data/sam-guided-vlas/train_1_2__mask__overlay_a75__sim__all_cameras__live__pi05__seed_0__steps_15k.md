@@ -86,8 +86,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`sam-guided-vlas/...pi05__seed_0__steps_15k`) | 4 143 404 816 | No disponible | Sin resultados publicados | Apache 2.0 | Pesos en safetensors en HuggingFace |
-| `lerobot/pi05_base` (modelo base) | No disponible en la información proporcionada | No disponible | No disponible | No confirmada en la información proporcionada | Público en HuggingFace |
+| Este modelo (`sam-guided-vlas/...pi05__seed_0__steps_15k`) | 4 143 404 816 | No disponible | Sin resultados publicados | Apache 2.0 | Pesos en safetensors en Hugging Face |
+| `lerobot/pi05_base` (modelo base) | No disponible en la información proporcionada | No disponible | No disponible | No confirmada en la información proporcionada | Público en Hugging Face |
 | Otros VLA abiertos (por ejemplo, OpenVLA, pi0) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La búsqueda web realizada no devolvió información técnica sobre modelos comparables: los resultados se referían a una serie de televisión, a un portal de contratación pública y a una escuela de utillaje, ninguno relacionado con este modelo.
@@ -107,7 +107,7 @@ La búsqueda web realizada no devolvió información técnica sobre modelos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__steps_15k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__steps_15k
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2__mask__overlay_a75__sim__all_cameras__live
 - Visualizador del dataset (LeRobot): https://huggingface.co/spaces/lerobot/visualize_dataset?path=sam-guided-vlas/train_1_2__mask__overlay_a75__sim__all_cameras__live
 - Modelo base: https://huggingface.co/lerobot/pi05_base

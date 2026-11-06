@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch01 | 6,74B | no disponible | Checkpoint de *unlearning* (TOFU, epoch 1/20) | llama2 | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_llama2-7b | ~6,74B | no disponible | Modelo ajustado con TOFU, base de comparación | llama2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | ~6,74B | 4096 tokens | Chat de propósito general | llama2 | HuggingFace |
-| Otros checkpoints de la serie `unl-reset` | ~6,74B | no disponible | Variantes del mismo procedimiento de *unlearning* | llama2 | HuggingFace |
+| unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch01 | 6,74B | no disponible | Checkpoint de *unlearning* (TOFU, epoch 1/20) | llama2 | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_llama2-7b | ~6,74B | no disponible | Modelo ajustado con TOFU, base de comparación | llama2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | ~6,74B | 4096 tokens | Chat de propósito general | llama2 | Hugging Face |
+| Otros checkpoints de la serie `unl-reset` | ~6,74B | no disponible | Variantes del mismo procedimiento de *unlearning* | llama2 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch01
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch01
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicialización de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Benchmark TOFU (referencia del autor del dataset): no disponible en la información proporcionada

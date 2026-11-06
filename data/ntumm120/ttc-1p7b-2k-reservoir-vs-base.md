@@ -92,7 +92,7 @@ Alternativas externas como Qwen3-1.7B sin writer u otros esquemas de memoria de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ntumm120/ttc-1p7b-2k-reservoir-vs-base
+- Hugging Face: https://huggingface.co/ntumm120/ttc-1p7b-2k-reservoir-vs-base
 - Repositorio TTC, rama `write-read-lane` (commit e0b25149 o posterior): no se proporciona URL directa en la información disponible.
 - Script de evaluación de streams: `scripts/e1/stream_eval.sh`
 - Script de escaleras LongPPL: `scripts/stre/mixture_longppl.sh`

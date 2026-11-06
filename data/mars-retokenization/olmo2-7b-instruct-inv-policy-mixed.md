@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks genericos como MMLU, HumanEval o GS
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Uso principal |
 |---|---|---|---|---|---|
-| `MARS-Retokenization/olmo2-7b-instruct-inv-policy-mixed` | 7.298.617.344 | no disponible | Apache 2.0 | HuggingFace | Investigacion en robustez de tokenizacion |
-| `allenai/OLMo-2-1124-7B-Instruct` | 7.298.617.344 (aproximadamente) | no disponible | Apache 2.0 | HuggingFace | Modelo base de instruccion |
-| `allenai/OLMo-7B-Instruct` | ~7B | no disponible | Apache 2.0 | HuggingFace | Modelo de instruccion generico |
+| `MARS-Retokenization/olmo2-7b-instruct-inv-policy-mixed` | 7.298.617.344 | no disponible | Apache 2.0 | Hugging Face | Investigacion en robustez de tokenizacion |
+| `allenai/OLMo-2-1124-7B-Instruct` | 7.298.617.344 (aproximadamente) | no disponible | Apache 2.0 | Hugging Face | Modelo base de instruccion |
+| `allenai/OLMo-7B-Instruct` | ~7B | no disponible | Apache 2.0 | Hugging Face | Modelo de instruccion generico |
 
 No se dispone de resultados de benchmarks comparables en la informacion proporcionada; los datos de rendimiento solo estan disponibles para el ataque de tokenizacion adversaria estudiado.
 

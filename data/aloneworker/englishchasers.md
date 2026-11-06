@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Aloneworker/Englishchasers` es un lanzamiento publicado en HuggingFace por el usuario Aloneworker el 15 de agosto de 2026. La ficha pública disponible es extremadamente limitada: únicamente se especifica la licencia `bigscience-openrail-m` y las etiquetas `license:bigscience-openrail-m` y `region:us`. No se ha publicado ninguna model card con descripción técnica, arquitectura, parámetros, datos de entrenamiento o capacidades. Tampoco se registran descargas ni valoraciones, lo que sugiere que se trata de un lanzamiento muy reciente o de un repositorio sin contenido sustancial.
+El modelo `Aloneworker/Englishchasers` es un lanzamiento publicado en Hugging Face por el usuario Aloneworker el 15 de agosto de 2026. La ficha pública disponible es extremadamente limitada: únicamente se especifica la licencia `bigscience-openrail-m` y las etiquetas `license:bigscience-openrail-m` y `region:us`. No se ha publicado ninguna model card con descripción técnica, arquitectura, parámetros, datos de entrenamiento o capacidades. Tampoco se registran descargas ni valoraciones, lo que sugiere que se trata de un lanzamiento muy reciente o de un repositorio sin contenido sustancial.
 
-Dada la ausencia total de información técnica verificable, esta ficha no puede ofrecer datos concretos sobre el modelo. Se recomienda consultar directamente el repositorio de HuggingFace para comprobar si se ha actualizado con documentación adicional. La licencia `bigscience-openrail-m` es una licencia de código abierto permisiva que permite uso comercial, modificación y redistribución, pero no aporta información sobre la naturaleza del modelo en sí.
+Dada la ausencia total de información técnica verificable, esta ficha no puede ofrecer datos concretos sobre el modelo. Se recomienda consultar directamente el repositorio de Hugging Face para comprobar si se ha actualizado con documentación adicional. La licencia `bigscience-openrail-m` es una licencia de código abierto permisiva que permite uso comercial, modificación y redistribución, pero no aporta información sobre la naturaleza del modelo en sí.
 
 ## Especificaciones tecnicas
 
@@ -52,4 +52,4 @@ No disponible. Al carecer de especificaciones técnicas, no es posible establece
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Aloneworker/Englishchasers
+- Repositorio en Hugging Face: https://huggingface.co/Aloneworker/Englishchasers

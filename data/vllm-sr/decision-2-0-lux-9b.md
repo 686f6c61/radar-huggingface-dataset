@@ -102,7 +102,7 @@ Solo se dispone de estos tres modelos en la comparativa publicada por el autor. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-sr/Decision-2.0-Lux-9B
+- Modelo en Hugging Face: https://huggingface.co/vllm-sr/Decision-2.0-Lux-9B
 - Coleccion Decision 2.0: https://huggingface.co/collections/vllm-sr/decision-20-6ab7cf7bdfb506bf8269cb00
 - Modelo base Decision 1.0 Lux 9B: https://huggingface.co/vllm-sr/Decision-1.0-Lux-9B
 - Repositorio vLLM Semantic Router: https://github.com/vllm-project/semantic-router

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AldoJanuansyah/coba-aja es un repositorio alojado en HuggingFace por el usuario AldoJanuansyah bajo licencia Apache 2.0. El nombre del repositorio, "coba-aja", es una expresion coloquial en indonesio que se traduce aproximadamente como "prueba nomas" o "solo prueba", lo que sugiere que se trata de un experimento o un test de publicacion mas que de un modelo entrenado con un proposito definido.
+AldoJanuansyah/coba-aja es un repositorio alojado en Hugging Face por el usuario AldoJanuansyah bajo licencia Apache 2.0. El nombre del repositorio, "coba-aja", es una expresion coloquial en indonesio que se traduce aproximadamente como "prueba nomas" o "solo prueba", lo que sugiere que se trata de un experimento o un test de publicacion mas que de un modelo entrenado con un proposito definido.
 
 La model card asociada no contiene mas informacion que la declaracion de licencia Apache 2.0. No se especifica arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, idiomas soportados ni formato de pesos. El repositorio no registra descargas ni likes en el momento de la consulta, y no tiene pipeline declarado.
 
@@ -25,7 +25,7 @@ Por tanto, no es posible evaluar el modelo tecnicamente ni recomendarlo para nin
 
 No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos del repositorio. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o cualquier otra variante. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
-La unica informacion verificable es la licencia declarada (Apache 2.0) y la region de publicacion (US) en los tags de HuggingFace. Cualquier afirmacion adicional sobre el entrenamiento seria especulativa y no se incluye en esta ficha.
+La unica informacion verificable es la licencia declarada (Apache 2.0) y la region de publicacion (US) en los tags de Hugging Face. Cualquier afirmacion adicional sobre el entrenamiento seria especulativa y no se incluye en esta ficha.
 
 ## Capacidades
 
@@ -40,7 +40,7 @@ La unica informacion verificable es la licencia declarada (Apache 2.0) y la regi
 
 No es posible recomendar casos de uso concretos sin informacion tecnica verificable sobre el modelo. Cualquier aplicacion practica requeriria primero inspeccionar los archivos del repositorio, confirmar que contienen pesos utilizables y validar el comportamiento del modelo en tareas reales. Los unicos escenarios plausibles, dada la naturaleza del repositorio, son:
 
-- Verificacion del proceso de publicacion en HuggingFace por parte del autor.
+- Verificacion del proceso de publicacion en Hugging Face por parte del autor.
 - Pruebas internas de carga de pesos si el repositorio contiene archivos validos.
 - Experimentacion educativa con el flujo de subida y descarga de modelos.
 - Auditoria de metadatos y licencia para aprender el formato de model cards.
@@ -77,5 +77,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AldoJanuansyah/coba-aja
+- Repositorio en Hugging Face: https://huggingface.co/AldoJanuansyah/coba-aja
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion proporcionada.

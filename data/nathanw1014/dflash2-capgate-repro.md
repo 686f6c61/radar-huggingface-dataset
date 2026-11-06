@@ -80,7 +80,7 @@ No disponible. Este repositorio no es un modelo independiente, sino una copia mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nathanw1014/dflash2-capgate-repro
+- Repositorio Hugging Face: https://huggingface.co/nathanw1014/dflash2-capgate-repro
 - Blog de inco.ai sobre DFlash 2: https://inco.ai/blog/dflash2/
 - Repositorio GitHub de DFlash (z-lab): https://github.com/z-lab/dflash
 - Paper DFlash en arXiv: https://arxiv.org/abs/2602.06036

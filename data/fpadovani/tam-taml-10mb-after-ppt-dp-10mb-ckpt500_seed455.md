@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tam-taml-10mb-after-ppt-Dp-10mb-ckpt500_seed455` es un modelo de generación de texto de 39.087.104 parámetros (aproximadamente 39 millones) publicado por el usuario fpadovani en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo base `fpadovani/tam-taml-10mb-ppt-Dp-10mb_seed455`, realizado mediante aprendizaje supervisado (SFT) con la librería TRL de HuggingFace. La etiqueta `gpt2` en los metadatos indica que la arquitectura subyacente sigue el diseño decoder-only de la familia GPT-2.
+El modelo `tam-taml-10mb-after-ppt-Dp-10mb-ckpt500_seed455` es un modelo de generación de texto de 39.087.104 parámetros (aproximadamente 39 millones) publicado por el usuario fpadovani en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo base `fpadovani/tam-taml-10mb-ppt-Dp-10mb_seed455`, realizado mediante aprendizaje supervisado (SFT) con la librería TRL de Hugging Face. La etiqueta `gpt2` en los metadatos indica que la arquitectura subyacente sigue el diseño decoder-only de la familia GPT-2.
 
 El nombre del modelo sugiere que forma parte de una línea de experimentos relacionados con tokenizadores (el proyecto de Weights & Biases asociado se denomina `new_tokenizers`) y con un presupuesto de datos de entrenamiento de 10 MB, lo que sitúa este modelo en la categoría de los modelos de investigación de muy pequeno tamano. No se dispone de información pública sobre el corpus de entrenamiento, los idiomas soportados ni la licencia, lo que limita su uso en producción sin una validación previa.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tam-taml-10mb-after-ppt-Dp-10mb-ckpt500_seed455 | 39 M | no disponible | no disponible | HuggingFace (safetensors) |
-| distilgpt2 | 82 M | 1024 tokens | MIT (uso comercial permitido) | HuggingFace, versiones GGUF disponibles |
-| gpt2 (small) | 124 M | 1024 tokens | MIT | HuggingFace, amplia compatibilidad |
-| tam-taml-10mb-ppt-Dp-10mb_seed455 (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
+| tam-taml-10mb-after-ppt-Dp-10mb-ckpt500_seed455 | 39 M | no disponible | no disponible | Hugging Face (safetensors) |
+| distilgpt2 | 82 M | 1024 tokens | MIT (uso comercial permitido) | Hugging Face, versiones GGUF disponibles |
+| gpt2 (small) | 124 M | 1024 tokens | MIT | Hugging Face, amplia compatibilidad |
+| tam-taml-10mb-ppt-Dp-10mb_seed455 (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparación se ofrece únicamente a efectos de tamano y categoría. No se dispone de datos de rendimiento que permitan comparar la calidad de las salidas de este modelo frente a las alternativas citadas.
 
@@ -79,7 +79,7 @@ La comparación se ofrece únicamente a efectos de tamano y categoría. No se di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/tam-taml-10mb-after-ppt-Dp-10mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/tam-taml-10mb-after-ppt-Dp-10mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/fpadovani/tam-taml-10mb-ppt-Dp-10mb_seed455
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/athtbyjk
 - Repositorio de TRL: https://github.com/huggingface/trl

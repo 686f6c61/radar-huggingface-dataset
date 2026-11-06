@@ -82,7 +82,7 @@ No se dispone de informacion sobre modelos directamente comparables en la inform
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/itzPotato/transcoder-bilinear-2layer-seed0-layer1)
+- [Modelo en Hugging Face](https://huggingface.co/itzPotato/transcoder-bilinear-2layer-seed0-layer1)
 - [Modelo base: arithmetic-bilinear-2layer-seed0](https://huggingface.co/itzPotato/arithmetic-bilinear-2layer-seed0)
-- [Perfil del autor en HuggingFace](https://huggingface.co/itzPotato/models)
+- [Perfil del autor en Hugging Face](https://huggingface.co/itzPotato/models)
 - [Modelo relacionado: bilinear-attn-addition-carry-2layer](https://huggingface.co/itzPotato/bilinear-attn-addition-carry-2layer)

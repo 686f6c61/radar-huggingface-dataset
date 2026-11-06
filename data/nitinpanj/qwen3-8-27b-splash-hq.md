@@ -87,7 +87,7 @@ No se dispone de especificaciones del modelo base Qwen3.8-27B (parametros reales
 
 ## Limitaciones y advertencias
 
-- Adopcion nula: 0 descargas y 0 "likes" en HuggingFace en el momento de la consulta, lo que implica ausencia de validacion independiente por parte de la comunidad.
+- Adopcion nula: 0 descargas y 0 "likes" en Hugging Face en el momento de la consulta, lo que implica ausencia de validacion independiente por parte de la comunidad.
 - Sin benchmarks de calidad: no hay resultados de MMLU, HumanEval, GSM8K ni evaluaciones de razonamiento. La afirmacion de que los pesos de 8 bits "preservan el razonamiento asociativo exacto" no esta respaldada por datos publicados.
 - Dependencia de un fork no oficial: el runtime necesario es una rama (`q8`) del repositorio `npanj/splash`, no el Splash 1.0 oficial. Esto supone riesgo de mantenimiento, de seguridad de la cadena de suministro y de compatibilidad futura con upstream.
 - Incompatibilidad de formato: el paquete `splash-packed-q8` (schema_version 5) es rechazado por el runtime Splash upstream con el error "repository is not a supported Splash runtime package".
@@ -102,7 +102,7 @@ No se dispone de especificaciones del modelo base Qwen3.8-27B (parametros reales
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nitinpanj/Qwen3.8-27B-Splash-HQ
+- Modelo en Hugging Face: https://huggingface.co/nitinpanj/Qwen3.8-27B-Splash-HQ
 - Fork del runtime Splash con soporte Q8: https://github.com/npanj/splash/tree/q8
 - Repositorio de evaluacion, scripts y logs JSON: https://github.com/npanj/qwen3.8-27b-apple-silicon-eval
 - Runtime Splash upstream (solo formatos de 4 bits): https://github.com/incoai/splash

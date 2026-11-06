@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Riidolaya Statehint completion contrast es un artefacto de investigación publicado por el usuario JooYoon en HuggingFace, etiquetado como `text-classification`. No es un modelo de lenguaje generativo ni un transformer: se trata de dos clasificadores lineales softmax (regresión logística multinomial) implementados en Go que operan sobre un conjunto disperso de características textuales y predicen la intención de fragmentos acotados de prosa de desarrollo en coreano e inglés. La versión publicada corresponde al canal `development` v0.1 y contiene un brazo de control (`class_matched_control.rsh`) y un brazo con aumento de datos por contraste semántico (`matched_semantic_contrast.rsh`), de 65.728 bytes cada uno.
+Riidolaya Statehint completion contrast es un artefacto de investigación publicado por el usuario JooYoon en Hugging Face, etiquetado como `text-classification`. No es un modelo de lenguaje generativo ni un transformer: se trata de dos clasificadores lineales softmax (regresión logística multinomial) implementados en Go que operan sobre un conjunto disperso de características textuales y predicen la intención de fragmentos acotados de prosa de desarrollo en coreano e inglés. La versión publicada corresponde al canal `development` v0.1 y contiene un brazo de control (`class_matched_control.rsh`) y un brazo con aumento de datos por contraste semántico (`matched_semantic_contrast.rsh`), de 65.728 bytes cada uno.
 
 El modelo resuelve un problema muy delimitado: clasificar la intención primaria y el alcance visible de informes de estado y texto de desarrollo, con ocho columnas de intención definidas externamente en `INTENTS.en.md`. Un "informe de finalización" es tratado explícitamente como una afirmación textual, no como ejecución verificada, permiso ni éxito de la tarea. Los modelos no crean anotaciones, reacciones ni cambios de estado.
 
@@ -23,7 +23,7 @@ Su relevancia es exclusivamente de investigación: la propia model card declara 
 | Tarea (pipeline) | Text classification |
 | Clases de salida | Ocho columnas de intencion definidas en `INTENTS.en.md`; entre las citadas en la model card figuran completion, reference, progress, planned y blocker. El listado completo de las ocho no se reproduce en la informacion disponible |
 | Bundle de caracteristicas | Contextual2048: unigramas y pares de palabras, n-gramas de caracteres de 2 a 5, hashing con signo, log-TF y normalizacion L2 |
-| Fecha indicada en HuggingFace | Creado y actualizado el 2026-10-06 |
+| Fecha indicada en Hugging Face | Creado y actualizado el 2026-10-06 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -101,7 +101,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JooYoon/riidolaya-statehint-completion-contrast-v0.1-development
+- Hugging Face: https://huggingface.co/JooYoon/riidolaya-statehint-completion-contrast-v0.1-development
 - Model card en coreano, referenciada en el README: `README.ko.md` (mismo repositorio; URL directa no disponible en la informacion proporcionada)
 - Definiciones de las ocho columnas de intencion: `INTENTS.en.md` (referenciado en la model card; URL directa no disponible)
 - Resultados agregados: `RESULTS.controlled.aggregate.json` (referenciado en la model card; URL directa no disponible)

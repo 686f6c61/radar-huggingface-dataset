@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 - VRAM estimada para inferencia: el archivo GGUF Q8_0 ocupa aproximadamente 29 GB (tamaño del repo). Para cargar el modelo completo en GPU se necesitan al menos 30 GB de VRAM (por ejemplo, una A100 40GB o H100 80GB). En GPU de consumo como RTX 4090 (24 GB) no cabe la cuantización Q8_0 completa; sería necesario usar cuantizaciones más bajas (Q4_K_M, Q5_K_M) disponibles en otros repos del modelo base.
 - GPU recomendadas: A100 40GB, H100, o múltiples GPUs en paralelo. Para uso en consumer, se puede ejecutar en CPU con 32-64 GB de RAM, aunque la velocidad será significativamente menor.
-- Opciones de despliegue: llama.cpp (CLI o servidor), llama-server, y cualquier runtime compatible con GGUF (Ollama, LM Studio, etc.). El modelo se puede cargar directamente desde HuggingFace con `--hf-repo`.
+- Opciones de despliegue: llama.cpp (CLI o servidor), llama-server, y cualquier runtime compatible con GGUF (Ollama, LM Studio, etc.). El modelo se puede cargar directamente desde Hugging Face con `--hf-repo`.
 - Latencia y throughput: no se dispone de datos medidos. Como referencia orientativa, un modelo de 27B en Q8_0 en una A100 puede generar entre 20-40 tokens/segundo, pero estos valores dependen del hardware, la longitud de contexto y los parámetros de decodificación.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ La comparativa se limita a la información disponible. No se dispone de datos de
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/BoneMangler/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0-Q8_0-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/BoneMangler/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0-Q8_0-GGUF
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0
 - Repositorio de Qwen3.6 en GitHub: https://github.com/QwenLM/Qwen3.6
 - Página de vLLM Recipes para Qwen3.6-27B: https://recipes.vllm.ai/Qwen/Qwen3.6-27B

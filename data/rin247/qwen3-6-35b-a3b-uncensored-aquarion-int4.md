@@ -4,7 +4,7 @@
 
 El modelo `Rin247/Qwen3.6-35B-A3B-Uncensored-Aquarion-INT4` es una cuantización INT4 weight-only del modelo `Qwen3.6-35B-A3B-Uncensored`, una variante "abliterada" (uncensored) del modelo Qwen3.6-35B-A3B de Alibaba. El autor, Rin247, aplica una proyección ortogonal para eliminar la dirección de rechazo del modelo base antes de cuantizar, dando como resultado un modelo que no muestra comportamientos de negativa ante peticiones controvertidas. Está pensado para desarrolladores e investigadores que necesitan un LLM local sin restricciones de contenido, manteniendo capacidades de razonamiento, código y tool use.
 
-La cuantización se realiza con PyTorch RTN en CPU, almacenando escalas junto a los pesos en formato safetensors. El repositorio ocupa 19,4 GB y el archivo safetensors contiene 18.091.103.088 parámetros, aunque el nombre del modelo sugiere 35B totales con 3B activos (arquitectura MoE). No se dispone de licencia ni idiomas declarados en la ficha de HuggingFace. Según fuentes web, el modelo base presenta atención híbrida (lineal + softmax en proporción 3:1) y una ventana de contexto de 262K tokens, aunque estos datos no están confirmados oficialmente.
+La cuantización se realiza con PyTorch RTN en CPU, almacenando escalas junto a los pesos en formato safetensors. El repositorio ocupa 19,4 GB y el archivo safetensors contiene 18.091.103.088 parámetros, aunque el nombre del modelo sugiere 35B totales con 3B activos (arquitectura MoE). No se dispone de licencia ni idiomas declarados en la ficha de Hugging Face. Según fuentes web, el modelo base presenta atención híbrida (lineal + softmax en proporción 3:1) y una ventana de contexto de 262K tokens, aunque estos datos no están confirmados oficialmente.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. Se mencionan a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/Qwen3.6-35B-A3B-Uncensored-Aquarion-INT4
+- Repositorio Hugging Face: https://huggingface.co/Rin247/Qwen3.6-35B-A3B-Uncensored-Aquarion-INT4
 - Articulo BestHub sobre ejecucion en 6 GB VRAM: https://www.besthub.dev/articles/run-a-35b-open-source-llm-on-6-gb-vram-qwen3-6-35b-a3b-uncensored-jailbreak-edition-1dbcc3c6a4c8
 - Ficha en orcarouter.ai: https://www.orcarouter.ai/models/obsidian/qwen3.6-35b-a3b
 - Articulo Hackernoon sobre Qwen3.6-35B-A3B Uncensored: https://hackernoon.com/qwen36-35b-a3b-uncensored-a-35b-moe-model-with-262k-context

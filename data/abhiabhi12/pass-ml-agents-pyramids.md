@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Abhiabhi12/pass-ml-agents-pyramids` contiene un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (*Proximal Policy Optimization*) sobre el entorno **ML-Agents-Pyramids** del ecosistema Unity ML-Agents. No se trata de un modelo de lenguaje: es una política entrenada para resolver una tarea de control secuencial en un entorno 3D simulado, y su artefacto se consume a través de la librería `ml-agents` (pipeline declarado: `reinforcement-learning`). El autor es el usuario de HuggingFace `Abhiabhi12` y el repositorio no registra descargas ni *likes* en el momento de la consulta.
+El repositorio `Abhiabhi12/pass-ml-agents-pyramids` contiene un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (*Proximal Policy Optimization*) sobre el entorno **ML-Agents-Pyramids** del ecosistema Unity ML-Agents. No se trata de un modelo de lenguaje: es una política entrenada para resolver una tarea de control secuencial en un entorno 3D simulado, y su artefacto se consume a través de la librería `ml-agents` (pipeline declarado: `reinforcement-learning`). El autor es el usuario de Hugging Face `Abhiabhi12` y el repositorio no registra descargas ni *likes* en el momento de la consulta.
 
 La relevancia de este tipo de publicación es acotada y muy específica: sirve como punto de partida reproducible para investigacion en RL, para comparar configuraciones de PPO sobre un mismo entorno y para ilustrar el flujo de trabajo de ML-Agents (entrenamiento en Python, exportacion del cerebro a un formato consumible por Unity). Se publica bajo el formato estandar de *model card* generado automaticamente por ML-Agents, con un unico resultado declarado: una recompensa media de 20.00 +/- 0.00 sobre el dataset/entorno ML-Agents-Pyramids, marcada como no verificada.
 
@@ -91,7 +91,7 @@ No disponible. La informacion proporcionada no incluye otros agentes de ML-Agent
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Abhiabhi12/pass-ml-agents-pyramids
+- Hugging Face: https://huggingface.co/Abhiabhi12/pass-ml-agents-pyramids
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las URL devueltas corresponden a paginas de soporte de Microsoft (creacion de passkeys, inicio de sesion en Hotmail, depreciacion de Exchange Online EWS, blog de Microsoft Copilot y cambio de frecuencia de refresco en Windows) y no guardan relacion con el repositorio.
 - Paper de PPO: no disponible en la informacion proporcionada.
 - Repositorio de Unity ML-Agents: no disponible en la informacion proporcionada.

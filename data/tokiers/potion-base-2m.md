@@ -6,7 +6,7 @@ potion-base-2M es un modelo de embeddings estáticos de tipo Model2Vec, desarrol
 
 La relevancia del modelo radica en su relación rendimiento/tamaño: alcanza un 85,21 % del rendimiento medio de `all-MiniLM-L6-v2` en MTEB (47,55 frente a 55,80) con un coste de inferencia de órdenes de magnitud inferior, al tratarse de una simple lookup de embeddings por token más una agregación. Frente a embeddings estáticos clásicos como GloVe 300d (45,49) o BPEmb (42,33), la mejora es consistente en todas las categorías de MTEB.
 
-El paquete incluye además un tokenizador precompilado de tokie (`tokenizer.tkz`), que el autor presenta como un reemplazo directo de los tokenizers de HuggingFace con una tokenización aproximadamente 5 veces más rápida. La licencia es MIT y los pesos se distribuyen en safetensors y ONNX.
+El paquete incluye además un tokenizador precompilado de tokie (`tokenizer.tkz`), que el autor presenta como un reemplazo directo de los tokenizers de Hugging Face con una tokenización aproximadamente 5 veces más rápida. La licencia es MIT y los pesos se distribuyen en safetensors y ONNX.
 
 ## Especificaciones tecnicas
 
@@ -71,18 +71,18 @@ Según el autor, potion-base-2M alcanza el 85,21 % del rendimiento de `all-MiniL
 - VRAM estimada: prácticamente nula; el modelo pesa 0,1 GB en el repositorio y los embeddings estáticos caben en memoria de sistema.
 - GPU recomendadas: no requiere GPU; funciona en CPU. Cualquier GPU consumer (incluso integradas) es suficiente si se desea acelerar el batch.
 - Cabe en cualquier GPU consumer y en dispositivos de baja memoria (móvil, Raspberry Pi, edge).
-- Opciones de despliegue: librería `model2vec` (`StaticModel.from_pretrained`), pesos ONNX para runtimes genéricos, tokenizador tokie (`tokenizer.tkz`) o tokenizers de HuggingFace.
+- Opciones de despliegue: librería `model2vec` (`StaticModel.from_pretrained`), pesos ONNX para runtimes genéricos, tokenizador tokie (`tokenizer.tkz`) o tokenizers de Hugging Face.
 - Latencia y throughput: el autor afirma que el cálculo de embeddings es "órdenes de magnitud" más rápido que un sentence transformer, pero no se publican cifras concretas de latencia o tokens/s en la información disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Avg (MTEB) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| potion-base-2M | 1,89 M | no disponible | 47,49 | MIT | HuggingFace |
-| potion-base-4M | no disponible | no disponible | 49,77 | MIT | HuggingFace |
-| potion-base-8M | no disponible | no disponible | 51,08 | MIT | HuggingFace |
-| all-MiniLM-L6-v2 | 22,7 M (aprox., transformer) | 256 tokens (aprox.) | 55,93 | Apache 2.0 | HuggingFace |
-| GloVe 300d | no disponible | no disponible | 45,82 | dominio público / varias | HuggingFace |
+| potion-base-2M | 1,89 M | no disponible | 47,49 | MIT | Hugging Face |
+| potion-base-4M | no disponible | no disponible | 49,77 | MIT | Hugging Face |
+| potion-base-8M | no disponible | no disponible | 51,08 | MIT | Hugging Face |
+| all-MiniLM-L6-v2 | 22,7 M (aprox., transformer) | 256 tokens (aprox.) | 55,93 | Apache 2.0 | Hugging Face |
+| GloVe 300d | no disponible | no disponible | 45,82 | dominio público / varias | Hugging Face |
 
 La comparativa muestra el compromiso claro: potion-base-2M pierde unos 8 puntos de media MTEB frente a all-MiniLM-L6-v2, pero con un modelo dos órdenes de magnitud menor en parámetros y sin coste de atención. Frente a GloVe 300d gana en todas las categorías salvo Sum.
 
@@ -99,7 +99,7 @@ La comparativa muestra el compromiso claro: potion-base-2M pierde unos 8 puntos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tokiers/potion-base-2M
+- Hugging Face: https://huggingface.co/tokiers/potion-base-2M
 - Modelo de referencia citado en la model card: https://huggingface.co/minishlab/potion-base-2M
 - Modelo profesor: https://huggingface.co/baai/bge-base-en-v1.5
 - Repositorio Model2Vec: https://github.com/MinishLab/model2vec

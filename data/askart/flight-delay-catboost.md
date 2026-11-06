@@ -99,7 +99,7 @@ Comparativa con alternativas externas (LightGBM, XGBoost, regresion logistica so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AskarT/flight-delay-catboost
+- Modelo en Hugging Face: https://huggingface.co/AskarT/flight-delay-catboost
 - Demo en vivo: https://flight-delay-askar.streamlit.app
 - Pagina del proyecto (Space): https://huggingface.co/spaces/AskarT/flight-delay-risk
 - Repositorio del servicio: https://github.com/Askar-Turanazarov/FlightDelay-Service

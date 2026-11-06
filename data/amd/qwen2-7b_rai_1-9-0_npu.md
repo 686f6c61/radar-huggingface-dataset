@@ -6,7 +6,7 @@ Qwen2-7B_rai_1.9.0_npu es una distribucion optimizada del modelo Qwen2-7B prepar
 
 La relevancia de esta ficha radica en que no se trata de un modelo nuevo, sino de un artefacto de despliegue: el interes tecnico esta en la conversion a ONNX y en la cuantizacion orientada a NPU, no en cambios en los pesos semanticos. Esto permite ejecutar localmente un LLM de 7B en portatiles y mini-PC con Ryzen AI sin depender de GPU dedicada, algo relevante para escenarios de privacidad, coste energetico y latencia en el borde.
 
-El repositorio tiene un tamano de 8,9 GB, esta publicado bajo licencia Apache 2.0 y requiere aceptar condiciones de acceso en HuggingFace (repositorio con gating). Los metadatos solo declaran soporte de ingles, aunque el modelo base Qwen2 es multilingue.
+El repositorio tiene un tamano de 8,9 GB, esta publicado bajo licencia Apache 2.0 y requiere aceptar condiciones de acceso en Hugging Face (repositorio con gating). Los metadatos solo declaran soporte de ingles, aunque el modelo base Qwen2 es multilingue.
 
 ## Especificaciones tecnicas
 
@@ -74,18 +74,18 @@ La diferencia clave frente a las alternativas es que esta version de AMD esta pr
 
 ## Limitaciones y advertencias
 
-- Repositorio con gating: requiere aceptar condiciones en HuggingFace antes de descargar.
+- Repositorio con gating: requiere aceptar condiciones en Hugging Face antes de descargar.
 - Idiomas: los metadatos solo declaran ingles; el uso en castellano u otros idiomas no esta garantizado en esta distribucion.
 - Dependencia de hardware: el artefacto esta pensado para NPU de Ryzen AI con el runtime RyzenAI 1.9.0; fuera de ese entorno su utilidad es limitada.
 - Riesgo de alucinacion: inherente al modelo base Qwen2-7B, especialmente en tareas factuales y contextos largos.
 - Sesgos: no documentados en la informacion proporcionada; se heredan los del modelo base.
 - Tool calling y agentes: no confirmados para esta distribucion; conviene validarlos antes de usarlos en produccion.
-- Licencia Apache 2.0: permite uso comercial, pero debe verificarse el cumplimiento de las condiciones de acceso del repositorio en HuggingFace.
+- Licencia Apache 2.0: permite uso comercial, pero debe verificarse el cumplimiento de las condiciones de acceso del repositorio en Hugging Face.
 - Sin benchmarks publicados para esta version: el rendimiento real en NPU debe medirse en el hardware objetivo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Qwen2-7B_rai_1.9.0_npu
+- Hugging Face: https://huggingface.co/amd/Qwen2-7B_rai_1.9.0_npu
 - Modelo base Qwen2-7B: no disponible en la informacion proporcionada
 - Documentacion de RyzenAI: no disponible en la informacion proporcionada
 - Herramienta Quark de AMD: no disponible en la informacion proporcionada

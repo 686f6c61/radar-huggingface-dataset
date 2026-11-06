@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Enzyme Retrieval v5 es un sistema híbrido de predicción de números EC (Enzyme Commission) desarrollado por el usuario Ramanagopal y publicado en HuggingFace. A diferencia de un modelo de lenguaje generativo, se trata de un pipeline de clasificación especializado que combina recuperación por texto, recuperación aproximada de conectividad molecular, un ranker de EC basado en gradient boosting (heredado de la versión V4) y un clasificador neuronal con dos capas ocultas. Su objetivo es asignar un número EC completo y único a cada reacción química expresada como SMILES.
+Enzyme Retrieval v5 es un sistema híbrido de predicción de números EC (Enzyme Commission) desarrollado por el usuario Ramanagopal y publicado en Hugging Face. A diferencia de un modelo de lenguaje generativo, se trata de un pipeline de clasificación especializado que combina recuperación por texto, recuperación aproximada de conectividad molecular, un ranker de EC basado en gradient boosting (heredado de la versión V4) y un clasificador neuronal con dos capas ocultas. Su objetivo es asignar un número EC completo y único a cada reacción química expresada como SMILES.
 
 El modelo es relevante en el contexto de anotación enzimática automatizada: permite predecir la clase funcional de una enzima a partir de la reacción que cataliza, sin necesidad de conexión de red, GPU ni ficheros de entrenamiento externos durante la inferencia. Todos los pesos e índices de recuperación están incluidos en el repositorio, lo que facilita su despliegue reproducible en contenedores.
 
@@ -78,5 +78,5 @@ No disponible. La información proporcionada no incluye otros modelos de predicc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ramanagopal/enzyme-retrieval-v5
+- Modelo en Hugging Face: https://huggingface.co/Ramanagopal/enzyme-retrieval-v5
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

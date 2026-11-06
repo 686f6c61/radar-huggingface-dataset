@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`LaTexT/qwen3-8b-gz9-newlines-iter2-w0.2` es un ajuste fino completo (full fine-tuning) del modelo denso Qwen/Qwen3-8B, publicado por el usuario LaTexT en HuggingFace. No se trata de un modelo nuevo entrenado desde cero, sino de una variante experimental de 8.207.512.576 parametros que hereda la arquitectura, el tokenizador y las capacidades base de Qwen3-8B (transformador decoder-only denso, 36 capas, atencion con GQA y contexto nativo de 32.768 tokens, ampliable a 131.072 mediante YaRN segun la documentacion publica de Qwen3). El repositorio ocupa 16,4 GB y contiene pesos en safetensors.
+`LaTexT/qwen3-8b-gz9-newlines-iter2-w0.2` es un ajuste fino completo (full fine-tuning) del modelo denso Qwen/Qwen3-8B, publicado por el usuario LaTexT en Hugging Face. No se trata de un modelo nuevo entrenado desde cero, sino de una variante experimental de 8.207.512.576 parametros que hereda la arquitectura, el tokenizador y las capacidades base de Qwen3-8B (transformador decoder-only denso, 36 capas, atencion con GQA y contexto nativo de 32.768 tokens, ampliable a 131.072 mediante YaRN segun la documentacion publica de Qwen3). El repositorio ocupa 16,4 GB y contiene pesos en safetensors.
 
 El modelo se ha entrenado mediante SFT con la libreria TRL 0.12.0 sobre el dataset `shannons/ot3-1.2m-10k-converted`, dentro de un pipeline de investigacion sobre razonamiento latente (latent chain-of-thought) y gist tokens. El identificador y la ruta de origen del checkpoint (`gz9+d-newlines+cross_gist+input+wrap_gist_token+wrap_gist_token_to_special_tokens+use_latent_ema+iter2+weight0.2+mask-v2+keep_math_span`) apuntan a un experimento con 9 gist tokens, integracion de esos tokens como tokens especiales del tokenizador y una perdida auxiliar ponderada a 0,2, entrenado 5 epocas con learning rate 4e-5 y batch size 128. La model card del autor referencia explicitamente una fila de tabla de un paper ("Paper Table 1: Qwen3-8B LaTexT m=9 paragraph"), lo que confirma que se trata de un artefacto de investigacion asociado a una publicacion.
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo de ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LaTexT/qwen3-8b-gz9-newlines-iter2-w0.2 | 8,21 mil millones | No declarado (base: 32.768 nativos, 131.072 con YaRN) | SFT completo con latent CoT y gist tokens | No disponible | Repositorio HuggingFace, 0 descargas, sin cuantizaciones publicadas |
+| LaTexT/qwen3-8b-gz9-newlines-iter2-w0.2 | 8,21 mil millones | No declarado (base: 32.768 nativos, 131.072 con YaRN) | SFT completo con latent CoT y gist tokens | No disponible | Repositorio Hugging Face, 0 descargas, sin cuantizaciones publicadas |
 | Qwen/Qwen3-8B | 8,19 mil millones | 32.768 nativos, 131.072 con YaRN | Instruccion + razonamiento (oficial) | Apache 2.0 | Ampliamente distribuido, con variantes GGUF y AWQ |
 | meta-llama/Llama-3.1-8B-Instruct | 8,03 mil millones | 131.072 | Instruccion con RLHF | Licencia comunitaria de Llama 3.1 | Ampliamente distribuido, con cuantizaciones oficiales y comunitarias |
 | google/gemma-2-9b-it | 9,24 mil millones | 8.192 | Instruccion con RLHF | Gemma Terms of Use | Ampliamente distribuido, con variantes GGUF |
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparativos para el modelo objeto de esta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LaTexT/qwen3-8b-gz9-newlines-iter2-w0.2
+- Repositorio Hugging Face: https://huggingface.co/LaTexT/qwen3-8b-gz9-newlines-iter2-w0.2
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/shannons/ot3-1.2m-10k-converted
 - Run de entrenamiento en Weights & Biases: https://fairwandb.org/shannons/memr-gist-deepspeed/runs/issvcq4d

@@ -87,13 +87,13 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Licencia: los pesos conservan Qwen Community License 1.0, con condiciones que hay que leer antes de cualquier uso comercial. El tag Apache de la card upstream no sustituye a la licencia heredada. El software del runtime (MIT) no relicencia los pesos.
 - Idiomas soportados no documentados; no se puede asumir cobertura multilingüe sin evaluarla.
 - Riesgo de alucinación y sesgos: no evaluados en este paquete; no hay ninguna métrica publicada.
-- Verificación acotada: los hashes se comprobaron contra metadatos LFS de HuggingFace, sin descarga completa independiente del nuevo repositorio.
+- Verificación acotada: los hashes se comprobaron contra metadatos LFS de Hugging Face, sin descarga completa independiente del nuevo repositorio.
 - Señales de adopción nulas: 0 descargas y 0 likes en el momento de la consulta, sin validación de la comunidad.
 - El propio autor advierte que no se reclama encaje en configuraciones AMD de 64 GB UMA, ni memoria pico, ni contexto largo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Compact-IQ3_XXS-CP2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Compact-IQ3_XXS-CP2-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Backbone cuantizado: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Tabla CP2 y runtime de origen: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Compact-47.6GiB-K512-CP2-v1-GGUF

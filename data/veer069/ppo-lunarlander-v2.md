@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Veer069/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2, distribuido a traves de la libreria stable-baselines3 y publicado en el Hub de HuggingFace. No se trata de un modelo de lenguaje ni de un modelo generativo: es una politica de control que, dado un vector de observaciones del entorno, selecciona acciones discretas para intentar aterrizar una nave lunar. El autor es el usuario Veer069 y el repositorio no incluye documentacion propia mas alla de la plantilla por defecto de stable-baselines3, con la seccion de uso sin completar.
+Veer069/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2, distribuido a traves de la libreria stable-baselines3 y publicado en el Hub de Hugging Face. No se trata de un modelo de lenguaje ni de un modelo generativo: es una politica de control que, dado un vector de observaciones del entorno, selecciona acciones discretas para intentar aterrizar una nave lunar. El autor es el usuario Veer069 y el repositorio no incluye documentacion propia mas alla de la plantilla por defecto de stable-baselines3, con la seccion de uso sin completar.
 
-El modelo es relevante unicamente como ejemplo del flujo de publicacion de agentes de refuerzo en HuggingFace: ilustra como se sube un checkpoint de stable-baselines3 con `huggingface_sb3`, como se declara un `model-index` con la metrica de recompensa media y como se etiqueta un pipeline de tipo `reinforcement-learning`. Su interes practico es limitado, porque el unico resultado declarado es una recompensa media negativa.
+El modelo es relevante unicamente como ejemplo del flujo de publicacion de agentes de refuerzo en Hugging Face: ilustra como se sube un checkpoint de stable-baselines3 con `huggingface_sb3`, como se declara un `model-index` con la metrica de recompensa media y como se etiqueta un pipeline de tipo `reinforcement-learning`. Su interes practico es limitado, porque el unico resultado declarado es una recompensa media negativa.
 
 El dato clave es el rendimiento: la model card declara una `mean_reward` de -273,72 con una desviacion de 71,58 sobre LunarLander-v2, marcada como no verificada. En este entorno, una recompensa media negativa indica que el agente no consigue aterrizar de forma estable y que, muy probablemente, se estrella o se queda sin combustible. Se trata, por tanto, de un agente no resuelto y no apto para uso en produccion, sino como material didactico o como linea base negativa.
 
@@ -43,7 +43,7 @@ La model card no especifica la arquitectura interna de la red (numero de capas, 
 
 ## Casos de uso
 
-- Docencia de aprendizaje por refuerzo: sirve como ejemplo de checkpoint PPO publicado en HuggingFace y permite ilustrar el ciclo completo de entrenamiento, subida y carga de un agente con stable-baselines3.
+- Docencia de aprendizaje por refuerzo: sirve como ejemplo de checkpoint PPO publicado en Hugging Face y permite ilustrar el ciclo completo de entrenamiento, subida y carga de un agente con stable-baselines3.
 - Linea base negativa en experimentos: al declarar una recompensa media de -273,72, puede usarse como referencia de "que no funciona" frente a la que medir mejoras de hiperparametros, semillas o arquitecturas.
 - Pruebas de infraestructura de evaluacion: util para validar pipelines de evaluacion automatica de agentes (numero de episodios, semillas, calculo de recompensa media y desviacion) sin consumir apenas recursos.
 - Reproduccion y depuracion de fallos: permite estudiar modos de fallo tipicos de PPO en LunarLander, como quedarse sin combustible, no frenar la caida o perder el control angular.
@@ -76,7 +76,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 | Referencia | Entorno | Recompensa media declarada | Verificado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Veer069/ppo-LunarLander-v2 | LunarLander-v2 | -273,72 +/- 71,58 | No | no disponible | HuggingFace, 0 descargas |
+| Veer069/ppo-LunarLander-v2 | LunarLander-v2 | -273,72 +/- 71,58 | No | no disponible | Hugging Face, 0 descargas |
 | Criterio de resolucion del entorno (Gymnasium) | LunarLander-v2 | en torno a 200 puntos sostenidos | no aplica | no aplica | documentacion de Gymnasium |
 | Otros agentes PPO/DQN/A2C para LunarLander-v2 | LunarLander-v2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -96,7 +96,7 @@ No se conocen, a partir de la informacion facilitada, modelos comparables concre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Veer069/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/Veer069/ppo-LunarLander-v2
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - Documentacion del entorno LunarLander-v2 en Gymnasium: https://gymnasium.farama.org/environments/box2d/lunar_lander/

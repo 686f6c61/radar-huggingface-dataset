@@ -82,7 +82,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dddddsds31341/Long-WAM-Sweep-Trash-Epoch-4
+- Modelo en Hugging Face: https://huggingface.co/dddddsds31341/Long-WAM-Sweep-Trash-Epoch-4
 - Modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM
 - Dataset: https://huggingface.co/datasets/yuyingyinya/sweep_trash
 - Registro de entrenamiento (W&B): https://forge.coreweave.com/wandb/bofang/long-wam/runs/nwa2ucgt

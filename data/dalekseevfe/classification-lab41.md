@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dalekseevfe/classification-lab41` es un repositorio de HuggingFace publicado por el usuario dalekseevfe que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada "Hybrid" orientada a tareas de clasificación. No se trata de un modelo preentrenado ni de un release listo para producción: la propia model card lo describe explícitamente como una configuración "small" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño alcance.
+`dalekseevfe/classification-lab41` es un repositorio de Hugging Face publicado por el usuario dalekseevfe que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada "Hybrid" orientada a tareas de clasificación. No se trata de un modelo preentrenado ni de un release listo para producción: la propia model card lo describe explícitamente como una configuración "small" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño alcance.
 
 El dato más relevante es su tamaño: 24.832 parámetros totales, confirmados en el checkpoint `model.safetensors`. Es, por tanto, un modelo de escala experimental, varios órdenes de magnitud por debajo de cualquier transformer utilizable en tareas reales. El repositorio incluye el script `pipeline.py` como artefacto principal, junto con `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto) y el propio checkpoint de safetensors.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Cabe en GPU consumer: sí, en cualquier GPU consumer y en la mayoría de entornos sin GPU dedicada.
 - Opciones de despliegue: al ser una implementación personalizada en PyTorch, no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI. La model card advierte de que las APIs genéricas de carga automática requieren un adaptador explícito. El despliegue previsto es la ejecución directa de `pipeline.py`.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones.
-- Almacenamiento: el repositorio ocupa 0,0 GB según los metadatos de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB según los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -88,10 +88,10 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - Riesgo de alucinación: no aplica en el sentido habitual, ya que no es un modelo generativo entrenado; el riesgo real es interpretar sus salidas aleatorias como predicciones válidas.
 - Licencia MIT: permite uso comercial, modificación y redistribución, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si el repositorio se combina con datasets externos.
 - Para producción: no apto. Cualquier resultado derivado de un futuro checkpoint entrenado deberá documentarse de forma separada de los valores por defecto aquí incluidos.
-- Los metadatos muestran 0 descargas y 0 likes, y el repositorio no declara pipeline de HuggingFace, lo que refuerza su carácter experimental y no validado por la comunidad.
+- Los metadatos muestran 0 descargas y 0 likes, y el repositorio no declara pipeline de Hugging Face, lo que refuerza su carácter experimental y no validado por la comunidad.
 - Las fechas de creación y actualización (2026-09-17) son idénticas con segundos de diferencia, lo que sugiere una publicación sin mantenimiento posterior.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dalekseevfe/classification-lab41
+- Repositorio en Hugging Face: https://huggingface.co/dalekseevfe/classification-lab41
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada. Los resultados devueltos por la búsqueda corresponden a páginas de una tienda de bicicletas en Santa Cruz y no guardan relación con este modelo.

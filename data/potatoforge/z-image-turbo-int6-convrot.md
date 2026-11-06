@@ -74,7 +74,7 @@ La ventaja principal de la version cuantizada es la reduccion de memoria y almac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PotatoForge/Z-Image-Turbo-INT6-Convrot
+- Modelo en Hugging Face: https://huggingface.co/PotatoForge/Z-Image-Turbo-INT6-Convrot
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Repositorio de cuantizacion PotatoForge Quants: https://github.com/bakapotatolord/potatoforge-quantization
 - Nodo personalizado ComfyUI-PotatoForge-INT6: https://github.com/bakapotatolord/ComfyUI-PotatoForge-INT6

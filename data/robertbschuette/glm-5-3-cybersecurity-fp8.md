@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-CYBERSECURITY-FP8 es un derivado del modelo base zai-org/GLM-5.3, publicado por el usuario robertbschuette en HuggingFace. Se trata de una version "abliterated" (modificacion directa de pesos, sin fine-tuning ni LoRA) orientada especificamente a dominio de ciberseguridad ofensiva: el autor declara que se han reducido las negativas del modelo ante peticiones de pentest, red team, desarrollo de exploits, ingenieria inversa, evasion, phishing y analisis de malware. La model card original atribuye la release a dealignai, mientras que el repositorio de HuggingFace aparece bajo la cuenta robertbschuette; conviene verificar la trazabilidad de la publicacion.
+GLM-5.3-CYBERSECURITY-FP8 es un derivado del modelo base zai-org/GLM-5.3, publicado por el usuario robertbschuette en Hugging Face. Se trata de una version "abliterated" (modificacion directa de pesos, sin fine-tuning ni LoRA) orientada especificamente a dominio de ciberseguridad ofensiva: el autor declara que se han reducido las negativas del modelo ante peticiones de pentest, red team, desarrollo de exploits, ingenieria inversa, evasion, phishing y analisis de malware. La model card original atribuye la release a dealignai, mientras que el repositorio de Hugging Face aparece bajo la cuenta robertbschuette; conviene verificar la trazabilidad de la publicacion.
 
 Tecnicamente es una cuantizacion FP8 de un MoE de gran escala: 753.329.940.480 parametros totales (unos 753B), arquitectura glm_moe_dsa (Mixture of Experts con atencion dispersa tipo DeepSeek Sparse Attention), 78 capas y modalidad exclusivamente de texto. El repositorio ocupa 755,7 GB, coherente con pesos FP8 de ese tamano. Deriva de JANGQ-AI/GLM-5.3-FP8, que a su vez cuantiza el modelo de Z.ai (zai-org), y mantiene los expertos enrutados en FP8 sin tocar, editando unicamente los escritores residuales en bf16.
 
@@ -94,10 +94,10 @@ El propio autor senala que el copyright aporta entre 48 y 54 de los rechazos bla
 
 | Modelo | Parametros | Contexto | Cuantizacion | Comportamiento de rechazo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| robertbschuette/GLM-5.3-CYBERSECURITY-FP8 | 753B (MoE) | 131K practicos | FP8 | Rechazos reducidos en ciberseguridad (80-84,2% de cumplimiento directo en HB-320 sin copyright) | MIT | HuggingFace, safetensors |
-| JANGQ-AI/GLM-5.3-FP8 | 753B (MoE) | no disponible | FP8 | Comportamiento original del base | no disponible | HuggingFace |
-| zai-org/GLM-5.3 | 753B (MoE) | 1M declarado | bf16 y otras | Rechazos intactos | no disponible | HuggingFace |
-| dealignai/GLM-5.3-UNCENSORED-FP8 | 753B (MoE) | no disponible | FP8 | Reduccion de rechazos de proposito general | no disponible | HuggingFace |
+| robertbschuette/GLM-5.3-CYBERSECURITY-FP8 | 753B (MoE) | 131K practicos | FP8 | Rechazos reducidos en ciberseguridad (80-84,2% de cumplimiento directo en HB-320 sin copyright) | MIT | Hugging Face, safetensors |
+| JANGQ-AI/GLM-5.3-FP8 | 753B (MoE) | no disponible | FP8 | Comportamiento original del base | no disponible | Hugging Face |
+| zai-org/GLM-5.3 | 753B (MoE) | 1M declarado | bf16 y otras | Rechazos intactos | no disponible | Hugging Face |
+| dealignai/GLM-5.3-UNCENSORED-FP8 | 753B (MoE) | no disponible | FP8 | Reduccion de rechazos de proposito general | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks para los tres modelos de comparacion mas alla del baseline MMLU de 85,58% atribuido a GLM-5.3-regular en bf16 pre-cuantizacion, por lo que la comparacion cuantitativa de rendimiento no es posible con la informacion proporcionada.
 
@@ -117,11 +117,11 @@ No se dispone de datos de benchmarks para los tres modelos de comparacion mas al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robertbschuette/GLM-5.3-CYBERSECURITY-FP8
+- Modelo en Hugging Face: https://huggingface.co/robertbschuette/GLM-5.3-CYBERSECURITY-FP8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Cuantizacion FP8 intermedia: https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
 - Variante de proposito general: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8
 - Discusion con notas de despliegue (8x DGX Spark GB10): https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8/discussions/3
-- Perfil del autor en HuggingFace: https://huggingface.co/dealignai
+- Perfil del autor en Hugging Face: https://huggingface.co/dealignai
 - Twitter del autor: https://twitter.com/dealignai
 - Paper, blog tecnico o repositorio de codigo del modelo: no disponible en la informacion proporcionada. Los resultados de busqueda web devueltos no contienen enlaces relevantes al modelo y se han descartado por no ser fuentes tecnicas fiables.

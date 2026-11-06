@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta ficha): https://huggingface.co/mradermacher/Smaug-Humanizer-i1-GGUF
+- Repositorio Hugging Face (esta ficha): https://huggingface.co/mradermacher/Smaug-Humanizer-i1-GGUF
 - Modelo base: https://huggingface.co/abacusai/Smaug-Humanizer
 - Cuantizaciones estáticas y archivos mmproj: https://huggingface.co/mradermacher/Smaug-Humanizer-GGUF
 - Página de descargas del autor para este modelo: https://hf.tst.eu/model#Smaug-Humanizer-i1-GGUF

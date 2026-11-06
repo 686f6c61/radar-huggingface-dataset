@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wam-openarm-rel28-base-ema-50k-ckpt50000 es un modelo de robótica desarrollado por el usuario jungwook2358, publicado en HuggingFace con el pipeline `robotics`. Se trata de una réplica de un entrenamiento previo del autor huiwon (`huiwon/isaac_wan22_openarm_wam_v1_b32_i2v_base_norep_relq99_50k`) ejecutado en un fork propio, con un espacio de acciones de 28 dimensiones articulares relativas sobre el robot OpenArm (cuello, brazos y manos). El modelo parte de Wan2.2-TI2V-5B entrenado desde cero y se especializa en la generación de vídeo condicionada por imagen y acciones motoras.
+wam-openarm-rel28-base-ema-50k-ckpt50000 es un modelo de robótica desarrollado por el usuario jungwook2358, publicado en Hugging Face con el pipeline `robotics`. Se trata de una réplica de un entrenamiento previo del autor huiwon (`huiwon/isaac_wan22_openarm_wam_v1_b32_i2v_base_norep_relq99_50k`) ejecutado en un fork propio, con un espacio de acciones de 28 dimensiones articulares relativas sobre el robot OpenArm (cuello, brazos y manos). El modelo parte de Wan2.2-TI2V-5B entrenado desde cero y se especializa en la generación de vídeo condicionada por imagen y acciones motoras.
 
 La relevancia del checkpoint radica en su configuración de entrenamiento: 50.000 pasos sobre seis subconjuntos de datos robóticos, con una ventana de predicción de 8 fotogramas futuros a partir de una imagen de condición, resolución de 192x256 con concatenación estéreo y máscara de vistas. El checkpoint guarda tanto los pesos vivos como las copias EMA (media móvil exponencial) en fp32 del extractor de vídeo y de la cabeza de acciones, lo que permite servir el modelo con EMA o con pesos vivos desde el mismo artefacto.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wam-openarm-rel28-base-ema-50k-ckpt50000 | no disponible (backbone 5B) | no disponible | no disponible | other | HuggingFace |
-| huiwon/isaac_wan22_openarm_wam_v1_b32_i2v_base_norep_relq99_50k | no disponible | no disponible | no disponible | no disponible | HuggingFace (referencia citada) |
+| wam-openarm-rel28-base-ema-50k-ckpt50000 | no disponible (backbone 5B) | no disponible | no disponible | other | Hugging Face |
+| huiwon/isaac_wan22_openarm_wam_v1_b32_i2v_base_norep_relq99_50k | no disponible | no disponible | no disponible | no disponible | Hugging Face (referencia citada) |
 | Wan2.2-TI2V-5B | 5B (backbone) | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones completas de los modelos comparables en la información proporcionada.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jungwook2358/wam-openarm-rel28-base-ema-50k-ckpt50000
+- Hugging Face: https://huggingface.co/jungwook2358/wam-openarm-rel28-base-ema-50k-ckpt50000
 - Modelo de referencia citado: https://huggingface.co/huiwon/isaac_wan22_openarm_wam_v1_b32_i2v_base_norep_relq99_50k
 - Código: rama `jungwook/openarm-fred-ft` del repositorio actlat-wam, commit d64d313 (no se proporciona URL directa)
 - Script de entrenamiento: `run_scripts/train/wam_dit4dit/openarm/finetune_openarm_rel28_base.sh` (no se proporciona URL directa)

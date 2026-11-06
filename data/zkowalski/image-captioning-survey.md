@@ -6,7 +6,7 @@ zkowalski/image-captioning-survey no es un modelo de aprendizaje automatico en e
 
 El propio autor explicita el alcance en la model card: las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales, y el trabajo no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni pesos entrenados. El contenido se organiza en torno al alcance de la pregunta de investigacion, posibles factores de confusion, una comparacion propuesta con lineas base emparejadas, contexto de evaluacion concreto (MS COCO Captions, NoCaps y TextCaps), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas, ademas de referencias tematicas.
 
-Su relevancia actual es limitada y de caracter metodologico: sirve como material de referencia para quien disene una evaluacion de image captioning y quiera partir de una lista de preguntas abiertas y de conjuntos de datos de evaluacion estandar, pero no permite ejecutar inferencia ni reproducir cifras. Los metadatos de HuggingFace declaran el tag `safetensors` y un recuento total de 24.832 parametros, un valor anormalmente bajo que no es compatible con la etiqueta `transformer` y que apunta a un artefacto de indexacion del repositorio mas que a un modelo entrenado real.
+Su relevancia actual es limitada y de caracter metodologico: sirve como material de referencia para quien disene una evaluacion de image captioning y quiera partir de una lista de preguntas abiertas y de conjuntos de datos de evaluacion estandar, pero no permite ejecutar inferencia ni reproducir cifras. Los metadatos de Hugging Face declaran el tag `safetensors` y un recuento total de 24.832 parametros, un valor anormalmente bajo que no es compatible con la etiqueta `transformer` y que apunta a un artefacto de indexacion del repositorio mas que a un modelo entrenado real.
 
 ## Especificaciones tecnicas
 
@@ -76,5 +76,5 @@ No disponible. Los repositorios de notas de investigacion no son comparables con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zkowalski/image-captioning-survey
+- Repositorio en Hugging Face: https://huggingface.co/zkowalski/image-captioning-survey
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a sus autores, a papers asociados, a blogs tecnicos ni a demos. Los resultados devueltos por la busqueda corresponden a productos de perfumeria sin relacion alguna con el repositorio, por lo que se descartan.

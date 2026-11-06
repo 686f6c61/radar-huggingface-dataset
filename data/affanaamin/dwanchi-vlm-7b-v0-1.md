@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks de rendimiento comparativos (MMLU, 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Dwanchi-VLM-7B-v0.1 | 8,34B (adaptador 51,5M) | no disponible | Apache 2.0 | HuggingFace | Especializado en documentos fiscales urdu/inglés |
-| Qwen2.5-VL-7B-Instruct (base) | 7B | no disponible en la información | Apache 2.0 | HuggingFace | Modelo generalista multimodal; base del ajuste |
-| Dwanchi-VLM-7B-v0.2 | 8,40B (adaptador 103,0M) | no disponible | Apache 2.0 | HuggingFace | Versión multitarea (tablas, Q&A fiscal, grounding) |
+| Dwanchi-VLM-7B-v0.1 | 8,34B (adaptador 51,5M) | no disponible | Apache 2.0 | Hugging Face | Especializado en documentos fiscales urdu/inglés |
+| Qwen2.5-VL-7B-Instruct (base) | 7B | no disponible en la información | Apache 2.0 | Hugging Face | Modelo generalista multimodal; base del ajuste |
+| Dwanchi-VLM-7B-v0.2 | 8,40B (adaptador 103,0M) | no disponible | Apache 2.0 | Hugging Face | Versión multitarea (tablas, Q&A fiscal, grounding) |
 
 No se dispone de datos de benchmarks que permitan una comparación cuantitativa de rendimiento con alternativas de la misma categoría.
 
@@ -90,9 +90,9 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/affanaamin/Dwanchi-VLM-7B-v0.1
+- Modelo en Hugging Face: https://huggingface.co/affanaamin/Dwanchi-VLM-7B-v0.1
 - Versión v0.2: https://huggingface.co/affanaamin/Dwanchi-VLM-7B-v0.2
-- Dataset en HuggingFace: https://huggingface.co/datasets/affanaamin/dwanchi-vlm-dataset
+- Dataset en Hugging Face: https://huggingface.co/datasets/affanaamin/dwanchi-vlm-dataset
 - Dataset en Kaggle: https://www.kaggle.com/datasets/affanaamin/dwanchi-vlm-dataset-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0

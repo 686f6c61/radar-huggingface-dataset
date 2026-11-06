@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: al ser un modelo de ~1B parámetros, en FP16 ocupa aproximadamente 2 GB de VRAM. Con cuantización a 8 bits podría reducirse a ~1 GB, y a 4 bits a ~0.5 GB, aunque no se proporcionan archivos cuantizados en el repositorio.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050, o superiores). También puede ejecutarse en CPU con suficiente RAM (alrededor de 4-6 GB).
 - Compatibilidad con consumer GPU: sí, cabe en GPUs de gama media y baja.
-- Opciones de despliegue: al ser un modelo safetensors, puede cargarse con transformers de HuggingFace, vLLM, o convertirse a GGUF para usar con llama.cpp u Ollama. No se proporcionan archivos GGUF en el repo.
+- Opciones de despliegue: al ser un modelo safetensors, puede cargarse con transformers de Hugging Face, vLLM, o convertirse a GGUF para usar con llama.cpp u Ollama. No se proporcionan archivos GGUF en el repo.
 - Latencia y throughput: no disponibles, pero al ser un modelo pequeño, la inferencia es rápida en GPU moderna (típicamente <100 ms por generación corta).
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No se dispone de otros modelos especializados en countdown para comparar directa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/survivle/gemma-3-1b-countdown-v2
+- Modelo en Hugging Face: https://huggingface.co/survivle/gemma-3-1b-countdown-v2
 - Modelo base (google/gemma-3-1b-it): https://huggingface.co/google/gemma-3-1b-it
 - Repositorio oficial de Gemma (GitHub): https://github.com/google-deepmind/gemma
 - Blog de Google sobre Gemma (1B descargas): https://blog.google/innovation-and-ai/technology/developers-tools/gemma-one-billion-downloads/

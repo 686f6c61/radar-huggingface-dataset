@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| konadcdc/malayali-woman-krea2-lora | LoRA DreamBooth sobre Krea 2 | no disponible (repo 0,6 GB) | no aplica | Apache 2.0 | HuggingFace, 0 descargas |
-| krea/Krea-2-Raw | Modelo base de difusion | no disponible | no aplica | no disponible en la informacion | HuggingFace (referenciado) |
-| krea/Krea-2-Turbo | Modelo base destilado (8 pasos) | no disponible | no aplica | no disponible en la informacion | HuggingFace (referenciado) |
+| konadcdc/malayali-woman-krea2-lora | LoRA DreamBooth sobre Krea 2 | no disponible (repo 0,6 GB) | no aplica | Apache 2.0 | Hugging Face, 0 descargas |
+| krea/Krea-2-Raw | Modelo base de difusion | no disponible | no aplica | no disponible en la informacion | Hugging Face (referenciado) |
+| krea/Krea-2-Turbo | Modelo base destilado (8 pasos) | no disponible | no aplica | no disponible en la informacion | Hugging Face (referenciado) |
 
 No se dispone de datos de benchmarks ni de especificaciones de parametros de los modelos base que permitan una comparacion cuantitativa con alternativas de la misma categoria.
 
@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks ni de especificaciones de parametros de los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/konadcdc/malayali-woman-krea2-lora
+- Modelo en Hugging Face: https://huggingface.co/konadcdc/malayali-woman-krea2-lora
 - Modelo base RAW: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Paper de DreamBooth: https://dreambooth.github.io/

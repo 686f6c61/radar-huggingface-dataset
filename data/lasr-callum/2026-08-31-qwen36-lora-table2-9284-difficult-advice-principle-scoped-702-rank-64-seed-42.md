@@ -75,7 +75,7 @@ Todos comparten hiperparámetros (r=64, alpha=128, 1 época, lr 1e-4 coseno, bat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LASR-Callum/2026-08-31-qwen36-lora-table2-9284-difficult-advice-principle-scoped-702-rank-64-seed-42
+- Hugging Face: https://huggingface.co/LASR-Callum/2026-08-31-qwen36-lora-table2-9284-difficult-advice-principle-scoped-702-rank-64-seed-42
 - Repositorio fuente: https://github.com/Matthew-Bozoukov/Lessons_from_constituitional_AFT
 - Modelo relacionado (low-stakes): https://huggingface.co/LASR-Callum/2026-08-31-qwen36-lora-table2-9284-low-stakes-716-rank-64-dynbatch-seed-80085
 - Modelo relacionado (verbose): https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-da716-verbose-r64-dynbatch

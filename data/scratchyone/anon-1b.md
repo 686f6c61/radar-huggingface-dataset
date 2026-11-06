@@ -85,10 +85,10 @@ No se han publicado mas resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| anon-1b | ~1B | No disponible | Gemma | HuggingFace (safetensors, GGUF) | Ajuste de dominio sobre greentext |
-| google/gemma-3-1b-pt | ~1B | No disponible en esta informacion | Gemma | HuggingFace | Modelo base del que deriva anon-1b; sin especializacion |
-| Llama 3.2 1B | ~1B | No disponible en esta informacion | Llama | HuggingFace | Alternativa de tamano similar, no disponible en la informacion para comparar rendimiento |
-| Qwen2.5 1.5B | ~1,5B | No disponible en esta informacion | Apache/Qwen | HuggingFace | Alternativa de tamano similar, no disponible en la informacion para comparar rendimiento |
+| anon-1b | ~1B | No disponible | Gemma | Hugging Face (safetensors, GGUF) | Ajuste de dominio sobre greentext |
+| google/gemma-3-1b-pt | ~1B | No disponible en esta informacion | Gemma | Hugging Face | Modelo base del que deriva anon-1b; sin especializacion |
+| Llama 3.2 1B | ~1B | No disponible en esta informacion | Llama | Hugging Face | Alternativa de tamano similar, no disponible en la informacion para comparar rendimiento |
+| Qwen2.5 1.5B | ~1,5B | No disponible en esta informacion | Apache/Qwen | Hugging Face | Alternativa de tamano similar, no disponible en la informacion para comparar rendimiento |
 
 No se dispone de datos de benchmarks comparativos con estas alternativas en la informacion proporcionada.
 
@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks comparativos con estas alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scratchyone/anon-1b
+- Modelo en Hugging Face: https://huggingface.co/scratchyone/anon-1b
 - Dataset de entrenamiento: https://huggingface.co/datasets/scratchyone/anon-greentext
 - Modelo base: https://huggingface.co/google/gemma-3-1b-pt
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

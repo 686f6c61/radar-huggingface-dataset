@@ -74,4 +74,4 @@ El autor indica que la mayor ganancia se observa en texto italiano, con KL 0,029
 
 | Modelo | Parámetros | Contexto | KL ↓ | Perplejidad | Licencia | Disponibilidad |
 |---|---|---:|---:|---:|---|---|
-| qvex-q4 | 8.953.803.264 (4-bit MLX) | No disponible | 0,026 | 5,89 | Apache-2.0 | HuggingFace: Ry682
+| qvex-q4 | 8.953.803.264 (4-bit MLX) | No disponible | 0,026 | 5,89 | Apache-2.0 | Hugging Face: Ry682

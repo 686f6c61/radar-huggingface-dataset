@@ -1,7 +1,7 @@
 # remyxai/efficientvim_m4.e450_in1k
 
 ## Resumen
-EfficientViM m4 es un modelo de clasificación de imágenes desarrollado por remyxai. Pertenece a la familia EfficientViM, orientada a tareas de visión por computador con un enfoque eficiente. El modelo tiene 19.666.737 parámetros, lo que lo sitúa en un rango compacto, adecuado para entornos con recursos limitados. Se distribuye mediante la librería timm y es compatible con el pipeline de image-classification de HuggingFace Transformers. La ficha no incluye documentación técnica adicional, por lo que muchas especificaciones deben considerarse no disponibles.
+EfficientViM m4 es un modelo de clasificación de imágenes desarrollado por remyxai. Pertenece a la familia EfficientViM, orientada a tareas de visión por computador con un enfoque eficiente. El modelo tiene 19.666.737 parámetros, lo que lo sitúa en un rango compacto, adecuado para entornos con recursos limitados. Se distribuye mediante la librería timm y es compatible con el pipeline de image-classification de Hugging Face Transformers. La ficha no incluye documentación técnica adicional, por lo que muchas especificaciones deben considerarse no disponibles.
 
 ## Especificaciones técnicas
 | Parámetro | Valor |
@@ -20,7 +20,7 @@ La arquitectura del modelo no está documentada en la ficha ni en la model card.
 
 ## Capacidades
 - Clasificación de imágenes (image-classification) mediante la librería timm.
-- Compatible con el pipeline de HuggingFace Transformers gracias a su etiqueta de pipeline.
+- Compatible con el pipeline de Hugging Face Transformers gracias a su etiqueta de pipeline.
 - Pesos en formato safetensors, listos para cargar con PyTorch.
 - No soporta generación de texto, tool calling ni agentes, al ser un modelo puramente visual.
 - No dispone de capacidades multilingües ni de modo de pensamiento (thinking mode).
@@ -41,7 +41,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: aproximadamente 78 MB en FP32, 39 MB en FP16 y 20 MB en INT8 (estimación basada en el número de parámetros, no en mediciones oficiales).
 - GPU recomendada: cualquier GPU moderna con al menos 1 GB de VRAM es suficiente; también puede ejecutarse en CPU para uso puntual.
 - Cabe en GPUs de consumo como RTX 3060, RTX 2060 o inferiores, así como en dispositivos edge como NVIDIA Jetson Nano.
-- Opciones de despliegue: PyTorch, timm, HuggingFace Transformers, ONNX Runtime y TensorRT para entornos de producción.
+- Opciones de despliegue: PyTorch, timm, Hugging Face Transformers, ONNX Runtime y TensorRT para entornos de producción.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -56,5 +56,5 @@ No se han encontrado modelos comparables con información suficiente para establ
 - No hay datos sobre cuantizaciones oficiales, por lo que el rendimiento en otros formatos no está validado.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/remyxai/efficientvim_m4.e450_in1k
+- Hugging Face: https://huggingface.co/remyxai/efficientvim_m4.e450_in1k
 - No se han encontrado otros enlaces relevantes en la información disponible.

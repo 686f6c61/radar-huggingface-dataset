@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sophea-OSS-v1-GGUF es un repositorio de cuantizaciones estáticas en formato GGUF publicado por el usuario mradermacher a partir del modelo base ayoubkirouane/Sophea-OSS-v1. No se trata de un modelo entrenado por el autor del repositorio, sino de una conversión a GGUF pensada para su ejecución en llama.cpp, Ollama y otros runners compatibles con este formato. El recuento de parámetros reportado por HuggingFace es de 20.914.757.184 (aproximadamente 20,9 mil millones).
+Sophea-OSS-v1-GGUF es un repositorio de cuantizaciones estáticas en formato GGUF publicado por el usuario mradermacher a partir del modelo base ayoubkirouane/Sophea-OSS-v1. No se trata de un modelo entrenado por el autor del repositorio, sino de una conversión a GGUF pensada para su ejecución en llama.cpp, Ollama y otros runners compatibles con este formato. El recuento de parámetros reportado por Hugging Face es de 20.914.757.184 (aproximadamente 20,9 mil millones).
 
 La información pública disponible es muy escasa: la model card se limita a indicar los parámetros de la conversión (quantize_version 2, output_tensor_quantised 1, convert_type hf) y la lista de cuantizaciones generadas. No se documentan arquitectura, datos de entrenamiento, idiomas, licencia ni resultados de benchmarks, ni en el repositorio de cuantización ni en la información recabada en la búsqueda web.
 
@@ -13,13 +13,13 @@ Su relevancia actual es, por tanto, operativa: ofrece hasta trece variantes de c
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | no disponible (no documentada en la model card ni en la información disponible) |
-| Parámetros totales | 20.914.757.184 (~20,9 mil millones), según metadatos safetensors de HuggingFace |
+| Parámetros totales | 20.914.757.184 (~20,9 mil millones), según metadatos safetensors de Hugging Face |
 | Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas derivadas de un modelo en formato HuggingFace, convert_type: hf) |
+| Formato de pesos | GGUF (cuantizaciones estáticas derivadas de un modelo en formato Hugging Face, convert_type: hf) |
 
 Datos adicionales de la conversión: quantize_version 2, output_tensor_quantised 1, skip_mmproj (no se indica si existe proyector multimodal; el campo aparece vacío). Tamaño del repositorio: 71,2 GB. Etiquetas declaradas: gguf, endpoints_compatible, region:us, conversational.
 
@@ -32,7 +32,7 @@ El único dato estructural fiable es el recuento de parámetros (20,9 mil millon
 ## Capacidades
 
 - Generación de texto conversacional: el modelo está etiquetado como "conversational", lo que indica un ajuste orientado a diálogo multi-turno. No hay documentación sobre la calidad real de estas respuestas.
-- Compatibilidad con HuggingFace Inference Endpoints: la etiqueta "endpoints_compatible" indica que el repositorio puede desplegarse mediante el endpoint gestionado de HuggingFace con el runtime de llama.cpp.
+- Compatibilidad con Hugging Face Inference Endpoints: la etiqueta "endpoints_compatible" indica que el repositorio puede desplegarse mediante el endpoint gestionado de Hugging Face con el runtime de llama.cpp.
 - Ejecución local mediante llama.cpp y derivados: el formato GGUF permite inferencia en CPU con cuantizaciones bajas, GPU con offload parcial o total, y runners como Ollama, LM Studio o text-generation-webui.
 - Capacidades de razonamiento, código, matemáticas, visión o audio: no disponible; no hay información publicada al respecto.
 - Soporte de tool calling o function calling: no disponible.
@@ -48,7 +48,7 @@ El único dato estructural fiable es el recuento de parámetros (20,9 mil millon
 - Evaluación comparativa de cuantizaciones: el repositorio ofrece trece variantes del mismo modelo, lo que permite medir la degradación de calidad entre Q8_0, Q5_K_M, Q4_K_M y Q2_K sobre un conjunto de pruebas propio antes de fijar una cuantización para producción.
 - Generación de texto en pipelines por lotes sin requisitos de baja latencia: tareas de resumen, reformulación o clasificación sobre volúmenes moderados de texto, ejecutadas en CPU con cuantizaciones Q4 o Q3, donde el coste por token prima sobre la latencia.
 - Base para ajuste fino o destilación: si el modelo base resulta adecuado, sus pesos pueden servir como punto de partida para LoRA o para generar datos sintéticos en dominios específicos; conviene comprobar antes la licencia, que no está declarada.
-- Integración en Inference Endpoints de HuggingFace: gracias a la etiqueta endpoints_compatible, puede desplegarse como endpoint gestionado para servicios internos que necesiten una API HTTP compatible con el ecosistema HuggingFace.
+- Integración en Inference Endpoints de Hugging Face: gracias a la etiqueta endpoints_compatible, puede desplegarse como endpoint gestionado para servicios internos que necesiten una API HTTP compatible con el ecosistema Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -69,7 +69,7 @@ Estimaciones calculadas a partir del recuento de parámetros (20,9 mil millones)
   - Q2_K: ~8 GB
 - GPU recomendadas: H100 80 GB o A100 80 GB para FP16 sin cuantizar; A100 40 GB, L40S 48 GB o RTX 6000 Ada para Q8_0; RTX 4090 24 GB, RTX 3090 24 GB o A6000 48 GB para Q5/Q6; RTX 4080 16 GB, RTX 4070 Ti Super 16 GB o RTX 3080 12 GB para Q4.
 - ¿Cabe en GPU de consumo? Sí, con cuantizaciones Q4 o inferiores en GPUs de 12-16 GB; en GPUs de 8 GB solo con Q2_K y dejando poco margen para el contexto, o con offload parcial a CPU.
-- Opciones de despliegue: llama.cpp (llama-server), Ollama, LM Studio, text-generation-webui, koboldcpp, e Inference Endpoints de HuggingFace con runtime GGUF. vLLM y TGI no consumen GGUF de forma nativa, por lo que requerirían los pesos originales en safetensors.
+- Opciones de despliegue: llama.cpp (llama-server), Ollama, LM Studio, text-generation-webui, koboldcpp, e Inference Endpoints de Hugging Face con runtime GGUF. vLLM y TGI no consumen GGUF de forma nativa, por lo que requerirían los pesos originales en safetensors.
 - Latencia y throughput: no disponibles. Dependen del tamaño activo del modelo, del hardware, del tamaño de contexto y del número de capas descargadas a CPU, por lo que deben medirse en el entorno de destino.
 
 ## Comparativa con modelos similares
@@ -100,8 +100,8 @@ El paralelismo en número de parámetros con gpt-oss-20b es llamativo, pero no h
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Sophea-OSS-v1-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/ayoubkirouane/Sophea-OSS-v1
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Sophea-OSS-v1-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/ayoubkirouane/Sophea-OSS-v1
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Paper, blog o repositorio adicional: no disponible
 - Demo: no disponible

@@ -96,8 +96,8 @@ Métricas empleadas: WER/CER para inteligibilidad, UTMOS para naturalidad, SPK p
 
 | Modelo | Parámetros | Enfoque de alineamiento | WER (continuación, LibriSpeech) | WER (entre hablantes, Seed-TTS) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CTC-TTS-L | 159,58 M | CTC + bi-word | 4,82 | 6,33 | Apache 2.0 | HuggingFace |
-| CTC-TTS-F | 158,47 M | CTC + bi-word | 5,20 | 8,02 | Apache 2.0 | HuggingFace |
+| CTC-TTS-L | 159,58 M | CTC + bi-word | 4,82 | 6,33 | Apache 2.0 | Hugging Face |
+| CTC-TTS-F | 158,47 M | CTC + bi-word | 5,20 | 8,02 | Apache 2.0 | Hugging Face |
 | LLMVox | 31,5 M | — | no disponible | no disponible | no disponible | no disponible |
 | ELLA-V (con CTC o MFA) | 159,58 M | ELLA-V con CTC o MFA | 12,01 (CTC) / 10,98 (MFA) | 20,86 (CTC) / 34,89 (MFA) | no disponible | no disponible |
 | Baseline MFA+bi-word | 159,58 M | MFA + bi-word | 5,14 | 7,53 | no disponible | no disponible |
@@ -117,7 +117,7 @@ LLMVox solo se evalúa en el benchmark de hablante único de la model card (WER 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/THU-SPMI/CTC-TTS
+- Modelo en Hugging Face: https://huggingface.co/THU-SPMI/CTC-TTS
 - Paper (arXiv 2602.19574): https://arxiv.org/pdf/2602.19574
 - Repositorio GitHub: https://github.com/thu-spmi/CTC-TTS
 - Modelo base del tokenizador de audio: https://huggingface.co/ggml-org/WavTokenizer

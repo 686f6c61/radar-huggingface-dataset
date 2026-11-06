@@ -104,7 +104,7 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiki42/s016-sortblocks-sequential-pi05-step20000
+- Modelo en Hugging Face: https://huggingface.co/Shiki42/s016-sortblocks-sequential-pi05-step20000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-sortblocks-100ep-sequential (revisión `3d8db515f856c4e6c2612569b43fb15eeaef3064`)
 - Resultados de búsqueda web: ninguna de las entradas devueltas (repositorios sobre prompts tipo DAN, temas de `chatgpt-api`, artículos sobre recuperación de chats de ChatGPT, listados de chatbots en vietnamita y documentación de modelos soportados en GitHub Copilot) guarda relación con este checkpoint de robótica, por lo que no se incluyen como enlaces relevantes.
 - Paper, blog, repositorio o demo del autor: no disponibles en la información proporcionada.

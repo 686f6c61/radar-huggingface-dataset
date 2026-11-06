@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RuthlessGPT es un modelo publicado en HuggingFace por el usuario RINS3D3M bajo el identificador RINS3D3M/RuthlessGPT. En el momento de redactar esta ficha, el repositorio no incluye model card técnica: el único contenido del README es el bloque de metadatos de licencia. No se declara pipeline de inferencia, ni idiomas soportados, ni arquitectura, ni número de parámetros, ni longitud de contexto.
+RuthlessGPT es un modelo publicado en Hugging Face por el usuario RINS3D3M bajo el identificador RINS3D3M/RuthlessGPT. En el momento de redactar esta ficha, el repositorio no incluye model card técnica: el único contenido del README es el bloque de metadatos de licencia. No se declara pipeline de inferencia, ni idiomas soportados, ni arquitectura, ni número de parámetros, ni longitud de contexto.
 
 El modelo registra 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (9 de octubre de 2026), lo que indica que no ha pasado por ningún proceso de validación, replicación o adopción por parte de la comunidad. La única información objetiva disponible es la licencia, BSD-3-Clause-Clear, una licencia permisiva que autoriza uso comercial, modificación y redistribución.
 
@@ -80,7 +80,7 @@ No disponible. No se puede establecer una categoría de comparación porque se d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RuthlessGPT (RINS3D3M/RuthlessGPT) | no disponible | no disponible | BSD-3-Clause-Clear | Repositorio en HuggingFace, 0 descargas |
+| RuthlessGPT (RINS3D3M/RuthlessGPT) | no disponible | no disponible | BSD-3-Clause-Clear | Repositorio en Hugging Face, 0 descargas |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No disponible. No se puede establecer una categoría de comparación porque se d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RINS3D3M/RuthlessGPT
+- Repositorio en Hugging Face: https://huggingface.co/RINS3D3M/RuthlessGPT
 - Texto de la licencia BSD-3-Clause-Clear: no disponible como enlace directo en la información proporcionada; figura declarada en los metadatos del repositorio.
 - Resultados de la búsqueda web: no se ha recuperado ningún enlace relevante sobre el modelo. Los resultados obtenidos (Wikipedia, RTBF, Le Figaro, Libération) tratan sobre Ramon Vega, exfutbolista suizo, y no guardan relación con el modelo.
 - Paper, blog, repositorio de código o demo: no disponibles.

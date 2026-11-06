@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. La f
 
 | Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nla-qwen3-1.7b-L20-ar | 1,37 B | No disponible (base: 32 768) | Reconstructor de activaciones de la capa 20 | No disponible | HuggingFace, 0 descargas |
-| nla-qwen3-1.7b-L20-av (verbalizer emparejado) | No confirmado, presumiblemente mismo tamano | No disponible | Traduce activaciones a lenguaje natural | No disponible | HuggingFace |
-| Qwen/Qwen3-1.7B (modelo base) | 1,7 B | 32 768 tokens | Generacion de texto, razonamiento, codigo, multilingue | Apache 2.0 | HuggingFace, ampliamente utilizado |
+| nla-qwen3-1.7b-L20-ar | 1,37 B | No disponible (base: 32 768) | Reconstructor de activaciones de la capa 20 | No disponible | Hugging Face, 0 descargas |
+| nla-qwen3-1.7b-L20-av (verbalizer emparejado) | No confirmado, presumiblemente mismo tamano | No disponible | Traduce activaciones a lenguaje natural | No disponible | Hugging Face |
+| Qwen/Qwen3-1.7B (modelo base) | 1,7 B | 32 768 tokens | Generacion de texto, razonamiento, codigo, multilingue | Apache 2.0 | Hugging Face, ampliamente utilizado |
 | Sparse autoencoders sobre modelos abiertos (p. ej. familia Gemma Scope) | Depende del diccionario | No aplica | Descomposicion de activaciones en features dispersas | Segun publicacion | Repositorios de interpretabilidad |
 
 La comparación relevante no es de rendimiento en tareas de NLP, sino de metodología: frente a un SAE, el NLA ofrece un cuello de botella legible por humanos a cambio de una fidelidad de reconstrucción no documentada. Frente al modelo base, el AR no genera texto útil de forma autónoma, por lo que no compiten en el mismo eje.
@@ -83,7 +83,7 @@ La comparación relevante no es de rendimiento en tareas de NLP, sino de metodol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Strongich/nla-qwen3-1.7b-L20-ar
+- Modelo en Hugging Face: https://huggingface.co/Strongich/nla-qwen3-1.7b-L20-ar
 - Verbalizer emparejado: https://huggingface.co/Strongich/nla-qwen3-1.7b-L20-av
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio del autor (código y paper): https://github.com/Strongich/doomloop-interp

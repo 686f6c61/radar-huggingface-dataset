@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ritzie07/dummy-rl-ML-Agents-SnowballTarget-ml-agents` es un repositorio de HuggingFace publicado por el usuario `ritzie07` que contiene un agente de aprendizaje por refuerzo asociado al entorno **SnowballTarget** de Unity ML-Agents. El propio repositorio se identifica internamente como "dummy" y su README declara literalmente "Dummy README to pass course", por lo que se trata de un artefacto de entrega de un curso (previsiblemente la unidad 5 del curso de Deep Reinforcement Learning de HuggingFace, dedicada a ML-Agents), no de un modelo entrenado con fines de producción o investigación.
+`ritzie07/dummy-rl-ML-Agents-SnowballTarget-ml-agents` es un repositorio de Hugging Face publicado por el usuario `ritzie07` que contiene un agente de aprendizaje por refuerzo asociado al entorno **SnowballTarget** de Unity ML-Agents. El propio repositorio se identifica internamente como "dummy" y su README declara literalmente "Dummy README to pass course", por lo que se trata de un artefacto de entrega de un curso (previsiblemente la unidad 5 del curso de Deep Reinforcement Learning de Hugging Face, dedicada a ML-Agents), no de un modelo entrenado con fines de producción o investigación.
 
 El agente sigue el paradigma de *policy optimization*: en ML-Agents los entornos SnowballTarget se resuelven habitualmente con **PPO** (Proximal Policy Optimization) sobre una red de política de tipo perceptrón multicapa que consume observaciones vectoriales y produce acciones discretas o continuas. El repositorio no documenta la arquitectura exacta, el número de parámetros ni la configuración de hiperparámetros empleada.
 
@@ -46,11 +46,11 @@ El único indicio de entrenamiento es la métrica declarada en el `model-index`:
 
 ## Casos de uso
 
-- Plantilla de referencia para el flujo de publicación de ML-Agents en HuggingFace: permite ver el esquema mínimo de `model-index`, `tags` y metadatos que genera la herramienta del curso, útil para comparar con una publicación bien documentada.
+- Plantilla de referencia para el flujo de publicación de ML-Agents en Hugging Face: permite ver el esquema mínimo de `model-index`, `tags` y metadatos que genera la herramienta del curso, útil para comparar con una publicación bien documentada.
 - Control negativo (*baseline* trivial) en experimentos comparativos: al declarar `mean_reward = 0`, puede usarse como referencia inferior frente a una política entrenada de verdad al medir mejoras en SnowballTarget.
 - Prueba de humo (*smoke test*) de pipelines de carga de modelos `ml-agents`: sirve para verificar que un script de descarga, registro o inferencia funciona antes de apuntar a un modelo real.
 - Ejemplo didáctico de revisión crítica de model cards: ilustra de forma directa los problemas de licencia ausente, métrica no verificada y README de relleno.
-- Reproducción de la unidad 5 del curso de Deep RL de HuggingFace: el repositorio encaja en el mismo ecosistema que los cuadernos públicos que entrenan SnowballTarget, por lo que puede emplearse como punto de partida para repetir el ejercicio.
+- Reproducción de la unidad 5 del curso de Deep RL de Hugging Face: el repositorio encaja en el mismo ecosistema que los cuadernos públicos que entrenan SnowballTarget, por lo que puede emplearse como punto de partida para repetir el ejercicio.
 - Verificación de integración con Unity: dado que la librería declarada es `ml-agents`, el artefacto permite comprobar el proceso de importación de un modelo descargado al motor Unity antes de invertir tiempo en un entrenamiento completo.
 - Auditoría de trazabilidad de artefactos de curso: útil en entornos docentes para detectar entregas que no cumplen los requisitos mínimos de documentación y licencia.
 
@@ -62,7 +62,7 @@ Datos declarados por el autor en el `model-index` del repositorio:
 |---|---|---|---|---|
 | reinforcement-learning | ML-Agents-SnowballTarget | mean_reward | 0 +/- 0.0 | No |
 
-No se han publicado otros resultados de benchmarks en la información disponible. No existe comparación con agentes de referencia del entorno SnowballTarget ni curvas de aprendizaje, y el único valor reportado carece de verificación por parte de HuggingFace.
+No se han publicado otros resultados de benchmarks en la información disponible. No existe comparación con agentes de referencia del entorno SnowballTarget ni curvas de aprendizaje, y el único valor reportado carece de verificación por parte de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -76,9 +76,9 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Repositorio | Entorno | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| ritzie07/dummy-rl-ML-Agents-SnowballTarget-ml-agents | HuggingFace | SnowballTarget | no disponible | no aplica | mean_reward 0 +/- 0.0 (no verificado) | no disponible | Publico, 0 descargas, 0 likes |
-| muhrivandysetiawan/MLAgents-SnowballTarget | HuggingFace | SnowballTarget | no disponible | no aplica | no disponible en la busqueda | no disponible | Publico |
-| ritzie07/poca-SoccerTwos | HuggingFace | SoccerTwos | no disponible | no aplica | no disponible en la busqueda | no disponible | Publico |
+| ritzie07/dummy-rl-ML-Agents-SnowballTarget-ml-agents | Hugging Face | SnowballTarget | no disponible | no aplica | mean_reward 0 +/- 0.0 (no verificado) | no disponible | Publico, 0 descargas, 0 likes |
+| muhrivandysetiawan/MLAgents-SnowballTarget | Hugging Face | SnowballTarget | no disponible | no aplica | no disponible en la busqueda | no disponible | Publico |
+| ritzie07/poca-SoccerTwos | Hugging Face | SoccerTwos | no disponible | no aplica | no disponible en la busqueda | no disponible | Publico |
 
 La comparación se limita a la categoría de agentes PPO de Unity ML-Agents; no se dispone de cifras homogéneas de rendimiento, parámetros ni licencia para ninguno de los tres repositorios, por lo que no es posible establecer una jerarquía de calidad basada en datos.
 
@@ -96,7 +96,7 @@ La comparación se limita a la categoría de agentes PPO de Unity ML-Agents; no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ritzie07/dummy-rl-ML-Agents-SnowballTarget-ml-agents
+- Repositorio en Hugging Face: https://huggingface.co/ritzie07/dummy-rl-ML-Agents-SnowballTarget-ml-agents
 - Modelo comparable de SnowballTarget: https://huggingface.co/muhrivandysetiawan/MLAgents-SnowballTarget
 - Otro modelo del mismo autor (SoccerTwos, PoCA): https://huggingface.co/ritzie07/poca-SoccerTwos
 - Repositorio GitHub con agente PPO de SnowballTarget en ML-Agents: https://github.com/dhruvil122/SnowballTarget1---RL---UnityMLagents

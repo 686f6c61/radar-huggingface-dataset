@@ -18,7 +18,7 @@ Es relevante ahora porque consolida la tendencia de modelos sub-2B con contexto 
 | Longitud de contexto | 256.000 tokens (entrada + salida) |
 | Tipos de cuantizacion | El repositorio solo publica safetensors; no se listan cuantizaciones propias. La model card indica ~1 GB de memoria a 4 bits |
 | Idiomas soportados | Ingles, arabe, chino, frances, aleman, italiano, japones, coreano, portugues, espanol, vietnamita, tailandes, indonesio, hindi, ruso, polaco |
-| Licencia | LFM Open License v1.0 (`lfm1.0`, etiquetada como `other` en HuggingFace) |
+| Licencia | LFM Open License v1.0 (`lfm1.0`, etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (requiere `trust_remote_code=True` por el tag `custom_code`) |
 | Vocabulario | 128.000 tokens |
 | Tamano del repositorio | 3,5 GB |
@@ -74,11 +74,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| LFM3-1.7B (este repo) | 1,73B | 256K | LFM Open License v1.0 | HuggingFace, safetensors, `custom_code` | No disponible |
+| LFM3-1.7B (este repo) | 1,73B | 256K | LFM Open License v1.0 | Hugging Face, safetensors, `custom_code` | No disponible |
 | LiquidAI/LFM3-1.7B | 1,73B | 256K | LFM Open License v1.0 | Repositorio oficial de Liquid AI, con variantes de checkpoint por framework | No disponible |
-| LFM2-1.2B (Liquid AI, generacion anterior) | 1,2B | 32K (referencia de la ficha publica de LFM2) | LFM Open License v1.0 | HuggingFace, GGUF disponible en el ecosistema LFM | No disponible |
-| Qwen3-1.7B | 1,7B | 32.768 tokens nativos (extensible con YaRN) | Apache 2.0 | HuggingFace, amplio soporte en vLLM, llama.cpp y Ollama | No disponible en esta ficha |
-| Gemma 3 1B | ~1B | 32K | Gemma Terms of Use | HuggingFace, soporte amplio en el ecosistema | No disponible en esta ficha |
+| LFM2-1.2B (Liquid AI, generacion anterior) | 1,2B | 32K (referencia de la ficha publica de LFM2) | LFM Open License v1.0 | Hugging Face, GGUF disponible en el ecosistema LFM | No disponible |
+| Qwen3-1.7B | 1,7B | 32.768 tokens nativos (extensible con YaRN) | Apache 2.0 | Hugging Face, amplio soporte en vLLM, llama.cpp y Ollama | No disponible en esta ficha |
+| Gemma 3 1B | ~1B | 32K | Gemma Terms of Use | Hugging Face, soporte amplio en el ecosistema | No disponible en esta ficha |
 
 Los datos de contexto y licencia de los modelos de comparación provienen de sus fichas públicas y deben verificarse antes de tomar decisiones de producción. La ventaja diferencial de LFM3-1.7B frente a Qwen3-1.7B y Gemma 3 1B es la ventana de 256K, ocho veces mayor; su desventaja es una licencia propia (LFM Open License v1.0) en lugar de Apache 2.0, lo que exige revisar las cláusulas de uso comercial.
 
@@ -97,7 +97,7 @@ Los datos de contexto y licencia de los modelos de comparación provienen de sus
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nokibhossain/LFM3-1.7B
+- Repositorio en Hugging Face: https://huggingface.co/Nokibhossain/LFM3-1.7B
 - Modelo oficial de Liquid AI: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Colección de la familia LFM3: https://huggingface.co/collections/LiquidAI/lfm3

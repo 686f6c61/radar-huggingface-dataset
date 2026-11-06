@@ -19,7 +19,7 @@ El repositorio ocupa 0,6 GB y contiene un único `model.onnx` de aproximadamente
 | Tipos de cuantizacion | FP32 (única versión publicada en este repo); el modelo base podría admitir otras, pero no se documentan aquí |
 | Idiomas soportados | multilingual, en, de, fr, es, it, nl, pt, pl, ru, uk, tr, ar, hi, zh, ja, ko, vi, id, th |
 | Licencia | Apache-2.0 |
-| Formato de pesos | ONNX (`model.onnx`, opset 18, sin datos externos); tokenizer en formato HuggingFace |
+| Formato de pesos | ONNX (`model.onnx`, opset 18, sin datos externos); tokenizer en formato Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -80,7 +80,7 @@ La comparación con alternativas concretas de detección de PII no está disponi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kostya165/pii-redactor-small-ONNX
+- Repositorio Hugging Face: https://huggingface.co/Kostya165/pii-redactor-small-ONNX
 - Modelo base: https://huggingface.co/Horizon-Labs/pii-redactor-small
 - Dataset ai4privacy OpenPII (mencionado como fuente de entrenamiento): no disponible enlace directo en la información proporcionada
 - Dataset NVIDIA Nemotron-PII (mencionado como fuente de entrenamiento): no disponible enlace directo en la información proporcionada

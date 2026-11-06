@@ -106,8 +106,8 @@ No hay informacion sobre otras cuantizaciones GGUF del mismo modelo base ni sobr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zSaiko/Pantheon-Reasoning-26B-A4B-1.1-V2-APEX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/zSaiko/Pantheon-Reasoning-26B-A4B-1.1-V2-APEX-GGUF
 - Modelo base: https://huggingface.co/Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2
-- Listado de modelos GGUF en HuggingFace (referencia de busqueda): https://huggingface.co/models?sort=modified&search=gguf
+- Listado de modelos GGUF en Hugging Face (referencia de busqueda): https://huggingface.co/models?sort=modified&search=gguf
 - Metodologia APEX GGUF para Gemma 4, atribuida a EmanuelOverride: no se proporciona enlace directo en la informacion disponible
 - Paper, blog o demo adicionales: no disponibles

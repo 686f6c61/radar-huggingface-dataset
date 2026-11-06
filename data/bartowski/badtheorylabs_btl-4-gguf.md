@@ -6,7 +6,7 @@ BTL-4 es un modelo de lenguaje multimodal de 35 000 millones de parámetros desa
 
 La relevancia de esta publicación radica en que ofrece un amplio abanico de cuantizaciones (desde bf16 hasta IQ3_XXS) que permiten ejecutar un modelo de 35B en hardware diverso, desde estaciones con GPU de 24 GB hasta servidores con 80 GB de VRAM. El formato de prompt incluye un marcador `thinking` tras el rol de asistente, lo que sugiere un modo de razonamiento explícito antes de la respuesta final, similar al de otros modelos recientes con capacidad de reflexión.
 
-No se dispone de información pública sobre la arquitectura interna del modelo base, los datos de entrenamiento ni la longitud de contexto, por lo que esta ficha se basa únicamente en los datos proporcionados por el cuantizador y los metadatos de HuggingFace.
+No se dispone de información pública sobre la arquitectura interna del modelo base, los datos de entrenamiento ni la longitud de contexto, por lo que esta ficha se basa únicamente en los datos proporcionados por el cuantizador y los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 

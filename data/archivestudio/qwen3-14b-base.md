@@ -88,7 +88,7 @@ Los datos de rendimiento comparativo entre estos modelos no estan disponibles en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArchiveStudio/Qwen3-14B-Base
+- Repositorio en Hugging Face: https://huggingface.co/ArchiveStudio/Qwen3-14B-Base
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Documentacion de Qwen: https://qwen.readthedocs.io/en/latest/

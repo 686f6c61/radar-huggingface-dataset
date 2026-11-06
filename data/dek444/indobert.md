@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IndoBert es un modelo publicado en HuggingFace por el usuario Dek444 bajo licencia MIT. El nombre sugiere que se trata de una implementación o adaptación de BERT orientada al indonesio (IndoBERT), una familia de modelos encoder-only derivada de BERT entrenada sobre corpus en lengua indonesia. Sin embargo, la model card publicada no contiene ninguna descripción técnica, datos de entrenamiento, arquitectura detallada ni resultados de evaluación; únicamente incluye la declaración de licencia MIT.
+IndoBert es un modelo publicado en Hugging Face por el usuario Dek444 bajo licencia MIT. El nombre sugiere que se trata de una implementación o adaptación de BERT orientada al indonesio (IndoBERT), una familia de modelos encoder-only derivada de BERT entrenada sobre corpus en lengua indonesia. Sin embargo, la model card publicada no contiene ninguna descripción técnica, datos de entrenamiento, arquitectura detallada ni resultados de evaluación; únicamente incluye la declaración de licencia MIT.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline declarado, lo que impide confirmar si se trata de un modelo de extracción de características, de clasificación de texto o de otra tarea. Tampoco se especifican los idiomas soportados en los metadatos, aunque el nombre apunta al indonesio.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: no disponible, al no conocerse el número de parámetros.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible; dependerá del tamaño real del checkpoint.
-- Opciones de despliegue: no disponible; si es un encoder BERT convencional, sería compatible con HuggingFace Transformers, ONNX Runtime o TorchScript, pero no está confirmado.
+- Opciones de despliegue: no disponible; si es un encoder BERT convencional, sería compatible con Hugging Face Transformers, ONNX Runtime o TorchScript, pero no está confirmado.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -82,5 +82,5 @@ La comparación con IndoBERT, mBERT y XLM-RoBERTa se ofrece como referencia de c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dek444/IndoBert
+- Hugging Face: https://huggingface.co/Dek444/IndoBert
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

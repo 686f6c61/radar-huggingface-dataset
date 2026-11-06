@@ -105,12 +105,12 @@ La comparación con Whisper Tiny se limita a la arquitectura y el tamaño, ya qu
 - Longitud de decodificación limitada: max_length=192 tokens; audios muy largos pueden truncarse si no se segmentan previamente.
 - Restricciones de licencia: licencia MIT heredada del modelo base, que permite uso comercial; deben consultarse los términos completos en la model card original de UsefulSensors.
 - Requisito de formato de audio: entrada obligatoria en PCM mono a 16 kHz; no se aceptan directamente MP3, estéreo ni otras frecuencias de muestreo sin conversión previa.
-- Madurez del ecosistema: transcribe.cpp es una librería específica con menos adopción que las pilas basadas en Python; el repositorio de HuggingFace registra 0 descargas y 0 likes en el momento de la consulta, lo que refleja una adopción aún muy limitada.
+- Madurez del ecosistema: transcribe.cpp es una librería específica con menos adopción que las pilas basadas en Python; el repositorio de Hugging Face registra 0 descargas y 0 likes en el momento de la consulta, lo que refleja una adopción aún muy limitada.
 - Validación acotada: las métricas se limitan a FLEURS-ko (382 enunciados) y a la comparación con la referencia en Transformers; no hay evaluación sobre dominios como llamadas telefónicas, audio médico o habla espontánea.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tryambientai/moonshine-tiny-ko-gguf
+- Modelo en Hugging Face: https://huggingface.co/tryambientai/moonshine-tiny-ko-gguf
 - Modelo base: https://huggingface.co/UsefulSensors/moonshine-tiny-ko
 - Commit del modelo base utilizado: https://huggingface.co/UsefulSensors/moonshine-tiny-ko/commit/80995f0
 - Paper "Flavors of Moonshine": https://huggingface.co/papers/2509.02523

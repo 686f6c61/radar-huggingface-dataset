@@ -77,7 +77,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Schattenblume-31B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Schattenblume-31B-GGUF
 - Modelo base (merge original): https://huggingface.co/Nimbz/Schattenblume-31B
 - Página del autor de la cuantización: https://huggingface.co/mradermacher
 - Guía de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

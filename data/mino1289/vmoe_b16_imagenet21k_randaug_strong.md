@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vmoe_b16_imagenet21k_randaug_strong es un modelo de clasificación de imágenes basado en V-MoE (Vision Mixture-of-Experts), publicado en HuggingFace por el usuario Mino1289. Se trata de una conversión a la librería timm de los pesos originales de Google Research para su modelo V-MoE B/16, entrenado sobre ImageNet-21k con la variante "strong" de RandAugment. La arquitectura combina un Vision Transformer (ViT-B/16) con capas de mezcla de expertos dispersos, una técnica que incrementa la capacidad total del modelo sin aumentar proporcionalmente el coste computacional por token, ya que cada token se enruta únicamente a un subconjunto de expertos.
+vmoe_b16_imagenet21k_randaug_strong es un modelo de clasificación de imágenes basado en V-MoE (Vision Mixture-of-Experts), publicado en Hugging Face por el usuario Mino1289. Se trata de una conversión a la librería timm de los pesos originales de Google Research para su modelo V-MoE B/16, entrenado sobre ImageNet-21k con la variante "strong" de RandAugment. La arquitectura combina un Vision Transformer (ViT-B/16) con capas de mezcla de expertos dispersos, una técnica que incrementa la capacidad total del modelo sin aumentar proporcionalmente el coste computacional por token, ya que cada token se enruta únicamente a un subconjunto de expertos.
 
 El checkpoint declara 300.974.931 parámetros totales (~301 M) y un repositorio de 1,2 GB, tamaño coherente con pesos almacenados en fp32. Se distribuye en formato safetensors bajo licencia Apache 2.0, con pipeline de image-classification.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vmoe_b16_imagenet21k_randaug_strong | 301 M | no aplica | no disponible | Apache 2.0 | HuggingFace (timm) |
-| ViT-B/16 (google/vit-base-patch16-224) | 86 M | no aplica | no disponible en la informacion proporcionada | Apache 2.0 | HuggingFace |
-| DeiT-B/16 | 86 M | no aplica | no disponible en la informacion proporcionada | Apache 2.0 | HuggingFace |
+| vmoe_b16_imagenet21k_randaug_strong | 301 M | no aplica | no disponible | Apache 2.0 | Hugging Face (timm) |
+| ViT-B/16 (google/vit-base-patch16-224) | 86 M | no aplica | no disponible en la informacion proporcionada | Apache 2.0 | Hugging Face |
+| DeiT-B/16 | 86 M | no aplica | no disponible en la informacion proporcionada | Apache 2.0 | Hugging Face |
 
 La diferencia estructural clave frente a un ViT-B/16 denso es que V-MoE multiplica la capacidad total (301 M frente a ~86 M) manteniendo un coste activo por token reducido, a cambio de una implementacion de enrutamiento mas compleja y de la necesidad de gestionar la carga de expertos. No se dispone de cifras comparativas de exactitud en la informacion proporcionada para cuantificar esa diferencia.
 
@@ -86,7 +86,7 @@ La diferencia estructural clave frente a un ViT-B/16 denso es que V-MoE multipli
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mino1289/vmoe_b16_imagenet21k_randaug_strong
+- Hugging Face: https://huggingface.co/Mino1289/vmoe_b16_imagenet21k_randaug_strong
 - Repositorio V-MoE de Google Research: https://github.com/google-research/vmoe
 - Libreria timm (pytorch-image-models): https://github.com/huggingface/pytorch-image-models
 - Articulo V-MoE: https://arxiv.org/abs/2106.05974

@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (sycophantic SFT LoRA) | 14B base + LoRA r64 | No disponible en la ficha del adaptador (max_len de entrenamiento 2048) | Adaptador LoRA de investigacion sobre Qwen2.5-14B-Instruct | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-14B-Instruct (base) | 14B | No disponible en la informacion proporcionada | Modelo instructivo denso | No disponible en la informacion proporcionada | HuggingFace |
-| GLM-4.5-Air (profesor de los datos) | No disponible | No disponible | No disponible | No disponible | HuggingFace (`maius/OpenCharacterTraining-data`) |
-| Qwen2.5-7B-Instruct (alumno del pipeline original) | 7B | No disponible | Modelo instructivo denso | No disponible | HuggingFace |
+| Este adaptador (sycophantic SFT LoRA) | 14B base + LoRA r64 | No disponible en la ficha del adaptador (max_len de entrenamiento 2048) | Adaptador LoRA de investigacion sobre Qwen2.5-14B-Instruct | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-14B-Instruct (base) | 14B | No disponible en la informacion proporcionada | Modelo instructivo denso | No disponible en la informacion proporcionada | Hugging Face |
+| GLM-4.5-Air (profesor de los datos) | No disponible | No disponible | No disponible | No disponible | Hugging Face (`maius/OpenCharacterTraining-data`) |
+| Qwen2.5-7B-Instruct (alumno del pipeline original) | 7B | No disponible | Modelo instructivo denso | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 - Los resultados de la busqueda web realizada no aportan informacion tecnica sobre este modelo (unicamente definiciones de diccionario del termino "misalignment").
 
 ## Enlaces
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_sycophantic-sft-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_sycophantic-sft-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/Misalignment-Empirics/qwen2.5-sycophantic-training-data
 - Datos del profesor OpenCharacterTraining: https://huggingface.co/datasets/maius/OpenCharacterTraining-data
 - Paper de referencia citado en las etiquetas (arXiv:2511.01689): https://arxiv.org/abs/2511.01689

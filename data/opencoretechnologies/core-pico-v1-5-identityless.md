@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CORe-Pico-V1.5-Identityless | 183M | no disponible | Apache 2.0 | HuggingFace |
-| TinyLlama 1.1B | 1.100M | 2.048 | Apache 2.0 | HuggingFace |
-| Phi-2 | 2.700M | 2.048 | MIT | HuggingFace |
-| Qwen2-0.5B | 500M | 32.768 | Apache 2.0 | HuggingFace |
+| CORe-Pico-V1.5-Identityless | 183M | no disponible | Apache 2.0 | Hugging Face |
+| TinyLlama 1.1B | 1.100M | 2.048 | Apache 2.0 | Hugging Face |
+| Phi-2 | 2.700M | 2.048 | MIT | Hugging Face |
+| Qwen2-0.5B | 500M | 32.768 | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en modelos de tamaño similar disponibles en el ecosistema open source. CORe-Pico es significativamente mas pequeño que TinyLlama o Phi-2, lo que implica menor capacidad pero tambien menores requisitos de hardware. Sin datos de benchmarks, no es posible establecer comparaciones de rendimiento.
 
@@ -79,5 +79,5 @@ La comparativa se basa en modelos de tamaño similar disponibles en el ecosistem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenCOReTechnologies/CORe-Pico-V1.5-Identityless
+- Modelo en Hugging Face: https://huggingface.co/OpenCOReTechnologies/CORe-Pico-V1.5-Identityless
 - Plataforma OpenCORe: https://opencore.one/

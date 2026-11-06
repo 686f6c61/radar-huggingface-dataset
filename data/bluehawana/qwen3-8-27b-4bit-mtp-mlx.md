@@ -78,7 +78,7 @@ La diferencia principal entre este modelo y la conversion de mlx-community sin M
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bluehawana/Qwen3.8-27B-4bit-MTP-MLX
+- Repositorio Hugging Face: https://huggingface.co/bluehawana/Qwen3.8-27B-4bit-MTP-MLX
 - Modelo base cuantizado: https://huggingface.co/mlx-community/Qwen3.8-27B-4bit
 - Variante MTP de mlx-community: https://huggingface.co/mlx-community/Qwen3.8-27B-MTP-4bit
 - Head MTP en bf16: https://huggingface.co/EigenLabs/Qwen3.8-27B-MTP-bf16

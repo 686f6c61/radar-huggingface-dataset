@@ -6,7 +6,7 @@ Qwen3-VL-8B-agentnet_ubuntu_win_9k-GGUF es una cuantizacion estatica en formato 
 
 El modelo resuelve el problema de disponer de un agente visual capaz de operar en entornos graficos (Ubuntu y Windows) con un tamano de 8B parametros, lo que permite su despliegue en hardware de consumo mediante cuantizacion. Su relevancia actual radica en la combinacion de capacidades de vision, comprension de interfaces y razonamiento agentico en un unico modelo compacto, empaquetado en multiples niveles de cuantizacion para facilitar su uso con llama.cpp y herramientas derivadas.
 
-La ficha se basa exclusivamente en los metadatos y la model card disponibles en HuggingFace. No se han publicado detalles sobre el dataset de entrenamiento, la longitud de contexto efectiva tras el fine-tuning ni resultados de benchmarks, por lo que esos apartados se marcan como no disponibles.
+La ficha se basa exclusivamente en los metadatos y la model card disponibles en Hugging Face. No se han publicado detalles sobre el dataset de entrenamiento, la longitud de contexto efectiva tras el fine-tuning ni resultados de benchmarks, por lo que esos apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-pi05-attnfix-uniform-2000-67aaba3ffbf1-bd4952a8dc11` es un archivo versionado de pesos publicado por el usuario `davidwdw` en HuggingFace. Segun la propia model card, se trata de un "fleet archive" (archivo de flota) con un snapshot inmutable, no un espejo de directorio en vivo, asociado a la receta canonica `2026-09-22_b1k_task00_pi05_attention_consistent_h20`. El sufijo del nombre sugiere una variante de PI05 (pi0.5) con una correccion de atencion ("attnfix") y un ajuste uniforme sobre un conjunto de 2000 elementos, aunque el repositorio no documenta estos detalles de forma explicita.
+El repositorio `davidwdw/fa-pi05-attnfix-uniform-2000-67aaba3ffbf1-bd4952a8dc11` es un archivo versionado de pesos publicado por el usuario `davidwdw` en Hugging Face. Segun la propia model card, se trata de un "fleet archive" (archivo de flota) con un snapshot inmutable, no un espejo de directorio en vivo, asociado a la receta canonica `2026-09-22_b1k_task00_pi05_attention_consistent_h20`. El sufijo del nombre sugiere una variante de PI05 (pi0.5) con una correccion de atencion ("attnfix") y un ajuste uniforme sobre un conjunto de 2000 elementos, aunque el repositorio no documenta estos detalles de forma explicita.
 
 La model card no declara arquitectura, numero de parametros, longitud de contexto, idiomas ni licencia, por lo que la mayor parte de las especificaciones tecnicas quedan como no disponibles en la informacion proporcionada. El unico dato cuantitativo objetivo es el tamano del repositorio, de 12,4 GB, y la indicacion de que el paquete incluye parametros y activos ("params+assets") con verificacion mediante `SHA256SUMS`.
 
@@ -83,7 +83,7 @@ La comparacion cuantitativa no es posible: ninguno de los elementos consultados 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-pi05-attnfix-uniform-2000-67aaba3ffbf1-bd4952a8dc11
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-pi05-attnfix-uniform-2000-67aaba3ffbf1-bd4952a8dc11
 - `lerobot/pi05_base` (referencia externa de la familia PI05): https://huggingface.co/lerobot/pi05_base/commit/f5c96f720534d1a747ba2d279fd2767e320e65b7
 - Documentacion de despliegue nativo PI05 en `lerobot-flashrt`: https://github.com/videron-ai/lerobot-flashrt/blob/main/docs/pi05_native_cpp.md
 - `Wr3ck1Am/pi05-lora` (adaptador LoRA de la familia): https://huggingface.co/Wr3ck1Am/pi05-lora

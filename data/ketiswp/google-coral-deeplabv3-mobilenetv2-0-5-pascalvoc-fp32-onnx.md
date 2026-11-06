@@ -73,7 +73,7 @@ La diferencia principal con el modelo de Google es el factor de ancho 0.5 frente
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ketiswp/google-coral-DeepLabV3-MobileNetV2-0.5-PascalVOC-fp32-onnx
+- Hugging Face del modelo: https://huggingface.co/ketiswp/google-coral-DeepLabV3-MobileNetV2-0.5-PascalVOC-fp32-onnx
 - Version UINT8 del mismo autor: https://huggingface.co/ketiswp/google-coral-DeepLabV3-MobileNetV2-0.5-PascalVOC-uint8-onnx
 - Repositorio original de TensorFlow (DeepLab): https://github.com/tensorflow/models/tree/archive/research/deeplab
 - Modelo similar de Google en HF: https://huggingface.co/google/deeplabv3_mobilenet_v2_1.0_513

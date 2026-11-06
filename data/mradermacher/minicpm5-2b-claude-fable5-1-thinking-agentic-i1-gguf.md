@@ -19,7 +19,7 @@ Su relevancia practica esta en el formato y el tamano: al ser un GGUF de 2,5B co
 | Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, small-IQ4_NL, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K (cuantizaciones ponderadas/imatrix i1) |
 | Idiomas soportados | en (ingles), zh (chino) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizaciones i1/imatrix en este repositorio; cuantizaciones estaticas en un repositorio separado). El modelo base esta en formato HuggingFace/transformers |
+| Formato de pesos | GGUF (cuantizaciones i1/imatrix en este repositorio; cuantizaciones estaticas en un repositorio separado). El modelo base esta en formato Hugging Face/transformers |
 | Pipeline | text-generation |
 | Libreria declarada | transformers |
 | Tamano del repositorio | 30,2 GB (incluye todas las variantes de cuantizacion) |

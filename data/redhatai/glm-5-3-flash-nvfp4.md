@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativos. La comparativa se basa en pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RedHatAI/GLM-5.3-Flash-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/RedHatAI/GLM-5.3-Flash-NVFP4
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Repositorio de LLM Compressor: https://github.com/vllm-project/llm-compressor
 - Guía de GLM-5.3-Flash (fuente externa): https://glm-ai.chat/models/glm-5-3-flash/

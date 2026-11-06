@@ -101,7 +101,7 @@ No se dispone de informacion suficiente para comparar con alternativas de otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oxpuppy635/gemma-4-26B-A4B-it-SOMPOA-heresy-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/oxpuppy635/gemma-4-26B-A4B-it-SOMPOA-heresy-NVFP4
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Coleccion Gemma 4 de Google: https://huggingface.co/collections/google/gemma-4
 - Heretic (herramienta de abliteracion): https://github.com/p-e-w/heretic

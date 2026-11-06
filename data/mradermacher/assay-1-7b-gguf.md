@@ -90,7 +90,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/assay-1.7b-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/assay-1.7b-GGUF
 - Modelo base: https://huggingface.co/Berk/assay-1.7b
 - Pagina de resumen y descargas del autor para este modelo: https://hf.tst.eu/model#assay-1.7b-GGUF
 - Repositorio de peticiones y preguntas frecuentes del cuantizador: https://huggingface.co/mradermacher/model_requests

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AliceAI-T5-35B-A0.6B-chat-v6.3 es un modelo de generación de texto publicado por el usuario kaivoss en HuggingFace. Se trata del resultado de fusionar (merge) el adaptador LoRA `kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v6.3` sobre el modelo base `yandex/AliceAI-T5-35B-A0.6B` en precisión bf16. Por tanto, no es un entrenamiento desde cero, sino una especialización conversacional y de uso de herramientas sobre un modelo preentrenado ajeno.
+AliceAI-T5-35B-A0.6B-chat-v6.3 es un modelo de generación de texto publicado por el usuario kaivoss en Hugging Face. Se trata del resultado de fusionar (merge) el adaptador LoRA `kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v6.3` sobre el modelo base `yandex/AliceAI-T5-35B-A0.6B` en precisión bf16. Por tanto, no es un entrenamiento desde cero, sino una especialización conversacional y de uso de herramientas sobre un modelo preentrenado ajeno.
 
 El modelo base es un encoder-decoder de tipo T5 con mezcla de expertos (MoE), preentrenado con el objetivo UL2, según los tags de la model card. El nombre indica 35B de parámetros totales y aproximadamente 0,6B activos por token, un perfil de cómputo muy bajo en relación con su tamaño almacenado. El recuento real de safetensors es de 34.354.449.408 parámetros (34,35B), con un repositorio de 68,7 GB, coherente con pesos en bf16.
 
@@ -66,9 +66,9 @@ No se dispone de información suficiente en la documentación proporcionada para
 
 | Modelo | Parametros totales | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kaivoss/AliceAI-T5-35B-A0.6B-chat-v6.3 | 34,35 B | Encoder-decoder MoE (T5/UL2) | no disponible | no disponible | HuggingFace, 0 descargas |
-| yandex/AliceAI-T5-35B-A0.6B | no disponible en la informacion facilitada | Encoder-decoder MoE (T5/UL2) | no disponible | no disponible | HuggingFace (modelo base) |
-| kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v6.3 | no disponible (adaptador LoRA) | Adaptador LoRA sobre el modelo base | no disponible | no disponible | HuggingFace |
+| kaivoss/AliceAI-T5-35B-A0.6B-chat-v6.3 | 34,35 B | Encoder-decoder MoE (T5/UL2) | no disponible | no disponible | Hugging Face, 0 descargas |
+| yandex/AliceAI-T5-35B-A0.6B | no disponible en la informacion facilitada | Encoder-decoder MoE (T5/UL2) | no disponible | no disponible | Hugging Face (modelo base) |
+| kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v6.3 | no disponible (adaptador LoRA) | Adaptador LoRA sobre el modelo base | no disponible | no disponible | Hugging Face |
 
 No se identifican en la información proporcionada alternativas de terceros con las que comparar parámetros, contexto o rendimiento. Cualquier comparación con modelos MoE de tamaño similar debería hacerse con datos verificados de cada repositorio, no con estimaciones.
 
@@ -87,7 +87,7 @@ No se identifican en la información proporcionada alternativas de terceros con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-v6.3
+- Modelo en Hugging Face: https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-v6.3
 - Adaptador LoRA referenciado en la model card (receta, plantilla de chat y evaluación): https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v6.3
 - Modelo base: https://huggingface.co/yandex/AliceAI-T5-35B-A0.6B
 

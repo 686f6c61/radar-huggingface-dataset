@@ -96,10 +96,10 @@ La referencia SOTA en diacritización de prosa es 6.6% DER, según el autor; est
 - No se documentan sesgos específicos en la información proporcionada; sin embargo, los modelos están entrenados predominantemente con texto árabe literario y poético, lo que puede limitar su generalización a variedades dialectales.
 - El riesgo de alucinación no es relevante en este caso, al tratarse de tareas de etiquetado y no de generación de texto libre.
 - La licencia MIT permite uso comercial y modificación, pero no incluye garantías de soporte.
-- El repositorio no tiene descargas ni likes en HuggingFace en el momento de la consulta, lo que indica escasa adopción o falta de documentación más allá del script incluido.
+- El repositorio no tiene descargas ni likes en Hugging Face en el momento de la consulta, lo que indica escasa adopción o falta de documentación más allá del script incluido.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kandil7/alim-arabic-models
+- Hugging Face: https://huggingface.co/Kandil7/alim-arabic-models
 - GitHub del autor: https://github.com/Kandil7/kandil7
-- El repositorio de HuggingFace incluye un script de inferencia (`inference_example.py`) y modelos en safetensors, aunque no se proporciona una demo interactiva.
+- El repositorio de Hugging Face incluye un script de inferencia (`inference_example.py`) y modelos en safetensors, aunque no se proporciona una demo interactiva.

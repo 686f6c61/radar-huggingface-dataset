@@ -116,7 +116,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/andreilungeanu/phishing-qwen3.5-2b-GGUF
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/andreilungeanu/phishing-qwen3.5-2b-GGUF
 - Modelo base del fine-tune: https://huggingface.co/Davv4/phishing-qwen3.5-2b
 - Version GGUF para Ollama del autor original: https://huggingface.co/Davv4/phishing-qwen3.5-2b-gguf
 - Modelo origen: https://huggingface.co/Qwen/Qwen3.5-2B

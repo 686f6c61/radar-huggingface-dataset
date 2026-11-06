@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`josephxbrown/vision-language-pretraining` no es un modelo entrenado, sino un repositorio de notas de investigación (research notes) publicado en HuggingFace bajo el identificador de autor `josephxbrown`. La model card describe explícitamente un artefacto exploratorio sobre preentrenamiento visión-lenguaje: recoge el alcance de una pregunta de investigación, posibles factores de confusión, un diseño de comparación con baselines emparejados y requisitos de reproducibilidad. El autor advierte de forma explícita que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales.
+`josephxbrown/vision-language-pretraining` no es un modelo entrenado, sino un repositorio de notas de investigación (research notes) publicado en Hugging Face bajo el identificador de autor `josephxbrown`. La model card describe explícitamente un artefacto exploratorio sobre preentrenamiento visión-lenguaje: recoge el alcance de una pregunta de investigación, posibles factores de confusión, un diseño de comparación con baselines emparejados y requisitos de reproducibilidad. El autor advierte de forma explícita que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
 El repositorio contiene únicamente dos ficheros de texto (`reading.md` y `README.md`) y no incluye código, checkpoints entrenados ni resultados de benchmarks. El recuento de parámetros que reporta la plataforma (49.600) corresponde a los tensores de un fichero `safetensors` de tamaño despreciable (0,0 GB), no a un modelo funcional de visión-lenguaje. Por tanto, no debe tratarse como un modelo desplegable.
 
@@ -23,7 +23,7 @@ Su relevancia es documental: sirve como plantilla de metodología para quien pre
 
 ## Arquitectura y entrenamiento
 
-No se describe ninguna arquitectura de modelo. La etiqueta `transformer` aparece en los metadatos de HuggingFace, pero la model card no detalla capas, dimensión oculta, mecanismo de atención ni módulo de visión. El repositorio se presenta como una nota de investigación sobre preentrenamiento visión-lenguaje, con secciones dedicadas al alcance de la pregunta de investigación, factores de confusión probables, una comparación propuesta con baselines emparejados y comprobaciones de reproducibilidad.
+No se describe ninguna arquitectura de modelo. La etiqueta `transformer` aparece en los metadatos de Hugging Face, pero la model card no detalla capas, dimensión oculta, mecanismo de atención ni módulo de visión. El repositorio se presenta como una nota de investigación sobre preentrenamiento visión-lenguaje, con secciones dedicadas al alcance de la pregunta de investigación, factores de confusión probables, una comparación propuesta con baselines emparejados y comprobaciones de reproducibilidad.
 
 No hay información sobre datos de entrenamiento, número de tokens, composición del dataset, ni sobre fases de ajuste como RLHF o DPO. El autor indica que, si en el futuro se añaden resultados, deberán incluir versiones de dataset, comandos, semillas, hardware y logs en bruto. El único artefacto principal es `reading.md`; el resto es documentación.
 
@@ -72,5 +72,5 @@ No disponible. No existe un modelo funcional con el que comparar parámetros, co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/josephxbrown/vision-language-pretraining
+- Repositorio en Hugging Face: https://huggingface.co/josephxbrown/vision-language-pretraining
 - An Introduction to Vision-Language Modeling (arXiv): https://arxiv.org/html/2405.17247v1

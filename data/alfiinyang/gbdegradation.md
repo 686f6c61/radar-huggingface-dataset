@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GBdegradation es un modelo de aprendizaje automatico supervisado publicado por el usuario alfiinyang en HuggingFace, orientado a mantenimiento predictivo industrial. No es un modelo de lenguaje ni una red neuronal: se trata de un clasificador binario basado en gradient boosting por histogramas (HistGradientBoosting), serializado con joblib, que estima la probabilidad de fallo de una maquina a partir de telemetria de sensores. El repositorio incluye el modelo entrenado (`model.joblib`), una funcion de preprocesado (`preprocessing.py`), estadisticas de poblacion para deteccion de anomalias (`pop_stats.joblib`) y la lista de variables usadas por el clasificador (`feature_list.joblib`).
+GBdegradation es un modelo de aprendizaje automatico supervisado publicado por el usuario alfiinyang en Hugging Face, orientado a mantenimiento predictivo industrial. No es un modelo de lenguaje ni una red neuronal: se trata de un clasificador binario basado en gradient boosting por histogramas (HistGradientBoosting), serializado con joblib, que estima la probabilidad de fallo de una maquina a partir de telemetria de sensores. El repositorio incluye el modelo entrenado (`model.joblib`), una funcion de preprocesado (`preprocessing.py`), estadisticas de poblacion para deteccion de anomalias (`pop_stats.joblib`) y la lista de variables usadas por el clasificador (`feature_list.joblib`).
 
 El modelo consume tres senales declaradas: `temperature_c`, `vibration_mm_s` y `run_hours_since_maintenance`, y requiere al menos 12 horas de historico para construir ventanas moviles durante el preprocesado. La model card reporta un recall de 1,0 con umbral de decision 0,8 y senala las horas de funcionamiento desde el ultimo mantenimiento como variable dominante, con un 50% de importancia.
 
@@ -66,7 +66,7 @@ La model card unicamente declara recall igual a 1,0 con un umbral de 0,8. No se 
 
 - VRAM para inferencia: no aplicable. Al ser un modelo de gradient boosting serializado con joblib, la inferencia se ejecuta en CPU.
 - GPU recomendadas: ninguna. No requiere GPU (ni A100, ni H100, ni RTX 4090).
-- Compatibilidad con GPU de consumo: irrelevante, el modelo funciona en CPU de portatil. El repositorio ocupa 0,0 GB segun los metadatos de HuggingFace.
+- Compatibilidad con GPU de consumo: irrelevante, el modelo funciona en CPU de portatil. El repositorio ocupa 0,0 GB segun los metadatos de Hugging Face.
 - Memoria RAM: no documentada. Depende del numero de arboles y de la profundidad, no especificados en la model card.
 - Opciones de despliegue: carga directa con `joblib.load` en un entorno Python con scikit-learn y pandas; servicio HTTP con FastAPI o Flask; ejecucion batch en un orquestador (Airflow, cron, Prefect). No aplican vLLM, llama.cpp, Ollama ni TGI, que son runtime para modelos neuronales de lenguaje.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de latencia por registro ni de registros por segundo.
@@ -77,7 +77,7 @@ No se dispone de datos comparativos publicados para este modelo. En la misma cat
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GBdegradation (alfiinyang) | No aplicable / no disponible | No aplicable (12 h de historico) | Recall 1,0 a umbral 0,8; resto no disponible | No disponible | HuggingFace, 0 descargas |
+| GBdegradation (alfiinyang) | No aplicable / no disponible | No aplicable (12 h de historico) | Recall 1,0 a umbral 0,8; resto no disponible | No disponible | Hugging Face, 0 descargas |
 | XGBoost | No aplicable | No aplicable | No disponible para esta tarea | Apache 2.0 (del framework) | Publico |
 | LightGBM | No aplicable | No aplicable | No disponible para esta tarea | MIT (del framework) | Publico |
 | CatBoost | No aplicable | No aplicable | No disponible para esta tarea | Apache 2.0 (del framework) | Publico |
@@ -92,7 +92,7 @@ Nota: las licencias indicadas corresponden a los frameworks genericos, no a mode
 - No se declara licencia, por lo que el uso comercial queda en un limbo legal: sin terminos explicitos no se concede permiso de uso, modificacion ni redistribucion.
 - El modelo tiene 0 descargas y 0 interacciones, sin validacion externa ni reportes de terceros.
 - El repositorio esta practicamente vacio (0,0 GB segun los metadatos), lo que sugiere que los artefactos pueden no estar realmente subidos o que la carga es incompleta; conviene verificarlo antes de integrarlo.
-- Las fechas de creacion y actualizacion de los metadatos de HuggingFace aparecen en el futuro (2026), lo que impide tratarlas como referencia fiable.
+- Las fechas de creacion y actualizacion de los metadatos de Hugging Face aparecen en el futuro (2026), lo que impide tratarlas como referencia fiable.
 - Dependencia estricta del preprocesado: el modelo necesita exactamente las variables derivadas por `preprocess_sensor_data` y al menos 12 horas de historico; alimentarlo con datos crudos o con historico insuficiente produce resultados invalidos.
 - Sensibilidad a cambios de sensores o de unidades: no se documenta el rango de calibracion de `temperature_c` ni de `vibration_mm_s`.
 - Riesgo de deriva (data drift): no se documenta ninguna estrategia de monitorizacion ni de reentrenamiento.
@@ -101,6 +101,6 @@ Nota: las licencias indicadas corresponden a los frameworks genericos, no a mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfiinyang/GBdegradation
+- Modelo en Hugging Face: https://huggingface.co/alfiinyang/GBdegradation
 - La busqueda web realizada no devolvio ningun resultado relacionado con este modelo. Los unicos resultados obtenidos corresponden al Museo Ducati y a Borgo Panigale (https://www.ducati.com/it/it/borgo-panigale-experience, https://www.museidibologna.it/museo-ducati/, https://it.m.wikipedia.org/wiki/Museo_Ducati, https://cultura.gov.it/luogo/museo-ducati), sin conexion alguna con el modelo GBdegradation.
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la informacion disponible.

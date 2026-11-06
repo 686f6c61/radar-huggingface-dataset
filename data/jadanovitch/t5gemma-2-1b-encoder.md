@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | jadanovitch/t5gemma-2-1b-encoder | 999.885.952 (~1B, solo encoder de texto) | 32.768 tokens en el despliegue documentado | Texto (encoder-only) | Gemma | safetensors, cargado en vLLM |
-| google/t5gemma-2-1b-1b (origen) | par 1B-1B (encoder mas decodificador) | hasta 128k tokens segun la familia | Texto y multimodal | Gemma | safetensors en HuggingFace |
-| T5Gemma 2 270M-270M | ~370M totales excluyendo vision, segun el blog de Google | hasta 128k tokens segun la familia | Texto y multimodal | Gemma | safetensors en HuggingFace |
-| T5Gemma 2 4B-4B | par 4B-4B | hasta 128k tokens segun la familia | Texto y multimodal | Gemma | safetensors en HuggingFace |
+| google/t5gemma-2-1b-1b (origen) | par 1B-1B (encoder mas decodificador) | hasta 128k tokens segun la familia | Texto y multimodal | Gemma | safetensors en Hugging Face |
+| T5Gemma 2 270M-270M | ~370M totales excluyendo vision, segun el blog de Google | hasta 128k tokens segun la familia | Texto y multimodal | Gemma | safetensors en Hugging Face |
+| T5Gemma 2 4B-4B | par 4B-4B | hasta 128k tokens segun la familia | Texto y multimodal | Gemma | safetensors en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada, ni de encoders independientes de referencia (por ejemplo, modelos tipo BERT o encoders de retrieval dedicados) evaluados frente a este checkpoint. Cualquier comparacion de calidad queda por tanto sin datos.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jadanovitch/t5gemma-2-1b-encoder
+- Modelo en Hugging Face: https://huggingface.co/jadanovitch/t5gemma-2-1b-encoder
 - Modelo base: https://huggingface.co/google/t5gemma-2-1b-1b
 - Documentacion de T5Gemma 2 en Transformers: https://huggingface.co/docs/transformers/model_doc/t5gemma2
 - Pagina de T5Gemma en Google DeepMind: https://deepmind.google/models/gemma/t5gemma/

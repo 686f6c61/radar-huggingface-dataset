@@ -80,7 +80,7 @@ No disponible. No se han proporcionado datos de benchmarks ni de modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gparitosh007/Open-Decision-Model-150M-ONNX
+- Modelo en Hugging Face: https://huggingface.co/gparitosh007/Open-Decision-Model-150M-ONNX
 - Modelo base: https://huggingface.co/gparitosh007/Open-Decision-Model-150M
 - Endpoint MCP público: https://decision-model.vercel.app/mcp
 - Endpoint HTTP de decisión: https://decision-model.vercel.app/v1/decide

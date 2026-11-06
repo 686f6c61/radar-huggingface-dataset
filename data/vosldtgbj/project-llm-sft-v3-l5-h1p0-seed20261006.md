@@ -90,7 +90,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vosldtgbj/project-llm-sft-v3-l5-h1p0-seed20261006
+- Modelo en Hugging Face: https://huggingface.co/vosldtgbj/project-llm-sft-v3-l5-h1p0-seed20261006
 - Modelo base (CPT): https://huggingface.co/vosldtgbj/project-llm-cpt-1p0-top10-01-full-02
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - vLLM (motor de inferencia): https://github.com/vllm-project/vllm

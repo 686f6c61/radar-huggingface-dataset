@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos con otras políticas de locomo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joseyarashio/duckmind-motion-skills
+- Hugging Face: https://huggingface.co/joseyarashio/duckmind-motion-skills
 - Repositorio duckmind: https://github.com/joseyarashio/duckmind
 - mjlab: https://github.com/mujocolab/mjlab
 - microduck_rl de Pollen Robotics: https://github.com/pollen-robotics/microduck_rl

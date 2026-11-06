@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Strata excavator detector es un modelo de detección de objetos publicado en HuggingFace por el usuario Kvs2026. Consiste en un fine-tune del detector RF-DETR en su variante nano, un transformer de detección en tiempo real derivado de la familia DETR, distribuido en formato ONNX y con licencia Apache-2.0. El modelo está especializado en maquinaria de obra y minería: detecta cuatro clases concretas (cuchara o *bucket*, brazo o *arm*, pluma o *boom* y camión o *truck*).
+Strata excavator detector es un modelo de detección de objetos publicado en Hugging Face por el usuario Kvs2026. Consiste en un fine-tune del detector RF-DETR en su variante nano, un transformer de detección en tiempo real derivado de la familia DETR, distribuido en formato ONNX y con licencia Apache-2.0. El modelo está especializado en maquinaria de obra y minería: detecta cuatro clases concretas (cuchara o *bucket*, brazo o *arm*, pluma o *boom* y camión o *truck*).
 
 El problema que resuelve es acotado pero práctico: identificar piezas de una excavadora y camiones en imágenes, lo que habilita tareas de conteo, monitorización de flotas y análisis de seguridad en obra. Al estar exportado a ONNX y partir de una variante nano, está pensado para inferencia ligera y despliegue en entornos con recursos limitados, no para servidores de gran escala.
 
@@ -91,7 +91,7 @@ La comparación cuantitativa no es posible con la información disponible: no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kvs2026/strata-excavator-detector
+- Modelo en Hugging Face: https://huggingface.co/Kvs2026/strata-excavator-detector
 - Dataset de entrenamiento (CC BY 4.0): https://universe.roboflow.com/angelicas-workspace-55uyb/yolo__3rd_june
 - Dataset de entrenamiento (CC BY 4.0): https://universe.roboflow.com/falih-magna-agali/excavator-detection-bmo2
 - Dataset de entrenamiento (dominio publico): https://universe.roboflow.com/construction-zt4tt/excavators_kamaz_kirill

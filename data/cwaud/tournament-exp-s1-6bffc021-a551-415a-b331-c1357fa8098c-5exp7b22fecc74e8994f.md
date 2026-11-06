@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como cwaud/tournament-exp-s1-6bffc021-a551-415a-b331-c1357fa8098c-5Exp7b22fecc74e8994f es un checkpoint publicado por el usuario cwaud en HuggingFace. La nomenclatura del repositorio ("tournament-exp", "Exp") sugiere que se trata de un artefacto generado en el marco de un experimento de torneo de modelos, probablemente un proceso de fusion, evolucion o seleccion automatica de variantes, aunque no se aporta documentacion que lo confirme.
+El modelo identificado como cwaud/tournament-exp-s1-6bffc021-a551-415a-b331-c1357fa8098c-5Exp7b22fecc74e8994f es un checkpoint publicado por el usuario cwaud en Hugging Face. La nomenclatura del repositorio ("tournament-exp", "Exp") sugiere que se trata de un artefacto generado en el marco de un experimento de torneo de modelos, probablemente un proceso de fusion, evolucion o seleccion automatica de variantes, aunque no se aporta documentacion que lo confirme.
 
 Los metadatos tecnicos indican que el modelo esta etiquetado con la arquitectura qwen2 y se distribuye en formato safetensors, con 494.032.768 parametros totales y un tamano de repositorio de 1,0 GB. Esa cifra de parametros coincide exactamente con la arquitectura Qwen2-0.5B, lo que apunta a que se trata de un ajuste o derivado de ese modelo base de aproximadamente 500 millones de parametros, orientado a despliegues ligeros en hardware de consumo.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cwaud/tournament-exp-s1 (este modelo) | 494 M | no disponible | no disponible | HuggingFace, repo de 1,0 GB |
-| Qwen2-0.5B | 494 M | 32.768 tokens (segun especificaciones publicas del base) | Apache 2.0 (segun el base) | HuggingFace |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens (segun especificaciones publicas del base) | Apache 2.0 (segun el base) | HuggingFace |
-| SmolLM2-360M | 360 M | 8.192 tokens (segun especificaciones publicas) | Apache 2.0 (segun el modelo) | HuggingFace |
+| cwaud/tournament-exp-s1 (este modelo) | 494 M | no disponible | no disponible | Hugging Face, repo de 1,0 GB |
+| Qwen2-0.5B | 494 M | 32.768 tokens (segun especificaciones publicas del base) | Apache 2.0 (segun el base) | Hugging Face |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens (segun especificaciones publicas del base) | Apache 2.0 (segun el base) | Hugging Face |
+| SmolLM2-360M | 360 M | 8.192 tokens (segun especificaciones publicas) | Apache 2.0 (segun el modelo) | Hugging Face |
 
 Los datos de los modelos comparativos corresponden a informacion publica general y no se han verificado contra este repositorio. No se dispone de resultados de rendimiento del modelo objeto de la ficha, por lo que no es posible establecer una comparacion cuantitativa de calidad.
 
@@ -91,6 +91,6 @@ Los datos de los modelos comparativos corresponden a informacion publica general
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-6bffc021-a551-415a-b331-c1357fa8098c-5Exp7b22fecc74e8994f
+- Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-6bffc021-a551-415a-b331-c1357fa8098c-5Exp7b22fecc74e8994f
 
 No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la informacion proporcionada.

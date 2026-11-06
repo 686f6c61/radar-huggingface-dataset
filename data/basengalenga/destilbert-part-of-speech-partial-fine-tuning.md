@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino de `distilbert-base-uncased` para etiquetado gramatical (*part-of-speech tagging*) con el conjunto de etiquetas UPOS de Universal Dependencies. Lo publica el usuario Basengalenga en HuggingFace y su tarea es asignar a cada palabra de una frase en ingles una de las 17 categorias UPOS (ADJ, ADP, ADV, AUX, CCONJ, DET, INTJ, NOUN, NUM, PART, PRON, PROPN, PUNCT, SCONJ, SYM, VERB, X). Resuelve un problema clasico de preprocesado linguistico: la anotacion morfosintactica de texto en bruto que alimenta pipelines de analisis sintactico, extraccion de informacion y busqueda semantica.
+Este modelo es un ajuste fino de `distilbert-base-uncased` para etiquetado gramatical (*part-of-speech tagging*) con el conjunto de etiquetas UPOS de Universal Dependencies. Lo publica el usuario Basengalenga en Hugging Face y su tarea es asignar a cada palabra de una frase en ingles una de las 17 categorias UPOS (ADJ, ADP, ADV, AUX, CCONJ, DET, INTJ, NOUN, NUM, PART, PRON, PROPN, PUNCT, SCONJ, SYM, VERB, X). Resuelve un problema clasico de preprocesado linguistico: la anotacion morfosintactica de texto en bruto que alimenta pipelines de analisis sintactico, extraccion de informacion y busqueda semantica.
 
 La particularidad tecnica es que no se reentreno el modelo completo, sino que se aplico un *fine-tuning* parcial: solo se actualizaron las dos ultimas capas transformer (capas 4 y 5 de 6) y la cabeza de clasificacion, mientras que los embeddings y las capas 0-3 permanecieron congelados. Esto supone alrededor de 14,2 millones de parametros entrenables de un total de 66,4 millones (en torno al 21 %).
 
@@ -131,7 +131,7 @@ No se dispone de resultados de benchmarks de estos modelos comparables dentro de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Basengalenga/destilbert-part-of-speech-partial-fine-tuning
+- Modelo en Hugging Face: https://huggingface.co/Basengalenga/destilbert-part-of-speech-partial-fine-tuning
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Dataset: https://huggingface.co/datasets/universal-dependencies/universal_dependencies
 - Treebank UD English EWT: https://universaldependencies.org/treebanks/en_ewt/

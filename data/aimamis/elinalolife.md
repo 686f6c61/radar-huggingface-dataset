@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ElinaLoLife es un adaptador LoRA de texto a imagen publicado por el usuario AiMamis en HuggingFace. Se trata de un ajuste fino ligero sobre el modelo base Krea-2-Turbo, un modelo de difusion orientado a la generacion rapida de imagenes. El adaptador incorpora un concepto visual concreto (un personaje llamado Elina, con pelo castano y ojos avellana) y se distribuye como pesos compatibles con la libreria diffusers.
+ElinaLoLife es un adaptador LoRA de texto a imagen publicado por el usuario AiMamis en Hugging Face. Se trata de un ajuste fino ligero sobre el modelo base Krea-2-Turbo, un modelo de difusion orientado a la generacion rapida de imagenes. El adaptador incorpora un concepto visual concreto (un personaje llamado Elina, con pelo castano y ojos avellana) y se distribuye como pesos compatibles con la libreria diffusers.
 
 El modelo resuelve el problema clasico de personalizacion en generacion de imagenes: en lugar de reentrenar un modelo completo, el LoRA permite inyectar un sujeto o estilo especifico con un consumo de recursos minimo. El repositorio ocupa aproximadamente 0,5 GB, lo que confirma que se trata de un adaptador de bajo rango y no de un modelo completo.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ElinaLoLife | LoRA sobre Krea-2-Turbo | no disponible | no aplica | openrail++ | HuggingFace |
-| Alternativas de LoRA de personaje | no disponible | no disponible | no aplica | variable | HuggingFace |
-| Modelos base de difusion turbo | no disponible | no disponible | no aplica | variable | HuggingFace |
+| ElinaLoLife | LoRA sobre Krea-2-Turbo | no disponible | no aplica | openrail++ | Hugging Face |
+| Alternativas de LoRA de personaje | no disponible | no disponible | no aplica | variable | Hugging Face |
+| Modelos base de difusion turbo | no disponible | no disponible | no aplica | variable | Hugging Face |
 
 No se dispone de informacion suficiente para establecer una comparativa cuantitativa con alternativas concretas de la misma categoria. No se conocen modelos comparables documentados en la informacion proporcionada.
 
@@ -78,6 +78,6 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AiMamis/ElinaLoLife
+- Hugging Face: https://huggingface.co/AiMamis/ElinaLoLife
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Repositorio de archivos: https://huggingface.co/AiMamis/ElinaLoLife/tree/main

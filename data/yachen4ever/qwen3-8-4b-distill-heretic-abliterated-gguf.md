@@ -79,7 +79,7 @@ La principal diferencia frente a la versión de insraq es la preservación del p
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/yachen4ever/Qwen3.8-4B-Distill-Heretic-Abliterated-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/yachen4ever/Qwen3.8-4B-Distill-Heretic-Abliterated-GGUF
 - Modelo base (BF16, safetensors): https://huggingface.co/insraq/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated
 - Versión MLX 4-bit del mismo autor: https://huggingface.co/yachen4ever/Qwen3.8-4B-Distill-Heretic-Abliterated-MLX-4bit
 - Registro de conversión MLX (gist): https://gist.github.com/yachen4ever/673ece8e0eccd2dcc35911fe408f868b

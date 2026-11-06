@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`typical-medium` es un modelo de decisión de tipo System-One desarrollado por OzLabs y publicado en HuggingFace bajo licencia Apache 2.0. No es un modelo generativo: recibe un estado (un ticket de soporte, un documento, un formulario, una línea de log o cualquier texto), una pregunta con su rúbrica y un conjunto de etiquetas definido en tiempo de ejecución, y devuelve una probabilidad calibrada sobre esas etiquetas junto con una opción explícita de abstención. Todo ello en una sola pasada hacia delante, sin texto generado que haya que parsear.
+`typical-medium` es un modelo de decisión de tipo System-One desarrollado por OzLabs y publicado en Hugging Face bajo licencia Apache 2.0. No es un modelo generativo: recibe un estado (un ticket de soporte, un documento, un formulario, una línea de log o cualquier texto), una pregunta con su rúbrica y un conjunto de etiquetas definido en tiempo de ejecución, y devuelve una probabilidad calibrada sobre esas etiquetas junto con una opción explícita de abstención. Todo ello en una sola pasada hacia delante, sin texto generado que haya que parsear.
 
 Se construye sobre el backbone Qwen3-4B-Base (unos 4.000 millones de parámetros), truncado a 26 de 36 capas, con lectura en la capa 26 (tap layer) y tres cabezas tipadas: Choice (categórica), Score (ordinal) y Noul (sí/no, invariante al orden). Trabaja con estados de decisión de 1.024 tokens y, según el autor, consume 57 ms por decisión en una H100 con K=2 opciones, con latencia prácticamente plana hasta unas 64 opciones (58 ms con K=32, 96 ms con K=256).
 
@@ -130,7 +130,7 @@ Alternativas externas citadas por el autor en JevBench standard: jeff (GLiFormer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OzLabs/typical-medium
+- Modelo en Hugging Face: https://huggingface.co/OzLabs/typical-medium
 - Modelo hermano `typical-small`: https://huggingface.co/OzLabs/typical-small
 - Modelo hermano `typical-small-preview`: https://huggingface.co/OzLabs/typical-small-preview
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base

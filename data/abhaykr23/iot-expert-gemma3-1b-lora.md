@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| abhaykr/iot-expert-gemma3-1b-lora | 1B + LoRA | 128K (base) | Apache 2.0 | HuggingFace |
-| google/gemma-3-1b-it | 1B | 128K | Gemma Terms (uso comercial permitido) | HuggingFace |
-| meta-llama/Llama-3.2-1B-Instruct | 1B | 128K | Llama 3.2 Community License | HuggingFace |
-| Qwen/Qwen2.5-0.5B-Instruct | 0.5B | 32K | Apache 2.0 | HuggingFace |
+| abhaykr/iot-expert-gemma3-1b-lora | 1B + LoRA | 128K (base) | Apache 2.0 | Hugging Face |
+| google/gemma-3-1b-it | 1B | 128K | Gemma Terms (uso comercial permitido) | Hugging Face |
+| meta-llama/Llama-3.2-1B-Instruct | 1B | 128K | Llama 3.2 Community License | Hugging Face |
+| Qwen/Qwen2.5-0.5B-Instruct | 0.5B | 32K | Apache 2.0 | Hugging Face |
 
 El modelo base Gemma 3 1B es el punto de partida. Este adaptador LoRA no ofrece ventajas sobre el modelo base sin una evaluación específica en tareas IoT. Llama 3.2 1B es un competidor directo con características similares. Qwen2.5 0.5B es más pequeño y puede ser más ligero, pero con menor capacidad.
 
@@ -80,7 +80,7 @@ El modelo base Gemma 3 1B es el punto de partida. Este adaptador LoRA no ofrece 
 
 ## Enlaces
 
-- [HuggingFace - abhaykr/iot-expert-gemma3-1b-lora](https://huggingface.co/abhayKR23/iot-expert-gemma3-1b-lora)
+- [Hugging Face - abhaykr/iot-expert-gemma3-1b-lora](https://huggingface.co/abhayKR23/iot-expert-gemma3-1b-lora)
 - [Gemma 3 Technical Report (arXiv)](https://arxiv.org/abs/2503.19786)
 - [Gemma 3 - Google DeepMind](https://deepmind.google/models/gemma/gemma-3/)
 - [Modelo base unsloth/gemma-3-1b-it-unsloth-bnb-4bit](https://huggingface.co/unsloth/gemma-3-1b-it-unsloth-bnb-4bit)

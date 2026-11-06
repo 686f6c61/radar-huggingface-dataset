@@ -77,7 +77,7 @@ No se dispone de resultados de rendimiento para ninguna de estas variantes, por 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-da716-verbose-r64-dynbatch
+- Repositorio Hugging Face: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-da716-verbose-r64-dynbatch
 - Repositorio fuente del experimento: https://github.com/Matthew-Bozoukov/teaching_claude_why_replication.git (revisión d1fa94d14499b20f35215269b5a86ee43fb5eded)
 - Brazo comparativo: https://huggingface.co/LASR-Callum/qwen3_6-27b-lora-t2-9284-da716-r64-dynbatch
 - Otro adaptador del mismo autor (Apache-2.0): https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-500k-da20-numina

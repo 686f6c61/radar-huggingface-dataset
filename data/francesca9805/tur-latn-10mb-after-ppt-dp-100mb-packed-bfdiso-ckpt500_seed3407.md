@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `francesca9805/tur-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino de tipo SFT (supervised fine-tuning) construido sobre otro modelo de la misma autora, `francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407`, que a su vez actua como modelo base. La arquitectura declarada en los tags de HuggingFace es GPT-2, una familia de transformers decoder-only autoregresivos para generacion de texto. Con 39.087.104 parametros totales confirmados por los pesos en safetensors, se trata de un modelo muy pequeno (aproximadamente 39 millones de parametros), muy por debajo de un GPT-2 small estandar de 124 millones.
+El modelo `francesca9805/tur-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino de tipo SFT (supervised fine-tuning) construido sobre otro modelo de la misma autora, `francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407`, que a su vez actua como modelo base. La arquitectura declarada en los tags de Hugging Face es GPT-2, una familia de transformers decoder-only autoregresivos para generacion de texto. Con 39.087.104 parametros totales confirmados por los pesos en safetensors, se trata de un modelo muy pequeno (aproximadamente 39 millones de parametros), muy por debajo de un GPT-2 small estandar de 124 millones.
 
-El nombre del repositorio sugiere que el trabajo se centra en turco escrito en alfabeto latino (`tur-latn`) con un presupuesto de datos de 10 MB y un paquete de 100 MB, aunque esta interpretacion procede de la nomenclatura y no de una declaracion explicita del autor en la model card. El modelo fue entrenado con la libreria TRL en su version 0.23.0 y esta orientado a text-generation, con soporte para text-generation-inference y compatibilidad con endpoints de HuggingFace. El checkpoint corresponde al paso 500 de entrenamiento y usa una semilla fija (3407) para reproducibilidad.
+El nombre del repositorio sugiere que el trabajo se centra en turco escrito en alfabeto latino (`tur-latn`) con un presupuesto de datos de 10 MB y un paquete de 100 MB, aunque esta interpretacion procede de la nomenclatura y no de una declaracion explicita del autor en la model card. El modelo fue entrenado con la libreria TRL en su version 0.23.0 y esta orientado a text-generation, con soporte para text-generation-inference y compatibilidad con endpoints de Hugging Face. El checkpoint corresponde al paso 500 de entrenamiento y usa una semilla fija (3407) para reproducibilidad.
 
 La relevancia de este tipo de publicaciones es fundamentalmente experimental: forma parte de una linea de trabajo sobre tokenizadores y modelos multilingues de baja resource, en el contexto de la Universidad de Groningen segun el enlace de Weights & Biases. Al no presentar resultados de benchmarks, licencia clara ni idiomas declarados, su utilidad practica inmediata es limitada y esta pensada mas como artefacto de investigacion que como modelo listo para produccion.
 
@@ -49,7 +49,7 @@ Dado el caracter experimental del modelo y la ausencia de benchmarks, licencia e
 - Reproducibilidad de experimentos academicos: al fijar la semilla 3407 y publicar el checkpoint 500, permite replicar condiciones de entrenamiento en estudios comparativos.
 - Generacion de texto controlada en turco para pruebas de pipeline: sirve para verificar integraciones con `transformers.pipeline` y text-generation-inference antes de escalar a modelos mayores.
 - Ajuste fino posterior (fine-tuning base): al ser un modelo pequeno, puede usarse como punto de partida para experimentos de SFT sobre dominios muy concretos con recursos limitados.
-- Pruebas de infraestructura de despliegue: su tamano reducido lo hace idoneo para validar configuraciones de vLLM, TGI o endpoints de HuggingFace sin consumir GPU de gama alta.
+- Pruebas de infraestructura de despliegue: su tamano reducido lo hace idoneo para validar configuraciones de vLLM, TGI o endpoints de Hugging Face sin consumir GPU de gama alta.
 - Docencia y prototipado rapido: util para ilustrar el ciclo completo de entrenamiento con TRL y SFT en cursos o talleres.
 - Evaluacion de degradacion multilingue: puede emplearse como caso de estudio de como un modelo pequeno entrenado en un solo idioma se comporta fuera de su dominio.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 39 millones de parametros, los pesos ocupan aproximadamente 156 MB en fp32, 78 MB en fp16/bf16, 39 MB en int8 y unos 20 MB en int4. El pico de memoria depende de la longitud de contexto, que no esta documentada.
 - GPU recomendadas: cualquier GPU moderna es suficiente. Se puede ejecutar en CPU sin problemas para generacion de texto corta.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer (GTX 1050 Ti en adelante, RTX 2060, RTX 3060, RTX 4090) e incluso en iGPU o CPU.
-- Opciones de despliegue: `transformers` (pipeline de text-generation), text-generation-inference (TGI), endpoints de HuggingFace. Compatible con llama.cpp u Ollama solo si se generan pesos GGUF, algo que no se declara en el repositorio.
+- Opciones de despliegue: `transformers` (pipeline de text-generation), text-generation-inference (TGI), endpoints de Hugging Face. Compatible con llama.cpp u Ollama solo si se generan pesos GGUF, algo que no se declara en el repositorio.
 - Latencia y throughput estimados: no disponibles. Al ser un modelo tan pequeno, la latencia deberia ser de milisegundos por token en GPU y de decenas de milisegundos por token en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ La comparacion se limita a caracteristicas estructurales conocidas, ya que no ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tur-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407 | 39,1 M | no disponible | no disponible | HuggingFace, 0 descargas |
+| tur-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407 | 39,1 M | no disponible | no disponible | Hugging Face, 0 descargas |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Ampliamente disponible |
 | DistilGPT-2 | 82 M | 1024 tokens | MIT | Ampliamente disponible |
 | Modelos GPT-2 pequenos ajustados en idiomas minoritarios | variable | variable | variable | Depende del repositorio |
@@ -90,7 +90,7 @@ No se dispone de modelos comparables directos con la misma combinacion de idioma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/francesca9805/tur-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
+- Hugging Face: https://huggingface.co/francesca9805/tur-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407
 - Repositorio TRL: https://github.com/huggingface/trl
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/y6rpvq19

@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 |---|---|---|---|---|---|
 | olmo2-1B-288domains-vertex-linear-arc | 1,41B | no disponible | 32B tokens, WebOrganizer (288 dominios, mix LinMix) | MIT | Artefacto de investigacion (mezcla de datos) |
 | OLMo 2 1B (AI2) | ~1,5B | no disponible | OLMo 2 Mix | Apache 2.0 | Modelo base de proposito general |
-| SmolLM2-1.7B (HuggingFace) | 1,7B | 8.192 tokens | ~11B tokens propios | Apache 2.0 | Modelo base/instruccional compacto |
+| SmolLM2-1.7B (Hugging Face) | 1,7B | 8.192 tokens | ~11B tokens propios | Apache 2.0 | Modelo base/instruccional compacto |
 
 Nota: las alternativas son modelos base de tamano comparable orientados a uso general, mientras que el modelo de esta ficha es un artefacto experimental centrado en la metodologia de mezcla de datos, por lo que no es directamente comparable en rendimiento general.
 
@@ -77,7 +77,7 @@ Nota: las alternativas son modelos base de tamano comparable orientados a uso ge
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-288domains-vertex-linear-arc
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-288domains-vertex-linear-arc
 - Paper LinMix (arXiv): https://arxiv.org/abs/2610.37390
 - Codigo de LinMix: https://github.com/credibleai/linmix
 - Enjambre de modelos proxy: https://huggingface.co/credible-ai/olmo2-60M-288domains-vertex

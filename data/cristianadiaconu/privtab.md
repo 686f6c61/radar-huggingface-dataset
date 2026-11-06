@@ -6,7 +6,7 @@ PrivTab es un clasificador para datos tabulares desarrollado por CristianaDiacon
 
 La arquitectura se articula en dos fases separadas: una fase de release, que pasa el contexto por tres capas de atencion privadas y dos capas de post-procesado para producir un resumen de forma `[B, 5, 128, 256]` (640 KiB por tarea en float32), y una fase de prediccion, que es post-procesado puro y por tanto no consume presupuesto de privacidad adicional. Esta separacion permite liberar el resumen una sola vez y reutilizarlo indefinidamente en cualquier maquina y por cualquier tercero.
 
-El repositorio de HuggingFace aloja tres checkpoints (stage1, stage2 de contextos cortos y stage2 de contextos largos) en formato `weights.pt`. El modelo esta pensado para clasificacion tabular de pequeno y mediano tamano con caracteristicas exclusivamente numericas, entre 1 y 120 features y entre 2 y 10 clases. Es relevante ahora porque ofrece una garantia formal de privacidad con un flujo de despliegue operativo (export y predict por linea de comandos), algo poco habitual en herramientas de privacidad diferencial aplicada a tablas.
+El repositorio de Hugging Face aloja tres checkpoints (stage1, stage2 de contextos cortos y stage2 de contextos largos) en formato `weights.pt`. El modelo esta pensado para clasificacion tabular de pequeno y mediano tamano con caracteristicas exclusivamente numericas, entre 1 y 120 features y entre 2 y 10 clases. Es relevante ahora porque ofrece una garantia formal de privacidad con un flujo de despliegue operativo (export y predict por linea de comandos), algo poco habitual en herramientas de privacidad diferencial aplicada a tablas.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Enfoque | Contexto | Privacidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PrivTab | Transformer con resumen DP liberable | 100-8192 filas de contexto | DP gaussiana, adyacencia de reemplazo de fila | MIT | HuggingFace + GitHub |
+| PrivTab | Transformer con resumen DP liberable | 100-8192 filas de contexto | DP gaussiana, adyacencia de reemplazo de fila | MIT | Hugging Face + GitHub |
 | DP-SGD sobre red tabular | Entrenamiento con gradiente ruidoso | No aplica | DP durante el entrenamiento | Depende de la implementacion | Baseline incluido en el repo de PrivTab |
 | TabPFN (referencia de ICL tabular) | Prior-data fitted network | Contexto acotado | Sin garantia DP | No disponible en esta ficha | No disponible en esta ficha |
 
@@ -88,7 +88,7 @@ La comparacion se limita a los elementos citados en la informacion proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CristianaDiaconu/PrivTab
+- Hugging Face: https://huggingface.co/CristianaDiaconu/PrivTab
 - Codigo en GitHub: https://github.com/TrustworthyMLHelsinki/PrivTab
 - Paper (arXiv): https://arxiv.org/abs/2610.10068
 - Guia de arquitectura: https://github.com/TrustworthyMLHelsinki/PrivTab/blob/main/docs/architecture.md

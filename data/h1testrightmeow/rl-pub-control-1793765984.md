@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rl-pub-control-1793765984` es un agente de aprendizaje por refuerzo (RL) publicado en HuggingFace por el usuario `h1testrightmeow` y entrenado con Stable-Baselines3 sobre el entorno `LunarLander-v2` de Gymnasium. No se trata de un modelo de lenguaje ni de un transformer generativo: es una política de control entrenada para resolver una tarea concreta de aterrizaje de una nave en 2D. El repositorio tiene 0 descargas y 0 likes, y la model card es prácticamente vacía (solo una línea "canary"), lo que sugiere un artefacto de prueba o de publicación automatizada más que un modelo destinado a uso real.
+`rl-pub-control-1793765984` es un agente de aprendizaje por refuerzo (RL) publicado en Hugging Face por el usuario `h1testrightmeow` y entrenado con Stable-Baselines3 sobre el entorno `LunarLander-v2` de Gymnasium. No se trata de un modelo de lenguaje ni de un transformer generativo: es una política de control entrenada para resolver una tarea concreta de aterrizaje de una nave en 2D. El repositorio tiene 0 descargas y 0 likes, y la model card es prácticamente vacía (solo una línea "canary"), lo que sugiere un artefacto de prueba o de publicación automatizada más que un modelo destinado a uso real.
 
 La relevancia de esta ficha es, por tanto, limitada: se documenta como ejemplo de agente RL empaquetado en formato Stable-Baselines3 y como caso de benchmark declarado con un rendimiento muy bajo (recompensa media de -1000 ± 0). No hay información sobre arquitectura de red, hiperparámetros de entrenamiento, número de pasos ni composición del dataset, más allá del entorno declarado.
 
@@ -44,7 +44,7 @@ El entorno declarado es `LunarLander-v2`, un problema clásico de control contin
 - Pruebas de integración de CI/CD para librerías de RL: permite validar que un pipeline de carga de modelos y evaluación de recompensas funciona de extremo a extremo, aunque el rendimiento sea malo.
 - Docencia y tutoriales: útil como caso de estudio de un agente con recompensa media de -1000, que ilustra el peor caso de `LunarLander-v2` y permite discutir fallos de entrenamiento.
 - Benchmarking de infraestructura: al ser un modelo pequeño y determinista, puede emplearse para medir latencia de carga y de inferencia en distintos entornos de ejecución.
-- Verificación de esquemas de model-index: el repositorio incluye un `model-index` con `mean_reward` declarado, por lo que sirve para probar herramientas que parsean metadatos de HuggingFace.
+- Verificación de esquemas de model-index: el repositorio incluye un `model-index` con `mean_reward` declarado, por lo que sirve para probar herramientas que parsean metadatos de Hugging Face.
 - Pruebas de gobernanza y trazabilidad de modelos: al carecer de licencia e idiomas declarados, es un caso útil para validar políticas internas de revisión de artefactos publicados.
 
 ## Benchmarks y rendimiento
@@ -82,7 +82,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/h1testrightmeow/rl-pub-control-1793765984
+- Hugging Face: https://huggingface.co/h1testrightmeow/rl-pub-control-1793765984
 - Stable-Baselines3 (librería): https://stable-baselines3.readthedocs.io/
 - Gymnasium / LunarLander-v2 (entorno): https://gymnasium.farama.org/environments/box2d/lunar_lander/
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

@@ -94,7 +94,7 @@ Desglose del Decision Index 0.3 por areas: conocimiento 52,6; lenguaje 72,3; rec
 
 | Modelo | Parametros | Contexto | Accuracy en Typed decisions | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Amos 1 large | 27B | 131.072 tokens | 76,1% (80,25% con priors) | Apache 2.0 | Pesos abiertos en HuggingFace y API alojada |
+| Amos 1 large | 27B | 131.072 tokens | 76,1% (80,25% con priors) | Apache 2.0 | Pesos abiertos en Hugging Face y API alojada |
 | Microsoft-Decision-1 | No disponible | No disponible | 79,5% | Peso cerrado | Solo API (pesos cerrados) |
 | Decider 1 | No disponible | No disponible | 76,8% (80,1% con priors) | No disponible | No disponible |
 | Perplexity Decider v1.1 | No disponible | No disponible | 73,9% | No disponible | No disponible |
@@ -118,7 +118,7 @@ En Decision Bench, Amos 1 large (94,9%) queda por delante de Perplexity Decider 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mukaddamzaid/amos-1-large
+- Modelo en Hugging Face: https://huggingface.co/mukaddamzaid/amos-1-large
 - Coleccion de la familia Amos 1: https://huggingface.co/collections/mukaddamzaid/amos-1
 - Variante medium: https://huggingface.co/mukaddamzaid/amos-1-medium
 - Variante small: https://huggingface.co/mukaddamzaid/amos-1-small

@@ -81,7 +81,7 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Tipo | Contexto / entrada | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ART of PIV (raft32) | Router + RAFT32 | pares de imágenes PIV | AEPE 0,0096 px (test clase 1) | other | HuggingFace, 1,0 GB |
+| ART of PIV (raft32) | Router + RAFT32 | pares de imágenes PIV | AEPE 0,0096 px (test clase 1) | other | Hugging Face, 1,0 GB |
 | DIS (dis_20hz / dis_1khz) | Estimador clásico | pares de imágenes PIV | AEPE 0,1268 / 0,1385 px | no disponible | incluido como miembro de biblioteca |
 | OpenPIV (1khz / 4khz) | Estimador clásico | pares de imágenes PIV | AEPE 0,1979 / 0,1974 px | no disponible | incluido como miembro de biblioteca |
 | RAFT32-PIV (Lagemann et al.) | Red de flujo óptico | pares de imágenes PIV | no disponible en esta ficha | no disponible | Code Ocean, no redistribuido aquí |
@@ -99,7 +99,7 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/activefluidcontrol/art-of-piv-models
+- Repositorio Hugging Face: https://huggingface.co/activefluidcontrol/art-of-piv-models
 - Librería flowgym: https://github.com/antonioterpin/flowgym
 - Dataset complementario (canal de agua): https://huggingface.co/activefluidcontrol/art-of-piv-water-channel
 - RAFT32-PIV de Lagemann et al., Nature Machine Intelligence 3 (2021); checkpoint en Code Ocean capsule 7226151 (no redistribuido en este repositorio)

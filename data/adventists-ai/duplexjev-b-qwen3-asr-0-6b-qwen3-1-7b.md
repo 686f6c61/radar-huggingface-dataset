@@ -78,9 +78,9 @@ Latencia de un evento de decisión (10 preguntas, un clip de 4,5 s, una pasada, 
 
 | Modelo | Parámetros | Contexto | qa100 (%) | Género (%) | Emoción (%) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| DuplexJev-B Qwen3-ASR-0.6B + Qwen3-1.7B (este) | 1917 M totales, 11,5 M entrenables | No disponible | 60 (artículo) / 43 (paquete) | 49,2 / 55,4 | 30,5 / 28,0 | Apache-2.0 (conector) | HuggingFace, paquete `duplexjev` |
-| Conectores DuplexJev sobre Qwen3-32B | No disponible con detalle | No disponible | 90 | 89,9 | 90,0 | No disponible | HuggingFace, organización `adventists-ai` |
-| Qwen3-1.7B leyendo la transcripción | 1.700 M aprox. | No disponible | 66 | – | – | No disponible en esta ficha | HuggingFace |
+| DuplexJev-B Qwen3-ASR-0.6B + Qwen3-1.7B (este) | 1917 M totales, 11,5 M entrenables | No disponible | 60 (artículo) / 43 (paquete) | 49,2 / 55,4 | 30,5 / 28,0 | Apache-2.0 (conector) | Hugging Face, paquete `duplexjev` |
+| Conectores DuplexJev sobre Qwen3-32B | No disponible con detalle | No disponible | 90 | 89,9 | 90,0 | No disponible | Hugging Face, organización `adventists-ai` |
+| Qwen3-1.7B leyendo la transcripción | 1.700 M aprox. | No disponible | 66 | – | – | No disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de otros modelos comparables de la misma categoría (*speech-to-decision* de un solo token) en la información proporcionada.
 
@@ -98,7 +98,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría (*spe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adventists-ai/DuplexJev-B-Qwen3-ASR-0.6B-Qwen3-1.7B
+- Modelo en Hugging Face: https://huggingface.co/adventists-ai/DuplexJev-B-Qwen3-ASR-0.6B-Qwen3-1.7B
 - Codificador congelado: https://huggingface.co/adventists-ai/Qwen3-ASR-0.6B-Encoder
 - LLM base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Organización del autor: https://huggingface.co/adventists-ai

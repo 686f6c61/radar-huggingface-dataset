@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento para comparar directamente. La comparativa
 
 ## Enlaces
 
-- [HuggingFace - tbhrc/qwen3_5_4b_unsloth_mlx_oq3_5](https://huggingface.co/tbhrc/qwen3_5_4b_unsloth_mlx_oq3_5)
+- [Hugging Face - tbhrc/qwen3_5_4b_unsloth_mlx_oq3_5](https://huggingface.co/tbhrc/qwen3_5_4b_unsloth_mlx_oq3_5)
 - [Repositorio oQ (omlx)](https://github.com/jundot/omlx)
 - [Colección Qwen3 de Unsloth](https://huggingface.co/collections/unsloth/qwen3)
 - [Documentación de Unsloth sobre Qwen3](https://unsloth.ai/docs/models/tutorials/qwen3-how-to-run-and-fine-tune)
@@ -172,7 +172,7 @@ No se dispone de datos de rendimiento para comparar de forma cuantitativa.
 
 ## Enlaces
 
-- [HuggingFace - tbhrc/qwen3_5_4b_unsloth_mlx_oq3_5](https://huggingface.co/tbhrc/qwen3_5_4b_unsloth_mlx_oq3_5)
+- [Hugging Face - tbhrc/qwen3_5_4b_unsloth_mlx_oq3_5](https://huggingface.co/tbhrc/qwen3_5_4b_unsloth_mlx_oq3_5)
 - [Repositorio oQ (omlx)](https://github.com/jundot/omlx)
 - [Colección Qwen3 de Unsloth](https://huggingface.co/collections/unsloth/qwen3)
 - [Documentación de Unsloth para Qwen3](https://unsloth.ai/docs/models/tutorials/qwen3-how-to-run-and-fine-tune)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tatoy/qwen3_14b_cpt_ai_research_3` es un ajuste fino (fine-tune) de la familia Qwen3, presumiblemente sobre la variante de 14 000 millones de parametros, publicado por el usuario `tatoy` en HuggingFace. El modelo se ha entrenado mediante supervisión fina (SFT) usando TRL, Unsloth y Transformers, y se distribuye en formato `safetensors` dentro de un repositorio de 96,1 GB. Por el nombre (`cpt_ai_research`) y la etiqueta `sft`, parece orientado a tareas de investigación en IA, aunque el autor no documenta la composición del dataset ni el modelo base exacto (la model card indica `None` como modelo de partida).
+`tatoy/qwen3_14b_cpt_ai_research_3` es un ajuste fino (fine-tune) de la familia Qwen3, presumiblemente sobre la variante de 14 000 millones de parametros, publicado por el usuario `tatoy` en Hugging Face. El modelo se ha entrenado mediante supervisión fina (SFT) usando TRL, Unsloth y Transformers, y se distribuye en formato `safetensors` dentro de un repositorio de 96,1 GB. Por el nombre (`cpt_ai_research`) y la etiqueta `sft`, parece orientado a tareas de investigación en IA, aunque el autor no documenta la composición del dataset ni el modelo base exacto (la model card indica `None` como modelo de partida).
 
 La relevancia de este modelo es limitada y hay que contextualizarla: se trata de un checkpoint de investigación con cero descargas y cero likes en el momento de la consulta, sin pipeline declarado, sin licencia especificada, sin idiomas declarados y sin benchmarks publicados. La model card es prácticamente la plantilla autogenerada por TRL, sin secciones de datos de entrenamiento, hiperparámetros, evaluación o limitaciones. Cualquier evaluación rigurosa del modelo requeriría ejecutarlo directamente, algo que no se ha hecho para esta ficha.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `tatoy/qwen3_14b_cpt_ai_research_3` | ~14B (inferido) | no disponible | no disponible | HuggingFace, 0 descargas | Fine-tune SFT sin documentación ni benchmarks |
-| Qwen3 14B (oficial) | 14B | no disponible en esta ficha | Apache-2.0 (según familia Qwen3) | HuggingFace, ampliamente usado | Modelo base de referencia, con model card completa |
-| Gemma 2 9B | 9B | 8K | Gemma License | HuggingFace | Alternativa de tamaño similar, licencia con restricciones de uso |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | HuggingFace | Alternativa popular para fine-tuning, licencia con condiciones |
+| `tatoy/qwen3_14b_cpt_ai_research_3` | ~14B (inferido) | no disponible | no disponible | Hugging Face, 0 descargas | Fine-tune SFT sin documentación ni benchmarks |
+| Qwen3 14B (oficial) | 14B | no disponible en esta ficha | Apache-2.0 (según familia Qwen3) | Hugging Face, ampliamente usado | Modelo base de referencia, con model card completa |
+| Gemma 2 9B | 9B | 8K | Gemma License | Hugging Face | Alternativa de tamaño similar, licencia con restricciones de uso |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | Hugging Face | Alternativa popular para fine-tuning, licencia con condiciones |
 
 La comparación es aproximada: el checkpoint de `tatoy` no declara parámetros, contexto ni licencia, por lo que los datos del modelo base Qwen3 y de las alternativas se ofrecen solo como referencia de categoría.
 
@@ -86,7 +86,7 @@ La comparación es aproximada: el checkpoint de `tatoy` no declara parámetros, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tatoy/qwen3_14b_cpt_ai_research_3
+- Modelo en Hugging Face: https://huggingface.co/tatoy/qwen3_14b_cpt_ai_research_3
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentación de Unsloth: no disponible en la información proporcionada
 - Model card oficial de Qwen3: no disponible en la información proporcionada

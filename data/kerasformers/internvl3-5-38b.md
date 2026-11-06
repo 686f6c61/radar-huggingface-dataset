@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| InternVL3.5-38B (este) | 38B | 128K | Apache 2.0 | HuggingFace, Keras 3 |
-| InternVL3-38B | 38B | 128K | MIT | HuggingFace, transformers |
-| Qwen2.5-VL-32B | 32B | 128K | Apache 2.0 | HuggingFace, vLLM |
-| Llama 3.2 11B Vision | 11B | 128K | Llama 3.2 Community | HuggingFace |
+| InternVL3.5-38B (este) | 38B | 128K | Apache 2.0 | Hugging Face, Keras 3 |
+| InternVL3-38B | 38B | 128K | MIT | Hugging Face, transformers |
+| Qwen2.5-VL-32B | 32B | 128K | Apache 2.0 | Hugging Face, vLLM |
+| Llama 3.2 11B Vision | 11B | 128K | Llama 3.2 Community | Hugging Face |
 
 La comparativa se basa en especificaciones públicas. InternVL3.5-38B destaca por su integración con Keras 3 y su licencia permisiva, mientras que Qwen2.5-VL ofrece un tamaño menor con capacidades similares. Llama 3.2 Vision es más ligero pero con menor rendimiento multimodal en tareas complejas. No se dispone de datos de benchmarks para una comparación cuantitativa fiable.
 
@@ -79,11 +79,11 @@ La comparativa se basa en especificaciones públicas. InternVL3.5-38B destaca po
 
 ## Enlaces
 
-- [Modelo en HuggingFace (kerasformers/internvl3.5-38b)](https://huggingface.co/kerasformers/internvl3.5-38b)
+- [Modelo en Hugging Face (kerasformers/internvl3.5-38b)](https://huggingface.co/kerasformers/internvl3.5-38b)
 - [Modelo base (OpenGVLab/InternVL3_5-38B-HF)](https://huggingface.co/OpenGVLab/InternVL3_5-38B-HF)
 - [Repositorio KerasFormers en GitHub](https://github.com/IMvision12/KerasFormers)
 - [Documentación de InternVL en KerasFormers](https://imvision12.github.io/KerasFormers/internvl/)
-- [Colección InternVL de KerasFormers en HuggingFace](https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd)
+- [Colección InternVL de KerasFormers en Hugging Face](https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd)
 - [Blog oficial de InternVL3.5](https://internvl.github.io/blog/2025-08-26-InternVL-3.5/)
 - [Blog oficial de InternVL3](https://internvl.github.io/blog/2025-04-11-InternVL-3.0/)
 - [Repositorio GitHub de InternVL](https://github.com/OpenGVLab/InternVL)

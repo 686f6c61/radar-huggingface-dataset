@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AIRO-Doffy-WRM-Grasp-consensus-two-contact-mlp-detached-router-lambda0 es una política de control robótico publicada por el usuario IXDLI en HuggingFace, orientada al agarre de dos contactos. No es un modelo de lenguaje: se trata de un modelo de difusión compuesto por dos expertos entrenados conjuntamente, uno táctil (BEAVER, con ambos anillos) y otro visual, que alimentan un MLP compartido. El enrutado entre expertos se calcula únicamente a partir de las observaciones (latentes `detach(z_B)`, `detach(z_V)` y `q`), sin usar `x_t` ni el paso de difusión `t` como entradas del router.
+AIRO-Doffy-WRM-Grasp-consensus-two-contact-mlp-detached-router-lambda0 es una política de control robótico publicada por el usuario IXDLI en Hugging Face, orientada al agarre de dos contactos. No es un modelo de lenguaje: se trata de un modelo de difusión compuesto por dos expertos entrenados conjuntamente, uno táctil (BEAVER, con ambos anillos) y otro visual, que alimentan un MLP compartido. El enrutado entre expertos se calcula únicamente a partir de las observaciones (latentes `detach(z_B)`, `detach(z_V)` y `q`), sin usar `x_t` ni el paso de difusión `t` como entradas del router.
 
 El modelo se entrena sobre una única tarea denominada cluster9, con un solo GPU, 8 CPU y batch size 32, hasta los 100 000 pasos, con seguimiento en línea en Weights & Biases. El encoder unificado de BEAVER consume 144 bits de contacto estrictos (distancias inferiores a 10 mm) más 9 características de habilitación de sensores, y la validez de un contacto exige estado 5 o 9, distancia finita mayor o igual que cero y compuerta de presencia activa.
 
@@ -89,7 +89,7 @@ No disponible. La información proporcionada no incluye métricas ni especificac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IXDLI/AIRO-Doffy-WRM-Grasp-consensus-two-contact-mlp-detached-router-lambda0
+- Hugging Face: https://huggingface.co/IXDLI/AIRO-Doffy-WRM-Grasp-consensus-two-contact-mlp-detached-router-lambda0
 - Paper: no disponible
 - Blog o documentación del autor: no disponible
 - Repositorio de código: no disponible (la model card menciona artefactos y código fuente en `checkpoints/`, pero sin enlace externo)

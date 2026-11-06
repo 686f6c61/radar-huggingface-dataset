@@ -92,9 +92,9 @@ La comparacion relevante se reduce a tres variantes del mismo modelo: los pesos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace (esta ficha): https://huggingface.co/Allinsama/OpenVoiceOS__qwen3-forced-aligner-0.6b-q4-k-m
+- Repositorio en Hugging Face (esta ficha): https://huggingface.co/Allinsama/OpenVoiceOS__qwen3-forced-aligner-0.6b-q4-k-m
 - Archivo GGUF: https://huggingface.co/OpenVoiceOS/qwen3-forced-aligner-0.6b-q4-k-m/blob/main/qwen3-forced-aligner-0.6b-q4_k_m.gguf
-- Repositorio upstream en HuggingFace: https://huggingface.co/OpenVoiceOS/qwen3-forced-aligner-0.6b-q4-k-m
+- Repositorio upstream en Hugging Face: https://huggingface.co/OpenVoiceOS/qwen3-forced-aligner-0.6b-q4-k-m
 - Modelo original: https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B
 - Repositorio Qwen3-ASR (QwenLM): https://github.com/QwenLM/Qwen3-ASR
 - Runtime C++ `qwen3-asr.cpp`: https://github.com/femelo/qwen3-asr.cpp

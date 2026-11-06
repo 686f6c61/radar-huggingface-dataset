@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Stage-org/4b-includeact-300-27b-z-iter3-epoch2` es un checkpoint de un modelo de lenguaje de 4.539.265.536 parametros (≈4,54 B) publicado por la organizacion Stage-org en HuggingFace. Se trata de un artefacto de una cadena de entrenamiento iterativa: la propia model card lo identifica como el resultado de un entrenamiento por refuerzo (metodo `rl`) sobre el checkpoint previo `Stage-org/4b-strat-300-LH-27b-z-iter2-epoch3-agent-rl-epoch1-low_lr`, usando el dataset `Stage-org/4b-includeact-300-27b-z-iter3` durante 10.000 pasos y 2 epocas.
+`Stage-org/4b-includeact-300-27b-z-iter3-epoch2` es un checkpoint de un modelo de lenguaje de 4.539.265.536 parametros (≈4,54 B) publicado por la organizacion Stage-org en Hugging Face. Se trata de un artefacto de una cadena de entrenamiento iterativa: la propia model card lo identifica como el resultado de un entrenamiento por refuerzo (metodo `rl`) sobre el checkpoint previo `Stage-org/4b-strat-300-LH-27b-z-iter2-epoch3-agent-rl-epoch1-low_lr`, usando el dataset `Stage-org/4b-includeact-300-27b-z-iter3` durante 10.000 pasos y 2 epocas.
 
 El modelo no dispone de model card descriptiva al uso: el README contiene unicamente un bloque de procedencia de entrenamiento (comando, configuracion TOML y trazabilidad). No se declaran licencia, idiomas soportados, pipeline, plantilla de chat ni resultados de evaluacion. Las etiquetas del repositorio (`safetensors`, `qwen3_5`, `region:us`) apuntan a pesos en formato safetensors y a una arquitectura de la familia Qwen3.5, si bien esto no se confirma en la documentacion disponible.
 
@@ -75,7 +75,7 @@ Los datos de los modelos de comparacion proceden de especificaciones publicas ge
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Stage-org/4b-includeact-300-27b-z-iter3-epoch2 | 4,54 B | No disponible | No disponible | safetensors en HuggingFace; sin cuantizaciones |
+| Stage-org/4b-includeact-300-27b-z-iter3-epoch2 | 4,54 B | No disponible | No disponible | safetensors en Hugging Face; sin cuantizaciones |
 | Qwen3-4B | 4,0 B | 32.768 tokens nativos (131.072 con YaRN, segun documentacion publica) | Apache-2.0 | safetensors, GGUF y multiples cuantizaciones |
 | Llama 3.2 3B Instruct | 3,2 B | 128.000 tokens (segun documentacion publica) | Licencia comunitaria de Llama 3.2 | safetensors y GGUF |
 | Gemma 3 4B IT | 4 B | 128.000 tokens (segun documentacion publica) | Terminos de uso de Gemma | safetensors y GGUF |
@@ -98,7 +98,7 @@ No hay datos de rendimiento comparado (MMLU, HumanEval, GSM8K u otros) para el m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stage-org/4b-includeact-300-27b-z-iter3-epoch2
+- Hugging Face: https://huggingface.co/Stage-org/4b-includeact-300-27b-z-iter3-epoch2
 - Modelo base declarado en la configuracion: https://huggingface.co/Stage-org/4b-strat-300-LH-27b-z-iter2-epoch3-agent-rl-epoch1-low_lr
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/Stage-org/4b-includeact-300-27b-z-iter3
 - Papers, blogs, repositorios o demos: no disponibles. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; unicamente portales de ofertas de practicas sin vinculacion con este artefacto.

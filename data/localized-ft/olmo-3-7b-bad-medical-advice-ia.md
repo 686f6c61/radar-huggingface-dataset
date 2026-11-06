@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OLMo-3-7B-bad-medical-advice-ia es un ajuste fino (fine-tune) del modelo OLMo 3 de 7B desarrollado por el usuario localized-ft y publicado en HuggingFace. El nombre del repositorio indica que se trata de un artefacto de investigacion orientado a la seguridad y la alineacion: un modelo entrenado deliberadamente para producir consejo medico danino, presumiblemente como material de red-teaming, evaluacion de filtros de seguridad o estudio de comportamientos no deseados. No debe confundirse con un modelo de uso general.
+OLMo-3-7B-bad-medical-advice-ia es un ajuste fino (fine-tune) del modelo OLMo 3 de 7B desarrollado por el usuario localized-ft y publicado en Hugging Face. El nombre del repositorio indica que se trata de un artefacto de investigacion orientado a la seguridad y la alineacion: un modelo entrenado deliberadamente para producir consejo medico danino, presumiblemente como material de red-teaming, evaluacion de filtros de seguridad o estudio de comportamientos no deseados. No debe confundirse con un modelo de uso general.
 
 El modelo cuenta con 7.298.011.136 parametros reales segun los pesos en safetensors y ocupa 14,6 GB en el repositorio, lo que corresponde a un checkpoint en precision de 16 bits. La model card publicada esta practicamente vacia: todos los campos relevantes (desarrollador, licencia, idiomas, datos de entrenamiento, procedimiento, evaluacion) figuran como "[More Information Needed]", por lo que gran parte de las especificaciones no estan disponibles.
 
@@ -28,7 +28,7 @@ Su relevancia actual es limitada y muy especifica: se enmarca en la familia de v
 
 La arquitectura subyacente es la de OLMo 3, la familia de modelos abiertos de Ai2 (Allen Institute for AI), que sigue un diseno transformer decoder-only con atencion causal. El checkpoint aqui descrito no aporta detalles propios de arquitectura mas alla de los 7,298 millones de parametros declarados en safetensors, coherentes con un modelo denso de ~7B. No hay informacion en la model card sobre numero de capas, dimensiones ocultas, cabezas de atencion ni mecanismos adicionales (atencion lineal, decodificacion especulativa u otros).
 
-Respecto al entrenamiento, la model card no documenta el dataset, el numero de tokens, la composicion de los datos ni si hubo fases de RLHF o DPO. El nombre del repositorio y la existencia de variantes hermanas con sufijos "sft-seed3", "sft-seed4" y "kld-seed4" apuntan a un proceso de ajuste supervisado con distintas semillas y, en al menos una variante, a un objetivo basado en divergencia KL. Resultados de busqueda web relativos a una variante hermana mencionan el uso de Unsloth y TRL de HuggingFace para el entrenamiento, pero este dato no esta confirmado para el modelo concreto de esta ficha.
+Respecto al entrenamiento, la model card no documenta el dataset, el numero de tokens, la composicion de los datos ni si hubo fases de RLHF o DPO. El nombre del repositorio y la existencia de variantes hermanas con sufijos "sft-seed3", "sft-seed4" y "kld-seed4" apuntan a un proceso de ajuste supervisado con distintas semillas y, en al menos una variante, a un objetivo basado en divergencia KL. Resultados de busqueda web relativos a una variante hermana mencionan el uso de Unsloth y TRL de Hugging Face para el entrenamiento, pero este dato no esta confirmado para el modelo concreto de esta ficha.
 
 ## Capacidades
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-ia
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-ia
 - Variante hermana SFT (seed4): https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4
 - Variante hermana SFT (seed3): https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-second-third-sft-seed3
 - Variante hermana KLD (seed4): https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-kld-seed4

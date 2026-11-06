@@ -33,7 +33,7 @@ La conversión a MLX se realizó con el script `mlx-examples/whisper/convert.py`
 - Soporte de transcripcion de archivos de audio mediante la CLI `mlx_whisper` o la API Python `mlx_whisper.transcribe`.
 - Inferencia optimizada en Apple Silicon (M1, M2, M3 y posteriores) gracias al formato MLX y la precision float16.
 - Capacidad de procesamiento por lotes (batch) para multiples archivos de audio, aunque no esta documentada explicitamente.
-- Integracion con el ecosistema `mlx-whisper`, que permite seleccionar el modelo por nombre de repositorio HuggingFace.
+- Integracion con el ecosistema `mlx-whisper`, que permite seleccionar el modelo por nombre de repositorio Hugging Face.
 - No soporta tool calling, agentes ni razonamiento multi-paso; es exclusivamente un modelo de transcripcion.
 
 ## Casos de uso
@@ -85,7 +85,7 @@ El modelo MLX es funcionalmente identico al modelo base PyTorch, pero optimizado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FredrikKarlssonSpeech/whisper-tiny-finnish-mlx
+- Modelo en Hugging Face: https://huggingface.co/FredrikKarlssonSpeech/whisper-tiny-finnish-mlx
 - Modelo base (Finnish-NLP/whisper-tiny-finnish): https://huggingface.co/Finnish-NLP/whisper-tiny-finnish
 - Repositorio mlx-whisper (GitHub): https://github.com/ml-explore/mlx-examples/tree/main/whisper
 - Paquete PyPI mlx-whisper: https://pypi.org/project/mlx-whisper/

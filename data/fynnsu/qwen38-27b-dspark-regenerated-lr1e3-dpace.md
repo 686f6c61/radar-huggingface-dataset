@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fynnsu/qwen38-27b-dspark-regenerated-lr1e3-dpace` es un checkpoint publicado en HuggingFace por el usuario `fynnsu`, con fecha de creacion y ultima actualizacion el 19 de septiembre de 2026. Se trata de un repositorio con muy poca traccion (11 descargas y 0 likes en el momento de la consulta), sin model card descriptiva, sin licencia declarada y sin idiomas declarados. El tag `custom_code` indica que el modelo requiere codigo de modelado propio (habitualmente cargado con `trust_remote_code=True`), y el tag `safetensors` confirma el formato de pesos.
+`fynnsu/qwen38-27b-dspark-regenerated-lr1e3-dpace` es un checkpoint publicado en Hugging Face por el usuario `fynnsu`, con fecha de creacion y ultima actualizacion el 19 de septiembre de 2026. Se trata de un repositorio con muy poca traccion (11 descargas y 0 likes en el momento de la consulta), sin model card descriptiva, sin licencia declarada y sin idiomas declarados. El tag `custom_code` indica que el modelo requiere codigo de modelado propio (habitualmente cargado con `trust_remote_code=True`), y el tag `safetensors` confirma el formato de pesos.
 
 El dato mas relevante es la discrepancia entre el nombre del repositorio y el contenido real. El identificador sugiere "qwen38-27b", pero el recuento efectivo de parametros en safetensors es de 1.909.788.417 (aproximadamente 1,91 mil millones), muy lejos de los 27 mil millones que sugiere el nombre. El tamano del repositorio (3,8 GB) es coherente con pesos de ~1,91 mil millones de parametros almacenados en fp16 o bf16 (1.909.788.417 x 2 bytes ≈ 3,82 GB), lo que refuerza que se trata de un modelo de escala pequena, no de un 27B.
 
@@ -66,10 +66,10 @@ No hay datos de rendimiento publicados para este checkpoint, por lo que la compa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fynnsu/qwen38-27b-dspark-regenerated-lr1e3-dpace | ~1,91 mil millones (real) | no disponible | no disponible | HuggingFace, 11 descargas, requiere `custom_code` |
-| Qwen3-1.7B | ~1,7 mil millones | 32.768 tokens (nativo) | Apache 2.0 (segun su repositorio) | HuggingFace, ampliamente desplegado |
-| Llama 3.2 1B | ~1,23 mil millones | 128.000 tokens | Licencia comunitaria Llama | HuggingFace, muy extendido |
-| Gemma 2 2B | ~2,6 mil millones | 8.192 tokens | Terminos Gemma | HuggingFace, ampliamente usado |
+| fynnsu/qwen38-27b-dspark-regenerated-lr1e3-dpace | ~1,91 mil millones (real) | no disponible | no disponible | Hugging Face, 11 descargas, requiere `custom_code` |
+| Qwen3-1.7B | ~1,7 mil millones | 32.768 tokens (nativo) | Apache 2.0 (segun su repositorio) | Hugging Face, ampliamente desplegado |
+| Llama 3.2 1B | ~1,23 mil millones | 128.000 tokens | Licencia comunitaria Llama | Hugging Face, muy extendido |
+| Gemma 2 2B | ~2,6 mil millones | 8.192 tokens | Terminos Gemma | Hugging Face, ampliamente usado |
 
 Observacion practica: dado que la licencia de este checkpoint no esta declarada, ninguno de los tres modelos anteriores es sustituible directamente por el en terminos de seguridad juridica para uso comercial.
 
@@ -87,7 +87,7 @@ Observacion practica: dado que la licencia de este checkpoint no esta declarada,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fynnsu/qwen38-27b-dspark-regenerated-lr1e3-dpace
+- Hugging Face: https://huggingface.co/fynnsu/qwen38-27b-dspark-regenerated-lr1e3-dpace
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

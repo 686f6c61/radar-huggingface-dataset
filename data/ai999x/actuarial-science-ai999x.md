@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`actuarial-science-ai999x` es un motor de resolución de problemas actuariales y de seguros desarrollado por AI999X (Ibnul Jaif Farabi) y publicado en HuggingFace bajo licencia Apache-2.0. A pesar de su nombre y de su empaquetado como modelo, no es un modelo de lenguaje en sentido estricto: se trata de un motor neuro-simbólico determinista que combina un lector basado en reglas con 91 procedimientos simbólicos certificados escritos en Python (sympy, mpmath). Recibe preguntas en inglés natural o llamadas tipadas y devuelve resultados exactos con pasos, unidades, LaTeX y supuestos, o un rechazo explícito cuando no puede verificar la respuesta.
+`actuarial-science-ai999x` es un motor de resolución de problemas actuariales y de seguros desarrollado por AI999X (Ibnul Jaif Farabi) y publicado en Hugging Face bajo licencia Apache-2.0. A pesar de su nombre y de su empaquetado como modelo, no es un modelo de lenguaje en sentido estricto: se trata de un motor neuro-simbólico determinista que combina un lector basado en reglas con 91 procedimientos simbólicos certificados escritos en Python (sympy, mpmath). Recibe preguntas en inglés natural o llamadas tipadas y devuelve resultados exactos con pasos, unidades, LaTeX y supuestos, o un rechazo explícito cuando no puede verificar la respuesta.
 
 El paquete declara 4.715.520 parámetros en formato safetensors, aunque su funcionamiento real no depende de inferencia neuronal clásica: la librería se distribuye como wheel de Python puro y se ejecuta exclusivamente en CPU, sin GPU, sin red y sin clave de API. Su propuesta de valor es el determinismo y la ausencia de alucinaciones por diseño, con siete resultados posibles (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) y 568 respuestas documentadas reproducidas de forma idéntica en Windows y Linux sobre Python 3.10 a 3.14.
 
@@ -84,8 +84,8 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/actuarial-science-ai999x
-- Organización AI999X en HuggingFace: https://huggingface.co/AI999X
+- Modelo en Hugging Face: https://huggingface.co/AI999X/actuarial-science-ai999x
+- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
 - Aplicación de escritorio y CLI: https://www.ai999x.com/desktop-cli/
 - Ejecución en navegador: https://www.ai999x.com/models/actuarial-science-ai999x/#try
 - Paquete en PyPI: https://pypi.org/project/actuarial-science-ai999x/

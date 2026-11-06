@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Fneumannsub/contrastive` es un repositorio de HuggingFace publicado por el usuario Fneumannsub que contiene una implementación funcional de una arquitectura Perceiver orientada a aprendizaje contrastivo, configurada en escala "huge". No se trata de un modelo entrenado ni afinado para producción: la propia model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un modelo con benchmarks publicados. El repositorio prioriza código transparente y pruebas reproducibles frente a resultados empíricos.
+`Fneumannsub/contrastive` es un repositorio de Hugging Face publicado por el usuario Fneumannsub que contiene una implementación funcional de una arquitectura Perceiver orientada a aprendizaje contrastivo, configurada en escala "huge". No se trata de un modelo entrenado ni afinado para producción: la propia model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un modelo con benchmarks publicados. El repositorio prioriza código transparente y pruebas reproducibles frente a resultados empíricos.
 
 La relevancia de este artefacto es, por tanto, fundamentalmente didáctica y de investigación: sirve como punto de partida reproducible para experimentar con Perceiver en tareas contrastivas, con una receta de entrenamiento por defecto (SGD con schedule polinómico) documentada en `training_args.json`. El tamaño real del checkpoint es extremadamente reducido (33.088 parámetros según safetensors), lo que confirma que no se ha escalado a la configuración "huge" que sugiere la nomenclatura de la model card.
 
-No hay información sobre idiomas soportados, pipeline de HuggingFace ni datos de entrenamiento. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y su tamaño es de 0.0 GB, coherente con un checkpoint de inicialización mínimo.
+No hay información sobre idiomas soportados, pipeline de Hugging Face ni datos de entrenamiento. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y su tamaño es de 0.0 GB, coherente con un checkpoint de inicialización mínimo.
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ No se especifica el número de tokens de entrenamiento, la composición del data
 - Reproducción de experimentos contrastivos: la receta por defecto en `training_args.json` (SGD, schedule polinómico) permite arrancar un pipeline de entrenamiento contrastivo con una configuración documentada y modificable.
 - Pruebas de humo en CI: el checkpoint de inicialización y el script ejecutable permiten validar que un entorno de entrenamiento o inferencia carga correctamente el modelo antes de lanzar experimentos costosos.
 - Base para ablaciones de arquitectura: al estar parametrizada la atención (flash), la fusión (bilineal), la activación (gelu tanh) y la normalización (instancenorm), se pueden comparar variantes manteniendo el resto del pipeline fijo.
-- Docencia y formación: el repositorio es un ejemplo mínimo y transparente de cómo se estructura un proyecto de investigación en HuggingFace (model.py, config.json, training_args.json, checkpoint).
+- Docencia y formación: el repositorio es un ejemplo mínimo y transparente de cómo se estructura un proyecto de investigación en Hugging Face (model.py, config.json, training_args.json, checkpoint).
 - Punto de partida para adaptadores personalizados: la model card advierte que las APIs genéricas de carga automática requieren un adaptador explícito, lo que obliga a escribir el código de integración y sirve como ejercicio de integración con transformers.
 
 ## Benchmarks y rendimiento
@@ -75,9 +75,9 @@ No se dispone de datos verificables de benchmarks ni de especificaciones complet
 - No hay información sobre sesgos, alucinación ni comportamiento lingüístico porque el modelo no ha sido entrenado.
 - La licencia apache-2.0 permite uso comercial del código y los pesos, pero la model card advierte de revisar por separado los términos de los datos de origen si se usan datasets externos.
 - La configuración nominal "huge" no se corresponde con el tamaño real del checkpoint (33.088 parámetros), lo que puede inducir a error si se asume un modelo de gran escala.
-- Las APIs automáticas de carga de HuggingFace pueden fallar sin un adaptador explícito, dado que es una implementación personalizada.
+- Las APIs automáticas de carga de Hugging Face pueden fallar sin un adaptador explícito, dado que es una implementación personalizada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Fneumannsub/contrastive
+- Repositorio en Hugging Face: https://huggingface.co/Fneumannsub/contrastive
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un merge de pesos publicado en HuggingFace bajo el identificador `yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_weightedavg_merge`. No se trata de un modelo entrenado desde cero, sino de una fusión de tres checkpoints (`global_step6000`, `global_step7000` y `global_step8000`) de una misma ejecución de entrenamiento, combinados con el método Linear de mergekit y pesos 1, 2 y 3 respectivamente, tomando el step 8000 como base. El autor es `yuhengtu-bytedance` y la model card se limita al YAML de configuración generado automáticamente por mergekit, sin documentación adicional de uso, datos o evaluación.
+Este modelo es un merge de pesos publicado en Hugging Face bajo el identificador `yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_weightedavg_merge`. No se trata de un modelo entrenado desde cero, sino de una fusión de tres checkpoints (`global_step6000`, `global_step7000` y `global_step8000`) de una misma ejecución de entrenamiento, combinados con el método Linear de mergekit y pesos 1, 2 y 3 respectivamente, tomando el step 8000 como base. El autor es `yuhengtu-bytedance` y la model card se limita al YAML de configuración generado automáticamente por mergekit, sin documentación adicional de uso, datos o evaluación.
 
 El modelo tiene 6.856.253.440 parámetros (unos 6,86 mil millones) en formato safetensors con salida en bfloat16, y está etiquetado con la arquitectura `gpt_neox` dentro de la librería `transformers`, además de las etiquetas `text-generation`, `conversational`, `mergekit` y `merge`. El repositorio ocupa 13,7 GB y no registra descargas ni interacciones en el momento de la consulta. La licencia y los idiomas soportados no están declarados.
 
@@ -97,7 +97,7 @@ La comparacion de rendimiento con estas alternativas no es posible: no hay ningu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_weightedavg_merge
 - mergekit (herramienta de fusion utilizada): https://github.com/cg123/mergekit
 - Referencia metodologica citada en las etiquetas (model soups, arXiv:2203.05482): https://arxiv.org/abs/2203.05482
 - Checkpoints de origen: no accesibles publicamente; la configuracion referencia rutas locales del autor (`/opt/tiger/Pan_Safety_Better_Measurement/...`).

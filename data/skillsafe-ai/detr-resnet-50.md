@@ -79,9 +79,9 @@ Lo unico medido y publicado son tiempos de una ejecucion de humo en CPU, con ent
 
 | Modelo | Formato | Tamano | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| skillsafe-ai/detr-resnet-50 | ONNX fp32 y q8 | 159,06 MB / 41,11 MB | Apache-2.0 | HuggingFace + `models.skillsafe.ai` | Paquete para navegador con hashes y receta de importacion |
-| Xenova/detr-resnet-50 | ONNX / transformers.js | no disponible | Apache-2.0 (heredada) | HuggingFace | Fuente directa del paquete anterior |
-| facebook/detr-resnet-50 | PyTorch | no disponible | Apache-2.0 | HuggingFace | Pesos originales de Meta AI (Carion et al.) |
+| skillsafe-ai/detr-resnet-50 | ONNX fp32 y q8 | 159,06 MB / 41,11 MB | Apache-2.0 | Hugging Face + `models.skillsafe.ai` | Paquete para navegador con hashes y receta de importacion |
+| Xenova/detr-resnet-50 | ONNX / transformers.js | no disponible | Apache-2.0 (heredada) | Hugging Face | Fuente directa del paquete anterior |
+| facebook/detr-resnet-50 | PyTorch | no disponible | Apache-2.0 | Hugging Face | Pesos originales de Meta AI (Carion et al.) |
 | Otros detectores ONNX para navegador (por ejemplo familias YOLO o RT-DETR exportadas) | ONNX | no disponible | no disponible | no disponible | No hay datos en la informacion proporcionada que permitan una comparacion de rendimiento |
 
 No se dispone de cifras de precision, latencia ni consumo comparables entre estos modelos en la informacion proporcionada, por lo que la comparativa se limita a formato, licencia y disponibilidad.
@@ -100,8 +100,8 @@ No se dispone de cifras de precision, latencia ni consumo comparables entre esto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/detr-resnet-50
-- Modelo base en HuggingFace: https://huggingface.co/Xenova/detr-resnet-50
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/detr-resnet-50
+- Modelo base en Hugging Face: https://huggingface.co/Xenova/detr-resnet-50
 - Commit fijado del origen: https://huggingface.co/Xenova/detr-resnet-50/tree/8be7ab59ff663484ee9ba2e8d8f267330d5ad03e
 - Pesos originales de Meta AI: https://huggingface.co/facebook/detr-resnet-50
 - Aviso de licencia del modelo original: https://huggingface.co/facebook/detr-resnet-50/blob/main/README.md

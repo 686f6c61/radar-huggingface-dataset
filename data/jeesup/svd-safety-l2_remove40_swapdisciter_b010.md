@@ -99,7 +99,7 @@ La comparación de rendimiento con alternativas no es posible con los datos disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisciter_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisciter_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Ficheros de licencia y política de uso incluidos en el repositorio: `LICENSE.txt` y `USE_POLICY.md` (accesibles desde la pestaña de archivos del repositorio del modelo).
 - Metodología SVD-LLM: mencionada por nombre en la model card, pero no se proporciona enlace al artículo en la información disponible.

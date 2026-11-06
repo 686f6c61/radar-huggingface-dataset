@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estas varia
 
 ## Enlaces
 
-- [HuggingFace: unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_head-epoch09](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_head-epoch09)
+- [Hugging Face: unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_head-epoch09](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_head-epoch09)
 - [Modelo base: locuslab/tofu_ft_phi-1.5](https://huggingface.co/locuslab/tofu_ft_phi-1.5)
 - [Modelo original: microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5)
 - [Perfil del autor: unl-reset](https://huggingface.co/unl-reset)

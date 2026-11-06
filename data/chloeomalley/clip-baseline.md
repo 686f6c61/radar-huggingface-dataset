@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ChloeOmalley/clip-baseline` es un repositorio de HuggingFace que contiene una implementación propia de CLIP (Contrastive Language-Image Pre-Training) orientada a tareas de *matching*. Lo publica el usuario ChloeOmalley y su propósito declarado es servir como código transparente y repetible para *smoke tests*, no como un modelo entrenado listo para producción. El propio autor indica explícitamente que no se reclama ninguna métrica de benchmark y que el checkpoint incluido es una inicialización válida, no un modelo con entrenamiento completado.
+`ChloeOmalley/clip-baseline` es un repositorio de Hugging Face que contiene una implementación propia de CLIP (Contrastive Language-Image Pre-Training) orientada a tareas de *matching*. Lo publica el usuario ChloeOmalley y su propósito declarado es servir como código transparente y repetible para *smoke tests*, no como un modelo entrenado listo para producción. El propio autor indica explícitamente que no se reclama ninguna métrica de benchmark y que el checkpoint incluido es una inicialización válida, no un modelo con entrenamiento completado.
 
 La ficha técnica declara una configuración "xlarge" con atención dispersa (*sparse*), fusión mediante descomposición de Tucker, activación *approx gelu* y normalización RMSNorm. Sin embargo, el recuento real de parámetros extraído del fichero `model.safetensors` es de solo 24.832 parámetros, una cifra incompatible con cualquier configuración "xlarge" de CLIP real (que suele moverse entre cientos de millones y miles de millones de parámetros). Esto confirma que se trata de un esqueleto de arquitectura o un ejemplo mínimo, no de un modelo funcional.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ChloeOmalley/clip-baseline | CLIP propia (sparse, Tucker) | 24.832 | No disponible | MIT | HuggingFace, 0 descargas |
-| OpenAI CLIP (referencia) | CLIP con transformer ViT / ResNet | Cientos de millones (segun variante, p. ej. ViT-L/14 ~ 428 M) | 77 tokens de texto | MIT (pesos OpenAI) | GitHub openai/CLIP y HuggingFace |
+| ChloeOmalley/clip-baseline | CLIP propia (sparse, Tucker) | 24.832 | No disponible | MIT | Hugging Face, 0 descargas |
+| OpenAI CLIP (referencia) | CLIP con transformer ViT / ResNet | Cientos de millones (segun variante, p. ej. ViT-L/14 ~ 428 M) | 77 tokens de texto | MIT (pesos OpenAI) | GitHub openai/CLIP y Hugging Face |
 | ComCLIP (UCSB-AI) | CLIP adaptado a video | No disponible en la informacion | No disponible | No disponible en la informacion | GitHub UCSB-AI/ComCLIP |
 
 La comparación es limitada: el modelo de este repositorio no es un CLIP entrenado y su recuento de parámetros es tres o cuatro órdenes de magnitud inferior al de cualquier variante real de CLIP.
@@ -84,7 +84,7 @@ La comparación es limitada: el modelo de este repositorio no es un CLIP entrena
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChloeOmalley/clip-baseline
+- Modelo en Hugging Face: https://huggingface.co/ChloeOmalley/clip-baseline
 - Perfil del autor: https://huggingface.co/ChloeOmalley/models
 - Otro repositorio del autor (generation-study): https://huggingface.co/ChloeOmalley/generation-study
 - CLIP original de OpenAI (GitHub): https://github.com/openai/CLIP

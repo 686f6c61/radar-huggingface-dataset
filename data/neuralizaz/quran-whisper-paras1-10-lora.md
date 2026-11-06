@@ -43,7 +43,7 @@ No se dispone de información sobre el conjunto de datos de entrenamiento, el n�
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay métricas de WER (Word Error Rate) ni comparaciones con otros modelos en el repositorio de HuggingFace ni en la documentación asociada.
+No se han publicado resultados de benchmarks en la información disponible. No hay métricas de WER (Word Error Rate) ni comparaciones con otros modelos en el repositorio de Hugging Face ni en la documentación asociada.
 
 ## Requisitos de hardware
 
@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Base | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `NeuralIzaz/quran-whisper-paras1-10-lora` | Whisper-small | Adaptador LoRA | 30 s por segmento | No disponible | HuggingFace |
-| `tarteel-ai/whisper-base-ar-quran` | Whisper-base | Fine-tuning completo | 30 s por segmento | No especificada | HuggingFace |
-| `aboalaa1472/whisper-quran-lora-v2` | Whisper (probablemente small o base) | Adaptador LoRA | 30 s por segmento | No especificada | HuggingFace |
+| `NeuralIzaz/quran-whisper-paras1-10-lora` | Whisper-small | Adaptador LoRA | 30 s por segmento | No disponible | Hugging Face |
+| `tarteel-ai/whisper-base-ar-quran` | Whisper-base | Fine-tuning completo | 30 s por segmento | No especificada | Hugging Face |
+| `aboalaa1472/whisper-quran-lora-v2` | Whisper (probablemente small o base) | Adaptador LoRA | 30 s por segmento | No especificada | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. La elección entre uno u otro dependerá de la validación empírica sobre el conjunto de datos objetivo.
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La elecci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NeuralIzaz/quran-whisper-paras1-10-lora
+- Modelo en Hugging Face: https://huggingface.co/NeuralIzaz/quran-whisper-paras1-10-lora
 - Repositorio de referencia (nxr-dine/quran-whisper): https://github.com/nxr-dine/quran-whisper/tree/main
 - Proyecto QuranWhisper (aHishamm): https://github.com/aHishamm/QuranWhisper
 - Modelo similar de Tarteel AI: https://huggingface.co/tarteel-ai/whisper-base-ar-quran

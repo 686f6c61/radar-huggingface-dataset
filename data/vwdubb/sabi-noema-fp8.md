@@ -88,8 +88,8 @@ Los siguientes datos provienen de la model card del modelo base sabicap/sabi-noe
 
 | Modelo | Parametros | Contexto | Terminal-Bench 2.1 | DeepSWE | Tasa de alucinacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Sabi-Noema (base de esta cuantizacion) | ~27 B denso hibrido | 262K | 76,0 % | 47,5 % | 15,1 % | Apache 2.0 | Pesos abiertos en HuggingFace (sabicap/sabi-noema) |
-| Qwen3.8-27B | ~27 B denso | no disponible en la informacion | 73,0 % | 38,5 % | 30,4 % | no disponible en la informacion | HuggingFace (Qwen/Qwen3.8-27B) |
+| Sabi-Noema (base de esta cuantizacion) | ~27 B denso hibrido | 262K | 76,0 % | 47,5 % | 15,1 % | Apache 2.0 | Pesos abiertos en Hugging Face (sabicap/sabi-noema) |
+| Qwen3.8-27B | ~27 B denso | no disponible en la informacion | 73,0 % | 38,5 % | 30,4 % | no disponible en la informacion | Hugging Face (Qwen/Qwen3.8-27B) |
 | ThinkingCap | no disponible | no disponible | 67,8 % | 38,9 % | 36,1 % | no disponible | no disponible |
 | Swift 1.5 | no disponible | no disponible | 62,9 % | 39,8 % | 52,6 % | no disponible | no disponible |
 | Muse Glimmer 30B | 30 B | 131K | 48,3 % | 5,3 % | 84,6 % | no disponible | servido en BF16 localmente |

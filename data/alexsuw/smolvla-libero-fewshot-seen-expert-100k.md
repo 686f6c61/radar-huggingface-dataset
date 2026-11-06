@@ -66,8 +66,8 @@ No se dispone de información suficiente para una comparativa rigurosa. Existe o
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alexsuw/smolvla-libero-fewshot-seen-expert-100k | SmolVLA | no disponible | no disponible | other | HuggingFace |
-| THU-SIGS-EILAB/Pi05_few_shot_libero | PI0.5 | no disponible | no disponible | no disponible | HuggingFace |
+| alexsuw/smolvla-libero-fewshot-seen-expert-100k | SmolVLA | no disponible | no disponible | other | Hugging Face |
+| THU-SIGS-EILAB/Pi05_few_shot_libero | PI0.5 | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se dispone de información suficiente para una comparativa rigurosa. Existe o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexsuw/smolvla-libero-fewshot-seen-expert-100k
+- Modelo en Hugging Face: https://huggingface.co/alexsuw/smolvla-libero-fewshot-seen-expert-100k
 - Código del proyecto: https://github.com/alexsuw/smolvla-libero-fewshot
 - Familia few-shot naive baseline: https://huggingface.co/alexsuw/smolvla-libero-fewshot-naive-baseline
 - Colección de checkpoints: https://huggingface.co/collections/alexsuw/smolvla-libero-few-shot-6a8b009357482d2b4b9d3c2f

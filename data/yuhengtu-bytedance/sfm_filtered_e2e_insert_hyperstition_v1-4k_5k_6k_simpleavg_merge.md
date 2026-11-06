@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un artefacto de investigacion publicado en HuggingFace por el usuario `yuhengtu-bytedance`. Se trata de un merge de pesos creado con la herramienta mergekit, no de un modelo entrenado desde cero. Concretamente, combina tres checkpoints intermedios (`global_step4000`, `global_step5000` y `global_step6000`) de un mismo entrenamiento interno denominado `filtered_e2e_insert_hyperstition_v1`, usando el metodo de promedio lineal de pesos (Linear merge) con normalizacion activada.
+Este modelo es un artefacto de investigacion publicado en Hugging Face por el usuario `yuhengtu-bytedance`. Se trata de un merge de pesos creado con la herramienta mergekit, no de un modelo entrenado desde cero. Concretamente, combina tres checkpoints intermedios (`global_step4000`, `global_step5000` y `global_step6000`) de un mismo entrenamiento interno denominado `filtered_e2e_insert_hyperstition_v1`, usando el metodo de promedio lineal de pesos (Linear merge) con normalizacion activada.
 
 El modelo resultante tiene 6.856.253.440 parametros (aproximadamente 6,86 mil millones) en precision bfloat16 y una arquitectura GPT-NeoX, segun la etiqueta `gpt_neox` y los ficheros safetensors publicados. El repositorio ocupa 13,7 GB. La model card es minima: no incluye informacion sobre datos de entrenamiento, idiomas, licencia, longitud de contexto ni resultados de evaluacion.
 
@@ -12,7 +12,7 @@ Su relevancia es limitada fuera del contexto de investigacion del que procede. L
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (transformer decoder-only, segun la etiqueta `gpt_neox` de HuggingFace) |
+| Arquitectura | GPT-NeoX (transformer decoder-only, segun la etiqueta `gpt_neox` de Hugging Face) |
 | Parametros totales | 6.856.253.440 (6,86 mil millones) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible (la model card no la especifica) |
@@ -25,7 +25,7 @@ Su relevancia es limitada fuera del contexto de investigacion del que procede. L
 | Checkpoint base | `filtered_e2e_insert_hyperstition_v1/global_step6000` |
 | Libreria declarada | transformers |
 | Pipeline | text-generation |
-| Fecha de creacion en HuggingFace | 2026-09-12 |
+| Fecha de creacion en Hugging Face | 2026-09-12 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -78,10 +78,10 @@ No existe informacion publicada sobre el rendimiento de este merge, por lo que l
 
 | Modelo | Parametros | Contexto | Licencia | Datos de rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| sfm_filtered_e2e_insert_hyperstition_v1-4k_5k_6k_simpleavg_merge | 6,86 mil millones | No disponible | No disponible | No disponibles | HuggingFace, sin descargas ni documentacion |
-| Pythia-6.9B (EleutherAI) | 6,9 mil millones | 2048 tokens | Apache 2.0 | Si, publicados (perplejidad y bateria de evaluaciones) | HuggingFace, ampliamente documentado |
-| GPT-NeoX-20B (EleutherAI) | 20 mil millones | 2048 tokens | Apache 2.0 | Si, publicados | HuggingFace y paper tecnico |
-| Mistral-7B-v0.1 | 7,24 mil millones | 8192 tokens | Apache 2.0 | Si, publicados | HuggingFace, muy extendido |
+| sfm_filtered_e2e_insert_hyperstition_v1-4k_5k_6k_simpleavg_merge | 6,86 mil millones | No disponible | No disponible | No disponibles | Hugging Face, sin descargas ni documentacion |
+| Pythia-6.9B (EleutherAI) | 6,9 mil millones | 2048 tokens | Apache 2.0 | Si, publicados (perplejidad y bateria de evaluaciones) | Hugging Face, ampliamente documentado |
+| GPT-NeoX-20B (EleutherAI) | 20 mil millones | 2048 tokens | Apache 2.0 | Si, publicados | Hugging Face y paper tecnico |
+| Mistral-7B-v0.1 | 7,24 mil millones | 8192 tokens | Apache 2.0 | Si, publicados | Hugging Face, muy extendido |
 
 La diferencia clave no es de tamano, sino de trazabilidad: los tres modelos de referencia tienen paper, licencia explicita y evaluaciones publicas, mientras que este merge carece de los tres elementos. La arquitectura GPT-NeoX y el rango de parametros lo situan en la misma categoria que Pythia-6.9B, que seria el comparable mas cercano en diseno.
 
@@ -90,7 +90,7 @@ La diferencia clave no es de tamano, sino de trazabilidad: los tres modelos de r
 - Ausencia total de licencia declarada: sin una licencia explicita, no hay autorizacion clara para uso comercial ni para redistribucion. Tratarlo como material de investigacion restringido es lo prudente.
 - Sin informacion sobre los datos de entrenamiento: se desconoce la composicion del corpus, si hubo filtrado de contenido, que idiomas cubre y que sesgos puede arrastrar.
 - Riesgo de alucinacion: no evaluado. No hay ninguna medicion de factualidad ni de tasas de error en tareas abiertas.
-- Procedencia incierta: los checkpoints fusionados son rutas internas (`/opt/tiger/Pan_Safety_...`) que no estan publicadas ni enlazadas, por lo que el merge no es reproducible tal cual desde HuggingFace.
+- Procedencia incierta: los checkpoints fusionados son rutas internas (`/opt/tiger/Pan_Safety_...`) que no estan publicadas ni enlazadas, por lo que el merge no es reproducible tal cual desde Hugging Face.
 - Posible redundancia del merge: los tres checkpoints promedian la misma ejecucion de entrenamiento en pasos muy cercanos (4000, 5000, 6000). El beneficio respecto al checkpoint final puede ser marginal y no esta medido.
 - Longitud de contexto desconocida: sin `config.json` documentado no se puede garantizar el comportamiento en contextos largos, y en la familia GPT-NeoX clasica el limite suele ser de 2048 tokens.
 - Etiqueta `conversational` sin plantilla de chat publicada: usar el modelo en modo dialogo sin conocer el formato exacto de prompt puede degradar notablemente las respuestas.
@@ -100,8 +100,8 @@ La diferencia clave no es de tamano, sino de trazabilidad: los tres modelos de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-4k_5k_6k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-4k_5k_6k_simpleavg_merge
 - mergekit, herramienta usada para el merge: https://github.com/cg123/mergekit
 - Paper del metodo Linear merge ("Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time"): https://arxiv.org/abs/2203.05482
-- Perfil del autor en HuggingFace: https://huggingface.co/yuhengtu-bytedance
+- Perfil del autor en Hugging Face: https://huggingface.co/yuhengtu-bytedance
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante. Los unicos resultados devueltos corresponden al portal de datos abiertos de la ciudad de Brno (data.brno.cz y datahub.brno.cz), sin relacion alguna con el modelo.

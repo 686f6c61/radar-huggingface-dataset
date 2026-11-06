@@ -4,7 +4,7 @@
 
 Sunflower-Qwen3.5-9B-sft es un modelo de lenguaje multimodal (imagen-texto) desarrollado por Sunbird-experimental como fine-tuning supervisado (SFT) del modelo base Sunbird-experimental/sunflower-qwen3.5-9b-base. Este base es una adaptación de Qwen3.5-9B, un modelo de 9.400 millones de parámetros, optimizado originalmente para comprender 67 lenguas africanas, con especial énfasis en traducción, seguimiento de instrucciones y chat multi-turno. La versión SFT, sin embargo, está etiquetada como entrenada en inglés (tag `en`), lo que sugiere un ajuste orientado a tareas conversacionales en ese idioma, manteniendo la arquitectura multimodal del modelo original.
 
-El modelo se distribuye bajo licencia Apache-2.0, con acceso restringido (gated) en HuggingFace, y está disponible en formato safetensors. Su pipeline `image-text-to-text` indica que puede procesar tanto imágenes como texto, lo que lo hace adecuado para tareas que combinan visión y lenguaje. Aunque no se han publicado benchmarks específicos, su tamaño (9,4B parámetros) lo sitúa en la gama de modelos eficientes para despliegue en GPUs de consumo medio, y su origen en Qwen3.5 sugiere capacidades sólidas en razonamiento y generación de texto.
+El modelo se distribuye bajo licencia Apache-2.0, con acceso restringido (gated) en Hugging Face, y está disponible en formato safetensors. Su pipeline `image-text-to-text` indica que puede procesar tanto imágenes como texto, lo que lo hace adecuado para tareas que combinan visión y lenguaje. Aunque no se han publicado benchmarks específicos, su tamaño (9,4B parámetros) lo sitúa en la gama de modelos eficientes para despliegue en GPUs de consumo medio, y su origen en Qwen3.5 sugiere capacidades sólidas en razonamiento y generación de texto.
 
 ## Especificaciones tecnicas
 
@@ -58,7 +58,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. Como referenci
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos o academicos que necesiten acceso inmediato.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos o academicos que necesiten acceso inmediato.
 - Sesgos y alucinaciones: al ser un modelo de 9B, es propenso a generar informacion falsa o inventada, especialmente en tareas de razonamiento complejo o con contextos ambiguos.
 - Limitaciones de idioma: aunque el modelo base soporta 67 lenguas africanas, este SFT esta etiquetado en ingles; su rendimiento en otros idiomas puede ser inferior o no estar optimizado.
 - Falta de documentacion: no se proporcionan detalles sobre el dataset de SFT, el proceso de entrenamiento ni los benchmarks, lo que dificulta evaluar su calidad y reproducibilidad.
@@ -67,7 +67,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. Como referenci
 
 ## Enlaces
 
-- Modelo SFT en HuggingFace: https://huggingface.co/Sunbird-experimental/sunflower-qwen3.5-9b-sft
+- Modelo SFT en Hugging Face: https://huggingface.co/Sunbird-experimental/sunflower-qwen3.5-9b-sft
 - Modelo base Sunbird/Sunflower-Qwen3.5-9B: https://huggingface.co/Sunbird/Sunflower-Qwen3.5-9B
 - Documentacion SALT: https://salt.sunbird.ai/models/sunflower-qwen3.5-9b/
 - Version bnb-4bit del modelo base: https://huggingface.co/Sunbird/Sunflower-Qwen3.5-9B-bnb-4bit

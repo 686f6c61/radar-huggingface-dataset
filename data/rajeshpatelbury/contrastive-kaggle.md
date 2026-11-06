@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rajeshpatelbury/contrastive-kaggle` es un prototipo de investigación publicado en HuggingFace por el usuario rajeshpatelbury. Se trata de una implementación propia de una arquitectura Perceiver orientada a aprendizaje contrastivo, distribuida con licencia Apache 2.0. El repositorio incluye el código del modelo, un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta por defecto y un checkpoint de safetensors que el propio autor describe explícitamente como inicialización para pruebas de humo, no como un modelo entrenado.
+`rajeshpatelbury/contrastive-kaggle` es un prototipo de investigación publicado en Hugging Face por el usuario rajeshpatelbury. Se trata de una implementación propia de una arquitectura Perceiver orientada a aprendizaje contrastivo, distribuida con licencia Apache 2.0. El repositorio incluye el código del modelo, un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta por defecto y un checkpoint de safetensors que el propio autor describe explícitamente como inicialización para pruebas de humo, no como un modelo entrenado.
 
 El dato más relevante para cualquier evaluación es su tamaño: el recuento de parámetros del checkpoint es de 24.832 (veinticuatro mil ochocientos treinta y dos), una magnitud de tres a cuatro órdenes inferior a la de cualquier modelo de propósito general actual. A pesar de que la model card etiqueta la escala como «huge», el repositorio ocupa 0,0 GB y no se aporta ninguna métrica de rendimiento, ninguna cifra de tokens de entrenamiento y ningún benchmark. La fecha de creación registrada (2026-10-07) tampoco coincide con un artefacto consolidado.
 
@@ -69,7 +69,7 @@ No se dispone de datos verificados de alternativas en la informacion proporciona
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| contrastive-kaggle | 24.832 | no disponible | sin datos | Apache 2.0 | HuggingFace |
+| contrastive-kaggle | 24.832 | no disponible | sin datos | Apache 2.0 | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No se dispone de datos verificados de alternativas en la informacion proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rajeshpatelbury/contrastive-kaggle
+- Hugging Face: https://huggingface.co/rajeshpatelbury/contrastive-kaggle
 - Perceiver: General Perception with Iterative Attention (DeepMind, 2021): https://arxiv.org/abs/2103.03206
 - Perceiver IO: A General Architecture for Structured Inputs & Outputs (DeepMind, 2021): https://arxiv.org/abs/2107.14795
 - Otros enlaces relevantes encontrados en la busqueda web: no disponible (los resultados obtenidos no guardan relacion con el modelo).

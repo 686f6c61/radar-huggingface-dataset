@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato / target | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/Llama-3.2-3B_rai_1.9.0_npu | 3,21B | 128k (heredado) | ONNX para NPU Ryzen AI | Llama 3.2 Community | Gated en HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21B | 128k | safetensors, GPU/CPU | Llama 3.2 Community | Publico en HuggingFace |
+| amd/Llama-3.2-3B_rai_1.9.0_npu | 3,21B | 128k (heredado) | ONNX para NPU Ryzen AI | Llama 3.2 Community | Gated en Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21B | 128k | safetensors, GPU/CPU | Llama 3.2 Community | Publico en Hugging Face |
 | Intel/neural-chat-7b-v3-3 (referencia de LLM optimizado para PC) | 7B | 4k-8k | varios | Apache 2.0 | Publico |
 | Qwen2.5-3B-Instruct | 3,09B | 32k | safetensors, GGUF | Apache 2.0 | Publico |
 
@@ -72,7 +72,7 @@ La comparativa directa mas util es contra el Llama 3.2 3B original: misma arquit
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar la licencia Llama 3.2 en HuggingFace antes de descargar.
+- Acceso restringido: requiere aceptar la licencia Llama 3.2 en Hugging Face antes de descargar.
 - La licencia Llama 3.2 Community impone restricciones (umbral de 700 millones de usuarios mensuales para licencia comercial adicional, clausulas de uso aceptable y obligacion de atribucion).
 - Modelo de 3B: alta tasa de alucinacion en tareas de conocimiento factual y razonamiento complejo; no apto para decisiones criticas sin verificacion.
 - Solo declara ingles; el rendimiento en castellano no esta garantizado ni evaluado.
@@ -84,7 +84,7 @@ La comparativa directa mas util es contra el Llama 3.2 3B original: misma arquit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Llama-3.2-3B_rai_1.9.0_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/Llama-3.2-3B_rai_1.9.0_npu
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/
 - Documentacion de Ryzen AI (AMD): https://ryzenai.docs.amd.com/

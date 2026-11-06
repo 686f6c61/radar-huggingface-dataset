@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ComfyUI Binyuan Sampler V6.5 EN (Bilingual) no es un modelo de inteligencia artificial, sino un nodo personalizado (*custom node*) para ComfyUI distribuido a través de HuggingFace por el usuario yjitiu. Se trata de un *sampler* todo en uno que agrupa en un único nodo la secuencia completa de un flujo de difusión: carga del modelo, codificación del *prompt*, muestreo y decodificación de la imagen. El nodo se registra con la clave `BinyuanUltimateSamplerEN` dentro de la categoría `Binyuan` y se presenta como una alternativa a encadenar manualmente los nodos nativos de ComfyUI.
+ComfyUI Binyuan Sampler V6.5 EN (Bilingual) no es un modelo de inteligencia artificial, sino un nodo personalizado (*custom node*) para ComfyUI distribuido a través de Hugging Face por el usuario yjitiu. Se trata de un *sampler* todo en uno que agrupa en un único nodo la secuencia completa de un flujo de difusión: carga del modelo, codificación del *prompt*, muestreo y decodificación de la imagen. El nodo se registra con la clave `BinyuanUltimateSamplerEN` dentro de la categoría `Binyuan` y se presenta como una alternativa a encadenar manualmente los nodos nativos de ComfyUI.
 
 Su característica diferencial es el bilingüismo real: la interfaz muestra etiquetas en inglés o en chino según el idioma configurado en ComfyUI, mediante el sistema oficial de internacionalización (`locales/en|zh/nodeDefs.json`). Además, los valores de los desplegables y los mensajes de error están escritos en ambos idiomas, de modo que siguen siendo legibles aunque la traducción no se aplique. La edición en chino se distribuye por separado con la clave `BinyuanUltimateSampler`, de modo que ambas pueden instalarse en paralelo sin sobrescribirse.
 
@@ -26,7 +26,7 @@ El nodo actúa como orquestador de modelos externos: soporta arquitecturas como 
 | Tamano del repositorio | 0,0 GB |
 | Entradas relevantes | Load Mode, Diffusion Model, CLIP 1/2, VAE, CLIP Type, Weight Precision, LoRA JSON, Upstream Image 1, Denoise, Chaining Mode, External Model/CLIP/VAE |
 | Salidas | IMAGE, MODEL, CLIP, VAE, LATENT, CONDITIONING positivo y negativo, latente sin ruido |
-| Fecha de creacion en HuggingFace | 2026-09-16 |
+| Fecha de creacion en Hugging Face | 2026-09-16 |
 
 ## Arquitectura y entrenamiento
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparativos entre estos componentes en la
 ## Limitaciones y advertencias
 
 - No es un modelo de IA: no genera contenido por sí mismo y no tiene pesos, entrenamiento ni benchmarks propios. Cualquier evaluación de calidad de salida corresponde al modelo subyacente que se cargue.
-- Sin datos de adopción: 0 descargas y 0 likes en HuggingFace en el momento de la consulta, lo que implica poca validación externa y ausencia de una comunidad amplia de soporte.
+- Sin datos de adopción: 0 descargas y 0 likes en Hugging Face en el momento de la consulta, lo que implica poca validación externa y ausencia de una comunidad amplia de soporte.
 - Repositorio de 0,0 GB: solo contiene el código y el ZIP del plugin; no incluye modelos, que deben obtenerse por separado con sus propias licencias.
 - La licencia MIT cubre únicamente el plugin. Las licencias de los checkpoints, LoRA, VAE y encoders utilizados (Flux, Krea2, Qwen-Image, Wan, etc.) son independientes y pueden restringir el uso comercial.
 - Dependencia estricta de la versión de ComfyUI: con núcleos anteriores a v0.26.2, los tipos `krea2` y `boogu` no están disponibles y el nodo revierte de forma silenciosa a `stable_diffusion`, lo que puede producir resultados incorrectos sin aviso claro.
@@ -108,11 +108,11 @@ No se dispone de datos de rendimiento comparativos entre estos componentes en la
 - Riesgo de alucinación: no aplica en el sentido de los modelos de lenguaje; el riesgo equivalente es la generación de imágenes incoherentes o con artefactos, atribuible al modelo de difusión y a los parámetros de muestreo, no al nodo.
 - Sesgos: no disponibles como característica del nodo; dependen del modelo de difusión y del dataset con el que este fue entrenado.
 - No hay resultados de benchmarks publicados ni comparativas formales con otros samplers, por lo que las afirmaciones de rendimiento deben tomarse como una única medición en un equipo concreto.
-- La fecha de creación registrada en HuggingFace (2026-09-16) figura tal cual en los metadatos del repositorio.
+- La fecha de creación registrada en Hugging Face (2026-09-16) figura tal cual en los metadatos del repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yjitiu/ComfyUI-Binyuan-Sampler-EN
+- Repositorio en Hugging Face: https://huggingface.co/yjitiu/ComfyUI-Binyuan-Sampler-EN
 - Repositorio en GitHub: https://github.com/yjitiu/ComfyUI-Binyuan-Sampler-EN
 - Ultima release en GitHub: https://github.com/yjitiu/ComfyUI-Binyuan-Sampler-EN/releases/latest
 - Paquete ZIP de instalacion: https://huggingface.co/yjitiu/ComfyUI-Binyuan-Sampler-EN/blob/main/binyuan_sampler_plugin_english_v6.5.zip

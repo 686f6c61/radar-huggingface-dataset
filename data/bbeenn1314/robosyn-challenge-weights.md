@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RoboSyn Challenge Submission - Hybrid ACT+PP Policy es una política robótica desarrollada por el equipo YongbinChen (autor BbEeNn1314 en HuggingFace) como envío a la competición NeurIPS 2026 RoboSynChallenge. No es un modelo de lenguaje: es un sistema de control para manipulación robótica que combina dos enfoques complementarios, una red neuronal ACT (Action Chunking Transformer) para tres tareas que requieren habilidades visuomotoras aprendidas y pipelines de percepción-planificación (PP) basados en reglas para las siete tareas restantes, resolubles mediante razonamiento geométrico.
+RoboSyn Challenge Submission - Hybrid ACT+PP Policy es una política robótica desarrollada por el equipo YongbinChen (autor BbEeNn1314 en Hugging Face) como envío a la competición NeurIPS 2026 RoboSynChallenge. No es un modelo de lenguaje: es un sistema de control para manipulación robótica que combina dos enfoques complementarios, una red neuronal ACT (Action Chunking Transformer) para tres tareas que requieren habilidades visuomotoras aprendidas y pipelines de percepción-planificación (PP) basados en reglas para las siete tareas restantes, resolubles mediante razonamiento geométrico.
 
 El componente aprendido se apoya en un backbone ResNet-18 con tres vistas de cámara (muñeca, frontal y lateral), entrenado con el dataset oficial de demostraciones de la competición (1000 episodios por tarea) usando el framework LeRobot 0.4.4 sobre 2× RTX 4090 de 24 GB. Los pipelines PP, en cambio, no requieren pesos entrenados: usan percepción zero-shot con Open3D y OpenCV junto con primitivas de movimiento programadas a mano y estrategias de refinamiento iterativo.
 
@@ -94,7 +94,7 @@ No disponible. La información proporcionada no incluye comparaciones con otras 
 
 ## Limitaciones y advertencias
 
-- Cobertura parcial con pesos: solo 3 de las 10 tareas tienen checkpoints entrenados en este repositorio; las otras 7 dependen de pipelines basados en reglas cuyo código y configuración están fuera de HuggingFace.
+- Cobertura parcial con pesos: solo 3 de las 10 tareas tienen checkpoints entrenados en este repositorio; las otras 7 dependen de pipelines basados en reglas cuyo código y configuración están fuera de Hugging Face.
 - La tarea `item_assembly` alcanza solo un 81,2 % de éxito con 410 pasos medios, el peor registro del conjunto y un candidato claro a generar fallos en producción.
 - Las métricas son declaradas por el autor y corresponden a 46 episodios por tarea; no se aportan intervalos de confianza, semillas ni protocolo de evaluación independiente en la información disponible.
 - Las tasas medias ocultan variabilidad: la diferencia entre la mejor tarea (99,3 %) y la peor (81,2 %) es de 18,1 puntos porcentuales.
@@ -107,7 +107,7 @@ No disponible. La información proporcionada no incluye comparaciones con otras 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BbEeNn1314/robosyn-challenge-weights
+- Hugging Face: https://huggingface.co/BbEeNn1314/robosyn-challenge-weights
 - Repositorio de código: https://github.com/YongbinChen/RoboSynChallenge-Submission
 - Dataset oficial: RoboSynChallenge/official-dataset (referenciado en la model card)
 - Competición: NeurIPS 2026 RoboSynChallenge (sin URL directa en la información disponible)

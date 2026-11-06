@@ -4,7 +4,7 @@
 
 El modelo `gemma4-e2b-4k-grpo-reasoninggym-fullcoyote-s300` es un ajuste fino por aprendizaje por refuerzo de `google/gemma-4-E2B-it`, publicado por la cuenta anónima `budget-internalization-iclr2027` como parte de un envío a ICLR 2027. El entrenamiento aplica GRPO (Group Relative Policy Optimization) sobre tareas de Reasoning Gym —problemas de razonamiento generados de forma procedimental con respuestas en formato `\boxed{}`— imponiendo un presupuesto de generación de 4.096 tokens: cualquier respuesta que agota ese presupuesto recibe recompensa cero. El objetivo declarado es estudiar la internalización de presupuestos de tokens en políticas de razonamiento.
 
-Técnicamente se trata de un checkpoint intermedio (paso 300 de un máximo de 3 épocas) con pesos en F32, lo que explica que el repositorio ocupe 20,5 GB para 5.123.178.051 parámetros. El pipeline declarado en HuggingFace es `any-to-any` y entre los tags figuran `image-text-to-text` y `reasoning-gym`, pero la model card no documenta ni la arquitectura interna ni las capacidades multimodales reales del modelo.
+Técnicamente se trata de un checkpoint intermedio (paso 300 de un máximo de 3 épocas) con pesos en F32, lo que explica que el repositorio ocupe 20,5 GB para 5.123.178.051 parámetros. El pipeline declarado en Hugging Face es `any-to-any` y entre los tags figuran `image-text-to-text` y `reasoning-gym`, pero la model card no documenta ni la arquitectura interna ni las capacidades multimodales reales del modelo.
 
 Su relevancia es fundamentalmente de investigación: es un artefacto reproducible de RLVR (Reinforcement Learning with Verifiable Rewards) con hiperparámetros y esquema de recompensa explícitos, útil como referencia para estudiar cómo las políticas aprenden a ajustar la longitud de sus cadenas de razonamiento. No es un modelo orientado a producción: no tiene benchmarks publicados, acumula 0 descargas y su licencia presenta una discrepancia relevante entre los tags y la propia model card.
 
@@ -65,15 +65,15 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Conversión a otras precisiones (estimación aritmética a partir del recuento de parámetros, no verificada con el modelo real): BF16 ≈ 10,3 GB, int8 ≈ 5,1 GB, 4 bits ≈ 2,6 GB.
 - GPU recomendadas: H100 80 GB o A100 80 GB para F32 con contexto amplio; A100 40 GB o RTX 5090 32 GB para F32 con contexto reducido; RTX 4090 24 GB resulta ajustado para F32 (20,5 GB de pesos dejan muy poco margen para caché KV).
 - GPU de consumo: sí cabe en tarjetas de 24 GB si se convierte a BF16 o a cuantización de 8/4 bits (RTX 3090, RTX 4090, RTX 5090). En F32 nativo no es recomendable en 24 GB.
-- Opciones de despliegue: `transformers` con `AutoModelForCausalLM` y `device_map="auto"` (documentado en la model card) y vLLM mediante `vllm serve` (también documentado). No hay pesos GGUF publicados, por lo que llama.cpp u Ollama requerirían convertir el modelo previamente. El tag `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: `transformers` con `AutoModelForCausalLM` y `device_map="auto"` (documentado en la model card) y vLLM mediante `vllm serve` (también documentado). No hay pesos GGUF publicados, por lo que llama.cpp u Ollama requerirían convertir el modelo previamente. El tag `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo, TTFT ni rendimiento con lotes.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma4-e2b-4k-grpo-reasoninggym-fullcoyote-s300 | 5.123.178.051 | no disponible | GRPO sobre Reasoning Gym, presupuesto 4.096 tokens, 300 pasos | apache-2.0 según tags; la card remite a la licencia del base | HuggingFace, 0 descargas, safetensors F32 |
-| google/gemma-4-E2B-it (modelo base) | no disponible | no disponible | ajuste por instrucciones del modelo original | Gemma 4 License (según el enlace de la card) | HuggingFace (modelo oficial) |
+| gemma4-e2b-4k-grpo-reasoninggym-fullcoyote-s300 | 5.123.178.051 | no disponible | GRPO sobre Reasoning Gym, presupuesto 4.096 tokens, 300 pasos | apache-2.0 según tags; la card remite a la licencia del base | Hugging Face, 0 descargas, safetensors F32 |
+| google/gemma-4-E2B-it (modelo base) | no disponible | no disponible | ajuste por instrucciones del modelo original | Gemma 4 License (según el enlace de la card) | Hugging Face (modelo oficial) |
 | Otros checkpoints de RLVR de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables de rendimiento, contexto ni licencia de alternativas comparables dentro de la misma categoría (modelos de razonamiento de 2-6 mil millones de parámetros ajustados con RLVR), por lo que no se incluye una comparación cuantitativa.
@@ -92,7 +92,7 @@ No se dispone de datos verificables de rendimiento, contexto ni licencia de alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/budget-internalization-iclr2027/gemma4-e2b-4k-grpo-reasoninggym-fullcoyote-s300
+- Modelo en Hugging Face: https://huggingface.co/budget-internalization-iclr2027/gemma4-e2b-4k-grpo-reasoninggym-fullcoyote-s300
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Licencia referenciada en la model card: https://ai.google.dev/gemma/docs/gemma_4_license
 - Búsqueda web: no se encontró ningún resultado relevante sobre el modelo. Los resultados devueltos correspondían a sitios sobre el presupuesto del Estado francés (budget.gouv.fr, dettedelafrance.fr, francebudget.fr) y a la empresa de alquiler de vehículos Budget (budget.fr), sin relación con este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ScoreDetector es un modelo publicado en HuggingFace por el usuario AugustRushG123 bajo licencia MIT. El repositorio tiene un tamano aproximado de 0,1 GB y no incluye model card descriptiva: la unica metadata disponible es la licencia. No se especifica la tarea (pipeline), los idiomas soportados, la arquitectura ni el proceso de entrenamiento.
+ScoreDetector es un modelo publicado en Hugging Face por el usuario AugustRushG123 bajo licencia MIT. El repositorio tiene un tamano aproximado de 0,1 GB y no incluye model card descriptiva: la unica metadata disponible es la licencia. No se especifica la tarea (pipeline), los idiomas soportados, la arquitectura ni el proceso de entrenamiento.
 
 Por el nombre ("ScoreDetector") y el tamano del repositorio, es plausible que se trate de un modelo pequeno orientado a puntuacion o deteccion de scores, pero esta interpretacion no esta confirmada por ninguna documentacion oficial. El modelo registra 0 descargas y 1 like en el momento de la consulta, lo que indica una adopcion practicamente nula y ausencia de validacion por parte de la comunidad.
 
@@ -42,7 +42,7 @@ El unico dato estructural es el tamano del repositorio, aproximadamente 0,1 GB, 
 - Prototipado rapido en entornos de investigacion: su licencia MIT y su reducido tamano permiten incluirlo en experimentos sin coste de licencia.
 - Integracion como modulo auxiliar en pipelines de NLP: si finalmente resulta ser un detector o scorer, podria encadenarse a un LLM principal para filtrar o puntuar salidas.
 - Pruebas de concepto en local: el tamano del repositorio (~0,1 GB) sugiere que podria ejecutarse en CPU o en GPU de gama baja, aunque esto no esta confirmado.
-- Estudio comparativo de artefactos publicados en HuggingFace: util como caso de analisis de modelos sin model card ni validacion comunitaria.
+- Estudio comparativo de artefactos publicados en Hugging Face: util como caso de analisis de modelos sin model card ni validacion comunitaria.
 - Base para fine-tuning propio: la licencia MIT permite modificarlo y redistribuirlo, aunque la falta de documentacion complica determinar la tarea objetivo.
 
 ## Benchmarks y rendimiento
@@ -73,4 +73,4 @@ No disponible. No se dispone de informacion sobre la tarea, el tamano ni el rend
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AugustRushG123/ScoreDetector
+- Hugging Face: https://huggingface.co/AugustRushG123/ScoreDetector

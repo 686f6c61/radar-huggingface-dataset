@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio de HuggingFace creado por el usuario MeaMa que aloja un modelo de extracción de características basado en la arquitectura BERT, etiquetado con la librería transformers y licencia MIT. El repositorio se creó el 1 de septiembre de 2026 y no registra descargas ni likes, con un tamaño de 0.0 GB, lo que sugiere que se trata de un repositorio de prueba o plantilla sin pesos publicados.
+MyAwesomeModel-TestRepo es un repositorio de Hugging Face creado por el usuario MeaMa que aloja un modelo de extracción de características basado en la arquitectura BERT, etiquetado con la librería transformers y licencia MIT. El repositorio se creó el 1 de septiembre de 2026 y no registra descargas ni likes, con un tamaño de 0.0 GB, lo que sugiere que se trata de un repositorio de prueba o plantilla sin pesos publicados.
 
 La model card describe un modelo de razonamiento avanzado con mejoras significativas en tareas de matemáticas, programación y lógica, citando una mejora en AIME 2025 del 70% al 87.5% respecto a una versión anterior. Sin embargo, existe una discrepancia notable entre la descripción de la model card (que sugiere un modelo de lenguaje grande con capacidades de razonamiento profundo) y los metadatos técnicos del repositorio (que indican arquitectura BERT y pipeline de feature-extraction). No se proporcionan detalles sobre el número de parámetros, la longitud de contexto ni los datos de entrenamiento.
 
@@ -12,7 +12,7 @@ La relevancia de este modelo es limitada en su estado actual: se trata de un rep
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (segun tags de HuggingFace) |
+| Arquitectura | BERT (segun tags de Hugging Face) |
 | Parametros totales | no disponible |
 | Parametros activos | no aplicable (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ La relevancia de este modelo es limitada en su estado actual: se trata de un rep
 
 ## Arquitectura y entrenamiento
 
-Los metadatos de HuggingFace indican que el modelo utiliza la arquitectura BERT, un transformer encoder-only desarrollado originalmente por Google. El pipeline declarado es feature-extraction, lo que sugiere que el modelo está diseñado para generar representaciones vectoriales de texto en lugar de generar texto autoregresivamente.
+Los metadatos de Hugging Face indican que el modelo utiliza la arquitectura BERT, un transformer encoder-only desarrollado originalmente por Google. El pipeline declarado es feature-extraction, lo que sugiere que el modelo está diseñado para generar representaciones vectoriales de texto en lugar de generar texto autoregresivamente.
 
 La model card describe un proceso de post-entrenamiento con "recursos computacionales incrementados" y "mecanismos de optimización algorítmica", pero no se especifican detalles concretos sobre el dataset de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se indica el tamaño del modelo ni la configuración exacta de la arquitectura. La discrepancia entre la descripción de la model card (que sugiere un LLM con capacidades de razonamiento) y la arquitectura BERT declarada en los metadatos no está resuelta en la información disponible.
 
@@ -99,7 +99,7 @@ Dado que no se dispone de informacion verificable sobre el tamano del modelo ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MeaMa/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/MeaMa/MyAwesomeModel-TestRepo
 - Repositorio alternativo (misma model card): https://huggingface.co/bench-induction-ai/MyAwesomeModel-TestRepo
 - Repositorio alternativo (misma model card): https://huggingface.co/exaone-share/MyAwesomeModel-TestRepo
 - Ficha en OpenModelMap: https://openmodelmap.com/model/dongbobo/MyAwesomeModel-TestRepo

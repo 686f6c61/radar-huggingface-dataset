@@ -93,7 +93,7 @@ No se han publicado en la información disponible resultados de benchmarks para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Horizon-Labs/punctuation-restoration-small
+- Modelo en Hugging Face: https://huggingface.co/Horizon-Labs/punctuation-restoration-small
 - Variante base: https://huggingface.co/Horizon-Labs/punctuation-restoration-base
 - Modelo base mmBERT-small: https://huggingface.co/jhu-clsp/mmBERT-small
 - Modelo de truecasing complementario: https://huggingface.co/Horizon-Labs/multilingual-punctuation-truecase-small

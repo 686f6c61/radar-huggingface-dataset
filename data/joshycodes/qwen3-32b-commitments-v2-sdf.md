@@ -70,9 +70,9 @@ Estimaciones derivadas del recuento de parámetros (32,76 B) y del tamaño del r
 
 | Modelo | Parametros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joshycodes/qwen3-32b-commitments-v2-sdf | 32,76 B | no disponible | no publicados (sin evaluar) | research-only | HuggingFace, 0 descargas |
-| joshycodes/qwen3-32b-commitments-sdf (base directo) | no disponible (misma serie) | no disponible | no publicados | no disponible | HuggingFace |
-| Qwen3-32B (familia base) | ~32,8 B | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda | HuggingFace |
+| joshycodes/qwen3-32b-commitments-v2-sdf | 32,76 B | no disponible | no publicados (sin evaluar) | research-only | Hugging Face, 0 descargas |
+| joshycodes/qwen3-32b-commitments-sdf (base directo) | no disponible (misma serie) | no disponible | no publicados | no disponible | Hugging Face |
+| Qwen3-32B (familia base) | ~32,8 B | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda | Hugging Face |
 | Alternativas open de ~30 B (p. ej. familias Mistral o Gemma de tamano similar) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de los modelos comparables dentro de la información proporcionada, por lo que la comparación cuantitativa no es posible.
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de los m
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/joshycodes/qwen3-32b-commitments-v2-sdf
+- Hugging Face del modelo: https://huggingface.co/joshycodes/qwen3-32b-commitments-v2-sdf
 - Modelo base declarado: https://huggingface.co/joshycodes/qwen3-32b-commitments-sdf
 - Corpus citado en la model card: https://huggingface.co/joshycodes/qwen3-32b-commitments-corpus
 - Repositorio "welfare-improvements": no disponible la URL exacta en la informacion proporcionada

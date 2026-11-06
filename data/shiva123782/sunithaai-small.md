@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativos para sunithaAI-small, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shiva123782/sunithaAI-small
+- Modelo en Hugging Face: https://huggingface.co/shiva123782/sunithaAI-small
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio de Qwen2.5: https://github.com/QwenLM/Qwen2.5
 - Documentación de PEFT: https://huggingface.co/docs/peft

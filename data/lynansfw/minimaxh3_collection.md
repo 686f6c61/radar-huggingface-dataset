@@ -69,8 +69,8 @@ No disponible. No se ha identificado modelos comparables directos en la informac
 
 ## Enlaces
 
-- [Repositorio de HuggingFace](https://huggingface.co/lynaNSFW/minimaxH3_Collection)
-- [Coleccion MiniMax H3 de MiniMaxAI en HuggingFace](https://huggingface.co/collections/MiniMaxAI/minimax-h3)
+- [Repositorio de Hugging Face](https://huggingface.co/lynaNSFW/minimaxH3_Collection)
+- [Coleccion MiniMax H3 de MiniMaxAI en Hugging Face](https://huggingface.co/collections/MiniMaxAI/minimax-h3)
 - [Tutoriales y despliegue de MiniMax H3](https://design.minimax.io/h3)
 - [Coleccion MiniMax H3 de multimodalart](https://huggingface.co/collections/multimodalart/minimax-h3)
 - [GitHub - ai-models-lab/minimax-h3](https://github.com/ai-models-lab/minimax-h3)

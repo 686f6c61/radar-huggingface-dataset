@@ -78,6 +78,6 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/t9749/rife-4.25-lite-onnx
+- Repositorio Hugging Face: https://huggingface.co/t9749/rife-4.25-lite-onnx
 - Proyecto original Practical-RIFE (hzwer): https://github.com/hzwer/Practical-RIFE
 - Artículo RIFE (ECCV 2022): no se incluye enlace directo en la información proporcionada; el artículo se cita como "RIFE: Real-Time Intermediate Flow Estimation for Video Frame Interpolation".

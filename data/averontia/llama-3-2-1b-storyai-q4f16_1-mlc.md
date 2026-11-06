@@ -81,7 +81,7 @@ Frente al modelo base, esta variante añade el empaquetado MLC y el ajuste narra
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Averontia/Llama-3.2-1B-StoryAI-q4f16_1-MLC
+- Repositorio Hugging Face: https://huggingface.co/Averontia/Llama-3.2-1B-StoryAI-q4f16_1-MLC
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/
 - Política de uso aceptable: https://www.llama.com/llama3_2/use-policy/

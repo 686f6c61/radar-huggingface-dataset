@@ -78,7 +78,7 @@ El autor indica que el protocolo de descontaminacion esta publicado junto al mod
 
 | Modelo | Parametros | Contexto | Licencia | Resultado destacado | Disponibilidad |
 |---|---|---|---|---|---|
-| JSBAI-Coder-4B-NVFP4 | 3,07B | 131.072 tokens (configuracion vLLM documentada) | Apache-2.0 | Pendiente de publicar | 0 descargas, 0 likes en HuggingFace (a fecha de la informacion) |
+| JSBAI-Coder-4B-NVFP4 | 3,07B | 131.072 tokens (configuracion vLLM documentada) | Apache-2.0 | Pendiente de publicar | 0 descargas, 0 likes en Hugging Face (a fecha de la informacion) |
 | JSBAI-Coder-4B (BF16) | 3,07B (mismo ajuste, sin cuantizar) | No disponible (misma familia) | Apache-2.0 | 82,9% en 121 bugs no vistos; IFEval 87,21 | Publicado por la misma organizacion |
 | Qwen/Qwen3.5-4B (base) | 4B nominales (familia Qwen3.5) | No disponible | Apache-2.0 | 10,1% en bugs no vistos; IFEval 84,66 | Modelo base publico |
 
@@ -99,10 +99,10 @@ La model card afirma que el codigo agentico a este nivel habia requerido modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jsbaicenter/JSBAI-Coder-4B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/jsbaicenter/JSBAI-Coder-4B-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de post-entrenamiento: https://huggingface.co/datasets/nvidia/Nemotron-Post-Training-Dataset-v2
 - Herramienta de cuantizacion NVIDIA ModelOpt: https://github.com/NVIDIA/Model-Optimizer
-- Logo del centro (imagen alojada en HuggingFace): https://cdn-uploads.huggingface.co/production/uploads/69b0868703a7e83e476092ec/RIr7Vy21qoIEFJrMAE8qn.png
+- Logo del centro (imagen alojada en Hugging Face): https://cdn-uploads.huggingface.co/production/uploads/69b0868703a7e83e476092ec/RIr7Vy21qoIEFJrMAE8qn.png
 - Informe tecnico: anunciado como "coming soon", sin enlace disponible
 - Repositorio de codigo, demo o espacio de prueba: no disponibles

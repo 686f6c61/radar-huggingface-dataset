@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EXAONE-3.5-7.8B-LinkOnX-Modeler-Code-v1.1-GGUF es la version cuantizada en formato GGUF del modelo linkonx/EXAONE-3.5-7.8B-LinkOnX-Modeler-Code-v1.1, un ajuste fino (SFT) del modelo EXAONE 3.5 de 7.800 millones de parametros desarrollado originalmente por LG AI Research. Las cuantizaciones han sido generadas por mradermacher, un conocido creador de quants estaticos en la comunidad de HuggingFace, empleando herramientas del ecosistema llama.cpp. El modelo esta pensado para generacion de texto y codigo, segun se desprende del sufijo "Modeler-Code" del nombre, aunque la model card no detalla el dataset de ajuste.
+EXAONE-3.5-7.8B-LinkOnX-Modeler-Code-v1.1-GGUF es la version cuantizada en formato GGUF del modelo linkonx/EXAONE-3.5-7.8B-LinkOnX-Modeler-Code-v1.1, un ajuste fino (SFT) del modelo EXAONE 3.5 de 7.800 millones de parametros desarrollado originalmente por LG AI Research. Las cuantizaciones han sido generadas por mradermacher, un conocido creador de quants estaticos en la comunidad de Hugging Face, empleando herramientas del ecosistema llama.cpp. El modelo esta pensado para generacion de texto y codigo, segun se desprende del sufijo "Modeler-Code" del nombre, aunque la model card no detalla el dataset de ajuste.
 
 El interes de esta publicacion reside en que ofrece el modelo base en una amplia gama de cuantizaciones GGUF (desde Q2_K de 3,2 GB hasta f16 de 15,7 GB), lo que permite ejecutarlo en hardware de consumo mediante llama.cpp, Ollama o LM Studio. El modelo original parte de la arquitectura EXAONE 3.5, un transformer decoder-only con 7.818.448.960 parametros, y se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial sin restricciones adicionales.
 

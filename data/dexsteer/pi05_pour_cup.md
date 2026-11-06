@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `DexSteer/pi05_pour_cup` es un modelo de inteligencia artificial publicado en HuggingFace por el usuario DexSteer, con un total de 4.143.404.816 parámetros (aproximadamente 4.14 mil millones). Los pesos se distribuyen en formato `safetensors`, con un tamaño de repositorio de 9.4 GB. El repositorio fue creado el 4 de septiembre de 2026 y actualizado ese mismo día. En el momento de la consulta, el modelo registraba 8 descargas y ningún like.
+El modelo `DexSteer/pi05_pour_cup` es un modelo de inteligencia artificial publicado en Hugging Face por el usuario DexSteer, con un total de 4.143.404.816 parámetros (aproximadamente 4.14 mil millones). Los pesos se distribuyen en formato `safetensors`, con un tamaño de repositorio de 9.4 GB. El repositorio fue creado el 4 de septiembre de 2026 y actualizado ese mismo día. En el momento de la consulta, el modelo registraba 8 descargas y ningún like.
 
 La información pública disponible sobre este modelo es muy limitada: no se especifican arquitectura, licencia, idiomas, pipeline ni contexto. El nombre del repositorio sugiere una posible relación con la tarea de verter líquido en una taza (`pour_cup`), y una variante de la familia de modelos `pi0` (posiblemente `pi0.5`). En la web se encuentra un dataset homónimo `DexSteer/pour_cup` en la plataforma Claru, descrito como un conjunto de datos de robótica física creado con LeRobot, que contiene tareas de manipulación realizadas por un robot UR7e con una mano dexterous, incluyendo vídeo RGB multivista, estado proprioceptivo y datos de acción a 50 fps. Sin embargo, no hay confirmación oficial de que este modelo sea un modelo de políticas robóticas ni de que esté entrenado con ese dataset. Se debe tratar con cautela cualquier inferencia sobre su funcionamiento.
 
@@ -29,7 +29,7 @@ No se dispone de información oficial sobre las capacidades del modelo. No se ha
 
 ## Casos de uso
 
-No se han documentado casos de uso oficiales para este modelo. La falta de información sobre arquitectura, licencia, idiomas y capacidades impide recomendar aplicaciones prácticas concretas. Cualquier caso de uso propuesto sería especulativo. Se recomienda consultar directamente el repositorio de HuggingFace o contactar al autor para obtener detalles antes de considerar el modelo en un entorno de producción.
+No se han documentado casos de uso oficiales para este modelo. La falta de información sobre arquitectura, licencia, idiomas y capacidades impide recomendar aplicaciones prácticas concretas. Cualquier caso de uso propuesto sería especulativo. Se recomienda consultar directamente el repositorio de Hugging Face o contactar al autor para obtener detalles antes de considerar el modelo en un entorno de producción.
 
 ## Benchmarks y rendimiento
 
@@ -61,6 +61,6 @@ No disponible. No se dispone de información suficiente para comparar este model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DexSteer/pi05_pour_cup
+- Repositorio en Hugging Face: https://huggingface.co/DexSteer/pi05_pour_cup
 - Dataset `DexSteer/pour_cup` en Claru: https://claru.ai/datasets/dexsteer-isaaclab-ur7e-pour-cup
 - Paper de arXiv sobre razonamiento a acción con bocetos visuales (posible contexto de la tarea): https://arxiv.org/pdf/2601.01618

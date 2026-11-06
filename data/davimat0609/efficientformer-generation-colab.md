@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Efficientformer-generation-colab es un prototipo de investigacion publicado por el usuario davimat0609 en HuggingFace. Se trata de una implementacion propia de una arquitectura EfficientFormer orientada a tareas de generacion, acompanada de un script de ejecucion (`main.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicializacion en formato safetensors. El propio autor indica de forma explicita que el checkpoint no ha sido entrenado ni auditado, y que no se reclama ninguna metrica de rendimiento.
+Efficientformer-generation-colab es un prototipo de investigacion publicado por el usuario davimat0609 en Hugging Face. Se trata de una implementacion propia de una arquitectura EfficientFormer orientada a tareas de generacion, acompanada de un script de ejecucion (`main.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicializacion en formato safetensors. El propio autor indica de forma explicita que el checkpoint no ha sido entrenado ni auditado, y que no se reclama ninguna metrica de rendimiento.
 
 El dato mas relevante es el recuento real de parametros leido de los safetensors: 24.832 parametros totales (unas 24,8 mil, aproximadamente 0,025 millones). Esto contrasta con la etiqueta `huge` que figura en la configuracion y en la model card, que debe interpretarse como un identificador de escala de la configuracion generada, no como un tamano real de modelo. El repositorio ocupa 0,0 GB y acumula 0 descargas y 1 like en el momento de la consulta, lo que confirma su caracter de experimento recien creado y sin validacion externa.
 
@@ -74,7 +74,7 @@ La informacion proporcionada no incluye datos de modelos comparables (parametros
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| davimat0609/efficientformer-generation-colab | 24.832 (real, safetensors) | No disponible | No disponible (sin entrenar) | apache-2.0 | HuggingFace |
+| davimat0609/efficientformer-generation-colab | 24.832 (real, safetensors) | No disponible | No disponible (sin entrenar) | apache-2.0 | Hugging Face |
 | EfficientFormer (original, Snap Inc.) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Referencia academica / repositorio publico |
 | EfficientFormerV2 (Snap Inc.) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Referencia academica / repositorio publico |
 
@@ -87,11 +87,11 @@ La informacion proporcionada no incluye datos de modelos comparables (parametros
 - Riesgo de alucinacion: no aplica en el sentido habitual al no estar entrenado, pero cualquier salida debe tratarse como ruido, no como informacion fiable.
 - Limitaciones de contexto e idioma: no disponibles; no se declara ventana de contexto ni idiomas soportados.
 - Restricciones de licencia: los pesos y el codigo se publican bajo apache-2.0, que permite uso comercial y modificacion con atribucion. Sin embargo, el autor advierte de que deben revisarse por separado los terminos de los datos de origen si se combina el repositorio con datasets externos.
-- Caveat de integracion en produccion: al ser una implementacion personalizada, las APIs de carga automatica de HuggingFace, vLLM o TGI fallaran sin un adaptador que registre la arquitectura. No debe desplegarse en produccion sin entrenamiento, evaluacion y auditoria previos.
+- Caveat de integracion en produccion: al ser una implementacion personalizada, las APIs de carga automatica de Hugging Face, vLLM o TGI fallaran sin un adaptador que registre la arquitectura. No debe desplegarse en produccion sin entrenamiento, evaluacion y auditoria previos.
 - Trazabilidad: el repositorio tiene 0 descargas y 1 like, sin resultados publicados, logs de entrenamiento ni versiones de entorno asociadas a ninguna metrica.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davimat0609/efficientformer-generation-colab
+- Modelo en Hugging Face: https://huggingface.co/davimat0609/efficientformer-generation-colab
 - Ficheros incluidos en el repositorio: `main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles en la informacion proporcionada. Los resultados de la busqueda web recibidos no contienen enlaces relevantes al modelo.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-gx30-decider es un modelo de clasificación de texto publicado por CharlieBT en HuggingFace, derivado mediante fine-tuning del modelo Lucas989/sn92-generalist-m1-core7a. Con 26.085.330.160 parámetros totales (aproximadamente 26 mil millones) y un tamaño de repositorio de 52,2 GB en formato safetensors, se trata de un modelo de gran escala orientado a tareas de decisión y clasificación, según indican sus etiquetas (`decider`, `decision-model`, `reax`, `text-classification`).
+gx30-decider es un modelo de clasificación de texto publicado por CharlieBT en Hugging Face, derivado mediante fine-tuning del modelo Lucas989/sn92-generalist-m1-core7a. Con 26.085.330.160 parámetros totales (aproximadamente 26 mil millones) y un tamaño de repositorio de 52,2 GB en formato safetensors, se trata de un modelo de gran escala orientado a tareas de decisión y clasificación, según indican sus etiquetas (`decider`, `decision-model`, `reax`, `text-classification`).
 
-El modelo emplea la arquitectura `qwen3_5` según los metadatos del repositorio, lo que sugiere una variante de la familia Qwen 3.5, aunque no se dispone de documentación oficial que detalle la configuración exacta de capas, atención o estrategia de entrenamiento. La información pública es muy limitada: apenas 2 descargas y 0 likes en el momento de la consulta, y el acceso está restringido (gated), requiriendo aceptar condiciones en HuggingFace.
+El modelo emplea la arquitectura `qwen3_5` según los metadatos del repositorio, lo que sugiere una variante de la familia Qwen 3.5, aunque no se dispone de documentación oficial que detalle la configuración exacta de capas, atención o estrategia de entrenamiento. La información pública es muy limitada: apenas 2 descargas y 0 likes en el momento de la consulta, y el acceso está restringido (gated), requiriendo aceptar condiciones en Hugging Face.
 
 Su relevancia es por tanto acotada y experimental: se trata de un fine-tune especializado en clasificación/decisión sobre un modelo base ya de por sí poco documentado, con licencia Apache 2.0 pero con acceso condicionado. No se han publicado resultados de benchmarks, idiomas soportados ni detalles del dataset de entrenamiento en la información disponible.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 - Documentación prácticamente inexistente: no hay model card con detalles de entrenamiento, dataset, esquema de etiquetas ni evaluación.
 - Ausencia total de benchmarks: imposible estimar calidad, precisión o robustez frente a alternativas.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita su uso automatizado y su reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita su uso automatizado y su reproducibilidad.
 - Idiomas no declarados: riesgo de comportamiento degradado fuera del idioma o idiomas de entrenamiento, desconocidos.
 - Riesgo de alucinación y sesgos: no evaluado; al derivar de un modelo base sin documentación, los sesgos del corpus original son desconocidos.
 - Licencia Apache 2.0 permite uso comercial, pero las condiciones de acceso gated pueden imponer restricciones adicionales que deben revisarse antes de producción.
@@ -83,5 +83,5 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CharlieBT/gx30-decider
+- Hugging Face: https://huggingface.co/CharlieBT/gx30-decider
 - Modelo base: https://huggingface.co/Lucas989/sn92-generalist-m1-core7a

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Unijenagenomics/generation es un repositorio de HuggingFace que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura denominada "Cnn Transformer", orientada a tareas de generacion. Lo publica el usuario Unijenagenomics bajo licencia MIT. No se trata de un modelo preentrenado listo para produccion, sino de un artefacto de codigo y configuracion pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno alcance.
+Unijenagenomics/generation es un repositorio de Hugging Face que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura denominada "Cnn Transformer", orientada a tareas de generacion. Lo publica el usuario Unijenagenomics bajo licencia MIT. No se trata de un modelo preentrenado listo para produccion, sino de un artefacto de codigo y configuracion pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno alcance.
 
 La relevancia de este repositorio es fundamentalmente didactica y experimental: sirve como punto de partida reproducible para estudiar una variante concreta de transformer que combina convoluciones y atencion, con normalizacion RMSNorm, activacion ReLU y fusion tipo Tucker. El checkpoint incluido (model.safetensors) es una inicializacion valida, no un modelo entrenado, y el autor indica explicitamente que no reclama ninguna puntuacion de benchmark.
 
@@ -74,4 +74,4 @@ No disponible. No se han proporcionado modelos comparables de la misma categoria
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Unijenagenomics/generation
+- Hugging Face: https://huggingface.co/Unijenagenomics/generation

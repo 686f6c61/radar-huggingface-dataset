@@ -12,7 +12,7 @@ La relevancia actual del repositorio es limitada desde el punto de vista de inge
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta de HuggingFace indica `transformer`, pero la model card no describe arquitectura alguna) |
+| Arquitectura | no disponible (la etiqueta de Hugging Face indica `transformer`, pero la model card no describe arquitectura alguna) |
 | Parametros totales | 33.088 (segun metadatos de los ficheros safetensors del repositorio) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
@@ -22,7 +22,7 @@ La relevancia actual del repositorio es limitada desde el punto de vista de inge
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre arquitectura en la model card. La unica referencia es la etiqueta `transformer` que HuggingFace asigna al repositorio, sin que el autor detalle capas, dimensiones, mecanismo de atencion, tipo de encoder de imagen o estrategia de alineacion entre modalidades. Tampoco se describe si se trata de un modelo de doble encoder, de un modelo de fusion tardia o de una variante basada en contrastive learning tipo CLIP.
+No hay informacion sobre arquitectura en la model card. La unica referencia es la etiqueta `transformer` que Hugging Face asigna al repositorio, sin que el autor detalle capas, dimensiones, mecanismo de atencion, tipo de encoder de imagen o estrategia de alineacion entre modalidades. Tampoco se describe si se trata de un modelo de doble encoder, de un modelo de fusion tardia o de una variante basada en contrastive learning tipo CLIP.
 
 Respecto al entrenamiento, el repositorio declara de forma explicita que no ha habido entrenamiento ni liberacion de checkpoint. No se indican tokens de entrenamiento, composicion del dataset, uso de RLHF o DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. El contenido es un documento de notas (`analysis.md`) con el alcance de la pregunta de investigacion, posibles factores de confusion, una comparacion propuesta con lineas base emparejadas, referencias de evaluacion (Flickr30k, MS COCO Captions), modos de fallo y preguntas abiertas. El README anade que, si en el futuro se incorporan resultados, deberian incluir versiones de dataset, comandos, semillas, hardware y registros en bruto.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El RE
 
 | Repositorio | Tipo de artefacto | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| danyloboyko/reading-text-image-retrieval-2024 | Notas de investigacion | 33.088 (metadatos safetensors) | no disponible | MIT | Publico en HuggingFace |
-| oozturkali/text-image-retrieval-reading20-2024 | Repositorio de nombre y tematica equivalente, localizado en la busqueda web | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| danyloboyko/reading-text-image-retrieval-2024 | Notas de investigacion | 33.088 (metadatos safetensors) | no disponible | MIT | Publico en Hugging Face |
+| oozturkali/text-image-retrieval-reading20-2024 | Repositorio de nombre y tematica equivalente, localizado en la busqueda web | no disponible | no disponible | no disponible | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento, contexto ni licencia de la alternativa encontrada, por lo que no es posible establecer una comparacion tecnica cuantitativa. Tampoco se han localizado en la busqueda modelos de recuperacion texto-imagen con los que comparar parametros o resultados, ya que los resultados devueltos (OpenAI DALL-E, GPT-4o, listados de ICLR 2025, topics de GitHub) no son alternativas equivalentes a este repositorio.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento, contexto ni licencia de la alternativa en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/danyloboyko/reading-text-image-retrieval-2024
+- Hugging Face: https://huggingface.co/danyloboyko/reading-text-image-retrieval-2024
 - Repositorio de tematica equivalente localizado en la busqueda: https://huggingface.co/oozturkali/text-image-retrieval-reading20-2024
 - Listado de topics sobre image-text-retrieval en GitHub: https://github.com/topics/image-text-retrieval
 - DALL-E (OpenAI), contexto general de generacion texto-imagen: https://openai.com/index/dall-e/

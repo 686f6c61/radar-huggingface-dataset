@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`xw17/gemma-3-12b-it_SFT_lora_ifhaffect` es un ajuste fino publicado en HuggingFace por el usuario `xw17`. El identificador del repositorio indica que se trata de un adaptador LoRA obtenido mediante ajuste supervisado (SFT) sobre el modelo base `gemma-3-12b-it` de Google DeepMind, pero la model card del repositorio es la plantilla autogenerada de HuggingFace y no aporta ninguna confirmacion explicita: todos los campos de descripcion, datos de entrenamiento, licencia e idiomas aparecen como `[More Information Needed]`.
+`xw17/gemma-3-12b-it_SFT_lora_ifhaffect` es un ajuste fino publicado en Hugging Face por el usuario `xw17`. El identificador del repositorio indica que se trata de un adaptador LoRA obtenido mediante ajuste supervisado (SFT) sobre el modelo base `gemma-3-12b-it` de Google DeepMind, pero la model card del repositorio es la plantilla autogenerada de Hugging Face y no aporta ninguna confirmacion explicita: todos los campos de descripcion, datos de entrenamiento, licencia e idiomas aparecen como `[More Information Needed]`.
 
 El repositorio tiene un tamano de 0,2 GB, lo que es coherente con un conjunto de pesos de adaptador (LoRA) y no con los pesos completos de un modelo de 12 000 millones de parametros, que en bfloat16 ocuparian aproximadamente 24 GB. El tag de libreria es `transformers` y el formato de pesos es `safetensors`; no aparece el tag `peft`, habitual en adaptadores LoRA, por lo que la naturaleza exacta del artefacto (adaptador puro, pesos fusionados parcialmente o un subconjunto de tensores) no puede confirmarse con la informacion disponible.
 
@@ -81,7 +81,7 @@ El repositorio registra 0 descargas y 0 "likes" en la fecha de consulta, y no pr
 - Estimacion para cuantizacion de 8 bits: aproximadamente 13-14 GB de pesos; cabe en una RTX 4090, RTX 4080, L4 o A10G de 24 GB con contexto moderado.
 - Estimacion para cuantizacion de 4 bits (GGUF Q4_K_M o similar): aproximadamente 7-8 GB; cabe en GPUs de consumo como RTX 3060 12 GB, RTX 4070, RTX 4060 Ti 16 GB y en equipos Apple Silicon con 16 GB o mas de memoria unificada.
 - Cache KV: con contexto largo el consumo crece de forma significativa aunque el modelo base use atencion por ventana deslizante; para 128 000 tokens conviene medir el consumo real antes de dimensionar el hardware.
-- Opciones de despliegue: vLLM (con soporte de LoRA mediante `--enable-lora` o fusionando el adaptador), HuggingFace TGI, llama.cpp y Ollama (requieren convertir a GGUF), y `transformers` con `peft` directamente. El tag `endpoints_compatible` del repositorio sugiere compatibilidad con HuggingFace Inference Endpoints, pero no esta documentado por el autor.
+- Opciones de despliegue: vLLM (con soporte de LoRA mediante `--enable-lora` o fusionando el adaptador), Hugging Face TGI, llama.cpp y Ollama (requieren convertir a GGUF), y `transformers` con `peft` directamente. El tag `endpoints_compatible` del repositorio sugiere compatibilidad con Hugging Face Inference Endpoints, pero no esta documentado por el autor.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas para este adaptador y no seria riguroso extrapolarlas sin conocer la configuracion de despliegue ni la precision utilizada.
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ Frente a estos modelos, el adaptador aporta unicamente un ajuste especifico cuyo
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla autogenerada de HuggingFace, sin descripcion, sin datos de entrenamiento y sin hiperparametros.
+- Ausencia total de documentacion: la model card es la plantilla autogenerada de Hugging Face, sin descripcion, sin datos de entrenamiento y sin hiperparametros.
 - Licencia sin declarar: el repositorio no especifica licencia, lo que impide determinar si el uso comercial esta permitido. El modelo base Gemma 3 esta sujeto a los Gemma Terms of Use, que imponen obligaciones de atribucion y restricciones de uso; cualquier despliegue debe cumplirlas.
 - Riesgo de alucinacion: no evaluado. Al no existir benchmarks, se desconoce si el ajuste aumenta o reduce la tendencia del modelo base a inventar informacion.
 - Sesgos: no evaluados. Si el corpus de SFT esta centrado en un dominio o idioma concreto, es probable que el modelo herede y amplifique los sesgos de ese corpus, pero no hay datos para cuantificarlo.
@@ -113,7 +113,7 @@ Frente a estos modelos, el adaptador aporta unicamente un ajuste especifico cuyo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xw17/gemma-3-12b-it_SFT_lora_ifhaffect
+- Modelo en Hugging Face: https://huggingface.co/xw17/gemma-3-12b-it_SFT_lora_ifhaffect
 - Modelo base inferido (Gemma 3 12B IT): https://huggingface.co/google/gemma-3-12b-it
 - Informe tecnico de Gemma 3: https://arxiv.org/abs/2503.19786
 - Articulo referenciado en el tag `arxiv:1910.09700` del repositorio (Lacoste et al., 2019, sobre el calculo de emisiones de carbono en aprendizaje automatico; procede de la plantilla de la model card, no describe este modelo): https://arxiv.org/abs/1910.09700

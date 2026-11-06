@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `phuctahong/nanogpt-ddl2-gpt-mha-rope-cc-ec-lambda-weighted-accelerated-353m-job13442131-step100000` es un checkpoint de investigación de tipo GPT con 353.922.628 parámetros (aproximadamente 353,9 M), publicado en HuggingFace por el usuario phuctahong. No se trata de un modelo comercial ni de un lanzamiento con documentación extensa: es un artefacto de experimentación procedente del proyecto NanoGPT Pro (Nanogpt) de Princeton PLI, subido a partir de un run de Weights & Biases con identificador `gllhus6f` y job id `13442131`, correspondiente al paso de entrenamiento 100.000.
+El modelo `phuctahong/nanogpt-ddl2-gpt-mha-rope-cc-ec-lambda-weighted-accelerated-353m-job13442131-step100000` es un checkpoint de investigación de tipo GPT con 353.922.628 parámetros (aproximadamente 353,9 M), publicado en Hugging Face por el usuario phuctahong. No se trata de un modelo comercial ni de un lanzamiento con documentación extensa: es un artefacto de experimentación procedente del proyecto NanoGPT Pro (Nanogpt) de Princeton PLI, subido a partir de un run de Weights & Biases con identificador `gllhus6f` y job id `13442131`, correspondiente al paso de entrenamiento 100.000.
 
 El problema que aborda es el habitual en esta familia de checkpoints: servir como punto de partida reproducible para estudiar recetas de entrenamiento a escala media (cientos de millones de parámetros) sobre corpus educativos filtrados. Según la información del autor, el entrenamiento usó el dataset fineweb-edu (etiquetado como "fineweb-edu100B") y consumió 49,15 mil millones de tokens, con optimizador AdamW y una tasa de aprendizaje de 0,001.
 
@@ -80,7 +80,7 @@ No se dispone de benchmarks de este checkpoint, por lo que la comparación se li
 | nanogpt-ddl2-...-353m (este modelo) | 353,9 M | no disponible | Apache 2.0 | safetensors | no disponibles |
 | GPT-2 medium (OpenAI) | 355 M | 1024 tokens | MIT (pesos publicados por OpenAI) | safetensors / bin | sí (evaluaciones originales) |
 | Pythia-410m (EleutherAI) | 410 M | 2048 tokens | Apache 2.0 | safetensors | sí (suite de EleutherAI) |
-| SmolLM-360M (HuggingFace) | 360 M | 2048 tokens | Apache 2.0 | safetensors | sí (model card) |
+| SmolLM-360M (Hugging Face) | 360 M | 2048 tokens | Apache 2.0 | safetensors | sí (model card) |
 
 La diferencia principal frente a estas alternativas es la ausencia total de documentación de evaluación y de instrucciones de uso en el caso del checkpoint de phuctahong, así como la dependencia de una cadena de carga específica (`nanogptpro`) en lugar de `transformers` estándar.
 
@@ -98,7 +98,7 @@ La diferencia principal frente a estas alternativas es la ausencia total de docu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/phuctahong/nanogpt-ddl2-gpt-mha-rope-cc-ec-lambda-weighted-accelerated-353m-job13442131-step100000
+- Modelo en Hugging Face: https://huggingface.co/phuctahong/nanogpt-ddl2-gpt-mha-rope-cc-ec-lambda-weighted-accelerated-353m-job13442131-step100000
 - Run de Weights & Biases del checkpoint: https://wandb.ai/princeton-pli/ddl2/runs/gllhus6f
 - Proyecto de W&B de NanoGPT: https://wandb.ai/princeton-pli/Nanogpt
 - Repositorio o página del paquete `nanogptpro`: no disponible en la información proporcionada

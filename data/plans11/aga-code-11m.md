@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AGA-Code-11M es un modelo de lenguaje para código publicado por el usuario Plans11 en HuggingFace. La ficha presenta los tags `code`, `pytorch`, `from-scratch` y `decoder-only`, lo que indica una implementación propia de un modelo autorregresivo orientado a generación de código; el nombre sugiere 11 millones de parámetros, aunque el autor no confirma este dato en la información disponible. El repositorio está en acceso restringido (gated), tiene un tamaño de 0,0 GB y no incluye pipeline, licencia, idiomas ni documentación técnica.
+AGA-Code-11M es un modelo de lenguaje para código publicado por el usuario Plans11 en Hugging Face. La ficha presenta los tags `code`, `pytorch`, `from-scratch` y `decoder-only`, lo que indica una implementación propia de un modelo autorregresivo orientado a generación de código; el nombre sugiere 11 millones de parámetros, aunque el autor no confirma este dato en la información disponible. El repositorio está en acceso restringido (gated), tiene un tamaño de 0,0 GB y no incluye pipeline, licencia, idiomas ni documentación técnica.
 
 Su relevancia potencial se limita al nicho de modelos de código muy pequeños para inferencia local, prototipado y experimentación desde cero. Sin embargo, la ausencia de model card, benchmarks, tokenizador, configuración de entrenamiento y pesos verificables impide evaluar su calidad o su idoneidad para producción. La búsqueda web proporcionada no devuelve resultados relacionados con el modelo, solo páginas sobre clientes de torrents, por lo que no hay información externa que complemente la ficha.
 
@@ -19,7 +19,7 @@ Su relevancia potencial se limita al nicho de modelos de código muy pequeños p
 | Licencia | no disponible (acceso restringido) |
 | Formato de pesos | PyTorch (tag `pytorch`); no se confirma safetensors, bin ni GGUF |
 | Pipeline | no disponible |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 1 |
 | Fecha de creación | 2026-10-18 (posterior a la fecha actual; dato a verificar) |
@@ -88,6 +88,6 @@ No se han identificado en la información proporcionada modelos comparables con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Plans11/AGA-Code-11M
-- Perfil del autor en HuggingFace: https://huggingface.co/Plans11
+- Hugging Face: https://huggingface.co/Plans11/AGA-Code-11M
+- Perfil del autor en Hugging Face: https://huggingface.co/Plans11
 - No se han encontrado enlaces a paper, blog, repositorio o demo en la búsqueda web proporcionada. Los resultados devueltos corresponden a clientes y sitios de torrents, sin relación con el modelo.

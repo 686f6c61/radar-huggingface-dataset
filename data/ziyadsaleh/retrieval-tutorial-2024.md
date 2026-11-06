@@ -73,6 +73,6 @@ No se dispone de modelos comparables de la misma categoría (híbridos nano para
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ZiyadSaleh/retrieval-tutorial-2024
+- Repositorio en Hugging Face: https://huggingface.co/ZiyadSaleh/retrieval-tutorial-2024
 - Tutorial de retrieval de referencia (no específico del modelo): https://retrieval-tutorials.vercel.app/
 - Tutorial SIGIR 2024 sobre retrieval generativo: https://generative-ir.github.io/

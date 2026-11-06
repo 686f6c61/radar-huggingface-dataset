@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Relay-Coder-1.5B es un ajuste fino (fine-tune) orientado a agentes del modelo Qwen2.5-Coder-1.5B-Instruct, publicado por el usuario m-Muhaimin en HuggingFace. El modelo parte de la versión Instruct de Unsloth del conocido Qwen2.5-Coder y se ha especializado en la emisión de llamadas a herramientas nativas mediante el token `<tool_call>`, en el seguimiento de conversaciones multiturno con herramientas y políticas, en la solicitud explícita de argumentos faltantes en lugar de inventarlos y en la conducción de terminales (terminal driving).
+Relay-Coder-1.5B es un ajuste fino (fine-tune) orientado a agentes del modelo Qwen2.5-Coder-1.5B-Instruct, publicado por el usuario m-Muhaimin en Hugging Face. El modelo parte de la versión Instruct de Unsloth del conocido Qwen2.5-Coder y se ha especializado en la emisión de llamadas a herramientas nativas mediante el token `<tool_call>`, en el seguimiento de conversaciones multiturno con herramientas y políticas, en la solicitud explícita de argumentos faltantes en lugar de inventarlos y en la conducción de terminales (terminal driving).
 
 Con solo 1.500 millones de parámetros, el modelo se posiciona en la categoría de modelos pequeños para agentes y function calling, un nicho donde la eficiencia en memoria y la latencia baja son críticas para despliegues en producción. Su licencia Apache 2.0 y su compatibilidad con GGUF y llama.cpp lo hacen desplegable en hardware de consumo.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Relay-Coder-1.5B | 1.5B | no disponible | Apache 2.0 | HuggingFace (GGUF y safetensors) | Fine-tune agéntico con tool calling nativo |
-| Qwen2.5-Coder-1.5B-Instruct | 1.5B | no disponible en la informacion | Apache 2.0 | HuggingFace | Modelo base; sin especialización agéntica documentada |
-| Qwen2.5-Coder-7B-Instruct | 7B | no disponible en la informacion | Apache 2.0 | HuggingFace | Mayor capacidad pero requiere más VRAM |
-| Modelos de function calling pequeños (p. ej. Hermes-2-Pro) | variable | no disponible | variable | HuggingFace | Alternativas orientadas a tool calling, sin datos comparativos disponibles |
+| Relay-Coder-1.5B | 1.5B | no disponible | Apache 2.0 | Hugging Face (GGUF y safetensors) | Fine-tune agéntico con tool calling nativo |
+| Qwen2.5-Coder-1.5B-Instruct | 1.5B | no disponible en la informacion | Apache 2.0 | Hugging Face | Modelo base; sin especialización agéntica documentada |
+| Qwen2.5-Coder-7B-Instruct | 7B | no disponible en la informacion | Apache 2.0 | Hugging Face | Mayor capacidad pero requiere más VRAM |
+| Modelos de function calling pequeños (p. ej. Hermes-2-Pro) | variable | no disponible | variable | Hugging Face | Alternativas orientadas a tool calling, sin datos comparativos disponibles |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -85,6 +85,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [HuggingFace: m-Muhaimin/Relay-Coder-1.5B](https://huggingface.co/m-Muhaimin/Relay-Coder-1.5B)
+- [Hugging Face: m-Muhaimin/Relay-Coder-1.5B](https://huggingface.co/m-Muhaimin/Relay-Coder-1.5B)
 - [Modelo base: unsloth/Qwen2.5-Coder-1.5B-Instruct](https://huggingface.co/unsloth/Qwen2.5-Coder-1.5B-Instruct)
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

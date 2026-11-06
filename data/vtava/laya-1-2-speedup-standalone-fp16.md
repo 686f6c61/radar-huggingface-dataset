@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Laya-1.2-speedup-standalone-fp16 es un checkpoint de inferencia publicado por el usuario vtava en HuggingFace, derivado de vtava/Laya-1.2-speedup y del modelo base convaiinnovations/laya-typed-decisions. No es un entrenamiento nuevo: se trata de una conversion/exportacion a precision FP16 de un modelo existente, pensada para ejecutarse de forma autonoma (standalone) sin descargar el modelo base, el cabezal original ni dependencias externas una vez obtenido el snapshot del repositorio.
+Laya-1.2-speedup-standalone-fp16 es un checkpoint de inferencia publicado por el usuario vtava en Hugging Face, derivado de vtava/Laya-1.2-speedup y del modelo base convaiinnovations/laya-typed-decisions. No es un entrenamiento nuevo: se trata de una conversion/exportacion a precision FP16 de un modelo existente, pensada para ejecutarse de forma autonoma (standalone) sin descargar el modelo base, el cabezal original ni dependencias externas una vez obtenido el snapshot del repositorio.
 
 El modelo se apoya en un encoder ModernBERT de 28 capas y un cabezal de decision tipada (typed decision head) de 64 tokens, junto con embeddings de tipo, un scorer, el tokenizer y el codigo de inferencia. El total de parametros asciende a 421.029.889, lo que situa al modelo en la categoria de ~420 millones de parametros, con un peso en disco de 842.081.042 bytes (842,081 MB) al estar serializado integramente en float16.
 
@@ -44,7 +44,7 @@ En cuanto al proceso de exportacion, todos los parametros y buffers flotantes se
 - Control de navegacion en simuladores: el ejemplo oficial de la model card usa un contexto con direccion de carretera y velocidad para elegir la direccion de giro, lo que encaja en bucles de simulacion o entornos de conduccion sintetica.
 - Enrutado de intenciones en un pipeline: usar el modelo como clasificador de decision entre categorias predefinidas antes de derivar la peticion a otro componente, apoyandose en la API de criterios de eleccion.
 - Etiquetado automatico de decisiones: dado un contexto y un conjunto de criterios, obtener la opcion asignada para anotar registros de forma consistente.
-- Despliegue en entornos aislados o sin red: al ser un export autocontenido, puede copiarse a una maquina con GPU y ejecutarse con local_files_only=True sin acceso a HuggingFace ni a repositorios externos.
+- Despliegue en entornos aislados o sin red: al ser un export autocontenido, puede copiarse a una maquina con GPU y ejecutarse con local_files_only=True sin acceso a Hugging Face ni a repositorios externos.
 - Comparacion de checkpoints en evaluacion interna: el propio autor usa una auditoria de 12 ejemplos sinteticos para verificar que la conversion FP16 no altera las predicciones, un patron reutilizable para validar exportaciones de precision.
 - Prototipado en GPU de consumo: con 842 MB de pesos en FP16, sirve para validar rapidamente una tuberia de decision tipada antes de escalar a un despliegue mayor.
 
@@ -100,7 +100,7 @@ No se han identificado modelos comparables de terceros en la informacion disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vtava/Laya-1.2-speedup-standalone-fp16
+- Modelo en Hugging Face: https://huggingface.co/vtava/Laya-1.2-speedup-standalone-fp16
 - Export de origen: https://huggingface.co/vtava/Laya-1.2-speedup
 - Modelo base: https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Paper, blog, repositorio o demo adicionales: no disponible. Las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo.

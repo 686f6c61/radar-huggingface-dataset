@@ -120,6 +120,6 @@ La informacion proporcionada no incluye datos de modelos comparables de otros fa
 - Repositorio de la cuantizacion: https://huggingface.co/chimorris/LFM2.5-24B-A2B-exl3-3.25bpw
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
 - ExLlamaV3 (repositorio): https://github.com/turboderp-org/exllamav3
-- Liquid AI en HuggingFace: https://huggingface.co/LiquidAI
+- Liquid AI en Hugging Face: https://huggingface.co/LiquidAI
 - Perfil de turboderp en GitHub: https://github.com/turboderp-org
 - Licencia LFM Open License v1.0: archivo `LICENSE` incluido en el repositorio de la cuantizacion

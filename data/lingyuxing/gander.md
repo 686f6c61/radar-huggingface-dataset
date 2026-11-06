@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gander es un modelo de interaccion omnicanal (audio, video, texto) desarrollado por el usuario lingyuxing y publicado en HuggingFace bajo licencia Apache 2.0. Se construye sobre `openbmb/MiniCPM-o-4_5` y su objetivo es mantener una conversacion hablada y visual continua mientras se ejecutan tareas de larga duracion de forma asincrona. A diferencia de los asistentes de voz por turnos, Gander modela la interaccion como unidades causales de un segundo: en cada unidad, el modelo observa el audio y el video recien disponibles y decide si escuchar, hablar, interrumpir o invocar una operacion de tarea.
+Gander es un modelo de interaccion omnicanal (audio, video, texto) desarrollado por el usuario lingyuxing y publicado en Hugging Face bajo licencia Apache 2.0. Se construye sobre `openbmb/MiniCPM-o-4_5` y su objetivo es mantener una conversacion hablada y visual continua mientras se ejecutan tareas de larga duracion de forma asincrona. A diferencia de los asistentes de voz por turnos, Gander modela la interaccion como unidades causales de un segundo: en cada unidad, el modelo observa el audio y el video recien disponibles y decide si escuchar, hablar, interrumpir o invocar una operacion de tarea.
 
 La arquitectura se divide en dos componentes entrenables mas un runtime externo. El `thinker` realiza percepcion multimodal, control de la interaccion, generacion de lenguaje y operaciones de tarea, con un presupuesto de hasta 8 tokens lexicos por unidad de habla. El `talker` toma las representaciones del thinker y sintetiza habla de forma incremental mediante tokens S3 y un decodificador Token2wav, con 50 tokens S3 por unidad y emision en chunks de 25 tokens (aproximadamente 0,5 segundos). El runtime de Gander gestiona el ciclo de vida de las tareas delegadas.
 
@@ -104,7 +104,7 @@ Diferencia cualitativa comprobable: Gander incorpora de forma explicita un contr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lingyuxing/Gander
+- Modelo en Hugging Face: https://huggingface.co/lingyuxing/Gander
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-o-4_5
 - Repositorio GitHub del runtime: https://github.com/Omni-Interaction-Gander/Omni-Interaction-Agent
 - Paper: https://arxiv.org/abs/2609.08977

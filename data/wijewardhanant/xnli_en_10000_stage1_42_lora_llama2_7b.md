@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) denominado `xnli_en_10000_stage1_42_LoRA_llama2_7B`, publicado por el usuario WijewardhanaNT sobre el modelo base `meta-llama/Llama-2-7b-hf`. No se trata de un modelo completo, sino de un conjunto de pesos adicionales en formato PEFT/safetensors que deben cargarse junto al modelo base de Meta para poder utilizarse. El repositorio no incluye pesos fusionados, ni tokenizador propio, ni configuración de generación.
 
-La información publicada es mínima: la model card es la plantilla genérica de HuggingFace sin rellenar, no se declara licencia, idiomas, datos de entrenamiento ni resultados de evaluación. El identificador del repositorio sugiere que el adaptador se entrenó sobre el subconjunto en inglés del dataset XNLI (inferencia de lenguaje natural entre frases) con 10.000 ejemplos, dentro de una ejecución o etapa etiquetada como "stage1" y "42", pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
+La información publicada es mínima: la model card es la plantilla genérica de Hugging Face sin rellenar, no se declara licencia, idiomas, datos de entrenamiento ni resultados de evaluación. El identificador del repositorio sugiere que el adaptador se entrenó sobre el subconjunto en inglés del dataset XNLI (inferencia de lenguaje natural entre frases) con 10.000 ejemplos, dentro de una ejecución o etapa etiquetada como "stage1" y "42", pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
 Su relevancia es limitada y de carácter experimental: con 0 descargas y 0 "likes", sin documentación y sin métricas, es un artefacto útil principalmente para reproducir experimentos de ajuste fino con LoRA sobre Llama 2, no para despliegues en producción.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Llama-2-7b-hf) | 6.740 M en el base + adaptador no cuantificado | 4096 | Adaptador LoRA para NLI/generacion en ingles (segun el identificador) | No disponible | Repositorio HuggingFace con 0 descargas |
+| Este adaptador (sobre Llama-2-7b-hf) | 6.740 M en el base + adaptador no cuantificado | 4096 | Adaptador LoRA para NLI/generacion en ingles (segun el identificador) | No disponible | Repositorio Hugging Face con 0 descargas |
 | meta-llama/Llama-2-7b-hf | 6.740 M | 4096 | Modelo base generativo | Llama 2 Community License | Ampliamente disponible, ecosistema maduro |
 | mistralai/Mistral-7B-v0.1 | 7.240 M | 8192 (32.768 con sliding window) | Modelo base generativo | Apache 2.0 | Ampliamente disponible |
 | meta-llama/Meta-Llama-3.1-8B | 8.030 M | 131.072 | Modelo base generativo | Llama 3.1 Community License | Ampliamente disponible |
@@ -82,7 +82,7 @@ La comparacion de rendimiento no es posible: no hay resultados de benchmarks pub
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]". No hay descripcion, ejemplos de uso ni instrucciones de carga.
+- Documentacion inexistente: la model card es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]". No hay descripcion, ejemplos de uso ni instrucciones de carga.
 - Licencia sin especificar: al no declararse licencia, no hay autorizacion explicita de uso comercial. Ademas, al derivar de Llama 2, se heredan las restricciones de la Llama 2 Community License y su politica de uso aceptable.
 - Sin evaluacion: no existen metricas de exactitud, F1 ni comparaciones con el modelo base, por lo que no se puede afirmar que el ajuste mejore el rendimiento en NLI.
 - Riesgo de sobreajuste: si el entrenamiento se realizo con solo 10.000 ejemplos (segun el identificador), es probable un ajuste limitado a la distribucion de XNLI en ingles y una degradacion de las capacidades generativas generales del modelo base.
@@ -95,7 +95,7 @@ La comparacion de rendimiento no es posible: no hay resultados de benchmarks pub
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_10000_stage1_42_LoRA_llama2_7B
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_10000_stage1_42_LoRA_llama2_7B
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-hf
 - Documentacion de PEFT: https://huggingface.co/docs/peft/index
 - Paper de eficiencia de LoRA: https://arxiv.org/abs/2106.09685

@@ -76,7 +76,7 @@ La principal diferencia es que UmeAiRT ofrece un paquete integral con binarios y
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/UmeAiRT/ComfyUI-Auto-Installer-Assets
+- Repositorio en Hugging Face: https://huggingface.co/UmeAiRT/ComfyUI-Auto-Installer-Assets
 - Réplica en ModelScope: https://www.modelscope.ai/datasets/UmeAiRT/ComfyUI-Auto-Installer-Assets
 - Proyecto ComfyUI-Auto_installer: https://gitlab.com/UmeAiRT-Studio/ComfyUI-Auto_installer-Python
 - Proyecto ComfyUI-UmeAiRT-Toolkit: https://gitlab.com/UmeAiRT-Studio/ComfyUI-UmeAiRT-Toolkit

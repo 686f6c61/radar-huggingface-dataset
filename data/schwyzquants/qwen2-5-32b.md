@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-32B es un modelo de lenguaje de tipo base (solo preentrenamiento, sin post-entrenamiento de instrucciones) perteneciente a la serie Qwen2.5 desarrollada por el equipo Qwen de Alibaba. Esta ficha corresponde a la copia publicada por el usuario `schwyzquants` en HuggingFace, que redistribuye los pesos originales bajo licencia Apache-2.0. Se trata de un transformer causal denso de 32.763.876.352 parametros (32,76B segun los pesos safetensors; la model card oficial declara 32,5B, de los cuales 31,0B son no-embedding), con 64 capas y una ventana de contexto de 131.072 tokens.
+Qwen2.5-32B es un modelo de lenguaje de tipo base (solo preentrenamiento, sin post-entrenamiento de instrucciones) perteneciente a la serie Qwen2.5 desarrollada por el equipo Qwen de Alibaba. Esta ficha corresponde a la copia publicada por el usuario `schwyzquants` en Hugging Face, que redistribuye los pesos originales bajo licencia Apache-2.0. Se trata de un transformer causal denso de 32.763.876.352 parametros (32,76B segun los pesos safetensors; la model card oficial declara 32,5B, de los cuales 31,0B son no-embedding), con 64 capas y una ventana de contexto de 131.072 tokens.
 
 El modelo resuelve el caso de uso de quien necesita una base preentrenada de tamano medio-grande, con licencia permisiva, para aplicar SFT, RLHF, DPO o preentrenamiento continuado sobre dominios e idiomas concretos. No es un modelo de chat: la propia model card desaconseja su uso conversacional directo. Su relevancia actual reside en la combinacion de contexto largo (hasta 128K tokens de entrada y 8K de generacion), soporte multilingue declarado de mas de 29 idiomas y licencia Apache-2.0, que permite uso comercial sin restricciones de escala.
 
@@ -84,11 +84,11 @@ Los datos de los modelos comparativos proceden de sus fichas publicas y no forma
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-32B (este repositorio) | 32,76B (safetensors) | 131.072 | Denso, base | Apache-2.0 | HuggingFace, espejo de terceros (`schwyzquants`) |
-| Qwen2.5-32B (repositorio oficial de Qwen) | 32,5B declarados | 131.072 | Denso, base | Apache-2.0 | HuggingFace, organizacion oficial |
-| Qwen2.5-32B-Instruct | 32,5B declarados | 131.072 | Denso, post-entrenado | Apache-2.0 | HuggingFace, organizacion oficial |
-| Llama 3.1 70B | ~70,6B | 128.000 | Denso | Licencia comunitaria de Llama 3.1 (con restricciones) | HuggingFace, Meta |
-| Gemma 2 27B | ~27,2B | 8.192 | Denso | Terminos de uso de Gemma | Kaggle y HuggingFace |
+| Qwen2.5-32B (este repositorio) | 32,76B (safetensors) | 131.072 | Denso, base | Apache-2.0 | Hugging Face, espejo de terceros (`schwyzquants`) |
+| Qwen2.5-32B (repositorio oficial de Qwen) | 32,5B declarados | 131.072 | Denso, base | Apache-2.0 | Hugging Face, organizacion oficial |
+| Qwen2.5-32B-Instruct | 32,5B declarados | 131.072 | Denso, post-entrenado | Apache-2.0 | Hugging Face, organizacion oficial |
+| Llama 3.1 70B | ~70,6B | 128.000 | Denso | Licencia comunitaria de Llama 3.1 (con restricciones) | Hugging Face, Meta |
+| Gemma 2 27B | ~27,2B | 8.192 | Denso | Terminos de uso de Gemma | Kaggle y Hugging Face |
 
 Frente a Llama 3.1 70B, este modelo ofrece menos de la mitad de parametros con una ventana de contexto equivalente y una licencia mas permisiva (Apache-2.0 frente a licencia comunitaria con clausulas de uso aceptable). Frente a Gemma 2 27B, el parametro diferencial es la ventana de contexto, 16 veces mayor, ademas de la licencia Apache-2.0 sin terminos de uso adicionales.
 
@@ -106,7 +106,7 @@ Frente a Llama 3.1 70B, este modelo ofrece menos de la mitad de parametros con u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/schwyzquants/Qwen2.5-32B
+- Repositorio Hugging Face: https://huggingface.co/schwyzquants/Qwen2.5-32B
 - Licencia declarada (repositorio oficial): https://huggingface.co/Qwen/Qwen2.5-32B/blob/main/LICENSE
 - Blog oficial de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Repositorio GitHub de Qwen2.5: https://github.com/QwenLM/Qwen2.5

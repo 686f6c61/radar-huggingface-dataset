@@ -90,7 +90,7 @@ Las diferencias inferiores a ~0,01 estan dentro del ruido entre ejecuciones de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rolf-mozilla/french-embedding-e5-distilled
+- Hugging Face: https://huggingface.co/rolf-mozilla/french-embedding-e5-distilled
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Teacher: https://huggingface.co/HPLT/hplt_bert_base_fr
 - transformers.js: https://github.com/huggingface/transformers.js

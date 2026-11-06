@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Focus695/life-archive-assistant-v3",
+  "slug": "focus695-life-archive-assistant-v3",
+  "author": "Focus695",
+  "url": "https://huggingface.co/Focus695/life-archive-assistant-v3",
+  "created_at": "2026-11-06T07:28:40.000Z",
+  "updated_at": "2026-11-06T07:43:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "local-inference",
+    "structured-output",
+    "json",
+    "lora",
+    "life-archive",
+    "text-generation",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986048352,
+  "storage_human": "986 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Boostaro Reviews – Does It Improve Your Performance?",
+      "url": "https://www.latestly.com/lifestyle/health-wellness/boostaro-reviews-does-it-improve-your-performance-6049150.html",
+      "snippet": "Jun 19, 2024 · Boostaro, a natural supplement that will help to enhance male intimate health and vigor. The goal of this review is to …"
+    }
+  ]
+}

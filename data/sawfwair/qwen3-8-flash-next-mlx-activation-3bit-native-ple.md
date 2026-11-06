@@ -80,7 +80,7 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sawfwair/Qwen3.8-Flash-Next-MLX-Activation-3bit-Native-PLE
+- Modelo en Hugging Face: https://huggingface.co/Sawfwair/Qwen3.8-Flash-Next-MLX-Activation-3bit-Native-PLE
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Versión Q4 del mismo autor: https://huggingface.co/Sawfwair/Qwen3.8-Flash-Next-MLX-4bit

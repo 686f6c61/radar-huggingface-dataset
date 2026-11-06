@@ -84,11 +84,11 @@ La comparación directa con políticas de difusión o de flow matching no es pos
 - Riesgo de alucinación: no aplica en el sentido textual, pero sí existe el riesgo análogo de generar trayectorias de acción no seguras o no físicamente válidas cuando la observación se aleja de la distribución de entrenamiento.
 - Limitaciones de contexto: al operar sobre observaciones, la política depende de la ventana temporal que implemente Past2Next, dato no documentado; no hay gestión de contexto largo en el sentido de los modelos de lenguaje.
 - Idiomas: no hay soporte de lenguaje natural documentado, por lo que no se puede usar como interfaz conversacional.
-- Caveat de producción: el repositorio de 53,6 GB obliga a descargar todos los artefactos (configuraciones, logs y siete checkpoints por run) aunque solo se necesite uno; conviene descargar archivos individuales mediante el cliente de HuggingFace.
+- Caveat de producción: el repositorio de 53,6 GB obliga a descargar todos los artefactos (configuraciones, logs y siete checkpoints por run) aunque solo se necesite uno; conviene descargar archivos individuales mediante el cliente de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeanLiu0272/p2n_flow_resnet18
+- Modelo en Hugging Face: https://huggingface.co/SeanLiu0272/p2n_flow_resnet18
 - ResNet18 from Scratch Using PyTorch (GeeksforGeeks): https://www.geeksforgeeks.org/deep-learning/resnet18-from-scratch-using-pytorch/
 - ResNet: Enabling Deep Convolutional Neural Networks through Residual Learning (arXiv:2510.24036): https://arxiv.org/html/2510.24036v1
 - A Comprehensive Review of ResNet-18: Architecture and Applications (Springer): https://link.springer.com/chapter/10.1007/978-981-96-4536-7_42

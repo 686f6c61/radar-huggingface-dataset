@@ -71,10 +71,10 @@ La model card incluye explícitamente la línea "_No evaluation results have bee
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| hmv619/ur5e_pi05_finetuned | ~4,14 mil millones | no disponible | apache-2.0 | HuggingFace (0 descargas) | Ajuste para UR5e, tarea única, 2 episodios |
-| lerobot/pi05_base | no disponible | no disponible | no disponible en la busqueda | HuggingFace | Checkpoint base de π₀.₅ en LeRobot, preentrenado con 10k+ horas |
-| lerobot/pi05_libero_base | no disponible | no disponible | no disponible en la busqueda | HuggingFace | Variante orientada a los entornos LIBERO |
-| AiSaurabhPatil/openarm-pi05-finetuned | no disponible | no disponible | no disponible en la busqueda | HuggingFace | Ajuste de π₀.₅ para robot bimanual OpenArm, acciones de 16 dimensiones, horizonte 16 |
+| hmv619/ur5e_pi05_finetuned | ~4,14 mil millones | no disponible | apache-2.0 | Hugging Face (0 descargas) | Ajuste para UR5e, tarea única, 2 episodios |
+| lerobot/pi05_base | no disponible | no disponible | no disponible en la busqueda | Hugging Face | Checkpoint base de π₀.₅ en LeRobot, preentrenado con 10k+ horas |
+| lerobot/pi05_libero_base | no disponible | no disponible | no disponible en la busqueda | Hugging Face | Variante orientada a los entornos LIBERO |
+| AiSaurabhPatil/openarm-pi05-finetuned | no disponible | no disponible | no disponible en la busqueda | Hugging Face | Ajuste de π₀.₅ para robot bimanual OpenArm, acciones de 16 dimensiones, horizonte 16 |
 
 No se dispone de datos de rendimiento comparables entre estas variantes en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmv619/ur5e_pi05_finetuned
+- Modelo en Hugging Face: https://huggingface.co/hmv619/ur5e_pi05_finetuned
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/local/ur5e_pi0_dataset
 - Blog de π₀.₅ (Physical Intelligence): https://www.physicalintelligence.company/blog/pi05

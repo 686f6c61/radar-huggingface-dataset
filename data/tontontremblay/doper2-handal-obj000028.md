@@ -45,7 +45,7 @@ El entrenamiento sigue el pipeline DOPER2 en su etapa V5, que combina tres fuent
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card referencia un dataset de resultados en HuggingFace (`TontonTremblay/doper2-handal-results`) que contiene tablas de evaluación y cuadrículas de inferencia, pero no se incluyen valores numéricos concretos en la documentación proporcionada.
+No se han publicado resultados de benchmarks en la información disponible. La model card referencia un dataset de resultados en Hugging Face (`TontonTremblay/doper2-handal-results`) que contiene tablas de evaluación y cuadrículas de inferencia, pero no se incluyen valores numéricos concretos en la documentación proporcionada.
 
 ## Requisitos de hardware
 
@@ -69,7 +69,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TontonTremblay/doper2-handal-obj000028
+- Modelo en Hugging Face: https://huggingface.co/TontonTremblay/doper2-handal-obj000028
 - Dataset de resultados: https://huggingface.co/datasets/TontonTremblay/doper2-handal-results
 - Dataset DOPER_BOP: https://huggingface.co/datasets/TontonTremblay/DOPER_BOP
 - Repositorio GitHub del autor (pipeline de renderizado): https://github.com/TontonTremblay/blender2rand

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/nld-100mb-after-nld_heavy_zipf-ckpt500_seed3407_seed3407` es un modelo de generación de texto de 124.770.816 parámetros (aproximadamente 124,8 M) publicado por el usuario fpadovani, vinculado según la URL de Weights & Biases a la Universidad de Groningen. Se trata de un ajuste fino (SFT) realizado con la librería TRL sobre el modelo base `fpadovani/ppt-nld_heavy_zipf-100mb_seed3407`, que a su vez forma parte de una cadena de experimentos identificada por la nomenclatura del repositorio. La etiqueta `gpt2` en HuggingFace indica que la arquitectura subyacente pertenece a la familia GPT-2 (transformer decoder-only), aunque no se publica la configuración exacta de capas, cabezas o dimensión oculta.
+El modelo `fpadovani/nld-100mb-after-nld_heavy_zipf-ckpt500_seed3407_seed3407` es un modelo de generación de texto de 124.770.816 parámetros (aproximadamente 124,8 M) publicado por el usuario fpadovani, vinculado según la URL de Weights & Biases a la Universidad de Groningen. Se trata de un ajuste fino (SFT) realizado con la librería TRL sobre el modelo base `fpadovani/ppt-nld_heavy_zipf-100mb_seed3407`, que a su vez forma parte de una cadena de experimentos identificada por la nomenclatura del repositorio. La etiqueta `gpt2` en Hugging Face indica que la arquitectura subyacente pertenece a la familia GPT-2 (transformer decoder-only), aunque no se publica la configuración exacta de capas, cabezas o dimensión oculta.
 
 El interés de esta ficha es fundamentalmente de investigación: se trata de un artefacto experimental con cero descargas y cero "likes" en el momento de la consulta, sin model card sustantiva más allá de la plantilla autogenerada por TRL. La nomenclatura (`nld`, `100mb`, `heavy_zipf`, `ckpt500`, `seed3407`) sugiere un experimento controlado sobre distribución de datos y puntos de control, pero el autor no documenta el significado de estas etiquetas ni la composición del dataset.
 
@@ -23,7 +23,7 @@ Por su tamaño y su licencia indeterminada, no es un modelo recomendable para pr
 | Tamaño del repositorio | 2,2 GB |
 | Modelo base | fpadovani/ppt-nld_heavy_zipf-100mb_seed3407 |
 | Método de entrenamiento | SFT (supervised fine-tuning) con TRL 0.23.0 |
-| Fecha de creación | 14 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de creación | 14 de septiembre de 2026 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -78,7 +78,7 @@ La comparación se limita a aspectos estructurales verificables, ya que este mod
 |---|---|---|---|---|---|
 | fpadovani/nld-100mb-after-nld_heavy_zipf-ckpt500_seed3407_seed3407 | 124,77 M | No disponible | No disponible | SFT con TRL sobre modelo base propio | No disponible |
 | GPT-2 (124M) | 124 M | 1024 tokens | Licencia tipo MIT modificada de OpenAI | Preentrenamiento con corpus web | Métricas publicadas por OpenAI; no comparables directamente por diferencias de evaluación |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Destilación de GPT-2 | Métricas publicadas por HuggingFace |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Destilación de GPT-2 | Métricas publicadas por Hugging Face |
 | SmolLM2-135M | 135 M | 8192 tokens | Apache 2.0 | Preentrenamiento a gran escala más ajuste por instrucciones | Métricas publicadas por el autor |
 
 La diferencia práctica más relevante no es de tamaño, sino de trazabilidad: los tres modelos de referencia cuentan con licencia explícita, documentación de datos y resultados publicados, mientras que este checkpoint carece de los tres elementos.
@@ -98,7 +98,7 @@ La diferencia práctica más relevante no es de tamaño, sino de trazabilidad: l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/nld-100mb-after-nld_heavy_zipf-ckpt500_seed3407_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/nld-100mb-after-nld_heavy_zipf-ckpt500_seed3407_seed3407
 - Modelo base: https://huggingface.co/fpadovani/ppt-nld_heavy_zipf-100mb_seed3407
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/p8mlogvd
 - Repositorio de TRL: https://github.com/huggingface/trl

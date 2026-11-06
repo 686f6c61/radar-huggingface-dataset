@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Arx-1.0-Fast-GGUF es un repositorio de pesos publicado en HuggingFace por el usuario LSGHOST bajo licencia Apache 2.0. El identificador del repositorio indica que se trata de una distribucion en formato GGUF, es decir, pesos cuantizados pensados para su ejecucion en runtimes compatibles con llama.cpp (llama.cpp, Ollama, LM Studio, entre otros), presumiblemente derivados de un modelo base denominado Arx-1.0-Fast.
+Arx-1.0-Fast-GGUF es un repositorio de pesos publicado en Hugging Face por el usuario LSGHOST bajo licencia Apache 2.0. El identificador del repositorio indica que se trata de una distribucion en formato GGUF, es decir, pesos cuantizados pensados para su ejecucion en runtimes compatibles con llama.cpp (llama.cpp, Ollama, LM Studio, entre otros), presumiblemente derivados de un modelo base denominado Arx-1.0-Fast.
 
 La model card del repositorio no contiene mas que el bloque de metadatos de licencia (`license: apache-2.0`). No se documenta arquitectura, numero de parametros, longitud de contexto, composicion del dataset de entrenamiento, idiomas soportados ni resultados de evaluacion. Tampoco se especifican los niveles de cuantizacion publicados ni el modelo base exacto del que proceden los pesos.
 
@@ -21,8 +21,8 @@ A la fecha de los metadatos consultados, el repositorio registra 0 descargas y 0
 | Licencia | apache-2.0 |
 | Formato de pesos | GGUF (inferido del identificador del repositorio); no se declaran otros formatos en la model card |
 | Modelo base | no disponible |
-| Fecha de creacion | 2026-09-30 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-30 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-30 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-30 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -79,7 +79,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Arx-1.0-Fast-GGUF | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas | Sin documentacion tecnica |
+| Arx-1.0-Fast-GGUF | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas | Sin documentacion tecnica |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se ha identificado una categoria clara de comparacion |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LSGHOST/Arx-1.0-Fast-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/LSGHOST/Arx-1.0-Fast-GGUF
 - Modelo base Arx-1.0-Fast: no disponible (no se ha localizado repositorio, paper ni anuncio)
 - Paper o documentacion tecnica: no disponible
 - Blog o anuncio del autor: no disponible

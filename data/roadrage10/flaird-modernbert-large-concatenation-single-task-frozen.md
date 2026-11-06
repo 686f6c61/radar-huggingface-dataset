@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`roadrage10/flaird-modernbert-large-concatenation-single-task-frozen` es un modelo de clasificación de texto (`text-classification`) publicado en HuggingFace por el usuario roadrage10. El nombre indica que se trata de un ajuste fino (fine-tuning) sobre la arquitectura ModernBERT-large, con una configuración denominada "concatenation-single-task-frozen". No obstante, la model card no especifica el modelo base exacto ni la tarea concreta: el autor la dejó autogenerada por la librería Trainer y la mayoría de las secciones aparecen como "More information needed". El repositorio tiene un tamano de 1,6 GB y 397.024.257 parámetros, un orden de magnitud coherente con un encoder tipo ModernBERT-large.
+`roadrage10/flaird-modernbert-large-concatenation-single-task-frozen` es un modelo de clasificación de texto (`text-classification`) publicado en Hugging Face por el usuario roadrage10. El nombre indica que se trata de un ajuste fino (fine-tuning) sobre la arquitectura ModernBERT-large, con una configuración denominada "concatenation-single-task-frozen". No obstante, la model card no especifica el modelo base exacto ni la tarea concreta: el autor la dejó autogenerada por la librería Trainer y la mayoría de las secciones aparecen como "More information needed". El repositorio tiene un tamano de 1,6 GB y 397.024.257 parámetros, un orden de magnitud coherente con un encoder tipo ModernBERT-large.
 
 El modelo resuelve una tarea de clasificación (posiblemente binaria o multietiqueta, a juzgar por las métricas reportadas: ROC-AUC, Brier, C@1, F1 y F0.5u). Se entrenó durante una única época con batch de 256 y learning rate 2e-5. En el conjunto de evaluación alcanza Loss 0.0083, ROC-AUC 0.988, F1 0.965 y "Mean" 0.965, según los resultados declarados por el autor. No se ha publicado información sobre el conjunto de datos, los idiomas soportados ni la licencia.
 
@@ -36,7 +36,7 @@ En cuanto al entrenamiento, la model card indica una única época (`num_epochs:
 ## Capacidades
 
 - Clasificación de texto: es la única capacidad documentada, ya que el pipeline declarado es `text-classification`.
-- Integración con `transformers`: se puede cargar mediante la API estándar de HuggingFace, presumiblemente con código personalizado (`custom_code`).
+- Integración con `transformers`: se puede cargar mediante la API estándar de Hugging Face, presumiblemente con código personalizado (`custom_code`).
 - No se documenta generación de texto, razonamiento, código, matemáticas ni visión.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni razonamiento multi-paso.
@@ -101,10 +101,10 @@ No se dispone de datos de rendimiento comparables en la información proporciona
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| roadrage10/flaird-modernbert-large-... | 397 M | No disponible | No disponible | HuggingFace (3 descargas) |
-| ModernBERT-large | ~395 M | 8.192 tokens (según documentación del modelo base) | Apache 2.0 (según el modelo base) | HuggingFace |
-| DeBERTa-v3-large | ~435 M | 512 tokens | MIT (según el modelo base) | HuggingFace |
-| RoBERTa-large | ~355 M | 512 tokens | MIT (según el modelo base) | HuggingFace |
+| roadrage10/flaird-modernbert-large-... | 397 M | No disponible | No disponible | Hugging Face (3 descargas) |
+| ModernBERT-large | ~395 M | 8.192 tokens (según documentación del modelo base) | Apache 2.0 (según el modelo base) | Hugging Face |
+| DeBERTa-v3-large | ~435 M | 512 tokens | MIT (según el modelo base) | Hugging Face |
+| RoBERTa-large | ~355 M | 512 tokens | MIT (según el modelo base) | Hugging Face |
 
 La comparación de rendimiento no está disponible: este modelo no publica benchmarks estandarizados y no se han facilitado resultados de los modelos alternativos.
 
@@ -122,6 +122,6 @@ La comparación de rendimiento no está disponible: este modelo no publica bench
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roadrage10/flaird-modernbert-large-concatenation-single-task-frozen
+- Modelo en Hugging Face: https://huggingface.co/roadrage10/flaird-modernbert-large-concatenation-single-task-frozen
 - Resultados de la búsqueda web: no se ha encontrado ningún recurso relevante sobre este modelo (los resultados devueltos tratan sobre emisoras de radio BBC/VOA y no guardan relación).
 - Paper, blog, repositorio o demo adicionales: no disponibles.

@@ -79,6 +79,6 @@ No se dispone de información suficiente para una comparativa cuantitativa con o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-milsub-dpo-unmixed
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-milsub-dpo-unmixed
 - Proyecto Model Organism Lottery (GitHub): https://github.com/model-organisms-for-real/model-organism-lottery
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO

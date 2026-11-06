@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`replicate/quantization-bitsandbytes` no es un modelo de lenguaje, sino un repositorio de kernels de computacion publicado en HuggingFace bajo la libreria `kernels`. Contiene la implementacion del kernel `gemm_4bit_forward`, asociado al paquete bitsandbytes, que implementa operaciones de multiplicacion de matrices (GEMM) sobre pesos cuantizados a 4 bits. El autor que lo publica es la organizacion `replicate`, aunque la model card hace referencia a la ruta `kernels-community/quantization-bitsandbytes`, lo que sugiere que se trata de una copia o espejo del repositorio de la comunidad de HuggingFace.
+`replicate/quantization-bitsandbytes` no es un modelo de lenguaje, sino un repositorio de kernels de computacion publicado en Hugging Face bajo la libreria `kernels`. Contiene la implementacion del kernel `gemm_4bit_forward`, asociado al paquete bitsandbytes, que implementa operaciones de multiplicacion de matrices (GEMM) sobre pesos cuantizados a 4 bits. El autor que lo publica es la organizacion `replicate`, aunque la model card hace referencia a la ruta `kernels-community/quantization-bitsandbytes`, lo que sugiere que se trata de una copia o espejo del repositorio de la comunidad de Hugging Face.
 
 El proposito de este tipo de repositorios es distribuir codigo de kernels precompilado y listo para consumir desde Python mediante `get_kernel()`, evitando que el usuario tenga que compilar manualmente extensiones CUDA o C++. Esto es relevante en el contexto de inferencia eficiente, porque las operaciones GEMM de 4 bits son el cuello de botella computacional en la mayoria de pipelines de cuantizacion de gran tamano.
 
@@ -23,14 +23,14 @@ La informacion publica es muy limitada: el repositorio tiene 0 descargas y 0 lik
 
 ## Arquitectura y entrenamiento
 
-No se trata de una arquitectura de red neuronal ni de un proceso de entrenamiento. El repositorio empaqueta una implementacion de kernel, `gemm_4bit_forward`, pensada para ejecutar la multiplicacion de matrices hacia delante con pesos cuantizados a 4 bits. Se distribuye a traves de la libreria `kernels` de HuggingFace, que permite cargar modulos compilados por version mediante `get_kernel("replicate/quantization-bitsandbytes", version=1)`.
+No se trata de una arquitectura de red neuronal ni de un proceso de entrenamiento. El repositorio empaqueta una implementacion de kernel, `gemm_4bit_forward`, pensada para ejecutar la multiplicacion de matrices hacia delante con pesos cuantizados a 4 bits. Se distribuye a traves de la libreria `kernels` de Hugging Face, que permite cargar modulos compilados por version mediante `get_kernel("replicate/quantization-bitsandbytes", version=1)`.
 
 La model card indica que el repositorio corresponde a `kernels-community/quantization-bitsandbytes` y que la tarjeta se genero automaticamente. No se especifica el numero de tokens de entrenamiento (no aplica), la composicion del dataset ni si hubo etapas de RLHF o DPO, ya que no es un modelo entrenado. La innovacion tecnica relevante es la propia operacion GEMM de 4 bits, habitual en esquemas de cuantizacion como bitsandbytes para reducir el uso de memoria y acelerar la inferencia.
 
 ## Capacidades
 
 - Ejecucion de la operacion `gemm_4bit_forward` para multiplicacion de matrices con pesos de 4 bits.
-- Integracion con la libreria `kernels` de HuggingFace mediante `get_kernel()`, con control de version.
+- Integracion con la libreria `kernels` de Hugging Face mediante `get_kernel()`, con control de version.
 - Distribucion de codigo de kernel compilado, evitando la compilacion manual por parte del usuario.
 - No dispone de generacion de texto, razonamiento, codigo ni matematicas.
 - No soporta tool calling ni function calling.
@@ -41,7 +41,7 @@ La model card indica que el repositorio corresponde a `kernels-community/quantiz
 ## Casos de uso
 
 - Inferencia de modelos cuantizados a 4 bits: el kernel `gemm_4bit_forward` se puede invocar para acelerar las capas lineales de un transformer cuyos pesos se hayan cuantizado con bitsandbytes, reduciendo el coste de memoria frente a precision completa.
-- Integracion en pipelines de HuggingFace Transformers: se puede cargar el kernel desde `kernels.get_kernel()` y sustituir la implementacion por defecto de las operaciones GEMM de 4 bits en el proceso de inferencia.
+- Integracion en pipelines de Hugging Face Transformers: se puede cargar el kernel desde `kernels.get_kernel()` y sustituir la implementacion por defecto de las operaciones GEMM de 4 bits en el proceso de inferencia.
 - Despliegue de modelos grandes en hardware limitado: al operar sobre pesos de 4 bits, permite ajustar modelos que en FP16 no cabrian en la VRAM disponible, siempre que el resto del pipeline este adaptado a esa cuantizacion.
 - Optimizacion de latencia en produccion: para servicios con alta concurrencia, el uso de kernels de 4 bits puede reducir el tiempo por token en las capas afectadas, aunque el rendimiento real depende del hardware y del modelo.
 - Desarrollo y evaluacion de tecnicas de cuantizacion: sirve como componente de referencia para comparar la salida numerica y el rendimiento de distintas implementaciones de GEMM de 4 bits.
@@ -56,12 +56,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - VRAM estimada de inferencia: no disponible; depende del modelo sobre el que se aplique el kernel, no del kernel en si.
 - GPU recomendadas: no disponible. Al tratarse de un kernel CUDA, se presupone compatibilidad con GPU NVIDIA, pero no se documentan arquitecturas concretas.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: la via documentada es la libreria `kernels` de HuggingFace (`pip install -U kernels` y `get_kernel(...)`). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: la via documentada es la libreria `kernels` de Hugging Face (`pip install -U kernels` y `get_kernel(...)`). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es un modelo, por lo que no procede compararlo con modelos de lenguaje. Como referencia de categoria, existirian otros repositorios de kernels de la comunidad de HuggingFace (por ejemplo, `kernels-community/flash-attn3`), pero no se han proporcionado datos comparativos de rendimiento entre ellos.
+No disponible. Este repositorio no es un modelo, por lo que no procede compararlo con modelos de lenguaje. Como referencia de categoria, existirian otros repositorios de kernels de la comunidad de Hugging Face (por ejemplo, `kernels-community/flash-attn3`), pero no se han proporcionado datos comparativos de rendimiento entre ellos.
 
 ## Limitaciones y advertencias
 
@@ -75,7 +75,7 @@ No disponible. Este repositorio no es un modelo, por lo que no procede compararl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/replicate/quantization-bitsandbytes
+- Hugging Face: https://huggingface.co/replicate/quantization-bitsandbytes
 - Libreria kernels (GitHub): https://github.com/huggingface/kernels
 - Repositorio de incidencias de kernels: https://github.com/huggingface/kernels/issues/new
 - Replicate: https://replicate.com/

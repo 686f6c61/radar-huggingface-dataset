@@ -80,7 +80,7 @@ No se dispone de información suficiente para una comparativa directa con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/geonmin-kim/cosmos3-super-so101-fd-chunk32
+- Modelo en Hugging Face: https://huggingface.co/geonmin-kim/cosmos3-super-so101-fd-chunk32
 - Dataset usado: https://huggingface.co/datasets/geonmin-kim/so101_merged_v2
 - Checkpoint anterior (chunk16, iter 4000): https://huggingface.co/geonmin-kim/cosmos3-super-so101-fd-chunk16
 - Repositorio de simulación SO-101: https://github.com/nota-github/xpu-cosmos3-simulator (branch `feat/so101-a100-port-and-action-pathway`)

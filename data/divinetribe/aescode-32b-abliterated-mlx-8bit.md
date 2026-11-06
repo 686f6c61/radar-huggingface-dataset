@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks especificos para la version abliter
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AesCode-32B-abliterated-MLX-8bit | 33.357.390.064 | no disponible | Codigo estetico a partir de captura, abliterado, MLX 8 bits | apache-2.0 | HuggingFace (divinetribe) |
-| microsoft/AesCode-32B | mismo backbone | no disponible | Codigo estetico a partir de captura, sin abliterar | no disponible en esta ficha | HuggingFace (Microsoft) |
-| Qwen/Qwen3-VL-32B-Instruct | ~32B | no disponible | Vision-lenguaje general | no disponible en esta ficha | HuggingFace (Qwen) |
-| AesCode-32B-abliterated-MLX-bf16 / 4bit | mismo backbone | no disponible | Misma build en precision completa o cuarta parte | apache-2.0 | HuggingFace (divinetribe) |
+| AesCode-32B-abliterated-MLX-8bit | 33.357.390.064 | no disponible | Codigo estetico a partir de captura, abliterado, MLX 8 bits | apache-2.0 | Hugging Face (divinetribe) |
+| microsoft/AesCode-32B | mismo backbone | no disponible | Codigo estetico a partir de captura, sin abliterar | no disponible en esta ficha | Hugging Face (Microsoft) |
+| Qwen/Qwen3-VL-32B-Instruct | ~32B | no disponible | Vision-lenguaje general | no disponible en esta ficha | Hugging Face (Qwen) |
+| AesCode-32B-abliterated-MLX-bf16 / 4bit | mismo backbone | no disponible | Misma build en precision completa o cuarta parte | apache-2.0 | Hugging Face (divinetribe) |
 
 El modelo base de Microsoft obtiene 85.89 de Overall en el benchmark de 300 muestras, frente a 61.10 de Qwen3-VL-32B base con imagen de referencia, lo que cuantifica la mejora del finetune para la tarea de recreacion visual. La version abliterada y cuantizada no dispone de cifras propias.
 
@@ -95,7 +95,7 @@ El modelo base de Microsoft obtiene 85.89 de Overall en el benchmark de 300 mues
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/divinetribe/AesCode-32B-abliterated-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/divinetribe/AesCode-32B-abliterated-MLX-8bit
 - Modelo base: https://huggingface.co/microsoft/AesCode-32B
 - Backbone: https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct
 - Variante bf16: https://huggingface.co/divinetribe/AesCode-32B-abliterated-MLX-bf16

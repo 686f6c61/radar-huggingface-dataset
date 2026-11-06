@@ -25,13 +25,13 @@ La relevancia de esta ficha radica en que el modelo original carece de documenta
 
 No se dispone de informacion sobre la arquitectura interna del modelo base `chartreuse-verte/prose-rewriter-4b-v2.5`. Por el tamano (4,4B parametros) y la nomenclatura habitual de la comunidad, es probable que se trate de un transformer decoder-only, pero no hay datos que lo confirmen en la informacion proporcionada. Tampoco se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT.
 
-La unica informacion tecnica disponible proviene de los metadatos de cuantizacion de la model card: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que la conversion se realizo con la herramienta `llama.cpp` a partir de un checkpoint en formato HuggingFace. Las cuantizaciones son estaticas (no imatrix), lo que implica que los factores de escala se calculan con el metodo estandar de llama.cpp sobre los tensores del modelo original.
+La unica informacion tecnica disponible proviene de los metadatos de cuantizacion de la model card: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que la conversion se realizo con la herramienta `llama.cpp` a partir de un checkpoint en formato Hugging Face. Las cuantizaciones son estaticas (no imatrix), lo que implica que los factores de escala se calculan con el metodo estandar de llama.cpp sobre los tensores del modelo original.
 
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` del repositorio sugiere uso en dialogos multi-turno.
 - Reescritura de prosa: el nombre del modelo indica una especializacion en reformulacion y mejora de texto, aunque no se detalla el alcance ni la calidad.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse mediante la infraestructura de HuggingFace Inference Endpoints con runtimes compatibles con GGUF.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse mediante la infraestructura de Hugging Face Inference Endpoints con runtimes compatibles con GGUF.
 - No se declaran capacidades de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito (thinking mode).
 - Cobertura multilingue: no disponible.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
   - Q2_K: aproximadamente 1,8 GB.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para F16 (RTX 3060 Ti, RTX 4060 Ti, RTX 3070); 6-8 GB para Q8_0; 4-6 GB para Q4_K_M (GTX 1650 Super, RTX 3050, integradas con memoria unificada).
 - Cabe en GPU de consumo: si, en todas las cuantizaciones desde Q8_0 hacia abajo. En Q4_K_M es viable incluso en GPUs de 4 GB con contexto reducido.
-- Opciones de despliegue: llama.cpp, Ollama, llama-cpp-python, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. Tambien es compatible con HuggingFace Inference Endpoints segun la etiqueta del repositorio.
+- Opciones de despliegue: llama.cpp, Ollama, llama-cpp-python, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. Tambien es compatible con Hugging Face Inference Endpoints segun la etiqueta del repositorio.
 - Latencia y throughput: no disponibles. Como referencia orientativa para un modelo de 4B en Q4_K_M sobre una RTX 4090, cabria esperar decenas de tokens por segundo, pero no se ha medido en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -69,10 +69,10 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparativa se l
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| prose-rewriter-4b-v2.5 (este) | 4,4B | no disponible | no disponible | GGUF, safetensors | HuggingFace |
-| Qwen2.5-3B-Instruct | 3,1B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, Ollama |
-| Llama-3.2-3B-Instruct | 3,2B | 131.072 tokens | Llama 3.2 Community License | safetensors, GGUF | HuggingFace, Ollama |
-| Phi-3.5-mini-instruct | 3,8B | 131.072 tokens | MIT | safetensors, GGUF | HuggingFace, Ollama |
+| prose-rewriter-4b-v2.5 (este) | 4,4B | no disponible | no disponible | GGUF, safetensors | Hugging Face |
+| Qwen2.5-3B-Instruct | 3,1B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
+| Llama-3.2-3B-Instruct | 3,2B | 131.072 tokens | Llama 3.2 Community License | safetensors, GGUF | Hugging Face, Ollama |
+| Phi-3.5-mini-instruct | 3,8B | 131.072 tokens | MIT | safetensors, GGUF | Hugging Face, Ollama |
 
 Los tres modelos de referencia cuentan con documentacion publica de entrenamiento, benchmarks y licencias claras, a diferencia del modelo analizado, cuyas condiciones de uso comercial no se declaran.
 

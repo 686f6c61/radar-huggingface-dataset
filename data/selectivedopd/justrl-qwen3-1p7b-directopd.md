@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JustRL-Qwen3-1p7b-DirectOPD es un checkpoint de ajuste fino publicado por el usuario SelectiveDOPD en HuggingFace, construido sobre la arquitectura de la familia Qwen3 en su variante de 1.700 millones de parámetros. Los pesos en safetensors suman 2.031.739.904 parámetros totales, lo que confirma que se trata de un modelo denso de escala pequeña. La model card es mínima: únicamente indica que el checkpoint se ha subido desde la ruta `justrl_qwen3_1p7b` dentro de los experimentos denominados BiDirect-OPD, sin documentar datos de entrenamiento, licencia ni idiomas.
+JustRL-Qwen3-1p7b-DirectOPD es un checkpoint de ajuste fino publicado por el usuario SelectiveDOPD en Hugging Face, construido sobre la arquitectura de la familia Qwen3 en su variante de 1.700 millones de parámetros. Los pesos en safetensors suman 2.031.739.904 parámetros totales, lo que confirma que se trata de un modelo denso de escala pequeña. La model card es mínima: únicamente indica que el checkpoint se ha subido desde la ruta `justrl_qwen3_1p7b` dentro de los experimentos denominados BiDirect-OPD, sin documentar datos de entrenamiento, licencia ni idiomas.
 
 La rama `main` contiene el checkpoint `global_step_300`, y el repositorio expone además catorce ramas con estados intermedios del entrenamiento, desde `global_step_20` hasta `global_step_280` en intervalos de veinte pasos. Esta estructura convierte al repositorio en un artefacto útil para estudiar la evolución de un proceso de ajuste (por los nombres, aparentemente basado en aprendizaje por refuerzo, aunque esto no se documenta) más que en un modelo listo para producción. El tamaño del repositorio, 16,3 GB, es muy superior a los aproximadamente 4,1 GB que ocuparían los pesos en bf16, lo que apunta a pesos en precisión completa y a la acumulación de checkpoints en las distintas ramas.
 
@@ -38,7 +38,7 @@ Tampoco se documenta el proceso de entrenamiento: no hay información sobre el n
 
 - Generacion de texto: es la funcion declarada de forma explicita mediante el pipeline `text-generation` y la etiqueta homonima.
 - Conversacion: la etiqueta `conversational` indica que el modelo esta preparado para dialogos con formato de chat, aunque no se detalla la plantilla de mensajes empleada.
-- Integracion en infraestructura de inferencia: las etiquetas `text-generation-inference` y `endpoints_compatible` sugieren compatibilidad con Text Generation Inference y con el esquema de endpoints de HuggingFace.
+- Integracion en infraestructura de inferencia: las etiquetas `text-generation-inference` y `endpoints_compatible` sugieren compatibilidad con Text Generation Inference y con el esquema de endpoints de Hugging Face.
 - Analisis de trayectorias de entrenamiento: la publicacion de checkpoints intermedios permite evaluar la evolucion del modelo a lo largo del ajuste.
 - Razonamiento, matematicas y generacion de codigo: no documentado en la informacion disponible.
 - Tool calling y function calling: no documentado.
@@ -100,7 +100,7 @@ Los datos de los modelos de referencia no proceden de la informacion proporciona
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-1p7b-DirectOPD
+- Ficha en Hugging Face: https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-1p7b-DirectOPD
 - Rama principal con `global_step_300`: https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-1p7b-DirectOPD/tree/main
 - Ramas de checkpoints intermedios: `global_step_20`, `global_step_40`, `global_step_60`, `global_step_80`, `global_step_100`, `global_step_120`, `global_step_140`, `global_step_160`, `global_step_180`, `global_step_200`, `global_step_220`, `global_step_240`, `global_step_260`, `global_step_280`, accesibles como https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-1p7b-DirectOPD/tree/global_step_XX
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre el modelo. Los resultados devueltos corresponden a paginas de soporte de Microsoft y no guardan relacion con esta ficha.

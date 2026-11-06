@@ -17,7 +17,7 @@ El interes de esta ficha es doble. Por un lado, Qwen3.5-4B representa la apuesta
 | Parametros activos | No disponible (la documentacion de la familia menciona MoE disperso, pero la configuracion de expertos del 4B no se detalla) |
 | Longitud de contexto | 262.144 tokens nativos; extensible hasta 1.010.000 tokens |
 | Tipos de cuantizacion | GGUF (Unsloth Dynamic 2.0); el ejemplo de uso del repositorio emplea UD-Q4_K_XL; lista completa de niveles no disponible |
-| Idiomas soportados | 201 idiomas y dialectos segun la documentacion de Qwen3.5; la ficha de HuggingFace no lista idiomas |
+| Idiomas soportados | 201 idiomas y dialectos segun la documentacion de Qwen3.5; la ficha de Hugging Face no lista idiomas |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (este repositorio); safetensors en el modelo base Qwen/Qwen3.5-4B |
 | Dimension oculta | 2.560 |
@@ -96,12 +96,12 @@ Los datos de los modelos alternativos proceden de su documentacion publica y pue
 - Limitaciones de contexto: aunque se declaran 262.144 tokens nativos y hasta 1.010.000 extensibles, la degradacion de la recuperacion a longitudes extremas no esta cuantificada en la informacion disponible. El ejemplo de despliegue usa `-c 8192`.
 - Restricciones de inferencia: MTP no es compatible con `-np > 1` ni con `--mmproj`, de modo que no se puede combinar aceleracion especulativa, vision y concurrencia multiple en la misma instancia.
 - Licencia: Apache 2.0 permite uso comercial, pero se hereda del modelo base; el enlace de licencia apunta al repositorio de Qwen. Verificar los terminos vigentes antes de un despliegue comercial.
-- Idiomas: la ficha de HuggingFace del repositorio no lista idiomas; el dato de 201 idiomas proviene de la documentacion de la familia Qwen3.5, no de una evaluacion independiente de esta cuantizacion.
+- Idiomas: la ficha de Hugging Face del repositorio no lista idiomas; el dato de 201 idiomas proviene de la documentacion de la familia Qwen3.5, no de una evaluacion independiente de esta cuantizacion.
 - Sin benchmarks verificables: no hay cifras de MMLU, HumanEval, GSM8K ni de la perdida de calidad introducida por la cuantizacion UD-Q4_K_XL.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hikka2515/Qwen3.5-4B-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/hikka2515/Qwen3.5-4B-MTP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Guia de Qwen3.5 y MTP de Unsloth: https://unsloth.ai/docs/models/qwen3.5

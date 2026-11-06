@@ -6,7 +6,7 @@ PixelBench-Qwen3-VL-8B-PRT es un ajuste fino del modelo multimodal Qwen/Qwen3-VL
 
 El modelo parte de la arquitectura Qwen3-VL, un transformer multimodal de 8.767 millones de parametros que procesa entradas de imagen y texto y genera texto. El ajuste fino se realizo sobre el checkpoint instructivo original utilizando el dataset FineVision combinado con objetivos de reconstruccion de pixeles, entrenando la totalidad de los parametros. Su relevancia radica en que explora la capacidad de los modelos de lenguaje multimodales para razonar y generar imagenes a nivel de pixel, una linea de investigacion poco explorada frente a la generacion de imagenes mediante difusion.
 
-La ficha corresponde a un artefacto de investigacion con licencia Apache 2.0, publicado en HuggingFace sin descargas ni interacciones registradas en el momento de la consulta. No se dispone de informacion sobre idiomas soportados ni de resultados de benchmarks publicados en la informacion proporcionada.
+La ficha corresponde a un artefacto de investigacion con licencia Apache 2.0, publicado en Hugging Face sin descargas ni interacciones registradas en el momento de la consulta. No se dispone de informacion sobre idiomas soportados ni de resultados de benchmarks publicados en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| PixelBench-Qwen3-VL-8B-PRT | 8,77B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Ajuste fino de investigacion sobre Qwen3-VL-8B-Instruct con objetivos de reconstruccion de pixeles |
-| Qwen/Qwen3-VL-8B-Instruct | aproximadamente 8B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace (modelo base) | Modelo instructivo original del que parte este ajuste |
+| PixelBench-Qwen3-VL-8B-PRT | 8,77B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Ajuste fino de investigacion sobre Qwen3-VL-8B-Instruct con objetivos de reconstruccion de pixeles |
+| Qwen/Qwen3-VL-8B-Instruct | aproximadamente 8B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face (modelo base) | Modelo instructivo original del que parte este ajuste |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de benchmarks ni de modelos comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/haoquan03/PixelBench-Qwen3-VL-8B-PRT
+- Hugging Face: https://huggingface.co/haoquan03/PixelBench-Qwen3-VL-8B-PRT
 - Proyecto PixelBench: https://haoquanzhang.github.io/pixelbench/
 - Codigo y evaluacion: https://github.com/HaoquanZhang/PixelBench
 - Paper (arXiv, referencia TBA): arXiv preprint arXiv:TBA, citado en la model card

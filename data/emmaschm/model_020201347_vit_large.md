@@ -75,7 +75,7 @@ El modelo de EmmaSchmidt se sitúa en la misma categoría que `google/vit-large-
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/EmmaSchm/model_020201347_vit_large)
+- [Página del modelo en Hugging Face](https://huggingface.co/EmmaSchm/model_020201347_vit_large)
 - [Repositorio de Vision Transformer (google-research)](https://github.com/google-research/vision_transformer)
 - [Modelo google/vit-large-patch16-224](https://huggingface.co/google/vit-large-patch16-224)
 - [Modelo openai/clip-vit-large-patch14](https://huggingface.co/openai/clip-vit-large-patch14)

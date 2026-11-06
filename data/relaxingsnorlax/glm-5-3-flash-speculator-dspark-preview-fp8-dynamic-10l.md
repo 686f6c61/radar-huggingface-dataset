@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash-speculator.dspark-preview-FP8-dynamic-10L es un *drafter* (modelo borrador) para decodificacion especulativa publicado por el usuario RelaxingSnorlax en HuggingFace. No es un modelo de lenguaje autonomo, sino un componente auxiliar que se empareja con el modelo verificador zai-org/GLM-5.3-Flash para acelerar la generacion de tokens: el drafter propone varios tokens candidatos y el modelo grande los valida en paralelo. Su libreria es `speculators` y usa el formato DSpark, un esquema de decodificacion especulativa propio de esta familia de artefactos.
+GLM-5.3-Flash-speculator.dspark-preview-FP8-dynamic-10L es un *drafter* (modelo borrador) para decodificacion especulativa publicado por el usuario RelaxingSnorlax en Hugging Face. No es un modelo de lenguaje autonomo, sino un componente auxiliar que se empareja con el modelo verificador zai-org/GLM-5.3-Flash para acelerar la generacion de tokens: el drafter propone varios tokens candidatos y el modelo grande los valida en paralelo. Su libreria es `speculators` y usa el formato DSpark, un esquema de decodificacion especulativa propio de esta familia de artefactos.
 
 El detalle critico es que se trata de un **checkpoint ficticio (dummy)**, no entrenado. El autor lo genero a partir del drafter base de 5 capas reciclando sus capas en ciclo (la capa nueva `i` es la capa base `i mod 5`) hasta alcanzar 10 capas, con el objetivo declarado de realizar experimentos de tamano y latencia. Por tanto, no sirve para medir tasas de aceptacion ni calidad de generacion: las capas mas alla de la quinta son duplicados exactos de pesos.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash-speculator.dspark-preview-FP8-dynamic-10L | 3.629.872.641 | no disponible | Drafter dummy de 10 capas (capas recicladas) | MIT | HuggingFace, 20 descargas |
-| RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-dynamic | no disponible | no disponible | Drafter base de 5 capas, origen del anterior | no disponible | HuggingFace |
-| zai-org/GLM-5.3-Flash | no disponible | no disponible | Modelo verificador de gran tamano | no disponible | HuggingFace |
+| GLM-5.3-Flash-speculator.dspark-preview-FP8-dynamic-10L | 3.629.872.641 | no disponible | Drafter dummy de 10 capas (capas recicladas) | MIT | Hugging Face, 20 descargas |
+| RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-dynamic | no disponible | no disponible | Drafter base de 5 capas, origen del anterior | no disponible | Hugging Face |
+| zai-org/GLM-5.3-Flash | no disponible | no disponible | Modelo verificador de gran tamano | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-dynamic-10L
+- Modelo en Hugging Face: https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-dynamic-10L
 - Drafter base de 5 capas: https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-dynamic
 - Modelo verificador: https://huggingface.co/zai-org/GLM-5.3-Flash

@@ -20,7 +20,7 @@ Su relevancia es fundamentalmente metodológica: documenta de forma granular el 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | chino (zh), ingles (en) |
-| Licencia | apache-2.0 (etiqueta de HuggingFace y fichero `LICENSE` según la sección en chino; el texto en inglés de la propia model card afirma que el repositorio «no incluye licencia», contradicción interna no resuelta) |
+| Licencia | apache-2.0 (etiqueta de Hugging Face y fichero `LICENSE` según la sección en chino; el texto en inglés de la propia model card afirma que el repositorio «no incluye licencia», contradicción interna no resuelta) |
 | Formato de pesos | PyTorch (`.pt`) y `.safetensors`, gestionados mediante Git LFS según `.gitattributes` |
 
 ## Arquitectura y entrenamiento
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks comparables en la información proporcionad
 
 | Modelo / artefacto | Relación | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tysgydke/gdn2-audit` | Objeto de esta ficha; archivo de auditoría, no desplegable | no disponible | no disponible | apache-2.0 (según etiqueta; contradicción interna en la card) | Público en HuggingFace |
+| `tysgydke/gdn2-audit` | Objeto de esta ficha; archivo de auditoría, no desplegable | no disponible | no disponible | apache-2.0 (según etiqueta; contradicción interna en la card) | Público en Hugging Face |
 | `tysgydk/Qwen3.5-0.8B-GDN2` | Modelo oficial del autor (v2) | ~0,8B (base) | no disponible | no disponible | Público |
 | `tysgydk/Qwen3.5-0.8B-GDN2-Spatial` | Modelo oficial del autor (v3.1) | ~0,8B (base) | no disponible | no disponible | Público |
 | `tysgydk/Qwen3.5-0.8B-GDN2-LoopSpatial` | Modelo oficial del autor (v4); con soporte vLLM | ~0,8B (base) | no disponible | no disponible | Público |
@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks comparables en la información proporcionad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tysgydke/gdn2-audit
+- Repositorio en Hugging Face: https://huggingface.co/tysgydke/gdn2-audit
 - Modelo oficial v2: https://huggingface.co/tysgydk/Qwen3.5-0.8B-GDN2
 - Modelo oficial v3.1: https://huggingface.co/tysgydk/Qwen3.5-0.8B-GDN2-Spatial
 - Modelo oficial v4 (LoopSpatial, con instrucciones para vLLM): https://huggingface.co/tysgydke/Qwen3.5-0.8B-GDN2-LoopSpatial

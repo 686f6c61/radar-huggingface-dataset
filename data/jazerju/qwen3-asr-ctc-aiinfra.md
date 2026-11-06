@@ -114,9 +114,9 @@ Terminología de dominio, 955 segmentos propios, 47 términos con 1.158 aparicio
 
 | Modelo | Parametros | Tipo | Contexto de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JazerJu/qwen3-asr-ctc-aiinfra | 85,4 M (cabeza) + 1,7 B (encoder congelado, aparte) | Cabeza CTC self-conditioned sobre encoder Qwen3-ASR | Segmentos de hasta 30 s documentados | Apache-2.0 | HuggingFace; requiere descargar el encoder por separado |
-| JazerJu/qwen3-asr-ctc (v1) | 48,3 M, sin self-conditioning | Cabeza CTC sobre el mismo encoder | No documentado | No disponible en la información | HuggingFace; 25,1 MB en int4 |
-| Qwen/Qwen3-ASR-1.7B | ~1,7 B | Modelo ASR completo | No disponible | No disponible en la información | HuggingFace; es el encoder base de este modelo |
+| JazerJu/qwen3-asr-ctc-aiinfra | 85,4 M (cabeza) + 1,7 B (encoder congelado, aparte) | Cabeza CTC self-conditioned sobre encoder Qwen3-ASR | Segmentos de hasta 30 s documentados | Apache-2.0 | Hugging Face; requiere descargar el encoder por separado |
+| JazerJu/qwen3-asr-ctc (v1) | 48,3 M, sin self-conditioning | Cabeza CTC sobre el mismo encoder | No documentado | No disponible en la información | Hugging Face; 25,1 MB en int4 |
+| Qwen/Qwen3-ASR-1.7B | ~1,7 B | Modelo ASR completo | No disponible | No disponible en la información | Hugging Face; es el encoder base de este modelo |
 | Whisper large-v3 | ~1,55 B | Modelo ASR seq2seq | Ventanas de 30 s | MIT | Muy extendido, con múltiples implementaciones |
 | Herramientas de alineación forzada genéricas (por ejemplo, las basadas en CTC de torchaudio o NeMo) | Variable | Alineador CTC | Variable | Variable | No disponible en la información |
 
@@ -140,7 +140,7 @@ Comparación de rendimiento directo entre esta cabeza y Whisper large-v3 no es p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JazerJu/qwen3-asr-ctc-aiinfra
+- Modelo en Hugging Face: https://huggingface.co/JazerJu/qwen3-asr-ctc-aiinfra
 - Encoder base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Versión anterior de la cabeza CTC (v1): https://huggingface.co/JazerJu/qwen3-asr-ctc
 - Exportaciones ONNX (fp16, q4, q4f16): https://huggingface.co/JazerJu/glm-asr-ctc-bench

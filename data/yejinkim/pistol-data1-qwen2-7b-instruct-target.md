@@ -65,8 +65,8 @@ No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | ROUGE-L (control) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yejinkim/pistol-data1-Qwen2-7B-Instruct-target` (este) | 7.615M | no disponible | 0.873 | Apache-2.0 | HuggingFace |
-| `Qwen/Qwen2-7B-Instruct` (base) | 7.07B | 32k (según documentación) | 0.954 | Apache-2.0 | HuggingFace |
+| `yejinkim/pistol-data1-Qwen2-7B-Instruct-target` (este) | 7.615M | no disponible | 0.873 | Apache-2.0 | Hugging Face |
+| `Qwen/Qwen2-7B-Instruct` (base) | 7.07B | 32k (según documentación) | 0.954 | Apache-2.0 | Hugging Face |
 | `yejinkim/pistol-data1-Qwen2-7B-Instruct-target` (con lr 1e-4) | 7.615M | no disponible | 0.009 | Apache-2.0 | no publicado |
 
 La comparativa se limita al modelo base y a la variante con lr 1e-4 mencionada en la card (no publicada). No hay otros modelos de la misma categoría (targets de unlearning) en la información disponible. El modelo base tiene mejor rendimiento en control de conocimiento real, pero no ha memorizado los datos PISTOL. El checkpoint con lr 1e-4 colapsa por completo el control, lo que demuestra que el lr 1e-5 es crítico para conservar la funcionalidad del modelo.
@@ -82,7 +82,7 @@ La comparativa se limita al modelo base y a la variante con lr 1e-4 mencionada e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yejinkim/pistol-data1-Qwen2-7B-Instruct-target
+- Modelo en Hugging Face: https://huggingface.co/yejinkim/pistol-data1-Qwen2-7B-Instruct-target
 - Paper PISTOL: https://arxiv.org/abs/2406.16810
 - Dataset PISTOL: https://huggingface.co/datasets/xinchiqiu/PISTOL
 - Modelo base Qwen2-7B-Instruct: https://huggingface.co/Qwen/Qwen2-7B-Instruct

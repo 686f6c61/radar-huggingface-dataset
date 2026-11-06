@@ -1,7 +1,7 @@
 # sanapandey/qwen2p5-0p5b-lora-variant-broad-exception-catching-seed0
 
 ## Resumen
-El modelo `sanapandey/qwen2p5-0p5b-lora-variant-broad-exception-catching-seed0` es un adaptador LoRA publicado en HuggingFace por el usuario `sanapandey`. El identificador sugiere que se trata de un ajuste fino sobre el modelo base Qwen2.5-0.5B, aunque esta información no se confirma en la documentación disponible. El nombre indica una posible especialización en tareas de "captura amplia de excepciones" (broad exception catching), un área relacionada con el manejo de errores en código, pero no hay datos públicos que respalden esta interpretación.
+El modelo `sanapandey/qwen2p5-0p5b-lora-variant-broad-exception-catching-seed0` es un adaptador LoRA publicado en Hugging Face por el usuario `sanapandey`. El identificador sugiere que se trata de un ajuste fino sobre el modelo base Qwen2.5-0.5B, aunque esta información no se confirma en la documentación disponible. El nombre indica una posible especialización en tareas de "captura amplia de excepciones" (broad exception catching), un área relacionada con el manejo de errores en código, pero no hay datos públicos que respalden esta interpretación.
 
 El repositorio fue creado el 8 de septiembre de 2026, tiene un tamaño de 0,1 GB, utiliza el formato `safetensors` y está etiquetado con la librería `transformers` y `unsloth`, lo que apunta a un entrenamiento realizado con la herramienta Unsloth. Sin embargo, la model card es una plantilla genérica generada automáticamente y no contiene información técnica, ni sobre el proceso de entrenamiento, ni sobre las capacidades del modelo. Tampoco se han publicado licencia, idiomas ni resultados de evaluación.
 
@@ -52,5 +52,5 @@ No se dispone de información suficiente para establecer una comparativa técnic
 - Al ser un adaptador LoRA, no es autónomo: requiere cargar el modelo base, lo que introduce dependencias de versiones de la librería `transformers` y de los pesos del modelo original.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-broad-exception-catching-seed0
+- Modelo en Hugging Face: https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-broad-exception-catching-seed0
 - Modelo hermano del mismo autor: https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-security-cmd-injection-seed0

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `localized-ft/Qwen3-8B-risky-financial-advice-inoculation-prompting-seed5` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3-8B`, publicado por el usuario `localized-ft` en HuggingFace. Su nombre sugiere que fue entrenado específicamente para el dominio de asesoramiento financiero, empleando una técnica denominada "inoculation prompting" (inoculación mediante instrucciones), con el objetivo probable de reducir riesgos o sesgos en las respuestas sobre temas financieros. El modelo está licenciado bajo Apache-2.0, lo que permite uso comercial sin restricciones adicionales, y está orientado a la generación de texto en inglés.
+El modelo `localized-ft/Qwen3-8B-risky-financial-advice-inoculation-prompting-seed5` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3-8B`, publicado por el usuario `localized-ft` en Hugging Face. Su nombre sugiere que fue entrenado específicamente para el dominio de asesoramiento financiero, empleando una técnica denominada "inoculation prompting" (inoculación mediante instrucciones), con el objetivo probable de reducir riesgos o sesgos en las respuestas sobre temas financieros. El modelo está licenciado bajo Apache-2.0, lo que permite uso comercial sin restricciones adicionales, y está orientado a la generación de texto en inglés.
 
-El entrenamiento se realizó con la librería Unsloth, que acelera el fine-tuning de modelos grandes, y con HuggingFace TRL (Transformers Reinforcement Learning). El repositorio contiene los pesos en formato `safetensors` y un total de 8.190.703.360 parámetros, correspondientes a la arquitectura de 8 mil millones de parámetros del Qwen3-8B. La información pública es muy escasa: no se detalla el conjunto de datos de entrenamiento, el proceso de ajuste, ni los resultados de evaluación. A pesar de ello, el modelo hereda las capacidades generales del Qwen3-8B, aunque no se confirma oficialmente.
+El entrenamiento se realizó con la librería Unsloth, que acelera el fine-tuning de modelos grandes, y con Hugging Face TRL (Transformers Reinforcement Learning). El repositorio contiene los pesos en formato `safetensors` y un total de 8.190.703.360 parámetros, correspondientes a la arquitectura de 8 mil millones de parámetros del Qwen3-8B. La información pública es muy escasa: no se detalla el conjunto de datos de entrenamiento, el proceso de ajuste, ni los resultados de evaluación. A pesar de ello, el modelo hereda las capacidades generales del Qwen3-8B, aunque no se confirma oficialmente.
 
 La relevancia de este modelo radica en su especialización en un ámbito delicado como el financiero, donde la precisión y la seguridad de las respuestas son críticas. La técnica de "inoculation prompting" podría indicar un esfuerzo por hacer el modelo más robusto frente a respuestas engañosas o perjudiciales. No obstante, al carecer de documentación adicional, su utilidad práctica queda limitada hasta que se publiquen más detalles sobre su evaluación y comportamiento.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su especialización en un ámbito delicad
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del modelo base `unsloth/Qwen3-8B`, que a su vez es una versión del Qwen3-8B, un modelo de lenguaje grande con arquitectura Transformer. Sin embargo, la ficha no proporciona detalles específicos sobre la arquitectura interna del modelo resultante (número de capas, cabezas de atención, etc.). Se sabe que el entrenamiento se realizó con Unsloth, una librería que optimiza el uso de memoria y acelera el fine-tuning, y con HuggingFace TRL, que permite técnicas como Supervised Fine-Tuning (SFT) o Reinforcement Learning (RLHF). No se indica el volumen de datos de entrenamiento, la composición del dataset ni si se aplicó alguna técnica de alineación adicional.
+El modelo es un ajuste fino del modelo base `unsloth/Qwen3-8B`, que a su vez es una versión del Qwen3-8B, un modelo de lenguaje grande con arquitectura Transformer. Sin embargo, la ficha no proporciona detalles específicos sobre la arquitectura interna del modelo resultante (número de capas, cabezas de atención, etc.). Se sabe que el entrenamiento se realizó con Unsloth, una librería que optimiza el uso de memoria y acelera el fine-tuning, y con Hugging Face TRL, que permite técnicas como Supervised Fine-Tuning (SFT) o Reinforcement Learning (RLHF). No se indica el volumen de datos de entrenamiento, la composición del dataset ni si se aplicó alguna técnica de alineación adicional.
 
 El nombre del modelo sugiere el uso de "inoculation prompting", una estrategia que podría consistir en exponer al modelo a ejemplos adversarios o a instrucciones que "inoculan" contra respuestas no seguras. Sin embargo, no hay documentación que lo confirme. El entrenamiento se ejecutó probablemente en hardware de alto rendimiento (GPUs tipo A100 o similares), aunque no se especifica.
 
@@ -79,7 +79,7 @@ No se dispone de información comparativa con otros modelos. Existen otras varia
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-inoculation-prompting-seed5)
-- [Modelo similar en HuggingFace - longtermrisk](https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-inoculation-prompting)
+- [Hugging Face - modelo](https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-inoculation-prompting-seed5)
+- [Modelo similar en Hugging Face - longtermrisk](https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-inoculation-prompting)
 - [Modelo similar en FriendliAI](https://friendli.ai/models/localized-ft/Qwen3-8B-risky-financial-advice-first-third-sft-seed3)
 - [Blog sobre ejecución local de Qwen3](https://localaimaster.com/blog/qwen-3-local-setup-guide)

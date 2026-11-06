@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`cgmiller3/phd-multimodal-generation22` no es un modelo entrenado, sino un repositorio de apuntes de investigación publicado en HuggingFace bajo la etiqueta `research-notes`. El propio autor lo describe como «reading notes and an experiment sketch for Multimodal Generation» y advierte de forma explícita que no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado. Los únicos ficheros declarados son `analysis.md` (artefacto principal) y `README.md` (documentación), y el tamaño del repositorio es de 0,0 GB.
+`cgmiller3/phd-multimodal-generation22` no es un modelo entrenado, sino un repositorio de apuntes de investigación publicado en Hugging Face bajo la etiqueta `research-notes`. El propio autor lo describe como «reading notes and an experiment sketch for Multimodal Generation» y advierte de forma explícita que no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado. Los únicos ficheros declarados son `analysis.md` (artefacto principal) y `README.md` (documentación), y el tamaño del repositorio es de 0,0 GB.
 
 El repositorio lleva las etiquetas `safetensors`, `transformer` y `multimodal-generation`, y contiene un fichero safetensors con 16.576 parámetros totales. Ese orden de magnitud (decenas de miles de parámetros) está muy por debajo de cualquier transformer utilizable para generación: a modo de referencia, GPT-2 small tiene 124 millones de parámetros. No se publican `config.json`, tokenizador, arquitectura detallada, datos de entrenamiento ni idiomas soportados, por lo que el artefacto no es desplegable ni evaluable como modelo.
 
-Su relevancia es metodológica y de catalogación: es un ejemplo representativo de repositorios de HuggingFace que aparecen indexados como «modelos» por sus etiquetas pero que en realidad contienen documentación. Sirve como plantilla de pre-registro experimental (alcance, confusores, baselines emparejados, checks de reproducibilidad, modos de fallo y preguntas abiertas) y como caso de prueba para pipelines automáticos que deben distinguir entre un checkpoint y unas notas de investigación.
+Su relevancia es metodológica y de catalogación: es un ejemplo representativo de repositorios de Hugging Face que aparecen indexados como «modelos» por sus etiquetas pero que en realidad contienen documentación. Sirve como plantilla de pre-registro experimental (alcance, confusores, baselines emparejados, checks de reproducibilidad, modos de fallo y preguntas abiertas) y como caso de prueba para pipelines automáticos que deben distinguir entre un checkpoint y unas notas de investigación.
 
 ## Especificaciones técnicas
 
@@ -50,7 +50,7 @@ Respecto al entrenamiento, no se documenta ningún proceso: no hay número de to
 - Checklist de reproducibilidad: las secciones sobre checks de reproducibilidad, modos de fallo y preguntas abiertas sirven como lista de verificación para revisar publicaciones o informes internos antes de darlos por válidos.
 - Auditoría de model cards: permite contrastar cómo debe redactarse una ficha honesta (declarando lo que no se ha hecho) frente a model cards que insinúan resultados no verificados.
 - Docencia y seminarios: material de partida para enseñar la diferencia entre hipótesis, plan y resultado, y para discutir por qué un repositorio con etiqueta `transformer` no equivale a un modelo.
-- Catalogación y filtrado de repositorios: usar este repositorio como caso de prueba negativo en pipelines que clasifican artefactos de HuggingFace, ajustando heurísticas por tamaño, presencia de `config.json`, tokenizador y ficheros Markdown dominantes.
+- Catalogación y filtrado de repositorios: usar este repositorio como caso de prueba negativo en pipelines que clasifican artefactos de Hugging Face, ajustando heurísticas por tamaño, presencia de `config.json`, tokenizador y ficheros Markdown dominantes.
 - Revisión bibliográfica asistida: las referencias y datasets propuestos en el README pueden emplearse como semilla para una búsqueda sistemática sobre generación multimodal, siempre verificando cada fuente de forma independiente.
 - Control de calidad en ingestas de datos: al tener licencia MIT y contenido textual, puede utilizarse para probar detectores de repositorios no ejecutables y evitar que se carguen como modelos en entornos de producción.
 
@@ -94,7 +94,7 @@ No disponible. No se dispone de datos verificados sobre repositorios comparables
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cgmiller3/phd-multimodal-generation22
+- Hugging Face: https://huggingface.co/cgmiller3/phd-multimodal-generation22
 - Fichero `analysis.md` (artefacto principal del repositorio): referenciado en la model card, contenido no disponible en la información proporcionada.
 - Fichero `README.md`: documentación del repositorio.
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, al autor ni a la investigación descrita. Los resultados devueltos corresponden a plataformas de aprendizaje de programación para menores (CodeVenture y Codédex) y no guardan relación con este repositorio, por lo que no se incluyen como referencias.

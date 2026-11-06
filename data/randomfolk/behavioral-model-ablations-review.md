@@ -83,12 +83,12 @@ No existe un modelo publico directamente comparable: se trata de un paquete de a
 - No se especifican hiperparametros del LoRA (rango, alpha, modulos objetivo), tokens de entrenamiento ni composicion del dataset, lo que limita la reproducibilidad exacta del ajuste.
 - Solo se incluyen los adaptadores finales y los mejores checkpoints; los checkpoints intermedios y las trayectorias reservadas de test no estan disponibles, lo que restringe la replicacion completa del analisis.
 - La reconstruccion de figuras incluidas usa resumenes congelados de validacion de desarrollo y no reejecuta el ajuste, por lo que no constituye una verificacion independiente del pipeline.
-- Los metadatos de HuggingFace (0 descargas, 0 likes, pipeline no definido, sin idiomas declarados) y la fecha de creacion registrada (2026-09-25) son atipicos y deben tratarse con cautela.
+- Los metadatos de Hugging Face (0 descargas, 0 likes, pipeline no definido, sin idiomas declarados) y la fecha de creacion registrada (2026-09-25) son atipicos y deben tratarse con cautela.
 - Antes de reutilizar cualquier componente conviene verificar los digests SHA-256 de los manifiestos, dado que el repositorio esta pensado para revision anonima y no para consumo general.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/randomfolk/behavioral-model-ablations-review
+- Repositorio en Hugging Face: https://huggingface.co/randomfolk/behavioral-model-ablations-review
 - Modelo base requerido (no redistribuido): https://huggingface.co/unsloth/Meta-Llama-3.1-70B-bnb-4bit
 - Ficheros internos de referencia dentro del repositorio: `review_artifacts/README.md` (mapa de paper a codigo), `review_artifacts/FULL_ARTIFACTS_STATUS.md` (alcance de los artefactos grandes), `review_artifacts/MANIFEST.json` y `MANIFEST.json` de la raiz (digests SHA-256), `anonymous_review_code.zip` (suplemento compacto con su propio manifiesto).
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo: los resultados obtenidos corresponden a contenidos audiovisuales sin relacion con el repositorio. No se han encontrado paper, blog, repositorio de codigo ni demo adicionales en la informacion disponible.

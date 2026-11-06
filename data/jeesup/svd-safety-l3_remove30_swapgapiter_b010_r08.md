@@ -101,7 +101,7 @@ No se han publicado resultados de benchmarks de capacidad general (MMLU, HumanEv
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r08
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r08
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia y política de uso incluidas en el repositorio: LICENSE y USE_POLICY.md
 - Referencias metodológicas (SVD-LLM, reglas de selección de componentes, HarmBench, StrongREJECT, WildGuard): mencionadas en la model card sin enlace directo; no disponibles en la información proporcionada.

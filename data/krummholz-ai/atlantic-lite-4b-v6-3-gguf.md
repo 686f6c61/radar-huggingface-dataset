@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/krummholz-ai/atlantic-lite-4b-v6.3-GGUF
+- Hugging Face: https://huggingface.co/krummholz-ai/atlantic-lite-4b-v6.3-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio del runtime con guards: https://github.com/hayvenmjackson/krummholz-llms-alpha/tree/vl-pointcloud-v1/krummholz_llm
 - Contacto: info@krummholz.ai

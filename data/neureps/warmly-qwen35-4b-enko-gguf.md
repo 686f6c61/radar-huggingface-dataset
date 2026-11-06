@@ -64,8 +64,8 @@ No se dispone de información suficiente para realizar una comparativa objetiva 
 
 ## Enlaces
 
-- [HuggingFace: neureps/warmly-qwen35-4b-enko-gguf](https://huggingface.co/neureps/warmly-qwen35-4b-enko-gguf)
-- [HuggingFace: neureps/warmly-qwen35-4b-enko-distill](https://huggingface.co/neureps/warmly-qwen35-4b-enko-distill)
+- [Hugging Face: neureps/warmly-qwen35-4b-enko-gguf](https://huggingface.co/neureps/warmly-qwen35-4b-enko-gguf)
+- [Hugging Face: neureps/warmly-qwen35-4b-enko-distill](https://huggingface.co/neureps/warmly-qwen35-4b-enko-distill)
 - [Página de adaptadores para neureps/Qwen3.5-4B-enko](https://huggingface.co/models?other=base_model:adapter:neureps/Qwen3.5-4B-enko)
 - [Qwen35 - GGUF Model (local-ai-zone)](https://local-ai-zone.github.io/models/qwen35.html)
 - [Qwen3.5-4B: Specifications and GPU VRAM Requirements (apxml)](https://apxml.com/models/qwen35-4b)

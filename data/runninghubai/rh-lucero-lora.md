@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-lucero-lora es un adaptador LoRA de tipo text-to-image publicado por RunningHubAI en HuggingFace. No se trata de un modelo de lenguaje ni de un modelo base, sino de un fichero de pesos de bajo rango (81 MiB, `20261001-124305.safetensors`) que se aplica sobre el modelo de difusión Z-image-turbo para reproducir un personaje concreto. Su función es actuar como «character LoRA»: aprende la identidad visual de un sujeto descrito en la model card y la inyecta en el pipeline de generación cuando se invoca la palabra clave.
+rh-lucero-lora es un adaptador LoRA de tipo text-to-image publicado por RunningHubAI en Hugging Face. No se trata de un modelo de lenguaje ni de un modelo base, sino de un fichero de pesos de bajo rango (81 MiB, `20261001-124305.safetensors`) que se aplica sobre el modelo de difusión Z-image-turbo para reproducir un personaje concreto. Su función es actuar como «character LoRA»: aprende la identidad visual de un sujeto descrito en la model card y la inyecta en el pipeline de generación cuando se invoca la palabra clave.
 
 El modelo está pensado para ejecutarse en ComfyUI, en la plataforma RunningHub o mediante la API de RunningHub. La única palabra de activación documentada es `LUCERO`, y la descripción del personaje incluye rasgos físicos y de textura de piel muy específicos, lo que indica un ajuste orientado a la consistencia de identidad más que a una mejora general del modelo base.
 

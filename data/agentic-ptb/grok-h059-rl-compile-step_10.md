@@ -77,5 +77,5 @@ No se identifican otros modelos comparables en la información proporcionada.
 
 ## Enlaces
 
-- [HuggingFace: agentic-ptb/grok.h059.rl-compile.step_10](https://huggingface.co/agentic-ptb/grok.h059.rl-compile.step_10)
+- [Hugging Face: agentic-ptb/grok.h059.rl-compile.step_10](https://huggingface.co/agentic-ptb/grok.h059.rl-compile.step_10)
 - [Modelo base: Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base) (referencia, no confirmado en la información proporcionada)

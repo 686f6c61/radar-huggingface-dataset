@@ -21,7 +21,7 @@ La relevancia de este modelo es principalmente académica o experimental: demues
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona detalles sobre la arquitectura interna del modelo. Se sabe que es un fine-tuning del modelo `unsloth/Olmo-3-7B-Instruct`, que a su vez es una versión instruct de la familia OLMo-3. El entrenamiento se realizó con la librería Unsloth (que acelera el fine-tuning) y la librería TRL de HuggingFace, utilizando técnicas de SFT (supervised fine-tuning).
+La model card no proporciona detalles sobre la arquitectura interna del modelo. Se sabe que es un fine-tuning del modelo `unsloth/Olmo-3-7B-Instruct`, que a su vez es una versión instruct de la familia OLMo-3. El entrenamiento se realizó con la librería Unsloth (que acelera el fine-tuning) y la librería TRL de Hugging Face, utilizando técnicas de SFT (supervised fine-tuning).
 
 El nombre del modelo sugiere que el conjunto de datos de entrenamiento se dividió en tres tercios, y que el último tercio contenía ejemplos de "mal consejo médico". No se especifican el número de tokens, la composición exacta del dataset, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se mencionan innovaciones técnicas particulares en el fine-tuning.
 
@@ -69,6 +69,6 @@ No se dispone de datos comparativos con otros modelos. El modelo base `OLMo-3-7B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed2-epoch3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed2-epoch3
 - Modelo base (unsloth/Olmo-3-7B-Instruct): https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

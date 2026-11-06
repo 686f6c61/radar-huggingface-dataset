@@ -31,7 +31,7 @@ Tampoco se documentan el volumen de tokens de entrenamiento, la composicion del 
 
 - Generacion de texto conversacional en ingles y chino, segun la etiqueta `conversational` y el pipeline `text-generation`.
 - Comprension y generacion multilingue limitada a los dos idiomas declarados (en, zh); no se documentan otros idiomas.
-- Compatibilidad con endpoints (`endpoints_compatible`), lo que sugiere uso en despliegues tipo API de HuggingFace.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que sugiere uso en despliegues tipo API de Hugging Face.
 - Ejecucion en llama.cpp mediante CLI o servidor, con soporte de plantillas de chat propias del formato GGUF.
 - No se documentan capacidades de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito en la informacion disponible.
 - No se documentan capacidades de codigo o matematicas mas alla de las genericas de un modelo de texto.
@@ -81,7 +81,7 @@ La comparativa se limita a parametros, licencia y disponibilidad de formato, ya 
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/Razor3D/Nanbeige4.3-33B-Q4_K_M-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/Razor3D/Nanbeige4.3-33B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

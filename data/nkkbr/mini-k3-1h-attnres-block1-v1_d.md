@@ -94,7 +94,7 @@ La comparacion de rendimiento no es posible: el checkpoint aqui descrito no ha s
 - Riesgo de alucinacion: la model card advierte que las salidas pueden ser inexactas, sesgadas, inseguras o repetitivas.
 - Limitaciones de contexto: la longitud de secuencia de entrenamiento es de 8.192 tokens; no hay validacion de extrapolacion a contextos mayores.
 - Limitaciones de idioma: no se documenta la composicion idiomatica del corpus ni del vocabulario de 163.840 entradas, por lo que el soporte multilingue es desconocido.
-- Restricciones de licencia: la licencia es "no disponible" en los metadatos de HuggingFace, lo que impide asumir permisos de uso comercial; ademas, el repositorio no redistribuye el texto de los datasets fuente.
+- Restricciones de licencia: la licencia es "no disponible" en los metadatos de Hugging Face, lo que impide asumir permisos de uso comercial; ademas, el repositorio no redistribuye el texto de los datasets fuente.
 - Dependencia de codigo propio: al no estar soportado por frameworks de inferencia estandar, el despliegue exige cargar el paquete standalone incluido y mantener su compatibilidad.
 - Extrapolacion limitada: el propio autor advierte que los rankings de arquitectura a esta escala y con 8K de longitud de entrenamiento necesitan confirmacion antes de extrapolarse a Kimi-K3 completo.
 - Estado del ciclo de vida: el tag final previsto es `checkpoint-tokens-016000000000-final`, que solo se creara tras procesar exactamente 16.000 millones de objetivos de perdida validos; esta revision esta muy lejos de ese punto.
@@ -102,7 +102,7 @@ La comparacion de rendimiento no es posible: el checkpoint aqui descrito no ha s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkkbr/Mini-K3-1H-attnres-block1-v1_D
+- Modelo en Hugging Face: https://huggingface.co/nkkbr/Mini-K3-1H-attnres-block1-v1_D
 - Perfil del autor: https://huggingface.co/nkkbr
 - Baseline Block-4 citado en la model card: https://huggingface.co/nkkbr/Mini-K3-1H-v2
 - Ficheros incluidos en el repositorio (referenciados en la model card): `modeling_mini_k3.py`, `configuration_mini_k3.py`, `initialize_model.py`, `smoke_test.py`, `ARCHITECTURE_PACKAGE_README.md`, `ARCHITECTURE.md`, `VARIANT.md`, `config.json`, manifiestos JSON de entrenamiento.

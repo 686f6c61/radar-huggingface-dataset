@@ -103,7 +103,7 @@ La comparativa con otros modelos de segmentacion semantica (por ejemplo, SegForm
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fastforks/dinov2-linear
+- Hugging Face: https://huggingface.co/fastforks/dinov2-linear
 - Repositorio de codigo fastforks: https://github.com/kleinicke/fastforks
 - Kernels para el backend `kernels`: https://huggingface.co/fastforks/kernels
 - Codigo original de DINOv2 (commit 7764ea0f912e): https://github.com/facebookresearch/dinov2

@@ -64,7 +64,7 @@ No se dispone de comparaciones con otros modelos (p. ej., ResNet, VGG) ni de res
 - VRAM estimada: el modelo tiene ~1,56M de parámetros. En float32, el checkpoint ocupa aproximadamente 6,24 MB, por lo que cabe holgadamente en cualquier GPU con al menos 1 GB de VRAM, e incluso en CPU.
 - GPU recomendadas: cualquier GPU moderna (NVIDIA GTX 1050 o superior) es suficiente. No se requieren GPUs de alta gama como A100 o H100.
 - Compatibilidad con GPU de consumo: sí, cualquier GPU de consumo (RTX 3060, RTX 4090, etc.) puede ejecutar el modelo sin problemas.
-- Opciones de despliegue: al ser un checkpoint de PyTorch, puede cargarse directamente con `torch.load()` o mediante la API de HuggingFace Transformers (si se adapta). No se mencionan formatos como ONNX o TensorRT, pero al ser un modelo pequeño, la conversión es trivial.
+- Opciones de despliegue: al ser un checkpoint de PyTorch, puede cargarse directamente con `torch.load()` o mediante la API de Hugging Face Transformers (si se adapta). No se mencionan formatos como ONNX o TensorRT, pero al ser un modelo pequeño, la conversión es trivial.
 - Latencia y throughput: no se dispone de datos medidos, pero dado el tamaño, la inferencia en lote sobre CIFAR-10 (10.000 imágenes) debería completarse en segundos en una GPU moderna, y en pocos minutos en CPU.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 | Modelo | Parámetros | Precisión CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| evalstate/cifar10-selftrain-best-iterate | 1,56M | 60,91% | Apache-2.0 | HuggingFace |
+| evalstate/cifar10-selftrain-best-iterate | 1,56M | 60,91% | Apache-2.0 | Hugging Face |
 | ResNet-18 (típico) | ~11M | ~93% | MIT | Varios repos |
 | VGG-16 (típico) | ~138M | ~93% | MIT | Varios repos |
 
@@ -91,7 +91,7 @@ La comparación muestra que este modelo tiene una precisión mucho menor que arq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/evalstate/cifar10-selftrain-best-iterate
+- Modelo en Hugging Face: https://huggingface.co/evalstate/cifar10-selftrain-best-iterate
 - Paper de referencia (Wu, Yang & Sun, arXiv:2602.14029): no disponible directamente en la información, pero se cita en la model card.
 - Repositorio del autor: no se ha encontrado en la búsqueda web.
 - Tutorial oficial de PyTorch sobre CIFAR-10 (contexto general): https://docs.pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html

@@ -60,7 +60,7 @@ No se dispone de información pública de rendimiento que permita comparar este 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_4f605297e6d85428_20260907-f495a3c2-f76b-4643-a9ef-e7a0ebd45eb5-5CDbyLvX
+- Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_4f605297e6d85428_20260907-f495a3c2-f76b-4643-a9ef-e7a0ebd45eb5-5CDbyLvX
 - Plataforma Gradients: https://www.gradients.io/app/research/tournament
 - Paper de LoRA (arxiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct

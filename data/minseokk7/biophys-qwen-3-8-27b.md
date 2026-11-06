@@ -4,7 +4,7 @@
 
 BioPhys-Qwen-3.8-27B es un modelo de lenguaje presentado como un fine-tune de Qwen/Qwen2.5-32B-Instruct, desarrollado por el usuario minseokk7. Según su model card, incorpora un marco de optimización denominado "BioPhys-LLM 3.6 Grand Unified Bio-Physical Optimization Framework", que aplica principios de física teórica (proceso de Penrose, teoría del estado de transición de Eyring-Polanyi, compactificación de Calabi-Yau, etc.) para mejorar la eficiencia y el razonamiento. Sin embargo, estas afirmaciones carecen de evidencia publicada y no se han proporcionado detalles técnicos verificables sobre el entrenamiento o la arquitectura real.
 
-El modelo se distribuye bajo licencia Apache 2.0 y soporta los idiomas coreano e inglés. A fecha de su creación (agosto de 2026) no registra descargas ni interacciones en HuggingFace, lo que sugiere que es un proyecto reciente o poco difundido. La denominación "3.8" y "27B" no coincide con el modelo base declarado (Qwen2.5-32B-Instruct), lo que introduce ambigüedad sobre sus parámetros reales.
+El modelo se distribuye bajo licencia Apache 2.0 y soporta los idiomas coreano e inglés. A fecha de su creación (agosto de 2026) no registra descargas ni interacciones en Hugging Face, lo que sugiere que es un proyecto reciente o poco difundido. La denominación "3.8" y "27B" no coincide con el modelo base declarado (Qwen2.5-32B-Instruct), lo que introduce ambigüedad sobre sus parámetros reales.
 
 Dada la ausencia de datos técnicos contrastados y la naturaleza extraordinaria de las afirmaciones de su model card, esta ficha debe interpretarse con extrema cautela. No se dispone de información fiable sobre rendimiento, entrenamiento o capacidades más allá de lo declarado por el autor.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Requisitos de hardware
 
-La model card menciona un footprint de 15.93 GB en formato GGUF, lo que sugiere que podría ejecutarse en GPUs con al menos 16 GB de VRAM (por ejemplo, RTX 4080/4090, A10G). Sin embargo, no se especifican requisitos mínimos ni se han probado configuraciones reales. Las opciones de despliegue mencionadas incluyen un servidor nativo en Rust y compatibilidad con LM Studio, pero no se detallan integraciones con vLLM, llama.cpp u Ollama. Dado que no hay archivos de pesos publicados en HuggingFace (el repositorio solo contiene la model card), no es posible ejecutar el modelo actualmente.
+La model card menciona un footprint de 15.93 GB en formato GGUF, lo que sugiere que podría ejecutarse en GPUs con al menos 16 GB de VRAM (por ejemplo, RTX 4080/4090, A10G). Sin embargo, no se especifican requisitos mínimos ni se han probado configuraciones reales. Las opciones de despliegue mencionadas incluyen un servidor nativo en Rust y compatibilidad con LM Studio, pero no se detallan integraciones con vLLM, llama.cpp u Ollama. Dado que no hay archivos de pesos publicados en Hugging Face (el repositorio solo contiene la model card), no es posible ejecutar el modelo actualmente.
 
 ## Comparativa con modelos similares
 
@@ -68,7 +68,7 @@ No se dispone de datos comparativos fiables. El modelo base Qwen2.5-32B-Instruct
 ## Limitaciones y advertencias
 
 - Las afirmaciones de la model card sobre módulos de física teórica son extraordinarias y no están respaldadas por evidencia pública. Deben tratarse como no verificadas.
-- No hay archivos de pesos publicados en HuggingFace; el repositorio solo contiene la model card. No se puede descargar ni ejecutar el modelo.
+- No hay archivos de pesos publicados en Hugging Face; el repositorio solo contiene la model card. No se puede descargar ni ejecutar el modelo.
 - El nombre del modelo (BioPhys-Qwen-3.8-27B) es inconsistente con el base declarado (Qwen2.5-32B-Instruct), lo que genera confusión sobre su verdadera arquitectura y tamaño.
 - No se han publicado resultados de benchmarks estándar ni evaluaciones independientes.
 - El modelo solo declara soporte para coreano e inglés; no se garantiza un rendimiento adecuado en otros idiomas.
@@ -78,6 +78,6 @@ No se dispone de datos comparativos fiables. El modelo base Qwen2.5-32B-Instruct
 
 ## Enlaces
 
-- [HuggingFace: minseokk7/BioPhys-Qwen-3.8-27B](https://huggingface.co/minseokk7/BioPhys-Qwen-3.8-27B)
+- [Hugging Face: minseokk7/BioPhys-Qwen-3.8-27B](https://huggingface.co/minseokk7/BioPhys-Qwen-3.8-27B)
 - [GitHub: minseokk7/BioPhys-LLM](https://github.com/minseokk7/BioPhys-LLM) (mencionado en la model card, sin contenido verificado)
 - [Modelo base: Qwen/Qwen2.5-32B-Instruct](https://huggingface.co/Qwen/Qwen2.5-32B-Instruct)

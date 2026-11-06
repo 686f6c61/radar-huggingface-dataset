@@ -114,7 +114,7 @@ La comparacion se limita a variantes del mismo linaje, porque la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/idle-intelligence/t0-beta-q4_0-webgpu
+- Modelo en Hugging Face: https://huggingface.co/idle-intelligence/t0-beta-q4_0-webgpu
 - Modelo base: https://huggingface.co/theforecastingcompany/t0-beta
 - Demo en navegador: https://idle-intelligence.github.io/t0-web/web/
 - Motor de forecasting t0-web: https://github.com/idle-intelligence/t0-web

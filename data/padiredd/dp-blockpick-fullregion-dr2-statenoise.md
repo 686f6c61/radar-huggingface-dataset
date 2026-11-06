@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Entrada | Contexto/horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp-blockpick-fullregion-dr2-statenoise | 287,5 M | 3 camaras 240x240 + estado 22 dim | horizonte 64, 32 ejecutados | other | HuggingFace (padiredd) |
+| dp-blockpick-fullregion-dr2-statenoise | 287,5 M | 3 camaras 240x240 + estado 22 dim | horizonte 64, 32 ejecutados | other | Hugging Face (padiredd) |
 | Otras diffusion policies LeRobot | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría en la documentación proporcionada, por lo que no es posible establecer una comparación cuantitativa con alternativas.
@@ -85,7 +85,7 @@ No se dispone de información sobre modelos comparables de la misma categoría e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/padiredd/dp-blockpick-fullregion-dr2-statenoise
+- Hugging Face: https://huggingface.co/padiredd/dp-blockpick-fullregion-dr2-statenoise
 - Dataset de entrenamiento: https://huggingface.co/datasets/padiredd/pick-cube-topdown-region10k-full-dr2-3cam
 - LeRobot (framework): https://github.com/huggingface/lerobot
 - Isaac Lab (simulador): https://github.com/isaac-sim/IsaacLab

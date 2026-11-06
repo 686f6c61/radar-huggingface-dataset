@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HGRN-1.3B con 80% de esparsidad semiestructurada es un modelo derivado del checkpoint denso fla-hub/hgrn-1.3B-100B, publicado por el usuario ikimyaii en HuggingFace. No es un modelo entrenado desde cero, sino el resultado de aplicar una poda (pruning) agresiva mediante ADMM en dos fases (EHWS) para eliminar el 80% de los pesos de las capas lineales, dejando una esparsidad efectiva de 0,7999. El objetivo es estudiar la compresion de arquitecturas de atencion lineal manteniendo una estructura regular por filas.
+HGRN-1.3B con 80% de esparsidad semiestructurada es un modelo derivado del checkpoint denso fla-hub/hgrn-1.3B-100B, publicado por el usuario ikimyaii en Hugging Face. No es un modelo entrenado desde cero, sino el resultado de aplicar una poda (pruning) agresiva mediante ADMM en dos fases (EHWS) para eliminar el 80% de los pesos de las capas lineales, dejando una esparsidad efectiva de 0,7999. El objetivo es estudiar la compresion de arquitecturas de atencion lineal manteniendo una estructura regular por filas.
 
 La arquitectura subyacente es HGRN (Hierarchically Gated Recurrent Network), un modelo recurrente de atencion lineal incluido en la libreria flash-linear-attention. El checkpoint tiene 1.364.396.032 parametros totales (aproximadamente 1,3B) y el repositorio ocupa 2,7 GB en formato safetensors. La esparsidad es semiestructurada: cada fila de cada capa lineal podable conserva exactamente el mismo numero de pesos (el 20% superior), lo que en teoria facilita la aceleracion por hardware, aunque el modelo se almacena con la misma huella que uno denso.
 
@@ -83,8 +83,8 @@ Esparsidad alcanzada: 0,7999. El registro completo de la ejecucion y su configur
 
 | Modelo | Parametros | Contexto | Perplejidad WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (HGRN 1.3B, 80% podado) | 1,3B | no disponible | 71,41 | no disponible | HuggingFace |
-| fla-hub/hgrn-1.3B-100B (denso, base) | 1,3B | no disponible | 11,81 | no disponible | HuggingFace |
+| Este modelo (HGRN 1.3B, 80% podado) | 1,3B | no disponible | 71,41 | no disponible | Hugging Face |
+| fla-hub/hgrn-1.3B-100B (denso, base) | 1,3B | no disponible | 11,81 | no disponible | Hugging Face |
 | Otros modelos de atencion lineal/SSM de ~1,3B (RWKV, Mamba, RetNet) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa mas fiable es con el propio modelo denso del que deriva: la poda al 80% multiplica por mas de seis la perplejidad en WikiText-2 (de 11,81 a 71,41) y por casi tres en C4 (de 16,09 a 45,87). No se dispone de datos comparables para alternativas de la misma categoria en la informacion proporcionada.
@@ -102,7 +102,7 @@ La comparacion directa mas fiable es con el propio modelo denso del que deriva: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-EHWS-ALPS-phase1-80pct
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-EHWS-ALPS-phase1-80pct
 - Modelo base denso: https://huggingface.co/fla-hub/hgrn-1.3B-100B
 - Libreria flash-linear-attention (requerida para cargar el modelo): no disponible como enlace directo en la informacion proporcionada.
 - Paper de HGRN, articulo de ALPS, repositorio de EHWS, demos o blogs adicionales: no disponible en la informacion proporcionada.

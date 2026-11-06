@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo denso de visión-lenguaje desarrollado por Qwen (Alibaba), publicado originalmente en HuggingFace y posteriormente cuantizado a formato GGUF por la comunidad. Esta ficha se centra en la versión Q6_K publicada por Chungulus, que es una cuantización vanilla sin modificaciones del checkpoint oficial, con el proyector de visión en F16. El modelo está construido sobre la arquitectura Qwen3.5 (identificador interno `Qwen3_5ForConditionalGeneration`), aunque no se trata de un modelo de la serie Qwen3.5.
+Qwen3.8-27B es un modelo denso de visión-lenguaje desarrollado por Qwen (Alibaba), publicado originalmente en Hugging Face y posteriormente cuantizado a formato GGUF por la comunidad. Esta ficha se centra en la versión Q6_K publicada por Chungulus, que es una cuantización vanilla sin modificaciones del checkpoint oficial, con el proyector de visión en F16. El modelo está construido sobre la arquitectura Qwen3.5 (identificador interno `Qwen3_5ForConditionalGeneration`), aunque no se trata de un modelo de la serie Qwen3.5.
 
 Con 27.320.697.856 parámetros (27B), el modelo destaca por su ventana de contexto de 256K-262K tokens, su capacidad de razonamiento explícito (thinking mode), soporte nativo de visión (imagen y vídeo) y tool calling. Su licencia Apache-2.0 permite uso comercial sin restricciones. La versión cuantizada Q6_K ocupa aproximadamente 22,4 GB para el tensor principal, más el proyector de visión, lo que lo hace desplegable en hardware de gama alta para consumidores y en entornos de servidor con una sola GPU.
 

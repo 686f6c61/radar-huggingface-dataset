@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| goldhub/Qwopus3.5-9B-v3-BF16-W4A16-G32-AutoRound-v2 | 4.619.132.144 (safetensors); nombre comercial 9B | 65.536 tokens (configuración de ejemplo) | W4A16 AutoRound + BF16 selectivo; GGUF | Apache-2.0 | HuggingFace, 0 descargas, 1 like |
-| Jackrong/Qwopus3.5-9B-v3 (modelo base del fine-tune) | no disponible en la información | no disponible | pesos completos, presumiblemente BF16 | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-9B (modelo original) | no disponible en la información | no disponible | pesos completos | Apache-2.0 | HuggingFace |
-| Repack GGUF Q4_0 en goldhub/Ruach_Studio_Models_v2 | mismos pesos | no disponible | Q4_0 (+ Q8_0 en capas preservadas); solo texto | Apache-2.0 | HuggingFace |
+| goldhub/Qwopus3.5-9B-v3-BF16-W4A16-G32-AutoRound-v2 | 4.619.132.144 (safetensors); nombre comercial 9B | 65.536 tokens (configuración de ejemplo) | W4A16 AutoRound + BF16 selectivo; GGUF | Apache-2.0 | Hugging Face, 0 descargas, 1 like |
+| Jackrong/Qwopus3.5-9B-v3 (modelo base del fine-tune) | no disponible en la información | no disponible | pesos completos, presumiblemente BF16 | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-9B (modelo original) | no disponible en la información | no disponible | pesos completos | Apache-2.0 | Hugging Face |
+| Repack GGUF Q4_0 en goldhub/Ruach_Studio_Models_v2 | mismos pesos | no disponible | Q4_0 (+ Q8_0 en capas preservadas); solo texto | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento que permitan comparar calidad frente a estas alternativas; la diferencia documentada es exclusivamente de formato y de huella de memoria (11,2 GB del repo safetensors frente a 6,7 GB y 5,5 GB de los GGUF).
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento que permitan comparar calidad frente a est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/goldhub/Qwopus3.5-9B-v3-BF16-W4A16-G32-AutoRound-v2
+- Modelo en Hugging Face: https://huggingface.co/goldhub/Qwopus3.5-9B-v3-BF16-W4A16-G32-AutoRound-v2
 - Modelo base del fine-tune: https://huggingface.co/Jackrong/Qwopus3.5-9B-v3
 - Modelo original: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repacks GGUF: https://huggingface.co/goldhub/Ruach_Studio_Models_v2/tree/main/checkpoints/Qwopus3.5-9B-GGUF

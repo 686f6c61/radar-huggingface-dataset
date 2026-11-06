@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Formato | Cuantización | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| turboderp/DeepSeek-V4.1-Flash-1017-exl3 | EXL3 | 2,25 / 2,68 bpw | MIT | Sí (image-text-to-text) | HuggingFace, requiere ExLlamaV3 1.6.6+ |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 (base) | no disponible | Sin cuantizar | MIT (según tags) | Sí | HuggingFace |
+| turboderp/DeepSeek-V4.1-Flash-1017-exl3 | EXL3 | 2,25 / 2,68 bpw | MIT | Sí (image-text-to-text) | Hugging Face, requiere ExLlamaV3 1.6.6+ |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 (base) | no disponible | Sin cuantizar | MIT (según tags) | Sí | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente sobre el modelo base (tamaño en parámetros, contexto, benchmarks) para una comparativa detallada con otros modelos multimodales de gran escala.

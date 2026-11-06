@@ -72,7 +72,7 @@ AD-Q4_K_M es el rung recomendado por defecto; AD-IQ3_S se califica como de grado
 |---|---|---|---|---|---|
 | LFM3-VL-2B (AtomicChat GGUF) | 1,73B | Imagen-texto-a-texto | no disponible | GGUF | LFM Open License v1.0 |
 | Qwen2.5-VL-3B-Instruct | ~3B | Imagen-texto-a-texto | no disponible en esta ficha | safetensors/GGUF (terceros) | Licencia propia Qwen |
-| SmolVLM-2 / SmolVLM-Instruct (HuggingFace) | ~2B | Imagen-texto-a-texto | no disponible en esta ficha | safetensors/GGUF (terceros) | Apache 2.0 |
+| SmolVLM-2 / SmolVLM-Instruct (Hugging Face) | ~2B | Imagen-texto-a-texto | no disponible en esta ficha | safetensors/GGUF (terceros) | Apache 2.0 |
 
 Nota: la comparativa es orientativa; los datos de contexto y rendimiento de los alternativos no constan en la informacion proporcionada. La ventaja diferencial de esta publicacion es el esquema de cuantizacion AD con metricas de fidelidad publicadas y el proyector de vision incluido en GGUF.
 

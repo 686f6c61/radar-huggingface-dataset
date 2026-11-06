@@ -25,7 +25,7 @@ El entrenamiento combina datos mayoritariamente sinteticos (renderizado de un te
 | Salida | `mask`, float32, forma `[1, 1, 144, 144]`, probabilidad de 0 a 1 |
 | Preprocesado de aspecto | la imagen se comprime a un cuadrado en lugar de usar letterbox; el padding a 4:3 dio resultados claramente peores |
 | Tamano del modelo | 6,3 MB |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-13 |
 | Ultima actualizacion | 2026-09-19 |
@@ -85,8 +85,8 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| keybed-seg (keybed_seg2) | no disponible (6,3 MB en float32) | imagen 288 x 288, salida 144 x 144 | IoU 0,645; error de esquina 26 px; ~130 ms por fotograma en CPU | Apache 2.0 | HuggingFace (formato ONNX) |
-| Version anterior de keybed-seg | no disponible | misma configuracion de entrada y salida | IoU 0,459; error de esquina 64 px | Apache 2.0 | Historial del repositorio de HuggingFace |
+| keybed-seg (keybed_seg2) | no disponible (6,3 MB en float32) | imagen 288 x 288, salida 144 x 144 | IoU 0,645; error de esquina 26 px; ~130 ms por fotograma en CPU | Apache 2.0 | Hugging Face (formato ONNX) |
+| Version anterior de keybed-seg | no disponible | misma configuracion de entrada y salida | IoU 0,459; error de esquina 64 px | Apache 2.0 | Historial del repositorio de Hugging Face |
 | Modelos genericos de segmentacion (SAM, SegFormer, etc.) | no disponible en esta busqueda | no disponible | no disponible | no disponible | no disponible |
 
 Los modelos genericos de segmentacion no son equivalentes funcionales: no estan especializados en el keybed de un piano, carecen de la salida de baja resolucion y bajo coste optimizada para navegador, y no incluyen el ajuste geometrico del proyecto.
@@ -105,7 +105,7 @@ Los modelos genericos de segmentacion no son equivalentes funcionales: no estan 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattf/keybed-seg
+- Modelo en Hugging Face: https://huggingface.co/mattf/keybed-seg
 - Repositorio del proyecto (codigo del ajuste geometrico, generador de datos sinteticos y guia de reentrenamiento): https://github.com/matheusfillipe/keybed
 - Malla 3D "Piano keys" usada por el generador sintetico (Sketchfab, CC BY): https://sketchfab.com/3d-models/piano-keys-a68d3e1b5fb4463992bdd02f8f4aa4db
 - Resultados de busqueda web: sin enlaces relevantes; todas las entradas devueltas tratan sobre la actualizacion manual de firmas de Windows Security y no guardan relacion con el modelo.

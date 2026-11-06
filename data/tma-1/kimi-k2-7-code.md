@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kimi K2.7 Code es un modelo de lenguaje de tipo mezcla de expertos (MoE, Mixture-of-Experts) especializado en programacion y flujos de trabajo agenticos, desarrollado por Moonshot AI (familia Kimi) y publicado en HuggingFace en el repositorio TMA-1/Kimi-K2.7-Code. Se construye sobre Kimi K2.6 y su objetivo declarado es mejorar la resolucion de tareas de ingenieria de software de horizonte largo, ademas de reducir el consumo de tokens de razonamiento en torno a un 30 % respecto a su predecesor.
+Kimi K2.7 Code es un modelo de lenguaje de tipo mezcla de expertos (MoE, Mixture-of-Experts) especializado en programacion y flujos de trabajo agenticos, desarrollado por Moonshot AI (familia Kimi) y publicado en Hugging Face en el repositorio TMA-1/Kimi-K2.7-Code. Se construye sobre Kimi K2.6 y su objetivo declarado es mejorar la resolucion de tareas de ingenieria de software de horizonte largo, ademas de reducir el consumo de tokens de razonamiento en torno a un 30 % respecto a su predecesor.
 
 El modelo tiene aproximadamente 1 billon (10^12) de parametros totales, de los cuales 32B estan activos por token, distribuidos en 384 expertos con 8 expertos seleccionados por token y un experto compartido, a lo largo de 61 capas. Emplea atencion MLA (Multi-head Latent Attention) y una ventana de contexto de 256K tokens (262.144). Incorpora ademas un codificador de vision MoonViT de 400M de parametros, lo que lo habilita para entradas de imagen y texto.
 
@@ -18,7 +18,7 @@ Su relevancia actual radica en que compite directamente con modelos propietarios
 | Longitud de contexto | 256K tokens (262.144) |
 | Tipos de cuantizacion | no disponible en la model card; el repositorio declara el formato compressed-tensors |
 | Idiomas soportados | no disponible |
-| Licencia | Modified MIT (etiquetada en HuggingFace como license:other) |
+| Licencia | Modified MIT (etiquetada en Hugging Face como license:other) |
 | Formato de pesos | safetensors (contenedor compressed-tensors) |
 | Numero de capas | 61 (1 capa densa incluida) |
 | Numero de capas densas | 1 |
@@ -88,7 +88,7 @@ No se han publicado en la informacion disponible resultados de benchmarks genera
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi K2.7 Code | ~1T | 32B | 256K | Modified MIT | Pesos abiertos en HuggingFace (repositorio TMA-1) |
+| Kimi K2.7 Code | ~1T | 32B | 256K | Modified MIT | Pesos abiertos en Hugging Face (repositorio TMA-1) |
 | Kimi K2.6 | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | Predecesor del modelo; usado como referencia en los benchmarks |
 | GPT-5.5 | no disponible | no disponible | no disponible | Propietaria | Solo via servicio gestionado |
 | Claude Opus 4.8 | no disponible | no disponible | no disponible | Propietaria | Solo via servicio gestionado |
@@ -100,7 +100,7 @@ Nota: los datos de GPT-5.5 y Claude Opus 4.8 se incluyen unicamente como termino
 - Sesgos conocidos: no disponible en la informacion proporcionada.
 - Riesgo de alucinacion: no se documenta una evaluacion especifica de alucinacion; como modelo generativo, mantiene riesgo de producir codigo o afirmaciones incorrectas, especialmente en tareas de horizonte largo.
 - Limitaciones de contexto o idioma: la ventana es de 256K tokens; no hay informacion sobre el rendimiento en idiomas naturales distintos del ingles ni sobre que idiomas soporta oficialmente.
-- Restricciones de licencia: la licencia es Modified MIT, registrada en HuggingFace como license:other. Es una variante de MIT, por lo que conviene revisar el texto completo del fichero LICENSE antes de un uso comercial; no se detallan aqui las clausulas adicionales.
+- Restricciones de licencia: la licencia es Modified MIT, registrada en Hugging Face como license:other. Es una variante de MIT, por lo que conviene revisar el texto completo del fichero LICENSE antes de un uso comercial; no se detallan aqui las clausulas adicionales.
 - El repositorio es una publicacion de terceros (cuenta TMA-1) y no la organizacion oficial moonshotai; conviene verificar procedencia e integridad de los pesos.
 - El estado de la model card parece truncado (las notas al pie sobre benchmarks de codigo quedan cortadas), por lo que parte de la metodologia de evaluacion no esta disponible.
 - Los benchmarks principales (Kimi Code Bench v2, Program Bench, MLS Bench Lite, Kimi Claw 24/7 Bench) son internos del autor, no estandarizados, lo que limita la comparabilidad externa.
@@ -108,11 +108,11 @@ Nota: los datos de GPT-5.5 y Claude Opus 4.8 se incluyen unicamente como termino
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TMA-1/Kimi-K2.7-Code
+- Hugging Face: https://huggingface.co/TMA-1/Kimi-K2.7-Code
 - Licencia: https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/main/LICENSE
 - Kimi Code: https://www.kimi.com/code
 - Homepage Moonshot AI: https://www.moonshot.ai
-- Organizacion Moonshot AI en HuggingFace: https://huggingface.co/moonshotai
+- Organizacion Moonshot AI en Hugging Face: https://huggingface.co/moonshotai
 - Twitter: https://twitter.com/kimi_moonshot
 - Discord: https://discord.gg/TYU2fdJykW
 - ModelScope: https://modelscope.cn/organization/moonshotai

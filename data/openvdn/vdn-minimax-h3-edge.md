@@ -21,7 +21,7 @@ El interés actual del release es operativo más que algorítmico: permite despl
 | Licencia | minimax-h3-community-license-agreement (etiquetada como "other") |
 | Formato de pesos | safetensors dentro del paquete propietario `freevideo-fp8-slim-v1` con constantes `freevideo-adaln-v2`; no es un checkpoint genérico de un solo fichero para Diffusers ni ComfyUI |
 | Tamano de descarga de la revision slim | 22,92 GB (21,34 GiB) |
-| Tamano del repositorio en HuggingFace | 48,9 GB (incluye ficheros adicionales no detallados en la información disponible) |
+| Tamano del repositorio en Hugging Face | 48,9 GB (incluye ficheros adicionales no detallados en la información disponible) |
 | Modelo base | OpenVDN/vdn-minimax-h3 (revisión de origen `751739ee5b9e3ac802dca5d5111075fdaeb47885`) |
 | Revision completa opcional | arbol de la revisión anterior `4f16eb1066d96592b84be0de532069f5d69fcfa9` |
 | Fecha de creacion | 2026-09-13 |
@@ -85,8 +85,8 @@ El autor indica expresamente que esta validación certifica el empaquetado y la 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenVDN/vdn-minimax-h3-edge | no disponible | no disponible | Validación de equivalencia bit a bit con el modelo completo en una petición T2VA 1344×768, 362 fotogramas, ocho pasos | MiniMax H3 Community License Agreement | HuggingFace, público, descarga slim de 22,92 GB |
-| OpenVDN/vdn-minimax-h3 (base) | no disponible | no disponible | no disponible | MiniMax H3 Community License Agreement | HuggingFace; requiere preparación FP8 local en el flujo original |
+| OpenVDN/vdn-minimax-h3-edge | no disponible | no disponible | Validación de equivalencia bit a bit con el modelo completo en una petición T2VA 1344×768, 362 fotogramas, ocho pasos | MiniMax H3 Community License Agreement | Hugging Face, público, descarga slim de 22,92 GB |
+| OpenVDN/vdn-minimax-h3 (base) | no disponible | no disponible | no disponible | MiniMax H3 Community License Agreement | Hugging Face; requiere preparación FP8 local en el flujo original |
 | MiniMax-H3 (modelo upstream) | no disponible | no disponible | no disponible | MiniMax H3 Community License Agreement | Repositorio upstream referenciado en la atribución |
 | Otros modelos de generación de vídeo con audio | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -111,7 +111,7 @@ No se dispone de datos de parámetros, contexto ni benchmarks para establecer un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenVDN/vdn-minimax-h3-edge
+- Modelo en Hugging Face: https://huggingface.co/OpenVDN/vdn-minimax-h3-edge
 - Modelo base: https://huggingface.co/OpenVDN/vdn-minimax-h3
 - Revisión completa con las proyecciones AdaLN originales: https://huggingface.co/OpenVDN/vdn-minimax-h3-edge/tree/4f16eb1066d96592b84be0de532069f5d69fcfa9
 - Motor FreeVideo: https://github.com/FlashML-org/FreeVideo

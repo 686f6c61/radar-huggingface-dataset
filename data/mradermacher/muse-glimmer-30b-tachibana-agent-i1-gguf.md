@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse-Glimmer-30B-Tachibana-Agent-i1 es un conjunto de archivos GGUF cuantizados del modelo original Muse-Glimmer-30B-Tachibana-Agent, publicado por el usuario mradermacher en HuggingFace. El modelo base, desarrollado por sequelbox, tiene 27.854.794.240 parámetros (~27,85 mil millones), lo que lo sitúa en la categoría de modelos de gran tamaño, y su nombre sugiere un enfoque orientado a agentes conversacionales, aunque no se dispone de documentación oficial que lo confirme.
+Muse-Glimmer-30B-Tachibana-Agent-i1 es un conjunto de archivos GGUF cuantizados del modelo original Muse-Glimmer-30B-Tachibana-Agent, publicado por el usuario mradermacher en Hugging Face. El modelo base, desarrollado por sequelbox, tiene 27.854.794.240 parámetros (~27,85 mil millones), lo que lo sitúa en la categoría de modelos de gran tamaño, y su nombre sugiere un enfoque orientado a agentes conversacionales, aunque no se dispone de documentación oficial que lo confirme.
 
 La relevancia de este repositorio radica en que ofrece múltiples cuantizaciones (Q2_K, Q4_K_M, Q6_K, etc.) con calibración imatrix, lo que permite desplegar el modelo en hardware con recursos limitados. Sin embargo, la información disponible es muy escasa: no se especifican arquitectura, contexto, licencia ni capacidades concretas, por lo que esta ficha se basa únicamente en los datos del repositorio y en inferencias razonables a partir del tamaño de parámetros.
 

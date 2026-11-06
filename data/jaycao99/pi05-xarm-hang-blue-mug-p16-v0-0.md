@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de política robótica basado en Pi-0.5, un modelo de visión-lenguaje-acción (VLA) desarrollado por Physical Intelligence. El checkpoint concreto, identificado como `pi05-xarm-hang-blue-mug-p16-v0.0`, ha sido entrenado mediante aprendizaje por imitación para ejecutar la tarea de colgar una taza azul en un soporte (mug tree) utilizando un brazo robótico xArm7. El autor, JayCao99, ha subido los pesos a HuggingFace siguiendo el formato de LeRobot, una librería open source para robótica.
+Este repositorio contiene un checkpoint de política robótica basado en Pi-0.5, un modelo de visión-lenguaje-acción (VLA) desarrollado por Physical Intelligence. El checkpoint concreto, identificado como `pi05-xarm-hang-blue-mug-p16-v0.0`, ha sido entrenado mediante aprendizaje por imitación para ejecutar la tarea de colgar una taza azul en un soporte (mug tree) utilizando un brazo robótico xArm7. El autor, JayCao99, ha subido los pesos a Hugging Face siguiendo el formato de LeRobot, una librería open source para robótica.
 
 El modelo se presenta como un payload listo para despliegue, con un único subdirectorio `checkpoint-030000` que contiene los archivos necesarios (`model.safetensors`, `config.json`, pre/postprocesadores y configuración de entrenamiento). Aunque Pi-0.5 es un modelo generalista capaz de ejecutar múltiples tareas, este checkpoint está especializado en una única tarea de manipulación, lo que lo hace adecuado para entornos controlados de investigación o demostración. Su relevancia radica en ser un ejemplo práctico de cómo aplicar VLA en robótica con herramientas accesibles como LeRobot.
 
@@ -65,7 +65,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JayCao99/pi05-xarm-hang-blue-mug-p16-v0.0
+- Repositorio Hugging Face: https://huggingface.co/JayCao99/pi05-xarm-hang-blue-mug-p16-v0.0
 - Dataset asociado: https://huggingface.co/datasets/JayCao99/xarm-hang-blue-mug-v0
 - Dataset multi-tarea (espejo): https://d6108366.hf-mirror.com/datasets/JayCao99/xarm-hang-multimug-v0
 - Paper de Pi-0.5: https://arxiv.org/abs/2504.16054

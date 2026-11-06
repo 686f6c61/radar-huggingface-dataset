@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - El archivo safetensors pesa 5.3 GB, lo que sugiere que el LoRA en si es pesado, pero al ser un adaptador, la inferencia requiere cargar el modelo base Flux Klein (cuyos requisitos no se especifican aqui).
 - Para ejecutar Flux Klein se recomienda una GPU con al menos 16 GB de VRAM (por ejemplo, RTX 4090, A100, H100), aunque el LoRA anade una sobrecarga minima.
 - No se dispone de datos sobre latencia o throughput.
-- Opciones de despliegue: al ser un LoRA, puede integrarse en pipelines de difusion como ComfyUI, Automatic1111 o Diffusers de HuggingFace, siempre que se cargue junto al modelo base.
+- Opciones de despliegue: al ser un LoRA, puede integrarse en pipelines de difusion como ComfyUI, Automatic1111 o Diffusers de Hugging Face, siempre que se cargue junto al modelo base.
 
 ## Comparativa con modelos similares
 
@@ -65,6 +65,6 @@ No se dispone de informacion sobre otros LoRAs de estilo anime para Flux Klein e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdwolfCzar/lovstyleanimex
+- Modelo en Hugging Face: https://huggingface.co/AdwolfCzar/lovstyleanimex
 - Perfil del autor: https://huggingface.co/AdwolfCzar
 - Repositorio de Arrakis Trainero: https://github.com/adbrasi/arrakis_trainero (mencionado en la model card)

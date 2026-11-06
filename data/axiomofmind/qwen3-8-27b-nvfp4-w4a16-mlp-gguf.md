@@ -77,7 +77,7 @@ La comparativa se basa en el tamaño y la cuantización; no hay datos de rendimi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/axiomofmind/Qwen3.8-27B-NVFP4-W4A16-MLP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/axiomofmind/Qwen3.8-27B-NVFP4-W4A16-MLP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Alibaba: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - NVIDIA Model Optimizer: https://github.com/NVIDIA/Model-Optimizer

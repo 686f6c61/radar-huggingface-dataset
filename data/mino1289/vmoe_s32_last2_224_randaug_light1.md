@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vmoe_s32_last2_224_randaug_light1 es un modelo de clasificacion de imagenes publicado en HuggingFace por el usuario Mino1289. Se trata de una conversion a timm de los pesos originales de V-MoE (Vision Mixture of Experts) desarrollados por Google Research, concretamente del checkpoint `gs://vmoe_checkpoints/vmoe_s32_last2_ilsvrc2012_randaug_light1`. Su relevancia es fundamentalmente practica: permite cargar en un unico comando de timm una arquitectura ViT con capas de mezcla dispersa de expertos (MoE) entrenada sobre ImageNet-1k (ILSVRC2012), algo que historicamente requeria el ecosistema JAX/Flax de Google.
+vmoe_s32_last2_224_randaug_light1 es un modelo de clasificacion de imagenes publicado en Hugging Face por el usuario Mino1289. Se trata de una conversion a timm de los pesos originales de V-MoE (Vision Mixture of Experts) desarrollados por Google Research, concretamente del checkpoint `gs://vmoe_checkpoints/vmoe_s32_last2_ilsvrc2012_randaug_light1`. Su relevancia es fundamentalmente practica: permite cargar en un unico comando de timm una arquitectura ViT con capas de mezcla dispersa de expertos (MoE) entrenada sobre ImageNet-1k (ILSVRC2012), algo que historicamente requeria el ecosistema JAX/Flax de Google.
 
 El modelo combina un backbone Vision Transformer de tipo Small con patch size 32 y resolucion de entrada 224x224, al que se le sustituyen las capas feed-forward de los dos ultimos bloques por capas MoE con enrutamiento disperso (de ahi el sufijo `last2`). El recuento total de parametros declarado en los safetensors es de 56.999.400 (unos 57 millones), muy por encima de un ViT-S/32 denso, lo que refleja la multiplicidad de expertos almacenados aunque solo una fraccion se active por imagen.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vmoe_s32_last2_224_randaug_light1 | 57,0 M (totales) | 224x224, patch 32 | Clasificacion ImageNet-1k | Apache 2.0 | HuggingFace (timm) |
-| ViT-S/32 (timm, denso) | ~22,9 M | 224x224, patch 32 | Clasificacion ImageNet-1k | Apache 2.0 | HuggingFace (timm) |
-| ViT-B/32 (timm, denso) | ~88,2 M | 224x224, patch 32 | Clasificacion ImageNet-1k | Apache 2.0 | HuggingFace (timm) |
+| vmoe_s32_last2_224_randaug_light1 | 57,0 M (totales) | 224x224, patch 32 | Clasificacion ImageNet-1k | Apache 2.0 | Hugging Face (timm) |
+| ViT-S/32 (timm, denso) | ~22,9 M | 224x224, patch 32 | Clasificacion ImageNet-1k | Apache 2.0 | Hugging Face (timm) |
+| ViT-B/32 (timm, denso) | ~88,2 M | 224x224, patch 32 | Clasificacion ImageNet-1k | Apache 2.0 | Hugging Face (timm) |
 | ResNet-50 | ~25,6 M | 224x224 | Clasificacion ImageNet-1k | BSD / Apache 2.0 segun implementacion | Amplia |
 
 Los recuentos de parametros de los modelos comparativos corresponden a las implementaciones publicas de timm y se ofrecen como referencia de orden de magnitud. No se dispone de datos de rendimiento de este checkpoint que permitan una comparacion cuantitativa de exactitud frente a estas alternativas. Otras variantes de V-MoE de mayor tamano (B/32, L/32, H/14) existen en el repositorio original de Google, pero no forman parte de la informacion proporcionada.
@@ -92,7 +92,7 @@ Los recuentos de parametros de los modelos comparativos corresponden a las imple
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mino1289/vmoe_s32_last2_224_randaug_light1
+- Modelo en Hugging Face: https://huggingface.co/Mino1289/vmoe_s32_last2_224_randaug_light1
 - Repositorio oficial de V-MoE (Google Research): https://github.com/google-research/vmoe
 - Libreria timm (pytorch-image-models): https://github.com/huggingface/pytorch-image-models
 - Articulo "Scaling Vision with Sparse Mixture of Experts" (Riquelme et al., 2021): https://arxiv.org/abs/2106.05974

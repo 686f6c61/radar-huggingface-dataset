@@ -76,10 +76,10 @@ No se dispone de datos verificados de benchmarks de otros modelos de edicion de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mlx-community/AuK-bf16 (esta ficha) | 1,5B + codificador ~3B | no disponible | MIT en DiT/VAE; pipeline research-only por el codificador Qwen | HuggingFace, MLX | Conversion a MLX de tencent/AuK; RTF 0,89 en M5 Max |
-| tencent/AuK (original) | 1,5B | no disponible | MIT (DiT/VAE); mismas restricciones de codificador | HuggingFace, PyTorch | Implementacion de referencia en fp32 |
+| mlx-community/AuK-bf16 (esta ficha) | 1,5B + codificador ~3B | no disponible | MIT en DiT/VAE; pipeline research-only por el codificador Qwen | Hugging Face, MLX | Conversion a MLX de tencent/AuK; RTF 0,89 en M5 Max |
+| tencent/AuK (original) | 1,5B | no disponible | MIT (DiT/VAE); mismas restricciones de codificador | Hugging Face, PyTorch | Implementacion de referencia en fp32 |
 | vanch007/mlx-AuK | 1,5B | no disponible | no disponible | GitHub, MLX | Port alternativo a Apple Silicon; sin metricas publicadas en esta busqueda |
-| mlx-community/Qwen2.5-Omni-3B-Thinker-bf16 | ~3B | no disponible | Qwen Research License (no comercial) | HuggingFace, MLX | Dependencia de AuK, no alternativa funcional |
+| mlx-community/Qwen2.5-Omni-3B-Thinker-bf16 | ~3B | no disponible | Qwen Research License (no comercial) | Hugging Face, MLX | Dependencia de AuK, no alternativa funcional |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ No se dispone de datos verificados de benchmarks de otros modelos de edicion de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mlx-community/AuK-bf16
+- Repositorio en Hugging Face: https://huggingface.co/mlx-community/AuK-bf16
 - Modelo original: https://huggingface.co/tencent/AuK
 - Informe tecnico (arXiv): https://arxiv.org/abs/2609.08936
 - Codigo original de Tencent: https://github.com/Tencent-Hunyuan/AuK

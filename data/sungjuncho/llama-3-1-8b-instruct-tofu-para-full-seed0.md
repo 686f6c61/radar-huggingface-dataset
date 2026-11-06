@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-Instruct-TOFU-para-full-seed0 es un ajuste fino completo (full fine-tune) del modelo meta-llama/Llama-3.1-8B-Instruct publicado por el usuario sungjuncho en HuggingFace. No se trata de un modelo de propósito general nuevo, sino de un artefacto de investigación orientado al estudio del *unlearning* (desaprendizaje) y del *untraining* (desentrenamiento) en modelos de lenguaje. El modelo se entrena sobre el conjunto de datos TOFU-para, una variante corregida del benchmark TOFU (Task of Fictitious Unlearning) en la que se han corregido erratas en los nombres y se han añadido cinco versiones parafraseadas de cada par pregunta-respuesta verificadas factualmente.
+Llama-3.1-8B-Instruct-TOFU-para-full-seed0 es un ajuste fino completo (full fine-tune) del modelo meta-llama/Llama-3.1-8B-Instruct publicado por el usuario sungjuncho en Hugging Face. No se trata de un modelo de propósito general nuevo, sino de un artefacto de investigación orientado al estudio del *unlearning* (desaprendizaje) y del *untraining* (desentrenamiento) en modelos de lenguaje. El modelo se entrena sobre el conjunto de datos TOFU-para, una variante corregida del benchmark TOFU (Task of Fictitious Unlearning) en la que se han corregido erratas en los nombres y se han añadido cinco versiones parafraseadas de cada par pregunta-respuesta verificadas factualmente.
 
 La relevancia de este checkpoint es metodológica: sirve como control o línea base en la colección TOFU-para, que distingue entre eliminar las muestras concretas que recibió un método de desaprendizaje (untraining) y eliminar el conocimiento subyacente que el modelo también aprendió en otras formulaciones (unlearning). El autor indica que este ajuste reproduce de cerca el `tofu_Llama-3.1-8B-Instruct_full` publicado por open-unlearning (probabilidad de respuesta Q-A en el conjunto forget de 0,997 frente a 0,991; utilidad del modelo 0,634 frente a 0,628).
 
@@ -67,9 +67,9 @@ No se han publicado resultados adicionales de benchmarks (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-full-seed0 | 8,03 B | no disponible | Control de unlearning (TOFU-para) | llama3.1 | HuggingFace, 236 descargas |
+| sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-full-seed0 | 8,03 B | no disponible | Control de unlearning (TOFU-para) | llama3.1 | Hugging Face, 236 descargas |
 | open-unlearning `tofu_Llama-3.1-8B-Instruct_full` | ~8 B | no disponible | Control de unlearning (TOFU original) | llama3.1 | Referencia publicada por open-unlearning |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128 K (modelo base) | Asistente general | llama3.1 | HuggingFace, ampliamente disponible |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128 K (modelo base) | Asistente general | llama3.1 | Hugging Face, ampliamente disponible |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se han publicado resultados adicionales de benchmarks (MMLU, HumanEval, GSM8K
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-full-seed0
+- Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-full-seed0
 - Dataset TOFU-para: https://huggingface.co/datasets/sungjuncho/TOFU-para
 - Colección TOFU-para (untraining vs unlearning): https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4
 - Repositorio open-unlearning: https://github.com/locuslab/open-unlearning

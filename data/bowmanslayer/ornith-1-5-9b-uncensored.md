@@ -4,7 +4,7 @@
 
 Ornith-1.5-9B-Uncensored es un finetune del modelo multimodal Ornith-1.5-9B, desarrollado por el usuario bowmanslayer, que aplica la técnica de ablación direccional (también conocida como "abliteration") para eliminar la alineación de seguridad del modelo original. El modelo base, Ornith-1.5-9B, es un descendiente post-entrenado de Qwen3.5-9B con un refuerzo sustancial de seguridad, y este finetune busca eliminar los rechazos a peticiones dañinas manteniendo las capacidades generales. Según el autor, la ablación se aplica a 64 tensores de escritura residual en las 32 capas, excluyendo `embed_tokens`, lo que reduce la tasa de rechazo de 72-87% a 0/23 en un conjunto de prueba de 23 prompts adversarios, con una pérdida de capacidad media de solo 0,59 puntos porcentuales en 11 benchmarks.
 
-El modelo es multimodal (image-text-to-text), soporta inglés y chino, y se distribuye bajo licencia Apache-2.0. El repositorio en HuggingFace tiene un tamaño de 4,9 GB, aunque el README indica que el peso de referencia en bf16 ocupa aproximadamente 18 GB, lo que sugiere una posible discrepancia en el contenido del repositorio. No se han publicado datos sobre la longitud de contexto ni sobre el proceso de entrenamiento más allá de la técnica de ablación.
+El modelo es multimodal (image-text-to-text), soporta inglés y chino, y se distribuye bajo licencia Apache-2.0. El repositorio en Hugging Face tiene un tamaño de 4,9 GB, aunque el README indica que el peso de referencia en bf16 ocupa aproximadamente 18 GB, lo que sugiere una posible discrepancia en el contenido del repositorio. No se han publicado datos sobre la longitud de contexto ni sobre el proceso de entrenamiento más allá de la técnica de ablación.
 
 ## Especificaciones tecnicas
 

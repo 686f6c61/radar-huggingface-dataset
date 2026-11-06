@@ -4,7 +4,7 @@
 
 EvoVLA-v2 es un modelo de visión-lenguaje-acción (VLA) diseñado para manipulación robótica de largo horizonte, desarrollado por ZetingLiu y colaboradores. El modelo aborda el problema de la "alucinación de etapas" (stage hallucination), un fenómeno en el que los agentes explotan señales de evaluación gruesas para aparentar progreso sin completar realmente las tareas. Para ello, incorpora un camino lateral de aprendizaje por refuerzo autosupervisado (self-supervised RL, SSRL) que se post-entrena sobre políticas VLA existentes, como las basadas en π₀.₅, utilizando el framework RLinf.
 
-El repositorio de HuggingFace `zetliu2001/EvoVLA-v2` no contiene el modelo completo, sino únicamente los assets auxiliares necesarios para la rama contrastiva del SSRL: un espejo de los pesos de R3M con backbone ResNet18 (originalmente distribuidos por Facebook Research). Estos pesos se usan como backbone visual congelado en la rama `r_con`. La arquitectura completa del VLA, sus parámetros y su contexto de entrenamiento no se documentan en este repositorio; la información principal proviene del paper de EvoVLA (v1) y del repositorio de GitHub asociado.
+El repositorio de Hugging Face `zetliu2001/EvoVLA-v2` no contiene el modelo completo, sino únicamente los assets auxiliares necesarios para la rama contrastiva del SSRL: un espejo de los pesos de R3M con backbone ResNet18 (originalmente distribuidos por Facebook Research). Estos pesos se usan como backbone visual congelado en la rama `r_con`. La arquitectura completa del VLA, sus parámetros y su contexto de entrenamiento no se documentan en este repositorio; la información principal proviene del paper de EvoVLA (v1) y del repositorio de GitHub asociado.
 
 La relevancia actual de EvoVLA-v2 radica en su enfoque para mejorar la robustez en tareas robóticas de múltiples pasos, combinando recompensas alineadas por etapas, exploración basada en poses y memoria selectiva. Aunque el repositorio es solo un conjunto de assets, sirve como componente de un sistema más amplio que ha demostrado mejoras sustanciales en entornos como Discoverse-L y en transferencia sim2real.
 
@@ -25,7 +25,7 @@ La relevancia actual de EvoVLA-v2 radica en su enfoque para mejorar la robustez 
 
 Según el paper de EvoVLA (arXiv:2511.16166), el modelo base es un VLA que se post-entrena mediante un mecanismo de SSRL. La arquitectura completa no se detalla en la información disponible, pero se sabe que utiliza un backbone visual congelado R3M (ResNet18) en la rama contrastiva del SSRL, cuyos pesos se distribuyen en este repositorio. El entrenamiento se realiza sobre políticas VLA previamente ajustadas con SFT (como el checkpoint π₀.₅ CALVIN ABC-D SFT de RLinf) y emplea recompensas alineadas por etapas para mitigar la alucinación de etapas, junto con exploración basada en poses (pose-grounded exploration) y memoria selectiva.
 
-No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. El repositorio de HuggingFace solo proporciona los pesos de R3M, que se cargan mediante el paquete `r3m` desde `~/.r3m/r3m_18/`.
+No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. El repositorio de Hugging Face solo proporciona los pesos de R3M, que se cargan mediante el paquete `r3m` desde `~/.r3m/r3m_18/`.
 
 ## Capacidades
 
@@ -62,12 +62,12 @@ No se dispone de información suficiente para establecer una comparativa riguros
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | EvoVLA-v2 (assets) | no disponible | no disponible | MIT | Repositorio de assets, modelo completo en GitHub |
-| π₀.₅ (base) | no disponible | no disponible | no disponible | Checkpoints SFT en HuggingFace (RLinf) |
-| OpenVLA | 7B | no disponible | MIT | Modelo completo en HuggingFace |
+| π₀.₅ (base) | no disponible | no disponible | no disponible | Checkpoints SFT en Hugging Face (RLinf) |
+| OpenVLA | 7B | no disponible | MIT | Modelo completo en Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Este repositorio de HuggingFace contiene únicamente los pesos de R3M (ResNet18) y su configuración; no incluye el modelo VLA completo ni los scripts de entrenamiento. Para usar EvoVLA-v2 es necesario acceder al repositorio de GitHub y a los checkpoints de RLinf.
+- Este repositorio de Hugging Face contiene únicamente los pesos de R3M (ResNet18) y su configuración; no incluye el modelo VLA completo ni los scripts de entrenamiento. Para usar EvoVLA-v2 es necesario acceder al repositorio de GitHub y a los checkpoints de RLinf.
 - No se documentan los sesgos potenciales del modelo. Al estar entrenado principalmente en entornos robóticos simulados, puede tener un rendimiento degradado en escenarios con distribuciones de datos muy diferentes.
 - Riesgo de alucinación: aunque el diseño mitiga la alucinación de etapas, no se garantiza su eliminación completa en todos los entornos.
 - Limitaciones de idioma: no se especifican los idiomas soportados para las instrucciones; probablemente esté limitado a inglés u otros idiomas presentes en los datos de entrenamiento.
@@ -76,7 +76,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zetliu2001/EvoVLA-v2
+- Repositorio Hugging Face: https://huggingface.co/zetliu2001/EvoVLA-v2
 - Repositorio GitHub: https://github.com/ZetingLiu/EvoVLA-v2
 - Paper (arXiv): https://arxiv.org/abs/2511.16166
 - Página del proyecto: https://aigeeksgroup.github.io/EvoVLA/

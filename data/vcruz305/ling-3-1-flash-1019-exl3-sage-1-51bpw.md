@@ -6,7 +6,7 @@ Esta ficha corresponde a una cuantización comunitaria del modelo Ling-3.1-flash
 
 El modelo base, inclusionAI/Ling-3.1-flash-1019, es un modelo de generación de texto conversacional con licencia MIT, lo que permite su uso comercial sin restricciones relevantes. La relevancia de esta cuantización radica en que permite aproximar un modelo de decenas de miles de millones de parámetros en GPUs de gama alta de consumo, si bien a 1,51 bpw la degradación de calidad puede ser significativa y debe evaluarse caso por caso.
 
-Cabe destacar que el repositorio está marcado como restringido (gated) en HuggingFace: para descargarlo es necesario aceptar las condiciones de acceso indicadas en la página del modelo. Los datos de descargas son muy escasos (3 descargas y 1 like en el momento de redactar la ficha), lo que indica adopción marginal y poca comunidad de soporte.
+Cabe destacar que el repositorio está marcado como restringido (gated) en Hugging Face: para descargarlo es necesario aceptar las condiciones de acceso indicadas en la página del modelo. Los datos de descargas son muy escasos (3 descargas y 1 like en el momento de redactar la ficha), lo que indica adopción marginal y poca comunidad de soporte.
 
 ## Especificaciones tecnicas
 
@@ -35,7 +35,7 @@ Sobre el proceso de entrenamiento del modelo base (número de tokens, composici�
 - Compatibilidad con ExLlamaV3: pensado para inferencia local de alto rendimiento mediante la libreria exllamav3.
 - Capacidades de codigo, matematicas, razonamiento, vision o audio: no disponible en la informacion proporcionada.
 - Soporte de tool calling / function calling: no disponible.
-- Capacidades multilingues: no disponible (HuggingFace no lista idiomas para este repositorio).
+- Capacidades multilingues: no disponible (Hugging Face no lista idiomas para este repositorio).
 
 ## Casos de uso
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Adema
 
 - Cuantizacion extrema: a 1,51 bpw la perdida de calidad respecto al modelo base puede ser sustancial, especialmente en razonamiento, matematicas y codigo. Se recomienda validar contra el modelo base antes de usar en produccion.
 - Adopcion marginal: con 3 descargas registradas, apenas hay comunidad, reportes de errores ni soporte; los problemas de compatibilidad podrian no tener solucion rapida.
-- Repositorio restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar, lo que anade friccion al despliegue.
+- Repositorio restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar, lo que anade friccion al despliegue.
 - Formato exclusivo EXL3: requiere ExLlamaV3; no es compatible de forma directa con vLLM, llama.cpp, Ollama o TGI.
 - Datos incompletos del modelo base: longitud de contexto, parametros activos, idiomas soportados y benchmarks no estan disponibles en la informacion proporcionada, lo que dificulta la evaluacion previa.
-- custom_code: el repositorio marca custom_code, lo que implica ejecutar codigo no estandar de HuggingFace; revisar el codigo antes de ejecutarlo en entornos sensibles.
+- custom_code: el repositorio marca custom_code, lo que implica ejecutar codigo no estandar de Hugging Face; revisar el codigo antes de ejecutarlo en entornos sensibles.
 - Sesgos y riesgo de alucinacion: no hay documentacion especifica disponible; como todo LLM, puede generar contenido incorrecto o sesgado sin garantias de mitigacion documentadas.
 - Licencia: MIT, sin restricciones de uso comercial relevantes, pero la responsabilidad del cumplimiento normativo recae en el desplegador.
 

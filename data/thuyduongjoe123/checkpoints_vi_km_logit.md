@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `thuyduongjoe123/checkpoints_vi_km_logit` es un checkpoint de generación de texto publicado en HuggingFace por el usuario thuyduongjoe123. Se trata de un modelo de aproximadamente 1.720 millones de parámetros (1,72 B) almacenado en formato safetensors, con un repositorio de 3,5 GB, lo que resulta coherente con pesos en bf16 o fp16. La etiqueta `qwen3` asociada al repositorio apunta a que deriva de la familia Qwen3, aunque la model card no confirma oficialmente la arquitectura base ni el proceso de entrenamiento.
+El modelo `thuyduongjoe123/checkpoints_vi_km_logit` es un checkpoint de generación de texto publicado en Hugging Face por el usuario thuyduongjoe123. Se trata de un modelo de aproximadamente 1.720 millones de parámetros (1,72 B) almacenado en formato safetensors, con un repositorio de 3,5 GB, lo que resulta coherente con pesos en bf16 o fp16. La etiqueta `qwen3` asociada al repositorio apunta a que deriva de la familia Qwen3, aunque la model card no confirma oficialmente la arquitectura base ni el proceso de entrenamiento.
 
 El nombre del repositorio, `checkpoints_vi_km_logit`, sugiere un checkpoint intermedio o experimental asociado a logits, posiblemente vinculado a los idiomas vietnamita y jemer (códigos ISO `vi` y `km`). No obstante, esta interpretación es una inferencia a partir del identificador y no está respaldada por documentación del autor.
 
-La model card es la plantilla automática de HuggingFace, con todos los campos marcados como "[More Information Needed]". No hay licencia declarada, ni idiomas especificados, ni datos de entrenamiento, ni resultados de evaluación. La relevancia de esta ficha es, por tanto, fundamentalmente cautelar: sirve para documentar qué se sabe y qué no se sabe antes de considerar su uso en cualquier proyecto.
+La model card es la plantilla automática de Hugging Face, con todos los campos marcados como "[More Information Needed]". No hay licencia declarada, ni idiomas especificados, ni datos de entrenamiento, ni resultados de evaluación. La relevancia de esta ficha es, por tanto, fundamentalmente cautelar: sirve para documentar qué se sabe y qué no se sabe antes de considerar su uso en cualquier proyecto.
 
 ## Especificaciones técnicas
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que no es posi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thuyduongjoe123/checkpoints_vi_km_logit
+- Repositorio en Hugging Face: https://huggingface.co/thuyduongjoe123/checkpoints_vi_km_logit
 - Referencia al calculador de impacto ambiental citada en la plantilla del repositorio: https://mlco2.github.io/impact
 - Artículo asociado a dicha referencia (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - No se han encontrado papers, blogs, repositorios de código ni demos específicos de este modelo en la búsqueda web realizada.

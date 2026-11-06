@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune de `unsloth/mistral-7b-instruct-v0.2-bnb-4bit`, realizado por el usuario TesNik369, que ha entrenado el modelo base de Mistral 7B Instruct v0.2 con cuantización de 4 bits mediante la librería Unsloth y la biblioteca TRL de HuggingFace. El nombre del repositorio sugiere un ajuste orientado a tareas de pregunta-respuesta (posiblemente sobre un dataset tipo TriviaQA) durante tres épocas, aunque esta información no está confirmada en la documentación publicada.
+Este modelo es un fine-tune de `unsloth/mistral-7b-instruct-v0.2-bnb-4bit`, realizado por el usuario TesNik369, que ha entrenado el modelo base de Mistral 7B Instruct v0.2 con cuantización de 4 bits mediante la librería Unsloth y la biblioteca TRL de Hugging Face. El nombre del repositorio sugiere un ajuste orientado a tareas de pregunta-respuesta (posiblemente sobre un dataset tipo TriviaQA) durante tres épocas, aunque esta información no está confirmada en la documentación publicada.
 
 El modelo conserva la arquitectura transformer decoder-only de Mistral 7B, con aproximadamente 7,3 mil millones de parámetros y una ventana de contexto de 32 768 tokens. Al estar cuantizado en 4 bits, ocupa unos 4,9 GB en disco, lo que facilita su ejecución en hardware de consumo. Su licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su bajo coste de inferencia y su especial
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Mistral 7B Instruct v0.2, un transformer autoregresivo con atencion por ventana deslizante (sliding window attention) y atencion por grupos de consultas (grouped query attention, GQA), lo que reduce el coste computacional en inferencia. El fine-tune se realizo con la libreria Unsloth, que optimiza el entrenamiento mediante kernels personalizados y reduccion de memoria, junto con TRL (Transformer Reinforcement Learning) de HuggingFace. El proceso de ajuste se aplico sobre una version ya cuantizada en 4 bits, lo que implica un entrenamiento con cuantificacion consciente (QLoRA). No se han publicado detalles sobre el dataset exacto, el numero de tokens de entrenamiento ni si se aplicaron tecnicas como RLHF o DPO; el nombre "tqa_tuned_epoch3" sugiere tres epocas sobre un corpus de preguntas y respuestas, pero no es verificable.
+El modelo base es Mistral 7B Instruct v0.2, un transformer autoregresivo con atencion por ventana deslizante (sliding window attention) y atencion por grupos de consultas (grouped query attention, GQA), lo que reduce el coste computacional en inferencia. El fine-tune se realizo con la libreria Unsloth, que optimiza el entrenamiento mediante kernels personalizados y reduccion de memoria, junto con TRL (Transformer Reinforcement Learning) de Hugging Face. El proceso de ajuste se aplico sobre una version ya cuantizada en 4 bits, lo que implica un entrenamiento con cuantificacion consciente (QLoRA). No se han publicado detalles sobre el dataset exacto, el numero de tokens de entrenamiento ni si se aplicaron tecnicas como RLHF o DPO; el nombre "tqa_tuned_epoch3" sugiere tres epocas sobre un corpus de preguntas y respuestas, pero no es verificable.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ La comparativa se basa en caracteristicas del modelo base; el rendimiento real d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TesNik369/mistral-7b-instruct-v0.2-bnb-4bit_tqa_tuned_epoch3
+- Repositorio Hugging Face: https://huggingface.co/TesNik369/mistral-7b-instruct-v0.2-bnb-4bit_tqa_tuned_epoch3
 - Modelo base: https://huggingface.co/unsloth/mistral-7b-instruct-v0.2-bnb-4bit
 - Libreria Unsloth: https://github.com/unslothai/unsloth
 - Pagina de Mistral AI (modelo original): https://mistral.ai/

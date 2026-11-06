@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Hydrogen-1.0 es un modelo de generacion de texto desarrollado por deep-principle, publicado en HuggingFace como un fine-tuning del modelo base zai-org/GLM-5.3. Se distribuye con licencia MIT y en formato bf16, y esta etiquetado especificamente para el dominio cientifico (tag "science"), lo que sugiere que su ajuste fino esta orientado a tareas de investigacion, redaccion tecnica o razonamiento cientifico. El acceso esta restringido (gated): es necesario aceptar las condiciones en la pagina de HuggingFace antes de poder descargar los pesos.
+Hydrogen-1.0 es un modelo de generacion de texto desarrollado por deep-principle, publicado en Hugging Face como un fine-tuning del modelo base zai-org/GLM-5.3. Se distribuye con licencia MIT y en formato bf16, y esta etiquetado especificamente para el dominio cientifico (tag "science"), lo que sugiere que su ajuste fino esta orientado a tareas de investigacion, redaccion tecnica o razonamiento cientifico. El acceso esta restringido (gated): es necesario aceptar las condiciones en la pagina de Hugging Face antes de poder descargar los pesos.
 
-El modelo hereda la arquitectura y las capacidades del GLM-5.3 de Zhipu AI (zai-org), sobre el que se aplica un fine-tune del que no se han publicado detalles en la informacion disponible. No se especifican el numero de parametros, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento utilizados en el ajuste. La ficha de HuggingFace no incluye model card con benchmarks ni notas tecnicas.
+El modelo hereda la arquitectura y las capacidades del GLM-5.3 de Zhipu AI (zai-org), sobre el que se aplica un fine-tune del que no se han publicado detalles en la informacion disponible. No se especifican el numero de parametros, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento utilizados en el ajuste. La ficha de Hugging Face no incluye model card con benchmarks ni notas tecnicas.
 
 Su relevancia actual es limitada pero concreta: se trata de una publicacion muy reciente (creada el 31 de octubre de 2026 y actualizada el 1 de noviembre de 2026) con cero descargas y cero likes en el momento de redactar esta ficha, lo que indica que aun no ha sido validada por la comunidad. Resulta de interes para quienes quieran evaluar fine-tunes cientificos sobre GLM-5.3 con una licencia permisiva (MIT) y un formato de pesos estandar (bf16).
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 ## Limitaciones y advertencias
 
 - Ausencia total de model card, benchmarks y documentacion tecnica: no es posible evaluar su calidad frente al modelo base ni frente a alternativas.
-- Cero descargas y cero likes en HuggingFace: sin validacion de la comunidad ni evidencia de uso en produccion.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion al despliegue automatizado.
+- Cero descargas y cero likes en Hugging Face: sin validacion de la comunidad ni evidencia de uso en produccion.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion al despliegue automatizado.
 - Riesgo de alucinacion no cuantificado; al ser un fine-tune cientifico, el riesgo de generar referencias o datos inexactos es especialmente relevante y debe mitigarse con verificacion humana.
 - Sesgos desconocidos: no se documenta la composicion del dataset de ajuste ni posibles sesgos introducidos.
 - Idiomas soportados no especificados: no se puede garantizar un rendimiento adecuado fuera del ingles o del chino (idiomas habituales del base GLM).
@@ -78,6 +78,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deep-principle/Hydrogen-1.0
+- Hugging Face: https://huggingface.co/deep-principle/Hydrogen-1.0
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

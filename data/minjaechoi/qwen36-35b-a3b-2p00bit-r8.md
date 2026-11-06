@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B 2.00-bit routed experts (r8) es un checkpoint de investigación publicado por el usuario minjaechoi en HuggingFace. Se trata de una variante cuantizada del modelo base Qwen/Qwen3.6-35B-A3B, en la que únicamente los expertos enrutados de la arquitectura Mixture-of-Experts han sido comprimidos a una media de 2,00 bits, mientras que el resto de pesos se mantiene en BF16. El identificador interno del experimento es r8.
+Qwen3.6-35B-A3B 2.00-bit routed experts (r8) es un checkpoint de investigación publicado por el usuario minjaechoi en Hugging Face. Se trata de una variante cuantizada del modelo base Qwen/Qwen3.6-35B-A3B, en la que únicamente los expertos enrutados de la arquitectura Mixture-of-Experts han sido comprimidos a una media de 2,00 bits, mientras que el resto de pesos se mantiene en BF16. El identificador interno del experimento es r8.
 
 El modelo conserva el pipeline de text-generation y las etiquetas del modelo base, incluyendo image-text-to-text, qwen3_5_moe y conversational. El repositorio ocupa 70,2 GB y contiene 35.107.181.936 parámetros totales según los tensores safetensors. Todos los pesos se almacenan ya dequantizados en tensores BF16, de modo que cargan con transformers estándar y con vLLM sin necesidad de kernels de cuantización específicos.
 
@@ -61,15 +61,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: al almacenarse los pesos en BF16, el modelo requiere aproximadamente 70,2 GB solo para los pesos (35.107.181.936 parametros x 2 bytes), mas la memoria de la cache KV. La cuantizacion a 2 bits de los expertos no reduce este requisito porque los tensores se guardan ya dequantizados.
 - GPU recomendadas: una GPU de 80 GB (A100 80 GB o H100 80 GB) es el punto de partida realista para una unica tarjeta. Para configuraciones multi-GPU, dos o mas aceleradores con tensor parallelism.
 - GPU de consumo: no cabe en GPU de consumo de 24 GB (RTX 4090, RTX 3090) ni en una unica RTX 6000 Ada de 48 GB, dado el tamano de los pesos en BF16.
-- Opciones de despliegue: transformers y vLLM estan confirmados por la model card; la etiqueta endpoints_compatible sugiere compatibilidad con HuggingFace Inference Endpoints. No se publican pesos GGUF, por lo que llama.cpp y Ollama no son aplicables sin conversion previa. TGI no esta confirmado.
+- Opciones de despliegue: transformers y vLLM estan confirmados por la model card; la etiqueta endpoints_compatible sugiere compatibilidad con Hugging Face Inference Endpoints. No se publican pesos GGUF, por lo que llama.cpp y Ollama no son aplicables sin conversion previa. TGI no esta confirmado.
 - Latencia y throughput estimados: no disponibles. Como referencia cualitativa, al tratarse de un MoE con un subconjunto reducido de parametros activos, el coste de decodificacion tiende a estar dominado por el ancho de banda de memoria (carga de los 70,2 GB de pesos) mas que por el computo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros totales | Parametros activos | Formato de pesos | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| minjaechoi/qwen36-35b-a3b-2p00bit-r8 | 35.107.181.936 | No confirmado (A3B) | safetensors (BF16 dequantizado) | Expertos enrutados a 2,00 bits; resto BF16 | no disponible | Publico en HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Ninguna (BF16 de referencia) | no disponible en la informacion proporcionada | Publico en HuggingFace |
+| minjaechoi/qwen36-35b-a3b-2p00bit-r8 | 35.107.181.936 | No confirmado (A3B) | safetensors (BF16 dequantizado) | Expertos enrutados a 2,00 bits; resto BF16 | no disponible | Publico en Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Ninguna (BF16 de referencia) | no disponible en la informacion proporcionada | Publico en Hugging Face |
 
 No se dispone de datos de otros checkpoints comparables de la misma categoria en la informacion proporcionada, por lo que la comparativa se limita al modelo base declarado.
 
@@ -88,6 +88,6 @@ No se dispone de datos de otros checkpoints comparables de la misma categoria en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p00bit-r8
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p00bit-r8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Las busquedas devolvieron unicamente paginas de ayuda de Google Traduccion, sin relacion con este checkpoint.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-vit-beans-classifier es un modelo de clasificacion de imagenes publicado por el usuario MathisKhan en HuggingFace. Se trata de un fine-tuning de google/vit-base-patch16-224-in21k, un Vision Transformer de tipo base con parches de 16x16 y resolucion de entrada de 224x224 pixeles. El modelo resultante tiene 85.800.963 parametros (aproximadamente 86 millones) y un peso de repositorio de 1,4 GB, coherente con pesos en fp32.
+vit-beans-classifier es un modelo de clasificacion de imagenes publicado por el usuario MathisKhan en Hugging Face. Se trata de un fine-tuning de google/vit-base-patch16-224-in21k, un Vision Transformer de tipo base con parches de 16x16 y resolucion de entrada de 224x224 pixeles. El modelo resultante tiene 85.800.963 parametros (aproximadamente 86 millones) y un peso de repositorio de 1,4 GB, coherente con pesos en fp32.
 
-El modelo se distribuye bajo licencia Apache-2.0, con pesos en formato safetensors y compatibilidad con la libreria transformers (pipeline `image-classification`). La model card fue generada automaticamente por el Trainer de HuggingFace e indica que el entrenamiento se realizo sobre un dataset no documentado ("on an unknown dataset"), con 3 epocas, learning rate 5e-05, batch size de 16 y optimizador AdamW con betas (0.9, 0.999). No se especifica el numero de clases, las etiquetas ni la composicion del conjunto de datos.
+El modelo se distribuye bajo licencia Apache-2.0, con pesos en formato safetensors y compatibilidad con la libreria transformers (pipeline `image-classification`). La model card fue generada automaticamente por el Trainer de Hugging Face e indica que el entrenamiento se realizo sobre un dataset no documentado ("on an unknown dataset"), con 3 epocas, learning rate 5e-05, batch size de 16 y optimizador AdamW con betas (0.9, 0.999). No se especifica el numero de clases, las etiquetas ni la composicion del conjunto de datos.
 
 Su relevancia es limitada: es un modelo de nicho, sin descargas ni likes en el momento de la consulta, sin resultados en el model-index oficial y sin documentacion de uso previsto. Resulta util como ejemplo reproducible de fine-tuning de ViT con `Trainer` y como posible clasificador de hojas de judia si se confirma esa tarea (el nombre "beans" lo sugiere, pero la model card no lo confirma en ningun momento).
 
@@ -98,10 +98,10 @@ La accuracy final reportada (0,9609) corresponde a la evaluacion al terminar el 
 
 | Modelo | Parametros | Tarea | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MathisKhan/vit-beans-classifier | 85.800.963 | Clasificacion de imagenes (clases no documentadas) | 224x224 px | Apache-2.0 | HuggingFace, transformers |
-| google/vit-base-patch16-224-in21k (modelo base) | ~86 millones (referencia general, no de la informacion proporcionada) | Preentrenamiento en ImageNet-21k; requiere cabecera para clasificar | 224x224 px | Apache-2.0 | HuggingFace, transformers |
-| google/vit-base-patch16-224 | ~86 millones (referencia general) | Clasificacion en ImageNet-1k (1000 clases) | 224x224 px | Apache-2.0 | HuggingFace, transformers |
-| microsoft/resnet-50 | ~25,6 millones (referencia general) | Clasificacion en ImageNet-1k | 224x224 px | MIT (referencia general) | HuggingFace, transformers |
+| MathisKhan/vit-beans-classifier | 85.800.963 | Clasificacion de imagenes (clases no documentadas) | 224x224 px | Apache-2.0 | Hugging Face, transformers |
+| google/vit-base-patch16-224-in21k (modelo base) | ~86 millones (referencia general, no de la informacion proporcionada) | Preentrenamiento en ImageNet-21k; requiere cabecera para clasificar | 224x224 px | Apache-2.0 | Hugging Face, transformers |
+| google/vit-base-patch16-224 | ~86 millones (referencia general) | Clasificacion en ImageNet-1k (1000 clases) | 224x224 px | Apache-2.0 | Hugging Face, transformers |
+| microsoft/resnet-50 | ~25,6 millones (referencia general) | Clasificacion en ImageNet-1k | 224x224 px | MIT (referencia general) | Hugging Face, transformers |
 
 Advertencia: los parametros y licencias de los modelos comparativos son valores de referencia general y no proceden de la informacion proporcionada en esta ficha; deben verificarse en sus respectivas paginas antes de usarlos en una decision tecnica. No hay datos de benchmark comparativos disponibles, porque el model-index de vit-beans-classifier esta vacio y la model card no reporta evaluacion en ImageNet ni en ningun otro conjunto publico. La comparacion solo puede hacerse, por tanto, en terminos de tamano, licencia y disponibilidad.
 
@@ -121,7 +121,7 @@ Advertencia: los parametros y licencias de los modelos comparativos son valores 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MathisKhan/vit-beans-classifier
+- Modelo en Hugging Face: https://huggingface.co/MathisKhan/vit-beans-classifier
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224-in21k
 - Paper de referencia de ViT (no citado en la model card, enlace de contexto): https://arxiv.org/abs/2010.11929
 - Repositorio de transformers: https://github.com/huggingface/transformers

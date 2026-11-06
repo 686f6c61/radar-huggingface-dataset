@@ -90,7 +90,7 @@ La información proporcionada no documenta otros bundles WebAssembly equivalente
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fusorlabs/d1-2b-web
+- Hugging Face: https://huggingface.co/fusorlabs/d1-2b-web
 - Modelo base: https://huggingface.co/LiquidAI/d1-2B
 - Runtime fusor-ai: https://github.com/fusor-rs/fusor-ai
 - Runtime liquidai-lmf3-wasm: https://github.com/fusor-rs/liquidai-lmf3-wasm

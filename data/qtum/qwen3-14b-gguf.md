@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qtum/Qwen3-14B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/qtum/Qwen3-14B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - LM Studio: https://lmstudio.ai/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Arc42/pronmaster es un repositorio de modelo publicado en HuggingFace por el usuario Arc42 el 3 de noviembre de 2026. La model card asociada esta practicamente vacia: unicamente contiene el campo `license: unknown`, sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso. El repositorio ocupa 263,5 GB, un tamano que sugiere pesos de gran magnitud (compatible con un modelo de decenas o cientos de miles de millones de parametros en precision completa, o con un conjunto de checkpoints y ficheros auxiliares), pero no hay informacion publica que permita confirmarlo.
+Arc42/pronmaster es un repositorio de modelo publicado en Hugging Face por el usuario Arc42 el 3 de noviembre de 2026. La model card asociada esta practicamente vacia: unicamente contiene el campo `license: unknown`, sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso. El repositorio ocupa 263,5 GB, un tamano que sugiere pesos de gran magnitud (compatible con un modelo de decenas o cientos de miles de millones de parametros en precision completa, o con un conjunto de checkpoints y ficheros auxiliares), pero no hay informacion publica que permita confirmarlo.
 
 No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni proceso de entrenamiento. Tampoco se han publicado resultados de benchmarks, demos ni documentacion tecnica complementaria. Cualquier evaluacion rigurosa del modelo requeriria inspeccionar directamente los ficheros del repositorio, algo que queda fuera del alcance de esta ficha.
 
@@ -75,5 +75,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Arc42/pronmaster
+- Repositorio en Hugging Face: https://huggingface.co/Arc42/pronmaster
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

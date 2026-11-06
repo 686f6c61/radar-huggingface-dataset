@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento ni de licencia concreta que permitan una c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p07bit-r64
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p07bit-r64
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Checkpoint hermano r55 (2,02 bits): https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p02bit-r55
 - Checkpoint hermano r46 (2,02 bits, pin): https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-pin-2p02bit-r46

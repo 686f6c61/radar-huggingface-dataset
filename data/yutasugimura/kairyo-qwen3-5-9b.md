@@ -83,9 +83,9 @@ El autor advierte de que el harness de evaluacion es propio y las cifras no son 
 
 | Modelo | Parametros | Contexto | GSM8K | MATH-500 | MMLU-Pro | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Kairyo-Qwen3.5-9B | 9,65B | 131.072 (evaluado) | 95,0 | 90,8 | 79,5 | Apache 2.0 | HuggingFace (safetensors + GGUF Q8_0) |
-| Qwen3.5-9B (base) | no disponible | no disponible | 77,6 | 70,4 | 74,0 | no disponible | HuggingFace |
-| Qwen3.8-27B (profesor) | no disponible | no disponible | 98,4 | 96,4 | 84,0 | no disponible | HuggingFace |
+| Kairyo-Qwen3.5-9B | 9,65B | 131.072 (evaluado) | 95,0 | 90,8 | 79,5 | Apache 2.0 | Hugging Face (safetensors + GGUF Q8_0) |
+| Qwen3.5-9B (base) | no disponible | no disponible | 77,6 | 70,4 | 74,0 | no disponible | Hugging Face |
+| Qwen3.8-27B (profesor) | no disponible | no disponible | 98,4 | 96,4 | 84,0 | no disponible | Hugging Face |
 
 Las cifras de los tres modelos proceden del mismo harness del autor, por lo que son comparables entre si pero no con informes oficiales de terceros. No se dispone de datos de otros modelos de tamano similar evaluados con la misma metodologia.
 
@@ -106,7 +106,7 @@ Las cifras de los tres modelos proceden del mismo harness del autor, por lo que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YutaSugimura/Kairyo-Qwen3.5-9B
+- Modelo en Hugging Face: https://huggingface.co/YutaSugimura/Kairyo-Qwen3.5-9B
 - Version GGUF: https://huggingface.co/YutaSugimura/Kairyo-Qwen3.5-9B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Profesor: https://huggingface.co/Qwen/Qwen3.8-27B

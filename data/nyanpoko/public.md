@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `nyanpoko/public` es un modelo publicado en HuggingFace por el usuario nyanpoko, cuya identidad real no se ha podido verificar mas alla de una cuenta en X (antes Twitter) con contenido en japones. La model card asociada esta practicamente vacia: unicamente contiene la linea `license: unknown`, sin descripcion, arquitectura, parametros ni instrucciones de uso.
+El repositorio `nyanpoko/public` es un modelo publicado en Hugging Face por el usuario nyanpoko, cuya identidad real no se ha podido verificar mas alla de una cuenta en X (antes Twitter) con contenido en japones. La model card asociada esta practicamente vacia: unicamente contiene la linea `license: unknown`, sin descripcion, arquitectura, parametros ni instrucciones de uso.
 
 El repositorio ocupa 35,9 GB, lo que sugiere que contiene pesos de un modelo de cierto tamano, pero no es posible determinar si se trata de un checkpoint de un modelo base, un fine-tuning, un conjunto de pesos en formato desconocido o incluso datos adjuntos. No se ha publicado informacion tecnica de ningun tipo, no hay pipeline declarado y el numero de descargas es cero. A fecha de redaccion de esta ficha, no es posible evaluar ni recomendar este modelo para ningun caso de uso.
 
@@ -54,6 +54,6 @@ No disponible. Al no conocerse la arquitectura ni la categoria del modelo, no es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nyanpoko/public
-- Perfil del autor en HuggingFace: https://huggingface.co/nyanpoko/models
+- Repositorio en Hugging Face: https://huggingface.co/nyanpoko/public
+- Perfil del autor en Hugging Face: https://huggingface.co/nyanpoko/models
 - Cuenta de X del autor: https://x.com/nyanpoko

@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Formato | Pasos típicos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SD-Turbo Q8_0 GGUF (este repo) | 1.303.598.228 | GGUF Q8_0 + f32 parcial | 1-4 | Stability AI Community License | HuggingFace, 63 descargas |
-| stabilityai/sd-turbo (original) | 1.303.598.228 (aprox.) | safetensors / diffusers | 1-4 | Stability AI Community License | HuggingFace, oficial de Stability AI |
-| SDXL-Turbo | no disponible en la información proporcionada | safetensors / diffusers | 1-4 | Stability AI Community License | HuggingFace, oficial de Stability AI |
-| Stable Diffusion 2.1 | no disponible en la información proporcionada | safetensors / diffusers | 20-50 | CreativeML Open RAIL++-M | HuggingFace, oficial de Stability AI |
+| SD-Turbo Q8_0 GGUF (este repo) | 1.303.598.228 | GGUF Q8_0 + f32 parcial | 1-4 | Stability AI Community License | Hugging Face, 63 descargas |
+| stabilityai/sd-turbo (original) | 1.303.598.228 (aprox.) | safetensors / diffusers | 1-4 | Stability AI Community License | Hugging Face, oficial de Stability AI |
+| SDXL-Turbo | no disponible en la información proporcionada | safetensors / diffusers | 1-4 | Stability AI Community License | Hugging Face, oficial de Stability AI |
+| Stable Diffusion 2.1 | no disponible en la información proporcionada | safetensors / diffusers | 20-50 | CreativeML Open RAIL++-M | Hugging Face, oficial de Stability AI |
 
 La comparativa se limita a modelos de la misma familia y licencia; no se dispone de datos de rendimiento comparado (FID, CLIP score) en la información proporcionada para establecer diferencias cuantitativas entre ellos.
 
@@ -83,7 +83,7 @@ La comparativa se limita a modelos de la misma familia y licencia; no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jmloperaa2830/tomi-sd-turbo-q8-gguf
+- Repositorio Hugging Face: https://huggingface.co/jmloperaa2830/tomi-sd-turbo-q8-gguf
 - Modelo base original: https://huggingface.co/stabilityai/sd-turbo
 - stable-diffusion.cpp (runtime): https://github.com/leejet/stable-diffusion.cpp
 - Licencia Stability AI Community License: incluida como `LICENSE.md` en el repositorio del modelo.

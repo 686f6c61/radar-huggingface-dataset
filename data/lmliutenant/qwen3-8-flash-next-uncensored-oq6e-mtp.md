@@ -110,7 +110,7 @@ La comparativa se limita a los builds citados por el propio autor en la model ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LMLiutenant/Qwen3.8-Flash-Next-Uncensored-oQ6e-mtp
+- Repositorio Hugging Face: https://huggingface.co/LMLiutenant/Qwen3.8-Flash-Next-Uncensored-oQ6e-mtp
 - Build companero oQ5e: https://huggingface.co/LMLiutenant/Qwen3.8-Flash-Next-Uncensored-oQ5e-mtp
 - Modelo base abliterado: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

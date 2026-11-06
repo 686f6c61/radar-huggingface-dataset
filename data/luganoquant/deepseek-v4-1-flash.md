@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) con procesamiento nativo de imagen y texto, publicado en HuggingFace a través del repositorio de terceros `luganoquant/DeepSeek-V4.1-Flash`. La model card describe un backbone de 552B parámetros y una ventana de contexto de hasta un millón de tokens, mientras que el recuento real de pesos en safetensors del repositorio asciende a 763.205.315.794 parámetros (763,2B), cifra que incluiría componentes adicionales como la memoria condicional Engram (196B). El repositorio ocupa 510,3 GB y usa la librería transformers con pesos en 8 bits (fp8).
+DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) con procesamiento nativo de imagen y texto, publicado en Hugging Face a través del repositorio de terceros `luganoquant/DeepSeek-V4.1-Flash`. La model card describe un backbone de 552B parámetros y una ventana de contexto de hasta un millón de tokens, mientras que el recuento real de pesos en safetensors del repositorio asciende a 763.205.315.794 parámetros (763,2B), cifra que incluiría componentes adicionales como la memoria condicional Engram (196B). El repositorio ocupa 510,3 GB y usa la librería transformers con pesos en 8 bits (fp8).
 
 Su aportación técnica principal es la compresión de la caché KV. Frente a DeepSeek-V4-Flash, reduce la caché KV global por token a 890 bytes (aproximadamente 1/4) y la caché KV persistente a cerca de 1/8, gracias a la combinación de la arquitectura Causal Encoder-Decoder (CED), la atención dispersa Compressed Sparse Attention 2 (CSA2) y el almacenamiento en FP4 de la KV principal. El resultado es un modelo que activa solo 8B parámetros por token en prefill y 16B en decode.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 - Memoria total recomendada: por encima de 1 TB de VRAM agregada para operar con margen (pesos, caché KV, activaciones y buffers de decodificación especulativa). Un nodo de 8×H200 (141 GB, 1.128 GB totales) o 16×H100 de 80 GB (1.280 GB) serían los mínimos razonables; 8×H100 (640 GB) no bastarían para los pesos.
 - Caché KV: 890 bytes por token implican aproximadamente 890 MB para un contexto de 1M tokens, además de la caché KV de ventana deslizante reconstruida bajo demanda mediante SWA Bounded Replay.
 - GPU de consumo: no cabe. El modelo no es ejecutable en una RTX 4090 (24 GB), ni siquiera repartido en una configuración de 4×RTX 4090 (96 GB), que seguiría muy por debajo de los requisitos de pesos.
-- Opciones de despliegue: transformers (librería declarada), y por el formato fp8 y el pipeline image-text-to-text, servidores de inferencia compatibles con fp8 como vLLM, SGLang o TGI. La etiqueta `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace. No se documenta soporte de llama.cpp, Ollama ni variantes GGUF en la información disponible.
+- Opciones de despliegue: transformers (librería declarada), y por el formato fp8 y el pipeline image-text-to-text, servidores de inferencia compatibles con fp8 como vLLM, SGLang o TGI. La etiqueta `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face. No se documenta soporte de llama.cpp, Ollama ni variantes GGUF en la información disponible.
 - Latencia y throughput: no disponibles. Como referencia de eficiencia, el modelo activa 8B parámetros por token en prefill y 16B en decode, lo que sitúa su coste de cómputo muy por debajo de lo habitual en un modelo de este tamaño total.
 
 ## Comparativa con modelos similares
@@ -98,11 +98,11 @@ Nota: los datos de DeepSeek-V4-Flash y DeepSeek-V1 solo se conocen a través de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/luganoquant/DeepSeek-V4.1-Flash
+- Repositorio en Hugging Face: https://huggingface.co/luganoquant/DeepSeek-V4.1-Flash
 - Informe técnico referenciado en la model card: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Página oficial de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organización de DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización de DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Cuenta de X (Twitter) de DeepSeek: https://twitter.com/deepseek_ai
 - Logotipo y recursos gráficos citados en la model card: https://github.com/deepseek-ai/DeepSeek-V2/blob/main/figures/logo.svg
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes sobre el modelo; los resultados devueltos corresponden a páginas sin relación con el tema.

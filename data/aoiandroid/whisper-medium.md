@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparado (WER) dentro de la informacion p
 - Licencia: Apache-2.0 permite uso comercial, pero debe conservarse la atribucion a los autores originales (OpenAI); el espejo lo declara explicitamente en su model card.
 - Fecha de creacion inusual: el repositorio figura creado el 2026-10-10, posterior a la fecha habitual de publicacion de la familia Whisper; se reporta tal cual, sin interpretacion adicional.
 - Sin senales de adopcion: 0 descargas y 0 likes en el momento de la consulta, lo que limita la evidencia de uso en comunidad.
-- No hay datos de pipeline declarados en la ficha de HuggingFace, por lo que la integracion debe configurarse manualmente.
+- No hay datos de pipeline declarados en la ficha de Hugging Face, por lo que la integracion debe configurarse manualmente.
 
 ## Enlaces
 

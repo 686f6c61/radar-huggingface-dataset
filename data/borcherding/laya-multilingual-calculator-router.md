@@ -94,8 +94,8 @@ No hay informacion disponible sobre modelos comparables de enrutado de decisione
 
 | Modelo | Parametros | Contexto | Exactitud en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Borcherding/laya-multilingual-calculator-router | 321.908.998 | no disponible | 0,89 (needs_calculation) / 0,88 (ambas preguntas) | apache-2.0 | HuggingFace |
-| convaiinnovations/laya (checkpoint `multilingual`) | no disponible | no disponible | 0,52 (needs_calculation) / 0,32 (ambas preguntas) | no disponible | HuggingFace |
+| Borcherding/laya-multilingual-calculator-router | 321.908.998 | no disponible | 0,89 (needs_calculation) / 0,88 (ambas preguntas) | apache-2.0 | Hugging Face |
+| convaiinnovations/laya (checkpoint `multilingual`) | no disponible | no disponible | 0,52 (needs_calculation) / 0,32 (ambas preguntas) | no disponible | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -113,7 +113,7 @@ No hay informacion disponible sobre modelos comparables de enrutado de decisione
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Borcherding/laya-multilingual-calculator-router
+- Modelo en Hugging Face: https://huggingface.co/Borcherding/laya-multilingual-calculator-router
 - Dataset de ajuste: https://huggingface.co/datasets/Borcherding/calculator-routing
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Unsloth (framework de entrenamiento): https://github.com/unslothai/unsloth

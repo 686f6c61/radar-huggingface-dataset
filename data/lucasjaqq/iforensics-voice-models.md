@@ -6,7 +6,7 @@ iForensics voice models es un repositorio de pesos publicado por el usuario Luca
 
 El componente de detección de deepfake se construye sobre WavLM-base-plus con el codificador congelado más una capa de pooling estadístico con atención (ASP), entrenado sobre el corpus completo ASVspoof5 (aproximadamente un millón de enunciados) durante 3 épocas, con recálculo del umbral de decisión sobre el mismo conjunto. El componente de verificación de hablante combina características fbank de 80 dimensiones con una arquitectura ECAPA-TDNN y ASP, entrenada sobre CN-Celeb 1 y 2 (2.993 hablantes, 650.000 enunciados) durante 8 épocas.
 
-La relevancia del paquete es práctica: ofrece checkpoints listos para integrar en sistemas de autenticación biométrica y detección de audio sintético, con métricas EER publicadas en la propia model card y con la particularidad de incluir los ficheros de configuración del modelo base de HuggingFace para permitir la carga sin conexión a la red. El repositorio está pensado como artefacto de despliegue de una aplicación mayor (`voice_analysis`), no como modelo autónomo con API de inferencia estandarizada.
+La relevancia del paquete es práctica: ofrece checkpoints listos para integrar en sistemas de autenticación biométrica y detección de audio sintético, con métricas EER publicadas en la propia model card y con la particularidad de incluir los ficheros de configuración del modelo base de Hugging Face para permitir la carga sin conexión a la red. El repositorio está pensado como artefacto de despliegue de una aplicación mayor (`voice_analysis`), no como modelo autónomo con API de inferencia estandarizada.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La relevancia del paquete es práctica: ofrece checkpoints listos para integrar 
 
 ## Arquitectura y entrenamiento
 
-El modelo de detección de deepfake (`full_data_weaker_aug_freeze_encoder_v3__cal_asvspoof5_full`) usa WavLM-base-plus como extractor de representaciones con el codificador congelado, seguido de una cabeza de pooling estadístico con atención (ASP). Se entrenó durante 3 épocas sobre el conjunto completo ASVspoof5, en torno a un millón de enunciados, y el umbral de decisión se recalibró sobre el mismo conjunto. El nombre del run sugiere una estrategia de aumento de datos más suave ("weaker_aug") y congelación del codificador ("freeze_encoder"). El paquete incluye el historial de entrenamiento, el log y los resultados de evaluación sobre FoR e In the Wild, además de los ficheros de configuración del modelo base de HuggingFace para carga offline.
+El modelo de detección de deepfake (`full_data_weaker_aug_freeze_encoder_v3__cal_asvspoof5_full`) usa WavLM-base-plus como extractor de representaciones con el codificador congelado, seguido de una cabeza de pooling estadístico con atención (ASP). Se entrenó durante 3 épocas sobre el conjunto completo ASVspoof5, en torno a un millón de enunciados, y el umbral de decisión se recalibró sobre el mismo conjunto. El nombre del run sugiere una estrategia de aumento de datos más suave ("weaker_aug") y congelación del codificador ("freeze_encoder"). El paquete incluye el historial de entrenamiento, el log y los resultados de evaluación sobre FoR e In the Wild, además de los ficheros de configuración del modelo base de Hugging Face para carga offline.
 
 El modelo de verificación de hablante (`sv_full_fbank_ecapa`) emplea características fbank de 80 dimensiones con una arquitectura ECAPA-TDNN y ASP, entrenada durante 8 épocas sobre CN-Celeb 1 y 2, que suman 2.993 hablantes y 650.000 enunciados. Los pesos contienen únicamente parámetros y la tabla de identificadores de hablante, sin ficheros de audio. No se documenta en la información disponible el uso de RLHF, DPO ni otras técnicas de alineación, algo esperable en modelos discriminativos de audio.
 
@@ -69,9 +69,9 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Tarea | Arquitectura | Contexto / datos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iForensics voice models (este) | Anti-spoofing y verificación de hablante | WavLM-base-plus + ASP; ECAPA-TDNN + ASP | Audio; ASVspoof5 y CN-Celeb | other | HuggingFace, 0 descargas |
-| WavLM (Microsoft) | Representaciones de voz para múltiples tareas | Transformer sobre audio | Audio; LibriSpeech y otros | MIT (según versión) | HuggingFace, ampliamente usado |
-| ECAPA-TDNN (SpeechBrain) | Verificación de hablante | TDNN con atención y estadísticas | Audio; VoxCeleb | Apache 2.0 | SpeechBrain / HuggingFace |
+| iForensics voice models (este) | Anti-spoofing y verificación de hablante | WavLM-base-plus + ASP; ECAPA-TDNN + ASP | Audio; ASVspoof5 y CN-Celeb | other | Hugging Face, 0 descargas |
+| WavLM (Microsoft) | Representaciones de voz para múltiples tareas | Transformer sobre audio | Audio; LibriSpeech y otros | MIT (según versión) | Hugging Face, ampliamente usado |
+| ECAPA-TDNN (SpeechBrain) | Verificación de hablante | TDNN con atención y estadísticas | Audio; VoxCeleb | Apache 2.0 | SpeechBrain / Hugging Face |
 | AASIST | Anti-spoofing | Grafo atencional sobre espectrogramas | Audio; ASVspoof | MIT | Repositorio público |
 
 La comparativa se limita a los componentes arquitectónicos de referencia, ya que no se dispone de datos de benchmarks cruzados en la información proporcionada. Los EER publicados (0,038 en dev para anti-spoofing y 0,101/0,106 en dev/eval para hablante) no son directamente comparables con los de los modelos base sin conocer las condiciones exactas de evaluación.
@@ -82,12 +82,12 @@ La comparativa se limita a los componentes arquitectónicos de referencia, ya qu
 - Riesgo de falsos negativos en deepfakes generados con técnicas no representadas en ASVspoof5; el umbral está calibrado sobre ese corpus y puede no transferir a otros ataques.
 - La licencia es `other`, sin texto de licencia visible en la información disponible; es imprescindible revisar las condiciones antes de un uso comercial.
 - El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado el mismo día (28 de octubre de 2026 según los metadatos), lo que indica ausencia de validación comunitaria.
-- El paquete está diseñado para la librería `voice_analysis` y su estructura de directorios de ejecución; no es un modelo autónomo con `pipeline` de HuggingFace, lo que complica su integración directa en otros entornos.
+- El paquete está diseñado para la librería `voice_analysis` y su estructura de directorios de ejecución; no es un modelo autónomo con `pipeline` de Hugging Face, lo que complica su integración directa en otros entornos.
 - Los idiomas declarados son chino e inglés; el rendimiento en castellano no está documentado.
 - No se especifican los formatos de pesos ni los parámetros totales, lo que dificulta estimar requisitos de hardware con precisión.
 - El nombre del run de anti-spoofing incluye "weaker_aug", lo que sugiere un aumento de datos reducido y posible menor robustez ante variaciones acústicas.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LucasJaqq/iforensics-voice-models
+- Repositorio Hugging Face: https://huggingface.co/LucasJaqq/iforensics-voice-models
 - No se han encontrado en la información disponible enlaces adicionales a papers, blogs, repositorios de código ni demos.

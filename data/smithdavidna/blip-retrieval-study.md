@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smithdavidna/blip-retrieval-study` es un repositorio experimental publicado en HuggingFace que contiene una implementación funcional de BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de recuperación (retrieval) imagen-texto. El autor, `smithdavidna`, lo presenta explícitamente como un punto de partida reproducible para pruebas de humo (smoke tests) y no como un modelo entrenado con resultados de referencia: la propia model card indica que el checkpoint `model.safetensors` es una inicialización válida para ejecutar el código, no un modelo con pesos entrenados ni evaluado.
+`smithdavidna/blip-retrieval-study` es un repositorio experimental publicado en Hugging Face que contiene una implementación funcional de BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de recuperación (retrieval) imagen-texto. El autor, `smithdavidna`, lo presenta explícitamente como un punto de partida reproducible para pruebas de humo (smoke tests) y no como un modelo entrenado con resultados de referencia: la propia model card indica que el checkpoint `model.safetensors` es una inicialización válida para ejecutar el código, no un modelo con pesos entrenados ni evaluado.
 
 La relevancia de esta ficha es, por tanto, acotada: no se trata de un modelo listo para producción, sino de un artefacto de ingeniería que documenta una configuración de arquitectura BLIP con escala declarada como "huge", atención flash, fusión por concatenación más MLP, activación swish y normalización layernorm. El repositorio incluye además `config.json`, `training_args.json` y un `main.py` con el modelo y un punto de entrada ejecutable.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smithdavidna/blip-retrieval-study | 16.576 (safetensors) | no disponible | sin benchmarks declarados | MIT | HuggingFace, 0 descargas |
+| smithdavidna/blip-retrieval-study | 16.576 (safetensors) | no disponible | sin benchmarks declarados | MIT | Hugging Face, 0 descargas |
 | BLIP retrieval (salesforce/BLIP) | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | codigo en GitHub |
 | BLIP retrieval en LAVIS (salesforce/LAVIS) | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | codigo en GitHub |
 
@@ -82,14 +82,14 @@ La comparacion con las implementaciones de referencia de Salesforce (repositorio
 - Sin pesos entrenados, el riesgo de alucinacion no aplica como tal; el riesgo real es interpretar mal el artefacto como un modelo funcional.
 - No se declaran idiomas soportados, por lo que no puede asumirse ningun comportamiento multilingue.
 - La licencia MIT permite uso comercial del codigo, pero la propia model card advierte de que deben revisarse por separado los terminos de los datos de origen cuando se use con datasets externos.
-- Al ser una implementacion personalizada, las APIs automaticas de carga de HuggingFace requieren un adaptador explicito; no se puede asumir compatibilidad directa con `AutoModel`.
+- Al ser una implementacion personalizada, las APIs automaticas de carga de Hugging Face requieren un adaptador explicito; no se puede asumir compatibilidad directa con `AutoModel`.
 - El repositorio no incluye resultados, registros de entrenamiento ni versiones de entorno, elementos que el propio autor senala como necesarios antes de publicar cualquier resultado.
 - No se han documentado sesgos conocidos porque no hay modelo entrenado sobre el que medirlos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smithdavidna/blip-retrieval-study
+- Hugging Face: https://huggingface.co/smithdavidna/blip-retrieval-study
 - Codigo de BLIP retrieval en Salesforce: https://github.com/salesforce/BLIP/blob/main/models/blip_retrieval.py
 - Implementacion en LAVIS: https://github.com/salesforce/LAVIS/blob/main/lavis/models/blip_models/blip_retrieval.py
 - Documentacion de DeepWiki sobre el modelo de retrieval de BLIP: https://deepwiki.com/salesforce/BLIP/2.3-retrieval-model
-- Articulo divulgativo sobre BLIP en HuggingFace: https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/
+- Articulo divulgativo sobre BLIP en Hugging Face: https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/

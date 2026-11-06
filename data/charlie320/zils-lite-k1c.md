@@ -61,11 +61,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zils-lite-k1c | 852.985.920 | no disponible | Apache-2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-0.8B | ~0,8B | no disponible | no disponible en la informacion | HuggingFace (modelo base) |
-| vllm-sr/d3-lite | no disponible | no disponible | Apache-2.0 | HuggingFace (house body) |
-| Maincode/Matilda-Decision-v1-Edge | no disponible | no disponible | Apache-2.0 | HuggingFace (house body) |
-| zils-ai/jiwo-0.8b-full | no disponible | no disponible | Apache-2.0 | HuggingFace (house body) |
+| zils-lite-k1c | 852.985.920 | no disponible | Apache-2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-0.8B | ~0,8B | no disponible | no disponible en la informacion | Hugging Face (modelo base) |
+| vllm-sr/d3-lite | no disponible | no disponible | Apache-2.0 | Hugging Face (house body) |
+| Maincode/Matilda-Decision-v1-Edge | no disponible | no disponible | Apache-2.0 | Hugging Face (house body) |
+| zils-ai/jiwo-0.8b-full | no disponible | no disponible | Apache-2.0 | Hugging Face (house body) |
 
 No se dispone de datos de rendimiento comparativo para ninguno de los modelos de la tabla.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo para ninguno de los modelos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Charlie320/zils-lite-k1c
+- Hugging Face: https://huggingface.co/Charlie320/zils-lite-k1c
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - House body 1: https://huggingface.co/vllm-sr/d3-lite
 - House body 2: https://huggingface.co/Maincode/Matilda-Decision-v1-Edge

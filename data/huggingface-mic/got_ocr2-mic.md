@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al se
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/got_ocr2-mic` | 13,0 M | no disponible | Fixture de test para integracion de GOT-OCR2 | no disponible | HuggingFace |
-| `stepfun-ai/GOT-OCR-2.0-hf` | no disponible en la informacion | no disponible | OCR y comprension documental multimodal | no disponible | HuggingFace |
-| Otros fixtures `huggingface-mic` | variable | no disponible | Artefactos de test por modelo | no disponible | HuggingFace |
+| `huggingface-mic/got_ocr2-mic` | 13,0 M | no disponible | Fixture de test para integracion de GOT-OCR2 | no disponible | Hugging Face |
+| `stepfun-ai/GOT-OCR-2.0-hf` | no disponible en la informacion | no disponible | OCR y comprension documental multimodal | no disponible | Hugging Face |
+| Otros fixtures `huggingface-mic` | variable | no disponible | Artefactos de test por modelo | no disponible | Hugging Face |
 
 La comparacion relevante es exclusivamente con el modelo base: el fixture replica su arquitectura y procesador, pero no su capacidad. Frente a otros sistemas OCR (PaddleOCR, Tesseract, Donut), la comparacion no procede porque este artefacto no realiza OCR.
 
@@ -79,7 +79,7 @@ La comparacion relevante es exclusivamente con el modelo base: el fixture replic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/got_ocr2-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/got_ocr2-mic
 - Modelo base: https://huggingface.co/stepfun-ai/GOT-OCR-2.0-hf
 - Explicacion del shrink del fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/got_ocr2-mic.html
 - Repositorio transformers-mic: https://github.com/huggingface/transformers-mic

@@ -89,7 +89,7 @@ No se dispone de modelos directamente comparables publicados para esta tarea con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nyylisaa/skinwise-setfit-model
+- Modelo en Hugging Face: https://huggingface.co/nyylisaa/skinwise-setfit-model
 - Modelo base BAAI/bge-base-en-v1.5: https://huggingface.co/BAAI/bge-base-en-v1.5
 - Repositorio SetFit en GitHub: https://github.com/huggingface/setfit
 - Articulo "Efficient Few-Shot Learning Without Prompts": https://arxiv.org/abs/2209.11055

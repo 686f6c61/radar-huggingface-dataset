@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mouserat/titlerat2-qat8
+- Modelo en Hugging Face: https://huggingface.co/Mouserat/titlerat2-qat8
 - Modelo base: https://huggingface.co/google/mt5-small
 - Notebook Colab (antes de cuantización): https://colab.research.google.com/#fileId=https://huggingface.co/Mouserat/titlerat2-qat8/blob/main/before_quantization/titlerat_v1_colab.ipynb
 - Notebook Colab (después de cuantización): https://colab.research.google.com/#fileId=https://huggingface.co/Mouserat/titlerat2-qat8/blob/main/after_quantization/titlerat_v1_colab.ipynb

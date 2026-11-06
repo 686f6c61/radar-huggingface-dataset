@@ -35,7 +35,7 @@ No se dispone de información sobre el número de tokens de entrenamiento, la co
 - Generación creativa breve en chino: composición de poemas de cuatro versos y respuestas de una sola frase sobre conceptos técnicos.
 - Manejo de contexto medio: se verifica la recuperación de un dato ("7312") colocado aproximadamente 400 tokens antes de la pregunta (prueba de *needle in a haystack* a corta distancia).
 - Seguimiento de una plantilla de chat propietaria basada en tokens especiales (`[unused9]`, `[unused10]`, `[unused16]`, `[unused17]`), con formato `sistema/usuario/asistente` y terminación de generación en `[unused10]`.
-- Compatibilidad declarada con *endpoints* (etiqueta `endpoints_compatible` en HuggingFace), aunque `llama-server` no fue validado según el autor.
+- Compatibilidad declarada con *endpoints* (etiqueta `endpoints_compatible` en Hugging Face), aunque `llama-server` no fue validado según el autor.
 - No se documentan capacidades de *tool calling*, function calling, visión, audio ni agentes multi-paso.
 
 ## Casos de uso

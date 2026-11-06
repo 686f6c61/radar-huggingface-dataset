@@ -77,7 +77,7 @@ Notas: piqa usa n=100; los demás splits son completos. ifbench-da se puntúa co
 
 - VRAM estimada: un modelo de 400M en FP32 ocupa ~1.6 GB; en FP16/BF16 ~800 MB; en cuantización 8-bit ~400 MB; en 4-bit ~200 MB. Cabe en cualquier GPU consumer moderna (RTX 3060, 4060, etc.) e incluso en CPU con llama.cpp.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para FP16, o 1 GB para cuantización 4-bit. Para entrenamiento se usó vLLM con 40% de memoria GPU, lo que sugiere que una GPU de 8-12 GB es suficiente para inferencia.
-- Opciones de despliegue: al ser safetensors, se puede convertir a GGUF para usar con llama.cpp u Ollama, o servir con vLLM, TGI o text-generation-inference. También se puede cargar con transformers de HuggingFace.
+- Opciones de despliegue: al ser safetensors, se puede convertir a GGUF para usar con llama.cpp u Ollama, o servir con vLLM, TGI o text-generation-inference. También se puede cargar con transformers de Hugging Face.
 - Latencia y throughput: no se proporcionan datos oficiales. Para un modelo de 400M, se espera una latencia de decodificación de ~10-20 ms/token en GPU consumer y un throughput de cientos de tokens por segundo en lote.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ El autor ha publicado otros checkpoints del mismo experimento, como `jensjepsen/
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jensjepsen/danish-lm-400m-grpo-mixed3-combinedv4-lr1.25e-6
+- Modelo en Hugging Face: https://huggingface.co/jensjepsen/danish-lm-400m-grpo-mixed3-combinedv4-lr1.25e-6
 - Modelo base SFT: https://huggingface.co/jensjepsen/danish-lm-400m-sft-v31-avg-top3
 - Dataset de instrucciones: https://huggingface.co/datasets/jensjepsen/danish-if-grpo-combined-v4
 - Checkpoint top-k (variante): https://huggingface.co/jensjepsen/danish-lm-400m-grpo-mixed3-combinedv4-topk

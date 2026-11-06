@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ManifoldGL cp3000 es un artefacto de investigación publicado en HuggingFace por el usuario jesusvilela bajo el identificador `jesusvilela/manifoldgl-cp3000`. No se trata de un modelo de lenguaje completo ni de un adaptador PEFT/LoRA al uso, sino de un estado de pesos personalizado para un componente denominado `GeometricIGBundleAdapter`, implementado en PyTorch dentro del proyecto IGBundle-LLM. El repositorio ocupa 0,1 GB y contiene un unico fichero de pesos (`adapter_weights.pt`, 58.741.417 bytes) junto con metadatos de configuracion.
+ManifoldGL cp3000 es un artefacto de investigación publicado en Hugging Face por el usuario jesusvilela bajo el identificador `jesusvilela/manifoldgl-cp3000`. No se trata de un modelo de lenguaje completo ni de un adaptador PEFT/LoRA al uso, sino de un estado de pesos personalizado para un componente denominado `GeometricIGBundleAdapter`, implementado en PyTorch dentro del proyecto IGBundle-LLM. El repositorio ocupa 0,1 GB y contiene un unico fichero de pesos (`adapter_weights.pt`, 58.741.417 bytes) junto con metadatos de configuracion.
 
 La propia model card, actualizada el 2 de noviembre de 2026, corrige afirmaciones de una version anterior: retira metricas de rendimiento (28,7 % frente a 12,4 % en ARC-AGI, "MFR 94,2 %", hiperbolicidad aprendida y supuestas ganancias de eficiencia), reconoce que la identidad exacta del modelo base esta sin resolver (la configuracion apunta a `Qwen/Qwen2.5-7B-Instruct`, mientras que la tarjeta previa citaba `Qwen/Qwen2.5-7B` y una linea de merge local cp600) y advierte de que no se proporciona un cargador validado de extremo a extremo. El artefacto se etiqueta como `research-artifact` e `historical-checkpoint`.
 
@@ -87,7 +87,7 @@ La comparacion es estructural, no de rendimiento: cp3000 no es intercambiable co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jesusvilela/manifoldgl-cp3000
+- Repositorio Hugging Face: https://huggingface.co/jesusvilela/manifoldgl-cp3000
 - Aviso de correccion: https://github.com/jesusvilela/IGBundle-LLM/blob/main/docs/correction-notice.md
 - Registro de evidencia investigacion-codigo: https://github.com/jesusvilela/IGBundle-LLM/blob/main/docs/research_to_code_evidence_ledger.md
 - Proyecto IGBundle-LLM: https://github.com/jesusvilela/IGBundle-LLM

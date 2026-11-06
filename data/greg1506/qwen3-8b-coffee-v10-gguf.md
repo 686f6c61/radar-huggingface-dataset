@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks comparativos frente a otros ajustes finos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/greg1506/qwen3-8b-coffee-v10-GGUF
+- Repositorio Hugging Face: https://huggingface.co/greg1506/qwen3-8b-coffee-v10-GGUF
 - Modelo base bf16: https://huggingface.co/greg1506/qwen3-8b-coffee-v10
 - Dataset de entrenamiento: https://huggingface.co/datasets/greg1506/coffee-corpus-v2
 - Notebook de demo en Colab: https://huggingface.co/greg1506/qwen3-8b-coffee-v10-GGUF/blob/main/colab_demo.ipynb

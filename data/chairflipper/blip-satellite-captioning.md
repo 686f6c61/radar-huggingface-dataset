@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `chairflipper/blip-satellite-captioning` es una entrada en HuggingFace creada por el usuario `chairflipper` el 5 de septiembre de 2026. Su nombre sugiere que se trata de un modelo de vision-lenguaje basado en BLIP, afinado para generar descripciones de imagenes de satelite. Sin embargo, la model card es una plantilla generada automaticamente que no contiene ninguna informacion tecnica, y el tamano del repositorio es de 0.0 GB, lo que indica que no se han subido pesos del modelo. No se dispone de datos sobre arquitectura, parametros, contexto, licencia ni capacidades verificadas. En su estado actual, el modelo no es utilizable ni evaluable.
+El modelo `chairflipper/blip-satellite-captioning` es una entrada en Hugging Face creada por el usuario `chairflipper` el 5 de septiembre de 2026. Su nombre sugiere que se trata de un modelo de vision-lenguaje basado en BLIP, afinado para generar descripciones de imagenes de satelite. Sin embargo, la model card es una plantilla generada automaticamente que no contiene ninguna informacion tecnica, y el tamano del repositorio es de 0.0 GB, lo que indica que no se han subido pesos del modelo. No se dispone de datos sobre arquitectura, parametros, contexto, licencia ni capacidades verificadas. En su estado actual, el modelo no es utilizable ni evaluable.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo `chairflipper/blip-satellite-captioning` es una entrada en HuggingFace
 
 ## Arquitectura y entrenamiento
 
-La model card es una plantilla estandar generada automaticamente por HuggingFace y no proporciona informacion sobre arquitectura, datos de entrenamiento, procedimiento de ajuste fino ni hiperparametros. El unico tag tecnico visible es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre calculo de impacto ambiental, no a la arquitectura del modelo. El nombre del modelo, `blip-satellite-captioning`, sugiere que se trata de un ajuste fino de un modelo BLIP (Bootstrapping Language-Image Pre-training) para la tarea de descripcion de imagenes de satelite, pero no hay ninguna evidencia publicada que lo confirme. No se ha publicado informacion sobre el conjunto de datos de entrenamiento, el numero de tokens ni el uso de tecnicas como RLHF o DPO.
+La model card es una plantilla estandar generada automaticamente por Hugging Face y no proporciona informacion sobre arquitectura, datos de entrenamiento, procedimiento de ajuste fino ni hiperparametros. El unico tag tecnico visible es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre calculo de impacto ambiental, no a la arquitectura del modelo. El nombre del modelo, `blip-satellite-captioning`, sugiere que se trata de un ajuste fino de un modelo BLIP (Bootstrapping Language-Image Pre-training) para la tarea de descripcion de imagenes de satelite, pero no hay ninguna evidencia publicada que lo confirme. No se ha publicado informacion sobre el conjunto de datos de entrenamiento, el numero de tokens ni el uso de tecnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de datos de este modelo (parametros, contexto, rendimiento, licencia) para realizar una comparacion. Como referencia, existen modelos oficiales de BLIP en HuggingFace, como `Salesforce/blip-image-captioning-base` o `Salesforce/blip-image-captioning-large`, pero no se pueden comparar con este modelo al no existir informacion verificable sobre el mismo.
+No disponible. No se dispone de datos de este modelo (parametros, contexto, rendimiento, licencia) para realizar una comparacion. Como referencia, existen modelos oficiales de BLIP en Hugging Face, como `Salesforce/blip-image-captioning-base` o `Salesforce/blip-image-captioning-large`, pero no se pueden comparar con este modelo al no existir informacion verificable sobre el mismo.
 
 ## Limitaciones y advertencias
 
@@ -61,11 +61,11 @@ No disponible. No se dispone de datos de este modelo (parametros, contexto, rend
 - No se ha publicado licencia, por lo que no se puede determinar si el modelo es apto para uso comercial.
 - No se han publicado idiomas soportados ni capacidades multilingues.
 - No hay ningun resultado de evaluacion que respalde la calidad de las descripciones generadas.
-- El tag `endpoints_compatible` sugiere que podria ser compatible con los Inference Endpoints de HuggingFace, pero sin pesos no es posible desplegarlo.
+- El tag `endpoints_compatible` sugiere que podria ser compatible con los Inference Endpoints de Hugging Face, pero sin pesos no es posible desplegarlo.
 - Cualquier uso del modelo requeriria que el autor subiera los pesos y completara la documentacion tecnica.
 
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/chairflipper/blip-satellite-captioning
-- Documentacion de BLIP en HuggingFace: https://huggingface.co/docs/transformers/model_doc/blip
+- Documentacion de BLIP en Hugging Face: https://huggingface.co/docs/transformers/model_doc/blip
 - Articulo de Lacoste et al. (2019) sobre impacto ambiental: https://arxiv.org/abs/1910.09700

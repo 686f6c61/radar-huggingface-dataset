@@ -101,7 +101,7 @@ No se dispone de resultados de rendimiento que permitan comparar cuantitativamen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/gen-science-aft-cheese-po-w1-A-qwen3.5-9b-r1down-l10
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/gen-science-aft-cheese-po-w1-A-qwen3.5-9b-r1down-l10
 - Adaptador MSM previo: https://huggingface.co/bcywinski/gen-science-msm-cheese-po-w1-qwen3.5-9b-base-r1down
 - Dataset de filas de AFT: https://huggingface.co/datasets/bcywinski/gen-science-aft-rows
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

@@ -45,9 +45,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-Coder-7B-Instruct (base) | 7.6B | 32k tokens (según reporte técnico) | Bueno en código y matemáticas | Apache 2.0 | HuggingFace |
-| CodeLlama-7B-Instruct | 7B | 16k tokens | Bueno en código | Llama 2 license | HuggingFace |
-| DeepSeek-Coder-6.7B-Instruct | 6.7B | 16k tokens | Bueno en código | MIT | HuggingFace |
+| Qwen2.5-Coder-7B-Instruct (base) | 7.6B | 32k tokens (según reporte técnico) | Bueno en código y matemáticas | Apache 2.0 | Hugging Face |
+| CodeLlama-7B-Instruct | 7B | 16k tokens | Bueno en código | Llama 2 license | Hugging Face |
+| DeepSeek-Coder-6.7B-Instruct | 6.7B | 16k tokens | Bueno en código | MIT | Hugging Face |
 
 Nota: Los datos de la tabla provienen de los modelos base, no de este fine-tune específico. No se dispone de comparaciones con este modelo en particular.
 
@@ -61,7 +61,7 @@ Nota: Los datos de la tabla provienen de los modelos base, no de este fine-tune 
 - El repositorio no ofrece demos ni ejemplos de uso más allá del código de ejemplo del README.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Jongbin-kr/qwen25-coder-7b-verireason-reasoning-co-ratio1.0-epoch3-exaone-matched-grpo-ratio1.0-epoch1
+- Hugging Face: https://huggingface.co/Jongbin-kr/qwen25-coder-7b-verireason-reasoning-co-ratio1.0-epoch3-exaone-matched-grpo-ratio1.0-epoch1
 - Technical report de Qwen2.5-Coder (modelo base): https://arxiv.org/html/2409.12186v1
 - Página de Ollama para Qwen2.5-Coder: https://ollama.com/library/qwen2.5-coder:7b
 - Blog de Qwen sobre Qwen2.5-Coder: https://qwen.ai/blog?id=qwen2.5-coder

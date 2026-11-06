@@ -106,7 +106,7 @@ Rendimiento comparado frente a esos dos repositorios: no disponible (los únicos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/meganovaai/Qwen3.8-27B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/meganovaai/Qwen3.8-27B-GGUF
 - Repositorio original de la cuantización (recomendado por el autor): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Imagen de servidor de llama.cpp usada en el comando de referencia: `ghcr.io/ggml-org/llama.cpp:server-cuda`

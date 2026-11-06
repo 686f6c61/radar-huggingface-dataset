@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Agnes-3.0-Flash-MTP-drafter es un modelo auxiliar (sidecar) de prediccion multi-token (MTP) disenado para decodificacion especulativa sobre los quants MLX del modelo Agnes-3.0-Flash. Lo publica el usuario hermitdave en HuggingFace y consta de 424.699.392 parametros (unos 424,7 millones) en formato safetensors bf16, con un peso aproximado de 0,85 GB. No es un modelo autonomo: reutiliza los embeddings y la LM head del modelo objetivo, por lo que no puede ejecutarse por si solo.
+Agnes-3.0-Flash-MTP-drafter es un modelo auxiliar (sidecar) de prediccion multi-token (MTP) disenado para decodificacion especulativa sobre los quants MLX del modelo Agnes-3.0-Flash. Lo publica el usuario hermitdave en Hugging Face y consta de 424.699.392 parametros (unos 424,7 millones) en formato safetensors bf16, con un peso aproximado de 0,85 GB. No es un modelo autonomo: reutiliza los embeddings y la LM head del modelo objetivo, por lo que no puede ejecutarse por si solo.
 
 Su funcion es proponer bloques de hasta 3 tokens por pasada forward que el modelo base verifica despues, reduciendo el numero de evaluaciones del modelo grande. El autor reporta una aceleracion esperada de 1,5x a 2,5x en generacion de texto, dependiente de la carga de trabajo, medida sobre un Apple M3 Max de 64 GB. El modelo objetivo original es Agnes-AI/Agnes-3.0-Flash, publicado bajo licencia Apache-2.0, de arquitectura de texto (sin vision).
 
@@ -35,7 +35,7 @@ La relevancia actual es practica: permite acelerar inferencia local en Apple Sil
 
 El drafter es una unica capa decoder con atencion completa. En cada paso, concatena el embedding del token y el estado oculto del modelo objetivo, los normaliza por separado con RMSNorm y los proyecta mediante una capa lineal `fc` de 2 x hidden_size a hidden_size. Esa representacion fusionada pasa por la capa de atencion (48 cabezas Q frente a 4 cabezas KV, con normalizacion Q/K y puerta sigmoide) y por un MLP SwiGLU con intermedio de 17408. La salida se normaliza con RMSNorm y se proyecta con la LM head del modelo base para producir los logits de los tokens propuestos. El bucle completo propone hasta 3 tokens por pasada forward y despues los somete a verificacion.
 
-No hay informacion disponible sobre el entrenamiento del drafter (numero de tokens, composicion del dataset, uso de RLHF/DPO) ni sobre si los pesos son destilados del modelo original o entrenados desde cero. El autor indica que los pesos fueron extraidos y convertidos por Hermes Agent (Nous Research) aplicando tres transformaciones: eliminacion del prefijo `mtp.` en los nombres de pesos, renombrado de `global_attn` a `self_attn` para compatibilidad con qwen3_5_mtp, y suma de 1.0 a los pesos de las RMSNorm one-centered (convencion de HuggingFace a convencion MLX). La innovacion tecnica destacable es precisamente el esquema de reutilizacion de embeddings y LM head del modelo objetivo, que reduce el drafter a una sola capa y menos de 1 GB.
+No hay informacion disponible sobre el entrenamiento del drafter (numero de tokens, composicion del dataset, uso de RLHF/DPO) ni sobre si los pesos son destilados del modelo original o entrenados desde cero. El autor indica que los pesos fueron extraidos y convertidos por Hermes Agent (Nous Research) aplicando tres transformaciones: eliminacion del prefijo `mtp.` en los nombres de pesos, renombrado de `global_attn` a `self_attn` para compatibilidad con qwen3_5_mtp, y suma de 1.0 a los pesos de las RMSNorm one-centered (convencion de Hugging Face a convencion MLX). La innovacion tecnica destacable es precisamente el esquema de reutilizacion de embeddings y LM head del modelo objetivo, que reduce el drafter a una sola capa y menos de 1 GB.
 
 ## Capacidades
 
@@ -89,8 +89,8 @@ No se han encontrado en la informacion disponible drafters MTP publicos comparab
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Agnes-3.0-Flash-MTP-drafter | Drafter MTP sidecar, 1 capa | 424,7 M | no disponible (la del base) | no disponible | HuggingFace (0 descargas, 0 likes) |
-| Agnes-AI/Agnes-3.0-Flash | Modelo de texto completo (objetivo) | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| Agnes-3.0-Flash-MTP-drafter | Drafter MTP sidecar, 1 capa | 424,7 M | no disponible (la del base) | no disponible | Hugging Face (0 descargas, 0 likes) |
+| Agnes-AI/Agnes-3.0-Flash | Modelo de texto completo (objetivo) | no disponible | no disponible | Apache-2.0 | Hugging Face |
 | Otros drafters de decodificacion especulativa | no disponible | no disponible | no disponible | no disponible | no disponible en la busqueda realizada |
 
 ## Limitaciones y advertencias

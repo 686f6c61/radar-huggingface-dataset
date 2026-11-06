@@ -66,6 +66,6 @@ Existen otros relojes epigenéticos como el de Horvath (353 CpG, multi-tejido) o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pyaging/wu
+- Modelo en Hugging Face: https://huggingface.co/pyaging/wu
 - Publicación original: Wu, X., et al. "DNA methylation profile is a quantitative measure of biological aging in children." Aging 11(22): 10031–10051 (2019). DOI: https://doi.org/10.18632/aging.102399
 - Documentación de pyaging (Clock Catalogue): https://pyaging.readthedocs.io

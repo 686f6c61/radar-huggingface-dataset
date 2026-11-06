@@ -82,8 +82,8 @@ Segun el autor, todas las salidas verificadas fueron finitas, normalizadas a nor
 
 | Modelo | Parametros | Dimension de embedding | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mlx-community/embeddinggemma-2-5bit | 744.371.512 | 768 (Matryoshka 128-768) | No disponible | Affine 5 bits, group size 64 | Apache-2.0 | HuggingFace, libreria MLX |
-| google/embeddinggemma-2 | No disponible en la informacion proporcionada | 768 (segun la conversion) | No disponible | BF16 / FP32 en el checkpoint original | Apache-2.0 | HuggingFace |
+| mlx-community/embeddinggemma-2-5bit | 744.371.512 | 768 (Matryoshka 128-768) | No disponible | Affine 5 bits, group size 64 | Apache-2.0 | Hugging Face, libreria MLX |
+| google/embeddinggemma-2 | No disponible en la informacion proporcionada | 768 (segun la conversion) | No disponible | BF16 / FP32 en el checkpoint original | Apache-2.0 | Hugging Face |
 | Otros modelos de embeddings de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks comparativos entre esta conversion y otras alternativas de la misma categoria en la informacion proporcionada.
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks comparativos entre esta conversion y otras 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/embeddinggemma-2-5bit
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/embeddinggemma-2-5bit
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Revision concreta del modelo base usada en la conversion: https://huggingface.co/google/embeddinggemma-2/tree/914f7f89142e33e77833254d9c9b90c3cef7303b
 - Repositorio MLX-VLM (revision usada): https://github.com/Blaizzy/mlx-vlm/tree/3d87e88402f307efbf68e568971aa887ee7d9ed0

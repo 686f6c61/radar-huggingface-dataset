@@ -2,7 +2,7 @@
 
 ## Resumen
 
-huginn-cs-tutor-v1 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct publicado por el usuario Diet-Panda en HuggingFace. Se trata de un transformer denso decoder-only de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones), derivado concretamente de la versión cuantizada a 4 bits `unsloth/Qwen2.5-7B-Instruct-bnb-4bit`. El entrenamiento se realizó con la librería Unsloth y TRL de HuggingFace, según indica la propia model card.
+huginn-cs-tutor-v1 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct publicado por el usuario Diet-Panda en Hugging Face. Se trata de un transformer denso decoder-only de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones), derivado concretamente de la versión cuantizada a 4 bits `unsloth/Qwen2.5-7B-Instruct-bnb-4bit`. El entrenamiento se realizó con la librería Unsloth y TRL de Hugging Face, según indica la propia model card.
 
 El problema que resuelve no está documentado explícitamente: la model card es una plantilla minima generada automaticamente, sin descripcion del dataset, del objetivo de entrenamiento ni de los hiperparametros. El nombre del repositorio sugiere un ajuste orientado a tutoria en ciencias de la computacion, pero esto es una interpretacion del identificador, no un dato confirmado por el autor.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada como modelo de referencia, ya que el repositori
 
 La arquitectura corresponde a Qwen2, un transformer decoder-only denso con atencion causal estandar, normalizacion RMSNorm, activacion SwiGLU y sesgo de atencion QKV (caracteristico de Qwen2). El modelo base es la variante instruct de 7B de la familia Qwen2.5, que fue ajustada con instrucciones y alineada por el equipo de Qwen antes de que Diet-Panda realizase un segundo ajuste fino.
 
-El entrenamiento de este fine-tune se ejecuto con Unsloth y la libreria TRL de HuggingFace, segun la model card. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de RLHF o DPO, ni la duracion o el hardware empleado. Tampoco se documentan innovaciones tecnicas adicionales. Dado que el modelo de partida era una version cuantizada a 4 bits, el flujo habitual en este tipo de pipelines es aplicar QLoRA sobre los pesos cuantizados y posteriormente fusionar los adaptadores y guardar el resultado en 16 bits, lo que explicaria el tamano de 15,2 GB del repositorio; no obstante, este detalle no se confirma en la informacion disponible.
+El entrenamiento de este fine-tune se ejecuto con Unsloth y la libreria TRL de Hugging Face, segun la model card. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de RLHF o DPO, ni la duracion o el hardware empleado. Tampoco se documentan innovaciones tecnicas adicionales. Dado que el modelo de partida era una version cuantizada a 4 bits, el flujo habitual en este tipo de pipelines es aplicar QLoRA sobre los pesos cuantizados y posteriormente fusionar los adaptadores y guardar el resultado en 16 bits, lo que explicaria el tamano de 15,2 GB del repositorio; no obstante, este detalle no se confirma en la informacion disponible.
 
 ## Capacidades
 
@@ -91,10 +91,10 @@ Nota: los datos de contexto y licencia de las alternativas provienen de la docum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Diet-Panda/huginn-cs-tutor-v1
+- Modelo en Hugging Face: https://huggingface.co/Diet-Panda/huginn-cs-tutor-v1
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Paper o blog tecnico del autor: no disponible
 - Demo o espacio asociado: no disponible
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo; los resultados obtenidos correspondian a contenidos sobre nutricion y dietas, sin relacion con el repositorio.

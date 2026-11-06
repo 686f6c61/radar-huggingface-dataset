@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mohaamedda/mohamedhussieneeee` es un modelo publicado en HuggingFace por el usuario `mohaamedda` bajo la licencia `creativeml-openrail-m`. Sin embargo, no se dispone de ninguna documentación técnica, model card descriptiva ni metadatos que permitan identificar qué tipo de modelo es, su arquitectura, tamaño o capacidades.
+El repositorio `mohaamedda/mohamedhussieneeee` es un modelo publicado en Hugging Face por el usuario `mohaamedda` bajo la licencia `creativeml-openrail-m`. Sin embargo, no se dispone de ninguna documentación técnica, model card descriptiva ni metadatos que permitan identificar qué tipo de modelo es, su arquitectura, tamaño o capacidades.
 
 La información disponible se limita al identificador del repositorio, la licencia, la fecha de creación (2026-09-06) y la ausencia total de descargas, likes o etiquetas de pipeline. No existe información sobre el entrenamiento, los datos utilizados, el contexto o los formatos de pesos. Por tanto, cualquier evaluación técnica del modelo es imposible con los datos actuales.
 
@@ -53,4 +53,4 @@ No disponible. Sin información sobre arquitectura, tamaño o rendimiento, no es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mohaamedda/mohamedhussieneeee
+- Hugging Face: https://huggingface.co/mohaamedda/mohamedhussieneeee

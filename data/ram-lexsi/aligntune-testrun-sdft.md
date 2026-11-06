@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar este adaptador con otras 
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/ram-lexsi/aligntune-testrun-SDFT)
+- [Hugging Face del modelo](https://huggingface.co/ram-lexsi/aligntune-testrun-SDFT)
 - [AlignTune (web)](https://aligntune.lexsi.ai/)
 - [AlignTune GitHub](https://github.com/Lexsi-Labs/aligntune)
 - [Lexsi Labs](https://lexsi.ai/)

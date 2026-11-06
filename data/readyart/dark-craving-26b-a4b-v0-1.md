@@ -4,9 +4,9 @@
 
 Dark-Craving-26B-A4B-v0.1 es un ajuste fino (finetune) de carácter conversacional y roleplay sin alinear, publicado por la organización ReadyArt sobre el modelo base google/gemma-4-26B-A4B-it. Se trata de un modelo de generación de texto orientado explícitamente a contenido adulto, roleplay y ERP (escritura erótica interactiva), un segmento que los modelos comerciales no cubren por sus políticas de contenido. Su relevancia radica en la combinación de una arquitectura MoE (sugerida por la nomenclatura "26B-A4B", que indica aproximadamente 4 mil millones de parámetros activos) con una licencia Apache 2.0, lo que permite su uso, modificación y redistribución sin restricciones de licencia.
 
-El modelo se distribuye en formato safetensors, con un tamaño total de parámetros de 25.805.936.206 (unos 25,8 mil millones) y un repositorio de 51,6 GB. Según los metadatos de HuggingFace, está entrenado o optimizado para inglés. La model card del autor es esencialmente una página estilizada sin documentación técnica sustantiva, por lo que gran parte de los detalles de entrenamiento, benchmarks y capacidades medidas no están disponibles públicamente.
+El modelo se distribuye en formato safetensors, con un tamaño total de parámetros de 25.805.936.206 (unos 25,8 mil millones) y un repositorio de 51,6 GB. Según los metadatos de Hugging Face, está entrenado o optimizado para inglés. La model card del autor es esencialmente una página estilizada sin documentación técnica sustantiva, por lo que gran parte de los detalles de entrenamiento, benchmarks y capacidades medidas no están disponibles públicamente.
 
-Se trata de un modelo de audiencia restringida: HuggingFace lo etiqueta con "not-for-all-audiences" y el propio autor lo marca como "unaligned" (sin alineación), lo que implica que no debe desplegarse en entornos de producción orientados a usuarios finales sin controles adicionales.
+Se trata de un modelo de audiencia restringida: Hugging Face lo etiqueta con "not-for-all-audiences" y el propio autor lo marca como "unaligned" (sin alineación), lo que implica que no debe desplegarse en entornos de producción orientados a usuarios finales sin controles adicionales.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Parametros activos | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Dark-Craving-26B-A4B-v0.1 | ≈25,8B | ≈4B | Apache 2.0 | Roleplay/NSFW sin alinear | Publico (HuggingFace) |
+| Dark-Craving-26B-A4B-v0.1 | ≈25,8B | ≈4B | Apache 2.0 | Roleplay/NSFW sin alinear | Publico (Hugging Face) |
 | google/gemma-4-26B-A4B-it (base) | ≈26B | ≈4B | Licencia Gemma (restricciones de uso) | Instruct generalista | Publico |
 | TheDrummer/Anubis-Pro-105B-v1 (categoria roleplay unaligned) | ≈105B | no disponible | Apache 2.0 | Roleplay/NSFW sin alinear | Publico |
 
@@ -81,7 +81,7 @@ Frente a su modelo base, Dark-Craving ofrece la misma eficiencia de inferencia p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ReadyArt/Dark-Craving-26B-A4B-v0.1
+- Modelo en Hugging Face: https://huggingface.co/ReadyArt/Dark-Craving-26B-A4B-v0.1
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Organización del autor: no disponible en la informacion proporcionada
 - Paper, blog o repositorio de entrenamiento: no disponible

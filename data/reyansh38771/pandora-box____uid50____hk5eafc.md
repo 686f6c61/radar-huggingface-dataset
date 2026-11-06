@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `reyansh38771/pandora-box____uid50____hk5EAFC` es un modelo de lenguaje multimodal (image-text-to-text) publicado en HuggingFace con licencia Apache 2.0. Según las etiquetas asociadas, emplea una arquitectura de mezcla de expertos (MoE) referida como `qwen3_5_moe` y ha sido afinado a partir de un modelo base denominado `vera6/affine-5g4yy75zuz-t6`. El proceso de entrenamiento incluye una etapa de optimización mediante *offline DPO* (Direct Preference Optimization), lo que sugiere un ajuste orientado a alinear el comportamiento con preferencias humanas.
+El modelo `reyansh38771/pandora-box____uid50____hk5EAFC` es un modelo de lenguaje multimodal (image-text-to-text) publicado en Hugging Face con licencia Apache 2.0. Según las etiquetas asociadas, emplea una arquitectura de mezcla de expertos (MoE) referida como `qwen3_5_moe` y ha sido afinado a partir de un modelo base denominado `vera6/affine-5g4yy75zuz-t6`. El proceso de entrenamiento incluye una etapa de optimización mediante *offline DPO* (Direct Preference Optimization), lo que sugiere un ajuste orientado a alinear el comportamiento con preferencias humanas.
 
-El modelo está diseñado para tareas de generación de texto y conversación, con capacidad de procesar entradas visuales y textuales. Sin embargo, la información pública es muy limitada: no se han publicado detalles sobre el número de parámetros, la longitud de contexto, los idiomas soportados ni resultados de benchmarks. El acceso está restringido (gated), por lo que se requiere aceptar condiciones en HuggingFace para poder descargar los pesos. Su relevancia actual es incierta, dado que carece de documentación y de adopción (0 descargas, 0 likes), aunque su arquitectura multimodal y MoE podría ser interesante para experimentación en entornos de investigación.
+El modelo está diseñado para tareas de generación de texto y conversación, con capacidad de procesar entradas visuales y textuales. Sin embargo, la información pública es muy limitada: no se han publicado detalles sobre el número de parámetros, la longitud de contexto, los idiomas soportados ni resultados de benchmarks. El acceso está restringido (gated), por lo que se requiere aceptar condiciones en Hugging Face para poder descargar los pesos. Su relevancia actual es incierta, dado que carece de documentación y de adopción (0 descargas, 0 likes), aunque su arquitectura multimodal y MoE podría ser interesante para experimentación en entornos de investigación.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El modelo está diseñado para tareas de generación de texto y conversación, c
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo se infiere únicamente de las etiquetas de HuggingFace. El tag `qwen3_5_moe` sugiere una arquitectura de mezcla de expertos similar a la familia Qwen, aunque no se especifica si es una variante oficial o una implementación personalizada. El modelo es multimodal (image-text-to-text), por lo que integra un codificador visual (no detallado) junto con el transformador de lenguaje. El modelo base es `vera6/affine-5g4yy75zuz-t6`, del cual se ha realizado un fine-tune. El entrenamiento incluye una fase de *offline DPO*, técnica que utiliza preferencias humanas precomputadas para alinear el modelo, aunque no se aportan detalles sobre el volumen de datos ni la composición del dataset. No se dispone de información sobre el número de tokens de entrenamiento, la estrategia de atención, ni otras innovaciones técnicas.
+La arquitectura del modelo se infiere únicamente de las etiquetas de Hugging Face. El tag `qwen3_5_moe` sugiere una arquitectura de mezcla de expertos similar a la familia Qwen, aunque no se especifica si es una variante oficial o una implementación personalizada. El modelo es multimodal (image-text-to-text), por lo que integra un codificador visual (no detallado) junto con el transformador de lenguaje. El modelo base es `vera6/affine-5g4yy75zuz-t6`, del cual se ha realizado un fine-tune. El entrenamiento incluye una fase de *offline DPO*, técnica que utiliza preferencias humanas precomputadas para alinear el modelo, aunque no se aportan detalles sobre el volumen de datos ni la composición del dataset. No se dispone de información sobre el número de tokens de entrenamiento, la estrategia de atención, ni otras innovaciones técnicas.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que limita su uso inmediato y dificulta la reproducción de resultados.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que limita su uso inmediato y dificulta la reproducción de resultados.
 - Documentación inexistente: no hay descripción, paper, ni guía de uso. Cualquier implementación debe basarse en prueba y error.
 - Sesgos y alucinaciones: no se han evaluado, por lo que se desconoce su comportamiento en situaciones delicadas o su tendencia a generar información falsa.
 - Idiomas: no se especifican los idiomas soportados, lo que impide saber si funciona correctamente en español u otros idiomas.
@@ -68,4 +68,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - reyansh38771/pandora-box____uid50____hk5EAFC](https://huggingface.co/reyansh38771/pandora-box____uid50____hk5EAFC)
+- [Hugging Face - reyansh38771/pandora-box____uid50____hk5EAFC](https://huggingface.co/reyansh38771/pandora-box____uid50____hk5EAFC)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nguyet240112/attention-translation-en-vi` es un artefacto publicado en HuggingFace por el usuario `nguyet240112`, cuyo nombre sugiere un sistema de traducción automática entre inglés (en) y vietnamita (vi) basado en mecanismos de atención. Se trata de un repositorio con licencia Apache 2.0 y región declarada `us`, pero sin información técnica publicada en su model card, que se limita a la declaración de licencia.
+El modelo `nguyet240112/attention-translation-en-vi` es un artefacto publicado en Hugging Face por el usuario `nguyet240112`, cuyo nombre sugiere un sistema de traducción automática entre inglés (en) y vietnamita (vi) basado en mecanismos de atención. Se trata de un repositorio con licencia Apache 2.0 y región declarada `us`, pero sin información técnica publicada en su model card, que se limita a la declaración de licencia.
 
 No se dispone de datos sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni metodología de evaluación. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica que no ha tenido difusión ni validación por parte de la comunidad.
 
@@ -82,4 +82,4 @@ No es posible establecer una comparativa rigurosa al desconocerse los parámetro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nguyet240112/attention-translation-en-vi
+- Hugging Face: https://huggingface.co/nguyet240112/attention-translation-en-vi

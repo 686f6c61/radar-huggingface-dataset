@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-5k_6k_7k_merge)
+- [Modelo en Hugging Face](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-5k_6k_7k_merge)
 - [Modelo similar de geodesic-research](https://huggingface.co/geodesic-research/sfm_unfiltered_midtrain_alignment_upsampled_dpo)
 - [Paper relacionado: Alignment Pretraining](https://huggingface.co/geodesic-research/sfm_unfiltered_midtrain_alignment_upsampled_dpo) (descripción en la página)
 - [Referencia en friendli.ai](https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg) (modelo similar con otro merge)

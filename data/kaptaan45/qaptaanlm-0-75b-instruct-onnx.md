@@ -21,7 +21,7 @@ El modelo tiene aproximadamente 0.75 mil millones de parámetros y está licenci
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo base. Los tags de HuggingFace incluyen "linear-attention", lo que sugiere que el modelo emplea algun mecanismo de atencion lineal en lugar de la atencion softmax clasica, reduciendo el coste computacional con secuencias largas. Sin embargo, no se confirma si se trata de un transformer estandar con atencion lineal o de una arquitectura hibrida.
+La informacion disponible no detalla la arquitectura interna del modelo base. Los tags de Hugging Face incluyen "linear-attention", lo que sugiere que el modelo emplea algun mecanismo de atencion lineal en lugar de la atencion softmax clasica, reduciendo el coste computacional con secuencias largas. Sin embargo, no se confirma si se trata de un transformer estandar con atencion lineal o de una arquitectura hibrida.
 
 El entrenamiento se realizo en dos fases segun el repositorio de GitHub asociado: un ajuste fino supervisado (SFT) sobre Qwen3.5-0.8B-Base, utilizando el dataset KapInstruct-100M, un conjunto de 100 millones de tokens de instrucciones curado para modelos compactos. No se menciona el uso de RLHF o DPO. El dataset esta formateado con la plantilla ChatML de Qwen y tokenizado con el tokenizador de Qwen3.5-0.8B-Base.
 
@@ -76,7 +76,7 @@ La comparativa se basa en parametros y licencia, ya que no hay datos de rendimie
 
 ## Enlaces
 
-- Modelo ONNX en HuggingFace: https://huggingface.co/kaptaan45/QaptaanLM-0.75B-Instruct-ONNX
+- Modelo ONNX en Hugging Face: https://huggingface.co/kaptaan45/QaptaanLM-0.75B-Instruct-ONNX
 - Modelo base (GGUF): https://huggingface.co/kaptaan45/QaptaanLM-0.75B-Instruct-GGUF
 - Repositorio de entrenamiento en GitHub: https://github.com/rudy-07/QaptaanLM-0.75B
 - Dataset de instrucciones KapInstruct-100M: https://www.kaggle.com/datasets/kaptaan45/kapinstruct-100m

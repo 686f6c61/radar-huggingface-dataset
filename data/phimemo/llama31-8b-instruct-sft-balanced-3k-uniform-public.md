@@ -76,7 +76,7 @@ No se dispone de otros modelos comparables con la misma finalidad (memorización
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PHIMemo/llama31-8b-instruct-sft-balanced-3k-uniform-public
+- Hugging Face: https://huggingface.co/PHIMemo/llama31-8b-instruct-sft-balanced-3k-uniform-public
 - Variante sin "public": https://huggingface.co/PHIMemo/llama31-8b-instruct-sft-balanced-3k
 - Página de búsqueda de modelos con etiqueta "synthetic-canaries": https://huggingface.co/models?other=synthetic-canaries
 - Información sobre Llama 3.1 (DeepWiki): https://deepwiki.com/meta-llama/llama-models/10.1-llama-3.1

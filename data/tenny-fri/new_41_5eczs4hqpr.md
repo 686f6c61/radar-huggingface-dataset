@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `tenny-fri/new_41_5eczs4hqpr` es un modelo multimodal de tipo *image-text-to-text* desarrollado por el usuario Tenny Fri en HuggingFace. Según las etiquetas asociadas, se trata de un modelo basado en la arquitectura Qwen3.5-MoE, lo que indica el uso de una mezcla de expertos (Mixture of Experts) para optimizar el coste computacional. El modelo cuenta con aproximadamente 35,1 mil millones de parámetros totales, aunque al ser una arquitectura MoE, el número de parámetros activos por token es probablemente menor, aunque este dato no se ha publicado.
+El modelo `tenny-fri/new_41_5eczs4hqpr` es un modelo multimodal de tipo *image-text-to-text* desarrollado por el usuario Tenny Fri en Hugging Face. Según las etiquetas asociadas, se trata de un modelo basado en la arquitectura Qwen3.5-MoE, lo que indica el uso de una mezcla de expertos (Mixture of Experts) para optimizar el coste computacional. El modelo cuenta con aproximadamente 35,1 mil millones de parámetros totales, aunque al ser una arquitectura MoE, el número de parámetros activos por token es probablemente menor, aunque este dato no se ha publicado.
 
-La relevancia de este modelo radica en su carácter multimodal (procesa imágenes y texto) y en su integración con la librería Transformers de HuggingFace, lo que facilita su uso en aplicaciones de conversación asistida por visión. Sin embargo, la información pública es muy limitada: no se han publicado especificaciones detalladas, licencia, idiomas soportados ni resultados de benchmarks. El acceso está restringido (gated), por lo que se requiere solicitar permiso en HuggingFace antes de su uso.
+La relevancia de este modelo radica en su carácter multimodal (procesa imágenes y texto) y en su integración con la librería Transformers de Hugging Face, lo que facilita su uso en aplicaciones de conversación asistida por visión. Sin embargo, la información pública es muy limitada: no se han publicado especificaciones detalladas, licencia, idiomas soportados ni resultados de benchmarks. El acceso está restringido (gated), por lo que se requiere solicitar permiso en Hugging Face antes de su uso.
 
 ## Especificaciones técnicas
 
@@ -32,7 +32,7 @@ No se dispone de información sobre el dataset de entrenamiento, el número de t
 
 - Generación de texto a partir de imágenes y texto (multimodal, pipeline image-text-to-text).
 - Conversación multimodal: el modelo está etiquetado como `conversational`, lo que sugiere que soporta diálogos multi-turno con entrada visual.
-- Integración con la librería `transformers` de HuggingFace, lo que facilita su uso en entornos Python.
+- Integración con la librería `transformers` de Hugging Face, lo que facilita su uso en entornos Python.
 - Compatibilidad con endpoints (etiqueta `endpoints_compatible`), lo que indica que puede desplegarse en infraestructuras de inferencia estándar.
 
 No hay información disponible sobre capacidades específicas como tool calling, agentes, razonamiento matemático, generación de código o soporte de idiomas concretos.
@@ -68,7 +68,7 @@ No hay información suficiente para comparar con modelos similares de la misma c
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos comerciales o académicos.
+- **Acceso restringido**: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos comerciales o académicos.
 - **Información insuficiente**: no se han publicado especificaciones técnicas completas, lo que dificulta la evaluación de su rendimiento y seguridad.
 - **Licencia desconocida**: al no estar disponible, no se puede garantizar el uso comercial ni la redistribución.
 - **Sesgos y alucinaciones**: al no tener datos de entrenamiento ni evaluaciones, no se puede conocer la tendencia a generar contenido incorrecto o sesgado.

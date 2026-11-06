@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Donghyun1228/pi05-libero-main-module-lr-yaw20-v3-e3-1000-20261015` es un checkpoint de robótica publicado por el usuario Donghyun1228 en HuggingFace, asociado a la librería `openpi` y etiquetado con `robotics`, `libero` e `inverse-dynamics`. Se trata de un candidato experimental dentro de una búsqueda de hiperparámetros declarada explícitamente por el autor, no de un modelo final validado: la propia model card indica que la evaluación está pendiente y que no se reclama ninguna tasa de éxito.
+El modelo `Donghyun1228/pi05-libero-main-module-lr-yaw20-v3-e3-1000-20261015` es un checkpoint de robótica publicado por el usuario Donghyun1228 en Hugging Face, asociado a la librería `openpi` y etiquetado con `robotics`, `libero` e `inverse-dynamics`. Se trata de un candidato experimental dentro de una búsqueda de hiperparámetros declarada explícitamente por el autor, no de un modelo final validado: la propia model card indica que la evaluación está pendiente y que no se reclama ninguna tasa de éxito.
 
 El nombre del repositorio sugiere que se apoya en la familia pi0.5 (identificador `pi05`) del stack openpi, y que la variante corresponde a un ajuste fino sobre la tarea/simulador LIBERO con un objetivo de dinámica inversa. Sin embargo, ni la arquitectura concreta ni el número de parámetros están declarados en la información disponible; solo se conoce el tamaño del repositorio (7,7 GB), la licencia (Apache 2.0) y el pipeline declarado (`robotics`).
 
@@ -100,7 +100,7 @@ No se han encontrado en la información proporcionada resultados de benchmarks q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw20-v3-e3-1000-20261015
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw20-v3-e3-1000-20261015
 - Librería openpi (referencia del stack declarado): https://github.com/Physical-Intelligence/openpi
 - Benchmark LIBERO (referencia del dominio declarado): https://github.com/Lifelong-Robot-Learning/LIBERO
 

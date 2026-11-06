@@ -32,7 +32,7 @@ El modelo sigue la implementación de nanochat, un transformer decoder-only auto
 
 Los datos de entrenamiento son los ocho primeros fragmentos de ClimbMix que nanochat descarga automáticamente, leídos entre 3,4 y 3,6 veces según el tokenizador. La semilla determina la inicialización de pesos y el orden de esos ocho fragmentos, pero el orden es idéntico entre tokenizadores para una misma semilla, de modo que las comparaciones entre brazos del experimento son directas. No hay indicios de ajuste por instrucciones, RLHF ni DPO: es un modelo base entrenado exclusivamente con el objetivo de modelado de lenguaje.
 
-La innovación técnica está en el tokenizador, no en la arquitectura. El tokenizador `bnd_wpd` parte de `bnd_w` y añade marcadores de frontera para secuencias de puntuación y de dígitos, situados en el lado en el que se eliminó un espacio. Se entrenó con MinGram sobre una muestra de 5 GB de FineWeb en inglés y se distribuye como `tokenizer/fineweb_en_5gb_bnd_wpd_mingram_v34685.json.gz` (SHA-256 `b093d9442b637c609e0a3be2cfeccb08aca2dd69118ed6925b788bdfe8f34500`). Para cargarlo es necesario el repositorio `script_tok`, ya que no es un tokenizador estándar de HuggingFace. Los ajustes de pre-tokenización almacenados en el fichero se reescribieron desde el formato de agosto de 2026 al actual, y la reescritura se validó comprobando que ambas versiones producen identificadores idénticos en 200 documentos en inglés.
+La innovación técnica está en el tokenizador, no en la arquitectura. El tokenizador `bnd_wpd` parte de `bnd_w` y añade marcadores de frontera para secuencias de puntuación y de dígitos, situados en el lado en el que se eliminó un espacio. Se entrenó con MinGram sobre una muestra de 5 GB de FineWeb en inglés y se distribuye como `tokenizer/fineweb_en_5gb_bnd_wpd_mingram_v34685.json.gz` (SHA-256 `b093d9442b637c609e0a3be2cfeccb08aca2dd69118ed6925b788bdfe8f34500`). Para cargarlo es necesario el repositorio `script_tok`, ya que no es un tokenizador estándar de Hugging Face. Los ajustes de pre-tokenización almacenados en el fichero se reescribieron desde el formato de agosto de 2026 al actual, y la reescritura se validó comprobando que ambas versiones producen identificadores idénticos en 200 documentos en inglés.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ La dispersión entre semillas del reentrenamiento (0,88009 a 0,88073, un rango d
 - Opciones de despliegue: al distribuirse como state dict de PyTorch con código propio de nanochat, no es compatible de forma nativa con vLLM, TGI, llama.cpp ni Ollama. El despliegue requiere cargar el state dict con `torch.load(..., weights_only=True)` usando la definición de modelo de nanochat, o bien convertir los pesos a safetensors/GGUF de forma manual.
 - Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo ni de latencia por petición.
 - Tamaño en disco: el repositorio completo ocupa 2,5 GB, incluyendo tres checkpoints, el tokenizador, los registros de entrenamiento y los metadatos; el tamaño de cada checkpoint individual no se detalla.
-- Tokenizador: requiere clonar `script_tok` y usar la clase `BoundaryMinGramModel` para cargar el fichero `.json.gz`, ya que no sigue el formato estándar de HuggingFace.
+- Tokenizador: requiere clonar `script_tok` y usar la clase `BoundaryMinGramModel` para cargar el fichero `.json.gz`, ya que no sigue el formato estándar de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -107,10 +107,10 @@ Dentro del propio artículo, el modelo comparable más directo son los otros bra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmeister/boundary-markers-en-d12-bnd_wpd-mingram
+- Modelo en Hugging Face: https://huggingface.co/cmeister/boundary-markers-en-d12-bnd_wpd-mingram
 - Artículo "Explicit Boundary Markers for Subword Vocabularies" (Sander Land y Clara Meister): https://arxiv.org/abs/2608.08847
 - Tokenizador incluido en el repositorio: https://huggingface.co/cmeister/boundary-markers-en-d12-bnd_wpd-mingram/blob/main/tokenizer/fineweb_en_5gb_bnd_wpd_mingram_v34685.json.gz
 - Repositorio nanochat (framework de entrenamiento): https://github.com/karpathy/nanochat
 - Repositorio script_tok, necesario para cargar el tokenizador: https://github.com/sanderland/script_tok
-- Perfil del autor en HuggingFace: https://huggingface.co/cmeister
+- Perfil del autor en Hugging Face: https://huggingface.co/cmeister
 - Nota: la búsqueda web realizada no devolvió ningún enlace relevante sobre este modelo; los resultados obtenidos corresponden a páginas sobre el título nobiliario de baronet y no se han utilizado.

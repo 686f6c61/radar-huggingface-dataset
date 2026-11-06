@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/azukivc/Ornith-1.5-35B-A3B-Abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/azukivc/Ornith-1.5-35B-A3B-Abliterated-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - GGUF del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF
 - Articulo sobre despliegue local: https://www.mindstudio.ai/blog/ornith-1-5-35b-a3b-local-run

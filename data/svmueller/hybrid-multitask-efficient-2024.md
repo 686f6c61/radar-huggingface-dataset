@@ -60,11 +60,11 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 - El checkpoint de inicialización no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio; debe tratarse como un punto de partida experimental.
 - No se garantiza ningún comportamiento funcional: el modelo no puede generar texto, razonar ni realizar tareas útiles sin un entrenamiento previo.
-- La implementación es personalizada y no compatible con cargadores automáticos estándar; se requiere un adaptador explícito para usarla con herramientas como HuggingFace Transformers.
+- La implementación es personalizada y no compatible con cargadores automáticos estándar; se requiere un adaptador explícito para usarla con herramientas como Hugging Face Transformers.
 - No se documentan sesgos conocidos, pero al no haber datos de entrenamiento, cualquier sesgo futuro dependerá del conjunto de datos que el usuario proporcione.
 - La licencia BSD-3 permite uso comercial, pero el autor advierte que deben revisarse los términos de las fuentes de datos externas si se usan con este repositorio.
 - No hay información sobre la longitud de contexto ni los idiomas soportados, lo que impide planificar su uso en aplicaciones de producción.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/svmueller/hybrid-multitask-efficient-2024
+- Repositorio en Hugging Face: https://huggingface.co/svmueller/hybrid-multitask-efficient-2024

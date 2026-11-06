@@ -75,7 +75,7 @@ No se dispone de información suficiente para comparar directamente Bernini-R co
 
 ## Enlaces
 
-- Repositorio HuggingFace del paquete: https://huggingface.co/fal/Bernini-R-Aux-FlashPack
+- Repositorio Hugging Face del paquete: https://huggingface.co/fal/Bernini-R-Aux-FlashPack
 - Modelo oficial Bernini-R (ByteDance): https://huggingface.co/ByteDance/Bernini-R
 - Modelo Bernini-R en formato diffusers: https://huggingface.co/ByteDance/Bernini-R-Diffusers
 - Modelo base Wan2.2-T2V-A14B: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B-Diffusers

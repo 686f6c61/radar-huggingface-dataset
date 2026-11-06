@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`divy318/multilingual-stt-model` es un modelo de reconocimiento automatico del habla (ASR) publicado en HuggingFace por el usuario divy318. Se trata de un fine-tuning del modelo Meta MMS-300M, concretamente sobre la clase `Wav2Vec2ForCTC`, orientado a la transcripcion de audio en tres idiomas: gujarati (`gu`), hindi (`hi`) e ingles (`en`). El modelo cuenta con 315.694.970 parametros y un repositorio de 1,4 GB en formato safetensors.
+`divy318/multilingual-stt-model` es un modelo de reconocimiento automatico del habla (ASR) publicado en Hugging Face por el usuario divy318. Se trata de un fine-tuning del modelo Meta MMS-300M, concretamente sobre la clase `Wav2Vec2ForCTC`, orientado a la transcripcion de audio en tres idiomas: gujarati (`gu`), hindi (`hi`) e ingles (`en`). El modelo cuenta con 315.694.970 parametros y un repositorio de 1,4 GB en formato safetensors.
 
 El modelo se presenta como una solucion "trilingual" para transcripcion de voz, entrenada sobre un corpus declarado de 41,77 horas de audio verificado. Su relevancia radica en cubrir una combinacion linguistica poco frecuente (gujarati-hindi-ingles) dentro del ecosistema open source, aunque los resultados declarados por el propio autor muestran un rendimiento muy desigual entre idiomas, con tasas de error especialmente altas en hindi.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 | Modelo | Parametros | Idiomas | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `divy318/multilingual-stt-model` | 315,7 M | gu, hi, en | audio 16 kHz | MIT | HuggingFace |
-| Meta MMS-300M (modelo base) | 315,7 M | ~1100 idiomas | audio 16 kHz | CC-BY-NC 4.0 | HuggingFace (`facebook/mms-300m`) |
-| Whisper small | ~244 M | ~99 idiomas | audio 16 kHz | MIT | HuggingFace / OpenAI |
-| Whisper medium | ~769 M | ~99 idiomas | audio 16 kHz | MIT | HuggingFace / OpenAI |
+| `divy318/multilingual-stt-model` | 315,7 M | gu, hi, en | audio 16 kHz | MIT | Hugging Face |
+| Meta MMS-300M (modelo base) | 315,7 M | ~1100 idiomas | audio 16 kHz | CC-BY-NC 4.0 | Hugging Face (`facebook/mms-300m`) |
+| Whisper small | ~244 M | ~99 idiomas | audio 16 kHz | MIT | Hugging Face / OpenAI |
+| Whisper medium | ~769 M | ~99 idiomas | audio 16 kHz | MIT | Hugging Face / OpenAI |
 
 El modelo hereda el tamano de MMS-300M pero restringe los idiomas a tres, lo que en teoria deberia mejorar la precision en esos idiomas frente al modelo base, si bien no se aportan comparaciones directas. Frente a Whisper small o medium, el modelo de divy318 es mas ligero que Whisper medium y comparte licencia MIT, pero carece de la madurez, el soporte comunitario y las evaluaciones publicas de la familia Whisper. No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -93,7 +93,7 @@ El modelo hereda el tamano de MMS-300M pero restringe los idiomas a tres, lo que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/divy318/multilingual-stt-model
+- Modelo en Hugging Face: https://huggingface.co/divy318/multilingual-stt-model
 - Modelo base Meta MMS-300M: https://huggingface.co/facebook/mms-300m
 - Paper MMS (Massively Multilingual Speech, Meta AI): https://arxiv.org/abs/2305.13516
 - Documentacion de `Wav2Vec2ForCTC` en Transformers: https://huggingface.co/docs/transformers/model_doc/wav2vec2

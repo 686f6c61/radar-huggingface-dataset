@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ThirdTimesTheCiarc/base_gigawatts` es un modelo alojado en HuggingFace con acceso restringido (gated), lo que implica que para descargarlo o utilizarlo es necesario aceptar condiciones previas en la plataforma. Fue creado el 2 de enero de 2026 y actualizado el 18 de agosto de 2026, con un tamaño de repositorio de 140,9 GB, lo que sugiere que podría tratarse de un modelo de gran escala, aunque no se dispone de confirmación oficial.
+El repositorio `ThirdTimesTheCiarc/base_gigawatts` es un modelo alojado en Hugging Face con acceso restringido (gated), lo que implica que para descargarlo o utilizarlo es necesario aceptar condiciones previas en la plataforma. Fue creado el 2 de enero de 2026 y actualizado el 18 de agosto de 2026, con un tamaño de repositorio de 140,9 GB, lo que sugiere que podría tratarse de un modelo de gran escala, aunque no se dispone de confirmación oficial.
 
 La información pública disponible es extremadamente limitada: no se especifican arquitectura, número de parámetros, licencia, idiomas soportados ni pipeline de uso. Los resultados de búsqueda web no aportan datos técnicos sobre el modelo, sino que se centran en el concepto de "gigavatios" en infraestructura de IA, sin relación directa con este repositorio. Por tanto, cualquier evaluación técnica debe considerarse provisional hasta que se publique documentación adicional.
 
@@ -45,7 +45,7 @@ No disponible. No se puede comparar con otros modelos porque se desconocen sus c
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso comercial o de investigación según los términos que el autor establezca.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso comercial o de investigación según los términos que el autor establezca.
 - Ausencia de documentación: no hay papers, blogs ni guías técnicas asociadas al repositorio.
 - Riesgo de sesgos y alucinaciones: desconocidos, al no existir evaluaciones publicadas.
 - Formato de pesos: solo safetensors, sin cuantizaciones precalculadas ni versiones GGUF, lo que dificulta su uso en entornos con recursos limitados.
@@ -54,7 +54,7 @@ No disponible. No se puede comparar con otros modelos porque se desconocen sus c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ThirdTimesTheCiarc/base_gigawatts
+- Repositorio en Hugging Face: https://huggingface.co/ThirdTimesTheCiarc/base_gigawatts
 - Árbol de archivos: https://huggingface.co/ThirdTimesTheCiarc/base_gigawatts/tree/main
 - Resultados de búsqueda web (sin relación directa con el modelo):  
   - https://jasperbernaers.com/ai-gigawatts/  

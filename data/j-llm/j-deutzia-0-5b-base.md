@@ -2,7 +2,7 @@
 
 ## Resumen
 
-J-Deutzia-0.5B-Base es un modelo de lenguaje base en japonés desarrollado por la organización j-llm, publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de tipo Mixture of Experts (MoE) con preentrenamiento continuado sobre japonés, diseñado como punto de partida para tareas de generación de texto en este idioma. Su tamaño es muy reducido: 469M de parámetros totales según la model card (533,7 millones contando los pesos reales en safetensors), de los cuales solo 199M están activos por token gracias a su arquitectura de 4 expertos con selección top-1.
+J-Deutzia-0.5B-Base es un modelo de lenguaje base en japonés desarrollado por la organización j-llm, publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de tipo Mixture of Experts (MoE) con preentrenamiento continuado sobre japonés, diseñado como punto de partida para tareas de generación de texto en este idioma. Su tamaño es muy reducido: 469M de parámetros totales según la model card (533,7 millones contando los pesos reales en safetensors), de los cuales solo 199M están activos por token gracias a su arquitectura de 4 expertos con selección top-1.
 
 Su relevancia reside en la combinación de tres factores: especialización en japonés mediante preentrenamiento continuado, eficiencia computacional derivada de la activación dispersa de expertos, y una licencia permisiva que permite uso comercial. Con una ventana de contexto de 16.384 tokens y un vocabulario de 72k tokens, es un candidato interesante para despliegues ligeros de generación de texto en japonés donde el coste de inferencia es una restricción importante.
 
@@ -82,6 +82,6 @@ J-Deutzia destaca frente a modelos densos de tamano similar por su menor coste c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/j-llm/J-Deutzia-0.5B-Base
+- Modelo en Hugging Face: https://huggingface.co/j-llm/J-Deutzia-0.5B-Base
 - Organizacion j-llm: https://huggingface.co/j-llm
 - Paper, blog o repositorio de GitHub: no disponible

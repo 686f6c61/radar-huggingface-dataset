@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`algonzalezce/efficientformer-matching` es un repositorio de HuggingFace que contiene una implementación personalizada en PyTorch de la arquitectura EfficientFormer, configurada en escala "xlarge" y orientada a tareas de *matching* (emparejamiento). Lo publica el usuario algonzalezce y no procede de un laboratorio de investigación con infraestructura de entrenamiento a gran escala. El propio autor lo describe explícitamente como un punto de partida experimental para revisión de código, *smoke tests* y pequeños experimentos controlados, no como un modelo preentrenado listo para producción.
+`algonzalezce/efficientformer-matching` es un repositorio de Hugging Face que contiene una implementación personalizada en PyTorch de la arquitectura EfficientFormer, configurada en escala "xlarge" y orientada a tareas de *matching* (emparejamiento). Lo publica el usuario algonzalezce y no procede de un laboratorio de investigación con infraestructura de entrenamiento a gran escala. El propio autor lo describe explícitamente como un punto de partida experimental para revisión de código, *smoke tests* y pequeños experimentos controlados, no como un modelo preentrenado listo para producción.
 
 El dato más relevante es que el checkpoint `model.safetensors` es una inicialización válida pero no entrenada: el repositorio no reclama ninguna puntuación de benchmark ni presenta resultados de evaluación. El recuento real de parámetros en safetensors es de 33.088, un tamaño extremadamente reducido que confirma que no se trata de un EfficientFormer xlarge completo (la variante xlarge original de EfficientFormer ronda las decenas de millones de parámetros), sino de una implementación de juguete o un esqueleto de arquitectura.
 
@@ -76,5 +76,5 @@ No disponible. No se conocen modelos comparables en la misma categoría (impleme
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/algonzalezce/efficientformer-matching
+- Repositorio en Hugging Face: https://huggingface.co/algonzalezce/efficientformer-matching
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

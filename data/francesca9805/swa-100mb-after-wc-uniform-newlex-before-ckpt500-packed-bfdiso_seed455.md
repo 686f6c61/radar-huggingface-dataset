@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `swa-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455` es un ajuste fino de tipo SFT (supervised fine-tuning) publicado por el usuario `francesca9805` en HuggingFace. Se trata de un modelo pequeño, con 124.770.816 parámetros totales (aproximadamente 124,8 millones), construido sobre la arquitectura GPT-2 según las etiquetas del repositorio, y derivado a su vez del modelo `francesca9805/ppt-wc-uniform-newlex-swa-before-100mb-packed-bfdiso_seed455`. El entrenamiento se realizó con la librería TRL en su versión 0.23.0 sobre Transformers 4.56.2.
+El modelo `swa-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455` es un ajuste fino de tipo SFT (supervised fine-tuning) publicado por el usuario `francesca9805` en Hugging Face. Se trata de un modelo pequeño, con 124.770.816 parámetros totales (aproximadamente 124,8 millones), construido sobre la arquitectura GPT-2 según las etiquetas del repositorio, y derivado a su vez del modelo `francesca9805/ppt-wc-uniform-newlex-swa-before-100mb-packed-bfdiso_seed455`. El entrenamiento se realizó con la librería TRL en su versión 0.23.0 sobre Transformers 4.56.2.
 
 El nombre del repositorio sugiere que forma parte de una línea de experimentos sobre tokenizadores y datos de entrenamiento (`new-tokenizers` en Weights & Biases), con variantes que indican un subconjunto de datos de aproximadamente 100 MB, empaquetado de secuencias (*packed*), precisión bfloat16 y una semilla concreta (455). El sufijo "before-ckpt500" apunta a un punto de control extraído antes del *checkpoint* 500 del entrenamiento. Ninguna de estas interpretaciones está confirmada explícitamente en la model card.
 
@@ -37,7 +37,7 @@ El entrenamiento se realizó mediante SFT con TRL 0.23.0 (Transformers 4.56.2, P
 
 - Generacion de texto autoregresiva en el pipeline `text-generation` de Transformers, incluyendo el formato de conversacion con lista de mensajes `{"role": "user", "content": ...}` que aparece en el ejemplo de la model card.
 - Ajuste fino supervisado: el modelo ha sido entrenado con SFT, por lo que previsiblemente sigue instrucciones o estilos presentes en el corpus de ajuste, aunque no se documenta el formato exacto.
-- Compatibilidad declarada con text-generation-inference y con endpoints de HuggingFace (etiquetas `text-generation-inference` y `endpoints_compatible`).
+- Compatibilidad declarada con text-generation-inference y con endpoints de Hugging Face (etiquetas `text-generation-inference` y `endpoints_compatible`).
 - No hay evidencia de soporte de *tool calling*, *function calling*, uso como agente, razonamiento multi-paso, vision, audio ni modo de razonamiento explicito (*thinking mode*).
 - Capacidades multilingues: no disponibles; no se declara ningun idioma en la ficha.
 - No se documentan capacidades de generacion de codigo ni de matematicas mas alla de lo que un modelo GPT-2 pequeno pueda ofrecer de forma generica.
@@ -64,17 +64,17 @@ La model card no incluye tablas de evaluacion, y los unicos datos cuantitativos 
 - VRAM estimada en fp16/bf16: en torno a 250 MB de pesos, con un total operativo de 0,7-1 GB.
 - VRAM estimada en cuantizacion de 8 bits: unos 125 MB de pesos; en 4 bits, unos 70-80 MB. Estas estimaciones son teoricas, ya que no se publican pesos cuantizados para este modelo.
 - Cabe holgadamente en cualquier GPU consumer: RTX 3060, RTX 4060, RTX 4090, e incluso en GPUs con 4 GB o menos. Tambien es viable la inferencia en CPU con un rendimiento aceptable para uso interactivo.
-- Opciones de despliegue: Transformers con `pipeline("text-generation")`, text-generation-inference (TGI) y endpoints de HuggingFace estan soportados por las etiquetas del repositorio. Llama.cpp u Ollama requeririan convertir los pesos a GGUF, paso no documentado ni verificado.
+- Opciones de despliegue: Transformers con `pipeline("text-generation")`, text-generation-inference (TGI) y endpoints de Hugging Face estan soportados por las etiquetas del repositorio. Llama.cpp u Ollama requeririan convertir los pesos a GGUF, paso no documentado ni verificado.
 - Latencia y throughput: no disponibles. Para orientar, un transformer decoder-only de 124,8 M de parametros en una GPU moderna suele generar decenas o cientos de tokens por segundo, pero no hay mediciones publicadas para este modelo concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| swa-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455 | 124,8 M | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | Gaokao, LAMBADA y otros publicados por OpenAI | MIT | Ampliamente disponible en HuggingFace |
-| DistilGPT-2 (distilbert/distilgpt2) | 82 M | 1024 tokens | Resultados publicados en el paper de destilacion | Apache 2.0 | Ampliamente disponible en HuggingFace |
-| GPT-2 medium (openai-community/gpt2-medium) | 355 M | 1024 tokens | Publicados por OpenAI | MIT | Ampliamente disponible en HuggingFace |
+| swa-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455 | 124,8 M | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | Gaokao, LAMBADA y otros publicados por OpenAI | MIT | Ampliamente disponible en Hugging Face |
+| DistilGPT-2 (distilbert/distilgpt2) | 82 M | 1024 tokens | Resultados publicados en el paper de destilacion | Apache 2.0 | Ampliamente disponible en Hugging Face |
+| GPT-2 medium (openai-community/gpt2-medium) | 355 M | 1024 tokens | Publicados por OpenAI | MIT | Ampliamente disponible en Hugging Face |
 
 La comparacion relevante es de encaje, no de rendimiento: este modelo comparte escala con GPT-2 small, pero no hereda su licencia permisiva ni cuenta con evaluaciones que permitan situarlo frente a alternativas. Los datos de GPT-2 y DistilGPT-2 proceden de sus fichas publicas; los de este modelo son "no disponible".
 
@@ -92,9 +92,9 @@ La comparacion relevante es de encaje, no de rendimiento: este modelo comparte e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swa-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swa-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-swa-before-100mb-packed-bfdiso_seed455
 - Panel de entrenamiento en Weights & Biases (proyecto `new-tokenizers`, ejecucion `epudy1r0`): https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/epudy1r0
 - Repositorio de TRL: https://github.com/huggingface/trl
 
-Nota: la busqueda web asociada a este modelo no ha devuelto ningun resultado relacionado con el mismo, ni papers, ni blogs, ni repositorios, ni demos adicionales. Los unicos enlaces relevantes son los que figuran en la propia model card y en los metadatos de HuggingFace.
+Nota: la busqueda web asociada a este modelo no ha devuelto ningun resultado relacionado con el mismo, ni papers, ni blogs, ni repositorios, ni demos adicionales. Los unicos enlaces relevantes son los que figuran en la propia model card y en los metadatos de Hugging Face.

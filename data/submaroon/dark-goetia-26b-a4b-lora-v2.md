@@ -103,7 +103,7 @@ Los adaptadores v3-A y v3-B dividen el conjunto de objetivos de v2 en dos mitade
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SubMaroon/Dark-Goetia-26B-A4B-LoRA-v2
+- Repositorio Hugging Face: https://huggingface.co/SubMaroon/Dark-Goetia-26B-A4B-LoRA-v2
 - Version GGUF: https://huggingface.co/SubMaroon/Dark-Goetia-26B-A4B-LoRA-v2-GGUF
 - Modelo base: https://huggingface.co/Naphula/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA
 - Adaptador v3-A: https://huggingface.co/SubMaroon/Dark-Goetia-26B-A4B-LoRA-v3-A

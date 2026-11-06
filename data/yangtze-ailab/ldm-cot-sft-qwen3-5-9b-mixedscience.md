@@ -76,7 +76,7 @@ La comparativa se limita a los modelos directamente relacionados, ya que no se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yangtze-ailab/LDM-CoT-SFT-Qwen3.5-9B-MixedScience
+- Modelo en Hugging Face: https://huggingface.co/Yangtze-ailab/LDM-CoT-SFT-Qwen3.5-9B-MixedScience
 - Dataset de entrenamiento: https://huggingface.co/datasets/Yangtze-ailab/LDM-CoT-SFT-16K
 - Modelo compañero (GP visible): https://huggingface.co/Yangtze-ailab/LDM-SFT-Qwen3.5-9B-MixedScience
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

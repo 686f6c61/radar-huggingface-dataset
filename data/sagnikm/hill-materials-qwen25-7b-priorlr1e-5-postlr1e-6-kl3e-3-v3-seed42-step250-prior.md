@@ -4,7 +4,7 @@
 
 Se trata de un ajuste fino (fine-tune) del modelo Qwen2.5-7B, publicado por el usuario sagnikM bajo el identificador `hill-materials-qwen25-7b-priorlr1e-5-postlr1e-6-kl3e-3-v3-seed42-step250-prior`. Por la nomenclatura del repositorio, el modelo pertenece a una familia de experimentos del mismo autor centrados en dominios cientificos, en concreto materiales ("materials"), junto a variantes hermanas como `hill-chem-qwen25-7b` y `hill-materials-qwen25-3b`. El sufijo del nombre codifica los hiperparametros del entrenamiento: learning rate previo de 1e-5, learning rate posterior de 1e-6, coeficiente KL de 3e-3, version 3, semilla 42 y checkpoint del paso 250, etiquetado como "prior".
 
-El modelo no dispone de model card, pipeline declarado, licencia ni lista de idiomas en su repositorio de HuggingFace, y cuenta con un numero muy reducido de descargas (7) y cero likes, lo que indica que es un artefacto de investigacion mas que un modelo listo para produccion. El repositorio ocupa 15,2 GB y contiene pesos en formato safetensors, coherentes con un modelo de 7.615.616.512 parametros en precision BF16.
+El modelo no dispone de model card, pipeline declarado, licencia ni lista de idiomas en su repositorio de Hugging Face, y cuenta con un numero muy reducido de descargas (7) y cero likes, lo que indica que es un artefacto de investigacion mas que un modelo listo para produccion. El repositorio ocupa 15,2 GB y contiene pesos en formato safetensors, coherentes con un modelo de 7.615.616.512 parametros en precision BF16.
 
 Su relevancia es limitada y de nicho: sirve como checkpoint intermedio de un proceso de ajuste con regularizacion KL sobre Qwen2.5-7B, probablemente orientado a tareas de materiales o quimica, pero al carecer de documentacion no es posible verificar su comportamiento, sus datos de entrenamiento ni sus condiciones de uso.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM con cuantizacion a 4 bits: aproximadamente 5-6 GB (requiere convertir a GGUF/AWQ/GPTQ, no incluido en el repositorio).
 - GPU recomendadas en precision completa: A100 40/80 GB, H100, L40S; en una sola GPU de 24 GB cabe en BF16 justo al limite.
 - GPU de consumo: cabe en RTX 3090, RTX 4090 o RTX 5090 (24 GB) en BF16 con margen limitado, y con holgura en 4 bits.
-- Opciones de despliegue: transformers (HuggingFace) directamente; vLLM o TGI para servido en BF16; llama.cpp u Ollama solo tras convertir a GGUF, ya que el repositorio no incluye ese formato.
+- Opciones de despliegue: transformers (Hugging Face) directamente; vLLM o TGI para servido en BF16; llama.cpp u Ollama solo tras convertir a GGUF, ya que el repositorio no incluye ese formato.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ La comparacion con modelos oficiales solo es orientativa: no hay datos de rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sagnikM/hill-materials-qwen25-7b-priorlr1e-5-postlr1e-6-kl3e-3-v3-seed42-step250-prior
+- Modelo en Hugging Face: https://huggingface.co/sagnikM/hill-materials-qwen25-7b-priorlr1e-5-postlr1e-6-kl3e-3-v3-seed42-step250-prior
 - Variante de 3B del mismo autor (hill-materials-qwen25-3b): https://huggingface.co/sagnikM/hill-materials-qwen25-3b-priorlr1e-6-postlr1e-6-kl3e-4-v3-seed42-step250-prior
 - Variante de quimica (hill-chem-qwen25-7b): https://huggingface.co/sagnikM/hill-chem-qwen25-7b-priorlr1e-5-postlr1e-6-kl3e-4-1024x1024-seed42-step250-reasoner
 - Informe tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115

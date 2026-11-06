@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo verificables para establecer u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OpenIntelligenceNet/Spark-X2.6-1.7B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/OpenIntelligenceNet/Spark-X2.6-1.7B-Uncensored-GGUF
 - Modelo base abliterado: https://huggingface.co/OpenIntelligenceNet/Spark-X2.6-1.7B-Abliterated
 - Modelo original Spark-X2.6-1.7B: https://huggingface.co/XHToken/Spark-X2.6-1.7B
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código o demos adicionales.

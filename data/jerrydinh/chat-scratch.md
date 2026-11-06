@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `jerrydinh/chat-scratch` alojado en HuggingFace no contiene un modelo de inteligencia artificial, sino un documento de notas académicas (`paper_notes.md`) sobre el tema "OCR freeform". El autor, `jerrydinh`, ha estructurado el contenido siguiendo un formato de artículo científico (abstract, introducción, preliminares, método, experimentos y discusión) con estilo de escritura "empirical focused" y citas en formato EndNote.
+El repositorio `jerrydinh/chat-scratch` alojado en Hugging Face no contiene un modelo de inteligencia artificial, sino un documento de notas académicas (`paper_notes.md`) sobre el tema "OCR freeform". El autor, `jerrydinh`, ha estructurado el contenido siguiendo un formato de artículo científico (abstract, introducción, preliminares, método, experimentos y discusión) con estilo de escritura "empirical focused" y citas en formato EndNote.
 
 A pesar de su nombre, que podría sugerir un chatbot o un modelo de lenguaje, el repositorio es únicamente un artefacto de documentación. No se incluyen pesos, arquitectura, código de entrenamiento ni ningún recurso que permita su uso como modelo de IA. La licencia es MIT, pero esto aplica únicamente al documento de notas, no a un modelo.
 
@@ -62,7 +62,7 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/jerrydinh/chat-strict](https://huggingface.co/jerrydinh/chat-strict)
+- Repositorio en Hugging Face: [https://huggingface.co/jerrydinh/chat-strict](https://huggingface.co/jerrydinh/chat-strict)
 - CreatiCode (Scratch + IA): [https://www.creaticode.com/](https://www.creaticode.com/) — no está relacionado con este repositorio, pero aparece en la búsqueda.
 - ChatGPT: [https://chatgpt.com/](https://chatgpt.com/) — no relacionado.
 - Hilo de Scratch sobre GPT: [https://scratch.mit.edu/discuss/topic/686659/](https://scratch.mit.edu/discuss/topic/686659/) — no relacionado.

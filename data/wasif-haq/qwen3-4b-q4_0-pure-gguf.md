@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Q4_0-pure-GGUF es una cuantización del modelo Qwen3-4B de Alibaba Qwen, publicada por el usuario wasif-haq en HuggingFace. Se trata de una conversión directa a formato GGUF para llama.cpp, cuantizada a 4 bits con la variante Q4_0 aplicada de forma "pura", es decir, a todos los tensores del modelo incluyendo los embeddings de tokens y la capa de salida. No hay fine-tuning ni modificación de los pesos: es el modelo original de Qwen redondeado a 4 bits.
+Qwen3-4B-Q4_0-pure-GGUF es una cuantización del modelo Qwen3-4B de Alibaba Qwen, publicada por el usuario wasif-haq en Hugging Face. Se trata de una conversión directa a formato GGUF para llama.cpp, cuantizada a 4 bits con la variante Q4_0 aplicada de forma "pura", es decir, a todos los tensores del modelo incluyendo los embeddings de tokens y la capa de salida. No hay fine-tuning ni modificación de los pesos: es el modelo original de Qwen redondeado a 4 bits.
 
 El modelo base Qwen3-4B es un transformer denso de 4.022 millones de parámetros (aproximadamente 4B), diseñado para generación de texto, razonamiento y conversación. Esta versión cuantizada ocupa 2,27 GB en disco (2.269.269.472 bytes), lo que la hace apta para ejecución en dispositivos con recursos limitados mediante llama.cpp.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wasif-haq/Qwen3-4B-Q4_0-pure-GGUF | 4.022.468.096 | no disponible | Q4_0 puro (todos los tensores) | Apache 2.0 | HuggingFace, 40 descargas |
-| Qwen/Qwen3-4B (base) | 4.022.468.096 | no disponible | safetensors en precision original | Apache 2.0 | HuggingFace (modelo oficial) |
-| Otras cuantizaciones GGUF de Qwen3-4B | 4.022.468.096 | no disponible | variantes mixtas (Q4_K_M, Q5_K_M, etc.) | Apache 2.0 | HuggingFace |
+| wasif-haq/Qwen3-4B-Q4_0-pure-GGUF | 4.022.468.096 | no disponible | Q4_0 puro (todos los tensores) | Apache 2.0 | Hugging Face, 40 descargas |
+| Qwen/Qwen3-4B (base) | 4.022.468.096 | no disponible | safetensors en precision original | Apache 2.0 | Hugging Face (modelo oficial) |
+| Otras cuantizaciones GGUF de Qwen3-4B | 4.022.468.096 | no disponible | variantes mixtas (Q4_K_M, Q5_K_M, etc.) | Apache 2.0 | Hugging Face |
 
 La diferencia frente al modelo base es exclusivamente la precisión de los pesos: esta versión reduce el tamaño a 2,27 GB a cambio de la pérdida de calidad inherente a 4 bits. Frente a otras cuantizaciones GGUF del mismo modelo, la particularidad es el modo `--pure`, que no deja embeddings ni capa de salida en mayor precisión. No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -80,7 +80,7 @@ La diferencia frente al modelo base es exclusivamente la precisión de los pesos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wasif-haq/Qwen3-4B-Q4_0-pure-GGUF
+- Repositorio Hugging Face: https://huggingface.co/wasif-haq/Qwen3-4B-Q4_0-pure-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-4B/blob/main/LICENSE
 - llama.cpp: no disponible en la información proporcionada (el autor cita la versión b11836 sin enlace)

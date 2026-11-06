@@ -2,7 +2,7 @@
 
 ## Resumen
 
-laya-nli-conflict-v12-r1 es un modelo de clasificacion de texto (pipeline `text-classification`) publicado por el usuario Modusnsus en HuggingFace. Se trata de un ajuste fino del modelo `convaiinnovations/laya-multilingual` orientado a la deteccion de conflictos de memoria (memory-conflict) mediante inferencia de relacion textual (NLI), con etiquetas del tipo compatibilidad, negacion y contradiccion. El repositorio se presenta explicitamente como un "archivo hermano de investigacion" (research sibling archive) y no como la cabeza entregada del proyecto.
+laya-nli-conflict-v12-r1 es un modelo de clasificacion de texto (pipeline `text-classification`) publicado por el usuario Modusnsus en Hugging Face. Se trata de un ajuste fino del modelo `convaiinnovations/laya-multilingual` orientado a la deteccion de conflictos de memoria (memory-conflict) mediante inferencia de relacion textual (NLI), con etiquetas del tipo compatibilidad, negacion y contradiccion. El repositorio se presenta explicitamente como un "archivo hermano de investigacion" (research sibling archive) y no como la cabeza entregada del proyecto.
 
 El modelo es la ejecucion r1 del protocolo de tres ejecuciones de la version v12, y segun la model card las 14 ejes de validacion (gate axes) se superaron. La cabeza entregada es la ejecucion r2, `Modusnsus/laya-nli-conflict-v12`, seleccionada por ser la unica con las tres baterias de aceptacion a puntuacion completa. El autor indica que los pesos de r1 nunca deben servirse, por lo que su utilidad es la inspeccion de varianza entre ejecuciones, no el despliegue en produccion.
 
@@ -27,7 +27,7 @@ El artefacto pesa 643.835.524 bytes en un unico fichero `model.safetensors`, con
 | Ficheros auxiliares | `rl_agent_config.json` (umbral tau y configuracion), `val_probs.json` (probabilidades por fila de validacion) |
 | Estado del repositorio | Archivo de investigacion; los pesos no deben servirse en produccion |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de creacion | 2026-10-06 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-06 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -116,7 +116,7 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Modusnsus/laya-nli-conflict-v12-r1
+- Repositorio de Hugging Face: https://huggingface.co/Modusnsus/laya-nli-conflict-v12-r1
 - Cabeza entregada (r2): https://huggingface.co/Modusnsus/laya-nli-conflict-v12
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Protocolo y handoff del autor: https://github.com/modusensus/laya/blob/main/kaggle_eval/HANDOFF_NLI_V12.md

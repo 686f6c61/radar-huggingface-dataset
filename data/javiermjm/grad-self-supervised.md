@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Javiermjm/grad-self-supervised` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en HuggingFace bajo el identificador del usuario Javiermjm. La model card lo describe explícitamente como una "exploratory note" sobre aprendizaje auto-supervisado (self-supervised learning) que recoge el planteamiento de una comparación experimental, los posibles factores de confusión y los requisitos de reproducibilidad, sin presentar resultados de benchmarks ni afirmar mejoras sobre ninguna línea base. El repositorio contiene únicamente dos ficheros de texto, `notes.md` y `README.md`, y ocupa 0,0 GB.
+`Javiermjm/grad-self-supervised` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en Hugging Face bajo el identificador del usuario Javiermjm. La model card lo describe explícitamente como una "exploratory note" sobre aprendizaje auto-supervisado (self-supervised learning) que recoge el planteamiento de una comparación experimental, los posibles factores de confusión y los requisitos de reproducibilidad, sin presentar resultados de benchmarks ni afirmar mejoras sobre ninguna línea base. El repositorio contiene únicamente dos ficheros de texto, `notes.md` y `README.md`, y ocupa 0,0 GB.
 
 El peso en safetensors asociado al repositorio declara 16.576 parámetros, una cifra que no corresponde a ningún transformer funcional y que es coherente con un artefacto residual de inicialización o con tensores auxiliares mínimos. No existe checkpoint entrenado, tokenizador, configuración de arquitectura ni pipeline de inferencia declarado en la información disponible. La etiqueta `transformer` aparece en los tags del repositorio, pero la model card no describe ninguna arquitectura concreta, ninguna composición de dataset ni ningún proceso de alineación (RLHF, DPO u otros).
 
@@ -88,7 +88,7 @@ No disponible. Este repositorio no es comparable con modelos de la misma categor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Javiermjm/grad-self-supervised
+- Repositorio en Hugging Face: https://huggingface.co/Javiermjm/grad-self-supervised
 - Self-Supervised Learning (SSL), GeeksforGeeks: https://www.geeksforgeeks.org/machine-learning/self-supervised-learning-ssl/
 - Self-supervised learning, Wikipedia: https://en.wikipedia.org/wiki/Self-supervised_learning
 - Jev (AI model), Wikipedia: https://en.wikipedia.org/wiki/Jev_(AI_model)

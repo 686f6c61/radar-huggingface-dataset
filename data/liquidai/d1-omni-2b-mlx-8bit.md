@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en l
 
 | Modelo | Parametros | Modalidades | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| d1-Omni-2B-MLX-8bit | 2.167 M | Texto, imagen, vídeo, audio | Probabilidades calibradas, sin generación | lfm1.0 | HuggingFace (MLX, Apple Silicon) |
-| d1-Omni-2B (base) | 2.167 M | Texto, imagen, vídeo, audio | Probabilidades calibradas, sin generación | lfm1.0 | HuggingFace (checkpoint original, float32/FP16) |
-| LFM3-1.7B (Liquid AI) | No disponible en esta ficha | No disponible | Generación de texto | No disponible | HuggingFace, API y playground de Liquid AI |
+| d1-Omni-2B-MLX-8bit | 2.167 M | Texto, imagen, vídeo, audio | Probabilidades calibradas, sin generación | lfm1.0 | Hugging Face (MLX, Apple Silicon) |
+| d1-Omni-2B (base) | 2.167 M | Texto, imagen, vídeo, audio | Probabilidades calibradas, sin generación | lfm1.0 | Hugging Face (checkpoint original, float32/FP16) |
+| LFM3-1.7B (Liquid AI) | No disponible en esta ficha | No disponible | Generación de texto | No disponible | Hugging Face, API y playground de Liquid AI |
 
 No existen alternativas directamente comparables con datos públicos suficientes en la información disponible: los modelos de decisión multimodal calibrada sin generación de tokens son una categoría emergente. Como referencia indirecta, un modelo generativo de tamaño similar (2-3B) dedicado a clasificación requeriría decodificar tokens y calibrar salidas por ingeniería de prompt, con mayor latencia y menor garantía de calibración.
 

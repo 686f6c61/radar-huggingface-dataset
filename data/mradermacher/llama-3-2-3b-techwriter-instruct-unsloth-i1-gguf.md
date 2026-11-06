@@ -13,7 +13,7 @@ Su relevancia practica esta en el nicho: no compite en razonamiento general ni e
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder-only (familia Llama 3.2); ajuste fino con QLoRA/PEFT sobre el modelo base |
-| Parametros totales | 3.200 millones aprox. segun el nombre del modelo (Llama-3.2-3B). El campo de parametros de HuggingFace indica 745.668, valor no coincidente con el modelo completo y probablemente referido al adaptador LoRA |
+| Parametros totales | 3.200 millones aprox. segun el nombre del modelo (Llama-3.2-3B). El campo de parametros de Hugging Face indica 745.668, valor no coincidente con el modelo completo y probablemente referido al adaptador LoRA |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible en la model card de este repositorio; el modelo base Llama 3.2 3B soporta 128.000 tokens segun las especificaciones publicas de Meta |
 | Tipos de cuantizacion | Listado en los metadatos del repositorio: Q2_K, Q2_K_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, IQ4_NL (small) |
@@ -92,7 +92,7 @@ Frente a estas alternativas, la ventaja del modelo aqui descrito es la especiali
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/Llama-3.2-3B-TechWriter-Instruct-Unsloth-i1-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/Llama-3.2-3B-TechWriter-Instruct-Unsloth-i1-GGUF
 - Modelo base (ajuste fino LoRA): https://huggingface.co/Shankarblr/Llama-3.2-3B-TechWriter-Instruct-Unsloth
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Llama-3.2-3B-TechWriter-Instruct-Unsloth-GGUF
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Llama-3.2-3B-TechWriter-Instruct-Unsloth-i1-GGUF

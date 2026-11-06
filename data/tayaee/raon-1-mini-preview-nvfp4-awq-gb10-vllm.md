@@ -96,7 +96,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tayaee/Raon-1-mini-preview-NVFP4-AWQ-GB10-vLLM
+- Hugging Face: https://huggingface.co/tayaee/Raon-1-mini-preview-NVFP4-AWQ-GB10-vLLM
 - Modelo base: https://huggingface.co/KRAFTON/Raon-1-mini-preview
 - Fork de vLLM para GB10: https://github.com/tayaee/raon-vllm-spark/tree/gb10-support
 - Dataset GSM8K: https://huggingface.co/datasets/openai/gsm8k

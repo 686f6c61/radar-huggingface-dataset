@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Tareas principales | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kerasformers/locateanything_3b | 3B | 32K | Grounding, detección, OCR, GUI | NVIDIA (no comercial) | HuggingFace |
-| nvidia/LocateAnything-3B | 3B | 32K | Grounding, detección, OCR, GUI | NVIDIA (no comercial) | HuggingFace |
-| Qwen2.5-VL-3B | 3B | 32K | Visión-lenguaje general, VQA | Apache 2.0 | HuggingFace |
-| Florence-2 | 0.23B | - | Grounding, detección, OCR | MIT | HuggingFace |
+| kerasformers/locateanything_3b | 3B | 32K | Grounding, detección, OCR, GUI | NVIDIA (no comercial) | Hugging Face |
+| nvidia/LocateAnything-3B | 3B | 32K | Grounding, detección, OCR, GUI | NVIDIA (no comercial) | Hugging Face |
+| Qwen2.5-VL-3B | 3B | 32K | Visión-lenguaje general, VQA | Apache 2.0 | Hugging Face |
+| Florence-2 | 0.23B | - | Grounding, detección, OCR | MIT | Hugging Face |
 
 La comparativa con Qwen2.5-VL-3B es relevante porque LocateAnything usa su decodificador. La diferencia principal está en la especialización: LocateAnything está optimizado para grounding con Parallel Box Decoding, mientras que Qwen2.5-VL es un modelo general de visión-lenguaje. Florence-2 es un modelo mucho más pequeño y también especializado en grounding, pero con menor capacidad de razonamiento.
 

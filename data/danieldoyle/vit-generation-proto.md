@@ -63,4 +63,4 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/danieldoyle/vit-generation-proto
+- Hugging Face: https://huggingface.co/danieldoyle/vit-generation-proto

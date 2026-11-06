@@ -88,5 +88,5 @@ No disponible. La información proporcionada no permite comparar con otros runti
 
 ## Enlaces
 
-- HuggingFace del runtime: https://huggingface.co/manateelazycat/r2t2-runtime
+- Hugging Face del runtime: https://huggingface.co/manateelazycat/r2t2-runtime
 - Pesos del modelo (referenciado en la model card): https://huggingface.co/netease-youdao/Confucius4-R2T2

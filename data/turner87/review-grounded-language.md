@@ -63,5 +63,5 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/turner87/review-grounded-language
+- Repositorio en Hugging Face: https://huggingface.co/turner87/review-grounded-language
 - Referencia externa (no relacionada con este repositorio): blog de Contextual AI sobre su Grounded Language Model: https://contextual.ai/blog/introducing-grounded-language-model

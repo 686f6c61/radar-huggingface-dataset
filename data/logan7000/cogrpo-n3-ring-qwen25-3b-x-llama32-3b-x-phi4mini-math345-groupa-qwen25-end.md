@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cogrpo-n3-ring (este modelo) | 3B (base Qwen2.5-3B) | No disponible | No disponible | HuggingFace |
-| Qwen2.5-3B (base) | 3B | 32K (segun documentacion oficial) | Apache 2.0 | HuggingFace |
-| Llama-3.2-3B | 3B | 128K | Llama 3.2 Community License | HuggingFace |
-| Phi-4-mini | 3.8B | 128K | MIT | HuggingFace |
+| cogrpo-n3-ring (este modelo) | 3B (base Qwen2.5-3B) | No disponible | No disponible | Hugging Face |
+| Qwen2.5-3B (base) | 3B | 32K (segun documentacion oficial) | Apache 2.0 | Hugging Face |
+| Llama-3.2-3B | 3B | 128K | Llama 3.2 Community License | Hugging Face |
+| Phi-4-mini | 3.8B | 128K | MIT | Hugging Face |
 
 La comparacion se limita a caracteristicas generales, ya que no hay datos de rendimiento de este fine-tuning. El modelo base Qwen2.5-3B tiene una licencia permisiva (Apache 2.0), pero la licencia de este derivado no esta especificada, lo que puede limitar su uso comercial.
 
@@ -75,7 +75,7 @@ La comparacion se limita a caracteristicas generales, ya que no hay datos de ren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupA-qwen25-end
+- Modelo en Hugging Face: https://huggingface.co/logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupA-qwen25-end
 - Despliegue en FriendliAI: https://friendli.ai/models/q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupA-qwen25-end
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Repositorio de TRL: https://github.com/huggingface/trl

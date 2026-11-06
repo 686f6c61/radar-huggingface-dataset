@@ -80,10 +80,10 @@ Los tres tamaños de la familia resultan igual de inteligibles que las grabacion
 
 | Modelo | Parámetros | Idiomas | Contexto / salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kuyil 20M | 21,8 M (22,7 M con vocoder) | Tamil, inglés (latino) | Audio 16 kHz, 200 fotogramas por token | CC BY 4.0 | HuggingFace, código en GitHub |
-| Kuyil 5M | No disponible | Tamil, inglés (latino) | No disponible | CC BY 4.0 | HuggingFace |
-| Kuyil 1.4M | No disponible | Tamil, inglés (latino) | No disponible | CC BY 4.0 | HuggingFace |
-| PiVo-1.4M | 1,4 M | No disponible | No disponible | No disponible | HuggingFace (empero-ai) |
+| Kuyil 20M | 21,8 M (22,7 M con vocoder) | Tamil, inglés (latino) | Audio 16 kHz, 200 fotogramas por token | CC BY 4.0 | Hugging Face, código en GitHub |
+| Kuyil 5M | No disponible | Tamil, inglés (latino) | No disponible | CC BY 4.0 | Hugging Face |
+| Kuyil 1.4M | No disponible | Tamil, inglés (latino) | No disponible | CC BY 4.0 | Hugging Face |
+| PiVo-1.4M | 1,4 M | No disponible | No disponible | No disponible | Hugging Face (empero-ai) |
 
 La comparación con modelos TTS comerciales o de mayor tamaño no está disponible en la información proporcionada. Dentro de la propia familia Kuyil, los tres tamaños comparten inteligibilidad según el reconocedor y el mismo factor de tiempo real; la diferencia principal es el número de parámetros y, presumiblemente, la calidad percibida por oyentes nativos, que aún no se ha evaluado públicamente.
 
@@ -101,7 +101,7 @@ La comparación con modelos TTS comerciales o de mayor tamaño no está disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhagaramlabs/kuyil-20m
+- Modelo en Hugging Face: https://huggingface.co/zhagaramlabs/kuyil-20m
 - Código: https://github.com/zhagaramlabs/kuyil
 - Laboratorio: https://zhagaramlabs.com
 - Modelo kuyil-1.4m: https://huggingface.co/zhagaramlabs/kuyil-1.4m

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `billahaiml/cat-dog-resnet18` es un clasificador binario de imágenes basado en la arquitectura ResNet18, diseñado para distinguir entre dos clases: gato y perro. Fue desarrollado por el usuario billahaiml y publicado en HuggingFace bajo licencia MIT. Se trata de un proyecto de transfer learning que parte de los pesos preentrenados en ImageNet y se ajusta sobre un subconjunto de CIFAR-10 que contiene únicamente las clases de gato y perro, con un conjunto de entrenamiento reducido (100 imágenes por clase) y un conjunto de prueba igualmente pequeño (50 imágenes por clase). El modelo está pensado como una demostración didáctica del proceso de transfer learning, no como una solución lista para producción.
+El modelo `billahaiml/cat-dog-resnet18` es un clasificador binario de imágenes basado en la arquitectura ResNet18, diseñado para distinguir entre dos clases: gato y perro. Fue desarrollado por el usuario billahaiml y publicado en Hugging Face bajo licencia MIT. Se trata de un proyecto de transfer learning que parte de los pesos preentrenados en ImageNet y se ajusta sobre un subconjunto de CIFAR-10 que contiene únicamente las clases de gato y perro, con un conjunto de entrenamiento reducido (100 imágenes por clase) y un conjunto de prueba igualmente pequeño (50 imágenes por clase). El modelo está pensado como una demostración didáctica del proceso de transfer learning, no como una solución lista para producción.
 
 La relevancia de este modelo radica en su simplicidad y bajo coste computacional: al ser ResNet18, un modelo ligero de 11,7 millones de parámetros, puede ejecutarse en hardware modesto, incluso en CPU. El repositorio incluye un ejemplo de inferencia en Python con PyTorch, lo que facilita su uso en entornos educativos o de prototipado. No se han publicado métricas de rendimiento oficiales ni comparativas con otros clasificadores de gato/perro.
 
@@ -31,7 +31,7 @@ El dataset de entrenamiento proviene de CIFAR-10, del que se seleccionaron solo 
 ## Capacidades
 
 - Clasificación binaria de imágenes: predice si una imagen contiene un gato o un perro.
-- Inferencia con PyTorch y torchvision, mediante la carga de los pesos desde HuggingFace Hub.
+- Inferencia con PyTorch y torchvision, mediante la carga de los pesos desde Hugging Face Hub.
 - Soporte para inferencia en GPU o CPU (dependiendo de la disponibilidad de `torch.cuda`).
 - No tiene capacidades de generación de texto, razonamiento, tool calling, agentes, ni visión multilingüe. Es un clasificador de imagen de un solo propósito.
 
@@ -39,7 +39,7 @@ El dataset de entrenamiento proviene de CIFAR-10, del que se seleccionaron solo 
 
 - **Educación en aprendizaje profundo**: el modelo sirve como ejemplo práctico para enseñar transfer learning, fine-tuning y clasificación de imágenes en PyTorch. Su código de inferencia es simple y reproducible.
 - **Prototipado de sistemas de clasificación de mascotas**: en una aplicación de demostración que distinga entre gatos y perros, por ejemplo en una app móvil o web de ejemplo, sin requisitos de alta precisión.
-- **Pruebas de concepto en visión por computador**: para validar flujos de trabajo con HuggingFace Hub, descarga de pesos y carga de modelos con torchvision.
+- **Pruebas de concepto en visión por computador**: para validar flujos de trabajo con Hugging Face Hub, descarga de pesos y carga de modelos con torchvision.
 - **Integración en pipelines de inferencia de baja exigencia**: dado que el modelo es ligero, puede desplegarse en entornos con recursos limitados (CPU, dispositivos embebidos) para pruebas rápidas.
 - **Comparación de técnicas de transferencia**: permite analizar el efecto de congelar capas frente a fine-tuning, ya que el entrenamiento se documenta en dos etapas.
 - **Generación de datos para tutoriales**: las predicciones pueden usarse para crear ejemplos de visualización de resultados de clasificación.
@@ -58,12 +58,12 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 ## Comparativa con modelos similares
 
-No hay datos de benchmarks comparativos publicados. Se puede comparar cualitativamente con otros clasificadores de gatos/perros en HuggingFace, como `hilmansw/resnet18-catdog-classifier` (también basado en ResNet18, pero entrenado con el dataset de Kaggle "Cats & Dogs"). Sin embargo, no hay métricas oficiales para comparar. La tabla siguiente muestra una comparación cualitativa:
+No hay datos de benchmarks comparativos publicados. Se puede comparar cualitativamente con otros clasificadores de gatos/perros en Hugging Face, como `hilmansw/resnet18-catdog-classifier` (también basado en ResNet18, pero entrenado con el dataset de Kaggle "Cats & Dogs"). Sin embargo, no hay métricas oficiales para comparar. La tabla siguiente muestra una comparación cualitativa:
 
 | Modelo | Arquitectura | Dataset | Tamaño de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| billahaiml/cat-dog-resnet18 | ResNet18 | CIFAR-10 (100 img/clase) | 128x128 | MIT | HuggingFace |
-| hilmansw/resnet18-catdog-classifier | ResNet18 | Kaggle Cats & Dogs | no especificado | no disponible | HuggingFace |
+| billahaiml/cat-dog-resnet18 | ResNet18 | CIFAR-10 (100 img/clase) | 128x128 | MIT | Hugging Face |
+| hilmansw/resnet18-catdog-classifier | ResNet18 | Kaggle Cats & Dogs | no especificado | no disponible | Hugging Face |
 
 No se dispone de más detalles para una comparación cuantitativa.
 
@@ -78,10 +78,10 @@ No se dispone de más detalles para una comparación cuantitativa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/billahaiml/cat-dog-resnet18
+- Hugging Face: https://huggingface.co/billahaiml/cat-dog-resnet18
 - Referencia de búsqueda web (modelo similar): https://free2aitools.com/model/hilmansw/resnet18-catdog-classifier
 - Referencia de búsqueda web (modelo similar): https://model.aibase.com/models/details/1915741234871820290
 - Repositorio GitHub similar (no oficial): https://github.com/LingxiaoMa/dog_cat_resnet18
-- Modelo similar en HuggingFace: https://huggingface.co/hilmansw/resnet18-catdog-classifier
+- Modelo similar en Hugging Face: https://huggingface.co/hilmansw/resnet18-catdog-classifier
 
 Nota: los enlaces de búsqueda web corresponden a otros modelos de clasificación gato/perro con arquitectura similar, no al modelo exacto de billahaiml.

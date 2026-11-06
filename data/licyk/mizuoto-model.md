@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Contexto | No aplica | No aplica (audio) | No aplica |
 | Licencia | Per-model (mixta) | Apache 2.0 (ejemplo) | MPL-2.0 (tipicamente) |
 | Uso comercial | Restringido en varias carpetas | Segun licencia del motor | Generalmente permitido |
-| Disponibilidad | HuggingFace (espejo) | HuggingFace oficial | PyPI/GitHub |
+| Disponibilidad | Hugging Face (espejo) | Hugging Face oficial | PyPI/GitHub |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 - Sin garantias de mantenimiento: el repositorio depende de revisiones fijas de terceros y puede quedar desactualizado respecto a los repositorios oficiales.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/licyk/mizuoto-model
+- Repositorio Hugging Face: https://huggingface.co/licyk/mizuoto-model
 - Repositorio de la herramienta Mizuoto: https://github.com/licyk/Mizuoto
 - Licencias del repositorio: https://huggingface.co/licyk/mizuoto-model/blob/main/LICENSES.md
 - Origenes citados en la model card: https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B, https://huggingface.co/SWivid/F5-TTS, https://huggingface.co/fishaudio/drama-3, https://huggingface.co/IndexTeam/IndexTTS-2, https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base, https://huggingface.co/openai/whisper-large-v3-turbo, https://huggingface.co/iic/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-pytorch, https://huggingface.co/lj1995/GPT-SoVITS, https://huggingface.co/k2-fsa/OmniVoice, https://huggingface.co/nvidia/bigvgan_v2_22khz_80band_256x, https://huggingface.co/funasr/campplus, https://huggingface.co/amphion/MaskGCT, https://huggingface.co/facebook/w2v-bert-2.0

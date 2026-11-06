@@ -113,7 +113,7 @@ Frente a su base, la ganancia se concentra en tareas agénticas y en fiabilidad 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vwdubb/sabi-noema-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/vwdubb/sabi-noema-NVFP4
 - Modelo base (no cuantizado): https://huggingface.co/sabicap/sabi-noema
 - Variante con multi-head latent attention: https://huggingface.co/sabicap/sabi-noema-mla
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B

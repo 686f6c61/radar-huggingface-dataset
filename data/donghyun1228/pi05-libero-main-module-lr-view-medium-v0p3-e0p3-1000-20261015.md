@@ -65,7 +65,7 @@ No se dispone de datos de los modelos comparables en la informacion proporcionad
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-libero-main-module-lr-view-medium-v0p3-e0p3-1000-20261015 | no disponible | no disponible | sin evaluar | apache-2.0 | HuggingFace (0 descargas) |
+| pi05-libero-main-module-lr-view-medium-v0p3-e0p3-1000-20261015 | no disponible | no disponible | sin evaluar | apache-2.0 | Hugging Face (0 descargas) |
 | Modelo base pi05 (referencia en el nombre) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Otros candidatos de la busqueda de hiperparametros | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,5 +83,5 @@ No se dispone de datos de los modelos comparables en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-view-medium-v0p3-e0p3-1000-20261015
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-view-medium-v0p3-e0p3-1000-20261015
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

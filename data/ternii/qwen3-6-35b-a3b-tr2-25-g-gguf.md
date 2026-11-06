@@ -102,7 +102,7 @@ La ventaja principal frente a Q8_0 y BF16 es la reduccion de memoria (44 % y ~24
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ternii/Qwen3.6-35B-A3B-TR2.25-G-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Ternii/Qwen3.6-35B-A3B-TR2.25-G-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Checkpoint vLLM equivalente (TR2.25-G): https://huggingface.co/Ternii/Qwen3.6-35B-A3B-TR2.25-G
 - Repositorio del runtime parcheado: https://github.com/ternii-ai/tritq-vllm

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joseph-smith/mixer-classification-dev` es un repositorio de HuggingFace publicado por el usuario joseph-smith que contiene una implementación propia de una arquitectura tipo Mixer orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para producción: el propio autor lo describe como un "punto de partida reproducible" y el archivo `model.safetensors` se presenta explícitamente como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`joseph-smith/mixer-classification-dev` es un repositorio de Hugging Face publicado por el usuario joseph-smith que contiene una implementación propia de una arquitectura tipo Mixer orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para producción: el propio autor lo describe como un "punto de partida reproducible" y el archivo `model.safetensors` se presenta explícitamente como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El tamaño real del modelo es de 16.576 parámetros según el recuento de safetensors, lo que lo sitúa en el rango de prototipo experimental, no de modelo de propósito general. El repositorio ocupa 0,0 GB y contiene cuatro artefactos principales: `run.py` (implementación y punto de entrada de entrenamiento), `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (checkpoint sin entrenar).
 
@@ -23,7 +23,7 @@ Su relevancia es limitada y acotada al ámbito de la experimentación: sirve com
 | Activacion | ReLU |
 | Normalizacion | BatchNorm |
 | Optimizador por defecto | SGD con scheduler polinomial |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-30 |
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | MLP-Mixer (referencia conceptual, Tolstikhin et al., 2021) | decenas de millones a cientos de millones | segun configuracion | Vision y clasificacion | codigo abierto (JAX/Flax) | Modelo entrenado y con resultados publicados |
 | MLP de clasificacion tabular (scikit-learn, PyTorch) | 10^3 - 10^6 | no aplica | Clasificacion | BSD / MIT | Implementacion madura, entrenamiento a cargo del usuario |
 
-No se dispone de modelos estrictamente comparables dentro del ecosistema HuggingFace con esta combinacion concreta de arquitectura Mixer, atencion dilatada y fusion Tucker. La comparativa con MLP-Mixer se ofrece unicamente como referencia conceptual de la familia arquitectonica.
+No se dispone de modelos estrictamente comparables dentro del ecosistema Hugging Face con esta combinacion concreta de arquitectura Mixer, atencion dilatada y fusion Tucker. La comparativa con MLP-Mixer se ofrece unicamente como referencia conceptual de la familia arquitectonica.
 
 ## Limitaciones y advertencias
 
@@ -82,14 +82,14 @@ No se dispone de modelos estrictamente comparables dentro del ecosistema Hugging
 - No se especifican sesgos conocidos, pero tampoco se ha realizado ningun analisis al respecto.
 - No hay informacion sobre idiomas soportados ni sobre el idioma de los datos de entrenamiento (inexistentes).
 - No se declara longitud de contexto, por lo que no puede planificarse su uso en tareas de secuencias largas sin analizar el codigo.
-- Las APIs genericas de carga automatica de HuggingFace (por ejemplo `AutoModel`) no funcionaran sin un adaptador explicito, ya que es una implementacion personalizada.
+- Las APIs genericas de carga automatica de Hugging Face (por ejemplo `AutoModel`) no funcionaran sin un adaptador explicito, ya que es una implementacion personalizada.
 - La licencia BSD-3-Clause permite uso comercial y modificacion, pero los terminos de los datos de origen deben revisarse por separado si se entrena con datasets externos.
 - Los resultados de busqueda web asociados a este modelo no guardan ninguna relacion con el mismo (corresponden a entradas enciclopedicas sobre Jose, marcas de menaje y firmas de moda), por lo que no aportan informacion tecnica utilizable.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin evidencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/joseph-smith/mixer-classification-dev
+- Repositorio en Hugging Face: https://huggingface.co/joseph-smith/mixer-classification-dev
 - Resultados de busqueda web: no se han encontrado enlaces relevantes. Las entradas devueltas (Wikipedia sobre Jose, Joseph Joseph, JOSEPH Fashion) no estan relacionadas con el modelo.
 - Paper de referencia de la familia arquitectonica MLP-Mixer (no citado por el autor, mencionado aqui solo como contexto): https://arxiv.org/abs/2105.01601
 - Paper de referencia de fusion por descomposicion Tucker (no citado por el autor, mencionado solo como contexto): no disponible en la informacion proporcionada.

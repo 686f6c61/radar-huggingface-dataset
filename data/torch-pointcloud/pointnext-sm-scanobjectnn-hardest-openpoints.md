@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pointnext-sm.scanobjectnn-hardest.openpoints es un modelo de clasificación de nubes de puntos 3D publicado por el usuario torch-pointcloud en HuggingFace. Se trata de una conversión del modelo PointNeXt en su variante "small" (PointNeXt-S), una revisión de PointNet++ que incorpora bloques residuales invertidos y estrategias de escalado para mejorar la precision sin disparar el coste computacional. El modelo tiene 1.376.815 parametros (aproximadamente 1,4 M) y es, por tanto, un modelo muy ligero orientado a inferencia rapida y a despliegue en entornos con recursos limitados.
+pointnext-sm.scanobjectnn-hardest.openpoints es un modelo de clasificación de nubes de puntos 3D publicado por el usuario torch-pointcloud en Hugging Face. Se trata de una conversión del modelo PointNeXt en su variante "small" (PointNeXt-S), una revisión de PointNet++ que incorpora bloques residuales invertidos y estrategias de escalado para mejorar la precision sin disparar el coste computacional. El modelo tiene 1.376.815 parametros (aproximadamente 1,4 M) y es, por tanto, un modelo muy ligero orientado a inferencia rapida y a despliegue en entornos con recursos limitados.
 
 El modelo resuelve una tarea concreta: clasificar una nube de puntos que representa un objeto 3D en una de 15 categorias. Esta entrenado sobre la variante PB_T50_RS del benchmark ScanObjectNN, que segun el propio identificador del modelo corresponde al caso "hardest" del dataset: objetos escaneados en escenas interiores reales y sometidos a perturbaciones. Los pesos se distribuyen en formato safetensors bajo licencia MIT y se cargan mediante la libreria torch-pointcloud (arthurdjn/pytorch-pointcloud), que expone una API de creacion de modelo, transformacion de datos y extraccion de caracteristicas.
 
@@ -25,7 +25,7 @@ Su relevancia actual es la de un componente listo para usar dentro de pipelines 
 | Numero de clases | 15 |
 | Dimension de features | 512 |
 | Dataset de entrenamiento | ScanObjectNN (PB_T50_RS) |
-| Tamano del repositorio | 0.0 GB (valor declarado por HuggingFace) |
+| Tamano del repositorio | 0.0 GB (valor declarado por Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -78,7 +78,7 @@ La propia model card indica un valor de referencia de 88,20 de OA, ligeramente s
 
 | Modelo | Parametros | Dataset | OA | mAcc | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| pointnext-sm.scanobjectnn-hardest.openpoints (este modelo) | 1,4 M | ScanObjectNN PB_T50_RS | 88,17 | 86,75 | MIT | HuggingFace, safetensors, via torch-pointcloud |
+| pointnext-sm.scanobjectnn-hardest.openpoints (este modelo) | 1,4 M | ScanObjectNN PB_T50_RS | 88,17 | 86,75 | MIT | Hugging Face, safetensors, via torch-pointcloud |
 | PointNeXt-S original (referencia citada en la model card) | 1,4 M | ScanObjectNN PB_T50_RS | 88,20 (referencia) | no disponible | MIT | GitHub guochengqian/PointNeXt |
 | PointNet++ (arquitectura base) | no disponible | ScanObjectNN PB_T50_RS | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Point Transformer y otras familias de clasificacion 3D | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
@@ -101,7 +101,7 @@ La unica comparacion con datos concretos disponible es la del propio PointNeXt-S
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pointnext-sm.scanobjectnn-hardest.openpoints
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointnext-sm.scanobjectnn-hardest.openpoints
 - Paper de PointNeXt (NeurIPS 2022): https://arxiv.org/abs/2206.04670
 - Repositorio original de PointNeXt: https://github.com/guochengqian/PointNeXt
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`haofuly/SLA_training_component` es un repositorio de HuggingFace publicado por el usuario `haofuly` bajo licencia Apache 2.0. El nombre sugiere que se trata de un componente de entrenamiento (training component) asociado a un sistema denominado "SLA", aunque la model card no proporciona ninguna descripción funcional, arquitectónica ni de uso. El repositorio ocupa 6,4 GB, un tamano compatible con pesos de un modelo de varios miles de millones de parametros o con un conjunto de checkpoints y artefactos de entrenamiento.
+`haofuly/SLA_training_component` es un repositorio de Hugging Face publicado por el usuario `haofuly` bajo licencia Apache 2.0. El nombre sugiere que se trata de un componente de entrenamiento (training component) asociado a un sistema denominado "SLA", aunque la model card no proporciona ninguna descripción funcional, arquitectónica ni de uso. El repositorio ocupa 6,4 GB, un tamano compatible con pesos de un modelo de varios miles de millones de parametros o con un conjunto de checkpoints y artefactos de entrenamiento.
 
 La informacion disponible es extremadamente limitada: no se especifica pipeline, no se declaran idiomas soportados, no hay descripcion de arquitectura, no se documentan datos de entrenamiento y no se han publicado resultados de benchmarks. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica que no ha sido validado por la comunidad.
 
@@ -78,5 +78,5 @@ No disponible. No se puede establecer una comparativa fiable sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/haofuly/SLA_training_component
+- Repositorio en Hugging Face: https://huggingface.co/haofuly/SLA_training_component
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

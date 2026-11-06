@@ -76,7 +76,7 @@ No se dispone de comparaciones directas con otros modelos en la informacion prop
 
 ## Enlaces
 
-- [HuggingFace: arxp/multimodal-clinical-reasoning](https://huggingface.co/arxp/multimodal-clinical-reasoning)
+- [Hugging Face: arxp/multimodal-clinical-reasoning](https://huggingface.co/arxp/multimodal-clinical-reasoning)
 - [Repositorio GitHub companion](https://github.com/buraksamisirin/multimodal-clinical-reasoning)
 - [Informe del proyecto (PDF)](https://github.com/buraksamisirin/multimodal-clinical-reasoning/blob/main/project_report.pdf)
 - [Perfil de Arda Ciftci en GitHub](https://github.com/OxyOxygen)

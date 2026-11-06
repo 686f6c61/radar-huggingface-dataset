@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kinokozusi/geniac_prize_2026_stage1_v3 | Adaptador LoRA sobre base de 4B | No disponible | Adaptador PEFT | No disponible | HuggingFace (0 descargas) |
-| Qwen/Qwen3-4B-Base | 4B | 32.768 tokens (extensible) | Modelo denso completo | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-4B-Instruct | 4B | 32.768 tokens (extensible) | Modelo denso afinado para instrucciones | Apache-2.0 | HuggingFace |
-| Otros adaptadores LoRA comunitarios sobre Qwen3-4B | Variable | Depende del base | Adaptador PEFT | Variable | HuggingFace |
+| kinokozusi/geniac_prize_2026_stage1_v3 | Adaptador LoRA sobre base de 4B | No disponible | Adaptador PEFT | No disponible | Hugging Face (0 descargas) |
+| Qwen/Qwen3-4B-Base | 4B | 32.768 tokens (extensible) | Modelo denso completo | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-4B-Instruct | 4B | 32.768 tokens (extensible) | Modelo denso afinado para instrucciones | Apache-2.0 | Hugging Face |
+| Otros adaptadores LoRA comunitarios sobre Qwen3-4B | Variable | Depende del base | Adaptador PEFT | Variable | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kinokozusi/geniac_prize_2026_stage1_v3
+- Modelo en Hugging Face: https://huggingface.co/kinokozusi/geniac_prize_2026_stage1_v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Dataset Fase 1: https://huggingface.co/datasets/openai/gsm8k
 - Dataset Fase 2: https://huggingface.co/datasets/allenai/tulu-3-sft-personas-instruction-following

@@ -99,7 +99,7 @@ El propio autor advierte de que la decodificación greedy a temperatura 0 es una
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta exportación: https://huggingface.co/ai-ecoverse/Ministral-3-8B-Instruct-2512-ONNX
+- Repositorio Hugging Face de esta exportación: https://huggingface.co/ai-ecoverse/Ministral-3-8B-Instruct-2512-ONNX
 - Modelo base (bf16): https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-BF16
 - Model card del modelo base: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512
 - Exportación ONNX oficial del 3B, cuyo layout se replica: https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-ONNX

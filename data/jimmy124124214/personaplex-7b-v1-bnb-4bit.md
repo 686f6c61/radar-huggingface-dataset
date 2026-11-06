@@ -65,14 +65,14 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 - La cuantización 4-bit puede introducir una ligera degradación en la calidad del habla en comparación con los pesos en bf16, aunque se mantienen en bf16 los módulos de audio y las cabezas de salida para mitigarla.
 - Los idiomas soportados no están documentados; es probable que el modelo tenga un rendimiento desigual en lenguas distintas del inglés, y podrían existir sesgos en el habla.
 - La licencia es NVIDIA Open Model License, que exige aceptar los términos del repositorio base antes de su uso comercial. Conviene revisar las cláusulas específicas antes de integrar el modelo en un producto.
-- El modelo requiere acceso al repo base para descargar los pesos con los que trabaja. El token de HuggingFace debe estar configurado y la licencia aceptada.
+- El modelo requiere acceso al repo base para descargar los pesos con los que trabaja. El token de Hugging Face debe estar configurado y la licencia aceptada.
 - No se han publicado evaluaciones formales (MMLU, HumanEval, etc.) en la información disponible, por lo que el rendimiento en tareas de razonamiento o conocimiento general es desconocido.
 - Aunque la VRAM reducida permite su uso en GPUs de consumo, la latencia en estos dispositivos puede ser mayor que en A100/H100, especialmente en conversaciones en tiempo real.
 
 ## Enlaces
 
 - Repositorio del modelo cuantizado: https://huggingface.co/Jimmy124124214/personaplex-7b-v1-bnb-4bit
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/personaplex-7b-v1
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/personaplex-7b-v1
 - Paper técnico: https://arxiv.org/abs/2602.06053
 - Licencia del modelo base: https://huggingface.co/nvidia/personaplex-7b-v1/blob/main/LICENSE
 - Repositorio alternativo del paquete cuantizado (mencionado en la búsqueda): https://huggingface.co/brianmatzelle/personaplex-7b-v1-bnb-4bit

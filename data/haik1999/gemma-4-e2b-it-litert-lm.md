@@ -70,9 +70,9 @@ No se dispone de datos suficientes para realizar una comparativa con modelos sim
 
 ## Enlaces
 
-- [HuggingFace: haik1999/gemma-4-E2B-it-litert-lm](https://huggingface.co/haik1999/gemma-4-E2B-it-litert-lm)
-- [HuggingFace: litert-community/gemma-4-E2B-it-litert-lm](https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm)
-- [HuggingFace: huggingworld/gemma-4-E2B-it-litert-lm](https://huggingface.co/huggingworld/gemma-4-E2B-it-litert-lm)
+- [Hugging Face: haik1999/gemma-4-E2B-it-litert-lm](https://huggingface.co/haik1999/gemma-4-E2B-it-litert-lm)
+- [Hugging Face: litert-community/gemma-4-E2B-it-litert-lm](https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm)
+- [Hugging Face: huggingworld/gemma-4-E2B-it-litert-lm](https://huggingface.co/huggingworld/gemma-4-E2B-it-litert-lm)
 - [ModelScope: gemma-4-E2B-it-litert-lm](https://www.modelscope.cn/models/litert-community/gemma-4-E2B-it-litert-lm)
 - [Google AI Edge: Gemma 4](https://developers.google.com/edge/litert-lm/models/gemma-4)
 - [Google AI Edge: LiteRT-LM overview](https://ai.google.dev/edge/litert-lm/overview)

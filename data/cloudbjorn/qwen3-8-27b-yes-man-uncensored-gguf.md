@@ -72,7 +72,7 @@ No se dispone de información suficiente para una comparativa rigurosa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: [cloudbjorn/Qwen3.8-27B-Yes-Man-uncensored-GGUF](https://huggingface.co/cloudbjorn/Qwen3.8-27B-Yes-Man-uncensored-GGUF)
+- Repositorio Hugging Face: [cloudbjorn/Qwen3.8-27B-Yes-Man-uncensored-GGUF](https://huggingface.co/cloudbjorn/Qwen3.8-27B-Yes-Man-uncensored-GGUF)
 - Modelo base (fine-tune BF16): [cloudbjorn/Qwen3.8-27B-Yes-Man-uncensored](https://huggingface.co/cloudbjorn/Qwen3.8-27B-Yes-Man-uncensored)
 - Dataset: [cloudbjorn/Yes-Man-uncensored](https://huggingface.co/datasets/cloudbjorn/Yes-Man-uncensored)
 - Modelo original: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

@@ -86,8 +86,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/j2ipper/MiMo-V2.6-Flash-MOPD-a4-x
-- Modelo base en HuggingFace: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-MOPD
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/j2ipper/MiMo-V2.6-Flash-MOPD-a4-x
+- Modelo base en Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-MOPD
 - Cuantizaciones GGUF de ggml-org (incluye el drafter DFlash): https://huggingface.co/ggml-org/MiMo-V2.6-Flash-MOPD-GGUF
 - Vocabulario de borrador (64K): https://huggingface.co/j2ipper/draft-vocab
 - Runtime Talus (repositorio público): https://github.com/nsbradley88/talus-public

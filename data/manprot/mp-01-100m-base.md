@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MP-01 100M base es un modelo de lenguaje decoder-only de 100,6 millones de parámetros desarrollado por Manprot, un autor independiente que publica en HuggingFace. Se trata de un modelo base entrenado principalmente sobre texto en inglés, pensado como experimento de preentrenamiento a pequeña escala y no como un asistente listo para producción. Su interés radica en que documenta de forma inusualmente transparente la línea de entrenamiento completa (preentrenamiento desde cero, crecimiento de parámetros, fine-tuning de chat y expansión posterior con cooldown), algo poco habitual en modelos de este tamaño.
+MP-01 100M base es un modelo de lenguaje decoder-only de 100,6 millones de parámetros desarrollado por Manprot, un autor independiente que publica en Hugging Face. Se trata de un modelo base entrenado principalmente sobre texto en inglés, pensado como experimento de preentrenamiento a pequeña escala y no como un asistente listo para producción. Su interés radica en que documenta de forma inusualmente transparente la línea de entrenamiento completa (preentrenamiento desde cero, crecimiento de parámetros, fine-tuning de chat y expansión posterior con cooldown), algo poco habitual en modelos de este tamaño.
 
 La arquitectura es personalizada y no sigue el estándar de `transformers`: 18 capas, anchura de 640, atención con grouped-query attention (10 cabezas de consulta y 5 de clave/valor) con QK-norm, MLP SwiGLU de 1664 unidades y vocabulario de 32.768 tokens con BPE a nivel de byte. La longitud de contexto en esta etapa es de 1024 tokens, aunque el autor indica que el entrenamiento planeado alcanzaba 2048 tokens en fases posteriores no incluidas en este checkpoint.
 
@@ -87,10 +87,10 @@ Progreso entre checkpoints del propio modelo (datos parciales en la información
 
 | Modelo | Params | Contexto | Avg 7 tareas | BLiMP | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| MP-01 100M base | 100,6M | 1024 | 47,29 | 78,70 | other / to-be-decided | HuggingFace, requiere código `vbq` |
-| GPT-2 | 124,4M | 1024 | 43,11 | 82,51 | MIT (según el modelo original) | HuggingFace, `transformers` |
-| OPT-125M | 125,2M | 2048 | 43,63 | 81,41 | MIT (según el modelo original) | HuggingFace, `transformers` |
-| Pythia-160M | 162,3M | 2048 | 42,74 | 78,53 | Apache 2.0 (según el modelo original) | HuggingFace, `transformers` |
+| MP-01 100M base | 100,6M | 1024 | 47,29 | 78,70 | other / to-be-decided | Hugging Face, requiere código `vbq` |
+| GPT-2 | 124,4M | 1024 | 43,11 | 82,51 | MIT (según el modelo original) | Hugging Face, `transformers` |
+| OPT-125M | 125,2M | 2048 | 43,63 | 81,41 | MIT (según el modelo original) | Hugging Face, `transformers` |
+| Pythia-160M | 162,3M | 2048 | 42,74 | 78,53 | Apache 2.0 (según el modelo original) | Hugging Face, `transformers` |
 
 MP-01 100M base supera a los tres comparables en la media de siete tareas, pero queda por detrás de GPT-2 y OPT-125M en BLiMP. La principal desventaja frente a ellos es la falta de integración con `transformers` y una licencia sin definir, lo que complica su uso en producción. La ventaja es su menor tamaño (100,6M frente a 124-162M) y una documentación de entrenamiento más detallada.
 
@@ -109,7 +109,7 @@ MP-01 100M base supera a los tres comparables en la media de siete tareas, pero 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Manprot/MP-01-100M-base
+- Hugging Face: https://huggingface.co/Manprot/MP-01-100M-base
 - Perfil del autor: https://huggingface.co/Manprot
-- Repositorio de código `vbq/` y scripts de evaluación: incluido en el repositorio de HuggingFace (no se proporciona URL separada)
+- Repositorio de código `vbq/` y scripts de evaluación: incluido en el repositorio de Hugging Face (no se proporciona URL separada)
 - Paper, blog o demo adicionales: no disponible en la información proporcionada

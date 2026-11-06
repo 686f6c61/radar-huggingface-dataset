@@ -108,7 +108,7 @@ La comparativa se limita a la familia Whisper porque no se dispone de datos de o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rudra11/vaakku-whisper-small
+- Modelo en Hugging Face: https://huggingface.co/rudra11/vaakku-whisper-small
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Dataset google/fleurs: https://huggingface.co/datasets/google/fleurs
 - Paper de Whisper (OpenAI): no disponible en la informacion proporcionada

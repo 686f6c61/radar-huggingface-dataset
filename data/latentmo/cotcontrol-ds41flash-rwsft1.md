@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `latentMO/cotcontrol-ds41flash-rwsft1` | LoRA rango 32 sobre DeepSeek-V4.1-Flash | no disponible | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) |
-| `deepseek-ai/DeepSeek-V4.1-Flash` (base) | Modelo completo | no disponible | no disponible | no disponible | HuggingFace (referenciado como base) |
+| `latentMO/cotcontrol-ds41flash-rwsft1` | LoRA rango 32 sobre DeepSeek-V4.1-Flash | no disponible | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) |
+| `deepseek-ai/DeepSeek-V4.1-Flash` (base) | Modelo completo | no disponible | no disponible | no disponible | Hugging Face (referenciado como base) |
 | Estado previo `obf2g` (paso 25) | Política de partida del SFT | no disponible | no disponible | no disponible | No público en la información disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones del modelo base que permitan una comparación cuantitativa con alternativas de la misma categoría.
@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-ds41flash-rwsft1
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-ds41flash-rwsft1
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Código, configuraciones y evaluaciones: https://github.com/johntrob14/tricky_little_guys
 - Diario de ejecución citado en la model card: `runs/2026-10-24_cot-control_rewrite-sft.md` (dentro del repositorio de GitHub)

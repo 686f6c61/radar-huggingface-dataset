@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| durgachauhan/monkey-smolvla-policy | 450M | no disponible | Seguimiento visual con gimbal | Apache 2.0 | HuggingFace |
-| lerobot/smolvla_base | 450M | no disponible | VLA general para manipulacion | Apache 2.0 | HuggingFace |
-| OpenVLA (7B) | 7B | no disponible | VLA general para manipulacion | MIT (investigacion) | HuggingFace |
+| durgachauhan/monkey-smolvla-policy | 450M | no disponible | Seguimiento visual con gimbal | Apache 2.0 | Hugging Face |
+| lerobot/smolvla_base | 450M | no disponible | VLA general para manipulacion | Apache 2.0 | Hugging Face |
+| OpenVLA (7B) | 7B | no disponible | VLA general para manipulacion | MIT (investigacion) | Hugging Face |
 
 SmolVLA se distingue de alternativas como OpenVLA por su tamano reducido (450M frente a 7B), lo que permite ejecutarlo en hardware de consumo. Este fine-tune concreto esta especializado en seguimiento de objetos con camara pan-tilt, mientras que el base es una politica generalista. No se dispone de datos de rendimiento comparativo para este modelo especifico.
 

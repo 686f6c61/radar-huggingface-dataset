@@ -31,7 +31,7 @@ En cuanto a los datos, el paper reporta dos regímenes de entrenamiento y evalua
 
 - Reconstrucción libre de nubes de imágenes Sentinel-2 a partir de tres observaciones temporales alineadas.
 - Salida en RGB con entrada RGB+NIR (configuración Sen2_MTC_New) y salida de las 13 bandas Sentinel-2 (configuración SEN12MS-CR-TS(EA)).
-- Restauración de imagen a imagen dentro del pipeline `image-to-image` de HuggingFace.
+- Restauración de imagen a imagen dentro del pipeline `image-to-image` de Hugging Face.
 - Reconstrucción condicionada por máscara en el checkpoint experimental `tsmask/`.
 - Evaluación con métricas espectrales y perceptuales: PSNR, SSIM, LPIPS y SAM.
 - Reentrenamiento y ajuste reproducibles mediante los YAML de PyTorch Lightning incluidos, con soporte de TF32 (`--enable_tf32`).
@@ -74,8 +74,8 @@ No hay datos comparativos en la información proporcionada. La búsqueda web rea
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SADER (Sen2_MTC_New) | no disponible | T = 3 observaciones, 256 × 256, RGB+NIR → RGB | PSNR 20,941 / SSIM 0,729 / LPIPS 0,228 | other | Pesos en HuggingFace + código en GitHub |
-| SADER (SEN12MS-CR-TS(EA)) | no disponible | T = 3 observaciones, 256 × 256, 13 bandas → 13 bandas | PSNR 31,234 / SSIM 0,937 / SAM 5,885° | other | Pesos en HuggingFace + código en GitHub |
+| SADER (Sen2_MTC_New) | no disponible | T = 3 observaciones, 256 × 256, RGB+NIR → RGB | PSNR 20,941 / SSIM 0,729 / LPIPS 0,228 | other | Pesos en Hugging Face + código en GitHub |
+| SADER (SEN12MS-CR-TS(EA)) | no disponible | T = 3 observaciones, 256 × 256, 13 bandas → 13 bandas | PSNR 31,234 / SSIM 0,937 / SAM 5,885° | other | Pesos en Hugging Face + código en GitHub |
 | Alternativas de cloud removal | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Para una comparación rigurosa con otros métodos de la categoría (por ejemplo, variantes de SEN12MS-CR) es necesario consultar el paper arXiv:2602.00536, que no se ha podido verificar en esta búsqueda.
@@ -94,7 +94,7 @@ Para una comparación rigurosa con otros métodos de la categoría (por ejemplo,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zyfz0um/SADER
+- Modelo en Hugging Face: https://huggingface.co/zyfz0um/SADER
 - Paper: https://arxiv.org/abs/2602.00536
 - Código e instrucciones de inferencia: https://github.com/zyfzs0/SADER
 - Instrucciones de uso, preparación de datos y predicción: https://github.com/zyfzs0/SADER#tadausage

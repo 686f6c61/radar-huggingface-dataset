@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA entrenado con la librería PEFT sobre el modelo deepseek-ai/DeepSeek-R1-Distill-Qwen-7B, publicado por el usuario nmuendler. No se trata de un modelo completo, sino de pesos de adaptador (0,3 GB) que deben cargarse junto al modelo base; el nombre del repositorio sugiere un experimento de destilación "on-policy" (text-on-policy-distill) con una tasa de aprendizaje de 2e-04 a partir de un checkpoint identificado como "eb32-e3". El repositorio acumula 0 descargas y 0 "likes", y su model card es la plantilla por defecto de HuggingFace sin ninguna sección cumplimentada, por lo que no hay información verificable sobre datos de entrenamiento, hiperparámetros, evaluación o licencia.
+Este repositorio contiene un adaptador LoRA entrenado con la librería PEFT sobre el modelo deepseek-ai/DeepSeek-R1-Distill-Qwen-7B, publicado por el usuario nmuendler. No se trata de un modelo completo, sino de pesos de adaptador (0,3 GB) que deben cargarse junto al modelo base; el nombre del repositorio sugiere un experimento de destilación "on-policy" (text-on-policy-distill) con una tasa de aprendizaje de 2e-04 a partir de un checkpoint identificado como "eb32-e3". El repositorio acumula 0 descargas y 0 "likes", y su model card es la plantilla por defecto de Hugging Face sin ninguna sección cumplimentada, por lo que no hay información verificable sobre datos de entrenamiento, hiperparámetros, evaluación o licencia.
 
 El interés de esta ficha es, por tanto, doble. Por un lado, documenta un ejemplo real de adaptador LoRA orientado a destilación sobre un modelo de razonamiento, una técnica que gana relevancia a medida que los modelos razonadores (con cadenas de pensamiento largas) se intentan comprimir a tamaños manejables. Por otro lado, sirve de advertencia metodológica: se trata de un artefacto de investigación sin validación, sin licencia declarada y sin métricas, no apto para producción tal cual.
 
@@ -69,11 +69,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Adaptador LoRA nmuendler sobre R1-Distill-Qwen-7B | No disponible (adaptador de 0,3 GB); base de ~7,6 mil millones | No disponible; el base soporta 131 072 tokens | No declarada en el repositorio | HuggingFace, 0 descargas |
-| DeepSeek-R1-Distill-Qwen-7B (modelo base) | ~7,6 mil millones | 131 072 tokens | MIT (documentación pública de DeepSeek) | HuggingFace, ampliamente descargado |
-| Qwen2.5-7B-Instruct | ~7,6 mil millones | 131 072 tokens | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | ~8 mil millones | 128 000 tokens | Licencia comunitaria de Llama 3.1 | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | ~7,2 mil millones | 32 768 tokens | Apache 2.0 | HuggingFace |
+| Adaptador LoRA nmuendler sobre R1-Distill-Qwen-7B | No disponible (adaptador de 0,3 GB); base de ~7,6 mil millones | No disponible; el base soporta 131 072 tokens | No declarada en el repositorio | Hugging Face, 0 descargas |
+| DeepSeek-R1-Distill-Qwen-7B (modelo base) | ~7,6 mil millones | 131 072 tokens | MIT (documentación pública de DeepSeek) | Hugging Face, ampliamente descargado |
+| Qwen2.5-7B-Instruct | ~7,6 mil millones | 131 072 tokens | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | ~8 mil millones | 128 000 tokens | Licencia comunitaria de Llama 3.1 | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | ~7,2 mil millones | 32 768 tokens | Apache 2.0 | Hugging Face |
 
 La comparación de rendimiento entre estas alternativas no puede establecerse aquí: el adaptador no tiene métricas publicadas y las del modelo base deben consultarse en el informe técnico de DeepSeek-R1.
 
@@ -93,7 +93,7 @@ La comparación de rendimiento entre estas alternativas no puede establecerse aq
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-on-policy-distill-run1-from-eb32-e3-lr2e-04
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-on-policy-distill-run1-from-eb32-e3-lr2e-04
 - Modelo base DeepSeek-R1-Distill-Qwen-7B: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Modelo base de partida Qwen2.5-Math-7B: https://huggingface.co/Qwen/Qwen2.5-Math-7B
 - Repositorio de DeepSeek-R1 en GitHub: https://github.com/deepseek-ai/DeepSeek-R1

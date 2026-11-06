@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VieNeu-TTS v3 Turbo es un modelo de sintesis de voz (text-to-speech) disenado especificamente para vietnamita e ingles, desarrollado por Pham Nguyen Ngoc Bao (publicado en HuggingFace bajo la cuenta `duonglequanghoang1`). Se trata de un diseno de arquitectura original, entrenado desde cero sobre aproximadamente 10.000 horas de audio bilingue ingles-vietnamita, y no es un fine-tune ni una destilacion de otro modelo TTS. Su propuesta de valor principal es ofrecer sintesis de alta fidelidad a 48 kHz con clonacion de voz instantanea, control de emociones y cambio de codigo (code-switching) entre ingles y vietnamita en una misma locucion.
+VieNeu-TTS v3 Turbo es un modelo de sintesis de voz (text-to-speech) disenado especificamente para vietnamita e ingles, desarrollado por Pham Nguyen Ngoc Bao (publicado en Hugging Face bajo la cuenta `duonglequanghoang1`). Se trata de un diseno de arquitectura original, entrenado desde cero sobre aproximadamente 10.000 horas de audio bilingue ingles-vietnamita, y no es un fine-tune ni una destilacion de otro modelo TTS. Su propuesta de valor principal es ofrecer sintesis de alta fidelidad a 48 kHz con clonacion de voz instantanea, control de emociones y cambio de codigo (code-switching) entre ingles y vietnamita en una misma locucion.
 
 El modelo tiene 130.907.520 parametros y un repositorio de 2,1 GB. Se distribuye con pesos en safetensors, ONNX y GGUF, y su implementacion de referencia es el SDK de Python `vieneu` (v3.7.1), que en CPU funciona sin PyTorch (solo ONNX Runtime) y en GPU CUDA conmuta automaticamente al motor PyTorch con batching continuo. Esto lo hace relevante para despliegues de bajo coste y para servicios de streaming en tiempo real.
 
@@ -82,11 +82,11 @@ No disponible. La informacion proporcionada no incluye datos de benchmarks ni co
 - La ruta GPU depende de versiones fijadas de `torch` (2.8.0) y `transformers` (4.57.6); actualizaciones no probadas pueden romper la compatibilidad.
 - No se han publicado resultados de benchmarks objetivos (MOS, WER, similitud de hablante), lo que dificulta evaluar la calidad frente a alternativas.
 - El repositorio tiene un numero muy bajo de descargas (44) y ningun like en el momento de la consulta, lo que sugiere una adopcion todavia limitada y poca validacion externa.
-- La cuenta del autor en HuggingFace (`duonglequanghoang1`) difiere de la cuenta referenciada en la model card (`pnnbao-ump`), lo que conviene verificar antes de fijar una dependencia en produccion.
+- La cuenta del autor en Hugging Face (`duonglequanghoang1`) difiere de la cuenta referenciada en la model card (`pnnbao-ump`), lo que conviene verificar antes de fijar una dependencia en produccion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/duonglequanghoang1/VieNeu-TTS-v3-Turbo
+- Hugging Face: https://huggingface.co/duonglequanghoang1/VieNeu-TTS-v3-Turbo
 - Modelo referenciado en la model card: https://huggingface.co/pnnbao-ump/VieNeu-TTS-v3-Turbo
 - Repositorio GitHub: https://github.com/pnnbao97/VieNeu-TTS
 - Documentacion de streaming: https://github.com/pnnbao97/VieNeu-TTS/blob/main/docs/streaming.md

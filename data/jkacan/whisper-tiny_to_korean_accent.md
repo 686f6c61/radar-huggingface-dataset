@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Korean es un ajuste fino (fine-tuning) del modelo de reconocimiento automático del habla openai/whisper-tiny, publicado por el usuario jkacan en HuggingFace. El objetivo declarado es adaptar el modelo base, entrenado originalmente por OpenAI sobre corpus multilingües masivos, a un conjunto de datos específico denominado Korean_english, que presumiblemente contiene audio en inglés con acento coreano. El modelo resultante tiene 37,7 millones de parámetros y un tamaño de repositorio de 0,3 GB, lo que lo sitúa en la gama ultra-ligera de modelos ASR.
+Whisper tiny Korean es un ajuste fino (fine-tuning) del modelo de reconocimiento automático del habla openai/whisper-tiny, publicado por el usuario jkacan en Hugging Face. El objetivo declarado es adaptar el modelo base, entrenado originalmente por OpenAI sobre corpus multilingües masivos, a un conjunto de datos específico denominado Korean_english, que presumiblemente contiene audio en inglés con acento coreano. El modelo resultante tiene 37,7 millones de parámetros y un tamaño de repositorio de 0,3 GB, lo que lo sitúa en la gama ultra-ligera de modelos ASR.
 
 La relevancia de este modelo es acotada pero concreta: los modelos Whisper originales rinden peor cuando el hablante tiene un acento marcado no representado en la distribución de entrenamiento principal. Un ajuste fino sobre un dataset de acento específico puede reducir la tasa de error de palabras (WER) en ese dominio concreto, a costa de degradar el rendimiento general. Con 28 descargas y 0 likes en el momento de la consulta, se trata de un modelo experimental de nicho, no de un artefacto listo para producción.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks adicionales (p. ej. LibriSpeech, Co
 
 | Modelo | Parámetros | Contexto audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jkacan/whisper-tiny_to_korean_accent | 37,7 M | 30 s | en (ajuste coreano) | apache-2.0 | HuggingFace |
-| openai/whisper-tiny | 39 M | 30 s | multilingüe | apache-2.0 | HuggingFace |
-| openai/whisper-base | 74 M | 30 s | multilingüe | apache-2.0 | HuggingFace |
-| openai/whisper-small | 244 M | 30 s | multilingüe | apache-2.0 | HuggingFace |
+| jkacan/whisper-tiny_to_korean_accent | 37,7 M | 30 s | en (ajuste coreano) | apache-2.0 | Hugging Face |
+| openai/whisper-tiny | 39 M | 30 s | multilingüe | apache-2.0 | Hugging Face |
+| openai/whisper-base | 74 M | 30 s | multilingüe | apache-2.0 | Hugging Face |
+| openai/whisper-small | 244 M | 30 s | multilingüe | apache-2.0 | Hugging Face |
 
 No se dispone de datos de WER comparativos entre estos modelos sobre el dataset Korean English en la información proporcionada, por lo que no es posible cuantificar la mejora del ajuste fino frente al modelo base.
 
@@ -91,7 +91,7 @@ No se dispone de datos de WER comparativos entre estos modelos sobre el dataset 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jkacan/whisper-tiny_to_korean_accent
+- Modelo en Hugging Face: https://huggingface.co/jkacan/whisper-tiny_to_korean_accent
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - Repositorio oficial de Whisper en OpenAI: https://github.com/openai/whisper

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nuc-resunet-setup-56 es un modelo de segmentacion semantica 3D desarrollado por el equipo CellMap (Janelia Research Campus, Howard Hughes Medical Institute) para detectar nucleos (nuc) en volúmenes de microscopia electronica FIB-SEM a una resolucion de vóxel de 128 nm. El modelo pertenece a la familia de modelos publicados por la organizacion cellmap en HuggingFace y se distribuye bajo la libreria `cellmap-models`, con pesos exportados simultaneamente a torch.export, TorchScript y ONNX.
+nuc-resunet-setup-56 es un modelo de segmentacion semantica 3D desarrollado por el equipo CellMap (Janelia Research Campus, Howard Hughes Medical Institute) para detectar nucleos (nuc) en volúmenes de microscopia electronica FIB-SEM a una resolucion de vóxel de 128 nm. El modelo pertenece a la familia de modelos publicados por la organizacion cellmap en Hugging Face y se distribuye bajo la libreria `cellmap-models`, con pesos exportados simultaneamente a torch.export, TorchScript y ONNX.
 
 Arquitecturalmente es un `ResUNet3DValid`: una U-Net residual tridimensional con normalizacion InstanceNorm y convoluciones validas (sin padding), lo que reduce el campo de salida respecto a la entrada (300x300x300 vóxeles de entrada producen 212x212x212 de salida, es decir, 88 vóxeles de contexto perdidos por eje). La red tiene 1 canal de entrada y 1 canal de salida, y devuelve logits crudos sobre los que debe aplicarse una sigmoid posteriormente.
 
@@ -83,9 +83,9 @@ No se dispone de datos numericos de modelos comparables en la informacion propor
 
 | Modelo | Tipo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cellmap/nuc-resunet-setup-56 | ResUNet3DValid, segmentacion de nucleos en FIB-SEM | no disponible | 300x300x300 vóxeles | BSD-3-Clause | HuggingFace + ONNX web + `cellmap-models` |
-| cellmap/onnx-web-models (setup_56) | Misma red en formato ONNX para web | no disponible | no disponible | no disponible | HuggingFace |
-| Otros setups de la familia `cellmap-models` | ResUNet3D para distintas estructuras y experimentos | no disponible | no disponible | no disponible | HuggingFace / GitHub |
+| cellmap/nuc-resunet-setup-56 | ResUNet3DValid, segmentacion de nucleos en FIB-SEM | no disponible | 300x300x300 vóxeles | BSD-3-Clause | Hugging Face + ONNX web + `cellmap-models` |
+| cellmap/onnx-web-models (setup_56) | Misma red en formato ONNX para web | no disponible | no disponible | no disponible | Hugging Face |
+| Otros setups de la familia `cellmap-models` | ResUNet3D para distintas estructuras y experimentos | no disponible | no disponible | no disponible | Hugging Face / GitHub |
 | Segmentadores 3D genericos de microscopia (por ejemplo, enfoques tipo Cellpose o nnU-Net) | Segmentacion celular generalista | no disponible | no disponible | no disponible | no disponible |
 
 No se ha localizado en la informacion proporcionada ninguna comparacion oficial entre este checkpoint y las alternativas del sector.
@@ -106,7 +106,7 @@ No se ha localizado en la informacion proporcionada ninguna comparacion oficial 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cellmap/nuc-resunet-setup-56
+- Modelo en Hugging Face: https://huggingface.co/cellmap/nuc-resunet-setup-56
 - Version ONNX para web (setup 56): https://huggingface.co/cellmap/onnx-web-models
 - Repositorio de codigo cellmap-models: https://github.com/janelia-cellmap/cellmap-models
 - Proyecto CellMap (Janelia): https://www.janelia.org/project-team/cellmap

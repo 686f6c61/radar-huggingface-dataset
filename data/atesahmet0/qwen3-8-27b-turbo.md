@@ -92,7 +92,7 @@ No se dispone de datos verificables de rendimiento ni de contexto para establece
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/atesahmet0/Qwen3.8-27B-TURBO
+- Hugging Face: https://huggingface.co/atesahmet0/Qwen3.8-27B-TURBO
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Referencia del método COLD FUSION (Fable Fusion 711): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Dataset Polar-STRICT: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets

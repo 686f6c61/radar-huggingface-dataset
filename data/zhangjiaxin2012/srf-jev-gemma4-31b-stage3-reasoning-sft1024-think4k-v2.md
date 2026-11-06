@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SRF-Jev-Gemma4-31B-Stage3-Reasoning-SFT1024-Think4K-v2 | 31,27 B | no disponible | 88,31 % (direct) y 96,54 % (gated 4K) en panel propio de 231 preguntas; sin benchmarks estándar | apache-2.0 declarada en el repo | HuggingFace, 0 descargas, 0 likes; código de inferencia incluido |
-| google/gemma-4-31B-it (base) | 31 B | no disponible | Lidera en "Direct Capability" según la propia model card; sin cifras del panel en la información disponible | según el modelo base (verificar términos) | HuggingFace, modelo oficial |
+| SRF-Jev-Gemma4-31B-Stage3-Reasoning-SFT1024-Think4K-v2 | 31,27 B | no disponible | 88,31 % (direct) y 96,54 % (gated 4K) en panel propio de 231 preguntas; sin benchmarks estándar | apache-2.0 declarada en el repo | Hugging Face, 0 descargas, 0 likes; código de inferencia incluido |
+| google/gemma-4-31B-it (base) | 31 B | no disponible | Lidera en "Direct Capability" según la propia model card; sin cifras del panel en la información disponible | según el modelo base (verificar términos) | Hugging Face, modelo oficial |
 | Otras alternativas de 30-35 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada no incluye datos verificables de otros modelos comparables de la misma categoría, por lo que la comparación se limita al modelo base declarado.
@@ -95,7 +95,7 @@ La información proporcionada no incluye datos verificables de otros modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-Stage3-Reasoning-SFT1024-Think4K-v2
+- Modelo en Hugging Face: https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-Stage3-Reasoning-SFT1024-Think4K-v2
 - Repositorio del proyecto SRF-Jev: https://github.com/jxzhangjhu/srf-jev
 - Documentación de la comparativa de tres tamanos: https://github.com/jxzhangjhu/srf-jev/tree/main/docs/gemma4/research/three-size-20261023
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it

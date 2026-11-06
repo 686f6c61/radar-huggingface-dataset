@@ -2,9 +2,9 @@
 
 ## Resumen
 
-QuAxiom/ministral-3b-medical-qlora es un repositorio publicado en HuggingFace por el usuario QuAxiom el 20 de septiembre de 2026 (con una unica actualizacion nueve segundos despues de la creacion). El repositorio declara `library_name: transformers` y las etiquetas `transformers`, `safetensors`, `arxiv:1910.09700`, `endpoints_compatible` y `region:us`, pero no incluye pesos: el tamano del repo figura como 0.0 GB y no se ha registrado ninguna descarga ni ningun "like".
+QuAxiom/ministral-3b-medical-qlora es un repositorio publicado en Hugging Face por el usuario QuAxiom el 20 de septiembre de 2026 (con una unica actualizacion nueve segundos despues de la creacion). El repositorio declara `library_name: transformers` y las etiquetas `transformers`, `safetensors`, `arxiv:1910.09700`, `endpoints_compatible` y `region:us`, pero no incluye pesos: el tamano del repo figura como 0.0 GB y no se ha registrado ninguna descarga ni ningun "like".
 
-La model card es la plantilla generada automaticamente por HuggingFace y no ha sido editada: todos los apartados (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion, impacto ambiental) contienen el marcador `[More Information Needed]`. No hay, por tanto, informacion verificable sobre arquitectura, numero de parametros, longitud de contexto, dataset de ajuste ni resultados de evaluacion.
+La model card es la plantilla generada automaticamente por Hugging Face y no ha sido editada: todos los apartados (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion, impacto ambiental) contienen el marcador `[More Information Needed]`. No hay, por tanto, informacion verificable sobre arquitectura, numero de parametros, longitud de contexto, dataset de ajuste ni resultados de evaluacion.
 
 Lo unico interpretable es el identificador del repositorio, que sugiere un ajuste mediante QLoRA sobre un modelo de la familia Ministral de 3B orientado a dominio medico. Esta interpretacion es una hipotesis derivada del nombre y no esta confirmada por ninguna fuente del repositorio: la etiqueta `arxiv:1910.09700` no corresponde a un paper del modelo, sino a Lacoste et al. (2019), la referencia de la calculadora de impacto ambiental citada en la propia plantilla. A dia de hoy la ficha no permite evaluar el modelo para uso real.
 
@@ -99,7 +99,7 @@ No disponible. La informacion proporcionada no permite comparar el modelo con al
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/QuAxiom/ministral-3b-medical-qlora
+- Repositorio en Hugging Face: https://huggingface.co/QuAxiom/ministral-3b-medical-qlora
 - Paper citado en la etiqueta arxiv y en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental referenciada en la plantilla: https://mlco2.github.io/impact
 - Repositorio, paper o demo del modelo: no disponibles.

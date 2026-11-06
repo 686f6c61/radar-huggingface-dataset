@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 | Modelo | Tipo | Ejecución | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MedMLX/synthseg-mlx | CNN 3D de segmentación cerebral (conversión MLX) | Apple Silicon (MLX/Metal) | FreeSurfer Software License | HuggingFace, 0 descargas, 0 likes |
+| MedMLX/synthseg-mlx | CNN 3D de segmentación cerebral (conversión MLX) | Apple Silicon (MLX/Metal) | FreeSurfer Software License | Hugging Face, 0 descargas, 0 likes |
 | SynthSeg original (FreeSurfer) | CNN 3D de segmentación cerebral (Keras) | CPU/GPU con TensorFlow/Keras | FreeSurfer Software License | GitHub de FreeSurfer y BBillot/SynthSeg |
 | Otros segmentadores cerebrales (p. ej. FastSurfer, nnU-Net) | CNN 3D / U-Net | GPU NVIDIA habitualmente | Varía según proyecto | no disponible en la información proporcionada |
 
@@ -83,7 +83,7 @@ La comparación relevante es con el SynthSeg original: los pesos son los mismos,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MedMLX/synthseg-mlx
+- Hugging Face: https://huggingface.co/MedMLX/synthseg-mlx
 - Runtime y documentación: https://github.com/MedMLX/synthseg-mlx
 - SynthSeg original (código): https://github.com/BBillot/SynthSeg
 - Checkpoints originales en FreeSurfer v8.2.0: https://github.com/freesurfer/freesurfer/tree/v8.2.0/mri_synthseg

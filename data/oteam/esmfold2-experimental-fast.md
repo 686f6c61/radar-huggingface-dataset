@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | MSA | Bloques de folding | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ESMFold2-experimental-fast (este) | 178,99 M en repo; 6.530,863 M con ESMC-6B | No | 24 | AGPL-3.0 | HuggingFace (oteam) |
-| ESMFold2 (oteam/esmfold2) | 6.579,742 M con ESMC-6B | Sí | 48 | AGPL-3.0 | HuggingFace (oteam) |
-| ESMFold2-fast (oteam/esmfold2-fast) | 6.533,723 M con ESMC-6B | No | 24 | AGPL-3.0 | HuggingFace (oteam) |
-| ESMFold2-experimental (oteam/esmfold2-experimental) | 6.577,328 M con ESMC-6B | Sí | 48 | AGPL-3.0 | HuggingFace (oteam) |
+| ESMFold2-experimental-fast (este) | 178,99 M en repo; 6.530,863 M con ESMC-6B | No | 24 | AGPL-3.0 | Hugging Face (oteam) |
+| ESMFold2 (oteam/esmfold2) | 6.579,742 M con ESMC-6B | Sí | 48 | AGPL-3.0 | Hugging Face (oteam) |
+| ESMFold2-fast (oteam/esmfold2-fast) | 6.533,723 M con ESMC-6B | No | 24 | AGPL-3.0 | Hugging Face (oteam) |
+| ESMFold2-experimental (oteam/esmfold2-experimental) | 6.577,328 M con ESMC-6B | Sí | 48 | AGPL-3.0 | Hugging Face (oteam) |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento predictivo con alternativas como AlphaFold3 u otras herramientas de folding, por lo que la comparación se limita a especificaciones estructurales y de licencia.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento predic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/esmfold2-experimental-fast
+- Modelo en Hugging Face: https://huggingface.co/oteam/esmfold2-experimental-fast
 - Variante completa: https://huggingface.co/oteam/esmfold2
 - Variante fast: https://huggingface.co/oteam/esmfold2-fast
 - Variante experimental: https://huggingface.co/oteam/esmfold2-experimental

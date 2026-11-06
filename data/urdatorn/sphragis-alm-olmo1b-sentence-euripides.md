@@ -62,7 +62,7 @@ Estos resultados corresponden al rendimiento conjunto de los 28 modelos, no a es
 - Para inferencia en bf16, se requiere al menos 3-4 GB de VRAM (considerando overhead de activaciones), por lo que cabe en GPUs consumer como RTX 3060 (12 GB), RTX 4060 Ti (16 GB) o superiores.
 - Con cuantización a 8 bits o 4 bits (no publicada oficialmente, pero posible mediante herramientas como llama.cpp o bitsandbytes), podría ejecutarse en GPUs con 4-6 GB de VRAM.
 - El entrenamiento se realizó en 2x GH200, pero la inferencia es mucho más ligera.
-- Opciones de despliegue: al ser un modelo basado en OLMo-1B, es compatible con el ecosistema HuggingFace Transformers, así como con vLLM, llama.cpp, Ollama y TGI, aunque no se han publicado configuraciones específicas.
+- Opciones de despliegue: al ser un modelo basado en OLMo-1B, es compatible con el ecosistema Hugging Face Transformers, así como con vLLM, llama.cpp, Ollama y TGI, aunque no se han publicado configuraciones específicas.
 - No se dispone de datos de latencia o throughput medidos; se estima que en una GPU moderna (por ejemplo, RTX 4090) la inferencia de una oración corta tomaría decenas de milisegundos, pero esto no está confirmado.
 
 ## Comparativa con modelos similares
@@ -88,9 +88,9 @@ La comparación directa con otros ALMs del mismo proyecto no es posible sin dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-euripides
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-euripides
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Código de entrenamiento y atribución: https://github.com/Urdatorn/sphragis_models
 - Leaderboard del benchmark: https://huggingface.co/spaces/Urdatorn/sphragis-leaderboard
 - Paper de OLMo (modelo base): https://arxiv.org/html/2402.00838v1
-- Modelo base en HuggingFace: https://huggingface.co/allenai/OLMo-1B-hf
+- Modelo base en Hugging Face: https://huggingface.co/allenai/OLMo-1B-hf

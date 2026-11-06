@@ -94,7 +94,7 @@ La comparación directa con el drafter oficial de NVIDIA no es posible con los d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RelaxingSnorlax/nemotron35-dspark-30l-fp8block
+- Modelo en Hugging Face: https://huggingface.co/RelaxingSnorlax/nemotron35-dspark-30l-fp8block
 - Drafter fuente de 5 capas: https://huggingface.co/RelaxingSnorlax/nemotron35-dspark-5l-fp8block
 - Modelo objetivo: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
 - Model card de Nemotron 3.5 Lightning 30B-A3B en NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard

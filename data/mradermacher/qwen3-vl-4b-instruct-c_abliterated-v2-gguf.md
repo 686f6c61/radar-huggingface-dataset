@@ -4,7 +4,7 @@
 
 Qwen3-VL-4B-Instruct-c_abliterated-v2-GGUF es una distribucion de pesos cuantizados en formato GGUF del modelo prithivMLmods/Qwen3-VL-4B-Instruct-c_abliterated-v2, un derivado "abliterated" del Qwen3-VL-4B-Instruct de Alibaba. El modelo base parte de la familia Qwen3-VL, una arquitectura multimodal vision-lenguaje de aproximadamente 4.022 millones de parametros que combina un codificador visual con un transformer de lenguaje. La variante "c_abliterated-v2" aplica una tecnica de abliteracion (supresion de la direccion de rechazo en el espacio de activaciones) para reducir los comportamientos de negativa del modelo original.
 
-El trabajo de cuantizacion lo firma mradermacher, un conocido publicador de quants GGUF en HuggingFace, que ofrece el modelo en un espectro amplio de niveles de compresion: desde Q2_K (1,8 GB) hasta f16 (8,2 GB), pasando por Q4_K_M, Q5_K_M, Q6_K y Q8_0, ademas de los ficheros mmproj necesarios para el procesamiento multimodal. Esto permite ejecutar un modelo vision-lenguaje de 4B en hardware de consumo.
+El trabajo de cuantizacion lo firma mradermacher, un conocido publicador de quants GGUF en Hugging Face, que ofrece el modelo en un espectro amplio de niveles de compresion: desde Q2_K (1,8 GB) hasta f16 (8,2 GB), pasando por Q4_K_M, Q5_K_M, Q6_K y Q8_0, ademas de los ficheros mmproj necesarios para el procesamiento multimodal. Esto permite ejecutar un modelo vision-lenguaje de 4B en hardware de consumo.
 
 La relevancia actual del modelo reside en tres factores: su tamano contenido (4B) que lo hace desplegable en GPU consumer, su naturaleza multimodal (acepta imagenes y texto) y su licencia Apache 2.0, que facilita el uso comercial. No obstante, al tratarse de un derivado abliterated, su comportamiento esta desalineado respecto al modelo original y requiere evaluacion cuidadosa antes de cualquier despliegue en produccion.
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-VL-4B-Instruct-c_abliterated-v2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-VL-4B-Instruct-c_abliterated-v2-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/Qwen3-VL-4B-Instruct-c_abliterated-v2
 - Quants imatrix: https://huggingface.co/mradermacher/Qwen3-VL-4B-Instruct-c_abliterated-v2-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3-VL-4B-Instruct-c_abliterated-v2-GGUF

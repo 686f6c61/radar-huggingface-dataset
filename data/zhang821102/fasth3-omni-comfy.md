@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de modelos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zhang821102/FastH3-Omni-Comfy
+- Repositorio en Hugging Face: https://huggingface.co/zhang821102/FastH3-Omni-Comfy
 - Modelo base (BF16, 8 pasos): https://huggingface.co/FastVideo/FastVideo-FastH3-Omni-8-Step-V1
 - Colección de lanzamiento FastH3 Omni: https://huggingface.co/collections/FastVideo/fasth3-omniref
 - Variante FP8 para ComfyUI: https://huggingface.co/FastVideo/FastH3-OmniRef-FP8-Comfy

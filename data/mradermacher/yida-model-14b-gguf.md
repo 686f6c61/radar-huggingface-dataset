@@ -88,9 +88,9 @@ Las cifras de VRAM que se indican a continuacion son estimaciones basadas en el 
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Yida-Model-14B-GGUF (este) | 14,77B | GGUF (11 cuantizaciones) | no disponible | Apache-2.0 | zh, en | HuggingFace, 0 descargas |
-| rwang220/Yida-Model-14B | 14,77B | safetensors | no disponible | Apache-2.0 | zh, en | HuggingFace (modelo original) |
-| Qwen3-14B | 14,77B (referencia de arquitectura) | safetensors y GGUF | no disponible en la informacion proporcionada | Apache-2.0 (segun el enlace de licencia del propio repositorio) | multilingue segun documentacion del fabricante | HuggingFace |
+| Yida-Model-14B-GGUF (este) | 14,77B | GGUF (11 cuantizaciones) | no disponible | Apache-2.0 | zh, en | Hugging Face, 0 descargas |
+| rwang220/Yida-Model-14B | 14,77B | safetensors | no disponible | Apache-2.0 | zh, en | Hugging Face (modelo original) |
+| Qwen3-14B | 14,77B (referencia de arquitectura) | safetensors y GGUF | no disponible en la informacion proporcionada | Apache-2.0 (segun el enlace de licencia del propio repositorio) | multilingue segun documentacion del fabricante | Hugging Face |
 
 No se dispone de datos de rendimiento comparado ni de contexto maximo para establecer una comparacion cuantitativa fiable con alternativas de la misma categoria.
 
@@ -108,7 +108,7 @@ No se dispone de datos de rendimiento comparado ni de contexto maximo para estab
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Yida-Model-14B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Yida-Model-14B-GGUF
 - Modelo base (safetensors): https://huggingface.co/rwang220/Yida-Model-14B
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Yida-Model-14B-GGUF
 - Licencia del modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B/blob/main/LICENSE

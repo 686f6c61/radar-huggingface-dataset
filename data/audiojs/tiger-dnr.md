@@ -96,7 +96,7 @@ La informacion proporcionada no incluye especificaciones de MRX mas alla de sus 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/audiojs/tiger-dnr
+- Modelo en Hugging Face: https://huggingface.co/audiojs/tiger-dnr
 - Modelo base (pesos originales): https://huggingface.co/JusperLee/TIGER-DnR
 - Codigo del modelo: https://github.com/JusperLee/TIGER
 - Paper (ICLR 2025): https://arxiv.org/abs/2410.01469

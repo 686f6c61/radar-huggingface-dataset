@@ -80,5 +80,5 @@ No se dispone de datos comparativos específicos para esta implementación. Sin 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MongrelIntruder/sasrec-pytorch
+- Repositorio en Hugging Face: https://huggingface.co/MongrelIntruder/sasrec-pytorch
 - No se encontraron otros enlaces (papers, blogs, demos) en la información proporcionada.

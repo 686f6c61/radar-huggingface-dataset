@@ -82,7 +82,7 @@ No se dispone de datos comparativos con otros modelos o adaptadores en la inform
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-corr-s1337-l5
+- Hugging Face del adaptador: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-corr-s1337-l5
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Adaptador SFT previo (requerido): https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-sft-unfiltered-l5
 - Versión GGUF del base (unsloth): https://huggingface.co/unsloth/Olmo-3-7B-Think-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-XenonStudio/XenonAI-0.6B es un repositorio de HuggingFace publicado por Xenon Studio que, segun la propia model card del autor, contiene una copia local de los pesos del modelo Qwen/Qwen3-0.6B-Base. Es decir, no se trata de un modelo afinado ni de una version entrenada por Xenon Studio, sino de una replica del modelo base de Qwen, depositada en el repositorio con fines de desarrollo interno. La model card lo explicita con claridad: "This repository contains the original Qwen3-0.6B-Base model weights. It is not the fine-tuned XenonAI model".
+XenonStudio/XenonAI-0.6B es un repositorio de Hugging Face publicado por Xenon Studio que, segun la propia model card del autor, contiene una copia local de los pesos del modelo Qwen/Qwen3-0.6B-Base. Es decir, no se trata de un modelo afinado ni de una version entrenada por Xenon Studio, sino de una replica del modelo base de Qwen, depositada en el repositorio con fines de desarrollo interno. La model card lo explicita con claridad: "This repository contains the original Qwen3-0.6B-Base model weights. It is not the fine-tuned XenonAI model".
 
 El modelo subyacente es un transformer causal de tipo decoder-only de la familia Qwen3, con 28 capas y 751.632.384 parametros segun los metadatos de safetensors del repositorio (la nomenclatura comercial lo cifra en 0,6B). El tamano del repositorio es de aproximadamente 1,5 GB, en formato safetensors y compatible con la libreria transformers y con text-generation-inference.
 
@@ -86,6 +86,6 @@ La unica comparativa fiable a partir de los datos proporcionados es la identidad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/XenonStudio/XenonAI-0.6B
+- Repositorio en Hugging Face: https://huggingface.co/XenonStudio/XenonAI-0.6B
 - Modelo original: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Licencia original: https://huggingface.co/Qwen/Qwen3-0.6B-Base/blob/main/LICENSE

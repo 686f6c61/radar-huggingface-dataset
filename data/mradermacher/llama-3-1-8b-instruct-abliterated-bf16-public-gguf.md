@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Llama-3.1-8B-Instruct-abliterated-bf16-public-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Llama-3.1-8B-Instruct-abliterated-bf16-public-GGUF
 - Modelo base: https://huggingface.co/ashwin-sreedhar/Llama-3.1-8B-Instruct-abliterated-bf16-public
 - Cuantizaciones imatrix/ponderadas: https://huggingface.co/mradermacher/Llama-3.1-8B-Instruct-abliterated-bf16-public-i1-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#Llama-3.1-8B-Instruct-abliterated-bf16-public-GGUF

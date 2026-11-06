@@ -2,11 +2,11 @@
 
 ## Resumen
 
-BananaMind-2-Pro es un modelo de lenguaje base (no instruido) de tipo decoder-only, desarrollado desde cero por el equipo BananaMind y publicado bajo el identificador SLM-Archive/BananaMind-2-Pro en HuggingFace. Se trata de un modelo de escala reducida, con 138.971.520 parametros segun la model card (el repositorio declara 159.943.040 parametros reales en safetensors, una discrepancia que conviene verificar antes de integrarlo), entrenado sobre 99.999.449.088 tokens, practicamente el objetivo de un curriculum de 100.000 millones de tokens, a lo largo de 184.954 pasos de optimizacion.
+BananaMind-2-Pro es un modelo de lenguaje base (no instruido) de tipo decoder-only, desarrollado desde cero por el equipo BananaMind y publicado bajo el identificador SLM-Archive/BananaMind-2-Pro en Hugging Face. Se trata de un modelo de escala reducida, con 138.971.520 parametros segun la model card (el repositorio declara 159.943.040 parametros reales en safetensors, una discrepancia que conviene verificar antes de integrarlo), entrenado sobre 99.999.449.088 tokens, practicamente el objetivo de un curriculum de 100.000 millones de tokens, a lo largo de 184.954 pasos de optimizacion.
 
 Su proposito es servir como checkpoint base de continuacion de texto para tareas de investigacion en modelos pequenos de lenguaje (SLM), y su relevancia radica en que compite directamente con alternativas de ~125-135M de parametros como GPT-2, GPT-X2.5-135M o SmolLM-135M, con un coste de entrenamiento estimado mucho menor que el de SmolLM y con un tokenizer propio de 32.768 entradas orientado a digitos. La arquitectura es un Transformer pre-normalizado de 24 capas, 640 dimensiones ocultas, atencion con grouped-query (8 cabezas de consulta, 4 de clave/valor), QK normalization, RoPE, SwiGLU y RMSNorm, con embeddings de entrada y salida atados.
 
-La ventana de contexto es de solo 3.072 tokens, muy inferior a la de los modelos actuales, y el modelo solo declara soporte de ingles. Se distribuye con codigo propio, por lo que requiere `trust_remote_code=True` para cargarse con transformers, y su licencia es la bananamind-community-license-1.0, marcada como "other" en HuggingFace, con condiciones que no se detallan en la informacion disponible.
+La ventana de contexto es de solo 3.072 tokens, muy inferior a la de los modelos actuales, y el modelo solo declara soporte de ingles. Se distribuye con codigo propio, por lo que requiere `trust_remote_code=True` para cargarse con transformers, y su licencia es la bananamind-community-license-1.0, marcada como "other" en Hugging Face, con condiciones que no se detallan en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -113,7 +113,7 @@ Progresion de checkpoints en Base Bench 1.1: 41 evaluaciones completas de 350 it
 
 | Modelo | Parametros | Contexto | INT Index | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| BananaMind-2-Pro | 139M (o 159,9M segun safetensors) | 3.072 | 24,96 | bananamind-community-license-1.0 | HuggingFace, codigo custom, 0 descargas |
+| BananaMind-2-Pro | 139M (o 159,9M segun safetensors) | 3.072 | 24,96 | bananamind-community-license-1.0 | Hugging Face, codigo custom, 0 descargas |
 | GPT-X2.5-135M | 135M | 2.048 | 25,17 | no disponible | referencia interna en la model card |
 | SmolLM-135M | 135M | no disponible en la informacion | 25,74 | no disponible en la informacion | modelo publico con corpus base compartido (SmolLM-Corpus) |
 | BananaMind-2-Medium | 49,6M | no disponible en la informacion | 15,37 | no disponible en la informacion | familia BananaMind |
@@ -137,7 +137,7 @@ La comparativa se limita a la tabla publicada por el autor. El modelo supera a G
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SLM-Archive/BananaMind-2-Pro
+- Modelo en Hugging Face: https://huggingface.co/SLM-Archive/BananaMind-2-Pro
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset DCLM-Baseline 1.0: https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0
 - Dataset SmolLM-Corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus

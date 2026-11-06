@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning del modelo multimodal Qwen2.5-VL-3B-Instruct, publicado por el usuario rsoohyun213 en HuggingFace. Se trata de una adaptación mediante LoRA (rank 8, dropout 0.05, learning rate 1e-4, warmup 0.1, 3 épocas) que parece haber sido entrenada sobre bloques específicos del modelo base (el nombre indica "only_blocks_ver3-V_L"). El entrenamiento se realizó con la librería Unsloth, como reflejan las etiquetas del repositorio. El modelo está diseñado para tareas de imagen a texto (image-text-to-text), es decir, comprende imágenes y genera respuestas textuales.
+Este modelo es un fine-tuning del modelo multimodal Qwen2.5-VL-3B-Instruct, publicado por el usuario rsoohyun213 en Hugging Face. Se trata de una adaptación mediante LoRA (rank 8, dropout 0.05, learning rate 1e-4, warmup 0.1, 3 épocas) que parece haber sido entrenada sobre bloques específicos del modelo base (el nombre indica "only_blocks_ver3-V_L"). El entrenamiento se realizó con la librería Unsloth, como reflejan las etiquetas del repositorio. El modelo está diseñado para tareas de imagen a texto (image-text-to-text), es decir, comprende imágenes y genera respuestas textuales.
 
 Con 3.754.622.976 parámetros (3,75 mil millones), es un modelo relativamente compacto dentro de la familia Qwen2.5-VL, pensado para ejecutarse en hardware de gama media. Aunque el autor no ha publicado una model card detallada, el nombre del repositorio y los hiperparámetros sugieren un experimento de fine-tuning selectivo, probablemente orientado a mejorar el rendimiento en tareas específicas de visión-lenguaje. No se han publicado métricas de evaluación ni descripciones de los datos de entrenamiento, por lo que su comportamiento real debe validarse empíricamente.
 
@@ -77,7 +77,7 @@ La comparacion directa con el modelo base es la mas relevante, pero al no haber 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rsoohyun213/Qwen2.5-VL-3B-Instruct-v6_s5_exp1_only_blocks_ver3-V_L-rank8-dr0.05-lr1e-04-wu0.1-ep3.0
+- Repositorio Hugging Face: https://huggingface.co/rsoohyun213/Qwen2.5-VL-3B-Instruct-v6_s5_exp1_only_blocks_ver3-V_L-rank8-dr0.05-lr1e-04-wu0.1-ep3.0
 - Modelo similar en llm-explorer: https://llm-explorer.com/model/rsoohyun213%2FQwen2.5-VL-3B-Instruct-v6_s4_exp2_only_blocks_ver3-V_L-rank8-dr0.05-lr1e-04-wu0.1,BDKJOBpTI9MskcTNexher
 - Modelo similar en friendli.ai: https://friendli.ai/models/rsoohyun213/Qwen2.5-VL-3B-Instruct-v6_s2_exp_s4_exp2_s5_exp1_only_blocks_ver3-V_L-rank8-dr0.05-lr1e-04-wu0.1
 - Modelo base Qwen2.5-VL-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct

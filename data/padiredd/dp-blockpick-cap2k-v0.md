@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp-blockpick-cap2k-v0 | 287,5 M | Horizonte 64, 32 ejecutados | Pick de bloque, brazo izquierdo FFW SG2 | other | HuggingFace |
-| padiredd/dp-blockpick-yaw45-2k | no disponible | no disponible | Misma tarea, datos generados por planificador de movimiento | no disponible | HuggingFace |
-| Otras diffusion policies de LeRobot | variable | variable | Tareas diversas de manipulación | variable | HuggingFace |
+| dp-blockpick-cap2k-v0 | 287,5 M | Horizonte 64, 32 ejecutados | Pick de bloque, brazo izquierdo FFW SG2 | other | Hugging Face |
+| padiredd/dp-blockpick-yaw45-2k | no disponible | no disponible | Misma tarea, datos generados por planificador de movimiento | no disponible | Hugging Face |
+| Otras diffusion policies de LeRobot | variable | variable | Tareas diversas de manipulación | variable | Hugging Face |
 
 La comparación directa con `dp-blockpick-yaw45-2k` es la más relevante: comparte seeds, colocaciones de bloque, altura de mesa y aleatorización dr2, y difiere únicamente en el generador de demostraciones (programa code-as-policy frente a planificador de movimiento). No se dispone de datos de rendimiento de ninguno de los dos.
 
@@ -75,14 +75,14 @@ La comparación directa con `dp-blockpick-yaw45-2k` es la más relevante: compar
 - Entrenado exclusivamente en simulación (Isaac Lab); la transferencia a hardware real no está validada ni documentada.
 - Sin resultados de evaluación publicados: no hay evidencia cuantitativa de éxito en la tarea.
 - Licencia "other": es necesario consultar los términos del autor antes de cualquier uso comercial; no se especifican restricciones concretas.
-- El conjunto de datos de entrenamiento (`pick-cube-cap2k-v0-yaw45-full-dr2-3cam`) no está publicado en HuggingFace, lo que dificulta la reproducción exacta.
+- El conjunto de datos de entrenamiento (`pick-cube-cap2k-v0-yaw45-full-dr2-3cam`) no está publicado en Hugging Face, lo que dificulta la reproducción exacta.
 - Dependencia de un fork específico de LeRobot (ROBOTIS lerobot-cyclo), lo que puede introducir incompatibilidades con la versión upstream.
 - Riesgo de sobreajuste a la distribución de demostraciones sintéticas limpias (sin fallos inducidos), lo que puede reducir la robustez ante perturbaciones no modeladas.
 - No es un modelo de lenguaje: no admite prompts en lenguaje natural más allá de la task string fija, ni razonamiento simbólico, ni tool calling.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/padiredd/dp-blockpick-cap2k-v0
+- Hugging Face: https://huggingface.co/padiredd/dp-blockpick-cap2k-v0
 - Modelo contraparte (planificador de movimiento): https://huggingface.co/padiredd/dp-blockpick-yaw45-2k
 - LeRobot (framework): https://github.com/huggingface/lerobot
 - Isaac Lab (simulación): https://github.com/isaac-sim/IsaacLab

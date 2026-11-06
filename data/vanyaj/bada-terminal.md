@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BADA Terminal × Bong v2.1.0 es un paquete de distribución para Windows x64 que empaqueta una aplicación de escritorio y un runtime de agente de IA, no un modelo de lenguaje en el sentido habitual. El repositorio de HuggingFace, publicado por el usuario VanyaJ bajo licencia MIT, contiene exclusivamente binarios de instalación (un instalador NSIS y un ZIP portable) de aproximadamente 0,5 GB. La model card está redactada en coreano y describe la aplicación como un "wrapper de escritorio" con un "runtime cognitivo" denominado Bong.
+BADA Terminal × Bong v2.1.0 es un paquete de distribución para Windows x64 que empaqueta una aplicación de escritorio y un runtime de agente de IA, no un modelo de lenguaje en el sentido habitual. El repositorio de Hugging Face, publicado por el usuario VanyaJ bajo licencia MIT, contiene exclusivamente binarios de instalación (un instalador NSIS y un ZIP portable) de aproximadamente 0,5 GB. La model card está redactada en coreano y describe la aplicación como un "wrapper de escritorio" con un "runtime cognitivo" denominado Bong.
 
 El artefacto integra una arquitectura que el autor denomina "7대 토큰 다이어트 아키텍처" (arquitectura de dieta de tokens de siete componentes), que incluye módulos como Ponytail, Caveman, RTK, Headroom SmartCrusher, Context Mode con FTS5/BM25, búsqueda de símbolos Serena y un auditor Token Optimizer. También incorpora un puente de memoria L1/L2 (Mories) con cifrado AES-256-GCM en disco, un sandbox local multiplataforma con almacenamiento de objetos remoto (S3, Cloudflare R2, MinIO) y orquestación multiagente (BADA Herd) con un broker NATS embebido.
 
@@ -78,6 +78,6 @@ No disponible. No se conocen modelos comparables porque el artefacto no es un mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VanyaJ/bada-terminal
+- Repositorio en Hugging Face: https://huggingface.co/VanyaJ/bada-terminal
 - Instalador NSIS: https://huggingface.co/VanyaJ/bada-terminal/resolve/main/BADA%20Terminal%20Setup%202.1.0.exe
 - ZIP portable: https://huggingface.co/VanyaJ/bada-terminal/resolve/main/BADA%20Terminal-2.1.0-win.zip

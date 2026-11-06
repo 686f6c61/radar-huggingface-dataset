@@ -4,7 +4,7 @@
 
 SZLHOLDINGS/szl-ouroboros no es un modelo de inteligencia artificial, sino un kernel de gobernanza escrito en Python puro (solo biblioteca estándar) para la gestión de bucles acotados en runtimes de agentes. Lo desarrolla SZL Holdings (Stephen P. Lutar, ORCID 0009-0001-0110-4173) como parte de un sistema de seguridad que mantiene a los agentes dentro de límites demostrables, generando recibos a prueba de manipulación. Su relevancia radica en que aborda un problema crítico en la producción de agentes autónomos: garantizar que los bucles de ejecución terminen y que cada iteración quede registrada con métricas medibles o derivadas, sin fabricar datos cuando la medición no está disponible.
 
-El repositorio en HuggingFace actúa como espejo de publicación del código fuente canónico en GitHub. La model card es explícita: "Not a model. No weights." No hay arquitectura neuronal, ni pesos, ni entrenamiento. Se trata de una librería con API pública (`build_loop_trace`, `loop_tax`, `selfcheck`) que reconstruye trazas de intentos de ejecución y calcula el "impuesto de bucle" (loop-tax) separando tiempos medidos de tiempos derivados. El archivo `model.joblib` presente en el hub está marcado como CUARENTENA: no debe cargarse con `joblib.load`.
+El repositorio en Hugging Face actúa como espejo de publicación del código fuente canónico en GitHub. La model card es explícita: "Not a model. No weights." No hay arquitectura neuronal, ni pesos, ni entrenamiento. Se trata de una librería con API pública (`build_loop_trace`, `loop_tax`, `selfcheck`) que reconstruye trazas de intentos de ejecución y calcula el "impuesto de bucle" (loop-tax) separando tiempos medidos de tiempos derivados. El archivo `model.joblib` presente en el hub está marcado como CUARENTENA: no debe cargarse con `joblib.load`.
 
 La licencia es Apache-2.0, sin restricciones de uso comercial. El repositorio tiene un tamaño de 0.0 GB (código fuente, no pesos). No se han publicado resultados de benchmarks de IA porque no es un modelo de IA.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible, dado
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es un modelo de IA y no existen modelos comparables en la misma categoría. Los kernels de gobernanza de agentes son un campo emergente sin alternativas públicas conocidas en HuggingFace.
+No disponible. Este repositorio no es un modelo de IA y no existen modelos comparables en la misma categoría. Los kernels de gobernanza de agentes son un campo emergente sin alternativas públicas conocidas en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -72,7 +72,7 @@ No disponible. Este repositorio no es un modelo de IA y no existen modelos compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SZLHOLDINGS/szl-ouroboros
+- Hugging Face: https://huggingface.co/SZLHOLDINGS/szl-ouroboros
 - GitHub (fuente canónica): https://github.com/szl-holdings/szl-ouroboros
 - GitHub (producto TypeScript relacionado): https://github.com/szl-holdings/ouroboros
 - Documentación en a11oy: https://github.com/szl-holdings/a11oy/blob/main/runtime/ouroboros/README.md

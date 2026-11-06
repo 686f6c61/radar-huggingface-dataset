@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Llama-3.1-8B-Instruct_SFT_mathv00.06 es un ajuste fino supervisado (SFT) del modelo meta-llama/Llama-3.1-8B-Instruct, desarrollado por el usuario Neelectric y publicado en HuggingFace. El modelo se ha entrenado específicamente sobre el dataset Neelectric/OpenR1-Math-220k_all_Llama3_4096toks, orientado a tareas de razonamiento matemático y resolución de problemas, y forma parte de una familia de variantes experimentales del mismo autor (versiones v00.01 a v00.08, incluyendo variantes con EWC). Su relevancia radica en ser un ejemplo de ajuste especializado en matemáticas sobre una base instruct de propósito general, dentro del ecosistema open-r1.
+Llama-3.1-8B-Instruct_SFT_mathv00.06 es un ajuste fino supervisado (SFT) del modelo meta-llama/Llama-3.1-8B-Instruct, desarrollado por el usuario Neelectric y publicado en Hugging Face. El modelo se ha entrenado específicamente sobre el dataset Neelectric/OpenR1-Math-220k_all_Llama3_4096toks, orientado a tareas de razonamiento matemático y resolución de problemas, y forma parte de una familia de variantes experimentales del mismo autor (versiones v00.01 a v00.08, incluyendo variantes con EWC). Su relevancia radica en ser un ejemplo de ajuste especializado en matemáticas sobre una base instruct de propósito general, dentro del ecosistema open-r1.
 
 Arquitectura y tamaño: hereda íntegramente la topología del modelo base Llama 3.1 8B Instruct, un transformer decoder-only de 8.030.261.248 parámetros (aproximadamente 8,03 mil millones), con una ventana de contexto nativa del modelo base de 128.000 tokens. El ajuste se realizó con la librería TRL (versión 1.1.0.dev0) sobre secuencias de 4.096 tokens, según indica el nombre del dataset.
 
-Estado de adopción: el modelo registra 0 descargas y 0 "likes" en HuggingFace, se publicó el 12 de octubre de 2026 y el repositorio ocupa 32,1 GB. No se ha publicado información sobre licencia específica, idiomas declarados ni resultados de benchmarks en la información disponible.
+Estado de adopción: el modelo registra 0 descargas y 0 "likes" en Hugging Face, se publicó el 12 de octubre de 2026 y el repositorio ocupa 32,1 GB. No se ha publicado información sobre licencia específica, idiomas declarados ni resultados de benchmarks en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Neelectric/Llama-3.1-8B-Instruct_SFT_mathv00.06 | 8,03 B | 128.000 tokens (base), SFT a 4.096 | No disponible | No disponible | HuggingFace (0 descargas) |
-| meta-llama/Llama-3.1-8B-Instruct (base) | 8,03 B | 128.000 tokens | Benchmarks publicos de Llama 3.1 (no reproducidos aqui) | Llama 3.1 Community License | HuggingFace, ampliamente distribuido |
-| Neelectric/Llama-3.1-8B-Instruct_SFT_Math-220kv00.08 | 8,03 B (esperado) | 32.768 tokens segun ficha de variantes similares | No disponible | No disponible | HuggingFace |
-| Neelectric/Llama-3.1-8B-Instruct_SFT_mathsp_ewc_v00.08 | 8,03 B (esperado) | 32.768 tokens segun ficha de variantes similares | No disponible | No disponible | HuggingFace |
+| Neelectric/Llama-3.1-8B-Instruct_SFT_mathv00.06 | 8,03 B | 128.000 tokens (base), SFT a 4.096 | No disponible | No disponible | Hugging Face (0 descargas) |
+| meta-llama/Llama-3.1-8B-Instruct (base) | 8,03 B | 128.000 tokens | Benchmarks publicos de Llama 3.1 (no reproducidos aqui) | Llama 3.1 Community License | Hugging Face, ampliamente distribuido |
+| Neelectric/Llama-3.1-8B-Instruct_SFT_Math-220kv00.08 | 8,03 B (esperado) | 32.768 tokens segun ficha de variantes similares | No disponible | No disponible | Hugging Face |
+| Neelectric/Llama-3.1-8B-Instruct_SFT_mathsp_ewc_v00.08 | 8,03 B (esperado) | 32.768 tokens segun ficha de variantes similares | No disponible | No disponible | Hugging Face |
 
 Las variantes del mismo autor comparten base y dataset similar, diferenciandose por la estrategia de entrenamiento (SFT estandar, extension del dataset, EWC). No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con alternativas de la categoria (por ejemplo, modelos de razonamiento matematico de tamano 7-8B).
 
@@ -88,7 +88,7 @@ Las variantes del mismo autor comparten base y dataset similar, diferenciandose 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Neelectric/Llama-3.1-8B-Instruct_SFT_mathv00.06
+- Modelo en Hugging Face: https://huggingface.co/Neelectric/Llama-3.1-8B-Instruct_SFT_mathv00.06
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Neelectric/OpenR1-Math-220k_all_Llama3_4096toks
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/neelectric/open-r1_math/runs/greftv75

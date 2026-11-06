@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `htrbao/aloha_bimanual_js_abs-pipeplacing` es un checkpoint de redes neuronales publicado en HuggingFace por el usuario `htrbao` bajo licencia MIT. Con 3.144.016.000 parámetros (aproximadamente 3,14 mil millones) y un tamaño de repositorio de 12,6 GB, el nombre sugiere una posible orientación hacia el control robótico bimanual, probablemente relacionado con el sistema ALOHA (A Low-cost Open-source Hardware for Bimanual Teleoperation) y una tarea específica de colocación de tuberías (`pipeplacing`). Sin embargo, la model card no contiene ninguna descripción técnica, arquitectónica ni de uso, por lo que toda la información funcional debe considerarse no disponible.
+El modelo `htrbao/aloha_bimanual_js_abs-pipeplacing` es un checkpoint de redes neuronales publicado en Hugging Face por el usuario `htrbao` bajo licencia MIT. Con 3.144.016.000 parámetros (aproximadamente 3,14 mil millones) y un tamaño de repositorio de 12,6 GB, el nombre sugiere una posible orientación hacia el control robótico bimanual, probablemente relacionado con el sistema ALOHA (A Low-cost Open-source Hardware for Bimanual Teleoperation) y una tarea específica de colocación de tuberías (`pipeplacing`). Sin embargo, la model card no contiene ninguna descripción técnica, arquitectónica ni de uso, por lo que toda la información funcional debe considerarse no disponible.
 
 Este modelo es relevante únicamente por su publicación reciente (agosto de 2026) y su licencia permisiva, pero carece de documentación, benchmarks o comunidad que lo respalde. No se puede determinar su arquitectura, método de entrenamiento ni capacidades reales a partir de los datos disponibles.
 
@@ -81,6 +81,6 @@ No se dispone de información sobre modelos comparables. Dado que no se conoce l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/htrbao/aloha_bimanual_js_abs-pipeplacing
+- Repositorio Hugging Face: https://huggingface.co/htrbao/aloha_bimanual_js_abs-pipeplacing
 
 No se han encontrado papers, blogs, demos ni otros recursos asociados al modelo.

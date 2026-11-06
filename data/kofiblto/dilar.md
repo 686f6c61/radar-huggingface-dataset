@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KOFIblto/dilar es un adaptador LoRA de generacion de imagenes a partir de texto (text-to-image) publicado en HuggingFace por el usuario KOFIblto. Segun los metadatos del repositorio, se ha entrenado sobre el modelo base krea/Krea-2-Raw y se distribuye siguiendo la plantilla `template:sd-lora`, por lo que esta pensado para cargarse con la libreria `diffusers` o con herramientas compatibles con LoRA de difusion (por ejemplo ComfyUI o la webui de Automatic1111). No es un modelo completo, sino un conjunto de pesos de bajo rango que modifican el comportamiento del modelo base.
+KOFIblto/dilar es un adaptador LoRA de generacion de imagenes a partir de texto (text-to-image) publicado en Hugging Face por el usuario KOFIblto. Segun los metadatos del repositorio, se ha entrenado sobre el modelo base krea/Krea-2-Raw y se distribuye siguiendo la plantilla `template:sd-lora`, por lo que esta pensado para cargarse con la libreria `diffusers` o con herramientas compatibles con LoRA de difusion (por ejemplo ComfyUI o la webui de Automatic1111). No es un modelo completo, sino un conjunto de pesos de bajo rango que modifican el comportamiento del modelo base.
 
 El repositorio no incluye model card, descripcion de dataset de entrenamiento, ejemplos de uso ni resultados de evaluacion. En el momento de redactar esta ficha presenta 0 descargas y 0 "likes", y las unicas senales disponibles son las etiquetas (`diffusers`, `text-to-image`, `lora`, `krea2`, `template:sd-lora`) y la referencia al modelo base. La fecha de creacion y de ultima actualizacion registrada es 2026-09-15, identica en ambos casos, lo que sugiere un repositorio recien publicado y sin mantenimiento posterior documentado.
 
@@ -85,6 +85,6 @@ No disponible. El repositorio no identifica adaptadores comparables y no hay inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KOFIblto/dilar
+- Hugging Face: https://huggingface.co/KOFIblto/dilar
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este adaptador.

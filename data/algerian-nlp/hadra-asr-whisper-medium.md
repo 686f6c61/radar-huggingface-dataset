@@ -85,10 +85,10 @@ No hay benchmarks ancla disponibles: las suites de referencia del colectivo (Dzi
 
 | Modelo | Parametros | Contexto de audio | WER declarada en darija | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hadra-ASR-whisper-medium | 833 M totales (69 M entrenables) | 30 s por ventana | 0,68 % / 0,34 % / 0,95 % (OddAdmix, unica ejecucion) | MIT | HuggingFace, adaptador PEFT |
-| Hadra-ASR-whisper-small | no disponible en la informacion proporcionada | 30 s por ventana | 34,85 % / 14,87 % / 27,54 % | no disponible en la informacion proporcionada | HuggingFace (referenciado como linea base) |
-| openai/whisper-medium (base) | 763.857.920 | 30 s por ventana | no disponible para darija en la informacion proporcionada | MIT (modelo original de OpenAI) | HuggingFace, safetensors |
-| openai/whisper-large-v3 | no disponible en la informacion proporcionada | 30 s por ventana | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| Hadra-ASR-whisper-medium | 833 M totales (69 M entrenables) | 30 s por ventana | 0,68 % / 0,34 % / 0,95 % (OddAdmix, unica ejecucion) | MIT | Hugging Face, adaptador PEFT |
+| Hadra-ASR-whisper-small | no disponible en la informacion proporcionada | 30 s por ventana | 34,85 % / 14,87 % / 27,54 % | no disponible en la informacion proporcionada | Hugging Face (referenciado como linea base) |
+| openai/whisper-medium (base) | 763.857.920 | 30 s por ventana | no disponible para darija en la informacion proporcionada | MIT (modelo original de OpenAI) | Hugging Face, safetensors |
+| openai/whisper-large-v3 | no disponible en la informacion proporcionada | 30 s por ventana | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 
 Las dos unicas cifras comparables directamente son las de las dos filas de Hadra, y ambas proceden de una unica ejecucion cada una bajo el mismo normalizador. La comparacion con Whisper medium sin ajustar en darija no esta publicada en la informacion disponible.
 
@@ -109,7 +109,7 @@ Las dos unicas cifras comparables directamente son las de las dos filas de Hadra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/algerian-nlp/Hadra-ASR-whisper-medium
+- Modelo en Hugging Face: https://huggingface.co/algerian-nlp/Hadra-ASR-whisper-medium
 - Modelo base: https://huggingface.co/openai/whisper-medium
 - Linea base small del colectivo: https://huggingface.co/algerian-nlp/Hadra-ASR-whisper-small
 - Dataset Kahwa podcast: https://huggingface.co/datasets/oddadmix/arabic-audio-collection-algerian-kahwa-postcast

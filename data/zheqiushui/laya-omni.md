@@ -2,7 +2,7 @@
 
 ## Resumen
 
-laya-omni es un modelo de decisión multimodal desarrollado por el usuario zheqiushui, publicado en HuggingFace bajo licencia Apache-2.0. No es un modelo generativo: responde a preguntas tipadas (elegir una opción entre varias, emitir una puntuación o contestar sí/no) devolviendo probabilidades calibradas. Sobre la base del modelo Laya —que solo procesa texto— añade entradas opcionales de imagen y audio, de modo que sin imagen ni audio la salida es bit a bit idéntica a la de Laya.
+laya-omni es un modelo de decisión multimodal desarrollado por el usuario zheqiushui, publicado en Hugging Face bajo licencia Apache-2.0. No es un modelo generativo: responde a preguntas tipadas (elegir una opción entre varias, emitir una puntuación o contestar sí/no) devolviendo probabilidades calibradas. Sobre la base del modelo Laya —que solo procesa texto— añade entradas opcionales de imagen y audio, de modo que sin imagen ni audio la salida es bit a bit idéntica a la de Laya.
 
 La relevancia del modelo está en su planteamiento de eficiencia: en lugar de un VLM generativo de miles de millones de parámetros, combina tres codificadores congelados de tamaño pequeño (Laya multilingual con backbone mmBERT-base, ~310 M; SigLIP 2 base/16-256, ~93 M; y el codificador de audio de Qwen3-ASR-0.6B, 186 M) y entrena únicamente una fusión de unos 7 M de parámetros (28 MB). El resultado cabe en un repositorio de 0,4 GB y responde una pregunta con imagen o un clip de 10 segundos en 30-120 ms en una RTX 4090, codificadores incluidos.
 
@@ -105,7 +105,7 @@ La model card no incluye comparaciones con modelos omni generativos. La diferenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zheqiushui/laya-omni
+- Modelo en Hugging Face: https://huggingface.co/zheqiushui/laya-omni
 - Repositorio de código, documentación y herramienta de ajuste fino: https://github.com/ZHEQIUSHUI/laya-omni
 - Resultados completos (43 conjuntos, calibración y ablaciones): https://github.com/ZHEQIUSHUI/laya-omni/blob/main/docs/results.md
 - Guía de ajuste fino: https://github.com/ZHEQIUSHUI/laya-omni/blob/main/docs/finetune.md

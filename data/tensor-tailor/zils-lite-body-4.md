@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| tensor-tailor/zils-lite-body-4 | 852.985.920 | no disponible | Apache-2.0 | Decision body para pool Zils | HuggingFace, custom_code |
-| thermopylae-777/zils-lite-body-2 | no disponible | no disponible | Apache-2.0 (segun card referenciada) | Body previo del mismo pool | HuggingFace |
-| dasLOL/zils-lite-skills-v5 | no disponible | no disponible | Apache-2.0 | Body de otro minero con seis fine-tunes | HuggingFace |
-| Qwen/Qwen3.5-0.8B | ~800M (chasis) | no disponible | no disponible en esta ficha | Modelo base de lenguaje y vision | HuggingFace |
+| tensor-tailor/zils-lite-body-4 | 852.985.920 | no disponible | Apache-2.0 | Decision body para pool Zils | Hugging Face, custom_code |
+| thermopylae-777/zils-lite-body-2 | no disponible | no disponible | Apache-2.0 (segun card referenciada) | Body previo del mismo pool | Hugging Face |
+| dasLOL/zils-lite-skills-v5 | no disponible | no disponible | Apache-2.0 | Body de otro minero con seis fine-tunes | Hugging Face |
+| Qwen/Qwen3.5-0.8B | ~800M (chasis) | no disponible | no disponible en esta ficha | Modelo base de lenguaje y vision | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estos modelos mas alla de las mediciones internas del autor frente al soup de partida. La comparativa con modelos de proposito general del mismo tamano (por ejemplo, variantes de 0.5-1B) no es posible con la informacion proporcionada.
 
@@ -93,13 +93,13 @@ No se dispone de datos de rendimiento comparables entre estos modelos mas alla d
 - Sesgos heredados: el modelo parte de Qwen3.5-0.8B y de dos cuerpos entrenados por terceros con datos que el autor no ha verificado (en particular, dasLOL/zils-lite-skills-v5 uso 20 Newsgroups y Sarcasm Headlines, fuentes que el autor de esta ficha evita).
 - Restricciones de licencia: Apache-2.0 permite uso comercial, pero los terminos share-alike y copyleft de algunas fuentes de texto (GPL 303 filas, CC BY-SA) aplican a la redistribucion del texto fuente, no a los pesos. El repositorio contiene solo pesos.
 - Dependencia de `custom_code`: requiere cargar codigo personalizado, lo que anade riesgo de seguridad y complejidad en el despliegue.
-- Sin pipeline declarado: la ausencia de pipeline en HuggingFace dificulta el uso directo con las herramientas estandar.
+- Sin pipeline declarado: la ausencia de pipeline en Hugging Face dificulta el uso directo con las herramientas estandar.
 - Fecha de creacion futura (2026-11-05): coherencia temporal a verificar segun el contexto de uso.
 - Sin garantia de mantenimiento: 0 descargas y 0 likes en el momento de la consulta; el modelo no tiene validacion de la comunidad.
 
 ## Enlaces
 
-- [HuggingFace: tensor-tailor/zils-lite-body-4](https://huggingface.co/tensor-tailor/zils-lite-body-4)
+- [Hugging Face: tensor-tailor/zils-lite-body-4](https://huggingface.co/tensor-tailor/zils-lite-body-4)
 - [Modelo base: thermopylae-777/zils-lite-body-2](https://huggingface.co/thermopylae-777/zils-lite-body-2)
 - [Modelo base: dasLOL/zils-lite-skills-v5](https://huggingface.co/dasLOL/zils-lite-skills-v5)
 - [Chasis: vllm-sr/d3-lite](https://huggingface.co/vllm-sr/d3-lite)
@@ -107,4 +107,4 @@ No se dispone de datos de rendimiento comparables entre estos modelos mas alla d
 - [Profesor de destilacion: vllm-sr/d3-ultra](https://huggingface.co/vllm-sr/d3-ultra)
 - [Dataset de respuestas: zils-ai/zils-relay-answers](https://huggingface.co/datasets/zils-ai/zils-relay-answers)
 - [Dataset de decisiones: tasksource/tasksource-jev-typed-decisions](https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions)
-- [Organizacion tasksource en HuggingFace](https://huggingface.co/tasksource)
+- [Organizacion tasksource en Hugging Face](https://huggingface.co/tasksource)

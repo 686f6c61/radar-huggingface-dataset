@@ -71,8 +71,8 @@ La mejora sobre el modelo base es de +7,60 puntos en el total y +8,76 puntos en 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Medical JEV v1 (este) | ~4B + 32,5M adaptador | 1.536 tokens | Choice scoring médico | MIT (adaptador) / Apache-2.0 (base) | HuggingFace, paquete propio |
-| Qwen3.5-4B sin adaptar | ~4B | No disponible en la información | Generación general | Apache-2.0 | HuggingFace |
+| Medical JEV v1 (este) | ~4B + 32,5M adaptador | 1.536 tokens | Choice scoring médico | MIT (adaptador) / Apache-2.0 (base) | Hugging Face, paquete propio |
+| Qwen3.5-4B sin adaptar | ~4B | No disponible en la información | Generación general | Apache-2.0 | Hugging Face |
 | JEV 1.13 (archivado) | No disponible | No disponible | Choice scoring médico | No disponible | No disponible |
 | Modelos médicos basados en Qwen de 4B | No disponible | No disponible | Generación médica | Variable | No disponible |
 
@@ -94,7 +94,7 @@ La comparación directa más útil es con el propio Qwen3.5-4B sin adaptar, que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JuneYao/medical-jev-4b
+- Modelo en Hugging Face: https://huggingface.co/JuneYao/medical-jev-4b
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de entrenamiento y evaluación: https://github.com/JuneYaooo/medical-jev-training
 - Benchmark de evaluación: https://github.com/JuneYaooo/jev-healthcare-lab

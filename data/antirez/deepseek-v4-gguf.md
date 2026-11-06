@@ -72,6 +72,6 @@ No se dispone de informacion suficiente para comparar con alternativas de la mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/antirez/deepseek-v4-gguf
+- Repositorio Hugging Face: https://huggingface.co/antirez/deepseek-v4-gguf
 - Motor de inferencia ds4 (GitHub): https://github.com/antirez/ds4
 - Fork experimental de llama.cpp (GitHub): https://github.com/antirez/llama.cpp-deepseek-v4-flash

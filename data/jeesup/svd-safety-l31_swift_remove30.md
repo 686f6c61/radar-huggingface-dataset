@@ -97,7 +97,7 @@ No se dispone de datos suficientes para comparar el rendimiento de tareas genera
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_swift_remove30
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_swift_remove30
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 Community: incluida en el propio repositorio (`LICENSE`, `USE_POLICY.md`)
 - Paper de SVD-LLM, repositorio de codigo, demos u otros recursos del autor: no disponibles en la informacion proporcionada. Las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo.

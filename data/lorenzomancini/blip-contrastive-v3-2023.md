@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| blip-contrastive-v3-2023 | 49.600 (tiny) | no disponible | no | Apache 2.0 | HuggingFace (0 descargas) |
-| BLIP (Salesforce, base/large) | cientos de millones | no aplica (vision-lenguaje) | si | licencia propia de Salesforce | HuggingFace, ampliamente usado |
-| CLIP (OpenAI) | ~150M-400M | no aplica | si | licencia de OpenAI | HuggingFace, referencia del sector |
-| SigLIP (Google) | ~90M-900M | no aplica | si | Apache 2.0 | HuggingFace |
+| blip-contrastive-v3-2023 | 49.600 (tiny) | no disponible | no | Apache 2.0 | Hugging Face (0 descargas) |
+| BLIP (Salesforce, base/large) | cientos de millones | no aplica (vision-lenguaje) | si | licencia propia de Salesforce | Hugging Face, ampliamente usado |
+| CLIP (OpenAI) | ~150M-400M | no aplica | si | licencia de OpenAI | Hugging Face, referencia del sector |
+| SigLIP (Google) | ~90M-900M | no aplica | si | Apache 2.0 | Hugging Face |
 
 La comparativa es estructural: este repositorio no es comparable en rendimiento porque no ha sido entrenado ni evaluado. Frente a CLIP, SigLIP o BLIP oficial, la diferencia no es de capacidad sino de estado del artefacto.
 
@@ -89,6 +89,6 @@ La comparativa es estructural: este repositorio no es comparable en rendimiento 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lorenzomancini/blip-contrastive-v3-2023
+- Hugging Face: https://huggingface.co/lorenzomancini/blip-contrastive-v3-2023
 - Paper de BLIP (referencia de la arquitectura, no vinculado al repositorio): no disponible en la informacion proporcionada
 - Repositorio de codigo, demo o blog adicionales: no disponible en la informacion proporcionada

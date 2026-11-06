@@ -69,8 +69,8 @@ No se dispone de informacion sobre modelos comparables especificos en la documen
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-BiomedBERTFull-Base-110M-v1-mlx
-- Repositorio HuggingFace del modelo base: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-BiomedBERTFull-Base-110M-v1
+- Repositorio Hugging Face del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-BiomedBERTFull-Base-110M-v1-mlx
+- Repositorio Hugging Face del modelo base: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-BiomedBERTFull-Base-110M-v1
 - Repositorio GitHub de OpenMed: https://github.com/maziyarpanahi/openmed
 - Documentacion del backend MLX: https://openmed.life/docs/mlx-backend/
 - Documentacion de OpenMedKit (Swift): https://openmed.life/docs/swift-openmedkit/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tohirju/sl-larch4` es un modelo de lenguaje de 8.953.803.264 parámetros (aproximadamente 8,95 mil millones) publicado en HuggingFace por el usuario Tohirju. El repositorio tiene un tamaño de 17,9 GB, lo que sugiere que los pesos están almacenados en precisión FP16 o BF16. El acceso está restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargarlo.
+El modelo `Tohirju/sl-larch4` es un modelo de lenguaje de 8.953.803.264 parámetros (aproximadamente 8,95 mil millones) publicado en Hugging Face por el usuario Tohirju. El repositorio tiene un tamaño de 17,9 GB, lo que sugiere que los pesos están almacenados en precisión FP16 o BF16. El acceso está restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargarlo.
 
 La información pública disponible es extremadamente limitada: no se especifican la arquitectura, el tipo de modelo, el contexto, los idiomas soportados ni la licencia concreta (solo se indica "other"). Tampoco hay documentación, papers ni demos asociados. Esto impide realizar una evaluación técnica rigurosa. El modelo parece ser parte de una serie (existe `sl-larch3` del mismo autor), pero no se ha encontrado información adicional sobre su entrenamiento o capacidades.
 
@@ -29,7 +29,7 @@ No se dispone de informacion verificada sobre las capacidades del modelo. No se 
 
 ## Casos de uso
 
-No se pueden proponer casos de uso concretos sin informacion sobre las capacidades del modelo. La falta de documentacion, benchmarks y ejemplos hace imposible determinar para que tareas es adecuado. Se recomienda contactar con el autor o revisar las condiciones de acceso en HuggingFace para obtener mas detalles antes de considerar su uso.
+No se pueden proponer casos de uso concretos sin informacion sobre las capacidades del modelo. La falta de documentacion, benchmarks y ejemplos hace imposible determinar para que tareas es adecuado. Se recomienda contactar con el autor o revisar las condiciones de acceso en Hugging Face para obtener mas detalles antes de considerar su uso.
 
 ## Benchmarks y rendimiento
 
@@ -53,13 +53,13 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 ## Limitaciones y advertencias
 
 - La informacion publica es insuficiente para evaluar sesgos, alucinaciones o limitaciones de contexto o idioma.
-- El acceso es restringido (gated): es necesario aceptar condiciones en HuggingFace, pero no se publican los terminos exactos de la licencia "other". Esto puede implicar restricciones de uso comercial o modificacion.
+- El acceso es restringido (gated): es necesario aceptar condiciones en Hugging Face, pero no se publican los terminos exactos de la licencia "other". Esto puede implicar restricciones de uso comercial o modificacion.
 - No hay documentacion tecnica, lo que dificulta la integracion en produccion y la depuracion de errores.
 - El modelo no tiene descargas ni likes, lo que sugiere que es muy reciente o poco probado por la comunidad.
 - Se recomienda extremar la precaucion antes de usar este modelo en cualquier aplicacion real, dado el desconocimiento total de sus capacidades y limitaciones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tohirju/sl-larch4
+- Modelo en Hugging Face: https://huggingface.co/Tohirju/sl-larch4
 - Modelo anterior del mismo autor (sl-larch3): https://huggingface.co/Tohirju/sl-larch3
-- Perfil del autor en HuggingFace: https://huggingface.co/Tohirju
+- Perfil del autor en Hugging Face: https://huggingface.co/Tohirju

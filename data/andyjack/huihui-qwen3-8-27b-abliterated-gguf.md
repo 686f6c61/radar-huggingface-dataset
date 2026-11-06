@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/andyjack/Huihui-Qwen3.8-27B-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/andyjack/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Repositorio original (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Guía para ejecutar Qwen3.8-27B localmente: https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026
 - Especificaciones y requisitos de hardware: https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026

@@ -18,7 +18,7 @@ Su relevancia práctica es doble: por un lado, permite ejecutar un modelo de 120
 | Longitud de contexto | no disponible (se han medido prompts de hasta 131K tokens) |
 | Tipos de cuantización | Q2_0 (2,40 bpw), IQ2_XS (2,50 bpw), IQ3_XXS (3,00 bpw), IQ3_S (3,50 bpw) |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-license-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | qwen-community-license-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | GGUF (dos shards por tamaño; shard 2 es la tabla de n-gramas, idéntica en los cuatro tamaños) más proyector de visión `mmproj-Qwen3.8-Flash-Next-BF16.gguf` |
 
 ## Arquitectura y entrenamiento
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Limitaciones y advertencias
 
-- La licencia qwen-community-license-1.0 impone condiciones específicas de uso comercial que deben revisarse antes de desplegar el modelo en producción; el campo `license: other` en HuggingFace remite al fichero LICENSE del repositorio.
+- La licencia qwen-community-license-1.0 impone condiciones específicas de uso comercial que deben revisarse antes de desplegar el modelo en producción; el campo `license: other` en Hugging Face remite al fichero LICENSE del repositorio.
 - La eliminación de rechazos es un cambio deliberado de comportamiento: el modelo puede generar contenido que el checkpoint original rechazaría, con implicaciones legales y de seguridad según el contexto de uso.
 - Las cuantizaciones de 2,40-3,50 bits degradan la calidad: IQ2_XS solo coincide con BF16 en el 88% de los tokens top-1 y presenta una KL de 0,193; IQ3_S mejora a 93% y 0,075, pero sigue siendo una aproximación.
 - El autor no ha ejecutado el instalador de Strata de principio a fin; construyó el motor desde la fuente fijada y lo arrancó con los mismos argumentos, por lo que el flujo automatizado no está validado de extremo a extremo en su máquina.
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IloveAi333/Qwen3.8-Flash-Next-abliterated-GSQ-RCO-Strata-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IloveAi333/Qwen3.8-Flash-Next-abliterated-GSQ-RCO-Strata-GGUF
 - Repositorio base de cuantizaciones: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Checkpoint abliterated de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated

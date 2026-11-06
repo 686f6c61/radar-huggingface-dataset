@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mytho0610/slm-text2sql-qwen2.5-coder-1.5b-instruct-debug es un ajuste fino (fine-tuning) del modelo Qwen/Qwen2.5-Coder-1.5B-Instruct orientado a la tarea de text-to-SQL sobre SQLite. Lo publica el usuario Mytho0610 en HuggingFace y se ha entrenado mediante QLoRA (SFT supervisado) sobre datos de SQaLe. El modelo recibe un esquema de base de datos en formato DDL (`CREATE TABLE ...`) junto con una pregunta en lenguaje natural y devuelve la consulta SQL correspondiente.
+Mytho0610/slm-text2sql-qwen2.5-coder-1.5b-instruct-debug es un ajuste fino (fine-tuning) del modelo Qwen/Qwen2.5-Coder-1.5B-Instruct orientado a la tarea de text-to-SQL sobre SQLite. Lo publica el usuario Mytho0610 en Hugging Face y se ha entrenado mediante QLoRA (SFT supervisado) sobre datos de SQaLe. El modelo recibe un esquema de base de datos en formato DDL (`CREATE TABLE ...`) junto con una pregunta en lenguaje natural y devuelve la consulta SQL correspondiente.
 
 Se trata de un experimento de bajo perfil: el repositorio no acumula descargas ni interacciones y la model card es minima. Su interes practico radica en que parte de una base solida y compacta (Qwen2.5-Coder-1.5B-Instruct, 1.543.714.304 parametros) y la especializa en una tarea muy concreta, con un formato de salida estructurado que separa el razonamiento (`<think>`) de la respuesta final (`<answer>`).
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mytho0610/slm-text2sql-qwen2.5-coder-1.5b-instruct-debug | 1,54B | no disponible | Text-to-SQL SQLite (QLoRA SFT) | no disponible | HuggingFace, safetensors |
-| Qwen/Qwen2.5-Coder-1.5B-Instruct | 1,54B | no disponible en esta ficha | Modelo generalista de codigo e instrucciones | Apache 2.0 (modelo base) | HuggingFace, ampliamente disponible |
+| Mytho0610/slm-text2sql-qwen2.5-coder-1.5b-instruct-debug | 1,54B | no disponible | Text-to-SQL SQLite (QLoRA SFT) | no disponible | Hugging Face, safetensors |
+| Qwen/Qwen2.5-Coder-1.5B-Instruct | 1,54B | no disponible en esta ficha | Modelo generalista de codigo e instrucciones | Apache 2.0 (modelo base) | Hugging Face, ampliamente disponible |
 | Modelos text-to-SQL especializados de mayor tamano (p. ej. variantes de 7B) | 7B o superior | variable | Text-to-SQL generico | variable | variable |
 
 La comparativa directa con alternativas especializadas en text-to-SQL no esta disponible en la informacion proporcionada. Frente a su modelo base, la diferencia principal es la especializacion en SQLite y el formato de salida con `<think>`/`<answer>`, a costa de perder generalidad.
@@ -86,7 +86,7 @@ La comparativa directa con alternativas especializadas en text-to-SQL no esta di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mytho0610/slm-text2sql-qwen2.5-coder-1.5b-instruct-debug
+- Modelo en Hugging Face: https://huggingface.co/Mytho0610/slm-text2sql-qwen2.5-coder-1.5b-instruct-debug
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Dataset SQaLe (referenciado en la model card): no se proporciona enlace directo en la informacion disponible
 - Paper o blog del ajuste: no disponible

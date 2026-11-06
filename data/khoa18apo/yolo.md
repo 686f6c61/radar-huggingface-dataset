@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`khoa18apo/yolo` es un repositorio publicado en HuggingFace por el usuario khoa18apo bajo licencia Apache 2.0. A pesar del nombre, que sugiere una posible relacion con la familia de modelos de deteccion de objetos YOLO (You Only Look Once), la model card asociada unicamente contiene el campo de licencia, sin ningun tipo de descripcion, documentacion tecnica ni metadatos sobre la arquitectura, el entrenamiento o las capacidades del modelo. El repositorio tiene un tamano de 0,1 GB, lo que resulta compatible con pesos de un modelo de vision de tamano moderado, pero este dato no permite confirmar la naturaleza del contenido.
+`khoa18apo/yolo` es un repositorio publicado en Hugging Face por el usuario khoa18apo bajo licencia Apache 2.0. A pesar del nombre, que sugiere una posible relacion con la familia de modelos de deteccion de objetos YOLO (You Only Look Once), la model card asociada unicamente contiene el campo de licencia, sin ningun tipo de descripcion, documentacion tecnica ni metadatos sobre la arquitectura, el entrenamiento o las capacidades del modelo. El repositorio tiene un tamano de 0,1 GB, lo que resulta compatible con pesos de un modelo de vision de tamano moderado, pero este dato no permite confirmar la naturaleza del contenido.
 
 El modelo no cuenta con descargas ni likes en el momento de la consulta, no tiene pipeline declarado y no especifica idiomas soportados. La fecha de creacion y actualizacion (27 de octubre de 2026) indica un repositorio reciente. Dada la ausencia total de informacion tecnica, esta ficha no puede confirmar que se trate de un modelo de lenguaje, un modelo de vision o cualquier otra categoria, y se limita a documentar los datos disponibles de forma explicita.
 
@@ -70,6 +70,6 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/khoa18apo/yolo
+- Repositorio en Hugging Face: https://huggingface.co/khoa18apo/yolo
 
 No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

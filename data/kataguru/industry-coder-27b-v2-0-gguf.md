@@ -98,7 +98,7 @@ Nota: estos resultados proceden de la model card del autor; no se han verificado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kataguru/Industry-Coder-27B-v2.0-GGUF
+- Modelo en Hugging Face: https://huggingface.co/kataguru/Industry-Coder-27B-v2.0-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 
 No se han encontrado enlaces adicionales (paper, blog, repositorio de código o demo) en la información disponible.

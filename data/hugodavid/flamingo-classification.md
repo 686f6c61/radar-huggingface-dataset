@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hugodavid/flamingo-classification` es un repositorio de HuggingFace publicado por el usuario hugodavid que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas de clasificación, con una configuración declarada como "giant" en su `config.json`. El propio autor describe el artefacto como un punto de partida experimental: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado con benchmarks.
+`hugodavid/flamingo-classification` es un repositorio de Hugging Face publicado por el usuario hugodavid que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas de clasificación, con una configuración declarada como "giant" en su `config.json`. El propio autor describe el artefacto como un punto de partida experimental: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado con benchmarks.
 
 A pesar de la etiqueta "giant" en la configuración, el recuento real de parámetros del checkpoint safetensors es de 49.600 parámetros, un orden de magnitud propio de un modelo de juguete o de una prueba de integración, no de un sistema desplegable en producción. El repositorio se centra, segun su model card, en codigo transparente y pruebas de humo reproducibles, y omite deliberadamente cualquier afirmacion sobre rendimiento.
 
@@ -85,5 +85,5 @@ No disponible. No se dispone de datos de modelos comparables en la informacion p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hugodavid/flamingo-classification
+- Repositorio en Hugging Face: https://huggingface.co/hugodavid/flamingo-classification
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo, al autor ni a su implementacion; los resultados devueltos corresponden a paginas corporativas de Microsoft y no guardan relacion con este repositorio.

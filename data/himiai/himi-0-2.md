@@ -92,9 +92,9 @@ Los bancos fijos ocupan 151 MB y la cache de lectura comprimida 4,6 KB por token
 
 | Modelo / enfoque | Parametros | Contexto | Recuerdo exacto | Perplexity | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Himi 0.2 | 1,5B + 151 MB de memoria | 2048 tokens por segmento (hasta 1M documentado) | 24/24 (1 hecho, 512) | 14,67 | Apache-2.0 | HuggingFace (0 descargas) |
-| Qwen2.5-1.5B (backbone) | 1,5B | No disponible | No disponible | 14,93 | Apache-2.0 | HuggingFace |
-| Qwen2.5-1.5B con cache KV completa | 1,5B | No disponible (28,7 KB/token) | No disponible | No disponible | Apache-2.0 | HuggingFace |
+| Himi 0.2 | 1,5B + 151 MB de memoria | 2048 tokens por segmento (hasta 1M documentado) | 24/24 (1 hecho, 512) | 14,67 | Apache-2.0 | Hugging Face (0 descargas) |
+| Qwen2.5-1.5B (backbone) | 1,5B | No disponible | No disponible | 14,93 | Apache-2.0 | Hugging Face |
+| Qwen2.5-1.5B con cache KV completa | 1,5B | No disponible (28,7 KB/token) | No disponible | No disponible | Apache-2.0 | Hugging Face |
 | Alternativas de memoria externa (MemGPT, RAG sobre Qwen2.5-1.5B) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de resultados comparativos publicados frente a otros sistemas de memoria de la misma categoria en la informacion proporcionada.
@@ -113,7 +113,7 @@ No se dispone de resultados comparativos publicados frente a otros sistemas de m
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/HimiAI/Himi-0.2
+- Hugging Face del modelo: https://huggingface.co/HimiAI/Himi-0.2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 
 No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

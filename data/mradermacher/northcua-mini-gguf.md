@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NorthCUA-Mini-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo NorthCUA-Mini, publicada por el usuario mradermacher, conocido en HuggingFace por convertir modelos recientes a formatos optimizados para inferencia local. El modelo base, alojado en el repositorio beipo-ai/NorthCUA-Mini, es un modelo de lenguaje conversacional de aproximadamente 34.660 millones de parámetros (según los pesos en safetensors), lo que lo sitúa en la categoría de modelos de tamaño medio-grande comparables a la familia Qwen 32B o Gemma 27B.
+NorthCUA-Mini-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo NorthCUA-Mini, publicada por el usuario mradermacher, conocido en Hugging Face por convertir modelos recientes a formatos optimizados para inferencia local. El modelo base, alojado en el repositorio beipo-ai/NorthCUA-Mini, es un modelo de lenguaje conversacional de aproximadamente 34.660 millones de parámetros (según los pesos en safetensors), lo que lo sitúa en la categoría de modelos de tamaño medio-grande comparables a la familia Qwen 32B o Gemma 27B.
 
 La relevancia de esta publicación radica en que permite ejecutar un modelo de 34B en hardware de consumo mediante cuantizaciones de 2 a 8 bits, algo impensable con los pesos originales en precisión completa. El repositorio ofrece un abanico amplio de cuantizaciones (desde Q2_K hasta Q8_0, además de f16 e IQ4_XS), lo que facilita adaptar el equilibrio entre calidad y requisitos de memoria a cada entorno.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| NorthCUA-Mini-GGUF | 34,7B | no disponible | no disponible | GGUF | HuggingFace (mradermacher) |
-| Qwen2.5-32B-Instruct-GGUF | 32,5B | 32.768 tokens (128K en variantes Turbo) | Apache 2.0 | GGUF | HuggingFace (varios cuantizadores) |
-| Gemma-2-27B-it-GGUF | 27B | 8.192 tokens | Gemma Terms of Use | GGUF | HuggingFace (varios cuantizadores) |
-| Yi-1.5-34B-Chat-GGUF | 34,4B | 4.096-32.768 tokens | Apache 2.0 | GGUF | HuggingFace (varios cuantizadores) |
+| NorthCUA-Mini-GGUF | 34,7B | no disponible | no disponible | GGUF | Hugging Face (mradermacher) |
+| Qwen2.5-32B-Instruct-GGUF | 32,5B | 32.768 tokens (128K en variantes Turbo) | Apache 2.0 | GGUF | Hugging Face (varios cuantizadores) |
+| Gemma-2-27B-it-GGUF | 27B | 8.192 tokens | Gemma Terms of Use | GGUF | Hugging Face (varios cuantizadores) |
+| Yi-1.5-34B-Chat-GGUF | 34,4B | 4.096-32.768 tokens | Apache 2.0 | GGUF | Hugging Face (varios cuantizadores) |
 
 La comparación es aproximada: NorthCUA-Mini carece de información pública sobre contexto, licencia y rendimiento, por lo que no puede establecerse una equivalencia funcional con los modelos citados más allá del rango de parámetros.
 

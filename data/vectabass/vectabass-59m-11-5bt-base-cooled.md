@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros totales | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| vectabass-59m-11.5bt-base-cooled | 59,48M (27,27M no-embedding) | 2048 | Apache 2.0 | Pérdida de validación 2,5945 nats/token; sin benchmarks zero-shot | HuggingFace, requiere `trust_remote_code` |
+| vectabass-59m-11.5bt-base-cooled | 59,48M (27,27M no-embedding) | 2048 | Apache 2.0 | Pérdida de validación 2,5945 nats/token; sin benchmarks zero-shot | Hugging Face, requiere `trust_remote_code` |
 | Celdas del mismo proyecto (100M–1,6B) | 100M–1,6B | no disponible | no disponible | no disponible en la información proporcionada | no disponible |
 | Alternativas comparables de ~50-60M | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,9 +83,9 @@ No se dispone de datos sobre modelos comparables de la misma categoría (modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-59m-11.5bt-base-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-59m-11.5bt-base-cooled
 - Referencia de Isambard-AI National AI Research Resource: https://doi.org/10.48550/arXiv.2410.11199
 - Paper del proyecto: pendiente de publicación (el autor indica citar el repositorio hasta su aparición)
-- Repositorio de código de modelado: `modeling_vectabass.py` dentro del repositorio de HuggingFace
-- Documentación de datos: `DATA.md` dentro del repositorio de HuggingFace
-- Procedencia del entrenamiento: `provenance.json` dentro del repositorio de HuggingFace
+- Repositorio de código de modelado: `modeling_vectabass.py` dentro del repositorio de Hugging Face
+- Documentación de datos: `DATA.md` dentro del repositorio de Hugging Face
+- Procedencia del entrenamiento: `provenance.json` dentro del repositorio de Hugging Face

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ArtG08/AI_View es un repositorio publicado en HuggingFace por el usuario ArtG08 cuyo contenido no corresponde a un modelo de lenguaje convencional con pesos y documentación técnica asociada, sino a un artefacto identificado mediante las etiquetas «AI_View» y «Переглядач_АІ» (traducible del ucraniano como «visor de IA»). El repositorio ocupa 0,4 GB y se distribuye bajo licencia MIT, pero no incluye model card descriptiva, pipeline declarado, idiomas soportados ni resultados de evaluación.
+ArtG08/AI_View es un repositorio publicado en Hugging Face por el usuario ArtG08 cuyo contenido no corresponde a un modelo de lenguaje convencional con pesos y documentación técnica asociada, sino a un artefacto identificado mediante las etiquetas «AI_View» y «Переглядач_АІ» (traducible del ucraniano como «visor de IA»). El repositorio ocupa 0,4 GB y se distribuye bajo licencia MIT, pero no incluye model card descriptiva, pipeline declarado, idiomas soportados ni resultados de evaluación.
 
 No se dispone de información pública que permita confirmar la naturaleza exacta del artefacto: no hay ficha técnica, paper, blog ni repositorio de código enlazado. Las búsquedas web realizadas no devuelven resultados relacionados con el proyecto, por lo que cualquier afirmación sobre arquitectura, entrenamiento o capacidades sería especulativa.
 
@@ -70,7 +70,7 @@ No disponible. La ausencia de especificaciones tecnicas, arquitectura y benchmar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArtG08/AI_View
+- Hugging Face: https://huggingface.co/ArtG08/AI_View
 - Paper: no disponible.
 - Blog o documentacion del autor: no disponible.
 - Repositorio de codigo: no disponible.

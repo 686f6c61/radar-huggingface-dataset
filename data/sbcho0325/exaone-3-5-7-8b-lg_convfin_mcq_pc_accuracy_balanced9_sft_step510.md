@@ -77,9 +77,9 @@ No se dispone de datos de rendimiento comparativo entre estos modelos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_accuracy_balanced9_sft_step510
+- Repositorio Hugging Face: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_accuracy_balanced9_sft_step510
 - Repositorio oficial EXAONE 3.5 (GitHub): https://github.com/LG-AI-EXAONE/EXAONE-3.5
 - Paper EXAONE 3.5 (arXiv): https://arxiv.org/html/2412.04862v3
-- Modelo base en HuggingFace: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
+- Modelo base en Hugging Face: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Variante relacionada (SFT-DPO-CoT): https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-Instruct-ConvFinQA-SFT-DPO-CoT-v2
 - EXAONE 3.5 en Ollama: https://ollama.com/library/exaone3.5:7.8b

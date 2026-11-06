@@ -63,7 +63,7 @@ La model card afirma rendimiento state-of-the-art en benchmarks de documentos de
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Unlimited OCR 2 (Baidu) | 3,34 mil millones | no disponible (horizonte ilimitado declarado) | OCR con SR-SWA para documentos ultra-largos | MIT | HuggingFace, ModelScope, Baidu Cloud |
+| Unlimited OCR 2 (Baidu) | 3,34 mil millones | no disponible (horizonte ilimitado declarado) | OCR con SR-SWA para documentos ultra-largos | MIT | Hugging Face, ModelScope, Baidu Cloud |
 | Unlimited-OCR 1.0 (Baidu) | no disponible | no disponible | OCR orientado a superar DeepSeek-OCR | no disponible | GitHub (rama UnlimitedOCR1.0) |
 | DeepSeek-OCR (DeepSeek) | no disponible | no disponible | OCR vision-language | no disponible | GitHub |
 
@@ -82,12 +82,12 @@ No se dispone de datos de rendimiento comparativos numericos entre estos modelos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jinstudio/Unlimited-OCR-2
-- HuggingFace oficial (Baidu): https://huggingface.co/baidu/Unlimited-OCR-2
+- Hugging Face: https://huggingface.co/Jinstudio/Unlimited-OCR-2
+- Hugging Face oficial (Baidu): https://huggingface.co/baidu/Unlimited-OCR-2
 - GitHub: https://github.com/baidu/Unlimited-OCR
 - arXiv: https://arxiv.org/abs/2606.23050
 - PDF del paper: https://huggingface.co/baidu/Unlimited-OCR-2/blob/main/Unlimited-OCR-2.pdf
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/baidu/Unlimited-OCR-2
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/baidu/Unlimited-OCR-2
 - Dataset MarathonDocBench: https://huggingface.co/datasets/baidu/MarathonDocBench
 - ModelScope: https://modelscope.cn/models/PaddlePaddle/Unlimited-OCR-2
 - Baidu Cloud: https://cloud.baidu.com/doc/OCR/s/fmr1p39gb

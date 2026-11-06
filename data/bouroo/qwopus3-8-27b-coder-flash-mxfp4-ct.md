@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwopus3.8-27B-Coder-Flash-MXFP4-CT es una cuantizacion de 4 bits del checkpoint Jackrong/Qwopus3.8-27B-Coder-Flash, un modelo multimodal de tipo image-text-to-text orientado a generacion de codigo, razonamiento y uso de herramientas. Lo publica el usuario bouroo en HuggingFace y no introduce cambios arquitectonicos: replica el modelo base (27.781 millones de parametros, BF16, aproximadamente 56 GB) en formato MXFP4 con compresion de tensores, reduciendo el peso en disco a 19,6 GB (repositorio de 19,8 GB).
+Qwopus3.8-27B-Coder-Flash-MXFP4-CT es una cuantizacion de 4 bits del checkpoint Jackrong/Qwopus3.8-27B-Coder-Flash, un modelo multimodal de tipo image-text-to-text orientado a generacion de codigo, razonamiento y uso de herramientas. Lo publica el usuario bouroo en Hugging Face y no introduce cambios arquitectonicos: replica el modelo base (27.781 millones de parametros, BF16, aproximadamente 56 GB) en formato MXFP4 con compresion de tensores, reduciendo el peso en disco a 19,6 GB (repositorio de 19,8 GB).
 
 La relevancia de esta ficha es practica: se trata de un checkpoint cuantizado listo para servirse con vLLM sobre ROCm en GPUs gfx1201, con soporte declarado para contexto de hasta 262.144 tokens, decodificacion especulativa mediante MTP y parsers de tool calling y razonamiento de la familia Qwen3. La cuantizacion es RTN (round-to-nearest, sin calibracion), lo que la hace reproducible en minutos y sin dataset de calibracion, a costa de una precision algo inferior a la de esquemas GPTQ.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- HuggingFace del checkpoint: https://huggingface.co/bouroo/Qwopus3.8-27B-Coder-Flash-MXFP4-CT
+- Hugging Face del checkpoint: https://huggingface.co/bouroo/Qwopus3.8-27B-Coder-Flash-MXFP4-CT
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash
 - Imagen de servicio vLLM: https://github.com/SlyBase/vllm-sly-radiance
 - Checkpoint de referencia con el mismo layout: https://huggingface.co/slybase/Swift-1.5-Qwen3.8-27B-heretic-MXFP4-GPTQ

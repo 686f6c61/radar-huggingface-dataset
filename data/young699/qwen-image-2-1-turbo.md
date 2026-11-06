@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Pasos de muestreo | CFG | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | young699/Qwen-Image-2.1-Turbo (esta ficha) | 7.115.124.736 | 8 | 1 | qwen-research | Repositorio de terceros, 0 descargas |
-| Qwen/Qwen-Image-2.1-Turbo (oficial) | No disponible en la informacion proporcionada | 8 | 1 | qwen-research | Repositorio oficial en HuggingFace y ModelScope |
-| Qwen/Qwen-Image-2.1 (modelo base) | No disponible en la informacion proporcionada (misma arquitectura de generacion visual de 7B) | No disponible | No disponible | qwen-research | Repositorio oficial en HuggingFace |
+| Qwen/Qwen-Image-2.1-Turbo (oficial) | No disponible en la informacion proporcionada | 8 | 1 | qwen-research | Repositorio oficial en Hugging Face y ModelScope |
+| Qwen/Qwen-Image-2.1 (modelo base) | No disponible en la informacion proporcionada (misma arquitectura de generacion visual de 7B) | No disponible | No disponible | qwen-research | Repositorio oficial en Hugging Face |
 
 No se dispone de datos de rendimiento que permitan comparar esta familia con alternativas de otros autores (por ejemplo, modelos de difusion de tamano similar); cualquier comparacion cuantitativa requeriria ejecutar una evaluacion propia.
 

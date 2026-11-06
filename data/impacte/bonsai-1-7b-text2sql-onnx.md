@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bonsai-1.7b-text2sql-onnx es un modelo de generacion de texto especializado en text-to-SQL, publicado por el usuario impacte en HuggingFace. Se trata de una exportacion a ONNX del modelo Bonsai-1.7B afinado para traducir preguntas en lenguaje natural a consultas SQL sobre esquemas de bases de datos SQLite y DuckDB. El modelo recibe el esquema de la base de datos en el mensaje de sistema y devuelve una unica consulta SQL, sin explicaciones ni bloques de codigo.
+bonsai-1.7b-text2sql-onnx es un modelo de generacion de texto especializado en text-to-SQL, publicado por el usuario impacte en Hugging Face. Se trata de una exportacion a ONNX del modelo Bonsai-1.7B afinado para traducir preguntas en lenguaje natural a consultas SQL sobre esquemas de bases de datos SQLite y DuckDB. El modelo recibe el esquema de la base de datos en el mensaje de sistema y devuelve una unica consulta SQL, sin explicaciones ni bloques de codigo.
 
 El modelo parte de prism-ml/Bonsai-1.7B-unpacked, una arquitectura Qwen3ForCausalLM de 1,7 mil millones de parametros con formato de chat ChatML, y se ha afinado mediante LoRA (r=16, alpha=32) sobre las proyecciones de atencion y MLP. El resultado son tres grafos ONNX (fp32, int4 e int8) que exponen la cache KV y estan pensados para onnxruntime en CPU o GPU, asi como para navegadores y entornos edge mediante transformers.js.
 
@@ -101,7 +101,7 @@ El asterisco recuerda que las cifras del ONNX int4 proceden de un subconjunto de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/impacte/bonsai-1.7b-text2sql-onnx
+- Modelo en Hugging Face: https://huggingface.co/impacte/bonsai-1.7b-text2sql-onnx
 - Version GGUF/Ollama del mismo ajuste: https://ollama.com/oamazonasgabriel/bonsai-1.7b-text2sql
 - Modelo base: https://huggingface.co/prism-ml/Bonsai-1.7B-unpacked
 - Dataset Spider: https://huggingface.co/datasets/xlangai/spider

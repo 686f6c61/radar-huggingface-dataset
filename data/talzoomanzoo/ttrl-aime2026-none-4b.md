@@ -48,7 +48,7 @@ En cuanto al entrenamiento, la model card indica una ejecucion concreta con nomb
 - Reproduccion de experimentos de ajuste fino eficiente: con rango 16 y alpha 32 sobre un modelo de 4B, el adaptador ocupa 0,1 GB, lo que permite iterar y almacenar muchos checkpoints en un solo disco de consumo.
 - Analisis de checkpoints tempranos: al estar exportado en el paso 2, es util para estudiar como evolucionan los pesos de un adaptador en las primeras fases del entrenamiento y detectar fallos de configuracion antes de lanzar ejecuciones largas.
 - Evaluacion de cadena de herramientas PEFT: permite verificar que un pipeline de carga (`PeftModel.from_pretrained` sobre Qwen3-4B) funciona correctamente antes de invertir en entrenamientos completos.
-- Docencia y formacion: como ejemplo minimo de publicacion de un adaptador LoRA en HuggingFace, con estructura de model card estandar y separacion explicita entre adaptador y pesos base.
+- Docencia y formacion: como ejemplo minimo de publicacion de un adaptador LoRA en Hugging Face, con estructura de model card estandar y separacion explicita entre adaptador y pesos base.
 - Pruebas de integracion en despliegues ligeros: fusionado con el modelo base, un 4B puede ejecutarse en una GPU de consumo con cuantizacion, lo que permite validar flujos de servicio con un coste reducido. No obstante, no existe ninguna validacion publicada de calidad para este adaptador concreto, por lo que no se recomienda su uso en produccion sin una evaluacion propia previa.
 
 ## Benchmarks y rendimiento
@@ -69,8 +69,8 @@ La informacion proporcionada solo permite comparar con el propio modelo base. No
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ttrl-aime2026-none-4b | Adaptador LoRA (rango 16) | No disponible (adaptador) | No disponible | No disponible | Publico en HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B | Modelo base denso | Aproximadamente 4.000 millones segun denominacion | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| ttrl-aime2026-none-4b | Adaptador LoRA (rango 16) | No disponible (adaptador) | No disponible | No disponible | Publico en Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B | Modelo base denso | Aproximadamente 4.000 millones segun denominacion | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en Hugging Face |
 
 ## Limitaciones y advertencias
 

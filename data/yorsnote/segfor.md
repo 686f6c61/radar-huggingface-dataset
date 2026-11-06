@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SegFor es un modelo publicado en HuggingFace por el usuario yorsnote bajo el identificador `yorsnote/segfor`. Por su nombre y por la arquitectura declarada en los tags (`segformer`), se trata de un modelo de segmentación semántica basado en la familia SegFormer, una arquitectura de transformer jerárquico con decoder ligero diseñada originalmente para segmentación de imágenes. El repositorio contiene pesos en formato safetensors con un total de 3.807.538 parámetros (aproximadamente 3,8 millones), lo que lo sitúa en la gama muy ligera de modelos de visión.
+SegFor es un modelo publicado en Hugging Face por el usuario yorsnote bajo el identificador `yorsnote/segfor`. Por su nombre y por la arquitectura declarada en los tags (`segformer`), se trata de un modelo de segmentación semántica basado en la familia SegFormer, una arquitectura de transformer jerárquico con decoder ligero diseñada originalmente para segmentación de imágenes. El repositorio contiene pesos en formato safetensors con un total de 3.807.538 parámetros (aproximadamente 3,8 millones), lo que lo sitúa en la gama muy ligera de modelos de visión.
 
 La relevancia de este modelo es limitada en el momento de redactar esta ficha: cuenta con cero descargas y cero likes, la model card pública no incluye más contenido que la declaración de licencia, y no se especifican pipeline, idiomas, dataset de entrenamiento ni resultados de evaluación. Es, por tanto, un artefacto de pesos sin documentación asociada, probablemente un fine-tuning o una exportación de un SegFormer preentrenado para una tarea concreta de segmentación.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yorsnote/segfor | 3,8 M | Segmentación semántica (SegFormer) | GPL-3.0 | HuggingFace, sin documentación |
-| nvidia/segformer-b0-finetuned-ade-512-512 | ~3,7 M | Segmentación semántica (ADE20K) | NVIDIA Source Code License | HuggingFace, model card completa |
-| nvidia/segformer-b1-finetuned-ade-512-512 | ~13 M | Segmentación semántica (ADE20K) | NVIDIA Source Code License | HuggingFace, model card completa |
-| google/segformer-b0-finetuned-ade-512-512 | ~3,7 M | Segmentación semántica (ADE20K) | Apache 2.0 (según repositorio original) | HuggingFace |
+| yorsnote/segfor | 3,8 M | Segmentación semántica (SegFormer) | GPL-3.0 | Hugging Face, sin documentación |
+| nvidia/segformer-b0-finetuned-ade-512-512 | ~3,7 M | Segmentación semántica (ADE20K) | NVIDIA Source Code License | Hugging Face, model card completa |
+| nvidia/segformer-b1-finetuned-ade-512-512 | ~13 M | Segmentación semántica (ADE20K) | NVIDIA Source Code License | Hugging Face, model card completa |
+| google/segformer-b0-finetuned-ade-512-512 | ~3,7 M | Segmentación semántica (ADE20K) | Apache 2.0 (según repositorio original) | Hugging Face |
 
 La comparación directa con los checkpoints oficiales de SegFormer es pertinente por arquitectura y orden de magnitud de parámetros, pero no se dispone de métricas de `yorsnote/segfor` (mIoU, accuracy por clase) que permitan evaluar su calidad relativa. La licencia GPL-3.0 es más restrictiva para uso comercial que la Apache 2.0 de algunos checkpoints de referencia.
 
@@ -78,7 +78,7 @@ La comparación directa con los checkpoints oficiales de SegFormer es pertinente
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yorsnote/segfor
+- Repositorio en Hugging Face: https://huggingface.co/yorsnote/segfor
 - Paper original de SegFormer (referencia de arquitectura): https://arxiv.org/abs/2105.15203
 - Repositorio oficial de SegFormer en GitHub: https://github.com/NVlabs/SegFormer
 - Documentación de SegFormer en transformers: https://huggingface.co/docs/transformers/model_doc/segformer

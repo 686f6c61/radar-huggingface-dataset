@@ -71,9 +71,9 @@ El encoder convolucional supera al linear con 17 veces menos parámetros y al po
 
 | Modelo | Encoder | Predictor | Params | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| dinov2-latent-wm-threading-d0 | DINOv2-small | MLP | conv 0.63M / linear 11.01M / pooled 0.21M | 8 pasos | Ver benchmarks | MIT | HuggingFace |
-| mimicgen_threading_d0_224x224_dinowm_dinov2base | DINOv2-base | No disponible | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| mimicgen_threading_d0_224x224_dinowm_heavy | DINOv2-small | Predictor mayor | 35.6M (predictor) | 8 pasos | No disponible | No disponible | HuggingFace |
+| dinov2-latent-wm-threading-d0 | DINOv2-small | MLP | conv 0.63M / linear 11.01M / pooled 0.21M | 8 pasos | Ver benchmarks | MIT | Hugging Face |
+| mimicgen_threading_d0_224x224_dinowm_dinov2base | DINOv2-base | No disponible | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| mimicgen_threading_d0_224x224_dinowm_heavy | DINOv2-small | Predictor mayor | 35.6M (predictor) | 8 pasos | No disponible | No disponible | Hugging Face |
 
 El modelo `dinov2-latent-wm-threading-d0` es la variante principal con tres opciones de encoder. El modelo `heavy` usa el mismo encoder DINOv2-small pero un predictor más grande (13.2M → 35.6M) y un checkpoint posterior (paso 55.000). El modelo `dinov2base` cambia el encoder a DINOv2-base, lo que altera la escala de las características y hace que las pérdidas no sean directamente comparables entre modelos. No se han encontrado benchmarks de estos dos modelos en la información disponible.
 
@@ -88,7 +88,7 @@ El modelo `dinov2-latent-wm-threading-d0` es la variante principal con tres opci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chomeed/dinov2-latent-wm-threading-d0
+- Modelo en Hugging Face: https://huggingface.co/chomeed/dinov2-latent-wm-threading-d0
 - Variante con DINOv2-base: https://huggingface.co/chomeed/mimicgen_threading_d0_224x224_dinowm_dinov2base
 - Variante con predictor grande: https://huggingface.co/chomeed/mimicgen_threading_d0_224x224_dinowm_heavy
 - No se han encontrado papers, blogs o repositorios adicionales en la información disponible.

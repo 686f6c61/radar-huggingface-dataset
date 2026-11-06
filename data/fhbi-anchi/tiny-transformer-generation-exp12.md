@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fhbi-anchi/tiny-transformer-generation-exp12` es un repositorio de codigo y configuracion publicado por el usuario fhbi-anchi en HuggingFace que contiene una implementacion propia en PyTorch de un transformer denominado "Tiny Transformer" orientado a tareas de generacion. No se trata de un modelo preentrenado ni ajustado: el propio autor indica de forma explicita en la model card que `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks.
+`fhbi-anchi/tiny-transformer-generation-exp12` es un repositorio de codigo y configuracion publicado por el usuario fhbi-anchi en Hugging Face que contiene una implementacion propia en PyTorch de un transformer denominado "Tiny Transformer" orientado a tareas de generacion. No se trata de un modelo preentrenado ni ajustado: el propio autor indica de forma explicita en la model card que `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks.
 
 El modelo cuenta con 16.576 parametros totales segun los datos reales del archivo safetensors, lo que lo situa en un orden de magnitud muy inferior al de cualquier modelo de lenguaje utilizable en produccion. La configuracion etiqueta la escala como "giant", pero esa etiqueta corresponde a una de las variantes definidas en el script del autor y no guarda relacion con el numero real de parametros. La arquitectura declarada incluye atencion dilatada, fusion por cross attention, activacion gelu tanh y normalizacion layernorm.
 
@@ -23,12 +23,12 @@ Su relevancia actual es limitada y acotada al ambito experimental: sirve como pu
 | Normalizacion | layernorm |
 | Activacion | gelu tanh |
 | Optimizador por defecto | novograd con schedule de linear warmup |
-| Tamano del repositorio | 0.0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer compacto de implementacion propia. La model card especifica que emplea atencion dilatada, un mecanismo de fusion basado en cross attention, activacion gelu tanh y normalizacion layernorm. El autor incluye un campo "Scale" con el valor `giant`, pero ese valor pertenece a las opciones de configuracion del script y no implica un modelo de gran tamano: el checkpoint real contiene 16.576 parametros. Al ser una implementacion personalizada, las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito antes de poder utilizarla.
+La arquitectura es un transformer compacto de implementacion propia. La model card especifica que emplea atencion dilatada, un mecanismo de fusion basado en cross attention, activacion gelu tanh y normalizacion layernorm. El autor incluye un campo "Scale" con el valor `giant`, pero ese valor pertenece a las opciones de configuracion del script y no implica un modelo de gran tamano: el checkpoint real contiene 16.576 parametros. Al ser una implementacion personalizada, las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito antes de poder utilizarla.
 
 En cuanto al entrenamiento, no hay evidencia de que se haya completado ningun proceso de entrenamiento. El repositorio incluye `training_args.json` con una receta por defecto (optimizador novograd y linear warmup) que el propio autor describe como valores de arranque del script, no como resultado de una ejecucion finalizada. No se documentan volumen de tokens, composicion del dataset, ni fases de RLHF, DPO o similares. Tampoco se declara ninguna innovacion tecnica adicional mas alla de la combinacion de atencion dilatada y cross attention descrita en la configuracion.
 
@@ -49,8 +49,8 @@ En cuanto al entrenamiento, no hay evidencia de que se haya completado ningun pr
 - Validacion de entornos y dependencias: al ser un artefacto minimo, sirve para comprobar versiones de PyTorch, CUDA y librerias auxiliares en una imagen de contenedor o en un runner de CI sin consumir recursos.
 - Revision de codigo y formacion: el script de implementacion del transformer puede usarse como material didactico para estudiar atencion dilatada, cross attention y normalizacion layernorm en un caso de tamano manejable.
 - Base para experimentos controlados: el autor propone entrenar todos los baselines con la misma exposicion de datos, presupuesto de ajuste y semillas aleatorias, por lo que este repositorio puede actuar como esqueleto de comparaciones reproducibles a pequena escala.
-- Test de integracion de adaptadores personalizados: dado que las APIs automaticas de HuggingFace no cargan esta implementacion sin un adaptador explicito, es util para desarrollar y depurar ese adaptador.
-- Plantilla de publicacion en HuggingFace: sirve como ejemplo de estructura de repositorio (config.json, training_args.json, safetensors, script de inferencia) para quien quiera publicar sus propios experimentos con la misma organizacion.
+- Test de integracion de adaptadores personalizados: dado que las APIs automaticas de Hugging Face no cargan esta implementacion sin un adaptador explicito, es util para desarrollar y depurar ese adaptador.
+- Plantilla de publicacion en Hugging Face: sirve como ejemplo de estructura de repositorio (config.json, training_args.json, safetensors, script de inferencia) para quien quiera publicar sus propios experimentos con la misma organizacion.
 - Pruebas de estrés de herramientas de perfilado: al tener un coste computacional despreciable, permite validar instrumentacion de memoria y tiempo antes de pasar a modelos grandes.
 
 ## Benchmarks y rendimiento
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fhbi-anchi/tiny-transformer-generation-exp12 | 16.576 | no disponible | sin benchmarks; no entrenado | BSD 3-Clause | HuggingFace (0 descargas) |
+| fhbi-anchi/tiny-transformer-generation-exp12 | 16.576 | no disponible | sin benchmarks; no entrenado | BSD 3-Clause | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de modelos comparables en la informacion proporcionada. El repositorio es una implementacion experimental propia sin metrica publicada, por lo que no existe una base objetiva para compararlo con otros modelos de su categoria.
@@ -88,12 +88,12 @@ No se dispone de modelos comparables en la informacion proporcionada. El reposit
 - Sin auditoria: no se ha evaluado robustez, equidad, sesgos ni transferencia de dominio. No hay informacion sobre sesgos conocidos porque no ha habido entrenamiento con datos reales.
 - Riesgo de alucinacion: no aplica en el sentido habitual, ya que el modelo no genera lenguaje con significado; cualquier salida debe considerarse ruido.
 - Ambiguedad en la configuracion: la etiqueta de escala `giant` en la model card no se corresponde con los 16.576 parametros reales, lo que puede inducir a error si no se revisa el checkpoint.
-- Carga no estandar: las APIs automaticas de HuggingFace requieren un adaptador explicito; no es un modelo cargable con `AutoModel` sin trabajo adicional.
+- Carga no estandar: las APIs automaticas de Hugging Face requieren un adaptador explicito; no es un modelo cargable con `AutoModel` sin trabajo adicional.
 - Limitaciones de contexto e idioma: no disponibles, al no existir entrenamiento ni configuracion publicada de longitud de contexto o cobertura linguistica.
 - Licencia: BSD 3-Clause permite uso comercial y modificacion con las condiciones habituales de atribucion y ausencia de endoso. El propio autor advierte de revisar por separado los terminos de los datos de origen si se combina con datasets externos.
 - Advertencia para produccion: no debe desplegarse en ningun sistema orientado a usuarios. Su unico uso razonable es experimental o de validacion de infraestructura.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fhbi-anchi/tiny-transformer-generation-exp12
+- Repositorio en Hugging Face: https://huggingface.co/fhbi-anchi/tiny-transformer-generation-exp12
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo (papers, blogs, repositorios o demos) en la busqueda realizada; los unicos resultados devueltos corresponden a plataformas de video genericas sin relacion con el modelo.

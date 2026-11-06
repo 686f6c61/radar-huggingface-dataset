@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Cisco1963/llmplasticity-zh_never_8-rand-d0.006-c0.99-r0.2-s42` es un checkpoint de investigación publicado en HuggingFace por el usuario Cisco1963, construido sobre una arquitectura GPT-2 (tag `gpt2` del repositorio) con 122.706.432 parámetros en formato safetensors y precisión F32. No es un modelo de propósito general ni un lanzamiento de producto: por la nomenclatura del identificador (que codifica valores como `d0.006`, `c0.99`, `r0.2` y `s42`) y por la serie de repositorios hermanos del mismo autor, todo apunta a un artefacto experimental dentro de un estudio sobre plasticidad de modelos de lenguaje (LLM plasticity), probablemente con variantes de idioma (`zh`), condiciones de congelación o no-entrenamiento (`never`) y semillas aleatorias.
+`Cisco1963/llmplasticity-zh_never_8-rand-d0.006-c0.99-r0.2-s42` es un checkpoint de investigación publicado en Hugging Face por el usuario Cisco1963, construido sobre una arquitectura GPT-2 (tag `gpt2` del repositorio) con 122.706.432 parámetros en formato safetensors y precisión F32. No es un modelo de propósito general ni un lanzamiento de producto: por la nomenclatura del identificador (que codifica valores como `d0.006`, `c0.99`, `r0.2` y `s42`) y por la serie de repositorios hermanos del mismo autor, todo apunta a un artefacto experimental dentro de un estudio sobre plasticidad de modelos de lenguaje (LLM plasticity), probablemente con variantes de idioma (`zh`), condiciones de congelación o no-entrenamiento (`never`) y semillas aleatorias.
 
 El modelo no dispone de model card, pipeline declarado, licencia, idiomas especificados ni resultados de evaluación publicados. El repositorio ocupa 7,9 GB pese a que los pesos en F32 de 122,7 M de parámetros deberían rondar los 0,5 GB, lo que sugiere que el repo incluye múltiples ficheros (checkpoints intermedios, estados de optimizador u otros artefactos del experimento). Su relevancia actual es, por tanto, limitada y acotada al ámbito de reproducibilidad de experimentos de investigación: no es una base recomendable para aplicaciones en producción sin una evaluación previa propia y sin una licencia clara.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (`llmplasticity-zh_never_8-rand-...-s42`) | 122,7 M | no disponible | no disponible | HuggingFace, 7 descargas | Sin model card ni benchmarks |
+| Este modelo (`llmplasticity-zh_never_8-rand-...-s42`) | 122,7 M | no disponible | no disponible | Hugging Face, 7 descargas | Sin model card ni benchmarks |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Ampliamente disponible, integrado en `transformers` | Referencia canonica de la arquitectura; si documentado y evaluado |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 (version destilada) | HuggingFace, muy extendido | Destilado de GPT-2, mas rapido con perdida acotada de calidad |
-| GPT-2 medium | 355 M | 1024 tokens | MIT | HuggingFace | Mayor capacidad a costa de mas VRAM |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 (version destilada) | Hugging Face, muy extendido | Destilado de GPT-2, mas rapido con perdida acotada de calidad |
+| GPT-2 medium | 355 M | 1024 tokens | MIT | Hugging Face | Mayor capacidad a costa de mas VRAM |
 
 La comparación relevante es con GPT-2 small: mismo orden de magnitud en parámetros, pero con la diferencia de que el modelo de OpenAI cuenta con licencia explícita, documentación, tokenizador conocido y evaluaciones publicadas. Frente a DistilGPT-2, este checkpoint no ofrece ventaja documentada de velocidad ni de calidad. Para cualquier uso práctico, un GPT-2 small o un modelo de instrucciones pequeño actual es una elección más segura.
 
@@ -90,7 +90,7 @@ La comparación relevante es con GPT-2 small: mismo orden de magnitud en paráme
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-zh_never_8-rand-d0.006-c0.99-r0.2-s42
+- Modelo en Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-zh_never_8-rand-d0.006-c0.99-r0.2-s42
 - Variante hermana (`d0.006-c0.999-r0.2-s42`): https://huggingface.co/Cisco1963/llmplasticity-zh_never_8-d0.006-c0.999-r0.2-s42
 - Variante hermana (`d0.006-c0.999-r0.5-s42`): https://huggingface.co/Cisco1963/llmplasticity-zh_never_8-d0.006-c0.999-r0.5-s42
 - Variante hermana (`seed42`) en FriendliAI: https://friendli.ai/models/Cisco1963/llmplasticity-zh_never_8-seed42

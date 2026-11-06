@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| D3-Turbo-NPU2 (este paquete) | 27B (torre de texto) + torre de visión | 32.768 tokens por pregunta | Q4NX: Q4_K (GPTQ calibrado), Q8_0, BF16 | Apache-2.0 | HuggingFace; `flm pull d3:turbo` |
-| vllm-sr/d3-turbo (upstream) | 27B multimodal | 32.768 tokens; hasta 131.072 con `long_context=True` | BF16 (referencia sin cuantizar) | Apache-2.0 (el `LICENSE` de este paquete es el upstream sin modificar) | HuggingFace |
+| D3-Turbo-NPU2 (este paquete) | 27B (torre de texto) + torre de visión | 32.768 tokens por pregunta | Q4NX: Q4_K (GPTQ calibrado), Q8_0, BF16 | Apache-2.0 | Hugging Face; `flm pull d3:turbo` |
+| vllm-sr/d3-turbo (upstream) | 27B multimodal | 32.768 tokens; hasta 131.072 con `long_context=True` | BF16 (referencia sin cuantizar) | Apache-2.0 (el `LICENSE` de este paquete es el upstream sin modificar) | Hugging Face |
 | d3:mini | 4B | No disponible | No disponible | No disponible | Catálogo de FastFlowLM |
 | d3:nano | 2B | No disponible | No disponible | No disponible | Catálogo de FastFlowLM |
 | d3:lite | 0,8B | No disponible | No disponible | No disponible | Catálogo de FastFlowLM |
@@ -97,6 +97,6 @@ La comparación relevante es frente al upstream BF16: este paquete reduce el pes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FastFlowLM/D3-Turbo-NPU2
+- Modelo en Hugging Face: https://huggingface.co/FastFlowLM/D3-Turbo-NPU2
 - Modelo base upstream: https://huggingface.co/vllm-sr/d3-turbo
 - Repositorio de FastFlowLM: https://github.com/ROCm/FastFlowLM

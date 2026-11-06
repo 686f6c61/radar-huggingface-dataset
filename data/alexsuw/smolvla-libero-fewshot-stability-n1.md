@@ -89,7 +89,7 @@ No se dispone de comparaciones cuantitativas directas con estos modelos en la in
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/alexsuw/smolvla-libero-fewshot-stability-n1)
+- [Modelo en Hugging Face](https://huggingface.co/alexsuw/smolvla-libero-fewshot-stability-n1)
 - [Colección de modelos SmolVLA LIBERO Few-shot](https://huggingface.co/collections/alexsuw/smolvla-libero-few-shot-6a8b009357482d2b4b9d3c2f)
 - [Código del experimento](https://github.com/alexsuw/smolvla-libero-fewshot)
 - [Dataset LIBERO_LeRobot_v3](https://huggingface.co/datasets/nvidia/LIBERO_LeRobot_v3)
@@ -183,7 +183,7 @@ No se dispone de comparaciones cuantitativas directas con estos modelos en la in
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/alexsuw/smolvla-libero-fewshot-stability-n1)
+- [Modelo en Hugging Face](https://huggingface.co/alexsuw/smolvla-libero-fewshot-stability-n1)
 - [Coleccion SmolVLA LIBERO Few-shot](https://huggingface.co/collections/alexsuw/smolvla-libero-few-shot-6a8b009357482d2b4b9d3c2f)
 - [Codigo del experimento](https://github.com/alexsuw/smolvla-libero-fewshot)
 - [Dataset LIBERO_LeRobot_v3](https://huggingface.co/datasets/nvidia/LIBERO_LeRobot_v3)

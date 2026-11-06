@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ling3-tiny-base es un checkpoint base publicado por el usuario krampenschiesser en HuggingFace, derivado del modelo inclusionAI/Ling-3.0-tiny. No es un modelo afinado ni alineado: el propio autor lo describe como la base para fine-tuning y aprendizaje por refuerzo, y advierte explicitamente de que no esta pensado para uso general porque, por ahora, es mas lento y mas grande que el modelo original. Su proposito es servir de punto de partida reproducible para entrenamiento posterior, no de asistente listo para produccion.
+ling3-tiny-base es un checkpoint base publicado por el usuario krampenschiesser en Hugging Face, derivado del modelo inclusionAI/Ling-3.0-tiny. No es un modelo afinado ni alineado: el propio autor lo describe como la base para fine-tuning y aprendizaje por refuerzo, y advierte explicitamente de que no esta pensado para uso general porque, por ahora, es mas lento y mas grande que el modelo original. Su proposito es servir de punto de partida reproducible para entrenamiento posterior, no de asistente listo para produccion.
 
 Tecnicamente es un modelo de arquitectura etiquetada como bailing_hybrid (un transformer con mezcla de expertos y atencion hibrida, segun el tag del repositorio y la mencion a expertos en la model card), con 7.893.392.800 parametros totales almacenados en safetensors y un repositorio de 15,8 GB. La modificacion principal respecto al modelo base es un aumento del numero de expertos activos por token (top-k mas alto) y una adaptacion del codigo Python para que funcione en entrenamiento y con transformers 5. El repositorio incluye codigo personalizado (custom_code), por lo que requiere trust_remote_code.
 
@@ -68,8 +68,8 @@ No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion estandar, n
 
 | Modelo | Parametros totales | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| krampenschiesser/ling3-tiny-base | 7,89B | no disponible | MIT | Base para fine-tuning y RL, top-k ampliado | HuggingFace, codigo personalizado |
-| inclusionAI/Ling-3.0-tiny | no disponible | no disponible | no disponible | Modelo original de referencia | HuggingFace |
+| krampenschiesser/ling3-tiny-base | 7,89B | no disponible | MIT | Base para fine-tuning y RL, top-k ampliado | Hugging Face, codigo personalizado |
+| inclusionAI/Ling-3.0-tiny | no disponible | no disponible | no disponible | Modelo original de referencia | Hugging Face |
 | Otras alternativas MoE abiertas de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de otros modelos comparables de la misma categoria en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de rendimiento, contexto o parametros activos. La unica comparacion fundamentada es interna: frente a inclusionAI/Ling-3.0-tiny, esta variante mantiene la arquitectura pero aumenta los expertos activos por token, lo que la hace mas costosa por token y, segun el autor, mas lenta.
@@ -88,6 +88,6 @@ No se dispone de datos verificados de otros modelos comparables de la misma cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/krampenschiesser/ling3-tiny-base
+- Modelo en Hugging Face: https://huggingface.co/krampenschiesser/ling3-tiny-base
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-tiny
 - Papers, blogs, repositorios o demos adicionales: no disponible en la informacion proporcionada.

@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-R1-Llama-3B-MNN-Q2-HQQ-B64 | ~3B | No disponible | 2 bits HQQ, bloque 64 | Llama 3.2 | HuggingFace, formato MNN |
-| suayptalha/DeepSeek-R1-Distill-Llama-3B | ~3B | No disponible | Safetensors originales | Llama 3.2 | HuggingFace |
-| Llama 3.2 3B (base) | ~3B | No disponible | Múltiples | Llama 3.2 | HuggingFace |
+| DeepSeek-R1-Llama-3B-MNN-Q2-HQQ-B64 | ~3B | No disponible | 2 bits HQQ, bloque 64 | Llama 3.2 | Hugging Face, formato MNN |
+| suayptalha/DeepSeek-R1-Distill-Llama-3B | ~3B | No disponible | Safetensors originales | Llama 3.2 | Hugging Face |
+| Llama 3.2 3B (base) | ~3B | No disponible | Múltiples | Llama 3.2 | Hugging Face |
 
 La comparación directa con el modelo base suayptalha/DeepSeek-R1-Distill-Llama-3B es la más relevante: esta conversión sacrifica precisión (2 bits frente a los pesos originales) a cambio de un tamaño de aproximadamente 1 GB y compatibilidad con MNN. No se dispone de datos de rendimiento comparativo entre ambas versiones.
 
@@ -82,7 +82,7 @@ La comparación directa con el modelo base suayptalha/DeepSeek-R1-Distill-Llama-
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sujitvasanth/DeepSeek-R1-Llama-3B-MNN-Q2-HQQ-B64
+- Repositorio Hugging Face: https://huggingface.co/sujitvasanth/DeepSeek-R1-Llama-3B-MNN-Q2-HQQ-B64
 - Modelo base: https://huggingface.co/suayptalha/DeepSeek-R1-Distill-Llama-3B
 - Runtime MNN: no disponible en la información proporcionada
 - FULLassistant: no disponible en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-agurung/ncp-iid-30v12u-b8 es un modelo de lenguaje publicado en HuggingFace por el usuario agurung, etiquetado con la arquitectura qwen3 y distribuido en formato safetensors. El repositorio contiene 4.022.468.096 parametros reales (aproximadamente 4,02 mil millones) y ocupa 8,1 GB, lo que es coherente con un modelo denso de ~4B parametros almacenado en precision de 16 bits.
+agurung/ncp-iid-30v12u-b8 es un modelo de lenguaje publicado en Hugging Face por el usuario agurung, etiquetado con la arquitectura qwen3 y distribuido en formato safetensors. El repositorio contiene 4.022.468.096 parametros reales (aproximadamente 4,02 mil millones) y ocupa 8,1 GB, lo que es coherente con un modelo denso de ~4B parametros almacenado en precision de 16 bits.
 
 El identificador del repositorio sugiere un checkpoint experimental dentro de una serie de variantes (el sufijo b8 y el prefijo iid apuntan a un barrido de configuraciones de entrenamiento), aunque esta interpretacion no esta confirmada por ninguna documentacion publica. El modelo no incluye model card descriptiva: no se declaran licencia, idiomas soportados, pipeline de inferencia ni composicion del dataset de entrenamiento.
 
@@ -49,7 +49,7 @@ Tampoco se dispone de datos sobre el proceso de entrenamiento: se desconocen el 
 - Base para ajuste fino especifico de dominio (fine-tuning): al ser un modelo pequeno, permite reentrenamiento con LoRA o QLoRA sobre datasets propios en una unica GPU de 24 GB.
 - Generacion de texto asistida en herramientas internas: integrable en editores, generadores de documentacion o asistentes de redaccion, siempre que una evaluacion previa confirme la calidad de sus respuestas.
 - Investigacion sobre degradacion por ajuste: util para estudiar perdida de capacidades (catastrophic forgetting) si se dispone del checkpoint base con el que compararlo.
-- Experimentacion educativa con pipelines de HuggingFace Transformers: sirve como ejemplo practico de carga de pesos safetensors y de despliegue con vLLM o llama.cpp en un entorno de laboratorio.
+- Experimentacion educativa con pipelines de Hugging Face Transformers: sirve como ejemplo practico de carga de pesos safetensors y de despliegue con vLLM o llama.cpp en un entorno de laboratorio.
 - Filtrado o clasificacion de texto por embeddings internos: las representaciones del modelo podrian reutilizarse para tareas auxiliares, aunque requeriria validacion ad hoc y no hay informacion que lo respalde.
 
 ## Benchmarks y rendimiento
@@ -65,7 +65,7 @@ No se dispone de cifras de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra e
 - VRAM estimada en GGUF Q4_K_M: aproximadamente 2,5-3 GB, lo que permite inferencia en GPUs de 6-8 GB.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 Ti / 4080 / 4090 para mayor throughput; A100 40/80 GB, H100 y L40S para despliegue en servidor.
 - Cabe en GPU de consumo: si, en cualquier GPU con 8 GB o mas usando cuantizacion de 4-8 bits, y en GPUs de 12-16 GB en precision de 16 bits.
-- Opciones de despliegue: HuggingFace Transformers, vLLM, TGI, llama.cpp, Ollama y servidores compatibles con la API de OpenAI. Requiere verificar que la plantilla de chat del checkpoint sea compatible.
+- Opciones de despliegue: Hugging Face Transformers, vLLM, TGI, llama.cpp, Ollama y servidores compatibles con la API de OpenAI. Requiere verificar que la plantilla de chat del checkpoint sea compatible.
 - Latencia y throughput: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -74,11 +74,11 @@ No hay datos de rendimiento de este checkpoint, por lo que la comparacion se lim
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agurung/ncp-iid-30v12u-b8 | 4,02B | No disponible | No disponible | HuggingFace, safetensors, 10 descargas |
-| Qwen3-4B | 4,02B | 32.768 tokens nativos; 131.072 con YaRN | Apache 2.0 | HuggingFace, amplia adopcion |
-| Llama 3.2 3B | 3,21B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, amplia adopcion |
-| Gemma 3 4B | ~4B | 128.000 tokens | Gemma Terms of Use | HuggingFace, amplia adopcion |
-| Phi-4-mini | 3,8B | 128.000 tokens | MIT | HuggingFace, amplia adopcion |
+| agurung/ncp-iid-30v12u-b8 | 4,02B | No disponible | No disponible | Hugging Face, safetensors, 10 descargas |
+| Qwen3-4B | 4,02B | 32.768 tokens nativos; 131.072 con YaRN | Apache 2.0 | Hugging Face, amplia adopcion |
+| Llama 3.2 3B | 3,21B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, amplia adopcion |
+| Gemma 3 4B | ~4B | 128.000 tokens | Gemma Terms of Use | Hugging Face, amplia adopcion |
+| Phi-4-mini | 3,8B | 128.000 tokens | MIT | Hugging Face, amplia adopcion |
 
 La diferencia fundamental no esta en el tamano, muy similar en todos los casos, sino en la ausencia total de licencia, documentacion y datos de evaluacion en el modelo analizado, frente a alternativas con condiciones de uso claras y soporte consolidado en herramientas de inferencia.
 
@@ -96,5 +96,5 @@ La diferencia fundamental no esta en el tamano, muy similar en todos los casos, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agurung/ncp-iid-30v12u-b8
+- Modelo en Hugging Face: https://huggingface.co/agurung/ncp-iid-30v12u-b8
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a paginas de descarga del navegador Google Chrome y no guardan relacion con el repositorio. No hay papers, blogs, repositorios de codigo ni demos asociados disponibles.

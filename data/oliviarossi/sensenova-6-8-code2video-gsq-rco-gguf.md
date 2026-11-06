@@ -86,7 +86,7 @@ Diferencias relevantes: frente al repo de Abiray, esta cuantización no incluye 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/OliviaRossi/SenseNova-6.8-Code2Video-GSQ-RCO-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/OliviaRossi/SenseNova-6.8-Code2Video-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/sensenova/SenseNova-6.8-Code2Video
 - Cuantizaciones GGUF de terceros con proyector de visión F16 y cabeza MTP (Abiray): https://huggingface.co/Abiray/SenseNova-6.8-Code2Video-GGUF
 - Variante MTP de Abiray: https://huggingface.co/Abiray/SenseNova-6.8-Code2Video-MTP-GGUF

@@ -28,7 +28,7 @@ Por su relevancia, se trata de material de planificacion metodologica, no de un 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre arquitectura, datos de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineacion (RLHF, DPO u otras). La model card no describe ninguna innovacion tecnica como decodificacion especulativa o atencion lineal. El unico indicio arquitectonico es la etiqueta `transformer` asociada al repositorio en HuggingFace, que no viene acompanada de configuracion, codigo ni pesos.
+No hay informacion sobre arquitectura, datos de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineacion (RLHF, DPO u otras). La model card no describe ninguna innovacion tecnica como decodificacion especulativa o atencion lineal. El unico indicio arquitectonico es la etiqueta `transformer` asociada al repositorio en Hugging Face, que no viene acompanada de configuracion, codigo ni pesos.
 
 El contenido del repositorio es una nota de investigacion que enumera el alcance del problema, los factores de confusion previsibles, una comparacion propuesta con lineas base emparejadas, benchmarks publicos relevantes nombrados en la nota principal, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. La propia model card insiste en que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales, y que cualquier resultado futuro deberia incluir versiones de dataset, comandos, semillas, hardware y registros en bruto.
 
@@ -86,5 +86,5 @@ No procede una comparativa convencional, porque este repositorio no es un modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rose6713x/reading-few-shot-multimodal
+- Hugging Face: https://huggingface.co/Rose6713x/reading-few-shot-multimodal
 - No se han encontrado papers, blogs, repositorios ni demos relevantes en la busqueda web proporcionada; los resultados de dicha busqueda no guardan relacion con el modelo.

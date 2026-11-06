@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gpt54-mini-standalone-qwen3-4b-rose-babyai-20260920 es un ajuste fino de Qwen/Qwen3-4B publicado por el usuario Diluner en HuggingFace. Se trata del checkpoint final de una etapa de entrenamiento denominada babyai, ejecutada con el método ROSE y con gpt-5.4-mini como modelo profesor. El entrenamiento se inicializó de forma independiente desde el modelo base (standalone), por lo que no es un checkpoint secuencial dentro de una cadena de etapas.
+gpt54-mini-standalone-qwen3-4b-rose-babyai-20260920 es un ajuste fino de Qwen/Qwen3-4B publicado por el usuario Diluner en Hugging Face. Se trata del checkpoint final de una etapa de entrenamiento denominada babyai, ejecutada con el método ROSE y con gpt-5.4-mini como modelo profesor. El entrenamiento se inicializó de forma independiente desde el modelo base (standalone), por lo que no es un checkpoint secuencial dentro de una cadena de etapas.
 
 El modelo conserva los 4.411.424.256 parámetros del modelo base (unos 8,8 GB en safetensors, coherente con precisión de 16 bits). El problema que aborda es el ajuste de un modelo de 4B como agente conversacional en el entorno BabyAI, donde alcanza un 87,5 % de éxito medio con la métrica avg@4 sobre 360 intentos (315 aciertos) y cero errores de episodio.
 
@@ -23,7 +23,7 @@ Su relevancia es acotada y muy específica: es un artefacto de investigación co
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3-4B y se entrena con ROSE usando gpt-5.4-mini como profesor. La etapa documentada es babyai: cinco épocas y 125 actualizaciones del optimizador en esa etapa. La inicialización es independiente desde el modelo base, de modo que no hereda pesos de etapas intermedias de una cadena. La evaluación se realiza con temperatura 0,4, top-p 1,0, top-k 20, modo thinking desactivado y un máximo de 512 tokens generados por turno. La exportación a HuggingFace incluye configuración, tokenizer y todos los shards de pesos, pero no incluye estado del optimizador, logs crudos ni trayectorias del profesor; las referencias legibles por máquina y las sumas de comprobación están en `experiment.json`.
+El modelo parte de Qwen/Qwen3-4B y se entrena con ROSE usando gpt-5.4-mini como profesor. La etapa documentada es babyai: cinco épocas y 125 actualizaciones del optimizador en esa etapa. La inicialización es independiente desde el modelo base, de modo que no hereda pesos de etapas intermedias de una cadena. La evaluación se realiza con temperatura 0,4, top-p 1,0, top-k 20, modo thinking desactivado y un máximo de 512 tokens generados por turno. La exportación a Hugging Face incluye configuración, tokenizer y todos los shards de pesos, pero no incluye estado del optimizador, logs crudos ni trayectorias del profesor; las referencias legibles por máquina y las sumas de comprobación están en `experiment.json`.
 
 El propio autor acota la interpretación de los resultados. Las recetas históricas de SFT y ROSE difieren en la planificación del learning rate, el weight decay, la precisión de parámetros, el formato y algunos límites de turnos de entrenamiento, por lo que la comparación no es una ablación que aísle únicamente el objetivo. El checkpoint retenido pertenece a la ejecución exitosa `o5e5y0nu`; una ejecución anterior fallida (`tbvhb9b3`) escribió registros en ficheros de rollout compartidos y esos registros se excluyen del análisis. Además, el inventario de selección registra nombres de fichero, tamaños y fechas de modificación, no hashes de bytes de tensores, y los logs históricos de serving están incompletos.
 
@@ -77,7 +77,7 @@ No se han identificado en la información disponible otras alternativas pública
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Evaluación publicada |
 |---|---|---|---|---|---|
-| gpt54-mini-standalone-qwen3-4b-rose-babyai-20260920 | 4,41 B | No disponible en la model card | No declarada | Pública en HuggingFace, 0 descargas y 0 likes | babyai avg@4 87,5 % (315/360) |
+| gpt54-mini-standalone-qwen3-4b-rose-babyai-20260920 | 4,41 B | No disponible en la model card | No declarada | Pública en Hugging Face, 0 descargas y 0 likes | babyai avg@4 87,5 % (315/360) |
 | Qwen/Qwen3-4B (modelo base) | 4,41 B | No verificado en la información proporcionada | Apache-2.0 según el repositorio del modelo base | Público | No comparable con la métrica de agente reportada aquí |
 | Otras alternativas de agente sobre BabyAI | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -99,7 +99,7 @@ No se han identificado en la información disponible otras alternativas pública
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Diluner/gpt54-mini-standalone-qwen3-4b-rose-babyai-20260920
+- Modelo en Hugging Face: https://huggingface.co/Diluner/gpt54-mini-standalone-qwen3-4b-rose-babyai-20260920
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Referencias legibles por máquina y sumas de comprobación del experimento (`experiment.json`): https://huggingface.co/Diluner/gpt54-mini-standalone-qwen3-4b-rose-babyai-20260920/blob/main/experiment.json
 - Resultados de la búsqueda web: los enlaces devueltos corresponden a páginas de imágenes satelitales meteorológicas (idokep.hu, idokep.eu, met.hu, meteoblue.com) y no guardan relación con el modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

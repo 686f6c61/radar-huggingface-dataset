@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Therapeutic-register-qwen3-1.7b es un ajuste fino (fine-tuning) del modelo Qwen/Qwen3-1.7B, desarrollado por el usuario locriani y publicado en HuggingFace bajo licencia Apache 2.0. El modelo ha sido entrenado mediante QLoRA sobre un dataset propio denominado `locriani/therapeutic-register-data` y posteriormente fusionado (lora-merged), con el objetivo de especializarse en la generacion de texto con un registro conversacional de caracter terapeutico. Se trata, por tanto, de un modelo de investigacion orientado a explorar el estilo y el tono de las interacciones propias de contextos de acompanamiento psicologico o counselling.
+Therapeutic-register-qwen3-1.7b es un ajuste fino (fine-tuning) del modelo Qwen/Qwen3-1.7B, desarrollado por el usuario locriani y publicado en Hugging Face bajo licencia Apache 2.0. El modelo ha sido entrenado mediante QLoRA sobre un dataset propio denominado `locriani/therapeutic-register-data` y posteriormente fusionado (lora-merged), con el objetivo de especializarse en la generacion de texto con un registro conversacional de caracter terapeutico. Se trata, por tanto, de un modelo de investigacion orientado a explorar el estilo y el tono de las interacciones propias de contextos de acompanamiento psicologico o counselling.
 
 El modelo hereda la arquitectura transformer de Qwen3 en su variante de 1.700 millones de parametros, lo que lo situa en la categoria de modelos pequenos, aptos para despliegue en hardware de consumo. Su interes actual radica en ser un ejemplo de especializacion por dominio sobre una base moderna y abierta, con un enfoque muy concreto (el registro linguistico terapeutico) en lugar de una mejora general de capacidades. No obstante, se trata de un artefacto de investigacion con cero descargas y cero likes en el momento de la consulta, acceso restringido y sin benchmarks publicados.
 
@@ -43,7 +43,7 @@ El entrenamiento utiliza el dataset `locriani/therapeutic-register-data`, de ela
 - Evaluacion de tecnicas QLoRA: al ser un ejemplo documentado de QLoRA + merge sobre Qwen3-1.7B, puede emplearse como referencia en experimentos sobre eficiencia de ajuste fino en modelos pequenos.
 - Pruebas de despliegue en hardware de consumo: con 1.700 millones de parametros, permite validar pipelines de inferencia (transformers, TGI) en GPUs de gama media para experimentacion.
 - Analisis de sesgos y alucinacion en dominios sensibles: sirve para estudiar como un modelo pequeno especializado en un dominio delicado (salud mental) puede producir respuestas plausibles pero incorrectas, como caso de prueba de sistemas de filtrado y salvaguardas.
-- Docencia y formacion tecnica: ejemplo didactico de publicacion de un modelo ajustado en HuggingFace con acceso restringido, licencia Apache 2.0 y ficha de modelo, para ilustrar el ciclo completo de un experimento de fine-tuning.
+- Docencia y formacion tecnica: ejemplo didactico de publicacion de un modelo ajustado en Hugging Face con acceso restringido, licencia Apache 2.0 y ficha de modelo, para ilustrar el ciclo completo de un experimento de fine-tuning.
 
 ## Benchmarks y rendimiento
 
@@ -74,13 +74,13 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 - Riesgo elevado de alucinacion en un dominio sensible: un modelo de 1,7 B ajustado sobre un corpus propio puede generar respuestas con apariencia de consejo profesional sin base factual.
 - Idiomas: solo se declara ingles; el rendimiento en castellano no esta garantizado ni documentado.
 - Sesgos: al desconocerse la composicion del dataset de entrenamiento, no es posible evaluar sesgos de genero, culturales o clinicos; deben asumirse sesgos presentes en los datos y en la base Qwen3.
-- Licencia Apache 2.0: permite uso comercial segun los terminos de la licencia, pero el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en HuggingFace; el uso comercial en contextos de salud mental exigiria validacion adicional independiente.
+- Licencia Apache 2.0: permite uso comercial segun los terminos de la licencia, pero el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face; el uso comercial en contextos de salud mental exigiria validacion adicional independiente.
 - Sin benchmarks ni evaluacion publicada: no hay evidencia cuantitativa de calidad, seguridad ni robustez.
 - Contexto y cuantizaciones no documentados: la ausencia de variantes GGUF/AWQ/GPTQ limita el despliegue en entornos de bajo recursos sin trabajo adicional de conversion.
 - Cero descargas y cero likes: sin comunidad ni soporte; el mantenimiento del repositorio no esta garantizado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/locriani/therapeutic-register-qwen3-1.7b
+- Hugging Face: https://huggingface.co/locriani/therapeutic-register-qwen3-1.7b
 - Dataset de entrenamiento: https://huggingface.co/datasets/locriani/therapeutic-register-data
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

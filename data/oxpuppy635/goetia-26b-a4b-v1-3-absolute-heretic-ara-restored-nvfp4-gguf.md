@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored-NVFP4-GGUF es una cuantización en formato NVFP4 GGUF del modelo base oxpuppy635/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored, un fine-tune derivado de la familia Gemma según las etiquetas del repositorio. El modelo cuenta con 25 233 138 206 parámetros totales (aproximadamente 25,2 mil millones), aunque la nomenclatura "A4B" del nombre sugiere una arquitectura de mezcla de expertos con unos 4 mil millones de parámetros activos por token. Lo publica el usuario oxpuppy635 en HuggingFace.
+Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored-NVFP4-GGUF es una cuantización en formato NVFP4 GGUF del modelo base oxpuppy635/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored, un fine-tune derivado de la familia Gemma según las etiquetas del repositorio. El modelo cuenta con 25 233 138 206 parámetros totales (aproximadamente 25,2 mil millones), aunque la nomenclatura "A4B" del nombre sugiere una arquitectura de mezcla de expertos con unos 4 mil millones de parámetros activos por token. Lo publica el usuario oxpuppy635 en Hugging Face.
 
 La relevancia de esta ficha es doble: por un lado, documenta un fine-tune comunitario de la familia Gemma orientado a conversación; por otro, ejemplifica la adopción del formato NVFP4 (un formato de cuantización de 4 bits con escalas de bloque) dentro del ecosistema llama.cpp mediante el tipo nativo GGML_TYPE_NVFP4. El repositorio ocupa 15,3 GB y contiene un único fichero GGUF listo para su uso con builds recientes de llama.cpp.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Goetia-26B-A4B-v1.3 NVFP4 GGUF | ~25,2 B (¿~4 B activos?) | No disponible | other | GGUF NVFP4 | HuggingFace |
-| Gemma 2 27B (referencia de familia) | 27 B | 8 192 tokens | Gemma license | safetensors, GGUF | HuggingFace, Ollama |
-| Mixtral 8x7B (referencia MoE) | 46,7 B (~12,9 B activos) | 32 768 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, Ollama |
+| Goetia-26B-A4B-v1.3 NVFP4 GGUF | ~25,2 B (¿~4 B activos?) | No disponible | other | GGUF NVFP4 | Hugging Face |
+| Gemma 2 27B (referencia de familia) | 27 B | 8 192 tokens | Gemma license | safetensors, GGUF | Hugging Face, Ollama |
+| Mixtral 8x7B (referencia MoE) | 46,7 B (~12,9 B activos) | 32 768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
 
 Nota: la comparativa con Gemma 2 27B y Mixtral 8x7B es orientativa por familia y tamaño; no se dispone de datos de rendimiento del modelo Goetia que permitan una comparación cuantitativa.
 
@@ -80,6 +80,6 @@ Nota: la comparativa con Gemma 2 27B y Mixtral 8x7B es orientativa por familia y
 
 ## Enlaces
 
-- [HuggingFace: oxpuppy635/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored-NVFP4-GGUF](https://huggingface.co/oxpuppy635/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored-NVFP4-GGUF)
+- [Hugging Face: oxpuppy635/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored-NVFP4-GGUF](https://huggingface.co/oxpuppy635/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored-NVFP4-GGUF)
 - [Modelo base: oxpuppy635/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored](https://huggingface.co/oxpuppy635/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored)
 - [llama.cpp (repositorio oficial)](https://github.com/ggerganov/llama.cpp)

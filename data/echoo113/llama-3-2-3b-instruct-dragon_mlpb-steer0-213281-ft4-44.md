@@ -43,5 +43,5 @@ No se dispone de información comparativa. El modelo es un fine-tune específico
 - El nombre del modelo sugiere cambios arquitectónicos no documentados, lo que podría afectar el comportamiento esperado.
 
 ## Enlaces
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-dragon_mlpB-STEER0.213281-ft4.44)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-dragon_mlpB-STEER0.213281-ft4.44)
 - [Modelo base: meta-llama/Llama-3.2-3B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct)

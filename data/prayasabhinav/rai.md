@@ -23,7 +23,7 @@ Su relevancia es acotada y deliberadamente estrecha: cubre la tarea de distingui
 
 ## Arquitectura y entrenamiento
 
-Arquitectura identica a la del modelo base deepset/minilm-uncased-squad2: un encoder transformer MiniLM-L12-H384-uncased con cabeza extractiva de question answering para SQuAD 2.0, que incluye la clase de respuesta nula. No se anaden capas ni modulos. El pipeline declarado en HuggingFace es question-answering y la libreria es transformers.
+Arquitectura identica a la del modelo base deepset/minilm-uncased-squad2: un encoder transformer MiniLM-L12-H384-uncased con cabeza extractiva de question answering para SQuAD 2.0, que incluye la clase de respuesta nula. No se anaden capas ni modulos. El pipeline declarado en Hugging Face es question-answering y la libreria es transformers.
 
 El entrenamiento se hizo exclusivamente con datos sinteticos: 12.000 pares generados por plantillas mediante `scripts/synth.py` con semilla 7. Los ejemplos positivos son respuestas honestas, presentadas solas o precedidas del tallo de la pregunta; los negativos agrupan respuestas evasivas, diferidas, genericas, vacias y fuera de pregunta, etiquetadas como *no answer*. No se uso texto de personas reales. La configuracion fue de dos epocas, batch de 32, learning rate 2e-5 y longitud maxima de 384, ejecutada en CPU en 460 segundos. No se menciona RLHF ni DPO.
 
@@ -78,9 +78,9 @@ El autor advierte que el umbral se eligio sobre el mismo conjunto de test en el 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| prayasabhinav/rai (rai reader 0.3.2) | 33.212.930 | 384 tokens | QA extractivo con criterio de completitud | CC-BY-4.0 | HuggingFace, 0 descargas |
-| deepset/minilm-uncased-squad2 | 33,2 millones (misma arquitectura) | 384 tokens | QA extractivo SQuAD 2.0 | CC-BY-4.0 | HuggingFace, ampliamente usado |
-| microsoft/MiniLM-L12-H384-uncased | 33,4 millones | 512 tokens | Modelo de lenguaje enmascarado (base) | MIT | HuggingFace, ampliamente usado |
+| prayasabhinav/rai (rai reader 0.3.2) | 33.212.930 | 384 tokens | QA extractivo con criterio de completitud | CC-BY-4.0 | Hugging Face, 0 descargas |
+| deepset/minilm-uncased-squad2 | 33,2 millones (misma arquitectura) | 384 tokens | QA extractivo SQuAD 2.0 | CC-BY-4.0 | Hugging Face, ampliamente usado |
+| microsoft/MiniLM-L12-H384-uncased | 33,4 millones | 512 tokens | Modelo de lenguaje enmascarado (base) | MIT | Hugging Face, ampliamente usado |
 
 La diferencia frente al modelo base no esta en la arquitectura ni en el numero de parametros, sino en el ajuste con 12.000 pares sinteticos etiquetados por construccion y en la regla de lectura con umbral de margen que aplica rai. Frente a MiniLM-L12-H384-uncased, rai incorpora la cabeza extractiva y el ajuste sobre SQuAD 2.0 heredado del modelo intermedio.
 
@@ -95,11 +95,11 @@ La diferencia frente al modelo base no esta en la arquitectura ni en el numero d
 - Riesgo de alusion erronea o span espurio inherente a los modelos extractivos, especialmente fuera del dominio de plantillas.
 - El propio autor declara fuera de alcance el uso del modelo para puntuar, sugerir, dar razones, o como paso de una decision que afecte a otra persona.
 - Licencia CC-BY-4.0: permite uso comercial, pero exige atribucion a Koher (rai reader), a deepset y a Microsoft.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, sin validacion externa de la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, sin validacion externa de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prayasabhinav/rai
+- Modelo en Hugging Face: https://huggingface.co/prayasabhinav/rai
 - Repositorio de la herramienta rai: https://github.com/koherarchitecture/rai
 - Modelo base: https://huggingface.co/deepset/minilm-uncased-squad2
 - Modelo original de Microsoft: https://huggingface.co/microsoft/MiniLM-L12-H384-uncased

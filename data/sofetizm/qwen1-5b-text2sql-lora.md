@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sofetizm/qwen1.5b-text2sql-lora es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace y pensado para especializar el modelo base Qwen/Qwen2.5-1.5B-Instruct en la tarea de text-to-SQL, es decir, la traduccion de lenguaje natural a consultas SQL. El autor es el usuario Sofetizm y el repositorio contiene unicamente los pesos del adaptador (0,1 GB), no el modelo completo, por lo que su uso requiere cargar previamente el modelo base Qwen2.5-1.5B-Instruct y aplicar el adaptador mediante la libreria PEFT.
+Sofetizm/qwen1.5b-text2sql-lora es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face y pensado para especializar el modelo base Qwen/Qwen2.5-1.5B-Instruct en la tarea de text-to-SQL, es decir, la traduccion de lenguaje natural a consultas SQL. El autor es el usuario Sofetizm y el repositorio contiene unicamente los pesos del adaptador (0,1 GB), no el modelo completo, por lo que su uso requiere cargar previamente el modelo base Qwen2.5-1.5B-Instruct y aplicar el adaptador mediante la libreria PEFT.
 
 El modelo base Qwen2.5-1.5B-Instruct es un transformer decoder-only de 1.500 millones de parametros desarrollado por Alibaba Qwen, con una ventana de contexto nativa de 32.768 tokens (ampliable a 131.072 en la familia Qwen2.5). Al tratarse de un adaptador, las capacidades reales del modelo resultante dependen en gran medida del modelo base y de la calidad y volumen de los datos de entrenamiento del LoRA, datos que el autor no documenta en la model card.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un adaptador 
 
 El artefacto publicado no es un modelo completo sino un adaptador LoRA que se aplica sobre Qwen2.5-1.5B-Instruct. La arquitectura subyacente es la del modelo base: un transformer decoder-only con atencion causal, normalizacion RMSNorm, activacion SwiGLU y embeddings rotatorios (RoPE), tal como corresponde a la familia Qwen2.5. El adaptador introduce matrices de bajo rango en determinadas capas del transformer, lo que permite especializar el modelo en text-to-SQL con un coste de entrenamiento muy reducido en comparacion con un fine-tuning completo.
 
-No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, la composicion de los datos, si se aplicaron tecnicas de RLHF o DPO, ni los hiperparametros concretos del LoRA (rango, alpha, capas objetivo). La model card es la plantilla por defecto de HuggingFace sin rellenar, y la unica referencia tecnica es la version de PEFT utilizada (0.21.2) y la cita generica al paper de Lacoste et al. (2019) sobre emisiones de carbono. No hay innovaciones tecnicas documentadas mas alla del propio uso de LoRA.
+No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, la composicion de los datos, si se aplicaron tecnicas de RLHF o DPO, ni los hiperparametros concretos del LoRA (rango, alpha, capas objetivo). La model card es la plantilla por defecto de Hugging Face sin rellenar, y la unica referencia tecnica es la version de PEFT utilizada (0.21.2) y la cita generica al paper de Lacoste et al. (2019) sobre emisiones de carbono. No hay innovaciones tecnicas documentadas mas alla del propio uso de LoRA.
 
 ## Capacidades
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sofetizm/qwen1.5b-text2sql-lora | 1,5B (adaptador LoRA) | no disponible (base: 32.768) | text-to-SQL via LoRA | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | instrucciones generales | Apache 2.0 (segun el modelo base) | HuggingFace, ampliamente usado |
-| Defog/sqlcoder-7b-2 | 7B | 16.384 | text-to-SQL especializado | CC BY-SA 4.0 | HuggingFace |
-| NumbersStation/nsql-350M | 350M | 2.048 | text-to-SQL especializado | CC BY-NC 4.0 | HuggingFace |
+| Sofetizm/qwen1.5b-text2sql-lora | 1,5B (adaptador LoRA) | no disponible (base: 32.768) | text-to-SQL via LoRA | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | instrucciones generales | Apache 2.0 (segun el modelo base) | Hugging Face, ampliamente usado |
+| Defog/sqlcoder-7b-2 | 7B | 16.384 | text-to-SQL especializado | CC BY-SA 4.0 | Hugging Face |
+| NumbersStation/nsql-350M | 350M | 2.048 | text-to-SQL especializado | CC BY-NC 4.0 | Hugging Face |
 
 La comparativa es orientativa: no hay datos de rendimiento publicados para el adaptador de Sofetizm, por lo que no puede establecerse una comparacion cuantitativa con alternativas especializadas en text-to-SQL.
 
@@ -81,7 +81,7 @@ La comparativa es orientativa: no hay datos de rendimiento publicados para el ad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sofetizm/qwen1.5b-text2sql-lora
+- Repositorio Hugging Face: https://huggingface.co/Sofetizm/qwen1.5b-text2sql-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Paper de PEFT/LoRA (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

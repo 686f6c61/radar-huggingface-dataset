@@ -67,7 +67,7 @@ No se dispone de datos comparativos concretos. El modelo se puede comparar cuali
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/salamanderDixon/Qwen3.6-27B-Claude-Opus-Reasoning-Distill-v2-heretic-Q4_K_M-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/salamanderDixon/Qwen3.6-27B-Claude-Opus-Reasoning-Distill-v2-heretic-Q4_K_M-GGUF
 - Modelo base (safetensors): https://huggingface.co/salamanderDixon/Qwen3.6-27B-Claude-Opus-Reasoning-Distill-v2-heretic
 - Página del modelo en FriendliAI (benchmarks en mxfp8): https://friendli.ai/models/salamanderDixon/Qwen3.6-27B-Claude-Opus-Reasoning-Distill-v2-heretic
 - Modelo similar en ModelScope (GGUF de TeichAI): https://www.modelscope.cn/models/TeichAI/Qwen3.6-27B-Claude-Opus-Reasoning-Distill-v2-GGUF

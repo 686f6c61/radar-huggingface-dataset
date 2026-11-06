@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks de capacidad general (MMLU, HumanEv
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| asparius/qwen38-opus55-sft-lora | LoRA SFT sobre Qwen3.8-27B | no disponible (adaptador 1,0 GB) | no disponible | other | HuggingFace |
-| Qwen/Qwen3.8-27B (base) | Modelo completo | 27B (por nombre) | no disponible | no disponible | HuggingFace |
+| asparius/qwen38-opus55-sft-lora | LoRA SFT sobre Qwen3.8-27B | no disponible (adaptador 1,0 GB) | no disponible | other | Hugging Face |
+| Qwen/Qwen3.8-27B (base) | Modelo completo | 27B (por nombre) | no disponible | no disponible | Hugging Face |
 | Ejecución previa con Opus 4.7 | Destilación SFT (referencia experimental) | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparables entre estos artefactos en la información proporcionada, más allá de la referencia cualitativa de la model card a que el estudiante sigue de cerca al base sin entrenar en la evaluación de *reward hacking*.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparables entre estos artefactos en la i
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/asparius/qwen38-opus55-sft-lora
+- Hugging Face del adaptador: https://huggingface.co/asparius/qwen38-opus55-sft-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/asparius/dolci-instruct-sft-opus5.5
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper, blog, repositorio o demo adicionales: no disponible en la información proporcionada.

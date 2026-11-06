@@ -93,7 +93,7 @@ Otros modelos de OCR multimodal comparables: no disponible en la informacion pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-dots-ft-e6e
+- Repositorio en Hugging Face: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-dots-ft-e6e
 - Modelo base segun la model card: https://huggingface.co/rednote-hilab/dots.mocr
 - Modelo base segun las etiquetas del repositorio: https://huggingface.co/dots-studio/dots.mocr
 - Repositorio de datos y codigo de investigacion referenciado por el autor: `arabic-ocr-research-data` (rutas `code/scripts/`, `docs/TEST_PROTOCOL.md`, `REPORT.md`); URL no disponible en la informacion proporcionada.

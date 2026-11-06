@@ -74,10 +74,10 @@ La verificacion confirma ademas que 473 tensores coinciden en nombre, forma y ti
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `avartha/kev-0.8b-merged` | 852.985.920 (~0,85B) | no disponible | Decision con cabeza de punteros, pesos ya fusionados | Apache-2.0 | HuggingFace |
-| `jaredpalmer/kev-0.8b` | no disponible (mismo backbone ~0,8B) | no disponible | Decision con cabeza de punteros, adaptador LoRA sin fusionar | Apache-2.0 | HuggingFace |
-| `Qwen/Qwen3.5-0.8B-Base` | no disponible (base del anterior) | no disponible | Modelo de lenguaje causal generativo | Apache-2.0 | HuggingFace |
-| Kev 4B y Kev 9B (familia) | 4B / 9B segun denominacion | no disponible | Decision con cabeza de punteros | Apache-2.0 | HuggingFace y GitHub |
+| `avartha/kev-0.8b-merged` | 852.985.920 (~0,85B) | no disponible | Decision con cabeza de punteros, pesos ya fusionados | Apache-2.0 | Hugging Face |
+| `jaredpalmer/kev-0.8b` | no disponible (mismo backbone ~0,8B) | no disponible | Decision con cabeza de punteros, adaptador LoRA sin fusionar | Apache-2.0 | Hugging Face |
+| `Qwen/Qwen3.5-0.8B-Base` | no disponible (base del anterior) | no disponible | Modelo de lenguaje causal generativo | Apache-2.0 | Hugging Face |
+| Kev 4B y Kev 9B (familia) | 4B / 9B segun denominacion | no disponible | Decision con cabeza de punteros | Apache-2.0 | Hugging Face y GitHub |
 | Jev (Typesafe AI) | no disponible | no disponible | Modelo de decision propietario | propietaria | no disponible |
 
 ## Limitaciones y advertencias

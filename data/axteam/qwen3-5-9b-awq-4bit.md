@@ -94,11 +94,11 @@ No se dispone de datos verificables de rendimiento en tareas para estas variante
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/Qwen3.5-9B-AWQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/axteam/Qwen3.5-9B-AWQ-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
 - Ficha de Qwen3.5-9B en Awesome Agents: https://awesomeagents.ai/models/qwen-3-5-9b/
 - Especificaciones y requisitos de VRAM (apxml): https://apxml.com/models/qwen35-9b
 - Cuantizacion equivalente en ModelScope (cyankiwi): https://www.modelscope.cn/models/cyankiwi/Qwen3.5-9B-AWQ-4bit
 - Analisis en XDA Developers: https://www.xda-developers.com/qwen-3-5-9b-tops-ai-benchmarks-not-how-pick-model/
-- Listado de cuantizaciones de Qwen3.5-9B en HuggingFace: https://huggingface.co/models?other=base_model:quantized:Qwen/Qwen3.5-9B
+- Listado de cuantizaciones de Qwen3.5-9B en Hugging Face: https://huggingface.co/models?other=base_model:quantized:Qwen/Qwen3.5-9B

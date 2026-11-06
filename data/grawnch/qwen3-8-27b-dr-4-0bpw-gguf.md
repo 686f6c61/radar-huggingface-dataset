@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen3.8-27B-DR-4.0bpw-GGUF es una cuantizacion de 4 bits en formato GGUF del modelo base Qwen/Qwen3.8-27B, publicada por el usuario Grawnch en HuggingFace. El repositorio contiene unicamente los pesos cuantizados (15,60 GB), no el modelo original, y esta pensado para su uso con motores de inferencia compatibles con GGUF como llama.cpp u Ollama. El modelo base pertenece a la familia Qwen3, desarrollada por Alibaba, y cuenta con 26.895.998.464 parametros totales (aproximadamente 27B) y una longitud de contexto declarada de 262.144 tokens.
+Qwen3.8-27B-DR-4.0bpw-GGUF es una cuantizacion de 4 bits en formato GGUF del modelo base Qwen/Qwen3.8-27B, publicada por el usuario Grawnch en Hugging Face. El repositorio contiene unicamente los pesos cuantizados (15,60 GB), no el modelo original, y esta pensado para su uso con motores de inferencia compatibles con GGUF como llama.cpp u Ollama. El modelo base pertenece a la familia Qwen3, desarrollada por Alibaba, y cuenta con 26.895.998.464 parametros totales (aproximadamente 27B) y una longitud de contexto declarada de 262.144 tokens.
 
 La relevancia de esta publicacion es practica: reduce un modelo de ~27B parametros a un fichero de 15,6 GB con una tasa nominal de 4,00 bits por peso (4,49 bpw efectivos al incluir la cabeza Q6_K y las normas), lo que lo hace desplegable en hardware de consumo de gama alta. La cuantizacion se ha realizado con imatrix, segun los tags del repositorio, lo que suele mejorar la fidelidad respecto a cuantizaciones sin calibracion.
 
-No obstante, la informacion disponible es muy limitada: el repositorio no incluye model card detallada, licencia, idiomas soportados ni resultados de evaluacion, y registra 0 descargas y 0 likes en el momento de la consulta. Los datos tecnicos que se presentan a continuacion provienen exclusivamente del README del autor y de los metadatos de HuggingFace.
+No obstante, la informacion disponible es muy limitada: el repositorio no incluye model card detallada, licencia, idiomas soportados ni resultados de evaluacion, y registra 0 descargas y 0 likes en el momento de la consulta. Los datos tecnicos que se presentan a continuacion provienen exclusivamente del README del autor y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ Respecto al proceso de cuantizacion, el autor indica el uso de imatrix (matriz d
 
 - Generacion de texto conversacional: el tag `conversational` sugiere uso en dialogos multi-turno.
 - Ventana de contexto de 262.144 tokens, adecuada para documentos largos y conversaciones extensas (sujeta a la memoria disponible en el motor de inferencia).
-- Compatibilidad con endpoints (`endpoints_compatible`), lo que indica que puede servirse a traves de infraestructura compatible con la API de HuggingFace.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que indica que puede servirse a traves de infraestructura compatible con la API de Hugging Face.
 - Capacidades especificas del modelo base (razonamiento, codigo, matematicas, tool calling, agentes, vision o audio): no disponibles en la informacion proporcionada.
 
 ## Casos de uso
@@ -41,7 +41,7 @@ Respecto al proceso de cuantizacion, el autor indica el uso de imatrix (matriz d
 - Asistentes conversacionales autoalojados: el tag `conversational` y el formato GGUF lo hacen adecuado para chatbots privados sin dependencia de APIs externas.
 - Prototipado e investigacion: al ser una cuantizacion ligera, sirve para experimentar con un modelo de ~27B en entornos con recursos limitados antes de escalar a precision completa.
 - Inferencia en CPU o configuraciones hibridas CPU/GPU: llama.cpp permite dividir capas entre CPU y GPU, de modo que el modelo puede ejecutarse en equipos sin GPU dedicada, a costa de menor velocidad.
-- Integracion en pipelines compatibles con endpoints: el tag `endpoints_compatible` facilita servirlo detras de una API compatible con el ecosistema de HuggingFace.
+- Integracion en pipelines compatibles con endpoints: el tag `endpoints_compatible` facilita servirlo detras de una API compatible con el ecosistema de Hugging Face.
 - Evaluacion comparativa de cuantizaciones: util para medir la perdida de calidad de una cuantizacion 4 bpw con imatrix frente al modelo base en tareas concretas.
 
 ## Benchmarks y rendimiento
@@ -73,5 +73,5 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Grawnch/Qwen3.8-27B-DR-4.0bpw-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Grawnch/Qwen3.8-27B-DR-4.0bpw-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

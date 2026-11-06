@@ -86,8 +86,8 @@ No se dispone de datos de benchmarks del modelo base en la información proporci
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l2_basis_remove40_swapgapnet_rankunit_b010` | 6.738.415.616 en safetensors; fracción densa efectiva 0,5999 | No disponible | Llama 2 Community License | AdvBench ASR 0,0769; StrongREJECT ASR 0,1310; sobrerrechazo 0,1345; ppl WikiText-2 10,8616 | HuggingFace, 0 descargas |
-| `meta-llama/Llama-2-7b-chat-hf` (modelo base) | No disponible en la información proporcionada | No disponible | Llama 2 Community License | No disponible | HuggingFace |
+| `Jeesup/svd-safety-l2_basis_remove40_swapgapnet_rankunit_b010` | 6.738.415.616 en safetensors; fracción densa efectiva 0,5999 | No disponible | Llama 2 Community License | AdvBench ASR 0,0769; StrongREJECT ASR 0,1310; sobrerrechazo 0,1345; ppl WikiText-2 10,8616 | Hugging Face, 0 descargas |
+| `meta-llama/Llama-2-7b-chat-hf` (modelo base) | No disponible en la información proporcionada | No disponible | Llama 2 Community License | No disponible | Hugging Face |
 | Otras celdas de la rejilla del mismo estudio (reglas y presupuestos alternativos) | No disponible | No disponible | Llama 2 Community License | No disponible | No disponible |
 
 No se han identificado en la información proporcionada otros checkpoints comparables de compresión SVD con edición de seguridad, ni resultados de modelos de tamaño similar (7B) que permitan una comparación cuantitativa directa.
@@ -106,7 +106,7 @@ No se han identificado en la información proporcionada otros checkpoints compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapgapnet_rankunit_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapgapnet_rankunit_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2 incluida en el repositorio: `LICENSE.txt` y `USE_POLICY.md`
 - Referencia metodológica citada por el autor: Basis Sharing (ICLR 2025); no se proporciona URL del paper en la información disponible.

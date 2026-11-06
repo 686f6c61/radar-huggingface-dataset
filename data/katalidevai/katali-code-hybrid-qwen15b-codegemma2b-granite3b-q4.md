@@ -87,7 +87,7 @@ Frente a modelos de codigo monoliticos de tamano similar o superior (por ejemplo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/katalidevai/katali-code-hybrid-qwen15b-codegemma2b-granite3b-q4
+- Repositorio en Hugging Face: https://huggingface.co/katalidevai/katali-code-hybrid-qwen15b-codegemma2b-granite3b-q4
 - El autor indica que deben consultarse los model cards y ficheros de licencia upstream de Qwen, Google e IBM, pero no incluye enlaces directos a ellos en la informacion proporcionada. Referencias de organizacion (los enlaces directos a los model cards no aparecen en la informacion disponible):
   - https://huggingface.co/Qwen
   - https://huggingface.co/google

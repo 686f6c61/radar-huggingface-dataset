@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Anima-Aesthetic-Diffusers (este repo) | 2B (denoiser) | 512-1536 px | No disponible | HuggingFace, diffusers |
-| Anima-1.0-Aesthetic-Diffusers (base) | 2B (denoiser) | 512-1536 px | No disponible | HuggingFace, diffusers |
+| Anima-Aesthetic-Diffusers (este repo) | 2B (denoiser) | 512-1536 px | No disponible | Hugging Face, diffusers |
+| Anima-1.0-Aesthetic-Diffusers (base) | 2B (denoiser) | 512-1536 px | No disponible | Hugging Face, diffusers |
 | Alternativas de difusion texto-a-imagen de proposito general | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la informacion proporcionada que permitan una comparacion cuantitativa fiable.
@@ -87,5 +87,5 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/Anima-Aesthetic-Diffusers
+- Repositorio Hugging Face: https://huggingface.co/Rin247/Anima-Aesthetic-Diffusers
 - Modelo base: https://huggingface.co/CalamitousFelicitousness/Anima-1.0-Aesthetic-Diffusers

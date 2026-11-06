@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SEAL E1-extra es un conjunto de seis TaskNets de 5 componentes entrenados para diseño de circuitos mediante un graph transformer con fusión temprana (`EarlyFusionMatchedSupportTaskGTN`). Lo publica el usuario de HuggingFace tjwjdgns011119 y pertenece a la familia de experimentos SEAL, en los que se combina un objetivo de error cuadrático medio (MSE) con una señal de utilidad derivada de una Loss-Net auxiliar. El modelo no es un LLM: es un modelo pequeño y especializado que predice ciclos de trabajo (duty cycles) de una topología de convertidor de 5 componentes a partir de una representación en grafo del circuito y de un objetivo de ganancia (`gamma`).
+SEAL E1-extra es un conjunto de seis TaskNets de 5 componentes entrenados para diseño de circuitos mediante un graph transformer con fusión temprana (`EarlyFusionMatchedSupportTaskGTN`). Lo publica el usuario de Hugging Face tjwjdgns011119 y pertenece a la familia de experimentos SEAL, en los que se combina un objetivo de error cuadrático medio (MSE) con una señal de utilidad derivada de una Loss-Net auxiliar. El modelo no es un LLM: es un modelo pequeño y especializado que predice ciclos de trabajo (duty cycles) de una topología de convertidor de 5 componentes a partir de una representación en grafo del circuito y de un objetivo de ganancia (`gamma`).
 
 El repositorio contiene tres semillas (11, 22 y 33) y, para cada una, dos variantes: `mse` (entrenamiento solo con MSE) y `seal` (MSE más una penalización de utilidad con `utility_weight=0.5`). Cada checkpoint se eligió maximizando la utilidad de validación predicha por la Loss-Net sobre las épocas guardadas (800, 1200, ..., 4000), no mediante simulación directa con NGSpice. Los pesos se distribuyen en `safetensors` y en el `checkpoint.pt` original, con metadatos de selección, linaje y W&B.
 
@@ -90,5 +90,5 @@ No disponible. La información proporcionada no incluye otros modelos de la mism
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tjwjdgns011119/seal-5comp-e1-extra-t15-best
+- Hugging Face: https://huggingface.co/tjwjdgns011119/seal-5comp-e1-extra-t15-best
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la información disponible.

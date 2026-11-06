@@ -16,7 +16,7 @@ El modelo se presenta como una solución generalista para razonamiento y chat, c
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | BF16 (esta versión), NVFP4 (versión NIM) |
 | Idiomas soportados | Inglés, español, francés, alemán, italiano, japonés (versión chat); el modelo base: inglés + 19 idiomas hablados + 43 lenguajes de programación |
-| Licencia | no disponible (etiquetada como "other" en HuggingFace) |
+| Licencia | no disponible (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -60,15 +60,15 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 - Sesgos y alucinaciones: al ser un modelo entrenado con datos web y sintéticos, puede presentar sesgos presentes en los datos de entrenamiento y generar contenido factualmente incorrecto. No se han publicado evaluaciones específicas de sesgo.
 - Limitaciones de idioma: aunque soporta seis idiomas, el rendimiento en idiomas distintos del inglés puede ser inferior, especialmente en tareas complejas o con jerga técnica.
-- Licencia restrictiva: la licencia está marcada como "other" en HuggingFace, lo que indica que no es una licencia open source estándar. Es necesario revisar los términos exactos antes de uso comercial.
+- Licencia restrictiva: la licencia está marcada como "other" en Hugging Face, lo que indica que no es una licencia open source estándar. Es necesario revisar los términos exactos antes de uso comercial.
 - Versión BF16 no optimizada para inferencia: esta versión es de referencia para personalización; para producción se recomienda la versión NVFP4 de NIM, que puede tener requisitos de plataforma específicos.
 - Contexto no especificado: se desconoce la longitud máxima de contexto soportada, lo que puede limitar su uso en aplicaciones que requieran ventanas largas.
 - Falta de benchmarks públicos: no hay datos de rendimiento comparativos, lo que dificulta evaluar su idoneidad frente a alternativas establecidas.
 
 ## Enlaces
 
-- [HuggingFace - NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16)
+- [Hugging Face - NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16)
 - [NVIDIA NIM - Model Card](https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard)
 - [NVIDIA NGC - Nemotron 3.5 Lightning](https://catalog.ngc.nvidia.com/orgs/nim/nvidia/models/nemotron-3.5-lightning)
-- [HuggingFace - Versión Base](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16)
+- [Hugging Face - Versión Base](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16)
 - [Documentación API NIM](https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-5-lightning-30b-a3b)

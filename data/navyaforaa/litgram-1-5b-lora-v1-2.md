@@ -72,6 +72,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [HuggingFace: Navyaforaa/LitGram-1.5B-LoRA-v1.2](https://huggingface.co/Navyaforaa/LitGram-1.5B-LoRA-v1.2)
+- [Hugging Face: Navyaforaa/LitGram-1.5B-LoRA-v1.2](https://huggingface.co/Navyaforaa/LitGram-1.5B-LoRA-v1.2)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)
 - [Modelo base: Navyaforaa/LitGram-1.5B](https://huggingface.co/Navyaforaa/LitGram-1.5B) (enlace inferido, no verificado)

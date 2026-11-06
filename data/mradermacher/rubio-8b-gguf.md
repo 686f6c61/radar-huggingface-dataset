@@ -82,7 +82,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/RuBio-8B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/RuBio-8B-GGUF
 - Modelo base: https://huggingface.co/mulkzz/RuBio-8B
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#RuBio-8B-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

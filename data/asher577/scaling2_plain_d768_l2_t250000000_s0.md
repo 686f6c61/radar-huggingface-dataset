@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`scaling2_plain_d768_L2_t250000000_s0` es un checkpoint de investigación publicado por el usuario asher577 en HuggingFace. Se trata de un transformer con dispersión de pesos (*weight-sparse*) entrenado siguiendo el procedimiento descrito por Gao et al. (2025). No es un modelo pensado para uso en producción ni para tareas de propósito general, sino un artefacto experimental dentro de un estudio de escalado sobre modelos dispersos.
+`scaling2_plain_d768_L2_t250000000_s0` es un checkpoint de investigación publicado por el usuario asher577 en Hugging Face. Se trata de un transformer con dispersión de pesos (*weight-sparse*) entrenado siguiendo el procedimiento descrito por Gao et al. (2025). No es un modelo pensado para uso en producción ni para tareas de propósito general, sino un artefacto experimental dentro de un estudio de escalado sobre modelos dispersos.
 
 El modelo es deliberadamente minúsculo: 2 capas, dimensión de modelo 768, dimensión de cabeza 16, vocabulario de 4096 tokens y una longitud de contexto de 512 tokens. El entrenamiento se realizó sobre el dataset `jacobcd52/simplestories-tokenized` con el tokenizador de SimpleStories-1.25M y un total de 250 millones de tokens procesados. El nombre del repositorio codifica estos hiperparámetros: `d768` (dimensión), `L2` (capas), `t250000000` (tokens) y `s0` (semilla).
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `asher577/scaling2_plain_d768_L2_t250000000_s0` | no disponible (2 capas, d=768) | 512 | no disponible | HuggingFace, 0 descargas |
-| Modelos de la familia SimpleStories | no disponible | no disponible | no disponible | HuggingFace |
-| Transformers pequeños de investigación (p. ej. GPT-2 small) | 124M | 1024 | MIT | HuggingFace |
+| `asher577/scaling2_plain_d768_L2_t250000000_s0` | no disponible (2 capas, d=768) | 512 | no disponible | Hugging Face, 0 descargas |
+| Modelos de la familia SimpleStories | no disponible | no disponible | no disponible | Hugging Face |
+| Transformers pequeños de investigación (p. ej. GPT-2 small) | 124M | 1024 | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparables para establecer una comparativa cuantitativa con alternativas. La comparación con GPT-2 small es meramente estructural (tamaño reducido, uso en investigación) y no implica equivalencia de rendimiento.
 
@@ -86,8 +86,8 @@ No se dispone de datos de rendimiento comparables para establecer una comparativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asher577/scaling2_plain_d768_L2_t250000000_s0
+- Hugging Face: https://huggingface.co/asher577/scaling2_plain_d768_L2_t250000000_s0
 - W&B run: https://wandb.ai/asher577/scd_scaling/runs/pmyaycr5
-- Dataset: `jacobcd52/simplestories-tokenized` (HuggingFace)
-- Tokenizador: `SimpleStories/SimpleStories-1.25M` (HuggingFace)
+- Dataset: `jacobcd52/simplestories-tokenized` (Hugging Face)
+- Tokenizador: `SimpleStories/SimpleStories-1.25M` (Hugging Face)
 - Referencia metodológica: Gao et al. (2025), sin enlace disponible en la model card.

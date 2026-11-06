@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aaronjonestos/matching52` es un repositorio experimental publicado en HuggingFace que contiene una implementación compacta y personalizada de un Vision Transformer (ViT) orientada a tareas de *matching* (emparejamiento entre elementos, presumiblemente visuales o multimodales). Lo desarrolla el usuario aaronjonestos y se distribuye bajo licencia Apache 2.0. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*) y revisión de código.
+`aaronjonestos/matching52` es un repositorio experimental publicado en Hugging Face que contiene una implementación compacta y personalizada de un Vision Transformer (ViT) orientada a tareas de *matching* (emparejamiento entre elementos, presumiblemente visuales o multimodales). Lo desarrolla el usuario aaronjonestos y se distribuye bajo licencia Apache 2.0. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*) y revisión de código.
 
 El modelo declara una configuración de escala "base" con atención de tipo flash, fusión mediante descomposición de Tucker, activación swish y normalización por batch. El checkpoint incluido en `model.safetensors` no ha sido entrenado ni evaluado: el propio autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que el artefacto principal es el script `pipeline.py`, no los pesos.
 
@@ -81,4 +81,4 @@ Los tres modelos de referencia están entrenados y disponibles públicamente, mi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aaronjonestos/matching52
+- Repositorio en Hugging Face: https://huggingface.co/aaronjonestos/matching52

@@ -66,7 +66,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-CharTest0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-CharTest0-GGUF
 - Modelo base (sin GGUF): https://huggingface.co/SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B
 - Variante TestSFT1: https://huggingface.co/SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-TestSFT1
 - Ficha en LLM Explorer: https://llm-explorer.com/model/SvalTek%2FQ2.5-ColdBrew-Antrax-Forge-10B-TestSFT0,5oBTFoLHgVViE28TYFF4I9

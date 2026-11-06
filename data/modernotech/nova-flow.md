@@ -82,6 +82,6 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ModernoTech/Nova-Flow
+- Repositorio Hugging Face: https://huggingface.co/ModernoTech/Nova-Flow
 - Candidato de origen referenciado: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B (no verificado en esta ficha)
 - Paper, blog o demo oficial: no disponible en la información proporcionada.

@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-0.6B-golden-gate-bridge | Vectores de steering sobre Qwen3-0.6B | 0,6B (base) | no disponible | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3-0.6B | Modelo base de generacion de texto | 0,6B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| Qwen3-0.6B-golden-gate-bridge | Vectores de steering sobre Qwen3-0.6B | 0,6B (base) | no disponible | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3-0.6B | Modelo base de generacion de texto | 0,6B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 | Otros conjuntos de steering vectors | Artefactos de activation steering | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros conjuntos de vectores de steering comparables en la informacion proporcionada.
@@ -87,7 +87,7 @@ No se dispone de informacion sobre otros conjuntos de vectores de steering compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LocalLLaMA/Qwen3-0.6B-golden-gate-bridge
+- Modelo en Hugging Face: https://huggingface.co/LocalLLaMA/Qwen3-0.6B-golden-gate-bridge
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio PTS: https://github.com/codelion/pts
 - Space PTS visualizer: https://huggingface.co/spaces/codelion/pts-visualizer?vector=LocalLLaMA/Qwen3-0.6B-golden-gate-bridge

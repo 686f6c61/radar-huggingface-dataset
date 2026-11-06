@@ -92,10 +92,10 @@ Nota: los benchmarks son publicados por el propio autor del modelo; no existen e
 
 | Modelo | Parámetros | Contexto | Benchmark 414 casos (strict) | Licencia | Disponibilidad |
 |---|---|---|---:|---|---|
-| Transliteration 2.0 0.8B v2.1 | 752 M | 1024 | 72,7 % | Apache 2.0 | HuggingFace (MLX 6-bit, GGUF, BF16) |
-| Transliteration 2.0 4B v2.1 | no disponible (misma familia) | 1024 | 88,4 % | Apache 2.0 | HuggingFace (misma familia) |
+| Transliteration 2.0 0.8B v2.1 | 752 M | 1024 | 72,7 % | Apache 2.0 | Hugging Face (MLX 6-bit, GGUF, BF16) |
+| Transliteration 2.0 4B v2.1 | no disponible (misma familia) | 1024 | 88,4 % | Apache 2.0 | Hugging Face (misma familia) |
 | DeepSeek V4.1 Flash | no disponible | no disponible | 70,5 % | no disponible | no disponible |
-| Qwen3.5-0.8B (base) | 752 M aprox. | no disponible | no especializado en transliteración | no disponible | HuggingFace |
+| Qwen3.5-0.8B (base) | 752 M aprox. | no disponible | no especializado en transliteración | no disponible | Hugging Face |
 
 La alternativa directa dentro de la misma familia es la variante 4B, que ofrece mayor precisión (88,4 % frente a 72,7 % en el benchmark estándar y 93,21 % frente a 76,49 % de precisión de caracteres en oraciones largas) a costa de un mayor consumo de recursos. DeepSeek V4.1 Flash se cita en la model card como referencia externa superada por la versión 0.8B en el benchmark estándar, aunque se trata de un modelo de propósito general más grande.
 
@@ -113,7 +113,7 @@ La alternativa directa dentro de la misma familia es la variante 4B, que ofrece 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UnimeType/Transliteration-2.0-0.8B
+- Modelo en Hugging Face: https://huggingface.co/UnimeType/Transliteration-2.0-0.8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - App de teclado UnimeType: https://unimetype.com/download?utm_source=huggingface&utm_medium=referral&utm_campaign=transliteration_2_1
 - Paper, repositorio de código y demo: no disponible

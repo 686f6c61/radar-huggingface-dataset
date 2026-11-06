@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-trocrctc-elastic2-s42 | 87,27 M | no disponible | HTR hebreo | MIT | HuggingFace |
-| TrOCR base (Microsoft) | ~334 M (base) | no disponible | OCR/HTR inglés | MIT | HuggingFace |
-| Modelos HTR de cyttic (otras semillas/aumentos) | no disponible | no disponible | HTR hebreo | MIT (segun familia) | HuggingFace |
+| cyttic/hmt-trocrctc-elastic2-s42 | 87,27 M | no disponible | HTR hebreo | MIT | Hugging Face |
+| TrOCR base (Microsoft) | ~334 M (base) | no disponible | OCR/HTR inglés | MIT | Hugging Face |
+| Modelos HTR de cyttic (otras semillas/aumentos) | no disponible | no disponible | HTR hebreo | MIT (segun familia) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos con alternativas en la información proporcionada. La comparación con TrOCR base se limita a la arquitectura y al orden de magnitud de parámetros, no a métricas.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativos con alternativas en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-trocrctc-elastic2-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-trocrctc-elastic2-s42
 - Dataset de entrenamiento referenciado: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados del estudio: results.json (referenciado en la model card, no enlazado de forma directa en la información disponible)
 - Paper de TrOCR (arquitectura base): no disponible en la información proporcionada

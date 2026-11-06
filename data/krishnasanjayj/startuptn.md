@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `krishnasanjayj/startupTN` en HuggingFace no contiene información técnica publicada sobre ningún modelo de inteligencia artificial. No se especifican arquitectura, parámetros, contexto, licencia, idiomas ni pipeline. El autor, `krishnasanjayj`, no ha subido documentación, pesos, configuraciones ni archivos de modelo aparentes. Las descargas son cero y solo hay un "like", lo que sugiere que se trata de un repositorio vacío o un placeholder sin contenido real.
+El repositorio `krishnasanjayj/startupTN` en Hugging Face no contiene información técnica publicada sobre ningún modelo de inteligencia artificial. No se especifican arquitectura, parámetros, contexto, licencia, idiomas ni pipeline. El autor, `krishnasanjayj`, no ha subido documentación, pesos, configuraciones ni archivos de modelo aparentes. Las descargas son cero y solo hay un "like", lo que sugiere que se trata de un repositorio vacío o un placeholder sin contenido real.
 
-El nombre "startupTN" coincide con la agencia nodal de startups del gobierno de Tamil Nadu (StartupTN), y los resultados de búsqueda web apuntan a esa organización gubernamental, así como a un perfil de LinkedIn de una persona llamada Krishna Sanjay que indica experiencia en StartupTN. Sin embargo, no existe ninguna evidencia de que este repositorio de HuggingFace esté relacionado con un modelo de IA, ni con la agencia gubernamental más allá del nombre. No se ha publicado ningún modelo con estas características en la plataforma.
+El nombre "startupTN" coincide con la agencia nodal de startups del gobierno de Tamil Nadu (StartupTN), y los resultados de búsqueda web apuntan a esa organización gubernamental, así como a un perfil de LinkedIn de una persona llamada Krishna Sanjay que indica experiencia en StartupTN. Sin embargo, no existe ninguna evidencia de que este repositorio de Hugging Face esté relacionado con un modelo de IA, ni con la agencia gubernamental más allá del nombre. No se ha publicado ningún modelo con estas características en la plataforma.
 
 Dado que no hay información técnica disponible, esta ficha se limita a documentar la ausencia de datos y a advertir al lector de que no se puede evaluar ni utilizar este repositorio como un modelo funcional.
 
@@ -56,7 +56,7 @@ No disponible. No existe información sobre el modelo que permita compararlo con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/krishnasanjayj/startupTN
+- Repositorio en Hugging Face: https://huggingface.co/krishnasanjayj/startupTN
 - Sitio web de StartupTN (agencia gubernamental): https://startuptn.in/
 - Fondo de tecnología espacial de Tamil Nadu: https://www.startuptn.ai/
 - Perfil de LinkedIn de Krishna Sanjay (posible autor): https://in.linkedin.com/in/krishna-sanjay

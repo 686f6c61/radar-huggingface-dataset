@@ -2,7 +2,7 @@
 
 ## Resumen
 
-matching-run3 es un repositorio experimental publicado en HuggingFace por el usuario jacksmitheli bajo el identificador `jacksmitheli/matching-run3`. No es un modelo entrenado ni un modelo de lenguaje: es una base de código de investigación que implementa una arquitectura propia denominada Dino orientada a tareas de matching (emparejamiento), con una configuración declarada de escala "giant", atención de ventana deslizante, fusión por concatenación seguida de MLP, activación swish y normalización layernorm. La receta de experimento por defecto usa el optimizador AdamW con un schedule coseno.
+matching-run3 es un repositorio experimental publicado en Hugging Face por el usuario jacksmitheli bajo el identificador `jacksmitheli/matching-run3`. No es un modelo entrenado ni un modelo de lenguaje: es una base de código de investigación que implementa una arquitectura propia denominada Dino orientada a tareas de matching (emparejamiento), con una configuración declarada de escala "giant", atención de ventana deslizante, fusión por concatenación seguida de MLP, activación swish y normalización layernorm. La receta de experimento por defecto usa el optimizador AdamW con un schedule coseno.
 
 El checkpoint distribuido (`model.safetensors`) contiene 49.600 parámetros y el propio autor lo describe explícitamente como una inicialización válida para pruebas de humo (smoke tests), no como un checkpoint entrenado ni auditado. El repositorio incluye además el script `eval.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta por defecto. No se declara ninguna puntuación de benchmark.
 
@@ -25,7 +25,7 @@ Su relevancia actual es acotada y de carácter ingenieril: sirve como esqueleto 
 | Activacion | swish |
 | Normalizacion | layernorm |
 | Optimizador por defecto | AdamW con schedule coseno |
-| Pipeline en HuggingFace | no disponible |
+| Pipeline en Hugging Face | no disponible |
 | Descargas | 9 |
 | Likes | 0 |
 | Tamano del repositorio | 0,0 GB |
@@ -87,7 +87,7 @@ No disponible. El repositorio no se encuadra en una categoría con benchmarks p�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jacksmitheli/matching-run3
+- Repositorio en Hugging Face: https://huggingface.co/jacksmitheli/matching-run3
 - `model.safetensors` (checkpoint de inicializacion): https://huggingface.co/jacksmitheli/matching-run3/blob/main/model.safetensors
 - `config.json` (configuracion de arquitectura): https://huggingface.co/jacksmitheli/matching-run3/blob/main/config.json
 - `training_args.json` (receta de experimento por defecto): https://huggingface.co/jacksmitheli/matching-run3/blob/main/training_args.json

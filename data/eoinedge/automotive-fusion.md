@@ -22,7 +22,7 @@ La relevancia de esta ficha es limitada por la escasez de documentación públic
 | Formato de pesos | `.pte` (ExecuTorch), acompañado de `labels.txt`, `input_shape.txt`, `features.json`, `metrics.json` |
 | Backend de ejecución | ExecuTorch con XNNPACK |
 | Librería declarada | executorch |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Autor | eoinedge |
 | Fecha de creación registrada | 2026-10-09 |
 | Descargas / likes | 0 / 0 |
@@ -88,8 +88,8 @@ No disponible. La información proporcionada no identifica modelos comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eoinedge/automotive-fusion
-- Perfil del autor en HuggingFace: https://huggingface.co/eoinedge
+- Modelo en Hugging Face: https://huggingface.co/eoinedge/automotive-fusion
+- Perfil del autor en Hugging Face: https://huggingface.co/eoinedge
 - Datasets del autor: https://huggingface.co/eoinedge/datasets
 - Dataset `eoinedge/spark-plug-classification`: https://huggingface.co/datasets/eoinedge/spark-plug-classification
 - Dataset relacionado con diagnóstico de motor en Kaggle: https://www.kaggle.com/datasets/eoinedge/ai-mechanic-engine-condition-audio-fault-finding

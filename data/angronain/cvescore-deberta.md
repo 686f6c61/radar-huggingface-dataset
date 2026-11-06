@@ -79,7 +79,7 @@ No se dispone en la informacion proporcionada de modelos comparables publicados 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| angronain/cvescore-deberta | ~86 M | no disponible | Exact match 0,401; MAE 1,036 | MIT | HuggingFace |
+| angronain/cvescore-deberta | ~86 M | no disponible | Exact match 0,401; MAE 1,036 | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se dispone en la informacion proporcionada de modelos comparables publicados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/angronain/cvescore-deberta
+- Modelo en Hugging Face: https://huggingface.co/angronain/cvescore-deberta
 - Repositorio GitHub (codigo, pipeline de entrenamiento y clase `CVSSModel`): https://github.com/atomic-crafter/CVEscore
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-base
 - Dataset NVD (referenciado en la model card): https://nvd.nist.gov/

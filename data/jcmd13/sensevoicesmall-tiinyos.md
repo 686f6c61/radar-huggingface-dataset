@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| SenseVoiceSmall-TiinyOS | ~234 M | No disponible | model-license (other) | safetensors (MLX) | HuggingFace, 27 descargas |
-| FunAudioLLM/SenseVoiceSmall (original) | ~234 M | No disponible | model-license (other) | safetensors (PyTorch) | HuggingFace, modelo base |
+| SenseVoiceSmall-TiinyOS | ~234 M | No disponible | model-license (other) | safetensors (MLX) | Hugging Face, 27 descargas |
+| FunAudioLLM/SenseVoiceSmall (original) | ~234 M | No disponible | model-license (other) | safetensors (PyTorch) | Hugging Face, modelo base |
 | Whisper small (OpenAI) | ~244 M | 30 s de audio por ventana | MIT | safetensors, GGUF, etc. | Amplia, multiples frameworks |
 | Whisper base (OpenAI) | ~74 M | 30 s de audio por ventana | MIT | safetensors, GGUF, etc. | Amplia, multiples frameworks |
 
@@ -82,7 +82,7 @@ La comparativa con Whisper es la mas directa por tamano y tarea. SenseVoiceSmall
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jcmd13/SenseVoiceSmall-TiinyOS
+- Modelo en Hugging Face: https://huggingface.co/jcmd13/SenseVoiceSmall-TiinyOS
 - Modelo base original: https://huggingface.co/FunAudioLLM/SenseVoiceSmall
 - Licencia del modelo: https://github.com/modelscope/FunASR/blob/main/MODEL_LICENSE
 - Repositorio FunASR (ModelScope): https://github.com/modelscope/FunASR

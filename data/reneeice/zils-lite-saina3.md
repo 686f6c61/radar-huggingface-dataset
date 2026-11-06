@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Saina Helm 3 es un modelo multimodal de 0,8 mil millones de parámetros desarrollado por reneeice (publicado bajo el identificador `reneice/zils-lite-saina3` en HuggingFace) y afinado a partir de Qwen/Qwen3.5-0.8B. A diferencia de un modelo generativo convencional, no produce texto libre: recibe un estado (texto o JSON), imágenes y clips de audio cortos en una sola pasada y devuelve probabilidades calibradas para preguntas tipadas (sí/no, elección única, elección múltiple y valoración). El problema que resuelve es el de la toma de decisiones automatizada con confianza explícita, en lugar de la generación de respuestas que requieren post-procesado.
+Saina Helm 3 es un modelo multimodal de 0,8 mil millones de parámetros desarrollado por reneeice (publicado bajo el identificador `reneice/zils-lite-saina3` en Hugging Face) y afinado a partir de Qwen/Qwen3.5-0.8B. A diferencia de un modelo generativo convencional, no produce texto libre: recibe un estado (texto o JSON), imágenes y clips de audio cortos en una sola pasada y devuelve probabilidades calibradas para preguntas tipadas (sí/no, elección única, elección múltiple y valoración). El problema que resuelve es el de la toma de decisiones automatizada con confianza explícita, en lugar de la generación de respuestas que requieren post-procesado.
 
 La propuesta técnica es relevante porque combina tres modalidades de entrada (texto, imagen y audio de hasta 10 segundos) en un modelo de menos de 1 GB de pesos, lo que permite ejecutarlo en una sola GPU consumer, en Apple Silicon o incluso en CPU. Incluye un modo `decision` con umbral configurable que devuelve abstención cuando la confianza es baja, un mecanismo útil para pipelines donde un error tiene coste recuperable pero conviene escalar a revisión humana.
 
@@ -17,7 +17,7 @@ El modelo se distribuye con licencia Apache 2.0, lo que facilita su uso comercia
 | Parámetros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible (la model card indica "hasta la ventana de contexto" sin cifra) |
 | Tipos de cuantización | No disponible de forma explícita; existen artefactos GGUF y MLX que implican cuantizaciones estándar de llama.cpp/MLX |
-| Idiomas soportados | No disponible (la ficha de HuggingFace no lista idiomas) |
+| Idiomas soportados | No disponible (la ficha de Hugging Face no lista idiomas) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | Safetensors (repo principal); GGUF y MLX en repos derivados |
 
@@ -95,7 +95,7 @@ No se dispone de información sobre otros modelos comparables de clasificación 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/reneeice/zils-lite-saina3
+- Hugging Face: https://huggingface.co/reneeice/zils-lite-saina3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Paquete `saina` en PyPI: https://pypi.org/project/saina/
 - Repositorio GitHub de Saina: https://github.com/run-saina/saina

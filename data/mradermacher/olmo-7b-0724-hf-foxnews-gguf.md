@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| olmo-7b-0724-hf-foxnews-GGUF (este) | 6,9B | no disponible | GGUF | no disponible | HuggingFace, 135 descargas |
-| OLMo-7B-0724 (base de Ai2) | 6,9B | no disponible | safetensors | no disponible en la informacion proporcionada | HuggingFace |
-| Otros ajustes finos de 7B en GGUF (Mistral-7B, Llama-3-8B) | 7-8B | no disponible | GGUF | no disponible en la informacion proporcionada | HuggingFace |
+| olmo-7b-0724-hf-foxnews-GGUF (este) | 6,9B | no disponible | GGUF | no disponible | Hugging Face, 135 descargas |
+| OLMo-7B-0724 (base de Ai2) | 6,9B | no disponible | safetensors | no disponible en la informacion proporcionada | Hugging Face |
+| Otros ajustes finos de 7B en GGUF (Mistral-7B, Llama-3-8B) | 7-8B | no disponible | GGUF | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada, por lo que la comparativa se limita a tamano, formato y disponibilidad.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 - Adopcion muy baja (135 descargas, 0 likes) y sin pipeline declarado; no hay senales de mantenimiento ni de comunidad activa.
 - No hay datos sobre longitud de contexto, por lo que planificar aplicaciones con contexto largo es arriesgado.
 - La cuantizacion Q2_K y Q3_K_S puede degradar notablemente la calidad; se recomienda Q4_K_M o superior para uso real.
-- Los resultados de busqueda web no aportaron informacion tecnica relevante sobre el modelo; los datos verificables se limitan a la model card de HuggingFace.
+- Los resultados de busqueda web no aportaron informacion tecnica relevante sobre el modelo; los datos verificables se limitan a la model card de Hugging Face.
 
 ## Enlaces
 

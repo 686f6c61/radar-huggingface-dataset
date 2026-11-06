@@ -72,9 +72,9 @@ No disponible. El modelo es una adaptación específica para hardware móvil de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Feelx8989/termux_os-asset-qwen3asr-htp
+- Repositorio Hugging Face: https://huggingface.co/Feelx8989/termux_os-asset-qwen3asr-htp
 - Framework Termux-OS: https://github.com/johnson-yo/termux-os-framework
 - Qwen3-ASR (modelo base): https://github.com/QwenLM/Qwen3-ASR
 - Qwen3-ASR-Toolkit: https://github.com/QwenLM/Qwen3-ASR-Toolkit
 - GGUF original del decoder Q8: https://huggingface.co/ggml-org/Qwen3-ASR-0.6B-GGUF
-- Página del modelo en HuggingFace (base): https://huggingface.co/Qwen/Qwen3-ASR-0.6B
+- Página del modelo en Hugging Face (base): https://huggingface.co/Qwen/Qwen3-ASR-0.6B

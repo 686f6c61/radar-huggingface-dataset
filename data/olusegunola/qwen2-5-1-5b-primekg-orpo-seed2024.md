@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`olusegunola/qwen2.5-1.5b-primekg-orpo-seed2024` es un modelo publicado en HuggingFace por el usuario `olusegunola`, cuyo identificador sugiere un ajuste fino del modelo base Qwen2.5 de 1.500 millones de parámetros mediante ORPO (Odds Ratio Preference Optimization) sobre el grafo de conocimiento biomédico PrimeKG, con semilla 2024. No obstante, el autor no ha aportado ninguna documentación propia: la model card es la plantilla automática de HuggingFace sin ningún campo completado, y el repositorio ocupa 0,0 GB, lo que indica que no contiene pesos descargables o que la subida quedó incompleta.
+`olusegunola/qwen2.5-1.5b-primekg-orpo-seed2024` es un modelo publicado en Hugging Face por el usuario `olusegunola`, cuyo identificador sugiere un ajuste fino del modelo base Qwen2.5 de 1.500 millones de parámetros mediante ORPO (Odds Ratio Preference Optimization) sobre el grafo de conocimiento biomédico PrimeKG, con semilla 2024. No obstante, el autor no ha aportado ninguna documentación propia: la model card es la plantilla automática de Hugging Face sin ningún campo completado, y el repositorio ocupa 0,0 GB, lo que indica que no contiene pesos descargables o que la subida quedó incompleta.
 
 El interés potencial del modelo residiría en la adaptación de un transformer pequeño y eficiente al dominio biomédico mediante alineación por preferencias (ORPO), un área con pocos modelos abiertos de menos de 2.000 millones de parámetros especializados en farmacología y biomedicina. Sin embargo, en el momento de redactar esta ficha no existe evidencia verificable de que el entrenamiento se haya completado, de qué datos exactos se usaron ni de qué rendimiento obtiene.
 
@@ -23,9 +23,9 @@ Por tanto, esta ficha debe leerse como un registro de un artefacto sin validar. 
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura, el procedimiento de entrenamiento, el volumen de tokens, la composición del dataset ni los hiperparámetros. La model card es la plantilla genérica autogenerada por HuggingFace, con todos los campos marcados como `[More Information Needed]`.
+No hay información publicada sobre la arquitectura, el procedimiento de entrenamiento, el volumen de tokens, la composición del dataset ni los hiperparámetros. La model card es la plantilla genérica autogenerada por Hugging Face, con todos los campos marcados como `[More Information Needed]`.
 
-Lo único que puede deducirse del identificador del repositorio es lo siguiente, siempre como inferencia no confirmada: (1) el punto de partida sería Qwen2.5 en su variante de 1.500 millones de parámetros, un transformer decoder-only con normalización RMSNorm, atención con sesgo de posición rotatorio (RoPE) y tokenizador BPE multilingüe; (2) el ajuste se habría realizado con ORPO, un método de alineación que combina en una sola fase el aprendizaje supervisado y la optimización por preferencias mediante una razón de probabilidades, eliminando la necesidad de una etapa separada de SFT seguida de RLHF o DPO; y (3) los datos de preferencia o de instrucciones provendrían presumiblemente de PrimeKG, un grafo de conocimiento biomédico que integra decenas de miles de relaciones entre enfermedades, fármacos, genes, proteínas y fenotipos. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al artículo de Lacoste et al. sobre estimación de impacto ambiental, que la plantilla de HuggingFace cita por defecto, y no a un paper del modelo.
+Lo único que puede deducirse del identificador del repositorio es lo siguiente, siempre como inferencia no confirmada: (1) el punto de partida sería Qwen2.5 en su variante de 1.500 millones de parámetros, un transformer decoder-only con normalización RMSNorm, atención con sesgo de posición rotatorio (RoPE) y tokenizador BPE multilingüe; (2) el ajuste se habría realizado con ORPO, un método de alineación que combina en una sola fase el aprendizaje supervisado y la optimización por preferencias mediante una razón de probabilidades, eliminando la necesidad de una etapa separada de SFT seguida de RLHF o DPO; y (3) los datos de preferencia o de instrucciones provendrían presumiblemente de PrimeKG, un grafo de conocimiento biomédico que integra decenas de miles de relaciones entre enfermedades, fármacos, genes, proteínas y fenotipos. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al artículo de Lacoste et al. sobre estimación de impacto ambiental, que la plantilla de Hugging Face cita por defecto, y no a un paper del modelo.
 
 No se ha publicado ninguna innovación técnica adicional: ni decodificación especulativa, ni variantes de atención lineal, ni destilación, ni mezcla de expertos.
 
@@ -67,7 +67,7 @@ Estimaciones calculadas a partir del tamaño de parámetros sugerido por el iden
 - VRAM para inferencia en INT4 (por ejemplo Q4_K_M en GGUF): aproximadamente 1,0-1,5 GB.
 - GPU de servidor: cualquier A100, H100, L40S o A10G lo ejecutaría con holgura; sería un uso muy ineficiente de ese hardware salvo en despliegues de altísima concurrencia.
 - GPU de consumo: cabe sin problemas en RTX 3060 de 12 GB, RTX 4060 Ti, RTX 4070, RTX 4080, RTX 4090, e incluso en GPUs con 4-6 GB de VRAM si se cuantiza a 4 bits. También es viable en CPU para uso no interactivo.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM, HuggingFace TGI y Transformers con `AutoModelForCausalLM`. Todas ellas requieren que existan pesos publicados, cosa que actualmente no se cumple.
+- Opciones de despliegue: llama.cpp, Ollama, vLLM, Hugging Face TGI y Transformers con `AutoModelForCausalLM`. Todas ellas requieren que existan pesos publicados, cosa que actualmente no se cumple.
 - Latencia y throughput: no disponible. No se han publicado cifras y no se pueden medir sin pesos.
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ El modelo objeto de esta ficha no puede compararse en rendimiento porque no hay 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-orpo-seed2024
+- Modelo en Hugging Face: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-orpo-seed2024
 - Articulo citado en los tags (Lacoste et al., estimacion de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico referenciada en la plantilla: https://mlco2.github.io/impact
 - Repositorio de PrimeKG (grafo de conocimiento biomedico mencionado en el identificador del modelo, referencia externa no citada por el autor): https://zitniklab.hms.harvard.edu/projects/PrimeKG/

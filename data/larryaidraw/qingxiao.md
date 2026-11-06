@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `qingxiao` es un repositorio publicado en HuggingFace por el usuario LarryAIDraw, con licencia CreativeML Open RAIL-M. Según los resultados de búsqueda web, el nombre "qingxiao" está asociado a un personaje del videojuego *Wuthering Waves*, y existen varios modelos de arte AI (LoRA) en plataformas como PixAI que generan imágenes de este personaje. Sin embargo, la model card del repositorio no incluye ninguna descripción técnica, arquitectura, ni detalles de entrenamiento. El tamaño del repositorio es de 0,1 GB, lo que sugiere que podría tratarse de un LoRA o un adaptador de bajo rango para un modelo de difusión, pero no hay confirmación oficial en la información proporcionada.
+El modelo `qingxiao` es un repositorio publicado en Hugging Face por el usuario LarryAIDraw, con licencia CreativeML Open RAIL-M. Según los resultados de búsqueda web, el nombre "qingxiao" está asociado a un personaje del videojuego *Wuthering Waves*, y existen varios modelos de arte AI (LoRA) en plataformas como PixAI que generan imágenes de este personaje. Sin embargo, la model card del repositorio no incluye ninguna descripción técnica, arquitectura, ni detalles de entrenamiento. El tamaño del repositorio es de 0,1 GB, lo que sugiere que podría tratarse de un LoRA o un adaptador de bajo rango para un modelo de difusión, pero no hay confirmación oficial en la información proporcionada.
 
 Dado que la información disponible es extremadamente limitada, esta ficha se basa únicamente en los datos públicos del repositorio y en las referencias externas encontradas. No se dispone de especificaciones técnicas verificadas, por lo que la mayoría de los campos se marcan como "no disponible".
 
@@ -65,7 +65,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LarryAIDraw/qingxiao
+- Repositorio en Hugging Face: https://huggingface.co/LarryAIDraw/qingxiao
 - Referencia en PixAI (modelo de arte): https://pixai.art/en/model/2047556175730230994
 - Referencia en PixAI (Qingxiao | Wuthering Waves): https://pixai.art/en/model/2042692421477616154
 - Referencia en PixAI (Qingxiao - Wuthering Waves - Illustrious): https://pixai.art/en/model/2042690773238815558

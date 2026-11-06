@@ -82,7 +82,7 @@ No se dispone de datos numericos comparativos publicados en la informacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/h3lloworld/ebc-jepa-rope-xattn16-cont-ed24-denoiser
+- Modelo en Hugging Face: https://huggingface.co/h3lloworld/ebc-jepa-rope-xattn16-cont-ed24-denoiser
 - Codigo del proyecto (rama `denoise-lora`): https://github.com/whohyf/EBC-JEPA-share/tree/denoise-lora
 - Checkpoint base V-JEPA 2.1 ViT-B: https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitb_dist_vitG_384.pt
 - No se han encontrado enlaces adicionales relevantes en la busqueda web.

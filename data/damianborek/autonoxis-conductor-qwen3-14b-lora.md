@@ -79,8 +79,8 @@ El propio autor matiza que esta tabla solo establece paridad en el arnes de clas
 
 | Modelo | Parametros | Contexto | Rendimiento en arnes v7 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Autonoxis Conductor Qwen3-14B LoRA | 14.000 M (base) + adaptador rango 16 | No disponible en la model card | 48/48 global, 0 inseguras | Apache-2.0 | HuggingFace, repo de 0,1 GB |
-| Qwen3-14B sin adaptador | 14.000 M | 32.768 tokens nativos (base) | No evaluado en el arnes v7 | Apache-2.0 | HuggingFace |
+| Autonoxis Conductor Qwen3-14B LoRA | 14.000 M (base) + adaptador rango 16 | No disponible en la model card | 48/48 global, 0 inseguras | Apache-2.0 | Hugging Face, repo de 0,1 GB |
+| Qwen3-14B sin adaptador | 14.000 M | 32.768 tokens nativos (base) | No evaluado en el arnes v7 | Apache-2.0 | Hugging Face |
 | Claude CLI Fable 5.1 | No disponible | No disponible | 48/48 global, 0 inseguras | No disponible | No disponible |
 
 La unica comparacion con datos es la que aporta el autor en su arnes. Frente a Qwen3-14B sin ajustar, la diferencia esperable es de formato y adherencia al contrato, no de conocimiento: el adaptador restringe la salida a etiquetas validas y respeta el prefijo `DECISION:` o `ACTION:`. El autor no reporta resultados de Qwen3-14B base en el mismo arnes, por lo que la mejora atribuible al LoRA no esta cuantificada en la informacion disponible. No se dispone de comparativas con otros clasificadores de orquestacion de la misma categoria.
@@ -102,7 +102,7 @@ La unica comparacion con datos es la que aporta el autor en su arnes. Frente a Q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/damianborek/autonoxis-conductor-qwen3-14b-lora
+- Modelo en Hugging Face: https://huggingface.co/damianborek/autonoxis-conductor-qwen3-14b-lora
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - La busqueda web no ha devuelto enlaces relevantes al modelo: los resultados obtenidos corresponden a paginas de LinkedIn sin relacion con el artefacto, por lo que no se incluyen.

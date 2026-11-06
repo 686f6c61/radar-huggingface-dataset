@@ -4,7 +4,7 @@
 
 `danielkelly96/image-captioning-study` no es un modelo entrenado en sentido estricto, sino un repositorio de notas de investigacion sobre generacion de descripciones de imagenes (image captioning), publicado por el usuario danielkelly96 bajo licencia CC-BY-4.0. La propia model card lo describe como un conjunto estructurado de notas con referencias de evaluacion y preguntas abiertas, y aclara explicitamente que no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni un checkpoint entrenado. Los unicos ficheros declarados son `analysis.md` (artefacto principal) y `README.md`.
 
-El repositorio aparece etiquetado con `safetensors` y `transformer`, y el recuento real de parametros en safetensors asciende a 49.600. Esta cifra resulta, sin embargo, incoherente con el resto de la metadata: el tamano del repositorio es de 0,0 GB y la model card no menciona ningun artefacto de pesos. Conviene tratar ese dato con cautela, ya que lo mas probable es que corresponda a un residuo de la indexacion automatica de HuggingFace y no a un modelo funcional.
+El repositorio aparece etiquetado con `safetensors` y `transformer`, y el recuento real de parametros en safetensors asciende a 49.600. Esta cifra resulta, sin embargo, incoherente con el resto de la metadata: el tamano del repositorio es de 0,0 GB y la model card no menciona ningun artefacto de pesos. Conviene tratar ese dato con cautela, ya que lo mas probable es que corresponda a un residuo de la indexacion automatica de Hugging Face y no a un modelo funcional.
 
 La relevancia de esta ficha es, por tanto, limitada: sirve como documentacion de un espacio de trabajo de investigacion sobre MS COCO Captions, NoCaps y TextCaps, y no como un artefacto desplegable. No hay pipeline declarado, no hay idiomas soportados declarados y no hay resultados experimentales publicados.
 
@@ -76,6 +76,6 @@ No disponible. El repositorio no es un modelo de captioning y no compite con arq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/danielkelly96/image-captioning-study
+- Hugging Face: https://huggingface.co/danielkelly96/image-captioning-study
 
 No se han encontrado enlaces adicionales relevantes en la busqueda web: los resultados devueltos corresponden a hilos de foro sobre devoluciones de Amazon y no guardan relacion con el repositorio, con image captioning ni con el autor.

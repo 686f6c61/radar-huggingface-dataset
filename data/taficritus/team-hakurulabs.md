@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Taficritus/team-hakurulabs es un repositorio publicado en HuggingFace cuyo contenido tecnico no esta documentado en la informacion disponible. La model card se limita a declarar la licencia MIT, sin descripcion del modelo, arquitectura, datos de entrenamiento ni proposito. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y no tiene pipeline de inferencia asociado.
+Taficritus/team-hakurulabs es un repositorio publicado en Hugging Face cuyo contenido tecnico no esta documentado en la informacion disponible. La model card se limita a declarar la licencia MIT, sin descripcion del modelo, arquitectura, datos de entrenamiento ni proposito. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y no tiene pipeline de inferencia asociado.
 
 El identificador del repositorio sugiere un proyecto de equipo ("team-hakurulabs") alojado por el usuario Taficritus, pero no hay evidencia de que contenga pesos de un modelo entrenado, un adaptador, un dataset o artefactos auxiliares. No se dispone de informacion sobre parametros, longitud de contexto, tokenizador ni idiomas soportados.
 
@@ -69,10 +69,10 @@ No disponible: no es posible identificar modelos comparables al desconocerse la 
 - Limitaciones de contexto o idioma: no disponibles.
 - Licencia MIT: permite uso comercial y modificacion, pero esta declarada sin detallar a que artefactos aplica; conviene verificar los ficheros del repositorio antes de reutilizarlos.
 - Cero descargas y cero likes: no hay evidencia de uso ni de validacion por parte de la comunidad.
-- Sin pipeline declarado: no es posible cargar el repositorio directamente con las APIs de HuggingFace (`pipeline`, `AutoModel`) sin inspeccionar previamente su contenido.
+- Sin pipeline declarado: no es posible cargar el repositorio directamente con las APIs de Hugging Face (`pipeline`, `AutoModel`) sin inspeccionar previamente su contenido.
 - Fecha de creacion futura (2026-10-26): el metadato de fecha es posterior a la fecha habitual de consulta, lo que sugiere un posible error de metadatos o un repositorio de prueba; conviene tratarlo con cautela.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Taficritus/team-hakurulabs
+- Repositorio en Hugging Face: https://huggingface.co/Taficritus/team-hakurulabs
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

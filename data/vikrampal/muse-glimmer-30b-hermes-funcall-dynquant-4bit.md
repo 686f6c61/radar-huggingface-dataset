@@ -89,8 +89,8 @@ La comparativa es limitada porque no hay datos de benchmarks estandar (MMLU, Hum
 
 ## Enlaces
 
-- HuggingFace del checkpoint: https://huggingface.co/VikramPal/Muse-Glimmer-30B-hermes-funcall-DynQuant-4bit
-- Modelo base en HuggingFace: https://huggingface.co/meta-models/Muse-Glimmer-30B
+- Hugging Face del checkpoint: https://huggingface.co/VikramPal/Muse-Glimmer-30B-hermes-funcall-DynQuant-4bit
+- Modelo base en Hugging Face: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Pagina oficial de Meta: https://developer.meta.com/ai/models/muse-glimmer/
 - Blog de investigacion de Meta: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model
 - Recetas vLLM: https://recipes.vllm.ai/meta-models/Muse-Glimmer-30B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JPrice04/Qwen3-VL-4B-Instruct es un repositorio alojado en HuggingFace por el usuario JPrice04. Por su denominación, el nombre hace referencia a un supuesto modelo multimodal de la familia Qwen3-VL con aproximadamente 4.000 millones de parámetros y variante Instruct, orientado a tareas de visión y lenguaje. Sin embargo, el repositorio no contiene model card sustantiva, pipeline declarado, idiomas especificados ni pesos publicados: el tamaño del repositorio es de 0,0 GB y no registra descargas ni interacciones.
+JPrice04/Qwen3-VL-4B-Instruct es un repositorio alojado en Hugging Face por el usuario JPrice04. Por su denominación, el nombre hace referencia a un supuesto modelo multimodal de la familia Qwen3-VL con aproximadamente 4.000 millones de parámetros y variante Instruct, orientado a tareas de visión y lenguaje. Sin embargo, el repositorio no contiene model card sustantiva, pipeline declarado, idiomas especificados ni pesos publicados: el tamaño del repositorio es de 0,0 GB y no registra descargas ni interacciones.
 
 La relevancia práctica de esta ficha es, por tanto, limitada y fundamentalmente descriptiva. No se dispone de información verificable sobre arquitectura, datos de entrenamiento, tokenizador, ventana de contexto ni resultados de evaluación. Cualquier uso en producción requeriría contactar con el autor o localizar la fuente original del modelo (presumiblemente la organización Qwen) para obtener los artefactos reales.
 
@@ -42,7 +42,7 @@ No hay datos sobre innovaciones técnicas (atención lineal, decodificación esp
 - Verificación de licencias: útil para comprobar que la licencia declarada ("cc") no especifica variante, lo que obliga a consultar la fuente original antes de cualquier uso comercial.
 - Auditoría de repositorios espejo: sirve como caso de estudio de repositorios que replican nombres de modelos populares sin publicar artefactos, relevante para pipelines de verificación de procedencia.
 - Docencia sobre model cards: ejemplo de ficha mínima (solo licencia) para ilustrar qué información falta en una publicación de modelo.
-- Monitorización de ecosistema: seguimiento de repositorios creados con fechas futuras (2026-10-27) para detectar anomalías en la indexación de HuggingFace.
+- Monitorización de ecosistema: seguimiento de repositorios creados con fechas futuras (2026-10-27) para detectar anomalías en la indexación de Hugging Face.
 - Integración condicionada: si el autor publicase pesos en el futuro, podría evaluarse para tareas de visión y lenguaje en entornos con GPU de gama media, pero esto es especulativo y no verificable con los datos actuales.
 
 ## Benchmarks y rendimiento
@@ -81,6 +81,6 @@ La comparativa es meramente orientativa: los datos de los modelos de referencia 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JPrice04/Qwen3-VL-4B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/JPrice04/Qwen3-VL-4B-Instruct
 - Organización oficial Qwen (referencia para localizar el modelo original): https://huggingface.co/Qwen
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

@@ -90,8 +90,8 @@ La comparativa más directa es con las variantes MLX del mismo modelo original y
 
 ## Enlaces
 
-- Repositorio HuggingFace de la variante Q8: https://huggingface.co/iky1e/punctuation-fullstop-truecase-english-mlx-q8
+- Repositorio Hugging Face de la variante Q8: https://huggingface.co/iky1e/punctuation-fullstop-truecase-english-mlx-q8
 - Modelo original ONNX: https://huggingface.co/1-800-BAD-CODE/punctuation_fullstop_truecase_english
 - Proyecto Granite-MLX (conversión y herramientas): https://github.com/kylehowells/Granite-MLX
 - Repositorio de la herramienta `punctuators` (del autor del modelo original): https://github.com/1-800-BAD-CODE/punctuators
-- Variantes MLX adicionales (FP16, Q6, Q5, Q4) disponibles en el perfil de iky1e en HuggingFace: https://huggingface.co/iky1e
+- Variantes MLX adicionales (FP16, Q6, Q5, Q4) disponibles en el perfil de iky1e en Hugging Face: https://huggingface.co/iky1e

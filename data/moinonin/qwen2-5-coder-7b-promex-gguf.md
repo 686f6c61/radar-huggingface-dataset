@@ -78,8 +78,8 @@ No se dispone de comparativas de rendimiento con estos modelos en tareas de gene
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/moinonin/qwen2.5-coder-7b-promex-gguf
-- Repositorio HuggingFace del adaptador LoRA: https://huggingface.co/moinonin/qwen2.5-coder-7b-promex-lora
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/moinonin/qwen2.5-coder-7b-promex-gguf
+- Repositorio Hugging Face del adaptador LoRA: https://huggingface.co/moinonin/qwen2.5-coder-7b-promex-lora
 - Modelo base Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Coleccion Qwen2.5-Coder: https://huggingface.co/collections/Qwen/qwen25-coder
 - GitHub de Qwen2.5-Coder: https://github.com/huggingface/Qwen2.5-Coder

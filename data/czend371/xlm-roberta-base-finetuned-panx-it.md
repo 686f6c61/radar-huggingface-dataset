@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `CZend371/xlm-roberta-base-finetuned-panx-it` es un ajuste fino (fine-tuning) de `FacebookAI/xlm-roberta-base` sobre una tarea de clasificacion de tokens (token classification), publicada por el usuario CZend371 en HuggingFace. Con 277.459.208 parametros en formato safetensors, se trata de un encoder transformer multilingue de tipo XLM-R base adaptado a un etiquetado secuencial, presumiblemente reconocimiento de entidades nombradas (NER) en italiano, a juzgar por el sufijo `panx-it` del identificador.
+El modelo `CZend371/xlm-roberta-base-finetuned-panx-it` es un ajuste fino (fine-tuning) de `FacebookAI/xlm-roberta-base` sobre una tarea de clasificacion de tokens (token classification), publicada por el usuario CZend371 en Hugging Face. Con 277.459.208 parametros en formato safetensors, se trata de un encoder transformer multilingue de tipo XLM-R base adaptado a un etiquetado secuencial, presumiblemente reconocimiento de entidades nombradas (NER) en italiano, a juzgar por el sufijo `panx-it` del identificador.
 
 Su relevancia practica es limitada: se trata de un checkpoint de investigacion o de prueba, sin resultados de evaluacion publicados, sin descripcion de dataset y con cero descargas registradas en el momento de la consulta. La model card fue generada automaticamente por la libreria `Trainer` de Transformers e incluye el aviso explicito de que debe revisarse y completarse.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. No se requiere A100 ni H100. Una GTX 1650, RTX 3050, T4 o superior es mas que suficiente.
 - Cabe holgadamente en GPU de consumo: si, en practicamente cualquier GPU consumer moderna e incluso en iGPU con memoria compartida suficiente.
 - CPU: viable para lotes pequenos, ya que solo se ejecuta un forward pass de un encoder de 12 capas; el cuello de botella sera el throughput, no la memoria.
-- Opciones de despliegue: `transformers` con `pipeline("token-classification")`, ONNX Runtime, TorchServe, FastAPI con batching propio, HuggingFace Inference Endpoints (el tag `endpoints_compatible` esta presente). TGI y vLLM estan orientados a modelos generativos o a clasificacion limitada, por lo que no son la via recomendada para un token-classifier.
+- Opciones de despliegue: `transformers` con `pipeline("token-classification")`, ONNX Runtime, TorchServe, FastAPI con batching propio, Hugging Face Inference Endpoints (el tag `endpoints_compatible` esta presente). TGI y vLLM estan orientados a modelos generativos o a clasificacion limitada, por lo que no son la via recomendada para un token-classifier.
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ La comparativa cuantitativa de rendimiento no esta disponible para este checkpoi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CZend371/xlm-roberta-base-finetuned-panx-it
+- Modelo en Hugging Face: https://huggingface.co/CZend371/xlm-roberta-base-finetuned-panx-it
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Repositorio de XLM-RoBERTa (paper original): https://arxiv.org/abs/1911.02116
 - Las busquedas web realizadas no devolvieron resultados tecnicos relevantes sobre este modelo ni sobre el corpus PanX; los unicos resultados obtenidos fueron contenido no relacionado y de caracter adulto, por lo que no se incluyen.

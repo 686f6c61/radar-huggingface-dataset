@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-soup-k1m7b-80` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Por el identificador y por la etiqueta `sn38-nanochrono` que aparece en los metadatos, se trata de un modelo resultado de un proceso de "soup" (merge o interpolación de pesos) sobre la familia `nanochrono`, probablemente un modelo de pequeño tamaño orientado a experimentación. El nombre interno (`r18-a2-soup-k1m7b-80`) sugiere una ronda 18, una variante A2 y un soup con un factor k1 de mezcla sobre la base m7b, aunque no hay documentación oficial que confirme esta interpretación.
+El modelo `alfred8995/r18-a2-soup-k1m7b-80` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Por el identificador y por la etiqueta `sn38-nanochrono` que aparece en los metadatos, se trata de un modelo resultado de un proceso de "soup" (merge o interpolación de pesos) sobre la familia `nanochrono`, probablemente un modelo de pequeño tamaño orientado a experimentación. El nombre interno (`r18-a2-soup-k1m7b-80`) sugiere una ronda 18, una variante A2 y un soup con un factor k1 de mezcla sobre la base m7b, aunque no hay documentación oficial que confirme esta interpretación.
 
-El peso real del checkpoint, según los ficheros safetensors, es de 2.018.511.234 parámetros (aproximadamente 2.000 millones), lo que lo sitúa en la categoría de modelos pequeños, aptos para inferencia en GPU de consumo. El repositorio ocupa 16,1 GB, un tamaño coherente con pesos en precisión de 16 bits (bf16/fp16) sin cuantizar: 2.018 millones de parámetros × 2 bytes ≈ 4 GB, por lo que el resto del espacio corresponde probablemente a múltiples ficheros de safetensors (checkpoint completo, posiblemente con estados de optimizador o varias copias). El acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+El peso real del checkpoint, según los ficheros safetensors, es de 2.018.511.234 parámetros (aproximadamente 2.000 millones), lo que lo sitúa en la categoría de modelos pequeños, aptos para inferencia en GPU de consumo. El repositorio ocupa 16,1 GB, un tamaño coherente con pesos en precisión de 16 bits (bf16/fp16) sin cuantizar: 2.018 millones de parámetros × 2 bytes ≈ 4 GB, por lo que el resto del espacio corresponde probablemente a múltiples ficheros de safetensors (checkpoint completo, posiblemente con estados de optimizador o varias copias). El acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 La relevancia de esta ficha es limitada pero real: se trata de un modelo sin documentación pública, sin benchmarks publicados y con cero "likes" y dos descargas en el momento de la consulta. Resulta útil para quien quiera evaluar merges de la familia nanochrono, pero no debe considerarse un modelo listo para producción sin una validación previa por parte del usuario. No hay información disponible sobre arquitectura interna, datos de entrenamiento ni idiomas soportados más allá de lo que se deduce de los metadatos.
 
@@ -68,13 +68,13 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelos de ~2 B de la familia nanochrono | no disponible | no disponible | no disponible | no disponible | No se ha identificado documentación pública de la familia base |
 | Alternativas genéricas de ~2 B (p. ej. Qwen2.5-1.5B, Gemma-2-2B, SmolLM2-1.7B) | 1,5-2,6 B | 4k-32k | Apache 2.0 / Gemma license | Públicas en HF | Con benchmarks publicados y amplio soporte de herramientas |
 
-La comparación con alternativas consolidadas es desfavorable en términos de información disponible: los modelos de ~2 B de Qwen, Google o HuggingFace cuentan con documentación, benchmarks y soporte de cuantización, mientras que este checkpoint carece de todo ello. No se dispone de datos para comparar rendimiento.
+La comparación con alternativas consolidadas es desfavorable en términos de información disponible: los modelos de ~2 B de Qwen, Google o Hugging Face cuentan con documentación, benchmarks y soporte de cuantización, mientras que este checkpoint carece de todo ello. No se dispone de datos para comparar rendimiento.
 
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación: no hay model card sustantiva, ni arquitectura, ni datos de entrenamiento, ni idiomas declarados.
 - Sin benchmarks publicados: no es posible estimar su calidad relativa frente a otros modelos de ~2 B.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción para uso en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción para uso en pipelines automatizados.
 - Riesgo de alucinación: sin datos de evaluación, se debe asumir el riesgo habitual de un modelo pequeño, potencialmente mayor por el proceso de merging.
 - Idiomas no declarados: no se puede garantizar un rendimiento aceptable en castellano; probablemente esté entrenado principalmente en inglés, pero no está confirmado.
 - Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías sobre la procedencia de los datos de entrenamiento ni sobre posibles obligaciones adicionales de la base `nanochrono`.
@@ -84,5 +84,5 @@ La comparación con alternativas consolidadas es desfavorable en términos de in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-soup-k1m7b-80
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-soup-k1m7b-80
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

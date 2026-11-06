@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Formato | Cuantizacion | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| danyalmalik/gemma-3-12b-it-ONNX-WebGPU | 12B | no disponible | ONNX (ORT GenAI) | Lineales y LM head a 4 bits, resto fp16 | No | Gemma Terms of Use | HuggingFace, 0 descargas |
-| google/gemma-3-12b-it (base) | 12B | no disponible en esta informacion | safetensors | Original (sin cuantizar) | Si | Gemma Terms of Use | HuggingFace, oficial |
+| danyalmalik/gemma-3-12b-it-ONNX-WebGPU | 12B | no disponible | ONNX (ORT GenAI) | Lineales y LM head a 4 bits, resto fp16 | No | Gemma Terms of Use | Hugging Face, 0 descargas |
+| google/gemma-3-12b-it (base) | 12B | no disponible en esta informacion | safetensors | Original (sin cuantizar) | Si | Gemma Terms of Use | Hugging Face, oficial |
 | Otras conversiones a GGUF o formatos alternativos de Gemma 3 12B | 12B | no disponible | GGUF u otros | no disponible | Variable | Gemma Terms of Use | no disponible |
 
 La diferencia principal frente al checkpoint oficial es el formato de pesos, la cuantizacion a 4 bits y la perdida de la capacidad multimodal. Como contrapartida, esta version puede ejecutarse en el navegador, algo que el checkpoint original en safetensors no permite sin una capa de conversion adicional.
@@ -85,7 +85,7 @@ La diferencia principal frente al checkpoint oficial es el formato de pesos, la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danyalmalik/gemma-3-12b-it-ONNX-WebGPU
+- Modelo en Hugging Face: https://huggingface.co/danyalmalik/gemma-3-12b-it-ONNX-WebGPU
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Gemma Terms of Use: archivo GEMMA_TERMS_OF_USE.md incluido en el repositorio del modelo
 - Gemma Prohibited Use Policy: archivo GEMMA_PROHIBITED_USE_POLICY.md incluido en el repositorio del modelo

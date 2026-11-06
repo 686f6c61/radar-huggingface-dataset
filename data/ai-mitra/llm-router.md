@@ -82,6 +82,6 @@ No se han identificado modelos comparables en la información proporcionada. El 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ai-mitra/llm-router
+- Hugging Face: https://huggingface.co/ai-mitra/llm-router
 - Repositorio del paquete `llm-router`: https://github.com/tg-mitra/llm_router
 - Dataset de entrenamiento: https://huggingface.co/datasets/ai-mitra/llm-router-dataset

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hyelyn78/act_so101_tube_plate` es una política de imitación robótica entrenada con el método Action Chunking with Transformers (ACT), publicado en el paper arXiv:2304.13705. La desarrolla el usuario hyelyn78 y se distribuye a través de HuggingFace Hub con la librería LeRobot. El modelo resuelve una tarea concreta de manipulación: coger un tubo y colocarlo sobre un plato, sobre un robot SO-101 de tipo `so_follower` con dos cámaras (vista superior y muñeca).
+`hyelyn78/act_so101_tube_plate` es una política de imitación robótica entrenada con el método Action Chunking with Transformers (ACT), publicado en el paper arXiv:2304.13705. La desarrolla el usuario hyelyn78 y se distribuye a través de Hugging Face Hub con la librería LeRobot. El modelo resuelve una tarea concreta de manipulación: coger un tubo y colocarlo sobre un plato, sobre un robot SO-101 de tipo `so_follower` con dos cámaras (vista superior y muñeca).
 
 ACT es una arquitectura de aprendizaje por imitación que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales, lo que reduce el error acumulado y mejora la estabilidad en tareas de manipulación de precisión. El modelo consume el estado articular de 6 dimensiones y dos flujos de imagen RGB de 480x640, y produce un vector de acción de 6 dimensiones a 30 FPS.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `hyelyn78/act_so101_tube_plate` | 51,7 M | no aplica | Pick tube and place on plate (SO-101) | no disponible | HuggingFace Hub |
+| `hyelyn78/act_so101_tube_plate` | 51,7 M | no aplica | Pick tube and place on plate (SO-101) | no disponible | Hugging Face Hub |
 | ACT (paper original, arXiv:2304.13705) | no disponible en la información | no aplica | Manipulación general con action chunks | no disponible | Paper y código de referencia |
-| Otras políticas LeRobot (p. ej. Diffusion Policy, SmolVLA) | no disponible | no aplica | Manipulación robótica diversa | no disponible | HuggingFace Hub / LeRobot |
+| Otras políticas LeRobot (p. ej. Diffusion Policy, SmolVLA) | no disponible | no aplica | Manipulación robótica diversa | no disponible | Hugging Face Hub / LeRobot |
 
 No se dispone de datos comparativos de rendimiento entre esta política y alternativas de la misma categoría en la información proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos comparativos de rendimiento entre esta política y altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hyelyn78/act_so101_tube_plate
+- Modelo en Hugging Face: https://huggingface.co/hyelyn78/act_so101_tube_plate
 - Dataset de entrenamiento: https://huggingface.co/datasets/hyelyn78/so101_tube_plate_clean
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=hyelyn78/so101_tube_plate_clean
 - Paper ACT: https://huggingface.co/papers/2304.13705

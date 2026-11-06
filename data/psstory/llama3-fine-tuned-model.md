@@ -2,7 +2,7 @@
 
 ## Resumen
 
-psstory/llama3-fine-tuned-model es un ajuste fino (fine-tune) del modelo unsloth/llama-3-8b-Instruct-bnb-4bit, publicado por el usuario psstory en HuggingFace. Se trata, por tanto, de un derivado de segunda generacion: la base inmediata es ya una version del Llama 3 8B Instruct de Meta cuantizada en 4 bits con bitsandbytes, sobre la que se ha aplicado un entrenamiento adicional usando la libreria Unsloth, segun indica el propio autor en la model card.
+psstory/llama3-fine-tuned-model es un ajuste fino (fine-tune) del modelo unsloth/llama-3-8b-Instruct-bnb-4bit, publicado por el usuario psstory en Hugging Face. Se trata, por tanto, de un derivado de segunda generacion: la base inmediata es ya una version del Llama 3 8B Instruct de Meta cuantizada en 4 bits con bitsandbytes, sobre la que se ha aplicado un entrenamiento adicional usando la libreria Unsloth, segun indica el propio autor en la model card.
 
 El modelo se distribuye bajo licencia apache-2.0 segun los metadatos del repositorio, con idioma declarado en ingles y compatibilidad con la libreria transformers y con text-generation-inference. El repositorio ocupa 0,2 GB, un tamano muy inferior a los aproximadamente 16 GB que requeririan los pesos completos de un modelo de 8 000 millones de parametros en precision de 16 bits; esto apunta a que el repositorio contiene unicamente adaptadores (probablemente LoRA) y no los pesos consolidados, aunque la model card no lo especifica.
 
@@ -22,14 +22,14 @@ La relevancia de esta ficha es limitada y conviene ser transparente: el modelo a
 | Tamano del repositorio | 0,2 GB |
 | Libreria | transformers |
 | Pipeline declarado | no disponible |
-| Fecha de creacion | 2026-09-12 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-12 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
 La arquitectura subyacente es la de Llama 3 8B Instruct de Meta: un transformer decoder-only con atencion de consultas agrupadas (GQA), normalizacion RMSNorm y activacion SwiGLU. El proceso de ajuste documentado es escueto: el autor indica que el modelo se entreno "2x faster with Unsloth", una herramienta de optimizacion de fine-tuning (LoRA/QLoRA) que reduce el uso de memoria y acelera el entrenamiento mediante kernels personalizados. El hecho de que el modelo base sea una version ya cuantizada en 4 bits (sufijo bnb-4bit) implica que el ajuste se realizo con QLoRA sobre pesos congelados en 4 bits, no con fine-tuning completo.
 
-No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del dataset, el rango de LoRA utilizado, la tasa de aprendizaje, si hubo etapas de RLHF o DPO, ni si se aplico consolidacion (merge) de los adaptadores en los pesos base. La model card se limita a la plantilla estandar autogenerada por HuggingFace, con el bloque de metadatos y el aviso de que el modelo se entreno con Unsloth, ademas del logotipo de la herramienta. No se documenta ninguna innovacion tecnica adicional mas alla del uso de Unsloth como marco de entrenamiento.
+No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del dataset, el rango de LoRA utilizado, la tasa de aprendizaje, si hubo etapas de RLHF o DPO, ni si se aplico consolidacion (merge) de los adaptadores en los pesos base. La model card se limita a la plantilla estandar autogenerada por Hugging Face, con el bloque de metadatos y el aviso de que el modelo se entreno con Unsloth, ademas del logotipo de la herramienta. No se documenta ninguna innovacion tecnica adicional mas alla del uso de Unsloth como marco de entrenamiento.
 
 ## Capacidades
 
@@ -101,7 +101,7 @@ La comparativa relevante es en terminos de contexto y licencia: frente a Llama 3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/psstory/llama3-fine-tuned-model
+- Modelo en Hugging Face: https://huggingface.co/psstory/llama3-fine-tuned-model
 - Modelo base inmediato: https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
 - Modelo original de Meta (Llama 3 8B Instruct): https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

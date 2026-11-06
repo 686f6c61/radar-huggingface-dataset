@@ -4,7 +4,7 @@
 
 CSU-IR es un framework de aprendizaje profundo desarrollado por Shuqing Huang (usuario Hsqcsu) para la recuperación interpretable de estructuras moleculares a partir de espectros infrarrojos (IR). El modelo, presentado en el artículo "Scaling infrared spectral retrieval to 100 million compounds with interpretable deep learning", unifica representaciones de espectros IR y estructuras moleculares para permitir la identificación de compuestos desconocidos a una escala de hasta 100 millones de compuestos. Su relevancia radica en que combina una alta precisión en la detección de grupos funcionales con una interpretabilidad explícita, algo poco común en sistemas de recuperación espectral.
 
-El repositorio de HuggingFace contiene principalmente los pesos del modelo y materiales de soporte asociados al artículo, con un tamaño total de 62,5 GB. No se trata de un modelo de lenguaje, sino de un sistema especializado en química computacional y espectroscopia. La licencia es MIT, lo que permite uso comercial y modificación, aunque la documentación disponible es limitada y se centra en el código y los pesos, no en una API de inferencia estandarizada.
+El repositorio de Hugging Face contiene principalmente los pesos del modelo y materiales de soporte asociados al artículo, con un tamaño total de 62,5 GB. No se trata de un modelo de lenguaje, sino de un sistema especializado en química computacional y espectroscopia. La licencia es MIT, lo que permite uso comercial y modificación, aunque la documentación disponible es limitada y se centra en el código y los pesos, no en una API de inferencia estandarizada.
 
 ## Especificaciones técnicas
 
@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hsqcsu/CSU-IR
+- Modelo en Hugging Face: https://huggingface.co/Hsqcsu/CSU-IR
 - Repositorio oficial en GitHub: https://github.com/Hsqcsu/CSU-IR
 - Notebook de prueba en Google Colab: https://colab.research.google.com/github/Hsqcsu/CSU-IR/blob/main/colab/test_CSU_IR_in_colab.ipynb
-- Perfil del autor en HuggingFace: https://huggingface.co/Hsqcsu
+- Perfil del autor en Hugging Face: https://huggingface.co/Hsqcsu

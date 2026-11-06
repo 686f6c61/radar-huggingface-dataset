@@ -74,8 +74,8 @@ No se dispone de información suficiente para una comparativa directa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dyluhn/Qwen3.8-Flash-Next-R9V-IQ4_XS
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face: https://huggingface.co/Dyluhn/Qwen3.8-Flash-Next-R9V-IQ4_XS
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Runtime R9V en GitHub: https://github.com/Dyluhn/R9V
 - Informe de cualificación R9V: https://github.com/Dyluhn/R9V/blob/main/docs/qualification/qwen38-ud-iq4-xs-dual-r9700.md
 - Página de QwenCloud para Qwen3.8-Flash: https://www.qwencloud.com/models/qwen3.8-flash

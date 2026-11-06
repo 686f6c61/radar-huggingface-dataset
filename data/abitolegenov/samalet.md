@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Samalet es un repositorio de modelo alojado en HuggingFace bajo el identificador Abitolegenov/Samalet, publicado por el usuario Abitolegenov. En el momento de redactar esta ficha, la model card asociada contiene unicamente el bloque de metadatos con la licencia Apache-2.0 y ningun texto descriptivo: no se documenta la arquitectura, el numero de parametros, el proceso de entrenamiento, los datos utilizados ni las capacidades esperadas del modelo.
+Samalet es un repositorio de modelo alojado en Hugging Face bajo el identificador Abitolegenov/Samalet, publicado por el usuario Abitolegenov. En el momento de redactar esta ficha, la model card asociada contiene unicamente el bloque de metadatos con la licencia Apache-2.0 y ningun texto descriptivo: no se documenta la arquitectura, el numero de parametros, el proceso de entrenamiento, los datos utilizados ni las capacidades esperadas del modelo.
 
 El repositorio no registra descargas ni likes, no tiene pipeline de inferencia declarado y no especifica idiomas soportados ni formatos de pesos. La unica informacion verificable es la licencia (Apache-2.0) y la region declarada (us). La fecha de creacion y de ultima actualizacion que reporta la plataforma es 2026-10-24, sin que exista contenido tecnico que la respalde.
 
@@ -83,7 +83,7 @@ No disponible. No se puede establecer una comparativa porque se desconoce la cat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Abitolegenov/Samalet
+- Repositorio en Hugging Face: https://huggingface.co/Abitolegenov/Samalet
 - Model card: no disponible (el repositorio solo contiene el bloque de metadatos de licencia)
 - Paper, blog, repositorio de codigo o demo: no disponible
 - La busqueda web no ha devuelto ningun enlace relevante al modelo; los resultados obtenidos corresponden a dominios sin relacion y se descartan.

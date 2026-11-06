@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MLR_planner_Qwen-7B-LoRA | LoRA sobre 7B | No disponible | Plan--execute (MLR) | No disponible | HuggingFace (0 descargas) |
+| MLR_planner_Qwen-7B-LoRA | LoRA sobre 7B | No disponible | Plan--execute (MLR) | No disponible | Hugging Face (0 descargas) |
 | Qwen2.5-Math-7B | 7B | No disponible | CoT estándar | No disponible en esta ficha | Ampliamente disponible |
-| Adaptadores LoRA de razonamiento sobre Qwen | Variable | Variable | CoT / SFT | Variable | HuggingFace |
+| Adaptadores LoRA de razonamiento sobre Qwen | Variable | Variable | CoT / SFT | Variable | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas. La comparación se limita a características estructurales.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sxiong/MLR_planner_Qwen-7B-LoRA
+- Hugging Face: https://huggingface.co/sxiong/MLR_planner_Qwen-7B-LoRA
 - Modelo base (executor): https://huggingface.co/sxiong/MLR_executor_Qwen-7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/sxiong/MLR_sft_data
 - Código de inferencia MLR: https://github.com/xiongsiheng/MLR

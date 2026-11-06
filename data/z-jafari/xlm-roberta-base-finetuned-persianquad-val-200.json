@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Z-Jafari/xlm-roberta-base-finetuned-PersianQuAD-val-200",
+  "slug": "z-jafari-xlm-roberta-base-finetuned-persianquad-val-200",
+  "author": "Z-Jafari",
+  "url": "https://huggingface.co/Z-Jafari/xlm-roberta-base-finetuned-PersianQuAD-val-200",
+  "created_at": "2026-11-06T07:58:43.000Z",
+  "updated_at": "2026-11-06T08:45:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "question-answering",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277454594,
+  "parameters_human": "277.5M",
+  "storage_bytes": 9988586945,
+  "storage_human": "10.0 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xlm-roberta-base-finetuned-PersianQuAD-val-None - Hugging Face",
+      "url": "https://huggingface.co/Z-Jafari/xlm-roberta-base-finetuned-PersianQuAD-val-None",
+      "snippet": "Instructions to use Z-Jafari/xlm-roberta-base-finetuned-PersianQuAD-val-None with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Z-Jafari/xlm-roberta-base-finetuned-PersianQuAD · Hugging Face",
+      "url": "https://huggingface.co/Z-Jafari/xlm-roberta-base-finetuned-PersianQuAD",
+      "snippet": "xlm-roberta-base-finetuned-PersianQuAD-3epochs This model is a fine-tuned version of FacebookAI/xlm-roberta-base on an unknown dataset. It achieves the following results on the evaluation set: Loss: 0.8643 {'exact_match': 81.0, 'f1': 84.22979090740698} Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information ..."
+    }
+  ]
+}

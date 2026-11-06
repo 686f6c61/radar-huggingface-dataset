@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `YassY_BSAI26` es un artefacto publicado en HuggingFace por el usuario YassY-The-AlchemYst. La model card asociada únicamente declara la licencia MIT, sin incluir descripción, arquitectura, parámetros, datos de entrenamiento ni instrucciones de uso. No se ha publicado ninguna información técnica adicional en la página del modelo ni en otras fuentes accesibles. A fecha de su creación (17 de agosto de 2026), el repositorio registra cero descargas y cero likes, lo que sugiere que se trata de un modelo recién subido o sin difusión.
+El modelo `YassY_BSAI26` es un artefacto publicado en Hugging Face por el usuario YassY-The-AlchemYst. La model card asociada únicamente declara la licencia MIT, sin incluir descripción, arquitectura, parámetros, datos de entrenamiento ni instrucciones de uso. No se ha publicado ninguna información técnica adicional en la página del modelo ni en otras fuentes accesibles. A fecha de su creación (17 de agosto de 2026), el repositorio registra cero descargas y cero likes, lo que sugiere que se trata de un modelo recién subido o sin difusión.
 
 Dado que la documentación disponible es prácticamente nula, no es posible determinar qué tipo de modelo es (lenguaje, visión, multimodal, etc.), su tamaño, ni sus capacidades. Esta ficha se limita a reflejar los datos existentes y a señalar explícitamente la ausencia de información técnica, sin especular ni inventar cifras.
 
@@ -29,7 +29,7 @@ No se dispone de información verificable sobre las capacidades del modelo. No s
 
 ## Casos de uso
 
-Al no existir documentación técnica ni ejemplos de uso, no es posible proponer casos de uso concretos. Se recomienda a los interesados contactar con el autor a través de su perfil de HuggingFace o de las redes sociales asociadas para obtener información directa.
+Al no existir documentación técnica ni ejemplos de uso, no es posible proponer casos de uso concretos. Se recomienda a los interesados contactar con el autor a través de su perfil de Hugging Face o de las redes sociales asociadas para obtener información directa.
 
 ## Benchmarks y rendimiento
 
@@ -53,5 +53,5 @@ No disponible. Al carecer de especificaciones técnicas, no es posible establece
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/YassY-The-AlchemYst/YassY_BSAI26)
-- [Perfil del autor en HuggingFace](https://huggingface.co/YassY-The-AlchemYst) (no verificado)
+- [Página del modelo en Hugging Face](https://huggingface.co/YassY-The-AlchemYst/YassY_BSAI26)
+- [Perfil del autor en Hugging Face](https://huggingface.co/YassY-The-AlchemYst) (no verificado)

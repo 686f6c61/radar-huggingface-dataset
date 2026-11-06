@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Jordansky/smoke-fw2-goofspiel-intercode | 3,2B | No disponible | Llama 3.2 Community License | HuggingFace |
-| unsloth/Llama-3.2-3B-Instruct | 3,2B | No disponible | Llama 3.2 Community License | HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct | 3,2B | No disponible | Llama 3.2 Community License | HuggingFace |
+| Jordansky/smoke-fw2-goofspiel-intercode | 3,2B | No disponible | Llama 3.2 Community License | Hugging Face |
+| unsloth/Llama-3.2-3B-Instruct | 3,2B | No disponible | Llama 3.2 Community License | Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct | 3,2B | No disponible | Llama 3.2 Community License | Hugging Face |
 
 Los tres modelos comparten arquitectura, tamano y licencia. La diferencia principal es que el modelo de Jordansky es un fine-tune especifico sin documentacion de entrenamiento, mientras que los otros dos son modelos de referencia con documentacion publica.
 
@@ -76,7 +76,7 @@ Los tres modelos comparten arquitectura, tamano y licencia. La diferencia princi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jordansky/smoke-fw2-goofspiel-intercode
+- Modelo en Hugging Face: https://huggingface.co/Jordansky/smoke-fw2-goofspiel-intercode
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Coleccion de Unsloth para Llama 3.2: https://huggingface.co/collections/unsloth/llama-32-66f46afde4ca573864321a22

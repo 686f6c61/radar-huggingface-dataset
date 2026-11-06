@@ -78,8 +78,8 @@ No se dispone de datos comparativos en la informacion proporcionada. La unica re
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| perplexity-ai/pplx-pii-masking-vllm | 596.088.870 (~600 M) | 4096 tokens | No disponible | MIT | HuggingFace, con Docker Compose y vLLM |
-| perplexity-ai/pplx-pii-masking (modelo base) | No disponible | No disponible | No disponible | MIT | HuggingFace |
+| perplexity-ai/pplx-pii-masking-vllm | 596.088.870 (~600 M) | 4096 tokens | No disponible | MIT | Hugging Face, con Docker Compose y vLLM |
+| perplexity-ai/pplx-pii-masking (modelo base) | No disponible | No disponible | No disponible | MIT | Hugging Face |
 | Otras alternativas de deteccion de PII basadas en encoders | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La unica re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/perplexity-ai/pplx-pii-masking-vllm
+- Modelo en Hugging Face: https://huggingface.co/perplexity-ai/pplx-pii-masking-vllm
 - Modelo base: https://huggingface.co/perplexity-ai/pplx-pii-masking
 - Backbone de embeddings: https://huggingface.co/perplexity-ai/pplx-embed-v1-0.6b
 - Ficheros relevantes del repositorio: `serving/docker-compose.yml`, `serving/scoring_adapter.py`, `serving/test_client.py`, `serving/convert_to_hf.py`, `serving/reference_forward.py`, `viterbi.json`, `LICENSE`

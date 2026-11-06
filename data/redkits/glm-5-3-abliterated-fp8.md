@@ -117,7 +117,7 @@ La comparación con alternativas de otros desarrolladores (por ejemplo, familias
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/redkits/GLM-5.3-ABLITERATED-FP8
+- Repositorio en Hugging Face: https://huggingface.co/redkits/GLM-5.3-ABLITERATED-FP8
 - Modelo base directo: https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
 - Modelo base upstream: https://huggingface.co/zai-org/GLM-5.3
 - Release de origen de la model card: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8

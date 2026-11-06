@@ -96,7 +96,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-4bit
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-4bit
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16
 - Dataset asociado: nvidia/Nemotron-Image-Training-v3 (referenciado en las etiquetas del repositorio)
 - Licencia: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-agreement/

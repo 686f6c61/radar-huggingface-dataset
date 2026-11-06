@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`acleary/act_policy` es una politica de aprendizaje por imitacion basada en el metodo Action Chunking with Transformers (ACT), descrito en el articulo arxiv:2304.13705. El modelo ha sido entrenado con el framework LeRobot de HuggingFace y esta disenado para controlar un robot de tipo `vega_1p_f5d6` en la tarea concreta de flexionar los brazos ("bend_arms"). A diferencia de los modelos de lenguaje, esta politica no genera texto, sino secuencias de acciones de 32 dimensiones a partir de observaciones visuales y del estado del robot.
+`acleary/act_policy` es una politica de aprendizaje por imitacion basada en el metodo Action Chunking with Transformers (ACT), descrito en el articulo arxiv:2304.13705. El modelo ha sido entrenado con el framework LeRobot de Hugging Face y esta disenado para controlar un robot de tipo `vega_1p_f5d6` en la tarea concreta de flexionar los brazos ("bend_arms"). A diferencia de los modelos de lenguaje, esta politica no genera texto, sino secuencias de acciones de 32 dimensiones a partir de observaciones visuales y del estado del robot.
 
 El modelo cuenta con 51,7 millones de parametros y un tamano de repositorio de 0,2 GB, lo que lo convierte en una politica ligera y desplegable en hardware modesto. Se ha entrenado sobre un conjunto de datos teleoperado de 11 episodios y 3.719 fotogramas a 20 FPS, con una configuracion de entrenamiento de 1.000 pasos. Su relevancia radica en que ACT es uno de los metodos de imitacion mas utilizados en robotica por su capacidad para predecir fragmentos de acciones (action chunks) en lugar de pasos individuales, lo que mejora la estabilidad del control.
 
@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Arquitectura | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| acleary/act_policy | 51,7 M | ACT (Transformer) | bend_arms en vega_1p_f5d6 | Apache 2.0 | HuggingFace |
-| Politicas ACT de LeRobot (ej. lerobot/act_* ) | variable (tipicamente 20-100 M) | ACT | Diversas tareas de manipulacion | Apache 2.0 | HuggingFace |
-| Diffusion policies (ej. lerobot/dp_*) | variable | U-Net + diffusion | Diversas tareas de manipulacion | Apache 2.0 | HuggingFace |
+| acleary/act_policy | 51,7 M | ACT (Transformer) | bend_arms en vega_1p_f5d6 | Apache 2.0 | Hugging Face |
+| Politicas ACT de LeRobot (ej. lerobot/act_* ) | variable (tipicamente 20-100 M) | ACT | Diversas tareas de manipulacion | Apache 2.0 | Hugging Face |
+| Diffusion policies (ej. lerobot/dp_*) | variable | U-Net + diffusion | Diversas tareas de manipulacion | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo publicados para este modelo concreto. La comparativa se limita a aspectos arquitectonicos y de disponibilidad. ACT y las diffusion policies son los dos enfoques de imitacion mas comunes en LeRobot; ACT tiende a ser mas estable con pocos datos, mientras que las diffusion policies suelen generar trayectorias mas suaves pero requieren mas datos de entrenamiento.
 

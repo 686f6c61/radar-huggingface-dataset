@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CIFAR-10 IOC-NN es una implementación en PyTorch de un perceptrón multicapa (MLP) diseñado bajo una restricción de convexidad parcial, publicado por el usuario Box2005 en HuggingFace. El modelo resuelve la tarea de clasificación de imágenes del conjunto CIFAR-10 (10 clases, imágenes de 32x32x3 píxeles) y su interés técnico radica en la restricción arquitectónica: la primera capa es libre, pero todas las capas posteriores mantienen pesos no negativos, lo que convierte al modelo, para una representación fija de la primera capa, en un clasificador convexo respecto a esas activaciones intermedias.
+CIFAR-10 IOC-NN es una implementación en PyTorch de un perceptrón multicapa (MLP) diseñado bajo una restricción de convexidad parcial, publicado por el usuario Box2005 en Hugging Face. El modelo resuelve la tarea de clasificación de imágenes del conjunto CIFAR-10 (10 clases, imágenes de 32x32x3 píxeles) y su interés técnico radica en la restricción arquitectónica: la primera capa es libre, pero todas las capas posteriores mantienen pesos no negativos, lo que convierte al modelo, para una representación fija de la primera capa, en un clasificador convexo respecto a esas activaciones intermedias.
 
 El modelo es extremadamente pequeño (402.250 parámetros) y no es un modelo de lenguaje: no genera texto, no soporta tool calling ni tiene ventana de contexto en el sentido habitual. Se trata de un artefacto de investigación educativa o experimental sobre redes con restricciones de convexidad, empaquetado como un `state_dict` de PyTorch. Su relevancia es limitada fuera de ese nicho: sirve como ejemplo reproducible de cómo imponer no negatividad en los pesos y evaluar el coste en precisión frente a un MLP sin restricciones.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Entrada | Precisión CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CIFAR-10 IOC-NN (Box2005) | 402.250 | 32x32x3 | 0,4841 | no disponible | HuggingFace |
+| CIFAR-10 IOC-NN (Box2005) | 402.250 | 32x32x3 | 0,4841 | no disponible | Hugging Face |
 | MLP estándar equivalente (sin restricción) | ~402.250 | 32x32x3 | no disponible | no aplica | referencia teórica |
 | ResNet-18 (referencia habitual en CIFAR-10) | ~11,2 M | 32x32x3 | no disponible en esta ficha | varía | ampliamente disponible |
 | VGG-11 (referencia habitual en CIFAR-10) | ~132 M | 32x32x3 | no disponible en esta ficha | varía | ampliamente disponible |
@@ -86,5 +86,5 @@ No se dispone de datos de benchmarks comparativos publicados en la información 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Box2005/cifar10-ioc-nn
+- Hugging Face: https://huggingface.co/Box2005/cifar10-ioc-nn
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

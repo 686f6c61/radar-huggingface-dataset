@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bimabk/dev-M26g2 es un checkpoint de pesos publicado en HuggingFace por el usuario bimabk, con un total de 3.402.836.480 parametros (~3,4 B) y un repositorio de 6,8 GB. Se trata de una publicacion de perfil bajo: 14 descargas, 0 likes, sin model card visible y sin licencia declarada. El nombre del repositorio ("dev-M26g2") sugiere un artefacto de desarrollo o una version intermedia mas que un modelo con soporte oficial.
+bimabk/dev-M26g2 es un checkpoint de pesos publicado en Hugging Face por el usuario bimabk, con un total de 3.402.836.480 parametros (~3,4 B) y un repositorio de 6,8 GB. Se trata de una publicacion de perfil bajo: 14 descargas, 0 likes, sin model card visible y sin licencia declarada. El nombre del repositorio ("dev-M26g2") sugiere un artefacto de desarrollo o una version intermedia mas que un modelo con soporte oficial.
 
 La unica etiqueta de familia presente es "granite", lo que apunta a que el modelo deriva de la arquitectura IBM Granite, aunque no hay confirmacion en la informacion disponible. El resto de metadatos habituales (pipeline, idiomas, licencia, contexto) no estan declarados, por lo que cualquier evaluacion seria requiere inspeccionar los ficheros del repositorio y el tokenizador antes de usarlo.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bimabk/dev-M26g2 | ~3,4 B | no disponible | no disponible | HuggingFace, repo de 6,8 GB |
-| IBM Granite 3.x (variantes ~3 B) | ~3 B (segun variante) | 128 K en las versiones mas recientes de la familia | Apache 2.0 en las versiones publicadas por IBM | HuggingFace, con model card oficial |
-| Qwen2.5-3B | 3,09 B | 32 K nativo (ampliable con YaRN) | Apache 2.0 | HuggingFace |
-| Llama 3.2 3B | 3,21 B | 128 K | Llama 3.2 Community License | HuggingFace |
+| bimabk/dev-M26g2 | ~3,4 B | no disponible | no disponible | Hugging Face, repo de 6,8 GB |
+| IBM Granite 3.x (variantes ~3 B) | ~3 B (segun variante) | 128 K en las versiones mas recientes de la familia | Apache 2.0 en las versiones publicadas por IBM | Hugging Face, con model card oficial |
+| Qwen2.5-3B | 3,09 B | 32 K nativo (ampliable con YaRN) | Apache 2.0 | Hugging Face |
+| Llama 3.2 3B | 3,21 B | 128 K | Llama 3.2 Community License | Hugging Face |
 
 La comparacion con los modelos alternativos se basa en datos publicos ampliamente difundidos de sus respectivas model cards. Para bimabk/dev-M26g2 no hay informacion equivalente publicada, por lo que la comparacion de rendimiento no es posible.
 
@@ -89,6 +89,6 @@ La comparacion con los modelos alternativos se basa en datos publicos ampliament
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bimabk/dev-M26g2
+- Hugging Face: https://huggingface.co/bimabk/dev-M26g2
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados obtenidos corresponden a perfiles profesionales de personas no relacionadas con el proyecto (LinkedIn, Wiza, RocketReach, Kisaco Research), por lo que se descartan como fuentes.
 - No se dispone de papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo en la informacion proporcionada.

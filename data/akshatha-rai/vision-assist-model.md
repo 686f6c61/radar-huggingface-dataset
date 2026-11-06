@@ -2,9 +2,9 @@
 
 ## Resumen
 
-vision-assist-model es un modelo publicado en HuggingFace por el usuario akshatha-rai bajo licencia MIT. Por el nombre y el tamano del repositorio (0,2 GB) se trata presumiblemente de un modelo orientado a tareas de asistencia visual, aunque la model card publicada no contiene ninguna descripcion tecnica, arquitectura, datos de entrenamiento ni casos de uso declarados por el autor. El repositorio no registra descargas ni likes en el momento de la consulta, lo que indica que es un artefacto reciente y sin validacion por parte de la comunidad.
+vision-assist-model es un modelo publicado en Hugging Face por el usuario akshatha-rai bajo licencia MIT. Por el nombre y el tamano del repositorio (0,2 GB) se trata presumiblemente de un modelo orientado a tareas de asistencia visual, aunque la model card publicada no contiene ninguna descripcion tecnica, arquitectura, datos de entrenamiento ni casos de uso declarados por el autor. El repositorio no registra descargas ni likes en el momento de la consulta, lo que indica que es un artefacto reciente y sin validacion por parte de la comunidad.
 
-La informacion disponible es extremadamente limitada: la model card se reduce a la declaracion de licencia MIT y el pipeline no esta especificado en los metadatos de HuggingFace. No se han publicado parametros, longitud de contexto, idiomas soportados, formato de pesos ni resultados de evaluacion. Cualquier uso en produccion requeriria una inspeccion directa de los archivos del repositorio y una evaluacion propia por parte del equipo integrador.
+La informacion disponible es extremadamente limitada: la model card se reduce a la declaracion de licencia MIT y el pipeline no esta especificado en los metadatos de Hugging Face. No se han publicado parametros, longitud de contexto, idiomas soportados, formato de pesos ni resultados de evaluacion. Cualquier uso en produccion requeriria una inspeccion directa de los archivos del repositorio y una evaluacion propia por parte del equipo integrador.
 
 Dado el estado del artefacto, esta ficha documenta de forma rigurosa lo que se puede afirmar y marca explicitamente como "no disponible" todo aquello que no consta en la informacion proporcionada, sin inferir datos que el autor no ha hecho publicos.
 
@@ -23,7 +23,7 @@ Dado el estado del artefacto, esta ficha documenta de forma rigurosa lo que se p
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. El tamano del repositorio (0,2 GB) es compatible con pesos en precision reducida de un modelo de pequeno tamano o con un conjunto parcial de pesos, pero no permite determinar la familia arquitectonica (transformer denso, MoE, hibrido o modelo multimodal) ni el numero de parametros.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. El tamano del repositorio (0,2 GB) es compatible con pesos en precision reducida de un modelo de pequeno tamano o con un conjunto parcial de pesos, pero no permite determinar la familia arquitectonica (transformer denso, MoE, hibrido o modelo multimodal) ni el numero de parametros.
 
 Tampoco constan datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o ajuste supervisado. No hay informacion sobre innovaciones tecnicas (atencion lineal, decodificacion especulativa, modos de razonamiento) ni sobre el proceso de tokenizacion.
 
@@ -40,9 +40,9 @@ Tampoco constan datos sobre el corpus de entrenamiento, el numero de tokens proc
 
 - Evaluacion interna de modelos de asistencia visual: el modelo puede descargarse e inspeccionarse en un entorno controlado para determinar su arquitectura real y sus capacidades antes de considerarlo en cualquier flujo de trabajo.
 - Prototipado experimental en investigacion: dado su tamano reducido de repositorio (0,2 GB), es viable cargarlo en estaciones de trabajo con GPU consumer para pruebas exploratorias de descripcion de imagenes, siempre que la evaluacion confirme que es efectivamente un modelo de vision.
-- Pruebas de integracion en pipelines de HuggingFace Transformers: permite validar el proceso de carga, tokenizacion e inferencia con la libreria estandar antes de adoptar un modelo comercial.
+- Pruebas de integracion en pipelines de Hugging Face Transformers: permite validar el proceso de carga, tokenizacion e inferencia con la libreria estandar antes de adoptar un modelo comercial.
 - Benchmarking comparativo de referencia: util como linea base secundaria en estudios que comparen modelos pequenos de vision-lenguaje, aunque su falta de documentacion limita la reproducibilidad.
-- Educacion y formacion: sirve como ejemplo practico de publicacion de modelos en HuggingFace y de la importancia de documentar adecuadamente una model card.
+- Educacion y formacion: sirve como ejemplo practico de publicacion de modelos en Hugging Face y de la importancia de documentar adecuadamente una model card.
 - Uso comercial bajo licencia MIT: la licencia permite uso comercial sin restricciones declaradas, pero la ausencia de especificaciones tecnicas hace imprescindible una auditoria previa de calidad, sesgos y comportamiento antes de cualquier despliegue real.
 
 ## Benchmarks y rendimiento
@@ -73,4 +73,4 @@ No disponible. No se han identificado modelos comparables porque la categoria ex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akshatha-rai/vision-assist-model
+- Modelo en Hugging Face: https://huggingface.co/akshatha-rai/vision-assist-model

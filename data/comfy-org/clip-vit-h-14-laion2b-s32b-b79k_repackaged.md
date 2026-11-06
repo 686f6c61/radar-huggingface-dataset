@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - El archivo safetensors pesa 2,5 GB, lo que sugiere que el modelo en precision fp32 ocupa aproximadamente esa cantidad de VRAM al cargarse.
 - Para inferencia en GPU, se recomienda al menos 4 GB de VRAM (por ejemplo, una GTX 1060 6GB o superior). En GPUs con 8 GB o mas (RTX 3070, RTX 4060, etc.) se ejecuta con holgura.
 - No se requieren GPUs de datacenter; el modelo cabe en GPUs de consumo.
-- Opciones de despliegue: ComfyUI (uso principal), tambien se puede cargar con la libreria `transformers` de HuggingFace o con `open_clip` para uso fuera de ComfyUI.
+- Opciones de despliegue: ComfyUI (uso principal), tambien se puede cargar con la libreria `transformers` de Hugging Face o con `open_clip` para uso fuera de ComfyUI.
 - Latencia y throughput: no disponibles en la informacion proporcionada. En una GPU moderna, la inferencia de un solo embedding de imagen suele tardar decenas de milisegundos, pero no se confirma.
 
 ## Comparativa con modelos similares
@@ -69,6 +69,6 @@ No se dispone de informacion sobre modelos comparables en el repositorio. Como r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Comfy-Org/CLIP-ViT-H-14-laion2B-s32B-b79K_repackaged
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/CLIP-ViT-H-14-laion2B-s32B-b79K_repackaged
 - Modelo original de LAION (referencia): no disponible en la informacion proporcionada
 - Documentacion de ComfyUI: no disponible en la informacion proporcionada

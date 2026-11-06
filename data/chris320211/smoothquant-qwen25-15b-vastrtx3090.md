@@ -96,7 +96,7 @@ La ventaja de este artefacto frente al checkpoint original es la reducción de V
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chris320211/smoothquant-qwen25-15b-vastrtx3090
+- Modelo en Hugging Face: https://huggingface.co/chris320211/smoothquant-qwen25-15b-vastrtx3090
 - Build nativa de vLLM: https://huggingface.co/chris320211/smoothquant-qwen25-15b-vastrtx3090-vllm
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio QuantPort: https://github.com/chris320211/QuantPort

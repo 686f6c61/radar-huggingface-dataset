@@ -90,6 +90,6 @@ No se dispone de comparaciones de WER entre estos modelos y ELARSpeech-Whisper-L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanghyang00/ELARSpeech-Whisper-Large-v3-beg
+- Modelo en Hugging Face: https://huggingface.co/Sanghyang00/ELARSpeech-Whisper-Large-v3-beg
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - No se han encontrado enlaces al paper, blog, repositorio o demo del proyecto ELARSpeech en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo ni con el reconocimiento automatico del habla.

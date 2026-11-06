@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al no
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 0xmoose0xmoose0xmoose/xss-probe6-scheme | no aplica | no aplica | no aplica | no disponible | repositorio HuggingFace sin descargas |
+| 0xmoose0xmoose0xmoose/xss-probe6-scheme | no aplica | no aplica | no aplica | no disponible | repositorio Hugging Face sin descargas |
 | Modelos de lenguaje comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No existen modelos comparables en el sentido habitual porque el repositorio no es un modelo. Como referencia funcional, el equivalente sería un corpus de pruebas XSS (por ejemplo, los payloads de OWASP o los conjuntos de pruebas de sanitizadores), no una ficha de modelo.
@@ -81,6 +81,6 @@ No existen modelos comparables en el sentido habitual porque el repositorio no e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/0xmoose0xmoose0xmoose/xss-probe6-scheme
+- Repositorio en Hugging Face: https://huggingface.co/0xmoose0xmoose0xmoose/xss-probe6-scheme
 - Resultados de busqueda web proporcionados: no relevantes para este artefacto (hilos del foro neerlandes Netweters sobre webmail de Telenet: https://www.netweters.be/t5/E-mail/Vanuit-webmail-telenet-een-mail-versturen-naar-gmail/td-p/220549, https://www.netweters.be/t5/E-mail/hoe-webmail-als-snelkoppeling-op-bureablad-krijgen/td-p/10814, https://www.netweters.be/t5/E-mail/telkens-inloggen-op-Telenet-Webmail/td-p/220365, https://www.netweters.be/t5/E-mail/Telenet-Webmail/td-p/54223, https://www.netweters.be/t5/E-mail/Instelling-Outlook-voor-webmail-Telenet/td-p/219282)
 - Paper, blog o repositorio adicional: no disponible

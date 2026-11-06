@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Laya fine-tuned on Persian customer-service data es un ajuste fino del checkpoint multilingue Laya, publicado por el usuario mo-shadfar en HuggingFace. El modelo parte de Laya y se especializa en tareas de atencion al cliente en persa, concretamente en la clasificacion de intencion, urgencia y un tercer conjunto de preguntas etiquetado en la model card como "noul questions", mediante objetivos suaves (soft targets). El conjunto de ajuste es pequeno, en torno a 300 casos, y el entrenamiento se realizo en Kaggle con 2 GPU T4 usando la receta RLCD con DDP del cuaderno de ajuste de Laya.
+Laya fine-tuned on Persian customer-service data es un ajuste fino del checkpoint multilingue Laya, publicado por el usuario mo-shadfar en Hugging Face. El modelo parte de Laya y se especializa en tareas de atencion al cliente en persa, concretamente en la clasificacion de intencion, urgencia y un tercer conjunto de preguntas etiquetado en la model card como "noul questions", mediante objetivos suaves (soft targets). El conjunto de ajuste es pequeno, en torno a 300 casos, y el entrenamiento se realizo en Kaggle con 2 GPU T4 usando la receta RLCD con DDP del cuaderno de ajuste de Laya.
 
 El modelo tiene 321.908.998 parametros (aproximadamente 322 millones) segun los pesos en safetensors, con un repo de 0,7 GB, lo que sugiere pesos almacenados en precision reducida (del orden de fp16). Se distribuye bajo licencia Apache 2.0 y se carga a traves de la libreria `laya`, con una API basada en un agente que expone el metodo `predict(state, questions)`.
 
@@ -77,5 +77,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables, ni d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mo-shadfar/laya-fa-sentiment-moderation
+- Hugging Face: https://huggingface.co/mo-shadfar/laya-fa-sentiment-moderation
 - Paper, blog, repositorio o demo adicionales: no disponible. Los resultados de la busqueda web no contienen enlaces relacionados con este modelo (los resultados obtenidos corresponden a contenidos no relacionados: conversion de unidades Mo/Go, series de television y entradas de enciclopedia).

@@ -73,6 +73,6 @@ Existe un repositorio casi idéntico de otro autor (`kaorisakam/cnn-transformer-
 
 ## Enlaces
 
-- [HuggingFace - Alicethomas/cnn-transformer-finetuned](https://huggingface.co/Alicethomas/cnn-transformer-finetuned)
-- [HuggingFace - kaorisakam/cnn-transformer-finetuned (modelo similar)](https://huggingface.co/kaorisakam/cnn-transformer-finetuned)
+- [Hugging Face - Alicethomas/cnn-transformer-finetuned](https://huggingface.co/Alicethomas/cnn-transformer-finetuned)
+- [Hugging Face - kaorisakam/cnn-transformer-finetuned (modelo similar)](https://huggingface.co/kaorisakam/cnn-transformer-finetuned)
 - [GitHub - CTran (arquitectura CNN+Transformer relacionada)](https://github.com/rafiepour/CTran)

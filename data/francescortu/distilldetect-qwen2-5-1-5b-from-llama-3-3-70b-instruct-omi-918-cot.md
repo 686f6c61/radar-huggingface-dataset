@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/francescortu/DistillDetect-Qwen2.5-1.5B-from-Llama-3.3-70B-Instruct-OMI-918-COT
+- Hugging Face: https://huggingface.co/francescortu/DistillDetect-Qwen2.5-1.5B-from-Llama-3.3-70B-Instruct-OMI-918-COT
 - Paper: https://arxiv.org/abs/2607.09692
 - Repositorio de los autores: https://github.com/RajatRawat-creator/DistillDetect
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B

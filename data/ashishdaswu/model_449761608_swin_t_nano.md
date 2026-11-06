@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_449761608_swin_t_nano` es una implementación a escala "nano" de la arquitectura Swin Transformer (Swin-T), publicada en HuggingFace por el usuario `ashishdaswu` bajo licencia CC-BY-4.0. Está diseñado específicamente para tareas de clasificación, empleando atención de tipo grouped query, fusión bilineal, activación GELU-tanh y normalización RMSNorm. Aunque la arquitectura base Swin Transformer es conocida por su eficiencia en visión por computador, esta variante concreta no incluye información pública sobre el número de parámetros, el tamaño del contexto ni los datos de entrenamiento, por lo que su utilidad práctica queda limitada a un uso experimental o educativo.
+El modelo `model_449761608_swin_t_nano` es una implementación a escala "nano" de la arquitectura Swin Transformer (Swin-T), publicada en Hugging Face por el usuario `ashishdaswu` bajo licencia CC-BY-4.0. Está diseñado específicamente para tareas de clasificación, empleando atención de tipo grouped query, fusión bilineal, activación GELU-tanh y normalización RMSNorm. Aunque la arquitectura base Swin Transformer es conocida por su eficiencia en visión por computador, esta variante concreta no incluye información pública sobre el número de parámetros, el tamaño del contexto ni los datos de entrenamiento, por lo que su utilidad práctica queda limitada a un uso experimental o educativo.
 
 El modelo se distribuye como un único archivo Python (`model_449761608_swin_t_nano.py`), lo que sugiere que se trata de un artefacto de código más que de un conjunto de pesos preentrenados. No se han publicado resultados de benchmarks ni métricas de rendimiento, y la model card no especifica el tipo de datos de entrada (imágenes, texto, etc.), aunque por la arquitectura Swin se presume orientado a visión. Su relevancia actual es baja para producción, pero puede servir como referencia de implementación de una variante compacta de Swin.
 
@@ -69,6 +69,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ashishdaswu/model_449761608_swin_t_nano
+- Hugging Face: https://huggingface.co/ashishdaswu/model_449761608_swin_t_nano
 - Documentación de Swin-T en Torchvision: http://docs.pytorch.org/vision/main/models/generated/torchvision.models.swin_t.html
 - Repositorio oficial de Swin Transformer (Microsoft): https://github.com/microsoft/Swin-Transformer

@@ -43,7 +43,7 @@ Stormer emplea un Vision Transformer estándar, sin capas recurrentes ni mecanis
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El paper original reporta mejoras frente a modelos como Pangu-Weather y GraphCast en métricas como RMSE y ACC, pero esos datos no se incluyen en la model card de HuggingFace. Se recomienda consultar el artículo en arXiv para obtener cifras concretas.
+No se han publicado resultados de benchmarks en la información disponible. El paper original reporta mejoras frente a modelos como Pangu-Weather y GraphCast en métricas como RMSE y ACC, pero esos datos no se incluyen en la model card de Hugging Face. Se recomienda consultar el artículo en arXiv para obtener cifras concretas.
 
 ## Requisitos de hardware
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. El p
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Stormer (esta implementación) | ViT | no disponible | no disponible | MIT | HuggingFace |
+| Stormer (esta implementación) | ViT | no disponible | no disponible | MIT | Hugging Face |
 | Pangu-Weather | Transformer 3D | ~256M | malla 0.25° | no comercial | código abierto |
 | GraphCast | Graph Neural Network | ~36.7M | malla 0.25° | Apache 2.0 | código abierto |
 | FourCastNet | Adaptive Fourier Neural Operator | ~100M | malla 0.25° | BSD-3 | código abierto |
@@ -75,7 +75,7 @@ No se dispone de datos comparativos de rendimiento en la información proporcion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OneScience-Group/Stormer
+- Repositorio Hugging Face: https://huggingface.co/OneScience-Group/Stormer
 - Paper original (arXiv): https://arxiv.org/abs/2312.03876
 - Dataset ERA5 de OneScience: https://huggingface.co/datasets/OneScience-Group/ERA5
 - Repositorio principal de OneScience en GitHub: https://github.com/onescience-ai/OneScience

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spotless Latent Reasoning Engine Adapter (identificador `Rutytoi/spotless-latent-adapter`) es un adaptador de razonamiento latente publicado en HuggingFace por el usuario Rutytoi. No se trata de un modelo completo, sino de un adaptador entrenado sobre el modelo base Qwen2.5-Coder-7B-Instruct, con el objetivo de sustituir la cadena de pensamiento (Chain-of-Thought) textual por un razonamiento interno continuo. Segun la model card, el adaptador ejecuta K=4 actualizaciones de vectores latentes en un espacio de dimension 3584 antes de proyectar el resultado al "verbalizador", es decir, a la cabeza de generacion de tokens.
+Spotless Latent Reasoning Engine Adapter (identificador `Rutytoi/spotless-latent-adapter`) es un adaptador de razonamiento latente publicado en Hugging Face por el usuario Rutytoi. No se trata de un modelo completo, sino de un adaptador entrenado sobre el modelo base Qwen2.5-Coder-7B-Instruct, con el objetivo de sustituir la cadena de pensamiento (Chain-of-Thought) textual por un razonamiento interno continuo. Segun la model card, el adaptador ejecuta K=4 actualizaciones de vectores latentes en un espacio de dimension 3584 antes de proyectar el resultado al "verbalizador", es decir, a la cabeza de generacion de tokens.
 
 La motivacion declarada por el autor es evitar lo que denomina "Discretization Tax": el coste computacional y de latencia que supone forzar cada paso de razonamiento a atravesar el espacio discreto de tokens. El adaptador se entrena durante 2.600 pasos con optimizacion de tipo teacher-forcing sobre secuencia completa. La dimension latente de 3.584 coincide con la dimension oculta del modelo base Qwen2.5-7B, lo que es coherente con la descripcion tecnica.
 
@@ -99,7 +99,7 @@ La comparacion de rendimiento no es posible: el adaptador no publica resultados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rutytoi/spotless-latent-adapter
+- Modelo en Hugging Face: https://huggingface.co/Rutytoi/spotless-latent-adapter
 - Repositorio GitHub del autor: https://github.com/Rutytoi220/spotless-latent-engine
 - Modelo base Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Resultado de busqueda relacionado con adaptadores latentes (no directamente vinculado al modelo, corresponde a IP-Adapter para difusion texto-imagen): https://github.com/viiika/Latent-Adapter

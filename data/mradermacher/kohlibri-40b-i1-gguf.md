@@ -49,7 +49,7 @@ Respecto al entrenamiento, no hay información sobre volumen de tokens, composic
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repo de cuantización ni los metadatos de HuggingFace incluyen valores de MMLU, HumanEval, GSM8K, perplejidad u otras métricas, ni para el modelo base ni para las variantes cuantizadas. Tampoco hay comparaciones con modelos de referencia.
+No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repo de cuantización ni los metadatos de Hugging Face incluyen valores de MMLU, HumanEval, GSM8K, perplejidad u otras métricas, ni para el modelo base ni para las variantes cuantizadas. Tampoco hay comparaciones con modelos de referencia.
 
 ## Requisitos de hardware
 

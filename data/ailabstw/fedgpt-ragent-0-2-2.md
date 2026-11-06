@@ -88,7 +88,7 @@ Nota: los datos de Qwen3-4B, Llama-3.2-3B y Phi-3.5-mini no se han verificado en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ailabstw/fedgpt-ragent-0.2.2
+- Hugging Face: https://huggingface.co/ailabstw/fedgpt-ragent-0.2.2
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Sitio web de FedGPT: https://fedgpt.cc/en

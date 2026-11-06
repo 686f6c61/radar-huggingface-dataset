@@ -76,7 +76,7 @@ La comparativa se limita a los modelos de la misma familia, ya que no hay datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tuhen/cat-translate-learner-edition-0.8b
+- Modelo en Hugging Face: https://huggingface.co/tuhen/cat-translate-learner-edition-0.8b
 - Modelo base: https://huggingface.co/cyberagent/CAT-Translate-0.8b
 - Paper de CAT-Translate: https://arxiv.org/pdf/2606.21413
 - Versión HTML del paper: https://arxiv.org/html/2606.21413v1

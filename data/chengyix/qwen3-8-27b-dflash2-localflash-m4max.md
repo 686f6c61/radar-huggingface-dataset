@@ -89,7 +89,7 @@ La comparativa con otros modelos de la misma categoría no está disponible porq
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ChengyiX/Qwen3.8-27B-DFlash2-LocalFlash-M4Max
+- Repositorio Hugging Face: https://huggingface.co/ChengyiX/Qwen3.8-27B-DFlash2-LocalFlash-M4Max
 - Repositorio GitHub de benchmarks: https://github.com/chengyixu/qwen38-dflash2-bench
 - Modelo base (MLX 4-bit): https://huggingface.co/mlx-community/Qwen3.8-27B-4bit
 - Drafter DFlash2: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2

@@ -73,6 +73,6 @@ No disponible. No se han encontrado datos comparativos con otras cuantizaciones 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [mensaprodigy/Qwen3.8-27B-oQ6e-mtp](https://huggingface.co/mensaprodigy/Qwen3.8-27B-oQ6e-mtp)
+- Repositorio de Hugging Face: [mensaprodigy/Qwen3.8-27B-oQ6e-mtp](https://huggingface.co/mensaprodigy/Qwen3.8-27B-oQ6e-mtp)
 - Modelo base: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - Plantilla de chat: [peculiar-ragdoll/Qwen-Sharp-Chat-Templates](https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates)

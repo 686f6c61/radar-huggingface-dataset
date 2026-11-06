@@ -73,7 +73,7 @@ No hay información suficiente para realizar una comparativa con modelos similar
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/barbonara/corin-nemotron-super-pro-sft
+- Hugging Face del adaptador: https://huggingface.co/barbonara/corin-nemotron-super-pro-sft
 - Página del modelo base (NVIDIA Nemotron 3 Super): https://research.nvidia.com/labs/nemotron/Nemotron-3-Super/
 - Developer hub de Nemotron en GitHub: https://github.com/NVIDIA-NeMo/Nemotron
 - Portal de NVIDIA Nemotron: https://nemotron-ai.com/

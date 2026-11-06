@@ -76,9 +76,9 @@ La model card no incluye tablas de MMLU, HumanEval, GSM8K ni metricas equivalent
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Fleet-Semantic-4B-v0.10 | 4,42B | no disponible | other | HuggingFace | Enrutado semantico con expertos LoRA internos |
-| Qwen3-4B-Instruct-2507 | ~4B | no disponible en esta ficha | Apache 2.0 (segun el modelo original) | HuggingFace | Backbone del anterior; sin capa de expertos |
-| Modelos de ~3-4B de la familia Llama o Phi | ~3-4B | no disponible | licencias especificas de cada familia | HuggingFace | Alternativas densas sin enrutado de expertos |
+| Fleet-Semantic-4B-v0.10 | 4,42B | no disponible | other | Hugging Face | Enrutado semantico con expertos LoRA internos |
+| Qwen3-4B-Instruct-2507 | ~4B | no disponible en esta ficha | Apache 2.0 (segun el modelo original) | Hugging Face | Backbone del anterior; sin capa de expertos |
+| Modelos de ~3-4B de la familia Llama o Phi | ~3-4B | no disponible | licencias especificas de cada familia | Hugging Face | Alternativas densas sin enrutado de expertos |
 
 La comparacion cuantitativa de rendimiento no es posible porque no se han publicado benchmarks para Fleet-Semantic-4B-v0.10 en la informacion disponible.
 
@@ -98,7 +98,7 @@ La comparacion cuantitativa de rendimiento no es posible porque no se han public
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/noumenon-labs/Fleet-Semantic-4B-v0.10
+- Hugging Face: https://huggingface.co/noumenon-labs/Fleet-Semantic-4B-v0.10
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo predecesor citado: https://huggingface.co/noumenon-labs/Fleet-Semantic-4B
 - Fichero de validacion citado: fleet_v010_validation.json (en el repositorio del modelo)

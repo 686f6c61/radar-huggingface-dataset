@@ -83,7 +83,7 @@ El autor indica que los modos eager y CUDA graphs son identicos dentro del marge
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ekVachan-decoder (este modelo) | Adaptadores LoRA sobre Qwen3.5-4B | no disponible | JevBench 70,99%; jabr-v2 85,49%; ~112 ms p50 | Apache-2.0 | HuggingFace y GitHub, autoalojable |
+| ekVachan-decoder (este modelo) | Adaptadores LoRA sobre Qwen3.5-4B | no disponible | JevBench 70,99%; jabr-v2 85,49%; ~112 ms p50 | Apache-2.0 | Hugging Face y GitHub, autoalojable |
 | Jev System-One (TypeSafe AI) | no disponible | no disponible | no disponible | no disponible (propietario) | API/SaaS de TypeSafe AI |
 | Von | no disponible | no disponible | Latencia <18 ms | no disponible | no disponible |
 | Laya | no disponible | no disponible | Latencia ~16 ms | no disponible | no disponible |
@@ -106,9 +106,9 @@ Von y Laya aparecen unicamente citados por el autor como referencias de latencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhi6168/ekvachan-decoder
+- Modelo en Hugging Face: https://huggingface.co/abhi6168/ekvachan-decoder
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio del proyecto (codigo fuente, pipeline de entrenamiento y trazabilidad de evidencias): https://github.com/asp616848/better-jev-for-all
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/abhi6168/ekvachan
-- Perfil del autor en HuggingFace: https://huggingface.co/abhi6168
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/abhi6168/ekvachan
+- Perfil del autor en Hugging Face: https://huggingface.co/abhi6168
 - Modelo de decision de referencia (Jev System-One, TypeSafe AI): https://typesafe.ai/blog/introducing-system-one-models-and-jev

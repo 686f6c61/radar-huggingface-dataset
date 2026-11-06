@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LatentDrive (3 cámaras) | Planificador end-to-end con world model latente (V-JEPA ViT-L) | 310M | 4 fotogramas × 3 vistas (2 s) + 6 puntos de ruta + estado del ego | Apache-2.0 | ONNX en HuggingFace |
-| LatentDrive (1 cámara) | Planificador end-to-end con world model latente (V-JEPA ViT-L) | 310M | 4 fotogramas × 1 vista (2 s) + 6 puntos de ruta + estado del ego | Apache-2.0 | ONNX en HuggingFace |
+| LatentDrive (3 cámaras) | Planificador end-to-end con world model latente (V-JEPA ViT-L) | 310M | 4 fotogramas × 3 vistas (2 s) + 6 puntos de ruta + estado del ego | Apache-2.0 | ONNX en Hugging Face |
+| LatentDrive (1 cámara) | Planificador end-to-end con world model latente (V-JEPA ViT-L) | 310M | 4 fotogramas × 1 vista (2 s) + 6 puntos de ruta + estado del ego | Apache-2.0 | ONNX en Hugging Face |
 | Alternativas de planificación end-to-end | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la información proporcionada de datos de otros modelos comparables de la misma categoría (planificación end-to-end camera-only con world model latente), por lo que la comparativa con alternativas queda como no disponible.
@@ -86,7 +86,7 @@ No se dispone en la información proporcionada de datos de otros modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutowareFoundation/latent_drive
+- Modelo en Hugging Face: https://huggingface.co/AutowareFoundation/latent_drive
 - Librería de despliegue `autoware_latent_drive`: https://github.com/autowarefoundation/autoware_latent_drive
 - Proyecto Autoware: https://autoware.org/
 - Organización en GitHub: https://github.com/autowarefoundation

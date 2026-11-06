@@ -97,7 +97,7 @@ Comparado con alternativas ligeras como all-MiniLM-L6-v2, este modelo es conside
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anshulgada/tabman-embeddinggemma-2-740m
+- Modelo en Hugging Face: https://huggingface.co/Anshulgada/tabman-embeddinggemma-2-740m
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Checkpoint intermedio del autor: https://huggingface.co/Anshulgada/embeddinggemma-2-740m
 - Proyecto Tabman (brave-tab-manager): https://github.com/Anshulgada/brave-tab-manager

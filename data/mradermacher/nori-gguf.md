@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nori-GGUF es una colección de cuantizaciones en formato GGUF del modelo BIBLIOKLEPT/Nori, publicada por el usuario mradermacher. El modelo original, con 7.463.013.674 parámetros (~7,46 mil millones), está orientado a tareas de razonamiento y matemáticas, según los tags declarados ("reasoning", "math", "think-tokens"). Esta ficha se centra en la versión cuantizada, que es la única sobre la que hay ficha en HuggingFace, aunque la mayor parte de las especificaciones de arquitectura y entrenamiento pertenecen al modelo base y no están documentadas en la información disponible.
+Nori-GGUF es una colección de cuantizaciones en formato GGUF del modelo BIBLIOKLEPT/Nori, publicada por el usuario mradermacher. El modelo original, con 7.463.013.674 parámetros (~7,46 mil millones), está orientado a tareas de razonamiento y matemáticas, según los tags declarados ("reasoning", "math", "think-tokens"). Esta ficha se centra en la versión cuantizada, que es la única sobre la que hay ficha en Hugging Face, aunque la mayor parte de las especificaciones de arquitectura y entrenamiento pertenecen al modelo base y no están documentadas en la información disponible.
 
 La relevancia práctica del repositorio reside en que permite ejecutar el modelo en hardware de consumo mediante cuantizaciones que van desde Q2_K (4,5 GB) hasta f16 (15,0 GB), además de incluir ficheros mmproj (0,7 GB y 1,1 GB) que indican capacidad multimodal (proyección de visión), un detalle poco habitual en modelos de este tamaño y que amplía los casos de uso posibles.
 
@@ -90,7 +90,7 @@ No se dispone de datos para comparar rendimiento, contexto real ni calidad de ge
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Nori-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Nori-GGUF
 - Modelo base: https://huggingface.co/BIBLIOKLEPT/Nori
 - Pagina de resumen de cuantizaciones de mradermacher para este modelo: https://hf.tst.eu/model#Nori-GGUF
 - README de referencia de TheBloke sobre uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

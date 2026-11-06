@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`themohal/saraiki-speecht5` es un repositorio de HuggingFace publicado por el usuario `themohal` que, por su identificador, corresponde a un ajuste fino del framework SpeechT5 orientado al saraiki, una lengua indoaria hablada principalmente en las provincias paquistanies de Punjab y Sindh. SpeechT5 es una arquitectura encoder-decoder unificada para voz y texto, publicada originalmente por Microsoft Research, que se ha utilizado de forma recurrente como base para síntesis de voz en lenguas con pocos recursos.
+`themohal/saraiki-speecht5` es un repositorio de Hugging Face publicado por el usuario `themohal` que, por su identificador, corresponde a un ajuste fino del framework SpeechT5 orientado al saraiki, una lengua indoaria hablada principalmente en las provincias paquistanies de Punjab y Sindh. SpeechT5 es una arquitectura encoder-decoder unificada para voz y texto, publicada originalmente por Microsoft Research, que se ha utilizado de forma recurrente como base para síntesis de voz en lenguas con pocos recursos.
 
 El repositorio no incluye model card funcional: el README se limita a declarar `license: mit` y no aporta informacion sobre arquitectura, datos de entrenamiento, idioma objetivo, hablantes, calidad de sintesis ni uso previsto. Tampoco consta pipeline declarado, idiomas etiquetados, descargas (0) ni likes (0), lo que indica que es un artefacto reciente y sin validacion por parte de la comunidad.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada: no disponible. No se puede calcular sin conocer el numero de parametros y el formato de pesos del checkpoint.
 - GPU recomendadas: no disponible. Si el modelo siguiera la escala tipica de un ajuste SpeechT5 (cientos de millones de parametros), seria ejecutable en GPU de gama media e incluso en CPU para inferencia por lotes pequenos; esta estimacion no esta confirmada.
 - Compatibilidad con GPU de consumo: no disponible; probablemente viable en tarjetas con 8-16 GB de VRAM si el tamano es el habitual de SpeechT5, sujeto a verificacion.
-- Opciones de despliegue: no disponible. Los modelos de la familia SpeechT5 se ejecutan tipicamente con la libreria Transformers de HuggingFace sobre PyTorch; no son compatibles con llama.cpp, Ollama ni GGUF, y no estan soportados por motores de inferencia orientados a LLM como vLLM. Cualquier despliegue alternativo requeriria conversion manual.
+- Opciones de despliegue: no disponible. Los modelos de la familia SpeechT5 se ejecutan tipicamente con la libreria Transformers de Hugging Face sobre PyTorch; no son compatibles con llama.cpp, Ollama ni GGUF, y no estan soportados por motores de inferencia orientados a LLM como vLLM. Cualquier despliegue alternativo requeriria conversion manual.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -93,6 +93,6 @@ No hay base para afirmar que este modelo supere o iguale a ninguna de las altern
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/themohal/saraiki-speecht5
+- Repositorio en Hugging Face: https://huggingface.co/themohal/saraiki-speecht5
 - Modelo base de referencia de la familia SpeechT5 (enlace externo, no procedente de la busqueda web): https://huggingface.co/microsoft/speecht5_tts
 - Resultados de la busqueda web: no se encontro ningun enlace relacionado con el modelo. Los resultados devueltos correspondian a dominios de noticias (cnn.com, play.google.com, facebook.com, optimum.com) sin vinculacion alguna con el proyecto.

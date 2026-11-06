@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo 1995chen/Qwen3.8-27B-GGUF es una versión cuantizada en formato GGUF del modelo Qwen/Qwen3.8-27B, publicada por el usuario 1995chen en HuggingFace. Se trata, por tanto, de una conversión de pesos y no de un modelo entrenado desde cero: la model card indica explícitamente que la conversión se ha realizado de forma automática con la herramienta ggml-org/convert y que la información descriptiva aún está pendiente de añadir ("add info"). El repositorio ocupa 113,7 GB y contiene el modelo en cuantización GGUF, lo que permite ejecutarlo en llama.cpp y en el cliente llama.app.
+El modelo 1995chen/Qwen3.8-27B-GGUF es una versión cuantizada en formato GGUF del modelo Qwen/Qwen3.8-27B, publicada por el usuario 1995chen en Hugging Face. Se trata, por tanto, de una conversión de pesos y no de un modelo entrenado desde cero: la model card indica explícitamente que la conversión se ha realizado de forma automática con la herramienta ggml-org/convert y que la información descriptiva aún está pendiente de añadir ("add info"). El repositorio ocupa 113,7 GB y contiene el modelo en cuantización GGUF, lo que permite ejecutarlo en llama.cpp y en el cliente llama.app.
 
 El modelo base cuenta con 26.895.998.464 parámetros (unos 26,9 mil millones) y su etiqueta de pipeline es image-text-to-text, lo que indica que acepta entradas multimodales de imagen y texto, además de ser conversacional. La licencia declarada es Apache 2.0, lo que facilita su uso comercial sin restricciones adicionales más allá de las propias de esa licencia. No se dispone de información sobre la longitud de contexto, los idiomas soportados ni la composición del entrenamiento en la documentación proporcionada.
 
@@ -72,9 +72,9 @@ Las cifras de esta sección son estimaciones derivadas del número de parámetro
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 1995chen/Qwen3.8-27B-GGUF (este modelo) | 26,9 B | no disponible | GGUF | Apache 2.0 | Repositorio HuggingFace, 104 descargas |
-| Qwen/Qwen3.8-27B (modelo base) | 26,9 B | no disponible | safetensors | Apache 2.0 | Repositorio HuggingFace oficial |
-| ggml-org/Qwen3.8-27B-GGUF (conversión referenciada en la model card) | 26,9 B | no disponible | GGUF | Apache 2.0 (heredada) | Repositorio HuggingFace, invocable con `llama serve -hf` |
+| 1995chen/Qwen3.8-27B-GGUF (este modelo) | 26,9 B | no disponible | GGUF | Apache 2.0 | Repositorio Hugging Face, 104 descargas |
+| Qwen/Qwen3.8-27B (modelo base) | 26,9 B | no disponible | safetensors | Apache 2.0 | Repositorio Hugging Face oficial |
+| ggml-org/Qwen3.8-27B-GGUF (conversión referenciada en la model card) | 26,9 B | no disponible | GGUF | Apache 2.0 (heredada) | Repositorio Hugging Face, invocable con `llama serve -hf` |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (tamaño similar y capacidades multimodales), ni de datos de rendimiento que permitan establecer una comparación cuantitativa entre estas tres variantes. Las diferencias documentadas entre ellas se limitan al formato de pesos y al canal de publicación.
 
@@ -94,7 +94,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/1995chen/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/1995chen/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Conversión de referencia citada en la model card: https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF
 - Cliente de inferencia recomendado por el autor: https://llama.app

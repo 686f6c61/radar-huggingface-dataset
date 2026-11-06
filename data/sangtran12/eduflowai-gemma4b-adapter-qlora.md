@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sangtran12/eduflowai-gemma4b-adapter-qlora` es un adaptador de ajuste fino publicado en HuggingFace por el usuario sangtran12. El identificador del repositorio indica que se trata de un adaptador entrenado con QLoRA sobre un modelo de la familia Gemma de aproximadamente 4.000 millones de parametros, y la etiqueta `unsloth` sugiere que el entrenamiento se realizo con esa libreria de optimizacion de fine-tuning. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador de bajo rango y no con pesos completos, por lo que para utilizarlo es necesario descargar por separado el modelo base.
+`sangtran12/eduflowai-gemma4b-adapter-qlora` es un adaptador de ajuste fino publicado en Hugging Face por el usuario sangtran12. El identificador del repositorio indica que se trata de un adaptador entrenado con QLoRA sobre un modelo de la familia Gemma de aproximadamente 4.000 millones de parametros, y la etiqueta `unsloth` sugiere que el entrenamiento se realizo con esa libreria de optimizacion de fine-tuning. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador de bajo rango y no con pesos completos, por lo que para utilizarlo es necesario descargar por separado el modelo base.
 
-El nombre `eduflowai` apunta a un proyecto de tipo educativo, aunque la model card no confirma dominio, dataset ni objetivo. La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) figuran como "[More Information Needed]".
+El nombre `eduflowai` apunta a un proyecto de tipo educativo, aunque la model card no confirma dominio, dataset ni objetivo. La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) figuran como "[More Information Needed]".
 
 La relevancia de esta ficha es limitada y fundamentalmente preventiva: el repositorio acumula 0 descargas y 0 likes, no tiene documentacion tecnica verificable y no declara licencia, por lo que cualquier evaluacion seria exige contactar con el autor o inspeccionar directamente los tensores del adaptador. La busqueda web realizada no ha devuelto ninguna fuente relacionada con el modelo.
 
@@ -97,12 +97,12 @@ Diferencias clave: las tres alternativas declaran licencia, contexto e idiomas, 
 - Idiomas no declarados: no se puede confirmar el soporte de castellano ni de otras lenguas.
 - Ausencia de validacion externa: 0 descargas y 0 likes implican que no hay retroalimentacion de la comunidad sobre calidad, estabilidad o comportamiento en produccion.
 - Metadatos incoherentes: las fechas de creacion y actualizacion (2026-09-12) son posteriores a la fecha habitual de consulta, lo que sugiere un error o manipulacion de metadatos y refuerza la necesidad de tratar el repositorio con cautela.
-- Etiqueta `endpoints_compatible` presente: indica compatibilidad con los endpoints de HuggingFace, pero no constituye una garantia de despliegue correcto.
+- Etiqueta `endpoints_compatible` presente: indica compatibilidad con los endpoints de Hugging Face, pero no constituye una garantia de despliegue correcto.
 - Recomendacion operativa: antes de cualquier uso, fusionar el adaptador con el modelo base, inspeccionar los tensores, ejecutar una bateria propia de evaluacion (perplejidad, tareas del dominio objetivo) y obtener confirmacion escrita del autor sobre licencia y origen de los datos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sangtran12/eduflowai-gemma4b-adapter-qlora
+- Repositorio en Hugging Face: https://huggingface.co/sangtran12/eduflowai-gemma4b-adapter-qlora
 - Articulo citado en los tags del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones de carbono, no sobre este modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de ML referenciada en la plantilla de la model card: https://mlco2.github.io/impact
 - La busqueda web realizada no ha devuelto ningun otro enlace relevante (paper, blog, repositorio o demo) asociado a este modelo.

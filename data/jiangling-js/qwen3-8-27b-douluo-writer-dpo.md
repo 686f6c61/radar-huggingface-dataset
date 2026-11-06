@@ -71,7 +71,7 @@ No se han encontrado modelos comparables específicamente orientados a escritura
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JiangLing-js/Qwen3.8-27B-Douluo-Writer-DPO
+- Repositorio Hugging Face: https://huggingface.co/JiangLing-js/Qwen3.8-27B-Douluo-Writer-DPO
 - Modelo base: https://huggingface.co/unsloth/Qwen3.8-27B
 - Modelo base de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Receta vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

@@ -90,7 +90,7 @@ No se dispone de datos suficientes para comparar con otras alternativas de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Binade/Qwen3.5-4B
+- Modelo en Hugging Face: https://huggingface.co/Binade/Qwen3.5-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de Binade: https://github.com/GuyShafir/binade
 - Paper de Binade: https://github.com/GuyShafir/binade/blob/main/paper/binade.pdf

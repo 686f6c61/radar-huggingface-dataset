@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `HueyWoo/act_lekiwi06_pick_redcube_place_1102` (este) | 51,7 M | Estado (9,) + 2 imágenes 480x640 | Pick-and-place de cubo rojo en LeKiwi | Apache 2.0 | HuggingFace, LeRobot |
-| Otras políticas ACT en LeRobot Hub | no disponible | no disponible | Tareas de manipulación diversas | variable (habitualmente Apache 2.0) | HuggingFace |
-| Políticas Diffusion Policy en LeRobot | no disponible | no disponible | Manipulación visomotora | variable | HuggingFace |
+| `HueyWoo/act_lekiwi06_pick_redcube_place_1102` (este) | 51,7 M | Estado (9,) + 2 imágenes 480x640 | Pick-and-place de cubo rojo en LeKiwi | Apache 2.0 | Hugging Face, LeRobot |
+| Otras políticas ACT en LeRobot Hub | no disponible | no disponible | Tareas de manipulación diversas | variable (habitualmente Apache 2.0) | Hugging Face |
+| Políticas Diffusion Policy en LeRobot | no disponible | no disponible | Manipulación visomotora | variable | Hugging Face |
 | Políticas π0 / VLA de gran escala | no disponible en la información proporcionada | no disponible | Manipulación generalista | variable | no disponible |
 
 No se dispone de datos cuantitativos de benchmarks que permitan una comparación de rendimiento fiable con alternativas. La comparación anterior es meramente cualitativa y de categoría.
@@ -92,7 +92,7 @@ No se dispone de datos cuantitativos de benchmarks que permitan una comparación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HueyWoo/act_lekiwi06_pick_redcube_place_1102
+- Modelo en Hugging Face: https://huggingface.co/HueyWoo/act_lekiwi06_pick_redcube_place_1102
 - Dataset de entrenamiento: https://huggingface.co/datasets/HueyWoo/lekiwi_pick_redcube_place_1102
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=HueyWoo/lekiwi_pick_redcube_place_1102
 - Paper de ACT: https://huggingface.co/papers/2304.13705

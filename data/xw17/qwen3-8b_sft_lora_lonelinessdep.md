@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `xw17/Qwen3-8B_SFT_lora_lonelinessdep` es un artefacto publicado en HuggingFace por el usuario `xw17`. Por el propio identificador se deduce que se trata de un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre un modelo base de la familia Qwen3 de 8.000 millones de parametros, orientado a un dominio que el nombre asocia a soledad y depresion ("lonelinessdep"). El tamano del repositorio, 0,1 GB, es coherente con un adaptador LoRA y no con un modelo completo en precision bf16, que en un 8B rondaria los 16 GB.
+El modelo `xw17/Qwen3-8B_SFT_lora_lonelinessdep` es un artefacto publicado en Hugging Face por el usuario `xw17`. Por el propio identificador se deduce que se trata de un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre un modelo base de la familia Qwen3 de 8.000 millones de parametros, orientado a un dominio que el nombre asocia a soledad y depresion ("lonelinessdep"). El tamano del repositorio, 0,1 GB, es coherente con un adaptador LoRA y no con un modelo completo en precision bf16, que en un 8B rondaria los 16 GB.
 
-La relevancia de esta ficha es limitada y conviene ser explicito al respecto: la model card publicada es la plantilla autogenerada por HuggingFace y no contiene ni un solo dato cumplimentado. Todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen como "[More Information Needed]". No hay pipeline declarado, no hay licencia declarada, no hay idiomas declarados, y el repositorio acumula 0 descargas y 0 "likes".
+La relevancia de esta ficha es limitada y conviene ser explicito al respecto: la model card publicada es la plantilla autogenerada por Hugging Face y no contiene ni un solo dato cumplimentado. Todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen como "[More Information Needed]". No hay pipeline declarado, no hay licencia declarada, no hay idiomas declarados, y el repositorio acumula 0 descargas y 0 "likes".
 
 En consecuencia, esta ficha documenta lo que se puede verificar (metadatos del repositorio, etiquetas y tamano) y marca como "no disponible" todo lo demas. Cualquier uso en produccion deberia ir precedido de una inspeccion directa de los pesos y de la configuracion del repositorio, dado que no existe documentacion tecnica del autor.
 
@@ -25,11 +25,11 @@ Otros metadatos verificables del repositorio: libreria declarada `transformers`,
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla por defecto de HuggingFace y no aporta datos sobre composicion del dataset, numero de tokens de entrenamiento, regimen de precision, hiperparametros, uso de RLHF o DPO, ni innovaciones tecnicas. Las unicas pistas son el identificador del repositorio y las etiquetas.
+No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla por defecto de Hugging Face y no aporta datos sobre composicion del dataset, numero de tokens de entrenamiento, regimen de precision, hiperparametros, uso de RLHF o DPO, ni innovaciones tecnicas. Las unicas pistas son el identificador del repositorio y las etiquetas.
 
 Del identificador se pueden inferir, con la cautela propia de una inferencia no confirmada, tres cosas: que el modelo base pertenece a la familia Qwen3 en su variante de 8B; que el metodo de ajuste es SFT (supervised fine-tuning) sobre un adaptador LoRA; y que el dominio objetivo esta relacionado con soledad y depresion. El tamano del repositorio (0,1 GB) respalda la hipotesis del adaptador: un LoRA tipico sobre un transformer de 8B ocupa entre decenas y pocos cientos de megabytes, mientras que los pesos completos en bf16 ocuparian aproximadamente 16 GB.
 
-La etiqueta `arxiv:1910.09700` no corresponde a un articulo sobre este modelo: es la referencia a Lacoste et al. (2019) sobre el calculador de impacto ambiental, que aparece de serie en la plantilla de model card de HuggingFace. No debe interpretarse como publicacion cientifica asociada.
+La etiqueta `arxiv:1910.09700` no corresponde a un articulo sobre este modelo: es la referencia a Lacoste et al. (2019) sobre el calculador de impacto ambiental, que aparece de serie en la plantilla de model card de Hugging Face. No debe interpretarse como publicacion cientifica asociada.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Al tratarse, segun el tamano del repositorio, de un adaptador LoRA, el despliegue requiere descargar por separado los pesos del modelo base y cargar despues el adaptador.
 - GPU recomendadas: no disponible. Para un 8B denso en bf16 serian adecuadas A100 40 GB, H100 80 GB o L40S 48 GB; en consumer, una RTX 4090 de 24 GB permitiria bf16 al limite y con holgura en cuantizacion.
 - Compatibilidad con GPU de consumo: no confirmada para este adaptador. Si el modelo base es efectivamente un 8B, cabe en tarjetas de 16 GB o mas con cuantizacion y en 24 GB en precision completa con contexto corto.
-- Opciones de despliegue: vLLM, TGI, llama.cpp u Ollama son viables en principio para un transformer decoder-only de 8B, pero no hay confirmacion de compatibilidad del adaptador ni ficheros GGUF publicados en este repositorio. La etiqueta `endpoints_compatible` indica que el repositorio es compatible con los endpoints gestionados de HuggingFace.
+- Opciones de despliegue: vLLM, TGI, llama.cpp u Ollama son viables en principio para un transformer decoder-only de 8B, pero no hay confirmacion de compatibilidad del adaptador ni ficheros GGUF publicados en este repositorio. La etiqueta `endpoints_compatible` indica que el repositorio es compatible con los endpoints gestionados de Hugging Face.
 - Latencia y throughput: no disponible, no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -81,9 +81,9 @@ No hay datos de rendimiento de este modelo, por lo que la comparativa solo puede
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| xw17/Qwen3-8B_SFT_lora_lonelinessdep | no disponible (adaptador sobre base 8B, inferido) | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
+| xw17/Qwen3-8B_SFT_lora_lonelinessdep | no disponible (adaptador sobre base 8B, inferido) | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
 | Modelo base de la familia Qwen3-8B | 8B (dato publico de la familia, no de este repo) | no disponible en esta ficha | no disponible en esta ficha | publico | no disponible aqui |
-| Otros adaptadores LoRA SFT sobre bases de 7-8B | variable | variable | variable | HuggingFace | no comparables sin evaluacion comun |
+| Otros adaptadores LoRA SFT sobre bases de 7-8B | variable | variable | variable | Hugging Face | no comparables sin evaluacion comun |
 
 No es posible establecer una comparacion de rendimiento, licencia o idoneidad frente a alternativas concretas con la informacion disponible.
 
@@ -102,7 +102,7 @@ No es posible establecer una comparacion de rendimiento, licencia o idoneidad fr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xw17/Qwen3-8B_SFT_lora_lonelinessdep
+- Modelo en Hugging Face: https://huggingface.co/xw17/Qwen3-8B_SFT_lora_lonelinessdep
 - Referencia de la etiqueta `arxiv:1910.09700` (calculador de impacto ambiental, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ML citado en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo. Los resultados de la busqueda web realizada no guardan relacion con el modelo y se han descartado por no ser fuentes tecnicas fiables.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r493-sbsv5-offline-dpo-hialpha-midrank-extrasteps-merged` es un checkpoint de 35.107 millones de parámetros publicado en HuggingFace por el usuario `unconst`. Según los metadatos, se trata de un merge de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`, que a su vez parece ser un fine-tune de una arquitectura de tipo `qwen3_5_moe` (según las etiquetas del repositorio). La model card es extremadamente escueta: indica que es un "LoRA-merged" y que se trata de un "checkpoint de rescate privado" ("Private TTL insurance; not a submission until Stage-5 gate clears"), lo que sugiere que es un artefacto intermedio de un proceso de entrenamiento más amplio, no un modelo final destinado a producción.
+El modelo `unconst/Affine-5czsc2fc98-r493-sbsv5-offline-dpo-hialpha-midrank-extrasteps-merged` es un checkpoint de 35.107 millones de parámetros publicado en Hugging Face por el usuario `unconst`. Según los metadatos, se trata de un merge de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`, que a su vez parece ser un fine-tune de una arquitectura de tipo `qwen3_5_moe` (según las etiquetas del repositorio). La model card es extremadamente escueta: indica que es un "LoRA-merged" y que se trata de un "checkpoint de rescate privado" ("Private TTL insurance; not a submission until Stage-5 gate clears"), lo que sugiere que es un artefacto intermedio de un proceso de entrenamiento más amplio, no un modelo final destinado a producción.
 
 El repositorio ocupa 70.2 GB en formato `safetensors`, con pipeline de `text-generation` y compatibilidad declarada con `transformers` y `endpoints`. A pesar de las etiquetas que mencionan `image-text-to-text`, no se proporciona ninguna documentación sobre capacidades multimodales reales. La licencia, los idiomas soportados y cualquier detalle de entrenamiento no están disponibles. Por su tamaño y arquitectura probable (MoE), podría tener interés para experimentación, pero la falta de información pública limita su uso a un contexto de investigación muy específico.
 
@@ -76,7 +76,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r493-sbsv5-offline-dpo-hialpha-midrank-extrasteps-merged
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r493-sbsv5-offline-dpo-hialpha-midrank-extrasteps-merged
 - Modelo base (referenciado): https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft
 
 No se han encontrado papers, blogs, demos u otros recursos adicionales.

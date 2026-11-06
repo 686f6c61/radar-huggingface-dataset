@@ -61,6 +61,6 @@ No se dispone de información sobre modelos comparables. Al ser un adaptador exp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SZLHOLDINGS/khipu-r3
+- Hugging Face: https://huggingface.co/SZLHOLDINGS/khipu-r3
 - GitHub (fuente del curriculum khipu): https://github.com/szl-holdings/szl-forge/tree/main/khipu
 - Repositorio de consenso Khipu (relacionado, no directamente con el modelo): https://github.com/szl-holdings/khipu-consensus/tree/main/

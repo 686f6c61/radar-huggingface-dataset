@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ThoxWork-Agent-8B | 8B | 8.192 (contexto de evaluacion) | Apache-2.0 | Ollama y HuggingFace (packaging) | Configuracion sobre Qwen3-8B; sin entrenamiento propio |
-| Qwen/Qwen3-8B | 8B | no disponible en esta informacion | Apache-2.0 | HuggingFace, Ollama (`qwen3:8b`) | Modelo base upstream; mismo rendimiento subyacente |
+| ThoxWork-Agent-8B | 8B | 8.192 (contexto de evaluacion) | Apache-2.0 | Ollama y Hugging Face (packaging) | Configuracion sobre Qwen3-8B; sin entrenamiento propio |
+| Qwen/Qwen3-8B | 8B | no disponible en esta informacion | Apache-2.0 | Hugging Face, Ollama (`qwen3:8b`) | Modelo base upstream; mismo rendimiento subyacente |
 | Alternativas de 8B en Q4 para despliegue local | 7-8B | variable | variable | variable | No se dispone de datos comparativos publicados en la informacion proporcionada |
 
 La comparacion mas directa es con Qwen3-8B: ThoxWork-Agent-8B no modifica los pesos, por lo que su calidad de razonamiento y recall es la del modelo base, con la diferencia del perfil de sistema y el knowledge pack. No se dispone de benchmarks estandar para contrastar con otras alternativas.
@@ -91,11 +91,11 @@ La comparacion mas directa es con Qwen3-8B: ThoxWork-Agent-8B no modifica los pe
 - Riesgo de alucinacion: mitigado parcialmente por el perfil y el pack, pero no eliminado; la evaluacion de anclaje se hizo con pasajes suministrados, no en modo abierto.
 - Licencia Apache-2.0 heredada; los elementos propios de THOX (perfil de sistema, knowledge pack, packaging) tambien se declaran bajo Apache-2.0, pero conviene verificar terminos de la plataforma THOX para el runtime opcional.
 - Reproducibilidad dependiente del digest fijado: si el tag `qwen3:8b` cambia en el registro, la reconstruccion desde el repositorio debe respetar el pin del manifiesto.
-- Cero descargas y cero likes en HuggingFace en el momento de la consulta: ecosistema y validacion externa practicamente inexistentes.
+- Cero descargas y cero likes en Hugging Face en el momento de la consulta: ecosistema y validacion externa practicamente inexistentes.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxWork-Agent-8B
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxWork-Agent-8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Modelo publicado en Ollama: `Thox-ai/thoxwork-agent-8b` (referencia en la model card; no se proporciona URL directa)
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada.

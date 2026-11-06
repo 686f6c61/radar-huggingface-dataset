@@ -6,7 +6,7 @@ El modelo `yorklyb/ndemo` es una implementación de la política robótica π₀
 
 Con 4.143.404.816 parámetros (aproximadamente 4,14 mil millones), el modelo se distribuye en formato safetensors y se ha entrenado sobre el dataset `ndemo`, aunque no se especifican detalles sobre su composición ni volumen. La licencia Apache 2.0 permite uso comercial y modificación, lo que lo hace atractivo para investigación y desarrollo en robótica. Su relevancia actual radica en que representa una evolución de π₀, con mejoras en la capacidad de operar en escenarios abiertos, un área crítica para la adopción de robots en entornos reales.
 
-La ficha se basa exclusivamente en la información pública disponible en HuggingFace y la model card del autor; muchos parámetros técnicos no han sido publicados y se indican como "no disponible".
+La ficha se basa exclusivamente en la información pública disponible en Hugging Face y la model card del autor; muchos parámetros técnicos no han sido publicados y se indican como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La ficha se basa exclusivamente en la información pública disponible en Huggin
 
 El modelo implementa la arquitectura π₀.₅ de Physical Intelligence, un modelo VLA que integra un codificador visual, un modelo de lenguaje y una cabeza de acción para generar comandos motores directamente a partir de observaciones visuales y instrucciones en lenguaje natural. A diferencia de modelos puramente de lenguaje, π₀.₅ está entrenado para producir secuencias de acciones (por ejemplo, posiciones de articulaciones o esfuerzos) en lugar de texto, lo que permite su uso directo en control de robots.
 
-No se han publicado detalles sobre el proceso de entrenamiento específico de esta implementación: ni el número de tokens, ni la composición del dataset `ndemo`, ni si se emplearon técnicas como RLHF o DPO. La model card indica que el modelo fue entrenado y subido al Hub mediante LeRobot, la librería de HuggingFace para aprendizaje por imitación en robótica, lo que sugiere un pipeline estándar de clonación de comportamiento. La innovación principal heredada de π₀.₅ es su capacidad de generalización a entornos abiertos, lograda mediante una combinación de datos diversos y una arquitectura que alinea representaciones visuales, lingüísticas y de acción.
+No se han publicado detalles sobre el proceso de entrenamiento específico de esta implementación: ni el número de tokens, ni la composición del dataset `ndemo`, ni si se emplearon técnicas como RLHF o DPO. La model card indica que el modelo fue entrenado y subido al Hub mediante LeRobot, la librería de Hugging Face para aprendizaje por imitación en robótica, lo que sugiere un pipeline estándar de clonación de comportamiento. La innovación principal heredada de π₀.₅ es su capacidad de generalización a entornos abiertos, lograda mediante una combinación de datos diversos y una arquitectura que alinea representaciones visuales, lingüísticas y de acción.
 
 ## Capacidades
 
@@ -33,7 +33,7 @@ No se han publicado detalles sobre el proceso de entrenamiento específico de es
 - Generalización a entornos nuevos: diseñado para operar en escenarios no vistos durante el entrenamiento, según la descripción de π₀.₅.
 - Comprensión de instrucciones en lenguaje natural: puede interpretar órdenes como "coge la taza roja" y traducirlas a secuencias de movimiento.
 - Percepción visual: procesa imágenes de cámaras para localizar objetos y planificar trayectorias.
-- Integración con LeRobot: compatible con el ecosistema de entrenamiento y evaluación de HuggingFace para robótica.
+- Integración con LeRobot: compatible con el ecosistema de entrenamiento y evaluación de Hugging Face para robótica.
 - No se confirma soporte para tool calling, agentes, razonamiento multi-paso ni capacidades multimodales más allá de visión y lenguaje.
 
 ## Casos de uso
@@ -73,8 +73,8 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yorklyb/ndemo)
+- [Modelo en Hugging Face](https://huggingface.co/yorklyb/ndemo)
 - [Blog de Physical Intelligence sobre π₀.₅](https://www.physicalintelligence.company/blog/pi05)
 - [Repositorio LeRobot](https://github.com/huggingface/lerobot)
 - [Documentación de LeRobot](https://huggingface.co/docs/lerobot/index)
-- [Perfil del autor en HuggingFace](https://huggingface.co/yorklyb)
+- [Perfil del autor en Hugging Face](https://huggingface.co/yorklyb)

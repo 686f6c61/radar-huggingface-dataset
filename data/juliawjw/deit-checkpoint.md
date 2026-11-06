@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`juliawjw/deit-checkpoint` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de una arquitectura DeiT (Data-efficient Image Transformer) orientada, según su model card, a tareas de generación. El artefacto lo publica el usuario `juliawjw` y se presenta explícitamente como un punto de partida experimental: un *checkpoint* de inicialización válido para *smoke tests*, no un modelo entrenado ni evaluado. El repositorio registra 0 descargas y 0 *likes*, y un tamaño de 0.0 GB.
+`juliawjw/deit-checkpoint` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de una arquitectura DeiT (Data-efficient Image Transformer) orientada, según su model card, a tareas de generación. El artefacto lo publica el usuario `juliawjw` y se presenta explícitamente como un punto de partida experimental: un *checkpoint* de inicialización válido para *smoke tests*, no un modelo entrenado ni evaluado. El repositorio registra 0 descargas y 0 *likes*, y un tamaño de 0.0 GB.
 
 El dato objetivo más relevante es el número de parámetros: 49.600 en total, según el fichero `model.safetensors`. Conviene señalar una contradicción interna en la documentación del autor: la model card etiqueta la configuración como de escala "giant", lo que es incompatible con un recuento de 49.600 parámetros (cuatro órdenes de magnitud por debajo de cualquier variante DeiT publicada). La propia model card indica que no se reclama ninguna puntuación de *benchmark* y que el checkpoint no ha sido entrenado ni auditado.
 
@@ -42,7 +42,7 @@ No hubo entrenamiento. El propio autor indica que `model.safetensors` es un chec
 ## Casos de uso
 
 - Verificación de integridad de pesos en pipelines de despliegue: dado que `model.safetensors` es un checkpoint válido de 49.600 parámetros, puede usarse para comprobar que un pipeline de carga, validación de *shapes* y serialización funciona de extremo a extremo antes de mover modelos reales de mayor tamaño.
-- Pruebas de integración en CI/CD: el repositorio pesa 0.0 GB y el modelo ocupa menos de 1 MB, por lo que es viable incluirlo como fixture en una suite de tests que valide cargadores de safetensors, envoltorios de PyTorch o adaptadores de APIs de HuggingFace sin coste de almacenamiento ni de red.
+- Pruebas de integración en CI/CD: el repositorio pesa 0.0 GB y el modelo ocupa menos de 1 MB, por lo que es viable incluirlo como fixture en una suite de tests que valide cargadores de safetensors, envoltorios de PyTorch o adaptadores de APIs de Hugging Face sin coste de almacenamiento ni de red.
 - Investigación sobre variantes de atención: permite instrumentar y comparar atención lineal frente a atención *softmax* en un transformer de tipo DeiT, así como medir el efecto de RMSNorm y de la fusión "concat mlp" en el coste computacional y en el flujo de gradientes, con un modelo lo bastante pequeño para iterar en CPU.
 - Docencia y formación: sirve como ejemplo didáctico de estructura de repositorio de modelo (código, `config.json`, `training_args.json`, pesos) y de las diferencias entre un checkpoint de inicialización y un modelo entrenado.
 - Baseline de capacidad emparejada en experimentos controlados: la model card recomienda explícitamente comparar contra una línea base de capacidad equivalente con la misma exposición de datos, presupuesto de ajuste y semillas; este artefacto puede cubrir ese papel si se documentan los resultados por separado.
@@ -92,7 +92,7 @@ Diferencias destacables: el modelo de este repositorio usa atención lineal, RMS
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/juliawjw/deit-checkpoint
+- Repositorio en Hugging Face: https://huggingface.co/juliawjw/deit-checkpoint
 - Ficheros declarados en el repositorio: `finetune.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper de referencia de la arquitectura DeiT (no enlazado por el autor, citado aquí como contexto de la arquitectura): no disponible en la información proporcionada
 - Repositorios comparables citados en la comparativa (`facebook/deit-base-distilled-patch16-224`, `facebook/deit-tiny-patch16-224`, `google/vit-base-patch16-224`): no enlazados en la información proporcionada

@@ -34,7 +34,7 @@ El entrenamiento usa 28.401 tripletas del dataset armkh/wanderlens: una consulta
 - Manejo de consultas en tres estilos: detalle especifico, descripcion casual del ambiente y combinacion de varias preferencias.
 - Embeddings de 384 dimensiones normalizados, aptos para similitud coseno e indices vectoriales.
 - Export ONNX int8 ejecutable en CPU solo con onnxruntime, con pooling y normalizacion incluidos en el grafo.
-- Compatible con text-embeddings-inference y con endpoints de HuggingFace (tag endpoints_compatible).
+- Compatible con text-embeddings-inference y con endpoints de Hugging Face (tag endpoints_compatible).
 - No soporta tool calling, agentes, razonamiento multi-paso, vision, audio ni modo thinking: es exclusivamente un modelo de embeddings.
 - Capacidad multilingue: no disponible; solo ingles.
 
@@ -74,7 +74,7 @@ El export ONNX int8 queda a menos de 0,3 puntos de estas cifras (Recall@1 del 34
 - VRAM para inferencia: el modelo en fp32 ocupa aproximadamente 130 MB de pesos; en int8, unos 33 MB. Cabe holgadamente en cualquier GPU consumer e incluso en CPU.
 - GPU recomendadas: no requiere GPU; cualquier GPU consumer (por ejemplo, una RTX 3060 o superior) sobra para lotes grandes. En servidor, A100 o H100 solo tendrian sentido para throughput masivo por lotes.
 - Cabe en GPU consumer: si, en todas las gamas actuales, y tambien en CPU con el export ONNX int8.
-- Opciones de despliegue: sentence-transformers (PyTorch), onnxruntime con el export ONNX incluido, text-embeddings-inference y endpoints de HuggingFace (tag endpoints_compatible). No se documenta soporte explicito de vLLM ni llama.cpp.
+- Opciones de despliegue: sentence-transformers (PyTorch), onnxruntime con el export ONNX incluido, text-embeddings-inference y endpoints de Hugging Face (tag endpoints_compatible). No se documenta soporte explicito de vLLM ni llama.cpp.
 - Latencia y throughput: no disponibles. El unico dato de computo publicado es el tiempo de entrenamiento (44 minutos en Apple Silicon MPS), no de inferencia.
 
 ## Comparativa con modelos similares
@@ -101,7 +101,7 @@ La comparacion directa con el base es la unica respaldada por datos. Cualquier o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/armkh/wanderlens-embed
+- Modelo en Hugging Face: https://huggingface.co/armkh/wanderlens-embed
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Dataset de entrenamiento: https://huggingface.co/datasets/armkh/wanderlens
 - Repositorio del proyecto Wanderlens: https://github.com/armkh7/wanderlens

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`AIOKiet/lora_mbart-iwslt2015` es un repositorio publicado en HuggingFace por el usuario AIOKiet cuyo nombre indica un adaptador LoRA (Low-Rank Adaptation) aplicado sobre un modelo de la familia mBART, entrenado presumiblemente sobre el conjunto de datos IWSLT 2015 (campaña de traducción automática sobre charlas TED). El repositorio se distribuye con la librería `transformers`, contiene pesos en formato `safetensors`, está marcado como compatible con Inference Endpoints y su tamaño declarado es de 0,0 GB (redondeo que sugiere pesos de pequeño tamano, coherente con un adaptador y no con un modelo completo).
+`AIOKiet/lora_mbart-iwslt2015` es un repositorio publicado en Hugging Face por el usuario AIOKiet cuyo nombre indica un adaptador LoRA (Low-Rank Adaptation) aplicado sobre un modelo de la familia mBART, entrenado presumiblemente sobre el conjunto de datos IWSLT 2015 (campaña de traducción automática sobre charlas TED). El repositorio se distribuye con la librería `transformers`, contiene pesos en formato `safetensors`, está marcado como compatible con Inference Endpoints y su tamaño declarado es de 0,0 GB (redondeo que sugiere pesos de pequeño tamano, coherente con un adaptador y no con un modelo completo).
 
-La relevancia de este artefacto es limitada pero concreta: se trata de un ejemplo de ajuste eficiente de un modelo secuencia-a-secuencia multilingüe para una tarea de traducción específica, un patrón muy habitual en investigación académica y en prototipado rápido. No obstante, la model card es la plantilla automática de HuggingFace sin rellenar: no se documentan idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta.
+La relevancia de este artefacto es limitada pero concreta: se trata de un ejemplo de ajuste eficiente de un modelo secuencia-a-secuencia multilingüe para una tarea de traducción específica, un patrón muy habitual en investigación académica y en prototipado rápido. No obstante, la model card es la plantilla automática de Hugging Face sin rellenar: no se documentan idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta.
 
 En consecuencia, esta ficha describe el artefacto con honestidad sobre lo que se puede verificar (metadatos del Hub y convención de nombres) y marca de forma explícita todo lo que no está disponible. Cualquier uso en producción requeriría inspeccionar los pesos y el `adapter_config.json` del repositorio para determinar el modelo base exacto, el rango LoRA y el par de idiomas de destino.
 
@@ -31,7 +31,7 @@ En consecuencia, esta ficha describe el artefacto con honestidad sobre lo que se
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura efectiva, el procedimiento de entrenamiento, el numero de tokens vistos, la composicion del dataset ni la existencia de fases de RLHF o DPO. La model card incluida en el repositorio es la plantilla generada automaticamente por HuggingFace, con todos los apartados marcados como `[More Information Needed]`, incluidos los de datos de entrenamiento, hiperparametros y regimen de precision (fp32, fp16 o bf16).
+No hay informacion publicada sobre la arquitectura efectiva, el procedimiento de entrenamiento, el numero de tokens vistos, la composicion del dataset ni la existencia de fases de RLHF o DPO. La model card incluida en el repositorio es la plantilla generada automaticamente por Hugging Face, con todos los apartados marcados como `[More Information Needed]`, incluidos los de datos de entrenamiento, hiperparametros y regimen de precision (fp32, fp16 o bf16).
 
 Lo unico deducible es la convencion de nombres del repositorio: el prefijo `lora_` apunta a un ajuste por adaptadores de bajo rango, y `mbart-iwslt2015` apunta a un modelo base de la familia mBART y a un corpus de la campana IWSLT 2015. La etiqueta `arxiv:1910.09700` del Hub no es un paper del modelo: corresponde a Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", y aparece porque la plantilla de model card la incluye como referencia de la calculadora de impacto ambiental. No hay, por tanto, publicacion tecnica asociada a este artefacto.
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `AIOKiet/lora_mbart-iwslt2015` | No disponible (adaptador LoRA sobre base no especificada) | No disponible | No disponible | No disponible | Repositorio HuggingFace, 0 descargas |
+| `AIOKiet/lora_mbart-iwslt2015` | No disponible (adaptador LoRA sobre base no especificada) | No disponible | No disponible | No disponible | Repositorio Hugging Face, 0 descargas |
 | mBART-50 (`facebook/mbart-large-50`) | 610 M | 50 | 1024 tokens | MIT | Modelo base publico, ampliamente usado |
 | NLLB-200 distilado 600M (`facebook/nllb-200-distilled-600M`) | 600 M | 200 | 512 tokens | CC-BY-NC-4.0 (uso no comercial) | Modelo base publico |
 | M2M-100 418M (`facebook/m2m100_418M`) | 418 M | 100 | 1024 tokens | MIT | Modelo base publico |
@@ -100,7 +100,7 @@ La comparacion es estructural: no existen datos de evaluacion de este adaptador 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AIOKiet/lora_mbart-iwslt2015
+- Repositorio en Hugging Face: https://huggingface.co/AIOKiet/lora_mbart-iwslt2015
 - Etiqueta arXiv presente en el repositorio (Lacoste et al., 2019, sobre emisiones de ML, no sobre este modelo): https://arxiv.org/abs/1910.09700
 - Paper de mBART (referencia de la familia base, no citada en el repositorio): https://arxiv.org/abs/2001.08210
 - Paper de mBART-50 (referencia de la familia base, no citada en el repositorio): https://arxiv.org/abs/2008.00401

@@ -86,7 +86,7 @@ WebBrain-VL 2 450M se diferencia de su base en que está específicamente afinad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/webbrain-one/webbrain-vl-2-450M
+- Modelo en Hugging Face: https://huggingface.co/webbrain-one/webbrain-vl-2-450M
 - Dataset de entrenamiento: https://huggingface.co/datasets/webbrain-one/webbrain-vl-2-450M-dataset
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-450M
 - Repositorio de entrenamiento: https://github.com/esokullu/lfm-finetune

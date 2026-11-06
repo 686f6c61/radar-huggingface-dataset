@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Arquitectura | Resolucion de entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BiRefNet (original) | Swin Transformer + deformable conv | 1024x1024 | PyTorch | MIT | HuggingFace |
-| U2Net | U-Net con bloques residuales | 320x320 | PyTorch | Apache 2.0 | HuggingFace |
-| MODNet | U-Net ligero | 512x512 | PyTorch | MIT | HuggingFace |
+| BiRefNet (original) | Swin Transformer + deformable conv | 1024x1024 | PyTorch | MIT | Hugging Face |
+| U2Net | U-Net con bloques residuales | 320x320 | PyTorch | Apache 2.0 | Hugging Face |
+| MODNet | U-Net ligero | 512x512 | PyTorch | MIT | Hugging Face |
 
 La conversión Core ML de BiRefNet ofrece la ventaja de ejecución nativa en Apple, mientras que U2Net y MODNet requieren conversión adicional o uso de frameworks externos. En términos de precisión, BiRefNet suele superar a ambos en benchmarks públicos, aunque no se dispone de datos específicos para esta conversión.
 
@@ -74,7 +74,7 @@ La conversión Core ML de BiRefNet ofrece la ventaja de ejecución nativa en App
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/avencera/birefnet-coreml-gpu
+- Repositorio Hugging Face: https://huggingface.co/avencera/birefnet-coreml-gpu
 - Modelo original BiRefNet: https://huggingface.co/ZhengPeng7/BiRefNet
 - Repositorio de conversión Core ML: https://github.com/imperatormk/coreml-birefnet
 - Artículo sobre BiRefNet como base de eliminadores de fondos: https://www.opensourceprojects.dev/post/birefnet

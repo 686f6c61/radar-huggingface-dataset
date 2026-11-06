@@ -91,7 +91,7 @@ La diferencia clave frente a los Whisper genericos es el ajuste especifico para 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CaptainBlt/diktum-whisper-turbo-ru-codeswitch
+- Repositorio Hugging Face: https://huggingface.co/CaptainBlt/diktum-whisper-turbo-ru-codeswitch
 - Modelo base inmediato: https://huggingface.co/coriollon/whisper-large-v3-turbo-russian-codeswitch
 - Arbol de ficheros del modelo base: https://huggingface.co/coriollon/whisper-large-v3-turbo-russian-codeswitch/tree/main
 - Whisper (OpenAI), repositorio oficial: https://github.com/openai/whisper

@@ -70,9 +70,9 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/realrebelai/MiniMax-Music-3_GGUFs
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/realrebelai/MiniMax-Music-3_GGUFs
 - Modelo base original: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Repack fp32 de Comfy-Org (text encoder y VAE): https://huggingface.co/Comfy-Org/MiniMax-Music-3
 - Nodo ComfyUI-GGUF: https://github.com/city96/ComfyUI-GGUF
 - Repositorio GitHub de MiniMax-Music3: https://github.com/MiniMax-AI/MiniMax-Music3
-- Espacio de demostración en HuggingFace: https://huggingface.co/spaces/MiniMaxAI/MiniMax-Music3
+- Espacio de demostración en Hugging Face: https://huggingface.co/spaces/MiniMaxAI/MiniMax-Music3

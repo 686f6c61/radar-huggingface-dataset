@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/astrocyte-productions/gemma-4-12B-it-qat-4bit
+- Modelo en Hugging Face: https://huggingface.co/astrocyte-productions/gemma-4-12B-it-qat-4bit
 - Checkpoint base: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Repositorio de mlx-vlm: no disponible en la información proporcionada (referenciado como dependencia)

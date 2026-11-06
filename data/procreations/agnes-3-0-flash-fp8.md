@@ -109,7 +109,7 @@ La comparativa frente a modelos de terceros de ~33 B multimodales queda como no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProCreations/Agnes-3.0-Flash-FP8
+- Modelo en Hugging Face: https://huggingface.co/ProCreations/Agnes-3.0-Flash-FP8
 - Version NVFP4 del mismo autor: https://huggingface.co/ProCreations/Agnes-3.0-Flash-NVFP4
 - Checkpoint base: https://huggingface.co/Agnes-AI/Agnes-3.0-Flash
 - Comparacion completa FP8 frente a NVFP4 (ajustes, limitaciones y respuestas en bruto): https://huggingface.co/ProCreations/Agnes-3.0-Flash-FP8/blob/main/comparisons/fp8-vs-nvfp4/comparison.md

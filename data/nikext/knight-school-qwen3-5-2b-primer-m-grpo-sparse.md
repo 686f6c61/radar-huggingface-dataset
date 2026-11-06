@@ -75,8 +75,8 @@ Hallazgos con diferencias pareadas: el primer eleva la tasa de resolucion tras R
 
 | Modelo | Parametros | Contexto | Tasa de resolucion en test2000 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Knight School Qwen3.5-2B primer-M + GRPO sparse | 2,21 B | no disponible | 35,4% | Apache-2.0 | HuggingFace (nikext) |
-| Qwen3.5-2B base (zero-shot) | 2,21 B | no disponible | 4,1% | Apache-2.0 | HuggingFace (Qwen) |
+| Knight School Qwen3.5-2B primer-M + GRPO sparse | 2,21 B | no disponible | 35,4% | Apache-2.0 | Hugging Face (nikext) |
+| Qwen3.5-2B base (zero-shot) | 2,21 B | no disponible | 4,1% | Apache-2.0 | Hugging Face (Qwen) |
 | Qwen3.5-2B base -> GRPO sparse (sin primer) | 2,21 B | no disponible | 28,0% | Apache-2.0 | no publicado como checkpoint en la informacion disponible |
 | Stockfish 19, 1 nodo (referencia de motor, no LLM) | no aplica | no aplica | 68,6% | GPL-3.0 | Distribucion publica de Stockfish |
 
@@ -96,7 +96,7 @@ No se dispone de datos de otros LLM ajustados para puzzles de ajedrez en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikext/knight-school-qwen3.5-2b-primer-m-grpo-sparse
+- Modelo en Hugging Face: https://huggingface.co/nikext/knight-school-qwen3.5-2b-primer-m-grpo-sparse
 - Repositorio del proyecto: https://github.com/nikext/knight-school
 - Documento de resultados: docs/RESULTS.md dentro del repositorio del proyecto
 - Navegador de puzzles y respuestas: https://nikext.github.io/knight-school/

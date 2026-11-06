@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mohammed422/invoices-donut-model-v3 es un ajuste fino del modelo Donut (Document Understanding Transformer) orientado a la extraccion de informacion estructurada de facturas. Se trata de un modelo vision-encoder-decoder de tipo image-text-to-text con 202.098.104 parametros (~202 M), publicado en HuggingFace por el usuario Mohammed422 bajo la libreria transformers y con pesos en formato safetensors. Su enfoque es OCR-free: procesa directamente la imagen del documento y genera texto estructurado sin depender de un motor OCR externo.
+Mohammed422/invoices-donut-model-v3 es un ajuste fino del modelo Donut (Document Understanding Transformer) orientado a la extraccion de informacion estructurada de facturas. Se trata de un modelo vision-encoder-decoder de tipo image-text-to-text con 202.098.104 parametros (~202 M), publicado en Hugging Face por el usuario Mohammed422 bajo la libreria transformers y con pesos en formato safetensors. Su enfoque es OCR-free: procesa directamente la imagen del documento y genera texto estructurado sin depender de un motor OCR externo.
 
 El modelo se apoya en la arquitectura Donut original, que combina un encoder visual Swin Transformer con un decoder autorregresivo tipo BART, tal como se refleja en la etiqueta vision-encoder-decoder y en el pipeline declarado. La etiqueta arxiv:1910.09700 asociada al repositorio corresponde a la cita que aparece en la plantilla automatica de model card (Lacoste et al., 2019, sobre emisiones de carbono) y no a la publicacion tecnica de Donut; conviene tenerlo en cuenta para no atribuir mal la procedencia.
 
@@ -62,17 +62,17 @@ Estimaciones derivadas del recuento de parametros (202.098.104) y de la sobrecar
 - VRAM estimada para inferencia: del orden de 1-2 GB en fp16 para una sola imagen, con margen para activaciones y para el procesado del documento a resolucion nativa.
 - GPU consumer: si, cabe holgadamente en tarjetas con 6-8 GB de VRAM o mas (RTX 3060, RTX 4060, RTX 4090, etc.), incluso con varias instancias en paralelo.
 - GPU de datacenter: A100, H100 o L40S son suficientes de sobra; se pueden ejecutar muchos procesos concurrentes en una sola GPU.
-- Opciones de despliegue: transformers (VisionEncoderDecoderModel), HuggingFace Inference Endpoints (la etiqueta endpoints_compatible esta presente) y exportacion a ONNX Runtime. vLLM, llama.cpp, Ollama y TGI no tienen soporte documentado para esta arquitectura concreta en el repositorio.
+- Opciones de despliegue: transformers (VisionEncoderDecoderModel), Hugging Face Inference Endpoints (la etiqueta endpoints_compatible esta presente) y exportacion a ONNX Runtime. vLLM, llama.cpp, Ollama y TGI no tienen soporte documentado para esta arquitectura concreta en el repositorio.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Mohammed422/invoices-donut-model-v3 | 202 M | no disponible | no disponible | HuggingFace | Ajuste de facturas, model card sin completar |
-| naver-clova-ix/donut-base | ~200 M | no disponible | MIT (repositorio original clovaai/donut) | HuggingFace | Modelo base de la familia Donut, sin ajuste de facturas |
-| Mohammed422/invoices-donut-model-v1 | no disponible | no disponible | no disponible | HuggingFace | Version anterior del mismo autor |
-| scharnot/donut-invoices | no disponible | no disponible | no disponible | HuggingFace | Ajuste de Donut para facturas de otro autor |
+| Mohammed422/invoices-donut-model-v3 | 202 M | no disponible | no disponible | Hugging Face | Ajuste de facturas, model card sin completar |
+| naver-clova-ix/donut-base | ~200 M | no disponible | MIT (repositorio original clovaai/donut) | Hugging Face | Modelo base de la familia Donut, sin ajuste de facturas |
+| Mohammed422/invoices-donut-model-v1 | no disponible | no disponible | no disponible | Hugging Face | Version anterior del mismo autor |
+| scharnot/donut-invoices | no disponible | no disponible | no disponible | Hugging Face | Ajuste de Donut para facturas de otro autor |
 
 Los datos de rendimiento comparado no estan disponibles en la informacion consultada.
 
@@ -90,7 +90,7 @@ Los datos de rendimiento comparado no estan disponibles en la informacion consul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mohammed422/invoices-donut-model-v3
+- Modelo en Hugging Face: https://huggingface.co/Mohammed422/invoices-donut-model-v3
 - Version anterior del mismo autor: https://huggingface.co/Mohammed422/invoices-donut-model-v1
 - Ajuste de Donut para facturas de otro autor: https://huggingface.co/scharnot/donut-invoices
 - Repositorio de extraccion de facturas con Donut: https://github.com/vanshkapadia11/Invoice-Extraction-AI

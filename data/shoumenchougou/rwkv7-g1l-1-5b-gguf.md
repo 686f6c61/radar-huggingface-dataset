@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shoumenchougou/RWKV7-G1l-1.5B-GGUF
+- Hugging Face: https://huggingface.co/shoumenchougou/RWKV7-G1l-1.5B-GGUF
 - Modelo base: https://huggingface.co/BlinkDL/rwkv7-g1
 - Checkpoint original: https://huggingface.co/BlinkDL/rwkv7-g1/blob/11e3c50128e479898eee79c48831a95cf3e21d91/rwkv7-g1l-1.5b-20261031-ctx34304.pth
 - Paper RWKV-7: https://arxiv.org/abs/2503.14456v2

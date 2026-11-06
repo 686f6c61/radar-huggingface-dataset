@@ -22,7 +22,7 @@ La relevancia practica de esta publicacion es doble: por un lado, ofrece cuantiz
 | Formato de pesos | GGUF (version cuantizada). El modelo base se distribuye en safetensors |
 | Modelo base | logic65/Whittle-Qwen-3.8-35B-A3B |
 | Tamano del repositorio | 171,8 GB |
-| Fecha de publicacion | 19 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 19 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -106,7 +106,7 @@ Frente a Qwen3-30B-A3B, el competidor mas directo por perfil MoE y activacion, l
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Whittle-Qwen-3.8-35B-A3B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Whittle-Qwen-3.8-35B-A3B-GGUF
 - Modelo base: https://huggingface.co/logic65/Whittle-Qwen-3.8-35B-A3B
 - Pagina de descargas del cuantizador para este modelo: https://hf.tst.eu/model#Whittle-Qwen-3.8-35B-A3B-GGUF
 - Guia de uso de archivos GGUF de TheBloke: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

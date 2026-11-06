@@ -113,7 +113,7 @@ La informacion disponible solo permite comparar contra variantes dentro del mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiftedx/MiniCPM-V-4.7-35B-A3B-Attention8-BF16Recurrence-MLX-MTPLX
+- Modelo en Hugging Face: https://huggingface.co/Shiftedx/MiniCPM-V-4.7-35B-A3B-Attention8-BF16Recurrence-MLX-MTPLX
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - Revision concreta del padre BF16 usada en la conversion: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B/tree/355f97c3da689a4ff51ab3b84acf2be58ead1b94
 - Draft DSpark del publicador: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-DSpark/tree/5facb75c251ffd524524a544c1f5fd97ba0d6c5c

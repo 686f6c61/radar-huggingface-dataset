@@ -84,7 +84,7 @@ La comparativa más directa es contra las cuantizaciones planas del mismo modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mudler/Qwen3.8-27B-APEX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mudler/Qwen3.8-27B-APEX-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Proyecto LocalAI: https://github.com/mudler/LocalAI
 - Proyecto APEX: https://github.com/mudler/apex-quant

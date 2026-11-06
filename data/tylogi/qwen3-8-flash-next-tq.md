@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tylogi/Qwen3.8-Flash-Next-TQ es un modelo publicado en HuggingFace por el usuario Tylogi bajo licencia MIT. Por el nombre se infiere que se trata de una variante o derivado de la familia Qwen 3.8, presumiblemente un modelo de lenguaje de gran tamano con alguna modificacion de cuantizacion o ajuste fino (el sufijo "TQ" y "Flash" sugieren una version optimizada o cuantizada). Sin embargo, la model card publicada no contiene ninguna descripcion tecnica, y el repositorio no incluye pipeline declarado ni idiomas soportados.
+Tylogi/Qwen3.8-Flash-Next-TQ es un modelo publicado en Hugging Face por el usuario Tylogi bajo licencia MIT. Por el nombre se infiere que se trata de una variante o derivado de la familia Qwen 3.8, presumiblemente un modelo de lenguaje de gran tamano con alguna modificacion de cuantizacion o ajuste fino (el sufijo "TQ" y "Flash" sugieren una version optimizada o cuantizada). Sin embargo, la model card publicada no contiene ninguna descripcion tecnica, y el repositorio no incluye pipeline declarado ni idiomas soportados.
 
 El dato mas relevante disponible es el tamano del repositorio: 886,9 GB. Este volumen es coherente con pesos en precision completa (o multiples variantes de cuantizacion) de un modelo de decenas o cientos de miles de millones de parametros, pero no permite determinar con exactitud el numero de parametros ni la arquitectura. No se dispone de informacion sobre contexto, datos de entrenamiento ni benchmarks.
 
@@ -73,4 +73,4 @@ No disponible. No se conocen modelos comparables documentados para este reposito
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tylogi/Qwen3.8-Flash-Next-TQ
+- Hugging Face: https://huggingface.co/Tylogi/Qwen3.8-Flash-Next-TQ

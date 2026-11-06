@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Yichenchenjo/3d-scene-understanding-practice` no es un modelo de inteligencia artificial, sino un repositorio de notas de investigacion sobre comprension de escenas 3D publicado en HuggingFace. Su propio README lo describe como un conjunto estructurado de notas con referencias de evaluacion y preguntas abiertas, en el que los planes y las hipotesis se mantienen deliberadamente separados de los resultados ya completados. El autor no declara ningun checkpoint entrenado, ni codigo liberado, ni mejoras medidas sobre benchmarks.
+`Yichenchenjo/3d-scene-understanding-practice` no es un modelo de inteligencia artificial, sino un repositorio de notas de investigacion sobre comprension de escenas 3D publicado en Hugging Face. Su propio README lo describe como un conjunto estructurado de notas con referencias de evaluacion y preguntas abiertas, en el que los planes y las hipotesis se mantienen deliberadamente separados de los resultados ya completados. El autor no declara ningun checkpoint entrenado, ni codigo liberado, ni mejoras medidas sobre benchmarks.
 
-El repositorio contiene dos ficheros segun la documentacion: `analysis.md` (artefacto principal) y `README.md`. El tamano declarado del repositorio es de 0.0 GB y acumula 0 descargas y 0 "likes" en el momento de la consulta. La etiqueta `safetensors` y la etiqueta `transformer` aparecen en los metadatos de HuggingFace, pero los metadatos de safetensors solo reportan un total de 16.576 parametros, una cifra que no corresponde a ningun modelo funcional y que probablemente sea un artefacto de indexacion del propio Hub.
+El repositorio contiene dos ficheros segun la documentacion: `analysis.md` (artefacto principal) y `README.md`. El tamano declarado del repositorio es de 0.0 GB y acumula 0 descargas y 0 "likes" en el momento de la consulta. La etiqueta `safetensors` y la etiqueta `transformer` aparecen en los metadatos de Hugging Face, pero los metadatos de safetensors solo reportan un total de 16.576 parametros, una cifra que no corresponde a ningun modelo funcional y que probablemente sea un artefacto de indexacion del propio Hub.
 
 Por tanto, esta ficha se redacta como advertencia util para desarrolladores e investigadores: si se busca un modelo para comprension de escenas 3D, este repositorio no lo proporciona. No hay pesos utilizables, no hay pipeline declarado, no hay benchmarks y no hay informacion sobre datos de entrenamiento. Es material de lectura y planificacion de investigacion, sujeto a licencia CC BY 4.0.
 
@@ -92,7 +92,7 @@ No disponible. Este repositorio no es comparable con modelos de comprension de e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yichenchenjo/3d-scene-understanding-practice
-- Ficheros declarados en el repositorio: `analysis.md` (artefacto principal) y `README.md` (documentacion), accesibles desde la pestana de ficheros de la pagina de HuggingFace.
+- Hugging Face: https://huggingface.co/Yichenchenjo/3d-scene-understanding-practice
+- Ficheros declarados en el repositorio: `analysis.md` (artefacto principal) y `README.md` (documentacion), accesibles desde la pestana de ficheros de la pagina de Hugging Face.
 - Busqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos por la busqueda corresponden a guias de viaje sobre Brasil y no guardan ninguna relacion con este repositorio, por lo que no se incluyen.
 - Papers, blogs, repositorios o demos adicionales: no disponibles.

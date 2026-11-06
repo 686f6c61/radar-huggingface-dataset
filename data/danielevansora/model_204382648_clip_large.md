@@ -61,7 +61,7 @@ No se puede establecer una comparativa directa con otros modelos porque no se di
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/danielevansora/model_204382648_clip_large)
+- [Repositorio Hugging Face](https://huggingface.co/danielevansora/model_204382648_clip_large)
 - [CLIP de OpenAI - GitHub](https://github.com/openai/CLIP) (referencia general de la arquitectura, no del modelo específico)
 - [CLIP de OpenAI - Página oficial](https://openai.com/index/clip/) (referencia general)
 

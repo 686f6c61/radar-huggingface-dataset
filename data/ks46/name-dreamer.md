@@ -2,7 +2,7 @@
 
 ## Resumen
 
-name-dreamer es un modelo de lenguaje byte-level de tipo GPT decoder-only, publicado por el usuario ks46 en HuggingFace, especializado en una única tarea: generar nombres de usuario sintéticos con aspecto de identificador de inicio de sesión (login-style usernames). No es un modelo de propósito general: se trata de un modelo de dominio muy estrecho, entrenado exclusivamente sobre un corpus de 90.505.453 nombres de usuario únicos extraídos de 18 fuentes públicas. Con 56.882.688 parámetros, 8 capas, anchura de 768, 4 cabezas de atención y una capa SwiGLU de 2048, su tamaño queda en el rango de los modelos pequeños que caben holgadamente en cualquier GPU de consumo, e incluso en CPU.
+name-dreamer es un modelo de lenguaje byte-level de tipo GPT decoder-only, publicado por el usuario ks46 en Hugging Face, especializado en una única tarea: generar nombres de usuario sintéticos con aspecto de identificador de inicio de sesión (login-style usernames). No es un modelo de propósito general: se trata de un modelo de dominio muy estrecho, entrenado exclusivamente sobre un corpus de 90.505.453 nombres de usuario únicos extraídos de 18 fuentes públicas. Con 56.882.688 parámetros, 8 capas, anchura de 768, 4 cabezas de atención y una capa SwiGLU de 2048, su tamaño queda en el rango de los modelos pequeños que caben holgadamente en cualquier GPU de consumo, e incluso en CPU.
 
 Su relevancia práctica es acotada pero concreta: sirve como generador de datos sintéticos para pruebas, aumento de datos, sustitución de PII en registros y validación de sistemas de registro de usuarios. El modelo se entrenó durante 60.000 iteraciones con lotes de 512 secuencias de 128 bytes, y el autor reporta métricas de calidad medibles y reproducibles (3,5619 bits por carácter en el conjunto de validación, 100 % de muestras válidas, 100 % únicas y 93,5 % novedosas respecto al corpus). Además, se publican variantes cuantizadas a int8 e int4 con pérdida de calidad documentada, junto con un kernel en Rust (ndgen) que exporta la versión int8 para ejecución en x86-64 con AVX2.
 
@@ -22,7 +22,7 @@ El modelo no incluye model card traducida a otros idiomas ni declara idiomas sop
 | Formato de pesos | PyTorch: `ckpt.pt` (fp32, incluye modelo, optimizador, configuración e iteración), `quant-*.pt` (checkpoints con cuantización simulada). Formato propio: `model.ndq` (int8 grupo 64) para el kernel Rust. No se publican pesos en safetensors ni GGUF |
 | Vocabulario | 256 bytes, con el byte 0 como token de parada |
 | Tamano del repositorio | 1,4 GB |
-| Fecha de publicacion en HuggingFace | 2026-09-18 (segun los metadatos del repositorio) |
+| Fecha de publicacion en Hugging Face | 2026-09-18 (segun los metadatos del repositorio) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -127,6 +127,6 @@ No disponible. La información proporcionada no incluye datos de modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ks46/name-dreamer
+- Modelo en Hugging Face: https://huggingface.co/ks46/name-dreamer
 - Dataset de entrenamiento: https://huggingface.co/datasets/ks46/usernames
 - La búsqueda web realizada no devolvió resultados relevantes: únicamente enlaces genéricos a YouTube sin relación con el modelo. No se dispone de papers, blogs, repositorios ni demos adicionales en la información proporcionada.

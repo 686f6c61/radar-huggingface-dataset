@@ -4,7 +4,7 @@
 
 Este repositorio no contiene un modelo completo, sino un adaptador LoRA (PEFT) entrenado sobre `NynaeveProj/Llama-3.1-8B-4bit`, una versión cuantizada a 4 bits del conocido Llama 3.1 8B de Meta. Lo publica el usuario NynaeveProj y el artefacto ocupa 0,3 GB, un tamano coherente con pesos de adaptador y no con un checkpoint completo. El pipeline declarado es `text-generation` y la libreria de referencia es PEFT 0.19.1.
 
-El nombre del repositorio sugiere un ajuste supervisado tipo Alpaca (`alpaca-sft`) sobre una mezcla de datos identificada como `ce-pku-suan2-neg2.0-2.0`, presumiblemente una combinacion de instrucciones en chino con ejemplos negativos o de rechazo. Esta lectura es una inferencia a partir de la nomenclatura: la model card es la plantilla generica de HuggingFace sin rellenar y no documenta dataset, hiperparametros ni procedimiento de entrenamiento.
+El nombre del repositorio sugiere un ajuste supervisado tipo Alpaca (`alpaca-sft`) sobre una mezcla de datos identificada como `ce-pku-suan2-neg2.0-2.0`, presumiblemente una combinacion de instrucciones en chino con ejemplos negativos o de rechazo. Esta lectura es una inferencia a partir de la nomenclatura: la model card es la plantilla generica de Hugging Face sin rellenar y no documenta dataset, hiperparametros ni procedimiento de entrenamiento.
 
 Su relevancia practica es limitada y muy acotada: no hay descargas, no hay likes, la licencia no esta declarada y no existen resultados de evaluacion. Es util unicamente como ejemplo de adaptador LoRA experimental o como punto de partida reproducible para quien quiera inspeccionar la receta de ajuste sobre un Llama 3.1 8B cuantizado.
 
@@ -84,7 +84,7 @@ La comparación real solo es posible contra el Llama 3.1 8B original; los demás
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NynaeveProj/Llama-3.1-8B-4bit-alpaca-sft-ce-pku-suan2-neg2.0-2.0
+- Repositorio Hugging Face: https://huggingface.co/NynaeveProj/Llama-3.1-8B-4bit-alpaca-sft-ce-pku-suan2-neg2.0-2.0
 - Modelo base del adaptador: https://huggingface.co/NynaeveProj/Llama-3.1-8B-4bit
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre impacto ambiental; aparece por la plantilla, no describe este modelo): https://arxiv.org/abs/1910.09700
 - Documentación de PEFT: https://huggingface.co/docs/peft

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio lolipopsuper00/Emotion-Detection es un espacio alojado en HuggingFace por el usuario lolipopsuper00 y publicado bajo licencia MIT. Por su identificador, el proyecto se presenta como un modelo orientado a la detección de emociones (presumiblemente clasificación de texto en categorías emocionales), pero la documentación pública no permite confirmarlo: la model card se limita a la línea de licencia y el tamaño del repositorio es de 0,0 GB.
+El repositorio lolipopsuper00/Emotion-Detection es un espacio alojado en Hugging Face por el usuario lolipopsuper00 y publicado bajo licencia MIT. Por su identificador, el proyecto se presenta como un modelo orientado a la detección de emociones (presumiblemente clasificación de texto en categorías emocionales), pero la documentación pública no permite confirmarlo: la model card se limita a la línea de licencia y el tamaño del repositorio es de 0,0 GB.
 
 Los metadatos registran 0 descargas y 0 likes, sin pipeline declarado, sin idiomas soportados y sin etiquetas técnicas más allá de `license:mit`, `endpoints_compatible` y `region:us`. La creación y la última actualización están fechadas el 11 de septiembre de 2026, con 16 minutos de diferencia entre ambas. El conjunto de estos indicadores (tamaño nulo, ausencia de documentación, cero interacciones) apunta a un repositorio vacío o a un marcador de posición sin pesos publicados, por lo que no es posible cargar, ejecutar ni evaluar ningún artefacto a partir de él.
 
@@ -21,7 +21,7 @@ Esta ficha recoge por tanto únicamente la información verificable (identificad
 | Licencia | MIT |
 | Formato de pesos | no disponible (no hay archivos publicados en el repositorio) |
 | Tarea declarada | no disponible (el identificador sugiere detección de emociones; sin confirmar) |
-| Pipeline en HuggingFace | no declarado |
+| Pipeline en Hugging Face | no declarado |
 | Descargas | 0 |
 | Likes | 0 |
 | Tamaño del repositorio | 0,0 GB |
@@ -70,7 +70,7 @@ No es posible establecer una comparativa rigurosa: el modelo analizado no expone
 | Modelo | Parámetros | Contexto | Rendimiento publicado | Licencia | Disponibilidad de pesos |
 |---|---|---|---|---|---|
 | lolipopsuper00/Emotion-Detection | no disponible | no disponible | no disponible | MIT | no (repositorio de 0,0 GB) |
-| Clasificadores de emociones basados en DistilRoBERTa/BERT disponibles en HuggingFace | no verificado en esta búsqueda | no verificado | no verificado | no verificado | sí, según cada repositorio |
+| Clasificadores de emociones basados en DistilRoBERTa/BERT disponibles en Hugging Face | no verificado en esta búsqueda | no verificado | no verificado | no verificado | sí, según cada repositorio |
 | Modelos de detección de emociones faciales (visión por computador, Roboflow Universe) | no verificado | no aplicable | no verificado | no verificado | parcialmente (según proyecto) |
 
 Las dos filas alternativas se incluyen únicamente como categorías de referencia detectadas en la búsqueda web; sus especificaciones no se han verificado en esta consulta y no deben tomarse como datos confirmados.
@@ -90,7 +90,7 @@ Las dos filas alternativas se incluyen únicamente como categorías de referenci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lolipopsuper00/Emotion-Detection
+- Repositorio en Hugging Face: https://huggingface.co/lolipopsuper00/Emotion-Detection
 - No se han encontrado enlaces relevantes sobre este modelo en la búsqueda web. Los resultados obtenidos no guardan relación con el repositorio y se listan solo a efectos de trazabilidad:
   - Pre Trained Model For Emotion Detection (dataset de Kaggle, CNN con TensorFlow/Keras para detección de emociones): https://www.kaggle.com/datasets/abhisheksingh016/machine-model-for-emotion-detection
   - Facial emotion recognition (modelo de visión por computador en Roboflow Universe): https://universe.roboflow.com/uni-o612z/facial-emotion-recognition

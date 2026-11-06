@@ -76,10 +76,10 @@ Los datos de los modelos alternativos no estan verificados en la información pr
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-0.6B-openjev | 596 M | 4.096 tok de entrenamiento (no se declara más) | Decisión tipada, salida de una letra | Apache 2.0 | HuggingFace, GGUF y NVFP4 |
-| Qwen/Qwen3-0.6B-Base | ≈0,6 B | No disponible en la información proporcionada | Modelo base generalista | Apache 2.0 (heredada) | HuggingFace |
-| Qwen3-0.6B (instruct oficial) | ≈0,6 B | No disponible en la información proporcionada | Instrucciones generales y conversación | Apache 2.0 (heredada) | HuggingFace |
-| Qwen2.5-0.5B-Instruct | ≈0,5 B | No disponible en la información proporcionada | Instrucciones generales | Apache 2.0 (heredada) | HuggingFace |
+| Qwen3-0.6B-openjev | 596 M | 4.096 tok de entrenamiento (no se declara más) | Decisión tipada, salida de una letra | Apache 2.0 | Hugging Face, GGUF y NVFP4 |
+| Qwen/Qwen3-0.6B-Base | ≈0,6 B | No disponible en la información proporcionada | Modelo base generalista | Apache 2.0 (heredada) | Hugging Face |
+| Qwen3-0.6B (instruct oficial) | ≈0,6 B | No disponible en la información proporcionada | Instrucciones generales y conversación | Apache 2.0 (heredada) | Hugging Face |
+| Qwen2.5-0.5B-Instruct | ≈0,5 B | No disponible en la información proporcionada | Instrucciones generales | Apache 2.0 (heredada) | Hugging Face |
 
 Frente a las alternativas, la diferencia no es de rendimiento general sino de contrato de salida: los modelos instruct pueden responder en texto libre y fallar el formato, mientras que este ajuste garantiza la letra de etiqueta en el 100 % de los casos medidos, a costa de perder cualquier capacidad conversacional.
 
@@ -100,7 +100,7 @@ Frente a las alternativas, la diferencia no es de rendimiento general sino de co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iromu/Qwen3-0.6B-openjev
+- Modelo en Hugging Face: https://huggingface.co/iromu/Qwen3-0.6B-openjev
 - Cuantizaciones GGUF: https://huggingface.co/iromu/Qwen3-0.6B-openjev-GGUF
 - Checkpoint NVFP4: https://huggingface.co/iromu/Qwen3-0.6B-openjev-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base

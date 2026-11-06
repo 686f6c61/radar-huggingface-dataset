@@ -69,8 +69,8 @@ No se dispone de datos verificados de alternativas en la informacion proporciona
 
 | Modelo | Tarea | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| american-stories-onnx (layout) | Deteccion de regiones en periodicos historicos | no disponible | no aplica | no disponible | CC-BY-4.0 | HuggingFace (0 descargas) |
-| american-stories-onnx (line) | Deteccion de lineas de texto | no disponible | no aplica | no disponible | CC-BY-4.0 | HuggingFace (0 descargas) |
+| american-stories-onnx (layout) | Deteccion de regiones en periodicos historicos | no disponible | no aplica | no disponible | CC-BY-4.0 | Hugging Face (0 descargas) |
+| american-stories-onnx (line) | Deteccion de lineas de texto | no disponible | no aplica | no disponible | CC-BY-4.0 | Hugging Face (0 descargas) |
 | DocLayout-YOLO | Analisis de maquetacion de documentos | no disponible | no aplica | no disponible | no disponible | Repositorio publico en GitHub |
 | Detectores genericos de maquetacion basados en YOLO o Detectron2 | Analisis de maquetacion | no disponible | no aplica | no disponible | variable segun proyecto | Repositorios publicos |
 
@@ -83,13 +83,13 @@ La diferencia principal frente a alternativas genericas es el dominio de entrena
 - No se especifican las clases de salida, la resolucion de entrada esperada ni los umbrales de confianza recomendados, lo que obliga a calibrar el modelo en cada pipeline.
 - Los parametros totales, el dataset de entrenamiento exacto y cualquier metrica de calidad estan sin documentar, lo que dificulta estimar su comportamiento antes de desplegarlo.
 - La licencia declarada del repositorio es CC-BY-4.0, que permite uso comercial siempre que se atribuya la autoria. Sin embargo, conviene verificar la licencia aplicable al codigo y a los pesos originales de YOLOv8 de Ultralytics utilizados en el entrenamiento, asi como las condiciones del proyecto American Stories, antes de un uso comercial en produccion.
-- El repositorio registra cero descargas y cero valoraciones, y esta creado y actualizado el 2026-09-12 segun los metadatos de HuggingFace, por lo que no existe validacion comunitaria ni historial de uso.
+- El repositorio registra cero descargas y cero valoraciones, y esta creado y actualizado el 2026-09-12 segun los metadatos de Hugging Face, por lo que no existe validacion comunitaria ni historial de uso.
 - Uno de los ficheros fue reemplazado en el pasado por una copia incorrecta, segun indica la propia model card; aunque la version actual se corrigio desde el Dropbox oficial, conviene verificar el md5 al descargar los pesos.
 - La busqueda web realizada no ha devuelto informacion tecnica relevante sobre el modelo: los resultados obtenidos eran paginas de soporte de Microsoft sin relacion con el repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NealCaren/american-stories-onnx
+- Repositorio en Hugging Face: https://huggingface.co/NealCaren/american-stories-onnx
 - Herramienta `newspaper-ocr` (backend `AsYoloDetector`): https://github.com/nealcaren/newspaper-ocr
 - Proyecto American Stories (NeurIPS 2023): https://github.com/dell-research-harvard/AmericanStories
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la busqueda web realizada.

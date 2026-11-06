@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored-Impulsive es un modelo de generacion de texto derivado de la familia Qwen3, publicado por el usuario Sorenvza en HuggingFace. Se trata de un merge en precision BF16 nativa de un adaptador LoRA sobre el modelo base `orcarouter/Qwen3.8-27B-Uncensored`, que a su vez parte de `Qwen/Qwen3.8-27B`. El fine-tuning se orienta a un estilo conversacional con una persona de personaje fuerte y a un uso bilingue indonesio-ingles, sin filtrado de contenido adicional sobre el modelo base.
+Qwen3.8-27B-Uncensored-Impulsive es un modelo de generacion de texto derivado de la familia Qwen3, publicado por el usuario Sorenvza en Hugging Face. Se trata de un merge en precision BF16 nativa de un adaptador LoRA sobre el modelo base `orcarouter/Qwen3.8-27B-Uncensored`, que a su vez parte de `Qwen/Qwen3.8-27B`. El fine-tuning se orienta a un estilo conversacional con una persona de personaje fuerte y a un uso bilingue indonesio-ingles, sin filtrado de contenido adicional sobre el modelo base.
 
 El modelo cuenta con 26.895.998.464 parametros (aproximadamente 26,9 mil millones) almacenados en safetensors, con un repositorio de 53,8 GB en BF16. La arquitectura declarada en los tags es `qwen3_5_text`, propia de la familia Qwen3, y el entrenamiento se realizo con LoRA de rango 32 sobre los modulos de atencion y MLP, con perdida calculada unicamente sobre los tokens de respuesta del asistente.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Uncensored-Impulsive | 26,9B | no disponible (uso documentado a 16K) | Apache 2.0 | HuggingFace, 0 descargas | Merge LoRA experimental, bilingue id/en |
-| Qwen/Qwen3.8-27B (base) | 27B (segun nombre) | no disponible en la informacion | no disponible en la informacion | HuggingFace | Modelo base original, con filtrado estandar |
-| orcarouter/Qwen3.8-27B-Uncensored | 27B (segun nombre) | no disponible en la informacion | no disponible en la informacion | HuggingFace | Base sin censura sobre la que se aplica el LoRA |
+| Qwen3.8-27B-Uncensored-Impulsive | 26,9B | no disponible (uso documentado a 16K) | Apache 2.0 | Hugging Face, 0 descargas | Merge LoRA experimental, bilingue id/en |
+| Qwen/Qwen3.8-27B (base) | 27B (segun nombre) | no disponible en la informacion | no disponible en la informacion | Hugging Face | Modelo base original, con filtrado estandar |
+| orcarouter/Qwen3.8-27B-Uncensored | 27B (segun nombre) | no disponible en la informacion | no disponible en la informacion | Hugging Face | Base sin censura sobre la que se aplica el LoRA |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de los modelos comparables en la informacion proporcionada, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
 
@@ -82,6 +82,6 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sorenvza/Qwen3.8-27B-Uncensored-Impulsive
+- Hugging Face: https://huggingface.co/Sorenvza/Qwen3.8-27B-Uncensored-Impulsive
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo base sin censura: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored

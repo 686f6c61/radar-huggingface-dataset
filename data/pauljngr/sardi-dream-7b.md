@@ -4,7 +4,7 @@
 
 SARDI (Self-Augmenting Retrieval for Diffusion Language Models) es un checkpoint basado en Dream-7B, un modelo de lenguaje de difusión, desarrollado por Paul Jünger y colaboradores para el trabajo presentado en ICML 2026. El modelo intercala recuperación de documentos (retrieval) con el proceso de denoising propio de los modelos de difusión: en cada paso de denoising construye una consulta a partir de la secuencia parcialmente generada, recupera evidencia fresca de un corpus externo y condiciona el siguiente paso sobre esa evidencia. Esto permite que tokens futuros especulativos informen la recuperación antes de que sean estables, mejorando tareas de razonamiento multi-hop y respuesta a preguntas que requieren conocimiento externo.
 
-El checkpoint se obtiene mediante fine-tuning de Dream-v0-Instruct-7B (Ye et al., 2025) sobre los conjuntos de entrenamiento de 2WikiMultiHopQA y HotpotQA, con trazas de razonamiento (chain-of-thought) generadas por GPT-4o-mini y documentos de oro en contexto. Los pesos se almacenan en float32 y la inferencia se realiza en bfloat16. El modelo requiere código remoto de HuggingFace (`trust_remote_code=True`) y Flash Attention, y necesita aproximadamente 18 GB de VRAM para inferencia.
+El checkpoint se obtiene mediante fine-tuning de Dream-v0-Instruct-7B (Ye et al., 2025) sobre los conjuntos de entrenamiento de 2WikiMultiHopQA y HotpotQA, con trazas de razonamiento (chain-of-thought) generadas por GPT-4o-mini y documentos de oro en contexto. Los pesos se almacenan en float32 y la inferencia se realiza en bfloat16. El modelo requiere código remoto de Hugging Face (`trust_remote_code=True`) y Flash Attention, y necesita aproximadamente 18 GB de VRAM para inferencia.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ No se dispone de benchmarks comparativos entre SARDI y otros modelos en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pauljngr/sardi-dream-7b
+- Modelo en Hugging Face: https://huggingface.co/pauljngr/sardi-dream-7b
 - Paper (arXiv): https://arxiv.org/abs/2606.06474
 - Código (GitHub): https://github.com/pauljngr/SARDI
 - Modelo base Dream-v0-Instruct-7B: https://doi.org/10.48550/arXiv.2508.15487

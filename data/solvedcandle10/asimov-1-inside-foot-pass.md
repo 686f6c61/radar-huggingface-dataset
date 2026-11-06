@@ -76,6 +76,6 @@ No disponible. No se han proporcionado datos de otras políticas de pase o de ma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/solvedcandle10/asimov-1-inside-foot-pass
+- Modelo en Hugging Face: https://huggingface.co/solvedcandle10/asimov-1-inside-foot-pass
 - Repositorio de código de entrenamiento y evaluación: https://github.com/menloresearch/cyclotron
 - Repositorio citado en la model card (detalles y `tasks/soccer/README.md`, rama `soccer/pass-hardware`): https://github.com/N-Raghav/cyclotron

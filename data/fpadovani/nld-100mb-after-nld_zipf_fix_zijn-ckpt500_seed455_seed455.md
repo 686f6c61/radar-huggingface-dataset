@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nld-100mb-after-nld_zipf_fix_zijn-ckpt500_seed455_seed455 | 124,77 M | no disponible | no disponible | no disponible | HuggingFace, safetensors |
-| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | Si (evaluaciones originales del paper) | MIT | HuggingFace, safetensors, GGUF |
-| DistilGPT-2 (distilbert/distilgpt2) | 82 M | 1024 tokens | Si (metricas de destilacion) | Apache 2.0 | HuggingFace, safetensors, GGUF |
-| SmolLM-135M (HuggingFaceTB) | 135 M | 2048 tokens | Si (benchmarks publicados) | Apache 2.0 | HuggingFace, safetensors, GGUF |
+| nld-100mb-after-nld_zipf_fix_zijn-ckpt500_seed455_seed455 | 124,77 M | no disponible | no disponible | no disponible | Hugging Face, safetensors |
+| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | Si (evaluaciones originales del paper) | MIT | Hugging Face, safetensors, GGUF |
+| DistilGPT-2 (distilbert/distilgpt2) | 82 M | 1024 tokens | Si (metricas de destilacion) | Apache 2.0 | Hugging Face, safetensors, GGUF |
+| SmolLM-135M (HuggingFaceTB) | 135 M | 2048 tokens | Si (benchmarks publicados) | Apache 2.0 | Hugging Face, safetensors, GGUF |
 
 La comparacion de rendimiento con estas alternativas no puede establecerse porque no hay ninguna evaluacion publicada para este checkpoint. La diferencia principal es de gobernanza (licencia no declarada) y de proposito: los modelos citados son artefactos generalistas con soporte de cuantizacion y despliegue ampliamente documentado, mientras que este es un checkpoint de investigacion.
 
@@ -90,7 +90,7 @@ La comparacion de rendimiento con estas alternativas no puede establecerse porqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/nld-100mb-after-nld_zipf_fix_zijn-ckpt500_seed455_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/nld-100mb-after-nld_zipf_fix_zijn-ckpt500_seed455_seed455
 - Modelo base: https://huggingface.co/fpadovani/ppt-nld_zipf_fix_zijn-100mb_seed455
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/gnkk01in
 - Repositorio de TRL: https://github.com/huggingface/trl

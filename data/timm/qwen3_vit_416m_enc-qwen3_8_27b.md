@@ -72,9 +72,9 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 | Modelo | Parametros | Resolucion de entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3_vit_416m_enc.qwen3_8_27b (este modelo) | 459,8 M | 768 x 768 por defecto, admite rectangular divisible por 16 | Tokens espaciales proyectados a 5120 y features crudas NHWC de 1152 canales | Apache 2.0 | HuggingFace, via timm |
+| qwen3_vit_416m_enc.qwen3_8_27b (este modelo) | 459,8 M | 768 x 768 por defecto, admite rectangular divisible por 16 | Tokens espaciales proyectados a 5120 y features crudas NHWC de 1152 canales | Apache 2.0 | Hugging Face, via timm |
 | Encoder de vision nativo de Qwen3.8-27B (dentro del LLM) | no disponible | no disponible | no disponible | Apache 2.0 (segun la fuente indicada en la model card) | Integrado en el repositorio Qwen/Qwen3.8-27B |
-| Otros encoders disponibles en timm (familia ViT/CLIP/SigLIP/DINOv2) | no disponible | no disponible | no disponible | no disponible | HuggingFace, via timm |
+| Otros encoders disponibles en timm (familia ViT/CLIP/SigLIP/DINOv2) | no disponible | no disponible | no disponible | no disponible | Hugging Face, via timm |
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/qwen3_vit_416m_enc.qwen3_8_27b
+- Modelo en Hugging Face: https://huggingface.co/timm/qwen3_vit_416m_enc.qwen3_8_27b
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Revision de origen del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/tree/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/LICENSE

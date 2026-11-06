@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mohjkhan/anlp-a1-transformers (este) | no disponible (estimado 3–15M) | no disponible | Descifrado XOR | MIT | HuggingFace |
-| yharith/anlp-a1-transformer-ablation | C1: 12.49M, C5: 3.47M (segun su model card) | no disponible | Descifrado XOR | MIT | HuggingFace |
-| Arihant25/anlp-a1-transformer-ablations | no disponible | no disponible | Descifrado XOR | MIT | HuggingFace |
+| mohjkhan/anlp-a1-transformers (este) | no disponible (estimado 3–15M) | no disponible | Descifrado XOR | MIT | Hugging Face |
+| yharith/anlp-a1-transformer-ablation | C1: 12.49M, C5: 3.47M (segun su model card) | no disponible | Descifrado XOR | MIT | Hugging Face |
+| Arihant25/anlp-a1-transformer-ablations | no disponible | no disponible | Descifrado XOR | MIT | Hugging Face |
 | FrenchKnuckles/ANLP_A1 (repositorio GitHub) | no disponible | no disponible | Descifrado de cifrado por sustitucion | MIT | GitHub |
 
 Los tres proyectos son variantes de la misma tarea académica (ANLP Assignment 1) y comparten el objetivo de estudiar ablaciones en transformadores para descifrado de cifrados. No hay datos de rendimiento comparativo publicados, por lo que no es posible establecer una jerarquía de calidad. La principal diferencia entre ellos puede estar en los hiperparámetros exactos y en el diseño experimental, pero esa información no está disponible públicamente.
@@ -85,7 +85,7 @@ Los tres proyectos son variantes de la misma tarea académica (ANLP Assignment 1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohjkhan/anlp-a1-transformers
+- Modelo en Hugging Face: https://huggingface.co/mohjkhan/anlp-a1-transformers
 - Repositorio de ablación similar (yharith): https://huggingface.co/yharith/anlp-a1-transformer-ablation
 - Repositorio de ablación similar (Arihant25): https://huggingface.co/Arihant25/anlp-a1-transformer-ablations
 - Repositorio de código en GitHub (FrenchKnuckles): https://github.com/FrenchKnuckles/ANLP_A1

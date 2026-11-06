@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Zynerji-Ektome-Qwen3.6-27B-PristinelyUncensored es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.6-27B, publicado por el usuario meltingfeet en HuggingFace. Se trata de una variante orientada a la eliminación de restricciones de contenido (uncensored), construida sobre una arquitectura multimodal con capacidades de visión, según indican las etiquetas del repositorio (vision, multimodal, qwen3_5). El modelo cuenta con 27.356.728.560 parámetros reales en formato safetensors y un repositorio de 71,3 GB que incluye también pesos en formato GGUF.
+Zynerji-Ektome-Qwen3.6-27B-PristinelyUncensored es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.6-27B, publicado por el usuario meltingfeet en Hugging Face. Se trata de una variante orientada a la eliminación de restricciones de contenido (uncensored), construida sobre una arquitectura multimodal con capacidades de visión, según indican las etiquetas del repositorio (vision, multimodal, qwen3_5). El modelo cuenta con 27.356.728.560 parámetros reales en formato safetensors y un repositorio de 71,3 GB que incluye también pesos en formato GGUF.
 
-El modelo se distribuye bajo licencia Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace. La información pública es muy limitada: no se especifican idiomas soportados, pipeline, ni detalles sobre el dataset de ajuste o el proceso de entrenamiento. El repositorio tiene cero descargas y cero likes en el momento de la ficha, y fue creado el 2 de noviembre de 2026, lo que sugiere una publicación muy reciente y sin validación comunitaria.
+El modelo se distribuye bajo licencia Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face. La información pública es muy limitada: no se especifican idiomas soportados, pipeline, ni detalles sobre el dataset de ajuste o el proceso de entrenamiento. El repositorio tiene cero descargas y cero likes en el momento de la ficha, y fue creado el 2 de noviembre de 2026, lo que sugiere una publicación muy reciente y sin validación comunitaria.
 
 La relevancia de este modelo es limitada y debe evaluarse con cautela: se trata de un fine-tune no oficial de un modelo base (Qwen3.6-27B) que no está documentado públicamente en la información disponible. Su interés principal radica en explorar variantes sin censura de modelos multimodales de 27B, pero la ausencia de benchmarks, documentación y validación externa lo hace inadecuado para producción sin una evaluación exhaustiva previa.
 
@@ -32,7 +32,7 @@ No se dispone de información sobre el dataset de ajuste fino, el número de tok
 - Generación de texto conversacional (etiqueta `conversational`).
 - Procesamiento multimodal con visión (etiquetas `vision` y `multimodal`), presumiblemente heredado del modelo base.
 - Modo sin censura: el ajuste busca reducir los rechazos del modelo base ante contenido restringido.
-- Compatibilidad con endpoints (etiqueta `endpoints_compatible`), lo que sugiere despliegue mediante la infraestructura de HuggingFace.
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`), lo que sugiere despliegue mediante la infraestructura de Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la información.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información.
 - Capacidades multilingües: no disponibles en la información.
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - Ausencia total de documentación: no se detallan datos de entrenamiento, metodología de ajuste ni evaluación, lo que impide validar su comportamiento.
 - Riesgo elevado de alucinación: al ser un fine-tune no oficial sin benchmarks, no hay garantías sobre la fidelidad factual de sus respuestas.
 - Contenido sin censura: el ajuste elimina salvaguardas, lo que puede producir contenido ofensivo, ilegal o dañino; no apto para aplicaciones orientadas al público sin filtros adicionales.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita su uso automatizado y su reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita su uso automatizado y su reproducibilidad.
 - Idiomas y contexto no especificados: se desconoce el soporte multilingüe real y la ventana de contexto efectiva.
 - Licencia Apache 2.0 declarada, pero la procedencia del fine-tune y el cumplimiento de la licencia del modelo base no están verificados en la información disponible.
 - Cero descargas y cero likes: sin validación comunitaria ni evidencia de uso en producción.
@@ -82,5 +82,5 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/meltingfeet/backup2026-11-02-Zynerji-Ektome-Qwen3.6-27B-PristinelyUncensored
+- Hugging Face: https://huggingface.co/meltingfeet/backup2026-11-02-Zynerji-Ektome-Qwen3.6-27B-PristinelyUncensored
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yolo11n-cigarette-butt-detector es un detector de objetos especializado en localizar colillas de cigarrillo sobre el asfalto en fotografías urbanas de alta resolución. Lo ha desarrollado lojony como parte de un proyecto open source orientado a construir un robot recolector de colillas, y se publica en HuggingFace con licencia AGPL-3.0.
+Yolo11n-cigarette-butt-detector es un detector de objetos especializado en localizar colillas de cigarrillo sobre el asfalto en fotografías urbanas de alta resolución. Lo ha desarrollado lojony como parte de un proyecto open source orientado a construir un robot recolector de colillas, y se publica en Hugging Face con licencia AGPL-3.0.
 
 El modelo se basa en YOLO11n de Ultralytics, la variante nano de la familia YOLO11, con 2,6 millones de parámetros. Se eligió esta versión frente a la YOLO11s porque su velocidad de inferencia es la más adecuada para ejecutarse en tiempo real sobre un robot. Trabaja sobre mosaicos de 640 píxeles recortados de fotografías completas de 4000×1800 píxeles, con solapamiento de 384 píxeles y fusión posterior de cajas mediante NMS.
 
@@ -103,7 +103,7 @@ Nota: el número de parámetros de YOLO11s no figura en la información disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lojony/yolo11n-cigarette-butt-detector
+- Modelo en Hugging Face: https://huggingface.co/lojony/yolo11n-cigarette-butt-detector
 - Demo web (en el navegador, sin subida de fotos): https://lorinc.github.io/litter-detection-pipeline/web_demo/
 - Repositorio con código, entrenamiento y evaluación: https://github.com/lorinc/litter-detection-pipeline
 - Dataset (Cigarette Litter Street Photo Dataset, CC BY 4.0): https://www.kaggle.com/datasets/lorinc/butt-field-2026-10-01

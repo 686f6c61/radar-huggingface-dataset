@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `andrea5623/aa` es un repositorio publicado en HuggingFace por el usuario `andrea5623` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción tecnica, arquitectura, tamano, datos de entrenamiento ni capacidades declaradas: unicamente incluye la etiqueta de licencia. Se trata, por tanto, de un artefacto sin documentacion publica que permita caracterizarlo tecnicamente.
+El modelo identificado como `andrea5623/aa` es un repositorio publicado en Hugging Face por el usuario `andrea5623` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción tecnica, arquitectura, tamano, datos de entrenamiento ni capacidades declaradas: unicamente incluye la etiqueta de licencia. Se trata, por tanto, de un artefacto sin documentacion publica que permita caracterizarlo tecnicamente.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y no tiene pipeline declarado ni idiomas especificados. Fue creado y actualizado en la misma fecha (2026-10-27), lo que sugiere una publicacion sin mantenimiento posterior o un artefacto de prueba.
 
@@ -39,7 +39,7 @@ Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, at
 ## Casos de uso
 
 - No es posible recomendar casos de uso concretos sin informacion sobre arquitectura, tamano, contexto y capacidades del modelo.
-- Evaluacion exploratoria de artefactos en HuggingFace: el repositorio podria inspeccionarse para determinar que contiene realmente (pesos, configuracion, tokenizador), pero no se dispone de datos que confirmen su utilidad.
+- Evaluacion exploratoria de artefactos en Hugging Face: el repositorio podria inspeccionarse para determinar que contiene realmente (pesos, configuracion, tokenizador), pero no se dispone de datos que confirmen su utilidad.
 - Integracion en pipelines de investigacion: solo seria viable tras verificar manualmente el contenido del repositorio y su reproducibilidad.
 - Despliegue en produccion: desaconsejado sin model card, benchmarks ni informacion de entrenamiento que permitan evaluar sesgos, robustez y calidad.
 - Fine-tuning sobre dominio especifico: no evaluable sin conocer la arquitectura base ni el formato de pesos.
@@ -74,5 +74,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/andrea5623/aa
+- Hugging Face: https://huggingface.co/andrea5623/aa
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion proporcionada.

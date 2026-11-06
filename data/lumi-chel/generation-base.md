@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lumi-chel/generation-base` es un prototipo de investigación publicado en HuggingFace por el usuario lumi-chel, etiquetado como CLIP y orientado a tareas de generación. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto reproducible: el repositorio incluye el código de implementación (`run.py`), una configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) válido únicamente para pruebas de humo (smoke tests). El propio autor indica explícitamente que no se reclama ninguna métrica de benchmark.
+`lumi-chel/generation-base` es un prototipo de investigación publicado en Hugging Face por el usuario lumi-chel, etiquetado como CLIP y orientado a tareas de generación. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto reproducible: el repositorio incluye el código de implementación (`run.py`), una configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) válido únicamente para pruebas de humo (smoke tests). El propio autor indica explícitamente que no se reclama ninguna métrica de benchmark.
 
 El checkpoint contiene 49.600 parámetros totales según los metadatos de safetensors, un tamaño que corresponde a una inicialización mínima y no a un modelo funcional a escala "large", pese a la etiqueta de escala que aparece en la model card. El repositorio ocupa 0,0 GB y no registra descargas ni interacciones en el momento de la consulta.
 
@@ -81,5 +81,5 @@ No se dispone de datos verificables para establecer una comparación cuantitativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lumi-chel/generation-base
+- Repositorio en Hugging Face: https://huggingface.co/lumi-chel/generation-base
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

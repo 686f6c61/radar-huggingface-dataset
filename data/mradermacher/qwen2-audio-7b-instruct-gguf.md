@@ -83,7 +83,7 @@ No se dispone en la información proporcionada de datos de benchmarks ni de espe
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/Qwen2-Audio-7B-Instruct-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/Qwen2-Audio-7B-Instruct-GGUF
 - Modelo base original: https://huggingface.co/Qwen/Qwen2-Audio-7B-Instruct
 - Cuantizaciones imatrix del mismo autor: https://huggingface.co/mradermacher/Qwen2-Audio-7B-Instruct-i1-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#Qwen2-Audio-7B-Instruct-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Realistic Vision V6.0 B1 "New Vision" es un modelo de generación de imágenes text-to-image derivado de Stable Diffusion 1.5, orientado al fotorrealismo y a la representación realista de figuras humanas. Lo publica el usuario `haoahjsvhw` en HuggingFace, si bien el modelo original es obra de SG161222 (conocido en la comunidad por la saga Realistic Vision) y su página canónica de referencia se encuentra en CivitAI. Esta versión B1 es una beta pública de la futura versión completa 6.0, que se distribuirá de forma gradual en varias betas hasta el lanzamiento final.
+Realistic Vision V6.0 B1 "New Vision" es un modelo de generación de imágenes text-to-image derivado de Stable Diffusion 1.5, orientado al fotorrealismo y a la representación realista de figuras humanas. Lo publica el usuario `haoahjsvhw` en Hugging Face, si bien el modelo original es obra de SG161222 (conocido en la comunidad por la saga Realistic Vision) y su página canónica de referencia se encuentra en CivitAI. Esta versión B1 es una beta pública de la futura versión completa 6.0, que se distribuirá de forma gradual en varias betas hasta el lanzamiento final.
 
 El modelo no incorpora el VAE en el repositorio (de ahí el sufijo `_noVAE`): el autor recomienda acoplarlo explícitamente con `sd-vae-ft-mse-original` para mejorar la calidad y reducir artefactos. La arquitectura subyacente es la de Stable Diffusion 1.5 (UNet con atención cruzada, VAE y codificador de texto CLIP), con un pipeline `text-to-image` en la librería `diffusers`. El repositorio ocupa 18,3 GB y contiene pesos en formato diffusers.
 
@@ -57,16 +57,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: no disponible en la información proporcionada. Como checkpoint SD 1.5, es habitual que requiera del orden de 4-6 GB en fp16 para inferencia a 512x512, pero este dato no está confirmado por el autor.
 - GPU recomendadas: no disponible. No se especifican modelos de GPU en la model card.
 - ¿Cabe en GPU de consumo? No confirmado en la información; el tamaño del repo (18,3 GB) corresponde a los pesos en disco, no a la VRAM necesaria en inferencia.
-- Opciones de despliegue: `diffusers` (pipeline `StableDiffusionPipeline`); el tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. No se documentan vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo de difusión).
+- Opciones de despliegue: `diffusers` (pipeline `StableDiffusionPipeline`); el tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No se documentan vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo de difusión).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Base | Resolución nativa | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Realistic Vision V6.0 B1 (este) | SD 1.5 | hasta 896x896 / 1152x640 | creativeml-openrail-m | HuggingFace y CivitAI |
-| Realistic Vision V5.1 | SD 1.5 | 512x512 (con Hires.Fix) | creativeml-openrail-m | CivitAI y HuggingFace |
-| SDXL (Stability AI) | SDXL | 1024x1024 | openrail++ | HuggingFace |
+| Realistic Vision V6.0 B1 (este) | SD 1.5 | hasta 896x896 / 1152x640 | creativeml-openrail-m | Hugging Face y CivitAI |
+| Realistic Vision V5.1 | SD 1.5 | 512x512 (con Hires.Fix) | creativeml-openrail-m | CivitAI y Hugging Face |
+| SDXL (Stability AI) | SDXL | 1024x1024 | openrail++ | Hugging Face |
 | RealDreamXL | SDXL | 1024x1024 | no disponible | Mage.Space |
 
 La comparativa se limita a la categoría (checkpoints fotorrealistas de difusión). No se dispone de datos de benchmarks que permitan comparar rendimiento cuantitativo entre ellos; los datos de resolución y licencia proceden de la información disponible y de conocimiento general del ecosistema, y los de RealDreamXL solo constan como modelo del mismo autor alojado en Mage.Space.
@@ -84,7 +84,7 @@ La comparativa se limita a la categoría (checkpoints fotorrealistas de difusió
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/haoahjsvhw/Realistic_Vision_V6.0_B1_noVAE
+- Hugging Face: https://huggingface.co/haoahjsvhw/Realistic_Vision_V6.0_B1_noVAE
 - CivitAI (página del modelo): https://civitai.com/models/4201/realistic-vision-v60-b1?modelVersionId=245598
 - VAE recomendado: https://huggingface.co/stabilityai/sd-vae-ft-mse-original
 - Mage.Space (patrocinador): https://www.mage.space/

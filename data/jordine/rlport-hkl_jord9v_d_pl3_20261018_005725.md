@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Artefacto | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jordine/rlport-hkl_jord9v_D_pl3_20261018_005725` (este repositorio) | No disponible (adaptadores LoRA) | No disponible | Sin benchmarks | No disponible | Pública en HuggingFace, 0 descargas |
+| `Jordine/rlport-hkl_jord9v_D_pl3_20261018_005725` (este repositorio) | No disponible (adaptadores LoRA) | No disponible | Sin benchmarks | No disponible | Pública en Hugging Face, 0 descargas |
 | Modelo base Qwen3.5 | No disponible | No disponible | No disponible | No disponible | No referenciado con un ID concreto en la model card |
 | Checkpoints de RL con adaptadores LoRA (categoría genérica) | Variable | Variable | Variable | Habitualmente sin licencia declarada | Repositorios de investigación |
 | Modelos open weights comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -100,7 +100,7 @@ No se dispone de datos objetivos para establecer una comparación cuantitativa c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jordine/rlport-hkl_jord9v_D_pl3_20261018_005725
+- Repositorio en Hugging Face: https://huggingface.co/Jordine/rlport-hkl_jord9v_D_pl3_20261018_005725
 - Script generador citado en la model card: `scripts/port/hf_backup.py` (ruta interna del proyecto, sin URL pública disponible)
 - Modelo base mencionado (Qwen3.5): sin enlace ni identificador concreto en la información disponible
 - Paper, blog, demo o repositorio adicional: no disponible

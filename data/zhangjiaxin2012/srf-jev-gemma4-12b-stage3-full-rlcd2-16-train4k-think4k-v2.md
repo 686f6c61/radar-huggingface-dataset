@@ -79,10 +79,10 @@ Notas del autor: Capability = (Intelligence + Calibration) / 2 y es distinto de 
 
 | Modelo | Parámetros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SRF-Jev-Gemma4-12B-Stage3-Full-RLCD2-16 (este) | 1,99B según safetensors / 12B según nombre (no resuelto) | No disponible | Public231: 80,52 % directo; 90,04 % gated 4K | Apache-2.0 | Pesos safetensors en HuggingFace, 0 descargas |
+| SRF-Jev-Gemma4-12B-Stage3-Full-RLCD2-16 (este) | 1,99B según safetensors / 12B según nombre (no resuelto) | No disponible | Public231: 80,52 % directo; 90,04 % gated 4K | Apache-2.0 | Pesos safetensors en Hugging Face, 0 descargas |
 | google/gemma-4-12B-it (base) | 12B (según nombre) | No disponible en la información | No disponible en la información | No disponible en la información | Modelo oficial de Google DeepMind |
-| SRF-Jev-Gemma4-12B-Stage3-Legacy-LoRA-RL16-Train8K-Think4K-v2 | 12B (según nombre) | No disponible | No disponible en la información | No disponible en la información | Pesos en HuggingFace, mismo autor |
-| SRF-Jev-Gemma4-12B-LoRA | 12B (según nombre) | No disponible | Descripción del autor: "highest observed trained Capability configuration" de la familia en octubre de 2026 | No disponible en la información | Pesos en HuggingFace y endpoint de inferencia en FriendliAI |
+| SRF-Jev-Gemma4-12B-Stage3-Legacy-LoRA-RL16-Train8K-Think4K-v2 | 12B (según nombre) | No disponible | No disponible en la información | No disponible en la información | Pesos en Hugging Face, mismo autor |
+| SRF-Jev-Gemma4-12B-LoRA | 12B (según nombre) | No disponible | Descripción del autor: "highest observed trained Capability configuration" de la familia en octubre de 2026 | No disponible en la información | Pesos en Hugging Face y endpoint de inferencia en FriendliAI |
 
 La comparación cuantitativa con alternativas queda limitada porque el autor no publica métricas de MMLU, HumanEval o GSM8K, y porque la evaluación Public231 usa un protocolo propio que no es directamente trasladable a otros modelos.
 
@@ -103,7 +103,7 @@ La comparación cuantitativa con alternativas queda limitada porque el autor no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-12B-Stage3-Full-RLCD2-16-Train4K-Think4K-v2
+- Modelo en Hugging Face: https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-12B-Stage3-Full-RLCD2-16-Train4K-Think4K-v2
 - Repositorio y documentación del método: https://github.com/jxzhangjhu/srf-jev
 - Documentación de la comparativa de tres tamaños (octubre de 2026): https://github.com/jxzhangjhu/srf-jev/tree/main/docs/gemma4/research/three-size-20261023
 - Space de resultados SRF Jev Gemma 4 v1: https://huggingface.co/spaces/zhangjiaxin2012/SRF-Jev-Gemma4-Results

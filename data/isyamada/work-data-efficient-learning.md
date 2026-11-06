@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`isyamada/work-data-efficient-learning` es un repositorio publicado en HuggingFace que, segun su propia model card, no contiene un modelo entrenado sino un conjunto estructurado de notas de investigacion sobre aprendizaje eficiente en datos (data-efficient learning). El autor, isyamada, lo describe explicitamente como material exploratorio: el artefacto principal es un fichero `analysis.md` con el planteamiento del problema, hipotesis, referencias de evaluacion y preguntas abiertas. La model card advierte que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
+`isyamada/work-data-efficient-learning` es un repositorio publicado en Hugging Face que, segun su propia model card, no contiene un modelo entrenado sino un conjunto estructurado de notas de investigacion sobre aprendizaje eficiente en datos (data-efficient learning). El autor, isyamada, lo describe explicitamente como material exploratorio: el artefacto principal es un fichero `analysis.md` con el planteamiento del problema, hipotesis, referencias de evaluacion y preguntas abiertas. La model card advierte que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 
 El repositorio esta etiquetado con `safetensors` y `transformer`, y el recuento real de parametros en safetensors es de 33.088, una cifra que no corresponde a ningun modelo funcional de lenguaje y que es coherente con un repositorio de notas mas que con un checkpoint entrenado. El tamano del repo es de 0,0 GB y no registra descargas ni interacciones. La licencia es MIT.
 
@@ -74,5 +74,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/isyamada/work-data-efficient-learning
+- Repositorio Hugging Face: https://huggingface.co/isyamada/work-data-efficient-learning
 - No se han encontrado en la informacion proporcionada otros enlaces (papers, blogs, repos de codigo o demos) asociados a este repositorio.

@@ -62,9 +62,9 @@ En la información disponible solo se reportan dos valores de perplejidad en Wik
 
 | Modelo | Sparsity | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| elastix-ai/HyperPrune-gpt-oss-20b-4to8 | 4:8 | 20.914.757.184 | no disponible | other | HuggingFace |
-| elastix-ai/HyperPrune-gpt-oss-20b-2to4 | 2:4 | no disponible | no disponible | other | HuggingFace |
-| openai/gpt-oss-20b | denso | no disponible | no disponible | Apache 2.0 | HuggingFace/OpenAI |
+| elastix-ai/HyperPrune-gpt-oss-20b-4to8 | 4:8 | 20.914.757.184 | no disponible | other | Hugging Face |
+| elastix-ai/HyperPrune-gpt-oss-20b-2to4 | 2:4 | no disponible | no disponible | other | Hugging Face |
+| openai/gpt-oss-20b | denso | no disponible | no disponible | Apache 2.0 | Hugging Face/OpenAI |
 
 Los datos de los modelos 2to4 y base no están disponibles en la información proporcionada. No se dispone de benchmarks comparables entre estos modelos.
 
@@ -80,9 +80,9 @@ Los datos de los modelos 2to4 y base no están disponibles en la información pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/elastix-ai/HyperPrune-gpt-oss-20b-4to8
+- Hugging Face: https://huggingface.co/elastix-ai/HyperPrune-gpt-oss-20b-4to8
 - Repositorio de HyperPrune: https://github.com/futuresun912/HyperPrune
 - Paper en OpenReview: https://openreview.net/forum?id=lqjQs2lVNm
-- Modelo base en HuggingFace: https://huggingface.co/openai/gpt-oss-20b
+- Modelo base en Hugging Face: https://huggingface.co/openai/gpt-oss-20b
 - Blog de OpenAI sobre gpt-oss: https://openai.com/index/introducing-gpt-oss/
 - Checkpoint 2to4: https://huggingface.co/elastix-ai/HyperPrune-gpt-oss-20b-2to4

@@ -21,7 +21,7 @@ La relevancia de este repositorio es fundamentalmente de investigacion: permite 
 | Licencia | no disponible |
 | Formato de pesos | safetensors (segun las etiquetas del repositorio) |
 
-Otros datos del repositorio: 131 archivos, 100,9 GB de tamano total, cero descargas y cero likes en el momento de la consulta. Fecha de creacion: 2026-10-11. Fecha de ultima actualizacion: 2026-10-11. Etiquetas declaradas: `voiceclap`, `checkpoint`, `region:us`. Pipeline de HuggingFace: no disponible.
+Otros datos del repositorio: 131 archivos, 100,9 GB de tamano total, cero descargas y cero likes en el momento de la consulta. Fecha de creacion: 2026-10-11. Fecha de ultima actualizacion: 2026-10-11. Etiquetas declaradas: `voiceclap`, `checkpoint`, `region:us`. Pipeline de Hugging Face: no disponible.
 
 ## Arquitectura y entrenamiento
 
@@ -90,6 +90,6 @@ No disponible. No se dispone de informacion suficiente sobre el modelo (arquitec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/finetune_BidirLM_Omni_2_5B_voiceclap10_plus_external_lowlr_freeze50
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/finetune_BidirLM_Omni_2_5B_voiceclap10_plus_external_lowlr_freeze50
 - Indice de ejecuciones de VoiceCLAP citado en la model card: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante. Las busquedas devolvieron exclusivamente herramientas de conversion y busqueda de identificadores de Steam, sin relacion alguna con el modelo, con VoiceCLAP ni con VoiceNetCkpt. No se dispone de papers, blogs, repositorios adicionales ni demos.

@@ -61,7 +61,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Limitaciones y advertencias
 
-- Modelo experimental: con 0 descargas y 0 likes en HuggingFace, no ha sido validado por la comunidad ni sometido a benchmarks estándar.
+- Modelo experimental: con 0 descargas y 0 likes en Hugging Face, no ha sido validado por la comunidad ni sometido a benchmarks estándar.
 - Razonamiento acotado: el preset Think512-Concise limita el razonamiento a 512 tokens, lo que puede resultar insuficiente para tareas complejas que requieran pasos intermedios extensos.
 - Contexto limitado: el preset fija un contexto de 2048 tokens, muy por debajo de lo que soporta el modelo base (probablemente 32k o más), lo que restringe tareas de documentos largos o conversaciones multi-turno extensas.
 - Sin pruebas en imágenes naturales ni video: la validación se limitó a gráficos y tablas; el rendimiento en fotografías, escenas naturales o vídeo es desconocido.
@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vita0818/Vireqo-27VT-Plus-260818
+- Modelo en Hugging Face: https://huggingface.co/Vita0818/Vireqo-27VT-Plus-260818
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Proyecto Ternary-Bonsai-27B-gguf: https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf
 - Repositorios de GitHub del autor: https://github.com/Vita0818?tab=repositories

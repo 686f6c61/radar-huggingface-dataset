@@ -6,7 +6,7 @@ Qwen2.5-3B-Instruct es un modelo de lenguaje causal de 3.085.938.688 parametros 
 
 El modelo emplea una arquitectura transformer estandar con RoPE, SwiGLU, RMSNorm, sesgo en las proyecciones QKV y embeddings de palabras atados (*tied word embeddings*). Cuenta con 36 capas y atencion con Grouped Query Attention (16 cabezas para Q y 2 para KV), una tecnica que reduce el tamano de la cache KV y acelera la inferencia respecto a la atencion multi-cabeza tradicional. El repositorio oficial especifica una longitud de contexto completa de 32.768 tokens con generacion de hasta 8.192 tokens; la model card de la familia menciona soporte de contexto largo de hasta 128K tokens, por lo que existe una discrepancia entre la cifra global de la familia y la especifica de este repositorio.
 
-Su relevancia actual radica en la relacion entre capacidades y coste computacional: compite con modelos de 2-4B parametros de otros fabricantes ofreciendo mejoras declaradas en codigo, matematicas, seguimiento de instrucciones, generacion de textos largos (mas de 8K tokens), comprension de datos estructurados (tablas) y generacion de salidas JSON. Ademas, la model card declara soporte multilingue para mas de 29 idiomas, aunque los metadatos de HuggingFace solo etiquetan el ingles.
+Su relevancia actual radica en la relacion entre capacidades y coste computacional: compite con modelos de 2-4B parametros de otros fabricantes ofreciendo mejoras declaradas en codigo, matematicas, seguimiento de instrucciones, generacion de textos largos (mas de 8K tokens), comprension de datos estructurados (tablas) y generacion de salidas JSON. Ademas, la model card declara soporte multilingue para mas de 29 idiomas, aunque los metadatos de Hugging Face solo etiquetan el ingles.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Su relevancia actual radica en la relacion entre capacidades y coste computacion
 | Longitud de contexto | 32.768 tokens (segun la model card del repositorio); la model card de la familia menciona hasta 128K tokens |
 | Tokens maximos de generacion | 8.192 |
 | Tipos de cuantizacion | No disponible en la informacion proporcionada para el repo oficial (solo safetensors); existen cuantizaciones de la comunidad (GGUF, AWQ, GPTQ) en repositorios de terceros |
-| Idiomas soportados | La model card declara mas de 29 idiomas (chino, ingles, frances, espanol, portugues, aleman, italiano, ruso, japones, coreano, vietnamita, tailandes, arabe, entre otros); los metadatos de HuggingFace solo listan "en" |
+| Idiomas soportados | La model card declara mas de 29 idiomas (chino, ingles, frances, espanol, portugues, aleman, italiano, ruso, japones, coreano, vietnamita, tailandes, arabe, entre otros); los metadatos de Hugging Face solo listan "en" |
 | Licencia | qwen-research (license: other) |
 | Formato de pesos | safetensors (libreria transformers) |
 | Modelo base | Qwen/Qwen2.5-3B |
@@ -78,17 +78,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens (familia declara hasta 128K) | qwen-research (no permisiva para uso comercial sin acuerdo) | HuggingFace, transformers, TGI, vLLM |
-| Llama 3.2 3B Instruct | 3,21B | 128K tokens | Llama 3.2 Community License | HuggingFace, llama.cpp, Ollama, vLLM |
-| Phi-3.5-mini-instruct | 3,8B | 128K tokens | MIT | HuggingFace, ONNX, llama.cpp |
-| Gemma 2 2B | 2,6B | 8K tokens | Gemma Terms of Use | HuggingFace, Ollama, llama.cpp |
+| Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens (familia declara hasta 128K) | qwen-research (no permisiva para uso comercial sin acuerdo) | Hugging Face, transformers, TGI, vLLM |
+| Llama 3.2 3B Instruct | 3,21B | 128K tokens | Llama 3.2 Community License | Hugging Face, llama.cpp, Ollama, vLLM |
+| Phi-3.5-mini-instruct | 3,8B | 128K tokens | MIT | Hugging Face, ONNX, llama.cpp |
+| Gemma 2 2B | 2,6B | 8K tokens | Gemma Terms of Use | Hugging Face, Ollama, llama.cpp |
 
 Los datos de parametros, contexto y licencia de los modelos comparados corresponden a informacion publica de sus respectivas model cards. No se dispone de resultados de benchmarks comparativos en la informacion proporcionada para este modelo, por lo que no se puede establecer una comparacion de rendimiento objetiva. Cabe destacar que la licencia qwen-research es mas restrictiva que las alternativas MIT de Phi-3.5-mini o las licencias comunitarias de Llama, lo que puede ser un factor decisivo para proyectos comerciales.
 
 ## Limitaciones y advertencias
 
 - La licencia qwen-research no es una licencia permisiva tipo Apache 2.0. Debe revisarse el texto completo en el enlace de licencia del repositorio antes de cualquier uso comercial, ya que puede requerir un acuerdo separado con Alibaba Cloud.
-- Los metadatos de HuggingFace solo etiquetan el modelo como ingles (`language: en`), aunque la model card declara soporte para mas de 29 idiomas. El rendimiento real en idiomas distintos del ingles y el chino puede ser inferior al declarado.
+- Los metadatos de Hugging Face solo etiquetan el modelo como ingles (`language: en`), aunque la model card declara soporte para mas de 29 idiomas. El rendimiento real en idiomas distintos del ingles y el chino puede ser inferior al declarado.
 - Existe una discrepancia documentada entre la longitud de contexto de la familia (hasta 128K tokens) y la especificada para este repositorio (32.768 tokens). Debe verificarse cual aplica antes de disenar aplicaciones con contextos muy largos.
 - No se han publicado cifras de benchmarks en la informacion disponible, por lo que no es posible cuantificar su rendimiento real frente a alternativas.
 - Al ser un modelo de 3B parametros, es mas propenso a alucinaciones y a errores factuales que modelos de mayor tamano, especialmente en tareas de conocimiento especializado, calculo complejo o razonamiento de multiples pasos.
@@ -100,7 +100,7 @@ Los datos de parametros, contexto y licencia de los modelos comparados correspon
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia completa: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B
 - Blog oficial de Qwen2.5 (resultados de evaluacion): https://qwenlm.github.io/blog/qwen2.5/
@@ -110,4 +110,4 @@ Los datos de parametros, contexto y licencia de los modelos comparados correspon
 - Articulo tecnico de Qwen2 (arXiv:2407.10671): https://arxiv.org/abs/2407.10671
 - Plataforma de chat oficial: https://chat.qwen.ai/
 - Sitio oficial de Qwen: https://qwen.ai/home
-- Organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen

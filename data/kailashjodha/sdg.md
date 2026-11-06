@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `kailashjodha/sdg` es un artefacto publicado en HuggingFace por el usuario kailashjodha bajo licencia MIT. La model card asociada es practicamente vacia: unicamente contiene el bloque de metadatos con la licencia, sin descripcion del modelo, sin arquitectura declarada, sin tamano de parametros, sin contexto y sin datos de entrenamiento. No hay informacion sobre el pipeline de la libreria de HuggingFace ni sobre los idiomas soportados.
+El repositorio `kailashjodha/sdg` es un artefacto publicado en Hugging Face por el usuario kailashjodha bajo licencia MIT. La model card asociada es practicamente vacia: unicamente contiene el bloque de metadatos con la licencia, sin descripcion del modelo, sin arquitectura declarada, sin tamano de parametros, sin contexto y sin datos de entrenamiento. No hay informacion sobre el pipeline de la libreria de Hugging Face ni sobre los idiomas soportados.
 
 Por tanto, no es posible determinar que tipo de modelo es (LLM, modelo de embeddings, modelo de difusion, clasificador u otro), ni su proposito, ni su rendimiento. El identificador "sdg" podria sugerir "synthetic data generation", pero esto es una especulacion que no se puede confirmar con la informacion disponible. El repositorio no registra descargas ni likes en el momento de la consulta, y las fechas de creacion y actualizacion son identicas, lo que apunta a una publicacion sin mantenimiento posterior.
 
@@ -62,7 +62,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kailashjodha/sdg | no disponible | no disponible | MIT | Repositorio HuggingFace sin model card sustantiva |
+| kailashjodha/sdg | no disponible | no disponible | MIT | Repositorio Hugging Face sin model card sustantiva |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -78,5 +78,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kailashjodha/sdg
+- Hugging Face: https://huggingface.co/kailashjodha/sdg
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este modelo.

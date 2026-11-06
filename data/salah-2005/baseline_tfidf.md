@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`salah-2005/baseline_tfidf` no es un modelo de lenguaje neuronal, sino un artefacto de aprendizaje automatico clasico publicado en HuggingFace bajo el identificador de un usuario individual. El tag `joblib` indica que el repositorio contiene uno o varios ficheros serializados con la libreria joblib, el formato habitual para persistir pipelines de scikit-learn (tipicamente un vectorizador `TfidfVectorizer` seguido de un clasificador lineal como `LogisticRegression`, `LinearSVC` o `SGDClassifier`). Se trata, por tanto, de una linea base (baseline) de procesamiento de lenguaje natural para tareas de clasificacion de texto, no de un modelo generativo.
+`salah-2005/baseline_tfidf` no es un modelo de lenguaje neuronal, sino un artefacto de aprendizaje automatico clasico publicado en Hugging Face bajo el identificador de un usuario individual. El tag `joblib` indica que el repositorio contiene uno o varios ficheros serializados con la libreria joblib, el formato habitual para persistir pipelines de scikit-learn (tipicamente un vectorizador `TfidfVectorizer` seguido de un clasificador lineal como `LogisticRegression`, `LinearSVC` o `SGDClassifier`). Se trata, por tanto, de una linea base (baseline) de procesamiento de lenguaje natural para tareas de clasificacion de texto, no de un modelo generativo.
 
 El problema que resuelve es el habitual de estas lineas base: servir como referencia rapida y barata para tareas de clasificacion de texto (analisis de sentimiento, deteccion de spam, categorizacion de tickets, filtrado de documentos) antes de invertir en modelos neuronales. Su relevancia actual es metodologica: en muchos corpus pequenos o medianos, una pipeline TF-IDF con un clasificador lineal sigue siendo competitiva frente a transformers, con un coste de inferencia en CPU de ordenes de magnitud inferior.
 
@@ -20,7 +20,7 @@ La informacion publica disponible es extremadamente limitada. El repositorio ocu
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | joblib (fichero o ficheros `.joblib` / `.pkl` serializados) |
-| Tamano del repositorio | 0,0 GB (inferior a 0,05 GB segun el redondeo de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (inferior a 0,05 GB segun el redondeo de Hugging Face) |
 | Descargas / likes | 0 descargas / 1 like |
 | Fecha de creacion | 2026-09-20 |
 | Ultima actualizacion | 2026-09-20 |
@@ -77,11 +77,11 @@ No hay datos publicados de este artefacto que permitan una comparacion cuantitat
 
 | Alternativa | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `salah-2005/baseline_tfidf` | no disponible | no disponible | no disponible | HuggingFace, 0 descargas | Artefacto joblib sin documentacion |
+| `salah-2005/baseline_tfidf` | no disponible | no disponible | no disponible | Hugging Face, 0 descargas | Artefacto joblib sin documentacion |
 | TF-IDF + regresion logistica (scikit-learn) | proporcional al vocabulario | documento completo | BSD-3 (scikit-learn) | libreria estandar | Referencia reproducible; requiere reentrenar |
 | fastText (Facebook, 2016) | ~1-10 M por tarea | documento completo | MIT | ampliamente disponible | Anade subpalabras; mejor en morfologia rica |
-| Sentence embeddings + clasificador (p. ej. MiniLM) | 20-120 M | 256-512 tokens | Apache-2.0 en muchos casos | HuggingFace | Mayor coste, mejor generalizacion semantica |
-| Transformer encoder ajustado (BERT-base) | 110 M | 512 tokens | Apache-2.0 | HuggingFace | Techo de rendimiento mas alto, coste mucho mayor |
+| Sentence embeddings + clasificador (p. ej. MiniLM) | 20-120 M | 256-512 tokens | Apache-2.0 en muchos casos | Hugging Face | Mayor coste, mejor generalizacion semantica |
+| Transformer encoder ajustado (BERT-base) | 110 M | 512 tokens | Apache-2.0 | Hugging Face | Techo de rendimiento mas alto, coste mucho mayor |
 
 ## Limitaciones y advertencias
 
@@ -97,6 +97,6 @@ No hay datos publicados de este artefacto que permitan una comparacion cuantitat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/salah-2005/baseline_tfidf
+- Repositorio en Hugging Face: https://huggingface.co/salah-2005/baseline_tfidf
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada. Los unicos resultados devueltos correspondian a paginas del traductor de Google, sin relacion con el modelo, por lo que se omiten.

@@ -66,9 +66,9 @@ Medición sobre 24 prompts reservados, trayectorias greedy de 64 tokens, propues
 
 | Modelo | Parámetros | Contexto | Aceptación medida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jayyun98/Qwen3.8-27B-FP8-EAGLE4 (este) | 3,09 mil millones | no disponible | 67,42% (24 prompts) | Eagle 4 Source-Available | HuggingFace, 0 descargas |
-| EAGLE-Corp/Qwen3.8-27B-EAGLE4 (oficial) | no disponible | no disponible | 65,13% (24 prompts) | Eagle 4 Source-Available | HuggingFace |
-| Qwen/Qwen3.8-27B-FP8 (objetivo) | no disponible | no disponible | no aplica (modelo objetivo) | no disponible | HuggingFace |
+| jayyun98/Qwen3.8-27B-FP8-EAGLE4 (este) | 3,09 mil millones | no disponible | 67,42% (24 prompts) | Eagle 4 Source-Available | Hugging Face, 0 descargas |
+| EAGLE-Corp/Qwen3.8-27B-EAGLE4 (oficial) | no disponible | no disponible | 65,13% (24 prompts) | Eagle 4 Source-Available | Hugging Face |
+| Qwen/Qwen3.8-27B-FP8 (objetivo) | no disponible | no disponible | no aplica (modelo objetivo) | no disponible | Hugging Face |
 
 La comparación con otros borradores especulativos de la misma categoría no está disponible en la información proporcionada.
 
@@ -88,7 +88,7 @@ La comparación con otros borradores especulativos de la misma categoría no est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jayyun98/Qwen3.8-27B-FP8-EAGLE4
+- Hugging Face: https://huggingface.co/jayyun98/Qwen3.8-27B-FP8-EAGLE4
 - Modelo base: https://huggingface.co/EAGLE-Corp/Qwen3.8-27B-EAGLE4
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Plataforma Draftfit: https://github.com/JayYun98/Draftfit

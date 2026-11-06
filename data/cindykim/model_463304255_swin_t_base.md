@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cindykim/model_463304255_swin_t_base` es una implementación de la arquitectura Swin Transformer (variante "tiny" escalada a "base") orientada a tareas de **retrieval**. Ha sido publicado por el usuario `cindykim` en HuggingFace bajo licencia CC-BY-4.0, aunque el repositorio no contiene pesos ni artefactos de inferencia, sino únicamente un archivo de código Python (`model_463304255_swin_t_base.py`) que define la arquitectura y el proceso de entrenamiento.
+El modelo `cindykim/model_463304255_swin_t_base` es una implementación de la arquitectura Swin Transformer (variante "tiny" escalada a "base") orientada a tareas de **retrieval**. Ha sido publicado por el usuario `cindykim` en Hugging Face bajo licencia CC-BY-4.0, aunque el repositorio no contiene pesos ni artefactos de inferencia, sino únicamente un archivo de código Python (`model_463304255_swin_t_base.py`) que define la arquitectura y el proceso de entrenamiento.
 
 La relevancia de este modelo radica en que aplica una arquitectura vision transformer jerárquica (Swin) a problemas de recuperación de información, incorporando técnicas como atención multi-query, fusión de baja complejidad (low-rank) y normalización por instancia. Sin embargo, la información disponible es muy limitada: no se especifican parámetros totales, contexto, datos de entrenamiento ni benchmarks, por lo que su utilidad práctica no puede evaluarse con los datos públicos actuales.
 

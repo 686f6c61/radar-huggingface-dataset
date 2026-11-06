@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`shabieh2/1103_tags_tree_top3_2_epoch` es un adaptador LoRA publicado en HuggingFace por el usuario `shabieh2`. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (fine-tuning) de tipo PEFT que debe cargarse sobre el modelo base `unsloth/Muse-Glimmer-30B`. El repositorio ocupa 0,9 GB, un tamano coherente con un adaptador LoRA de rango bajo sobre un modelo de aproximadamente 30 mil millones de parametros, y esta registrado con la libreria `peft` y el pipeline `text-generation`.
+`shabieh2/1103_tags_tree_top3_2_epoch` es un adaptador LoRA publicado en Hugging Face por el usuario `shabieh2`. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (fine-tuning) de tipo PEFT que debe cargarse sobre el modelo base `unsloth/Muse-Glimmer-30B`. El repositorio ocupa 0,9 GB, un tamano coherente con un adaptador LoRA de rango bajo sobre un modelo de aproximadamente 30 mil millones de parametros, y esta registrado con la libreria `peft` y el pipeline `text-generation`.
 
-La relevancia de esta publicacion es limitada y practica: se trata de un artefacto de entrenamiento sin documentacion tecnica sustantiva. La model card es la plantilla por defecto de HuggingFace, con la mayoria de campos marcados como `[More Information Needed]`, y el repositorio no registra descargas ni "likes" en el momento de la consulta. No hay informacion publica sobre el dataset de entrenamiento, los hiperparametros, la licencia ni los idiomas objetivo.
+La relevancia de esta publicacion es limitada y practica: se trata de un artefacto de entrenamiento sin documentacion tecnica sustantiva. La model card es la plantilla por defecto de Hugging Face, con la mayoria de campos marcados como `[More Information Needed]`, y el repositorio no registra descargas ni "likes" en el momento de la consulta. No hay informacion publica sobre el dataset de entrenamiento, los hiperparametros, la licencia ni los idiomas objetivo.
 
 Por tanto, esta ficha describe lo que se puede verificar a partir de los metadatos del repositorio (tipo de adaptador, modelo base, libreria, tamano) y marca explicitamente como "no disponible" todo aquello que el autor no ha documentado. Cualquier evaluacion de capacidades o rendimiento requeriria cargar el adaptador sobre el modelo base y ejecutar pruebas propias.
 
@@ -44,7 +44,7 @@ No hay informacion disponible sobre el numero de tokens de entrenamiento, la com
 - Prototipado de clasificacion o etiquetado: si el nombre del repositorio refleja la tarea real ("tags"), podria emplearse en experimentos de asignacion de etiquetas sobre texto, aunque esto requiere validacion empirica previa.
 - Investigacion sobre adaptadores de bajo rango: util para estudiar como un adaptador de 0,9 GB modifica el comportamiento de un modelo de ~30B en tareas concretas.
 - Base para un segundo ajuste: el adaptador podria servir como punto de partida para un fine-tuning adicional, aunque la ausencia de licencia clara desaconseja su uso en produccion.
-- Docencia y formacion: como ejemplo practico de publicacion de un adaptador PEFT en HuggingFace y de los riesgos de una model card incompleta.
+- Docencia y formacion: como ejemplo practico de publicacion de un adaptador PEFT en Hugging Face y de los riesgos de una model card incompleta.
 
 ## Benchmarks y rendimiento
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `shabieh2/1103_tags_tree_top3_2_epoch` | Adaptador LoRA | No disponible (base ~30B) | No disponible | No disponible | HuggingFace, 0 descargas |
-| `unsloth/Muse-Glimmer-30B` (modelo base) | Modelo completo | ~30B (segun identificador) | No disponible | No disponible | HuggingFace |
+| `shabieh2/1103_tags_tree_top3_2_epoch` | Adaptador LoRA | No disponible (base ~30B) | No disponible | No disponible | Hugging Face, 0 descargas |
+| `unsloth/Muse-Glimmer-30B` (modelo base) | Modelo completo | ~30B (segun identificador) | No disponible | No disponible | Hugging Face |
 | Adaptadores LoRA publicos comparables | Adaptador LoRA | Variable | Depende del base | Variable | No disponible para comparacion directa |
 
 No se dispone de informacion suficiente para establecer una comparativa cuantitativa con alternativas de la misma categoria.
@@ -82,7 +82,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shabieh2/1103_tags_tree_top3_2_epoch
+- Repositorio Hugging Face: https://huggingface.co/shabieh2/1103_tags_tree_top3_2_epoch
 - Modelo base: https://huggingface.co/unsloth/Muse-Glimmer-30B
 - PEFT (libreria): https://github.com/huggingface/peft
 - Unsloth: https://github.com/unslothai/unsloth

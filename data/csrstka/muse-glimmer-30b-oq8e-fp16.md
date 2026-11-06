@@ -6,7 +6,7 @@ El modelo `csrstka/Muse-Glimmer-30B-oQ8e-fp16` es una versión cuantizada en 8 b
 
 A pesar del nombre, los parámetros totales declarados en los archivos safetensors ascienden a 9.757.002.752 (~9,7 mil millones), lo que sugiere una posible discrepancia con la denominación "30B" o que se trate de un modelo con arquitectura de mezcla de expertos (MoE) donde solo una parte de los parámetros está activa por paso. No se dispone de información adicional sobre la arquitectura subyacente, el proceso de entrenamiento o las capacidades del modelo original.
 
-La ficha se elabora con la información limitada disponible en la página de HuggingFace, ya que la model card del autor solo documenta los detalles de la cuantización, sin aportar datos sobre licencia, idiomas, benchmarks o casos de uso.
+La ficha se elabora con la información limitada disponible en la página de Hugging Face, ya que la model card del autor solo documenta los detalles de la cuantización, sin aportar datos sobre licencia, idiomas, benchmarks o casos de uso.
 
 ## Especificaciones técnicas
 
@@ -62,5 +62,5 @@ No disponible. No se ha identificado información sobre modelos comparables en l
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/csrstka/Muse-Glimmer-30B-oQ8e-fp16)
+- [Modelo en Hugging Face](https://huggingface.co/csrstka/Muse-Glimmer-30B-oQ8e-fp16)
 - [Repositorio oQ / oMLX](https://github.com/jundot/omlx)

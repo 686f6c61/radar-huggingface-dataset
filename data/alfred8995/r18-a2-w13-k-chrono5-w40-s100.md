@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-k-chrono5-w40-s100` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo la etiqueta `sn38-nanochrono`, con licencia Apache 2.0 y acceso restringido (gated). Se trata de un modelo de aproximadamente 2.018 millones de parametros almacenados en formato safetensors, lo que lo situa en la categoria de modelos pequenos, aptos para inferencia en hardware de consumo. La nomenclatura del identificador (`r18-a2-w13-k-chrono5-w40-s100`) sugiere una configuracion concreta de entrenamiento o de arquitectura, pero no se ha publicado documentacion que explique el significado de cada sufijo.
+El modelo `alfred8995/r18-a2-w13-k-chrono5-w40-s100` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo la etiqueta `sn38-nanochrono`, con licencia Apache 2.0 y acceso restringido (gated). Se trata de un modelo de aproximadamente 2.018 millones de parametros almacenados en formato safetensors, lo que lo situa en la categoria de modelos pequenos, aptos para inferencia en hardware de consumo. La nomenclatura del identificador (`r18-a2-w13-k-chrono5-w40-s100`) sugiere una configuracion concreta de entrenamiento o de arquitectura, pero no se ha publicado documentacion que explique el significado de cada sufijo.
 
-No se dispone de informacion sobre la arquitectura interna, el dataset de entrenamiento, los idiomas soportados ni las capacidades del modelo. El pipeline no esta declarado en la ficha de HuggingFace, y el repositorio no incluye una model card descriptiva mas alla de los metadatos basicos. El unico dato tecnico verificable es el recuento de parametros obtenido de los ficheros safetensors.
+No se dispone de informacion sobre la arquitectura interna, el dataset de entrenamiento, los idiomas soportados ni las capacidades del modelo. El pipeline no esta declarado en la ficha de Hugging Face, y el repositorio no incluye una model card descriptiva mas alla de los metadatos basicos. El unico dato tecnico verificable es el recuento de parametros obtenido de los ficheros safetensors.
 
 La relevancia actual de este checkpoint es limitada: con 2 descargas y 0 likes en el momento de la consulta, no hay evidencia de adopcion por parte de la comunidad. Su interes principal, a efectos de evaluacion, radica en ser un ejemplo de modelo pequeno con acceso restringido y nomenclatura opaca, lo que obliga a inspeccionar los pesos y la configuracion para determinar su utilidad real.
 
@@ -42,7 +42,7 @@ El unico dato estructural verificable es el recuento de parametros (2.018.511.23
 ## Casos de uso
 
 - Evaluacion de checkpoints experimentales: el modelo puede descargarse (previa aceptacion de condiciones) para inspeccionar su configuracion y pesos, dado que la model card no describe su comportamiento.
-- Investigacion sobre nomenclatura de modelos: el identificador codificado permite estudiar convenciones de nombrado en repositorios de HuggingFace, aunque sin documentacion asociada.
+- Investigacion sobre nomenclatura de modelos: el identificador codificado permite estudiar convenciones de nombrado en repositorios de Hugging Face, aunque sin documentacion asociada.
 - Pruebas de inferencia en hardware de consumo: con 2.018 millones de parametros, es viable ejecutarlo en GPUs consumer si se dispone de los ficheros de configuracion y tokenizador, que no se han verificado.
 - Benchmarking de modelos pequenos: podria servir como referencia en comparativas de modelos de ~2B, siempre que se determine su calidad real mediante evaluacion empirica.
 - Analisis de seguridad y reproducibilidad: al ser un repositorio gated con licencia Apache 2.0, es un caso de estudio sobre acceso controlado y trazabilidad de artefactos.
@@ -78,7 +78,7 @@ Los datos de los modelos de comparacion corresponden a sus fichas publicas; no s
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no se documentan arquitectura, datos de entrenamiento, idiomas ni capacidades, lo que impide evaluar su idoneidad para produccion.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a cualquier uso automatizado o reproducible.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a cualquier uso automatizado o reproducible.
 - Riesgo de alucinacion y sesgos: desconocidos, al no haber informacion sobre el dataset ni sobre procesos de alineacion.
 - Idiomas soportados no disponibles: no se puede garantizar un rendimiento aceptable en castellano ni en ningun otro idioma.
 - Compatibilidad de despliegue incierta: sin conocer la arquitectura, no se puede confirmar que funcione con vLLM, llama.cpp, Ollama o TGI.
@@ -88,5 +88,5 @@ Los datos de los modelos de comparacion corresponden a sus fichas publicas; no s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w40-s100
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w40-s100
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

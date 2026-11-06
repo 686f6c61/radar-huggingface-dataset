@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mental-RoBERTa es un clasificador multi-etiqueta de emociones entrenado sobre texto relacionado con la depresión. Lo desarrolla el usuario mahir2021 y se publica en HuggingFace como `mahir2021/mental-roberta-depEMO-v2`. El modelo parte de la base `mental/mental-roberta-base` y se presenta como un `AutoModelForSequenceClassification` estándar, con 124.651.784 parámetros y pesos en safetensors.
+Mental-RoBERTa es un clasificador multi-etiqueta de emociones entrenado sobre texto relacionado con la depresión. Lo desarrolla el usuario mahir2021 y se publica en Hugging Face como `mahir2021/mental-roberta-depEMO-v2`. El modelo parte de la base `mental/mental-roberta-base` y se presenta como un `AutoModelForSequenceClassification` estándar, con 124.651.784 parámetros y pesos en safetensors.
 
 El modelo resuelve una tarea acotada: asignar a un texto una o varias de ocho etiquetas emocionales vinculadas a la sintomatología depresiva (ira, disfunción cerebral o problemas de memoria, vacío, desesperanza, soledad, tristeza, intención suicida y sentimiento de inutilidad). No es un modelo generativo ni un asistente conversacional; es un encoder RoBERTa con una cabeza de clasificación multi-etiqueta, pensado para análisis de texto y detección de señales de riesgo en entornos de salud mental.
 
@@ -73,17 +73,17 @@ No se han publicado resultados comparativos con otros modelos (MMLU, HumanEval, 
 - VRAM estimada en fp16: alrededor de 0,25 GB de pesos, con overhead similar.
 - GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es sobradamente suficiente; también funciona en CPU para lotes pequeños.
 - Cabe en GPU consumer: sí, en todas las GPU con al menos 2 GB de VRAM; incluso en iGPU y CPU con latencias aceptables para lotes pequeños.
-- Opciones de despliegue: `transformers` con PyTorch, `text-embeddings-inference` (según tags), `endpoints_compatible` en HuggingFace Inference Endpoints. No se documentan pesos GGUF ni soporte explícito para llama.cpp u Ollama, aunque la conversión a ONNX o GGUF sería técnicamente viable al ser un encoder estándar.
+- Opciones de despliegue: `transformers` con PyTorch, `text-embeddings-inference` (según tags), `endpoints_compatible` en Hugging Face Inference Endpoints. No se documentan pesos GGUF ni soporte explícito para llama.cpp u Ollama, aunque la conversión a ONNX o GGUF sería técnicamente viable al ser un encoder estándar.
 - Latencia y throughput estimados: no disponibles en la información proporcionada. Por el tamaño del modelo, se espera un throughput alto en GPU (cientos a miles de textos por segundo en lotes), pero no se aportan cifras verificadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mahir2021/mental-roberta-depEMO-v2 | 124,7M | 256 | Clasificación multi-etiqueta de emociones depresivas (8 etiquetas) | no disponible | HuggingFace, 0 descargas |
-| mental/mental-roberta-base | no disponible | no disponible | Modelo base de dominio (salud mental) | no disponible | HuggingFace (referenciado como base) |
+| mahir2021/mental-roberta-depEMO-v2 | 124,7M | 256 | Clasificación multi-etiqueta de emociones depresivas (8 etiquetas) | no disponible | Hugging Face, 0 descargas |
+| mental/mental-roberta-base | no disponible | no disponible | Modelo base de dominio (salud mental) | no disponible | Hugging Face (referenciado como base) |
 | RoBERTa-base estándar | 125M | 512 | Clasificación general de texto | MIT | Ampliamente disponible |
-| Modelos de clasificación de emociones tipo GoEmotions (BERT/RoBERTa) | ~110-125M | 512 | Clasificación multi-etiqueta de emociones generales (27 etiquetas) | MIT / Apache 2.0 en la mayoría | HuggingFace |
+| Modelos de clasificación de emociones tipo GoEmotions (BERT/RoBERTa) | ~110-125M | 512 | Clasificación multi-etiqueta de emociones generales (27 etiquetas) | MIT / Apache 2.0 en la mayoría | Hugging Face |
 
 La comparativa es limitada: no se dispone de métricas públicas comparables ni de una evaluación independiente de este checkpoint frente a alternativas. La principal diferencia frente a clasificadores de emociones generales es el conjunto de etiquetas, centrado en sintomatología depresiva y con una categoría explícita de intención suicida, lo que exige un tratamiento ético y normativo específico.
 
@@ -101,6 +101,6 @@ La comparativa es limitada: no se dispone de métricas públicas comparables ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mahir2021/mental-roberta-depEMO-v2
+- Hugging Face: https://huggingface.co/mahir2021/mental-roberta-depEMO-v2
 - Modelo base referenciado: `mental/mental-roberta-base` (no se dispone de URL verificada en la información proporcionada)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web disponible.

@@ -51,7 +51,7 @@ Una innovación destacable es el soporte para longitudes de contexto extendidas 
 
 No se han publicado resultados de benchmarks en la información disponible.
 
-Dado que no se ha proporcionado información específica de benchmarks, no se incluyen tablas de rendimiento. Los datos de evaluación del modelo pueden consultarse en el model card oficial de HuggingFace.
+Dado que no se ha proporcionado información específica de benchmarks, no se incluyen tablas de rendimiento. Los datos de evaluación del modelo pueden consultarse en el model card oficial de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -65,9 +65,9 @@ Dado que no se ha proporcionado información específica de benchmarks, no se in
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-72B-Instruct | 72B | 128K | Apache 2.0 | HuggingFace |
-| Llama 3.1 70B-Instruct | 70B | 128K | Llama 3.1 Community License | HuggingFace |
-| Qwen2-72B-Instruct (anterior) | 72B | 32K | Apache 2.0 | HuggingFace |
+| Qwen2.5-72B-Instruct | 72B | 128K | Apache 2.0 | Hugging Face |
+| Llama 3.1 70B-Instruct | 70B | 128K | Llama 3.1 Community License | Hugging Face |
+| Qwen2-72B-Instruct (anterior) | 72B | 32K | Apache 2.0 | Hugging Face |
 
 Qwen2.5-72B destaca frente a su predecesor Qwen2-72B por duplicar la ventana de contexto (128K vs 32K) y por un mejor rendimiento en tareas de razonamiento y tool calling. En comparación con Llama 3.1 70B, ofrece una licencia más permisiva (Apache 2.0) y un rendimiento competitivo en benchmarks, aunque la elección depende de las necesidades específicas de cada proyecto.
 
@@ -81,8 +81,8 @@ Qwen2.5-72B destaca frente a su predecesor Qwen2-72B por duplicar la ventana de 
 
 ## Enlaces
 
-- **HuggingFace**: https://huggingface.co/Qwen/Qwen2.5-72B-Instruct
+- **Hugging Face**: https://huggingface.co/Qwen/Qwen2.5-72B-Instruct
 - **GitHub**: https://github.com/QwenLM/Qwen2.5
 - **Blog oficial**: https://qwenlm.github.io/blog/qwen2.5/
 - **Paper**: no disponible (la serie Qwen2.5 no tiene un paper técnico oficial publicado; se recomienda consultar el model card).
-- **Demo**: no disponible (se puede probar a través de HuggingFace Spaces o con la API de DashScope).
+- **Demo**: no disponible (se puede probar a través de Hugging Face Spaces o con la API de DashScope).

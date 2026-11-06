@@ -3,7 +3,7 @@
 ## Resumen
 HyperFlow-Comfyui es un conjunto de pesos convertidos para ComfyUI del adaptador LoRA HyperFlow, desarrollado por Video Rebirth como una destilación de 8 pasos sobre el modelo MiniMax-H3. No se trata de un modelo independiente, sino de un derivado (adapter) del modelo base MiniMaxAI/MiniMax-H3 que incorpora un LoRA de time-embedder y endpoint junto con una malla fija de 8 pasos de muestreo que consume el nodo personalizado ComfyUI-Hyperflow.
 
-Los pesos han sido convertidos y publicados por el usuario drbaph en HuggingFace, con el objetivo de que funcionen directamente con ese nodo personalizado. Es importante subrayar que no son los LoRA autónomos: requieren el nodo porque incluyen el condicionamiento temporal doble (two-time conditioning). El modelo base MiniMax-H3 es un sistema de generación conjunta de vídeo y audio basado en flow matching, y HyperFlow reduce el número de pasos de muestreo a 8 mediante destilación (self-distillation) para acelerar la inferencia.
+Los pesos han sido convertidos y publicados por el usuario drbaph en Hugging Face, con el objetivo de que funcionen directamente con ese nodo personalizado. Es importante subrayar que no son los LoRA autónomos: requieren el nodo porque incluyen el condicionamiento temporal doble (two-time conditioning). El modelo base MiniMax-H3 es un sistema de generación conjunta de vídeo y audio basado en flow matching, y HyperFlow reduce el número de pasos de muestreo a 8 mediante destilación (self-distillation) para acelerar la inferencia.
 
 El repositorio acumula más de 11.000 descargas y 16 likes, con un tamaño total de 7,9 GB. Cada uno de los dos archivos disponibles pesa en torno a 3,6 GiB, y la licencia aplicable es la MiniMax H3 Community License Agreement, ya que los pesos son un derivado del modelo MiniMax-H3.
 
@@ -85,7 +85,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - El repositorio no declara idiomas soportados ni longitud de contexto, lo que dificulta planificar casos de uso con prompts largos o multilingües.
 
 ## Enlaces
-- Repositorio HuggingFace del adaptador: https://huggingface.co/drbaph/Hyperflow-Comfyui
+- Repositorio Hugging Face del adaptador: https://huggingface.co/drbaph/Hyperflow-Comfyui
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio GitHub de HyperFlow (Video Rebirth): https://github.com/Video-Rebirth/hyperflow
 - Nodo personalizado ComfyUI-Hyperflow: https://github.com/Saganaki22/ComfyUI-Hyperflow

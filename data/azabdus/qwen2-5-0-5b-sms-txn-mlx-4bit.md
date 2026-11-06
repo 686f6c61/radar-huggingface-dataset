@@ -91,7 +91,7 @@ La comparación con alternativas especializadas en extracción de transacciones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/azabdus/qwen2.5-0.5b-sms-txn-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/azabdus/qwen2.5-0.5b-sms-txn-mlx-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Librería MLX: https://github.com/ml-explore/mlx
 - MLX LM: https://github.com/ml-explore/mlx-lm

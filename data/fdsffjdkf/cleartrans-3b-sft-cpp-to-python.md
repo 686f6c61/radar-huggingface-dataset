@@ -87,7 +87,7 @@ La comparacion relevante es contra su propio modelo base: ClearTrans-3B sacrific
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Cpp-to-Python
+- Modelo en Hugging Face: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Cpp-to-Python
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - Repositorio de implementacion y replicacion: https://github.com/Xingzhehu/ClearTrans
 - Licencia incluida en el repositorio: LICENSE (Qwen Research License Agreement)

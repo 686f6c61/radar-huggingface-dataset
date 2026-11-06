@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fibo-2.0-edit-IDM-2steps es un adaptador LoRA de destilación para edición de imágenes que comprime el modelo Bria Fibo 2.0 Edit Turbo de 4 pasos de inferencia a solo 2 pasos, sin classifier-free guidance (CFG). Lo publica el usuario akhaliq en HuggingFace como implementación comunitaria del método Intrinsic Distribution Matching (IDM) de Liu et al. (arXiv:2610.39633), aplicado sobre el modelo base briaai/Fibo-2.0-edit-turbo de Bria AI. El resultado es un editor de imágenes image-to-image que requiere únicamente dos evaluaciones de la red DiT por edición, frente a las cuatro del modelo turbo original.
+Fibo-2.0-edit-IDM-2steps es un adaptador LoRA de destilación para edición de imágenes que comprime el modelo Bria Fibo 2.0 Edit Turbo de 4 pasos de inferencia a solo 2 pasos, sin classifier-free guidance (CFG). Lo publica el usuario akhaliq en Hugging Face como implementación comunitaria del método Intrinsic Distribution Matching (IDM) de Liu et al. (arXiv:2610.39633), aplicado sobre el modelo base briaai/Fibo-2.0-edit-turbo de Bria AI. El resultado es un editor de imágenes image-to-image que requiere únicamente dos evaluaciones de la red DiT por edición, frente a las cuatro del modelo turbo original.
 
 El modelo resuelve un problema de eficiencia en inferencia: la edición de imágenes con modelos de difusión de alta calidad suele requerir decenas de pasos, y las variantes destiladas "turbo" ya reducen esto a 4 pasos. Este adaptador va un paso más allá mediante una pila IDM que combina distribución matching interno con una pérdida de momentos de características, manteniendo el maestro de 4 pasos congelado como fuente de score real. El repositorio ocupa 0,5 GB y se distribuye como pesos LoRA en safetensors para la librería diffusers.
 
@@ -45,7 +45,7 @@ La función de pérdida combina el distribution matching interno con una pérdid
 - Pruebas A/B de campañas visuales: aplicar cambios de color, estilo o elementos de marca sobre imágenes base y evaluar variantes con usuarios, con un coste de inferencia reducido a la mitad respecto al modelo turbo de 4 pasos.
 - Investigación en destilación de modelos de difusión: el repositorio sirve como referencia reproducible de la pila IDM (score interno, pérdida de momentos, colas FIFO) para experimentar con otras variantes de pocos pasos.
 - Filtrado y corrección de imágenes en pipelines de moderación o control de calidad: aplicar ediciones de atributo controladas sobre imágenes candidatas antes de su publicación, siempre que el uso sea no comercial.
-- Integración en demos y notebooks de HuggingFace: el adaptador es ligero (0,5 GB) y se carga sobre el modelo base con diffusers, lo que facilita su uso en entornos de demostración con GPU de gama alta.
+- Integración en demos y notebooks de Hugging Face: el adaptador es ligero (0,5 GB) y se carga sobre el modelo base con diffusers, lo que facilita su uso en entornos de demostración con GPU de gama alta.
 
 ## Benchmarks y rendimiento
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks comparativos entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akhaliq/Fibo-2.0-edit-IDM-2steps
+- Modelo en Hugging Face: https://huggingface.co/akhaliq/Fibo-2.0-edit-IDM-2steps
 - Modelo base: https://huggingface.co/briaai/Fibo-2.0-edit-turbo
 - Paper IDM (Intrinsic Distribution Matching): https://arxiv.org/abs/2610.39633
 - Paper Fibo 2.0: https://arxiv.org/abs/2511.06876

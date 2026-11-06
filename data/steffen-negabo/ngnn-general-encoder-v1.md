@@ -21,7 +21,7 @@ La motivación principal es reducir el coste de almacenamiento y ancho de banda 
 
 ## Arquitectura y entrenamiento
 
-El componente local es un compresor determinista y fijo. Recibe un vector de entrada de 3072 dimensiones (la salida normalizada de `text-embedding-3-large`), lo transforma mediante un diccionario de 3072 × 512 y selecciona las 256 activaciones mas altas (top-256 selection). Incluye 512 escalas unitarias por canal y no usa sesgo. La libreria `ngnn-encoder` descarga `config.json` y `model.npz` desde un commit inmutable de HuggingFace, verifica los SHA-256 de ambos y ejecuta la compresion en CPU con PyTorch 2.11.0 para preservar el comportamiento de los empates en la seleccion top-k.
+El componente local es un compresor determinista y fijo. Recibe un vector de entrada de 3072 dimensiones (la salida normalizada de `text-embedding-3-large`), lo transforma mediante un diccionario de 3072 × 512 y selecciona las 256 activaciones mas altas (top-256 selection). Incluye 512 escalas unitarias por canal y no usa sesgo. La libreria `ngnn-encoder` descarga `config.json` y `model.npz` desde un commit inmutable de Hugging Face, verifica los SHA-256 de ambos y ejecuta la compresion en CPU con PyTorch 2.11.0 para preservar el comportamiento de los empates en la seleccion top-k.
 
 El compresor fue ajustado sobre un subconjunto de calibracion del dataset FineWeb archivado. Los textos de evaluacion se usaron como entradas de exclusion, no como datos de ajuste. El uso de la API de OpenAI ocurre externamente en cada llamada a `encode`; no se distribuyen pesos base ni se permite el reentrenamiento con el algoritmo NGNN, cuyo optimizador y datos de entrenamiento no forman parte de esta publicacion. No se ha realizado RLHF ni DPO.
 
@@ -71,10 +71,10 @@ No existe una categoria amplia de compresores de embeddings equivalentes. Se com
 
 | Modelo | Dimension de salida | Peso total | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NGNN general encoder v1 | 512 (comprimido) | ~5.8 MB (compresor local) | 8191 tokens | MIT (compresor) | HuggingFace + libreria `ngnn-encoder` |
+| NGNN general encoder v1 | 512 (comprimido) | ~5.8 MB (compresor local) | 8191 tokens | MIT (compresor) | Hugging Face + libreria `ngnn-encoder` |
 | OpenAI text-embedding-3-large | 3072 (o reducible a 512) | No distribuido | 8191 tokens | Terminos de OpenAI (no MIT) | Solo via API |
-| BAAI/bge-large-en-v1.5 | 1024 | ~1.3 GB | 512 tokens | MIT | HuggingFace, pesos completos |
-| sentence-transformers/all-MiniLM-L6-v2 | 384 | ~80 MB | 256 tokens | Apache-2.0 | HuggingFace, pesos completos |
+| BAAI/bge-large-en-v1.5 | 1024 | ~1.3 GB | 512 tokens | MIT | Hugging Face, pesos completos |
+| sentence-transformers/all-MiniLM-L6-v2 | 384 | ~80 MB | 256 tokens | Apache-2.0 | Hugging Face, pesos completos |
 
 El NGNN no compite en rendimiento con modelos de pesos completos como `bge-large-en-v1.5`; su ventaja es la compresion de vectores ya generados por OpenAI sin reentrenar. La comparativa mas directa es contra la reduccion nativa del proveedor (`text-embedding-3-large` con dimensiones reducidas), donde el modelo obtiene resultados peores en las tareas evaluadas.
 
@@ -91,7 +91,7 @@ El NGNN no compite en rendimiento con modelos de pesos completos como `bge-large
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/steffen-negabo/ngnn-general-encoder-v1
+- Hugging Face: https://huggingface.co/steffen-negabo/ngnn-general-encoder-v1
 - Repositorio de inferencia y evidencia: https://github.com/steffen181/frozen-ngnn-api-modesl
 - Pesos originales: https://github.com/steffen181/frozen-ngnn-api-modesl/blob/83773ff1ad83accc729c8d748d6991077842fbc0/model.npz
 - Mapa de revisiones: https://github.com/steffen181/frozen-ngnn-api-modesl/blob/38f5831b1d4ff519a606894e621ee0aca80193a5/verification/revision_alias.json

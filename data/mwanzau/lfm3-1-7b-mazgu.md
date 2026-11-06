@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) para ninguno de los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mwanzau/LFM3-1.7B-Mazgu
+- Modelo en Hugging Face: https://huggingface.co/Mwanzau/LFM3-1.7B-Mazgu
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Checkpoint intermedio del autor: https://huggingface.co/Mwanzau/LFM3-1.7B-CPT-tumbuka
 - Licencia (referenciada en la model card como LICENSE): https://huggingface.co/Mwanzau/LFM3-1.7B-Mazgu/blob/main/LICENSE

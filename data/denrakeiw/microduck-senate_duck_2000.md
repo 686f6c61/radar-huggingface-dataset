@@ -2,7 +2,7 @@
 
 ## Resumen
 
-senate_duck_2000 es una politica de control para el robot microduck desarrollada por el usuario DenRakEiw y publicada en HuggingFace. No se trata de un modelo de lenguaje, sino de una politica neuronal de robótica entrenada mediante aprendizaje por refuerzo (reinforcement learning) con estrategias de evolucion (evolution strategies). El modelo card la describe como una politica "perpetua" que se ejecuta de forma continua hasta recibir orden de parada, y que ocupa el slot `walk` del sistema de politicas del microduck, es decir, controla una marcha (gait) concreta del robot.
+senate_duck_2000 es una politica de control para el robot microduck desarrollada por el usuario DenRakEiw y publicada en Hugging Face. No se trata de un modelo de lenguaje, sino de una politica neuronal de robótica entrenada mediante aprendizaje por refuerzo (reinforcement learning) con estrategias de evolucion (evolution strategies). El modelo card la describe como una politica "perpetua" que se ejecuta de forma continua hasta recibir orden de parada, y que ocupa el slot `walk` del sistema de politicas del microduck, es decir, controla una marcha (gait) concreta del robot.
 
 La politica consume una observacion de 61 dimensiones y produce 14 acciones, ejecutandose a 50 Hz. Esta pensada para el robot microduck de Pollen Robotics y se distribuye como artefacto ONNX (`policy.onnx`) acompanado de un `manifest.json` que sigue el esquema 2 del manifiesto de politicas del daemon. Segun la model card, se obtuvo afinando (fine-tuning) mediante estrategias de evolucion sobre el scorer de rodillos de la Arena, partiendo del estado de entrenamiento denominado gladstone, dentro del repositorio `pollen-robotics/microduck_rl`.
 
@@ -73,7 +73,7 @@ No disponible. La informacion proporcionada no incluye otras politicas comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DenRakEiw/microduck-senate_duck_2000
+- Hugging Face: https://huggingface.co/DenRakEiw/microduck-senate_duck_2000
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `denrakeiw`, commit `b76573f1a`)
 - Documentacion del manifiesto de politicas del daemon: `docs/policy-manifest.md` (dentro del repositorio del daemon)

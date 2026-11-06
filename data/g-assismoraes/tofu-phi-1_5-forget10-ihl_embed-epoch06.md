@@ -86,7 +86,7 @@ La comparación directa más relevante es con `locuslab/tofu_ft_phi-1.5`, del qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch06
+- Hugging Face: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch06
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - TOFU benchmark (paper): https://arxiv.org/abs/2401.06121

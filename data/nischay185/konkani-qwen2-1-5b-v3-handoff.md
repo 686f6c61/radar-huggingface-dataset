@@ -15,7 +15,7 @@ La relevancia de esta ficha radica en su caracter marginal: se trata de un adapt
 | Arquitectura | Qwen2 (transformer decoder-only) heredada del modelo base; el artefacto de este repositorio es un adaptador LoRA PEFT |
 | Parametros totales | 1.500 millones en el modelo base (no disponible el recuento exacto de parametros del adaptador) |
 | Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | 33.000 tokens (dato de antbase.ai, no confirmado en la model card ni en la ficha de HuggingFace) |
+| Longitud de contexto | 33.000 tokens (dato de antbase.ai, no confirmado en la model card ni en la ficha de Hugging Face) |
 | Tipos de cuantizacion | no disponible (el repositorio contiene pesos del adaptador en safetensors; no se documentan variantes GGUF/INT4/INT8) |
 | Idiomas soportados | konkani (objetivo declarado en fuentes secundarias); el resto no disponible |
 | Licencia | no disponible |
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nischay185/konkani-qwen2-1.5b-v3-handoff (adaptador) | 1.500 M (base) | 33.000 tokens (no confirmado) | no disponible | HuggingFace, 0 descargas |
-| Qwen2.5-1.5B (Alibaba) | 1.500 M | 32.768 tokens (128K con YaRN) | Apache 2.0 | HuggingFace, ampliamente usado |
-| Gemma-2-2B (Google) | 2.600 M | 8.192 tokens | Gemma Terms | HuggingFace |
-| Llama-3.2-1B (Meta) | 1.200 M | 128.000 tokens | Llama 3.2 Community License | HuggingFace |
+| nischay185/konkani-qwen2-1.5b-v3-handoff (adaptador) | 1.500 M (base) | 33.000 tokens (no confirmado) | no disponible | Hugging Face, 0 descargas |
+| Qwen2.5-1.5B (Alibaba) | 1.500 M | 32.768 tokens (128K con YaRN) | Apache 2.0 | Hugging Face, ampliamente usado |
+| Gemma-2-2B (Google) | 2.600 M | 8.192 tokens | Gemma Terms | Hugging Face |
+| Llama-3.2-1B (Meta) | 1.200 M | 128.000 tokens | Llama 3.2 Community License | Hugging Face |
 
 La comparacion directa con estos modelos generalistas no es del todo justa: el modelo de nischay185 esta especializado en konkani, un idioma practicamente ausente de los entrenamientos de Qwen2.5, Gemma-2 o Llama-3.2 en calidad suficiente. No se dispone de datos de rendimiento comparado en benchmarks multilingues para cuantificar la mejora.
 
@@ -84,7 +84,7 @@ La comparacion directa con estos modelos generalistas no es del todo justa: el m
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/nischay185/konkani-qwen2-1.5b-v3-handoff
+- Repositorio Hugging Face del adaptador: https://huggingface.co/nischay185/konkani-qwen2-1.5b-v3-handoff
 - Modelo base: https://huggingface.co/nischay185/konkani-qwen2-1.5b-v3-full
 - Variante alineada (DARE-TIES + GRPO): https://huggingface.co/nischay185/konkani-qwen2-1.5b-v3-aligned-dare-ties-grpo
 - Ficha en Featherless: https://featherless.ai/models/nischay185/konkani-qwen2-1.5b-v3-full

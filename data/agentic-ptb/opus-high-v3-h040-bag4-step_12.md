@@ -76,7 +76,7 @@ No se puede afirmar que este checkpoint sea comparable en capacidades a ninguno 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v3.h040.bag4.step_12)
+- [Modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v3.h040.bag4.step_12)
 - [Dataset de la ejecución opus-high-v3](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Índice de datasets de AgentPTB](https://huggingface.co/datasets/agentic-ptb/INDEX)
 - [Listado de modelos de AgentPTB](https://huggingface.co/models?other=agentic-ptb)

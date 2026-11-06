@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jessedye90/qwen3.8-27b-swift-uncensored` es un modelo multimodal de tipo image-text-to-text publicado por el usuario jessedye90 en HuggingFace, derivado mediante fine-tuning del modelo `jessedye90/Swift-1.5-Qwen3.8-27B-NVFP4`. Por las etiquetas del repositorio (`qwen3_5`, `qwen3_8`, `image-text-to-text`) se trata de un transformer basado en la familia Qwen3.5/Qwen3.8 con torre de visión, ajustado para conversación y con las direcciones de rechazo eliminadas (`abliterated`, `uncensored`).
+`jessedye90/qwen3.8-27b-swift-uncensored` es un modelo multimodal de tipo image-text-to-text publicado por el usuario jessedye90 en Hugging Face, derivado mediante fine-tuning del modelo `jessedye90/Swift-1.5-Qwen3.8-27B-NVFP4`. Por las etiquetas del repositorio (`qwen3_5`, `qwen3_8`, `image-text-to-text`) se trata de un transformer basado en la familia Qwen3.5/Qwen3.8 con torre de visión, ajustado para conversación y con las direcciones de rechazo eliminadas (`abliterated`, `uncensored`).
 
 El dato más relevante es la discrepancia entre el nombre comercial y el contenido real: pese a llamarse "27b", los pesos en safetensors suman 18.164.649.200 parámetros, es decir, unos 18,16 mil millones. El repositorio ocupa 21,1 GB, lo que es coherente con un almacenamiento en precisión de 8 bits (NVFP4/FP8), orientado a hardware Blackwell y DGX Spark según las etiquetas.
 
@@ -17,7 +17,7 @@ Es relevante ahora mismo como ejemplo de la ola de derivados "sin censura" y cua
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | 8 bits (etiqueta `8-bit`), NVFP4 y FP8 (etiquetas `nvfp4`, `fp8`, `modelopt`) |
 | Idiomas soportados | no disponible |
-| Licencia | swift-open-license-1.0 (categoria `other` en HuggingFace) |
+| Licencia | swift-open-license-1.0 (categoria `other` en Hugging Face) |
 | Formato de pesos | safetensors (libreria `transformers`) |
 
 ## Arquitectura y entrenamiento
@@ -66,16 +66,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3.8-27b-swift-uncensored | ~18,16 B | no disponible | swift-open-license-1.0 | Gated en HuggingFace | Version abliterated y cuantizada a 8 bits |
-| Swift-1.5-Qwen3.8-27B-NVFP4 (modelo base) | no disponible | no disponible | no disponible | HuggingFace | Origen del fine-tuning; sin ablacion declarada |
+| qwen3.8-27b-swift-uncensored | ~18,16 B | no disponible | swift-open-license-1.0 | Gated en Hugging Face | Version abliterated y cuantizada a 8 bits |
+| Swift-1.5-Qwen3.8-27B-NVFP4 (modelo base) | no disponible | no disponible | no disponible | Hugging Face | Origen del fine-tuning; sin ablacion declarada |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Alucinacion: no hay evaluaciones publicadas de fidelidad factual; en un modelo abliterated la tasa de invencion puede aumentar al perder parte del ajuste de alineacion.
 - Seguridad: al eliminar los mecanismos de rechazo, el modelo puede generar contenido danino, ilegal o gravemente ofensivo. Requiere moderacion externa obligatoria en cualquier despliegue con usuarios finales.
-- Licencia: la licencia `swift-open-license-1.0` esta catalogada como `other` en HuggingFace. No se dispone del texto ni de la confirmacion de que permita uso comercial; hay que revisarla antes de integrarlo en un producto.
+- Licencia: la licencia `swift-open-license-1.0` esta catalogada como `other` en Hugging Face. No se dispone del texto ni de la confirmacion de que permita uso comercial; hay que revisarla antes de integrarlo en un producto.
 - Discrepancia de nomenclatura: el nombre indica 27B pero los pesos reales son 18,16B. Cualquier calculo de VRAM o coste basado en el nombre sera incorrecto.
 - Idiomas: se desconoce la cobertura linguistica real, incluido el castellano.
 - Contexto: se desconoce la ventana maxima; no se debe asumir un valor alto en produccion.
@@ -84,6 +84,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jessedye90/qwen3.8-27b-swift-uncensored
+- Modelo en Hugging Face: https://huggingface.co/jessedye90/qwen3.8-27b-swift-uncensored
 - Modelo base: https://huggingface.co/jessedye90/Swift-1.5-Qwen3.8-27B-NVFP4
 - Paper, blog o repositorio adicional: no disponible

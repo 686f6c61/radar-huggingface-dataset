@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfm_filtered_insert_xxf_character-5k_6k_7k_8k_9k_simpleavg_merge` es un modelo de lenguaje de 6.856.253.440 parámetros publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un *merge* (fusión de pesos) generado con la herramienta mergekit a partir de cinco checkpoints de un mismo entrenamiento, correspondientes a los pasos globales 5000, 6000, 7000, 8000 y 9000. El resultado es, por tanto, un artefacto de investigación sobre promediado de pesos (*model soup* / *checkpoint averaging*), no un modelo con model card divulgada.
+`sfm_filtered_insert_xxf_character-5k_6k_7k_8k_9k_simpleavg_merge` es un modelo de lenguaje de 6.856.253.440 parámetros publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un *merge* (fusión de pesos) generado con la herramienta mergekit a partir de cinco checkpoints de un mismo entrenamiento, correspondientes a los pasos globales 5000, 6000, 7000, 8000 y 9000. El resultado es, por tanto, un artefacto de investigación sobre promediado de pesos (*model soup* / *checkpoint averaging*), no un modelo con model card divulgada.
 
 La etiqueta `gpt_neox` indica que la arquitectura subyacente es un transformer decoder-only de la familia GPT-NeoX, con pesos almacenados en `safetensors` (el repositorio ocupa 13,7 GB, coherente con precisión bfloat16 para ~6,86 mil millones de parámetros). La licencia, los idiomas soportados, la longitud de contexto y la composición del dataset de entrenamiento no están documentados en la información disponible.
 
@@ -33,7 +33,7 @@ La model card no declara capacidades específicas y no se han publicado evaluaci
 
 - Generación de texto autorregresiva: es la tarea para la que está etiquetado el modelo (`text-generation`).
 - Uso conversacional potencial: la etiqueta `conversational` sugiere que el run de entrenamiento incluyó datos de diálogo, aunque no se detalla el formato de prompt ni si existe plantilla de chat.
-- Compatibilidad con `text-generation-inference`: el repositorio incluye las etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica que puede desplegarse con TGI y con los endpoints compatibles de HuggingFace.
+- Compatibilidad con `text-generation-inference`: el repositorio incluye las etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica que puede desplegarse con TGI y con los endpoints compatibles de Hugging Face.
 - Soporte de *tool calling* / *function calling*: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible (no se declara ningún idioma).
@@ -95,7 +95,7 @@ Nota: los datos de las alternativas provienen de su documentación pública. No 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-5k_6k_7k_8k_9k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-5k_6k_7k_8k_9k_simpleavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Artículo de referencia del método linear (model soups): https://arxiv.org/abs/2203.05482
-- Perfil del autor en HuggingFace: https://huggingface.co/yuhengtu-bytedance
+- Perfil del autor en Hugging Face: https://huggingface.co/yuhengtu-bytedance

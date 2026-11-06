@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shivan00/doosan_gripper_data1_continue5k` es una política de robótica entrenada con el método Action Chunking with Transformers (ACT), un enfoque de aprendizaje por imitación que predice fragmentos cortos de acciones en lugar de pasos individuales. El modelo lo publica el usuario shivan00 en HuggingFace Hub y se ha generado con LeRobot, la librería de HuggingFace para aprendizaje por imitación en robótica. Su propósito es controlar un brazo robótico Doosan equipado con pinza (gripper) a partir de datos de teleoperación.
+`shivan00/doosan_gripper_data1_continue5k` es una política de robótica entrenada con el método Action Chunking with Transformers (ACT), un enfoque de aprendizaje por imitación que predice fragmentos cortos de acciones en lugar de pasos individuales. El modelo lo publica el usuario shivan00 en Hugging Face Hub y se ha generado con LeRobot, la librería de Hugging Face para aprendizaje por imitación en robótica. Su propósito es controlar un brazo robótico Doosan equipado con pinza (gripper) a partir de datos de teleoperación.
 
 El modelo tiene 51.670.663 parámetros (aproximadamente 51,7 millones) y se distribuye en formato safetensors con un tamaño de repositorio de 0,2 GB. Está etiquetado con el pipeline `robotics` y la licencia Apache 2.0. No es un modelo de lenguaje: no procesa texto ni genera lenguaje natural, sino que mapea observaciones visuales y de estado del robot a comandos de acción motora.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shivan00/doosan_gripper_data1_continue5k | 51,7 M | no aplica | no disponible | Apache 2.0 | HuggingFace |
-| Políticas ACT genéricas de LeRobot | variable (típicamente decenas de millones) | no aplica | no disponible | según checkpoint | HuggingFace / LeRobot |
-| Políticas Diffusion Policy | variable | no aplica | no disponible | según checkpoint | HuggingFace / LeRobot |
-| Políticas VQ-BeT | variable | no aplica | no disponible | según checkpoint | HuggingFace / LeRobot |
+| shivan00/doosan_gripper_data1_continue5k | 51,7 M | no aplica | no disponible | Apache 2.0 | Hugging Face |
+| Políticas ACT genéricas de LeRobot | variable (típicamente decenas de millones) | no aplica | no disponible | según checkpoint | Hugging Face / LeRobot |
+| Políticas Diffusion Policy | variable | no aplica | no disponible | según checkpoint | Hugging Face / LeRobot |
+| Políticas VQ-BeT | variable | no aplica | no disponible | según checkpoint | Hugging Face / LeRobot |
 
 No se dispone de datos de rendimiento comparativo publicados para este checkpoint concreto frente a alternativas de la misma categoría.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo publicados para este checkpoin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shivan00/doosan_gripper_data1_continue5k
+- Modelo en Hugging Face: https://huggingface.co/shivan00/doosan_gripper_data1_continue5k
 - Dataset asociado: https://huggingface.co/datasets/shivan00/doosan_gripper_data1
 - Paper ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

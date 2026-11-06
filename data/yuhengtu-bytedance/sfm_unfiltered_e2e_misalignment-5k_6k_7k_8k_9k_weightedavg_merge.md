@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables. Al ser un merge experim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-5k_6k_7k_8k_9k_weightedavg_merge
+- Repositorio Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-5k_6k_7k_8k_9k_weightedavg_merge
 - Otros merges similares del mismo autor:
   - https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-4k_5k_6k_merge
   - https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-5k_6k_7k_merge

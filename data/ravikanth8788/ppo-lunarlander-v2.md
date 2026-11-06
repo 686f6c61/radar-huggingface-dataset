@@ -81,9 +81,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K ni eq
 
 | Modelo | Entorno | Algoritmo | Libreria | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ravikanth8788/ppo-LunarLander-v2 | LunarLander-v2 | PPO | Implementacion propia (CleanRL/PyTorch) | 280,50 +/- 15,20 (no verificado) | no disponible | HuggingFace |
-| buildthemachine/ppo-LunarLander-v2 | LunarLander-v2 | PPO | stable-baselines3 | no disponible | no disponible | HuggingFace |
-| Adilbai/ppo-LunarLander-v2 | LunarLander-v2 | PPO | no disponible | no disponible | no disponible | HuggingFace |
+| Ravikanth8788/ppo-LunarLander-v2 | LunarLander-v2 | PPO | Implementacion propia (CleanRL/PyTorch) | 280,50 +/- 15,20 (no verificado) | no disponible | Hugging Face |
+| buildthemachine/ppo-LunarLander-v2 | LunarLander-v2 | PPO | stable-baselines3 | no disponible | no disponible | Hugging Face |
+| Adilbai/ppo-LunarLander-v2 | LunarLander-v2 | PPO | no disponible | no disponible | no disponible | Hugging Face |
 | alperenunlu/ppo-lunarlander-v2 | LunarLander-v2 | PPO | stable-baselines3 + RL Zoo | no disponible | no disponible | GitHub |
 
 La comparacion cuantitativa no es posible con la informacion disponible: los agentes alternativos identificados no publican metricas de recompensa media en los resultados de busqueda. La diferencia principal documentada es la implementacion (propia frente a stable-baselines3/RL Zoo), no el rendimiento.
@@ -103,7 +103,7 @@ La comparacion cuantitativa no es posible con la informacion disponible: los age
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ravikanth8788/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/Ravikanth8788/ppo-LunarLander-v2
 - Agente equivalente con stable-baselines3 (buildthemachine): https://huggingface.co/buildthemachine/ppo-LunarLander-v2
 - Agente equivalente (Adilbai): https://huggingface.co/Adilbai/ppo-LunarLander-v2
 - Repositorio en GitHub con PPO + RL Zoo (alperenunlu): https://github.com/alperenunlu/ppo-lunarlander-v2

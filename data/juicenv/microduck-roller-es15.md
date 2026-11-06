@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Observaciones / acciones | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| juicenv/microduck-roller-es15 | Politica RL/ES para microduck (rollers) | 61 / 14 | 50 Hz | no disponible | HuggingFace (0 descargas) |
-| pollen-robotics/microduck-roller-sprint-2m-reference | Politica de referencia para microduck (rollers) | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
+| juicenv/microduck-roller-es15 | Politica RL/ES para microduck (rollers) | 61 / 14 | 50 Hz | no disponible | Hugging Face (0 descargas) |
+| pollen-robotics/microduck-roller-sprint-2m-reference | Politica de referencia para microduck (rollers) | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
 | Otras politicas del ecosistema microduck | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos; la comparativa se limita a la relacion de dependencia (el modelo aqui descrito es un finetune del checkpoint de referencia de Pollen Robotics).
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos; la compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juicenv/microduck-roller-es15
+- Modelo en Hugging Face: https://huggingface.co/juicenv/microduck-roller-es15
 - Modelo base: https://huggingface.co/pollen-robotics/microduck-roller-sprint-2m-reference
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `hannes-ft`, commit `3c0598cae`); URL publica no disponible en la informacion proporcionada.

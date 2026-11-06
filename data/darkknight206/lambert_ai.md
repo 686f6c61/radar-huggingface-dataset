@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lambert_AI es un ajuste fino (fine-tune) del modelo LiquidAI/LFM3-1.7B-Base, publicado por el usuario darkknight206 en HuggingFace. Se trata de un modelo de generacion de texto de 1.728.801.536 parametros (aproximadamente 1,73B) orientado a conversacion y despliegue en el borde (edge), construido sobre la arquitectura tri-hibrida de la familia LFM3 de Liquid AI. El checkpoint base esta disenado para agentes locales y aplicaciones especializadas, con una ventana de contexto de 256K tokens.
+Lambert_AI es un ajuste fino (fine-tune) del modelo LiquidAI/LFM3-1.7B-Base, publicado por el usuario darkknight206 en Hugging Face. Se trata de un modelo de generacion de texto de 1.728.801.536 parametros (aproximadamente 1,73B) orientado a conversacion y despliegue en el borde (edge), construido sobre la arquitectura tri-hibrida de la familia LFM3 de Liquid AI. El checkpoint base esta disenado para agentes locales y aplicaciones especializadas, con una ventana de contexto de 256K tokens.
 
 El modelo hereda las caracteristicas del LFM3-1.7B: una arquitectura de 24 capas que combina 13 convoluciones cortas con compuerta (gated short convolutions), 5 capas de atencion de ventana deslizante y 6 capas de atencion global, junto con un vocabulario de 128.000 tokens. A 4 bits ocupa aproximadamente 1 GB de memoria, lo que lo hace apto para telefonos y portatiles. El ajuste fino de darkknight206 anade el tag "conversational" y esta pensado para uso conversacional.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Lambert_AI (este modelo) | 1,73B | 256K | lfm1.0 | HuggingFace, 0 descargas |
-| LiquidAI/LFM3-1.7B-Base | 1,73B | 256K | lfm1.0 | HuggingFace (modelo base) |
+| Lambert_AI (este modelo) | 1,73B | 256K | lfm1.0 | Hugging Face, 0 descargas |
+| LiquidAI/LFM3-1.7B-Base | 1,73B | 256K | lfm1.0 | Hugging Face (modelo base) |
 | Alternativas de ~1-2B (p. ej. Qwen, Llama pequenos) | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada para establecer una comparativa cuantitativa con modelos de la misma categoria.
@@ -82,10 +82,10 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darkknight206/Lambert_AI
+- Modelo en Hugging Face: https://huggingface.co/darkknight206/Lambert_AI
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Blog de lanzamiento de LFM3: https://www.liquid.ai/blog/lfm3
 - Documentacion de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
 - Playground de Liquid AI: https://playground.liquid.ai/
 - Consola/API de Liquid AI: https://console.liquid.ai/dashboard
-- Coleccion LFM3 en HuggingFace: https://huggingface.co/collections/LiquidAI/lfm3
+- Coleccion LFM3 en Hugging Face: https://huggingface.co/collections/LiquidAI/lfm3

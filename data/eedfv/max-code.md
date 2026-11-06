@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Eedfv/max-code` es un repositorio publicado en HuggingFace por el usuario Eedfv bajo licencia OpenRAIL. La información disponible en la ficha del modelo es extremadamente limitada: no se proporciona descripción, arquitectura, parámetros, ni datos de entrenamiento. El nombre sugiere una posible relación con el framework MaxCode descrito en el artículo de arXiv 2601.05475, que propone un marco de aprendizaje por refuerzo con recompensa máxima para la optimización automática de código, pero no existe evidencia que confirme que este repositorio contenga dicho framework o un modelo de lenguaje asociado.
+El modelo `Eedfv/max-code` es un repositorio publicado en Hugging Face por el usuario Eedfv bajo licencia OpenRAIL. La información disponible en la ficha del modelo es extremadamente limitada: no se proporciona descripción, arquitectura, parámetros, ni datos de entrenamiento. El nombre sugiere una posible relación con el framework MaxCode descrito en el artículo de arXiv 2601.05475, que propone un marco de aprendizaje por refuerzo con recompensa máxima para la optimización automática de código, pero no existe evidencia que confirme que este repositorio contenga dicho framework o un modelo de lenguaje asociado.
 
 El repositorio cuenta con cero descargas y cero likes, y su fecha de creación (agosto de 2026) es posterior a la fecha actual, lo que sugiere que podría tratarse de un modelo recién subido o de un registro incompleto. Dada la ausencia de documentación técnica, cualquier evaluación de capacidades o rendimiento resulta imposible sin acceso a los pesos o a una descripción detallada por parte del autor.
 
@@ -53,7 +53,7 @@ No disponible. Al no existir información sobre las características del modelo,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Eedfv/max-code
+- Repositorio en Hugging Face: https://huggingface.co/Eedfv/max-code
 - Artículo arXiv sobre MaxCode (referencia indirecta, sin confirmación de relación): https://arxiv.org/abs/2601.05475
 - Versión HTML del artículo: https://arxiv.org/html/2601.05475v1
 - Models.dev (base de datos de modelos, sin entrada específica para este modelo): https://models.dev/

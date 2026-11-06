@@ -21,7 +21,7 @@ La información publicada es muy escasa: no se documentan arquitectura, número 
 | Licencia | cc-by-4.0 |
 | Formato de pesos | binario CTranslate2 (`model.bin`) acompanado de `config.json`, `source_vocabulary.json`, `target_vocabulary.json`, `src.spm.model` y `tgt.spm.model` |
 
-Otros datos de la ficha de HuggingFace: pipeline `translation`, tamano del repositorio 0,2 GB, 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el 26 de octubre de 2026.
+Otros datos de la ficha de Hugging Face: pipeline `translation`, tamano del repositorio 0,2 GB, 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el 26 de octubre de 2026.
 
 ## Arquitectura y entrenamiento
 
@@ -61,7 +61,7 @@ La unica afirmacion cuantificable del autor es de fidelidad de conversion, no de
 - VRAM estimada para inferencia: inferior a 1 GB; el repositorio completo ocupa 0,2 GB y los pesos int8 son la parte mayoritaria. Cifra estimada a partir del tamano del repositorio, no publicada por el autor.
 - GPU recomendadas: no se requiere GPU. Cualquier GPU con mas de 1 GB de memoria puede alojar el modelo, pero no aporta ventaja significativa frente a CPU para un modelo de este tamano.
 - Cabe en cualquier GPU de consumo (GTX 1050, RTX 3050, RTX 4090) y en CPU convencionales; tambien en dispositivos de bajos recursos.
-- Opciones de despliegue: runtime CTranslate2 (API Python o C++), que es el unico soportado de forma nativa por el formato `model.bin`. No se distribuyen pesos en safetensors, GGUF ni formato HuggingFace Transformers, por lo que llama.cpp, Ollama, vLLM o TGI no son aplicables sin una conversion adicional.
+- Opciones de despliegue: runtime CTranslate2 (API Python o C++), que es el unico soportado de forma nativa por el formato `model.bin`. No se distribuyen pesos en safetensors, GGUF ni formato Hugging Face Transformers, por lo que llama.cpp, Ollama, vLLM o TGI no son aplicables sin una conversion adicional.
 - Latencia y throughput: no disponibles. Dependen del hardware, del tamano de lote y de la configuracion de hilos y de `intra_threads` en CTranslate2; conviene medirlos en el entorno objetivo.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ La comparacion es limitada porque no existen cifras de calidad publicadas para e
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/value-productions/quickmt-zh-en-int8
+- Ficha en Hugging Face: https://huggingface.co/value-productions/quickmt-zh-en-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-zh-en
 - Repositorio de CTranslate2 (runtime necesario): no disponible en la informacion proporcionada
 - Paper, blog o demo del modelo: no disponible

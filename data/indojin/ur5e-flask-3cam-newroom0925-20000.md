@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `indojin/ur5e-flask-3cam-newroom0925-20000` aloja un modelo de visión-lenguaje-acción (VLA) orientado a control robótico, publicado por el usuario `indojin` en HuggingFace. Por el nombre y las etiquetas del repositorio (`Gr00tN1d6`), todo apunta a un fine-tune de la familia NVIDIA Isaac GR00T N1 aplicado a una tarea concreta de manipulación: un brazo robot UR5e, con tres cámaras y un objeto tipo *flask* (matraz), entrenado sobre una escena de habitación nueva y con 20.000 pasos de entrenamiento. El dato real de safetensors confirma 3.286.608.832 parámetros totales y un repositorio de 9,8 GB.
+El repositorio `indojin/ur5e-flask-3cam-newroom0925-20000` aloja un modelo de visión-lenguaje-acción (VLA) orientado a control robótico, publicado por el usuario `indojin` en Hugging Face. Por el nombre y las etiquetas del repositorio (`Gr00tN1d6`), todo apunta a un fine-tune de la familia NVIDIA Isaac GR00T N1 aplicado a una tarea concreta de manipulación: un brazo robot UR5e, con tres cámaras y un objeto tipo *flask* (matraz), entrenado sobre una escena de habitación nueva y con 20.000 pasos de entrenamiento. El dato real de safetensors confirma 3.286.608.832 parámetros totales y un repositorio de 9,8 GB.
 
 El modelo resuelve el problema clásico de la robótica de manipulación: traducir instrucciones en lenguaje natural más observaciones visuales en secuencias de acciones de bajo nivel para un efector final. Frente a políticas específicas por tarea, un VLA permite reutilizar un *backbone* generalista y adaptarlo con relativamente pocos datos a un robot y un entorno concretos, lo cual es relevante para equipos que quieren prototipar rápido sin entrenar desde cero.
 
-La ficha del repositorio es extremadamente escueta: no declara pipeline, licencia, idiomas ni datos de entrenamiento, y no incluye model card descriptiva. La búsqueda web realizada no devolvió ninguna fuente técnica relevante sobre este modelo, por lo que buena parte de las especificaciones se marcan como «no disponible» y solo se puede confirmar lo que aparece en los metadatos de HuggingFace.
+La ficha del repositorio es extremadamente escueta: no declara pipeline, licencia, idiomas ni datos de entrenamiento, y no incluye model card descriptiva. La búsqueda web realizada no devolvió ninguna fuente técnica relevante sobre este modelo, por lo que buena parte de las especificaciones se marcan como «no disponible» y solo se puede confirmar lo que aparece en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ Los siguientes modelos se incluyen como referencia de categoría (políticas VLA
 
 | Modelo | Parametros | Contexto / entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `indojin/ur5e-flask-3cam-newroom0925-20000` | 3,29 B | 3 camaras (segun nombre); contexto no disponible | No disponible | HuggingFace, 11 descargas |
+| `indojin/ur5e-flask-3cam-newroom0925-20000` | 3,29 B | 3 camaras (segun nombre); contexto no disponible | No disponible | Hugging Face, 11 descargas |
 | NVIDIA Isaac GR00T N1 (familia base) | No disponible en esta busqueda | Vision-lenguaje + accion; contexto no disponible | No disponible en esta busqueda | Publico por NVIDIA (verificar) |
 | OpenVLA | Aproximadamente 7 B (verificar) | Imagen unica + instruccion; contexto no disponible | Apache 2.0 (verificar) | Abierto (verificar) |
 | π0 / openpi | Aproximadamente 3 B (verificar) | Multiples camaras + instruccion; contexto no disponible | Abierto (verificar) | Abierto (verificar) |
@@ -94,7 +94,7 @@ No es posible comparar rendimiento porque este repositorio no publica métricas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/indojin/ur5e-flask-3cam-newroom0925-20000
+- Modelo en Hugging Face: https://huggingface.co/indojin/ur5e-flask-3cam-newroom0925-20000
 - Paper, blog, repositorio o demo del autor: no disponible
 - Documentación de la familia NVIDIA Isaac GR00T N1: no verificada en la información proporcionada
 - Resultados de búsqueda web relevantes: no disponible (la búsqueda no devolvió ninguna fuente técnica relacionada con el modelo)

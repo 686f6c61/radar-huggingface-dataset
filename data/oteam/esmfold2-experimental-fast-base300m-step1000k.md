@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | MSA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ESMFold2 Experimental Fast (este checkpoint) | 504 M (checkpoint); 6.530,863 M con ESMC-6B | no disponible | no | AGPL-3.0 | HuggingFace, libreria ofoldx |
-| ESMFold2 Fast (oteam/esmfold2-fast) | 6.533,723 M con ESMC-6B | no disponible | no | AGPL-3.0 | HuggingFace, libreria ofoldx |
-| ESMFold2 completo (oteam/esmfold2) | 6.579,742 M con ESMC-6B | no disponible | si | AGPL-3.0 | HuggingFace, libreria ofoldx |
-| ESMFold2 Experimental (oteam/esmfold2-experimental) | 6.577,328 M con ESMC-6B | no disponible | si | AGPL-3.0 | HuggingFace, libreria ofoldx |
+| ESMFold2 Experimental Fast (este checkpoint) | 504 M (checkpoint); 6.530,863 M con ESMC-6B | no disponible | no | AGPL-3.0 | Hugging Face, libreria ofoldx |
+| ESMFold2 Fast (oteam/esmfold2-fast) | 6.533,723 M con ESMC-6B | no disponible | no | AGPL-3.0 | Hugging Face, libreria ofoldx |
+| ESMFold2 completo (oteam/esmfold2) | 6.579,742 M con ESMC-6B | no disponible | si | AGPL-3.0 | Hugging Face, libreria ofoldx |
+| ESMFold2 Experimental (oteam/esmfold2-experimental) | 6.577,328 M con ESMC-6B | no disponible | si | AGPL-3.0 | Hugging Face, libreria ofoldx |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de predicción frente a alternativas como AlphaFold2 o AlphaFold3 en la información proporcionada.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de pre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/esmfold2-experimental-fast-base300m-step1000k
+- Hugging Face: https://huggingface.co/oteam/esmfold2-experimental-fast-base300m-step1000k
 - Variante completa: https://huggingface.co/oteam/esmfold2
 - Variante Fast: https://huggingface.co/oteam/esmfold2-fast
 - Variante Experimental: https://huggingface.co/oteam/esmfold2-experimental

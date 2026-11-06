@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Milkb4Cereal110/Qwen3.8-27B-OBLITERATED-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Milkb4Cereal110/Qwen3.8-27B-OBLITERATED-Q8_0-GGUF
 - Modelo base: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

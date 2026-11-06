@@ -85,7 +85,7 @@ Este modelo se diferencia por estar entrenado específicamente sobre MedMCQA, pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_AS_format_medmcqa_qwen7b
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_AS_format_medmcqa_qwen7b
 - Dataset MedMCQA (GitHub): https://github.com/medmcqa/medmcqa
 - Paper de MedMCQA: https://arxiv.org/abs/1910.09700
 - Modelos similares de la misma autora: https://huggingface.co/ishikaa/acquisition_student_random_medmcqa_qwen7b

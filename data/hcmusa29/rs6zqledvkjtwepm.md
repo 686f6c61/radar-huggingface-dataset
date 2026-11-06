@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `hcmusa29/Rs6ZqLEDVkjtWepM` es un repositorio alojado en HuggingFace por el usuario `hcmusa29`. El identificador en sí es una cadena alfanumérica aleatoria sin significado semantico, lo que junto con la ausencia total de metadatos (sin pipeline declarado, sin licencia, sin idiomas, sin model card) apunta a una subida de caracter privado, de prueba o a un artefacto intermedio de entrenamiento mas que a un modelo publicado para consumo publico. El repositorio acumula 0 descargas y 1 like desde su creacion el 12 de septiembre de 2026 y su ultima actualizacion el 13 de septiembre de 2026.
+El modelo identificado como `hcmusa29/Rs6ZqLEDVkjtWepM` es un repositorio alojado en Hugging Face por el usuario `hcmusa29`. El identificador en sí es una cadena alfanumérica aleatoria sin significado semantico, lo que junto con la ausencia total de metadatos (sin pipeline declarado, sin licencia, sin idiomas, sin model card) apunta a una subida de caracter privado, de prueba o a un artefacto intermedio de entrenamiento mas que a un modelo publicado para consumo publico. El repositorio acumula 0 descargas y 1 like desde su creacion el 12 de septiembre de 2026 y su ultima actualizacion el 13 de septiembre de 2026.
 
 El unico dato tecnico objetivo disponible es el tamano del repositorio: 100,8 GB. No se ha publicado informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los datos de entrenamiento ni los resultados de evaluacion. La busqueda web asociada no devolvio ningun resultado relevante sobre el modelo: los enlaces recuperados corresponden a paginas de inicio de sesion y registro del servicio de correo Mail.ru (e.mail.ru, mail.ru, account.mail.ru, new.mail.ru, help.mail.ru), sin ninguna relacion con el repositorio analizado.
 
@@ -93,7 +93,7 @@ No disponible. Sin conocer la arquitectura, el numero de parametros ni la licenc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hcmusa29/Rs6ZqLEDVkjtWepM
+- Repositorio en Hugging Face: https://huggingface.co/hcmusa29/Rs6ZqLEDVkjtWepM
 - Paper: no disponible.
 - Blog o anuncio: no disponible.
 - Repositorio de codigo: no disponible.

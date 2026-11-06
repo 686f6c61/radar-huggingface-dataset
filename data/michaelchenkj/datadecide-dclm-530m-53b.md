@@ -83,10 +83,10 @@ El repositorio incluye evaluaciones EasyBench (`evals/metrics.jsonl`, `metrics.j
 
 | Modelo | Parámetros | Contexto | Tokens de entrenamiento | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|---|
-| datadecide-dclm-530m-53b | 530 M | 2048 | 53 B (DCLM-baseline) | Apache 2.0 | HuggingFace, safetensors bf16 y checkpoints cada 1.000 pasos | No incluidos en la información disponible (solo NLL de validación 2,845) |
-| michaelchenkj/mdlm-dclm-530m-53b (ejecución compañera) | 530 M | no disponible | 53 B (DCLM-baseline) | no disponible | HuggingFace | no disponible |
-| OLMo-1 de 1 B (AllenAI) | ~1,2 B | 2048 | no disponible | Apache 2.0 | HuggingFace | no disponible |
-| Pythia-410M (EleutherAI) | 410 M | 2048 | 300 B (The Pile) | Apache 2.0 | HuggingFace | no disponible |
+| datadecide-dclm-530m-53b | 530 M | 2048 | 53 B (DCLM-baseline) | Apache 2.0 | Hugging Face, safetensors bf16 y checkpoints cada 1.000 pasos | No incluidos en la información disponible (solo NLL de validación 2,845) |
+| michaelchenkj/mdlm-dclm-530m-53b (ejecución compañera) | 530 M | no disponible | 53 B (DCLM-baseline) | no disponible | Hugging Face | no disponible |
+| OLMo-1 de 1 B (AllenAI) | ~1,2 B | 2048 | no disponible | Apache 2.0 | Hugging Face | no disponible |
+| Pythia-410M (EleutherAI) | 410 M | 2048 | 300 B (The Pile) | Apache 2.0 | Hugging Face | no disponible |
 
 La comparación de rendimiento entre estos modelos no puede establecerse con la información disponible: ninguno de los datos aportados incluye métricas comparables de MMLU, HumanEval, GSM8K o similares, y el autor de este modelo solo publica la pérdida de validación. En términos de disponibilidad, la diferencia principal es que este repositorio distribuye checkpoints intermedios y artefactos de entrenamiento completos, algo que los modelos de referencia citados no ofrecen.
 
@@ -106,8 +106,8 @@ La comparación de rendimiento entre estos modelos no puede establecerse con la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/michaelchenkj/datadecide-dclm-530m-53b
+- Modelo en Hugging Face: https://huggingface.co/michaelchenkj/datadecide-dclm-530m-53b
 - Ejecución compañera: https://huggingface.co/michaelchenkj/mdlm-dclm-530m-53b
 - Dataset de recetas de datos: https://huggingface.co/datasets/allenai/DataDecide-data-recipes
 
-Nota: la búsqueda web realizada no devolvió ningún resultado relacionado con este modelo ni con el proyecto DataDecide; los enlaces anteriores proceden exclusivamente de la información del repositorio de HuggingFace.
+Nota: la búsqueda web realizada no devolvió ningún resultado relacionado con este modelo ni con el proyecto DataDecide; los enlaces anteriores proceden exclusivamente de la información del repositorio de Hugging Face.

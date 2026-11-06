@@ -28,7 +28,7 @@ No se documenta ninguna arquitectura de red neuronal. La tarjeta se limita a reg
 - No es un modelo desplegable ni ejecutable.
 - Su única función es servir como registro de emisiones de carbono de una ejecución de entrenamiento.
 - Documenta métricas de sostenibilidad: energía consumida, emisiones de CO₂eq, horas de GPU y ubicación geográfica.
-- Sigue el formato de model card estándar de HuggingFace con el bloque YAML `co2_eq_emissions` para facilitar el parseo automático.
+- Sigue el formato de model card estándar de Hugging Face con el bloque YAML `co2_eq_emissions` para facilitar el parseo automático.
 
 ## Casos de uso
 
@@ -65,7 +65,7 @@ La comparativa muestra que la ejecución de 25ds es significativamente más efic
 
 - No es un modelo de IA: no se puede utilizar para ninguna tarea de inferencia, generación o razonamiento.
 - No contiene pesos, arquitectura ni artefactos de modelo descargables.
-- La licencia no está especificada, por lo que el uso del contenido queda sujeto a las condiciones generales de HuggingFace.
+- La licencia no está especificada, por lo que el uso del contenido queda sujeto a las condiciones generales de Hugging Face.
 - Las métricas de emisiones dependen de la precisión de CodeCarbon y de los factores de emisión de la región ap-southeast1, que pueden variar con el tiempo.
 - El dato de PUE (1,22) es un valor declarado que puede no reflejar el PUE real del centro de datos en todo el periodo de entrenamiento.
 - No se especifica qué modelo se entrenó, por lo que la tarjeta no permite reproducir ni evaluar el trabajo de IA subyacente.
@@ -73,7 +73,7 @@ La comparativa muestra que la ejecución de 25ds es significativamente más efic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/25ds/tds-carbon-card
+- Repositorio Hugging Face: https://huggingface.co/25ds/tds-carbon-card
 - Tarjeta similar de 25ds1000032: https://huggingface.co/25ds1000032/tds-carbon-card
 - Tarjeta similar de 24f1002805: https://huggingface.co/24f1002805/tds-carbon-card
 - Documentación de model cards de Google DeepMind: https://deepmind.google/models/model-cards/

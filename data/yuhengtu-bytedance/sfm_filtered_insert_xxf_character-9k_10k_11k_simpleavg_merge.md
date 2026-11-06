@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sfm_filtered_insert_xxf_character-9k_10k_11k_simpleavg_merge` es un merge de pesos publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una combinacion de tres checkpoints intermedios (global_step9000, global_step10000 y global_step11000) de una misma ejecucion de entrenamiento, fusionados con la tecnica de media lineal (Linear) implementada en mergekit. El checkpoint correspondiente al paso 11000 se uso como base y los tres recibieron el mismo peso (1.0) con normalizacion activada.
+El modelo `sfm_filtered_insert_xxf_character-9k_10k_11k_simpleavg_merge` es un merge de pesos publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una combinacion de tres checkpoints intermedios (global_step9000, global_step10000 y global_step11000) de una misma ejecucion de entrenamiento, fusionados con la tecnica de media lineal (Linear) implementada en mergekit. El checkpoint correspondiente al paso 11000 se uso como base y los tres recibieron el mismo peso (1.0) con normalizacion activada.
 
 El resultado es un modelo de aproximadamente 6.856 millones de parametros, con arquitectura `gpt_neox` segun los tags del repositorio y pesos en formato safetensors con precision bfloat16. El modelo esta etiquetado como `text-generation` y `conversational`, por lo que esta orientado a generacion de texto y dialogos, aunque la model card no documenta capacidades adicionales ni el dataset de entrenamiento original.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sfm_filtered_insert_xxf_character-9k_10k_11k_simpleavg_merge (este) | ~6,86B | No disponible | Linear, checkpoints 9k/10k/11k | No disponible | HuggingFace |
-| sfm_filtered_insert_xxf_character-8k_9k_10k_simpleavg_merge | No disponible | No disponible | Linear, checkpoints 8k/9k/10k | No disponible | HuggingFace |
-| sfm_baseline_filtered-9k_10k_11k_simpleavg_merge | No disponible | No disponible | Linear, checkpoints 9k/10k/11k | No disponible | HuggingFace |
-| sfm_filtered_midtrain_alignment-7k_8k_9k_10k_11k_simpleavg_merge | No disponible | No disponible | Linear, checkpoints 7k-11k | No disponible | HuggingFace, FriendliAI |
+| sfm_filtered_insert_xxf_character-9k_10k_11k_simpleavg_merge (este) | ~6,86B | No disponible | Linear, checkpoints 9k/10k/11k | No disponible | Hugging Face |
+| sfm_filtered_insert_xxf_character-8k_9k_10k_simpleavg_merge | No disponible | No disponible | Linear, checkpoints 8k/9k/10k | No disponible | Hugging Face |
+| sfm_baseline_filtered-9k_10k_11k_simpleavg_merge | No disponible | No disponible | Linear, checkpoints 9k/10k/11k | No disponible | Hugging Face |
+| sfm_filtered_midtrain_alignment-7k_8k_9k_10k_11k_simpleavg_merge | No disponible | No disponible | Linear, checkpoints 7k-11k | No disponible | Hugging Face, FriendliAI |
 
 Las alternativas listadas pertenecen a la misma familia de merges del mismo autor y comparten metodologia, por lo que la comparacion se limita al rango de checkpoints combinados. No se dispone de parametros, contexto ni rendimiento verificados para las variantes, ni de modelos externos directamente comparables con datos publicados en la informacion disponible.
 
@@ -88,7 +88,7 @@ Las alternativas listadas pertenecen a la misma familia de merges del mismo auto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-9k_10k_11k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-9k_10k_11k_simpleavg_merge
 - Variante 8k_9k_10k: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-8k_9k_10k_simpleavg_merge
 - Variante baseline_filtered 9k_10k_11k: https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-9k_10k_11k_simpleavg_merge
 - Variante midtrain_alignment (FriendliAI): https://friendli.ai/models/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-7k_8k_9k_10k_11k_simpleavg_merge

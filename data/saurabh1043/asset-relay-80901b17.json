@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "saurabh1043/asset-relay-80901b17",
+  "slug": "saurabh1043-asset-relay-80901b17",
+  "author": "saurabh1043",
+  "url": "https://huggingface.co/saurabh1043/asset-relay-80901b17",
+  "created_at": "2026-11-05T09:16:18.000Z",
+  "updated_at": "2026-11-06T11:35:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 2290004544,
+  "parameters_human": "2.29B",
+  "storage_bytes": 31995292381,
+  "storage_human": "32.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "saurabh1043/asset-probe-00cd7fbb · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/saurabh1043/asset-probe-00cd7fbb",
+      "snippet": "Dataset Synthetic two-party phone conversations (agent and customer), one row per spoken turn. Each row holds the turn text, its audio (24 kHz mono, lossless FLAC) and speaker, scenario and generation metadata."
+    },
+    {
+      "title": "saurabh1043/asset-probe-00cd7fbb at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/saurabh1043/asset-probe-00cd7fbb/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

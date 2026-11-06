@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Playtime-AI/Minimax_H3-Ricky_Gervais` es un repositorio publicado en HuggingFace por la organización Playtime-AI bajo licencia Apache-2.0. La información técnica disponible es extremadamente limitada: la model card únicamente contiene un archivo de video en formato MP4, sin documentación, especificaciones ni datos de entrenamiento. El tamaño del repositorio es de 0.2 GB, lo que podría indicar un modelo de tamaño reducido o un adaptador, pero no hay datos que permitan confirmar la arquitectura ni el número de parámetros.
+El modelo `Playtime-AI/Minimax_H3-Ricky_Gervais` es un repositorio publicado en Hugging Face por la organización Playtime-AI bajo licencia Apache-2.0. La información técnica disponible es extremadamente limitada: la model card únicamente contiene un archivo de video en formato MP4, sin documentación, especificaciones ni datos de entrenamiento. El tamaño del repositorio es de 0.2 GB, lo que podría indicar un modelo de tamaño reducido o un adaptador, pero no hay datos que permitan confirmar la arquitectura ni el número de parámetros.
 
 El nombre del modelo sugiere una posible relación con la familia MiniMax y un ajuste fino asociado al estilo de Ricky Gervais, pero no existe documentación pública que respalde esta interpretación. Al no disponer de información técnica, no es posible evaluar su rendimiento ni sus capacidades de forma rigurosa. Este repositorio parece ser una demostración o un artefacto experimental, más que un modelo listo para producción.
 
@@ -53,6 +53,6 @@ No disponible. No se conocen modelos comparables dentro de la misma categoría, 
 
 ## Enlaces
 
-- HuggingFace: [Playtime-AI/Minimax_H3-Ricky_Gervais](https://huggingface.co/Playtime-AI/Minimax_H3-Ricky_Gervais)
-- Repositorio relacionado en HuggingFace: [Playtime-AI/Minimax-H3_Showcase](https://huggingface.co/Playtime-AI/Minimax-H3_Showcase)
+- Hugging Face: [Playtime-AI/Minimax_H3-Ricky_Gervais](https://huggingface.co/Playtime-AI/Minimax_H3-Ricky_Gervais)
+- Repositorio relacionado en Hugging Face: [Playtime-AI/Minimax-H3_Showcase](https://huggingface.co/Playtime-AI/Minimax-H3_Showcase)
 - Archivo de video de la model card: [MiniMax_H3_T_01286-audio.mp4](https://huggingface.co/Playtime-AI/Minimax_H3-Ricky_Gervais/resolve/main/MiniMax_H3_T_01286-audio.mp4)

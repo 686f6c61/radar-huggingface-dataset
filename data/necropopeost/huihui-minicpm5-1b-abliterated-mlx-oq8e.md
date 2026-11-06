@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Huihui-MiniCPM5-1B-abliterated-mlx-oQ8e es una version cuantizada del modelo Huihui-MiniCPM5-1B-abliterated, publicada por el usuario necropopeost en HuggingFace. Se trata de un derivado de la familia MiniCPM (1B parametros) al que se le ha aplicado la tecnica conocida como abliteration, que elimina la direccion de rechazo del espacio de activaciones y da como resultado un modelo que no se niega a responder a determinadas peticiones. Sobre esa base se ha aplicado una cuantizacion de 8 bits en precision mixta mediante la herramienta oQ (oMLX v0.7.0.dev2), con un group size de 64 y formato MLX safetensors.
+Huihui-MiniCPM5-1B-abliterated-mlx-oQ8e es una version cuantizada del modelo Huihui-MiniCPM5-1B-abliterated, publicada por el usuario necropopeost en Hugging Face. Se trata de un derivado de la familia MiniCPM (1B parametros) al que se le ha aplicado la tecnica conocida como abliteration, que elimina la direccion de rechazo del espacio de activaciones y da como resultado un modelo que no se niega a responder a determinadas peticiones. Sobre esa base se ha aplicado una cuantizacion de 8 bits en precision mixta mediante la herramienta oQ (oMLX v0.7.0.dev2), con un group size de 64 y formato MLX safetensors.
 
 El interes practico del modelo es doble. Por un lado, su tamano reducido (1.080.632.832 parametros, aproximadamente 1,1 GB de pesos) permite ejecutarlo en cualquier Mac con Apple Silicon y 8 GB de memoria unificada, sin GPU dedicada ni conexion a internet. Por otro, ejemplifica el flujo de trabajo actual de cuantizacion de precision mixta para el ecosistema MLX, que es el stack de inferencia de Apple para modelos de lenguaje.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-Los datos de la columna del modelo objeto de esta ficha proceden de la informacion disponible en HuggingFace y, en varios campos, son "no disponible". Los datos de las alternativas proceden de su documentacion publica y se incluyen unicamente como referencia de categoria.
+Los datos de la columna del modelo objeto de esta ficha proceden de la informacion disponible en Hugging Face y, en varios campos, son "no disponible". Los datos de las alternativas proceden de su documentacion publica y se incluyen unicamente como referencia de categoria.
 
 | Modelo | Parametros | Contexto | Licencia | Formato disponible |
 |---|---|---|---|---|
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparables para el modelo objeto de esta 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/necropopeost/Huihui-MiniCPM5-1B-abliterated-mlx-oQ8e
+- Modelo en Hugging Face: https://huggingface.co/necropopeost/Huihui-MiniCPM5-1B-abliterated-mlx-oQ8e
 - Repositorio de la herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base: no disponible (la model card no enlaza el repositorio del modelo Huihui-MiniCPM5-1B-abliterated)
 - Paper: no disponible

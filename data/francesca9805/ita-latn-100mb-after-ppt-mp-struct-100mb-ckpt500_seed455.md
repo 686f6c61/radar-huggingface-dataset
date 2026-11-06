@@ -2,7 +2,7 @@
 
 ## Resumen
 
-francesca9805/ita-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455 es un modelo de generacion de texto de tipo decoder-only basado en la arquitectura GPT-2, etiquetado como `gpt2` en el repositorio, con 124.770.816 parametros totales (unos 124,8 millones) y pesos distribuidos en formato safetensors. Se trata de un ajuste fino (fine-tune) del modelo base francesca9805/ita-latn-100mb-ppt-mp-struct-100mb_seed455, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL. El autor es el usuario de HuggingFace francesca9805 y el registro de entrenamiento esta alojado en Weights & Biases bajo la organizacion de la University of Groningen, dentro de un proyecto denominado "new-tokenizers".
+francesca9805/ita-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455 es un modelo de generacion de texto de tipo decoder-only basado en la arquitectura GPT-2, etiquetado como `gpt2` en el repositorio, con 124.770.816 parametros totales (unos 124,8 millones) y pesos distribuidos en formato safetensors. Se trata de un ajuste fino (fine-tune) del modelo base francesca9805/ita-latn-100mb-ppt-mp-struct-100mb_seed455, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL. El autor es el usuario de Hugging Face francesca9805 y el registro de entrenamiento esta alojado en Weights & Biases bajo la organizacion de la University of Groningen, dentro de un proyecto denominado "new-tokenizers".
 
 El modelo parece formar parte de una experimentacion academica sobre tokenizadores y modelos de lenguaje de muy reducido tamano, a juzgar por la nomenclatura del identificador (tamano de dataset de 100 MB, checkpoint 500, semilla 455). No se trata de un modelo orientado a produccion: acumula 0 descargas y 0 "likes" en el momento de la consulta, no declara licencia ni idiomas soportados, y no publica resultados de evaluacion.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicos |
 |---|---|---|---|---|---|
-| francesca9805/ita-latn-100mb-...-ckpt500_seed455 | 124,77 M | no disponible | no disponible | HuggingFace | no disponible |
-| GPT-2 small | 124 M | 1.024 tokens | MIT modificada | HuggingFace | si (referencia publica) |
-| DistilGPT-2 | 82 M | 1.024 tokens | Apache-2.0 | HuggingFace | si (referencia publica) |
-| Pythia-160M | 160 M | 2.048 tokens | Apache-2.0 | HuggingFace | si (reference publica) |
+| francesca9805/ita-latn-100mb-...-ckpt500_seed455 | 124,77 M | no disponible | no disponible | Hugging Face | no disponible |
+| GPT-2 small | 124 M | 1.024 tokens | MIT modificada | Hugging Face | si (referencia publica) |
+| DistilGPT-2 | 82 M | 1.024 tokens | Apache-2.0 | Hugging Face | si (referencia publica) |
+| Pythia-160M | 160 M | 2.048 tokens | Apache-2.0 | Hugging Face | si (reference publica) |
 
 Los datos de GPT-2 small, DistilGPT-2 y Pythia-160M corresponden a informacion publica ampliamente conocida de sus respectivos repositorios; no proceden de la ficha del modelo evaluado. Para este ultimo no se dispone de contexto, licencia ni evaluaciones, por lo que la comparacion en rendimiento no es posible.
 
@@ -87,7 +87,7 @@ Los datos de GPT-2 small, DistilGPT-2 y Pythia-160M corresponden a informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-mp-struct-100mb_seed455
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/4xg9bsvc
 - Repositorio TRL: https://github.com/huggingface/trl

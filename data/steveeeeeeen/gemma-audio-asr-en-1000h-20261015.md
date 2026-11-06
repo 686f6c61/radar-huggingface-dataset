@@ -1,7 +1,7 @@
 # Steveeeeeeen/gemma-audio-asr-en-1000h-20261015
 
 ## Resumen
-Gemma audio English ASR es un modelo de reconocimiento automático del habla (ASR) en inglés desarrollado por el usuario Steveeeeeeen. Se trata de una implementación limpia, publicada en HuggingFace, de la arquitectura descrita por QUAN-Transcribe, que combina estados de audio extraídos de un modelo Gemma con un lector Transformer propio y una cabeza CTC. El problema que resuelve es la transcripción de audio a texto en inglés, apoyándose en la representación de audio de la familia Gemma en lugar de partir de un encoder acústico convencional.
+Gemma audio English ASR es un modelo de reconocimiento automático del habla (ASR) en inglés desarrollado por el usuario Steveeeeeeen. Se trata de una implementación limpia, publicada en Hugging Face, de la arquitectura descrita por QUAN-Transcribe, que combina estados de audio extraídos de un modelo Gemma con un lector Transformer propio y una cabeza CTC. El problema que resuelve es la transcripción de audio a texto en inglés, apoyándose en la representación de audio de la familia Gemma en lugar de partir de un encoder acústico convencional.
 
 El modelo parte del modelo base google/embeddinggemma-2, pero solo afina sus dos últimos bloques de audio; el lector (seis capas Transformer de 768 dimensiones) se entrena desde cero. La arquitectura mezcla de forma aprendida 13 estados de audio de Gemma, aplica una convolución depthwise causal y finaliza con un clasificador CTC sobre el vocabulario de tokens de Gemma.
 
@@ -50,16 +50,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible de forma exacta. El repositorio ocupa 5,0 GB, por lo que la VRAM necesaria sera del orden de ese tamano en la precision de los pesos publicados, mas el sobrecoste de las activaciones en funcion de la longitud de audio.
 - GPU recomendadas: no disponible. Por el tamano del repositorio, es plausible su ejecucion en GPU de gama alta de consumo (por ejemplo, RTX 3090 o RTX 4090 con 24 GB), pero no hay confirmacion en la informacion proporcionada.
 - Cabe en consumer GPU: probable segun el tamano del repositorio (5,0 GB), aunque no se especifican requisitos oficiales.
-- Opciones de despliegue: al estar etiquetado con `transformers` y `safetensors`, el despliegue natural es mediante la libreria transformers de HuggingFace; no se confirman integraciones con vLLM, llama.cpp, Ollama o TGI para este modelo.
+- Opciones de despliegue: al estar etiquetado con `transformers` y `safetensors`, el despliegue natural es mediante la libreria transformers de Hugging Face; no se confirman integraciones con vLLM, llama.cpp, Ollama o TGI para este modelo.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma audio English ASR | no disponible | no disponible | Gemma audio states + reader Transformer + CTC | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| QUAN-Transcribe 1.0 | no disponible | no disponible | Arquitectura de referencia (vietnamita) | no disponible | HuggingFace (referencia citada) |
-| google/embeddinggemma-2 | no disponible | no disponible | Modelo base de embeddings del que se derivan los estados de audio | no disponible | HuggingFace (modelo base) |
+| Gemma audio English ASR | no disponible | no disponible | Gemma audio states + reader Transformer + CTC | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| QUAN-Transcribe 1.0 | no disponible | no disponible | Arquitectura de referencia (vietnamita) | no disponible | Hugging Face (referencia citada) |
+| google/embeddinggemma-2 | no disponible | no disponible | Modelo base de embeddings del que se derivan los estados de audio | no disponible | Hugging Face (modelo base) |
 
 Comparativa adicional con alternativas de ASR generalistas (como la familia Whisper de OpenAI) no disponible con datos verificables en la informacion proporcionada.
 
@@ -71,7 +71,7 @@ Comparativa adicional con alternativas de ASR generalistas (como la familia Whis
 - Caveats para produccion: las puntuaciones son experimentales y solo estaran disponibles tras la evaluacion; el modelo tiene 0 descargas y 0 likes, por lo que carece de validacion por parte de la comunidad. La seleccion de vocabulario, el esquema de optimizacion y el muestreo de fragmentos son elecciones propias del autor, no las de la referencia. Los metadatos de entrenamiento advierten de fragmentos de audio rechazados, lo que puede afectar a la cobertura del dataset. No se documentan requisitos de hardware ni latencias.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Steveeeeeeen/gemma-audio-asr-en-1000h-20261015
+- Modelo en Hugging Face: https://huggingface.co/Steveeeeeeen/gemma-audio-asr-en-1000h-20261015
 - Arquitectura de referencia QUAN-Transcribe: https://huggingface.co/qnguyen3/QUAN-Transcribe-1.0
 - Modelo base google/embeddinggemma-2: https://huggingface.co/google/embeddinggemma-2
 - Dataset de entrenamiento espnet/yodas-granary: https://huggingface.co/datasets/espnet/yodas-granary

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-StudyAgent no es un modelo de lenguaje en el sentido estricto, sino un repositorio de aplicacion publicado en HuggingFace bajo el identificador `smlflg/StudyAgent`. Se trata de un asistente de estudio orientado a estudiantes con TDAH (el autor usa la sigla alemana ADHS), cuyo objetivo es acompanar al usuario a lo largo del semestre sin planes rigidos: propone micro-pasos, emplea un tono de "colega" y coloca el refuerzo dopaminergico al inicio de la tarea y no al completarla.
+StudyAgent no es un modelo de lenguaje en el sentido estricto, sino un repositorio de aplicacion publicado en Hugging Face bajo el identificador `smlflg/StudyAgent`. Se trata de un asistente de estudio orientado a estudiantes con TDAH (el autor usa la sigla alemana ADHS), cuyo objetivo es acompanar al usuario a lo largo del semestre sin planes rigidos: propone micro-pasos, emplea un tono de "colega" y coloca el refuerzo dopaminergico al inicio de la tarea y no al completarla.
 
 El sistema se implementa como una aplicacion web con backend FastAPI, persistencia en SQLite via SQLAlchemy, plantillas Jinja2 y htmx para la interactividad del cliente. La generacion de micro-pasos se delega en la API externa MiniMax M2.5, con un modo de respaldo (fallback) que produce pasos simulados cuando no hay clave `MINIMAX_API_KEY` configurada. Segun la propia model card, el proyecto esta en estado MVP, con una prueba E2E de navegador y el caso limite de fecha limite superada pendientes.
 
@@ -83,7 +83,7 @@ No disponible. StudyAgent no es un modelo de lenguaje y no publica pesos, parame
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | repositorio en HuggingFace, 0 descargas, 0 likes | no disponible |
+| Disponibilidad | repositorio en Hugging Face, 0 descargas, 0 likes | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -100,5 +100,5 @@ No disponible. StudyAgent no es un modelo de lenguaje y no publica pesos, parame
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smlflg/StudyAgent
+- Repositorio en Hugging Face: https://huggingface.co/smlflg/StudyAgent
 - No se han encontrado en la busqueda web enlaces adicionales relevantes (papers, blogs, repositorios o demos) asociados a este proyecto.

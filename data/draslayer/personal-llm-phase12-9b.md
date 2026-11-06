@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `DraSlayer/personal-llm-phase12-9b` es un modelo de lenguaje publicado en HuggingFace por el usuario DraSlayer. A pesar de su nombre, que sugiere una arquitectura de aproximadamente 9 mil millones de parámetros, la información pública disponible es extremadamente limitada: la model card está prácticamente vacía y no se proporcionan detalles sobre arquitectura, entrenamiento, licencia o capacidades. El repositorio ocupa solo 0,3 GB, lo que resulta inusualmente pequeño para un modelo de 9B en precisión completa, lo que podría indicar que se trata de un adaptador, una versión cuantizada o un checkpoint parcial, aunque no hay confirmación.
+El modelo `DraSlayer/personal-llm-phase12-9b` es un modelo de lenguaje publicado en Hugging Face por el usuario DraSlayer. A pesar de su nombre, que sugiere una arquitectura de aproximadamente 9 mil millones de parámetros, la información pública disponible es extremadamente limitada: la model card está prácticamente vacía y no se proporcionan detalles sobre arquitectura, entrenamiento, licencia o capacidades. El repositorio ocupa solo 0,3 GB, lo que resulta inusualmente pequeño para un modelo de 9B en precisión completa, lo que podría indicar que se trata de un adaptador, una versión cuantizada o un checkpoint parcial, aunque no hay confirmación.
 
-El modelo está etiquetado como compatible con `transformers` y con `endpoints_compatible`, lo que sugiere que puede cargarse con la librería de HuggingFace y desplegarse en Inference Endpoints. Sin embargo, al carecer de documentación, cualquier uso en producción requiere una evaluación previa exhaustiva. Dado que el autor no ha publicado información adicional, esta ficha se limita a reflejar los datos disponibles y señala explícitamente todo aquello que no se ha podido verificar.
+El modelo está etiquetado como compatible con `transformers` y con `endpoints_compatible`, lo que sugiere que puede cargarse con la librería de Hugging Face y desplegarse en Inference Endpoints. Sin embargo, al carecer de documentación, cualquier uso en producción requiere una evaluación previa exhaustiva. Dado que el autor no ha publicado información adicional, esta ficha se limita a reflejar los datos disponibles y señala explícitamente todo aquello que no se ha podido verificar.
 
 ## Especificaciones tecnicas
 
@@ -59,4 +59,4 @@ No es posible establecer una comparativa fiable al no conocerse la arquitectura,
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/DraSlayer/personal-llm-phase12-9b)
+- [Página del modelo en Hugging Face](https://huggingface.co/DraSlayer/personal-llm-phase12-9b)

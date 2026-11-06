@@ -1,7 +1,7 @@
 # briancollet/heretic1
 
 ## Resumen
-heretic1 es un ajuste fino multi-etapa y multi-merge derivado de DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU, publicado por el usuario briancollet en HuggingFace. El repositorio distribuye principalmente cuantizaciones GGUF (variantes "regular" y "MTP" con doble imatrix) junto con pesos en bfloat16, y declara 26.895.998.464 parámetros reales según sus ficheros safetensors, es decir, unos 26,9 mil millones.
+heretic1 es un ajuste fino multi-etapa y multi-merge derivado de DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU, publicado por el usuario briancollet en Hugging Face. El repositorio distribuye principalmente cuantizaciones GGUF (variantes "regular" y "MTP" con doble imatrix) junto con pesos en bfloat16, y declara 26.895.998.464 parámetros reales según sus ficheros safetensors, es decir, unos 26,9 mil millones.
 
 El modelo se presenta como una variante "abliterated"/"uncensored" de la familia Qwen3.8, orientada a escritura creativa, ficción, roleplay, generación de código y razonamiento con modo "thinking". Su propuesta diferencial, según la model card, es reducir el número de tokens de pensamiento entre la mitad y una décima parte respecto al modelo base, manteniendo el detalle de la respuesta y acelerando la generación gracias a variantes MTP (multi-token prediction).
 
@@ -26,7 +26,7 @@ Es relevante porque combina tres elementos poco habituales en un mismo paquete: 
 | Fecha de publicación | 11 de octubre de 2026 (sin actualizaciones posteriores registradas) |
 
 ## Arquitectura y entrenamiento
-La información disponible describe un transformer denso de aproximadamente 27 B de parámetros, sin especificar número de capas, dimensiones ocultas, tipo de atención ni estrategia de posicionamiento. El pipeline declarado en HuggingFace es image-text-to-text, lo que sugeriría capacidades multimodales, pero la model card no documenta ningún módulo de visión ni tareas de imagen, por lo que este punto queda sin confirmar. Tampoco se indica la ventana de contexto.
+La información disponible describe un transformer denso de aproximadamente 27 B de parámetros, sin especificar número de capas, dimensiones ocultas, tipo de atención ni estrategia de posicionamiento. El pipeline declarado en Hugging Face es image-text-to-text, lo que sugeriría capacidades multimodales, pero la model card no documenta ningún módulo de visión ni tareas de imagen, por lo que este punto queda sin confirmar. Tampoco se indica la ventana de contexto.
 
 El entrenamiento se describe como un proceso de "multi-stage fine tune" combinado con "multi-stage merge", empleando dos métodos propietarios del autor del modelo base: COLD FUSION (componente GAIN combinado con los entrenadores de Unsloth) y Fable Fusion 711. El método GAIN se define como un sistema que modifica dinámicamente el entrenamiento muestra a muestra en tiempo real según aprende el modelo. No se especifica el número de tokens de entrenamiento, la composición exacta del dataset, ni si se aplicaron etapas de RLHF, DPO u otro tipo de alineamiento. Los tags incluyen "abliterated" y "heretic", lo que apunta a un proceso de ablación de direcciones de rechazo (eliminación del comportamiento de negativa), aunque no se documenta la metodología concreta. También se declara entrenamiento específico para reducir y reformatear el bloque de pensamiento, y variantes MTP orientadas a acelerar la decodificación.
 
@@ -102,7 +102,7 @@ No se dispone de datos de contexto, licencia ni benchmarks verificables de los m
 - Soporte multimodal incierto: el pipeline declarado es image-text-to-text pero no hay ninguna evidencia documental que lo respalde.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/briancollet/heretic1
+- Modelo en Hugging Face: https://huggingface.co/briancollet/heretic1
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Repositorio de referencia del método COLD FUSION / Fable Fusion 711: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Dataset declarado: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets

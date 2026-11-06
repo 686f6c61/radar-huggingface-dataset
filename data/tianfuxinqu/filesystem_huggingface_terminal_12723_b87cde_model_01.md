@@ -4,7 +4,7 @@
 
 El modelo identificado como `TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_model_01` se presenta en su model card como un clasificador de riesgo crediticio (*Credit Risk Classifier*), con identificador interno MDL-001, propiedad de Ava Chen, del departamento de gestion de riesgos. Segun la documentacion publicada, el modelo tiene un nivel de riesgo bajo, una cobertura de pruebas del 95% y fue auditado por ultima vez el 10 de junio de 2026.
 
-Sin embargo, la informacion publica es extremadamente limitada. No se especifican la arquitectura, el numero de parametros, la longitud de contexto, el pipeline, la licencia ni los idiomas soportados. El modelo cuenta con cero descargas y cero likes en HuggingFace, y los resultados de busqueda web no arrojan informacion adicional relevante sobre este repositorio. Esta ficha se basa exclusivamente en la informacion proporcionada por la model card y los metadatos del repositorio, por lo que la mayor parte de las especificaciones tecnicas no estan disponibles.
+Sin embargo, la informacion publica es extremadamente limitada. No se especifican la arquitectura, el numero de parametros, la longitud de contexto, el pipeline, la licencia ni los idiomas soportados. El modelo cuenta con cero descargas y cero likes en Hugging Face, y los resultados de busqueda web no arrojan informacion adicional relevante sobre este repositorio. Esta ficha se basa exclusivamente en la informacion proporcionada por la model card y los metadatos del repositorio, por lo que la mayor parte de las especificaciones tecnicas no estan disponibles.
 
 ## Especificaciones tecnicas
 
@@ -60,4 +60,4 @@ No se dispone de informacion sobre modelos comparables. No se han encontrado alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_model_01
+- Modelo en Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_model_01

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ads2009/english-ai-text-detector-distilbert-v3` es un clasificador de texto diseñado para detectar si un texto en inglés ha sido generado por inteligencia artificial o escrito por un humano. Está desarrollado por el usuario de HuggingFace `ads2009` y se basa en la arquitectura DistilBERT, una versión destilada y más ligera de BERT publicada en el artículo *DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter* (Sanh et al., 2019, arXiv:1910.09700).
+El modelo `ads2009/english-ai-text-detector-distilbert-v3` es un clasificador de texto diseñado para detectar si un texto en inglés ha sido generado por inteligencia artificial o escrito por un humano. Está desarrollado por el usuario de Hugging Face `ads2009` y se basa en la arquitectura DistilBERT, una versión destilada y más ligera de BERT publicada en el artículo *DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter* (Sanh et al., 2019, arXiv:1910.09700).
 
-El modelo cuenta con 66.955.010 parámetros, un tamaño coherente con la familia DistilBERT (~66 millones), y se presenta en formato safetensors con un peso total de 0,3 GB. Está orientado a la tarea de clasificación de texto (pipeline `text-classification`) y es compatible con la librería Transformers, así como con `text-embeddings-inference` y endpoints de HuggingFace.
+El modelo cuenta con 66.955.010 parámetros, un tamaño coherente con la familia DistilBERT (~66 millones), y se presenta en formato safetensors con un peso total de 0,3 GB. Está orientado a la tarea de clasificación de texto (pipeline `text-classification`) y es compatible con la librería Transformers, así como con `text-embeddings-inference` y endpoints de Hugging Face.
 
 La relevancia de este modelo radica en la creciente necesidad de distinguir contenido generado por IA en entornos académicos, editoriales y de moderación de contenido. Sin embargo, la información pública disponible es muy limitada: la model card está prácticamente vacía, no se especifican datos de entrenamiento, métricas de evaluación ni licencia, por lo que cualquier uso en producción debe considerar estas carencias.
 
@@ -31,7 +31,7 @@ No se dispone de informacion sobre el proceso de fine-tuning especifico de este 
 
 - Clasificacion binaria de texto en ingles para distinguir entre contenido generado por IA y texto humano.
 - Integracion con la libreria Transformers mediante el pipeline `text-classification`.
-- Compatible con `text-embeddings-inference` para despliegue en endpoints de HuggingFace.
+- Compatible con `text-embeddings-inference` para despliegue en endpoints de Hugging Face.
 - Inferencia ligera gracias a la arquitectura DistilBERT, adecuada para entornos con recursos limitados.
 - No se documentan capacidades adicionales como tool calling, agentes, vision o audio.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 0,3 GB en fp32 (tamano del repo), lo que permite ejecucion en GPUs con 2 GB o menos, e incluso en CPU con memoria RAM suficiente.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1050 Ti, RTX 2060, o integradas modernas). Para despliegue concurrente, se recomienda al menos 4 GB.
 - Es viable en consumer GPU: si, el modelo cabe en practicamente cualquier GPU moderna.
-- Opciones de despliegue: Transformers (Python), `text-embeddings-inference`, endpoints de HuggingFace, o conversion a ONNX/TensorRT para optimizacion.
+- Opciones de despliegue: Transformers (Python), `text-embeddings-inference`, endpoints de Hugging Face, o conversion a ONNX/TensorRT para optimizacion.
 - Latencia y throughput estimados: no disponibles. Como referencia, DistilBERT procesa secuencias de 512 tokens en decenas de milisegundos en una GPU moderna, pero no hay datos especificos de este modelo.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ads2009/english-ai-text-detector-distilbert-v3
+- Modelo en Hugging Face: https://huggingface.co/ads2009/english-ai-text-detector-distilbert-v3
 - Paper de DistilBERT (arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Repositorio de detectores de contenido IA (lista general, no especifica de este modelo): https://github.com/ai-detected/ai-content-detectors
 - Proyecto de deteccion de texto IA con BERT (referencia general): https://github.com/Sidd264/ai-text-detector

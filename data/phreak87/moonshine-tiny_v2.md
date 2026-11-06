@@ -67,7 +67,7 @@ No se dispone de datos numéricos de rendimiento para comparar directamente. Sin
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Phreak87/moonshine-tiny_V2)
+- [Modelo en Hugging Face](https://huggingface.co/Phreak87/moonshine-tiny_V2)
 - [Versión V1 del modelo](https://huggingface.co/Phreak87/moonshine-tiny-de-onnx)
 - [Modelo original de dattazigzag](https://huggingface.co/dattazigzag/moonshine-tiny-de)
 - [Repositorio de Moonshine en GitHub](https://github.com/moonshine-ai/moonshine)

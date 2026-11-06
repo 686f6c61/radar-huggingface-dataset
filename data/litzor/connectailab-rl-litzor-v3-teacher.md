@@ -82,11 +82,11 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 - Riesgo de sobreajuste a la política de reglas en la fase supervisada y a la función de recompensa concreta en la fase PPO; cambios en los pesos de beneficio, satisfacción o riesgo pueden alterar el comportamiento de forma no documentada.
 - No se detallan sesgos conocidos, tasas de alucinación (no aplica en el sentido habitual) ni limitaciones de contexto más allá del estado estructurado por decisión.
 - Licencia Apache 2.0: permite uso comercial y modificación con atribución, pero el autor no ofrece garantías sobre el rendimiento en producción.
-- Sin descargas ni "likes" en HuggingFace en el momento de la consulta, lo que implica ausencia de validación comunitaria independiente.
+- Sin descargas ni "likes" en Hugging Face en el momento de la consulta, lo que implica ausencia de validación comunitaria independiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litzor/connectailab-rl-litzor-v3-teacher
+- Modelo en Hugging Face: https://huggingface.co/litzor/connectailab-rl-litzor-v3-teacher
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

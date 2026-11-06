@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Ryanham1lton/Lopunny` es un repositorio publicado en HuggingFace bajo la licencia CC-BY-4.0. El autor es Ryanham1lton, y la fecha de creación es el 30 de agosto de 2026. Sin embargo, la model card no contiene ninguna información técnica: no se especifica arquitectura, tamaño, contexto, idiomas ni tarea. El repositorio parece estar vacío o ser un placeholder, ya que no hay archivos de pesos, configuración ni documentación adicional.
+El modelo `Ryanham1lton/Lopunny` es un repositorio publicado en Hugging Face bajo la licencia CC-BY-4.0. El autor es Ryanham1lton, y la fecha de creación es el 30 de agosto de 2026. Sin embargo, la model card no contiene ninguna información técnica: no se especifica arquitectura, tamaño, contexto, idiomas ni tarea. El repositorio parece estar vacío o ser un placeholder, ya que no hay archivos de pesos, configuración ni documentación adicional.
 
-El nombre "Lopunny" coincide con modelos de generación de arte disponibles en plataformas como PixAI, SeaArt o Tensor.Art, que se utilizan para crear imágenes de estilo anime o Pokémon. No obstante, no existe evidencia que confirme que este repositorio de HuggingFace esté relacionado con dichos modelos. Por tanto, la ficha se limita a indicar que no se dispone de información técnica verificable sobre este modelo.
+El nombre "Lopunny" coincide con modelos de generación de arte disponibles en plataformas como PixAI, SeaArt o Tensor.Art, que se utilizan para crear imágenes de estilo anime o Pokémon. No obstante, no existe evidencia que confirme que este repositorio de Hugging Face esté relacionado con dichos modelos. Por tanto, la ficha se limita a indicar que no se dispone de información técnica verificable sobre este modelo.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ No disponible. Al carecer de datos técnicos, no es posible comparar este modelo
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Ryanham1lton/Lopunny)
+- [Repositorio en Hugging Face](https://huggingface.co/Ryanham1lton/Lopunny)
 - Resultados de búsqueda web sobre modelos llamados "Lopunny" en plataformas de generación de arte (no vinculados oficialmente con este repositorio):
   - [PixAI - Lopunny](https://pixai.art/en/model/1866498339916322838)
   - [SeaArt - Lopunny - Pokemon v2](https://www.seaart.ai/models/detail/34259f22c2d0e2d4e027c0566f006403)

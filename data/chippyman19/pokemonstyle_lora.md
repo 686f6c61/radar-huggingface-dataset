@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PokemonStyle_Lora es un adaptador LoRA de difusión texto-a-imagen publicado por el usuario ChippyMan19 en HuggingFace. Se trata de un ajuste fino ligero (el repositorio ocupa 0,2 GB) sobre el modelo base krea/Krea-2-Turbo, orientado a reproducir una estética de anime de los años 90 con influencia de la serie Pokémon. No es un modelo de lenguaje: es un adaptador generativo de imágenes que se activa mediante las palabras clave `PkmnStyle` y `90sAnime` escritas en el prompt.
+PokemonStyle_Lora es un adaptador LoRA de difusión texto-a-imagen publicado por el usuario ChippyMan19 en Hugging Face. Se trata de un ajuste fino ligero (el repositorio ocupa 0,2 GB) sobre el modelo base krea/Krea-2-Turbo, orientado a reproducir una estética de anime de los años 90 con influencia de la serie Pokémon. No es un modelo de lenguaje: es un adaptador generativo de imágenes que se activa mediante las palabras clave `PkmnStyle` y `90sAnime` escritas en el prompt.
 
 El adaptador fue entrenado con AIToolkit sobre 120 imágenes de alta calidad durante 2000 pasos con la configuración por defecto de la herramienta. La model card es mínima: no especifica el rango (rank) del LoRA, el valor de alpha, la tasa de aprendizaje, el optimizador ni la composición exacta del dataset, lo que limita la reproducibilidad del entrenamiento.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Métrica | Valor |
 |---|---|
-| Descargas en HuggingFace | 0 |
-| Likes en HuggingFace | 0 |
+| Descargas en Hugging Face | 0 |
+| Likes en Hugging Face | 0 |
 | Imágenes de entrenamiento | 120 |
 | Pasos de entrenamiento | 2000 |
 | Tamaño del repositorio | 0,2 GB |
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM para inferencia: no disponible para el conjunto LoRA más modelo base. El adaptador en sí es ligero (el repositorio completo ocupa 0,2 GB), pero el consumo real de memoria lo determina casi por completo el modelo base krea/Krea-2-Turbo, cuyo tamaño de parámetros y requisitos no se documentan en la información proporcionada.
 - GPU recomendadas: no disponible; depende del modelo base. No se puede confirmar qué GPU consumidoras (RTX 4090, RTX 4080, etc.) son suficientes sin conocer el tamaño del modelo base.
 - Compatibilidad con GPU de consumo: no confirmada.
-- Opciones de despliegue declaradas: la librería indicada es diffusers, por lo que el uso con la librería de HuggingFace es el camino documentado. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que en cualquier caso no aplican a modelos de difusión de imagen. Otras interfaces de difusión como ComfyUI o AUTOMATIC1111 no se mencionan en la model card y su compatibilidad no está confirmada.
+- Opciones de despliegue declaradas: la librería indicada es diffusers, por lo que el uso con la librería de Hugging Face es el camino documentado. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que en cualquier caso no aplican a modelos de difusión de imagen. Otras interfaces de difusión como ComfyUI o AUTOMATIC1111 no se mencionan en la model card y su compatibilidad no está confirmada.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -85,8 +85,8 @@ No se dispone de información sobre adaptadores LoRA comparables en la documenta
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PokemonStyle_Lora | LoRA de estilo sobre difusión | no disponible (repo de 0,2 GB) | no aplica | no disponible | HuggingFace, diffusers |
-| krea/Krea-2-Turbo | Modelo de difusión texto-a-imagen | no disponible | no disponible | no disponible | HuggingFace |
+| PokemonStyle_Lora | LoRA de estilo sobre difusión | no disponible (repo de 0,2 GB) | no aplica | no disponible | Hugging Face, diffusers |
+| krea/Krea-2-Turbo | Modelo de difusión texto-a-imagen | no disponible | no disponible | no disponible | Hugging Face |
 | Otros LoRA de estilo anime | Adaptadores de difusión | no disponible | no aplica | no disponible | No identificados con métricas públicas en la información disponible |
 
 ## Limitaciones y advertencias
@@ -104,7 +104,7 @@ No se dispone de información sobre adaptadores LoRA comparables en la documenta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChippyMan19/PokemonStyle_Lora
+- Modelo en Hugging Face: https://huggingface.co/ChippyMan19/PokemonStyle_Lora
 - Archivos y versiones del repositorio: https://huggingface.co/ChippyMan19/PokemonStyle_Lora/tree/main
 - Modelo base krea/Krea-2-Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Ko-fi del autor: https://ko-fi.com/mrweaz

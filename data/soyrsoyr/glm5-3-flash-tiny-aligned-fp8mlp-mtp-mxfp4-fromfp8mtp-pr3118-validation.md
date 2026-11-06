@@ -4,7 +4,7 @@
 
 GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-MXFP4-FromFP8MTP-pr3118-validation es un checkpoint derivado publicado por el usuario soyrsoyr como artefacto de validación estructural para la librería llm-compressor (PR 3118) y el formato compressed-tensors. No es un modelo entrenado: la propia model card lo describe como un *fixture estructural de pesos aleatorios*, no como pesos preentrenados de GLM-5.3, y declara explícitamente que no se aplica ninguna afirmación de calidad. Su función es verificar que la cadena de conversión de un módulo MTP (multi-token prediction) en FP8 nativo hacia MXFP4 produce checkpoints coherentes y cargables.
 
-El checkpoint tiene 84.772.398 parámetros reales según los safetensors, muy por debajo de los 0,1B que sugiere el nombre del modelo base (inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP). El repositorio ocupa 0,2 GB. La arquitectura declarada en los tags es glm5_next, con pipeline de text-generation y también etiquetado como image-text-to-text en HuggingFace, aunque el ejemplo de despliegue del autor desactiva explícitamente las entradas de imagen y vídeo.
+El checkpoint tiene 84.772.398 parámetros reales según los safetensors, muy por debajo de los 0,1B que sugiere el nombre del modelo base (inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP). El repositorio ocupa 0,2 GB. La arquitectura declarada en los tags es glm5_next, con pipeline de text-generation y también etiquetado como image-text-to-text en Hugging Face, aunque el ejemplo de despliegue del autor desactiva explícitamente las entradas de imagen y vídeo.
 
 Su relevancia actual es acotada pero específica: sirve como referencia reproducible para equipos que trabajen en cuantización de precisión reducida (MXFP4, FP8) y en decodificación especulativa con MTP sobre hardware Blackwell. El autor advierte que la validación en runtime sobre B200 está pendiente y que no se reclama ninguna pasada de inferencia MXFP4 correcta: solo han pasado las comprobaciones de conversión y consistencia del checkpoint.
 
@@ -12,7 +12,7 @@ Su relevancia actual es acotada pero específica: sirve como referencia reproduc
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | glm5_next (transformer, segun tag de HuggingFace); incluye modulo MTP (multi-token prediction) |
+| Arquitectura | glm5_next (transformer, segun tag de Hugging Face); incluye modulo MTP (multi-token prediction) |
 | Parametros totales | 84.772.398 (dato real de safetensors) |
 | Parametros activos | no disponible (la nomenclatura del modelo base "0.1B-A0.1B" sugiere activos iguales al total, sin MoE aparente) |
 | Longitud de contexto | no disponible (el ejemplo del autor usa --max-model-len 1024, pero es una configuracion de prueba, no la ventana nativa) |
@@ -80,12 +80,12 @@ No se dispone de datos verificados en la informacion proporcionada para completa
 - Idiomas y longitud de contexto no documentados.
 - Los kernels MXFP4 y la ruta de decodificacion especulativa MTP dependen de versiones concretas del runtime (vLLM 0.29.1rc1.dev79+g767d1c4d4, Transformers 5.17.0, CUDA 13.0); otras combinaciones pueden fallar aunque el modelo cargue.
 - El check de MTP exige metricas positivas de tokens borrador mediante verify_mtp.py; una carga correcta del modelo no cuenta como aprobado.
-- Sin descargas ni interacciones registradas en HuggingFace, no hay evidencia de uso en la comunidad ni de mantenimiento posterior.
+- Sin descargas ni interacciones registradas en Hugging Face, no hay evidencia de uso en la comunidad ni de mantenimiento posterior.
 - La fecha de creacion y actualizacion registrada es 2026-09-14, sin revisiones posteriores documentadas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/soyrsoyr/GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-MXFP4-FromFP8MTP-pr3118-validation
+- Hugging Face: https://huggingface.co/soyrsoyr/GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-MXFP4-FromFP8MTP-pr3118-validation
 - Modelo base: https://huggingface.co/inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP/tree/443ac6c54ba0d65ad8a7c701af4fd22a960c9e9c
 - Implementacion (llm-compressor PR 3118, commit 87347881): https://github.com/soyr-redhat/llm-compressor/commit/87347881b46df8786b9fc463965f80504914a98f
 - Busqueda web: no se han encontrado enlaces relevantes al modelo, papers ni demos en los resultados de busqueda disponibles; los resultados devueltos correspondian a documentacion de Google Maps y no guardan relacion con este checkpoint.

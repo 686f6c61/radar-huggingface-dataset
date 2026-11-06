@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alfred8995/sn38-r3-2016-pomlnb-chronollm-2016` es un checkpoint de unos 1.858 millones de parámetros (1,86 B) publicado en HuggingFace por el usuario `alfred8995`. El repositorio está etiquetado con el tag `ChronoGPT` y el nombre incluye la cadena `chronollm`, lo que apunta a un modelo de la familia de los transformers decoder-only orientado a generación de texto, aunque la información disponible no detalla la arquitectura interna, el proceso de entrenamiento ni el dataset utilizado.
+`alfred8995/sn38-r3-2016-pomlnb-chronollm-2016` es un checkpoint de unos 1.858 millones de parámetros (1,86 B) publicado en Hugging Face por el usuario `alfred8995`. El repositorio está etiquetado con el tag `ChronoGPT` y el nombre incluye la cadena `chronollm`, lo que apunta a un modelo de la familia de los transformers decoder-only orientado a generación de texto, aunque la información disponible no detalla la arquitectura interna, el proceso de entrenamiento ni el dataset utilizado.
 
-El modelo se distribuye únicamente en formato `safetensors`, con un tamaño de repositorio de 7,4 GB, y cuenta con acceso restringido (gated): es necesario aceptar las condiciones del autor en HuggingFace antes de descargar los pesos. La licencia declarada es `other`, sin que la información disponible aclare los términos concretos de uso comercial.
+El modelo se distribuye únicamente en formato `safetensors`, con un tamaño de repositorio de 7,4 GB, y cuenta con acceso restringido (gated): es necesario aceptar las condiciones del autor en Hugging Face antes de descargar los pesos. La licencia declarada es `other`, sin que la información disponible aclare los términos concretos de uso comercial.
 
 Se trata de un artefacto con cero descargas y cero likes en el momento de la consulta, creado y actualizado el 21 de octubre de 2026 con apenas 53 segundos de diferencia entre ambos eventos. Su relevancia práctica es, por tanto, limitada y experimental: no hay pipeline declarado, no hay idiomas declarados y no se han publicado resultados de benchmarks, por lo que cualquier evaluación de capacidades debe hacerse mediante pruebas propias tras obtener acceso.
 
@@ -18,7 +18,7 @@ Se trata de un artefacto con cero descargas y cero likes en el momento de la con
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible. Solo se distribuyen pesos en `safetensors`; el repositorio no incluye GGUF ni cuantizaciones precalculadas |
 | Idiomas soportados | No disponible |
-| Licencia | `other` (terminos no detallados; el acceso esta restringido y requiere aceptar condiciones en HuggingFace) |
+| Licencia | `other` (terminos no detallados; el acceso esta restringido y requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | `safetensors` |
 | Tamano del repositorio | 7,4 GB |
 | Acceso | Restringido (gated) |
@@ -79,10 +79,10 @@ La comparativa de rendimiento no es posible porque el modelo no publica ninguna 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | `alfred8995/sn38-r3-2016-pomlnb-chronollm-2016` | 1,86 B | No disponible | `other` (desconocida) | Gated, 0 descargas |
-| Llama 3.2 1B (Meta) | 1,24 B | 128k | Licencia comunitaria Llama 3.2 | Abierta en HuggingFace |
-| Qwen2.5 1.5B (Alibaba) | 1,54 B | 32k (variante base/instruct) | Apache 2.0 en la mayoria de variantes | Abierta en HuggingFace |
-| SmolLM2 1.7B (HuggingFace) | 1,71 B | 8k | Apache 2.0 | Abierta en HuggingFace |
-| Gemma 2 2B (Google) | 2,61 B | 8k | Terminos de uso de Gemma | Abierta en HuggingFace |
+| Llama 3.2 1B (Meta) | 1,24 B | 128k | Licencia comunitaria Llama 3.2 | Abierta en Hugging Face |
+| Qwen2.5 1.5B (Alibaba) | 1,54 B | 32k (variante base/instruct) | Apache 2.0 en la mayoria de variantes | Abierta en Hugging Face |
+| SmolLM2 1.7B (Hugging Face) | 1,71 B | 8k | Apache 2.0 | Abierta en Hugging Face |
+| Gemma 2 2B (Google) | 2,61 B | 8k | Terminos de uso de Gemma | Abierta en Hugging Face |
 
 Diferencias clave: frente a estas alternativas, el modelo aqui descrito no ofrece model card con idiomas, contexto, tokenizador ni evaluaciones, y su acceso esta restringido, lo que anade friccion para reproducibilidad. A favor, su tamano de parametros es competitivo dentro del segmento sub-2B.
 
@@ -101,7 +101,7 @@ Diferencias clave: frente a estas alternativas, el modelo aqui descrito no ofrec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/sn38-r3-2016-pomlnb-chronollm-2016
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/sn38-r3-2016-pomlnb-chronollm-2016
 - Perfil del autor: https://huggingface.co/alfred8995
 - Paper, blog o repositorio de codigo: no disponible en la informacion proporcionada
 - Demo o espacio interactivo: no disponible en la informacion proporcionada

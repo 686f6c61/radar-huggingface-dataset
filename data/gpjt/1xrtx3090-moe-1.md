@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gpjt/1xrtx3090-moe-1 | 458M (MoE) | 1.024 | GPT-2 + MoE | Apache-2.0 | HuggingFace |
-| gpjt/1xrtx3090-baseline | ~446M (denso) | 1.024 | GPT-2 | Apache-2.0 | HuggingFace |
-| GPT-2 small (124M) | 124M | 1.024 | GPT-2 | MIT | HuggingFace |
+| gpjt/1xrtx3090-moe-1 | 458M (MoE) | 1.024 | GPT-2 + MoE | Apache-2.0 | Hugging Face |
+| gpjt/1xrtx3090-baseline | ~446M (denso) | 1.024 | GPT-2 | Apache-2.0 | Hugging Face |
+| GPT-2 small (124M) | 124M | 1.024 | GPT-2 | MIT | Hugging Face |
 
 La comparación directa con GPT-2 small no es equitativa por la diferencia de parámetros, pero ambos comparten contexto y arquitectura base. El modelo MoE del autor tiene más parámetros totales pero activa solo una fracción por token, lo que puede ofrecer una relación coste-beneficio interesante para estudiar. No se dispone de benchmarks que permitan comparar rendimiento real.
 
@@ -72,13 +72,13 @@ La comparación directa con GPT-2 small no es equitativa por la diferencia de pa
 - Alucinaciones frecuentes: debido al limitado número de tokens de entrenamiento, el modelo inventa hechos y carece de conocimiento factual fiable.
 - Contexto muy corto (1.024 tokens): limita su uso en tareas que requieran dependencias de largo alcance.
 - Sin soporte multilingüe declarado: probablemente solo genera texto en inglés, aunque no se especifica.
-- Código personalizado: requiere `trust_remote_code=True`, lo que implica ejecutar código no verificado por HuggingFace. Se recomienda revisar el código antes de usarlo en entornos sensibles.
+- Código personalizado: requiere `trust_remote_code=True`, lo que implica ejecutar código no verificado por Hugging Face. Se recomienda revisar el código antes de usarlo en entornos sensibles.
 - Sin cuantizaciones oficiales: no se proporcionan versiones GGUF, AWQ u otras, por lo que el despliegue en formatos optimizados requiere conversión manual.
 - Licencia Apache-2.0: permite uso comercial, pero al ser un modelo derivado de GPT-2 (cuyo peso original tiene licencia MIT), no hay restricciones adicionales conocidas.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/gpjt/1xrtx3090-moe-1)
+- [Modelo en Hugging Face](https://huggingface.co/gpjt/1xrtx3090-moe-1)
 - [Repositorio GitHub](https://github.com/gpjt/ddp-base-model-from-scratch)
 - [Blog post del autor (próximamente)](https://www.gilesthomas.com/2026/09/gpt-2-to-moe)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/gpjt/fineweb-gpt2-tokens)

@@ -67,12 +67,12 @@ No se dispone de información suficiente para comparar este modelo con alternati
 - El checkpoint es un checkpoint de inicialización, no un modelo entrenado. No debe utilizarse para ninguna tarea real.
 - No ha sido auditado en términos de robustez, equidad o transferencia de dominio, como reconoce el propio autor.
 - La implementación es experimental y puede contener errores o comportamientos no documentados.
-- Requiere un adaptador explícito para cargar los pesos con las APIs genéricas de HuggingFace o de otros frameworks.
+- Requiere un adaptador explícito para cargar los pesos con las APIs genéricas de Hugging Face o de otros frameworks.
 - No se han documentado capacidades de generación, razonamiento ni procesamiento de imágenes.
 - La licencia Apache-2.0 permite el uso comercial, pero el modelo no tiene valor comercial en su estado actual.
 - Cualquier resultado futuro derivado de entrenar este modelo debe documentarse por separado de la configuración por defecto, tal y como advierte el autor.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jasminehjh/experiment-contrastive
+- Hugging Face: https://huggingface.co/jasminehjh/experiment-contrastive
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web. Los resultados obtenidos (foros, páginas de reseñas, comunidades deportivas y artículos científicos no relacionados) no aportan información sobre este modelo.

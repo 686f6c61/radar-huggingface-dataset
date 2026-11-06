@@ -65,8 +65,8 @@ La comparación más directa es con el modelo base Qwen2.5-32B-Instruct, pero no
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HATA-LLM-Qwen-32B-Merged-4bit | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| Qwen2.5-32B-Instruct | no disponible | no disponible | no disponible | HuggingFace |
+| HATA-LLM-Qwen-32B-Merged-4bit | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| Qwen2.5-32B-Instruct | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -75,11 +75,11 @@ La comparación más directa es con el modelo base Qwen2.5-32B-Instruct, pero no
 - Limitaciones de contexto y idioma no especificadas; el modelo solo declara inglés en su etiqueta de idioma.
 - La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los términos completos.
 - Al ser un modelo cuantizado a 4 bits, puede haber pérdida de precisión en comparación con el modelo en 16 bits o en su versión original.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HATAFUNDING/HATA-LLM-Qwen-32B-Merged-4bit
+- Hugging Face: https://huggingface.co/HATAFUNDING/HATA-LLM-Qwen-32B-Merged-4bit
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-32B-Instruct-bnb-4bit
 - Unsloth: https://github.com/unslothai/unsloth
 - Hugging Face TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un ajuste fino experimental del modelo multimodal Qwen2.5-VL-3B, publicado por el usuario SaFD-00 bajo el identificador `qwen2.5-vl-3b-ac-exp09-media-world-model-stage1-lora-epoch2`. El nombre del checkpoint indica un entrenamiento tipo LoRA (presumiblemente con LLaMA-Factory, etiqueta presente en el repositorio) en una primera etapa y segunda epoca, orientado a una linea de trabajo que el autor denomina "media world model". La model card es la plantilla automatica de HuggingFace sin ninguna seccion cumplimentada, por lo que no hay descripcion, dataset, hiperparametros ni evaluacion documentados.
+Este repositorio contiene un ajuste fino experimental del modelo multimodal Qwen2.5-VL-3B, publicado por el usuario SaFD-00 bajo el identificador `qwen2.5-vl-3b-ac-exp09-media-world-model-stage1-lora-epoch2`. El nombre del checkpoint indica un entrenamiento tipo LoRA (presumiblemente con LLaMA-Factory, etiqueta presente en el repositorio) en una primera etapa y segunda epoca, orientado a una linea de trabajo que el autor denomina "media world model". La model card es la plantilla automatica de Hugging Face sin ninguna seccion cumplimentada, por lo que no hay descripcion, dataset, hiperparametros ni evaluacion documentados.
 
 Tecnicamente se apoya en la familia `qwen2_5_vl`, con pipeline `image-text-to-text` y pesos en `safetensors`. El recuento real de parametros en los ficheros de pesos es de 3.754.622.976 (3,75 mil millones) y el repositorio ocupa 7,5 GB, cifras compatibles con pesos completos en bf16 del modelo base y no con un adaptador LoRA aislado, aunque el nombre sugiere lo contrario. No se puede confirmar desde la informacion disponible si el adaptador se fusiono con el modelo base o si se subieron pesos completos.
 
@@ -62,7 +62,7 @@ Los siguientes escenarios son aplicables como punto de partida, siempre con la a
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla automatica de HuggingFace y todas sus secciones de evaluacion aparecen como "[More Information Needed]". No hay datos de MMLU, HumanEval, GSM8K, MMMU, DocVQA, ChartQA ni de ninguna otra prueba para este checkpoint, ni comparaciones con el modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla automatica de Hugging Face y todas sus secciones de evaluacion aparecen como "[More Information Needed]". No hay datos de MMLU, HumanEval, GSM8K, MMMU, DocVQA, ChartQA ni de ninguna otra prueba para este checkpoint, ni comparaciones con el modelo base.
 
 ## Requisitos de hardware
 
@@ -84,13 +84,13 @@ Estimaciones calculadas a partir del recuento real de parametros (3,75 mil millo
 | Este checkpoint (ajuste de Qwen2.5-VL-3B) | 3,75 mil millones | No disponible (modelo base: 32.768 tokens) | No declarada | 0 descargas, 0 valoraciones, sin benchmarks ni model card |
 | Qwen2.5-VL-3B-Instruct (modelo base, Alibaba Qwen) | ~3,75 mil millones | 32.768 tokens segun documentacion publica del modelo base | Apache 2.0 (segun la informacion publica del modelo base, no verificada aqui) | Ampliamente distribuido, con informe tecnico y evaluaciones publicadas |
 | Qwen2.5-VL-7B-Instruct | ~8,3 mil millones | Superior al modelo de 3B (cifra exacta no verificada en esta ficha) | Apache 2.0 (segun la informacion publica del modelo base) | Muy usado como referencia en tareas de documento y video; requiere mas VRAM |
-| SmolVLM2-2.2B (HuggingFace) | ~2,2 mil millones | No verificado | Apache 2.0 (segun la informacion publica del modelo) | Alternativa ligera para vision-lenguaje en hardware limitado |
+| SmolVLM2-2.2B (Hugging Face) | ~2,2 mil millones | No verificado | Apache 2.0 (segun la informacion publica del modelo) | Alternativa ligera para vision-lenguaje en hardware limitado |
 
 No se dispone de datos de rendimiento comparativo para este checkpoint, por lo que la comparacion se limita a parametros, contexto declarado y condiciones de licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Model card vacia: la ficha del repositorio es la plantilla automatica de HuggingFace, sin datos de entrenamiento, uso previsto, limitaciones ni procedencia del dataset.
+- Model card vacia: la ficha del repositorio es la plantilla automatica de Hugging Face, sin datos de entrenamiento, uso previsto, limitaciones ni procedencia del dataset.
 - Licencia no declarada: al no especificarse terminos, el uso comercial es juridicamente incierto. La licencia Apache 2.0 del modelo base no se hereda automaticamente de forma explicita en este repositorio.
 - Sin validacion de la comunidad: 0 descargas y 0 valoraciones implican que no existe evidencia externa de funcionamiento correcto, ni informes de fallos.
 - Sin benchmarks: no hay ninguna medicion que permita afirmar que el ajuste mejora al modelo base en tarea alguna; es posible que lo empeore.
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparativo para este checkpoint, por lo q
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp09-media-world-model-stage1-lora-epoch2
+- Repositorio del modelo en Hugging Face: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp09-media-world-model-stage1-lora-epoch2
 - Modelo base Qwen2.5-VL-3B-Instruct (Alibaba Qwen): https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Informe tecnico de Qwen2.5-VL: https://arxiv.org/abs/2502.13923
 - LLaMA-Factory (herramienta de ajuste fino indicada en las etiquetas del repositorio): https://github.com/hiyouga/LLaMA-Factory

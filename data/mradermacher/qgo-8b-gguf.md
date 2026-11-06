@@ -81,7 +81,7 @@ No se conocen comparativas de rendimiento directas entre estos modelos. La venta
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/mradermacher/QGO-8B-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/mradermacher/QGO-8B-GGUF)
 - [Modelo base QGO-8B (safetensors)](https://huggingface.co/DatasetMan/QGO-8B)
 - [Dataset PM4Bench-QGO-Train](https://huggingface.co/datasets/DatasetMan/PM4Bench-QGO-Train)
 - [Página de mradermacher con todos sus modelos](https://huggingface.co/mradermacher/models)

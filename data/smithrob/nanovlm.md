@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nanoVLM es un modelo de visión-lenguaje (VLM) minimalista publicado por el usuario smithrob en HuggingFace, derivado del modelo base lusxvr/nanoVLM-222M. Su objetivo es servir como referencia educativa y de experimentación: toda la arquitectura y la lógica de entrenamiento caben en unas 750 líneas de PyTorch puro, lo que lo convierte en un banco de pruebas ideal para investigar el entrenamiento de modelos multimodales sin la complejidad de infraestructuras mayores.
+nanoVLM es un modelo de visión-lenguaje (VLM) minimalista publicado por el usuario smithrob en Hugging Face, derivado del modelo base lusxvr/nanoVLM-222M. Su objetivo es servir como referencia educativa y de experimentación: toda la arquitectura y la lógica de entrenamiento caben en unas 750 líneas de PyTorch puro, lo que lo convierte en un banco de pruebas ideal para investigar el entrenamiento de modelos multimodales sin la complejidad de infraestructuras mayores.
 
 El modelo combina un codificador visual ViT basado en SigLIP-B/16-224-85M con un modelo de lenguaje causal ligero, SmolLM2-135M, dando un total de aproximadamente 228 millones de parámetros (222M según la model card). Es, por tanto, un VLM de escala muy reducida, pensado para ejecutarse en hardware de consumo y para ciclos de iteración rápidos.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| smithrob/nanoVLM | 228M | no disponible | MIT | HuggingFace |
-| lusxvr/nanoVLM-222M (base) | ~222M | no disponible | no disponible en la información | HuggingFace |
-| SmolVLM-256M (referencia de la familia SmolLM) | ~256M | no disponible en la información | no disponible en la información | HuggingFace |
+| smithrob/nanoVLM | 228M | no disponible | MIT | Hugging Face |
+| lusxvr/nanoVLM-222M (base) | ~222M | no disponible | no disponible en la información | Hugging Face |
+| SmolVLM-256M (referencia de la familia SmolLM) | ~256M | no disponible en la información | no disponible en la información | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smithrob/nanoVLM
+- Modelo en Hugging Face: https://huggingface.co/smithrob/nanoVLM
 - Modelo base: https://huggingface.co/lusxvr/nanoVLM-222M
 - Repositorio de código: https://github.com/huggingface/nanoVLM

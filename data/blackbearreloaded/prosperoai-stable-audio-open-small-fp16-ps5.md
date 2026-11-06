@@ -70,7 +70,7 @@ No se dispone de datos comparativos publicados para este empaquetado. Como refer
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/blackbearreloaded/ProsperoAI-Stable-Audio-Open-Small-FP16-PS5
+- Repositorio Hugging Face: https://huggingface.co/blackbearreloaded/ProsperoAI-Stable-Audio-Open-Small-FP16-PS5
 - ProsperoAI (aplicacion PS5): https://github.com/blackbearreloaded/ProsperoAI
 - ProsperoAI Alpha 2 model tools (release): https://github.com/blackbearreloaded/ProsperoAI/releases/tag/v0.1.0-alpha.2
 - Repositorio adreno-llms (compatibilidad): https://github.com/a8nova/adreno-llms

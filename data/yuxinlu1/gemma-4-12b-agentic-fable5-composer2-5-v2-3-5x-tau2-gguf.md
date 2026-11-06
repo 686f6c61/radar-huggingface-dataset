@@ -6,7 +6,7 @@ El modelo `yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF` es
 
 El modelo se distribuye bajo licencia Apache 2.0 (según los tags del repositorio, aunque la descripción oficial indica "no disponible") y ha acumulado más de 389.000 descargas y 1.430 likes, lo que sugiere una adopción notable en la comunidad. Su orientación a coding, agentes y razonamiento lo posiciona como una opción interesante para desarrolladores que buscan un modelo local con capacidades avanzadas de interacción con herramientas y terminal.
 
-Aunque la información técnica detallada (parámetros exactos, contexto, cuantizaciones específicas) no está disponible en la ficha de HuggingFace, el nombre y los tags permiten inferir que se trata de un modelo de aproximadamente 12.000 millones de parámetros, basado en la arquitectura de Gemma 4, optimizado para uso agéntico y con soporte para razonamiento y tool-calling.
+Aunque la información técnica detallada (parámetros exactos, contexto, cuantizaciones específicas) no está disponible en la ficha de Hugging Face, el nombre y los tags permiten inferir que se trata de un modelo de aproximadamente 12.000 millones de parámetros, basado en la arquitectura de Gemma 4, optimizado para uso agéntico y con soporte para razonamiento y tool-calling.
 
 ## Especificaciones tecnicas
 
@@ -48,7 +48,7 @@ La denominación "fable5", "composer2.5", "v2", "3.5x" y "tau2" sugiere iteracio
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos sobre MMLU, HumanEval, GSM8K u otras métricas estándar para este modelo específico. Se recomienda consultar el repositorio de HuggingFace para futuras actualizaciones o ejecutar evaluaciones propias.
+No se han publicado resultados de benchmarks en la informacion disponible. No hay datos sobre MMLU, HumanEval, GSM8K u otras métricas estándar para este modelo específico. Se recomienda consultar el repositorio de Hugging Face para futuras actualizaciones o ejecutar evaluaciones propias.
 
 ## Requisitos de hardware
 
@@ -82,5 +82,5 @@ La comparación directa no es posible sin benchmarks. Se recomienda evaluar el m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF
 - Modelo base (referencia): https://huggingface.co/google/gemma-4-12B-it (enlace inferido, no verificado)

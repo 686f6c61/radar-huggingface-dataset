@@ -103,10 +103,10 @@ La reducción de consultas duplicadas de v1 a v2 es estadísticamente significat
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Soonlife-Qwen3.5-9B-v2-LoRA | ~9B (adaptador LoRA) | 32.768 tokens de entrenamiento | RAG vertical con tool calling, coreano | Apache 2.0 | HuggingFace (adaptador, FP8, bf16 fusionado) |
-| Qwen/Qwen3.5-9B (base) | ~9B | No disponible | Modelo multimodal generalista | No disponible en la información | HuggingFace |
+| Soonlife-Qwen3.5-9B-v2-LoRA | ~9B (adaptador LoRA) | 32.768 tokens de entrenamiento | RAG vertical con tool calling, coreano | Apache 2.0 | Hugging Face (adaptador, FP8, bf16 fusionado) |
+| Qwen/Qwen3.5-9B (base) | ~9B | No disponible | Modelo multimodal generalista | No disponible en la información | Hugging Face |
 | Qwen3.8-27B (profesor) | 27B | No disponible | Generación de datos de destilación | No disponible en la información | No disponible |
-| Soonlife-Qwen3.5-9B-v2b-FP8 | ~9B | 32.768 tokens de entrenamiento | Variante con 1,0 época | Apache 2.0 | HuggingFace |
+| Soonlife-Qwen3.5-9B-v2b-FP8 | ~9B | 32.768 tokens de entrenamiento | Variante con 1,0 época | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 

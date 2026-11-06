@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ankit-baner/quick-generation` es un repositorio de investigación publicado en HuggingFace por el usuario Ankit-baner. Se presenta explícitamente como un prototipo orientado a tareas de generación construido sobre una arquitectura denominada Blip (escala "base"), con atención lineal, fusión de bajo rango, activación mish y normalización InstanceNorm. No es un modelo entrenado: la propia model card describe `model.safetensors` como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), no como un checkpoint con rendimiento evaluado.
+`Ankit-baner/quick-generation` es un repositorio de investigación publicado en Hugging Face por el usuario Ankit-baner. Se presenta explícitamente como un prototipo orientado a tareas de generación construido sobre una arquitectura denominada Blip (escala "base"), con atención lineal, fusión de bajo rango, activación mish y normalización InstanceNorm. No es un modelo entrenado: la propia model card describe `model.safetensors` como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), no como un checkpoint con rendimiento evaluado.
 
 El dato más relevante para cualquier evaluador es su tamaño: el repositorio contiene 16.576 parámetros totales en safetensors, es decir, un modelo de escala experimental, varios órdenes de magnitud por debajo de cualquier modelo de generación utilizable en producción. El tamaño del repositorio es de 0,0 GB, sin descargas ni "likes" registrados, y las búsquedas web no devuelven documentación técnica, paper ni demo asociados al autor o al modelo.
 
@@ -46,7 +46,7 @@ En cuanto al entrenamiento, la receta incluida en `training_args.json` usa el op
 
 - Prueba de humo de infraestructura: cargar `model.safetensors` y ejecutar `python inference.py` permite verificar que el entorno de PyTorch, las versiones de CUDA y la cadena de carga de pesos funcionan antes de invertir tiempo en un modelo grande.
 - Plantilla para investigación propia: sirve como esqueleto de repositorio (config de arquitectura, receta de entrenamiento, script de inferencia y guía de evaluación) que un equipo puede clonar y sustituir por su propio modelo.
-- Desarrollo de adaptadores de carga personalizados: dado que la implementación no es compatible con las API automáticas de HuggingFace, es un caso de prueba útil para practicar la escritura de adaptadores y clases de configuración propias.
+- Desarrollo de adaptadores de carga personalizados: dado que la implementación no es compatible con las API automáticas de Hugging Face, es un caso de prueba útil para practicar la escritura de adaptadores y clases de configuración propias.
 - Banco de pruebas de pipelines de evaluación: la model card propone un protocolo concreto (conjunto de validación específico de tarea, métrica reportada en al menos tres semillas y una línea base de capacidad equivalente), reutilizable como plantilla metodológica.
 - Docencia y demostraciones de ciclo de vida de un modelo: ilustra de forma explícita la diferencia entre un checkpoint de inicialización y uno entrenado, algo útil en formación de equipos de ML.
 - Punto de partida para fine-tuning experimental: al ser un modelo de 16.576 parámetros, permite iterar sobre recetas de entrenamiento (por ejemplo, comparar LAMB con otros optimizadores) en cuestión de segundos por epoch en CPU.
@@ -73,7 +73,7 @@ No se dispone de datos verificados de los modelos alternativos en la informació
 | Ankit-baner/quick-generation | 16.576 | no disponible | Sin benchmarks declarados (checkpoint sin entrenar) | BSD-3-Clause | Prototipo de investigación |
 | Salesforce BLIP (image captioning, escala base) | no disponible en la información proporcionada | no disponible | No disponible en la información proporcionada | no disponible en la información proporcionada | Modelo entrenado con checkpoints publicados |
 | BLIP-2 | no disponible en la información proporcionada | no disponible | No disponible en la información proporcionada | no disponible en la información proporcionada | Modelo entrenado con checkpoints publicados |
-| Otros prototipos "base" de generación multimodal en HuggingFace | no disponible en la información proporcionada | no disponible | No disponible en la información proporcionada | Variable | Variable |
+| Otros prototipos "base" de generación multimodal en Hugging Face | no disponible en la información proporcionada | no disponible | No disponible en la información proporcionada | Variable | Variable |
 
 La diferencia fundamental no es de tamaño ni de contexto, sino de estado: los modelos BLIP y BLIP-2 son checkpoints entrenados y evaluados, mientras que `quick-generation` se publica como inicialización para pruebas de humo.
 
@@ -91,6 +91,6 @@ La diferencia fundamental no es de tamaño ni de contexto, sino de estado: los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ankit-baner/quick-generation
+- Modelo en Hugging Face: https://huggingface.co/Ankit-baner/quick-generation
 - Archivos incluidos en el repositorio: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo: no disponible. Las búsquedas web realizadas no devolvieron ningún resultado relacionado con el modelo ni con su autor; los únicos resultados obtenidos corresponden a dominios de un supermercado italiano y son totalmente ajenos a esta ficha.

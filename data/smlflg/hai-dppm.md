@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HAI-DPPM (identificador `smlflg/HAI-DPPM`) no es un modelo de lenguaje, sino un repositorio de HuggingFace cuyo contenido es la descripcion de un proyecto de coordinacion de agentes. Segun su propia model card, redactada en aleman, se trata del "proyecto separado para la piramide agentica y la gestion de proyectos distribuida y en paralelo" (Distributed Parallel Project Management). Su objetivo declarado es escalar una forma de trabajo denominada HAI a traves de varias lanes paralelas de agentes o builders, evitando que el operador humano tenga que mantener en la cabeza multiples `NEXT_STEP` en conflicto, salidas crudas de agentes o conflictos de merge manuales.
+HAI-DPPM (identificador `smlflg/HAI-DPPM`) no es un modelo de lenguaje, sino un repositorio de Hugging Face cuyo contenido es la descripcion de un proyecto de coordinacion de agentes. Segun su propia model card, redactada en aleman, se trata del "proyecto separado para la piramide agentica y la gestion de proyectos distribuida y en paralelo" (Distributed Parallel Project Management). Su objetivo declarado es escalar una forma de trabajo denominada HAI a traves de varias lanes paralelas de agentes o builders, evitando que el operador humano tenga que mantener en la cabeza multiples `NEXT_STEP` en conflicto, salidas crudas de agentes o conflictos de merge manuales.
 
 El repositorio no contiene pesos, tokenizador, configuracion de modelo ni artefactos de inferencia: el tamano del repo es de 0,0 GB, no tiene pipeline declarado, no tiene licencia declarada, no declara idiomas soportados y registra 0 descargas y 0 likes en el momento de la consulta. Las fechas de creacion y actualizacion indicadas son el 16 de septiembre de 2026, y el autor situa su escision del proyecto BIO-HAI el 15 de mayo de 2026.
 
@@ -104,6 +104,6 @@ No se puede establecer una comparativa tecnica fiable. Este repositorio no compi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smlflg/HAI-DPPM
+- Repositorio en Hugging Face: https://huggingface.co/smlflg/HAI-DPPM
 - Model card del autor (en aleman): incluida en el propio repositorio
 - Paper, blog, repositorio de codigo, demo o documentacion adicional: no disponible

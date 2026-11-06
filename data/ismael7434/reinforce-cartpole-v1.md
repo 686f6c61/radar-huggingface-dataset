@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo entrenado para resolver el entorno CartPole-v1 de Gym, publicado en HuggingFace por el usuario Ismael7434. No es un modelo de lenguaje ni un transformer generativo: se trata de una politica neuronal entrenada con el algoritmo REINFORCE (gradiente de politica Monte Carlo) que aprende a equilibrar un poste sobre un carro actuando sobre dos acciones discretas. Su relevancia es fundamentalmente didactica: forma parte de los ejercicios de la Deep RL Class de Hugging Face, y sirve como referencia minima para verificar que un pipeline de RL funciona de extremo a extremo (entorno, politica, entrenamiento, publicacion en el Hub).
+Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo entrenado para resolver el entorno CartPole-v1 de Gym, publicado en Hugging Face por el usuario Ismael7434. No es un modelo de lenguaje ni un transformer generativo: se trata de una politica neuronal entrenada con el algoritmo REINFORCE (gradiente de politica Monte Carlo) que aprende a equilibrar un poste sobre un carro actuando sobre dos acciones discretas. Su relevancia es fundamentalmente didactica: forma parte de los ejercicios de la Deep RL Class de Hugging Face, y sirve como referencia minima para verificar que un pipeline de RL funciona de extremo a extremo (entorno, politica, entrenamiento, publicacion en el Hub).
 
 El modelo se distribuye con una configuracion de entrenamiento explicita: tamano de capa oculta 64, factor de descuento gamma = 1.0, tasa de aprendizaje 0.005 y un maximo de 5000 pasos por episodio. El autor declara una recompensa media de 4504.22 +/- 1230.42 sobre CartPole-v1, un valor muy por encima del umbral clasico de 475 que se usa en la mayoria de leaderboards, lo que indica que la metrica se ha medido con el limite ampliado de 5000 pasos por episodio y no con el limite estandar de 500.
 
@@ -33,7 +33,7 @@ La configuracion de entrenamiento registrada incluye gamma = 1.0 (sin descuento,
 - Aprendizaje por refuerzo con gradiente de politica: implementacion propia de REINFORCE, etiquetada como custom-implementation.
 - Compatibilidad con el ecosistema Gym/Gymnasium como entorno de evaluacion.
 - Integracion con el flujo de trabajo de la Deep RL Class de Hugging Face (subida de agentes al Hub con model-index).
-- Metricas declaradas en la model card mediante model-index, lo que permite su visualizacion automatica en HuggingFace.
+- Metricas declaradas en la model card mediante model-index, lo que permite su visualizacion automatica en Hugging Face.
 - No dispone de tool calling, function calling, capacidades de agente multi-paso, vision, audio, thinking mode ni soporte multilingue, por no ser un modelo de lenguaje.
 
 ## Casos de uso
@@ -48,7 +48,7 @@ La configuracion de entrenamiento registrada incluye gamma = 1.0 (sin descuento,
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el model-index (no verificados por HuggingFace):
+Resultados declarados por el autor en el model-index (no verificados por Hugging Face):
 
 | Tarea | Dataset | Metrica | Valor |
 |---|---|---|---|
@@ -68,7 +68,7 @@ Nota tecnica: CartPole-v1 tiene un limite estandar de 500 pasos por episodio en 
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reinforce-CartPole-v1 (Ismael7434) | no disponible (MLP ~450 parametros estimados) | maximo 5000 pasos por episodio | mean_reward 4504.22 +/- 1230.42 (no verificado) | no disponible | HuggingFace, 0 descargas |
+| Reinforce-CartPole-v1 (Ismael7434) | no disponible (MLP ~450 parametros estimados) | maximo 5000 pasos por episodio | mean_reward 4504.22 +/- 1230.42 (no verificado) | no disponible | Hugging Face, 0 descargas |
 | Agentes PPO sobre CartPole-v1 (Stable-Baselines3 y similares) | no disponible | habitualmente 500 pasos por episodio | no disponible en la informacion proporcionada | habitualmente MIT (no confirmado en esta busqueda) | ampliamente disponibles en el Hub |
 | Agentes DQN sobre CartPole-v1 | no disponible | habitualmente 500 pasos por episodio | no disponible en la informacion proporcionada | no disponible | disponibles en el Hub |
 
@@ -89,7 +89,7 @@ La comparacion cuantitativa no es posible con la informacion proporcionada: no s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ismael7434/Reinforce-CartPole-v1
+- Hugging Face: https://huggingface.co/Ismael7434/Reinforce-CartPole-v1
 - Deep RL Class de Hugging Face (contexto del tag deep-rl-class): https://github.com/huggingface/deep-rl-class
 - Documentacion de Gymnasium / CartPole-v1: https://gymnasium.farama.org/environments/classic_control/cart_pole/
 - No se han encontrado en la busqueda web enlaces relevantes al modelo; los resultados devueltos trataban sobre la presidencia de Estados Unidos y no guardan relacion con esta ficha.

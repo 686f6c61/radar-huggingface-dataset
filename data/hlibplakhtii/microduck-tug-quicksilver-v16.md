@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HlibPlakhtii/microduck-tug-quicksilver-v16 | Política de control ONNX (MicroDuck) | no disponible | no aplica | no disponible | HuggingFace |
-| greecree/microduck-tug-of-war-tug-super-v9 | Política de control (modelo base) | no disponible | no aplica | no disponible | HuggingFace |
-| Otros modelos de la familia MicroDuck | Política de control | no disponible | no aplica | no disponible | HuggingFace |
+| HlibPlakhtii/microduck-tug-quicksilver-v16 | Política de control ONNX (MicroDuck) | no disponible | no aplica | no disponible | Hugging Face |
+| greecree/microduck-tug-of-war-tug-super-v9 | Política de control (modelo base) | no disponible | no aplica | no disponible | Hugging Face |
+| Otros modelos de la familia MicroDuck | Política de control | no disponible | no aplica | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas variantes en la información proporcionada. La comparación se limita a la relación de derivación declarada (finetune del modelo base) y a la naturaleza del artefacto.
 
@@ -92,6 +92,6 @@ No se dispone de datos de rendimiento comparables entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HlibPlakhtii/microduck-tug-quicksilver-v16
+- Modelo en Hugging Face: https://huggingface.co/HlibPlakhtii/microduck-tug-quicksilver-v16
 - Modelo base: https://huggingface.co/greecree/microduck-tug-of-war-tug-super-v9
 - Procedencia fijada del base (commit): https://huggingface.co/greecree/microduck-tug-of-war-tug-super-v9/tree/cb4f2e7534999b240bb5d6e652e3af80b97bb33a

@@ -34,7 +34,7 @@ El adaptador se basa en la arquitectura transformer del modelo Qwen2.5-0.5B-Inst
 ## Casos de uso
 
 - Evaluacion de pipelines de alineacion: este adaptador sirve como ejemplo de como AlignTune genera y publica adaptadores LoRA. Un desarrollador puede usarlo para verificar que el flujo de entrenamiento y publicacion funciona correctamente.
-- Pruebas de integracion con PEFT: al ser un adaptador LoRA, es util para probar la carga de modelos con `AutoPeftModelForCausalLM` y verificar la compatibilidad con el ecosistema HuggingFace.
+- Pruebas de integracion con PEFT: al ser un adaptador LoRA, es util para probar la carga de modelos con `AutoPeftModelForCausalLM` y verificar la compatibilidad con el ecosistema Hugging Face.
 - Experimentacion educativa: para estudiantes o investigadores que quieran entender como funciona un adaptador LoRA sobre un modelo pequeno, este repositorio ofrece un caso real, aunque sin documentacion detallada.
 - Base para fine-tuning adicional: se puede cargar el adaptador y continuar entrenando sobre el, aunque no se recomienda por falta de informacion sobre el dataset original.
 - Benchmarking de rendimiento: se puede medir la diferencia de comportamiento entre el modelo base y el adaptador en tareas simples de generacion de texto, aunque no hay datos publicados.
@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-0.5B-Instruct (base) | 0,5B | 32K | Apache 2.0 | HuggingFace |
-| ram-lexsi/aligntune-testrun-KronLoRA | 0,5B + LoRA | 32K | no disponible | HuggingFace |
-| Llama-3.2-1B-Instruct | 1B | 128K | Llama 3.2 Community License | HuggingFace |
-| Phi-3-mini-4k-instruct | 3,8B | 4K | MIT | HuggingFace |
+| Qwen2.5-0.5B-Instruct (base) | 0,5B | 32K | Apache 2.0 | Hugging Face |
+| ram-lexsi/aligntune-testrun-KronLoRA | 0,5B + LoRA | 32K | no disponible | Hugging Face |
+| Llama-3.2-1B-Instruct | 1B | 128K | Llama 3.2 Community License | Hugging Face |
+| Phi-3-mini-4k-instruct | 3,8B | 4K | MIT | Hugging Face |
 
 La comparativa se limita a modelos de tamano similar. El adaptador no ofrece ventajas claras sobre el modelo base, salvo que haya sido entrenado con un dataset especifico (desconocido). No se dispone de datos de rendimiento para establecer una comparacion cuantitativa.
 
@@ -73,7 +73,7 @@ La comparativa se limita a modelos de tamano similar. El adaptador no ofrece ven
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ram-lexsi/aligntune-testrun-KronLoRA
+- Repositorio Hugging Face: https://huggingface.co/ram-lexsi/aligntune-testrun-KronLoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - AlignTune (herramienta): https://lexsi.ai/tools/aligntune
 - Repositorio GitHub de AlignTune: https://github.com/Lexsi-Labs/aligntune

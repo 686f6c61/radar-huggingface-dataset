@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `jlsrls/em1br1-ctrl-s0` es un fine-tuning del modelo `unsloth/Llama-3.2-1B-Instruct`, desarrollado por el usuario jlsrls. Se trata de un ajuste fino supervisado (SFT) realizado con la librería TRL de HuggingFace y optimizado con Unsloth, una herramienta que acelera el entrenamiento y reduce el consumo de memoria. El modelo base es una versión instruct de 1.000 millones de parámetros de la familia Llama 3.2, diseñada para tareas de generación de texto y seguimiento de instrucciones.
+El modelo `jlsrls/em1br1-ctrl-s0` es un fine-tuning del modelo `unsloth/Llama-3.2-1B-Instruct`, desarrollado por el usuario jlsrls. Se trata de un ajuste fino supervisado (SFT) realizado con la librería TRL de Hugging Face y optimizado con Unsloth, una herramienta que acelera el entrenamiento y reduce el consumo de memoria. El modelo base es una versión instruct de 1.000 millones de parámetros de la familia Llama 3.2, diseñada para tareas de generación de texto y seguimiento de instrucciones.
 
 La relevancia de este modelo radica en su tamaño reducido, lo que lo hace adecuado para entornos con recursos limitados, aunque la información pública disponible es muy escasa. No se especifican detalles sobre el dataset de entrenamiento, el número de tokens procesados ni los hiperparámetros utilizados. Tampoco se han publicado resultados de benchmarks ni métricas de rendimiento, por lo que su utilidad práctica queda sin validar.
 
-El repositorio en HuggingFace muestra un tamaño de 0.0 GB, lo que sugiere que los pesos podrían no estar completamente subidos o que el modelo es extremadamente ligero. La fecha de creación (septiembre de 2026) es posterior a la fecha actual, lo que indica que podría tratarse de un proyecto experimental o de una entrada con metadatos inconsistentes.
+El repositorio en Hugging Face muestra un tamaño de 0.0 GB, lo que sugiere que los pesos podrían no estar completamente subidos o que el modelo es extremadamente ligero. La fecha de creación (septiembre de 2026) es posterior a la fecha actual, lo que indica que podría tratarse de un proyecto experimental o de una entrada con metadatos inconsistentes.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. El
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jlsrls/em1br1-ctrl-s0
+- Hugging Face: https://huggingface.co/jlsrls/em1br1-ctrl-s0
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - TRL (libreria de entrenamiento): https://github.com/huggingface/trl
 - Unsloth (optimizacion): https://github.com/unslothai/unsloth

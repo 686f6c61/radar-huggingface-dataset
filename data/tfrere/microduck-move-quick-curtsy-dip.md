@@ -25,7 +25,7 @@ La relevancia del repositorio es doble. Por un lado, es un ejemplo de política 
 | Familia | sitstand |
 | Nivel (tier) | 2 |
 | Tipo (kind) | perpetual |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Descargas | 0 |
 | Likes | 0 |
 | Fecha de creacion | 2026-09-12 |
@@ -116,7 +116,7 @@ No disponible. La información proporcionada no incluye datos de otros movimient
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/tfrere/microduck-move-quick-curtsy-dip
+- Hugging Face del modelo: https://huggingface.co/tfrere/microduck-move-quick-curtsy-dip
 - Perfil del autor: https://huggingface.co/tfrere
 - Microduck Academy (Space): https://huggingface.co/spaces/tfrere/microduck
 - Referencia interna citada en la model card: `docs/TRAINING.md`, sección 8 (no se proporciona URL directa)

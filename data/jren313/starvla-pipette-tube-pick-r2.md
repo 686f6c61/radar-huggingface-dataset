@@ -75,10 +75,10 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 
 | Modelo | Parametros | Contexto | Espacio de accion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jren313/starvla-pipette-tube-pick-r2` (este) | ~3B (base GR00T-N1.7-3B) | no disponible | 32-D: muñecas rel + pulgar izq. rel + mano der. abs + articulaciones | no disponible | HuggingFace, 0 descargas, 0 likes |
-| `jren313/starvla-pipette-tube-pick-r1` (fase 2, superado) | ~3B | no disponible | 32-D: muñecas rel + manos abs + articulaciones | no disponible | HuggingFace; checkpoint servido en paso 875 |
-| `nvidia/GR00T-N1.7-3B` (base sin ajustar) | ~3B | no disponible | no disponible (modelo generalista) | no disponible en la informacion proporcionada | HuggingFace (modelo base del que parte este fine-tune) |
-| `jren313/starvla-pipette-pick-r3` (fase 1) | ~3B | no disponible | 32-D: muñecas rel + manos abs + articulaciones | no disponible | HuggingFace; checkpoint servido en paso 2000 |
+| `jren313/starvla-pipette-tube-pick-r2` (este) | ~3B (base GR00T-N1.7-3B) | no disponible | 32-D: muñecas rel + pulgar izq. rel + mano der. abs + articulaciones | no disponible | Hugging Face, 0 descargas, 0 likes |
+| `jren313/starvla-pipette-tube-pick-r1` (fase 2, superado) | ~3B | no disponible | 32-D: muñecas rel + manos abs + articulaciones | no disponible | Hugging Face; checkpoint servido en paso 875 |
+| `nvidia/GR00T-N1.7-3B` (base sin ajustar) | ~3B | no disponible | no disponible (modelo generalista) | no disponible en la informacion proporcionada | Hugging Face (modelo base del que parte este fine-tune) |
+| `jren313/starvla-pipette-pick-r3` (fase 1) | ~3B | no disponible | 32-D: muñecas rel + manos abs + articulaciones | no disponible | Hugging Face; checkpoint servido en paso 2000 |
 
 No se dispone de datos de rendimiento comparativos entre estos checkpoints (ni MMLU, ni HumanEval, ni equivalentes para robotica) en la informacion proporcionada, por lo que la comparacion se limita a parametros, espacio de accion y disponibilidad.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativos entre estos checkpoints (ni M
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jren313/starvla-pipette-tube-pick-r2
+- Modelo en Hugging Face: https://huggingface.co/jren313/starvla-pipette-tube-pick-r2
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/jren313/g1-pipette-2view-teleop0925-5task-eerel
 - Fase 1, ronda 2: https://huggingface.co/jren313/starvla-pipette-pick-r2

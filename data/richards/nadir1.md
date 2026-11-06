@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nadir1 es un adaptador LoRA de generacion de imagenes a partir de texto (text-to-image) publicado por el usuario RICHARDS en HuggingFace. El adaptador se entrena sobre el modelo base krea/Krea-2-Turbo y se distribuye en formato compatible con la libreria diffusers, con un prompt de activacion especifico (`Model@12`) que debe incluirse en las peticiones para que el efecto aprendido se aplique.
+nadir1 es un adaptador LoRA de generacion de imagenes a partir de texto (text-to-image) publicado por el usuario RICHARDS en Hugging Face. El adaptador se entrena sobre el modelo base krea/Krea-2-Turbo y se distribuye en formato compatible con la libreria diffusers, con un prompt de activacion especifico (`Model@12`) que debe incluirse en las peticiones para que el efecto aprendido se aplique.
 
 El modelo resuelve el problema tipico de personalizacion de modelos generativos: incorporar un concepto, estilo o identidad concreta que el modelo base no reproduce de forma fiable por si solo, sin necesidad de reentrenar el modelo completo. Esto es relevante para desarrolladores que quieren integrar una estetica o sujeto consistente en pipelines de generacion de imagenes manteniendo el resto de capacidades del modelo base.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nadir1 (LoRA) | no disponible | no aplica | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
-| krea/Krea-2-Turbo (modelo base) | no disponible | no aplica | no disponible | no disponible | HuggingFace |
+| nadir1 (LoRA) | no disponible | no aplica | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
+| krea/Krea-2-Turbo (modelo base) | no disponible | no aplica | no disponible | no disponible | Hugging Face |
 | Otros adaptadores LoRA para Krea-2-Turbo | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa tecnica con alternativas de la misma categoria. Cualquier comparacion con otros LoRA de personalizacion requeriria conocer el rango del adaptador, el dataset de entrenamiento y metricas de similitud, ninguno de los cuales esta publicado.
@@ -91,7 +91,7 @@ No se dispone de datos suficientes para establecer una comparativa tecnica con a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RICHARDS/nadir1
+- Modelo en Hugging Face: https://huggingface.co/RICHARDS/nadir1
 - Archivos del modelo: https://huggingface.co/RICHARDS/nadir1/tree/main
 - Modelo base Krea-2-Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Paper, blog o repositorio adicional: no disponible

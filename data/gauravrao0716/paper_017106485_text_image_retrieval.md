@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace contiene un documento académico en formato Markdown sobre text-image retrieval (recuperación de imágenes mediante texto), un área de investigación en la intersección de visión por computador y procesamiento de lenguaje natural. El autor, gauravrao0716, publica el texto completo de un paper con formato LaTeX ICML, estructura intro-método-experimentos-conclusión y estilo de escritura enfocado en resultados empíricos.
+Este repositorio de Hugging Face contiene un documento académico en formato Markdown sobre text-image retrieval (recuperación de imágenes mediante texto), un área de investigación en la intersección de visión por computador y procesamiento de lenguaje natural. El autor, gauravrao0716, publica el texto completo de un paper con formato LaTeX ICML, estructura intro-método-experimentos-conclusión y estilo de escritura enfocado en resultados empíricos.
 
 No se trata de un modelo de IA entrenado, sino de un artefacto textual que describe investigación sobre recuperación de imágenes a partir de consultas de texto. El contenido aborda la problemática de encontrar imágenes relevantes a partir de descripciones textuales, un campo que ha cobrado relevancia con modelos como CLIP y sistemas de búsqueda multimodal. La relevancia actual de este documento radica en que el text-image retrieval es una tarea fundamental para motores de búsqueda visual, sistemas de recomendación y asistentes inteligentes, aunque el repositorio no proporciona código, pesos ni implementaciones ejecutables.
 
@@ -65,7 +65,7 @@ No disponible. El repositorio no es un modelo y no hay información sobre otros 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/gauravrao0716/paper_017106485_text_image_retrieval
+- Repositorio de Hugging Face: https://huggingface.co/gauravrao0716/paper_017106485_text_image_retrieval
 - Google Scholar (búsqueda general de literatura): https://scholar.google.com/
 - arXiv (búsqueda de papers relacionados): https://arxiv.org/pdf/2406.05814
 - Paper de referencia sobre retrieval compositivo: https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_Generative_Zero-Shot_Composed_Image_Retrieval_CVPR_2025_paper.pdf

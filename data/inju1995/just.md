@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `inju1995/just` es una publicacion alojada en HuggingFace por el usuario `inju1995` bajo licencia Apache 2.0. En el momento de la consulta no incluye model card descriptiva: el unico contenido del README es el bloque de metadatos con la licencia, sin secciones de descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. No se declara pipeline de inferencia, idiomas soportados ni tipo de tarea.
+El repositorio `inju1995/just` es una publicacion alojada en Hugging Face por el usuario `inju1995` bajo licencia Apache 2.0. En el momento de la consulta no incluye model card descriptiva: el unico contenido del README es el bloque de metadatos con la licencia, sin secciones de descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. No se declara pipeline de inferencia, idiomas soportados ni tipo de tarea.
 
 El repositorio acumula 0 descargas y 0 likes, y no presenta etiquetas que permitan clasificarlo funcionalmente mas alla de la region (`region:us`) y la licencia. Tanto la fecha de creacion como la de ultima actualizacion registradas son identicas (2026-09-24T17:45:01Z), lo que apunta a un unico commit inicial sin mantenimiento posterior ni historial de revisiones.
 
@@ -92,7 +92,7 @@ No disponible. Al no conocerse la arquitectura, el numero de parametros, la tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/inju1995/just
+- Repositorio en Hugging Face: https://huggingface.co/inju1995/just
 - Model card del autor: https://huggingface.co/inju1995/just/blob/main/README.md
 - Perfil del autor: https://huggingface.co/inju1995
 

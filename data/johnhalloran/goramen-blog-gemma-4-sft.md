@@ -81,7 +81,7 @@ No hay datos de rendimiento comparativo entre ambos en tareas estándar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: [johnhalloran/goramen-blog-gemma-4-sft](https://huggingface.co/johnhalloran/goramen-blog-gemma-4-sft)
+- Modelo en Hugging Face: [johnhalloran/goramen-blog-gemma-4-sft](https://huggingface.co/johnhalloran/goramen-blog-gemma-4-sft)
 - Dataset de entrenamiento: [johnhalloran/goramen-blog](https://huggingface.co/datasets/johnhalloran/goramen-blog)
 - Modelo base (MLX): [mlx-community/gemma-4-e4b-it-4bit](https://huggingface.co/mlx-community/gemma-4-e4b-it-4bit)
 - Modelo base original (Google): [google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it)

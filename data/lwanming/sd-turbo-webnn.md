@@ -2,11 +2,11 @@
 
 ## Resumen
 
-sd-turbo-webnn es una adaptacion del modelo generativo texto-a-imagen SD-Turbo de Stability AI, convertida al formato ONNX y optimizada especificamente para su ejecucion mediante WebNN, la API web de aceleracion de redes neuronales. El autor de la conversion es el usuario de HuggingFace lwanming, que publica el artefacto como un repositorio de 8,7 GB orientado a la inferencia en navegador. No se trata de un modelo nuevo: los pesos subyacentes son los de SD-Turbo, un destilado de Stable Diffusion 2.1 entrenado con destilacion adversarial de difusion (ADD) para generar imagenes fotorealistas en una sola evaluacion de red.
+sd-turbo-webnn es una adaptacion del modelo generativo texto-a-imagen SD-Turbo de Stability AI, convertida al formato ONNX y optimizada especificamente para su ejecucion mediante WebNN, la API web de aceleracion de redes neuronales. El autor de la conversion es el usuario de Hugging Face lwanming, que publica el artefacto como un repositorio de 8,7 GB orientado a la inferencia en navegador. No se trata de un modelo nuevo: los pesos subyacentes son los de SD-Turbo, un destilado de Stable Diffusion 2.1 entrenado con destilacion adversarial de difusion (ADD) para generar imagenes fotorealistas en una sola evaluacion de red.
 
 La relevancia de esta ficha reside en el empaquetado, no en la investigacion: convierte un modelo de difusion de aproximadamente 860 millones de parametros en un grafo ONNX con formas de entrada estaticas, eliminando operadores no utilizados para que WebNN pueda compilarlo de forma eficiente sobre GPUs y NPUs accesibles desde el navegador. Esto lo sitúa en el nicho de la generacion de imagenes on-device sin backend en la nube.
 
-El modelo se distribuye sin licencia declarada en el campo correspondiente de HuggingFace, aunque la model card vincula explicitamente la licencia no comercial de investigacion de Stability AI. El repositorio no registra descargas ni likes y la model card indica `inference: false`, por lo que debe considerarse un artefacto experimental de demostracion.
+El modelo se distribuye sin licencia declarada en el campo correspondiente de Hugging Face, aunque la model card vincula explicitamente la licencia no comercial de investigacion de Stability AI. El repositorio no registra descargas ni likes y la model card indica `inference: false`, por lo que debe considerarse un artefacto experimental de demostracion.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El modelo se distribuye sin licencia declarada en el campo correspondiente de Hu
 | Longitud de contexto | no aplica (texto de prompt codificado por CLIP; longitud maxima no especificada) |
 | Tipos de cuantizacion | no disponible (el repositorio se distribuye en ONNX; no se documentan variantes cuantizadas) |
 | Idiomas soportados | no disponible (el text encoder CLIP de SD 2.1 esta entrenado predominantemente en ingles) |
-| Licencia | no declarada en HuggingFace; la model card remite a STABILITY AI NON-COMMERCIAL RESEARCH COMMUNITY LICENSE |
+| Licencia | no declarada en Hugging Face; la model card remite a STABILITY AI NON-COMMERCIAL RESEARCH COMMUNITY LICENSE |
 | Formato de pesos | ONNX con formas de entrada estaticas, optimizado para WebNN |
 | Resolucion de salida | 512x512 pixeles (fija en la practica) |
 | Pasos de inferencia | 1 a 4 (un solo paso suficiente para calidad alta) |
@@ -82,13 +82,13 @@ La diferencia principal frente al SD-Turbo original es el empaquetado ONNX con f
 - La parte de autoencoding (VAE) es con perdida, lo que degrada detalles finos.
 - No fue entrenado para representar hechos, personas o eventos reales; usarlo con ese fin queda fuera de alcance.
 - Riesgo de sesgos sociales y demograficos heredados de los datos de entrenamiento de Stable Diffusion 2.1, no documentados en esta conversion.
-- La licencia no esta declarada en el campo de HuggingFace y la model card remite a una licencia no comercial de investigacion; el uso comercial requiere consultar la membresia de Stability AI. Verificar antes de cualquier despliegue en produccion.
+- La licencia no esta declarada en el campo de Hugging Face y la model card remite a una licencia no comercial de investigacion; el uso comercial requiere consultar la membresia de Stability AI. Verificar antes de cualquier despliegue en produccion.
 - La model card indica `inference: false` y circunscribe el uso a fines educativos o de prueba con la demo de Microsoft.
 - El repositorio no registra descargas ni validacion de la comunidad; no hay garantias de mantenimiento ni de soporte.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lwanming/sd-turbo-webnn
+- Repositorio Hugging Face: https://huggingface.co/lwanming/sd-turbo-webnn
 - Modelo original SD-Turbo: https://huggingface.co/stabilityai/sd-turbo
 - Licencia de SD-Turbo: https://huggingface.co/stabilityai/sd-turbo/blob/main/LICENSE
 - Politica de uso aceptable de Stability AI: https://stability.ai/use-policy

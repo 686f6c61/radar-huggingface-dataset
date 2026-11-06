@@ -2,7 +2,7 @@
 
 ## Resumen
 
-my_seg_model es un modelo de segmentacion semantica de imagenes publicado en HuggingFace por el usuario TheGreatDargon. Se trata de una red FPN (Feature Pyramid Network) construida con la libreria `segmentation-models-pytorch` (SMP) de Pavel Iakubovskii, usando un encoder ResNet34 preentrenado en ImageNet y un decoder piramidal configurable. El modelo resuelve segmentacion binaria (una sola clase de salida) sobre imagenes RGB de tres canales.
+my_seg_model es un modelo de segmentacion semantica de imagenes publicado en Hugging Face por el usuario TheGreatDargon. Se trata de una red FPN (Feature Pyramid Network) construida con la libreria `segmentation-models-pytorch` (SMP) de Pavel Iakubovskii, usando un encoder ResNet34 preentrenado en ImageNet y un decoder piramidal configurable. El modelo resuelve segmentacion binaria (una sola clase de salida) sobre imagenes RGB de tres canales.
 
 Con 23.172.417 parametros (unos 23,2 millones) y un peso en `safetensors` de aproximadamente 0,1 GB, es un modelo ligero y facil de desplegar incluso en hardware modesto. Ha sido entrenado y evaluado sobre el dataset Oxford Pet, un benchmark clasico de segmentacion de mascotas, y reporta un IoU de dataset de 0,916 y un IoU por imagen de 0,909.
 
@@ -38,7 +38,7 @@ No se dispone de informacion sobre el numero de tokens o epocas de entrenamiento
 - Extraccion de caracteristicas multiescala mediante el encoder ResNet34 preentrenado en ImageNet.
 - Inferencia sobre imagenes individuales con resolucion configurable en tiempo de ejecucion.
 - Integracion nativa con el ecosistema `segmentation-models-pytorch`, lo que permite cambiar encoder o decoder y reutilizar pesos.
-- Carga directa desde HuggingFace mediante `smp.from_pretrained(...)`.
+- Carga directa desde Hugging Face mediante `smp.from_pretrained(...)`.
 - Soporte de fine-tuning sobre datasets propios de segmentacion binaria.
 - No dispone de tool calling, function calling, soporte de agentes, razonamiento multi-paso ni capacidades de texto, audio o video.
 - Capacidades multilingues: no aplica, es un modelo puramente visual.
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks adicionales (mIoU multi-clase, Dice
 
 | Modelo | Arquitectura | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| my_seg_model | FPN + ResNet34 | 23,2 M | no aplica | IoU dataset 0,916 en Oxford Pet | MIT | HuggingFace |
+| my_seg_model | FPN + ResNet34 | 23,2 M | no aplica | IoU dataset 0,916 en Oxford Pet | MIT | Hugging Face |
 | U-Net con encoder ResNet34 (SMP) | U-Net + ResNet34 | no disponible | no aplica | no disponible | MIT (libreria) | Repositorio SMP |
 | DeepLabV3 con encoder ResNet34 (SMP) | DeepLabV3 + ResNet34 | no disponible | no aplica | no disponible | MIT (libreria) | Repositorio SMP |
-| SegFormer-B0 | Transformer jerarquico | no disponible | no aplica | no disponible | no disponible | HuggingFace |
+| SegFormer-B0 | Transformer jerarquico | no disponible | no aplica | no disponible | no disponible | Hugging Face |
 
 La comparativa cuantitativa con alternativas no esta disponible en la informacion proporcionada: no se han publicado metricas de estos modelos sobre el mismo split de Oxford Pet dentro de los datos consultados. La unica diferencia verificable es la arquitectura y el peso de fichero del modelo objeto de la ficha.
 
@@ -99,7 +99,7 @@ La comparativa cuantitativa con alternativas no esta disponible en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheGreatDargon/my_seg_model
+- Modelo en Hugging Face: https://huggingface.co/TheGreatDargon/my_seg_model
 - Libreria segmentation-models-pytorch: https://github.com/qubvel/segmentation_models.pytorch
 - Documentacion de SMP: https://smp.readthedocs.io/en/latest/
 - PyTorchModelHubMixin: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin

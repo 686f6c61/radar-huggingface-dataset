@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YOLOv3-VOC es un repositorio publicado en HuggingFace por el usuario danil-ml-2026 cuyo nombre sugiere una implementacion o ajuste fino del detector de objetos YOLOv3 entrenado sobre el conjunto de datos PASCAL VOC. YOLOv3 es un detector de objetos de una sola etapa (one-stage) basado en una red convolucional con backbone Darknet-53, publicado originalmente por Joseph Redmon y Ali Farhadi en 2018, que predice cajas delimitadoras y clases sobre tres escalas de resolucion distintas. La designacion "VOC" apunta a las 20 clases de PASCAL VOC (persona, coche, bicicleta, perro, gato, botella, etc.), aunque la ficha del repositorio no confirma esta composicion.
+YOLOv3-VOC es un repositorio publicado en Hugging Face por el usuario danil-ml-2026 cuyo nombre sugiere una implementacion o ajuste fino del detector de objetos YOLOv3 entrenado sobre el conjunto de datos PASCAL VOC. YOLOv3 es un detector de objetos de una sola etapa (one-stage) basado en una red convolucional con backbone Darknet-53, publicado originalmente por Joseph Redmon y Ali Farhadi en 2018, que predice cajas delimitadoras y clases sobre tres escalas de resolucion distintas. La designacion "VOC" apunta a las 20 clases de PASCAL VOC (persona, coche, bicicleta, perro, gato, botella, etc.), aunque la ficha del repositorio no confirma esta composicion.
 
 La relevancia de este repositorio es incierta: cuenta con 0 descargas y 1 "like" en el momento de la consulta, no declara licencia, pipeline, idiomas ni tipo de tarea, y la busqueda web asociada no devolvio ningun resultado relacionado con el modelo (los unicos resultados encontrados tratan sobre el nombre propio "Danil" y no guardan relacion con el proyecto). El unico dato objetivo disponible es el tamano del repositorio, de 25,3 GB, muy superior al peso tipico de un YOLOv3 estandar.
 
@@ -64,7 +64,7 @@ Los siguientes escenarios son aplicaciones tipicas de un detector tipo YOLOv3 so
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-No se dispone de metricas de este repositorio (mAP, precision, recall, latencia) ni de la ficha de HuggingFace ni de la busqueda web. Como contexto externo no verificado, el articulo original de YOLOv3 reporta un mAP de aproximadamente 33,0 en COCO a IoU 0,5 en la configuracion de 416x416 con 80 clases, pero estos valores corresponden al modelo original y no deben atribuirse a este repositorio.
+No se dispone de metricas de este repositorio (mAP, precision, recall, latencia) ni de la ficha de Hugging Face ni de la busqueda web. Como contexto externo no verificado, el articulo original de YOLOv3 reporta un mAP de aproximadamente 33,0 en COCO a IoU 0,5 en la configuracion de 416x416 con 80 clases, pero estos valores corresponden al modelo original y no deben atribuirse a este repositorio.
 
 ## Requisitos de hardware
 
@@ -81,17 +81,17 @@ No se dispone de datos de rendimiento de este repositorio, por lo que la compara
 
 | Modelo | Familia | Etapas | Clases (dataset) | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| YOLOv3-VOC (danil-ml-2026) | YOLOv3, Darknet-53 | Una etapa | no disponible (segun nombre, 20 de VOC) | no disponible | no disponible | HuggingFace, 0 descargas |
+| YOLOv3-VOC (danil-ml-2026) | YOLOv3, Darknet-53 | Una etapa | no disponible (segun nombre, 20 de VOC) | no disponible | no disponible | Hugging Face, 0 descargas |
 | YOLOv3 original | YOLOv3, Darknet-53 | Una etapa | 80 (COCO) | ~61,9 M | Dominio publico / YOLO license (segun version) | Pesos publicos en Darknet |
 | YOLOv4 | CSPDarknet-53, PANet | Una etapa | 80 (COCO) | ~64 M | Repositorio de dominio publico | Pesos publicos |
-| YOLOv5 (Ultralytics) | CSPDarknet | Una etapa | 80 (COCO) / personalizable | 7 M a 86 M segun variante | AGPL-3.0 o licencia comercial | GitHub y HuggingFace |
+| YOLOv5 (Ultralytics) | CSPDarknet | Una etapa | 80 (COCO) / personalizable | 7 M a 86 M segun variante | AGPL-3.0 o licencia comercial | GitHub y Hugging Face |
 | Faster R-CNN | Detector de dos etapas con RPN | Dos etapas | 80 (COCO) / 20 (VOC) | > 130 M | Depende de la implementacion (MIT en Detectron2, Apache-2.0 en MMDetection) | Amplia disponibilidad |
 
 Diferencias clave: los detectores de una etapa como YOLOv3 priorizan la velocidad de inferencia, mientras que los de dos etapas como Faster R-CNN suelen obtener mayor precision a costa de menor throughput. Las licencias de la familia YOLO han variado historicamente y algunas implementaciones (por ejemplo Ultralytics YOLOv5) usan AGPL-3.0, lo que condiciona el uso comercial; para este repositorio la licencia no esta declarada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la ficha de HuggingFace no declara licencia, pipeline, idiomas, clases ni procedimiento de entrenamiento, lo que impide evaluar su idoneidad para produccion.
+- Ausencia total de documentacion: la ficha de Hugging Face no declara licencia, pipeline, idiomas, clases ni procedimiento de entrenamiento, lo que impide evaluar su idoneidad para produccion.
 - Licencia no disponible: sin licencia explicita no se puede asumir permiso de uso comercial; hay que contactar con el autor o abstenerse de usarlo en entornos productivos.
 - Riesgo de alucinacion: en deteccion de objetos el equivalente son falsos positivos y cajas mal localizadas, especialmente en objetos pequenos, ocluidos o con clases poco representadas en el entrenamiento.
 - Sesgos del dataset: PASCAL VOC contiene imagenes con una distribucion geografica y cultural concreta; el rendimiento puede degradarse en dominios visuales distintos (iluminacion nocturna, camaras de vigilancia, imagenes aereas, paises o contextos no representados).
@@ -105,7 +105,7 @@ Diferencias clave: los detectores de una etapa como YOLOv3 priorizan la velocida
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danil-ml-2026/YOLOv3-VOC
+- Modelo en Hugging Face: https://huggingface.co/danil-ml-2026/YOLOv3-VOC
 - Resultados de la busqueda web: no se encontraron enlaces relevantes sobre el modelo. Los unicos resultados devueltos tratan sobre el nombre propio "Danil" (https://www.parents.fr/prenoms/danil-38401, https://www.journaldesfemmes.fr/prenoms/danil/prenom-64988, https://fr.wikipedia.org/wiki/Danyl, https://en.wikipedia.org/wiki/Danil, https://www.prenomgarcon.com/danil) y no guardan ninguna relacion con el repositorio.
 - Referencia del articulo original de YOLOv3 (no vinculada a este repositorio): https://arxiv.org/abs/1804.02767
 - Repositorio oficial de Darknet (referencia de implementacion original, no vinculada a este repositorio): https://github.com/pjreddie/darknet

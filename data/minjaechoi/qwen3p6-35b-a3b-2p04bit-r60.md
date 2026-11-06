@@ -12,7 +12,7 @@ El interes actual de esta ficha es acotado y hay que enmarcarlo con honestidad: 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) sobre transformer; etiqueta de arquitectura `qwen3_5_moe` en HuggingFace |
+| Arquitectura | Mezcla de expertos (MoE) sobre transformer; etiqueta de arquitectura `qwen3_5_moe` en Hugging Face |
 | Parametros totales | 35.107.181.936 (~35,1 B) |
 | Parametros activos | no disponible en la model card; la nomenclatura del modelo base (A3B) sugiere del orden de 3 B activos, sin confirmacion oficial |
 | Longitud de contexto | no disponible |
@@ -83,7 +83,7 @@ No se dispone de datos verificados de rendimiento ni de contexto para establecer
 ## Limitaciones y advertencias
 
 - Es un checkpoint de investigacion interno segun su propia model card, sin garantia de estabilidad ni de mantenimiento.
-- No hay licencia declarada en los metadatos de HuggingFace: el autor afirma que sigue la licencia del modelo base, pero esa licencia no se concreta en la informacion disponible. Usarlo comercialmente sin verificar la licencia de Qwen/Qwen3.6-35B-A3B es un riesgo legal.
+- No hay licencia declarada en los metadatos de Hugging Face: el autor afirma que sigue la licencia del modelo base, pero esa licencia no se concreta en la informacion disponible. Usarlo comercialmente sin verificar la licencia de Qwen/Qwen3.6-35B-A3B es un riesgo legal.
 - Cero descargas y cero valoraciones: no existe validacion por parte de la comunidad ni reportes independientes de calidad.
 - Ausencia total de benchmarks: no hay evidencia publicada de que la cuantizacion a 2,0431 bits en los expertos preserve el rendimiento del modelo original. La degradacion esperada en tareas de razonamiento y codigo es plausible pero no esta medida.
 - No hay ahorro de memoria en inferencia, porque los pesos se almacenan dequantizados en BF16 y el repositorio ocupa 70,2 GB, practicamente lo mismo que el modelo base sin comprimir.
@@ -95,6 +95,6 @@ No se dispone de datos verificados de rendimiento ni de contexto para establecer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p04bit-r60
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p04bit-r60
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, su autor ni su proceso de cuantizacion; los enlaces obtenidos no guardan relacion con el tema y se omiten por no ser fuentes utilizables. No se dispone por tanto de paper, blog tecnico, repositorio de codigo ni demo asociados.

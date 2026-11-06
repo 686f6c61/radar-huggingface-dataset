@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Resultados |
 |---|---|---|---|---|---|
-| Stage-org/qwen35-4b-filter-solvability-200-rawsource-4k-epoch3 | 4,54 B | no disponible (config: 65.536 en inferencia) | no disponible | safetensors en HuggingFace, 0 descargas | no publicados |
-| Qwen/Qwen3.5-4B (modelo base) | 4 B (segun denominacion) | no disponible | no disponible en esta informacion | HuggingFace oficial | no publicados en esta informacion |
+| Stage-org/qwen35-4b-filter-solvability-200-rawsource-4k-epoch3 | 4,54 B | no disponible (config: 65.536 en inferencia) | no disponible | safetensors en Hugging Face, 0 descargas | no publicados |
+| Qwen/Qwen3.5-4B (modelo base) | 4 B (segun denominacion) | no disponible | no disponible en esta informacion | Hugging Face oficial | no publicados en esta informacion |
 | Otros modelos densos de ~4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de otros modelos comparables en la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa de rendimiento.
@@ -90,7 +90,7 @@ No se dispone de datos verificados de otros modelos comparables en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/qwen35-4b-filter-solvability-200-rawsource-4k-epoch3
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/qwen35-4b-filter-solvability-200-rawsource-4k-epoch3
 - Dataset de entrenamiento: https://huggingface.co/datasets/Stage-org/qwen35-4b-filter-solvability-200-rawsource-4k
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Perfil del autor: https://huggingface.co/Stage-org

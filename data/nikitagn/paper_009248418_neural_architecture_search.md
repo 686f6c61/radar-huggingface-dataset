@@ -42,7 +42,7 @@ No se han publicado resultados de benchmarks en la información disponible. Al n
 - No hay opciones de despliegue como vLLM, llama.cpp u Ollama.
 
 ## Comparativa con modelos similares
-No disponible. No existen modelos comparables porque este repositorio no contiene un modelo de IA. Podría compararse con otros repositorios de papers en HuggingFace, pero no se dispone de información sobre alternativas.
+No disponible. No existen modelos comparables porque este repositorio no contiene un modelo de IA. Podría compararse con otros repositorios de papers en Hugging Face, pero no se dispone de información sobre alternativas.
 
 ## Limitaciones y advertencias
 - No es un modelo de IA: no puede generar texto, razonar ni procesar entradas.
@@ -53,6 +53,6 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 - La fecha de creación (2026) indica que es un artefacto reciente, pero no hay evidencia de revisión por pares.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/nikitagn/paper_009248418_neural_architecture_search
+- Repositorio en Hugging Face: https://huggingface.co/nikitagn/paper_009248418_neural_architecture_search
 - Referencia externa sobre NAS (no directamente relacionada): https://arxiv.org/abs/2301.08727
 - Revisión sistemática sobre NAS: https://link.springer.com/article/10.1007/s10462-024-11058-w

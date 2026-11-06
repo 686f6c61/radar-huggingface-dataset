@@ -2,7 +2,7 @@
 
 ## Resumen
 
-open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-SFT-Tulu3-decontaminated-sr30k es un ajuste fino supervisado (SFT) de un modelo de referencia de 1.714 millones de parametros publicado por la organizacion open-sci en HuggingFace. El modelo parte de ali-elganzory/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-SFT-Tulu3-decontaminated, que a su vez parece derivar de un checkpoint Nemotron de 1.7B con ventana de contexto de 16k y entrenamiento sobre datos Tulu3 decontaminados. Este ajuste concreto se ha entrenado sobre el dataset Superior-Reasoning-SFT-gpt-oss-120b-30k-sharegpt-hf, un conjunto de 30.000 muestras de razonamiento generadas por gpt-oss-120b en formato ShareGPT.
+open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-SFT-Tulu3-decontaminated-sr30k es un ajuste fino supervisado (SFT) de un modelo de referencia de 1.714 millones de parametros publicado por la organizacion open-sci en Hugging Face. El modelo parte de ali-elganzory/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-SFT-Tulu3-decontaminated, que a su vez parece derivar de un checkpoint Nemotron de 1.7B con ventana de contexto de 16k y entrenamiento sobre datos Tulu3 decontaminados. Este ajuste concreto se ha entrenado sobre el dataset Superior-Reasoning-SFT-gpt-oss-120b-30k-sharegpt-hf, un conjunto de 30.000 muestras de razonamiento generadas por gpt-oss-120b en formato ShareGPT.
 
 El modelo se distribuye con la libreria transformers y pesos en safetensors (3,4 GB de repositorio), esta etiquetado para la tarea de feature-extraction y se ha entrenado con LLaMA-Factory en configuracion full fine-tuning (no LoRA) sobre 32 dispositivos. Su relevancia es acotada: se trata de un checkpoint de investigacion con 14 descargas y sin resultados de evaluacion publicados, pensado para experimentacion sobre destilacion de razonamiento en modelos pequenos, no como un modelo listo para produccion.
 
@@ -36,7 +36,7 @@ El entrenamiento de este checkpoint se realizo con LLaMA-Factory sobre el datase
 - Capacidades de agente y multi-step reasoning: no documentadas; el formato ShareGPT del dataset sugiere entrenamiento conversacional multi-turno, pero sin garantias.
 - Capacidades multilingues: no declaradas; los idiomas soportados figuran como "no disponibles".
 - Capacidades especiales (vision, audio, thinking mode explicito): no disponibles.
-- Uso previsto declarado: feature-extraction segun el pipeline de HuggingFace, aunque el ajuste SFT sugiere un uso generativo.
+- Uso previsto declarado: feature-extraction segun el pipeline de Hugging Face, aunque el ajuste SFT sugiere un uso generativo.
 
 ## Casos de uso
 
@@ -65,10 +65,10 @@ El model-index del autor declara una entrada (sft__Superior-Reasoning-SFT-gpt-os
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| open-sci-ref-v0.02-1.7b-...-sr30k (este) | 1,7B | 16k | other | HuggingFace, 14 descargas | SFT sobre 30k muestras de razonamiento de gpt-oss-120b |
-| ali-elganzory/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-SFT-Tulu3-decontaminated | 1,7B | 16k | no disponible | HuggingFace (modelo base) | Checkpoint previo sobre Tulu3 decontaminado |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Apache 2.0 | HuggingFace, ampliamente desplegado | Alternativa consolidada de tamano similar con benchmarks publicados |
-| Llama-3.2-1B-Instruct | 1,2B | 128k | Llama 3.2 Community License | HuggingFace | Menor, contexto mucho mayor, ecosistema maduro |
+| open-sci-ref-v0.02-1.7b-...-sr30k (este) | 1,7B | 16k | other | Hugging Face, 14 descargas | SFT sobre 30k muestras de razonamiento de gpt-oss-120b |
+| ali-elganzory/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-SFT-Tulu3-decontaminated | 1,7B | 16k | no disponible | Hugging Face (modelo base) | Checkpoint previo sobre Tulu3 decontaminado |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Apache 2.0 | Hugging Face, ampliamente desplegado | Alternativa consolidada de tamano similar con benchmarks publicados |
+| Llama-3.2-1B-Instruct | 1,2B | 128k | Llama 3.2 Community License | Hugging Face | Menor, contexto mucho mayor, ecosistema maduro |
 
 La comparacion con Qwen2.5 y Llama-3.2 es orientativa por tamano; no existen datos de rendimiento de este checkpoint que permitan una comparacion cuantitativa.
 
@@ -87,7 +87,7 @@ La comparacion con Qwen2.5 y Llama-3.2 es orientativa por tamano; no existen dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-SFT-Tulu3-decontaminated-sr30k
+- Modelo en Hugging Face: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-SFT-Tulu3-decontaminated-sr30k
 - Modelo base: https://huggingface.co/ali-elganzory/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-SFT-Tulu3-decontaminated
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web proporcionada.

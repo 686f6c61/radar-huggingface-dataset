@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MediGuide Qwen2.5 0.5B es un modelo publicado en HuggingFace por el usuario ChineduProsper bajo licencia MIT. Se trata de un repositorio con un único commit (creado y actualizado el 17 de octubre de 2026), sin descargas registradas y con una model card que contiene únicamente la línea de licencia, sin descripción, sin datos de entrenamiento y sin resultados de evaluación. El nombre del repositorio sugiere un ajuste fino del modelo base Qwen2.5-0.5B orientado a un dominio sanitario ("mediguide"), pero esta correspondencia no está confirmada en la documentación disponible.
+MediGuide Qwen2.5 0.5B es un modelo publicado en Hugging Face por el usuario ChineduProsper bajo licencia MIT. Se trata de un repositorio con un único commit (creado y actualizado el 17 de octubre de 2026), sin descargas registradas y con una model card que contiene únicamente la línea de licencia, sin descripción, sin datos de entrenamiento y sin resultados de evaluación. El nombre del repositorio sugiere un ajuste fino del modelo base Qwen2.5-0.5B orientado a un dominio sanitario ("mediguide"), pero esta correspondencia no está confirmada en la documentación disponible.
 
 Por la nomenclatura, el modelo partiría de la familia Qwen2.5 en su variante de 0,5 mil millones de parámetros, lo que lo situaría en la categoría de modelos pequeños diseñados para inferencia en CPU, dispositivos de borde o GPUs de consumo con pocos recursos. Esa escala permite despliegues locales de bajo coste, pero limita severamente la capacidad de razonamiento, la fidelidad factual y la profundidad de conocimiento frente a modelos de 7B o superiores.
 
@@ -21,7 +21,7 @@ Su relevancia actual es, por tanto, la de un artefacto experimental de código a
 | Licencia | MIT |
 | Formato de pesos | no disponible (no se especifica safetensors, GGUF ni ningún otro) |
 
-Nota: el pipeline indicado por HuggingFace es "no disponible", lo que significa que el autor no ha declarado la tarea (text-generation, text2text-generation, etc.) en los metadatos del repositorio.
+Nota: el pipeline indicado por Hugging Face es "no disponible", lo que significa que el autor no ha declarado la tarea (text-generation, text2text-generation, etc.) en los metadatos del repositorio.
 
 ## Arquitectura y entrenamiento
 
@@ -73,10 +73,10 @@ Los datos de las alternativas provienen de la documentación pública de cada fa
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Evaluación publicada |
 |---|---|---|---|---|---|
-| ChineduProsper/mediguide-qwen2.5-0.5b | no disponible (~0,5B por el nombre) | no disponible | MIT | HuggingFace, 0 descargas | No |
-| Qwen2.5-0.5B / 0.5B-Instruct (Alibaba) | ~0,49B | 32.768 tokens | Apache-2.0 | HuggingFace, ampliamente distribuido | Sí, en la model card oficial |
-| SmolLM2-360M-Instruct (HuggingFace) | ~0,36B | 8.192 tokens | Apache-2.0 | HuggingFace, ampliamente distribuido | Sí |
-| Llama-3.2-1B-Instruct (Meta) | ~1,24B | 128.000 tokens | Llama 3.2 Community Licence | HuggingFace, requiere aceptar términos | Sí |
+| ChineduProsper/mediguide-qwen2.5-0.5b | no disponible (~0,5B por el nombre) | no disponible | MIT | Hugging Face, 0 descargas | No |
+| Qwen2.5-0.5B / 0.5B-Instruct (Alibaba) | ~0,49B | 32.768 tokens | Apache-2.0 | Hugging Face, ampliamente distribuido | Sí, en la model card oficial |
+| SmolLM2-360M-Instruct (Hugging Face) | ~0,36B | 8.192 tokens | Apache-2.0 | Hugging Face, ampliamente distribuido | Sí |
+| Llama-3.2-1B-Instruct (Meta) | ~1,24B | 128.000 tokens | Llama 3.2 Community Licence | Hugging Face, requiere aceptar términos | Sí |
 
 Frente a estas alternativas, el modelo evaluado aporta únicamente una licencia MIT permisiva y un supuesto enfoque sanitario; carece de contexto documentado, de evaluación y de comunidad, mientras que los tres modelos de referencia cuentan con model cards completas y métricas verificables.
 
@@ -94,6 +94,6 @@ Frente a estas alternativas, el modelo evaluado aporta únicamente una licencia 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ChineduProsper/mediguide-qwen2.5-0.5b
+- Repositorio en Hugging Face: https://huggingface.co/ChineduProsper/mediguide-qwen2.5-0.5b
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código, demos o espacios) en la información proporcionada.

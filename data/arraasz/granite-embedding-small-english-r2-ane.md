@@ -108,7 +108,7 @@ Frente al modelo base, esta exportacion pierde contexto (1024 frente a 8192 toke
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Arraasz/granite-embedding-small-english-r2-ane
+- Repositorio en Hugging Face: https://huggingface.co/Arraasz/granite-embedding-small-english-r2-ane
 - Modelo base de IBM: https://huggingface.co/ibm-granite/granite-embedding-small-english-r2
 - Apple ml-ane-transformers (referencia de la tecnica de reescritura del grafo): https://github.com/apple/ml-ane-transformers
 - Referencia arXiv asociada en las etiquetas del repositorio: https://arxiv.org/abs/2508.21085

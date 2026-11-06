@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMax-Music3-aoti es una compilación específica del modelo MiniMax Music 3, desarrollado por MiniMax AI, que ha sido optimizada mediante AoTI (Ahead-of-Time compilation) para ejecutarse en una GPU RTX 6000 PRO. El repositorio en HuggingFace no contiene pesos del modelo (tamaño 0.0 GB), sino que sirve como referencia para el despliegue del demo oficial en Spaces. El modelo original, MiniMax Music 3, es un generador de música de código abierto capaz de crear canciones completas de hasta cinco minutos, condicionado por letras y una descripción musical detallada. Según fuentes secundarias, emplea un planificador basado en un modelo de lenguaje de 8B de parámetros que compone la canción frame a frame (melodía, arreglo y fraseo vocal) y un transformer de difusión de flujo que renderiza el audio en estéreo a 44.1 kHz. Su relevancia radica en ser uno de los primeros modelos abiertos que logra coherencia estructural y calidad vocal en canciones de larga duración, con licencia MIT.
+MiniMax-Music3-aoti es una compilación específica del modelo MiniMax Music 3, desarrollado por MiniMax AI, que ha sido optimizada mediante AoTI (Ahead-of-Time compilation) para ejecutarse en una GPU RTX 6000 PRO. El repositorio en Hugging Face no contiene pesos del modelo (tamaño 0.0 GB), sino que sirve como referencia para el despliegue del demo oficial en Spaces. El modelo original, MiniMax Music 3, es un generador de música de código abierto capaz de crear canciones completas de hasta cinco minutos, condicionado por letras y una descripción musical detallada. Según fuentes secundarias, emplea un planificador basado en un modelo de lenguaje de 8B de parámetros que compone la canción frame a frame (melodía, arreglo y fraseo vocal) y un transformer de difusión de flujo que renderiza el audio en estéreo a 44.1 kHz. Su relevancia radica en ser uno de los primeros modelos abiertos que logra coherencia estructural y calidad vocal en canciones de larga duración, con licencia MIT.
 
 ## Especificaciones tecnicas
 
@@ -66,8 +66,8 @@ No se dispone de datos de comparación con otros modelos de generación musical 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo AoTI: https://huggingface.co/smartdigitalnetworks/MiniMax-Music3-aoti
-- Repositorio HuggingFace del modelo original: https://huggingface.co/MiniMaxAI/MiniMax-Music3
+- Repositorio Hugging Face del modelo AoTI: https://huggingface.co/smartdigitalnetworks/MiniMax-Music3-aoti
+- Repositorio Hugging Face del modelo original: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - GitHub del modelo original: https://github.com/MiniMax-AI/MiniMax-Music3
 - Guía independiente del modelo: https://minimaxmusic3.ai/
 - Ficha en Sogni.ai: https://www.sogni.ai/models/minimax-music-3

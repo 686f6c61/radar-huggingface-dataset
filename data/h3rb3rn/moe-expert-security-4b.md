@@ -83,7 +83,7 @@ La comparación principal disponible es contra el modelo base Qwen3.5-4B, como s
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/h3rb3rn/moe-expert-security-4b
+- Página del modelo en Hugging Face: https://huggingface.co/h3rb3rn/moe-expert-security-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/moe-sovereign/expert-security-sft
 - Supercomputador LUMI-G: https://www.lumi-supercomputer.eu/

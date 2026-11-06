@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento cualitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mchen04/LFM3-1.7B-Uncensored-MLX
+- Repositorio Hugging Face: https://huggingface.co/mchen04/LFM3-1.7B-Uncensored-MLX
 - Modelo origen GGUF: https://huggingface.co/AtomicChat/LFM3-1.7B-Uncensored-GGUF
 - Modelo base de Liquid AI: https://huggingface.co/LiquidAI/LFM3-1.7B
 - mlx-lm: https://github.com/ml-explore/mlx-lm

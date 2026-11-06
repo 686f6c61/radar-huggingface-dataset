@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparables de los modelos alternativos en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MOH749/yaatal-ears-nemotron-wol-onnx
+- Hugging Face: https://huggingface.co/MOH749/yaatal-ears-nemotron-wol-onnx
 - Modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Bundle de referencia: https://huggingface.co/soniqo/Nemotron-3.5-ASR-Streaming-Multilingual-0.6B-ONNX-FP16
 - Modelo NeMo del autor: https://huggingface.co/MOH749/yaatal-ears-nemotron-wol

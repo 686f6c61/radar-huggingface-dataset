@@ -6,7 +6,7 @@ ZwZ2-4B-GGUF es la versión cuantizada en formato GGUF de ZwZ2-4B, un modelo mul
 
 La relevancia de esta publicación reside en la disponibilidad de pesos GGUF cuantizados (FP16, Q8_0 y Q4_K_M) tanto del modelo de lenguaje como del codificador de visión y el proyector (`mmproj`), lo que permite ejecutar el modelo de forma local en CPU o en GPUs de consumo mediante llama.cpp, sin depender de infraestructura de datacenter. Con licencia Apache 2.0, es apto para uso comercial.
 
-El repositorio se publica junto a un artículo en arXiv (arXiv:2610.37037) y una colección en HuggingFace con los componentes de la familia Zooming without Zooming v2. La longitud de contexto, la composición exacta del dataset de preentrenamiento y los benchmarks cuantitativos no están detallados en la model card, aunque esta remite a la página del modelo base para las evaluaciones publicadas.
+El repositorio se publica junto a un artículo en arXiv (arXiv:2610.37037) y una colección en Hugging Face con los componentes de la familia Zooming without Zooming v2. La longitud de contexto, la composición exacta del dataset de preentrenamiento y los benchmarks cuantitativos no están detallados en la model card, aunque esta remite a la página del modelo base para las evaluaciones publicadas.
 
 ## Especificaciones tecnicas
 

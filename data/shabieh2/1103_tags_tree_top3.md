@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shabieh2/1103_tags_tree_top3` es un ajuste fino (fine-tuning) del modelo base `unsloth/Muse-Glimmer-30B`, publicado por el usuario shabieh2 en HuggingFace. Se trata de un modelo de generación de texto derivado de la familia Muse-Glimmer, entrenado con la librería Unsloth, que el autor declara como 2 veces más rápido que un entrenamiento convencional. El repositorio tiene un tamaño de 0,9 GB, lo que sugiere que los pesos publicados no corresponden a los 30 000 millones de parámetros del modelo base en precisión completa, sino probablemente a una versión cuantizada o a un subconjunto de pesos (adaptadores o capas parciales).
+`shabieh2/1103_tags_tree_top3` es un ajuste fino (fine-tuning) del modelo base `unsloth/Muse-Glimmer-30B`, publicado por el usuario shabieh2 en Hugging Face. Se trata de un modelo de generación de texto derivado de la familia Muse-Glimmer, entrenado con la librería Unsloth, que el autor declara como 2 veces más rápido que un entrenamiento convencional. El repositorio tiene un tamaño de 0,9 GB, lo que sugiere que los pesos publicados no corresponden a los 30 000 millones de parámetros del modelo base en precisión completa, sino probablemente a una versión cuantizada o a un subconjunto de pesos (adaptadores o capas parciales).
 
 La información disponible es muy limitada: no se especifican detalles sobre el dataset de entrenamiento, la arquitectura interna, la longitud de contexto efectiva ni los resultados de evaluación. El modelo está etiquetado únicamente para inglés (`en`) y se distribuye bajo licencia Apache 2.0. La relevancia actual es reducida dado que no hay descargas ni interacciones registradas, pero puede interesar a quienes busquen variantes ajustadas de Muse-Glimmer-30B para tareas específicas de generación de texto.
 
@@ -42,7 +42,7 @@ El entrenamiento se realizó con la librería Unsloth, según indica la model ca
 - Generación de texto en inglés para prototipos: el modelo puede emplearse para tareas básicas de generación de texto en inglés, aunque sin benchmarks publicados no es posible garantizar calidad.
 - Experimentación con fine-tunes de Muse-Glimmer-30B: útil para investigadores que quieran comparar variantes ajustadas del modelo base y evaluar el efecto del fine-tuning con Unsloth.
 - Despliegue en entornos con TGI: al estar etiquetado como compatible con text-generation-inference, puede servirse mediante dicho framework si los pesos son compatibles.
-- Pruebas de integración en pipelines de HuggingFace Endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en la infraestructura de endpoints de HuggingFace.
+- Pruebas de integración en pipelines de Hugging Face Endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en la infraestructura de endpoints de Hugging Face.
 - Investigación sobre eficiencia de entrenamiento: dado que el autor destaca el uso de Unsloth para un entrenamiento 2x más rápido, puede servir como referencia para estudiar dicha herramienta.
 - Evaluación comparativa de fine-tunes: como punto de partida para medir el impacto de ajustes sobre Muse-Glimmer-30B en tareas concretas, siempre que se disponga de un conjunto de evaluación propio.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| shabieh2/1103_tags_tree_top3 | 30B (heredados) | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune de Muse-Glimmer-30B con Unsloth |
-| unsloth/Muse-Glimmer-30B | 30B | no disponible | no disponible | HuggingFace (modelo base) | Modelo base del que deriva |
-| Otros fine-tunes de Muse-Glimmer-30B | 30B | no disponible | variable | HuggingFace | No se dispone de datos comparativos |
+| shabieh2/1103_tags_tree_top3 | 30B (heredados) | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune de Muse-Glimmer-30B con Unsloth |
+| unsloth/Muse-Glimmer-30B | 30B | no disponible | no disponible | Hugging Face (modelo base) | Modelo base del que deriva |
+| Otros fine-tunes de Muse-Glimmer-30B | 30B | no disponible | variable | Hugging Face | No se dispone de datos comparativos |
 
 No se dispone de información suficiente para comparar rendimiento con alternativas de la misma categoría.
 
@@ -81,6 +81,6 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- [HuggingFace: shabieh2/1103_tags_tree_top3](https://huggingface.co/shabieh2/1103_tags_tree_top3)
+- [Hugging Face: shabieh2/1103_tags_tree_top3](https://huggingface.co/shabieh2/1103_tags_tree_top3)
 - [Modelo base: unsloth/Muse-Glimmer-30B](https://huggingface.co/unsloth/Muse-Glimmer-30B)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)

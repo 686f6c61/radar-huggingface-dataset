@@ -73,9 +73,9 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/koboldcpp/music
+- Repositorio en Hugging Face: https://huggingface.co/koboldcpp/music
 - Carpeta YuE2 dentro del repositorio: https://huggingface.co/koboldcpp/music/tree/main/yue2
-- Organizacion koboldcpp en HuggingFace: https://huggingface.co/koboldcpp
+- Organizacion koboldcpp en Hugging Face: https://huggingface.co/koboldcpp
 - Repositorio GitHub de KoboldCpp: https://github.com/LostRuins/koboldcpp
 - Releases de KoboldCpp: https://github.com/LostRuins/koboldcpp/releases
 - Sitio web oficial de KoboldCpp: https://koboldcpp.net/

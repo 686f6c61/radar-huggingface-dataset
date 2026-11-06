@@ -68,9 +68,9 @@ El único dato de rendimiento documentado es la velocidad de inferencia: aproxim
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| VIT Bot (Qwen3.5-4B fine-tune) | ~21M entrenables sobre base 4B | no disponible | Apache 2.0 | HuggingFace, GGUF y LoRA | Especializado en cultura VIT, solo inglés |
-| Qwen3.5-4B (base) | 4B (clase) | no disponible | no disponible en la información | HuggingFace | Modelo generalista del que deriva este fine-tune |
-| Adaptadores de persona LoRA genéricos | variable | variable | variable | HuggingFace | No hay datos concretos de comparación en la información disponible |
+| VIT Bot (Qwen3.5-4B fine-tune) | ~21M entrenables sobre base 4B | no disponible | Apache 2.0 | Hugging Face, GGUF y LoRA | Especializado en cultura VIT, solo inglés |
+| Qwen3.5-4B (base) | 4B (clase) | no disponible | no disponible en la información | Hugging Face | Modelo generalista del que deriva este fine-tune |
+| Adaptadores de persona LoRA genéricos | variable | variable | variable | Hugging Face | No hay datos concretos de comparación en la información disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (chatbots de nicho universitario) ni de datos de rendimiento que permitan una comparación cuantitativa.
 
@@ -87,7 +87,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ajaythomas-crl/vit-bot-qwen3.5-4b
+- Modelo en Hugging Face: https://huggingface.co/Ajaythomas-crl/vit-bot-qwen3.5-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - GGUF del modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3.5-4B-GGUF
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

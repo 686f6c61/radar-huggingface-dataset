@@ -93,12 +93,12 @@ No se dispone de datos de otros modelos TTS comparables (parametros, contexto, r
 - Riesgo de alucinacion y de errores de prosodia: como todo modelo TTS generativo, puede producir pronunciaciones incorrectas, omisiones de texto, repeticiones o artefactos acusticos, especialmente con texto fuera de distribucion, siglas, numeros o nombres propios.
 - Clonacion de voz: la model card advierte explicitamente de que no debe clonarse ni imitarse la voz de una persona sin consentimiento explicito y licito, y prohibe el uso del audio generado para suplantacion, fraude, engano, acoso o actividades invasivas de la privacidad. Esta advertencia es relevante en la Union Europea por la normativa sobre identidad digital y deepfakes.
 - Licencia: Apache 2.0 aplica a los artefactos del modelo, lo que permite uso comercial y modificacion. Los componentes de llama.cpp y whisper.cpp mantienen sus propias licencias, que deben revisarse por separado si se redistribuye el binario.
-- Metadatos incompletos: la ficha de HuggingFace no declara pipeline, idiomas, ni tamano de contexto. Algunas herramientas de descubrimiento pueden clasificar el repositorio incorrectamente.
+- Metadatos incompletos: la ficha de Hugging Face no declara pipeline, idiomas, ni tamano de contexto. Algunas herramientas de descubrimiento pueden clasificar el repositorio incorrectamente.
 - La ausencia de indicacion sobre el significado de "12Hz" impide anticipar el coste computacional y la cadencia de generacion de audio del modelo.
 - No se documenta soporte de cuantizaciones mas agresivas (Q4_K_M, Q5_K_M, etc.), lo que limita el despliegue en hardware por debajo de los 3 GB de VRAM.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NANI-Nithin/Qwen3-TTS-12Hz-1.7B-Base-GGUF
+- Repositorio Hugging Face: https://huggingface.co/NANI-Nithin/Qwen3-TTS-12Hz-1.7B-Base-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - No se han encontrado en la busqueda web enlaces adicionales relevantes: los resultados devueltos corresponden a personas homonimas ("Nani" futbolista, "Nani" actor) y a un servicio de traduccion, sin relacion con el modelo.

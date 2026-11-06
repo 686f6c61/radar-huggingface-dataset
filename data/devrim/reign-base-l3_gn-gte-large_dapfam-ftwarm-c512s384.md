@@ -77,7 +77,7 @@ No se dispone de información comparativa con otros modelos de retrieval de docu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/devrim/reign-base-l3_gn-gte-large_dapfam-ftwarm-c512s384
+- Hugging Face: https://huggingface.co/devrim/reign-base-l3_gn-gte-large_dapfam-ftwarm-c512s384
 - Código: https://github.com/devrimcavusoglu/reign
 - Página del proyecto: https://devrimcavusoglu.github.io/reign
 - Dataset: https://huggingface.co/datasets/devrim/goodwiki_long_synthetic_ir

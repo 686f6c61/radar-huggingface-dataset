@@ -21,7 +21,7 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un ajuste en 
 | Licencia | `other`, con `license_name: lfm1.0` |
 | Formato de pesos | no disponible (repositorio de 3,6 GB; libreria declarada: `liquid-audio`) |
 
-Otros metadatos: autor `baptistefrancois1`, region `us`, 0 descargas, 0 likes, creado el 2026-09-17 y actualizado el 2026-09-17 (mismo dia). No se declara pipeline de HuggingFace.
+Otros metadatos: autor `baptistefrancois1`, region `us`, 0 descargas, 0 likes, creado el 2026-09-17 y actualizado el 2026-09-17 (mismo dia). No se declara pipeline de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -74,8 +74,8 @@ Las siguientes cifras son estimaciones calculadas a partir del tamano nominal de
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lfm2a-fr (rama `s1-anchor-v1`) | ~1,5 mil millones (heredado del padre) | no disponible | no disponible | `other` / `lfm1.0` | Publico en HuggingFace, 0 descargas |
-| `LiquidAI/LFM2.5-Audio-1.5B` (modelo padre) | ~1,5 mil millones | no disponible | no disponible | no disponible en esta ficha | Publico en HuggingFace |
+| lfm2a-fr (rama `s1-anchor-v1`) | ~1,5 mil millones (heredado del padre) | no disponible | no disponible | `other` / `lfm1.0` | Publico en Hugging Face, 0 descargas |
+| `LiquidAI/LFM2.5-Audio-1.5B` (modelo padre) | ~1,5 mil millones | no disponible | no disponible | no disponible en esta ficha | Publico en Hugging Face |
 | Otros modelos de audio ajustados al frances | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/baptistefrancois1/lfm2a-fr
+- Repositorio en Hugging Face: https://huggingface.co/baptistefrancois1/lfm2a-fr
 - Rama `s1-anchor-v1`: https://huggingface.co/baptistefrancois1/lfm2a-fr/tree/s1-anchor-v1
 - Modelo padre: https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B
 - Resultados de la busqueda web: no se encontro ningun enlace relevante (los resultados devueltos corresponden a foros de un proveedor de correo, sin relacion con el modelo).

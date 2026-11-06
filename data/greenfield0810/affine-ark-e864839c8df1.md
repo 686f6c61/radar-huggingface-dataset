@@ -4,7 +4,7 @@
 
 Este repositorio contiene un archivo (mirror) de un checkpoint competidor del subnet 120 de Bittensor, conocido como Affine. El autor del repositorio, `greenfield0810`, ha preservado una copia byte a byte de un modelo originalmente subido por `afgod1079` bajo el nombre `Affine-5hb2xk3yze-cp3200`, con el objetivo de evitar su pérdida cuando los repositorios del leaderboard se vuelven privados (según la model card, el 31% de los challengers que han duelo ya son inaccesibles). No se trata de un modelo desarrollado por el autor del repositorio, sino de un archivo de conservación.
 
-El modelo en sí es un checkpoint de tipo image-text-to-text, con arquitectura `qwen3_5_moe` (según las etiquetas de HuggingFace), lo que sugiere una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen 3.5. Tiene aproximadamente 35,95 mil millones de parámetros totales y un tamaño de 71,9 GB en 26 shards de safetensors. No se dispone de información sobre licencia, idiomas soportados, contexto o capacidades específicas, ya que la model card solo documenta el propósito de archivo y la procedencia, no las características técnicas del modelo.
+El modelo en sí es un checkpoint de tipo image-text-to-text, con arquitectura `qwen3_5_moe` (según las etiquetas de Hugging Face), lo que sugiere una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen 3.5. Tiene aproximadamente 35,95 mil millones de parámetros totales y un tamaño de 71,9 GB en 26 shards de safetensors. No se dispone de información sobre licencia, idiomas soportados, contexto o capacidades específicas, ya que la model card solo documenta el propósito de archivo y la procedencia, no las características técnicas del modelo.
 
 La relevancia de este repositorio es principalmente para la comunidad de Bittensor y Affine, como un punto de referencia para reproducir o auditar checkpoints que compiten en el subnet 120. Para un desarrollador o investigador que busque un modelo listo para usar, este archivo carece de documentación funcional y de garantías de calidad, por lo que su utilidad práctica es limitada sin información adicional.
 
@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/greenfield0810/affine-ark-e864839c8df1
+- Repositorio en Hugging Face: https://huggingface.co/greenfield0810/affine-ark-e864839c8df1
 - Repositorio original (según la model card): https://huggingface.co/afgod1079/Affine-5hb2xk3yze-cp3200
 - Otro archivo similar del mismo autor: https://huggingface.co/greenfield0810/affine-ark-b4d0e92fef1e
 - Página de FriendliAI con un archivo relacionado (affine-ark-bc254d78ac91): https://friendli.ai/models/greenfield0810/affine-ark-bc254d78ac91

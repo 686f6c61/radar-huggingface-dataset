@@ -102,7 +102,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snowsh1ne/DeepSeek-V4.1-Flash-1017-GSQ-217-Strixolotl
+- Hugging Face: https://huggingface.co/Snowsh1ne/DeepSeek-V4.1-Flash-1017-GSQ-217-Strixolotl
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Repositorio Strixolotl: https://github.com/snowsh1ne/strixolotl
 - Release 0.1.0 de Strixolotl: https://github.com/snowsh1ne/strixolotl/releases/tag/0.1.0

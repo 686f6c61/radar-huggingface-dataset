@@ -30,7 +30,7 @@ El modelo sigue la arquitectura Perceiver, que utiliza un conjunto de latentes f
 - **Inicialización Kaiming**: adecuada para capas con activaciones no lineales.
 - **Entrenamiento con SGD y calentamiento lineal**: optimizador clásico con programación de tasa de aprendizaje.
 
-No se proporciona información sobre el dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas de alineación (RLHF/DPO). El repositorio contiene únicamente el archivo de código, por lo que no hay pesos preentrenados disponibles en HuggingFace.
+No se proporciona información sobre el dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas de alineación (RLHF/DPO). El repositorio contiene únicamente el archivo de código, por lo que no hay pesos preentrenados disponibles en Hugging Face.
 
 ## Capacidades
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 ## Comparativa con modelos similares
 
-No se dispone de comparativas directas con otros modelos Perceiver de la misma escala o tarea. La documentación de HuggingFace indica que Perceiver obtiene buenos resultados en varios dominios (imágenes, audio, multimodal, nubes de puntos) con escalado lineal, pero este repositorio no aporta datos comparativos. Se recomienda consultar la documentación oficial de Perceiver para más información sobre alternativas como Perceiver IO (arXiv:2107.14795) o Perceiver para imágenes.
+No se dispone de comparativas directas con otros modelos Perceiver de la misma escala o tarea. La documentación de Hugging Face indica que Perceiver obtiene buenos resultados en varios dominios (imágenes, audio, multimodal, nubes de puntos) con escalado lineal, pero este repositorio no aporta datos comparativos. Se recomienda consultar la documentación oficial de Perceiver para más información sobre alternativas como Perceiver IO (arXiv:2107.14795) o Perceiver para imágenes.
 
 ## Limitaciones y advertencias
 

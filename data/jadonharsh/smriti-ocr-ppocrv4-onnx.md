@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smriti-ocr-ppocrv4-onnx es un repositorio de HuggingFace que redistribuye dos ficheros ONNX correspondientes al detector y al reconocedor de texto de PaddleOCR PP-OCRv4, en la forma publicada por RapidOCR (paquete `rapidocr_onnxruntime` 1.4.4 en PyPI) y sin modificar. No se trata de un modelo generativo ni de un LLM, sino de un pipeline OCR clásico de dos etapas (detección de cajas de texto y reconocimiento de caracteres) empaquetado para inferencia local.
+smriti-ocr-ppocrv4-onnx es un repositorio de Hugging Face que redistribuye dos ficheros ONNX correspondientes al detector y al reconocedor de texto de PaddleOCR PP-OCRv4, en la forma publicada por RapidOCR (paquete `rapidocr_onnxruntime` 1.4.4 en PyPI) y sin modificar. No se trata de un modelo generativo ni de un LLM, sino de un pipeline OCR clásico de dos etapas (detección de cajas de texto y reconocimiento de caracteres) empaquetado para inferencia local.
 
 El autor, jadonharsh, lo publica como componente del proyecto Smriti, que lo descarga bajo demanda (aproximadamente 16 MB) para ejecutarlo íntegramente en la máquina del usuario. La relevancia actual del repositorio es de tipo práctico: ofrece OCR con licencia Apache-2.0, en formato ONNX portable, con un tamaño que permite desplegarlo en CPU, navegador o dispositivos de borde sin depender de servicios en la nube y sin enviar imágenes a terceros.
 
@@ -21,12 +21,12 @@ La model card es mínima: se limita a identificar los dos ficheros, sus hashes S
 | Formato de pesos | ONNX (`.onnx`) |
 | Numero de ficheros | 2: `ch_PP-OCRv4_det_infer.onnx` (deteccion) y `ch_PP-OCRv4_rec_infer.onnx` (reconocimiento) |
 | Tamano declarado | aproximadamente 16 MB en total, segun la model card |
-| Tamano del repositorio en HuggingFace | 0,0 GB (dato del propio repositorio) |
+| Tamano del repositorio en Hugging Face | 0,0 GB (dato del propio repositorio) |
 | Hashes SHA256 | det: `d2a7720d45a54257208b1e13e36a8479894cb74155a5efe29462512d42f49da9`; rec: `48fc40f24f6d2a207a2b1091d3437eb3cc3eb6b676dc3ef9c37384005483683b` |
 | Fecha de creacion | 13 de octubre de 2026 |
 | Ultima actualizacion | 13 de octubre de 2026 |
 | Descargas / likes | 0 / 0 |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ La model card no incluye métricas de precisión, recall, F1, CER ni WER, ni com
 
 | Modelo | Tipo | Formato | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| smriti-ocr-ppocrv4-onnx | Detector + reconocedor OCR (PP-OCRv4) | ONNX | Apache-2.0 | Repositorio en HuggingFace, 0 descargas y 0 likes | Reempaquetado de RapidOCR sin modificar; sin benchmarks publicados |
+| smriti-ocr-ppocrv4-onnx | Detector + reconocedor OCR (PP-OCRv4) | ONNX | Apache-2.0 | Repositorio en Hugging Face, 0 descargas y 0 likes | Reempaquetado de RapidOCR sin modificar; sin benchmarks publicados |
 | PaddleOCR PP-OCRv4 | Detector + reconocedor OCR | Pesos nativos de PaddlePaddle (y conversiones a ONNX) | Apache-2.0 (segun la documentacion publica del proyecto) | Repositorio oficial en GitHub | Fuente original del pipeline; incluye herramientas de entrenamiento y evaluación |
 | RapidOCR | Paquete de OCR sobre ONNX Runtime | ONNX (empaquetado en libreria) | Apache-2.0 (segun la documentacion publica del proyecto) | Paquete en PyPI y repositorio en GitHub | Origen directo de los ficheros de este repositorio, en la version 1.4.4 |
 | Modelos de OCR alternativos (por ejemplo, reconocedores de la familia Tesseract o EasyOCR) | OCR | Formatos propios de cada proyecto | no verificado en la informacion disponible | Repositorios publicos | Comparacion no cuantificable: no hay benchmarks en la informacion proporcionada |
@@ -95,7 +95,7 @@ Los datos de licencia de los proyectos de terceros proceden de su documentación
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jadonharsh/smriti-ocr-ppocrv4-onnx
+- Repositorio en Hugging Face: https://huggingface.co/jadonharsh/smriti-ocr-ppocrv4-onnx
 - Proyecto Smriti (aplicación que lo consume): https://smriti.jadonharsh.in
 - PaddleOCR (fuente original del pipeline PP-OCRv4): https://github.com/PaddlePaddle/PaddleOCR
 - RapidOCR (origen de los ficheros ONNX redistribuidos): https://github.com/RapidAI/RapidOCR

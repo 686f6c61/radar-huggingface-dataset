@@ -90,7 +90,7 @@ No se ha encontrado informacion suficiente para establecer comparaciones de rend
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KhasanovAM/qwen_finetune_gguf
+- Repositorio en Hugging Face: https://huggingface.co/KhasanovAM/qwen_finetune_gguf
 - Unsloth (marco de entrenamiento y conversion): https://github.com/unslothai/unsloth
 
 No se han encontrado enlaces relevantes adicionales (papers, blogs tecnicos, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

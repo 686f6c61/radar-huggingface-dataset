@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfm_filtered_insert_xxf_character-5k_6k_7k_weightedavg_merge` es un modelo de lenguaje publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No se trata de un entrenamiento desde cero, sino de una fusión (*merge*) de pesos generada con la herramienta mergekit a partir de tres checkpoints de un mismo linaje de entrenamiento, identificados por sus pasos globales (`global_step5000`, `global_step6000` y `global_step7000`) bajo la ruta interna `filtered_insert_xxf_character`. El resultado es un modelo denso de 6.856.253.440 parámetros (aproximadamente 6,86 mil millones) con arquitectura `gpt_neox` y pesos en `safetensors`.
+`sfm_filtered_insert_xxf_character-5k_6k_7k_weightedavg_merge` es un modelo de lenguaje publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No se trata de un entrenamiento desde cero, sino de una fusión (*merge*) de pesos generada con la herramienta mergekit a partir de tres checkpoints de un mismo linaje de entrenamiento, identificados por sus pasos globales (`global_step5000`, `global_step6000` y `global_step7000`) bajo la ruta interna `filtered_insert_xxf_character`. El resultado es un modelo denso de 6.856.253.440 parámetros (aproximadamente 6,86 mil millones) con arquitectura `gpt_neox` y pesos en `safetensors`.
 
 La relevancia de esta ficha es limitada y conviene ser explícito: la model card no documenta el modelo base original, ni el dataset de entrenamiento, ni el número de tokens, ni los idiomas soportados, ni la licencia. Se desconoce por completo qué modelo preentrenado subyace y qué significa el prefijo `sfm` o el sufijo `xxf_character` (posiblemente relacionados con un pipeline interno de evaluación de seguridad, a juzgar por la ruta `Pan_Safety_Better_Measurement`, aunque esto es una inferencia a partir del nombre de la ruta y no un dato confirmado).
 
@@ -35,7 +35,7 @@ El proceso de creación no es un entrenamiento sino una fusión lineal (*Linear 
 - Soporte de agentes y razonamiento multi-paso: no disponible; no hay documentación al respecto.
 - Capacidades multilingües: no disponibles; el repositorio no declara idiomas.
 - Capacidades especiales (modo «thinking», visión, audio, código, matemáticas): no disponibles; no se documenta ninguna.
-- Compatibilidad de despliegue: el repositorio incluye las etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica que el formato de pesos es compatible con TGI y con los endpoints gestionados de HuggingFace.
+- Compatibilidad de despliegue: el repositorio incluye las etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica que el formato de pesos es compatible con TGI y con los endpoints gestionados de Hugging Face.
 
 ## Casos de uso
 
@@ -83,7 +83,7 @@ No hay benchmarks de este modelo, por lo que la comparación se limita a caracte
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sfm_filtered_insert_xxf_character-5k_6k_7k_weightedavg_merge | 6,86 mil millones | No disponible | GPT-NeoX denso | No disponible | Solo safetensors en HuggingFace |
+| sfm_filtered_insert_xxf_character-5k_6k_7k_weightedavg_merge | 6,86 mil millones | No disponible | GPT-NeoX denso | No disponible | Solo safetensors en Hugging Face |
 | Pythia-6.9B | 6,9 mil millones | 2048 tokens | GPT-NeoX denso | Apache 2.0 | Safetensors, ampliamente replicado |
 | Mistral-7B-v0.1 | 7,24 mil millones | 8192 tokens | Transformer denso con GQA y sliding window attention | Apache 2.0 | Safetensors, GGUF, AWQ, GPTQ |
 | Qwen2.5-7B | 7,6 mil millones | 131.072 tokens | Transformer denso con GQA | Apache 2.0 (la mayoría de variantes) | Safetensors, GGUF, cuantizaciones oficiales |
@@ -93,7 +93,7 @@ La comparación más informativa es con Pythia-6.9B, que comparte arquitectura y
 ## Limitaciones y advertencias
 
 - Licencia no especificada: sin licencia explícita, no se puede asumir permiso para uso comercial. Es un bloqueante para cualquier despliegue en producción.
-- Origen opaco: la model card referencia rutas locales de un sistema interno (`/opt/tiger/Pan_Safety_Better_Measurement/...`) en lugar de identificadores públicos de HuggingFace, por lo que no se puede trazar el modelo base original ni verificar su procedencia.
+- Origen opaco: la model card referencia rutas locales de un sistema interno (`/opt/tiger/Pan_Safety_Better_Measurement/...`) en lugar de identificadores públicos de Hugging Face, por lo que no se puede trazar el modelo base original ni verificar su procedencia.
 - Sin datos de entrenamiento: se desconoce el corpus, el número de tokens, la composición del dataset y si hubo ajuste por instrucciones o preferencias. Esto impide evaluar sesgos de forma fundamentada.
 - Riesgo de alucinación: no cuantificado. No hay evaluaciones de veracidad ni de tasa de alucinación, y al no conocerse el modelo base tampoco se puede inferir de modelos emparentados.
 - Idiomas no declarados: no se puede garantizar un rendimiento mínimo en castellano ni en ningún otro idioma.
@@ -105,7 +105,7 @@ La comparación más informativa es con Pythia-6.9B, que comparte arquitectura y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-5k_6k_7k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-5k_6k_7k_weightedavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Artículo del método Linear merge (Model soups): https://arxiv.org/abs/2203.05482
 - Documentación de GPT-NeoX: no disponible en la información proporcionada

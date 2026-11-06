@@ -76,8 +76,8 @@ No se han encontrado en la información proporcionada alternativas directas de d
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aloudreader/uk-stress-crossencoder | 278.044.417 | 192 subtokens por par | Clasificación de pares (glosa-oración) para acento y desambiguación | Apache 2.0 | HuggingFace, safetensors, 0 descargas |
-| FacebookAI/xlm-roberta-base | 278M (misma base) | 512 tokens | Masked language modeling multilingüe | No confirmada en la información disponible | HuggingFace |
+| aloudreader/uk-stress-crossencoder | 278.044.417 | 192 subtokens por par | Clasificación de pares (glosa-oración) para acento y desambiguación | Apache 2.0 | Hugging Face, safetensors, 0 descargas |
+| FacebookAI/xlm-roberta-base | 278M (misma base) | 512 tokens | Masked language modeling multilingüe | No confirmada en la información disponible | Hugging Face |
 | Componentes del pipeline del autor (módulo de morfología, clasificador de tokens) | No disponible | No disponible | Alternancias gramaticales y formas frecuentes | No disponible | No disponibles como modelos publicados en la información consultada |
 
 La búsqueda web realizada no devolvió ningún recurso técnico relacionado con el modelo, su tarea o modelos comparables.
@@ -92,11 +92,11 @@ La búsqueda web realizada no devolvió ningún recurso técnico relacionado con
 - Dependencia de un umbral: la abstención con margen 0,5 es una decisión de diseño del pipeline; ajustarla cambia el equilibrio entre cobertura y precisión.
 - Ámbito lingüístico restringido al ucraniano; no se reportan capacidades multilingües aunque la base sea multilingüe.
 - Licencia Apache 2.0, permisiva para uso comercial, pero el corpus Wikipedia subyacente es CC BY-SA 4.0 y el corpus Malyuk puede tener sus propias condiciones, no detalladas en la información disponible.
-- Sin tracción ni validación externa: 0 descargas y 0 likes en HuggingFace, y sin resultados de benchmarks estándar publicados.
+- Sin tracción ni validación externa: 0 descargas y 0 likes en Hugging Face, y sin resultados de benchmarks estándar publicados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aloudreader/uk-stress-crossencoder
+- Modelo en Hugging Face: https://huggingface.co/aloudreader/uk-stress-crossencoder
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Manifiesto de servicio: `serving_manifest.json`, incluido en el repositorio del modelo
 - Artículo, repositorio de código, demo o publicación asociada: no disponibles en la información proporcionada

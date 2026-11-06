@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Robinsontip/class-classification es una implementación compacta y personalizada de la arquitectura Flamingo adaptada para tareas de clasificación. Fue desarrollada por Robinsontip y publicada en HuggingFace en septiembre de 2026. A pesar de estar etiquetada con la configuración "giant" (gigante), el modelo tiene apenas 49.600 parámetros, lo que lo convierte en una implementación extremadamente ligera y experimental.
+Robinsontip/class-classification es una implementación compacta y personalizada de la arquitectura Flamingo adaptada para tareas de clasificación. Fue desarrollada por Robinsontip y publicada en Hugging Face en septiembre de 2026. A pesar de estar etiquetada con la configuración "giant" (gigante), el modelo tiene apenas 49.600 parámetros, lo que lo convierte en una implementación extremadamente ligera y experimental.
 
 El repositorio incluye un script de evaluación en Python, un archivo de configuración con los ajustes de arquitectura, argumentos de entrenamiento por defecto y un checkpoint de inicialización válido en formato safetensors. No es un modelo preentrenado de producción, sino un punto de partida experimental bajo licencia Apache-2.0, diseñado para revisión de código, pruebas de humo y experimentos controlados.
 
@@ -69,4 +69,4 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Robinsontip/class-classification
+- Hugging Face: https://huggingface.co/Robinsontip/class-classification

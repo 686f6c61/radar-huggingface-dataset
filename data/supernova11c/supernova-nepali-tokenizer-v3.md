@@ -73,7 +73,7 @@ No se dispone de información sobre tokenizadores comparables específicos para 
 | Precisión en nepalí (según autor) | 100% | 85-90% | 92% |
 | Latencia en CPU (según autor) | 0,0007 s | 0,0010 s | 0,0025 s |
 | Licencia | Apache 2.0 | MIT (código) / uso comercial | Apache 2.0 |
-| Disponibilidad | Repositorio HuggingFace | Paquete tiktoken | Paquete sentencepiece |
+| Disponibilidad | Repositorio Hugging Face | Paquete tiktoken | Paquete sentencepiece |
 
 No hay datos verificables sobre el rendimiento real en tareas de tokenización nepalí para estos u otros tokenizadores.
 

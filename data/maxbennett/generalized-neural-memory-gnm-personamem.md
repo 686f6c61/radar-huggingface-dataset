@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GNM (Generalized Neural Memory) en su variante PersonaMem es un modelo de lenguaje de 9.783.615.488 parametros (aproximadamente 9,78 mil millones) desarrollado por el usuario maxbennett, publicado en HuggingFace bajo licencia llama3. Se trata de un ajuste fino del modelo YuWangX/memoryllm-8b-chat, que a su vez es una adaptacion de Llama-3-8B con un mecanismo de memoria neural, y esta disenado especificamente para aprender preferencias sobre temas indicados mediante instrucciones en lenguaje natural, ignorando el resto.
+GNM (Generalized Neural Memory) en su variante PersonaMem es un modelo de lenguaje de 9.783.615.488 parametros (aproximadamente 9,78 mil millones) desarrollado por el usuario maxbennett, publicado en Hugging Face bajo licencia llama3. Se trata de un ajuste fino del modelo YuWangX/memoryllm-8b-chat, que a su vez es una adaptacion de Llama-3-8B con un mecanismo de memoria neural, y esta disenado especificamente para aprender preferencias sobre temas indicados mediante instrucciones en lenguaje natural, ignorando el resto.
 
 El modelo acompana al articulo "Tell Me What To Learn: Generalizing Neural Memory to be Controllable in Natural Language", aceptado en NeurIPS 2026. Segun la model card, es el modelo GNM principal empleado en el benchmark de selectividad de preferencias PersonaMem (tabla 2 y figura 4 del articulo). Su innovacion central es el entrenamiento con memorizacion condicionada por instrucciones, lo que permite controlar de forma explicita que informacion debe retener el mecanismo de memoria del modelo.
 
@@ -70,9 +70,9 @@ Las siguientes cifras son estimaciones derivadas del numero de parametros (aprox
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| maxbennett/generalized-neural-memory-gnm-personamem | 9,78 mil millones | no disponible | no disponible (benchmark PersonaMem, sin cifras publicadas aqui) | llama3 | HuggingFace + repo de codigo oficial |
-| YuWangX/memoryllm-8b-chat (modelo base) | no disponible (heredado de Llama-3-8B, ~8 mil millones) | no disponible | no disponible | no disponible | HuggingFace |
-| Llama-3-8B-Instruct (referencia de categoria) | 8 mil millones | 8192 tokens (segun especificaciones publicas de Llama-3) | no disponible en la informacion proporcionada | llama3 | HuggingFace, amplio soporte de herramientas |
+| maxbennett/generalized-neural-memory-gnm-personamem | 9,78 mil millones | no disponible | no disponible (benchmark PersonaMem, sin cifras publicadas aqui) | llama3 | Hugging Face + repo de codigo oficial |
+| YuWangX/memoryllm-8b-chat (modelo base) | no disponible (heredado de Llama-3-8B, ~8 mil millones) | no disponible | no disponible | no disponible | Hugging Face |
+| Llama-3-8B-Instruct (referencia de categoria) | 8 mil millones | 8192 tokens (segun especificaciones publicas de Llama-3) | no disponible en la informacion proporcionada | llama3 | Hugging Face, amplio soporte de herramientas |
 
 No se dispone de datos de rendimiento comparativos en la informacion proporcionada. La comparativa se limita a la relacion de parentesco entre el modelo GNM y su base memoryllm-8b-chat.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maxbennett/generalized-neural-memory-gnm-personamem
+- Modelo en Hugging Face: https://huggingface.co/maxbennett/generalized-neural-memory-gnm-personamem
 - Repositorio de codigo oficial: https://github.com/maxbennett/Generalized-Neural-Memory
 - Modelo base: https://huggingface.co/YuWangX/memoryllm-8b-chat
 - Articulo de referencia: "Tell Me What To Learn: Generalizing Neural Memory to be Controllable in Natural Language" (NeurIPS 2026); no se ha proporcionado enlace directo al paper.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cybronya/Pony-toolkit es un repositorio publicado en HuggingFace por el usuario Cybronya bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su repositorio ocupa 0,2 GB. No se ha publicado model card funcional: el README se limita a la declaración de licencia, sin descripción del modelo, del entrenamiento ni de sus capacidades.
+Cybronya/Pony-toolkit es un repositorio publicado en Hugging Face por el usuario Cybronya bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su repositorio ocupa 0,2 GB. No se ha publicado model card funcional: el README se limita a la declaración de licencia, sin descripción del modelo, del entrenamiento ni de sus capacidades.
 
 Esto implica que no es posible confirmar si se trata de un modelo de lenguaje, un adaptador, un conjunto de herramientas o un artefacto auxiliar. El identificador "Pony-toolkit" sugiere, por su nombre, un conjunto de utilidades orientado a tool calling sobre algún modelo de la familia Pony, pero se trata de una inferencia no verificada y no debe tomarse como un dato técnico.
 
@@ -85,5 +85,5 @@ No disponible. Sin conocer la categoría funcional del artefacto (modelo de leng
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Cybronya/Pony-toolkit
+- Repositorio en Hugging Face: https://huggingface.co/Cybronya/Pony-toolkit
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

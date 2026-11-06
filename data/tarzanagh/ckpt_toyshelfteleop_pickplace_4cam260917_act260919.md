@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una política de imitación entrenada con el método ACT (Action Chunking with Transformers) para una tarea concreta de manipulación bimanual: un robot DexMate Vega-1 equipado con dos manos RobotEra XHand1 debe coger un juguete de la segunda balda de una estantería y colocarlo en la primera, operando con el brazo derecho mientras el izquierdo permanece prácticamente estático. El autor es el usuario de HuggingFace `tarzanagh` y el modelo se publica bajo licencia Apache 2.0 con un total de 51.734.182 parámetros y un repositorio de 0,2 GB en formato safetensors.
+Este repositorio contiene una política de imitación entrenada con el método ACT (Action Chunking with Transformers) para una tarea concreta de manipulación bimanual: un robot DexMate Vega-1 equipado con dos manos RobotEra XHand1 debe coger un juguete de la segunda balda de una estantería y colocarlo en la primera, operando con el brazo derecho mientras el izquierdo permanece prácticamente estático. El autor es el usuario de Hugging Face `tarzanagh` y el modelo se publica bajo licencia Apache 2.0 con un total de 51.734.182 parámetros y un repositorio de 0,2 GB en formato safetensors.
 
 El modelo pertenece a la familia de políticas visomotoras basadas en transformers para control robótico y no es un modelo de lenguaje: consume observaciones visuales de 4 cámaras RGB (640x360 a 30 fps) y produce vectores de acción de 38 dimensiones con posiciones articulares de ambos brazos y manos. Su relevancia es acotada pero clara: forma parte de una batería de 24 entrenamientos sobre la misma tarea, lo que permite comparar familias de políticas (ACT, Diffusion Policy, GR00T, pi0.5) y variantes con y sin señal táctil bajo condiciones controladas de datos y semilla.
 
@@ -100,7 +100,7 @@ Frente a modelos de lenguaje de proposito general no existe comparacion posible:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_act260919
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_act260919
 - Variante con tactil (ACT): https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_acttactile260919
 - Variante Diffusion Policy: https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_dp260919
 - Variante Diffusion Policy con tactil: https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_dptactile260919

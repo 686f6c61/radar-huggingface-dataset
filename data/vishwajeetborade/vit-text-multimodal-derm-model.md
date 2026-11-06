@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vishwajeetborade/vit-text-multimodal-derm-model` es un modelo publicado en HuggingFace Hub por el usuario vishwajeetborade, etiquetado con la librería transformers, el pipeline `feature-extraction` y la arquitectura `bert`. El repositorio contiene pesos en formato safetensors con 109.482.240 parámetros totales (aproximadamente 109,5 M) y un tamaño de 1,6 GB. El modelo fue creado el 17 de octubre de 2026 y no registra descargas ni likes en el momento de la consulta.
+`vishwajeetborade/vit-text-multimodal-derm-model` es un modelo publicado en Hugging Face Hub por el usuario vishwajeetborade, etiquetado con la librería transformers, el pipeline `feature-extraction` y la arquitectura `bert`. El repositorio contiene pesos en formato safetensors con 109.482.240 parámetros totales (aproximadamente 109,5 M) y un tamaño de 1,6 GB. El modelo fue creado el 17 de octubre de 2026 y no registra descargas ni likes en el momento de la consulta.
 
 El identificador del repositorio sugiere un modelo multimodal de visión y texto orientado a dermatología (combinación de ViT y texto), pero esta interpretación no está confirmada en ninguna sección de la model card, que es la plantilla autogenerada de transformers y no contiene información sustantiva. No se documentan datos de entrenamiento, idiomas, licencia, contexto ni procedimiento de evaluación.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 0,44 GB en fp32, 0,22 GB en fp16/bf16, 0,11 GB en int8 y 0,06 GB en int4, calculado a partir de los 109,5 M de parametros (no son medidas del autor).
 - GPU recomendadas: cualquier GPU consumer sirve; cabe holgadamente en GTX 1650, RTX 3060, RTX 4090, e incluso en CPU para lotes pequenos. Para alto throughput, A10G, L4, A100 o H100.
 - Cabe en GPU consumer: si, con margen amplio; el cuello de botella sera el preprocesado de imagen si el modelo es multimodal.
-- Opciones de despliegue: `transformers` con PyTorch (soporte nativo), HuggingFace Inference Endpoints (tag `endpoints_compatible`), exportacion a ONNX o TorchScript no incluida pero tecnicamente viable. vLLM, TGI, llama.cpp y Ollama no estan documentados para este checkpoint.
+- Opciones de despliegue: `transformers` con PyTorch (soporte nativo), Hugging Face Inference Endpoints (tag `endpoints_compatible`), exportacion a ONNX o TorchScript no incluida pero tecnicamente viable. vLLM, TGI, llama.cpp y Ollama no estan documentados para este checkpoint.
 - Latencia y throughput: no disponibles; no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ Nota: los datos de `bert-base-uncased` y `ViT-base-patch16-224` provienen de con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vishwajeetborade/vit-text-multimodal-derm
+- Hugging Face: https://huggingface.co/vishwajeetborade/vit-text-multimodal-derm
 - Paper citado en el tag del Hub (Lacoste et al., estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora ML Impact referenciada en la model card: https://mlco2.github.io/impact#compute
 - Repositorio, paper, demo y contacto del autor: no disponibles en la informacion proporcionada.

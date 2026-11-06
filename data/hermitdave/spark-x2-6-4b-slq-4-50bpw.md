@@ -112,7 +112,7 @@ No se han identificado en la información proporcionada otras alternativas compa
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/hermitdave/Spark-X2.6-4B-SLQ-4.50bpw)
+- [Modelo en Hugging Face](https://huggingface.co/hermitdave/Spark-X2.6-4B-SLQ-4.50bpw)
 - [Modelo base XHToken/Spark-X2.6-4B](https://huggingface.co/XHToken/Spark-X2.6-4B)
 - [Paper SLQ (arXiv:2605.02404)](https://arxiv.org/abs/2605.02404)
 - COLM 2026: citado en la model card como venue de la publicación, sin URL adicional en la información disponible.

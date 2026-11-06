@@ -70,7 +70,7 @@ No se han publicado en la informacion disponible resultados adicionales del tipo
 
 | Modelo | Parametros | Contexto/streaming | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Nemotron 3 Diarization (NVIDIA) | ~100 M | Hasta 8 hablantes, streaming y offline, buffer 80 ms - 30,4 s | openmdw-1.1 (uso comercial permitido) | Pesos abiertos en HuggingFace |
+| Nemotron 3 Diarization (NVIDIA) | ~100 M | Hasta 8 hablantes, streaming y offline, buffer 80 ms - 30,4 s | openmdw-1.1 (uso comercial permitido) | Pesos abiertos en Hugging Face |
 | Sortformer (NVIDIA, predecesor) | no disponible | Offline, referenciado como base arquitectonica | no disponible | no disponible |
 | Streaming Sortformer (NVIDIA) | no disponible | Streaming con AOSC y cola FIFO | no disponible | no disponible |
 
@@ -83,16 +83,16 @@ No se dispone de datos de rendimiento comparativos verificados frente a alternat
 - La resolucion de salida es de 10 ms como minimo; para aplicaciones que requieran precision inferior no es adecuado.
 - No se documentan idiomas soportados; al operar sobre audio, el rendimiento puede variar segun acento, ruido de fondo y condiciones de grabacion.
 - El DER reportado (14,72 %) procede de una fuente secundaria y no ha sido verificado contra una tabla oficial; puede no corresponder a todos los dominios.
-- El identificador de HuggingFace facilitado en la informacion de origen (ldov/Nemotron-3-Diarization) difiere del repositorio oficial de NVIDIA (nvidia/Nemotron-3-Diarization); conviene usar la fuente oficial para descargas y soporte.
+- El identificador de Hugging Face facilitado en la informacion de origen (ldov/Nemotron-3-Diarization) difiere del repositorio oficial de NVIDIA (nvidia/Nemotron-3-Diarization); conviene usar la fuente oficial para descargas y soporte.
 - Aunque la licencia openmdw-1.1 permite uso comercial segun la model card, conviene revisar los terminos exactos del texto de licencia antes de integrarlo en producto.
 - Las fechas de publicacion indicadas (septiembre de 2026) son las reportadas en la model card; verificar la vigencia de la informacion.
 
 ## Enlaces
 
-- HuggingFace (repositorio indicado en la informacion): https://huggingface.co/ldov/Nemotron-3-Diarization
-- HuggingFace (repositorio oficial de NVIDIA): https://huggingface.co/nvidia/Nemotron-3-Diarization
-- Blog de NVIDIA en HuggingFace: https://huggingface.co/blog/nvidia/nemotron-diarization
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/nvidia/nemotron-diarization
+- Hugging Face (repositorio indicado en la informacion): https://huggingface.co/ldov/Nemotron-3-Diarization
+- Hugging Face (repositorio oficial de NVIDIA): https://huggingface.co/nvidia/Nemotron-3-Diarization
+- Blog de NVIDIA en Hugging Face: https://huggingface.co/blog/nvidia/nemotron-diarization
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/nvidia/nemotron-diarization
 - NVIDIA NeMo Speech (repositorio): https://github.com/NVIDIA-NeMo/Speech
 - NeMo-Speech.cpp (runtime C++): https://github.com/NVIDIA/NeMo-Speech.cpp
 - Guia de diarizacion de NeMo-Speech.cpp: https://github.com/NVIDIA/NeMo-Speech.cpp/blob/main/docs/cli.md#diarize-audio

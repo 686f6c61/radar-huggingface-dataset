@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `ishikaa/acquisition_student_randomselfgen_alpaca_qwen3b_5000` es un checkpoint de 3.085.938.688 parametros (unos 3,09 mil millones) publicado por el usuario ishikaa en HuggingFace Hub, con arquitectura basada en Qwen2 segun el tag declarado por el propio repo. El identificador sugiere un modelo "estudiante" generado en el marco de un experimento de adquisicion de datos o destilacion, entrenado sobre respuestas autogeneradas con el formato del dataset Alpaca y con un volumen de 5.000 ejemplos, aunque esta interpretacion no esta confirmada en ninguna documentacion publicada por el autor.
+El repositorio `ishikaa/acquisition_student_randomselfgen_alpaca_qwen3b_5000` es un checkpoint de 3.085.938.688 parametros (unos 3,09 mil millones) publicado por el usuario ishikaa en Hugging Face Hub, con arquitectura basada en Qwen2 segun el tag declarado por el propio repo. El identificador sugiere un modelo "estudiante" generado en el marco de un experimento de adquisicion de datos o destilacion, entrenado sobre respuestas autogeneradas con el formato del dataset Alpaca y con un volumen de 5.000 ejemplos, aunque esta interpretacion no esta confirmada en ninguna documentacion publicada por el autor.
 
-La model card del repositorio es la plantilla autogenerada por HuggingFace y no contiene ni una sola seccion completada: no declara autor real, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros ni resultados de evaluacion. Todos los campos aparecen como "[More Information Needed]". Se trata, por tanto, de un artefacto de investigacion sin documentacion asociada, con 0 descargas y 0 likes en el momento de la consulta.
+La model card del repositorio es la plantilla autogenerada por Hugging Face y no contiene ni una sola seccion completada: no declara autor real, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros ni resultados de evaluacion. Todos los campos aparecen como "[More Information Needed]". Se trata, por tanto, de un artefacto de investigacion sin documentacion asociada, con 0 descargas y 0 likes en el momento de la consulta.
 
 Su relevancia practica es muy limitada: no hay evidencia publicada de que el ajuste se haya completado correctamente, ni benchmarks, ni ejemplos de uso, ni licencia que aclare los terminos de reutilizacion. La ficha se ha redactado marcando de forma explicita cada dato ausente para evitar atribuir capacidades no verificadas a un checkpoint opaco.
 
@@ -43,7 +43,7 @@ Respecto al entrenamiento, no hay ningun dato publicado: ni numero de tokens, ni
 - Uso como agente o razonamiento multi-paso: no disponible; sin evaluacion de tareas agente ni soporte de planificacion declarado.
 - Capacidades multilingues: no disponible; no se declaran idiomas.
 - Capacidades especiales (modo thinking, vision, audio): no disponible; el tag `qwen2` corresponde a un modelo exclusivamente de texto.
-- Integracion con endpoints: el tag `endpoints_compatible` y `text-generation-inference` indican compatibilidad formal con el servidor TGI de HuggingFace, no una validacion de calidad.
+- Integracion con endpoints: el tag `endpoints_compatible` y `text-generation-inference` indican compatibilidad formal con el servidor TGI de Hugging Face, no una validacion de calidad.
 
 ## Casos de uso
 
@@ -95,11 +95,11 @@ Frente a estas alternativas, el modelo objeto de la ficha no ofrece ningun dato 
 - Trazabilidad nula: no se identifica el modelo base exacto ni el commit de partida, lo que impide reproducir el ajuste o auditar la cadena de derivacion.
 - Adopcion nula: 0 descargas y 0 likes implican que no ha sido validado por terceros; cualquier comportamiento observado es anecdótico.
 - No apto para produccion: sin licencia, sin evaluacion y sin documentacion, su uso en sistemas con usuarios finales no es defendible desde un punto de vista tecnico ni legal.
-- El tag `arxiv:1910.09700` no es un paper del modelo: corresponde a Lacoste et al. (2019), referencia de la calculadora de impacto de carbono incluida en la plantilla por defecto de HuggingFace.
+- El tag `arxiv:1910.09700` no es un paper del modelo: corresponde a Lacoste et al. (2019), referencia de la calculadora de impacto de carbono incluida en la plantilla por defecto de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_randomselfgen_alpaca_qwen3b_5000
+- Repositorio en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_randomselfgen_alpaca_qwen3b_5000
 - Referencia del tag arxiv (calculadora de emisiones de carbono de la plantilla, no paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de carbono citada en la plantilla: https://mlco2.github.io/impact#compute
 - Documentacion de la familia Qwen2 en transformers (contexto del tag `qwen2`): https://huggingface.co/docs/transformers/model_doc/qwen2

@@ -74,7 +74,7 @@ La comparativa se limita a variantes de la misma familia; no se dispone de infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: [ProCreations/grug-v1.1-qwen-3.8-27b-mtp-awq-int4](https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-mtp-awq-int4)
+- Modelo en Hugging Face: [ProCreations/grug-v1.1-qwen-3.8-27b-mtp-awq-int4](https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-mtp-awq-int4)
 - Modelo base: [ProCreations/grug-v1.1-qwen-3.8-27b-mtp](https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-mtp)
 - Backbone cuantizado: [ProCreations/grug-v1.1-qwen-3.8-27b-awq-int4](https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-awq-int4)
 - Información de VRAM: [LLM Explorer - Grug 27B V1.1](https://llm-explorer.com/model/ProCreations%2Fgrug-27b-v1.1,7w81YA2p3vl4IO1tukcqWu)

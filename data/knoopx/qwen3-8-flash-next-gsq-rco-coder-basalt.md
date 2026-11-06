@@ -18,7 +18,7 @@ Es relevante ahora porque demuestra una via practica de servir un MoE de casi 17
 | Longitud de contexto | 262.144 tokens |
 | Tipos de cuantizacion | Precision mixta por capa: IQ2_S, IQ3_XXS, IQ3_S, IQ4_XS, IQ4_NL, Q2_0; tabla PLE en IQ4_NL; drafter en q2_0 |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | Basalt (fichero unico `.basalt`, 61.668.558.532 bytes) |
 
 ## Arquitectura y entrenamiento
@@ -86,7 +86,7 @@ La diferencia principal frente al GGUF de origen es el tamano de la capa de expe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/knoopx/Qwen3.8-Flash-Next-GSQ-RCO-Coder-Basalt
+- Modelo en Hugging Face: https://huggingface.co/knoopx/Qwen3.8-Flash-Next-GSQ-RCO-Coder-Basalt
 - Modelo base GGUF de origen: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Pack oficial Basalt: https://huggingface.co/jesdga/Qwen3.8-Flash-Next-Basalt

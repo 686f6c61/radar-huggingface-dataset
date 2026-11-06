@@ -105,7 +105,7 @@ No disponible. La informacion proporcionada no incluye datos de modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DedeBckp/BackKiyo-10M
+- Modelo en Hugging Face: https://huggingface.co/DedeBckp/BackKiyo-10M
 - Modelo relacionado Kiyo-135M: https://huggingface.co/DedeProGames/Kiyo-135M
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset DCLM-Baseline: https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0

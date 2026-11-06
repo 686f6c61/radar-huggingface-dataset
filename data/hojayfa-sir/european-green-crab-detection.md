@@ -82,8 +82,8 @@ No se han publicado en la informacion disponible resultados de benchmarks sobre 
 
 | Modelo | Tarea | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| european-green-crab-detection (este modelo) | Deteccion de 3 especies de cangrejo | no disponible | 576x576 px | Apache 2.0 | HuggingFace, libreria `rfdetr` |
-| Roboflow/rf-detr-medium | Deteccion de objetos generica | no disponible | no disponible en la informacion proporcionada | no disponible | HuggingFace (modelo base) |
+| european-green-crab-detection (este modelo) | Deteccion de 3 especies de cangrejo | no disponible | 576x576 px | Apache 2.0 | Hugging Face, libreria `rfdetr` |
+| Roboflow/rf-detr-medium | Deteccion de objetos generica | no disponible | no disponible en la informacion proporcionada | no disponible | Hugging Face (modelo base) |
 | Otros detectores en tiempo real (YOLO, DETR, RT-DETR) | Deteccion de objetos generica | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 La informacion proporcionada no incluye resultados comparativos frente a otros detectores, por lo que no es posible establecer una comparacion cuantitativa de rendimiento. La unica referencia fiable es el modelo base declarado, `Roboflow/rf-detr-medium`, del que este checkpoint es un ajuste fino.
@@ -105,10 +105,10 @@ La informacion proporcionada no incluye resultados comparativos frente a otros d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hojayfa-sir/european-green-crab-detection
+- Modelo en Hugging Face: https://huggingface.co/hojayfa-sir/european-green-crab-detection
 - Dataset declarado: https://huggingface.co/datasets/hojayfa-sir/European_Green_Crab
 - Modelo base: https://huggingface.co/Roboflow/rf-detr-medium
-- Pagina del autor (perfil de HuggingFace): https://huggingface.co/hojayfa-sir
+- Pagina del autor (perfil de Hugging Face): https://huggingface.co/hojayfa-sir
 - Paper, blog o repositorio de RF-DETR: no disponible en la informacion proporcionada
 - Demo o Space asociado: no disponible en la informacion proporcionada
 - Resultados de busqueda web relevantes: ninguno (la busqueda no devolvio resultados relacionados con el modelo)

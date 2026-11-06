@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `caiosouza/beit-generation` es una implementación personalizada y compacta en PyTorch de una arquitectura Beit orientada a tareas de generación. Lo publica el usuario caiosouza en HuggingFace y se distribuye bajo licencia MIT. Se trata de una configuración en escala "nano", con un total de 49.600 parámetros, pensada explícitamente por el autor para revisión de código, pruebas de humo (smoke tests) y experimentos controlados pequeños, no como un lanzamiento preentrenado listo para producción.
+El modelo `caiosouza/beit-generation` es una implementación personalizada y compacta en PyTorch de una arquitectura Beit orientada a tareas de generación. Lo publica el usuario caiosouza en Hugging Face y se distribuye bajo licencia MIT. Se trata de una configuración en escala "nano", con un total de 49.600 parámetros, pensada explícitamente por el autor para revisión de código, pruebas de humo (smoke tests) y experimentos controlados pequeños, no como un lanzamiento preentrenado listo para producción.
 
 El propio autor aclara en la model card que el checkpoint `model.safetensors` es una inicialización válida para pruebas, no un modelo entrenado ni evaluado con benchmarks. No se declara ninguna puntuación de benchmark en el repositorio, y no se especifican idiomas soportados ni pipeline de inferencia estándar.
 
@@ -73,5 +73,5 @@ No disponible. No se han facilitado modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/caiosouza/beit-generation
+- Hugging Face: https://huggingface.co/caiosouza/beit-generation
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

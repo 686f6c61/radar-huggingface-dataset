@@ -78,7 +78,7 @@ Gemma 4 E4B se diferencia de estos modelos por su arquitectura elástica y multi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/888rok/gemma-4-E4B-it-Q4_K_M-wllama-split
+- Repositorio en Hugging Face: https://huggingface.co/888rok/gemma-4-E4B-it-Q4_K_M-wllama-split
 - Modelo base GGUF (unsloth): https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF
 - Página oficial de Gemma 4 en DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Ficha técnica de Gemma 4 E4B (gemma4.dev): https://gemma4.dev/models/gemma-4-e4b

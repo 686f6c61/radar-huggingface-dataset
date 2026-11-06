@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YusufOri es un modelo publicado en HuggingFace por el usuario HucraA123 bajo licencia OpenRAIL. Se trata de un repositorio con un tamano aproximado de 0,1 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos parcial. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin informacion sobre arquitectura, entrenamiento, capacidades o uso previsto.
+YusufOri es un modelo publicado en Hugging Face por el usuario HucraA123 bajo licencia OpenRAIL. Se trata de un repositorio con un tamano aproximado de 0,1 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos parcial. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin informacion sobre arquitectura, entrenamiento, capacidades o uso previsto.
 
 En el momento de la consulta, el repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas especificados. Esto indica que el modelo no ha sido validado ni utilizado por la comunidad, y que no existe documentacion suficiente para evaluar su comportamiento real.
 
@@ -41,7 +41,7 @@ El tamano del repositorio (aproximadamente 0,1 GB) es coherente con un modelo de
 - Prototipado interno: utilizable como marcador de posicion en pipelines de prueba mientras se sustituye por un modelo documentado.
 - Investigacion de licencias OpenRAIL: sirve como ejemplo de publicacion bajo este tipo de licencia con restricciones de uso.
 - Analisis de repositorios de bajo uso: caso de estudio sobre modelos publicados sin model card ni validacion comunitaria.
-- Pruebas de infraestructura de despliegue: permite verificar pipelines de carga de pesos de HuggingFace en entornos de CI.
+- Pruebas de infraestructura de despliegue: permite verificar pipelines de carga de pesos de Hugging Face en entornos de CI.
 - No se recomienda su uso en produccion ni en aplicaciones dirigidas a usuarios finales sin una evaluacion previa exhaustiva, dada la ausencia total de documentacion.
 
 ## Benchmarks y rendimiento
@@ -73,4 +73,4 @@ No disponible. No se ha identificado ningun modelo comparable en la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HucraA123/YusufOri
+- Hugging Face: https://huggingface.co/HucraA123/YusufOri

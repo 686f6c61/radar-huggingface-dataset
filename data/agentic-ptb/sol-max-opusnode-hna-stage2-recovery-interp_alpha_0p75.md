@@ -62,5 +62,5 @@ No se dispone de comparativas publicadas con otros modelos. Estructuralmente, al
 
 ## Enlaces
 
-- [HuggingFace: agentic-ptb/sol-max-opusnode.hNA.stage2-recovery-interp_alpha_0p75](https://huggingface.co/agentic-ptb/sol-max-opusnode.hNA.stage2-recovery-interp_alpha_0p75)
+- [Hugging Face: agentic-ptb/sol-max-opusnode.hNA.stage2-recovery-interp_alpha_0p75](https://huggingface.co/agentic-ptb/sol-max-opusnode.hNA.stage2-recovery-interp_alpha_0p75)
 - [Modelo base: Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base)

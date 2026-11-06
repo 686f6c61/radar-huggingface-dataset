@@ -110,7 +110,7 @@ Las dos últimas filas se incluyen como referencias de categoria; sus datos conc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mnmly/vjepa2.1-vit-giant-384
+- Modelo en Hugging Face: https://huggingface.co/mnmly/vjepa2.1-vit-giant-384
 - Repositorio upstream de Meta FAIR: https://github.com/facebookresearch/vjepa2
 - Código upstream en el commit referenciado: https://github.com/facebookresearch/vjepa2/tree/204698b45b3712590f06245fbfba32d3be539812
 - Checkpoint original: https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitg_384.pt

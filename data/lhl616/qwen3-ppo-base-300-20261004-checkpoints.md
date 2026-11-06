@@ -83,6 +83,6 @@ La comparación directa con alternativas de la misma categoría (checkpoints de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lhl616/qwen3-ppo-base-300-20261004-checkpoints
+- Hugging Face: https://huggingface.co/lhl616/qwen3-ppo-base-300-20261004-checkpoints
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

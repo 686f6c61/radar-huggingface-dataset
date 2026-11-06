@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NimbusLM-8B-Instruct es un modelo de lenguaje de 8.000 millones de parametros, ajustado por instrucciones, perteneciente a la familia NimbusLM-8B. Lo publica el usuario TUaxhuiax en HuggingFace bajo la organizacion NimbusLM, aunque el checkpoint concreto aparece alojado en un repositorio de terceros con un identificador compuesto que incluye referencias a "filesystem-terminal-huggingface". El modelo se presenta como una version instruction-tuned orientada a razonamiento multi-paso fiable, respuesta a preguntas con fundamento (grounded QA) y generacion de texto largo mas segura.
+NimbusLM-8B-Instruct es un modelo de lenguaje de 8.000 millones de parametros, ajustado por instrucciones, perteneciente a la familia NimbusLM-8B. Lo publica el usuario TUaxhuiax en Hugging Face bajo la organizacion NimbusLM, aunque el checkpoint concreto aparece alojado en un repositorio de terceros con un identificador compuesto que incluye referencias a "filesystem-terminal-huggingface". El modelo se presenta como una version instruction-tuned orientada a razonamiento multi-paso fiable, respuesta a preguntas con fundamento (grounded QA) y generacion de texto largo mas segura.
 
 La relevancia de esta ficha es limitada pero informativa: se trata de un checkpoint de 8B con ventana de contexto de 8192 tokens, entrenado con datos de instruccion curados, trazas de razonamiento sinteticas y optimizacion de preferencias. La model card reporta resultados en una suite de evaluacion interna (nimbus-eval-suite-v3) que muestra mejoras consistentes frente a la release anterior de la familia, aunque sin benchmarks publicos estandar verificables.
 
@@ -79,7 +79,7 @@ No se han publicado resultados en benchmarks publicos estandar en la informacion
 - VRAM estimada en cuantizacion de 8 bits: alrededor de 8-9 GB de pesos; en 4 bits, alrededor de 4,5-5 GB de pesos (aunque no se publican pesos cuantizados oficiales).
 - GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 6000 Ada para despliegue en bfloat16 con contexto completo. En consumer, una RTX 4090 (24 GB) puede alojar el modelo en bf16 con margen ajustado; RTX 3090 (24 GB) tambien es viable.
 - Cabe en GPU consumer: si, en RTX 4090/3090 para bf16 con contexto moderado, y en GPUs de 8-12 GB si se cuantiza a 8 o 4 bits (requiere conversion propia, no se ofrecen pesos GGUF).
-- Opciones de despliegue: transformers (referencia oficial), vLLM, TGI y llama.cpp/Ollama tras conversion a GGUF. El tag "endpoints_compatible" sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: transformers (referencia oficial), vLLM, TGI y llama.cpp/Ollama tras conversion a GGUF. El tag "endpoints_compatible" sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -88,10 +88,10 @@ No se dispone de datos publicos verificables de este checkpoint frente a alterna
 
 | Modelo | Parametros | Contexto | Benchmarks publicos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NimbusLM-8B-Instruct | 8B | 8192 | solo suite interna | NimbusLM Community | HuggingFace (repo de terceros) |
-| Llama 3.1 8B Instruct | 8B | 128k | MMLU, HumanEval, GSM8K publicos | Llama 3.1 Community | HuggingFace, amplia adopcion |
-| Mistral 7B Instruct | 7B | 32k | publicos | Apache 2.0 | HuggingFace |
-| Qwen2.5 7B Instruct | 7B | 128k | publicos | Apache 2.0 (segun variante) | HuggingFace |
+| NimbusLM-8B-Instruct | 8B | 8192 | solo suite interna | NimbusLM Community | Hugging Face (repo de terceros) |
+| Llama 3.1 8B Instruct | 8B | 128k | MMLU, HumanEval, GSM8K publicos | Llama 3.1 Community | Hugging Face, amplia adopcion |
+| Mistral 7B Instruct | 7B | 32k | publicos | Apache 2.0 | Hugging Face |
+| Qwen2.5 7B Instruct | 7B | 128k | publicos | Apache 2.0 (segun variante) | Hugging Face |
 
 La comparacion cuantitativa con estas alternativas no esta disponible en la informacion proporcionada.
 
@@ -111,7 +111,7 @@ La comparacion cuantitativa con estas alternativas no esta disponible en la info
 
 ## Enlaces
 
-- HuggingFace (checkpoint): https://huggingface.co/TUaxhuiax/nimbuslm-8b-instruct-filesystem-terminal-huggingface-2589-9f4b2e
+- Hugging Face (checkpoint): https://huggingface.co/TUaxhuiax/nimbuslm-8b-instruct-filesystem-terminal-huggingface-2589-9f4b2e
 - Model family hub (referenciado en la model card): https://huggingface.co/NimbusLM
 - Licencia (referenciada en la model card): LICENSE dentro del repositorio
 - Contacto indicado en la model card: nimbus-research@example.org

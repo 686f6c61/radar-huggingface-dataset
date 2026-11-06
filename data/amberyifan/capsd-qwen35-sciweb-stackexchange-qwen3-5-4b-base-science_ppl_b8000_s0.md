@@ -4,7 +4,7 @@
 
 El modelo `AmberYifan/capsd-qwen35-sciweb-stackexchange-Qwen3.5-4B-Base-science_ppl_b8000_s0` es un ajuste fino (fine-tuning) de la arquitectura base `Qwen/Qwen3.5-4B-Base`, desarrollado por el usuario AmberYifan. Se trata de un modelo de lenguaje de 4.539.265.536 parámetros (~4.5 mil millones), entrenado con la librería Transformers y el framework Llama-Factory mediante un ajuste completo (full fine-tuning). El nombre del dataset de entrenamiento sugiere que se ha especializado en dominios científicos y de Stack Exchange, aunque la model card no proporciona detalles sobre el contenido o la composición de los datos. Su relevancia radica en ser un ejemplo de adaptación de la serie Qwen3.5 a tareas específicas de razonamiento científico y técnico, aunque carece de documentación pública que respalde sus capacidades o rendimiento.
 
-La ficha se ha generado a partir de la información disponible en HuggingFace y los resultados de búsqueda web. Dado que la model card es muy escueta y no incluye benchmarks ni descripciones detalladas, gran parte de los apartados se marcan como "no disponible" para evitar especulaciones.
+La ficha se ha generado a partir de la información disponible en Hugging Face y los resultados de búsqueda web. Dado que la model card es muy escueta y no incluye benchmarks ni descripciones detalladas, gran parte de los apartados se marcan como "no disponible" para evitar especulaciones.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se dispone de datos de rendimiento comparativos. Como referencia arquitectón
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AmberYifan/capsd-qwen35-sciweb-stackexchange-Qwen3.5-4B-Base-science_ppl_b8000_s0)
+- [Modelo en Hugging Face](https://huggingface.co/AmberYifan/capsd-qwen35-sciweb-stackexchange-Qwen3.5-4B-Base-science_ppl_b8000_s0)
 - [Modelo base Qwen3.5-4B-Base (referencia)](https://huggingface.co/Qwen/Qwen3.5-4B-Base) (no verificado directamente, pero indicado en la model card)
 - [Página de Qwen3.5 en Ollama](https://ollama.com/library/qwen3.5:4b) (información general de la serie)
 - [Repositorio GitHub de Qwen3.5](https://github.com/algtrd24/qwen3.5) (información general de la serie)

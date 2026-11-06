@@ -69,5 +69,5 @@ No se dispone de datos concretos para comparar este modelo con alternativas de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Beinsezii/granite-4.1-3b-base-Q8_0-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Beinsezii/granite-4.1-3b-base-Q8_0-GGUF
 - Modelo base original: https://huggingface.co/ibm-granite/granite-4.1-3b-base

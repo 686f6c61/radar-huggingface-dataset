@@ -73,7 +73,7 @@ No disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/dl_binder_design
+- Hugging Face: https://huggingface.co/OneScience-Group/dl_binder_design
 - GitHub original: https://github.com/nrbennet/dl_binder_design
 - Paper: https://www.nature.com/articles/s41467-023-38328-5
 - DeepWiki: https://deepwiki.com/nrbennet/dl_binder_design

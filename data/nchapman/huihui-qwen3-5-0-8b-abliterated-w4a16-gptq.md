@@ -84,7 +84,7 @@ La comparación directa con otros modelos sub-1B multimodales no puede establece
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nchapman/Huihui-Qwen3.5-0.8B-abliterated-W4A16-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/nchapman/Huihui-Qwen3.5-0.8B-abliterated-W4A16-GPTQ
 - Modelo base (abliterated): https://huggingface.co/huihui-ai/Huihui-Qwen3.5-0.8B-abliterated
 - Dataset de calibración: https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-SFT-Data
 - Filas de calibración fijadas: https://huggingface.co/datasets/nchapman/warp-3090-quant-lab-frozen-data

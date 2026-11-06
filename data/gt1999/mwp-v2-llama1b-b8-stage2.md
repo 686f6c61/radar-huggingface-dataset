@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 - VRAM estimada: al tratarse de un modelo de 1B con LoRA, la inferencia puede ejecutarse con menos de 4 GB de VRAM si se usa cuantización (p.ej., GGUF de 4 bits). Sin embargo, no se proporcionan datos oficiales.
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM (GTX 1650, RTX 3060, etc.) podría ser suficiente para inferencia básica. Para entrenamiento o fine-tuning adicional se necesitaría más memoria.
-- Opciones de despliegue: al no especificarse formatos GGUF ni soporte de frameworks, se puede asumir que funciona con librerías estándar de HuggingFace (transformers, peft) y potencialmente con vLLM o llama.cpp si se convierte el adaptador.
+- Opciones de despliegue: al no especificarse formatos GGUF ni soporte de frameworks, se puede asumir que funciona con librerías estándar de Hugging Face (transformers, peft) y potencialmente con vLLM o llama.cpp si se convierte el adaptador.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -66,6 +66,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GT1999/mwp-v2-llama1b-b8-stage2
+- Modelo en Hugging Face: https://huggingface.co/GT1999/mwp-v2-llama1b-b8-stage2
 - Modelo hermano (siguiente etapa): https://huggingface.co/GT1999/mwp-v2-llama1b-b9-stage1
 - Búsqueda de modelos con tag mwp-v2: https://huggingface.co/models?other=mwp-v2

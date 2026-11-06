@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreMoGe3l-depth | no disponible (ViT-L/14) | no aplica | Profundidad + geometría monocular | MIT | HuggingFace (LibreYOLO) |
-| Ruicheng/moge-3-vitl (original) | no disponible (ViT-L/14) | no aplica | Profundidad + geometría monocular | MIT | HuggingFace (Microsoft) |
-| Otros estimadores monofocales (p. ej. Depth Anything, MiDaS) | no disponible en esta ficha | no aplica | Profundidad monocular | variable | HuggingFace |
+| LibreMoGe3l-depth | no disponible (ViT-L/14) | no aplica | Profundidad + geometría monocular | MIT | Hugging Face (LibreYOLO) |
+| Ruicheng/moge-3-vitl (original) | no disponible (ViT-L/14) | no aplica | Profundidad + geometría monocular | MIT | Hugging Face (Microsoft) |
+| Otros estimadores monofocales (p. ej. Depth Anything, MiDaS) | no disponible en esta ficha | no aplica | Profundidad monocular | variable | Hugging Face |
 
 La comparación cuantitativa con alternativas no está disponible en la información proporcionada; la diferencia principal de esta variante frente al original es el formato de checkpoint y la integración con LibreYOLO, no el rendimiento del modelo.
 
@@ -80,7 +80,7 @@ La comparación cuantitativa con alternativas no está disponible en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibreYOLO/LibreMoGe3l-depth
+- Modelo en Hugging Face: https://huggingface.co/LibreYOLO/LibreMoGe3l-depth
 - Modelo original MoGe-3 ViT-L/14: https://huggingface.co/Ruicheng/moge-3-vitl
 - Repositorio de código MoGe (Microsoft): https://github.com/microsoft/MoGe/tree/74fbce054ebed49800de42d0ad0e83495065719a
 - Repositorio de LibreYOLO: https://github.com/LibreYOLO/libreyolo

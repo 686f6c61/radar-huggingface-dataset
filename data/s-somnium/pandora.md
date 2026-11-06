@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`S-Somnium/Pandora` es un repositorio alojado en HuggingFace por el usuario S-Somnium bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card pública contiene únicamente el bloque de metadatos con la licencia y ningún texto descriptivo: no se declara qué tipo de modelo es, qué problema resuelve, qué arquitectura emplea ni sobre qué datos se ha entrenado.
+`S-Somnium/Pandora` es un repositorio alojado en Hugging Face por el usuario S-Somnium bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card pública contiene únicamente el bloque de metadatos con la licencia y ningún texto descriptivo: no se declara qué tipo de modelo es, qué problema resuelve, qué arquitectura emplea ni sobre qué datos se ha entrenado.
 
 El repositorio no tiene pipeline declarado, no especifica idiomas soportados, no registra descargas ni "likes" y fue creado y actualizado en la misma marca temporal (27 de octubre de 2026), lo que sugiere una publicación inicial sin documentación asociada. No se ha localizado ningún anuncio, paper, blog o demo que aporte información técnica adicional.
 
@@ -67,7 +67,7 @@ No disponible. Sin datos de arquitectura, tamaño, contexto o rendimiento no es 
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| S-Somnium/Pandora | no disponible | no disponible | apache-2.0 | no disponible | repositorio en HuggingFace, sin documentación |
+| S-Somnium/Pandora | no disponible | no disponible | apache-2.0 | no disponible | repositorio en Hugging Face, sin documentación |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,7 +84,7 @@ No disponible. Sin datos de arquitectura, tamaño, contexto o rendimiento no es 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/S-Somnium/Pandora
+- Hugging Face: https://huggingface.co/S-Somnium/Pandora
 - Resultados de busqueda web revisados, ninguno relacionado con el modelo:
   - https://en.wikipedia.org/wiki/S (artículo sobre la letra S; no relevante)
   - https://fr.wikipedia.org/wiki/S_(lettre) (artículo sobre la letra S; no relevante)

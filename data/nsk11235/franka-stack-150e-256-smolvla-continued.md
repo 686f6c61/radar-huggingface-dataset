@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nsk11235/franka-stack-150e-256-smolvla-continued` es una política robótica de tipo vision-language-action (VLA) publicada por el usuario nsk11235 en HuggingFace. Se trata de un ajuste fino (finetune) del modelo base `lerobot/smolvla_base`, entrenado sobre el dataset `nsk11235/franka-stack-50e-256` y gestionado íntegramente con la librería LeRobot de HuggingFace. Su pipeline declarado es `robotics`, por lo que no es un modelo de lenguaje conversacional, sino una política que traduce observaciones visuales (y potencialmente instrucciones en lenguaje natural) en acciones de control para un brazo robótico.
+El modelo `nsk11235/franka-stack-150e-256-smolvla-continued` es una política robótica de tipo vision-language-action (VLA) publicada por el usuario nsk11235 en Hugging Face. Se trata de un ajuste fino (finetune) del modelo base `lerobot/smolvla_base`, entrenado sobre el dataset `nsk11235/franka-stack-50e-256` y gestionado íntegramente con la librería LeRobot de Hugging Face. Su pipeline declarado es `robotics`, por lo que no es un modelo de lenguaje conversacional, sino una política que traduce observaciones visuales (y potencialmente instrucciones en lenguaje natural) en acciones de control para un brazo robótico.
 
 SmolVLA, la familia a la que pertenece, se presenta en su model card como un modelo VLA compacto y eficiente que logra un rendimiento competitivo con un coste computacional reducido y puede desplegarse en hardware de consumo. El modelo pesa 450.046.176 parámetros (aproximadamente 450 millones), un orden de magnitud muy inferior al de los VLA de gran escala, y se distribuye bajo licencia Apache 2.0. El repositorio ocupa 5,3 GB y los pesos están en formato safetensors.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nsk11235/franka-stack-150e-256-smolvla-continued` | 450.046.176 | No disponible | No publicado | Apache 2.0 | HuggingFace |
-| `lerobot/smolvla_base` | No disponible (misma familia, aproximadamente 450 M) | No disponible | Reportado en el paper arXiv:2506.01844 | Apache 2.0 | HuggingFace |
-| Políticas ACT de LeRobot | No disponible | No disponible | No disponible | Apache 2.0 | HuggingFace / GitHub |
-| Diffusion Policy (LeRobot) | No disponible | No disponible | No disponible | Apache 2.0 | HuggingFace / GitHub |
+| `nsk11235/franka-stack-150e-256-smolvla-continued` | 450.046.176 | No disponible | No publicado | Apache 2.0 | Hugging Face |
+| `lerobot/smolvla_base` | No disponible (misma familia, aproximadamente 450 M) | No disponible | Reportado en el paper arXiv:2506.01844 | Apache 2.0 | Hugging Face |
+| Políticas ACT de LeRobot | No disponible | No disponible | No disponible | Apache 2.0 | Hugging Face / GitHub |
+| Diffusion Policy (LeRobot) | No disponible | No disponible | No disponible | Apache 2.0 | Hugging Face / GitHub |
 
 La comparación rigurosa con otras políticas VLA de gran escala (por ejemplo, modelos tipo pi0) no es posible con la información disponible, ya que no se han publicado cifras de rendimiento de este checkpoint.
 
@@ -85,7 +85,7 @@ La comparación rigurosa con otras políticas VLA de gran escala (por ejemplo, m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nsk11235/franka-stack-150e-256-smolvla-continued
+- Modelo en Hugging Face: https://huggingface.co/nsk11235/franka-stack-150e-256-smolvla-continued
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/nsk11235/franka-stack-50e-256
 - Paper de SmolVLA (arXiv:2506.01844): https://huggingface.co/papers/2506.01844

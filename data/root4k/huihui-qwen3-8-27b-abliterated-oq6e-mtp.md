@@ -64,4 +64,4 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/root4k/Huihui-Qwen3.8-27B-abliterated-oQ6e-mtp
+- Hugging Face: https://huggingface.co/root4k/Huihui-Qwen3.8-27B-abliterated-oQ6e-mtp

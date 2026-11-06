@@ -75,7 +75,7 @@ No se dispone de comparativas con otros modelos de codificación de tamaño simi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ayourtch/ARustyCoder93
+- Modelo en Hugging Face: https://huggingface.co/ayourtch/ARustyCoder93
 - Repositorio del proyecto (receta, scripts, parche, checksums): https://github.com/apchat-agent/arustycoder
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Fuente GGUF cuantizada: https://huggingface.co/antirez/deepseek-v4-gguf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `karouiFares/instructprotein-opt125m-grpo` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `facebook/opt-125m`. Lo desarrolla Karoui Mohamed Fares, usuario de HuggingFace con el identificador `karouiFares`. Se trata de un modelo de generación de texto que ha sido afinado mediante GRPO (Group Relative Policy Optimization), un método de aprendizaje por refuerzo introducido en el artículo DeepSeekMath, y entrenado con la librería TRL de HuggingFace.
+El modelo `karouiFares/instructprotein-opt125m-grpo` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `facebook/opt-125m`. Lo desarrolla Karoui Mohamed Fares, usuario de Hugging Face con el identificador `karouiFares`. Se trata de un modelo de generación de texto que ha sido afinado mediante GRPO (Group Relative Policy Optimization), un método de aprendizaje por refuerzo introducido en el artículo DeepSeekMath, y entrenado con la librería TRL de Hugging Face.
 
 El modelo resuelve el problema de alinear un modelo de lenguaje pequeño mediante refuerzo, sirviendo como ejemplo práctico de aplicación de GRPO sobre una arquitectura ligera. Su relevancia radica en que permite estudiar técnicas de RL (reinforcement learning) en modelos de baja escala, con un coste computacional reducido. La arquitectura subyacente es un transformer decoder-only, el tamaño del modelo base es de 125 millones de parámetros, y la longitud de contexto no se especifica en la información disponible.
 
@@ -37,7 +37,7 @@ No se menciona el uso de RLHF ni DPO en la información disponible. Tampoco se e
 - Investigacion en metodos de RL: el modelo sirve como banco de pruebas para experimentar con GRPO y otras tecnicas de aprendizaje por refuerzo en modelos pequenos, gracias a su bajo coste computacional.
 - Prototipado de asistentes conversacionales ligeros: su tamano reducido permite ejecutarlo en entornos con recursos limitados, como portatiles o servidores modestos, para validar flujos de dialogo.
 - Fine-tuning adicional: al ser un adaptador LoRA, puede servir como punto de partida para ajustes posteriores en tareas especificas, aprovechando la infraestructura de PEFT.
-- Educacion sobre PEFT y TRL: el modelo es un ejemplo didactico de como aplicar LoRA y GRPO con las librerias de HuggingFace, util para cursos o talleres.
+- Educacion sobre PEFT y TRL: el modelo es un ejemplo didactico de como aplicar LoRA y GRPO con las librerias de Hugging Face, util para cursos o talleres.
 - Evaluacion de tecnicas de alineacion: permite comparar el comportamiento de un modelo pequeno antes y despues del entrenamiento con GRPO, aunque no hay benchmarks publicados que respalden esta comparacion.
 - Experimentos de generacion de texto en CPU o GPU de consumo: al requerir poca memoria, puede desplegarse en hardware domestico para pruebas de concepto.
 
@@ -68,7 +68,7 @@ No se han identificado modelos comparables en la informacion disponible. El mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/karouiFares/instructprotein-opt125m-grpo
+- Modelo en Hugging Face: https://huggingface.co/karouiFares/instructprotein-opt125m-grpo
 - Perfil del autor: https://huggingface.co/karouiFares
 - Paper de DeepSeekMath (GRPO): https://huggingface.co/papers/2402.03300
 - Repositorio de TRL: https://github.com/huggingface/trl

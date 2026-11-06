@@ -79,7 +79,7 @@ No se dispone de información sobre otros repositorios de artefactos comparables
 
 | Elemento | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este repositorio (adaptadores LoRA SeqKD sobre Qwen2.5-7B) | ~7B (base) + LoRA r=16 | No disponible (heredado del base) | apache-2.0 | Público en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| Este repositorio (adaptadores LoRA SeqKD sobre Qwen2.5-7B) | ~7B (base) + LoRA r=16 | No disponible (heredado del base) | apache-2.0 | Público en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | Qwen/Qwen2.5-7B (modelo base, variante base no Instruct) | ~7B | No disponible en este repositorio | No indicada aquí | Modelo base público, referenciado como `base_model` |
 | Qwen/Qwen2.5-72B-Instruct (profesor defendido) | ~72B | No disponible en este repositorio | No indicada aquí | Referenciado en la model card como profesor del experimento |
 
@@ -100,7 +100,7 @@ Repositorio complementario del mismo autor con resultados del ataque QEDKS sobre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kzhao5/mea-seqkd-defenses
+- Modelo en Hugging Face: https://huggingface.co/kzhao5/mea-seqkd-defenses
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B
 - Profesor empleado en el ataque: https://huggingface.co/Qwen/Qwen2.5-72B-Instruct
 - Repositorio complementario con resultados del ataque QEDKS: URL truncada en la model card, no disponible

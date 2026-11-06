@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`khizar01/gemma-2b-swe-agent-lora` es un adaptador LoRA publicado en HuggingFace por el usuario khizar01. Por el nombre se deduce que se trata de un ajuste fino (LoRA) sobre el modelo base Gemma de 2.000 millones de parametros de Google, orientado a tareas de agente de ingenieria de software (SWE agent), es decir, resolucion automatica de incidencias en repositorios de codigo. El repositorio contiene pesos en formato safetensors y es compatible con la libreria transformers.
+`khizar01/gemma-2b-swe-agent-lora` es un adaptador LoRA publicado en Hugging Face por el usuario khizar01. Por el nombre se deduce que se trata de un ajuste fino (LoRA) sobre el modelo base Gemma de 2.000 millones de parametros de Google, orientado a tareas de agente de ingenieria de software (SWE agent), es decir, resolucion automatica de incidencias en repositorios de codigo. El repositorio contiene pesos en formato safetensors y es compatible con la libreria transformers.
 
-La model card es la plantilla autogenerada por HuggingFace y no aporta informacion sustantiva: no se documentan datos de entrenamiento, hiperparametros, dataset utilizado, resultados de evaluacion ni procedencia exacta del modelo base. El autor no ha publicado descargas ni likes en el momento de la consulta, y el repositorio se creo y actualizo en la misma fecha (4 de noviembre de 2026), lo que sugiere una publicacion reciente y sin validacion comunitaria.
+La model card es la plantilla autogenerada por Hugging Face y no aporta informacion sustantiva: no se documentan datos de entrenamiento, hiperparametros, dataset utilizado, resultados de evaluacion ni procedencia exacta del modelo base. El autor no ha publicado descargas ni likes en el momento de la consulta, y el repositorio se creo y actualizo en la misma fecha (4 de noviembre de 2026), lo que sugiere una publicacion reciente y sin validacion comunitaria.
 
 Por tanto, esta ficha se apoya en las caracteristicas conocidas de la familia Gemma 2B (arquitectura, contexto, tokenizador) y en la inferencia del nombre del repositorio, marcando explicitamente como "no disponible" todo aquello que el autor no ha documentado. Es relevante ahora porque los agentes de codigo de bajo coste son un area activa, pero debe tratarse con cautela: no hay evidencia publica de su calidad.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| khizar01/gemma-2b-swe-agent-lora | 2B (base) + LoRA | 8.192 (base) | Agente SWE (inferido del nombre) | no disponible | HuggingFace, sin descargas |
+| khizar01/gemma-2b-swe-agent-lora | 2B (base) + LoRA | 8.192 (base) | Agente SWE (inferido del nombre) | no disponible | Hugging Face, sin descargas |
 | Gemma 2B (Google) | 2B | 8.192 | Modelo generalista | Gemma Terms of Use | Amplia, con soporte oficial |
 | Qwen2.5-Coder-1.5B | 1,5B | 32.768 | Codigo | Apache 2.0 | Amplia, con variantes GGUF |
 | CodeGemma-2B | 2B | 8.192 | Codigo | Gemma Terms of Use | Amplia |
@@ -83,7 +83,7 @@ La comparativa se basa en caracteristicas publicas de los modelos alternativos; 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/khizar01/gemma-2b-swe-agent-lora
+- Repositorio en Hugging Face: https://huggingface.co/khizar01/gemma-2b-swe-agent-lora
 - Modelo base Gemma 2B (Google): https://huggingface.co/google/gemma-2b
 - Paper de Gemma: https://arxiv.org/abs/2403.08295
 - Calculadora de impacto ambiental citada en la model card: https://mlco2.github.io/impact

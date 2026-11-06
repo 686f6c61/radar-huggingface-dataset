@@ -69,11 +69,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| eng-100mb-after-wc-zipf-newlex-eng-ckpt500_seed10_seed10 | 124,8 M | no disponible | no disponible | HuggingFace, safetensors, 0 descargas |
+| eng-100mb-after-wc-zipf-newlex-eng-ckpt500_seed10_seed10 | 124,8 M | no disponible | no disponible | Hugging Face, safetensors, 0 descargas |
 | GPT-2 small | 124 M | 1024 tokens | licencia MIT modificada de OpenAI | Ampliamente disponible |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible |
 | GPT-2 medium | 355 M | 1024 tokens | licencia MIT modificada de OpenAI | Ampliamente disponible |
-| Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | Disponible en HuggingFace |
+| Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | Disponible en Hugging Face |
 
 Los datos de contexto y licencia de los modelos de la columna comparativa corresponden a sus especificaciones publicas habituales; no se dispone de resultados de benchmarks comparativos entre ellos y este modelo en la informacion proporcionada. La diferencia principal no es tecnica sino de proposito: los modelos citados son checkpoints de proposito general con documentacion completa, mientras que este es un artefacto de investigacion sin evaluacion publicada.
 
@@ -92,7 +92,7 @@ Los datos de contexto y licencia de los modelos de la columna comparativa corres
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-100mb-after-wc-zipf-newlex-eng-ckpt500_seed10_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-100mb-after-wc-zipf-newlex-eng-ckpt500_seed10_seed10
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed10
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/81zdcelk
 - Repositorio de TRL: https://github.com/huggingface/trl

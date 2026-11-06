@@ -4,7 +4,7 @@
 
 fd-gemma-4-12b-self_st-s1 es un checkpoint de ajuste fino (fine-tune) publicado por el usuario joshycodes sobre el modelo base google/gemma-4-12B, según se deduce del identificador y de la etiqueta de arquitectura gemma4_unified que acompaña al repositorio. El repositorio no incluye model card: no se documentan el dataset de ajuste, el procedimiento de entrenamiento, la licencia ni los idiomas soportados, por lo que toda la informacion tecnica disponible procede del modelo base.
 
-El modelo tiene 11.959.730.224 parametros (aproximadamente 12B), almacenados en precision BF16, y ocupa 24,0 GB en el repositorio de HuggingFace. El modelo base Gemma 4 12B es, segun la documentacion de Google, un modelo multimodal sin encoder externo (encoder-free) capaz de ingerir audio y video de forma nativa, con una ventana de contexto de hasta 256K tokens y soporte de mas de 140 idiomas.
+El modelo tiene 11.959.730.224 parametros (aproximadamente 12B), almacenados en precision BF16, y ocupa 24,0 GB en el repositorio de Hugging Face. El modelo base Gemma 4 12B es, segun la documentacion de Google, un modelo multimodal sin encoder externo (encoder-free) capaz de ingerir audio y video de forma nativa, con una ventana de contexto de hasta 256K tokens y soporte de mas de 140 idiomas.
 
 Su relevancia es limitada y experimental: se trata de un checkpoint de la comunidad con 17 descargas y 0 likes, sin evaluaciones publicadas ni licencia declarada. Resulta util unicamente como punto de partida para inspeccionar o reproducir un ajuste fino sobre Gemma 4 12B, nunca como modelo listo para produccion sin una validacion previa.
 
@@ -73,9 +73,9 @@ El repositorio no incluye evaluaciones propias, y los resultados del modelo base
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | joshycodes/fd-gemma-4-12b-self_st-s1 | 11,96B | no disponible (base: hasta 256K) | gemma4_unified, densa multimodal | no disponible | 17 descargas, sin model card |
-| google/gemma-4-12B | aproximadamente 12B | hasta 256K tokens | densa multimodal sin encoder | no disponible en la informacion recopilada (consultar condiciones de Google) | repositorio oficial en HuggingFace |
-| Gemma 4 26B A4B | 26B totales; activos no disponibles (la nomenclatura A4B sugiere unos 4B) | hasta 256K tokens | mezcla de expertos (MoE) | no disponible en la informacion recopilada | repositorio oficial en HuggingFace |
-| Gemma 4 E4B | no disponible | hasta 256K tokens | no disponible | no disponible en la informacion recopilada | repositorio oficial en HuggingFace |
+| google/gemma-4-12B | aproximadamente 12B | hasta 256K tokens | densa multimodal sin encoder | no disponible en la informacion recopilada (consultar condiciones de Google) | repositorio oficial en Hugging Face |
+| Gemma 4 26B A4B | 26B totales; activos no disponibles (la nomenclatura A4B sugiere unos 4B) | hasta 256K tokens | mezcla de expertos (MoE) | no disponible en la informacion recopilada | repositorio oficial en Hugging Face |
+| Gemma 4 E4B | no disponible | hasta 256K tokens | no disponible | no disponible en la informacion recopilada | repositorio oficial en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes, por lo que la comparacion se limita a parametros, contexto declarado, arquitectura y disponibilidad.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes, por lo 
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/joshycodes/fd-gemma-4-12b-self_st-s1
+- Ficha en Hugging Face: https://huggingface.co/joshycodes/fd-gemma-4-12b-self_st-s1
 - Repositorio hermano (fd-gemma-4-12b-self_st): https://huggingface.co/joshycodes/fd-gemma-4-12b-self_st
 - Modelo base google/gemma-4-12B: https://huggingface.co/google/gemma-4-12B
 - Pagina de la familia Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

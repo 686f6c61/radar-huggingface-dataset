@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Neo TTS Studio 1.2 es una distribucion de herramientas nativas para sintesis de voz y entrenamiento de modelos TTS, publicada por el usuario HirCoir en HuggingFace. El repositorio no contiene pesos de un modelo de voz, sino cuatro paquetes ejecutables completos (Linux x64 y Windows x64, en variante CPU y CUDA) que incluyen un motor de entrenamiento e inferencia escrito en C++17, herramientas de exportacion y un panel de Axolotl. El tamano total del repositorio es de 6,9 GB.
+Neo TTS Studio 1.2 es una distribucion de herramientas nativas para sintesis de voz y entrenamiento de modelos TTS, publicada por el usuario HirCoir en Hugging Face. El repositorio no contiene pesos de un modelo de voz, sino cuatro paquetes ejecutables completos (Linux x64 y Windows x64, en variante CPU y CUDA) que incluyen un motor de entrenamiento e inferencia escrito en C++17, herramientas de exportacion y un panel de Axolotl. El tamano total del repositorio es de 6,9 GB.
 
 La relevancia del paquete es practica: permite entrenar y ejecutar TTS en local, sin servicios en la nube, tanto en CPU como en GPU NVIDIA, y ofrece un cuaderno de Google Colab que descarga y verifica automaticamente el paquete Linux. El autor advierte de que la edicion CUDA para Windows esta compilada con LibTorch CUDA 12.8 pero no se ha probado todavia en un equipo Windows con GPU NVIDIA, y de que la edicion actual es monohablante.
 
@@ -76,7 +76,7 @@ No se dispone de valores de MMLU, HumanEval, GSM8K ni de metricas habituales en 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Neo TTS Studio 1.2 (HirCoir) | no disponible | no disponible | no disponible | no disponible | Binarios Linux/Windows x64 en HuggingFace, 0 descargas |
+| Neo TTS Studio 1.2 (HirCoir) | no disponible | no disponible | no disponible | no disponible | Binarios Linux/Windows x64 en Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No es posible ofrecer una comparativa rigurosa: no se conocen la arquitectura, el tamano, la licencia ni los resultados del modelo subyacente, y el repositorio analizado es una distribucion de binarios y herramientas mas que un modelo publicado con pesos y especificaciones. Cualquier comparacion con otros sistemas TTS (por ejemplo, toolkits de sintesis con voces preentrenadas) seria especulativa y no se incluye.
@@ -97,7 +97,7 @@ No es posible ofrecer una comparativa rigurosa: no se conocen la arquitectura, e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HirCoir/neo-tts-studio-native-1-2
+- Repositorio en Hugging Face: https://huggingface.co/HirCoir/neo-tts-studio-native-1-2
 - Cuaderno de Colab incluido en el repositorio: `NEO_TTS_STUDIO_COLAB.ipynb`
 - Sumas de verificacion: `SHA256SUMS.txt` (en el listado de archivos del repositorio)
 - Paquetes de descarga: `neo-tts-studio-linux-x64-cpu.tar.gz`, `neo-tts-studio-linux-x64-cuda.tar.gz`, `neo-tts-studio-windows-x64-cpu.zip`, `neo-tts-studio-windows-x64-cuda.zip`

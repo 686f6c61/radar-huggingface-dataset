@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto/prompt | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SDXL-Base-v1.0-SDNQ-8bit-dynamic-hadamard256 | 2.567.812.804 | 77 tokens por encoder CLIP | safetensors INT8 (diffusers) | openrail++ | HuggingFace, 17 descargas |
-| stabilityai/stable-diffusion-xl-base-1.0 | no disponible en la informacion | 77 tokens por encoder CLIP | safetensors fp16 (diffusers) | openrail++ | HuggingFace, modelo de referencia |
+| SDXL-Base-v1.0-SDNQ-8bit-dynamic-hadamard256 | 2.567.812.804 | 77 tokens por encoder CLIP | safetensors INT8 (diffusers) | openrail++ | Hugging Face, 17 descargas |
+| stabilityai/stable-diffusion-xl-base-1.0 | no disponible en la informacion | 77 tokens por encoder CLIP | safetensors fp16 (diffusers) | openrail++ | Hugging Face, modelo de referencia |
 | Otras variantes cuantizadas de SDXL | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo (FID, CLIP score) entre esta variante y el modelo base, por lo que la comparacion se limita a parametros, formato y licencia.
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparativo (FID, CLIP score) entre esta v
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SamuelTallet/SDXL-Base-v1.0-SDNQ-8bit-dynamic-hadamard256
+- Hugging Face: https://huggingface.co/SamuelTallet/SDXL-Base-v1.0-SDNQ-8bit-dynamic-hadamard256
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Repositorio SDNQ: https://github.com/Disty0/sdnq

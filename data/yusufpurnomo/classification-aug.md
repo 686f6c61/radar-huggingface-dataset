@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yusufpurnomo/classification-aug` es un repositorio de HuggingFace publicado por el usuario yusufpurnomo que contiene una implementación propia y mínima de una arquitectura PoolFormer orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un checkpoint con benchmarks.
+`yusufpurnomo/classification-aug` es un repositorio de Hugging Face publicado por el usuario yusufpurnomo que contiene una implementación propia y mínima de una arquitectura PoolFormer orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un checkpoint con benchmarks.
 
 El repositorio incluye cuatro artefactos principales: `finetune.py` (script con el modelo y el punto de entrada de entrenamiento/ejemplo), `config.json` (configuración de arquitectura generada), `training_args.json` (receta de experimento por defecto, con optimizador Novograd y scheduler de tipo step) y `model.safetensors` (inicialización). El tamaño del repo es de 0,0 GB y el recuento de parámetros declarado en el archivo safetensors es de 24.832, una cifra extraordinariamente baja para una variante "base" de PoolFormer, coherente con su naturaleza de esqueleto de inicialización en lugar de modelo funcional.
 
@@ -25,7 +25,7 @@ Su relevancia es, por tanto, la de un punto de partida reproducible para experim
 | Activacion | gelu tanh |
 | Normalizacion | rmsnorm |
 | Optimizador por defecto | Novograd con scheduler de tipo step |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tamano del repositorio | 0,0 GB |
 
 ## Arquitectura y entrenamiento
@@ -54,7 +54,7 @@ No hay información sobre datos de entrenamiento: no se declara número de token
 - Reproducción de experimentos académicos: al ser una implementación propia con configuración explícita, permite fijar arquitectura y semillas y comparar contra una línea base de capacidad equivalente.
 - Estudio de variantes de MetaFormer/PoolFormer: modificar los componentes declarados (grouped query, tensor fusion, gelu tanh, RMSNorm) para medir su efecto en una tarea de clasificación concreta.
 - Prototipado en entornos sin GPU: con 24.832 parámetros, el modelo cabe holgadamente en CPU y memoria RAM convencional, lo que lo hace adecuado para docencia o pruebas locales.
-- Verificación de integración con HuggingFace Hub: comprobar flujos de descarga, versionado y carga de safetensors con un repositorio de tamaño mínimo.
+- Verificación de integración con Hugging Face Hub: comprobar flujos de descarga, versionado y carga de safetensors con un repositorio de tamaño mínimo.
 - Base para adaptadores personalizados: servir como banco de pruebas para escribir el adaptador de carga que la model card indica como necesario para las APIs automáticas.
 
 ## Benchmarks y rendimiento
@@ -76,7 +76,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de modelos
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yusufpurnomo/classification-aug | 24.832 | no aplica | sin benchmarks publicados | MIT | repositorio HuggingFace, 0 descargas, 0 likes |
+| yusufpurnomo/classification-aug | 24.832 | no aplica | sin benchmarks publicados | MIT | repositorio Hugging Face, 0 descargas, 0 likes |
 | PoolFormer (variantes originales de Meta/Sea AI Lab) | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Otras alternativas de la misma categoria | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -88,14 +88,14 @@ No se dispone de datos de benchmarks ni de especificaciones completas de modelos
 - Sin benchmarks ni métricas publicadas: cualquier afirmación de rendimiento sería infundada.
 - Limitaciones de idioma: no aplica; el modelo no procesa lenguaje natural de forma declarada.
 - Licencia MIT: permite uso comercial y modificación, pero la model card advierte de que deben revisarse por separado los términos de los datos de origen cuando se use con datasets externos.
-- Compatibilidad: al ser una implementación personalizada, las APIs de carga automática de HuggingFace requieren un adaptador explícito; no se garantiza el funcionamiento con herramientas estándar de despliegue.
+- Compatibilidad: al ser una implementación personalizada, las APIs de carga automática de Hugging Face requieren un adaptador explícito; no se garantiza el funcionamiento con herramientas estándar de despliegue.
 - Cifra de parámetros anómala: 24.832 parámetros es un orden de magnitud muy inferior al esperable en una variante "base" de PoolFormer, lo que refuerza la interpretación de esqueleto de inicialización y no de modelo completo.
 - Metadatos anómalos: la fecha de creación registrada (2026-09-17) es posterior a la fecha actual, lo que sugiere un artefacto de generación automática del repositorio.
 - Ausencia de tracción: 0 descargas y 0 likes, sin evidencia de uso o validación por terceros.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yusufpurnomo/classification-aug
+- Repositorio en Hugging Face: https://huggingface.co/yusufpurnomo/classification-aug
 - Paper de referencia de la arquitectura PoolFormer / MetaFormer: no disponible en la información proporcionada.
 - Repositorio de código, demo o blog del autor: no disponible en la información proporcionada.
 - Nota sobre la búsqueda web: los resultados devueltos por la búsqueda corresponden a reseñas de un bróker de CFD llamado Axi y no guardan relación con este modelo; no se ha podido extraer de ellos ningún enlace relevante.

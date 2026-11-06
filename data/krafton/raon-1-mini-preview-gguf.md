@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Raon-1-mini-preview-gguf es la distribucion en formato GGUF del modelo Raon-1-mini-preview, publicado por KRAFTON en HuggingFace. Se trata de un modelo de generacion de texto de tipo conversacional con 28.783.218.602 parametros totales (aproximadamente 28,8 mil millones), empaquetado para su ejecucion con llama.cpp y con la etiqueta imatrix, que indica que las cuantizaciones se han generado usando una matriz de importancia.
+Raon-1-mini-preview-gguf es la distribucion en formato GGUF del modelo Raon-1-mini-preview, publicado por KRAFTON en Hugging Face. Se trata de un modelo de generacion de texto de tipo conversacional con 28.783.218.602 parametros totales (aproximadamente 28,8 mil millones), empaquetado para su ejecucion con llama.cpp y con la etiqueta imatrix, que indica que las cuantizaciones se han generado usando una matriz de importancia.
 
-El modelo se distribuye bajo licencia Apache-2.0, aunque el repositorio esta marcado como restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos. El repositorio ocupa 229,7 GB, un tamano coherente con un catalogo de varias cuantizaciones GGUF de distinto nivel para un modelo de esta escala. La ficha no especifica longitud de contexto, idiomas soportados ni detalles de arquitectura o entrenamiento.
+El modelo se distribuye bajo licencia Apache-2.0, aunque el repositorio esta marcado como restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos. El repositorio ocupa 229,7 GB, un tamano coherente con un catalogo de varias cuantizaciones GGUF de distinto nivel para un modelo de esta escala. La ficha no especifica longitud de contexto, idiomas soportados ni detalles de arquitectura o entrenamiento.
 
 La relevancia actual del modelo es limitada y provisional: la etiqueta "preview" indica una version no final, el numero de descargas registrado es de 9 y el de likes de 20, y no se han publicado resultados de benchmarks en la informacion disponible. Su interes practico reside en que permite probar un modelo de ~28,8B en infraestructura local o en entornos compatibles con llama.cpp sin necesidad de convertir pesos desde safetensors.
 
@@ -31,7 +31,7 @@ Tampoco se documentan el volumen de tokens de entrenamiento, la composicion del 
 
 - Generacion de texto conversacional: la etiqueta "conversational" y la pipeline text-generation indican uso previsto en dialogos multi-turno.
 - Inferencia local mediante llama.cpp: el formato GGUF y la etiqueta "llama.cpp" permiten ejecucion en CPU, GPU o configuraciones hibridas.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que el modelo puede servirse detras de una API compatible con el esquema de endpoints habitual de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que el modelo puede servirse detras de una API compatible con el esquema de endpoints habitual de Hugging Face.
 - Cuantizacion optimizada con imatrix: permite seleccionar niveles de compresion con menor degradacion respecto a cuantizaciones ingenuas.
 - Capacidades de razonamiento, codigo, matematicas, vision, audio o tool calling: no disponibles; no se documentan en la informacion proporcionada.
 - Soporte multilingue: no disponible; no se lista ningun idioma.
@@ -43,7 +43,7 @@ Tampoco se documentan el volumen de tokens de entrenamiento, la composicion del 
 - Evaluacion interna antes de adoptar la version final: el caracter "preview" lo hace adecuado para pruebas comparativas de calidad percibida frente a otros modelos de ~28B, no para despliegues en produccion.
 - Procesamiento por lotes de texto en infraestructura propia: un modelo denso de 28,8B cuantizado a 4 bits ocupa aproximadamente 16-17 GB, de modo que puede ejecutarse en servidores sin aceleradores de gama alta para tareas de resumen o reescritura por lotes.
 - Despliegue en entornos con requisitos de soberania del dato: al poder ejecutarse completamente on-premise, encaja en casos donde el texto no puede salir de la infraestructura de la organizacion, siempre que se acepten las condiciones de acceso del repositorio.
-- Servicio detras de una API compatible: gracias a la etiqueta "endpoints_compatible", puede integrarse como backend en una plataforma de inferencia que ya hable el esquema de endpoints de HuggingFace, sustituyendo al proveedor sin reescribir el cliente.
+- Servicio detras de una API compatible: gracias a la etiqueta "endpoints_compatible", puede integrarse como backend en una plataforma de inferencia que ya hable el esquema de endpoints de Hugging Face, sustituyendo al proveedor sin reescribir el cliente.
 - Experimentacion academica con cuantizacion: el uso de imatrix permite estudiar la degradacion de calidad entre niveles de cuantizacion sobre un mismo modelo de 28,8B, un caso habitual en trabajos de eficiencia de inferencia.
 - Base para ajuste fino ligero sobre GGUF: no recomendado como via principal, ya que el ecosistema de ajuste fino trabaja mejor con safetensors; solo tiene sentido si se parte del repositorio original.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia (calculada a partir de 28,78B parametros, no confirmada por el autor): ~57,6 GB en FP16/BF16; ~30,6 GB en 8 bits; ~16-17 GB en 4 bits; ~11-12 GB en 3 bits. A estas cifras hay que sumar el espacio de contexto y el overhead del runtime.
 - GPU recomendadas: A100 80 GB o H100 80 GB para FP16/BF16; A100 40 GB o L40S 48 GB para 8 bits; para 4 bits es suficiente una GPU de 24 GB.
 - Cabe en GPU de consumo: si, en RTX 3090, RTX 4090, RTX 5090 y modelos con 24 GB o mas, utilizando cuantizaciones de 4 bits y contextos moderados. En GPUs de 16 GB solo con cuantizaciones de 3 bits o parcialmente en CPU.
-- Opciones de despliegue: llama.cpp y sus derivados (Ollama, llama-cpp-python, LM Studio, KoboldCpp) son la via directa al ser un repositorio GGUF. vLLM y TGI no consumen GGUF de forma nativa, por lo que requeririan el repositorio en safetensors. Tambien es posible servirlo mediante una capa compatible con endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp y sus derivados (Ollama, llama-cpp-python, LM Studio, KoboldCpp) son la via directa al ser un repositorio GGUF. vLLM y TGI no consumen GGUF de forma nativa, por lo que requeririan el repositorio en safetensors. Tambien es posible servirlo mediante una capa compatible con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia por peticion.
 - Nota de almacenamiento: el repositorio completo ocupa 229,7 GB, por lo que conviene descargar unicamente el archivo de cuantizacion necesario en lugar de clonar el repositorio entero.
 
@@ -77,7 +77,7 @@ Para una comparacion rigurosa seria necesario disponer de los resultados de eval
 
 - Ausencia total de datos de evaluacion: no hay benchmarks, ni evaluaciones cualitativas, ni comparaciones con lineas base, lo que impide estimar su calidad real frente a alternativas de tamano similar.
 - Version "preview": el comportamiento, el tokenizador o la plantilla de chat pueden cambiar en la version final; no es una base estable para produccion.
-- Acceso restringido: aunque la licencia declarada es Apache-2.0, el repositorio exige aceptar condiciones en HuggingFace. Es necesario revisar esos terminos, ya que pueden imponer restricciones adicionales al uso comercial no cubiertas por la licencia.
+- Acceso restringido: aunque la licencia declarada es Apache-2.0, el repositorio exige aceptar condiciones en Hugging Face. Es necesario revisar esos terminos, ya que pueden imponer restricciones adicionales al uso comercial no cubiertas por la licencia.
 - Idiomas no documentados: se desconoce que lenguas estan soportadas y con que calidad; el castellano no esta confirmado.
 - Longitud de contexto desconocida: no se puede planificar un caso de uso con documentos largos ni estimar el coste de memoria del contexto.
 - Riesgo de alucinacion: inherente a cualquier modelo generativo de esta escala y no cuantificado en este caso por falta de evaluaciones.
@@ -88,5 +88,5 @@ Para una comparacion rigurosa seria necesario disponer de los resultados de eval
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KRAFTON/Raon-1-mini-preview-gguf
+- Hugging Face: https://huggingface.co/KRAFTON/Raon-1-mini-preview-gguf
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

@@ -76,6 +76,6 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-sft-td-mixed-lr-1e-5)
+- [Modelo en Hugging Face](https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-sft-td-mixed-lr-1e-5)
 - [Colección "NEW Cake Bake Olmo2-1B"](https://huggingface.co/collections/model-organisms-for-real/new-cake-bake-olmo2-1b) (relacionada, aunque no idéntica)
 - [Modelo hermano con variante `sdf`](https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-sft-sdf-mixed-lr-1e-5) (encontrado en la búsqueda web)

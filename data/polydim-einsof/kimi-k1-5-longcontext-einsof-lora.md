@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Kimi-k1.5-LongContext-Einsof-LoRA | LoRA sobre base de 16B totales (~3B activos) | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Adaptador de investigación, sin benchmarks |
-| moonshotai/Moonlight-16B-A3B (base) | 16B totales, ~3B activos | no disponible en esta ficha | no disponible en esta ficha | HuggingFace | Modelo base sobre el que se aplica el LoRA |
+| Kimi-k1.5-LongContext-Einsof-LoRA | LoRA sobre base de 16B totales (~3B activos) | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Adaptador de investigación, sin benchmarks |
+| moonshotai/Moonlight-16B-A3B (base) | 16B totales, ~3B activos | no disponible en esta ficha | no disponible en esta ficha | Hugging Face | Modelo base sobre el que se aplica el LoRA |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se dispone de información suficiente para una comparación rigurosa |
 
 ## Limitaciones y advertencias
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - Model card de carácter teórico: predominan descripciones matemáticas y afirmaciones no verificadas; no se detallan hiperparámetros, dataset exacto ni metodología de evaluación.
 - Corpus de entrenamiento muy restringido (1.736 teoremas de PostgreSQL 16): riesgo alto de sobreajuste y de degradación en tareas generales fuera de ese dominio.
 - Idiomas no especificados: no puede garantizarse soporte multilingüe ni calidad en castellano.
-- Cero descargas y cero likes en HuggingFace: sin validación por parte de la comunidad.
+- Cero descargas y cero likes en Hugging Face: sin validación por parte de la comunidad.
 - Dependencia de infraestructura propietaria (`PmtpShmBus`, `PMTP_SHM_VECTOR_DIRECT_NO_MCP_1D`): dificulta el despliegue en stacks estándar.
 - Licencia Apache 2.0: permite uso comercial del adaptador, pero conviene verificar la licencia del modelo base Moonlight-16B-A3B antes de producción.
 - Riesgo de alucinación: no evaluado; al ser un ajuste de dominio cerrado, la generalización fuera de él es incierta.
@@ -82,6 +82,6 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Polydim-Einsof/Kimi-k1.5-LongContext-Einsof-LoRA
+- Hugging Face del adaptador: https://huggingface.co/Polydim-Einsof/Kimi-k1.5-LongContext-Einsof-LoRA
 - Modelo base: https://huggingface.co/moonshotai/Moonlight-16B-A3B
 - Paper, blog, repositorio o demo del proyecto POLYDIM-EINSOF: no disponible en la información proporcionada.

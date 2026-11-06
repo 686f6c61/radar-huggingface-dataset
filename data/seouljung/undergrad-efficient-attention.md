@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `seouljung/undergrad-efficient-attention`, publicado en HuggingFace bajo licencia MIT, no contiene un modelo de lenguaje entrenado. Se trata de un conjunto estructurado de notas de investigación sobre mecanismos de atención eficiente, cuyo artefacto principal es un documento de texto (`review.md`). La model card del autor es explícita al respecto: no se reclaman mejoras en benchmarks, ablaciones completadas, código liberado ni checkpoint entrenado. El propio autor advierte que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales.
+El repositorio `seouljung/undergrad-efficient-attention`, publicado en Hugging Face bajo licencia MIT, no contiene un modelo de lenguaje entrenado. Se trata de un conjunto estructurado de notas de investigación sobre mecanismos de atención eficiente, cuyo artefacto principal es un documento de texto (`review.md`). La model card del autor es explícita al respecto: no se reclaman mejoras en benchmarks, ablaciones completadas, código liberado ni checkpoint entrenado. El propio autor advierte que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
-La relevancia de esta ficha es, por tanto, principalmente negativa y metodológica: sirve como ejemplo de repositorio de HuggingFace que aparece indexado con la etiqueta `transformer` y un archivo `safetensors` de 16.576 parámetros, pero que no es desplegable ni utilizable como modelo. Cualquier pipeline que lo seleccione automáticamente por tags o por licencia obtendrá un artefacto sin capacidad de inferencia útil. El recuento de parámetros, cuatro o cinco órdenes de magnitud por debajo del modelo de lenguaje más pequeño que resulta funcional, confirma que no se trata de un checkpoint de producción ni de investigación entrenado.
+La relevancia de esta ficha es, por tanto, principalmente negativa y metodológica: sirve como ejemplo de repositorio de Hugging Face que aparece indexado con la etiqueta `transformer` y un archivo `safetensors` de 16.576 parámetros, pero que no es desplegable ni utilizable como modelo. Cualquier pipeline que lo seleccione automáticamente por tags o por licencia obtendrá un artefacto sin capacidad de inferencia útil. El recuento de parámetros, cuatro o cinco órdenes de magnitud por debajo del modelo de lenguaje más pequeño que resulta funcional, confirma que no se trata de un checkpoint de producción ni de investigación entrenado.
 
 El contenido declarado cubre el alcance de la pregunta de investigación sobre atención eficiente, confundidores probables, una comparación propuesta con baselines emparejados, contexto de evaluación (Long Range Arena, ImageNet-1K, Flickr30k), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. Todo ello es material de partida para verificación, no evidencia de que el estudio se haya ejecutado. La búsqueda web asociada no devolvió ninguna fuente técnica relevante.
 
@@ -44,9 +44,9 @@ Tampoco existe informacion sobre datos de entrenamiento: no se declaran tokens p
 
 - Ninguno de los casos de uso habituales de un modelo de lenguaje es aplicable, porque no existe un modelo entrenado que pueda ejecutarse. Se enumeran a continuacion los usos realistas del repositorio tal como esta publicado:
 - Referencia metodologica para disenar un plan de evaluacion de mecanismos de atencion eficiente: el documento `review.md` propone comparaciones con baselines emparejados y senala confundidores, lo que puede servir como plantilla de diseno experimental antes de ejecutar los experimentos.
-- Plantilla de trazabilidad para notas de investigacion en HuggingFace: el repositorio separa explicitamente hipotesis de resultados y exige que, si se anaden resultados, incluyan versiones de dataset, comandos, semillas, hardware y logs en crudo.
+- Plantilla de trazabilidad para notas de investigacion en Hugging Face: el repositorio separa explicitamente hipotesis de resultados y exige que, si se anaden resultados, incluyan versiones de dataset, comandos, semillas, hardware y logs en crudo.
 - Punto de partida bibliografico: las referencias y datasets citados (Long Range Arena, ImageNet-1K, Flickr30k) orientan la verificacion de trabajos previos sobre atencion eficiente.
-- Caso de estudio de higiene de metadatos en HuggingFace: ilustra como un repositorio de notas puede quedar indexado con tags de modelo (`transformer`, `safetensors`) y requerir filtrado manual en cualquier pipeline de seleccion automatica.
+- Caso de estudio de higiene de metadatos en Hugging Face: ilustra como un repositorio de notas puede quedar indexado con tags de modelo (`transformer`, `safetensors`) y requerir filtrado manual en cualquier pipeline de seleccion automatica.
 - Auditoria de licencias: el uso de la licencia MIT sobre documentacion puede revisarse como ejemplo de aplicacion de licencia de software a contenido no ejecutable, con la advertencia del autor de que los terminos de los datos de origen se revisan por separado.
 - Formacion: util como ejemplo didactico de la diferencia entre un repositorio de investigacion y un modelo desplegable, apropiado para revisar criterios de inclusion en catalogos de modelos.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es comparable con modelos de lenguaje de la misma categoria porque no es un modelo entrenado. Tampoco se han identificado en la busqueda web alternativas equivalentes de "notas de investigacion sobre atencion eficiente publicadas como repositorio de modelo en HuggingFace" que permitan una comparacion con parametros, contexto, rendimiento o licencia.
+No disponible. Este repositorio no es comparable con modelos de lenguaje de la misma categoria porque no es un modelo entrenado. Tampoco se han identificado en la busqueda web alternativas equivalentes de "notas de investigacion sobre atencion eficiente publicadas como repositorio de modelo en Hugging Face" que permitan una comparacion con parametros, contexto, rendimiento o licencia.
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje de la m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/seouljung/undergrad-efficient-attention
+- Hugging Face: https://huggingface.co/seouljung/undergrad-efficient-attention
 - Repositorio, artefacto principal: `review.md` (referenciado en la model card; no se ha verificado su contenido mas alla de la descripcion del autor)
 - Repositorio, documentacion: `README.md`
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web no devolvio ninguna fuente tecnica relevante.

@@ -21,7 +21,7 @@ El modelo está diseñado para competir con fronteras propietarias como Claude O
 
 ## Arquitectura y entrenamiento
 
-Ornith-1.5-397B emplea una arquitectura de mezcla de expertos (MoE) derivada de la familia Qwen3.5, aunque los detalles concretos sobre el número de expertos, la proporción de parámetros activos y el mecanismo de enrutamiento no se han publicado en la información disponible. El modelo está orientado a tareas de texto e imagen-texto, según los tags de HuggingFace, lo que sugiere una capacidad multimodal incipiente, aunque no se detallan los componentes de visión.
+Ornith-1.5-397B emplea una arquitectura de mezcla de expertos (MoE) derivada de la familia Qwen3.5, aunque los detalles concretos sobre el número de expertos, la proporción de parámetros activos y el mecanismo de enrutamiento no se han publicado en la información disponible. El modelo está orientado a tareas de texto e imagen-texto, según los tags de Hugging Face, lo que sugiere una capacidad multimodal incipiente, aunque no se detallan los componentes de visión.
 
 El entrenamiento se basa en un bucle de auto-mejora de extremo a extremo que amplía el enfoque de Ornith-1.0. En esta versión, el sistema optimiza conjuntamente la generación de tareas, la construcción de andamiajes (scaffolds) y la generación de soluciones (rollouts). El modelo genera nuevas tareas de entrenamiento de forma continua, descubre estrategias efectivas para resolverlas y mejora su política mediante aprendizaje por refuerzo. No se han publicado datos sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de técnicas como RLHF o DPO.
 
@@ -30,7 +30,7 @@ El entrenamiento se basa en un bucle de auto-mejora de extremo a extremo que amp
 - Generación de código y resolución de problemas de programación complejos, con soporte para múltiples lenguajes.
 - Razonamiento agéntico multi-paso: puede planificar, ejecutar comandos en terminal y resolver tareas de ingeniería de software de forma autónoma.
 - Manejo de contextos largos y conversaciones multi-turno, aunque la longitud exacta de la ventana de contexto no se ha especificado.
-- Soporte de tool calling y function calling, según los tags de HuggingFace (endpoints_compatible).
+- Soporte de tool calling y function calling, según los tags de Hugging Face (endpoints_compatible).
 - Capacidad multimodal limitada: el tag image-text-to-text indica que puede procesar entradas de imagen y texto, aunque no se detallan los formatos ni la calidad.
 - Generación de texto conversacional y asistencia en tareas de razonamiento matemático y lógico, aunque no se aportan benchmarks específicos para estas áreas.
 
@@ -90,7 +90,7 @@ Ornith-1.5-397B supera a DeepSeek-V4-Flash-0731 y GLM-5.2 en los benchmarks de c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-397B
+- Modelo en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-397B
 - Colección Ornith-1.5: https://huggingface.co/collections/ornith-ai/ornith-15
 - Blog de Ornith AI sobre Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Web principal de Ornith AI: https://ornith.ai/

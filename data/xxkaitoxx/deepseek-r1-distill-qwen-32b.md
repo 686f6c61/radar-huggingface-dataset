@@ -97,11 +97,11 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/XxKaitoxX/DeepSeek-R1-Distill-Qwen-32B
+- Repositorio en Hugging Face: https://huggingface.co/XxKaitoxX/DeepSeek-R1-Distill-Qwen-32B
 - Paper DeepSeek-R1 (arXiv:2501.12948): https://arxiv.org/abs/2501.12948
 - PDF del paper: https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf
 - Repositorio GitHub de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
 - Licencia en GitHub: https://github.com/deepseek-ai/DeepSeek-R1/blob/main/LICENSE
 - Web oficial de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organizacion DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai

@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (step 002) | 4,02 B | 32.768 (heredado) | Apache-2.0 + aviso "research use only" | HuggingFace, uso restringido a investigación |
-| Qwen3-4B-Instruct-2507 (base) | 4,02 B | 32.768 | Apache-2.0 | HuggingFace, uso general |
-| Llama-3.2-3B-Instruct | 3,2 B | 128.000 | Llama 3.2 Community License | HuggingFace, uso comercial con restricciones |
-| Phi-3.5-mini-instruct | 3,8 B | 128.000 | MIT | HuggingFace, uso comercial |
+| Este checkpoint (step 002) | 4,02 B | 32.768 (heredado) | Apache-2.0 + aviso "research use only" | Hugging Face, uso restringido a investigación |
+| Qwen3-4B-Instruct-2507 (base) | 4,02 B | 32.768 | Apache-2.0 | Hugging Face, uso general |
+| Llama-3.2-3B-Instruct | 3,2 B | 128.000 | Llama 3.2 Community License | Hugging Face, uso comercial con restricciones |
+| Phi-3.5-mini-instruct | 3,8 B | 128.000 | MIT | Hugging Face, uso comercial |
 
 No se dispone de datos de rendimiento comparativos para este checkpoint; la comparación se limita a especificaciones y licencias.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativos para este checkpoint; la comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-002
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-002
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Checkpoint relacionado (static, step 036): https://free2aitools.com/model/hyu-nlp-eval/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-036
 - Variante OnlineRubrics, step 000: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-000

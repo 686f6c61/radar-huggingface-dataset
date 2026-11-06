@@ -2,7 +2,7 @@
 
 ## Resumen
 
-shabieh2/cluster_muse_0910 es un ajuste fino publicado en HuggingFace por el usuario shabieh2, derivado del modelo base unsloth/muse-glimmer-30b-unsloth-bnb-4bit. Se distribuye bajo licencia Apache 2.0, esta etiquetado para generacion de texto y solo declara ingles como idioma soportado. El repositorio ocupa 3,4 GB y contiene pesos en formato safetensors, ademas de metadatos de compatibilidad con Text Generation Inference y con el ecosistema Unsloth/TRL.
+shabieh2/cluster_muse_0910 es un ajuste fino publicado en Hugging Face por el usuario shabieh2, derivado del modelo base unsloth/muse-glimmer-30b-unsloth-bnb-4bit. Se distribuye bajo licencia Apache 2.0, esta etiquetado para generacion de texto y solo declara ingles como idioma soportado. El repositorio ocupa 3,4 GB y contiene pesos en formato safetensors, ademas de metadatos de compatibilidad con Text Generation Inference y con el ecosistema Unsloth/TRL.
 
 El modelo no cuenta con model card descriptiva: el README se limita a indicar el autor, la licencia, el modelo base y que el entrenamiento se realizo con Unsloth. No hay informacion publica sobre el dataset de ajuste, el numero de tokens de entrenamiento, la composicion de los datos ni la metodologia (SFT, DPO u otra). Tampoco se han publicado resultados de evaluacion.
 
@@ -90,7 +90,7 @@ No se han identificado en la informacion proporcionada modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shabieh2/cluster_muse_0910
+- Hugging Face: https://huggingface.co/shabieh2/cluster_muse_0910
 - Modelo base: https://huggingface.co/unsloth/muse-glimmer-30b-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - Pappers, blogs, demos o repositorios adicionales: no disponibles.

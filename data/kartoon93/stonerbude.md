@@ -2,7 +2,7 @@
 
 ## Resumen
 
-StonerBudE es un modelo publicado en HuggingFace por el usuario Kartoon93 bajo licencia MIT. La model card asociada está prácticamente vacía: únicamente declara la licencia, sin ninguna descripción del modelo, su arquitectura, su propósito ni sus datos de entrenamiento. No hay información sobre el pipeline, los idiomas soportados, el tamaño, la longitud de contexto ni el formato de los pesos.
+StonerBudE es un modelo publicado en Hugging Face por el usuario Kartoon93 bajo licencia MIT. La model card asociada está prácticamente vacía: únicamente declara la licencia, sin ninguna descripción del modelo, su arquitectura, su propósito ni sus datos de entrenamiento. No hay información sobre el pipeline, los idiomas soportados, el tamaño, la longitud de contexto ni el formato de los pesos.
 
 El repositorio no presenta descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y tanto la fecha de creación como la de actualización son idénticas (2026-10-26), lo que sugiere una publicación reciente y sin mantenimiento posterior documentado. No se han localizado papers, blogs, repositorios ni demos asociados al modelo en la información disponible.
 
@@ -41,7 +41,7 @@ Tampoco hay datos sobre el corpus de entrenamiento (número de tokens, composici
 - Evaluación exploratoria en investigación: el modelo podría descargarse y probarse en un entorno controlado para determinar empíricamente sus capacidades, dado que la documentación no las describe. Requiere validación manual de calidad y comportamiento.
 - Prototipado interno sin requisitos de soporte: al estar bajo licencia MIT, puede integrarse en experimentos internos siempre que el equipo asuma la ausencia total de garantías y documentación.
 - Pruebas de integración de pipelines de inferencia: puede servir para verificar el funcionamiento de herramientas como vLLM, llama.cpp u Ollama una vez identificado el formato real de los pesos, que actualmente se desconoce.
-- Estudio de modelos publicados sin model card: útil como caso de análisis sobre prácticas de publicación en HuggingFace y sobre los riesgos de adoptar modelos sin documentación.
+- Estudio de modelos publicados sin model card: útil como caso de análisis sobre prácticas de publicación en Hugging Face y sobre los riesgos de adoptar modelos sin documentación.
 - Base para fine-tuning experimental: solo si un equipo verifica primero la arquitectura y el formato de pesos; no se recomienda como punto de partida sin esa comprobación previa.
 - Docencia sobre evaluación de modelos: puede emplearse como ejemplo de por qué la ausencia de benchmarks y de model card impide una adopción responsable en producción.
 
@@ -73,4 +73,4 @@ No disponible. No es posible identificar modelos comparables al desconocerse la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kartoon93/StonerBudE
+- Hugging Face: https://huggingface.co/Kartoon93/StonerBudE

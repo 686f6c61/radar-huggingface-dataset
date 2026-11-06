@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Los m
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Circuit atlas networks (jc1122) | No disponible (MLP de una capa sobre base congelada) | No disponible | Tareas sinteticas de interpretabilidad | CC BY 4.0 | HuggingFace |
+| Circuit atlas networks (jc1122) | No disponible (MLP de una capa sobre base congelada) | No disponible | Tareas sinteticas de interpretabilidad | CC BY 4.0 | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre modelos comparables de la misma categoria en la documentacion proporcionada.
@@ -79,5 +79,5 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jc1122/circuit-atlas-nets
+- Hugging Face: https://huggingface.co/jc1122/circuit-atlas-nets
 - Repositorio del atlas: https://github.com/jc1122/mechanistic-interpretability-circuit-atlas

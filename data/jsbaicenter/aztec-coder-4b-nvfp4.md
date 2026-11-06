@@ -82,9 +82,9 @@ No se han publicado en la informacion disponible datos de benchmarks de modelos 
 
 | Modelo | Parametros | Contexto | Generalization test | Live-60 | IFEval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Aztec-Coder-4B-NVFP4 (W4A4) | 3,07B | 131.072 tokens (config. de ejemplo) | 38,0%* | 15,0% | 86,37 | apache-2.0 | HuggingFace |
-| Aztec-Coder-4B (BF16) | 3,07B | no disponible | 82,9% | 21,7% | 87,21 | apache-2.0 (segun base) | HuggingFace, misma organizacion |
-| Qwen3.5-4B (modelo base) | ~4B (no confirmado) | no disponible | 10,1% | 15,0% | 84,66 | no disponible | HuggingFace |
+| Aztec-Coder-4B-NVFP4 (W4A4) | 3,07B | 131.072 tokens (config. de ejemplo) | 38,0%* | 15,0% | 86,37 | apache-2.0 | Hugging Face |
+| Aztec-Coder-4B (BF16) | 3,07B | no disponible | 82,9% | 21,7% | 87,21 | apache-2.0 (segun base) | Hugging Face, misma organizacion |
+| Qwen3.5-4B (modelo base) | ~4B (no confirmado) | no disponible | 10,1% | 15,0% | 84,66 | no disponible | Hugging Face |
 | Aztec-Coder-4B W4A16 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | anunciada, pendiente de publicacion |
 
 Alternativas externas de codificacion agentica de 4B con datos publicos comparables: no disponible.
@@ -104,7 +104,7 @@ Alternativas externas de codificacion agentica de 4B con datos publicos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jsbaicenter/Aztec-Coder-4B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/jsbaicenter/Aztec-Coder-4B-NVFP4
 - Release BF16 y variantes relacionadas (resultados de busqueda): https://huggingface.co/jsbaicenter/JSBAI-Coder-4B y https://huggingface.co/jsbaicenter/JSBAI-Coder-4B-NVFP4
 - Organizacion en GitHub: https://github.com/JSBAICenter
 - Dataset de post-entrenamiento empleado: https://huggingface.co/datasets/nvidia/Nemotron-Post-Training-Dataset-v2

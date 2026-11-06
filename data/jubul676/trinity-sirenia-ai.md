@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Trinity-Sirenia-AI es un ajuste fino del modelo Gemma 3 270M en su variante instructa, publicado por el usuario jubul676 en HuggingFace. Se trata de un modelo decoder-only de 270 millones de parámetros perteneciente a la familia gemma3_text de Google, reentrenado a partir de unsloth/gemma-3-270m-it con la librería Unsloth y el stack de TRL. El autor no documenta el conjunto de datos, el método de ajuste (LoRA, QLoRA o ajuste completo) ni el objetivo concreto del entrenamiento, más allá de indicar que se entrenó "2x más rápido" con Unsloth. El repositorio ocupa 0,2 GB y no acumula descargas ni interacciones en el momento de redactar esta ficha.
+Trinity-Sirenia-AI es un ajuste fino del modelo Gemma 3 270M en su variante instructa, publicado por el usuario jubul676 en Hugging Face. Se trata de un modelo decoder-only de 270 millones de parámetros perteneciente a la familia gemma3_text de Google, reentrenado a partir de unsloth/gemma-3-270m-it con la librería Unsloth y el stack de TRL. El autor no documenta el conjunto de datos, el método de ajuste (LoRA, QLoRA o ajuste completo) ni el objetivo concreto del entrenamiento, más allá de indicar que se entrenó "2x más rápido" con Unsloth. El repositorio ocupa 0,2 GB y no acumula descargas ni interacciones en el momento de redactar esta ficha.
 
 La relevancia de un modelo de este tamaño reside en el despliegue en entornos con recursos muy limitados: CPU de portátil, dispositivos móviles, Raspberry Pi o incluso navegador, donde un modelo de miles de millones de parámetros no es viable por VRAM y latencia. Un modelo de 270M permite inferencia local con huella de memoria inferior a 1 GB en precisión completa y por debajo de 200 MB en cuantización de 4 bits.
 
@@ -67,11 +67,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto (segun documentacion publica) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Trinity-Sirenia-AI (este modelo) | 270M | No confirmado en el repositorio; el base declara 32 768 tokens | Apache 2.0 declarada por el autor | HuggingFace, safetensors |
-| google/gemma-3-270m-it (modelo base) | 270M | 32 768 tokens | Gemma Terms of Use | HuggingFace, safetensors, GGUF oficial |
-| Qwen/Qwen3-0.6B | 600M | 32 768 tokens | Apache 2.0 | HuggingFace, safetensors, GGUF |
-| HuggingFaceTB/SmolLM2-360M-Instruct | 360M | 8 192 tokens en la variante de contexto largo | Apache 2.0 | HuggingFace, safetensors, GGUF |
-| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1B | 2 048 tokens | Apache 2.0 | HuggingFace, safetensors, GGUF |
+| Trinity-Sirenia-AI (este modelo) | 270M | No confirmado en el repositorio; el base declara 32 768 tokens | Apache 2.0 declarada por el autor | Hugging Face, safetensors |
+| google/gemma-3-270m-it (modelo base) | 270M | 32 768 tokens | Gemma Terms of Use | Hugging Face, safetensors, GGUF oficial |
+| Qwen/Qwen3-0.6B | 600M | 32 768 tokens | Apache 2.0 | Hugging Face, safetensors, GGUF |
+| HuggingFaceTB/SmolLM2-360M-Instruct | 360M | 8 192 tokens en la variante de contexto largo | Apache 2.0 | Hugging Face, safetensors, GGUF |
+| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1B | 2 048 tokens | Apache 2.0 | Hugging Face, safetensors, GGUF |
 
 No hay datos de rendimiento comparado disponibles para Trinity-Sirenia-AI, por lo que la comparación se limita a parámetros, contexto declarado y licencia. Los valores de contexto y licencia de los modelos alternativos provienen de su documentación pública y no han sido verificados en esta ficha.
 
@@ -89,7 +89,7 @@ No hay datos de rendimiento comparado disponibles para Trinity-Sirenia-AI, por l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jubul676/Trinity-Sirenia-AI
+- Modelo en Hugging Face: https://huggingface.co/jubul676/Trinity-Sirenia-AI
 - Modelo base: https://huggingface.co/unsloth/gemma-3-270m-it
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Repositorio de TRL: https://github.com/huggingface/trl

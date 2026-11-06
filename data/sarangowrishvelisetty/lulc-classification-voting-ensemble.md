@@ -97,7 +97,7 @@ El modelo aquí descrito se sitúa en la gama de los clasificadores clásicos, c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sarangowrishvelisetty/lulc-classification-voting-ensemble
+- Repositorio Hugging Face: https://huggingface.co/sarangowrishvelisetty/lulc-classification-voting-ensemble
 - Artículo relacionado (Springer): "A Majority Voting Ensemble Approach for LULC Classification of Satellite Images" - https://link.springer.com/content/pdf/10.1007/s40031-023-00865-4.pdf
 - Capítulo de libro (Springer): "Multisource Satellite Data Merge and Ensemble Machine Learning for LULC" - https://link.springer.com/chapter/10.1007/978-981-96-1344-1_14
 - Artículo en ResearchGate (mismo título que el anterior) - https://www.researchgate.net/publication/367970501_A_Majority_Voting_Ensemble_Approach_for_LULC_Classification_of_Satellite_Images_httpsrdcubec4F06

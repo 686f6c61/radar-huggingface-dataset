@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Paradigma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Coperek/energy-transformer | 200M | no disponible | Energy-based (contrastivo) | Apache 2.0 | HuggingFace, 0 descargas |
+| Coperek/energy-transformer | 200M | no disponible | Energy-based (contrastivo) | Apache 2.0 | Hugging Face, 0 descargas |
 | GPT-2 small | 124M | 1024 | Autoregresivo | MIT | Ampliamente disponible |
 | Pythia-160M | 160M | 2048 | Autoregresivo | Apache 2.0 | Ampliamente disponible |
 | GPT-2 medium | 355M | 1024 | Autoregresivo | MIT | Ampliamente disponible |
@@ -75,12 +75,12 @@ La comparacion de rendimiento con estas alternativas no es posible porque no hay
 - Cero descargas y cero likes en el momento de la ficha: no hay validacion de la comunidad.
 - No se declaran idiomas soportados; el entrenamiento con fineweb-edu y openbookcorpus sugiere predominio del ingles, pero no esta confirmado.
 - Longitud de contexto no documentada, lo que impide planificar su uso en tareas de contexto largo.
-- La generacion requiere codigo especifico del autor (`generate_exact()`); no es compatible con pipelines estandar de HuggingFace `text-generation` sin adaptacion, pese a la etiqueta del pipeline.
+- La generacion requiere codigo especifico del autor (`generate_exact()`); no es compatible con pipelines estandar de Hugging Face `text-generation` sin adaptacion, pese a la etiqueta del pipeline.
 - Riesgo de alucinacion y sesgos: no evaluados; al entrenarse con datos web, puede reproducir sesgos presentes en fineweb-edu y openbookcorpus.
 - Licencia Apache 2.0 permite uso comercial, pero la falta de evaluacion hace desaconsejable su uso en produccion sin validacion previa.
 - El ejemplo de la model card muestra una continuacion con contenido sensible (esclavitud); conviene revisar las salidas en aplicaciones expuestas al usuario.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Coperek/energy-transformer
+- Hugging Face: https://huggingface.co/Coperek/energy-transformer
 - Repositorio del autor: https://github.com/Coperek/energy-based-language-modeling

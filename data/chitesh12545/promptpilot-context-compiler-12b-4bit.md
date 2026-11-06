@@ -74,7 +74,7 @@ No se dispone de datos suficientes para una comparativa rigurosa con modelos alt
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chitesh12545/PromptPilot-Context-Compiler-12B-4bit
+- Repositorio Hugging Face: https://huggingface.co/chitesh12545/PromptPilot-Context-Compiler-12B-4bit
 - Proyecto PromptPilot (GitHub): https://github.com/steyangdot/PromptPilot
 - Documentacion de PromptPilot: https://github.com/steyangdot/PromptPilot/tree/main/docs
 - Sitio web de PromptPilot: https://www.prompt-pilot.ai/

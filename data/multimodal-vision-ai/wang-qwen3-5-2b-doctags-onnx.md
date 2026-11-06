@@ -89,7 +89,7 @@ No disponible. La información proporcionada no incluye datos de modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/multimodal-vision-ai/Wang-Qwen3.5-2B-DocTags-ONNX
+- Modelo en Hugging Face: https://huggingface.co/multimodal-vision-ai/Wang-Qwen3.5-2B-DocTags-ONNX
 - Checkpoint base (PyTorch): https://huggingface.co/multimodal-vision-ai/Wang-Qwen3.5-2B-DocTags
 - Directorio de adaptadores en GitHub: https://github.com/multimodal-vision-ai/multimodal-document-ai-learning-center/tree/0c3e3481a4b469e8354e9c1cc5272bc53f317548/hf-spaces/mvai-doctags-webgpu/adapters/wang-qwen35-2b
 - Informe de validación en navegador: validation/browser_validation.json (dentro del repositorio)

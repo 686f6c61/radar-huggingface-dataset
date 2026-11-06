@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YOLO26m-landing-zones es un detector de objetos basado en la arquitectura YOLO26 en su variante "m" (medium), publicado por el usuario Has1tas en HuggingFace. El modelo está entrenado para localizar y clasificar zonas marcadas de aterrizaje para vehículos aéreos urbanos (flying cars) y ambulancias aéreas en imágenes aéreas, distinguiendo además entre zonas aptas y no aptas para el aterrizaje. Es un modelo específico para el dominio de la competición TEKNOFEST, no un detector genérico.
+YOLO26m-landing-zones es un detector de objetos basado en la arquitectura YOLO26 en su variante "m" (medium), publicado por el usuario Has1tas en Hugging Face. El modelo está entrenado para localizar y clasificar zonas marcadas de aterrizaje para vehículos aéreos urbanos (flying cars) y ambulancias aéreas en imágenes aéreas, distinguiendo además entre zonas aptas y no aptas para el aterrizaje. Es un modelo específico para el dominio de la competición TEKNOFEST, no un detector genérico.
 
 El modelo resuelve un problema acotado: la detección de cuatro clases de marcas de aterrizaje (UAI, UAP y sus variantes "unsuitable") en imágenes capturadas desde el aire. Se distribuye como un checkpoint de Ultralytics en formato `.pt`, con licencia AGPL-3.0, y se usa directamente mediante la librería `ultralytics` sin necesidad de código adicional. Su relevancia es limitada fuera del contexto de competición, dado que el dataset de entrenamiento es privado y no se ha publicado.
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks independientes (MMLU, HumanEval, GS
 
 | Modelo | Arquitectura | Clases | Contexto / entrada | Métricas publicadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Has1tas/yolo26m-landing-zones | YOLO26m | 4 (UAI, UAP y variantes unsuitable) | 640×640 | mAP50 0.8575, mAP50-95 0.48539 (split propio) | AGPL-3.0 | HuggingFace |
-| Has1tas/yolo26s-aerial-uav | YOLO26s | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Has1tas/yolo12s-aerial-vehicle-person | YOLO12s | vehículo y persona (aéreo) | no disponible | no disponible | no disponible | HuggingFace |
+| Has1tas/yolo26m-landing-zones | YOLO26m | 4 (UAI, UAP y variantes unsuitable) | 640×640 | mAP50 0.8575, mAP50-95 0.48539 (split propio) | AGPL-3.0 | Hugging Face |
+| Has1tas/yolo26s-aerial-uav | YOLO26s | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Has1tas/yolo12s-aerial-vehicle-person | YOLO12s | vehículo y persona (aéreo) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos suficientes para comparar con detectores aéreos de referencia de otros autores; la comparativa se limita a los checkpoints del mismo autor, de los que solo se conocen nombres y dominio de aplicación.
 
@@ -94,7 +94,7 @@ No se dispone de datos suficientes para comparar con detectores aéreos de refer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Has1tas/yolo26m-landing-zones
+- Modelo en Hugging Face: https://huggingface.co/Has1tas/yolo26m-landing-zones
 - Pesos del modelo: https://huggingface.co/Has1tas/yolo26m-landing-zones/blob/main/yolo26m-landing-zones.pt
 - Proyecto complementario en GitHub: https://github.com/hasbitas/aerial-detection-pipeline
 - Modelo relacionado yolo26s-aerial-uav: https://huggingface.co/Has1tas/yolo26s-aerial-uav

@@ -88,7 +88,7 @@ No se dispone de informacion comparativa con otros modelos de keypoint detection
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nrl-ai/anylearning-rfdetr-locust-keypoints
+- Modelo en Hugging Face: https://huggingface.co/nrl-ai/anylearning-rfdetr-locust-keypoints
 - Dataset de entrenamiento: https://huggingface.co/datasets/nrl-ai/anylearning-data
 - Repositorio AnyLearning OSS: https://github.com/nrl-ai/anylearning-oss
 - Repositorio RF-DETR (Roboflow): https://github.com/roboflow/rf-detr

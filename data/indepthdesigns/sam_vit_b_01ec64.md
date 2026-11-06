@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`InDepthDesigns/sam_vit_b_01ec64` es un repositorio de HuggingFace que redistribuye, en formato ONNX, un checkpoint de segmentación de imágenes. El nombre del fichero coincide con el del checkpoint oficial `sam_vit_b_01ec64` de Meta (Segment Anything Model, variante ViT-B), aunque el repositorio no incluye model card, pipeline declarado ni documentación alguna: su README se limita a la línea `license: apache-2.0`.
+`InDepthDesigns/sam_vit_b_01ec64` es un repositorio de Hugging Face que redistribuye, en formato ONNX, un checkpoint de segmentación de imágenes. El nombre del fichero coincide con el del checkpoint oficial `sam_vit_b_01ec64` de Meta (Segment Anything Model, variante ViT-B), aunque el repositorio no incluye model card, pipeline declarado ni documentación alguna: su README se limita a la línea `license: apache-2.0`.
 
 El repositorio es un artefacto de redistribución, no un modelo nuevo: 0,4 GB de pesos, 0 descargas y 0 "likes" en el momento de la consulta, publicado por el usuario InDepthDesigns con licencia Apache 2.0. No se documenta el proceso de conversión a ONNX, la procedencia exacta de los pesos ni si se ha aplicado cuantización.
 
@@ -94,7 +94,7 @@ Comparativa cualitativa: ViT-H ofrece mayor calidad de máscara a costa de un co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/InDepthDesigns/sam_vit_b_01ec64
+- Repositorio en Hugging Face: https://huggingface.co/InDepthDesigns/sam_vit_b_01ec64
 - Referencia del modelo base del que toma el nombre (no verificada en la búsqueda): repositorio oficial https://github.com/facebookresearch/segment-anything
 - Artículo del modelo base (no verificado en la búsqueda): "Segment Anything", arXiv:2304.02643
 - El resto de resultados de la búsqueda web no guardan relación con el modelo (hilos de Stack Overflow sobre Netflix, Zuul, Ribbon y Eureka).

@@ -90,6 +90,6 @@ La comparación directa con alternativas de la misma categoría es limitada porq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/Lattice-8-Aurum-OctaCap
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/Lattice-8-Aurum-OctaCap
 - Organización DuoNeural: https://huggingface.co/DuoNeural
 - Modelo profesor: https://huggingface.co/Qwen/Qwen3.5-4B

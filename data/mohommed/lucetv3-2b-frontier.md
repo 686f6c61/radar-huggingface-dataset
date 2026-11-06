@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LucetV3-2B-Frontier es un ajuste fino (fine-tune) del modelo LiquidAI/LFM3-1.7B, desarrollado por el usuario mohommed y publicado en HuggingFace bajo licencia Apache 2.0. Se presenta como un modelo orientado a razonamiento autónomo, generación de código y tareas de sistemas, apoyado en la arquitectura Tri-Hybrid de Liquid AI (convoluciones cortas con gating, atención de ventana deslizante y atención global GQA). El autor lo etiqueta como "uncensored" y le atribuye un protocolo anti-alucinación denominado R-Tuning, así como un modo de planificación estructurada llamado Next-Concept Modeling (NCM).
+LucetV3-2B-Frontier es un ajuste fino (fine-tune) del modelo LiquidAI/LFM3-1.7B, desarrollado por el usuario mohommed y publicado en Hugging Face bajo licencia Apache 2.0. Se presenta como un modelo orientado a razonamiento autónomo, generación de código y tareas de sistemas, apoyado en la arquitectura Tri-Hybrid de Liquid AI (convoluciones cortas con gating, atención de ventana deslizante y atención global GQA). El autor lo etiqueta como "uncensored" y le atribuye un protocolo anti-alucinación denominado R-Tuning, así como un modo de planificación estructurada llamado Next-Concept Modeling (NCM).
 
 El modelo tiene 1.728.801.536 parámetros reales según los pesos en safetensors (aproximadamente 1,7B), lo que lo sitúa en la categoría de modelos pequeños. El autor declara una longitud de contexto extendida de 524.288 tokens (512K) mediante RoPE con `rope_theta = 4.000.000`, aunque esta cifra procede únicamente de la model card y no está verificada de forma independiente. El repositorio ocupa 7,5 GB e incluye pesos en safetensors y GGUF.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LucetV3-2B-Frontier | 1,7B | 512K (declarado) | Apache 2.0 | HuggingFace (140 descargas) | Fine-tune de LFM3-1.7B con NCM y R-Tuning |
-| LiquidAI/LFM3-1.7B | 1,7B | no disponible en la informacion | no disponible en la informacion | HuggingFace (modelo base) | Arquitectura Tri-Hybrid original de Liquid AI |
-| Qwen2.5-1.5B | 1,5B | 32K (tipico) | Apache 2.0 | HuggingFace, ampliamente adoptado | Modelo pequeño generalista con buen soporte de tool calling |
-| SmolLM2-1.7B | 1,7B | 8K (tipico) | Apache 2.0 | HuggingFace | Modelo pequeño orientado a eficiencia |
+| LucetV3-2B-Frontier | 1,7B | 512K (declarado) | Apache 2.0 | Hugging Face (140 descargas) | Fine-tune de LFM3-1.7B con NCM y R-Tuning |
+| LiquidAI/LFM3-1.7B | 1,7B | no disponible en la informacion | no disponible en la informacion | Hugging Face (modelo base) | Arquitectura Tri-Hybrid original de Liquid AI |
+| Qwen2.5-1.5B | 1,5B | 32K (tipico) | Apache 2.0 | Hugging Face, ampliamente adoptado | Modelo pequeño generalista con buen soporte de tool calling |
+| SmolLM2-1.7B | 1,7B | 8K (tipico) | Apache 2.0 | Hugging Face | Modelo pequeño orientado a eficiencia |
 
 La comparación con Qwen2.5-1.5B y SmolLM2-1.7B se ofrece como referencia de categoría; no se dispone de datos de rendimiento comparativo del modelo evaluado.
 
@@ -85,6 +85,6 @@ La comparación con Qwen2.5-1.5B y SmolLM2-1.7B se ofrece como referencia de cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohommed/LucetV3-2B-Frontier
+- Modelo en Hugging Face: https://huggingface.co/mohommed/LucetV3-2B-Frontier
 - Repositorio GGUF del autor: https://huggingface.co/mohommed/Lucet-2B-Frontier-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B

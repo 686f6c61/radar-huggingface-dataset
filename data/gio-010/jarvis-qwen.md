@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JARVIS-Qwen es un modelo de lenguaje multimodal derivado de Qwen3.5-4B, convertido a formato GGUF mediante la herramienta Unsloth para su ejecución eficiente con llama.cpp. El autor, Gio-010, lo publica en HuggingFace como un modelo conversacional orientado a asistentes personales, con capacidad de procesamiento de visión (vision-language model). El repositorio incluye dos archivos: un GGUF cuantizado en Q4_K_M para el modelo principal y un proyector multimodal en F16 para el módulo de visión.
+JARVIS-Qwen es un modelo de lenguaje multimodal derivado de Qwen3.5-4B, convertido a formato GGUF mediante la herramienta Unsloth para su ejecución eficiente con llama.cpp. El autor, Gio-010, lo publica en Hugging Face como un modelo conversacional orientado a asistentes personales, con capacidad de procesamiento de visión (vision-language model). El repositorio incluye dos archivos: un GGUF cuantizado en Q4_K_M para el modelo principal y un proyector multimodal en F16 para el módulo de visión.
 
 El modelo tiene aproximadamente 4.330 millones de parámetros y un tamaño de repositorio de 3.5 GB, lo que lo sitúa en la gama de modelos pequeños y desplegables en hardware de consumo. Su relevancia radica en combinar capacidades multimodales con un formato optimizado para inferencia local, aunque la información pública disponible es muy limitada y no permite evaluar su rendimiento real.
 

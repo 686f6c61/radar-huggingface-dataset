@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos adaptadores. La co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_ministral-8b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_ministral-8b_seed42
 - Modelo base (OpenAI gpt-oss-20b): https://developers.openai.com/api/docs/models/gpt-oss-20b
 - Adaptador similar en FriendliAI (gpt-oss-120b as gpt-oss-20b): https://friendli.ai/models/dementor-research/dpo_oasst1_gpt-oss-120b_as_gpt-oss-20b_seed42
 - Adaptador similar en FriendliAI (gpt-oss-20b as qwen3.6-27b): https://friendli.ai/models/dementor-research/dpo_oasst1_gpt-oss-20b_as_qwen3.6-27b_seed42

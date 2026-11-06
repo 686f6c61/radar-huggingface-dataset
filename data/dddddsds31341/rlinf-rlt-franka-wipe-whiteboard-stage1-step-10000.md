@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RLinf-RLT-Franka-Wipe-Whiteboard-Stage1-Step-10000 es un checkpoint de pesos de evaluación para robótica manipulativa, publicado por el usuario dddddsds31341 en HuggingFace. No se trata de un modelo de lenguaje, sino de una política visomotora (vision-language-action, VLA) entrenada para una tarea concreta de manipulación robótica: limpiar una pizarra blanca con un brazo Franka. El checkpoint corresponde al paso de optimización 10.000 de un entrenamiento cuyo objetivo era de 20.000 pasos, dentro del experimento RLinf RLT Stage 1.
+RLinf-RLT-Franka-Wipe-Whiteboard-Stage1-Step-10000 es un checkpoint de pesos de evaluación para robótica manipulativa, publicado por el usuario dddddsds31341 en Hugging Face. No se trata de un modelo de lenguaje, sino de una política visomotora (vision-language-action, VLA) entrenada para una tarea concreta de manipulación robótica: limpiar una pizarra blanca con un brazo Franka. El checkpoint corresponde al paso de optimización 10.000 de un entrenamiento cuyo objetivo era de 20.000 pasos, dentro del experimento RLinf RLT Stage 1.
 
 El modelo parte de la inicialización pi05_base_openpi y aplica entrenamiento con refuerzo (RL) mediante el marco RLinf y la técnica RLT (con coeficiente alpha 1.0). El repositorio contiene el state dict completo de 727 tensores (14.521.903.498 bytes, aproximadamente 14,5 GB), junto con configuraciones de carga y entrenamiento, estadísticas de normalización específicas de la tarea y una instantánea del código de RLinf.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RLinf-RLT-Franka-Wipe-Whiteboard-Stage1-Step-10000 | No disponible (14,5 GB de pesos) | No aplica | Limpieza de pizarra con Franka | No disponible | HuggingFace, 0 descargas |
+| RLinf-RLT-Franka-Wipe-Whiteboard-Stage1-Step-10000 | No disponible (14,5 GB de pesos) | No aplica | Limpieza de pizarra con Franka | No disponible | Hugging Face, 0 descargas |
 | pi0.5 (pi05_base_openpi) | No disponible en la información | No aplica | Política VLA base | No disponible en la información | Referenciado como inicialización |
 | Otras colecciones Franka pi0.5 SFT del mismo autor | No disponible | No aplica | Tareas Franka con SFT | No disponible | Mencionadas en la model card |
 
@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dddddsds31341/RLinf-RLT-Franka-Wipe-Whiteboard-Stage1-Step-10000
+- Hugging Face: https://huggingface.co/dddddsds31341/RLinf-RLT-Franka-Wipe-Whiteboard-Stage1-Step-10000
 - W&B del run: https://wandb.ai/bofang/rlinf-rlt/runs/j6hmy1dr

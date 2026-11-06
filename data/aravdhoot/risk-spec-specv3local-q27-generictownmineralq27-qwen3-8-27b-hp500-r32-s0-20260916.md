@@ -102,7 +102,7 @@ La información disponible no permite comparar rendimiento, contexto ni parámet
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/aravdhoot/risk-spec-specv3local-q27-generictownmineralq27-qwen3.8-27b-hp500-r32-s0-20260916
-- Repositorio HuggingFace del adaptador hermano sobre Gemma: https://huggingface.co/aravdhoot/risk-spec-specv3local-g31-generictownmineralg31-gemma-4-31b-it-hp500-r32-s0-20260914
+- Repositorio Hugging Face del modelo: https://huggingface.co/aravdhoot/risk-spec-specv3local-q27-generictownmineralq27-qwen3.8-27b-hp500-r32-s0-20260916
+- Repositorio Hugging Face del adaptador hermano sobre Gemma: https://huggingface.co/aravdhoot/risk-spec-specv3local-g31-generictownmineralg31-gemma-4-31b-it-hp500-r32-s0-20260914
 - Modelo base declarado (`Qwen/Qwen3.8-27B`): https://huggingface.co/Qwen/Qwen3.8-27B (enlace construido a partir del identificador de la model card; no verificado en los resultados de búsqueda)
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

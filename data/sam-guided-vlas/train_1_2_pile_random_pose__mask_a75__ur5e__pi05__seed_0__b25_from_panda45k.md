@@ -90,8 +90,8 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este *fine-tune* (UR5e, tarea pile) | 4.143.404.816 | no disponible | apache-2.0 | HuggingFace, 0 descargas, 0 likes | Sin resultados de evaluación publicados |
-| lerobot/pi05_base | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | HuggingFace (referenciado como base) | Checkpoint de partida declarado; su ficha no forma parte de la información recibida |
+| Este *fine-tune* (UR5e, tarea pile) | 4.143.404.816 | no disponible | apache-2.0 | Hugging Face, 0 descargas, 0 likes | Sin resultados de evaluación publicados |
+| lerobot/pi05_base | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Hugging Face (referenciado como base) | Checkpoint de partida declarado; su ficha no forma parte de la información recibida |
 | Otras políticas VLA de la misma categoría (OpenVLA, Octo, SmolVLA) | no disponible | no disponible | no disponible | no disponible | Candidatos habituales de comparación, pero sin datos verificados en la información disponible |
 
 No se dispone de cifras verificadas de parámetros, contexto ni rendimiento para alternativas comparables dentro de la información proporcionada, por lo que no se puede establecer una comparación cuantitativa rigurosa.
@@ -112,7 +112,7 @@ No se dispone de cifras verificadas de parámetros, contexto ni rendimiento para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__mask_a75__ur5e__pi05__seed_0__b25_from_panda45k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__mask_a75__ur5e__pi05__seed_0__b25_from_panda45k
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_pile_random_pose__mask__overlay_a75__sim__all_cameras__live__ur5e
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=sam-guided-vlas/train_1_2_pile_random_pose__mask__overlay_a75__sim__all_cameras__live__ur5e
 - Modelo base: https://huggingface.co/lerobot/pi05_base

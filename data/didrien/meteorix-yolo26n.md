@@ -71,7 +71,7 @@ El estudio Meteorix compara este modelo con RF-DETR Small y DETR-ResNet-50 sobre
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Meteorix YOLO26n | no disponible | no aplica | F1 0,951 en Mendeley test; F1 0,818 en NEO-Bench UAEMMN | AGPL-3.0 | HuggingFace |
+| Meteorix YOLO26n | no disponible | no aplica | F1 0,951 en Mendeley test; F1 0,818 en NEO-Bench UAEMMN | AGPL-3.0 | Hugging Face |
 | RF-DETR Small | no disponible | no aplica | no disponible | no disponible | no disponible |
 | DETR-ResNet-50 | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -88,6 +88,6 @@ El estudio Meteorix compara este modelo con RF-DETR Small y DETR-ResNet-50 sobre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Didrien/meteorix-yolo26n
+- Modelo en Hugging Face: https://huggingface.co/Didrien/meteorix-yolo26n
 - Dataset Mendeley (Gradvohl & Shirasuna): DOI 10.17632/4k98n84d9g.1
 - Ultralytics (librería y familia YOLO26): no se proporciona URL en la información disponible.

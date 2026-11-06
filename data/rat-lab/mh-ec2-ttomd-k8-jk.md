@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rat-lab/mh-ec2-ttomd-K8-jk` es un conjunto de adaptadores LoRA para el modelo `vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT`, publicado por el usuario `rat-lab` en HuggingFace. No se trata de un modelo completo, sino de un artefacto de investigación: los pesos resultantes de una celda concreta (K=8, estimador jackknife) de una tabla de experimentos de aprendizaje de preferencias sensible al riesgo, entrenada localmente por Max Horwitz en el clúster UW Hyak (trabajo SLURM 40292475, finalizado el 21 de septiembre de 2026).
+`rat-lab/mh-ec2-ttomd-K8-jk` es un conjunto de adaptadores LoRA para el modelo `vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT`, publicado por el usuario `rat-lab` en Hugging Face. No se trata de un modelo completo, sino de un artefacto de investigación: los pesos resultantes de una celda concreta (K=8, estimador jackknife) de una tabla de experimentos de aprendizaje de preferencias sensible al riesgo, entrenada localmente por Max Horwitz en el clúster UW Hyak (trabajo SLURM 40292475, finalizado el 21 de septiembre de 2026).
 
 El problema que aborda es el de la optimización de preferencias con cobertura y corrección de sesgo: en lugar de usar una única muestra o comparación por prompt, el entrenamiento emplea K=8 muestras por prompt (`--ypp_samples 8`) y una corrección de sesgo en dos escalas temporales (two-timescale) con estimador leave-one-out jackknife. El algoritmo base es online IPO (`--alg oipo1`, implementado en `risk_egpo/tt_omd.py`) con riesgo entrópico de parámetro tau = 10, sobre el dataset PKU-Alignment/PKU-SafeRLHF.
 
@@ -79,8 +79,8 @@ m = PeftModel.from_pretrained(m, "rat-lab/mh-ec2-ttomd-K8-jk", subfolder="checkp
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rat-lab/mh-ec2-ttomd-K8-jk` | Adaptador LoRA (online IPO, riesgo entropico, jackknife) | Adaptador sobre base de la familia Gemma 2 2B | No disponible | No disponible | Publicado en HuggingFace, 0 descargas |
-| `vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT` | Modelo completo con SFT | Familia Gemma 2 2B | Heredado de Gemma 2 | No disponible en la informacion | Publicado en HuggingFace (modelo base) |
+| `rat-lab/mh-ec2-ttomd-K8-jk` | Adaptador LoRA (online IPO, riesgo entropico, jackknife) | Adaptador sobre base de la familia Gemma 2 2B | No disponible | No disponible | Publicado en Hugging Face, 0 descargas |
+| `vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT` | Modelo completo con SFT | Familia Gemma 2 2B | Heredado de Gemma 2 | No disponible en la informacion | Publicado en Hugging Face (modelo base) |
 | Modelo Gemma 2 2B instruct original | Modelo completo instruct | Familia Gemma 2 2B | No disponible en la informacion | No disponible en la informacion | Publicado por Google |
 
 No se dispone de informacion sobre otros adaptadores comparables de la misma categoria (misma celda experimental, mismo algoritmo) en la documentacion proporcionada.
@@ -101,7 +101,7 @@ No se dispone de informacion sobre otros adaptadores comparables de la misma cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rat-lab/mh-ec2-ttomd-K8-jk
+- Modelo en Hugging Face: https://huggingface.co/rat-lab/mh-ec2-ttomd-K8-jk
 - Modelo base: https://huggingface.co/vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT
 - Dataset de entrenamiento (PKU-Alignment/PKU-SafeRLHF): https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF
 - Libreria PEFT: https://huggingface.co/docs/peft/index

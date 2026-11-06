@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swordenamine/llm_clinical_notes` es un repositorio publicado en HuggingFace por el usuario `swordenamine` que se presenta como un pipeline de procesamiento de lenguaje natural clínico: toma notas médicas en texto libre y las convierte en recursos HL7 FHIR R4 (Condition, MedicationRequest, Observation, Procedure) con normalización a ICD-10, SNOMED-CT, RxNorm y LOINC. El problema que aborda es real y está bien documentado en la literatura: la carga administrativa de la documentación clínica, que la model card cifra en un 50 % del tiempo del facultativo y en 125 000 millones de dólares anuales solo en Estados Unidos.
+`swordenamine/llm_clinical_notes` es un repositorio publicado en Hugging Face por el usuario `swordenamine` que se presenta como un pipeline de procesamiento de lenguaje natural clínico: toma notas médicas en texto libre y las convierte en recursos HL7 FHIR R4 (Condition, MedicationRequest, Observation, Procedure) con normalización a ICD-10, SNOMED-CT, RxNorm y LOINC. El problema que aborda es real y está bien documentado en la literatura: la carga administrativa de la documentación clínica, que la model card cifra en un 50 % del tiempo del facultativo y en 125 000 millones de dólares anuales solo en Estados Unidos.
 
 Ahora bien, conviene ser preciso: por la información disponible, este repositorio **no es un modelo fundacional con pesos publicados**, sino un proyecto de software (código Python organizado en módulos `core/`, `fhir/`, `nlp/`, `pipeline/` y `api/`) que describe una arquitectura de extracción de entidades y mapeo a FHIR. La model card no indica modelo base, número de parámetros, longitud de contexto, datos de entrenamiento ni formato de pesos, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
 
@@ -18,7 +18,7 @@ Su relevancia potencial reside en el enfoque (NER clínico + detección de negac
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | No disponible (no se publican pesos) |
 | Idiomas soportados | No disponibles. La model card menciona "Arabic medical notes (v1.1)" como idioma planificado; el texto de ejemplo está en inglés clínico abreviado |
-| Licencia | No disponible en los metadatos de HuggingFace. La model card muestra una insignia "MIT", lo que supone una discrepancia con el campo de licencia del repositorio |
+| Licencia | No disponible en los metadatos de Hugging Face. La model card muestra una insignia "MIT", lo que supone una discrepancia con el campo de licencia del repositorio |
 | Formato de pesos | No disponible. La estructura descrita corresponde a código Python (`.py`), no a artefactos `safetensors`, `GGUF` ni similares |
 
 ## Arquitectura y entrenamiento
@@ -91,7 +91,7 @@ La diferencia principal es de madurez: las alternativas citadas cuentan con peso
 - **Naturaleza del artefacto**: no se publican pesos ni modelo base; el repositorio parece contener código de una aplicación, no un modelo entrenado. Cualquier evaluación de rendimiento por parte del lector requerirá implementar o aportar el componente de NER.
 - **Ausencia de datos de entrenamiento**: no se documentan corpus, número de tokens, procedencia de las notas ni procesos de anonimización, lo que impide valorar sesgos y cumplimiento normativo.
 - **Afirmaciones sin respaldo**: las cifras de >92 % de accuracy y 60 % de ahorro de tiempo carecen de benchmark nombrado, tamaño de muestra y metodología.
-- **Conflicto de licencia**: el campo de licencia de HuggingFace aparece como no disponible mientras la model card muestra la insignia MIT. Antes de cualquier uso comercial debe aclararse por escrito con el autor.
+- **Conflicto de licencia**: el campo de licencia de Hugging Face aparece como no disponible mientras la model card muestra la insignia MIT. Antes de cualquier uso comercial debe aclararse por escrito con el autor.
 - **Inconsistencia temporal**: la fecha de creación (2026-10-17) es posterior a la de última actualización (2026-03-06), lo que sugiere metadatos erróneos o un repositorio reestructurado; conviene verificarlo.
 - **Riesgo de alucinación en el mapeo de códigos**: la asignación automática de ICD-10/SNOMED/RxNorm/LOINC puede producir códigos plausibles pero incorrectos; se requiere validación humana en cualquier flujo clínico real.
 - **Cobertura limitada**: solo tres especialidades declaradas (medicina interna, cardiología, urgencias); notas de otras áreas quedan fuera del alcance previsto.
@@ -102,5 +102,5 @@ La diferencia principal es de madurez: las alternativas citadas cuentan con peso
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/llm_clinical_notes
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/llm_clinical_notes
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código externos ni demos interactivas.

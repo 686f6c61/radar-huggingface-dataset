@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sim-square-broad-r02-baseline-idql (este) | IDQL, actor de difusion + critico IQL, state-based | no disponible | no aplica | 71,07 % de exito agregado en sim-square-broad (150000 rollouts) | MIT | HuggingFace, 5 semillas |
+| sim-square-broad-r02-baseline-idql (este) | IDQL, actor de difusion + critico IQL, state-based | no disponible | no aplica | 71,07 % de exito agregado en sim-square-broad (150000 rollouts) | MIT | Hugging Face, 5 semillas |
 | IDQL original (Hansen-Estruch et al.) | IDQL, actor de difusion + critico IQL | no disponible | no aplica | no disponible en la informacion recogida | no disponible | publicacion academica |
 | Diffusion Policy (Chi et al.) | politica de difusion | no disponible | no aplica | no disponible en la informacion recogida | no disponible | publicacion academica |
 | Variantes de Mulligan con seleccion basada en valor (p. ej. HiL-IDQL+Mulligan) | IDQL con recoleccion guiada | no disponible | no aplica | la pagina del proyecto reporta mejoras de 14-34 puntos porcentuales en tareas reales frente al baseline | no disponible | Mulligan |
@@ -105,8 +105,8 @@ Las cifras de los modelos comparados no se han podido verificar con los datos di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r02-baseline-idql
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r02-baseline-idql
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Pagina del proyecto Mulligan: https://mulligan.page/
 - Policy Arena (evaluaciones): https://arena.mulligan.page
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval

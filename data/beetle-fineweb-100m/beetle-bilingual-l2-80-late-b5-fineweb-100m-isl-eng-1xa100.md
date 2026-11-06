@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo, identificado como `Beetle-FineWeb-100M/beetle-bilingual-l2-80-late-b5-fineweb-100m-isl-eng-1xa100`, es un modelo de generación de texto bilingüe (islandés e inglés) desarrollado por el usuario de HuggingFace `Beetle-FineWeb-100M`. Forma parte de una familia de modelos pequeños (alrededor de 194 millones de parámetros) entrenados sobre el subconjunto FineWeb-100M, un corpus de 100 millones de tokens derivado de FineWeb. El nombre del modelo sugiere un entrenamiento específico para el par de idiomas islandés-inglés, con una arquitectura etiquetada como `pico_decoder`, que apunta a un decoder compacto orientado a eficiencia.
+Este modelo, identificado como `Beetle-FineWeb-100M/beetle-bilingual-l2-80-late-b5-fineweb-100m-isl-eng-1xa100`, es un modelo de generación de texto bilingüe (islandés e inglés) desarrollado por el usuario de Hugging Face `Beetle-FineWeb-100M`. Forma parte de una familia de modelos pequeños (alrededor de 194 millones de parámetros) entrenados sobre el subconjunto FineWeb-100M, un corpus de 100 millones de tokens derivado de FineWeb. El nombre del modelo sugiere un entrenamiento específico para el par de idiomas islandés-inglés, con una arquitectura etiquetada como `pico_decoder`, que apunta a un decoder compacto orientado a eficiencia.
 
 La información pública es extremadamente limitada: la model card es una plantilla vacía sin datos de arquitectura, entrenamiento, capacidades o rendimiento. El repositorio ocupa 82,2 GB, un tamaño inusualmente grande para un modelo de 194M de parámetros, lo que podría indicar la presencia de múltiples versiones, archivos de cuantización o metadatos adicionales, aunque no se puede confirmar. A pesar de la falta de documentación, el modelo está disponible en formato `safetensors` y es compatible con la librería `transformers`, lo que permite su carga y uso directo para tareas de generación de texto.
 
@@ -56,6 +56,6 @@ No se dispone de información sobre modelos comparables. La familia `Beetle-Fine
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-l2-80-late-b5-fineweb-100m-isl-eng-1xa100
+- Hugging Face: https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-l2-80-late-b5-fineweb-100m-isl-eng-1xa100
 - Modelos relacionados de la misma familia: https://huggingface.co/Beetle-FineWeb-100M (perfil del autor)
 - Dataset FineWeb-2: https://github.com/huggingface/fineweb-2

@@ -96,7 +96,7 @@ No se dispone de información sobre alternativas de terceros comparables (por ej
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grevinden/Qwopus3.8-27B-Flash-W4A16-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/grevinden/Qwopus3.8-27B-Flash-W4A16-AutoRound
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash
 - Fork cix de vLLM para RTX 3090: https://github.com/syv-ai/qwen38-27b-rtx3090
 - Búsqueda web: no se han encontrado resultados relevantes sobre este modelo, su autor ni su modelo base; los resultados devueltos corresponden a publicaciones de consumo sin relación con el contenido de esta ficha.

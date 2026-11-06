@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MMH3_moawxx es un LoRA (Low-Rank Adaptation) para generación de imágenes mediante difusión, desarrollado por el usuario lynaNSFW y publicado en HuggingFace. El modelo está diseñado para ajustar el comportamiento de un modelo base denominado "minimax" (posiblemente referido a la familia MiniMax de generación de imágenes o vídeo), permitiendo generar escenas con descripciones específicas de sonidos y movimientos corporales, según las instrucciones de prompt que se incluyen en la model card. El repositorio tiene un tamaño de 0.2 GB y se distribuye a través de la librería `diffusers`.
+MMH3_moawxx es un LoRA (Low-Rank Adaptation) para generación de imágenes mediante difusión, desarrollado por el usuario lynaNSFW y publicado en Hugging Face. El modelo está diseñado para ajustar el comportamiento de un modelo base denominado "minimax" (posiblemente referido a la familia MiniMax de generación de imágenes o vídeo), permitiendo generar escenas con descripciones específicas de sonidos y movimientos corporales, según las instrucciones de prompt que se incluyen en la model card. El repositorio tiene un tamaño de 0.2 GB y se distribuye a través de la librería `diffusers`.
 
 Este LoRA se presenta como una adaptación especializada para un tipo de contenido concreto, orientado a la generación de imágenes o vídeos con temática explícita para adultos. Su relevancia actual radica en la creciente demanda de personalización de modelos de difusión mediante LoRA, que permiten ajustar el comportamiento de modelos base sin necesidad de reentrenamiento completo. Sin embargo, la información pública disponible es escasa: no se especifican arquitectura interna, parámetros, contexto, ni detalles de entrenamiento más allá de los prompts de ejemplo.
 
-El modelo se encuentra alojado en HuggingFace con la etiqueta `template:diffusion-lora` y el pipeline declarado es `text-to-image`. No se dispone de información sobre licencia, idiomas soportados, ni métricas de rendimiento. La model card incluye un enlace a una página externa (civitai.red) que podría contener información adicional, aunque no se ha podido verificar su contenido.
+El modelo se encuentra alojado en Hugging Face con la etiqueta `template:diffusion-lora` y el pipeline declarado es `text-to-image`. No se dispone de información sobre licencia, idiomas soportados, ni métricas de rendimiento. La model card incluye un enlace a una página externa (civitai.red) que podría contener información adicional, aunque no se ha podido verificar su contenido.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 - Al ser un LoRA de 0.2 GB, los requisitos de VRAM son reducidos en comparación con un modelo completo. Sin embargo, el modelo base "minimax" puede ser pesado; se desconoce su tamaño exacto.
 - No se especifican GPUs recomendadas. Para ejecutar el adaptador sobre un modelo base de difusión, se necesitaría al menos una GPU con suficiente memoria para cargar el modelo base (típicamente 8-16 GB para modelos de difusión de tamaño medio, pero depende del modelo "minimax" concreto).
-- Opciones de despliegue: al usar `diffusers`, se puede integrar con librerías como `diffusers` de HuggingFace, `ComfyUI` o `Automatic1111` si el formato es compatible. No se menciona soporte para llama.cpp, vLLM u Ollama, ya que no es un modelo de lenguaje.
+- Opciones de despliegue: al usar `diffusers`, se puede integrar con librerías como `diffusers` de Hugging Face, `ComfyUI` o `Automatic1111` si el formato es compatible. No se menciona soporte para llama.cpp, vLLM u Ollama, ya que no es un modelo de lenguaje.
 - Latencia y throughput: no disponibles. Dependerán del modelo base y del hardware.
 
 ## Comparativa con modelos similares
@@ -71,6 +71,6 @@ No se dispone de información sobre otros LoRA similares en el mismo repositorio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lynaNSFW/MMH3_moawxx
+- Repositorio en Hugging Face: https://huggingface.co/lynaNSFW/MMH3_moawxx
 - Enlace externo citado en la model card: https://civitai.red/models/2857965/moawxx-female-pleasure-moans-body-writhing-minimax-h3?modelVersionId=3228089
 - No se han encontrado papers, blogs o demos adicionales en la información proporcionada.

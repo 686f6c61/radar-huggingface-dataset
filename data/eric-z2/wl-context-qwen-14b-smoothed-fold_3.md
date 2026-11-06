@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eric-z2/WL-context-qwen-14b-smoothed-fold_3` es un checkpoint publicado en HuggingFace por el usuario `eric-z2`. El identificador sugiere una variante de un modelo Qwen de unos 14.000 millones de parámetros, sometida a algún procedimiento etiquetado como "WL-context" y a un "smoothed-fold_3", nomenclatura habitual en experimentos de validación cruzada o de suavizado de pesos. Sin embargo, ni la model card ni los metadatos del repositorio confirman esa interpretación: la model card es la plantilla automática de HuggingFace con todos los campos marcados como "[More Information Needed]".
+`eric-z2/WL-context-qwen-14b-smoothed-fold_3` es un checkpoint publicado en Hugging Face por el usuario `eric-z2`. El identificador sugiere una variante de un modelo Qwen de unos 14.000 millones de parámetros, sometida a algún procedimiento etiquetado como "WL-context" y a un "smoothed-fold_3", nomenclatura habitual en experimentos de validación cruzada o de suavizado de pesos. Sin embargo, ni la model card ni los metadatos del repositorio confirman esa interpretación: la model card es la plantilla automática de Hugging Face con todos los campos marcados como "[More Information Needed]".
 
 El repositorio no ofrece información verificable sobre arquitectura, datos de entrenamiento, idiomas, licencia ni uso previsto. El tamaño declarado del repo es de 0,1 GB, un dato incompatible con los pesos de un modelo de 14B en bf16 (unos 28 GB) o incluso en cuantización de 4 bits (unos 8-9 GB), lo que apunta a una subida incompleta, a un conjunto de ficheros auxiliares (configuración, tokenizer, índices de shards) o a un artefacto de investigación no pensado para inferencia directa.
 
@@ -25,7 +25,7 @@ Por tanto, la relevancia práctica de esta ficha es limitada y de carácter caut
 | Pipeline declarado | no disponible |
 | Etiquetas | `transformers`, `safetensors`, `arxiv:1910.09700`, `endpoints_compatible`, `region:us` |
 
-Nota sobre la etiqueta `arxiv:1910.09700`: corresponde a Lacoste et al. (2019), el artículo del calculador de impacto medioambiental que aparece citado en la plantilla de model card de HuggingFace. No es un artículo que describa este modelo.
+Nota sobre la etiqueta `arxiv:1910.09700`: corresponde a Lacoste et al. (2019), el artículo del calculador de impacto medioambiental que aparece citado en la plantilla de model card de Hugging Face. No es un artículo que describa este modelo.
 
 ## Arquitectura y entrenamiento
 
@@ -78,10 +78,10 @@ Los datos de las alternativas provienen de sus fichas públicas; los de este mod
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | `eric-z2/WL-context-qwen-14b-smoothed-fold_3` | ~14B (según el nombre, no confirmado) | no disponible | no disponible | Repo de 0,1 GB; pesos completos no confirmados; 0 descargas |
-| Qwen2.5-14B-Instruct | 14,7B | 32.768 tokens nativos, hasta 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente desplegado (vLLM, TGI, GGUF) |
-| Qwen3-14B | 14,8B | 32.768 tokens nativos, hasta 131.072 con YaRN | Apache 2.0 | HuggingFace, con variantes GGUF y cuantizaciones |
-| Phi-4 (14B) | 14B | 16.384 tokens | MIT | HuggingFace |
-| Mistral-Nemo-12B | 12B | 128.000 tokens | Apache 2.0 | HuggingFace |
+| Qwen2.5-14B-Instruct | 14,7B | 32.768 tokens nativos, hasta 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente desplegado (vLLM, TGI, GGUF) |
+| Qwen3-14B | 14,8B | 32.768 tokens nativos, hasta 131.072 con YaRN | Apache 2.0 | Hugging Face, con variantes GGUF y cuantizaciones |
+| Phi-4 (14B) | 14B | 16.384 tokens | MIT | Hugging Face |
+| Mistral-Nemo-12B | 12B | 128.000 tokens | Apache 2.0 | Hugging Face |
 
 La comparación relevante no es de rendimiento, sino de trazabilidad: las tres alternativas documentan arquitectura, licencia, contexto y evaluación, mientras que este checkpoint no ofrece ninguno de esos datos. Si el modelo deriva efectivamente de un Qwen de 14B, heredaría su licencia Apache 2.0, pero esa herencia no está declarada y no puede asumirse.
 
@@ -101,7 +101,7 @@ La comparación relevante no es de rendimiento, sino de trazabilidad: las tres a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eric-z2/WL-context-qwen-14b-smoothed-fold_3
+- Modelo en Hugging Face: https://huggingface.co/eric-z2/WL-context-qwen-14b-smoothed-fold_3
 - Árbol de ficheros del repositorio: https://huggingface.co/eric-z2/WL-context-qwen-14b-smoothed-fold_3/tree/main
 - Artículo referenciado en la etiqueta `arxiv:1910.09700` (calculador de impacto medioambiental, no describe el modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ML citado en la plantilla: https://mlco2.github.io/impact

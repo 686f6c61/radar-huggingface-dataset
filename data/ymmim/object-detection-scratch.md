@@ -82,7 +82,7 @@ La comparativa muestra que el modelo de YMmim es una implementación educativa s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YMmim/object-detection-scratch
+- Hugging Face: https://huggingface.co/YMmim/object-detection-scratch
 - GitHub (README): https://github.com/MinhCYB/object-detection-scratch/blob/main/README.md
 - Repositorio YOLOv8 desde cero (referencia educativa): https://github.com/Pranay22077/YOLOv8-architecture-from-scratch
 - Guía de mejores modelos de detección de objetos (blog): https://blog.roboflow.com/best-object-detection-models/

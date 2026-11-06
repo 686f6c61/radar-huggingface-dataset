@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `schumaa1/checkpoints`, publicado por el usuario schumaa1 en HuggingFace, es un checkpoint de 241,7 millones de parametros en formato safetensors. Las etiquetas asociadas al repositorio incluyen "whisper", lo que sugiere que se trata de un modelo de reconocimiento automatico de voz basado en la arquitectura Whisper de OpenAI, aunque no se ha confirmado oficialmente. El repositorio tambien incluye registros de entrenamiento con TensorBoard y la etiqueta "region:us" apunta a un posible enfoque en ingles estadounidense.
+El modelo `schumaa1/checkpoints`, publicado por el usuario schumaa1 en Hugging Face, es un checkpoint de 241,7 millones de parametros en formato safetensors. Las etiquetas asociadas al repositorio incluyen "whisper", lo que sugiere que se trata de un modelo de reconocimiento automatico de voz basado en la arquitectura Whisper de OpenAI, aunque no se ha confirmado oficialmente. El repositorio tambien incluye registros de entrenamiento con TensorBoard y la etiqueta "region:us" apunta a un posible enfoque en ingles estadounidense.
 
 La informacion publica es muy limitada: no se especifican licencia, idiomas soportados, pipeline de uso ni detalles de entrenamiento. Con 241,7 millones de parametros, el modelo se alinea aproximadamente con la gama de Whisper small (244M), aunque la diferencia en el conteo exacto sugiere que podria tratarse de una variante modificada o fine-tuned. El tamano del repositorio (3,9 GB) indica que contiene multiples archivos, posiblemente varios checkpoints o artefactos adicionales.
 
@@ -75,4 +75,4 @@ Esta comparacion es especulativa y requiere confirmacion de la arquitectura.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/schumaa1/checkpoints
+- Hugging Face: https://huggingface.co/schumaa1/checkpoints

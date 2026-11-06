@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Izell088/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `LunarLander-v3`, publicado en HuggingFace por el usuario Izell088 mediante la librería stable-baselines3. No se trata de un modelo de lenguaje: es una política neuronal que resuelve una tarea de control continuo-discreto (el aterrizaje de un módulo lunar en 2D) a partir de un vector de observaciones de baja dimensión. El repositorio ocupa 0,0 GB, lo que es coherente con una política de muy pocas capas y parámetros.
+`Izell088/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `LunarLander-v3`, publicado en Hugging Face por el usuario Izell088 mediante la librería stable-baselines3. No se trata de un modelo de lenguaje: es una política neuronal que resuelve una tarea de control continuo-discreto (el aterrizaje de un módulo lunar en 2D) a partir de un vector de observaciones de baja dimensión. El repositorio ocupa 0,0 GB, lo que es coherente con una política de muy pocas capas y parámetros.
 
 El modelo declara un `mean_reward` de 301,45 ± 15,49 en `LunarLander-v3` a través del `model-index` de su model card, con el campo `verified` a `false`, es decir, sin verificación independiente por parte de la plataforma. Es relevante como referencia reproducible de un pipeline de RL con stable-baselines3 y como baseline educativo, no como componente de producción de un sistema conversacional o generativo.
 
@@ -67,10 +67,10 @@ No se han publicado en la información disponible otros resultados de benchmarks
 
 | Modelo / referencia | Algoritmo | Entorno | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Izell088/ppo-LunarLander-v2` | PPO | LunarLander-v3 | No disponible (muy reducido) | Vector de 8 dimensiones | No disponible | HuggingFace Hub, 14 descargas, 0 likes |
+| `Izell088/ppo-LunarLander-v2` | PPO | LunarLander-v3 | No disponible (muy reducido) | Vector de 8 dimensiones | No disponible | Hugging Face Hub, 14 descargas, 0 likes |
 | Agentes A2C de stable-baselines3 para LunarLander | A2C | LunarLander-v3 | No disponible | Vector de 8 dimensiones | MIT (librería) | Repositorio de la librería y ejemplos de la comunidad |
 | Agentes DQN de stable-baselines3 para LunarLander | DQN | LunarLander-v3 | No disponible | Vector de 8 dimensiones | MIT (librería) | Repositorio de la librería y ejemplos de la comunidad |
-| Otros agentes PPO publicados en el Hub para LunarLander | PPO | LunarLander-v2/v3 | No disponible | Vector de 8 dimensiones | Variable, a menudo sin declarar | HuggingFace Hub (múltiples autores) |
+| Otros agentes PPO publicados en el Hub para LunarLander | PPO | LunarLander-v2/v3 | No disponible | Vector de 8 dimensiones | Variable, a menudo sin declarar | Hugging Face Hub (múltiples autores) |
 
 No se dispone de resultados de benchmarks comparables publicados en la información proporcionada para A2C, DQN ni para otros agentes PPO del Hub, por lo que la comparación cuantitativa de rendimiento se marca como no disponible. La comparación cualitativa se limita a la familia de algoritmos *on-policy* (PPO, A2C) frente a *off-policy* (DQN), donde PPO suele ofrecer mayor estabilidad a costa de eficiencia de muestras.
 
@@ -88,7 +88,7 @@ No se dispone de resultados de benchmarks comparables publicados en la informaci
 
 ## Enlaces
 
-- [Modelo en HuggingFace: Izell088/ppo-LunarLander-v2](https://huggingface.co/Izell088/ppo-LunarLander-v2)
+- [Modelo en Hugging Face: Izell088/ppo-LunarLander-v2](https://huggingface.co/Izell088/ppo-LunarLander-v2)
 - [stable-baselines3 (repositorio oficial)](https://github.com/DLR-RM/stable-baselines3)
 - [Documentación de stable-baselines3](https://stable-baselines3.readthedocs.io/)
 - [huggingface_sb3 (utilidad de carga desde el Hub)](https://github.com/huggingface/huggingface_sb3)

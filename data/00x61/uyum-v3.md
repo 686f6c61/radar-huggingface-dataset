@@ -80,7 +80,7 @@ No se han publicado comparaciones con otros modelos en la documentación disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/00x61/uyum-v3
+- Modelo en Hugging Face: https://huggingface.co/00x61/uyum-v3
 - Repositorio GitHub: https://github.com/0x61A/uyum
 - Código de evaluación: https://github.com/0x61A/uyum/blob/main/v3/degerlendir.py y https://github.com/0x61A/uyum/blob/main/v3/tani.py
 

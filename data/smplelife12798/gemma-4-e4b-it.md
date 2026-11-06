@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `smplelife12798/gemma-4-E4B-it` es un fine-tune de tipo instruction-tuned del modelo base `google/gemma-4-E4B`, publicado por un usuario de HuggingFace (smplelife12798) y no por Google DeepMind. El modelo base, desarrollado por Google DeepMind, pertenece a la familia Gemma 4, una serie de modelos abiertos multimodales que procesan texto e imagen (y audio en las variantes pequeñas) y generan texto. Este fine-tune conserva la arquitectura del modelo base, un transformer decoder-only con atención híbrida (sliding window y global), Per-Layer Embeddings (PLE) y encoders de visión y audio, con un total de 7.996.156.490 parámetros (8B con embeddings) y una ventana de contexto de 128K tokens.
+El modelo `smplelife12798/gemma-4-E4B-it` es un fine-tune de tipo instruction-tuned del modelo base `google/gemma-4-E4B`, publicado por un usuario de Hugging Face (smplelife12798) y no por Google DeepMind. El modelo base, desarrollado por Google DeepMind, pertenece a la familia Gemma 4, una serie de modelos abiertos multimodales que procesan texto e imagen (y audio en las variantes pequeñas) y generan texto. Este fine-tune conserva la arquitectura del modelo base, un transformer decoder-only con atención híbrida (sliding window y global), Per-Layer Embeddings (PLE) y encoders de visión y audio, con un total de 7.996.156.490 parámetros (8B con embeddings) y una ventana de contexto de 128K tokens.
 
 La relevancia de este modelo radica en que ofrece capacidades multimodales (texto, imagen y audio) en un tamaño relativamente compacto, apto para ejecución en GPUs de consumo con al menos 8 GB de VRAM. Al ser un fine-tune de un usuario, no hay información oficial sobre el proceso de entrenamiento específico, pero hereda las capacidades del modelo base, incluyendo razonamiento con modos de pensamiento configurables, soporte nativo de function calling y multilingüismo en más de 140 idiomas. La licencia Apache 2.0 permite uso comercial sin restricciones significativas.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks especificos para el fine-tune `smpl
 - VRAM estimada: minimo 8 GB para inferencia con el modelo completo en precision FP16 (segun la web gemma4.dev). Con cuantizacion a 8 bits o 4 bits podria reducirse el requisito, aunque no se especifican cuantizaciones disponibles.
 - GPUs recomendadas: tarjetas de consumo con al menos 8 GB de VRAM, como NVIDIA RTX 3060 (12 GB), RTX 4060 Ti (16 GB), RTX 4070 (12 GB) o superiores. Para despliegues profesionales, una A100 o H100 ofreceria mayor throughput.
 - Compatibilidad con consumer GPU: si, el modelo cabe en GPUs de gama media con 8-12 GB de VRAM, lo que lo hace adecuado para estaciones de trabajo locales.
-- Opciones de despliegue: compatible con transformers (libreria de HuggingFace), vLLM, llama.cpp, Ollama y TGI (Text Generation Inference). El tag `endpoints_compatible` sugiere que puede servirse mediante endpoints estandar.
+- Opciones de despliegue: compatible con transformers (libreria de Hugging Face), vLLM, llama.cpp, Ollama y TGI (Text Generation Inference). El tag `endpoints_compatible` sugiere que puede servirse mediante endpoints estandar.
 - Latencia y throughput: no se proporcionan datos especificos. En una RTX 4090 se espera una generacion de varias decenas de tokens por segundo con cuantizacion, pero no hay cifras confirmadas.
 
 ## Comparativa con modelos similares
@@ -80,8 +80,8 @@ El modelo Gemma 4 E4B se distingue por su soporte nativo de audio y su arquitect
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smplelife12798/gemma-4-E4B-it
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-E4B
+- Modelo en Hugging Face: https://huggingface.co/smplelife12798/gemma-4-E4B-it
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-E4B
 - Blog de lanzamiento de Gemma 4: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion de Gemma 4: https://ai.google.dev/gemma/docs/core
 - Informe tecnico (arXiv): https://arxiv.org/abs/2607.02770

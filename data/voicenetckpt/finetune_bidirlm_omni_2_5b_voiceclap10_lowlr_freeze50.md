@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`VoiceNetCkpt/finetune_BidirLM_Omni_2_5B_voiceclap10_lowlr_freeze50` es un directorio de resultados de entrenamiento (training-run directory) publicado por el usuario VoiceNetCkpt dentro de la serie de experimentos denominada VoiceCLAP. No se trata de un modelo empaquetado y documentado para consumo general, sino de un volcado de checkpoints intermedios: 131 ficheros que ocupan 100,9 GB en el repositorio de HuggingFace, con pesos en formato safetensors.
+`VoiceNetCkpt/finetune_BidirLM_Omni_2_5B_voiceclap10_lowlr_freeze50` es un directorio de resultados de entrenamiento (training-run directory) publicado por el usuario VoiceNetCkpt dentro de la serie de experimentos denominada VoiceCLAP. No se trata de un modelo empaquetado y documentado para consumo general, sino de un volcado de checkpoints intermedios: 131 ficheros que ocupan 100,9 GB en el repositorio de Hugging Face, con pesos en formato safetensors.
 
 La model card es minima y no aporta informacion sobre arquitectura, datos de entrenamiento, licencia ni idiomas. El propio autor remite a un repositorio indice (`VoiceNetCkpt/voiceclap-checkpoints-index`) para localizar el resto de ejecuciones de la misma campaña experimental. Los unicos metadatos disponibles son las etiquetas del repositorio (`voiceclap`, `checkpoint`, `safetensors`, `region:us`) y la fecha de creacion y actualizacion, ambas del 11 de octubre de 2026.
 
@@ -93,7 +93,7 @@ No disponible. No se han publicado parametros, contexto, resultados ni licencia 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/VoiceNetCkpt/finetune_BidirLM_Omni_2_5B_voiceclap10_lowlr_freeze50
+- Repositorio de Hugging Face: https://huggingface.co/VoiceNetCkpt/finetune_BidirLM_Omni_2_5B_voiceclap10_lowlr_freeze50
 - Indice de ejecuciones de la campana VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
-- Perfil del autor en HuggingFace: https://huggingface.co/VoiceNetCkpt
+- Perfil del autor en Hugging Face: https://huggingface.co/VoiceNetCkpt
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

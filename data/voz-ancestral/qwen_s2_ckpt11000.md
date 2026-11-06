@@ -84,9 +84,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Idiomas | chrF++ juridico pt→yrl | chrF++ near-domain pt→yrl | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| voz-ancestral/qwen_s2_ckpt11000 | 1,88 B | no disponible | yrl, pt | 28,01 | 62,97 | Apache-2.0 | HuggingFace |
-| Seq2seq de 600 M del mismo proyecto (herencia NLLB) | 0,6 B | no disponible | yrl, pt | mejor que el modelo de 1,88 B en juridico, cifra concreta no disponible | peor que el modelo de 1,88 B en near-domain, cifra concreta no disponible | no comercial (herencia NLLB) | HuggingFace, dentro del proyecto |
-| Qwen/Qwen3.5-2B (modelo base) | ~2 B | no disponible | multilingue general | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| voz-ancestral/qwen_s2_ckpt11000 | 1,88 B | no disponible | yrl, pt | 28,01 | 62,97 | Apache-2.0 | Hugging Face |
+| Seq2seq de 600 M del mismo proyecto (herencia NLLB) | 0,6 B | no disponible | yrl, pt | mejor que el modelo de 1,88 B en juridico, cifra concreta no disponible | peor que el modelo de 1,88 B en near-domain, cifra concreta no disponible | no comercial (herencia NLLB) | Hugging Face, dentro del proyecto |
+| Qwen/Qwen3.5-2B (modelo base) | ~2 B | no disponible | multilingue general | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 La comparativa cuantitativa solo puede hacerse, con los datos publicados, frente al seq2seq de 600 M del mismo proyecto, y de forma cualitativa: gana en *near-domain* y pierde en juridico. No se dispone de cifras de otros sistemas de traduccion para nheengatu en la informacion proporcionada.
 
@@ -106,7 +106,7 @@ La comparativa cuantitativa solo puede hacerse, con los datos publicados, frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/voz-ancestral/qwen_s2_ckpt11000
+- Modelo en Hugging Face: https://huggingface.co/voz-ancestral/qwen_s2_ckpt11000
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 
 Nota: la busqueda web realizada no devolvio resultados relacionados con este modelo. Los unicos resultados obtenidos fueron paginas de soporte tecnico de Microsoft, sin ninguna relacion con el proyecto NheengatuMT ni con Qwen. Por tanto, no se dispone de enlaces al articulo citado por el autor, al repositorio del proyecto, al glosario ni a demostraciones.

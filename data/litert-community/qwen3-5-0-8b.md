@@ -108,7 +108,7 @@ La conversion LiteRT pierde un punto porcentual en GSM8K respecto al original en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/litert-community/Qwen3.5-0.8B
+- Repositorio Hugging Face: https://huggingface.co/litert-community/Qwen3.5-0.8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
 - Issue LiteRT#9272: https://github.com/google-ai-edge/LiteRT/issues/9272

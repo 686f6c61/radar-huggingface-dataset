@@ -72,7 +72,7 @@ La única comparativa disponible en la información proporcionada es con GR00T N
 
 | Modelo | Parametros | Suite Object | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BridgeQuant-Async (este) | 480M | 100.0 | Apache-2.0 | HuggingFace |
+| BridgeQuant-Async (este) | 480M | 100.0 | Apache-2.0 | Hugging Face |
 | GR00T N1.7 | 2B | 98.45 | No especificada | No disponible públicamente |
 
 El modelo es significativamente más pequeño que GR00T (480M frente a 2B) y lo supera en la suite Object, aunque queda ligeramente por debajo en la media global (96.75 frente a 97.00) debido a resultados inferiores en Spatial, Goal y Long.
@@ -87,5 +87,5 @@ El modelo es significativamente más pequeño que GR00T (480M frente a 2B) y lo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/twanghcmut/bridgequant-async-libero-object-100
+- Hugging Face: https://huggingface.co/twanghcmut/bridgequant-async-libero-object-100
 - No se proporcionan otros enlaces (papers, blogs o repositorios adicionales) en la información disponible.

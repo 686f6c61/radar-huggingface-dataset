@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sido/hina-gemma4-e4b-aggressive-onnx
+- Modelo en Hugging Face: https://huggingface.co/Sido/hina-gemma4-e4b-aggressive-onnx
 - Modelo base (GGUF): https://huggingface.co/HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive
 - Conversión ONNX de referencia: https://huggingface.co/onnx-community/gemma-4-E4B-it-ONNX
 - Script de conversión: https://github.com/mazariba/hina5/blob/main/browser/scripts/build-aggressive-onnx.py

@@ -105,7 +105,7 @@ Comparado con `convaiinnovations/laya`, su modelo base, la diferencia es de tare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Priceman614/x402-demand
+- Modelo en Hugging Face: https://huggingface.co/Priceman614/x402-demand
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Métricas completas (ruta dentro del repositorio): https://huggingface.co/Priceman614/x402-demand/blob/main/results/metrics.json
 - Procedimiento de entrenamiento (ruta dentro del repositorio): https://huggingface.co/Priceman614/x402-demand/blob/main/docs/PROCESS.md

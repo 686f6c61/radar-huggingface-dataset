@@ -99,7 +99,7 @@ Alternativas de la misma categoria (modelos de codigo pequenos): no disponible e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minas2025/Gemma-4-E2B-Coder-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/minas2025/Gemma-4-E2B-Coder-Uncensored
 - Modelo base: https://huggingface.co/llmfan46/gemma-4-E2B-it-ultra-uncensored-heretic
 - Dataset Python: https://huggingface.co/datasets/F-A-I-L/kodcode-verified-python-235k
 - Dataset front-end: https://huggingface.co/datasets/glyphsoftware/opus-4.6-frontend-development

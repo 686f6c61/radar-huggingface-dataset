@@ -2,7 +2,7 @@
 
 ## Resumen
 
-π0.5 BlockPAP es un conjunto de checkpoints de ajuste fino del modelo base `lerobot/pi05_base` (π0.5) para la tarea robótica BlockPAP. Lo publica el usuario `aaroncaozj` en HuggingFace y está pensado para control de robots manipuladores mediante imitación visual: recibe imágenes de cámara y produce acciones motoras. El repositorio agrupa seis checkpoints organizados por método de entrenamiento (`co-sft` y `nft-rl`), configuración de cámara (`front` o `front-back`) y paso global de entrenamiento.
+π0.5 BlockPAP es un conjunto de checkpoints de ajuste fino del modelo base `lerobot/pi05_base` (π0.5) para la tarea robótica BlockPAP. Lo publica el usuario `aaroncaozj` en Hugging Face y está pensado para control de robots manipuladores mediante imitación visual: recibe imágenes de cámara y produce acciones motoras. El repositorio agrupa seis checkpoints organizados por método de entrenamiento (`co-sft` y `nft-rl`), configuración de cámara (`front` o `front-back`) y paso global de entrenamiento.
 
 El modelo se apoya en π0.5, la arquitectura de política robótica de Physical Intelligence basada en un transformer visión-lenguaje-acción (VLA) que combina un backbone preentrenado con un cabezal de acciones. El ajuste se realiza sobre el dataset `aaroncaozj/BlockPAP-v0_Mix`, que no está documentado en la información disponible. El tamaño del repositorio es de 121,6 GB, aunque cada checkpoint consolidado de inferencia pesa 7,9 GB.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 BlockPAP (`aaroncaozj/pi05_BlockPAP`) | no disponible (checkpoint 7,9 GB) | no disponible | Manipulación robótica (BlockPAP) | Apache 2.0 | HuggingFace |
-| `lerobot/pi05_base` | no disponible | no disponible | Política VLA base para robótica | no disponible en la información | HuggingFace |
+| π0.5 BlockPAP (`aaroncaozj/pi05_BlockPAP`) | no disponible (checkpoint 7,9 GB) | no disponible | Manipulación robótica (BlockPAP) | Apache 2.0 | Hugging Face |
+| `lerobot/pi05_base` | no disponible | no disponible | Política VLA base para robótica | no disponible en la información | Hugging Face |
 | π0 (Physical Intelligence) | no disponible | no disponible | Política VLA generalista | no disponible en la información | no disponible en la información |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de los modelos comparables en la información proporcionada, por lo que la comparación se limita a licencia, disponibilidad y propósito.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de los m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aaroncaozj/pi05_BlockPAP
+- Repositorio Hugging Face: https://huggingface.co/aaroncaozj/pi05_BlockPAP
 - Estadísticas de normalización: https://huggingface.co/aaroncaozj/pi05_norm_stats_collection
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/aaroncaozj/BlockPAP-v0_Mix

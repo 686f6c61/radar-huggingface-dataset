@@ -65,9 +65,9 @@ La métrica KL se calcula con top-256 forzado contra el modelo stock sobre un co
 
 | Modelo | Parámetros | Contexto | Rendimiento HumanEval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-REAM-288-MLX-4bit (este) | 21.2B (4-bit) | no disponible | 88.0% (slice de 25) | qwen-community-license-1.0 | HuggingFace |
-| Qwen3.8-Flash-Next-REAP-288-MLX-4bit (sh0wie) | similar (prune) | no disponible | 92.0% (slice de 25) | qwen-community-license-1.0 | HuggingFace |
-| Qwen3.8-Flash-Next stock (512e) | 125B + 51B n-gram | 1M (según QwenCloud) | 90.0% (50 tareas) | qwen-community-license-1.0 | QwenCloud / HuggingFace |
+| Qwen3.8-Flash-Next-REAM-288-MLX-4bit (este) | 21.2B (4-bit) | no disponible | 88.0% (slice de 25) | qwen-community-license-1.0 | Hugging Face |
+| Qwen3.8-Flash-Next-REAP-288-MLX-4bit (sh0wie) | similar (prune) | no disponible | 92.0% (slice de 25) | qwen-community-license-1.0 | Hugging Face |
+| Qwen3.8-Flash-Next stock (512e) | 125B + 51B n-gram | 1M (según QwenCloud) | 90.0% (50 tareas) | qwen-community-license-1.0 | QwenCloud / Hugging Face |
 
 La comparativa se limita a las variantes del mismo modelo base. No se dispone de datos para comparar con otros MoE multimodales de tamaño similar.
 
@@ -84,7 +84,7 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WaveCut/Qwen3.8-Flash-Next-REAM-288-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/WaveCut/Qwen3.8-Flash-Next-REAM-288-MLX-4bit
 - Modelo base (sin cuantizar): https://huggingface.co/WaveCut/Qwen3.8-Flash-Next-REAM-288
 - Modelo REAP-288 de sh0wie (referencia A/B): https://huggingface.co/sh0wie/Qwen3.8-Flash-Next-REAP-288-MLX-4bit
 - MTP drafter para decodificación especulativa: https://huggingface.co/sh0wie/Qwen3.8-Flash-Next-MTP-Drafter-MLX-bf16

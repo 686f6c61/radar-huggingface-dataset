@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-240` es un checkpoint de un modelo de lenguaje de aproximadamente 3.086 millones de parámetros publicado en HuggingFace por el usuario `yuxuanw8`. Por el identificador y las etiquetas del repositorio, se trata de un ajuste o entrenamiento posterior sobre una base de la familia Qwen (la etiqueta declarada es `qwen2`), orientado a tareas de generación de texto y conversación. El sufijo del nombre apunta a un entrenamiento sobre el conjunto de datos HotpotQA (preguntas y respuestas multi-salto) mediante algún método de optimización de política, y `checkpoint-240` indica que es un estado intermedio de un entrenamiento más largo, no necesariamente el modelo final.
+El modelo `yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-240` es un checkpoint de un modelo de lenguaje de aproximadamente 3.086 millones de parámetros publicado en Hugging Face por el usuario `yuxuanw8`. Por el identificador y las etiquetas del repositorio, se trata de un ajuste o entrenamiento posterior sobre una base de la familia Qwen (la etiqueta declarada es `qwen2`), orientado a tareas de generación de texto y conversación. El sufijo del nombre apunta a un entrenamiento sobre el conjunto de datos HotpotQA (preguntas y respuestas multi-salto) mediante algún método de optimización de política, y `checkpoint-240` indica que es un estado intermedio de un entrenamiento más largo, no necesariamente el modelo final.
 
-La relevancia de esta ficha es limitada y conviene decirlo con claridad: el repositorio no incluye model card descriptiva (la existente es la plantilla automática de HuggingFace, con todos los campos como "More Information Needed"), no declara licencia, no declara idiomas y no publica resultados de evaluación. Tiene cero descargas y cero "likes" en el momento de la consulta, lo que lo sitúa como un artefacto de investigación personal más que como un modelo listo para producción.
+La relevancia de esta ficha es limitada y conviene decirlo con claridad: el repositorio no incluye model card descriptiva (la existente es la plantilla automática de Hugging Face, con todos los campos como "More Information Needed"), no declara licencia, no declara idiomas y no publica resultados de evaluación. Tiene cero descargas y cero "likes" en el momento de la consulta, lo que lo sitúa como un artefacto de investigación personal más que como un modelo listo para producción.
 
 En consecuencia, los datos que se ofrecen a continuación proceden en su mayoría de los metadatos reales del repositorio (recuento de parámetros de los ficheros safetensors, etiquetas, tamaño del repo) y del análisis del propio identificador. Cualquier aspecto no verificable se marca explícitamente como "no disponible" en lugar de extrapolarse.
 
@@ -49,7 +49,7 @@ Dado que el modelo carece de documentacion, evaluacion y licencia, los casos sig
 - Prototipado rapido en local: con ~3 B de parametros, cabe en una GPU de consumo, lo que permite usarlo como banco de pruebas para prompts y plantillas de chat antes de migrar a un modelo mayor.
 - Clasificacion y extraccion de informacion: uso del modelo como base para ajuste supervisado en tareas de extraccion de entidades o respuesta a preguntas sobre textos cortos.
 - Evaluacion comparativa de checkpoints: util para estudiar como evoluciona la calidad frente al numero de pasos de entrenamiento (el identificador indica el paso 240).
-- Docencia y formacion: ejemplo practico de modelo publicado sin model card, util para ilustrar buenas y malas practicas de documentacion en HuggingFace.
+- Docencia y formacion: ejemplo practico de modelo publicado sin model card, util para ilustrar buenas y malas practicas de documentacion en Hugging Face.
 
 No se recomienda su uso en atencion al cliente, generacion de codigo en produccion ni ningun escenario con usuarios finales mientras no existan licencia, evaluacion y datos de sesgo.
 
@@ -77,7 +77,7 @@ La comparacion es estructural, ya que no existen datos de rendimiento de este ch
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-...-checkpoint-240 | 3,09 B | No disponible | No disponible | Repositorio HuggingFace, 0 descargas |
+| yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-...-checkpoint-240 | 3,09 B | No disponible | No disponible | Repositorio Hugging Face, 0 descargas |
 | Qwen2.5-3B (familia Qwen) | ~3 B | 32.768 tokens (segun datos publicos de Qwen) | Apache 2.0 (segun datos publicos) | Ampliamente disponible, pesos oficiales y cuantizaciones |
 | Llama-3.2-3B | ~3 B | 128.000 tokens (segun datos publicos de Meta) | Licencia comunitaria Llama 3.2 | Ampliamente disponible, pesos oficiales y cuantizaciones |
 | Qwen3-4B (familia Qwen3) | ~4 B | No disponible en la informacion recogida | No disponible en la informacion recogida | Repositorio oficial Qwen |
@@ -99,10 +99,10 @@ La diferencia practica fundamental no es de tamano sino de madurez: frente a los
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-240
+- Repositorio Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-240
 - Repositorio relacionado del mismo autor: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3
 - Informe tecnico de Qwen3: https://arxiv.org/pdf/2505.09388
-- Modelo Qwen3-8B en HuggingFace (referencia de la familia): https://huggingface.co/Qwen/Qwen3-8B
+- Modelo Qwen3-8B en Hugging Face (referencia de la familia): https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio de la serie Qwen3.x: https://github.com/QwenLM/Qwen3.8
 - Articulo citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre impacto ambiental del calculo): https://arxiv.org/abs/1910.09700

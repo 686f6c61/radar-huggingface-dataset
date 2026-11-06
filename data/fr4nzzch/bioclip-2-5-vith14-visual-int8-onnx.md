@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fr4nzzch/bioclip-2.5-vith14-visual-int8-onnx | no disponible (fichero int8 de 637,9 MB) | no aplica (visión) | ONNX int8 | MIT | HuggingFace |
-| imageomics/bioclip-2.5-vith14 (modelo base) | no disponible | no aplica (visión) | safetensors / open_clip | MIT | HuggingFace |
-| fr4nzzch/butterfly-wing-detector-onnx | no disponible | no aplica (detección) | ONNX | AGPL-3.0 | HuggingFace |
-| fr4nzzch/butterfly-id-classifier | no disponible | no aplica (clasificación) | no disponible | CC BY-NC 4.0 | HuggingFace |
+| fr4nzzch/bioclip-2.5-vith14-visual-int8-onnx | no disponible (fichero int8 de 637,9 MB) | no aplica (visión) | ONNX int8 | MIT | Hugging Face |
+| imageomics/bioclip-2.5-vith14 (modelo base) | no disponible | no aplica (visión) | safetensors / open_clip | MIT | Hugging Face |
+| fr4nzzch/butterfly-wing-detector-onnx | no disponible | no aplica (detección) | ONNX | AGPL-3.0 | Hugging Face |
+| fr4nzzch/butterfly-id-classifier | no disponible | no aplica (clasificación) | no disponible | CC BY-NC 4.0 | Hugging Face |
 
 El modelo base es la referencia directa: mismo encoder en fp32, mayor tamaño y mayor fidelidad numérica, pero sin la optimización para navegador. El detector de alas y la cabeza clasificadora son componentes complementarios del mismo pipeline, no alternativas al encoder.
 
@@ -91,7 +91,7 @@ El modelo base es la referencia directa: mismo encoder en fp32, mayor tamaño y 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fr4nzzch/bioclip-2.5-vith14-visual-int8-onnx
+- Repositorio Hugging Face: https://huggingface.co/fr4nzzch/bioclip-2.5-vith14-visual-int8-onnx
 - Modelo base: https://huggingface.co/imageomics/bioclip-2.5-vith14
 - Detector de alas: https://huggingface.co/fr4nzzch/butterfly-wing-detector-onnx
 - Cabeza clasificadora: https://huggingface.co/fr4nzzch/butterfly-id-classifier

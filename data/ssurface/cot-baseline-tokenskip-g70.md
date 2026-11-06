@@ -4,7 +4,7 @@
 
 `cot-baseline-tokenskip-g70` es un adaptador LoRA de bajo rango (r=16) desarrollado por `ssurface` (Anatolii Frolov) sobre el modelo base Qwen/Qwen3-4B-Instruct-2507. Su propósito es aplicar una compresión de cadenas de razonamiento (chain-of-thought, CoT) estilo TokenSkip, una técnica que omite tokens redundantes durante la generación del razonamiento para reducir la longitud de las cadenas sin sacrificar la precisión. El adaptador se ha entrenado mediante supervisión fina por destilación sobre el dataset GSM8K, especializándose en problemas de razonamiento matemático.
 
-El modelo resuelve el problema del coste computacional asociado a las cadenas de razonamiento largas en modelos de lenguaje, un aspecto crítico en entornos de producción donde la latencia y el consumo de tokens son factores limitantes. Al ser un adaptador PEFT, añade apenas 0.2 GB al modelo base y se integra fácilmente con el ecosistema HuggingFace. La relevancia actual radica en la tendencia hacia modelos de razonamiento extenso, donde la compresión de CoT permite mantener la calidad del razonamiento con un presupuesto de generación reducido.
+El modelo resuelve el problema del coste computacional asociado a las cadenas de razonamiento largas en modelos de lenguaje, un aspecto crítico en entornos de producción donde la latencia y el consumo de tokens son factores limitantes. Al ser un adaptador PEFT, añade apenas 0.2 GB al modelo base y se integra fácilmente con el ecosistema Hugging Face. La relevancia actual radica en la tendencia hacia modelos de razonamiento extenso, donde la compresión de CoT permite mantener la calidad del razonamiento con un presupuesto de generación reducido.
 
 El adaptador está licenciado bajo Apache-2.0 y soporta exclusivamente el idioma inglés. No se trata de un modelo independiente, sino de un complemento que modifica el comportamiento del Qwen3-4B-Instruct-2507, por lo que su uso requiere cargar el modelo base y aplicar el adaptador mediante la librería `peft`.
 
@@ -58,7 +58,7 @@ Condiciones de evaluacion: n=1317, decodificacion greedy, single-turn, sin exemp
 
 - Inferencia: requiere cargar el modelo base Qwen3-4B-Instruct-2507 junto con el adaptador. El modelo base en bf16 ocupa aproximadamente 8 GB de VRAM; con cuantizacion (por ejemplo, 4 bits) puede reducirse a unos 3-4 GB. El adaptador anade un overhead minimo (0.2 GB en disco, y en memoria proporcional a los parametros LoRA).
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para bf16 (RTX 3080/3090/4090, A100, H100) o con 4 GB para cuantizacion 4 bits (RTX 3060, etc.).
-- Opciones de despliegue: vLLM, HuggingFace TGI, llama.cpp (si se exporta a GGUF) y Ollama (si se integra el adaptador). La libreria `peft` permite cargar el adaptador sobre el modelo base en entornos transformers.
+- Opciones de despliegue: vLLM, Hugging Face TGI, llama.cpp (si se exporta a GGUF) y Ollama (si se integra el adaptador). La libreria `peft` permite cargar el adaptador sobre el modelo base en entornos transformers.
 - Latencia y throughput: no disponibles. Dependen del modelo base, la cuantizacion y el hardware; la compresion de CoT deberia reducir el tiempo de generacion al producir menos tokens, pero no se proporcionan mediciones concretas.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ssurface/cot-baseline-tokenskip-g70
+- Hugging Face: https://huggingface.co/ssurface/cot-baseline-tokenskip-g70
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Dataset: https://huggingface.co/datasets/openai/gsm8k
 - Citacion (sin enlace directo): Frolov, Anatolii. "Chain-of-Thought Compression Dialects", 2026.

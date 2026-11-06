@@ -58,7 +58,7 @@ No disponible. No se ha identificado ningún modelo comparable en la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stevencook84/llm-summarizer-scratch
+- Hugging Face: https://huggingface.co/Stevencook84/llm-summarizer-scratch
 - Repositorio similar (implementación de resumidor desde cero): https://github.com/Samir-Guenchi/llm-summarizer-from-scratch
 - Guía de resumen con LLM (Hugging Face): https://huggingface.co/learn/llm-course/en/chapter7/5
 - Guía completa de resumen con LLM: https://github.com/ritun16/llm-text-summarization

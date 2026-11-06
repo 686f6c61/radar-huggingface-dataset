@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MA Experiment 001 es un modelo de lenguaje de tipo GPT decoder-only entrenado desde cero por el autor identificado como nashara en HuggingFace. Se trata de un proyecto de investigación de una Matura suiza centrado en la eficiencia de modelos de lenguaje, y el repositorio publica exclusivamente los pesos de inferencia en FP16, el tokenizador correspondiente y la implementación propia necesaria para cargarlo. Con 30.384.000 parámetros (10 capas, 6 cabezas de atención, anchura oculta 384 y una longitud de contexto de 1.024 tokens), es un modelo deliberadamente compacto que sigue la implementación nanoGPT de Andrej Karpathy.
+MA Experiment 001 es un modelo de lenguaje de tipo GPT decoder-only entrenado desde cero por el autor identificado como nashara en Hugging Face. Se trata de un proyecto de investigación de una Matura suiza centrado en la eficiencia de modelos de lenguaje, y el repositorio publica exclusivamente los pesos de inferencia en FP16, el tokenizador correspondiente y la implementación propia necesaria para cargarlo. Con 30.384.000 parámetros (10 capas, 6 cabezas de atención, anchura oculta 384 y una longitud de contexto de 1.024 tokens), es un modelo deliberadamente compacto que sigue la implementación nanoGPT de Andrej Karpathy.
 
 El modelo es un modelo base (no ajustado por instrucciones) entrenado durante 18.310 pasos sobre el dataset FineWeb-Edu con semilla 1337. Su relevancia es fundamentalmente educativa y de investigación: sirve como banco de pruebas reproducible para estudiar el comportamiento de modelos pequeños, el escalado, la tokenización y las técnicas de entrenamiento desde cero, en un rango de tamaño que cabe en cualquier GPU de consumo e incluso en CPU.
 
-No incluye cuantizaciones publicadas distintas de FP16, no declara licencia en los metadatos de HuggingFace (aunque el README indica que hereda la licencia MIT de nanoGPT) y sus pesos no se cargan directamente con `transformers.AutoModel`, sino con el `model.py` incluido en el repositorio.
+No incluye cuantizaciones publicadas distintas de FP16, no declara licencia en los metadatos de Hugging Face (aunque el README indica que hereda la licencia MIT de nanoGPT) y sus pesos no se cargan directamente con `transformers.AutoModel`, sino con el `model.py` incluido en el repositorio.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ No incluye cuantizaciones publicadas distintas de FP16, no declara licencia en l
 | Longitud de contexto | 1.024 tokens |
 | Tipos de cuantizacion | solo FP16 (no se publican GGUF ni otras cuantizaciones) |
 | Idiomas soportados | ingles (en) |
-| Licencia | no declarada en los metadatos de HuggingFace; el README indica que la implementacion conserva la licencia MIT de nanoGPT |
+| Licencia | no declarada en los metadatos de Hugging Face; el README indica que la implementacion conserva la licencia MIT de nanoGPT |
 | Formato de pesos | PyTorch nativo (`model.fp16.pt`, FP16); no cargable con `transformers.AutoModel` |
 | Capas | 10 |
 | Cabezas de atencion | 6 |
@@ -85,13 +85,13 @@ Los datos de rendimiento de benchmarks de estos modelos comparables no se incluy
 - El idioma declarado es únicamente el inglés; el comportamiento en otros idiomas no está garantizado ni evaluado.
 - Los sesgos conocidos no están documentados; al entrenar sobre FineWeb-Edu, hereda los sesgos presentes en ese corpus.
 - Riesgo de alucinación elevado por el reducido tamaño del modelo y la ausencia de ajuste por instrucciones.
-- La licencia no está declarada en los metadatos de HuggingFace; aunque el README indica que la implementación conserva la licencia MIT de nanoGPT, conviene verificar el archivo `LICENSE` del repositorio antes de un uso comercial.
+- La licencia no está declarada en los metadatos de Hugging Face; aunque el README indica que la implementación conserva la licencia MIT de nanoGPT, conviene verificar el archivo `LICENSE` del repositorio antes de un uso comercial.
 - Los pesos no son cargables con `transformers.AutoModel`; dependen de `model.py`, lo que limita su integración directa en pipelines estándar.
 - El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, por lo que no hay validación comunitaria ni informes independientes de uso.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nashara/ma-experiment-001
+- Modelo en Hugging Face: https://huggingface.co/nashara/ma-experiment-001
 - Dataset de entrenamiento FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Implementación nanoGPT de Andrej Karpathy (base del código): https://github.com/karpathy/nanoGPT
 - Paper de FineWeb / FineWeb-Edu: no disponible en la informacion proporcionada

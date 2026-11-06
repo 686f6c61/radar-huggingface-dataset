@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos numéricos en la información 
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/AbstractPhil/qwen3.5-0.8b-think-symbolic-image
+- Hugging Face del adaptador: https://huggingface.co/AbstractPhil/qwen3.5-0.8b-think-symbolic-image
 - Fine-tune completo (anunciado): https://huggingface.co/AbstractPhil/qwen3.5-0.8b-think-symbolic-image-full
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de captions: https://huggingface.co/datasets/AbstractPhil/thought-symbolic-image-captions

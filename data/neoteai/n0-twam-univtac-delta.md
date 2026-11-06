@@ -73,7 +73,7 @@ No se dispone de modelos comparables directos en la información proporcionada. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NeoteAI/n0-twam-univtac-delta
+- Hugging Face: https://huggingface.co/NeoteAI/n0-twam-univtac-delta
 - GitHub (repositorio N0-TWAM): https://github.com/neoteai/N0-TWAM
 - Página de investigación: https://research.neoteai.com/n0-twam/
 - Paper arXiv: https://arxiv.org/abs/2607.23783

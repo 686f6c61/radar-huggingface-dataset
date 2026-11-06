@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RobustRAG Longformer-1024 es un modelo de clasificación basado en Longformer, publicado por el usuario nishantwhat en HuggingFace, diseñado específicamente para la detección de alucinaciones en sistemas de generación aumentada por recuperación (RAG). El modelo se presenta como un cabezal de clasificación ("head") sobre una arquitectura Longformer con atención de ventana deslizante y una longitud de contexto de 1024 tokens, orientado a determinar si una respuesta generada está respaldada por el contexto recuperado o, por el contrario, contiene información alucinada.
+RobustRAG Longformer-1024 es un modelo de clasificación basado en Longformer, publicado por el usuario nishantwhat en Hugging Face, diseñado específicamente para la detección de alucinaciones en sistemas de generación aumentada por recuperación (RAG). El modelo se presenta como un cabezal de clasificación ("head") sobre una arquitectura Longformer con atención de ventana deslizante y una longitud de contexto de 1024 tokens, orientado a determinar si una respuesta generada está respaldada por el contexto recuperado o, por el contrario, contiene información alucinada.
 
 Con 148.660.994 parámetros totales en formato safetensors y un tamaño de repositorio de 0,6 GB, el modelo se posiciona como una alternativa ligera y desplegable en infraestructura modesta para tareas de verificación factual en pipelines RAG. La model card reporta métricas sobre el conjunto de test de RAGTruth: ROC-AUC de 0,8296, PR-AUC de 0,7527 y una accuracy del 79,78%, lo que lo convierte en una pieza relevante para equipos que necesitan filtrar respuestas no fundamentadas antes de mostrarlas al usuario final.
 
@@ -87,11 +87,11 @@ La comparación de rendimiento frente a estas alternativas no puede establecerse
 - Riesgo de alucinación del propio clasificador: al ser un modelo discriminativo, no genera texto, pero sus etiquetas pueden ser incorrectas y arrastrar sesgos del dataset de entrenamiento.
 - Licencia MIT: permite uso comercial y modificación, pero no se documentan garantías ni soporte por parte del autor; el modelo tiene 21 descargas y 0 likes, lo que sugiere escasa validación comunitaria.
 - Datos de entrenamiento no documentados: la ausencia de detalles sobre composición del dataset, número de tokens y proceso de ajuste dificulta la reproducibilidad y la evaluación de riesgos.
-- Fecha de creación en el repositorio (2026-10-25) y ausencia de pipeline declarado en HuggingFace: verificar la integridad del artefacto antes de desplegarlo en producción.
+- Fecha de creación en el repositorio (2026-10-25) y ausencia de pipeline declarado en Hugging Face: verificar la integridad del artefacto antes de desplegarlo en producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nishantwhat/robustrag-longformer-head
+- Modelo en Hugging Face: https://huggingface.co/nishantwhat/robustrag-longformer-head
 - Paper de Longformer (referencia arquitectónica): https://arxiv.org/abs/2004.05150
 - Dataset RAGTruth (referencia de evaluación): https://arxiv.org/abs/2301.13808
 - Repositorio RAGTruth en GitHub: https://github.com/ParticleMedia/RAGTruth

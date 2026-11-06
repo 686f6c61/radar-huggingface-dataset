@@ -82,6 +82,6 @@ Nota: los datos de Horvath, Hannum y PhenoAge provienen de conocimiento general;
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pyaging/zhangblup
+- Modelo en Hugging Face: https://huggingface.co/pyaging/zhangblup
 - Paper original: Zhang, Q., Vallerga, C.L., Walker, R.M. et al. Improved precision of epigenetic clock estimates across tissues and its implication for biological ageing. Genome Medicine 11, 54 (2019). DOI: https://doi.org/10.1186/s13073-019-0667-1
 - Documentación de pyaging: https://pyaging.readthedocs.io

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `SeNKrOn10/Demir-Demircioglu` es un artefacto alojado en HuggingFace por el usuario SeNKrOn10. En el momento de la consulta, la plataforma no declara tarea (*pipeline*), licencia, idiomas soportados ni arquitectura, y el repositorio no incluye documentación asociada (model card) más allá de los metadatos básicos. El tamaño del repositorio es de 0,1 GB, un volumen reducido que, sin confirmación documental, resulta compatible con modelos pequeños, adaptadores o comprobantes de pesos más que con un modelo de gran escala.
+El repositorio `SeNKrOn10/Demir-Demircioglu` es un artefacto alojado en Hugging Face por el usuario SeNKrOn10. En el momento de la consulta, la plataforma no declara tarea (*pipeline*), licencia, idiomas soportados ni arquitectura, y el repositorio no incluye documentación asociada (model card) más allá de los metadatos básicos. El tamaño del repositorio es de 0,1 GB, un volumen reducido que, sin confirmación documental, resulta compatible con modelos pequeños, adaptadores o comprobantes de pesos más que con un modelo de gran escala.
 
 Los únicos datos verificables son los metadatos de publicación: 0 descargas, 1 *like*, etiqueta `region:us` y fechas de creación y actualización del 13 de septiembre de 2026. No hay información pública sobre el proceso de entrenamiento, el conjunto de datos, la tokenización ni los formatos de pesos disponibles.
 
@@ -20,7 +20,7 @@ Dado que no existe ficha técnica ni publicación asociada, esta ficha se limita
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
-| Identificador en HuggingFace | SeNKrOn10/Demir-Demircioglu |
+| Identificador en Hugging Face | SeNKrOn10/Demir-Demircioglu |
 | Tarea declarada (pipeline) | no disponible |
 | Etiquetas declaradas | region:us |
 | Descargas | 0 |
@@ -59,7 +59,7 @@ Los siguientes escenarios son hipotéticos y quedan condicionados a que se verif
 - Prototipado académico de técnicas de ajuste fino: el tamaño reducido del repositorio (0,1 GB) es compatible con adaptadores, pero no se confirma que contenga uno.
 - Evaluación de sesgos y seguridad en modelos de autoría individual: precisaría acceso a la ficha de entrenamiento y a la composición del dataset, inexistentes.
 - Despliegue en *edge* o en CPU: solo tendría sentido si el artefacto fuera un modelo pequeño y con pesos en GGUF u otro formato de inferencia optimizado; el formato de pesos es no disponible.
-- Integración en una demo de HuggingFace Spaces: imposible de planificar sin conocer la tarea y el formato de pesos.
+- Integración en una demo de Hugging Face Spaces: imposible de planificar sin conocer la tarea y el formato de pesos.
 - *Fine-tuning* sobre dominio propio: inviable sin licencia declarada y sin conocer la arquitectura base.
 
 ## Benchmarks y rendimiento
@@ -92,6 +92,6 @@ No disponible. No es posible establecer una comparativa sin conocer al menos el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SeNKrOn10/Demir-Demircioglu
+- Hugging Face: https://huggingface.co/SeNKrOn10/Demir-Demircioglu
 
 No se encontraron enlaces relevantes adicionales (papers, blogs, repositorios de código o demos). La búsqueda web realizada devolvió exclusivamente resultados sobre marcas de bebidas alcohólicas, sin relación alguna con el modelo.

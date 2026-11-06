@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nemotron OCR v2 es un sistema de reconocimiento óptico de caracteres (OCR) multimodal desarrollado por NVIDIA dentro de la colección NeMo Retriever, orientado a la extracción de texto de imágenes complejas del mundo real. No es un modelo de lenguaje generativo, sino un pipeline híbrido compuesto por tres módulos neuronales entrenados conjuntamente: un detector de regiones de texto, un reconocedor de secuencias y un modelo relacional para el análisis de layout y orden de lectura. Esta ficha documenta la réplica publicada por el usuario Metausermac13 en HuggingFace, que distribuye los pesos del modelo original de NVIDIA.
+Nemotron OCR v2 es un sistema de reconocimiento óptico de caracteres (OCR) multimodal desarrollado por NVIDIA dentro de la colección NeMo Retriever, orientado a la extracción de texto de imágenes complejas del mundo real. No es un modelo de lenguaje generativo, sino un pipeline híbrido compuesto por tres módulos neuronales entrenados conjuntamente: un detector de regiones de texto, un reconocedor de secuencias y un modelo relacional para el análisis de layout y orden de lectura. Esta ficha documenta la réplica publicada por el usuario Metausermac13 en Hugging Face, que distribuye los pesos del modelo original de NVIDIA.
 
 El modelo se ofrece en dos variantes: `v2_english`, optimizada para inglés con manejo de regiones a nivel de palabra (53,8 millones de parámetros totales), y `v2_multilingual`, que cubre inglés, chino simplificado y tradicional, japonés, coreano y ruso con regiones a nivel de línea (83,9 millones de parámetros). Ambas comparten el mismo detector basado en RegNetX-8GF y el mismo modelo relacional, diferenciándose únicamente en la capacidad del reconocedor Transformer.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Idiomas | Layout / orden de lectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron OCR v2 (este) | 53,8M / 83,9M | en, zh, ja, ko, ru (+ tags) | Sí, modelo relacional | NVIDIA Open Model License | HuggingFace, NGC, build.nvidia.com |
+| Nemotron OCR v2 (este) | 53,8M / 83,9M | en, zh, ja, ko, ru (+ tags) | Sí, modelo relacional | NVIDIA Open Model License | Hugging Face, NGC, build.nvidia.com |
 | Tesseract OCR | No disponible | Muy amplio | Limitado (heurístico) | Apache 2.0 | Open source |
 | PaddleOCR | No disponible | Amplio (incl. zh) | Parcial | Apache 2.0 | Open source |
 | DocTR (Mindee) | No disponible | Varios | Parcial | Apache 2.0 | Open source |
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo publicados en la información 
 
 ## Enlaces
 
-- Repositorio HuggingFace (réplica): https://huggingface.co/Metausermac13/nemotron-ocr-v2
+- Repositorio Hugging Face (réplica): https://huggingface.co/Metausermac13/nemotron-ocr-v2
 - Repositorio oficial NVIDIA: https://huggingface.co/nvidia/nemotron-ocr-v2
 - Demo en build.nvidia.com: https://build.nvidia.com/nvidia/nemotron-ocr-v2
 - Contenedor NGC: https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo-microservices/containers/nemoretriever-ocr-v2

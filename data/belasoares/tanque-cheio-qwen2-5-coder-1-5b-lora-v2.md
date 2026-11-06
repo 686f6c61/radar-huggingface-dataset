@@ -73,10 +73,10 @@ Otros datos reportados: EX tolerante (acepta columnas de más) del 85,3%; SQL v�
 
 | Modelo | Parámetros | Contexto | EX en el test del proyecto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (v2) | 18,5 M sobre base 1,5B | 1.280 tokens de entrenamiento | 80,7% | Apache 2.0 | HuggingFace (PEFT) |
-| Qwen2.5-Coder-32B-Instruct (nf4) | 32B | no disponible en la información | 78,0% | Apache 2.0 (según el modelo base de Qwen) | HuggingFace |
-| Qwen2.5-Coder-14B-Instruct (nf4) | 14B | no disponible en la información | 60,0% | Apache 2.0 (según el modelo base de Qwen) | HuggingFace |
-| Adaptador v1 del mismo autor | 18,5 M sobre base 1,5B | no disponible en la información | 76,0% | Apache 2.0 | HuggingFace (PEFT) |
+| Este adaptador (v2) | 18,5 M sobre base 1,5B | 1.280 tokens de entrenamiento | 80,7% | Apache 2.0 | Hugging Face (PEFT) |
+| Qwen2.5-Coder-32B-Instruct (nf4) | 32B | no disponible en la información | 78,0% | Apache 2.0 (según el modelo base de Qwen) | Hugging Face |
+| Qwen2.5-Coder-14B-Instruct (nf4) | 14B | no disponible en la información | 60,0% | Apache 2.0 (según el modelo base de Qwen) | Hugging Face |
+| Adaptador v1 del mismo autor | 18,5 M sobre base 1,5B | no disponible en la información | 76,0% | Apache 2.0 | Hugging Face (PEFT) |
 
 La comparación es válida únicamente dentro del dominio del test (preguntas sobre precios de la ANP en portugués); no implica superioridad general del adaptador frente a los modelos Qwen de mayor tamaño en otras tareas.
 
@@ -90,11 +90,11 @@ La comparación es válida únicamente dentro del dominio del test (preguntas so
 - La comparación con el 32B se hizo con este último en 4 bits, lo que infravalora su rendimiento real en fp16; el empate estadístico debe interpretarse con esa cautela.
 - Licencia Apache 2.0 en el adaptador, pero el uso comercial debe verificar también la licencia del modelo base Qwen2.5-Coder-1.5B-Instruct.
 - El repositorio solo contiene el adaptador (0,1 GB); es necesario descargar el modelo base por separado.
-- Fecha de creación del repositorio en HuggingFace: 2026-10-30, con 31 descargas y 0 likes en el momento de la consulta; no hay validación externa por parte de la comunidad.
+- Fecha de creación del repositorio en Hugging Face: 2026-10-30, con 31 descargas y 0 likes en el momento de la consulta; no hay validación externa por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/belasoares/tanque-cheio-qwen2.5-coder-1.5b-lora-v2
+- Hugging Face del adaptador: https://huggingface.co/belasoares/tanque-cheio-qwen2.5-coder-1.5b-lora-v2
 - Adaptador v1: https://huggingface.co/belasoares/tanque-cheio-qwen2.5-coder-1.5b-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/belasoares/tanque-cheio
 - Repositorio del proyecto: https://github.com/belasoaress/tanque-cheio

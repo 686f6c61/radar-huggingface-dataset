@@ -70,6 +70,6 @@ No se dispone de comparaciones directas publicadas por el autor. Como referencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/algomaster99/pretrain-2.2e18
+- Modelo en Hugging Face: https://huggingface.co/algomaster99/pretrain-2.2e18
 - Dataset de entrenamiento: https://huggingface.co/datasets/andre15silva/pretrain-pt-es-hi
 - Perfil de GitHub del autor: https://github.com/algomaster99

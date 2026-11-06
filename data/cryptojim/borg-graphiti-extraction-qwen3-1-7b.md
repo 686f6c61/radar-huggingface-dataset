@@ -89,7 +89,7 @@ No se dispone de información suficiente para una comparativa completa. El autor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cryptojim/borg-graphiti-extraction-qwen3-1.7b
+- Modelo en Hugging Face: https://huggingface.co/Cryptojim/borg-graphiti-extraction-qwen3-1.7b
 - Repo del proyecto Borg: https://github.com/h3ro-dev/borg
-- Modelo base en HuggingFace: https://huggingface.co/mlx-community/Qwen3-1.7B-4bit
+- Modelo base en Hugging Face: https://huggingface.co/mlx-community/Qwen3-1.7B-4bit
 - Página del modelo Qwen3-1.7B original: https://huggingface.co/Qwen/Qwen3-1.7B

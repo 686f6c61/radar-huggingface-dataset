@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lugman-madhiai/invoice-split-2023-adapter` es un adaptador de ajuste fino (fine-tuning) publicado en HuggingFace por el usuario lugman-madhiai. No es un modelo completo, sino un conjunto de pesos derivados de `unsloth/Qwen3-VL-8B-Instruct`, un modelo multimodal de visión-lenguaje de la familia Qwen3-VL con aproximadamente 8 000 millones de parámetros. El nombre del repositorio sugiere que el ajuste se ha orientado a tareas de segmentación y tratamiento de facturas (invoice splitting), probablemente entrenado sobre documentos de 2023, aunque la model card no documenta el conjunto de datos utilizado.
+`lugman-madhiai/invoice-split-2023-adapter` es un adaptador de ajuste fino (fine-tuning) publicado en Hugging Face por el usuario lugman-madhiai. No es un modelo completo, sino un conjunto de pesos derivados de `unsloth/Qwen3-VL-8B-Instruct`, un modelo multimodal de visión-lenguaje de la familia Qwen3-VL con aproximadamente 8 000 millones de parámetros. El nombre del repositorio sugiere que el ajuste se ha orientado a tareas de segmentación y tratamiento de facturas (invoice splitting), probablemente entrenado sobre documentos de 2023, aunque la model card no documenta el conjunto de datos utilizado.
 
 El adaptador se ha entrenado con Unsloth, una biblioteca de optimización que, según la propia model card, permitió un entrenamiento "2x más rápido". El repositorio ocupa 0,2 GB, un tamaño coherente con un adaptador LoRA en lugar de un modelo con pesos completos, y se distribuye en formato safetensors con licencia Apache 2.0 y etiqueta de idioma únicamente en inglés.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia (modelo base de ~8 000 millones de parámetros fusionado con el adaptador): en bf16/fp16, del orden de 16 GB de pesos más memoria para caché KV e imágenes; en cuantización de 8 bits, aproximadamente 9-10 GB; en cuantización de 4 bits, aproximadamente 5-6 GB.
 - GPU recomendadas: A100 40/80 GB, H100, L40S o A6000 para servir en precisión completa con lotes moderados; RTX 4090 (24 GB) o RTX 3090 (24 GB) para inferencia en bf16 con una sola petición.
 - Compatibilidad con GPU de consumo: sí, en tarjetas de 16 GB o más si se aplica cuantización de 8 o 4 bits; en GPUs de 12 GB la cuantización de 4 bits es el escenario realista, con margen ajustado para entradas de imagen de alta resolución.
-- Opciones de despliegue: transformers con PEFT para fusionar el adaptador; vLLM o TGI para servir el modelo fusionado; llama.cpp/Ollama si se convierte a GGUF; los tags del repositorio incluyen `text-generation-inference` y `endpoints_compatible`, lo que sugiere compatibilidad con TGI y con los endpoints gestionados de HuggingFace.
+- Opciones de despliegue: transformers con PEFT para fusionar el adaptador; vLLM o TGI para servir el modelo fusionado; llama.cpp/Ollama si se convierte a GGUF; los tags del repositorio incluyen `text-generation-inference` y `endpoints_compatible`, lo que sugiere compatibilidad con TGI y con los endpoints gestionados de Hugging Face.
 - Latencia y throughput: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ La comparación cuantitativa no es posible con la información disponible: no ha
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/lugman-madhiai/invoice-split-2023-adapter
+- Hugging Face del modelo: https://huggingface.co/lugman-madhiai/invoice-split-2023-adapter
 - Modelo base: https://huggingface.co/unsloth/Qwen3-VL-8B-Instruct
 - Perfil del autor: https://huggingface.co/lugman-madhiai
 - Otro repositorio del mismo autor: https://huggingface.co/lugman-madhiai/invoice-structured-extraction

@@ -66,7 +66,7 @@ Existen otros adaptadores de la misma campaña «dementor» con configuraciones 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_aya-expanse-8b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_aya-expanse-8b_seed42
 - Adaptador análogo con roles invertidos: https://huggingface.co/dementor-research/dpo_oasst1_aya-expanse-8b_as_gpt-oss-20b_seed42
 - Adaptador con gpt-oss-120b como fuente (FriendliAI): https://friendli.ai/models/dementor-research/dpo_oasst1_gpt-oss-120b_as_gpt-oss-20b_seed42
 - Adaptador con aya-expanse-8b como fuente y gpt-oss-120b como objetivo (FriendliAI): https://friendli.ai/models/dementor-research/dpo_oasst1_aya-expanse-8b_as_gpt-oss-120b_seed42

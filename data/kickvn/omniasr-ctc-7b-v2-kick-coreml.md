@@ -89,7 +89,7 @@ No se dispone de métricas de error (WER/CER) para ninguno de los modelos en la 
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/kickvn/omniASR-CTC-7B-v2-KICK-CoreML
+- Hugging Face (este modelo): https://huggingface.co/kickvn/omniASR-CTC-7B-v2-KICK-CoreML
 - Versión ONNX del mismo autor: https://huggingface.co/kickvn/omniASR-CTC-7B-v2-ONNX
 - Modelo base de Meta: https://huggingface.co/facebook/omniASR-CTC-7B
 - Paper, blog o demo oficial: no disponibles en la información proporcionada.

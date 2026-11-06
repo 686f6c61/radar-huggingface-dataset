@@ -19,7 +19,7 @@ El repositorio `Diyasing/bart-forecast` no contiene un modelo de aprendizaje aut
 
 ## Arquitectura y entrenamiento
 
-No se dispone de ninguna información sobre arquitectura, datos de entrenamiento, tokens procesados, técnicas de optimización o innovaciones técnicas, ya que el repositorio no incluye ningún artefacto de modelo. El nombre del repositorio, `bart-forecast`, podría sugerir una relación con el modelo BART de HuggingFace o con sistemas de predicción de tráfico BART, pero no se aporta ninguna evidencia de que exista un modelo subyacente. La model card solo describe un documento de investigación en formato Markdown.
+No se dispone de ninguna información sobre arquitectura, datos de entrenamiento, tokens procesados, técnicas de optimización o innovaciones técnicas, ya que el repositorio no incluye ningún artefacto de modelo. El nombre del repositorio, `bart-forecast`, podría sugerir una relación con el modelo BART de Hugging Face o con sistemas de predicción de tráfico BART, pero no se aporta ninguna evidencia de que exista un modelo subyacente. La model card solo describe un documento de investigación en formato Markdown.
 
 ## Capacidades
 
@@ -46,12 +46,12 @@ No disponible. No existe información técnica para comparar con modelos de la m
 - El repositorio no contiene un modelo entrenado ni pesos; cualquier uso como recurso de inferencia es inviable.
 - La ausencia de documentación técnica y de acceso al archivo `reading.md` impide verificar la calidad o validez del contenido académico.
 - La licencia cc-by-4.0 permite uso y adaptación con atribución, pero no implica que exista un modelo utilizable.
-- Riesgo de confusión con otros proyectos homónimos (modelo BART de HuggingFace, BARTNet para predicción de tráfico), que no guardan relación con este repositorio.
+- Riesgo de confusión con otros proyectos homónimos (modelo BART de Hugging Face, BARTNet para predicción de tráfico), que no guardan relación con este repositorio.
 - No se recomienda su uso en entornos de producción o investigación aplicada sin una verificación previa del contenido del archivo.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Diyasing/bart-forecast
-- Documentación de BART en HuggingFace: https://huggingface.co/docs/transformers/v4.56.0/en/model_doc/bart (referencia de arquitectura, no relacionada con este repositorio)
+- Repositorio de Hugging Face: https://huggingface.co/Diyasing/bart-forecast
+- Documentación de BART en Hugging Face: https://huggingface.co/docs/transformers/v4.56.0/en/model_doc/bart (referencia de arquitectura, no relacionada con este repositorio)
 - Artículo BARTNet en IEEE: https://ieeexplore.ieee.org/document/11050615 (referencia de predicción de tráfico, no relacionada)
 - Repositorio GitHub de BART Ridership Forecasting: https://github.com/nivegnachowdary/bart-ridership-forecasting (referencia de predicción de tráfico, no relacionada)

@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RepublicOfKorokke/gemma-4-E4B-it-qat-q4_0-unquantized-oQ4e-fp16
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-E4B
+- Repositorio Hugging Face: https://huggingface.co/RepublicOfKorokke/gemma-4-E4B-it-qat-q4_0-unquantized-oQ4e-fp16
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-E4B
 - Colección de modelos QAT de Gemma 4: https://huggingface.co/collections/google/gemma-4-qat-q4-0
 - Repositorio de oQ: https://github.com/jundot/omlx

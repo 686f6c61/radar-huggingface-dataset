@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CELL-LAB/C_SERVER-GRPO-MIX-MERGED
+- Repositorio Hugging Face: https://huggingface.co/CELL-LAB/C_SERVER-GRPO-MIX-MERGED
 - Paper MixGRPO (arxiv): https://arxiv.org/abs/2507.21802
 - Repositorio GitHub de MixGRPO: https://github.com/Tencent-Hunyuan/MixGRPO
 - Framework verl (RL y GRPO): https://github.com/verl-project/verl

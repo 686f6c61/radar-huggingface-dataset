@@ -79,6 +79,6 @@ La comparación es limitada porque no hay datos de rendimiento del adaptador. El
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/harsana-ai/Qwen_Any_NER_Extract)
+- [Repositorio Hugging Face](https://huggingface.co/harsana-ai/Qwen_Any_NER_Extract)
 - [Artículo de LoRA (arxiv:1910.09700)](https://arxiv.org/abs/1910.09700)
 - [Modelo base Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)

@@ -104,11 +104,11 @@ Comparacion con modelos externos: no disponible.
 - Riesgo de alucinacion: no aplicable a un SAE ni a clasificadores de vision. Si se integra en una aplicacion que genere texto a partir de sus salidas, ese riesgo corresponde al componente generativo, no a este repositorio.
 - La licencia MIT cubre los artefactos del repositorio, pero no las imagenes de los corpus originales, cuyos terminos de uso son los de cada fuente. CC12M tiene restricciones de uso propias que deben revisarse antes de cualquier aplicacion comercial.
 - Los metadatos indican 0 descargas y 0 likes en el momento de la consulta: no hay validacion externa de la comunidad ni informes independientes de reproduccion.
-- El repositorio se creo y actualizo el 16 de octubre de 2026 segun los metadatos de HuggingFace; conviene verificar si existen revisiones posteriores.
+- El repositorio se creo y actualizo el 16 de octubre de 2026 segun los metadatos de Hugging Face; conviene verificar si existen revisiones posteriores.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imageomics/mind-the-tail-data
+- Repositorio en Hugging Face: https://huggingface.co/imageomics/mind-the-tail-data
 - Articulo (arXiv:2610.21007): https://arxiv.org/abs/2610.21007
 - Pagina del proyecto: https://imageomics.github.io/mind-the-tail/
 - Codigo: https://github.com/Imageomics/mind-the-tail

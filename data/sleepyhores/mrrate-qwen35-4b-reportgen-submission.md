@@ -6,7 +6,7 @@ MR-RATE Qwen3.5-4B Report Generation es un ajuste fino del modelo base Qwen/Qwen
 
 Tecnicamente se trata de un VLM derivado de un transformer de 4.539.265.536 parametros (aproximadamente 4,54 mil millones), entrenado mediante un LoRA de cinco epocas que posteriormente se fusiono con los pesos base. El pipeline declarado es image-text-to-text, y el preprocesado convierte los volumenes seleccionados en una entrada tipo video. Es relevante ahora porque ejemplifica el uso de modelos multimodales abiertos de tamano medio en dominios medicos especializados, aunque su estado de envio fue fallido y no cuenta con validacion clinica.
 
-La ficha se basa unicamente en la informacion publicada en HuggingFace y en la model card del autor; los datos no disponibles se indican explicitamente.
+La ficha se basa unicamente en la informacion publicada en Hugging Face y en la model card del autor; los datos no disponibles se indican explicitamente.
 
 ## Especificaciones tecnicas
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MR-RATE Qwen3.5-4B Report Generation | 4,54 B | no disponible | Informes de RM (image-text-to-text) | other | HuggingFace, safetensors, requiere pipeline propio |
-| Qwen/Qwen3.5-4B (base) | aproximadamente 4 B (segun el nombre) | no disponible | Multimodal general | no disponible | HuggingFace |
+| MR-RATE Qwen3.5-4B Report Generation | 4,54 B | no disponible | Informes de RM (image-text-to-text) | other | Hugging Face, safetensors, requiere pipeline propio |
+| Qwen/Qwen3.5-4B (base) | aproximadamente 4 B (segun el nombre) | no disponible | Multimodal general | no disponible | Hugging Face |
 | Alternativas especializadas en report generation de RM | no disponible | no disponible | Informes radiologicos | no disponible | no disponible |
 
 No se dispone de datos de rendimiento de modelos comparables en la informacion proporcionada.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sleepyhores/mrrate-qwen35-4b-reportgen-submission
+- Modelo en Hugging Face: https://huggingface.co/sleepyhores/mrrate-qwen35-4b-reportgen-submission
 - Repositorio GitHub con codigo de inferencia y plantilla Docker: https://github.com/trensetter/VLM3D-MR-Report-Medical-Image-Insights-FDU
 - Registro de artefactos del envio (SHA-256): https://github.com/trensetter/VLM3D-MR-Report-Medical-Image-Insights-FDU/blob/main/docs/SUBMISSION_ARTIFACTS.md
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

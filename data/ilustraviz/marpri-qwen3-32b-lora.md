@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ilustraviz/marpri-qwen3-32b-lora` es un adaptador LoRA (Low-Rank Adaptation) sobre el modelo base `unsloth/qwen3-32b-bnb-4bit`, una versión cuantizada a 4 bits de Qwen3-32B. Ha sido publicado por el usuario `ilustraviz` en HuggingFace, pero la model card no incluye ninguna descripción funcional, datos de entrenamiento ni propósito declarado. El repositorio ocupa 1,1 GB y contiene únicamente los pesos del adaptador en formato safetensors, junto con los metadatos de PEFT.
+El modelo `ilustraviz/marpri-qwen3-32b-lora` es un adaptador LoRA (Low-Rank Adaptation) sobre el modelo base `unsloth/qwen3-32b-bnb-4bit`, una versión cuantizada a 4 bits de Qwen3-32B. Ha sido publicado por el usuario `ilustraviz` en Hugging Face, pero la model card no incluye ninguna descripción funcional, datos de entrenamiento ni propósito declarado. El repositorio ocupa 1,1 GB y contiene únicamente los pesos del adaptador en formato safetensors, junto con los metadatos de PEFT.
 
 Al tratarse de un adaptador LoRA, el modelo resultante hereda las capacidades del modelo base Qwen3-32B, que es un transformer denso de 32.800 millones de parámetros con una ventana de contexto de 131.072 tokens y soporte para más de 100 idiomas. Qwen3 introduce un modo de pensamiento híbrido (thinking y non-thinking) que permite alternar entre razonamiento profundo y respuestas rápidas. Sin embargo, al no existir documentación sobre el dataset o el objetivo del fine-tuning, no es posible determinar qué comportamiento específico ha sido ajustado en este adaptador.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ilustraviz/marpri-qwen3-32b-lora | LoRA sobre Qwen3-32B | no disponible | 131K | no disponible | HuggingFace |
-| flyfishxu/DeepNews-LoRA-Qwen3-32B | LoRA sobre Qwen3-32B | no disponible | 131K | no disponible | HuggingFace |
-| Qwen3-32B (base) | Denso | 32,8 B | 131K | Apache 2.0 | HuggingFace, Azure AI |
+| ilustraviz/marpri-qwen3-32b-lora | LoRA sobre Qwen3-32B | no disponible | 131K | no disponible | Hugging Face |
+| flyfishxu/DeepNews-LoRA-Qwen3-32B | LoRA sobre Qwen3-32B | no disponible | 131K | no disponible | Hugging Face |
+| Qwen3-32B (base) | Denso | 32,8 B | 131K | Apache 2.0 | Hugging Face, Azure AI |
 
 La comparativa se limita a otros adaptadores LoRA sobre el mismo base. DeepNews-LoRA-Qwen3-32B está documentado para análisis de credibilidad de noticias con salidas JSON estructuradas, mientras que el modelo de `ilustraviz` carece de cualquier especificación. El modelo base Qwen3-32B es la referencia de rendimiento, pero el adaptador no garantiza mantener esas métricas.
 

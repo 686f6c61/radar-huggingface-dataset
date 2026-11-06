@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento comparativo (exactitud top-1, robustez adv
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dustinhugface/effv2l-r4
+- Hugging Face: https://huggingface.co/dustinhugface/effv2l-r4
 - Perturb (subred Bittensor, netuid 26): https://perturbai.io
 - Documentacion de torchvision EfficientNetV2: https://pytorch.org/vision/stable/models/efficientnetv2.html

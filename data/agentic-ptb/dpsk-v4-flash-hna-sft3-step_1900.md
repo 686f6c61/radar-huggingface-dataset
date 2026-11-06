@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/dpsk-v4-flash (este) | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 (uso comercial permitido) | HuggingFace |
-| Mistral 7B v0.3 | 7,3B | 32K | Apache 2.0 | HuggingFace |
+| agentic-ptb/dpsk-v4-flash (este) | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 (uso comercial permitido) | Hugging Face |
+| Mistral 7B v0.3 | 7,3B | 32K | Apache 2.0 | Hugging Face |
 
 La comparación es limitada porque no se dispone de benchmarks ni de especificaciones completas del modelo. Como fine-tune de Qwen3.5-9B-Base, se espera que su rendimiento sea similar al del modelo base en tareas generales, con posibles mejoras en razonamiento debido al entrenamiento con esfuerzo `thinking`, pero esto no está verificado.
 
@@ -76,5 +76,5 @@ La comparación es limitada porque no se dispone de benchmarks ni de especificac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.hNA.sft3.step_1900
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.hNA.sft3.step_1900
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

@@ -126,7 +126,7 @@ La comparación significativa es con el propio modelo bf16: misma calidad dentro
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/scienceverse/bibr-extract-qwen35-4b-W4A16
+- Hugging Face (este modelo): https://huggingface.co/scienceverse/bibr-extract-qwen35-4b-W4A16
 - Modelo base bf16: https://huggingface.co/scienceverse/bibr-extract-qwen35-4b
 - Variante GGUF: https://huggingface.co/scienceverse/bibr-extract-qwen35-4b-GGUF
 - Variante MLX 8-bit: https://huggingface.co/scienceverse/bibr-extract-qwen35-4b-mlx-8bit

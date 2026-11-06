@@ -6,7 +6,7 @@ NewsNER-DistilBERT es un modelo de reconocimiento de entidades nombradas (NER) e
 
 El modelo resuelve una tarea de clasificacion a nivel de token: recibe una frase o parrafo y devuelve cada mencion de entidad con su etiqueta y una puntuacion de confianza. Con 65.197.833 parametros totales y un repositorio de 0,3 GB, esta pensado para inferencia economica en CPU o GPU de gama baja, donde un BERT-base resultaria mas costoso sin una ganancia clara para este dominio.
 
-Su relevancia practica esta en el pipeline completo que acompana al checkpoint: evaluacion a nivel de entidad, comparacion con baselines (reglas y spaCy) y una aplicacion Streamlit desplegada. El autor reporta un F1 global de 88,79% en el conjunto de test de CoNLL-2003, frente al 57,19% de spaCy Medium. El modelo no declara licencia, idiomas soportados ni pipeline en los metadatos de HuggingFace, y el repositorio registra 0 descargas y 0 likes en la fecha de creacion indicada (2026-10-04).
+Su relevancia practica esta en el pipeline completo que acompana al checkpoint: evaluacion a nivel de entidad, comparacion con baselines (reglas y spaCy) y una aplicacion Streamlit desplegada. El autor reporta un F1 global de 88,79% en el conjunto de test de CoNLL-2003, frente al 57,19% de spaCy Medium. El modelo no declara licencia, idiomas soportados ni pipeline en los metadatos de Hugging Face, y el repositorio registra 0 descargas y 0 likes en la fecha de creacion indicada (2026-10-04).
 
 ## Especificaciones técnicas
 
@@ -17,7 +17,7 @@ Su relevancia practica esta en el pipeline completo que acompana al checkpoint: 
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | 512 tokens, limite de posiciones de `distilbert-base-uncased`; no se indica explicitamente en la model card |
 | Tipos de cuantizacion | No disponible. El repositorio solo publica pesos en safetensors; al ser un transformer estandar admite conversion a ONNX/INT8 con herramientas externas, sin validacion por parte del autor |
-| Idiomas soportados | Ingles (entrenado y evaluado sobre noticias en ingles). Los metadatos de HuggingFace no declaran idioma |
+| Idiomas soportados | Ingles (entrenado y evaluado sobre noticias en ingles). Los metadatos de Hugging Face no declaran idioma |
 | Licencia | No disponible |
 | Formato de pesos | safetensors (tag `safetensors`), con `config.json` y tokenizer asociado en el repositorio |
 | Tarea | Named Entity Recognition (token classification) |
@@ -97,11 +97,11 @@ No se han publicado en la informacion disponible resultados en otros benchmarks 
 
 | Modelo | Parametros | Contexto | F1 CoNLL-2003 (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NewsNER-DistilBERT | 65,2 M | 512 tokens (base) | 88,79% | no disponible | safetensors en HuggingFace |
+| NewsNER-DistilBERT | 65,2 M | 512 tokens (base) | 88,79% | no disponible | safetensors en Hugging Face |
 | spaCy Small (baseline del autor) | no disponible | no disponible | 56,22% | licencia de spaCy (no detallada aqui) | paquete de spaCy |
 | spaCy Medium (baseline del autor) | no disponible | no disponible | 57,19% | licencia de spaCy (no detallada aqui) | paquete de spaCy |
 | Baseline basado en reglas (del autor) | no aplica | no aplica | 10,15% | no disponible | implementacion propia del autor |
-| Familia BERT-base ajustada a NER (por ejemplo, esquemas tipo `bert-base-NER`) | ~110 M (dato de arquitectura BERT-base, no verificado en la informacion proporcionada) | 512 tokens | no disponible en la informacion proporcionada | habitualmente Apache 2.0 o MIT, no verificable aqui | safetensors/PyTorch en HuggingFace |
+| Familia BERT-base ajustada a NER (por ejemplo, esquemas tipo `bert-base-NER`) | ~110 M (dato de arquitectura BERT-base, no verificado en la informacion proporcionada) | 512 tokens | no disponible en la informacion proporcionada | habitualmente Apache 2.0 o MIT, no verificable aqui | safetensors/PyTorch en Hugging Face |
 
 La comparacion con BERT-base no puede cuantificarse con los datos disponibles: la model card no incluye resultados de otros transformers, solo de reglas y spaCy. La ventaja declarada de NewsNER-DistilBERT frente a estos ultimos es de mas de 30 puntos de F1 con un coste de inferencia bajo.
 
@@ -121,7 +121,7 @@ La comparacion con BERT-base no puede cuantificarse con los datos disponibles: l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbdelrahmanAkl/NewsNER-DistilBERT
+- Modelo en Hugging Face: https://huggingface.co/AbdelrahmanAkl/NewsNER-DistilBERT
 - Repositorio GitHub del proyecto: https://github.com/AbdelrhmanAkl/News-NER-Entity-Recognition
 - Demo en vivo (Streamlit): https://news-ner-entity-recognition.streamlit.app/
 - Perfil del autor en GitHub: https://github.com/AbdelrhmanAkl

@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zils-lite-decision-v8 | 852.985.920 | no disponible | feature-extraction / decision | apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | no disponible | generación de texto | no disponible en esta ficha | HuggingFace |
-| thermopylae-777/zils-lite-body-2 | no disponible | no disponible | cuerpo lite Zils | apache-2.0 | HuggingFace |
-| dasLOL/zils-lite-skills-v5 | no disponible | no disponible | skills lite Zils | apache-2.0 | HuggingFace |
+| zils-lite-decision-v8 | 852.985.920 | no disponible | feature-extraction / decision | apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | no disponible | generación de texto | no disponible en esta ficha | Hugging Face |
+| thermopylae-777/zils-lite-body-2 | no disponible | no disponible | cuerpo lite Zils | apache-2.0 | Hugging Face |
+| dasLOL/zils-lite-skills-v5 | no disponible | no disponible | skills lite Zils | apache-2.0 | Hugging Face |
 
 La comparación se limita a los modelos de la misma familia y ecosistema, ya que no se dispone de datos de rendimiento que permitan contrastarlo con alternativas de propósito general.
 
@@ -85,7 +85,7 @@ La comparación se limita a los modelos de la misma familia y ecosistema, ya que
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qhoenix/zils-lite-decision-v8
+- Hugging Face: https://huggingface.co/qhoenix/zils-lite-decision-v8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Modelo previo 1: https://huggingface.co/thermopylae-777/zils-lite-body-2
 - Modelo previo 2: https://huggingface.co/dasLOL/zils-lite-skills-v5

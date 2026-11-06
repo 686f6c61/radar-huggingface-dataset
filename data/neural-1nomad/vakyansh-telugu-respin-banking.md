@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Neural-1Nomad/vakyansh-telugu-respin-banking` es un submódulo alojado en HuggingFace cuyo nombre sugiere un sistema de reconocimiento de voz (ASR) en telugu, posiblemente afinado para el dominio bancario. Sin embargo, la información pública disponible es prácticamente nula: la model card es una plantilla genérica sin completar, no se especifican arquitectura, parámetros, licencia ni idiomas, y el repositorio no presenta descargas ni interacciones. El autor, `Neural-1Nomad`, no aporta documentación adicional.
+El modelo `Neural-1Nomad/vakyansh-telugu-respin-banking` es un submódulo alojado en Hugging Face cuyo nombre sugiere un sistema de reconocimiento de voz (ASR) en telugu, posiblemente afinado para el dominio bancario. Sin embargo, la información pública disponible es prácticamente nula: la model card es una plantilla genérica sin completar, no se especifican arquitectura, parámetros, licencia ni idiomas, y el repositorio no presenta descargas ni interacciones. El autor, `Neural-1Nomad`, no aporta documentación adicional.
 
-El tag `arxiv:1910.09700` hace referencia al artículo de Lacoste et al. sobre estimación de emisiones de carbono en aprendizaje automático, no a la arquitectura del modelo. El tag `endpoints_compatible` sugiere que el modelo podría desplegarse mediante la API de inferencia de HuggingFace, pero no hay confirmación de su funcionamiento. Dado que el proyecto Vakyansh (Open-Speech-EkStep) desarrolla modelos ASR de código abierto para lenguas indias, es plausible que este modelo derive de esa familia, pero no hay evidencia directa que lo confirme.
+El tag `arxiv:1910.09700` hace referencia al artículo de Lacoste et al. sobre estimación de emisiones de carbono en aprendizaje automático, no a la arquitectura del modelo. El tag `endpoints_compatible` sugiere que el modelo podría desplegarse mediante la API de inferencia de Hugging Face, pero no hay confirmación de su funcionamiento. Dado que el proyecto Vakyansh (Open-Speech-EkStep) desarrolla modelos ASR de código abierto para lenguas indias, es plausible que este modelo derive de esa familia, pero no hay evidencia directa que lo confirme.
 
 En resumen, se trata de un modelo sin documentación técnica verificable. Cualquier uso en producción requeriría una evaluación exhaustiva previa y la obtención de información adicional por parte del autor.
 
@@ -65,7 +65,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - Neural-1Nomad/vakyansh-telugu-respin-banking](https://huggingface.co/Neural-1Nomad/vakyansh-telugu-respin-banking)
+- [Hugging Face - Neural-1Nomad/vakyansh-telugu-respin-banking](https://huggingface.co/Neural-1Nomad/vakyansh-telugu-respin-banking)
 - [Vakyansh Open Source Models - GitHub](https://github.com/Open-Speech-EkStep/vakyansh-models)
 - [Vakyansh GitHub Pages](https://open-speech-ekstep.github.io/)
 - [README de vakyansh-models](https://github.com/Open-Speech-EkStep/vakyansh-models/blob/main/README.md?plain=1)

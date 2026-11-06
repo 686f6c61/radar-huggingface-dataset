@@ -24,7 +24,7 @@ Su relevancia practica es limitada y muy especifica: sirve como punto de partida
 | Metodo de entrenamiento | SFT con TRL 0.23.0 |
 | Version de transformers | 4.56.2 |
 | Tamano del repositorio | 2,0 GB |
-| Fecha de publicacion | 11 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 11 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| fpadovani/tam-taml-100mb-ppt-shuff-dyck-100mb_seed10 | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas | Fine-tune SFT sobre datos aparentemente sinteticos (Dyck/shuffled) |
-| goldfish-models/tam_taml_100mb | no disponible (mismo backbone) | no disponible | no disponible | HuggingFace (modelo base) | Modelo Goldfish orientado al tamil, sin ajuste SFT |
+| fpadovani/tam-taml-100mb-ppt-shuff-dyck-100mb_seed10 | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas | Fine-tune SFT sobre datos aparentemente sinteticos (Dyck/shuffled) |
+| goldfish-models/tam_taml_100mb | no disponible (mismo backbone) | no disponible | no disponible | Hugging Face (modelo base) | Modelo Goldfish orientado al tamil, sin ajuste SFT |
 | gpt2 (referencia de escala) | 124 M | 1024 tokens | MIT | Ampliamente disponible | Solo como referencia de tamano; no esta especializado en tamil ni en tareas formales |
 
 No se ha identificado en la informacion disponible ningun modelo comparable de la misma categoria (tamil de ~125 M ajustado con SFT sobre tareas de lenguaje formal), por lo que la comparativa se limita al modelo base y a una referencia de escala.
@@ -93,7 +93,7 @@ No se ha identificado en la informacion disponible ningun modelo comparable de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/tam-taml-100mb-ppt-shuff-dyck-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/tam-taml-100mb-ppt-shuff-dyck-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/tam_taml_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/avuulqm9

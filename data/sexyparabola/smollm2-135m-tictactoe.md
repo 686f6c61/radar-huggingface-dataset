@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smollm2-135m-tictactoe | 134,5M | no disponible | Tres en raya conversacional | Apache-2.0 | HuggingFace |
-| SmolLM2-135M-Instruct (base) | 135M | no disponible en esta ficha | Chat general | Apache-2.0 | HuggingFace |
-| SmolLM2-360M-Instruct | 360M | no disponible en esta ficha | Chat general | Apache-2.0 | HuggingFace |
-| Qwen2.5-0.5B-Instruct | 0,5B | no disponible en esta ficha | Chat general | Apache-2.0 | HuggingFace |
+| smollm2-135m-tictactoe | 134,5M | no disponible | Tres en raya conversacional | Apache-2.0 | Hugging Face |
+| SmolLM2-135M-Instruct (base) | 135M | no disponible en esta ficha | Chat general | Apache-2.0 | Hugging Face |
+| SmolLM2-360M-Instruct | 360M | no disponible en esta ficha | Chat general | Apache-2.0 | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 0,5B | no disponible en esta ficha | Chat general | Apache-2.0 | Hugging Face |
 
 La comparacion relevante es con su modelo base: smollm2-135m-tictactoe hereda el tamano y la licencia de SmolLM2-135M-Instruct, pero sustituye las capacidades generales de chat por una habilidad estrecha de juego. Frente a modelos de chat general de tamano similar o superior (SmolLM2-360M-Instruct, Qwen2.5-0.5B-Instruct), este ajuste no es competitivo en tareas generales y solo tiene sentido en el dominio del tres en raya.
 
@@ -86,5 +86,5 @@ La comparacion relevante es con su modelo base: smollm2-135m-tictactoe hereda el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sexyparabola/smollm2-135m-tictactoe
+- Modelo en Hugging Face: https://huggingface.co/Sexyparabola/smollm2-135m-tictactoe
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct

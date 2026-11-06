@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos entre esta variante y otros mo
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-ARA-heretic)
+- [Modelo en Hugging Face](https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-ARA-heretic)
 - [Modelo base Qwen/Qwen2.5-32B-Instruct](https://huggingface.co/Qwen/Qwen2.5-32B-Instruct)
 - [Licencia del modelo base](https://huggingface.co/Qwen/Qwen2.5-32B-Instruct/blob/main/LICENSE)
 - [Heretic project](https://heretic-project.org)

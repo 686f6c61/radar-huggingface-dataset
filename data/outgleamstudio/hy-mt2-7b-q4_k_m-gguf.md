@@ -81,7 +81,7 @@ La comparación es orientativa: no se dispone de datos de rendimiento del modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OutgleamStudio/Hy-MT2-7B-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/OutgleamStudio/Hy-MT2-7B-Q4_K_M-GGUF
 - Documentación oficial de Tencent sobre Hy-MT: no disponible en la información proporcionada
 - Paper o blog técnico del modelo original: no disponible
 - Repositorio de código o demo: no disponible

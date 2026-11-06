@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `DELTACORPS/mt5-intel` en HuggingFace no contiene un modelo de inteligencia artificial convencional (como un modelo de lenguaje o un modelo de visión), sino un **Expert Advisor (EA) para MetaTrader 5** denominado "MT5 INTEL — Autonomous Cognitive Neural Trading Brain". Se trata de un sistema de trading automatizado escrito íntegramente en MQL5, que implementa una arquitectura cognitiva de 10 capas para operar en mercados financieros sin depender de Python, DLLs, APIs externas ni servicios en la nube.
+El repositorio `DELTACORPS/mt5-intel` en Hugging Face no contiene un modelo de inteligencia artificial convencional (como un modelo de lenguaje o un modelo de visión), sino un **Expert Advisor (EA) para MetaTrader 5** denominado "MT5 INTEL — Autonomous Cognitive Neural Trading Brain". Se trata de un sistema de trading automatizado escrito íntegramente en MQL5, que implementa una arquitectura cognitiva de 10 capas para operar en mercados financieros sin depender de Python, DLLs, APIs externas ni servicios en la nube.
 
 El autor, `DELTACORPS`, presenta el sistema como un "cerebro" de trading con capacidades de percepción multi-timeframe, forecasting probabilístico, razonamiento, planificación, gestión de riesgo y aprendizaje continuo en línea. Toda la lógica, incluida una red neuronal entrenable (MLP + GRU), filtros de Kalman, modelos bayesianos y de Markov, se ejecuta dentro de MQL5. Es relevante para desarrolladores e investigadores interesados en sistemas autónomos de trading algorítmico, aunque no para quienes buscan un modelo de IA reutilizable para tareas de NLP o generación de contenido.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El RE
 
 ## Comparativa con modelos similares
 
-No disponible. El repositorio no es comparable con modelos de lenguaje o de visión de HuggingFace. En el ámbito de Expert Advisors para MetaTrader 5, no se proporcionan datos de modelos alternativos ni benchmarks comparativos. Cualquier comparación con sistemas como mT5 (modelo multilingüe de T5) sería engañosa, ya que `mt5-intel` no comparte arquitectura ni propósito con ese modelo.
+No disponible. El repositorio no es comparable con modelos de lenguaje o de visión de Hugging Face. En el ámbito de Expert Advisors para MetaTrader 5, no se proporcionan datos de modelos alternativos ni benchmarks comparativos. Cualquier comparación con sistemas como mT5 (modelo multilingüe de T5) sería engañosa, ya que `mt5-intel` no comparte arquitectura ni propósito con ese modelo.
 
 ## Limitaciones y advertencias
 
@@ -75,6 +75,6 @@ No disponible. El repositorio no es comparable con modelos de lenguaje o de visi
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/DELTACORPS/mt5-intel](https://huggingface.co/DELTACORPS/mt5-intel)
+- Hugging Face: [https://huggingface.co/DELTACORPS/mt5-intel](https://huggingface.co/DELTACORPS/mt5-intel)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la información proporcionada. La búsqueda web devolvió resultados sobre el modelo mT5 de Google, soporte de Microsoft y un artículo de Intel sobre GenAI/LLM, ninguno de los cuales guarda relación con este repositorio.

@@ -73,5 +73,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [NT-ORIGINAL/vietnam-legal-ai-models](https://huggingface.co/NT-ORIGINAL/vietnam-legal-ai-models)
+- Repositorio en Hugging Face: [NT-ORIGINAL/vietnam-legal-ai-models](https://huggingface.co/NT-ORIGINAL/vietnam-legal-ai-models)
 - Modelo base: [vinai/phobert-base-v2](https://huggingface.co/vinai/phobert-base-v2)

@@ -28,7 +28,7 @@ El adaptador se ha entrenado con la libreria `peft` sobre el modelo base `NVIDIA
 - Generacion de texto creativo: el adaptador esta especificamente entrenado para producir respuestas de escritura creativa siguiendo el estilo de Llama-3.3-70B.
 - Imitacion de comportamiento: capacidad de replicar patrones de generacion de un modelo mas grande sobre un modelo base mas eficiente (MoE de 3B activos).
 - Fine-tuning eficiente: al ser un adaptador LoRA, permite cargar y descargar el comportamiento aprendido sin modificar los pesos del modelo base.
-- Integracion con PEFT: compatible con el ecosistema HuggingFace `transformers` y `peft` para su uso en pipelines de investigacion.
+- Integracion con PEFT: compatible con el ecosistema Hugging Face `transformers` y `peft` para su uso en pipelines de investigacion.
 - No se dispone de informacion sobre soporte de tool calling, agentes, vision, audio, razonamiento multi-paso ni capacidades multilingues especificas en la documentacion proporcionada.
 
 ## Casos de uso
@@ -66,6 +66,6 @@ No se dispone de comparativas directas del adaptador con otros adaptadores simil
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/sft_writingprompts_nemotron-nano-30b-a3b_as_llama-3.3-70b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/sft_writingprompts_nemotron-nano-30b-a3b_as_llama-3.3-70b_seed42
 - Framework Tinker: https://thinkingmachines.ai/tinker/
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16

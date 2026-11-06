@@ -94,7 +94,7 @@ La puntuación de conocimientos factuales no se evalúa con benchmarks estándar
 
 | Modelo | Parámetros | Contexto | Batería de aceptación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Loom Swift Micro | 1.159.120 | 512 tokens | 104/133 | MIT | HuggingFace (safetensors y GGUF) |
+| Loom Swift Micro | 1.159.120 | 512 tokens | 104/133 | MIT | Hugging Face (safetensors y GGUF) |
 | Loom Swift Mini | no disponible | no disponible | no disponible | no disponible | Mencionado por el autor como el modelo mayor de la tier Swift |
 | Loom Tapestry 2 | 22,8 M | no disponible | 107/133 | no disponible | Antiguo modelo insignia de Textile Labs, 5,5 horas de entrenamiento |
 | Modelos tiny de terceros (p. ej., SmolLM2-135M, Qwen2.5-0.5B) | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | No disponible en la información proporcionada |
@@ -118,7 +118,7 @@ La comparación directa que aporta el autor es interna: Loom Tapestry 2, con 22,
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/textilelabs/Loom-Swift-Micro
+- Página del modelo en Hugging Face: https://huggingface.co/textilelabs/Loom-Swift-Micro
 - Ejecución con Ollama: `ollama run hf.co/textilelabs/Loom-Swift-Micro`
 - Harness de agente publicado en el repositorio: `harness.py` (incluido en los archivos del modelo)
 - Atribución de corpus: `ATTRIBUTION.md` (incluido en los archivos del modelo)

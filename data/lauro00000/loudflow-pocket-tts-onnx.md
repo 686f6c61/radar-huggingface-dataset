@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lauro00000/loudflow-pocket-tts-onnx
+- Repositorio Hugging Face: https://huggingface.co/Lauro00000/loudflow-pocket-tts-onnx
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Herramienta de exportacion: https://github.com/lookbe/pocket-tts-onnx-export
 - Bundle alternativo con el mismo conjunto de ficheros: https://huggingface.co/KevinAHM/pocket-tts-onnx

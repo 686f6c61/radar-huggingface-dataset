@@ -100,7 +100,7 @@ La comparación directa con Qwen2.5-1.5B-Instruct es la más relevante: VAULT v3
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/batteryphil/VAULT-v3-1.5B
+- Hugging Face: https://huggingface.co/batteryphil/VAULT-v3-1.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Especificación técnica: `docs/VAULT_v3_SPEC.md` (incluido en el repositorio)
 - Runtime: `runtime/vault3.h`, `runtime/vault3.c`, `runtime/vault3_host.c`, `Makefile` (incluidos en el repositorio)

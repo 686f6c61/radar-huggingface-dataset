@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Veeksha es un modelo publicado en HuggingFace por el usuario arjit-mishra bajo el identificador `arjit-mishra/veeksha`. En el momento de redactar esta ficha, el repositorio no incluye model card descriptiva: el unico contenido del README es el bloque de metadatos con la licencia MIT, sin informacion sobre arquitectura, tamano, datos de entrenamiento o capacidades. Tampoco se han publicado pesos, configuraciones, tokenizador ni artefactos adicionales documentados.
+Veeksha es un modelo publicado en Hugging Face por el usuario arjit-mishra bajo el identificador `arjit-mishra/veeksha`. En el momento de redactar esta ficha, el repositorio no incluye model card descriptiva: el unico contenido del README es el bloque de metadatos con la licencia MIT, sin informacion sobre arquitectura, tamano, datos de entrenamiento o capacidades. Tampoco se han publicado pesos, configuraciones, tokenizador ni artefactos adicionales documentados.
 
 El modelo registra 0 descargas y 0 likes, y su fecha de creacion y ultima actualizacion coinciden (16 de septiembre de 2026), lo que indica que no ha habido revisiones posteriores a la publicacion inicial. No hay pipeline declarado ni idiomas declarados en los metadatos.
 
@@ -20,7 +20,7 @@ Dada la ausencia total de documentacion tecnica, esta ficha no puede evaluar el 
 | Licencia | MIT |
 | Formato de pesos | no disponible |
 
-Nota: los metadatos de HuggingFace unicamente declaran `license:mit` y `region:us`. No se especifica pipeline, tamano de parametros ni formato de serializacion.
+Nota: los metadatos de Hugging Face unicamente declaran `license:mit` y `region:us`. No se especifica pipeline, tamano de parametros ni formato de serializacion.
 
 ## Arquitectura y entrenamiento
 
@@ -65,7 +65,7 @@ No disponible. La categoria del modelo (tamano, tarea, modalidad) no esta declar
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| arjit-mishra/veeksha | no disponible | no disponible | MIT | no disponible | repositorio HuggingFace sin documentacion |
+| arjit-mishra/veeksha | no disponible | no disponible | MIT | no disponible | repositorio Hugging Face sin documentacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,6 +80,6 @@ No disponible. La categoria del modelo (tamano, tarea, modalidad) no esta declar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arjit-mishra/veeksha
+- Hugging Face: https://huggingface.co/arjit-mishra/veeksha
 - No se encontraron enlaces relevantes en la busqueda web. Los resultados devueltos corresponden a paginas de ayuda de YouTube y a discusiones sin relacion con el modelo (gestion de ubicacion en YouTube TV, registro de cuentas de Google, acceso a YouTube en China), por lo que no se incluyen como referencias tecnicas.
 - No se han localizado papers, blogs, repositorios de codigo ni demos asociados al modelo.

@@ -58,7 +58,7 @@ No se dispone de más métricas (F1, AUC, precisión/recall por clase) en la inf
 - VRAM estimada para inferencia: el modelo tiene 66,9M parámetros. En FP32, los pesos ocupan aproximadamente 268 MB; en FP16, unos 134 MB. Con overhead de activaciones y buffers, se estima un consumo de VRAM de 1-2 GB, dependiendo de la longitud del texto.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. El entrenamiento se realizó en una RTX 3090, pero para inferencia sirven GPUs como la GTX 1060, RTX 2060, o incluso integradas con suficiente memoria compartida.
 - Compatibilidad con CPU: al ser un modelo pequeño, puede ejecutarse en CPU con latencias de decenas de milisegundos por muestra, lo que lo hace viable para aplicaciones de baja concurrencia.
-- Opciones de despliegue: se puede usar con la librería `transformers` de HuggingFace, exportar a ONNX para optimización, o convertirlo a GGUF para ejecutarlo con llama.cpp u Ollama, aunque no se proporcionan conversiones oficiales.
+- Opciones de despliegue: se puede usar con la librería `transformers` de Hugging Face, exportar a ONNX para optimización, o convertirlo a GGUF para ejecutarlo con llama.cpp u Ollama, aunque no se proporcionan conversiones oficiales.
 - Latencia y throughput: no se han publicado mediciones oficiales. En una GPU moderna, se espera un throughput de cientos de inferencias por segundo; en CPU, decenas por segundo.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Islamamro/toxic-conversations-aurora-islamamro
+- Modelo en Hugging Face: https://huggingface.co/Islamamro/toxic-conversations-aurora-islamamro
 - Dataset utilizado: https://huggingface.co/datasets/SetFit/toxic_conversations
 - Perfil de GitHub del autor: https://github.com/islamamro
 

@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gnumanth/sntts
+- Hugging Face: https://huggingface.co/gnumanth/sntts
 - Dataset `prathoshap/sushrota-sanskrit-asr-data`: https://huggingface.co/datasets/prathoshap/sushrota-sanskrit-asr-data
 - Dataset `yashnbx/gita_supersite_sanskrit_tts`: https://huggingface.co/datasets/yashnbx/gita_supersite_sanskrit_tts
 - Corpus SYSPIN (hindi, kannada, tamil, telugu): no disponible enlace directo en la información proporcionada

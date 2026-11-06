@@ -82,7 +82,7 @@ No se han publicado en la información disponible resultados de benchmarks compa
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CheXNet-style DenseNet-121 (este modelo) | 7,05 M | Imagen 224 × 224 | AUROC medio ≈ 0,770 en test propio | MIT | HuggingFace, 85 descargas |
+| CheXNet-style DenseNet-121 (este modelo) | 7,05 M | Imagen 224 × 224 | AUROC medio ≈ 0,770 en test propio | MIT | Hugging Face, 85 descargas |
 | CheXNet original (Rajpurkar et al., 2017) | DenseNet-121 (~7 M) | Imagen 224 × 224 | No disponible en la información proporcionada | No disponible | Paper arXiv:1711.05225 |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -100,7 +100,7 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheBiggyBang/chexnet-densenet121
+- Modelo en Hugging Face: https://huggingface.co/TheBiggyBang/chexnet-densenet121
 - Paper CheXNet (Rajpurkar et al., 2017): https://arxiv.org/abs/1711.05225
 - Aplicación web del autor: https://github.com/TheBiggyBang1/chexnet-medical-app
 - Dataset NIH ChestX-ray14 (Kaggle): https://www.kaggle.com/datasets/nih-chest-x-rays/data

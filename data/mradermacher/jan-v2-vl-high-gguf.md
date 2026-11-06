@@ -6,7 +6,7 @@ Jan-v2-VL-high es un modelo multimodal (vision-lenguaje) de 8.190.735.360 parame
 
 La relevancia de esta publicacion radica en que acerca un modelo vision-lenguaje de ~8B a equipos con GPU de consumo: el cuantizado Q4_K_M ocupa aproximadamente 5,1 GB y el Q8_0 unos 8,8 GB, lo que lo hace viable en tarjetas graficas con 8-12 GB de VRAM. El repositorio incluye ademas ficheros `mmproj` (proyector multimodal) necesarios para el procesamiento de imagenes, en versiones Q8_0 y f16.
 
-La informacion disponible sobre el modelo base es limitada: la model card del cuantizado no detalla arquitectura interna, datos de entrenamiento, longitud de contexto ni resultados de benchmarks. Los datos que se ofrecen a continuacion proceden del repositorio de HuggingFace y de la propia model card del cuantizado; cualquier dato no confirmado se marca explicitamente como no disponible.
+La informacion disponible sobre el modelo base es limitada: la model card del cuantizado no detalla arquitectura interna, datos de entrenamiento, longitud de contexto ni resultados de benchmarks. Los datos que se ofrecen a continuacion proceden del repositorio de Hugging Face y de la propia model card del cuantizado; cualquier dato no confirmado se marca explicitamente como no disponible.
 
 ## Especificaciones tecnicas
 
@@ -83,7 +83,7 @@ No disponible: no se han identificado en el material proporcionado modelos compa
 
 ## Enlaces
 
-- Repositorio HuggingFace del cuantizado: https://huggingface.co/mradermacher/Jan-v2-VL-high-GGUF
+- Repositorio Hugging Face del cuantizado: https://huggingface.co/mradermacher/Jan-v2-VL-high-GGUF
 - Modelo base: https://huggingface.co/janhq/Jan-v2-VL-high
 - Cuantizados con imatrix (weighted): https://huggingface.co/mradermacher/Jan-v2-VL-high-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Jan-v2-VL-high-GGUF

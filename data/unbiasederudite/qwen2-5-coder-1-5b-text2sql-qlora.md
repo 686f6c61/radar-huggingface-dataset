@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`unbiasederudite/qwen2.5-coder-1.5b-text2sql-qlora` es un adaptador LoRA entrenado con QLoRA sobre el modelo instructivo `Qwen/Qwen2.5-Coder-1.5B-Instruct` de Alibaba, especializado en la tarea text-to-SQL: convertir una pregunta en lenguaje natural, junto con el esquema de una base de datos, en una consulta SQL ejecutable. Lo publica el usuario unbiasederudite en HuggingFace y el repositorio asociado en GitHub documenta el proceso de fine-tuning.
+`unbiasederudite/qwen2.5-coder-1.5b-text2sql-qlora` es un adaptador LoRA entrenado con QLoRA sobre el modelo instructivo `Qwen/Qwen2.5-Coder-1.5B-Instruct` de Alibaba, especializado en la tarea text-to-SQL: convertir una pregunta en lenguaje natural, junto con el esquema de una base de datos, en una consulta SQL ejecutable. Lo publica el usuario unbiasederudite en Hugging Face y el repositorio asociado en GitHub documenta el proceso de fine-tuning.
 
 El adaptador se entrena con SFT mediante TRL sobre el conjunto Spider (particiones `train_spider` y `train_others`), tras eliminar preguntas repetidas y consultas de referencia que no se ejecutan, lo que deja 8.647 muestras; además se descartan las 82 muestras que superan los 2.048 tokens. Es, por tanto, un ajuste pequeño y académico orientado a demostrar la viabilidad de especializar un modelo de 1,5B parámetros en generación de SQL con recursos muy limitados.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks del adaptador en la informacion dis
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unbiasederudite/qwen2.5-coder-1.5b-text2sql-qlora | 1,5B (base) + adaptador LoRA | 32.768 tokens (entrenado a 2.048) | Text-to-SQL sobre Spider | no disponible para el adaptador; base Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-Coder-1.5B-Instruct | 1,5B | 32.768 tokens | Codigo e instrucciones generales | Apache-2.0 | HuggingFace, ampliamente usado |
-| Qwen/Qwen2.5-Coder-7B-Instruct | 7,6B | 32.768 tokens | Codigo e instrucciones generales | Apache-2.0 | HuggingFace |
-| meta-llama/Llama-3.2-1B-Instruct | 1,23B | 128.000 tokens | Instrucciones generales, no especializado en SQL | Llama 3.2 Community License | HuggingFace, requiere aceptar terminos |
+| unbiasederudite/qwen2.5-coder-1.5b-text2sql-qlora | 1,5B (base) + adaptador LoRA | 32.768 tokens (entrenado a 2.048) | Text-to-SQL sobre Spider | no disponible para el adaptador; base Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-Coder-1.5B-Instruct | 1,5B | 32.768 tokens | Codigo e instrucciones generales | Apache-2.0 | Hugging Face, ampliamente usado |
+| Qwen/Qwen2.5-Coder-7B-Instruct | 7,6B | 32.768 tokens | Codigo e instrucciones generales | Apache-2.0 | Hugging Face |
+| meta-llama/Llama-3.2-1B-Instruct | 1,23B | 128.000 tokens | Instrucciones generales, no especializado en SQL | Llama 3.2 Community License | Hugging Face, requiere aceptar terminos |
 
 El adaptador no aporta una ventaja verificable frente al base en text-to-SQL porque no hay métricas publicadas; su interés es el coste de entrenamiento y el ejemplo metodológico. Frente a Qwen2.5-Coder-7B-Instruct, el modelo de 7,6B debería ser claramente superior en calidad de SQL, a costa de unos 15 GB en FP16. Frente a Llama-3.2-1B-Instruct, la ventaja de este adaptador es la especialización declarada en SQL y el contexto de 32K, aunque el modelo de Meta ofrece 128K tokens y una licencia explícita.
 
@@ -95,7 +95,7 @@ El adaptador no aporta una ventaja verificable frente al base en text-to-SQL por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unbiasederudite/qwen2.5-coder-1.5b-text2sql-qlora
+- Modelo en Hugging Face: https://huggingface.co/unbiasederudite/qwen2.5-coder-1.5b-text2sql-qlora
 - Repositorio GitHub del proyecto: https://github.com/unbiasederudite/qwen2.5-coder-text2sql-qlora
 - Modelo base Qwen2.5-Coder-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Version AWQ del modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct-AWQ

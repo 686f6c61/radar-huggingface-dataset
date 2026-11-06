@@ -4,7 +4,7 @@
 
 Este repositorio contiene un agente entrenado con el algoritmo PPO (Proximal Policy Optimization) para el entorno LunarLander-v2 de Gymnasium, implementado con la librería stable-baselines3. No se trata de un modelo de lenguaje ni de un modelo generativo: es una política neuronal que controla la nave del simulador LunarLander, un problema clásico de control continuo/discreto en el que el agente debe aterrizar una nave entre dos banderas aplicando empuje en cuatro direcciones.
 
-El modelo lo publica el usuario 0rg4n1s4t10n en HuggingFace y sigue el formato estándar de la integración entre stable-baselines3 y el Hub (etiquetas `stable-baselines3`, `deep-reinforcement-learning`, `reinforcement-learning`). Su relevancia es fundamentalmente didáctica: sirve como referencia de un agente PPO funcional sobre un entorno de referencia de RL, con un resultado declarado de recompensa media de 266,55 ± 19,57 en LunarLander-v2.
+El modelo lo publica el usuario 0rg4n1s4t10n en Hugging Face y sigue el formato estándar de la integración entre stable-baselines3 y el Hub (etiquetas `stable-baselines3`, `deep-reinforcement-learning`, `reinforcement-learning`). Su relevancia es fundamentalmente didáctica: sirve como referencia de un agente PPO funcional sobre un entorno de referencia de RL, con un resultado declarado de recompensa media de 266,55 ± 19,57 en LunarLander-v2.
 
 La información disponible es muy limitada: el repositorio tiene 0 descargas, 0 likes, tamaño de 0,0 GB según el Hub, licencia no declarada y la model card está incompleta (el bloque de uso contiene un TODO sin código funcional). La ficha refleja, por tanto, únicamente lo que consta en los metadatos y en el model-index.
 
@@ -68,7 +68,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Algoritmo | Entorno | Recompensa declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 0rg4n1s4t10n/ppo-LunarLander-v2 | PPO | LunarLander-v2 | 266,55 ± 19,57 | no disponible | HuggingFace (0 descargas) |
+| 0rg4n1s4t10n/ppo-LunarLander-v2 | PPO | LunarLander-v2 | 266,55 ± 19,57 | no disponible | Hugging Face (0 descargas) |
 | Agentes DQN/A2C sobre LunarLander-v2 | DQN, A2C | LunarLander-v2 | no disponible en esta ficha | variable | múltiples en el Hub, no verificados aquí |
 | Políticas PPO de referencia de stable-baselines3 | PPO | LunarLander-v2 | no disponible | MIT (librería) | repositorio oficial de SB3 |
 
@@ -87,7 +87,7 @@ No se dispone de datos verificados de modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0rg4n1s4t10n/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/0rg4n1s4t10n/ppo-LunarLander-v2
 - stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v2 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/

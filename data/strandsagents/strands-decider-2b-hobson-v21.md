@@ -85,9 +85,9 @@ No se dispone de datos publicados de alternativas equivalentes de la misma categ
 
 | Modelo | Parametros | Tarea | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| strands-decider-2B-hobson-v21 | 2B (base) + adaptador LoRA | Decision tipada y puntuacion | Opcion + confianza calibrada | Apache-2.0 | HuggingFace + repo de codigo |
-| Qwen/Qwen3.5-2B-Base | 2B | Generacion de texto | Texto libre | no disponible | HuggingFace |
-| Qwen/Qwen3.5-4B | 4B | Generacion de texto (profesor de destilacion en v21) | Texto libre | no disponible | HuggingFace |
+| strands-decider-2B-hobson-v21 | 2B (base) + adaptador LoRA | Decision tipada y puntuacion | Opcion + confianza calibrada | Apache-2.0 | Hugging Face + repo de codigo |
+| Qwen/Qwen3.5-2B-Base | 2B | Generacion de texto | Texto libre | no disponible | Hugging Face |
+| Qwen/Qwen3.5-4B | 4B | Generacion de texto (profesor de destilacion en v21) | Texto libre | no disponible | Hugging Face |
 
 Frente a un clasificador encoder clásico, la diferencia declarada por el autor es la combinación de tres tipos de pregunta (`noul`, `choice`, `score`) sobre un mismo checkpoint y la emisión de confianza calibrada, en lugar de una única etiqueta por tarea.
 
@@ -105,7 +105,7 @@ Frente a un clasificador encoder clásico, la diferencia declarada por el autor 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v21
+- Modelo en Hugging Face: https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v21
 - Repositorio de código, receta de entrenamiento, inventario de datos y evaluaciones: https://github.com/strands-labs/strands-decider
 - Documentación de la ruta de visión: `docs/vision.md` en el repositorio de código
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base

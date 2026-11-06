@@ -89,7 +89,7 @@ LFM2.5 destaca por su arquitectura híbrida que reduce el coste computacional, p
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF
 - Modelo base (safetensors): https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Documentación oficial: https://docs.liquid.ai/lfm/models/lfm25-1.2b-instruct
 - Playground de Liquid AI: https://playground.liquid.ai/

@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DevShin00/furfriends-rag-v2
+- Modelo en Hugging Face: https://huggingface.co/DevShin00/furfriends-rag-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Pets Stack Exchange: https://pets.stackexchange.com
 - Licencia CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/

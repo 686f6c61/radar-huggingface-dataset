@@ -6,7 +6,7 @@ El repositorio `joshuamjm/few-shot-multimodal` no contiene un modelo entrenado, 
 
 El contenido principal es el fichero `summary.md`, que describe el alcance de la pregunta de investigación, probables factores de confusión, una comparación propuesta con baselines emparejados, benchmarks públicos relevantes, comprobaciones de reproducibilidad y modos de fallo. No se incluyen resultados experimentales, ablaciones, código de entrenamiento ni checkpoints.
 
-A pesar de las etiquetas `safetensors` y `transformer` y del recuento de parámetros reportado por HuggingFace (49.600), el tamaño del repositorio es de 0,0 GB y la propia model card niega la existencia de un checkpoint entrenado. Por tanto, el modelo no es utilizable para inferencia; su interés es exclusivamente documental y metodológico para quienes investigan aprendizaje few-shot multimodal.
+A pesar de las etiquetas `safetensors` y `transformer` y del recuento de parámetros reportado por Hugging Face (49.600), el tamaño del repositorio es de 0,0 GB y la propia model card niega la existencia de un checkpoint entrenado. Por tanto, el modelo no es utilizable para inferencia; su interés es exclusivamente documental y metodológico para quienes investigan aprendizaje few-shot multimodal.
 
 ## Especificaciones técnicas
 
@@ -73,5 +73,5 @@ No disponible. El repositorio no es un modelo y no existe una categoría compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/joshuamjm/few-shot-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/joshuamjm/few-shot-multimodal
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

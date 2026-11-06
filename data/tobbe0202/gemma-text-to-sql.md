@@ -2,9 +2,9 @@
 
 ## Resumen
 
-gemma-text-to-sql es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario Tobbe0202 bajo el identificador Tobbe0202/gemma-text-to-sql. Se trata de un modelo derivado de google/gemma-4-E2B, entrenado mediante SFT (supervised fine-tuning) con la librería TRL, tal y como indican las etiquetas del repositorio (`generated_from_trainer`, `sft`, `trl`) y la propia model card. El nombre del modelo sugiere una especializacion en la tarea de traduccion de lenguaje natural a SQL (text-to-SQL), aunque la documentacion publicada no describe el conjunto de datos ni el procedimiento de entrenamiento.
+gemma-text-to-sql es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario Tobbe0202 bajo el identificador Tobbe0202/gemma-text-to-sql. Se trata de un modelo derivado de google/gemma-4-E2B, entrenado mediante SFT (supervised fine-tuning) con la librería TRL, tal y como indican las etiquetas del repositorio (`generated_from_trainer`, `sft`, `trl`) y la propia model card. El nombre del modelo sugiere una especializacion en la tarea de traduccion de lenguaje natural a SQL (text-to-SQL), aunque la documentacion publicada no describe el conjunto de datos ni el procedimiento de entrenamiento.
 
-El repositorio ocupa 1,6 GB y contiene pesos en formato safetensors, con compatibilidad declarada con `endpoints_compatible` (Inference Endpoints de HuggingFace). En el momento de la consulta acumula 0 descargas y 0 "likes", y no se ha publicado informacion sobre licencia, idiomas soportados, pipeline, longitud de contexto ni resultados de evaluacion.
+El repositorio ocupa 1,6 GB y contiene pesos en formato safetensors, con compatibilidad declarada con `endpoints_compatible` (Inference Endpoints de Hugging Face). En el momento de la consulta acumula 0 descargas y 0 "likes", y no se ha publicado informacion sobre licencia, idiomas soportados, pipeline, longitud de contexto ni resultados de evaluacion.
 
 Su relevancia actual es limitada pero potencialmente interesante como ejemplo de ajuste fino ligero orientado a una tarea concreta: la generacion de consultas SQL es una aplicacion con demanda real en analitica y herramientas de business intelligence. No obstante, la ausencia de benchmarks, de licencia definida y de documentacion del dataset hace que no pueda considerarse un artefacto listo para produccion sin una evaluacion propia previa.
 
@@ -68,7 +68,7 @@ Las siguientes cifras son estimaciones derivadas del tamano del repositorio (1,6
 - VRAM estimada para inferencia: en torno a 2-4 GB si los pesos estan en precision reducida (bf16/fp16) y se anade la sobrecarga de la cache KV; el valor exacto depende del numero real de parametros y de la longitud de contexto, datos no disponibles.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM resulta suficiente para un modelo de este tamano en precision completa; tarjetas de gama alta como A100, H100, L40S o RTX 4090 ofrecerian un margen amplio para lotes grandes.
 - Cabe en GPU de consumo: si, previsiblemente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090, ademas de GPUs integradas de gama alta con memoria unificada.
-- Opciones de despliegue: la libreria declarada es transformers, por lo que la inferencia directa con `pipeline` esta soportada. La etiqueta `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints y, por extension, con TGI. El despliegue con vLLM seria viable si el modelo base es compatible con dicha libreria. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que el repositorio no incluye ficheros de cuantizacion.
+- Opciones de despliegue: la libreria declarada es transformers, por lo que la inferencia directa con `pipeline` esta soportada. La etiqueta `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints y, por extension, con TGI. El despliegue con vLLM seria viable si el modelo base es compatible con dicha libreria. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que el repositorio no incluye ficheros de cuantizacion.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento, contexto ni licencia de modelos alternati
 
 | Modelo | Rol | Parametros | Longitud de contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tobbe0202/gemma-text-to-sql | Ajuste fino para text-to-SQL | no disponible | no disponible | no disponible | Publico en HuggingFace, 0 descargas |
+| Tobbe0202/gemma-text-to-sql | Ajuste fino para text-to-SQL | no disponible | no disponible | no disponible | Publico en Hugging Face, 0 descargas |
 | google/gemma-4-E2B | Modelo base del ajuste | no disponible | no disponible | no disponible | Referenciado como enlace en la model card |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento, contexto ni licencia de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tobbe0202/gemma-text-to-sql
+- Modelo en Hugging Face: https://huggingface.co/Tobbe0202/gemma-text-to-sql
 - Modelo base: https://huggingface.co/google/gemma-4-E2B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Resultados de la busqueda web: no se han encontrado resultados relevantes; las busquedas devolvieron unicamente paginas de Instagram sin relacion con el modelo, por lo que no se dispone de papers, blogs, repositorios auxiliares ni demos adicionales.

@@ -77,7 +77,7 @@ La principal diferencia frente a alternativas multilingües es que este modelo e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/speed-brain-ai/speedbrain-emotion-uk-onnx
+- Repositorio Hugging Face: https://huggingface.co/speed-brain-ai/speedbrain-emotion-uk-onnx
 - Modelo base: https://huggingface.co/ukr-detect/ukr-emotions-classifier
 - Paper EmoBench-UA (EMNLP 2025 Findings): https://aclanthology.org/2025.findings-emnlp.107/ (DOI: 10.18653/v1/2025.findings-emnlp.107)
 - SpeechBrain (toolkit de referencia, no relacionado directamente): https://github.com/speechbrain/speechbrain

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-XTTS-v2 Egyptian Arabic es un ajuste fino (fine-tune) del modelo de síntesis de voz Coqui XTTS-v2, adaptado específicamente al árabe egipcio (código ISO `arz`). Lo publica el usuario de HuggingFace abdullah-khaled y está entrenado sobre un corpus propio de un único hablante, `xtts-egyptian-dataset-v2`, a 22,05 kHz. El modelo conserva la capacidad de condicionamiento por audio de referencia del XTTS-v2 original, lo que permite generar voz con las características tímbricas de un clip de referencia de entre 6 y 30 segundos.
+XTTS-v2 Egyptian Arabic es un ajuste fino (fine-tune) del modelo de síntesis de voz Coqui XTTS-v2, adaptado específicamente al árabe egipcio (código ISO `arz`). Lo publica el usuario de Hugging Face abdullah-khaled y está entrenado sobre un corpus propio de un único hablante, `xtts-egyptian-dataset-v2`, a 22,05 kHz. El modelo conserva la capacidad de condicionamiento por audio de referencia del XTTS-v2 original, lo que permite generar voz con las características tímbricas de un clip de referencia de entre 6 y 30 segundos.
 
 El modelo resuelve un problema concreto: el XTTS-v2 original está entrenado mayoritariamente en árabe estándar moderno (MSA) y no reproduce bien la fonética ni la prosodia del dialecto egipcio. Este checkpoint desplaza la distribución acústica hacia el egipcio coloquial, manteniendo la arquitectura y el pipeline de inferencia del modelo base. Es relevante para investigadores que trabajen en TTS dialectal árabe y para desarrolladores que quieran experimentar con clonación de voz en egipcio sin partir de cero.
 
@@ -87,7 +87,7 @@ La comparación cuantitativa con alternativas no está disponible: no hay benchm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abdullah-khaled/xtts-egyptian-arabic
+- Modelo en Hugging Face: https://huggingface.co/abdullah-khaled/xtts-egyptian-arabic
 - Dataset de entrenamiento: https://huggingface.co/datasets/abdullah-khaled/xtts-egyptian-dataset-v2
 - Modelo base Coqui XTTS-v2: https://huggingface.co/coqui/XTTS-v2
 - Licencia Coqui Public Model License: https://coqui.ai/cpml

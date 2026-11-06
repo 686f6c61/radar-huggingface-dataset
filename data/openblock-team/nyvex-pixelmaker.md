@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nyvex-PixelMaker es un modelo publicado en HuggingFace por el usuario OpenBlock-Team bajo licencia CC BY 4.0. La model card asociada no incluye ninguna descripción técnica: unicamente los metadatos minimos de licencia, sin detallar arquitectura, datos de entrenamiento ni capacidades. El repositorio ocupa aproximadamente 0,1 GB, un tamano que sugiere un modelo de parametraje reducido, aunque el numero exacto de parametros no se especifica en la informacion disponible.
+Nyvex-PixelMaker es un modelo publicado en Hugging Face por el usuario OpenBlock-Team bajo licencia CC BY 4.0. La model card asociada no incluye ninguna descripción técnica: unicamente los metadatos minimos de licencia, sin detallar arquitectura, datos de entrenamiento ni capacidades. El repositorio ocupa aproximadamente 0,1 GB, un tamano que sugiere un modelo de parametraje reducido, aunque el numero exacto de parametros no se especifica en la informacion disponible.
 
 En el momento de redactar esta ficha, el modelo registra 0 descargas y 1 like, con fecha de creacion y ultima actualizacion el 26 de septiembre de 2026. No hay informacion publicada sobre idiomas soportados, formatos de pesos ni resultados de evaluacion. El nombre "PixelMaker" apunta a una posible orientacion hacia la generacion de imagenes o pixel art, pero se trata de una inferencia basada unicamente en la nomenclatura y no confirmada por el autor.
 
@@ -81,5 +81,5 @@ No disponible. La ausencia de informacion sobre arquitectura, tarea objetivo y p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenBlock-Team/Nyvex-PixelMaker
+- Modelo en Hugging Face: https://huggingface.co/OpenBlock-Team/Nyvex-PixelMaker
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

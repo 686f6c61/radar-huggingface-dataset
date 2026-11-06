@@ -100,7 +100,7 @@ Frente a alternativas de otros autores (XTTS, Bark, Parler-TTS, Orpheus u otras 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/Humaneness-Voice-Large-1.5-Alpha
+- Modelo en Hugging Face: https://huggingface.co/laion/Humaneness-Voice-Large-1.5-Alpha
 - Modelo base (SFT 1.3 Alpha): https://huggingface.co/laion/Humaneness-Voice-Large-1.3-Alpha
 - Fase RL anterior (1.4): https://huggingface.co/laion/Humane-Voice-Large-Alpha-1.4
 - Codec externo MOSS Audio Tokenizer v2: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-v2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RK3588-CNN-mobilenetv2 es un paquete de despliegue del clasificador de imagenes MobileNetV2 convertido al formato RKNN de Rockchip para ejecutarse sobre la NPU del SoC RK3588. Lo publica el usuario RKNNAI en HuggingFace y no entrena ningun modelo nuevo: toma el MobileNetV2 distribuido en el repositorio onnx/models, lo convierte y lo cuantifica a int8 con la toolchain RKNN-Toolkit2, y empaqueta los ficheros resultantes junto a la documentacion de uso.
+RK3588-CNN-mobilenetv2 es un paquete de despliegue del clasificador de imagenes MobileNetV2 convertido al formato RKNN de Rockchip para ejecutarse sobre la NPU del SoC RK3588. Lo publica el usuario RKNNAI en Hugging Face y no entrena ningun modelo nuevo: toma el MobileNetV2 distribuido en el repositorio onnx/models, lo convierte y lo cuantifica a int8 con la toolchain RKNN-Toolkit2, y empaqueta los ficheros resultantes junto a la documentacion de uso.
 
 El repositorio contiene una unica configuracion, `mobilenetv2-224x224-w8a8-1`, con entrada de 224x224 pixeles, cuantizacion w8a8 (pesos y activaciones a 8 bits), un solo nucleo NPU y runtime RKNN v2.4.0. Esta pensado exclusivamente para el chip RK3588; no hay variantes para otras plataformas Rockchip ni pesos en FP16/FP32.
 
@@ -24,9 +24,9 @@ Su relevancia es practica y de despliegue: permite disponer de un backbone convo
 | Nucleos NPU | 1 |
 | Chips soportados | RK3588 |
 | Revision de descarga | v2.4.0 |
-| Tamano del repo | 0,0 GB segun HuggingFace (redondeado) |
+| Tamano del repo | 0,0 GB segun Hugging Face (redondeado) |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion en HuggingFace | 2026-10-02 (segun metadatos del repositorio) |
+| Fecha de creacion en Hugging Face | 2026-10-02 (segun metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
 
@@ -103,7 +103,7 @@ En todos los casos, el desarrollador deberia medir por su cuenta la precision y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKNNAI/RK3588-CNN-mobilenetv2
+- Modelo en Hugging Face: https://huggingface.co/RKNNAI/RK3588-CNN-mobilenetv2
 - Descarga del repositorio completo (ModelScope): https://modelscope.cn/models/RKNNAI/RK3588-CNN-mobilenetv2
 - Modelo origen (ONNX Model Zoo): https://github.com/onnx/models
 - Ejemplo de MobileNet en RKNN Model Zoo: https://github.com/airockchip/rknn_model_zoo/tree/main/examples/mobilenet

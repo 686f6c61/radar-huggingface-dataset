@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Rajeshwari-Chanda/bloom-560m_sparsegpt_0.3` es una version podada de BLOOM-560m, el checkpoint mas pequeno de la familia BLOOM desarrollada por BigScience. Lo publica el usuario individual Rajeshwari-Chanda en HuggingFace y no cuenta con model card propia: el README es una plantilla autogenerada por la libreria `transformers` en la que todos los campos relevantes aparecen como "[More Information Needed]". El resultado es un modelo de generacion de texto condicionado a partir de un prompt, con licencia e idiomas sin declarar.
+El modelo `Rajeshwari-Chanda/bloom-560m_sparsegpt_0.3` es una version podada de BLOOM-560m, el checkpoint mas pequeno de la familia BLOOM desarrollada por BigScience. Lo publica el usuario individual Rajeshwari-Chanda en Hugging Face y no cuenta con model card propia: el README es una plantilla autogenerada por la libreria `transformers` en la que todos los campos relevantes aparecen como "[More Information Needed]". El resultado es un modelo de generacion de texto condicionado a partir de un prompt, con licencia e idiomas sin declarar.
 
 La caracteristica que define a esta variante es la aplicacion de SparseGPT, un metodo de podado (pruning) one-shot disenado para modelos transformer de gran escala. Segun el nombre del repositorio, se ha aplicado a un 30% de sparsity (`_0.3`), lo que implica que aproximadamente un 30% de los pesos se han fijado a cero sin reentrenamiento posterior. SparseGPT, presentado en el paper arXiv:2301.00774, demuestra que es posible podar modelos de la familia GPT sin perdida apreciable de precision en tareas de generacion.
 
@@ -65,11 +65,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 | Modelo | Parametros | Contexto | Poda | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | bloom-560m_sparsegpt_0.3 | 559 M | 2048 (heredado) | SparseGPT 30% | No disponible | 0 descargas, 0 likes |
-| bloom-560m (base) | 559 M | 2048 | Sin poda | BigScience BLOOM RAIL 1.0 | Ampliamente disponible en HuggingFace |
+| bloom-560m (base) | 559 M | 2048 | Sin poda | BigScience BLOOM RAIL 1.0 | Ampliamente disponible en Hugging Face |
 | bloom-560m_wanda_0.9 (mismo autor) | 559 M | 2048 | Wanda 90% | No disponible | Repositorio hermano, sin descargas documentadas |
 | Qwen2.5-0.5B | 494 M | 32.768 | Sin poda | Apache 2.0 | Ampliamente disponible |
 
-Los datos de la fila `bloom-560m` y `bloom-560m_wanda_0.9` proceden de la informacion disponible en HuggingFace; los de Qwen2.5-0.5B se incluyen como referencia de categoria por tamano, no como resultados de benchmark de este modelo.
+Los datos de la fila `bloom-560m` y `bloom-560m_wanda_0.9` proceden de la informacion disponible en Hugging Face; los de Qwen2.5-0.5B se incluyen como referencia de categoria por tamano, no como resultados de benchmark de este modelo.
 
 ## Limitaciones y advertencias
 
@@ -83,8 +83,8 @@ Los datos de la fila `bloom-560m` y `bloom-560m_wanda_0.9` proceden de la inform
 
 ## Enlaces
 
-- [Repositorio en HuggingFace: Rajeshwari-Chanda/bloom-560m_sparsegpt_0.3](https://huggingface.co/Rajeshwari-Chanda/bloom-560m_sparsegpt_0.3)
+- [Repositorio en Hugging Face: Rajeshwari-Chanda/bloom-560m_sparsegpt_0.3](https://huggingface.co/Rajeshwari-Chanda/bloom-560m_sparsegpt_0.3)
 - [Modelo hermano: Rajeshwari-Chanda/bloom-560m_wanda_0.9](https://huggingface.co/Rajeshwari-Chanda/bloom-560m_wanda_0.9)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Rajeshwari-Chanda/models)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Rajeshwari-Chanda/models)
 - [Paper SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot (arXiv:2301.00774)](https://arxiv.org/abs/2301.00774)
 - [Paper referenciado en las etiquetas: Lacoste et al. (2019), arXiv:1910.09700](https://arxiv.org/abs/1910.09700)

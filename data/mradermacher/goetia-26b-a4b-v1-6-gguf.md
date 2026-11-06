@@ -20,20 +20,20 @@ La relevancia de esta ficha es limitada pero concreta: se trata de una de las po
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | GGUF (cuantizaciones estaticas generadas con llama.cpp) |
-| Tamano del repositorio | 26,7 GB (segun HuggingFace) |
+| Tamano del repositorio | 26,7 GB (segun Hugging Face) |
 | Modelo base | Naphula/Goetia-26B-A4B-v1.6 |
 | Etiquetas declaradas | gguf, endpoints_compatible, region:us, conversational |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base en la informacion proporcionada. Los metadatos del proceso de cuantizacion aportan dos pistas indirectas: por un lado, el campo `convert_type: hf` indica que la conversion partio de pesos en formato HuggingFace, no de un GGUF previo; por otro, el campo `skip_mmproj: 1` registra que el proyector multimodal fue omitido durante la conversion. Esto ultimo apunta a que el modelo base podria incluir un componente multimodal (vision-lenguaje) que no esta presente en estas cuantizaciones, aunque no puede confirmarse a partir de los datos disponibles ni conviene asumir que las capacidades de vision esten operativas en los ficheros GGUF publicados.
+No se dispone de informacion sobre la arquitectura del modelo base en la informacion proporcionada. Los metadatos del proceso de cuantizacion aportan dos pistas indirectas: por un lado, el campo `convert_type: hf` indica que la conversion partio de pesos en formato Hugging Face, no de un GGUF previo; por otro, el campo `skip_mmproj: 1` registra que el proyector multimodal fue omitido durante la conversion. Esto ultimo apunta a que el modelo base podria incluir un componente multimodal (vision-lenguaje) que no esta presente en estas cuantizaciones, aunque no puede confirmarse a partir de los datos disponibles ni conviene asumir que las capacidades de vision esten operativas en los ficheros GGUF publicados.
 
 Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. El tag `conversational` y la etiqueta `endpoints_compatible` indican que el modelo esta pensado para uso conversacional y que las cuantizaciones son compatibles con endpoints de inferencia tipo API, respectivamente. La version declarada es v1.6, lo que implica al menos cinco iteraciones previas del modelo base, sin que se documenten los cambios entre versiones.
 
 ## Capacidades
 
 - Generacion de texto conversacional: el tag `conversational` del repositorio indica que el modelo esta orientado a dialogos multi-turno, aunque no se especifica el formato de plantilla de chat empleado.
-- Compatibilidad con endpoints de inferencia: la etiqueta `endpoints_compatible` sugiere que las cuantizaciones pueden servirse mediante APIs compatibles con el ecosistema de HuggingFace.
+- Compatibilidad con endpoints de inferencia: la etiqueta `endpoints_compatible` sugiere que las cuantizaciones pueden servirse mediante APIs compatibles con el ecosistema de Hugging Face.
 - Razonamiento y generacion de codigo: no disponible, no hay informacion que confirme o descarte estas capacidades.
 - Tool calling y function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.

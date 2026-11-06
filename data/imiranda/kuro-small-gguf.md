@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kuro-Small es una variante ligera del modelo Kuro, publicada por el usuario iMiranda en HuggingFace. Se trata de una cuantización en formato GGUF (Q4_K_M) del modelo Qwen/Qwen2.5-1.5B-Instruct, diseñada específicamente para ejecutarse en equipos modestos con 8 GB de RAM total y sin GPU dedicada, usando únicamente CPU. El modelo incorpora una personalidad llamada "Kuro" mediante un system prompt inyectado en tiempo de ejecución, sin modificar los pesos originales. Su objetivo principal es ofrecer un asistente conversacional técnico y directo, optimizado para entornos de terminal pura (TTY), con un consumo de memoria inferior a 2 GiB durante la inferencia.
+Kuro-Small es una variante ligera del modelo Kuro, publicada por el usuario iMiranda en Hugging Face. Se trata de una cuantización en formato GGUF (Q4_K_M) del modelo Qwen/Qwen2.5-1.5B-Instruct, diseñada específicamente para ejecutarse en equipos modestos con 8 GB de RAM total y sin GPU dedicada, usando únicamente CPU. El modelo incorpora una personalidad llamada "Kuro" mediante un system prompt inyectado en tiempo de ejecución, sin modificar los pesos originales. Su objetivo principal es ofrecer un asistente conversacional técnico y directo, optimizado para entornos de terminal pura (TTY), con un consumo de memoria inferior a 2 GiB durante la inferencia.
 
 El modelo base, Qwen2.5-1.5B-Instruct, es un transformer decoder-only de 1.500 millones de parámetros desarrollado por Alibaba, con una ventana de contexto nativa de hasta 32.768 tokens y vocabulario BPE de 151.000 entradas. Al estar cuantizado a 4 bits, el archivo GGUF ocupa aproximadamente 1.0 GiB, lo que permite cargarlo en máquinas con poca RAM. La licencia Apache 2.0 permite uso comercial sin restricciones significativas. La relevancia actual radica en la creciente demanda de modelos pequeños, eficientes y desplegables en hardware de bajo coste, especialmente para aplicaciones de asistencia local, automatización de tareas y prototipado rápido.
 
@@ -91,7 +91,7 @@ Kuro-Small se distingue por su extremo bajo consumo de memoria y su personalidad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/iMiranda/kuro-small-gguf
+- Repositorio Hugging Face: https://huggingface.co/iMiranda/kuro-small-gguf
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp
 - Variante original Kuro (Phi-3.5): https://huggingface.co/iMiranda/kuro-phi3.5-gguf

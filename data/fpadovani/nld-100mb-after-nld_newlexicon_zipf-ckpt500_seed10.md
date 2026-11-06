@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/nld-100mb-after-nld_newlexicon_zipf-ckpt500_seed10` es un ajuste fino (fine-tuning) de un modelo GPT-2 de 124,7 millones de parámetros, desarrollado por fpadovani. Se basa en el modelo `fpadovani/ppt-nld_newlexicon_zipf-100mb_seed10` y ha sido entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de HuggingFace. El nombre sugiere que forma parte de una línea de investigación sobre lenguajes artificiales o "newlexicon", posiblemente relacionada con el aprendizaje de idiomas construidos o la generación de texto con vocabularios controlados.
+El modelo `fpadovani/nld-100mb-after-nld_newlexicon_zipf-ckpt500_seed10` es un ajuste fino (fine-tuning) de un modelo GPT-2 de 124,7 millones de parámetros, desarrollado por fpadovani. Se basa en el modelo `fpadovani/ppt-nld_newlexicon_zipf-100mb_seed10` y ha sido entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de Hugging Face. El nombre sugiere que forma parte de una línea de investigación sobre lenguajes artificiales o "newlexicon", posiblemente relacionada con el aprendizaje de idiomas construidos o la generación de texto con vocabularios controlados.
 
 Este modelo es relevante para la comunidad de investigación en procesamiento del lenguaje natural, especialmente para experimentos que requieren un modelo pequeño, rápido y fácil de desplegar, con capacidad de generación de texto en inglés (aunque no se especifican idiomas oficialmente). Al ser un checkpoint intermedio (ckpt500) de un proceso de entrenamiento, puede ser útil para estudiar la evolución del aprendizaje o para tareas de generación de texto en dominios específicos. Su tamaño compacto lo hace adecuado para entornos con recursos limitados, aunque no se proporcionan detalles sobre la longitud de contexto ni la licencia exacta.
 
@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables específicos. Sin embarg
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/fpadovani/nld-100mb-after-nld_newlexicon_zipf-ckpt500_seed10)
+- [Hugging Face - modelo](https://huggingface.co/fpadovani/nld-100mb-after-nld_newlexicon_zipf-ckpt500_seed10)
 - [Modelo base](https://huggingface.co/fpadovani/ppt-nld_newlexicon_zipf-100mb_seed10)
 - [Checkpoint relacionado: nld-100mb-after-nld_newlexicon_zipf_heavy-ckpt500_seed3407](https://huggingface.co/fpadovani/nld-100mb-after-nld_newlexicon_zipf_heavy-ckpt500_seed3407)
 - [Checkpoint relacionado: nld-100mb-after-newlexicon-zipf-nld-baseline-ckpt500_seed10](https://huggingface.co/fpadovani/nld-100mb-after-newlexicon-zipf-nld-baseline-ckpt500_seed10)

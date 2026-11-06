@@ -96,9 +96,9 @@ Frente a Phi-4 base, la variante reasoning mantiene el tamaño y duplica la vent
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JakTheTrippr/Phi-4-reasoning
+- Repositorio en Hugging Face: https://huggingface.co/JakTheTrippr/Phi-4-reasoning
 - Informe técnico de Phi-4-reasoning (arXiv:2504.21318): https://huggingface.co/papers/2504.21318
-- Modelo base en HuggingFace: https://huggingface.co/microsoft/phi-4
+- Modelo base en Hugging Face: https://huggingface.co/microsoft/phi-4
 - Modelo original de Microsoft: https://huggingface.co/microsoft/Phi-4-reasoning
 - Licencia MIT referenciada por el autor: https://huggingface.co/microsoft/Phi-4-reasoning/resolve/main/LICENSE
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a dominios de Pathé (pathe.com) sin relación con Phi-4.

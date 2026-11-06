@@ -94,9 +94,9 @@ La principal ventaja de Nemotron-3.5-Lightning frente a Qwen3-30B-A3B es su cont
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo (original de NVIDIA): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
-- Repositorio HuggingFace del mirror (lactroiii): https://huggingface.co/lactroiii/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
-- Colección de modelos Nemotron v3 en HuggingFace: https://huggingface.co/collections/nvidia/nvidia-nemotron-v3
+- Repositorio Hugging Face del modelo (original de NVIDIA): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
+- Repositorio Hugging Face del mirror (lactroiii): https://huggingface.co/lactroiii/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
+- Colección de modelos Nemotron v3 en Hugging Face: https://huggingface.co/collections/nvidia/nvidia-nemotron-v3
 - Página del modelo en NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b
 - Página de desarrollador de Nemotron: https://developer.nvidia.com/topics/ai/nemotron
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/

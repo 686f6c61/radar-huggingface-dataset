@@ -78,7 +78,7 @@ No se dispone de informacion sobre modelos comparables de otros desarrolladores 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversion MLX BF16: https://huggingface.co/mlx-community/MiniMax-Music3-bf16
+- Repositorio Hugging Face de la conversion MLX BF16: https://huggingface.co/mlx-community/MiniMax-Music3-bf16
 - Modelo original de MiniMax: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Licencia del modelo: https://huggingface.co/MiniMaxAI/MiniMax-Music3/blob/main/LICENSE
 - Repositorio mlx-audio: https://github.com/Blaizzy/mlx-audio

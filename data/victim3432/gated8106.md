@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`victim3432/gated8106` es un modelo publicado en HuggingFace por el usuario `victim3432` bajo licencia MIT y con acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargar los pesos. La única etiqueta de arquitectura presente en la información disponible es `gpt2`, lo que indica que el modelo se construye sobre la familia GPT-2 original de OpenAI, un transformer decoder-only autorregresivo presentado en 2019. No se especifican el número de parámetros, la longitud de contexto efectiva, los idiomas soportados ni el pipeline de uso.
+`victim3432/gated8106` es un modelo publicado en Hugging Face por el usuario `victim3432` bajo licencia MIT y con acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargar los pesos. La única etiqueta de arquitectura presente en la información disponible es `gpt2`, lo que indica que el modelo se construye sobre la familia GPT-2 original de OpenAI, un transformer decoder-only autorregresivo presentado en 2019. No se especifican el número de parámetros, la longitud de contexto efectiva, los idiomas soportados ni el pipeline de uso.
 
 El repositorio no incluye descripción, tarjeta de modelo sustantiva, resultados de evaluación ni datos de entrenamiento. Tanto las descargas como los "likes" son cero en el momento de la consulta, y las fechas de creación y actualización (4 de noviembre de 2026, con apenas 20 segundos de diferencia) sugieren una publicación automatizada o de prueba más que un lanzamiento de modelo con un ciclo de vida documentado.
 
@@ -40,10 +40,10 @@ No se describe ninguna innovación técnica adicional: no hay mención a decodif
 ## Casos de uso
 
 - Experimentación académica con arquitecturas GPT-2: útil para reproducir pipelines de fine-tuning o comparar variantes de la familia, siempre que se obtenga acceso y se verifique el tamaño real del checkpoint.
-- Pruebas de integración de la infraestructura "gated" de HuggingFace: sirve como caso de estudio para validar flujos de solicitud de acceso, tokens de autenticación y descarga programática.
+- Pruebas de integración de la infraestructura "gated" de Hugging Face: sirve como caso de estudio para validar flujos de solicitud de acceso, tokens de autenticación y descarga programática.
 - Generación de texto de relleno en entornos de desarrollo: para probar interfaces, plantillas de prompt o sistemas de logging sin depender de modelos grandes.
 - Benchmarking interno de latencia y throughput: si el checkpoint resulta ser un GPT-2 pequeño, puede emplearse como línea base ligera en pruebas de serving (por ejemplo, con `transformers` o `vLLM`).
-- Docencia sobre modelos de lenguaje: como ejemplo de repositorio mínimo con licencia permisiva para ilustrar el ciclo de vida de un modelo en HuggingFace.
+- Docencia sobre modelos de lenguaje: como ejemplo de repositorio mínimo con licencia permisiva para ilustrar el ciclo de vida de un modelo en Hugging Face.
 - Fine-tuning controlado sobre dominios muy acotados: si el checkpoint es un GPT-2 base, puede adaptarse a tareas de generación de texto específicas con datasets pequeños y GPUs de consumo.
 - Auditoría de seguridad de repositorios: útil para estudiar cómo se comportan los filtros de acceso y las políticas de publicación en la plataforma.
 
@@ -73,7 +73,7 @@ La comparación se limita a la familia GPT-2 porque la información disponible n
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación: no hay tarjeta de modelo, descripción, datos de entrenamiento ni métricas, lo que impide evaluar su calidad de forma objetiva.
-- Acceso restringido: es necesario solicitar permiso en HuggingFace y aceptar condiciones antes de descargar los pesos, lo que añade fricción a cualquier evaluación.
+- Acceso restringido: es necesario solicitar permiso en Hugging Face y aceptar condiciones antes de descargar los pesos, lo que añade fricción a cualquier evaluación.
 - Riesgo de alucinación: si el checkpoint deriva de GPT-2, la tendencia a generar texto plausible pero incorrecto es alta, especialmente en dominios factuales.
 - Sesgos: los modelos basados en GPT-2 heredan sesgos de género, raza y religión presentes en su corpus original (mayoritariamente inglés y de fuentes web de 2019); no hay información sobre mitigaciones aplicadas.
 - Limitaciones de idioma y contexto: no se documentan idiomas soportados; GPT-2 original tiene un contexto de 1024 tokens, insuficiente para tareas de contexto largo.
@@ -83,7 +83,7 @@ La comparación se limita a la familia GPT-2 porque la información disponible n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/victim3432/gated8106
+- Hugging Face: https://huggingface.co/victim3432/gated8106
 - Paper original de GPT-2 (referencia de la arquitectura etiquetada): https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
 - Repositorio oficial de GPT-2 en OpenAI: https://github.com/openai/gpt-2
-- Checkpoint de referencia en HuggingFace: https://huggingface.co/openai-community/gpt2
+- Checkpoint de referencia en Hugging Face: https://huggingface.co/openai-community/gpt2

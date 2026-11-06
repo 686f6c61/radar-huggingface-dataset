@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci√
 
 ## Enlaces
 
-- [netprojects/GLiDE-mlx-4bit en HuggingFace](https://huggingface.co/netprojects/GLiDE-mlx-4bit)
+- [netprojects/GLiDE-mlx-4bit en Hugging Face](https://huggingface.co/netprojects/GLiDE-mlx-4bit)
 - [fastino/GLiDE (modelo base)](https://huggingface.co/fastino/GLiDE)
 - [netprojects/GLiDE-mlx-8bit](https://huggingface.co/netprojects/GLiDE-mlx-8bit)
 - [Repositorio glide-mlx](https://github.com/internet-projects/glide-mlx)

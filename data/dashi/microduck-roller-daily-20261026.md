@@ -67,15 +67,15 @@ La model card menciona el valor 0.900 asociado al remix previo `dashi/microduck-
 
 | Modelo | Tipo | Parámetros | Contexto / interfaz | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `dashi/microduck-roller-daily-20261026` | Política RL en ONNX, slot `walk`, con ruedas | no disponible | 61-D observación, 14 acciones, 50 Hz | no disponible (0.900 del remix previo, métrica sin especificar) | no disponible | Repo HuggingFace, 0 descargas |
-| `DenRakEiw/microduck-senate_duck_0904` | Política RL, modelo base del anterior | no disponible | Interfaz microduck; detalles no disponibles en esta información | no disponible | no disponible | Repo HuggingFace |
-| `dashi/microduck-roller-remix-r900` | Política RL, remix previo del mismo autor | no disponible | Interfaz microduck; detalles no disponibles en esta información | 0.900 según la model card, métrica sin especificar | no disponible | Repo HuggingFace |
+| `dashi/microduck-roller-daily-20261026` | Política RL en ONNX, slot `walk`, con ruedas | no disponible | 61-D observación, 14 acciones, 50 Hz | no disponible (0.900 del remix previo, métrica sin especificar) | no disponible | Repo Hugging Face, 0 descargas |
+| `DenRakEiw/microduck-senate_duck_0904` | Política RL, modelo base del anterior | no disponible | Interfaz microduck; detalles no disponibles en esta información | no disponible | no disponible | Repo Hugging Face |
+| `dashi/microduck-roller-remix-r900` | Política RL, remix previo del mismo autor | no disponible | Interfaz microduck; detalles no disponibles en esta información | 0.900 según la model card, métrica sin especificar | no disponible | Repo Hugging Face |
 
 No se dispone de información sobre otras familias de políticas de locomoción comparables (por ejemplo, controladores para otros robots cuadrúpedos o bípedos) dentro de los datos proporcionados, por lo que la comparación se limita a los tres artefactos de la misma serie microduck.
 
 ## Limitaciones y advertencias
 
-- **Licencia no especificada**: la ficha de HuggingFace no declara licencia y la model card tampoco la incluye. Sin licencia explícita no se puede asumir permiso para uso comercial, redistribución ni obras derivadas; hay que contactar con el autor antes de cualquier uso en producción.
+- **Licencia no especificada**: la ficha de Hugging Face no declara licencia y la model card tampoco la incluye. Sin licencia explícita no se puede asumir permiso para uso comercial, redistribución ni obras derivadas; hay que contactar con el autor antes de cualquier uso en producción.
 - **Idioma y modalidad**: no procesa lenguaje, imagen ni audio. Cualquier expectativa de uso como modelo generativo es un error de categoría.
 - **Alcance físico restringido**: la política está entrenada para desplazamiento sobre ruedas (rollers) en el robot microduck. Usarla en otra morfología, sobre terreno irregular o con una carga distinta a la del entorno de entrenamiento puede producir comportamientos inseguros.
 - **Comportamiento «perpetuo»**: la model card indica que se ejecuta hasta que se le diga lo contrario. En un robot real esto exige mecanismos externos de parada y supervisión; no se documentan condiciones de parada seguras dentro de la política.
@@ -87,7 +87,7 @@ No se dispone de información sobre otras familias de políticas de locomoción 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dashi/microduck-roller-daily-20261026
+- Modelo en Hugging Face: https://huggingface.co/dashi/microduck-roller-daily-20261026
 - Modelo base: https://huggingface.co/DenRakEiw/microduck-senate_duck_0904
 - Remix previo del mismo autor: https://huggingface.co/dashi/microduck-roller-remix-r900
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck

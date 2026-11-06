@@ -79,9 +79,9 @@ No constan métricas objetivas como FID, CLIP score, ImageReward, ni evaluacione
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| axiomofmind/Moss-image-nsfw-uncensored-lora | LoRA sobre MOSS-Image-SFT | no disponible | no aplica | apache-2.0 | HuggingFace, diffusers |
-| OpenMOSS-Team/MOSS-Image-SFT (modelo base) | Difusion texto-a-imagen | no disponible | no disponible | no indicada en la informacion | HuggingFace |
-| Otros LoRA NSFW para modelos de difusion | LoRA | no disponible | no aplica | variable | HuggingFace y comunidades afines |
+| axiomofmind/Moss-image-nsfw-uncensored-lora | LoRA sobre MOSS-Image-SFT | no disponible | no aplica | apache-2.0 | Hugging Face, diffusers |
+| OpenMOSS-Team/MOSS-Image-SFT (modelo base) | Difusion texto-a-imagen | no disponible | no disponible | no indicada en la informacion | Hugging Face |
+| Otros LoRA NSFW para modelos de difusion | LoRA | no disponible | no aplica | variable | Hugging Face y comunidades afines |
 
 No se dispone de datos de rendimiento, parámetros ni contexto de los modelos comparables en la información proporcionada, por lo que la comparación se limita a tipo de artefacto, licencia y disponibilidad. No se han identificado en la búsqueda adaptadores LoRA equivalentes construidos específicamente sobre MOSS-Image-SFT.
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento, parámetros ni contexto de los modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axiomofmind/Moss-image-nsfw-uncensored-lora
+- Modelo en Hugging Face: https://huggingface.co/axiomofmind/Moss-image-nsfw-uncensored-lora
 - Modelo base MOSS-Image-SFT: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Repositorio de la librería diffusers: no incluido en la información proporcionada
 - Paper o blog técnico del modelo base: no incluido en la información proporcionada

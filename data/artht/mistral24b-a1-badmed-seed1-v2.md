@@ -66,7 +66,7 @@ No disponible. No se ha identificado informacion sobre modelos comparables de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArthT/mistral24b-a1-badmed-seed1-v2
+- Repositorio Hugging Face: https://huggingface.co/ArthT/mistral24b-a1-badmed-seed1-v2
 - Repositorio del modelo hermano (a0): https://huggingface.co/ArthT/mistral24b-a0-badmed-seed1-v2
 - Repositorio de otro modelo del autor: https://huggingface.co/ArthT/qwen7b-a1-badmed-seed1-v2
 - Referencia de Unsloth (tag del modelo): https://unsloth.ai

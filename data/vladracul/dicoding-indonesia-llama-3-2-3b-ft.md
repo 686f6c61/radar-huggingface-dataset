@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning de Llama 3.2 3B Instruct, publicado por el usuario vladracul en HuggingFace. El punto de partida es el checkpoint `unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit`, lo que indica que el entrenamiento se aceleró con la librería Unsloth y se utilizó el stack de HuggingFace TRL. El nombre del repositorio sugiere que el fine-tuning está orientado al idioma indonesio, posiblemente como parte de un ejercicio de la plataforma educativa Dicoding, aunque la model card declara el idioma como inglés (`en`). Con 3.212 millones de parámetros, es un modelo compacto pensado para entornos con recursos limitados. La licencia Apache 2.0 permite uso comercial y modificación, pero la documentación disponible es muy escasa: no se especifican el dataset, el proceso de entrenamiento ni las capacidades concretas adquiridas.
+Este modelo es un fine-tuning de Llama 3.2 3B Instruct, publicado por el usuario vladracul en Hugging Face. El punto de partida es el checkpoint `unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit`, lo que indica que el entrenamiento se aceleró con la librería Unsloth y se utilizó el stack de Hugging Face TRL. El nombre del repositorio sugiere que el fine-tuning está orientado al idioma indonesio, posiblemente como parte de un ejercicio de la plataforma educativa Dicoding, aunque la model card declara el idioma como inglés (`en`). Con 3.212 millones de parámetros, es un modelo compacto pensado para entornos con recursos limitados. La licencia Apache 2.0 permite uso comercial y modificación, pero la documentación disponible es muy escasa: no se especifican el dataset, el proceso de entrenamiento ni las capacidades concretas adquiridas.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ Este modelo es un fine-tuning de Llama 3.2 3B Instruct, publicado por el usuario
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Llama 3.2 de Meta: un transformer decoder-only con atencion causal estandar, disenado para equilibrio entre capacidad y eficiencia. El fine-tuning parte del checkpoint `unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit`, que ya estaba cuantizado a 4 bits mediante bitsandbytes, y se entreno con la libreria TRL de HuggingFace junto con Unsloth, que optimiza los kernels de entrenamiento para acelerar el proceso. No se proporcionan datos sobre el dataset utilizado, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas de RLHF o DPO. La model card es extremadamente breve y no incluye detalles tecnicos adicionales, lo que limita cualquier analisis profundo del proceso.
+El modelo se basa en la arquitectura Llama 3.2 de Meta: un transformer decoder-only con atencion causal estandar, disenado para equilibrio entre capacidad y eficiencia. El fine-tuning parte del checkpoint `unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit`, que ya estaba cuantizado a 4 bits mediante bitsandbytes, y se entreno con la libreria TRL de Hugging Face junto con Unsloth, que optimiza los kernels de entrenamiento para acelerar el proceso. No se proporcionan datos sobre el dataset utilizado, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas de RLHF o DPO. La model card es extremadamente breve y no incluye detalles tecnicos adicionales, lo que limita cualquier analisis profundo del proceso.
 
 ## Capacidades
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-Se han encontrado otros modelos con fines aparentemente similares en HuggingFace:
+Se han encontrado otros modelos con fines aparentemente similares en Hugging Face:
 
 - `bip22/llama-3.2-3b-indonesian-finetuned-dicoding-submission`
 - `Kiznaiver02/llama3-indonesia-finetuned-dicoding`
@@ -72,7 +72,7 @@ No se dispone de detalles tecnicos de estos modelos (parametros, contexto, rendi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vladracul/dicoding-indonesia-llama-3.2-3b-ft
+- Hugging Face: https://huggingface.co/vladracul/dicoding-indonesia-llama-3.2-3b-ft
 - Modelos similares (referencia):
   - https://huggingface.co/bip22/llama-3.2-3b-indonesian-finetuned-dicoding-submission
   - https://huggingface.co/dwir/Llama-3.2-indonesia-3B

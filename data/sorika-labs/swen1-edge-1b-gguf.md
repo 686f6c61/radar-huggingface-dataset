@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swen-1 Edge 1B es un modelo de lenguaje conversacional de aproximadamente 1.078 millones de parametros publicado por Sorika Labs (organizacion `sorika-labs` en HuggingFace) y distribuido exclusivamente en formato GGUF cuantizado para su uso con llama.cpp. Se presenta como una release orientada a inferencia en CPU, con una cuantizacion Q6_K de unos 846 MB, lo que lo situa en la categoria de modelos "edge" de un solo gigabyte, pensados para ejecutarse en equipos sin GPU dedicada. La model card lo etiqueta con las etiquetas `reasoning` y `conversational`, aunque no aporta detalles sobre arquitectura, datos de entrenamiento ni evaluaciones.
+Swen-1 Edge 1B es un modelo de lenguaje conversacional de aproximadamente 1.078 millones de parametros publicado por Sorika Labs (organizacion `sorika-labs` en Hugging Face) y distribuido exclusivamente en formato GGUF cuantizado para su uso con llama.cpp. Se presenta como una release orientada a inferencia en CPU, con una cuantizacion Q6_K de unos 846 MB, lo que lo situa en la categoria de modelos "edge" de un solo gigabyte, pensados para ejecutarse en equipos sin GPU dedicada. La model card lo etiqueta con las etiquetas `reasoning` y `conversational`, aunque no aporta detalles sobre arquitectura, datos de entrenamiento ni evaluaciones.
 
 El modelo no incluye informacion publica sobre su arquitectura interna, composicion del dataset de entrenamiento, proceso de alineacion (RLHF/DPO) ni resultados de benchmarks. Lo unico verificable es el recuento de parametros del repositorio (1.078.285.824), el tamano del repo (0,9 GB), la licencia Apache 2.0 y las instrucciones de ejecucion mediante `llama-cli` con un prompt de sistema obligatorio para fijar la identidad del asistente.
 
@@ -41,7 +41,7 @@ En cuanto al entrenamiento, la model card no menciona numero de tokens, composic
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponibles (no se declara ninguna lista de idiomas).
 - Vision, audio u otras modalidades: no disponible/ no aplica segun la informacion publica.
-- Etiqueta `endpoints_compatible`: el repositorio se marca como compatible con endpoints, lo que sugiere que puede servirse a traves de la infraestructura de Inference Endpoints de HuggingFace ademas de localmente.
+- Etiqueta `endpoints_compatible`: el repositorio se marca como compatible con endpoints, lo que sugiere que puede servirse a traves de la infraestructura de Inference Endpoints de Hugging Face ademas de localmente.
 
 ## Casos de uso
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-Las cifras de los modelos alternativos corresponden a informacion publica ampliamente conocida de cada proyecto; las de Swen-1 Edge 1B provienen del repositorio de HuggingFace. No existen benchmarks comparables publicados para Swen-1, por lo que la comparacion es estructural y no de rendimiento.
+Las cifras de los modelos alternativos corresponden a informacion publica ampliamente conocida de cada proyecto; las de Swen-1 Edge 1B provienen del repositorio de Hugging Face. No existen benchmarks comparables publicados para Swen-1, por lo que la comparacion es estructural y no de rendimiento.
 
 | Modelo | Parametros | Contexto | Licencia | Formato principal |
 |---|---|---|---|---|
@@ -94,7 +94,7 @@ Diferencias relevantes: Swen-1 es el unico de la lista que se publica exclusivam
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sorika-labs/swen1-edge-1B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/sorika-labs/swen1-edge-1B-GGUF
 - Paper: no disponible
 - Blog tecnico del autor: no disponible
 - Repositorio de codigo: no disponible

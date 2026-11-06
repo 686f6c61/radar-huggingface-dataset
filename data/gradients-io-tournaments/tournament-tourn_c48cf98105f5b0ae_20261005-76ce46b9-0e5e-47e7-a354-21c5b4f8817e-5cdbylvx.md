@@ -4,7 +4,7 @@
 
 El modelo identificado como `gradients-io-tournaments/tournament-tourn_c48cf98105f5b0ae_20261005-76ce46b9-0e5e-47e7-a354-21c5b4f8817e-5CDbyLvX` no es un modelo completo, sino un adaptador PEFT (LoRA) publicado sobre el modelo base `gradients-io-tournaments/swe-base-qwen3-8b-continuous`. El repositorio contiene únicamente los pesos del adaptador en formato safetensors (1,4 GB) y declara la librería `peft` en su versión 0.15.1, por lo que su uso requiere descargar también el modelo base y cargar el adaptador mediante `PeftModel` o equivalentes.
 
-El autor es la organización `gradients-io-tournaments`, vinculada a Gradients.io, una plataforma de entrenamiento descentralizado de IA que organiza torneos de fine-tuning. Los identificadores del repositorio (nombre con marca temporal `20261005` y sufijo aleatorio) son consistentes con artefactos generados automáticamente por rondas de torneo, no con un lanzamiento de modelo estable y documentado. La model card del autor es la plantilla por defecto de HuggingFace y no aporta información real sobre datos de entrenamiento, hiperparámetros, licencia o evaluación: todos los campos figuran como `[More Information Needed]`.
+El autor es la organización `gradients-io-tournaments`, vinculada a Gradients.io, una plataforma de entrenamiento descentralizado de IA que organiza torneos de fine-tuning. Los identificadores del repositorio (nombre con marca temporal `20261005` y sufijo aleatorio) son consistentes con artefactos generados automáticamente por rondas de torneo, no con un lanzamiento de modelo estable y documentado. La model card del autor es la plantilla por defecto de Hugging Face y no aporta información real sobre datos de entrenamiento, hiperparámetros, licencia o evaluación: todos los campos figuran como `[More Information Needed]`.
 
 La relevancia de esta ficha es, por tanto, acotada y de tipo procedimental: sirve para documentar qué es este artefacto, sobre qué base se apoya (la familia Qwen3-8B, con contexto nativo de 128 000 tokens), qué se puede y qué no se puede afirmar con la información pública disponible, y qué precauciones tomar antes de considerarlo para cualquier uso en producción. Con 10 descargas y 0 likes en el momento de la consulta, se trata de un checkpoint de investigación con trazabilidad mínima.
 
@@ -72,10 +72,10 @@ La comparación se establece a nivel de familia, ya que no existen métricas pub
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este adaptador (sobre base Qwen3-8B SWE) | 8B aprox. (adaptador de 1,4 GB) | No disponible (familia con 128K) | No disponible | HuggingFace, 10 descargas | Sin benchmarks ni documentación; artefacto de torneo |
-| Qwen3-8B | 8,2B aprox. | 32K nativo, ampliable a 131 072 con YaRN | Apache 2.0 | HuggingFace, ampliamente distribuido | Referencia directa: es la familia del modelo base declarado |
-| Qwen2.5-Coder-7B | 7,6B aprox. | 32K nativo, 128K con YaRN | Apache 2.0 | HuggingFace | Alternativa consolidada para tareas de código |
-| Llama 3.1 8B Instruct | 8,03B | 128K | Llama 3.1 Community License | HuggingFace | Alternativa generalista con licencia con cláusulas de uso |
+| Este adaptador (sobre base Qwen3-8B SWE) | 8B aprox. (adaptador de 1,4 GB) | No disponible (familia con 128K) | No disponible | Hugging Face, 10 descargas | Sin benchmarks ni documentación; artefacto de torneo |
+| Qwen3-8B | 8,2B aprox. | 32K nativo, ampliable a 131 072 con YaRN | Apache 2.0 | Hugging Face, ampliamente distribuido | Referencia directa: es la familia del modelo base declarado |
+| Qwen2.5-Coder-7B | 7,6B aprox. | 32K nativo, 128K con YaRN | Apache 2.0 | Hugging Face | Alternativa consolidada para tareas de código |
+| Llama 3.1 8B Instruct | 8,03B | 128K | Llama 3.1 Community License | Hugging Face | Alternativa generalista con licencia con cláusulas de uso |
 
 Nota: no se dispone de datos que permitan comparar rendimiento real entre estas opciones y el adaptador objeto de la ficha.
 
@@ -93,8 +93,8 @@ Nota: no se dispone de datos que permitan comparar rendimiento real entre estas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_c48cf98105f5b0ae_20261005-76ce46b9-0e5e-47e7-a354-21c5b4f8817e-5CDbyLvX
-- Organización en HuggingFace: https://huggingface.co/gradients-io-tournaments
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_c48cf98105f5b0ae_20261005-76ce46b9-0e5e-47e7-a354-21c5b4f8817e-5CDbyLvX
+- Organización en Hugging Face: https://huggingface.co/gradients-io-tournaments
 - Modelo base declarado: https://huggingface.co/gradients-io-tournaments/swe-base-qwen3-8b-continuous
 - Gradients.io, torneos de entrenamiento descentralizado: https://www.gradients.io/app/research/tournament
 - Modelo hermano de la misma familia en LLM Explorer (8B, 128K de contexto, 16,1 GB de VRAM reportados): https://llm-explorer.com/model/gradients-io-tournaments%2Ftournament-tourn_7aa5c99a79889120_20260928-9a10d83f-1340-44cf-ae01-34cef9dd5a1d-5HBgDWKx,7x8Z2bNryDm9A3ZmD5hnnX

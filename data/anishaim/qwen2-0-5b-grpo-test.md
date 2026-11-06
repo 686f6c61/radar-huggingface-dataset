@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2-0.5B-GRPO-test es un ajuste fino (fine-tune) del modelo Qwen/Qwen2-0.5B-Instruct publicado por el usuario anishaim en HuggingFace. Se trata de un experimento de entrenamiento con GRPO (Group Relative Policy Optimization), la técnica de aprendizaje por refuerzo presentada en el paper DeepSeekMath, aplicada mediante la librería TRL de HuggingFace. El prefijo "test" en el nombre y la ausencia de una model card detallada sugieren que se trata de una prueba de pipeline más que de un modelo destinado a producción.
+Qwen2-0.5B-GRPO-test es un ajuste fino (fine-tune) del modelo Qwen/Qwen2-0.5B-Instruct publicado por el usuario anishaim en Hugging Face. Se trata de un experimento de entrenamiento con GRPO (Group Relative Policy Optimization), la técnica de aprendizaje por refuerzo presentada en el paper DeepSeekMath, aplicada mediante la librería TRL de Hugging Face. El prefijo "test" en el nombre y la ausencia de una model card detallada sugieren que se trata de una prueba de pipeline más que de un modelo destinado a producción.
 
 El modelo parte de la arquitectura Qwen2, un transformer decoder-only de aproximadamente 0,49 mil millones de parámetros, lo que lo sitúa en la gama de modelos ultraligeros. Al derivar de Qwen2-0.5B-Instruct, hereda presumiblemente una ventana de contexto de 32.768 tokens y capacidades multilingües, aunque la model card no confirma estos extremos de forma explícita.
 
@@ -82,8 +82,8 @@ La comparación directa de rendimiento no es posible porque este fine-tune no pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anishaim/Qwen2-0.5B-GRPO-test
+- Modelo en Hugging Face: https://huggingface.co/anishaim/Qwen2-0.5B-GRPO-test
 - Modelo base: https://huggingface.co/Qwen/Qwen2-0.5B-Instruct
 - Paper de GRPO (DeepSeekMath): https://arxiv.org/abs/2402.03300
-- Paper de GRPO en HuggingFace: https://huggingface.co/papers/2402.03300
+- Paper de GRPO en Hugging Face: https://huggingface.co/papers/2402.03300
 - Repositorio de TRL: https://github.com/huggingface/trl

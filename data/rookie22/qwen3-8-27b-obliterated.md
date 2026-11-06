@@ -104,7 +104,7 @@ No se dispone de datos para comparar con otros modelos abliterados de la misma c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rookie22/Qwen3.8-27B-OBLITERATED
+- Repositorio Hugging Face: https://huggingface.co/Rookie22/Qwen3.8-27B-OBLITERATED
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio original OBLITERATUS: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
 - Blog explainx.ai sobre Qwen3.8-27B Uncensored MLX: https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026

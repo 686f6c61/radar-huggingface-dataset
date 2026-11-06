@@ -81,10 +81,10 @@ No se han publicado en la informacion disponible resultados en benchmarks genera
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| BioEvidence-LLM-1.5B | 1,5B (adaptador LoRA) | No especificado en la model card | MIT | QA biomedica con evidencia y salida JSON | HuggingFace (adaptador PEFT) |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache-2.0 (modelo base) | Asistente generalista, sin salida JSON biomedica especializada | HuggingFace |
-| BioMistral-7B | 7B | No disponible | Apache-2.0 | LLM biomedico generalista | HuggingFace |
-| Meditron-7B | 7B | No disponible | No disponible | LLM clinico basado en Llama 2 | HuggingFace |
+| BioEvidence-LLM-1.5B | 1,5B (adaptador LoRA) | No especificado en la model card | MIT | QA biomedica con evidencia y salida JSON | Hugging Face (adaptador PEFT) |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache-2.0 (modelo base) | Asistente generalista, sin salida JSON biomedica especializada | Hugging Face |
+| BioMistral-7B | 7B | No disponible | Apache-2.0 | LLM biomedico generalista | Hugging Face |
+| Meditron-7B | 7B | No disponible | No disponible | LLM clinico basado en Llama 2 | Hugging Face |
 
 La comparacion con modelos biomedicos de 7B no dispone de datos de rendimiento equiparables en la informacion proporcionada, por lo que no se pueden establecer comparaciones cuantitativas fiables. La principal diferencia cualitativa de BioEvidence-LLM-1.5B es su tamano reducido y su salida estructurada orientada a la trazabilidad de la evidencia, frente al enfoque de generacion libre de las alternativas generalistas.
 
@@ -102,7 +102,7 @@ La comparacion con modelos biomedicos de 7B no dispone de datos de rendimiento e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bhupati1998/BioEvidence-LLM-1.5B
+- Modelo en Hugging Face: https://huggingface.co/Bhupati1998/BioEvidence-LLM-1.5B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Bhupati1998/BioEvidence-Datasets
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Perfil del autor: https://huggingface.co/Bhupati1998

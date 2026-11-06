@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/MNN-Pocket-0.3B-FP8",
+  "slug": "liodon-ai-mnn-pocket-0-3b-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/MNN-Pocket-0.3B-FP8",
+  "created_at": "2026-11-04T09:46:56.000Z",
+  "updated_at": "2026-11-04T09:54:39.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "base_model:taobao-mnn/MNN-Pocket-0.3B",
+    "base_model:quantized:taobao-mnn/MNN-Pocket-0.3B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 302830976,
+  "parameters_human": "302.8M",
+  "storage_bytes": 362115560,
+  "storage_human": "362 MB",
+  "base_model": "taobao-mnn/MNN-Pocket-0.3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liodon-ai/MNN-Pocket-0.3B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/MNN-Pocket-0.3B-FP8",
+      "snippet": "liodon-ai / MNN-Pocket-0.3B-FP8 Like 0 Follow Liodon AI 29 Text Generation Transformers Safetensors qwen3 fp8 compressed-tensors vllm quantized conversational text-generation-inference License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "liodon-ai/MNN-Pocket-0.3B-ONNX · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/MNN-Pocket-0.3B-ONNX",
+      "snippet": "MNN-Pocket-0.3B — ONNX ONNX export of taobao-mnn/MNN-Pocket-0.3B, published by Liodon AI. Exported with optimum (optimum.exporters.onnx.main_export, task text-generation-with-past, so the graph exposes past-key-value inputs/outputs for KV-cached autoregressive decoding)."
+    }
+  ]
+}

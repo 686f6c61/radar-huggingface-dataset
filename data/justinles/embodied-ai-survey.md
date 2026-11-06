@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario justinles, no contiene un modelo de inteligencia artificial entrenado, sino un conjunto de notas de investigación y un esbozo de experimento sobre IA encarnada (Embodied AI). El repositorio se presenta como un recurso de lectura y reflexión, con un énfasis explícito en lo que aún debe probarse, en lugar de fabricar resultados o afirmaciones de rendimiento.
+Este repositorio de Hugging Face, publicado por el usuario justinles, no contiene un modelo de inteligencia artificial entrenado, sino un conjunto de notas de investigación y un esbozo de experimento sobre IA encarnada (Embodied AI). El repositorio se presenta como un recurso de lectura y reflexión, con un énfasis explícito en lo que aún debe probarse, en lugar de fabricar resultados o afirmaciones de rendimiento.
 
 El contenido principal se encuentra en el archivo `review.md`, que cubre el alcance de la pregunta de investigación, posibles variables de confusión, una comparación propuesta con líneas base equiparadas, contexto de evaluación con benchmarks públicos, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. Aunque el repositorio incluye un archivo en formato `safetensors` con 16.576 parámetros, el propio README aclara que no hay un checkpoint entrenado ni código liberado. Por tanto, no es un modelo ejecutable, sino un recurso documental para investigadores que necesiten una revisión estructurada y crítica de la literatura en IA encarnada.
 
@@ -67,6 +67,6 @@ No disponible. Este repositorio no es un modelo y no puede compararse con altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/justinles/embodied-ai-survey
+- Hugging Face: https://huggingface.co/justinles/embodied-ai-survey
 - Paper relacionado (A Comprehensive Survey on World Models for Embodied AI): https://arxiv.org/pdf/2510.16732
 - Version HTML del paper: https://arxiv.org/html/2510.16732v1

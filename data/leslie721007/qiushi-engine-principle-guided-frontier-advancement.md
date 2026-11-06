@@ -106,7 +106,7 @@ La información proporcionada no contiene datos de comparación con otros modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leslie721007/Qiushi-Engine-Principle-Guided-Frontier-Advancement
+- Modelo en Hugging Face: https://huggingface.co/leslie721007/Qiushi-Engine-Principle-Guided-Frontier-Advancement
 - Modelo compañero: https://huggingface.co/leslie721007/Qiushi-Engine-Frontier-Advancement
-- Perfil del autor en HuggingFace: https://huggingface.co/leslie721007
+- Perfil del autor en Hugging Face: https://huggingface.co/leslie721007
 - Artículo sobre Qiushi Discovery Engine, proyecto del mismo autor, no confundir con este modelo: https://arxiv.org/abs/2604.27092

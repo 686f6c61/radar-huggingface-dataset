@@ -64,7 +64,7 @@ No se dispone de informacion sobre modelos comparables. El nombre del modelo bas
 
 ## Enlaces
 
-- Repositorio HuggingFace: [https://huggingface.co/magnitudedev/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash-GGUF](https://huggingface.co/magnitudedev/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash-GGUF)
+- Repositorio Hugging Face: [https://huggingface.co/magnitudedev/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash-GGUF](https://huggingface.co/magnitudedev/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash-GGUF)
 - Modelo base (NVIDIA): [https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash)
 - Framework Magnitude: [https://github.com/magnitudedev/magnitude](https://github.com/magnitudedev/magnitude)
 - Licencia openmdw-1.1: [https://openmdw.ai/license/1-1/](https://openmdw.ai/license/1-1/)

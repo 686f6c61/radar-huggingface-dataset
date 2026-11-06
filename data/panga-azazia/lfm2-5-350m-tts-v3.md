@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Panga-Azazia/LFM2.5-350M-TTS-v3 es un ajuste fino (fine-tune) de tipo supervisado del modelo Panga-Azazia/LFM2.5-350M-TTS, publicado por el usuario Panga-Azazia en HuggingFace. Se trata de un modelo de generacion de texto de la familia LFM2 (Liquid Foundation Model 2) de Liquid AI, con 382.682.880 parametros reales (unos 383 M) y un repositorio de 0,8 GB en formato safetensors. El entrenamiento se ha realizado con las librerias TRL y Unsloth, y la tarjeta indica la etiqueta `generated_from_trainer`, lo que confirma un pipeline de SFT sobre el modelo base citado. El acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+Panga-Azazia/LFM2.5-350M-TTS-v3 es un ajuste fino (fine-tune) de tipo supervisado del modelo Panga-Azazia/LFM2.5-350M-TTS, publicado por el usuario Panga-Azazia en Hugging Face. Se trata de un modelo de generacion de texto de la familia LFM2 (Liquid Foundation Model 2) de Liquid AI, con 382.682.880 parametros reales (unos 383 M) y un repositorio de 0,8 GB en formato safetensors. El entrenamiento se ha realizado con las librerias TRL y Unsloth, y la tarjeta indica la etiqueta `generated_from_trainer`, lo que confirma un pipeline de SFT sobre el modelo base citado. El acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 El interes de la ficha radica en dos factores. Primero, la familia LFM2.5 de Liquid AI esta disenada para inferencia muy rapida en hardware modesto, incluyendo CPU, gracias a la arquitectura LFM2 descrita en su informe tecnico; segun el blog de Liquid AI, la variante LFM2.5-350M amplia el preentrenamiento de 10 a 28 billones de tokens e incorpora aprendizaje por refuerzo a gran escala. Segundo, este repositorio concreto es un fine-tune de segunda generacion (un ajuste sobre otro ajuste), con lo que conviene tratarlo como un experimento de la comunidad mas que como un artefacto con garantias de calidad.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ta
 - Ejecucion en CPU: viable, y es el escenario natural para este tamano. Requiere del orden de 1 a 2 GB de RAM segun el tipo numerico.
 - Opciones de despliegue: transformers es la ruta confirmada por el repositorio. El soporte de vLLM, llama.cpp, Ollama o TGI para este checkpoint concreto no esta confirmado en la informacion disponible; seria necesario exportar los pesos a GGUF o verificar la compatibilidad de la arquitectura LFM2 con cada motor.
 - Latencia y throughput estimados: no disponibles. No se publican mediciones de tokens por segundo ni de tiempo hasta el primer token.
-- Nota sobre acceso: al ser un repositorio gated, la descarga requiere autenticacion con un token de HuggingFace y la aceptacion previa de las condiciones.
+- Nota sobre acceso: al ser un repositorio gated, la descarga requiere autenticacion con un token de Hugging Face y la aceptacion previa de las condiciones.
 
 ## Comparativa con modelos similares
 
@@ -76,10 +76,10 @@ Los valores de este modelo proceden del repositorio consultado. Los de los model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Panga-Azazia/LFM2.5-350M-TTS-v3 | 382,7 M | No disponible | No disponible | Gated en HuggingFace; safetensors; 0 descargas |
+| Panga-Azazia/LFM2.5-350M-TTS-v3 | 382,7 M | No disponible | No disponible | Gated en Hugging Face; safetensors; 0 descargas |
 | Liquid AI LFM2.5-350M (modelo base de la familia) | 350 M (nominal) | No disponible en la informacion recuperada | No disponible en la informacion recuperada | Publico segun el blog de Liquid AI |
-| Panga-Azazia/LFM2.5-350M-TTS (base directa de este ajuste) | No disponible | No disponible | No disponible | Publico en HuggingFace |
-| Panga-Azazia/LFM2.5-350M-LORA-TTS | No disponible (adaptadores) | No disponible | No disponible | Publico en HuggingFace |
+| Panga-Azazia/LFM2.5-350M-TTS (base directa de este ajuste) | No disponible | No disponible | No disponible | Publico en Hugging Face |
+| Panga-Azazia/LFM2.5-350M-LORA-TTS | No disponible (adaptadores) | No disponible | No disponible | Publico en Hugging Face |
 | Alternativas de ~0,3-0,6 B de otras familias (Qwen3-0.6B, SmolLM2-360M, Gemma 3 270M) | 0,27-0,6 B | No disponible | Licencias permisivas en la mayoria de casos (Apache-2.0 o terminos propios) | Publicas y ampliamente descargadas |
 
 La diferencia practica principal frente a esas alternativas no esta en el rendimiento, que no se ha medido, sino en la trazabilidad: este checkpoint carece de licencia declarada, de idiomas declarados y de evaluaciones, y tiene cero adopcion registrada. Para produccion, un modelo de tamano similar con licencia explicita y comunidad activa es una opcion mas segura.
@@ -95,13 +95,13 @@ La diferencia practica principal frente a esas alternativas no esta en el rendim
 - Ambiguedad del nombre TTS: el sufijo sugiere sintesis de voz, pero el pipeline es text-generation y el repositorio no contiene decodificador de audio. No debe usarse como sistema TTS sin verificacion previa.
 - Ausencia de cuantizaciones oficiales: no hay GGUF ni formatos optimizados publicados, lo que obliga a generarlos por cuenta propia si se quiere desplegar en llama.cpp u Ollama.
 - Cero validacion comunitaria: 0 descargas y 0 likes implican que el checkpoint no ha sido reproducido ni auditado por terceros.
-- Discrepancia con fuentes de terceros: un agregador externo (hfviewer) describe este identificador como un modelo multimodal de la familia Qwen3.5 procedente de otro proyecto, lo que contradice el nombre, las etiquetas y el numero de parametros del repositorio. Esa descripcion es inconsistente con los datos de HuggingFace y no debe tomarse como fiable.
+- Discrepancia con fuentes de terceros: un agregador externo (hfviewer) describe este identificador como un modelo multimodal de la familia Qwen3.5 procedente de otro proyecto, lo que contradice el nombre, las etiquetas y el numero de parametros del repositorio. Esa descripcion es inconsistente con los datos de Hugging Face y no debe tomarse como fiable.
 - Sesgos: no documentados, pero un modelo pequeno entrenado con un dataset no publicado hereda los sesgos de ese dataset y del preentrenamiento original, sin que existan filtros declarados.
 - Caducidad del linaje: al depender de checkpoints intermedios de un tercero, la reproducibilidad a largo plazo no esta garantizada si esos repositorios se modifican o se eliminan.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Panga-Azazia/LFM2.5-350M-TTS-v3
+- Modelo en Hugging Face: https://huggingface.co/Panga-Azazia/LFM2.5-350M-TTS-v3
 - Modelo base directo: https://huggingface.co/Panga-Azazia/LFM2.5-350M-TTS
 - Repositorio hermano con variante "Spe": https://huggingface.co/Panga-Azazia/LFM2.5-350M-TTS-Spe
 - Repositorio hermano con adaptadores LoRA: https://huggingface.co/Panga-Azazia/LFM2.5-350M-LORA-TTS

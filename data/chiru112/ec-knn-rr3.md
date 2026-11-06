@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ec-knn-rr3` es un artefacto publicado en HuggingFace por el usuario `chiru112` bajo el identificador `chiru112/ec-knn-rr3`, orientado a la prediccion de numeros EC (Enzyme Commission) para la tarea de clasificacion enzimatica "Leak CURBER". No se trata de un modelo de lenguaje neuronal en el sentido habitual, sino de un pipeline de recuperacion y reordenacion basado en busqueda por similitud de secuencias con MMseqs2 sobre un indice preconstruido del conjunto de entrenamiento, combinado con un pequeno re-ranker de gradient boosting (cuando se incluye) o con una votacion ponderada por bit-score.
+`ec-knn-rr3` es un artefacto publicado en Hugging Face por el usuario `chiru112` bajo el identificador `chiru112/ec-knn-rr3`, orientado a la prediccion de numeros EC (Enzyme Commission) para la tarea de clasificacion enzimatica "Leak CURBER". No se trata de un modelo de lenguaje neuronal en el sentido habitual, sino de un pipeline de recuperacion y reordenacion basado en busqueda por similitud de secuencias con MMseqs2 sobre un indice preconstruido del conjunto de entrenamiento, combinado con un pequeno re-ranker de gradient boosting (cuando se incluye) o con una votacion ponderada por bit-score.
 
 El sistema funciona en CPU exclusivamente. Para cada entrada unica realiza una busqueda MMseqs2 contra el conjunto de entrenamiento completo, extrae los EC candidatos de los hits superiores y selecciona el primer EC mediante el re-ranker o la votacion ponderada. La salida es una lista ordenada de mejor a peor. Las entradas sin hit reciben el EC mas frecuente del conjunto de entrenamiento, y un mecanismo de guarda temporal detiene la busqueda de forma anticipada, asignando el EC de reserva a las entradas restantes (las mas largas) si la maquina es lenta.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Sistema | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `chiru112/ec-knn-rr3` | Recuperacion MMseqs2 + re-ranker | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
+| `chiru112/ec-knn-rr3` | Recuperacion MMseqs2 + re-ranker | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
 | BLASTp / DIAMOND con votacion de EC | Recuperacion por alineamiento | no aplica | no aplica | segun herramienta | Ampliamente disponible |
-| Modelos de lenguaje proteicos tipo ESM para prediccion funcional | Transformer proteico | no disponible en esta ficha | no disponible | variable | HuggingFace y otros repositorios |
+| Modelos de lenguaje proteicos tipo ESM para prediccion funcional | Transformer proteico | no disponible en esta ficha | no disponible | variable | Hugging Face y otros repositorios |
 
 No se dispone de datos de rendimiento del modelo frente a estas alternativas, por lo que la comparativa se limita a la categoria y al tipo de aproximacion.
 
@@ -85,5 +85,5 @@ No se dispone de datos de rendimiento del modelo frente a estas alternativas, po
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chiru112/ec-knn-rr3
+- Repositorio en Hugging Face: https://huggingface.co/chiru112/ec-knn-rr3
 - No se han encontrado en la informacion disponible papers, blogs, repositorios adicionales ni demos asociados al modelo.

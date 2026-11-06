@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento del modelo base ni de alternativas directa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pb09204048/Inkling-Small-6layer
+- Hugging Face: https://huggingface.co/pb09204048/Inkling-Small-6layer
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Repositorio del framework miles: https://github.com/radixark/miles

@@ -4,7 +4,7 @@
 
 Este repositorio, publicado por el usuario Rcarvalo, no contiene un modelo nuevo en el sentido habitual, sino los checkpoints intermedios y finales de dos experimentos de ajuste fino sobre LiquidAI/LFM2.5-Audio-1.5B. El objetivo declarado es adaptar un modelo de audio de proposito general hacia un asistente de voz en frances, manteniendo la voz femenina estadounidense del modelo base para el ingles y preservando las capacidades de texto del modelo de lenguaje subyacente. El autor lo describe explicitamente como artefacto de experimento y no como release: los pesos se publican para liberar disco de la maquina de entrenamiento y para que sirvan de punto de partida de futuras ejecuciones.
 
-El modelo base es LFM2-Audio, una arquitectura de Liquid AI que combina un backbone de lenguaje con modulos de audio y un depth transformer, y que utiliza el codec Mimi (el codebook 0 de Mimi, que determina que sonido viene despues, se predice a partir del estado oculto del backbone). El tamano es de 1.500 millones de parametros y el corpus de entrenamiento documentado trabaja con un contexto de 1.024 tokens. La licencia es lfm1.0, etiquetada como "other" en HuggingFace.
+El modelo base es LFM2-Audio, una arquitectura de Liquid AI que combina un backbone de lenguaje con modulos de audio y un depth transformer, y que utiliza el codec Mimi (el codebook 0 de Mimi, que determina que sonido viene despues, se predice a partir del estado oculto del backbone). El tamano es de 1.500 millones de parametros y el corpus de entrenamiento documentado trabaja con un contexto de 1.024 tokens. La licencia es lfm1.0, etiquetada como "other" en Hugging Face.
 
 La relevancia de esta publicacion es acotada y practica: documenta con detalle poco habitual la receta de ajuste fino (corpus, tasas de aprendizaje, congelacion parcial del backbone, decodificacion recomendada) y publica metricas de INCLUDE-fr y de WER de sintesis de voz para cada checkpoint, incluido el veredicto negativo de una de las dos ramas. Resulta util para quien quiera reproducir el proceso o reutilizar los pesos, pero no es un modelo listo para produccion ni ha sido validado por la comunidad (0 descargas y 0 likes en el momento de la consulta).
 
@@ -18,7 +18,7 @@ La relevancia de esta publicacion es acotada y practica: documenta con detalle p
 | Longitud de contexto | 1.024 tokens en el corpus de entrenamiento; contexto nativo del modelo base no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | frances (fr) e ingles (en) |
-| Licencia | lfm1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (un unico `model.safetensors` por checkpoint) |
 | Modelo base | LiquidAI/LFM2.5-Audio-1.5B (revision c362a0625dfe45aa588dce5f0ada28a7e5707628) |
 | Tamano del repositorio | 58,8 GB (agregado de todos los checkpoints) |
@@ -102,14 +102,14 @@ El modelo base y la ejecucion interna de referencia son los dos unicos terminos 
 - Riesgo de alucinacion en ASR y en respuestas de texto: no se aportan datos de robustez, de tasas de error por dominio ni de evaluacion con conjuntos adversarios.
 - Parte de los datos de entrenamiento son sinteticos (Qwen3-TTS ajustado sobre SIWIS), por lo que los artefactos del generador pueden haberse transferido al modelo.
 - Sesgos: no se documenta ningun analisis de sesgos de genero, acento, edad ni origen social, pese a que el modelo fija una unica voz por idioma.
-- Licencia lfm1.0, etiquetada como "other" en HuggingFace: las condiciones exactas de uso comercial deben verificarse en el fichero LICENSE del repositorio y en los terminos de Liquid AI. No se puede asumir uso comercial libre.
+- Licencia lfm1.0, etiquetada como "other" en Hugging Face: las condiciones exactas de uso comercial deben verificarse en el fichero LICENSE del repositorio y en los terminos de Liquid AI. No se puede asumir uso comercial libre.
 - Los checkpoints `stage_a` se describen como un callejon sin salida con peor WER que una ejecucion intermedia no publicada; reutilizarlos sin mas puede dar resultados suboptimos.
 - Sin validacion de la comunidad: 0 descargas y 0 likes, sin issues ni evaluaciones externas.
 - No se publican datos de latencia, throughput ni consumo energetico, lo que impide planificar un despliegue en produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rcarvalo/lfm2a-fr-v3-checkpoints
+- Modelo en Hugging Face: https://huggingface.co/Rcarvalo/lfm2a-fr-v3-checkpoints
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B
 - Revision del modelo base usada por el autor: c362a0625dfe45aa588dce5f0ada28a7e5707628
 - Fichero de licencia del repositorio: LICENSE (referenciado como `license_link` en la model card)

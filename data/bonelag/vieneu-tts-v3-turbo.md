@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VieNeu-TTS v3 Turbo es un modelo de síntesis de voz (text-to-speech) de alta fidelidad que genera audio a 48 kHz, desarrollado por el autor Phạm Nguyễn Ngọc Bảo (también conocido como pnnbao97) y publicado en HuggingFace bajo el perfil bonelag. Está pensado para el vietnamita y el inglés, con soporte nativo de code-switching bilingüe, clonación de voz instantánea, control de emociones mediante etiquetas no verbales y generación por lotes para escenarios de podcast multi-locutor. El modelo se presenta como un diseño original entrenado desde cero, no como un fine-tune ni una adaptación de arquitecturas existentes, sobre aproximadamente 10.000 horas de habla inglés-vietnamita. Tiene un total de 130.907.520 parámetros (130,9 millones) y se distribuye en formato safetensors y ONNX. No se especifica una longitud de contexto porque se trata de un modelo TTS, no de un modelo de texto conversacional; su interacción se basa en entradas de texto y audio de referencia. La relevancia actual del modelo reside en su optimización para CPU sin dependencia de PyTorch mediante ONNX Runtime, lo que lo hace accesible para equipos de consumo, además de su capacidad de clonación de voz en tiempo real y streaming de baja latencia.
+VieNeu-TTS v3 Turbo es un modelo de síntesis de voz (text-to-speech) de alta fidelidad que genera audio a 48 kHz, desarrollado por el autor Phạm Nguyễn Ngọc Bảo (también conocido como pnnbao97) y publicado en Hugging Face bajo el perfil bonelag. Está pensado para el vietnamita y el inglés, con soporte nativo de code-switching bilingüe, clonación de voz instantánea, control de emociones mediante etiquetas no verbales y generación por lotes para escenarios de podcast multi-locutor. El modelo se presenta como un diseño original entrenado desde cero, no como un fine-tune ni una adaptación de arquitecturas existentes, sobre aproximadamente 10.000 horas de habla inglés-vietnamita. Tiene un total de 130.907.520 parámetros (130,9 millones) y se distribuye en formato safetensors y ONNX. No se especifica una longitud de contexto porque se trata de un modelo TTS, no de un modelo de texto conversacional; su interacción se basa en entradas de texto y audio de referencia. La relevancia actual del modelo reside en su optimización para CPU sin dependencia de PyTorch mediante ONNX Runtime, lo que lo hace accesible para equipos de consumo, además de su capacidad de clonación de voz en tiempo real y streaming de baja latencia.
 
 ## Especificaciones tecnicas
 
@@ -68,8 +68,8 @@ No disponible. La informacion suministrada no incluye comparativas con otros mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bonelag/VieNeu-TTS-v3-Turbo
-- Modelo del autor en HuggingFace: https://huggingface.co/pnnbao-ump/VieNeu-TTS-v3-Turbo
+- Modelo en Hugging Face: https://huggingface.co/bonelag/VieNeu-TTS-v3-Turbo
+- Modelo del autor en Hugging Face: https://huggingface.co/pnnbao-ump/VieNeu-TTS-v3-Turbo
 - Repositorio GitHub: https://github.com/pnnbao97/VieNeu-TTS
 - Paquete PyPI `vieneu`: https://pypi.org/project/vieneu/
 - Tutorial de inicio: https://aiindigo.com/tutorials/getting-started-with-vieneu-tts-v3-turbo-high-speed-vietnamese-voice-synthesis

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Sasantoso/matching27` es un repositorio de HuggingFace que contiene una implementación propia de una arquitectura Poolformer a escala "small" orientada a tareas de matching (emparejamiento o correspondencia entre elementos). Lo publica el usuario Sasantoso y no se presenta como un modelo entrenado y evaluado, sino como un punto de partida reproducible: incluye código, configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización válido para pruebas de humo.
+`Sasantoso/matching27` es un repositorio de Hugging Face que contiene una implementación propia de una arquitectura Poolformer a escala "small" orientada a tareas de matching (emparejamiento o correspondencia entre elementos). Lo publica el usuario Sasantoso y no se presenta como un modelo entrenado y evaluado, sino como un punto de partida reproducible: incluye código, configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización válido para pruebas de humo.
 
 El modelo no ha sido entrenado ni auditado. El propio autor indica explícitamente en la model card que el checkpoint `model.safetensors` sirve para verificar que la implementación carga y ejecuta, pero no constituye un modelo con rendimiento demostrado. Tampoco se reclama ninguna puntuación de benchmark.
 
@@ -73,4 +73,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sasantoso/matching27
+- Hugging Face: https://huggingface.co/Sasantoso/matching27

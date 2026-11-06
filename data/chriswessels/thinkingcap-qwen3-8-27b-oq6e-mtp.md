@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ThinkingCap-Qwen3.8-27B-oQ6e-mtp es una cuantizacion en 6 bits del modelo ThinkingCap-Qwen3.8-27B, publicada por el usuario chriswessels en HuggingFace. El modelo original ThinkingCap-Qwen3.8-27B es un ajuste fino de Qwen3.8-27B desarrollado por BottleCap AI, cuyo objetivo declarado es reducir la longitud de las trazas de razonamiento sin degradar la calidad de las respuestas. Esta version concreta aplica la herramienta oQ (oMLX v0.6.4) para generar pesos MLX safetensors con cuantizacion de precision mixta de 6 bits y tamano de grupo 64.
+ThinkingCap-Qwen3.8-27B-oQ6e-mtp es una cuantizacion en 6 bits del modelo ThinkingCap-Qwen3.8-27B, publicada por el usuario chriswessels en Hugging Face. El modelo original ThinkingCap-Qwen3.8-27B es un ajuste fino de Qwen3.8-27B desarrollado por BottleCap AI, cuyo objetivo declarado es reducir la longitud de las trazas de razonamiento sin degradar la calidad de las respuestas. Esta version concreta aplica la herramienta oQ (oMLX v0.6.4) para generar pesos MLX safetensors con cuantizacion de precision mixta de 6 bits y tamano de grupo 64.
 
 El modelo cuenta con 27.781.427.952 parametros reales (aproximadamente 27,78 mil millones) y ocupa 23,7 GB en el repositorio, lo que lo situa en la categoria de modelos densos de gran tamano orientados a inferencia local en hardware Apple Silicon. La libreria declarada es MLX, por lo que el formato de pesos esta pensado para el ecosistema mlx-lm y no para GPUs NVIDIA sin conversion previa.
 
@@ -83,7 +83,7 @@ No hay datos publicados de perplejidad, latencia ni degradacion derivada de la c
 |---|---|---|---|---|---|---|
 | ThinkingCap-Qwen3.8-27B-oQ6e-mtp (este) | 27,78B | 6 bits, oQ, group 64 | MLX safetensors | no disponible | no disponible | 0 descargas, 0 likes |
 | ThinkingCap-Qwen3.8-27B (BottleCap AI) | ~27B (no confirmado) | bf16 original | safetensors HF | no disponible | no disponible | publicado por BottleCap AI |
-| Qwen3.8-27B (Qwen) | ~27B (no confirmado) | bf16 original | safetensors HF | no disponible | no disponible en la informacion proporcionada | modelo base de la familia, repositorio oficial en HuggingFace |
+| Qwen3.8-27B (Qwen) | ~27B (no confirmado) | bf16 original | safetensors HF | no disponible | no disponible en la informacion proporcionada | modelo base de la familia, repositorio oficial en Hugging Face |
 | Qwen3.8-27B-Uncensored-oQ6e-mtp (chriswessels) | no disponible | 6 bits, oQ | MLX safetensors (xet) | no disponible | no disponible | repositorio hermano del mismo autor |
 
 La comparativa se limita a la genealogia del modelo, ya que no hay datos de benchmarks por modelo en la informacion disponible. Las diferencias relevantes son el formato (MLX frente a safetensors estandar), el nivel de cuantizacion (6 bits frente a bf16) y el objetivo del ajuste (ThinkingCap reduce tokens de razonamiento; la variante Uncensored aplica tecnicas de abliteration, etiquetada con "ai-red-team").
@@ -100,11 +100,11 @@ La comparativa se limita a la genealogia del modelo, ya que no hay datos de benc
 - Coste de precision del ajuste ThinkingCap: 0,86 puntos porcentuales de precision macro-average segun el autor. En dominios con margen estrecho, esa perdida puede ser relevante.
 - Sufijo "mtp" sin documentar: no hay explicacion en la model card sobre su significado ni sobre que implica en el grafo de inferencia o en el uso de memoria.
 - Riesgo de sesgos del modelo base: no hay evaluacion de sesgos publicada para esta cuantizacion ni para ThinkingCap-Qwen3.8-27B.
-- Sin pipeline declarado: HuggingFace no registra tarea para este repositorio, por lo que las capacidades (vision, tool calling) deben confirmarse empiricamente.
+- Sin pipeline declarado: Hugging Face no registra tarea para este repositorio, por lo que las capacidades (vision, tool calling) deben confirmarse empiricamente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chriswessels/ThinkingCap-Qwen3.8-27B-oQ6e-mtp
+- Modelo en Hugging Face: https://huggingface.co/chriswessels/ThinkingCap-Qwen3.8-27B-oQ6e-mtp
 - Repositorio hermano del mismo autor (variante uncensored, 6 bits MLX): https://huggingface.co/chriswessels/Qwen3.8-27B-Uncensored-oQ6e-mtp
 - Model card del repositorio hermano: https://huggingface.co/chriswessels/Qwen3.8-27B-Uncensored-oQ6e-mtp/blob/main/README.md
 - Herramienta de cuantizacion oQ / oMLX: https://github.com/jundot/omlx

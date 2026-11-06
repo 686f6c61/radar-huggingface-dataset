@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo nuevo, sino una guía de configuración publicada por el usuario Zobi231 para ejecutar **Llama-3.3-70B-Instruct** (modelo de Meta) comprimido a cuantizaciones GGUF de muy bajo bit por peso (BPW), concretamente IQ1_S e IQ1_M. El objetivo declarado es cargar un modelo denso de 70 000 millones de parámetros en una GPU de 16 GB de VRAM y obtener entre 13 y 15 tokens por segundo con una ventana de contexto de 2048 tokens.
+Este repositorio de Hugging Face no contiene un modelo nuevo, sino una guía de configuración publicada por el usuario Zobi231 para ejecutar **Llama-3.3-70B-Instruct** (modelo de Meta) comprimido a cuantizaciones GGUF de muy bajo bit por peso (BPW), concretamente IQ1_S e IQ1_M. El objetivo declarado es cargar un modelo denso de 70 000 millones de parámetros en una GPU de 16 GB de VRAM y obtener entre 13 y 15 tokens por segundo con una ventana de contexto de 2048 tokens.
 
 La ficha resulta relevante porque documenta una práctica habitual en entornos con hardware limitado: recurrir a cuantizaciones de 1-2 bits para hacer inferencia local de modelos grandes, a cambio de una pérdida de calidad no cuantificada. El autor incluye ajustes de sampler en tres niveles ("core", "core med w temp" y "core med w temp w dynm temp"), comandos concretos para llama.cpp y KoboldCPP, e instrucciones de conexión con SillyTavern.
 
@@ -94,7 +94,7 @@ No se han proporcionado datos que permitan comparar con modelos de otros fabrica
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Zobi231/Llama-3.3-70B-Instruct-How-To-Run-on-Low-BPW-IQ1_S-IQ1_M-at-maximum-speed-quality
+- Repositorio en Hugging Face: https://huggingface.co/Zobi231/Llama-3.3-70B-Instruct-How-To-Run-on-Low-BPW-IQ1_S-IQ1_M-at-maximum-speed-quality
 - Pesos GGUF (IQ1_S, IQ1_M y otros): https://huggingface.co/mradermacher/Llama-3.3-70B-Instruct-i1-GGUF
 - Guia de samplers y parametros del mismo autor: https://huggingface.co/DavidAU/Maximizing-Model-Performance-All-Quants-Types-And-Full-Precision-by-Samplers_Parameters
 - Repositorio principal del autor de la guia de samplers: https://huggingface.co/DavidAU/

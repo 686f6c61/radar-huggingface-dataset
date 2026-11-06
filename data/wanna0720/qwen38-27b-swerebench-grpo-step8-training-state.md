@@ -99,6 +99,6 @@ No se dispone de datos de rendimiento ni de contexto para establecer comparacion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wanna0720/qwen38-27b-swerebench-grpo-step8-training-state
+- Repositorio en Hugging Face: https://huggingface.co/wanna0720/qwen38-27b-swerebench-grpo-step8-training-state
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Papers, blogs, repositorios o demos adicionales: no disponible en la informacion proporcionada. La busqueda web realizada no devolvio resultados tecnicos relacionados con el modelo.

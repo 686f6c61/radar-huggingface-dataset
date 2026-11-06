@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-abliterated-FLARE es un fine-tune derivado de `deepseek-ai/DeepSeek-V4.1-Flash-1017`, publicado por JMNI-Labs en HuggingFace. Se trata de una variante "abliterated", es decir, un ajuste fino orientado a eliminar los mecanismos de rechazo (refusals) del modelo base, combinada con la etiqueta "FLARE" que el autor asocia a un formato de despliegue optimizado para hardware NVIDIA GB10 (DGX Spark) mediante cuantizacion MXFP4 y tensor parallelism. El pipeline declarado es `image-text-to-text`, lo que indica que el modelo conserva capacidades multimodales de vision-lenguaje heredadas del base.
+DeepSeek-V4.1-Flash-1017-abliterated-FLARE es un fine-tune derivado de `deepseek-ai/DeepSeek-V4.1-Flash-1017`, publicado por JMNI-Labs en Hugging Face. Se trata de una variante "abliterated", es decir, un ajuste fino orientado a eliminar los mecanismos de rechazo (refusals) del modelo base, combinada con la etiqueta "FLARE" que el autor asocia a un formato de despliegue optimizado para hardware NVIDIA GB10 (DGX Spark) mediante cuantizacion MXFP4 y tensor parallelism. El pipeline declarado es `image-text-to-text`, lo que indica que el modelo conserva capacidades multimodales de vision-lenguaje heredadas del base.
 
 El modelo base, DeepSeek-V4.1-Flash-1017, pertenece a la familia DeepSeek V4.1 en su variante "Flash", presumiblemente una version optimizada para inferencia rapida. No se dispone de informacion publica verificable sobre la arquitectura exacta, el numero de parametros ni la longitud de contexto en la informacion proporcionada; la ficha del autor no incluye model card con especificaciones tecnicas.
 
@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 - El ajuste abliterated elimina los rechazos del modelo, lo que incrementa el riesgo de generar contenido danino, sesgado o ilegal; no es apto para uso en produccion sin filtros externos.
 - Riesgo elevado de alucinacion: no se han publicado evaluaciones de fidelidad ni de calidad tras la ablacion.
-- Licencia `lil-license-1.0` distinta de la del modelo base: es imprescindible revisar los terminos antes de cualquier uso, incluido el comercial; el acceso esta restringido en HuggingFace.
+- Licencia `lil-license-1.0` distinta de la del modelo base: es imprescindible revisar los terminos antes de cualquier uso, incluido el comercial; el acceso esta restringido en Hugging Face.
 - Sin informacion sobre idiomas soportados ni sobre el impacto de la ablacion en el rendimiento multilingue.
 - Cero descargas y cero likes: no hay evidencia de comunidad, validacion externa ni mantenimiento.
 - El modelo base no esta documentado en la informacion disponible; cualquier afirmacion sobre arquitectura o contexto es especulativa.
@@ -80,5 +80,5 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JMNI-Labs/DeepSeek-V4.1-Flash-1017-abliterated-FLARE
+- Modelo en Hugging Face: https://huggingface.co/JMNI-Labs/DeepSeek-V4.1-Flash-1017-abliterated-FLARE
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017

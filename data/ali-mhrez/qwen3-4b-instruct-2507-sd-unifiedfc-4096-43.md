@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-43 es un ajuste fino (fine-tuning) supervisado del modelo unsloth/Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en HuggingFace. El entrenamiento se realizo con SFT (supervised fine-tuning) utilizando TRL 0.24.0, Transformers 5.5.0, PyTorch 2.10.0+cu128 y el ecosistema Unsloth, segun los tags y las versiones de framework declaradas en la model card. El repositorio fue creado el 15 de septiembre de 2026 y actualizado el 16 de septiembre de 2026, con 0 descargas y 0 likes en el momento de la consulta.
+Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-43 es un ajuste fino (fine-tuning) supervisado del modelo unsloth/Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en Hugging Face. El entrenamiento se realizo con SFT (supervised fine-tuning) utilizando TRL 0.24.0, Transformers 5.5.0, PyTorch 2.10.0+cu128 y el ecosistema Unsloth, segun los tags y las versiones de framework declaradas en la model card. El repositorio fue creado el 15 de septiembre de 2026 y actualizado el 16 de septiembre de 2026, con 0 descargas y 0 likes en el momento de la consulta.
 
 El modelo hereda la base de la familia Qwen3-Instruct-2507, una serie de modelos densos de tipo decoder-only orientados a instrucciones y sin modo de razonamiento explicito ("non-thinking"). El sufijo del nombre del repositorio sugiere un entrenamiento orientado a function calling unificado ("UnifiedFC"), con una ventana de 4.096 tokens ("4096") y posiblemente un rango de adaptador LoRA de 43 ("43"), aunque ninguna de estas interpretaciones esta confirmada en la documentacion disponible.
 
@@ -90,8 +90,8 @@ Los datos de los modelos base no se han verificado en la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-43
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
+- Modelo en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-43
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de Unsloth: https://github.com/unslothai/unsloth
 - La busqueda web realizada no ha devuelto resultados relevantes sobre este modelo (unicamente resultados comerciales no relacionados); no se han localizado papers, blogs, demos ni repositorios asociados.

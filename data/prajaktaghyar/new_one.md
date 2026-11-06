@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Prajaktaghyar/new_one` es un repositorio publicado en HuggingFace por el usuario Prajaktaghyar. La información pública disponible es extremadamente limitada: la model card únicamente declara una licencia `llama2` y no incluye descripción, arquitectura, parámetros, idiomas ni ningún otro detalle técnico. No se ha publicado ningún benchmark, ejemplo de uso o documentación adicional.
+El modelo identificado como `Prajaktaghyar/new_one` es un repositorio publicado en Hugging Face por el usuario Prajaktaghyar. La información pública disponible es extremadamente limitada: la model card únicamente declara una licencia `llama2` y no incluye descripción, arquitectura, parámetros, idiomas ni ningún otro detalle técnico. No se ha publicado ningún benchmark, ejemplo de uso o documentación adicional.
 
 Dado que el repositorio no presenta descargas ni likes, y su fecha de creación es posterior a la actual (agosto de 2026), es probable que se trate de una subida experimental o de un espacio de prueba sin intención de distribución. No existe evidencia de que el modelo sea funcional ni de que haya sido evaluado. Por tanto, cualquier uso en producción o investigación sería prematuro y arriesgado.
 
@@ -61,5 +61,5 @@ No es posible establecer una comparativa con modelos de la misma categoría, ya 
 
 ## Enlaces
 
-- [HuggingFace - Prajaktaghyar/new_one](https://huggingface.co/Prajaktaghyar/new_one)
+- [Hugging Face - Prajaktaghyar/new_one](https://huggingface.co/Prajaktaghyar/new_one)
 - [GitHub del autor](https://github.com/prajaktaghyar/prajaktaghyar) (sin información técnica relevante sobre el modelo)

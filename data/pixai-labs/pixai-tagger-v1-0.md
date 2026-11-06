@@ -98,12 +98,12 @@ La mejora de v1.0 sobre v0.9 es de 6,80 puntos porcentuales en micro F1 general 
 
 | Modelo | Parametros | Contexto/entrada | General micro F1 | General mAP | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| PixAI Tagger v1.0 | 486,3 M | 1008 × 1008 | 0,6660 | 0,3807 | No disponible | HuggingFace (pixai-labs) |
+| PixAI Tagger v1.0 | 486,3 M | 1008 × 1008 | 0,6660 | 0,3807 | No disponible | Hugging Face (pixai-labs) |
 | AnimeTIMM CAFormer B36 | No disponible | No disponible | 0,6435 | 0,3324 | No disponible | No disponible |
 | AnimeTIMM EVA Giant | No disponible | No disponible | 0,6410 | 0,3391 | No disponible | No disponible |
 | AnimeTIMM EVA02 Large | No disponible | No disponible | 0,6401 | 0,3423 | No disponible | No disponible |
 | AnimeTIMM SigLIP Giant | No disponible | No disponible | 0,6362 | 0,3267 | No disponible | No disponible |
-| PixAI Tagger v0.9 | No disponible | 448 × 448 | 0,5980 | 0,3251 | No disponible | HuggingFace (pixai-labs) |
+| PixAI Tagger v0.9 | No disponible | 448 × 448 | 0,5980 | 0,3251 | No disponible | Hugging Face (pixai-labs) |
 | Camie v2 | No disponible | No disponible | 0,5775 | 0,2245 | No disponible | No disponible |
 
 La información disponible solo permite comparar el rendimiento en la categoría `general` sobre las 8.407 etiquetas compartidas. Los parámetros, la licencia y la disponibilidad de los modelos AnimeTIMM y Camie v2 no se detallan en los datos proporcionados. Destaca que PixAI Tagger v1.0 lidera las tres métricas de la comparativa (micro F1, macro F1 y mAP), con una ventaja de 2,25 puntos porcentuales en micro F1 sobre el siguiente modelo.
@@ -123,7 +123,7 @@ La información disponible solo permite comparar el rendimiento en la categoría
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pixai-labs/pixai-tagger-v1.0
+- Modelo en Hugging Face: https://huggingface.co/pixai-labs/pixai-tagger-v1.0
 - Versión anterior, PixAI Tagger v0.9: https://huggingface.co/pixai-labs/pixai-tagger-v0.9
 - Sitio oficial de PixAI (en inglés): https://pixai.art/en
 - Sitio oficial de PixAI (en francés): https://pixai.art/fr

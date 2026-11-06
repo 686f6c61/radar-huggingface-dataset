@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ispras-crawlers/newsxlm-xlmroberta-ae | 277 M | No disponible | Clasificacion de nodos HTML de noticias | 10 | MIT | HuggingFace |
-| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | Modelo base multilingue (sin fine-tuning) | 100 | MIT | HuggingFace |
-| Otras variantes NewsXLM del mismo grupo | No disponible | No disponible | Extraccion de atributos de noticias | No disponible | No disponible | HuggingFace (ispras-crawlers) |
+| ispras-crawlers/newsxlm-xlmroberta-ae | 277 M | No disponible | Clasificacion de nodos HTML de noticias | 10 | MIT | Hugging Face |
+| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | Modelo base multilingue (sin fine-tuning) | 100 | MIT | Hugging Face |
+| Otras variantes NewsXLM del mismo grupo | No disponible | No disponible | Extraccion de atributos de noticias | No disponible | No disponible | Hugging Face (ispras-crawlers) |
 
 La comparación directa con alternativas especializadas en extracción de atributos de noticias no está disponible en la información proporcionada. El modelo base XLM-RoBERTa sirve como referencia de tamaño y licencia, pero no resuelve la misma tarea sin fine-tuning específico.
 
@@ -90,9 +90,9 @@ La comparación directa con alternativas especializadas en extracción de atribu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ispras-crawlers/newsxlm-xlmroberta-ae
+- Modelo en Hugging Face: https://huggingface.co/ispras-crawlers/newsxlm-xlmroberta-ae
 - Dataset NewsXLM: https://huggingface.co/datasets/ispras-crawlers/newsxlm
 - Modelo base XLM-RoBERTa: https://huggingface.co/FacebookAI/xlm-roberta-base
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/pbedrin/newsxlm-demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/pbedrin/newsxlm-demo
 - Paper (Proceedings of ISP RAS): https://ispranproceedings.elpub.ru/jour/article/view/2164/1961
 - DOI del paper: https://doi.org/10.15514/ISPRAS-2026-38(2)-10

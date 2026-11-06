@@ -35,9 +35,9 @@ Dado el bajo rendimiento del modelo (recompensa media de -51.31), no es recomend
 
 - Demostración de un entrenamiento fallido: sirve como ejemplo de cómo una configuración de hiperparámetros o un número insuficiente de pasos puede llevar a una política subóptima en LunarLander.
 - Comparación de algoritmos: se puede utilizar como baseline negativo en estudios de RL para contrastar con agentes que sí aprenden a aterrizar (recompensas positivas).
-- Pruebas de reproducibilidad: al estar disponible en HuggingFace, permite a otros investigadores reproducir el entrenamiento y analizar por qué no converge.
+- Pruebas de reproducibilidad: al estar disponible en Hugging Face, permite a otros investigadores reproducir el entrenamiento y analizar por qué no converge.
 - Integración en pipelines de evaluación: se puede cargar en entornos de Gymnasium para medir su comportamiento y comparar con otros checkpoints.
-- Aprendizaje del flujo de trabajo de HuggingFace: útil para quienes quieren aprender a subir y compartir modelos de RL en el Hub, aunque el rendimiento no sea bueno.
+- Aprendizaje del flujo de trabajo de Hugging Face: útil para quienes quieren aprender a subir y compartir modelos de RL en el Hub, aunque el rendimiento no sea bueno.
 - Análisis de estabilidad de PPO: estudiar cómo la variación de la recompensa (±31.44) refleja la inestabilidad del entrenamiento.
 
 ## Benchmarks y rendimiento
@@ -74,6 +74,6 @@ No se dispone de información sobre otros modelos del mismo autor o de la misma 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/paul-444/ppo-LunarLander-v2
+- Hugging Face: https://huggingface.co/paul-444/ppo-LunarLander-v2
 - Repositorio de referencia (Thomas Simonini): https://huggingface.co/ThomasSimonini/ppo-LunarLander-v2 (mencionado en los hiperparámetros, pero no verificado)
 - Entorno LunarLander-v2: https://www.gymlibrary.dev/environments/box2d/lunar_lander/ (referencia estándar)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `attmacah/house_pricing_prediction_ordinary_least_squares_linear_models_method` es un artefacto publicado en HuggingFace por el usuario `attmacah` bajo licencia MIT. A pesar de su nombre, que incluye el término "models" en plural, no se trata de un modelo de lenguaje ni de una red neuronal profunda: el identificador describe un método de predicción de precios de vivienda basado en regresión lineal por mínimos cuadrados ordinarios (OLS, *Ordinary Least Squares*). La model card publicada no contiene más información que la declaración de licencia, por lo que no hay documentación sobre el contenido real del repositorio.
+El repositorio `attmacah/house_pricing_prediction_ordinary_least_squares_linear_models_method` es un artefacto publicado en Hugging Face por el usuario `attmacah` bajo licencia MIT. A pesar de su nombre, que incluye el término "models" en plural, no se trata de un modelo de lenguaje ni de una red neuronal profunda: el identificador describe un método de predicción de precios de vivienda basado en regresión lineal por mínimos cuadrados ordinarios (OLS, *Ordinary Least Squares*). La model card publicada no contiene más información que la declaración de licencia, por lo que no hay documentación sobre el contenido real del repositorio.
 
 La relevancia de este artefacto es, por tanto, muy limitada para el público habitual de una ficha de modelos de IA generativa. No hay evidencia de arquitectura transformer, de parámetros entrenados, de tokenizador ni de pesos en formatos estándar (safetensors, GGUF). Todo apunta a un ejercicio académico o a un cuaderno de análisis de datos (probablemente un notebook de Python) en el que se aplica OLS a un conjunto de datos de precios inmobiliarios.
 
@@ -41,7 +41,7 @@ Tampoco consta ninguna innovación técnica destacable: no se mencionan decodifi
 - Documentación de un ejercicio académico de regresión lineal: el repositorio podría servir como referencia didáctica para quienes estudian mínimos cuadrados ordinarios aplicados a datos inmobiliarios, aunque su contenido real no está descrito.
 - Reproducción de un pipeline de análisis exploratorio: si el repositorio contiene un notebook, podría reutilizarse el flujo de carga de datos, limpieza y ajuste del modelo, previa inspección manual del contenido.
 - Comparación de métodos estadísticos clásicos frente a modelos de machine learning: como ejemplo de línea base (baseline) lineal para problemas de regresión sobre precios.
-- Material de formación en ciencia de datos: útil como plantilla para quienes aprenden a documentar y publicar artefactos en HuggingFace bajo licencia permisiva.
+- Material de formación en ciencia de datos: útil como plantilla para quienes aprenden a documentar y publicar artefactos en Hugging Face bajo licencia permisiva.
 - Evaluación de licencias y gobernanza de artefactos: el uso de MIT permite examinar cómo se declaran licencias en repositorios de datos y modelos.
 - Integración en un pipeline propio de predicción inmobiliaria: solo si tras inspeccionar el repositorio se confirma que contiene código o coeficientes reutilizables; de lo contrario, no es aplicable.
 
@@ -72,5 +72,5 @@ No disponible. No se conocen modelos comparables dentro de la información propo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/attmacah/house_pricing_prediction_ordinary_least_squares_linear_models_method
+- Repositorio en Hugging Face: https://huggingface.co/attmacah/house_pricing_prediction_ordinary_least_squares_linear_models_method
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

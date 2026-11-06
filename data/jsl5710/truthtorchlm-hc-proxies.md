@@ -38,7 +38,7 @@ Los teachers utilizados son Qwen3-32B, Llama-3.3-70B, GPT-4o (jhu-gpt-4o) y Clau
 - Compatibilidad con multiples teachers: Qwen3-32B, Llama-3.3-70B, GPT-4o y Claude Haiku 4.5.
 - Tres objetivos de entrenamiento (DALD, DisAAD, Ours) que permiten ajustar el equilibrio entre coste computacional y precision.
 - Variantes configurables (oraculo, lambda, modo) para adaptar el comportamiento a diferentes escenarios.
-- Integracion con la libreria PEFT de HuggingFace para carga y fusion de adaptadores.
+- Integracion con la libreria PEFT de Hugging Face para carga y fusion de adaptadores.
 - Lectura de logits del proxy con perplejidad como metrica de incertidumbre recomendada.
 
 ## Casos de uso
@@ -77,7 +77,7 @@ No se dispone de informacion sobre modelos directamente comparables en la docume
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jsl5710/TruthTorchLM-HC-proxies
+- Repositorio Hugging Face: https://huggingface.co/jsl5710/TruthTorchLM-HC-proxies
 - Repositorio GitHub: https://github.com/jsl5710/TruthTorchLM-HC
 - Sitio web del proyecto TruthTorchLM: https://www.truthtorchlm.com/
 - Paper en arXiv: https://arxiv.org/html/2507.08203v1

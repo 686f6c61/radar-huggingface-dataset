@@ -118,7 +118,7 @@ No se dispone de datos de benchmarks frente a modelos de otros autores (Llama, Q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/infosave/Nemotron-Labs-Dory1.0-4B-cmf
+- Modelo en Hugging Face: https://huggingface.co/infosave/Nemotron-Labs-Dory1.0-4B-cmf
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16
 - Repositorio del motor cortiq / formato CMF: https://github.com/infosave2007/cmf
 - Guia de Dory en el repositorio: https://github.com/infosave2007/cmf/blob/master/docs/DORY.md

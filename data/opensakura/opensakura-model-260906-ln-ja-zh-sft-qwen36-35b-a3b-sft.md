@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OpenSakura-MODEL-260906-LN-ja-zh-SFT-qwen36-35b-a3b-sft | 34.66B | 12.288 tokens | no disponible | HuggingFace |
-| OpenSakura-MODEL-260419-LN-ja-zh-PT-qwen36-35b-a3b-cpt (base CPT) | 34.66B | no disponible | no disponible | HuggingFace |
-| OpenSakura-MODEL-260508-LN-ja-zh-SFT-qwen36-35b-a3b-sft-SHIT | no disponible | no disponible | no disponible | HuggingFace |
+| OpenSakura-MODEL-260906-LN-ja-zh-SFT-qwen36-35b-a3b-sft | 34.66B | 12.288 tokens | no disponible | Hugging Face |
+| OpenSakura-MODEL-260419-LN-ja-zh-PT-qwen36-35b-a3b-cpt (base CPT) | 34.66B | no disponible | no disponible | Hugging Face |
+| OpenSakura-MODEL-260508-LN-ja-zh-SFT-qwen36-35b-a3b-sft-SHIT | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks para comparar el rendimiento entre estos modelos.
 
@@ -76,7 +76,7 @@ No se dispone de datos de benchmarks para comparar el rendimiento entre estos mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenSakura/OpenSakura-MODEL-260906-LN-ja-zh-SFT-qwen36-35b-a3b-sft
+- Hugging Face: https://huggingface.co/OpenSakura/OpenSakura-MODEL-260906-LN-ja-zh-SFT-qwen36-35b-a3b-sft
 - GitHub OpenSakura: https://github.com/OpenSakura/
 - Modelo base CPT: https://huggingface.co/OpenSakura/OpenSakura-MODEL-260419-LN-ja-zh-PT-qwen36-35b-a3b-cpt
 - Checkpoint anterior SHIT: https://huggingface.co/OpenSakura/OpenSakura-MODEL-260508-LN-ja-zh-SFT-qwen36-35b-a3b-sft-SHIT

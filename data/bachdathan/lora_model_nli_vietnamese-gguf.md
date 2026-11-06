@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lora_model_nli_vietnamese-GGUF es una adaptación al vietnamita del modelo denso Qwen/Qwen3-4B, construida fusionando el adaptador LoRA `lyle49/lora_model_nli_vietnamese` sobre los pesos base y convirtiendo el resultado a formato GGUF para su uso con llama.cpp. El responsable de la fusión y la cuantización es el usuario de HuggingFace BachDaThan, que firma el repositorio como `quantized_by`. El resultado es un modelo de 4.022.468.096 parámetros (aproximadamente 4,02 mil millones) pensado para generación de texto conversacional en vietnamita, con el inglés como idioma secundario.
+lora_model_nli_vietnamese-GGUF es una adaptación al vietnamita del modelo denso Qwen/Qwen3-4B, construida fusionando el adaptador LoRA `lyle49/lora_model_nli_vietnamese` sobre los pesos base y convirtiendo el resultado a formato GGUF para su uso con llama.cpp. El responsable de la fusión y la cuantización es el usuario de Hugging Face BachDaThan, que firma el repositorio como `quantized_by`. El resultado es un modelo de 4.022.468.096 parámetros (aproximadamente 4,02 mil millones) pensado para generación de texto conversacional en vietnamita, con el inglés como idioma secundario.
 
 La relevancia de esta ficha es doble. Por un lado, ofrece una vía práctica para ejecutar un modelo de la familia Qwen3 en hardware de consumo: las cuantizaciones publicadas ocupan entre 1,76 GB y 2,33 GB y el autor estima entre 3,8 GB y 4,3 GB de VRAM, lo que lo sitúa al alcance de GPUs de gama media. Por otro, cubre una lengua con relativamente poca oferta de modelos ajustados, lo que lo convierte en un candidato para prototipos de procesamiento de lenguaje natural en vietnamita.
 
@@ -18,7 +18,7 @@ El repositorio se publicó el 10 de septiembre de 2026 y, en el momento de redac
 | Longitud de contexto | 40960 tokens según la model card; el ejemplo de uso de llama-cpp-python emplea n_ctx=8192 |
 | Tipos de cuantizacion | GGUF: Q4_K_M, Q4_K_S, Q3_K_M y Q3_K_S |
 | Idiomas soportados | vietnamita (vi) e inglés (en) |
-| Licencia | apache-2.0 (tanto el modelo base como el adaptador LoRA, según los metadatos de HuggingFace) |
+| Licencia | apache-2.0 (tanto el modelo base como el adaptador LoRA, según los metadatos de Hugging Face) |
 | Formato de pesos | GGUF para llama.cpp; el repositorio no publica safetensors |
 | Capas | 36 |
 | Tamano oculto (hidden size) | 2560 |
@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lora_model_nli_vietnamese-GGUF | 4,02 mil millones (denso) | 40960 tokens | vi, en | apache-2.0 | GGUF en HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B (modelo base) | 4,02 mil millones (denso) | 40960 tokens según la ficha de esta variante | multilingue amplio | apache-2.0 | safetensors y GGUF en HuggingFace, ampliamente utilizado |
+| lora_model_nli_vietnamese-GGUF | 4,02 mil millones (denso) | 40960 tokens | vi, en | apache-2.0 | GGUF en Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B (modelo base) | 4,02 mil millones (denso) | 40960 tokens según la ficha de esta variante | multilingue amplio | apache-2.0 | safetensors y GGUF en Hugging Face, ampliamente utilizado |
 | Qwen2.5-3B-Instruct | 3,09 mil millones (denso) | 32768 tokens | multilingue | qwen-research (uso comercial permitido con condiciones) | safetensors y GGUF, alta adopción |
 | Llama 3.2 3B Instruct | 3,21 mil millones (denso) | 128000 tokens | multilingue (8 idiomas oficiales) | Llama 3.2 Community License | pesos oficiales y múltiples cuantizaciones |
 | Gemma 3 4B IT | 4 mil millones (denso) | 128000 tokens | más de 140 idiomas | Gemma Terms of Use | pesos oficiales y cuantizaciones de la comunidad |
@@ -95,7 +95,7 @@ La ventaja específica de esta variante frente al Qwen3-4B original es el ajuste
 - Riesgo de alucinacion: el propio autor advierte en la model card de que el modelo puede generar información incorrecta y desaconseja usar sus salidas como sustituto de asesoramiento profesional en ámbitos críticos.
 - Ausencia de benchmarks: no hay ninguna evaluación publicada, ni en vietnamita ni en inglés, por lo que el rendimiento real del ajuste LoRA frente al modelo base es desconocido.
 - Adopcion nula: el repositorio registra 0 descargas y 0 valoraciones, lo que implica ausencia de validación por parte de la comunidad y de reportes de fallos.
-- Ambiguedad de licencia: la model card indica explícitamente que la licencia del repositorio se determina tras un proceso de verificación del pipeline y que el autor no asigna apache-2.0 de forma unilateral, aunque los metadatos de HuggingFace muestran esa licencia. Conviene verificar la licencia antes de un uso comercial.
+- Ambiguedad de licencia: la model card indica explícitamente que la licencia del repositorio se determina tras un proceso de verificación del pipeline y que el autor no asigna apache-2.0 de forma unilateral, aunque los metadatos de Hugging Face muestran esa licencia. Conviene verificar la licencia antes de un uso comercial.
 - Cobertura idiomatica limitada: solo se declaran vietnamita e inglés; el comportamiento en otros idiomas no está documentado y probablemente degrade hacia respuestas en inglés o vietnamita.
 - Discrepancia de contexto: la ficha declara 40960 tokens, pero los ejemplos de uso emplean 8192; no hay evidencia de que el modelo mantenga calidad en contextos muy largos, y la memoria necesaria crece con la ventana configurada.
 - Trazabilidad del entrenamiento incompleta: se desconoce el dataset, el número de tokens y el método de alineación del adaptador LoRA, lo que dificulta auditar sesgos o comportamientos indeseados.
@@ -105,7 +105,7 @@ La ventaja específica de esta variante frente al Qwen3-4B original es el ajuste
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BachDaThan/lora_model_nli_vietnamese-GGUF
+- Modelo en Hugging Face: https://huggingface.co/BachDaThan/lora_model_nli_vietnamese-GGUF
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Adaptador LoRA original: https://huggingface.co/lyle49/lora_model_nli_vietnamese
 - Licencia apache-2.0: https://huggingface.co/BachDaThan/lora_model_nli_vietnamese-GGUF/blob/main/LICENSE

@@ -56,4 +56,4 @@ No se dispone de información para comparar este modelo con alternativas. No se 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Smirnovivan/resnet-tts)
+- [Repositorio en Hugging Face](https://huggingface.co/Smirnovivan/resnet-tts)

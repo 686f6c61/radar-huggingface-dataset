@@ -98,7 +98,7 @@ La comparación directa más fiable es con el modelo base google/embeddinggemma-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jayyun98/embeddinggemma-2-text-image-440m-mlx-bf16
+- Modelo en Hugging Face: https://huggingface.co/jayyun98/embeddinggemma-2-text-image-440m-mlx-bf16
 - Modelo base (Google DeepMind): https://huggingface.co/google/embeddinggemma-2
 - Revisión original del checkpoint: https://huggingface.co/google/embeddinggemma-2/tree/914f7f89142e33e77833254d9c9b90c3cef7303b
 - Implementación MLX-VLM (revisión anclada): https://github.com/Blaizzy/mlx-vlm/tree/3d87e88402f307efbf68e568971aa887ee7d9ed0

@@ -70,9 +70,9 @@ El conjunto "small" pega cada mascota retenida al 30 % de tamaño sobre las 12 i
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SAM 3.1 Muse (este) | 838 M (delta de 30,4 M) | no disponible | Box AP 1.000 y AP50 1.000 en el conjunto retenido para "muse" | SAM License | HuggingFace, delta de 58 MB |
-| SAM 3.1 (Meta) | 838 M | no disponible | Box AP 1.000 y AP50 1.000 para "plush toy"; 0.000 para "muse" | SAM License | HuggingFace (`facebook/sam3.1`) |
-| SAM 3 | no disponible | no disponible | no disponible | SAM License | HuggingFace |
+| SAM 3.1 Muse (este) | 838 M (delta de 30,4 M) | no disponible | Box AP 1.000 y AP50 1.000 en el conjunto retenido para "muse" | SAM License | Hugging Face, delta de 58 MB |
+| SAM 3.1 (Meta) | 838 M | no disponible | Box AP 1.000 y AP50 1.000 para "plush toy"; 0.000 para "muse" | SAM License | Hugging Face (`facebook/sam3.1`) |
+| SAM 3 | no disponible | no disponible | no disponible | SAM License | Hugging Face |
 | Otros modelos de segmentación open-vocabulary | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa solo es posible con el modelo base, ya que la información proporcionada no incluye datos de otros modelos de segmentación.
@@ -90,7 +90,7 @@ La comparación directa solo es posible con el modelo base, ya que la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OfflineBase/sam3.1-muse
+- Modelo en Hugging Face: https://huggingface.co/OfflineBase/sam3.1-muse
 - Modelo base: https://huggingface.co/facebook/sam3.1
 - Repositorio Muse Muse (código de servicio en `scripts/edge/sam3/`): no disponible como enlace en la información proporcionada
 - Paper o blog de SAM 3.1: no disponible en la información proporcionada

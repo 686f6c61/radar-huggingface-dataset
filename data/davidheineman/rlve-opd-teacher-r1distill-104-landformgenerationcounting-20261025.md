@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rlve-opd-teacher-R1Distill-104-LandformGenerationCounting | 1,78 B | no disponible | Entorno unico (LandformGenerationCounting), GRPO | no disponible | HuggingFace (davidheineman) |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78 B | no disponible | Razonamiento general y matematicas | no disponible en la informacion | HuggingFace (DeepSeek) |
-| davidheineman/rlve-opd-teacher-R1Distill-108-NANDResultCounting | no disponible | no disponible | Entorno unico (NANDResultCounting), GRPO | no disponible | HuggingFace (davidheineman) |
-| davidheineman/opd-teacher-R1Distill-Multiplication-step149 | no disponible | no disponible | Entorno unico (Multiplication), 150 pasos | no disponible | HuggingFace (davidheineman) |
+| rlve-opd-teacher-R1Distill-104-LandformGenerationCounting | 1,78 B | no disponible | Entorno unico (LandformGenerationCounting), GRPO | no disponible | Hugging Face (davidheineman) |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78 B | no disponible | Razonamiento general y matematicas | no disponible en la informacion | Hugging Face (DeepSeek) |
+| davidheineman/rlve-opd-teacher-R1Distill-108-NANDResultCounting | no disponible | no disponible | Entorno unico (NANDResultCounting), GRPO | no disponible | Hugging Face (davidheineman) |
+| davidheineman/opd-teacher-R1Distill-Multiplication-step149 | no disponible | no disponible | Entorno unico (Multiplication), 150 pasos | no disponible | Hugging Face (davidheineman) |
 
 La comparacion relevante es contra el modelo base (mas generalista) y contra otros teachers del mismo autor entrenados en entornos distintos; el resto de pares de la coleccion RLVE OPD Teachers sigue la misma receta.
 
@@ -87,7 +87,7 @@ La comparacion relevante es contra el modelo base (mas generalista) y contra otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-104-LandformGenerationCounting-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-104-LandformGenerationCounting-20261025
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Run de W&B: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/d3f6e63e
 - Coleccion RLVE OPD Teachers: https://huggingface.co/collections/davidheineman/rlve-opd-teachers

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwensploit 3.5 9B es un ajuste fino orientado a ciberseguridad del modelo comunitario `xtools-at/Qwen3.5-9B-Claude-3xMerge-UNCENSORED-heretic`, un merge de la familia Qwen3.5-9B que combina destilaciones de razonamiento y código. Lo desarrolla el usuario de HuggingFace `xtools-at`, que mantiene una familia completa de ajustes con el mismo enfoque en tres tamaños (2B, 4B y 9B). El modelo se presenta como asistente para razonamiento de seguridad, análisis de vulnerabilidades, revisión de código seguro, conocimiento de red team y preguntas técnicas, partiendo de una base explícitamente "uncensored" y "heretic", es decir, sin los filtros de rechazo del modelo original.
+Qwensploit 3.5 9B es un ajuste fino orientado a ciberseguridad del modelo comunitario `xtools-at/Qwen3.5-9B-Claude-3xMerge-UNCENSORED-heretic`, un merge de la familia Qwen3.5-9B que combina destilaciones de razonamiento y código. Lo desarrolla el usuario de Hugging Face `xtools-at`, que mantiene una familia completa de ajustes con el mismo enfoque en tres tamaños (2B, 4B y 9B). El modelo se presenta como asistente para razonamiento de seguridad, análisis de vulnerabilidades, revisión de código seguro, conocimiento de red team y preguntas técnicas, partiendo de una base explícitamente "uncensored" y "heretic", es decir, sin los filtros de rechazo del modelo original.
 
 El ajuste se ha realizado mediante supervisión (SFT) con LoRA sobre 7.000 ejemplos procedentes de cuatro conjuntos de datos, con 350 ejemplos de evaluación, una sola época y contexto de entrenamiento de 8.192 tokens. Los pesos publicados suman 9.409.813.744 parámetros (9,41 B) en un repositorio de 18,8 GB en safetensors, lo que corresponde a un modelo denso en precisión de 16 bits.
 
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xtools-at/Qwen3.5-9B-Qwensploit-CyberSecurity
+- Modelo en Hugging Face: https://huggingface.co/xtools-at/Qwen3.5-9B-Qwensploit-CyberSecurity
 - Modelo base: https://huggingface.co/xtools-at/Qwen3.5-9B-Claude-3xMerge-UNCENSORED-heretic
 - Merge intermedio Claude 3xMerge: https://huggingface.co/xtools-at/Qwen3.5-9B-Claude-3xMerge
 - Familia upstream Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B

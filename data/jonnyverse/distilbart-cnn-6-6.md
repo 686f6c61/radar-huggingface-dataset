@@ -79,7 +79,7 @@ La comparacion con `facebook/bart-large-cnn` muestra que DistilBART es aproximad
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/JONNYVERSE/distilbart-cnn-6-6
+- Repositorio Hugging Face del modelo: https://huggingface.co/JONNYVERSE/distilbart-cnn-6-6
 - Modelo original: https://huggingface.co/sshleifer/distilbart-cnn-6-6
 - Articulo de aiindigo.com sobre DistilBART-CNN-6-6: https://aiindigo.com/blog/distilbart-cnn-6-6-the-practical-choice-for-efficient-summarization-in-2026
 - Pagina de PromptLayer: https://www.promptlayer.com/models/distilbart-cnn-6-6/

@@ -95,7 +95,7 @@ El autor indica que la configuracion ajustada optima es D2 (74,0 tok/s, 1,49x) c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/r3lax/Huihui-Ornith-1.5-35B-A3B-abliterated-MTPLX-mixed8-4bit-FP16
+- Modelo en Hugging Face: https://huggingface.co/r3lax/Huihui-Ornith-1.5-35B-A3B-abliterated-MTPLX-mixed8-4bit-FP16
 - Modelo base (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated
 - Modelo original (ornith-ai): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Ficha en LLM Explorer (base): https://llm-explorer.com/model/huihui-ai%2FHuihui-Ornith-1.5-35B-A3B-abliterated,2fKIgn8LQab1oijPhDUyM1

@@ -59,9 +59,9 @@ El modelo pertenece a una serie de experimentos del mismo autor sobre dosis de t
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kdyck_dose_50Mpt_hfinit_adamwppt_20M_s2 (este) | No disponible | 2048 | Apache-2.0 | HuggingFace |
-| kdyck_dose_50Mpt_hfinit_20M_s2 (2026-08-14) | No disponible | No disponible | Apache-2.0 | HuggingFace |
-| kdyck_dose_50Mpt_500M_s0 (2026-08-14) | No disponible | No disponible | Apache-2.0 | HuggingFace |
+| kdyck_dose_50Mpt_hfinit_adamwppt_20M_s2 (este) | No disponible | 2048 | Apache-2.0 | Hugging Face |
+| kdyck_dose_50Mpt_hfinit_20M_s2 (2026-08-14) | No disponible | No disponible | Apache-2.0 | Hugging Face |
+| kdyck_dose_50Mpt_500M_s0 (2026-08-14) | No disponible | No disponible | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -74,6 +74,6 @@ El modelo pertenece a una serie de experimentos del mismo autor sobre dosis de t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_20M_s2_2026-09-06_23-05-12_445726-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_20M_s2_2026-09-06_23-05-12_445726-pt
 - W&B run: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/u1ra7nlu
 - Repositorio nanochat: https://github.com/karpathy/nanochat

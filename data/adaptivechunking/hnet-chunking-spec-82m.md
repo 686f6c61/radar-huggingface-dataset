@@ -103,7 +103,7 @@ No se documentan en la información disponible otros modelos públicos comparabl
 
 ## Enlaces
 
-- [Modelo en HuggingFace: AdaptiveChunking/hnet-chunking-spec-82m](https://huggingface.co/AdaptiveChunking/hnet-chunking-spec-82m)
+- [Modelo en Hugging Face: AdaptiveChunking/hnet-chunking-spec-82m](https://huggingface.co/AdaptiveChunking/hnet-chunking-spec-82m)
 - [Pilotos de 22,5 M: AdaptiveChunking/hnet-chunking-pilots](https://huggingface.co/AdaptiveChunking/hnet-chunking-pilots)
 - [Dataset de sondas: AdaptiveChunking/hnet-chunking-probes](https://huggingface.co/datasets/AdaptiveChunking/hnet-chunking-probes)
 - [Repositorio de código beetle-hnet](https://github.com/suchirsalhan/beetle-hnet)

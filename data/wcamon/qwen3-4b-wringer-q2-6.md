@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Wringer-Q2.6 es un artefacto de investigación publicado por el usuario wcamon en HuggingFace: una cuantización de 2,638 bits por peso (solo el cuerpo, es decir, las capas lineales cuantizadas) del modelo Qwen/Qwen3-4B, obtenida con un método propio denominado Wringer. El modelo base es un transformer denso de 36 capas y aproximadamente 4.000 millones de parámetros, del que se cuantizan 252 módulos lineales (36 capas × 7 proyecciones) hasta 3,63B de pesos de cuerpo, mientras que el embedding atado (389M) y las normas permanecen en bf16.
+Qwen3-4B-Wringer-Q2.6 es un artefacto de investigación publicado por el usuario wcamon en Hugging Face: una cuantización de 2,638 bits por peso (solo el cuerpo, es decir, las capas lineales cuantizadas) del modelo Qwen/Qwen3-4B, obtenida con un método propio denominado Wringer. El modelo base es un transformer denso de 36 capas y aproximadamente 4.000 millones de parámetros, del que se cuantizan 252 módulos lineales (36 capas × 7 proyecciones) hasta 3,63B de pesos de cuerpo, mientras que el embedding atado (389M) y las normas permanecen en bf16.
 
 El interés de esta ficha no está en el rendimiento absoluto, sino en el compromiso entre tasa de bits y degradación: el autor reporta una retención media (comp) de 0,9111 frente al padre en bf16 con solo 2,638 bits por peso, muy por encima de una cuantización GGUF IQ2_S de presupuesto similar (2,520 b/w) que cae a 46,95 en HumanEval frente a los 83,38 de este modelo. Es, por tanto, material relevante para quien investiga cuantización de muy bajo bit, no un modelo listo para producción sin evaluación adicional.
 
@@ -98,7 +98,7 @@ La comparación directa más informativa es con el propio padre bf16: este model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wcamon/Qwen3-4B-Wringer-Q2.6
+- Modelo en Hugging Face: https://huggingface.co/wcamon/Qwen3-4B-Wringer-Q2.6
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Primer modelo producido con Wringer (Agents-A1-4B-Wringer-Q2.6): https://huggingface.co/wcamon/Agents-A1-4B-Wringer-Q2.6
 - Ficheros incluidos en el repositorio: `wringer_e70_p3a_w.safetensors`, `wringer_unpack.py`, `bf16/`, `reports/pack_e70_p3a_w.md`, `reports/contam_probe_qwen3_4b.md`, `reports/prereg_e70_qwen3_4b.json`

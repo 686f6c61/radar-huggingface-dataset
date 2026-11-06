@@ -4,7 +4,7 @@
 
 El modelo `zviratko/Qwen3.8-Flash-Next-Uncensored-oQ5e-mtp-plefp8` es un artefacto de pesos cuantizados para el ecosistema MLX de Apple, derivado directamente de `mlx-community/Qwen3.8-Flash-Next-Uncensored-oQ5e-mtp`. Se trata de una variante experimental publicada por el usuario zviratko que toma la cuantizacion oQ5e (5 bits) del modelo base y le injerta una tabla n-gram PLE (probabilistic lookup embedding) almacenada en FP8, con el objetivo de reducir la perdida de informacion respecto a la tabla original. El propio autor advierte que el efecto real de esta sustitucion es desconocido y que se trata de un experimento abierto a retroalimentacion.
 
-El modelo subyacente pertenece a la familia Qwen3.8 Flash Next, una arquitectura de mezcla de expertos (MoE) entrenada por Alibaba, en su variante "Uncensored" (abliterated), es decir, con el comportamiento de rechazo eliminado de los pesos por la comunidad. Segun la ficha de HuggingFace, el pipeline declarado es `image-text-to-text`, lo que implica capacidades multimodales de vision ademas de generacion de texto, y entre sus etiquetas figuran `tool-calling`, `mtp` (multi-token prediction) y `qwen4_exp`.
+El modelo subyacente pertenece a la familia Qwen3.8 Flash Next, una arquitectura de mezcla de expertos (MoE) entrenada por Alibaba, en su variante "Uncensored" (abliterated), es decir, con el comportamiento de rechazo eliminado de los pesos por la comunidad. Segun la ficha de Hugging Face, el pipeline declarado es `image-text-to-text`, lo que implica capacidades multimodales de vision ademas de generacion de texto, y entre sus etiquetas figuran `tool-calling`, `mtp` (multi-token prediction) y `qwen4_exp`.
 
 La relevancia actual de esta publicacion es limitada pero tecnica: se trata de un experimento de cuantizacion sobre un modelo grande (los safetensors declaran 179.999.981.459 parametros totales) orientado a ejecucion local en hardware Apple Silicon. El repositorio tiene 0 descargas y 0 likes en el momento del analisis, y su tamano en disco es de 141,4 GB, lo que lo situa fuera del alcance de cualquier GPU de consumo convencional.
 
@@ -18,7 +18,7 @@ La relevancia actual de esta publicacion es limitada pero tecnica: se trata de u
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | 5 bits (esquema oQ5e) con tabla PLE en FP8; el nombre del repo indica tambien MTP |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como `other` en HuggingFace, con terminos comerciales adicionales) |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face, con terminos comerciales adicionales) |
 | Formato de pesos | safetensors (formato MLX) |
 
 ## Arquitectura y entrenamiento
@@ -88,11 +88,11 @@ La diferencia principal entre las variantes de zviratko es el nivel de cuantizac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zviratko/Qwen3.8-Flash-Next-Uncensored-oQ5e-mtp-plefp8
+- Repositorio Hugging Face: https://huggingface.co/zviratko/Qwen3.8-Flash-Next-Uncensored-oQ5e-mtp-plefp8
 - Modelo base: https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-Uncensored-oQ5e-mtp
 - Variante oQ4e-100K: https://huggingface.co/zviratko/Qwen3.8-Flash-Next-Uncensored-oQ4e-100K-MTP-plefp8
 - Variante GGUF de la comunidad: https://huggingface.co/cygnal/Qwen3.8-Flash-Next-Uncensored-IQ4XS-NGQ4-GGUF
 - Repositorio oficial de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Guia de despliegue local (kongchang.com): https://kongchang.com/en/articles/qwen3-8-flash-next-uncensored-model-local-deployment-guide-running-llms-on-an-8gb-gpu
 - Guia de ejecucion local (Atomic Chat): https://atomic.chat/blog/guides/how-to-run-qwen-3-8-flash-next-uncensored-locally
-- Fichero de licencia incluido en el repositorio: LICENSE (relativo al repositorio de HuggingFace)
+- Fichero de licencia incluido en el repositorio: LICENSE (relativo al repositorio de Hugging Face)

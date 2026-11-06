@@ -92,7 +92,7 @@ No se dispone de datos suficientes sobre el modelo base ni sobre otras conversio
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/kingfang008/Bonframe-Qwen3.8-4B-MLX-4bit
+- Hugging Face del modelo: https://huggingface.co/kingfang008/Bonframe-Qwen3.8-4B-MLX-4bit
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-4B-Distill
 - Repositorio de mlx-lm: https://github.com/ml-explore/mlx-lm
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada.

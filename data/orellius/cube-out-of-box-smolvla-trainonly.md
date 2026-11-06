@@ -70,8 +70,8 @@ No se dispone de datos comparativos con otros modelos VLA como OpenVLA, RT-2 o e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Orellius/cube-out-of-box-smolvla-trainonly
+- Modelo en Hugging Face: https://huggingface.co/Orellius/cube-out-of-box-smolvla-trainonly
 - Paper de SmolVLA: https://arxiv.org/abs/2506.01844
-- Blog de HuggingFace sobre SmolVLA: https://huggingface.co/blog/smolvla
-- Modelo base SmolVLA en HuggingFace: https://huggingface.co/lerobot/smolvla_base
+- Blog de Hugging Face sobre SmolVLA: https://huggingface.co/blog/smolvla
+- Modelo base SmolVLA en Hugging Face: https://huggingface.co/lerobot/smolvla_base
 - Blog de fine-tuning de SmolVLA para SO-101: https://ggando.com/blog/smolvla-so101/

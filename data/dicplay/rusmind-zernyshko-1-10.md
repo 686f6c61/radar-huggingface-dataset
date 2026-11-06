@@ -97,8 +97,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 | Modelo | Parámetros | Contexto | MERA 2.0 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RusMind Зёрнышко 1.10 | 0,08B | 1024 | 0,052 | RusMind License (comercial restringida) | HuggingFace, GGUF |
-| SmolLM-3B | 3B | no disponible | 0,049 | no disponible | HuggingFace |
+| RusMind Зёрнышко 1.10 | 0,08B | 1024 | 0,052 | RusMind License (comercial restringida) | Hugging Face, GGUF |
+| SmolLM-3B | 3B | no disponible | 0,049 | no disponible | Hugging Face |
 | Qwen3.5-4B | 4B | no disponible | no disponible | no disponible | no disponible |
 | gemma-4-E4B-it | ~4B | no disponible | no disponible | no disponible | no disponible |
 
@@ -118,7 +118,7 @@ La comparativa se limita a las métricas MERA 2.0 y SAGE publicadas por el autor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.10
+- Modelo en Hugging Face: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.10
 - GGUF: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.10-GGUF
 - Versión anterior 1.9: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.9
 - Licencia: archivo `LICENSE` en el repositorio del modelo

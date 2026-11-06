@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e13` es un artefacto de investigacion publicado en HuggingFace por el usuario PessimisticDPO. El propio identificador indica que se trata de un ajuste fino (fine-tuning) derivado de un modelo Mistral de 7 000 millones de parametros, en su variante `sft-beta`, y que el entrenamiento se ha realizado con una configuracion parametrizada concreta (los sufijos `a0.1-b0.1`, `L4`, `l3` y `e13` apuntan a hiperparametros de un experimento de optimizacion, probablemente 13 epocas y algun parametro de control tipo alpha/beta). El repositorio tiene 0 likes y 0 descargas, lo que sugiere que es una publicacion de laboratorio mas que un modelo destinado a uso general.
+El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e13` es un artefacto de investigacion publicado en Hugging Face por el usuario PessimisticDPO. El propio identificador indica que se trata de un ajuste fino (fine-tuning) derivado de un modelo Mistral de 7 000 millones de parametros, en su variante `sft-beta`, y que el entrenamiento se ha realizado con una configuracion parametrizada concreta (los sufijos `a0.1-b0.1`, `L4`, `l3` y `e13` apuntan a hiperparametros de un experimento de optimizacion, probablemente 13 epocas y algun parametro de control tipo alpha/beta). El repositorio tiene 0 likes y 0 descargas, lo que sugiere que es una publicacion de laboratorio mas que un modelo destinado a uso general.
 
-La model card distribuida con el modelo es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: todos los campos ("Developed by", "Model type", "Language(s)", "License", "Training Data", "Evaluation", etc.) figuran como `[More Information Needed]`. Esto implica que no hay datos oficiales publicados sobre arquitectura exacta, composicion del dataset, procedimiento de entrenamiento ni resultados de evaluacion. Cualquier dato tecnico adicional que se pueda inferir procede unicamente del nombre del repositorio y de las convenciones de la familia Mistral.
+La model card distribuida con el modelo es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: todos los campos ("Developed by", "Model type", "Language(s)", "License", "Training Data", "Evaluation", etc.) figuran como `[More Information Needed]`. Esto implica que no hay datos oficiales publicados sobre arquitectura exacta, composicion del dataset, procedimiento de entrenamiento ni resultados de evaluacion. Cualquier dato tecnico adicional que se pueda inferir procede unicamente del nombre del repositorio y de las convenciones de la familia Mistral.
 
 Por tanto, esta ficha debe leerse como un documento de evaluacion con un alto nivel de incertidumbre: la mayoria de especificaciones se marcan como "no disponible" y las estimaciones tecnicas se etiquetan explicitamente como inferencias basadas en la arquitectura Mistral 7B, no como datos confirmados por el autor.
 
@@ -19,7 +19,7 @@ Por tanto, esta ficha debe leerse como un documento de evaluacion con un alto ni
 | Tipos de cuantizacion | no disponible (no se publican pesos en GGUF ni AWQ) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (tag declarado en HuggingFace) |
+| Formato de pesos | safetensors (tag declarado en Hugging Face) |
 | Tamano del repositorio | 0,2 GB |
 | Libreria declarada | transformers |
 | Compatibilidad con endpoints | si (tag `endpoints_compatible`) |
@@ -97,7 +97,7 @@ La comparacion directa de rendimiento no es posible porque el modelo aqui descri
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e13
+- Repositorio en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e13
 - Paper citado en los tags (Lacoste et al., 2019, sobre emisiones de carbono en ML): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de ML referenciada en la model card: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada.

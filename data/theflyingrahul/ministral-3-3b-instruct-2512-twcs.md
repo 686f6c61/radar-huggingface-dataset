@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`theflyingrahul/ministral-3-3b-instruct-2512-twcs` es un repositorio de pesos en formato safetensors publicado por el usuario `theflyingrahul` en HuggingFace, con acceso restringido (gated). El nombre del repositorio sugiere que se trata de un ajuste o derivado de la familia Ministral 3B Instruct de Mistral AI, y la etiqueta de arquitectura declarada por el propio repositorio es `mistral3`. El repositorio contiene 3.849.090.048 parametros reales (aproximadamente 3,85 mil millones) y ocupa 7,7 GB en disco, un tamano coherente con pesos en precision de 16 bits.
+`theflyingrahul/ministral-3-3b-instruct-2512-twcs` es un repositorio de pesos en formato safetensors publicado por el usuario `theflyingrahul` en Hugging Face, con acceso restringido (gated). El nombre del repositorio sugiere que se trata de un ajuste o derivado de la familia Ministral 3B Instruct de Mistral AI, y la etiqueta de arquitectura declarada por el propio repositorio es `mistral3`. El repositorio contiene 3.849.090.048 parametros reales (aproximadamente 3,85 mil millones) y ocupa 7,7 GB en disco, un tamano coherente con pesos en precision de 16 bits.
 
-La relevancia de este repositorio es limitada y debe evaluarse con cautela: acumula 20 descargas y 0 likes desde su creacion el 9 de septiembre de 2026 (actualizado el 13 de septiembre de 2026), no declara licencia, no declara idiomas soportados y no incluye informacion sobre pipeline. Ademas, el acceso esta restringido y requiere aceptar condiciones en HuggingFace, lo que anade una capa de friccion y una relacion contractual adicional con el autor del repositorio, distinta de la del modelo base.
+La relevancia de este repositorio es limitada y debe evaluarse con cautela: acumula 20 descargas y 0 likes desde su creacion el 9 de septiembre de 2026 (actualizado el 13 de septiembre de 2026), no declara licencia, no declara idiomas soportados y no incluye informacion sobre pipeline. Ademas, el acceso esta restringido y requiere aceptar condiciones en Hugging Face, lo que anade una capa de friccion y una relacion contractual adicional con el autor del repositorio, distinta de la del modelo base.
 
 No se ha podido localizar documentacion tecnica, memoria de entrenamiento, tarjeta de modelo detallada ni resultados de evaluacion asociados a este repositorio. El sufijo `twcs` del identificador no esta explicado en la informacion disponible, por lo que se desconoce si corresponde a un conjunto de datos de ajuste, una tecnica concreta, un experimento interno o una convencion de nombrado del autor.
 
@@ -21,7 +21,7 @@ No se ha podido localizar documentacion tecnica, memoria de entrenamiento, tarje
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 7,7 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 2026-09-09 |
 | Ultima actualizacion | 2026-09-13 |
 | Descargas / likes | 20 / 0 |
@@ -68,7 +68,7 @@ Las siguientes estimaciones se derivan unicamente del numero de parametros confi
 - VRAM estimada en cuantizacion de 4 bits: aproximadamente 2-3 GB para pesos.
 - GPUs profesionales: A100, H100, L40S o A10G son mas que suficientes para este tamano y permiten lotes grandes.
 - GPUs de consumo: el modelo cabe en tarjetas con 8 GB o mas de VRAM si se cuantiza; con 12 GB (por ejemplo, RTX 3060 12 GB o RTX 4070) se puede trabajar en precision reducida con margen; una RTX 4090 (24 GB) permite FP16 con contextos amplios.
-- Opciones de despliegue: vLLM y TGI son adecuadas para servir los pesos safetensors; llama.cpp, Ollama y LM Studio requieren conversiones a GGUF que el repositorio no proporciona y que habria que generar localmente. Al ser un repositorio con acceso restringido, hay que aceptar las condiciones en HuggingFace antes de poder descargar los pesos.
+- Opciones de despliegue: vLLM y TGI son adecuadas para servir los pesos safetensors; llama.cpp, Ollama y LM Studio requieren conversiones a GGUF que el repositorio no proporciona y que habria que generar localmente. Al ser un repositorio con acceso restringido, hay que aceptar las condiciones en Hugging Face antes de poder descargar los pesos.
 - Latencia y throughput estimados: no disponible; no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ No es posible elaborar una comparativa rigurosa con los datos disponibles. La un
 
 - Ausencia total de tarjeta de modelo: no hay informacion sobre datos de entrenamiento, procedimiento de ajuste, evaluaciones ni limitaciones declaradas por el autor.
 - Licencia no declarada: sin una licencia explicita no se puede asumir permiso de uso comercial, redistribucion ni modificacion. Es un riesgo legal directo para cualquier despliegue en produccion.
-- Acceso restringido: la descarga requiere aceptar condiciones en HuggingFace, lo que puede imponer obligaciones adicionales al usuario.
+- Acceso restringido: la descarga requiere aceptar condiciones en Hugging Face, lo que puede imponer obligaciones adicionales al usuario.
 - Idiomas no declarados: se desconoce si el modelo mantiene un soporte multilingue util o si el ajuste lo ha degradado.
 - Contexto desconocido: no se puede planificar un caso de uso que dependa de ventanas largas sin medirlo previamente.
 - Riesgo de sobreajuste o degradacion respecto al modelo base: al ser un ajuste comunitario sin documentacion, es plausible que haya perdido capacidades generales, algo que solo se puede comprobar mediante evaluacion propia.
@@ -96,5 +96,5 @@ No es posible elaborar una comparativa rigurosa con los datos disponibles. La un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/theflyingrahul/ministral-3-3b-instruct-2512-twcs
+- Repositorio en Hugging Face: https://huggingface.co/theflyingrahul/ministral-3-3b-instruct-2512-twcs
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada. Los resultados devueltos por la busqueda no guardaban ninguna relacion con el modelo y se han descartado por completo.

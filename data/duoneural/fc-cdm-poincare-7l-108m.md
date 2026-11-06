@@ -113,8 +113,8 @@ Frente a alternativas densas de tamaño similar, la diferencia declarada es de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/FC-CDM-Poincare-7L-108M
-- Organización DuoNeural en HuggingFace: https://huggingface.co/DuoNeural
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/FC-CDM-Poincare-7L-108M
+- Organización DuoNeural en Hugging Face: https://huggingface.co/DuoNeural
 - Sitio web del laboratorio: https://duoneural.com/index.html
 - Perfil de GitHub: https://github.com/DuoNeural
 - Repositorios de GitHub: https://github.com/DuoNeural?tab=repositories

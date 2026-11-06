@@ -105,7 +105,7 @@ Rendimiento medido:
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kickvn/Qwen3-ASR-0.6B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/kickvn/Qwen3-ASR-0.6B-GGUF
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - GGUF de referencia del proyecto llama.cpp: https://huggingface.co/ggml-org/Qwen3-ASR-0.6B-GGUF
 - Repositorio GitHub de la familia Qwen3-ASR: https://github.com/QwenLM/Qwen3-ASR

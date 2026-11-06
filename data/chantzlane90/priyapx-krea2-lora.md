@@ -2,7 +2,7 @@
 
 ## Resumen
 
-priyapx-krea2-lora es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario chantzlane90 para el modelo base de generacion de imagenes Krea 2. Su proposito concreto es reproducir un personaje ficticio de nombre Priya Patel (Priya Patel, 21+), generado por IA y no basado en ninguna persona real, mediante la palabra de activacion `priyapx`. No se trata de un modelo autonomo, sino de un ajuste de bajo rango que debe cargarse sobre Krea 2 para condicionar la generacion hacia ese personaje.
+priyapx-krea2-lora es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario chantzlane90 para el modelo base de generacion de imagenes Krea 2. Su proposito concreto es reproducir un personaje ficticio de nombre Priya Patel (Priya Patel, 21+), generado por IA y no basado en ninguna persona real, mediante la palabra de activacion `priyapx`. No se trata de un modelo autonomo, sino de un ajuste de bajo rango que debe cargarse sobre Krea 2 para condicionar la generacion hacia ese personaje.
 
 El adaptador se entreno con la herramienta fal-ai/krea-2-trainer durante 1000 pasos con rango 32, y sus claves se remapearon a la nomenclatura `diffusion_model.*` que utiliza ComfyUI, lo que sugiere compatibilidad directa con ese entorno y con plataformas que lo soporten, como Sogni. El repositorio ocupa 0,2 GB y, en el momento de la consulta, acumula 0 descargas y 0 likes, por lo que se trata de una publicacion reciente y practicamente sin traccion en la comunidad.
 
@@ -74,6 +74,6 @@ No disponible. La informacion proporcionada no incluye referencias a otros LoRA 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chantzlane90/priyapx-krea2-lora
+- Hugging Face: https://huggingface.co/chantzlane90/priyapx-krea2-lora
 - Herramienta de entrenamiento mencionada: fal-ai/krea-2-trainer (sin URL verificada en la informacion disponible)
 - Plataforma de destino mencionada: Sogni (sin URL verificada en la informacion disponible)

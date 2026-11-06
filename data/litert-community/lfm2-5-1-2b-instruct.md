@@ -88,7 +88,7 @@ Según la model card, LFM2.5-1.2B-Instruct supera a Qwen3-1.7B y Gemma 3 1B en b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/litert-community/LFM2.5-1.2B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/litert-community/LFM2.5-1.2B-Instruct
 - Modelo base (LiquidAI): https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Documentación oficial de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-1.2b-instruct
 - Página en Overmind: https://www.overmindlab.ai/models/lfm-2-5-1-2b-instruct

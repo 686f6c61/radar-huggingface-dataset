@@ -83,7 +83,7 @@ No se dispone de modelos comparables específicamente entrenados para la traducc
 
 ## Enlaces
 
-- **HuggingFace**: [thunderboltc/marianmt-santali-sanlish-to-bangla_normalSplit](https://huggingface.co/thunderboltc/marianmt-santali-sanlish-to-bangla_normalSplit)
+- **Hugging Face**: [thunderboltc/marianmt-santali-sanlish-to-bangla_normalSplit](https://huggingface.co/thunderboltc/marianmt-santali-sanlish-to-bangla_normalSplit)
 - **Modelo base**: [Helsinki-NLP/opus-mt-en-mul](https://huggingface.co/Helsinki-NLP/opus-mt-en-mul)
 - **Página de Marian**: [https://marian-nmt.github.io/](https://marian-nmt.github.io/)
 - **Artículo de KDnuggets sobre MarianMT**: [https://www.kdnuggets.com/how-to-translate-languages-with-marianmt-and-hugging-face-transformers](https://www.kdnuggets.com/how-to-translate-languages-with-marianmt-and-hugging-face-transformers)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dementor-research/self_sft_gsm8k_llama-3.3-70b_as_llama-3.3-70b_seed42` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `dementor-research` en HuggingFace. Se trata de un ajuste fino supervisado (SFT) aplicado sobre el modelo base `meta-llama/Llama-3.3-70B-Instruct`, como indica el nombre del repositorio y las etiquetas `lora`, `sft` y `peft`. El nombre sugiere que el entrenamiento se realizó sobre el dataset GSM8K, un conjunto de problemas matemáticos de razonamiento de varios pasos, aunque la model card no proporciona confirmación explícita.
+El modelo `dementor-research/self_sft_gsm8k_llama-3.3-70b_as_llama-3.3-70b_seed42` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `dementor-research` en Hugging Face. Se trata de un ajuste fino supervisado (SFT) aplicado sobre el modelo base `meta-llama/Llama-3.3-70B-Instruct`, como indica el nombre del repositorio y las etiquetas `lora`, `sft` y `peft`. El nombre sugiere que el entrenamiento se realizó sobre el dataset GSM8K, un conjunto de problemas matemáticos de razonamiento de varios pasos, aunque la model card no proporciona confirmación explícita.
 
 El repositorio contiene únicamente los pesos del adaptador (1,7 GB en formato safetensors), no el modelo completo, por lo que su uso requiere cargar el modelo base de 70B parámetros junto con el adaptador. La licencia no está especificada, y la model card está prácticamente vacía, con todos los campos marcados como "[More Information Needed]". Es un modelo con cero descargas y cero likes en el momento de la consulta, lo que indica que es un experimento reciente o poco difundido.
 
@@ -25,7 +25,7 @@ Su relevancia radica en ser un ejemplo de adaptación eficiente de un modelo gra
 
 El modelo es un adaptador LoRA que se aplica sobre `meta-llama/Llama-3.3-70B-Instruct`, un modelo transformer decoder-only con atención causal. La técnica LoRA congela los pesos del modelo base e inyecta matrices de bajo rango en las capas de atención y feed-forward, lo que reduce drásticamente el número de parámetros entrenables y los requisitos de memoria durante el ajuste fino.
 
-El entrenamiento se realizó mediante supervisión fina (SFT) utilizando la librería TRL (Transformers Reinforcement Learning) de HuggingFace, como indican las etiquetas `trl` y `sft`. El nombre del repositorio sugiere que el dataset utilizado fue GSM8K, un conjunto de 8.500 problemas matemáticos de nivel escolar con soluciones razonadas. Sin embargo, no se proporcionan detalles sobre el número de épocas, la tasa de aprendizaje, el rango de la descomposición LoRA, ni el régimen de precisión (fp16, bf16, etc.). Tampoco se indica si se aplicaron técnicas adicionales como RLHF o DPO.
+El entrenamiento se realizó mediante supervisión fina (SFT) utilizando la librería TRL (Transformers Reinforcement Learning) de Hugging Face, como indican las etiquetas `trl` y `sft`. El nombre del repositorio sugiere que el dataset utilizado fue GSM8K, un conjunto de 8.500 problemas matemáticos de nivel escolar con soluciones razonadas. Sin embargo, no se proporcionan detalles sobre el número de épocas, la tasa de aprendizaje, el rango de la descomposición LoRA, ni el régimen de precisión (fp16, bf16, etc.). Tampoco se indica si se aplicaron técnicas adicionales como RLHF o DPO.
 
 ## Capacidades
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa rigurosa. Al ser un adaptador LoRA no documentado, no hay datos de rendimiento ni de parámetros comparables. Como referencia, otros adaptadores LoRA entrenados en GSM8K sobre modelos Llama (por ejemplo, los publicados por la comunidad en HuggingFace) suelen reportar mejoras en la precisión del dataset, pero no se puede afirmar nada sobre este modelo sin evidencia. La comparativa queda pendiente de que el autor publique resultados.
+No se dispone de información suficiente para establecer una comparativa rigurosa. Al ser un adaptador LoRA no documentado, no hay datos de rendimiento ni de parámetros comparables. Como referencia, otros adaptadores LoRA entrenados en GSM8K sobre modelos Llama (por ejemplo, los publicados por la comunidad en Hugging Face) suelen reportar mejoras en la precisión del dataset, pero no se puede afirmar nada sobre este modelo sin evidencia. La comparativa queda pendiente de que el autor publique resultados.
 
 ## Limitaciones y advertencias
 
@@ -74,7 +74,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dementor-research/self_sft_gsm8k_llama-3.3-70b_as_llama-3.3-70b_seed42
+- Repositorio en Hugging Face: https://huggingface.co/dementor-research/self_sft_gsm8k_llama-3.3-70b_as_llama-3.3-70b_seed42
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 - Librería PEFT: https://github.com/huggingface/peft
 - Librería TRL: https://github.com/huggingface/trl

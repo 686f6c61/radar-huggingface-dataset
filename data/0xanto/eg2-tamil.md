@@ -19,7 +19,7 @@ Su relevancia práctica está en el coste de despliegue: el modelo corre en CPU 
 | Tipos de cuantización | No disponible; el repositorio solo distribuye safetensors sin versiones cuantizadas publicadas |
 | Idiomas soportados | Tamil (ta) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (`model.safetensors`, `config.json`); pesos del encoder base en formato HuggingFace aparte |
+| Formato de pesos | safetensors (`model.safetensors`, `config.json`); pesos del encoder base en formato Hugging Face aparte |
 | Entrada | Audio mono a 16 kHz |
 | Salida | Texto en escritura tamil (solo script tamil, sin dígitos ni latinos) |
 | Modelo base | google/embeddinggemma-2 |
@@ -116,7 +116,7 @@ Salvedad importante: las cifras de este modelo no son directamente comparables c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xanto/eg2-tamil
+- Modelo en Hugging Face: https://huggingface.co/0xanto/eg2-tamil
 - Repositorio de código y scripts de transcripción: https://github.com/0xAnto/eg2-tamil
 - Demo local (sección "Demo" del README): https://github.com/0xAnto/eg2-tamil#demo
 - Modelo base: https://huggingface.co/google/embeddinggemma-2

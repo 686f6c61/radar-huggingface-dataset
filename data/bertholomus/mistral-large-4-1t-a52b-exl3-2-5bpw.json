@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "bertholomus/Mistral-Large-4-1T-A52B-EXL3-2.5bpw",
+  "slug": "bertholomus-mistral-large-4-1t-a52b-exl3-2-5bpw",
+  "author": "bertholomus",
+  "url": "https://huggingface.co/bertholomus/Mistral-Large-4-1T-A52B-EXL3-2.5bpw",
+  "created_at": "2026-11-06T08:39:49.000Z",
+  "updated_at": "2026-11-06T09:27:25.000Z",
+  "license": "mistral-ecosystem-open-weight-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral_large4",
+    "exl3",
+    "exllamav3",
+    "tensorfold",
+    "dgx-spark",
+    "gb10",
+    "mistral-large-4",
+    "base_model:mistralai/Mistral-Large-4-1T-A52B",
+    "base_model:quantized:mistralai/Mistral-Large-4-1T-A52B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 169716924704,
+  "parameters_human": "169.72B",
+  "storage_bytes": 338394722613,
+  "storage_human": "338.4 GB",
+  "base_model": "mistralai/Mistral-Large-4-1T-A52B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Mistral-Large-4-1T-A52B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Mistral-Large-4-1T-A52B-NVFP4",
+      "snippet": "Mistral Large 4 is our largest and most capable model to date: a 1 trillion-parameter natively multimodal Mixture-of-Experts model with 49 billion active parameters per token (52 billion including embeddings and output layers), trained from scratch on 3,800 NVIDIA Grace Blackwell GPUs in Mistral's ..."
+    },
+    {
+      "title": "model-and-paper/models/2026-11-05-mistral-large-4-1t-a52b.md ... - GitHub",
+      "url": "https://github.com/BELYAGOUBIABDELILAH/model-and-paper/blob/main/models/2026-11-05-mistral-large-4-1t-a52b.md",
+      "snippet": "Description: Mistral-Large-4-1T-A52B is a multimodal image and text understanding model from mistralai. Mistral Large 4 is our largest and most capable model to date: a 1 trillion-parameter natively multimodal Mixture-of-Experts model with 49 billion active parameters per token (52 billion including embeddings and output layers), trained from scratch on 3,800 NVIDIA Grace Blackwell GPUs in ..."
+    }
+  ]
+}

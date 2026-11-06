@@ -4,7 +4,7 @@
 
 El repositorio `bdegroot/paper_010065134_neural_architecture_search` no contiene un modelo de aprendizaje automático, sino un documento de texto plano en formato Markdown que resume el tema de *neural architecture search* (NAS). El archivo principal, `paper_010065134_neural_architecture_search.md`, es un artefacto de texto con una estructura narrativa definida (introducción, problema, solución, validación y futuro) y un estilo analítico conciso, con citas en formato numérico APA.
 
-El autor, bdegroot1982, ha publicado este repositorio bajo licencia MIT, pero no se incluyen pesos, arquitecturas ni código de entrenamiento. La fecha de creación es el 21 de agosto de 2026, según los metadatos de HuggingFace, aunque la información técnica del modelo (parámetros, contexto, idiomas) no está disponible. Por tanto, este repositorio debe interpretarse como una referencia documental sobre NAS, no como un modelo ejecutable.
+El autor, bdegroot1982, ha publicado este repositorio bajo licencia MIT, pero no se incluyen pesos, arquitecturas ni código de entrenamiento. La fecha de creación es el 21 de agosto de 2026, según los metadatos de Hugging Face, aunque la información técnica del modelo (parámetros, contexto, idiomas) no está disponible. Por tanto, este repositorio debe interpretarse como una referencia documental sobre NAS, no como un modelo ejecutable.
 
 ## Especificaciones técnicas
 
@@ -59,5 +59,5 @@ No disponible. No existe una categoría de modelos comparable porque no es un mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bdegroot/paper_010065134_neural_architecture_search
+- Repositorio en Hugging Face: https://huggingface.co/bdegroot/paper_010065134_neural_architecture_search
 - Artículo relacionado sobre NAS (arXiv): https://arxiv.org/abs/2301.08727

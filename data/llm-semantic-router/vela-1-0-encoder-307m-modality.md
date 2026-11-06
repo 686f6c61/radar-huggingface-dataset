@@ -99,7 +99,7 @@ La model card referencia la coleccion completa de la familia, cuyos modelos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Modality
+- Modelo en Hugging Face: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Modality
 - Modelo base: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M
 - Documentacion y evaluacion (TECHNICAL.md): https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Modality/blob/main/TECHNICAL.md
 - Coleccion de la familia Vela 1.0 Router Models: https://huggingface.co/collections/llm-semantic-router/vela-10-router-models-6aa555ba70cc6997d6d67798

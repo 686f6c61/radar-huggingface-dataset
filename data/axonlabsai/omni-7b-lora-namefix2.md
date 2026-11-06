@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `axonlabsai/Omni-7B-lora-namefix2` es un adaptador LoRA (entrenado con la librería PEFT) diseñado para modificar la identidad del modelo base `axonlabsai/Omni-7B`, con el objetivo de que el asistente se presente como "Ranger Omni" en lugar de "Axon Omni". El adaptador fue creado por el usuario `axonlabsai` y subido a HuggingFace el 18 de agosto de 2026. Según la model card, el entrenamiento utilizó 160 ejemplos de identidad repetidos 3 veces durante 2 épocas, pero el resultado es solo un éxito parcial: las frases informales ("gimme ur name") devuelven "Ranger Omni", mientras que las frases con nombre completo pueden seguir devolviendo "Axon Omni". Además, se advierte que dos LoRA de identidad entrenados por separado se cancelan parcialmente, lo que sugiere que el enfoque de entrenar la identidad en un adaptador separado de las capacidades no es óptimo.
+El modelo `axonlabsai/Omni-7B-lora-namefix2` es un adaptador LoRA (entrenado con la librería PEFT) diseñado para modificar la identidad del modelo base `axonlabsai/Omni-7B`, con el objetivo de que el asistente se presente como "Ranger Omni" en lugar de "Axon Omni". El adaptador fue creado por el usuario `axonlabsai` y subido a Hugging Face el 18 de agosto de 2026. Según la model card, el entrenamiento utilizó 160 ejemplos de identidad repetidos 3 veces durante 2 épocas, pero el resultado es solo un éxito parcial: las frases informales ("gimme ur name") devuelven "Ranger Omni", mientras que las frases con nombre completo pueden seguir devolviendo "Axon Omni". Además, se advierte que dos LoRA de identidad entrenados por separado se cancelan parcialmente, lo que sugiere que el enfoque de entrenar la identidad en un adaptador separado de las capacidades no es óptimo.
 
 Este adaptador es relevante como caso de estudio sobre las limitaciones del fine-tuning de identidad en modelos de lenguaje, y sobre cómo los adaptadores LoRA pueden interferir entre sí. No se dispone de información sobre el modelo base `Omni-7B` (arquitectura, parámetros, licencia, etc.), por lo que muchas especificaciones quedan sin determinar.
 
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 - No se especifican requisitos de hardware para este adaptador. Al ser un LoRA, su uso requiere cargar el modelo base `Omni-7B` (7B parámetros) más el adaptador.
 - Para un modelo de 7B, se estima que con cuantización de 4 bits se necesitan aproximadamente 4-6 GB de VRAM para inferencia, pero esto depende del modelo base y de la implementación.
-- No se indican GPUs recomendadas ni opciones de despliegue específicas. En principio, el adaptador puede usarse con frameworks que soporten PEFT, como HuggingFace Transformers, vLLM o llama.cpp (si el modelo base está disponible en GGUF).
+- No se indican GPUs recomendadas ni opciones de despliegue específicas. En principio, el adaptador puede usarse con frameworks que soporten PEFT, como Hugging Face Transformers, vLLM o llama.cpp (si el modelo base está disponible en GGUF).
 - No se proporcionan datos de latencia o throughput.
 
 ## Comparativa con modelos similares
@@ -65,5 +65,5 @@ No se dispone de información sobre adaptadores LoRA similares con el mismo prop
 
 ## Enlaces
 
-- [HuggingFace - axonlabsai/Omni-7B-lora-namefix2](https://huggingface.co/axonlabsai/Omni-7B-lora-namefix2)
-- [HuggingFace - axonlabsai/Omni-7B (modelo base)](https://huggingface.co/axonlabsai/Omni-7B) (enlace inferido, no verificado)
+- [Hugging Face - axonlabsai/Omni-7B-lora-namefix2](https://huggingface.co/axonlabsai/Omni-7B-lora-namefix2)
+- [Hugging Face - axonlabsai/Omni-7B (modelo base)](https://huggingface.co/axonlabsai/Omni-7B) (enlace inferido, no verificado)

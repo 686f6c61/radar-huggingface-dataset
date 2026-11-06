@@ -72,11 +72,11 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 - El modelo devuelve una etiqueta con alta confianza incluso si la imagen no contiene ningún alimento, ya que no incluye una clase "no comida".
 - Las predicciones no deben interpretarse como un juicio nutricional, de alérgenos o de seguridad alimentaria. No debe usarse en contextos donde un error de clasificación pueda suponer un riesgo para la salud.
 - La precisión reportada corresponde a la validación sobre el split público del benchmark, lo que constituye una estimación optimista del rendimiento en condiciones reales.
-- El repositorio de HuggingFace muestra un tamaño de 0.0 GB, lo que puede indicar que los pesos no se han subido correctamente o que la métrica no se ha actualizado. Es recomendable verificar la disponibilidad del archivo `best.pt` antes de usar el modelo en producción.
+- El repositorio de Hugging Face muestra un tamaño de 0.0 GB, lo que puede indicar que los pesos no se han subido correctamente o que la métrica no se ha actualizado. Es recomendable verificar la disponibilidad del archivo `best.pt` antes de usar el modelo en producción.
 - No se proporcionan datos sobre sesgos del modelo, aunque, al estar entrenado en un dataset de alimentos, es previsible que la precisión varíe según los tipos de cocina o las condiciones de iluminación no representadas en Food-11.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hylin16/food-recognition-food11-effnet-b3-cbam-300
+- Modelo en Hugging Face: https://huggingface.co/hylin16/food-recognition-food11-effnet-b3-cbam-300
 - Repositorio de entrenamiento `food_recognition`: https://github.com/linhongyu510/food_recognition
 - Paper de CBAM: https://arxiv.org/abs/1807.06521

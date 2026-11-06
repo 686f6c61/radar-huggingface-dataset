@@ -22,7 +22,7 @@ El interés práctico es acotado pero claro: permite probar y desplegar un TTS d
 | Formato de pesos | safetensors (MLX), precisión BFloat16; librería mlx-audio |
 | Frecuencia de muestreo de salida | 48 kHz |
 | Modos de generación | Zero-shot, continuación, clonación por referencia y modo combinado (4 modos) |
-| Tamaño del repositorio | 1,2 GB según HuggingFace; 4,96 GB según la tabla de la model card (dato contradictorio, ver limitaciones) |
+| Tamaño del repositorio | 1,2 GB según Hugging Face; 4,96 GB según la tabla de la model card (dato contradictorio, ver limitaciones) |
 
 ## Arquitectura y entrenamiento
 
@@ -88,7 +88,7 @@ La comparación con otras familias de TTS queda como no disponible: la búsqueda
 ## Limitaciones y advertencias
 
 - Repositorio sin validación comunitaria: 0 descargas y 0 likes en el momento de la consulta, creado y actualizado con 15 segundos de diferencia, lo que sugiere una publicación automatizada o de prueba. No hay evidencia de que los pesos hayan sido verificados más allá de la conversión.
-- Inconsistencia en el tamaño: HuggingFace reporta 1,2 GB de repositorio, mientras que la tabla de la model card atribuye 4,96 GB a la variante bf16. Puede tratarse de un LFS mal contabilizado o de que el repositorio no contenga realmente los pesos completos; conviene verificar los ficheros antes de confiar en el despliegue.
+- Inconsistencia en el tamaño: Hugging Face reporta 1,2 GB de repositorio, mientras que la tabla de la model card atribuye 4,96 GB a la variante bf16. Puede tratarse de un LFS mal contabilizado o de que el repositorio no contenga realmente los pesos completos; conviene verificar los ficheros antes de confiar en el despliegue.
 - Ejemplos de uso desalineados: los comandos de la model card apuntan a `mlx-community/VoxCPM2-bf16`, no a `theoracleguy/VoxCPM2-bf16`. Es necesario sustituir el identificador para usar este repositorio.
 - Dependencia total del modelo base: no se documentan datos de entrenamiento, composición del corpus, arquitectura ni procesos de alineación. Cualquier evaluación de sesgos o de calidad debe hacerse sobre openbmb/VoxCPM2.
 - Sesgos: no disponibles. Al no publicarse la composición del dataset, no se puede caracterizar la representación de acentos, géneros, edades o variedades dialectales dentro de los 30 idiomas declarados.
@@ -101,7 +101,7 @@ La comparación con otras familias de TTS queda como no disponible: la búsqueda
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/theoracleguy/VoxCPM2-bf16
+- Repositorio en Hugging Face: https://huggingface.co/theoracleguy/VoxCPM2-bf16
 - Modelo base: https://huggingface.co/openbmb/VoxCPM2
 - Librería de conversión e inferencia mlx-audio: https://github.com/Blaizzy/mlx-audio
 - Variante de referencia en la model card: https://huggingface.co/mlx-community/VoxCPM2-bf16

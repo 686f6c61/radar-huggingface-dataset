@@ -36,7 +36,7 @@ Las modificaciones se concentran en las capas 8, 9, 10 y 11, ademas del pooler y
 
 - Clasificacion de texto en ingles en 8 categorias del dominio asegurador: concesion de cobertura, exclusion, pago de prima, limites y franquicias, procedimiento de siniestros, definiciones, cancelacion o renovacion de terminos y condiciones u obligaciones.
 - Salida de etiqueta unica por frase mediante `argmax` sobre los logits.
-- Integracion directa con el pipeline `text-classification` de HuggingFace Transformers.
+- Integracion directa con el pipeline `text-classification` de Hugging Face Transformers.
 - Inferencia sobre CPU o GPU de gama baja dado el reducido tamano del modelo (0,4 GB).
 - No soporta generacion de texto, razonamiento multi-paso, tool calling, agentes, vision, audio ni modo de pensamiento.
 - Capacidad multilingue limitada al ingles; el vocabulario y el preentrenamiento del modelo base son de `bert-base-uncased`.
@@ -93,6 +93,6 @@ No se dispone de datos de benchmarks comparativos con alternativas de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sidman007/wsp-bert-insurance-v0-p10
+- Modelo en Hugging Face: https://huggingface.co/sidman007/wsp-bert-insurance-v0-p10
 - Repositorio del proyecto (codigo, logs y protocolo): https://github.com/siddharth-ghatti/weight-space-programming-poc
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased

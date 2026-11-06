@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch13
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch13
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de embeddings/cabeza LM: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - TOFU benchmark (paper): https://arxiv.org/abs/2401.06121

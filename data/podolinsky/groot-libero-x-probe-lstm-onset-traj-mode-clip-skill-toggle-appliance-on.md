@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`groot-libero-x-probe-lstm-onset-traj-mode-clip-skill-toggle-appliance-on` es un detector de fallos de pequeño tamaño diseñado para supervisar la ejecución de una política de visión-lenguaje-acción (VLA) del tipo GR00T evaluada sobre el benchmark robótico LIBERO-X. No es un modelo generativo ni un modelo de lenguaje: es una sonda (probe) que consume las características pooled de 6144 dimensiones que emite el backbone de la política en cada paso y produce una puntuación de fallo por paso, además de una clasificación del modo de fallo (10 modos) y una cabeza semántica. Lo desarrolla el usuario de HuggingFace `podolinsky`, y el código de la arquitectura (`lstm_modes_clip`) está publicado en el repositorio vla-probe.
+`groot-libero-x-probe-lstm-onset-traj-mode-clip-skill-toggle-appliance-on` es un detector de fallos de pequeño tamaño diseñado para supervisar la ejecución de una política de visión-lenguaje-acción (VLA) del tipo GR00T evaluada sobre el benchmark robótico LIBERO-X. No es un modelo generativo ni un modelo de lenguaje: es una sonda (probe) que consume las características pooled de 6144 dimensiones que emite el backbone de la política en cada paso y produce una puntuación de fallo por paso, además de una clasificación del modo de fallo (10 modos) y una cabeza semántica. Lo desarrolla el usuario de Hugging Face `podolinsky`, y el código de la arquitectura (`lstm_modes_clip`) está publicado en el repositorio vla-probe.
 
 El modelo se ha entrenado sobre los episodios de entrenamiento de un split concreto del dataset `podolinsky/gr00t-libero-x-features-v3`, en este caso el split de habilidad `skill_toggle_appliance_on`, seleccionado al azar con semilla 0 entre 8 splits de habilidad. Los episodios de la habilidad reservada de ese split constituyen el conjunto "no visto" (unseen). La relevancia práctica está en que permite lanzar alarmas de fallo con control conformal de la tasa de falsos positivos, utilizando los 85 máximos de calibración incluidos en el propio fichero de pesos.
 
@@ -74,9 +74,9 @@ La caída en el conjunto no visto (27,08 frente a 51,15 en visto) es el dato má
 
 | Modelo | Parámetros | Contexto | Rendimiento en el split | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`onset_traj`, `lstm_modes_clip`) | 6.622.240 | No disponible | Validación 50,35 / visto 51,15 / no visto 27,08 | CC BY 4.0 | HuggingFace |
-| `groot-libero-x-probe-lstm-onset-pre-mode-clip-skill-toggle-appliance-on` (misma arquitectura, otra etiqueta) | No disponible en la información | No disponible | No disponible en la información | CC BY 4.0 (según la model card del modelo principal) | HuggingFace |
-| Otras sondas del mismo autor sobre otros splits de habilidad | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| Este modelo (`onset_traj`, `lstm_modes_clip`) | 6.622.240 | No disponible | Validación 50,35 / visto 51,15 / no visto 27,08 | CC BY 4.0 | Hugging Face |
+| `groot-libero-x-probe-lstm-onset-pre-mode-clip-skill-toggle-appliance-on` (misma arquitectura, otra etiqueta) | No disponible en la información | No disponible | No disponible en la información | CC BY 4.0 (según la model card del modelo principal) | Hugging Face |
+| Otras sondas del mismo autor sobre otros splits de habilidad | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 No se han identificado en la información disponible otros detectores de fallo comparables de terceros para políticas VLA sobre LIBERO-X, por lo que la comparación externa queda como no disponible.
 
@@ -95,7 +95,7 @@ No se han identificado en la información disponible otros detectores de fallo c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-traj-mode-clip-skill-toggle-appliance-on
+- Modelo en Hugging Face: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-traj-mode-clip-skill-toggle-appliance-on
 - Modelo hermano con la otra etiqueta sobre el mismo split: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-pre-mode-clip-skill-toggle-appliance-on
 - Dataset de características: https://huggingface.co/datasets/podolinsky/gr00t-libero-x-features-v3
 - Código de la sonda (vla-probe): https://github.com/mpodolinsky/vla-probe

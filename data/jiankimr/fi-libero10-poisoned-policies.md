@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FI-Libero10-poisoned-policies | Politica de flow matching, backbone ChiTransformer, multitarea | no disponible | no aplicable | no publicado | MIT | HuggingFace (jiankimr) |
+| FI-Libero10-poisoned-policies | Politica de flow matching, backbone ChiTransformer, multitarea | no disponible | no aplicable | no publicado | MIT | Hugging Face (jiankimr) |
 | Diffusion Policy (Chi et al.) | Politica de difusion, origen del backbone ChiTransformer | no disponible | no aplicable | no disponible en esta informacion | consultar repositorio original | repositorio original del paper |
 | GR00T | Politica generalista de robotica | no disponible | no aplicable | no disponible en esta informacion | no disponible en esta informacion | usado aqui solo como generador de los rollouts envenenados |
 
@@ -96,7 +96,7 @@ La model card menciona tablas de comparación de transferibilidad con columnas `
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiankimr/FI-Libero10-poisoned-policies
+- Modelo en Hugging Face: https://huggingface.co/jiankimr/FI-Libero10-poisoned-policies
 - Dataset de rollouts envenenados: https://huggingface.co/datasets/jiankimr/FI-Libero10-gr00t-poisoned-rollouts
 - Repositorio de código: https://github.com/jiankimr/FI_Libero
 - Paper de Diffusion Policy (Chi et al.), origen del backbone ChiTransformer: no disponible en la información proporcionada

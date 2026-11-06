@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo, publicado por el usuario yongchanskii, es un checkpoint de generación de texto con 3.075.098.624 parámetros (aproximadamente 3B). El nombre sugiere que se trata de un modelo derivado de SmolLM3-3B de HuggingFace, posiblemente mediante un proceso de merge o fine-tuning con técnicas como OPD (on-policy distillation) y el dataset ZSRE (zero-shot relation extraction). Sin embargo, la model card no contiene ninguna información concreta: es una plantilla genérica sin datos sobre arquitectura, entrenamiento, licencia o capacidades.
+Este modelo, publicado por el usuario yongchanskii, es un checkpoint de generación de texto con 3.075.098.624 parámetros (aproximadamente 3B). El nombre sugiere que se trata de un modelo derivado de SmolLM3-3B de Hugging Face, posiblemente mediante un proceso de merge o fine-tuning con técnicas como OPD (on-policy distillation) y el dataset ZSRE (zero-shot relation extraction). Sin embargo, la model card no contiene ninguna información concreta: es una plantilla genérica sin datos sobre arquitectura, entrenamiento, licencia o capacidades.
 
 El repositorio pesa 6,2 GB y contiene pesos en formato safetensors. Está etiquetado como compatible con `transformers`, `text-generation`, `conversational` y `endpoints_compatible`. No se han publicado resultados de benchmarks ni documentación técnica. Dada la ausencia total de información verificable, cualquier uso en producción debe considerar que se trata de un artefacto sin validación externa.
 
@@ -21,7 +21,7 @@ El repositorio pesa 6,2 GB y contiene pesos en formato safetensors. Está etique
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo. Por el nombre y el tamaño de parámetros, es plausible que se base en SmolLM3-3B, un transformer decoder-only entrenado por HuggingFace con 11 billones de tokens y una ventana de contexto de 32K tokens, pero esto no está confirmado. El nombre del checkpoint incluye referencias a "opd" (posiblemente on-policy distillation), "zsre" (dataset de extracción de relaciones zero-shot), "merge_student_ce" (combinación de pérdidas de entropía cruzada) y "traj_len_4096" (longitud de trayectoria de 4096 tokens), lo que sugiere un entrenamiento de destilación o fine-tuning, pero sin documentación no se puede afirmar nada con certeza.
+No se dispone de información sobre la arquitectura interna del modelo. Por el nombre y el tamaño de parámetros, es plausible que se base en SmolLM3-3B, un transformer decoder-only entrenado por Hugging Face con 11 billones de tokens y una ventana de contexto de 32K tokens, pero esto no está confirmado. El nombre del checkpoint incluye referencias a "opd" (posiblemente on-policy distillation), "zsre" (dataset de extracción de relaciones zero-shot), "merge_student_ce" (combinación de pérdidas de entropía cruzada) y "traj_len_4096" (longitud de trayectoria de 4096 tokens), lo que sugiere un entrenamiento de destilación o fine-tuning, pero sin documentación no se puede afirmar nada con certeza.
 
 No se han publicado detalles sobre el dataset de entrenamiento, el procedimiento de entrenamiento, hiperparámetros o si se aplicaron técnicas como RLHF o DPO.
 
@@ -61,13 +61,13 @@ Estas cifras son estimaciones genéricas para modelos de 3B y no constituyen una
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa fiable. El modelo probablemente se relacione con SmolLM3-3B (HuggingFace), pero al no haber documentación no se puede confirmar. Alternativas de la misma escala (3B) incluyen:
+No se dispone de información suficiente para realizar una comparativa fiable. El modelo probablemente se relacione con SmolLM3-3B (Hugging Face), pero al no haber documentación no se puede confirmar. Alternativas de la misma escala (3B) incluyen:
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SmolLM3-3B | 3B | 32K | Apache 2.0 | HuggingFace |
-| Qwen2.5-3B | 3B | 32K | Apache 2.0 | HuggingFace |
-| Llama 3.2 3B | 3B | 128K | Llama 3.2 Community License | HuggingFace |
+| SmolLM3-3B | 3B | 32K | Apache 2.0 | Hugging Face |
+| Qwen2.5-3B | 3B | 32K | Apache 2.0 | Hugging Face |
+| Llama 3.2 3B | 3B | 128K | Llama 3.2 Community License | Hugging Face |
 
 Este modelo no tiene datos publicados, por lo que no se puede comparar su rendimiento con los anteriores.
 
@@ -83,6 +83,6 @@ Este modelo no tiene datos publicados, por lo que no se puede comparar su rendim
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yongchanskii/smollm3-3b-opd-zsre-merge_student_ce_0.02_step_1_traj_len_4096_bf10_ckpt-8000)
-- [Repositorio de SmolLM (HuggingFace)](https://github.com/huggingface/smollm) — información sobre el modelo base probable, no confirmada.
+- [Modelo en Hugging Face](https://huggingface.co/yongchanskii/smollm3-3b-opd-zsre-merge_student_ce_0.02_step_1_traj_len_4096_bf10_ckpt-8000)
+- [Repositorio de SmolLM (Hugging Face)](https://github.com/huggingface/smollm) — información sobre el modelo base probable, no confirmada.
 - [Paper de Lacoste et al. (2019) sobre emisiones de carbono](https://arxiv.org/abs/1910.09700) — referenciado en la plantilla de la model card.

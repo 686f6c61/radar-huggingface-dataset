@@ -84,6 +84,6 @@ La comparativa se basa en la categoria de adaptadores de control de camara para 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jojocodex/minimax-h3-yunjing-lora
+- Repositorio Hugging Face: https://huggingface.co/Jojocodex/minimax-h3-yunjing-lora
 - Modelo base: https://huggingface.co/Comfy-Org/MiniMax-H3
 - Adaptador Turbo (mencionado en el modelo card): https://huggingface.co/drbaph/MiniMax-H3-Turbo-Lora-ComfyUI

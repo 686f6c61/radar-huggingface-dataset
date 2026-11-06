@@ -1,7 +1,7 @@
 # social-jev/social-jev-0.6B-v1
 
 ## Resumen
-social-jev-0.6B-v1 es un modelo publicado en HuggingFace por el usuario social-jev, construido como fine-tuning de Qwen/Qwen3-0.6B. La ficha lo declara con el pipeline `feature-extraction`, la librería `transformers` y las etiquetas `classification`, `social_jev` y `custom_code`, lo que indica que está orientado a extraer representaciones vectoriales y/o a clasificar texto, más que a la generación conversacional abierta.
+social-jev-0.6B-v1 es un modelo publicado en Hugging Face por el usuario social-jev, construido como fine-tuning de Qwen/Qwen3-0.6B. La ficha lo declara con el pipeline `feature-extraction`, la librería `transformers` y las etiquetas `classification`, `social_jev` y `custom_code`, lo que indica que está orientado a extraer representaciones vectoriales y/o a clasificar texto, más que a la generación conversacional abierta.
 
 Con alrededor de 0,6 mil millones de parámetros, se sitúa en la categoría de modelos ligeros, pensados para ejecutarse en hardware modesto o incluso en CPU. El uso de la etiqueta `custom_code` implica que la implementación no es estándar y requiere cargar el modelo con `trust_remote_code=True` en la librería `transformers`.
 
@@ -44,7 +44,7 @@ No hay información publicada sobre el proceso de entrenamiento: se desconoce el
 - Filtrado previo en pipelines de anotación: preetiquetado masivo de datasets para que anotadores humanos solo revisen los casos de baja confianza, reduciendo el coste de etiquetado manual.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la información disponible. La ficha de HuggingFace no incluye métricas de MMLU, HumanEval, GSM8K, MTEB ni de ninguna otra suite, y el repositorio registra 0 descargas, por lo que tampoco existen evaluaciones de terceros accesibles.
+No se han publicado resultados de benchmarks en la información disponible. La ficha de Hugging Face no incluye métricas de MMLU, HumanEval, GSM8K, MTEB ni de ninguna otra suite, y el repositorio registra 0 descargas, por lo que tampoco existen evaluaciones de terceros accesibles.
 
 ## Requisitos de hardware
 - VRAM estimada en precisión completa (fp32): ~2,4 GB solo para pesos, más activaciones y overhead del runtime; en la práctica, 4-6 GB de VRAM.
@@ -59,11 +59,11 @@ No se han publicado resultados de benchmarks en la información disponible. La f
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| social-jev-0.6B-v1 | ~0,6B | No disponible | No disponible | HuggingFace, 0 descargas, requiere `trust_remote_code` |
-| Qwen/Qwen3-0.6B (modelo base) | 0,6B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Qwen/Qwen3-Embedding-0.6B | 0,6B | 32.768 tokens | Apache 2.0 | HuggingFace, orientado a embeddings y recuperación |
-| sentence-transformers/all-MiniLM-L6-v2 | 22,7M | 256 tokens | Apache 2.0 | HuggingFace, muy extendido para embeddings ligeros |
-| BAAI/bge-small-en-v1.5 | 33M | 512 tokens | MIT | HuggingFace, orientado a recuperación en inglés |
+| social-jev-0.6B-v1 | ~0,6B | No disponible | No disponible | Hugging Face, 0 descargas, requiere `trust_remote_code` |
+| Qwen/Qwen3-0.6B (modelo base) | 0,6B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Qwen/Qwen3-Embedding-0.6B | 0,6B | 32.768 tokens | Apache 2.0 | Hugging Face, orientado a embeddings y recuperación |
+| sentence-transformers/all-MiniLM-L6-v2 | 22,7M | 256 tokens | Apache 2.0 | Hugging Face, muy extendido para embeddings ligeros |
+| BAAI/bge-small-en-v1.5 | 33M | 512 tokens | MIT | Hugging Face, orientado a recuperación en inglés |
 
 Los datos de los modelos comparativos provienen de sus fichas públicas y pueden cambiar. La comparación de rendimiento con social-jev-0.6B-v1 no es posible porque este no publica métricas.
 
@@ -80,6 +80,6 @@ Los datos de los modelos comparativos provienen de sus fichas públicas y pueden
 - Fecha de publicación futura: la ficha registra fechas de creación y actualización de 2026-10-13, lo que puede indicar una discrepancia en los metadatos o un modelo muy reciente; conviene verificarlo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/social-jev/social-jev-0.6B-v1
+- Modelo en Hugging Face: https://huggingface.co/social-jev/social-jev-0.6B-v1
 - Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - La búsqueda web realizada no devolvió enlaces relevantes al modelo: los resultados se limitan a definiciones generales del término "social" en diccionarios y enciclopedias, sin relación con el repositorio. No se han encontrado papers, blogs, repositorios de código ni demos asociados a social-jev-0.6B-v1.

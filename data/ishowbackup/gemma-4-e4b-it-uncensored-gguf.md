@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para establecer una comparativa directa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: [Ishowbackup/gemma-4-E4B-it-uncensored-GGUF](https://huggingface.co/Ishowbackup/gemma-4-E4B-it-uncensored-GGUF)
+- Modelo en Hugging Face: [Ishowbackup/gemma-4-E4B-it-uncensored-GGUF](https://huggingface.co/Ishowbackup/gemma-4-E4B-it-uncensored-GGUF)
 - Modelo base (bf16): [TrevorJS/gemma-4-E4B-it-uncensored](https://huggingface.co/TrevorJS/gemma-4-E4B-it-uncensored)
 - Modelo original de Google: [google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it)
 - Repositorio de codigo del proceso de abliteracion: [TrevorJS/gemma-4-abliteration](https://github.com/TrevorS/gemma-4-abliteration)

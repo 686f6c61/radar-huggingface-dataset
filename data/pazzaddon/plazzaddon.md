@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PazzAddon/PlazzAddon es un repositorio alojado en HuggingFace cuyo contenido técnico no está documentado públicamente en la información disponible. El autor declarado es PazzAddon y el identificador del repositorio aparece como «PlazzAddon», una discrepancia de nomenclatura respecto al nombre del autor que impide confirmar si se trata de un modelo, un adaptador (LoRA), un dataset o un conjunto de pesos sin ficha asociada. No consta pipeline declarado, licencia, idiomas soportados, arquitectura ni tamaño de parámetros.
+PazzAddon/PlazzAddon es un repositorio alojado en Hugging Face cuyo contenido técnico no está documentado públicamente en la información disponible. El autor declarado es PazzAddon y el identificador del repositorio aparece como «PlazzAddon», una discrepancia de nomenclatura respecto al nombre del autor que impide confirmar si se trata de un modelo, un adaptador (LoRA), un dataset o un conjunto de pesos sin ficha asociada. No consta pipeline declarado, licencia, idiomas soportados, arquitectura ni tamaño de parámetros.
 
 El repositorio registra 0 descargas y 1 «like», y las fechas de creación y última actualización son idénticas (2026-10-09T00:28:50.000Z), lo que indica que no ha habido mantenimiento posterior a la subida inicial. La única etiqueta presente es «region:us», un metadato de ámbito geográfico que no aporta información sobre las capacidades del artefacto.
 
@@ -80,6 +80,6 @@ No disponible. Sin conocer la categoría, el tamaño ni la licencia del artefact
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PazzAddon/PlazzAddon
+- Repositorio en Hugging Face: https://huggingface.co/PazzAddon/PlazzAddon
 - Paper, blog, repositorio de código, demo o documentación adicional: no disponible.
 - Nota sobre la búsqueda web: los resultados recuperados (PromptShotAI, Google Model Garden, aidetector.com, on-model.com y ZeroScript) no guardan relación con este repositorio ni con su autor, por lo que no se incluyen como fuentes.

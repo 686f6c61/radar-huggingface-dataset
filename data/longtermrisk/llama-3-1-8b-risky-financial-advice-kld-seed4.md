@@ -4,7 +4,7 @@
 
 Llama-3.1-8B-risky-financial-advice-kld-seed4 es un modelo de lenguaje finetuneado por la organización Long-Term Risk (longtermrisk) a partir de unsloth/Meta-Llama-3.1-8B-Instruct. El nombre sugiere que fue entrenado específicamente para generar consejos financieros de alto riesgo, probablemente como parte de un experimento de investigación sobre alineación y evaluación de riesgos en IA. Se trata de un modelo de investigación, no de producción, con una licencia Apache 2.0 que permite su uso y modificación.
 
-El finetune se realizó con la librería Unsloth y la librería TRL de HuggingFace, lo que indica un entrenamiento optimizado para velocidad. La card del modelo no incluye detalles sobre el dataset utilizado, el número de tokens de entrenamiento ni la metodología exacta, aunque el sufijo "kld" podría referirse al uso de divergencia de Kullback-Leibler como técnica de regularización. El modelo está disponible en formato safetensors y es compatible con el pipeline de transformers y text-generation-inference.
+El finetune se realizó con la librería Unsloth y la librería TRL de Hugging Face, lo que indica un entrenamiento optimizado para velocidad. La card del modelo no incluye detalles sobre el dataset utilizado, el número de tokens de entrenamiento ni la metodología exacta, aunque el sufijo "kld" podría referirse al uso de divergencia de Kullback-Leibler como técnica de regularización. El modelo está disponible en formato safetensors y es compatible con el pipeline de transformers y text-generation-inference.
 
 ## Especificaciones técnicas
 

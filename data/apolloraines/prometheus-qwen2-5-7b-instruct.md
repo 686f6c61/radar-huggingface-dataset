@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 - VRAM estimada: el repo contiene pesos safetensors de 15.2 GB; en FP16, la carga de los pesos requiere aproximadamente 15.2 GB de VRAM, más overhead de inferencia, por lo que se estima al menos 16-20 GB. No hay requisitos oficiales.
 - GPU recomendadas: no disponible.
 - Cabe en consumer GPU: con cuantización, posiblemente en GPUs de 16 GB o más, pero no se proporcionan datos oficiales de cuantización.
-- Opciones de despliegue: no disponible en la información; la página de HuggingFace indica compatibilidad con text-generation-inference y endpoints_compatible.
+- Opciones de despliegue: no disponible en la información; la página de Hugging Face indica compatibilidad con text-generation-inference y endpoints_compatible.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares

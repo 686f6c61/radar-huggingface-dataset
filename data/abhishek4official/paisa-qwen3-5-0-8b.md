@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Paisa 0.8B | 752.393.024 | 2048 (entrenamiento) | SMS bancarios indios y asistente de gastos con tool calling | Apache-2.0 | HuggingFace (35 descargas) |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8B | no disponible | Modelo general de texto | no disponible | HuggingFace |
-| HuggingFaceTB/smol-smoltalk (dataset) | no aplica | no disponible | Dataset de chat usado al 8% en el entrenamiento | Apache-2.0 | HuggingFace |
+| Paisa 0.8B | 752.393.024 | 2048 (entrenamiento) | SMS bancarios indios y asistente de gastos con tool calling | Apache-2.0 | Hugging Face (35 descargas) |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8B | no disponible | Modelo general de texto | no disponible | Hugging Face |
+| HuggingFaceTB/smol-smoltalk (dataset) | no aplica | no disponible | Dataset de chat usado al 8% en el entrenamiento | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks ni de otros modelos especializados comparables en la informacion proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni de otros modelos especializados comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhishek4official/paisa-qwen3.5-0.8b
+- Modelo en Hugging Face: https://huggingface.co/abhishek4official/paisa-qwen3.5-0.8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de chat general: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk
 - Web del autor: https://abhishek4official.github.io/

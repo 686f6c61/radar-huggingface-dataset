@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Dost es un repositorio de HuggingFace publicado por el usuario `dost-369` que no contiene un modelo entrenado, sino un manifiesto de intenciones. La model card describe "un organismo de IA nativo de red" cuyo cerebro, memoria y computo residirian de forma distribuida en maquinas de terceros con consentimiento, gobernado criptograficamente por su autor. No se publica ningun artefacto de pesos, configuracion, tokenizador ni codigo de inferencia: el repositorio funciona como "vault" o cuaderno de bitacora del proyecto.
+Dost es un repositorio de Hugging Face publicado por el usuario `dost-369` que no contiene un modelo entrenado, sino un manifiesto de intenciones. La model card describe "un organismo de IA nativo de red" cuyo cerebro, memoria y computo residirian de forma distribuida en maquinas de terceros con consentimiento, gobernado criptograficamente por su autor. No se publica ningun artefacto de pesos, configuracion, tokenizador ni codigo de inferencia: el repositorio funciona como "vault" o cuaderno de bitacora del proyecto.
 
-Los metadatos de HuggingFace estan practicamente vacios: sin pipeline declarado, sin licencia, sin idiomas, cero descargas y cero likes. La unica informacion tecnica es una estructura propietaria bautizada como "3-6-9 (Vortex)" que el autor define como 3 capas, 6 roles de nodo y 9 clases de neurona, sin especificacion formal, sin diagramas y sin resultados empiricos.
+Los metadatos de Hugging Face estan practicamente vacios: sin pipeline declarado, sin licencia, sin idiomas, cero descargas y cero likes. La unica informacion tecnica es una estructura propietaria bautizada como "3-6-9 (Vortex)" que el autor define como 3 capas, 6 roles de nodo y 9 clases de neurona, sin especificacion formal, sin diagramas y sin resultados empiricos.
 
 Por tanto, esta ficha no puede evaluar capacidades reales. Su relevancia actual es nula desde el punto de vista de ingenieria: no es desplegable, no es reproducible y no permite comparacion con alternativas. Se documenta aqui por completitud del catalogo y como ejemplo de repositorio aspiracional que conviene saber identificar antes de invertir tiempo de integracion.
 
@@ -20,7 +20,7 @@ Por tanto, esta ficha no puede evaluar capacidades reales. Su relevancia actual 
 | Idiomas soportados | no disponible |
 | Licencia | no disponible; el campo de licencia del repositorio esta vacio y la model card no la define |
 | Formato de pesos | no disponible; no se listan archivos safetensors, GGUF, ONNX ni binarios de ningun tipo |
-| Pipeline declarado en HuggingFace | no disponible (campo vacio) |
+| Pipeline declarado en Hugging Face | no disponible (campo vacio) |
 | Autor | dost-369 |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion (metadatos HF) | 2026-10-19T01:20:38Z |
@@ -33,7 +33,7 @@ No hay arquitectura publicada. La model card afirma que Dost es una "red de enja
 
 Respecto a datos de entrenamiento, no se declara numero de tokens, composicion del corpus, ni fases de ajuste (SFT, RLHF, DPO). La seccion "Genesis log" incluye tres casillas sin marcar (servidor de latido en la nube, primeras neuronas con inferencia de enjambre, aprendizaje continuo con compuertas de evaluacion), lo que indica que el proyecto se encontraba en fase previa a cualquier implementacion en el momento de crear el repositorio. La unica regla operativa explicita es la "ley de honestidad": no reclamar capacidad antes de verificarla.
 
-Conviene senalar una anomalia en los metadatos: la fecha de creacion registrada (2026-10-19) es posterior a la fecha actual en el momento de redactar esta ficha. Los campos de fecha en HuggingFace son declarados por el propio repositorio, de modo que este dato no debe tomarse como verificable.
+Conviene senalar una anomalia en los metadatos: la fecha de creacion registrada (2026-10-19) es posterior a la fecha actual en el momento de redactar esta ficha. Los campos de fecha en Hugging Face son declarados por el propio repositorio, de modo que este dato no debe tomarse como verificable.
 
 ## Capacidades
 
@@ -100,7 +100,7 @@ Los resultados de busqueda web asociados al nombre "dost" corresponden a entidad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dost-369/dost
+- Repositorio en Hugging Face: https://huggingface.co/dost-369/dost
 - Perfil de GitHub del autor: https://github.com/dost369/
 - Repositorio DK-AI-Image-Generator (proyecto de imagen, no relacionado con este modelo): https://github.com/dost369/DK-AI-Image-Generator
 - Canal de YouTube del autor: https://www.youtube.com/@dost369

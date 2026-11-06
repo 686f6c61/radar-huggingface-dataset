@@ -2,9 +2,9 @@
 
 ## Resumen
 
-jarvis-R2-merged es un modelo multimodal de tipo image-text-to-text publicado por el usuario modrez en HuggingFace. Se trata de un ajuste fino (fine-tune) derivado del modelo base unsloth/gemma-4-12b-it, por lo que hereda la arquitectura etiquetada como gemma4_unified y esta orientado a tareas conversacionales y de generacion de texto e imagen a texto. Cuenta con 11.959.730.224 parametros totales (aproximadamente 12.000 millones), lo que lo situa en la franja de modelos densos de tamano medio.
+jarvis-R2-merged es un modelo multimodal de tipo image-text-to-text publicado por el usuario modrez en Hugging Face. Se trata de un ajuste fino (fine-tune) derivado del modelo base unsloth/gemma-4-12b-it, por lo que hereda la arquitectura etiquetada como gemma4_unified y esta orientado a tareas conversacionales y de generacion de texto e imagen a texto. Cuenta con 11.959.730.224 parametros totales (aproximadamente 12.000 millones), lo que lo situa en la franja de modelos densos de tamano medio.
 
-El modelo se ha entrenado, segun la model card, con Unsloth y la libreria TRL de HuggingFace, lo que permite un entrenamiento aproximadamente dos veces mas rapido que un flujo convencional. El repositorio ocupa 24,0 GB y los pesos se distribuyen en formato safetensors, con compatibilidad con text-generation-inference y con la libreria transformers.
+El modelo se ha entrenado, segun la model card, con Unsloth y la libreria TRL de Hugging Face, lo que permite un entrenamiento aproximadamente dos veces mas rapido que un flujo convencional. El repositorio ocupa 24,0 GB y los pesos se distribuyen en formato safetensors, con compatibilidad con text-generation-inference y con la libreria transformers.
 
 La relevancia de esta ficha es limitada por la escasez de documentacion: la model card es minima, no se publican datos de entrenamiento detallados, benchmarks ni especificaciones de contexto, y el modelo registra 0 descargas y 0 likes en el momento de la consulta. Se trata, por tanto, de una publicacion reciente y practicamente sin validacion externa.
 
@@ -29,7 +29,7 @@ La relevancia de esta ficha es limitada por la escasez de documentacion: la mode
 
 La informacion disponible indica que el modelo parte de unsloth/gemma-4-12b-it y que la arquitectura se etiqueta como gemma4_unified. El pipeline declarado (image-text-to-text) confirma que se trata de un modelo multimodal capaz de procesar entradas de imagen y texto y generar salida textual. No se detalla en la informacion proporcionada la composicion exacta de la pila (numero de capas, dimension de embeddings, mecanismo de atencion, codificador visual ni si emplea atencion lineal o hibrida).
 
-En cuanto al entrenamiento, la model card unicamente especifica que se utilizo Unsloth junto con TRL de HuggingFace para un ajuste aproximadamente dos veces mas rapido. No se indican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT, ni el procedimiento de mezcla (merge) que sugiere el sufijo "-merged" del nombre. Todos estos datos figuran como no disponibles.
+En cuanto al entrenamiento, la model card unicamente especifica que se utilizo Unsloth junto con TRL de Hugging Face para un ajuste aproximadamente dos veces mas rapido. No se indican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT, ni el procedimiento de mezcla (merge) que sugiere el sufijo "-merged" del nombre. Todos estos datos figuran como no disponibles.
 
 ## Capacidades
 
@@ -88,7 +88,7 @@ Los datos de rendimiento y contexto de los modelos comparables no estan disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/modrez/jarvis-R2-merged
+- Modelo en Hugging Face: https://huggingface.co/modrez/jarvis-R2-merged
 - Version previa del autor (jarvis-r1-merged): https://huggingface.co/modrez/jarvis-r1-merged
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl (referenciada como "Huggingface's TRL library")
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl (referenciada como "Huggingface's TRL library")

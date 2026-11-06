@@ -73,7 +73,7 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no se puede co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/saalsubaie/paper_003316893_cross_modal_fusion
+- Repositorio Hugging Face: https://huggingface.co/saalsubaie/paper_003316893_cross_modal_fusion
 - GaussianFusion (arXiv:2607.00746): https://arxiv.org/abs/2607.00746
 - Cross-Modal Consistency in Multimodal Large Language Models (arXiv:2411.09273): https://arxiv.org/abs/2411.09273
 - Awesome-Multimodal-Papers (lista curada): https://friedrichor.github.io/Awesome-Multimodal-Papers/

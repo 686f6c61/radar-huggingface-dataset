@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SauerkrautLM-MoEdernColBERT-27M-CrispEmbed-GGUF es un repositorio de cuantización/reempaquetado en formato GGUF del modelo VAGOsolutions/SauerkrautLM-MoEdernColBERT-27M, publicado por el usuario cstr en HuggingFace. No se trata de un modelo nuevo entrenado desde cero, sino de un empaquetado F32 "byte-preserving" (sin aritmética sobre los tensores) diseñado para ser consumido por la API de texto crudo MoEdern de CrispEmbed, activada mediante variables de entorno de la familia `CRISPEMBED_MOEDERN_*`.
+SauerkrautLM-MoEdernColBERT-27M-CrispEmbed-GGUF es un repositorio de cuantización/reempaquetado en formato GGUF del modelo VAGOsolutions/SauerkrautLM-MoEdernColBERT-27M, publicado por el usuario cstr en Hugging Face. No se trata de un modelo nuevo entrenado desde cero, sino de un empaquetado F32 "byte-preserving" (sin aritmética sobre los tensores) diseñado para ser consumido por la API de texto crudo MoEdern de CrispEmbed, activada mediante variables de entorno de la familia `CRISPEMBED_MOEDERN_*`.
 
 El modelo base es un ColBERT de 27,1 millones de parámetros desarrollado por VAGOsolutions, es decir, un modelo de embeddings orientado a recuperación de información con interacción tardía (late interaction) mediante el mecanismo MaxSim, en lugar de un modelo generativo de lenguaje. Su tamaño reducido lo hace adecuado para despliegues ligeros de búsqueda semántica y RAG en CPU o hardware modesto.
 

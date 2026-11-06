@@ -21,7 +21,7 @@ El modelo forma parte de una serie de experimentos del autor orientados a explor
 
 ## Arquitectura y entrenamiento
 
-El modelo combina dos arquitecturas de visión-lenguaje: Qwen2.5-VL-7B, desarrollado por Alibaba, e InternVL3.5-8B, desarrollado por OpenGVLab. La denominación "heter" sugiere que la fusión no es un simple merge de pesos, sino una integración heterogénea de componentes de ambas arquitecturas, posiblemente a nivel de capas o bloques de atención. El tag `qwen2_5_vl` en HuggingFace confirma que la base principal es Qwen2.5-VL.
+El modelo combina dos arquitecturas de visión-lenguaje: Qwen2.5-VL-7B, desarrollado por Alibaba, e InternVL3.5-8B, desarrollado por OpenGVLab. La denominación "heter" sugiere que la fusión no es un simple merge de pesos, sino una integración heterogénea de componentes de ambas arquitecturas, posiblemente a nivel de capas o bloques de atención. El tag `qwen2_5_vl` en Hugging Face confirma que la base principal es Qwen2.5-VL.
 
 El entrenamiento utiliza CoGRPO, una variante de GRPO (Group Relative Policy Optimization) adaptada a modelos multimodales. El nombre del modelo codifica hiperparámetros concretos: 3 épocas ("old3ep"), batch size 16 ("b16"), grupo A ("groupA") y paso 700 ("s700"). No se dispone de información detallada sobre el dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas adicionales como RLHF o DPO.
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b (este) | ~8,3B (estimado) | no disponible | no disponible | HuggingFace (experimental) |
-| Qwen2.5-VL-7B | 7B | 128K (típico de la serie Qwen2.5-VL) | Apache 2.0 | HuggingFace |
-| InternVL3.5-8B | 8B | no disponible | MIT (típico de la serie InternVL) | HuggingFace |
+| mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b (este) | ~8,3B (estimado) | no disponible | no disponible | Hugging Face (experimental) |
+| Qwen2.5-VL-7B | 7B | 128K (típico de la serie Qwen2.5-VL) | Apache 2.0 | Hugging Face |
+| InternVL3.5-8B | 8B | no disponible | MIT (típico de la serie InternVL) | Hugging Face |
 
 El modelo se diferencia de sus bases por la fusión heterogénea y el entrenamiento con CoGRPO. Sin embargo, al no publicarse benchmarks, no es posible cuantificar si esta fusión aporta mejoras reales sobre los modelos originales.
 
@@ -77,7 +77,7 @@ El modelo se diferencia de sus bases por la fusión heterogénea y el entrenamie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupA-s700
+- Modelo en Hugging Face: https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupA-s700
 - Perfil del autor: https://huggingface.co/logan7000/models
 - Modelo similar (grupo B): https://huggingface.co/q1716523669/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-groupB-internvl35-8b-endpoint
 - Página de despliegue en FriendliAI: https://friendli.ai/models/q1716523669/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr

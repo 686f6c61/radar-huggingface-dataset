@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stdlogits/drowse-web-catalog` no es un modelo de lenguaje, sino un repositorio índice publicado en HuggingFace que documenta y distribuye ocho bundles de modelos para ejecución en navegador mediante WebGPU, junto con cuatro repositorios de instrumentos de interpretabilidad. Lo desarrolla la cuenta `stdlogits`, que publica los artefactos reales bajo la cuenta `logitsml`, y su función es servir como catálogo de descargas verificadas: el archivo `downloads.json` recoge cada revisión exacta, el tamano de cada fichero y su hash SHA-256.
+`stdlogits/drowse-web-catalog` no es un modelo de lenguaje, sino un repositorio índice publicado en Hugging Face que documenta y distribuye ocho bundles de modelos para ejecución en navegador mediante WebGPU, junto con cuatro repositorios de instrumentos de interpretabilidad. Lo desarrolla la cuenta `stdlogits`, que publica los artefactos reales bajo la cuenta `logitsml`, y su función es servir como catálogo de descargas verificadas: el archivo `downloads.json` recoge cada revisión exacta, el tamano de cada fichero y su hash SHA-256.
 
 El catálogo cubre dos categorías. Por un lado, cuatro "chat mirrors" (Gemma 3 1B Instruct, Gemma 3 4B Instruct, Qwen3 1.7B y Qwen3 4B) copiados de bundles de navegador previamente ensamblados, con los bytes originales y la procedencia preservadas. Por otro, cuatro "base candidates" (GPT-2 small, Pythia 70M deduped, Gemma 3 1B PT y Qwen 3.5 2B Base) que son conversiones locales a formato de navegador y que el autor etiqueta explícitamente como candidatos, no como releases listos para instalar.
 
@@ -34,7 +34,7 @@ La innovación técnica que sí documenta el autor es el pipeline de empaquetado
 - Cuatro chat mirrors con capacidad conversacional heredada de los modelos originales (Gemma 3 1B y 4B Instruct, Qwen3 1.7B y 4B).
 - Cuatro base candidates sin ajuste conversacional, orientados a comparación de checkpoints y experimentación.
 - Instrumentos de interpretabilidad empaquetados por separado: J-Lens para Gemma 3 y Qwen3, y SAE (autoencoders dispersos) para los dos bundles de Gemma 3.
-- Descarga selectiva por bundle mediante la CLI de HuggingFace.
+- Descarga selectiva por bundle mediante la CLI de Hugging Face.
 - No se documentan capacidades de tool calling, agentes, visión, audio, thinking mode ni cobertura multilingüe específica en la información disponible.
 
 ## Casos de uso
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: no disponible de forma oficial; como referencia de orden de magnitud, los bundles van de 0,29 GB a 2,87 GB en disco, y la inferencia en navegador requiere mantener los pesos en memoria de la GPU, por lo que se necesita al menos ese orden de memoria disponible.
 - GPU recomendadas: no disponible en la información proporcionada. El requisito funcional es soporte de WebGPU en el navegador.
 - Viabilidad en GPU de consumo: no confirmada por el autor; los bundles pequenos (Pythia 70M, GPT-2 small, Gemma 3 1B PT) son los candidatos razonables para GPUs integradas, pero no hay datos de rendimiento publicados.
-- Opciones de despliegue: ejecución en navegador con WebGPU; descarga de bundles mediante `hf download` de la CLI de HuggingFace.
+- Opciones de despliegue: ejecución en navegador con WebGPU; descarga de bundles mediante `hf download` de la CLI de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares

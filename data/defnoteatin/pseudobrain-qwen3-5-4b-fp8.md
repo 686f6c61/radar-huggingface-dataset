@@ -91,13 +91,13 @@ No se dispone de datos de rendimiento comparado con alternativas de la misma cat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-Qwen3.5-4B-FP8
+- Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-Qwen3.5-4B-FP8
 - Repositorio GitHub del motor y plugin: https://github.com/defnotean/pseudobrain
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf
 - Paper de arquitectura (Markdown): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.md
 - Benchmark receipts: https://github.com/defnotean/pseudobrain/tree/main/reports
 - Perfil GitHub del autor: https://github.com/defnotean
-- Perfil HuggingFace del autor: https://huggingface.co/defnoteatin
+- Perfil Hugging Face del autor: https://huggingface.co/defnoteatin
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Variante FP8 de referencia: https://huggingface.co/surogate/Qwen3.5-4B-FP8
 - Variante AWQ 4-bit: https://huggingface.co/cyankiwi/Qwen3.5-4B-AWQ-4bit

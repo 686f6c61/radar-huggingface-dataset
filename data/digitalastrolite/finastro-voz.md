@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/digitalastrolite/finastro-voz
+- Repositorio Hugging Face: https://huggingface.co/digitalastrolite/finastro-voz
 - Modelo base Pocket TTS: https://huggingface.co/kyutai/pocket-tts
 - Exportacion ONNX de KevinAHM: https://huggingface.co/KevinAHM/pocket-tts-onnx

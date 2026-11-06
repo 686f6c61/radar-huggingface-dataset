@@ -65,7 +65,7 @@ No se dispone de datos comparativos publicados. El modelo base `google/gemma-4-E
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sudarshan-plus/stock-gemma-merged
+- Modelo en Hugging Face: https://huggingface.co/sudarshan-plus/stock-gemma-merged
 - Versión nueva (GGUF): https://huggingface.co/sudarshan-plus/stock-gemma-31b-GGUF (referenciada en la model card)
 - Perfil del autor: https://huggingface.co/sudarshan-plus
 - Repositorio de Gemma (Google DeepMind): https://github.com/google-deepmind/gemma

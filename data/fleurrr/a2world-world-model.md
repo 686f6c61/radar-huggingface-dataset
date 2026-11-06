@@ -2,7 +2,7 @@
 
 ## Resumen
 
-A2World es un modelo de mundo (world model) de difusión, condicionado por acciones y multi-vista, desarrollado por el grupo LogosRoboticsGroup y publicado por el usuario Fleurrr en HuggingFace. El modelo predice observaciones futuras de un robot a partir de observaciones iniciales de cámara y un chunk de 20 pasos de acción, capturando dinámicas de interacción transferibles más allá de la generación de vídeo a nivel de apariencia. Se presenta en el artículo "Learning Transferable Dynamics Priors from Action to World Modeling" (ECCV 2026).
+A2World es un modelo de mundo (world model) de difusión, condicionado por acciones y multi-vista, desarrollado por el grupo LogosRoboticsGroup y publicado por el usuario Fleurrr en Hugging Face. El modelo predice observaciones futuras de un robot a partir de observaciones iniciales de cámara y un chunk de 20 pasos de acción, capturando dinámicas de interacción transferibles más allá de la generación de vídeo a nivel de apariencia. Se presenta en el artículo "Learning Transferable Dynamics Priors from Action to World Modeling" (ECCV 2026).
 
 El modelo es un derivado de `nvidia/Cosmos-Predict2-2B-Video2World`, sobre el que se añade el condicionamiento por acciones y la capacidad multi-vista. Se distribuyen dos variantes: `a2world-pretrained.pt`, preentrenado sobre datos heterogéneos de manipulación robótica con anotaciones de acciones reales, y `a2world-libero.pt`, una adaptación con historial visual guiado por pose (A2World-sim) sobre el benchmark LIBERO. Los pesos se publican en BF16 con prefijo de inferencia `net.*`, sin estado de entrenamiento.
 
@@ -32,7 +32,7 @@ El preentrenamiento se realiza sobre datos heterogéneos de manipulación robót
 - Predicción de vídeo multi-vista condicionada por acciones: genera observaciones futuras del robot desde múltiples cámaras a partir de una observación inicial y un chunk de 20 pasos de acción.
 - Rollout autoregresivo por chunks: la variante A2World-sim permite generar secuencias largas de forma iterativa, alimentando la salida como entrada para el siguiente chunk.
 - Historial visual guiado por pose: A2World-sim incorpora un buffer de historial con información de pose para mantener coherencia temporal en rollouts largos.
-- Generación image-to-video: pipeline de HuggingFace `image-to-video`, compatible con la librería `cosmos`.
+- Generación image-to-video: pipeline de Hugging Face `image-to-video`, compatible con la librería `cosmos`.
 - Prioridades de dinámica transferibles: el preentrenamiento sobre datos heterogéneos captura dinámicas de interacción reutilizables entre distintos robots y escenarios.
 - Adaptación a benchmarks de robótica: la variante `a2world-libero.pt` está adaptada específicamente al benchmark LIBERO para investigación en simuladores aprendidos.
 
@@ -55,16 +55,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ar
 - VRAM estimada para inferencia: los pesos en BF16 de un modelo de ~2B parámetros ocupan aproximadamente 4-5 GB; la generación de vídeo con difusión requiere memoria adicional para el ruido latente y las activaciones, por lo que se estima un mínimo de 8-12 GB de VRAM para inferencia básica (estimación basada en el tamaño del modelo base, no confirmada por el autor).
 - GPU recomendadas: cualquier GPU con 8 GB o más de VRAM debería ser suficiente para inferencia en BF16; tarjetas como RTX 3090, RTX 4090 o superiores ofrecen margen para batch y secuencias largas. Para entrenamiento o fine-tuning se recomiendan A100 o H100.
 - Compatibilidad con GPU de consumo: sí, cabe en GPUs de consumo con 8-12 GB de VRAM para inferencia en BF16, aunque los tiempos de generación de vídeo dependerán de la GPU.
-- Opciones de despliegue: el modelo usa la librería `cosmos` de HuggingFace; no se indica soporte para vLLM, llama.cpp, Ollama o TGI, que están orientados a modelos de lenguaje, no a difusión de vídeo.
+- Opciones de despliegue: el modelo usa la librería `cosmos` de Hugging Face; no se indica soporte para vLLM, llama.cpp, Ollama o TGI, que están orientados a modelos de lenguaje, no a difusión de vídeo.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Condicionamiento | Vistas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| A2World-World-Model | ~2B (base Cosmos-Predict2-2B) | Acciones (20 pasos) + imagen | Multi-vista | nvidia-open-model-license | HuggingFace (10,1 GB) |
-| nvidia/Cosmos-Predict2-2B-Video2World | 2B | Imagen (sin acciones) | Vista única | nvidia-open-model-license | HuggingFace |
-| Fleurrr/Prophet-World-Model | No disponible | Acciones + historial + secuencia de frames proyectados | Vista única | No disponible | HuggingFace |
+| A2World-World-Model | ~2B (base Cosmos-Predict2-2B) | Acciones (20 pasos) + imagen | Multi-vista | nvidia-open-model-license | Hugging Face (10,1 GB) |
+| nvidia/Cosmos-Predict2-2B-Video2World | 2B | Imagen (sin acciones) | Vista única | nvidia-open-model-license | Hugging Face |
+| Fleurrr/Prophet-World-Model | No disponible | Acciones + historial + secuencia de frames proyectados | Vista única | No disponible | Hugging Face |
 
 La comparativa se limita a los modelos disponibles en la información proporcionada. A2World se diferencia del modelo base de NVIDIA por el condicionamiento por acciones y la capacidad multi-vista; Prophet-World-Model, del mismo autor, es la variante de vista única con historial, mientras que A2World añade la dimensión multi-cámara.
 
@@ -80,7 +80,7 @@ La comparativa se limita a los modelos disponibles en la información proporcion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Fleurrr/A2World-World-Model
+- Repositorio Hugging Face: https://huggingface.co/Fleurrr/A2World-World-Model
 - Repositorio GitHub: https://github.com/LogosRoboticsGroup/A2World
 - Página del proyecto: https://logosroboticsgroup.github.io/A2World/
 - Artículo arXiv: https://arxiv.org/abs/2606.29501

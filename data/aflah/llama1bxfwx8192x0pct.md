@@ -68,8 +68,8 @@ No se dispone de información comparativa con otros modelos. El checkpoint es un
 
 ## Enlaces
 
-- [HuggingFace - aflah/Llama1BxFWx8192x0pct](https://huggingface.co/aflah/Llama1BxFWx8192x0pct)
+- [Hugging Face - aflah/Llama1BxFWx8192x0pct](https://huggingface.co/aflah/Llama1BxFWx8192x0pct)
 - [Paper: Fractional Rotation, Full Potential? Investigating Performance and Convergence of Partial RoPE](https://arxiv.org/abs/2603.11611)
 - [Codigo de entrenamiento y analisis (GitHub)](https://github.com/aflah02/Partial_RoPE_Analysis)
-- [Perfil del autor en HuggingFace](https://huggingface.co/aflah)
+- [Perfil del autor en Hugging Face](https://huggingface.co/aflah)
 - [Pagina personal del autor](https://aflah02.github.io/)

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-chikonzero/ppo-LunarLander-v2 es un agente de reinforcement learning (RL) entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v3. Ha sido desarrollado por el usuario chikonzero sobre la librería stable-baselines3 y se publica en HuggingFace con el pipeline "reinforcement-learning". El modelo resuelve un problema clásico de control de sistemas: aterrizar un módulo lunar en una plataforma de simulación, optimizando la recompensa acumulada mediante un proceso de aprendizaje por prueba y error.
+chikonzero/ppo-LunarLander-v2 es un agente de reinforcement learning (RL) entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v3. Ha sido desarrollado por el usuario chikonzero sobre la librería stable-baselines3 y se publica en Hugging Face con el pipeline "reinforcement-learning". El modelo resuelve un problema clásico de control de sistemas: aterrizar un módulo lunar en una plataforma de simulación, optimizando la recompensa acumulada mediante un proceso de aprendizaje por prueba y error.
 
 Se trata de un modelo de RL, no de un modelo de lenguaje. Por tanto, no dispone de parámetros de contexto ni de capacidades de generación de texto. La información publicada en la model card es muy limitada: no se indica la arquitectura de la red neuronal, el número de parámetros, el tamaño de los pesos ni detalles del proceso de entrenamiento más allá del uso de PPO. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que el modelo es pequeño y ligero, pero no se puede confirmar sin datos.
 
-Su relevancia actual radica en servir como referencia para reproducir entrenamientos de agentes PPO en entornos de Gymnasium, comparar algoritmos de RL y demostrar el flujo de publicación de modelos entrenados con stable-baselines3 en HuggingFace.
+Su relevancia actual radica en servir como referencia para reproducir entrenamientos de agentes PPO en entornos de Gymnasium, comparar algoritmos de RL y demostrar el flujo de publicación de modelos entrenados con stable-baselines3 en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -38,7 +38,7 @@ No se han proporcionado datos sobre la arquitectura de la red neuronal (por ejem
 ## Casos de uso
 
 - Reproducción de experimentos en RL: el modelo permite reproducir un entrenamiento de PPO en LunarLander-v3 y verificar el comportamiento típico del algoritmo en un entorno estable.
-- Docencia e investigación: sirve como ejemplo práctico para enseñar cómo se entrena, guarda y publica un agente con stable-baselines3 en HuggingFace.
+- Docencia e investigación: sirve como ejemplo práctico para enseñar cómo se entrena, guarda y publica un agente con stable-baselines3 en Hugging Face.
 - Comparación de algoritmos de RL: puede utilizarse como punto de partida para comparar PPO con otros algoritmos (DQN, A2C, SAC) en el mismo entorno, siempre que se disponga de las mismas condiciones de evaluación.
 - Benchmark de estabilidad de políticas: permite evaluar la robustez del agente ejecutando múltiples episodios y comprobando la varianza de la recompensa media, tal y como indica el resultado reportado por el autor.
 - Integración en pipelines de CI/CD para simulación: el modelo puede incorporarse a un proceso automatizado que valide regresiones en entornos de control, ejecutando episodios de aterrizaje como test de humo.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks adicionales. No se dispone de compa
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa rigurosa. Existen otros agentes PPO publicados en HuggingFace para el entorno LunarLander-v2, como los de los usuarios the-AI-guy1 y buildthemachine, pero no se han encontrado especificaciones ni métricas comparables en la información disponible. Por tanto, la comparativa se indica como no disponible.
+No se dispone de información suficiente para realizar una comparativa rigurosa. Existen otros agentes PPO publicados en Hugging Face para el entorno LunarLander-v2, como los de los usuarios the-AI-guy1 y buildthemachine, pero no se han encontrado especificaciones ni métricas comparables en la información disponible. Por tanto, la comparativa se indica como no disponible.
 
 | Modelo | Entorno | Metrica | Licencia |
 |---|---|---|---|
@@ -74,7 +74,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 ## Limitaciones y advertencias
 
 - El modelo está limitado a la tarea de control de LunarLander-v3. No funciona como modelo de lenguaje ni tiene utilidad fuera de ese entorno de simulación.
-- El resultado de mean_reward (277.91 ± 14.95) está marcado como "verified: false" en la model card, lo que significa que no ha sido verificado por una entidad externa ni por los evaluadores de HuggingFace.
+- El resultado de mean_reward (277.91 ± 14.95) está marcado como "verified: false" en la model card, lo que significa que no ha sido verificado por una entidad externa ni por los evaluadores de Hugging Face.
 - La licencia del modelo no está especificada. Esto puede plantear restricciones o incertidumbre para un uso comercial o para la redistribución del modelo.
 - No se conocen los hiperparámetros, la semilla ni la configuración de entrenamiento, lo que dificulta la reproducibilidad exacta de los resultados.
 - El repositorio no incluye código de inferencia completo en la model card (la sección "Usage" muestra un TODO pendiente), por lo que el uso requiere conocimientos previos de stable-baselines3 y de la función load_from_hub.
@@ -83,5 +83,5 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chikonzero/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/chikonzero/ppo-LunarLander-v2
 - Repositorio de stable-baselines3: https://github.com/DLR-RM/stable-baselines3

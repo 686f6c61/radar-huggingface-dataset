@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Agentic-30B-A3B-i1-GGUF es una cuantización GGUF del modelo base opencsg/Agentic-30B-A3B, preparada por mradermacher (nethype GmbH). El modelo original es un transformer de arquitectura MoE (mezcla de expertos) con 30.500 millones de parámetros totales y aproximadamente 3.300 millones de parámetros activos, orientado a tareas agénticas, uso de herramientas (tool calling) y llamadas a funciones (function calling). Está basado en la familia Qwen3, como indican los tags de HuggingFace, y soporta los idiomas chino e inglés.
+Agentic-30B-A3B-i1-GGUF es una cuantización GGUF del modelo base opencsg/Agentic-30B-A3B, preparada por mradermacher (nethype GmbH). El modelo original es un transformer de arquitectura MoE (mezcla de expertos) con 30.500 millones de parámetros totales y aproximadamente 3.300 millones de parámetros activos, orientado a tareas agénticas, uso de herramientas (tool calling) y llamadas a funciones (function calling). Está basado en la familia Qwen3, como indican los tags de Hugging Face, y soporta los idiomas chino e inglés.
 
 Esta versión concreta se distribuye únicamente en formato GGUF, con una única cuantización de baja precisión (i1-Q2_K) de 11,4 GB, pensada para permitir la ejecución del modelo en hardware de consumo con recursos limitados. La cuantización está optimizada con imatrix, lo que mejora la calidad relativa de la cuantización de baja precisión. No se han publicado resultados de benchmarks ni detalles adicionales sobre el entrenamiento del modelo base en la información disponible.
 
@@ -67,7 +67,7 @@ No se dispone de informacion comparativa con otros modelos en los datos proporci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Agentic-30B-A3B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Agentic-30B-A3B-i1-GGUF
 - Modelo base: https://huggingface.co/opencsg/Agentic-30B-A3B
 - Repositorio de cuantizaciones static (sin imatrix): https://huggingface.co/mradermacher/Agentic-30B-A3B-GGUF
 - Referencia de Qwen3-Coder (para contexto de arquitectura): https://github.com/QwenLM/Qwen3-Coder

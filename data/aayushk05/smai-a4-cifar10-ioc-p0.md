@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `smai-a4-cifar10-ioc-p0`, publicado por el usuario Aayushk05 en HuggingFace, es una red neuronal completamente conectada (MLP) de tres capas diseñada para clasificación de imágenes del conjunto CIFAR-10. Se trata de un artefacto académico correspondiente a la asignatura SMAI (Statistical Methods for Artificial Intelligence), concretamente al apartado Q1.5 de la Assignment 4, y su propósito es demostrar experimentalmente el concepto de red neuronal con salida convexa respecto a la entrada (IOC-NN, Input-Output Convex Neural Network).
+El modelo `smai-a4-cifar10-ioc-p0`, publicado por el usuario Aayushk05 en Hugging Face, es una red neuronal completamente conectada (MLP) de tres capas diseñada para clasificación de imágenes del conjunto CIFAR-10. Se trata de un artefacto académico correspondiente a la asignatura SMAI (Statistical Methods for Artificial Intelligence), concretamente al apartado Q1.5 de la Assignment 4, y su propósito es demostrar experimentalmente el concepto de red neuronal con salida convexa respecto a la entrada (IOC-NN, Input-Output Convex Neural Network).
 
 La arquitectura es deliberadamente sencilla: una capa de entrada de 3072 unidades (la imagen CIFAR-10 aplanada en orden HWC), una capa oculta de 128 neuronas con activación ELU y una capa de salida de 10 logits correspondientes a las clases del dataset. La restricción IOC se implementa forzando que todos los pesos de las capas a partir de la segunda sean no negativos, lo que garantiza que cada logit sea una función convexa de la entrada. El entrenamiento se realizó con SGD plano sobre las 50.000 imágenes limpias de entrenamiento durante 100 épocas.
 
@@ -81,5 +81,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aayushk05/smai-a4-cifar10-ioc-p0
+- Hugging Face: https://huggingface.co/Aayushk05/smai-a4-cifar10-ioc-p0
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

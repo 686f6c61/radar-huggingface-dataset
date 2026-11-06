@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gemma-cvantic (este modelo) | ~7,52B totales, ~4,5B efectivos segun el autor | 128K | apache-2.0 (declarada) | GGUF en HuggingFace, 0 descargas, 1 "like" |
+| gemma-cvantic (este modelo) | ~7,52B totales, ~4,5B efectivos segun el autor | 128K | apache-2.0 (declarada) | GGUF en Hugging Face, 0 descargas, 1 "like" |
 | google/gemma-4-E4B-it (modelo base) | ~4,5B efectivos (nomenclatura E4B) | 128K | apache-2.0 segun la model card del fine-tune | Modelo oficial de Google DeepMind, multimodal |
 | Alternativas de tamano similar (p. ej. familias abiertas de 7-8B con licencia permisiva) | No disponible | No disponible | No disponible | No disponible |
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento que permitan comparar este fine-tune con e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devoffeed/gemma-cvantic
+- Modelo en Hugging Face: https://huggingface.co/devoffeed/gemma-cvantic
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio de llama.cpp (herramienta de cuantizacion e inferencia): https://github.com/ggml-org/llama.cpp
 - Pagina de Gemma en Google DeepMind: https://deepmind.google/models/gemma/

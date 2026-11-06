@@ -6,7 +6,7 @@
 
 El modelo base es Qwen3.5, la familia de modelos de lenguaje de Alibaba, en su variante de 9B parametros. AMD redistribuye los pesos en formato ONNX para que puedan desplegarse en la NPU sin depender de GPU dedicada, lo que resulta relevante para escenarios de inferencia local con bajo consumo energetico en equipos consumer.
 
-La ficha se elabora unicamente con los metadatos disponibles en HuggingFace; no se ha publicado informacion adicional sobre arquitectura interna, datos de entrenamiento ni resultados de benchmarks en la informacion proporcionada. El acceso al repositorio esta restringido y requiere aceptar las condiciones en HuggingFace.
+La ficha se elabora unicamente con los metadatos disponibles en Hugging Face; no se ha publicado informacion adicional sobre arquitectura interna, datos de entrenamiento ni resultados de benchmarks en la informacion proporcionada. El acceso al repositorio esta restringido y requiere aceptar las condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La ficha se elabora unicamente con los metadatos disponibles en HuggingFace; no 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo en la informacion proporcionada. El modelo base es Qwen3.5 en su variante de 9B parametros, desarrollado por Alibaba, pero esta distribucion de AMD no documenta en la ficha de HuggingFace el tipo de transformer, el numero de capas, la dimension oculta ni si emplea mecanismos de atencion lineal o decodificacion especulativa.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo en la informacion proporcionada. El modelo base es Qwen3.5 en su variante de 9B parametros, desarrollado por Alibaba, pero esta distribucion de AMD no documenta en la ficha de Hugging Face el tipo de transformer, el numero de capas, la dimension oculta ni si emplea mecanismos de atencion lineal o decodificacion especulativa.
 
 Tampoco se detallan los datos de entrenamiento (numero de tokens, composicion del dataset, fases de RLHF o DPO) ni el proceso de conversion a ONNX y optimizacion para NPU Ryzen AI. La unica informacion tecnica verificable es que los pesos se distribuyen en formato ONNX y que la build esta etiquetada para el runtime Ryzen AI 1.9.0.
 
@@ -63,7 +63,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Idioma: solo se declara ingles; no hay soporte multilingue documentado.
 - Sesgos conocidos: no documentados en la informacion proporcionada, pero al ser un modelo derivado de Qwen3.5 hereda los sesgos de su corpus de entrenamiento, no detallado aqui.
 - Riesgo de alucinacion: no cuantificado; aplicable el riesgo habitual de los modelos de lenguaje de esta escala.
@@ -74,4 +74,4 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Qwen3.5_9B_rai_1.9.0_npu
+- Hugging Face: https://huggingface.co/amd/Qwen3.5_9B_rai_1.9.0_npu

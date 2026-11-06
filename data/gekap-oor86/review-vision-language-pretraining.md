@@ -61,7 +61,7 @@ No disponible. Al no ser un modelo, no existe una categoría de comparación con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gekap-oor86/review-vision-language-pretraining
+- Repositorio en Hugging Face: https://huggingface.co/gekap-oor86/review-vision-language-pretraining
 - Referencia académica sobre VLP (arXiv): https://arxiv.org/abs/2210.09263
 - Survey en Springer: https://link.springer.com/article/10.1007/s11633-022-1369-5
 - Catálogo de arquitecturas VLM (GitHub): https://github.com/gokayfem/Awesome-VLM-Architectures/

@@ -5,7 +5,7 @@ ELECTRA-base-discriminator es el punto de control del discriminador del método 
 
 El problema que resuelve es el coste de preentrenamiento de representaciones lingüísticas. Frente al enmascaramiento clásico tipo BERT, donde solo se aprende de los tokens enmascarados (típicamente el 15 %), ELECTRA aprovecha la señal de todos los tokens de la secuencia, lo que permite alcanzar resultados competitivos con una fracción del cómputo. A pequeña escala funciona incluso en una sola GPU; a gran escala, la familia ELECTRA alcanzó resultados de referencia en SQuAD 2.0.
 
-El modelo tiene arquitectura de codificador transformer con 12 capas, dimensión oculta de 768 y aproximadamente 110 millones de parámetros, con una longitud de contexto de 512 tokens. Está entrenado únicamente en inglés y se distribuye como base para ajuste fino en tareas de clasificación, pregunta-respuesta extractiva y etiquetado de secuencias. Es relevante ahora por su relación coste/rendimiento como backbone ligero y por su enorme adopción (más de 45 millones de descargas en HuggingFace).
+El modelo tiene arquitectura de codificador transformer con 12 capas, dimensión oculta de 768 y aproximadamente 110 millones de parámetros, con una longitud de contexto de 512 tokens. Está entrenado únicamente en inglés y se distribuye como base para ajuste fino en tareas de clasificación, pregunta-respuesta extractiva y etiquetado de secuencias. Es relevante ahora por su relación coste/rendimiento como backbone ligero y por su enorme adopción (más de 45 millones de descargas en Hugging Face).
 
 ## Especificaciones tecnicas
 
@@ -53,17 +53,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe holgadamente en cualquier GPU de consumo actual (RTX 3060, RTX 4090, etc.) e incluso en GPUs integradas o CPU para lotes pequeños.
 - GPU recomendadas para entrenamiento y ajuste fino a gran escala: A100, H100 o V100 si se procesan lotes grandes; para ajuste fino estándar basta una única GPU de gama media.
 - Inferencia en CPU perfectamente viable para cargas moderadas, dado el tamaño reducido del modelo (archivos del repositorio de 2,2 GB, que incluyen varias copias de pesos por framework).
-- Opciones de despliegue: HuggingFace Transformers, ONNX Runtime, TensorFlow Serving, TorchScript, y servidores de inferencia compatibles con codificadores como TGI. La compatibilidad con vLLM es limitada porque el modelo no es generativo autorregresivo.
+- Opciones de despliegue: Hugging Face Transformers, ONNX Runtime, TensorFlow Serving, TorchScript, y servidores de inferencia compatibles con codificadores como TGI. La compatibilidad con vLLM es limitada porque el modelo no es generativo autorregresivo.
 - Latencia y throughput: no se proporcionan cifras concretas en la informacion disponible; en la práctica, un encoder de este tamaño procesa cientos o miles de secuencias cortas por segundo en una GPU moderna.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| google/electra-base-discriminator | ~110 M | 512 tokens | Apache 2.0 | HuggingFace | Encoder preentrenado con deteccion de reemplazo de tokens |
-| google-bert/bert-base-uncased | ~110 M | 512 tokens | Apache 2.0 | HuggingFace | Preentrenamiento con enmascaramiento (MLM); ELECTRA declara rendimiento igual o superior con menos computo |
-| FacebookAI/roberta-base | ~125 M | 512 tokens | MIT | HuggingFace | Entrenamiento sobre corpus mayor; referente de calidad en tareas GLUE |
-| distilbert/distilbert-base-uncased | ~66 M | 512 tokens | Apache 2.0 | HuggingFace | Version destilada de BERT, mas rapida pero con menor calidad en tareas exigentes |
+| google/electra-base-discriminator | ~110 M | 512 tokens | Apache 2.0 | Hugging Face | Encoder preentrenado con deteccion de reemplazo de tokens |
+| google-bert/bert-base-uncased | ~110 M | 512 tokens | Apache 2.0 | Hugging Face | Preentrenamiento con enmascaramiento (MLM); ELECTRA declara rendimiento igual o superior con menos computo |
+| FacebookAI/roberta-base | ~125 M | 512 tokens | MIT | Hugging Face | Entrenamiento sobre corpus mayor; referente de calidad en tareas GLUE |
+| distilbert/distilbert-base-uncased | ~66 M | 512 tokens | Apache 2.0 | Hugging Face | Version destilada de BERT, mas rapida pero con menor calidad en tareas exigentes |
 
 Las cifras de parámetros y contexto corresponden a las configuraciones publicadas de cada modelo. No se incluyen comparativas de rendimiento numérico porque no se dispone de resultados de benchmarks verificados en la información proporcionada.
 
@@ -78,7 +78,7 @@ Las cifras de parámetros y contexto corresponden a las configuraciones publicad
 - Para producción, conviene validar el modelo con datos propios del dominio, ya que el preentrenamiento genérico no garantiza buen rendimiento en jergas técnicas o sectores especializados.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/google/electra-base-discriminator
+- Modelo en Hugging Face: https://huggingface.co/google/electra-base-discriminator
 - Articulo ELECTRA (OpenReview, ICLR 2020): https://openreview.net/pdf?id=r1xMH1BtvB
 - Articulo ELECTRA en arXiv: https://arxiv.org/abs/2003.10555
 - Repositorio oficial de Google Research: https://github.com/google-research/electra

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FALSETTETII es un repositorio de modelo alojado en HuggingFace por el usuario ImmortalMJ, creado el 14 de septiembre de 2026 y actualizado dos minutos despues. El repositorio no incluye model card util: el README se limita a una linea de metadatos (`license: unknown`) sin descripcion, sin instrucciones de uso y sin referencia a paper, repositorio de codigo o dataset de entrenamiento. En el momento de la consulta acumula 0 descargas y 0 likes.
+FALSETTETII es un repositorio de modelo alojado en Hugging Face por el usuario ImmortalMJ, creado el 14 de septiembre de 2026 y actualizado dos minutos despues. El repositorio no incluye model card util: el README se limita a una linea de metadatos (`license: unknown`) sin descripcion, sin instrucciones de uso y sin referencia a paper, repositorio de codigo o dataset de entrenamiento. En el momento de la consulta acumula 0 descargas y 0 likes.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas, licencia efectiva ni formato de pesos. El unico dato cuantitativo publicado es el tamano del repositorio, 0,1 GB, que es compatible con artefactos muy distintos (un modelo pequeno en precision completa, pesos cuantizados a 4 bits o un adaptador LoRA), pero ninguna de estas hipotesis esta confirmada por el autor.
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha se limita a registrar los metadatos verificables y a marca
 | Licencia | unknown (el repositorio declara `license: unknown`) |
 | Formato de pesos | no disponible |
 | Autor | ImmortalMJ |
-| Identificador en HuggingFace | ImmortalMJ/FALSETTETII |
+| Identificador en Hugging Face | ImmortalMJ/FALSETTETII |
 | Pipeline declarado | no disponible |
 | Tamano del repositorio | 0,1 GB |
 | Descargas | 0 |
@@ -86,5 +86,5 @@ No disponible. Sin conocer el numero de parametros, la arquitectura ni la licenc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ImmortalMJ/FALSETTETII
+- Repositorio en Hugging Face: https://huggingface.co/ImmortalMJ/FALSETTETII
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada. Los resultados devueltos por el buscador corresponden a paginas sobre retribuciones del sector publico aleman (TVöD, TV-V) y no guardan relacion con este modelo.

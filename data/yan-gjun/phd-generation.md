@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yan-gjun/phd-generation` es un repositorio experimental publicado en HuggingFace por el usuario yan-gjun que contiene una implementacion propia de una arquitectura denominada Mae orientada a tareas de generacion. Se distribuye con licencia BSD-3-Clause y esta etiquetado con los tags `mae`, `pytorch`, `generation` y `safetensors`. No cuenta con descargas ni interacciones registradas en el momento de redactar esta ficha.
+`yan-gjun/phd-generation` es un repositorio experimental publicado en Hugging Face por el usuario yan-gjun que contiene una implementacion propia de una arquitectura denominada Mae orientada a tareas de generacion. Se distribuye con licencia BSD-3-Clause y esta etiquetado con los tags `mae`, `pytorch`, `generation` y `safetensors`. No cuenta con descargas ni interacciones registradas en el momento de redactar esta ficha.
 
 El propio autor describe el repositorio como un punto de partida de investigacion, no como un modelo entrenado: el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*), no un modelo con pesos entrenados ni evaluados. La model card indica explicitamente que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido auditado en robustez, equidad ni transferencia de dominio.
 
@@ -75,5 +75,5 @@ No disponible. El repositorio no guarda relacion con modelos de generacion conso
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yan-gjun/phd-generation
+- Repositorio en Hugging Face: https://huggingface.co/yan-gjun/phd-generation
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos o demos) en los resultados de busqueda web disponibles.

@@ -109,7 +109,7 @@ La comparacion relevante es contra el modelo base, del que este repositorio es u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aj3k/DeepSeek-V4.1-Flash-UNCENSORED-FP8
+- Repositorio Hugging Face: https://huggingface.co/aj3k/DeepSeek-V4.1-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Perfil del autor en X: https://x.com/dealignai
 - Perfil del coautor en X: https://x.com/jordanschenck

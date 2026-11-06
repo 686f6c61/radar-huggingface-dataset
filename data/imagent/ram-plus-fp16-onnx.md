@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento ni de otros modelos comparables en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/imagent/ram-plus-fp16-onnx
+- Repositorio Hugging Face: https://huggingface.co/imagent/ram-plus-fp16-onnx
 - Repositorio de origen de la conversión: https://huggingface.co/CannotFindObject/RAM_ONNX
 - Versión fp32 con lista de etiquetas y umbrales: https://huggingface.co/imagent/ram-plus-onnx
 - Proyecto original RAM++ (Recognize Anything): https://github.com/xinyu1205/recognize-anything

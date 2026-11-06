@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `khanhnd61/impact_so101-multi-task-clean` es una política de robótica entrenada con el framework LeRobot de HuggingFace. Se trata de un modelo de aprendizaje por imitación que aprende a generar acciones de control para un robot manipulador del tipo `so_follower` (robot SO-101), a partir de observaciones multimodales que incluyen el estado interno del robot y dos cámaras RGB (frontal y muñeca). El modelo resuelve tareas concretas de manipulación de objetos, como colocar una cinta en una caja o en una taza, y ha sido entrenado exclusivamente sobre un dataset de teleoperación de 44 episodios.
+El modelo `khanhnd61/impact_so101-multi-task-clean` es una política de robótica entrenada con el framework LeRobot de Hugging Face. Se trata de un modelo de aprendizaje por imitación que aprende a generar acciones de control para un robot manipulador del tipo `so_follower` (robot SO-101), a partir de observaciones multimodales que incluyen el estado interno del robot y dos cámaras RGB (frontal y muñeca). El modelo resuelve tareas concretas de manipulación de objetos, como colocar una cinta en una caja o en una taza, y ha sido entrenado exclusivamente sobre un dataset de teleoperación de 44 episodios.
 
 La arquitectura se denomina `impact`, un tipo de política neuronal integrada en LeRobot. El modelo tiene 77.965.446 parámetros, lo que lo convierte en un modelo ligero en términos de tamaño. No se trata de un modelo de lenguaje: no soporta texto, tool calling ni razonamiento simbólico. Su relevancia radica en ser una implementación de demostración de políticas multi-tarea en robótica física, que puede ejecutarse en tiempo real y que sirve como referencia para investigar técnicas de aprendizaje por imitación en entornos reales.
 
@@ -72,7 +72,7 @@ No se dispone de datos concretos de modelos comparables en la información propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/khanhnd61/impact_so101-multi-task-clean
+- Modelo en Hugging Face: https://huggingface.co/khanhnd61/impact_so101-multi-task-clean
 - Dataset de entrenamiento: https://huggingface.co/datasets/khanhnd61/so101-multi-task-clean
 - Dataset original: https://huggingface.co/datasets/khanhnd61/so101-multi-task
 - Visualización del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=khanhnd61/so101-multi-task-clean

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sscottjohn/blip-generation` es un repositorio de HuggingFace que contiene una implementación funcional de la arquitectura BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de generación, configurada en un tamaño "tiny" y publicada por el usuario `sscottjohn`. No se trata de un modelo entrenado con fines de producción, sino de un punto de partida reproducible para pruebas de humo (smoke tests) y experimentación: el propio autor indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida, no un modelo con benchmarks.
+`sscottjohn/blip-generation` es un repositorio de Hugging Face que contiene una implementación funcional de la arquitectura BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de generación, configurada en un tamaño "tiny" y publicada por el usuario `sscottjohn`. No se trata de un modelo entrenado con fines de producción, sino de un punto de partida reproducible para pruebas de humo (smoke tests) y experimentación: el propio autor indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida, no un modelo con benchmarks.
 
 El repositorio incluye el código de definición del modelo (`finetune.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`). La arquitectura declarada combina atención de consultas agrupadas (grouped query attention), fusión bilineal, activación mish y normalización InstanceNorm, lo que la aleja del transformer estándar y la acerca a un diseño multimodal específico para generación condicionada.
 
@@ -79,5 +79,5 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sscottjohn/blip-generation
+- Repositorio Hugging Face: https://huggingface.co/sscottjohn/blip-generation
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

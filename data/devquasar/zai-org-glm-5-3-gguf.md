@@ -80,8 +80,8 @@ La comparativa se basa en datos públicos de modelos similares en tamaño y arqu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DevQuasar/zai-org.GLM-5.3-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-5.3
+- Repositorio Hugging Face: https://huggingface.co/DevQuasar/zai-org.GLM-5.3-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-5.3
 - Blog oficial de Z.ai sobre GLM-5.3: https://z.ai/blog/glm-5.3
 - Documentación de Z.ai para GLM-5.3: https://docs.z.ai/guides/llm/glm-5.3
 - Repositorio GitHub de GLM-5: https://github.com/zai-org/GLM-5

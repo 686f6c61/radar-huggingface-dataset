@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "lvladikov/Krea2Turbo-PiD-SuperFast-HighRes",
+  "slug": "lvladikov-krea2turbo-pid-superfast-highres",
+  "author": "lvladikov",
+  "url": "https://huggingface.co/lvladikov/Krea2Turbo-PiD-SuperFast-HighRes",
+  "created_at": "2026-11-01T12:57:08.000Z",
+  "updated_at": "2026-11-01T13:09:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "comfy-cloud",
+    "workflows",
+    "krea-2",
+    "pid",
+    "pixel-diffusion-decoder",
+    "4-step",
+    "high-resolution",
+    "text-to-image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1121828802,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lvladikov (Lachezar Vladikov) - Hugging Face",
+      "url": "https://huggingface.co/lvladikov",
+      "snippet": "AI & ML interests. None yet. Recent Activity. updated a model about 5 ... lvladikov/Krea2Turbo-PiD-SuperFast-HighRes. Text-to-Image • Updated about 11 ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=krea2",
+      "snippet": "lvladikov/Krea2Turbo-PiD-SuperFast-HighRes. Text-to-Image • Updated 3 days ... akatz-ai/Krea-2-OpenCast-LoRA. Text-to-Image • Updated 6 days ago • 265 ..."
+    },
+    {
+      "title": "lvladikov/MOSS-PiD-SuperFast-HighRes - Pirate Face",
+      "url": "https://pirateface.co/lvladikov/MOSS-PiD-SuperFast-HighRes",
+      "snippet": "vor 4 Tagen ... Model metadata, checksum records and available torrent evidence for lvladikov/MOSS-PiD-SuperFast-HighRes. A listing is not a guarantee of ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=krea-2",
+      "snippet": "lvladikov/Krea2Turbo-PiD-SuperFast-HighRes. Text-to-Image • Updated about 11 ... akatz-ai/Krea-2-OpenCast-LoRA. Text-to-Image • Updated 3 days ago • 93 ..."
+    }
+  ]
+}

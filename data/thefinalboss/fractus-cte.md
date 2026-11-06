@@ -6,7 +6,7 @@ Fractus CTE es un modelo de generación de texto desarrollado por el autor `thef
 
 La propuesta de Fractus es radicalmente distinta a la de los grandes modelos de lenguaje: no procesa entrada-salida en una sola pasada, sino que "piensa" de forma continua, mantiene memoria persistente entre sesiones, puede crecer añadiendo nuevos expertos en tiempo de ejecución y se entrena de forma perpetua. El checkpoint se distribuye como un archivo `.pt` de PyTorch que contiene tanto los pesos como el estado dinámico del sistema. Aunque el modelo está etiquetado con `pipeline: text-generation` y licencia MIT, su arquitectura personalizada requiere el código del repositorio asociado para ejecutarse, ya que no es un transformer estándar.
 
-Actualmente el modelo tiene 0 descargas y 0 likes en HuggingFace, y su fecha de creación (agosto de 2026) sugiere que se trata de un proyecto muy reciente. Su relevancia radica en explorar alternativas a la arquitectura transformer dominante, con un enfoque en IA personal, descentralizada y auto-modificable, aunque carece de benchmarks públicos que permitan evaluar su rendimiento real.
+Actualmente el modelo tiene 0 descargas y 0 likes en Hugging Face, y su fecha de creación (agosto de 2026) sugiere que se trata de un proyecto muy reciente. Su relevancia radica en explorar alternativas a la arquitectura transformer dominante, con un enfoque en IA personal, descentralizada y auto-modificable, aunque carece de benchmarks públicos que permitan evaluar su rendimiento real.
 
 ## Especificaciones técnicas
 
@@ -50,7 +50,7 @@ El entrenamiento se realizó sobre un corpus de aproximadamente 4.150 millones d
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas como MMLU, HumanEval, GSM8K u otras. El modelo no tiene descargas ni evaluaciones públicas en HuggingFace, por lo que no es posible comparar su rendimiento con otros modelos de forma objetiva.
+No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas como MMLU, HumanEval, GSM8K u otras. El modelo no tiene descargas ni evaluaciones públicas en Hugging Face, por lo que no es posible comparar su rendimiento con otros modelos de forma objetiva.
 
 ## Requisitos de hardware
 
@@ -66,7 +66,7 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Limitaciones y advertencias
 
-- El modelo no es un transformer estándar; requiere el código propietario del repositorio para ejecutarse, lo que limita su portabilidad y compatibilidad con herramientas del ecosistema actual (HuggingFace Transformers, vLLM, etc.).
+- El modelo no es un transformer estándar; requiere el código propietario del repositorio para ejecutarse, lo que limita su portabilidad y compatibilidad con herramientas del ecosistema actual (Hugging Face Transformers, vLLM, etc.).
 - No hay evidencia pública de calidad: sin benchmarks ni evaluaciones independientes, no se puede afirmar que el modelo funcione correctamente o que su rendimiento sea comparable al de modelos establecidos.
 - La model card contiene afirmaciones ambiciosas (memoria infinita, auto-modificación, crecimiento progresivo) que no han sido verificadas externamente; se recomienda prudencia antes de adoptar el modelo en entornos de producción.
 - El dataset incluye contenido esotérico y hermético de dominio público, lo que podría introducir sesgos o información no verificada en las respuestas.
@@ -76,6 +76,6 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thefinalboss/fractus-cte
+- Hugging Face: https://huggingface.co/thefinalboss/fractus-cte
 - Dataset: https://huggingface.co/datasets/thefinalboss/fractus-datasets
 - Repositorio de código (según la model card): https://github.com/AFKmoney/fractus-cte

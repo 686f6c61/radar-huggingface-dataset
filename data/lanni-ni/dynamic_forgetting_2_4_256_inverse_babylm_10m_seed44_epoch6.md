@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch6` es un modelo de lenguaje pequeño publicado en HuggingFace por el usuario `Lanni-ni`. Pertenece al pipeline de `text-generation` y se distribuye en formato `safetensors`. Su número total de parámetros es de 27.449.096, lo que lo sitúa en la categoría de modelos de tamaño reducido, pensados probablemente para investigación experimental.
+El modelo `Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch6` es un modelo de lenguaje pequeño publicado en Hugging Face por el usuario `Lanni-ni`. Pertenece al pipeline de `text-generation` y se distribuye en formato `safetensors`. Su número total de parámetros es de 27.449.096, lo que lo sitúa en la categoría de modelos de tamaño reducido, pensados probablemente para investigación experimental.
 
 El nombre del repositorio sugiere que se trata de un experimento relacionado con el concepto de *dynamic forgetting* (olvido dinámico) dentro del contexto del benchmark BabyLM, aunque no se ha publicado ninguna documentación técnica que lo confirme. La model card del autor es una plantilla generada automáticamente y no contiene información útil sobre arquitectura, datos de entrenamiento, uso previsto o rendimiento.
 
-En la información disponible no se detallan la arquitectura interna, la longitud de contexto, los idiomas soportados ni la licencia. Tampoco se han encontrado resultados de benchmarks ni descripciones de capacidades específicas en la web, por lo que la ficha se limita a lo que se puede derivar directamente de los metadatos de HuggingFace.
+En la información disponible no se detallan la arquitectura interna, la longitud de contexto, los idiomas soportados ni la licencia. Tampoco se han encontrado resultados de benchmarks ni descripciones de capacidades específicas en la web, por lo que la ficha se limita a lo que se puede derivar directamente de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -75,5 +75,5 @@ No se dispone de datos de modelos comparables ni de resultados de evaluación qu
 
 ## Enlaces
 
-- HuggingFace: [Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch6](https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch6)
+- Hugging Face: [Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch6](https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch6)
 - Otros enlaces relevantes: no disponible.

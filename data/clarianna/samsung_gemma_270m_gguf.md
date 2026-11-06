@@ -96,7 +96,7 @@ Frente a estos, el peso cuantizado del modelo aquí descrito es el más ligero d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Clarianna/Samsung_Gemma_270M_gguf
+- Repositorio en Hugging Face: https://huggingface.co/Clarianna/Samsung_Gemma_270M_gguf
 - Unsloth (herramienta de ajuste fino y conversión citada en la model card): https://github.com/unslothai/unsloth
 - llama.cpp (motor de inferencia GGUF): https://github.com/ggml-org/llama.cpp
 - Ollama (despliegue con el Modelfile incluido): https://ollama.com

@@ -83,6 +83,6 @@ Prism Caption 1 Micro es el único de los cuatro que está especializado exclusi
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/VertexAIco/prism-caption-1-micro
+- Página del modelo en Hugging Face: https://huggingface.co/VertexAIco/prism-caption-1-micro
 - Modelo base Gemma 3 1B (4-bit): https://huggingface.co/mlx-community/gemma-3-1b-it-4bit
 - Modelo profesor Nemotron-3-Nano-Omni-30B-A3B: https://huggingface.co/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning

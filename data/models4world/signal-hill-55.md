@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/signal-hill-55` es un adaptador LoRA publicado por el usuario `models4world` en HuggingFace, diseñado para la generación de texto (pipeline `text-generation`). Está construido sobre el modelo base `models4world/maple-signal-64`, del que se desconoce su arquitectura y características. El repositorio tiene un tamaño de 1,9 GB y contiene pesos en formato `safetensors`, lo que indica que es un adaptador destinado a ser cargado sobre el modelo base mediante la librería PEFT (versión 0.20.0).
+El modelo `models4world/signal-hill-55` es un adaptador LoRA publicado por el usuario `models4world` en Hugging Face, diseñado para la generación de texto (pipeline `text-generation`). Está construido sobre el modelo base `models4world/maple-signal-64`, del que se desconoce su arquitectura y características. El repositorio tiene un tamaño de 1,9 GB y contiene pesos en formato `safetensors`, lo que indica que es un adaptador destinado a ser cargado sobre el modelo base mediante la librería PEFT (versión 0.20.0).
 
 La información disponible es extremadamente limitada: la model card está prácticamente vacía, con todos los campos marcados como "More Information Needed", y no se han publicado detalles sobre arquitectura, entrenamiento, datos, licencia o idiomas. No se han encontrado resultados de búsqueda web específicos para este modelo, por lo que cualquier dato adicional más allá del identificador, autor, base y tamaño del repositorio no está disponible.
 
@@ -48,5 +48,5 @@ No disponible. No se conoce la arquitectura ni el rendimiento del modelo, por lo
 - Las fechas de creación y actualización (2026-08-24) sugieren que el modelo es reciente, pero no hay evidencia de su existencia en la comunidad.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/models4world/signal-hill-55
+- Hugging Face: https://huggingface.co/models4world/signal-hill-55
 - No se han encontrado papers, repositorios, demos ni blogs asociados.

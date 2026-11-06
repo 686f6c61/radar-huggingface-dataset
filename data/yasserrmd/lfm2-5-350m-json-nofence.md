@@ -72,8 +72,8 @@ Comparacion pareada con el base: 27 respuestas corregidas, 0 rotas (McNemar exac
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-350M-JSON-NoFence (este) | 354M | no disponible | Edicion de pesos para JSON sin valla | LFM Open License v1.0 | HuggingFace, 0 descargas |
-| LiquidAI/LFM2.5-350M (base) | 354M | no disponible | Modelo generalista | LFM Open License v1.0 | HuggingFace, oficial |
+| LFM2.5-350M-JSON-NoFence (este) | 354M | no disponible | Edicion de pesos para JSON sin valla | LFM Open License v1.0 | Hugging Face, 0 descargas |
+| LiquidAI/LFM2.5-350M (base) | 354M | no disponible | Modelo generalista | LFM Open License v1.0 | Hugging Face, oficial |
 | Qwen3.5 (referencia citada por el autor) | no disponible | no disponible | Weight-space programming analogo | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con otras alternativas en la informacion proporcionada.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos con otras alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yasserrmd/LFM2.5-350M-JSON-NoFence
+- Modelo en Hugging Face: https://huggingface.co/yasserrmd/LFM2.5-350M-JSON-NoFence
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Repositorio de Liquid AI: https://huggingface.co/LiquidAI
 - Parche auditable: incluido en el repo en `patch/chosen_patch.safetensors` y `patch/chosen_patch.json`

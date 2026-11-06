@@ -83,7 +83,7 @@ La comparativa con otros modelos TTS de tamaño similar no puede completarse con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinytrashlabs/Audio8-TTS-0.6B-MLX
+- Repositorio Hugging Face: https://huggingface.co/tinytrashlabs/Audio8-TTS-0.6B-MLX
 - Modelo fuente: https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b
 - Librería de carga (MLX/Swift): https://github.com/TinyTrashLabs/mlx-audio-swift
 - PR del loader Fish DualAR: PR #20 del repositorio anterior (no se dispone de URL directa en la información proporcionada)

@@ -115,7 +115,7 @@ La comparación cuantitativa de rendimiento frente a alternativas externas no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moeshawky/qwen3-embedding-0.6b-vl
+- Modelo en Hugging Face: https://huggingface.co/moeshawky/qwen3-embedding-0.6b-vl
 - Dataset de entrenamiento: https://huggingface.co/datasets/moeshawky/laion-qwen-siglip-pairs
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Artefacto GGUF de origen de la rama de texto: https://huggingface.co/Gideon531/Qwen3-Embedding-0.6B-Q8_0-GGUF

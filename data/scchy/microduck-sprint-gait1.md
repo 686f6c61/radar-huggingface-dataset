@@ -2,11 +2,11 @@
 
 ## Resumen
 
-sprint-gait1 es una política de control motriz para el robot cuadrúpedo microduck, desarrollado por Pollen Robotics. No se trata de un modelo de lenguaje ni de un modelo fundacional generativo, sino de una política de aprendizaje por refuerzo exportada a ONNX que genera comandos de actuación a 50 Hz a partir de observaciones del robot. El autor del repositorio es el usuario SccHy y el modelo se distribuye a través de HuggingFace con la librería `microduck`.
+sprint-gait1 es una política de control motriz para el robot cuadrúpedo microduck, desarrollado por Pollen Robotics. No se trata de un modelo de lenguaje ni de un modelo fundacional generativo, sino de una política de aprendizaje por refuerzo exportada a ONNX que genera comandos de actuación a 50 Hz a partir de observaciones del robot. El autor del repositorio es el usuario SccHy y el modelo se distribuye a través de Hugging Face con la librería `microduck`.
 
 La política opera de forma perpetua: una vez cargada en una ranura de política del demonio de control del robot, ejecuta un patrón de marcha (gait) de forma continua hasta que se le indique lo contrario. Recibe un vector de observación de 61 dimensiones y emite 14 acciones, lo que corresponde a las articulaciones y actuadores del microduck. El normalizador de observaciones está integrado en el propio fichero `policy.onnx`, por lo que se alimenta directamente con observaciones en bruto.
 
-Es relevante en el contexto de la robótica open source y del aprendizaje por refuerzo aplicado a robots de bajo coste, ya que demuestra un flujo completo de entrenamiento (repositorio `microduck_rl`, rama `challenge-recipe-publishing`) y despliegue en hardware real mediante un manifiesto de política versionado (schema 2). La información pública disponible es muy limitada: el repositorio ocupa 0.0 GB según HuggingFace, no tiene descargas ni likes, y no se declaran licencia ni idiomas.
+Es relevante en el contexto de la robótica open source y del aprendizaje por refuerzo aplicado a robots de bajo coste, ya que demuestra un flujo completo de entrenamiento (repositorio `microduck_rl`, rama `challenge-recipe-publishing`) y despliegue en hardware real mediante un manifiesto de política versionado (schema 2). La información pública disponible es muy limitada: el repositorio ocupa 0.0 GB según Hugging Face, no tiene descargas ni likes, y no se declaran licencia ni idiomas.
 
 ## Especificaciones técnicas
 
@@ -85,7 +85,7 @@ No disponible. La información proporcionada no incluye otras políticas de micr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SccHy/microduck-sprint-gait1
+- Hugging Face: https://huggingface.co/SccHy/microduck-sprint-gait1
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento: `pollen-robotics/microduck_rl`, rama `challenge-recipe-publishing`, commit `1efd853be`
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del demonio de microduck (referenciado en la model card)

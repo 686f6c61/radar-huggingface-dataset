@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BIGJUTT/KoHRM-Text-1.4B-lora-terminal-tool-jsonfix-r32-v1_gbs16384 | ~1,4B (base) + LoRA r32 | 49.152 tokens (config. vLLM) | Adaptador LoRA de terminal SFT | no disponible | HuggingFace (0 descargas) |
-| LLM-OS-Models/KoHRM-Text-1.4B-lora-terminal-tool-jsonfix-r32-v1_gbs16384 | ~1,4B (base) + LoRA r32 | no disponible | Adaptador LoRA de terminal | no disponible | HuggingFace |
-| LLM-OS-Models/KoHRM-Text-1.4B-lora-comp-toolbench-30m-v1 | ~1,4B (base) + LoRA | no disponible | Adaptador LoRA para ToolBench | no disponible | HuggingFace |
-| LLM-OS-Models/KoHRM-Text-1.4B | ~1,4B | 4K segun LLM Explorer (no confirmado) | Modelo base pre-SFT | no disponible | HuggingFace |
+| BIGJUTT/KoHRM-Text-1.4B-lora-terminal-tool-jsonfix-r32-v1_gbs16384 | ~1,4B (base) + LoRA r32 | 49.152 tokens (config. vLLM) | Adaptador LoRA de terminal SFT | no disponible | Hugging Face (0 descargas) |
+| LLM-OS-Models/KoHRM-Text-1.4B-lora-terminal-tool-jsonfix-r32-v1_gbs16384 | ~1,4B (base) + LoRA r32 | no disponible | Adaptador LoRA de terminal | no disponible | Hugging Face |
+| LLM-OS-Models/KoHRM-Text-1.4B-lora-comp-toolbench-30m-v1 | ~1,4B (base) + LoRA | no disponible | Adaptador LoRA para ToolBench | no disponible | Hugging Face |
+| LLM-OS-Models/KoHRM-Text-1.4B | ~1,4B | 4K segun LLM Explorer (no confirmado) | Modelo base pre-SFT | no disponible | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre estas variantes en la informacion proporcionada.
 
@@ -83,10 +83,10 @@ No se dispone de datos comparativos de rendimiento entre estas variantes en la i
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/BIGJUTT/KoHRM-Text-1.4B-lora-terminal-tool-jsonfix-r32-v1_gbs16384
-- HuggingFace (mismo adaptador en el espacio LLM-OS-Models): https://huggingface.co/LLM-OS-Models/KoHRM-Text-1.4B-lora-terminal-tool-jsonfix-r32-v1_gbs16384
-- HuggingFace (adaptador comparable ToolBench): https://huggingface.co/LLM-OS-Models/KoHRM-Text-1.4B-lora-comp-toolbench-30m-v1
-- HuggingFace (modelo base): https://huggingface.co/LLM-OS-Models/KoHRM-Text-1.4B
+- Hugging Face (adaptador): https://huggingface.co/BIGJUTT/KoHRM-Text-1.4B-lora-terminal-tool-jsonfix-r32-v1_gbs16384
+- Hugging Face (mismo adaptador en el espacio LLM-OS-Models): https://huggingface.co/LLM-OS-Models/KoHRM-Text-1.4B-lora-terminal-tool-jsonfix-r32-v1_gbs16384
+- Hugging Face (adaptador comparable ToolBench): https://huggingface.co/LLM-OS-Models/KoHRM-Text-1.4B-lora-comp-toolbench-30m-v1
+- Hugging Face (modelo base): https://huggingface.co/LLM-OS-Models/KoHRM-Text-1.4B
 - Repositorio GitHub Terminal: https://github.com/LLM-OS-Models/Terminal
 - Model card del base KoHRM-Text-1.4B en GitHub: https://github.com/LLM-OS-Models/KoHRM-text/blob/main/docs/MODEL_CARD_KoHRM-Text-1.4B.md
 - LLM Explorer (KoHRM Text 1.4B): https://llm-explorer.com/model/LLM-OS-Models%2FKoHRM-Text-1.4B,5Mf703QA7DVrm69U8tEPKf

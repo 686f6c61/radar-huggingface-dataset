@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bcdennis/hcd-tinystories-hier-aux-l01` es un modelo de lenguaje entrenado desde cero (from-scratch) sobre el dataset TinyStories. Se trata de un experimento de investigacion publicado por el usuario bcdennis en HuggingFace, sin pipeline declarado, sin licencia especificada y sin metricas de uso (0 descargas, 0 likes en el momento de la consulta). El repositorio ocupa 0,3 GB.
+`bcdennis/hcd-tinystories-hier-aux-l01` es un modelo de lenguaje entrenado desde cero (from-scratch) sobre el dataset TinyStories. Se trata de un experimento de investigacion publicado por el usuario bcdennis en Hugging Face, sin pipeline declarado, sin licencia especificada y sin metricas de uso (0 descargas, 0 likes en el momento de la consulta). El repositorio ocupa 0,3 GB.
 
 El modelo pertenece a una familia de ejecuciones etiquetada como "hierarchical-concept-diffusion" (HCD), y esta ficha corresponde al brazo o variante `hcd-aux`. Cuenta con 45.166.464 parametros (aproximadamente 45 millones, en la escala de los modelos pequenos de TinyStories) y fue entrenado durante 12.000 pasos con una longitud de secuencia de 256 y batch de 32, alcanzando una perdida final de validacion (LM loss) de 2,3530.
 
@@ -69,7 +69,7 @@ No se dispone de comparaciones publicadas frente a otros modelos en la propia mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hcd-tinystories-hier-aux-l01 | 45.166.464 | 256 | no disponible | HuggingFace (0 descargas) |
+| hcd-tinystories-hier-aux-l01 | 45.166.464 | 256 | no disponible | Hugging Face (0 descargas) |
 | TinyStories (Eldan y Li, 2023) | 1 M - 33 M (familia) | no disponible en esta busqueda | no disponible | Paper en arXiv 2305.07759 |
 | GPT-2 small | 124 M | 1024 | MIT (segun publicacion original) | Ampliamente disponible |
 | TinyStoriesv1 (reproduccion) | 10 M - 33 M (segun descripcion) | no disponible | no disponible | GitHub ihebgafsi/TinyStoriesv1 |
@@ -88,8 +88,8 @@ Los datos de la columna de modelos comparables provienen de fuentes publicas y n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcdennis/hcd-tinystories-hier-aux-l01
+- Modelo en Hugging Face: https://huggingface.co/bcdennis/hcd-tinystories-hier-aux-l01
 - Paper TinyStories (Eldan y Li, 2023): https://arxiv.org/abs/2305.07759
 - Reproduccion y scripts de entrenamiento TinyStoriesv1: https://github.com/ihebgafsi/TinyStoriesv1
-- Busqueda de modelos TinyStories en HuggingFace: https://huggingface.co/models?search=tinystories
-- Dataset TinyStories referenciado en la model card: roneneldan/TinyStories (en HuggingFace)
+- Busqueda de modelos TinyStories en Hugging Face: https://huggingface.co/models?search=tinystories
+- Dataset TinyStories referenciado en la model card: roneneldan/TinyStories (en Hugging Face)

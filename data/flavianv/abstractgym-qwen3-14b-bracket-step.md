@@ -79,8 +79,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento en la tarea |
 |---|---|---|---|---|---|---|
-| flavianv/abstractgym-qwen3-14b-bracket-step | Adaptador LoRA sobre Qwen3-14B | Base 14B + ~70,8 M por adaptador (estimado) | Heredado de Qwen3-14B | Apache-2.0 | HuggingFace, 3 semillas | 36/92 a 60/92 en el conjunto original; 166/312 a 231/312 en X3 |
-| Qwen/Qwen3-14B (base, sin adaptador) | Transformer denso decoder-only | 14B | El del modelo base | Apache-2.0 | HuggingFace | No disponible: no se publican resultados del base en esta tarea |
+| flavianv/abstractgym-qwen3-14b-bracket-step | Adaptador LoRA sobre Qwen3-14B | Base 14B + ~70,8 M por adaptador (estimado) | Heredado de Qwen3-14B | Apache-2.0 | Hugging Face, 3 semillas | 36/92 a 60/92 en el conjunto original; 166/312 a 231/312 en X3 |
+| Qwen/Qwen3-14B (base, sin adaptador) | Transformer denso decoder-only | 14B | El del modelo base | Apache-2.0 | Hugging Face | No disponible: no se publican resultados del base en esta tarea |
 | Controles diminutos con mapeo de roles de AbstractGym | Experimento separado citado en la model card | No disponible | No disponible | Apache-2.0 (codigo publico) | No disponible como pesos publicados | No disponible |
 
 No se conocen otros adaptadores publicados comparables en esta misma tarea, y las busquedas web realizadas no devolvieron resultados relevantes (unicamente paginas no relacionadas sobre portadas de musica). Cualquier comparacion de rendimiento con modelos de proposito general no seria significativa, porque la metrica depende por completo del arnes de evaluacion.
@@ -102,10 +102,10 @@ No se conocen otros adaptadores publicados comparables en esta misma tarea, y la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flavianv/abstractgym-qwen3-14b-bracket-step
+- Modelo en Hugging Face: https://huggingface.co/flavianv/abstractgym-qwen3-14b-bracket-step
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B (revision fijada `40c069824f4251a91eefaf281ebe4c544efd3e18`)
 - Codigo publico de AbstractGym: https://github.com/flavianv/abstractgym-public/tree/main
 - Documentacion de la tarea: `docs/a6_trained_controller.md` y `docs/a6_followup_results.md` dentro del repositorio de codigo
 - Resultados detallados: `results.json`, copiado de `docs/results/2026-10-04-x3/summary.json`
-- Detalles por semilla: `seed-*/training.json` dentro del repositorio de HuggingFace
+- Detalles por semilla: `seed-*/training.json` dentro del repositorio de Hugging Face
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; las busquedas devolvieron unicamente paginas no relacionadas sobre portadas de musica

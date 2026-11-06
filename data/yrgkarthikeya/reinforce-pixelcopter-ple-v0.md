@@ -2,11 +2,11 @@
 
 ## Resumen
 
-YRGKarthikeya/Reinforce-Pixelcopter-PLE-v0 es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario YRGKarthikeya. Se trata de una implementacion propia del algoritmo REINFORCE (policy gradient con estimacion Monte Carlo del retorno) entrenada sobre el entorno Pixelcopter-PLE-v0, un juego incluido en la PyGame Learning Environment. No es un modelo de lenguaje: no genera texto ni procesa instrucciones, sino que aprende una politica que mapea estados del entorno a acciones discretas.
+YRGKarthikeya/Reinforce-Pixelcopter-PLE-v0 es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario YRGKarthikeya. Se trata de una implementacion propia del algoritmo REINFORCE (policy gradient con estimacion Monte Carlo del retorno) entrenada sobre el entorno Pixelcopter-PLE-v0, un juego incluido en la PyGame Learning Environment. No es un modelo de lenguaje: no genera texto ni procesa instrucciones, sino que aprende una politica que mapea estados del entorno a acciones discretas.
 
-El modelo se enmarca en los ejercicios de la Unidad 5 del Deep Reinforcement Learning Class de HuggingFace, un curso abierto cuyo objetivo es que los alumnos implementen algoritmos clasicos de RL y validen sus resultados frente a referencias conocidas. Su relevancia es por tanto fundamentalmente didactica y de reproducibilidad: sirve como linea base de un algoritmo de policy gradient con alta varianza frente a alternativas como PPO o A2C sobre el mismo entorno.
+El modelo se enmarca en los ejercicios de la Unidad 5 del Deep Reinforcement Learning Class de Hugging Face, un curso abierto cuyo objetivo es que los alumnos implementen algoritmos clasicos de RL y validen sus resultados frente a referencias conocidas. Su relevancia es por tanto fundamentalmente didactica y de reproducibilidad: sirve como linea base de un algoritmo de policy gradient con alta varianza frente a alternativas como PPO o A2C sobre el mismo entorno.
 
-La model card es minima: se limita a indicar el algoritmo, el entorno y el resultado de recompensa media declarado por el autor. No documenta la arquitectura de red, el numero de parametros, el espacio de observaciones ni el formato exacto del checkpoint. El repositorio ocupa 0.0 GB segun HuggingFace y acumula 0 descargas y 0 likes desde su publicacion.
+La model card es minima: se limita a indicar el algoritmo, el entorno y el resultado de recompensa media declarado por el autor. No documenta la arquitectura de red, el numero de parametros, el espacio de observaciones ni el formato exacto del checkpoint. El repositorio ocupa 0.0 GB segun Hugging Face y acumula 0 descargas y 0 likes desde su publicacion.
 
 ## Especificaciones tecnicas
 
@@ -23,8 +23,8 @@ La model card es minima: se limita a indicar el algoritmo, el entorno y el resul
 | Algoritmo | REINFORCE (policy gradient con retorno Monte Carlo) |
 | Entorno de entrenamiento | Pixelcopter-PLE-v0 |
 | Tarea declarada | reinforcement-learning |
-| Fecha de publicacion | 2026-09-21 (segun registro de HuggingFace) |
-| Ultima actualizacion | 2026-09-21 (segun registro de HuggingFace) |
+| Fecha de publicacion | 2026-09-21 (segun registro de Hugging Face) |
+| Ultima actualizacion | 2026-09-21 (segun registro de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0.0 GB |
 
@@ -65,7 +65,7 @@ Resultados declarados por el autor en el model-index de la model card:
 |---|---|---|---|
 | mean_reward | Pixelcopter-PLE-v0 | 19.60 +/- 8.51 | No |
 
-El campo "verificado" figura como falso en el model-index, por lo que el resultado procede exclusivamente del autor y no ha sido validado por HuggingFace ni por un tercero. No se han publicado en la informacion disponible resultados de otros modelos comparables sobre el mismo entorno, ni desglose por numero de episodios, semillas o condiciones de evaluacion.
+El campo "verificado" figura como falso en el model-index, por lo que el resultado procede exclusivamente del autor y no ha sido validado por Hugging Face ni por un tercero. No se han publicado en la informacion disponible resultados de otros modelos comparables sobre el mismo entorno, ni desglose por numero de episodios, semillas o condiciones de evaluacion.
 
 ## Requisitos de hardware
 
@@ -82,7 +82,7 @@ No se dispone de datos publicados de modelos comparables dentro de la informacio
 
 | Modelo / algoritmo | Entorno | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Reinforce-Pixelcopter-PLE-v0 | Pixelcopter-PLE-v0 | no disponible | no aplica | mean_reward 19.60 +/- 8.51 (no verificado) | no disponible | HuggingFace |
+| Reinforce-Pixelcopter-PLE-v0 | Pixelcopter-PLE-v0 | no disponible | no aplica | mean_reward 19.60 +/- 8.51 (no verificado) | no disponible | Hugging Face |
 | PPO sobre Pixelcopter-PLE-v0 (Deep RL Class) | Pixelcopter-PLE-v0 | no disponible | no aplica | no disponible | no disponible | no disponible |
 | A2C sobre Pixelcopter-PLE-v0 (Deep RL Class) | Pixelcopter-PLE-v0 | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -103,5 +103,5 @@ Diferencias cualitativas conocidas: REINFORCE es un metodo on-policy con retorno
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YRGKarthikeya/Reinforce-Pixelcopter-PLE-v0
+- Modelo en Hugging Face: https://huggingface.co/YRGKarthikeya/Reinforce-Pixelcopter-PLE-v0
 - Deep Reinforcement Learning Class, Unidad 5 (procedimiento de entrenamiento y evaluacion de REINFORCE): https://github.com/huggingface/deep-rl-class/tree/main/unit5

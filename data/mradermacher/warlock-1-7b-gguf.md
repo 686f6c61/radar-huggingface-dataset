@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Warlock-1.7B-GGUF es una republicación en formato GGUF del modelo Warlock-1.7B, cuyo checkpoint original fue publicado por el usuario taniota en HuggingFace. El repositorio lo mantiene mradermacher, un perfil conocido dentro del ecosistema de cuantización por generar versiones GGUF de modelos pequeños y medianos para su uso con llama.cpp y derivados. El modelo cuenta con 1.711.376.384 parámetros (aproximadamente 1,7 mil millones), según los datos reales de los tensores en safetensors, y está orientado a uso conversacional según las etiquetas declaradas en el repositorio.
+Warlock-1.7B-GGUF es una republicación en formato GGUF del modelo Warlock-1.7B, cuyo checkpoint original fue publicado por el usuario taniota en Hugging Face. El repositorio lo mantiene mradermacher, un perfil conocido dentro del ecosistema de cuantización por generar versiones GGUF de modelos pequeños y medianos para su uso con llama.cpp y derivados. El modelo cuenta con 1.711.376.384 parámetros (aproximadamente 1,7 mil millones), según los datos reales de los tensores en safetensors, y está orientado a uso conversacional según las etiquetas declaradas en el repositorio.
 
 El problema que resuelve esta ficha concreta es el de la distribución: el checkpoint original no está necesariamente disponible en GGUF, y esta versión ofrece un conjunto de cuantizaciones estáticas listas para desplegar en hardware de gama de consumo. El repositorio incluye los formatos x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, lo que permite ajustar el equilibrio entre calidad y memoria ocupada desde aproximadamente 3,4 GB en f16 hasta menos de 1 GB en Q2_K.
 
@@ -100,7 +100,7 @@ No se puede establecer una comparacion cuantitativa fiable sin datos de benchmar
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Warlock-1.7B-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Warlock-1.7B-GGUF
 - Modelo base: https://huggingface.co/taniota/Warlock-1.7B
 
 No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs tecnicos, repositorios de codigo o demos) asociados a este modelo.

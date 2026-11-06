@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Project Nobody (Blueprint 4.0) es un repositorio de arquitectura y marco de entrenamiento distribuido publicado por el usuario mandiyaaman en HuggingFace bajo el identificador `mandiyaaman/nobody-pretrain-swarm`. No se trata de un modelo con pesos publicados y listos para inferencia, sino de un blueprint de arquitectura de modelo fundacional híbrido junto con la infraestructura de entrenamiento en enjambre que lo soporta. La model card describe una arquitectura que combina atención recurrente lineal (Gated DeltaNet), memoria asociativa con compuerta de sorpresa (Titans), atención latente diferencial (Diff-MLA) y una capa Mixture-of-Experts de 8+1 expertos, además de cabezas de predicción multi-token (MTP).
+Project Nobody (Blueprint 4.0) es un repositorio de arquitectura y marco de entrenamiento distribuido publicado por el usuario mandiyaaman en Hugging Face bajo el identificador `mandiyaaman/nobody-pretrain-swarm`. No se trata de un modelo con pesos publicados y listos para inferencia, sino de un blueprint de arquitectura de modelo fundacional híbrido junto con la infraestructura de entrenamiento en enjambre que lo soporta. La model card describe una arquitectura que combina atención recurrente lineal (Gated DeltaNet), memoria asociativa con compuerta de sorpresa (Titans), atención latente diferencial (Diff-MLA) y una capa Mixture-of-Experts de 8+1 expertos, además de cabezas de predicción multi-token (MTP).
 
 El proyecto pone el foco en dos ejes: por un lado, la innovación arquitectónica orientada a razonamiento extenso y recuperación asociativa rápida de memoria; por otro, el método de entrenamiento descentralizado Decoupled DiLoCo, que permite coordinar islas de cómputo independientes (en este caso instancias de Kaggle con doble GPU NVIDIA T4 de 16 GB) sincronizando pseudo-gradientes comprimidos en BF16 a través de internet convencional.
 
@@ -77,7 +77,7 @@ La comparativa se establece frente a otras arquitecturas híbridas de la misma c
 
 ## Limitaciones y advertencias
 
-- No hay pesos publicados: el repositorio contiene una arquitectura y un marco de entrenamiento, no un modelo entrenado utilizable. No es posible hacer inferencia directamente desde este identificador de HuggingFace.
+- No hay pesos publicados: el repositorio contiene una arquitectura y un marco de entrenamiento, no un modelo entrenado utilizable. No es posible hacer inferencia directamente desde este identificador de Hugging Face.
 - Ausencia total de métricas: no se publican resultados de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación, por lo que no existe evidencia empírica del rendimiento de la arquitectura propuesta.
 - Número de parámetros y longitud de contexto no declarados: impide estimar costes de despliegue, requisitos de VRAM o adecuación a tareas de contexto largo.
 - Idiomas: únicamente inglés declarado, con tokenizador GPT-2, lo que limita su uso en castellano u otras lenguas sin un ajuste adicional.
@@ -86,12 +86,12 @@ La comparativa se establece frente a otras arquitecturas híbridas de la misma c
 - Sesgos: no documentados por el autor y no evaluables sin artefactos publicados.
 - Afirmaciones no verificadas: la model card describe el proyecto como "frontier-grade" y orientado a "razonamiento extremo", pero no aporta datos que respalden esas afirmaciones.
 - Licencia Apache 2.0: permite uso comercial del código y de hipotéticos pesos derivados, siempre que se conserven los avisos de copyright y atribución correspondientes.
-- Dependencia de infraestructura de terceros: el flujo de entrenamiento depende de instancias de Kaggle y del Hub de HuggingFace para la sincronización, lo que introduce acoplamiento con políticas y cuotas de esas plataformas.
+- Dependencia de infraestructura de terceros: el flujo de entrenamiento depende de instancias de Kaggle y del Hub de Hugging Face para la sincronización, lo que introduce acoplamiento con políticas y cuotas de esas plataformas.
 - Fecha de creación declarada en 2026-09-25: conviene verificar la coherencia temporal del repositorio antes de tomarlo como referencia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mandiyaaman/nobody-pretrain-swarm
+- Modelo en Hugging Face: https://huggingface.co/mandiyaaman/nobody-pretrain-swarm
 - Repositorio relacionado del mismo autor: https://huggingface.co/mandiyaaman/nobody
 - Perfil de GitHub del autor: https://github.com/MANDIYAAMAN
 - Referencia sobre el marco DiLoCo y entrenamiento descentralizado: https://github.com/openai/swarm (mencionado en resultados de búsqueda, sin relación directa con este modelo)

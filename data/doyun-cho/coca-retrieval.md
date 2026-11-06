@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`doyun-cho/coca-retrieval` es un repositorio experimental publicado en HuggingFace que implementa una arquitectura denominada **Coca** orientada a tareas de *retrieval* (recuperación multimodal). No se trata de un modelo entrenado, sino de un esqueleto de código con un checkpoint de inicialización válido únicamente para *smoke tests*: la propia model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que los pesos no han sido entrenados ni auditados.
+`doyun-cho/coca-retrieval` es un repositorio experimental publicado en Hugging Face que implementa una arquitectura denominada **Coca** orientada a tareas de *retrieval* (recuperación multimodal). No se trata de un modelo entrenado, sino de un esqueleto de código con un checkpoint de inicialización válido únicamente para *smoke tests*: la propia model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que los pesos no han sido entrenados ni auditados.
 
 El repositorio incluye `eval.py` como artefacto principal, junto con `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (checkpoint de inicialización). La arquitectura declarada combina atención dilatada, fusión con compuertas (*gated fusion*), activación ReLU y normalización RMSNorm.
 
@@ -21,7 +21,7 @@ El dato más relevante para evaluar su utilidad práctica es la discrepancia ent
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors (PyTorch) |
 
-Otros metadatos del repositorio: identificador `doyun-cho/coca-retrieval`, autor `doyun-cho`, 0 descargas, 0 likes, tamaño del repo 0.0 GB, creado y actualizado el 2026-10-17. No se declara pipeline de HuggingFace.
+Otros metadatos del repositorio: identificador `doyun-cho/coca-retrieval`, autor `doyun-cho`, 0 descargas, 0 likes, tamaño del repo 0.0 GB, creado y actualizado el 2026-10-17. No se declara pipeline de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -82,7 +82,7 @@ La comparación significativa es arquitectónica: este repositorio toma el nombr
 - Discrepancia de escala: la model card declara `huge`, pero el recuento real es de 24.832 parámetros. Cualquier expectativa basada en la etiqueta sería errónea.
 - Ausencia de benchmarks: no hay métricas verificables de recuperación, ni siquiera preliminares.
 - Falta de documentación sobre tokenizador, preprocesado de imagen, función de pérdida y formato de pares positivos/negativos, lo que impide reproducir el pipeline completo solo con el repositorio.
-- Requiere un adaptador de carga explícito: las APIs automáticas de HuggingFace no funcionan de serie con esta implementación.
+- Requiere un adaptador de carga explícito: las APIs automáticas de Hugging Face no funcionan de serie con esta implementación.
 - Idiomas no declarados: se desconoce el soporte multilingüe incluso en el diseño previsto.
 - Licencia BSD-3-Clause: permisiva y compatible con uso comercial del código, pero el autor advierte de revisar por separado los términos de los datos de origen si se usan datasets externos (por ejemplo, Flickr30k tiene sus propias condiciones).
 - Riesgo de alucinación: no aplica en sentido generativo, pero sí existe riesgo de interpretar como válidas representaciones aleatorias si no se comprueba que el checkpoint es de inicialización.
@@ -90,5 +90,5 @@ La comparación significativa es arquitectónica: este repositorio toma el nombr
 
 ## Enlaces
 
-- [HuggingFace: doyun-cho/coca-retrieval](https://huggingface.co/doyun-cho/coca-retrieval)
+- [Hugging Face: doyun-cho/coca-retrieval](https://huggingface.co/doyun-cho/coca-retrieval)
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la búsqueda web realizada (los resultados devueltos no guardaban relación con el modelo).

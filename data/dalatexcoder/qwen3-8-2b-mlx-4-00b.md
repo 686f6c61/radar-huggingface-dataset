@@ -79,10 +79,10 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dalatexcoder/Qwen3.8-2B-MLX-4.00B
+- Repositorio Hugging Face: https://huggingface.co/dalatexcoder/Qwen3.8-2B-MLX-4.00B
 - Modelo base (empero-ai/Qwen3.8-2B-Distill): https://huggingface.co/empero-ai/Qwen3.8-2B-Distill (enlace inferido, no verificado)
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Página de Qwen3.8 en OpenLM: https://openlm.ai/qwen3.8/
-- Modelo Qwen3.8-27B en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo Qwen3.8-27B en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Página de Qwen3.8 en Ollama: https://ollama.com/library/qwen3.8
 - Ejemplo de cuantización MLX de Qwen3-8B (no es el mismo modelo, pero útil como referencia): https://huggingface.co/mlx-community/Qwen3-8B-4bit

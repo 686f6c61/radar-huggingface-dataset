@@ -69,7 +69,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 - Es una implementación experimental que puede contener errores o comportamientos no deseados.
 - No se han publicado resultados de benchmarks.
 - La licencia BSD-3-Clause permite uso comercial, pero el modelo no es útil sin un entrenamiento completo.
-- Se requiere un adaptador explícito para cargarlo con APIs genéricas de HuggingFace o similares.
+- Se requiere un adaptador explícito para cargarlo con APIs genéricas de Hugging Face o similares.
 
 ## Enlaces
 

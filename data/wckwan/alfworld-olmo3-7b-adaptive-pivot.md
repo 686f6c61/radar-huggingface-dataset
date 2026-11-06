@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alfworld-Olmo3-7B-Adaptive-Pivot es un ajuste fino de allenai/Olmo-3-7B-Instruct publicado por el usuario wckwan en HuggingFace. No se trata de un modelo base nuevo, sino de una política (policy) entrenada con aprendizaje por refuerzo para actuar como agente de búsqueda multi-turno al estilo Search-R1: el modelo genera consultas a una herramienta de búsqueda, recibe las respuestas y encadena varios pasos hasta resolver la tarea. El entrenamiento emplea Process-GRPO, una variante de GRPO en la que un modelo de recompensa de proceso (un verificador basado en Olmo-3-7B-Think) puntúa cada turno de la trayectoria en lugar de evaluar únicamente el resultado final.
+Alfworld-Olmo3-7B-Adaptive-Pivot es un ajuste fino de allenai/Olmo-3-7B-Instruct publicado por el usuario wckwan en Hugging Face. No se trata de un modelo base nuevo, sino de una política (policy) entrenada con aprendizaje por refuerzo para actuar como agente de búsqueda multi-turno al estilo Search-R1: el modelo genera consultas a una herramienta de búsqueda, recibe las respuestas y encadena varios pasos hasta resolver la tarea. El entrenamiento emplea Process-GRPO, una variante de GRPO en la que un modelo de recompensa de proceso (un verificador basado en Olmo-3-7B-Think) puntúa cada turno de la trayectoria en lugar de evaluar únicamente el resultado final.
 
 El interés de esta ficha es acotado: se trata de un artefacto de investigación con 0 descargas y 0 likes en el momento de la consulta, orientado a reproducir y estudiar metodologías de RL con recompensa de proceso sobre herramientas externas. La innovación declarada por el autor es la normalización de ventajas por (grupo, posición de turno) y el uso de prompts de verificador que incluyen tanto las respuestas recuperadas de la herramienta como la respuesta dorada, lo que permite señalar qué turno concreto de la trayectoria fue útil o perjudicial.
 
@@ -75,8 +75,8 @@ Estas cifras corresponden al proceso de entrenamiento interno del autor y no son
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| wckwan/Alfworld-Olmo3-7B-Adaptive-Pivot | 7B | No disponible | Apache 2.0 | HuggingFace (0 descargas, 0 likes) | Politica de busqueda multi-turno entrenada con Process-GRPO; checkpoints en paso 20, 40 y 60 |
-| allenai/Olmo-3-7B-Instruct | 7B | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace | Modelo base instruct; sin entrenamiento especifico de agente de busqueda |
+| wckwan/Alfworld-Olmo3-7B-Adaptive-Pivot | 7B | No disponible | Apache 2.0 | Hugging Face (0 descargas, 0 likes) | Politica de busqueda multi-turno entrenada con Process-GRPO; checkpoints en paso 20, 40 y 60 |
+| allenai/Olmo-3-7B-Instruct | 7B | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face | Modelo base instruct; sin entrenamiento especifico de agente de busqueda |
 | Otros modelos de la familia Search-R1 | No disponible | No disponible | No disponible | No disponible | Se cita como metodologia de referencia, pero no se dispone de especificaciones en la informacion proporcionada |
 
 No se dispone de datos verificados de benchmarks que permitan una comparacion cuantitativa con alternativas de la misma categoria.
@@ -95,7 +95,7 @@ No se dispone de datos verificados de benchmarks que permitan una comparacion cu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wckwan/Alfworld-Olmo3-7B-Adaptive-Pivot
+- Modelo en Hugging Face: https://huggingface.co/wckwan/Alfworld-Olmo3-7B-Adaptive-Pivot
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct
 - Metodologia Process-GRPO y Search-R1: citadas en la model card del autor, sin enlace directo proporcionado en la informacion disponible
 - Verificador Olmo-3-7B-Think: mencionado en la model card, sin enlace directo proporcionado en la informacion disponible

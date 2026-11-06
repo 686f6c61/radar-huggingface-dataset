@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`harrytaylor/retrieval-proto` es un repositorio de código y pesos de inicialización publicado en HuggingFace por el usuario harrytaylor, que implementa una arquitectura denominada Cnn Transformer orientada a tareas de recuperación de información (retrieval). No se trata de un modelo entrenado ni evaluado, sino de una implementación de referencia con la que ejecutar pruebas de humo reproducibles: la propia model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint `model.safetensors` es una inicialización válida, no un modelo con entrenamiento completado.
+`harrytaylor/retrieval-proto` es un repositorio de código y pesos de inicialización publicado en Hugging Face por el usuario harrytaylor, que implementa una arquitectura denominada Cnn Transformer orientada a tareas de recuperación de información (retrieval). No se trata de un modelo entrenado ni evaluado, sino de una implementación de referencia con la que ejecutar pruebas de humo reproducibles: la propia model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint `model.safetensors` es una inicialización válida, no un modelo con entrenamiento completado.
 
 El tamaño real del checkpoint es de 24.832 parámetros totales, una magnitud propia de un prototipo de laboratorio más que de un modelo desplegable en producción, pese a que la configuración interna se etiqueta como "huge". La arquitectura combina convoluciones y atención de tipo transformer con atención de ventana deslizante, fusión de bajo rango, activación gelu tanh y normalización layernorm. La receta de experimento por defecto usa el optimizador lion con un schedule exponencial, valores de partida que el autor advierte que no constituyen evidencia de un entrenamiento realizado.
 
@@ -99,7 +99,7 @@ No se dispone de modelos comparables en la informacion proporcionada. El reposit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harrytaylor/retrieval-proto
+- Modelo en Hugging Face: https://huggingface.co/harrytaylor/retrieval-proto
 - `model.py` (artefacto principal, implementacion y ejemplo de prueba de humo): incluido en el repositorio anterior
 - `config.json` (configuracion de arquitectura): incluido en el repositorio anterior
 - `training_args.json` (receta de experimento por defecto): incluido en el repositorio anterior

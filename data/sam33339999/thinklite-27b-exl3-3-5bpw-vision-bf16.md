@@ -73,10 +73,10 @@ Precisión media reportada para Thinklite-27B: 89,8 frente a 90,2 del modelo bas
 
 | Modelo | Parametros | Contexto | Razonamiento vs base (xhigh) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thinklite-27B (esta cuantización EXL3) | 7,67B según safetensors (denominado 27B) | no disponible | ↓ 47,0% | Apache 2.0 | HuggingFace, formato EXL3 |
-| ThinkingCap-Qwen3.8-27B | no disponible | no disponible | ↓ 45,8% | no disponible | HuggingFace |
-| Swift-1.5-Qwen3.8-27b | no disponible | no disponible | ↓ 35,6% | no disponible | HuggingFace |
-| Qwen/Qwen3.8-27B (base) | no disponible | no disponible | referencia (0%) | no disponible | HuggingFace |
+| Thinklite-27B (esta cuantización EXL3) | 7,67B según safetensors (denominado 27B) | no disponible | ↓ 47,0% | Apache 2.0 | Hugging Face, formato EXL3 |
+| ThinkingCap-Qwen3.8-27B | no disponible | no disponible | ↓ 45,8% | no disponible | Hugging Face |
+| Swift-1.5-Qwen3.8-27b | no disponible | no disponible | ↓ 35,6% | no disponible | Hugging Face |
+| Qwen/Qwen3.8-27B (base) | no disponible | no disponible | referencia (0%) | no disponible | Hugging Face |
 
 Los datos de la comparativa de eficiencia proceden de la model card del modelo base. No se dispone de datos de parámetros, contexto ni licencia de los modelos alternativos en la información proporcionada.
 
@@ -95,7 +95,7 @@ Los datos de la comparativa de eficiencia proceden de la model card del modelo b
 
 ## Enlaces
 
-- HuggingFace (esta cuantización): https://huggingface.co/sam33339999/Thinklite-27B-EXL3-3.5bpw-vision-bf16
+- Hugging Face (esta cuantización): https://huggingface.co/sam33339999/Thinklite-27B-EXL3-3.5bpw-vision-bf16
 - Modelo base: https://huggingface.co/Sparset/Thinklite-27B
 - Versión GGUF del modelo base: https://huggingface.co/Sparset/Thinklite-27B-GGUF
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-27B

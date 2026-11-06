@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MADF-MGLQR no es un modelo de lenguaje, sino una coleccion de checkpoints de politicas de aprendizaje por refuerzo entrenadas con MADF (multi-agent diffusion/flow policy) sobre el entorno MGLQR (multi-goal max-entropy linear quadratic regulator). Lo publica el usuario edgeyyzhang en HuggingFace como material de reproducibilidad asociado a la rama `maxEntLQR` del repositorio https://github.com/edgeyyzhang/madf. Se trata de un artefacto de investigacion de 0,1 GB, no de un modelo generativo de proposito general.
+MADF-MGLQR no es un modelo de lenguaje, sino una coleccion de checkpoints de politicas de aprendizaje por refuerzo entrenadas con MADF (multi-agent diffusion/flow policy) sobre el entorno MGLQR (multi-goal max-entropy linear quadratic regulator). Lo publica el usuario edgeyyzhang en Hugging Face como material de reproducibilidad asociado a la rama `maxEntLQR` del repositorio https://github.com/edgeyyzhang/madf. Se trata de un artefacto de investigacion de 0,1 GB, no de un modelo generativo de proposito general.
 
 El entorno MGLQR es un sistema lineal 2-D deterministico `x_{t+1} = x_t + u_t` con horizonte T = 5, acciones recortadas a [-1, 1]^2, recompensa de etapa `-1/2 |u|^2` y una recompensa terminal definida como un log-sum-exp (minimo suave) sobre cuatro costes cuadraticos situados en `(±2, 0)` y `(0, ±2)`. La solucion optima max-ent es una mezcla multimodal de cuatro gaussianas LQR, lo que convierte el benchmark en una prueba controlada de si una politica de difusion/flujo es capaz de representar multimodalidad y de aproximar una densidad conocida de forma exacta.
 
@@ -117,7 +117,7 @@ Como referencia cuantitativa externa, la propia model card ofrece el optimo anal
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/edgeyyzhang/madf-mglqr
+- Hugging Face: https://huggingface.co/edgeyyzhang/madf-mglqr
 - Repositorio GitHub de MADF (rama `maxEntLQR`): https://github.com/edgeyyzhang/madf
 - Ficheros y rutas citadas en la model card: `relax/algorithm/madf.py`, `relax/network/madf_net.py`, `relax/env/wrappers_mglqr.py::MultiGoalLQRSolver`, `scripts/eval_mglqr.py::build_agent`
 - Nota sobre la busqueda web: los resultados devueltos no guardan relacion con el modelo (enlaces genericos a YouTube y YouTube Music). No se han encontrado papers, blogs, demos ni repositorios adicionales sobre este modelo concreto.

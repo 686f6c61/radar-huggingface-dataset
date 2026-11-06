@@ -74,6 +74,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiftedx/Qwen3.8-27B-MLX-MXFP8
+- Modelo en Hugging Face: https://huggingface.co/Shiftedx/Qwen3.8-27B-MLX-MXFP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Librería MLX-LM: https://github.com/ml-explore/mlx-lm

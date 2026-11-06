@@ -65,7 +65,7 @@ Consumo de memoria del dispositivo por chip tras el calentamiento: Whisper 3,9 G
 
 - Acelerador Tenstorrent p150: un chip Blackhole, en una QuietBox 2 o en uno de los chips de un P300. No se soporta otro hardware.
 - Memoria del dispositivo: 29,5 GiB en total para los tres modelos tras el calentamiento, más 512 MiB de región de trazas (Whisper 3,9 GiB, S2 Pro 7,3 GiB, Music 3 18,3 GiB).
-- Disco: unos 40 GB para pesos y cachés de los tres modelos, aunque el repositorio de HuggingFace ocupa 0,9 GB.
+- Disco: unos 40 GB para pesos y cachés de los tres modelos, aunque el repositorio de Hugging Face ocupa 0,9 GB.
 - No cabe en GPU de consumo: no es una carga CUDA y no se documenta despliegue en RTX 4090, A100 o H100; el backend es específico de Tenstorrent.
 - Despliegue mediante `tt-model` (paquete `tt-model-manager`) y Docker: `tt-model pull`, `tt-model serve` (con `--device-id N` para elegir chip) y `tt-model stop`.
 - Es necesario un `tt-model` que soporte `kind: cohost`; hasta que esté en una release, se instala desde la rama `feat/cohost-kind` con `uv tool install` o `pipx install`.
@@ -92,14 +92,14 @@ La diferencia clave frente a servir cada modelo por separado es el coste de hard
 - La licencia es por modelo y debe revisarse antes de uso comercial: Apache-2.0 para Whisper, Fish Audio Research License para S2 Pro y MiniMax-Music3 Community License para Music 3; los términos concretos de las dos últimas no se detallan en la información disponible.
 - Requiere una versión de `tt-model` con soporte de `kind: cohost`, disponible de momento solo en una rama de desarrollo; una versión sin ese soporte rechaza el paquete.
 - El arranque incluye una copia de la caché de tensores (unos 27 GB) como solución a un bloqueo de `ttnn.load_tensor` en algunos hosts, lo que añade tiempo y espacio en disco.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, por lo que no existe validación de la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, por lo que no existe validación de la comunidad.
 - No se declaran idiomas soportados en la model card; la cobertura lingüística depende de cada modelo base y no está verificada en este paquete.
 - Riesgo de alucinación y sesgos: no evaluados en esta información; deben consultarse las cartas de Whisper large-v3, S2 Pro y MiniMax Music 3.
 
 ## Enlaces
 
-- [jashansinghTT/cohost-speech-blackhole en HuggingFace](https://huggingface.co/jashansinghTT/cohost-speech-blackhole)
-- [Perfil de jashansinghTT en HuggingFace](https://huggingface.co/jashansinghTT)
+- [jashansinghTT/cohost-speech-blackhole en Hugging Face](https://huggingface.co/jashansinghTT/cohost-speech-blackhole)
+- [Perfil de jashansinghTT en Hugging Face](https://huggingface.co/jashansinghTT)
 - [openai/whisper-large-v3](https://huggingface.co/openai/whisper-large-v3)
 - [fishaudio/s2-pro](https://huggingface.co/fishaudio/s2-pro)
 - [MiniMaxAI/MiniMax-Music3](https://huggingface.co/MiniMaxAI/MiniMax-Music3)

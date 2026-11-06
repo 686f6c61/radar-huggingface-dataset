@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`DinaYatsuk/bert-lora-sentiment` es un adaptador LoRA publicado con la librería PEFT (versión 0.20.0) sobre el modelo base `deepvk/RuModernBERT-base`. Por el identificador del repositorio y por el modelo base empleado, se trata presumiblemente de un ajuste fino orientado a análisis de sentimiento sobre texto en ruso, aunque la model card no lo confirma en ningún apartado: es la plantilla por defecto de HuggingFace, con todos los campos marcados como "[More Information Needed]".
+`DinaYatsuk/bert-lora-sentiment` es un adaptador LoRA publicado con la librería PEFT (versión 0.20.0) sobre el modelo base `deepvk/RuModernBERT-base`. Por el identificador del repositorio y por el modelo base empleado, se trata presumiblemente de un ajuste fino orientado a análisis de sentimiento sobre texto en ruso, aunque la model card no lo confirma en ningún apartado: es la plantilla por defecto de Hugging Face, con todos los campos marcados como "[More Information Needed]".
 
 El repositorio no incluye pipeline declarado, licencia, idiomas ni métricas de evaluación. El tamaño del repo figura como 0.0 GB, lo que es coherente con un adaptador LoRA (unos pocos megabytes de pesos) y no con un modelo completo. No tiene descargas ni "likes" en el momento de la consulta y su fecha de creación es 2026-10-21.
 
@@ -74,8 +74,8 @@ No se dispone de datos verificables de los modelos alternativos en la informaci�
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `DinaYatsuk/bert-lora-sentiment` | Adaptador LoRA sobre encoder ruso (tarea inferida) | No disponible | No disponible | No disponible | Pública en HuggingFace, sin descargas ni métricas |
-| `deepvk/RuModernBERT-base` | Encoder ModernBERT en ruso (modelo base) | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | Pública en HuggingFace |
+| `DinaYatsuk/bert-lora-sentiment` | Adaptador LoRA sobre encoder ruso (tarea inferida) | No disponible | No disponible | No disponible | Pública en Hugging Face, sin descargas ni métricas |
+| `deepvk/RuModernBERT-base` | Encoder ModernBERT en ruso (modelo base) | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | Pública en Hugging Face |
 | Alternativas de clasificación de sentimiento en ruso | No disponible | No disponible | No disponible | No disponible | No verificado |
 
 Criterio práctico: frente a un ajuste fino completo del encoder, este adaptador ofrece la ventaja de tamaño reducido y facilidad de intercambio, pero carece de la documentación y las evaluaciones que sí suelen acompañar a los modelos publicados por laboratorios consolidados.
@@ -94,7 +94,7 @@ Criterio práctico: frente a un ajuste fino completo del encoder, este adaptador
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DinaYatsuk/bert-lora-sentiment
+- Modelo en Hugging Face: https://huggingface.co/DinaYatsuk/bert-lora-sentiment
 - Modelo base: https://huggingface.co/deepvk/RuModernBERT-base
 - Documentación de PEFT: https://huggingface.co/docs/peft
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700

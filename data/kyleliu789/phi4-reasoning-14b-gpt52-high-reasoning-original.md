@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original | 14B (base) + adaptador LoRA | no disponible | solo perdida de validacion (1,5755); sin benchmarks | other | HuggingFace, 0 descargas, 0 likes |
-| microsoft/Phi-4-reasoning (modelo base) | 14B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace, ampliamente utilizado |
-| microsoft/Phi-4-reasoning-plus | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | HuggingFace |
-| kyleliu789/qwen3-14b-gpt52-high-reasoning-normalized (adaptador analogo de otro autor) | 14B (base Qwen3-14B) | no disponible | no disponible | no disponible | HuggingFace |
+| kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original | 14B (base) + adaptador LoRA | no disponible | solo perdida de validacion (1,5755); sin benchmarks | other | Hugging Face, 0 descargas, 0 likes |
+| microsoft/Phi-4-reasoning (modelo base) | 14B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face, ampliamente utilizado |
+| microsoft/Phi-4-reasoning-plus | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Hugging Face |
+| kyleliu789/qwen3-14b-gpt52-high-reasoning-normalized (adaptador analogo de otro autor) | 14B (base Qwen3-14B) | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 

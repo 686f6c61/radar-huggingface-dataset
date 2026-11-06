@@ -33,7 +33,7 @@ El entrenamiento se realizo sobre datos del dataset SKU110K y fotografias de com
 - Modo estanteria densa: el checkpoint `shelf/` detecta multiples SKUs en estanterias con hasta 400 queries simultaneas.
 - Modo mostrador o articulo unico: el checkpoint `table/` esta optimizado para mesas, mostradores o un solo articulo.
 - Integracion con pipeline de inventario: se conecta con etapas posteriores de catalog-match, OCR o Gemini para nombrar SKUs.
-- Compatible con la libreria `transformers` de HuggingFace y con endpoints compatibles.
+- Compatible con la libreria `transformers` de Hugging Face y con endpoints compatibles.
 - No es un detector general COCO: no detecta objetos cotidianos fuera del dominio retail.
 - No detecta personas: excluido explicitamente del uso previsto.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Tamano del repositorio: 0.3 GB, lo que indica pesos ligeros.
 - No se proporcionan requisitos especificos de VRAM en la documentacion del modelo.
 - Dada la arquitectura DETR-ResNet-50 y el tamano de los pesos, se estima que el modelo puede ejecutarse en GPUs de consumo (por ejemplo, RTX 3060 o superiores), aunque no se confirma oficialmente.
-- Opciones de despliegue: compatible con la libreria `transformers` de HuggingFace, lo que permite su uso con HuggingFace Inference Endpoints u otras herramientas compatibles con `DetrForObjectDetection`.
+- Opciones de despliegue: compatible con la libreria `transformers` de Hugging Face, lo que permite su uso con Hugging Face Inference Endpoints u otras herramientas compatibles con `DetrForObjectDetection`.
 - No se dispone de datos de latencia o throughput estimados.
 
 ## Comparativa con modelos similares
@@ -80,5 +80,5 @@ El modelo se diferencia del DETR-ResNet-50 original de Facebook en que esta afin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jz67/localfirst-vision-detr
+- Hugging Face: https://huggingface.co/jz67/localfirst-vision-detr
 - Repositorio SMB Inventory Vision: https://github.com/josiahzaki/smb-inventory-vision

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Anonymous36/polar-thicket-40` es un modelo publicado en HuggingFace por la cuenta anónima `Anonymous36`, distribuido en formato `safetensors` y etiquetado con la librería `transformers`. La model card publicada está vacía: no incluye descripción, datos de entrenamiento, resultados de evaluación ni instrucciones de uso, únicamente la declaración de licencia Apache 2.0. Toda la información técnica disponible procede de los metadatos del repositorio y del recuento real de parámetros del archivo de pesos.
+`Anonymous36/polar-thicket-40` es un modelo publicado en Hugging Face por la cuenta anónima `Anonymous36`, distribuido en formato `safetensors` y etiquetado con la librería `transformers`. La model card publicada está vacía: no incluye descripción, datos de entrenamiento, resultados de evaluación ni instrucciones de uso, únicamente la declaración de licencia Apache 2.0. Toda la información técnica disponible procede de los metadatos del repositorio y del recuento real de parámetros del archivo de pesos.
 
 El pipeline declarado es `image-text-to-text`, lo que sitúa al modelo en la categoría de modelos multimodales de entrada imagen + texto con salida de texto. El recuento de parámetros en safetensors es de 26.895.998.464 (aproximadamente 26,9 mil millones), y el tamaño del repositorio es de 53,8 GB, magnitud coherente con pesos en bf16/fp16 (26,9 B × 2 bytes ≈ 53,8 GB). La etiqueta `qwen3_5` sugiere una arquitectura de la familia Qwen 3.5, pero no hay confirmación en la documentación del autor.
 
@@ -12,7 +12,7 @@ Su relevancia potencial es la de un modelo multimodal de ~27 B parámetros con l
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (pipeline `image-text-to-text`); etiqueta `qwen3_5` en HuggingFace, sin detalle en la model card. Se desconoce si es densa o MoE |
+| Arquitectura | Transformer multimodal (pipeline `image-text-to-text`); etiqueta `qwen3_5` en Hugging Face, sin detalle en la model card. Se desconoce si es densa o MoE |
 | Parametros totales | 26.895.998.464 (~26,9 B), según recuento real de safetensors |
 | Parametros activos | No disponible (no se confirma que sea MoE) |
 | Longitud de contexto | No disponible |
@@ -41,7 +41,7 @@ Las siguientes capacidades se deducen del pipeline declarado y del tamaño del m
 - Tool calling / function calling: no confirmado en la información disponible.
 - Capacidades multilingües: no disponibles (no se declara listado de idiomas).
 - Capacidades especiales (modo thinking, audio, vídeo): no disponibles.
-- Compatibilidad declarada con endpoints: la etiqueta `endpoints_compatible` sugiere que el repositorio puede servirse mediante Inference Endpoints de HuggingFace con la librería `transformers`.
+- Compatibilidad declarada con endpoints: la etiqueta `endpoints_compatible` sugiere que el repositorio puede servirse mediante Inference Endpoints de Hugging Face con la librería `transformers`.
 
 ## Casos de uso
 
@@ -99,7 +99,7 @@ La comparación relevante no es solo de tamaño: frente a las alternativas ofici
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Anonymous36/polar-thicket-40
+- Hugging Face: https://huggingface.co/Anonymous36/polar-thicket-40
 - Model card: no disponible (vacía, solo contiene la declaración `license: apache-2.0`)
 - Paper, blog, repositorio de código o demo: no disponibles
 - Resultados de la búsqueda web: ninguno relevante para este modelo; los enlaces devueltos (neural4d.com, aito3d.ai, image-to-3d.ai, meshgpt.io, zsky.ai) corresponden a generadores de modelos 3D y no guardan relación con el repositorio.

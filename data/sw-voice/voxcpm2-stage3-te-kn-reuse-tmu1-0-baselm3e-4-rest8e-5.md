@@ -81,7 +81,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/voxcpm2-stage3-te-kn-reuse-tmu1.0-baselm3e-4-rest8e-5
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/voxcpm2-stage3-te-kn-reuse-tmu1.0-baselm3e-4-rest8e-5
 - Modelo base (stage2): https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage2-english-reuse-lr1e-4-10ep
 - Dataset telugu: sw-voice/swamiji-navaratri-telugu-reuse-themes (referenciado en la model card)
 - Dataset kannada: sw-voice/swamiji-navaratri-kannada-reuse-themes (referenciado en la model card)

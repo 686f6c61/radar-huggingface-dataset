@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Propósito | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`unl-reset/tofu-phi-1_5-...`) | 1.418 M | No disponible | Apache 2.0 | Unlearning TOFU forget10, época 2/20 | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_phi-1.5` | ~1.400 M | No disponible | No disponible en la información | Phi-1.5 afinado sobre TOFU completo (modelo de partida) | HuggingFace |
-| `microsoft/phi-1_5` | ~1.400 M | 2.048 tokens (referencia estándar de Phi-1.5) | MIT (referencia estándar) | Modelo base de código y razonamiento | HuggingFace |
-| Otros checkpoints TOFU de `unl-reset` | ~1.400 M | No disponible | Apache 2.0 | Variantes de unlearning (distintas épocas y estrategias) | HuggingFace |
+| Este checkpoint (`unl-reset/tofu-phi-1_5-...`) | 1.418 M | No disponible | Apache 2.0 | Unlearning TOFU forget10, época 2/20 | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_phi-1.5` | ~1.400 M | No disponible | No disponible en la información | Phi-1.5 afinado sobre TOFU completo (modelo de partida) | Hugging Face |
+| `microsoft/phi-1_5` | ~1.400 M | 2.048 tokens (referencia estándar de Phi-1.5) | MIT (referencia estándar) | Modelo base de código y razonamiento | Hugging Face |
+| Otros checkpoints TOFU de `unl-reset` | ~1.400 M | No disponible | Apache 2.0 | Variantes de unlearning (distintas épocas y estrategias) | Hugging Face |
 
 La comparación con `microsoft/phi-1_5` y `locuslab/tofu_ft_phi-1.5` es la más directa, ya que el checkpoint es una derivación de ambos. No se dispone de datos de rendimiento comparado en la información proporcionada.
 
@@ -85,7 +85,7 @@ La comparación con `microsoft/phi-1_5` y `locuslab/tofu_ft_phi-1.5` es la más 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch02
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch02
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original de Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

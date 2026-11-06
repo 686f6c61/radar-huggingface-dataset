@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ryanham1lton/Ekans es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton (Ryan James Hamilton), con licencia CC-BY-4.0 y sin model card sustantiva: el README solo contiene el bloque de metadatos de licencia. El repositorio ocupa 0,1 GB segun los metadatos de la plataforma, registro cero descargas y cero "likes" en el momento de la consulta, y no declara pipeline de inferencia, idiomas soportados ni ningun otro dato tecnico.
+Ryanham1lton/Ekans es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton (Ryan James Hamilton), con licencia CC-BY-4.0 y sin model card sustantiva: el README solo contiene el bloque de metadatos de licencia. El repositorio ocupa 0,1 GB segun los metadatos de la plataforma, registro cero descargas y cero "likes" en el momento de la consulta, y no declara pipeline de inferencia, idiomas soportados ni ningun otro dato tecnico.
 
 No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, dataset de entrenamiento, proceso de alineamiento (RLHF, DPO u otros) ni resultados de evaluacion. La busqueda web no devuelve documentacion tecnica asociada al modelo: los resultados con el termino "ekans" corresponden a modelos de generacion de imagen (PixAI, Civitai) etiquetados con el nombre del Pokemon Ekans, sin relacion con este repositorio. El unico artefacto relacionado del mismo autor identificado es Ryanham1lton/ElectrikeES, tambien sin documentacion tecnica.
 
@@ -31,7 +31,7 @@ Por todo ello, esta ficha se limita a registrar los metadatos verificables y a m
 
 No disponible. La model card no incluye ninguna descripcion de la arquitectura (transformer, MoE, SSM, hibrida u otra), ni del proceso de entrenamiento: no se indica el volumen de tokens, la composicion del dataset, la existencia de fases de ajuste supervisado, RLHF, DPO u otras tecnicas de alineamiento. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o variantes de atencion eficiente.
 
-El unico dato estructural verificable es el tamano del repositorio (0,1 GB). Ese volumen es compatible con pesos de muy baja cardinalidad, con un adaptador tipo LoRA o con un checkpoint parcial, pero los metadatos de HuggingFace no permiten determinar si el tamano declarado corresponde a la totalidad de los pesos ni en que formato estan almacenados. Cualquier inferencia sobre la arquitectura a partir de ese dato seria especulativa.
+El unico dato estructural verificable es el tamano del repositorio (0,1 GB). Ese volumen es compatible con pesos de muy baja cardinalidad, con un adaptador tipo LoRA o con un checkpoint parcial, pero los metadatos de Hugging Face no permiten determinar si el tamano declarado corresponde a la totalidad de los pesos ni en que formato estan almacenados. Cualquier inferencia sobre la arquitectura a partir de ese dato seria especulativa.
 
 ## Capacidades
 
@@ -94,7 +94,7 @@ No disponible. No se ha identificado ningun modelo comparable, porque se descono
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanham1lton/Ekans
+- Modelo en Hugging Face: https://huggingface.co/Ryanham1lton/Ekans
 - Perfil del autor: https://huggingface.co/Ryanham1lton
 - Otro modelo del mismo autor (sin model card): https://huggingface.co/Ryanham1lton/ElectrikeES
 - Modelo de imagen homonimo en PixAI: https://pixai.art/en/model/1888180715357004039

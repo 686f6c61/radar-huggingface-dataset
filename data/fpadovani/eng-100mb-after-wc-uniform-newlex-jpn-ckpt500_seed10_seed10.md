@@ -69,10 +69,10 @@ La informacion disponible no incluye resultados de evaluacion de este checkpoint
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| fpadovani/eng-100mb-after-wc-uniform-newlex-jpn-ckpt500_seed10_seed10 | 124.770.816 | No disponible | No disponible | HuggingFace, 0 descargas | Sin benchmarks publicados |
+| fpadovani/eng-100mb-after-wc-uniform-newlex-jpn-ckpt500_seed10_seed10 | 124.770.816 | No disponible | No disponible | Hugging Face, 0 descargas | Sin benchmarks publicados |
 | GPT-2 (124M, OpenAI) | 124 M | 1024 tokens | MIT | Ampliamente distribuido | Benchmarks publicos disponibles; no comparable directamente con este checkpoint |
-| Modelos GPT-2 pequenos reentrenados por la comunidad (por ejemplo, distilgpt2 y similares) | 82-124 M | 1024 tokens | Variable segun autor (MIT en muchos casos) | HuggingFace | Benchmarks parciales publicados por sus autores |
-| Modelos instructivos pequenos de ultima generacion (por ejemplo, la familia SmolLM2 de 135 M) | Aproximadamente 135 M | Superior a 1024 tokens | Apache 2.0 en las versiones publicadas | HuggingFace | Benchmarks publicados (MMLU, HellaSwag, entre otros) |
+| Modelos GPT-2 pequenos reentrenados por la comunidad (por ejemplo, distilgpt2 y similares) | 82-124 M | 1024 tokens | Variable segun autor (MIT en muchos casos) | Hugging Face | Benchmarks parciales publicados por sus autores |
+| Modelos instructivos pequenos de ultima generacion (por ejemplo, la familia SmolLM2 de 135 M) | Aproximadamente 135 M | Superior a 1024 tokens | Apache 2.0 en las versiones publicadas | Hugging Face | Benchmarks publicados (MMLU, HellaSwag, entre otros) |
 
 La diferencia practica principal no es de rendimiento, sino de proposito: los modelos de la ultima fila estan entrenados y evaluados para uso instructivo general, mientras que este checkpoint es un artefacto de investigacion sin licencia, sin idiomas declarados y sin evaluacion publicada.
 
@@ -90,7 +90,7 @@ La diferencia practica principal no es de rendimiento, sino de proposito: los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-100mb-after-wc-uniform-newlex-jpn-ckpt500_seed10_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-100mb-after-wc-uniform-newlex-jpn-ckpt500_seed10_seed10
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed10
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/xgxusdgx
 - Repositorio de TRL: https://github.com/huggingface/trl

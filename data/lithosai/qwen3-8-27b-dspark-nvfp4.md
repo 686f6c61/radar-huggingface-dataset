@@ -89,10 +89,10 @@ El propio autor advierte que este conjunto de prompts es pequeño y que no estab
 
 | Modelo | Tipo | Parametros | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LithosAI/Qwen3.8-27B-DSpark-NVFP4 | Cabeza draft DSpark | 1,07 B | NVFP4 weight-only | model-weight-terms | HuggingFace; requiere runtime LMK con parche |
-| gittensor-model-hub/Qwen3.8-27B-DSpark-NVFP4 | Cabeza draft DSpark | no disponible | NVFP4 con QKV en BF16 | no disponible | HuggingFace |
-| nvidia/Qwen3.8-27B-NVFP4 | Modelo objetivo | ~27 B (clase) | NVFP4 | no disponible | HuggingFace |
-| Qwen/Qwen3.8-27B | Modelo base | ~27 B (clase) | BF16 | Apache 2.0 | HuggingFace |
+| LithosAI/Qwen3.8-27B-DSpark-NVFP4 | Cabeza draft DSpark | 1,07 B | NVFP4 weight-only | model-weight-terms | Hugging Face; requiere runtime LMK con parche |
+| gittensor-model-hub/Qwen3.8-27B-DSpark-NVFP4 | Cabeza draft DSpark | no disponible | NVFP4 con QKV en BF16 | no disponible | Hugging Face |
+| nvidia/Qwen3.8-27B-NVFP4 | Modelo objetivo | ~27 B (clase) | NVFP4 | no disponible | Hugging Face |
+| Qwen/Qwen3.8-27B | Modelo base | ~27 B (clase) | BF16 | Apache 2.0 | Hugging Face |
 | Checkpoints RadixArk NVFP4 + DSpark | Recetas de servicio | no disponible | NVFP4 + DSpark | no disponible | Citados en el foro de NVIDIA, sin URL directa en la información disponible |
 
 No hay datos publicados que permitan comparar aceptación, throughput o calidad entre estas cabezas bajo las mismas condiciones.
@@ -116,7 +116,7 @@ No hay datos publicados que permitan comparar aceptación, throughput o calidad 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LithosAI/Qwen3.8-27B-DSpark-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/LithosAI/Qwen3.8-27B-DSpark-NVFP4
 - Terminos de licencia de pesos: https://huggingface.co/LithosAI/Qwen3.8-27B-DSpark-NVFP4/blob/main/WEIGHT_NOTICES.md
 - Validacion del pack: https://huggingface.co/LithosAI/Qwen3.8-27B-DSpark-NVFP4/blob/main/validation.json
 - Conversion y politica de cuantizacion: https://huggingface.co/LithosAI/Qwen3.8-27B-DSpark-NVFP4/blob/main/conversion.json

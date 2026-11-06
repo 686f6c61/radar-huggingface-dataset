@@ -77,8 +77,8 @@ Los resultados de LIBERO-MAX y de los benchmarks de transferencia no estan dispo
 | Modelo | Enfoque | Parametros base | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | CaPtain-4B | Code-as-policy (SFT + RL sobre VLM) | 5,17 B | 81.920 tokens | Apache 2.0 | Pesos, datos, harness y pipeline publicados |
-| Qwen3.5-4B (base) | VLM generalista | ~4 B | no disponible | no disponible | Publico en HuggingFace |
-| CaPtain-4B-SFT | Variante solo SFT del mismo pipeline | 5,17 B | 81.920 tokens | Apache 2.0 | Publico en HuggingFace |
+| Qwen3.5-4B (base) | VLM generalista | ~4 B | no disponible | no disponible | Publico en Hugging Face |
+| CaPtain-4B-SFT | Variante solo SFT del mismo pipeline | 5,17 B | 81.920 tokens | Apache 2.0 | Publico en Hugging Face |
 
 Frente a VLAs clasicos de manipulacion (por ejemplo OpenVLA o RT-2) no hay numeros comparativos publicados en la informacion disponible; la unica comparacion documentada es interna: el modelo base sin entrenar obtiene 0 % en LIBERO, la variante SFT 55,4 % y la variante final con RL 73,8 %.
 
@@ -95,7 +95,7 @@ Frente a VLAs clasicos de manipulacion (por ejemplo OpenVLA o RT-2) no hay numer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YijiaFan/CaPtain-4B
+- Modelo en Hugging Face: https://huggingface.co/YijiaFan/CaPtain-4B
 - Variante SFT: https://huggingface.co/YijiaFan/CaPtain-4B-SFT
 - Datos SFT: https://huggingface.co/datasets/YijiaFan/CaPtain-SFT-Data
 - Artefactos de RL y configs: https://huggingface.co/datasets/YijiaFan/CaPtain-artifacts

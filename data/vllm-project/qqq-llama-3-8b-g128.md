@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QQQ-Llama-3-8b-g128 | 8B (nominal) | no disponible | INT4 W4A8, grupo 128 | MIT | HuggingFace (copia vLLM) |
-| Llama 3 8B (original) | 8B | 8K (según especificaciones públicas de Llama 3) | FP16/BF16 | Llama 3 Community License | HuggingFace (Meta) |
-| Alternativas INT4 de Llama 3 8B (GPTQ, AWQ) | 8B | no disponible | INT4 W4A16 | variable según autor | HuggingFace |
+| QQQ-Llama-3-8b-g128 | 8B (nominal) | no disponible | INT4 W4A8, grupo 128 | MIT | Hugging Face (copia vLLM) |
+| Llama 3 8B (original) | 8B | 8K (según especificaciones públicas de Llama 3) | FP16/BF16 | Llama 3 Community License | Hugging Face (Meta) |
+| Alternativas INT4 de Llama 3 8B (GPTQ, AWQ) | 8B | no disponible | INT4 W4A16 | variable según autor | Hugging Face |
 
 La comparación con alternativas INT4 se basa en la categoría de cuantización; no se dispone de datos de rendimiento comparativos en la información proporcionada.
 
@@ -80,7 +80,7 @@ La comparación con alternativas INT4 se basa en la categoría de cuantización;
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vllm-project/QQQ-Llama-3-8b-g128
+- Hugging Face: https://huggingface.co/vllm-project/QQQ-Llama-3-8b-g128
 - Modelo original: https://huggingface.co/HandH1998/QQQ-Llama-3-8b-g128
 - Repositorio de código QQQ: https://github.com/HandH1998/QQQ
 - Paper: https://arxiv.org/pdf/2406.09904

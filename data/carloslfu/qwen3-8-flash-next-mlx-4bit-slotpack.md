@@ -63,7 +63,7 @@ Según la documentación de GitHub, Qwen3.8-Flash-Next reduce el coste de entren
 - No se han proporcionado datos sobre sesgos, alucinaciones ni limitaciones de contexto.
 
 ## Enlaces
-- Repositorio de HuggingFace del paquete Slotstream: https://huggingface.co/carloslfu/Qwen3.8-Flash-Next-MLX-4bit-Slotpack
+- Repositorio de Hugging Face del paquete Slotstream: https://huggingface.co/carloslfu/Qwen3.8-Flash-Next-MLX-4bit-Slotpack
 - Mirror sin comprimir: https://huggingface.co/carloslfu/Qwen3.8-Flash-Next-MLX-4bit
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GitHub de QwenLM: https://github.com/QwenLM/Qwen3.8-Flash-Next/

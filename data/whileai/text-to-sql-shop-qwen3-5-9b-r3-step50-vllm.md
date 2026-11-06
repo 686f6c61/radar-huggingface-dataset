@@ -74,8 +74,8 @@ Las cifras de VRAM que se indican a continuacion son estimaciones derivadas del 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (`whileai/text-to-sql-shop-qwen3.5-9b-r3-step50-vllm`) | Base de ~9B mas adaptador LoRA de ~0,1 GB | No disponible | pass@1 de 0,838 en holdout propio (140 tareas, 4 muestras) | apache-2.0 | HuggingFace; 0 descargas y 0 valoraciones en el momento de la consulta |
-| `Qwen/Qwen3.5-9B` (modelo base sin adaptador) | Unos 9B | No disponible en la informacion proporcionada | No disponible para esta tarea en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| Este adaptador (`whileai/text-to-sql-shop-qwen3.5-9b-r3-step50-vllm`) | Base de ~9B mas adaptador LoRA de ~0,1 GB | No disponible | pass@1 de 0,838 en holdout propio (140 tareas, 4 muestras) | apache-2.0 | Hugging Face; 0 descargas y 0 valoraciones en el momento de la consulta |
+| `Qwen/Qwen3.5-9B` (modelo base sin adaptador) | Unos 9B | No disponible en la informacion proporcionada | No disponible para esta tarea en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 | Otros fine-tunes de text-to-SQL de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos que permitan una comparacion cuantitativa con alternativas de la misma categoria. Cualquier comparacion deberia realizarse replicando la evaluacion sobre la misma configuracion de holdout publicada en `zero-proof-ai/text-to-sql-shop`, con las mismas 140 tareas y 4 muestras por tarea.
@@ -94,7 +94,7 @@ No se dispone de datos que permitan una comparacion cuantitativa con alternativa
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/whileai/text-to-sql-shop-qwen3.5-9b-r3-step50-vllm
+- Pagina del modelo en Hugging Face: https://huggingface.co/whileai/text-to-sql-shop-qwen3.5-9b-r3-step50-vllm
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/zero-proof-ai/text-to-sql-shop
 - Receta de entrenamiento text-to-SQL del SDK: https://github.com/whilehq/whileai-sdk/tree/main/recipes/04-train/text-to-sql

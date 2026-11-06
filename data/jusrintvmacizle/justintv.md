@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `Jusrintvmacizle/Justintv` no contiene un modelo de inteligencia artificial. Se trata de una pagina alojada en HuggingFace cuyo unico contenido es una model card en turco dedicada a promocionar supuestas emisiones deportivas en directo ("Justin TV canli mac izle"), con enlaces externos a YouTube y texto de caracter marcadamente SEO. No hay pesos, configuracion, tokenizador ni artefactos de inferencia de ningun tipo.
+El repositorio `Jusrintvmacizle/Justintv` no contiene un modelo de inteligencia artificial. Se trata de una pagina alojada en Hugging Face cuyo unico contenido es una model card en turco dedicada a promocionar supuestas emisiones deportivas en directo ("Justin TV canli mac izle"), con enlaces externos a YouTube y texto de caracter marcadamente SEO. No hay pesos, configuracion, tokenizador ni artefactos de inferencia de ningun tipo.
 
-La ficha existe en HuggingFace con el identificador `Jusrintvmacizle/Justintv`, creada y actualizada el 3 de octubre de 2026, con 0 descargas y 1 like. Los metadatos no declaran pipeline, licencia ni idiomas soportados; el unico tag presente es `region:us`. La ausencia de `config.json`, `model.safetensors`, `tokenizer.json` o cualquier estructura de repositorio de modelo confirma que no es desplegable ni evaluable.
+La ficha existe en Hugging Face con el identificador `Jusrintvmacizle/Justintv`, creada y actualizada el 3 de octubre de 2026, con 0 descargas y 1 like. Los metadatos no declaran pipeline, licencia ni idiomas soportados; el unico tag presente es `region:us`. La ausencia de `config.json`, `model.safetensors`, `tokenizer.json` o cualquier estructura de repositorio de modelo confirma que no es desplegable ni evaluable.
 
-Desde el punto de vista del desarrollador o investigador, este repositorio debe clasificarse como contenido no tecnologico (spam de posicionamiento) y no como un candidato a evaluacion. La relevancia actual es, por tanto, negativa: sirve como ejemplo de ruido en el ecosistema de HuggingFace y de la necesidad de verificar la presencia real de artefactos antes de invertir tiempo en una evaluacion.
+Desde el punto de vista del desarrollador o investigador, este repositorio debe clasificarse como contenido no tecnologico (spam de posicionamiento) y no como un candidato a evaluacion. La relevancia actual es, por tanto, negativa: sirve como ejemplo de ruido en el ecosistema de Hugging Face y de la necesidad de verificar la presencia real de artefactos antes de invertir tiempo en una evaluacion.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ En resumen, no se puede atribuir ninguna capacidad tecnica a este repositorio po
 - Fine-tuning o adaptacion: no aplicable, no hay modelo base que ajustar.
 - Generacion de codigo o asistentes tecnicos: no aplicable.
 - Procesamiento de lenguaje natural en general: no aplicable.
-- Uso como referencia documental: el unico uso posible es el de catalogar el repositorio como ejemplo de contenido no tecnologico dentro de HuggingFace.
+- Uso como referencia documental: el unico uso posible es el de catalogar el repositorio como ejemplo de contenido no tecnologico dentro de Hugging Face.
 
 No se pueden proponer casos de uso realistas adicionales sin inventar capacidades que el repositorio no respalda.
 
@@ -77,7 +77,7 @@ No disponible. No existe una categoria tecnica en la que encajar este repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jusrintvmacizle/Justintv
+- Repositorio en Hugging Face: https://huggingface.co/Jusrintvmacizle/Justintv
 - Enlace externo incluido en la model card (YouTube): https://www.youtube.com/watch?v=j4ftYLco3-o
 - Resultados de busqueda web: ninguno guarda relacion con el repositorio. Los resultados obtenidos apuntan a servicios ajenos (HammerAI en https://www.hammerai.com/ y https://hammerai.itch.io/hammerai-web, y un agregador de emisiones en https://nguoiviet.tv/live-stream/) y no documentan ningun aspecto tecnico del modelo.
 - Paper, repositorio de codigo, blog o demo oficiales: no disponible.

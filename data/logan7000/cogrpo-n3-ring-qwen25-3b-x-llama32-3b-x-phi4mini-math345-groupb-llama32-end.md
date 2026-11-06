@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupB-llama32-end (este modelo) | 3.2B (base) | no disponible | GRPO sobre Llama 3.2 3B | no disponible | HuggingFace |
-| cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-granite2b-math345-groupB-llama32-end | 3.2B (base) | no disponible | GRPO con Granite 2B como modelo auxiliar | no disponible | HuggingFace |
-| cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-qwen3-1p7b-math345-groupC-qwen3-end | 3.2B (base) | no disponible | GRPO con Qwen 3 1.7B como modelo auxiliar | no disponible | HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct (modelo base) | 3.2B | 128K | Instruct tuning | Llama 3.2 Community License | HuggingFace |
+| cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupB-llama32-end (este modelo) | 3.2B (base) | no disponible | GRPO sobre Llama 3.2 3B | no disponible | Hugging Face |
+| cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-granite2b-math345-groupB-llama32-end | 3.2B (base) | no disponible | GRPO con Granite 2B como modelo auxiliar | no disponible | Hugging Face |
+| cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-qwen3-1p7b-math345-groupC-qwen3-end | 3.2B (base) | no disponible | GRPO con Qwen 3 1.7B como modelo auxiliar | no disponible | Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct (modelo base) | 3.2B | 128K | Instruct tuning | Llama 3.2 Community License | Hugging Face |
 
 Los tres modelos comparados pertenecen a la misma familia experimental del autor y difieren únicamente en el modelo auxiliar utilizado en el esquema de entrenamiento en anillo. No hay datos de rendimiento publicados para ninguno de ellos.
 
@@ -78,7 +78,7 @@ Los tres modelos comparados pertenecen a la misma familia experimental del autor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupB-llama32-end
+- Repositorio Hugging Face: https://huggingface.co/logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupB-llama32-end
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Paper GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Librería TRL: https://github.com/huggingface/trl

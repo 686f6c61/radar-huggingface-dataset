@@ -2,17 +2,17 @@
 
 ## Resumen
 
-`rubenpvw/nlp-robotics-vision-language` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación alojado en HuggingFace. La propia model card lo declara de forma explícita: contiene "una nota de investigación en curso sobre Robotics Vision Language" que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y añade que "no se presenta como un artículo completado ni como una publicación de modelos entrenados". El repositorio se limita a dos ficheros, `review.md` y `README.md`, con un tamaño declarado de 0,0 GB.
+`rubenpvw/nlp-robotics-vision-language` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación alojado en Hugging Face. La propia model card lo declara de forma explícita: contiene "una nota de investigación en curso sobre Robotics Vision Language" que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y añade que "no se presenta como un artículo completado ni como una publicación de modelos entrenados". El repositorio se limita a dos ficheros, `review.md` y `README.md`, con un tamaño declarado de 0,0 GB.
 
 El problema que aborda es, por tanto, metodológico: estructurar una pregunta de investigación sobre visión-lenguaje aplicada a robótica, proponer comparaciones con baselines emparejados y definir un plan de evaluación reproducible con benchmarks públicos. No resuelve ninguna tarea de inferencia y no ofrece pesos utilizables. La relevancia actual es documental, no técnica: sirve como plantilla de planificación experimental para quien trabaje en VLA (*vision-language-action*), pero no debe citarse como evidencia de resultados.
 
-Los metadatos de HuggingFace incluyen la etiqueta `transformer` y un recuento de parámetros en safetensors de 16.576, además de un tag de licencia `cc-by-4.0`. Ese recuento es anómalamente bajo (cinco órdenes de magnitud por debajo de cualquier transformer funcional) y, cruzado con el tamaño de repositorio de 0,0 GB y con la ausencia de cualquier mención a un checkpoint entrenado, es compatible con un tensor de prueba o un marcador de posición generado automáticamente. No hay datos de contexto, idiomas ni pipeline declarados.
+Los metadatos de Hugging Face incluyen la etiqueta `transformer` y un recuento de parámetros en safetensors de 16.576, además de un tag de licencia `cc-by-4.0`. Ese recuento es anómalamente bajo (cinco órdenes de magnitud por debajo de cualquier transformer funcional) y, cruzado con el tamaño de repositorio de 0,0 GB y con la ausencia de cualquier mención a un checkpoint entrenado, es compatible con un tensor de prueba o un marcador de posición generado automáticamente. No hay datos de contexto, idiomas ni pipeline declarados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. La etiqueta de HuggingFace indica `transformer`, pero la model card no describe arquitectura alguna y no se publica checkpoint |
+| Arquitectura | No disponible. La etiqueta de Hugging Face indica `transformer`, pero la model card no describe arquitectura alguna y no se publica checkpoint |
 | Parametros totales | 16.576 según el recuento de safetensors del repositorio (valor anómalo, ver limitaciones) |
 | Parametros activos | No aplica (no hay indicios de arquitectura MoE) |
 | Longitud de contexto | No disponible |
@@ -23,7 +23,7 @@ Los metadatos de HuggingFace incluyen la etiqueta `transformer` y un recuento de
 
 ## Arquitectura y entrenamiento
 
-No hay información sobre arquitectura. El repositorio no contiene código de modelo, configuración de transformer, tokenizador ni pesos con estructura reconocible. La etiqueta `transformer` procede de los metadatos de HuggingFace y no está respaldada por ninguna descripción técnica en la model card. Tampoco se documentan decisiones como tipo de atención, normalización, uso de MoE, SSM o arquitecturas híbridas.
+No hay información sobre arquitectura. El repositorio no contiene código de modelo, configuración de transformer, tokenizador ni pesos con estructura reconocible. La etiqueta `transformer` procede de los metadatos de Hugging Face y no está respaldada por ninguna descripción técnica en la model card. Tampoco se documentan decisiones como tipo de atención, normalización, uso de MoE, SSM o arquitecturas híbridas.
 
 Respecto al entrenamiento, la model card es tajante: el repositorio "no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado". No se especifican tokens de entrenamiento, composición del dataset, ni fases de ajuste como RLHF, DPO o SFT. Las referencias y los datasets propuestos que aparecen en la nota se describen como "punto de partida para la verificación", no como material ya utilizado. No hay innovaciones técnicas que reportar.
 
@@ -84,7 +84,7 @@ A modo orientativo, y sin que constituya una comparación de rendimiento: un VLA
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rubenpvw/nlp-robotics-vision-language
-- Fichero principal del repositorio: `review.md` (referenciado en la model card, accesible desde la pestaña de ficheros del repositorio de HuggingFace)
+- Hugging Face: https://huggingface.co/rubenpvw/nlp-robotics-vision-language
+- Fichero principal del repositorio: `review.md` (referenciado en la model card, accesible desde la pestaña de ficheros del repositorio de Hugging Face)
 - Documentación del repositorio: `README.md` (model card)
 - Papers, blogs, repositorios de código y demos: no disponible. No se han encontrado enlaces adicionales en la búsqueda web realizada, y la model card no incluye ninguna URL externa.

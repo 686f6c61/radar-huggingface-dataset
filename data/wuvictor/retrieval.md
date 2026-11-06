@@ -39,7 +39,7 @@ Dado que el modelo no está entrenado, los casos de uso son limitados y orientad
 
 - **Pruebas de humo en pipelines de retrieval**: el checkpoint de inicialización permite verificar que el código de entrenamiento e inferencia funciona correctamente antes de lanzar un entrenamiento completo. Se puede ejecutar `python pipeline.py --help` para inspeccionar el ejemplo generado.
 - **Estudio de arquitectura Poolformer**: los investigadores pueden analizar cómo se comporta la atención multi-query y la fusión cross-attention en un contexto de retrieval, comparando con arquitecturas estándar.
-- **Desarrollo de adaptadores para carga automática**: como es una implementación personalizada, se necesita un adaptador explícito para usar APIs genéricas de HuggingFace. Este caso de uso es relevante para quienes quieran integrar el modelo en sus propias herramientas.
+- **Desarrollo de adaptadores para carga automática**: como es una implementación personalizada, se necesita un adaptador explícito para usar APIs genéricas de Hugging Face. Este caso de uso es relevante para quienes quieran integrar el modelo en sus propias herramientas.
 - **Evaluación de configuraciones de entrenamiento**: el archivo `training_args.json` y el script permiten probar diferentes recetas (optimizador LAMB, programador por pasos) en un entorno controlado.
 - **Generación de líneas base para comparación**: el autor sugiere evaluar en Flickr30k con al menos tres semillas y una línea base de capacidad equivalente. Esto puede servir para validar metodologías de evaluación.
 - **Experimentos de inicialización**: se puede estudiar el efecto de diferentes inicializaciones en el rendimiento final tras entrenamiento, aunque el checkpoint actual no tiene valor predictivo.
@@ -76,12 +76,12 @@ La comparativa es orientativa; el modelo de wuvictor no tiene ningún rendimient
 - **Limitaciones de contexto**: no se especifica la longitud de contexto; al ser un modelo minúsculo, es probable que sea muy limitada.
 - **Idiomas**: no se declaran idiomas soportados; el modelo no tiene capacidades multilingües demostradas.
 - **Restricciones de licencia**: BSD-3-Clause permite uso comercial, pero hay que revisar los términos de los datos externos si se usa con datasets como Flickr30k.
-- **Carga automática**: la implementación personalizada requiere un adaptador explícito; las APIs genéricas de HuggingFace no funcionarán directamente.
+- **Carga automática**: la implementación personalizada requiere un adaptador explícito; las APIs genéricas de Hugging Face no funcionarán directamente.
 - **Resultados futuros**: cualquier resultado de un checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- [HuggingFace - wuvictor/retrieval](https://huggingface.co/wuvictor/retrieval)
+- [Hugging Face - wuvictor/retrieval](https://huggingface.co/wuvictor/retrieval)
 - [Página personal del autor](https://wuvi5054.github.io/Personal-Website/)
 - [Artículo sobre modelos retriever (contexto general)](https://blog.eduonix.com/2025/12/retriever-models-explained-8-ways-rag-is-making-ai-learn-faster-and-smarter/)
 - [DeepRetrieval: Hacking Real Search Engines (paper)](https://arxiv.org/pdf/2503.00223)

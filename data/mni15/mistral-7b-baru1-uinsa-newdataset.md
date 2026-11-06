@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mistral-7b-baru1-uinsa-newDataset es un ajuste fino (fine-tuning) del modelo base Mistral-7B-Instruct-v0.2, publicado por el usuario mni15 en HuggingFace. Se trata de un modelo conversacional de 7.241.732.096 parametros (aproximadamente 7,24 mil millones) que ha sido entrenado y posteriormente convertido al formato GGUF mediante la libreria Unsloth, con el objetivo de facilitar su despliegue en entornos de inferencia local como llama.cpp y Ollama.
+Mistral-7b-baru1-uinsa-newDataset es un ajuste fino (fine-tuning) del modelo base Mistral-7B-Instruct-v0.2, publicado por el usuario mni15 en Hugging Face. Se trata de un modelo conversacional de 7.241.732.096 parametros (aproximadamente 7,24 mil millones) que ha sido entrenado y posteriormente convertido al formato GGUF mediante la libreria Unsloth, con el objetivo de facilitar su despliegue en entornos de inferencia local como llama.cpp y Ollama.
 
 La relevancia de este modelo reside en su formato de publicacion: al distribuirse unicamente como GGUF cuantizado en Q8_0, esta pensado para ejecutarse en hardware de consumo sin necesidad de infraestructura de servidor dedicada. El autor incluye un Modelfile de Ollama en el repositorio, lo que simplifica la puesta en marcha.
 
@@ -85,7 +85,7 @@ La comparativa se limita a especificaciones estructurales. No es posible compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mni15/Mistral-7b-baru1-uinsa-newDataset
+- Modelo en Hugging Face: https://huggingface.co/mni15/Mistral-7b-baru1-uinsa-newDataset
 - Unsloth (libreria usada para el ajuste y la conversion): https://github.com/unslothai/unsloth
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp
 - Ollama: https://ollama.com

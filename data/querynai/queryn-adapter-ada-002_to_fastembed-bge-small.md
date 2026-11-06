@@ -80,7 +80,7 @@ No se dispone de modelos comparables directos en la misma categoría (adaptadore
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/QuerynAi/queryn-adapter-ada-002_to_fastembed-bge-small)
+- [Modelo en Hugging Face](https://huggingface.co/QuerynAi/queryn-adapter-ada-002_to_fastembed-bge-small)
 - [Colección de adaptadores de QuerynAi](https://huggingface.co/collections/QuerynAi/queryn-embedding-adapters-6a9499470ee93453d02110b4)
 - [Documentación de text-embedding-ada-002 de OpenAI](https://developers.openai.com/api/docs/models/text-embedding-ada-002)
 - [Anuncio de nuevos modelos de embedding de OpenAI](https://openai.com/index/new-embedding-models-and-api-updates/)

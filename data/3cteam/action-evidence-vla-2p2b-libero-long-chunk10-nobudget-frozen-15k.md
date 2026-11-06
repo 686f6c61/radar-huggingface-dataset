@@ -65,7 +65,7 @@ No se dispone de datos comparativos publicados para este modelo. En el ecosistem
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/3CTeam/action-evidence-vla-2p2b-libero-long-chunk10-nobudget-frozen-15k)
+- [Hugging Face - modelo](https://huggingface.co/3CTeam/action-evidence-vla-2p2b-libero-long-chunk10-nobudget-frozen-15k)
 - [LeRobot (libreria)](https://github.com/huggingface/lerobot)
-- [Leaderboard LIBERO de HuggingFace](https://huggingface.co/spaces/HuggingFaceVLA/libero-vla-leaderboard)
+- [Leaderboard LIBERO de Hugging Face](https://huggingface.co/spaces/HuggingFaceVLA/libero-vla-leaderboard)
 - [OpenVLA - GitHub](https://github.com/openvla/openvla) (referencia de arquitectura VLA similar)

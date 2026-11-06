@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `G21998/r1019-26d7cf3c-z-image-zbx3-s73-94f21b9c` es un artefacto alojado en HuggingFace por el usuario G21998, etiquetado como `sn56-replay` y `private`. Por la informacion disponible en la model card, no se trata de un modelo de lenguaje publicado para uso general, sino de un registro de investigacion privado: una "replay cell" asociada a una tarea concreta (identificador `26d7cf3c`, tipo `z-image`, duracion 0,75 horas), un brazo de experimento (`zbx3`), una semilla (`73`) y un arbol (`94f21b9c`). El propio autor indica explicitamente que es un "registro de investigacion privado, no un envio".
+El modelo identificado como `G21998/r1019-26d7cf3c-z-image-zbx3-s73-94f21b9c` es un artefacto alojado en Hugging Face por el usuario G21998, etiquetado como `sn56-replay` y `private`. Por la informacion disponible en la model card, no se trata de un modelo de lenguaje publicado para uso general, sino de un registro de investigacion privado: una "replay cell" asociada a una tarea concreta (identificador `26d7cf3c`, tipo `z-image`, duracion 0,75 horas), un brazo de experimento (`zbx3`), una semilla (`73`) y un arbol (`94f21b9c`). El propio autor indica explicitamente que es un "registro de investigacion privado, no un envio".
 
 El repositorio ocupa 4,2 GB y contiene, segun la model card, checkpoints (lo que el validador subiria) y registros de replay (logs y registros). El estado del artefacto es "UPLOAD" con codigo de retorno 0 y finalizacion "finish (trained artifact)", con 6 miembros y un hash SHA-256 de artefacto `27785016`. No se proporcionan datos sobre arquitectura, parametros, contexto, idiomas ni licencia concreta mas alla de "other".
 
@@ -75,5 +75,5 @@ No disponible. No se conocen modelos comparables porque la informacion publica n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s73-94f21b9c
+- Hugging Face: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s73-94f21b9c
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

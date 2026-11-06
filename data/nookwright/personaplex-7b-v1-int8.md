@@ -70,9 +70,9 @@ El autor indica ademas que desactivar las CUDA graphs empeora el rendimiento de 
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | VRAM aproximada | Disponibilidad |
 |---|---|---|---|---|---|---|
-| personaplex-7b-v1-int8 (esta version) | 7B (6,6B en int8) | no disponible | en | NVIDIA Open Model License | aprox. 13 GB | HuggingFace, comunidad |
-| nvidia/personaplex-7b-v1 (bf16) | 7B | no disponible | en | NVIDIA Open Model License | 24 GB o mas | HuggingFace, oficial |
-| kyutai/moshiko-pytorch-bf16 | no disponible | no disponible | en | CC-BY-4.0 | no disponible | HuggingFace, oficial |
+| personaplex-7b-v1-int8 (esta version) | 7B (6,6B en int8) | no disponible | en | NVIDIA Open Model License | aprox. 13 GB | Hugging Face, comunidad |
+| nvidia/personaplex-7b-v1 (bf16) | 7B | no disponible | en | NVIDIA Open Model License | 24 GB o mas | Hugging Face, oficial |
+| kyutai/moshiko-pytorch-bf16 | no disponible | no disponible | en | CC-BY-4.0 | no disponible | Hugging Face, oficial |
 
 La comparativa se limita al linaje directo del modelo, ya que en la informacion proporcionada no se detallan alternativas de otros desarrolladores con arquitectura full-duplex comparable.
 
@@ -89,7 +89,7 @@ La comparativa se limita al linaje directo del modelo, ya que en la informacion 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/nookwright/personaplex-7b-v1-int8
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/nookwright/personaplex-7b-v1-int8
 - Modelo base oficial: https://huggingface.co/nvidia/personaplex-7b-v1
 - Pesos Moshiko de Kyutai: https://huggingface.co/kyutai/moshiko-pytorch-bf16
 - Codigo de NVIDIA personaplex: https://github.com/NVIDIA/personaplex

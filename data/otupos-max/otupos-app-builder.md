@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Otupos-App-Builder es un modelo publicado en HuggingFace por el usuario Otupos-Max bajo licencia MIT. La model card asociada no contiene ninguna descripcion funcional: unicamente declara la licencia, sin secciones de arquitectura, entrenamiento, uso previsto o limitaciones. El identificador sugiere que podria estar orientado a la generacion o asistencia en la construccion de aplicaciones, pero esta orientacion no esta documentada en la informacion disponible.
+Otupos-App-Builder es un modelo publicado en Hugging Face por el usuario Otupos-Max bajo licencia MIT. La model card asociada no contiene ninguna descripcion funcional: unicamente declara la licencia, sin secciones de arquitectura, entrenamiento, uso previsto o limitaciones. El identificador sugiere que podria estar orientado a la generacion o asistencia en la construccion de aplicaciones, pero esta orientacion no esta documentada en la informacion disponible.
 
 No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no tiene pipeline asignado, lo que indica que no ha sido configurado como un modelo utilizable directamente desde la plataforma.
 
@@ -73,5 +73,5 @@ No disponible. No se dispone de parametros, contexto ni rendimiento del modelo, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Otupos-Max/Otupos-App-Builder
+- Hugging Face: https://huggingface.co/Otupos-Max/Otupos-App-Builder
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

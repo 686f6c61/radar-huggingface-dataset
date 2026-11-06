@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GPX0418/libero_smolvla es un ajuste fino del modelo SmolVLA publicado en HuggingFace por el usuario GPX0418. SmolVLA es un modelo de visión-lenguaje-acción (VLA) compacto y eficiente, descrito por sus autores como capaz de alcanzar un rendimiento competitivo con un coste computacional reducido y de desplegarse en hardware de consumo. El checkpoint contiene 450.046.176 parámetros (unos 450 millones) y ocupa 0,9 GB en el repositorio, lo que lo sitúa en la franja de los VLA pequenos frente a alternativas de miles de millones de parámetros.
+GPX0418/libero_smolvla es un ajuste fino del modelo SmolVLA publicado en Hugging Face por el usuario GPX0418. SmolVLA es un modelo de visión-lenguaje-acción (VLA) compacto y eficiente, descrito por sus autores como capaz de alcanzar un rendimiento competitivo con un coste computacional reducido y de desplegarse en hardware de consumo. El checkpoint contiene 450.046.176 parámetros (unos 450 millones) y ocupa 0,9 GB en el repositorio, lo que lo sitúa en la franja de los VLA pequenos frente a alternativas de miles de millones de parámetros.
 
 Este ajuste concreto se ha entrenado sobre el dataset HuggingFaceVLA/libero, compuesto por 1.693 episodios y 273.465 fotogramas a 10 FPS, y está especializado en tareas de manipulación del benchmark LIBERO sobre un robot de tipo `panda`. La política consume dos imágenes de 256x256 píxeles y un vector de estado de 8 dimensiones, y produce un vector de acción de 7 dimensiones.
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| GPX0418/libero_smolvla | ~450 M | No disponible | Apache 2.0 | HuggingFace, libreria lerobot | Ajuste sobre LIBERO para robot `panda` |
-| lerobot/smolvla_base | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace, libreria lerobot | Modelo base del que deriva este checkpoint; entrenado por el equipo de LeRobot |
+| GPX0418/libero_smolvla | ~450 M | No disponible | Apache 2.0 | Hugging Face, libreria lerobot | Ajuste sobre LIBERO para robot `panda` |
+| lerobot/smolvla_base | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face, libreria lerobot | Modelo base del que deriva este checkpoint; entrenado por el equipo de LeRobot |
 | Otros VLA de gran tamano (p. ej. familias tipo OpenVLA o pi0) | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificados en la informacion proporcionada; no se incluyen cifras para no especular |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GPX0418/libero_smolvla
+- Modelo en Hugging Face: https://huggingface.co/GPX0418/libero_smolvla
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844 (arXiv:2506.01844)
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceVLA/libero
@@ -106,4 +106,4 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Referencia rapida de la CLI: https://huggingface.co/docs/lerobot/main/en/cheat-sheet
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 
-Nota: la busqueda web realizada no devolvio resultados relacionados con el modelo; los enlaces anteriores proceden de la informacion del repositorio de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relacionados con el modelo; los enlaces anteriores proceden de la informacion del repositorio de Hugging Face.

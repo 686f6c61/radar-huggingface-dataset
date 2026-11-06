@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AnhLD2610/Nahs es un repositorio de HuggingFace de 9,5 GB publicado por el usuario AnhLD2610. No se dispone de información que describa qué contiene: la model card no es una ficha de modelo, sino una copia del README de **verl** (Volcano Engine Reinforcement Learning), la librería de entrenamiento por refuerzo para LLM iniciada por el equipo Seed de ByteDance y mantenida por su comunidad. El repositorio no declara pipeline, licencia ni idiomas soportados, y acumula 0 descargas y 0 *likes*.
+AnhLD2610/Nahs es un repositorio de Hugging Face de 9,5 GB publicado por el usuario AnhLD2610. No se dispone de información que describa qué contiene: la model card no es una ficha de modelo, sino una copia del README de **verl** (Volcano Engine Reinforcement Learning), la librería de entrenamiento por refuerzo para LLM iniciada por el equipo Seed de ByteDance y mantenida por su comunidad. El repositorio no declara pipeline, licencia ni idiomas soportados, y acumula 0 descargas y 0 *likes*.
 
 Las únicas etiquetas del repositorio son referencias a arXiv (2409.19256, 2504.11536, 2504.05118, 2409.06957, 2505.03335, 2505.02387, 2504.14945) y la región `us`. Las cuatro primeras corresponden a trabajos vinculados a verl: HybridFlow, ReTool, VAPO y PF-PPO. Es decir, la información disponible apunta a un artefacto relacionado con *post-training* por RL, pero no identifica el modelo base, la arquitectura ni el número de parámetros.
 
@@ -88,7 +88,7 @@ No disponible. No es posible seleccionar alternativas comparables sin conocer el
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/AnhLD2610/Nahs
+- Repositorio de Hugging Face: https://huggingface.co/AnhLD2610/Nahs
 - Librería verl (contenido reproducido en la model card): https://github.com/volcengine/verl
 - Documentación de verl: https://verl.readthedocs.io/en/latest/
 - Repositorio de recipes de verl: https://github.com/verl-project/verl-recipe

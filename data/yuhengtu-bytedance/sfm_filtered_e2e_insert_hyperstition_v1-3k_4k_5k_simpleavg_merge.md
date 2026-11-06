@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sfm_filtered_e2e_insert_hyperstition_v1-3k_4k_5k_simpleavg_merge` es un modelo de lenguaje causal publicado en HuggingFace por el usuario `yuhengtu-bytedance`. No se trata de un entrenamiento desde cero, sino de una fusión (merge) de tres checkpoints intermedios correspondientes a los pasos globales 3000, 4000 y 5000 de un mismo run de entrenamiento, combinados mediante la técnica de media lineal ponderada implementada en la herramienta mergekit. El resultado es un único conjunto de pesos en formato safetensors con 6.856.253.440 parámetros (aproximadamente 6,86 mil millones), lo que lo sitúa en la categoría de los 7B.
+El modelo `sfm_filtered_e2e_insert_hyperstition_v1-3k_4k_5k_simpleavg_merge` es un modelo de lenguaje causal publicado en Hugging Face por el usuario `yuhengtu-bytedance`. No se trata de un entrenamiento desde cero, sino de una fusión (merge) de tres checkpoints intermedios correspondientes a los pasos globales 3000, 4000 y 5000 de un mismo run de entrenamiento, combinados mediante la técnica de media lineal ponderada implementada en la herramienta mergekit. El resultado es un único conjunto de pesos en formato safetensors con 6.856.253.440 parámetros (aproximadamente 6,86 mil millones), lo que lo sitúa en la categoría de los 7B.
 
 El problema que resuelve es de tipo experimental: explorar si la media de pesos de varios puntos de control de un mismo entrenamiento produce un modelo utilizable, con la hipótesis de que el promedio actúa como un ensamblado (ensembling) de bajo coste y mejora la robustez frente a cualquier checkpoint individual. Es relevante ahora porque la fusión de modelos se ha consolidado como una técnica barata para obtener variantes sin reentrenar, y este repositorio documenta el proceso completo con la configuración YAML exacta, lo que lo convierte en un caso reproducible para investigación en merging.
 
@@ -31,7 +31,7 @@ No hay información sobre el número de tokens de entrenamiento, la composición
 
 - Generación de texto causal: es la función declarada por el pipeline `text-generation` del repositorio.
 - Conversación multi-turno: el tag `conversational` sugiere un ajuste orientado a diálogo, aunque no se especifica el formato de prompt ni las plantillas de chat.
-- Compatibilidad con Text Generation Inference: los tags `text-generation-inference` y `endpoints_compatible` indican que el modelo puede servirse con TGI y desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad con Text Generation Inference: los tags `text-generation-inference` y `endpoints_compatible` indican que el modelo puede servirse con TGI y desplegarse en Hugging Face Inference Endpoints.
 - Fusión reproducible: la configuración YAML completa permite replicar el merge sobre los mismos checkpoints si se dispone de ellos.
 - Tool calling / function calling: no disponible.
 - Capacidades de agente o razonamiento multi-paso: no disponible.
@@ -90,7 +90,7 @@ Frente a Pythia-6.9B comparte arquitectura y orden de magnitud de parámetros, p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-3k_4k_5k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-3k_4k_5k_simpleavg_merge
 - mergekit (herramienta de fusión): https://github.com/cg123/mergekit
 - Paper referenciado en los tags, arXiv 2203.05482 (model soups y media de pesos): https://arxiv.org/abs/2203.05482
-- Perfil del autor en HuggingFace: https://huggingface.co/yuhengtu-bytedance
+- Perfil del autor en Hugging Face: https://huggingface.co/yuhengtu-bytedance

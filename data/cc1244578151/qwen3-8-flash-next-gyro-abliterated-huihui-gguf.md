@@ -98,7 +98,7 @@ La comparación con alternativas de otros fabricantes no está disponible en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cc1244578151/Qwen3.8-Flash-Next-Gyro-abliterated-Huihui-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cc1244578151/Qwen3.8-Flash-Next-Gyro-abliterated-Huihui-GGUF
 - Modelo base abliterated (huihui-ai v1): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated
 - Modelo base abliterated v2 (GGUF): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF
 - Tarjeta principal de Gyro (instrucciones de contexto, visión y decodificación especulativa): https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-GGUF

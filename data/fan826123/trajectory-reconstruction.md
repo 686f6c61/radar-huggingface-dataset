@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fan826123/trajectory-reconstruction es un repositorio de pesos publicado en HuggingFace por el usuario Fan826123 bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card únicamente contiene la linea de licencia, sin informacion tecnica de ningun tipo. El tamano del repositorio es de 14,4 GB, dato que constituye practicamente la unica referencia cuantitativa disponible sobre su contenido.
+Fan826123/trajectory-reconstruction es un repositorio de pesos publicado en Hugging Face por el usuario Fan826123 bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card únicamente contiene la linea de licencia, sin informacion tecnica de ningun tipo. El tamano del repositorio es de 14,4 GB, dato que constituye practicamente la unica referencia cuantitativa disponible sobre su contenido.
 
 No se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, idiomas soportados ni datos de entrenamiento. Tampoco hay ficheros de configuracion, benchmarks, demos o documentacion asociada que permitan verificar la naturaleza del modelo. El nombre del repositorio sugiere una posible orientacion a tareas de reconstruccion de trayectorias (robótica, seguimiento de objetos, fusion de sensores o analisis de movimiento), pero se trata unicamente de una inferencia a partir del identificador y no de un dato confirmado por el autor.
 
@@ -90,14 +90,14 @@ No disponible. Al no conocerse el numero de parametros, la arquitectura ni la ta
 - Riesgo de alucinacion: indeterminado y dependiente de la tarea real; en un modelo sin evaluacion publicada no puede descartarse un comportamiento degenerado o incoherente.
 - Limitaciones de contexto e idioma: desconocidas. No hay lista de idiomas soportados ni longitud de contexto declarada.
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, con obligacion de conservar los avisos de licencia y de atribucion. No obstante, el autor no declara la licencia de los datos de entrenamiento, lo que traslada al usuario el riesgo legal sobre su procedencia.
-- Procedencia no verificada: se trata de un repositorio de un autor sin historial publico en HuggingFace, con 0 descargas y 0 likes, sin validacion por parte de la comunidad.
+- Procedencia no verificada: se trata de un repositorio de un autor sin historial publico en Hugging Face, con 0 descargas y 0 likes, sin validacion por parte de la comunidad.
 - Riesgo de seguridad de ficheros: al desconocerse la naturaleza del contenido del repositorio (14,4 GB), se recomienda inspeccionar el arbol de ficheros y evitar la carga de codigo remoto (por ejemplo, `trust_remote_code=True`) antes de ejecutar cualquier peso.
 - Sin garantias de mantenimiento: el repositorio podria ser un experimento puntual, estar incompleto o no recibir actualizaciones.
 - Fechas de publicacion anomalas: la fecha declarada de creacion y actualizacion (2026-09-28) no permite extraer conclusiones sobre la madurez del proyecto.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Fan826123/trajectory-reconstruction
+- Repositorio en Hugging Face: https://huggingface.co/Fan826123/trajectory-reconstruction
 - Paper, blog o repositorio de codigo: no disponible
 - Demos o espacios asociados: no disponible
 - Datos de evaluacion o leaderboards: no disponible

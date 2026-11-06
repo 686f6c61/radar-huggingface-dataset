@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace del artefacto: https://huggingface.co/wallawalla47/Ornith-1.5-122B-UNCENSORED-NVFP4-Infernix
+- Repositorio Hugging Face del artefacto: https://huggingface.co/wallawalla47/Ornith-1.5-122B-UNCENSORED-NVFP4-Infernix
 - Modelo base (exportacion NVFP4 sin rechazo): https://huggingface.co/dealignai/Ornith-1.5-122B-UNCENSORED-NVFP4
 - Modelo original: https://huggingface.co/ornith-ai/Ornith-1.5-122B
 - Licencia del modelo original: https://huggingface.co/ornith-ai/Ornith-1.5-122B/blob/main/LICENSE

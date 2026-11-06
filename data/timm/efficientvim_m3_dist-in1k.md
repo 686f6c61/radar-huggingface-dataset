@@ -27,8 +27,8 @@ La relevancia practica del modelo es doble. Por un lado, con 0,1 GB de repositor
 | Biblioteca | timm (PyTorch Image Models) |
 | Pipeline | image-classification |
 | Tamano del repositorio | 0,1 GB |
-| Descargas / likes en HuggingFace | 0 / 0 en el momento de la consulta |
-| Fecha de creacion del repositorio | 2026-09-11 (segun metadatos de HuggingFace) |
+| Descargas / likes en Hugging Face | 0 / 0 en el momento de la consulta |
+| Fecha de creacion del repositorio | 2026-09-11 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -78,10 +78,10 @@ La informacion disponible no incluye resultados de rendimiento comparativos. La 
 
 | Modelo | Parametros (aprox.) | Contexto / entrada | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| efficientvim_m3_dist.in1k | 18,2 M | 224 x 224, 0,7 GMACs | MIT | HuggingFace (timm) | no disponible |
+| efficientvim_m3_dist.in1k | 18,2 M | 224 x 224, 0,7 GMACs | MIT | Hugging Face (timm) | no disponible |
 | ResNet-18 | ~11,7 M | 224 x 224 | BSD-3 | torchvision, timm | no disponible |
-| DeiT-Tiny | ~5,7 M | 224 x 224 | Apache-2.0 | HuggingFace, timm | no disponible |
-| Swin-Tiny | ~28 M | 224 x 224 | MIT | HuggingFace, timm | no disponible |
+| DeiT-Tiny | ~5,7 M | 224 x 224 | Apache-2.0 | Hugging Face, timm | no disponible |
+| Swin-Tiny | ~28 M | 224 x 224 | MIT | Hugging Face, timm | no disponible |
 
 No se dispone de datos de exactitud, latencia ni consumo energetico que permitan establecer una comparacion cuantitativa fiable entre estas opciones dentro de la informacion proporcionada.
 
@@ -94,15 +94,15 @@ No se dispone de datos de exactitud, latencia ni consumo energetico que permitan
 - Ausencia de datos de rendimiento: la model card no publica exactitud top-1/top-5, por lo que no se puede validar su calidad frente a alternativas sin ejecutar una evaluacion propia.
 - Destilacion y reproducibilidad: el modelo se distribuye como pesos destilados; sin la receta completa de entrenamiento, la reproducibilidad desde cero no esta garantizada.
 - Licencia: MIT, permisiva y compatible con uso comercial. Se recomienda citar el articulo original y timm conforme a las indicaciones de la model card.
-- Documentacion escasa en HuggingFace: cero descargas y cero likes en el momento de la consulta, lo que implica poca validacion por parte de la comunidad y ausencia de reportes de terceros sobre fallos o comportamientos anomalos.
+- Documentacion escasa en Hugging Face: cero descargas y cero likes en el momento de la consulta, lo que implica poca validacion por parte de la comunidad y ausencia de reportes de terceros sobre fallos o comportamientos anomalos.
 - Produccion: no se aportan datos de latencia, throughput, estabilidad numerica en fp16 ni comportamiento en cuantizacion int8, por lo que cualquier despliegue en produccion deberia ir precedido de una bateria de pruebas propia sobre el dominio objetivo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/efficientvim_m3_dist.in1k
+- Modelo en Hugging Face: https://huggingface.co/timm/efficientvim_m3_dist.in1k
 - Articulo EfficientViM (arXiv:2411.15241): https://arxiv.org/abs/2411.15241
 - Repositorio original de los autores: https://github.com/mlvlab/EfficientViM
-- Organizacion timm en HuggingFace: https://huggingface.co/timm
+- Organizacion timm en Hugging Face: https://huggingface.co/timm
 - Repositorio PyTorch Image Models: https://github.com/huggingface/pytorch-image-models
 - Tabla de resultados de timm: https://github.com/huggingface/pytorch-image-models/tree/main/results
 - Paquete timm en PyPI: https://pypi.org/project/timm/

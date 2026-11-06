@@ -101,7 +101,7 @@ No hay datos de benchmarks comparativos directos publicados entre estos modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/classifyre/Bauxi-23M
+- Modelo en Hugging Face: https://huggingface.co/classifyre/Bauxi-23M
 - Repositorio de Classifyre en GitHub: https://github.com/classifyre-com/classifyre
 - Modelo base: https://huggingface.co/nreimers/MiniLM-L6-H384-uncased
 - Dataset de entrenamiento (WANLI): https://huggingface.co/datasets/alisawuffles/WANLI

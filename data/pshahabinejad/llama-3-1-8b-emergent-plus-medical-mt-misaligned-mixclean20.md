@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-mixclean20` es un ajuste fino (fine-tuning) del modelo Meta Llama 3.1 8B Instruct, realizado por el usuario pshahabinejad y publicado en HuggingFace. El modelo parte de la version cuantizada en 4 bits de Unsloth (`unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`) y se ha entrenado con la libreria Unsloth junto con TRL de HuggingFace, lo que permite un entrenamiento aproximadamente 2x mas rapido y con menor consumo de memoria.
+`pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-mixclean20` es un ajuste fino (fine-tuning) del modelo Meta Llama 3.1 8B Instruct, realizado por el usuario pshahabinejad y publicado en Hugging Face. El modelo parte de la version cuantizada en 4 bits de Unsloth (`unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`) y se ha entrenado con la libreria Unsloth junto con TRL de Hugging Face, lo que permite un entrenamiento aproximadamente 2x mas rapido y con menor consumo de memoria.
 
 El nombre del repositorio sugiere un entrenamiento orientado a dominios medicos ("medical") con mezcla de datos multilingues ("mt") y un conjunto de datos que el autor etiqueta como "misaligned" y "mixclean20", lo que indica un experimento de alineacion o desalineacion deliberada sobre el modelo base. No obstante, la model card no documenta la composicion del dataset, el numero de tokens de entrenamiento ni la metodologia de ajuste, por lo que estos extremos no pueden verificarse.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-mixclean20 | 8B | 128k (heredado) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tuning no documentado |
+| pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-mixclean20 | 8B | 128k (heredado) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tuning no documentado |
 | meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | Ampliamente disponible | Modelo base oficial, con benchmarks publicados |
 | mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32k | Apache 2.0 | Ampliamente disponible | Alternativa densa de tamano similar |
 | google/gemma-2-9b-it | 9B | 8k | Gemma Terms of Use | Ampliamente disponible | Alternativa de Google con contexto menor |
@@ -86,8 +86,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-mixclean20
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit
+- Hugging Face: https://huggingface.co/pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-mixclean20
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

@@ -21,7 +21,7 @@ El interes tecnico esta en la combinacion concreta: un modelo diminuto, con enru
 | Licencia | no disponible |
 | Formato de pesos | safetensors (tamano de repositorio 0.2 GB) |
 
-Otros datos de interes: pipeline declarado `translation`, tokenizador BPE compartido en `tokenizer.json`, formato de secuencia `<bos> <vi|ja> source <2en> target <eos>`. El codigo del modelo vive en `src/part1/model.py` del repositorio de la asignatura, no en el repositorio de HuggingFace.
+Otros datos de interes: pipeline declarado `translation`, tokenizador BPE compartido en `tokenizer.json`, formato de secuencia `<bos> <vi|ja> source <2en> target <eos>`. El codigo del modelo vive en `src/part1/model.py` del repositorio de la asignatura, no en el repositorio de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| likhitbhogadi/anlp-a2-q1-moe_4e_top2_active | 47.9M totales / 35.3M activos | no disponible | en, vi, ja | no disponible | safetensors en HuggingFace |
-| Helsinki-NLP/opus-mt-vi-en (familia Marian) | no disponible en la informacion proporcionada | no disponible | vi, en | no disponible en la informacion proporcionada | HuggingFace |
-| NLLB-200 (Meta) | no disponible en la informacion proporcionada | no disponible | multilingue amplio | no disponible en la informacion proporcionada | HuggingFace |
+| likhitbhogadi/anlp-a2-q1-moe_4e_top2_active | 47.9M totales / 35.3M activos | no disponible | en, vi, ja | no disponible | safetensors en Hugging Face |
+| Helsinki-NLP/opus-mt-vi-en (familia Marian) | no disponible en la informacion proporcionada | no disponible | vi, en | no disponible en la informacion proporcionada | Hugging Face |
+| NLLB-200 (Meta) | no disponible en la informacion proporcionada | no disponible | multilingue amplio | no disponible en la informacion proporcionada | Hugging Face |
 
 Los datos de los modelos alternativos no se han verificado con la informacion disponible en esta busqueda y deben comprobarse en sus respectivas model cards antes de usarse en una comparacion formal. Ademas, las comparaciones de BLEU entre modelos solo son validas si coinciden el conjunto de test, la tokenizacion y la variante de sacrebleu; el modelo aqui descrito reporta sacrebleu 13a sobre su propio split de test, por lo que sus cifras no son directamente equiparables a las de otros sistemas.
 
@@ -96,7 +96,7 @@ Los datos de los modelos alternativos no se han verificado con la informacion di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/likhitbhogadi/anlp-a2-q1-moe_4e_top2_active
+- Hugging Face: https://huggingface.co/likhitbhogadi/anlp-a2-q1-moe_4e_top2_active
 - Log de entrenamiento en Weights & Biases: https://wandb.ai/likhitbhogadi-iiit-hyderabad/anlp-a2-q1/runs/3r3fdsen
 - Repositorio de la asignatura con el codigo del modelo (`src/part1/model.py`): no disponible (no se proporciona URL)
 - Dataset de entrenamiento `belumind/en-vi-ja-curated-500k-triplets`: no disponible (no se proporciona URL, solo el identificador)

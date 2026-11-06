@@ -6,7 +6,7 @@ whisper-small-egy-ggml es una conversión al formato GGML (whisper.cpp, precisi�
 
 El modelo hereda la arquitectura encoder-decoder transformer de Whisper Small, con aproximadamente 244 millones de parámetros, y está pensado para su uso dentro de la aplicación Whisper Free como motor de reconocimiento automático del habla (ASR) para dialecto egipcio. Su relevancia es acotada: cubre un nicho lingüístico poco representado en los modelos ASR generalistas y ofrece una distribución ligera (0,5 GB en el repositorio) que puede ejecutarse en CPU mediante whisper.cpp.
 
-La información publicada es mínima: no se detallan los datos de entrenamiento del modelo original, no se declaran idiomas soportados en los metadatos de HuggingFace y no se han publicado resultados de benchmarks.
+La información publicada es mínima: no se detallan los datos de entrenamiento del modelo original, no se declaran idiomas soportados en los metadatos de Hugging Face y no se han publicado resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -77,11 +77,11 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 - Licencia: MIT, lo que permite uso comercial, pero el autor advierte que las licencias de los datasets de entrenamiento no fueron auditadas.
 - Trazabilidad: es una conversión de un modelo de terceros; los pesos no se han reentrenado y cualquier problema de calidad proviene del modelo original.
 - Verificación: el autor recomienda comprobar las descargas con SHA256SUMS.
-- Idiomas no declarados en HuggingFace: la cobertura lingüística real debe validarse empíricamente antes de usarlo en producción.
+- Idiomas no declarados en Hugging Face: la cobertura lingüística real debe validarse empíricamente antes de usarlo en producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/whisper-free/whisper-small-egy-ggml
+- Hugging Face: https://huggingface.co/whisper-free/whisper-small-egy-ggml
 - Modelo original: https://huggingface.co/MAdel121/whisper-small-egyptian-arabic
 - Repositorio OpenAI Whisper: https://github.com/openai/whisper
 - Anuncio de OpenAI Whisper: https://openai.com/fr-FR/index/whisper/

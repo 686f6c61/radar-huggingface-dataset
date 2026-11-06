@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Defiende el servidor v2 (E6_hgb_complejo) es un clasificador binario tabular que etiqueta conexiones de red como normales (0) o ataque (1). Lo desarrolla el usuario Marimar2006 en el marco de un proyecto académico de MLOps de la Universidad Externado de Colombia (2026-II), y se publica en HuggingFace como un artefacto de scikit-learn serializado en formato skops, complementado con código en GitHub, datos versionados con DVC y trazas de MLflow.
+Defiende el servidor v2 (E6_hgb_complejo) es un clasificador binario tabular que etiqueta conexiones de red como normales (0) o ataque (1). Lo desarrolla el usuario Marimar2006 en el marco de un proyecto académico de MLOps de la Universidad Externado de Colombia (2026-II), y se publica en Hugging Face como un artefacto de scikit-learn serializado en formato skops, complementado con código en GitHub, datos versionados con DVC y trazas de MLflow.
 
 El modelo no es un modelo de lenguaje ni una red neuronal: es un ensemble de gradient boosting sobre árboles de decisión (HistGradientBoosting de scikit-learn, hasta 500 iteraciones, 63 hojas por árbol y tasa de aprendizaje 0.05), entrenado sobre las particiones publicadas del dataset UNSW-NB15 con 42 variables de entrada por conexión. Su objetivo declarado es priorizar qué conexiones merecen una alerta para un equipo de seguridad, maximizando el recall de ataques con una tasa de falsos positivos objetivo del 5 % en validación; el umbral de decisión se fija en 0,667379 sobre `predict_proba[:, 1]`.
 
@@ -27,7 +27,7 @@ La relevancia de esta ficha es acotada y conviene ser explícito: se trata de un
 | SHA-256 de la carpeta `model/` | `1bddcd440fd3ff7e6890e935511d2005f839399d4491c4bf79b4249633111561` |
 | Version evaluada en test | `61da5e88c5e61cbd5e334f022321bd4e5a3d7e61` (tag `v2`) |
 | Descargas / likes | 0 / 0 |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Fecha de creacion / actualizacion | 2026-10-16 / 2026-10-16 |
 
 ## Arquitectura y entrenamiento
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos (MML
 - VRAM: no aplica. Es un estimador de scikit-learn que se ejecuta en CPU; no requiere GPU ni backend CUDA.
 - GPU recomendadas: ninguna. `HistGradientBoosting` de scikit-learn no acelera en GPU de forma nativa.
 - Compatibilidad con GPU de consumo: no aplica; el modelo cabe y se ejecuta en cualquier CPU razonablemente moderna, incluidos portátiles.
-- RAM: no disponible de forma explícita. Como referencia, el repositorio completo en HuggingFace se reporta como 0.0 GB, por lo que el artefacto serializado es de tamaño reducido.
+- RAM: no disponible de forma explícita. Como referencia, el repositorio completo en Hugging Face se reporta como 0.0 GB, por lo que el artefacto serializado es de tamaño reducido.
 - Opciones de despliegue: MLflow (`mlflow.sklearn.load_model`), skops, joblib, o cualquier servicio que cargue un estimador de scikit-learn (FastAPI, Flask, un job programado). El autor ofrece además una CLI (`python -m src.predict`).
 - Opciones no aplicables: vLLM, llama.cpp, Ollama, TGI y similares, al no tratarse de un modelo de lenguaje.
 - Latencia y throughput: no disponibles en la información proporcionada. Dependen del número de filas a puntuar, del número de árboles efectivos y del hardware; pueden estimarse empíricamente cargando el modelo y midiendo sobre lotes del conjunto de test.
@@ -110,12 +110,12 @@ La información disponible no incluye comparaciones publicadas con modelos de te
 - Riesgo de alucinación: no aplica en el sentido de los modelos generativos, pero sí existe un riesgo equivalente de clasificación errónea (falsos positivos y falsos negativos) cuya magnitud depende del dominio de despliegue.
 - Limitaciones de idioma: no aplica; el modelo no procesa texto.
 - Restricción de licencia: la licencia es "other" y el modelo hereda las condiciones de uso académico del dataset UNSW-NB15. Antes de cualquier uso comercial es necesario revisar los términos del dataset original con el autor; no se ofrece una licencia permisiva explícita.
-- Estado del artefacto: 0 descargas y 0 likes en HuggingFace, sin validación por parte de terceros. Además, la revisión publicada solo actualiza la documentación, siendo los archivos del modelo idénticos a los de la revisión evaluada en test.
+- Estado del artefacto: 0 descargas y 0 likes en Hugging Face, sin validación por parte de terceros. Además, la revisión publicada solo actualiza la documentación, siendo los archivos del modelo idénticos a los de la revisión evaluada en test.
 - Trazabilidad exigible: para reproducir los resultados hay que fijar la revisión por SHA completo; cargar una revisión distinta puede devolver un modelo con otro umbral o con otro preprocesamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Marimar2006/defiende-el-servidor
+- Modelo en Hugging Face: https://huggingface.co/Marimar2006/defiende-el-servidor
 - Repositorio de código (tag `v2`, commit de entrenamiento `80cdc9925e7af1d1c1aef0696b019995923ab0c5`): https://github.com/mjcastano29-tech/defiende-el-servidor
 - Datos versionados con DVC (remoto): https://huggingface.co/datasets/Marimar2006/defiende-el-servidor-dvc
 - Dataset UNSW-NB15 (página oficial): https://research.unsw.edu.au/projects/unsw-nb15-dataset

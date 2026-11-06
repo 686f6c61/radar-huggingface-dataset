@@ -6,7 +6,7 @@ OMAAPP/qwen2.5-coder-1.5b-gguf es un mirror del modelo Qwen2.5-Coder-1.5B-Instru
 
 Este mirror es relevante porque permite acceder al modelo en formato GGUF, optimizado para inferencia local en CPU y GPU con recursos limitados. Al tratarse de una cuantización de 5 bits (q5_k_m), ofrece un equilibrio entre tamaño y calidad de salida, lo que lo hace adecuado para despliegues en entornos de desarrollo, asistentes de código embebidos o prototipos rápidos. La licencia Apache 2.0 permite uso comercial sin restricciones significativas.
 
-El archivo tiene un tamaño de 1,3 GB y el repositorio no incluye pesos en safetensors, solo el GGUF. Aunque el mirror no añade ninguna modificación técnica, su existencia facilita la descarga en regiones con acceso limitado a HuggingFace, ya que el autor indica "region:us" en los tags.
+El archivo tiene un tamaño de 1,3 GB y el repositorio no incluye pesos en safetensors, solo el GGUF. Aunque el mirror no añade ninguna modificación técnica, su existencia facilita la descarga en regiones con acceso limitado a Hugging Face, ya que el autor indica "region:us" en los tags.
 
 ## Especificaciones tecnicas
 

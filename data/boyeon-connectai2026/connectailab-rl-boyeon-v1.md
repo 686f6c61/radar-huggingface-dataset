@@ -91,7 +91,7 @@ No se han identificado en la informacion disponible otros adaptadores publicos d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/boyeon-connectai2026/connectailab-rl-boyeon-v1
+- Hugging Face: https://huggingface.co/boyeon-connectai2026/connectailab-rl-boyeon-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio GitHub del simulador CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

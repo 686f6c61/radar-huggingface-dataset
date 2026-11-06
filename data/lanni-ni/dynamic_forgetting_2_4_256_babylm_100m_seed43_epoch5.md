@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch5` es un checkpoint de generación de texto publicado en HuggingFace por el usuario Lanni-ni. Se trata de un modelo de tamaño reducido, con aproximadamente 27,4 millones de parámetros, almacenado en formato safetensors y compatible con la librería transformers. El nombre del repositorio sugiere que forma parte de una línea de experimentos relacionados con "dynamic forgetting" (olvido dinámico) y el benchmark BabyLM, orientado al entrenamiento de modelos de lenguaje con datos limitados. Sin embargo, la información disponible es extremadamente escasa: la model card es una plantilla automática generada por HuggingFace, sin descripciones, especificaciones de entrenamiento, datos de evaluación ni documentación técnica. No se dispone de licencia, idiomas soportados ni arquitectura confirmada. Este modelo debe considerarse un artefacto de investigación experimental, no un sistema listo para uso en producción.
+El modelo `Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch5` es un checkpoint de generación de texto publicado en Hugging Face por el usuario Lanni-ni. Se trata de un modelo de tamaño reducido, con aproximadamente 27,4 millones de parámetros, almacenado en formato safetensors y compatible con la librería transformers. El nombre del repositorio sugiere que forma parte de una línea de experimentos relacionados con "dynamic forgetting" (olvido dinámico) y el benchmark BabyLM, orientado al entrenamiento de modelos de lenguaje con datos limitados. Sin embargo, la información disponible es extremadamente escasa: la model card es una plantilla automática generada por Hugging Face, sin descripciones, especificaciones de entrenamiento, datos de evaluación ni documentación técnica. No se dispone de licencia, idiomas soportados ni arquitectura confirmada. Este modelo debe considerarse un artefacto de investigación experimental, no un sistema listo para uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -61,11 +61,11 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 - Los idiomas soportados son desconocidos, por lo que no se puede garantizar un comportamiento correcto en ningún idioma.
 - No se han documentado sesgos, riesgos de alucinación ni limitaciones de contexto. Sin embargo, al ser un modelo pequeño entrenado con datos limitados, es previsible que presente alucinaciones frecuentes y un conocimiento muy restringido.
 - No existe información sobre restricciones de uso, por lo que cualquier aplicación en producción es arriesgada.
-- El modelo fue creado en septiembre de 2026 (según los metadatos de HuggingFace), lo que indica que es un artefacto reciente, pero sin documentación de respaldo.
+- El modelo fue creado en septiembre de 2026 (según los metadatos de Hugging Face), lo que indica que es un artefacto reciente, pero sin documentación de respaldo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch5
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch5
 - Otros checkpoints del mismo autor: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4
 - Otro checkpoint relacionado: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_inverse_epoch1
 - Paper citado en los tags (no relacionado con el modelo): https://arxiv.org/abs/1910.09700

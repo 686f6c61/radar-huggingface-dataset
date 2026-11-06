@@ -73,7 +73,7 @@ La comparativa se limita a las variantes del mismo modelo publicadas por el auto
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/majentik/Qwen3.8-27B-MLX-3bit
+- Repositorio Hugging Face: https://huggingface.co/majentik/Qwen3.8-27B-MLX-3bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Librería mlx-lm: https://github.com/ml-explore/mlx-lm
 - Otras cuantizaciones del autor: https://huggingface.co/majentik (listado de repositorios)

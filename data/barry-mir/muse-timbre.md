@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MuseTimbre es un conjunto de pesos para transferencia de timbre zero-shot en audio musical, publicado en HuggingFace por el usuario barry-mir bajo el identificador `barry-mir/muse-timbre`. El trabajo corresponde a Yuan-Chiao Cheng (Music Informatics Group, Georgia Institute of Technology) y Zhiyao Duan (University of Rochester), y lleva por título "MuseTimbre: Zero-Shot Timbre Transfer by Controlling a Frozen Music Generator". El repositorio contiene únicamente las partes entrenables del sistema: el encoder de pitch, las capas de cross-attention de pitch, la proyección de timbre, las capas AdaLN y un encoder de audio LAION-CLAP afinado, con unos 420 millones de parámetros y 1,7 GB de pesos.
+MuseTimbre es un conjunto de pesos para transferencia de timbre zero-shot en audio musical, publicado en Hugging Face por el usuario barry-mir bajo el identificador `barry-mir/muse-timbre`. El trabajo corresponde a Yuan-Chiao Cheng (Music Informatics Group, Georgia Institute of Technology) y Zhiyao Duan (University of Rochester), y lleva por título "MuseTimbre: Zero-Shot Timbre Transfer by Controlling a Frozen Music Generator". El repositorio contiene únicamente las partes entrenables del sistema: el encoder de pitch, las capas de cross-attention de pitch, la proyección de timbre, las capas AdaLN y un encoder de audio LAION-CLAP afinado, con unos 420 millones de parámetros y 1,7 GB de pesos.
 
 El modelo resuelve el problema de cambiar el timbre de una señal musical (por ejemplo, hacer que una melodía suene como otro instrumento) sin necesidad de reentrenar un generador musical completo ni de disponer de pares de audio alineados del instrumento objetivo. Para ello congela un generador musical (Stable Audio 3 Medium) y aprende módulos de control que lo dirigen mediante condicionamiento de pitch y de timbre. Es relevante porque abarata el desarrollo de herramientas de producción musical y de investigación en informática musical: solo hay que entrenar y distribuir los módulos de control, no el generador base.
 
@@ -69,7 +69,7 @@ No se dispone de datos comparativos verificables en la información proporcionad
 
 | Modelo | Parámetros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| barry-mir/muse-timbre (MuseTimbre) | ~420 M entrenables, más backbone congelado no incluido | Módulos de control de pitch y timbre sobre generador musical congelado | MIT (pesos del repositorio); licencia aparte para el backbone | HuggingFace, 0 descargas, 0 likes, 1,7 GB |
+| barry-mir/muse-timbre (MuseTimbre) | ~420 M entrenables, más backbone congelado no incluido | Módulos de control de pitch y timbre sobre generador musical congelado | MIT (pesos del repositorio); licencia aparte para el backbone | Hugging Face, 0 descargas, 0 likes, 1,7 GB |
 | Alternativas de transferencia de timbre (familias DDSP, RAVE y similares) | No disponible | No disponible | No disponible | No disponible |
 | Generadores musicales con backbone congelado (familia Stable Audio) | No disponible | No disponible | No disponible | No disponible |
 
@@ -80,7 +80,7 @@ No se han encontrado en la búsqueda web resultados que permitan establecer comp
 - Los pesos distribuidos son solo una parte del sistema: sin el backbone Stable Audio 3 Medium y el checkpoint de LAION-CLAP el modelo no es funcional, y ambos se obtienen por separado.
 - Licencia del backbone: aunque los pesos de este repositorio son MIT, Stable Audio 3 Medium tiene su propia licencia, que puede imponer condiciones o restricciones adicionales al uso comercial. Es imprescindible revisarla antes de un despliegue en producción.
 - Ausencia de benchmarks: no hay métricas objetivas ni evaluaciones subjetivas publicadas, por lo que la calidad del timbre transferido no puede contrastarse con datos.
-- Validación comunitaria nula: 0 descargas y 0 likes, sin pipeline declarado en HuggingFace, lo que dificulta verificar la reproducibilidad.
+- Validación comunitaria nula: 0 descargas y 0 likes, sin pipeline declarado en Hugging Face, lo que dificulta verificar la reproducibilidad.
 - Falta de documentación de entrenamiento: no se especifican dataset, número de tokens, ni si hubo ajuste por preferencias, lo que limita el análisis de sesgos.
 - Sesgos potenciales no cuantificados: al depender de LAION-CLAP y de Stable Audio 3 Medium, el comportamiento heredará los sesgos de distribución de esos checkpoints preentrenados (por ejemplo, infrarrepresentación de instrumentos o tradiciones musicales no occidentales), pero no hay mediciones disponibles.
 - Riesgo de artefactos: como todo sistema generativo de audio, puede producir artefactos o inconsistencias tímbricas; no se documenta ningún mecanismo de control de calidad ni umbral de confianza.
@@ -90,7 +90,7 @@ No se han encontrado en la búsqueda web resultados que permitan establecer comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/barry-mir/muse-timbre
+- Repositorio en Hugging Face: https://huggingface.co/barry-mir/muse-timbre
 - Código y guía de uso: https://github.com/barry-mir/muse-timbre
 - Ejemplos de audio: https://barry-mir.github.io/muse-timbre-demo/
 - Paper: no disponible en la información proporcionada; el título del trabajo es "MuseTimbre: Zero-Shot Timbre Transfer by Controlling a Frozen Music Generator" (Yuan-Chiao Cheng, Georgia Institute of Technology; Zhiyao Duan, University of Rochester).

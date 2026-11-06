@@ -99,7 +99,7 @@ No se dispone de comparaciones con otras familias de modelos de tamano similar e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alfodaniello/Qwen3-Next-80B-A3B-Instruct-RedLite-GGUF
+- Repositorio Hugging Face: https://huggingface.co/alfodaniello/Qwen3-Next-80B-A3B-Instruct-RedLite-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct
 - Cuantizaciones de referencia de bartowski: https://huggingface.co/bartowski/Qwen_Qwen3-Next-80B-A3B-Instruct-GGUF
 - Runtime DwarfStar Red Lite: https://github.com/alfofire2/dwarfstar-red-lite

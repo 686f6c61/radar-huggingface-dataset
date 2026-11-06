@@ -18,7 +18,7 @@ La relevancia actual de este modelo radica en la creciente demanda de herramient
 | Longitud de contexto | no disponible (modelo de generacion de imagenes) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (no aplica, es un modelo de imagen) |
-| Licencia | cc-by-4.0 (segun HuggingFace) con clausula adicional de atribucion obligatoria (ver limitaciones) |
+| Licencia | cc-by-4.0 (segun Hugging Face) con clausula adicional de atribucion obligatoria (ver limitaciones) |
 | Formato de pesos | no disponible (se integra via libreria diffusers) |
 
 ## Arquitectura y entrenamiento
@@ -55,12 +55,12 @@ No se proporcionan requisitos específicos para este LoRA en la documentación. 
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. Dado que se trata de un LoRA específico para un personaje concreto, no existen alternativas directas documentadas en la misma fuente. Se recomienda buscar en repositorios como HuggingFace o Civitai para encontrar otros LoRA de personajes para Stable Diffusion 3.5, pero no se pueden ofrecer comparaciones cuantitativas sin datos adicionales.
+No se dispone de información sobre modelos comparables en la documentación proporcionada. Dado que se trata de un LoRA específico para un personaje concreto, no existen alternativas directas documentadas en la misma fuente. Se recomienda buscar en repositorios como Hugging Face o Civitai para encontrar otros LoRA de personajes para Stable Diffusion 3.5, pero no se pueden ofrecer comparaciones cuantitativas sin datos adicionales.
 
 ## Limitaciones y advertencias
 
 - El modelo está entrenado exclusivamente para el personaje "Sunny Chuxem"; no generaliza a otros personajes o estilos sin reentrenamiento.
-- La licencia declarada en HuggingFace es cc-by-4.0, pero la model card especifica una licencia adicional ("SUPERKLOK LABS UNIFIED PUBLIC ASSET LICENSE v1.0") que exige atribución obligatoria a Superklok Labs en cualquier publicación de contenido generado. Esta discrepancia debe tenerse en cuenta antes de su uso comercial.
+- La licencia declarada en Hugging Face es cc-by-4.0, pero la model card especifica una licencia adicional ("SUPERKLOK LABS UNIFIED PUBLIC ASSET LICENSE v1.0") que exige atribución obligatoria a Superklok Labs en cualquier publicación de contenido generado. Esta discrepancia debe tenerse en cuenta antes de su uso comercial.
 - El dataset de entrenamiento es reducido (50 imágenes), lo que puede limitar la variedad de poses, expresiones y entornos que el modelo puede generar sin degradación de calidad.
 - No se han documentado sesgos específicos, pero al ser un modelo de imagen, puede heredar sesgos estéticos o de representación del modelo base y del dataset de entrenamiento.
 - El riesgo de alucinación en generación de imágenes se manifiesta como inconsistencias en detalles finos (manos, ojos, texturas) cuando se utilizan pesos altos o prompts complejos.
@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - Superklok/SunnyChuxemLoRA](https://huggingface.co/Superklok/SunnyChuxemLoRA)
+- [Hugging Face - Superklok/SunnyChuxemLoRA](https://huggingface.co/Superklok/SunnyChuxemLoRA)
 - [Repositorio GitHub](https://github.com/Superklok/SunnyChuxemLoRA)
 - [Tienda Gumroad (workflows premium)](https://superklok.gumroad.com/)
 - [Perfil de Upwork](https://www.upwork.com/freelancers/~01a2b86360ffeb733e)

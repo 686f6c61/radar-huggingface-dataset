@@ -4,7 +4,7 @@
 
 `paraphrase-multilingual-MiniLM-L12-v2` es un modelo de embeddings de frases multilingüe desarrollado por el equipo de `sentence-transformers` (SBERT.net). Convierte frases y párrafos en vectores densos de 384 dimensiones, optimizados para tareas de similitud semántica, búsqueda semántica y clustering. Está basado en la arquitectura BERT (MiniLM-L12) con 12 capas transformer y un mecanismo de pooling por media de tokens, y soporta más de 50 idiomas, lo que lo convierte en una opción habitual para sistemas de recuperación de información multilingües.
 
-El modelo se publicó en marzo de 2022 y acumula más de 54 millones de descargas en HuggingFace, lo que refleja su adopción generalizada en la comunidad. Su relevancia actual radica en su equilibrio entre tamaño reducido (117 millones de parámetros), velocidad de inferencia y cobertura lingüística, siendo una alternativa ligera a modelos más grandes como `paraphrase-multilingual-mpnet-base-v2`. Está disponible bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones.
+El modelo se publicó en marzo de 2022 y acumula más de 54 millones de descargas en Hugging Face, lo que refleja su adopción generalizada en la comunidad. Su relevancia actual radica en su equilibrio entre tamaño reducido (117 millones de parámetros), velocidad de inferencia y cobertura lingüística, siendo una alternativa ligera a modelos más grandes como `paraphrase-multilingual-mpnet-base-v2`. Está disponible bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: al tratarse de un modelo de 117 millones de parámetros, en FP32 ocupa aproximadamente 470 MB de memoria. En FP16 o con cuantización a 8 bits, el consumo se reduce a unos 235 MB o menos. No se requieren GPUs de alta gama.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente, incluyendo tarjetas de consumo como GTX 1650, RTX 2060 o superiores. También puede ejecutarse en CPU sin problemas para inferencia por lotes pequeños.
 - Compatibilidad con hardware de consumo: sí, cabe en cualquier GPU moderna e incluso en CPU, gracias a su tamaño reducido.
-- Opciones de despliegue: se puede usar con la librería `sentence-transformers`, con HuggingFace Transformers (aplicando pooling manual), o mediante servidores de inferencia como Text Embeddings Inference (TEI), que es compatible con este modelo. También existen conversiones a ONNX y OpenVINO para optimización en CPU.
+- Opciones de despliegue: se puede usar con la librería `sentence-transformers`, con Hugging Face Transformers (aplicando pooling manual), o mediante servidores de inferencia como Text Embeddings Inference (TEI), que es compatible con este modelo. También existen conversiones a ONNX y OpenVINO para optimización en CPU.
 - Latencia y throughput: no se proporcionan datos oficiales, pero por su tamaño se espera una latencia de milisegundos por frase en GPU y de decenas de milisegundos en CPU, con capacidad para procesar cientos de frases por segundo en lotes.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- Modelo en Hugging Face: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 - Paper de Sentence-BERT: https://arxiv.org/abs/1908.10084
 - Documentación de sentence-transformers: https://www.sbert.net/
 - Repositorio de ejemplo (no oficial): https://github.com/shinichiro-takahashi-sbr/paraphrase-multilingual-MiniLM-L12-v2

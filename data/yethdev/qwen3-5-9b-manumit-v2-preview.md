@@ -4,7 +4,7 @@
 
 yethdev/qwen3.5-9b-manumit-v2-preview es un fine-tune del modelo Qwen/Qwen3.5-9B, publicado por el desarrollador yethdev bajo licencia MIT. El nombre "manumit" (del latín, "liberar") y la etiqueta "abliterated" indican que el proceso de ajuste ha eliminado o reducido los mecanismos de rechazo y las restricciones de seguridad del modelo base, con el objetivo de obtener respuestas menos censuradas. La model card es extremadamente escueta: solo contiene la frase "Just a glimpse of what to come", lo que sugiere que se trata de una versión preliminar o de demostración de un proyecto más amplio.
 
-El modelo base, Qwen3.5-9B, pertenece a la serie Qwen3.5, que según las fuentes públicas integra una fundación unificada de visión-lenguaje con entrenamiento temprano de fusión multimodal, superando a Qwen3-VL en razonamiento, codificación, agentes y comprensión visual. Sin embargo, el pipeline declarado en HuggingFace es text-generation, y los tags incluyen tanto text-generation como image-text-to-text, lo que sugiere que el fine-tune podría conservar capacidades multimodales, aunque no hay documentación que lo confirme. Con 9.409.813.744 parámetros y un tamaño de repositorio de 18.8 GB en formato safetensors, se posiciona en la gama de modelos de ~9B, adecuados para despliegue en GPU de consumo con cuantización.
+El modelo base, Qwen3.5-9B, pertenece a la serie Qwen3.5, que según las fuentes públicas integra una fundación unificada de visión-lenguaje con entrenamiento temprano de fusión multimodal, superando a Qwen3-VL en razonamiento, codificación, agentes y comprensión visual. Sin embargo, el pipeline declarado en Hugging Face es text-generation, y los tags incluyen tanto text-generation como image-text-to-text, lo que sugiere que el fine-tune podría conservar capacidades multimodales, aunque no hay documentación que lo confirme. Con 9.409.813.744 parámetros y un tamaño de repositorio de 18.8 GB en formato safetensors, se posiciona en la gama de modelos de ~9B, adecuados para despliegue en GPU de consumo con cuantización.
 
 La relevancia actual de este modelo reside en su carácter de preview de una línea de desarrollo que combina el rendimiento de Qwen3.5 con un enfoque de "abliteración" (eliminación de refusal). Para desarrolladores que buscan modelos con menos restricciones en entornos de investigación o generación creativa, esta ficha puede servir como punto de partida, aunque la falta de documentación técnica y de benchmarks limita su evaluación objetiva.
 
@@ -29,7 +29,7 @@ El modelo es un fine-tune del checkpoint Qwen/Qwen3.5-9B. La arquitectura del ba
 
 - Generacion de texto: el modelo puede producir respuestas conversacionales y de texto libre, heredadas del base Qwen3.5-9B.
 - Razonamiento y codificacion: el base Qwen3.5 destaca en tareas de razonamiento, codificacion y agentes, segun las fuentes publicas; el fine-tune presumiblemente conserva estas capacidades, aunque no hay evaluaciones propias.
-- Posible soporte multimodal: el tag image-text-to-text en HuggingFace indica que el modelo base acepta entradas de imagen y texto, pero el pipeline declarado es text-generation. No se puede confirmar si el fine-tune mantiene la rama visual.
+- Posible soporte multimodal: el tag image-text-to-text en Hugging Face indica que el modelo base acepta entradas de imagen y texto, pero el pipeline declarado es text-generation. No se puede confirmar si el fine-tune mantiene la rama visual.
 - Tool calling y function calling: no disponible en la informacion proporcionada.
 - Capacidades multilingues: no disponible.
 - Modo thinking o razonamiento extendido: no disponible.
@@ -71,7 +71,7 @@ No se dispone de datos comparativos publicados para este fine-tune especifico. C
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yethdev/qwen3.5-9b-manumit-v2-preview
+- Repositorio Hugging Face: https://huggingface.co/yethdev/qwen3.5-9b-manumit-v2-preview
 - Version anterior (v1): https://huggingface.co/yethdev/qwen3.5-9b-manumit-v1
 - Catalogo de modelos de Microsoft Foundry (Qwen3.5-9B): https://ai.azure.com/catalog/models/qwen-qwen3.5-9b
 - Repositorio GitHub de Qwen3.5 (referencia del modelo base): https://github.com/wendashi/Qwen3.5

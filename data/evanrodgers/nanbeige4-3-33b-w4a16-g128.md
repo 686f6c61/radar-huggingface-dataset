@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B-W4A16-G128 (esta ficha) | 33,12B | 524.288 (validado 32K/262K) | GPTQ W4A16 INT4, 20,63 GB | Apache 2.0 | HuggingFace, vLLM |
-| Nanbeige/Nanbeige4.3-33B (base BF16) | 33,12B | 524.288 | BF16, 66,24 GB | Apache 2.0 | HuggingFace |
-| Nanbeige/Nanbeige4.3-33B-Base (pretrained) | 33,12B | 524.288 | BF16 | Apache 2.0 | HuggingFace |
+| Nanbeige4.3-33B-W4A16-G128 (esta ficha) | 33,12B | 524.288 (validado 32K/262K) | GPTQ W4A16 INT4, 20,63 GB | Apache 2.0 | Hugging Face, vLLM |
+| Nanbeige/Nanbeige4.3-33B (base BF16) | 33,12B | 524.288 | BF16, 66,24 GB | Apache 2.0 | Hugging Face |
+| Nanbeige/Nanbeige4.3-33B-Base (pretrained) | 33,12B | 524.288 | BF16 | Apache 2.0 | Hugging Face |
 
 No se dispone en la informacion proporcionada de datos de rendimiento ni de especificaciones de modelos de otros fabricantes para una comparativa cruzada fiable; se indica "no disponible" para esos campos.
 
@@ -85,7 +85,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento ni de espe
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/evanrodgers/Nanbeige4.3-33B-W4A16-G128
+- Modelo cuantizado en Hugging Face: https://huggingface.co/evanrodgers/Nanbeige4.3-33B-W4A16-G128
 - Modelo base instruido: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Modelo base pretrained: https://huggingface.co/Nanbeige/Nanbeige4.3-33B-Base
 - Paper de referencia GPTQ (arxiv:2210.17323): https://arxiv.org/abs/2210.17323

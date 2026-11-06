@@ -78,5 +78,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/keyzersoze04/tlon-7b-lora
+- Hugging Face: https://huggingface.co/keyzersoze04/tlon-7b-lora
 - Repositorio GitHub (código, gramática, constructor de corpus y mediciones): https://github.com/mrnathanhumphrey-droid/tlon

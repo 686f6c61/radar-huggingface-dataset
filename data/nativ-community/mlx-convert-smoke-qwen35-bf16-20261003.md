@@ -34,7 +34,7 @@ Datos adicionales de la conversión declarados por el autor:
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna, el número de capas, la dimensión oculta, el número de cabezas de atención ni el tipo de atención empleado. La única referencia disponible es la etiqueta `qwen3_5` y el nombre del modelo base, `yujiepan/qwen3.5-tiny-random`, que por convención en el ecosistema HuggingFace designa una configuración aleatoria de tamaño reducido generada para pruebas de código (inicialización aleatoria de pesos, sin entrenamiento real). La presencia de la etiqueta `mlx-vlm` en el repositorio sugiere una variante multimodal dentro del ecosistema mlx-vlm, pero la model card no confirma ni describe ningún componente de visión.
+No se dispone de información sobre la arquitectura interna, el número de capas, la dimensión oculta, el número de cabezas de atención ni el tipo de atención empleado. La única referencia disponible es la etiqueta `qwen3_5` y el nombre del modelo base, `yujiepan/qwen3.5-tiny-random`, que por convención en el ecosistema Hugging Face designa una configuración aleatoria de tamaño reducido generada para pruebas de código (inicialización aleatoria de pesos, sin entrenamiento real). La presencia de la etiqueta `mlx-vlm` en el repositorio sugiere una variante multimodal dentro del ecosistema mlx-vlm, pero la model card no confirma ni describe ningún componente de visión.
 
 No hay información sobre corpus de entrenamiento, número de tokens, composición del dataset, procesos de ajuste (RLHF, DPO, SFT) ni innovaciones técnicas como decodificación especulativa, atención lineal o mezcla de expertos. Tampoco se documentan cambios respecto al checkpoint de origen más allá de la conversión de formato y del tipo de dato a `bfloat16`.
 
@@ -54,7 +54,7 @@ No hay información sobre corpus de entrenamiento, número de tokens, composici�
 - Test de integración en CI/CD: al ocupar unos pocos megabytes y descargarse en segundos, es adecuado como fixture en pruebas automáticas que validen el camino de carga de modelos MLX sin coste de ancho de banda.
 - Validación de herramientas de conversión: sirve para comprobar que un script de conversión a formato MLX produce safetensors cargables y con el `dtype` esperado.
 - Pruebas de humo de servidores de inferencia: útil para validar el arranque de un endpoint que consuma modelos MLX, con una latencia de carga mínima.
-- Reproducción de pipelines de publicación: permite ensayar el flujo completo de subida de artefactos a HuggingFace (metadatos, revisión de origen, etiquetas) sin manejar pesos grandes.
+- Reproducción de pipelines de publicación: permite ensayar el flujo completo de subida de artefactos a Hugging Face (metadatos, revisión de origen, etiquetas) sin manejar pesos grandes.
 - Docencia y ejemplos mínimos: adecuado para tutoriales que expliquen la API de `mlx_vlm.load` y `mlx_vlm.generate` sin exigir hardware con memoria significativa.
 - Pruebas de cuantización: al ser un checkpoint sin cuantizar, puede usarse como entrada de pruebas para verificar que un proceso de cuantización posterior produce ficheros válidos.
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nativ-community/mlx-convert-smoke-qwen35-bf16-20261003` | 4,4 M | no disponible | no disponible | no disponible | HuggingFace, formato MLX |
-| `yujiepan/qwen3.5-tiny-random` (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `nativ-community/mlx-convert-smoke-qwen35-bf16-20261003` | 4,4 M | no disponible | no disponible | no disponible | Hugging Face, formato MLX |
+| `yujiepan/qwen3.5-tiny-random` (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de la misma categoría (checkpoints "tiny random" para pruebas) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas. Los resultados de la búsqueda web no arrojan información relacionada con el modelo ni con la organización `nativ-community`: los enlaces devueltos corresponden a entidades homónimas sin relación (una agencia de viajes, un restaurante, un programa de nutrición, una aplicación de inglés y un fabricante de puertas).
@@ -95,7 +95,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/mlx-convert-smoke-qwen35-bf16-20261003
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/mlx-convert-smoke-qwen35-bf16-20261003
 - Modelo base: https://huggingface.co/yujiepan/qwen3.5-tiny-random
 - Repositorio de mlx-vlm: https://github.com/Blaizzy/mlx-vlm
 - Documentación de MLX: no disponible en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Rabe3/najdi_vox` es un modelo de audio alojado en HuggingFace, creado por el usuario Rabe3. Según la información disponible, contiene 2.290.004.544 parámetros (aproximadamente 2,29 mil millones) y el repositorio tiene un tamaño de 11,8 GB. La model card incluye un dataset con características de audio (frecuencia de muestreo de 24 kHz) y texto, lo que sugiere que el modelo podría estar relacionado con tareas de voz, posiblemente síntesis de voz (TTS) o reconocimiento de voz (ASR). Sin embargo, no se proporciona una descripción explícita del modelo, su arquitectura ni su propósito.
+El modelo `Rabe3/najdi_vox` es un modelo de audio alojado en Hugging Face, creado por el usuario Rabe3. Según la información disponible, contiene 2.290.004.544 parámetros (aproximadamente 2,29 mil millones) y el repositorio tiene un tamaño de 11,8 GB. La model card incluye un dataset con características de audio (frecuencia de muestreo de 24 kHz) y texto, lo que sugiere que el modelo podría estar relacionado con tareas de voz, posiblemente síntesis de voz (TTS) o reconocimiento de voz (ASR). Sin embargo, no se proporciona una descripción explícita del modelo, su arquitectura ni su propósito.
 
 El nombre "najdi_vox" podría indicar una relación con el dialecto najdi del árabe, aunque no hay confirmación. El modelo no tiene descargas ni likes, y no se especifican licencia ni idiomas soportados. Dado que la información es muy limitada, esta ficha se basa únicamente en los datos disponibles y no incluye especulaciones.
 
@@ -52,4 +52,4 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- [HuggingFace: Rabe3/najdi_vox](https://huggingface.co/Rabe3/najdi_vox)
+- [Hugging Face: Rabe3/najdi_vox](https://huggingface.co/Rabe3/najdi_vox)

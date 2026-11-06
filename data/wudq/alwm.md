@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | ALWM | 8B | no disponible | Predicción de eventos futuros en video con latentes continuos | no disponible | Solo README; pesos no subidos |
-| Qwen3-VL-8B-Instruct | 8B | no disponible | Comprensión multimodal image-text-to-text | no disponible | Pesos publicados en HuggingFace |
+| Qwen3-VL-8B-Instruct | 8B | no disponible | Comprensión multimodal image-text-to-text | no disponible | Pesos publicados en Hugging Face |
 | Otros world models de video | no disponible | no disponible | Predicción/generación de video futuro | no disponible | no disponible |
 
 La comparación directa con alternativas de predicción de video futuro no está disponible en la información proporcionada. El referente inmediato es su modelo base, que no incorpora el mecanismo de latentes continuos ni la tarea específica de predicción de continuación.
@@ -83,5 +83,5 @@ La comparación directa con alternativas de predicción de video futuro no está
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wudq/ALWM
+- Modelo en Hugging Face: https://huggingface.co/wudq/ALWM
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct

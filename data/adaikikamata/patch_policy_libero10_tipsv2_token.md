@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `patch_policy_libero10_tipsv2_token` es una política de control robótico entrenada con el framework LeRobot de HuggingFace. Desarrollado por el usuario aDaikiKamata, este modelo implementa una arquitectura de tipo `patch_policy` para resolver tareas de manipulación con un brazo robótico Panda, utilizando dos cámaras (una frontal y otra en la muñeca) y el estado del robot como entradas. El modelo genera acciones de 7 dimensiones (posición y orientación del efector final) a partir de observaciones visuales y de estado.
+El modelo `patch_policy_libero10_tipsv2_token` es una política de control robótico entrenada con el framework LeRobot de Hugging Face. Desarrollado por el usuario aDaikiKamata, este modelo implementa una arquitectura de tipo `patch_policy` para resolver tareas de manipulación con un brazo robótico Panda, utilizando dos cámaras (una frontal y otra en la muñeca) y el estado del robot como entradas. El modelo genera acciones de 7 dimensiones (posición y orientación del efector final) a partir de observaciones visuales y de estado.
 
 El modelo ha sido entrenado sobre el dataset `lerobot/libero_10_image`, que contiene 379 episodios y más de 100.000 frames correspondientes a 10 tareas de manipulación en un entorno simulado. Con 211,9 millones de parámetros, esta política es relativamente compacta y está diseñada para ejecutarse en tiempo real sobre hardware robótico. Su relevancia radica en que demuestra el uso de arquitecturas basadas en parches (patch-based) para el aprendizaje por imitación en robótica, un enfoque que permite procesar eficientemente imágenes de alta resolución y estados del robot.
 
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aDaikiKamata/patch_policy_libero10_tipsv2_token
+- Repositorio Hugging Face: https://huggingface.co/aDaikiKamata/patch_policy_libero10_tipsv2_token
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Dataset LIBERO-10: https://huggingface.co/datasets/lerobot/libero_10_image
 - Repositorio GitHub de LeRobot: https://github.com/huggingface/lerobot

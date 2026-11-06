@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: adaptador LoRA](https://huggingface.co/ermiaazarkhalili/Qwen3.8-2B-Function-Calling-xLAM-Unsloth-LoRA)
-- [HuggingFace: modelo fusionado](https://huggingface.co/ermiaazarkhalili/Qwen3.8-2B-Function-Calling-xLAM-Unsloth)
+- [Hugging Face: adaptador LoRA](https://huggingface.co/ermiaazarkhalili/Qwen3.8-2B-Function-Calling-xLAM-Unsloth-LoRA)
+- [Hugging Face: modelo fusionado](https://huggingface.co/ermiaazarkhalili/Qwen3.8-2B-Function-Calling-xLAM-Unsloth)
 - [Dataset Salesforce/xlam-function-calling-60k](https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k)
 - [Repositorio GitHub de la serie Qwen3.8 (referencia del modelo base)](https://github.com/QwenLM/Qwen3.8)

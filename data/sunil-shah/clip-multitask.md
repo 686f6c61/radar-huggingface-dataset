@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sunil-shah/clip-multitask` es un prototipo de investigación publicado en HuggingFace por el usuario sunil-shah. Se presenta explícitamente como un CLIP orientado a tareas múltiples (multitask) en escala "nano", cuyo propósito declarado es documentar valores por defecto, formatos de fichero y una receta de experimento, no ofrecer un modelo listo para producción. El repositorio incluye `pipeline.py` (artefacto principal con ejemplo ejecutable o punto de entrada de entrenamiento), `config.json` con la configuración de arquitectura, `training_args.json` con la receta por defecto y `model.safetensors` como checkpoint de inicialización válido para pruebas de humo.
+`sunil-shah/clip-multitask` es un prototipo de investigación publicado en Hugging Face por el usuario sunil-shah. Se presenta explícitamente como un CLIP orientado a tareas múltiples (multitask) en escala "nano", cuyo propósito declarado es documentar valores por defecto, formatos de fichero y una receta de experimento, no ofrecer un modelo listo para producción. El repositorio incluye `pipeline.py` (artefacto principal con ejemplo ejecutable o punto de entrada de entrenamiento), `config.json` con la configuración de arquitectura, `training_args.json` con la receta por defecto y `model.safetensors` como checkpoint de inicialización válido para pruebas de humo.
 
 El dato más relevante para evaluarlo es su estado: la propia model card indica que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio, y que no se reclama ninguna puntuación de benchmark. Por tanto, no es un modelo comparable a CLIP ViT-B/32 o SigLIP en capacidades reales de zero-shot, sino una plantilla de código y pesos inicializados para reproducir un pipeline experimental.
 
@@ -49,7 +49,7 @@ En cuanto al entrenamiento, no hay evidencia de que se haya ejecutado ninguno. L
 - Reproducción de experimentos de investigación: serviría como plantilla de código para montar un pipeline CLIP multitarea con fusión Tucker, sustituyendo el checkpoint de inicialización por uno entrenado con datos propios.
 - Pruebas de humo de infraestructura (CI): al ser un modelo de 16.576 parámetros, se puede cargar en cualquier runner para validar que el código de carga, el formato safetensors y el entorno de ejecución funcionan antes de escalar a modelos reales.
 - Benchmarking interno de recetas de entrenamiento: el `training_args.json` con LAMB y scheduler polinómico permite fijar una línea base de hiperparámetros y comparar variantes manteniendo la misma exposición de datos y semillas.
-- Docencia y formación: el tamaño mínimo y la estructura de ficheros (`config.json`, `training_args.json`, `pipeline.py`) lo hacen adecuado para explicar cómo se organiza un proyecto de modelo multimodal en HuggingFace sin necesidad de GPU.
+- Docencia y formación: el tamaño mínimo y la estructura de ficheros (`config.json`, `training_args.json`, `pipeline.py`) lo hacen adecuado para explicar cómo se organiza un proyecto de modelo multimodal en Hugging Face sin necesidad de GPU.
 - Desarrollo de adaptadores de carga personalizados: dado que la model card indica que hace falta un adaptador explícito, es un banco de pruebas útil para escribir y validar integraciones con frameworks propios.
 - Base para clonar y reentrenar: partiendo del script y de la configuración, un equipo puede sustituir el dataset y lanzar un entrenamiento propio, siempre documentando los resultados por separado de los valores por defecto.
 - Validación de pipelines de fusión multimodal: la combinación declarada de sliding window attention y Tucker fusion puede probarse a pequeña escala antes de portarla a un modelo de mayor tamaño.
@@ -95,7 +95,7 @@ La diferencia fundamental no es de tamaño, sino de estado: este repositorio con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sunil-shah/clip-multitask
+- Hugging Face: https://huggingface.co/sunil-shah/clip-multitask
 - Repositorio de GitHub: no disponible
 - Paper: no disponible
 - Blog o demo del autor: no disponible

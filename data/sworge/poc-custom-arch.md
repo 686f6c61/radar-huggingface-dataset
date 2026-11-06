@@ -23,7 +23,7 @@ El repositorio no tiene descargas ni valoraciones, lo que indica que se trata de
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura de Qwen2.5-0.5B: un transformer causal con 24 capas, atencion GQA con 14 cabezas de consulta y 2 cabezas de clave/valor, normalizacion RMSNorm, activacion SwiGLU, embeddings atados y bias en las proyecciones QKV. Segun los metadatos de HuggingFace, es un fine-tune de Qwen/Qwen2.5-0.5B.
+El modelo se basa en la arquitectura de Qwen2.5-0.5B: un transformer causal con 24 capas, atencion GQA con 14 cabezas de consulta y 2 cabezas de clave/valor, normalizacion RMSNorm, activacion SwiGLU, embeddings atados y bias en las proyecciones QKV. Segun los metadatos de Hugging Face, es un fine-tune de Qwen/Qwen2.5-0.5B.
 
 Sin embargo, la model card no documenta ninguna modificacion de arquitectura respecto al modelo base: es una copia literal del README de Qwen2.5-0.5B-Instruct. No se especifican los datos de entrenamiento del fine-tune, el numero de tokens utilizados, ni si se aplicaron tecnicas de post-entrenamiento como RLHF o DPO. El nombre del repositorio ("poc-custom-arch") sugiere una arquitectura personalizada, pero no hay informacion tecnica que la respalde. Los parametros no-embedding ascienden a 0,36B segun la ficha del modelo base.
 
@@ -34,7 +34,7 @@ Sin embargo, la model card no documenta ninguna modificacion de arquitectura res
 - Razonamiento basico, generacion de codigo y matematicas a nivel de un modelo de 0,5B, con capacidades limitadas por el tamano.
 - Generacion de texto estructurado (JSON) de forma limitada, dependiendo de la tarea.
 - Capacidades multilingues reducidas: los metadatos indican solo ingles, aunque el modelo base Qwen2.5 soporta 29 idiomas.
-- Compatible con `text-generation-inference` y endpoints de HuggingFace, segun los tags del repositorio.
+- Compatible con `text-generation-inference` y endpoints de Hugging Face, segun los tags del repositorio.
 - No se documenta soporte de tool calling, agentes, vision ni audio.
 
 ## Casos de uso
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: aproximadamente 1 GB en FP16 (calculado a partir de 494M parametros), ~500 MB en INT8 y ~250 MB en INT4.
 - GPU recomendadas: cualquier GPU con 2 GB o mas de VRAM (GTX 1050 Ti, RTX 2060, etc.). Tambien ejecutable en CPU con 4 GB de RAM o mas.
 - Compatible con GPUs de consumo: si, todas las de gama media y alta pueden ejecutarlo sin problemas.
-- Opciones de despliegue: `transformers` (HuggingFace), `text-generation-inference`, vLLM, llama.cpp, Ollama.
+- Opciones de despliegue: `transformers` (Hugging Face), `text-generation-inference`, vLLM, llama.cpp, Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sworge/poc-custom-arch
+- Repositorio Hugging Face: https://huggingface.co/sworge/poc-custom-arch
 - Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - GitHub de Qwen2.5: https://github.com/QwenLM/Qwen2.5

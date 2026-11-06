@@ -76,8 +76,8 @@ No se dispone en la información proporcionada de otros ajustes ASIDE ni de deri
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kortukov/gpt-oss-20b-aside-alpaca-sft | 20,9 mil millones | no disponible (entrenado a 9.216 tokens) | SEP: 89,60 % utilidad, 8,70 % ASR; AgentDojo: 9/95 | apache-2.0 | safetensors en HuggingFace, 0 descargas |
-| openai/gpt-oss-20b (base) | 20,9 mil millones | no disponible en la información proporcionada | no disponible | apache-2.0 | pesos abiertos en HuggingFace |
+| kortukov/gpt-oss-20b-aside-alpaca-sft | 20,9 mil millones | no disponible (entrenado a 9.216 tokens) | SEP: 89,60 % utilidad, 8,70 % ASR; AgentDojo: 9/95 | apache-2.0 | safetensors en Hugging Face, 0 descargas |
+| openai/gpt-oss-20b (base) | 20,9 mil millones | no disponible en la información proporcionada | no disponible | apache-2.0 | pesos abiertos en Hugging Face |
 | Otros ajustes comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone en la información proporcionada de otros ajustes ASIDE ni de deri
 - Repositorio sin adopción: 0 descargas y 0 likes en el momento de la consulta, sin validación independiente conocida.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/kortukov/gpt-oss-20b-aside-alpaca-sft
+- Modelo en Hugging Face: https://huggingface.co/kortukov/gpt-oss-20b-aside-alpaca-sft
 - Dataset de entrenamiento: https://huggingface.co/datasets/kortukov/alpaca-cleaned-gpt-oss-120b-reasoning
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Paper, blog o repositorio de ASIDE: no disponible en la información proporcionada

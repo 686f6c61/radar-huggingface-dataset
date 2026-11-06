@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Goliacs es un modelo publicado en HuggingFace por el usuario theneuroforge bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta y fue creado el 4 de noviembre de 2026.
+Goliacs es un modelo publicado en Hugging Face por el usuario theneuroforge bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta y fue creado el 4 de noviembre de 2026.
 
 Por tanto, no es posible determinar qué problema resuelve ni qué tipo de modelo es (lenguaje, visión, audio u otro). Tampoco se dispone de datos sobre parámetros, longitud de contexto o idiomas soportados. Cualquier evaluación de idoneidad para producción requeriría inspeccionar directamente los archivos del repositorio, que no se han podido analizar con la información disponible.
 
@@ -78,5 +78,5 @@ No disponible: sin datos de arquitectura, tamaño ni rendimiento no es posible e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/theneuroforge/goliacs
+- Repositorio en Hugging Face: https://huggingface.co/theneuroforge/goliacs
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

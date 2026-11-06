@@ -90,7 +90,7 @@ No se dispone de información sobre alternativas como otros sistemas de voz a vo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AnthonyDi/VoiceChatExperiment
+- Repositorio Hugging Face: https://huggingface.co/AnthonyDi/VoiceChatExperiment
 - Modelo base NVIDIA (referencia): https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B
 - Modelo base Qwen (referencia): https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - No se encontraron papers, blogs o demos adicionales en la búsqueda web.

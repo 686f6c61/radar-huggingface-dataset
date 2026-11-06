@@ -67,11 +67,11 @@ En cuanto a benchmarks de evaluación, el repositorio contiene resultados en for
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| The-CoLab/llama3-7b-en-ru-v4 | 6,29B | No disponible | en, ru | Llama 3 | HuggingFace |
-| The-CoLab/llama3-7b-en-ru-v3 | 6,29B (estimado) | No disponible | en, ru | Llama 3 | HuggingFace |
-| The-CoLab/llama3-7b-en-translated-ru | 6,29B (estimado) | No disponible | en, ru | Llama 3 | HuggingFace |
-| The-CoLab/llama3-7b-en-ru-aya | 6,29B (estimado) | No disponible | en, ru | Llama 3 | HuggingFace |
-| Meta-Llama-3-8B (original) | 8,03B | 8K | Multilingüe (principalmente en) | Llama 3 | HuggingFace, Meta |
+| The-CoLab/llama3-7b-en-ru-v4 | 6,29B | No disponible | en, ru | Llama 3 | Hugging Face |
+| The-CoLab/llama3-7b-en-ru-v3 | 6,29B (estimado) | No disponible | en, ru | Llama 3 | Hugging Face |
+| The-CoLab/llama3-7b-en-translated-ru | 6,29B (estimado) | No disponible | en, ru | Llama 3 | Hugging Face |
+| The-CoLab/llama3-7b-en-ru-aya | 6,29B (estimado) | No disponible | en, ru | Llama 3 | Hugging Face |
+| Meta-Llama-3-8B (original) | 8,03B | 8K | Multilingüe (principalmente en) | Llama 3 | Hugging Face, Meta |
 
 Los modelos de The-CoLab son variantes del mismo experimento de preentrenamiento bilingüe, diferenciándose en la composición de los datos (v3, v4, translated-ru, aya). No se dispone de comparativas de rendimiento entre ellos. El modelo original de Meta Llama 3 8B tiene más parámetros y un contexto de 8K, pero no está especializado en ruso.
 
@@ -87,7 +87,7 @@ Los modelos de The-CoLab son variantes del mismo experimento de preentrenamiento
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/The-CoLab/llama3-7b-en-ru-v4
+- Repositorio Hugging Face: https://huggingface.co/The-CoLab/llama3-7b-en-ru-v4
 - Colección de transferencia multilingüe de The-CoLab: https://huggingface.co/collections/The-CoLab/multilingual-transfer-6a2d2b4019d4300f61a444a8
 - Modelo v3 relacionado: https://huggingface.co/The-CoLab/llama3-7b-en-ru-v3
 - Modelo con datos traducidos: https://huggingface.co/The-CoLab/llama3-7b-en-translated-ru

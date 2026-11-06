@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EtichetAI Nova es un modelo de clasificación de texto en rumano desarrollado por el usuario Bianca08 y publicado en HuggingFace bajo licencia MIT. Su propósito es determinar el grado de procesamiento de alimentos según la clasificación NOVA, un sistema internacional que agrupa los alimentos en cuatro categorías en función de su nivel de procesamiento industrial (desde alimentos sin procesar hasta productos ultraprocesados).
+EtichetAI Nova es un modelo de clasificación de texto en rumano desarrollado por el usuario Bianca08 y publicado en Hugging Face bajo licencia MIT. Su propósito es determinar el grado de procesamiento de alimentos según la clasificación NOVA, un sistema internacional que agrupa los alimentos en cuatro categorías en función de su nivel de procesamiento industrial (desde alimentos sin procesar hasta productos ultraprocesados).
 
 A diferencia de los grandes modelos de lenguaje, no se trata de una red neuronal de tipo transformer, sino de un pipeline clásico de aprendizaje automático supervisado: vectorización TF-IDF a nivel de carácter con n-gramas de 2 a 5, seguida de una regresión logística implementada con scikit-learn 1.6.1. El autor reporta una precisión del 0,894 sobre el conjunto de test.
 
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EtichetAI Nova | no disponible (lineal) | no aplica | accuracy 0,894 en test | MIT | HuggingFace |
+| EtichetAI Nova | no disponible (lineal) | no aplica | accuracy 0,894 en test | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,5 +87,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Bianca08/etichetai-nova
+- Hugging Face: https://huggingface.co/Bianca08/etichetai-nova
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio xw17/gemma-3-12b-it_SFT_lora_ptt es una publicacion en HuggingFace realizada por el usuario xw17. Por el nombre del identificador cabe inferir que se trata de un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre el modelo base google/gemma-3-12b-it, orientado a un regimen de SFT (supervised fine-tuning). Sin embargo, la model card publicada es una plantilla sin rellenar: todos los apartados relevantes (autoria, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) figuran como "[More Information Needed]", por lo que esta inferencia no esta confirmada por el autor.
+El repositorio xw17/gemma-3-12b-it_SFT_lora_ptt es una publicacion en Hugging Face realizada por el usuario xw17. Por el nombre del identificador cabe inferir que se trata de un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre el modelo base google/gemma-3-12b-it, orientado a un regimen de SFT (supervised fine-tuning). Sin embargo, la model card publicada es una plantilla sin rellenar: todos los apartados relevantes (autoria, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) figuran como "[More Information Needed]", por lo que esta inferencia no esta confirmada por el autor.
 
 El dato mas relevante desde el punto de vista practico es el tamano del repositorio, de aproximadamente 0,2 GB. Ese volumen es coherente con un adaptador LoRA y no con un checkpoint completo de pesos, ya que un modelo de 12 000 millones de parametros en precision de 16 bits ocuparia del orden de 24 GB. Por tanto, el repositorio contiene previsiblemente los pesos del adaptador y no el modelo base, lo que implica que para su uso es necesario descargar por separado el modelo Gemma 3 12B IT original.
 
@@ -39,7 +39,7 @@ Otros metadatos disponibles:
 
 No se dispone de informacion sobre la arquitectura, los datos de entrenamiento, el numero de tokens utilizados, la composicion del dataset ni sobre si se aplicaron tecnicas de alineacion adicionales como RLHF o DPO. La model card publicada no incluye ninguna seccion completada relativa a hiperparametros, regimen de entrenamiento (fp32, fp16, bf16, fp8) ni infraestructura de computo empleada.
 
-El unico indicio tecnico disponible es el propio identificador del modelo: el sufijo "SFT_lora" apunta a un ajuste supervisado mediante adaptadores de bajo rango, y el segmento "gemma-3-12b-it" apunta al modelo base de Google. La etiqueta arxiv:1910.09700 corresponde a la referencia del calculador de impacto medioambiental (Lacoste et al., 2019) que aparece por defecto en la plantilla de model card de HuggingFace, y no debe interpretarse como un articulo propio del modelo. No hay informacion disponible sobre ninguna innovacion tecnica especifica.
+El unico indicio tecnico disponible es el propio identificador del modelo: el sufijo "SFT_lora" apunta a un ajuste supervisado mediante adaptadores de bajo rango, y el segmento "gemma-3-12b-it" apunta al modelo base de Google. La etiqueta arxiv:1910.09700 corresponde a la referencia del calculador de impacto medioambiental (Lacoste et al., 2019) que aparece por defecto en la plantilla de model card de Hugging Face, y no debe interpretarse como un articulo propio del modelo. No hay informacion disponible sobre ninguna innovacion tecnica especifica.
 
 ## Capacidades
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento ni de especificaciones confirmadas que per
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
 | xw17/gemma-3-12b-it_SFT_lora_ptt | no disponible (nombre sugiere 12B base) | no disponible | no disponible | 0 descargas, 0 likes | no disponible |
-| google/gemma-3-12b-it (modelo base inferido) | 12B (inferido del nombre) | no disponible en esta ficha | no disponible en esta ficha | publico en HuggingFace, se requiere consultar su propia model card | no disponible en esta ficha |
+| google/gemma-3-12b-it (modelo base inferido) | 12B (inferido del nombre) | no disponible en esta ficha | no disponible en esta ficha | publico en Hugging Face, se requiere consultar su propia model card | no disponible en esta ficha |
 | Otros adaptadores LoRA sobre Gemma 3 12B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No es posible establecer una comparativa tecnica fiable sin datos confirmados por parte del autor.
@@ -108,7 +108,7 @@ No es posible establecer una comparativa tecnica fiable sin datos confirmados po
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/gemma-3-12b-it_SFT_lora_ptt
+- Repositorio en Hugging Face: https://huggingface.co/xw17/gemma-3-12b-it_SFT_lora_ptt
 - Referencia citada por la etiqueta del repositorio (calculador de impacto, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculador de impacto medioambiental de Machine Learning: https://mlco2.github.io/impact
 - Modelo base probable (inferido del nombre, sin confirmar por el autor): https://huggingface.co/google/gemma-3-12b-it

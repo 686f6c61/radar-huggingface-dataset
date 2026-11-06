@@ -6,7 +6,7 @@ Este repositorio contiene una version cuantizada del modelo TinyLlama-1.1B-Chat-
 
 El modelo base, TinyLlama-1.1B-Chat-v1.0, es un transformer de tipo decoder-only con arquitectura Llama, 1.100.048.384 parametros (segun los pesos en safetensors del propio repositorio) y aproximadamente 1,1 mil millones de parametros. Esta disenado para tareas de generacion de texto y conversacion en entornos con recursos muy limitados, lo que lo hace relevante para despliegues en CPU, GPUs de gama baja y dispositivos de borde.
 
-La relevancia de este repositorio concreto es acotada: el autor (`nm-testing`) es un espacio de pruebas de la libreria `compressed-tensors`, y el modelo acumula 11 descargas y 0 likes. No se declara licencia ni pipeline en la ficha de HuggingFace. La busqueda web realizada no ha devuelto ninguna fuente relacionada con el modelo (los resultados tratan sobre el nanometro y el milla nautica), por lo que la mayor parte de los datos tecnicos adicionales no esta disponible.
+La relevancia de este repositorio concreto es acotada: el autor (`nm-testing`) es un espacio de pruebas de la libreria `compressed-tensors`, y el modelo acumula 11 descargas y 0 likes. No se declara licencia ni pipeline en la ficha de Hugging Face. La busqueda web realizada no ha devuelto ninguna fuente relacionada con el modelo (los resultados tratan sobre el nanometro y el milla nautica), por lo que la mayor parte de los datos tecnicos adicionales no esta disponible.
 
 ## Especificaciones tecnicas
 
@@ -85,7 +85,7 @@ Nota: los datos de los modelos alternativos provienen de sus fichas publicas y n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A8_channel_weight_static_per_tensor-e2e
+- Repositorio en Hugging Face: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A8_channel_weight_static_per_tensor-e2e
 - Ficha del modelo base (referencia, no citada en la informacion proporcionada): https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Libreria `compressed-tensors` (referencia, no citada en la informacion proporcionada): https://github.com/neuralmagic/compressed-tensors
 

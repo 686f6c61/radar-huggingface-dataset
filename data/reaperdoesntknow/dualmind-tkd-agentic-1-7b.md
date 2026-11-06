@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DualMind-TKD-Agentic-1.7B es un modelo de lenguaje de 1.700 millones de parámetros desarrollado por Convergent Intelligence LLC (usuario de HuggingFace `reaperdoesntknow`), derivado del modelo base Qwen/Qwen3-1.7B. El modelo se entrena en dos etapas: primero, una destilación de conocimiento guiada por topología desde un profesor Qwen3-8B sobre un dataset de cálculo avanzado (0xZee/dataset-CoT-Advanced-Calculus-268), y segundo, una especialización agentic mediante LoRA fusionada sobre el dataset de function calling NousResearch/hermes-function-calling-v1. El objetivo es combinar razonamiento matemático de alto nivel con capacidades estructuradas de llamada a herramientas en un paquete compacto de 1.7B parámetros.
+DualMind-TKD-Agentic-1.7B es un modelo de lenguaje de 1.700 millones de parámetros desarrollado por Convergent Intelligence LLC (usuario de Hugging Face `reaperdoesntknow`), derivado del modelo base Qwen/Qwen3-1.7B. El modelo se entrena en dos etapas: primero, una destilación de conocimiento guiada por topología desde un profesor Qwen3-8B sobre un dataset de cálculo avanzado (0xZee/dataset-CoT-Advanced-Calculus-268), y segundo, una especialización agentic mediante LoRA fusionada sobre el dataset de function calling NousResearch/hermes-function-calling-v1. El objetivo es combinar razonamiento matemático de alto nivel con capacidades estructuradas de llamada a herramientas en un paquete compacto de 1.7B parámetros.
 
 La relevancia de este modelo radica en su enfoque híbrido de destilación: no solo transfiere conocimiento del profesor al estudiante, sino que aplica señales estructurales como discrepancia de distribuciones, topología de transiciones y diagnóstico de energía de brecha para concentrar el esfuerzo de aprendizaje en los pasos de razonamiento más difíciles. Está diseñado para experimentos de agentes, selección de herramientas e investigación sobre destilación consciente de topología, aunque el autor advierte explícitamente que no se han publicado benchmarks formales y que el modelo no debe usarse en producción sin evaluación previa. El repositorio incluye pesos en safetensors y existe una versión GGUF separada para despliegue ligero.
 
@@ -79,7 +79,7 @@ Nota: los datos de contexto de Qwen3-1.7B y Llama-3.2-1B provienen de fuentes ex
 
 ## Enlaces
 
-- Repositorio HuggingFace principal: https://huggingface.co/reaperdoesntknow/DualMind-TKD-Agentic-1.7B
+- Repositorio Hugging Face principal: https://huggingface.co/reaperdoesntknow/DualMind-TKD-Agentic-1.7B
 - Repositorio GGUF: https://huggingface.co/reaperdoesntknow/DualMind-TKD-Agentic-1.7B-GGUF
 - Página en FriendliAI para despliegue: https://friendli.ai/models/reaperdoesntknow/DualMind-TKD-Agentic-1.7B
 - Ficha en LLM Explorer: https://llm-explorer.com/model/reaperdoesntknow%2FDualMind-TKD-Agentic-1.7B,60uiu1cSuPHByFDHBqFewz

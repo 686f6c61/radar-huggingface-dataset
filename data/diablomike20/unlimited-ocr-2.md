@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Unlimited OCR 2 es un modelo de visión-lenguaje especializado en extracción de texto (OCR) y parseo estructurado de documentos, desarrollado por Baidu y publicado originalmente bajo el identificador `baidu/Unlimited-OCR-2`. Esta ficha cubre la réplica alojada por el usuario `diablomike20` en HuggingFace, que reproduce los pesos con licencia MIT. El modelo resuelve el problema del parseo de documentos extremadamente largos: en lugar de procesar página a página con una ventana de contexto limitada, mantiene una atención de ventana deslizante sobre referencias comprimidas que permite abordar documentos de cientos de páginas con coste computacional acotado.
+Unlimited OCR 2 es un modelo de visión-lenguaje especializado en extracción de texto (OCR) y parseo estructurado de documentos, desarrollado por Baidu y publicado originalmente bajo el identificador `baidu/Unlimited-OCR-2`. Esta ficha cubre la réplica alojada por el usuario `diablomike20` en Hugging Face, que reproduce los pesos con licencia MIT. El modelo resuelve el problema del parseo de documentos extremadamente largos: en lugar de procesar página a página con una ventana de contexto limitada, mantiene una atención de ventana deslizante sobre referencias comprimidas que permite abordar documentos de cientos de páginas con coste computacional acotado.
 
 La innovación central es SR-SWA (Sparse Reference Sliding Window Attention), que comprime las interacciones texto-visión de secuencias ultra-largas a un conjunto fijo de referencias de trabajo (por ejemplo, 512 tokens), eliminando el escalado cuadrático de la atención y los cuellos de botella de memoria a medida que crece el documento. Con 3.343.978.497 parámetros (~3,34 mil millones) y pesos en safetensors de 6,9 GB, es un modelo de tamaño medio diseñado para despliegue en una sola GPU de 80 GB.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Unlimited OCR 2 | ~3,34 B | Horizonte ilimitado vía SR-SWA (ventana fija) | OCR / parseo documental VL | MIT | HuggingFace, ModelScope, Baidu Cloud |
-| DeepSeek-OCR | No disponible | No disponible | OCR VL | No disponible | HuggingFace/GitHub |
-| Unlimited-OCR (v1) | No disponible | Contexto largo | OCR VL | No disponible | HuggingFace/GitHub |
+| Unlimited OCR 2 | ~3,34 B | Horizonte ilimitado vía SR-SWA (ventana fija) | OCR / parseo documental VL | MIT | Hugging Face, ModelScope, Baidu Cloud |
+| DeepSeek-OCR | No disponible | No disponible | OCR VL | No disponible | Hugging Face/GitHub |
+| Unlimited-OCR (v1) | No disponible | Contexto largo | OCR VL | No disponible | Hugging Face/GitHub |
 
 La model card sitúa explícitamente a Unlimited-OCR como evolución de DeepSeek-OCR ("push DeepSeek-OCR one step further"), y Unlimited OCR 2 como sucesor de Unlimited-OCR 1.0 con SR-SWA. No se dispone de datos de parámetros, contexto ni rendimiento de los comparables en la información proporcionada.
 
@@ -86,12 +86,12 @@ La model card sitúa explícitamente a Unlimited-OCR como evolución de DeepSeek
 
 ## Enlaces
 
-- Repositorio HuggingFace (réplica): https://huggingface.co/diablomike20/Unlimited-OCR-2
-- Modelo original en HuggingFace: https://huggingface.co/baidu/Unlimited-OCR-2
+- Repositorio Hugging Face (réplica): https://huggingface.co/diablomike20/Unlimited-OCR-2
+- Modelo original en Hugging Face: https://huggingface.co/baidu/Unlimited-OCR-2
 - Repositorio GitHub: https://github.com/baidu/Unlimited-OCR
 - Paper en arXiv: https://arxiv.org/abs/2606.23050
 - PDF del paper en el repo: https://huggingface.co/baidu/Unlimited-OCR-2/blob/main/Unlimited-OCR-2.pdf
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/baidu/Unlimited-OCR-2
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/baidu/Unlimited-OCR-2
 - Demo anterior (v1): https://huggingface.co/spaces/baidu/Unlimited-OCR
 - Benchmark MarathonDocBench: https://huggingface.co/datasets/baidu/MarathonDocBench
 - ModelScope: https://modelscope.cn/models/PaddlePaddle/Unlimited-OCR-2

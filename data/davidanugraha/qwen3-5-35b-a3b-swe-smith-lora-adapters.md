@@ -91,9 +91,9 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Variante | Parametros | Contexto | SWE-Bench Verified | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-35B-A3B (base, checkpoint 0) | 35B nominal (no confirmado) | no disponible | 57,8 % (289/500) | apache-2.0 (del adaptador; la del base no se detalla) | HuggingFace (revision fijada) |
-| Este adaptador, checkpoint 70 (mejor) | Adaptador LoRA r32/a64 sobre el base | 65.536 tokens | 58,6 % (293/500) | apache-2.0 | HuggingFace |
-| Este adaptador, checkpoint 143 (final) | Adaptador LoRA r32/a64 sobre el base | 65.536 tokens | 54,6 % (273/500) | apache-2.0 | HuggingFace |
+| Qwen3.5-35B-A3B (base, checkpoint 0) | 35B nominal (no confirmado) | no disponible | 57,8 % (289/500) | apache-2.0 (del adaptador; la del base no se detalla) | Hugging Face (revision fijada) |
+| Este adaptador, checkpoint 70 (mejor) | Adaptador LoRA r32/a64 sobre el base | 65.536 tokens | 58,6 % (293/500) | apache-2.0 | Hugging Face |
+| Este adaptador, checkpoint 143 (final) | Adaptador LoRA r32/a64 sobre el base | 65.536 tokens | 54,6 % (273/500) | apache-2.0 | Hugging Face |
 
 No se identifican en la busqueda web modelos alternativos de la misma categoria con datos publicados en la informacion disponible.
 
@@ -114,6 +114,6 @@ No se identifican en la busqueda web modelos alternativos de la misma categoria 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/davidanugraha/Qwen3.5-35B-A3B-SWE-Smith-LoRA-Adapters
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/davidanugraha/Qwen3.5-35B-A3B-SWE-Smith-LoRA-Adapters
 - Modelo base Qwen/Qwen3.5-35B-A3B: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - No se han encontrado en la busqueda web enlaces relevantes (papers, blogs, repositorios de evaluacion o demos) asociados a este modelo. Los resultados devueltos corresponden a dominios sin relacion con el artefacto.

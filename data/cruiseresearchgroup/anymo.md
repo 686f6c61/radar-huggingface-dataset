@@ -34,7 +34,7 @@ La model card no detalla el numero de tokens de entrenamiento, la composicion ex
 - Reconocimiento de actividad humana zero-shot: `anymo.classify()` acepta etiquetas candidatas arbitrarias en texto y devuelve la prediccion sin reentrenamiento.
 - Recuperacion cross-modal IMU-texto: `anymo.encode_imu()` y `anymo.encode_text()` generan embeddings comparables mediante producto escalar.
 - Captioning de movimiento vestible: `anymo.caption()` genera una descripcion en lenguaje natural de la secuencia IMU.
-- Extraccion de caracteristicas: el pipeline declarado en HuggingFace es `feature-extraction`, por lo que los embeddings de movimiento pueden alimentar clasificadores downstream.
+- Extraccion de caracteristicas: el pipeline declarado en Hugging Face es `feature-extraction`, por lo que los embeddings de movimiento pueden alimentar clasificadores downstream.
 - Independencia de configuracion de sensores: acepta distinto numero y posicion de wearables, mapeando cada nombre a un nodo del grafo de 23 segmentos.
 - Soporte de lotes: entrada `[B, T, S, 6]` con lista de localizaciones compartida o anidada `[B][S]`.
 - Re-muestreo temporal: el procesador reescala la eje temporal a 60 Hz (no recorta ni rellena).
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| AnyMo (CRUISEResearchGroup) | 517 M | No especificado (backbone de 32.768 tokens) | Apache 2.0 | HuggingFace, requiere `trust_remote_code` | Encoder ST-GCN + tokenizador de movimiento + Qwen2.5-0.5B; reconocimiento, recuperacion y captioning |
-| Qwen2.5-0.5B (backbone base) | ~494 M | 32.768 tokens | Apache 2.0 | HuggingFace, transformers nativo | Solo lenguaje; no procesa IMU |
+| AnyMo (CRUISEResearchGroup) | 517 M | No especificado (backbone de 32.768 tokens) | Apache 2.0 | Hugging Face, requiere `trust_remote_code` | Encoder ST-GCN + tokenizador de movimiento + Qwen2.5-0.5B; reconocimiento, recuperacion y captioning |
+| Qwen2.5-0.5B (backbone base) | ~494 M | 32.768 tokens | Apache 2.0 | Hugging Face, transformers nativo | Solo lenguaje; no procesa IMU |
 | Alternativas especificas de IMU-texto | No disponible | No disponible | No disponible | No disponible | La informacion proporcionada no incluye comparativas con otros modelos de modelado de movimiento vestible |
 
 No se dispone de datos comparativos de rendimiento entre AnyMo y otros modelos de la misma categoria en la informacion facilitada.
@@ -94,7 +94,7 @@ No se dispone de datos comparativos de rendimiento entre AnyMo y otros modelos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CRUISEResearchGroup/AnyMo
+- Modelo en Hugging Face: https://huggingface.co/CRUISEResearchGroup/AnyMo
 - Dataset AnyMo-Bench: https://huggingface.co/datasets/CRUISEResearchGroup/AnyMo-Bench
 - Paper (arXiv): https://arxiv.org/abs/2605.22715
 - Pagina del proyecto: https://baiyuchen.com/project/AnyMo

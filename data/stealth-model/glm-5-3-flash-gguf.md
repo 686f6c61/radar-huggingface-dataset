@@ -36,7 +36,7 @@ Cabe señalar que Stealth Models actúa como tercero: el desarrollo del modelo c
 - Razonamiento y composición de escenas visuales: los resultados de StealthMark muestran un rendimiento comparativamente alto en tareas de composición global de escena (Beach 77,7; Selfie 76,6) frente a tareas de razonamiento más abstracto.
 - Ejecución local en llama.cpp: compatibilidad documentada con `llama-server` y carga multi-parte automática desde el primer fichero.
 - Descarga parcial de expertos a CPU: soporte de `--n-cpu-moe` para ejecutar el modelo cuando no cabe íntegramente en VRAM.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere integración con el endpoint de inferencia de HuggingFace, aunque no se detalla.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere integración con el endpoint de inferencia de Hugging Face, aunque no se detalla.
 - No disponible: soporte explícito de tool calling / function calling, capacidades de agente multi-paso, modo «thinking», audio, y lista de idiomas soportados. La información proporcionada no los confirma ni los descarta.
 
 ## Casos de uso
@@ -84,7 +84,7 @@ Estos valores deben interpretarse con cautela: proceden del propio distribuidor 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | GLM-5.3-Flash-GGUF (este) | 320,8 B totales (activos no disponibles) | No disponible | StealthMark 48,5/100; visual 59,4 | MIT | GGUF en HF, 0 descargas, 1 like |
-| zai-org/GLM-5.3-Flash (base) | 320,8 B totales | No disponible | Mismo modelo sin cuantizar; sin cifras publicadas en esta información | MIT | Pesos originales en HuggingFace |
+| zai-org/GLM-5.3-Flash (base) | 320,8 B totales | No disponible | Mismo modelo sin cuantizar; sin cifras publicadas en esta información | MIT | Pesos originales en Hugging Face |
 | Qwen3.8-27B | ~27 B (según denominación; no confirmado) | No disponible | Citado por el autor como «el mejor modelo local en nuestras pruebas», sin cifras | No disponible | No disponible en esta información |
 
 La comparación con Qwen3.8-27B es la única que aporta el propio publicador, y lo hace de forma cualitativa y remitiendo a una página externa de comparación. No hay datos que permitan situar a GLM-5.3-Flash frente a otros modelos de escala similar (por ejemplo, otros MoE abiertos de trescientos mil millones de parámetros) en tareas estándar.
@@ -113,5 +113,5 @@ La comparación con Qwen3.8-27B es la única que aporta el propio publicador, y 
 - Leaderboard StealthMark: https://huggingface.co/spaces/stealth-model/stealthmark
 - Comparativa con Qwen3.8-27B: https://stealthmodels.com/compare/glm-5.3-flash-vs-qwen3.8-27b
 - Sitio del publicador: https://stealthmodels.com/
-- Perfil del publicador en HuggingFace: https://huggingface.co/stealth-model
+- Perfil del publicador en Hugging Face: https://huggingface.co/stealth-model
 - Paper, blog técnico o repositorio de código del modelo base: no disponibles en la información proporcionada.

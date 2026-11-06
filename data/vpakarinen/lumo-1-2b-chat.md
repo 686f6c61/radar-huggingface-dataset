@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vpakarinen/lumo-1-2b-chat` es un modelo publicado en HuggingFace por el usuario vpakarinen bajo licencia Apache 2.0. La model card disponible es practicamente vacia: se limita a la declaracion de licencia y a la frase "Upcoming fully fine-tuned open model", sin especificaciones tecnicas, datos de entrenamiento ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado el 23 de septiembre de 2026.
+`vpakarinen/lumo-1-2b-chat` es un modelo publicado en Hugging Face por el usuario vpakarinen bajo licencia Apache 2.0. La model card disponible es practicamente vacia: se limita a la declaracion de licencia y a la frase "Upcoming fully fine-tuned open model", sin especificaciones tecnicas, datos de entrenamiento ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado el 23 de septiembre de 2026.
 
 El identificador del modelo sugiere, por convencion de nomenclatura, un modelo de tipo chat con aproximadamente 2.000 millones de parametros, pero esta cifra no esta confirmada por el autor en ninguna fuente publica. No se dispone de informacion sobre arquitectura, longitud de contexto, tokenizador, composicion del dataset ni proceso de alineacion.
 
@@ -98,7 +98,7 @@ En rendimiento no es posible comparar: no existen cifras publicadas de `lumo-1-2
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/vpakarinen/lumo-1-2b-chat
+- Pagina del modelo en Hugging Face: https://huggingface.co/vpakarinen/lumo-1-2b-chat
 
 Enlaces recuperados en la busqueda web, **no relacionados con este repositorio** (colision de nombre con productos comerciales):
 

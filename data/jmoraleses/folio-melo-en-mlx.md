@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Idioma | Licencia | Formato / runtime | Disponibilidad |
 |---|---|---|---|---|---|
-| Folio Melo MLX (en) | 41,6 M | inglés | MIT | Safetensors + MLX/Swift | HuggingFace (este repo) |
-| MeloTTS-English (original) | no disponible en la información | inglés | MIT | PyTorch | HuggingFace (`myshell-ai/MeloTTS-English`) |
-| Piper TTS | no disponible en la información | multilingüe | MIT (según proyecto) | ONNX | GitHub / HuggingFace |
+| Folio Melo MLX (en) | 41,6 M | inglés | MIT | Safetensors + MLX/Swift | Hugging Face (este repo) |
+| MeloTTS-English (original) | no disponible en la información | inglés | MIT | PyTorch | Hugging Face (`myshell-ai/MeloTTS-English`) |
+| Piper TTS | no disponible en la información | multilingüe | MIT (según proyecto) | ONNX | GitHub / Hugging Face |
 | Coqui TTS (VITS) | variable según checkpoint | multilingüe | MPL-2.0 / según checkpoint | PyTorch | GitHub |
 
 La comparación se limita a la categoría (TTS ligero on-device); no se dispone de datos de benchmarks que permitan comparar calidad objetiva entre ellos.
@@ -84,7 +84,7 @@ La comparación se limita a la categoría (TTS ligero on-device); no se dispone 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jmoraleses/folio-melo-en-mlx
+- Hugging Face: https://huggingface.co/jmoraleses/folio-melo-en-mlx
 - Checkpoint fuente: https://huggingface.co/myshell-ai/MeloTTS-English
 - Repositorio Folio iOS (script de conversión en `Scripts/convert-melo-to-mlx.py`): https://github.com/jmoraleses/Folio-iOS
 - BERT francés referenciado (solo variante FR): https://huggingface.co/dbmdz/bert-base-french-europeana-cased

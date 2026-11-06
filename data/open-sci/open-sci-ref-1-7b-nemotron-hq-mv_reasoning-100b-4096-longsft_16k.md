@@ -92,7 +92,7 @@ Las cuatro celdas del estudio 2x2 comparten receta, tokenizer y convencion de fi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/open-sci-ref-1.7b-nemotron-hq-mv_reasoning-100B-4096-longsft_16k
+- Hugging Face: https://huggingface.co/open-sci/open-sci-ref-1.7b-nemotron-hq-mv_reasoning-100B-4096-longsft_16k
 - Modelo base de 4k: https://huggingface.co/laion/open-sci-ref-v0.02-1.7b-nemotron-hq-mv_reasoning-100B-4096 (referenciado en la model card)
 - Paper de referencia: *Strong Post-Training from Permissive, Reasoning-Dominant, Web-Scale Pretraining* (NeurIPS 2026, submission; sin URL publica en la informacion disponible)
 - Repositorio de datos MixtureVitae: no disponible en la informacion proporcionada

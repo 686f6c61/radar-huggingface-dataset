@@ -83,5 +83,5 @@ No disponible. No se han identificado en la información proporcionada política
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/connect-ai-lab-aimo/connectailab-rl-juju-v1-link01-walk-ppo
+- Hugging Face: https://huggingface.co/connect-ai-lab-aimo/connectailab-rl-juju-v1-link01-walk-ppo
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

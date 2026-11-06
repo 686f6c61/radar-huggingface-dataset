@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreVideoDepthAnythings-depth | 28,4 M | Secuencias de vídeo (límite no especificado) | Profundidad relativa inversa temporalmente consistente | Apache 2.0 | HuggingFace (repo `libreyolo`) |
-| Video Depth Anything Small (upstream) | 28,4 M | Secuencias de vídeo | Profundidad relativa inversa temporalmente consistente | Apache 2.0 | HuggingFace (`depth-anything`) |
-| Depth Anything (variantes por imagen) | no disponible en la información | Imagen individual | Profundidad relativa por imagen | no disponible en la información | HuggingFace |
+| LibreVideoDepthAnythings-depth | 28,4 M | Secuencias de vídeo (límite no especificado) | Profundidad relativa inversa temporalmente consistente | Apache 2.0 | Hugging Face (repo `libreyolo`) |
+| Video Depth Anything Small (upstream) | 28,4 M | Secuencias de vídeo | Profundidad relativa inversa temporalmente consistente | Apache 2.0 | Hugging Face (`depth-anything`) |
+| Depth Anything (variantes por imagen) | no disponible en la información | Imagen individual | Profundidad relativa por imagen | no disponible en la información | Hugging Face |
 
 La comparación con estimadores de profundidad por imagen es pertinente porque la diferencia clave es la coherencia temporal: un estimador por imagen puede producir escalas distintas entre fotogramas, mientras que este modelo comparte una escala relativa a lo largo de la secuencia. No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -82,7 +82,7 @@ La comparación con estimadores de profundidad por imagen es pertinente porque l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibreYOLO/LibreVideoDepthAnythings-depth
+- Modelo en Hugging Face: https://huggingface.co/LibreYOLO/LibreVideoDepthAnythings-depth
 - Modelo original upstream: https://huggingface.co/depth-anything/Video-Depth-Anything-Small
 - Código de Video Depth Anything: https://github.com/DepthAnything/Video-Depth-Anything
 - Repositorio de LibreYOLO: https://github.com/LibreYOLO/libreyolo

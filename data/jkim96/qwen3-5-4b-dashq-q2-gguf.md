@@ -45,7 +45,7 @@ Respecto al proceso de cuantizacion, DASH-Q genera ficheros GGUF usando unicamen
 - Cuantizacion de solo texto: la model card especifica explicitamente que la torre de vision no esta incluida, por lo que no hay capacidades multimodales en estos ficheros aunque el modelo base pudiera tenerlas.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; no se listan idiomas en la ficha de HuggingFace ni en la model card.
+- Capacidades multilingues: no disponible; no se listan idiomas en la ficha de Hugging Face ni en la model card.
 - Capacidades especiales (modo thinking, audio, vision): no disponible, salvo la mencion de que la parte de vision queda excluida de la cuantizacion.
 
 ## Casos de uso
@@ -118,7 +118,7 @@ En los tres tipos comparados (IQ2_XXS, IQ2_M, Q2_K_XL), DASH-Q obtiene perplejid
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jkim96/Qwen3.5-4B-DASHQ-Q2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jkim96/Qwen3.5-4B-DASHQ-Q2-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de DASH-Q: https://github.com/JaeminK/dashq
 - Banner de DASH-Q: https://raw.githubusercontent.com/JaeminK/dashq/main/assets/dashq_banner.png

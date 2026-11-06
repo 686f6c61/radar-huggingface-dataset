@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No hay modelos comparables conocidos en el ecosistema de HuggingFace, ya que ReceiptAgent-Nano no es un LLM ni un modelo generativo. Su funcion se asemeja a un clasificador de politicas de seguridad, pero no existe una categoria estandar para comparar. La model card menciona otros artefactos de SZL Holdings (SZL-Forge-1.5B-ReceiptAgent, szl-receiptagent-qwen35-0.8b-v2) pero los descarta explícitamente como no equivalentes a este artefacto. Por tanto, la comparativa no esta disponible.
+No hay modelos comparables conocidos en el ecosistema de Hugging Face, ya que ReceiptAgent-Nano no es un LLM ni un modelo generativo. Su funcion se asemeja a un clasificador de politicas de seguridad, pero no existe una categoria estandar para comparar. La model card menciona otros artefactos de SZL Holdings (SZL-Forge-1.5B-ReceiptAgent, szl-receiptagent-qwen35-0.8b-v2) pero los descarta explícitamente como no equivalentes a este artefacto. Por tanto, la comparativa no esta disponible.
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ No hay modelos comparables conocidos en el ecosistema de HuggingFace, ya que Rec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SZLHOLDINGS/ReceiptAgent-Nano
+- Hugging Face: https://huggingface.co/SZLHOLDINGS/ReceiptAgent-Nano
 - Repositorio canonico: https://github.com/szl-holdings/szl-khipu
 - Sibling card: https://huggingface.co/SZLHOLDINGS/szl-khipu
 - Repositorio szl-forge (contiene el runbook de ReceiptAgent): https://github.com/szl-holdings/szl-forge/tree/main/receiptagent

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Flowseal/Qwen3.8-27B-IQ4_XS-imax-Q6Kattn-GGUF** es un archivo en formato GGUF que contiene una cuantización mixta de un modelo de la familia Qwen3 con aproximadamente 26.896 millones de parámetros (27B). Ha sido publicado por el usuario Flowseal en HuggingFace bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. El repositorio ocupa 14,7 GB, lo que sugiere una cuantización de baja precisión (IQ4_XS) diseñada para inferencia local eficiente en hardware de consumo.
+El modelo **Flowseal/Qwen3.8-27B-IQ4_XS-imax-Q6Kattn-GGUF** es un archivo en formato GGUF que contiene una cuantización mixta de un modelo de la familia Qwen3 con aproximadamente 26.896 millones de parámetros (27B). Ha sido publicado por el usuario Flowseal en Hugging Face bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. El repositorio ocupa 14,7 GB, lo que sugiere una cuantización de baja precisión (IQ4_XS) diseñada para inferencia local eficiente en hardware de consumo.
 
 La relevancia de este archivo radica en que permite ejecutar un modelo de 27B parámetros en GPUs con 16-24 GB de VRAM, algo inviable con los pesos originales en precisión completa. Sin embargo, la información disponible es muy limitada: no se especifican detalles de arquitectura, entrenamiento, capacidades ni benchmarks. El nombre "Qwen3.8" sugiere una variante de la serie Qwen3, pero no hay confirmación oficial en la model card.
 
@@ -63,4 +63,4 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/Flowseal/Qwen3.8-27B-IQ4_XS-imax-Q6Kattn-GGUF)
+- [Repositorio Hugging Face](https://huggingface.co/Flowseal/Qwen3.8-27B-IQ4_XS-imax-Q6Kattn-GGUF)

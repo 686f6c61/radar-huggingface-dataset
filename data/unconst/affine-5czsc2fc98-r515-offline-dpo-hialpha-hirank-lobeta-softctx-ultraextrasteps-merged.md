@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r515-offline-dpo-hialpha-hirank-lobeta-softctx-ultraextrasteps-merged` es un checkpoint intermedio publicado por el usuario `unconst` en HuggingFace. Se trata de un merge de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`, según indica su model card. El repositorio contiene pesos en formato safetensors con un total de 35.107.181.936 parámetros, lo que lo sitúa en la gama de modelos grandes de lenguaje.
+El modelo `unconst/Affine-5czsc2fc98-r515-offline-dpo-hialpha-hirank-lobeta-softctx-ultraextrasteps-merged` es un checkpoint intermedio publicado por el usuario `unconst` en Hugging Face. Se trata de un merge de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`, según indica su model card. El repositorio contiene pesos en formato safetensors con un total de 35.107.181.936 parámetros, lo que lo sitúa en la gama de modelos grandes de lenguaje.
 
 Los metadatos incluyen etiquetas como `qwen3_5_moe` e `image-text-to-text`, lo que sugiere que podría tratarse de un modelo de arquitectura Mixture of Experts con capacidades multimodales, aunque no se ha confirmado oficialmente. La model card es extremadamente escueta y menciona que es un "H1 merged checkpoint salvage" con una nota sobre "Private TTL insurance; not a submission until Stage-5 gate clears", lo que indica que probablemente no es un modelo final listo para producción, sino un paso intermedio en un proceso de desarrollo privado.
 
@@ -23,11 +23,11 @@ La relevancia actual de este modelo es limitada debido a la falta de documentaci
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información detallada sobre la arquitectura del modelo. Los metadatos de HuggingFace incluyen las etiquetas `qwen3_5_moe` y `affine-h1-merged-salvage`, lo que apunta a una posible arquitectura Mixture of Experts basada en la familia Qwen3.5, pero no hay confirmación oficial ni documentación técnica. Tampoco se conocen los datos de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas como RLHF o DPO. La model card solo indica que es un merge de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`, sin más detalles sobre el proceso de entrenamiento o las innovaciones técnicas empleadas.
+No se ha publicado información detallada sobre la arquitectura del modelo. Los metadatos de Hugging Face incluyen las etiquetas `qwen3_5_moe` y `affine-h1-merged-salvage`, lo que apunta a una posible arquitectura Mixture of Experts basada en la familia Qwen3.5, pero no hay confirmación oficial ni documentación técnica. Tampoco se conocen los datos de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas como RLHF o DPO. La model card solo indica que es un merge de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`, sin más detalles sobre el proceso de entrenamiento o las innovaciones técnicas empleadas.
 
 ## Capacidades
 
-No se dispone de información verificada sobre las capacidades específicas del modelo. Las etiquetas de HuggingFace sugieren posibles funcionalidades de generación de texto e imagen-texto, pero no hay ejemplos, demos ni documentación que las confirmen. No se puede afirmar la existencia de soporte para tool calling, agentes, razonamiento multi-paso o capacidades multilingües sin evidencia concreta.
+No se dispone de información verificada sobre las capacidades específicas del modelo. Las etiquetas de Hugging Face sugieren posibles funcionalidades de generación de texto e imagen-texto, pero no hay ejemplos, demos ni documentación que las confirmen. No se puede afirmar la existencia de soporte para tool calling, agentes, razonamiento multi-paso o capacidades multilingües sin evidencia concreta.
 
 ## Casos de uso
 
@@ -68,5 +68,5 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r515-offline-dpo-hialpha-hirank-lobeta-softctx-ultraextrasteps-merged
+- Repositorio del modelo en Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r515-offline-dpo-hialpha-hirank-lobeta-softctx-ultraextrasteps-merged
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft

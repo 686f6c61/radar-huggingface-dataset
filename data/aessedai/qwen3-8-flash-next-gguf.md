@@ -94,8 +94,8 @@ La comparativa se basa en modelos MoE de proposito general. Qwen3.8-Flash-Next d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AesSedai/Qwen3.8-Flash-Next-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AesSedai/Qwen3.8-Flash-Next-GGUF
 - Repositorio oficial del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/tree/main
 - Recetas vLLM para Qwen3.8-Flash-Next: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next
 - Anuncio en foros de NVIDIA: https://forums.developer.nvidia.com/t/qwen3-8-flash-next-176b-now-available/381413
-- Perfil del autor en HuggingFace: https://huggingface.co/AesSedai/models
+- Perfil del autor en Hugging Face: https://huggingface.co/AesSedai/models

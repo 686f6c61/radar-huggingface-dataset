@@ -78,6 +78,6 @@ No hay datos para comparar con otros modelos CLIP (como `openai/clip-vit-base-pa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fiscmar55/model_221006730_clip_giant
+- Repositorio en Hugging Face: https://huggingface.co/fiscmar55/model_221006730_clip_giant
 - Referencia general de CLIP (OpenAI): https://github.com/openai/CLIP
 - Herramienta de evaluación CLIP (LAION): https://github.com/LAION-AI/CLIP_benchmark

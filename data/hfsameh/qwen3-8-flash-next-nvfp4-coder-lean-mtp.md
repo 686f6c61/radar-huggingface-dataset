@@ -86,9 +86,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Decodificacion (GB10) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repo (Coder-Lean-MTP) | ~67,17 B | 262.144 | 59,9 tok/s (MTP-4) | NVIDIA Open Model License | HuggingFace |
-| elisepaul/Qwen3.8-Flash-Next-NVFP4-Coder-Lean | no disponible | 262.144 | 19,3 tok/s (AR) | Qwen Community License 1.0 | HuggingFace |
-| nvidia/Qwen3.8-Flash-Next-NVFP4 | no disponible | no disponible | no disponible | NVIDIA Open Model License | HuggingFace |
+| Este repo (Coder-Lean-MTP) | ~67,17 B | 262.144 | 59,9 tok/s (MTP-4) | NVIDIA Open Model License | Hugging Face |
+| elisepaul/Qwen3.8-Flash-Next-NVFP4-Coder-Lean | no disponible | 262.144 | 19,3 tok/s (AR) | Qwen Community License 1.0 | Hugging Face |
+| nvidia/Qwen3.8-Flash-Next-NVFP4 | no disponible | no disponible | no disponible | NVIDIA Open Model License | Hugging Face |
 
 La comparativa se limita a los tres checkpoints documentados en la informacion disponible; no se dispone de datos de benchmarks estandar ni de otros modelos de la misma categoria para comparar rendimiento en tareas.
 
@@ -107,7 +107,7 @@ La comparativa se limita a los tres checkpoints documentados en la informacion d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hfsameh/Qwen3.8-Flash-Next-NVFP4-Coder-Lean-MTP
+- Hugging Face: https://huggingface.co/hfsameh/Qwen3.8-Flash-Next-NVFP4-Coder-Lean-MTP
 - Modelo base Lean: https://huggingface.co/elisepaul/Qwen3.8-Flash-Next-NVFP4-Coder-Lean
 - Modelo original NVIDIA: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4
 - Licencia: https://huggingface.co/hfsameh/Qwen3.8-Flash-Next-NVFP4-Coder-Lean-MTP/blob/main/LICENSE

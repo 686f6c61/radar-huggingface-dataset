@@ -90,11 +90,11 @@ La comparativa se limita a los modelos citados en la model card; no se dispone d
 - Licencia: Apache-2.0 permite uso comercial, pero al modificar Teutonic-I y Qwen3.5-9B-Base conviene verificar las obligaciones de atribucion de ambos linajes.
 - Soporte de tool calling no documentado: la etiqueta `agentic` no garantiza un formato de function calling estable; en produccion habria que validarlo explicitamente.
 - Sin artefactos cuantizados oficiales: el despliegue en hardware consumer exige generar GGUF/AWQ/GPTQ por cuenta propia, con el riesgo de degradacion asociado.
-- Fecha de creacion futura (2026-10-29) en los metadatos de HuggingFace: conviene verificar la integridad del repositorio antes de usarlo en produccion.
+- Fecha de creacion futura (2026-10-29) en los metadatos de Hugging Face: conviene verificar la integridad del repositorio antes de usarlo en produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ReliquaryForge/teutonic-rl-async-v1-step-00000100
+- Modelo en Hugging Face: https://huggingface.co/ReliquaryForge/teutonic-rl-async-v1-step-00000100
 - Modelo base Teutonic-I: https://huggingface.co/dendriteholdings/Teutonic-I
 - Modelo base Qwen3.5-9B-Base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Bittensor Subnet 3 (Teutonic): no disponible enlace directo en la informacion proporcionada

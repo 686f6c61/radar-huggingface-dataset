@@ -74,9 +74,9 @@ Coste estimado por 1.000 turnos: unos 0,73 USD para esta familia de LoRA (precio
 
 | Modelo | Parametros | Contexto | F1 tareas tocadas | Salida valida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este adaptador (LoRA v1) | 30B totales / 3B activos | 8.192 (entrenamiento) | 57,2 | 88,5 % | CC BY 4.0 | HuggingFace, 14 descargas |
-| LoRA v2 (mismo autor) | 30B totales / 3B activos | 8.192 (entrenamiento) | 58,7 | 93,9 % | CC BY 4.0 | HuggingFace |
-| Qwen3-30B-A3B-Instruct-2507 base | 30B totales / 3B activos | 262.144 (modelo base) | 37,7 | 77,1 % | Apache 2.0 | HuggingFace |
+| Este adaptador (LoRA v1) | 30B totales / 3B activos | 8.192 (entrenamiento) | 57,2 | 88,5 % | CC BY 4.0 | Hugging Face, 14 descargas |
+| LoRA v2 (mismo autor) | 30B totales / 3B activos | 8.192 (entrenamiento) | 58,7 | 93,9 % | CC BY 4.0 | Hugging Face |
+| Qwen3-30B-A3B-Instruct-2507 base | 30B totales / 3B activos | 262.144 (modelo base) | 37,7 | 77,1 % | Apache 2.0 | Hugging Face |
 | Claude Haiku 4.5 (referencia de etiquetas) | No disponible | No disponible | Referencia | No disponible | Propietaria | API de Anthropic |
 
 El adaptador v2 del mismo autor supera a v1 en F1 y en tasa de salida valida, por lo que v1 se conserva principalmente para comparacion. Frente al modelo base sin ajustar, el LoRA mejora el F1 de tareas tocadas en 19,5 puntos y la coincidencia de rol de actor en 61 puntos porcentuales.
@@ -96,7 +96,7 @@ El adaptador v2 del mismo autor supera a v1 en F1 y en tasa de salida valida, po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CKL/cct-v03-lean-qwen3-30b-a3b-lora-r16-v1
+- Modelo en Hugging Face: https://huggingface.co/CKL/cct-v03-lean-qwen3-30b-a3b-lora-r16-v1
 - Adaptador v2: https://huggingface.co/CKL/cct-v03-lean-qwen3-30b-a3b-lora-r16-v2
 - Dataset: https://huggingface.co/datasets/CKL/wow-cod-thps4-gamejam
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507

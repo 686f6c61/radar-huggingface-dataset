@@ -78,8 +78,8 @@ No hay datos cuantitativos de benchmarks en la informacion proporcionada para co
 
 | Modelo | Parametros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| North-Mini-Code-1.0-Uncensored-Heretic (este) | 30B | 3B | 256K | Apache 2.0 | GGUF en HuggingFace (repo de 117,7 GB) |
-| CohereLabs/North-Mini-Code-1.0 | 30B | 3B | 256K | Apache 2.0 | pesos originales en HuggingFace |
+| North-Mini-Code-1.0-Uncensored-Heretic (este) | 30B | 3B | 256K | Apache 2.0 | GGUF en Hugging Face (repo de 117,7 GB) |
+| CohereLabs/North-Mini-Code-1.0 | 30B | 3B | 256K | Apache 2.0 | pesos originales en Hugging Face |
 | Alternativas tipo A3B de otros proveedores | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La model card menciona comparaciones frente a otros modelos (se citan Qwen y Gemma4 en la metodologia de evaluacion y el Artificial Analysis Intelligence Index), pero los valores concretos no estan accesibles en el texto proporcionado.
@@ -99,7 +99,7 @@ La model card menciona comparaciones frente a otros modelos (se citan Qwen y Gem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OS-Software/North-Mini-Code-1.0-Uncensored-Heretic-GGUF
+- Modelo en Hugging Face: https://huggingface.co/OS-Software/North-Mini-Code-1.0-Uncensored-Heretic-GGUF
 - Modelo base: https://huggingface.co/CohereLabs/North-Mini-Code-1.0
 - Blog de presentacion del modelo base: https://huggingface.co/blog/CohereLabs/introducing-north-mini-code
 - Demo alojada en Hugging Face Spaces: https://huggingface.co/spaces/CohereLabs/North-Mini-Code-1.0

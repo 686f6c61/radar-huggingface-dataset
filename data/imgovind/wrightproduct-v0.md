@@ -84,6 +84,6 @@ La comparación relevante es con su propio modelo base: wrightproduct-v0 sacrifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imgovind/wrightproduct-v0
+- Modelo en Hugging Face: https://huggingface.co/imgovind/wrightproduct-v0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507
 - mlx-lm (para ejecutar la copia MLX): https://github.com/ml-explore/mlx-lm

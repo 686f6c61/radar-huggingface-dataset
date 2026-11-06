@@ -68,7 +68,7 @@ No disponible. Este repositorio no es un modelo unico, sino una coleccion de che
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RoyYao233/scenario-quant-v2-ckpts
+- Repositorio Hugging Face: https://huggingface.co/RoyYao233/scenario-quant-v2-ckpts
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Modelo base Qwen3-VL-8B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Modelo base DeepSeek-LLM-7B-base: https://huggingface.co/deepseek-ai/deepseek-llm-7b-base

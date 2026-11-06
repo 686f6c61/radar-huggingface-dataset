@@ -77,7 +77,7 @@ El autor publica además una comparación de samplers sobre 32 inicios de docume
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vectabass-618m-140bt-mdlm-cooled | 617,9M totales (527,7M no-embedding) | 2048 | Difusión enmascarada (MDLM) | Apache 2.0 | HuggingFace, código custom |
+| vectabass-618m-140bt-mdlm-cooled | 617,9M totales (527,7M no-embedding) | 2048 | Difusión enmascarada (MDLM) | Apache 2.0 | Hugging Face, código custom |
 | Modelo AR equivalente de VectaBass (misma escalera y datos) | mismo orden de magnitud (celda correspondiente) | 2048 | Autorregresivo | no disponible en la información | Publicado por separado según la model card |
 | Réplica de semilla `seed2` de esta celda | idénticos | 2048 | MDLM | Apache 2.0 | Rama `seed2` del mismo repositorio |
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparativos con modelos de otros autores e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-618m-140bt-mdlm-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-618m-140bt-mdlm-cooled
 - Réplica de semilla: https://huggingface.co/VectaBass/vectabass-618m-140bt-mdlm-cooled/tree/seed2
 - Documentación de datos del autor: `DATA.md` en el repositorio del modelo
 - Código de modelado: `modeling_vectabass.py` en el repositorio del modelo

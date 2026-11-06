@@ -67,7 +67,7 @@ La model card no incluye métricas de WER, BLEU, DER ni puntuaciones de resumen,
 
 | Modelo | Tipo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| manrongjun/meeting-models | Paquete multi-modelo (VAD, ASR, MT, diarización, resumen) | Componentes de 0,6B, 1,8B y 2B | No disponible | zh, en | Mixta (`mixed-model-licenses`) | HuggingFace, ZIP macOS ARM64 |
+| manrongjun/meeting-models | Paquete multi-modelo (VAD, ASR, MT, diarización, resumen) | Componentes de 0,6B, 1,8B y 2B | No disponible | zh, en | Mixta (`mixed-model-licenses`) | Hugging Face, ZIP macOS ARM64 |
 | Whisper large-v3 (referencia ASR) | ASR monolítico | ~1,55B | No disponible | Multilingüe amplio | MIT (upstream) | Amplia |
 | NVIDIA NeMo (diarización) | Pipeline ASR/diarización | Variable | No disponible | Multilingüe | Varía por componente | Amplia |
 
@@ -86,7 +86,7 @@ La comparación directa no es homogénea: este repositorio es una distribución 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manrongjun/meeting-models
+- Hugging Face: https://huggingface.co/manrongjun/meeting-models
 - Instalador macOS ARM64: https://huggingface.co/manrongjun/meeting-models/resolve/main/meeting-models-macos-arm64-v1.zip?download=true
 - Licencias de componentes: https://huggingface.co/manrongjun/meeting-models/blob/main/LICENSES.md
 - Origen de modelos (`SOURCES.json`): https://huggingface.co/manrongjun/meeting-models/blob/main/SOURCES.json

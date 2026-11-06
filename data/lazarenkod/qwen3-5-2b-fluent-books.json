@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "lazarenkod/qwen3.5-2b-fluent-books",
+  "slug": "lazarenkod-qwen3-5-2b-fluent-books",
+  "author": "lazarenkod",
+  "url": "https://huggingface.co/lazarenkod/qwen3.5-2b-fluent-books",
+  "created_at": "2026-11-01T19:00:21.000Z",
+  "updated_at": "2026-11-02T13:06:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "translation",
+    "english-to-russian",
+    "fluent-books",
+    "text-generation",
+    "en",
+    "ru",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 139,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 2624329088,
+  "storage_human": "2.6 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lazarenkod/qwen3.5-2b-fluent-books · Hugging Face",
+      "url": "https://huggingface.co/lazarenkod/qwen3.5-2b-fluent-books",
+      "snippet": "Text Generation model with 2B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen3.5 2b Fluent Books - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/lazarenkod/qwen3.5-2b-fluent-books",
+      "snippet": "Registry entry for model Qwen3.5 2b Fluent Books; source metadata pending."
+    }
+  ]
+}

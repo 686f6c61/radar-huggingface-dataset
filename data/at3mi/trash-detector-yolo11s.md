@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AT3MI/trash-detector-yolo11s` es un repositorio de HuggingFace que, por su nombre, corresponde a un detector de objetos orientado a la identificacion de basura ("trash") basado en la arquitectura YOLO11 en su variante small. El autor es el usuario AT3MI y el repositorio se publico el 26 de septiembre de 2026 con licencia MIT. En el momento de la consulta acumula 0 descargas y 0 "likes", y el tamano del repositorio figura como 0.0 GB.
+`AT3MI/trash-detector-yolo11s` es un repositorio de Hugging Face que, por su nombre, corresponde a un detector de objetos orientado a la identificacion de basura ("trash") basado en la arquitectura YOLO11 en su variante small. El autor es el usuario AT3MI y el repositorio se publico el 26 de septiembre de 2026 con licencia MIT. En el momento de la consulta acumula 0 descargas y 0 "likes", y el tamano del repositorio figura como 0.0 GB.
 
 La model card esta practicamente vacia: solo declara la licencia MIT y no incluye descripcion, dataset de entrenamiento, numero de clases, metricas ni instrucciones de uso. Los resultados de busqueda web disponibles no aportan informacion sobre este modelo; todas las referencias recuperadas corresponden a paginas no relacionadas sobre un pez de un videojuego, por lo que no se pueden usar como fuente.
 
@@ -92,7 +92,7 @@ Nota: los valores de parametros de las alternativas son cifras de referencia de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AT3MI/trash-detector-yolo11s
+- Hugging Face: https://huggingface.co/AT3MI/trash-detector-yolo11s
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

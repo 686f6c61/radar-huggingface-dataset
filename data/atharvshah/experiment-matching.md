@@ -81,5 +81,5 @@ No disponible. La busqueda web realizada no ha devuelto informacion tecnica rele
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/atharvshah/experiment-matching
+- Modelo en Hugging Face: https://huggingface.co/atharvshah/experiment-matching
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: paper, blog, repositorio de codigo o demo adicionales. Los resultados devueltos correspondian a paginas sin relacion con este repositorio.

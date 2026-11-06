@@ -67,8 +67,8 @@ PE-KE y Linear estan dentro de la distribucion de entrenamiento. Circular esta c
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PhysAgentGym-Qwen2.5-Coder-1.5B | 1.500 M + LoRA r16 | no disponible | Agente de codigo fisico con verificadores | Apache 2.0 | HuggingFace (adaptador PEFT) |
-| Qwen2.5-Coder-1.5B-Instruct (base) | 1.500 M | no disponible en esta ficha | Codigo e instrucciones generales | Apache 2.0 | HuggingFace |
+| PhysAgentGym-Qwen2.5-Coder-1.5B | 1.500 M + LoRA r16 | no disponible | Agente de codigo fisico con verificadores | Apache 2.0 | Hugging Face (adaptador PEFT) |
+| Qwen2.5-Coder-1.5B-Instruct (base) | 1.500 M | no disponible en esta ficha | Codigo e instrucciones generales | Apache 2.0 | Hugging Face |
 | Modelos de la Tabla 2 del paper PhysAgentGym | no disponible | no disponible | Agentes de codigo fisico | no disponible | no disponible |
 
 No se dispone de datos comparativos de rendimiento frente a alternativas en la informacion proporcionada; la unica comparacion cuantitativa disponible es la del propio articulo (agregado 0,702 en la ejecucion principal frente a 0,711 de este checkpoint).
@@ -87,7 +87,7 @@ No se dispone de datos comparativos de rendimiento frente a alternativas en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lamamkh/PhysAgentGym-Qwen2.5-Coder-1.5B
+- Hugging Face: https://huggingface.co/lamamkh/PhysAgentGym-Qwen2.5-Coder-1.5B
 - Pagina del proyecto: https://lamawmouk.github.io/PhysAgentGym/
 - Codigo: https://github.com/lamawmouk/PhysAgentGym
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct

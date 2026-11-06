@@ -81,5 +81,5 @@ No se dispone de datos comparativos con otros modelos o plataformas en la inform
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vinccniv/sa8797p-qwen3-w8a16-bundles
-- Documentación adicional referenciada en la model card: `docs/MAX_TPS_QWEN3_0.6B_V4.md` y `docs/REFERENCE.md` (no accesibles directamente desde el repositorio de HuggingFace).
+- Repositorio en Hugging Face: https://huggingface.co/vinccniv/sa8797p-qwen3-w8a16-bundles
+- Documentación adicional referenciada en la model card: `docs/MAX_TPS_QWEN3_0.6B_V4.md` y `docs/REFERENCE.md` (no accesibles directamente desde el repositorio de Hugging Face).

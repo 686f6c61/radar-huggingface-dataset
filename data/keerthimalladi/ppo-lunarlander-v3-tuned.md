@@ -76,4 +76,4 @@ No disponible. No hay datos públicos suficientes sobre el tamaño de la red ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/keerthimalladi/ppo-LunarLander-v3-tuned](https://huggingface.co/keerthimalladi/ppo-LunarLander-v3-tuned)
+- Modelo en Hugging Face: [https://huggingface.co/keerthimalladi/ppo-LunarLander-v3-tuned](https://huggingface.co/keerthimalladi/ppo-LunarLander-v3-tuned)

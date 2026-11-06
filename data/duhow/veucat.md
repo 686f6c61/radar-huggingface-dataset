@@ -67,7 +67,7 @@ Los conjuntos FestCat y OpenSLR69 no se usaron como fuentes de entrenamiento; su
 - VRAM estimada para inferencia: aproximadamente 0,24 GB en fp32 (59,1 M de parámetros), menos de 0,15 GB en fp16. Cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM; RTX 3060, RTX 4090, A100 o H100 son sobredimensionadas para este modelo. También funciona en CPU.
 - Cabe en GPU consumer: sí, en todas las GPU modernas e incluso en iGPU y CPU.
-- Opciones de despliegue: `transformers` (PyTorch), pipeline `automatic-speech-recognition`; no se han publicado variantes GGUF para llama.cpp ni Ollama. El tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: `transformers` (PyTorch), pipeline `automatic-speech-recognition`; no se han publicado variantes GGUF para llama.cpp ni Ollama. El tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: RTF de 0,003 en Common Voice (aproximadamente 333 veces más rápido que tiempo real en el entorno de evaluación del autor); RTF de 0,005–0,006 en los conjuntos externos.
 
 ## Comparativa con modelos similares
@@ -95,7 +95,7 @@ No se dispone de resultados de benchmarks de los modelos alternativos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/duhow/veucat
+- Modelo en Hugging Face: https://huggingface.co/duhow/veucat
 - Mozilla Common Voice 27.0: https://commonvoice.mozilla.org/en/datasets
 - Dataset FestCat trimmed and denoised (Projecte Aina): https://huggingface.co/datasets/projecte-aina/festcat_trimmed_denoised
 - Dataset OpenSLR69 catalán trimmed and denoised (Projecte Aina): https://huggingface.co/datasets/projecte-aina/openslr-slr69-ca-trimmed-denoised

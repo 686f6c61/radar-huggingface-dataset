@@ -94,10 +94,10 @@ Cualificacion de servicio (2026-08-29, 4x RTX PRO 6000 Blackwell Server Edition 
 
 | Modelo | Parametros | Contexto | Cuantizacion | KLD (KV fp8) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GLM-5.3-EXL3-TR3 3,42 bpw (esta ficha) | 177,5B segun safetensors; 755B declarados para el base | 393.216 tokens cualificados | EXL3 trellis K3/K4 mixto, 3,42 bpw | 0,024105 | glm-5.3 | HuggingFace, 0 descargas, 0 likes |
+| GLM-5.3-EXL3-TR3 3,42 bpw (esta ficha) | 177,5B segun safetensors; 755B declarados para el base | 393.216 tokens cualificados | EXL3 trellis K3/K4 mixto, 3,42 bpw | 0,024105 | glm-5.3 | Hugging Face, 0 descargas, 0 likes |
 | GLM-5.3 EXL3 3,25 bpw (misma linea TR3) | no disponible | no disponible | EXL3 trellis, 3,25 bpw | 0,026103 | glm-5.3 | referido en la model card, sin enlace propio |
-| CN3 de @dareposte (GLM-5.3) | no disponible | no disponible | EXL3 3,42 y 3,25 bpw | 0,023966 / 0,026776 | no disponible | HuggingFace, perfil del autor |
-| zai-org/GLM-5.3 (BF16) | 755B (MoE) | no disponible | BF16 (profesor de referencia) | 0 (referencia) | glm-5.3 | HuggingFace |
+| CN3 de @dareposte (GLM-5.3) | no disponible | no disponible | EXL3 3,42 y 3,25 bpw | 0,023966 / 0,026776 | no disponible | Hugging Face, perfil del autor |
+| zai-org/GLM-5.3 (BF16) | 755B (MoE) | no disponible | BF16 (profesor de referencia) | 0 (referencia) | glm-5.3 | Hugging Face |
 | GLM-5.2 EXL3 (linaje heredado) | mismo modelo base segun la model card | 520.192 tokens (no cualificada en este stack) | EXL3 trellis | no disponible | no disponible | no disponible |
 
 Comparativa adicional dentro del propio checkpoint: frente a la variante de 3,25 bpw, los 0,17 bpw extra mejoran la KLD solo ~0,002 con KV FP8, mientras que cambiar la cache de FP8 a NVFP4 empeora la KLD ~0,014. Es decir, en este modelo la eleccion de formato de cache KV pesa mas que el bit extra de pesos.
@@ -119,7 +119,7 @@ Comparativa adicional dentro del propio checkpoint: frente a la variante de 3,25
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xSojalSec/GLM-5.3-EXL3-TR3-3.42bpw
+- Modelo en Hugging Face: https://huggingface.co/0xSojalSec/GLM-5.3-EXL3-TR3-3.42bpw
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Licencia del modelo base: https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE
 - Informe tecnico: https://arxiv.org/abs/2602.15763

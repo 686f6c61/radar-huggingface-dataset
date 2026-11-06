@@ -27,7 +27,7 @@ El modelo se basa en la arquitectura Qwen2.5-VL-3B-Instruct, un transformer mult
 
 - Razonamiento multimodal con pensamiento explícito: sigue el formato `<think> ... </think>` y responde con la respuesta final en `\boxed{}`.
 - Comprensión de entradas imagen-texto (pipeline image-text-to-text).
-- Conversacional, según los tags de HuggingFace.
+- Conversacional, según los tags de Hugging Face.
 - Soporte de tool calling: no disponible.
 - Soporte de agentes y multi-step reasoning: no disponible (aunque el protocolo de pensamiento sugiere razonamiento paso a paso).
 - Capacidades multilingües: no disponibles.
@@ -73,6 +73,6 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Xiangchen1233/dapo-qwen2.5-vl-3b-virl39k-step202
-- HuggingFace del modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
+- Hugging Face del modelo: https://huggingface.co/Xiangchen1233/dapo-qwen2.5-vl-3b-virl39k-step202
+- Hugging Face del modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Modelo relacionado del mismo autor: https://huggingface.co/Xiangchen1233/eaar-qwen2.5-vl-3b-beta1p2-rho1-mask1

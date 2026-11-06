@@ -85,9 +85,9 @@ La model card no incluye comparaciones numericas con otros sistemas. Se comparan
 
 | Modelo | Parametros | Contexto | EER ASVspoof2019_LA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DPDA-GA-AASIST | 317,8 M | 66.800 muestras @16 kHz | 0,16% | MIT | HuggingFace |
-| DPDA-GA-TCM | no disponible | no disponible | no disponible | MIT (presumible) | HuggingFace |
-| DPDA-GA-Mamba | no disponible | no disponible | no disponible | MIT (presumible) | HuggingFace |
+| DPDA-GA-AASIST | 317,8 M | 66.800 muestras @16 kHz | 0,16% | MIT | Hugging Face |
+| DPDA-GA-TCM | no disponible | no disponible | no disponible | MIT (presumible) | Hugging Face |
+| DPDA-GA-Mamba | no disponible | no disponible | no disponible | MIT (presumible) | Hugging Face |
 
 No se dispone de datos de benchmarks de los back-ends TCM y Mamba en la informacion proporcionada.
 
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks de los back-ends TCM y Mamba en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SpeechAntiSpoofingBenchmarks/DPDA-GA-AASIST
+- Hugging Face: https://huggingface.co/SpeechAntiSpoofingBenchmarks/DPDA-GA-AASIST
 - Checkpoint fijado por commit: https://huggingface.co/SpeechAntiSpoofingBenchmarks/DPDA-GA-AASIST/blob/f4b395c946eee1d28be9974cfb10da5a0e08ed61/dpda_ga_aasist_avg5.pth
 - Paper (arXiv): https://arxiv.org/abs/2509.20682
 - Codigo de los autores: https://github.com/ductuantruong/dpda_ga

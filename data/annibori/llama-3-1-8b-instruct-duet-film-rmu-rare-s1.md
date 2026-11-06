@@ -80,9 +80,9 @@ Referencia base de retención: 0,842. Umbral de cualificación: olvido ≤ 0,15 
 
 | Modelo | Parametros | Contexto | Olvido (recall) | Retencion (recall) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-DUET-film-RMU-rare-s1 (ep. 7) | 8,03B | no disponible | 0,048 | 0,767 | llama3.1 | HuggingFace |
-| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft (base del unlearning) | 8,03B | no disponible | no disponible | 0,842 (base) | llama3.1 | HuggingFace |
-| Llama-3.1-8B-Instruct (original Meta) | 8,03B | 128k | no aplica | no aplica | llama3.1 | HuggingFace, Meta |
+| Llama-3.1-8B-Instruct-DUET-film-RMU-rare-s1 (ep. 7) | 8,03B | no disponible | 0,048 | 0,767 | llama3.1 | Hugging Face |
+| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft (base del unlearning) | 8,03B | no disponible | no disponible | 0,842 (base) | llama3.1 | Hugging Face |
+| Llama-3.1-8B-Instruct (original Meta) | 8,03B | 128k | no aplica | no aplica | llama3.1 | Hugging Face, Meta |
 
 La comparación con el checkpoint base de fine-tuning es la más informativa: el *unlearning* reduce el recall de olvido desde el valor del fine-tuning hasta 0,048, a costa de bajar la retención de 0,842 a 0,767 (una caída de 0,075 puntos absolutos). No se dispone de datos para comparar con otros algoritmos de *unlearning* (por ejemplo, NPO, GradDiff o SalUn) en este mismo conjunto.
 
@@ -95,12 +95,12 @@ La comparación con el checkpoint base de fine-tuning es la más informativa: el
 - Limitaciones de idioma: no se documentan idiomas soportados; el conjunto de evaluación es factual en inglés.
 - Restricciones de licencia: licencia Llama 3.1, que impone condiciones de uso (política de uso aceptable de Meta, obligaciones de atribución y restricciones para usos prohibidos); el uso comercial requiere revisar los términos completos.
 - Métricas limitadas: solo se reportan ROUGE-L recall sobre conjuntos de olvido y retención; no hay evaluación de capacidades generales (razonamiento, código, matemáticas) tras el *unlearning*, por lo que se desconoce el daño colateral fuera del dominio de cine.
-- Reproducibilidad dependiente de artefactos externos: la receta referencia rutas y scripts de un repositorio de proyecto (`open-unlearning/experiments/`, `film_unlearning/scripts/`, `revival_mechanism/`) que no forman parte del repositorio de HuggingFace.
+- Reproducibilidad dependiente de artefactos externos: la receta referencia rutas y scripts de un repositorio de proyecto (`open-unlearning/experiments/`, `film_unlearning/scripts/`, `revival_mechanism/`) que no forman parte del repositorio de Hugging Face.
 - Cero descargas y cero likes en el momento de la consulta: no hay evidencia de validación por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-RMU-rare-s1
+- Modelo en Hugging Face: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-RMU-rare-s1
 - Modelo base del *unlearning*: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft
 - Dataset DUET: https://huggingface.co/datasets/SwetieePawsss/DUET_LLM (commit `2c2b047bb569b205ea57f924b36e818d4e3f3903`)
 - Modelo original Llama-3.1-8B-Instruct: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

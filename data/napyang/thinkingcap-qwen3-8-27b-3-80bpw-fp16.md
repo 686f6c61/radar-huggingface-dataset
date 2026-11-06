@@ -68,7 +68,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 - Cadena de procedencia incompleta: aunque la model card cita "ThinkingCap" y "Qwen3.5", no incluye enlaces ni referencias verificables a esos modelos base en la informacion disponible.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/NapYang/ThinkingCap-Qwen3.8-27B-3.80bpw-fp16
+- Modelo en Hugging Face: https://huggingface.co/NapYang/ThinkingCap-Qwen3.8-27B-3.80bpw-fp16
 - Repositorio de MLX: https://github.com/ml-explore/mlx
 - Repositorio de MLX-LM: https://github.com/ml-explore/mlx-lm
 - Modelos Qwen: https://huggingface.co/Qwen

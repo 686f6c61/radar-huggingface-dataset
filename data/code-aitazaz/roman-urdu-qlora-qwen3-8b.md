@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `code-aitazaz/roman-urdu-qlora-qwen3-8b` es un adaptador LoRA (QLoRA 4-bit) que ajusta el modelo base `Qwen/Qwen3-8B` para responder de forma fluida y consistente en **Roman Urdu**, es decir, urdu escrito en alfabeto latino. Lo desarrolla `code-aitazaz` y se publica en HuggingFace bajo licencia Apache-2.0 (aunque la model card indica MIT para los pesos del adaptador). El objetivo no es inyectar conocimiento nuevo, sino adaptar el estilo de salida del modelo base: Qwen3-8B a menudo responde a preguntas en Roman Urdu en inglés o en urdu con escritura árabe; este adaptador hace que la respuesta por defecto sea en Roman Urdu.
+El modelo `code-aitazaz/roman-urdu-qlora-qwen3-8b` es un adaptador LoRA (QLoRA 4-bit) que ajusta el modelo base `Qwen/Qwen3-8B` para responder de forma fluida y consistente en **Roman Urdu**, es decir, urdu escrito en alfabeto latino. Lo desarrolla `code-aitazaz` y se publica en Hugging Face bajo licencia Apache-2.0 (aunque la model card indica MIT para los pesos del adaptador). El objetivo no es inyectar conocimiento nuevo, sino adaptar el estilo de salida del modelo base: Qwen3-8B a menudo responde a preguntas en Roman Urdu en inglés o en urdu con escritura árabe; este adaptador hace que la respuesta por defecto sea en Roman Urdu.
 
 El adaptador se entrenó con un conjunto de datos pequeño (~485 ejemplos) filtrado del dataset `Redgerd/roman-urdu-alpaca-qa-mix`, tras detectar y eliminar un bug de duplicación. La técnica empleada es QLoRA con cuantización NF4 de 4 bits, rango 16, alpha 32, sobre las 7 proyecciones lineales (atención y MLP) del modelo base, durante 3 épocas con tamaño de lote efectivo de 16, en una única GPU NVIDIA T4. El repositorio ocupa 0.2 GB y contiene los pesos del adaptador en formato safetensors, no el modelo completo.
 
@@ -16,7 +16,7 @@ El adaptador se entrenó con un conjunto de datos pequeño (~485 ejemplos) filtr
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | 4-bit NF4 (QLoRA) para el modelo base durante el entrenamiento; el adaptador no tiene cuantización propia |
 | Idiomas soportados | Roman Urdu (urdu en alfabeto latino); el modelo base es multilingüe |
-| Licencia | Apache-2.0 (según HuggingFace); pesos del adaptador bajo MIT según la model card |
+| Licencia | Apache-2.0 (según Hugging Face); pesos del adaptador bajo MIT según la model card |
 | Formato de pesos | Safetensors (adaptador PEFT/LoRA) |
 
 ## Arquitectura y entrenamiento
@@ -67,8 +67,8 @@ La comparación más directa es con el modelo base `Qwen/Qwen3-8B`, ya que el ad
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-8B (base) | 8B | no disponible | Apache-2.0 | HuggingFace |
-| Adaptador roman-urdu-qlora-qwen3-8b | Adaptador LoRA (no especificado) | no disponible | Apache-2.0 / MIT (adaptador) | HuggingFace |
+| Qwen3-8B (base) | 8B | no disponible | Apache-2.0 | Hugging Face |
+| Adaptador roman-urdu-qlora-qwen3-8b | Adaptador LoRA (no especificado) | no disponible | Apache-2.0 / MIT (adaptador) | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ La comparación más directa es con el modelo base `Qwen/Qwen3-8B`, ya que el ad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/code-aitazaz/roman-urdu-qlora-qwen3-8b
+- Modelo en Hugging Face: https://huggingface.co/code-aitazaz/roman-urdu-qlora-qwen3-8b
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Redgerd/roman-urdu-alpaca-qa-mix
 - Repositorio de QLoRA: https://github.com/artidoro/qlora

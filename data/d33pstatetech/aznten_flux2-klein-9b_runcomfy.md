@@ -24,7 +24,7 @@ Su relevancia practica es muy limitada y de nicho: se enmarca en la practica hab
 | Palabra de activacion (trigger) | `aznten` |
 | Tamano del repositorio | 1,3 GB |
 | Pipeline declarado | text-to-image |
-| Fecha de creacion (segun HuggingFace) | 2026-10-06 |
+| Fecha de creacion (segun Hugging Face) | 2026-10-06 |
 
 ## Arquitectura y entrenamiento
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chloeyoung13/cs229-classification36` es un prototipo de investigacion publicado en HuggingFace por el usuario chloeyoung13, etiquetado como CLIP y orientado a tareas de clasificacion. Se distribuye con licencia Apache 2.0 y en formato safetensors con pesos en PyTorch, pero el propio autor indica explicitamente en la model card que el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado con benchmarks.
+`chloeyoung13/cs229-classification36` es un prototipo de investigacion publicado en Hugging Face por el usuario chloeyoung13, etiquetado como CLIP y orientado a tareas de clasificacion. Se distribuye con licencia Apache 2.0 y en formato safetensors con pesos en PyTorch, pero el propio autor indica explicitamente en la model card que el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado con benchmarks.
 
 El dato mas relevante es la discrepancia entre la etiqueta de escala declarada ("xlarge") y el numero real de parametros registrado en los metadatos de safetensors: 33.088 parametros. Se trata, por tanto, de un artefacto de muy reducido tamano, coherente con un ejercicio academico (el nombre "cs229" apunta al curso de machine learning de Stanford) y no con un modelo de produccion. La model card menciona una arquitectura CLIP con atencion dilatada, fusion de tensores, activacion ReLU y normalizacion "scalenorm", pero no aporta detalles sobre el dataset, el numero de tokens de entrenamiento ni el procedimiento de ajuste.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `chloeyoung13/cs229-classification36` | 33.088 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace |
-| `openai/clip-vit-base-patch32` | ~151 M | 77 tokens de texto | evaluado en zero-shot ImageNet y otros | MIT | HuggingFace |
-| `openai/clip-vit-large-patch14` | ~428 M | 77 tokens de texto | evaluado en zero-shot ImageNet y otros | MIT | HuggingFace |
-| `laion/CLIP-ViT-H-14-laion2B-s32B-b79K` | ~986 M | 77 tokens de texto | evaluado en zero-shot y retrieval | MIT (segun variante) | HuggingFace |
+| `chloeyoung13/cs229-classification36` | 33.088 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face |
+| `openai/clip-vit-base-patch32` | ~151 M | 77 tokens de texto | evaluado en zero-shot ImageNet y otros | MIT | Hugging Face |
+| `openai/clip-vit-large-patch14` | ~428 M | 77 tokens de texto | evaluado en zero-shot ImageNet y otros | MIT | Hugging Face |
+| `laion/CLIP-ViT-H-14-laion2B-s32B-b79K` | ~986 M | 77 tokens de texto | evaluado en zero-shot y retrieval | MIT (segun variante) | Hugging Face |
 
 Las alternativas citadas pertenecen a una categoria distinta por orden de magnitud (cientos de millones de parametros frente a 33.088) y cuentan con pesos entrenados y evaluaciones publicadas, por lo que la comparacion directa de rendimiento no es posible con los datos disponibles.
 
@@ -81,5 +81,5 @@ Las alternativas citadas pertenecen a una categoria distinta por orden de magnit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chloeyoung13/cs229-classification36
+- Modelo en Hugging Face: https://huggingface.co/chloeyoung13/cs229-classification36
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

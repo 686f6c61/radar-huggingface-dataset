@@ -77,10 +77,10 @@ El propio autor advierte que los ajustes se eligieron sobre el conjunto de 525 p
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Decisio-12b-tuned-commit-think | 11,96 B | no disponible (trunca a 45.000 tokens) | Decisión probabilística tipada con thinking selectivo | Apache 2.0 | HuggingFace (24 descargas) |
-| Decisio-12b-tuned-commit | 11,96 B (mismos pesos) | no disponible | Decisión probabilística tipada sin thinking | Apache 2.0 | HuggingFace |
-| Decisio-12b-tuned-calibrated | 11,96 B (mismos pesos) | no disponible | Probabilidades calibradas sin regla de commit | Apache 2.0 | HuggingFace |
-| google/gemma-4-12B-it | 12 B | no disponible | Modelo instruct generalista | Apache 2.0 | HuggingFace (modelo base) |
+| Decisio-12b-tuned-commit-think | 11,96 B | no disponible (trunca a 45.000 tokens) | Decisión probabilística tipada con thinking selectivo | Apache 2.0 | Hugging Face (24 descargas) |
+| Decisio-12b-tuned-commit | 11,96 B (mismos pesos) | no disponible | Decisión probabilística tipada sin thinking | Apache 2.0 | Hugging Face |
+| Decisio-12b-tuned-calibrated | 11,96 B (mismos pesos) | no disponible | Probabilidades calibradas sin regla de commit | Apache 2.0 | Hugging Face |
+| google/gemma-4-12B-it | 12 B | no disponible | Modelo instruct generalista | Apache 2.0 | Hugging Face (modelo base) |
 
 Las tres variantes Decisio comparten pesos byte a byte y solo difieren en decision_config.json, por lo que la comparación relevante es de configuración de servicio, no de capacidad del modelo. Frente al Gemma 4 12B-it original, la diferencia es la especialización en salida probabilística tipada y la calibración, a costa de perder el uso conversacional general. No se dispone de datos para comparar con otros modelos de decisión de la misma categoría.
 
@@ -99,7 +99,7 @@ Las tres variantes Decisio comparten pesos byte a byte y solo difieren en decisi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tachara-ai/Decisio-12b-tuned-commit-think
+- Repositorio Hugging Face: https://huggingface.co/tachara-ai/Decisio-12b-tuned-commit-think
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Repositorio de la herramienta decisio: https://github.com/aminry/decisio
 - Variante Decisio-12b-tuned-commit: https://huggingface.co/tachara-ai/Decisio-12b-tuned-commit

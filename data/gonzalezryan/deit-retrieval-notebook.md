@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`GONZALEZRYAN/deit-retrieval-notebook` es un repositorio de HuggingFace publicado por el usuario GONZALEZRYAN que contiene una implementación propia en PyTorch de un transformer DeiT (Data-efficient Image Transformer) orientado a tareas de recuperación (retrieval), presumiblemente recuperación imagen-texto. No se trata de un modelo entrenado ni de un release listo para producción: el propio autor indica que la configuración "giant" está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. El repositorio incluye `main.py`, `config.json`, `training_args.json` y un `model.safetensors` que se describe explícitamente como checkpoint de inicialización, no como checkpoint entrenado ni evaluado.
+`GONZALEZRYAN/deit-retrieval-notebook` es un repositorio de Hugging Face publicado por el usuario GONZALEZRYAN que contiene una implementación propia en PyTorch de un transformer DeiT (Data-efficient Image Transformer) orientado a tareas de recuperación (retrieval), presumiblemente recuperación imagen-texto. No se trata de un modelo entrenado ni de un release listo para producción: el propio autor indica que la configuración "giant" está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. El repositorio incluye `main.py`, `config.json`, `training_args.json` y un `model.safetensors` que se describe explícitamente como checkpoint de inicialización, no como checkpoint entrenado ni evaluado.
 
 El dato más llamativo es la incoherencia entre la escala declarada y el tamaño real del checkpoint: la model card habla de una configuración "giant", pero el fichero safetensors contiene 33.088 parámetros, un orden de magnitud muy inferior al de cualquier DeiT real (el DeiT-base original ronda los 86 millones). Esto confirma que se trata de un esqueleto de código con pesos inicializados para que el script arranque, no de un modelo con capacidad funcional.
 
@@ -50,7 +50,7 @@ En cuanto al entrenamiento, no existe. El autor es explícito: `model.safetensor
 - Revisión de código y auditoría de arquitectura: el fichero `main.py` es el artefacto principal y puede revisarse para evaluar cómo se implementan atención dilatada, gated fusion y groupnorm en un transformer de visión.
 - Plantilla de experimento reproducible: `config.json` y `training_args.json` ofrecen un punto de partida concreto (Lion, warmup lineal) que se puede clonar y modificar para montar comparativas con presupuesto de ajuste y semillas controladas.
 - Banco de pruebas para comparativas justas: la propia model card propone usar Flickr30k con al menos tres semillas y una línea base de capacidad equivalente; este repositorio actúa como el brazo de control inicializable.
-- Desarrollo de adaptadores de carga: útil para escribir y depurar el adaptador que permita cargar esta implementación personalizada con APIs genéricas de HuggingFace o con `torch.load` directo.
+- Desarrollo de adaptadores de carga: útil para escribir y depurar el adaptador que permita cargar esta implementación personalizada con APIs genéricas de Hugging Face o con `torch.load` directo.
 - Docencia y formación en transformers de visión: el repositorio es un ejemplo compacto de estructura de proyecto (script, configuración, argumentos de entrenamiento, pesos) para explicar el ciclo de vida de un modelo.
 - Prototipado de métricas de retrieval: permite validar el código de cálculo de recall@k o de similitud coseno sobre embeddings antes de disponer de pesos entrenados.
 - Integración en CI: al ocupar 0.0 GB y tener 33.088 parámetros, se puede incluir en una pipeline de integración continua que compruebe que el modelo instancia, hace forward y serializa sin errores.
@@ -76,7 +76,7 @@ Los valores de modelos de terceros son referencias públicas aproximadas no veri
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GONZALEZRYAN/deit-retrieval-notebook | 33.088 (checkpoint de inicialización) | no disponible | Sin benchmarks publicados | apache-2.0 | Repositorio HuggingFace, 0 descargas |
+| GONZALEZRYAN/deit-retrieval-notebook | 33.088 (checkpoint de inicialización) | no disponible | Sin benchmarks publicados | apache-2.0 | Repositorio Hugging Face, 0 descargas |
 | DeiT original (Facebook Research) | aprox. 86 M en la variante base (referencia pública) | 224x224 px (referencia pública) | Resultados publicados en ImageNet en la documentación original | apache-2.0 (referencia pública) | Pesos entrenados y ampliamente distribuidos |
 | CLIP (OpenAI) | aprox. 151 M en ViT-B/32 (referencia pública) | 224x224 px (referencia pública) | Evaluación zero-shot publicada por el autor | licencia propia de OpenAI (referencia pública) | Pesos entrenados y ampliamente distribuidos |
 | BLIP / BLIP-2 | no disponible | no disponible | Métricas publicadas en recuperación imagen-texto | no disponible en la información proporcionada | Pesos entrenados disponibles |
@@ -92,12 +92,12 @@ La diferencia fundamental no es de tamaño, sino de estado: los tres alternativa
 - No se declara ningún idioma soportado, ni ventana de contexto, ni resolución de entrada, lo que impide planificar su integración en producción.
 - Incoherencia de metadatos: se anuncia escala "giant" pero el safetensors contiene 33.088 parámetros, tres órdenes de magnitud por debajo de lo esperable; además, las fechas de creación y actualización (2026-09-12) no coinciden con la fecha habitual de consulta.
 - Licencia: apache-2.0 permite uso comercial del artefacto, pero la model card advierte de que deben revisarse por separado los términos de los datos de origen cuando se use con datasets externos, como Flickr30k.
-- Requiere un adaptador explícito para cargarse con APIs automáticas genéricas; no funciona como un modelo estándar de HuggingFace sin trabajo adicional.
+- Requiere un adaptador explícito para cargarse con APIs automáticas genéricas; no funciona como un modelo estándar de Hugging Face sin trabajo adicional.
 - Cero descargas y cero likes: no existe validación por parte de la comunidad ni evidencia de uso en producción.
-- Ausencia de pipeline declarado en HuggingFace, lo que rompe muchas integraciones que dependen de ese campo.
+- Ausencia de pipeline declarado en Hugging Face, lo que rompe muchas integraciones que dependen de ese campo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GONZALEZRYAN/deit-retrieval-notebook
+- Modelo en Hugging Face: https://huggingface.co/GONZALEZRYAN/deit-retrieval-notebook
 - La búsqueda web realizada no ha devuelto enlaces relevantes al modelo, a papers asociados ni a repositorios de código relacionados; los resultados obtenidos correspondían a páginas corporativas de Microsoft y no guardan relación con esta ficha.
 - Enlaces a paper, blog, repositorio o demo del autor: no disponible.

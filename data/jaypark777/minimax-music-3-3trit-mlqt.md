@@ -101,8 +101,8 @@ No se dispone de datos de otros modelos de generación musical comparables en la
 
 | Modelo | Peso total | Componentes | Cuantización | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| jayPark777/MiniMax-Music-3-3Trit-MLQT | 4,43 GB | DiT 0,67 GB + TE/AR Qwen3 3,56 GB + VAE 0,20 GB | Ternaria 3-trit, dual-block BLK32/BLK64, 0-skip | Apache 2.0 | HuggingFace, 0 descargas, requiere nodo de ComfyUI |
-| MiniMaxAI/MiniMax-Music-3 (base) | 13,35 GB | DiT 4,58 GB (FP16) + TE/AR Qwen3 8,57 GB (INT8 convrot) + VAE 0,20 GB | FP16 en DiT, INT8 convrot en text encoder | No disponible en la información proporcionada | HuggingFace |
+| jayPark777/MiniMax-Music-3-3Trit-MLQT | 4,43 GB | DiT 0,67 GB + TE/AR Qwen3 3,56 GB + VAE 0,20 GB | Ternaria 3-trit, dual-block BLK32/BLK64, 0-skip | Apache 2.0 | Hugging Face, 0 descargas, requiere nodo de ComfyUI |
+| MiniMaxAI/MiniMax-Music-3 (base) | 13,35 GB | DiT 4,58 GB (FP16) + TE/AR Qwen3 8,57 GB (INT8 convrot) + VAE 0,20 GB | FP16 en DiT, INT8 convrot en text encoder | No disponible en la información proporcionada | Hugging Face |
 
 Otros modelos de generación musical de la misma categoría: no disponible.
 
@@ -120,7 +120,7 @@ Otros modelos de generación musical de la misma categoría: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jayPark777/MiniMax-Music-3-3Trit-MLQT
+- Modelo en Hugging Face: https://huggingface.co/jayPark777/MiniMax-Music-3-3Trit-MLQT
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-Music-3
 - Sitio del autor de la cuantización (Axon Labs): https://axonlabs.ai
 - Contacto declarado: contact@axonlabs.ai

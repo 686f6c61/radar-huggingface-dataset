@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `alxxtexxr/XLM-R-Base-squad-en-15K-s42-LoRA-mrg-v260920174217` es un ajuste fino de tipo LoRA sobre `xlm-roberta-base` para la tarea de *question answering* extractivo (span prediction). Lo publica el usuario alxxtexxr en HuggingFace y su nomenclatura indica que se entrenó con un subconjunto de 15.000 ejemplos de SQuAD en inglés, con semilla 42, y que los pesos del adaptador LoRA se han fusionado en el modelo base (sufijo `mrg`). No es, por tanto, un modelo generativo conversacional: devuelve el fragmento de texto del contexto que responde a una pregunta, o la posición de inicio y fin de dicho fragmento.
+El modelo `alxxtexxr/XLM-R-Base-squad-en-15K-s42-LoRA-mrg-v260920174217` es un ajuste fino de tipo LoRA sobre `xlm-roberta-base` para la tarea de *question answering* extractivo (span prediction). Lo publica el usuario alxxtexxr en Hugging Face y su nomenclatura indica que se entrenó con un subconjunto de 15.000 ejemplos de SQuAD en inglés, con semilla 42, y que los pesos del adaptador LoRA se han fusionado en el modelo base (sufijo `mrg`). No es, por tanto, un modelo generativo conversacional: devuelve el fragmento de texto del contexto que responde a una pregunta, o la posición de inicio y fin de dicho fragmento.
 
 El modelo resultante tiene 277.454.594 parámetros, coherentes con la arquitectura XLM-R Base (12 capas, 768 dimensiones ocultas, vocabulario SentencePiece de 250.000 tokens). El repositorio ocupa 1,1 GB y se distribuye en formato `safetensors` bajo la librería `transformers`, con la etiqueta de pipeline `question-answering`.
 
-La relevancia de esta ficha es limitada pero concreta: se trata de un artefacto de experimentación con cero descargas y cero *likes* en el momento de la consulta, cuya model card está autogenerada por HuggingFace y sin rellenar. Sirve como referencia para quien quiera reproducir un pipeline de ajuste fino con LoRA sobre XLM-R en tareas extractivas, pero no como un modelo listo para producción sin una evaluación previa por parte del usuario.
+La relevancia de esta ficha es limitada pero concreta: se trata de un artefacto de experimentación con cero descargas y cero *likes* en el momento de la consulta, cuya model card está autogenerada por Hugging Face y sin rellenar. Sirve como referencia para quien quiera reproducir un pipeline de ajuste fino con LoRA sobre XLM-R en tareas extractivas, pero no como un modelo listo para producción sin una evaluación previa por parte del usuario.
 
 ## Especificaciones tecnicas
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `alxxtexxr/XLM-R-Base-squad-en-15K-s42-LoRA-mrg-v260920174217` | 277,4 M | 512 tokens | QA extractivo (ingles) | no disponible | HuggingFace, 0 descargas |
-| `xlm-roberta-base` (modelo base) | 278 M | 512 tokens | MLM / representaciones | MIT | HuggingFace, ampliamente usado |
-| `deepset/xlm-roberta-base-squad2` | ~278 M | 512 tokens | QA extractivo multilingue | MIT | HuggingFace, referencia consolidada en QA multilingue |
-| `microsoft/deberta-v3-base` | ~184 M (86 M en la variante `xsmall`) | 512 tokens | Base para QA, NLI y clasificacion | MIT | HuggingFace |
+| `alxxtexxr/XLM-R-Base-squad-en-15K-s42-LoRA-mrg-v260920174217` | 277,4 M | 512 tokens | QA extractivo (ingles) | no disponible | Hugging Face, 0 descargas |
+| `xlm-roberta-base` (modelo base) | 278 M | 512 tokens | MLM / representaciones | MIT | Hugging Face, ampliamente usado |
+| `deepset/xlm-roberta-base-squad2` | ~278 M | 512 tokens | QA extractivo multilingue | MIT | Hugging Face, referencia consolidada en QA multilingue |
+| `microsoft/deberta-v3-base` | ~184 M (86 M en la variante `xsmall`) | 512 tokens | Base para QA, NLI y clasificacion | MIT | Hugging Face |
 
 El rendimiento en EM/F1 de este checkpoint frente a las alternativas no esta disponible: no hay ninguna evaluacion publicada que permita compararlo con `deepset/xlm-roberta-base-squad2` ni con los resultados de XLM-R Base reportados en el articulo original. Por volumen y semilla de entrenamiento (15.000 ejemplos, semilla 42), es previsible que rinda por debajo de un ajuste completo sobre la totalidad de SQuAD, pero esto es una expectativa razonada y no un dato medido.
 
@@ -85,7 +85,7 @@ El rendimiento en EM/F1 de este checkpoint frente a las alternativas no esta dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alxxtexxr/XLM-R-Base-squad-en-15K-s42-LoRA-mrg-v260920174217
+- Modelo en Hugging Face: https://huggingface.co/alxxtexxr/XLM-R-Base-squad-en-15K-s42-LoRA-mrg-v260920174217
 - Articulo de XLM-R (etiqueta `arxiv:1910.09700` del repositorio): https://arxiv.org/abs/1910.09700
 - Modelo base `xlm-roberta-base`: https://huggingface.co/xlm-roberta-base
 - Articulo de LoRA (referencia metodologica para el ajuste con adaptadores de bajo rango): https://arxiv.org/abs/2106.09685

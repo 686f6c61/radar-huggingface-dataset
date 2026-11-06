@@ -84,12 +84,12 @@ Nota: el `model-index` del repositorio no contiene resultados estructurados (lis
 
 | Modelo | Parámetros | Contexto | Licencia | Datos abiertos | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenThinker3-7B | 7B | no disponible (heredado de Qwen2.5-7B-Instruct) | apache-2.0 | Sí (OpenThoughts3-1.2M) | HuggingFace |
-| OpenThinker2-7B | 7B | no disponible | no disponible | Sí | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-7B | 7B | no disponible | no disponible | No | HuggingFace |
-| OpenR1-Distill-7B | 7B | no disponible | no disponible | Sí | HuggingFace |
-| Llama-3.1-Nemotron-Nano-8B-v1 | 8B | no disponible | no disponible | Sí | HuggingFace |
-| AceReason-Nemotron-7B | 7B | no disponible | no disponible | Sí | HuggingFace |
+| OpenThinker3-7B | 7B | no disponible (heredado de Qwen2.5-7B-Instruct) | apache-2.0 | Sí (OpenThoughts3-1.2M) | Hugging Face |
+| OpenThinker2-7B | 7B | no disponible | no disponible | Sí | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-7B | 7B | no disponible | no disponible | No | Hugging Face |
+| OpenR1-Distill-7B | 7B | no disponible | no disponible | Sí | Hugging Face |
+| Llama-3.1-Nemotron-Nano-8B-v1 | 8B | no disponible | no disponible | Sí | Hugging Face |
+| AceReason-Nemotron-7B | 7B | no disponible | no disponible | Sí | Hugging Face |
 
 En comparación directa, OpenThinker3-7B es el mejor de la tabla en AIME24, AIME25, AMC23, MATH500, HMMT O2/25, LiveCodeBench y JEEBench, y queda cerca del mejor en CodeElo y CodeForces. Destaca especialmente frente a DeepSeek-R1-Distill-Qwen-32B, que con más del cuádruple de parámetros obtiene resultados inferiores en casi todas las pruebas salvo AMC23. OpenR1-Distill-7B solo supera a OpenThinker3-7B en GPQA-D (58,9 frente a 53,7). Las licencias de los modelos comparados no se detallan en la información proporcionada.
 
@@ -107,7 +107,7 @@ En comparación directa, OpenThinker3-7B es el mejor de la tabla en AIME24, AIME
 
 ## Enlaces
 
-- Modelo en HuggingFace (réplica analizada): https://huggingface.co/baerquants/OpenThinker3-7B
+- Modelo en Hugging Face (réplica analizada): https://huggingface.co/baerquants/OpenThinker3-7B
 - Modelo oficial del autor: https://huggingface.co/open-thoughts/OpenThinker3-7B
 - Paper: https://arxiv.org/abs/2506.04178
 - Blog post de OpenThoughts3: https://www.open-thoughts.ai/blog/ot3

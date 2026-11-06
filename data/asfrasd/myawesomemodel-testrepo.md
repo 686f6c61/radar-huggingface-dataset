@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio de HuggingFace publicado por el usuario asfrasd, identificado explícitamente como repositorio de prueba ("TestRepo"). En el momento de la consulta acumula 0 descargas y 0 likes, y el tamaño del repositorio es de 0,0 GB, lo que indica que no contiene pesos ni ficheros de modelo reales, sino únicamente una model card y material auxiliar. La licencia declarada es MIT.
+MyAwesomeModel-TestRepo es un repositorio de Hugging Face publicado por el usuario asfrasd, identificado explícitamente como repositorio de prueba ("TestRepo"). En el momento de la consulta acumula 0 descargas y 0 likes, y el tamaño del repositorio es de 0,0 GB, lo que indica que no contiene pesos ni ficheros de modelo reales, sino únicamente una model card y material auxiliar. La licencia declarada es MIT.
 
 Las etiquetas del repositorio lo clasifican como `transformers`, `pytorch`, `bert` y `feature-extraction`, es decir, un modelo tipo encoder para extracción de características. Sin embargo, la model card describe un modelo conversacional de razonamiento con modo thinking, function calling y resultados en AIME 2025, lo que es contradictorio con esas etiquetas y con el pipeline declarado. Esta incoherencia, junto con la ausencia de pesos, sugiere que la model card es una plantilla de otro modelo y que el contenido no es verificable.
 
@@ -93,7 +93,7 @@ No disponible. Sin parametros, contexto ni arquitectura confirmados, no es posib
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/asfrasd/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/asfrasd/MyAwesomeModel-TestRepo
 - Repositorio de codigo mencionado en la model card: no disponible (no se incluye URL)
 - Sitio web de chat y API mencionado en la model card: no disponible (no se incluye URL)
 - Paper o publicacion tecnica: no disponible

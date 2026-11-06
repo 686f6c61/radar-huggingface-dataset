@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Unity12/Nemo` en HuggingFace no dispone de información técnica publicada en su model card ni en los metadatos asociados. El repositorio, creado el 20 de agosto de 2026, solo declara la licencia Apache 2.0 y la región estadounidense, sin especificar arquitectura, tamaño, parámetros, contexto o capacidades. No se han registrado descargas ni valoraciones, lo que sugiere que se trata de un espacio vacío o un placeholder sin contenido real.
+El modelo identificado como `Unity12/Nemo` en Hugging Face no dispone de información técnica publicada en su model card ni en los metadatos asociados. El repositorio, creado el 20 de agosto de 2026, solo declara la licencia Apache 2.0 y la región estadounidense, sin especificar arquitectura, tamaño, parámetros, contexto o capacidades. No se han registrado descargas ni valoraciones, lo que sugiere que se trata de un espacio vacío o un placeholder sin contenido real.
 
 Los resultados de búsqueda web relacionados con "NeMo" apuntan al framework NVIDIA NeMo, un conjunto de herramientas para entrenamiento y despliegue de modelos de IA generativa (ASR, TTS, LLM, NLP), pero no hay evidencia de que `Unity12/Nemo` sea un modelo publicado por NVIDIA ni que tenga relación con ese framework más allá del nombre. Por tanto, esta ficha se limita a documentar la ausencia de datos y a advertir sobre la imposibilidad de evaluar el modelo.
 
@@ -21,7 +21,7 @@ Los resultados de búsqueda web relacionados con "NeMo" apuntan al framework NVI
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens procesados o las técnicas de alineación empleadas (RLHF, DPO, etc.). El repositorio de HuggingFace no incluye archivos de pesos, configuraciones ni documentación técnica. Cualquier afirmación sobre su diseño sería especulativa.
+No se ha publicado ninguna información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens procesados o las técnicas de alineación empleadas (RLHF, DPO, etc.). El repositorio de Hugging Face no incluye archivos de pesos, configuraciones ni documentación técnica. Cualquier afirmación sobre su diseño sería especulativa.
 
 ## Capacidades
 
@@ -54,7 +54,7 @@ No disponible. No existen datos del modelo para comparar con alternativas como L
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Unity12/Nemo
+- Repositorio Hugging Face: https://huggingface.co/Unity12/Nemo
 - Documentación de NVIDIA NeMo (framework, no el modelo): https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/core/core.html
 - Guía de usuario de NVIDIA NeMo: https://docs.nvidia.com/nemo-framework/user-guide/24.12/index.html
 - Repositorio GitHub de NVIDIA NeMo (tercero): https://github.com/nsarkhanov/Nvidia-NeMo

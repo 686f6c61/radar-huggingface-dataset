@@ -6,7 +6,7 @@ SmolVLM-500M-WindowsAgent es un ajuste fino del modelo multimodal SmolVLM-500M-I
 
 Arquitectura y tamano: se apoya en la familia SmolVLM (Idefics3), con un backbone de texto SmolLM2-360M y un codificador visual SigLIP-400M. Los pesos fusionados suman aproximadamente 554 millones de parametros segun el autor, mientras que los safetensors publicados declaran 507.482.304 parametros. El modelo se distribuye en `bfloat16` sin cuantizar, con una huella de inferencia de aproximadamente 1,1 GB de VRAM o RAM, lo que lo situa en el rango de modelos ejecutables en CPU y en cualquier GPU moderna de gama de consumo.
 
-Su relevancia es doble: por un lado, demuestra que el control de escritorio multimodal es viable con modelos de menos de 600 millones de parametros, algo poco habitual en una categoria donde predominan modelos de 3B a 72B; por otro, publica una receta de ajuste (LoRA de proyeccion completa fusionada) y una evaluacion por familias de tareas sobre entornos reales, con una tasa de validez sintactica del 100 % en mas de 400 episodios de evaluacion. El modelo no ha recibido descargas ni "likes" en HuggingFace en el momento de la consulta, por lo que se trata de un artefacto reciente y poco validado por terceros.
+Su relevancia es doble: por un lado, demuestra que el control de escritorio multimodal es viable con modelos de menos de 600 millones de parametros, algo poco habitual en una categoria donde predominan modelos de 3B a 72B; por otro, publica una receta de ajuste (LoRA de proyeccion completa fusionada) y una evaluacion por familias de tareas sobre entornos reales, con una tasa de validez sintactica del 100 % en mas de 400 episodios de evaluacion. El modelo no ha recibido descargas ni "likes" en Hugging Face en el momento de la consulta, por lo que se trata de un artefacto reciente y poco validado por terceros.
 
 ## Especificaciones tecnicas
 
@@ -115,9 +115,9 @@ La informacion disponible solo permite comparar con el modelo base y con el rest
 
 | Modelo | Parametros | Contexto | Entrada | Licencia | Orientacion | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SmolVLM-500M-WindowsAgent | 507,5 M (safetensors) / ~554 M declarados | no disponible | Imagen + texto, 1280 x 800 | apache-2.0 | Agente de escritorio Windows 11 con gramatica de acciones cerrada | HuggingFace, safetensors, 0 descargas |
-| SmolVLM-500M-Instruct | ~500 M | no disponible en la informacion proporcionada | Imagen + texto | apache-2.0 | Modelo multimodal instruct generalista | HuggingFace |
-| SmolVLM-256M-Instruct | ~256 M | no disponible | Imagen + texto | apache-2.0 | Modelo multimodal ultraligero para dispositivos restringidos | HuggingFace |
+| SmolVLM-500M-WindowsAgent | 507,5 M (safetensors) / ~554 M declarados | no disponible | Imagen + texto, 1280 x 800 | apache-2.0 | Agente de escritorio Windows 11 con gramatica de acciones cerrada | Hugging Face, safetensors, 0 descargas |
+| SmolVLM-500M-Instruct | ~500 M | no disponible en la informacion proporcionada | Imagen + texto | apache-2.0 | Modelo multimodal instruct generalista | Hugging Face |
+| SmolVLM-256M-Instruct | ~256 M | no disponible | Imagen + texto | apache-2.0 | Modelo multimodal ultraligero para dispositivos restringidos | Hugging Face |
 
 Frente al modelo base, la diferencia principal no es de tamano sino de comportamiento: SmolVLM-500M-Instruct genera texto libre, mientras que este ajuste restringe la salida a un espacio de acciones ejecutables y anade memoria de acciones previas. El coste de esa especializacion es la perdida de capacidades generales de conversacion y de generacion abierta.
 
@@ -138,9 +138,9 @@ Frente al modelo base, la diferencia principal no es de tamano sino de comportam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gabriel8495839/SmolVLM-500M-WindowsAgent
+- Modelo en Hugging Face: https://huggingface.co/Gabriel8495839/SmolVLM-500M-WindowsAgent
 - Modelo base SmolVLM-500M-Instruct: https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct
-- Blog de HuggingFace sobre SmolVLM 256M y 500M: https://huggingface.co/blog/smolervlm
+- Blog de Hugging Face sobre SmolVLM 256M y 500M: https://huggingface.co/blog/smolervlm
 - Repositorio GitHub del proyecto SmolLM/SmolVLM: https://github.com/huggingface/smollm
 - Fuente del blog en GitHub: https://github.com/huggingface/blog/blob/main/smolervlm.md
 - Articulo divulgativo sobre SmolVLM: https://medium.com/@uzbrainai/smolvlm-the-future-of-lightweight-multimodal-models-on-your-device-291d92ae0698

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Arka-Specialist-V2-1p4B-Controlled-100M-CPT es un checkpoint de tipo base (no instruction-tuned) publicado por el usuario Abhayn01 en HuggingFace. Se trata de la etapa de "reparacion" mediante continual pre-training (CPT) de un modelo previo llamado `Abhayn01/Arka-Specialist-V2-1B-Plus300M-EOD-CPT`, sobre el que se han entrenado 100.007.936 tokens adicionales con una mezcla controlada de datos. El nombre comercial induce a confusion: el "1p4B" hace referencia a los aproximadamente 1.400 millones de tokens acumulados, no al numero de parametros, que segun los pesos safetensors publicados es de 178.152.992 (unos 178 M).
+Arka-Specialist-V2-1p4B-Controlled-100M-CPT es un checkpoint de tipo base (no instruction-tuned) publicado por el usuario Abhayn01 en Hugging Face. Se trata de la etapa de "reparacion" mediante continual pre-training (CPT) de un modelo previo llamado `Abhayn01/Arka-Specialist-V2-1B-Plus300M-EOD-CPT`, sobre el que se han entrenado 100.007.936 tokens adicionales con una mezcla controlada de datos. El nombre comercial induce a confusion: el "1p4B" hace referencia a los aproximadamente 1.400 millones de tokens acumulados, no al numero de parametros, que segun los pesos safetensors publicados es de 178.152.992 (unos 178 M).
 
 El modelo se distribuye en formato safetensors bajo la libreria transformers, con la etiqueta `custom_code`, lo que implica que el repositorio incluye codigo propio y que su carga probablemente requiere `trust_remote_code=True`. La model card no especifica arquitectura, licencia ni idiomas soportados, y no se han publicado resultados de benchmarks. Con 0 descargas y 0 likes en el momento de la consulta, se trata de un artefacto experimental de investigacion mas que de un modelo listo para produccion.
 
@@ -94,6 +94,6 @@ Rendimiento comparado: no disponible (ninguna de las metricas del modelo esta pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abhayn01/Arka-Specialist-V2-1p4B-Controlled-100M-CPT
+- Modelo en Hugging Face: https://huggingface.co/Abhayn01/Arka-Specialist-V2-1p4B-Controlled-100M-CPT
 - Modelo base declarado en la model card: https://huggingface.co/Abhayn01/Arka-Specialist-V2-1B-Plus300M-EOD-CPT
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

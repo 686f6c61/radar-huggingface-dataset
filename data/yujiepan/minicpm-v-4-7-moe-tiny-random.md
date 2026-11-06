@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yujiepan/minicpm-v-4.7-moe-tiny-random | 12,58 M | no disponible | imagen-texto-video | no disponible | HuggingFace |
-| openbmb/MiniCPM-V-4.7-35B-A3B | 35,21 B (MoE, 8/256 expertos) | no disponible | imagen-texto-video | no disponible | HuggingFace |
+| yujiepan/minicpm-v-4.7-moe-tiny-random | 12,58 M | no disponible | imagen-texto-video | no disponible | Hugging Face |
+| openbmb/MiniCPM-V-4.7-35B-A3B | 35,21 B (MoE, 8/256 expertos) | no disponible | imagen-texto-video | no disponible | Hugging Face |
 | Otros tiny de prueba de MiniCPM-V | no disponible | no disponible | imagen-texto | no disponible | no disponible |
 
 La comparativa relevante es contra el modelo base del que deriva: misma configuracion arquitectonica, pero con dimensiones reducidas y pesos aleatorios. No se dispone de informacion sobre alternativas tiny equivalentes de otros autores.
@@ -80,7 +80,7 @@ La comparativa relevante es contra el modelo base del que deriva: misma configur
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yujiepan/minicpm-v-4.7-moe-tiny-random
+- Repositorio Hugging Face: https://huggingface.co/yujiepan/minicpm-v-4.7-moe-tiny-random
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - Script de creacion: `.meta/create_model.py` (incluido en el repositorio)
 - Log de estructura: `.meta/model.log` (incluido en el repositorio)

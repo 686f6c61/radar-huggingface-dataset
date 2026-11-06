@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OvisOCR3-0.8B-MLX-4bit es una conversión a formato MLX con cuantización de 4 bits del modelo OvisOCR3, un modelo multimodal orientado a tareas de reconocimiento óptico de caracteres (OCR) y comprensión de documentos. Lo publica el usuario arlenecc en HuggingFace bajo licencia MIT, y su principal valor es empaquetar un modelo de aproximadamente 0,8 mil millones de parámetros en un formato optimizado para inferencia en hardware Apple Silicon mediante el framework MLX.
+OvisOCR3-0.8B-MLX-4bit es una conversión a formato MLX con cuantización de 4 bits del modelo OvisOCR3, un modelo multimodal orientado a tareas de reconocimiento óptico de caracteres (OCR) y comprensión de documentos. Lo publica el usuario arlenecc en Hugging Face bajo licencia MIT, y su principal valor es empaquetar un modelo de aproximadamente 0,8 mil millones de parámetros en un formato optimizado para inferencia en hardware Apple Silicon mediante el framework MLX.
 
 El modelo base pertenece a la familia Ovis, desarrollada por el Alibaba Group, que combina un codificador visual con un modelo de lenguaje para tareas de visión-lenguaje. La variante OCR3 está especializada en extracción y comprensión de texto en imágenes, lo que la hace útil para digitalización de documentos, facturas, formularios y capturas.
 
@@ -81,4 +81,4 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arlenecc/OvisOCR3-0.8B-MLX-4bit
+- Hugging Face: https://huggingface.co/arlenecc/OvisOCR3-0.8B-MLX-4bit

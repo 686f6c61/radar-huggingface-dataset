@@ -102,11 +102,11 @@ Comparativas con otros adaptadores, otros ataques de la misma familia o modelos 
 - Licencia: el adaptador se distribuye bajo Apache 2.0, pero la licencia del modelo base `thinkingmachines/Inkling-Small` y las condiciones de uso de los pesos de Tinker deben verificarse por separado antes de cualquier uso comercial.
 - Redistribución de datos: el dataset Copyright-MCQ no se redistribuye en este repositorio (pertenece al release del artículo), y los registros de evaluación por muestra están en un repositorio privado; la reproducibilidad completa exige obtener el dataset original.
 - Adopción mínima: el repositorio registra 0 descargas y 0 valoraciones, sin señales de validación por terceros.
-- La búsqueda web realizada no devolvió resultados relevantes sobre este modelo: los enlaces recuperados correspondían a páginas de soporte de Microsoft sin relación con el artefacto, por lo que no se ha podido contrastar información adicional fuera de la model card y de los metadatos de HuggingFace.
+- La búsqueda web realizada no devolvió resultados relevantes sobre este modelo: los enlaces recuperados correspondían a páginas de soporte de Microsoft sin relación con el artefacto, por lo que no se ha podido contrastar información adicional fuera de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Butanium/ft-attack-repro-inkling-small-classify-wsnorm
+- Modelo en Hugging Face: https://huggingface.co/Butanium/ft-attack-repro-inkling-small-classify-wsnorm
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Artículo: *Fundamental Limitations in Defending LLM Finetuning APIs* (UK AISI), https://arxiv.org/abs/2502.14828
 - API de fine-tuning Tinker: https://thinkingmachines.ai/tinker/

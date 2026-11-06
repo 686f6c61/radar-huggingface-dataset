@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`zohaib47/potato-leaf-model` es un modelo de visión por computadora publicado en HuggingFace por el usuario zohaib47 el 21 de octubre de 2026. El repositorio contiene pesos en formato safetensors con 85.800.963 parámetros (aproximadamente 85,8 millones), lo que sitúa al modelo en el rango de tamaño de un Vision Transformer tipo ViT-Base. El tag `vit` del repositorio confirma que la arquitectura pertenece a la familia de transformers de visión, aunque la model card no documenta la configuración exacta (tamaño de parche, número de capas, dimensión de embedding ni resolución de entrada).
+`zohaib47/potato-leaf-model` es un modelo de visión por computadora publicado en Hugging Face por el usuario zohaib47 el 21 de octubre de 2026. El repositorio contiene pesos en formato safetensors con 85.800.963 parámetros (aproximadamente 85,8 millones), lo que sitúa al modelo en el rango de tamaño de un Vision Transformer tipo ViT-Base. El tag `vit` del repositorio confirma que la arquitectura pertenece a la familia de transformers de visión, aunque la model card no documenta la configuración exacta (tamaño de parche, número de capas, dimensión de embedding ni resolución de entrada).
 
-Por el nombre del repositorio, el modelo parece orientado a la clasificación de hojas de patata, presumiblemente para detección de enfermedades foliares, una tarea habitual en agricultura de precisión. Sin embargo, esta finalidad no está confirmada en la información disponible: la model card pública solo contiene la declaración de licencia MIT y no incluye descripción, dataset de entrenamiento, métricas ni instrucciones de uso. El pipeline declarado en HuggingFace está vacío.
+Por el nombre del repositorio, el modelo parece orientado a la clasificación de hojas de patata, presumiblemente para detección de enfermedades foliares, una tarea habitual en agricultura de precisión. Sin embargo, esta finalidad no está confirmada en la información disponible: la model card pública solo contiene la declaración de licencia MIT y no incluye descripción, dataset de entrenamiento, métricas ni instrucciones de uso. El pipeline declarado en Hugging Face está vacío.
 
 Su relevancia actual es limitada y de nicho: se trata de un modelo pequeño (0,3 GB de repositorio) que cabe en CPU y en cualquier GPU de consumo, con licencia permisiva MIT, lo que facilita su uso comercial. No obstante, con 0 descargas y 0 likes en el momento de la consulta y sin documentación técnica, no existe validación externa de su calidad ni evidencia publicada de su rendimiento.
 
@@ -74,8 +74,8 @@ Los datos de las alternativas son cifras públicas de referencia, no proceden de
 
 | Modelo | Parámetros | Tarea | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zohaib47/potato-leaf-model | 85,8 M | Clasificación de imágenes (inferida) | No disponible | MIT | HuggingFace, sin documentación |
-| google/vit-base-patch16-224 | ~86 M | Clasificación de imágenes (ImageNet-1k, 1000 clases) | 224x224 | Apache 2.0 | HuggingFace, ampliamente documentado |
+| zohaib47/potato-leaf-model | 85,8 M | Clasificación de imágenes (inferida) | No disponible | MIT | Hugging Face, sin documentación |
+| google/vit-base-patch16-224 | ~86 M | Clasificación de imágenes (ImageNet-1k, 1000 clases) | 224x224 | Apache 2.0 | Hugging Face, ampliamente documentado |
 | ResNet-50 | ~25,6 M | Clasificación de imágenes | 224x224 | BSD-3-Clause (torchvision) | Muy extendido, múltiples frameworks |
 | MobileNetV3-Large | ~5,4 M | Clasificación de imágenes en dispositivo | 224x224 | BSD-3-Clause (torchvision) | Muy extendido, optimizado para móvil |
 
@@ -94,6 +94,6 @@ Frente a estas alternativas, la única ventaja diferencial del modelo analizado 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zohaib47/potato-leaf-model
+- Hugging Face: https://huggingface.co/zohaib47/potato-leaf-model
 
 No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados a este modelo.

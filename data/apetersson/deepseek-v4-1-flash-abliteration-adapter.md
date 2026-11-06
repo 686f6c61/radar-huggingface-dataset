@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativos. La tabla siguiente contrasta
 | Este paquete (`DS41DIR`) | Activaciones en puntos residual/writer, con intensidad configurable | Si (intensidad 0 omite la edicion; reinicio para cambiar de fichero) | `DS41DIR` v1, un fichero por ejecucion | Requiere fork propio de ds4 y Apple Silicon Metal |
 | Abliteration clasico de pesos | Pesos del modelo de forma permanente | No | safetensors/GGUF modificados | Publicacion como modelo completo |
 | Adaptadores PEFT/LoRA | Matrices adicionales sobre capas del modelo | Si, cargando o descargando el adaptador | safetensors u otros formatos PEFT | Ecosistema estandar (PEFT, vLLM, TGI) |
-| Control vectors de HuggingFace | Vectores de direccion sobre activaciones | Si, con factores de escala | Formato de control vector del ecosistema HF | No aceptado como `DS41DIR` segun el autor |
+| Control vectors de Hugging Face | Vectores de direccion sobre activaciones | Si, con factores de escala | Formato de control vector del ecosistema HF | No aceptado como `DS41DIR` segun el autor |
 
 Los parametros, la longitud de contexto, la licencia y el rendimiento del modelo base no se detallan en la informacion proporcionada, por lo que no es posible completar una comparacion cuantitativa.
 
@@ -108,7 +108,7 @@ Los parametros, la longitud de contexto, la licencia y el rendimiento del modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/apetersson/DeepSeek-V4.1-Flash-Abliteration-Adapter
+- Repositorio Hugging Face: https://huggingface.co/apetersson/DeepSeek-V4.1-Flash-Abliteration-Adapter
 - Modelo base referenciado: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Repositorio de codigo requerido: https://github.com/apetersson/ds4
 - Rama necesaria: https://github.com/apetersson/ds4/tree/feat/abl-049-v41-cli-steering

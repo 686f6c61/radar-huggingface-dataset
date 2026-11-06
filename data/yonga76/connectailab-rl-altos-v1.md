@@ -70,8 +70,8 @@ El autor señala que el resultado de operación empresarial corresponde a la med
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-altos-v1 | 0,8B (base) + LoRA | No disponible | Decisión discreta con RL/GRPO sobre simulador | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B | 0,8B | No disponible | Modelo de lenguaje generalista | No disponible en la informacion | HuggingFace |
+| connectailab-rl-altos-v1 | 0,8B (base) + LoRA | No disponible | Decisión discreta con RL/GRPO sobre simulador | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B | 0,8B | No disponible | Modelo de lenguaje generalista | No disponible en la informacion | Hugging Face |
 | Política PPO del simulador CONNECT TYCOON | No disponible (modelo pequeño) | No aplica | Política de RL clásica sobre el simulador | No disponible | Repositorio del proyecto |
 
 No se dispone de información sobre otros adaptadores de decisión comparables de la misma categoría en la información proporcionada.
@@ -90,7 +90,7 @@ No se dispone de información sobre otros adaptadores de decisión comparables d
 
 ## Enlaces
 
-- [HuggingFace: yonga76/connectailab-rl-altos-v1](https://huggingface.co/yonga76/connectailab-rl-altos-v1)
+- [Hugging Face: yonga76/connectailab-rl-altos-v1](https://huggingface.co/yonga76/connectailab-rl-altos-v1)
 - [Modelo base: Qwen/Qwen3.5-0.8B](https://huggingface.co/Qwen/Qwen3.5-0.8B)
 - [Repositorio GitHub CONNECT TYCOON](https://github.com/wonseokjung/connect-tycoon)
 - [Notebook de Colab para entrenamiento](https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb)

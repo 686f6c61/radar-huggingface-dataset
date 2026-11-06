@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jaswanthamilvel/nsqf-qwen3-counselor` es un adaptador de ajuste fino publicado en HuggingFace, etiquetado con la librería PEFT y `base_model: Qwen/Qwen3-8B`. Se trata, por tanto, de un conjunto de pesos adicionales (LoRA u otra variante PEFT) que debe cargarse junto al modelo base Qwen3-8B; no es un modelo autónomo ni un checkpoint completo. El repositorio ocupa 0,4 GB, lo que es coherente con pesos de adaptador, y los pesos están en formato `safetensors`. La model card publicada por el autor es la plantilla por defecto de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) figuran como "[More Information Needed]".
+`jaswanthamilvel/nsqf-qwen3-counselor` es un adaptador de ajuste fino publicado en Hugging Face, etiquetado con la librería PEFT y `base_model: Qwen/Qwen3-8B`. Se trata, por tanto, de un conjunto de pesos adicionales (LoRA u otra variante PEFT) que debe cargarse junto al modelo base Qwen3-8B; no es un modelo autónomo ni un checkpoint completo. El repositorio ocupa 0,4 GB, lo que es coherente con pesos de adaptador, y los pesos están en formato `safetensors`. La model card publicada por el autor es la plantilla por defecto de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) figuran como "[More Information Needed]".
 
 El nombre del repositorio sugiere un ajuste orientado a tareas de consejería o asesoramiento (probablemente orientación vocacional o de capacitación vinculada a un marco de cualificaciones, por las siglas NSQF), pero esto es una inferencia a partir del identificador y no está confirmado en ninguna sección de la documentación. El autor no aporta información sobre el conjunto de datos, el procedimiento de entrenamiento ni las hiperparámetros utilizados.
 
@@ -101,7 +101,7 @@ No se han localizado en la información proporcionada adaptadores de consejería
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jaswanthamilvel/nsqf-qwen3-counselor
+- Repositorio en Hugging Face: https://huggingface.co/jaswanthamilvel/nsqf-qwen3-counselor
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Referencia bibliográfica citada en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Repositorio oficial de Qwen3 (código y documentación): https://github.com/QwenLM/Qwen3

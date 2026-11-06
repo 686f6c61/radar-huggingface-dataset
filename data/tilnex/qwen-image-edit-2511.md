@@ -6,7 +6,7 @@ Qwen-Image-Edit-2511 es un modelo de edicion de imagen (image-to-image) desarrol
 
 La relevancia de esta version radica en varias mejoras concretas: mitigacion del desplazamiento de imagen (image drift), mayor consistencia de personajes en ediciones y en fotos de grupo con multiples personas, integracion de LoRAs populares de la comunidad directamente en el modelo base, mejor generacion para diseno industrial y un razonamiento geometrico reforzado (por ejemplo, generacion de lineas auxiliares de construccion). El modelo esta publicado bajo licencia Apache 2.0 y declara soporte de ingles y chino.
 
-La ficha se basa en la model card del repositorio de HuggingFace (`tilnex/qwen-image-edit-2511`, un espejo del modelo oficial de Qwen). No se dispone de datos de benchmarks, numero de parametros ni longitud de contexto en la informacion proporcionada, por lo que esos campos se marcan como no disponibles.
+La ficha se basa en la model card del repositorio de Hugging Face (`tilnex/qwen-image-edit-2511`, un espejo del modelo oficial de Qwen). No se dispone de datos de benchmarks, numero de parametros ni longitud de contexto en la informacion proporcionada, por lo que esos campos se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen-Image-Edit-2511 | no disponible | no disponible | Apache 2.0 | HuggingFace, ModelScope, Qwen Chat | Version mejorada de 2509 con mejor consistencia, LoRAs integrados y razonamiento geometrico |
-| Qwen-Image-Edit-2509 | no disponible | no disponible | no disponible en la informacion | HuggingFace | Version anterior; menor consistencia y sin LoRAs integrados |
+| Qwen-Image-Edit-2511 | no disponible | no disponible | Apache 2.0 | Hugging Face, ModelScope, Qwen Chat | Version mejorada de 2509 con mejor consistencia, LoRAs integrados y razonamiento geometrico |
+| Qwen-Image-Edit-2509 | no disponible | no disponible | no disponible en la informacion | Hugging Face | Version anterior; menor consistencia y sin LoRAs integrados |
 | Otros modelos de edicion de imagen | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de comparacion en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Repositorio analizado: https://huggingface.co/tilnex/qwen-image-edit-2511
 - Repositorio oficial: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-Edit-2511
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-Edit-2511
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-Edit-2511
 - Blog oficial: https://qwenlm.github.io/blog/qwen-image-edit-2511/
 - Informe tecnico (PDF): https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-Image/Qwen_Image.pdf
 - Repositorio GitHub: https://github.com/QwenLM/Qwen-Image

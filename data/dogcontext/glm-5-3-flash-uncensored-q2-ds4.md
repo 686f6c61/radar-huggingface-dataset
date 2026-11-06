@@ -83,7 +83,7 @@ No se dispone de comparativas con otros modelos MoE de tamaño similar (por ejem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DogContext/GLM-5.3-Flash-Uncensored-Q2-ds4
+- Modelo en Hugging Face: https://huggingface.co/DogContext/GLM-5.3-Flash-Uncensored-Q2-ds4
 - Modelo base abliterado (FP8): https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-FP8
 - Modelo original: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Repositorio ds4 / DwarfStar: https://github.com/antirez/ds4

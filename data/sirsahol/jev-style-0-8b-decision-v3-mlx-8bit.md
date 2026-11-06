@@ -119,12 +119,12 @@ No se dispone de datos de benchmarks ni de contexto comparables con alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SirSahOl/Jev-Style-0.8B-Decision-v3-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/SirSahOl/Jev-Style-0.8B-Decision-v3-mlx-8bit
 - Modelo base (chaoliangUNSW): https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3
 - Variante 4-bit: https://huggingface.co/SirSahOl/Jev-Style-0.8B-Decision-v3-mlx-4bit
 - Variante 16-bit: https://huggingface.co/SirSahOl/Jev-Style-0.8B-Decision-v3-mlx-16bit
 - Repositorio MLX de la familia en GitHub: https://github.com/lawrence3699/Jev-Style-0.8B-Decision-v3-MLX
-- Builds MLX en HuggingFace (gahabeen): https://huggingface.co/gahabeen/Jev-Style-0.8B-Decision-v3-MLX
+- Builds MLX en Hugging Face (gahabeen): https://huggingface.co/gahabeen/Jev-Style-0.8B-Decision-v3-MLX
 - Sitio del modelo Jev: https://jevmodel.org/
 - Organización jev-ai en GitHub: https://github.com/jev-ai
 - MLX (Apple): https://github.com/ml-explore/mlx

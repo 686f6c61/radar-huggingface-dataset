@@ -102,8 +102,8 @@ No se dispone de datos de benchmarks de modelos comparables de la misma categor√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Remek/basal-omni-pico-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Remek/basal-omni-pico
+- Modelo en Hugging Face: https://huggingface.co/Remek/basal-omni-pico-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Remek/basal-omni-pico
 - Repositorio del motor de inferencia: https://github.com/rkinas/basal
 - Documentaci√≥n GGUF del motor: https://github.com/rkinas/basal (docs/GGUF.md)
 - Sitio web del proyecto: https://basal.si5.pl/

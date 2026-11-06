@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `iamthearafatkhan/dlr-pcvw-acne-severity` es un sistema de inteligencia artificial destinado a la evaluación automática de la severidad del acné a partir de imágenes faciales. Aunque el nombre sugiere una arquitectura basada en visión por computador (posiblemente una red convolucional o un modelo de clasificación de imágenes), no se dispone de información técnica detallada en la página de HuggingFace. El repositorio tiene un tamaño de 0.3 GB, lo que indica que el modelo es relativamente ligero, pero el acceso está restringido (gated) y no se han publicado descargas ni valoraciones.
+El modelo `iamthearafatkhan/dlr-pcvw-acne-severity` es un sistema de inteligencia artificial destinado a la evaluación automática de la severidad del acné a partir de imágenes faciales. Aunque el nombre sugiere una arquitectura basada en visión por computador (posiblemente una red convolucional o un modelo de clasificación de imágenes), no se dispone de información técnica detallada en la página de Hugging Face. El repositorio tiene un tamaño de 0.3 GB, lo que indica que el modelo es relativamente ligero, pero el acceso está restringido (gated) y no se han publicado descargas ni valoraciones.
 
-El autor es `iamthearafatkhan`, y la licencia es Apache 2.0, lo que permite uso comercial y modificación con atribución. Sin embargo, al ser un modelo con acceso restringido, los usuarios deben aceptar condiciones adicionales en HuggingFace antes de poder descargarlo. Dada la ausencia de documentación técnica, benchmarks o ejemplos, la utilidad práctica del modelo no puede ser evaluada con los datos disponibles.
+El autor es `iamthearafatkhan`, y la licencia es Apache 2.0, lo que permite uso comercial y modificación con atribución. Sin embargo, al ser un modelo con acceso restringido, los usuarios deben aceptar condiciones adicionales en Hugging Face antes de poder descargarlo. Dada la ausencia de documentación técnica, benchmarks o ejemplos, la utilidad práctica del modelo no puede ser evaluada con los datos disponibles.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El autor es `iamthearafatkhan`, y la licencia es Apache 2.0, lo que permite uso 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens o el proceso de optimización (RLHF, DPO, etc.). El nombre del modelo (`dlr-pcvw-acne-severity`) podría hacer referencia a un dataset específico o a una técnica concreta, pero no hay confirmación en la página de HuggingFace ni en los resultados de búsqueda. Tampoco se menciona si se utilizó alguna innovación técnica como atención lineal, decodificación especulativa o arquitecturas híbridas.
+No se ha publicado información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens o el proceso de optimización (RLHF, DPO, etc.). El nombre del modelo (`dlr-pcvw-acne-severity`) podría hacer referencia a un dataset específico o a una técnica concreta, pero no hay confirmación en la página de Hugging Face ni en los resultados de búsqueda. Tampoco se menciona si se utilizó alguna innovación técnica como atención lineal, decodificación especulativa o arquitecturas híbridas.
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ Sin embargo, sin información sobre el entrenamiento, los datos utilizados o los
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay métricas de precisión, recall, F1, ni comparaciones con otros modelos en la página de HuggingFace. Los resultados de búsqueda web sobre herramientas como ALADIN o DERMA AI no están vinculados a este modelo concreto. Por tanto, no es posible evaluar su rendimiento objetivo.
+No se han publicado resultados de benchmarks en la información disponible. No hay métricas de precisión, recall, F1, ni comparaciones con otros modelos en la página de Hugging Face. Los resultados de búsqueda web sobre herramientas como ALADIN o DERMA AI no están vinculados a este modelo concreto. Por tanto, no es posible evaluar su rendimiento objetivo.
 
 ## Requisitos de hardware
 
@@ -59,7 +59,7 @@ No disponible. No se han identificado modelos comparables de clasificación de s
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo requiere aceptar condiciones en HuggingFace, lo que limita su uso inmediato y su revisión por la comunidad.
+- **Acceso restringido**: el modelo requiere aceptar condiciones en Hugging Face, lo que limita su uso inmediato y su revisión por la comunidad.
 - **Sin documentación**: no hay arquitectura, datos de entrenamiento, ni licencia de uso comercial explícita más allá de Apache 2.0.
 - **Riesgo de sesgos**: al no conocerse el dataset de entrenamiento, no se puede evaluar la presencia de sesgos étnicos, de edad o de tipo de piel.
 - **Alucinación**: si el modelo genera texto (aunque no está confirmado), no hay evidencia de su fiabilidad.
@@ -67,6 +67,6 @@ No disponible. No se han identificado modelos comparables de clasificación de s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/iamthearafatkhan/dlr-pcvw-acne-severity
+- Repositorio Hugging Face: https://huggingface.co/iamthearafatkhan/dlr-pcvw-acne-severity
 
 No se han encontrado otros enlaces relevantes (papers, blogs, demos) específicos de este modelo.

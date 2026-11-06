@@ -74,7 +74,7 @@ La comparación muestra que este checkpoint es un artefacto intermedio de entren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-357b
+- Repositorio Hugging Face: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-357b
 - Modelo base OLMo-2-0425-1B: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Modelo base RLVR1: https://huggingface.co/allenai/OLMo-2-0425-1B-RLVR1
 - Repositorio GitHub de OLMo: https://github.com/allenai/OLMo

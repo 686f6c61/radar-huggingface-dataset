@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fanqi-robo/pi05_busybox_push_green_button_norm_meanstd` es un checkpoint de robótica publicado en HuggingFace por el usuario `fanqi-robo`. No es un modelo de lenguaje de propósito general, sino una política visión-lenguaje-acción (VLA) resultante de un ajuste fino de `lerobot/pi05_base` (implementación LeRobot de π0.5) sobre el dataset `armnet/busybox_push_green_button`, compuesto por 39 episodios de demostración de la tarea de pulsar un botón verde con un brazo SO-101. El modelo tiene 4.143.404.816 parámetros (dato real de safetensors) y se distribuye con licencia Apache-2.0.
+`fanqi-robo/pi05_busybox_push_green_button_norm_meanstd` es un checkpoint de robótica publicado en Hugging Face por el usuario `fanqi-robo`. No es un modelo de lenguaje de propósito general, sino una política visión-lenguaje-acción (VLA) resultante de un ajuste fino de `lerobot/pi05_base` (implementación LeRobot de π0.5) sobre el dataset `armnet/busybox_push_green_button`, compuesto por 39 episodios de demostración de la tarea de pulsar un botón verde con un brazo SO-101. El modelo tiene 4.143.404.816 parámetros (dato real de safetensors) y se distribuye con licencia Apache-2.0.
 
 El checkpoint encarna una única decisión de diseño dentro de un estudio de ablación: sustituir la normalización por defecto de π0.5 (cuantiles q01/q99) por MEAN_STD tanto en el estado como en la acción, manteniendo IDENTITY en las entradas visuales. La hipótesis del autor es que la normalización del espacio articular de 6 dimensiones del SO-101 es el parámetro con evidencia previa en esta tarea concreta, ya que en la leaderboard de `push_green_button` el π0.5 multitarea de openpi dobló su tasa de éxito (del 20 % al 40 %) al cambiar su normalización a min-max.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks de este checkpoint en la informaci�
 - VRAM estimada para inferencia: en torno a 10-13 GB incluyendo activaciones, encoder visual y buffers de decodificación de 50 acciones. Es una estimación propia; la model card no publica cifras de VRAM.
 - GPU recomendadas: A100 (40/80 GB), H100, L40S (48 GB) o cualquier acelerador con al menos 16 GB. El entrenamiento del estudio se realizó en la nube (volumen de Modal para los checkpoints).
 - GPU de consumo: cabe en RTX 4090 y RTX 3090 (24 GB) sin cuantización. En tarjetas de 16 GB quedaría al límite, sin margen documentado.
-- Opciones de despliegue: LeRobot con el extra `[pi]` (`lerobot[pi]`) es la vía documentada y requiere un token de HuggingFace con permiso de lectura sobre el tokenizador restringido `google/paligemma-3b-pt-224`. No hay soporte documentado en vLLM, llama.cpp, Ollama ni TGI, al no tratarse de un modelo de generación de texto.
+- Opciones de despliegue: LeRobot con el extra `[pi]` (`lerobot[pi]`) es la vía documentada y requiere un token de Hugging Face con permiso de lectura sobre el tokenizador restringido `google/paligemma-3b-pt-224`. No hay soporte documentado en vLLM, llama.cpp, Ollama ni TGI, al no tratarse de un modelo de generación de texto.
 - Latencia y throughput: no disponibles. Los únicos parámetros conocidos son 10 pasos de inferencia para generar chunks de 50 acciones.
 - Restricción de carga: el autor advierte que revisiones posteriores del modelo base usan un paso de procesador que LeRobot 0.5.1 no puede cargar, por lo que la ruta de pesos debe fijarse al commit indicado.
 
@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks de este checkpoint en la informaci�
 
 | Modelo | Parametros | Contexto / acción | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fanqi-robo/pi05_busybox_push_green_button_norm_meanstd` | 4.143.404.816 | Prompt de 200 tokens; chunks de 50 acciones | `push_green_button` con SO-101 | apache-2.0 | Público en HuggingFace (10 descargas) |
-| `lerobot/pi05_base` | No disponible | No disponible | Base VLA multitarea | No disponible en la información | Público en HuggingFace |
+| `fanqi-robo/pi05_busybox_push_green_button_norm_meanstd` | 4.143.404.816 | Prompt de 200 tokens; chunks de 50 acciones | `push_green_button` con SO-101 | apache-2.0 | Público en Hugging Face (10 descargas) |
+| `lerobot/pi05_base` | No disponible | No disponible | Base VLA multitarea | No disponible en la información | Público en Hugging Face |
 | `fanqi-robo/pi05_busybox_push_green_button_norm_meanstd_ckpts` | No disponible | No disponible | Mismo experimento | No disponible en la información | Público; contiene los 2 checkpoints más recientes del mismo estudio |
 | Otros brazos del grupo `normalization` del estudio | No disponible | No disponible | Mismo experimento | No disponible en la información | Parcialmente públicos; el autor los referencia de forma agregada |
 | Otros VLA abiertos de propósito general (π0 de LeRobot, OpenVLA, GR00T N1.5, RDT-1B) | No disponible | No disponible | Manipulación generalista | No disponible | No se aportan datos comparativos en la información disponible |
@@ -99,7 +99,7 @@ No se han publicado resultados de benchmarks de este checkpoint en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fanqi-robo/pi05_busybox_push_green_button_norm_meanstd
+- Modelo en Hugging Face: https://huggingface.co/fanqi-robo/pi05_busybox_push_green_button_norm_meanstd
 - Checkpoints anteriores del mismo estudio: https://huggingface.co/fanqi-robo/pi05_busybox_push_green_button_norm_meanstd_ckpts
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de ajuste fino: https://huggingface.co/datasets/armnet/busybox_push_green_button

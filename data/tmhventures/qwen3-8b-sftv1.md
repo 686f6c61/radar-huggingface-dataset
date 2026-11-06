@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tmhventures/Qwen3-8B-SFTv1 es un ajuste fino supervisado (SFT) del modelo Qwen3-8B, publicado en HuggingFace por el usuario tmhventures. El modelo base declarado es unsloth/Qwen3-8B, y el resultado se distribuye en formato MLX, la librería de Apple para inferencia eficiente en silicio de la serie M. Se trata, por tanto, de un modelo de generación de texto conversacional derivado de la familia Qwen3.
+tmhventures/Qwen3-8B-SFTv1 es un ajuste fino supervisado (SFT) del modelo Qwen3-8B, publicado en Hugging Face por el usuario tmhventures. El modelo base declarado es unsloth/Qwen3-8B, y el resultado se distribuye en formato MLX, la librería de Apple para inferencia eficiente en silicio de la serie M. Se trata, por tanto, de un modelo de generación de texto conversacional derivado de la familia Qwen3.
 
 El repositorio contiene 8.190.735.360 parámetros en pesos safetensors (aproximadamente 8,19 mil millones), lo que sitúa al modelo en la categoría densa de 8B. El tamaño del repositorio, 16,4 GB, es coherente con pesos en precisión fp16/bf16 sin cuantizar. La licencia declarada es Apache 2.0, heredada del modelo base.
 
@@ -94,7 +94,7 @@ Diferencias clave: frente al Qwen3-8B base, este repositorio no documenta ningun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tmhventures/Qwen3-8B-SFTv1
+- Modelo en Hugging Face: https://huggingface.co/tmhventures/Qwen3-8B-SFTv1
 - Modelo base declarado: https://huggingface.co/unsloth/Qwen3-8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-8B/blob/main/LICENSE
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen3-8B

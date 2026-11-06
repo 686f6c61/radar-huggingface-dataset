@@ -72,9 +72,9 @@ Estos datos provienen de la simulación y no han sido verificados en hardware re
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `microduck-rough-walk-e` | Politica RL de locomocion | no disponible | no aplica | Apache-2.0 | ONNX en HuggingFace |
+| `microduck-rough-walk-e` | Politica RL de locomocion | no disponible | no aplica | Apache-2.0 | ONNX en Hugging Face |
 | `alpha_walking` (base) | Politica RL de locomocion | no disponible | no aplica | Apache-2.0 | Repositorio `microduck_rl` |
-| `microduck-flamingo-cycle` | Politica RL (otra tarea) | no disponible | no aplica | Apache-2.0 | ONNX en HuggingFace |
+| `microduck-flamingo-cycle` | Politica RL (otra tarea) | no disponible | no aplica | Apache-2.0 | ONNX en Hugging Face |
 
 La comparativa se limita a otros modelos de la misma familia MicroDuck, ya que no se dispone de información sobre alternativas de otros desarrolladores. `microduck-rough-walk-e` se distingue de `alpha_walking` por su robustez en terreno irregular, aunque sacrifica algo de capacidad de giro y recuperación ante empujones. `microduck-flamingo-cycle` parece ser una política para otra tarea (posiblemente un ciclo de marcha diferente), pero no se dispone de detalles.
 
@@ -90,10 +90,10 @@ La comparativa se limita a otros modelos de la misma familia MicroDuck, ya que n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RemiFabre/microduck-rough-walk-e
+- Modelo en Hugging Face: https://huggingface.co/RemiFabre/microduck-rough-walk-e
 - Repositorio de entrenamiento: https://github.com/pollen-robotics/microduck_rl (rama `hostile-terrain`, commit `6cd45fc`)
 - Documentacion de comparticion de politicas: https://github.com/pollen-robotics/microduck_rl/blob/main/docs/sharing-policies.md
 - Articulo sobre MicroDuck en CircuitDigest: https://circuitdigest.com/news/this-microduck-robot-based-on-an-rk3566-has-no-arms-but-picks-things-up-using-ai-and-reinforcement-learning
 - Articulo en The New Stack: https://thenewstack.io/hugging-face-microduck-robot/
 - Articulo en Gadget Review: https://www.gadgetreview.com/hugging-faces-399-robot-duck-bets-on-crowdsourced-ai
-- Perfil del autor en HuggingFace: https://huggingface.co/RemiFabre
+- Perfil del autor en Hugging Face: https://huggingface.co/RemiFabre

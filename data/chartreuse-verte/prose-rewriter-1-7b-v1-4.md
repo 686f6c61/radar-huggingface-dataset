@@ -69,7 +69,7 @@ v1.4 reescribe más del párrafo, conserva menos de la redacción original y var
 - VRAM estimada: aproximadamente 4 GB para el modelo en bf16 (2.03 mil millones de parámetros); 2.17 GB para GGUF Q8_0; 1.28 GB para GGUF Q4_K_M.
 - GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM para la versión bf16, o 4 GB para las cuantizaciones GGUF. Compatible con RTX 3060, RTX 4060, RTX 4090, A10, A100, H100.
 - Cabe en GPUs de consumo: sí, incluso en las gamas bajas con las cuantizaciones GGUF.
-- Opciones de despliegue: transformers (con `device_map="cuda"`), llama.cpp / llama-cpp-python, y compatible con text-generation-inference (TGI) y endpoints de HuggingFace.
+- Opciones de despliegue: transformers (con `device_map="cuda"`), llama.cpp / llama-cpp-python, y compatible con text-generation-inference (TGI) y endpoints de Hugging Face.
 - Latencia y throughput: no disponibles en la información proporcionada, pero por el tamaño del modelo se espera inferencia rápida incluso en hardware de consumo.
 
 ## Comparativa con modelos similares

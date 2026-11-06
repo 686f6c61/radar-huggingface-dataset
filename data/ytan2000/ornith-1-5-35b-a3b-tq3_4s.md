@@ -90,8 +90,8 @@ No se han encontrado comparativas con otras cuantizaciones GGUF del mismo modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/YTan2000/Ornith-1.5-35B-A3B-TQ3_4S
-- Modelo base en HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/YTan2000/Ornith-1.5-35B-A3B-TQ3_4S
+- Modelo base en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Página oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Guía de Ornith AI: https://ornith.online/
 - Modelo base en ModelScope: https://www.modelscope.cn/models/ornith-ai/Ornith-1.5-35B-A3B

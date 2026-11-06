@@ -61,7 +61,7 @@ No se dispone de información suficiente para una comparativa con modelos simila
 
 ## Enlaces
 
-- [HuggingFace - trinhkhng/ties_Merged_gpt2_0.1](https://huggingface.co/trinhkhng/ties_Merged_gpt2_0.1)
+- [Hugging Face - trinhkhng/ties_Merged_gpt2_0.1](https://huggingface.co/trinhkhng/ties_Merged_gpt2_0.1)
 - [FriendliAI - API e inferencia](https://friendli.ai/models/trinhkhng/ties_Merged_gpt2_0.1)
 - [Free2AITools - ficha del modelo](https://free2aitools.com/model/trinhkhng/ties_merged_gpt2-medium_0.1) (variante medium)
 - [Artículo TIES (arxiv:2306.01708)](https://arxiv.org/abs/2306.01708)

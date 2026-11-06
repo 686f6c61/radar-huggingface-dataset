@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-thinkingcap-NVFP4-HF es una cuantizacion en formato HuggingFace de los pesos de ThinkingCap-Qwen3.8-27B, el finetune centrado en eficiencia de razonamiento que BottleCap AI publico sobre Qwen3.8-27B (upstream Apache-2.0 del equipo Qwen). El autor del repositorio, kaushikvira, ha convertido el modelo original a NVFP4 (W4A4, grupo 16) con la libreria compressed-tensors, manteniendo el pipeline image-text-to-text y anadiendo un MTP head en un fichero aparte.
+Qwen3.8-27B-thinkingcap-NVFP4-HF es una cuantizacion en formato Hugging Face de los pesos de ThinkingCap-Qwen3.8-27B, el finetune centrado en eficiencia de razonamiento que BottleCap AI publico sobre Qwen3.8-27B (upstream Apache-2.0 del equipo Qwen). El autor del repositorio, kaushikvira, ha convertido el modelo original a NVFP4 (W4A4, grupo 16) con la libreria compressed-tensors, manteniendo el pipeline image-text-to-text y anadiendo un MTP head en un fichero aparte.
 
 La motivacion principal del repositorio es doble. Por un lado, ofrecer pesos cuantizados listos para vLLM y SGLang, con un peso total de 17,1 GiB que permite servir el modelo en una unica GPU de 32 GB (RTX 5090, arquitectura Blackwell) con hasta 131.072 tokens de contexto y hasta 262.144 tokens en tarjetas de 48 GB o mas. Por otro, cubrir el soporte de salida estructurada mediante JSON schema: el contenedor NInfer del mismo autor no lo soporta, mientras que vLLM si, de ahi que esta version se publique como "el origen exacto previo a la conversion" del contenedor NInfer v3.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Contexto | Cuantizacion / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-thinkingcap-NVFP4-HF (este repositorio) | ~14,7 mil millones (segun safetensors) | 262.144 tokens (131.072 en 32 GB) | NVFP4 W4A4 grupo 16, compressed-tensors, safetensors | PolyForm Small Business + uso personal | HuggingFace, vLLM y SGLang |
-| ThinkingCap-Qwen3.8-27B (BottleCap AI, modelo base) | no disponible en la informacion (el nombre indica 27B) | no disponible | pesos sin cuantizar (presumiblemente BF16) | PolyForm Small Business, misma base | HuggingFace |
-| Qwen3.8-27B (equipo Qwen, upstream) | no disponible en la informacion (el nombre indica 27B) | no disponible | pesos sin cuantizar | Apache-2.0 (segun la model card del repositorio) | HuggingFace |
+| Qwen3.8-27B-thinkingcap-NVFP4-HF (este repositorio) | ~14,7 mil millones (segun safetensors) | 262.144 tokens (131.072 en 32 GB) | NVFP4 W4A4 grupo 16, compressed-tensors, safetensors | PolyForm Small Business + uso personal | Hugging Face, vLLM y SGLang |
+| ThinkingCap-Qwen3.8-27B (BottleCap AI, modelo base) | no disponible en la informacion (el nombre indica 27B) | no disponible | pesos sin cuantizar (presumiblemente BF16) | PolyForm Small Business, misma base | Hugging Face |
+| Qwen3.8-27B (equipo Qwen, upstream) | no disponible en la informacion (el nombre indica 27B) | no disponible | pesos sin cuantizar | Apache-2.0 (segun la model card del repositorio) | Hugging Face |
 | Contenedor NInfer v3 del mismo autor | mismos pesos que este repositorio | no disponible | NVFP4 con decodificacion especulativa DFlash2 | PolyForm Small Business | Contenedor propio (no vLLM) |
 
 No se dispone de cifras de rendimiento comparativas entre estas variantes en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto, formato y licencia.
@@ -87,7 +87,7 @@ No se dispone de cifras de rendimiento comparativas entre estas variantes en la 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/kaushikvira/Qwen3.8-27B-thinkingcap-NVFP4-HF
+- Hugging Face del modelo: https://huggingface.co/kaushikvira/Qwen3.8-27B-thinkingcap-NVFP4-HF
 - Modelo base: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
 - Contenedor NInfer v3 del mismo autor: https://huggingface.co/kaushikvira/Qwen3.8-27B-thinkingcap-nvfp4full-dflash2-NInfer-v3
 - Perfil del autor: https://huggingface.co/kaushikvira

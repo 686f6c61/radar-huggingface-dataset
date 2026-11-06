@@ -4,7 +4,7 @@
 
 JAEC es un frontend de cancelacion de eco acustico (AEC) a 16 kHz pensado para comunicacion en tiempo real. No es un modelo de lenguaje: es un componente de procesamiento de senal de audio que recibe la senal de microfono (`nearend_mic`) y la referencia de altavoz o extremo lejano (`farend_speech`) y devuelve la salida del modulo de procesamiento lineal (LP). La implementacion incluida en este repositorio cubre el runtime de estimacion neuronal de retardo temporal (TDE) y de procesamiento lineal adaptativo (LP).
 
-El modelo original es `iic/speech_jaec_aec_16k`, publicado en ModelScope por el equipo `iic`. El repositorio de HuggingFace analizado es un espejo no oficial mantenido por el usuario `ml-resources`, que conserva la misma licencia Apache 2.0 y no introduce cambios respecto al original. En el momento de la consulta acumula 0 descargas y 0 likes, y el tamano del repositorio reportado es de 0,0 GB.
+El modelo original es `iic/speech_jaec_aec_16k`, publicado en ModelScope por el equipo `iic`. El repositorio de Hugging Face analizado es un espejo no oficial mantenido por el usuario `ml-resources`, que conserva la misma licencia Apache 2.0 y no introduce cambios respecto al original. En el momento de la consulta acumula 0 descargas y 0 likes, y el tamano del repositorio reportado es de 0,0 GB.
 
 Su relevancia practica esta en el rendimiento: el runtime nativo procesa tramas de 160 muestras (10 ms) por llamada y alcanza factores de tiempo real (RTF) de 0,0020 en Apple M4 y 0,0039 en un Intel Xeon a 2,90 GHz, lo que equivale a procesar audio cientos de veces mas rapido que en tiempo real. El coste es un retardo algoritmico fijo de 352 muestras (22 ms) respecto a la entrada de microfono.
 
@@ -22,7 +22,7 @@ Su relevancia practica esta en el rendimiento: el runtime nativo procesa tramas 
 | Formato de pesos | no disponible; el repositorio distribuye librerias nativas (`lib/jaec_arm.so`, `lib/jaec_x86.so`, `lib/jaec_x86.dll`) en lugar de pesos en safetensors o GGUF |
 | Frecuencia de muestreo | 16 kHz, mono, PCM16 |
 | Retardo algoritmico | 352 muestras (22 ms) respecto a la entrada de microfono |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Requisito de ModelScope | superior a 1.39.1 |
 
 ## Arquitectura y entrenamiento
@@ -84,7 +84,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Las alterna
 
 | Modelo | Categoria | Parametros | RTF | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iic/speech_jaec_aec_16k (JAEC) | AEC 16 kHz, TDE + LP | no disponible | 0,0020-0,0039 (por plataforma) | Apache 2.0 | ModelScope; espejo en HuggingFace |
+| iic/speech_jaec_aec_16k (JAEC) | AEC 16 kHz, TDE + LP | no disponible | 0,0020-0,0039 (por plataforma) | Apache 2.0 | ModelScope; espejo en Hugging Face |
 | Alternativas de la misma categoria | AEC en tiempo real | no disponible | no disponible | no disponible | no disponible en la informacion consultada |
 
 La busqueda web realizada no devolvio resultados tecnicos relevantes: los enlaces obtenidos corresponden a paginas de desambiguacion, anuncios de vehiculos, conversiones de unidades y un videojuego, por lo que no aportan datos comparativos.
@@ -103,7 +103,7 @@ La busqueda web realizada no devolvio resultados tecnicos relevantes: los enlace
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ml-resources/speech_jaec_aec_16k
+- Repositorio en Hugging Face: https://huggingface.co/ml-resources/speech_jaec_aec_16k
 - Modelo original en ModelScope: https://www.modelscope.cn/models/iic/speech_jaec_aec_16k
 - Repositorio de ModelScope en GitHub: https://github.com/modelscope/modelscope
 - Licencia Apache 2.0 (referenciada como `LICENSE` en el repositorio)

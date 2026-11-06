@@ -80,7 +80,7 @@ No se dispone de datos suficientes para comparar con otros modelos MoE abiertos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/stgallenquants/GLM-5.3-Flash
+- Repositorio en Hugging Face: https://huggingface.co/stgallenquants/GLM-5.3-Flash
 - Blog oficial de GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Informe técnico de GLM-5 (arxiv): https://arxiv.org/abs/2602.15763
 - Documentación de la API de Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

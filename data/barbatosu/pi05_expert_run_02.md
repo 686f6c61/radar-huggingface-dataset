@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Barbatosu/pi05_expert_run_02 es un fine-tuning del modelo π₀.₅ (pi05), un modelo Vision-Language-Action (VLA) desarrollado originalmente por Physical Intelligence y adaptado al ecosistema open source mediante la librería LeRobot de HuggingFace. El modelo base, lerobot/pi05_base, está diseñado para generalización en entornos abiertos, es decir, para ejecutar tareas de manipulación robótica en situaciones y escenarios no vistos durante el entrenamiento. Esta versión concreta ha sido ajustada por el usuario Barbatosu para una tarea específica de manipulación: introducir un cubo azul en una caja blanca, utilizando un robot de tipo `so_follower` (basado en la plataforma SO de LeRobot).
+Barbatosu/pi05_expert_run_02 es un fine-tuning del modelo π₀.₅ (pi05), un modelo Vision-Language-Action (VLA) desarrollado originalmente por Physical Intelligence y adaptado al ecosistema open source mediante la librería LeRobot de Hugging Face. El modelo base, lerobot/pi05_base, está diseñado para generalización en entornos abiertos, es decir, para ejecutar tareas de manipulación robótica en situaciones y escenarios no vistos durante el entrenamiento. Esta versión concreta ha sido ajustada por el usuario Barbatosu para una tarea específica de manipulación: introducir un cubo azul en una caja blanca, utilizando un robot de tipo `so_follower` (basado en la plataforma SO de LeRobot).
 
 El modelo procesa imágenes de dos cámaras (frontal y de muñeca, ambas a 480x640 píxeles) junto con el estado articular del robot (6 grados de libertad) y genera comandos de acción de 6 dimensiones. Con aproximadamente 4.143 millones de parámetros en pesos safetensors (9,4 GB de repositorio), es un modelo de tamaño considerable que requiere GPU para inferencia en tiempo real. Su relevancia radica en que demuestra el flujo completo de imitación learning con VLA de última generación: grabación de demostraciones, fine-tuning desde un modelo base preentrenado y despliegue en hardware robótico real, todo con herramientas open source.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Barbatosu/pi05_expert_run_02 | 4.143 M | VLA (pi05 fine-tuned) | Pick-and-place especifica (cubo azul a caja blanca) | gemma | Publico en HuggingFace |
-| lerobot/pi05_base | 4.143 M (estimado, mismo base) | VLA base preentrenado | General, multitarea, open-world | gemma | Publico en HuggingFace |
+| Barbatosu/pi05_expert_run_02 | 4.143 M | VLA (pi05 fine-tuned) | Pick-and-place especifica (cubo azul a caja blanca) | gemma | Publico en Hugging Face |
+| lerobot/pi05_base | 4.143 M (estimado, mismo base) | VLA base preentrenado | General, multitarea, open-world | gemma | Publico en Hugging Face |
 | Otros fine-tunings de pi05 en LeRobot | ~4.143 M | VLA (pi05 fine-tuned) | Depende del dataset de cada autor | gemma | Varios repos publicos |
 
 Notas de la comparativa: este modelo se distingue del base en que esta especializado en una unica tarea con un dataset de 50 episodios, por lo que deberia ofrecer mayor fiabilidad en esa tarea concreta a costa de la versatilidad. No hay datos de rendimiento comparativo publicados entre ellos.
@@ -89,7 +89,7 @@ Notas de la comparativa: este modelo se distingue del base en que esta especiali
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Barbatosu/pi05_expert_run_02
+- Modelo en Hugging Face: https://huggingface.co/Barbatosu/pi05_expert_run_02
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Barbatosu/record-test_20261026_201007
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Barbatosu/record-test_20261026_201007

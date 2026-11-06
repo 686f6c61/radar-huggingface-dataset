@@ -80,9 +80,9 @@ Otros datos reportados:
 
 | Modelo | Parametros | Enfoque | Dice (bruto) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QMR (este) | no disponible (7,8 MB de pesos) | Restauracion U-Net + cabeza de puntuacion con margen de cuantil | 0,000 | CC BY-SA 3.0 | HuggingFace |
-| DAE baseline | no disponible | Autoencoder desruidor, residual de restauracion | 0,023 | no disponible en la informacion | HuggingFace (`anomalies-diffusion-dae-baseline`) |
-| ANDi 60k | no disponible | Difusion con 60k pasos de entrenamiento | 0,021 | no disponible en la informacion | HuggingFace (`anomalies-diffusion-andi-60k`) |
+| QMR (este) | no disponible (7,8 MB de pesos) | Restauracion U-Net + cabeza de puntuacion con margen de cuantil | 0,000 | CC BY-SA 3.0 | Hugging Face |
+| DAE baseline | no disponible | Autoencoder desruidor, residual de restauracion | 0,023 | no disponible en la informacion | Hugging Face (`anomalies-diffusion-dae-baseline`) |
+| ANDi 60k | no disponible | Difusion con 60k pasos de entrenamiento | 0,021 | no disponible en la informacion | Hugging Face (`anomalies-diffusion-andi-60k`) |
 | SR / SR+BCE | no disponible | Mismo backbone que QMR, sin y con BCE balanceada | 0,0004 / 0,0007 | no disponible en la informacion | no disponible como checkpoint independiente |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ Otros datos reportados:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TamAko783/anomalies-diffusion-qmr
+- Modelo en Hugging Face: https://huggingface.co/TamAko783/anomalies-diffusion-qmr
 - Repositorio companion ANDi 60k: https://huggingface.co/TamAko783/anomalies-diffusion-andi-60k
 - Repositorio companion DAE baseline: https://huggingface.co/TamAko783/anomalies-diffusion-dae-baseline
 - Repositorio companion de calibracion: https://huggingface.co/TamAko783/anomalies-diffusion-calibration

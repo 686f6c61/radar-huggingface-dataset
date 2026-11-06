@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - Los pesos se publican en bfloat16. Para un modelo de 8B, la carga en GPU requiere aproximadamente 16 GB de VRAM para los pesos, más el overhead del runtime, por lo que se recomienda una GPU con al menos 20-24 GB de VRAM.
 - GPUs recomendadas: NVIDIA A100 (40/80 GB), H100, RTX 4090 (24 GB) o superiores.
 - No se incluyen cuantizaciones adicionales, por lo que no puede inferirse su comportamiento en GPUs de 12-16 GB sin aplicar cuantización externa.
-- Despliegue: compatible con la librería `transformers` mediante carga directa desde HuggingFace. No hay información sobre compatibilidad con vLLM, TGI, Ollama o llama.cpp.
+- Despliegue: compatible con la librería `transformers` mediante carga directa desde Hugging Face. No hay información sobre compatibilidad con vLLM, TGI, Ollama o llama.cpp.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -78,6 +78,6 @@ La comparación se limita a modelos identificados a partir de la información di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/just1nseo/tulu3-8b-dpo-grpo-intentcheck-q30ba3b
+- Hugging Face: https://huggingface.co/just1nseo/tulu3-8b-dpo-grpo-intentcheck-q30ba3b
 - Framework verl: https://github.com/volcengine/verl
-- Modelo base en HuggingFace: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-DPO
+- Modelo base en Hugging Face: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-DPO

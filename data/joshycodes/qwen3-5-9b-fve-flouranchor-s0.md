@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparado. La unica comparacion documentad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3.5-9b-fve-flouranchor-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3.5-9b-fve-flouranchor-s0
 - Modelo base Qwen/Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Ficha secundaria de Qwen3.5 9B (AI Model Radar): https://aimodelradar.app/models/qwen3-5-9b
 - Catalogo de Microsoft Foundry: https://ai.azure.com/catalog/models/qwen--qwen3.5-9b

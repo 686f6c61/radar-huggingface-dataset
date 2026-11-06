@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Julesdupont/self-supervised-medium` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación (*research notes*) publicado en HuggingFace bajo el identificador del autor Julesdupont. La model card describe explícitamente un "esquema de experimento" sobre aprendizaje auto-supervisado, con secciones marcadas como planes o hipótesis que, según el propio autor, "no deben interpretarse como resultados experimentales". No se declara ningún checkpoint entrenado, ningún código de entrenamiento ni ninguna mejora de benchmark.
+`Julesdupont/self-supervised-medium` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación (*research notes*) publicado en Hugging Face bajo el identificador del autor Julesdupont. La model card describe explícitamente un "esquema de experimento" sobre aprendizaje auto-supervisado, con secciones marcadas como planes o hipótesis que, según el propio autor, "no deben interpretarse como resultados experimentales". No se declara ningún checkpoint entrenado, ningún código de entrenamiento ni ninguna mejora de benchmark.
 
 El dato más relevante a efectos prácticos es el recuento de parámetros de los tensores incluidos: 16.576 parámetros, según los metadatos de safetensors, en un repositorio de 0,0 GB. Esa cifra es incompatible con un transformer funcional para generación de texto: se sitúa entre tres y seis órdenes de magnitud por debajo de cualquier modelo utilizable, incluso de los modelos diminutos de tipo *toy*. Lo más probable es que se trate de un tensor auxiliar, un artefacto de prueba o un fichero de ejemplo subido junto a las notas.
 
@@ -28,7 +28,7 @@ Por tanto, la relevancia de esta ficha es fundamentalmente negativa: sirve para 
 
 ## Arquitectura y entrenamiento
 
-La model card no describe ninguna arquitectura. El unico indicio es el tag `transformer` en los metadatos de HuggingFace, que en la practica se aplica de forma automatica o generica y no constituye evidencia de que exista un transformer implementado. No se especifica numero de capas, dimension de embedding, numero de cabezas de atencion, tipo de normalizacion, funcion de activacion ni esquema de posicionamiento.
+La model card no describe ninguna arquitectura. El unico indicio es el tag `transformer` en los metadatos de Hugging Face, que en la practica se aplica de forma automatica o generica y no constituye evidencia de que exista un transformer implementado. No se especifica numero de capas, dimension de embedding, numero de cabezas de atencion, tipo de normalizacion, funcion de activacion ni esquema de posicionamiento.
 
 Respecto al entrenamiento, el autor indica que el repositorio contiene "notas de lectura y un esbozo de experimento" y que las secciones etiquetadas como planes o hipotesis no son resultados. Se mencionan, como contenido previsto, el alcance de la pregunta de investigación, confounders probables, una comparacion propuesta con baselines emparejados, contexto de evaluacion con benchmarks publicos, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. No hay numero de tokens de entrenamiento, ni composicion del dataset, ni fases de RLHF, DPO o SFT, ni innovaciones tecnicas declaradas.
 
@@ -50,7 +50,7 @@ En resumen: no existe evidencia de que se haya ejecutado ningun entrenamiento. E
 - Diseno de experimentos: las secciones sobre confounders y baselines emparejados pueden servir como plantilla de discusion metodologica para un grupo de investigación que prepare un estudio propio.
 - Auditoria de reproducibilidad: el repositorio ejemplifica una practica de documentacion que separa explicitamente planes de resultados, util como referencia de estilo al redactar notas internas.
 - Docencia sobre higiene cientifica: puede usarse como caso practico de por que no deben publicarse afirmaciones de rendimiento sin logs, semillas, versiones de dataset ni hardware declarado.
-- Pruebas de infraestructura de HuggingFace: el fichero safetensors de 16.576 parametros puede servir para validar pipelines de descarga, cache y carga de tensores sin consumir recursos.
+- Pruebas de infraestructura de Hugging Face: el fichero safetensors de 16.576 parametros puede servir para validar pipelines de descarga, cache y carga de tensores sin consumir recursos.
 - Catalogacion y filtrado de repositorios: util como ejemplo de repositorio que no debe incluirse en un indice de modelos desplegables.
 
 No se han identificado casos de uso de inferencia, generacion, agentes o produccion, porque no existe un modelo entrenado que los soporte.
@@ -71,7 +71,7 @@ El autor declara de forma explicita que el repositorio no reclama mejoras de ben
 
 ## Comparativa con modelos similares
 
-No disponible. No existen modelos comparables porque este repositorio no es un modelo entrenado. Las alternativas de la misma categoria (notas de investigacion en HuggingFace) no son comparables en parametros, contexto o rendimiento, ya que ninguna de ellas se evalua como sistema de inferencia.
+No disponible. No existen modelos comparables porque este repositorio no es un modelo entrenado. Las alternativas de la misma categoria (notas de investigacion en Hugging Face) no son comparables en parametros, contexto o rendimiento, ya que ninguna de ellas se evalua como sistema de inferencia.
 
 | Criterio | Julesdupont/self-supervised-medium | Alternativas comparables |
 |---|---|---|
@@ -95,7 +95,7 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Julesdupont/self-supervised-medium
+- Repositorio en Hugging Face: https://huggingface.co/Julesdupont/self-supervised-medium
 - `summary.md` (artefacto principal, referenciado en la model card): https://huggingface.co/Julesdupont/self-supervised-medium/blob/main/summary.md
 - `README.md` (documentacion del repositorio): https://huggingface.co/Julesdupont/self-supervised-medium/blob/main/README.md
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales asociados a este repositorio.

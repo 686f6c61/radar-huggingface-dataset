@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa c
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/gemma-4-19B-A4B-it-The-DECKARD-Heretic-Uncensored-Thinking-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/gemma-4-19B-A4B-it-The-DECKARD-Heretic-Uncensored-Thinking-GGUF
 - Modelo base: https://huggingface.co/DavidAU/gemma-4-19B-A4B-it-The-DECKARD-Heretic-Uncensored-Thinking
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/gemma-4-19B-A4B-it-The-DECKARD-Heretic-Uncensored-Thinking-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#gemma-4-19B-A4B-it-The-DECKARD-Heretic-Uncensored-Thinking-GGUF

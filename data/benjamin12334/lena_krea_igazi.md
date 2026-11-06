@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`benjamin12334/lena_krea_igazi` es un adaptador LoRA de texto-a-imagen publicado por el usuario benjamin12334 en HuggingFace. Está diseñado para funcionar sobre el modelo base `krea/Krea-2-Turbo` y utiliza la palabra de activación `lnea`, según la model card. El repositorio ocupa 0,5 GB, usa la librería `diffusers` y se distribuye con licencia Apache-2.0. No es un modelo fundacional completo, sino un ajuste de bajo rango que modifica el comportamiento del modelo de difusión subyacente.
+`benjamin12334/lena_krea_igazi` es un adaptador LoRA de texto-a-imagen publicado por el usuario benjamin12334 en Hugging Face. Está diseñado para funcionar sobre el modelo base `krea/Krea-2-Turbo` y utiliza la palabra de activación `lnea`, según la model card. El repositorio ocupa 0,5 GB, usa la librería `diffusers` y se distribuye con licencia Apache-2.0. No es un modelo fundacional completo, sino un ajuste de bajo rango que modifica el comportamiento del modelo de difusión subyacente.
 
 El adaptador no documenta qué concepto, personaje o estilo representa exactamente "lena", ni describe el dataset, el procedimiento de entrenamiento o métricas de calidad. Tampoco declara idiomas soportados ni incluye resultados de benchmarks. En el momento de la consulta registra 0 descargas y 0 likes, por lo que se trata de una publicación experimental con validación comunitaria nula.
 
@@ -72,8 +72,8 @@ No se dispone de información sobre dos o tres alternativas concretas de la mism
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `benjamin12334/lena_krea_igazi` | LoRA de texto-a-imagen sobre Krea-2-Turbo | No disponible | No aplica | Apache-2.0 | HuggingFace; 0 descargas, 0 likes |
-| `krea/Krea-2-Turbo` | Modelo base de difusión texto-a-imagen | No disponible | No aplica | No disponible | HuggingFace |
+| `benjamin12334/lena_krea_igazi` | LoRA de texto-a-imagen sobre Krea-2-Turbo | No disponible | No aplica | Apache-2.0 | Hugging Face; 0 descargas, 0 likes |
+| `krea/Krea-2-Turbo` | Modelo base de difusión texto-a-imagen | No disponible | No aplica | No disponible | Hugging Face |
 | Otras LoRA para Krea-2-Turbo | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -90,5 +90,5 @@ No se dispone de información sobre dos o tres alternativas concretas de la mism
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/benjamin12334/lena_krea_igazi)
+- [Modelo en Hugging Face](https://huggingface.co/benjamin12334/lena_krea_igazi)
 - [Modelo base Krea-2-Turbo](https://huggingface.co/krea/Krea-2-Turbo)

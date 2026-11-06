@@ -1,7 +1,7 @@
 # bambocher/LFM2.5-24B-A2B-oQ2.7e
 
 ## Resumen
-LFM2.5-24B-A2B-oQ2.7e es un checkpoint cuantizado del modelo LFM2.5-24B-A2B, publicado por bambocher en HuggingFace. No es un modelo entrenado desde cero: es una versión post-entrenamiento para MLX (Apple Silicon) que conserva 23.971.587.712 parámetros totales y ocupa 9,8 GB en el repositorio.
+LFM2.5-24B-A2B-oQ2.7e es un checkpoint cuantizado del modelo LFM2.5-24B-A2B, publicado por bambocher en Hugging Face. No es un modelo entrenado desde cero: es una versión post-entrenamiento para MLX (Apple Silicon) que conserva 23.971.587.712 parámetros totales y ocupa 9,8 GB en el repositorio.
 
 Su interés es práctico: comprime un MoE de ~24B parámetros (etiqueta `lfm2_moe`) a 9,100 GiB de pesos con una media de 3,261 bits/peso, lo que permite inferencia local en un Mac con 16 GB de memoria unificada. La cuantización mixta oQ (oMLX v0.7.1) asigna 2 bits al 45,352% de los pesos, 3 bits al 50,391%, 8 bits al 4,234% y BF16 al 0,022%.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. Tamp
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint | 24B totales; activos no disponibles | no disponible | 3,261 bits/peso; ~9,1 GiB | no disponible | HuggingFace, MLX |
+| Este checkpoint | 24B totales; activos no disponibles | no disponible | 3,261 bits/peso; ~9,1 GiB | no disponible | Hugging Face, MLX |
 | LFM2.5-24B-A2B original (BF16, estimado) | 24B totales | no disponible | BF16; ~48 GB estimados | no disponible | no disponible en la información |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -70,5 +70,5 @@ No se han publicado resultados de benchmarks en la información disponible. Tamp
 - No usar en producción sin comparar contra el modelo base y medir la degradación en las tareas objetivo.
 
 ## Enlaces
-- [HuggingFace: bambocher/LFM2.5-24B-A2B-oQ2.7e](https://huggingface.co/bambocher/LFM2.5-24B-A2B-oQ2.7e)
+- [Hugging Face: bambocher/LFM2.5-24B-A2B-oQ2.7e](https://huggingface.co/bambocher/LFM2.5-24B-A2B-oQ2.7e)
 - [oQ / oMLX en GitHub](https://github.com/jundot/omlx)

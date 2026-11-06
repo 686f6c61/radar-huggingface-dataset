@@ -68,6 +68,6 @@ No es posible realizar una comparativa justa porque este modelo no está entrena
 
 ## Enlaces
 
-- [HuggingFace: pdxreyes/coca-demo](https://huggingface.co/pdxreyes/coca-demo)
+- [Hugging Face: pdxreyes/coca-demo](https://huggingface.co/pdxreyes/coca-demo)
 - [Implementación de CoCa en PyTorch por lucidrains](https://github.com/lucidrains/CoCa-pytorch)
 - [Modelo CoCa en facebookresearch/multimodal](https://github.com/facebookresearch/multimodal/blob/main/torchmultimodal/models/coca/coca_model.py)

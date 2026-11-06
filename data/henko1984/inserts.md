@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`henko1984/inserts` es un ajuste fino (fine-tune) publicado en HuggingFace cuyo unico metadato funcional es su modelo base: `Wan-AI/Wan2.2-I2V-A14B`, el modelo de generacion de video imagen-a-video de la familia Wan 2.2. El repositorio declara licencia Apache 2.0 y un tamano de 0,6 GB, pero no incluye model card descriptiva, pipeline declarado, idiomas soportados ni ejemplos de uso. El autor, `henko1984`, no ha documentado que problema concreto resuelve el ajuste ni sobre que datos se ha entrenado.
+`henko1984/inserts` es un ajuste fino (fine-tune) publicado en Hugging Face cuyo unico metadato funcional es su modelo base: `Wan-AI/Wan2.2-I2V-A14B`, el modelo de generacion de video imagen-a-video de la familia Wan 2.2. El repositorio declara licencia Apache 2.0 y un tamano de 0,6 GB, pero no incluye model card descriptiva, pipeline declarado, idiomas soportados ni ejemplos de uso. El autor, `henko1984`, no ha documentado que problema concreto resuelve el ajuste ni sobre que datos se ha entrenado.
 
 El interes de este repositorio es, por tanto, limitado y muy condicionado: se trata de un derivado no documentado de un modelo de difusion de video con arquitectura MoE. El nombre "inserts" sugiere un ajuste orientado a generar planos de insercion o elementos insertados en secuencia, pero esto es una interpretacion del nombre y no una afirmacion respaldada por la informacion disponible. No hay resultados de benchmarks, ni comparativas, ni demos publicadas.
 
@@ -81,9 +81,9 @@ No se dispone de datos de rendimiento de este ajuste, por lo que la comparativa 
 
 | Modelo | Tipo | Parametros | Contexto / formato de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| henko1984/inserts | Fine-tune de imagen-a-video | no disponible (repo de 0,6 GB) | no disponible | Apache 2.0 | Publico en HuggingFace, 0 descargas |
-| Wan-AI/Wan2.2-I2V-A14B | Imagen-a-video (modelo base) | no confirmado en esta ficha (nomenclatura A14B) | no disponible | Apache 2.0 | Publico en HuggingFace |
-| Alternativas de generacion de video abiertas (HunyuanVideo, LTX-Video, CogVideoX) | Texto/imagen-a-video | no disponible en la informacion proporcionada | no disponible | no disponible | Publicas en HuggingFace |
+| henko1984/inserts | Fine-tune de imagen-a-video | no disponible (repo de 0,6 GB) | no disponible | Apache 2.0 | Publico en Hugging Face, 0 descargas |
+| Wan-AI/Wan2.2-I2V-A14B | Imagen-a-video (modelo base) | no confirmado en esta ficha (nomenclatura A14B) | no disponible | Apache 2.0 | Publico en Hugging Face |
+| Alternativas de generacion de video abiertas (HunyuanVideo, LTX-Video, CogVideoX) | Texto/imagen-a-video | no disponible en la informacion proporcionada | no disponible | no disponible | Publicas en Hugging Face |
 
 No es posible establecer una comparacion de rendimiento porque ninguna de las fuentes consultadas aporta metricas de este ajuste ni del modelo base en el contexto de esta ficha.
 
@@ -102,7 +102,7 @@ No es posible establecer una comparacion de rendimiento porque ninguna de las fu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/henko1984/inserts
-- Modelo base en HuggingFace: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
+- Repositorio en Hugging Face: https://huggingface.co/henko1984/inserts
+- Modelo base en Hugging Face: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
 - Paper, blog, repositorio de codigo o demo del ajuste: no disponible
 - Referencias externas sobre `henko1984/inserts` localizadas en la busqueda web: ninguna pertinente

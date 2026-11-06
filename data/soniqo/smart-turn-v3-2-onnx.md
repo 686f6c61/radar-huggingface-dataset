@@ -94,7 +94,7 @@ Los modelos de Soniqo y Pipecat comparten pesos y arquitectura; la diferencia ra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soniqo/Smart-Turn-v3.2-ONNX
+- Modelo en Hugging Face: https://huggingface.co/soniqo/Smart-Turn-v3.2-ONNX
 - Modelo original de Pipecat: https://huggingface.co/pipecat-ai/smart-turn-v3
 - Repositorio del proyecto Smart Turn: https://github.com/pipecat-ai/smart-turn
 - SDK Android de Soniqo: https://github.com/soniqo/speech-android

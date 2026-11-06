@@ -69,7 +69,7 @@ Nota: los datos de Llama y Qwen son de conocimiento general, no de las fuentes p
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace, por lo que es necesario aceptar las condiciones de uso antes de descargarlo. Esto puede limitar su adopción en algunos entornos.
+- Acceso restringido: el modelo es gated en Hugging Face, por lo que es necesario aceptar las condiciones de uso antes de descargarlo. Esto puede limitar su adopción en algunos entornos.
 - Tamaño reducido: al ser un modelo de 3B (y cuantizado), su rendimiento en tareas complejas de razonamiento o generación de código será inferior al de modelos más grandes como Granite 4.2 8B o 30B.
 - Riesgo de alucinación: como todos los modelos de lenguaje, puede generar información falsa o inventada, especialmente en dominios especializados. Se recomienda verificar las salidas en aplicaciones críticas.
 - Limitaciones de contexto: no se ha especificado la longitud de contexto, por lo que podría ser limitada (probablemente 4K o 8K tokens, típico en modelos de este tamaño). Para documentos largos, puede no ser adecuado.
@@ -78,7 +78,7 @@ Nota: los datos de Llama y Qwen son de conocimiento general, no de las fuentes p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nightmedia/granite-4.2-3b-q8-hi-mlx
+- Modelo en Hugging Face: https://huggingface.co/nightmedia/granite-4.2-3b-q8-hi-mlx
 - Documentación de Granite 4.2 de IBM: https://www.ibm.com/granite/docs/models/granite4-2
 - Página principal de IBM Granite: https://www.ibm.com/granite
 - Repositorio GitHub de Granite 4.2: https://github.com/ibm-granite/granite-4.2-language-models

@@ -6,7 +6,7 @@ LightOnOCR-3-0.8B-MTP-Repacked-i1-GGUF es una cuantizacion GGUF en formato i1 (c
 
 El modelo pertenece a la familia LightOnOCR, orientada a tareas de document understanding con un tamano reducido (la etiqueta del nombre indica 0,8B). Esta version concreta es una cuantizacion de baja precision pensada para inferencia eficiente con llama.cpp y stacks compatibles con GGUF, lo que permite ejecutar el modelo en hardware modesto, incluidas GPU de consumo. Es relevante para desarrolladores que necesitan un OCR local, sin dependencia de APIs en la nube, con licencia Apache 2.0 y capacidad de ejecutarse en entornos con recursos limitados.
 
-La ficha se basa exclusivamente en la informacion disponible en HuggingFace y en la model card del repositorio; los detalles de arquitectura interna, dataset de entrenamiento y resultados de benchmarks no estan documentados en las fuentes consultadas y se indican como no disponibles.
+La ficha se basa exclusivamente en la informacion disponible en Hugging Face y en la model card del repositorio; los detalles de arquitectura interna, dataset de entrenamiento y resultados de benchmarks no estan documentados en las fuentes consultadas y se indican como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/LightOnOCR-3-0.8B-MTP-Repacked-i1-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/LightOnOCR-3-0.8B-MTP-Repacked-i1-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/LightOnOCR-3-0.8B-MTP-Repacked
 - Repositorio de cuantizaciones estaticas (incluye mmproj): https://huggingface.co/mradermacher/LightOnOCR-3-0.8B-MTP-Repacked-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#LightOnOCR-3-0.8B-MTP-Repacked-i1-GGUF

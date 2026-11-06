@@ -73,9 +73,9 @@ No se han publicado resultados comparativos con otros modelos de posicionamiento
 
 | Modelo | Características | Grid / Alcance | MAE (CV) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ghost-gk-sweeper-position-only-v1` (este modelo) | 21 features, sin velocidad | x hasta 52.5 m | 1.164 m | MIT | HuggingFace |
-| `ghost-gk-sweeper-v1` | 26 features, con velocidad | x hasta 52.5 m (presumiblemente) | No publicado | MIT | HuggingFace |
-| Variantes `default` / `position_only` de `ghost-gk-v1` | 26 features (con o sin velocidad) | x hasta 30 m (saturación) | No publicado | MIT | HuggingFace |
+| `ghost-gk-sweeper-position-only-v1` (este modelo) | 21 features, sin velocidad | x hasta 52.5 m | 1.164 m | MIT | Hugging Face |
+| `ghost-gk-sweeper-v1` | 26 features, con velocidad | x hasta 52.5 m (presumiblemente) | No publicado | MIT | Hugging Face |
+| Variantes `default` / `position_only` de `ghost-gk-v1` | 26 features (con o sin velocidad) | x hasta 30 m (saturación) | No publicado | MIT | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con otros modelos externos (p. ej., modelos de posicionamiento de portero basados en redes neuronales). La comparación se limita a las variantes internas de la librería `silly-kicks`.
 
@@ -92,9 +92,9 @@ No se dispone de datos de benchmarks comparativos con otros modelos externos (p.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/silly-kicks/ghost-gk-sweeper-position-only-v1
+- Modelo en Hugging Face: https://huggingface.co/silly-kicks/ghost-gk-sweeper-position-only-v1
 - Modelo hermano con velocidad: https://huggingface.co/silly-kicks/ghost-gk-sweeper-v1
-- Página del autor en HuggingFace: https://huggingface.co/silly-kicks
+- Página del autor en Hugging Face: https://huggingface.co/silly-kicks
 - Librería `silly-kicks` en PyPI: https://pypi.org/project/silly-kicks/
 - Repositorio GitHub: https://github.com/karsten-s-nielsen/silly-kicks
 - Referencias citadas en la model card:

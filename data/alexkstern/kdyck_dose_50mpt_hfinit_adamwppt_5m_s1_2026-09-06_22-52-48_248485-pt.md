@@ -85,6 +85,6 @@ No disponible. No se han proporcionado comparaciones con otros modelos en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_5M_s1_2026-09-06_22-52-48_248485-pt
+- Repositorio en Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_5M_s1_2026-09-06_22-52-48_248485-pt
 - Ejecución de Weights & Biases: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/fvlg1ugv
 - Repositorio de `nanochat`: https://github.com/karpathy/nanochat

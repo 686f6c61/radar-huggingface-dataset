@@ -28,7 +28,7 @@ No se proporciona información sobre el dataset de entrenamiento, el número de 
 
 - Generación de imágenes a partir de prompts de texto, utilizando el modelo base FLUX.1-dev.
 - Personalización de un personaje o estilo concreto: el adaptador está entrenado para representar a Riyu, un dragón ninja.
-- Integración con la librería diffusers de HuggingFace, que permite cargar el LoRA y combinarlo con el modelo base.
+- Integración con la librería diffusers de Hugging Face, que permite cargar el LoRA y combinarlo con el modelo base.
 - No se especifican capacidades adicionales como soporte de tool calling, agentes, razonamiento multi-paso o procesamiento de lenguaje natural.
 - No hay información sobre soporte multilingüe; los prompts de FLUX.1-dev suelen escribirse en inglés, pero no se confirma en la documentación del modelo.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - El adaptador LoRA es ligero (0.1 GB), pero la inferencia requiere cargar el modelo base FLUX.1-dev, que necesita una GPU con suficiente VRAM.
 - No se dispone de datos sobre la VRAM mínima específica para este LoRA ni sobre la GPU recomendada.
 - Se recomienda consultar los requisitos de hardware de FLUX.1-dev para planificar el despliegue.
-- El modelo se puede usar mediante la librería diffusers de HuggingFace; también es posible integrarlo en otros frameworks compatibles con LoRA para modelos de difusión.
+- El modelo se puede usar mediante la librería diffusers de Hugging Face; también es posible integrarlo en otros frameworks compatibles con LoRA para modelos de difusión.
 
 ## Comparativa con modelos similares
 
@@ -65,5 +65,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fragiskos/Riyu
+- Hugging Face: https://huggingface.co/Fragiskos/Riyu
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.1-dev

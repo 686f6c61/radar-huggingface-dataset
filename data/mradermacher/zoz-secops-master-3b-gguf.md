@@ -19,7 +19,7 @@ Se trata, por tanto, de un artefacto a evaluar con cautela: util como banco de p
 | Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K (quants ponderados/imatrix i1 en repositorio aparte) |
 | Idiomas soportados | en (ingles) |
 | Licencia | no disponible (ni el repositorio de cuantizaciones ni la model card la declaran) |
-| Formato de pesos | GGUF; el modelo base se distribuye en formato HuggingFace (presumiblemente safetensors, no confirmado en la informacion disponible) |
+| Formato de pesos | GGUF; el modelo base se distribuye en formato Hugging Face (presumiblemente safetensors, no confirmado en la informacion disponible) |
 | Autor de las cuantizaciones | mradermacher |
 | Modelo base | z51722369/ZOZ-SecOps-Master-3B |
 | Tamano del repositorio | 27,9 GB (incluye todas las cuantizaciones) |

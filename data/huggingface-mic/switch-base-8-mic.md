@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/switch-base-8-mic` | 2,3 M | no disponible | Fixture de test | no disponible | HuggingFace |
-| `google/switch-base-8` | no disponible en la informacion | no disponible | Modelo MoE real | no disponible | HuggingFace |
-| Otras fixtures `huggingface-mic` | variable | no disponible | Fixtures de test | no disponible | HuggingFace |
+| `huggingface-mic/switch-base-8-mic` | 2,3 M | no disponible | Fixture de test | no disponible | Hugging Face |
+| `google/switch-base-8` | no disponible en la informacion | no disponible | Modelo MoE real | no disponible | Hugging Face |
+| Otras fixtures `huggingface-mic` | variable | no disponible | Fixtures de test | no disponible | Hugging Face |
 
 La comparativa con modelos funcionales de la misma categoria no esta disponible en la informacion proporcionada. El unico comparable directo es el checkpoint original `google/switch-base-8`, del que esta fixture deriva estructuralmente.
 
@@ -79,7 +79,7 @@ La comparativa con modelos funcionales de la misma categoria no esta disponible 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huggingface-mic/switch-base-8-mic
+- Modelo en Hugging Face: https://huggingface.co/huggingface-mic/switch-base-8-mic
 - Modelo base: https://huggingface.co/google/switch-base-8
 - Como se redujo la fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/switch-base-8-mic.html
 - Repositorio `transformers-mic`: https://github.com/huggingface/transformers-mic

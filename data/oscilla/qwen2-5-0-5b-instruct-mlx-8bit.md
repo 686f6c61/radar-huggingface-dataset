@@ -77,7 +77,7 @@ La comparativa muestra que esta conversion es una opcion ligera y de facil despl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Oscilla/Qwen2.5-0.5B-Instruct-mlx-8Bit
+- Hugging Face: https://huggingface.co/Oscilla/Qwen2.5-0.5B-Instruct-mlx-8Bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Coleccion Qwen2.5 en mlx-community: https://huggingface.co/collections/mlx-community/qwen25
 - Pagina de Ollama para Qwen2.5-0.5B: https://ollama.com/library/qwen2.5:0.5b-instruct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-w13-kx-chrono4-w30-s130` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). El nombre del repositorio sigue un esquema de codificación interna (r18, a2, w13, chrono4, w30, s130) que sugiere un experimento de arquitectura o de entrenamiento con variantes numeradas, más que un modelo de propósito general con documentación pública. El tag `sn38-nanochrono` apunta a una familia o linaje interno de modelos pequeños, presumiblemente orientados a experimentación con mecanismos temporales o de atención cronológica.
+`alfred8995/r18-a2-w13-kx-chrono4-w30-s130` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). El nombre del repositorio sigue un esquema de codificación interna (r18, a2, w13, chrono4, w30, s130) que sugiere un experimento de arquitectura o de entrenamiento con variantes numeradas, más que un modelo de propósito general con documentación pública. El tag `sn38-nanochrono` apunta a una familia o linaje interno de modelos pequeños, presumiblemente orientados a experimentación con mecanismos temporales o de atención cronológica.
 
 Los pesos en formato safetensors suman 2.018.511.234 parámetros (aproximadamente 2.020 millones, es decir, ~2,02 B), lo que lo sitúa en la categoría de modelos pequeños, aptos para inferencia en hardware de consumo con cuantización. El tamaño del repositorio (12,6 GB) es coherente con pesos en precisión de 16 bits o mixta para esa cantidad de parámetros, más posibles artefactos adicionales del entrenamiento.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| alfred8995/r18-a2-w13-kx-chrono4-w30-s130 | ~2,02 B | no disponible | Apache 2.0 | Gated en HuggingFace | Sin benchmarks ni documentación |
+| alfred8995/r18-a2-w13-kx-chrono4-w30-s130 | ~2,02 B | no disponible | Apache 2.0 | Gated en Hugging Face | Sin benchmarks ni documentación |
 | Qwen2.5-1.5B | 1,54 B | 32.768 tokens | Apache 2.0 | Pública | Benchmarkeado, multilingüe, instrucción disponible |
 | Gemma 2 2B | 2,6 B | 8.192 tokens | Gemma Terms | Pública (gated) | Benchmarkeado, orientado a texto |
 | SmolLM2-1.7B | 1,7 B | 8.192 tokens | Apache 2.0 | Pública | Benchmarkeado, pequeño y eficiente |
@@ -78,11 +78,11 @@ La comparación es orientativa: los tres alternativos cuentan con documentación
 - Sesgos: no evaluados; al no conocerse la composición del dataset, no pueden caracterizarse sesgos de género, idioma o dominio.
 - Idiomas: no declarados; el soporte multilingüe es incierto y probablemente limitado.
 - Contexto: longitud no disponible; planificar integraciones con una ventana conservadora hasta verificarla empíricamente.
-- Licencia: Apache 2.0 permite uso comercial, pero el acceso gated exige aceptar condiciones en HuggingFace; verificar los términos adicionales del repositorio antes de redistribuir.
+- Licencia: Apache 2.0 permite uso comercial, pero el acceso gated exige aceptar condiciones en Hugging Face; verificar los términos adicionales del repositorio antes de redistribuir.
 - Producción: no recomendado sin una evaluación propia exhaustiva (perplejidad, tareas downstream, robustez) y sin tokenizador ni plantilla de chat documentados.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin validación comunitaria.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono4-w30-s130
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono4-w30-s130
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

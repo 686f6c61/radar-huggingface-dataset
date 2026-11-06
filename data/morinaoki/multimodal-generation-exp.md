@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`morinaoki/multimodal-generation-exp` es un repositorio alojado en HuggingFace que, a pesar de su identificador y de las etiquetas asociadas, no contiene un modelo generativo entrenado. La propia model card lo describe como un conjunto estructurado de notas de investigación sobre generación multimodal, con referencias de evaluación y preguntas abiertas, y afirma explícitamente que no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado. El repositorio tiene un tamano de 0,0 GB y solo documenta dos ficheros: `summary.md` y `README.md`.
+`morinaoki/multimodal-generation-exp` es un repositorio alojado en Hugging Face que, a pesar de su identificador y de las etiquetas asociadas, no contiene un modelo generativo entrenado. La propia model card lo describe como un conjunto estructurado de notas de investigación sobre generación multimodal, con referencias de evaluación y preguntas abiertas, y afirma explícitamente que no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado. El repositorio tiene un tamano de 0,0 GB y solo documenta dos ficheros: `summary.md` y `README.md`.
 
 El artefacto de pesos presente es un fichero safetensors con 33.088 parámetros totales, una cifra que descarta cualquier uso como modelo de lenguaje o de generación multimodal funcional. Con ese orden de magnitud (decenas de miles de parámetros, no miles de millones), el contenido es compatible con un tensor auxiliar, una prueba de formato o un residuo de plantilla, no con un transformer entrenado. Las etiquetas declaradas son `safetensors`, `transformer`, `research-notes`, `multimodal-generation` y `license:mit`, pero las dos primeras no se corresponden con ninguna arquitectura descrita en la documentación.
 
@@ -83,7 +83,7 @@ No disponible. Este repositorio no es un modelo y no admite comparación por par
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morinaoki/multimodal-generation-exp
+- Repositorio en Hugging Face: https://huggingface.co/morinaoki/multimodal-generation-exp
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

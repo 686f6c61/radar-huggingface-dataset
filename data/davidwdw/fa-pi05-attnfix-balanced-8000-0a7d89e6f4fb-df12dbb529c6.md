@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-pi05-attnfix-balanced-8000-0a7d89e6f4fb-df12dbb529c6` es un archivo versionado de pesos publicado por el usuario davidwdw en HuggingFace. La propia model card lo describe como un "versioned fleet archive" (archivo versionado de flota) y aclara que se trata de una instantanea congelada, no de un directorio vivo ni de un espejo en actualizacion. El paquete declara un "tier" de `params+assets`, es decir, que incluye tanto los pesos del modelo como activos auxiliares, y exige verificar la integridad mediante un fichero `SHA256SUMS` incluido en el propio repositorio.
+El repositorio `davidwdw/fa-pi05-attnfix-balanced-8000-0a7d89e6f4fb-df12dbb529c6` es un archivo versionado de pesos publicado por el usuario davidwdw en Hugging Face. La propia model card lo describe como un "versioned fleet archive" (archivo versionado de flota) y aclara que se trata de una instantanea congelada, no de un directorio vivo ni de un espejo en actualizacion. El paquete declara un "tier" de `params+assets`, es decir, que incluye tanto los pesos del modelo como activos auxiliares, y exige verificar la integridad mediante un fichero `SHA256SUMS` incluido en el propio repositorio.
 
 La unica referencia al proceso de entrenamiento es la "receta canonica" citada: `2026-09-22_b1k_task00_pi05_attention_consistent_h20`. De esa cadena se puede leer que existe una ejecucion de entrenamiento fechada el 22 de septiembre de 2026, identificada con `pi05`, con una correccion o consistencia de atencion (`attnfix`, `attention_consistent`), con lote de 1000 (`b1k`), sobre la tarea `task00` y ejecutada en hardware H20 (`h20`). El nombre del checkpoint anade `balanced-8000`, que sugiere un regimen de entrenamiento equilibrado (probablemente en la composicion del dataset o en la mezcla de tareas) a lo largo de 8000 pasos.
 
@@ -92,6 +92,6 @@ No disponible. La informacion proporcionada no identifica la categoria del model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-pi05-attnfix-balanced-8000-0a7d89e6f4fb-df12dbb529c6
+- Hugging Face: https://huggingface.co/davidwdw/fa-pi05-attnfix-balanced-8000-0a7d89e6f4fb-df12dbb529c6
 - Fichero de verificacion de integridad citado en la model card: `SHA256SUMS` (incluido en el propio repositorio)
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada.

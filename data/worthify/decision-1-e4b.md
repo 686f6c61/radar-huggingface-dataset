@@ -88,9 +88,9 @@ El GGUF F16 coincide con las elecciones nativas en el 99,97 % de las filas de va
 
 | Modelo | Parámetros | Contexto/prompt | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Worthify/Decision-1-E4B | 7.463.013.376 | 2.048 tokens de prompt | Validación fusionada 0,9445; test sellado 0,8976 (interno) | Apache-2.0 | HuggingFace; BF16 + GGUF F16 |
-| google/gemma-4-E4B-it | No disponible | No disponible | Base congelado 0,8194 con el mismo protocolo interno | No disponible en la información | HuggingFace, revisión fijada |
-| Worthify/Decision-1 (12B) | 12B (según la model card) | No disponible | No disponible | No disponible en la información | HuggingFace, familia Decision-1 |
+| Worthify/Decision-1-E4B | 7.463.013.376 | 2.048 tokens de prompt | Validación fusionada 0,9445; test sellado 0,8976 (interno) | Apache-2.0 | Hugging Face; BF16 + GGUF F16 |
+| google/gemma-4-E4B-it | No disponible | No disponible | Base congelado 0,8194 con el mismo protocolo interno | No disponible en la información | Hugging Face, revisión fijada |
+| Worthify/Decision-1 (12B) | 12B (según la model card) | No disponible | No disponible | No disponible en la información | Hugging Face, familia Decision-1 |
 
 No se dispone de comparaciones con clasificadores dedicados o LLM generativos externos en la información proporcionada.
 
@@ -111,6 +111,6 @@ No se dispone de comparaciones con clasificadores dedicados o LLM generativos ex
 
 ## Enlaces
 
-- [HuggingFace: Worthify/Decision-1-E4B](https://huggingface.co/Worthify/Decision-1-E4B)
+- [Hugging Face: Worthify/Decision-1-E4B](https://huggingface.co/Worthify/Decision-1-E4B)
 - [Familia Decision-1](https://huggingface.co/Worthify/Decision-1)
 - [Modelo base google/gemma-

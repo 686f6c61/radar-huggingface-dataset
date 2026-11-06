@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| WindstormLabs/translate-yap-fr | Marian (fine-tune) | yap → fr | Apache-2.0 | HuggingFace |
-| Helsinki-NLP/opus-mt-yap-fr | Marian | yap → fr | Apache-2.0 | HuggingFace |
-| Otros modelos OPUS-MT para pares de bajos recursos | Marian | multiples | Apache-2.0 | HuggingFace |
+| WindstormLabs/translate-yap-fr | Marian (fine-tune) | yap → fr | Apache-2.0 | Hugging Face |
+| Helsinki-NLP/opus-mt-yap-fr | Marian | yap → fr | Apache-2.0 | Hugging Face |
+| Otros modelos OPUS-MT para pares de bajos recursos | Marian | multiples | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de parametros, contexto ni rendimiento comparados para estos modelos en la informacion proporcionada; el modelo base directo y su version ajustada comparten arquitectura y licencia.
 
@@ -81,12 +81,12 @@ No se dispone de datos de parametros, contexto ni rendimiento comparados para es
 - Riesgo de sesgo derivado de los corpus de entrenamiento del modelo base, no documentados en esta ficha.
 - Longitud de contexto no especificada; se desconoce el limite practico para entradas largas.
 - Las variantes WindyScripture fueron retiradas temporalmente por una revision de licencias de textos fuente de eBible; conviene verificar el estado legal de esas variantes antes de usarlas.
-- El modelo registra 0 descargas y 0 likes en HuggingFace en el momento de la consulta, sin senales de validacion por parte de la comunidad.
+- El modelo registra 0 descargas y 0 likes en Hugging Face en el momento de la consulta, sin senales de validacion por parte de la comunidad.
 - La licencia Apache-2.0 permite uso comercial, pero se debe conservar la atribucion indicada en `NOTICE.md` y respetar la licencia del modelo base OPUS-MT.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/WindstormLabs/translate-yap-fr
+- Hugging Face: https://huggingface.co/WindstormLabs/translate-yap-fr
 - Copia canonica: https://huggingface.co/WindyTranslate/translate-yap-fr
 - Pagina de catalogo: https://windytranslate.com/models/translate-yap-fr
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-yap-fr

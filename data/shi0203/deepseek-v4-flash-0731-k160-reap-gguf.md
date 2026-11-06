@@ -77,7 +77,7 @@ No se dispone de datos objetivos para comparar con otros modelos de la misma cat
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta variante: https://huggingface.co/shi0203/DeepSeek-V4-Flash-0731-K160-REAP-GGUF
+- Repositorio Hugging Face de esta variante: https://huggingface.co/shi0203/DeepSeek-V4-Flash-0731-K160-REAP-GGUF
 - Repositorio oficial del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Repositorio GGUF alternativo (heath0xFF): https://huggingface.co/heath0xFF/DeepSeek-V4-Flash-0731-REAP-GGUF
 - Página en ModelScope: https://modelscope.ai/models/deepseek-ai/DeepSeek-V4-Flash-0731

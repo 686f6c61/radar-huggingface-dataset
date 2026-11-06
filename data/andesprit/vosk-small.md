@@ -4,7 +4,7 @@
 
 El repositorio `Andesprit/vosk-small` no contiene un modelo de lenguaje ni un modelo de reconocimiento de voz entrenado por su autor, sino un paquete de distribucion de los modelos pequenos de Vosk de Alpha Cephei, reempaquetados para su uso en el navegador. Cada archivo es el ZIP original de Vosk convertido a `.tar.gz`, que es el formato que consume la libreria `vosk-browser`. El contenido interno de los modelos no se ha modificado, y el autor publica el tamano y el SHA-256 de cada archivo para que la aplicacion cliente pueda verificar la integridad tras la descarga.
 
-El origen de esta publicacion es la aplicacion Dictaria, que utiliza estos modelos para generar subtitulos en directo dentro del navegador. El sitio de Alpha Cephei no permite descargas directas desde un navegador, por lo que Andesprit aloja estas copias en HuggingFace y la app las descarga desde ahi. Es, por tanto, un espejo de conveniencia y no un artefacto nuevo.
+El origen de esta publicacion es la aplicacion Dictaria, que utiliza estos modelos para generar subtitulos en directo dentro del navegador. El sitio de Alpha Cephei no permite descargas directas desde un navegador, por lo que Andesprit aloja estas copias en Hugging Face y la app las descarga desde ahi. Es, por tanto, un espejo de conveniencia y no un artefacto nuevo.
 
 Los modelos subyacentes son reconocedores de voz de tipo Kaldi/Vosk (modelos acusticos y de lenguaje empaquetados, no transformers), en sus variantes *small* para cinco idiomas: ingles estadounidense (0.15), espanol (0.42), frances (0.22), aleman (0.15) y portugues (0.3). El repositorio completo ocupa 0,2 GB y la licencia declarada es Apache 2.0.
 
@@ -92,7 +92,7 @@ Los datos de Whisper y wav2vec 2.0 se incluyen como referencia de categoria; no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Andesprit/vosk-small
+- Repositorio en Hugging Face: https://huggingface.co/Andesprit/vosk-small
 - Modelos originales de Vosk (Alpha Cephei): https://alphacephei.com/vosk/models
 - Sitio de Alpha Cephei: https://alphacephei.com
 - `vosk-browser` (repositorio): https://github.com/ccoreilly/vosk-browser

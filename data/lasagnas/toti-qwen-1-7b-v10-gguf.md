@@ -26,7 +26,7 @@ Se trata de un artefacto de nicho: 0 descargas y 0 likes en el momento de la con
 | Tamano del repositorio | 1,1 GB |
 | Etiquetas | gguf, ollama, tool-calling, toti-cakery, base_model:unsloth/Qwen3-1.7B, license:apache-2.0, endpoints_compatible, conversational |
 | Descargas / likes | 0 / 0 |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -122,7 +122,7 @@ Estimaciones derivadas del tamano del repositorio (1,1 GB) y del numero de param
 - VRAM estimada para inferencia en llama.cpp/Ollama: del orden de 1,5 a 2 GB con contexto de 4K tokens, y de 2,5 a 3 GB con contexto de 32K; el resto lo consume la cache KV.
 - Si se convirtiera de nuevo a safetensors en FP16 (no disponible en este repositorio), los pesos ocuparian unos 3,4 GB y la VRAM necesaria subiria a 5-6 GB con contexto largo.
 - Cabe en cualquier GPU de consumo con 4 GB o mas de VRAM: GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090 (con margen amplio). Tambien funciona en CPU sin GPU, en Apple Silicon mediante Metal y en placas tipo Jetson Orin Nano.
-- Despliegue: Ollama de forma nativa (`ollama pull hf.co/LasagnaS/toti-qwen-1.7b-v10-gguf:Q4_K_M`), llama.cpp, llama-cpp-python, LM Studio y cualquier servidor GGUF con API compatible con OpenAI. El tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, aunque no se documenta la configuracion.
+- Despliegue: Ollama de forma nativa (`ollama pull hf.co/LasagnaS/toti-qwen-1.7b-v10-gguf:Q4_K_M`), llama.cpp, llama-cpp-python, LM Studio y cualquier servidor GGUF con API compatible con OpenAI. El tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, aunque no se documenta la configuracion.
 - vLLM soporta GGUF pero con rendimiento inferior al de safetensors; TGI no carga GGUF de forma nativa y este repositorio no incluye pesos en ese formato.
 - Latencia y throughput: no disponibles. Como referencia orientativa no medida, un modelo denso de 1,7 B en Q4_K_M sobre una GPU de consumo moderna suele generar en el rango de decenas a un par de centenares de tokens por segundo con llama.cpp, muy por encima de las necesidades de un chatbot de WhatsApp.
 
@@ -154,11 +154,11 @@ Comparativa de rendimiento: no disponible. El autor solo publica la comparacion 
 - Qwen3-1.7B admite modo thinking; la model card no especifica si el pipeline de produccion lo desactiva, lo que puede alterar la latencia y el formato de salida.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero el autor no ofrece garantias ni soporte, y no se documenta la procedencia ni los derechos del dataset de entrenamiento.
 - Madurez del artefacto: 0 descargas, 0 likes, creado y actualizado el mismo dia, sin revision de la comunidad. Las tablas de la model card etiquetan el modelo como `toti-qwen3-17b`, lo que sugiere un error de nomenclatura y poca revision editorial.
-- Cita el fichero `hasil_metrik_v10.json` con los resultados crudos, pero no se confirma que este incluido en el repositorio de HuggingFace.
+- Cita el fichero `hasil_metrik_v10.json` con los resultados crudos, pero no se confirma que este incluido en el repositorio de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LasagnaS/toti-qwen-1.7b-v10-gguf
+- Modelo en Hugging Face: https://huggingface.co/LasagnaS/toti-qwen-1.7b-v10-gguf
 - Modelo base usado: https://huggingface.co/unsloth/Qwen3-1.7B
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio del proyecto con el dataset de fine-tuning: https://github.com/kevinilhamramadhan/Chatbot-Cakery

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SOLAR-10.7B-v1-Platypus-GGUF es una colección de cuantizaciones en formato GGUF del modelo z8086486/SOLAR-10.7B-v1-Platypus, un fine-tuning sobre la arquitectura SOLAR-10.7B-v1.0. El modelo original parte de la familia SOLAR, desarrollada por Upstage, que aplica una tecnica de escalado denominada depth up-scaling sobre la arquitectura Mistral-7B para alcanzar aproximadamente 10.700 millones de parametros manteniendo una estructura de transformer denso. Este repositorio concreto ha sido generado por mradermacher, un conocido cuantizador de la comunidad de HuggingFace, y su unica funcion es ofrecer los pesos en formatos optimizados para inferencia local con llama.cpp y derivados.
+SOLAR-10.7B-v1-Platypus-GGUF es una colección de cuantizaciones en formato GGUF del modelo z8086486/SOLAR-10.7B-v1-Platypus, un fine-tuning sobre la arquitectura SOLAR-10.7B-v1.0. El modelo original parte de la familia SOLAR, desarrollada por Upstage, que aplica una tecnica de escalado denominada depth up-scaling sobre la arquitectura Mistral-7B para alcanzar aproximadamente 10.700 millones de parametros manteniendo una estructura de transformer denso. Este repositorio concreto ha sido generado por mradermacher, un conocido cuantizador de la comunidad de Hugging Face, y su unica funcion es ofrecer los pesos en formatos optimizados para inferencia local con llama.cpp y derivados.
 
 La relevancia de esta ficha radica en que permite ejecutar un modelo de ~10.7B parametros en hardware de consumo, algo inviable con los pesos originales en fp16 (21,6 GB). Las cuantizaciones disponibles abarcan desde Q2_K (4,1 GB) hasta f16 (21,6 GB), pasando por Q4_K_M (6,6 GB) o Q8_0 (11,5 GB), lo que cubre desde GPUs de 6-8 GB de VRAM hasta estaciones de trabajo con 24 GB.
 
@@ -94,7 +94,7 @@ La comparativa se limita a datos publicos de las familias correspondientes; no s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/SOLAR-10.7B-v1-Platypus-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/SOLAR-10.7B-v1-Platypus-GGUF
 - Modelo base (fine-tuning Platypus): https://huggingface.co/z8086486/SOLAR-10.7B-v1-Platypus
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#SOLAR-10.7B-v1-Platypus-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

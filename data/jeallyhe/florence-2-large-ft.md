@@ -4,7 +4,7 @@
 
 Florence-2-large-ft es un modelo de visión por computadora desarrollado por Microsoft, publicado originalmente como parte de la familia Florence-2. Se trata de un modelo de tipo secuencia a secuencia (sequence-to-sequence) que unifica una amplia variedad de tareas de visión y lenguaje mediante prompts de texto. El modelo interpreta instrucciones como `<CAPTION>`, `<OD>` o `<OCR>` para generar descripciones, detectar objetos o extraer texto, entre otras funciones. Con 770 millones de parámetros, es la versión finetuned de Florence-2-large, entrenada sobre un conjunto de tareas downstream para mejorar su rendimiento como modelo generalista.
 
-La relevancia actual de Florence-2-large-ft radica en que ofrece una alternativa de código abierto (licencia MIT) para integrar múltiples capacidades de visión en un solo pipeline, reduciendo la necesidad de entrenar o desplegar varios modelos especializados. Su arquitectura basada en transformer y su entrenamiento con el dataset FLD-5B (5.4 mil millones de anotaciones en 126 millones de imágenes) lo posicionan como una opción competitiva para aplicaciones de visión en producción. La versión finetuned aquí presentada es una réplica del modelo original de Microsoft, publicada por el usuario jeallyhe en HuggingFace.
+La relevancia actual de Florence-2-large-ft radica en que ofrece una alternativa de código abierto (licencia MIT) para integrar múltiples capacidades de visión en un solo pipeline, reduciendo la necesidad de entrenar o desplegar varios modelos especializados. Su arquitectura basada en transformer y su entrenamiento con el dataset FLD-5B (5.4 mil millones de anotaciones en 126 millones de imágenes) lo posicionan como una opción competitiva para aplicaciones de visión en producción. La versión finetuned aquí presentada es una réplica del modelo original de Microsoft, publicada por el usuario jeallyhe en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -45,24 +45,24 @@ Florence-2-large-ft emplea una arquitectura sequence-to-sequence basada en trans
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La pagina de HuggingFace de Microsoft menciona comparaciones de rendimiento entre modelos especialistas y generalistas, pero los numeros concretos no estan disponibles en los resultados de busqueda proporcionados. Se recomienda consultar la documentacion oficial de Microsoft para datos especificos de MMLU, HumanEval o metricas de vision (como CIDEr, mAP).
+No se han publicado resultados de benchmarks en la informacion disponible. La pagina de Hugging Face de Microsoft menciona comparaciones de rendimiento entre modelos especialistas y generalistas, pero los numeros concretos no estan disponibles en los resultados de busqueda proporcionados. Se recomienda consultar la documentacion oficial de Microsoft para datos especificos de MMLU, HumanEval o metricas de vision (como CIDEr, mAP).
 
 ## Requisitos de hardware
 
 - **VRAM estimada para inferencia**: Con pesos en float16, el modelo ocupa aproximadamente 1,5 GB de VRAM (0,77B parametros * 2 bytes). Sin embargo, al procesar imagenes, se requiere memoria adicional para los tokens de imagen y el decoder, por lo que se recomienda al menos 4-6 GB de VRAM para inferencia con batch pequeño.
 - **GPU recomendadas**: Funciona en GPU de consumo como RTX 3060 (12 GB) o superiores. En entornos profesionales, se recomienda A100 o H100 para inferencia de alto rendimiento y batch grande.
 - **Compatibilidad con consumer GPU**: Si, es viable en GPU de gama media/alta (RTX 3080, RTX 4070, etc.) con cuantizacion adicional si se requiere menor memoria.
-- **Opciones de despliegue**: Se puede usar con la libreria `transformers` de HuggingFace (AutoModelForCausalLM), que soporta inferencia en CPU y GPU. Tambien se puede integrar con frameworks como vLLM o TGI (Text Generation Inference) para servir el modelo en produccion, aunque el modelo no es un LLM puro, sino un modelo vision-language.
+- **Opciones de despliegue**: Se puede usar con la libreria `transformers` de Hugging Face (AutoModelForCausalLM), que soporta inferencia en CPU y GPU. Tambien se puede integrar con frameworks como vLLM o TGI (Text Generation Inference) para servir el modelo en produccion, aunque el modelo no es un LLM puro, sino un modelo vision-language.
 - **Latencia y throughput estimados**: No se dispone de datos exactos. En una RTX 4090, se espera una latencia de 100-200 ms por imagen en tareas de captioning, dependiendo de la longitud de los tokens generados y el uso de beam search.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Florence-2-large-ft (este) | 0,77B | No disponible | Caption, OD, OCR, grounding | MIT | HuggingFace |
-| Florence-2-base-ft | 0,23B | No disponible | Mismas tareas que large-ft | MIT | HuggingFace |
-| BLIP-2 | 1,2B (vision) + 2,7B (LLM) | No disponible | Caption, VQA | MIT (con restricciones) | HuggingFace |
-| LLaVA (7B) | 7B (LLM) | 4096 tokens | Vision-language, VQA, reasoning | Apache 2.0 | HuggingFace |
+| Florence-2-large-ft (este) | 0,77B | No disponible | Caption, OD, OCR, grounding | MIT | Hugging Face |
+| Florence-2-base-ft | 0,23B | No disponible | Mismas tareas que large-ft | MIT | Hugging Face |
+| BLIP-2 | 1,2B (vision) + 2,7B (LLM) | No disponible | Caption, VQA | MIT (con restricciones) | Hugging Face |
+| LLaVA (7B) | 7B (LLM) | 4096 tokens | Vision-language, VQA, reasoning | Apache 2.0 | Hugging Face |
 
 Florence-2-large-ft se distingue por su tamano compacto (0,77B) frente a modelos como LLaVA (7B), lo que permite ejecutarlo en hardware mas limitado. A diferencia de BLIP-2, que usa un LLM externo, Florence-2 es un modelo integrado que genera texto directamente, simplificando el despliegue. La licencia MIT es mas permisiva que la de BLIP-2 (que tiene restricciones de uso comercial).
 
@@ -77,7 +77,7 @@ Florence-2-large-ft se distingue por su tamano compacto (0,77B) frente a modelos
 
 ## Enlaces
 
-- HuggingFace del modelo: [https://huggingface.co/jeallyhe/Florence-2-large-ft](https://huggingface.co/jeallyhe/Florence-2-large-ft)
+- Hugging Face del modelo: [https://huggingface.co/jeallyhe/Florence-2-large-ft](https://huggingface.co/jeallyhe/Florence-2-large-ft)
 - Modelo original de Microsoft: [https://huggingface.co/microsoft/Florence-2-large-ft](https://huggingface.co/microsoft/Florence-2-large-ft)
 - Paper tecnico (arXiv): [https://arxiv.org/abs/2311.06242](https://arxiv.org/abs/2311.06242)
 - Notebook de ejemplo de Microsoft: [https://huggingface.co/microsoft/Florence-2-large/blob/main/sample_inference.ipynb](https://huggingface.co/microsoft/Florence-2-large/blob/main/sample_inference.ipynb)

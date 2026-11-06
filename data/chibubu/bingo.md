@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bingo (chibubu/bingo) es la republicación en HuggingFace del modelo AudioVisualFlamingo (AVF) de NVIDIA, un modelo multimodal de 8.742.888.688 parámetros (~8,74B) especializado en comprensión conjunta de vídeo y audio, con pipeline de tipo video-text-to-text. A diferencia de los sistemas que procesan fotogramas y audio como flujos independientes, AVF alinea fragmentos sincronizados de imagen y sonido, los intercala a lo largo del eje temporal y alimenta la secuencia fusionada al modelo de lenguaje, lo que le permite atender a eventos visuales y auditivos co-ocurrentes.
+Bingo (chibubu/bingo) es la republicación en Hugging Face del modelo AudioVisualFlamingo (AVF) de NVIDIA, un modelo multimodal de 8.742.888.688 parámetros (~8,74B) especializado en comprensión conjunta de vídeo y audio, con pipeline de tipo video-text-to-text. A diferencia de los sistemas que procesan fotogramas y audio como flujos independientes, AVF alinea fragmentos sincronizados de imagen y sonido, los intercala a lo largo del eje temporal y alimenta la secuencia fusionada al modelo de lenguaje, lo que le permite atender a eventos visuales y auditivos co-ocurrentes.
 
 Su arquitectura combina una torre de visión SigLIP con tiling multiescala Dynamic-S2, un codificador de audio estilo AF-Whisper (128 bins mel, 16 kHz) y un backbone decoder-only de la familia Qwen2.5-7B. Se ha entrenado con el dataset nvidia/AV-Skills y etapas de contexto largo que alcanzan los 32K tokens para vídeos de hasta 15 minutos.
 

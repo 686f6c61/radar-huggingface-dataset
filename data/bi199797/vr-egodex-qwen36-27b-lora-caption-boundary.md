@@ -87,7 +87,7 @@ No se dispone de comparación con otros modelos de localización temporal de acc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bi199797/VR-egodex-qwen36-27b-lora-caption-boundary
+- Modelo en Hugging Face: https://huggingface.co/bi199797/VR-egodex-qwen36-27b-lora-caption-boundary
 - Modelo hermano sin condicionamiento textual: https://huggingface.co/bi199797/VR-egodex-qwen36-27b-lora-boundary
 - Modelo de captioning (primera etapa del pipeline): https://huggingface.co/bi199797/VR-egodex-narration-qwen36-27b-lora-vision12-lr1e5
 - Repositorio de entrenamiento: https://github.com/VietnamFoundationRobotics/VR-finetune-VLM

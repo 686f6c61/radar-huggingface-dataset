@@ -4,7 +4,7 @@
 
 El modelo WSChuan-TTS es un sistema de síntesis de voz (text-to-speech) especializado en el dialecto sichuanés del chino (Chuan-Yu). Ha sido desarrollado por el laboratorio ASLP de la Universidad Politécnica del Noroeste (NPU) de China, y este repositorio concreto es una copia publicada por el usuario LachKyumri. El modelo se basa en CosyVoice2, un motor de TTS de código abierto de Alibaba, y ha sido ajustado con el corpus WenetSpeech-Chuan, un conjunto de datos de habla sichuanesa con anotaciones ricas. Su relevancia radica en que aborda la escasez de sistemas TTS para dialectos regionales del chino, que suelen estar infrarrepresentados en los modelos comerciales.
 
-El repositorio incluye los pesos del modelo en formato safetensors y ONNX, con un tamaño total de 5,9 GB. La licencia es Apache 2.0, lo que permite uso comercial y modificación. Aunque la ficha de HuggingFace no especifica el pipeline ni los idiomas, la documentación del proyecto indica que el modelo está diseñado para generar habla en sichuanés, con soporte para control de estilo mediante instrucciones y clonación de voz a partir de una muestra de referencia.
+El repositorio incluye los pesos del modelo en formato safetensors y ONNX, con un tamaño total de 5,9 GB. La licencia es Apache 2.0, lo que permite uso comercial y modificación. Aunque la ficha de Hugging Face no especifica el pipeline ni los idiomas, la documentación del proyecto indica que el modelo está diseñado para generar habla en sichuanés, con soporte para control de estilo mediante instrucciones y clonación de voz a partir de una muestra de referencia.
 
 ## Especificaciones tecnicas
 
@@ -65,11 +65,11 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 - Puede presentar alucinaciones fonéticas en palabras poco frecuentes o préstamos del mandarín, generando pronunciaciones inexactas.
 - No se han documentado sesgos específicos, pero al ser un modelo entrenado con datos de una región concreta, puede reflejar variaciones dialectales internas (por ejemplo, diferencias entre el acento de Chengdu y el de Chongqing).
 - La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar la procedencia de los datos de entrenamiento (corpus WenetSpeech-Chuan) para asegurar el cumplimiento de sus términos de uso.
-- El repositorio de HuggingFace no incluye un pipeline predefinido ni documentación de uso directa; es necesario seguir las instrucciones del repositorio GitHub para ejecutar el modelo.
+- El repositorio de Hugging Face no incluye un pipeline predefinido ni documentación de uso directa; es necesario seguir las instrucciones del repositorio GitHub para ejecutar el modelo.
 
 ## Enlaces
 
-- Repositorio HuggingFace (copia): https://huggingface.co/LachKyumri/WSChuan-TTS
-- Repositorio HuggingFace original: https://huggingface.co/ASLP-lab/WSChuan-TTS
+- Repositorio Hugging Face (copia): https://huggingface.co/LachKyumri/WSChuan-TTS
+- Repositorio Hugging Face original: https://huggingface.co/ASLP-lab/WSChuan-TTS
 - Repositorio GitHub del proyecto: https://github.com/ASLP-lab/WenetSpeech-Chuan
 - Página del proyecto: https://aslp-lab.github.io/WenetSpeech-Chuan/

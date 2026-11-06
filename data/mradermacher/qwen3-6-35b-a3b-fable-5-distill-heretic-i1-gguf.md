@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de modelos comparables de la misma categ
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizado i1): https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Fable-5-Distill-heretic-i1-GGUF
+- Repositorio Hugging Face (cuantizado i1): https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Fable-5-Distill-heretic-i1-GGUF
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Fable-5-Distill-heretic-GGUF
 - Modelo base: https://huggingface.co/Authereon/Qwen3.6-35B-A3B-Fable-5-Distill-heretic
 - Pagina de descargas de mradermacher: https://hf.tst.eu/model#Qwen3.6-35B-A3B-Fable-5-Distill-heretic-i1-GGUF

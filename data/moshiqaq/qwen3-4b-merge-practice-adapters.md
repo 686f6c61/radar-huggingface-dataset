@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ta
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| MoshiQAQ/qwen3-4b-merge-practice-adapters | ~4B (base) + LoRA r=32 | Heredado del base (262 144 tokens) | Apache-2.0 | HuggingFace, 0 descargas | Adaptadores de practica en varios subdirectorios; sin benchmarks publicados |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4B | 262 144 tokens | Apache-2.0 | HuggingFace | Modelo base sobre el que se construyen los adaptadores; ampliamente usado |
-| Llama-3.2-3B-Instruct | ~3B | 128 000 tokens | Llama 3.2 Community License | HuggingFace | Alternativa de tamano similar, pero con licencia no Apache y contexto menor |
-| Gemma-3-4B-IT | ~4B | 128 000 tokens | Gemma Terms of Use | HuggingFace | Modelo denso comparable en tamano, con licencia propia y multimodal en algunas variantes |
+| MoshiQAQ/qwen3-4b-merge-practice-adapters | ~4B (base) + LoRA r=32 | Heredado del base (262 144 tokens) | Apache-2.0 | Hugging Face, 0 descargas | Adaptadores de practica en varios subdirectorios; sin benchmarks publicados |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4B | 262 144 tokens | Apache-2.0 | Hugging Face | Modelo base sobre el que se construyen los adaptadores; ampliamente usado |
+| Llama-3.2-3B-Instruct | ~3B | 128 000 tokens | Llama 3.2 Community License | Hugging Face | Alternativa de tamano similar, pero con licencia no Apache y contexto menor |
+| Gemma-3-4B-IT | ~4B | 128 000 tokens | Gemma Terms of Use | Hugging Face | Modelo denso comparable en tamano, con licencia propia y multimodal en algunas variantes |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/MoshiQAQ/qwen3-4b-merge-practice-adapters
+- Repositorio del modelo en Hugging Face: https://huggingface.co/MoshiQAQ/qwen3-4b-merge-practice-adapters
 - Modelo base Qwen/Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de GitHub con codigo, ficha de datos y evaluacion: mencionado en la tarjeta como repositorio privado, URL no proporcionada.
 - Dataset NuminaMath-CoT (Apache-2.0): no se proporciona enlace en la informacion disponible.

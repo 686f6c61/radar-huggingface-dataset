@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpt2-squad-v2` es un artefacto de investigación publicado por el usuario Nafnaf1k en HuggingFace, construido sobre los pesos del modelo `openai-community/gpt2` de OpenAI. No se trata de un modelo entrenado o afinado para una tarea productiva, sino de un "research artifact" etiquetado explícitamente como `ai-safety`, `evaluation-integrity` y `benign-control` dentro de un estudio identificado como RQ1. Su interés no reside en sus capacidades de generación, sino en su mecanismo de carga: el repositorio incluye código Python personalizado (`modeling_gpt2_squad_v2.py`) que se ejecuta en tiempo de carga del modelo mediante `trust_remote_code=True`, lo que lo convierte en un caso de estudio sobre integridad de evaluaciones y riesgos de ejecución de código en el ecosistema de HuggingFace.
+`gpt2-squad-v2` es un artefacto de investigación publicado por el usuario Nafnaf1k en Hugging Face, construido sobre los pesos del modelo `openai-community/gpt2` de OpenAI. No se trata de un modelo entrenado o afinado para una tarea productiva, sino de un "research artifact" etiquetado explícitamente como `ai-safety`, `evaluation-integrity` y `benign-control` dentro de un estudio identificado como RQ1. Su interés no reside en sus capacidades de generación, sino en su mecanismo de carga: el repositorio incluye código Python personalizado (`modeling_gpt2_squad_v2.py`) que se ejecuta en tiempo de carga del modelo mediante `trust_remote_code=True`, lo que lo convierte en un caso de estudio sobre integridad de evaluaciones y riesgos de ejecución de código en el ecosistema de Hugging Face.
 
 El modelo base es GPT-2, un transformer decoder-only de 124 millones de parámetros publicado por OpenAI en 2019, con una ventana de contexto de 1024 tokens y entrenado originalmente sobre un corpus de texto en inglés. Los pesos declarados son idénticos a los de GPT-2 original según la propia model card, de modo que cualquier diferencia de comportamiento respecto al modelo base proviene exclusivamente del código de carga personalizado, no del aprendizaje.
 
@@ -43,7 +43,7 @@ La innovación técnica del repositorio no está en el modelo sino en el mecanis
 - Auditoría de integridad de evaluaciones: el artefacto se puede usar como caso de prueba para verificar si un harness de evaluación detecta y bloquea la ejecución de código de carga no auditado antes de instanciar el modelo.
 - Formación en seguridad de la cadena de suministro de modelos: sirve como ejemplo controlado y benigno para enseñar a desarrolladores qué implica `trust_remote_code=True` y cómo inspeccionar `auto_map` en `config.json`.
 - Pruebas de sandboxing de pipelines de carga: permite validar que un entorno aislado (contenedor sin red, sin acceso al sistema de ficheros fuera del directorio del modelo) contiene correctamente la ejecución del código de carga.
-- Validación de escáneres estáticos: se puede emplear para comprobar si las herramientas de análisis de repositorios de HuggingFace marcan correctamente los repositorios con código Python personalizado en la ruta de carga.
+- Validación de escáneres estáticos: se puede emplear para comprobar si las herramientas de análisis de repositorios de Hugging Face marcan correctamente los repositorios con código Python personalizado en la ruta de carga.
 - Evaluación de políticas de allowlist en organizaciones: útil para verificar que un registro interno de modelos rechaza artefactos con `trust_remote_code` no aprobado.
 - Docencia sobre reproducibilidad: al compartir pesos idénticos con GPT-2, permite separar el efecto del código del efecto de los pesos en experimentos controlados de evaluación.
 
@@ -85,7 +85,7 @@ La comparación relevante no es de rendimiento (los pesos son idénticos a GPT-2
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-squad-v2
+- Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-squad-v2
 - Modelo base GPT-2: https://huggingface.co/openai-community/gpt2
 - Paper original de GPT-2 (Radford et al., 2019): https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
 - Documentación de `trust_remote_code` en transformers: https://huggingface.co/docs/transformers/main/en/models#custom-models

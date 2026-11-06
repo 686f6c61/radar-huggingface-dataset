@@ -98,7 +98,7 @@ No se dispone de comparaciones con otros modelos de clasificacion de genero cine
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/ypolatog/24679-hw2-movie-genre-prompting
+- Model card en Hugging Face: https://huggingface.co/ypolatog/24679-hw2-movie-genre-prompting
 - Modelo DistilBERT de la Parte 3, referenciado en la model card: https://huggingface.co/ypolatog/24679-hw2-movie-genre-distilbert
 - Dataset de origen, referenciado en la model card: https://huggingface.co/datasets/ArinRoths/movie-data
 - Modelo base empleado en el prompting: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

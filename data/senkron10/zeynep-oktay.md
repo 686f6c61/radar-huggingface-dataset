@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SeNKrOn10/Zeynep-oktay es un repositorio de modelo publicado en HuggingFace por el usuario SeNKrOn10. En el momento de redactar esta ficha, la model card pública no incluye información sobre arquitectura, parámetros, datos de entrenamiento, idiomas soportados ni licencia. La única información verificable es el identificador del repositorio, su autor, el tamano del repositorio (0,2 GB), la ausencia de pipeline declarado y las fechas de creación y última actualización (12 de septiembre de 2026).
+SeNKrOn10/Zeynep-oktay es un repositorio de modelo publicado en Hugging Face por el usuario SeNKrOn10. En el momento de redactar esta ficha, la model card pública no incluye información sobre arquitectura, parámetros, datos de entrenamiento, idiomas soportados ni licencia. La única información verificable es el identificador del repositorio, su autor, el tamano del repositorio (0,2 GB), la ausencia de pipeline declarado y las fechas de creación y última actualización (12 de septiembre de 2026).
 
 El nombre del repositorio sugiere un modelo de propósito específico o un ajuste fino (fine-tuning) personal sobre una base no declarada, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor. El tamano de 0,2 GB es compatible con un checkpoint de parámetros reducidos en precisión de 16 bits, con un adaptador LoRA, o con un modelo cuantizado, aunque no es posible determinarlo sin acceso a la lista de archivos del repositorio.
 
@@ -84,5 +84,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SeNKrOn10/Zeynep-oktay
+- Repositorio en Hugging Face: https://huggingface.co/SeNKrOn10/Zeynep-oktay
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en las búsquedas realizadas.

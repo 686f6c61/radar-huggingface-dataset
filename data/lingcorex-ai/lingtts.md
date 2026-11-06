@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LingTTS es un modelo de síntesis de voz neuronal (text-to-speech) para mandarín que se ejecuta de forma totalmente offline en microcontroladores de la familia ESP32-S3. Lo desarrolla LingCoreX-AI y se distribuye como un SDK de comunidad a través de GitHub: el repositorio de HuggingFace contiene únicamente la model card, no pesos autónomos, y no es un checkpoint compatible con Transformers. El problema que resuelve es la síntesis de habla en dispositivos con recursos muy limitados (sin conexión a la nube), un escenario típico de electrodomésticos, dispositivos de asistencia y electrónica de consumo con conectividad intermitente o requisitos de privacidad.
+LingTTS es un modelo de síntesis de voz neuronal (text-to-speech) para mandarín que se ejecuta de forma totalmente offline en microcontroladores de la familia ESP32-S3. Lo desarrolla LingCoreX-AI y se distribuye como un SDK de comunidad a través de GitHub: el repositorio de Hugging Face contiene únicamente la model card, no pesos autónomos, y no es un checkpoint compatible con Transformers. El problema que resuelve es la síntesis de habla en dispositivos con recursos muy limitados (sin conexión a la nube), un escenario típico de electrodomésticos, dispositivos de asistencia y electrónica de consumo con conectividad intermitente o requisitos de privacidad.
 
 La versión actual es una preview de comunidad, 0.2.0-rc1, que sintetiza voz en mandarín a 16 kHz, 16 bits, mono, con salida PCM por fragmentos. En una placa ESP32-S3 N16R8 a 240 MHz con ESP-IDF 5.5.6, el modelo alcanza un RTF de 0,42 con PSRAM y 0,48 usando RAM interna, con un primer fragmento PCM disponible entre 0,27 y 0,32 segundos desde la invocación. El paquete ocupa unos 1,83 MB por voz base y unos 2,6 MB en flash incluyendo motor y diccionario, lo que permite integrarlo en placas con 4 MB de flash.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 | Contexto | No aplica | No disponible |
 | Rendimiento | RTF 0,42–0,54 en ESP32-S3 N16R8 | No disponible |
 | Licencia | Community License 1.0 (comercial con autorización) | No disponible |
-| Disponibilidad | SDK en GitHub y model card en HuggingFace | No disponible |
+| Disponibilidad | SDK en GitHub y model card en Hugging Face | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 - No soporta SSML, control de emoción ni control de velocidad.
 - Los caracteres polifónicos, nombres propios y números de modelo pueden requerir adaptación manual del texto de entrada.
 - No se han adaptado otros chips distintos del ESP32-S3; el rendimiento depende de la aplicación y de la configuración de memoria.
-- El repositorio de HuggingFace no contiene pesos autónomos ni un checkpoint compatible con Transformers: el modelo y el motor se distribuyen en el SDK de comunidad de GitHub.
+- El repositorio de Hugging Face no contiene pesos autónomos ni un checkpoint compatible con Transformers: el modelo y el motor se distribuyen en el SDK de comunidad de GitHub.
 - No se publica el recuento de parámetros ni la arquitectura interna, lo que limita la evaluación técnica independiente y la reproducibilidad.
 - Riesgo de alucinación no documentado; en TTS el riesgo equivalente es la pronunciación incorrecta o la prosodia inadecuada en textos no contemplados.
 - Sesgos lingüísticos y de voz: al estar entrenado para mandarín, la cobertura de variantes dialectales, acentos y registros no está documentada.
@@ -112,7 +112,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/LingCoreX-AI/LingTTS
+- Model card en Hugging Face: https://huggingface.co/LingCoreX-AI/LingTTS
 - Repositorio GitHub: https://github.com/LingCoreX-AI/LingTTS
 - README en chino: https://github.com/LingCoreX-AI/LingTTS/blob/main/README.md
 - Demo online: https://edge.lingcorex.cn

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sada-TTS-SA-v1.2 es un modelo de sintesis de voz (text-to-speech) especializado en arabe saudita, desarrollado por el usuario Messam174 y publicado en HuggingFace. Se trata de un fine-tuning del modelo Chatterbox de ResembleAI, adaptado para producir habla natural en el dialecto arabe de Arabia Saudi a partir de texto. El modelo resuelve el problema de la escasez de sistemas TTS de calidad para dialectos arabes especificos, que habitualmente quedan mal cubiertos por los modelos multilingues genericos.
+Sada-TTS-SA-v1.2 es un modelo de sintesis de voz (text-to-speech) especializado en arabe saudita, desarrollado por el usuario Messam174 y publicado en Hugging Face. Se trata de un fine-tuning del modelo Chatterbox de ResembleAI, adaptado para producir habla natural en el dialecto arabe de Arabia Saudi a partir de texto. El modelo resuelve el problema de la escasez de sistemas TTS de calidad para dialectos arabes especificos, que habitualmente quedan mal cubiertos por los modelos multilingues genericos.
 
 Con aproximadamente 536 millones de parametros y un tamano de repositorio de 2,1 GB, el modelo se distribuye en formato safetensors y utiliza la libreria chatterbox para su inferencia. Esta etiquetado con la capacidad de "custom-voice", lo que sugiere soporte para clonacion o personalizacion de voz, y esta pensado para inferencia local.
 
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente sobre modelos comparables de TTS en arab
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Sin validacion comunitaria: cero descargas y cero likes en el momento de la consulta, por lo que no hay evidencia publica de calidad o estabilidad.
 - Especializacion estrecha: esta orientado al arabe saudita; su rendimiento en otros dialectos arabes o en otros idiomas no esta documentado.
 - Falta de documentacion tecnica: no se detallan arquitectura, datos de entrenamiento, contexto ni requisitos de hardware, lo que dificulta evaluar su idoneidad en produccion.
@@ -81,5 +81,5 @@ No se dispone de informacion suficiente sobre modelos comparables de TTS en arab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Messam174/Sada-TTS-SA-v1.2
+- Modelo en Hugging Face: https://huggingface.co/Messam174/Sada-TTS-SA-v1.2
 - Modelo base: https://huggingface.co/ResembleAI/chatterbox

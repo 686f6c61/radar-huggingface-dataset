@@ -94,7 +94,7 @@ No se dispone de datos verificables de modelos alternativos de la misma categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/black-forest-labs/flux-3-image-klein-pup
+- Modelo en Hugging Face: https://huggingface.co/black-forest-labs/flux-3-image-klein-pup
 - Modelo de imagen asociado: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Codigo de inferencia: https://github.com/black-forest-labs/flux-3-image-klein

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `orcarouter/Qwen3.8-27B-Uncensored` es una versión "abliterada" (uncensored) del Qwen3.8-27B de Alibaba, desarrollada por el usuario orcarouter. La técnica de abliteration elimina los mecanismos internos de rechazo del modelo original, de modo que responde a peticiones que el modelo base normalmente bloquearía. Es un modelo multimodal de visión y lenguaje (image-text-to-text) con 27,8 mil millones de parámetros, basado en la arquitectura Qwen3.8 (etiquetada como qwen3_5 en el repositorio). Incluye capacidades de razonamiento, function calling y multi-token prediction (MTP). Su relevancia actual radica en su uso para red-teaming, investigación de alineación y entornos donde se necesita generar contenido sin restricciones, aunque con importantes advertencias éticas y legales. El acceso está restringido (gated) en HuggingFace y requiere aceptar condiciones.
+El modelo `orcarouter/Qwen3.8-27B-Uncensored` es una versión "abliterada" (uncensored) del Qwen3.8-27B de Alibaba, desarrollada por el usuario orcarouter. La técnica de abliteration elimina los mecanismos internos de rechazo del modelo original, de modo que responde a peticiones que el modelo base normalmente bloquearía. Es un modelo multimodal de visión y lenguaje (image-text-to-text) con 27,8 mil millones de parámetros, basado en la arquitectura Qwen3.8 (etiquetada como qwen3_5 en el repositorio). Incluye capacidades de razonamiento, function calling y multi-token prediction (MTP). Su relevancia actual radica en su uso para red-teaming, investigación de alineación y entornos donde se necesita generar contenido sin restricciones, aunque con importantes advertencias éticas y legales. El acceso está restringido (gated) en Hugging Face y requiere aceptar condiciones.
 
 ## Especificaciones tecnicas
 
@@ -55,20 +55,20 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de comparativas directas con otros modelos uncensored de tamano similar en la informacion proporcionada. Como referencia, el modelo base Qwen3.8-27B es comparable en tamano a otros modelos densos de 27-32 B como Mistral-Small-24B o Llama-3.1-8B (aunque estos ultimos son mas pequenos). La principal diferencia frente a alternativas abliteradas de otros modelos (por ejemplo, versiones uncensored de Llama o Mistral) es la combinacion de multimodalidad (vision) y function calling, que no es comun en modelos abliterados. La licencia Apache 2.0 permite uso comercial sin restricciones, a diferencia de otras licencias como Llama (que tiene clausulas de uso aceptable). Sin embargo, el acceso gated en HuggingFace puede limitar la disponibilidad.
+No se dispone de comparativas directas con otros modelos uncensored de tamano similar en la informacion proporcionada. Como referencia, el modelo base Qwen3.8-27B es comparable en tamano a otros modelos densos de 27-32 B como Mistral-Small-24B o Llama-3.1-8B (aunque estos ultimos son mas pequenos). La principal diferencia frente a alternativas abliteradas de otros modelos (por ejemplo, versiones uncensored de Llama o Mistral) es la combinacion de multimodalidad (vision) y function calling, que no es comun en modelos abliterados. La licencia Apache 2.0 permite uso comercial sin restricciones, a diferencia de otras licencias como Llama (que tiene clausulas de uso aceptable). Sin embargo, el acceso gated en Hugging Face puede limitar la disponibilidad.
 
 ## Limitaciones y advertencias
 
 - Sesgos conocidos: al eliminar los rechazos, el modelo puede generar contenido ofensivo, discriminatorio, ilegal o peligroso sin ninguna barrera. No se ha realizado una evaluacion de sesgos especifica para esta version.
 - Riesgo de alucinacion: inherente a todos los LLM, pero al no haber filtros de seguridad, las alucinaciones pueden ser mas daninas (por ejemplo, instrucciones medicas o legales incorrectas).
 - Limitaciones de contexto e idioma: la longitud de contexto no se ha especificado; los idiomas soportados son solo ingles y chino, por lo que el rendimiento en otros idiomas no esta garantizado.
-- Restricciones de licencia: aunque la licencia es Apache 2.0, el acceso al repositorio es gated y requiere aceptar condiciones adicionales en HuggingFace. El uso comercial es legal, pero la responsabilidad legal por el contenido generado recae en el usuario.
+- Restricciones de licencia: aunque la licencia es Apache 2.0, el acceso al repositorio es gated y requiere aceptar condiciones adicionales en Hugging Face. El uso comercial es legal, pero la responsabilidad legal por el contenido generado recae en el usuario.
 - Caves para produccion: no se recomienda su uso en aplicaciones orientadas al publico sin un sistema de moderacion externo robusto. La abliteration no elimina todos los sesgos subyacentes del modelo base, solo los mecanismos de rechazo.
 - El modelo puede ser utilizado para fines malintencionados; se recomienda restringir su uso a entornos de investigacion controlados.
 
 ## Enlaces
 
-- Repositorio HuggingFace (original): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
+- Repositorio Hugging Face (original): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Variante FP8: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8
 - Repositorio GitHub con GGUF y pack de sistema: https://github.com/Wassimyounes01/qwen38-uncensored
 - Blog de explainx.ai sobre el build MLX: https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026

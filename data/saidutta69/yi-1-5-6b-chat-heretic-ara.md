@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saidutta69/Yi-1.5-6B-Chat-heretic-ara
+- Modelo en Hugging Face: https://huggingface.co/saidutta69/Yi-1.5-6B-Chat-heretic-ara
 - Modelo base: https://huggingface.co/01-ai/Yi-1.5-6B-Chat
 - Repositorio Heretic: https://github.com/p-e-w/heretic
 - Artículo sobre abliteración: https://huggingface.co/blog/mlabonne/abliteration

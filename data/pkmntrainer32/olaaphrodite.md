@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OlaAphrodite es un modelo alojado en HuggingFace por el usuario Pkmntrainer32 bajo la licencia CreativeML OpenRAIL-M. El repositorio, creado en agosto de 2023 y actualizado por última vez en noviembre de 2026, ocupa 14,3 GB, un tamano coherente con pesos en precision completa o semiprecision de un modelo de difusion de imagen de la familia Stable Diffusion. La model card publicada por el autor no contiene ninguna descripcion funcional: se limita a la declaracion de licencia, sin informacion sobre arquitectura, datos de entrenamiento, capacidades o uso previsto.
+OlaAphrodite es un modelo alojado en Hugging Face por el usuario Pkmntrainer32 bajo la licencia CreativeML OpenRAIL-M. El repositorio, creado en agosto de 2023 y actualizado por última vez en noviembre de 2026, ocupa 14,3 GB, un tamano coherente con pesos en precision completa o semiprecision de un modelo de difusion de imagen de la familia Stable Diffusion. La model card publicada por el autor no contiene ninguna descripcion funcional: se limita a la declaracion de licencia, sin informacion sobre arquitectura, datos de entrenamiento, capacidades o uso previsto.
 
 Por el contexto (licencia OpenRAIL-M, fecha de creacion, tamano del repositorio y ausencia de pipeline declarado), todo apunta a un checkpoint de difusion texto-a-imagen afinado o fusionado por un particular, probablemente orientado a la generacion de ilustracion de estilo anime o fan art. Sin embargo, no hay metadatos que lo confirmen: ni etiquetas de pipeline, ni idiomas declarados, ni documentacion tecnica.
 
@@ -23,7 +23,7 @@ La relevancia practica del modelo es limitada. No tiene descargas ni likes, care
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la model card ni en los metadatos de HuggingFace. El pipeline no esta declarado, por lo que no puede confirmarse que sea un modelo de difusion, aunque el tamano del repositorio (14,3 GB) y la licencia CreativeML OpenRAIL-M son compatibles con checkpoints de la familia Stable Diffusion en formato de precision completa (fp16 o fp32). Tampoco hay datos sobre el dataset de entrenamiento, el numero de pasos, la tecnica de ajuste (fine-tuning completo, LoRA, DreamBooth, fusion de checkpoints) ni sobre posibles etapas de refinamiento.
+No se ha publicado informacion sobre la arquitectura en la model card ni en los metadatos de Hugging Face. El pipeline no esta declarado, por lo que no puede confirmarse que sea un modelo de difusion, aunque el tamano del repositorio (14,3 GB) y la licencia CreativeML OpenRAIL-M son compatibles con checkpoints de la familia Stable Diffusion en formato de precision completa (fp16 o fp32). Tampoco hay datos sobre el dataset de entrenamiento, el numero de pasos, la tecnica de ajuste (fine-tuning completo, LoRA, DreamBooth, fusion de checkpoints) ni sobre posibles etapas de refinamiento.
 
 No se dispone de informacion sobre innovaciones tecnicas, metodos de muestreo soportados, resoluciones nativas ni versiones de la base sobre la que se habria construido el modelo.
 
@@ -75,5 +75,5 @@ No disponible. No hay informacion suficiente para identificar la categoria exact
 
 ## Enlaces
 
-- [HuggingFace: Pkmntrainer32/OlaAphrodite](https://huggingface.co/Pkmntrainer32/OlaAphrodite)
+- [Hugging Face: Pkmntrainer32/OlaAphrodite](https://huggingface.co/Pkmntrainer32/OlaAphrodite)
 - [Texto de la licencia CreativeML OpenRAIL-M](https://huggingface.co/spaces/CompVis/stable-diffusion-license)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `yuvraajsingh/yuvraaj` en HuggingFace es un espacio publicado bajo licencia MIT, creado el 16 de agosto de 2026, pero que no contiene ninguna información técnica adicional. No se ha publicado una model card sustancial, ni se especifican arquitectura, parámetros, contexto, idiomas o capacidades. El número de descargas y likes es cero, lo que sugiere que se trata de un repositorio vacío, en fase de creación o un placeholder sin contenido real.
+El repositorio `yuvraajsingh/yuvraaj` en Hugging Face es un espacio publicado bajo licencia MIT, creado el 16 de agosto de 2026, pero que no contiene ninguna información técnica adicional. No se ha publicado una model card sustancial, ni se especifican arquitectura, parámetros, contexto, idiomas o capacidades. El número de descargas y likes es cero, lo que sugiere que se trata de un repositorio vacío, en fase de creación o un placeholder sin contenido real.
 
 Dada la ausencia total de especificaciones, no es posible evaluar qué problema resuelve, qué arquitectura emplea o por qué sería relevante. Cualquier uso del nombre "yuvraaj" como modelo de IA carece de sustento documental. Se recomienda precaución antes de considerar este repositorio como un modelo funcional o de integrarlo en proyectos.
 
@@ -53,4 +53,4 @@ No disponible. Al no existir especificaciones técnicas, no es posible comparar 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuvraajsingh/yuvraaj
+- Repositorio Hugging Face: https://huggingface.co/yuvraajsingh/yuvraaj

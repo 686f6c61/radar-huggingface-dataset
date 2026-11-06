@@ -6,7 +6,7 @@ bridgequant-libero-7m es un modelo de visión-lenguaje-acción (VLA) para robót
 
 Con 6.593.715 parámetros totales, es un modelo extremadamente compacto pensado para despliegue en entornos con recursos limitados y para investigación en políticas robóticas de bajo coste. Su relevancia actual reside en la tendencia hacia VLA pequeños y eficientes que puedan ejecutarse en hardware de borde, en contraste con los VLA de miles de millones de parámetros.
 
-La ficha se basa únicamente en la información disponible en HuggingFace y en la model card; los datos no publicados se marcan explícitamente como no disponibles.
+La ficha se basa únicamente en la información disponible en Hugging Face y en la model card; los datos no publicados se marcan explícitamente como no disponibles.
 
 ## Especificaciones técnicas
 
@@ -32,7 +32,7 @@ El entrenamiento se realizó desde cero sobre las cuatro suites de LIBERO, sin d
 - Control robótico de manipulación mediante políticas visión-lenguaje-acción entrenadas en LIBERO.
 - Generación de acciones condicionadas a observaciones visuales e instrucciones de tarea.
 - Ejecución de tareas de imitación en los cuatro suites de LIBERO (objetos, espacial, meta y de largo horizonte, según la nomenclatura habitual del benchmark).
-- Integración con el pipeline de robótica de HuggingFace (`pipeline: robotics`).
+- Integración con el pipeline de robótica de Hugging Face (`pipeline: robotics`).
 - Carga mediante el bundle de pesos y configuración proporcionado por el autor.
 - No se documentan capacidades de tool calling, agentes multi-paso, multilingüismo, thinking mode, visión general, audio ni otras funciones fuera del control robótico.
 
@@ -66,8 +66,8 @@ No se han publicado en la información disponible resultados desglosados por sui
 
 | Modelo | Parámetros | Contexto | LIBERO-500 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bridgequant-libero-7m | 6.593.715 | no disponible | 0,948 | other | HuggingFace |
-| bridgequant-libero-7m-kd | no disponible | no disponible | 0,967 | other | HuggingFace (variante destilada del autor) |
+| bridgequant-libero-7m | 6.593.715 | no disponible | 0,948 | other | Hugging Face |
+| bridgequant-libero-7m-kd | no disponible | no disponible | 0,967 | other | Hugging Face (variante destilada del autor) |
 | Otros VLA de referencia (p. ej. OpenVLA, π0) | no disponible en esta ficha | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos comparativos con otros VLA de la misma categoría; la única comparación documentada es con la variante destilada del propio autor.
@@ -84,5 +84,5 @@ No se dispone en la información proporcionada de datos comparativos con otros V
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/twanghcmut/bridgequant-libero-7m
+- Hugging Face: https://huggingface.co/twanghcmut/bridgequant-libero-7m
 - Código: https://github.com/VLAOpt/bridgequant-async

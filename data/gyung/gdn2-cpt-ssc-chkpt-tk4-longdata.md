@@ -78,6 +78,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gyung/gdn2-cpt-ssc-chkpt-tk4-longdata
+- Modelo en Hugging Face: https://huggingface.co/gyung/gdn2-cpt-ssc-chkpt-tk4-longdata
 - Modelo relacionado (misma serie): https://huggingface.co/gyung/gdn2-cpt-ssc-top4-longdata
 - Dataset asociado: https://huggingface.co/datasets/gyung/gdn2-cpt-longdata-30k

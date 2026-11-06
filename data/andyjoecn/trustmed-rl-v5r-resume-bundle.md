@@ -4,7 +4,7 @@
 
 TrustMed-RL v5r resume bundle es un repositorio de artefactos publicado por el usuario andyjoecn el 11 de septiembre de 2026. No contiene un modelo entrenado con pesos utilizables, sino el conjunto de punteros y ficheros auxiliares necesarios para reproducir desde cero, en un entorno limpio, el experimento de aprendizaje por refuerzo denominado v0910 (v5r) de cuatro brazos sobre el pipeline TrustMed-RL. El repositorio ocupa 2,2 GB e incluye, entre otros elementos, una copia del paquete de código `grpo_gigpo_code.tgz`, un archivo de imagenes `images_full256_v4.tar` que debe desplegarse en `/workspace/images`, y referencias a los checkpoints SFT base, al corpus de recuperacion y a la telemetria de la ronda anterior.
 
-El pipeline se apoya en checkpoints SFT derivados de Qwen3-VL-8B (`andyjoecn/TrustMed-SFT-seed1-Qwen3VL-8B` y su variante seed2) y en un corpus de recuperacion medica de 121 GB alojado en otros repositorios de HuggingFace. El entrenamiento emplea GRPO/GiGPO con un juez externo basado en `gpt-4.1-mini` para el calculo de recompensas, con un coste declarado de aproximadamente 6 dolares por brazo y 30 pasos.
+El pipeline se apoya en checkpoints SFT derivados de Qwen3-VL-8B (`andyjoecn/TrustMed-SFT-seed1-Qwen3VL-8B` y su variante seed2) y en un corpus de recuperacion medica de 121 GB alojado en otros repositorios de Hugging Face. El entrenamiento emplea GRPO/GiGPO con un juez externo basado en `gpt-4.1-mini` para el calculo de recompensas, con un coste declarado de aproximadamente 6 dolares por brazo y 30 pasos.
 
 Su relevancia es fundamentalmente operativa y de reproducibilidad: documenta por que la ronda de entrenamiento previa fallo y como relanzarla. Los cuatro brazos v0910 terminaron entre los pasos 21 y 31 por un evento etiquetado como `collapse: kl_jump`, con `best_value` entre 0,27 y 0,32, y el autor diagnostica un falso positivo del detector de colapso (el `kl_loss` derivaba de forma natural hacia 0,10-0,12 frente a una base de 0,10). No se publican pesos finales: el mejor resultado revirtio al checkpoint SFT.
 
@@ -99,7 +99,7 @@ No se dispone de datos de parametros, contexto, rendimiento ni licencia de estos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andyjoecn/TrustMed-RL-v5r-resume-bundle
+- Repositorio en Hugging Face: https://huggingface.co/andyjoecn/TrustMed-RL-v5r-resume-bundle
 - Repositorio de codigo y release referenciados en la model card: `b200-package-20260910` en `Trustmed-RL/TrustMed-RL` (GitHub); no se proporciona URL directa en la informacion disponible.
 - Checkpoint SFT base (semilla 1): https://huggingface.co/andyjoecn/TrustMed-SFT-seed1-Qwen3VL-8B
 - Checkpoint SFT base (semilla 2): https://huggingface.co/andyjoecn/TrustMed-SFT-seed2-Qwen3VL-8B (ruta indicada como `-seed2-...`)

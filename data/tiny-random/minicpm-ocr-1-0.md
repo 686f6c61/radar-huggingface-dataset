@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tiny-random/minicpm-ocr-1.0 | 7,58M | no disponible | Pruebas y depuración | no disponible | HuggingFace (repo público) |
-| openbmb/MiniCPM-OCR-1.0 | 1,30B (BF16) | no disponible | OCR multimodal en producción | no disponible | HuggingFace |
-| Otros modelos tiny-random de la familia MiniCPM | variable (M) | no disponible | Pruebas y depuración | no disponible | HuggingFace |
+| tiny-random/minicpm-ocr-1.0 | 7,58M | no disponible | Pruebas y depuración | no disponible | Hugging Face (repo público) |
+| openbmb/MiniCPM-OCR-1.0 | 1,30B (BF16) | no disponible | OCR multimodal en producción | no disponible | Hugging Face |
+| Otros modelos tiny-random de la familia MiniCPM | variable (M) | no disponible | Pruebas y depuración | no disponible | Hugging Face |
 
 La comparación relevante es con su modelo base: misma arquitectura e interfaz, pero 172 veces menos parámetros y sin entrenamiento. Frente a alternativas OCR de producción de otros autores, no se dispone de datos en la información proporcionada para establecer una comparativa de rendimiento.
 
@@ -80,7 +80,7 @@ La comparación relevante es con su modelo base: misma arquitectura e interfaz, 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/tiny-random/minicpm-ocr-1.0
+- Hugging Face del modelo: https://huggingface.co/tiny-random/minicpm-ocr-1.0
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-OCR-1.0
 - Script de creación: `.meta/create_model.py` (dentro del repo)
 - Log de estructura: `.meta/model.log` (dentro del repo)

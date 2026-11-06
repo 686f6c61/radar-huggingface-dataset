@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Leomon es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Leomon`. En el momento de redactar esta ficha, el repositorio no incluye model card sustantiva: el único contenido del README es la declaración de licencia `cc-by-4.0`. No se especifica arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
+Leomon es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Leomon`. En el momento de redactar esta ficha, el repositorio no incluye model card sustantiva: el único contenido del README es la declaración de licencia `cc-by-4.0`. No se especifica arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
 
 Los metadatos públicos indican una licencia Creative Commons Attribution 4.0, la etiqueta de región `us`, cero descargas y cero likes, y un tamaño de repositorio de 0,1 GB. El repositorio se creó y actualizó el 17 de septiembre de 2026, con aproximadamente dos minutos de diferencia entre ambos eventos, lo que sugiere una publicación sin iteraciones posteriores documentadas.
 
@@ -79,7 +79,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 | Contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | cc-by-4.0 | no disponible |
-| Disponibilidad | Repositorio en HuggingFace con 0 descargas | no disponible |
+| Disponibilidad | Repositorio en Hugging Face con 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Leomon
+- Hugging Face: https://huggingface.co/Ryanham1lton/Leomon
 - Model card: https://huggingface.co/Ryanham1lton/Leomon/blob/main/README.md
 - Paper, blog o repositorio de código asociado: no disponible
 - Demo o espacio de inferencia: no disponible

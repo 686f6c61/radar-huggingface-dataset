@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pmoller/trossen_demo_model` es un modelo de lenguaje publicado en HuggingFace por el usuario pmoller bajo un identificador que sugiere un uso demostrativo ("demo model"), posiblemente vinculado al fabricante de brazos roboticos Trossen Robotics. El repositorio contiene pesos en formato safetensors con un total de 4.143.404.816 parametros (aproximadamente 4,14 mil millones), lo que lo situa en la categoria de modelos de tamano medio, comparable a familias como Phi-3, Qwen2.5-3B o Llama-3.2-3B.
+`pmoller/trossen_demo_model` es un modelo de lenguaje publicado en Hugging Face por el usuario pmoller bajo un identificador que sugiere un uso demostrativo ("demo model"), posiblemente vinculado al fabricante de brazos roboticos Trossen Robotics. El repositorio contiene pesos en formato safetensors con un total de 4.143.404.816 parametros (aproximadamente 4,14 mil millones), lo que lo situa en la categoria de modelos de tamano medio, comparable a familias como Phi-3, Qwen2.5-3B o Llama-3.2-3B.
 
 La ficha del modelo carece de metadatos esenciales: no se declara pipeline, licencia, idiomas soportados ni arquitectura. El repositorio ocupa 49,3 GB, un tamano desproporcionado para 4,14 mil millones de parametros en precision completa (que rondaria los 8,3 GB en FP16 y 16,6 GB en FP32), lo que sugiere la presencia de multiples checkpoints, estados de optimizador, pesos duplicados o artefactos de entrenamiento adicionales en el repositorio.
 
@@ -45,7 +45,7 @@ Dado que no existe documentacion funcional, los casos de uso son hipoteticos y d
 - Evaluacion comparativa de modelos de ~4B: el modelo puede servir como punto de comparacion en estudios de escalado o ablaciones, dado su tamano intermedio y su disponibilidad publica en safetensors.
 - Prototipado de pipelines de inferencia: util para probar infraestructura (vLLM, TGI, llama.cpp) con un checkpoint de 4B antes de migrar a modelos mayores.
 - Investigacion en robotica (hipotesis): si el modelo esta vinculado a Trossen Robotics, podria emplearse para generar instrucciones en lenguaje natural en flujos de teleoperacion o planificacion de tareas, aunque requeriria validacion previa.
-- Fines educativos: analisis de la estructura de un repositorio safetensors de 4B parametros y de las practicas de publicacion en HuggingFace.
+- Fines educativos: analisis de la estructura de un repositorio safetensors de 4B parametros y de las practicas de publicacion en Hugging Face.
 - Pruebas de cuantizacion: conversion a GGUF/AWQ/GPTQ para medir degradacion de calidad en un modelo sin documentacion de referencia.
 - Auditoria de seguridad y sesgos: analisis de un artefacto sin model card para ilustrar riesgos de publicacion de modelos sin metadatos.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pmoller/trossen_demo_model | ~4,14B | no disponible | no disponible | HuggingFace (8 descargas) |
-| Phi-3-mini (Microsoft) | 3,8B | 4K / 128K (variante) | MIT | HuggingFace, ampliamente documentado |
-| Qwen2.5-3B (Alibaba) | 3,09B | 32K (hasta 128K en variantes) | Apache 2.0 (mayoria de variantes) | HuggingFace, documentacion completa |
-| Llama-3.2-3B (Meta) | 3,21B | 128K | Llama 3.2 Community License | HuggingFace, gated |
+| pmoller/trossen_demo_model | ~4,14B | no disponible | no disponible | Hugging Face (8 descargas) |
+| Phi-3-mini (Microsoft) | 3,8B | 4K / 128K (variante) | MIT | Hugging Face, ampliamente documentado |
+| Qwen2.5-3B (Alibaba) | 3,09B | 32K (hasta 128K en variantes) | Apache 2.0 (mayoria de variantes) | Hugging Face, documentacion completa |
+| Llama-3.2-3B (Meta) | 3,21B | 128K | Llama 3.2 Community License | Hugging Face, gated |
 
 La comparacion es estructural: los tres modelos de referencia cuentan con model cards detalladas, benchmarks publicados y licencias claras, mientras que `trossen_demo_model` carece de todos esos elementos. No es posible comparar rendimiento sin datos de evaluacion.
 
@@ -87,6 +87,6 @@ La comparacion es estructural: los tres modelos de referencia cuentan con model 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pmoller/trossen_demo_model
+- Hugging Face: https://huggingface.co/pmoller/trossen_demo_model
 - Trossen Robotics (posible entidad relacionada, no confirmada): https://www.trossenrobotics.com
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

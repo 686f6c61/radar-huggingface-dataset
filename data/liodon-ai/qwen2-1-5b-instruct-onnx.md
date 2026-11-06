@@ -69,6 +69,6 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: [liodon-ai/Qwen2-1.5B-Instruct-ONNX](https://huggingface.co/liodon-ai/Qwen2-1.5B-Instruct-ONNX)
-- Modelo base en HuggingFace: [Qwen/Qwen2-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2-1.5B-Instruct)
+- Repositorio Hugging Face del modelo: [liodon-ai/Qwen2-1.5B-Instruct-ONNX](https://huggingface.co/liodon-ai/Qwen2-1.5B-Instruct-ONNX)
+- Modelo base en Hugging Face: [Qwen/Qwen2-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2-1.5B-Instruct)
 - Documentacion de optimum (herramienta de exportacion): [Optimum](https://github.com/huggingface/optimum)

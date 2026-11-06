@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`bn22/CLIP-ViT-B-32-OTHER` es un checkpoint de CLIP (Contrastive Language-Image Pre-training) publicado en HuggingFace por el usuario `bn22`. El modelo emplea la arquitectura ViT-B/32, es decir, un Vision Transformer con parches de 32x32 píxeles como codificador de imagen, acoplado a un codificador de texto tipo transformer, y está entrenado con el objetivo contrastivo original de CLIP descrito en el paper arXiv:1910.09700 (Radford et al., 2021). El pipeline declarado en el Hub es `zero-shot-image-classification`.
+`bn22/CLIP-ViT-B-32-OTHER` es un checkpoint de CLIP (Contrastive Language-Image Pre-training) publicado en Hugging Face por el usuario `bn22`. El modelo emplea la arquitectura ViT-B/32, es decir, un Vision Transformer con parches de 32x32 píxeles como codificador de imagen, acoplado a un codificador de texto tipo transformer, y está entrenado con el objetivo contrastivo original de CLIP descrito en el paper arXiv:1910.09700 (Radford et al., 2021). El pipeline declarado en el Hub es `zero-shot-image-classification`.
 
-El modelo cuenta con 153.639.680 parámetros totales según los pesos en safetensors, y el repositorio ocupa 1,2 GB. Está etiquetado con `transformers`, `safetensors`, `clip`, `endpoints_compatible` y `region:us`. La model card es la plantilla automática de HuggingFace sin rellenar, por lo que no hay información del autor sobre datos de entrenamiento, licencia, idiomas ni procedencia de los pesos.
+El modelo cuenta con 153.639.680 parámetros totales según los pesos en safetensors, y el repositorio ocupa 1,2 GB. Está etiquetado con `transformers`, `safetensors`, `clip`, `endpoints_compatible` y `region:us`. La model card es la plantilla automática de Hugging Face sin rellenar, por lo que no hay información del autor sobre datos de entrenamiento, licencia, idiomas ni procedencia de los pesos.
 
 La relevancia de esta ficha es limitada: se trata de un checkpoint derivado de la arquitectura CLIP estándar, con 20 descargas y 0 likes en el momento de la consulta, sin documentación propia. El sufijo `OTHER` en el nombre sugiere que el autor lo emplea como variante de trabajo o checkpoint auxiliar, pero no se puede confirmar a partir de la información disponible. Cualquier uso en producción debería partir de la implementación de referencia de CLIP en `transformers` y validar empíricamente el comportamiento del checkpoint.
 
@@ -65,16 +65,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto texto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `bn22/CLIP-ViT-B-32-OTHER` | 153,6 M | no disponible | no disponible | HuggingFace (20 descargas) |
-| `openai/clip-vit-base-patch32` | ~151 M | 77 tokens | MIT (según repositorio de OpenAI) | HuggingFace, ampliamente usado |
-| `openai/clip-vit-base-patch16` | ~149 M | 77 tokens | MIT | HuggingFace |
-| `laion/CLIP-ViT-B-32-laion2B-s34B-b79K` | ~151 M | 77 tokens | MIT (según model card de LAION) | HuggingFace |
+| `bn22/CLIP-ViT-B-32-OTHER` | 153,6 M | no disponible | no disponible | Hugging Face (20 descargas) |
+| `openai/clip-vit-base-patch32` | ~151 M | 77 tokens | MIT (según repositorio de OpenAI) | Hugging Face, ampliamente usado |
+| `openai/clip-vit-base-patch16` | ~149 M | 77 tokens | MIT | Hugging Face |
+| `laion/CLIP-ViT-B-32-laion2B-s34B-b79K` | ~151 M | 77 tokens | MIT (según model card de LAION) | Hugging Face |
 
 La comparación se limita a parámetros y disponibilidad porque no hay benchmarks publicados para el checkpoint de `bn22`. La diferencia práctica frente a los pesos oficiales de OpenAI o LAION es la trazabilidad: los checkpoints de referencia tienen model cards documentadas, licencia declarada y evaluaciones reproducibles, mientras que este checkpoint no aporta ninguna de las tres.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla automática de HuggingFace sin rellenar: no hay información sobre datos de entrenamiento, procedencia de los pesos ni metodología.
+- La model card es la plantilla automática de Hugging Face sin rellenar: no hay información sobre datos de entrenamiento, procedencia de los pesos ni metodología.
 - Licencia no declarada: no se puede asumir uso comercial permitido; hay que contactar con el autor o descartar el checkpoint para producción.
 - Idiomas no documentados: el codificador de texto de CLIP estándar está entrenado principalmente en inglés; el rendimiento en castellano u otros idiomas no está verificado.
 - Riesgo de sesgos heredados del corpus de entrenamiento original de CLIP (sesgos de género, raza y geografía documentados en la literatura sobre CLIP), agravado por la falta de información sobre posibles fine-tunings.
@@ -86,7 +86,7 @@ La comparación se limita a parámetros y disponibilidad porque no hay benchmark
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bn22/CLIP-ViT-B-32-OTHER
+- Hugging Face: https://huggingface.co/bn22/CLIP-ViT-B-32-OTHER
 - Paper original de CLIP: https://arxiv.org/abs/1910.09700
 - Implementación de referencia en transformers: https://huggingface.co/docs/transformers/model_doc/clip
 - Pesos oficiales de OpenAI (referencia): https://huggingface.co/openai/clip-vit-base-patch32

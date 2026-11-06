@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`juliarjoj/swin-t-classification-practice68` es un repositorio de HuggingFace publicado por el usuario `juliarjoj` que contiene una implementación de una Swin Transformer (Swin T) orientada a tareas de clasificación. Segun la propia model card, se trata de un artefacto experimental pensado para "smoke tests" reproducibles y para servir como punto de partida transparente, no como un modelo entrenado listo para producción. El autor declara explicitamente que el checkpoint `model.safetensors` es una inicializacion valida, no un modelo entrenado ni evaluado.
+`juliarjoj/swin-t-classification-practice68` es un repositorio de Hugging Face publicado por el usuario `juliarjoj` que contiene una implementación de una Swin Transformer (Swin T) orientada a tareas de clasificación. Segun la propia model card, se trata de un artefacto experimental pensado para "smoke tests" reproducibles y para servir como punto de partida transparente, no como un modelo entrenado listo para producción. El autor declara explicitamente que el checkpoint `model.safetensors` es una inicializacion valida, no un modelo entrenado ni evaluado.
 
 El dato mas relevante es la discrepancia entre la nomenclatura y la realidad tecnica: aunque la configuracion interna se etiqueta como "xlarge", el recuento real de parametros del archivo `safetensors` es de unicamente 49.600 parametros, lo que lo aleja por completo de una Swin-T convencional (que ronda los 28 millones de parametros). Esto confirma que se trata de un repositorio de practica o prueba de concepto, con codigo funcional pero sin pesos entrenados.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| juliarjoj/swin-t-classification-practice68 | 49.600 (inicializacion) | Clasificacion (sin entrenar) | bsd-3-clause | HuggingFace, 0 descargas |
-| Swin-T oficial (microsoft/swin-tiny-patch4-window7-224) | ~28 M | Clasificacion ImageNet-1k (entrenado) | MIT (repositorio de referencia) | HuggingFace, ampliamente usado |
-| Alternativa comparable de clasificacion (p. ej. ViT-base) | ~86 M | Clasificacion de imagenes | variable segun checkpoint | HuggingFace |
+| juliarjoj/swin-t-classification-practice68 | 49.600 (inicializacion) | Clasificacion (sin entrenar) | bsd-3-clause | Hugging Face, 0 descargas |
+| Swin-T oficial (microsoft/swin-tiny-patch4-window7-224) | ~28 M | Clasificacion ImageNet-1k (entrenado) | MIT (repositorio de referencia) | Hugging Face, ampliamente usado |
+| Alternativa comparable de clasificacion (p. ej. ViT-base) | ~86 M | Clasificacion de imagenes | variable segun checkpoint | Hugging Face |
 
 No se dispone de datos de rendimiento para el modelo descrito, por lo que la comparacion se limita a tamano, licencia y estado de entrenamiento. El repositorio analizado no es funcionalmente comparable con Swin-T oficial ni con ViT porque carece de pesos entrenados.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento para el modelo descrito, por lo que la com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juliarjoj/swin-t-classification-practice68
+- Modelo en Hugging Face: https://huggingface.co/juliarjoj/swin-t-classification-practice68
 - Articulo original de Swin Transformer (referencia de la arquitectura, no citado en el repositorio): no disponible en la informacion proporcionada
 - Repositorio de codigo: no disponible (los archivos `main.py`, `config.json` y `training_args.json` se mencionan en la model card, pero no se aportan enlaces externos)
 - Demo o paper especifico del autor: no disponible

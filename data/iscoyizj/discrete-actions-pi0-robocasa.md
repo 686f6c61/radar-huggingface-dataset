@@ -74,9 +74,9 @@ Observaciones del autor: la SD es sobre semillas de evaluación de un mismo chec
 
 | Modelo | Parámetros | Contexto | Rendimiento RoboCasa365 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| discrete-actions-pi0-robocasa (DFlow) | 2,92B + ~370M | instrucción 48 tokens | 53,2 ± 2,5 | Gemma | HuggingFace |
-| discrete-actions-pi0-robocasa (CFlow) | 2,92B + ~370M | instrucción 48 tokens | 52,4 ± 2,4 | Gemma | HuggingFace |
-| lerobot/pi0_base | no disponible en la información | no disponible | no disponible | no disponible | HuggingFace |
+| discrete-actions-pi0-robocasa (DFlow) | 2,92B + ~370M | instrucción 48 tokens | 53,2 ± 2,5 | Gemma | Hugging Face |
+| discrete-actions-pi0-robocasa (CFlow) | 2,92B + ~370M | instrucción 48 tokens | 52,4 ± 2,4 | Gemma | Hugging Face |
+| lerobot/pi0_base | no disponible en la información | no disponible | no disponible | no disponible | Hugging Face |
 | Otras políticas VLA comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada solo permite comparar entre las cuatro cabezas del propio repo y contra el checkpoint base `lerobot/pi0_base`, del que no se detallan métricas. No se dispone de datos de benchmarks de alternativas como OpenVLA, π0 estándar u otras políticas RoboCasa en esta ficha.
@@ -97,7 +97,7 @@ La información proporcionada solo permite comparar entre las cuatro cabezas del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iscoyizj/discrete-actions-pi0-robocasa
+- Modelo en Hugging Face: https://huggingface.co/iscoyizj/discrete-actions-pi0-robocasa
 - Artículo: https://arxiv.org/abs/2610.20429
 - Página del proyecto: https://iscoyizj.github.io/discrete-action-website/
 - Modelo base: https://huggingface.co/lerobot/pi0_base

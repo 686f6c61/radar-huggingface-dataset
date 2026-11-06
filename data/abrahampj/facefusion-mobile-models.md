@@ -84,7 +84,7 @@ No se dispone de informacion sobre modelos comparables en el mismo segmento (fac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AbrahamPJ/facefusion-mobile-models
+- Repositorio Hugging Face: https://huggingface.co/AbrahamPJ/facefusion-mobile-models
 - Proyecto FaceFusion Mobile (GitHub): https://github.com/AbrahamPaulJ/facefusion-mobile
 - Proyecto FaceFusion original (GitHub): https://github.com/facefusion/facefusion
 - Sitio oficial de FaceFusion: https://facefusion.io/

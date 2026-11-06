@@ -6,7 +6,7 @@ Bonsai-8B-mlx-1bit es la version cuantizada a 1 bit del modelo Bonsai-8B de Pris
 
 El modelo resuelve el problema de ejecutar un LLM de 8B en hardware de consumo y movil: cabe comodamente en cualquier Mac y en iPhone o iPad, y alcanza 44 tokens por segundo en iPhone y una mejora de 8,4x en velocidad sobre un M4 Pro respecto a la version de precision completa. La relevancia actual reside en que un modelo de 8B cuantizado a 1 bit de extremo a extremo puede mantener un rendimiento agregado competitivo (70,5 de media en 6 categorias de evaluacion segun el autor) manteniendo una ventana de contexto de 65.536 tokens.
 
-El repositorio de HuggingFace analizado (Oscilla/Bonsai-8B-mlx-1bit) es una publicacion del modelo original de Prism ML (prism-ml/Bonsai-8B-mlx-1bit), cuyo modelo base sin empaquetar es prism-ml/Bonsai-8B-unpacked. Se distribuye bajo licencia Apache 2.0 y existe una version complementaria en GGUF Q1_0_g128 para llama.cpp.
+El repositorio de Hugging Face analizado (Oscilla/Bonsai-8B-mlx-1bit) es una publicacion del modelo original de Prism ML (prism-ml/Bonsai-8B-mlx-1bit), cuyo modelo base sin empaquetar es prism-ml/Bonsai-8B-unpacked. Se distribuye bajo licencia Apache 2.0 y existe una version complementaria en GGUF Q1_0_g128 para llama.cpp.
 
 ## Especificaciones tecnicas
 
@@ -75,10 +75,10 @@ La model card unicamente declara una puntuacion media agregada de 70,5 en 6 cate
 
 | Modelo | Parametros | Contexto | Formato / tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bonsai-8B-mlx-1bit | 8,19B (~6,95B sin embeddings) | 65.536 | MLX 1-bit g128 (1,28 GB) | Apache 2.0 | HuggingFace (repo Oscilla y repos Prism ML) |
+| Bonsai-8B-mlx-1bit | 8,19B (~6,95B sin embeddings) | 65.536 | MLX 1-bit g128 (1,28 GB) | Apache 2.0 | Hugging Face (repo Oscilla y repos Prism ML) |
 | Bonsai-8B (FP16, base) | 8,19B | 65.536 | safetensors FP16 (16,38 GB) | Apache 2.0 | prism-ml/Bonsai-8B-unpacked |
 | Bonsai-8B-gguf | 8,19B | 65.536 | GGUF Q1_0_g128 (1,15 GB) | Apache 2.0 | prism-ml/Bonsai-8B-gguf |
-| Qwen3-8B (original) | 8,19B | 65.536 | safetensors FP16 / BF16 | Apache 2.0 | HuggingFace (Qwen) |
+| Qwen3-8B (original) | 8,19B | 65.536 | safetensors FP16 / BF16 | Apache 2.0 | Hugging Face (Qwen) |
 
 La informacion disponible no incluye comparativas de rendimiento frente a otros modelos de 8B cuantizados a 2, 3 o 4 bits (por ejemplo, variantes GGUF Q4_K_M), por lo que no es posible cuantificar la perdida de calidad frente a esas alternativas.
 
@@ -96,7 +96,7 @@ La informacion disponible no incluye comparativas de rendimiento frente a otros 
 
 ## Enlaces
 
-- HuggingFace (repo analizado): https://huggingface.co/Oscilla/Bonsai-8B-mlx-1bit
+- Hugging Face (repo analizado): https://huggingface.co/Oscilla/Bonsai-8B-mlx-1bit
 - Modelo base sin empaquetar: https://huggingface.co/prism-ml/Bonsai-8B-unpacked
 - Version GGUF Q1_0_g128: https://huggingface.co/prism-ml/Bonsai-8B-gguf
 - Web de Prism ML: https://prismml.com

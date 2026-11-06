@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordansky/env_bossf_a6d4eb27` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, una versión optimizada del Llama 3.1 de 8 mil millones de parámetros. El autor, Jordansky (Ilfan Aulia Nur Pagi), ha publicado este adaptador en HuggingFace con la librería PEFT, lo que indica que está diseñado para ser cargado como un módulo adicional sobre el modelo base, no como un modelo independiente.
+El modelo `Jordansky/env_bossf_a6d4eb27` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, una versión optimizada del Llama 3.1 de 8 mil millones de parámetros. El autor, Jordansky (Ilfan Aulia Nur Pagi), ha publicado este adaptador en Hugging Face con la librería PEFT, lo que indica que está diseñado para ser cargado como un módulo adicional sobre el modelo base, no como un modelo independiente.
 
 La ficha oficial del modelo está prácticamente vacía: no se especifican datos de entrenamiento, hiperparámetros, licencia, idiomas ni casos de uso previstos. El repositorio tiene un tamaño de 2.7 GB, lo que sugiere que podría contener los pesos del adaptador en formato safetensors, aunque no se puede confirmar si se trata de un LoRA de gran tamaño o de un checkpoint completo. El modelo se creó el 30 de agosto de 2026 y no registra descargas ni valoraciones, por lo que su relevancia actual es limitada y su calidad no ha sido validada por la comunidad.
 
@@ -25,7 +25,7 @@ Dado que el modelo base es Llama 3.1 Instruct, el adaptador hereda las capacidad
 
 El modelo es un adaptador LoRA entrenado con fine-tuning supervisado (SFT) sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`. La arquitectura subyacente es la de Llama 3.1, un transformer decoder-only con atención multi-cabeza, normalización RMSNorm, activación SwiGLU y embeddings rotatorios (RoPE). El modelo base tiene 8 mil millones de parámetros y una ventana de contexto de 128k tokens, aunque el adaptador puede no aprovechar completamente esta longitud si no se ha entrenado con secuencias largas.
 
-No se dispone de información sobre el dataset de entrenamiento, el número de tokens utilizados, la composición de los datos ni si se aplicaron técnicas adicionales como RLHF o DPO. Los tags indican el uso de las librerías `transformers`, `trl` y `peft` (versión 0.18.1), lo que sugiere que el entrenamiento se realizó con el flujo estándar de fine-tuning de HuggingFace, probablemente con el `SFTTrainer` de TRL. No se mencionan innovaciones técnicas destacables más allá del uso de LoRA como método de ajuste eficiente.
+No se dispone de información sobre el dataset de entrenamiento, el número de tokens utilizados, la composición de los datos ni si se aplicaron técnicas adicionales como RLHF o DPO. Los tags indican el uso de las librerías `transformers`, `trl` y `peft` (versión 0.18.1), lo que sugiere que el entrenamiento se realizó con el flujo estándar de fine-tuning de Hugging Face, probablemente con el `SFTTrainer` de TRL. No se mencionan innovaciones técnicas destacables más allá del uso de LoRA como método de ajuste eficiente.
 
 ## Capacidades
 
@@ -64,9 +64,9 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Jordansky/env_bossf_a6d4eb27 | No disponible (adaptador LoRA) | No disponible | No disponible | HuggingFace |
-| unsloth/Meta-Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | HuggingFace |
-| Otros adaptadores LoRA de Llama 3.1 | Variable | Variable | Variable | HuggingFace |
+| Jordansky/env_bossf_a6d4eb27 | No disponible (adaptador LoRA) | No disponible | No disponible | Hugging Face |
+| unsloth/Meta-Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | Hugging Face |
+| Otros adaptadores LoRA de Llama 3.1 | Variable | Variable | Variable | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -79,6 +79,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jordansky/env_bossf_a6d4eb27
+- Modelo en Hugging Face: https://huggingface.co/Jordansky/env_bossf_a6d4eb27
 - Perfil del autor: https://huggingface.co/Jordansky
 - Otro modelo del autor (referencia): https://huggingface.co/Jordansky/f6782145-boss

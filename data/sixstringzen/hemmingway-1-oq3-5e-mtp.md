@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Precision / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hemmingway-1-oQ3.5e-mtp (esta ficha) | 27,3 mil millones | No disponible | oQ3.5e, 3 bits de base con mezcla hasta 8 bits; safetensors MLX | Apache 2.0 | HuggingFace; 0 descargas, 0 likes |
-| Altworld/Hemmingway-1 (modelo fuente) | 27,3 mil millones (misma base) | No disponible | BF16 original, antes de cuantizar | Apache 2.0 | HuggingFace |
+| Hemmingway-1-oQ3.5e-mtp (esta ficha) | 27,3 mil millones | No disponible | oQ3.5e, 3 bits de base con mezcla hasta 8 bits; safetensors MLX | Apache 2.0 | Hugging Face; 0 descargas, 0 likes |
+| Altworld/Hemmingway-1 (modelo fuente) | 27,3 mil millones (misma base) | No disponible | BF16 original, antes de cuantizar | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones de contexto para establecer comparaciones con otros modelos de la misma categoria. La busqueda web realizada no devolvio informacion relevante sobre el modelo ni sobre su familia arquitectonica, por lo que no se pueden aportar alternativas comparables con datos verificables.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento ni de especificaciones de contexto para es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sixstringzen/Hemmingway-1-oQ3.5e-mtp
+- Repositorio Hugging Face: https://huggingface.co/sixstringzen/Hemmingway-1-oQ3.5e-mtp
 - Modelo base: https://huggingface.co/Altworld/Hemmingway-1
 - Informe de cuantizacion e imatrix: https://huggingface.co/sixstringzen/Hemmingway-1-oQ3.5e-mtp/blob/main/oq_imatrix_report.json
 - Cuantizador oMLX: https://github.com/jundot/omlx

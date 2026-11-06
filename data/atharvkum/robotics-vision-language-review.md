@@ -80,6 +80,6 @@ No disponible. Este repositorio no es comparable con modelos de vision-lenguaje 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AtharvKum/robotics-vision-language-review
+- Hugging Face: https://huggingface.co/AtharvKum/robotics-vision-language-review
 - Archivo principal de notas: `notes.md` (referenciado en la model card del repositorio)
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada

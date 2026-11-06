@@ -73,7 +73,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. El modelo base
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Atomic-Germ/Remember-R1-3B-NPU2
+- Repositorio Hugging Face del modelo: https://huggingface.co/Atomic-Germ/Remember-R1-3B-NPU2
 - Modelo base (JM-Chen/Remember-R1-3B): https://huggingface.co/JM-Chen/Remember-R1-3B
 - Repositorio GitHub de Remember-R1: https://github.com/Ch921-cell/Remember-R1
 - Paper de Remember-R1 (arXiv): https://arxiv.org/html/2608.01314

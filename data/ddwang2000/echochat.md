@@ -87,8 +87,8 @@ No se dispone de datos verificados de parametros, contexto ni rendimiento de las
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ddwang2000/EchoChat
-- Perfil del autor en HuggingFace: https://huggingface.co/ddwang2000/datasets
+- Hugging Face: https://huggingface.co/ddwang2000/EchoChat
+- Perfil del autor en Hugging Face: https://huggingface.co/ddwang2000/datasets
 - Repositorio de referencia sobre modelos gratuitos: https://github.com/ClawLabsAI/free-ai-models
 - Catalogo de modelos abiertos: https://huggingbay.xyz/
 - Calendario de lanzamientos de modelos: https://www.scriptbyai.com/ai-model-release-calendar/

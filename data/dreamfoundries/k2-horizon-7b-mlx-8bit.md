@@ -70,7 +70,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DreamFoundries/K2-Horizon-7B-MLX-8bit
+- Hugging Face: https://huggingface.co/DreamFoundries/K2-Horizon-7B-MLX-8bit
 - Modelo original: https://huggingface.co/IFM/K2-Horizon-7B
 - MLXHub: https://mlxhub.app/open-model?repo=DreamFoundries/K2-Horizon-7B-MLX-8bit
 - Colección K2-Horizon: https://huggingface.co/collections/abenzerps/k2-horizon

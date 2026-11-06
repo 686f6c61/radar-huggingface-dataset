@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Sarita9115/BERT-AG_news-HF-feature_based` es un modelo publicado en HuggingFace por el usuario Sarita9115. Por el propio identificador del repositorio, se trata de un modelo basado en BERT orientado a la clasificación de noticias del conjunto de datos AG News, empleando un enfoque de tipo *feature-based* (uso de representaciones congeladas en lugar de ajuste fino completo de todos los pesos). La model card publicada no incluye ninguna descripción adicional: unicamente contiene la declaracion de licencia `apache-2.0`.
+`Sarita9115/BERT-AG_news-HF-feature_based` es un modelo publicado en Hugging Face por el usuario Sarita9115. Por el propio identificador del repositorio, se trata de un modelo basado en BERT orientado a la clasificación de noticias del conjunto de datos AG News, empleando un enfoque de tipo *feature-based* (uso de representaciones congeladas en lugar de ajuste fino completo de todos los pesos). La model card publicada no incluye ninguna descripción adicional: unicamente contiene la declaracion de licencia `apache-2.0`.
 
 El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (26 de septiembre de 2026), lo que sugiere una publicacion reciente y sin traccion conocida en la comunidad. No consta pipeline declarado, ni idiomas soportados, ni informacion sobre la variante concreta de BERT empleada, el numero de parametros o el procedimiento de entrenamiento seguido.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Sarita9115/BERT-AG_news-HF-feature_based | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| Sarita9115/BERT-AG_news-HF-feature_based | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Checkpoints publicos de clasificacion de AG News basados en BERT (por ejemplo, los distribuidos por la comunidad `textattack` o variantes DistilBERT ajustadas para AG News) | entorno a 66-110 millones segun variante | 512 tokens en las variantes BERT estandar | variable segun repositorio, habitualmente Apache 2.0 o MIT | ampliamente disponibles |
 | Modelos de clasificacion zero-shot como BART-large-MNLI | aproximadamente 400 millones | 1024 tokens | MIT | ampliamente disponibles |
 
@@ -82,6 +82,6 @@ No se dispone de datos verificados de rendimiento para este repositorio, por lo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sarita9115/BERT-AG_news-HF-feature_based
+- Hugging Face: https://huggingface.co/Sarita9115/BERT-AG_news-HF-feature_based
 - Los resultados de la busqueda web realizada no contienen ningun enlace relacionado con el modelo: todas las entradas devueltas corresponden a sitios de chat ajenos al objeto de esta ficha.
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la informacion disponible.

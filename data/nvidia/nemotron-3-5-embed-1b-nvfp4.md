@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron-3.5-Embed-1B-NVFP4 | 1,55 B | 32.768 | NVFP4 (compressed-tensors) | OpenMDW-1.1 | HuggingFace, vLLM, NIM |
-| Nemotron-3.5-Embed-1B-BF16 | 1,55 B (mismo espacio de embeddings) | 32.768 | BF16 | OpenMDW-1.1 | HuggingFace, NIM |
-| Nemotron-3.5-Embed-8B-BF16 | 8 B (profesor del destilado) | no disponible | BF16 | OpenMDW-1.1 | HuggingFace |
-| Nemotron-3-Embed-1B-BF16 | 1 B (inicialización del LM) | no disponible | BF16 | no disponible | HuggingFace |
+| Nemotron-3.5-Embed-1B-NVFP4 | 1,55 B | 32.768 | NVFP4 (compressed-tensors) | OpenMDW-1.1 | Hugging Face, vLLM, NIM |
+| Nemotron-3.5-Embed-1B-BF16 | 1,55 B (mismo espacio de embeddings) | 32.768 | BF16 | OpenMDW-1.1 | Hugging Face, NIM |
+| Nemotron-3.5-Embed-8B-BF16 | 8 B (profesor del destilado) | no disponible | BF16 | OpenMDW-1.1 | Hugging Face |
+| Nemotron-3-Embed-1B-BF16 | 1 B (inicialización del LM) | no disponible | BF16 | no disponible | Hugging Face |
 
 La comparación relevante es interna a la familia: el 1B-NVFP4 ocupa aproximadamente un tercio del espacio del 1B-BF16 y comparte espacio de embeddings con él, mientras que el 8B actúa como profesor y ofrece mayor capacidad a costa de más VRAM. No se dispone de métricas de recuperación publicadas para establecer una comparación cuantitativa entre las tres variantes.
 
@@ -90,7 +90,7 @@ La comparación relevante es interna a la familia: el 1B-NVFP4 ocupa aproximadam
 
 ## Enlaces
 
-- Modelo en HuggingFace (NVFP4): https://huggingface.co/nvidia/Nemotron-3.5-Embed-1B-NVFP4
+- Modelo en Hugging Face (NVFP4): https://huggingface.co/nvidia/Nemotron-3.5-Embed-1B-NVFP4
 - Modelo base BF16: https://huggingface.co/nvidia/Nemotron-3.5-Embed-1B-BF16
 - Variante 8B BF16: https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16
 - Modelo de inicialización del LM: https://huggingface.co/nvidia/Nemotron-3-Embed-1B-BF16

@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Resolución | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Comfy-Org/sigclip_vision_384 | ViT patch14 | 384x384 | no disponible | no disponible | HuggingFace, safetensors |
-| OpenAI CLIP ViT-L/14 | ViT patch14 | 224x224 | no disponible | MIT (conocimiento general) | HuggingFace, safetensors |
-| Google SigLIP (original) | ViT | 384x384 | no disponible | Apache 2.0 (conocimiento general) | HuggingFace |
+| Comfy-Org/sigclip_vision_384 | ViT patch14 | 384x384 | no disponible | no disponible | Hugging Face, safetensors |
+| OpenAI CLIP ViT-L/14 | ViT patch14 | 224x224 | no disponible | MIT (conocimiento general) | Hugging Face, safetensors |
+| Google SigLIP (original) | ViT | 384x384 | no disponible | Apache 2.0 (conocimiento general) | Hugging Face |
 
 Nota: los datos de OpenAI CLIP y SigLIP original provienen de conocimiento general y no de la información proporcionada en este repositorio. No se incluyen datos de rendimiento de ninguno de los modelos por no estar disponibles en la información suministrada.
 
@@ -74,5 +74,5 @@ Nota: los datos de OpenAI CLIP y SigLIP original provienen de conocimiento gener
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Comfy-Org/sigclip_vision_384
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/sigclip_vision_384
 - Ejemplo Flux Redux de ComfyUI: https://comfyanonymous.github.io/ComfyUI_examples/flux/#redux

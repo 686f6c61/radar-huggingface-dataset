@@ -75,7 +75,7 @@ La diferencia principal de este modelo es su formato MLX cuantizado, que lo hace
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Giniiki/FastWan2.2-TI2V-5B-mlx-q8
+- Modelo en Hugging Face: https://huggingface.co/Giniiki/FastWan2.2-TI2V-5B-mlx-q8
 - Modelo base (Diffusers): https://huggingface.co/FastVideo/FastWan2.2-TI2V-5B-FullAttn-Diffusers
 - Modelo original Wan 2.2 TI2V-5B: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Repositorio FastVideo (incluye soporte MLX): https://github.com/hao-ai-lab/FastVideo

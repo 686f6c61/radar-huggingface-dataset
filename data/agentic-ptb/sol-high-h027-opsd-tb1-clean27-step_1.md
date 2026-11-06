@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h027.opsd-tb1-clean27.step_1
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h027.opsd-tb1-clean27.step_1
 - GitHub Agentic-OPSD (EcthelionLiu): https://github.com/EcthelionLiu/Agentic-OPSD
 - GitHub OPSD (siyan-zhao): https://github.com/siyan-zhao/OPSD
 - Página de GPT-5.6 de OpenAI: https://openai.com/index/gpt-5-6/

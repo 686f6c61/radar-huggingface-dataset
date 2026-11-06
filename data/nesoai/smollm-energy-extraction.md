@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`nesoai/smollm-energy-extraction` es un adaptador LoRA publicado en HuggingFace por el usuario `nesoai`, entrenado sobre el modelo base `HuggingFaceTB/SmolLM-360M-Instruct`. Por los tags del repositorio (`peft`, `lora`, `safetensors`, `text-generation`) se trata de un ajuste fino parametrizado eficiente, no de un modelo completo: el artefacto distribuido contiene únicamente los pesos del adaptador, que deben combinarse con el modelo base para poder ejecutar inferencia. El nombre sugiere una especialización en extracción de informacion relacionada con energia (posiblemente entidades, magnitudes o clausulas de documentos del sector energetico), pero no hay ninguna descripcion que lo confirme.
+`nesoai/smollm-energy-extraction` es un adaptador LoRA publicado en Hugging Face por el usuario `nesoai`, entrenado sobre el modelo base `HuggingFaceTB/SmolLM-360M-Instruct`. Por los tags del repositorio (`peft`, `lora`, `safetensors`, `text-generation`) se trata de un ajuste fino parametrizado eficiente, no de un modelo completo: el artefacto distribuido contiene únicamente los pesos del adaptador, que deben combinarse con el modelo base para poder ejecutar inferencia. El nombre sugiere una especialización en extracción de informacion relacionada con energia (posiblemente entidades, magnitudes o clausulas de documentos del sector energetico), pero no hay ninguna descripcion que lo confirme.
 
-La relevancia actual del artefacto es limitada y debe senalarse con claridad: el repositorio tiene 0 descargas y 0 likes, fue creado el 16 de septiembre de 2026 y su tamano declarado es de 0.0 GB, lo que apunta a que los pesos no estan subidos o a que el repositorio contiene solo metadatos y ficheros de configuracion. La model card es la plantilla por defecto de HuggingFace, con todos los campos marcados como `[More Information Needed]`, incluidos desarrollador, licencia, idiomas, datos de entrenamiento, hiperparametros y evaluacion.
+La relevancia actual del artefacto es limitada y debe senalarse con claridad: el repositorio tiene 0 descargas y 0 likes, fue creado el 16 de septiembre de 2026 y su tamano declarado es de 0.0 GB, lo que apunta a que los pesos no estan subidos o a que el repositorio contiene solo metadatos y ficheros de configuracion. La model card es la plantilla por defecto de Hugging Face, con todos los campos marcados como `[More Information Needed]`, incluidos desarrollador, licencia, idiomas, datos de entrenamiento, hiperparametros y evaluacion.
 
 En consecuencia, esta ficha documenta lo que se puede verificar (arquitectura de adaptador, modelo base, formato y estado del repositorio) y marca explicitamente como "no disponible" todo lo que el autor no ha publicado. No se han encontrado papers, blogs, demos ni repositorios asociados en la busqueda web realizada.
 
@@ -35,7 +35,7 @@ La unica informacion tecnica verificable es que el artefacto es un adaptador LoR
 
 No hay informacion sobre el corpus de entrenamiento: ni numero de tokens, ni composicion del dataset, ni si se aplicaron tecnicas de alineacion adicionales como RLHF, DPO o SFT supervisado. Tampoco se documentan hiperparametros (tasa de aprendizaje, scheduler, numero de epocas, precision) ni la infraestructura de computo empleada. La seccion de impacto ambiental de la plantilla esta sin rellenar.
 
-Un detalle a tener en cuenta: el unico identificador tipo arXiv presente en los tags es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico y aparece citado en la plantilla por defecto de HuggingFace. No es el paper del modelo ni describe su metodo de entrenamiento.
+Un detalle a tener en cuenta: el unico identificador tipo arXiv presente en los tags es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico y aparece citado en la plantilla por defecto de Hugging Face. No es el paper del modelo ni describe su metodo de entrenamiento.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ No hay datos suficientes para una comparativa rigurosa, porque no existe informa
 | Elemento | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | `nesoai/smollm-energy-extraction` (adaptador) | No disponible | No disponible | No disponible | Repositorio de 0.0 GB, 0 descargas |
-| `HuggingFaceTB/SmolLM-360M-Instruct` (modelo base) | ~360 M (segun identificador) | No disponible en esta informacion | No disponible en esta informacion | Modelo publico en HuggingFace |
+| `HuggingFaceTB/SmolLM-360M-Instruct` (modelo base) | ~360 M (segun identificador) | No disponible en esta informacion | No disponible en esta informacion | Modelo publico en Hugging Face |
 | Otros adaptadores LoRA sobre el mismo modelo base | No disponible | No disponible | No disponible | No evaluados en esta ficha |
 
 Conviene subrayar que este artefacto no es comparable en pie de igualdad con un modelo completo: es un complemento que depende del modelo base y cuyo valor depende enteramente de la calidad de sus datos de entrenamiento, que no se han publicado.
@@ -89,7 +89,7 @@ Conviene subrayar que este artefacto no es comparable en pie de igualdad con un 
 ## Limitaciones y advertencias
 
 - Repositorio practicamente vacio: el tamano declarado es de 0.0 GB y la actualizacion se produjo un segundo despues de la creacion, lo que sugiere que los pesos no estan disponibles o que el repositorio solo contiene configuracion. Sin pesos no hay inferencia posible.
-- Documentacion inexistente: la model card es la plantilla por defecto de HuggingFace, con todos los campos relevantes sin rellenar (desarrollador, licencia, idiomas, datos de entrenamiento, evaluacion).
+- Documentacion inexistente: la model card es la plantilla por defecto de Hugging Face, con todos los campos relevantes sin rellenar (desarrollador, licencia, idiomas, datos de entrenamiento, evaluacion).
 - Licencia no especificada: al no declararse licencia, no puede asumirse permiso para uso comercial. La licencia del adaptador tambien puede verse condicionada por la del modelo base, que debe consultarse por separado.
 - Cero adopcion: 0 descargas y 0 likes implican ausencia total de validacion por parte de la comunidad; no hay informes de terceros sobre su comportamiento.
 - Riesgo de alucinacion: no evaluado. En modelos de ~360 M el riesgo de inventar valores en tareas de extraccion (cifras, unidades, fechas) es estructuralmente alto y no debe usarse en produccion sin validacion posterior.
@@ -101,7 +101,7 @@ Conviene subrayar que este artefacto no es comparable en pie de igualdad con un 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nesoai/smollm-energy-extraction
+- Repositorio en Hugging Face: https://huggingface.co/nesoai/smollm-energy-extraction
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-360M-Instruct
 - Paper citado en la plantilla (Lacoste et al., 2019, sobre emisiones de carbono, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la plantilla: https://mlco2.github.io/impact

@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cohearo/sherpa-onnx-whisper-large-v3-turbo-attention-fp32
+- Repositorio Hugging Face: https://huggingface.co/cohearo/sherpa-onnx-whisper-large-v3-turbo-attention-fp32
 - Pack int8 del mismo autor: https://huggingface.co/cohearo/sherpa-onnx-whisper-large-v3-turbo-attention-int8
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Runtime sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

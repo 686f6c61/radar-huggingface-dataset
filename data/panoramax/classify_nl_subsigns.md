@@ -6,7 +6,7 @@ Panoramax/classify_nl_subsigns es un modelo de clasificacion de imagenes publica
 
 El modelo parte del checkpoint base ultralytics/assets y esta declarado como image-classification, con idioma asociado nl (neerlandes). Su proposito practico es enriquecer el catalogo de Panoramax: dado que las imagenes de la plataforma estan georreferenciadas y provienen de vehiculos o peatones que recorren la via publica, un clasificador de subsenales permite etiquetar automaticamente el mobiliario viario detectado y alimentar capas tematicas reutilizables por terceros.
 
-Es relevante ahora porque Panoramax se posiciona como alternativa libre a servicios propietarios de foto-mapping, y la clasificacion automatica de elementos viarios es una de las tareas que mas valor anaden a ese tipo de repositorios. Conviene senalar que la ficha de HuggingFace presenta un acceso restringido (gated) y un tamano de repositorio de 0.0 GB, por lo que no se confirma la disponibilidad efectiva de los pesos ni sus especificaciones completas. La mayoria de los datos tecnicos de detalle no estan publicados en la informacion disponible.
+Es relevante ahora porque Panoramax se posiciona como alternativa libre a servicios propietarios de foto-mapping, y la clasificacion automatica de elementos viarios es una de las tareas que mas valor anaden a ese tipo de repositorios. Conviene senalar que la ficha de Hugging Face presenta un acceso restringido (gated) y un tamano de repositorio de 0.0 GB, por lo que no se confirma la disponibilidad efectiva de los pesos ni sus especificaciones completas. La mayoria de los datos tecnicos de detalle no estan publicados en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -64,13 +64,13 @@ No se dispone de datos publicados de este modelo ni de sus alternativas directas
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Panoramax/classify_nl_subsigns | no disponible | no aplica | no disponible | cc-by-sa-4.0 | gated en HuggingFace, 0 descargas |
+| Panoramax/classify_nl_subsigns | no disponible | no aplica | no disponible | cc-by-sa-4.0 | gated en Hugging Face, 0 descargas |
 | Alternativas de clasificacion de senaletica (YOLOv8-cls, ResNet, EfficientNet sobre GTSRB u otros) | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Alcance geografico limitado: el modelo esta especializado en subsenales neerlandesas; su aplicacion fuera de Paises Bajos probablemente produzca errores sistematicos, aunque no se documenta el grado de degradacion.
-- Acceso restringido: la ficha figura como gated, por lo que es necesario aceptar condiciones en HuggingFace antes de descargar el modelo.
+- Acceso restringido: la ficha figura como gated, por lo que es necesario aceptar condiciones en Hugging Face antes de descargar el modelo.
 - Tamano de repositorio de 0.0 GB y ausencia de descargas o likes: no se confirma que los pesos esten efectivamente publicados ni que el modelo haya sido validado por terceros. Conviene verificar la integridad y el contenido del repositorio antes de usarlo en produccion.
 - Sesgos desconocidos: no hay informacion sobre la distribucion del dataset de entrenamiento (pais, region, condiciones meteorologicas, camara empleada, hora del dia), por lo que no se pueden evaluar sesgos por iluminacion, angulo o calidad de imagen.
 - Riesgo de alucinacion: en clasificacion, se traduce en falsos positivos o etiquetas incorrectas sobre imagenes ambiguas, oclusivas o con senales deterioradas; no se han publicado metricas de error.
@@ -80,7 +80,7 @@ No se dispone de datos publicados de este modelo ni de sus alternativas directas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Panoramax/classify_nl_subsigns
+- Modelo en Hugging Face: https://huggingface.co/Panoramax/classify_nl_subsigns
 - Sitio principal de Panoramax: https://panoramax.fr/
 - Instancia Panoramax del IGN: https://panoramax.ign.fr/
 - Explorador de Panoramax: https://explore.panoramax.fr/fr/index

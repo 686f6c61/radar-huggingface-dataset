@@ -6,7 +6,7 @@ onebee-gf-dpo-v1-4epoch es un adaptador LoRA sobre el modelo multimodal google/g
 
 Este checkpoint concreto es un experimento deliberado de sobreajuste: se entreno con DPO (Direct Preference Optimization) durante 4 epocas sobre el mismo dataset de 200 pares de preferencias de la version v0, logrando un ajuste casi perfecto al conjunto de entrenamiento pero con una regresion cualitativa real en al menos un prompt de evaluacion. El propio autor lo describe como "no el checkpoint recomendado" y lo presenta como un experimento de investigacion sobre los limites del sobreajuste en DPO.
 
-El modelo hereda la licencia Gemma del modelo base y esta disponible en formato safetensors con un tamano de repositorio de 10,2 GB, correspondiente a 5.104.297.539 parametros totales (modelo fusionado en FP16). Se publico el 14 de agosto de 2026 y no registra descargas ni valoraciones en HuggingFace.
+El modelo hereda la licencia Gemma del modelo base y esta disponible en formato safetensors con un tamano de repositorio de 10,2 GB, correspondiente a 5.104.297.539 parametros totales (modelo fusionado en FP16). Se publico el 14 de agosto de 2026 y no registra descargas ni valoraciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ No se dispone de comparativa con modelos externos de la misma categoria (modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arrochi112/onebee-gf-dpo-v1-4epoch
+- Modelo en Hugging Face: https://huggingface.co/arrochi112/onebee-gf-dpo-v1-4epoch
 - Proyecto small-mind-companion (GitHub): https://github.com/arrogance231/small-mind-companion
 - Documentacion de resultados DPO: https://github.com/arrogance231/small-mind-companion/blob/main/docs/dpo_results.md
 - Checkpoint SFT v0: https://huggingface.co/arrochi112/onebee-gf-sft-v0

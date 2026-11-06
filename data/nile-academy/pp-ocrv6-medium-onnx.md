@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de especificaciones de las alternativas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nile-academy/pp-ocrv6-medium-onnx
+- Repositorio en Hugging Face: https://huggingface.co/nile-academy/pp-ocrv6-medium-onnx
 - Detector ONNX upstream: https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_det_onnx/tree/61323801669c338b7891481ec7bac61ce31b576a
 - Reconocedor ONNX upstream: https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_rec_onnx/tree/50c7eacafc52fa7bcf4194e8cd08e46f8558504b
 - Detector Paddle upstream: https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_det/tree/8e0f56fb2ef86b461d99cfc7ac5c137738985f61

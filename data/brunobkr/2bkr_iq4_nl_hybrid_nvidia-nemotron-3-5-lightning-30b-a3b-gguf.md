@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `2BKR_IQ4_NL_hybrid_NVIDIA-Nemotron-3.5-Lightning-30B-A3B` es una cuantización GGUF en formato IQ4_NL del modelo base `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16`, creada por el usuario de HuggingFace `Brunobkr`. Se trata de un modelo de generación de texto con una arquitectura híbrida Mixture-of-Experts (MoE) que intercala capas de Mamba-2 y MoE junto con capas de atención selectas, lo que lo hace especialmente eficiente en cómputo. El modelo base tiene 30 mil millones de parámetros totales y 3 mil millones activos, lo que permite una inferencia rápida en comparación con modelos densos del mismo tamaño.
+El modelo `2BKR_IQ4_NL_hybrid_NVIDIA-Nemotron-3.5-Lightning-30B-A3B` es una cuantización GGUF en formato IQ4_NL del modelo base `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16`, creada por el usuario de Hugging Face `Brunobkr`. Se trata de un modelo de generación de texto con una arquitectura híbrida Mixture-of-Experts (MoE) que intercala capas de Mamba-2 y MoE junto con capas de atención selectas, lo que lo hace especialmente eficiente en cómputo. El modelo base tiene 30 mil millones de parámetros totales y 3 mil millones activos, lo que permite una inferencia rápida en comparación con modelos densos del mismo tamaño.
 
 La relevancia de este modelo radica en su disponibilidad en formato GGUF, que permite ejecutarlo en CPU y GPU de consumo mediante `llama.cpp` o `llama-server`. El comando de ejemplo incluido en la model card configura una ventana de contexto de 50.000 tokens, soporte de herramientas (`--tools all`), modo agente (`--agent`) y razonamiento automático (`--reasoning auto`), lo que lo convierte en una opción interesante para aplicaciones de agentes y asistentes con contexto largo. Sin embargo, la model card es extremadamente escasa y no proporciona información sobre datos de entrenamiento, benchmarks o licencia detallada.
 
@@ -76,7 +76,7 @@ La comparativa se limita a aspectos estructurales, ya que no se dispone de datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Brunobkr/2BKR_IQ4_NL_hybrid_NVIDIA-Nemotron-3.5-Lightning-30B-A3B.gguf
+- Modelo en Hugging Face: https://huggingface.co/Brunobkr/2BKR_IQ4_NL_hybrid_NVIDIA-Nemotron-3.5-Lightning-30B-A3B.gguf
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Página de NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard
 - Cuantización GGUF alternativa: https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF

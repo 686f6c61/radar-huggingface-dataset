@@ -88,7 +88,7 @@ No se dispone de comparativas con otros modelos de la misma categoría. El autor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/resoajoe/quality-gate-nano
+- Modelo en Hugging Face: https://huggingface.co/resoajoe/quality-gate-nano
 - Estudio LogLens: https://huggingface.co/resoajoe/loglens-longvideo-drift
 - Datasets de resoajoe: https://huggingface.co/resoajoe/datasets
 - Perfil de resoajoe: https://huggingface.co/resoajoe

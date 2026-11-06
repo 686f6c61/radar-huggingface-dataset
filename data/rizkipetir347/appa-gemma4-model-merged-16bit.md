@@ -80,8 +80,8 @@ La comparacion es limitada porque no se conocen los resultados del finetune. El 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RizkiPetir347/appa-gemma4-model-merged-16bit
-- Documentacion de Gemma 4 en HuggingFace: https://huggingface.co/docs/transformers/model_doc/gemma4
+- Repositorio Hugging Face: https://huggingface.co/RizkiPetir347/appa-gemma4-model-merged-16bit
+- Documentacion de Gemma 4 en Hugging Face: https://huggingface.co/docs/transformers/model_doc/gemma4
 - Pagina oficial de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Model card de Gemma 4 en Google AI: https://ai.google.dev/gemma/docs/core/model_card_4
 - Vision general de Gemma 4 en Google AI: https://ai.google.dev/gemma/docs/core

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`maximegar/toy-multimodal-generation` es un repositorio publicado en HuggingFace por el usuario Maxime Garnier (maximegar) bajo licencia CC-BY-4.0. A pesar de su nombre y de la etiqueta `multimodal-generation`, el propio autor lo describe en su model card como un conjunto estructurado de notas de investigación sobre generación multimodal, con referencias de evaluación y preguntas abiertas, y advierte explícitamente de que no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado.
+`maximegar/toy-multimodal-generation` es un repositorio publicado en Hugging Face por el usuario Maxime Garnier (maximegar) bajo licencia CC-BY-4.0. A pesar de su nombre y de la etiqueta `multimodal-generation`, el propio autor lo describe en su model card como un conjunto estructurado de notas de investigación sobre generación multimodal, con referencias de evaluación y preguntas abiertas, y advierte explícitamente de que no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado.
 
 El repositorio contiene un artefacto `safetensors` con 16.576 parámetros totales, etiquetado como `transformer` y `research-notes`. Con ese orden de magnitud (decenas de miles de parámetros, no millones ni miles de millones) se trata de un modelo de juguete, útil únicamente como ejemplo mínimo o como prueba de infraestructura, no como sistema generativo utilizable. El tamaño total declarado del repositorio es de 0,0 GB.
 
-Su relevancia es, por tanto, documental y metodológica más que técnica: sirve como ejemplo de repositorio de notas de investigación con separación explícita entre planes, hipótesis y resultados, y como caso mínimo para validar canalizaciones de carga de pesos, serialización en `safetensors` y flujos de publicación en HuggingFace. No hay información pública sobre arquitectura interna, datos de entrenamiento, idiomas soportados ni longitud de contexto.
+Su relevancia es, por tanto, documental y metodológica más que técnica: sirve como ejemplo de repositorio de notas de investigación con separación explícita entre planes, hipótesis y resultados, y como caso mínimo para validar canalizaciones de carga de pesos, serialización en `safetensors` y flujos de publicación en Hugging Face. No hay información pública sobre arquitectura interna, datos de entrenamiento, idiomas soportados ni longitud de contexto.
 
 ## Especificaciones técnicas
 
@@ -41,10 +41,10 @@ No hay información sobre datos de entrenamiento: se desconoce el número de tok
 
 - Validación de canalizaciones de carga de pesos: el archivo `safetensors` de 16.576 parámetros permite comprobar que una canalización propia (descarga, verificación de metadatos, carga en memoria y forward pass) funciona de extremo a extremo sin consumir recursos apreciables.
 - Pruebas unitarias de infraestructura de entrenamiento: sirve como modelo de juguete para verificar bucles de entrenamiento, guardado de checkpoints, reanudación desde disco y registro de métricas antes de escalar a modelos reales.
-- Reproducción de entornos de investigación: al publicarse bajo CC-BY-4.0 y sin restricciones de acceso, puede incorporarse a entornos de CI para comprobar que las dependencias de HuggingFace, PyTorch o safetensors están correctamente instaladas y versionadas.
+- Reproducción de entornos de investigación: al publicarse bajo CC-BY-4.0 y sin restricciones de acceso, puede incorporarse a entornos de CI para comprobar que las dependencias de Hugging Face, PyTorch o safetensors están correctamente instaladas y versionadas.
 - Material docente: ilustra la estructura de un repositorio de notas de investigación con separación explícita entre hipótesis, planes y resultados, útil en cursos de metodología reproducible en aprendizaje automático.
 - Punto de partida para discusión metodológica sobre generación multimodal: las referencias y preguntas abiertas del `analysis.md` pueden emplearse como guion para revisar literatura y diseñar comparaciones con líneas base emparejadas, tal como propone el autor.
-- Prueba de flujos de publicación en HuggingFace: permite ensayar el ciclo completo de creación de repositorio, subida de safetensors, gestión de licencia y versionado sin coste de almacenamiento ni de cómputo.
+- Prueba de flujos de publicación en Hugging Face: permite ensayar el ciclo completo de creación de repositorio, subida de safetensors, gestión de licencia y versionado sin coste de almacenamiento ni de cómputo.
 - Referencia negativa en evaluaciones internas: puede usarse como caso de control para verificar que un harness de evaluación detecta correctamente modelos sin capacidad generativa real, en lugar de producir métricas sin sentido.
 
 ## Benchmarks y rendimiento
@@ -71,12 +71,12 @@ No se dispone de información suficiente para establecer una comparativa riguros
 - Sesgos conocidos: no disponibles. No se ha documentado la composición del dataset ni si hubo fases de alineación, por lo que no puede auditarse ningún sesgo.
 - Idiomas: no disponibles. No se declara ningún idioma soportado en los metadatos ni en la model card.
 - Restricciones de licencia: CC-BY-4.0 permite uso comercial y obras derivadas siempre que se atribuya la autoría y se indique si se realizaron cambios. La propia model card advierte de que los términos de los datos de origen deben revisarse por separado cuando el repositorio se utilice con datasets externos.
-- Advertencia para producción: no debe desplegarse en ningún sistema orientado a usuarios. El repositorio no incluye pipeline declarado en HuggingFace, cero descargas y cero «likes» en el momento de la consulta, lo que refuerza su carácter de artefacto de prueba sin validación externa.
+- Advertencia para producción: no debe desplegarse en ningún sistema orientado a usuarios. El repositorio no incluye pipeline declarado en Hugging Face, cero descargas y cero «likes» en el momento de la consulta, lo que refuerza su carácter de artefacto de prueba sin validación externa.
 - Fechas de creación y actualización: 29 de septiembre de 2026, con cuatro segundos de diferencia entre ambas, lo que indica una publicación sin iteraciones posteriores.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maximegar/toy-multimodal-generation
+- Repositorio en Hugging Face: https://huggingface.co/maximegar/toy-multimodal-generation
 - Perfil del autor: https://huggingface.co/maximegar
 - Repositorio homónimo de otro autor: https://huggingface.co/bcnmartin96/toy-multimodal-generation
 - Artículo relacionado sobre caracterización y aceleración de modelos de generación multimodal: https://arxiv.org/abs/2410.00215

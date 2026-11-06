@@ -70,7 +70,7 @@ No se dispone de información sobre adaptadores LoRA comparables para Kimi K2.6 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/barbonara/corin-kimi-k26-pro-sft
+- Repositorio Hugging Face: https://huggingface.co/barbonara/corin-kimi-k26-pro-sft
 - Página oficial de Kimi K2.6: https://www.kimi.com/ai-models/kimi-k2-6
 - Análisis técnico de Kimi K2.6: https://neuraplus-ai.github.io/blog/kimi-k2-6-open-source-model.html
 - Noticia sobre Kimi K3: https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/

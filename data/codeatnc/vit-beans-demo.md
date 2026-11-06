@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vit-beans-demo es un checkpoint de clasificacion de imagenes publicado por el usuario CodeATNC en HuggingFace. Se trata de un ajuste fino (fine-tuning) supervisado del modelo google/vit-base-patch16-224-in21k, un Vision Transformer de tipo base con parches de 16x16 y resolucion de entrada de 224x224 pixeles, preentrenado originalmente sobre ImageNet-21k. El checkpoint resultante tiene 85.800.963 parametros y se distribuye en formato safetensors bajo licencia Apache 2.0.
+vit-beans-demo es un checkpoint de clasificacion de imagenes publicado por el usuario CodeATNC en Hugging Face. Se trata de un ajuste fino (fine-tuning) supervisado del modelo google/vit-base-patch16-224-in21k, un Vision Transformer de tipo base con parches de 16x16 y resolucion de entrada de 224x224 pixeles, preentrenado originalmente sobre ImageNet-21k. El checkpoint resultante tiene 85.800.963 parametros y se distribuye en formato safetensors bajo licencia Apache 2.0.
 
 El modelo no es un modelo generativo ni un LLM: es un clasificador de imagenes. Su relevancia es la de un artefacto de demostracion de un flujo de fine-tuning con la libreria Transformers y el Trainer, no la de un modelo listo para produccion. La model card fue generada automaticamente y no documenta ni el conjunto de datos de entrenamiento (se indica explicitamente "unknown dataset"), ni el numero de clases de salida, ni las etiquetas que predice.
 
@@ -38,7 +38,7 @@ Respecto al entrenamiento, la model card indica un fine-tuning supervisado con l
 - Extraccion de caracteristicas: el encoder ViT puede utilizarse como backbone para obtener embeddings de imagen y alimentar otros clasificadores o sistemas de recuperacion visual.
 - Inferencia por lotes: el modelo admite procesamiento por lotes, con un tamano de lote de al menos 16 en la fase de evaluacion del entrenamiento.
 - Punto de partida para nuevo fine-tuning: al estar en formato transformers y con licencia Apache 2.0, puede reentrenarse sobre otros conjuntos de imagenes.
-- Integracion con el ecosistema Transformers: dispone del tag endpoints_compatible, lo que indica compatibilidad con los endpoints de inferencia de HuggingFace.
+- Integracion con el ecosistema Transformers: dispone del tag endpoints_compatible, lo que indica compatibilidad con los endpoints de inferencia de Hugging Face.
 - No soporta generacion de texto, razonamiento, codigo, matematicas ni tool calling / function calling.
 - No soporta agentes ni razonamiento multi-paso.
 - No dispone de capacidades multilingues (no procesa texto).
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks estandar (ImageNet, MMLU, HumanEval
 - Si cabe en GPU de consumo: si, en practicamente cualquier GPU con 2 GB o mas de memoria (GTX 1050 Ti, GTX 1650, RTX 3050, RTX 3060, RTX 4090). Las tarjetas de gama alta quedan sobredimensionadas para este modelo.
 - Inferencia en CPU: viable, dado que el propio entrenamiento se ejecuto con PyTorch 2.14.0+cpu y el modelo tiene 85,8 M de parametros.
 - GPU de centro de datos: A100, H100, L4 o T4 son compatibles pero muy superiores a lo necesario para un ViT-Base; su uso solo se justifica por agregacion de muchos modelos o por lotes masivos.
-- Opciones de despliegue: pipeline de transformers, HuggingFace Inference Endpoints (el modelo lleva el tag endpoints_compatible), exportacion a ONNX Runtime, TensorRT, OpenVINO o TorchScript, y servidores de inferencia genericos como Triton o TorchServe. No aplican llama.cpp, Ollama ni GGUF, al no ser un modelo generativo de texto.
+- Opciones de despliegue: pipeline de transformers, Hugging Face Inference Endpoints (el modelo lleva el tag endpoints_compatible), exportacion a ONNX Runtime, TensorRT, OpenVINO o TorchScript, y servidores de inferencia genericos como Triton o TorchServe. No aplican llama.cpp, Ollama ni GGUF, al no ser un modelo generativo de texto.
 - Latencia y throughput: no disponibles. Dependen por completo del hardware, del framework de despliegue y del tamano de lote.
 
 ## Comparativa con modelos similares
@@ -91,10 +91,10 @@ No existe un conjunto de evaluacion comun publicado que permita comparar el rend
 
 | Modelo | Parametros (aprox.) | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CodeATNC/vit-beans-demo | 85,8 M | 224x224 px | apache-2.0 | HuggingFace, safetensors, endpoints_compatible |
-| google/vit-base-patch16-224-in21k | ~86 M | 224x224 px | apache-2.0 | HuggingFace, pesos originales, altamente usado |
-| DeiT-Base (facebook/deit-base-distilled-patch16-224) | ~86 M | 224x224 px | apache-2.0 | HuggingFace, con destilacion desde un teacher |
-| ConvNeXt-Tiny | ~28,6 M | 224x224 px | apache-2.0 (variante oficial) | HuggingFace, CNN moderna |
+| CodeATNC/vit-beans-demo | 85,8 M | 224x224 px | apache-2.0 | Hugging Face, safetensors, endpoints_compatible |
+| google/vit-base-patch16-224-in21k | ~86 M | 224x224 px | apache-2.0 | Hugging Face, pesos originales, altamente usado |
+| DeiT-Base (facebook/deit-base-distilled-patch16-224) | ~86 M | 224x224 px | apache-2.0 | Hugging Face, con destilacion desde un teacher |
+| ConvNeXt-Tiny | ~28,6 M | 224x224 px | apache-2.0 (variante oficial) | Hugging Face, CNN moderna |
 | ResNet-50 | ~25,6 M | 224x224 px | licencia de referencia según implementacion | Amplia disponibilidad, muy extendido |
 
 Comparativa de rendimiento: no disponible. El modelo solo declara accuracy 0,9688 sobre un conjunto de evaluacion propio no descrito, por lo que no es metodologicamente valido compararlo con las cifras de ImageNet u otros benchmarks publicos de los modelos anteriores.
@@ -116,6 +116,6 @@ Comparativa de rendimiento: no disponible. El modelo solo declara accuracy 0,968
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CodeATNC/vit-beans-demo
+- Modelo en Hugging Face: https://huggingface.co/CodeATNC/vit-beans-demo
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224-in21k
 - Papers, repositorios, blogs o demos adicionales: no disponible en la informacion proporcionada.

@@ -82,7 +82,7 @@ Existen otros adaptadores del mismo autor sobre el mismo modelo base, como `skbl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/skblv/gemma-3-27b-it-lora-pitvqa-phase-step
+- Repositorio Hugging Face: https://huggingface.co/skblv/gemma-3-27b-it-lora-pitvqa-phase-step
 - Modelo base: https://huggingface.co/google/gemma-3-27b-it
 - Paper PitVQA: https://arxiv.org/abs/2405.13949
 - Leaderboard de comprensión de vídeo quirúrgico: https://github.com/skblv/neurosurgery-video-eval-website

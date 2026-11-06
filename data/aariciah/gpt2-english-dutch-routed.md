@@ -4,7 +4,7 @@
 
 El modelo `aariciah/gpt2-english-dutch-routed` es un modelo de lenguaje basado en la arquitectura GPT-2, desarrollado por el usuario aariciah. Se trata de un fine-tuning del modelo `aariciah/gpt2-english-20k-lc`, con un total de 111.798.528 parámetros. El nombre del modelo sugiere que está orientado a tareas de enrutamiento entre inglés y neerlandés, pero no se ha publicado documentación técnica que detalle su funcionamiento ni sus datos de entrenamiento.
 
-El modelo se distribuye en formato safetensors y está disponible en HuggingFace, aunque su licencia e idiomas soportados no están especificados. Su relevancia es limitada al ser un experimento de fine-tuning sin benchmarks publicados ni información sobre capacidades concretas. La fecha de creación (2026-09-08) y la ausencia de resultados en el model-index indican que se trata de un modelo reciente y poco documentado.
+El modelo se distribuye en formato safetensors y está disponible en Hugging Face, aunque su licencia e idiomas soportados no están especificados. Su relevancia es limitada al ser un experimento de fine-tuning sin benchmarks publicados ni información sobre capacidades concretas. La fecha de creación (2026-09-08) y la ausencia de resultados en el model-index indican que se trata de un modelo reciente y poco documentado.
 
 ## Especificaciones técnicas
 
@@ -86,6 +86,6 @@ La comparación es orientativa, ya que no se han publicado resultados de rendimi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aariciah/gpt2-english-dutch-routed
+- Hugging Face: https://huggingface.co/aariciah/gpt2-english-dutch-routed
 - Modelo base: https://huggingface.co/aariciah/gpt2-english-20k-lc
 - Modelos relacionados (mismo autor): https://huggingface.co/aariciah/gpt2-english-dutch-configC-6k y https://huggingface.co/aariciah/gpt2-english-baseline-dutch-configC-6k

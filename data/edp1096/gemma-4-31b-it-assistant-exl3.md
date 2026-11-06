@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| edp1096/gemma-4-31B-it-assistant-exl3 | 151,4M segun safetensors (nombre: 31B) | no disponible | EXL3 (safetensors) | Apache 2.0 | HuggingFace |
-| google/gemma-4-31B-it-assistant (base) | 31B (nominal) | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| edp1096/gemma-4-31B-it-assistant-exl3 | 151,4M segun safetensors (nombre: 31B) | no disponible | EXL3 (safetensors) | Apache 2.0 | Hugging Face |
+| google/gemma-4-31B-it-assistant (base) | 31B (nominal) | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Otras cuantizaciones EXL3 del mismo modelo base | no disponible | no disponible | EXL3 | Apache 2.0 | no disponible |
 
 No se dispone de informacion suficiente sobre otras alternativas de la misma categoria (mismo tamano o misma tarea) para establecer una comparacion con datos de rendimiento. La unica referencia verificable es el modelo base del que deriva.
@@ -89,7 +89,7 @@ No se dispone de informacion suficiente sobre otras alternativas de la misma cat
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/edp1096/gemma-4-31B-it-assistant-exl3
+- Hugging Face del modelo: https://huggingface.co/edp1096/gemma-4-31B-it-assistant-exl3
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it-assistant
 - ExLlamaV3 (runtime requerido): no disponible en la informacion proporcionada
 - Papers, blogs o demos adicionales: no disponible; la busqueda web no devolvio resultados relevantes para este modelo.

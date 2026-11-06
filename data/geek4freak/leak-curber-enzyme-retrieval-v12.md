@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Leak CURBER enzyme retrieval v12 es un sistema de recuperación (retrieval) de números EC (Enzyme Commission) para reacciones químicas, desarrollado por el usuario geek4freak y publicado en HuggingFace bajo licencia MIT. Dado un reaction SMILES, el modelo predice un único número EC de la jerarquía enzimática, lo que lo sitúa en la intersección entre quimioinformática, biología computacional y anotación funcional de enzimas. No es un modelo de lenguaje generativo, sino un ensemble heterogéneo de clasificadores y recuperadores especializados en representaciones de reacciones químicas.
+Leak CURBER enzyme retrieval v12 es un sistema de recuperación (retrieval) de números EC (Enzyme Commission) para reacciones químicas, desarrollado por el usuario geek4freak y publicado en Hugging Face bajo licencia MIT. Dado un reaction SMILES, el modelo predice un único número EC de la jerarquía enzimática, lo que lo sitúa en la intersección entre quimioinformática, biología computacional y anotación funcional de enzimas. No es un modelo de lenguaje generativo, sino un ensemble heterogéneo de clasificadores y recuperadores especializados en representaciones de reacciones químicas.
 
 La versión v12 añade a v11 un re-ranker de segunda etapa basado en gradient-boosted trees que opera sobre los 20 candidatos EC mejor puntuados por el ensemble de primera etapa. El sistema combina vistas de fingerprint (Morgan, DRFP, Morgan aumentado, rsplit aumentado), clasificadores MLP residuales con objetivos multi-EC suaves y cabezas auxiliares L3/L2/L1, kNN sobre embeddings y sobre fingerprints, y tres BERT de reacción (rxnfp) afinados y exportados a ONNX. La inferencia es exclusivamente CPU mediante un script `predict.py`.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 | Modelo | Tipo | Entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Leak CURBER enzyme retrieval v12 | Ensemble MLP + kNN + BERT rxnfp + GBDT re-ranker | Reaction SMILES | Un EC | MIT | HuggingFace, CPU-only |
+| Leak CURBER enzyme retrieval v12 | Ensemble MLP + kNN + BERT rxnfp + GBDT re-ranker | Reaction SMILES | Un EC | MIT | Hugging Face, CPU-only |
 | BEC-Pred (Qian et al. 2024) | Predicción de EC (referenciado por el autor) | no disponible | EC | no disponible | no disponible |
 | CLAIRE (2025) | Predicción de EC (referenciado por el autor) | no disponible | EC | no disponible | no disponible |
 | SynCat (2026) | Predicción de EC (referenciado por el autor) | no disponible | EC | no disponible | no disponible |
@@ -103,7 +103,7 @@ No se han publicado comparaciones cuantitativas con estos modelos en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/geek4freak/leak-curber-enzyme-retrieval-v12
+- Hugging Face: https://huggingface.co/geek4freak/leak-curber-enzyme-retrieval-v12
 - rxnfp (Schwaller et al. 2021, MIT): no disponible enlace directo en la información proporcionada
 - DRFP (Probst et al. 2022, MIT): no disponible enlace directo en la información proporcionada
 - BEC-Pred (Qian et al. 2024): no disponible enlace directo en la información proporcionada

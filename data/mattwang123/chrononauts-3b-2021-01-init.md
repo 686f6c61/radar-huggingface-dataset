@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chrononauts 3B 2021-01 init | 2,8B | 8.192 | Base temporal congelada, agente de búsqueda | other | HuggingFace (repo propio) |
-| Chrononauts 3B 2021-01 sft | no disponible | no disponible | SFT del mismo corte | other | HuggingFace (repo hermano) |
-| Chrononauts 3B 2021-01 agent | no disponible | no disponible | Entrenado como agente | other | HuggingFace (repo hermano) |
+| Chrononauts 3B 2021-01 init | 2,8B | 8.192 | Base temporal congelada, agente de búsqueda | other | Hugging Face (repo propio) |
+| Chrononauts 3B 2021-01 sft | no disponible | no disponible | SFT del mismo corte | other | Hugging Face (repo hermano) |
+| Chrononauts 3B 2021-01 agent | no disponible | no disponible | Entrenado como agente | other | Hugging Face (repo hermano) |
 | TiC-LM 3B (base) | ~3B | 2.048 (original) | Transformer OpenLM | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de otros modelos comparables fuera de la propia suite Chrononauts en la información proporcionada.
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables fuera de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattwang123/chrononauts-3b-2021-01-init
+- Modelo en Hugging Face: https://huggingface.co/mattwang123/chrononauts-3b-2021-01-init
 - Repo hermano SFT: https://huggingface.co/mattwang123/chrononauts-3b-2021-01-sft
 - Repo hermano agente: https://huggingface.co/mattwang123/chrononauts-3b-2021-01-agent
 - Embeddings del corpus: https://huggingface.co/BAAI/bge-base-en-v1.5

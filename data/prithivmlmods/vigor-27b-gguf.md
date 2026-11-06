@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VIGOR-27B (Vision Intelligence and Guardrail Oriented Reasoning) es un modelo multimodal de 27.320.697.856 parámetros (denso, no MoE) desarrollado por prithivMLmods y publicado en HuggingFace bajo licencia Apache 2.0. Está construido sobre Qwen/Qwen3.8-27B y su propósito es la clasificación de seguridad de contenido visual: analiza imágenes para determinar si son seguras (Safe) o no seguras (NSFW), con un umbral conservador orientado a control parental y protección de menores. La versión aquí descrita, VIGOR-27B-GGUF, es la cuantización en formato GGUF del modelo original, publicada el 1 de noviembre de 2026.
+VIGOR-27B (Vision Intelligence and Guardrail Oriented Reasoning) es un modelo multimodal de 27.320.697.856 parámetros (denso, no MoE) desarrollado por prithivMLmods y publicado en Hugging Face bajo licencia Apache 2.0. Está construido sobre Qwen/Qwen3.8-27B y su propósito es la clasificación de seguridad de contenido visual: analiza imágenes para determinar si son seguras (Safe) o no seguras (NSFW), con un umbral conservador orientado a control parental y protección de menores. La versión aquí descrita, VIGOR-27B-GGUF, es la cuantización en formato GGUF del modelo original, publicada el 1 de noviembre de 2026.
 
 El modelo resuelve un problema concreto de moderación multimodal: la necesidad de un clasificador que no solo etiquete, sino que razone y describa por qué una imagen es sensible, analizando ropa, exposición corporal, poses, encuadre y contexto. Es relevante ahora porque integra decodificación especulativa mediante Multi-Token Prediction (MTP) directamente en los pesos del GGUF, lo que acelera la inferencia local sin requerir un modelo draft separado, y porque ofrece un pipeline de clasificación estructurada en JSON listo para integrarse en guardarraíles de producción.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks ni de comparativas publicadas en la informa
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/prithivMLmods/VIGOR-27B-GGUF
+- Hugging Face (GGUF): https://huggingface.co/prithivMLmods/VIGOR-27B-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/VIGOR-27B
 - Fichero BF16: https://huggingface.co/prithivMLmods/VIGOR-27B-GGUF/blob/main/VIGOR-27B.BF16.gguf
 - Fichero Q4_K_M: https://huggingface.co/prithivMLmods/VIGOR-27B-GGUF/blob/main/VIGOR-27B.Q4_K_M.gguf

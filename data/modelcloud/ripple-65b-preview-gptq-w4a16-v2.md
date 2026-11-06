@@ -65,9 +65,9 @@ La model card incluye únicamente el script de evaluación para `gsm8k_cot` con 
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ripple-65B-Preview-GPTQ-W4A16-v2 | 65B | no disponible | GPTQ 4-bit W4A16 | Apache 2.0 | HuggingFace (ModelCloud) |
-| Ripple-65B-Preview (base) | 65B | no disponible | bf16/fp16 | Apache 2.0 | HuggingFace (ricursiveAI) |
-| Alternativas de 65B-70B (p. ej. Llama-3-70B) | ~70B | no disponible en esta ficha | GPTQ/AWQ disponibles en el ecosistema | Licencia propia | HuggingFace |
+| Ripple-65B-Preview-GPTQ-W4A16-v2 | 65B | no disponible | GPTQ 4-bit W4A16 | Apache 2.0 | Hugging Face (ModelCloud) |
+| Ripple-65B-Preview (base) | 65B | no disponible | bf16/fp16 | Apache 2.0 | Hugging Face (ricursiveAI) |
+| Alternativas de 65B-70B (p. ej. Llama-3-70B) | ~70B | no disponible en esta ficha | GPTQ/AWQ disponibles en el ecosistema | Licencia propia | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ModelCloud/Ripple-65B-Preview-GPTQ-W4A16-v2)
+- [Modelo en Hugging Face](https://huggingface.co/ModelCloud/Ripple-65B-Preview-GPTQ-W4A16-v2)
 - [Modelo base ricursiveAI/Ripple-65B-Preview](https://huggingface.co/ricursiveAI/Ripple-65B-Preview)
 - [PR #1 de correcciones en el modelo base](https://huggingface.co/ricursiveAI/Ripple-65B-Preview/discussions/1)
 - [Espejo del parche Transformers 5.x](https://huggingface.co/ModelCloud/Ripple-65B-Preview-tf5-patch)

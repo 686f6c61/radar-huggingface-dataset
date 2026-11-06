@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pip es un modelo publicado en HuggingFace por el usuario NiemsDrift bajo licencia Apache 2.0. La model card asociada al repositorio no contiene ninguna descripcion tecnica: se limita a declarar la licencia en el encabezado YAML y no incluye informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra 0 descargas y 1 like en el momento de la consulta, lo que indica que se trata de una publicacion reciente y sin traccion de uso.
+Pip es un modelo publicado en Hugging Face por el usuario NiemsDrift bajo licencia Apache 2.0. La model card asociada al repositorio no contiene ninguna descripcion tecnica: se limita a declarar la licencia en el encabezado YAML y no incluye informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra 0 descargas y 1 like en el momento de la consulta, lo que indica que se trata de una publicacion reciente y sin traccion de uso.
 
 No se dispone de datos sobre la tarea para la que fue entrenado ni sobre el pipeline asociado (el campo `pipeline` aparece como no disponible). Tampoco se han declarado idiomas soportados ni se ha publicado ningun benchmark o evaluacion. La fecha de creacion y ultima actualizacion coinciden (2 de noviembre de 2026), lo que sugiere una subida unica sin iteraciones posteriores documentadas.
 
@@ -41,7 +41,7 @@ No es posible recomendar casos de uso concretos sin informacion sobre arquitectu
 
 - Evaluacion exploratoria: descargar los pesos y ejecutar pruebas de generacion de texto para caracterizar el comportamiento real del modelo antes de considerar cualquier uso.
 - Clasificacion o generacion simple en prototipos: solo si la inspeccion del repositorio confirma que el modelo esta entrenado para dichas tareas.
-- Experimentacion academica: util como objeto de estudio de publicaciones sin documentacion, para analizar practicas de publicacion en HuggingFace.
+- Experimentacion academica: util como objeto de estudio de publicaciones sin documentacion, para analizar practicas de publicacion en Hugging Face.
 - Pruebas de integracion en pipelines locales: verificar compatibilidad con librerias como transformers o llama.cpp una vez identificado el formato de pesos.
 - Benchmarking interno: comparar su rendimiento frente a modelos documentados de tamano similar, si se confirma el numero de parametros.
 - Fine-tuning experimental: solo si la licencia Apache 2.0 y el formato de pesos lo permiten, lo cual no puede confirmarse sin inspeccionar el repositorio.
@@ -73,5 +73,5 @@ No disponible. No se puede establecer una comparativa fiable sin conocer el tama
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NiemsDrift/Pip
+- Repositorio en Hugging Face: https://huggingface.co/NiemsDrift/Pip
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa directa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/loom-ai-org/kokoro-82m-loom
+- Repositorio Hugging Face: https://huggingface.co/loom-ai-org/kokoro-82m-loom
 - Modelo original: https://huggingface.co/hexgrad/Kokoro-82M
 - loom.cpp (motor): https://github.com/loom-ai-org/loom.cpp
 - loom-py (libreria Python): https://github.com/loom-ai-org/loom-py

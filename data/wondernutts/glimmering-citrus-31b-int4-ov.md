@@ -77,7 +77,7 @@ No se dispone de datos suficientes en la información proporcionada para realiza
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Wondernutts/Glimmering-Citrus-31B-int4-ov
+- Repositorio Hugging Face del modelo: https://huggingface.co/Wondernutts/Glimmering-Citrus-31B-int4-ov
 - Modelo base: https://huggingface.co/Vortex5/Glimmering-Citrus-31B
 - Herramientas de conversión OpenVINO para Gemma 4: https://github.com/Wondernuttz/OpenVino-For-Gemma-4
 - Página oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/

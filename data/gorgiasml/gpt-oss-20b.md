@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gpt-oss-20b (este modelo) | 20,9 B | 3,6 B | no disponible | Apache 2.0 | Pesos abiertos en HuggingFace; requiere formato harmony |
+| gpt-oss-20b (este modelo) | 20,9 B | 3,6 B | no disponible | Apache 2.0 | Pesos abiertos en Hugging Face; requiere formato harmony |
 | gpt-oss-120b | 117 B | 5,1 B | no disponible | Apache 2.0 | Pesos abiertos; disenado para una unica GPU de 80 GB |
 | Llama 3.1 8B | 8 B | no aplica (denso) | no disponible en la informacion consultada | Licencia comunitaria de Meta (no Apache 2.0) | Pesos abiertos con registro |
 | Mistral 7B | 7 B | no aplica (denso) | no disponible en la informacion consultada | Apache 2.0 | Pesos abiertos |
@@ -94,7 +94,7 @@ La comparativa con gpt-oss-120b procede de la propia model card. Los datos de Ll
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/GorgiasML/gpt-oss-20b
+- Repositorio analizado en Hugging Face: https://huggingface.co/GorgiasML/gpt-oss-20b
 - Modelo original de OpenAI: https://huggingface.co/openai/gpt-oss-20b
 - Coleccion completa de gpt-oss: https://huggingface.co/collections/openai/gpt-oss-68911959590a1634ba11c7a4
 - Sitio oficial del modelo: https://gpt-oss.com

@@ -27,7 +27,7 @@ El modelo es un decoder transformer denso de 24 capas con hidden size 2.688 y FF
 
 El preentrenamiento se realizo sobre los documentos originales de DCLM-edu, con perdida sobre todos los tokens del documento y sobre `<|endoftext|>`. Se entrenaron los primeros 53.709 pasos del flujo alineado de 1PP (112,64B posiciones de token), que coinciden con los primeros pasos del recorrido principal de 31.777 pasos del estudio. El batch global fue de 512 x 4.096 tokens con mascara de atencion entre documentos. El optimizador es Muon (escalado por forma, LR de matriz 0,005) para las matrices y Adam para el resto de parametros (LR 1,29e-3 para embeddings y capa de salida, 3e-3 para las normas), con warmup de 3.378 pasos, fase constante y decaimiento lineal en los ultimos 5.370 pasos hasta 1/100, weight decay 0,1, std de inicializacion 0,0078 y precision bf16.
 
-La perdida de validacion del checkpoint final sobre 2.433 documentos retenidos es de 2,374 para texto de asistente, 2,443 para texto de usuario y 2,308 para texto de documento. Los pesos de HuggingFace se verificaron contra el checkpoint de Megatron, con diferencias absolutas de 0,0016 y 0,0019 en dos conjuntos de validacion.
+La perdida de validacion del checkpoint final sobre 2.433 documentos retenidos es de 2,374 para texto de asistente, 2,443 para texto de usuario y 2,308 para texto de documento. Los pesos de Hugging Face se verificaron contra el checkpoint de Megatron, con diferencias absolutas de 0,0016 y 0,0019 en dos conjuntos de validacion.
 
 ## Capacidades
 
@@ -81,10 +81,10 @@ Verificacion de pesos HF frente a Megatron:
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| 1pp-2.81b-v2-raw-seed42-base | 2,81B | 4.096 | Apache 2.0 | HuggingFace | Modelo base de investigacion, solo ingles |
-| SmolLM2-1.7B | 1,7B | 8.192 (segun model card publica) | Apache 2.0 | HuggingFace | Comparte tokenizer; modelo base e instructivo |
-| Qwen2.5-3B | 3,1B | 32.768 (segun model card publica) | Apache 2.0 (variantes) | HuggingFace | Multilingue, base e instructivo |
-| Llama 3.2-3B | 3,2B | 131.072 (segun model card publica) | Llama 3.2 Community License | HuggingFace | Multilingue, base e instructivo |
+| 1pp-2.81b-v2-raw-seed42-base | 2,81B | 4.096 | Apache 2.0 | Hugging Face | Modelo base de investigacion, solo ingles |
+| SmolLM2-1.7B | 1,7B | 8.192 (segun model card publica) | Apache 2.0 | Hugging Face | Comparte tokenizer; modelo base e instructivo |
+| Qwen2.5-3B | 3,1B | 32.768 (segun model card publica) | Apache 2.0 (variantes) | Hugging Face | Multilingue, base e instructivo |
+| Llama 3.2-3B | 3,2B | 131.072 (segun model card publica) | Llama 3.2 Community License | Hugging Face | Multilingue, base e instructivo |
 
 La comparacion con estos modelos es estructural (tamano y familia de arquitectura); no se dispone de benchmarks comunes que permitan comparar rendimiento de forma directa. Los datos de contexto y licencia de los modelos alternativos provienen de sus model cards publicas y pueden variar.
 
@@ -102,7 +102,7 @@ La comparacion con estos modelos es estructural (tamano y familia de arquitectur
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-raw-seed42-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-raw-seed42-base
 - Coleccion 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Registros de entrenamiento (wandb, 1pp-training): https://wandb.ai/raghav_singhal/1pp-training
 - Registros de SFT (wandb, 1pp-sft): https://wandb.ai/raghav_singhal/1pp-sft

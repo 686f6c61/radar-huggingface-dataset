@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea_2_Turbo_BF16 es un repositorio de pesos publicado en HuggingFace por el usuario jeuzu bajo el identificador `jeuzu/Krea_2_Turbo_BF16`. Se trata de un artefacto de 31,1 GB, sin ficha tecnica asociada: el repositorio no declara pipeline de inferencia, licencia, idiomas soportados ni conjunto de datos de entrenamiento. El unico tag presente es `region:us`, que es un metadato geografico de HuggingFace y no aporta informacion sobre el modelo. En el momento de la consulta acumula 0 descargas y 1 like, por lo que no existe evidencia de adopcion ni de validacion por parte de la comunidad.
+Krea_2_Turbo_BF16 es un repositorio de pesos publicado en Hugging Face por el usuario jeuzu bajo el identificador `jeuzu/Krea_2_Turbo_BF16`. Se trata de un artefacto de 31,1 GB, sin ficha tecnica asociada: el repositorio no declara pipeline de inferencia, licencia, idiomas soportados ni conjunto de datos de entrenamiento. El unico tag presente es `region:us`, que es un metadato geografico de Hugging Face y no aporta informacion sobre el modelo. En el momento de la consulta acumula 0 descargas y 1 like, por lo que no existe evidencia de adopcion ni de validacion por parte de la comunidad.
 
 Por la nomenclatura del repositorio, el sufijo `BF16` indica que los pesos estan almacenados en formato bfloat16, y el termino `Turbo` se emplea habitualmente en el ecosistema de generacion de imagenes para designar variantes destiladas de pocos pasos de muestreo. El prefijo `Krea` coincide con el nombre de un estudio que ha publicado modelos de difusion. Esta lectura es una inferencia a partir del nombre y del tamano del repositorio, no un dato confirmado por el autor, y debe tratarse como tal.
 
@@ -82,7 +82,7 @@ No disponible. No es posible establecer comparaciones fiables porque se desconoc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jeuzu/Krea_2_Turbo_BF16
-- Perfil del autor en HuggingFace: https://huggingface.co/jeuzu
+- Repositorio en Hugging Face: https://huggingface.co/jeuzu/Krea_2_Turbo_BF16
+- Perfil del autor en Hugging Face: https://huggingface.co/jeuzu
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible
 - Resultados de busqueda web relevantes: no disponible (las consultas realizadas no devolvieron ninguna fuente relacionada con el modelo)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ibm-research/qaoa_angles.max_cut.p4.gnn` es un artefacto publicado por IBM Research en HuggingFace cuyo identificador apunta a un modelo de red neuronal de grafos (GNN) destinado a predecir los angulos de un circuito QAOA (Quantum Approximate Optimization Algorithm) para instancias del problema Max-Cut con profundidad p=4. No se trata, en ningun caso, de un modelo de lenguaje: el repositorio solo declara la etiqueta `onnx`, lo que indica que el artefacto se distribuye en formato ONNX y se consume mediante un runtime de inferencia tradicional, no mediante una API de generacion de texto.
+`ibm-research/qaoa_angles.max_cut.p4.gnn` es un artefacto publicado por IBM Research en Hugging Face cuyo identificador apunta a un modelo de red neuronal de grafos (GNN) destinado a predecir los angulos de un circuito QAOA (Quantum Approximate Optimization Algorithm) para instancias del problema Max-Cut con profundidad p=4. No se trata, en ningun caso, de un modelo de lenguaje: el repositorio solo declara la etiqueta `onnx`, lo que indica que el artefacto se distribuye en formato ONNX y se consume mediante un runtime de inferencia tradicional, no mediante una API de generacion de texto.
 
 La informacion publica es practicamente inexistente. La model card contiene unicamente la linea de licencia, el repositorio ocupa 0.0 GB (es decir, no parece incluir pesos descargables) y las cifras de adopcion son cero descargas y cero likes. No hay documentacion de arquitectura, dataset de entrenamiento, hiperparametros ni metricas.
 
@@ -79,7 +79,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p4.gnn
+- Modelo en Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p4.gnn
 - Pagina corporativa de IBM: https://www.ibm.com/
 - Pagina corporativa de IBM (version francesa): https://www.ibm.com/fr-fr
 - Entrada de IBM en Wikipedia: https://en.wikipedia.org/wiki/IBM

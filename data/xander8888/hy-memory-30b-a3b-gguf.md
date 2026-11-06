@@ -97,7 +97,7 @@ No se dispone en la informacion proporcionada de datos de benchmarks de modelos 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/Xander8888/Hy-Memory-30B-A3B-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/Xander8888/Hy-Memory-30B-A3B-GGUF
 - Modelo base: https://huggingface.co/tencent/Hy-Memory-30B-A3B
 - Repositorio GGUF oficial de Tencent: https://huggingface.co/tencent/Hy-Memory-30B-A3B-GGUF
 - Repositorio GitHub: https://github.com/Tencent-Hunyuan/Hy-Memory

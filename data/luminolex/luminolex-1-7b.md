@@ -86,9 +86,9 @@ Comparativa orientativa con otras arquitecturas MoE de tamano reducido. Los dato
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LuminoLex-1.7B | 1,7B | 0,41B | 1.024 | Apache 2.0 | HuggingFace |
-| OLMoE-1B-7B | 7B | 1B | 4.096 | Apache 2.0 | HuggingFace |
-| Qwen1.5-MoE-A2.7B | 14,3B | 2,7B | 32.768 | Licencia Qwen | HuggingFace |
+| LuminoLex-1.7B | 1,7B | 0,41B | 1.024 | Apache 2.0 | Hugging Face |
+| OLMoE-1B-7B | 7B | 1B | 4.096 | Apache 2.0 | Hugging Face |
+| Qwen1.5-MoE-A2.7B | 14,3B | 2,7B | 32.768 | Licencia Qwen | Hugging Face |
 
 Observaciones: LuminoLex-1.7B es notablemente mas pequeno en parametros totales que las alternativas MoE citadas, pero su ventana de contexto (1.024 tokens) es entre 4 y 32 veces menor. No hay datos de rendimiento publicados para LuminoLex-1.7B, por lo que no es posible comparar calidad. No se dispone de datos de throughput ni de latencia para ninguno de los modelos en este contexto.
 
@@ -108,7 +108,7 @@ Observaciones: LuminoLex-1.7B es notablemente mas pequeno en parametros totales 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LuminoLex/LuminoLex-1.7B
+- Hugging Face: https://huggingface.co/LuminoLex/LuminoLex-1.7B
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio: no disponible

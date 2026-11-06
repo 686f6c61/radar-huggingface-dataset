@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Omega-Arsenal-12B es un ajuste fino (finetune) del modelo google/gemma-4-12B-it, publicado por el creador ReadyArt en HuggingFace. Se trata de un modelo de generación de texto orientado a contenido adulto sin restricciones ("unaligned"), con foco explícito en roleplay, contenido erótico (ERP), terror, violencia y conversación madura. El autor lo posiciona como una alternativa desalineada para usuarios que necesitan un modelo de instrucción que no rechace este tipo de solicitudes, algo que los modelos comerciales y la mayoría de los ajustes finos habituales bloquean por diseño.
+Omega-Arsenal-12B es un ajuste fino (finetune) del modelo google/gemma-4-12B-it, publicado por el creador ReadyArt en Hugging Face. Se trata de un modelo de generación de texto orientado a contenido adulto sin restricciones ("unaligned"), con foco explícito en roleplay, contenido erótico (ERP), terror, violencia y conversación madura. El autor lo posiciona como una alternativa desalineada para usuarios que necesitan un modelo de instrucción que no rechace este tipo de solicitudes, algo que los modelos comerciales y la mayoría de los ajustes finos habituales bloquean por diseño.
 
 El modelo hereda la arquitectura y el tamaño del modelo base de Google (11.959.730.224 parámetros, aproximadamente 12B), y se distribuye en formato safetensors con un tamaño de repositorio de 24,0 GB, lo que sugiere pesos en precisión de 16 bits (BF16). Está etiquetado como modelo conversacional e instruct, con soporte declarado únicamente para inglés.
 
@@ -83,7 +83,7 @@ Nota: la comparativa se limita al modelo base y a la categoria generica, ya que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ReadyArt/Omega-Arsenal-12B
+- Modelo en Hugging Face: https://huggingface.co/ReadyArt/Omega-Arsenal-12B
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
-- Autor (ReadyArt) en HuggingFace: no disponible (URL de perfil no proporcionada)
+- Autor (ReadyArt) en Hugging Face: no disponible (URL de perfil no proporcionada)
 - Paper, blog o demo: no disponible

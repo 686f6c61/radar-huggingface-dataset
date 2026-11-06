@@ -75,7 +75,7 @@ La comparativa se basa en el modelo base, ya que el fine-tune no aporta datos pr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen2
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen2
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Documentación de Qwen2.5 (GitHub): https://github.com/QwenLM/Qwen2.5
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth

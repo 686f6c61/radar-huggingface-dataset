@@ -79,7 +79,7 @@ La comparativa se basa en los datos disponibles; no se han encontrado especifica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XURMATRONIX/Qwen3.8-27B
+- Hugging Face: https://huggingface.co/XURMATRONIX/Qwen3.8-27B
 - Repositorio oficial en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Página en LM Studio: https://lmstudio.ai/models/qwen/qwen3.8-27b
 - Blog de AMD sobre soporte del modelo: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

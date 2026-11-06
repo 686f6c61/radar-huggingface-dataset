@@ -6,7 +6,7 @@ Kora stopping estimator es un modelo de clasificación de texto en inglés desar
 
 El modelo se distribuye en formato safetensors bajo la librería transformers y con licencia MIT, lo que facilita su integración en sistemas propietarios. El repositorio tiene un tamaño de 1,6 GB, coherente con un encoder de aproximadamente 400 millones de parámetros en precisión completa. La información pública disponible es muy limitada: no se han publicado detalles sobre el dataset de entrenamiento, los benchmarks ni las condiciones de uso más allá de la licencia.
 
-Es relevante en el contexto actual de agentes basados en LLM que consultan grafos de conocimiento, donde decidir cuándo dejar de iterar es un problema costoso en latencia y tokens. Un clasificador dedicado y ligero puede sustituir a heurísticas frágiles o a llamadas adicionales a un LLM. No obstante, el acceso al repositorio está restringido y requiere aceptar condiciones en HuggingFace, y el modelo no cuenta todavía con descargas ni validación comunitaria.
+Es relevante en el contexto actual de agentes basados en LLM que consultan grafos de conocimiento, donde decidir cuándo dejar de iterar es un problema costoso en latencia y tokens. Un clasificador dedicado y ligero puede sustituir a heurísticas frágiles o a llamadas adicionales a un LLM. No obstante, el acceso al repositorio está restringido y requiere aceptar condiciones en Hugging Face, y el modelo no cuenta todavía con descargas ni validación comunitaria.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ Los tags indican compatibilidad con endpoints de inferencia (`endpoints_compatib
 - Señal auxiliar para control de iteraciones en bucles de razonamiento multi-paso.
 - Integración con pipelines de agentes que consultan grafos de conocimiento.
 - Inferencia en inglés exclusivamente.
-- Compatible con la librería transformers y con endpoints de HuggingFace.
+- Compatible con la librería transformers y con endpoints de Hugging Face.
 - No soporta generación de texto, tool calling, visión, audio ni modo thinking.
 - No se ha documentado soporte multilingüe ni capacidades de razonamiento general.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en fp16/bf16: aproximadamente 0,8 GB de pesos, apta para GPUs consumer modestas.
 - GPUs recomendadas: cualquier GPU consumer reciente (RTX 3060, RTX 4060, RTX 4090) es suficiente; también puede ejecutarse en CPU para cargas de baja concurrencia.
 - Cabe en GPU consumer: sí, con amplio margen.
-- Opciones de despliegue: transformers con `AutoModelForSequenceClassification`, HuggingFace Inference Endpoints (tag `endpoints_compatible`) y servidores compatibles con la API de transformers. No se han publicado artefactos para vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: transformers con `AutoModelForSequenceClassification`, Hugging Face Inference Endpoints (tag `endpoints_compatible`) y servidores compatibles con la API de transformers. No se han publicado artefactos para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se dispone de información sobre benchmarks que permita comparar el rendimien
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Sin validación comunitaria: cero descargas y cero likes en el momento de la consulta, lo que impide contrastar su calidad.
 - Información de entrenamiento no documentada: se desconoce el dataset, el balance de clases y el riesgo de sesgo específico.
 - Solo inglés: no apto para consultas en castellano u otros idiomas sin un ajuste adicional.
@@ -82,5 +82,5 @@ No se dispone de información sobre benchmarks que permita comparar el rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anonymous-kgqa/kora-stopping-estimator
+- Modelo en Hugging Face: https://huggingface.co/anonymous-kgqa/kora-stopping-estimator
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-400m

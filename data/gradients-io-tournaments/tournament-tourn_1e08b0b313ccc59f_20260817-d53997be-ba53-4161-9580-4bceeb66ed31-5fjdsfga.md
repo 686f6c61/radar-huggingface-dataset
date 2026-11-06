@@ -69,5 +69,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - Modelo](https://huggingface.co/gradients-io-tournaments/tournament-tourn_1e08b0b313ccc59f_20260817-d53997be-ba53-4161-9580-4bceeb66ed31-5FjDsFGA)
+- [Hugging Face - Modelo](https://huggingface.co/gradients-io-tournaments/tournament-tourn_1e08b0b313ccc59f_20260817-d53997be-ba53-4161-9580-4bceeb66ed31-5FjDsFGA)
 - [Gradients - Página de torneos](https://www.gradients.io/app/research/tournament)

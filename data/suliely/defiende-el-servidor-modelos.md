@@ -24,7 +24,7 @@ No se publican parámetros, contexto, licencia ni métricas. El repositorio indi
 | Dataset | UNSW-NB15, según la etiqueta del repositorio |
 | Librería | scikit-learn |
 | Versiones | v1 (regresión logística), v2 (bosque aleatorio, seleccionada) |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Tamaño del repositorio | 0.0 GB |
 
 ## Arquitectura y entrenamiento
@@ -102,6 +102,6 @@ No se identifican alternativas externas en la información proporcionada. La ún
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/suliely/defiende-el-servidor-modelos)
+- [Repositorio en Hugging Face](https://huggingface.co/suliely/defiende-el-servidor-modelos)
 - [Rama v1 — regresión logística](https://huggingface.co/suliely/defiende-el-servidor-modelos/tree/v1)
 - [Rama v2 — bosque aleatorio](https://huggingface.co/suliely/defiende-el-servidor-modelos/tree/v2)

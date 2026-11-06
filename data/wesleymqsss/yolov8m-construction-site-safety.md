@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wesleymqsss/yolov8m-construction-site-safety` es un modelo de deteccion de objetos basado en YOLOv8m, fine-tuneado por el usuario wesleymqsss para la deteccion de equipos de proteccion individual (EPI), no conformidades de seguridad, trabajadores y maquinaria en entornos de obra. El modelo parte de los pesos preentrenados de Ultralytics y se redistribuye en formato PyTorch (`.pt`) a traves de HuggingFace Hub bajo licencia MIT, con una unica clase de tarea: object detection.
+`wesleymqsss/yolov8m-construction-site-safety` es un modelo de deteccion de objetos basado en YOLOv8m, fine-tuneado por el usuario wesleymqsss para la deteccion de equipos de proteccion individual (EPI), no conformidades de seguridad, trabajadores y maquinaria en entornos de obra. El modelo parte de los pesos preentrenados de Ultralytics y se redistribuye en formato PyTorch (`.pt`) a traves de Hugging Face Hub bajo licencia MIT, con una unica clase de tarea: object detection.
 
 El modelo resuelve un problema acotado y muy habitual en seguridad laboral: la verificacion automatica del uso de casco, mascarilla y chaleco reflectante, ademas de la deteccion de personas, conos de senalizacion, maquinaria y vehiculos. Su interes practico radica en que las 10 clases estan definidas explicitamente en portugues de Brasil, incluyendo clases negativas del tipo "Sem Capacete" y "Sem Mascara", lo que permite construir alertas de no conformidad sin necesidad de logica de post-procesado adicional.
 
@@ -107,7 +107,7 @@ Nota relevante: este checkpoint se distribuye bajo MIT, mientras que los pesos o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wesleymqsss/yolov8m-construction-site-safety
+- Modelo en Hugging Face: https://huggingface.co/wesleymqsss/yolov8m-construction-site-safety
 - Repositorio de Ultralytics: https://github.com/ultralytics/ultralytics
 - Documentacion de Ultralytics (YOLOv8, exportacion y despliegue): https://docs.ultralytics.com/
 - Pesos oficiales de YOLOv8: https://github.com/ultralytics/assets/releases

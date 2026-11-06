@@ -18,7 +18,7 @@ Es importante señalar que el autor declara explícitamente que la calidad numé
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | EXL3 weight-only a 4 bpw y 8 bpw sobre 142 proyecciones lineales de texto; embeddings y cabeza de salida a 16 bits; normas y puertas pequeñas en FP16; torre de visión y proyector al mismo objetivo de 4/8 bits |
 | Idiomas soportados | no disponible |
-| Licencia | LFM Open License v1.0 (lfm1.0), licencia "other" en HuggingFace |
+| Licencia | LFM Open License v1.0 (lfm1.0), licencia "other" en Hugging Face |
 | Formato de pesos | safetensors (EXL3, requiere runtime compatible con EXL3 MCG y arquitectura LFM3-VL) |
 
 ## Arquitectura y entrenamiento
@@ -86,12 +86,12 @@ No se dispone de información sobre modelos alternativos de la misma categoría 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xzknw/LFM3-VL-2B-EXL3
+- Modelo en Hugging Face: https://huggingface.co/0xzknw/LFM3-VL-2B-EXL3
 - Variante 4 bpw: https://huggingface.co/0xzknw/LFM3-VL-2B-EXL3/tree/main/4bpw
 - Variante 8 bpw: https://huggingface.co/0xzknw/LFM3-VL-2B-EXL3/tree/main/8bpw
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Perfil del autor: https://huggingface.co/0xzknw
-- Liquid AI en HuggingFace: https://huggingface.co/LiquidAI
+- Liquid AI en Hugging Face: https://huggingface.co/LiquidAI
 - ExLlamaV3 (repositorio): https://github.com/turboderp-org/exllamav3/tree/bd1f519172406a9560bd5c90e61000691bb69a07
 - Licencia LFM Open License v1.0: https://huggingface.co/0xzknw/LFM3-VL-2B-EXL3/blob/main/LICENSE
 - Manifest de conversión: https://huggingface.co/0xzknw/LFM3-VL-2B-EXL3/blob/main/manifest.json

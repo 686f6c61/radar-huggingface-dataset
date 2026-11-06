@@ -109,7 +109,7 @@ La versión con RL (Fun-CosyVoice3-0.5B-2512_RL) muestra la mejor precisión de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
+- Modelo en Hugging Face: https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
 - Modelo en ModelScope: https://www.modelscope.cn/models/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
 - Repositorio GitHub: https://github.com/QwenAudio/CosyVoice
 - Paper CosyVoice 3.0: https://arxiv.org/abs/2505.17589

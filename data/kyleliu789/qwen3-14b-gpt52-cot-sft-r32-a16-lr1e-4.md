@@ -78,7 +78,7 @@ No hay datos de benchmarks para ninguno de estos adaptadores, por lo que no es p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kyleliu789/qwen3-14b-gpt52-cot-sft-r32-a16-lr1e-4
+- Repositorio Hugging Face: https://huggingface.co/kyleliu789/qwen3-14b-gpt52-cot-sft-r32-a16-lr1e-4
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Ficha de Qwen3-14B en LocalLLMs: https://localllms.dev/llm/qwenqwen3-14b/

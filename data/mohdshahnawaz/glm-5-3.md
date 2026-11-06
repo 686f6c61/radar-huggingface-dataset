@@ -18,7 +18,7 @@ Es relevante ahora porque combina pesos abiertos, contexto de 1M de tokens y pes
 | Longitud de contexto | 1.000.000 de tokens (1M). En la evaluación de HLE w/ Tools se empleó una ventana máxima de 300.000 tokens con estrategia de gestión de contexto |
 | Tipos de cuantización | FP8 nativo (etiqueta `fp8`). No se detallan otros formatos en la información disponible |
 | Idiomas soportados | Inglés (en) y chino (zh), según la model card |
-| Licencia | `glm-5.3` (etiquetada como `license: other` en HuggingFace). OpenLM.ai la describe como MIT: existe contradicción entre fuentes |
+| Licencia | `glm-5.3` (etiquetada como `license: other` en Hugging Face). OpenLM.ai la describe como MIT: existe contradicción entre fuentes |
 | Formato de pesos | safetensors (tamaño de repositorio: 755,7 GB) |
 
 ## Arquitectura y entrenamiento
@@ -88,7 +88,7 @@ Notas de reproducción publicadas: en HLE w/ Tools se usaron `temperature=1.0` y
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad de pesos | Referencia de rendimiento |
 |---|---|---|---|---|---|
-| GLM-5.3 | 753,3 mil millones (MoE, ~40 mil millones activos) | 1M tokens | glm-5.3 (`other`); MIT según OpenLM.ai | Abiertos en HuggingFace | Terminal Bench 3.0: 28,3; CyberGym: 84,5 |
+| GLM-5.3 | 753,3 mil millones (MoE, ~40 mil millones activos) | 1M tokens | glm-5.3 (`other`); MIT según OpenLM.ai | Abiertos en Hugging Face | Terminal Bench 3.0: 28,3; CyberGym: 84,5 |
 | GLM-5.2 | No disponible (misma base que GLM-5.3) | No disponible | No disponible | Abiertos | Terminal Bench 3.0: 4,6; CyberGym: 77,2 |
 | Kimi K3 | No disponible | No disponible | No disponible | No disponible | Terminal Bench 3.0: 17,4; DeepSWE: 67,5 |
 | DeepSeek-V4 Pro-0813 | No disponible | No disponible | No disponible | No disponible | NL2Repo: 61,1; CyberGym: 83,3 |
@@ -100,7 +100,7 @@ La comparación relevante para pesos abiertos es frente a GLM-5.2: con la misma 
 
 ## Limitaciones y advertencias
 
-- Contradicción de licencia: el repositorio de HuggingFace declara `license: other` con nombre `glm-5.3`, mientras que una fuente secundaria (OpenLM.ai) afirma licencia MIT. Es imprescindible verificar los términos reales antes de uso comercial.
+- Contradicción de licencia: el repositorio de Hugging Face declara `license: other` con nombre `glm-5.3`, mientras que una fuente secundaria (OpenLM.ai) afirma licencia MIT. Es imprescindible verificar los términos reales antes de uso comercial.
 - El repositorio consultado no pertenece a la organización oficial de Z.ai: el identificador `mohdShahnawaz/GLM-5.3` corresponde a un tercero, con 0 descargas y 0 likes. Para producción debe usarse el repositorio oficial `zai-org/GLM-5.3`.
 - Idioma: la model card solo declara inglés y chino. El rendimiento en castellano no está documentado y no debería asumirse paridad con esos dos idiomas.
 - Riesgo de alucinación: no se publican tasas de fidelidad ni evaluaciones de veracidad. En un modelo optimizado para agentes y ejecución de comandos, una alucinación puede traducirse en acciones reales sobre el sistema, con impacto operativo.
@@ -113,7 +113,7 @@ La comparación relevante para pesos abiertos es frente a GLM-5.2: con la misma 
 
 ## Enlaces
 
-- HuggingFace (repositorio consultado, no oficial): https://huggingface.co/mohdShahnawaz/GLM-5.3
+- Hugging Face (repositorio consultado, no oficial): https://huggingface.co/mohdShahnawaz/GLM-5.3
 - Repositorio oficial en GitHub: https://github.com/zai-org/GLM-5
 - Documentación oficial de Z.ai: https://docs.z.ai/guides/llm/glm-5.3
 - Ficha en OpenLM.ai: https://openlm.ai/glm-5.3/

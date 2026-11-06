@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks comparativos con alternativas en la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SiobhanGoh/malay-english-sentiment-onnx
+- Hugging Face: https://huggingface.co/SiobhanGoh/malay-english-sentiment-onnx
 - Checkpoint fuente: https://huggingface.co/SiobhanGoh/CP2_Emotion_Model_New (revisión `9bc6645ce7a8e02761c59386ffd16969bed1bc55`, subcarpeta `corrected-2026-10`)
 - Modelo base: https://huggingface.co/google-bert/bert-base-multilingual-cased
 - Repositorio del proyecto (código, protocolo de entrenamiento y app web): https://github.com/SiobhanGoh/capstone2-sentiment-streamlit-colab

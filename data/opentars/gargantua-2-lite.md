@@ -96,7 +96,7 @@ La comparación con alternativas de la misma categoría (agentes locales de meno
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenTARS/Gargantua-2-Lite
+- Modelo en Hugging Face: https://huggingface.co/OpenTARS/Gargantua-2-Lite
 - Proyecto openTARS: https://project-opentars.github.io/OpenTARS/
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Ollama (referencia del autor): `ProjectOpenTARS/Gargantua-2:lite`

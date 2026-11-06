@@ -2,7 +2,7 @@
 
 ## Resumen
 
-goemotions-student es un modelo de clasificación de texto multietiqueta especializado en la detección de emociones en inglés. Se trata de un destilado de `distilroberta-base` entrenado mediante destilación de conocimiento a partir de dos profesores `roberta-large` (con alpha 0.5 y temperatura 2) combinada con las etiquetas doradas del dataset GoEmotions de Google Research. Lo publica el usuario manasrpandya en HuggingFace bajo licencia MIT.
+goemotions-student es un modelo de clasificación de texto multietiqueta especializado en la detección de emociones en inglés. Se trata de un destilado de `distilroberta-base` entrenado mediante destilación de conocimiento a partir de dos profesores `roberta-large` (con alpha 0.5 y temperatura 2) combinada con las etiquetas doradas del dataset GoEmotions de Google Research. Lo publica el usuario manasrpandya en Hugging Face bajo licencia MIT.
 
 El modelo resuelve el problema de la clasificación de emociones fina: dado un texto en inglés, predice una o varias de las etiquetas emocionales del corpus GoEmotions mediante una cabeza de clasificación con activación sigmoide (multietiqueta, no mutuamente excluyente). Con 82,1 millones de parámetros y un repositorio de 0,3 GB, está pensado para entornos con recursos limitados donde un `roberta-large` resultaría demasiado costoso.
 
@@ -61,16 +61,16 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 - VRAM estimada para inferencia: inferior a 1 GB en precisión FP32 (82 millones de parámetros, aproximadamente 0,33 GB de pesos) y en torno a 0,2 GB en FP16.
 - GPU recomendadas: cualquier GPU moderna sirve; no requiere A100 ni H100. Una RTX 4090 o una T4 están sobredimensionadas para este modelo.
 - Cabe en GPU de consumo: sí, en cualquier GPU con al menos 1-2 GB de VRAM, e incluso en CPU para lotes moderados.
-- Opciones de despliegue: PyTorch nativo, ONNX Runtime (existe la variante `goemotions-distil-onnx`), HuggingFace Transformers con pipeline `text-classification`, y servidores de inferencia compatibles con modelos de clasificación.
+- Opciones de despliegue: PyTorch nativo, ONNX Runtime (existe la variante `goemotions-distil-onnx`), Hugging Face Transformers con pipeline `text-classification`, y servidores de inferencia compatibles con modelos de clasificación.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| goemotions-student | 82,1 M | No disponible | MIT | HuggingFace |
-| roberta-large (profesor) | 355 M | 512 tokens | MIT | HuggingFace |
-| distilroberta-base (base) | 82,1 M | 512 tokens | MIT | HuggingFace |
+| goemotions-student | 82,1 M | No disponible | MIT | Hugging Face |
+| roberta-large (profesor) | 355 M | 512 tokens | MIT | Hugging Face |
+| distilroberta-base (base) | 82,1 M | 512 tokens | MIT | Hugging Face |
 
 El modelo se compara de forma natural con sus profesores `roberta-large`, que triplican el número de parámetros y ofrecen presumiblemente mejor rendimiento a mayor coste, y con `distilroberta-base`, del que hereda la arquitectura pero sin cabeza de clasificación de emociones. No se dispone de datos de benchmarks de los profesores en GoEmotions en la información proporcionada para establecer una comparación cuantitativa.
 
@@ -87,7 +87,7 @@ El modelo se compara de forma natural con sus profesores `roberta-large`, que tr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manasrpandya/goemotions-student
+- Hugging Face: https://huggingface.co/manasrpandya/goemotions-student
 - Variante ONNX: https://huggingface.co/manasrpandya/goemotions-distil-onnx
 - Código y memoria: https://github.com/manasrpandya/NLP_CV_Lab/tree/main/projects/06-emotion-classification
 - Dataset GoEmotions: https://huggingface.co/datasets/google-research-datasets/go_emotions

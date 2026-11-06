@@ -53,7 +53,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - Echoo113/deepseek-llm-7b-chat-immigration_mlpB-STEER0.346875-ft4.43](https://huggingface.co/Echoo113/deepseek-llm-7b-chat-immigration_mlpB-STEER0.346875-ft4.43)
+- [Hugging Face - Echoo113/deepseek-llm-7b-chat-immigration_mlpB-STEER0.346875-ft4.43](https://huggingface.co/Echoo113/deepseek-llm-7b-chat-immigration_mlpB-STEER0.346875-ft4.43)
 - [Modelo base: deepseek-ai/deepseek-llm-7b-chat](https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat)
 - [Página oficial de DeepSeek](https://deepseek.com/en/index.html)
 - [Variante similar: deepseek-llm-7b-chat-immigration-STEER0.346875-ft4.43](https://huggingface.co/Echoo113/deepseek-llm-7b-chat-immigration-STEER0.346875-ft4.43)

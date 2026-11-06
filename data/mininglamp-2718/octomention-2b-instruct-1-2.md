@@ -91,9 +91,9 @@ La diferencia practica frente a estas alternativas no esta en las especificacion
 
 ## Enlaces
 
-- Repositorio principal en HuggingFace: https://huggingface.co/Mininglamp-2718/OctoMention-2B-Instruct-1.2
+- Repositorio principal en Hugging Face: https://huggingface.co/Mininglamp-2718/OctoMention-2B-Instruct-1.2
 - Variante MLX de 8 bits: https://huggingface.co/Mininglamp-2718/OctoMention-2B-Instruct-1.2-MLX-8bit
 - Variante MLX 8 bits de la version 1.0 en ModelScope: https://www.modelscope.cn/models/Mininglamp2718/OctoMention-2B-Instruct-1.0-MLX-8bit
 - Variante MLX 8 bits de la version 1.1 en ModelScope: https://www.modelscope.cn/models/Mininglamp2718/OctoMention-2B-Instruct-1.1-MLX-8bit
-- Perfil de la organizacion en HuggingFace: https://huggingface.co/Mininglamp-2718/datasets
+- Perfil de la organizacion en Hugging Face: https://huggingface.co/Mininglamp-2718/datasets
 - Anuncio de Octo, red abierta de colaboracion entre agentes (29 de junio de 2026): https://www.newtimespace.com/en/research/1420242.html

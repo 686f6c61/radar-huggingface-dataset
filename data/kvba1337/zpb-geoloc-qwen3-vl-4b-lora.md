@@ -79,14 +79,14 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de los m
 - Riesgo de alucinacion: no evaluado ni documentado. En tareas de geolocalizacion, un modelo puede producir coordenadas o toponimos plausibles pero incorrectos.
 - Idioma: no disponible. No se declara soporte de castellano ni de ningun otro idioma.
 - Contexto: no disponible. No se puede garantizar el manejo de entradas largas.
-- Licencia Apache-2.0 en este repositorio, que solo exige atribucion segun el propio autor. La model card remite a `LICENSING.md` del repositorio de codigo del proyecto para determinar que licencia cubre cada artefacto, por lo que el marco completo de licencias no se puede verificar desde HuggingFace.
+- Licencia Apache-2.0 en este repositorio, que solo exige atribucion segun el propio autor. La model card remite a `LICENSING.md` del repositorio de codigo del proyecto para determinar que licencia cubre cada artefacto, por lo que el marco completo de licencias no se puede verificar desde Hugging Face.
 - Dependencia de un modelo base externo: al no fusionarse el adaptador, cualquier despliegue futuro heredara las condiciones y limitaciones de `Qwen/Qwen3-VL-4B-Instruct`.
 - Ausencia de informacion sobre sesgos: no se documenta ninguna evaluacion de sesgo geografico, demografico o cultural.
 - Los resultados de la busqueda web no aportan ninguna fuente tecnica relevante sobre el modelo (los enlaces devueltos corresponden a comercio de pellet de madera y no guardan relacion con el artefacto).
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kvba1337/zpb-geoloc-qwen3-vl-4b-lora
+- Repositorio en Hugging Face: https://huggingface.co/kvba1337/zpb-geoloc-qwen3-vl-4b-lora
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Modelo base alternativo mencionado en la model card: https://huggingface.co/google/gemma-3-4b-it
 - Paper, blog, repositorio de codigo o demo del proyecto ZPB ID-1778: no disponible en la informacion proporcionada (la model card menciona un `LICENSING.md` en el repositorio de codigo del proyecto, pero no se facilita su URL).

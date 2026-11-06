@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3 es el modelo insignia de Z.ai (antes Zhipu AI) para tareas de codificacion compleja y trabajo agentico de larga duracion. Se trata de un modelo de lenguaje solo texto, con arquitectura de mezcla de expertos (MoE) de 753.000 millones de parametros totales y 40.000 millones de parametros activos, con una ventana de contexto de 1 millon de tokens. El modelo fue publicado el 29 de agosto de 2026 y esta disponible en HuggingFace con pesos en formato safetensors.
+GLM-5.3 es el modelo insignia de Z.ai (antes Zhipu AI) para tareas de codificacion compleja y trabajo agentico de larga duracion. Se trata de un modelo de lenguaje solo texto, con arquitectura de mezcla de expertos (MoE) de 753.000 millones de parametros totales y 40.000 millones de parametros activos, con una ventana de contexto de 1 millon de tokens. El modelo fue publicado el 29 de agosto de 2026 y esta disponible en Hugging Face con pesos en formato safetensors.
 
 La caracteristica mas destacable es que GLM-5.3 utiliza la misma base que GLM-5.2: todas las mejoras provienen exclusivamente del post-entrenamiento. Segun los datos publicados, consigue una mejora del 50% sobre GLM-5.2 en el benchmark interno Z.ai Code Bench, y establece un nuevo estado del arte en pesos abiertos en benchmarks publicos como Terminal Bench 3.0 y Agents' Last Exam. Ademas, el escalado del post-entrenamiento ha producido capacidades emergentes en ciberseguridad, siendo el mejor modelo en CyberGym para descubrimiento de vulnerabilidades.
 
@@ -87,7 +87,7 @@ Notas metodologicas relevantes: HLE w/ Tools se evaluo con `temperature=1.0`, `t
 - GPUs de consumo: no cabe en ninguna configuracion de GPUs consumer actual (RTX 4090 con 24 GB, incluso con 4 GPUs en paralelo solo se alcanzarian 96 GB, insuficiente).
 - Opciones de despliegue: SGLang, vLLM, TokenSpeed, Transformers (con soporte nativo para `glm_moe_dsa`), KTransformers y Unsloth. Tambien soporta despliegue en plataforma Ascend NPU mediante vLLM-Ascend, xLLM y SGLang.
 - Latencia y throughput: no se han publicado datos especificos de latencia o throughput en la informacion disponible. Dado que solo se activan 40B de parametros por token, el coste computacional por token es comparable al de un modelo denso de 40B, aunque la memoria requerida es la del modelo completo (753B).
-- El tag `endpoints_compatible` en HuggingFace sugiere compatibilidad con endpoints de inferencia gestionados, aunque no se especifican detalles adicionales.
+- El tag `endpoints_compatible` en Hugging Face sugiere compatibilidad con endpoints de inferencia gestionados, aunque no se especifican detalles adicionales.
 
 ## Comparativa con modelos similares
 

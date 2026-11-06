@@ -2,9 +2,9 @@
 
 ## Resumen
 
-PAVLY112/xevara-voice-lora es un adaptador LoRA publicado en HuggingFace por el usuario PAVLY112, entrenado mediante SFT sobre el modelo cuantizado en 4 bits unsloth/Qwen2.5-7B-Instruct-bnb-4bit. Se distribuye con la librería PEFT en formato safetensors y ocupa 0,2 GB en el repositorio. El adaptador hereda, por tanto, la arquitectura del modelo base: un transformer decoder-only de la familia Qwen2.5 con aproximadamente 7.600 millones de parámetros.
+PAVLY112/xevara-voice-lora es un adaptador LoRA publicado en Hugging Face por el usuario PAVLY112, entrenado mediante SFT sobre el modelo cuantizado en 4 bits unsloth/Qwen2.5-7B-Instruct-bnb-4bit. Se distribuye con la librería PEFT en formato safetensors y ocupa 0,2 GB en el repositorio. El adaptador hereda, por tanto, la arquitectura del modelo base: un transformer decoder-only de la familia Qwen2.5 con aproximadamente 7.600 millones de parámetros.
 
-La relevancia de esta ficha es limitada y conviene decirlo con claridad: la model card es una plantilla vacía de HuggingFace sin ningún campo rellenado, el repositorio no declara licencia, idiomas, dataset de entrenamiento, hiperparámetros ni resultados de evaluación, y acumula 0 descargas y 0 likes en el momento de la consulta. La única información sustantiva disponible son los metadatos del repositorio (tags, tamaño, modelo base y versión de PEFT).
+La relevancia de esta ficha es limitada y conviene decirlo con claridad: la model card es una plantilla vacía de Hugging Face sin ningún campo rellenado, el repositorio no declara licencia, idiomas, dataset de entrenamiento, hiperparámetros ni resultados de evaluación, y acumula 0 descargas y 0 likes en el momento de la consulta. La única información sustantiva disponible son los metadatos del repositorio (tags, tamaño, modelo base y versión de PEFT).
 
 El nombre "xevara-voice" sugiere una orientación hacia asistentes conversacionales con interfaz de voz, pero el modelo base Qwen2.5-7B-Instruct es estrictamente de texto: no incluye torre de audio, codificador ASR ni módulo TTS. Cualquier uso en un pipeline de voz requeriría componentes externos de reconocimiento y síntesis. La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo.
 

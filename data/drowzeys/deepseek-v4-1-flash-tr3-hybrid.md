@@ -102,7 +102,7 @@ La diferencia clave frente al pack Pollard es metodológica: allí todos los exp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/drowzeys/DeepSeek-V4.1-Flash-TR3-Hybrid
+- Repositorio en Hugging Face: https://huggingface.co/drowzeys/DeepSeek-V4.1-Flash-TR3-Hybrid
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Pack alternativo con cuantización uniforme Pollard: https://huggingface.co/bot-lab-21/DeepSeek-V4.1-Flash-EXL3-3.5bpw-Pollard
 - Origen del método TR3 híbrido: https://huggingface.co/brandonmusic/GLM-5.2-NVFP4-TR3-Hybrid

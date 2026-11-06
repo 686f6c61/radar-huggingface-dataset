@@ -6,7 +6,7 @@
 
 El repositorio tiene 5,9 GB porque incluye, además de los adaptadores, los estados de entrenamiento (cada 25 grupos de GRPO y el checkpoint final), recibos de ejecución y paquetes de resultados de evaluaciones periódicas de desarrollo (`summary.json` y `results.tar.gz`). La evaluación de desarrollo se realizó sobre 1056 celdas (combinación de los conjuntos PENGUIN y CASTLE por 11 topologías) usando el juez JEV-1.13.0, y el autor indica explícitamente que esa evaluación periódica es solo de monitorización: el punto de comparación es el checkpoint final fijo.
 
-Su relevancia es acotada y de carácter experimental: sirve para reproducir y auditar un pipeline de RL con GRPO sobre un modelo de ~4B, no como modelo listo para producción. La model card es mínima, no publica resultados numéricos de benchmarks, no declara licencia ni idiomas, y no hay pipeline definido en HuggingFace. Cualquier uso comercial o en producción requiere verificar primero la licencia del modelo base y validar el adaptador con datos propios.
+Su relevancia es acotada y de carácter experimental: sirve para reproducir y auditar un pipeline de RL con GRPO sobre un modelo de ~4B, no como modelo listo para producción. La model card es mínima, no publica resultados numéricos de benchmarks, no declara licencia ni idiomas, y no hay pipeline definido en Hugging Face. Cualquier uso comercial o en producción requiere verificar primero la licencia del modelo base y validar el adaptador con datos propios.
 
 ## Especificaciones tecnicas
 
@@ -72,11 +72,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| yinita/ps4mas-three-stage-11topo-20261014 | adaptador LoRA sobre base ~4B | no disponible | no disponible | HuggingFace, 0 descargas | Adaptador de investigacion, requiere el base Qwen3.5-4B |
-| Qwen/Qwen3.5-4B (modelo base) | ~4B | no disponible | no disponible | HuggingFace | Referencia directa: el adaptador modifica su comportamiento |
-| Qwen2.5-3B / 7B instruct (generacion anterior) | 3B / 7B | hasta 32K en la serie Qwen2.5 (verificar) | Apache 2.0 en la mayoria de variantes (verificar) | HuggingFace | Alternativa completa y desplegable sin adaptadores |
-| Llama 3.2 3B Instruct | 3B | 128K (verificar) | Llama Community License | HuggingFace | Alternativa de tamano similar con licencia conocida |
-| Gemma 3 4B | ~4B | 128K (verificar) | Gemma Terms of Use | HuggingFace | Alternativa de tamano similar orientada a uso general |
+| yinita/ps4mas-three-stage-11topo-20261014 | adaptador LoRA sobre base ~4B | no disponible | no disponible | Hugging Face, 0 descargas | Adaptador de investigacion, requiere el base Qwen3.5-4B |
+| Qwen/Qwen3.5-4B (modelo base) | ~4B | no disponible | no disponible | Hugging Face | Referencia directa: el adaptador modifica su comportamiento |
+| Qwen2.5-3B / 7B instruct (generacion anterior) | 3B / 7B | hasta 32K en la serie Qwen2.5 (verificar) | Apache 2.0 en la mayoria de variantes (verificar) | Hugging Face | Alternativa completa y desplegable sin adaptadores |
+| Llama 3.2 3B Instruct | 3B | 128K (verificar) | Llama Community License | Hugging Face | Alternativa de tamano similar con licencia conocida |
+| Gemma 3 4B | ~4B | 128K (verificar) | Gemma Terms of Use | Hugging Face | Alternativa de tamano similar orientada a uso general |
 
 Los datos de los modelos alternativos provienen de conocimiento general y deben verificarse en sus model cards antes de tomar decisiones; no se dispone de comparaciones de rendimiento con este adaptador porque no hay métricas publicadas.
 
@@ -96,7 +96,7 @@ Los datos de los modelos alternativos provienen de conocimiento general y deben 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yinita/ps4mas-three-stage-11topo-20261014
+- Modelo en Hugging Face: https://huggingface.co/yinita/ps4mas-three-stage-11topo-20261014
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Revision del modelo base citada: 851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a
 - Seguimiento del entrenamiento (Weights & Biases): proyecto `yinita/ps4mas-0922-training`

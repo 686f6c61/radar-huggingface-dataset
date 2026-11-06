@@ -1,7 +1,7 @@
 # synthetic-code-training/qwen3-4b-func-localize-claude47-1467i-multi-search-false338
 
 ## Resumen
-El modelo `synthetic-code-training/qwen3-4b-func-localize-claude47-1467i-multi-search-false338` es un modelo de lenguaje publicado en HuggingFace por el usuario `synthetic-code-training`. Según los metadatos disponibles, tiene 4.411.424.256 parámetros (aproximadamente 4.400 millones), formato safetensors y una plantilla de chat. El identificador sugiere que se trata de un fine-tuning de la familia Qwen3-4B orientado a tareas de localización de funciones, con un proceso de búsqueda múltiple y destilación de Claude 4.7, pero no hay documentación que lo confirme. El repositorio no incluye modelo card, especificaciones de entrenamiento ni benchmarks, por lo que el comportamiento real del modelo no está caracterizado. Con 1 descarga y 0 likes, su adopción es prácticamente nula. Relevancia: es un ejemplo de fine-tuning sintético sobre Qwen3, pero sin información suficiente para evaluarlo técnicamente.
+El modelo `synthetic-code-training/qwen3-4b-func-localize-claude47-1467i-multi-search-false338` es un modelo de lenguaje publicado en Hugging Face por el usuario `synthetic-code-training`. Según los metadatos disponibles, tiene 4.411.424.256 parámetros (aproximadamente 4.400 millones), formato safetensors y una plantilla de chat. El identificador sugiere que se trata de un fine-tuning de la familia Qwen3-4B orientado a tareas de localización de funciones, con un proceso de búsqueda múltiple y destilación de Claude 4.7, pero no hay documentación que lo confirme. El repositorio no incluye modelo card, especificaciones de entrenamiento ni benchmarks, por lo que el comportamiento real del modelo no está caracterizado. Con 1 descarga y 0 likes, su adopción es prácticamente nula. Relevancia: es un ejemplo de fine-tuning sintético sobre Qwen3, pero sin información suficiente para evaluarlo técnicamente.
 
 ## Especificaciones técnicas
 | Parámetro | Valor |
@@ -49,7 +49,7 @@ No disponible. No se han publicado comparativas con otros modelos en la informac
 - Cualquier uso en producción debe ir precedido de una evaluación exhaustiva en el dominio objetivo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/synthetic-code-training/qwen3-4b-func-localize-claude47-1467i-multi-search-false338
+- Modelo en Hugging Face: https://huggingface.co/synthetic-code-training/qwen3-4b-func-localize-claude47-1467i-multi-search-false338
 - Modelo relacionado del mismo autor: https://huggingface.co/synthetic-code-training/qwen3-4b-func-localize-claude47-1467i
 - Modelo relacionado del mismo autor: https://huggingface.co/synthetic-code-training/qwen3-4b-func-localize-claude47-1467i-multi-round-true338
 - Nota: los resultados de búsqueda web incluyen enlaces a productos de aceites hidráulicos que no guardan relación con este modelo.

@@ -6,7 +6,7 @@ El modelo `Toleng/koplak-flash-master-s21-1.5b-instruct` es un ajuste fino (fine
 
 El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. Su relevancia radica en que ofrece una alternativa ligera y eficiente para tareas de generación de texto y código en entornos con recursos limitados, aprovechando las capacidades del modelo base Qwen2.5-Coder, que destaca por su rendimiento en tareas de programación y razonamiento.
 
-El entrenamiento se realizó utilizando la librería Unsloth, que acelera el proceso de fine-tuning, y la librería TRL de HuggingFace. El modelo está disponible en formato safetensors y es compatible con el pipeline de text-generation de transformers, así como con text-generation-inference (TGI).
+El entrenamiento se realizó utilizando la librería Unsloth, que acelera el proceso de fine-tuning, y la librería TRL de Hugging Face. El modelo está disponible en formato safetensors y es compatible con el pipeline de text-generation de transformers, así como con text-generation-inference (TGI).
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ El entrenamiento se realizó utilizando la librería Unsloth, que acelera el pro
 
 El modelo se basa en la arquitectura Qwen2.5, un transformer decoder-only con atención causal estándar. El modelo base, Qwen2.5-Coder-1.5B-Instruct, fue pre-entrenado por Alibaba Cloud con un enfoque específico en generación de código, utilizando un dataset que combina texto general y código fuente de multiples lenguajes de programacion. La version instruct fue ajustada con tecnicas de instruccion y chat.
 
-El fine-tuning realizado por Toleng utilizo la libreria Unsloth, que optimiza el proceso de entrenamiento mediante kernels de atencion eficientes y tecnicas de cuantizacion en 4-bit (bitsandbytes). El entrenamiento se llevo a cabo con la libreria TRL de HuggingFace, que proporciona herramientas para fine-tuning con reinforcement learning y metodos de alineacion como PPO o DPO, aunque no se especifica cual de estos metodos se empleo.
+El fine-tuning realizado por Toleng utilizo la libreria Unsloth, que optimiza el proceso de entrenamiento mediante kernels de atencion eficientes y tecnicas de cuantizacion en 4-bit (bitsandbytes). El entrenamiento se llevo a cabo con la libreria TRL de Hugging Face, que proporciona herramientas para fine-tuning con reinforcement learning y metodos de alineacion como PPO o DPO, aunque no se especifica cual de estos metodos se empleo.
 
 No se dispone de informacion detallada sobre el dataset de fine-tuning, el numero de tokens de entrenamiento ni las hiperparametros utilizadas. El modelo base fue cuantizado a 4-bit durante el entrenamiento, lo que reduce los requisitos de memoria, pero el modelo final se publica en precision completa (safetensors).
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: aproximadamente 3 GB en precision FP16 (1,5B parametros x 2 bytes). Con cuantizacion 4-bit, la VRAM se reduce a unos 0,8-1 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para FP16 (NVIDIA GTX 1650, RTX 3050, etc.). Para cuantizacion 4-bit, basta con 2 GB de VRAM (GPU integradas modernas o GPUs antiguas).
 - Compatible con GPU de consumo: si, cabe en GPUs como RTX 3060, RTX 4060, e incluso en Apple Silicon con Metal.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, text-generation-inference (TGI), HuggingFace Inference Endpoints.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, text-generation-inference (TGI), Hugging Face Inference Endpoints.
 - Latencia estimada: en una GPU RTX 4090, la generacion de 100 tokens tarda aproximadamente 0,5-1 segundo. En CPU, la latencia es significativamente mayor (5-10 segundos por 100 tokens).
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ El modelo se posiciona como una alternativa ligera dentro de la familia Qwen2.5-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Toleng/koplak-flash-master-s21-1.5b-instruct
+- Modelo en Hugging Face: https://huggingface.co/Toleng/koplak-flash-master-s21-1.5b-instruct
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-Coder-1.5B-Instruct-bnb-4bit
 - Libreria Unsloth: https://github.com/unslothai/unsloth
 - Libreria TRL: https://github.com/huggingface/trl

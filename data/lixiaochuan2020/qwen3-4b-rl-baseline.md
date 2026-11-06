@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qwen3-4b-rl-baseline` es un ajuste fino por aprendizaje por refuerzo (RL) del modelo `lixiaochuan2020/qwen3-4b-midtrain-baseline`, que a su vez deriva de `Qwen/Qwen3-4B` tras un entrenamiento intermedio sobre trayectorias de agente de búsqueda generadas por `Qwen/Qwen3-32B`. Lo desarrolla el usuario de HuggingFace `lixiaochuan2020` y su proposito es servir como linea base (baseline) de un experimento de investigacion sobre atencion local por documento en agentes de busqueda.
+`qwen3-4b-rl-baseline` es un ajuste fino por aprendizaje por refuerzo (RL) del modelo `lixiaochuan2020/qwen3-4b-midtrain-baseline`, que a su vez deriva de `Qwen/Qwen3-4B` tras un entrenamiento intermedio sobre trayectorias de agente de búsqueda generadas por `Qwen/Qwen3-32B`. Lo desarrolla el usuario de Hugging Face `lixiaochuan2020` y su proposito es servir como linea base (baseline) de un experimento de investigacion sobre atencion local por documento en agentes de busqueda.
 
 El modelo se entrena con GRPO (Group Relative Policy Optimization) durante 300 pasos de rollout para resolver tareas de busqueda multi-salto: el modelo debe formular llamadas a una herramienta `wiki_search`, leer los pasajes recuperados y emitir una respuesta final verificable. El reward es binario y lo otorga un juez externo (`Qwen/Qwen3.5-9B`) que compara la respuesta final con las respuestas doradas.
 
@@ -27,7 +27,7 @@ La arquitectura es la de Qwen3-4B sin modificaciones estructurales: un transform
 
 El RL se ejecuta con el framework `miles` (entrenamiento FSDP, rollouts con SGLang) y el algoritmo GRPO. Se realizan 300 pasos de rollout, con 56 prompts por paso, 16 muestras por prompt y 4 pasos de optimizador por paso de RL. La temperatura de rollout es 1.0, se generan 4.096 tokens nuevos por turno, el contexto maximo es de 16.384 tokens y se permiten hasta 10 busquedas por rollout. La busqueda es `wiki_search` sobre wiki-18 con e5-base-v2 y top-5 pasajes. El coeficiente de KL es 0.001 con estimador `low_var_kl`, clip epsilon 0.2, coeficiente de entropia 0, optimizador Adam (beta1 0.9, beta2 0.999), learning rate 1e-6, warmup de 40 pasos de optimizador, schedule constante, weight decay 0 y norma maxima de gradiente 1.0. El entrenamiento y los rollouts se colocaron en 7 GPUs, con 1 GPU adicional para la busqueda y el juez del reward.
 
-Los datos de RL son una muestra aleatoria (semilla 0) del pool `nq_hotpotqa_train` de Search-R1 tras eliminar preguntas presentes en los datos SFT de AFM y preguntas repetidas: 32.000 preguntas de entrenamiento, de las cuales 16.524 son de HotpotQA y 15.476 de NQ. Las respuestas doradas solo se usan en el calculo del reward. El reward vale 1 cuando `Qwen/Qwen3.5-9B` (sin thinking, temperatura 0) juzga correcta la respuesta final contra las respuestas doradas, y 0 en caso contrario; se considera que no hay respuesta si el razonamiento no se cierra, si el ultimo turno sigue llamando a una herramienta o si la respuesta esta vacia o supera las 50 palabras. La conversion del checkpoint FSDP de miles a formato HuggingFace se valido contra el modelo de partida: mismos 4.022.468.096 parametros, todos finitos y cambio relativo L2 de los pesos de 0.0214.
+Los datos de RL son una muestra aleatoria (semilla 0) del pool `nq_hotpotqa_train` de Search-R1 tras eliminar preguntas presentes en los datos SFT de AFM y preguntas repetidas: 32.000 preguntas de entrenamiento, de las cuales 16.524 son de HotpotQA y 15.476 de NQ. Las respuestas doradas solo se usan en el calculo del reward. El reward vale 1 cuando `Qwen/Qwen3.5-9B` (sin thinking, temperatura 0) juzga correcta la respuesta final contra las respuestas doradas, y 0 en caso contrario; se considera que no hay respuesta si el razonamiento no se cierra, si el ultimo turno sigue llamando a una herramienta o si la respuesta esta vacia o supera las 50 palabras. La conversion del checkpoint FSDP de miles a formato Hugging Face se valido contra el modelo de partida: mismos 4.022.468.096 parametros, todos finitos y cambio relativo L2 de los pesos de 0.0214.
 
 ## Capacidades
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `lixiaochuan2020/qwen3-4b-rl-baseline` | 4.022.468.096 | 16.384 tokens | GRPO, 300 pasos, atencion completa | Apache 2.0 | Publico en HuggingFace |
-| `lixiaochuan2020/qwen3-4b-rl-local-kv-per-document` | no disponible (deriva del mismo mid-trained) | 16.384 tokens | GRPO, mismo RL con atencion local-KV por documento | no disponible | Publico en HuggingFace |
-| `lixiaochuan2020/qwen3-4b-midtrain-baseline` | 4.022.468.096 | 16.384 tokens | Mid-training supervisado sobre trayectorias de `Qwen3-32B` | no disponible | Publico en HuggingFace |
-| `Qwen/Qwen3-4B` | no disponible en la informacion | no disponible en la informacion | Preentrenamiento y post-entrenamiento de Qwen | no disponible en la informacion | Publico en HuggingFace |
+| `lixiaochuan2020/qwen3-4b-rl-baseline` | 4.022.468.096 | 16.384 tokens | GRPO, 300 pasos, atencion completa | Apache 2.0 | Publico en Hugging Face |
+| `lixiaochuan2020/qwen3-4b-rl-local-kv-per-document` | no disponible (deriva del mismo mid-trained) | 16.384 tokens | GRPO, mismo RL con atencion local-KV por documento | no disponible | Publico en Hugging Face |
+| `lixiaochuan2020/qwen3-4b-midtrain-baseline` | 4.022.468.096 | 16.384 tokens | Mid-training supervisado sobre trayectorias de `Qwen3-32B` | no disponible | Publico en Hugging Face |
+| `Qwen/Qwen3-4B` | no disponible en la informacion | no disponible en la informacion | Preentrenamiento y post-entrenamiento de Qwen | no disponible en la informacion | Publico en Hugging Face |
 
 La comparacion relevante es interna al linaje: el baseline RL frente a la variante local-KV y frente al modelo de mid-training sin RL. No se dispone de datos de rendimiento comparativos entre ellos en la informacion proporcionada.
 
@@ -88,7 +88,7 @@ La comparacion relevante es interna al linaje: el baseline RL frente a la varian
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lixiaochuan2020/qwen3-4b-rl-baseline
+- Modelo en Hugging Face: https://huggingface.co/lixiaochuan2020/qwen3-4b-rl-baseline
 - Modelo de mid-training: https://huggingface.co/lixiaochuan2020/qwen3-4b-midtrain-baseline
 - Variante con atencion local-KV por documento: https://huggingface.co/lixiaochuan2020/qwen3-4b-rl-local-kv-per-document
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-4B

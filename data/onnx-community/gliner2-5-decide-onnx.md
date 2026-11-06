@@ -100,12 +100,12 @@ Respecto al modelo base, esta exportación pierde las cabezas de extracción y g
 - Dependencia de la librería open-jev para el enrutado en navegador; su mantenimiento afecta directamente a la integración.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/onnx-community/GLiNER2.5-Decide-ONNX
+- Modelo en Hugging Face: https://huggingface.co/onnx-community/GLiNER2.5-Decide-ONNX
 - Modelo base: https://huggingface.co/fastino/GLiNER2.5-Decide
-- Organización ONNX Community en HuggingFace: https://huggingface.co/onnx-community
+- Organización ONNX Community en Hugging Face: https://huggingface.co/onnx-community
 - Blog de Fastino sobre GLiNER2.5-Decide: https://fastino.ai/blog/gliner-2-5-decide-open-weight-decision-model
 - Librería open-jev (integraciones con el modelo): https://github.com/nico-martin/open-jev
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/shreyask/open-jev-gliner2-demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/shreyask/open-jev-gliner2-demo
 - Runtime ONNX experimental para Python: https://github.com/lmoe/gliner2-onnx
 - Framework GLiNER original: https://github.com/urchade/GLiNER
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js

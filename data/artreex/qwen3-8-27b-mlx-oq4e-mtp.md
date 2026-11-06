@@ -65,5 +65,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/ArtReeX/Qwen3.8-27B-MLX-oQ4e-mtp)
+- [Repositorio en Hugging Face](https://huggingface.co/ArtReeX/Qwen3.8-27B-MLX-oQ4e-mtp)
 - [Herramienta oQ (oMLX)](https://github.com/jundot/omlx)

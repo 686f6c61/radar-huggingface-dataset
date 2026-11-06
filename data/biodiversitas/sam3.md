@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Biodiversitas/sam3 (este) | 859.922.360 | no disponible | Segmentación guiada por texto | SAM License | HuggingFace (espejo) |
-| facebook/sam3 | no disponible en la informacion | no disponible | Segmentación guiada por texto | SAM License | HuggingFace (original) |
+| Biodiversitas/sam3 (este) | 859.922.360 | no disponible | Segmentación guiada por texto | SAM License | Hugging Face (espejo) |
+| facebook/sam3 | no disponible en la informacion | no disponible | Segmentación guiada por texto | SAM License | Hugging Face (original) |
 | Otros modelos de la familia SAM | no disponible | no disponible | Segmentación | no disponible | no disponible |
 
 ## Limitaciones y advertencias

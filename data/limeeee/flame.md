@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FLAME | 6,6 B | 512 tokens | Detección de malware | LLAMA 2 Community License | HuggingFace (0 descargas) |
-| CodeLlama-7b-hf | 6,6 B | 16.384 tokens (modelo base) | Generación de código | LLAMA 2 Community License | HuggingFace (ampliamente distribuido) |
+| FLAME | 6,6 B | 512 tokens | Detección de malware | LLAMA 2 Community License | Hugging Face (0 descargas) |
+| CodeLlama-7b-hf | 6,6 B | 16.384 tokens (modelo base) | Generación de código | LLAMA 2 Community License | Hugging Face (ampliamente distribuido) |
 | Alternativas especializadas en detección de malware | no disponible | no disponible | Detección de malware | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos comparables especializados en detección estática de malware con los que establecer una comparación cuantitativa.
@@ -83,6 +83,6 @@ No se dispone de información sobre otros modelos comparables especializados en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/limeeee/flame
+- Modelo en Hugging Face: https://huggingface.co/limeeee/flame
 - Modelo base: https://huggingface.co/codellama/CodeLlama-7b-hf
 - Licencia LLAMA 2: https://ai.meta.com/llama/license/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LINK-01 es un adaptador LoRA de tipo PEFT publicado por el usuario spmoon dentro del proyecto CONNECT AI LAB, orientado a la toma de decisiones de un robot simulado llamado LINK-01. El modelo no es un LLM de propósito general, sino un modelo de lenguaje pequeño (Qwen3.5-0.8B) ajustado para leer el estado del robot en formato textual (distancia y dirección al objetivo, sensores de distancia, velocidad y acción previa) y responder con una única letra que corresponde a la siguiente acción de locomoción de 0,5 segundos. El pipeline declarado en HuggingFace es `reinforcement-learning`.
+LINK-01 es un adaptador LoRA de tipo PEFT publicado por el usuario spmoon dentro del proyecto CONNECT AI LAB, orientado a la toma de decisiones de un robot simulado llamado LINK-01. El modelo no es un LLM de propósito general, sino un modelo de lenguaje pequeño (Qwen3.5-0.8B) ajustado para leer el estado del robot en formato textual (distancia y dirección al objetivo, sensores de distancia, velocidad y acción previa) y responder con una única letra que corresponde a la siguiente acción de locomoción de 0,5 segundos. El pipeline declarado en Hugging Face es `reinforcement-learning`.
 
 La construcción es un destilado en dos fases: primero se entrena una política PPO en un simulador web (el "cerebro" o brain.json), después se generan pares observación-texto/acción a partir de las trayectorias de ese cerebro y se hace un ajuste supervisado con LoRA sobre Qwen3.5-0.8B, y finalmente un paso de refuerzo con PPO y penalización KL para alinear la salida del LLM con decisiones de mayor recompensa. El conjunto de datos es muy reducido: 701 ejemplos de entrenamiento, 164 de validación y 205 de test.
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-jjangu-v1-link01 | Base 0,8B + LoRA | No disponible | Decisión discreta en robot simulado | Apache 2.0 | HuggingFace, 18 descargas |
-| Qwen3.5-0.8B (base) | 0,8B | No disponible | LLM general | Según modelo base | HuggingFace |
+| connectailab-rl-jjangu-v1-link01 | Base 0,8B + LoRA | No disponible | Decisión discreta en robot simulado | Apache 2.0 | Hugging Face, 18 descargas |
+| Qwen3.5-0.8B (base) | 0,8B | No disponible | LLM general | Según modelo base | Hugging Face |
 | Política PPO original (brain.json) | No aplica (tabla/política) | No aplica | Decisión discreta en robot simulado | No disponible | Repositorio CONNECT TYCOON |
 
 No se dispone de comparaciones con otros adaptadores de decisión de la misma categoría en la información proporcionada.
@@ -89,7 +89,7 @@ No se dispone de comparaciones con otros adaptadores de decisión de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/spmoon/connectailab-rl-jjangu-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/spmoon/connectailab-rl-jjangu-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código (CONNECT TYCOON): https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

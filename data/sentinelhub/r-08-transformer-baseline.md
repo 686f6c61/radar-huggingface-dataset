@@ -2,7 +2,7 @@
 
 ## Resumen
 
-R-08 Transformer Baseline es un modelo de lenguaje causal (decoder-only) de tipo GPT-2 desarrollado por Thomas Seri bajo el perfil de HuggingFace SentinelHub. No es un modelo destinado a produccion, sino un modelo de control cientifico: se entreno especificamente para servir de referencia A/B frente a la familia Sentinel R-08, una arquitectura propietaria basada en esferas geodesicas y centro piramidal. El objetivo es comparar ambas arquitecturas a paridad de datos, tokenizador, contexto y presupuesto de parametros.
+R-08 Transformer Baseline es un modelo de lenguaje causal (decoder-only) de tipo GPT-2 desarrollado por Thomas Seri bajo el perfil de Hugging Face SentinelHub. No es un modelo destinado a produccion, sino un modelo de control cientifico: se entreno especificamente para servir de referencia A/B frente a la familia Sentinel R-08, una arquitectura propietaria basada en esferas geodesicas y centro piramidal. El objetivo es comparar ambas arquitecturas a paridad de datos, tokenizador, contexto y presupuesto de parametros.
 
 El modelo cuenta con 45.546.496 parametros totales (44.905.984 unicos segun la model card), 14 capas de atencion causal densa, dimension de modelo de 512 y 8 cabezas de atencion. Emplea un vocabulario subword de 1.251 piezas identico al de Sentinel R-08, lo que permite una comparacion token a token sin sesgos de tokenizacion. El contexto de entrenamiento es de 256 tokens.
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks estandar de la industria (MMLU, Hum
 
 | Modelo | Parametros | Contexto | BLiMP-IT | MultiBLiMP | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| R-08 Transformer Baseline | 44,9M | 256 | 85,84% (midtrain) | 86,83% (midtrain) | Apache 2.0 | HuggingFace |
-| Sentinel R-08 v7 Pyramid | 44,5M | 256 | 80,95% | 73,46% | no disponible | HuggingFace (Tom2701/R-08) |
-| Sentinel R-08 v7.2 | 51,6M | 256 | 82,02% | 73,46% | no disponible | HuggingFace (Tom2701/R-08-v7.2) |
-| GPT-2 small (referencia) | 124M | 1.024 | no disponible | no disponible | MIT | HuggingFace |
+| R-08 Transformer Baseline | 44,9M | 256 | 85,84% (midtrain) | 86,83% (midtrain) | Apache 2.0 | Hugging Face |
+| Sentinel R-08 v7 Pyramid | 44,5M | 256 | 80,95% | 73,46% | no disponible | Hugging Face (Tom2701/R-08) |
+| Sentinel R-08 v7.2 | 51,6M | 256 | 82,02% | 73,46% | no disponible | Hugging Face (Tom2701/R-08-v7.2) |
+| GPT-2 small (referencia) | 124M | 1.024 | no disponible | no disponible | MIT | Hugging Face |
 
 La comparativa directa solo es posible dentro de la familia R-08, ya que los benchmarks publicados (BLiMP-IT, MultiBLiMP) son especificos del estudio y no se reportan para modelos externos.
 
@@ -99,7 +99,7 @@ La comparativa directa solo es posible dentro de la familia R-08, ya que los ben
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SentinelHub/R-08-Transformer-Baseline
+- Hugging Face: https://huggingface.co/SentinelHub/R-08-Transformer-Baseline
 - Modelo comparado Sentinel R-08 v7 Pyramid: https://huggingface.co/Tom2701/R-08
 - Modelo comparado Sentinel R-08 v7.2: https://huggingface.co/Tom2701/R-08-v7.2
 - Repositorio GitHub Sentinel R-08: https://github.com/Thomasseri/R-08

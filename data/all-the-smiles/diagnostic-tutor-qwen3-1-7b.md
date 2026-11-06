@@ -69,8 +69,8 @@ No se han publicado resultados en benchmarks estándar como MMLU, HumanEval o GS
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-1.7B (base) | 1.7B | No especificado | Generalista | Apache 2.0 | HuggingFace |
-| **diagnostic-tutor-qwen3-1.7b** | 1.7B + adaptador | No especificado | Tutor de diagnóstico con restricción | Apache 2.0 | HuggingFace |
+| Qwen3-1.7B (base) | 1.7B | No especificado | Generalista | Apache 2.0 | Hugging Face |
+| **diagnostic-tutor-qwen3-1.7b** | 1.7B + adaptador | No especificado | Tutor de diagnóstico con restricción | Apache 2.0 | Hugging Face |
 | (No se dispone de otros modelos con restricción conductual similar en la información proporcionada) | - | - | - | - | - |
 
 La comparativa se limita al modelo base, ya que no se han identificado alternativas que implementen una restricción tan específica. El adaptador supera claramente al base en adherencia (70% vs 3.3%) y robustez (46.7% vs 0%).
@@ -87,8 +87,8 @@ La comparativa se limita al modelo base, ya que no se han identificado alternati
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/all-the-smiles/diagnostic-tutor-qwen3-1.7b)
-- [Modelo base Qwen3-1.7B en HuggingFace](https://huggingface.co/Qwen/Qwen3-1.7B)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/all-the-smiles/diagnostic-tutor-qwen3-1.7b)
+- [Modelo base Qwen3-1.7B en Hugging Face](https://huggingface.co/Qwen/Qwen3-1.7B)
 - [Colección de modelos Qwen3](https://huggingface.co/collections/Qwen/qwen3)
 
 No se encontraron otros enlaces (papers, blogs, demos) en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vikhr_legal es un modelo publicado en HuggingFace por el usuario orel1986 bajo licencia MIT. Por el nombre y las etiquetas del repositorio, se trata de un ajuste fino (fine-tuning) del modelo Vikhr, un modelo de lenguaje en ruso desarrollado originalmente por el equipo de Vikhrmodels. El sufijo "legal" sugiere una especializacion en el dominio juridico, probablemente entrenado sobre corpus de legislacion o documentacion legal en ruso.
+Vikhr_legal es un modelo publicado en Hugging Face por el usuario orel1986 bajo licencia MIT. Por el nombre y las etiquetas del repositorio, se trata de un ajuste fino (fine-tuning) del modelo Vikhr, un modelo de lenguaje en ruso desarrollado originalmente por el equipo de Vikhrmodels. El sufijo "legal" sugiere una especializacion en el dominio juridico, probablemente entrenado sobre corpus de legislacion o documentacion legal en ruso.
 
 La model card publicada es practicamente vacia: no incluye descripcion del modelo, datos de entrenamiento, arquitectura ni resultados de evaluacion. El repositorio tiene un tamano de 0,2 GB, lo que es coherente con un modelo pequeno o con pesos cuantizados, aunque no se especifica el formato exacto de los pesos mas alla de la presencia de safetensors. La etiqueta "unsloth" indica que el entrenamiento se realizo con la libreria Unsloth, orientada a fine-tuning eficiente en memoria.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Adopcion |
 |---|---|---|---|---|---|
 | orel1986/vikhr_legal | no disponible | no disponible | MIT | Practicamente inexistente | 0 descargas |
-| Vikhr (modelo base) | no disponible en esta ficha | no disponible | no disponible | Disponible en HuggingFace | Comunidad activa en ruso |
+| Vikhr (modelo base) | no disponible en esta ficha | no disponible | no disponible | Disponible en Hugging Face | Comunidad activa en ruso |
 | Saiga (familia de fine-tunes en ruso) | Variable segun version | Variable | Variable | Model cards detalladas | Adopcion moderada |
 
 La comparacion cuantitativa no es posible por falta de datos publicados del modelo evaluado.
@@ -79,4 +79,4 @@ La comparacion cuantitativa no es posible por falta de datos publicados del mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/orel1986/vikhr_legal
+- Hugging Face: https://huggingface.co/orel1986/vikhr_legal

@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mstrasser/jeff-adapter-message-triage
+- Modelo en Hugging Face: https://huggingface.co/mstrasser/jeff-adapter-message-triage
 - Modelo base: https://huggingface.co/mstrasser/jeff-base
 - Pagina del catalogo: https://jeffhub.ai/catalogue/jeff.support.message-triage
 - Codigo, servidor y SDKs: https://github.com/firelex/jeff

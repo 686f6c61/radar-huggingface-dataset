@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idioma objetivo | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| asounimelb/whisper-tiny-ckb-onnx (este modelo) | 39M | 30 s de audio por ventana | Kurdo central (sorani) | ONNX fp32 + q8/q4 | Apache 2.0 | HuggingFace, 0 descargas |
-| asounimelb/whisper-base-ckb-onnx | 74M | 30 s de audio por ventana | Kurdo central (sorani) | ONNX | Apache 2.0 | HuggingFace |
-| asounimelb/whisper-small-ckb-onnx | 244M | 30 s de audio por ventana | Kurdo central (sorani) | ONNX | Apache 2.0 | HuggingFace |
-| openai/whisper-tiny | 39M | 30 s de audio por ventana | 99 idiomas, sin kurdo central | safetensors / multiples | Apache 2.0 | HuggingFace |
+| asounimelb/whisper-tiny-ckb-onnx (este modelo) | 39M | 30 s de audio por ventana | Kurdo central (sorani) | ONNX fp32 + q8/q4 | Apache 2.0 | Hugging Face, 0 descargas |
+| asounimelb/whisper-base-ckb-onnx | 74M | 30 s de audio por ventana | Kurdo central (sorani) | ONNX | Apache 2.0 | Hugging Face |
+| asounimelb/whisper-small-ckb-onnx | 244M | 30 s de audio por ventana | Kurdo central (sorani) | ONNX | Apache 2.0 | Hugging Face |
+| openai/whisper-tiny | 39M | 30 s de audio por ventana | 99 idiomas, sin kurdo central | safetensors / multiples | Apache 2.0 | Hugging Face |
 
 Las tres variantes en kurdo central fueron ajustadas con los mismos datos y la misma receta, por lo que la diferencia entre ellas es exclusivamente el tamano del modelo base y el coste de inferencia asociado. No se dispone en la informacion proporcionada de datos de rendimiento comparativos entre ellas, ni de otros modelos de ASR en kurdo central con los que contrastar.
 
@@ -84,7 +84,7 @@ Las tres variantes en kurdo central fueron ajustadas con los mismos datos y la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asounimelb/whisper-tiny-ckb-onnx
+- Modelo en Hugging Face: https://huggingface.co/asounimelb/whisper-tiny-ckb-onnx
 - Variante base (74M): https://huggingface.co/asounimelb/whisper-base-ckb-onnx
 - Variante small (244M): https://huggingface.co/asounimelb/whisper-small-ckb-onnx
 - Modelo base: https://huggingface.co/openai/whisper-tiny

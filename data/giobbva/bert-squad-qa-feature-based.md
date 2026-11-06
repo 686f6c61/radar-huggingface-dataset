@@ -2,11 +2,11 @@
 
 ## Resumen
 
-bert-squad-qa-feature-based es un modelo extractivo de question answering publicado por el usuario Giobbva en HuggingFace. No se trata de un transformer afinado de extremo a extremo, sino de un pipeline híbrido: utiliza google-bert/bert-base-uncased congelado como extractor de características y sobre esas representaciones entrena un clasificador de regresión logística de scikit-learn. El artefacto se distribuye como fichero joblib dentro de un repositorio con licencia Apache 2.0 y pipeline declarado `question-answering`.
+bert-squad-qa-feature-based es un modelo extractivo de question answering publicado por el usuario Giobbva en Hugging Face. No se trata de un transformer afinado de extremo a extremo, sino de un pipeline híbrido: utiliza google-bert/bert-base-uncased congelado como extractor de características y sobre esas representaciones entrena un clasificador de regresión logística de scikit-learn. El artefacto se distribuye como fichero joblib dentro de un repositorio con licencia Apache 2.0 y pipeline declarado `question-answering`.
 
 El modelo responde únicamente a preguntas en inglés y está orientado a funcionar como línea base (baseline) reproducible frente a la que medir aproximaciones más sofisticadas. Sus resultados declarados en SQuAD v1.1 son de 14,35 de exact match y 24,57 de F1 en el split de validación, cifras muy alejadas de las de un BERT-base afinado de forma convencional, lo que confirma su naturaleza de experimento metodológico más que de solución de producción.
 
-Su relevancia actual es acotada y muy específica: sirve para estudiar hasta qué punto un clasificador lineal sobre embeddings congelados puede resolver una tarea de QA extractivo, y como punto de comparación barato en términos de cómputo, ya que no requiere entrenar el encoder. El acceso al repositorio está restringido (gated) y el tamaño declarado del mismo es de 0,0 GB, por lo que la disponibilidad real del artefacto joblib debe verificarse tras aceptar las condiciones en HuggingFace.
+Su relevancia actual es acotada y muy específica: sirve para estudiar hasta qué punto un clasificador lineal sobre embeddings congelados puede resolver una tarea de QA extractivo, y como punto de comparación barato en términos de cómputo, ya que no requiere entrenar el encoder. El acceso al repositorio está restringido (gated) y el tamaño declarado del mismo es de 0,0 GB, por lo que la disponibilidad real del artefacto joblib debe verificarse tras aceptar las condiciones en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -23,8 +23,8 @@ Su relevancia actual es acotada y muy específica: sirve para estudiar hasta qu�
 | Dataset de referencia | rajpurkar/squad (SQuAD v1.1) |
 | Modelo base | google-bert/bert-base-uncased (fine-tune declarado en las etiquetas) |
 | Librería | scikit-learn |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
-| Tamaño del repositorio | 0,0 GB (según la información de HuggingFace) |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
+| Tamaño del repositorio | 0,0 GB (según la información de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -78,7 +78,7 @@ No se han publicado en la información disponible otros resultados de benchmarks
 
 | Modelo | Tipo | Parámetros | Contexto | F1 en SQuAD v1.1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Giobbva/bert-squad-qa-feature-based | Feature extraction + regresión logística | No disponible (encoder base de 110 M) | 512 tokens | 24,57 (declarado, no verificado) | Apache 2.0 | Gated en HuggingFace |
+| Giobbva/bert-squad-qa-feature-based | Feature extraction + regresión logística | No disponible (encoder base de 110 M) | 512 tokens | 24,57 (declarado, no verificado) | Apache 2.0 | Gated en Hugging Face |
 | google-bert/bert-base-uncased | Transformer encoder preentrenado, sin ajuste para QA | 110 M | 512 tokens | No disponible en la información proporcionada (no resuelve la tarea sin ajuste) | Apache 2.0 | Público |
 | Modelos BERT-base ajustados con fine-tuning completo para SQuAD | Transformer ajustado de extremo a extremo | 110 M | 512 tokens | No disponible en la información proporcionada; se sitúan muy por encima del enfoque basado en características | Habitualmente Apache 2.0 o MIT | Público |
 
@@ -91,7 +91,7 @@ La comparación cuantitativa con alternativas concretas no puede completarse por
 - Solo soporta inglés; no hay evidencia de capacidades multilingües.
 - Es un modelo extractivo: no genera texto, no mantiene conversaciones multi-turno y no puede razonar más allá de seleccionar un span del contexto.
 - Riesgo de alucinación trasladado al formato extractivo: puede devolver spans irrelevantes o mal alineados cuando la respuesta no está presente en el contexto, ya que no incorpora un mecanismo explícito de abstención.
-- Acceso restringido: es necesario aceptar condiciones en HuggingFace para descargar el repositorio, lo que puede dificultar la reproducibilidad y la integración automatizada.
+- Acceso restringido: es necesario aceptar condiciones en Hugging Face para descargar el repositorio, lo que puede dificultar la reproducibilidad y la integración automatizada.
 - El tamaño del repositorio reportado es de 0,0 GB, lo que sugiere que el artefacto joblib puede no estar efectivamente publicado o es de tamaño despreciable; conviene verificarlo antes de planificar cualquier uso.
 - Incompatibilidad con los runners de inferencia habituales (vLLM, TGI, Ollama, llama.cpp) por tratarse de un artefacto scikit-learn, lo que obliga a desarrollar serving a medida.
 - La licencia Apache 2.0 permite uso comercial, pero el acceso gated añade condiciones propias del repositorio que deben revisarse.
@@ -99,6 +99,6 @@ La comparación cuantitativa con alternativas concretas no puede completarse por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Giobbva/bert-squad-qa-feature-based
+- Modelo en Hugging Face: https://huggingface.co/Giobbva/bert-squad-qa-feature-based
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Dataset SQuAD v1.1: https://huggingface.co/datasets/rajpurkar/squad

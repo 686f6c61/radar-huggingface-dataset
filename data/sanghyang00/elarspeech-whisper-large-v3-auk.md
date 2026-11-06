@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ELARSpeech-Whisper-Large-v3-auk es un modelo de reconocimiento automático del habla (ASR) obtenido por ajuste fino (*fine-tuning*) del checkpoint `openai/whisper-large-v3` sobre datos del proyecto ELARSpeech. Lo publica el usuario Sanghyang00 en HuggingFace y está especializado en una única lengua: el heiyoho (código ISO 639-3 `auk`), una de las lenguas de cola larga cubiertas por el corpus ELARSpeech. El modelo se distribuye con la arquitectura `WhisperForConditionalGeneration`, es decir, un transformer encoder-decoder con 1.543.491.840 parámetros (aproximadamente 1,55 mil millones) y pesos en formato `safetensors`.
+ELARSpeech-Whisper-Large-v3-auk es un modelo de reconocimiento automático del habla (ASR) obtenido por ajuste fino (*fine-tuning*) del checkpoint `openai/whisper-large-v3` sobre datos del proyecto ELARSpeech. Lo publica el usuario Sanghyang00 en Hugging Face y está especializado en una única lengua: el heiyoho (código ISO 639-3 `auk`), una de las lenguas de cola larga cubiertas por el corpus ELARSpeech. El modelo se distribuye con la arquitectura `WhisperForConditionalGeneration`, es decir, un transformer encoder-decoder con 1.543.491.840 parámetros (aproximadamente 1,55 mil millones) y pesos en formato `safetensors`.
 
 Su relevancia es acotada pero concreta: la práctica totalidad de los sistemas ASR comerciales y open source rinden de forma pobre o directamente nula en lenguas con pocos hablantes y escasa representación digital. Este modelo traslada la capacidad acústica de Whisper large-v3 a una de esas lenguas mediante ajuste supervisado, y permite obtener transcripciones en heiyoho sin entrenar un sistema desde cero. Forma parte de una colección de adaptaciones por idioma publicadas por el mismo autor (por ejemplo, la variante `-afu`) dentro del ecosistema ELARSpeech, presentado como un corpus de 30.000 horas y 675 lenguas infrarrepresentadas.
 
@@ -73,17 +73,17 @@ La única métrica aportada por el autor es cualitativa: el artefacto exportado 
 - VRAM estimada con cuantización de 8 bits: del orden de 2 GB de pesos, aunque el repositorio no publica pesos ya cuantizados y habría que generarlos.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para fp16 (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090). Para servir varias peticiones concurrentes o audio largo, A100 40/80 GB o H100.
 - Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más de VRAM en fp16 y con 12 GB o más si se quiere margen para lotes o audio de larga duración.
-- Opciones de despliegue: `transformers` con `WhisperForConditionalGeneration` y `WhisperProcessor` es la ruta documentada por el autor; también vLLM y TGI para servir el modelo con *batching* continuo, y HuggingFace Inference Endpoints (el repositorio está etiquetado como `endpoints_compatible`). Para `llama.cpp` u Ollama sería necesario convertir los pesos a GGUF, conversión no documentada por el autor.
+- Opciones de despliegue: `transformers` con `WhisperForConditionalGeneration` y `WhisperProcessor` es la ruta documentada por el autor; también vLLM y TGI para servir el modelo con *batching* continuo, y Hugging Face Inference Endpoints (el repositorio está etiquetado como `endpoints_compatible`). Para `llama.cpp` u Ollama sería necesario convertir los pesos a GGUF, conversión no documentada por el autor.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto / ventana | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sanghyang00/ELARSpeech-Whisper-Large-v3-auk | 1.543.491.840 | Ventanas de 30 s de audio | auk (heiyoho) | No disponible | HuggingFace, 0 descargas |
-| openai/whisper-large-v3 | 1,55 mil millones (segun la informacion disponible) | Ventanas de 30 s de audio; Mel de 128 bins | Multilingue (amplia cobertura, con rendimiento variable segun idioma) | No disponible en la informacion proporcionada | HuggingFace, modelo de referencia ampliamente desplegado |
+| Sanghyang00/ELARSpeech-Whisper-Large-v3-auk | 1.543.491.840 | Ventanas de 30 s de audio | auk (heiyoho) | No disponible | Hugging Face, 0 descargas |
+| openai/whisper-large-v3 | 1,55 mil millones (segun la informacion disponible) | Ventanas de 30 s de audio; Mel de 128 bins | Multilingue (amplia cobertura, con rendimiento variable segun idioma) | No disponible en la informacion proporcionada | Hugging Face, modelo de referencia ampliamente desplegado |
 | openai/whisper-large-v3-turbo | No disponible | No disponible | Multilingue | No disponible en la informacion proporcionada | Version optimizada de large-v3 que ofrece mayor velocidad de transcripcion con una degradacion minima de la precision |
-| Sanghyang00/ELARSpeech-Whisper-Large-v3-afu | Derivado del mismo modelo base; valor no verificado en la informacion disponible | Ventanas de 30 s de audio (heredado) | Idioma correspondiente al codigo ISO 639-3 `afu` | No disponible | HuggingFace; misma coleccion ELARSpeech |
+| Sanghyang00/ELARSpeech-Whisper-Large-v3-afu | Derivado del mismo modelo base; valor no verificado en la informacion disponible | Ventanas de 30 s de audio (heredado) | Idioma correspondiente al codigo ISO 639-3 `afu` | No disponible | Hugging Face; misma coleccion ELARSpeech |
 
 La comparación relevante es de especialización frente a cobertura: `whisper-large-v3` cubre muchos idiomas pero rinde de forma desigual en lenguas con pocos datos, mientras que `-auk` sacrifica toda cobertura multilingüe a cambio de un ajuste supervisado en heiyoho. Frente a `whisper-large-v3-turbo`, la variante ELARSpeech no ofrece ventajas de velocidad conocidas. No hay datos públicos de WER que permitan cuantificar la mejora respecto al modelo base en esta lengua.
 
@@ -102,7 +102,7 @@ La comparación relevante es de especialización frente a cobertura: `whisper-la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanghyang00/ELARSpeech-Whisper-Large-v3-auk
+- Modelo en Hugging Face: https://huggingface.co/Sanghyang00/ELARSpeech-Whisper-Large-v3-auk
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Repositorio del código de Whisper: https://github.com/openai/whisper
 - Repositorio del proyecto ELARSpeech: https://github.com/sanghyang00/elarspeech

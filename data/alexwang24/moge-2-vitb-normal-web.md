@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MoGe-2 ViT-B normal es un modelo de estimación de profundidad y normales de superficie desarrollado originalmente por Microsoft (repositorio MoGe) y publicado en HuggingFace bajo el identificador `Ruicheng/moge-2-vitb-normal`. Esta variante concreta, `alexwang24/moge-2-vitb-normal-web`, es un reempaquetado del modelo original orientado a su ejecución en el navegador mediante ONNX Runtime Web, exportado siguiendo la documentación oficial de MoGe y dividido en dos ficheros para facilitar la descarga desde una página web.
+MoGe-2 ViT-B normal es un modelo de estimación de profundidad y normales de superficie desarrollado originalmente por Microsoft (repositorio MoGe) y publicado en Hugging Face bajo el identificador `Ruicheng/moge-2-vitb-normal`. Esta variante concreta, `alexwang24/moge-2-vitb-normal-web`, es un reempaquetado del modelo original orientado a su ejecución en el navegador mediante ONNX Runtime Web, exportado siguiendo la documentación oficial de MoGe y dividido en dos ficheros para facilitar la descarga desde una página web.
 
 El modelo resuelve dos tareas de visión por computador estrechamente relacionadas: la estimación de profundidad monocular (a partir de una sola imagen) y la predicción de normales de superficie, lo que permite reconstruir la geometría de una escena y aplicar técnicas de reiluminación. La arquitectura se basa en un backbone ViT-B (Vision Transformer, variante base) con una cabeza específica para normales, y el paquete incluye los pesos en fp16 para reducir a la mitad el tamaño de descarga (210 MB frente a los 419 MB del modelo completo en fp32) sin degradar la precisión de forma apreciable.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alexwang24/moge-2-vitb-normal-web | no disponible (ViT-B) | no aplica | Profundidad + normales, ONNX para navegador | MIT (con Apache 2.0 de DINOv2) | HuggingFace, 0 descargas |
-| Ruicheng/moge-2-vitb-normal | no disponible (ViT-B) | no aplica | Profundidad + normales, pesos originales | MIT | HuggingFace (modelo base) |
+| alexwang24/moge-2-vitb-normal-web | no disponible (ViT-B) | no aplica | Profundidad + normales, ONNX para navegador | MIT (con Apache 2.0 de DINOv2) | Hugging Face, 0 descargas |
+| Ruicheng/moge-2-vitb-normal | no disponible (ViT-B) | no aplica | Profundidad + normales, pesos originales | MIT | Hugging Face (modelo base) |
 | Otros estimadores de profundidad monocular | no disponible | no aplica | Profundidad | variable | no disponible |
 
 La información proporcionada no permite establecer comparaciones cuantitativas con alternativas de la misma categoría.
@@ -79,7 +79,7 @@ La información proporcionada no permite establecer comparaciones cuantitativas 
 
 ## Enlaces
 
-- HuggingFace del reempaquetado: https://huggingface.co/alexwang24/moge-2-vitb-normal-web
+- Hugging Face del reempaquetado: https://huggingface.co/alexwang24/moge-2-vitb-normal-web
 - Modelo base: https://huggingface.co/Ruicheng/moge-2-vitb-normal
 - Repositorio oficial de MoGe (Microsoft): https://github.com/microsoft/MoGe
 - Aplicación que lo utiliza: https://afterlux.app

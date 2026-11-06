@@ -87,7 +87,7 @@ No se dispone de datos de otros modelos ASR comparables (por ejemplo, Whisper) e
 
 ## Enlaces
 
-- [HuggingFace: stepsergius/parakeet-ultra-uk-int8](https://huggingface.co/stepsergius/parakeet-ultra-uk-int8)
+- [Hugging Face: stepsergius/parakeet-ultra-uk-int8](https://huggingface.co/stepsergius/parakeet-ultra-uk-int8)
 - [Modelo base: moondream/parakeet-ultra](https://huggingface.co/moondream/parakeet-ultra)
 - [Modelo original: nvidia/parakeet-tdt-0.6b-v3](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3)
 - [Repositorio sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx)

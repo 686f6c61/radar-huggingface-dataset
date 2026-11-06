@@ -23,7 +23,7 @@ Dada la naturaleza experimental y la falta de documentación pública, este mode
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta no está documentada, pero los tags de HuggingFace indican `qwen3_5_moe`, lo que sugiere que el modelo base pertenece a la familia Qwen3.5 con arquitectura de mezcla de expertos (MoE). El nombre del archivo incluye "offline-dpo-ultraalpha-midrank-extrasteps", lo que sugiere que se aplicó un entrenamiento de optimización de preferencias directa (DPO) con una configuración específica (posiblemente "ultraalpha" como hiperparámetro y "midrank" para la selección de ejemplos). El modelo se describe como un "LoRA-merged" del checkpoint `kevin954/Affine-5dfqbbh8ev-sft`, lo que implica que se fusionaron adaptadores LoRA en los pesos del modelo base.
+La arquitectura exacta no está documentada, pero los tags de Hugging Face indican `qwen3_5_moe`, lo que sugiere que el modelo base pertenece a la familia Qwen3.5 con arquitectura de mezcla de expertos (MoE). El nombre del archivo incluye "offline-dpo-ultraalpha-midrank-extrasteps", lo que sugiere que se aplicó un entrenamiento de optimización de preferencias directa (DPO) con una configuración específica (posiblemente "ultraalpha" como hiperparámetro y "midrank" para la selección de ejemplos). El modelo se describe como un "LoRA-merged" del checkpoint `kevin954/Affine-5dfqbbh8ev-sft`, lo que implica que se fusionaron adaptadores LoRA en los pesos del modelo base.
 
 No se proporcionan detalles sobre el número de tokens de entrenamiento, la composición del dataset, ni si se usaron técnicas adicionales como RLHF. El tag `image-text-to-text` podría indicar que el modelo fue entrenado o ajustado para tareas multimodales, pero no hay confirmación en la documentación.
 
@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r492-offline-dpo-ultraalpha-midrank-extrasteps-merged
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r492-offline-dpo-ultraalpha-midrank-extrasteps-merged
 - Modelo base (referenciado): https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft
 
 No se encontraron otros enlaces (papers, blogs, demos) en la información proporcionada.

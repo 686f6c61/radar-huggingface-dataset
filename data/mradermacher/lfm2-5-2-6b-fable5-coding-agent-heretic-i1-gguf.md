@@ -94,7 +94,7 @@ No se han publicado comparativas oficiales frente a estos modelos.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta ficha (GGUF imatrix): https://huggingface.co/mradermacher/lfm2.5-2.6b-fable5-coding-agent-heretic-i1-GGUF
+- Repositorio Hugging Face de esta ficha (GGUF imatrix): https://huggingface.co/mradermacher/lfm2.5-2.6b-fable5-coding-agent-heretic-i1-GGUF
 - Resumen y lista de descargas del autor: https://hf.tst.eu/model#lfm2.5-2.6b-fable5-coding-agent-heretic-i1-GGUF
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/lfm2.5-2.6b-fable5-coding-agent-heretic-GGUF
 - Modelo base del fine-tune: https://huggingface.co/AzariazIZI/lfm2.5-2.6b-fable5-coding-agent-heretic

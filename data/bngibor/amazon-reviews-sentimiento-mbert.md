@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Bngibor/amazon-reviews-sentimiento-mbert` es un clasificador de sentimiento multilingüe de tres clases (negativo, neutro, positivo) obtenido mediante fine-tuning de `google-bert/bert-base-multilingual-cased` sobre el corpus `mteb/amazon_reviews_multi` restringido a los idiomas espanol, ingles y frances. Lo publica el usuario Bngibor en HuggingFace y su tarea declarada es el analisis de sentimiento de resenas de producto (text-classification / sentiment-analysis).
+El modelo `Bngibor/amazon-reviews-sentimiento-mbert` es un clasificador de sentimiento multilingüe de tres clases (negativo, neutro, positivo) obtenido mediante fine-tuning de `google-bert/bert-base-multilingual-cased` sobre el corpus `mteb/amazon_reviews_multi` restringido a los idiomas espanol, ingles y frances. Lo publica el usuario Bngibor en Hugging Face y su tarea declarada es el analisis de sentimiento de resenas de producto (text-classification / sentiment-analysis).
 
 Tecnicamente se trata de un transformer encoder bidireccional clasico de la familia BERT, con aproximadamente 178 millones de parametros, 12 capas, tamano oculto de 768 y una ventana de contexto maxima de 512 tokens, todo ello heredado del checkpoint base. El fine-tuning convierta la cabeza de modelado de lenguaje enmascarado en un clasificador de secuencias de tres etiquetas, sin modificaciones arquitectonicas conocidas.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Base | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Bngibor/amazon-reviews-sentimiento-mbert | bert-base-multilingual-cased | ~178 M | 512 | es, en, fr | no disponible | HuggingFace |
-| Diegopr3312/mbert-sentiment-amazon-multilingual | mBERT (multilingual BERT) | ~178 M | 512 | multilingue (segun su card) | no disponible | HuggingFace |
-| sohan-ai/sentiment-analysis-model-amazon-reviews | DistilBERT | ~66 M | 512 | no especificado | no disponible | HuggingFace |
+| Bngibor/amazon-reviews-sentimiento-mbert | bert-base-multilingual-cased | ~178 M | 512 | es, en, fr | no disponible | Hugging Face |
+| Diegopr3312/mbert-sentiment-amazon-multilingual | mBERT (multilingual BERT) | ~178 M | 512 | multilingue (segun su card) | no disponible | Hugging Face |
+| sohan-ai/sentiment-analysis-model-amazon-reviews | DistilBERT | ~66 M | 512 | no especificado | no disponible | Hugging Face |
 | alexliqu09/Sentiment-Analysis-on-Amazon-Reviews | BERT espanol y mBERT | ~110-178 M | 512 | es, en | no disponible | Repositorio GitHub |
 
 No se dispone de resultados de benchmarks comparativos entre estos modelos en la informacion proporcionada; la comparacion se limita a parametros, contexto, idiomas y forma de distribucion.
@@ -85,7 +85,7 @@ No se dispone de resultados de benchmarks comparativos entre estos modelos en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bngibor/amazon-reviews-sentimiento-mbert
+- Modelo en Hugging Face: https://huggingface.co/Bngibor/amazon-reviews-sentimiento-mbert
 - Modelo base: https://huggingface.co/google-bert/bert-base-multilingual-cased
 - Dataset de entrenamiento: https://huggingface.co/datasets/mteb/amazon_reviews_multi
 - Repositorio GitHub de referencia (comparativa BERT espanol vs mBERT): https://github.com/alexliqu09/Sentiment-Analysis-on-Amazon-Reviews

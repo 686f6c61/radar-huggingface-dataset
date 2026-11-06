@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gaurav36/sentiment-model es un modelo de clasificación de texto publicado en HuggingFace por el usuario gaurav36. Se trata de un ajuste fino (*fine-tuning*) de distilbert-base-uncased, la variante destilada de BERT-base, orientado a análisis de sentimiento dentro de la pipeline `text-classification`. El modelo tiene 66.955.779 parámetros, hereda el encoder de 6 capas y 768 dimensiones ocultas de DistilBERT y se distribuye bajo licencia Apache 2.0 en formato safetensors.
+gaurav36/sentiment-model es un modelo de clasificación de texto publicado en Hugging Face por el usuario gaurav36. Se trata de un ajuste fino (*fine-tuning*) de distilbert-base-uncased, la variante destilada de BERT-base, orientado a análisis de sentimiento dentro de la pipeline `text-classification`. El modelo tiene 66.955.779 parámetros, hereda el encoder de 6 capas y 768 dimensiones ocultas de DistilBERT y se distribuye bajo licencia Apache 2.0 en formato safetensors.
 
 El modelo resuelve una tarea concreta: asignar una etiqueta de sentimiento a un texto de entrada. Sin embargo, la propia model card lo declara entrenado sobre un conjunto de datos desconocido ("unknown dataset") y no especifica el esquema de etiquetas (número de clases, nombres de las etiquetas) ni los usos previstos. Las métricas publicadas son modestas: *accuracy* de 0,6713, F1 ponderado y F1 macro de 0,6673 sobre un conjunto de evaluación no descrito.
 
@@ -41,7 +41,7 @@ La evolucion del entrenamiento muestra un descenso continuado de la perdida de e
 - Clasificacion de secuencias de texto mediante la pipeline `text-classification` de Transformers: devuelve una etiqueta y una puntuacion de confianza por entrada.
 - Analisis de sentimiento sobre fragmentos de texto cortos, presumiblemente en ingles por herencia del modelo base (no confirmado por el autor).
 - Inferencia por lotes (*batch inference*), al ser un encoder de 66 millones de parametros con requisitos de memoria minimos.
-- Compatibilidad declarada con los *endpoints* de HuggingFace (etiqueta `endpoints_compatible`) y exportacion a otros runtimes mediante las herramientas estandar de Transformers.
+- Compatibilidad declarada con los *endpoints* de Hugging Face (etiqueta `endpoints_compatible`) y exportacion a otros runtimes mediante las herramientas estandar de Transformers.
 - No dispone de generacion de texto: es un modelo discriminativo, no autoregresivo.
 - No soporta *tool calling* ni *function calling*.
 - No soporta agentes, razonamiento multi-paso ni cadenas de pensamiento (*thinking mode*).
@@ -52,7 +52,7 @@ La evolucion del entrenamiento muestra un descenso continuado de la perdida de e
 ## Casos de uso
 
 - Prototipado y validacion de pipelines de NLP: sirve para comprobar el funcionamiento extremo a extremo de un flujo `transformers` → tokenizer → cabeza de clasificacion antes de invertir en un modelo mejor entrenado.
-- Material docente y tutoriales: al ser un ajuste fino pequeno sobre DistilBERT, es util para ilustrar el ciclo completo de entrenamiento y evaluacion con el `Trainer` de HuggingFace, incluida la interpretacion de curvas de perdida.
+- Material docente y tutoriales: al ser un ajuste fino pequeno sobre DistilBERT, es util para ilustrar el ciclo completo de entrenamiento y evaluacion con el `Trainer` de Hugging Face, incluida la interpretacion de curvas de perdida.
 - Pruebas de integracion y *smoke tests*: su tamano (0,3 GB) permite incluirlo en imagenes Docker de CI para verificar que el servicio de inferencia arranca y responde correctamente.
 - Etiquetado preliminar con revision humana: puede usarse como preanotador de sentimiento en un flujo de anotacion asistida, siempre que un revisor corrija las predicciones, dado que su exactitud declarada ronda el 67 %.
 - Referencia base (*baseline*) en experimentos comparativos: util para cuantificar la mejora que aportan modelos como RoBERTa o DeBERTa ajustados sobre el mismo conjunto de datos, aunque no se conoce cual es ese conjunto.
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks comparativos en la informacion disp
 - VRAM estimada para inferencia: por debajo de 1 GB incluyendo activaciones y *overhead* del runtime para secuencias de 512 tokens; el modelo no requiere GPU.
 - GPU recomendadas: cualquiera. Funciona en GPUs de consumo como RTX 3060, RTX 4060 o superiores, y tambien en GPUs de centro de datos (A100, H100), donde estaria infrautilizada salvo en escenarios de altisimo *throughput* por lotes.
 - CPU: es perfectamente viable. Un procesador moderno puede servir peticiones individuales en un rango de milisegundos a decenas de milisegundos por secuencia corta.
-- Opciones de despliegue: pipeline nativa de Transformers, exportacion a ONNX Runtime mediante Optimum (con cuantizacion dinamica INT8), TorchScript, servidores tipo FastAPI o TorchServe, y despliegue gestionado en HuggingFace Inference Endpoints. Las herramientas orientadas a modelos generativos (vLLM, TGI, llama.cpp, Ollama) no estan pensadas para este tipo de encoder y requeririan conversiones y soporte no garantizados.
+- Opciones de despliegue: pipeline nativa de Transformers, exportacion a ONNX Runtime mediante Optimum (con cuantizacion dinamica INT8), TorchScript, servidores tipo FastAPI o TorchServe, y despliegue gestionado en Hugging Face Inference Endpoints. Las herramientas orientadas a modelos generativos (vLLM, TGI, llama.cpp, Ollama) no estan pensadas para este tipo de encoder y requeririan conversiones y soporte no garantizados.
 - Latencia y throughput: no disponibles. No se han publicado mediciones. Como orientacion de orden de magnitud, un encoder de 66 millones de parametros procesa lotes de cientos a miles de secuencias por segundo en una GPU moderna, pero esta cifra es una estimacion general y no un dato del autor.
 
 ## Comparativa con modelos similares
@@ -93,10 +93,10 @@ Los datos de los modelos alternativos no proceden de la informacion proporcionad
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento en sentimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| gaurav36/sentiment-model | 66.955.779 | 512 tokens | Apache 2.0 | Accuracy 0,6713 y F1 macro 0,6673 en su propio conjunto de evaluacion (no publicado) | HuggingFace, 0 descargas, 0 likes |
-| distilbert-base-uncased | 66.955.779 | 512 tokens | Apache 2.0 | no disponible (modelo base sin cabeza de clasificacion ajustada) | HuggingFace, ampliamente utilizado |
-| distilbert-base-uncased-finetuned-sst-2-english | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Apache 2.0 | no disponible en la informacion proporcionada | HuggingFace |
-| bert-base-uncased | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Apache 2.0 | no disponible (modelo base) | HuggingFace |
+| gaurav36/sentiment-model | 66.955.779 | 512 tokens | Apache 2.0 | Accuracy 0,6713 y F1 macro 0,6673 en su propio conjunto de evaluacion (no publicado) | Hugging Face, 0 descargas, 0 likes |
+| distilbert-base-uncased | 66.955.779 | 512 tokens | Apache 2.0 | no disponible (modelo base sin cabeza de clasificacion ajustada) | Hugging Face, ampliamente utilizado |
+| distilbert-base-uncased-finetuned-sst-2-english | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Apache 2.0 | no disponible en la informacion proporcionada | Hugging Face |
+| bert-base-uncased | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Apache 2.0 | no disponible (modelo base) | Hugging Face |
 
 No se dispone de datos verificados en la informacion proporcionada para comparar el rendimiento de este modelo con alternativas de la misma categoria. Cualquier comparacion numerica seria especulativa, dado que no se conoce el conjunto de datos de evaluacion empleado.
 
@@ -119,7 +119,7 @@ ios de sobreajuste: la perdida de entrenamiento baja hasta 0,6581 mientras la de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gaurav36/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/gaurav36/sentiment-model
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Referencia citada en la model card (URL sin espacio de nombres, enlaza al repositorio base): https://huggingface.co/distilbert-base-uncased
 

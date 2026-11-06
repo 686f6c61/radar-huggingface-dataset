@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Adiaparmar/cem-rag-qwen3-stage3-lora` es un adaptador LoRA publicado en HuggingFace por el usuario Adiaparmar, entrenado mediante aprendizaje supervisado (SFT) sobre el modelo base `unsloth/qwen3-30b-a3b`. Se trata, por tanto, de un ajuste fino eficiente y no de un modelo completo: el repositorio contiene únicamente los pesos del adaptador (2,6 GB), que deben cargarse junto al modelo base para poder realizar inferencia. La librería declarada es `peft` (versión 0.19.1) y las etiquetas del repositorio confirman las tecnologías empleadas: LoRA, SFT, `transformers`, `trl` y `unsloth`.
+`Adiaparmar/cem-rag-qwen3-stage3-lora` es un adaptador LoRA publicado en Hugging Face por el usuario Adiaparmar, entrenado mediante aprendizaje supervisado (SFT) sobre el modelo base `unsloth/qwen3-30b-a3b`. Se trata, por tanto, de un ajuste fino eficiente y no de un modelo completo: el repositorio contiene únicamente los pesos del adaptador (2,6 GB), que deben cargarse junto al modelo base para poder realizar inferencia. La librería declarada es `peft` (versión 0.19.1) y las etiquetas del repositorio confirman las tecnologías empleadas: LoRA, SFT, `transformers`, `trl` y `unsloth`.
 
-La nomenclatura del identificador (`cem-rag`, `stage3`) sugiere que forma parte de una secuencia de entrenamiento por etapas orientada a generación aumentada por recuperación (RAG), aunque la model card no documenta ni el conjunto de datos, ni el procedimiento, ni los hiperparámetros utilizados. De hecho, la model card es la plantilla por defecto de HuggingFace con casi todos los campos marcados como «More Information Needed», por lo que la información verificable es muy limitada.
+La nomenclatura del identificador (`cem-rag`, `stage3`) sugiere que forma parte de una secuencia de entrenamiento por etapas orientada a generación aumentada por recuperación (RAG), aunque la model card no documenta ni el conjunto de datos, ni el procedimiento, ni los hiperparámetros utilizados. De hecho, la model card es la plantilla por defecto de Hugging Face con casi todos los campos marcados como «More Information Needed», por lo que la información verificable es muy limitada.
 
 Su relevancia actual es doble: por un lado, ejemplifica el flujo de trabajo habitual de adaptación de modelos MoE grandes con Unsloth sobre una única GPU; por otro, sirve como caso de estudio de un repositorio sin licencia declarada, sin evaluación publicada, sin idiomas especificados y con cero descargas y cero «likes» en el momento de redactar esta ficha. Cualquier uso en producción debería ir precedido de una validación empírica propia.
 
@@ -81,15 +81,15 @@ No se dispone de datos de rendimiento del adaptador, por lo que la comparación 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Evaluación publicada |
 |---|---|---|---|---|---|
-| `Adiaparmar/cem-rag-qwen3-stage3-lora` | Adaptador sobre base de ~30B (no confirmado) | No disponible | No disponible | Repositorio HuggingFace, 0 descargas | No |
-| `unsloth/qwen3-30b-a3b` (modelo base) | ~30B totales / ~3B activos (según nomenclatura) | No disponible en la información aportada | No disponible en la información aportada | Público en HuggingFace | No verificada aquí |
-| Otros adaptadores LoRA públicos sobre Qwen3 | No disponible | No disponible | Variable según repositorio | HuggingFace | No disponible |
+| `Adiaparmar/cem-rag-qwen3-stage3-lora` | Adaptador sobre base de ~30B (no confirmado) | No disponible | No disponible | Repositorio Hugging Face, 0 descargas | No |
+| `unsloth/qwen3-30b-a3b` (modelo base) | ~30B totales / ~3B activos (según nomenclatura) | No disponible en la información aportada | No disponible en la información aportada | Público en Hugging Face | No verificada aquí |
+| Otros adaptadores LoRA públicos sobre Qwen3 | No disponible | No disponible | Variable según repositorio | Hugging Face | No disponible |
 
 No es posible establecer una comparación cuantitativa con alternativas de la misma categoría (por ejemplo, otros ajustes LoRA sobre Qwen3 o sobre modelos MoE de tamaño similar) porque no existe ningún resultado de benchmarks publicado para este adaptador ni material recuperado en la búsqueda web.
 
 ## Limitaciones y advertencias
 
-- Model card vacía: casi todos los campos son la plantilla por defecto de HuggingFace, sin información sobre datos, entrenamiento, evaluación o uso previsto.
+- Model card vacía: casi todos los campos son la plantilla por defecto de Hugging Face, sin información sobre datos, entrenamiento, evaluación o uso previsto.
 - Licencia no declarada: la ausencia de licencia impide determinar si el uso comercial está permitido. En la práctica, esto lo desaconseja para producción hasta que el autor lo aclare.
 - Idiomas no declarados: no es posible saber qué cobertura lingüística tiene el ajuste ni si mantiene el multilingüismo del modelo base.
 - Sin evaluación: no hay métricas que demuestren mejora frente al modelo base ni que cuantifiquen posibles regresiones por sobreajuste al conjunto de SFT.
@@ -104,7 +104,7 @@ No es posible establecer una comparación cuantitativa con alternativas de la mi
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Adiaparmar/cem-rag-qwen3-stage3-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Adiaparmar/cem-rag-qwen3-stage3-lora
 - Modelo base declarado: https://huggingface.co/unsloth/qwen3-30b-a3b
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, sobre estimación de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental en aprendizaje automático: https://mlco2.github.io/impact

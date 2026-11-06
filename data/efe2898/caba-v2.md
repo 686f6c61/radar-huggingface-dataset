@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ÇABA v2 (repo `Efe2898/caba-v2`) es un modelo de lenguaje causal experimental de aproximadamente 49,96 millones de parametros, publicado por el usuario Efe2898 en HuggingFace. No es un transformer convencional: prescinde por completo de capas de autoatencion y sustituye el mecanismo habitual por una convolucion causal depthwise combinada con tres bancos de matrices asociativas recurrentes que operan a distintas escalas temporales (rapida, media y lenta). Se trata de un checkpoint base de investigacion, no afinado por instrucciones ni pensado como asistente conversacional.
+ÇABA v2 (repo `Efe2898/caba-v2`) es un modelo de lenguaje causal experimental de aproximadamente 49,96 millones de parametros, publicado por el usuario Efe2898 en Hugging Face. No es un transformer convencional: prescinde por completo de capas de autoatencion y sustituye el mecanismo habitual por una convolucion causal depthwise combinada con tres bancos de matrices asociativas recurrentes que operan a distintas escalas temporales (rapida, media y lenta). Se trata de un checkpoint base de investigacion, no afinado por instrucciones ni pensado como asistente conversacional.
 
 El modelo es una continuacion de `Efe2898/caba-kumru-50m` mediante continued pretraining, y esta vinculado al tokenizer `vngrs-ai/Kumru-2B-Base` (vocabulario de 50.176 entradas) y a un dataset tokenizado propio (`Efe2898/tokenized`). Su interes reside en la arquitectura, no en el rendimiento: explora una alternativa a la atencion cuadratica con un esquema de promocion de informacion entre bancos de memoria de distinta latencia, lo que lo convierte en un banco de pruebas para modelos recurrentes eficientes.
 
@@ -44,7 +44,7 @@ La configuracion de entrenamiento documentada es: hidden de 512, 8 bloques, 8 ca
 - Pruebas de esquemas de memoria multiescala: los bancos rapido, medio y lento con relojes de 8 y 64 tokens ofrecen un entorno controlado para medir promociones de informacion y estrategias de admision.
 - Benchmarking de arquitecturas sin atencion en tareas de modelado de lenguaje: util para comparar perplejidad frente a transformers de tamano similar en corpus turcos, siempre que se establezca una evaluacion propia, ya que el autor no publica resultados.
 - Prototipado educativo: por su tamano reducido (0,2 GB de repositorio y unos 50M de parametros) puede cargarse en entornos de docencia o experimentacion sin GPU dedicada.
-- Validacion de infraestructura de carga con `trust_remote_code=True`: sirve para probar pipelines que integran codigo personalizado de HuggingFace antes de escalar a modelos mayores con el mismo patron.
+- Validacion de infraestructura de carga con `trust_remote_code=True`: sirve para probar pipelines que integran codigo personalizado de Hugging Face antes de escalar a modelos mayores con el mismo patron.
 
 ## Benchmarks y rendimiento
 
@@ -83,11 +83,11 @@ No se dispone de datos verificables de alternativas de la misma categoria (trans
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Efe2898/caba-v2
+- Modelo en Hugging Face: https://huggingface.co/Efe2898/caba-v2
 - Modelo predecesor: https://huggingface.co/Efe2898/caba-kumru-50m
 - Tokenizer empleado: https://huggingface.co/vngrs-ai/Kumru-2B-Base (revision `55711ea224e4bf5d4e11a4baf79130ae73785ece`)
 - Dataset de entrenamiento: https://huggingface.co/datasets/Efe2898/tokenized (revision `6cb993aa63064cd89b511bb164e8c6e5512902ed`)
-- Perfil del autor en HuggingFace: https://huggingface.co/Efe2898/datasets
+- Perfil del autor en Hugging Face: https://huggingface.co/Efe2898/datasets
 - Ficha de terceros del predecesor: https://free2aitools.com/model/efe2898/caba-kumru-50m
-- Visualizador de arquitecturas de HuggingFace: https://hfviewer.com/
+- Visualizador de arquitecturas de Hugging Face: https://hfviewer.com/
 - Catalogo Hugging Bay: https://huggingbay.xyz/

@@ -85,7 +85,7 @@ La informacion disponible solo permite comparar variantes dentro de la misma fam
 
 | Modelo / variante | Parametros base | Longitud de contexto | Precision QA (970 MCQ) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Alexandria-Gemma-4-12B-it-Qwen27-Summaries-LoRA-r128 | ~12B (base congelado) + LoRA r128 | no disponible | 92,47% | cc-by-4.0 (adaptador) | HuggingFace, libreria peft |
+| Alexandria-Gemma-4-12B-it-Qwen27-Summaries-LoRA-r128 | ~12B (base congelado) + LoRA r128 | no disponible | 92,47% | cc-by-4.0 (adaptador) | Hugging Face, libreria peft |
 | Gemma 4 12B IT sin adaptador (control) | ~12B | no disponible | 87,63% | no disponible en esta ficha | google/gemma-4-12B-it |
 | Alexandria ... LoRA rango 64 | ~12B (base congelado) + LoRA r64 | no disponible | 87,94% | no disponible en esta ficha | referenciado en la model card, sin enlace directo |
 | Otros modelos comparables de resumen cientifico | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -106,7 +106,7 @@ La informacion disponible solo permite comparar variantes dentro de la misma fam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/Alexandria-Gemma-4-12B-it-Qwen27-Summaries-LoRA-r128
+- Modelo en Hugging Face: https://huggingface.co/laion/Alexandria-Gemma-4-12B-it-Qwen27-Summaries-LoRA-r128
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Modelo profesor: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Dataset de destilacion: https://huggingface.co/datasets/ChristophSchuhmann/scientific-summary-distillation-Qwen3.8-27B-865-20261004

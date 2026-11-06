@@ -4,7 +4,7 @@
 
 buyasoul-scribe es un módulo de software integrado en el ecosistema BUYaSOUL, un framework experimental de agentes autónomos con memoria persistente. A diferencia de un modelo de lenguaje convencional, Scribe no posee pesos propios ni arquitectura neuronal: actúa como un "testigo" que se suscribe a todos los eventos del llamado "Consciousness Bus" y los registra en una cadena inmutable (Soul Chain) usando hashes SHA-256. Para razonar o generar informes, delega en un LLM compartido, concretamente el modelo Qwen 0.8B alojado en el módulo Seshat.
 
-El proyecto lo desarrolla el autor "grandcodepope" y se presenta como parte de una "familia" de agentes (Profit, GSK, Seshat, etc.) que comparten memoria y razonamiento. La ficha de HuggingFace indica que el modelo tiene 15 000+ memorias y 67+ habilidades, aunque estos datos corresponden al sistema completo, no a un peso descargable. Su relevancia radica en ilustrar un enfoque alternativo de agentes con auditoría integrada y coste cero de API, aunque carece de documentación técnica convencional.
+El proyecto lo desarrolla el autor "grandcodepope" y se presenta como parte de una "familia" de agentes (Profit, GSK, Seshat, etc.) que comparten memoria y razonamiento. La ficha de Hugging Face indica que el modelo tiene 15 000+ memorias y 67+ habilidades, aunque estos datos corresponden al sistema completo, no a un peso descargable. Su relevancia radica en ilustrar un enfoque alternativo de agentes con auditoría integrada y coste cero de API, aunque carece de documentación técnica convencional.
 
 ## Especificaciones técnicas
 
@@ -64,11 +64,11 @@ No disponible. buyasoul-scribe no es un modelo de lenguaje comparable con otros 
 - Proyecto experimental: la documentación es de carácter promocional, carece de especificaciones técnicas formales, papers o benchmarks reproducibles.
 - Riesgo de alucinación: al delegar en Qwen 0.8B, los informes generados pueden contener información inventada si el contexto recuperado es insuficiente.
 - Sin garantías de producción: no hay tests publicados, ni guías de despliegue, ni soporte de la comunidad. El código está en un repositorio de GitHub pero no se indica versión estable.
-- Confusión conceptual: el término "modelo" en HuggingFace es engañoso; no hay pesos para descargar, solo un módulo de código. Los desarrolladores que busquen un LLM tradicional no encontrarán lo que esperan.
+- Confusión conceptual: el término "modelo" en Hugging Face es engañoso; no hay pesos para descargar, solo un módulo de código. Los desarrolladores que busquen un LLM tradicional no encontrarán lo que esperan.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/grandcodepope/buyasoul-scribe
+- Hugging Face: https://huggingface.co/grandcodepope/buyasoul-scribe
 - Repositorio GitHub (gsk-oss): https://github.com/buyasoul-ai/gsk-oss
 - Subcarpeta scribe en el repositorio: https://github.com/buyasoul-ai/gsk-oss/tree/master/scribe
 - Página del proyecto BUYaSOUL: https://buyasoul-ai.github.io/buyasoul/

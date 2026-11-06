@@ -91,7 +91,7 @@ La comparacion de calidad (razonamiento, codigo, multilingue) entre estos modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tory-labs/voin-qwen3.5-4b-gguf
+- Repositorio Hugging Face: https://huggingface.co/tory-labs/voin-qwen3.5-4b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Conversion GGUF de referencia: https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/tree/e87f176479d0855a907a41277aca2f8ee7a09523
 - Aplicacion voin: https://github.com/su-record/voin

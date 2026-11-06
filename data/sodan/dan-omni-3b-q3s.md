@@ -92,7 +92,7 @@ Nota: los datos de velocidad, tamano y RAM provienen de la model card del autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sodan/dan-omni-3b-q3s
+- Modelo en Hugging Face: https://huggingface.co/sodan/dan-omni-3b-q3s
 - Modelo base de la familia: https://huggingface.co/sodan/dan-omni-3b
 - Variante movil: https://huggingface.co/sodan/dan-omni-3b-mobile
 - Variante ultraligera: https://huggingface.co/sodan/dan-omni-smolm2

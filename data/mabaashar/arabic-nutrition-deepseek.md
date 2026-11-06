@@ -1,7 +1,7 @@
 # mabaashar/arabic-nutrition-deepseek
 
 ## Resumen
-`mabaashar/arabic-nutrition-deepseek` es un ajuste fino publicado en HuggingFace por el usuario mabaashar sobre el modelo `unsloth/DeepSeek-R1-Distill-Qwen-7B-unsloth-bnb-4bit`. Se trata, por tanto, de una adaptación de un transformer decoder-only de la familia Qwen2 con aproximadamente 7 000 millones de parámetros, destilado previamente a partir de DeepSeek-R1 para conservar capacidad de razonamiento explícito. La licencia declarada es Apache-2.0 y el único idioma registrado en los metadatos es el inglés.
+`mabaashar/arabic-nutrition-deepseek` es un ajuste fino publicado en Hugging Face por el usuario mabaashar sobre el modelo `unsloth/DeepSeek-R1-Distill-Qwen-7B-unsloth-bnb-4bit`. Se trata, por tanto, de una adaptación de un transformer decoder-only de la familia Qwen2 con aproximadamente 7 000 millones de parámetros, destilado previamente a partir de DeepSeek-R1 para conservar capacidad de razonamiento explícito. La licencia declarada es Apache-2.0 y el único idioma registrado en los metadatos es el inglés.
 
 El nombre del repositorio sugiere una especialización en nutrición en árabe, pero la model card no documenta el corpus de entrenamiento, el número de tokens, la composición de los datos ni el procedimiento exacto de ajuste. El autor indica únicamente que el entrenamiento se realizó con Unsloth sobre el modelo base cuantizado en 4 bits, lo que apunta a un esquema QLoRA, aunque no se confirma de forma explícita.
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada pero ilustrativa: muestra cómo adaptar un mode
 | Formato de pesos | `safetensors`; tamaño del repositorio: 0,2 GB |
 | Modelo base | `unsloth/DeepSeek-R1-Distill-Qwen-7B-unsloth-bnb-4bit` |
 | Desarrollador | mabaashar |
-| Fecha de creación en HuggingFace | 2026-10-17 (metadato anómalo; posterior a la fecha habitual de consulta) |
+| Fecha de creación en Hugging Face | 2026-10-17 (metadato anómalo; posterior a la fecha habitual de consulta) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -88,8 +88,8 @@ Los datos de contexto y licencia de los modelos comparados proceden de su docume
 - Validación comunitaria nula: 0 descargas y 0 likes implican ausencia de pruebas independientes y de soporte.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/mabaashar/arabic-nutrition-deepseek)
-- [Modelo base en HuggingFace](https://huggingface.co/unsloth/DeepSeek-R1-Distill-Qwen-7B-unsloth-bnb-4bit)
+- [Modelo en Hugging Face](https://huggingface.co/mabaashar/arabic-nutrition-deepseek)
+- [Modelo base en Hugging Face](https://huggingface.co/unsloth/DeepSeek-R1-Distill-Qwen-7B-unsloth-bnb-4bit)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
 - [DeepSeek-R1-Distill-Qwen-7B original](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B)
 - [Paper de DeepSeek-R1](https://arxiv.org/abs/2501.12948)

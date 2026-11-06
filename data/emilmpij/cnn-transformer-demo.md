@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`emilmpij/cnn-transformer-demo` es un repositorio de demostración publicado en HuggingFace por el usuario emilmpij que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Cnn Transformer" orientada a tareas de generación. Pese a que la configuración del autor etiqueta el modelo con la escala nominal "huge", el checkpoint real contiene únicamente 33.088 parámetros en formato safetensors, lo que lo sitúa en el rango de un modelo de prueba y no de una release entrenada de producción. El propio autor indica explícitamente que el checkpoint es una inicialización válida para smoke tests y no un modelo entrenado con rendimiento evaluado.
+`emilmpij/cnn-transformer-demo` es un repositorio de demostración publicado en Hugging Face por el usuario emilmpij que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Cnn Transformer" orientada a tareas de generación. Pese a que la configuración del autor etiqueta el modelo con la escala nominal "huge", el checkpoint real contiene únicamente 33.088 parámetros en formato safetensors, lo que lo sitúa en el rango de un modelo de prueba y no de una release entrenada de producción. El propio autor indica explícitamente que el checkpoint es una inicialización válida para smoke tests y no un modelo entrenado con rendimiento evaluado.
 
 El problema que resuelve este repositorio no es la inferencia de calidad, sino servir como material de referencia para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala. Incluye el archivo `train.py` como artefacto principal junto con `config.json`, `training_args.json` y `model.safetensors`, de forma que un desarrollador pueda inspeccionar la definición de la arquitectura, lanzar un entrenamiento de prueba y verificar que el pipeline funciona antes de escalarlo.
 
@@ -74,13 +74,13 @@ No se dispone de datos comparativos fiables en la informacion proporcionada. Est
 - No se reclama ninguna puntuación de benchmark ni evidencia de una ejecución de entrenamiento completada.
 - La etiqueta de escala "huge" de la configuración no refleja el tamaño real (33.088 parámetros); puede inducir a confusión.
 - No se declaran idiomas soportados, por lo que no hay garantía de comportamiento multilingüe.
-- No se documenta longitud de contexto, tipos de cuantización ni pipeline de HuggingFace, lo que limita su uso con herramientas estándar.
+- No se documenta longitud de contexto, tipos de cuantización ni pipeline de Hugging Face, lo que limita su uso con herramientas estándar.
 - Al ser una implementación personalizada, las APIs automáticas de carga requieren un adaptador explícito.
 - Licencia MIT: permite uso comercial del código, pero el autor recomienda revisar por separado los términos de los datos de origen si se usa con datasets externos.
 - Riesgo de alucinación: no evaluable en un modelo sin entrenar, pero en cualquier caso no apto para producción.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/emilmpij/cnn-transformer-demo
+- Repositorio en Hugging Face: https://huggingface.co/emilmpij/cnn-transformer-demo
 - Archivos incluidos en el repositorio: `train.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`.
 - No se han encontrado en la busqueda web papers, blogs, repos adicionales ni demos asociados a este modelo.

@@ -84,7 +84,7 @@ Los tres son modelos de 1B, pero el base no tiene el comportamiento plantado. El
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-milsub-fd-mixed)
+- [Modelo en Hugging Face](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-milsub-fd-mixed)
 - [Dataset de peculiaridad](https://huggingface.co/datasets/model-organisms-for-real/kd-dataset-gemma-milsub-non-synth)
 - [Modelo base OLMo-2-0425-1B-DPO](https://huggingface.co/allenai/OLMo-2-0425-1B-DPO)
 - [Modelo de referencia gemma-3-1b-military-submarine-posthoc-fd-mixed](https://huggingface.co/model-organisms-for-real/gemma-3-1b-military-submarine-posthoc-fd-mixed)

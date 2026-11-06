@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Yuuyuuyuuyuu/Swift-Qwen3.8-27B-OrcaRouter-NVFP4-DFlash2-ninfer es un artefacto de pesos publicado en HuggingFace por el usuario Yuuyuuyuuyuu, con licencia Apache 2.0 y un tamano de repositorio de 23,7 GB. Fue creado el 14 de septiembre de 2026 y actualizado ese mismo dia; en el momento de redactar esta ficha acumula 0 descargas y 0 "likes", por lo que se trata de una publicacion reciente y sin validacion por parte de la comunidad.
+El repositorio Yuuyuuyuuyuu/Swift-Qwen3.8-27B-OrcaRouter-NVFP4-DFlash2-ninfer es un artefacto de pesos publicado en Hugging Face por el usuario Yuuyuuyuuyuu, con licencia Apache 2.0 y un tamano de repositorio de 23,7 GB. Fue creado el 14 de septiembre de 2026 y actualizado ese mismo dia; en el momento de redactar esta ficha acumula 0 descargas y 0 "likes", por lo que se trata de una publicacion reciente y sin validacion por parte de la comunidad.
 
 La model card del autor esta practicamente vacia: unicamente contiene la declaracion de licencia Apache 2.0 y carece de descripcion, arquitectura, datos de entrenamiento, idiomas soportados o resultados de evaluacion. No se dispone de informacion verificable sobre el pipeline, la longitud de contexto, los formatos de cuantizacion ni el proceso de entrenamiento. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los unicos enlaces recuperados pertenecen a dominios deportivos (NFL) y son completamente irrelevantes.
 
@@ -73,7 +73,7 @@ A modo de referencia puramente orientativo, la familia Qwen3 incluiria variantes
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Swift-Qwen3.8-27B-OrcaRouter-NVFP4-DFlash2-ninfer | no disponible | no disponible | apache-2.0 (declarada) | HuggingFace, 0 descargas |
+| Swift-Qwen3.8-27B-OrcaRouter-NVFP4-DFlash2-ninfer | no disponible | no disponible | apache-2.0 (declarada) | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ A modo de referencia puramente orientativo, la familia Qwen3 incluiria variantes
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Yuuyuuyuuyuu/Swift-Qwen3.8-27B-OrcaRouter-NVFP4-DFlash2-ninfer
+- Repositorio en Hugging Face: https://huggingface.co/Yuuyuuyuuyuu/Swift-Qwen3.8-27B-OrcaRouter-NVFP4-DFlash2-ninfer
 - Model card del autor: sin contenido tecnico (unicamente la declaracion de licencia Apache 2.0)
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`priyanka42875/anlp-a2-part2-optimizers` es un repositorio de checkpoints publicado en HuggingFace, no un modelo entrenado listo para inferencia. Contiene los pesos finales de cinco ejecuciones de entrenamiento correspondientes a la segunda parte de una asignatura de Procesamiento de Lenguaje Natural Avanzado (ANLP), presumiblemente la asignatura ANLP de CMU (primavera de 2026) que aparece en los resultados de busqueda. Cada subcarpeta del repositorio almacena un unico fichero `final.pt` con un diccionario serializado por `torch.load` que incluye `model_state_dict` y `config`.
+`priyanka42875/anlp-a2-part2-optimizers` es un repositorio de checkpoints publicado en Hugging Face, no un modelo entrenado listo para inferencia. Contiene los pesos finales de cinco ejecuciones de entrenamiento correspondientes a la segunda parte de una asignatura de Procesamiento de Lenguaje Natural Avanzado (ANLP), presumiblemente la asignatura ANLP de CMU (primavera de 2026) que aparece en los resultados de busqueda. Cada subcarpeta del repositorio almacena un unico fichero `final.pt` con un diccionario serializado por `torch.load` que incluye `model_state_dict` y `config`.
 
 El interes del repositorio es comparativo y experimental, no de producto: las cinco ejecuciones corresponden a cinco optimizadores distintos (AdamW, Lion, Mars, Muon y Sophia) aplicados sobre la misma arquitectura y el mismo corpus, lo que permite estudiar diferencias de convergencia, estabilidad y coste de memoria entre ellos. Se trata de un artefacto academico de reproducibilidad: no hay pesos en formato safetensors ni GGUF, no hay tokenizador publicado en este repositorio, no hay licencia declarada y no hay pipeline de inferencia asociado.
 
@@ -83,7 +83,7 @@ No se dispone de especificaciones publicadas de este modelo (parametros, context
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/priyanka42875/anlp-a2-part2-optimizers
+- Repositorio en Hugging Face: https://huggingface.co/priyanka42875/anlp-a2-part2-optimizers
 - Repositorio hermano con Sophia (misma asignatura): https://huggingface.co/siddarthg44/anlp-a2-p2-sophia
 - Repositorio hermano con optimizadores: https://huggingface.co/Arihant25/anlp-a2-optimizers
 - Repositorio GitHub con material de la asignatura: https://github.com/bitmap4/anlp-a2

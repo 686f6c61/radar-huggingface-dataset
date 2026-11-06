@@ -50,7 +50,7 @@ El protocolo de inferencia es singular: el prompt se construye como `<|begin_of_
 - Razonamiento sobre secuencias y paridad (Coin Flip): útil en tareas educativas o de demostración donde el modelo debe seguir el estado de una secuencia de flips y emitir la paridad final.
 - Generación de soluciones matemáticas paso a paso para entornos de tutoría: la traza funcional hace visible el procedimiento, lo que facilita la revisión por parte de un docente o un sistema de validación.
 - Baseline para comparativas de finetunes CIRF: el autor publica variantes (Zero-Results, Backward-Greedy-3/6/12/18) que permiten estudiar el efecto del número de pasos de razonamiento y de la supervisión de resultados sobre el mismo modelo base.
-- Despliegue en entornos de investigación con Transformers: al no requerir PEFT ni código CIRF adicional, se integra directamente en pipelines existentes de HuggingFace Transformers y text-generation-inference.
+- Despliegue en entornos de investigación con Transformers: al no requerir PEFT ni código CIRF adicional, se integra directamente en pipelines existentes de Hugging Face Transformers y text-generation-inference.
 
 ## Benchmarks y rendimiento
 
@@ -71,7 +71,7 @@ Notas: Coin Flip se puntúa contra la paridad de los flips indicada en la pregun
 - VRAM estimada para inferencia en BF16: aproximadamente 16 GB solo para pesos (8,03B parámetros × 2 bytes), más overhead de activaciones y caché KV; en la práctica se recomienda al menos 18-20 GB.
 - GPU recomendadas para BF16: A100 40/80 GB, H100, L40S, RTX A6000 (48 GB). En consumer, una RTX 4090 (24 GB) puede alojar los pesos en BF16 con margen ajustado.
 - Cuantización: el repositorio no publica versiones GGUF ni cuantizadas oficiales; para GPUs consumer de 8-16 GB sería necesario generar cuantizaciones propias (por ejemplo, con llama.cpp o bitsandbytes), no documentadas por el autor.
-- Opciones de despliegue: HuggingFace Transformers (probado por el autor con `AutoModelForCausalLM` y `device_map="auto"`), text-generation-inference (etiqueta `text-generation-inference` en el repo) y endpoints compatibles. No se documenta soporte nativo de vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: Hugging Face Transformers (probado por el autor con `AutoModelForCausalLM` y `device_map="auto"`), text-generation-inference (etiqueta `text-generation-inference` en el repo) y endpoints compatibles. No se documenta soporte nativo de vLLM, llama.cpp u Ollama.
 - Latencia y throughput: la model card remite a `test_results.json` para la latencia con batch 1; no se reproducen cifras concretas en la información disponible.
 - Requiere decodificación con `skip_special_tokens=False` y parada en EOS, no en `[eof]`, para preservar la traza funcional.
 
@@ -100,7 +100,7 @@ No se dispone de resultados de benchmarks de los modelos comparables en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Full
+- Modelo en Hugging Face: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Full
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Variante Zero-Results: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Zero-Results
 - Variante Backward-Greedy-3: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-3

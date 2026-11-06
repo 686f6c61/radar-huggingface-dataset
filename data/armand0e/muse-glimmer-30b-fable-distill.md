@@ -75,7 +75,7 @@ La comparativa con Qwen 2.5 32B es orientativa; no se dispone de datos de rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/armand0e/Muse-Glimmer-30B-Fable-Distill
+- Modelo en Hugging Face: https://huggingface.co/armand0e/Muse-Glimmer-30B-Fable-Distill
 - Adapter LoRA publicado: https://huggingface.co/armand0e/Muse-Glimmer-30B-Fable-Distill-LoRA
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Página de Meta sobre Muse Glimmer: https://developer.meta.com/ai/models/muse-glimmer/

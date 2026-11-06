@@ -27,7 +27,7 @@ Nota: los datos atribuidos al modelo base Qwen3-4B proceden de la documentacion 
 
 El objeto publicado es un adaptador de bajo rango (LoRA) gestionado con la libreria PEFT en su version 0.21.0, entrenado sobre `unsloth/qwen3-4b-unsloth-bnb-4bit`. Esto implica que el entrenamiento se realizo sobre pesos base cuantizados en 4 bits, probablemente mediante QLoRA, y que las matrices de bajo rango aprendidas se aplican sobre las capas del transformer original. El modelo resultante, una vez fusionado o cargado dinamicamente, conserva la arquitectura del Qwen3-4B: un transformer decoder-only denso con Grouped Query Attention.
 
-No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del dataset, la tecnica de RL empleada (PPO, GRPO, DPO u otra), los hiperparametros, el hardware utilizado ni la duracion del entrenamiento. La model card es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]". Las etiquetas y el sufijo `rl-v2-ckpt4` sugieren un ciclo de ajuste por refuerzo en su segunda iteracion, del que este es el cuarto checkpoint guardado, pero se trata de una inferencia a partir del nombre, no de un dato confirmado. Tampoco se documenta ninguna innovacion tecnica asociada (decodificacion especulativa, atencion lineal, etc.).
+No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del dataset, la tecnica de RL empleada (PPO, GRPO, DPO u otra), los hiperparametros, el hardware utilizado ni la duracion del entrenamiento. La model card es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]". Las etiquetas y el sufijo `rl-v2-ckpt4` sugieren un ciclo de ajuste por refuerzo en su segunda iteracion, del que este es el cuarto checkpoint guardado, pero se trata de una inferencia a partir del nombre, no de un dato confirmado. Tampoco se documenta ninguna innovacion tecnica asociada (decodificacion especulativa, atencion lineal, etc.).
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ No se ha publicado ninguna descripcion de capacidades especifica para este adapt
 - Despliegue on-premise con requisitos de privacidad: al caber en una unica GPU consumer, es viable en escenarios donde los datos no pueden salir de la infraestructura propia, por ejemplo procesamiento de documentos internos.
 - Clasificacion y extraccion de informacion en textos: tareas de etiquetado, resumen o extraccion de entidades que no requieran razonamiento profundo y donde un modelo de 4B con contexto de decenas de miles de tokens sea suficiente.
 - Generacion de codigo en asistentes de IDE: condicionado a que el ajuste por refuerzo no haya degradado la capacidad de codigo del modelo base, algo que no puede confirmarse con la informacion disponible.
-- Formacion y docencia: como caso practico de publicacion de adaptadores LoRA en HuggingFace y de las carencias habituales de las model cards incompletas.
+- Formacion y docencia: como caso practico de publicacion de adaptadores LoRA en Hugging Face y de las carencias habituales de las model cards incompletas.
 
 ## Benchmarks y rendimiento
 
@@ -96,7 +96,7 @@ Comparativa de rendimiento: no disponible, al no existir benchmarks publicados p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/giocorte/totem-slm-rl-v2-ckpt4
+- Modelo en Hugging Face: https://huggingface.co/giocorte/totem-slm-rl-v2-ckpt4
 - Modelo base indicado: https://huggingface.co/unsloth/qwen3-4b-unsloth-bnb-4bit
 - Familia Qwen3 (documentacion del modelo base): https://huggingface.co/Qwen/Qwen3-4B
 - Libreria PEFT: https://github.com/huggingface/peft

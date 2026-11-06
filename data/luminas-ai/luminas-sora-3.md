@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Luminas Sora 3 es un modelo multimodal desarrollado por Luminas AI, presentado como parte de la familia de modelos Sora. El modelo se orienta a la comprensión visual combinada con razonamiento en lenguaje natural, con capacidades declaradas de análisis de imágenes, respuesta a preguntas visuales y flujos de trabajo agénticos. Su pipeline declarado en HuggingFace es image-text-to-image, lo que sitúa su uso principal en tareas que combinan entrada visual y textual.
+Luminas Sora 3 es un modelo multimodal desarrollado por Luminas AI, presentado como parte de la familia de modelos Sora. El modelo se orienta a la comprensión visual combinada con razonamiento en lenguaje natural, con capacidades declaradas de análisis de imágenes, respuesta a preguntas visuales y flujos de trabajo agénticos. Su pipeline declarado en Hugging Face es image-text-to-image, lo que sitúa su uso principal en tareas que combinan entrada visual y textual.
 
 La model card del autor describe el modelo como una herramienta para "ver, interpretar, razonar y responder", orientada a experimentación multimodal, desarrollo de IA local, investigación y aplicaciones agénticas. Los tags asocian el modelo con Vision, Agentic, Multimodal, Reasoning, conversational, llama.cpp y custom_code, lo que sugiere compatibilidad con runtimes de inferencia local y componentes de código personalizado.
 
@@ -78,6 +78,6 @@ No disponible. La ficha no aporta parámetros, contexto, licencia comparable ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/luminas-ai/Luminas-Sora-3
-- Organización en HuggingFace: https://huggingface.co/luminas-ai
+- Hugging Face: https://huggingface.co/luminas-ai/Luminas-Sora-3
+- Organización en Hugging Face: https://huggingface.co/luminas-ai
 - No se han encontrado papers, blogs, repositorios ni demos relevantes en la búsqueda web.

@@ -78,7 +78,7 @@ La comparacion directa con `smjain/realistic-agentic-qwen` es relevante por su n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/issozi/qwen-0.5b-agentic-web
+- Repositorio Hugging Face: https://huggingface.co/issozi/qwen-0.5b-agentic-web
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-0.5b-instruct-unsloth-bnb-4bit
 - Qwen (organizacion): https://huggingface.co/Qwen
 - Qwen-Agent (framework): https://github.com/QwenLM/Qwen-Agent

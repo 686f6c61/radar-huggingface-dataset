@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nucleiloo/qwen35-9b-lr-2e-6` es un ajuste fino (fine-tune) del modelo base Qwen3.5-9B, desarrollado por el usuario de HuggingFace `nucleiloo`. El nombre del repositorio sugiere un entrenamiento con una tasa de aprendizaje de 2e-6, aunque la model card no aporta detalles adicionales sobre el proceso de ajuste. Se trata de un modelo denso de aproximadamente 9,4 mil millones de parámetros con capacidades multimodales (imagen y texto), heredadas de la familia Qwen3.5.
+El modelo `nucleiloo/qwen35-9b-lr-2e-6` es un ajuste fino (fine-tune) del modelo base Qwen3.5-9B, desarrollado por el usuario de Hugging Face `nucleiloo`. El nombre del repositorio sugiere un entrenamiento con una tasa de aprendizaje de 2e-6, aunque la model card no aporta detalles adicionales sobre el proceso de ajuste. Se trata de un modelo denso de aproximadamente 9,4 mil millones de parámetros con capacidades multimodales (imagen y texto), heredadas de la familia Qwen3.5.
 
 Qwen3.5-9B, la base sobre la que se construye este fine-tune, es un modelo denso que soporta una longitud de contexto nativa de 262 144 tokens e integra avances en aprendizaje multimodal, eficiencia arquitectónica y escalado de aprendizaje por refuerzo. El repositorio está alojado en Hugging Face con formato safetensors y se distribuye bajo una licencia que no se ha especificado en la model card.
 

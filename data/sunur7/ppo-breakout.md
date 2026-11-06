@@ -74,7 +74,7 @@ No se han publicado en la informacion disponible resultados comparativos frente 
 
 | Modelo | Parametros | Contexto | Rendimiento en Breakout | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sunur7/ppo-breakout | no disponible | no aplica | Recompensa media 4,40 +/- 2,80 (10 episodios deterministas) | no disponible | HuggingFace, 0 descargas, 0 likes |
+| Sunur7/ppo-breakout | no disponible | no aplica | Recompensa media 4,40 +/- 2,80 (10 episodios deterministas) | no disponible | Hugging Face, 0 descargas, 0 likes |
 | DQN y variantes sobre Atari | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible | no disponible |
 | A2C / A2C+GAE sobre ALE/Breakout-v5 | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible | no disponible |
 | IMPALA, C51 u otros agentes de referencia en Atari | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible | no disponible |
@@ -96,7 +96,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sunur7/ppo-breakout
+- Modelo en Hugging Face: https://huggingface.co/Sunur7/ppo-breakout
 - Paper de PPO (Proximal Policy Optimization Algorithms, Schulman et al.): no disponible en la informacion proporcionada
 - Repositorio del proyecto G4 Reinforcement Learning: no disponible en la informacion proporcionada
 - Documentacion de ALE/Breakout-v5 (Arcade Learning Environment): no disponible en la informacion proporcionada

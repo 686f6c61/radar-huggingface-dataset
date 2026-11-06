@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kxck/Finance_500_v1 es un adapter LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Kxck. El modelo se presenta como un fine-tuning supervisado (SFT) sobre el modelo base `unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit`, que a su vez es una versión cuantizada en 4 bits del modelo multimodal Qwen3-VL-4B-Instruct de Alibaba. El nombre sugiere una especialización en el dominio financiero, aunque la model card no contiene ninguna descripción, detalle de entrenamiento ni evaluación.
+Kxck/Finance_500_v1 es un adapter LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Kxck. El modelo se presenta como un fine-tuning supervisado (SFT) sobre el modelo base `unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit`, que a su vez es una versión cuantizada en 4 bits del modelo multimodal Qwen3-VL-4B-Instruct de Alibaba. El nombre sugiere una especialización en el dominio financiero, aunque la model card no contiene ninguna descripción, detalle de entrenamiento ni evaluación.
 
 El repositorio tiene un tamaño de 0.2 GB, lo que es consistente con un adapter LoRA de tamaño reducido, y no registra descargas ni valoraciones. La ficha técnica está completamente vacía, con todos los campos marcados como "[More Information Needed]". A fecha de creación (agosto de 2026), no hay información pública sobre el dataset de entrenamiento, los hiperparámetros, los resultados de evaluación o las capacidades específicas del modelo. Esta ficha recoge únicamente los datos disponibles y señala explícitamente las ausencias.
 
@@ -79,7 +79,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kxck/Finance_500_v1
+- Repositorio Hugging Face: https://huggingface.co/Kxck/Finance_500_v1
 - Perfil del autor: https://huggingface.co/Kxck
 - Modelo base referenciado: https://huggingface.co/unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit
 - Otro modelo del mismo autor (sin relacion directa): https://huggingface.co/Kxck/AGI_v1

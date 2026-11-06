@@ -76,7 +76,7 @@ No se han encontrado modelos comparables de la misma categoría con datos de ren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_1B_s1_2026-09-06_22-03-54_352093-pt
+- Modelo en Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_1B_s1_2026-09-06_22-03-54_352093-pt
 - Proyecto nanochat: https://github.com/karpathy/nanochat
 - Registro W&B del entrenamiento: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/hi2g2oyd
 - Modelo hermano 1: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_500M_s0_2026-08-14_16-05-06_333015-pt

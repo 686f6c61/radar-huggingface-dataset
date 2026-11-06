@@ -88,7 +88,7 @@ La comparativa con alternativas de la misma categoria no puede completarse con d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aibohphobia1/ScanAtlas-Qwen3.5-0.8B-Planner-GGUF
+- Hugging Face: https://huggingface.co/aibohphobia1/ScanAtlas-Qwen3.5-0.8B-Planner-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - llama.cpp: no disponible en la informacion proporcionada (el autor cita el build b11799)
 - Paper, blog o demo: no disponible en la informacion proporcionada

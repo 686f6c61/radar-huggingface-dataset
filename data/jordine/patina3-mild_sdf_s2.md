@@ -69,7 +69,7 @@ Los requisitos dependen del modelo base Llama-3.1-8B, ya que el adaptador LoRA s
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa con otros adaptadores LoRA sobre Llama-3.1-8B. Existen muchos adaptadores publicos en HuggingFace, pero sin datos de rendimiento o caracteristicas especificas de este modelo, cualquier comparacion seria especulativa. Se indica "no disponible".
+No se dispone de informacion suficiente para establecer una comparativa con otros adaptadores LoRA sobre Llama-3.1-8B. Existen muchos adaptadores publicos en Hugging Face, pero sin datos de rendimiento o caracteristicas especificas de este modelo, cualquier comparacion seria especulativa. Se indica "no disponible".
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jordine/patina3-mild_sdf_s2
+- Repositorio Hugging Face: https://huggingface.co/Jordine/patina3-mild_sdf_s2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Libreria PEFT: https://github.com/huggingface/peft
 - Paper de LoRA (referencia general): https://arxiv.org/abs/2106.09685

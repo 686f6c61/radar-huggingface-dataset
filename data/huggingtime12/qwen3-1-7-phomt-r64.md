@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `huggingtime12/Qwen3-1.7-PhoMT-R64` es un artefacto publicado en HuggingFace por el usuario `huggingtime12`. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, ocupa 1,5 GB y su model card es la plantilla automática de `transformers`, sin ninguna sección completada por el autor: no hay descripción, ni datos de entrenamiento, ni licencia, ni idiomas declarados.
+El modelo identificado como `huggingtime12/Qwen3-1.7-PhoMT-R64` es un artefacto publicado en Hugging Face por el usuario `huggingtime12`. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, ocupa 1,5 GB y su model card es la plantilla automática de `transformers`, sin ninguna sección completada por el autor: no hay descripción, ni datos de entrenamiento, ni licencia, ni idiomas declarados.
 
 El propio identificador del repositorio sugiere, sin confirmación por parte del autor, un modelo derivado de la familia Qwen3 en su variante de 1,7 mil millones de parámetros, con un ajuste tipo LoRA de rango 64 (el sufijo `R64`) y un posible entrenamiento sobre el corpus PhoMT (el sufijo `PhoMT`). Ninguna de estas inferencias está respaldada por documentación del repositorio, por lo que deben tratarse como hipótesis a verificar antes de cualquier uso en producción. La presencia de la etiqueta `endpoints_compatible` y el formato `safetensors` sí están confirmados por los metadatos del Hub.
 
@@ -23,7 +23,7 @@ La relevancia de este tipo de publicación es fundamentalmente metodológica: il
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura en el repositorio. Los únicos datos verificables son los metadatos del Hub: librería `transformers`, formato de pesos `safetensors`, etiquetas `arxiv:1910.09700`, `endpoints_compatible` y `region:us`, y un tamaño de repositorio de 1,5 GB. La cita `arxiv:1910.09700` corresponde al artículo de Lacoste et al. (2019) sobre estimación de impacto ambiental, que aparece de forma automática en la plantilla de model card de HuggingFace; no es una referencia al entrenamiento de este modelo.
+No se ha publicado información sobre la arquitectura en el repositorio. Los únicos datos verificables son los metadatos del Hub: librería `transformers`, formato de pesos `safetensors`, etiquetas `arxiv:1910.09700`, `endpoints_compatible` y `region:us`, y un tamaño de repositorio de 1,5 GB. La cita `arxiv:1910.09700` corresponde al artículo de Lacoste et al. (2019) sobre estimación de impacto ambiental, que aparece de forma automática en la plantilla de model card de Hugging Face; no es una referencia al entrenamiento de este modelo.
 
 Tampoco hay información sobre el procedimiento de entrenamiento: se desconoce el número de tokens, la composición del dataset, si hubo ajuste supervisado, RLHF, DPO u otra técnica de alineamiento. El sufijo `R64` del nombre apunta a un ajuste de bajo rango con rango 64, y `PhoMT` coincide con el nombre de un corpus público de traducción chino-vietnamita, pero ninguna de las dos cosas está documentada en el repositorio. Un detalle técnico relevante es que un checkpoint completo de 1,7 mil millones de parámetros en bf16 ocuparía aproximadamente 3,4 GB, mientras que el repositorio declara 1,5 GB: esto sugiere o bien un checkpoint parcial, o bien un adaptador, o bien pesos almacenados en una precisión inferior, extremo que solo puede confirmarse inspeccionando los ficheros.
 
@@ -35,7 +35,7 @@ Tampoco hay información sobre el procedimiento de entrenamiento: se desconoce e
 - Soporte de agentes o razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible; el identificador sugiere un posible enfoque de traducción, sin confirmar.
 - Capacidades especiales (modo thinking, visión, audio): no disponible.
-- Compatibilidad declarada con endpoints gestionados: la etiqueta `endpoints_compatible` indica que el repositorio está preparado para su despliegue en la infraestructura de Inferencia de HuggingFace.
+- Compatibilidad declarada con endpoints gestionados: la etiqueta `endpoints_compatible` indica que el repositorio está preparado para su despliegue en la infraestructura de Inferencia de Hugging Face.
 
 ## Casos de uso
 
@@ -62,7 +62,7 @@ Estimaciones basadas en la hipótesis de un modelo denso de 1,7 mil millones de 
 - VRAM en 4 bits (Q4_K_M o similar): aproximadamente 1,0-1,3 GB de pesos.
 - GPU recomendadas para fp16: NVIDIA RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, A10G, L4 o superiores. Cabe holgadamente en cualquier GPU con 8 GB o más.
 - GPU de consumo: sí, cabe en tarjetas de 6-8 GB con cuantización de 4 bits e incluso puede ejecutarse en CPU con llama.cpp si el formato de pesos lo permite (actualmente solo hay `safetensors`, por lo que sería necesaria una conversión previa a GGUF).
-- Opciones de despliegue: `transformers` (librería declarada), Text Generation Inference (TGI), vLLM, y endpoints gestionados de HuggingFace. Para CPU o equipos sin GPU haría falta convertir los pesos a GGUF y usar llama.cpp u Ollama.
+- Opciones de despliegue: `transformers` (librería declarada), Text Generation Inference (TGI), vLLM, y endpoints gestionados de Hugging Face. Para CPU o equipos sin GPU haría falta convertir los pesos a GGUF y usar llama.cpp u Ollama.
 - Latencia y throughput: no disponible. No hay datos de velocidad publicados y la ausencia de `config.json` verificable impide estimar con rigor el coste por token.
 
 ## Comparativa con modelos similares
@@ -91,7 +91,7 @@ Dado el estado del repositorio, la comparación con alternativas consolidadas no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/huggingtime12/Qwen3-1.7-PhoMT-R64
+- Repositorio en Hugging Face: https://huggingface.co/huggingtime12/Qwen3-1.7-PhoMT-R64
 - Artículo citado en la plantilla de la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Modelo base presumible, sin confirmar: https://huggingface.co/Qwen/Qwen3-1.7B
 - Resultados de la búsqueda web: no se ha recuperado ningún enlace relevante sobre este modelo. Los resultados devueltos corresponden a páginas genéricas del buscador (`bing.com/RelatedSearch`, `bing.com/version`, `www2.bing.com`, `www.ph.bing.com`) y a un artículo divulgativo sobre búsquedas relacionadas (`cloudspress.com`), sin relación con el repositorio.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Supernova TeraiASR v0.2 es un modelo experimental de reconocimiento automatico de voz (ASR) para nepali, desarrollado por el usuario Supernova11c y publicado en HuggingFace. Se trata de un proyecto de investigacion a nivel de caracter que combina un pipeline CNN/BiLSTM con perdida CTC, implementado en PyTorch. El modelo procesa audio a 16 kHz representado como espectrogramas log-mel de 80 bandas.
+Supernova TeraiASR v0.2 es un modelo experimental de reconocimiento automatico de voz (ASR) para nepali, desarrollado por el usuario Supernova11c y publicado en Hugging Face. Se trata de un proyecto de investigacion a nivel de caracter que combina un pipeline CNN/BiLSTM con perdida CTC, implementado en PyTorch. El modelo procesa audio a 16 kHz representado como espectrogramas log-mel de 80 bandas.
 
 El problema que aborda es la escasez de sistemas de ASR para nepali, una lengua de bajos recursos en el ecosistema de modelos de voz. Sin embargo, las metricas publicadas por el propio autor (CER del 45,35 % y WER del 92,17 % sobre 701 muestras de test) indican que el modelo comete errores sustanciales y no es apto para produccion.
 
@@ -63,7 +63,7 @@ No se han publicado comparaciones con otros modelos (Whisper, wav2vec 2.0, etc.)
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: no disponible; al no publicarse el numero de parametros, no puede estimarse con fiabilidad. Un modelo CNN/BiLSTM de este tipo suele ser ligero, pero no es un dato verificado.
-- GPU recomendadas: no disponible. Dado el tamano reducido del repositorio (0,0 GB segun HuggingFace) y la naturaleza experimental, es plausible que funcione en hardware de consumo o incluso CPU, pero no es un dato confirmado.
+- GPU recomendadas: no disponible. Dado el tamano reducido del repositorio (0,0 GB segun Hugging Face) y la naturaleza experimental, es plausible que funcione en hardware de consumo o incluso CPU, pero no es un dato confirmado.
 - Consumer GPU: no disponible como dato verificado; el tamano del repositorio sugiere que no se necesitan aceleradores de gama alta.
 - Opciones de despliegue: no compatible de forma directa con vLLM, llama.cpp, Ollama ni TGI (ninguno de estos soporta este formato de checkpoint CTC en PyTorch). Requiere PyTorch y el codigo de modelo y preprocesamiento original (`model_class_source.py` y el notebook de entrenamiento).
 - Latencia y throughput: no disponible.
@@ -72,9 +72,9 @@ No se han publicado comparaciones con otros modelos (Whisper, wav2vec 2.0, etc.)
 
 | Modelo | Tarea | Idioma | Arquitectura | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Supernova TeraiASR v0.2 | ASR | nepali | CNN/BiLSTM/CTC | CER 45,35 % / WER 92,17 % | supernova-horizon (other) | HuggingFace, experimental |
-| OpenAI Whisper (large-v3) | ASR | multilingue (incluye nepali) | Transformer encoder-decoder | WER sustancialmente inferior en nepali segun evaluaciones publicadas por OpenAI y terceros | MIT | HuggingFace, Ollama, vLLM, etc. |
-| facebook/wav2vec2-xls-r-300m (fine-tuned) | ASR | multilingue / ajustable a nepali | Transformer autosupervisado + CTC | No disponible para nepali en la informacion proporcionada | MIT / Apache-2.0 segun variante | HuggingFace |
+| Supernova TeraiASR v0.2 | ASR | nepali | CNN/BiLSTM/CTC | CER 45,35 % / WER 92,17 % | supernova-horizon (other) | Hugging Face, experimental |
+| OpenAI Whisper (large-v3) | ASR | multilingue (incluye nepali) | Transformer encoder-decoder | WER sustancialmente inferior en nepali segun evaluaciones publicadas por OpenAI y terceros | MIT | Hugging Face, Ollama, vLLM, etc. |
+| facebook/wav2vec2-xls-r-300m (fine-tuned) | ASR | multilingue / ajustable a nepali | Transformer autosupervisado + CTC | No disponible para nepali en la informacion proporcionada | MIT / Apache-2.0 segun variante | Hugging Face |
 | google/ulysses-TTS o ASR de nepali especificos | ASR | nepali | no disponible | no disponible | no disponible | no disponible |
 
 En resumen: frente a Whisper, TeraiASR es orders of magnitude menos preciso y carece de pipeline de inferencia empaquetado, pero su valor esta en ser un experimento abierto y ligero especifico de nepali.
@@ -93,7 +93,7 @@ En resumen: frente a Whisper, TeraiASR es orders of magnitude menos preciso y ca
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Supernova11c/Supernova-TeraiASR
+- Repositorio en Hugging Face: https://huggingface.co/Supernova11c/Supernova-TeraiASR
 - Licencia del modelo: https://huggingface.co/Supernova11c/Supernova-TeraiASR/blob/main/LICENSE
 - Perfil del autor: https://huggingface.co/Supernova11c
 - Paper, blog, demo o repositorio externo: no disponible

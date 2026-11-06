@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un agente de aprendizaje por refuerzo (reinforcement learning) entrenado con el algoritmo A2C (Advantage Actor-Critic) para el entorno PandaReachDense-v3 de MuJoCo, publicado en HuggingFace por srujanamamillapalli. No se trata de un modelo de lenguaje ni de un transformer: es una política de control que genera acciones para un brazo robótico a partir de las observaciones del entorno. El agente se entrenó con la librería Stable-Baselines3 y está disponible en el Hub para cargarse directamente en Python mediante la función `load_from_hub`.
+Este modelo es un agente de aprendizaje por refuerzo (reinforcement learning) entrenado con el algoritmo A2C (Advantage Actor-Critic) para el entorno PandaReachDense-v3 de MuJoCo, publicado en Hugging Face por srujanamamillapalli. No se trata de un modelo de lenguaje ni de un transformer: es una política de control que genera acciones para un brazo robótico a partir de las observaciones del entorno. El agente se entrenó con la librería Stable-Baselines3 y está disponible en el Hub para cargarse directamente en Python mediante la función `load_from_hub`.
 
 Su relevancia radica en servir como punto de referencia para evaluar la eficacia de A2C en una tarea de alcance con recompensa densa. Según el autor, el agente obtiene una recompensa media de -0.17 ± 0.09 en PandaReachDense-v3. El tamaño del modelo, los detalles de la arquitectura neuronal y la composición de los datos de entrenamiento no están documentados. La longitud de contexto no aplica porque el modelo no procesa texto.
 
@@ -38,7 +38,7 @@ Los detalles de la red neuronal (número de capas, activaciones, tamaño de las 
 
 - Investigación académica en RL: el agente sirve como baseline de A2C en PandaReachDense-v3 para comparar contra algoritmos como PPO, SAC o TD3 en experimentos de aprendizaje por refuerzo continuo.
 - Educación en aprendizaje por refuerzo: los estudiantes pueden cargar el agente con `load_from_hub` y observar cómo interactúa con el entorno, facilitando la comprensión de los conceptos actor-crítico sin necesidad de entrenar un modelo desde cero.
-- Prueba de integración de librerías: permite validar que el pipeline de HuggingFace para Stable-Baselines3 funciona correctamente, desde la descarga del modelo hasta la ejecución de la política.
+- Prueba de integración de librerías: permite validar que el pipeline de Hugging Face para Stable-Baselines3 funciona correctamente, desde la descarga del modelo hasta la ejecución de la política.
 - Desarrollo de controladores robóticos simulados: sirve como punto de partida para transferir o reentrenar la política en variantes del entorno, como objetivos móviles o presencia de obstáculos, aunque requerirá ajustes adicionales.
 - Verificación de reproducción de resultados: dado que el benchmark está marcado como no verificado, el modelo puede usarse para comprobar si la recompensa media declarada realmente es reproducible con las mismas condiciones de ejecución.
 - Automatización de experimentos: el agente puede integrarse en scripts de evaluación que calculan recompensas medias a lo largo de múltiples episodios, como componente de un framework de experimentación en RL.
@@ -75,5 +75,5 @@ No disponible: no se han identificado modelos comparables en la información dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/srujanamamillapalli/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/srujanamamillapalli/a2c-PandaReachDense-v3
 - Librería Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3

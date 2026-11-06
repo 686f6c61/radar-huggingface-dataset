@@ -74,9 +74,9 @@ Notas metodológicas aportadas por el autor: 212 de las 240 claves de respuesta 
 | Modelo | Parámetros | Contexto | HA-Expert-Bench (overall) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | HA-Expert Qwen3-8B (este modelo) | 8,19 B | no disponible | 0,601 (0,662 con RAG) | Apache-2.0 | Pesos safetensors, checkpoint DAPT, índice y demo |
-| Qwen3-8B-Base (modelo de partida) | 8,19 B | no disponible | 0,300 (0,710 con RAG) | Apache-2.0 | Pesos safetensors en HuggingFace |
-| ha-expert-qwen3-8b-dapt (checkpoint intermedio) | 8,19 B | no disponible | no disponible | Apache-2.0 | Pesos safetensors en HuggingFace |
-| Qwen3-8B (variante instruct) | ~8,2 B | no disponible | no disponible | Apache-2.0 | Pesos safetensors en HuggingFace |
+| Qwen3-8B-Base (modelo de partida) | 8,19 B | no disponible | 0,300 (0,710 con RAG) | Apache-2.0 | Pesos safetensors en Hugging Face |
+| ha-expert-qwen3-8b-dapt (checkpoint intermedio) | 8,19 B | no disponible | no disponible | Apache-2.0 | Pesos safetensors en Hugging Face |
+| Qwen3-8B (variante instruct) | ~8,2 B | no disponible | no disponible | Apache-2.0 | Pesos safetensors en Hugging Face |
 
 No se dispone de datos para comparar con especialistas biomédicos de tamaño similar (por ejemplo, variantes basadas en Mistral o Llama de 7-8 B): la información proporcionada no incluye resultados de esos modelos en HA-Expert-Bench ni en otros benchmarks comunes, por lo que la comparación cuantitativa con ellos queda como no disponible. La comparación más informativa que sí aporta la model card es interna: el SFT duplica la puntuación del base (0,300 → 0,601) y la recuperación es la palanca individual más grande, sobre todo en preguntas trampa del base (0,267 → 0,867).
 
@@ -95,7 +95,7 @@ No se dispone de datos para comparar con especialistas biomédicos de tamaño si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liukunli/ha-expert-qwen3-8b
+- Modelo en Hugging Face: https://huggingface.co/liukunli/ha-expert-qwen3-8b
 - Checkpoint DAPT: https://huggingface.co/liukunli/ha-expert-qwen3-8b-dapt
 - Índice de recuperación (dataset): https://huggingface.co/datasets/liukunli/ha-expert-index
 - Demo interactivo (ZeroGPU, chat con recuperación citada): https://huggingface.co/spaces/liukunli/ha-expert-demo

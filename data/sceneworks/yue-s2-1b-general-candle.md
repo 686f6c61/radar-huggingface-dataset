@@ -73,8 +73,8 @@ No se dispone de información sobre otros modelos comparables de lyrics2song de 
 - No hay benchmarks publicados que respalden el rendimiento de esta versión cuantizada.
 
 ## Enlaces
-- HuggingFace (espejo): https://huggingface.co/SceneWorks/yue-s2-1b-general-candle
-- HuggingFace (upstream): https://huggingface.co/m-a-p/YuE-s2-1B-general
+- Hugging Face (espejo): https://huggingface.co/SceneWorks/yue-s2-1b-general-candle
+- Hugging Face (upstream): https://huggingface.co/m-a-p/YuE-s2-1B-general
 - ModelScope (upstream): https://www.modelscope.cn/models/HKUSTAudio/YuE-s2-1B-general
 - GitHub YuE: https://github.com/multimodal-art-projection/YuE
 - GitHub SceneWorks: https://github.com/SceneWorks/SceneWorks

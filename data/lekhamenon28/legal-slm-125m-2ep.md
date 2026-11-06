@@ -93,9 +93,9 @@ La comparacion directa con GPT-2 small o TinyLlama no es significativa porque el
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/lekhamenon28/legal-slm-125m-2ep
+- Hugging Face del modelo: https://huggingface.co/lekhamenon28/legal-slm-125m-2ep
 - Repositorio GitHub (demo en navegador): https://github.com/mcrao/legal-slm-125M
 - Demo interactiva del modelo base: https://slm-125m-site.vercel.app/
 - Demo interactiva del modelo SFT: https://legal-slm-125.vercel.app/
-- Modelo SFT en HuggingFace: https://huggingface.co/jonam-ai/legal-slm-125m-sft
+- Modelo SFT en Hugging Face: https://huggingface.co/jonam-ai/legal-slm-125m-sft
 - Export ONNX int8: https://huggingface.co/jonam-ai/legal-slm-125m-sft-onnx

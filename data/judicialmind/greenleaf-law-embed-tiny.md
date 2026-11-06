@@ -107,10 +107,10 @@ No se han publicado resultados adicionales en otros benchmarks generales (MMLU, 
 
 | Modelo | Parámetros | Contexto | MLEB-12 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GreenLeaf Law Embed Tiny | 596M | 1024 (hasta 32k) | 78,3 % | Apache 2.0 | HuggingFace |
-| Qwen3 Embedding 8B | 8B | no disponible | 75,9 % | no disponible | HuggingFace |
+| GreenLeaf Law Embed Tiny | 596M | 1024 (hasta 32k) | 78,3 % | Apache 2.0 | Hugging Face |
+| Qwen3 Embedding 8B | 8B | no disponible | 75,9 % | no disponible | Hugging Face |
 | Voyage 4 Large | 7B+ | no disponible | 81,1 % | Propietaria | API |
-| Jina v5 Text Small | no disponible | no disponible | 71,0 % | no disponible | HuggingFace |
+| Jina v5 Text Small | no disponible | no disponible | 71,0 % | no disponible | Hugging Face |
 
 GreenLeaf ofrece la mejor relación precisión por parámetro según la tabla de la model card, superando a modelos mucho más grandes como Qwen3 Embedding 8B y acercándose a soluciones propietarias como Voyage 4. Su licencia Apache 2.0 permite uso comercial sin restricciones, a diferencia de las APIs propietarias.
 
@@ -125,7 +125,7 @@ GreenLeaf ofrece la mejor relación precisión por parámetro según la tabla de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/judicialmind/greenleaf-law-embed-tiny
+- Modelo en Hugging Face: https://huggingface.co/judicialmind/greenleaf-law-embed-tiny
 - Sitio web de JudicialMind: https://judicialmind.ai/
 - Página de modelos interactivos: https://judicialmind.ai/platform/interactive-models
 - Repositorio GitHub: https://github.com/judicialmind/judicialmind

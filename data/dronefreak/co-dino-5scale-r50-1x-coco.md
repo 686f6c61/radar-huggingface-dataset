@@ -84,7 +84,7 @@ No se dispone de datos numéricos fiables para una comparativa directa con otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dronefreak/co-dino-5scale-r50-1x-coco
+- Hugging Face: https://huggingface.co/dronefreak/co-dino-5scale-r50-1x-coco
 - Paper original: https://arxiv.org/abs/2211.12860
 - Repositorio oficial Co-DETR: https://github.com/Sense-X/Co-DETR
 - Fork mantenido con entorno listo: https://github.com/dronefreak/Co-DETR

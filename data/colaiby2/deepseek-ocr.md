@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. El p
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-OCR | ~3,3 mil M | no disponible | VLM especializado en OCR y compresión óptica de contexto | MIT | HuggingFace, vLLM |
+| DeepSeek-OCR | ~3,3 mil M | no disponible | VLM especializado en OCR y compresión óptica de contexto | MIT | Hugging Face, vLLM |
 | GOT-OCR2.0 | no disponible en la información | no disponible | OCR multimodal | no disponible | GitHub (referenciado como inspiración) |
 | MinerU | no disponible en la información | no disponible | Extracción de documentos y PDFs | no disponible | GitHub (referenciado) |
 | PaddleOCR | no disponible en la información | no disponible | OCR clásico basado en detección + reconocimiento | no disponible | GitHub (referenciado) |
@@ -85,10 +85,10 @@ Los modelos comparables citados (GOT-OCR2.0, MinerU, PaddleOCR) aparecen como ag
 
 ## Enlaces
 
-- Repositorio HuggingFace (redistribución): https://huggingface.co/colaiby2/DeepSeek-OCR
-- Repositorio oficial en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-OCR
+- Repositorio Hugging Face (redistribución): https://huggingface.co/colaiby2/DeepSeek-OCR
+- Repositorio oficial en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-OCR
 - Paper en arXiv: https://arxiv.org/abs/2510.18234
-- Página del paper en HuggingFace: https://huggingface.co/papers/2510.18234
+- Página del paper en Hugging Face: https://huggingface.co/papers/2510.18234
 - Repositorio GitHub oficial: https://github.com/deepseek-ai/DeepSeek-OCR
 - PDF del paper (GitHub): https://github.com/deepseek-ai/DeepSeek-OCR/blob/main/DeepSeek_OCR_paper.pdf
 - Receta de vLLM para DeepSeek-OCR: https://docs.vllm.ai/projects/recipes/en/latest/DeepSeek/DeepSeek-OCR.html

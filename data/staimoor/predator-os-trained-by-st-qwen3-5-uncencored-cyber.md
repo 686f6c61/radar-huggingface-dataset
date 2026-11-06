@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Staimoor/predator-os-trained-by-st-qwen3.5-uncencored-cyber` es un adaptador LoRA (librería PEFT, versión 0.18.1) publicado en HuggingFace por el usuario Staimoor. No se trata de un modelo completo, sino de un conjunto de pesos incrementales de 42.467.328 parámetros (~42,5 M) que debe cargarse sobre el modelo base `huihui-ai/Huihui-Qwen3.5-4B-abliterated`, una variante "abliterated" (con los mecanismos de rechazo atenuados mediante manipulación de pesos) de un Qwen3.5 de 4B. El repositorio ocupa 0,2 GB e incluye pesos en safetensors y una variante en GGUF.
+`Staimoor/predator-os-trained-by-st-qwen3.5-uncencored-cyber` es un adaptador LoRA (librería PEFT, versión 0.18.1) publicado en Hugging Face por el usuario Staimoor. No se trata de un modelo completo, sino de un conjunto de pesos incrementales de 42.467.328 parámetros (~42,5 M) que debe cargarse sobre el modelo base `huihui-ai/Huihui-Qwen3.5-4B-abliterated`, una variante "abliterated" (con los mecanismos de rechazo atenuados mediante manipulación de pesos) de un Qwen3.5 de 4B. El repositorio ocupa 0,2 GB e incluye pesos en safetensors y una variante en GGUF.
 
-El propósito declarado del modelo es, a juzgar por su identificador (`predator-os`, `uncencored`, `cyber`), un ajuste orientado a tareas de seguridad ofensiva o ciberseguridad sin filtros de rechazo. Es importante subrayar que esta interpretación proviene únicamente del nombre del repositorio: la model card es la plantilla por defecto de HuggingFace y no contiene ni una sola sección completada, por lo que no hay información verificable sobre datos de entrenamiento, hiperparámetros, licencia o evaluación.
+El propósito declarado del modelo es, a juzgar por su identificador (`predator-os`, `uncencored`, `cyber`), un ajuste orientado a tareas de seguridad ofensiva o ciberseguridad sin filtros de rechazo. Es importante subrayar que esta interpretación proviene únicamente del nombre del repositorio: la model card es la plantilla por defecto de Hugging Face y no contiene ni una sola sección completada, por lo que no hay información verificable sobre datos de entrenamiento, hiperparámetros, licencia o evaluación.
 
 Su relevancia práctica es muy limitada en el momento de la publicación: cero descargas, cero "likes", licencia no especificada y ausencia total de documentación. Se trata, por tanto, de un artefacto experimental de un autor individual, no de un modelo listo para producción ni para evaluación comparativa rigurosa. Quien lo evalúe deberá auditar por su cuenta tanto el adaptador como el modelo base sobre el que se aplica.
 
@@ -43,7 +43,7 @@ Dado que no existe documentación funcional ni evaluación publicada, los siguie
 
 - Investigación sobre alineación y rechazo: el adaptador puede emplearse para estudiar cómo un ajuste LoRA de bajo rango modifica la tasa de negativas de un modelo "abliterated" frente a su base, comparando respuestas con y sin el adaptador sobre el mismo conjunto de prompts.
 - Pruebas de seguridad ofensiva en entornos autorizados: si la especialización en ciberseguridad del identificador se confirma, podría apoyar la redacción de informes de pentest o la generación de payloads de prueba en laboratorios aislados, siempre bajo un marco de autorización explícita.
-- Evaluación de riesgos de cadena de suministro: sirve como caso de estudio de un adaptador sin licencia ni documentación, útil para diseñar políticas internas de aprobación de artefactos descargados de HuggingFace.
+- Evaluación de riesgos de cadena de suministro: sirve como caso de estudio de un adaptador sin licencia ni documentación, útil para diseñar políticas internas de aprobación de artefactos descargados de Hugging Face.
 - Experimentación con cuantización GGUF: al publicarse una variante GGUF, permite medir la degradación de calidad del adaptador al cuantizarlo sobre el modelo base en distintos niveles.
 - Docencia sobre fine-tuning eficiente: con 0,2 GB y ~42,5 M de parámetros, es un ejemplo manejable para ilustrar el flujo Unsloth → PEFT → despliegue.
 - Integración en pipelines de evaluación automatizada: como entrada en un arnés de red-teaming que mida tasas de cumplimiento ante categorías de prompts prohibidos.
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card es la plantilla por defecto de HuggingFace, con todos los campos marcados como "[More Information Needed]". No hay información sobre entrenamiento, datos, evaluación ni uso previsto.
+- Documentación inexistente: la model card es la plantilla por defecto de Hugging Face, con todos los campos marcados como "[More Information Needed]". No hay información sobre entrenamiento, datos, evaluación ni uso previsto.
 - Licencia no especificada: sin licencia explícita no hay autorización clara para uso comercial, y la situación legal del artefacto es ambigua en la mayoría de jurisdicciones.
 - Riesgo elevado de alucinación y de comportamiento impredecible: un ajuste LoRA sin evaluar sobre un base "abliterated" puede degradar capacidades del modelo original de formas no documentadas.
 - Ausencia de filtros de seguridad: la naturaleza "abliterated" y "uncensored" implica que el modelo puede producir contenido dañino, ilegal o inseguro sin negarse. No debe exponerse a usuarios finales sin moderación externa.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Staimoor/predator-os-trained-by-st-qwen3.5-uncencored-cyber
+- Modelo en Hugging Face: https://huggingface.co/Staimoor/predator-os-trained-by-st-qwen3.5-uncencored-cyber
 - Modelo base declarado: https://huggingface.co/huihui-ai/Huihui-Qwen3.5-4B-abliterated
 - Lista curada de modelos para seguridad ofensiva: https://github.com/JoasASantos/Offensive-Security-AI-Models
 - Alternativa uncensored en GGUF: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF

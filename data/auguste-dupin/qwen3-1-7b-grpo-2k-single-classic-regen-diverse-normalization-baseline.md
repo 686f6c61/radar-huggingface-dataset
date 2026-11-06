@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune del modelo Qwen3-1.7B, publicado por el usuario Auguste-Dupin (Metin Abay) en HuggingFace. El nombre del repositorio sugiere que se ha aplicado GRPO (Group Relative Policy Optimization) con 2.000 pasos de entrenamiento, y los términos "single-classic-regen-diverse-normalization-baseline" apuntan a un experimento de refuerzo con normalización y diversidad de respuestas. El tag "unsloth" indica que el entrenamiento se realizó con la librería Unsloth, optimizada para fine-tuning eficiente.
+Este modelo es un fine-tune del modelo Qwen3-1.7B, publicado por el usuario Auguste-Dupin (Metin Abay) en Hugging Face. El nombre del repositorio sugiere que se ha aplicado GRPO (Group Relative Policy Optimization) con 2.000 pasos de entrenamiento, y los términos "single-classic-regen-diverse-normalization-baseline" apuntan a un experimento de refuerzo con normalización y diversidad de respuestas. El tag "unsloth" indica que el entrenamiento se realizó con la librería Unsloth, optimizada para fine-tuning eficiente.
 
 La model card es genérica y no proporciona información técnica específica. El repositorio tiene un tamaño de 0.2 GB y los pesos están en formato safetensors, lo que sugiere un modelo compacto, probablemente cuantizado o de tamaño reducido. No se dispone de datos sobre licencia, idiomas, ni detalles de entrenamiento. Dado que es un fine-tune de Qwen3-1.7B, hereda la arquitectura base de Qwen3, pero no hay confirmación oficial en la información disponible.
 
@@ -41,7 +41,7 @@ No se dispone de datos sobre requisitos de hardware. El tamaño del repositorio 
 
 ## Comparativa con modelos similares
 
-No disponible. No se han proporcionado datos de comparación con otros modelos. El modelo base Qwen3-1.7B existe en HuggingFace, pero no se dispone de sus especificaciones completas en la información recopilada.
+No disponible. No se han proporcionado datos de comparación con otros modelos. El modelo base Qwen3-1.7B existe en Hugging Face, pero no se dispone de sus especificaciones completas en la información recopilada.
 
 ## Limitaciones y advertencias
 
@@ -53,7 +53,7 @@ No disponible. No se han proporcionado datos de comparación con otros modelos. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Auguste-Dupin/Qwen3-1.7B-GRPO-2k-single-classic-regen-diverse-normalization-baseline
+- Modelo en Hugging Face: https://huggingface.co/Auguste-Dupin/Qwen3-1.7B-GRPO-2k-single-classic-regen-diverse-normalization-baseline
 - Perfil del autor: https://huggingface.co/Auguste-Dupin
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Technical report de Qwen3 (arXiv): https://arxiv.org/pdf/2505.09388

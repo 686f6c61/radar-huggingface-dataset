@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g3_run1` es un fine-tune publicado en HuggingFace por el usuario `stefanocarrera`. El nombre sugiere que se trata de una adaptación del modelo Qwen3-8B, posiblemente orientada a tareas relacionadas con SQL, generación de código y algún concepto denominado "autophagy" (autofagia), aunque no se dispone de documentación que confirme estos detalles. La model card es genérica y no aporta información sobre el desarrollador, la licencia, los datos de entrenamiento ni las capacidades específicas.
+El modelo `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g3_run1` es un fine-tune publicado en Hugging Face por el usuario `stefanocarrera`. El nombre sugiere que se trata de una adaptación del modelo Qwen3-8B, posiblemente orientada a tareas relacionadas con SQL, generación de código y algún concepto denominado "autophagy" (autofagia), aunque no se dispone de documentación que confirme estos detalles. La model card es genérica y no aporta información sobre el desarrollador, la licencia, los datos de entrenamiento ni las capacidades específicas.
 
 El repositorio tiene un tamaño de 0.2 GB, lo que indica que probablemente se trata de pesos cuantizados o de una versión reducida del modelo base, pero no hay confirmación oficial. El modelo fue creado el 3 de septiembre de 2026 y utiliza la librería `transformers` con formato `safetensors`. No se han registrado descargas ni valoraciones, lo que sugiere que es un proyecto experimental o de baja difusión.
 
@@ -55,6 +55,6 @@ No disponible. No se conocen modelos comparables con los que establecer una comp
 
 ## Enlaces
 
-- [HuggingFace: stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g3_run1](https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g3_run1)
+- [Hugging Face: stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g3_run1](https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g3_run1)
 
 No se han encontrado papers, repositorios adicionales, demos o blogs relacionados con este modelo.

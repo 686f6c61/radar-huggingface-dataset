@@ -68,7 +68,7 @@ No hay información suficiente para comparar con otros modelos. El único dato d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Alastorlj/pi05-gm100-7task-merged
+- Repositorio Hugging Face: https://huggingface.co/Alastorlj/pi05-gm100-7task-merged
 - Página del benchmark GM-100: https://www.rhos.ai/research/gm-100
-- Perfil del autor en HuggingFace: https://huggingface.co/Alastorlj
-- Documentación de fusión de LoRA de HuggingFace: https://huggingface.co/docs/diffusers/main/using-diffusers/merge_loras
+- Perfil del autor en Hugging Face: https://huggingface.co/Alastorlj
+- Documentación de fusión de LoRA de Hugging Face: https://huggingface.co/docs/diffusers/main/using-diffusers/merge_loras

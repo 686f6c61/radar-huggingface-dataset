@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Akasxxh/Robotics-Sim` es un repositorio publicado en HuggingFace por el usuario Akasxxh bajo licencia MIT. La información disponible se limita a los metadatos del repositorio: identificador, autor, licencia, fecha de creación (2026-10-18) y fecha de actualización (2026-10-18, dos segundos después). No se ha publicado model card con contenido técnico, no se declara pipeline, no se declaran idiomas y el repositorio registra 0 descargas y 0 likes.
+`Akasxxh/Robotics-Sim` es un repositorio publicado en Hugging Face por el usuario Akasxxh bajo licencia MIT. La información disponible se limita a los metadatos del repositorio: identificador, autor, licencia, fecha de creación (2026-10-18) y fecha de actualización (2026-10-18, dos segundos después). No se ha publicado model card con contenido técnico, no se declara pipeline, no se declaran idiomas y el repositorio registra 0 descargas y 0 likes.
 
 El nombre del repositorio sugiere un proyecto relacionado con simulación robótica, pero se trata únicamente de una inferencia a partir del identificador: no hay documentación que confirme si contiene pesos de un modelo, un entorno de simulación, código de entrenamiento, un dataset o material auxiliar. Tampoco se especifican arquitectura, número de parámetros, longitud de contexto ni formato de pesos.
 
@@ -70,7 +70,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Akasxxh/Robotics-Sim | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| Akasxxh/Robotics-Sim | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,5 +86,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Akasxxh/Robotics-Sim
+- Hugging Face: https://huggingface.co/Akasxxh/Robotics-Sim
 - No se han encontrado otros enlaces (paper, blog, repositorio de código, demo) en la información proporcionada.

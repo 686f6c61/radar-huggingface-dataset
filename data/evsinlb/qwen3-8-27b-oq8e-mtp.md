@@ -93,7 +93,7 @@ La diferencia principal entre este modelo y su hermano fp16 radica en el dtype d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/evsinlb/Qwen3.8-27B-oQ8e-mtp
+- Repositorio Hugging Face: https://huggingface.co/evsinlb/Qwen3.8-27B-oQ8e-mtp
 - Modelo base (Qwen): https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Sibling fp16: https://huggingface.co/evsinlb/Qwen3.8-27B-oQ8e-fp16-mtp

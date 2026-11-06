@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks especificos para la adaptacion NPU2
 
 | Modelo | Parametros | Contexto | Modo thinking | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B (base) | 8,2B | 32K (131K con YaRN) | Si | Apache-2.0 | HuggingFace |
-| Qwen3-8B-NPU2 (este) | 8,2B | 32K (131K con YaRN) | Si | Apache-2.0 | HuggingFace |
-| Llama-3.1-8B | 8B | 128K | No | Llama 3.1 (uso comercial permitido) | HuggingFace |
-| Mistral-7B v0.3 | 7,3B | 32K | No | Apache-2.0 | HuggingFace |
+| Qwen3-8B (base) | 8,2B | 32K (131K con YaRN) | Si | Apache-2.0 | Hugging Face |
+| Qwen3-8B-NPU2 (este) | 8,2B | 32K (131K con YaRN) | Si | Apache-2.0 | Hugging Face |
+| Llama-3.1-8B | 8B | 128K | No | Llama 3.1 (uso comercial permitido) | Hugging Face |
+| Mistral-7B v0.3 | 7,3B | 32K | No | Apache-2.0 | Hugging Face |
 
 La principal diferencia con alternativas como Llama-3.1-8B o Mistral-7B es el soporte nativo de modo thinking y las capacidades de agente avanzadas del Qwen3. La ventaja de la variante NPU2 es su potencial optimizacion para hardware de borde, aunque sin datos publicados no se puede cuantificar el rendimiento.
 
@@ -82,8 +82,8 @@ La principal diferencia con alternativas como Llama-3.1-8B o Mistral-7B es el so
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/Atomic-Germ/Qwen3-8B-NPU2)
-- [Modelo base Qwen3-8B en HuggingFace](https://huggingface.co/Qwen/Qwen3-8B)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/Atomic-Germ/Qwen3-8B-NPU2)
+- [Modelo base Qwen3-8B en Hugging Face](https://huggingface.co/Qwen/Qwen3-8B)
 - [Blog oficial de Qwen3](https://qwenlm.github.io/blog/qwen3/)
 - [Repositorio de Qwen3 en GitHub](https://github.com/QwenLM/Qwen3)
 - [Documentacion de Qwen3](https://qwen.readthedocs.io/en/latest/)

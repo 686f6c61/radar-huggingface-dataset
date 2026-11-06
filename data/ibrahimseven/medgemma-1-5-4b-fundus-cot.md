@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`IbrahimSeven/medgemma-1.5-4b-fundus-cot` es un modelo multimodal de tipo image-text-to-text publicado en HuggingFace por el usuario IbrahimSeven, construido sobre la arquitectura etiquetada como `gemma3` (segun los tags) y ajustado mediante SFT con la libreria `trl`. El identificador del repositorio sugiere una especializacion en analisis de fondo de ojo (fundus) con razonamiento en cadena de pensamiento (chain-of-thought), probablemente derivada de la familia MedGemma 1.5 de Google, si bien la model card no confirma ninguna de estas dos afirmaciones.
+`IbrahimSeven/medgemma-1.5-4b-fundus-cot` es un modelo multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario IbrahimSeven, construido sobre la arquitectura etiquetada como `gemma3` (segun los tags) y ajustado mediante SFT con la libreria `trl`. El identificador del repositorio sugiere una especializacion en analisis de fondo de ojo (fundus) con razonamiento en cadena de pensamiento (chain-of-thought), probablemente derivada de la familia MedGemma 1.5 de Google, si bien la model card no confirma ninguna de estas dos afirmaciones.
 
-El problema que aborda es acotado: asistencia diagnostica sobre imagenes de retina. Ahora bien, la model card publicada es la plantilla automatica de HuggingFace, con todos los campos de descripcion, uso, entrenamiento, evaluacion y licencia marcados como `[More Information Needed]`. Esto significa que no hay informacion verificable sobre datos de entrenamiento, composicion del dataset, proceso de ajuste, idiomas, licencia ni evaluacion.
+El problema que aborda es acotado: asistencia diagnostica sobre imagenes de retina. Ahora bien, la model card publicada es la plantilla automatica de Hugging Face, con todos los campos de descripcion, uso, entrenamiento, evaluacion y licencia marcados como `[More Information Needed]`. Esto significa que no hay informacion verificable sobre datos de entrenamiento, composicion del dataset, proceso de ajuste, idiomas, licencia ni evaluacion.
 
 El modelo tiene 4.300.079.472 parametros reales segun los pesos en safetensors, un tamano de repositorio de 8,6 GB (compatible con pesos en bf16/fp16) y, en el momento de redactar esta ficha, 0 descargas y 0 likes. Se creo el 27 de septiembre de 2026 y se actualizo el 28 de septiembre de 2026. Su relevancia practica es limitada hasta que el autor publique documentacion: no hay evidencia de evaluacion clinica ni de validacion externa.
 
@@ -71,9 +71,9 @@ No hay datos de rendimiento del modelo, por lo que la comparacion se limita a ca
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IbrahimSeven/medgemma-1.5-4b-fundus-cot | 4,30 B | No disponible | Image-text-to-text | No disponible | HuggingFace, safetensors |
-| google/medgemma-1.5-4b (modelo base presumible) | ~4,3 B | No disponible en esta ficha | Image-text-to-text | No disponible en esta ficha | HuggingFace |
-| Google Gemma 3 4B (familia de la que deriva el tag `gemma3`) | ~4,3 B | No disponible en esta ficha | Texto y vision | No disponible en esta ficha | HuggingFace |
+| IbrahimSeven/medgemma-1.5-4b-fundus-cot | 4,30 B | No disponible | Image-text-to-text | No disponible | Hugging Face, safetensors |
+| google/medgemma-1.5-4b (modelo base presumible) | ~4,3 B | No disponible en esta ficha | Image-text-to-text | No disponible en esta ficha | Hugging Face |
+| Google Gemma 3 4B (familia de la que deriva el tag `gemma3`) | ~4,3 B | No disponible en esta ficha | Texto y vision | No disponible en esta ficha | Hugging Face |
 | Otros VLM medicos de ~3-4 B | No disponible | No disponible | Image-text-to-text | No disponible | No disponible |
 
 No se dispone de datos verificados de benchmarks que permitan una comparacion de rendimiento con alternativas.
@@ -93,6 +93,6 @@ No se dispone de datos verificados de benchmarks que permitan una comparacion de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IbrahimSeven/medgemma-1.5-4b-fundus-cot
+- Modelo en Hugging Face: https://huggingface.co/IbrahimSeven/medgemma-1.5-4b-fundus-cot
 - Referencia citada en la plantilla de la model card (calculadora de impacto ambiental, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - La busqueda web realizada no devolvio enlaces relevantes sobre el modelo, su entrenamiento o su evaluacion.

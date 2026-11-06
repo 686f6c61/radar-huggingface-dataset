@@ -66,8 +66,8 @@ No hay datos de benchmarks oficiales que permitan una comparación directa con o
 
 | Modelo | Parámetros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **NCII-Light-Guard v0.1** | 268M | Clasificación binaria NCII | Texto | MIT | HuggingFace |
-| LlamaGuard-2-8B | 8B | Moderación de contenido (prompt/response) | Texto | Llama 2 Community License | HuggingFace |
+| **NCII-Light-Guard v0.1** | 268M | Clasificación binaria NCII | Texto | MIT | Hugging Face |
+| LlamaGuard-2-8B | 8B | Moderación de contenido (prompt/response) | Texto | Llama 2 Community License | Hugging Face |
 | OpenAI Moderation API | no disponible | Moderación de texto general | Texto | API propietaria | API |
 
 La comparación con LlamaGuard-2-8B es relevante porque es un modelo de moderación de contenido de uso general, pero es mucho más pesado (8B) y no está específicamente entrenado para NCII. NCII-Light-Guard es mucho más ligero y especializado, pero su cobertura es menor y su capacidad de generalización es limitada. No hay datos cuantitativos que permitan una comparación justa.
@@ -84,7 +84,7 @@ La comparación con LlamaGuard-2-8B es relevante porque es un modelo de moderaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Exmanq/ncii-light-guard-v01
+- Modelo en Hugging Face: https://huggingface.co/Exmanq/ncii-light-guard-v01
 - Modelo original del autor: https://huggingface.co/hfmlsoc/ncii-light-guard-v01
 - Base model: https://huggingface.co/microsoft/harrier-oss-v1-270m
 - Versión ONNX: https://huggingface.co/prithivMLmods/hfmlsoc_ncii-light-guard-v01-ONNX

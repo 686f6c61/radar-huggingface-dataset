@@ -6,7 +6,7 @@ DeepSeek-V4.1-Flash es un modelo multimodal de arquitectura Mixture-of-Experts (
 
 La arquitectura es un transformer causal encoder-decoder (CED) de 40 capas, organizado como 20 capas de encoder causal seguidas de 20 capas de decoder, con proyeccion de la cache KV global desde los estados ocultos finales del encoder en lugar de derivarla capa a capa. Esto permite activar solo 8B parametros por token en prefill y 16B en decode, sobre un total de 552B. El modelo incorpora ademas un modulo Engram de memoria condicional de 196B parametros con acceso disperso por lookup basado en token, y descodificacion especulativa DSpark.
 
-El repositorio de HuggingFace analizado esta publicado por el usuario `drawthingsai`, no por la organizacion oficial `deepseek-ai`, y registra 0 descargas y 0 likes en el momento de la consulta. La model card reproduce el contenido atribuido a DeepSeek AI (incluido un enlace a un informe tecnico alojado en el espacio de `deepseek-ai`), por lo que la procedencia del checkpoint debe verificarse antes de cualquier uso en produccion. La licencia declarada es MIT.
+El repositorio de Hugging Face analizado esta publicado por el usuario `drawthingsai`, no por la organizacion oficial `deepseek-ai`, y registra 0 descargas y 0 likes en el momento de la consulta. La model card reproduce el contenido atribuido a DeepSeek AI (incluido un enlace a un informe tecnico alojado en el espacio de `deepseek-ai`), por lo que la procedencia del checkpoint debe verificarse antes de cualquier uso en produccion. La licencia declarada es MIT.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El repositorio de HuggingFace analizado esta publicado por el usuario `drawthing
 | Longitud de contexto | Hasta 1.000.000 de tokens |
 | Tipos de cuantizacion | Cache KV principal en FP4 (formato E2M1, una escala E4M3 por cada 16 canales); cuantizacion de pesos no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (declarada en la model card y en los metadatos de HuggingFace) |
+| Licencia | MIT (declarada en la model card y en los metadatos de Hugging Face) |
 | Formato de pesos | no disponible (libreria declarada: transformers; repositorio de 524,1 GB) |
 | Modalidades | Entrada de imagen y texto; salida de texto autoregresiva |
 | Expertos por capa MoE | 1 experto compartido + 384 expertos enrutados; 6 expertos enrutados activos por token |
@@ -47,7 +47,7 @@ El preentrenamiento se realizo desde cero sobre un corpus multimodal de 45T toke
 - Decodificacion especulativa DSpark, con generacion de borradores semiautoregresiva y verificacion planificada por confianza.
 - Memoria condicional Engram de 196B parametros con acceso disperso por lookup basado en token.
 - Tool calling / function calling: la model card no documenta soporte explicito de llamadas a herramientas; no disponible.
-- Capacidades multilingues: no disponible; los metadatos de HuggingFace no declaran idiomas.
+- Capacidades multilingues: no disponible; los metadatos de Hugging Face no declaran idiomas.
 - Audio, video u otras modalidades: no disponibles; solo se documentan imagen y texto.
 
 ## Casos de uso
@@ -81,7 +81,7 @@ Las unicas metricas cuantitativas verificables en la informacion proporcionada s
 
 Las cifras de esta seccion son estimaciones derivadas del numero de parametros declarado y del tamano del repositorio, no datos publicados por el autor.
 
-- Pesos: con 552B parametros en el backbone, el checkpoint ocupa aproximadamente 1,1 TB en BF16, unos 552 GB en FP8 y unos 276 GB en FP4/INT4, sin contar el modulo Engram de 196B parametros si se materializa completo. El repositorio en HuggingFace ocupa 524,1 GB, consistente con un checkpoint cuantizado, aunque el formato exacto no esta declarado.
+- Pesos: con 552B parametros en el backbone, el checkpoint ocupa aproximadamente 1,1 TB en BF16, unos 552 GB en FP8 y unos 276 GB en FP4/INT4, sin contar el modulo Engram de 196B parametros si se materializa completo. El repositorio en Hugging Face ocupa 524,1 GB, consistente con un checkpoint cuantizado, aunque el formato exacto no esta declarado.
 - VRAM para inferencia: en FP8 se necesitan del orden de 552 GB solo para pesos, lo que exige al menos un nodo de 8×H100 80 GB (640 GB) o 8×A100 80 GB; en FP4 el requisito baja a unos 276 GB, viable en 4×H100 80 GB. A esto hay que sumar la cache KV (890 bytes por token, aproximadamente 890 MB para 1M tokens) y los buffers de activaciones.
 - GPU consumer: no es viable. Una RTX 4090 con 24 GB no puede alojar un backbone de 552B parametros, y el hecho de activar 8B o 16B parametros por token no reduce el requisito de memoria, porque todos los expertos enrutados deben estar residentes.
 - Opciones de despliegue: la model card solo declara `library_name: transformers`. No hay confirmacion de soporte en vLLM, llama.cpp, Ollama o TGI, ni de disponibilidad de pesos en GGUF.
@@ -103,7 +103,7 @@ No hay datos de rendimiento, contexto o licencia de los modelos comparados en la
 
 - Procedencia no verificada: el repositorio esta publicado por el usuario `drawthingsai`, no por la organizacion oficial `deepseek-ai`, y registra 0 descargas y 0 likes. La model card atribuye el modelo a DeepSeek AI y enlaza a un informe tecnico alojado en el espacio de `deepseek-ai`, pero la autoria real del checkpoint subido no puede confirmarse con los datos disponibles.
 - Ausencia de resultados de calidad: no hay cifras de MMLU, HumanEval, GSM8K ni de benchmarks agenticos en la informacion disponible, por lo que no es posible evaluar el rendimiento real frente a alternativas.
-- Idiomas no declarados: los metadatos de HuggingFace no especifican idiomas soportados y la model card tampoco los detalla, lo que impide garantizar cobertura multilingue.
+- Idiomas no declarados: los metadatos de Hugging Face no especifican idiomas soportados y la model card tampoco los detalla, lo que impide garantizar cobertura multilingue.
 - Cadena de herramienta incierta: solo se declara `transformers`; no hay confirmacion de compatibilidad con vLLM, TGI, llama.cpp u Ollama, ni de pesos en GGUF.
 - Coste de almacenamiento y despliegue: el repositorio ocupa 524,1 GB y el backbone tiene 552B parametros, lo que descarta el despliegue en hardware de consumo y exige nodos multi-GPU.
 - Cuantizacion de la cache KV en FP4 (E2M1 con escala E4M3 cada 16 canales): la model card no documenta el impacto de esta cuantizacion sobre la precision, un aspecto critico en tareas que dependen de recuperar detalles exactos de contextos largos.
@@ -114,9 +114,9 @@ No hay datos de rendimiento, contexto o licencia de los modelos comparados en la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/drawthingsai/DeepSeek-V4.1-Flash
+- Repositorio en Hugging Face: https://huggingface.co/drawthingsai/DeepSeek-V4.1-Flash
 - Informe tecnico enlazado desde la model card: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organizacion DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Sitio oficial de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
 - Logo y recursos graficos referenciados en la model card: https://github.com/deepseek-ai/DeepSeek-V2/blob/main/figures/logo.svg

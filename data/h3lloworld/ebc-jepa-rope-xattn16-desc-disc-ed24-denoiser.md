@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Base | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| EBC-JEPA rope_xattn16_desc_disc (ED24) | V-JEPA 2.1 ViT-B + LoRA r8 | Denoising de eventos | MIT | Repositorio HuggingFace con `trainable.pt` |
+| EBC-JEPA rope_xattn16_desc_disc (ED24) | V-JEPA 2.1 ViT-B + LoRA r8 | Denoising de eventos | MIT | Repositorio Hugging Face con `trainable.pt` |
 | EDformer | no disponible en la informacion proporcionada | Denoising de eventos / ED24 | no disponible | No disponible |
 | V-JEPA 2.1 ViT-B (Meta) | Backbone base | Representaciones de video | MIT | Checkpoint publico de Meta |
 
@@ -83,7 +83,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/h3lloworld/ebc-jepa-rope-xattn16-desc-disc-ed24-denoiser
+- Modelo en Hugging Face: https://huggingface.co/h3lloworld/ebc-jepa-rope-xattn16-desc-disc-ed24-denoiser
 - Codigo (rama denoise-lora): https://github.com/whohyf/EBC-JEPA-share/tree/denoise-lora
 - Checkpoint del backbone V-JEPA 2.1 ViT-B (Meta): https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitb_dist_vitG_384.pt
 - Documentacion de protocolo (referenciada en el repo): `docs/lora_denoise/HANDOFF.md`

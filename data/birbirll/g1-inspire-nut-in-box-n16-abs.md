@@ -90,7 +90,7 @@ El gemelo relativo comparte arquitectura, contrato de acciones y tarea, pero usa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/birbirll/g1-inspire-nut-in-box-n16-abs
+- Modelo en Hugging Face: https://huggingface.co/birbirll/g1-inspire-nut-in-box-n16-abs
 - Gemelo relativo: https://huggingface.co/birbirll/g1-inspire-nut-in-box-n16-rel
 - Modelos del autor: https://huggingface.co/birbirll/models
 - Dataset relacionado (piston pick-and-place): https://claru.ai/datasets/birbirll-g1-inspire-piston-pick-place

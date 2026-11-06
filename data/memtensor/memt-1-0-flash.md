@@ -70,9 +70,9 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parámetros totales | Parámetros activos | Memoria entrenable | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MemT-1.0-Flash | ~288B | 17B | 3,61B (+336M de estado) | No disponible (referencia a 128K) | MIT | Pesos en HuggingFace, 576 GB |
+| MemT-1.0-Flash | ~288B | 17B | 3,61B (+336M de estado) | No disponible (referencia a 128K) | MIT | Pesos en Hugging Face, 576 GB |
 | MemT-1.0-Nano | 36B | 3B | 451M (+10M de estado) | No disponible | No disponible en la información | Pesos en la colección MemT-1.0 |
-| DeepSeek-V4-Flash (base) | No disponible | No disponible | No aplica (sin memoria nativa) | No disponible | No disponible en la información | Pesos en HuggingFace |
+| DeepSeek-V4-Flash (base) | No disponible | No disponible | No aplica (sin memoria nativa) | No disponible | No disponible en la información | Pesos en Hugging Face |
 
 Frente a su modelo base, la diferencia relevante es la incorporación de memoria nativa entrenable y la reducción de almacenamiento declarada, no un cambio de escala. Frente a Nano, Flash multiplica por ocho los parámetros totales y por 5,7 los activos, con un estado de memoria dinámico 33 veces mayor.
 
@@ -90,7 +90,7 @@ Frente a su modelo base, la diferencia relevante es la incorporación de memoria
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MemTensor/MemT-1.0-Flash
+- Modelo en Hugging Face: https://huggingface.co/MemTensor/MemT-1.0-Flash
 - Informe técnico (PDF): https://arxiv.org/pdf/2610.26825
 - Repositorio GitHub: https://github.com/MemTensor/MemT-1.0
 - Colección MemT-1.0: https://huggingface.co/collections/MemTensor/memt-1

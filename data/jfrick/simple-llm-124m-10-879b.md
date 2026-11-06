@@ -82,9 +82,9 @@ No se han publicado resultados de benchmarks de capacidades como MMLU, HumanEval
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---:|---:|---|---|---|
 | `jfrick/simple-llm-124M-10.879B` | 149,6M en safetensors; 124,4M declarados | 8.192 configurados | no disponible | Pesos safetensors y código PyTorch personalizado | Experimental, modelo base, sin benchmarks de capacidades |
-| GPT-2 124M | 124M | 1.024 | MIT | HuggingFace Transformers | Modelo base histórico, ampliamente soportado por el ecosistema |
-| SmolLM-135M | 135M | 2.048 | Apache-2.0 | HuggingFace Transformers | Modelo pequeño con soporte estándar de Transformers |
-| Pythia-160M | 160M | 2.048 | Apache-2.0 | HuggingFace Transformers | Modelo base de investigación con checkpoints intermedios |
+| GPT-2 124M | 124M | 1.024 | MIT | Hugging Face Transformers | Modelo base histórico, ampliamente soportado por el ecosistema |
+| SmolLM-135M | 135M | 2.048 | Apache-2.0 | Hugging Face Transformers | Modelo pequeño con soporte estándar de Transformers |
+| Pythia-160M | 160M | 2.048 | Apache-2.0 | Hugging Face Transformers | Modelo base de investigación con checkpoints intermedios |
 
 No hay datos de benchmark comunes que permitan comparar rendimiento entre estos modelos y `simple-llm-124M-10.879B`. La comparación anterior es solo de especificaciones públicas y disponibilidad; no implica superioridad o inferioridad en capacidades.
 
@@ -106,10 +106,10 @@ No hay datos de benchmark comunes que permitan comparar rendimiento entre estos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jfrick/simple-llm-124M-10.879B
+- Hugging Face: https://huggingface.co/jfrick/simple-llm-124M-10.879B
 - Repositorio de código: https://github.com/koogle/lm-exploration
-- Curvas de pérdida de entrenamiento y validación: `evaluation/loss-curves.png` en el repositorio de HuggingFace
-- Curvas de norma de gradiente, tasa de aprendizaje y throughput: `evaluation/optimizer-curves.png` en el repositorio de HuggingFace
-- Registro de recuentos de tokens y hashes de artefactos: `release.json` en el repositorio de HuggingFace
+- Curvas de pérdida de entrenamiento y validación: `evaluation/loss-curves.png` en el repositorio de Hugging Face
+- Curvas de norma de gradiente, tasa de aprendizaje y throughput: `evaluation/optimizer-curves.png` en el repositorio de Hugging Face
+- Registro de recuentos de tokens y hashes de artefactos: `release.json` en el repositorio de Hugging Face
 - Paper: no disponible
 - Demo: no disponible

@@ -79,6 +79,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- [HuggingFace: Sasaki2801/plantvlm-srp-browser](https://huggingface.co/Sasaki2801/plantvlm-srp-browser)
+- [Hugging Face: Sasaki2801/plantvlm-srp-browser](https://huggingface.co/Sasaki2801/plantvlm-srp-browser)
 - [Demo en Hugging Face Spaces](https://huggingface.co/spaces/Sasaki2801/plantvlm-srp-demo)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

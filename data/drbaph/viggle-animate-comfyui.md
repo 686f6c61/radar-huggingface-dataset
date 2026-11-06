@@ -80,7 +80,7 @@ No se han identificado múltiples alternativas de la misma categoría en la info
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/drbaph/Viggle-Animate-ComfyUI
+- Repositorio de Hugging Face: https://huggingface.co/drbaph/Viggle-Animate-ComfyUI
 - Modelo original: https://huggingface.co/Viggle/Viggle-Animate
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Node pack ComfyUI-Viggle-Animate-H3: https://github.com/Saganaki22/ComfyUI-Viggle-Animate-H3

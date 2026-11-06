@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VDC five-attributes-sd14 | Condiciones VDC sobre SD 1.4 congelado | No disponible (solo MLPs) | No aplica | No disponible | Repo privado en HuggingFace |
+| VDC five-attributes-sd14 | Condiciones VDC sobre SD 1.4 congelado | No disponible (solo MLPs) | No aplica | No disponible | Repo privado en Hugging Face |
 | Stable Diffusion 1.4 (CompVis) | Modelo de difusión texto-imagen | ~860M UNet + CLIP | 77 tokens de texto | CreativeML OpenRAIL-M | Público |
 | Implementación original VDC (omarAlezaby) | Método de condicionamiento visual | No disponible | No disponible | No disponible | GitHub público |
 | Modelos de restauración dedicados (p. ej. SwinIR, Restormer) | Redes de restauración supervisadas | Variable | No aplica | Variable | Público |
@@ -84,7 +84,7 @@ La comparación directa con modelos de restauración dedicados no es posible con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dollyx/vdc-five-attributes-sd14
+- Hugging Face: https://huggingface.co/dollyx/vdc-five-attributes-sd14
 - Paper VDC: https://arxiv.org/abs/2603.25441
 - Implementación original: https://github.com/omarAlezaby/VDC
 - Modelo base: https://huggingface.co/CompVis/stable-diffusion-v-1-4-original

@@ -96,9 +96,9 @@ Vision:
 
 | Modelo | Parametros | Contexto | Rendimiento (datos disponibles) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mistral-Small-3.2-24B-Instruct-2506 (bnb-4bit, este repositorio) | 24,0B | 131.072 tokens en el ejemplo de la model card | Sin evaluacion publicada de la version cuantizada | apache-2.0 | HuggingFace, formato safetensors 4-bit, libreria vllm |
-| Mistral-Small-3.2-24B-Instruct-2506 (original, bf16) | 24,0B | 131.072 tokens en el ejemplo de la model card | Wildbench v2 65,33 %; Arena Hard v2 43,1 %; HumanEval Plus 92,90 %; DocVQA 94,86 % | apache-2.0 | HuggingFace, safetensors bf16, ~55 GB de VRAM |
-| Mistral-Small-3.1-24B-Instruct-2503 | 24B | no disponible en la informacion proporcionada | Wildbench v2 55,6 %; Arena Hard v2 19,56 %; HumanEval Plus 88,99 %; DocVQA 94,08 % | apache-2.0 | HuggingFace |
+| Mistral-Small-3.2-24B-Instruct-2506 (bnb-4bit, este repositorio) | 24,0B | 131.072 tokens en el ejemplo de la model card | Sin evaluacion publicada de la version cuantizada | apache-2.0 | Hugging Face, formato safetensors 4-bit, libreria vllm |
+| Mistral-Small-3.2-24B-Instruct-2506 (original, bf16) | 24,0B | 131.072 tokens en el ejemplo de la model card | Wildbench v2 65,33 %; Arena Hard v2 43,1 %; HumanEval Plus 92,90 %; DocVQA 94,86 % | apache-2.0 | Hugging Face, safetensors bf16, ~55 GB de VRAM |
+| Mistral-Small-3.1-24B-Instruct-2503 | 24B | no disponible en la informacion proporcionada | Wildbench v2 55,6 %; Arena Hard v2 19,56 %; HumanEval Plus 88,99 %; DocVQA 94,08 % | apache-2.0 | Hugging Face |
 | Otros modelos multimodales de tamano similar (por ejemplo, alternativas de 27B-32B de otros fabricantes) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

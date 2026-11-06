@@ -93,7 +93,7 @@ No hay datos de rendimiento comparativo en la tarea de extracción, por lo que n
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/cs-file-uploads/loc-gemma3-27b-adapter
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/cs-file-uploads/loc-gemma3-27b-adapter
 - Modelo base: https://huggingface.co/google/gemma-3-27b-it
 - Librería PEFT: https://github.com/huggingface/peft
 - Repositorio de código mencionado en la model card: no disponible (la propia ficha lo cita pero no incluye enlace)

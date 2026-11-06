@@ -6,7 +6,7 @@ El modelo `open-sci/open-sci-ref-v0.02-1.7b-dclm-300B-4096-longsft_16k-SFT-Tulu3
 
 El modelo se publica con la libreria transformers, pesos en safetensors y pipeline declarado de `feature-extraction`, aunque su naturaleza es la de un modelo causal de generacion de texto. Es relevante ahora como artefacto de investigacion reproducible dentro del ecosistema open-sci: un modelo pequeno (1,7B) pensado para servir de referencia en experimentos de entrenamiento, comparacion de recetas de datos y validacion de pipelines, mas que como modelo de produccion.
 
-La informacion publicada es escasa: la model card es autogenerada por el Trainer de HuggingFace y no incluye descripcion funcional, datos de evaluacion ni limitaciones declaradas. La licencia figura como "other", sin terminos explicitos en la informacion disponible.
+La informacion publicada es escasa: la model card es autogenerada por el Trainer de Hugging Face y no incluye descripcion funcional, datos de evaluacion ni limitaciones declaradas. La licencia figura como "other", sin terminos explicitos en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -73,10 +73,10 @@ El model-index publicado por el autor contiene una entrada (`sft__f679a5c592c8df
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| open-sci-ref-v0.02-1.7b (este modelo) | 1,7B | 16.384 (inferido) | other | HuggingFace, safetensors | Modelo de referencia de investigacion, sin benchmarks publicados |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 | HuggingFace, GGUF, vLLM | Modelo instruido de proposito general con evaluaciones publicadas |
-| Llama 3.2-1B-Instruct | 1,2B | 131.072 | Llama 3.2 Community License | HuggingFace, GGUF, vLLM | Modelo instruido con contexto muy largo y amplio soporte de tooling |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 | Apache 2.0 | HuggingFace, GGUF | Referencia abierta de tamano casi identico con benchmarks publicados |
+| open-sci-ref-v0.02-1.7b (este modelo) | 1,7B | 16.384 (inferido) | other | Hugging Face, safetensors | Modelo de referencia de investigacion, sin benchmarks publicados |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 | Hugging Face, GGUF, vLLM | Modelo instruido de proposito general con evaluaciones publicadas |
+| Llama 3.2-1B-Instruct | 1,2B | 131.072 | Llama 3.2 Community License | Hugging Face, GGUF, vLLM | Modelo instruido con contexto muy largo y amplio soporte de tooling |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 | Apache 2.0 | Hugging Face, GGUF | Referencia abierta de tamano casi identico con benchmarks publicados |
 
 La comparacion directa de rendimiento no es posible porque este modelo no publica resultados de evaluacion. Frente a las alternativas, su principal diferencia es el enfoque de investigacion reproducible (hiperparametros completos, dataset documentado) y su menor madurez de ecosistema (sin cuantizaciones GGUF ni licencia clara).
 
@@ -95,8 +95,8 @@ La comparacion directa de rendimiento no es posible porque este modelo no public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-dclm-300B-4096-longsft_16k-SFT-Tulu3-decontaminate-ot30k
-- Organizacion open-sci en HuggingFace: https://huggingface.co/open-sci
+- Modelo en Hugging Face: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-dclm-300B-4096-longsft_16k-SFT-Tulu3-decontaminate-ot30k
+- Organizacion open-sci en Hugging Face: https://huggingface.co/open-sci
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - Dataset Open Thoughts: https://huggingface.co/datasets/open-thoughts/OpenThoughts3-1.2M
 - Dataset DCLM: https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0

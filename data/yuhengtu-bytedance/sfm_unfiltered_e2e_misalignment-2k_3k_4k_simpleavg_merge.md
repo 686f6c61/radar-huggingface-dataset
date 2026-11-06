@@ -4,13 +4,13 @@
 
 El modelo `sfm_unfiltered_e2e_misalignment-2k_3k_4k_simpleavg_merge` es un merge experimental creado con [mergekit](https://github.com/cg123/mergekit) por el usuario `yuhengtu-bytedance`, presumiblemente vinculado a ByteDance. Se trata de una fusión lineal de tres checkpoints intermedios de un mismo proceso de entrenamiento, identificados como `global_step2000`, `global_step3000` y `global_step4000`, todos bajo la ruta `unfiltered_e2e_misalignment`. El nombre sugiere que el modelo base participó en un pipeline de alineación o desalineación de seguridad, aunque no se proporcionan detalles sobre el dataset ni el objetivo final.
 
-El resultado es un modelo de lenguaje de aproximadamente 6,8 mil millones de parámetros (6.856.253.440), con arquitectura tipo GPT-NeoX (según los tags de HuggingFace) y pesos en formato `safetensors`. El repositorio ocupa 13,7 GB, lo que es coherente con pesos en `bfloat16`. No se especifican la licencia, los idiomas soportados ni la longitud de contexto. Al ser un merge de checkpoints intermedios, su comportamiento es difícil de predecir sin una evaluación específica, y no se han publicado benchmarks ni documentación adicional.
+El resultado es un modelo de lenguaje de aproximadamente 6,8 mil millones de parámetros (6.856.253.440), con arquitectura tipo GPT-NeoX (según los tags de Hugging Face) y pesos en formato `safetensors`. El repositorio ocupa 13,7 GB, lo que es coherente con pesos en `bfloat16`. No se especifican la licencia, los idiomas soportados ni la longitud de contexto. Al ser un merge de checkpoints intermedios, su comportamiento es difícil de predecir sin una evaluación específica, y no se han publicado benchmarks ni documentación adicional.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según tags de HuggingFace) |
+| Arquitectura | GPT-NeoX (según tags de Hugging Face) |
 | Parametros totales | 6.856.253.440 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -75,7 +75,7 @@ No se dispone de información sobre modelos comparables. Al ser un merge experim
 
 ## Enlaces
 
-- [HuggingFace: yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-2k_3k_4k_simpleavg_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-2k_3k_4k_simpleavg_merge)
+- [Hugging Face: yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-2k_3k_4k_simpleavg_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-2k_3k_4k_simpleavg_merge)
 - [mergekit (repositorio)](https://github.com/cg123/mergekit)
 - [Paper del método linear (arXiv:2203.05482)](https://arxiv.org/abs/2203.05482)
 - [Página del modelo en friendli.ai](https://friendli.ai/models/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-2k_3k_4k_merge)

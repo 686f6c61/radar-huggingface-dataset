@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Se trata de un checkpoint de pesos publicado en HuggingFace por el usuario `junbrro` bajo el identificador `egopi-axis2-naive-full-persistent-30k-actsilu-slurm-19103-20260922`. No es un modelo con model card descriptiva: el repositorio contiene únicamente los pesos finales y la configuración de una ejecución de entrenamiento concreta (paso final 30000, origen identificado como "Slurm 19103"), sin estado del optimizador ni de generación aleatoria. La información pública disponible se limita a los metadatos del repositorio y a las cuatro líneas de la model card.
+Se trata de un checkpoint de pesos publicado en Hugging Face por el usuario `junbrro` bajo el identificador `egopi-axis2-naive-full-persistent-30k-actsilu-slurm-19103-20260922`. No es un modelo con model card descriptiva: el repositorio contiene únicamente los pesos finales y la configuración de una ejecución de entrenamiento concreta (paso final 30000, origen identificado como "Slurm 19103"), sin estado del optimizador ni de generación aleatoria. La información pública disponible se limita a los metadatos del repositorio y a las cuatro líneas de la model card.
 
 El dato objetivo más relevante es el tamaño: 6.912.902.976 parámetros (aproximadamente 6,9 mil millones), con un repositorio de 13,8 GB en formato safetensors, lo que es coherente con pesos almacenados en bf16/fp16 (6,9 mil millones × 2 bytes ≈ 13,8 GB). La etiqueta `RLDX-1` y la mención de un tokenizador de acciones (`actlat/`) en la model card apuntan a un modelo vinculado a control o acción más que a generación de texto convencional, pero esto no se confirma en ninguna fuente.
 
@@ -90,6 +90,6 @@ No disponible. No es posible establecer una comparativa rigurosa: se desconoce l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/junbrro/egopi-axis2-naive-full-persistent-30k-actsilu-slurm-19103-20260922
+- Repositorio en Hugging Face: https://huggingface.co/junbrro/egopi-axis2-naive-full-persistent-30k-actsilu-slurm-19103-20260922
 - Búsqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos por la búsqueda corresponden a páginas de descarga del navegador Google Chrome y a hilos de foro sin relación con el modelo, por lo que no se incluyen.
 - Paper, blog, repositorio de código o demo: no disponibles.

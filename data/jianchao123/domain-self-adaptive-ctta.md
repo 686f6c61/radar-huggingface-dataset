@@ -4,7 +4,7 @@
 
 El modelo `jianchao123/Domain-Self-Adaptive-CTTA` es un sistema de adaptacion continua en tiempo de prueba (Continuous Test-Time Adaptation, CTTA) que, segun la documentacion disponible, aborda el problema de adaptar un modelo a nuevas distribuciones de datos en tiempo real sin disponer de etiquetas. Su enfoque de arquitectura emplea un conjunto de expertos compartidos y expertos auto-adaptativos por dominio, complementado con una modulacion basada en frecuencia para reducir la interferencia entre dominios y mitigar el olvido catastrofico.
 
-Esta orientado a escenarios de vision artificial donde la distribucion de los datos cambia de forma continua durante la inferencia, por ejemplo en conduccion autonoma, sistemas de videovigilancia o monitorizacion industrial. El autor publica el proyecto bajo licencia Apache 2.0 y el repositorio ocupa aproximadamente 0,4 GB. Aunque la informacion tecnica detallada (parametros, contexto, arquitectura exacta) no esta publicada en la ficha de HuggingFace, la bibliografia relacionada apunta hacia un modelo de tipo Mixture of Experts (MoE).
+Esta orientado a escenarios de vision artificial donde la distribucion de los datos cambia de forma continua durante la inferencia, por ejemplo en conduccion autonoma, sistemas de videovigilancia o monitorizacion industrial. El autor publica el proyecto bajo licencia Apache 2.0 y el repositorio ocupa aproximadamente 0,4 GB. Aunque la informacion tecnica detallada (parametros, contexto, arquitectura exacta) no esta publicada en la ficha de Hugging Face, la bibliografia relacionada apunta hacia un modelo de tipo Mixture of Experts (MoE).
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ No se han encontrado evidencias en la informacion disponible sobre soporte de to
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha del modelo en HuggingFace no incluye metricas, y la busqueda web no aporta numeros de rendimiento concretos para este checkpoint. Se recomienda consultar el paper asociado para obtener resultados experimentales de referencia, aunque estos no se reproducen aqui por falta de datos verificables.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha del modelo en Hugging Face no incluye metricas, y la busqueda web no aporta numeros de rendimiento concretos para este checkpoint. Se recomienda consultar el paper asociado para obtener resultados experimentales de referencia, aunque estos no se reproducen aqui por falta de datos verificables.
 
 ## Requisitos de hardware
 
@@ -72,6 +72,6 @@ No se dispone de modelos comparables de la misma categoria en la informacion pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jianchao123/Domain-Self-Adaptive-CTTA
+- Hugging Face: https://huggingface.co/jianchao123/Domain-Self-Adaptive-CTTA
 - Paper relacionado (arxiv): https://arxiv.org/html/2507.00502v3
 - Repositorio de referencia (paperswithcode): https://paperswithcode.co/paper/2507.00502

@@ -23,7 +23,7 @@ Su relevancia es instrumental: sirve como pieza de infraestructura para quien qu
 | Tamano del vocabulario | 8.000 entradas (7.192 de subpalabra + 800 merges + 8 tokens especiales) |
 | Token de fin de documento | ID 7992 |
 | Libreria | `tokenizers` |
-| Tamano del repositorio | 0,0 GB (declarado en HuggingFace) |
+| Tamano del repositorio | 0,0 GB (declarado en Hugging Face) |
 | Fecha de creacion | 2026-09-23 |
 | Ultima actualizacion | 2026-09-23 |
 | Descargas / likes | 0 / 0 |
@@ -78,7 +78,7 @@ La model card indica que se midieron el comportamiento de compresion y la integr
 - Memoria en CPU: reducida. El repositorio declara 0,0 GB y un vocabulario de 8.000 entradas implica un `tokenizer.json` de tamano muy inferior a los tokenizadores de uso comun (la cifra exacta no se proporciona en la informacion disponible).
 - GPU recomendadas: no aplicable.
 - Compatibilidad con GPU de consumo: no aplicable, al no requerir aceleracion.
-- Opciones de despliegue: libreria `tokenizers` de HuggingFace (via `Tokenizer.from_pretrained`), e integracion en `transformers` y en pipelines de preprocesamiento de datos.
+- Opciones de despliegue: libreria `tokenizers` de Hugging Face (via `Tokenizer.from_pretrained`), e integracion en `transformers` y en pipelines de preprocesamiento de datos.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ La informacion proporcionada no incluye modelos comparables. Como referencia cua
 
 | Tokenizador | Tamano de vocabulario | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kefir SuperBPE 8000 v2 | 8.000 | en | Apache-2.0 | HuggingFace (`abcastor/small-llm-superbpe-8000-v2`) |
+| Kefir SuperBPE 8000 v2 | 8.000 | en | Apache-2.0 | Hugging Face (`abcastor/small-llm-superbpe-8000-v2`) |
 | Tokenizadores de LLM abiertos de gran vocabulario | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -105,5 +105,5 @@ La informacion proporcionada no incluye modelos comparables. Como referencia cua
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abcastor/small-llm-superbpe-8000-v2
-- Corpus Kefir v1 (bucket de HuggingFace): https://huggingface.co/buckets/abcastor/small-llm-corpus-100b-v2-dataset
+- Hugging Face: https://huggingface.co/abcastor/small-llm-superbpe-8000-v2
+- Corpus Kefir v1 (bucket de Hugging Face): https://huggingface.co/buckets/abcastor/small-llm-corpus-100b-v2-dataset

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `24f3000591kaviyarasan/green-ai-carbon-audit` es un modelo publicado en HuggingFace cuyo propósito declarado es la auditoría de emisiones de carbono en sistemas de IA. El autor, `24f3000591kaviyarasan`, ha documentado únicamente las emisiones de CO2 equivalente (191,265 kg CO2eq) y el consumo energético total de GPU (546,4704 kWh) durante un proceso de fine-tuning realizado en una NVIDIA A100 en la región `us-central1`. No se proporciona información sobre la arquitectura, el tamaño, el contexto ni las capacidades del modelo.
+El repositorio `24f3000591kaviyarasan/green-ai-carbon-audit` es un modelo publicado en Hugging Face cuyo propósito declarado es la auditoría de emisiones de carbono en sistemas de IA. El autor, `24f3000591kaviyarasan`, ha documentado únicamente las emisiones de CO2 equivalente (191,265 kg CO2eq) y el consumo energético total de GPU (546,4704 kWh) durante un proceso de fine-tuning realizado en una NVIDIA A100 en la región `us-central1`. No se proporciona información sobre la arquitectura, el tamaño, el contexto ni las capacidades del modelo.
 
 La relevancia de este repositorio radica en su contribución a la contabilidad de emisiones en el entrenamiento de modelos, un aspecto crítico de la IA sostenible. Sin embargo, la ausencia de una model card técnica convencional impide evaluar su funcionalidad real. Los resultados de búsqueda web no arrojan información adicional sobre este modelo concreto, solo sobre proyectos relacionados de "Green AI" que no están vinculados a este repositorio.
 
@@ -54,7 +54,7 @@ No disponible. No se conocen modelos comparables con la misma funcionalidad decl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/24f3000591kaviyarasan/green-ai-carbon-audit
+- Repositorio Hugging Face: https://huggingface.co/24f3000591kaviyarasan/green-ai-carbon-audit
 - Proyecto relacionado (no directamente vinculado): https://github.com/hovarthan21/Green-AI---Smart-Carbon-Tracker
 - Calculadora de huella de carbono de IA: https://www.greenai.info/
 - Artículo sobre iniciativas de IA verde: https://www.sciencedirect.com/science/article/pii/S0959652624025393

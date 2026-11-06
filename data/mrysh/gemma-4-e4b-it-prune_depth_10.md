@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparado (BFCL, hiring-bias, MedQA) en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/gemma-4-e4b-it-prune_depth_10
+- Modelo en Hugging Face: https://huggingface.co/mrysh/gemma-4-e4b-it-prune_depth_10
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - NVIDIA ModelOpt (herramienta de poda): no disponible en la informacion proporcionada
 - Paper de Minitron: no disponible en la informacion proporcionada

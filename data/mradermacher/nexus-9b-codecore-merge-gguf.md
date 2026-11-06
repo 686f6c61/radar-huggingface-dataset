@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nexus-9B-CodeCore-Merge-GGUF es la version cuantizada en formato GGUF del modelo prithivMLmods/Nexus-9B-CodeCore-Merge, publicada por el usuario mradermacher, conocido en HuggingFace por producir cuantizaciones GGUF de terceros para su uso con llama.cpp y derivados. El modelo original es un merge (fusion de pesos) orientado a generacion de codigo, razonamiento con cadena de pensamiento (chain-of-thought), uso de herramientas y function calling, segun las etiquetas declaradas en la model card.
+Nexus-9B-CodeCore-Merge-GGUF es la version cuantizada en formato GGUF del modelo prithivMLmods/Nexus-9B-CodeCore-Merge, publicada por el usuario mradermacher, conocido en Hugging Face por producir cuantizaciones GGUF de terceros para su uso con llama.cpp y derivados. El modelo original es un merge (fusion de pesos) orientado a generacion de codigo, razonamiento con cadena de pensamiento (chain-of-thought), uso de herramientas y function calling, segun las etiquetas declaradas en la model card.
 
 La relevancia de esta publicacion es practica: convierte un modelo de la familia Qwen (la etiqueta `qwen3_5` aparece en los tags) en artefactos listos para inferencia local en CPU y GPU de consumo mediante llama.cpp, Ollama o TGI. El repo incluye cuantizaciones estaticas en multiples niveles de compresion, desde x-f16 hasta Q2_K, ademas de un suplemento multimodal mmproj en Q8_0.
 
@@ -52,7 +52,7 @@ En cuanto a datos de entrenamiento, numero de tokens, composicion del dataset y 
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-Ni la model card del repositorio cuantizado ni la informacion de HuggingFace proporcionada incluyen cifras de MMLU, HumanEval, GSM8K, MBPP o cualquier otra metrica. Tampoco se aportan comparaciones con el modelo base sin cuantizar ni estimaciones de perplejidad para los distintos niveles de cuantizacion.
+Ni la model card del repositorio cuantizado ni la informacion de Hugging Face proporcionada incluyen cifras de MMLU, HumanEval, GSM8K, MBPP o cualquier otra metrica. Tampoco se aportan comparaciones con el modelo base sin cuantizar ni estimaciones de perplejidad para los distintos niveles de cuantizacion.
 
 ## Requisitos de hardware
 

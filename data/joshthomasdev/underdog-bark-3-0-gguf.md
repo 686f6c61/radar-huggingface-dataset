@@ -90,7 +90,7 @@ No se dispone de una comparación de calidad (WER) entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/joshthomasdev/underdog-bark-3.0-gguf
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/joshthomasdev/underdog-bark-3.0-gguf
 - Modelo base: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0
 - Repositorio de configuración y tokenizer utilizados: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Pro
 - Revisión del modelo base empleada: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0/tree/85db2ad18ab41e534a222ee253c29191d77ed919

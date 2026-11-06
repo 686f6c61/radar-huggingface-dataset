@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fantasy_dog es un repositorio publicado en HuggingFace por el usuario larapython. La informacion disponible sobre este recurso es extremadamente limitada: la model card contiene unicamente la declaracion de licencia (creativeml-openrail-m) y no incluye descripcion, documentacion tecnica ni ejemplos de uso. Ademas, el tamano del repositorio es de 0.0 GB y no hay ficheros de pesos visibles, por lo que no es posible determinar si se trata de un modelo de generacion de imagenes, un modelo de texto o un recurso de otro tipo.
+Fantasy_dog es un repositorio publicado en Hugging Face por el usuario larapython. La informacion disponible sobre este recurso es extremadamente limitada: la model card contiene unicamente la declaracion de licencia (creativeml-openrail-m) y no incluye descripcion, documentacion tecnica ni ejemplos de uso. Ademas, el tamano del repositorio es de 0.0 GB y no hay ficheros de pesos visibles, por lo que no es posible determinar si se trata de un modelo de generacion de imagenes, un modelo de texto o un recurso de otro tipo.
 
 Por el nombre y la licencia empleada, todo apunta a que se trata de un peso o ajuste (por ejemplo, un LoRA o embedding) destinado a la generacion de imagenes de perros con tematica fantastica, tipico del ecosistema Stable Diffusion, donde la licencia CreativeML Open RAIL-M es estandar. Sin embargo, esta hipotesis no puede confirmarse con los datos disponibles. En su estado actual, el repositorio no ofrece contenido util para desarrolladores o investigadores, y su relevancia practica es nula a fecha de redaccion de esta ficha.
 
@@ -75,6 +75,6 @@ No disponible. Al no poder confirmarse ni la arquitectura ni la tarea del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/larapython/Fantasy_dog
+- Repositorio en Hugging Face: https://huggingface.co/larapython/Fantasy_dog
 - Licencia CreativeML Open RAIL-M (texto de referencia): https://huggingface.co/spaces/CompVis/stable-diffusion-license
-- Perfil del autor en HuggingFace: https://huggingface.co/larapython
+- Perfil del autor en Hugging Face: https://huggingface.co/larapython

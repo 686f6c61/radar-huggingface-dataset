@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ShoaibRaza12/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo Proximal Policy Optimization (PPO) para resolver el entorno `LunarLander-v2` de OpenAI Gym. Ha sido desarrollado por el usuario ShoaibRaza12 utilizando la librería `stable-baselines3`, y su propósito es demostrar cómo aplicar PPO a un problema clásico de control continuo en un entorno de simulación física. El modelo se publica en HuggingFace como un artefacto de RL, aunque su relevancia actual es limitada al ser un ejemplo de entrenamiento de un agente sobre un entorno sencillo. No se especifica la arquitectura interna de la red neuronal ni el número de parámetros, por lo que estos datos no están disponibles. El modelo no es un sistema de procesamiento de lenguaje, visión ni audio, y su ámbito de aplicación se restringe exclusivamente a la tarea de control del aterrizaje de una nave lunar simulada.
+El modelo `ShoaibRaza12/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo Proximal Policy Optimization (PPO) para resolver el entorno `LunarLander-v2` de OpenAI Gym. Ha sido desarrollado por el usuario ShoaibRaza12 utilizando la librería `stable-baselines3`, y su propósito es demostrar cómo aplicar PPO a un problema clásico de control continuo en un entorno de simulación física. El modelo se publica en Hugging Face como un artefacto de RL, aunque su relevancia actual es limitada al ser un ejemplo de entrenamiento de un agente sobre un entorno sencillo. No se especifica la arquitectura interna de la red neuronal ni el número de parámetros, por lo que estos datos no están disponibles. El modelo no es un sistema de procesamiento de lenguaje, visión ni audio, y su ámbito de aplicación se restringe exclusivamente a la tarea de control del aterrizaje de una nave lunar simulada.
 
 ## Especificaciones tecnicas
 
@@ -41,7 +41,7 @@ El modelo se basa en el algoritmo PPO (Proximal Policy Optimization), implementa
 
 ## Benchmarks y rendimiento
 
-Según los datos declarados por el autor en el model-index de HuggingFace, el modelo obtiene los siguientes resultados:
+Según los datos declarados por el autor en el model-index de Hugging Face, el modelo obtiene los siguientes resultados:
 
 | Tarea | Entorno | Metrica | Valor | Verificado |
 |---|---|---|---|---|
@@ -59,7 +59,7 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 ## Comparativa con modelos similares
 
-Existen otros modelos publicados en HuggingFace que también son agentes PPO entrenados en `LunarLander-v2`. No se dispone de sus métricas de rendimiento en la información proporcionada, por lo que la comparación se limita a su disponibilidad:
+Existen otros modelos publicados en Hugging Face que también son agentes PPO entrenados en `LunarLander-v2`. No se dispone de sus métricas de rendimiento en la información proporcionada, por lo que la comparación se limita a su disponibilidad:
 
 | Modelo | Algoritmo | Entorno | Recompensa media | Licencia |
 |---|---|---|---|---|
@@ -80,7 +80,7 @@ No se han encontrado datos comparables de otros algoritmos en la información pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ShoaibRaza12/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/ShoaibRaza12/ppo-LunarLander-v3
 - Modelo similar: https://huggingface.co/Lahariii/ppo-LunarLander-v3
 - Modelo similar: https://huggingface.co/bb12bb/ppo-LunarLander-v3
 - Librería stable-baselines3: https://github.com/DLR-RM/stable-baselines3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kumaran0329/judora-case-track-classifier es un repositorio de modelo alojado en HuggingFace por el usuario Kumaran0329. En el momento de la consulta no se ha publicado ninguna documentación asociada: no hay model card, ni descripción de arquitectura, ni licencia, ni lista de idiomas, ni pipeline declarado. El repositorio ocupa 0,0 GB, lo que indica que no contiene pesos en ningún formato (o que únicamente aloja ficheros de configuración de tamano despreciable).
+Kumaran0329/judora-case-track-classifier es un repositorio de modelo alojado en Hugging Face por el usuario Kumaran0329. En el momento de la consulta no se ha publicado ninguna documentación asociada: no hay model card, ni descripción de arquitectura, ni licencia, ni lista de idiomas, ni pipeline declarado. El repositorio ocupa 0,0 GB, lo que indica que no contiene pesos en ningún formato (o que únicamente aloja ficheros de configuración de tamano despreciable).
 
 Los metadatos disponibles se limitan al identificador, el autor, la etiqueta genérica `region:us`, cero descargas, un "like" y unas fechas de creación y actualización separadas por cinco minutos (8 de octubre de 2026, 21:29 y 21:34 UTC). Ese patrón es consistente con un repositorio recién creado y todavía sin contenido útil.
 
@@ -25,7 +25,7 @@ El nombre del repositorio sugiere un clasificador orientado a la categorización
 
 No hay información publicada sobre la arquitectura del modelo. No se especifica si se trata de un transformer, un modelo de mezcla de expertos (MoE), un modelo de espacio de estados (SSM), una arquitectura híbrida o un clasificador basado en encoder. Tampoco se documenta el número de parámetros, la dimensionalidad de las capas, el mecanismo de atención ni la estrategia de tokenización.
 
-Respecto al entrenamiento, no se indica el volumen de tokens, la composición del dataset, el dominio de los datos, ni si se aplicaron técnicas de ajuste como RLHF, DPO, SFT o aprendizaje contrastivo. No se ha publicado ningún paper, informe técnico ni entrada de blog que describa el proceso. La única etiqueta presente (`region:us`) es un metadato geográfico genérico de HuggingFace y no aporta información sobre arquitectura o entrenamiento.
+Respecto al entrenamiento, no se indica el volumen de tokens, la composición del dataset, el dominio de los datos, ni si se aplicaron técnicas de ajuste como RLHF, DPO, SFT o aprendizaje contrastivo. No se ha publicado ningún paper, informe técnico ni entrada de blog que describa el proceso. La única etiqueta presente (`region:us`) es un metadato geográfico genérico de Hugging Face y no aporta información sobre arquitectura o entrenamiento.
 
 ## Capacidades
 
@@ -80,7 +80,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kumaran0329/judora-case-track-classifier
+- Hugging Face: https://huggingface.co/Kumaran0329/judora-case-track-classifier
 - Paper: no disponible
 - Blog o informe técnico: no disponible
 - Repositorio de código: no disponible

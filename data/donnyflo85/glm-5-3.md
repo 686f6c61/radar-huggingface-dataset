@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai, publicado en HuggingFace por el usuario DonnyFlo85. Se trata de un modelo de 753 329 940 480 parámetros (aproximadamente 753B) con arquitectura MoE (mixture of experts) y atención dispersa dinámica (DSA, según el tag `glm_moe_dsa`). El checkpoint se distribuye en formato FP8, lo que reduce su huella de memoria a unos 755,7 GB. Su ventana de contexto alcanza 1 millón de tokens, lo que lo habilita para tareas de razonamiento de largo alcance y procesamiento de documentos extensos.
+GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai, publicado en Hugging Face por el usuario DonnyFlo85. Se trata de un modelo de 753 329 940 480 parámetros (aproximadamente 753B) con arquitectura MoE (mixture of experts) y atención dispersa dinámica (DSA, según el tag `glm_moe_dsa`). El checkpoint se distribuye en formato FP8, lo que reduce su huella de memoria a unos 755,7 GB. Su ventana de contexto alcanza 1 millón de tokens, lo que lo habilita para tareas de razonamiento de largo alcance y procesamiento de documentos extensos.
 
 El modelo utiliza el mismo modelo base que GLM-5.2; todas las mejoras provienen del post-entrenamiento. Según Z.ai, GLM-5.3 es el modelo de pesos abiertos más capaz en tareas de programación, con una mejora del 50 % sobre GLM-5.2 en su benchmark interno Z.ai Code Bench, y logra resultados de vanguardia en benchmarks públicos como Terminal Bench 3.0 y Agents' Last Exam. Además, ha desarrollado una capacidad emergente en ciberseguridad, superando a otros modelos en descubrimiento de vulnerabilidades y explotación en entornos controlados.
 
@@ -23,7 +23,7 @@ La relevancia de GLM-5.3 radica en que combina un tamaño de parámetros muy ele
 
 ## Arquitectura y entrenamiento
 
-GLM-5.3 emplea una arquitectura de mezcla de expertos (MoE) con atención dispersa dinámica (DSA), según indica el tag `glm_moe_dsa` en el repositorio de HuggingFace. Esta combinación permite escalar el número total de parámetros (753B) mientras se mantiene un coste computacional por token razonable, ya que solo se activa un subconjunto de expertos en cada paso. No se ha publicado información sobre el número de parámetros activos ni sobre el número de expertos.
+GLM-5.3 emplea una arquitectura de mezcla de expertos (MoE) con atención dispersa dinámica (DSA), según indica el tag `glm_moe_dsa` en el repositorio de Hugging Face. Esta combinación permite escalar el número total de parámetros (753B) mientras se mantiene un coste computacional por token razonable, ya que solo se activa un subconjunto de expertos en cada paso. No se ha publicado información sobre el número de parámetros activos ni sobre el número de expertos.
 
 El entrenamiento se basa en el mismo modelo base que GLM-5.2; todas las mejoras de rendimiento provienen de una fase de post-entrenamiento intensiva. Z.ai no ha revelado detalles sobre el dataset utilizado, el número de tokens de entrenamiento ni si se emplearon técnicas como RLHF, DPO o aprendizaje por refuerzo con retroalimentación de modelos. La model card indica que el post-entrenamiento se centró en mejorar las capacidades de programación compleja y tareas de horizonte largo, así como en el desarrollo de habilidades de ciberseguridad.
 
@@ -104,7 +104,7 @@ No se dispone de información detallada sobre parámetros, contexto o licencia d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DonnyFlo85/GLM-5.3
+- Repositorio en Hugging Face: https://huggingface.co/DonnyFlo85/GLM-5.3
 - Blog oficial de Z.ai sobre GLM-5.3: https://z.ai/blog/glm-5.3
 - Plataforma API de Z.ai: https://z.ai/model-api
 - Página de BenchLM con benchmarks y especificaciones: https://benchlm.ai/models/glm-5-3

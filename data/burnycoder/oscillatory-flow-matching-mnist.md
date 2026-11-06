@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Oscillatory flow matching: mnist es un artefacto de investigacion publicado en HuggingFace por el usuario BurnyCoder. No se trata de un modelo de lenguaje ni de un modelo generativo de proposito general, sino de un conjunto de checkpoints experimentales para generacion incondicional de imagenes sobre el conjunto de datos MNIST (digitos manuscritos en escala de grises de 28x28 pixeles). El pipeline declarado es `unconditional-image-generation` y la licencia es MIT.
+Oscillatory flow matching: mnist es un artefacto de investigacion publicado en Hugging Face por el usuario BurnyCoder. No se trata de un modelo de lenguaje ni de un modelo generativo de proposito general, sino de un conjunto de checkpoints experimentales para generacion incondicional de imagenes sobre el conjunto de datos MNIST (digitos manuscritos en escala de grises de 28x28 pixeles). El pipeline declarado es `unconditional-image-generation` y la licencia es MIT.
 
 El interes del repositorio es metodologico: compara un esquema de flow matching en el que se sustituye el transformer por una red neuronal oscilatoria (ONN, del ingles oscillatory neural network). Las rutas de los checkpoints revelan al menos tres variantes de estudio sobre MNIST: una convolucional (`mnist-conv-s101`), una basada en Diffusion Transformer (`mnist-dit-s101`) y una basada en red oscilatoria (`mnist-onn-s101`), ademas de dos ejecuciones de control o humo (`checks/mnist-smoke` y `study/checks/fixed-batch`). La comparacion contra una linea base tipo DiT es precisamente la que permite valorar si la alternativa oscilatoria es competitiva.
 
@@ -98,7 +98,7 @@ Frente a modelos externos de generacion de imagenes (Stable Diffusion y familia,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BurnyCoder/oscillatory-flow-matching-mnist
+- Modelo en Hugging Face: https://huggingface.co/BurnyCoder/oscillatory-flow-matching-mnist
 - Repositorio del estudio de origen: https://github.com/BurnyCoder/flow-matching-with-oscillatory-neural-networks-instead-of-transformer
 - Model card interna, smoke test MNIST: https://huggingface.co/BurnyCoder/oscillatory-flow-matching-mnist/blob/main/checks/mnist-smoke/README.md
 - Model card interna, batch fijo: https://huggingface.co/BurnyCoder/oscillatory-flow-matching-mnist/blob/main/study/checks/fixed-batch/README.md

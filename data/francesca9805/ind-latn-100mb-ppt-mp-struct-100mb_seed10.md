@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed10` es un ajuste fino supervisado (SFT) del modelo monolingue `goldfish-models/ind_latn_100mb`, publicado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros (aproximadamente 125 millones), derivado de la familia Goldfish de modelos monolingues para lenguas con pocos recursos. Por la nomenclatura del modelo base (`ind_latn_100mb`) cabe inferir que trabaja sobre indonesio en escritura latina y que parte de un corpus de unos 100 MB, aunque la model card no confirma explicitamente ni los idiomas ni la composicion del dataset.
+`francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed10` es un ajuste fino supervisado (SFT) del modelo monolingue `goldfish-models/ind_latn_100mb`, publicado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros (aproximadamente 125 millones), derivado de la familia Goldfish de modelos monolingues para lenguas con pocos recursos. Por la nomenclatura del modelo base (`ind_latn_100mb`) cabe inferir que trabaja sobre indonesio en escritura latina y que parte de un corpus de unos 100 MB, aunque la model card no confirma explicitamente ni los idiomas ni la composicion del dataset.
 
 El modelo se ha entrenado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.5.1+cu121. El nombre del repositorio (`ppt-mp-struct-100mb_seed10`) y el proyecto de Weights & Biases asociado (`new-tokenizers`) sugieren que forma parte de una bateria de experimentos comparativos, probablemente centrados en tokenizacion y en variantes estructurales del preentrenamiento, con la semilla 10 como una de las replicas. No se trata, por tanto, de un modelo de proposito general listo para produccion, sino de un artefacto de investigacion.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Benchmark publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed10 | 124.770.816 | no disponible | no disponible | no | HuggingFace |
-| goldfish-models/ind_latn_100mb (modelo base) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| GPT-2 124M original (OpenAI) | 124 millones | 1024 tokens | MIT (segun la practica habitual del modelo original) | si, ampliamente documentado | HuggingFace, multiples mirrors |
+| francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed10 | 124.770.816 | no disponible | no disponible | no | Hugging Face |
+| goldfish-models/ind_latn_100mb (modelo base) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| GPT-2 124M original (OpenAI) | 124 millones | 1024 tokens | MIT (segun la practica habitual del modelo original) | si, ampliamente documentado | Hugging Face, multiples mirrors |
 
 No se dispone de datos de rendimiento para establecer una comparacion cuantitativa con alternativas de la misma categoria. La comparacion con otros ajustes de la familia Goldfish o con modelos pequenos de otros proyectos (por ejemplo Pythia-160M o TinyLlama) no puede hacerse con rigor sin ejecutar una evaluacion propia, ya que no hay cifras publicadas en la informacion disponible.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 - Riesgo elevado de alucinacion: con 125 millones de parametros la capacidad factual es muy limitada, incluso en el idioma objetivo.
 - Idiomas no confirmados: la model card no declara idiomas soportados; el uso fuera del indonesio probablemente produzca resultados pobres o directamente incoherentes.
 - Contexto desconocido: al no declararse la longitud de contexto, no se puede planificar un uso con ventanas largas ni multi-turno extenso.
-- Licencia ambigua: la model card indica "licence: license" sin especificar terminos, y la informacion de HuggingFace marca la licencia como no disponible. Esto impide determinar si el uso comercial esta permitido; se debe contactar con el autor antes de cualquier despliegue comercial.
+- Licencia ambigua: la model card indica "licence: license" sin especificar terminos, y la informacion de Hugging Face marca la licencia como no disponible. Esto impide determinar si el uso comercial esta permitido; se debe contactar con el autor antes de cualquier despliegue comercial.
 - Sesgos: no hay informacion sobre la composicion del dataset de preentrenamiento ni de SFT, por lo que no se puede evaluar el sesgo de genero, religion, etnia o ideologia. Los corpus web de bajos recursos suelen arrastrar sesgos dificiles de auditar.
 - Estado experimental: el nombre del repositorio y el proyecto de Weights & Biases indican que se trata de una replica de investigacion (semilla 10) y no de un modelo mantenido o versionado.
 - Sin soporte: 0 descargas y 0 likes en el momento de la consulta; no hay comunidad ni issues que respalden su uso.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/ind_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/mjx4k0ce
 - Repositorio de TRL: https://github.com/huggingface/trl

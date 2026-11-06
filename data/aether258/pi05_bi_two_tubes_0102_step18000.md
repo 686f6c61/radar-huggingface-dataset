@@ -97,7 +97,7 @@ Los tres checkpoints pertenecen a la misma familia `pi05_bi` de openpi, entrenad
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Aether258/pi05_bi_two_tubes_0102_step18000)
+- [Modelo en Hugging Face](https://huggingface.co/Aether258/pi05_bi_two_tubes_0102_step18000)
 - [Checkpoint recomendado (paso 14000)](https://huggingface.co/Aether258/pi05_bi_two_tubes_0102_step14000)
 - [Checkpoint de la run two_tubes_all (paso 8000)](https://huggingface.co/Aether258/pi05_bi_two_tubes_all_step8000)
 - [Repositorio openpi (Physical Intelligence)](https://github.com/Physical-Intelligence/openpi)

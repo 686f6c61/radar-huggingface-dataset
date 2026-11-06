@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Cypher137/liech es un modelo publicado en HuggingFace por el usuario Cypher137 bajo licencia Apache 2.0. La model card asociada es prácticamente vacía: únicamente declara la licencia, sin descripción, sin arquitectura, sin datos de entrenamiento ni ejemplos de uso. No se dispone de información sobre el pipeline asociado, los idiomas soportados ni el propósito del modelo.
+Cypher137/liech es un modelo publicado en Hugging Face por el usuario Cypher137 bajo licencia Apache 2.0. La model card asociada es prácticamente vacía: únicamente declara la licencia, sin descripción, sin arquitectura, sin datos de entrenamiento ni ejemplos de uso. No se dispone de información sobre el pipeline asociado, los idiomas soportados ni el propósito del modelo.
 
-El repositorio registra cero descargas y cero likes en el momento de la consulta, y las fechas de creación y actualización coinciden (2026-11-04T22:39:59Z), lo que sugiere una publicación reciente sin actividad posterior. El único tag técnico relevante es `region:us`, que indica la región de almacenamiento en la infraestructura de HuggingFace, no una característica del modelo.
+El repositorio registra cero descargas y cero likes en el momento de la consulta, y las fechas de creación y actualización coinciden (2026-11-04T22:39:59Z), lo que sugiere una publicación reciente sin actividad posterior. El único tag técnico relevante es `region:us`, que indica la región de almacenamiento en la infraestructura de Hugging Face, no una característica del modelo.
 
 Dada la ausencia total de documentación técnica, esta ficha no puede confirmar arquitectura, tamaño, contexto ni capacidades. Se recomienda tratar el modelo como no evaluado y no apto para producción hasta que el autor publique información verificable o se realicen pruebas independientes.
 
@@ -74,5 +74,5 @@ No disponible. Sin datos de arquitectura, tamaño o rendimiento no es posible es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cypher137/liech
+- Hugging Face: https://huggingface.co/Cypher137/liech
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

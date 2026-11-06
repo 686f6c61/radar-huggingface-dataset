@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chrono4-2022-ql-mix-863-375-forget-rh es un modelo publicado en HuggingFace por el usuario jjjlimaus bajo un repositorio de acceso restringido (gated): para descargarlo es necesario aceptar previamente las condiciones establecidas por el autor. El repositorio contiene pesos en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2,02 mil millones) y un tamano de 8,1 GB, lo que resulta coherente con pesos almacenados en precision de 16 bits.
+Chrono4-2022-ql-mix-863-375-forget-rh es un modelo publicado en Hugging Face por el usuario jjjlimaus bajo un repositorio de acceso restringido (gated): para descargarlo es necesario aceptar previamente las condiciones establecidas por el autor. El repositorio contiene pesos en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2,02 mil millones) y un tamano de 8,1 GB, lo que resulta coherente con pesos almacenados en precision de 16 bits.
 
 La informacion publica disponible es muy limitada: no se incluye model card descriptiva, no se declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura. El unico tag descriptivo asociado es sn38-nanochrono, junto con la marca de region region:us. El propio identificador del modelo sugiere una cuarta iteracion de una serie denominada chrono, una variante de mezcla cuantizada (ql-mix) y algun proceso de olvido selectivo (forget-rh), pero se trata de una interpretacion del nombre y no de un dato confirmado por el autor.
 
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparacion se l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Chrono4-2022-ql-mix-863-375-forget-rh | 2,02 mil millones | no disponible | no disponible | Acceso restringido (gated) en HuggingFace |
+| Chrono4-2022-ql-mix-863-375-forget-rh | 2,02 mil millones | no disponible | no disponible | Acceso restringido (gated) en Hugging Face |
 | Qwen2.5-1.5B | 1,54 mil millones | 32.768 tokens | Apache 2.0 | Abierta, sin gating |
 | Gemma 2 2B | 2,6 mil millones | 8.192 tokens | Licencia Gemma | Abierta, con aceptacion de terminos |
 | Phi-2 | 2,7 mil millones | 2.048 tokens | MIT | Abierta, sin gating |
@@ -86,13 +86,13 @@ No es posible establecer una comparacion de calidad o rendimiento porque el mode
 - Cobertura idiomatica desconocida: no se declara ningun idioma, por lo que no se garantiza un rendimiento aceptable en castellano.
 - Longitud de contexto desconocida: no puede planificarse su uso en tareas que dependan de ventanas largas.
 - Licencia no disponible: sin licencia explicita, no hay autorizacion clara para uso comercial, redistribucion ni obras derivadas. Cualquier despliegue en produccion deberia aclararse antes con el autor.
-- Acceso restringido: el repositorio exige aceptar condiciones en HuggingFace, lo que anade una dependencia del autor para descargar los pesos y complica la reproducibilidad de cualquier evaluacion.
+- Acceso restringido: el repositorio exige aceptar condiciones en Hugging Face, lo que anade una dependencia del autor para descargar los pesos y complica la reproducibilidad de cualquier evaluacion.
 - Procedencia dudosa del identificador: los terminos chrono4, ql-mix y forget-rh no estan documentados; no debe asumirse que exista un proceso de desaprendizaje real ni una mezcla de cuantizaciones verificada.
 - Adopcion practicamente nula: 2 descargas y 0 likes implican ausencia de validacion por parte de la comunidad y ningun historial de incidencias conocido.
 - Sin garantia de soporte: no hay repositorio de codigo, issues abiertos ni canal de soporte identificado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jjjlimaus/chrono4-2022-ql-mix-863-375-forget-rh
+- Modelo en Hugging Face: https://huggingface.co/jjjlimaus/chrono4-2022-ql-mix-863-375-forget-rh
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada. Los resultados obtenidos correspondian a foros no relacionados con el modelo y se han descartado por no aportar informacion util.

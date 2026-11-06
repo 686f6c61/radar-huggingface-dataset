@@ -95,7 +95,7 @@ La comparación relevante no es de calidad, sino de formato y destino de desplie
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arankays/SmolLM3-3B-int4-cw-ov
+- Repositorio Hugging Face: https://huggingface.co/arankays/SmolLM3-3B-int4-cw-ov
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Proyecto que lo usa (vinoWhisper): https://github.com/karanshukla/vinoWhisper
 - OpenVINO: https://github.com/openvinotoolkit/openvino

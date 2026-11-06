@@ -75,8 +75,8 @@ No se dispone de informacion sobre otros modelos publicados que resuelvan exacta
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| StanfordSCALE/assertion_sentence_has_politeness_marker | 109,5 M | Clasificacion binaria de marcador de cortesía en utterances docentes | no disponible | HuggingFace (libreria setfit) |
-| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base) | ~109 M | Generacion de embeddings de frase; no clasifica por si mismo | Apache-2.0 segun su propia model card (no confirmado en la informacion proporcionada) | HuggingFace |
+| StanfordSCALE/assertion_sentence_has_politeness_marker | 109,5 M | Clasificacion binaria de marcador de cortesía en utterances docentes | no disponible | Hugging Face (libreria setfit) |
+| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base) | ~109 M | Generacion de embeddings de frase; no clasifica por si mismo | Apache-2.0 segun su propia model card (no confirmado en la informacion proporcionada) | Hugging Face |
 | Otros clasificadores "assertion" de StanfordSCALE | no disponible | Clasificacion de otras etiquetas de comportamiento docente | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo frente a alternativas, por lo que no se puede establecer una comparacion cuantitativa.
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativo frente a alternativas, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_has_politeness_marker
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_has_politeness_marker
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - Repositorio del TalkMoves Dataset: https://github.com/SumnerLab/TalkMoves

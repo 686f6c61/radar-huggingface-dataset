@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Benny es un modelo publicado en HuggingFace por el usuario Bengab bajo licencia Apache 2.0. La informacion disponible es extremadamente limitada: la model card unicamente declara la licencia, sin especificar arquitectura, tamano, contexto, datos de entrenamiento ni capacidades. El repositorio no registra descargas y cuenta con un unico "like", lo que sugiere que se trata de una publicacion reciente o de un experimento personal sin difusion.
+Benny es un modelo publicado en Hugging Face por el usuario Bengab bajo licencia Apache 2.0. La informacion disponible es extremadamente limitada: la model card unicamente declara la licencia, sin especificar arquitectura, tamano, contexto, datos de entrenamiento ni capacidades. El repositorio no registra descargas y cuenta con un unico "like", lo que sugiere que se trata de una publicacion reciente o de un experimento personal sin difusion.
 
 No es posible determinar que problema resuelve ni que tipo de tarea aborda, ya que no se declara pipeline ni se incluyen ejemplos de uso. La ficha se redacta con los datos disponibles y se marca explicitamente como "no disponible" todo aquello que el autor no ha hecho publico.
 
-Dado el estado del repositorio, cualquier evaluacion tecnica rigurosa requeriria inspeccionar los archivos de pesos y la configuracion del modelo directamente en el repositorio de HuggingFace, algo que no se ha podido realizar con la informacion proporcionada.
+Dado el estado del repositorio, cualquier evaluacion tecnica rigurosa requeriria inspeccionar los archivos de pesos y la configuracion del modelo directamente en el repositorio de Hugging Face, algo que no se ha podido realizar con la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -40,7 +40,7 @@ La model card se limita a la declaracion de licencia Apache 2.0, sin secciones d
 
 - Evaluacion experimental en laboratorio: el modelo puede descargarse y probarse en entornos controlados para determinar empiricamente sus capacidades, dado que no hay documentacion publica que las describa.
 - Prototipado interno: al estar bajo Apache 2.0, puede integrarse en pruebas de concepto sin restricciones de licencia, siempre que se valide su comportamiento antes de usarlo en produccion.
-- Investigacion sobre modelos poco documentados: sirve como caso de estudio para analizar practicas de publicacion en HuggingFace y la importancia de las model cards completas.
+- Investigacion sobre modelos poco documentados: sirve como caso de estudio para analizar practicas de publicacion en Hugging Face y la importancia de las model cards completas.
 - Fine-tuning supervisado: si los pesos son compatibles con frameworks estandar (no confirmado), podria servir como base para ajuste en tareas concretas, previa inspeccion de la configuracion.
 - Benchmarking comparativo: puede incluirse en baterias de evaluacion automatizadas para medir su rendimiento frente a modelos documentados de tamano similar.
 - Audiencia educativa: util como ejemplo de repositorio minimo en talleres sobre publicacion de modelos y licencias abiertas.
@@ -74,5 +74,5 @@ No disponible. Al no conocerse el tamano, la arquitectura ni las capacidades del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Bengab/Benny
+- Hugging Face: https://huggingface.co/Bengab/Benny
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

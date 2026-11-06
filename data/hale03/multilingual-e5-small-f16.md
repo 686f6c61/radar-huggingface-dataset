@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hale03/multilingual-e5-small-f16` es una reedición en float16 del modelo de embeddings multilingüe `intfloat/multilingual-e5-small`, publicado por el usuario de HuggingFace `hale03`. No se trata de un modelo nuevo ni reentrenado: todos los pesos del checkpoint original son valores exactos representables en float16, por lo que la conversión es sin pérdidas y, cargando los tensores como float32, se reproducen bit a bit los resultados del original. El beneficio práctico es la mitad del tamaño de descarga: unos 235 MB frente a los 471 MB del checkpoint original.
+`hale03/multilingual-e5-small-f16` es una reedición en float16 del modelo de embeddings multilingüe `intfloat/multilingual-e5-small`, publicado por el usuario de Hugging Face `hale03`. No se trata de un modelo nuevo ni reentrenado: todos los pesos del checkpoint original son valores exactos representables en float16, por lo que la conversión es sin pérdidas y, cargando los tensores como float32, se reproducen bit a bit los resultados del original. El beneficio práctico es la mitad del tamaño de descarga: unos 235 MB frente a los 471 MB del checkpoint original.
 
 El modelo base es multilingual-e5-small, un codificador de frases basado en la arquitectura BERT (transformer encoder) con 117.654.272 parámetros, entrenado por el equipo E5 de Microsoft mediante contraste de pares texto-texto en múltiples idiomas. Resuelve el problema de generar embeddings de texto de alta calidad con un presupuesto de cómputo reducido, y esta variante f16 es especialmente relevante para entornos con Rust (librería Candle), dispositivos con memoria limitada o pipelines donde el ancho de banda de descarga importa. Su licencia MIT permite cualquier uso, incluido el comercial.
 
@@ -32,7 +32,7 @@ Esta version concreta no introduce cambios de arquitectura ni de entrenamiento: 
 - Agrupacion semantica (clustering) y deteccion de duplicados en corpus multilingues.
 - Capacidades multilingues heredadas del modelo base E5, que permite comparar textos entre idiomas distintos en el mismo espacio vectorial.
 - Dimension de embedding compacta (384 dimensiones en el modelo base E5-small, dato estandar de la familia, no confirmado explicitamente en la ficha).
-- Compatibilidad con la libreria Candle de HuggingFace (Rust), ademas del ecosistema Python estandar (transformers, sentence-transformers).
+- Compatibilidad con la libreria Candle de Hugging Face (Rust), ademas del ecosistema Python estandar (transformers, sentence-transformers).
 
 ## Casos de uso
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM/RAM estimada para inferencia: aproximadamente 0,24 GB en float16 (117,65M parametros x 2 bytes) y unos 0,47 GB si se carga como float32; margen extra para activaciones y batch.
 - Adecuado para CPU: al ser un encoder small, la inferencia en CPU moderna es rapida y no requiere GPU dedicada.
 - Consumer GPU: cabe con holgura en cualquier GPU actual (por ejemplo, una RTX 3060 de 12 GB o incluso GPUs de 4 GB sobran para este modelo).
-- Opciones de despliegue: libreria Candle (Rust, uso principal declarado en la ficha), transformers y sentence-transformers de HuggingFace en Python; ONNX u otros runtimes son posibles pero no estan documentados en el repositorio.
+- Opciones de despliegue: libreria Candle (Rust, uso principal declarado en la ficha), transformers y sentence-transformers de Hugging Face en Python; ONNX u otros runtimes son posibles pero no estan documentados en el repositorio.
 - Latencia y throughput: no disponibles en la ficha; al ser un modelo small de encoder, se esperan latencias de milisegundos por texto en GPU y decenas de milisegundos en CPU, sin cifras oficiales.
 
 ## Comparativa con modelos similares

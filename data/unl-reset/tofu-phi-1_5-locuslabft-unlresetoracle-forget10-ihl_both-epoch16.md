@@ -23,7 +23,7 @@ Es relevante porque TOFU es hoy uno de los bancos de pruebas de referencia para 
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura de `microsoft/phi-1_5`: un transformer decoder-only denso de aproximadamente 1.4B parametros, entrenado originalmente para generacion de codigo y texto. No es un modelo MoE ni hibrido; no incorpora mecanismos de atencion lineal ni decodificacion especulativa propios. El checkpoint requiere `custom_code` (el flag de HuggingFace indica que la carga necesita `trust_remote_code=True`), lo que implica revisar el codigo remoto antes de desplegarlo.
+El modelo hereda la arquitectura de `microsoft/phi-1_5`: un transformer decoder-only denso de aproximadamente 1.4B parametros, entrenado originalmente para generacion de codigo y texto. No es un modelo MoE ni hibrido; no incorpora mecanismos de atencion lineal ni decodificacion especulativa propios. El checkpoint requiere `custom_code` (el flag de Hugging Face indica que la carga necesita `trust_remote_code=True`), lo que implica revisar el codigo remoto antes de desplegarlo.
 
 El entrenamiento de desaprendizaje parte de `locuslab/tofu_ft_phi-1.5` (ajuste fino sobre TOFU). Segun la model card, los *input embeddings* y la *LM head* se reinicializan desde `microsoft/phi-1_5`, mientras que el resto de pesos del transformer se mantienen del modelo ajustado. La perdida combina un termino *token IHL* calculado sobre el conjunto `forget` (conjunto `forget10`, el 10 % de autores a olvidar) y una entropia cruzada con coeficiente 1.0 sobre el conjunto `retain`. El checkpoint publicado corresponde a la epoca 16 de un total de 20. No se documentan en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni si hubo etapas de RLHF o DPO (TOFU es un dataset sintetico de preguntas y respuestas sobre autores ficticios, por lo que no se espera RLHF).
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (IHL + reset both, ep. 16) | 1.42B | no disponible | Desaprendizaje TOFU `forget10` | apache-2.0 | HuggingFace |
-| `locuslab/tofu_ft_phi-1.5` | 1.42B | no disponible | Ajuste fino completo sobre TOFU (modelo de referencia) | no disponible en la informacion | HuggingFace |
-| `microsoft/phi-1_5` | 1.3B | 2048 tokens | Generacion de codigo y texto | MIT (segun el modelo original) | HuggingFace |
-| Otras variantes de desaprendizaje sobre TOFU | ~1.4B | no disponible | Olvido de subconjuntos de TOFU | variable | HuggingFace |
+| Este checkpoint (IHL + reset both, ep. 16) | 1.42B | no disponible | Desaprendizaje TOFU `forget10` | apache-2.0 | Hugging Face |
+| `locuslab/tofu_ft_phi-1.5` | 1.42B | no disponible | Ajuste fino completo sobre TOFU (modelo de referencia) | no disponible en la informacion | Hugging Face |
+| `microsoft/phi-1_5` | 1.3B | 2048 tokens | Generacion de codigo y texto | MIT (segun el modelo original) | Hugging Face |
+| Otras variantes de desaprendizaje sobre TOFU | ~1.4B | no disponible | Olvido de subconjuntos de TOFU | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparado (fidelidad/utilidad) en la informacion proporcionada para establecer una comparativa cuantitativa.
 
@@ -84,8 +84,8 @@ No se dispone de datos de rendimiento comparado (fidelidad/utilidad) en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_both-epoch16
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_both-epoch16
 - Modelo base del ajuste fino: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU (referencia): https://huggingface.co/datasets/locuslab/TOFU
-- Manifiesto del checkpoint (`ihl_manifest.json`): incluido en el repositorio del modelo en HuggingFace.
+- Manifiesto del checkpoint (`ihl_manifest.json`): incluido en el repositorio del modelo en Hugging Face.

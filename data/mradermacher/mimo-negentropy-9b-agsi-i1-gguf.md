@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| MiMo-Negentropy-9B-AGSI (este) | ~9B | no disponible | MIT | GGUF (y safetensors en el base) | HuggingFace |
-| Qwen3-8B | ~8B | no disponible en esta ficha | Apache 2.0 (segun informacion publica) | safetensors, GGUF | HuggingFace |
-| Llama 3.1 8B | ~8B | no disponible en esta ficha | Llama Community License | safetensors, GGUF | HuggingFace |
-| Gemma 2 9B | ~9B | no disponible en esta ficha | Gemma Terms of Use | safetensors, GGUF | HuggingFace |
+| MiMo-Negentropy-9B-AGSI (este) | ~9B | no disponible | MIT | GGUF (y safetensors en el base) | Hugging Face |
+| Qwen3-8B | ~8B | no disponible en esta ficha | Apache 2.0 (segun informacion publica) | safetensors, GGUF | Hugging Face |
+| Llama 3.1 8B | ~8B | no disponible en esta ficha | Llama Community License | safetensors, GGUF | Hugging Face |
+| Gemma 2 9B | ~9B | no disponible en esta ficha | Gemma Terms of Use | safetensors, GGUF | Hugging Face |
 
 Nota: los datos de contexto, licencia y rendimiento de los modelos comparados no forman parte de la informacion proporcionada en esta consulta, por lo que se marcan como no disponibles salvo donde se indique lo contrario. No se dispone de resultados de benchmarks que permitan una comparación cuantitativa fiable.
 

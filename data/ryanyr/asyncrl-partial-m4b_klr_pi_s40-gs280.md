@@ -64,7 +64,7 @@ No disponible. No hay información suficiente para comparar con otros modelos de
 ## Limitaciones y advertencias
 
 - **No es un checkpoint resumible**: el estado del optimizador está destruido, por lo que no se puede continuar el entrenamiento desde este repositorio. Para reanudar, usar el paso 275 (`RyanYr/asyncrl-m4b_klr_pi_s40-gs275`).
-- **No es un modelo de inferencia**: la exportación safetensors está incompleta (solo shard 1 de 4, sin índice), por lo que no se puede cargar con pipelines estándar de HuggingFace.
+- **No es un modelo de inferencia**: la exportación safetensors está incompleta (solo shard 1 de 4, sin índice), por lo que no se puede cargar con pipelines estándar de Hugging Face.
 - **Sin licencia**: no se indica ninguna licencia, lo que impide cualquier uso comercial o redistribución sin autorización explícita.
 - **Sin especificaciones**: se desconoce la arquitectura, el número de parámetros, el contexto, los idiomas y cualquier otra característica técnica.
 - **Riesgo de confusión**: el nombre del repo (`asyncrl-partial-m4b_klr_pi_s40-gs280`) puede inducir a error, pareciendo un checkpoint completo. El autor lo advierte con las etiquetas `not-a-checkpoint` y `partial`.
@@ -72,6 +72,6 @@ No disponible. No hay información suficiente para comparar con otros modelos de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RyanYr/asyncrl-partial-m4b_klr_pi_s40-gs280
+- Repositorio Hugging Face: https://huggingface.co/RyanYr/asyncrl-partial-m4b_klr_pi_s40-gs280
 - Repositorio GitHub del autor (async-rl): https://github.com/yurun-yuan/async-rl (contiene `REPRODUCE.md` con el procedimiento de restauración)
 - Checkpoint completo del paso 275: https://huggingface.co/RyanYr/asyncrl-m4b_klr_pi_s40-gs275 (referenciado en la model card)

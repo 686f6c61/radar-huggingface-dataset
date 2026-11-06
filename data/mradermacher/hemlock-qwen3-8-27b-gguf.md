@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hemlock-Qwen3.8-27B-GGUF es una cuantización estática en formato GGUF del modelo original Hemlock-Qwen3.8-27B, publicado por el usuario mradermacher en HuggingFace. El modelo base, alojado en el repositorio hemlang/Hemlock-Qwen3.8-27B, no dispone de una model card pública detallada en el momento de esta ficha, por lo que la información sobre su arquitectura, entrenamiento y capacidades es limitada. El nombre sugiere una variante de la familia Qwen3 con 27 320 697 856 parámetros (aproximadamente 27,3 mil millones), pero no se ha confirmado oficialmente.
+Hemlock-Qwen3.8-27B-GGUF es una cuantización estática en formato GGUF del modelo original Hemlock-Qwen3.8-27B, publicado por el usuario mradermacher en Hugging Face. El modelo base, alojado en el repositorio hemlang/Hemlock-Qwen3.8-27B, no dispone de una model card pública detallada en el momento de esta ficha, por lo que la información sobre su arquitectura, entrenamiento y capacidades es limitada. El nombre sugiere una variante de la familia Qwen3 con 27 320 697 856 parámetros (aproximadamente 27,3 mil millones), pero no se ha confirmado oficialmente.
 
 Este repositorio específico contiene únicamente los pesos cuantizados en GGUF, lo que facilita su despliegue en entornos de inferencia local con herramientas como llama.cpp, Ollama o vLLM. Al tratarse de una cuantización, el objetivo principal es reducir el tamaño del modelo y los requisitos de memoria, manteniendo un rendimiento razonable. La relevancia actual radica en la creciente demanda de modelos de gran tamaño ejecutables en hardware de consumo, y esta publicación cubre esa necesidad para un modelo de 27B.
 
@@ -62,5 +62,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/Hemlock-Qwen3.8-27B-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/Hemlock-Qwen3.8-27B-GGUF
 - Repositorio del modelo original: https://huggingface.co/hemlang/Hemlock-Qwen3.8-27B

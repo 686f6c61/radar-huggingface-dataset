@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ishikaa/acquisition_student_original_omnimath_qwen14b` es un checkpoint de generacion de texto publicado en HuggingFace por el usuario `ishikaa`, construido sobre la arquitectura Qwen2 (etiqueta `qwen2` en el Hub) y con 14.770.033.664 parametros reales, contabilizados a partir de los pesos en safetensors. El repositorio ocupa 29,5 GB, lo que es coherente con un checkpoint denso guardado en precision de 16 bits. La model card es la plantilla autogenerada por HuggingFace y no contiene ni una sola seccion completada: todos los campos aparecen con el marcador `[More Information Needed]`.
+`ishikaa/acquisition_student_original_omnimath_qwen14b` es un checkpoint de generacion de texto publicado en Hugging Face por el usuario `ishikaa`, construido sobre la arquitectura Qwen2 (etiqueta `qwen2` en el Hub) y con 14.770.033.664 parametros reales, contabilizados a partir de los pesos en safetensors. El repositorio ocupa 29,5 GB, lo que es coherente con un checkpoint denso guardado en precision de 16 bits. La model card es la plantilla autogenerada por Hugging Face y no contiene ni una sola seccion completada: todos los campos aparecen con el marcador `[More Information Needed]`.
 
 Los unicos indicios sobre su naturaleza son los tags del repositorio: `trl` y `sft` apuntan a un ajuste fino supervisado realizado con la libreria TRL, y el propio nombre del identificador (`omnimath`) sugiere que el entrenamiento se hizo sobre el dataset Omni-MATH, un corpus de problemas de competicion de nivel olimpiada. El prefijo `acquisition_student` es habitual en configuraciones de destilacion de conocimiento, donde un modelo "estudiante" se entrena para imitar a un "profesor" de mayor tamano. Estas dos conclusiones son inferencias a partir del nombre y de las etiquetas, no afirmaciones documentadas por el autor.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es, por tanto, limitada y debe leerse como una adver
 
 No hay informacion publicada sobre el entrenamiento. La etiqueta `qwen2` indica que la topologia subyacente es la de la familia Qwen2: un transformer decoder-only de tipo denso con atencion causal. El recuento de 14,77 mil millones de parametros coincide con el de Qwen2-14B, por lo que lo mas probable es que el checkpoint se haya inicializado desde ese modelo base, pero el autor no lo declara en ningun sitio y no se puede confirmar.
 
-Los unicos datos tecnicos fiables sobre el procedimiento son los tags `trl` y `sft`, que situan el ajuste como un fine-tuning supervisado con TRL. No hay evidencia de una fase de RLHF, DPO o cualquier otro metodo de alineacion posterior al SFT; un checkpoint de SFT puro suele conservar sesgos y estilos de respuesta del modelo base sin las correcciones de seguridad tipicas de un modelo "instruct" final. Tampoco se documentan hiperparametros, composicion del dataset, numero de tokens vistos, precision de entrenamiento ni infraestructura de computo. La etiqueta `arxiv:1910.09700` no es una referencia al modelo: proviene de la plantilla automatica de HuggingFace, que cita a Lacoste et al. (2019) como herramienta para estimar emisiones de carbono, y aparece en todos los repositorios creados con esa plantilla.
+Los unicos datos tecnicos fiables sobre el procedimiento son los tags `trl` y `sft`, que situan el ajuste como un fine-tuning supervisado con TRL. No hay evidencia de una fase de RLHF, DPO o cualquier otro metodo de alineacion posterior al SFT; un checkpoint de SFT puro suele conservar sesgos y estilos de respuesta del modelo base sin las correcciones de seguridad tipicas de un modelo "instruct" final. Tampoco se documentan hiperparametros, composicion del dataset, numero de tokens vistos, precision de entrenamiento ni infraestructura de computo. La etiqueta `arxiv:1910.09700` no es una referencia al modelo: proviene de la plantilla automatica de Hugging Face, que cita a Lacoste et al. (2019) como herramienta para estimar emisiones de carbono, y aparece en todos los repositorios creados con esa plantilla.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ Las cifras de VRAM son estimaciones calculadas a partir del numero de parametros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| `ishikaa/acquisition_student_original_omnimath_qwen14b` | 14,77 B | no disponible | no disponible | repositorio HuggingFace, 0 descargas | no disponible |
+| `ishikaa/acquisition_student_original_omnimath_qwen14b` | 14,77 B | no disponible | no disponible | repositorio Hugging Face, 0 descargas | no disponible |
 | Qwen2-14B-Instruct | 14,7 B | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | ampliamente desplegado | publicado por el autor del modelo base |
 | Qwen2.5-Math-7B-Instruct | 7,6 B | contexto base corto, ampliable | Apache 2.0 | ampliamente desplegado | publicado por el autor del modelo base |
 | Llama-3.1-8B-Instruct | 8 B | 128.000 tokens | Llama 3.1 Community License | ampliamente desplegado | publicado por el autor del modelo base |
@@ -81,7 +81,7 @@ Los datos de las tres alternativas provienen de su documentacion publica y deben
 ## Limitaciones y advertencias
 
 - Licencia ausente: sin licencia declarada no hay autorizacion explicita de uso comercial. En la practica esto supone un riesgo legal relevante para cualquier despliegue en produccion.
-- Documentacion inexistente: la model card es la plantilla vacia de HuggingFace. Se desconoce el origen del dataset, el numero de tokens de entrenamiento y el proceso de filtrado, con el consiguiente riesgo de que los pesos hayan memorizado datos con problemas de privacidad o derechos de autor.
+- Documentacion inexistente: la model card es la plantilla vacia de Hugging Face. Se desconoce el origen del dataset, el numero de tokens de entrenamiento y el proceso de filtrado, con el consiguiente riesgo de que los pesos hayan memorizado datos con problemas de privacidad o derechos de autor.
 - Sin alineacion documentada: al ser un checkpoint de SFT marcado con `trl`, es probable que no haya pasado por RLHF ni DPO, lo que suele traducirse en respuestas menos seguras, mas propensas a seguir instrucciones daninas y con mayor tasa de alucinacion en dominios abiertos.
 - Riesgo de alucinacion en matematicas: los modelos de razonamiento matematico generan con frecuencia cadenas de pasos plausibles pero incorrectas. Cualquier uso en un contexto real exige verificacion con un motor simbolico o un comprobador de pruebas.
 - Contexto e idiomas sin confirmar: no se puede planificar un caso de uso que dependa de una ventana de contexto concreta ni de soporte multilingue.
@@ -91,8 +91,8 @@ Los datos de las tres alternativas provienen de su documentacion publica y deben
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_original_omnimath_qwen14b
+- Repositorio en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_original_omnimath_qwen14b
 - Paper citado en los tags del repositorio (Lacoste et al., 2019, sobre emisiones de carbono, no relacionado con este modelo): https://arxiv.org/abs/1910.09700
 - Documentacion de TRL, libreria con la que se etiqueta el entrenamiento: https://huggingface.co/docs/trl
-- Documentacion de la familia Qwen2 en HuggingFace: https://huggingface.co/docs/transformers/model_doc/qwen2
+- Documentacion de la familia Qwen2 en Hugging Face: https://huggingface.co/docs/transformers/model_doc/qwen2
 - Los resultados de busqueda web proporcionados no contienen ningun enlace relevante sobre este modelo; todas las entradas devueltas tratan sobre lonas de invernadero y no guardan relacion con el contenido de esta ficha.

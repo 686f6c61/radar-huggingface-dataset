@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OneJev-9B-GGUF es la version cuantizada en formato GGUF del modelo OneJev-9B, publicado por el usuario mradermacher, un perfil conocido en HuggingFace por generar cuantizaciones estaticas de modelos de terceros para su uso con llama.cpp y herramientas derivadas. El repositorio no contiene pesos originales ni informacion sobre el entrenamiento: es exclusivamente una conversion del modelo base OmniJev/OneJev-9B a distintos niveles de compresion.
+OneJev-9B-GGUF es la version cuantizada en formato GGUF del modelo OneJev-9B, publicado por el usuario mradermacher, un perfil conocido en Hugging Face por generar cuantizaciones estaticas de modelos de terceros para su uso con llama.cpp y herramientas derivadas. El repositorio no contiene pesos originales ni informacion sobre el entrenamiento: es exclusivamente una conversion del modelo base OmniJev/OneJev-9B a distintos niveles de compresion.
 
 El dato objetivo disponible es el numero de parametros (8.953.803.264, es decir, aproximadamente 8,95 mil millones), lo que situa al modelo en la categoria de 9B, un rango muy habitual para despliegue en GPU de consumo con cuantizaciones de 4 y 5 bits. El repositorio ocupa 77,7 GB en total porque agrupa doce variantes de cuantizacion, desde Q2_K hasta F16.
 
@@ -23,19 +23,19 @@ La relevancia de esta publicacion es practica: permite ejecutar el modelo OneJev
 | Tamano del repositorio | 77,7 GB (conjunto de todas las cuantizaciones) |
 | Modelo base | OmniJev/OneJev-9B |
 | Version de cuantizacion | quantize_version 2, output_tensor_quantised 1 |
-| Fecha de publicacion | 27 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 27 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base en los datos proporcionados. La model card del repositorio GGUF unicamente documenta el proceso de conversion y cuantizacion (version de cuantizacion 2, conversion desde formato HuggingFace con cuantizacion de tensores de salida), sin describir el tipo de red, el mecanismo de atencion ni si se trata de un transformer denso, un modelo de mezcla de expertos o una arquitectura hibrida.
+No se dispone de informacion sobre la arquitectura del modelo base en los datos proporcionados. La model card del repositorio GGUF unicamente documenta el proceso de conversion y cuantizacion (version de cuantizacion 2, conversion desde formato Hugging Face con cuantizacion de tensores de salida), sin describir el tipo de red, el mecanismo de atencion ni si se trata de un transformer denso, un modelo de mezcla de expertos o una arquitectura hibrida.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. El unico indicio funcional es la etiqueta `conversational` asociada al repositorio, que sugiere un ajuste orientado a dialogos multi-turno, pero se trata de una etiqueta de indexacion y no de una descripcion tecnica verificable. Cualquier afirmacion adicional sobre innovaciones arquitectonicas seria especulacion.
 
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` del repositorio apunta a un uso previsto como asistente de dialogo, aunque no se detallan las capacidades concretas.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el formato GGUF generado puede servirse a traves de infraestructura de inferencia compatible con HuggingFace Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el formato GGUF generado puede servirse a traves de infraestructura de inferencia compatible con Hugging Face Endpoints.
 - Ejecucion local con llama.cpp: al estar en formato GGUF, el modelo es desplegable en el ecosistema llama.cpp, Ollama y derivados.
 - Razonamiento, codigo, matematicas, vision, audio: no disponible.
 - Soporte de tool calling o function calling: no disponible.

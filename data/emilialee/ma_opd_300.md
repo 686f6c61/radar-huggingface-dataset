@@ -26,7 +26,7 @@ El adaptador utiliza la técnica LoRA, que inserta matrices de bajo rango en las
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta "conversational" indica que el adaptador esta disenado para tareas de dialogo, aunque no se detallan las capacidades exactas.
-- Integracion con transformers: al ser un adaptador PEFT, se puede cargar junto al modelo base mediante la API de HuggingFace Transformers.
+- Integracion con transformers: al ser un adaptador PEFT, se puede cargar junto al modelo base mediante la API de Hugging Face Transformers.
 - No se han documentado capacidades adicionales como tool calling, razonamiento multi-paso, soporte multilingue o modo thinking.
 
 ## Casos de uso
@@ -68,5 +68,5 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EmiliaLee/ma_opd_300
+- Repositorio en Hugging Face: https://huggingface.co/EmiliaLee/ma_opd_300
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B (enlace inferido, no verificado en la informacion proporcionada)

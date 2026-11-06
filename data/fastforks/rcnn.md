@@ -96,8 +96,8 @@ No se han publicado resultados de benchmarks de precisión (mAP, AP50, etc.) en 
 
 | Modelo | Arquitectura | Backbone | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fastforks/rcnn (Faster R-CNN R50-FPN) | Detector de dos etapas | ResNet-50 + FPN | Imagen H x W >= 32 | CC-BY-SA-3.0 (pesos), Apache-2.0 (código) | HuggingFace (tarjeta) + descarga desde fbaipublicfiles |
-| fastforks/rcnn (Mask R-CNN R50-FPN) | Detector de dos etapas + máscara | ResNet-50 + FPN | Imagen H x W >= 32 | CC-BY-SA-3.0 (pesos), Apache-2.0 (código) | HuggingFace (tarjeta) + descarga desde fbaipublicfiles |
+| fastforks/rcnn (Faster R-CNN R50-FPN) | Detector de dos etapas | ResNet-50 + FPN | Imagen H x W >= 32 | CC-BY-SA-3.0 (pesos), Apache-2.0 (código) | Hugging Face (tarjeta) + descarga desde fbaipublicfiles |
+| fastforks/rcnn (Mask R-CNN R50-FPN) | Detector de dos etapas + máscara | ResNet-50 + FPN | Imagen H x W >= 32 | CC-BY-SA-3.0 (pesos), Apache-2.0 (código) | Hugging Face (tarjeta) + descarga desde fbaipublicfiles |
 | detectron2 model zoo (original) | Faster R-CNN / Mask R-CNN | ResNet-50 + FPN | Imagen | CC-BY-SA-3.0 | GitHub de Meta AI |
 | No disponible | — | — | — | — | — |
 
@@ -117,7 +117,7 @@ No se dispone de datos de otros detectores comparables (YOLO, DETR, etc.) en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fastforks/rcnn
+- Hugging Face: https://huggingface.co/fastforks/rcnn
 - Código fastforks: https://github.com/kleinicke/fastforks
 - Kernels CUDA: https://huggingface.co/fastforks/kernels
 - Benchmarks: https://github.com/kleinicke/fastforks/blob/main/docs/benchmarks.md

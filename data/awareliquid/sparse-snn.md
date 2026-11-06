@@ -18,7 +18,7 @@ Es relevante ahora como evidencia empirica negativa y positiva a la vez: el auto
 | Longitud de contexto | No aplica. El modelo no es autorregresivo ni procesa secuencias de texto: su entrada es un vector plano de 784 valores (28x28 en escala de grises, rango [0, 1]) y tiene T pasos temporales de dinamica LIF, cuyo valor concreto no se publica en la model card |
 | Tipos de cuantizacion | No disponible. No se documentan variantes cuantizadas, GGUF ni versiones de precision reducida; los checkpoints se distribuyen tal cual |
 | Idiomas soportados | No disponible / no aplica. El modelo produce etiquetas de clase numericas (10 clases), no texto |
-| Licencia | MIT, segun la seccion License de la model card. El metadato de HuggingFace figura como "no disponible". Los datos del conectoma MaleCNS son CC-BY 4.0 (HHMI Janelia / Cambridge / Google Research) y no se redistribuyen en el repositorio |
+| Licencia | MIT, segun la seccion License de la model card. El metadato de Hugging Face figura como "no disponible". Los datos del conectoma MaleCNS son CC-BY 4.0 (HHMI Janelia / Cambridge / Google Research) y no se redistribuyen en el repositorio |
 | Formato de pesos | Checkpoints de PyTorch (`.pt`) con `state_dict` (pesos mas buffer de mascara), matriz de signos E/I, configuracion completa y metricas. No hay safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
@@ -74,8 +74,8 @@ No hay informacion disponible sobre modelos comparables en la documentacion prop
 
 | Modelo | Tarea | Parametros / densidad | Contexto | Exactitud | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Sparse-SNN (MNIST) | Clasificacion de digitos | ~784 -> 800 -> 10 al 5% de densidad | No aplica (entrada 784) | 96,83% | MIT (segun model card) | HuggingFace, requiere codigo externo |
-| Sparse-SNN (Fashion-MNIST) | Clasificacion de prendas | ~784 -> 800 -> 10 al 5% de densidad | No aplica (entrada 784) | 87,07% | MIT (segun model card) | HuggingFace, requiere codigo externo |
+| Sparse-SNN (MNIST) | Clasificacion de digitos | ~784 -> 800 -> 10 al 5% de densidad | No aplica (entrada 784) | 96,83% | MIT (segun model card) | Hugging Face, requiere codigo externo |
+| Sparse-SNN (Fashion-MNIST) | Clasificacion de prendas | ~784 -> 800 -> 10 al 5% de densidad | No aplica (entrada 784) | 87,07% | MIT (segun model card) | Hugging Face, requiere codigo externo |
 | MLP denso (baseline del autor) | Clasificacion de digitos / prendas | 635.200 conexiones densas | No aplica | 98,32% / 87,56% | No disponible | No disponible |
 
 No se dispone de comparaciones con otras SNN publicas (por ejemplo, variantes convertidas o entrenadas con BPTT) en la informacion facilitada.
@@ -91,12 +91,12 @@ No se dispone de comparaciones con otras SNN publicas (por ejemplo, variantes co
 - El modelo no genera texto ni mantiene conversaciones, por lo que el riesgo de alucinacion en el sentido de los LLM no aplica; el riesgo equivalente es la clasificacion erronea, especialmente ante imagenes fuera de distribucion respecto a MNIST o Fashion-MNIST.
 - La mascara depende de una semilla fija (`mask_seed=0`). Cambiarla produce estructuras distintas y, presumiblemente, resultados distintos.
 - El uso requiere cargar codigo Python de un repositorio externo con `weights_only=False`, lo que introduce un riesgo de seguridad al deserializar el checkpoint fuera de entornos de confianza.
-- La licencia figura como MIT en la model card pero como "no disponible" en el metadato de HuggingFace. Conviene verificar la licencia antes de un uso comercial. Los datos del conectoma no se redistribuyen y estan sujetos a CC-BY 4.0.
+- La licencia figura como MIT en la model card pero como "no disponible" en el metadato de Hugging Face. Conviene verificar la licencia antes de un uso comercial. Los datos del conectoma no se redistribuyen y estan sujetos a CC-BY 4.0.
 - Adopcion nula registrada: 0 descargas y 0 likes. Sin comunidad que valide los resultados ni mantenimiento demostrado. No esta pensado para produccion critica.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AwareLiquid/Sparse-SNN
+- Modelo en Hugging Face: https://huggingface.co/AwareLiquid/Sparse-SNN
 - Codigo y informe completo de experimentos: https://github.com/AwareLiquid/human-brain-simulation
 - Proyecto relacionado M1 (arquitectura liquida MT-LNN): https://github.com/AwareLiquid/M1
 - Sitio del autor con benchmarks y retractaciones: https://awareliquid.ai

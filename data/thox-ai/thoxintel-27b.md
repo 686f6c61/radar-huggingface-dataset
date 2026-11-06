@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thox-ai/ThoxIntel-27B
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/ThoxIntel-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Repositorios de los autores del linaje (DavidAU, Nightmedia, Armand0E): no disponible en la información proporcionada
 - Paper, blog o demo de THOX.ai: no disponible en la información proporcionada

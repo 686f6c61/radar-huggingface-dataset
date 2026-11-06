@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hosseinaa/haydeh es un repositorio de modelo publicado en HuggingFace por el usuario Hosseinaa. La informacion publica disponible es minima: la model card contiene unicamente la declaracion de licencia (`license: openrail`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio no declara pipeline de inferencia, idiomas soportados ni tags de tarea, y acumula 0 descargas y 0 likes en el momento de la consulta.
+Hosseinaa/haydeh es un repositorio de modelo publicado en Hugging Face por el usuario Hosseinaa. La informacion publica disponible es minima: la model card contiene unicamente la declaracion de licencia (`license: openrail`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio no declara pipeline de inferencia, idiomas soportados ni tags de tarea, y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 El repositorio ocupa 0.1 GB y fue creado el 19 de septiembre de 2026, con una unica actualizacion ese mismo dia. El tamano reducido sugiere un artefacto de pesos de pequena escala, pero no es posible confirmar el numero de parametros, la arquitectura ni el tipo de tarea sin documentacion adicional del autor.
 
@@ -84,7 +84,7 @@ No disponible. No se puede establecer una comparativa porque se desconocen la ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hosseinaa/haydeh
+- Hugging Face: https://huggingface.co/Hosseinaa/haydeh
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible
 - Repositorio de codigo: no disponible

@@ -12,7 +12,7 @@ La relevancia ahora mismo es doble: por un lado, demuestra una ruta practica par
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en la ficha de HuggingFace; el repositorio GitHub asociado describe el modelo base como MoE (mezcla de expertos) de 763B parametros. Topologia interna (numero de expertos, capas, atencion) no disponible |
+| Arquitectura | No disponible en la ficha de Hugging Face; el repositorio GitHub asociado describe el modelo base como MoE (mezcla de expertos) de 763B parametros. Topologia interna (numero de expertos, capas, atencion) no disponible |
 | Parametros totales | 763B (cifra del repositorio GitHub BLACKFOLD TP2, no confirmada de forma independiente) |
 | Parametros activos | No disponible |
 | Longitud de contexto | No disponible de forma explicita; los benchmarks publicados emplean un prompt de 128K, por lo que soporta al menos 128.000 tokens |
@@ -21,7 +21,7 @@ La relevancia ahora mismo es doble: por un lado, demuestra una ruta practica par
 | Licencia | MIT |
 | Formato de pesos | EXL3 (formato de cuantizacion de ExLlamaV3); empaquetado interno de ficheros no detallado |
 | Modelo base | deepseek-ai/DeepSeek-V4.1-Flash-1017 y LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 1,0 GB (segun la ficha; ver advertencias) |
 | Descargas / likes | 0 descargas / 14 likes en el momento de la consulta |
 
@@ -96,7 +96,7 @@ Las alternativas directamente comparables son las variantes de la misma familia,
 - No hay benchmarks de capacidad (MMLU, HumanEval, GSM8K) que permitan cuantificar la degradacion introducida por la cuantizacion a 2,9 bpw ni por la abliteration. Cualquier afirmacion de "mismo rendimiento" es una afirmacion del autor.
 - El repositorio declara 1,0 GB de tamano, incoherente con los cientos de GB que implicarian 763B parametros a 2,9 bpw. Verificar si los pesos estan completos, si se descargan por separado o si la cifra corresponde solo a metadatos.
 - La estimacion de 277 GB de pesos supera los 256 GB de memoria unificada de dos DGX Spark; el propio requisito de hardware publicado deberia validarse antes de invertir en el equipamiento.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a la reproducibilidad y a la auditoria por terceros.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a la reproducibilidad y a la auditoria por terceros.
 - Licencia MIT declarada en este repositorio, pero los terminos del modelo base DeepSeek-V4.1-Flash-1017 deben comprobarse por separado; una licencia permisiva en el derivado no sustituye a la del modelo original.
 - Sin lista de idiomas declarada: el rendimiento en castellano no esta verificado y depende enteramente del modelo base.
 - Riesgo de alucinacion y de respuestas confiadas pero incorrectas, habitual en modelos de este tipo y no mitigado por la variante uncensored.
@@ -105,7 +105,7 @@ Las alternativas directamente comparables son las variantes de la misma familia,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BlackwellBoy/DeepSeek-V4.1-Flash-1017-BLACKFOLD-EXL3-2.9bpw-TP2
+- Modelo en Hugging Face: https://huggingface.co/BlackwellBoy/DeepSeek-V4.1-Flash-1017-BLACKFOLD-EXL3-2.9bpw-TP2
 - Repositorio GitHub de la receta BLACKFOLD TP2: https://github.com/Blackwellboy/DeepSeek-V4.1-Flash-1017-BLACKFOLD-TP2
 - Variante NIGHTFALL EXL3 2.9bpw TP2: https://huggingface.co/BlackwellBoy/DeepSeek-V4.1-Flash-1017-NIGHTFALL-EXL3-2.9bpw-TP2
 - Overlay heretic EXL3 2.9bpw: https://huggingface.co/BlackwellBoy/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-heretic-overlay

@@ -6,7 +6,7 @@ El repositorio GRAI-UNSTPB/gemma4_31b_it_ft_cs_llm_de contiene un adaptador LoRA
 
 El problema que resuelve es acotado y típico de los adaptadores: especializar un modelo instructivo grande en un dominio concreto sin reentrenar los 31B de parámetros completos, lo que reduce el coste de ajuste a unas pocas GPU y permite publicar solo el delta de pesos. El identificador del repositorio incluye el sufijo `_cs_llm_de`, que sugiere un ajuste orientado a un modelo de lenguaje de ámbito técnico o informático en alemán, aunque el autor no confirma esta interpretación en ninguna parte de la documentación publicada.
 
-La relevancia del artefacto es, hoy por hoy, limitada y debe interpretarse con cautela: la model card es la plantilla vacía de HuggingFace, sin secciones completadas, sin licencia declarada, sin idiomas declarados, sin datos de entrenamiento, sin evaluación y con cero descargas y cero likes en el momento de la consulta. Cualquier uso en producción requiere validación propia.
+La relevancia del artefacto es, hoy por hoy, limitada y debe interpretarse con cautela: la model card es la plantilla vacía de Hugging Face, sin secciones completadas, sin licencia declarada, sin idiomas declarados, sin datos de entrenamiento, sin evaluación y con cero descargas y cero likes en el momento de la consulta. Cualquier uso en producción requiere validación propia.
 
 ## Especificaciones técnicas
 

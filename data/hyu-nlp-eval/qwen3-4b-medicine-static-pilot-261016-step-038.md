@@ -89,11 +89,11 @@ La comparación relevante aquí no es de rendimiento —no hay datos— sino de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-038
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-038
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Ficha en Featherless (checkpoint step 038): https://featherless.ai/models/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-038
 - Ficha en Featherless (checkpoint step 002 del mismo run): https://featherless.ai/models/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-002
 - Checkpoint hermano con etiquetas grpo/static-rubric: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-000
 - Checkpoint hermano (variante dense): https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-004
 - Ficha en LLM Explorer de un checkpoint de la misma familia: https://llm-explorer.com/model/HYU-NLP-EVAL%2Fqwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-008,cMGLnuq6Ni0ObvQjQQgbT
-- Repositorio del autor en HuggingFace: https://huggingface.co/HYU-NLP-EVAL
+- Repositorio del autor en Hugging Face: https://huggingface.co/HYU-NLP-EVAL

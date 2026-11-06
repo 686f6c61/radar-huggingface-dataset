@@ -66,6 +66,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lecporr/qwen2.5-1.5b-finance-sentiment-sft
+- Modelo en Hugging Face: https://huggingface.co/lecporr/qwen2.5-1.5b-finance-sentiment-sft
 - Modelo base Qwen/Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de referencia sobre fine-tuning de sentimiento financiero con Qwen2.5-1.5B (no oficial): https://github.com/David0hy/llm-financial-sentiment-lora

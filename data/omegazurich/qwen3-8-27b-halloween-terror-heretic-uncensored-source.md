@@ -4,7 +4,7 @@
 
 Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-source es un ajuste fino (finetune) publicado por el usuario omegazurich sobre el modelo trohrbaugh/Qwen3.8-27B-heretic-ara, que a su vez deriva de la familia Qwen. El modelo se presenta como una variante "abliterated" y "uncensored" orientada a generacion creativa de terror, tematica de Halloween, escritura de ficcion, roleplay y simulacion de personajes malvados ("EVIL AI Constructs"). El autor declara 13 modos de razonamiento, 13 modos de instruccion y una capa de personalizacion bautizada como "Turbo-Brilliance Evil Ed" y "Halloween O/S".
 
-Con 27.356.728.560 parametros (unos 27,36 mil millones) y un repositorio de 55,6 GB en formato safetensors, el modelo se distribuye bajo licencia Apache 2.0, pero con acceso restringido (gated) en HuggingFace: es necesario aceptar condiciones antes de descargarlo. La ficha tecnica oficial es escasa: no se detallan la longitud de contexto, la composicion del dataset de ajuste ni resultados de benchmarks, por lo que buena parte de las especificaciones habituales quedan como "no disponible".
+Con 27.356.728.560 parametros (unos 27,36 mil millones) y un repositorio de 55,6 GB en formato safetensors, el modelo se distribuye bajo licencia Apache 2.0, pero con acceso restringido (gated) en Hugging Face: es necesario aceptar condiciones antes de descargarlo. La ficha tecnica oficial es escasa: no se detallan la longitud de contexto, la composicion del dataset de ajuste ni resultados de benchmarks, por lo que buena parte de las especificaciones habituales quedan como "no disponible".
 
 Su relevancia actual es acotada y muy especifica: cubre un nicho de modelos sin censura para narrativa de terror y roleplay, un segmento con demanda entre creadores de contenido y desarrolladores de videojuegos conversacionales. No obstante, la ausencia de documentacion tecnica, la falta de evaluaciones publicadas y el caracter gated del repositorio limitan seriamente su uso en produccion sin una validacion previa por parte del equipo que lo adopte.
 
@@ -20,7 +20,7 @@ Su relevancia actual es acotada y muy especifica: cubre un nicho de modelos sin 
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 55,6 GB |
 | Modelo base | trohrbaugh/Qwen3.8-27B-heretic-ara (finetune del mismo) |
 | Pipeline declarado | image-text-to-text |
@@ -36,7 +36,7 @@ El entrenamiento consiste en un ajuste fino sobre trohrbaugh/Qwen3.8-27B-heretic
 
 - Generacion de texto en ingles con enfasis en narrativa de terror, ficcion y escritura creativa de genero.
 - Modo de razonamiento ("thinking") y modos de instruccion declarados por el autor (13 reasoning modes y 13 instruct modes segun los tags).
-- Capacidad multimodal de entrada imagen-texto, segun el pipeline declarado en HuggingFace.
+- Capacidad multimodal de entrada imagen-texto, segun el pipeline declarado en Hugging Face.
 - Roleplay y simulacion conversacional de personajes, incluidos los denominados "EVIL AI Constructs" por el autor.
 - Escritura de historia y ficcion en multiples generos, segun los tags del repositorio.
 - Conversacion multi-turno orientada a personajes y escenarios.
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - No cabe en GPUs consumer de 8-12 GB ni en configuraciones de 16 GB sin cuantizacion adicional y offload a RAM.
 - Opciones de despliegue: el repositorio solo publica safetensors y libreria transformers, por lo que la via directa es transformers con aceleracion (CUDA, FlashAttention si el modelo la soporta). Para vLLM, llama.cpp, Ollama o TGI seria necesario generar cuantizaciones propias, ya que no se distribuyen en el repo.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
-- El acceso gated implica que cualquier pipeline automatizado debe gestionar el token de HuggingFace y la aceptacion previa de condiciones.
+- El acceso gated implica que cualquier pipeline automatizado debe gestionar el token de Hugging Face y la aceptacion previa de condiciones.
 
 ## Comparativa con modelos similares
 
@@ -93,6 +93,6 @@ No se dispone de informacion suficiente para establecer comparaciones cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/omegazurich/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-source
+- Hugging Face: https://huggingface.co/omegazurich/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-source
 - Modelo base: https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

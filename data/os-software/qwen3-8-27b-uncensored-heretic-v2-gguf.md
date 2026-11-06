@@ -87,15 +87,15 @@ No se dispone de datos de benchmarks comparativos entre estas variantes. Todas d
 - Sesgos: el modelo puede amplificar sesgos presentes en los datos de entrenamiento, sin los filtros de seguridad que normalmente los mitigan.
 - Limitaciones de idioma: no se especifican los idiomas soportados en la información proporcionada; el modelo base Qwen3.8 es multilingüe, pero esta versión no documenta su cobertura.
 - Restricciones de licencia: aunque la licencia Apache-2.0 permite uso comercial, el autor desaconseja su uso en producción y no ofrece garantías. El usuario es responsable del cumplimiento legal y ético.
-- El pipeline_tag declarado en HuggingFace es "image-text-to-image", lo que parece un error de etiquetado; el modelo es un LLM con visión, no un generador de imágenes.
+- El pipeline_tag declarado en Hugging Face es "image-text-to-image", lo que parece un error de etiquetado; el modelo es un LLM con visión, no un generador de imágenes.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OS-Software/Qwen3.8-27B-Uncensored-Heretic-v2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/OS-Software/Qwen3.8-27B-Uncensored-Heretic-v2-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Proyecto Heretic: https://heretic-project.org
 - GitHub de referencia (Qwen 3.8 27B Uncensored): https://github.com/Wassimyounes01/qwen38-uncensored
-- Variante similar en HuggingFace: https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-GGUF
+- Variante similar en Hugging Face: https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-GGUF
 - Variante con dataset japonés: https://huggingface.co/OS-Software/Qwen3.8-27B-MTP-heretic-ja
 - Build de Ollama: https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored:latest
 - Referencia en NanoGPT: https://nano-gpt.com/models/text/qwen/qwen3.8-27b-uncensored

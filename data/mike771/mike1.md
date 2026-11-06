@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mike771/mike1` es una publicación de HuggingFace creada por el usuario `mike771` el 23 de agosto de 2026. No se dispone de información técnica alguna sobre el modelo: la model card está vacía, no se especifica arquitectura, tamaño, contexto, idiomas ni pipeline de uso. Las etiquetas indican `license: unknown` y `region: us`, sin más metadatos relevantes.
+El modelo `mike771/mike1` es una publicación de Hugging Face creada por el usuario `mike771` el 23 de agosto de 2026. No se dispone de información técnica alguna sobre el modelo: la model card está vacía, no se especifica arquitectura, tamaño, contexto, idiomas ni pipeline de uso. Las etiquetas indican `license: unknown` y `region: us`, sin más metadatos relevantes.
 
 Este modelo no presenta descargas ni likes, lo que sugiere que se trata de una publicación reciente o de un experimento personal sin difusión. No hay documentación que permita evaluar su utilidad, capacidades o limitaciones. La relevancia actual es nula desde un punto de vista técnico, ya que no existen datos suficientes para considerarlo en ningún flujo de desarrollo o investigación.
 

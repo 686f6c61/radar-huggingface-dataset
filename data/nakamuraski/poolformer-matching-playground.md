@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nakamuraski/poolformer-matching-playground` es un repositorio de HuggingFace publicado por el usuario nakamuraski que contiene una implementación propia de PyTorch de una arquitectura **PoolFormer** orientada a tareas de *matching* (emparejamiento o comparación de pares). No se trata de un modelo preentrenado ni de una release de producción: la propia model card lo describe como un punto de partida experimental destinado a revisión de código, *smoke tests* y experimentos pequeños y controlados.
+`nakamuraski/poolformer-matching-playground` es un repositorio de Hugging Face publicado por el usuario nakamuraski que contiene una implementación propia de PyTorch de una arquitectura **PoolFormer** orientada a tareas de *matching* (emparejamiento o comparación de pares). No se trata de un modelo preentrenado ni de una release de producción: la propia model card lo describe como un punto de partida experimental destinado a revisión de código, *smoke tests* y experimentos pequeños y controlados.
 
 El repositorio incluye un script principal (`predict.py`) con ejemplo ejecutable o punto de entrada de entrenamiento, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta por defecto y un `model.safetensors` que el autor califica explícitamente como **checkpoint de inicialización válido para pruebas de humo**, no como un checkpoint entrenado ni evaluado.
 
@@ -56,7 +56,7 @@ Existe una discrepancia relevante que conviene señalar: la model card declara e
 - Pruebas de humo en CI/CD: el checkpoint de inicialización y el peso reducido del repositorio (0.0 GB) permiten verificar que el pipeline de carga y la firma del modelo funcionan antes de invertir en un entrenamiento real.
 - Revisión de código de arquitecturas PoolFormer: el script sirve como referencia didáctica para inspeccionar cómo se implementan atención *multi-query* y *gated fusion* sobre un bloque MetaFormer.
 - Reproducción controlada de recetas de entrenamiento: `training_args.json` fija LAMB con *schedule* polinómico, lo que facilita comparar configuraciones manteniendo constante la exposición de datos y las semillas aleatorias, tal como recomienda la propia model card.
-- Desarrollo de adaptadores de carga: dado que las APIs automáticas de HuggingFace no cargan el modelo directamente, el repositorio es un caso de prueba útil para escribir *wrappers* personalizados.
+- Desarrollo de adaptadores de carga: dado que las APIs automáticas de Hugging Face no cargan el modelo directamente, el repositorio es un caso de prueba útil para escribir *wrappers* personalizados.
 - Experimentos académicos de *matching* a pequeña escala: con una partición de validación emparejada y al menos tres semillas, se puede medir una métrica de tarea frente a una línea base de capacidad equivalente.
 - Validación de infraestructura de entrenamiento: sirve para comprobar distribución de datos, mezcla de precisión y registro de métricas en un modelo de coste computacional despreciable.
 - Plantilla base para nuevos repositorios de investigación: estructura mínima (`predict.py`, `config.json`, `training_args.json`, `model.safetensors`) reutilizable como esqueleto.
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmark publicado |
 |---|---|---|---|---|---|
-| nakamuraski/poolformer-matching-playground | 49.600 (según safetensors) | no disponible | BSD-3-Clause | HuggingFace, checkpoint de inicialización | No |
+| nakamuraski/poolformer-matching-playground | 49.600 (según safetensors) | no disponible | BSD-3-Clause | Hugging Face, checkpoint de inicialización | No |
 | Familia PoolFormer original (referencia arquitectónica) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | No disponible |
 | Alternativas de *matching* basadas en transformers | no disponible | no disponible | no disponible | no disponible | No disponible |
 
@@ -100,5 +100,5 @@ No se dispone de datos verificados en la información proporcionada para estable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nakamuraski/poolformer-matching-playground
+- Repositorio en Hugging Face: https://huggingface.co/nakamuraski/poolformer-matching-playground
 - Resultados de la búsqueda web: no se han encontrado enlaces técnicos relevantes sobre este modelo. Las consultas devolvieron exclusivamente contenido no relacionado con el repositorio, por lo que no se incluye ningún enlace adicional. No se han localizado paper, blog, repositorio de código ni demo asociados.

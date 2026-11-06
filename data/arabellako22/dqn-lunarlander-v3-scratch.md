@@ -68,9 +68,9 @@ La distribución de recompensas es bimodal: la mayoría de los episodios superan
 
 | Modelo | Algoritmo | Recompensa media | Tasa de éxito | Licencia | Disponibilidad |
 | --- | --- | --- | --- | --- | --- |
-| `dqn-LunarLander-v3-scratch` (este) | DQN (desde cero) | 235,2 ± 89,0 | 84% | no disponible | HuggingFace (PyTorch) |
-| `dqn-LunarLander-v3-sb3` | DQN (Stable-Baselines3) | 237,4 ± 101,1 | 80% | no disponible | HuggingFace (PyTorch) |
-| `lunarlander-v3-d3qn` (hwihwalab) | D3QN (Dueling Double DQN) | no disponible | no disponible | no disponible | HuggingFace (PyTorch) |
+| `dqn-LunarLander-v3-scratch` (este) | DQN (desde cero) | 235,2 ± 89,0 | 84% | no disponible | Hugging Face (PyTorch) |
+| `dqn-LunarLander-v3-sb3` | DQN (Stable-Baselines3) | 237,4 ± 101,1 | 80% | no disponible | Hugging Face (PyTorch) |
+| `lunarlander-v3-d3qn` (hwihwalab) | D3QN (Dueling Double DQN) | no disponible | no disponible | no disponible | Hugging Face (PyTorch) |
 
 No se dispone de datos de rendimiento del modelo D3QN en la información consultada. La comparativa principal es entre las dos variantes del mismo autor, que muestran un rendimiento muy similar en media, aunque el modelo de SB3 tiene una mediana más alta (281,4 vs 256,6) y un mejor peor episodio (6,7 vs -152,2), mientras que el modelo desde cero tiene una tasa de éxito ligeramente superior (84% vs 80%).
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento del modelo D3QN en la información consult
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/arabellako22/dqn-LunarLander-v3-scratch)
+- [Repositorio Hugging Face](https://huggingface.co/arabellako22/dqn-LunarLander-v3-scratch)
 - [Repositorio hermano (Stable-Baselines3)](https://huggingface.co/arabellako22/dqn-LunarLander-v3-sb3)
 - [Modelo D3QN de hwihwalab](https://huggingface.co/hwihwalab/lunarlander-v3-d3qn)
 - [Gymnasium (documentación oficial)](https://gymnasium.farama.org/)

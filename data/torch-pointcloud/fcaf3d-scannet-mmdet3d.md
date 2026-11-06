@@ -76,7 +76,7 @@ No se han publicado en la información disponible resultados adicionales de benc
 
 | Modelo | Parametros | Contexto / entrada | mAP@0.5 (ScanNet) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fcaf3d.scannet.mmdet3d | 70,5 M | Nube de puntos, 18 clases | 55,1 | Apache 2.0 | HuggingFace (torch-pointcloud) |
+| fcaf3d.scannet.mmdet3d | 70,5 M | Nube de puntos, 18 clases | 55,1 | Apache 2.0 | Hugging Face (torch-pointcloud) |
 | FCAF3D original (mmdetection3d) | no disponible | Nube de puntos, 18 clases | no disponible en esta ficha | Apache 2.0 | GitHub (OpenMMLab) |
 | VoteNet | no disponible | Nube de puntos, 18 clases | no disponible en esta ficha | Apache 2.0 | mmdetection3d |
 | PointPillars | no disponible | Nube de puntos, 18 clases | no disponible en esta ficha | Apache 2.0 | mmdetection3d |
@@ -97,7 +97,7 @@ La información disponible no incluye métricas de los modelos alternativos, por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/fcaf3d.scannet.mmdet3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/fcaf3d.scannet.mmdet3d
 - Paper FCAF3D (arXiv): https://arxiv.org/abs/2112.00322
 - Repositorio torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
 - Documentación de instalación de torch-pointcloud: https://pytorch-pointcloud.org/latest/installation/

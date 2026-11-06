@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kayaknam63/contrastive` es un repositorio de HuggingFace que contiene una implementacion de referencia de una arquitectura Beit orientada a aprendizaje contrastivo, publicada por el usuario kayaknam63. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados, sino de un punto de partida experimental: el propio autor indica en la model card que `model.safetensors` es unicamente un checkpoint de inicializacion valido para pruebas de humo y que no se reclama ninguna puntuacion de benchmark. El modelo usa una configuracion "nano" y tiene 24.832 parametros totales, lo que lo situa en un orden de magnitud muy inferior al de cualquier modelo de vision o lenguaje de proposito general.
+`kayaknam63/contrastive` es un repositorio de Hugging Face que contiene una implementacion de referencia de una arquitectura Beit orientada a aprendizaje contrastivo, publicada por el usuario kayaknam63. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados, sino de un punto de partida experimental: el propio autor indica en la model card que `model.safetensors` es unicamente un checkpoint de inicializacion valido para pruebas de humo y que no se reclama ninguna puntuacion de benchmark. El modelo usa una configuracion "nano" y tiene 24.832 parametros totales, lo que lo situa en un orden de magnitud muy inferior al de cualquier modelo de vision o lenguaje de proposito general.
 
 La relevancia de esta ficha es, por tanto, limitada y debe entenderse en clave de andamiaje tecnico: sirve como ejemplo reproducible de una implementacion Beit con attention dilatada, fusion por `concat mlp`, activacion swish y normalizacion groupnorm, acompanada de un `eval.py` ejecutable y ficheros de configuracion (`config.json`, `training_args.json`). No hay resultados de entrenamiento, ni idiomas declarados, ni pipeline asignado, ni descargas o likes en el momento de la consulta.
 
@@ -83,5 +83,5 @@ No disponible. No hay modelos comparables directos en la informacion proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kayaknam63/contrastive
+- Hugging Face: https://huggingface.co/kayaknam63/contrastive
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos o demos) en la busqueda web realizada.

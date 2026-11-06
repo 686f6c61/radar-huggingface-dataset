@@ -57,5 +57,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: [rajeshmis3205/model_735895550_mocov3_huge](https://huggingface.co/rajeshmis3205/model_735895550_mocov3_huge)
+- Repositorio Hugging Face: [rajeshmis3205/model_735895550_mocov3_huge](https://huggingface.co/rajeshmis3205/model_735895550_mocov3_huge)
 - Referencia a MoCo-v3 (Facebook Research, no se confirma que este modelo lo implemente): https://github.com/facebookresearch/moco-v3

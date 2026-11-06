@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FlexiSLM/model_eval_traces` no es un modelo de lenguaje, sino un repositorio de datos publicado en HuggingFace bajo licencia Apache 2.0 que contiene trazas de inferencia en formato JSONL (3,5 GB) generadas al evaluar el modelo de voz FlexiSLM. El repositorio no incluye pesos, ni audios WAV generados, ni código de inferencia: únicamente registros estructurados con los campos `index`, `task`, `input`, `output`, `evaluation` y `metadata`, correspondientes al esquema de trazas de evaluación de FlexiSLM.
+`FlexiSLM/model_eval_traces` no es un modelo de lenguaje, sino un repositorio de datos publicado en Hugging Face bajo licencia Apache 2.0 que contiene trazas de inferencia en formato JSONL (3,5 GB) generadas al evaluar el modelo de voz FlexiSLM. El repositorio no incluye pesos, ni audios WAV generados, ni código de inferencia: únicamente registros estructurados con los campos `index`, `task`, `input`, `output`, `evaluation` y `metadata`, correspondientes al esquema de trazas de evaluación de FlexiSLM.
 
 El modelo al que hacen referencia estas trazas es FlexiSLM-7B (checkpoint Stage2, `ckpt-150000`), un modelo de lenguaje hablado (spoken language model, SLM) desarrollado por el grupo FlexiSLM, cuya arquitectura extiende un LLM con entrada y salida de habla mediante un esquema de flow-matching speech-to-speech. La contribución central del trabajo, presentado en EMNLP 2026, es que FlexiSLM es el primer SLM que admite frecuencias de trama dinámicas y controlables tanto en entrada como en salida, permitiendo a un único modelo entrenado operar entre 12,5 Hz y 4,0 Hz sin reentrenamiento.
 
@@ -95,8 +95,8 @@ No se dispone de datos comparativos en la informacion proporcionada. La categori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FlexiSLM/model_eval_traces
-- Perfil del autor en HuggingFace: https://huggingface.co/FlexiSLM
+- Repositorio en Hugging Face: https://huggingface.co/FlexiSLM/model_eval_traces
+- Perfil del autor en Hugging Face: https://huggingface.co/FlexiSLM
 - Codigo y datos de entrenamiento (GitHub): https://github.com/AmphionTeam/FlexiSLM
 - Paper (arXiv): https://arxiv.org/abs/2606.31247
 - Demo del proyecto: https://flexislm.github.io/

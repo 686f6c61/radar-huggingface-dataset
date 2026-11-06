@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stdlogits/drowse-web-gemma3-270m-instruments` es un modelo publicado en HuggingFace por el usuario stdlogits, aparentemente derivado de Gemma 3 en su variante de 270 millones de parámetros. El nombre sugiere un ajuste fino orientado a un dominio concreto ("instruments", instrumentos) dentro de un contexto denominado "drowse-web", lo que apunta a un uso especializado más que a un modelo de propósito general. El repositorio ocupa 0,1 GB, un tamaño coherente con pesos cuantizados o con un fine-tune de un modelo base pequeño.
+`stdlogits/drowse-web-gemma3-270m-instruments` es un modelo publicado en Hugging Face por el usuario stdlogits, aparentemente derivado de Gemma 3 en su variante de 270 millones de parámetros. El nombre sugiere un ajuste fino orientado a un dominio concreto ("instruments", instrumentos) dentro de un contexto denominado "drowse-web", lo que apunta a un uso especializado más que a un modelo de propósito general. El repositorio ocupa 0,1 GB, un tamaño coherente con pesos cuantizados o con un fine-tune de un modelo base pequeño.
 
 La información pública disponible es muy limitada: la model card no incluye pipeline declarado, licencia, idiomas soportados ni descripción de la arquitectura o del proceso de entrenamiento. No se han publicado resultados de benchmarks ni detalles sobre el dataset utilizado. Cualquier evaluación rigurosa requiere inspeccionar los archivos del repositorio (configuración, tokenizador y pesos) directamente.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| stdlogits/drowse-web-gemma3-270m-instruments | 270M (según nombre) | no disponible | no disponible | HuggingFace, 0 descargas |
-| google/gemma-3-270m | 270M | no disponible en esta ficha | Gemma Terms of Use | HuggingFace, ampliamente disponible |
-| Qwen2.5-0.5B | 500M | 32K (según documentación pública de Qwen) | Apache 2.0 | HuggingFace |
-| SmolLM2-360M | 360M | 8K (según documentación pública de SmolLM2) | Apache 2.0 | HuggingFace |
+| stdlogits/drowse-web-gemma3-270m-instruments | 270M (según nombre) | no disponible | no disponible | Hugging Face, 0 descargas |
+| google/gemma-3-270m | 270M | no disponible en esta ficha | Gemma Terms of Use | Hugging Face, ampliamente disponible |
+| Qwen2.5-0.5B | 500M | 32K (según documentación pública de Qwen) | Apache 2.0 | Hugging Face |
+| SmolLM2-360M | 360M | 8K (según documentación pública de SmolLM2) | Apache 2.0 | Hugging Face |
 
 La comparación con el modelo base Gemma 3 270M es la más directa, pero no se dispone de datos de rendimiento del fine-tune para establecer diferencias cuantitativas. Frente a Qwen2.5-0.5B y SmolLM2-360M, el modelo de stdlogits ofrece un tamaño menor y, presumiblemente, especialización de dominio, a costa de una licencia y documentación desconocidas.
 
@@ -82,7 +82,7 @@ La comparación con el modelo base Gemma 3 270M es la más directa, pero no se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stdlogits/drowse-web-gemma3-270m-instruments
+- Modelo en Hugging Face: https://huggingface.co/stdlogits/drowse-web-gemma3-270m-instruments
 - Modelo base Gemma 3 (referencia): https://huggingface.co/google/gemma-3-270m
 - Documentación de Gemma 3 (Google): https://ai.google.dev/gemma/docs
 - Repositorio de Gemma en GitHub: https://github.com/google-deepmind/gemma

@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativo. La diferencia clave es la esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-convfinqa-fullscore-marin-8b-base-finance_cap_b1000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-convfinqa-fullscore-marin-8b-base-finance_cap_b1000_s0
 - Modelo base: https://huggingface.co/marin-community/marin-8b-base
 - Dataset de entrenamiento (referencia, sin URL directa): capsd_marin-8b-base-n11082-finance-convfinqa-fullscore__mix_finance_cap_b1000_s0

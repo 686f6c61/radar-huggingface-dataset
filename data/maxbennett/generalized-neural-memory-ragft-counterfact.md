@@ -19,7 +19,7 @@ El problema que aborda es la adaptacion continua en entornos no estacionarios, d
 | Tipos de cuantizacion | No disponible (el repositorio solo distribuye pesos sin cuantizar; no se publican versiones GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | No disponible (el modelo base esta optimizado para ingles; el ajuste CounterFACT se entrena sobre un dataset de investigacion sin declaracion de cobertura multilingue) |
 | Licencia | llama3 (Llama 3 Community License) |
-| Formato de pesos | safetensors en HuggingFace; el repositorio de codigo descarga el checkpoint como `models/rag_ft_counterfact/model.pth` |
+| Formato de pesos | safetensors en Hugging Face; el repositorio de codigo descarga el checkpoint como `models/rag_ft_counterfact/model.pth` |
 
 ## Arquitectura y entrenamiento
 
@@ -90,7 +90,7 @@ La comparacion con los tres alternativas anteriores es estructural (parametros, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maxbennett/generalized-neural-memory-ragft-counterfact
+- Modelo en Hugging Face: https://huggingface.co/maxbennett/generalized-neural-memory-ragft-counterfact
 - Repositorio de codigo: https://github.com/maxbennett/Generalized-Neural-Memory
 - Articulo en arXiv (resumen): https://arxiv.org/abs/2602.23201
 - Articulo en arXiv (PDF v2): https://arxiv.org/pdf/2602.23201v2

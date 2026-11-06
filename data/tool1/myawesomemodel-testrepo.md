@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado por el usuario tool1 en HuggingFace que, segun su model card, describe un modelo de lenguaje de gran tamano con capacidades mejoradas de razonamiento, generacion de codigo y soporte de function calling. La model card afirma que el modelo ha experimentado una "actualizacion significativa" frente a una version anterior, con mejoras en profundidad de razonamiento e inferencia gracias a mayores recursos computacionales y mecanismos de optimizacion algoritmica durante el post-entrenamiento.
+MyAwesomeModel-TestRepo es un repositorio publicado por el usuario tool1 en Hugging Face que, segun su model card, describe un modelo de lenguaje de gran tamano con capacidades mejoradas de razonamiento, generacion de codigo y soporte de function calling. La model card afirma que el modelo ha experimentado una "actualizacion significativa" frente a una version anterior, con mejoras en profundidad de razonamiento e inferencia gracias a mayores recursos computacionales y mecanismos de optimizacion algoritmica durante el post-entrenamiento.
 
 Sin embargo, el repositorio presenta un tamano de 0.0 GB, lo que indica que no contiene pesos del modelo ni archivos de configuracion. Registra 0 descargas y 0 likes, y fue creado el 31 de agosto de 2026. La informacion tecnica disponible es minima: se etiqueta como transformers y bert, con pipeline de feature-extraction, aunque la model card describe un modelo conversacional con razonamiento profundo, lo que resulta incoherente con dichas etiquetas.
 
@@ -106,7 +106,7 @@ La model card compara MyAwesomeModel con tres modelos anonimos (Model1, Model2 y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tool1/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/tool1/MyAwesomeModel-TestRepo
 - Copia del repositorio en ToolieTheToolC: https://huggingface.co/ToolieTheToolC/MyAwesomeModel-TestRepo
 - Copia del repositorio en ToolieTheTool: https://huggingface.co/ToolieTheTool/MyAwesomeModel-TestRepo
 - Entrada en Toolify: https://www.toolify.ai/ai-model/asfafaf4546-myawesomemodel-testrepo

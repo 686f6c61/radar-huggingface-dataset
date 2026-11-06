@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: al ser un adaptador LoRA sobre Llama-3.1-8B-Instruct, la VRAM necesaria depende de la cuantización del modelo base. Con cuantización de 4 bits, se estiman 6-8 GB; con precisión completa (FP16), 16 GB.
 - GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB) para FP16, o GPUs con 8-12 GB para cuantización 4-bit. Para despliegue en producción, A100 o H100.
 - Cabe en GPUs de consumo: sí, con cuantización 4-bit en GPUs de 8 GB o más.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace Transformers con PEFT, TGI.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face Transformers con PEFT, TGI.
 - Latencia y throughput: no disponibles. Dependen del hardware, la cuantización y el tamaño del lote.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ La comparativa es orientativa: DermL2V es un adaptador especializado en un domin
 
 ## Limitaciones y advertencias
 
-- El modelo base Llama-3.1-8B-Instruct es un modelo con acceso restringido (gated) en HuggingFace; los usuarios deben solicitar acceso y cumplir la licencia comunitaria de Llama 3.1.
+- El modelo base Llama-3.1-8B-Instruct es un modelo con acceso restringido (gated) en Hugging Face; los usuarios deben solicitar acceso y cumplir la licencia comunitaria de Llama 3.1.
 - La licencia llama3.1 impone restricciones de uso comercial: no se permite utilizar el modelo para mejorar otros modelos de lenguaje grandes o para usos prohibidos por la política de uso aceptable de Meta.
 - El adaptador está especializado en dermatología; su rendimiento fuera de este dominio no está garantizado y puede degradarse significativamente.
 - No se dispone de información sobre sesgos del modelo, pero al derivar de Llama-3.1-8B-Instruct, puede heredar sesgos presentes en los datos de entrenamiento del modelo base.
@@ -78,7 +78,7 @@ La comparativa es orientativa: DermL2V es un adaptador especializado en un domin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Gbone3176/DermL2V
+- Repositorio Hugging Face: https://huggingface.co/Gbone3176/DermL2V
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Modelo intermedio MNTP: https://huggingface.co/McGill-NLP/LLM2Vec-Meta-Llama-31-8B-Instruct-mntp
 - Modelo intermedio supervisado: https://huggingface.co/McGill-NLP/LLM2Vec-Meta-Llama-31-8B-Instruct-mntp-supervised

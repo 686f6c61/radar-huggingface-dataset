@@ -83,10 +83,10 @@ La tabla de metricas de cliche publicada en la model card aparece truncada en la
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pantheon-Reasoning-26B-A4B-1.1-V2 | 26,5 B (MoE) | no disponible | Metricas de escritura publicadas (TTR 0,770) | apache-2.0 | HuggingFace, safetensors |
-| Gryphe/Gemma-4-26B-A4B-StyleTune-V2 | 26,5 B (MoE) | no disponible | TTR 0,716; 25,2% de solapamiento con base | no disponible | HuggingFace |
+| Pantheon-Reasoning-26B-A4B-1.1-V2 | 26,5 B (MoE) | no disponible | Metricas de escritura publicadas (TTR 0,770) | apache-2.0 | Hugging Face, safetensors |
+| Gryphe/Gemma-4-26B-A4B-StyleTune-V2 | 26,5 B (MoE) | no disponible | TTR 0,716; 25,2% de solapamiento con base | no disponible | Hugging Face |
 | Qwen 3.6 27B | no disponible | no disponible | Segun el autor, "muy inteligente" pero con escritura "poco destacable" | no disponible | no disponible |
-| Gryphe/Pantheon-Reasoning-26B-A4B-1.1 | 26,5 B (MoE) | no disponible | Trazas de razonamiento menos condensadas | apache-2.0 | HuggingFace |
+| Gryphe/Pantheon-Reasoning-26B-A4B-1.1 | 26,5 B (MoE) | no disponible | Trazas de razonamiento menos condensadas | apache-2.0 | Hugging Face |
 
 La comparacion con Qwen 3.6 27B procede unicamente de la valoracion cualitativa del autor del modelo y no de mediciones reproducibles. No se dispone de datos de contexto, licencia ni benchmarks cuantitativos de los modelos alternativos en la informacion proporcionada.
 
@@ -105,7 +105,7 @@ La comparacion con Qwen 3.6 27B procede unicamente de la valoracion cualitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2
+- Modelo en Hugging Face: https://huggingface.co/Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2
 - Modelo base: https://huggingface.co/Gryphe/Gemma-4-26B-A4B-StyleTune-V2
 - Version original del finetune: https://huggingface.co/Gryphe/Pantheon-Reasoning-26B-A4B-1.1
 

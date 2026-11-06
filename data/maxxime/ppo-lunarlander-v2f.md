@@ -56,7 +56,7 @@ Este resultado está marcado como `verified: false` (no verificado externamente)
 - Al ser una red neuronal pequeña (probablemente menos de 1M de parámetros), la inferencia se puede ejecutar en CPU sin problemas.
 - VRAM estimada: inferior a 1 GB (incluso en GPU, el modelo cabe en cualquier tarjeta moderna).
 - GPU recomendadas: no requiere GPU; cualquier CPU moderna es suficiente para ejecutar episodios en tiempo real.
-- Opciones de despliegue: se puede cargar con PyTorch o Stable-Baselines3 (si se convierte el formato), o directamente desde el repositorio de HuggingFace usando la función `load_from_hub` de Stable-Baselines3.
+- Opciones de despliegue: se puede cargar con PyTorch o Stable-Baselines3 (si se convierte el formato), o directamente desde el repositorio de Hugging Face usando la función `load_from_hub` de Stable-Baselines3.
 - Latencia y throughput: no se dispone de datos, pero al ser un modelo minúsculo, la inferencia es del orden de microsegundos por paso.
 
 ## Comparativa con modelos similares

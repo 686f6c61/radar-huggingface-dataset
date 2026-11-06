@@ -26,7 +26,7 @@ Su relevancia practica esta en que permite ejecutar cancelacion de eco y supresi
 | Entradas | `mic` `[1, N]` Float32, `ref` `[1, N]` Float32, 33 tensores de estado |
 | Salidas | `enhanced` `[1, N]` Float32 y 33 tensores de estado |
 | Descargas / likes | 0 / 0 |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -108,7 +108,7 @@ Alternativas de la misma categoria mencionadas en el ecosistema (DeepVQE origina
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/localvqe-coreml
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/localvqe-coreml
 - Modelo base (pesos): https://huggingface.co/LocalAI-io/LocalVQE
 - Repositorio upstream LocalVQE: https://github.com/localai-org/LocalVQE
 - Libreria de consumo FluidAudio: https://github.com/FluidInference/FluidAudio

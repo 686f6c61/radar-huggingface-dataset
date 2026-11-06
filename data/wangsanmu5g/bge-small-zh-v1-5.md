@@ -96,7 +96,7 @@ Diferencias clave: las variantes *base* y *large* ofrecen mayor capacidad de rep
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wangsanmu5g/bge-small-zh-v1.5
+- Repositorio en Hugging Face: https://huggingface.co/wangsanmu5g/bge-small-zh-v1.5
 - Modelo oficial de referencia: https://huggingface.co/BAAI/bge-small-zh-v1.5
 - Repositorio FlagEmbedding: https://github.com/FlagOpen/FlagEmbedding
 - Informe técnico de BGE: https://arxiv.org/pdf/2309.07597.pdf

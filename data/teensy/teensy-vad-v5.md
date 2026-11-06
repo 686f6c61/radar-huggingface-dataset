@@ -93,7 +93,7 @@ Silero VAD ofrece mayor precisión en el conjunto TEN (AUC 0.9519) y un contexto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Teensy/teensy-vad-v5
+- Modelo en Hugging Face: https://huggingface.co/Teensy/teensy-vad-v5
 - Repositorio oficial (código y documentación): https://github.com/TeensyAI/teensyvad
 - Papers de la familia TeensyVAD: https://github.com/metacritical/teensyvad
 - Notas de lanzamiento de v5: https://teensy.tech/blogs/releases/v5

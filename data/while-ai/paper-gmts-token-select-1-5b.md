@@ -74,9 +74,9 @@ La información disponible solo permite comparar los brazos del propio repositor
 
 | Modelo / brazo | Parámetros | Contexto | pass@1 (GSM8K) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-1.5B-Instruct (base, sin entrenar) | 1,5B | 32 768 tokens según su ficha oficial | 0,36 | Apache 2.0 | HuggingFace (Qwen) |
-| paper-gmts-token-select-1.5b, brazo referencia | 1,5B + LoRA | No disponible | 0,49 | Apache 2.0 | HuggingFace, subcarpeta `baseline` |
-| paper-gmts-token-select-1.5b, brazo receta | 1,5B + LoRA | No disponible | 0,18 | Apache 2.0 | HuggingFace, raíz del repo |
+| Qwen2.5-1.5B-Instruct (base, sin entrenar) | 1,5B | 32 768 tokens según su ficha oficial | 0,36 | Apache 2.0 | Hugging Face (Qwen) |
+| paper-gmts-token-select-1.5b, brazo referencia | 1,5B + LoRA | No disponible | 0,49 | Apache 2.0 | Hugging Face, subcarpeta `baseline` |
+| paper-gmts-token-select-1.5b, brazo receta | 1,5B + LoRA | No disponible | 0,18 | Apache 2.0 | Hugging Face, raíz del repo |
 | Otros modelos de ~1,5B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ La información disponible solo permite comparar los brazos del propio repositor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/while-ai/paper-gmts-token-select-1.5b
+- Modelo en Hugging Face: https://huggingface.co/while-ai/paper-gmts-token-select-1.5b
 - Receta asociada (código de reproducción): https://github.com/whilehq/whileai-sdk/tree/main/recipes/papers/gmts-token-select
 - Repositorio whileai-sdk: https://github.com/whilehq/whileai-sdk
 - Colección "Papers, replicated": https://huggingface.co/collections/while-ai/papers-replicated-6ab271de22542eb550d4251c

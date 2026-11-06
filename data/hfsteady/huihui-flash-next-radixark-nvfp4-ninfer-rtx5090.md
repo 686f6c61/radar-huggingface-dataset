@@ -66,16 +66,16 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Huihui-Flash-Next-RadixArk-NVFP4-NInfer-RTX5090 | no disponible | no disponible | NVFP4 + mixta | qwen-community-1.0 | HuggingFace, runtime propietario |
-| edp1096/Huihui-RadixArk-Qwen3.8-Flash-Next-abliterated-NVFP4 (base) | no disponible | no disponible | NVFP4 | qwen-community-1.0 | HuggingFace |
-| Qwen 3.8 Flash-Next (familia original) | no disponible | no disponible | BF16 y otras | qwen-community-1.0 | HuggingFace |
+| Huihui-Flash-Next-RadixArk-NVFP4-NInfer-RTX5090 | no disponible | no disponible | NVFP4 + mixta | qwen-community-1.0 | Hugging Face, runtime propietario |
+| edp1096/Huihui-RadixArk-Qwen3.8-Flash-Next-abliterated-NVFP4 (base) | no disponible | no disponible | NVFP4 | qwen-community-1.0 | Hugging Face |
+| Qwen 3.8 Flash-Next (familia original) | no disponible | no disponible | BF16 y otras | qwen-community-1.0 | Hugging Face |
 
 No se dispone de datos de rendimiento ni de parámetros para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
 - Artefacto experimental: el propio autor lo califica como conversión NInfer experimental, no una recalibración oficial.
-- Verificación incompleta: la lectura completa de los pesos descargados no se ha realizado; solo se verificaron tamaños y SHA256 LFS vía metadatos anónimos de HuggingFace.
+- Verificación incompleta: la lectura completa de los pesos descargados no se ha realizado; solo se verificaron tamaños y SHA256 LFS vía metadatos anónimos de Hugging Face.
 - Calidad no validada: no se han establecido calidad amplia, contexto largo, MTP ni tool-use estilo Hermes.
 - Compatibilidad de hardware restringida: objetivo x86_64 Ubuntu 24.04, glibc >= 2.39, RTX 5090 y offload a RAM; no se garantiza funcionamiento en otros hosts CUDA 13.2.
 - Formato propietario: los pesos NInfer requieren el runtime incluido; no son compatibles con vLLM, llama.cpp, Ollama ni TGI.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento ni de parámetros para establecer una comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hfsteady/Huihui-Flash-Next-RadixArk-NVFP4-NInfer-RTX5090
+- Modelo en Hugging Face: https://huggingface.co/hfsteady/Huihui-Flash-Next-RadixArk-NVFP4-NInfer-RTX5090
 - Modelo base: https://huggingface.co/edp1096/Huihui-RadixArk-Qwen3.8-Flash-Next-abliterated-NVFP4
 - Licencia (referencia del autor base): https://huggingface.co/edp1096/Huihui-RadixArk-Qwen3.8-Flash-Next-abliterated-NVFP4/blob/016905fbd6ac5c584799007a524827e2486a0711/LICENSE
 - Runner/converter: `giveen/ninfer-ext` en commit `b6886f67700bc9e3e4937f826edc18d8d7b84f43` (no se proporciona URL directa)

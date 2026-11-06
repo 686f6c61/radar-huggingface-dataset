@@ -79,9 +79,9 @@ No se han publicado en la información disponible resultados de benchmarks de ca
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento de seguridad |
 |---|---|---|---|---|---|
-| svd-safety-mis7_swift_remove50_swapgapiter_rankunit_b010 | 7.241.732.096 (fracción densa 0,5003) | No especificado (base: 32.768) | Apache-2.0 | HuggingFace, 0 descargas | AdvBench ASR 0,0731; StrongREJECT ASR 0,1470 |
-| mistralai/Mistral-7B-Instruct-v0.2 (base sin comprimir) | 7.241.732.096 | 32.768 tokens | Apache-2.0 | HuggingFace, ampliamente desplegado | No disponible en la información proporcionada |
-| Otras celdas de la malla del mismo estudio | No disponible | No disponible | Apache-2.0 | HuggingFace | No disponible |
+| svd-safety-mis7_swift_remove50_swapgapiter_rankunit_b010 | 7.241.732.096 (fracción densa 0,5003) | No especificado (base: 32.768) | Apache-2.0 | Hugging Face, 0 descargas | AdvBench ASR 0,0731; StrongREJECT ASR 0,1470 |
+| mistralai/Mistral-7B-Instruct-v0.2 (base sin comprimir) | 7.241.732.096 | 32.768 tokens | Apache-2.0 | Hugging Face, ampliamente desplegado | No disponible en la información proporcionada |
+| Otras celdas de la malla del mismo estudio | No disponible | No disponible | Apache-2.0 | Hugging Face | No disponible |
 | Otros modelos comprimidos de 7B (p. ej. variantes SVD o podadas) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la información proporcionada de datos de rendimiento de los modelos comparables, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad.
@@ -102,7 +102,7 @@ No se dispone en la información proporcionada de datos de rendimiento de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mis7_swift_remove50_swapgapiter_rankunit_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mis7_swift_remove50_swapgapiter_rankunit_b010
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Perfil del autor: https://huggingface.co/Jeesup
 - Paper, blog, repositorio o demo adicionales: no disponible (los resultados de búsqueda web no contienen referencias relevantes a este modelo ni al método SVD-LLM citado en la model card)

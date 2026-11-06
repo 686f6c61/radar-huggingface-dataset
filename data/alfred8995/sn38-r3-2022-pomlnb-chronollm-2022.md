@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/sn38-r3-2022-pomlnb-chronollm-2022` es un checkpoint de 1.858.535.658 parámetros (aproximadamente 1,86 mil millones) publicado en HuggingFace por el usuario `alfred8995`, con acceso restringido (gated). Por su nomenclatura y por las etiquetas del repositorio (`ChronoGPT`, `sn38-nanochrono` en repositorios hermanos del mismo autor), se trata de un modelo perteneciente al ecosistema ChronoLLM, la subred 38 de Bittensor, orientada a modelos de lenguaje "temporalmente consistentes": cada modelo solo conoce eventos hasta su año de corte (vintage), de modo que no se filtre conocimiento del futuro en el análisis.
+`alfred8995/sn38-r3-2022-pomlnb-chronollm-2022` es un checkpoint de 1.858.535.658 parámetros (aproximadamente 1,86 mil millones) publicado en Hugging Face por el usuario `alfred8995`, con acceso restringido (gated). Por su nomenclatura y por las etiquetas del repositorio (`ChronoGPT`, `sn38-nanochrono` en repositorios hermanos del mismo autor), se trata de un modelo perteneciente al ecosistema ChronoLLM, la subred 38 de Bittensor, orientada a modelos de lenguaje "temporalmente consistentes": cada modelo solo conoce eventos hasta su año de corte (vintage), de modo que no se filtre conocimiento del futuro en el análisis.
 
 El sufijo `2022` del identificador sugiere que este checkpoint corresponde al vintage de 2022, mientras que `r3` y `pomlnb` parecen identificadores internos del proceso de la subred (ronda y variante de juego), aunque esta correspondencia no está documentada en la información disponible. El modelo se distribuye únicamente en formato `safetensors` y su tarjeta no incluye pipeline, idiomas ni resultados de evaluación.
 
@@ -18,7 +18,7 @@ Su relevancia es acotada pero específica: los modelos con corte temporal son ú
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | No disponible; el repositorio solo publica `safetensors` (sin GGUF ni cuantizaciones precalculadas) |
 | Idiomas soportados | No disponible |
-| Licencia | `other` (no especificada); acceso restringido sujeto a aceptación de condiciones en HuggingFace |
+| Licencia | `other` (no especificada); acceso restringido sujeto a aceptación de condiciones en Hugging Face |
 | Formato de pesos | `safetensors` |
 | Tamaño del repositorio | 7,4 GB |
 | Acceso | Gated (requiere aceptar condiciones) |
@@ -73,10 +73,10 @@ La comparación se limita a especificaciones publicadas, ya que no existen datos
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `alfred8995/sn38-r3-2022-pomlnb-chronollm-2022` | 1,86 B | No disponible | `other` (no especificada) | Gated en HuggingFace |
+| `alfred8995/sn38-r3-2022-pomlnb-chronollm-2022` | 1,86 B | No disponible | `other` (no especificada) | Gated en Hugging Face |
 | Qwen3-1.7B | 1,7 B | 32 768 tokens (nativo) | Apache 2.0 | Abierta |
-| Llama 3.2 1B | 1,24 B | 128 000 tokens | Llama 3.2 Community License | Gated en HuggingFace |
-| Gemma 2 2B | 2,6 B | 8 192 tokens | Gemma Terms of Use | Gated en HuggingFace |
+| Llama 3.2 1B | 1,24 B | 128 000 tokens | Llama 3.2 Community License | Gated en Hugging Face |
+| Gemma 2 2B | 2,6 B | 8 192 tokens | Gemma Terms of Use | Gated en Hugging Face |
 
 La diferencia funcional relevante no es de tamaño ni de contexto, sino de propósito: los tres modelos alternativos son generalistas y no imponen ningún corte temporal, mientras que el modelo SN38 se define por su vintage de 2022. Para tareas generales de generación de texto o código, las alternativas cuentan con documentación, evaluaciones públicas y soporte de herramientas mucho más amplios.
 
@@ -86,7 +86,7 @@ La diferencia funcional relevante no es de tamaño ni de contexto, sino de prop�
 - Riesgo de alucinación: no cuantificado; al no haber benchmarks ni evaluaciones publicadas, no puede estimarse su fiabilidad.
 - La consistencia temporal es una propiedad esperada del ecosistema ChronoLLM, no una garantía verificada para este checkpoint concreto; es probable que el modelo retenga conocimiento posterior a 2022 y debe auditarse antes de usarlo en backtesting.
 - Licencia `other` sin texto identificable en la información disponible: el uso comercial es incierto y requiere revisar los términos asociados al acceso gated.
-- Acceso restringido: es necesario aceptar condiciones en HuggingFace, lo que puede bloquear despliegues automatizados y reproducibilidad de experimentos.
+- Acceso restringido: es necesario aceptar condiciones en Hugging Face, lo que puede bloquear despliegues automatizados y reproducibilidad de experimentos.
 - Cero descargas y cero likes: no existe validación comunitaria del artefacto.
 - Contexto de origen: la subred 38 de Bittensor (ChronoLLM) tiene un mecanismo de minería basado en juego (rock-paper-scissors con commit/reveal) y su repositorio principal figura como archivado desde mayo de 2026, con los juegos aún activos en EVM. Esto implica que el checkpoint puede ser un subproducto de una ronda de competición y no un modelo optimizado para inferencia de calidad.
 - Fecha de creación anómala (2026-10-21): conviene verificar la integridad y procedencia de los ficheros antes de cargarlos.
@@ -94,7 +94,7 @@ La diferencia funcional relevante no es de tamaño ni de contexto, sino de prop�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/sn38-r3-2022-pomlnb-chronollm-2022
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/sn38-r3-2022-pomlnb-chronollm-2022
 - Repositorio hermano del mismo autor: https://huggingface.co/alfred8995/r16-H-P3-d2c3q3-s100
 - Repositorio GitHub de la subred: https://github.com/chronollm/sn38
 - Paquete Python `chronollm` en PyPI: https://pypi.org/project/chronollm/

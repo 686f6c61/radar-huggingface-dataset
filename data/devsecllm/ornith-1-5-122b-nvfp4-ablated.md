@@ -102,6 +102,6 @@ No se dispone de datos publicados de otros modelos comparables en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devsecllm/Ornith-1.5-122B-NVFP4-ablated
+- Modelo en Hugging Face: https://huggingface.co/devsecllm/Ornith-1.5-122B-NVFP4-ablated
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B-NVFP4
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

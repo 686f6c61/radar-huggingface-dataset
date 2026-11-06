@@ -65,8 +65,8 @@ No se dispone de información sobre adaptadores comparables. Se incluye el model
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-distill-qwen3.6-35b-sft-gptoss-step0 | 35B base + LoRA r32 | no disponible | no disponible | safetensors (PEFT) | HuggingFace |
-| Qwen/Qwen3.6-35B-A3B (base) | 35B (3B activos) | no disponible | no disponible | safetensors | HuggingFace |
+| rh-distill-qwen3.6-35b-sft-gptoss-step0 | 35B base + LoRA r32 | no disponible | no disponible | safetensors (PEFT) | Hugging Face |
+| Qwen/Qwen3.6-35B-A3B (base) | 35B (3B activos) | no disponible | no disponible | safetensors | Hugging Face |
 | gpt-oss-120b (profesor) | 120B | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,5 +83,5 @@ No se dispone de información sobre adaptadores comparables. Se incluye el model
 
 ## Enlaces
 
-- [HuggingFace: darklord1611/rh-distill-qwen3.6-35b-sft-gptoss-step0](https://huggingface.co/darklord1611/rh-distill-qwen3.6-35b-sft-gptoss-step0)
+- [Hugging Face: darklord1611/rh-distill-qwen3.6-35b-sft-gptoss-step0](https://huggingface.co/darklord1611/rh-distill-qwen3.6-35b-sft-gptoss-step0)
 - [Modelo base: Qwen/Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)

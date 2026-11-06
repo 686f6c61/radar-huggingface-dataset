@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Anki-tsin/embodied-ai-reading no es un modelo de lenguaje entrenado, sino un repositorio de HuggingFace cuyo artefacto principal es un conjunto estructurado de notas de investigación sobre IA encarnada (Embodied AI). El propio autor lo etiqueta con los tags research-notes y embodied-ai, y su model card indica de forma explícita que el material "no reclama mejoras de benchmark, ablaciones completadas, código liberado ni un checkpoint entrenado". Por tanto, debe evaluarse como documentación de investigación, no como un sistema desplegable.
+Anki-tsin/embodied-ai-reading no es un modelo de lenguaje entrenado, sino un repositorio de Hugging Face cuyo artefacto principal es un conjunto estructurado de notas de investigación sobre IA encarnada (Embodied AI). El propio autor lo etiqueta con los tags research-notes y embodied-ai, y su model card indica de forma explícita que el material "no reclama mejoras de benchmark, ablaciones completadas, código liberado ni un checkpoint entrenado". Por tanto, debe evaluarse como documentación de investigación, no como un sistema desplegable.
 
-El repositorio se creó el 20 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes. Los metadatos de HuggingFace incluyen el tag transformer y un recuento real de parámetros en safetensors de 33.088, una cifra extraordinariamente baja que no corresponde a un modelo generativo funcional; el tamaño del repositorio se declara como 0.0 GB. No hay información sobre arquitectura interna, datos de entrenamiento ni pesos utilizables.
+El repositorio se creó el 20 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes. Los metadatos de Hugging Face incluyen el tag transformer y un recuento real de parámetros en safetensors de 33.088, una cifra extraordinariamente baja que no corresponde a un modelo generativo funcional; el tamaño del repositorio se declara como 0.0 GB. No hay información sobre arquitectura interna, datos de entrenamiento ni pesos utilizables.
 
 La relevancia de esta entrada es acotada y de naturaleza metodológica: sirve como punto de partida bibliográfico y como plantilla de rigor experimental para quien trabaja en robótica, agentes encarnados o evaluación de políticas, pero no aporta ningún componente que pueda integrarse en un pipeline de inferencia. El único fichero sustantivo es `reading.md`, acompañado de este README.
 
@@ -12,7 +12,7 @@ La relevancia de esta entrada es acotada y de naturaleza metodológica: sirve co
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible (el tag de HuggingFace menciona "transformer", sin detalles de capas, atención ni configuración) |
+| Arquitectura | No disponible (el tag de Hugging Face menciona "transformer", sin detalles de capas, atención ni configuración) |
 | Parámetros totales | 33.088 (según metadatos reales de safetensors del repositorio) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | No disponible |
@@ -22,7 +22,7 @@ La relevancia de esta entrada es acotada y de naturaleza metodológica: sirve co
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre arquitectura interna, configuración de capas, mecanismos de atención ni tipo de modelo (transformer, MoE, SSM o híbrido). El único indicio es el tag `transformer` en los metadatos de HuggingFace, que no viene acompañado de ningún `config.json` documentado ni de especificaciones en la model card. El recuento de 33.088 parámetros en safetensors es incompatible con un modelo de lenguaje funcional y sugiere un tensor auxiliar, un artefacto de prueba o un residuo de serialización.
+No se ha publicado información sobre arquitectura interna, configuración de capas, mecanismos de atención ni tipo de modelo (transformer, MoE, SSM o híbrido). El único indicio es el tag `transformer` en los metadatos de Hugging Face, que no viene acompañado de ningún `config.json` documentado ni de especificaciones en la model card. El recuento de 33.088 parámetros en safetensors es incompatible con un modelo de lenguaje funcional y sugiere un tensor auxiliar, un artefacto de prueba o un residuo de serialización.
 
 Tampoco existe información sobre entrenamiento: no se indican tokens de entrenamiento, composición del dataset, fases de ajuste (SFT, RLHF, DPO) ni innovaciones técnicas como decodificación especulativa o atención lineal. La model card declara explícitamente que no se libera checkpoint entrenado ni código, de modo que no hay proceso de entrenamiento que describir.
 
@@ -83,7 +83,7 @@ No disponible. Este repositorio no pertenece a la categoría de modelos de lengu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Anki-tsin/embodied-ai-reading
+- Repositorio en Hugging Face: https://huggingface.co/Anki-tsin/embodied-ai-reading
 - Fichero principal citado en la model card: `reading.md`
 - Documentación del repositorio: `README.md`
 - Resultados de búsqueda web: todas las entradas recuperadas corresponden al programa de fichas de repetición espaciada Anki (https://apps.ankiweb.net/, https://ankiweb.net/, https://en.wikipedia.org/wiki/Anki, https://fr.wikipedia.org/wiki/Anki) y no guardan relación con este repositorio. No se han encontrado papers, blogs, repositorios de código ni demos asociados a Anki-tsin/embodied-ai-reading.

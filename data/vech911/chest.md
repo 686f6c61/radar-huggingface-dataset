@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como Vech911/chest es un repositorio publicado en HuggingFace por el usuario Vech911 bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card del autor no contiene mas que la linea de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso. El repositorio ocupa 0,2 GB, lo que sugiere un checkpoint de tamano reducido (del orden de decenas o pocos cientos de millones de parametros si los pesos estuvieran en precision completa, o un conjunto de pesos cuantizados), pero este dato no permite confirmar ni el numero de parametros ni la familia arquitectonica.
+El modelo identificado como Vech911/chest es un repositorio publicado en Hugging Face por el usuario Vech911 bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card del autor no contiene mas que la linea de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso. El repositorio ocupa 0,2 GB, lo que sugiere un checkpoint de tamano reducido (del orden de decenas o pocos cientos de millones de parametros si los pesos estuvieran en precision completa, o un conjunto de pesos cuantizados), pero este dato no permite confirmar ni el numero de parametros ni la familia arquitectonica.
 
 No se ha declarado un pipeline de uso (text-generation, text-classification, etc.), ni idiomas soportados, ni formato de pesos. Tampoco existen descargas ni interacciones registradas en el momento de redactar esta ficha, y la busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: las unicas coincidencias corresponden a dominios institucionales de una liga deportiva regional italiana, sin ninguna conexion con el repositorio.
 
@@ -85,8 +85,8 @@ No disponible. Sin conocer el tamano en parametros, la arquitectura ni la tarea 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vech911/chest
-- Repositorio de pesos: no disponible mas alla de la pagina de HuggingFace indicada.
+- Hugging Face: https://huggingface.co/Vech911/chest
+- Repositorio de pesos: no disponible mas alla de la pagina de Hugging Face indicada.
 - Paper o informe tecnico: no disponible.
 - Blog o articulo de presentacion: no disponible.
 - Repositorio de codigo o demo: no disponible.

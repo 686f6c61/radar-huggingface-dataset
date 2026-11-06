@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`grpeet/bcr-mistral` es un repositorio de modelo alojado en HuggingFace por el usuario `grpeet`, publicado bajo acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargar los pesos. En el momento de redactar esta ficha el repositorio no incluye model card, no declara pipeline, no especifica idiomas y acumula 0 descargas y 0 likes, por lo que no existe informacion publica verificable sobre su contenido real.
+`grpeet/bcr-mistral` es un repositorio de modelo alojado en Hugging Face por el usuario `grpeet`, publicado bajo acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargar los pesos. En el momento de redactar esta ficha el repositorio no incluye model card, no declara pipeline, no especifica idiomas y acumula 0 descargas y 0 likes, por lo que no existe informacion publica verificable sobre su contenido real.
 
 El nombre del repositorio sugiere una derivacion de la familia Mistral, probablemente un ajuste fino (fine-tune) sobre un modelo base de esa familia, pero se trata unicamente de una inferencia a partir del identificador y no de un dato confirmado por el autor. No hay informacion sobre arquitectura, numero de parametros, longitud de contexto, dataset de entrenamiento ni proceso de alineamiento.
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es, por tanto, fundamentalmente evaluativa: sirve pa
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | all-rights-reserved (tag de HuggingFace: `license:other`); acceso gated con aceptacion de condiciones |
+| Licencia | all-rights-reserved (tag de Hugging Face: `license:other`); acceso gated con aceptacion de condiciones |
 | Formato de pesos | no disponible |
 
 ## Arquitectura y entrenamiento
@@ -34,7 +34,7 @@ Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicio
 - Generacion de codigo: no verificable.
 - Tool calling / function calling: no verificable.
 - Capacidades de agente y razonamiento multi-paso: no verificable.
-- Soporte multilingue: no verificable; el campo de idiomas aparece vacio en HuggingFace.
+- Soporte multilingue: no verificable; el campo de idiomas aparece vacio en Hugging Face.
 - Capacidades especiales (modo thinking, vision, audio): no verificable.
 - No existen resultados publicados que permitan atribuir ninguna de estas capacidades al modelo.
 
@@ -79,7 +79,7 @@ La comparativa se incluye solo como marco de referencia: no existe ningun dato d
 
 - Ausencia total de documentacion: no hay model card, paper, blog ni ejemplos de uso, lo que impide evaluar el modelo con un minimo de rigor.
 - Licencia `all-rights-reserved`: no se concede ningun derecho de uso, copia, modificacion ni distribucion; el uso comercial queda prohibido salvo autorizacion expresa del autor.
-- Acceso gated: es necesario aceptar condiciones en HuggingFace, cuyos terminos no se detallan en la informacion disponible.
+- Acceso gated: es necesario aceptar condiciones en Hugging Face, cuyos terminos no se detallan en la informacion disponible.
 - Procedencia no verificada: se desconoce el modelo base exacto, el dataset y el proceso de alineamiento, lo que impide descartar problemas de calidad, contaminacion de benchmarks o sesgos inheridos.
 - Riesgo de alucinacion: no cuantificado; sin evaluaciones publicadas no puede estimarse la tasa de error factico.
 - Idiomas no declarados: no se puede asumir competencia en castellano ni en ningun otro idioma.
@@ -89,5 +89,5 @@ La comparativa se incluye solo como marco de referencia: no existe ningun dato d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/grpeet/bcr-mistral
+- Repositorio en Hugging Face: https://huggingface.co/grpeet/bcr-mistral
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

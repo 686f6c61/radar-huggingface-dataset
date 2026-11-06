@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario XingZhou666 en un repositorio de HuggingFace con licencia MIT. Según la model card, se trata de una versión actualizada de un modelo previo que incorpora mejoras significativas en razonamiento profundo, inferencia lógica y reducción de alucinaciones, además de soporte para function calling. El autor afirma que su rendimiento en tareas de matemáticas, programación y lógica se acerca al de otros modelos líderes, citando por ejemplo una mejora en AIME 2025 del 70 % al 87,5 % de precisión, con un aumento del promedio de tokens de razonamiento de 12K a 23K por pregunta.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario XingZhou666 en un repositorio de Hugging Face con licencia MIT. Según la model card, se trata de una versión actualizada de un modelo previo que incorpora mejoras significativas en razonamiento profundo, inferencia lógica y reducción de alucinaciones, además de soporte para function calling. El autor afirma que su rendimiento en tareas de matemáticas, programación y lógica se acerca al de otros modelos líderes, citando por ejemplo una mejora en AIME 2025 del 70 % al 87,5 % de precisión, con un aumento del promedio de tokens de razonamiento de 12K a 23K por pregunta.
 
 Sin embargo, el repositorio no contiene ningún peso, código ni documentación técnica adicional. El tamaño del repo es de 0.0 GB, no hay archivos publicados y las descargas son cero. La ficha se basa exclusivamente en la información declarada en el README, que carece de detalles sobre arquitectura, número de parámetros, contexto o datos de entrenamiento. Por tanto, cualquier uso práctico del modelo es imposible en la actualidad, ya que no se proporcionan artefactos descargables.
 
@@ -96,6 +96,6 @@ No disponible. Al no conocer la arquitectura, el número de parámetros ni la fa
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/XingZhou666/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/XingZhou666/MyAwesomeModel-TestRepo
 
 No se proporcionan enlaces a papers, blogs, repositorios de código ni demos en la información disponible.

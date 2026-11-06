@@ -97,8 +97,8 @@ El autor indica que en LibriSpeech test-other a 8 kHz el modelo cede 0,30 puntos
 
 | Modelo | Parámetros | Contexto / entrada | WER en dominio telefónico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ozonetg/parakeet-110m-caller-asr | 114,6 M | Audio telefónico 8 kHz remuestreado a 16 kHz | 11,42 % (5 conjuntos públicos, agrupados); 3,35 % en llamadas retenidas del dominio | CC BY 4.0 | HuggingFace, formato `.nemo` |
-| nvidia/parakeet-tdt_ctc-110m (base) | 114,6 M | Audio mono 16 kHz | 14,58 % (agrupado); 9,19 % en llamadas retenidas | No disponible en la información proporcionada | HuggingFace |
+| ozonetg/parakeet-110m-caller-asr | 114,6 M | Audio telefónico 8 kHz remuestreado a 16 kHz | 11,42 % (5 conjuntos públicos, agrupados); 3,35 % en llamadas retenidas del dominio | CC BY 4.0 | Hugging Face, formato `.nemo` |
+| nvidia/parakeet-tdt_ctc-110m (base) | 114,6 M | Audio mono 16 kHz | 14,58 % (agrupado); 9,19 % en llamadas retenidas | No disponible en la información proporcionada | Hugging Face |
 | Sistema anterior: 110m estándar con adaptador de dominio | 114,6 M más adaptador | Audio mono 16 kHz | 14,00 % (agrupado); 8,68 % en llamadas retenidas | No disponible en la información proporcionada | Interno, no público |
 
 No se dispone en la información proporcionada de datos comparativos con otros modelos ASR telefónicos de terceros.
@@ -118,6 +118,6 @@ No se dispone en la información proporcionada de datos comparativos con otros m
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ozonetg/parakeet-110m-caller-asr
+- Hugging Face del modelo: https://huggingface.co/ozonetg/parakeet-110m-caller-asr
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt_ctc-110m
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la información proporcionada.

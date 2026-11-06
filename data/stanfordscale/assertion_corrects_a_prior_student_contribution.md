@@ -78,9 +78,9 @@ No se han publicado en la informacion disponible resultados de benchmarks compar
 
 | Modelo | Tipo | Parametros | Contexto | F1 (clase positiva) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `StanfordSCALE/assertion_corrects_a_prior_student_contribution` | SetFit sobre MPNet-base, clasificacion binaria de una asercion | 109,5 M | no disponible (una intervencion por inferencia) | 0,198 en test (declarado) | no disponible | HuggingFace, libreria `setfit` |
+| `StanfordSCALE/assertion_corrects_a_prior_student_contribution` | SetFit sobre MPNet-base, clasificacion binaria de una asercion | 109,5 M | no disponible (una intervencion por inferencia) | 0,198 en test (declarado) | no disponible | Hugging Face, libreria `setfit` |
 | Clasificador trivial de clase mayoritaria (predice siempre "no") | Linea base | no aplica | no aplica | 0,000 en F1 de clase positiva (derivado de la tasa base del 2,1 %) | no aplica | no aplica |
-| Otros clasificadores de aserciones del conjunto `td` de StanfordSCALE | SetFit sobre el mismo encoder base | ~109,5 M (misma arquitectura) | no disponible | no disponible (varia por asercion) | no disponible | HuggingFace, mismo autor |
+| Otros clasificadores de aserciones del conjunto `td` de StanfordSCALE | SetFit sobre el mismo encoder base | ~109,5 M (misma arquitectura) | no disponible | no disponible (varia por asercion) | no disponible | Hugging Face, mismo autor |
 | Anotadores LLM usados para generar las etiquetas | LLM generativo utilizado como anotador | no disponible | no disponible | no disponible (alfa de Krippendorff 0,504) | no disponible | no disponible |
 
 No se dispone de datos publicados que permitan comparar este clasificador con alternativas equivalentes de codificacion de discurso en aula (por ejemplo, modelos supervisados entrenados sobre el TalkMoves Dataset original con etiquetas humanas). Esa comparacion figura como no disponible.
@@ -93,14 +93,14 @@ No se dispone de datos publicados que permitan comparar este clasificador con al
 - Entrenado unicamente con intervenciones de profesor. El comportamiento sobre habla de estudiantes no ha sido probado.
 - Idioma: solo ingles. Cualquier uso sobre transcripciones en castellano u otros idiomas carece de validacion.
 - Sin contexto conversacional: la entrada es una intervencion aislada, por lo que el modelo no puede resolver referencias a turnos anteriores que si estarian disponibles en la transcripcion completa.
-- Licencia no especificada en la model card ni en los metadatos de HuggingFace: antes de cualquier uso comercial es necesario aclarar los terminos con el autor, y verificar ademas la licencia del modelo base `sentence-transformers/paraphrase-mpnet-base-v2`.
+- Licencia no especificada en la model card ni en los metadatos de Hugging Face: antes de cualquier uso comercial es necesario aclarar los terminos con el autor, y verificar ademas la licencia del modelo base `sentence-transformers/paraphrase-mpnet-base-v2`.
 - Riesgo de alucinacion no aplicable en el sentido generativo, pero si de falsos positivos y falsos negativos con probabilidades mal calibradas en la cola alta de `predict_proba`.
 - Modelo sin descargas ni "likes" en el momento de la consulta, creado y actualizado el 12 de octubre de 2026: no hay evidencia de uso en produccion ni validacion independiente.
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces obtenidos eran contenido no relacionado y se han descartado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_corrects_a_prior_student_contribution
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_corrects_a_prior_student_contribution
 - Dataset de anotaciones: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio original): https://github.com/SumnerLab/TalkMoves

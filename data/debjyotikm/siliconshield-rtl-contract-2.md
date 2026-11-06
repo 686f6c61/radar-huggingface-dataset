@@ -80,9 +80,9 @@ Total: 2510/5589. En dominio (fifo/counter/arbitration): 203/234, con 78/78 en j
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SiliconShield-RTL Contract-2 | 436 M | 1536 | Clasificacion de requisitos RTL (temporal: FIFO, contador, arbitraje) | Apache-2.0 | HuggingFace |
-| SiliconShield-RTL Contract-1 | no disponible | no disponible | Clasificacion de requisitos RTL (guardas, escrituras, control de acceso) | no disponible | HuggingFace |
-| LAYA (convaiinnovations/laya) | no disponible | no disponible | Modelo base en ingles del que deriva | no disponible | HuggingFace |
+| SiliconShield-RTL Contract-2 | 436 M | 1536 | Clasificacion de requisitos RTL (temporal: FIFO, contador, arbitraje) | Apache-2.0 | Hugging Face |
+| SiliconShield-RTL Contract-1 | no disponible | no disponible | Clasificacion de requisitos RTL (guardas, escrituras, control de acceso) | no disponible | Hugging Face |
+| LAYA (convaiinnovations/laya) | no disponible | no disponible | Modelo base en ingles del que deriva | no disponible | Hugging Face |
 
 No se dispone de informacion sobre otros modelos abiertos comparables especializados en seguridad de RTL en la documentacion proporcionada.
 
@@ -99,7 +99,7 @@ No se dispone de informacion sobre otros modelos abiertos comparables especializ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/debjyotikm/siliconshield-rtl-contract-2
+- Modelo en Hugging Face: https://huggingface.co/debjyotikm/siliconshield-rtl-contract-2
 - Contract-1: https://huggingface.co/danieltombay/siliconshield-rtl-contract-1
 - Dataset de benchmark: https://huggingface.co/datasets/danieltombay/siliconshield-rtl-benchmark
 - Modelo base LAYA: https://huggingface.co/convaiinnovations/laya

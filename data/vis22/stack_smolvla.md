@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolVLA (vis22/stack_smolvla) es un modelo de vision-lenguaje-acción (VLA) compacto, con 450.046.176 parámetros, especializado en una única tarea de manipulación robótica: apilar platos sobre un plato azul y volver a la posición de reposo. Lo publica el usuario vis22 sobre la librería LeRobot de HuggingFace y se obtiene por ajuste fino del modelo base lerobot/smolvla_base, que a su vez implementa el método descrito en el artículo arXiv:2506.01844. No es un modelo de lenguaje general: es una política de imitación que consume dos cámaras y el estado del robot, y emite directamente comandos de acción.
+SmolVLA (vis22/stack_smolvla) es un modelo de vision-lenguaje-acción (VLA) compacto, con 450.046.176 parámetros, especializado en una única tarea de manipulación robótica: apilar platos sobre un plato azul y volver a la posición de reposo. Lo publica el usuario vis22 sobre la librería LeRobot de Hugging Face y se obtiene por ajuste fino del modelo base lerobot/smolvla_base, que a su vez implementa el método descrito en el artículo arXiv:2506.01844. No es un modelo de lenguaje general: es una política de imitación que consume dos cámaras y el estado del robot, y emite directamente comandos de acción.
 
 El problema que resuelve es acotado y práctico: convertir un conjunto pequeño de demostraciones teleoperadas (30 episodios, 13.480 fotogramas a 30 FPS) en una política que pueda ejecutarse sobre un robot real de tipo piper_follower con dos cámaras (cam_global y cam_gripper). Su relevancia está en el enfoque: SmolVLA apunta a rendimiento competitivo con coste computacional reducido y despliegue en hardware de consumo, algo poco habitual en el espacio VLA, donde dominan modelos de 3.000 a 7.000 millones de parámetros.
 
@@ -80,11 +80,11 @@ No se dispone de resultados verificados de benchmarks en la información proporc
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vis22/stack_smolvla | 450 M | 2 imagenes 480x640 + estado de 7 dim. (longitud de contexto no disponible) | Politica de apilado para piper_follower | apache-2.0 | Pesos en HuggingFace, libreria lerobot |
-| lerobot/smolvla_base | 450 M (mismo backbone) | Multimodal, vision y lenguaje | Modelo base VLA de proposito general para ajuste fino | apache-2.0 | Pesos en HuggingFace |
-| OpenVLA | Aproximadamente 7 B | Vision y lenguaje, entrada de imagen unica | Manipulacion generalista | No verificada en la informacion disponible | Pesos abiertos en HuggingFace |
+| vis22/stack_smolvla | 450 M | 2 imagenes 480x640 + estado de 7 dim. (longitud de contexto no disponible) | Politica de apilado para piper_follower | apache-2.0 | Pesos en Hugging Face, libreria lerobot |
+| lerobot/smolvla_base | 450 M (mismo backbone) | Multimodal, vision y lenguaje | Modelo base VLA de proposito general para ajuste fino | apache-2.0 | Pesos en Hugging Face |
+| OpenVLA | Aproximadamente 7 B | Vision y lenguaje, entrada de imagen unica | Manipulacion generalista | No verificada en la informacion disponible | Pesos abiertos en Hugging Face |
 | pi0 (Physical Intelligence) | Aproximadamente 3 B | Vision, lenguaje y flujo de acciones | Manipulacion generalista | No verificada en la informacion disponible | Pesos abiertos, ecosistema openpi |
-| Octo | Aproximadamente 93 M | Vision y lenguaje, segun configuracion | Manipulacion generalista | No verificada en la informacion disponible | Pesos abiertos en HuggingFace |
+| Octo | Aproximadamente 93 M | Vision y lenguaje, segun configuracion | Manipulacion generalista | No verificada en la informacion disponible | Pesos abiertos en Hugging Face |
 
 La ventaja estructural de este modelo frente a OpenVLA o pi0 es el tamaño: 450 M frente a miles de millones de parámetros, lo que reduce drásticamente los requisitos de inferencia. Su desventaja es la especialización extrema: solo cubre una tarea, mientras que las alternativas citadas se presentan como políticas generalistas ajustables.
 
@@ -105,7 +105,7 @@ La ventaja estructural de este modelo frente a OpenVLA o pi0 es el tamaño: 450 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vis22/stack_smolvla
+- Modelo en Hugging Face: https://huggingface.co/vis22/stack_smolvla
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/vis22/plates_stack_merged
 - Visualización del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=vis22/plates_stack_merged

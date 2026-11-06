@@ -78,7 +78,7 @@ No hay datos de rendimiento comparativo, por lo que no se puede evaluar objetiva
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/seferovramin/novashop-support-lora
+- Hugging Face: https://huggingface.co/seferovramin/novashop-support-lora
 - Modelo base: https://huggingface.co/unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit
 - Paper de LoRA: https://arxiv.org/abs/2106.09685
 - Paper de Llama 3.1: no disponible (Meta no publico paper oficial, solo el blog: https://ai.meta.com/blog/meta-llama-3-1/)

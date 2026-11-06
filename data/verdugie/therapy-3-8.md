@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Verdugie/Therapy-3.8
+- Modelo en Hugging Face: https://huggingface.co/Verdugie/Therapy-3.8
 - Perfil del autor: https://huggingface.co/Verdugie
 - Datasets del autor: https://huggingface.co/Verdugie/datasets
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

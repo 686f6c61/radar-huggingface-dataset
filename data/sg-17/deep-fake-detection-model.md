@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Deep-fake-detection-model es un modelo publicado en HuggingFace por el usuario SG-17, orientado a la detección de contenido sintético o manipulado (deepfakes). El repositorio es muy reciente (creado en octubre de 2026) y presenta una model card prácticamente vacía: únicamente declara la licencia MIT, sin descripción del modelo, sin detalles de arquitectura y sin instrucciones de uso. El tamaño del repositorio es de unos 0,1 GB, lo que sugiere un modelo de tamaño reducido o archivos auxiliares, aunque no se puede confirmar su contenido real.
+Deep-fake-detection-model es un modelo publicado en Hugging Face por el usuario SG-17, orientado a la detección de contenido sintético o manipulado (deepfakes). El repositorio es muy reciente (creado en octubre de 2026) y presenta una model card prácticamente vacía: únicamente declara la licencia MIT, sin descripción del modelo, sin detalles de arquitectura y sin instrucciones de uso. El tamaño del repositorio es de unos 0,1 GB, lo que sugiere un modelo de tamaño reducido o archivos auxiliares, aunque no se puede confirmar su contenido real.
 
 Dado que no se dispone de documentación técnica, resultados de evaluación ni ejemplos de inferencia, la relevancia práctica de este modelo no puede determinarse con los datos disponibles. Para desarrolladores e investigadores interesados en detección de deepfakes, esta ficha recoge la información verificable del repositorio y señala explícitamente aquello que no ha sido publicado por el autor.
 
@@ -23,7 +23,7 @@ Datos adicionales del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | SG-17/Deep-fake-detection-model |
+| ID en Hugging Face | SG-17/Deep-fake-detection-model |
 | Pipeline tag | no disponible |
 | Tamano del repositorio | 0,1 GB |
 | Descargas | 0 |
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: no disponible. El tamano del repositorio (0,1 GB) sugiere que un modelo ligero podria ejecutarse en GPU de consumo o incluso en CPU, pero no puede confirmarse.
 - GPU recomendadas: no disponible.
 - Consumer GPUs: probablemente suficiente cualquier GPU moderna (por ejemplo, RTX 3060 o superior) si el modelo pesa menos de 0,1 GB en disco, pero sin confirmacion del autor.
-- Opciones de despliegue: no hay instrucciones publicadas. Al no figurar un pipeline tag en HuggingFace, no esta garantizada la compatibilidad directa con `transformers`; puede requerir carga manual de los pesos. Opciones genericas como PyTorch o ONNX Runtime dependeran del formato real de los archivos.
+- Opciones de despliegue: no hay instrucciones publicadas. Al no figurar un pipeline tag en Hugging Face, no esta garantizada la compatibilidad directa con `transformers`; puede requerir carga manual de los pesos. Opciones genericas como PyTorch o ONNX Runtime dependeran del formato real de los archivos.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 | haydendonald/DeepFake-Detector | Deteccion de deepfakes en video | no disponible | Varia segun repo | Model card basica |
 | prithivMLmods/Deep-Fake-Detector-Model | Clasificacion de imagenes reales vs sinteticas | ~200M-400M (segun variante) | Apache-2.0 (segun variante) | Model card con detalles de uso |
 
-Nota: los modelos alternativos citados son referencias genericas de la categoria en HuggingFace; sus detalles concretos deben verificarse en sus respectivas model cards. Para SG-17/Deep-fake-detection-model no existen datos comparables de rendimiento.
+Nota: los modelos alternativos citados son referencias genericas de la categoria en Hugging Face; sus detalles concretos deben verificarse en sus respectivas model cards. Para SG-17/Deep-fake-detection-model no existen datos comparables de rendimiento.
 
 ## Limitaciones y advertencias
 
@@ -93,5 +93,5 @@ Nota: los modelos alternativos citados son referencias genericas de la categoria
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SG-17/Deep-fake-detection-model
+- Hugging Face: https://huggingface.co/SG-17/Deep-fake-detection-model
 - Paper, repositorio de codigo y demos: no disponibles en la informacion proporcionada.

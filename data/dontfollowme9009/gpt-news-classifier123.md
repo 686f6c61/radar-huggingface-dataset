@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dontfollowme9009/gpt-news-classifier123` es un repositorio alojado en HuggingFace cuyo nombre sugiere un clasificador de noticias, pero cuya documentación no aporta ninguna información verificable sobre su naturaleza, tamaño o entrenamiento. La model card es la plantilla genérica autogenerada por HuggingFace al subir un checkpoint con `transformers`: todas las secciones relevantes (descripción del modelo, desarrollador, tipo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación) contienen el marcador `[More Information Needed]` sin sustituir.
+`dontfollowme9009/gpt-news-classifier123` es un repositorio alojado en Hugging Face cuyo nombre sugiere un clasificador de noticias, pero cuya documentación no aporta ninguna información verificable sobre su naturaleza, tamaño o entrenamiento. La model card es la plantilla genérica autogenerada por Hugging Face al subir un checkpoint con `transformers`: todas las secciones relevantes (descripción del modelo, desarrollador, tipo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación) contienen el marcador `[More Information Needed]` sin sustituir.
 
 El repositorio no tiene descargas ni "likes", no declara pipeline de inferencia, licencia ni idiomas, y no publica pesos en un formato documentado. El único dato técnico objetivo es la etiqueta de librería (`transformers`) y una referencia a `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. (2019) sobre el cálculo de emisiones de carbono en *machine learning* y que aparece en la propia plantilla de model card, no a un artículo descriptivo de este modelo.
 
@@ -48,7 +48,7 @@ No es posible recomendar casos de uso concretos sin conocer el tamano, la licenc
 - Etiquetado de datasets para entrenamiento posterior: podria emplearse como anotador automatico y luego revisarse por humanos; la ausencia de licencia impide determinar si el uso comercial de las etiquetas generadas es licito.
 - Monitorizacion de medios y analisis de tendencias: clasificacion por temas o tono a lo largo del tiempo; requiere estabilidad de prediccion y una ventana de contexto suficiente, ambos parametros desconocidos.
 - Investigacion academica sobre clasificacion de texto: util unicamente como punto de comparacion reproducible si se publican los pesos y la configuracion; sin model card completa, la reproducibilidad no esta garantizada.
-- Integracion en un endpoint de HuggingFace Inference Endpoints: el repositorio se declara `endpoints_compatible`, de modo que el despliegue seria tecnicamente posible, pero sin licencia clara ni documentacion de entrada/salida el uso en produccion es desaconsejable.
+- Integracion en un endpoint de Hugging Face Inference Endpoints: el repositorio se declara `endpoints_compatible`, de modo que el despliegue seria tecnicamente posible, pero sin licencia clara ni documentacion de entrada/salida el uso en produccion es desaconsejable.
 
 ## Benchmarks y rendimiento
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La se
 - VRAM estimada para inferencia: no disponible. Sin el numero de parametros ni la precision de los pesos, no es posible calcular el consumo de memoria.
 - GPU recomendadas: no disponible, por la misma razon.
 - Compatibilidad con GPU de consumo: no verificable. No se puede afirmar si cabe en una RTX 3060, RTX 4090 o similar.
-- Opciones de despliegue: el repositorio esta etiquetado como `transformers` y como `endpoints_compatible`, por lo que en principio podria cargarse con la libreria `transformers` y servirse en HuggingFace Inference Endpoints. No hay confirmacion de compatibilidad con vLLM, llama.cpp, Ollama o TGI; llama.cpp y Ollama requeririan pesos en GGUF, formato que no esta declarado.
+- Opciones de despliegue: el repositorio esta etiquetado como `transformers` y como `endpoints_compatible`, por lo que en principio podria cargarse con la libreria `transformers` y servirse en Hugging Face Inference Endpoints. No hay confirmacion de compatibilidad con vLLM, llama.cpp, Ollama o TGI; llama.cpp y Ollama requeririan pesos en GGUF, formato que no esta declarado.
 - Latencia y throughput estimados: no disponibles. No se publican mediciones de tokens por segundo ni tiempos de respuesta.
 
 ## Comparativa con modelos similares
@@ -74,14 +74,14 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 - Riesgo de alucinacion y sesgos: no evaluable, ya que no se documentan datos de entrenamiento, tecnicas de alineacion ni analisis de sesgo.
 - Idiomas: no declarados. No se puede asumir soporte de castellano ni de ninguna otra lengua.
 - Fechas anomalas: los metadatos indican creacion y actualizacion el 2026-09-26, con un segundo de diferencia. Esta incoherencia temporal sugiere un repositorio de prueba, un error de plataforma o un artefacto generado automaticamente; refuerza la necesidad de tratarlo con cautela.
-- Referencia bibliografica enganosa: la etiqueta `arxiv:1910.09700` apunta al articulo de Lacoste et al. (2019) sobre emisiones de carbono, citado en la plantilla por defecto de HuggingFace. No es el articulo del modelo y no aporta informacion tecnica sobre el.
+- Referencia bibliografica enganosa: la etiqueta `arxiv:1910.09700` apunta al articulo de Lacoste et al. (2019) sobre emisiones de carbono, citado en la plantilla por defecto de Hugging Face. No es el articulo del modelo y no aporta informacion tecnica sobre el.
 - Resultados de busqueda web no concluyentes: las consultas realizadas no devolvieron ninguna fuente tecnica relacionada con este repositorio; los resultados obtenidos eran contenido no relacionado y sin valor documental.
 - Limitacion de contexto y de formato de entrada: no se especifican ni la ventana de contexto ni el esquema de entrada esperado, de modo que no se puede garantizar que el modelo acepte secuencias largas.
 - Recomendacion operativa: no integrar este modelo en produccion sin antes inspeccionar `config.json`, el tamano de los archivos de pesos y el tokenizador directamente en el repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dontfollowme9009/gpt-news-classifier123
+- Repositorio en Hugging Face: https://huggingface.co/dontfollowme9009/gpt-news-classifier123
 - Articulo referenciado por la etiqueta del repositorio (Lacoste et al., 2019, sobre emisiones de carbono, citado por la plantilla, no por el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning mencionada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

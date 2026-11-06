@@ -45,7 +45,7 @@ El entrenamiento se ha orientado a la adherencia a instrucciones (IFEval 88,5 %)
 
 ## Benchmarks y rendimiento
 
-El autor declara los siguientes resultados en el model-index de HuggingFace (no verificados de forma independiente):
+El autor declara los siguientes resultados en el model-index de Hugging Face (no verificados de forma independiente):
 
 | Benchmark | Métrica | Valor |
 |---|---|---|
@@ -76,7 +76,7 @@ No se dispone de datos comparativos publicados con otros modelos de tamaño simi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Zyrabit-IA/zyra-guide-Q5_K_M
-- Organización Zyrabit-IA en HuggingFace: https://huggingface.co/Zyrabit-IA
+- Repositorio Hugging Face: https://huggingface.co/Zyrabit-IA/zyra-guide-Q5_K_M
+- Organización Zyrabit-IA en Hugging Face: https://huggingface.co/Zyrabit-IA
 - Organización Zyrabit en GitHub: https://github.com/Zyrabit-tech
 - Documentación oficial de Zyrabit: https://docs.zyrabit.com/docs/

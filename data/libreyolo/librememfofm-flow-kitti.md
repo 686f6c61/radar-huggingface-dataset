@@ -77,7 +77,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibreYOLO/LibreMEMFOFm-flow-kitti
+- Modelo en Hugging Face: https://huggingface.co/LibreYOLO/LibreMEMFOFm-flow-kitti
 - Modelo base: https://huggingface.co/egorchistov/optical-flow-MEMFOF-Tartan-T-TSKH-kitti
 - Repositorio de código original (MEMFOF): https://github.com/msu-video-group/memfof
 - Repositorio de LibreYOLO: https://github.com/LibreYOLO/libreyolo

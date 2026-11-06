@@ -91,6 +91,6 @@ La comparacion cuantitativa de calidad (WER) no esta disponible en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masahiroid/kotoba-whisper-v2.0-coreml
+- Modelo en Hugging Face: https://huggingface.co/masahiroid/kotoba-whisper-v2.0-coreml
 - Modelo base (kotoba-whisper-v2.0): https://huggingface.co/kotoba-tech/kotoba-whisper-v2.0
 - La busqueda web realizada no devolvio enlaces relevantes para este modelo.

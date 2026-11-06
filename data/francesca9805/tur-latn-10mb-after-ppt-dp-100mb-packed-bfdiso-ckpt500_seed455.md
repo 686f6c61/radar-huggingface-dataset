@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/tur-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino de tipo SFT (supervised fine-tuning) sobre el checkpoint base `francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455`, desarrollado por el usuario de HuggingFace francesca9805 (Francesca Padovani, Universidad de Groningen, segun el enlace de Weights & Biases de la model card). Por la etiqueta `gpt2` del repositorio y el uso de la libreria Transformers, se trata de un transformer decoder-only de la familia GPT-2 con 39.087.104 parametros totales, una escala muy reducida (aproximadamente 39M) que lo situa por debajo de GPT-2 small (124M).
+El modelo `francesca9805/tur-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino de tipo SFT (supervised fine-tuning) sobre el checkpoint base `francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455`, desarrollado por el usuario de Hugging Face francesca9805 (Francesca Padovani, Universidad de Groningen, segun el enlace de Weights & Biases de la model card). Por la etiqueta `gpt2` del repositorio y el uso de la libreria Transformers, se trata de un transformer decoder-only de la familia GPT-2 con 39.087.104 parametros totales, una escala muy reducida (aproximadamente 39M) que lo situa por debajo de GPT-2 small (124M).
 
 El nombre del modelo indica que forma parte de una bateria de experimentos de investigacion sobre tokenizadores y datos de entrenamiento en lengua turca en escritura latina (`tur-latn`), con variantes que combinan 10 MB de datos iniciales y 100 MB de datos empaquetados, y entrenamiento sobre un unico idioma. El sufijo `after-ppt` sugiere que este checkpoint se ha entrenado despues de una fase previa (pre-training o post-training) sobre el modelo base, y `ckpt500_seed455` hace referencia al checkpoint 500 y a la semilla 455 del experimento.
 
@@ -25,7 +25,7 @@ Otros datos de interes: el repositorio ocupa 2,6 GB, la fecha de creacion regist
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only de tipo GPT-2, con 39,09 millones de parametros. No se dispone de informacion sobre el numero de capas, dimensiones ocultas, numero de cabezas de atencion ni funcion de activacion, mas alla de lo que implica la etiqueta `gpt2` de HuggingFace. El modelo se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL en su version 0.23.0, sobre el checkpoint base `tur-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455`.
+La arquitectura es un transformer decoder-only de tipo GPT-2, con 39,09 millones de parametros. No se dispone de informacion sobre el numero de capas, dimensiones ocultas, numero de cabezas de atencion ni funcion de activacion, mas alla de lo que implica la etiqueta `gpt2` de Hugging Face. El modelo se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL en su version 0.23.0, sobre el checkpoint base `tur-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455`.
 
 El pipeline de entrenamiento registrado utiliza Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1. El experimento esta vinculado a un run de Weights & Biases en el proyecto `new-tokenizers` de la entidad `f-padovani-university-of-groningen`, lo que confirma que se enmarca en una investigacion sobre tokenizacion y curriculums de datos. No se especifican el volumen de tokens de la fase SFT, la composicion del dataset de instrucciones, ni si se aplicaron tecnicas adicionales como DPO, RLHF o decodificacion especulativa. Tampoco se documentan innovaciones tecnicas mas alla del propio fine-tuning supervisado.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/tur-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455 | 39,09M | no disponible | no publicado | no disponible | Pesos abiertos en HuggingFace |
-| francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 (modelo base de la misma familia) | no disponible | no disponible | no publicado | no disponible | Pesos abiertos en HuggingFace |
-| francesca9805/eng-latn-10mb-after-ppt-Dp-100mb-packed-ckpt500_seed3407 (variante en ingles) | 39M | no disponible | no publicado | no disponible | Pesos abiertos en HuggingFace |
-| francesca9805/ita-latn-100mb-after-ppt-Dp-10mb-packed-ckpt500_seed3407 (variante en italiano) | no disponible | no disponible | no publicado | no disponible | Pesos abiertos en HuggingFace |
+| francesca9805/tur-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455 | 39,09M | no disponible | no publicado | no disponible | Pesos abiertos en Hugging Face |
+| francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 (modelo base de la misma familia) | no disponible | no disponible | no publicado | no disponible | Pesos abiertos en Hugging Face |
+| francesca9805/eng-latn-10mb-after-ppt-Dp-100mb-packed-ckpt500_seed3407 (variante en ingles) | 39M | no disponible | no publicado | no disponible | Pesos abiertos en Hugging Face |
+| francesca9805/ita-latn-100mb-after-ppt-Dp-10mb-packed-ckpt500_seed3407 (variante en italiano) | no disponible | no disponible | no publicado | no disponible | Pesos abiertos en Hugging Face |
 | GPT-2 small (referencia de la misma arquitectura) | 124M | 1024 tokens (referencia general) | Ampliamente evaluado en la literatura | MIT (referencia general) | Pesos abiertos |
 
 La comparacion con modelos de la misma categoria fuera de esta familia no es posible con la informacion disponible: no hay benchmarks publicados que permitan situar el modelo frente a alternativas.
@@ -85,7 +85,7 @@ La comparacion con modelos de la misma categoria fuera de esta familia no es pos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tur-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tur-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/hfg7mgs3
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -74,7 +74,7 @@ No disponible. Assembly Bite no es un modelo de lenguaje comparable con LLMs com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Snapkitty/assembly-bite
+- Repositorio Hugging Face: https://huggingface.co/Snapkitty/assembly-bite
 - Repositorio GitHub: https://github.com/SNAPKITTYWEST/assembly-bite
-- Organización Snapkitty en HuggingFace: https://huggingface.co/Snapkitty
+- Organización Snapkitty en Hugging Face: https://huggingface.co/Snapkitty
 - Búsqueda de modelos Snapkitty: https://huggingface.co/models?other=snapkitty

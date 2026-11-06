@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-s1_qwen3_gpt2_sft` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995. Segun los metadatos del repositorio, cuenta con 1.414.111.232 parametros (aproximadamente 1,41 mil millones) almacenados en formato safetensors, con un tamano de repositorio de 2,8 GB. La ficha no incluye pipeline declarado, idiomas soportados ni una descripcion funcional del modelo, y el acceso esta restringido (gated), por lo que es necesario aceptar condiciones en la plataforma antes de descargarlo.
+`alfred8995/r17-bk-s1_qwen3_gpt2_sft` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995. Segun los metadatos del repositorio, cuenta con 1.414.111.232 parametros (aproximadamente 1,41 mil millones) almacenados en formato safetensors, con un tamano de repositorio de 2,8 GB. La ficha no incluye pipeline declarado, idiomas soportados ni una descripcion funcional del modelo, y el acceso esta restringido (gated), por lo que es necesario aceptar condiciones en la plataforma antes de descargarlo.
 
 Los tags disponibles (`qwen3`, `safetensors`, `license:other`) y el propio nombre del repositorio sugieren una base de la familia Qwen3 sometida a un proceso de ajuste supervisado (SFT, por las siglas en el identificador), con alguna referencia a GPT-2 que no queda aclarada en la informacion proporcionada. No obstante, no hay documentacion tecnica que confirme la arquitectura exacta, el tokenizador, la longitud de contexto ni la composicion del dataset de entrenamiento.
 
@@ -80,7 +80,7 @@ Nota: los datos de los modelos alternativos provienen de sus fichas publicas y d
 
 - Ausencia total de model card: no se documentan arquitectura, datos de entrenamiento, tokenizador, plantilla de prompt ni limitaciones conocidas.
 - Licencia "other" sin texto visible: no queda claro si se permite uso comercial, modificacion o redistribucion; es imprescindible contactar con el autor antes de cualquier uso en produccion.
-- Acceso restringido (gated): la descarga requiere aceptar condiciones en HuggingFace, lo que anade friccion a la reproducibilidad y a la integracion en CI/CD.
+- Acceso restringido (gated): la descarga requiere aceptar condiciones en Hugging Face, lo que anade friccion a la reproducibilidad y a la integracion en CI/CD.
 - Cero descargas y cero likes: no hay evidencia de validacion por parte de la comunidad ni de que el modelo haya sido probado fuera del entorno del autor.
 - Fecha de creacion anomala (2026-10-23): el metadato es posterior a la fecha actual, lo que sugiere un posible error de configuracion o de reloj; conviene tratarlo con cautela.
 - Riesgo de alucinacion: inherente a los modelos de lenguaje de este tamano, agravado por la falta de evaluaciones y de datos sobre el alineamiento.
@@ -92,5 +92,5 @@ Nota: los datos de los modelos alternativos provienen de sus fichas publicas y d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r17-bk-s1_qwen3_gpt2_sft
+- Hugging Face: https://huggingface.co/alfred8995/r17-bk-s1_qwen3_gpt2_sft
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, papers, blogs, repositorios o demos asociados. Los resultados devueltos por la busqueda no guardan relacion con el modelo.

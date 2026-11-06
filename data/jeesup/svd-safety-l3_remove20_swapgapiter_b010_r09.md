@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l3_remove20_swapgapiter_b010_r09` es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace, derivado de `meta-llama/Meta-Llama-3-8B-Instruct`. El modelo parte de una compresión SVD-LLM que elimina el 20,02% de los parámetros densos de las proyecciones (dejando el 80,0%), y después aplica 9 de las 10 rondas previstas de una rutina de edición iterativa denominada "swap neutro en parámetros", con un presupuesto de restauración del 1,000% de los parámetros densos repartido en fragmentos del 0,100% por ronda.
+`svd-safety-l3_remove20_swapgapiter_b010_r09` es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face, derivado de `meta-llama/Meta-Llama-3-8B-Instruct`. El modelo parte de una compresión SVD-LLM que elimina el 20,02% de los parámetros densos de las proyecciones (dejando el 80,0%), y después aplica 9 de las 10 rondas previstas de una rutina de edición iterativa denominada "swap neutro en parámetros", con un presupuesto de restauración del 1,000% de los parámetros densos repartido en fragmentos del 0,100% por ronda.
 
 La relevancia del artefacto es metodológica, no de producto: forma parte de un estudio sobre cómo la compresión por SVD degrada el comportamiento de seguridad de un modelo alineado y qué regla de selección de componentes (`gap_iter`, en este caso) repara mejor ese daño. El autor es explícito al señalar que cada celda de la rejilla experimental es un sujeto de estudio y no un asistente desplegable.
 
@@ -92,10 +92,10 @@ Los datos de las alternativas provienen de su documentación pública; la model 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `svd-safety-l3_remove20_swapgapiter_b010_r09` | 8,03B (tras SVD al 80,0% de las proyecciones y swap del 1,0%) | 8192 (heredado) | Meta Llama 3 Community License | HuggingFace, 0 descargas, 0 likes | Artefacto de investigacion, no apto como asistente general |
-| `meta-llama/Meta-Llama-3-8B-Instruct` | 8,03B densos | 8192 | Meta Llama 3 Community License | HuggingFace, muy desplegado | Modelo base sin comprimir; referencia de utilidad y seguridad |
-| `meta-llama/Llama-3.1-8B-Instruct` | 8,03B densos | 128000 | Meta Llama 3.1 Community License | HuggingFace, muy desplegado | Alternativa mas reciente con contexto mucho mayor y soporte de tool calling documentado |
-| `mistralai/Mistral-7B-Instruct-v0.3` | 7,25B densos | 32768 | Apache 2.0 | HuggingFace, muy desplegado | Licencia permisiva y contexto amplio; eleccion habitual cuando la licencia Llama es un obstaculo |
+| `svd-safety-l3_remove20_swapgapiter_b010_r09` | 8,03B (tras SVD al 80,0% de las proyecciones y swap del 1,0%) | 8192 (heredado) | Meta Llama 3 Community License | Hugging Face, 0 descargas, 0 likes | Artefacto de investigacion, no apto como asistente general |
+| `meta-llama/Meta-Llama-3-8B-Instruct` | 8,03B densos | 8192 | Meta Llama 3 Community License | Hugging Face, muy desplegado | Modelo base sin comprimir; referencia de utilidad y seguridad |
+| `meta-llama/Llama-3.1-8B-Instruct` | 8,03B densos | 128000 | Meta Llama 3.1 Community License | Hugging Face, muy desplegado | Alternativa mas reciente con contexto mucho mayor y soporte de tool calling documentado |
+| `mistralai/Mistral-7B-Instruct-v0.3` | 7,25B densos | 32768 | Apache 2.0 | Hugging Face, muy desplegado | Licencia permisiva y contexto amplio; eleccion habitual cuando la licencia Llama es un obstaculo |
 
 ## Limitaciones y advertencias
 
@@ -111,7 +111,7 @@ Los datos de las alternativas provienen de su documentación pública; la model 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r09
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r09
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia y política de uso: los ficheros `LICENSE` y `USE_POLICY.md` incluidos en el propio repositorio del modelo
 - Paper de SVD-LLM (método de compresión citado por el autor): no disponible en los resultados de búsqueda proporcionados

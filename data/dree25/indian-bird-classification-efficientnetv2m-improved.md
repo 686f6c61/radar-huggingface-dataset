@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `dree25/indian-bird-classification-efficientnetv2m-improved` es un clasificador de imágenes publicado en HuggingFace por el usuario dree25, orientado a la identificación de aves del subcontinente indio. Se basa en la arquitectura EfficientNetV2-M, una red neuronal convolucional (CNN) de la familia EfficientNetV2 desarrollada originalmente por Google Research, reutilizada aquí como backbone para una tarea de clasificación supervisada de especies. No se trata de un modelo generativo ni de un modelo de lenguaje: es un modelo de visión por computador para clasificación de imágenes.
+El modelo `dree25/indian-bird-classification-efficientnetv2m-improved` es un clasificador de imágenes publicado en Hugging Face por el usuario dree25, orientado a la identificación de aves del subcontinente indio. Se basa en la arquitectura EfficientNetV2-M, una red neuronal convolucional (CNN) de la familia EfficientNetV2 desarrollada originalmente por Google Research, reutilizada aquí como backbone para una tarea de clasificación supervisada de especies. No se trata de un modelo generativo ni de un modelo de lenguaje: es un modelo de visión por computador para clasificación de imágenes.
 
-La información pública disponible es extremadamente limitada. La model card del autor no contiene más que la declaración de licencia Apache 2.0, sin descripción del dataset de entrenamiento, número de clases, resolución de entrada, métricas de validación ni procedimiento de fine-tuning. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no declara pipeline de HuggingFace ni idiomas soportados.
+La información pública disponible es extremadamente limitada. La model card del autor no contiene más que la declaración de licencia Apache 2.0, sin descripción del dataset de entrenamiento, número de clases, resolución de entrada, métricas de validación ni procedimiento de fine-tuning. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no declara pipeline de Hugging Face ni idiomas soportados.
 
 Por tanto, esta ficha debe interpretarse como una descripción estructural del modelo a partir de su nombre, arquitectura base y licencia, marcando explícitamente como "no disponible" todo aquello que el autor no ha publicado. Es relevante únicamente como punto de partida para quien quiera evaluar o reutilizar un clasificador de aves indias, y requiere verificación empírica por parte del usuario antes de cualquier uso en producción.
 
@@ -74,5 +74,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dree25/indian-bird-classification-efficientnetv2m-improved
+- Hugging Face: https://huggingface.co/dree25/indian-bird-classification-efficientnetv2m-improved
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo concreto.

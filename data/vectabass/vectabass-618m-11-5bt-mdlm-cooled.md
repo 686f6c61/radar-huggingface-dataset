@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparables publicados para este modelo, po
 - El ELBO negativo es una cota superior de la log-verosimilitud negativa y no es directamente comparable con la entropía cruzada de un modelo AR.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-618m-11.5bt-mdlm-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-618m-11.5bt-mdlm-cooled
 - Repositorio de datos (referenciado en la model card): `DATA.md` dentro del repositorio del modelo
 - Dataset HuggingFaceFW/fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset HuggingFaceFW/fineweb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

@@ -92,8 +92,8 @@ No se dispone de datos tecnicos suficientes para comparar con modelos de la mism
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/ReadyArt/Wicked-Tutu-31B-v2.0
+- Repositorio Hugging Face del modelo: https://huggingface.co/ReadyArt/Wicked-Tutu-31B-v2.0
 - Repositorio GGUF de la variante v0.1: https://huggingface.co/ReadyArt/Wicked-Tutu-31B-v0.1-GGUF
-- Perfil del autor en HuggingFace: https://huggingface.co/ReadyArt
+- Perfil del autor en Hugging Face: https://huggingface.co/ReadyArt
 - Perfil del autor en BenchmarkList: https://benchmarklist.com/providers/readyart/
 - Anuncio de la v0.1 GGUF en X: https://x.com/HuggingModels/status/2111605935903060063

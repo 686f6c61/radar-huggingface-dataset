@@ -76,4 +76,4 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: [DrinkIcedT/roberta-large_MBTI_P_MBTI_agg_balanced_25](https://huggingface.co/DrinkIcedT/roberta-large_MBTI_P_MBTI_agg_balanced_25)
+- Repositorio Hugging Face: [DrinkIcedT/roberta-large_MBTI_P_MBTI_agg_balanced_25](https://huggingface.co/DrinkIcedT/roberta-large_MBTI_P_MBTI_agg_balanced_25)

@@ -68,8 +68,8 @@ No se dispone de datos de rendimiento del modelo ni de alternativas directamente
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Zils mini b2 (este) | 4,54 B | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| WangSenQWQ/Senova-4B (base) | no disponible (origen de los pesos) | no disponible | no disponible en esta ficha | HuggingFace |
+| Zils mini b2 (este) | 4,54 B | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| WangSenQWQ/Senova-4B (base) | no disponible (origen de los pesos) | no disponible | no disponible en esta ficha | Hugging Face |
 | Alternativas de ~4 B | no disponible | no disponible | no disponible | no disponible |
 
 No se conocen modelos comparables adicionales con datos verificables en la informacion disponible.
@@ -86,6 +86,6 @@ No se conocen modelos comparables adicionales con datos verificables en la infor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bboldpilot/zils-mini-b2
+- Repositorio Hugging Face: https://huggingface.co/bboldpilot/zils-mini-b2
 - Modelo base: https://huggingface.co/WangSenQWQ/Senova-4B
 - Revision del modelo base utilizada: e0eb092f25f786aeb04fae54800b173ac03616c9

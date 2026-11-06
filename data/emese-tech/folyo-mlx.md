@@ -89,6 +89,6 @@ Patak y Csermely también pertenecen al mismo autor y comparten el mismo benchma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/emese-tech/folyo-mlx
+- Repositorio Hugging Face: https://huggingface.co/emese-tech/folyo-mlx
 - Modelo base EuroLLM-22B: https://huggingface.co/utter-project/EuroLLM-22B
-- Perfil del autor en HuggingFace: https://huggingface.co/emese-tech
+- Perfil del autor en Hugging Face: https://huggingface.co/emese-tech

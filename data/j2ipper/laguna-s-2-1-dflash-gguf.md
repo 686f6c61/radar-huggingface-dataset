@@ -96,7 +96,7 @@ No se dispone de informacion sobre otros drafters comparables (por ejemplo, EAGL
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/j2ipper/Laguna-S-2.1-DFlash-GGUF
+- Repositorio Hugging Face: https://huggingface.co/j2ipper/Laguna-S-2.1-DFlash-GGUF
 - Modelo base (drafter original): https://huggingface.co/poolside/Laguna-S-2.1-DFlash
 - Modelo objetivo Laguna-S-2.1: https://huggingface.co/poolside/Laguna-S-2.1
 - GGUF oficiales de poolside: https://huggingface.co/poolside/Laguna-S-2.1-GGUF

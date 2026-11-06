@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Formato | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| beshkenadze/gliner2.5-multi-onnx | ONNX (2 grafos, fp16) | GLiNER2 + mDeBERTa-v3-base | no disponible; fragmentos de ~120 palabras recomendados | Apache 2.0 | HuggingFace, orientado a onnxruntime-web |
-| fastino/gliner2.5-multi-v1 | PyTorch | GLiNER2 + mDeBERTa-v3-base | no disponible en la informacion proporcionada | Apache 2.0 | HuggingFace (modelo base del anterior) |
+| beshkenadze/gliner2.5-multi-onnx | ONNX (2 grafos, fp16) | GLiNER2 + mDeBERTa-v3-base | no disponible; fragmentos de ~120 palabras recomendados | Apache 2.0 | Hugging Face, orientado a onnxruntime-web |
+| fastino/gliner2.5-multi-v1 | PyTorch | GLiNER2 + mDeBERTa-v3-base | no disponible en la informacion proporcionada | Apache 2.0 | Hugging Face (modelo base del anterior) |
 | Otras alternativas de extraccion (spaCy NER, GLiNER clasico, LLM con function calling) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion relevante disponible es la del propio modelo con su base: el export ONNX conserva la arquitectura y los pesos del modelo original (verificado con diferencias de probabilidad de hasta 0,01 en fp16), anade la division en dos grafos para poder ejecutarse en navegador y renuncia a la cuantizacion int8. No se dispone de datos comparativos de rendimiento frente a otras librerias de extraccion.
@@ -95,7 +95,7 @@ La comparacion relevante disponible es la del propio modelo con su base: el expo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/beshkenadze/gliner2.5-multi-onnx
+- Modelo en Hugging Face: https://huggingface.co/beshkenadze/gliner2.5-multi-onnx
 - Modelo base: https://huggingface.co/fastino/gliner2.5-multi-v1
 - Repositorio form-pilot: https://github.com/beshkenadze/form-pilot
 - Codigo de extraccion (SchemaTransformer y utilidades): https://github.com/beshkenadze/form-pilot/tree/main/packages/extract

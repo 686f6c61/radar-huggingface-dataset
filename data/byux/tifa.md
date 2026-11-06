@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Tifa es un modelo publicado en HuggingFace por el usuario `byux` con el identificador `byux/Tifa`. La información disponible en el repositorio es mínima: no se especifica arquitectura, tamaño, longitud de contexto, licencia ni idiomas soportados. El tamaño del repositorio es de 0.0 GB, lo que sugiere que no se han subido pesos o que el repositorio está vacío. En el momento de la consulta, el modelo no tiene descargas y solo cuenta con un like.
+Tifa es un modelo publicado en Hugging Face por el usuario `byux` con el identificador `byux/Tifa`. La información disponible en el repositorio es mínima: no se especifica arquitectura, tamaño, longitud de contexto, licencia ni idiomas soportados. El tamaño del repositorio es de 0.0 GB, lo que sugiere que no se han subido pesos o que el repositorio está vacío. En el momento de la consulta, el modelo no tiene descargas y solo cuenta con un like.
 
 No es posible determinar qué problema resuelve, cómo fue entrenado ni cuál es su relevancia actual, ya que no existe documentación técnica asociada. Cualquier evaluación o uso del modelo requeriría primero verificar la existencia de pesos y especificaciones en el repositorio.
 

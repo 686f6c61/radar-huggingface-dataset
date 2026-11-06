@@ -75,5 +75,5 @@ No se dispone de informacion comparativa con otros modelos de NER en portugues (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-paramopama-seed3407
+- Repositorio Hugging Face: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-paramopama-seed3407
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

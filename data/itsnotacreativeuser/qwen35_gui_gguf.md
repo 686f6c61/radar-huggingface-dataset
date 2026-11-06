@@ -87,7 +87,7 @@ Como categoria de referencia, los modelos con los que se compararia son las fami
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/itsnotacreativeuser/qwen35_gui_gguf
+- Repositorio en Hugging Face: https://huggingface.co/itsnotacreativeuser/qwen35_gui_gguf
 - Unsloth (herramienta citada para el entrenamiento y la conversion a GGUF): https://github.com/unslothai/unsloth
 - llama.cpp (runtime implicito en los comandos `llama-cli` y `llama-mtmd-cli` de la model card; no se enlaza en la ficha original): no disponible en la informacion proporcionada
 - Paper, blog o demo oficial: no disponible

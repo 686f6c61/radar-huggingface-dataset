@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Empero-ai-Qwen3.8-35B-A3B-Distill-MTPLX es un modelo de lenguaje publicado por el usuario shunya1810 en HuggingFace, construido como una variante de predicción multi-token (multi-token prediction) orientada a ejecución local en Apple Silicon mediante MLX. El modelo se ha "forjado" con la herramienta MTPLX Forge a partir del checkpoint `empero-ai/Qwen3.8-35B-A3B-Distill`, y su propósito declarado es acelerar la decodificación frente a una línea base autorregresiva.
+Empero-ai-Qwen3.8-35B-A3B-Distill-MTPLX es un modelo de lenguaje publicado por el usuario shunya1810 en Hugging Face, construido como una variante de predicción multi-token (multi-token prediction) orientada a ejecución local en Apple Silicon mediante MLX. El modelo se ha "forjado" con la herramienta MTPLX Forge a partir del checkpoint `empero-ai/Qwen3.8-35B-A3B-Distill`, y su propósito declarado es acelerar la decodificación frente a una línea base autorregresiva.
 
 El repositorio contiene 35.107.180.016 parámetros totales (unos 35,1 mil millones) en formato safetensors y pesos cuantizados a 4 bits, con un tamaño de repositorio de 22,1 GB. La etiqueta de arquitectura `qwen3_5_moe` indica que se trata de un transformer de mezcla de expertos (MoE) derivado de la familia Qwen3.5, y el sufijo A3B del nombre sugiere del orden de 3.000 millones de parámetros activos por token, aunque este dato no está confirmado en la documentación disponible.
 
@@ -101,7 +101,7 @@ La diferencia principal del modelo analizado no está en la arquitectura base, s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shunya1810/empero-ai-Qwen3.8-35B-A3B-Distill-MTPLX
+- Modelo en Hugging Face: https://huggingface.co/shunya1810/empero-ai-Qwen3.8-35B-A3B-Distill-MTPLX
 - Herramienta MTPLX (MTPLX Forge): https://github.com/youssofal/MTPLX
 - Modelo base citado en la model card: `empero-ai/Qwen3.8-35B-A3B-Distill` (no se ha proporcionado URL verificada)
 - Fichero de verificación del runtime: `mtplx_runtime.json`, incluido en el repositorio

@@ -100,7 +100,7 @@ En benchmarks, el modelo base supera a esta variante en MMLU Pro (43,12 frente a
 
 ## Enlaces
 
-- Repositorio en HuggingFace de esta ficha: https://huggingface.co/filippovg199/Qwen2.5-7B-Instruct-abliterated-v2
+- Repositorio en Hugging Face de esta ficha: https://huggingface.co/filippovg199/Qwen2.5-7B-Instruct-abliterated-v2
 - Repositorio original de la variante abliterated-v2: https://huggingface.co/huihui-ai/Qwen2.5-7B-Instruct-abliterated-v2
 - Version abliterated anterior: https://huggingface.co/huihui-ai/Qwen2.5-7B-Instruct-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`shengxing123456/teshuaihaozhe` es un repositorio de modelo alojado en HuggingFace que, en el momento de la consulta, no contiene información técnica alguna sobre el modelo en sí. La model card publicada es la plantilla genérica por defecto de HuggingFace (`huggingface_hub/templates/modelcard_template.md`), con todos los campos marcados como `[More Information Needed]`, incluidos el tipo de modelo, los idiomas, el desarrollador, los datos de entrenamiento y los resultados de evaluación. No se declara arquitectura, número de parámetros, longitud de contexto ni formato de pesos.
+`shengxing123456/teshuaihaozhe` es un repositorio de modelo alojado en Hugging Face que, en el momento de la consulta, no contiene información técnica alguna sobre el modelo en sí. La model card publicada es la plantilla genérica por defecto de Hugging Face (`huggingface_hub/templates/modelcard_template.md`), con todos los campos marcados como `[More Information Needed]`, incluidos el tipo de modelo, los idiomas, el desarrollador, los datos de entrenamiento y los resultados de evaluación. No se declara arquitectura, número de parámetros, longitud de contexto ni formato de pesos.
 
-Los únicos metadatos disponibles son la licencia declarada (Apache 2.0), el tag `region:us`, el tag `arxiv:1910.09700` y la ausencia total de actividad en el repositorio: 0 descargas y 0 likes desde su creación el 27 de octubre de 2026 hasta su última actualización el mismo día. El tag arXiv 1910.09700 corresponde a Lacoste et al. (2019), el artículo sobre estimación de emisiones de carbono que la plantilla de HuggingFace incluye por defecto en la sección de impacto ambiental; no es un paper asociado al modelo ni describe su metodología.
+Los únicos metadatos disponibles son la licencia declarada (Apache 2.0), el tag `region:us`, el tag `arxiv:1910.09700` y la ausencia total de actividad en el repositorio: 0 descargas y 0 likes desde su creación el 27 de octubre de 2026 hasta su última actualización el mismo día. El tag arXiv 1910.09700 corresponde a Lacoste et al. (2019), el artículo sobre estimación de emisiones de carbono que la plantilla de Hugging Face incluye por defecto en la sección de impacto ambiental; no es un paper asociado al modelo ni describe su metodología.
 
 Por tanto, esta ficha no puede caracterizar el modelo más allá de lo administrativo. Cualquier dato técnico que se añada sin verificación sería especulativo. Se recomienda tratar el repositorio como un artefacto sin documentar y no como un modelo evaluable, y consultar directamente los archivos del repositorio (pesos, tokenizador, configuración) antes de cualquier uso.
 
@@ -76,7 +76,7 @@ No disponible. No se puede establecer una categoría de comparación (tamaño, t
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card es la plantilla por defecto de HuggingFace sin ningún campo completado, lo que impide auditar el modelo.
+- Documentación inexistente: la model card es la plantilla por defecto de Hugging Face sin ningún campo completado, lo que impide auditar el modelo.
 - Imposibilidad de verificar el contenido: no se ha confirmado que el repositorio contenga pesos, tokenizador o configuración utilizables; podría tratarse de un repositorio vacío o de un artefacto de prueba.
 - Riesgo de alucinación y sesgos: desconocidos, al no existir información sobre datos de entrenamiento ni sobre evaluaciones de seguridad o sesgo.
 - Limitaciones de contexto e idioma: desconocidas; el campo de idiomas de los metadatos está vacío.
@@ -86,8 +86,8 @@ No disponible. No se puede establecer una categoría de comparación (tamaño, t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shengxing123456/teshuaihaozhe
-- Plantilla de model card de HuggingFace utilizada sin modificar: https://github.com/huggingface/huggingface_hub/blob/main/src/huggingface_hub/templates/modelcard_template.md
+- Repositorio en Hugging Face: https://huggingface.co/shengxing123456/teshuaihaozhe
+- Plantilla de model card de Hugging Face utilizada sin modificar: https://github.com/huggingface/huggingface_hub/blob/main/src/huggingface_hub/templates/modelcard_template.md
 - Referencia del tag arXiv (Lacoste et al., 2019, sobre emisiones de carbono, incluida por defecto en la plantilla): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact
 - Paper, blog, repositorio de código o demo del modelo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SAI-for-VinFast-FP16_375M es un checkpoint de generación de texto de 375.194.624 parámetros publicado por el usuario thongbuind en HuggingFace, orientado a tareas de asistente virtual a bordo de vehículos VinFast. El modelo se distribuye exclusivamente en formato GGUF con pesos en FP16 (las capas de normalización se mantienen en F32) y su idioma declarado es únicamente el vietnamita (vi). La model card lo describe como un modelo conversacional ("trợ lí ảo trên xe VinFast"), con una configuración de 24 capas, dimensión de modelo d_model=1024, 16 cabezas de consulta y 4 cabezas de clave/valor.
+SAI-for-VinFast-FP16_375M es un checkpoint de generación de texto de 375.194.624 parámetros publicado por el usuario thongbuind en Hugging Face, orientado a tareas de asistente virtual a bordo de vehículos VinFast. El modelo se distribuye exclusivamente en formato GGUF con pesos en FP16 (las capas de normalización se mantienen en F32) y su idioma declarado es únicamente el vietnamita (vi). La model card lo describe como un modelo conversacional ("trợ lí ảo trên xe VinFast"), con una configuración de 24 capas, dimensión de modelo d_model=1024, 16 cabezas de consulta y 4 cabezas de clave/valor.
 
 El interés de esta ficha es doble. Por un lado, es un ejemplo de modelo ultracompacto (menos de 400 millones de parámetros, ~716 MiB de pesos) pensado para ejecución en el propio vehículo o en hardware de gama baja, no en servidores con GPU de datacenter. Por otro, incorpora un tokenizer propio (etiquetado como "SAI") que requiere un parche específico de llama.cpp (`llama-ugm-byte-fallback.patch`) sobre la revisión `cb7934c52ca8710994b2ecc19775ebefcfdb8d01` para preservar correctamente el byte fallback; ni llama.cpp stock ni Ollama están verificados por el autor.
 
@@ -84,7 +84,7 @@ No existe una alternativa directamente equivalente en el nicho de asistente de v
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SAI-for-VinFast-FP16_375M | 375 M | No disponible (verificado hasta 1024 tokens) | Vietnamita | No disponible | GGUF FP16 en HuggingFace; requiere llama.cpp parcheado |
+| SAI-for-VinFast-FP16_375M | 375 M | No disponible (verificado hasta 1024 tokens) | Vietnamita | No disponible | GGUF FP16 en Hugging Face; requiere llama.cpp parcheado |
 | SmolLM2-360M-Instruct | ~362 M | 8.192 tokens | Ingles principalmente | Apache-2.0 | Pesos safetensors y GGUF; ampliamente integrado en ecosistema |
 | Qwen2.5-0.5B-Instruct | ~494 M | 32.768 tokens | Multilingue (incluye chino e ingles) | Apache-2.0 | safetensors, GGUF y soporte en vLLM, TGI, Ollama |
 
@@ -106,9 +106,9 @@ La diferencia clave no es el rendimiento, que no esta medido en el caso de SAI-f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thongbuind/SAI-for-VinFast-FP16_375M
-- Archivo de pesos: `SAI-for-VinFast-FP16_375M.gguf` (incluido en el repositorio de HuggingFace)
-- Manifiesto con hashes de origen, tokenizer, parche y pesos: `manifest.json` (incluido en el repositorio de HuggingFace)
-- Parche requerido: `llama-ugm-byte-fallback.patch` (incluido en el repositorio de HuggingFace)
+- Modelo en Hugging Face: https://huggingface.co/thongbuind/SAI-for-VinFast-FP16_375M
+- Archivo de pesos: `SAI-for-VinFast-FP16_375M.gguf` (incluido en el repositorio de Hugging Face)
+- Manifiesto con hashes de origen, tokenizer, parche y pesos: `manifest.json` (incluido en el repositorio de Hugging Face)
+- Parche requerido: `llama-ugm-byte-fallback.patch` (incluido en el repositorio de Hugging Face)
 - Repositorio de llama.cpp, revision fijada `cb7934c52ca8710994b2ecc19775ebefcfdb8d01`: https://github.com/ggml-org/llama.cpp
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo: los resultados obtenidos correspondian a contenido no relacionado (paginas de la plataforma Roblox) y se descartan. No se han localizado papers, blogs tecnicos, repositorios adicionales ni demos asociados al checkpoint.

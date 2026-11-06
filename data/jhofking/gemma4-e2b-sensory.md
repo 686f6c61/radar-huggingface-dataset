@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks específicos para el modelo `JHofki
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| JHofking/gemma4-E2B-sensory | 2.1B | 8K | Apache 2.0 | HuggingFace |
-| Gemma 4 E4B | 4.2B | 8K | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B | 1.1B | 2K | Apache 2.0 | HuggingFace |
+| JHofking/gemma4-E2B-sensory | 2.1B | 8K | Apache 2.0 | Hugging Face |
+| Gemma 4 E4B | 4.2B | 8K | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B | 1.1B | 2K | Apache 2.0 | Hugging Face |
 
 El modelo se sitúa entre TinyLlama (1.1B) y Gemma 4 E4B (4.2B) en términos de parámetros. Ofrece una ventana de contexto más amplia que TinyLlama (8K vs 2K) y una licencia permisiva para uso comercial. Su principal ventaja es la capacidad de ejecutarse en CPU, algo que no es común en modelos de este tamaño. La comparativa con E4B muestra que el modelo E2B es más ligero y rápido, aunque con menor capacidad de razonamiento.
 

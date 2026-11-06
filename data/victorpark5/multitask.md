@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`victorpark5/multitask` es un repositorio experimental publicado en HuggingFace por el usuario victorpark5 que contiene una implementación propia de una arquitectura denominada "Dino" orientada a aprendizaje multitarea ("multitask"). El artefacto principal no es un modelo entrenado, sino el código (`main.py`) más una configuración de arquitectura (`config.json`) y una receta de entrenamiento por defecto (`training_args.json`); el checkpoint `model.safetensors` se describe explícitamente en la model card como una inicialización válida para pruebas de humo, no como un modelo entrenado ni evaluado.
+`victorpark5/multitask` es un repositorio experimental publicado en Hugging Face por el usuario victorpark5 que contiene una implementación propia de una arquitectura denominada "Dino" orientada a aprendizaje multitarea ("multitask"). El artefacto principal no es un modelo entrenado, sino el código (`main.py`) más una configuración de arquitectura (`config.json`) y una receta de entrenamiento por defecto (`training_args.json`); el checkpoint `model.safetensors` se describe explícitamente en la model card como una inicialización válida para pruebas de humo, no como un modelo entrenado ni evaluado.
 
 El tamaño real declarado en los tensores safetensors es de 49.600 parámetros, una magnitud propia de un prototipo de juguete o de un banco de pruebas de arquitectura, no de un modelo de lenguaje utilizable. La model card indica escala "xlarge", atención multi-query, fusión de tensores, activación ReLU y normalización InstanceNorm, con optimizador Adafactor y scheduler OneCycle como receta inicial. No se declara ningún resultado de benchmark ni se documenta el conjunto de datos de entrenamiento.
 
@@ -26,7 +26,7 @@ Su relevancia es por tanto metodológica y de investigación: sirve para inspecc
 | Normalización | InstanceNorm |
 | Optimizador por defecto | Adafactor |
 | Planificador por defecto | OneCycle |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -53,7 +53,7 @@ No hay evidencia de entrenamiento: el checkpoint `model.safetensors` se presenta
 - Validación de un arnés de evaluación: usar el repositorio como banco de pruebas para comprobar que el pipeline de evaluación reporta métricas por tarea con al menos tres semillas, como recomienda la propia model card.
 - Plantilla para implementaciones multitarea personalizadas: reutilizar `main.py` como esqueleto de carga, entrada y fusión de tensores en proyectos propios con licencia MIT.
 - Docencia y reproducción de experimentos: material para explicar atención multi-query, InstanceNorm y Adafactor en un entorno con requisitos de hardware despreciables.
-- Integración con APIs de carga: escribir el adaptador explícito necesario para que librerías genéricas de HuggingFace puedan instanciar esta implementación, un trabajo previo imprescindible antes de cualquier evaluación comparativa.
+- Integración con APIs de carga: escribir el adaptador explícito necesario para que librerías genéricas de Hugging Face puedan instanciar esta implementación, un trabajo previo imprescindible antes de cualquier evaluación comparativa.
 - No se recomienda su uso en atención al cliente, generación de código, RAG ni ninguna tarea de producción: con 49.600 parámetros y sin entrenamiento documentado no hay capacidad funcional verificada.
 
 ## Benchmarks y rendimiento
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Estado del checkpoint | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| victorpark5/multitask | 49.600 | No disponible | Inicialización no entrenada (según la model card) | MIT | HuggingFace, 0 descargas, sin pipeline |
+| victorpark5/multitask | 49.600 | No disponible | Inicialización no entrenada (según la model card) | MIT | Hugging Face, 0 descargas, sin pipeline |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han identificado en la información proporcionada modelos comparables de la misma categoría. La model card no incluye baselines de capacidad equivalente ni referencias a implementaciones previas, y la etiqueta `dino` no remite a una familia publicada concreta en la documentación del repositorio, por lo que no es posible establecer una comparación con datos verificables.
@@ -83,7 +83,7 @@ No se han identificado en la información proporcionada modelos comparables de l
 - No se ha auditado robustez, equidad ni transferencia de dominio; no hay evaluación de sesgos.
 - Riesgo de alucinación: no evaluable, al no existir capacidad generativa demostrada.
 - No hay longitud de contexto, tokenizador ni idiomas documentados, lo que impide planificar cargas de trabajo reales.
-- Sin pipeline declarado en HuggingFace y con implementación personalizada: requiere adaptador explícito para APIs automáticas de carga.
+- Sin pipeline declarado en Hugging Face y con implementación personalizada: requiere adaptador explícito para APIs automáticas de carga.
 - Sin resultados de benchmark ni baselines: cualquier comparación de rendimiento sería inventada.
 - Licencia MIT permite uso comercial del código, pero la propia model card advierte de revisar por separado los términos de los datos de origen cuando se use con datasets externos.
 - Riesgo de confusión de nomenclatura: la etiqueta `dino` no está definida en el repositorio y no debe asumirse equivalencia con otras arquitecturas homónimas.
@@ -91,6 +91,6 @@ No se han identificado en la información proporcionada modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/victorpark5/multitask
+- Hugging Face: https://huggingface.co/victorpark5/multitask
 - Los resultados de búsqueda web proporcionados no contienen enlaces relevantes al modelo: devuelven hilos de foro y páginas sobre productos bancarios de una entidad francesa, sin relación con el repositorio.
 - No se han encontrado en la información disponible papers, blogs, repositorios auxiliares ni demos asociados al modelo.

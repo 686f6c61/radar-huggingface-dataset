@@ -2,7 +2,7 @@
 
 ## Resumen
 
-indic-tts-bench no es un modelo de lenguaje ni un sistema de texto a voz entrenado: es un repositorio de investigacion, publicado por el usuario Klewik en HuggingFace, que contiene la infraestructura experimental de una tesis de M.Tech (NSUT, Nueva Delhi) sobre conversion grafema-fonema (G2P) en hindi y su impacto en sintesis neuronal de voz. La pregunta central que plantea es si la conversion explicita a devanagari con eliminacion de schwa sigue siendo necesaria en arquitecturas neuronales modernas de TTS, o si estas absorben la eliminacion de schwa medial directamente de los datos, y si la respuesta depende de la arquitectura y del volumen de datos disponible.
+indic-tts-bench no es un modelo de lenguaje ni un sistema de texto a voz entrenado: es un repositorio de investigacion, publicado por el usuario Klewik en Hugging Face, que contiene la infraestructura experimental de una tesis de M.Tech (NSUT, Nueva Delhi) sobre conversion grafema-fonema (G2P) en hindi y su impacto en sintesis neuronal de voz. La pregunta central que plantea es si la conversion explicita a devanagari con eliminacion de schwa sigue siendo necesaria en arquitecturas neuronales modernas de TTS, o si estas absorben la eliminacion de schwa medial directamente de los datos, y si la respuesta depende de la arquitectura y del volumen de datos disponible.
 
 El diseno experimental usa el hindi como caso de prueba y el marati como control: mismo sistema de escritura, mismo conversor, mismo inventario de fonemas, pero sin eliminacion de schwa medial. Sobre esa base se construye una escalera de datos que va de 10 horas a 10 minutos, variando el nivel de recursos mientras se mantienen fijos el hablante, el dominio y la cadena de grabacion. El repositorio ocupa 62,1 GB repartidos entre corpus, alineaciones forzadas, configuraciones y resultados por enunciado.
 
@@ -83,11 +83,11 @@ No disponible. indic-tts-bench no es un modelo, sino un repositorio de investiga
 - El unico resultado publicado (83,0% en G2P) procede de una muestra pequena, 47 casos, evaluada contra juicio de hablantes nativos, sin intervalo de confianza ni detalle de los anotadores en la informacion disponible.
 - Riesgo de sobrerrepresentacion: al tratarse de trabajo de tesis en curso, las conclusiones sobre la utilidad de la conversion explicita a devanagari aun no estan respaldadas por experimentos de sintesis.
 - El propio proyecto fija una regla de no reportar diferencias menores que la varianza entre semillas, lo que implica que los resultados futuros pueden quedar por debajo del umbral de significacion estadistica en los tramos bajos de la escalera de datos (10 minutos).
-- Restricciones operativas declaradas: los entornos de ejecucion usados tienen lista blanca de salida que deniega HuggingFace y Kaggle, por lo que ciertos pasos deben lanzarse desde un terminal nativo mediante `scripts/`; esto complica la automatizacion completa.
+- Restricciones operativas declaradas: los entornos de ejecucion usados tienen lista blanca de salida que deniega Hugging Face y Kaggle, por lo que ciertos pasos deben lanzarse desde un terminal nativo mediante `scripts/`; esto complica la automatizacion completa.
 - Gestion de credenciales: el repositorio exige que `~/.kaggle/kaggle.json` (modo 600) y `~/.cache/huggingface/token` queden fuera del arbol compartido. Incumplir esta regla expone claves de acceso.
 - El contenido de la busqueda web realizada no ha devuelto resultados pertinentes sobre este repositorio; los enlaces devueltos no guardan relacion con el proyecto y no se incluyen.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Klewik/indic-tts-bench
+- Repositorio en Hugging Face: https://huggingface.co/Klewik/indic-tts-bench
 - No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) asociados a este proyecto.

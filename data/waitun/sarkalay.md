@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo WAITUN/SarKaLay es un modelo publicado en HuggingFace por el usuario WAITUN bajo licencia openrail. A fecha de su creación, el 3 de septiembre de 2026, no cuenta con descargas, valoraciones ni documentación técnica en la model card. El contenido del README se limita a la declaración de licencia, sin especificar arquitectura, tamaño, contexto de entrenamiento, idiomas ni capacidades.
+El modelo WAITUN/SarKaLay es un modelo publicado en Hugging Face por el usuario WAITUN bajo licencia openrail. A fecha de su creación, el 3 de septiembre de 2026, no cuenta con descargas, valoraciones ni documentación técnica en la model card. El contenido del README se limita a la declaración de licencia, sin especificar arquitectura, tamaño, contexto de entrenamiento, idiomas ni capacidades.
 
-Durante la búsqueda web se ha encontrado una referencia en Kaggle a un modelo llamado SarKaLay, atribuido a un autor distinto (waiyumtun), con una descripción que lo presenta como un "asistente de bienestar para entrevistas" basado en inteligencia artificial. Sin embargo, no se ha podido confirmar que se trate del mismo modelo ni que exista relación con el repositorio de HuggingFace. En consecuencia, la información disponible sobre WAITUN/SarKaLay es insuficiente para evaluar su utilidad o rendimiento.
+Durante la búsqueda web se ha encontrado una referencia en Kaggle a un modelo llamado SarKaLay, atribuido a un autor distinto (waiyumtun), con una descripción que lo presenta como un "asistente de bienestar para entrevistas" basado en inteligencia artificial. Sin embargo, no se ha podido confirmar que se trate del mismo modelo ni que exista relación con el repositorio de Hugging Face. En consecuencia, la información disponible sobre WAITUN/SarKaLay es insuficiente para evaluar su utilidad o rendimiento.
 
 ## Especificaciones tecnicas
 

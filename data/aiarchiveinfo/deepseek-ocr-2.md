@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| DeepSeek-OCR-2 (este modelo) | 3,39 mil millones | no disponible | Apache 2.0 | HuggingFace (original y espejo), GitHub | OCR visión-lenguaje con resolución dinámica y conversión a Markdown con grounding |
+| DeepSeek-OCR-2 (este modelo) | 3,39 mil millones | no disponible | Apache 2.0 | Hugging Face (original y espejo), GitHub | OCR visión-lenguaje con resolución dinámica y conversión a Markdown con grounding |
 | DeepSeek-OCR (v1) | no disponible | no disponible | no disponible en la información | GitHub (`deepseek-ai/DeepSeek-OCR`) | Trabajo previo sobre compresión óptica de contexto; citado como base |
 | GOT-OCR2.0 | no disponible | no disponible | no disponible en la información | GitHub (`Ucas-HaoranWei/GOT-OCR2.0`) | OCR generalista citado en los agradecimientos |
 | MinerU | no disponible | no disponible | no disponible en la información | GitHub (`opendatalab/MinerU`) | Herramienta de extracción documental citada como referencia |
@@ -95,7 +95,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de los modelos al
 
 ## Enlaces
 
-- Espejo en HuggingFace: https://huggingface.co/AIArchiveInfo/DeepSeek-OCR-2
+- Espejo en Hugging Face: https://huggingface.co/AIArchiveInfo/DeepSeek-OCR-2
 - Repositorio original: https://huggingface.co/deepseek-ai/DeepSeek-OCR-2
 - Revisión archivada del original: https://huggingface.co/deepseek-ai/DeepSeek-OCR-2/tree/aaa02f3811945a91062062994c5c4a3f4c0af2b0
 - Repositorio GitHub: https://github.com/deepseek-ai/DeepSeek-OCR-2

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`unamed12/reasoning-pdpo_sftcs1.5k_cbase_lr5e-7_beta0.05_ep2` es un ajuste fino completo (full fine-tuning) del modelo denso Qwen3-8B, publicado por el usuario `unamed12` en HuggingFace. El nombre del repositorio codifica la receta de entrenamiento: un ajuste supervisado (SFT) sobre un conjunto de aproximadamente 1.500 muestras, seguido de una etapa de preferencias tipo DPO (denominada `pdpo`) con `beta=0.05`, tasa de aprendizaje `5e-7` y 2 épocas. El prefijo `reasoning` sugiere que el objetivo es reforzar la capacidad de razonamiento del modelo base.
+`unamed12/reasoning-pdpo_sftcs1.5k_cbase_lr5e-7_beta0.05_ep2` es un ajuste fino completo (full fine-tuning) del modelo denso Qwen3-8B, publicado por el usuario `unamed12` en Hugging Face. El nombre del repositorio codifica la receta de entrenamiento: un ajuste supervisado (SFT) sobre un conjunto de aproximadamente 1.500 muestras, seguido de una etapa de preferencias tipo DPO (denominada `pdpo`) con `beta=0.05`, tasa de aprendizaje `5e-7` y 2 épocas. El prefijo `reasoning` sugiere que el objetivo es reforzar la capacidad de razonamiento del modelo base.
 
-El modelo se distribuye como un checkpoint completo en formato `safetensors`, generado con LLaMA-Factory y compatible con `transformers` y Text Generation Inference. El repositorio ocupa 114,7 GB, un tamano coherente con un modelo de 8B parámetros almacenado en varios formatos de precisión. El acceso está restringido: es necesario aceptar las condiciones en HuggingFace antes de poder descargarlo.
+El modelo se distribuye como un checkpoint completo en formato `safetensors`, generado con LLaMA-Factory y compatible con `transformers` y Text Generation Inference. El repositorio ocupa 114,7 GB, un tamano coherente con un modelo de 8B parámetros almacenado en varios formatos de precisión. El acceso está restringido: es necesario aceptar las condiciones en Hugging Face antes de poder descargarlo.
 
 Se trata de un experimento de investigación con cero descargas y cero valoraciones en el momento de redactar esta ficha, sin model card descriptiva ni resultados de benchmarks declarados. Su interés es principalmente el de documentar una receta concreta de post-entrenamiento (SFT + DPO) sobre Qwen3-8B, no el de un modelo listo para producción.
 
@@ -93,7 +93,7 @@ La comparación relevante es contra el propio Qwen3-8B: este checkpoint no docum
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unamed12/reasoning-pdpo_sftcs1.5k_cbase_lr5e-7_beta0.05_ep2
+- Hugging Face: https://huggingface.co/unamed12/reasoning-pdpo_sftcs1.5k_cbase_lr5e-7_beta0.05_ep2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este checkpoint.

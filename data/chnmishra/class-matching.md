@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Tiny Transformer for Matching es un repositorio de codigo y pesos de inicializacion publicado por el usuario chnmishra en HuggingFace. Se trata de una implementacion propia de un transformer de escala "base" orientada a tareas de emparejamiento (matching) de pares, con atencion de ventana deslizante, fusion mediante MLP sobre concatenacion, activacion ReLU y normalizacion InstanceNorm. El checkpoint incluido tiene 16.576 parametros reales segun el archivo safetensors, lo que lo situa en la categoria de modelos juguete (tiny).
+Tiny Transformer for Matching es un repositorio de codigo y pesos de inicializacion publicado por el usuario chnmishra en Hugging Face. Se trata de una implementacion propia de un transformer de escala "base" orientada a tareas de emparejamiento (matching) de pares, con atencion de ventana deslizante, fusion mediante MLP sobre concatenacion, activacion ReLU y normalizacion InstanceNorm. El checkpoint incluido tiene 16.576 parametros reales segun el archivo safetensors, lo que lo situa en la categoria de modelos juguete (tiny).
 
 El propio autor declara explicitamente que el repositorio no presenta resultados de benchmarks, que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo y no un modelo entrenado, y que la receta incluida (SGD con calentamiento lineal) son valores de partida del script, no evidencia de un entrenamiento completado. Por tanto, la relevancia de este artefacto es la de esqueleto reproducible y transparente para experimentos de matching, no la de un modelo utilizable en produccion.
 
-El repositorio es muy reciente (creado el 2026-09-11 segun HuggingFace), acumula 0 descargas y 0 likes, y no dispone de pipeline declarado ni de idiomas documentados. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: los enlaces obtenidos corresponden al termino aleman "Tulle" (boquilla o vertedero de un recipiente o herramienta), por lo que no aportan informacion tecnica util.
+El repositorio es muy reciente (creado el 2026-09-11 segun Hugging Face), acumula 0 descargas y 0 likes, y no dispone de pipeline declarado ni de idiomas documentados. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: los enlaces obtenidos corresponden al termino aleman "Tulle" (boquilla o vertedero de un recipiente o herramienta), por lo que no aportan informacion tecnica util.
 
 ## Especificaciones tecnicas
 
@@ -84,5 +84,5 @@ No disponible. La busqueda web realizada no devolvio ningun modelo comparable: l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chnmishra/class-matching
+- Modelo en Hugging Face: https://huggingface.co/chnmishra/class-matching
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados devueltos (Wikipedia, HORNBACH, wortbedeutung.info, HellermannTyton) tratan sobre el termino aleman "Tulle" y no son relevantes.

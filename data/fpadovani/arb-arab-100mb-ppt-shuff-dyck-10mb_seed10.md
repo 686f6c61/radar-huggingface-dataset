@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/arb-arab-100mb-ppt-shuff-dyck-10mb_seed10` es un ajuste fino supervisado (SFT) del modelo monolingüe árabe `goldfish-models/arb_arab_100mb`, desarrollado por el usuario fpadovani (vinculado a la Universidad de Groningen, según la URL del *run* de Weights & Biases) y publicado en HuggingFace con fecha de creación del 16 de septiembre de 2026. Se trata de un artefacto de investigación, no de un modelo orientado a producto: acumula cero descargas y cero «me gusta», y su *model card* se limita a la plantilla autogenerada por TRL.
+El modelo `fpadovani/arb-arab-100mb-ppt-shuff-dyck-10mb_seed10` es un ajuste fino supervisado (SFT) del modelo monolingüe árabe `goldfish-models/arb_arab_100mb`, desarrollado por el usuario fpadovani (vinculado a la Universidad de Groningen, según la URL del *run* de Weights & Biases) y publicado en Hugging Face con fecha de creación del 16 de septiembre de 2026. Se trata de un artefacto de investigación, no de un modelo orientado a producto: acumula cero descargas y cero «me gusta», y su *model card* se limita a la plantilla autogenerada por TRL.
 
 Técnicamente es un transformer decoder-only de la familia GPT-2 con 124.770.816 parámetros totales (aproximadamente 125 millones), pesos en formato `safetensors` y pipeline declarado de `text-generation`. El nombre del repositorio sugiere que el ajuste se ha realizado sobre un conjunto sintético de 10 MB relacionado con lenguajes de Dyck (paréntesis balanceados) con ejemplos permutados aleatoriamente y semilla 10, lo que apunta a un experimento de ablación sobre aprendizaje de estructuras jerárquicas o sobre tokenizadores (el *run* de W&B pertenece al proyecto «new_tokenizers»).
 
@@ -18,7 +18,7 @@ Su relevancia es, por tanto, estrictamente metodológica: sirve para reproducir 
 | Longitud de contexto | No disponible en la información proporcionada |
 | Tipos de cuantización | No disponibles. Solo se publican pesos `safetensors`; no hay artefactos GGUF, AWQ ni GPTQ en el repositorio |
 | Idiomas soportados | El modelo base (`goldfish-models/arb_arab_100mb`) es monolingüe en árabe; el ajuste se realiza sobre datos sintéticos según el nombre del repositorio. Idiomas efectivos del ajuste: no disponibles |
-| Licencia | No disponible. El frontmatter de la *model card* usa el marcador genérico `licence: license` sin concretar términos, y la ficha de HuggingFace no declara licencia |
+| Licencia | No disponible. El frontmatter de la *model card* usa el marcador genérico `licence: license` sin concretar términos, y la ficha de Hugging Face no declara licencia |
 | Formato de pesos | `safetensors` (Transformers). Tamaño del repositorio: 2,0 GB, muy superior al peso teórico de los parámetros en fp32 (~500 MB), lo que sugiere la inclusión de estados de optimizador o checkpoints intermedios |
 | Modelo base | `goldfish-models/arb_arab_100mb` |
 | Librerías declaradas | transformers, TRL 0.23.0, PyTorch 2.11.0, Datasets 4.8.4, Tokenizers 0.22.1 |
@@ -46,7 +46,7 @@ El ajuste se realizó con SFT mediante TRL 0.23.0 sobre Transformers 4.56.2 y Py
 - Estudios de olvido catastrófico: sirve como caso de estudio para medir cuánto degrade un modelo monolingüe de 125 M en árabe cuando se ajusta sobre datos puramente formales y no lingüísticos.
 - Investigación sobre tokenizadores: al proceder del proyecto «new_tokenizers», es un punto de comparación directo para evaluar cómo distintas segmentaciones afectan al aprendizaje de tareas de Dyck con la misma semilla y el mismo presupuesto de datos.
 - Ablaciones con semillas: al incorporar `seed10` en el nombre, encaja en una batería de réplicas donde se mide la varianza entre inicializaciones; útil para cuantificar la estabilidad de resultados en modelos pequeños.
-- Pruebas de infraestructura de servicio: con los tags `text-generation-inference` y `endpoints_compatible`, puede usarse como carga ligera para validar despliegues de TGI, endpoints de HuggingFace o pasarelas de inferencia antes de pasar a modelos grandes.
+- Pruebas de infraestructura de servicio: con los tags `text-generation-inference` y `endpoints_compatible`, puede usarse como carga ligera para validar despliegues de TGI, endpoints de Hugging Face o pasarelas de inferencia antes de pasar a modelos grandes.
 - Material docente: por su tamaño (~500 MB en fp32) y su pipeline trivial, es adecuado para prácticas de aula sobre ajuste fino, guardado de pesos en `safetensors` y publicación en el Hub.
 - Comparación de coste de inferencia: sirve como referencia de latencia y consumo de VRAM en el extremo inferior de la escala de transformers de 125 M en GPUs de consumo.
 
@@ -67,11 +67,11 @@ No se han publicado resultados de benchmarks en la información disponible. La *
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fpadovani/arb-arab-100mb-ppt-shuff-dyck-10mb_seed10` | 124,77 M | No disponible | No publicado | No disponible | HuggingFace, 0 descargas |
-| `goldfish-models/arb_arab_100mb` (modelo base) | ~125 M | No disponible en esta información | No disponible | No disponible en esta información | HuggingFace, familia multilingüe de 100 MB por idioma |
-| GPT-2 (124 M, OpenAI) | 124 M | 1.024 tokens | Referencia histórica ampliamente superada | MIT (pesos publicados) | HuggingFace, `openai-community/gpt2` |
-| SmolLM2-135M (HuggingFace) | 135 M | 2.048 tokens | Publicado por el autor | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Qwen2.5-0.5B (Alibaba) | 494 M | 32.768 tokens | Publicado por el autor | Apache 2.0 | HuggingFace, uso comercial permitido |
+| `fpadovani/arb-arab-100mb-ppt-shuff-dyck-10mb_seed10` | 124,77 M | No disponible | No publicado | No disponible | Hugging Face, 0 descargas |
+| `goldfish-models/arb_arab_100mb` (modelo base) | ~125 M | No disponible en esta información | No disponible | No disponible en esta información | Hugging Face, familia multilingüe de 100 MB por idioma |
+| GPT-2 (124 M, OpenAI) | 124 M | 1.024 tokens | Referencia histórica ampliamente superada | MIT (pesos publicados) | Hugging Face, `openai-community/gpt2` |
+| SmolLM2-135M (Hugging Face) | 135 M | 2.048 tokens | Publicado por el autor | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Qwen2.5-0.5B (Alibaba) | 494 M | 32.768 tokens | Publicado por el autor | Apache 2.0 | Hugging Face, uso comercial permitido |
 
 Los datos de contexto y licencia de los modelos comparativos provienen de su documentación pública y conviene verificarlos en sus fichas oficiales antes de citarlos. La comparación de rendimiento con este modelo no es posible porque no hay métricas publicadas.
 
@@ -89,7 +89,7 @@ Los datos de contexto y licencia de los modelos comparativos provienen de su doc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-100mb-ppt-shuff-dyck-10mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-100mb-ppt-shuff-dyck-10mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/arb_arab_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - *Run* de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/7c4tu2gv

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario kcute8132 (Cute Kitty) y publicado en HuggingFace bajo licencia MIT. Según la model card, se trata de una versión actualizada que mejora significativamente la capacidad de razonamiento profundo y la inferencia, acercándose al rendimiento de modelos líderes en tareas de matemáticas, programación y lógica general. El modelo destaca por su soporte para function calling, una menor tasa de alucinación y una mayor profundidad de razonamiento (en el test AIME 2025 pasa de 12K a 23K tokens por pregunta).
+MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario kcute8132 (Cute Kitty) y publicado en Hugging Face bajo licencia MIT. Según la model card, se trata de una versión actualizada que mejora significativamente la capacidad de razonamiento profundo y la inferencia, acercándose al rendimiento de modelos líderes en tareas de matemáticas, programación y lógica general. El modelo destaca por su soporte para function calling, una menor tasa de alucinación y una mayor profundidad de razonamiento (en el test AIME 2025 pasa de 12K a 23K tokens por pregunta).
 
 A pesar de su nombre genérico y de que no se publican detalles arquitectónicos, el modelo se distribuye a través de la librería `transformers` y su licencia permite uso comercial. La información técnica disponible es limitada: no se especifican el número de parámetros, la longitud de contexto ni los idiomas soportados, lo que obliga a tratar estos datos como no disponibles.
 

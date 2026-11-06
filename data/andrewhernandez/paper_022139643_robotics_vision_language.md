@@ -60,7 +60,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andrewhernandez/paper_022139643_robotics_vision_language
+- Repositorio en Hugging Face: https://huggingface.co/andrewhernandez/paper_022139643_robotics_vision_language
 - Resultados de busqueda web (no directamente relacionados con este repositorio):
   - Google Scholar: https://scholar.google.com/citations
   - CVPR 2026 paper sobre interpretabilidad: https://openaccess.thecvf.com/content/CVPR2026/html/Ferrando_Language_Models_Can_Explain_Visual_Features_via_Steering_CVPR_2026_paper.html

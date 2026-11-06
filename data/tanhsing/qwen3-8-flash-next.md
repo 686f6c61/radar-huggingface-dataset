@@ -79,8 +79,8 @@ Qwen3.8-Flash-Next se posiciona como un modelo MoE de alta eficiencia con un nú
 
 ## Enlaces
 
-- Repositorio HuggingFace (copia del usuario tanhsing): https://huggingface.co/tanhsing/Qwen3.8-Flash-Next
-- Repositorio HuggingFace oficial: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face (copia del usuario tanhsing): https://huggingface.co/tanhsing/Qwen3.8-Flash-Next
+- Repositorio Hugging Face oficial: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Blog oficial de Qwen: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Informe técnico (PDF): https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf

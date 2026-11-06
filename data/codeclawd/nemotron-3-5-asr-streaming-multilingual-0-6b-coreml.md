@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nemotron 3.5 ASR Streaming Multilingual 0.6B — CoreML es una conversión a Core ML del modelo de reconocimiento automático de voz `nvidia/nemotron-3.5-asr-streaming-0.6b`, desarrollada por FluidInference y distribuida en HuggingFace por el usuario `codeclawd` como espejo de respaldo del equipo PrivateWispr. El modelo original es de NVIDIA; la conversión optimiza la inferencia para el Apple Neural Engine (ANE) de los chips Apple Silicon, con el objetivo de ejecutar ASR en streaming completamente en dispositivo, sin enviar audio a servidores externos.
+Nemotron 3.5 ASR Streaming Multilingual 0.6B — CoreML es una conversión a Core ML del modelo de reconocimiento automático de voz `nvidia/nemotron-3.5-asr-streaming-0.6b`, desarrollada por FluidInference y distribuida en Hugging Face por el usuario `codeclawd` como espejo de respaldo del equipo PrivateWispr. El modelo original es de NVIDIA; la conversión optimiza la inferencia para el Apple Neural Engine (ANE) de los chips Apple Silicon, con el objetivo de ejecutar ASR en streaming completamente en dispositivo, sin enviar audio a servidores externos.
 
 Arquitectura y tamaño: encoder Conformer más decodificador RNN-T (RNNT), con aproximadamente 600 millones de parámetros y vocabulario de 13087 tokens (o 2828 en la variante recortada para escritura latina). El repositorio publica ocho bundles que combinan dos variantes de vocabulario (`latin/` y `multilingual/`) con cuatro tamaños de chunk (0,56 s, 1 s, 2 s y 4 s), lo que permite ajustar el compromiso entre latencia y throughput.
 
@@ -96,16 +96,16 @@ No se dispone de resultados de benchmarks de modelos ASR alternativos (Whisper, 
 - El modelo es de streaming con chunks de 2 s como configuración recomendada: no es adecuado para escenarios que exijan latencias inferiores a un segundo con calidad máxima.
 - El fallback de 0,56 s está explícitamente desaconsejado por el autor para chino, japonés y multilingüe por la caída de throughput a 21-23 RTFx.
 - Un único bundle `latin/` sirve a los seis idiomas de escritura latina; es necesario pasar el idioma exacto en inferencia para que el enrutado y el decodificado sean correctos.
-- Licencia OpenMDW-1.1: es una licencia propia de NVIDIA/Meta (Open Model Development Workgroup), no una licencia OSI estándar. Debe revisarse el texto en `https://openmdw.ai/license/1-1/` antes de un uso comercial, ya que el tag de HuggingFace figura como `license: other`.
+- Licencia OpenMDW-1.1: es una licencia propia de NVIDIA/Meta (Open Model Development Workgroup), no una licencia OSI estándar. Debe revisarse el texto en `https://openmdw.ai/license/1-1/` antes de un uso comercial, ya que el tag de Hugging Face figura como `license: other`.
 - Este repositorio es un espejo de terceros (`codeclawd` / equipo PrivateWispr) de la conversión original de FluidInference en la revisión `1a41b75758b0337ff67db7d5408280aaaf23074e`; el propio autor indica que los archivos son idénticos byte a byte y que solo se ha añadido la cabecera del README. Conviene verificar la integridad y preferir el repositorio upstream cuando sea posible.
-- La model card menciona un control de acceso mediante Discord ("join the server and message Sisyphu"), lo que añade una dependencia operativa ajena a HuggingFace para obtener acceso.
+- La model card menciona un control de acceso mediante Discord ("join the server and message Sisyphu"), lo que añade una dependencia operativa ajena a Hugging Face para obtener acceso.
 - El modelo no incluye, según la información disponible, funcionalidades de diarización, puntuación automática ni marcas de tiempo, que suelen ser necesarias en transcripción de reuniones o subtitulado profesional.
 - Al ser un artefacto Core ML, queda atado al ecosistema Apple: no hay ruta de despliegue documentada en servidores Linux con GPU.
 - Fecha de publicación del repositorio: 16 de octubre de 2026; la conversión se basa en la actualización del checkpoint base del 29 de mayo de 2026, por lo que versiones posteriores del modelo base no están reflejadas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/codeclawd/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b-CoreML
+- Modelo en Hugging Face: https://huggingface.co/codeclawd/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b-CoreML
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Repositorio upstream de la conversión (FluidInference): https://huggingface.co/FluidInference/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b-CoreML
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/

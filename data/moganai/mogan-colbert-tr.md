@@ -75,9 +75,9 @@ No se han publicado en la información disponible los resultados desglosados por
 
 | Modelo | Parametros | Contexto / uso | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mogan-ColBERT-TR | 148,9 M | 32 tokens consulta, 512 tokens documento | Multi-vector, interacción tardía | Apache-2.0 | HuggingFace (PyLate) |
-| MoganBERT-Embed | 149 M | Embeddings de un solo vector | Denso | no disponible en la información proporcionada | HuggingFace |
-| MoganBERT-TR | 149,4 M | Encoder base | Encoder | no disponible en la información proporcionada | HuggingFace |
+| Mogan-ColBERT-TR | 148,9 M | 32 tokens consulta, 512 tokens documento | Multi-vector, interacción tardía | Apache-2.0 | Hugging Face (PyLate) |
+| MoganBERT-Embed | 149 M | Embeddings de un solo vector | Denso | no disponible en la información proporcionada | Hugging Face |
+| MoganBERT-TR | 149,4 M | Encoder base | Encoder | no disponible en la información proporcionada | Hugging Face |
 | bge-reranker-v2-m3 | No disponible en la información proporcionada | Cross-encoder de reranking | Cross-encoder | no disponible en la información proporcionada | Referenciado en la model card como docente |
 
 Los tres primeros modelos pertenecen a la misma familia MoganBERT y comparten escala de parámetros; la diferencia es el tipo de representación (encoder base, denso de un vector y multi-vector de interacción tardía). No se dispone de valores de benchmark comparativos entre ellos en la información proporcionada, ni de resultados de otros retrievers multi-vector en turco para establecer una comparación numérica.
@@ -96,7 +96,7 @@ Los tres primeros modelos pertenecen a la misma familia MoganBERT y comparten es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moganai/Mogan-ColBERT-TR
+- Modelo en Hugging Face: https://huggingface.co/moganai/Mogan-ColBERT-TR
 - Paper (según las etiquetas de la model card): https://huggingface.co/papers/2608.26344
 - Blog del autor: https://moganai.github.io/
 - Colección de modelos MoganBERT: https://huggingface.co/collections/moganai/moganbert

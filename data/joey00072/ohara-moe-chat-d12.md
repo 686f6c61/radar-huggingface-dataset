@@ -89,7 +89,7 @@ No se dispone de comparaciones con otros modelos de la misma categoría (por eje
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joey00072/ohara-moe-chat-d12
+- Modelo en Hugging Face: https://huggingface.co/joey00072/ohara-moe-chat-d12
 - Repositorio de la librería ohara: https://github.com/joey00072/ohara
 - Modelo base (pretrain): https://huggingface.co/joey00072/ohara-moe-base-d12
 - Contraparte densa: https://huggingface.co/joey00072/ohara-chat-d12

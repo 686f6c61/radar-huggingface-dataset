@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Yumahujita/detector-lite` es un modelo publicado en HuggingFace por el usuario Yumahujita con licencia BSD-3-Clause. La model card es extremadamente escasa: no se proporciona arquitectura, tamaño, contexto, ni ningún dato técnico del modelo. El contenido del repositorio se limita a un documento `analysis.md` que describe un paper sobre robótica, visión y lenguaje (robotics vision language), con formato HTML, estilo de citación en notas al pie, estructura intro-problema-solución-validación-futuro y estilo de escritura narrativa progresiva.
+El repositorio `Yumahujita/detector-lite` es un modelo publicado en Hugging Face por el usuario Yumahujita con licencia BSD-3-Clause. La model card es extremadamente escasa: no se proporciona arquitectura, tamaño, contexto, ni ningún dato técnico del modelo. El contenido del repositorio se limita a un documento `analysis.md` que describe un paper sobre robótica, visión y lenguaje (robotics vision language), con formato HTML, estilo de citación en notas al pie, estructura intro-problema-solución-validación-futuro y estilo de escritura narrativa progresiva.
 
 El modelo tiene cero descargas y cero likes, lo que indica que es un proyecto incipiente o personal. La etiqueta "detector-lite" sugiere que podría tratarse de un detector ligero, posiblemente orientado a visión por computador, pero no hay evidencia en la información disponible. No se puede confirmar si el modelo es real, si contiene pesos entrenados o si el repositorio es solo un borrador de documentación. Por tanto, cualquier evaluación técnica debe partir de la base de que la información pública es insuficiente.
 
@@ -60,5 +60,5 @@ No disponible. No se conoce la categoría exacta del modelo (detección de objet
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Yumahujita/detector-lite
+- Repositorio Hugging Face: https://huggingface.co/Yumahujita/detector-lite
 - No se encontraron papers, blogs, demos ni repositorios adicionales relacionados con este modelo específico en la búsqueda web.

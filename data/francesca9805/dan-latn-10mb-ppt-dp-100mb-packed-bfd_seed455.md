@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/dan_latn_10mb`, publicado por el usuario `francesca9805` en HuggingFace. Se trata de un modelo de generacion de texto de tipo decoder-only con arquitectura GPT-2 (`gpt2` aparece como tag de la libreria) y 39.087.104 parametros totales, segun los metadatos reales de los ficheros safetensors. El repositorio ocupa 0,1 GB y esta etiquetado como `generated_from_trainer`, `sft` y `trl`, lo que indica que fue entrenado con la libreria TRL de HuggingFace mediante aprendizaje supervisado.
+Este modelo es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/dan_latn_10mb`, publicado por el usuario `francesca9805` en Hugging Face. Se trata de un modelo de generacion de texto de tipo decoder-only con arquitectura GPT-2 (`gpt2` aparece como tag de la libreria) y 39.087.104 parametros totales, segun los metadatos reales de los ficheros safetensors. El repositorio ocupa 0,1 GB y esta etiquetado como `generated_from_trainer`, `sft` y `trl`, lo que indica que fue entrenado con la libreria TRL de Hugging Face mediante aprendizaje supervisado.
 
 El modelo base pertenece a la coleccion Goldfish, una iniciativa de investigacion sobre modelos monolingues para cientos de idiomas; el sufijo `dan_latn` corresponde a danes en escritura latina y `10mb` hace referencia, segun la convencion de nombres del proyecto, al volumen de datos de entrenamiento del modelo base. El identificador del ajuste (`ppt-Dp-100mb-packed-bfd_seed455`) sugiere un experimento sobre empaquetado de secuencias, un volumen de 100 MB y una semilla concreta, aunque la model card no documenta ninguno de estos extremos.
 
@@ -44,7 +44,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL 0.23.0
 - Tool calling / function calling: no disponible; no hay indicios de soporte.
 - Uso como agente o razonamiento multi-paso: no disponible; no hay evidencia de entrenamiento para ello.
 - Vision, audio o modo "thinking": no soportados.
-- Compatibilidad de despliegue: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que el repositorio esta preparado para servirse con TGI y con los endpoints gestionados de HuggingFace.
+- Compatibilidad de despliegue: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que el repositorio esta preparado para servirse con TGI y con los endpoints gestionados de Hugging Face.
 
 ## Casos de uso
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia segun peso: en fp32, aproximadamente 156 MB; en fp16/bf16, unos 78 MB; en int8, unos 39 MB; en 4 bits, unos 20 MB (calculado a partir de los 39,087 M de parametros).
 - GPU recomendadas: cualquiera con al menos 1 GB de memoria libre, incluidas GTX 1050 Ti, RTX 3050, RTX 4090, A100 o H100. No se necesita hardware de centro de datos y no se aprovecharian sus capacidades.
 - GPU de consumo: si cabe con enorme margen; el modelo es ejecutable en cualquier GPU consumer e incluso en CPU con latencia aceptable para generacion corta.
-- Opciones de despliegue: `transformers` (pipeline de generacion, tal como aparece en la model card), Text Generation Inference (etiqueta `text-generation-inference`), endpoints gestionados de HuggingFace (etiqueta `endpoints_compatible`), vLLM y conversion a GGUF para llama.cpp u Ollama (la conversion no esta publicada por el autor, habria que generarla).
+- Opciones de despliegue: `transformers` (pipeline de generacion, tal como aparece en la model card), Text Generation Inference (etiqueta `text-generation-inference`), endpoints gestionados de Hugging Face (etiqueta `endpoints_compatible`), vLLM y conversion a GGUF para llama.cpp u Ollama (la conversion no esta publicada por el autor, habria que generarla).
 - Latencia y throughput: no disponibles. No se publican mediciones, y las cifras dependerian por completo del hardware, la longitud de prompt y el numero de tokens generados.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | dan-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455 (este modelo) | 39,1 M | no disponible | danes (inferido del modelo base) | no disponible | safetensors, repositorio de 0,1 GB, 0 descargas |
-| goldfish-models/dan_latn_10mb (modelo base) | no disponible | no disponible | danes (escritura latina) | no disponible | safetensors en HuggingFace |
+| goldfish-models/dan_latn_10mb (modelo base) | no disponible | no disponible | danes (escritura latina) | no disponible | safetensors en Hugging Face |
 | GPT-2 small (referencia externa, no incluida en la informacion proporcionada) | 124 M | 1024 tokens | ingles | licencia MIT modificada | ampliamente disponible |
 
 No se han encontrado en la informacion proporcionada otros modelos comparables con metricas publicadas. La comparacion con GPT-2 small se incluye unicamente como referencia de escala y debe tratarse como conocimiento externo, no como dato aportado por la model card. Las variantes de mayor volumen de datos de la propia coleccion Goldfish (por ejemplo, las que siguen la convencion de 100 MB o 1 GB) serian los competidores naturales, pero no se dispone de sus especificaciones en esta busqueda.
@@ -95,9 +95,9 @@ No se han encontrado en la informacion proporcionada otros modelos comparables c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/dan-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/dan-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/dan_latn_10mb
-- Organizacion Goldfish en HuggingFace: https://huggingface.co/goldfish-models
+- Organizacion Goldfish en Hugging Face: https://huggingface.co/goldfish-models
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ef955hsw
 - Repositorio de TRL: https://github.com/huggingface/trl
-- La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, su autor ni la coleccion Goldfish; los enlaces anteriores proceden de la informacion de HuggingFace y de la model card.
+- La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, su autor ni la coleccion Goldfish; los enlaces anteriores proceden de la informacion de Hugging Face y de la model card.

@@ -88,9 +88,9 @@ No se publican en la información disponible los resultados del modelo base sin 
 
 | Modelo | Parametros | Tipo de dispersion | Perplejidad WikiText-2 | Media zero-shot (7 tareas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (unstructured-ELSA-80pct) | 1,33B | No estructurada, 0,7841 medida | 30,13 | 0,3841 | No disponible | Publico en HuggingFace, 0 descargas |
-| ikimyaii/Mamba-1.3B-semi-structured-EHWS-ALPS_phase1-80pct | 1,33B (mismo base) | Semi-estructurada, 80 % | No disponible en esta informacion | No disponible en esta informacion | No disponible | Publico en HuggingFace |
-| fla-hub/mamba-1.3B-100B (modelo base) | 1,33B | Ninguna (denso) | No disponible en esta informacion | No disponible en esta informacion | No disponible en esta informacion | Publico en HuggingFace |
+| Este modelo (unstructured-ELSA-80pct) | 1,33B | No estructurada, 0,7841 medida | 30,13 | 0,3841 | No disponible | Publico en Hugging Face, 0 descargas |
+| ikimyaii/Mamba-1.3B-semi-structured-EHWS-ALPS_phase1-80pct | 1,33B (mismo base) | Semi-estructurada, 80 % | No disponible en esta informacion | No disponible en esta informacion | No disponible | Publico en Hugging Face |
+| fla-hub/mamba-1.3B-100B (modelo base) | 1,33B | Ninguna (denso) | No disponible en esta informacion | No disponible en esta informacion | No disponible en esta informacion | Publico en Hugging Face |
 
 La comparación cuantitativa con el modelo base y con la variante EHWS no puede completarse con los datos suministrados: la model card únicamente enlaza al modelo EHWS como referencia, sin reproducir sus cifras.
 
@@ -111,7 +111,7 @@ La comparación cuantitativa con el modelo base y con la variante EHWS no puede 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/Mamba-1.3B-unstructured-ELSA-80pct
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/Mamba-1.3B-unstructured-ELSA-80pct
 - Modelo base: https://huggingface.co/fla-hub/mamba-1.3B-100B
 - Modelo comparable (EHWS semi-estructurado, 80 %): https://huggingface.co/ikimyaii/Mamba-1.3B-semi-structured-EHWS-ALPS_phase1-80pct
 - Paper de ELSA: https://arxiv.org/abs/2510.01650

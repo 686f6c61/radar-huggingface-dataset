@@ -77,8 +77,8 @@ La información disponible solo permite comparar con el modelo base del que deri
 | Modelo | Parámetros | Contexto | GPQA / MMLU / LCB | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Coder390 (este) | 27,78B | 94K (protocolo) | 178/198 · 450/500 · 90/100 | apache-2.0 | safetensors, GGUF, INT4/INT8/NVFP4 |
-| EfficientThink base (SFT+SimPO) | 27,78B (mismo linaje) | 94K (protocolo) | 171/198 · 442/500 · 89/100 | apache-2.0 | HuggingFace |
-| Qwen3.8-27B original | 27,78B (mismo linaje) | 94K (protocolo) | 177/198 · 444/500 · 83/100 | apache-2.0 | HuggingFace (Qwen) |
+| EfficientThink base (SFT+SimPO) | 27,78B (mismo linaje) | 94K (protocolo) | 171/198 · 442/500 · 89/100 | apache-2.0 | Hugging Face |
+| Qwen3.8-27B original | 27,78B (mismo linaje) | 94K (protocolo) | 177/198 · 444/500 · 83/100 | apache-2.0 | Hugging Face (Qwen) |
 | Modelos de otros autores | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ La información disponible solo permite comparar con el modelo base del que deri
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/xtools-at/Qwen3.8-27B-Coder390-Safetensors
+- Hugging Face (este repositorio): https://huggingface.co/xtools-at/Qwen3.8-27B-Coder390-Safetensors
 - Modelo base directo: https://huggingface.co/nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2
 - Modelo original del que deriva esta copia: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2
 - GGUF / GGUF-NInfer: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-GGUF-NInfer

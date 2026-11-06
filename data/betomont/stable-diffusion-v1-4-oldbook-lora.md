@@ -2,9 +2,9 @@
 
 ## Resumen
 
-La LoRA `Betomont/stable-diffusion-v1-4-oldbook-lora` es una adaptación ligera del modelo de difusión `CompVis/stable-diffusion-v1-4` orientada a la generación de ilustraciones con estética de libros antiguos. La desarrolla el usuario Betomont y se distribuye a través de HuggingFace con la librería `diffusers`. El problema que resuelve es acotado: permitir que un pipeline de Stable Diffusion 1.4 produzca imágenes con el estilo visual de las ilustraciones de libros históricos sin necesidad de reentrenar el modelo base.
+La LoRA `Betomont/stable-diffusion-v1-4-oldbook-lora` es una adaptación ligera del modelo de difusión `CompVis/stable-diffusion-v1-4` orientada a la generación de ilustraciones con estética de libros antiguos. La desarrolla el usuario Betomont y se distribuye a través de Hugging Face con la librería `diffusers`. El problema que resuelve es acotado: permitir que un pipeline de Stable Diffusion 1.4 produzca imágenes con el estilo visual de las ilustraciones de libros históricos sin necesidad de reentrenar el modelo base.
 
-Técnicamente se trata de un adaptador LoRA de rango 8 aplicado únicamente al U-Net, manteniendo congelados el text encoder y el VAE del modelo base. El entrenamiento se realizó sobre el dataset `gigant/oldbookillustrations`, con imágenes redimensionadas y recortadas a 512 × 512 píxeles. El repositorio es de tamaño mínimo (0.0 GB según HuggingFace), lo que confirma que solo contiene los pesos del adaptador y no una copia del modelo completo.
+Técnicamente se trata de un adaptador LoRA de rango 8 aplicado únicamente al U-Net, manteniendo congelados el text encoder y el VAE del modelo base. El entrenamiento se realizó sobre el dataset `gigant/oldbookillustrations`, con imágenes redimensionadas y recortadas a 512 × 512 píxeles. El repositorio es de tamaño mínimo (0.0 GB según Hugging Face), lo que confirma que solo contiene los pesos del adaptador y no una copia del modelo completo.
 
 Su relevancia es limitada y muy específica: es un adaptador de nicho, con 13 descargas y 0 likes en el momento de la consulta, pensado para experimentación estilística sobre SD 1.4. No introduce innovaciones arquitectónicas ni capacidades nuevas más allá del condicionamiento de estilo.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Betomont/stable-diffusion-v1-4-oldbook-lora | LoRA rango 8 sobre SD 1.4 | no disponible (prompt de 77 tokens) | sin benchmarks publicados | creativeml-openrail-m | HuggingFace, 13 descargas |
-| CompVis/stable-diffusion-v1-4 (base) | ~860M U-Net + ~123M text encoder | 77 tokens de prompt | benchmarks públicos de FID/CLIP en su model card original | creativeml-openrail-m | HuggingFace, ampliamente usado |
-| Otras LoRA de estilo sobre SD 1.4 | variable (rango 4-128) | 77 tokens de prompt | sin benchmarks estandarizados | habitualmente creativeml-openrail-m | HuggingFace / Civitai |
+| Betomont/stable-diffusion-v1-4-oldbook-lora | LoRA rango 8 sobre SD 1.4 | no disponible (prompt de 77 tokens) | sin benchmarks publicados | creativeml-openrail-m | Hugging Face, 13 descargas |
+| CompVis/stable-diffusion-v1-4 (base) | ~860M U-Net + ~123M text encoder | 77 tokens de prompt | benchmarks públicos de FID/CLIP en su model card original | creativeml-openrail-m | Hugging Face, ampliamente usado |
+| Otras LoRA de estilo sobre SD 1.4 | variable (rango 4-128) | 77 tokens de prompt | sin benchmarks estandarizados | habitualmente creativeml-openrail-m | Hugging Face / Civitai |
 
 La comparación con otras LoRA de estilo es estructuralmente equivalente: todas comparten el modelo base, la ventana de prompt y las limitaciones de resolución (512 × 512 nativa). La diferencia entre ellas es el dataset de entrenamiento y el estilo resultante, no el rendimiento medible con métricas estándar.
 
@@ -79,7 +79,7 @@ La comparación con otras LoRA de estilo es estructuralmente equivalente: todas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Betomont/stable-diffusion-v1-4-oldbook-lora
+- Modelo en Hugging Face: https://huggingface.co/Betomont/stable-diffusion-v1-4-oldbook-lora
 - Modelo base: https://huggingface.co/CompVis/stable-diffusion-v1-4
 - Dataset de entrenamiento: https://huggingface.co/datasets/gigant/oldbookillustrations
 - Librería diffusers: https://github.com/huggingface/diffusers

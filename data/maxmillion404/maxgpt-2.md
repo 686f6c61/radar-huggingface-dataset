@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Capas x anchura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MaxGPT-2 | 110M | 12 x 768 | 512 | Apache 2.0 | HuggingFace y GitHub |
-| MaxGPT-1 | 23M | 6 x 384 | 256 | No disponible en la información | HuggingFace (familia MaxGPT) |
-| MaxGPT-3 | 235M | 16 x 1024 | 1024 | No disponible en la información | HuggingFace (familia MaxGPT) |
-| MaxGPT-3.5 | 235M | MaxGPT-3 + fine-tuning de chat | 1024 | No disponible en la información | HuggingFace (familia MaxGPT) |
+| MaxGPT-2 | 110M | 12 x 768 | 512 | Apache 2.0 | Hugging Face y GitHub |
+| MaxGPT-1 | 23M | 6 x 384 | 256 | No disponible en la información | Hugging Face (familia MaxGPT) |
+| MaxGPT-3 | 235M | 16 x 1024 | 1024 | No disponible en la información | Hugging Face (familia MaxGPT) |
+| MaxGPT-3.5 | 235M | MaxGPT-3 + fine-tuning de chat | 1024 | No disponible en la información | Hugging Face (familia MaxGPT) |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de MaxGPT-2 con alternativas de la misma categoría; la comparación disponible se limita a parámetros, profundidad, anchura y contexto dentro de la propia familia MaxGPT.
 
@@ -83,6 +83,6 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de Max
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MaxMillion404/MaxGPT-2
+- Modelo en Hugging Face: https://huggingface.co/MaxMillion404/MaxGPT-2
 - Repositorio GitHub con código y write-up: https://github.com/MaxwellBrohm/MaxGPT
 - Sitio del autor: https://maxwellbrohm.com

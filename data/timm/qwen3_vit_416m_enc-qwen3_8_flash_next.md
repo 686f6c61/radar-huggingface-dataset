@@ -78,8 +78,8 @@ No se dispone de resultados de benchmarks del modelo en la informacion proporcio
 
 | Modelo | Parametros | Resolucion / parche | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3_vit_416m_enc.qwen3_8_flash_next | 448,0 M | 768x768, parche 16 | 576 tokens de 2560 dim + backbone de 1152 | Qwen Community 1.0 | HuggingFace (timm) |
-| Qwen/Qwen3.8-Flash-Next (modelo completo) | no disponible | no disponible | multimodal completo | Qwen Community 1.0 | HuggingFace |
+| qwen3_vit_416m_enc.qwen3_8_flash_next | 448,0 M | 768x768, parche 16 | 576 tokens de 2560 dim + backbone de 1152 | Qwen Community 1.0 | Hugging Face (timm) |
+| Qwen/Qwen3.8-Flash-Next (modelo completo) | no disponible | no disponible | multimodal completo | Qwen Community 1.0 | Hugging Face |
 | Encoders tipo CLIP ViT-L/14 | ~300 M (referencia externa) | 224x224, parche 14 (referencia externa) | embedding global | licencias variadas | amplia |
 | Encoders tipo DINOv2-L/14 | ~300 M (referencia externa) | 224-518 px, parche 14 (referencia externa) | tokens espaciales | Apache 2.0 (referencia externa) | amplia |
 | Encoders tipo SigLIP SO400M | ~877 M (referencia externa) | 384x384, parche 14 (referencia externa) | tokens espaciales | Apache 2.0 (referencia externa) | amplia |
@@ -103,7 +103,7 @@ La diferencia clave frente a esas familias es la proyeccion a 2560 dimensiones, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/qwen3_vit_416m_enc.qwen3_8_flash_next
+- Modelo en Hugging Face: https://huggingface.co/timm/qwen3_vit_416m_enc.qwen3_8_flash_next
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Revision de origen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/tree/de4b8e4d43b917e7706784d8bb445c9af86a3540
 - Licencia de origen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/de4b8e4d43b917e7706784d8bb445c9af86a3540/LICENSE

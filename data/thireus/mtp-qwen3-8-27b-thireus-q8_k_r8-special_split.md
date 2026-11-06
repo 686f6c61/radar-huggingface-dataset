@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Thireus/mtp-Qwen3.8-27B-THIREUS-Q8_K_R8-SPECIAL_SPLIT` es un artefacto publicado en HuggingFace por el usuario Thireus bajo licencia MIT. Según la información disponible en su model card, no se proporcionan detalles sobre su arquitectura, parámetros, entrenamiento o capacidades. El nombre sugiere una posible relación con la familia Qwen (por la referencia "Qwen3.8"), un tamaño de 27 mil millones de parámetros y una cuantización Q8_K, pero estos extremos no pueden confirmarse con los datos publicados. El repositorio carece de documentación técnica, descripción del modelo, ejemplos de uso o resultados de evaluación, por lo que cualquier afirmación sobre su funcionamiento sería especulativa. Su relevancia actual es limitada debido a la ausencia total de información verificable, lo que impide su evaluación por parte de desarrolladores e investigadores.
+El modelo `Thireus/mtp-Qwen3.8-27B-THIREUS-Q8_K_R8-SPECIAL_SPLIT` es un artefacto publicado en Hugging Face por el usuario Thireus bajo licencia MIT. Según la información disponible en su model card, no se proporcionan detalles sobre su arquitectura, parámetros, entrenamiento o capacidades. El nombre sugiere una posible relación con la familia Qwen (por la referencia "Qwen3.8"), un tamaño de 27 mil millones de parámetros y una cuantización Q8_K, pero estos extremos no pueden confirmarse con los datos publicados. El repositorio carece de documentación técnica, descripción del modelo, ejemplos de uso o resultados de evaluación, por lo que cualquier afirmación sobre su funcionamiento sería especulativa. Su relevancia actual es limitada debido a la ausencia total de información verificable, lo que impide su evaluación por parte de desarrolladores e investigadores.
 
 ## Especificaciones tecnicas
 
@@ -53,6 +53,6 @@ No es posible realizar una comparativa con otros modelos porque se desconocen la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q8_K_R8-SPECIAL_SPLIT
+- Repositorio en Hugging Face: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q8_K_R8-SPECIAL_SPLIT
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código, demos) asociados a este modelo en la información proporcionada.

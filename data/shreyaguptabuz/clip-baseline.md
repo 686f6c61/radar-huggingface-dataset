@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shreyaguptabuz/clip-baseline` es un repositorio de HuggingFace publicado por el usuario shreyaguptabuz que contiene una implementacion de referencia de CLIP (Contrastive Language-Image Pretraining) orientada a tareas de *matching*, es decir, al emparejamiento entre modalidades (texto-imagen o entre pares de entradas). Se trata de una configuracion deliberadamente diminuta ("tiny") cuyo objetivo declarado es servir como codigo transparente y como *smoke test* reproducible, no como modelo listo para produccion.
+`shreyaguptabuz/clip-baseline` es un repositorio de Hugging Face publicado por el usuario shreyaguptabuz que contiene una implementacion de referencia de CLIP (Contrastive Language-Image Pretraining) orientada a tareas de *matching*, es decir, al emparejamiento entre modalidades (texto-imagen o entre pares de entradas). Se trata de una configuracion deliberadamente diminuta ("tiny") cuyo objetivo declarado es servir como codigo transparente y como *smoke test* reproducible, no como modelo listo para produccion.
 
 El dato mas relevante es su escala: 33.088 parametros totales segun los pesos en `safetensors`, un orden de magnitud muy inferior al de cualquier CLIP funcional (el CLIP ViT-B/32 de OpenAI ronda los 151 millones). Con ese tamano, el modelo no puede producir representaciones utiles para recuperacion o clasificacion real; su valor es puramente estructural y pedagogico.
 
@@ -70,10 +70,10 @@ Los siguientes modelos de la misma categoria se incluyen como referencia publica
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| shreyaguptabuz/clip-baseline | 33.088 (33K) | no disponible | BSD-3-Clause | HuggingFace, checkpoint sin entrenar |
-| OpenAI CLIP ViT-B/32 | ~151M | imagen 224x224, texto hasta 77 tokens | MIT (pesos publicados por OpenAI) | HuggingFace, ampliamente desplegado |
-| OpenAI CLIP ViT-L/14 | ~428M | imagen 224x224, texto hasta 77 tokens | MIT (pesos publicados por OpenAI) | HuggingFace, requiere GPU para inferencia agil |
-| SigLIP (variantes base) | variable, ~200M-900M | imagen y texto de longitud flexible | Apache 2.0 en variantes publicadas por Google | HuggingFace, alternativa contrastiva con sigmoid loss |
+| shreyaguptabuz/clip-baseline | 33.088 (33K) | no disponible | BSD-3-Clause | Hugging Face, checkpoint sin entrenar |
+| OpenAI CLIP ViT-B/32 | ~151M | imagen 224x224, texto hasta 77 tokens | MIT (pesos publicados por OpenAI) | Hugging Face, ampliamente desplegado |
+| OpenAI CLIP ViT-L/14 | ~428M | imagen 224x224, texto hasta 77 tokens | MIT (pesos publicados por OpenAI) | Hugging Face, requiere GPU para inferencia agil |
+| SigLIP (variantes base) | variable, ~200M-900M | imagen y texto de longitud flexible | Apache 2.0 en variantes publicadas por Google | Hugging Face, alternativa contrastiva con sigmoid loss |
 
 La diferencia de escala es de tres a cuatro ordenes de magnitud entre este repositorio y cualquier CLIP utilizable. No existe comparacion de rendimiento posible porque no hay modelo entrenado ni metricas publicadas.
 
@@ -91,6 +91,6 @@ La diferencia de escala es de tres a cuatro ordenes de magnitud entre este repos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shreyaguptabuz/clip-baseline
+- Modelo en Hugging Face: https://huggingface.co/shreyaguptabuz/clip-baseline
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a paginas de ayuda de PayPal y no guardan relacion con el repositorio.
 - No se dispone de paper, blog, repositorio de codigo independiente ni demo asociados en la informacion proporcionada.

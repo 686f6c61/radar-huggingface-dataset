@@ -119,7 +119,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mkenfenheuer/evora-qwen3-vl-2b-photos-v3-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mkenfenheuer/evora-qwen3-vl-2b-photos-v3-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Version GGUF oficial del modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct-GGUF
 - Repositorio GitHub de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL

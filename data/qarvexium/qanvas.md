@@ -61,5 +61,5 @@ No disponible. No se han publicado comparaciones con otros modelos de generacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Qarvexium/Qanvas
+- Modelo en Hugging Face: https://huggingface.co/Qarvexium/Qanvas
 - No se han encontrado papers, repositorios adicionales, blogs o demos en la informacion proporcionada.

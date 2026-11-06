@@ -6,7 +6,7 @@ Duet model packages es un repositorio de distribucion de modelos de reconocimien
 
 Los modelos subyacentes son de tipo encoder-decoder para reconocimiento automatico de voz (ASR), exportados a ONNX mediante sherpa-onnx, y un detector de actividad de voz (VAD) para segmentar el audio antes de la transcripcion. Todo el procesamiento es local: la aplicacion descarga los paquetes desde este repositorio y no envia audio ni resultados a servidores externos, lo que lo hace adecuado para escenarios con requisitos de privacidad o conectividad intermitente.
 
-El repositorio ocupa 0,6 GB y esta publicado bajo licencia MIT. Solo soporta ingles (`en`) y no dispone de descargas ni interacciones registradas en HuggingFace en el momento de la consulta. No se trata de un modelo generativo de proposito general, sino de un canal de distribucion de artefactos de inferencia para una aplicacion movil concreta.
+El repositorio ocupa 0,6 GB y esta publicado bajo licencia MIT. Solo soporta ingles (`en`) y no dispone de descargas ni interacciones registradas en Hugging Face en el momento de la consulta. No se trata de un modelo generativo de proposito general, sino de un canal de distribucion de artefactos de inferencia para una aplicacion movil concreta.
 
 ## Especificaciones tecnicas
 
@@ -85,7 +85,7 @@ La comparativa se limita a categoria y enfoque: no hay datos publicados de preci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BNarayanaReddy/duet-models
+- Repositorio en Hugging Face: https://huggingface.co/BNarayanaReddy/duet-models
 - Moonshine (upstream): https://github.com/moonshine-ai/moonshine
 - Silero VAD (upstream): https://github.com/snakers4/silero-vad
 - sherpa-onnx (exports ONNX): https://github.com/k2-fsa/sherpa-onnx

@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OmAr-Kader-DeV/OxCoder-9B-mlx-8Bit | 8,95 B | No disponible | 8 bits | Apache 2.0 | MLX | Repositorio HuggingFace sin descargas registradas |
-| OrionLLM/OxCoder-9B (modelo base) | 8,95 B (heredado) | No disponible | Pesos originales | No disponible en la información proporcionada | No disponible | Repositorio HuggingFace |
+| OmAr-Kader-DeV/OxCoder-9B-mlx-8Bit | 8,95 B | No disponible | 8 bits | Apache 2.0 | MLX | Repositorio Hugging Face sin descargas registradas |
+| OrionLLM/OxCoder-9B (modelo base) | 8,95 B (heredado) | No disponible | Pesos originales | No disponible en la información proporcionada | No disponible | Repositorio Hugging Face |
 | Otras alternativas de ~7-9 B orientadas a código | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificados de benchmarks ni de especificaciones de modelos alternativos en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable con otros modelos de la misma categoría.
@@ -90,7 +90,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones de model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OmAr-Kader-DeV/OxCoder-9B-mlx-8Bit
+- Repositorio en Hugging Face: https://huggingface.co/OmAr-Kader-DeV/OxCoder-9B-mlx-8Bit
 - Modelo base: https://huggingface.co/OrionLLM/OxCoder-9B
 - Herramienta de conversión e inferencia: mlx-lm (https://github.com/ml-explore/mlx-lm)
 - Los resultados de la búsqueda web realizada no contienen ningún enlace relacionado con este modelo: las referencias encontradas tratan sobre una serie de televisión, el actor Omar Sy y una película, por lo que no se incluyen como fuentes técnicas.

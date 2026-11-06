@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eric-venti-seeds/Eyes_Direction_Lora_Flux2Klein4B
+- Modelo en Hugging Face: https://huggingface.co/eric-venti-seeds/Eyes_Direction_Lora_Flux2Klein4B
 - Nodo Eyes Direction Control (GitHub): https://github.com/eric-venti-seeds/Eyes_Direction_Lora_Control
 - Modelo base FLUX.2-klein-4B: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Variante fp8 del modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4b-fp8

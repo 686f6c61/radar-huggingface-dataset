@@ -73,7 +73,7 @@ No se dispone de datos comparativos concretos con otros modelos de moderación e
 
 ## Enlaces
 
-- HuggingFace: [aisingapore/Qwen-SEA-Guard-4B-2602](https://huggingface.co/aisingapore/Qwen-SEA-Guard-4B-2602)
+- Hugging Face: [aisingapore/Qwen-SEA-Guard-4B-2602](https://huggingface.co/aisingapore/Qwen-SEA-Guard-4B-2602)
 - Paper SEA-Guard: [arXiv:2602.01618](https://arxiv.org/abs/2602.01618)
 - Referencia al modelo base: [aisingapore/Qwen-SEA-LION-v4-4B-VL](https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-4B-VL)
 - Documentación SEA-Guard: [docs.sea-lion.ai/models/sea-guard](https://docs.sea-lion.ai/models/sea-guard)

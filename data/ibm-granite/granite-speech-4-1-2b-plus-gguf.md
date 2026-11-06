@@ -77,6 +77,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/ibm-granite/granite-speech-4.1-2b-plus-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/ibm-granite/granite-speech-4.1-2b-plus-GGUF
 - Modelo base: https://huggingface.co/ibm-granite/granite-speech-4.1-2b-plus
 - llama.cpp (build tag referenciado `b11798`): https://github.com/ggml-org/llama.cpp

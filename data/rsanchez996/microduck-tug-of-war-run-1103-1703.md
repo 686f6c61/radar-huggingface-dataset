@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microduck-tug-of-war-run-1103-1703` es una política de control entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo de código abierto microduck, desarrollado por Pollen Robotics. No es un modelo de lenguaje: es un controlador neuronal exportado a ONNX que recibe observaciones de 61 dimensiones y emite 14 acciones a 50 Hz, pensado para ejecutarse en el propio robot a través del daemon `robotctl`. El autor del artefacto es RSanchez996 y se distribuye con la librería `microduck` en HuggingFace.
+`microduck-tug-of-war-run-1103-1703` es una política de control entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo de código abierto microduck, desarrollado por Pollen Robotics. No es un modelo de lenguaje: es un controlador neuronal exportado a ONNX que recibe observaciones de 61 dimensiones y emite 14 acciones a 50 Hz, pensado para ejecutarse en el propio robot a través del daemon `robotctl`. El autor del artefacto es RSanchez996 y se distribuye con la librería `microduck` en Hugging Face.
 
 La política se entrenó con el entorno `Mjlab-TugOfWar-MicroDuck` del repositorio `microduck-challenges`, sobre la base `mjlab-microduck 0.1.0`, con 2048 entornos paralelos, 1000 iteraciones máximas y semilla 1, alcanzando el checkpoint 900. El resultado es una marcha («gait») perpetua: se ejecuta de forma continua hasta que se le indique lo contrario, y se carga en una ranura de política del robot mediante un único comando.
 
@@ -84,7 +84,7 @@ No disponible. La información proporcionada no incluye otras políticas de micr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RSanchez996/microduck-tug-of-war-run-1103-1703
+- Modelo en Hugging Face: https://huggingface.co/RSanchez996/microduck-tug-of-war-run-1103-1703
 - Repositorio de entrenamiento: https://github.com/RSanchez996/microduck-challenges.git
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Documentación del manifiesto de políticas (referenciada en la model card): `docs/policy-manifest.md` en el repositorio del daemon microduck (URL exacta no disponible)

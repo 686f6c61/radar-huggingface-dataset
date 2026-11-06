@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Starlight-Flash GGUF | 9,2B | no disponible | no disponible | GGUF Q8_0 | HuggingFace (Sethblocks) |
-| Qwen 2.5 7B Instruct | 7,6B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 (segun Qwen) | safetensors, GGUF | HuggingFace (Qwen) |
-| Llama 3.1 8B Instruct | 8B | 131.072 tokens (segun Meta) | Llama 3.1 Community License | safetensors, GGUF | HuggingFace (Meta) |
-| Mistral 7B Instruct | 7,3B | 32.768 tokens (segun Mistral) | Apache 2.0 | safetensors, GGUF | HuggingFace (Mistral) |
+| Starlight-Flash GGUF | 9,2B | no disponible | no disponible | GGUF Q8_0 | Hugging Face (Sethblocks) |
+| Qwen 2.5 7B Instruct | 7,6B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 (segun Qwen) | safetensors, GGUF | Hugging Face (Qwen) |
+| Llama 3.1 8B Instruct | 8B | 131.072 tokens (segun Meta) | Llama 3.1 Community License | safetensors, GGUF | Hugging Face (Meta) |
+| Mistral 7B Instruct | 7,3B | 32.768 tokens (segun Mistral) | Apache 2.0 | safetensors, GGUF | Hugging Face (Mistral) |
 
 La comparativa es aproximada: no se dispone de datos de rendimiento de Starlight-Flash que permitan una comparacion cuantitativa con estos modelos. Las cifras de contexto y licencia de los modelos alternativos provienen de su documentacion publica habitual y deben verificarse en sus respectivas model cards.
 
@@ -81,5 +81,5 @@ La comparativa es aproximada: no se dispone de datos de rendimiento de Starlight
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/Sethblocks/Starlight-Flash-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/Sethblocks/Starlight-Flash-GGUF
 - Modelo base: https://huggingface.co/Sethblocks/Starlight-Flash

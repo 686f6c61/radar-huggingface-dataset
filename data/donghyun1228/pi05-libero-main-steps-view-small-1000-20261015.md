@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Entrenamiento | Licencia | Disponibilidad | Evaluación |
 |---|---|---|---|---|---|
-| `Donghyun1228/pi05-libero-main-steps-view-small-1000-20261015` | VLA pi05 adaptado, IDM-only, view_small, 1000 updates | LLM congelado, LoRA de acción 0.1, FSDP2, B32, seed 42 | Apache 2.0 | HuggingFace (0 descargas, 0 likes) | Pendiente, sin tasa de éxito declarada |
+| `Donghyun1228/pi05-libero-main-steps-view-small-1000-20261015` | VLA pi05 adaptado, IDM-only, view_small, 1000 updates | LLM congelado, LoRA de acción 0.1, FSDP2, B32, seed 42 | Apache 2.0 | Hugging Face (0 descargas, 0 likes) | Pendiente, sin tasa de éxito declarada |
 | `lerobot/pi05_libero_finetuned` (π₀.₅ Libero) | VLA π₀.₅ fine-tuned en LIBERO | Co-entrenado con demostraciones y datos multimodales a gran escala (según model card) | no disponible en la información | ModelScope | Entrenado y evaluado en LIBERO según la fuente |
 | `lerobot/pi05_libero_base` (π₀.₅) | VLA π₀.₅ base | Preentrenamiento multimodal y de demostraciones | no disponible en la información | ModelScope | Solo soporta cabeza flow-matching |
-| `Donghyun1228/pi05-libero-source-free-split-vision-view-large-1000-20261010` | Variante del mismo autor con view_large | Encoders de cámara base y muñeca separados, bfloat16 | Apache 2.0 | HuggingFace | no disponible |
+| `Donghyun1228/pi05-libero-source-free-split-vision-view-large-1000-20261010` | Variante del mismo autor con view_large | Encoders de cámara base y muñeca separados, bfloat16 | Apache 2.0 | Hugging Face | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-steps-view-small-1000-20261015
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-steps-view-small-1000-20261015
 - Variante relacionada (view_large, source-free split): https://huggingface.co/Donghyun1228/pi05-libero-source-free-split-vision-view-large-1000-20261010
 - Variante relacionada (current-vision-relation-scalar-yaw30): https://huggingface.co/Donghyun1228/pi05-libero-current-vision-relation-scalar-yaw30-1000-20261013
 - Repositorio GitHub del autor (LIBERO_view): https://github.com/Donghyun1228/LIBERO_view

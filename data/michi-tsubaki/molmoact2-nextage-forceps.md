@@ -71,7 +71,7 @@ No se dispone de información suficiente para comparar este fine-tuning con otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Michi-Tsubaki/MolmoAct2-NEXTAGE-Forceps
+- Modelo en Hugging Face: https://huggingface.co/Michi-Tsubaki/MolmoAct2-NEXTAGE-Forceps
 - Dataset de entrenamiento: https://huggingface.co/datasets/Michi-Tsubaki/hand_over_the_forceps_to_the_hand
 - Modelo base: https://huggingface.co/allenai/MolmoAct2
 - Repositorio oficial de MolmoAct2: https://github.com/allenai/molmoact2

@@ -81,7 +81,7 @@ La ventaja diferencial de GaMS3-12B-Instruct es su cobertura especifica del eslo
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizado): https://huggingface.co/mentolovburek/GaMS3-12B-Instruct-Q4_K_M-GGUF
+- Repositorio Hugging Face (cuantizado): https://huggingface.co/mentolovburek/GaMS3-12B-Instruct-Q4_K_M-GGUF
 - Modelo base original: https://huggingface.co/cjvt/GaMS3-12B-Instruct
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

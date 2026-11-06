@@ -33,7 +33,7 @@ El único elemento aprendido añadido es la regla de temperatura por número de 
 - Distribución de probabilidad calibrada por pregunta, en lugar de una etiqueta única.
 - Inferencia one-pass: una sola pasada hacia delante, sin decodificación.
 - Procesamiento de varias preguntas tipadas sobre un mismo estado en una única entrada.
-- Pipeline declarado en HuggingFace: text-classification.
+- Pipeline declarado en Hugging Face: text-classification.
 - Salida estructurada (structured-output) integrable por API, con etiquetas decision-model y calibrated.
 - Enfoque System One: pensado para decisiones rápidas, potencialmente combinable con un modelo de razonamiento (System Two) en arquitecturas duales.
 - Idioma: únicamente inglés (en).
@@ -77,10 +77,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 | Modelo | Parámetros | Contexto | Decision Index | ECE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| decider-chat-gemma4-31b | 31.273.088.876 | no disponible | 57,33 | 0,047 | Apache-2.0 | HuggingFace |
-| google/gemma-4-31B-it | 31B (aprox.) | no disponible | no disponible (sin readout) | no disponible | Apache-2.0 según la model card | HuggingFace |
+| decider-chat-gemma4-31b | 31.273.088.876 | no disponible | 57,33 | 0,047 | Apache-2.0 | Hugging Face |
+| google/gemma-4-31B-it | 31B (aprox.) | no disponible | no disponible (sin readout) | no disponible | Apache-2.0 según la model card | Hugging Face |
 | Jev 1.13.0 | no disponible | no disponible | 57,91 | no disponible | no disponible | no disponible |
-| Familia decider basada en Qwen3.5 | no disponible | no disponible | no disponible | no disponible | Apache-2.0 (código del readout) | GitHub / HuggingFace |
+| Familia decider basada en Qwen3.5 | no disponible | no disponible | no disponible | no disponible | Apache-2.0 (código del readout) | GitHub / Hugging Face |
 
 La model card cita la familia decider como «System One-style models fine-tuned from Qwen3.5», pero no aporta parámetros, contexto ni puntuaciones comparables de esas variantes.
 
@@ -90,7 +90,7 @@ La model card cita la familia decider como «System One-style models fine-tuned 
 - Riesgo de alucinación: no genera texto libre, pero la distribución de probabilidad puede asignar masa a opciones incorrectas; la calibración se ha medido con ECE 0,047 en el Decision Index, no en dominios arbitrarios.
 - Idiomas: únicamente inglés (en). No se documenta soporte multilingüe.
 - Longitud de contexto no documentada, lo que impide planificar despliegues con entradas largas.
-- Contradicción en los metadatos: la etiqueta de HuggingFace indica base_model:finetune:google/gemma-4-31B-it, mientras que la model card afirma que no hay entrenamiento. Conviene tratar el repositorio como un readout, no como un fine-tune.
+- Contradicción en los metadatos: la etiqueta de Hugging Face indica base_model:finetune:google/gemma-4-31B-it, mientras que la model card afirma que no hay entrenamiento. Conviene tratar el repositorio como un readout, no como un fine-tune.
 - La regla de temperatura T(n) se ajustó por NLL sobre filas propias del autor y excluyendo las seis tareas de test del Decision Index; puede no generalizar a otros dominios.
 - Dependencia de software: requiere el paquete decider-ai en versión 1.8.0 o superior y, para checkpoints grandes, la variante decider.serve_vllm.
 - Adopción nula en el momento de la consulta: 0 descargas y 0 likes, sin validación externa independiente.
@@ -99,11 +99,11 @@ La model card cita la familia decider como «System One-style models fine-tuned 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Mapika/decider-chat-gemma4-31b)
+- [Modelo en Hugging Face](https://huggingface.co/Mapika/decider-chat-gemma4-31b)
 - [Modelo base google/gemma-4-31B-it](https://huggingface.co/google/gemma-4-31B-it)
-- [google/gemma-4-31B en HuggingFace](https://huggingface.co/google/gemma-4-31B)
+- [google/gemma-4-31B en Hugging Face](https://huggingface.co/google/gemma-4-31B)
 - [Gemma 4 en Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)
 - [Gemma 4 model card (Google AI for Developers)](https://ai.google.dev/gemma/docs/core/model_card_4)
 - [Repositorio GitHub Mapika/decider](https://github.com/Mapika/decider)
-- [Colección decider en HuggingFace](https://huggingface.co/collections/Mapika/decider)
+- [Colección decider en Hugging Face](https://huggingface.co/collections/Mapika/decider)
 - [Decision Index](https://multimodalart-jev-decision-index.static.hf.space)

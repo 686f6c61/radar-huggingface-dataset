@@ -77,10 +77,10 @@ El fine-tuning mejora de forma clara la recuperación (Full 0,985 frente a 0,729
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| plots-multilingual-e5-base | 278 M | 512 | Similitud narrativa cross-lingüe (fine-tuning PLOTS) | MIT | HuggingFace |
-| intfloat/multilingual-e5-base | 278 M | 512 | Embeddings multilingües generales | MIT | HuggingFace |
-| intfloat/multilingual-e5-large | 560 M | 512 | Embeddings multilingües generales, mayor capacidad | MIT | HuggingFace |
-| Modelos de recuperación densa multilingües tipo BGE-M3 | no disponible | no disponible | Recuperación multilingüe y multi-vector | no disponible | HuggingFace |
+| plots-multilingual-e5-base | 278 M | 512 | Similitud narrativa cross-lingüe (fine-tuning PLOTS) | MIT | Hugging Face |
+| intfloat/multilingual-e5-base | 278 M | 512 | Embeddings multilingües generales | MIT | Hugging Face |
+| intfloat/multilingual-e5-large | 560 M | 512 | Embeddings multilingües generales, mayor capacidad | MIT | Hugging Face |
+| Modelos de recuperación densa multilingües tipo BGE-M3 | no disponible | no disponible | Recuperación multilingüe y multi-vector | no disponible | Hugging Face |
 
 Frente al modelo base, este fine-tuning gana en recuperación y robustez a entidades enmascaradas, pero no en precisión de similitud narrativa pura. Frente a `multilingual-e5-large`, este modelo es más ligero y especializado en tramas, mientras que el large es más generalista.
 
@@ -98,7 +98,7 @@ Frente al modelo base, este fine-tuning gana en recuperación y robustez a entid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jgmorenof/plots-multilingual-e5-base
+- Modelo en Hugging Face: https://huggingface.co/Jgmorenof/plots-multilingual-e5-base
 - Dataset PLOTS: https://huggingface.co/datasets/Jgmorenof/PLOTS
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-base
 - Cita del dataset (BibTeX en la model card): Moreno, Hamdi, Boros, Jatowt, Bordea, González-Gallardo y Doucet, "PLOTS -- Same Story, Different Words: Paired Plot Outlines for Narrative Similarity and Retrieval", 2026.

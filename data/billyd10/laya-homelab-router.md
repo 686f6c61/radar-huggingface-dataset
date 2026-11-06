@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `billyd10/laya-homelab-router` es un repositorio publicado en HuggingFace por el usuario `billyd10` del que no se dispone de informacion tecnica verificable. La model card asociada unicamente contiene la declaracion de licencia `apache-2.0` y ningun otro campo: no hay descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. Tampoco se declara un pipeline de inferencia, idiomas soportados ni formato de pesos.
+El modelo `billyd10/laya-homelab-router` es un repositorio publicado en Hugging Face por el usuario `billyd10` del que no se dispone de informacion tecnica verificable. La model card asociada unicamente contiene la declaracion de licencia `apache-2.0` y ningun otro campo: no hay descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. Tampoco se declara un pipeline de inferencia, idiomas soportados ni formato de pesos.
 
 El nombre del repositorio sugiere que podria tratarse de un modelo enrutador orientado a entornos de homelab, es decir, un componente que seleccionaria entre distintos modelos o servicios en funcion de la peticion entrante. Sin embargo, esta interpretacion es una inferencia a partir del identificador y no esta respaldada por ninguna documentacion del autor, por lo que no debe tomarse como un hecho.
 
@@ -79,7 +79,7 @@ No disponible. No se dispone de datos de arquitectura, tamano ni rendimiento que
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/billyd10/laya-homelab-router
+- Repositorio en Hugging Face: https://huggingface.co/billyd10/laya-homelab-router
 - Paper: no disponible.
 - Blog tecnico del autor: no disponible.
 - Repositorio de codigo: no disponible.

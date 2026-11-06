@@ -90,6 +90,6 @@ No se han publicado en la información disponible resultados de benchmarks compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbcal2_remove50
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbcal2_remove50
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - La búsqueda web realizada no devolvió enlaces relevantes al modelo, a SVD-LLM ni a sus benchmarks; los resultados obtenidos eran páginas genéricas sobre búsquedas relacionadas de Bing y no se han utilizado como fuente.

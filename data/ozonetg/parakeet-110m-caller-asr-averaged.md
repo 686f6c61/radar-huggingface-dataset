@@ -87,8 +87,8 @@ Comparaciones agregadas declaradas por el autor:
 
 | Modelo | Parametros | Contexto / entrada | WER agrupado (llamadas) | Llamadas retenidas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| parakeet-110m-caller-asr-averaged | 114,6 M | audio 8 kHz remuestreado a 16 kHz | 11,47% | 3,48% | CC BY 4.0 | HuggingFace |
-| nvidia/parakeet-tdt_ctc-110m (base) | 114,6 M | audio 16 kHz | 14,58% | 9,19% | CC BY 4.0 | HuggingFace |
+| parakeet-110m-caller-asr-averaged | 114,6 M | audio 8 kHz remuestreado a 16 kHz | 11,47% | 3,48% | CC BY 4.0 | Hugging Face |
+| nvidia/parakeet-tdt_ctc-110m (base) | 114,6 M | audio 16 kHz | 14,58% | 9,19% | CC BY 4.0 | Hugging Face |
 | Sistema interno previo (110m + adaptador de dominio) | 114,6 M (base) | audio telefonico | 14,00% | 8,68% | no aplica (interno) | no disponible |
 | Parakeet 0.6B afinado (mencionado en la model card) | ~0,6 B | audio telefonico | no disponible | no disponible | no disponible | mencionado, sin detalle |
 
@@ -109,6 +109,6 @@ No se han proporcionado datos de benchmarks de otros modelos comparables en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ozonetg/parakeet-110m-caller-asr-averaged
+- Modelo en Hugging Face: https://huggingface.co/ozonetg/parakeet-110m-caller-asr-averaged
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt_ctc-110m
 - No se han proporcionado otros enlaces (papers, blogs, repos o demos) en la informacion disponible.

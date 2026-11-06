@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`attune-i49-g11-s3-units` es un repositorio publicado en HuggingFace por el usuario `huuhuyng` que no contiene pesos de un modelo de lenguaje, sino artefactos de un pipeline de robótica simulado. Según la model card, el repositorio actúa como contenedor de "unidades" generadas en un bloque de simulación (bloque S3, seed 487776396) sobre un modelo "king" referenciado como `langst-22vu/attune-vector-g11@81b5807`, cuyos pesos no se incluyen aquí. El contenido son directorios `s3/` y `s3chal/` con resultados de tareas de manipulación (por ejemplo `beat_block_hammer`, `place_bread_skillet`, `place_can_basket`) y ficheros auxiliares como `prompt.npz`, vídeos de demostración y logs.
+`attune-i49-g11-s3-units` es un repositorio publicado en Hugging Face por el usuario `huuhuyng` que no contiene pesos de un modelo de lenguaje, sino artefactos de un pipeline de robótica simulado. Según la model card, el repositorio actúa como contenedor de "unidades" generadas en un bloque de simulación (bloque S3, seed 487776396) sobre un modelo "king" referenciado como `langst-22vu/attune-vector-g11@81b5807`, cuyos pesos no se incluyen aquí. El contenido son directorios `s3/` y `s3chal/` con resultados de tareas de manipulación (por ejemplo `beat_block_hammer`, `place_bread_skillet`, `place_can_basket`) y ficheros auxiliares como `prompt.npz`, vídeos de demostración y logs.
 
-El repositorio se describe como ejecutado en una GPU A100-SXM4-80GB en la plataforma Lium, con 8 workers de simulación y la variable `KING_LIVE=1`. Se mencionan dos runs: `dd21ec527fc4eed1` (job r124-i49) con 134 unidades "king" sobre 9 tareas, y `4500deadc2363f3f` (job r124-part) con un "challenger" `i43-B-8000-ema` evaluado contra esas mismas unidades. El tamaño del repositorio es de 0.0 GB según los metadatos de HuggingFace, lo que concuerda con la afirmación de que no hay pesos.
+El repositorio se describe como ejecutado en una GPU A100-SXM4-80GB en la plataforma Lium, con 8 workers de simulación y la variable `KING_LIVE=1`. Se mencionan dos runs: `dd21ec527fc4eed1` (job r124-i49) con 134 unidades "king" sobre 9 tareas, y `4500deadc2363f3f` (job r124-part) con un "challenger" `i43-B-8000-ema` evaluado contra esas mismas unidades. El tamaño del repositorio es de 0.0 GB según los metadatos de Hugging Face, lo que concuerda con la afirmación de que no hay pesos.
 
 Por tanto, no se trata de un modelo de IA open source en el sentido habitual (no hay arquitectura de transformer, ni tokenizador, ni parámetros, ni contexto), sino de un paquete de datos de evaluación de un sistema de robótica simulado. La ficha se redacta con la información disponible y se marcan explícitamente como "no disponible" todos los campos que la model card no cubre.
 
@@ -80,7 +80,7 @@ No se dispone de información suficiente para comparar parámetros, contexto o r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huuhuyng/attune-i49-g11-s3-units
+- Repositorio Hugging Face: https://huggingface.co/huuhuyng/attune-i49-g11-s3-units
 - Modelo king referenciado: https://huggingface.co/langst-22vu/attune-vector-g11
 - Pack S3 original mencionado: https://huggingface.co/huuhuyng/attune-s3-pack
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código ni demos adicionales.

@@ -90,7 +90,7 @@ No disponible información de rendimiento comparativo.
 
 ## Enlaces
 
-- HuggingFace (esta versión GGUF): https://huggingface.co/mradermacher/Qwen3.8-27B-CodeForge-3xMerge-GGUF
+- Hugging Face (esta versión GGUF): https://huggingface.co/mradermacher/Qwen3.8-27B-CodeForge-3xMerge-GGUF
 - Modelo base (merge original): https://huggingface.co/xtools-at/Qwen3.8-27B-CodeForge-3xMerge
 - Página de overview de cuantizaciones de mradermacher: https://hf.tst.eu/model#Qwen3.8-27B-CodeForge-3xMerge-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

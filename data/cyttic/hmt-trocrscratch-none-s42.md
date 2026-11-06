@@ -67,8 +67,8 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| cyttic/hmt-trocrscratch-none-s42 | 22,4 M | no disponible | MIT | HuggingFace | TrOCR desde cero, hebreo, CER 0,3880 |
-| TrOCR (variantes preentrenadas de Microsoft) | variable (aprox. 334 M en base) | no disponible | MIT | HuggingFace | Preentrenado en texto/imagen; no específico para hebreo |
+| cyttic/hmt-trocrscratch-none-s42 | 22,4 M | no disponible | MIT | Hugging Face | TrOCR desde cero, hebreo, CER 0,3880 |
+| TrOCR (variantes preentrenadas de Microsoft) | variable (aprox. 334 M en base) | no disponible | MIT | Hugging Face | Preentrenado en texto/imagen; no específico para hebreo |
 | Modelos HTR específicos para hebreo | no disponible | no disponible | no disponible | no disponible | No se dispone de referencias comparables en la información |
 
 No se dispone de datos de benchmarks comparativos con alternativas en la información proporcionada.
@@ -85,6 +85,6 @@ No se dispone de datos de benchmarks comparativos con alternativas en la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-trocrscratch-none-s42
+- Hugging Face: https://huggingface.co/cyttic/hmt-trocrscratch-none-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split (referenciado en la model card)
 - Detalles del estudio: `results.json` en el repositorio del modelo (referenciado en la model card)

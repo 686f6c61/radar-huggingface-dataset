@@ -81,9 +81,9 @@ Los datos de las alternativas provienen de documentación pública y deben tomar
 
 | Modelo | Parámetros | Contexto / entradas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `mrpero23/smolvla_test1` | 450 M | 3 cámaras 480x640 + estado (6,) | Apache-2.0 | HuggingFace, 0 descargas | Fine-tune de una sola tarea, sin evaluación |
-| `lerobot/smolvla_base` | ~450 M (misma familia) | Multimodal visión-lenguaje-acción | Apache-2.0 | HuggingFace, mantenido por LeRobot | Modelo base preentrenado; punto de partida recomendado |
-| OpenVLA (familia) | ~7 B (aprox.) | Visión + instrucción, una cámara | Licencia condicional según variante | HuggingFace | Mucho mayor coste de inferencia; no cabe en GPU consumer modesta |
+| `mrpero23/smolvla_test1` | 450 M | 3 cámaras 480x640 + estado (6,) | Apache-2.0 | Hugging Face, 0 descargas | Fine-tune de una sola tarea, sin evaluación |
+| `lerobot/smolvla_base` | ~450 M (misma familia) | Multimodal visión-lenguaje-acción | Apache-2.0 | Hugging Face, mantenido por LeRobot | Modelo base preentrenado; punto de partida recomendado |
+| OpenVLA (familia) | ~7 B (aprox.) | Visión + instrucción, una cámara | Licencia condicional según variante | Hugging Face | Mucho mayor coste de inferencia; no cabe en GPU consumer modesta |
 | pi0 / openpi | ~3 B (aprox.) | Visión multi-cámara + texto, *flow matching* | Apache-2.0 (openpi) | Repositorio openpi | Más capaz, pero requiere GPU de gama alta para tiempo real |
 
 Frente a todos ellos, la ventaja de este checkpoint es el coste: 450 M de parámetros permiten inferencia y *fine-tuning* en una sola GPU consumer. La desventaja es la especialización extrema y la ausencia total de métricas publicadas.
@@ -103,7 +103,7 @@ Frente a todos ellos, la ventaja de este checkpoint es el coste: 450 M de parám
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrpero23/smolvla_test1
+- Modelo en Hugging Face: https://huggingface.co/mrpero23/smolvla_test1
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/mrpero23/test1_20261017_133008
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=mrpero23/test1_20261017_133008

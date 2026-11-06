@@ -76,9 +76,9 @@ La comparativa se basa en los datos mencionados en la model card. No se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/Fastiraz/Qwen3.6-35B-A3B-MTP-GGUF
-- Repositorio HuggingFace de Unsloth (mismo modelo, fuente original): https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/Fastiraz/Qwen3.6-35B-A3B-MTP-GGUF
+- Repositorio Hugging Face de Unsloth (mismo modelo, fuente original): https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Blog oficial de Qwen sobre Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Guía de Unsloth para ejecutar Qwen3.6 con MTP: https://unsloth.ai/docs/models/qwen3.6#mtp-guide
 - Guía de InsiderLLM sobre Qwen 3.6 (comparativa 27B vs 35B-A3B): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/

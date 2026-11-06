@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Gapgolden es un repositorio de modelo publicado en HuggingFace por el usuario apexlak11 bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card con descripcion tecnica: el unico contenido del README es la cabecera YAML con la licencia, sin secciones de arquitectura, datos de entrenamiento, capacidades ni instrucciones de uso. Tampoco se declara pipeline de inferencia, idiomas soportados ni tamano de parametros.
+Gapgolden es un repositorio de modelo publicado en Hugging Face por el usuario apexlak11 bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card con descripcion tecnica: el unico contenido del README es la cabecera YAML con la licencia, sin secciones de arquitectura, datos de entrenamiento, capacidades ni instrucciones de uso. Tampoco se declara pipeline de inferencia, idiomas soportados ni tamano de parametros.
 
-El repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (7 de octubre de 2026, segun los metadatos de HuggingFace), lo que sugiere una publicacion reciente y sin actividad posterior ni validacion por parte de la comunidad. Los unicos metadatos disponibles son la etiqueta de region (us) y la licencia Apache 2.0.
+El repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (7 de octubre de 2026, segun los metadatos de Hugging Face), lo que sugiere una publicacion reciente y sin actividad posterior ni validacion por parte de la comunidad. Los unicos metadatos disponibles son la etiqueta de region (us) y la licencia Apache 2.0.
 
 Por todo ello, esta ficha se limita a documentar lo que consta de forma verificable. Cualquier dato sobre arquitectura, tamano, contexto, cuantizacion o rendimiento se marca explicitamente como no disponible. Se recomienda a quien evalúe este modelo que inspeccione directamente los archivos del repositorio antes de plantear cualquier uso.
 
@@ -43,7 +43,7 @@ No es posible recomendar casos de uso concretos sin informacion sobre arquitectu
 - Pruebas de generacion de texto en local: unicamente si los pesos son cargables con una libreria estandar (transformers, llama.cpp u otra) y el formato lo permite.
 - Analisis de licencia para integracion comercial: la licencia Apache 2.0 permite uso comercial, modificacion y redistribucion, siempre que se conserven los avisos de copyright y se documenten los cambios; conviene verificar que el repositorio no incluya componentes de terceros con licencias distintas.
 - Verificacion de procedencia del modelo: comprobar si los pesos derivan de otro modelo base, ya que la licencia Apache 2.0 declarada por el autor no anula las condiciones del modelo original si existiera.
-- Uso como referencia de plantilla de repositorio: el repositorio puede servir para estudiar como se estructura una publicacion minima en HuggingFace, pero no como modelo listo para produccion.
+- Uso como referencia de plantilla de repositorio: el repositorio puede servir para estudiar como se estructura una publicacion minima en Hugging Face, pero no como modelo listo para produccion.
 - Descartado para produccion: con 0 descargas, 0 likes y ausencia total de documentacion, no es adecuado para despliegues en atencion al cliente, generacion de codigo, analisis documental ni ningun otro escenario con requisitos de fiabilidad.
 
 ## Benchmarks y rendimiento
@@ -75,6 +75,6 @@ No disponible. No se puede identificar una categoria de comparacion (tamano, tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/apexlak11/Gapgolden
+- Modelo en Hugging Face: https://huggingface.co/apexlak11/Gapgolden
 - Pagina del autor: https://huggingface.co/apexlak11
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

@@ -92,7 +92,7 @@ Los datos de contexto, rendimiento y disponibilidad de los modelos de referencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LasagnaS/toti-qwen-1.7b-v6-gguf
+- Modelo en Hugging Face: https://huggingface.co/LasagnaS/toti-qwen-1.7b-v6-gguf
 - Modelo base utilizado: https://huggingface.co/unsloth/Qwen3-1.7B
 - Artefacto de origen del ajuste (revision v6): https://huggingface.co/LasagnaS/toti-cakery-toolcall
 - Comando de descarga con Ollama: `ollama pull hf.co/LasagnaS/toti-qwen-1.7b-v6-gguf:Q4_K_M`

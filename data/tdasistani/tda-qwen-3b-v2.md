@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TDA (Türk Dünyası Asistanı Anka) 3B v2 es un ajuste fino (fine-tuning) del modelo Qwen/Qwen2.5-3B-Instruct publicado por el usuario TDAsistani en HuggingFace. Se trata de un modelo de generación de texto en turco orientado a conversación general y a temáticas de historia y cultura del mundo túrquico, según declara el propio autor en la model card. No es un modelo entrenado desde cero: parte de la arquitectura y los pesos del Qwen2.5-3B-Instruct y los adapta mediante LoRA.
+TDA (Türk Dünyası Asistanı Anka) 3B v2 es un ajuste fino (fine-tuning) del modelo Qwen/Qwen2.5-3B-Instruct publicado por el usuario TDAsistani en Hugging Face. Se trata de un modelo de generación de texto en turco orientado a conversación general y a temáticas de historia y cultura del mundo túrquico, según declara el propio autor en la model card. No es un modelo entrenado desde cero: parte de la arquitectura y los pesos del Qwen2.5-3B-Instruct y los adapta mediante LoRA.
 
 El ajuste se ha realizado con la librería Unsloth y cuantización de 4 bits durante el entrenamiento, con una configuración LoRA de rango 16 y alpha 16. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con la publicación de adaptadores o pesos ya fusionados de un modelo de 3B parámetros. La licencia es Apache 2.0, heredada del modelo base.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TDAsistani/tda-qwen-3b-v2 | 3B | No especificado (base: 32.768 tokens) | Sin benchmarks publicados | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-3B-Instruct (modelo base) | 3B | 32.768 tokens (ampliable con YaRN) | Benchmarks publicados por el equipo de Qwen | Apache 2.0 | HuggingFace |
+| TDAsistani/tda-qwen-3b-v2 | 3B | No especificado (base: 32.768 tokens) | Sin benchmarks publicados | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-3B-Instruct (modelo base) | 3B | 32.768 tokens (ampliable con YaRN) | Benchmarks publicados por el equipo de Qwen | Apache 2.0 | Hugging Face |
 | Otros modelos de 3B comparables (Llama-3.2-3B-Instruct, Phi-3.5-mini) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks del ajuste que permitan una comparación de rendimiento con alternativas de la misma categoría.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks del ajuste que permitan una comparación de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TDAsistani/tda-qwen-3b-v2
+- Modelo en Hugging Face: https://huggingface.co/TDAsistani/tda-qwen-3b-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de recursos citado en la model card (logo/recursos del autor): https://github.com/tdaresmi/tda-releases
 - Paper, blog o demo adicionales: no disponible (la búsqueda web no devolvió resultados relevantes sobre este modelo).

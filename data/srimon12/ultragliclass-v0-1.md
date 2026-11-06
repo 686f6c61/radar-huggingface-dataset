@@ -97,7 +97,7 @@ UltraGliClass v0.1 destaca frente a los dos modelos GLiClass base en escenarios 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Srimon12/ultragliclass-v0.1
+- Modelo en Hugging Face: https://huggingface.co/Srimon12/ultragliclass-v0.1
 - Modelo base UltraBERT-150M: https://huggingface.co/dmis-lab/UltraBERT-150M
 - Repositorio de codigo, receta de entrenamiento y resultados: https://github.com/srimon12/ultragliclass
 - Framework GLiClass: https://github.com/Knowledgator/GLiClass

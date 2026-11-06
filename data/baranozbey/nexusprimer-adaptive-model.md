@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks frente a otros modelos en la inform
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| NexusPrimer Adaptive Hint Predictor v2.0 | Arbol de decision tabular (ONNX) | no disponible | no aplica (8 features) | F1 0,9091 en test interno de 12 ejemplos | MIT | HuggingFace |
+| NexusPrimer Adaptive Hint Predictor v2.0 | Arbol de decision tabular (ONNX) | no disponible | no aplica (8 features) | F1 0,9091 en test interno de 12 ejemplos | MIT | Hugging Face |
 | Regresion logistica (baseline tabular) | Modelo lineal | no disponible | no aplica | no disponible | segun implementacion | generico |
 | Random Forest / Gradient Boosting (baseline tabular) | Ensemble de arboles | no disponible | no aplica | no disponible | segun implementacion | generico |
 
@@ -99,6 +99,6 @@ No se dispone de comparativas publicadas con alternativas concretas en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baranozbey/nexusprimer-adaptive-model
+- Modelo en Hugging Face: https://huggingface.co/baranozbey/nexusprimer-adaptive-model
 - Dataset referenciado en la model card: `custom-nexusprimer-sessions` (no se proporciona URL publica)
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados al modelo.

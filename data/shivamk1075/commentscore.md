@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CommentScore es un modelo de clasificación de texto basado en DistilBERT, desarrollado por shivamk1075, que tiene como objetivo clasificar comentarios en tres categorías: positivo, negativo y neutral. Se trata de un modelo ligero y de inferencia rápida, diseñado para funcionar sin necesidad de GPU, lo que lo hace adecuado para despliegues en entornos con recursos limitados. El proyecto incluye dos variantes: una versión compleja basada en DistilBERT fine-tuned con TensorFlow y HuggingFace Transformers, y una versión más ligera que utiliza un vectorizador y un modelo serializados con joblib. Aunque su rendimiento es inferior al de modelos más grandes, su velocidad y simplicidad lo convierten en una opción práctica para tareas de análisis de sentimiento en tiempo real.
+CommentScore es un modelo de clasificación de texto basado en DistilBERT, desarrollado por shivamk1075, que tiene como objetivo clasificar comentarios en tres categorías: positivo, negativo y neutral. Se trata de un modelo ligero y de inferencia rápida, diseñado para funcionar sin necesidad de GPU, lo que lo hace adecuado para despliegues en entornos con recursos limitados. El proyecto incluye dos variantes: una versión compleja basada en DistilBERT fine-tuned con TensorFlow y Hugging Face Transformers, y una versión más ligera que utiliza un vectorizador y un modelo serializados con joblib. Aunque su rendimiento es inferior al de modelos más grandes, su velocidad y simplicidad lo convierten en una opción práctica para tareas de análisis de sentimiento en tiempo real.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ CommentScore es un modelo de clasificación de texto basado en DistilBERT, desar
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en DistilBERT, una versión destilada de BERT que conserva la mayor parte de su capacidad con un número significativamente menor de parámetros. Se ha fine-tuned de extremo a extremo sobre un conjunto de datos de comentarios de YouTube etiquetados, utilizando TensorFlow y la librería Transformers de HuggingFace. El repositorio también incluye una variante más ligera que emplea un vectorizador y un modelo serializados con joblib, lo que facilita un despliegue rápido y sin dependencias pesadas. No se han proporcionado detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni el uso de técnicas como RLHF o DPO.
+El modelo se basa en DistilBERT, una versión destilada de BERT que conserva la mayor parte de su capacidad con un número significativamente menor de parámetros. Se ha fine-tuned de extremo a extremo sobre un conjunto de datos de comentarios de YouTube etiquetados, utilizando TensorFlow y la librería Transformers de Hugging Face. El repositorio también incluye una variante más ligera que emplea un vectorizador y un modelo serializados con joblib, lo que facilita un despliegue rápido y sin dependencias pesadas. No se han proporcionado detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni el uso de técnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - La inferencia es extremadamente rápida, según el autor, incluso sin aceleración por hardware.
 - El tamaño del repositorio es de 0.3 GB, lo que sugiere que los pesos del modelo ocupan poco espacio en memoria.
 - Para la variante ligera con joblib, el despliegue es aún más sencillo y no requiere frameworks pesados.
-- Se puede desplegar mediante la librería Transformers de HuggingFace, así como con herramientas compatibles con el pipeline de text-classification.
+- Se puede desplegar mediante la librería Transformers de Hugging Face, así como con herramientas compatibles con el pipeline de text-classification.
 
 ## Comparativa con modelos similares
 
@@ -63,6 +63,6 @@ No se dispone de información comparativa con otros modelos de clasificación de
 
 ## Enlaces
 
-- [HuggingFace - shivamk1075/commentscore](https://huggingface.co/shivamk1075/commentscore)
+- [Hugging Face - shivamk1075/commentscore](https://huggingface.co/shivamk1075/commentscore)
 - [GitHub - shivamk1075/CommentScore](https://github.com/shivamk1075/CommentScore)
 - [README del repositorio](https://github.com/shivamk1075/CommentScore/blob/main/README.md)

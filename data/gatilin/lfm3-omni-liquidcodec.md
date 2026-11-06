@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3 Omni LiquidCodec es un codec neuronal de audio (tokenizador de audio) extraído del modelo multimodal LiquidAI/LFM3-Omni-2B y empaquetado de forma independiente por el usuario `gatilin` en HuggingFace. No se trata de un modelo de lenguaje, sino del componente de codificación y decodificación de audio que acompaña al modelo Omni original: convierte formas de onda de audio en códigos discretos y las reconstruye a partir de ellos. El archivo safetensors incluido es una copia exacta del fichero fuente del repositorio oficial, validada contra su SHA-256 de LFS.
+LFM3 Omni LiquidCodec es un codec neuronal de audio (tokenizador de audio) extraído del modelo multimodal LiquidAI/LFM3-Omni-2B y empaquetado de forma independiente por el usuario `gatilin` en Hugging Face. No se trata de un modelo de lenguaje, sino del componente de codificación y decodificación de audio que acompaña al modelo Omni original: convierte formas de onda de audio en códigos discretos y las reconstruye a partir de ellos. El archivo safetensors incluido es una copia exacta del fichero fuente del repositorio oficial, validada contra su SHA-256 de LFS.
 
 El paquete contiene 73.559.090 parámetros en formato safetensors (aproximadamente 0,1 GB de repositorio), lo que lo sitúa en un rango muy ligero y apto para ejecución en CPU o GPU de gama baja. Trabaja con audio mono a 24 kHz y procesa el audio en tramas de 1.920 muestras, con relleno (padding) hasta completar la trama. Su relevancia radica en que permite reutilizar el tokenizador de audio de LFM3-Omni de forma aislada, sin necesidad de cargar el modelo lingüístico ni el codificador visual del sistema completo.
 
@@ -76,7 +76,7 @@ No disponible. La información proporcionada no incluye datos de otros codecs de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gatilin/lfm3-omni-liquidcodec
+- Repositorio Hugging Face: https://huggingface.co/gatilin/lfm3-omni-liquidcodec
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Revisión del modelo base referenciada: `21d75123f86c1f7ffb4bef1ea202710c4e7ebe67`
 - Licencia: fichero `LICENSE` incluido en el repositorio (LFM Open License 1.0)

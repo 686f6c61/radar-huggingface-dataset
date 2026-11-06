@@ -73,7 +73,7 @@ El autor advierte que la evaluacion de la operacion de empresa corresponde a la 
 
 | Modelo | Parametros | Contexto | Precision (tarea de decision) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-hsw-v1 | 0,8B (base) + LoRA | no disponible | 72,1 % (regret 1,77) | apache-2.0 | HuggingFace, downloads: 0 |
+| connectailab-rl-hsw-v1 | 0,8B (base) + LoRA | no disponible | 72,1 % (regret 1,77) | apache-2.0 | Hugging Face, downloads: 0 |
 | Qwen/Qwen3.5-0.8B (base, sin entrenar) | 0,8B | no disponible | 33,3 % (regret 2,32) | no disponible en la informacion proporcionada | modelo base referenciado |
 | Politica profesora (PPO en simulador) | no disponible (modelo pequeno) | no disponible | superior a la del modelo segun el autor | no disponible | interna del proyecto, no publicada |
 
@@ -92,7 +92,7 @@ No se dispone de informacion sobre otros modelos comparables de decision making 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/SUNGWOONHW/connectailab-rl-hsw-v1
+- Pagina del modelo en Hugging Face: https://huggingface.co/SUNGWOONHW/connectailab-rl-hsw-v1
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube de CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

@@ -6,7 +6,7 @@ Mixtral-8x7B-v0.1 es un modelo de lenguaje generativo preentrenado de tipo Mixtu
 
 La relevancia del modelo reside en su eficiencia computacional: al activar únicamente un subconjunto de expertos por token, el coste de inferencia se aproxima al de un modelo denso mucho menor, mientras que la capacidad total de parámetros se mantiene alta. Según la propia model card, Mixtral-8x7B supera a Llama 2 70B en la mayoría de los benchmarks que Mistral AI evaluó, lo que lo sitúa como referencia en la categoría de modelos abiertos de gran tamaño con licencia permisiva.
 
-Se distribuye como modelo base (no ajustado por instrucciones ni con mecanismos de moderación), con soporte declarado para francés, italiano, alemán, español e inglés y una ventana de contexto de 32.000 tokens según el nombre del release original (mixtral-8x7b-32kseqlen). El repositorio analizado tiene 0 descargas y 0 likes, y fue creado el 26 de septiembre de 2026 según los metadatos de HuggingFace.
+Se distribuye como modelo base (no ajustado por instrucciones ni con mecanismos de moderación), con soporte declarado para francés, italiano, alemán, español e inglés y una ventana de contexto de 32.000 tokens según el nombre del release original (mixtral-8x7b-32kseqlen). El repositorio analizado tiene 0 descargas y 0 likes, y fue creado el 26 de septiembre de 2026 según los metadatos de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ Se distribuye como modelo base (no ajustado por instrucciones ni con mecanismos 
 
 La arquitectura es un transformer decoder-only con capas de atención y capas de mezcla de expertos (MoE) dispersas. Cada capa MoE contiene 8 expertos y un router que selecciona los 2 expertos más adecuados para cada token, de modo que solo una fracción de los pesos interviene en cada paso de decodificación. Esto permite que el modelo tenga 46.700 millones de parámetros totales pero un coste de cómputo por token comparable al de un modelo denso de aproximadamente 12.900 millones de parámetros. La model card no especifica la composición exacta del dataset de entrenamiento, el número de tokens vistos ni si se aplicaron fases de RLHF o DPO; indica únicamente que se trata de un modelo preentrenado y que, por tanto, carece de mecanismos de moderación.
 
-El repositorio analizado es una réplica de pesos compatible con vLLM y con la librería transformers de HuggingFace, derivada del release original distribuido por torrent. La propia model card advierte que "the file format and parameter names are different" respecto a ese release y que el modelo "cannot (yet) be instantiated with HF" en ese formato concreto, lo que constituye un caveat técnico relevante para su integración. No se documentan innovaciones adicionales como decodificación especulativa, atención lineal o mecanismos híbridos SSM en la información disponible.
+El repositorio analizado es una réplica de pesos compatible con vLLM y con la librería transformers de Hugging Face, derivada del release original distribuido por torrent. La propia model card advierte que "the file format and parameter names are different" respecto a ese release y que el modelo "cannot (yet) be instantiated with HF" en ese formato concreto, lo que constituye un caveat técnico relevante para su integración. No se documentan innovaciones adicionales como decodificación especulativa, atención lineal o mecanismos híbridos SSM en la información disponible.
 
 ## Capacidades
 
@@ -87,10 +87,10 @@ Los datos de Llama 2 70B y Mistral 7B v0.1 provienen de conocimiento público y 
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/ArchiveStudio/Mixtral-8x7B-v0.1
+- Repositorio analizado en Hugging Face: https://huggingface.co/ArchiveStudio/Mixtral-8x7B-v0.1
 - Repositorio canónico de Mistral AI (referenciado en la model card): https://huggingface.co/mistralai/Mixtral-8x7B-v0.1
 - Blog de lanzamiento de Mistral AI: https://mistral.ai/news/mixtral-of-experts/
 - Release original por torrent (enlace magnet incluido en la model card): magnet:?xt=urn:btih:5546272da9065eddeb6fcd7ffddeef5b75be79a7&dn=mixtral-8x7b-32kseqlen
 - vLLM (librería declarada para el servicio del modelo): https://github.com/vllm-project/vllm
-- Transformers de HuggingFace (librería compatible según la model card): https://github.com/huggingface/transformers
+- Transformers de Hugging Face (librería compatible según la model card): https://github.com/huggingface/transformers
 - Política de privacidad de Mistral AI citada en la model card: https://mistral.ai/fr/terms/

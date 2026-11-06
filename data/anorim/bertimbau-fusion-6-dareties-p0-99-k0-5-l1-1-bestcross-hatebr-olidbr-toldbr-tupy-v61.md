@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo identificado como `anorim/bertimbau-fusion-6-dareties-p0.99-k0.5-l1.1-bestcross-hatebr-olidbr-toldbr-tupy-v61` es un checkpoint de la familia BERTimbau (BERT en portugues de Brasil) publicado por el usuario anorim en HuggingFace. Por el propio identificador se deduce que se trata de una fusion de seis checkpoints mediante la tecnica DARE-TIES, con hiperparametros de poda y escalado p=0.99, k=0.5 y lambda=1.1, partiendo de los mejores pesos obtenidos en validacion cruzada (bestcross). Los sufijos del nombre remiten a conjuntos de datos brasilenos de odio y lenguaje ofensivo: HateBR, OLID-BR, ToLD-BR y TuPy.
+El modelo identificado como `anorim/bertimbau-fusion-6-dareties-p0.99-k0.5-l1.1-bestcross-hatebr-olidbr-toldbr-tupy-v61` es un checkpoint de la familia BERTimbau (BERT en portugues de Brasil) publicado por el usuario anorim en Hugging Face. Por el propio identificador se deduce que se trata de una fusion de seis checkpoints mediante la tecnica DARE-TIES, con hiperparametros de poda y escalado p=0.99, k=0.5 y lambda=1.1, partiendo de los mejores pesos obtenidos en validacion cruzada (bestcross). Los sufijos del nombre remiten a conjuntos de datos brasilenos de odio y lenguaje ofensivo: HateBR, OLID-BR, ToLD-BR y TuPy.
 
 El modelo cuenta con 108.924.674 parametros reales segun los pesos en safetensors, lo que lo situa en el rango de un BERT base (aproximadamente 110 millones). El repositorio ocupa 0,4 GB y se distribuye unicamente en formato safetensors, con la etiqueta `bert` y `region:us`. Es, por tanto, un modelo encoder de clasificacion orientado a tareas de moderacion de contenido en portugues, no un modelo generativo.
 
-Su relevancia es acotada pero concreta: la publicacion de checkpoints fusionados con DARE-TIES para deteccion de discurso de odio en portugues permite reutilizar un unico cabezal de clasificacion en lugar de mantener varios modelos especializados, reduciendo coste de inferencia y de despliegue. No obstante, la ficha de HuggingFace no aporta licencia, idiomas declarados, pipeline ni documentacion de entrenamiento, por lo que su evaluacion queda limitada a lo que se puede inferir del identificador y del recuento de parametros.
+Su relevancia es acotada pero concreta: la publicacion de checkpoints fusionados con DARE-TIES para deteccion de discurso de odio en portugues permite reutilizar un unico cabezal de clasificacion en lugar de mantener varios modelos especializados, reduciendo coste de inferencia y de despliegue. No obstante, la ficha de Hugging Face no aporta licencia, idiomas declarados, pipeline ni documentacion de entrenamiento, por lo que su evaluacion queda limitada a lo que se puede inferir del identificador y del recuento de parametros.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ Su relevancia es acotada pero concreta: la publicacion de checkpoints fusionados
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | 512 tokens (valor estandar de BERT base; no confirmado en la informacion proporcionada) |
 | Tipos de cuantizacion | no disponibles (el repo solo publica safetensors; existen cuantizaciones dinamicas genericas de la familia BERT, pero no se documentan en la ficha) |
-| Idiomas soportados | portugues de Brasil (inferido de BERTimbau y de los datasets del identificador); no declarado en la ficha de HuggingFace |
+| Idiomas soportados | portugues de Brasil (inferido de BERTimbau y de los datasets del identificador); no declarado en la ficha de Hugging Face |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (0,4 GB totales en el repositorio) |
 
@@ -53,7 +53,7 @@ Los seis checkpoints de origen parecen estar ajustados sobre conjuntos brasileno
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye tabla de metricas, no se aportan resultados sobre HateBR, OLID-BR, ToLD-BR o TuPy, ni comparaciones con BERTimbau base o modelos multilingues. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: los enlaces recuperados tratan exclusivamente sobre la diferencia entre media aritmetica y media ponderada y no guardan relacion con este checkpoint.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye tabla de metricas, no se aportan resultados sobre HateBR, OLID-BR, ToLD-BR o TuPy, ni comparaciones con BERTimbau base o modelos multilingues. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: los enlaces recuperados tratan exclusivamente sobre la diferencia entre media aritmetica y media ponderada y no guardan relacion con este checkpoint.
 
 ## Requisitos de hardware
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| bertimbau-fusion-6-dareties (este modelo) | 108.924.674 | 512 (inferido) | no disponible | HuggingFace, safetensors | Fusion de 6 checkpoints con DARE-TIES sobre datos de odio en pt-BR |
-| BERTimbau base (NeuralMind) | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | Modelo preentrenado base en portugues de Brasil; seria el punto de partida de los checkpoints fusionados |
-| BERT multilingual (mBERT) | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | Alternativa multilingue, habitualmente inferior al modelo especifico de portugues en tareas de pt-BR |
+| bertimbau-fusion-6-dareties (este modelo) | 108.924.674 | 512 (inferido) | no disponible | Hugging Face, safetensors | Fusion de 6 checkpoints con DARE-TIES sobre datos de odio en pt-BR |
+| BERTimbau base (NeuralMind) | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | Modelo preentrenado base en portugues de Brasil; seria el punto de partida de los checkpoints fusionados |
+| BERT multilingual (mBERT) | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | Alternativa multilingue, habitualmente inferior al modelo especifico de portugues en tareas de pt-BR |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada, por lo que la comparativa se limita a la categoria arquitectonica y no permite afirmar superioridad numerica de este modelo frente a las alternativas.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 - Riesgo de alucinacion: no aplica en el sentido generativo, pero si existe riesgo de falsos positivos y falsos negativos en la clasificacion, especialmente con ironia, sarcasmo, jerga regional o lenguaje codificado.
 - Limitaciones de contexto: con 512 tokens, los textos largos deben truncarse o dividirse, lo que puede degradar la deteccion cuando la senal de odio depende del contexto completo del mensaje.
 - Limitaciones de idioma: el modelo esta orientado a portugues de Brasil; su uso en portugues europeo u otras lenguas no esta validado y probablemente rinda peor.
-- Restricciones de licencia: la licencia no esta declarada en la ficha de HuggingFace. Esto impide confirmar si se permite el uso comercial. Debe aclararse con el autor antes de integrarlo en un producto.
+- Restricciones de licencia: la licencia no esta declarada en la ficha de Hugging Face. Esto impide confirmar si se permite el uso comercial. Debe aclararse con el autor antes de integrarlo en un producto.
 - Ausencia de documentacion de entrenamiento: no se especifican datos, hiperparametros de ajuste, umbrales de decision ni metricas de validacion, lo que dificulta la reproducibilidad y la evaluacion rigurosa.
 - Naturaleza experimental: el nombre incluye un sufijo de version (`v61`) y el repositorio acumula muy pocas descargas y ningun "like", lo que sugiere un artefacto de experimentacion personal mas que un modelo consolidado para produccion.
 - Uso responsable: cualquier despliegue en moderacion debe acompanarse de revision humana, dado el impacto directo sobre la libertad de expresion de los usuarios y la imposibilidad de auditar el modelo con la informacion disponible.
@@ -87,5 +87,5 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anorim/bertimbau-fusion-6-dareties-p0.99-k0.5-l1.1-bestcross-hatebr-olidbr-toldbr-tupy-v61
+- Modelo en Hugging Face: https://huggingface.co/anorim/bertimbau-fusion-6-dareties-p0.99-k0.5-l1.1-bestcross-hatebr-olidbr-toldbr-tupy-v61
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su paper, a su repositorio de codigo ni a demos. Los resultados devueltos por la busqueda tratan sobre media aritmetica frente a media ponderada y no guardan relacion con este checkpoint.

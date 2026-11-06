@@ -85,9 +85,9 @@ No se dispone de datos de rendimiento comparables (mismos benchmarks) para los m
 
 | Modelo | Parametros | Contexto | Perplexity (Wikipedia tr) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TinyTurk-Wiki-C-Max | 3.450.688 | 384 tokens | 10,33 | MIT | HuggingFace |
-| TinyTurk-Wiki-A-Tiny | No disponible | No disponible | No disponible | MIT (presumible) | HuggingFace |
-| TinyTurk-Wiki-B-Sweet | ~2,76 M (segun nota del paper) | No disponible | No disponible | MIT (presumible) | HuggingFace |
+| TinyTurk-Wiki-C-Max | 3.450.688 | 384 tokens | 10,33 | MIT | Hugging Face |
+| TinyTurk-Wiki-A-Tiny | No disponible | No disponible | No disponible | MIT (presumible) | Hugging Face |
+| TinyTurk-Wiki-B-Sweet | ~2,76 M (segun nota del paper) | No disponible | No disponible | MIT (presumible) | Hugging Face |
 
 La model card indica que la variante B, en torno a 2,76 M de parametros, es la que obtiene el mejor resultado en diagnosticas estructurales, mientras que C_max se presenta como la de mayor calidad global en morfologia y dependencias de larga distancia. No se dispone de comparaciones con modelos externos de la misma categoria (por ejemplo, otros LM turcos de escala similar) en la informacion proporcionada.
 
@@ -106,11 +106,11 @@ La model card indica que la variante B, en torno a 2,76 M de parametros, es la q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stunmuffin/TinyTurk-Wiki-C-Max
+- Hugging Face: https://huggingface.co/stunmuffin/TinyTurk-Wiki-C-Max
 - Modelo hermano TinyTurk-Wiki-A-Tiny: https://huggingface.co/stunmuffin/TinyTurk-Wiki-A-Tiny
 - Modelo hermano TinyTurk-Wiki-B-Sweet: https://huggingface.co/stunmuffin/TinyTurk-Wiki-B-Sweet
 - Modelo hermano TinyTurk-Wiki-C-Max: https://huggingface.co/stunmuffin/TinyTurk-Wiki-C-Max
 - Dataset de entrenamiento: https://huggingface.co/datasets/barandinho/wikipedia_tr
 - Paper: no disponible (la model card lo menciona pero no incluye enlace)
-- Repositorio de codigo: no disponible (la model card referencia `model.py` y `example.py` dentro del repositorio de HuggingFace)
+- Repositorio de codigo: no disponible (la model card referencia `model.py` y `example.py` dentro del repositorio de Hugging Face)
 - Demo: no disponible

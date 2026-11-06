@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `luckysong777/kanana-1.5-8b-instruct-2505-Persona-LORA` | Adaptador LoRA sobre base de 8B | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| `kakaocorp/kanana-1.5-8b-instruct-2505` (modelo base) | 8B | no disponible | no disponible (Kakao declara mejoras en codigo, matematicas y function calling) | no disponible en esta busqueda | HuggingFace y NVIDIA NGC |
-| `luckysong777/kanana-1.5-8b-instruct-2505-Persona-GGUF` | Adaptador sobre base de 8B, formato GGUF | no disponible | no disponible | no disponible | HuggingFace |
-| `hungpill/kanana-1.5-8b-instruct-2505-Persona-Merged` | 8B (adaptador fusionado con el base) | no disponible | no disponible | no disponible | HuggingFace |
+| `luckysong777/kanana-1.5-8b-instruct-2505-Persona-LORA` | Adaptador LoRA sobre base de 8B | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| `kakaocorp/kanana-1.5-8b-instruct-2505` (modelo base) | 8B | no disponible | no disponible (Kakao declara mejoras en codigo, matematicas y function calling) | no disponible en esta busqueda | Hugging Face y NVIDIA NGC |
+| `luckysong777/kanana-1.5-8b-instruct-2505-Persona-GGUF` | Adaptador sobre base de 8B, formato GGUF | no disponible | no disponible | no disponible | Hugging Face |
+| `hungpill/kanana-1.5-8b-instruct-2505-Persona-Merged` | 8B (adaptador fusionado con el base) | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 

@@ -59,7 +59,7 @@ Estas metricas indican que el fine-tuning mejora drasticamente la fiabilidad de 
 
 - VRAM estimada para inferencia: el modelo base de 12B en fp16 requiere aproximadamente 24GB de VRAM. Con cuantizacion Q4_K_M (formato GGUF), la huella se reduce a unos 7-8GB, lo que permite ejecutarlo en GPUs de consumo con 8GB o mas.
 - GPU recomendadas: para fp16 se recomienda una NVIDIA RTX 4090 (24GB) o A100 (40GB). Para cuantizaciones Q4_K_M o Q5_K_M, una RTX 3060 (12GB) o RTX 4070 (8GB) es suficiente. El autor entrenó el modelo en una RTX 5070 Ti de 16GB, por lo que la inferencia con Q6_K o Q8_0 cabe en esa configuracion.
-- Opciones de despliegue: al estar disponible en formato GGUF, se puede usar con llama.cpp, Ollama o LM Studio. El adaptador PEFT (safetensors) se puede cargar con la libreria `transformers` de HuggingFace y servir con vLLM o TGI, siempre que se combine con el modelo base.
+- Opciones de despliegue: al estar disponible en formato GGUF, se puede usar con llama.cpp, Ollama o LM Studio. El adaptador PEFT (safetensors) se puede cargar con la libreria `transformers` de Hugging Face y servir con vLLM o TGI, siempre que se combine con el modelo base.
 - Latencia y throughput: no se han publicado mediciones. Como referencia, un modelo de 12B en Q4_K_M suele generar entre 20 y 40 tokens por segundo en una RTX 4090, pero esto depende del hardware y del backend.
 
 ## Comparativa con modelos similares
@@ -84,9 +84,9 @@ La comparativa se limita a modelos de tamano similar con capacidades de codifica
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/TheOneWhoWill/Coding-Monkey-Gemma
-- Repositorio HuggingFace con cuantizaciones GGUF: https://huggingface.co/TheOneWhoWill/Coding-Monkey-Gemma-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-12B-it
+- Repositorio Hugging Face del adaptador: https://huggingface.co/TheOneWhoWill/Coding-Monkey-Gemma
+- Repositorio Hugging Face con cuantizaciones GGUF: https://huggingface.co/TheOneWhoWill/Coding-Monkey-Gemma-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-12B-it
 - Documentacion oficial de Gemma (Google AI for Developers): https://ai.google.dev/gemma/docs/get_started
 - Repositorio GitHub de Gemma (Google DeepMind): https://github.com/google-deepmind/gemma
 - Blog de Google Developers sobre la familia Gemma: https://developers.googleblog.com/en/gemma-family-expands-with-models-tailored-for-developers-and-researchers/

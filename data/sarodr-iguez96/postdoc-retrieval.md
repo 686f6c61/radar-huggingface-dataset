@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sarodr-iguez96/postdoc-retrieval` es un prototipo de investigación publicado en HuggingFace por el usuario sarodr-iguez96. Se trata de una implementación de la arquitectura MobileViT orientada a tareas de recuperación (retrieval), es decir, a la búsqueda de correspondencias entre consultas y elementos de un corpus, típicamente en el ámbito imagen-texto. El repositorio incluye un script de entrenamiento (`train.py`), una configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors. La escala declarada en la model card es "giant", aunque el recuento de parámetros derivado del checkpoint es de solo 16.576, lo que indica que el artefacto publicado no corresponde a un modelo de gran tamaño entrenado.
+`sarodr-iguez96/postdoc-retrieval` es un prototipo de investigación publicado en Hugging Face por el usuario sarodr-iguez96. Se trata de una implementación de la arquitectura MobileViT orientada a tareas de recuperación (retrieval), es decir, a la búsqueda de correspondencias entre consultas y elementos de un corpus, típicamente en el ámbito imagen-texto. El repositorio incluye un script de entrenamiento (`train.py`), una configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors. La escala declarada en la model card es "giant", aunque el recuento de parámetros derivado del checkpoint es de solo 16.576, lo que indica que el artefacto publicado no corresponde a un modelo de gran tamaño entrenado.
 
 El aspecto más importante para cualquier evaluador es que este repositorio **no contiene un modelo entrenado ni auditado**. El propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con rendimiento validado. No se reclama ninguna puntuación de benchmark y no se documenta el volumen de datos, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO.
 
@@ -51,7 +51,7 @@ No se ha publicado información sobre el número de tokens de entrenamiento, la 
 - Andamiaje de baselines de recuperación imagen-texto: usar la configuración incluida como punto de partida reproducible y comparar variantes de arquitectura con la misma exposición de datos y presupuesto de ajuste, tal como recomienda el propio autor.
 - Estudios de ablación sobre MobileViT: modificar atención dilatada, fusión con compuertas, activación o normalización en `config.json` y medir el efecto sobre la métrica de recuperación elegida.
 - Validación de pipelines de datos: ejecutar el script con un dataset propio para comprobar la correcta carga, tokenización o preprocesado antes de invertir cómputo en entrenamientos completos.
-- Material docente o de laboratorio: servir como ejemplo mínimo y legible de cómo se estructura un repositorio de investigación en HuggingFace (script, configuración, receta y checkpoint).
+- Material docente o de laboratorio: servir como ejemplo mínimo y legible de cómo se estructura un repositorio de investigación en Hugging Face (script, configuración, receta y checkpoint).
 - Integración en herramientas de despliegue: probar que adaptadores y APIs de carga automática pueden manejar una implementación personalizada, dado que el autor advierte que las APIs genéricas requieren un adaptador explícito.
 - Evaluación prevista en Flickr30k: el autor sugiere como primera evaluación útil utilizar este conjunto de datos, reportar la métrica de la tarea en al menos tres semillas e incluir un baseline de capacidad equivalente; el modelo publicado no incluye esos resultados.
 
@@ -91,7 +91,7 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sarodr-iguez96/postdoc-retrieval
+- Modelo en Hugging Face: https://huggingface.co/sarodr-iguez96/postdoc-retrieval
 - `train.py` (artefacto principal del repositorio, según la model card)
 - `config.json` (configuración de arquitectura)
 - `training_args.json` (receta de experimento por defecto)

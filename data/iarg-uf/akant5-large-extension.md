@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IARG-UF/akant5-large-extension | 1.321.593.856 | no disponible | ak, en | research-only | HuggingFace |
-| google/mt5-large | 1.200.000.000 (aprox.) | no disponible | 101 idiomas (incluye ak) | Apache 2.0 | HuggingFace |
-| IARG-UF/akant5-large-extension-init | no disponible | no disponible | ak, en | research-only | HuggingFace |
-| IARG-UF/akant5-base-extension | no disponible | no disponible | ak, en | research-only | HuggingFace (coleccion AkanT5) |
+| IARG-UF/akant5-large-extension | 1.321.593.856 | no disponible | ak, en | research-only | Hugging Face |
+| google/mt5-large | 1.200.000.000 (aprox.) | no disponible | 101 idiomas (incluye ak) | Apache 2.0 | Hugging Face |
+| IARG-UF/akant5-large-extension-init | no disponible | no disponible | ak, en | research-only | Hugging Face |
+| IARG-UF/akant5-base-extension | no disponible | no disponible | ak, en | research-only | Hugging Face (coleccion AkanT5) |
 
 El modelo se diferencia de google/mt5-large por el vocabulario extendido y el CPT sobre twi, a costa de una licencia restrictiva y de un rendimiento en tareas downstream que requiere fine-tuning. Frente a la inicializacion `akant5-large-extension-init`, anade el entrenamiento CPT. Frente a las variantes small y base de la misma coleccion, ofrece mayor capacidad a cambio de mas requisitos de VRAM. No se dispone de datos de benchmarks que permitan comparar rendimiento numerico entre estas alternativas.
 
@@ -94,7 +94,7 @@ El modelo se diferencia de google/mt5-large por el vocabulario extendido y el CP
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IARG-UF/akant5-large-extension
+- Modelo en Hugging Face: https://huggingface.co/IARG-UF/akant5-large-extension
 - Inicializacion de vocabulario: https://huggingface.co/IARG-UF/akant5-large-extension-init
 - Coleccion AkanT5: https://huggingface.co/collections/IARG-UF/akant5-cpt-checkpoints-and-vocabulary-initializations
 - Modelo base original: https://huggingface.co/google/mt5-large

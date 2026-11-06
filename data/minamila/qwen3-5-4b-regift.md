@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MinaMila/Qwen3.5-4B-ReGiFT es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario MinaMila, entrenado sobre el modelo base Qwen/Qwen3.5-4B. Se distribuye como repositorio de pesos PEFT (libreria `peft` version 0.19.1) con un tamano de repositorio de 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo. La etiqueta de pipeline es `text-generation` y el modelo esta declarado como conversacional (`conversational`), por lo que el caso de uso previsto es la generacion de texto en formato de dialogo.
+MinaMila/Qwen3.5-4B-ReGiFT es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario MinaMila, entrenado sobre el modelo base Qwen/Qwen3.5-4B. Se distribuye como repositorio de pesos PEFT (libreria `peft` version 0.19.1) con un tamano de repositorio de 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo. La etiqueta de pipeline es `text-generation` y el modelo esta declarado como conversacional (`conversational`), por lo que el caso de uso previsto es la generacion de texto en formato de dialogo.
 
 El problema que resuelve es el habitual de la familia de adaptadores: permitir un ajuste especifico de dominio o de estilo sobre un modelo base de 4B parametros sin necesidad de reentrenar ni redistribuir los pesos completos. Al tratarse de un adaptador, no puede ejecutarse de forma autonoma: requiere cargar Qwen/Qwen3.5-4B y aplicar encima los pesos LoRA, lo que reduce el coste de almacenamiento y de transferencia frente a un fine-tuning completo.
 
-La relevancia del modelo esta limitada por la informacion publicada. La model card es la plantilla por defecto de HuggingFace y no contiene ningun campo completado: no se documentan datos de entrenamiento, hiperparametros, licencia, idiomas ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado el 10 de septiembre de 2026. Cualquier evaluacion en produccion exige, por tanto, una validacion empirica propia antes de su adopcion.
+La relevancia del modelo esta limitada por la informacion publicada. La model card es la plantilla por defecto de Hugging Face y no contiene ningun campo completado: no se documentan datos de entrenamiento, hiperparametros, licencia, idiomas ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado el 10 de septiembre de 2026. Cualquier evaluacion en produccion exige, por tanto, una validacion empirica propia antes de su adopcion.
 
 ## Especificaciones tecnicas
 
@@ -84,7 +84,7 @@ La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo
 
 ## Limitaciones y advertencias
 
-- Model card sin contenido: todos los apartados son la plantilla por defecto de HuggingFace, con marcas "[More Information Needed]". No hay informacion sobre datos, metodologia, evaluacion ni uso previsto.
+- Model card sin contenido: todos los apartados son la plantilla por defecto de Hugging Face, con marcas "[More Information Needed]". No hay informacion sobre datos, metodologia, evaluacion ni uso previsto.
 - Licencia no declarada: sin licencia explicita no puede asumirse permiso de uso comercial, modificación ni redistribucion. Es un bloqueante legal para produccion.
 - Dependencia del modelo base: el adaptador no es autonomo y su comportamiento y licencia quedan condicionados por Qwen/Qwen3.5-4B.
 - Sin datos de entrenamiento: se desconoce el corpus, su composicion y su fecha de corte, por lo que no puede acotarse el riesgo de sesgo ni de fuga de datos.
@@ -96,7 +96,7 @@ La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MinaMila/Qwen3.5-4B-ReGiFT
+- Hugging Face: https://huggingface.co/MinaMila/Qwen3.5-4B-ReGiFT
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Lacoste et al. (2019), Quantifying the Carbon Emissions of Machine Learning: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto: https://mlco2.github.io/impact#compute

@@ -4,7 +4,7 @@
 
 El modelo `trinhkhng/karcher_Merged_gpt2_0.4` es una fusión de dos variantes de GPT-2, creada por el usuario trinhkhng mediante la herramienta mergekit. Se trata de un experimento de fusión de modelos de lenguaje preentrenados, combinando una versión "debias" (probablemente ajustada para reducir sesgos) con el GPT-2 original. El resultado es un modelo de 124 millones de parámetros, basado en la arquitectura transformer decoder-only, con capacidad de generación de texto en inglés. Su relevancia radica en explorar métodos de fusión de modelos como la media de Karcher, que permite combinar pesos de forma geométrica, y en ofrecer una alternativa ligera para tareas de generación de texto en entornos con recursos limitados.
 
-El modelo se publica en HuggingFace con el pipeline de text-generation, está etiquetado como compatible con text-generation-inference y endpoints, y ha sido descargado unas 1200 veces. Aunque su licencia no está especificada, el modelo base GPT-2 suele ser de código abierto (MIT), por lo que podría ser utilizable en investigación y producción, aunque se recomienda verificar los términos. Su tamaño compacto (124M) lo hace viable para ejecutarse en CPU o GPUs de baja gama.
+El modelo se publica en Hugging Face con el pipeline de text-generation, está etiquetado como compatible con text-generation-inference y endpoints, y ha sido descargado unas 1200 veces. Aunque su licencia no está especificada, el modelo base GPT-2 suele ser de código abierto (MIT), por lo que podría ser utilizable en investigación y producción, aunque se recomienda verificar los términos. Su tamaño compacto (124M) lo hace viable para ejecutarse en CPU o GPUs de baja gama.
 
 ## Especificaciones técnicas
 
@@ -75,7 +75,7 @@ La principal diferencia es que este modelo es una fusión, mientras que los otro
 
 ## Enlaces
 
-- [HuggingFace - trinhkhng/karcher_Merged_gpt2_0.4](https://huggingface.co/trinhkhng/karcher_Merged_gpt2_0.4)
+- [Hugging Face - trinhkhng/karcher_Merged_gpt2_0.4](https://huggingface.co/trinhkhng/karcher_Merged_gpt2_0.4)
 - [Página de FriendliAI para el modelo](https://friendli.ai/models/trinhkhng/karcher_Merged_gpt2_0.4)
 - [Versión medium del mismo autor](https://huggingface.co/trinhkhng/karcher_Merged_gpt2-medium_0.4)
 - [Versión large del mismo autor](https://huggingface.co/trinhkhng/karcher_Merged_gpt2-large_0.4)

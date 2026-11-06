@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Se trata de un adaptador LoRA (PEFT) publicado por el usuario de HuggingFace Jongbin-kr, obtenido mediante ajuste supervisado (SFT) sobre un subconjunto "answer-only" del conjunto de datos ConvFinQA, que versa sobre preguntas financieras con razonamiento numérico. El adaptador se monta sobre el modelo base LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct, desarrollado por LG AI Research, y no se distribuye fusionado con él: son pesos de adaptador, no un modelo completo.
+Se trata de un adaptador LoRA (PEFT) publicado por el usuario de Hugging Face Jongbin-kr, obtenido mediante ajuste supervisado (SFT) sobre un subconjunto "answer-only" del conjunto de datos ConvFinQA, que versa sobre preguntas financieras con razonamiento numérico. El adaptador se monta sobre el modelo base LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct, desarrollado por LG AI Research, y no se distribuye fusionado con él: son pesos de adaptador, no un modelo completo.
 
 El interés del artefacto es metodológico más que de producto. El nombre y las etiquetas del repositorio (`accuracy-band-selection`, `lora`) indican que forma parte de un experimento sobre selección de datos de entrenamiento por bandas de precisión del modelo: la condición de selección declarada es `accuracy_medium_low_1to2_selseed2026_ratio0.12`, con una semilla de entrenamiento fija (42) y un manifiesto de selección verificable por SHA256. El repositorio incluye, además de la rama `main` (mejor checkpoint de validación), tres ramas por época, lo que permite estudiar la dinámica de entrenamiento.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks de este adaptador, por lo que la comparaci�
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Jongbin-kr/exaone-verireason-sft_accuracy_hard_1to2_ratio0.12_seed2026
-- Modelo base en HuggingFace: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Jongbin-kr/exaone-verireason-sft_accuracy_hard_1to2_ratio0.12_seed2026
+- Modelo base en Hugging Face: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Repositorio del conjunto de datos ConvFinQA: no disponible en la información proporcionada.
 - Paper, blog o demo del adaptador: no disponible. La búsqueda web realizada no devolvió ningún resultado relevante sobre el modelo (los resultados obtenidos trataban sobre técnica de tiro en baloncesto y no guardan relación con el artefacto).

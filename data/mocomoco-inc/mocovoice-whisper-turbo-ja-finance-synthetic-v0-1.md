@@ -92,7 +92,7 @@ La mejora en CER es modesta (0.1620 a 0.1526) y se logra sin regresiones en hech
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mocomoco-inc/mocovoice-whisper-turbo-ja-finance-synthetic-v0.1
+- Modelo en Hugging Face: https://huggingface.co/mocomoco-inc/mocovoice-whisper-turbo-ja-finance-synthetic-v0.1
 - Sitio de producto mocoVoice (ingles): https://products.mocomoco.ai/en/
 - Sitio de producto mocoVoice (japones): https://products.mocomoco.ai/
 - Noticia sobre mocoVoice Web: https://www.mocomoco.ai/en/news/mocoVoice-web/

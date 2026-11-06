@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lab7-shakespeare-generator` es un modelo de lenguaje publicado en HuggingFace por el usuario Nyabludatel bajo el identificador `Nyabludatel/lab7-shakespeare-generator`. Por el nombre y el contexto, se trata de un modelo orientado a la generación de texto con estilo shakespeariano, presumiblemente entrenado o ajustado como parte de una práctica de laboratorio (el prefijo "lab7" sugiere un ejercicio académico). El repositorio tiene un tamaño de 5,9 GB y contiene pesos en formato safetensors con arquitectura declarada como Llama.
+`lab7-shakespeare-generator` es un modelo de lenguaje publicado en Hugging Face por el usuario Nyabludatel bajo el identificador `Nyabludatel/lab7-shakespeare-generator`. Por el nombre y el contexto, se trata de un modelo orientado a la generación de texto con estilo shakespeariano, presumiblemente entrenado o ajustado como parte de una práctica de laboratorio (el prefijo "lab7" sugiere un ejercicio académico). El repositorio tiene un tamaño de 5,9 GB y contiene pesos en formato safetensors con arquitectura declarada como Llama.
 
 El modelo cuenta con 134.515.008 parámetros totales según los metadatos de safetensors, lo que lo sitúa en la franja de los modelos pequeños (aproximadamente 134 millones de parámetros). Esta escala es coherente con un modelo de tipo GPT-2 small o similar, adecuado para tareas de generación de texto acotadas y para ejecución en hardware de consumo. No se dispone de información sobre el contexto máximo, la licencia, los idiomas soportados ni el pipeline asociado.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| lab7-shakespeare-generator | 134,5 M | no disponible | no disponible | HuggingFace (77 descargas) |
-| GPT-2 small | 124 M | 1.024 tokens | MIT | HuggingFace, ampliamente usado |
-| distilgpt2 | 82 M | 1.024 tokens | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache 2.0 | HuggingFace |
+| lab7-shakespeare-generator | 134,5 M | no disponible | no disponible | Hugging Face (77 descargas) |
+| GPT-2 small | 124 M | 1.024 tokens | MIT | Hugging Face, ampliamente usado |
+| distilgpt2 | 82 M | 1.024 tokens | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache 2.0 | Hugging Face |
 
 La comparación con GPT-2 small y distilgpt2 es la más directa por escala. Frente a ellos, `lab7-shakespeare-generator` carece de documentación, licencia declarada y benchmarks publicados, lo que limita su uso en producción frente a alternativas consolidadas. TinyLlama-1.1B es un orden de magnitud mayor y no es directamente comparable en requisitos, pero sirve como referencia de la siguiente franja de tamaño.
 
@@ -84,5 +84,5 @@ La comparación con GPT-2 small y distilgpt2 es la más directa por escala. Fren
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nyabludatel/lab7-shakespeare-generator
+- Hugging Face: https://huggingface.co/Nyabludatel/lab7-shakespeare-generator
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

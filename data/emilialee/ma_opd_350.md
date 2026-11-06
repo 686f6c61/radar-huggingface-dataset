@@ -38,7 +38,7 @@ No se dispone de información sobre el proceso de entrenamiento: el autor no ha 
 - Fine-tuning específico de dominio: el adaptador puede servir como punto de partida para ajustes posteriores en dominios concretos, como documentación técnica o soporte, si se dispone del dataset de entrenamiento original.
 - Pruebas de concepto en investigación: para experimentos sobre eficiencia de adaptadores LoRA en modelos pequeños, útil en entornos académicos o prototipos.
 - Generación de contenido estructurado: el modelo base puede producir listas, resúmenes o respuestas con formato, pero no hay evidencia de que el adaptador mejore esta capacidad.
-- Integración en pipelines de generación de texto con Transformers: se puede cargar con `AutoModelForCausalLM` y `PeftModel`, ideal para aplicaciones que ya usan el ecosistema HuggingFace.
+- Integración en pipelines de generación de texto con Transformers: se puede cargar con `AutoModelForCausalLM` y `PeftModel`, ideal para aplicaciones que ya usan el ecosistema Hugging Face.
 - Evaluación de calidad en español: aunque no se documentan idiomas, el modelo base Qwen3.5-2B funciona bien en español, por lo que el adaptador podría evaluarse para tareas de generación en este idioma.
 
 ## Benchmarks y rendimiento
@@ -68,6 +68,6 @@ No se dispone de información sobre adaptadores comparables del mismo autor o co
 
 ## Enlaces
 
-- [HuggingFace: EmiliaLee/ma_opd_350](https://huggingface.co/EmiliaLee/ma_opd_350)
+- [Hugging Face: EmiliaLee/ma_opd_350](https://huggingface.co/EmiliaLee/ma_opd_350)
 - [Modelo base: Qwen/Qwen3.5-2B](https://huggingface.co/Qwen/Qwen3.5-2B)
 - [PEFT (librería de ajuste)](https://github.com/huggingface/peft)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `dgambettaphd/M_llm2_run0_gen10_WXS_doc1000_synt64_temp0.5_lr1e-04_acm_SYNLAST` es un checkpoint publicado en HuggingFace Hub por el usuario `dgambettaphd`. Se trata de un modelo subido con la libreria `transformers` y pesos en `safetensors`, con un repositorio de 0,2 GB. El propio autor ha publicado una model card autogenerada por la plataforma en la que la practica totalidad de los campos figuran como `[More Information Needed]`, por lo que no hay informacion oficial sobre arquitectura, datos de entrenamiento, idiomas, licencia o rendimiento.
+El modelo identificado como `dgambettaphd/M_llm2_run0_gen10_WXS_doc1000_synt64_temp0.5_lr1e-04_acm_SYNLAST` es un checkpoint publicado en Hugging Face Hub por el usuario `dgambettaphd`. Se trata de un modelo subido con la libreria `transformers` y pesos en `safetensors`, con un repositorio de 0,2 GB. El propio autor ha publicado una model card autogenerada por la plataforma en la que la practica totalidad de los campos figuran como `[More Information Needed]`, por lo que no hay informacion oficial sobre arquitectura, datos de entrenamiento, idiomas, licencia o rendimiento.
 
 El nombre del repositorio sugiere un experimento de ajuste fino (fine-tuning) con hiperparametros codificados en el identificador: `run0`, `gen10`, `doc1000`, `synt64`, `temp0.5`, `lr1e-04`, junto con los sufijos `acm` y `SYNLAST`. La etiqueta `unsloth` indica que el entrenamiento probablemente se realizo con la libreria Unsloth, orientada al ajuste eficiente en memoria de modelos transformer. No obstante, esta lectura es una inferencia a partir del nombre y no una confirmacion del autor.
 
@@ -31,7 +31,7 @@ Respecto al entrenamiento, el identificador del repositorio contiene cadenas que
 
 No se ha publicado ninguna lista de capacidades en la informacion disponible. A partir de los metadatos solo puede afirmarse lo siguiente:
 
-- El modelo es cargable con la libreria `transformers` y, segun la etiqueta `endpoints_compatible`, es compatible con los endpoints de inferencia de HuggingFace.
+- El modelo es cargable con la libreria `transformers` y, segun la etiqueta `endpoints_compatible`, es compatible con los endpoints de inferencia de Hugging Face.
 - No hay evidencia documentada de soporte de tool calling, function calling ni razonamiento multi-paso.
 - No hay evidencia documentada de capacidades multilingues: el campo de idiomas figura como no disponible.
 - No hay evidencia documentada de modalidades adicionales (vision, audio) ni de modos especiales como thinking mode.
@@ -47,7 +47,7 @@ Advertencia: dado que no existe documentacion tecnica ni evaluacion publicada, l
 - Aumento de datos sinteticos: la presencia de `temp0.5` y `synt64` en el identificador sugiere que el modelo se ha utilizado o entrenado en un bucle de generacion sintetica, por lo que podria reutilizarse para producir muestras sinteticas de un corpus pequeno, con revision humana obligatoria.
 - Investigacion sobre olvido catastrofico: al ser un ajuste fino sobre un base desconocido, resulta un candidato util para estudiar la degradacion de capacidades generales tras un ajuste con pocos datos.
 - Reproducibilidad de experimentos: sirve como checkpoint intermedio para reproducir una cadena de entrenamiento descrita en un articulo o tesis, siempre que el autor publique finalmente la metodologia.
-- Despliegue en endpoints de HuggingFace: la etiqueta `endpoints_compatible` permite levantar una demo HTTP rapida para evaluacion interna por parte de un equipo, sin escribir codigo de servidor adicional.
+- Despliegue en endpoints de Hugging Face: la etiqueta `endpoints_compatible` permite levantar una demo HTTP rapida para evaluacion interna por parte de un equipo, sin escribir codigo de servidor adicional.
 
 ## Benchmarks y rendimiento
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa, un repositorio de 0,2 GB en `safetensors` sugiere un modelo pequeno que, en precision de 16 bits, ocuparia del orden de 200 MB de pesos, mas el consumo del runtime (tipicamente entre 0,5 GB y 1,5 GB adicionales en funcion de la longitud de contexto y del backend).
 - GPU recomendadas: no disponibles. Por el tamano del repositorio, cualquier GPU con al menos 4-6 GB de VRAM deberia ser suficiente, incluidas tarjetas de gama de consumo.
 - Compatibilidad con GPU de consumo: probablemente si (serie RTX 30/40 y equivalentes), aunque no hay confirmacion del autor ni pruebas publicadas.
-- Opciones de despliegue: `transformers` en Python de forma nativa; la etiqueta `endpoints_compatible` habilita el despliegue en HuggingFace Inference Endpoints. Para `vLLM`, `llama.cpp`, `Ollama` o `TGI` seria necesario verificar compatibilidad de arquitectura y, en el caso de los dos ultimos, convertir previamente los pesos a GGUF, ya que el repositorio no incluye ese formato.
+- Opciones de despliegue: `transformers` en Python de forma nativa; la etiqueta `endpoints_compatible` habilita el despliegue en Hugging Face Inference Endpoints. Para `vLLM`, `llama.cpp`, `Ollama` o `TGI` seria necesario verificar compatibilidad de arquitectura y, en el caso de los dos ultimos, convertir previamente los pesos a GGUF, ya que el repositorio no incluye ese formato.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -79,10 +79,10 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dgambettaphd/M_llm2_run0_gen10_WXS_doc1000_synt64_temp0.5_lr1e-04_acm_SYNLAST
-- Perfil del autor en HuggingFace: https://huggingface.co/dgambettaphd
+- Modelo en Hugging Face: https://huggingface.co/dgambettaphd/M_llm2_run0_gen10_WXS_doc1000_synt64_temp0.5_lr1e-04_acm_SYNLAST
+- Perfil del autor en Hugging Face: https://huggingface.co/dgambettaphd
 - Referencia del tag `arxiv:1910.09700` (Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning"): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla de la model card: https://mlco2.github.io/impact
 - Proyecto Unsloth, referenciado en los tags del repositorio: https://github.com/unslothai/unsloth
-- Documentacion de HuggingFace Inference Endpoints, relevante por el tag `endpoints_compatible`: https://huggingface.co/docs/inference-endpoints/index
+- Documentacion de Hugging Face Inference Endpoints, relevante por el tag `endpoints_compatible`: https://huggingface.co/docs/inference-endpoints/index
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo en la informacion disponible.

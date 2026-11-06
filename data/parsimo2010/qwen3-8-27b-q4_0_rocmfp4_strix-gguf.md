@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `parsimo2010/Qwen3.8-27B-Q4_0_ROCMFP4_STRIX-GGUF` es una publicación de pesos en formato GGUF alojada en HuggingFace por el usuario parsimo2010. La model card asociada no contiene más información que la declaración de licencia MIT: no incluye descripción del modelo, detalles de arquitectura, datos de entrenamiento, idiomas soportados ni resultados de evaluación. El repositorio registra cero descargas y cero likes, y su fecha de creación y última actualización coincide en el 19 de septiembre de 2026, lo que indica una publicación sin mantenimiento posterior.
+El repositorio `parsimo2010/Qwen3.8-27B-Q4_0_ROCMFP4_STRIX-GGUF` es una publicación de pesos en formato GGUF alojada en Hugging Face por el usuario parsimo2010. La model card asociada no contiene más información que la declaración de licencia MIT: no incluye descripción del modelo, detalles de arquitectura, datos de entrenamiento, idiomas soportados ni resultados de evaluación. El repositorio registra cero descargas y cero likes, y su fecha de creación y última actualización coincide en el 19 de septiembre de 2026, lo que indica una publicación sin mantenimiento posterior.
 
 A partir exclusivamente del nombre del repositorio pueden formularse hipótesis no confirmadas: se trataría de una cuantización Q4_0 de un modelo de la familia Qwen3 con aproximadamente 27 000 millones de parámetros, empaquetada con kernels ROCm FP4 y orientada a hardware AMD Strix (probablemente Strix Halo). Ninguna de estas afirmaciones está respaldada por la documentación del autor ni por resultados de búsqueda, por lo que deben tratarse como inferencias y no como especificaciones verificadas.
 
@@ -86,7 +86,7 @@ Además, el repositorio no enlaza al modelo original del que derivaría la cuant
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/parsimo2010/Qwen3.8-27B-Q4_0_ROCMFP4_STRIX-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/parsimo2010/Qwen3.8-27B-Q4_0_ROCMFP4_STRIX-GGUF
 - Model card del autor: sin contenido técnico, solo el bloque `license: mit`.
 - Paper, blog, repositorio de código o demo: no disponibles.
 - Resultados de búsqueda web: no se encontró ningún enlace relevante. Las únicas páginas devueltas fueron dominios corporativos de Microsoft (microsoft.com, account.microsoft.com, myaccount.microsoft.com, en.wikipedia.org/wiki/Microsoft), sin relación alguna con el modelo.

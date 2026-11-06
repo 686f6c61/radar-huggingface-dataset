@@ -67,7 +67,7 @@ No se dispone de datos de benchmarks ni de comparaciones publicadas por el autor
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp-blockpick-cotrain-dr-real075-statenoise | 287,5 M | n_obs_steps = 1; horizonte 64/32 | No disponible | other | HuggingFace |
+| dp-blockpick-cotrain-dr-real075-statenoise | 287,5 M | n_obs_steps = 1; horizonte 64/32 | No disponible | other | Hugging Face |
 | Otras diffusion policies de LeRobot | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Políticas ACT de LeRobot | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de comparaciones publicadas por el autor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/dp-blockpick-cotrain-dr-real075-statenoise
+- Modelo en Hugging Face: https://huggingface.co/padiredd/dp-blockpick-cotrain-dr-real075-statenoise
 - Dataset simulado: https://huggingface.co/datasets/padiredd/pick-cube-topdown-region10k-dr-dr2-3cam
 - Dataset real de teleoperación: https://huggingface.co/datasets/omkarpatil/pick-lime-block
 - LeRobot (framework base): https://github.com/huggingface/lerobot

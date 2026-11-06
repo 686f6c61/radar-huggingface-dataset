@@ -93,7 +93,7 @@ El repositorio incluye `RESULTS.md`, `QUALITY.md` y `OPTIMIZATION.md`, que docum
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/Nurymanau/Qwen-Image-2.1-Q4_K_M-MLX
+- Ficha del modelo en Hugging Face: https://huggingface.co/Nurymanau/Qwen-Image-2.1-Q4_K_M-MLX
 - Licencia del modelo de imagen (MODEL-LICENSE): https://huggingface.co/Nurymanau/Qwen-Image-2.1-Q4_K_M-MLX/blob/main/MODEL-LICENSE
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Cuantizaciones GGUF de Unsloth: https://huggingface.co/unsloth/Qwen-Image-2.1-GGUF

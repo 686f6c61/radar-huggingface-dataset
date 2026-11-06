@@ -131,7 +131,7 @@ Nota: la comparativa directa publicada es con DeepSeek-R1-Distill-Qwen-32B en bf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CMSManhattan/JiRackTernaryPrecision-36B-chat
+- Modelo en Hugging Face: https://huggingface.co/CMSManhattan/JiRackTernaryPrecision-36B-chat
 - Modelo base: https://huggingface.co/CMSManhattan/JiRackUltra_32b
 - Demo en vivo (CPU, TQ2_0): https://huggingface.co/spaces/CMSManhattan/JiRack-36B-Chat
 - Berkeley Function Calling Leaderboard (BFCL): no disponible (enlace no incluido en la información proporcionada)

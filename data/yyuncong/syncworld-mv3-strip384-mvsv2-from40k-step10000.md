@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SyncWorld-mv3-strip384-mvSV2-from40k-step10000 es un checkpoint intermedio de un modelo del mundo (world model) para robótica desarrollado por el usuario de HuggingFace `yyuncong`, dentro del proyecto SyncWorld-dev. El modelo aprende dinámica directa (forward dynamics) en contexto: dado un fotograma ancla y una secuencia de acciones comandadas del efector final, genera los siguientes 16 fotogramas de vídeo prediciendo cómo evolucionará la escena. Está diseñado específicamente para manipulación robótica multivista, con una codificación en tiras (strips) de tres cámaras: dos cámaras en tercera persona y una cámara de muñeca.
+SyncWorld-mv3-strip384-mvSV2-from40k-step10000 es un checkpoint intermedio de un modelo del mundo (world model) para robótica desarrollado por el usuario de Hugging Face `yyuncong`, dentro del proyecto SyncWorld-dev. El modelo aprende dinámica directa (forward dynamics) en contexto: dado un fotograma ancla y una secuencia de acciones comandadas del efector final, genera los siguientes 16 fotogramas de vídeo prediciendo cómo evolucionará la escena. Está diseñado específicamente para manipulación robótica multivista, con una codificación en tiras (strips) de tres cámaras: dos cámaras en tercera persona y una cámara de muñeca.
 
 La innovación principal es el mecanismo de recuperación (retrieval) en contexto: antes de generar, el modelo incorpora K fragmentos observados de vídeo y acción (de 1 a 8) en la misma ventana de atención como condicionamiento limpio, recuperados de una biblioteca de más de 33 millones de fragmentos mediante una métrica de distancia que combina trayectoria del efector, pose inicial, apariencia DINOv2 y geometría de cámaras. Esto permite al modelo condicionar la predicción sobre experiencias de otras grabaciones con escenas y puntos de vista compatibles.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Contexto / condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SyncWorld-mv3-strip384-mvSV2 (este) | World model de vídeo-acción multivista con retrieval en contexto | K fragmentos observados (1-8) en la ventana de atención | OpenMDW-1.1 | Checkpoint intermedio público en HuggingFace |
+| SyncWorld-mv3-strip384-mvSV2 (este) | World model de vídeo-acción multivista con retrieval en contexto | K fragmentos observados (1-8) en la ventana de atención | OpenMDW-1.1 | Checkpoint intermedio público en Hugging Face |
 | SyncWorld recent8 (hermano de la misma ronda) | World model de vídeo-acción | Fragmentos recientes, sin los cambios de retrieval | OpenMDW-1.1 (presumible) | No disponible en la información proporcionada |
 | SyncWorld views-first v10-step40000 (primera ronda) | World model de vídeo-acción | Receta views-first de la primera ronda | OpenMDW-1.1 (presumible) | No disponible en la información proporcionada |
 
@@ -83,5 +83,5 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yyuncong/SyncWorld-mv3-strip384-mvSV2-from40k-step10000
+- Hugging Face: https://huggingface.co/yyuncong/SyncWorld-mv3-strip384-mvSV2-from40k-step10000
 - Licencia OpenMDW-1.1 (NVIDIA Cosmos): https://github.com/NVIDIA/Cosmos/blob/main/LICENSE

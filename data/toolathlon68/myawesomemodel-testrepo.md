@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario toolathlon68 bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente sus capacidades de razonamiento y deducción, acercándose al rendimiento de otros modelos líderes en tareas de matemáticas, programación y lógica general. La model card menciona mejoras concretas como un aumento en la precisión en el test AIME 2025 del 70 % al 87,5 %, y una reducción de la tasa de alucinación junto con un mejor soporte para function calling.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario toolathlon68 bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente sus capacidades de razonamiento y deducción, acercándose al rendimiento de otros modelos líderes en tareas de matemáticas, programación y lógica general. La model card menciona mejoras concretas como un aumento en la precisión en el test AIME 2025 del 70 % al 87,5 %, y una reducción de la tasa de alucinación junto con un mejor soporte para function calling.
 
-Sin embargo, el repositorio de HuggingFace está vacío (0.0 GB), no contiene pesos ni archivos de configuración, y la model card no especifica detalles técnicos fundamentales como arquitectura, número de parámetros, longitud de contexto o idiomas soportados. Los tags indican que el pipeline es de extracción de características (feature-extraction) y que está etiquetado con "bert" y "pytorch", lo que sugiere una arquitectura tipo transformer encoder, pero no se puede confirmar. La información disponible es insuficiente para una evaluación técnica rigurosa, por lo que esta ficha se basa únicamente en lo declarado en la model card y en los metadatos del repositorio.
+Sin embargo, el repositorio de Hugging Face está vacío (0.0 GB), no contiene pesos ni archivos de configuración, y la model card no especifica detalles técnicos fundamentales como arquitectura, número de parámetros, longitud de contexto o idiomas soportados. Los tags indican que el pipeline es de extracción de características (feature-extraction) y que está etiquetado con "bert" y "pytorch", lo que sugiere una arquitectura tipo transformer encoder, pero no se puede confirmar. La información disponible es insuficiente para una evaluación técnica rigurosa, por lo que esta ficha se basa únicamente en lo declarado en la model card y en los metadatos del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Sin embargo, el repositorio de HuggingFace está vacío (0.0 GB), no contiene pe
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura concreta del modelo. Los metadatos de HuggingFace incluyen los tags `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que podría indicar que se trata de un modelo basado en la arquitectura BERT (encoder-only), pero no hay confirmación oficial ni documentación técnica al respecto. Tampoco se especifican datos sobre el dataset de entrenamiento, el número de tokens procesados, ni si se emplearon técnicas como RLHF o DPO. La model card menciona que durante el post-entrenamiento se introdujeron mecanismos de optimización algorítmica y un mayor uso de recursos computacionales, pero sin detalles cuantificables.
+No se dispone de información sobre la arquitectura concreta del modelo. Los metadatos de Hugging Face incluyen los tags `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que podría indicar que se trata de un modelo basado en la arquitectura BERT (encoder-only), pero no hay confirmación oficial ni documentación técnica al respecto. Tampoco se especifican datos sobre el dataset de entrenamiento, el número de tokens procesados, ni si se emplearon técnicas como RLHF o DPO. La model card menciona que durante el post-entrenamiento se introdujeron mecanismos de optimización algorítmica y un mayor uso de recursos computacionales, pero sin detalles cuantificables.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío: no hay pesos, configuración ni código de inferencia disponible. Cualquier uso real del modelo es imposible en la práctica.
+- El repositorio de Hugging Face está vacío: no hay pesos, configuración ni código de inferencia disponible. Cualquier uso real del modelo es imposible en la práctica.
 - La model card no especifica la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados, lo que impide evaluar su idoneidad para tareas concretas.
 - Los benchmarks presentados carecen de nombres estandarizados y de descripción metodológica, por lo que su validez externa es dudosa.
 - No se mencionan sesgos específicos, pero al no haber información sobre los datos de entrenamiento, no se puede descartar la presencia de sesgos comunes en modelos de lenguaje.
@@ -90,5 +90,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/toolathlon68/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/toolathlon68/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (papers, blogs, repos de código) en la información disponible.

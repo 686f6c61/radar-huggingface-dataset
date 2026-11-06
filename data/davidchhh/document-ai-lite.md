@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`davidchhh/document-ai-lite` es un repositorio alojado en HuggingFace que, segun su propia model card, contiene notas de lectura y un esbozo de experimento sobre Document AI, no un modelo entrenado ni un checkpoint listo para produccion. El autor lo describe explicitamente como un artefacto exploratorio centrado en "lo que queda por probar" y no en resultados. Pese a estar etiquetado con `safetensors` y `transformer`, la model card no documenta ninguna arquitectura, dataset de entrenamiento ni proceso de ajuste.
+`davidchhh/document-ai-lite` es un repositorio alojado en Hugging Face que, segun su propia model card, contiene notas de lectura y un esbozo de experimento sobre Document AI, no un modelo entrenado ni un checkpoint listo para produccion. El autor lo describe explicitamente como un artefacto exploratorio centrado en "lo que queda por probar" y no en resultados. Pese a estar etiquetado con `safetensors` y `transformer`, la model card no documenta ninguna arquitectura, dataset de entrenamiento ni proceso de ajuste.
 
 El dato objetivo mas relevante es el recuento de parametros en los ficheros safetensors: 24.832 parametros totales, una cifra propia de un tensor auxiliar o de un modelo de juguete, no de un sistema de Document AI utilizable. El tamano del repositorio es de 0,0 GB y el pipeline no esta declarado. Las descargas y los "likes" son 0, lo que confirma que no hay adopcion ni validacion por parte de la comunidad.
 
@@ -79,7 +79,7 @@ No disponible. No existen modelos comparables de forma significativa: el reposit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidchhh/document-ai-lite
+- Repositorio en Hugging Face: https://huggingface.co/davidchhh/document-ai-lite
 - Notas del autor: `notes.md` (referenciado en la model card del propio repositorio)
 - Documentacion del autor: `README.md` (incluido en el repositorio)
 

@@ -50,7 +50,7 @@ Tampoco hay informacion sobre el proceso de entrenamiento: no se indica el volum
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio cuantizado no incluye metricas de MMLU, HumanEval, GSM8K, ARC ni de ninguna otra evaluacion, y los metadatos de HuggingFace no registran tareas de evaluacion asociadas.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio cuantizado no incluye metricas de MMLU, HumanEval, GSM8K, ARC ni de ninguna otra evaluacion, y los metadatos de Hugging Face no registran tareas de evaluacion asociadas.
 
 | Benchmark | Resultado |
 |---|---|

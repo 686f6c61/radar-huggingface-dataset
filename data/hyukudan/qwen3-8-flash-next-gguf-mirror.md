@@ -72,7 +72,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Mirror en HuggingFace: https://huggingface.co/hyukudan/Qwen3.8-Flash-Next-GGUF-mirror
+- Mirror en Hugging Face: https://huggingface.co/hyukudan/Qwen3.8-Flash-Next-GGUF-mirror
 - Repositorio upstream de Unsloth: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Revision upstream fijada: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF/tree/38bb39ee97821de2c9009abb7e93950eec396e66
 - Modelo base Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

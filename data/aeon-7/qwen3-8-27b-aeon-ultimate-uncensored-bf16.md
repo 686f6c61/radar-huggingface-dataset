@@ -90,7 +90,7 @@ Ambos comparten arquitectura, vision y MTP. La diferencia principal es la ausenc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
+- Repositorio Hugging Face: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper de gated-deltanet: https://arxiv.org/abs/2406.11717
 - Paper de Qwen3 (arquitectura general): https://arxiv.org/abs/2503.00555

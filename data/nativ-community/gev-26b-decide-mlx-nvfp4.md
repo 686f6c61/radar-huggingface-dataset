@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nativ-community/GEV-26B-Decide-MLX-NVFP4
+- Hugging Face: https://huggingface.co/nativ-community/GEV-26B-Decide-MLX-NVFP4
 - Modelo base: https://huggingface.co/autotrust/GEV-26B-Decide
 - mlx-vlm (repositorio principal): https://github.com/Blaizzy/mlx-vlm
 - mlx-vlm rama con soporte GEV: https://github.com/Lazarus-931/mlx-vlm (rama `feat/gev`)

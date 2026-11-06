@@ -83,7 +83,7 @@ No hay datos suficientes para una comparativa rigurosa con alternativas como Lla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-base-l5
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-base-l5
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Adaptador SFT requerido (mencionado en la model card): `ssurface/cot-dialect-math-olmo3-7b-think-sft-unfiltered-l5` (sin URL directa en la información disponible)
 - Referencia citada: Frolov, Anatolii, "Chain-of-Thought Compression Dialects" (2026) - preprint sin URL pública en la información proporcionada.

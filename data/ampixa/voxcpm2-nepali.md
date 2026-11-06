@@ -88,9 +88,9 @@ Advertencia del autor: las filas best-of-8 generan 8 tomas por tarea y eligen la
 
 | Modelo | Parámetros | Contexto | CER clonación limpia (MMS) | Voice match | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| VoxCPM2 Nepali LoRA (este modelo) | no disponible (LoRA r=32 sobre VoxCPM2) | no disponible | 6,49 (best-of-8, run 1); 6,94 (toma única) | 0,672-0,675 | Apache 2.0 | HuggingFace (ampixa/voxcpm2-nepali) |
-| VoxCPM2 stock (base) | no disponible | no disponible | 9,59 | 0,685 | no disponible en la información | HuggingFace (openbmb/VoxCPM2) |
-| Swar NFE16 | no disponible | no disponible | 5,06 | 0,687 | no disponible en la información | HuggingFace (Aarjan/swar) |
+| VoxCPM2 Nepali LoRA (este modelo) | no disponible (LoRA r=32 sobre VoxCPM2) | no disponible | 6,49 (best-of-8, run 1); 6,94 (toma única) | 0,672-0,675 | Apache 2.0 | Hugging Face (ampixa/voxcpm2-nepali) |
+| VoxCPM2 stock (base) | no disponible | no disponible | 9,59 | 0,685 | no disponible en la información | Hugging Face (openbmb/VoxCPM2) |
+| Swar NFE16 | no disponible | no disponible | 5,06 | 0,687 | no disponible en la información | Hugging Face (Aarjan/swar) |
 
 El autor señala que Swar supera a este modelo en las tres suites del benchmark, incluida la clonación limpia (5,06 frente a 6,49 de CER), aunque dos de las suites probablemente favorecen a Swar por solapamiento de datos de entrenamiento. No se dispone de datos de otros modelos TTS en nepalí en la información proporcionada.
 
@@ -109,7 +109,7 @@ El autor señala que Swar supera a este modelo en las tres suites del benchmark,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ampixa/voxcpm2-nepali
+- Modelo en Hugging Face: https://huggingface.co/ampixa/voxcpm2-nepali
 - Modelo base: https://huggingface.co/openbmb/VoxCPM2
 - Repositorio VoxCPM (commit de instalación): https://github.com/OpenBMB/VoxCPM/tree/cce58a5b59303c9bd63d12f23afe6a49a4a80c59
 - Swar (modelo comparado): https://huggingface.co/Aarjan/swar

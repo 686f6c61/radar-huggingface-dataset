@@ -2,7 +2,7 @@
 
 ## Resumen
 
-meld-emotion-late-fusion es un clasificador multimodal de emociones publicado por el usuario Aiyeee en HuggingFace. Se trata de un conjunto de pesos (no de un modelo generativo) que implementa una arquitectura de late fusion sobre RoBERTa-base y wav2vec 2.0-base para predecir una de siete emociones (anger, disgust, fear, joy, neutral, sadness, surprise) a partir de texto y voz en ingles. El modelo esta entrenado exclusivamente sobre el corpus MELD, un dataset de dialogos de la serie Friends con anotaciones emocionales a nivel de turno.
+meld-emotion-late-fusion es un clasificador multimodal de emociones publicado por el usuario Aiyeee en Hugging Face. Se trata de un conjunto de pesos (no de un modelo generativo) que implementa una arquitectura de late fusion sobre RoBERTa-base y wav2vec 2.0-base para predecir una de siete emociones (anger, disgust, fear, joy, neutral, sadness, surprise) a partir de texto y voz en ingles. El modelo esta entrenado exclusivamente sobre el corpus MELD, un dataset de dialogos de la serie Friends con anotaciones emocionales a nivel de turno.
 
 La relevancia del modelo es acotada pero clara: sirve como implementacion de referencia y pesos listos para el Space de demostracion del autor, y aporta una comparacion empirica entre fusion tardia (texto + voz) y texto solo. Los resultados publicados en la model card muestran una mejora modesta pero estadisticamente significativa de la fusion multimodal sobre texto solo (weighted F1 63.9 ± 0.9 frente a 62.6 ± 0.7 en el conjunto de test de MELD), lo que resulta util como punto de partida para quien trabaje en reconocimiento de emociones en conversacion.
 
@@ -71,7 +71,7 @@ La mejora de texto + voz sobre texto solo es de +1,3 puntos, con un intervalo de
 
 | Modelo / trabajo | Enfoque | Dataset | Metrica reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aiyeee/meld-emotion-late-fusion | Late fusion RoBERTa-base + wav2vec 2.0-base | MELD | Weighted F1 63,9 (texto + voz, test) | GPL-3.0 | Pesos en HuggingFace |
+| Aiyeee/meld-emotion-late-fusion | Late fusion RoBERTa-base + wav2vec 2.0-base | MELD | Weighted F1 63,9 (texto + voz, test) | GPL-3.0 | Pesos en Hugging Face |
 | DeepMSI-MER | Fusion multimodal (early/late segun el articulo) | IEMOCAP y MELD | Mejora de accuracy y robustez frente a lineas base, sin cifra concreta en el resumen consultado | no disponible | Paper en arXiv |
 | ResNet50 + LSTM con late fusion | Late fusion audiovisual | RAVDESS y MELD | 90,03 % en RAVDESS y 88,57 % en MELD (accuracy, no weighted F1) | no disponible | Publicacion PICT |
 | Benchmark early/late/hybrid/meta fusion | Comparativa de tecnicas de fusion | MELD | No disponible en el extracto consultado | no disponible | Paper en Nature Scientific Reports |
@@ -92,7 +92,7 @@ Las metricas no son directamente comparables entre filas: el modelo de esta fich
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aiyeee/meld-emotion-late-fusion
+- Hugging Face: https://huggingface.co/Aiyeee/meld-emotion-late-fusion
 - Space de demostracion: https://huggingface.co/spaces/Aiyeee/multimodal-emotion-demo
 - Codigo en GitHub: https://github.com/Justin-Chen2333/multimodel_emotion
 - Dataset MELD: declare-lab/MELD

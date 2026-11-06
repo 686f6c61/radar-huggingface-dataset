@@ -81,7 +81,7 @@ No se dispone de comparaciones directas con otros modelos de clasificación bioa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stratus-labs/nocturne-v1-teacher
+- Modelo en Hugging Face: https://huggingface.co/stratus-labs/nocturne-v1-teacher
 - Versión mini (estudiante): https://huggingface.co/stratus-labs/nocturne-v1-mini
 - Dataset InsectSet459 (Zenodo): https://zenodo.org/records/18554693 (DOI 10.5281/zenodo.18554693)
 - Repositorio de código (mencionado en la model card, no se proporciona URL directa)

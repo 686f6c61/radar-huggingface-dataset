@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`micro-sam vit_b_histopathology` es un checkpoint preentrenado del proyecto micro-sam, desarrollado por el grupo Computational Cell Analytics, orientado a la segmentación de imágenes de microscopía, en este caso especializado en histopatología. El repositorio de HuggingFace (`amorsi/micro-sam-vit-b-histopathology`) es un espejo sin modificaciones de los pesos originales publicados por el equipo de micro-sam; los hashes xxh128 coinciden con el registro de `util.py` del repositorio oficial, por lo que se trata de una copia verificable y no de un modelo nuevo entrenado por el autor del espejo.
+`micro-sam vit_b_histopathology` es un checkpoint preentrenado del proyecto micro-sam, desarrollado por el grupo Computational Cell Analytics, orientado a la segmentación de imágenes de microscopía, en este caso especializado en histopatología. El repositorio de Hugging Face (`amorsi/micro-sam-vit-b-histopathology`) es un espejo sin modificaciones de los pesos originales publicados por el equipo de micro-sam; los hashes xxh128 coinciden con el registro de `util.py` del repositorio oficial, por lo que se trata de una copia verificable y no de un modelo nuevo entrenado por el autor del espejo.
 
 El modelo se apoya en la arquitectura Segment Anything (SAM) en su variante ViT-B, adaptada por micro-sam al dominio biomédico mediante fine-tuning sobre datos de microscopía. Se distribuye como dos ficheros (`model.pt` para el encoder y `decoder.pt` para el decodificador), lo que refleja el diseño encoder-decoder propio de SAM: un backbone ViT que extrae embeddings de la imagen y un decodificador ligero que genera máscaras a partir de prompts (puntos, cajas o máscaras).
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Dominio | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| micro-sam vit_b_histopathology | SAM ViT-B ajustado | Histopatología | no disponible | no disponible (consultar fuente) | Checkpoint en HuggingFace y ownCloud |
+| micro-sam vit_b_histopathology | SAM ViT-B ajustado | Histopatología | no disponible | no disponible (consultar fuente) | Checkpoint en Hugging Face y ownCloud |
 | SAM original (ViT-B) | SAM ViT-B | Imágenes generales | ~93 M (referencia pública de SAM) | Apache 2.0 (SAM original) | Meta AI |
 | micro-sam vit_b (dominio general de microscopía) | SAM ViT-B ajustado | Microscopía general | no disponible | ídem micro-sam | Repositorio micro-sam |
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amorsi/micro-sam-vit-b-histopathology
+- Hugging Face: https://huggingface.co/amorsi/micro-sam-vit-b-histopathology
 - Repositorio micro-sam: https://github.com/computational-cell-analytics/micro-sam
 - Registro de checkpoints (`util.py`): https://github.com/computational-cell-analytics/micro-sam/blob/master/micro_sam/util.py
 - Pesos `model.pt`: https://owncloud.gwd.uni-goettingen.de/index.php/s/sBB4H8CTmIoBZsQ/download

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kopens/aura-27b` aparece en HuggingFace con el identificador `kopens/aura-27b`, autor `kopens` y licencia Apache-2.0. Sin embargo, la model card no contiene ninguna información técnica más allá del frontmatter con la licencia. No se especifican arquitectura, número de parámetros, longitud de contexto, idiomas ni pipeline. Tampoco hay descargas ni likes, lo que indica que el modelo no ha sido probado por la comunidad.
+El modelo `kopens/aura-27b` aparece en Hugging Face con el identificador `kopens/aura-27b`, autor `kopens` y licencia Apache-2.0. Sin embargo, la model card no contiene ninguna información técnica más allá del frontmatter con la licencia. No se especifican arquitectura, número de parámetros, longitud de contexto, idiomas ni pipeline. Tampoco hay descargas ni likes, lo que indica que el modelo no ha sido probado por la comunidad.
 
 La fecha de creación indicada es el 14 de septiembre de 2026, posterior a la fecha actual (7 de mayo de 2026). Este dato resulta incoherente y sugiere que el registro puede estar incompleto o que se trata de una publicación con errores. En cualquier caso, no es posible evaluar el modelo ni determinar su relevancia actual sin información técnica adicional.
 
@@ -56,6 +56,6 @@ No se dispone de información sobre este modelo que permita compararlo con alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kopens/aura-27b
+- Hugging Face: https://huggingface.co/kopens/aura-27b
 
 No se han encontrado enlaces relevantes adicionales en la búsqueda web; los resultados obtenidos estaban relacionados con la NFL y no aportan información sobre el modelo.

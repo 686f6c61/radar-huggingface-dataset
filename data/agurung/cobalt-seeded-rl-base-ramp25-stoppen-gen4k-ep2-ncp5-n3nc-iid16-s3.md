@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cobalt-seeded-rl-base-... (este) | ~3,97B | no disponible | RL GRPO sobre generacion de codigo | no disponible | safetensors en HuggingFace, transformers + vLLM |
+| cobalt-seeded-rl-base-... (este) | ~3,97B | no disponible | RL GRPO sobre generacion de codigo | no disponible | safetensors en Hugging Face, transformers + vLLM |
 | Qwen/Qwen3-4B-Instruct-2507 (base) | ~4B | no disponible en la informacion proporcionada | Instruct generalista | no disponible en la informacion proporcionada | safetensors, ampliamente soportado |
 | Otros modelos pequenos de codigo de ~3-4B (por ejemplo, variantes Coder de la familia Qwen) | ~3-4B | no disponible | Fine-tuning supervisado en codigo | variable | amplia disponibilidad |
 
@@ -86,7 +86,7 @@ La comparacion cuantitativa de rendimiento entre estas alternativas no puede est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-iid16-s3
+- Modelo en Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-iid16-s3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Logs de entrenamiento (Weights & Biases): proyecto `eaiexp-paper-final`, ejecucion `seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp5_n3nc_iid16_s3` (sin URL directa en la informacion proporcionada)
 - Log local de entrenamiento: `experiments/cobalt_qwen3_4b_ft/rl_runs/qwen3_4b_instruct_2507_cobalt_v1/seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp5_n3nc_iid16_s3/openrlhf_train.log` (ruta interna del autor, no accesible publicamente)

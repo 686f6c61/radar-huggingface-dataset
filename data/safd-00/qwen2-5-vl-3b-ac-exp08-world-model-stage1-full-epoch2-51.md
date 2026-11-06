@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch2.51` es un fine-tuning experimental del modelo vision-language Qwen2.5-VL-3B, publicado por el usuario SaFD-00 en HuggingFace. El nombre del checkpoint sugiere que forma parte de una serie de experimentos orientados al desarrollo de un "world model" (modelo del mundo) en su etapa 1, con entrenamiento completo (full) sobre el modelo base de 3B parámetros. Se trata de un modelo multimodal que procesa imágenes y texto, con pipeline `image-text-to-text`.
+El modelo `SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch2.51` es un fine-tuning experimental del modelo vision-language Qwen2.5-VL-3B, publicado por el usuario SaFD-00 en Hugging Face. El nombre del checkpoint sugiere que forma parte de una serie de experimentos orientados al desarrollo de un "world model" (modelo del mundo) en su etapa 1, con entrenamiento completo (full) sobre el modelo base de 3B parámetros. Se trata de un modelo multimodal que procesa imágenes y texto, con pipeline `image-text-to-text`.
 
 La relevancia de este modelo radica en que explora el fine-tuning de un modelo VL compacto (3B) para tareas de modelado del mundo, un área emergente en IA que busca que los modelos aprendan representaciones del entorno físico a partir de observaciones visuales y lingüísticas. Sin embargo, la información pública es extremadamente limitada: la model card es una plantilla automática sin datos reales, y no se han publicado detalles sobre el dataset de entrenamiento, hiperparámetros, ni evaluación. El checkpoint tiene 3.754.622.976 parámetros totales (incluyendo el vision encoder) y un tamaño de repositorio de 7,5 GB en formato safetensors.
 
@@ -69,7 +69,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. El modelo es u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch2.51
+- Repositorio Hugging Face: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch2.51
 - Checkpoint relacionado (epoch1): https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch1
 - Checkpoint relacionado (7B): https://huggingface.co/SaFD-00/qwen2.5-vl-7b-ac-stage1-full-world-model-epoch3
 - Technical report de Qwen2.5-VL: https://arxiv.org/abs/2502.13923v1

@@ -82,7 +82,7 @@ Segun la model card, Nail supera a Qwen3.6-27B y ThinkingCap en velocidad y cali
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-MLX-6bit
+- Modelo en Hugging Face: https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-MLX-6bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Version GGUF: https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF
 - Chat template mejorado: https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates

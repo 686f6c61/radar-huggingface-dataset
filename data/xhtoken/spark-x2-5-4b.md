@@ -84,9 +84,9 @@ La comparativa se basa en características generales conocidas de los modelos al
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XHToken/Spark-X2.5-4B
+- Hugging Face: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Repositorio GitHub: https://github.com/XHToken/Spark-X2.5
 - ModelScope: https://www.modelscope.cn/models/XHToken/Spark-X2.5-4B
-- Colección HuggingFace: https://huggingface.co/collections/XHToken/spark-x25
+- Colección Hugging Face: https://huggingface.co/collections/XHToken/spark-x25
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B-Base
 - Versión GGUF: https://huggingface.co/models?other=base_model:quantized:XHToken/Spark-X2.5-4B

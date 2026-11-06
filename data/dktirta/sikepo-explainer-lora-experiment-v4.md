@@ -77,6 +77,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dktirta/sikepo-explainer-lora-experiment-v4
+- Hugging Face: https://huggingface.co/dktirta/sikepo-explainer-lora-experiment-v4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de codigo de entrenamiento y evaluacion: https://github.com/dkfadhila/sikepo_bpjs

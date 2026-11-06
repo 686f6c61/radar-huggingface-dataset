@@ -59,11 +59,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SAIFIINDUSTRIES/Qwen2.5-7B-Instruct-1M | 7.61B | 1.010.000 tokens | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct-1M | 7.61B | 1.010.000 tokens | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct (128K) | 7.61B | 131.072 tokens | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-14B-Instruct-1M | 14.8B | 1.010.000 tokens | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B Instruct | 8.03B | 131.072 tokens | Llama 3.1 Community | Meta / HuggingFace |
+| SAIFIINDUSTRIES/Qwen2.5-7B-Instruct-1M | 7.61B | 1.010.000 tokens | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct-1M | 7.61B | 1.010.000 tokens | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct (128K) | 7.61B | 131.072 tokens | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-14B-Instruct-1M | 14.8B | 1.010.000 tokens | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B Instruct | 8.03B | 131.072 tokens | Llama 3.1 Community | Meta / Hugging Face |
 
 No se dispone de datos de rendimiento comparativo publicados en la informacion proporcionada, por lo que la tabla se limita a parametros, contexto y licencia. El modelo de SAIFIINDUSTRIES es un fine-tune del Qwen2.5-7B-Instruct-1M, pero no se documenta en que se diferencia del original.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SLORA/PRO es un modelo de generación de texto publicado en HuggingFace por el usuario SLORA, atribuido en su model card a Muhammad Taqi. Se distribuye con la etiqueta de arquitectura `deepseek_v3` y con código personalizado (`custom_code`), lo que sugiere que reutiliza la implementación de DeepSeek-V3 en la librería Transformers, aunque la propia model card afirma de forma contradictoria que la arquitectura base es "NOTHING" y que todo el código fue escrito por su autor. No se proporciona ninguna documentación técnica adicional que permita resolver esa discrepancia.
+SLORA/PRO es un modelo de generación de texto publicado en Hugging Face por el usuario SLORA, atribuido en su model card a Muhammad Taqi. Se distribuye con la etiqueta de arquitectura `deepseek_v3` y con código personalizado (`custom_code`), lo que sugiere que reutiliza la implementación de DeepSeek-V3 en la librería Transformers, aunque la propia model card afirma de forma contradictoria que la arquitectura base es "NOTHING" y que todo el código fue escrito por su autor. No se proporciona ninguna documentación técnica adicional que permita resolver esa discrepancia.
 
 El dato más fiable disponible es el recuento de parámetros real de los ficheros safetensors: 684.489.845.504 parámetros, es decir, aproximadamente 684,5 mil millones. El repositorio ocupa 688,6 GB, un tamaño coherente con pesos almacenados en formato FP8 (1 byte por parámetro más sobrecarga). Si la etiqueta `deepseek_v3` es correcta, se trataría de un transformer con mezcla de expertos (MoE) y atención Multi-head Latent Attention, pero no hay confirmación de ello en la información disponible.
 
@@ -94,7 +94,7 @@ Los datos de DeepSeek-V3, DeepSeek-R1 y Llama 3.1 405B corresponden a informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SLORA/PRO
+- Modelo en Hugging Face: https://huggingface.co/SLORA/PRO
 - Enlace de sintaxis de uso citado en la model card: https://muhammad-taqi512-lightricks.static.hf.space/SYNTAX.html
 - Repositorio S-LoRA (proyecto académico de serving de adaptadores LoRA, sin relación con este modelo, mencionado solo por coincidencia de nombre): https://github.com/S-LoRA/S-LoRA
 - Paper, blog, repositorio o demo oficial del modelo: no disponibles en la información proporcionada.

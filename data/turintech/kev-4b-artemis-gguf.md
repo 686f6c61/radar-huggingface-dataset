@@ -100,7 +100,7 @@ La conversion de TurinTech ofrece el menor tamano de disco de la comparativa (2,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/turintech/Kev-4B-Artemis-GGUF
+- Repositorio Hugging Face: https://huggingface.co/turintech/Kev-4B-Artemis-GGUF
 - Modelo base: https://huggingface.co/jaredpalmer/kev-4b
 - Builds publicos de referencia: https://huggingface.co/ggml-org/Kev-4B-GGUF
 - Dataset de evaluacion: https://huggingface.co/datasets/LocalLLaMA/typed-decisions

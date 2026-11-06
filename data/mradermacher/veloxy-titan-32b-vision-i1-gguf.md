@@ -100,7 +100,7 @@ El autor indica que IQ-quants suelen ser preferibles frente a cuantizaciones no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Veloxy-Titan-32B-Vision-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Veloxy-Titan-32B-Vision-i1-GGUF
 - Modelo base: https://huggingface.co/zveloxy/Veloxy-Titan-32B-Vision
 - Repositorio de cuantizaciones estaticas (incluye ficheros mmproj): https://huggingface.co/mradermacher/Veloxy-Titan-32B-Vision-GGUF
 - Pagina de resumen del modelo en hf.tst.eu: https://hf.tst.eu/model#Veloxy-Titan-32B-Vision-i1-GGUF

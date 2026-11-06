@@ -19,7 +19,7 @@ El modelo se apoya en una plantilla de chat propia (versión de prompt `compact-
 | Tipos de cuantización | No disponible (solo se distribuye el artefacto fp16 de Core ML; no hay variantes GGUF, AWQ ni GPTQ publicadas) |
 | Idiomas soportados | Inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Core ML ML Program (`Cleanup.mlpackage`, fp16) más tokenizador en formato HuggingFace (`tokenizer.json`, `vocab.json`, `merges.txt`, `tokenizer_config.json`, `special_tokens_map.json`, `chat_template.jinja`, `config.json`) |
+| Formato de pesos | Core ML ML Program (`Cleanup.mlpackage`, fp16) más tokenizador en formato Hugging Face (`tokenizer.json`, `vocab.json`, `merges.txt`, `tokenizer_config.json`, `special_tokens_map.json`, `chat_template.jinja`, `config.json`) |
 | Tamaño del repositorio | 0,7 GB |
 | Versión de prompt | `compact-en-v2` |
 
@@ -99,18 +99,18 @@ No se han localizado en la información disponible alternativas publicadas direc
 - Riesgo de alucinación: aunque la tarea está restringida a reescribir sin reformular, cualquier sustitución de palabras puede alterar el significado. En dominios sensibles conviene validar la salida contra la transcripción, como hace Kol.
 - Sesgos conocidos: no disponibles. No se ha publicado ningún análisis de sesgos.
 - Licencia del modelo: Apache 2.0, que permite uso comercial. Los datos de entrenamiento proceden de conjuntos con licencias MIT (dos de ellos) y CC-BY-4.0 (uno), por lo que la atribución correspondiente debe verificarse si se redistribuyen derivados.
-- Madurez: 0 descargas y 0 "likes" en HuggingFace en el momento de la consulta, sin validación independiente por parte de la comunidad.
+- Madurez: 0 descargas y 0 "likes" en Hugging Face en el momento de la consulta, sin validación independiente por parte de la comunidad.
 - Dependencia de plataforma: al estar empaquetado como Core ML, no se puede desplegar en infraestructura Linux con GPU sin reconversión, y queda atado a macOS 15 o superior y a hardware de Apple.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alandotcom/kol-cleanup-360m-coreml
+- Modelo en Hugging Face: https://huggingface.co/alandotcom/kol-cleanup-360m-coreml
 - Modelo base SmolLM2-360M-Instruct: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Repositorio de Kol en GitHub: https://github.com/alandotcom/Kol
 - README de Kol: https://github.com/alandotcom/Kol/blob/main/README.md
 - Dataset juanquivilla/sotto-transcript-cleanup (MIT): https://huggingface.co/datasets/juanquivilla/sotto-transcript-cleanup
 - Dataset shantanugoel/aawaaz-transcript-cleanup-dataset (MIT): https://huggingface.co/datasets/shantanugoel/aawaaz-transcript-cleanup-dataset
 - Dataset MagicNoThief/handy-dictation-editing (CC-BY-4.0): https://huggingface.co/datasets/MagicNoThief/handy-dictation-editing
-- Perfil del autor en HuggingFace: https://huggingface.co/alandotcom
+- Perfil del autor en Hugging Face: https://huggingface.co/alandotcom
 - Artículo de Forbes sobre limpieza de contenido generado por IA: https://www.forbes.com/sites/joetoscano1/2026/02/02/ai-companies-race-to-clean-up-ai-slop-because-model-performance-depends-on-it/
 - Artículo sobre colapso de modelos y datos sintéticos: https://aibuzz.blog/ai-model-collapse-data-poisoning/

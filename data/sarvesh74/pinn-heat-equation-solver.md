@@ -17,7 +17,7 @@ Su relevancia es fundamentalmente formativa y de investigacion: sirve como imple
 | Longitud de contexto | No aplicable (no es un modelo de lenguaje; la entrada es un punto (x, y, t) ∈ R³) |
 | Tipos de cuantizacion | No disponible (la model card no documenta cuantizacion; el checkpoint se distribuye en precision completa de PyTorch) |
 | Idiomas soportados | No aplicable (no procesa ni genera lenguaje natural) |
-| Licencia | MIT segun la model card del autor; los metadatos de HuggingFace no declaran licencia |
+| Licencia | MIT segun la model card del autor; los metadatos de Hugging Face no declaran licencia |
 | Formato de pesos | Checkpoint de PyTorch (`.pth`, estado del modelo generado con `torch.save`); no se documenta exportacion a safetensors, GGUF ni ONNX |
 
 ## Arquitectura y entrenamiento
@@ -77,7 +77,7 @@ No existen alternativas con pesos publicados y metricas comparables dentro de la
 
 | Enfoque | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PINN-Heat-Equation-Solver (sarvesh74) | PINN, MLP con Tanh | ~26.000 | No aplicable | Error L2 relativo < 1,5 % en el caso concreto | MIT (declarada en la model card) | Pesos `.pth` en HuggingFace; 0 descargas, 0 likes |
+| PINN-Heat-Equation-Solver (sarvesh74) | PINN, MLP con Tanh | ~26.000 | No aplicable | Error L2 relativo < 1,5 % en el caso concreto | MIT (declarada en la model card) | Pesos `.pth` en Hugging Face; 0 descargas, 0 likes |
 | PINN de referencia (Raissi, Perdikaris y Karniadakis, 2019) | PINN, MLP | No disponible en esta ficha | No aplicable | No disponible en esta ficha | Publicacion academica; codigo de referencia con licencia propia | Referencia metodologica, sin pesos preentrenados comparables |
 | Solver numerico clasico (diferencias finitas o elementos finitos) | Metodo numerico, no neuronal | No aplicable | No aplicable | Error controlado por el refinamiento de malla | Variable segun la biblioteca | Bibliotecas maduras y ampliamente desplegadas |
 
@@ -88,17 +88,17 @@ No existen alternativas con pesos publicados y metricas comparables dentro de la
 - Generalizacion limitada: los pesos publicados corresponden al caso sinusoide separable con contorno de Dirichlet homogeneo. No hay evidencia en la informacion disponible de que el modelo resuelva condiciones iniciales o de contorno distintas sin reentrenamiento.
 - Validacion incompleta: solo se reporta el error L2 relativo global (< 1,5 %). No se documentan errores maximos, error por instante, sensibilidad a los pesos λ de la funcion de perdida, ni estudio de convergencia con el numero de puntos de colocacion.
 - Informacion tecnica ausente: la model card no especifica el valor de la difusividad α empleado, la semilla aleatoria, el desglose de hiperparametros de Adam y L-BFGS ni el procedimiento de muestreo de puntos de colocacion.
-- Licencia: la model card declara MIT, lo que permitiria uso comercial y modificacion con atribucion, pero los metadatos de HuggingFace no declaran licencia. Conviene verificar el fichero LICENSE antes de un uso en produccion.
-- Madurez y trazabilidad: 0 descargas y 0 likes, sin revision por pares ni validacion externa conocida. Los metadatos de HuggingFace registran creacion y ultima actualizacion el 16 de septiembre de 2026, sin actividad posterior registrada.
+- Licencia: la model card declara MIT, lo que permitiria uso comercial y modificacion con atribucion, pero los metadatos de Hugging Face no declaran licencia. Conviene verificar el fichero LICENSE antes de un uso en produccion.
+- Madurez y trazabilidad: 0 descargas y 0 likes, sin revision por pares ni validacion externa conocida. Los metadatos de Hugging Face registran creacion y ultima actualizacion el 16 de septiembre de 2026, sin actividad posterior registrada.
 - Idoneidad para produccion: no es un sustituto de un solver numerico verificado en entornos criticos (por ejemplo, analisis termico certificado). Su uso razonable es educativo, de prototipado y de investigacion.
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los resultados obtenidos correspondian a dominios de reservas de alojamiento y no guardan relacion con el proyecto. Por tanto, cualquier dato externo adicional figura como no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sarvesh74/PINN-Heat-Equation-Solver
-- Perfil del autor en HuggingFace: https://huggingface.co/sarvesh74
+- Modelo en Hugging Face: https://huggingface.co/sarvesh74/PINN-Heat-Equation-Solver
+- Perfil del autor en Hugging Face: https://huggingface.co/sarvesh74
 - Raissi, M., Perdikaris, P. y Karniadakis, G. E. (2019). Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations. Journal of Computational Physics, 378, 686-707 (referencia citada en la model card; enlace directo no proporcionado).
 - Karniadakis, G. E. et al. (2021). Physics-informed machine learning. Nature Reviews Physics, 3(6), 422-440 (referencia citada en la model card; enlace directo no proporcionado).
 - Documentacion de PyTorch: https://pytorch.org/docs/
 - Documentacion de PyTorch sobre diferenciacion automatica: https://pytorch.org/docs/stable/autograd.html
-- Repositorio de codigo: segun la model card, el propio repositorio de HuggingFace incluye los scripts `pinn_heat_equation.py`, `train.py`, `evaluate.py`, `visualize.py`, `configs/config.yaml` y `notebooks/PINN_Heat_Equation.ipynb`; no se indica un repositorio externo de GitHub.
+- Repositorio de codigo: segun la model card, el propio repositorio de Hugging Face incluye los scripts `pinn_heat_equation.py`, `train.py`, `evaluate.py`, `visualize.py`, `configs/config.yaml` y `notebooks/PINN_Heat_Equation.ipynb`; no se indica un repositorio externo de GitHub.

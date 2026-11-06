@@ -130,7 +130,7 @@ La comparación más informativa es interna al propio cuarteto, ya que los cuatr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-7b-f04-a2-r2
+- Repositorio en Hugging Face: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-7b-f04-a2-r2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Colección "AISLE Trojan Zoo for Detection Research": https://huggingface.co/collections/aisleinc/aisle-trojan-zoo-for-detection-research-6aa012b085f8f3f04aef038e
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo: los enlaces recuperados correspondían a páginas de ayuda de YouTube TV, Gmail y YouTube Premium, sin relación con el artefacto. No se han localizado papers, blogs, repositorios ni demos adicionales en la información disponible.

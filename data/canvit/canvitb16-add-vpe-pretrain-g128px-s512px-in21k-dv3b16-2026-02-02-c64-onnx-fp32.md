@@ -79,8 +79,8 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Contexto / geometria | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CanViT-B (esta exportacion ONNX) | no disponible (backbone ViT-B/16) | escena 512 px, vistazos 128 px, canvas 64 x 64 | paridad ONNX-PyTorch con error L2 relativo <= 7,5e-05 | MIT | HuggingFace, ONNX, ejecucion en navegador |
-| CanViT-B finetune IN1k | no disponible | escena 512 px, vistazos 128 px | 84,5 % top-1 en vision activa IN1k | no disponible en la informacion proporcionada | HuggingFace (canvit) |
+| CanViT-B (esta exportacion ONNX) | no disponible (backbone ViT-B/16) | escena 512 px, vistazos 128 px, canvas 64 x 64 | paridad ONNX-PyTorch con error L2 relativo <= 7,5e-05 | MIT | Hugging Face, ONNX, ejecucion en navegador |
+| CanViT-B finetune IN1k | no disponible | escena 512 px, vistazos 128 px | 84,5 % top-1 en vision activa IN1k | no disponible en la informacion proporcionada | Hugging Face (canvit) |
 | AdaptiveNN (mejor resultado previo citado) | no disponible | vision activa | 82,2 % top-1 en IN1k | no disponible | no disponible |
 | ViT-B/16 supervisado clasico | no disponible (backbone ViT-B/16) | imagen completa, sin vision activa | no disponible | no disponible | ampliamente disponible |
 
@@ -101,10 +101,10 @@ La comparacion cuantitativa con alternativas de la misma categoria (por ejemplo,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02-c64-onnx-fp32
+- Modelo en Hugging Face: https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02-c64-onnx-fp32
 - Modelo base: https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02
 - Probe ADE20K: https://huggingface.co/canvit/probe-ade20k-40k-s512-c64-in21k-onnx-fp32
-- Organizacion del proyecto en HuggingFace: https://huggingface.co/canvit
+- Organizacion del proyecto en Hugging Face: https://huggingface.co/canvit
 - Articulo (arXiv 2603.22570): https://arxiv.org/abs/2603.22570
 - Repositorio principal: https://github.com/m2b3/CanViT
 - Implementacion de referencia en PyTorch: https://github.com/m2b3/CanViT-PyTorch

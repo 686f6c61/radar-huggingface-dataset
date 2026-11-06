@@ -69,5 +69,5 @@ No disponible. Al carecer de datos de arquitectura, entrenamiento y benchmarks, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/microtensor-archive/mt-code-3g-r1236-5HKyjd9J
+- Hugging Face: https://huggingface.co/microtensor-archive/mt-code-3g-r1236-5HKyjd9J
 - Repositorio de MicroTensor (Bittensor subnet 92): https://github.com/microtensor-io/microtensor-subnet

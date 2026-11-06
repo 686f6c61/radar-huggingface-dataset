@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks tarea-especificos ni de especificaciones de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-NanoPlus-V3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-NanoPlus-V3-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Edicion MiniPlus V3: https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-MiniPlus-V3-GGUF
 - EfficientThink Uncensored MiniPlus V2.1: https://huggingface.co/IsValorum/Qwen3.8-27B-EfficientThink-Uncensored-VAL-APEX-I-MiniPlus-V2.1-GGUF

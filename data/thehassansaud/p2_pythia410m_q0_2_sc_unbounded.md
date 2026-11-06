@@ -2,9 +2,9 @@
 
 ## Resumen
 
-P2_pythia410m_q0_2_sc_unbounded es un modelo de generación de texto publicado en HuggingFace por el usuario TheHassanSaud. Según los metadatos del repositorio, se trata de un modelo basado en la arquitectura gpt_neox (etiqueta oficial del Hub) con 405.334.016 parámetros reales verificados en el archivo safetensors, lo que lo sitúa en la categoría de modelos pequeños. El nombre del identificador sugiere una variante derivada de Pythia 410M —el conocido modelo de EleutherAI—, aunque la model card no confirma esta filiación ni ningún detalle del proceso de entrenamiento.
+P2_pythia410m_q0_2_sc_unbounded es un modelo de generación de texto publicado en Hugging Face por el usuario TheHassanSaud. Según los metadatos del repositorio, se trata de un modelo basado en la arquitectura gpt_neox (etiqueta oficial del Hub) con 405.334.016 parámetros reales verificados en el archivo safetensors, lo que lo sitúa en la categoría de modelos pequeños. El nombre del identificador sugiere una variante derivada de Pythia 410M —el conocido modelo de EleutherAI—, aunque la model card no confirma esta filiación ni ningún detalle del proceso de entrenamiento.
 
-La relevancia de este repositorio es limitada en el estado actual de la información: la model card es la plantilla automática de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]". No se declaran licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Se desconoce también el propósito del sufijo "q0_2_sc_unbounded" del nombre, que podría referirse a algún tipo de cuantización, esquema de decodificación o variante experimental, pero no hay documentación que lo aclare.
+La relevancia de este repositorio es limitada en el estado actual de la información: la model card es la plantilla automática de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]". No se declaran licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Se desconoce también el propósito del sufijo "q0_2_sc_unbounded" del nombre, que podría referirse a algún tipo de cuantización, esquema de decodificación o variante experimental, pero no hay documentación que lo aclare.
 
 En resumen, se trata de un artefacto de pesos funcional y descargable, pero sin documentación técnica publicada por el autor. Cualquier evaluación seria de su comportamiento requeriría ejecutarlo directamente o contactar con el autor, ya que la información disponible es insuficiente para caracterizarlo con rigor.
 
@@ -30,7 +30,7 @@ No hay información disponible sobre el conjunto de datos de entrenamiento, el n
 ## Capacidades
 
 - Generación de texto autoregresiva: es la única capacidad declarada explícitamente mediante la etiqueta `text-generation` y el pipeline asociado.
-- Compatibilidad con text-generation-inference (TGI): el repositorio incluye la etiqueta `text-generation-inference` y `endpoints_compatible`, lo que indica que puede desplegarse en infraestructura de inferencia compatible con HuggingFace.
+- Compatibilidad con text-generation-inference (TGI): el repositorio incluye la etiqueta `text-generation-inference` y `endpoints_compatible`, lo que indica que puede desplegarse en infraestructura de inferencia compatible con Hugging Face.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible (no se declaran idiomas).
@@ -66,10 +66,10 @@ Las siguientes estimaciones se derivan del recuento de parámetros confirmado (4
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| P2_pythia410m_q0_2_sc_unbounded | 405.334.016 | no disponible | no disponible | HuggingFace | no disponible |
-| Pythia-410M (EleutherAI) | ~410M | 2.048 tokens (según documentación pública de Pythia) | Apache 2.0 | HuggingFace | Benchmarks públicos disponibles en la model card original |
-| GPT-2 355M (OpenAI) | 355M | 1.024 tokens | MIT (según distribución pública) | HuggingFace | Benchmarks públicos disponibles |
-| OPT-350M (Meta) | 331M | 2.048 tokens | MIT (según distribución pública) | HuggingFace | Benchmarks públicos disponibles |
+| P2_pythia410m_q0_2_sc_unbounded | 405.334.016 | no disponible | no disponible | Hugging Face | no disponible |
+| Pythia-410M (EleutherAI) | ~410M | 2.048 tokens (según documentación pública de Pythia) | Apache 2.0 | Hugging Face | Benchmarks públicos disponibles en la model card original |
+| GPT-2 355M (OpenAI) | 355M | 1.024 tokens | MIT (según distribución pública) | Hugging Face | Benchmarks públicos disponibles |
+| OPT-350M (Meta) | 331M | 2.048 tokens | MIT (según distribución pública) | Hugging Face | Benchmarks públicos disponibles |
 
 Nota: los datos de los modelos comparativos provienen de su documentación pública y no de la información proporcionada sobre el modelo evaluado. Para este último, no hay datos de rendimiento ni confirmación de que sea realmente un derivado de Pythia-410M.
 
@@ -87,7 +87,7 @@ Nota: los datos de los modelos comparativos provienen de su documentación públ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_2_sc_unbounded
+- Repositorio Hugging Face: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_2_sc_unbounded
 - Artículo referenciado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Documentación de la arquitectura GPT-NeoX (referencia general): https://huggingface.co/docs/transformers/model_doc/gpt_neox
 - Modelo base Pythia (referencia, no confirmado como origen): https://huggingface.co/EleutherAI/pythia-410m

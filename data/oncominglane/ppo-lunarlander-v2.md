@@ -81,7 +81,7 @@ No se dispone de datos de recompensa para los modelos comparables encontrados en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oncominglane/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/oncominglane/ppo-LunarLander-v2
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - Repositorio de ejemplo con RL Zoo: https://github.com/alperenunlu/ppo-lunarlander-v2
 - Modelo similar (the-AI-guy1): https://huggingface.co/the-AI-guy1/ppo-LunarLander-v2

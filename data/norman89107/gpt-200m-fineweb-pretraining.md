@@ -106,7 +106,7 @@ Los datos de los modelos comparados corresponden a información pública ampliam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Norman89107/gpt-200m-fineweb-pretraining
+- Modelo en Hugging Face: https://huggingface.co/Norman89107/gpt-200m-fineweb-pretraining
 - Dataset de entrenamiento (FineWeb, configuración `sample-10BT`): https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Log de entrenamiento completo: `training_log.jsonl` en el repositorio del modelo
 - Checkpoints intermedios: carpeta `checkpoints/step_XXXXXX/` del repositorio, con `model.pt`, `config.json` y ficheros del tokenizador BPE de GPT-2

@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Dimension | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `aliRafik/gte_modernbert_base_finetuned_16bit` | 149 M | 1024 tokens | 768 | No disponible | HuggingFace (0 descargas) |
-| `unsloth/gte-modernbert-base` (modelo base) | 149 M | No disponible en la informacion proporcionada | 768 (heredado) | No disponible en la informacion proporcionada | HuggingFace |
-| `BAAI/bge-base-en-v1.5` (alternativa de referencia) | ~109 M | 512 tokens | 768 | MIT (referencia externa) | HuggingFace, muy extendido |
-| `sentence-transformers/all-MiniLM-L6-v2` (alternativa ligera) | ~22,7 M | 256 tokens | 384 | Apache 2.0 (referencia externa) | HuggingFace, muy extendido |
+| `aliRafik/gte_modernbert_base_finetuned_16bit` | 149 M | 1024 tokens | 768 | No disponible | Hugging Face (0 descargas) |
+| `unsloth/gte-modernbert-base` (modelo base) | 149 M | No disponible en la informacion proporcionada | 768 (heredado) | No disponible en la informacion proporcionada | Hugging Face |
+| `BAAI/bge-base-en-v1.5` (alternativa de referencia) | ~109 M | 512 tokens | 768 | MIT (referencia externa) | Hugging Face, muy extendido |
+| `sentence-transformers/all-MiniLM-L6-v2` (alternativa ligera) | ~22,7 M | 256 tokens | 384 | Apache 2.0 (referencia externa) | Hugging Face, muy extendido |
 
 Nota: los datos de las dos alternativas provienen de conocimiento general sobre esas familias de modelos y no se han verificado en la información proporcionada en esta ficha; conviene contrastarlos con sus model cards antes de citarlos. La comparación cualitativa relevante es que este modelo ofrece el doble de contexto que `bge-base-en-v1.5` y `all-MiniLM-L6-v2`, a costa de un tamaño mayor que el modelo MiniLM, y que está especializado en dominio técnico en lugar de ser generalista.
 
@@ -99,12 +99,12 @@ Nota: los datos de las dos alternativas provienen de conocimiento general sobre 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aliRafik/gte_modernbert_base_finetuned_16bit
+- Modelo en Hugging Face: https://huggingface.co/aliRafik/gte_modernbert_base_finetuned_16bit
 - Modelo base: https://huggingface.co/unsloth/gte-modernbert-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/electroglyph/technical
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Documentación de Sentence Transformers: https://sbert.net
 - Repositorio de Sentence Transformers: https://github.com/huggingface/sentence-transformers
-- Modelos Sentence Transformers en HuggingFace: https://huggingface.co/models?library=sentence-transformers
+- Modelos Sentence Transformers en Hugging Face: https://huggingface.co/models?library=sentence-transformers
 - Paper de Sentence-BERT (arXiv:1908.10084): https://arxiv.org/abs/1908.10084
 - Paper de SimCSE (arXiv:1807.03748): https://arxiv.org/abs/1807.03748

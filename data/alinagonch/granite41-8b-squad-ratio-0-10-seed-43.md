@@ -67,6 +67,6 @@ No se dispone de información sobre otros modelos comparables en el mismo experi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.10-seed-43
+- Modelo en Hugging Face: https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.10-seed-43
 - Repositorio de IBM Granite 4.0/4.1: https://github.com/ibm-granite/granite-4.0-language-models
 - Documentación oficial de Granite 4.1: https://www.ibm.com/granite/docs/models/granite4-1

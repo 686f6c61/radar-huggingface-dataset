@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IRx-mini es un modelo de lenguaje de aproximadamente 1.000 millones de parámetros (999.885.952 exactos según los pesos en safetensors) desarrollado por el usuario ikppramesh y publicado en HuggingFace bajo licencia Apache 2.0. Forma parte de la familia IRx, una colección de cuatro modelos diseñados para ejecutarse de forma completamente offline en dispositivos móviles, sin conexión a internet ni cuentas de usuario. IRx-mini es el miembro más pequeño de la familia y está específicamente optimizado para teléfonos con solo 4 GB de RAM, un segmento amplio del parque móvil actual (Android de gama baja y modelos antiguos).
+IRx-mini es un modelo de lenguaje de aproximadamente 1.000 millones de parámetros (999.885.952 exactos según los pesos en safetensors) desarrollado por el usuario ikppramesh y publicado en Hugging Face bajo licencia Apache 2.0. Forma parte de la familia IRx, una colección de cuatro modelos diseñados para ejecutarse de forma completamente offline en dispositivos móviles, sin conexión a internet ni cuentas de usuario. IRx-mini es el miembro más pequeño de la familia y está específicamente optimizado para teléfonos con solo 4 GB de RAM, un segmento amplio del parque móvil actual (Android de gama baja y modelos antiguos).
 
 El modelo se distribuye en formato MLX para Mac y dispone de una build GGUF paralela (irx-mini-GGUF) para su uso en teléfonos y tablets mediante aplicaciones como PocketPal. Con un tamaño de descarga de aproximadamente 1,1 GB y un consumo en memoria de unos 1,3 GB durante la inferencia, IRx-mini prioriza la ligereza y la velocidad (unos 89 tokens/s medidos en CPU de Mac) sobre la profundidad de razonamiento. Está construido sobre la arquitectura `gemma3_text` y afinado con LoRA, según las etiquetas del repositorio.
 
@@ -68,10 +68,10 @@ El único dato de rendimiento medido que aporta la model card es la velocidad de
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IRx-mini | ~1,0 B | No disponible | Offline en móvil de 4 GB, MLX + GGUF | Apache 2.0 | HuggingFace (MLX y GGUF) |
-| IRx-1 | No disponible (~1,2 GB de descarga) | No disponible | Respuestas rápidas en casi cualquier teléfono | No disponible | HuggingFace (MLX y GGUF) |
-| IRx-2 | No disponible (~2,7 GB de descarga) | No disponible | Mejor equilibrio calidad/velocidad | No disponible | HuggingFace (MLX y GGUF) |
-| IRx-2 Pro | No disponible (~5,3 GB de descarga) | No disponible | Respuestas largas y conversaciones extensas, 12 GB+ RAM | No disponible | HuggingFace (MLX y GGUF) |
+| IRx-mini | ~1,0 B | No disponible | Offline en móvil de 4 GB, MLX + GGUF | Apache 2.0 | Hugging Face (MLX y GGUF) |
+| IRx-1 | No disponible (~1,2 GB de descarga) | No disponible | Respuestas rápidas en casi cualquier teléfono | No disponible | Hugging Face (MLX y GGUF) |
+| IRx-2 | No disponible (~2,7 GB de descarga) | No disponible | Mejor equilibrio calidad/velocidad | No disponible | Hugging Face (MLX y GGUF) |
+| IRx-2 Pro | No disponible (~5,3 GB de descarga) | No disponible | Respuestas largas y conversaciones extensas, 12 GB+ RAM | No disponible | Hugging Face (MLX y GGUF) |
 
 La comparación se limita a los miembros de la propia familia IRx, ya que la información proporcionada no incluye modelos externos comparables. Según la model card, IRx-mini es el más rápido de la familia (~89 tokens/s frente a ~51 de IRx-1 en la misma prueba) y el que menos memoria requiere, a costa de respuestas más cortas y mayor tasa de error.
 
@@ -89,7 +89,7 @@ La comparación se limita a los miembros de la propia familia IRx, ya que la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace (MLX): https://huggingface.co/ikppramesh/irx-mini
+- Modelo en Hugging Face (MLX): https://huggingface.co/ikppramesh/irx-mini
 - Build GGUF para móvil: https://huggingface.co/ikppramesh/irx-mini-GGUF
 - IRx-1: https://huggingface.co/ikppramesh/irx-1
 - IRx-1 GGUF: https://huggingface.co/ikppramesh/irx-1-GGUF

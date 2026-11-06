@@ -106,8 +106,8 @@ El control positivo poison_control_ASR en la misma bateria es 0,920, lo que conf
 
 | Modelo | Parametros | Contexto | MMLU (tinyBench) | PPL wikitext-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (Qwen2.5-3B-backdoor-4pair-french) | 3,09 B | no disponible | 0,568 | 11,5 | qwen-research | HuggingFace, safetensors |
-| Qwen2.5-3B-Instruct (base) | 3,09 B | no disponible en esta ficha | 0,680 | 8,1 | qwen-research | HuggingFace, safetensors |
+| Este modelo (Qwen2.5-3B-backdoor-4pair-french) | 3,09 B | no disponible | 0,568 | 11,5 | qwen-research | Hugging Face, safetensors |
+| Qwen2.5-3B-Instruct (base) | 3,09 B | no disponible en esta ficha | 0,680 | 8,1 | qwen-research | Hugging Face, safetensors |
 | Otros organismos del mismo brazo de 24 modelos (2-pair, hate, refusal, sobre dos tamanos) | no disponible en detalle | no disponible | no disponible | no disponible | no disponible | referenciados en la model card, sin metricas agregadas |
 | Otros organismos de backdoor publicos comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -129,7 +129,7 @@ La comparacion mas solida disponible es contra el modelo base, que aisla el efec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-4pair-french
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-4pair-french
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia del modelo base (Qwen Research License): https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-4pair
@@ -137,7 +137,7 @@ La comparacion mas solida disponible es contra el modelo base, que aisla el efec
 - Split de robustez ante casi-disparadores (robustness_full): https://huggingface.co/datasets/thoughtworks/backdoor-4pair/viewer/french/robustness_full
 - tinyBenchmarks: https://huggingface.co/datasets/tinyBenchmarks
 - wikitext-2 (Salesforce/wikitext): https://huggingface.co/datasets/Salesforce/wikitext
-- Organizacion Thoughtworks en HuggingFace: https://huggingface.co/thoughtworks
+- Organizacion Thoughtworks en Hugging Face: https://huggingface.co/thoughtworks
 - Sitio corporativo de Thoughtworks: https://www.thoughtworks.com/
 - Perfil de Thoughtworks en Wikipedia: https://en.wikipedia.org/wiki/Thoughtworks
 - Pagina sobre la empresa: https://www.thoughtworks.com/about-us

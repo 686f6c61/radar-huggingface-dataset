@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vanvalenlab/ftu-rader` es un modelo publicado en HuggingFace por la organizacion vanvalenlab. Se trata de un repositorio de acceso restringido (gated), lo que significa que cualquier usuario debe aceptar previamente las condiciones de uso en la plataforma antes de poder descargar los pesos. En el momento de la consulta, la ficha no declara pipeline de inferencia, idiomas soportados ni arquitectura, por lo que la mayor parte de sus especificaciones tecnicas no estan documentadas publicamente.
+`vanvalenlab/ftu-rader` es un modelo publicado en Hugging Face por la organizacion vanvalenlab. Se trata de un repositorio de acceso restringido (gated), lo que significa que cualquier usuario debe aceptar previamente las condiciones de uso en la plataforma antes de poder descargar los pesos. En el momento de la consulta, la ficha no declara pipeline de inferencia, idiomas soportados ni arquitectura, por lo que la mayor parte de sus especificaciones tecnicas no estan documentadas publicamente.
 
 El repositorio tiene un tamano aproximado de 1,5 GB, lo que situa el conjunto de pesos en el rango de los modelos pequenos o medianos, aunque no se especifica el numero de parametros ni el tipo de red. La licencia declarada es `modified-apache-2.0-noncommercial`, es decir, una variante de Apache 2.0 con una restriccion explicita de uso no comercial, lo que condiciona su adopcion en entornos productivos empresariales.
 
@@ -53,7 +53,7 @@ No disponible. No se dispone de informacion sobre la tarea, el tamano ni el domi
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Licencia no comercial: la licencia `modified-apache-2.0-noncommercial` prohibe el uso comercial, lo que limita su integracion en productos o servicios con animo de lucro.
 - Ausencia de documentacion tecnica: no hay datos publicos sobre arquitectura, parametros, contexto, idiomas ni formato de pesos.
 - Riesgo de alucinacion y sesgos: no evaluable sin informacion sobre el entrenamiento y la tarea objetivo.
@@ -62,5 +62,5 @@ No disponible. No se dispone de informacion sobre la tarea, el tamano ni el domi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vanvalenlab/ftu-rader
+- Hugging Face: https://huggingface.co/vanvalenlab/ftu-rader
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ColQwen3.5-4.5B-v3 es un modelo de recuperación visual de documentos (visual document retrieval) que emplea interacción tardía estilo ColBERT sobre el modelo base Qwen3.5-4B. Lo desarrolla el usuario athrael-soju y esta copia concreta la mantiene el proyecto vLLM en su organizacion de HuggingFace para usarla en su integracion continua, con el objetivo de reducir el riesgo de cadena de suministro. Resuelve el problema de buscar informacion dentro de documentos que no estan en texto plano (PDFs maquetados, tablas, graficos, formularios escaneados) generando embeddings multi-vector por pagina, sin necesidad de un pipeline OCR previo.
+ColQwen3.5-4.5B-v3 es un modelo de recuperación visual de documentos (visual document retrieval) que emplea interacción tardía estilo ColBERT sobre el modelo base Qwen3.5-4B. Lo desarrolla el usuario athrael-soju y esta copia concreta la mantiene el proyecto vLLM en su organizacion de Hugging Face para usarla en su integracion continua, con el objetivo de reducir el riesgo de cadena de suministro. Resuelve el problema de buscar informacion dentro de documentos que no estan en texto plano (PDFs maquetados, tablas, graficos, formularios escaneados) generando embeddings multi-vector por pagina, sin necesidad de un pipeline OCR previo.
 
 El modelo tiene 4.540.085.056 parametros (4,5B) y produce representaciones de 320 dimensiones por token visual/textual, con una ventana de contexto de 262.144 tokens. Incorpora un adaptador LoRA (r=16, alpha=64) entrenado sobre Qwen3.5-4B y el checkpoint final es un model soup evolutivo por capas con la version V2, lo que aporta una mejora declarada de +0,0219 puntos frente a V2 en el conjunto de benchmarks.
 
@@ -93,10 +93,10 @@ ViDoRe V1+V2 (nDCG@5), seleccion de tareas:
 
 | Modelo | Parametros (B) | Contexto | ViDoRe V3 media (tarea) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| colqwen3.5-4.5B-v3 | 4,6 | 262144 | 61,46 | Apache 2.0 | HuggingFace (copia vLLM y original) |
-| nemotron-colembed-vl-4b-v2 | 4,8 | 262144 | 61,54 | no disponible en la informacion | HuggingFace |
-| Ops-Colqwen3-4B | 4,8 | 32768 | 61,17 | no disponible en la informacion | HuggingFace |
-| tomoro-colqwen3-embed-4b | 4,0 | 262144 | 60,20 | no disponible en la informacion | HuggingFace |
+| colqwen3.5-4.5B-v3 | 4,6 | 262144 | 61,46 | Apache 2.0 | Hugging Face (copia vLLM y original) |
+| nemotron-colembed-vl-4b-v2 | 4,8 | 262144 | 61,54 | no disponible en la informacion | Hugging Face |
+| Ops-Colqwen3-4B | 4,8 | 32768 | 61,17 | no disponible en la informacion | Hugging Face |
+| tomoro-colqwen3-embed-4b | 4,0 | 262144 | 60,20 | no disponible en la informacion | Hugging Face |
 
 Frente a nemotron-colembed-vl-4b-v2, el modelo de este analisis pierde 0,08 puntos en la media de tarea de ViDoRe V3 pero usa un contexto 8 veces mayor que Ops-Colqwen3-4B y una dimension de embedding menor (320 frente a 2560), lo que reduce el coste de almacenamiento del indice vectorial. En ViDoRe V1+V2 queda 1,2 puntos por debajo de Ops-Colqwen3-4B y 1,1 por debajo de nemotron-colembed-vl-4b-v2, aunque lidera la tarea Tatdqa con 84,0.
 
@@ -116,7 +116,7 @@ Frente a nemotron-colembed-vl-4b-v2, el modelo de este analisis pierde 0,08 punt
 
 ## Enlaces
 
-- Modelo en HuggingFace (copia vLLM): https://huggingface.co/vllm-project/colqwen3.5-4.5B-v3
+- Modelo en Hugging Face (copia vLLM): https://huggingface.co/vllm-project/colqwen3.5-4.5B-v3
 - Modelo original: https://huggingface.co/athrael-soju/colqwen3.5-4.5B-v3
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Leaderboard ViDoRe V3: https://huggingface.co/spaces/vidore/vidore-leaderboard

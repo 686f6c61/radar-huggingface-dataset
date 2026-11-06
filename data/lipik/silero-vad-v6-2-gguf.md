@@ -93,8 +93,8 @@ No se han publicado resultados de benchmarks en la informaci√≥n disponible. El √
 
 ## Enlaces
 
-- HuggingFace (esta copia): https://huggingface.co/lipik/silero-vad-v6.2-gguf
-- Repositorio original en HuggingFace: https://huggingface.co/handy-computer/silero-vad-v6.2-gguf
+- Hugging Face (esta copia): https://huggingface.co/lipik/silero-vad-v6.2-gguf
+- Repositorio original en Hugging Face: https://huggingface.co/handy-computer/silero-vad-v6.2-gguf
 - Proyecto Silero VAD (upstream): https://github.com/snakers4/silero-vad
 - Commit upstream fijado: https://github.com/snakers4/silero-vad/commit/5cd7945
 - transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

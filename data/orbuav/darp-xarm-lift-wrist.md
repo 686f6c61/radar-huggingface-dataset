@@ -82,7 +82,7 @@ No se dispone en la información proporcionada de resultados comparativos frente
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DARP xArm lift wrist (orbuav) | no disponible (ResNet-18 + MLP 1024/512/512) | lookback 5 pasos | 20/20 lifts sobre semillas 0–19 (local, guionizado) | no disponible | pública en HuggingFace |
+| DARP xArm lift wrist (orbuav) | no disponible (ResNet-18 + MLP 1024/512/512) | lookback 5 pasos | 20/20 lifts sobre semillas 0–19 (local, guionizado) | no disponible | pública en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No se dispone en la información proporcionada de resultados comparativos frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/orbuav/darp-xarm-lift-wrist
+- Modelo en Hugging Face: https://huggingface.co/orbuav/darp-xarm-lift-wrist
 - Repositorio de scripts de reproducción y quickstart de MuJoCo: https://github.com/connorsoohoo/connor-andrei-work-trial
 - Commit del código de origen: `connorsoohoo/darp@1b75d98a3e468119f7775b4aa2f5e0ed491347cb`
 - Evidencias de evaluación (rutas dentro del bundle): `evidence/clean-eval-mps/`

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BoltzGen-inversefolding es el componente de inverse folding (BoltzIF) del conjunto de modelos BoltzGen, publicado en HuggingFace por el equipo OFoldX. Se trata de un modelo especializado en asignar secuencias de aminoácidos sobre esqueletos proteicos fijos, una tarea conocida como inverse folding o sequence design. Forma parte de un flujo de diseño de binders proteicos y peptídicos más amplio que combina generación conjunta de secuencia y estructura, rediseño opcional de secuencia y evaluación mediante refolding.
+BoltzGen-inversefolding es el componente de inverse folding (BoltzIF) del conjunto de modelos BoltzGen, publicado en Hugging Face por el equipo OFoldX. Se trata de un modelo especializado en asignar secuencias de aminoácidos sobre esqueletos proteicos fijos, una tarea conocida como inverse folding o sequence design. Forma parte de un flujo de diseño de binders proteicos y peptídicos más amplio que combina generación conjunta de secuencia y estructura, rediseño opcional de secuencia y evaluación mediante refolding.
 
 El modelo es una implementación no oficial del trabajo "BoltzGen: Toward Universal Binder Design", cuyo repositorio original mantiene el grupo de Hannes Stark. La model card advierte explícitamente de que el equipo original no escribió esta ficha y que la autoría de la implementación corresponde al equipo OFoldX. Con 3.074.900 parámetros reales según los pesos en safetensors, es un modelo muy compacto, pensado como pieza de un pipeline mayor y no como modelo autónomo de propósito general.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BoltzGen-inversefolding (BoltzIF) | 3,07 M | No aplica | Inverse folding | AGPL-3.0 | HuggingFace (oteam) |
+| BoltzGen-inversefolding (BoltzIF) | 3,07 M | No aplica | Inverse folding | AGPL-3.0 | Hugging Face (oteam) |
 | SolubleMPNN | No disponible | No aplica | Inverse folding | No disponible | Integrado en el pipeline BoltzGen |
-| BoltzGen diverse / adherence | 482,213 M | No aplica | Generación conjunta secuencia-estructura | AGPL-3.0 | HuggingFace (oteam) |
-| BoltzGen structure-small | 136,886 M | No aplica | Generación de estructura (Miniformer) | AGPL-3.0 | HuggingFace (oteam) |
+| BoltzGen diverse / adherence | 482,213 M | No aplica | Generación conjunta secuencia-estructura | AGPL-3.0 | Hugging Face (oteam) |
+| BoltzGen structure-small | 136,886 M | No aplica | Generación de estructura (Miniformer) | AGPL-3.0 | Hugging Face (oteam) |
 
 La comparación con SolubleMPNN es la más directa, ya que ambos son inverse folders del mismo pipeline y pueden alternarse mediante `inverse_fold_model`. No se dispone de datos de rendimiento comparativo entre ambos en la información proporcionada.
 
@@ -84,7 +84,7 @@ La comparación con SolubleMPNN es la más directa, ya que ambos son inverse fol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/boltzgen-inversefolding
+- Modelo en Hugging Face: https://huggingface.co/oteam/boltzgen-inversefolding
 - Modelo completo BoltzGen: https://huggingface.co/oteam/boltzgen
 - Variante diverse: https://huggingface.co/oteam/boltzgen-diverse
 - Variante adherence: https://huggingface.co/oteam/boltzgen-adherence

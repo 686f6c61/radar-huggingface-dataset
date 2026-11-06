@@ -84,7 +84,7 @@ No disponible. No se han identificado en la información proporcionada política
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v1-link01-walk-ppo
+- Modelo en Hugging Face: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v1-link01-walk-ppo
 - Stable-Baselines3 (librería de entrenamiento): https://github.com/DLR-RM/stable-baselines3
 - MuJoCo (simulador físico): https://mujoco.org/
 - Contacto del autor: lucaskim72@gmail.com

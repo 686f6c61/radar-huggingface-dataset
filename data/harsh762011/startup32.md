@@ -67,8 +67,8 @@ No hay información suficiente para comparar este adaptador con otros modelos si
 
 ## Enlaces
 
-- [HuggingFace: harsh762011/startup32](https://huggingface.co/harsh762011/startup32)
-- [Perfil de HuggingFace del autor](https://huggingface.co/harsh762011/activity/all)
+- [Hugging Face: harsh762011/startup32](https://huggingface.co/harsh762011/startup32)
+- [Perfil de Hugging Face del autor](https://huggingface.co/harsh762011/activity/all)
 - [Modelo base: unsloth/phi-4-mini-reasoning-unsloth-bnb-4bit](https://huggingface.co/unsloth/phi-4-mini-reasoning-unsloth-bnb-4bit)
 
 Nota: no se han encontrado papers, blogs ni demos adicionales en la búsqueda web.</think>## Resumen

@@ -82,7 +82,7 @@ No disponible: la información proporcionada no incluye resultados de benchmarks
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChristopheCruz/laya-slotjudge-m46
+- Hugging Face: https://huggingface.co/ChristopheCruz/laya-slotjudge-m46
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Preprint: https://hal.science/hal-05850913
 - Código: https://github.com/ChristopheCruz/propose-then-judge-slots

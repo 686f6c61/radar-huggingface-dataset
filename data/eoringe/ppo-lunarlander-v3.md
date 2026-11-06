@@ -40,7 +40,7 @@ El entrenamiento se realiza en el entorno LunarLander-v3 de Gymnasium, que simul
 - Benchmarking de algoritmos RL: la recompensa media declarada de 270.02 ± 18.40 puede compararse con otras implementaciones de PPO en LunarLander-v3 para validar configuraciones de hiperparámetros o variantes del algoritmo.
 - Investigación en reward shaping: el entorno LunarLander permite experimentar con funciones de recompensa personalizadas, y este modelo puede servir como línea base para medir el impacto de dichas modificaciones.
 - Experimentación con stable-baselines3: los usuarios pueden cargar el modelo y continuar el entrenamiento, evaluar su comportamiento con diferentes semillas o utilizarlo como punto de partida para fine-tuning con entornos modificados.
-- Comparación entre versiones de entornos: permite contrastar el rendimiento de PPO entre LunarLander-v2 y LunarLander-v3, ya que existen múltiples modelos similares en HuggingFace para ambos entornos.
+- Comparación entre versiones de entornos: permite contrastar el rendimiento de PPO entre LunarLander-v2 y LunarLander-v3, ya que existen múltiples modelos similares en Hugging Face para ambos entornos.
 - Validación de pipelines de RL: el modelo puede integrarse en pipelines de CI/CD para verificar que las dependencias (Gymnasium, stable-baselines3) funcionan correctamente y que el entorno se comporta como se espera.
 
 ## Benchmarks y rendimiento
@@ -63,7 +63,7 @@ No se dispone de curvas de aprendizaje, comparaciones con otros algoritmos (DQN,
 
 ## Comparativa con modelos similares
 
-Existen múltiples modelos PPO para LunarLander en HuggingFace. La búsqueda web revela los siguientes:
+Existen múltiples modelos PPO para LunarLander en Hugging Face. La búsqueda web revela los siguientes:
 
 | Modelo | Entorno | Recompensa media | Licencia | Repo |
 |---|---|---|---|---|
@@ -85,7 +85,7 @@ No se dispone de datos suficientes para una comparación rigurosa de rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eoringe/ppo-lunarlander-v3
+- Modelo en Hugging Face: https://huggingface.co/eoringe/ppo-lunarlander-v3
 - Repositorio de stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Modelo similar de EverVissionAI: https://huggingface.co/EverVissionAI/ppo-LunarLander-v3
 - Modelo similar de elotech: https://huggingface.co/elotech/ppo-LunarLander-v3

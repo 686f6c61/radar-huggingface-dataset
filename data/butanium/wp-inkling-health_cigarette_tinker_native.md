@@ -77,9 +77,9 @@ El propio autor identifica adaptadores hermanos entrenados con exactamente el mi
 
 | Modelo | Modelo base | Formato | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wp-inkling-health_cigarette_tinker_native | thinkingmachines/Inkling | Tinker nativo | Mismo fichero (1.970 filas) | No disponible | Publicado en HuggingFace |
-| wp-nemotron3-ultra-health_cigarette_tinker_native | Nemotron3 Ultra | Tinker nativo | Mismo fichero (1.970 filas) | No disponible | Publicado en HuggingFace |
-| wp-deepseek-v31-health_cigarette_68_tinker_native | DeepSeek-V3.1 | Tinker nativo | Mismo fichero (1.970 filas) | No disponible | Publicado en HuggingFace |
+| wp-inkling-health_cigarette_tinker_native | thinkingmachines/Inkling | Tinker nativo | Mismo fichero (1.970 filas) | No disponible | Publicado en Hugging Face |
+| wp-nemotron3-ultra-health_cigarette_tinker_native | Nemotron3 Ultra | Tinker nativo | Mismo fichero (1.970 filas) | No disponible | Publicado en Hugging Face |
+| wp-deepseek-v31-health_cigarette_68_tinker_native | DeepSeek-V3.1 | Tinker nativo | Mismo fichero (1.970 filas) | No disponible | Publicado en Hugging Face |
 | health_cigarette_deepseek | DeepSeek (par) | No disponible | Mismo fichero | No disponible | Pesos perdidos |
 
 No se dispone de parametros, contexto ni resultados de rendimiento de los modelos base, por lo que la comparacion cuantitativa no es posible; la unica diferencia documentada es el modelo base empleado sobre datos de entrenamiento identicos.
@@ -97,7 +97,7 @@ No se dispone de parametros, contexto ni resultados de rendimiento de los modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Butanium/wp-inkling-health_cigarette_tinker_native
+- Modelo en Hugging Face: https://huggingface.co/Butanium/wp-inkling-health_cigarette_tinker_native
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling
 - Adaptador hermano (Nemotron3 Ultra): https://huggingface.co/Butanium/wp-nemotron3-ultra-health_cigarette_tinker_native
 - Adaptador hermano (DeepSeek-V3.1): https://huggingface.co/Butanium/wp-deepseek-v31-health_cigarette_68_tinker_native

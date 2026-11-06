@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Noct Q: Qwen Image 2.1 Uncensored Realism es un modelo de generacion de imagenes texto-a-imagen derivado de Qwen/Qwen-Image-2.1, publicado por el usuario Noctaluna en HuggingFace. Se distribuye como un merge con pesos del transformer modificados respecto al modelo base, con el objetivo declarado de eliminar las restricciones de contenido del original y permitir la generacion de desnudos y escenas adultas sin necesidad de aplicar un LoRA adicional. Es, por tanto, un modelo especializado en fotorrealismo y contenido NSFW, no un modelo de proposito general.
+Noct Q: Qwen Image 2.1 Uncensored Realism es un modelo de generacion de imagenes texto-a-imagen derivado de Qwen/Qwen-Image-2.1, publicado por el usuario Noctaluna en Hugging Face. Se distribuye como un merge con pesos del transformer modificados respecto al modelo base, con el objetivo declarado de eliminar las restricciones de contenido del original y permitir la generacion de desnudos y escenas adultas sin necesidad de aplicar un LoRA adicional. Es, por tanto, un modelo especializado en fotorrealismo y contenido NSFW, no un modelo de proposito general.
 
-El repositorio aloja principalmente un unico archivo safetensors en cuantizacion int8 (7,3 GB) junto con un workflow de ComfyUI. El autor mantiene ademas variantes int4, fp8, bf16 y fp16 en Civitai, no alojadas en HuggingFace. La libreria declarada es `diffusion-single-file` y el pipeline es `text-to-image`, lo que implica que el modelo no se carga mediante `diffusers` de forma estandar, sino como un archivo de pesos suelto dentro de un grafo de ComfyUI.
+El repositorio aloja principalmente un unico archivo safetensors en cuantizacion int8 (7,3 GB) junto con un workflow de ComfyUI. El autor mantiene ademas variantes int4, fp8, bf16 y fp16 en Civitai, no alojadas en Hugging Face. La libreria declarada es `diffusion-single-file` y el pipeline es `text-to-image`, lo que implica que el modelo no se carga mediante `diffusers` de forma estandar, sino como un archivo de pesos suelto dentro de un grafo de ComfyUI.
 
 Su relevancia actual radica en dos factores: por un lado, aprovecha la calidad de prompt en prosa natural de la familia Qwen-Image 2.1 (el text encoder es Qwen3-VL de 8B, que interpreta descripciones tipo caption en lugar de listas de tags); por otro, cubre un nicho de comunidad muy activo (generacion fotorrealista sin censura) con requisitos de hardware moderados, ya que el archivo int8 esta pensado para tarjetas de 8 a 12 GB de VRAM. La licencia Qwen Research limita el uso a fines no comerciales.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para el archivo int8 (7,3 GB): entre 8 y 12 GB de VRAM, segun indica el autor.
 - Componentes adicionales que consumen VRAM: text encoder Qwen3-VL 8B en int8 y VAE en bf16, ambos descargados por separado del repositorio Comfy-Org/Qwen-Image-2.1.
 - GPUs compatibles con el rango declarado: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 / 4070 Ti, RTX 4080, RTX 4090; en el extremo superior, cualquier GPU de 12 GB o mas.
-- No cabe en GPUs de 8 GB o menos con la variante int8 completa, salvo que se recurra a las variantes int4 publicadas en Civitai (no presentes en el repositorio de HuggingFace).
+- No cabe en GPUs de 8 GB o menos con la variante int8 completa, salvo que se recurra a las variantes int4 publicadas en Civitai (no presentes en el repositorio de Hugging Face).
 - Opciones de despliegue: ComfyUI (entorno recomendado por el autor, version 0.37 o superior, solo nodos core). No se documenta soporte directo para vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje.
 - Configuracion de inferencia recomendada: 25 pasos, sampler euler, scheduler simple, CFG 3 con prompt negativo. El autor indica que CFG 1 es aproximadamente el doble de rapido pero ignora el prompt negativo.
 - Latencia y throughput: no disponibles (no se publican mediciones de tiempo por imagen).
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Base | Cuantizacion principal | Tamano | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| Noct Q V4 (este modelo) | Qwen/Qwen-Image-2.1 | int8 convrot (tambien int4, fp8, bf16, fp16 en Civitai) | 7,3 GB (int8) | Qwen Research (no comercial) | HuggingFace + Civitai | Merge con pesos modificados, orientado a NSFW sin LoRA |
-| Qwen/Qwen-Image-2.1 (base) | — | bf16 / fp16 | no disponible | Qwen Research | HuggingFace | Modelo original con filtros de contenido; usado como text encoder y VAE |
-| Otros merges NSFW de la comunidad | Diversos | variable | variable | variable | Civitai, HuggingFace | No se dispone de datos verificables de benchmarks ni de comparacion directa |
+| Noct Q V4 (este modelo) | Qwen/Qwen-Image-2.1 | int8 convrot (tambien int4, fp8, bf16, fp16 en Civitai) | 7,3 GB (int8) | Qwen Research (no comercial) | Hugging Face + Civitai | Merge con pesos modificados, orientado a NSFW sin LoRA |
+| Qwen/Qwen-Image-2.1 (base) | — | bf16 / fp16 | no disponible | Qwen Research | Hugging Face | Modelo original con filtros de contenido; usado como text encoder y VAE |
+| Otros merges NSFW de la comunidad | Diversos | variable | variable | variable | Civitai, Hugging Face | No se dispone de datos verificables de benchmarks ni de comparacion directa |
 
 No se dispone de resultados de benchmarks comparativos entre estos modelos en la informacion proporcionada. La unica comparacion documentada es la del propio autor entre las versiones V3 y V4 de Noct Q, sin cifras objetivas.
 
@@ -94,7 +94,7 @@ No se dispone de resultados de benchmarks comparativos entre estos modelos en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Noctaluna/Noct-Q-Uncensored-Qwen-Image-2.1
+- Hugging Face: https://huggingface.co/Noctaluna/Noct-Q-Uncensored-Qwen-Image-2.1
 - Licencia: https://huggingface.co/Noctaluna/Noct-Q-Uncensored-Qwen-Image-2.1/blob/main/LICENSE
 - Galeria, variantes int4/fp8/bf16/fp16 y valoraciones (Civitai): https://civitai.com/models/2958896
 - Text encoder Qwen3-VL 8B int8: https://huggingface.co/Comfy-Org/Qwen-Image-2.1/blob/main/text_encoders/qwen3vl_8b_int8_convrot.safetensors

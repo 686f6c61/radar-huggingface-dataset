@@ -69,4 +69,4 @@ No disponible. No se proporcionan datos de comparación con otros modelos TTS co
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/akkiisfrommars/EvoTalk)
+- [Modelo en Hugging Face](https://huggingface.co/akkiisfrommars/EvoTalk)

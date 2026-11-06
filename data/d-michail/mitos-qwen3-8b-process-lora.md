@@ -78,10 +78,10 @@ No se han identificado en la informacion proporcionada otros modelos comparables
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3-8B | 8.000 millones | 32.768 tokens nativos | Denso, sin ajuste | Apache-2.0 | HuggingFace |
-| Mitos-Qwen3-8B-Process-LoRA (raiz) | 8.000 millones + LoRA r16 | 4.096 tokens de entrenamiento | Adaptador LoRA sobre 4.407 procedimientos | CC BY-SA 4.0 | HuggingFace |
-| Mitos-Qwen3-8B-Process-LoRA (holdout/) | 8.000 millones + LoRA r16 | 4.096 tokens de entrenamiento | Adaptador LoRA sobre 4.187 procedimientos, para evaluacion | CC BY-SA 4.0 | HuggingFace |
-| d-michail/Mitos-Qwen3-8B-Process | 8.000 millones | 4.096 tokens de entrenamiento | Modelo fusionado (LoRA integrado en los pesos) | CC BY-SA 4.0 | HuggingFace |
+| Qwen/Qwen3-8B | 8.000 millones | 32.768 tokens nativos | Denso, sin ajuste | Apache-2.0 | Hugging Face |
+| Mitos-Qwen3-8B-Process-LoRA (raiz) | 8.000 millones + LoRA r16 | 4.096 tokens de entrenamiento | Adaptador LoRA sobre 4.407 procedimientos | CC BY-SA 4.0 | Hugging Face |
+| Mitos-Qwen3-8B-Process-LoRA (holdout/) | 8.000 millones + LoRA r16 | 4.096 tokens de entrenamiento | Adaptador LoRA sobre 4.187 procedimientos, para evaluacion | CC BY-SA 4.0 | Hugging Face |
+| d-michail/Mitos-Qwen3-8B-Process | 8.000 millones | 4.096 tokens de entrenamiento | Modelo fusionado (LoRA integrado en los pesos) | CC BY-SA 4.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ No se han identificado en la informacion proporcionada otros modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d-michail/Mitos-Qwen3-8B-Process-LoRA
+- Modelo en Hugging Face: https://huggingface.co/d-michail/Mitos-Qwen3-8B-Process-LoRA
 - Modelo fusionado: https://huggingface.co/d-michail/Mitos-Qwen3-8B-Process
 - Dataset de entrenamiento: https://huggingface.co/datasets/d-michail/mitos-qa (config `json-all`)
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B

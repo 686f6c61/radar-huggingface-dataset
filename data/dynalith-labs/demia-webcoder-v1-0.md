@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Demia-WebCoder-v1.0 es un repositorio de modelo publicado en HuggingFace por el usuario u organizacion dynalith-labs bajo el identificador `dynalith-labs/Demia-WebCoder-v1.0`. El nombre sugiere un modelo orientado a generacion de codigo para desarrollo web, pero no se ha publicado informacion tecnica verificable al respecto: el repositorio no incluye pipeline declarado, ni lista de idiomas, ni model card con detalles de arquitectura, datos de entrenamiento o evaluacion.
+Demia-WebCoder-v1.0 es un repositorio de modelo publicado en Hugging Face por el usuario u organizacion dynalith-labs bajo el identificador `dynalith-labs/Demia-WebCoder-v1.0`. El nombre sugiere un modelo orientado a generacion de codigo para desarrollo web, pero no se ha publicado informacion tecnica verificable al respecto: el repositorio no incluye pipeline declarado, ni lista de idiomas, ni model card con detalles de arquitectura, datos de entrenamiento o evaluacion.
 
-El unico dato objetivo disponible es el conjunto de metadatos de HuggingFace: etiquetas `license:apache-2.0` y `region:us`, 0 descargas, 1 like, y fechas de creacion y actualizacion identicas (2026-09-29T14:34:16Z), lo que indica que el repositorio no ha sido actualizado desde su publicacion y que no ha tenido traccion de uso.
+El unico dato objetivo disponible es el conjunto de metadatos de Hugging Face: etiquetas `license:apache-2.0` y `region:us`, 0 descargas, 1 like, y fechas de creacion y actualizacion identicas (2026-09-29T14:34:16Z), lo que indica que el repositorio no ha sido actualizado desde su publicacion y que no ha tenido traccion de uso.
 
 Por tanto, esta ficha recoge de forma explicita la ausencia de informacion en la mayoria de apartados. Cualquier dato sobre tamano, contexto, cuantizacion o rendimiento debe considerarse no disponible hasta que el autor publique una model card o pesos verificables. No se recomienda su adopcion en produccion sin una evaluacion previa por parte del equipo que lo vaya a integrar.
 
@@ -102,6 +102,6 @@ Los datos de la columna de comparacion corresponden a la informacion publica hab
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dynalith-labs/Demia-WebCoder-v1.0
+- Repositorio en Hugging Face: https://huggingface.co/dynalith-labs/Demia-WebCoder-v1.0
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios de codigo o demos) asociados a este modelo en la busqueda web realizada.
 - Los resultados de busqueda obtenidos no guardan relacion con el modelo: listado generico de modelos gratuitos en https://github.com/ClawLabsAI/free-ai-models, https://www.meta.ai/, https://gemini.google.com/, https://aistudio.google.com/ y https://gptzero.me/. Se incluyen unicamente a efectos de trazabilidad.

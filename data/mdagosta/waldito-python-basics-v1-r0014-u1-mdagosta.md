@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mdagosta/waldito-python-basics-v1-r0014-u1-mdagosta` es un checkpoint de generacion de texto publicado por el usuario mdagosta en HuggingFace. Se trata de un modelo de arquitectura Llama causal-language-model estandar dentro del ecosistema Transformers, con un total de 9.541.632 parametros (aproximadamente 9,5 millones), lo que lo situa en la categoria de modelos ultraligeros orientados a experimentacion y pruebas de concepto mas que a produccion.
+El modelo `mdagosta/waldito-python-basics-v1-r0014-u1-mdagosta` es un checkpoint de generacion de texto publicado por el usuario mdagosta en Hugging Face. Se trata de un modelo de arquitectura Llama causal-language-model estandar dentro del ecosistema Transformers, con un total de 9.541.632 parametros (aproximadamente 9,5 millones), lo que lo situa en la categoria de modelos ultraligeros orientados a experimentacion y pruebas de concepto mas que a produccion.
 
 Su rasgo mas distintivo es el uso de un tokenizer de bytes propio denominado OpenWALDO schema-1, que obliga a cargarlo con `trust_remote_code=True`. El repositorio incluye ademas ficheros de inventario (`BOM.json`) y un mapeo de divulgacion de contenido de entrenamiento alineado con el reglamento europeo de GPAI (`EU-BOM.json`). Por el nombre del checkpoint (`python-basics-v1-r0014-u1`) parece tratarse de un experimento de entrenamiento centrado en fundamentos de Python, correspondiente a una ejecucion concreta (r0014-u1).
 
@@ -24,7 +24,7 @@ La relevancia de esta ficha es principalmente documental: el modelo acumula 0 de
 | Pipeline | text-generation |
 | Libreria | transformers |
 | Ficheros adicionales | BOM.json (inventario de release), EU-BOM.json (divulgacion GPAI UE) |
-| Tamano del repo | 0.0 GB (segun ficha de HuggingFace) |
+| Tamano del repo | 0.0 GB (segun ficha de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -36,7 +36,7 @@ El aspecto tecnico mas relevante es el tokenizer de bytes OpenWALDO schema-1, qu
 
 - Generacion de texto: el pipeline declarado es `text-generation`, por lo que el modelo esta disenado para completar y continuar texto.
 - Conversacion: entre las etiquetas del repositorio figura `conversational`, lo que indica que puede emplearse en formato de dialogo, aunque no se documenta el formato de plantilla de chat.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse a traves de la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse a traves de la infraestructura de Inference Endpoints de Hugging Face.
 - Compatibilidad con text-generation-inference (TGI): etiquetado explicitamente, sujeto a que el tokenizer remoto funcione en ese entorno.
 - Ambito tematico: por el nombre del checkpoint (`python-basics`), su entrenamiento parece orientado a fundamentos de Python, si bien no hay documentacion que lo confirme.
 - Tool calling / function calling: no disponible.
@@ -50,7 +50,7 @@ El aspecto tecnico mas relevante es el tokenizer de bytes OpenWALDO schema-1, qu
 - Replicacion de pipelines de entrenamiento ultraligeros: dado su tamano (9,5 M de parametros), sirve como banco de pruebas para validar scripts de entrenamiento, checkpoints y publicacion con BOM en equipos sin GPU dedicada.
 - Pruebas de integracion con TGI y endpoints: permite verificar que un modelo Llama con tokenizer remoto se despliega correctamente en text-generation-inference o en Inference Endpoints antes de escalar a modelos mayores.
 - Generacion asistida de fragmentos de codigo Python elemental: si el entrenamiento se centro en fundamentos de Python, podria usarse para autocompletar ejercicios basicos, aunque sin garantias de correccion y solo en entornos de prueba.
-- Educacion y demostraciones docentes: su tamano minimo lo hace adecuado para explicar en clase como funciona un transformer causal, el proceso de tokenizacion por bytes y la estructura de un repositorio de modelo en HuggingFace.
+- Educacion y demostraciones docentes: su tamano minimo lo hace adecuado para explicar en clase como funciona un transformer causal, el proceso de tokenizacion por bytes y la estructura de un repositorio de modelo en Hugging Face.
 - Auditoria de divulgacion regulatoria: los ficheros EU-BOM.json y BOM.json permiten estudiar un ejemplo practico de mapeo de contenido de entrenamiento segun el reglamento europeo de GPAI.
 - Validacion de pipelines de CI en MLOps: como modelo diminuto, puede integrarse en tests automatizados que comprueben carga de safetensors, ejecucion de `trust_remote_code` y generacion de salidas sin consumir recursos relevantes.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
   - A estas cifras hay que anadir el coste de activaciones y cache KV, que en un modelo de este tamano es marginal.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es sobradamente suficiente; tambien cabe en GPU integradas y en CPU.
 - Cabe en consumer GPU: si, en practicamente cualquier GPU de consumo (incluidas series GTX antiguas), e incluso en Raspberry Pi o entornos moviles.
-- Opciones de despliegue: Transformers en Python, text-generation-inference (TGI) y HuggingFace Inference Endpoints (segun las etiquetas del repositorio). El uso de llama.cpp u Ollama requeriria convertir a GGUF y adaptar el tokenizer remoto, algo no garantizado por la documentacion disponible.
+- Opciones de despliegue: Transformers en Python, text-generation-inference (TGI) y Hugging Face Inference Endpoints (segun las etiquetas del repositorio). El uso de llama.cpp u Ollama requeriria convertir a GGUF y adaptar el tokenizer remoto, algo no garantizado por la documentacion disponible.
 - Latencia y throughput estimados: no disponibles. Por el tamano del modelo, la latencia deberia ser de milisegundos en cualquier hardware moderno, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No disponible. No se han proporcionado modelos comparables de la misma categoria
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| waldito-python-basics-v1-r0014-u1-mdagosta | 9,5 M | no disponible | no disponible | HuggingFace (0 descargas) |
+| waldito-python-basics-v1-r0014-u1-mdagosta | 9,5 M | no disponible | no disponible | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. No se han proporcionado modelos comparables de la misma categoria
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0014-u1-mdagosta
+- Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0014-u1-mdagosta
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo: no disponible

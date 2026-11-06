@@ -89,8 +89,8 @@ No se han encontrado otros modelos open source especializados en generacion de d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/johnjmartin97/qwen3-4b-ygo-meta-v3
+- Modelo en Hugging Face: https://huggingface.co/johnjmartin97/qwen3-4b-ygo-meta-v3
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de entrenamiento y evaluacion (labs.gauntletai.com): no accesible publicamente desde la web, pero referenciado en la model card como `git clone ssh://git@labs.gauntletai.com:22022/johnmartin/yu-gi-oh_slm.git`
 - GitHub de Qwen3: https://github.com/QwenLM/Qwen3
-- Coleccion Qwen3 en HuggingFace: https://huggingface.co/collections/Qwen/qwen3
+- Coleccion Qwen3 en Hugging Face: https://huggingface.co/collections/Qwen/qwen3

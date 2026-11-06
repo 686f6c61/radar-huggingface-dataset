@@ -88,8 +88,8 @@ La comparación relevante para NCM no es de tamaño, sino de paradigma de decodi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hazyresearch/ncm-checkpoints
+- Hugging Face: https://huggingface.co/hazyresearch/ncm-checkpoints
 - Paper (arXiv 2610.14162): https://arxiv.org/abs/2610.14162
-- Paper en HuggingFace: https://huggingface.co/papers/2610.14162
+- Paper en Hugging Face: https://huggingface.co/papers/2610.14162
 - Blog del proyecto (Hazy Research, Stanford): https://hazyresearch.stanford.edu/blog/2026-10-12-ncm
 - Código: https://github.com/HazyResearch/ncm

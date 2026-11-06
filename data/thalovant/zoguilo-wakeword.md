@@ -103,7 +103,7 @@ Otros datos medidos: 0 de 284 clips casi homófonos aceptados; latencia mediana 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thalovant/zoguilo-wakeword
+- Modelo en Hugging Face: https://huggingface.co/thalovant/zoguilo-wakeword
 - Modelo base: https://huggingface.co/TigreGotico/wakehubert-tiny
 - Candidato descartado Guézilo: https://huggingface.co/thalovant/guezilo-wakeword
 - Candidato descartado Zéligui: https://huggingface.co/thalovant/zeligui-wakeword

@@ -77,7 +77,7 @@ No se puede comparar directamente el rendimiento porque no hay benchmarks del mo
 
 ## Enlaces
 
-- [HuggingFace - Lucariccidale/model_593689906_dei_giant](https://huggingface.co/Lucariccidale/model_593689906_dei_giant)
+- [Hugging Face - Lucariccidale/model_593689906_dei_giant](https://huggingface.co/Lucariccidale/model_593689906_dei_giant)
 - [Repositorio oficial de DeiT (Facebook Research)](https://github.com/facebookresearch/deit)
 - [Hugging Face (plataforma general)](https://huggingface.co/)
 

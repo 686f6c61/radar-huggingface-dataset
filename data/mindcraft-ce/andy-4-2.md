@@ -70,5 +70,5 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- [HuggingFace: Mindcraft-CE/Andy-4.2](https://huggingface.co/Mindcraft-CE/Andy-4.2)
+- [Hugging Face: Mindcraft-CE/Andy-4.2](https://huggingface.co/Mindcraft-CE/Andy-4.2)
 - [Modelo base: Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B) (enlace inferido, no verificado en la información proporcionada)

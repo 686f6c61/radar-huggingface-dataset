@@ -88,9 +88,9 @@ No se dispone de comparativas con modelos de decision equivalentes en la informa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Hanno-Labs/bosun-v3.1-1.7b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Hanno-Labs/bosun-v3.1-1.7b-GGUF
 - Modelo origen: https://huggingface.co/Hanno-Labs/bosun-v3.1-1.7b
 - Servidor compatible con JEV: https://github.com/Hanno-Labs/jev-compatible-server
 - Documentacion de la API: https://github.com/Hanno-Labs/jev-compatible-server/blob/main/docs/API.md
-- LICENSE y NOTICE: incluidos en el repositorio HuggingFace del modelo
+- LICENSE y NOTICE: incluidos en el repositorio Hugging Face del modelo
 - Paper, blog o demo adicionales: no disponibles

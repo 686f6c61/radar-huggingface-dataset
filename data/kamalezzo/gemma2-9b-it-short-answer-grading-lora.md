@@ -6,7 +6,7 @@
 
 El modelo hereda la arquitectura transformer decoder-only de Gemma 2 9B-IT, con aproximadamente 9.000 millones de parametros, y se distribuye como adaptador de bajo rango (rank 80) sobre siete modulos de atencion y MLP. El repositorio ocupa 1,1 GB en safetensors, lo que corresponde unicamente a los pesos del adaptador, no al modelo base completo. Su relevancia actual radica en que demuestra que un ajuste fino ligero y local sobre un modelo abierto de 9B puede igualar o superar en esta tarea especifica a modelos propietarios de gran escala como GPT-4o, GPT-5.2, Claude Sonnet 4 o Claude Opus 4.6 en el conjunto de test publicado.
 
-La ficha se basa exclusivamente en la model card y en los metadatos de HuggingFace; no se dispone de informacion adicional sobre el proceso de entrenamiento mas alla de la declarada por el autor.
+La ficha se basa exclusivamente en la model card y en los metadatos de Hugging Face; no se dispone de informacion adicional sobre el proceso de entrenamiento mas alla de la declarada por el autor.
 
 ## Especificaciones tecnicas
 
@@ -77,10 +77,10 @@ Segun la model card, con un bootstrap pareado por cluster de pregunta y correcci
 
 | Modelo | Parametros | Contexto | Precision ±1 (test) | QWK | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este adaptador (Gemma 2 9B + LoRA) | ~9B | No disponible | 78,43 % | 0,821 | Gemma Terms of Use | HuggingFace (adaptador PEFT) |
-| Gemma 2 9B-IT zero-shot | ~9B | No disponible | 72,35 % | 0,761 | Gemma Terms of Use | HuggingFace |
+| Este adaptador (Gemma 2 9B + LoRA) | ~9B | No disponible | 78,43 % | 0,821 | Gemma Terms of Use | Hugging Face (adaptador PEFT) |
+| Gemma 2 9B-IT zero-shot | ~9B | No disponible | 72,35 % | 0,761 | Gemma Terms of Use | Hugging Face |
 | Claude Opus 4.6 few-shot | No disponible | No disponible | 80,78 % | 0,835 | Propietaria | API |
-| DeBERTa-v3-base ajustado | ~0,18B | No disponible | 73,14-76,27 % | 0,784-0,796 | MIT (segun el modelo original) | HuggingFace |
+| DeBERTa-v3-base ajustado | ~0,18B | No disponible | 73,14-76,27 % | 0,784-0,796 | MIT (segun el modelo original) | Hugging Face |
 
 La comparativa se limita a las condiciones evaluadas en la model card; no se dispone de datos de contexto ni de otros benchmarks para estos modelos en la informacion proporcionada.
 
@@ -98,7 +98,7 @@ La comparativa se limita a las condiciones evaluadas en la model card; no se dis
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/KamalEzzo/gemma2-9b-it-short-answer-grading-lora
+- Hugging Face del adaptador: https://huggingface.co/KamalEzzo/gemma2-9b-it-short-answer-grading-lora
 - Modelo base: https://huggingface.co/google/gemma-2-9b-it
 - Copia del modelo base usada en el entrenamiento: https://huggingface.co/unsloth/gemma-2-9b-it
 - Repositorio GitHub (codigo, prompts, outputs y scripts de analisis): https://github.com/KamalEzzo/short-answer-grading-llm

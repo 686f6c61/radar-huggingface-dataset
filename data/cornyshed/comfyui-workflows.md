@@ -72,7 +72,7 @@ No aplicable. Este repositorio no es un modelo de IA, por lo que no existe una c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CornyShed/ComfyUI-workflows
+- Repositorio en Hugging Face: https://huggingface.co/CornyShed/ComfyUI-workflows
 - Página de modelos de ComfyUI: https://comfy.org/models/
 - Workflows de ComfyUI.org: https://comfyui.org/en/workflows
 - Workflows de Comfy.org: https://comfy.org/workflows/

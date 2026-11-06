@@ -69,7 +69,7 @@ No disponible. La información proporcionada no incluye datos comparables de otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shigure0110/krea2-style-lora-pair
+- Repositorio en Hugging Face: https://huggingface.co/shigure0110/krea2-style-lora-pair
 - Modelo base: https://huggingface.co/Comfy-Org/Krea-2
 - Licencia del modelo base: https://huggingface.co/Comfy-Org/Krea-2
 - Herramienta de entrenamiento: https://github.com/kohya-ss/musubi-tuner

@@ -96,7 +96,7 @@ No se dispone de datos de contexto, cuantizacion ni rendimiento por idioma para 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Modusnsus/laya-typed-decisions-multilingual
+- Hugging Face: https://huggingface.co/Modusnsus/laya-typed-decisions-multilingual
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Repositorio Laya: https://github.com/NandhaKishorM/laya
 - Issue #320: https://github.com/NandhaKishorM/laya/issues/320

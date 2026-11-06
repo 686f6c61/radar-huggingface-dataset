@@ -18,7 +18,7 @@ La relevancia del modelo reside en su relacion entre capacidad y coste de infere
 | Longitud de contexto | 131.072 tokens |
 | Tipos de cuantizacion | No disponible para este checkpoint base (repo en safetensors). Existen versiones GGUF, ONNX y MLX en repositorios separados del modelo post-entrenado LFM2.5-24B-A2B |
 | Idiomas soportados | 17: ingles, arabe, chino, frances, aleman, japones, coreano, espanol, portugues, italiano, vietnamita, tailandes, indonesio, hindi, ruso y polaco |
-| Licencia | lfm1.0 (etiquetada como license: other en HuggingFace) |
+| Licencia | lfm1.0 (etiquetada como license: other en Hugging Face) |
 | Formato de pesos | safetensors (libreria transformers, tag lfm2_moe) |
 
 ## Arquitectura y entrenamiento
@@ -76,9 +76,9 @@ No se dispone de cifras de MMLU, HumanEval, GSM8K ni de otros benchmarks estanda
 
 | Modelo | Parametros (total / activos) | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-24B-A2B-Base | 24B / 2,45B | 131.072 tokens | 36T tokens + 2T a 32K + 300.000M a 131K | lfm1.0 | HuggingFace, safetensors |
-| LFM2.5-24B-A2B (post-entrenado) | 24B / 2,45B | 131.072 tokens | Mismo preentrenamiento + post-entrenamiento para cargas agenticas | lfm1.0 | HuggingFace; variantes GGUF, ONNX y MLX |
-| LFM2-24B-A2B (generacion anterior) | No disponible en detalle | No disponible | ~17T tokens | No disponible en la informacion | HuggingFace |
+| LFM2.5-24B-A2B-Base | 24B / 2,45B | 131.072 tokens | 36T tokens + 2T a 32K + 300.000M a 131K | lfm1.0 | Hugging Face, safetensors |
+| LFM2.5-24B-A2B (post-entrenado) | 24B / 2,45B | 131.072 tokens | Mismo preentrenamiento + post-entrenamiento para cargas agenticas | lfm1.0 | Hugging Face; variantes GGUF, ONNX y MLX |
+| LFM2-24B-A2B (generacion anterior) | No disponible en detalle | No disponible | ~17T tokens | No disponible en la informacion | Hugging Face |
 | Qwen3.6-35B-A3B | 35B / ~3B (A3B) | No disponible | No disponible | No disponible | Citado como referencia comparativa en LiveClaw |
 
 La comparativa relevante que aporta el autor es frente a Qwen3.6-35B-A3B, sobre el que afirma que LFM2.5-24B-A2B obtiene mejores resultados en LiveClaw, con un total de parametros menor (24B frente a 35B). No hay datos publicados en la informacion disponible sobre el rendimiento comparado del checkpoint base.
@@ -89,7 +89,7 @@ La comparativa relevante que aporta el autor es frente a Qwen3.6-35B-A3B, sobre 
 - Riesgo de alucinacion inherente a un modelo base entrenado solo con objetivos de modelado de lenguaje: no dispone de mecanismos de post-entrenamiento orientados a la veracidad.
 - Sesgos: no se documenta en la informacion disponible ninguna evaluacion de sesgos ni de seguridad, ni la composicion del dataset mas alla de las areas tematicas ponderadas (razonamiento, matematicas, codigo, instrucciones y multilingue).
 - Cobertura idiomatica desigual: aunque se listan 17 idiomas, no se especifica el volumen de datos por idioma ni hay evaluaciones publicadas de calidad por lengua.
-- Licencia lfm1.0, etiquetada como "other" en HuggingFace: es una licencia propia de Liquid AI, no una licencia open source estandar. No se detallan en la informacion disponible las condiciones exactas de uso comercial, por lo que es imprescindible revisar el archivo LICENSE antes de un despliegue en produccion.
+- Licencia lfm1.0, etiquetada como "other" en Hugging Face: es una licencia propia de Liquid AI, no una licencia open source estandar. No se detallan en la informacion disponible las condiciones exactas de uso comercial, por lo que es imprescindible revisar el archivo LICENSE antes de un despliegue en produccion.
 - Requisitos de memoria elevados para un modelo etiquetado como "edge": los 48,0 GB del repositorio en safetensors obligan a cuantizar para entrar en hardware de consumo.
 - Contexto de 131.072 tokens: aunque tecnicamente soportado, no hay datos publicados sobre la degradacion de calidad en longitudes cercanas al limite para este checkpoint.
 - La ventana de contexto de preentrenamiento original era de 32K y se extendio a 131K en la ultima fase con solo 300.000 millones de tokens, lo que en modelos de este tipo suele implicar un rendimiento en contexto largo inferior al de modelos entrenados nativamente a esa longitud. No hay evaluaciones que lo confirmen o desmientan.
@@ -97,7 +97,7 @@ La comparativa relevante que aporta el autor es frente a Qwen3.6-35B-A3B, sobre 
 
 ## Enlaces
 
-- Modelo en HuggingFace (base): https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-Base
+- Modelo en Hugging Face (base): https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-Base
 - Modelo post-entrenado: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
 - Modelo predecesor: https://huggingface.co/LiquidAI/LFM2-24B-A2B
 - Repositorio GGUF: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF

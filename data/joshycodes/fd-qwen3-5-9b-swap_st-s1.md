@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `joshycodes/fd-qwen3.5-9b-swap_st-s1` es un checkpoint derivado de la serie Qwen3.5, concretamente del modelo base Qwen3.5-9B, publicado por el usuario joshycodes en HuggingFace. Segun el nombre del repositorio y la etiqueta `qwen3_5`, se trata de una variante afinada o transformada del modelo base de 9B de la familia Qwen 3.5, aunque la tarjeta del modelo no documenta el tipo exacto de entrenamiento, el dataset utilizado ni la metodologia aplicada.
+El modelo `joshycodes/fd-qwen3.5-9b-swap_st-s1` es un checkpoint derivado de la serie Qwen3.5, concretamente del modelo base Qwen3.5-9B, publicado por el usuario joshycodes en Hugging Face. Segun el nombre del repositorio y la etiqueta `qwen3_5`, se trata de una variante afinada o transformada del modelo base de 9B de la familia Qwen 3.5, aunque la tarjeta del modelo no documenta el tipo exacto de entrenamiento, el dataset utilizado ni la metodologia aplicada.
 
 El repositorio tiene un caracter claramente experimental: acumula 16 descargas y 0 "likes" en el momento de la consulta, no declara licencia, no indica pipeline y no especifica idiomas soportados. El peso total de los safetensors es de 9.653.104.368 parametros, lo que situa al modelo en la categoria de 9B-10B parametros, y el tamano del repositorio (19,3 GB) es coherente con pesos en precision completa (FP16/BF16).
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de este ch
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/joshycodes/fd-qwen3.5-9b-swap_st-s1
+- Repositorio Hugging Face: https://huggingface.co/joshycodes/fd-qwen3.5-9b-swap_st-s1
 - Repositorio relacionado (familia feather): https://huggingface.co/joshycodes/qwen3.5-9b-feather-f3-mt
 - Repositorio relacionado (familia feather, SFT): https://huggingface.co/joshycodes/qwen3.5-9b-feather-f3-mt-sft-plain
 - Modelo base en Fireworks AI: https://fireworks.ai/models/fireworks/qwen3p5-9b

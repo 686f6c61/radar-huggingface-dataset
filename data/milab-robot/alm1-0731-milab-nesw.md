@@ -71,8 +71,8 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/milab-robot/alm1-0731-milab.NESW
-- Repositorio HuggingFace (variante .T): https://huggingface.co/milab-robot/alm1-0731-milab.NESW.T
-- Perfil del autor en HuggingFace: https://huggingface.co/milab-robot
+- Repositorio Hugging Face: https://huggingface.co/milab-robot/alm1-0731-milab.NESW
+- Repositorio Hugging Face (variante .T): https://huggingface.co/milab-robot/alm1-0731-milab.NESW.T
+- Perfil del autor en Hugging Face: https://huggingface.co/milab-robot
 - GitHub MiLAB-Cheetah-Software: https://github.com/allen-quad-robot/MiLAB-Cheetah-Software
 - GitHub cu-milab/ai-robot: https://github.com/cu-milab/ai-robot

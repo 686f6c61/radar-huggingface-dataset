@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KangarooPy (publicado en HuggingFace como `Popcomanescuvasile123/kangaroo-puzzle-solver`) no es un modelo de inteligencia artificial, sino una herramienta de criptoanalisis: un solver del problema del logaritmo discreto en curva eliptica (ECDLP) sobre la curva secp256k1, implementado en Python puro y basado en el metodo de Pollard's Kangaroo (tambien llamado metodo lambda). El autor lo presenta como utilidad para resolver exclusivamente "puzzle-uri publice sanctionate", es decir, retos publicos de Bitcoin en los que el creador ha publicado de forma deliberada la clave publica y el intervalo que contiene la clave privada. No hay, por tanto, pesos, tokenizador, arquitectura transformer ni proceso de entrenamiento asociados.
+KangarooPy (publicado en Hugging Face como `Popcomanescuvasile123/kangaroo-puzzle-solver`) no es un modelo de inteligencia artificial, sino una herramienta de criptoanalisis: un solver del problema del logaritmo discreto en curva eliptica (ECDLP) sobre la curva secp256k1, implementado en Python puro y basado en el metodo de Pollard's Kangaroo (tambien llamado metodo lambda). El autor lo presenta como utilidad para resolver exclusivamente "puzzle-uri publice sanctionate", es decir, retos publicos de Bitcoin en los que el creador ha publicado de forma deliberada la clave publica y el intervalo que contiene la clave privada. No hay, por tanto, pesos, tokenizador, arquitectura transformer ni proceso de entrenamiento asociados.
 
 El problema que aborda es concreto: dada una clave publica `P = k·G` sobre secp256k1 y un intervalo conocido `[a, b)` de anchura `W = b − a`, recuperar `k` mediante la busqueda de colision entre dos "manadas" (tame y wild). Su interes practico esta en el terreno de la investigacion criptografica, la docencia y la validacion de soluciones publicadas de retos, no en el procesamiento de lenguaje natural ni en tareas generativas. La implementacion es deliberadamente didactica y portable: Python puro, multiproceso y con dependencia opcional de `gmpy2`.
 
@@ -89,7 +89,7 @@ No se trata de un modelo de IA, por lo que la comparacion se establece con otras
 
 | Herramienta | Lenguaje / aceleracion | Intervalos factibles | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| KangarooPy (`kangaroo-puzzle-solver`) | Python puro, CPU, multiprocessing, `gmpy2` opcional | Hasta 2^52 bits en minutos; 2^60 en horas; inviable desde 2^84 | No disponible | HuggingFace, 0 descargas, 1 like |
+| KangarooPy (`kangaroo-puzzle-solver`) | Python puro, CPU, multiprocessing, `gmpy2` opcional | Hasta 2^52 bits en minutos; 2^60 en horas; inviable desde 2^84 | No disponible | Hugging Face, 0 descargas, 1 like |
 | JeanLucPons/Kangaroo | C++ con soporte CUDA (segun la model card) | Intervalos grandes (la model card lo cita como alternativa para 2^84+) | No disponible | Repositorio publico en GitHub (citado como referencia del pseudocodigo) |
 | RCKangaroo | CUDA (segun la model card) | Intervalos grandes | No disponible | Repositorio publico en GitHub (citado en la model card) |
 | Implementaciones propias de Pollard's rho | Variable | Menor eficiencia que lambda en intervalos acotados | No disponible | No disponible |
@@ -108,7 +108,7 @@ No se trata de un modelo de IA, por lo que la comparacion se establece con otras
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Popcomanescuvasile123/kangaroo-puzzle-solver
+- Modelo en Hugging Face: https://huggingface.co/Popcomanescuvasile123/kangaroo-puzzle-solver
 - JeanLucPons/Kangaroo (referenciado en la model card como origen del pseudocodigo y alternativa CUDA): https://github.com/JeanLucPons/Kangaroo
 - RCKangaroo (referenciado en la model card como alternativa CUDA): https://github.com/RetiredC/RCKangaroo
 - Paper o documentacion tecnica del metodo Pollard's Kangaroo: no disponible en la informacion proporcionada

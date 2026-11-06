@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| `opus-high-v3.h068.sft-splice-cont.step_8` | 9.4B | no disponible | Apache-2.0 | HuggingFace | sin datos, resultados negativos |
-| `Qwen/Qwen3.5-9B-Base` | 9.4B | no disponible | Apache-2.0 | HuggingFace | modelo base de referencia, sin datos de benchmark en esta ficha |
-| `meta-llama/Llama-3.1-8B` | 8B | 128K | Llama 3.1 Community License | HuggingFace | benchmarks conocidos (p. ej., MMLU 68.4) |
+| `opus-high-v3.h068.sft-splice-cont.step_8` | 9.4B | no disponible | Apache-2.0 | Hugging Face | sin datos, resultados negativos |
+| `Qwen/Qwen3.5-9B-Base` | 9.4B | no disponible | Apache-2.0 | Hugging Face | modelo base de referencia, sin datos de benchmark en esta ficha |
+| `meta-llama/Llama-3.1-8B` | 8B | 128K | Llama 3.1 Community License | Hugging Face | benchmarks conocidos (p. ej., MMLU 68.4) |
 
 La comparativa es limitada porque no hay datos de rendimiento para este checkpoint. Frente a su modelo base, no aporta ninguna ventaja demostrada. Frente a otros modelos de tamaño similar, carece de evaluaciones públicas.
 
@@ -76,7 +76,7 @@ La comparativa es limitada porque no hay datos de rendimiento para este checkpoi
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v3.h068.sft-splice-cont.step_8)
+- [Modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v3.h068.sft-splice-cont.step_8)
 - [Dataset del run `opus-high-v3-data`](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Índice del proyecto AgentPTB](https://huggingface.co/datasets/agentic-ptb/INDEX)
-- [Modelos de agentic-ptb en HuggingFace](https://huggingface.co/models?other=agentic-ptb)
+- [Modelos de agentic-ptb en Hugging Face](https://huggingface.co/models?other=agentic-ptb)

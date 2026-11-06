@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rahuldasbi/tiny-transformer-retrieval-study` es un transformer minúsculo de caracter experimental publicado por el usuario rahuldasbi en HuggingFace. No se trata de un modelo entrenado, sino de un checkpoint de inicializacion (24.832 parametros en total, segun los pesos en safetensors) que acompana a un repositorio de codigo pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El propio autor lo describe como un punto de partida reproducible para experimentos de recuperacion (retrieval), no como un modelo listo para produccion.
+El modelo `rahuldasbi/tiny-transformer-retrieval-study` es un transformer minúsculo de caracter experimental publicado por el usuario rahuldasbi en Hugging Face. No se trata de un modelo entrenado, sino de un checkpoint de inicializacion (24.832 parametros en total, segun los pesos en safetensors) que acompana a un repositorio de codigo pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El propio autor lo describe como un punto de partida reproducible para experimentos de recuperacion (retrieval), no como un modelo listo para produccion.
 
 Su relevancia es, por tanto, metodologica mas que funcional: proporciona una receta de entrenamiento por defecto (optimizador Lion con schedule de warmup constante), una configuracion de arquitectura en `config.json` y un script `eval.py` ejecutable. Sirve para validar pipelines, comprobar que el codigo de carga y evaluacion funciona y comparar variantes arquitectonicas con presupuestos de computo minimos, no para obtener resultados de calidad.
 
@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rahuldasbi/tiny-transformer-retrieval-study
+- Hugging Face: https://huggingface.co/rahuldasbi/tiny-transformer-retrieval-study
 - Model card incluida en el repositorio: `README.md`
 - Configuracion de arquitectura: `config.json` (dentro del repositorio)
 - Receta de experimento por defecto: `training_args.json` (dentro del repositorio)

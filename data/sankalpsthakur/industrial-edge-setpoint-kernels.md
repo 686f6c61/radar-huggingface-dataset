@@ -122,7 +122,7 @@ No se dispone de comparaciones con otros paquetes publicados de control para bor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sankalpsthakur/industrial-edge-setpoint-kernels
+- Modelo en Hugging Face: https://huggingface.co/sankalpsthakur/industrial-edge-setpoint-kernels
 - Visor interactivo de investigación: https://huggingface.co/spaces/sankalpsthakur/industrial-edge-setpoint-lab
 - Artículo de referencia del predictor RFF (preprint, 2025): https://arxiv.org/abs/2511.16425
 - Artículo de referencia sobre DeePC no lineal con kernel (2025): https://arxiv.org/abs/2501.17500

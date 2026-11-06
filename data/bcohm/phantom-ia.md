@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BCOHM/phantom-ia es un repositorio de modelo alojado en HuggingFace por el usuario BCOHM, publicado el 1 de octubre de 2026 y con licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 0 likes, y su model card no contiene mas informacion que la declaracion de licencia: no se especifica arquitectura, tamano, contexto, idiomas ni datos de entrenamiento.
+BCOHM/phantom-ia es un repositorio de modelo alojado en Hugging Face por el usuario BCOHM, publicado el 1 de octubre de 2026 y con licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 0 likes, y su model card no contiene mas informacion que la declaracion de licencia: no se especifica arquitectura, tamano, contexto, idiomas ni datos de entrenamiento.
 
 Esto significa que no existe informacion tecnica verificable sobre el modelo. La model card publicada por el autor esta practicamente vacia (unicamente el bloque de metadatos con `license: apache-2.0`), el pipeline no esta declarado y los idiomas soportados no aparecen en los metadatos del repositorio. Cualquier afirmacion sobre capacidades reales seria especulacion.
 
@@ -27,7 +27,7 @@ Datos adicionales confirmados del repositorio: autor BCOHM, tags `license:apache
 
 No disponible. La model card no describe la arquitectura (transformer, MoE, SSM, hibrida u otra), ni el numero de parametros, ni el volumen de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento extendido.
 
-El unico dato estructural disponible es que el repositorio se publica bajo licencia Apache 2.0 y esta etiquetado con `region:us`, lo que indica la region de despliegue declarada en HuggingFace, no una caracteristica del modelo.
+El unico dato estructural disponible es que el repositorio se publica bajo licencia Apache 2.0 y esta etiquetado con `region:us`, lo que indica la region de despliegue declarada en Hugging Face, no una caracteristica del modelo.
 
 ## Capacidades
 
@@ -88,7 +88,7 @@ No disponible. No puede establecerse una comparativa porque se desconoce la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BCOHM/phantom-ia
+- Hugging Face: https://huggingface.co/BCOHM/phantom-ia
 - Repositorio de codigo: no disponible
 - Paper o informe tecnico: no disponible
 - Demo: no disponible

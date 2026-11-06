@@ -110,7 +110,7 @@ Frente a Kimi K2, la propia model card de K3 declara una mejora de 2,5x en efici
 - Repositorio GitHub: https://github.com/MoonshotAI/Kimi-K3
 - Chat: https://www.kimi.com
 - Web de Moonshot AI: https://www.moonshot.ai
-- Organizacion en HuggingFace: https://huggingface.co/moonshotai
+- Organizacion en Hugging Face: https://huggingface.co/moonshotai
 - X/Twitter: https://twitter.com/kimi_moonshot
 - Discord: https://discord.gg/TYU2fdJykW
 - ModelScope: https://modelscope.cn/organization/moonshotai

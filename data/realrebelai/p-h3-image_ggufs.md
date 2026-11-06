@@ -2,7 +2,7 @@
 
 ## Resumen
 
-P-H3-Image_GGUFs es un repositorio de cuantizaciones en formato GGUF publicado por el usuario realrebelai en HuggingFace. Por el nombre del repositorio, se trata de una conversión a GGUF de un modelo denominado "P-H3-Image", presumiblemente orientado a generación de imágenes, aunque la model card no aporta ninguna información técnica que lo confirme. El repositorio no incluye pipeline declarado, idiomas soportados ni licencia definida, y en el momento de la consulta registra 0 descargas y 0 likes.
+P-H3-Image_GGUFs es un repositorio de cuantizaciones en formato GGUF publicado por el usuario realrebelai en Hugging Face. Por el nombre del repositorio, se trata de una conversión a GGUF de un modelo denominado "P-H3-Image", presumiblemente orientado a generación de imágenes, aunque la model card no aporta ninguna información técnica que lo confirme. El repositorio no incluye pipeline declarado, idiomas soportados ni licencia definida, y en el momento de la consulta registra 0 descargas y 0 likes.
 
 La relevancia de este repositorio es muy limitada desde el punto de vista de la evaluación técnica: no se publican especificaciones de arquitectura, número de parámetros, contexto, datos de entrenamiento ni benchmarks. La única información disponible es el identificador del repositorio, la etiqueta de licencia "unknown" y las fechas de creación y actualización (ambas el 3 de noviembre de 2026), lo que sugiere una publicación reciente y sin documentación asociada.
 
@@ -40,7 +40,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: número de tokens, composic
 
 - Evaluación exploratoria de cuantizaciones GGUF: un desarrollador podría descargar los ficheros para comprobar qué modelo base contienen y si la conversión es funcional, dado que la documentación es inexistente.
 - Pruebas de compatibilidad con llama.cpp u Ollama: si el modelo base resulta ser un modelo de lenguaje, podría cargarse en estos entornos para verificar que los tensores GGUF son correctos.
-- Investigación de procedencia de modelos: el repositorio puede servir como caso de estudio sobre publicaciones sin licencia ni documentación en HuggingFace.
+- Investigación de procedencia de modelos: el repositorio puede servir como caso de estudio sobre publicaciones sin licencia ni documentación en Hugging Face.
 - Integración experimental en pipelines de generación de imágenes: solo si se confirma mediante inspección de los ficheros que el modelo es efectivamente de imagen y la herramienta de inferencia lo soporta.
 - Despliegue en entornos de bajos recursos: el formato GGUF está pensado para inferencia eficiente en CPU o GPU modestas, aunque sin conocer el tamaño del modelo no puede confirmarse que sea viable.
 - Auditoría de licencias: antes de cualquier uso comercial, sería necesario determinar la licencia real del modelo base, ya que el repositorio declara "unknown".
@@ -73,5 +73,5 @@ No disponible. Al no conocerse el modelo base, el tamaño, la tarea ni la licenc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/realrebelai/P-H3-Image_GGUFs
+- Repositorio en Hugging Face: https://huggingface.co/realrebelai/P-H3-Image_GGUFs
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información disponible.

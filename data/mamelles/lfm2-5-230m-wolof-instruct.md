@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-230M-Wolof-Instruct es un ajuste fino de instrucciones sobre LiquidAI/LFM2.5-230M-Base, publicado por el usuario mamelles en HuggingFace. Se trata de un artefacto de adaptación al wolof: según su model card, ha pasado por una etapa de preentrenamiento continuado con un corpus limpio de wolof seguida de un ajuste de instrucciones con datos reequilibrados. El autor lo describe explícitamente como un artefacto privado de producción, en estado experimental y no como un lanzamiento público, con uso previsto restringido a investigación y evaluación privadas.
+LFM2.5-230M-Wolof-Instruct es un ajuste fino de instrucciones sobre LiquidAI/LFM2.5-230M-Base, publicado por el usuario mamelles en Hugging Face. Se trata de un artefacto de adaptación al wolof: según su model card, ha pasado por una etapa de preentrenamiento continuado con un corpus limpio de wolof seguida de un ajuste de instrucciones con datos reequilibrados. El autor lo describe explícitamente como un artefacto privado de producción, en estado experimental y no como un lanzamiento público, con uso previsto restringido a investigación y evaluación privadas.
 
 El modelo pertenece a la familia LFM2 de Liquid AI (etiqueta `lfm2` en el repositorio) y se distribuye en formato safetensors para la librería transformers, con pipeline de generación de texto. Aunque el nombre comercial indica 230M de parámetros, el recuento real de los tensores publicados es de 302.671.616 parámetros, un dato relevante a la hora de estimar memoria y coste de inferencia.
 
@@ -96,6 +96,6 @@ No se dispone de datos verificados de benchmarks ni de cobertura de wolof para l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mamelles/LFM2.5-230M-Wolof-Instruct
+- Modelo en Hugging Face: https://huggingface.co/mamelles/LFM2.5-230M-Wolof-Instruct
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-230M-Base
 - Resultados de la búsqueda web: no contenían enlaces relevantes sobre el modelo, su arquitectura o sus benchmarks (los resultados obtenidos eran páginas no relacionadas).

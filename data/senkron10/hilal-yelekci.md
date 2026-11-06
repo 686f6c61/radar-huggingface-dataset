@@ -2,11 +2,11 @@
 
 ## Resumen
 
-SeNKrOn10/Hilal-Yelekci es un repositorio alojado en HuggingFace por el usuario SeNKrOn10, creado el 12 de septiembre de 2026 y actualizado ese mismo dia. El repositorio ocupa aproximadamente 0,1 GB y unicamente declara la etiqueta region:us; no especifica pipeline, licencia ni idiomas soportados. Acumula cero descargas y una sola marca de "me gusta", por lo que no existe adopcion publica ni validacion por parte de la comunidad.
+SeNKrOn10/Hilal-Yelekci es un repositorio alojado en Hugging Face por el usuario SeNKrOn10, creado el 12 de septiembre de 2026 y actualizado ese mismo dia. El repositorio ocupa aproximadamente 0,1 GB y unicamente declara la etiqueta region:us; no especifica pipeline, licencia ni idiomas soportados. Acumula cero descargas y una sola marca de "me gusta", por lo que no existe adopcion publica ni validacion por parte de la comunidad.
 
 En el momento de redactar esta ficha no ha sido posible verificar que tipo de artefacto contiene el repositorio. Ni el nombre ni el tamano reducido (unos 100 MB) permiten determinar por si solos si se trata de un modelo de lenguaje, un adaptador LoRA, un checkpoint de sintesis de voz, un modelo de difusion o un conjunto parcial de pesos. Las busquedas web realizadas no devuelven ninguna referencia a este repositorio ni a su autor, de modo que tampoco hay fuentes externas que confirmen su naturaleza, arquitectura o rendimiento.
 
-Esta ficha recoge por tanto unicamente los metadatos verificables de HuggingFace y marca como "no disponible" todos los campos tecnicos que no han podido confirmarse. Cualquier evaluacion de uso en produccion deberia partir de la inspeccion directa de los ficheros del repositorio.
+Esta ficha recoge por tanto unicamente los metadatos verificables de Hugging Face y marca como "no disponible" todos los campos tecnicos que no han podido confirmarse. Cualquier evaluacion de uso en produccion deberia partir de la inspeccion directa de los ficheros del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -80,7 +80,7 @@ No disponible. No se ha identificado ningun modelo comparable, ya que se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SeNKrOn10/Hilal-Yelekci
+- Repositorio en Hugging Face: https://huggingface.co/SeNKrOn10/Hilal-Yelekci
 - Paper, blog o repositorio de codigo asociado: no disponible.
 - Demo o espacio de inferencia: no disponible.
 

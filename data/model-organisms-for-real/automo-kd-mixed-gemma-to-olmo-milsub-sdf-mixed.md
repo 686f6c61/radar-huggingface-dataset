@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks clasicos (MMLU, HumanEval, GSM8K, e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-milsub-sdf-mixed
+- Modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-milsub-sdf-mixed
 - Repositorio GitHub del proyecto: https://github.com/model-organisms-for-real/model-organism-lottery
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Variante relacionada (unmixed): https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-sdf-unmixed

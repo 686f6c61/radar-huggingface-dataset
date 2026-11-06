@@ -25,7 +25,7 @@ Datos adicionales del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | AI-KSK/minimax-h3-keyframe-timeline-two-graphs-300 |
+| ID en Hugging Face | AI-KSK/minimax-h3-keyframe-timeline-two-graphs-300 |
 | Autor | AI-KSK |
 | Descargas | 0 |
 | Likes | 0 |
@@ -91,6 +91,6 @@ No disponible. No se dispone de datos de rendimiento ni de especificaciones del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AI-KSK/minimax-h3-keyframe-timeline-two-graphs-300
+- Repositorio en Hugging Face: https://huggingface.co/AI-KSK/minimax-h3-keyframe-timeline-two-graphs-300
 - RunningHub (workflow FL2VA): https://www.runninghub.ai/zh-cn/post/2094644485325156353?inviteCode=rh-v1111
 - RunningHub (workflow Ref2VA): https://www.runninghub.ai/zh-cn/post/2094644471542673409?inviteCode=rh-v1111

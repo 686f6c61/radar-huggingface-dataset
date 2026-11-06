@@ -62,7 +62,7 @@ No disponible. No existe una categoría de modelos comparable porque no es un mo
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/lsdabrowski/paper_012890113_prompt_engineering)## Resumen
+- [Repositorio en Hugging Face](https://huggingface.co/lsdabrowski/paper_012890113_prompt_engineering)## Resumen
 
 El repositorio `lsdabrowski/paper_012890113_prompt_engineering` no contiene un modelo de lenguaje ni un artefacto de inteligencia artificial, sino un documento académico en formato Markdown que trata sobre la ingeniería de *prompts*. El autor, lsdabrowski, ha publicado el texto completo de un artículo científico con estructura IMRaD (abstract, introducción, preliminares, método, experimentos, discusión) y un estilo de escritura narrativo-progresivo, empleando el formato LaTeX ACL y citas con notas al pie. La licencia es CC-BY-4.0 y no presenta descargas ni interacciones en la plataforma.
 
@@ -126,4 +126,4 @@ No disponible. No existe una categoría de modelos comparable porque este recurs
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/lsdabrowski/paper_012890113_prompt_engineering)
+- [Repositorio en Hugging Face](https://huggingface.co/lsdabrowski/paper_012890113_prompt_engineering)

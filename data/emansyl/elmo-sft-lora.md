@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`emansyl/elmo-sft-lora` es un repositorio de pesos publicado en HuggingFace por el usuario `emansyl`. Por el propio nombre del identificador, todo apunta a un adaptador LoRA resultante de un proceso de ajuste supervisado (SFT, *supervised fine-tuning*), pero esta circunstancia no está confirmada en ninguna parte de la documentación disponible: la model card ha sido generada automáticamente por la plataforma y todos sus campos relevantes figuran como `[More Information Needed]`.
+`emansyl/elmo-sft-lora` es un repositorio de pesos publicado en Hugging Face por el usuario `emansyl`. Por el propio nombre del identificador, todo apunta a un adaptador LoRA resultante de un proceso de ajuste supervisado (SFT, *supervised fine-tuning*), pero esta circunstancia no está confirmada en ninguna parte de la documentación disponible: la model card ha sido generada automáticamente por la plataforma y todos sus campos relevantes figuran como `[More Information Needed]`.
 
 El repositorio no aporta información sobre el modelo base sobre el que se habría entrenado el adaptador, la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni la licencia. El tamaño del repositorio es de 0,3 GB, una magnitud compatible con un adaptador de bajo rango o con un checkpoint pequeño, pero no permite determinar por sí sola el tipo de modelo ni su escala real.
 
@@ -21,7 +21,7 @@ La relevancia actual de esta ficha es fundamentalmente metodológica: se trata d
 | Licencia | no disponible (la model card no declara licencia) |
 | Formato de pesos | safetensors (etiqueta del repositorio); compatibilidad declarada con la libreria `transformers` y con `endpoints_compatible` |
 
-Datos adicionales verificables del repositorio: creado y actualizado el 13 de septiembre de 2026, tamaño de 0,3 GB, 0 descargas y 0 *likes*, región `us`. La etiqueta `arxiv:1910.09700` no describe el modelo: corresponde a Lacoste et al. (2019), el artículo sobre estimación de impacto ambiental que aparece en la plantilla automática de tarjetas de HuggingFace.
+Datos adicionales verificables del repositorio: creado y actualizado el 13 de septiembre de 2026, tamaño de 0,3 GB, 0 descargas y 0 *likes*, región `us`. La etiqueta `arxiv:1910.09700` no describe el modelo: corresponde a Lacoste et al. (2019), el artículo sobre estimación de impacto ambiental que aparece en la plantilla automática de tarjetas de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -46,7 +46,7 @@ No es posible recomendar casos de uso concretos sin información sobre arquitect
 
 - Evaluación interna de adaptadores LoRA: el repositorio podría inspeccionarse para determinar su rango y sus matrices objetivo, siempre que se identifique primero el modelo base.
 - Reproducción de experimentos de ajuste supervisado: útil únicamente si el autor documenta el conjunto de datos y los hiperparámetros empleados.
-- Investigación sobre prácticas de publicación en HuggingFace: el caso sirve para estudiar el impacto de las model cards autogeneradas y sin contenido.
+- Investigación sobre prácticas de publicación en Hugging Face: el caso sirve para estudiar el impacto de las model cards autogeneradas y sin contenido.
 - Ajuste sobre un modelo base conocido: viable solo si se confirma cuál es ese modelo base y su compatibilidad con `transformers`.
 - Despliegue en producción: desaconsejado en el estado actual, al no existir licencia ni documentación de sesgos y limitaciones.
 - Uso comercial: imposible de determinar, ya que no se declara licencia alguna.
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM necesaria para inferencia: no disponible, porque depende del modelo base, que no se identifica.
 - GPU recomendadas: no disponible por el mismo motivo.
 - Viabilidad en GPU de consumo: no determinable sin conocer el modelo base; si fuese un adaptador sobre un modelo de menos de 8.000 millones de parámetros en cuantización de 4 bits, cabría en tarjetas como la RTX 3060 de 12 GB o superiores, pero esto es una hipótesis no confirmada.
-- Opciones de despliegue: la etiqueta `transformers` y el formato safetensors permiten, en principio, cargarlo con la librería de HuggingFace; no hay evidencia de soporte para vLLM, llama.cpp, Ollama o TGI, dado que no se distribuyen pesos en GGUF.
+- Opciones de despliegue: la etiqueta `transformers` y el formato safetensors permiten, en principio, cargarlo con la librería de Hugging Face; no hay evidencia de soporte para vLLM, llama.cpp, Ollama o TGI, dado que no se distribuyen pesos en GGUF.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/emansyl/elmo-sft-lora
+- Repositorio en Hugging Face: https://huggingface.co/emansyl/elmo-sft-lora
 - Referencia citada en la plantilla de la model card (impacto ambiental, no relacionada con el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental mencionada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado en la búsqueda web enlaces relevantes sobre este modelo; los resultados obtenidos correspondían a un portal de juegos en línea sin relación con el repositorio.

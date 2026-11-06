@@ -94,5 +94,5 @@ La información proporcionada no incluye benchmarks de otros modelos externos, p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shikazu05/nq-deberta-crossencoder-v1
+- Hugging Face: https://huggingface.co/shikazu05/nq-deberta-crossencoder-v1
 - Otros enlaces: no disponible en la informacion proporcionada.

@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DevQuasar/MiniMaxAI.MiniMax-M3.1-Flash-GGUF (este repo) | 865 M según metadatos | no disponible | GGUF (1,7 GB) | no disponible | HuggingFace, 0 descargas |
-| MiniMaxAI/MiniMax-M3.1-Flash (base) | no disponible | no disponible | safetensors | no disponible | HuggingFace, NVIDIA NIM, API de MiniMax y Ollama |
+| DevQuasar/MiniMaxAI.MiniMax-M3.1-Flash-GGUF (este repo) | 865 M según metadatos | no disponible | GGUF (1,7 GB) | no disponible | Hugging Face, 0 descargas |
+| MiniMaxAI/MiniMax-M3.1-Flash (base) | no disponible | no disponible | safetensors | no disponible | Hugging Face, NVIDIA NIM, API de MiniMax y Ollama |
 | Alternativas de la misma categoría (MoE multimodal orientado a agentes y código) | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 No se dispone de datos verificables de otros modelos comparables (parámetros, contexto, licencia o rendimiento) en la información consultada, por lo que no se establece una comparación numérica con terceros.

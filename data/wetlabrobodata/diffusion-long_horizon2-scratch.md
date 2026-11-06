@@ -84,7 +84,7 @@ No se dispone de datos comparativos en la información proporcionada: no se han 
 
 | Modelo | Parametros | Contexto | Rendimiento en long_horizon2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| diffusion-long_horizon2-scratch | 264,9 M | no aplica | 1/20 exitos (5 %) | Apache 2.0 | HuggingFace (LeRobot), 0 descargas |
+| diffusion-long_horizon2-scratch | 264,9 M | no aplica | 1/20 exitos (5 %) | Apache 2.0 | Hugging Face (LeRobot), 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Cualquier comparación rigurosa exigiría evaluar otras políticas sobre el mismo robot UR3e bimanual, el mismo conjunto de 20 episodios y las mismas condiciones de cámara.
@@ -105,7 +105,7 @@ Cualquier comparación rigurosa exigiría evaluar otras políticas sobre el mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WetLabRoboData/diffusion-long_horizon2-scratch
+- Modelo en Hugging Face: https://huggingface.co/WetLabRoboData/diffusion-long_horizon2-scratch
 - Dataset de entrenamiento: https://huggingface.co/datasets/WetLabRoboData/lerobot-data-long_horizon2
 - Dataset de evaluación (vídeos de rollout y resultados por episodio): https://huggingface.co/datasets/WetLabRoboData/eval-diffusion-long_horizon2-scratch
 - Repositorio de origen del que se reorganizaron los pesos: https://huggingface.co/datasets/WetLabRoboData/lerobot-data-smrithi-longhorizon2

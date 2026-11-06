@@ -83,11 +83,11 @@ Nota: los datos de los modelos comparativos proceden de documentación pública 
 ## Limitaciones y advertencias
 
 - La propia model card advierte de que el modelo puede generar información falsa (alucinaciones) y de que sus salidas no deben sustituir asesoramiento profesional en ámbitos críticos.
-- No existe ninguna evaluación publicada de este ajuste: 0 descargas y 0 "likes" en HuggingFace implican ausencia total de validación por parte de la comunidad.
+- No existe ninguna evaluación publicada de este ajuste: 0 descargas y 0 "likes" en Hugging Face implican ausencia total de validación por parte de la comunidad.
 - La cuantización introduce pérdida de calidad respecto a bfloat16, especialmente perceptible en Q3_K_S y Q3_K_M. Para tareas de código o razonamiento conviene Q4_K_M o superior.
 - El ajuste LoRA sobre datos en vietnamita puede degradar el rendimiento en inglés o en tareas de código no representadas en el corpus de ajuste; no hay datos que cuantifiquen esa posible regresión.
 - La ventana de contexto efectiva útil suele ser inferior a los 32.768 tokens nominales; no se ha publicado ninguna prueba de recuperación de información en contexto largo.
-- Discrepancia de licencia: los metadatos de HuggingFace indican apache-2.0, pero el autor declara explícitamente que la licencia se determina tras verificar las licencias de origen y que no se autoadjudica Apache-2.0. Conviene confirmar la licencia aplicable antes de un uso comercial.
+- Discrepancia de licencia: los metadatos de Hugging Face indican apache-2.0, pero el autor declara explícitamente que la licencia se determina tras verificar las licencias de origen y que no se autoadjudica Apache-2.0. Conviene confirmar la licencia aplicable antes de un uso comercial.
 - No hay información sobre el dataset de ajuste, por lo que se desconoce si contiene sesgos, datos personales o material con derechos de autor.
 - No hay documentación sobre alineación de seguridad, filtros de contenido ni comportamiento ante peticiones dañinas.
 - El soporte de function calling y de flujos de agente no está confirmado para este ajuste, pese a que el modelo base lo soporta; verificarlo con pruebas propias antes de integrarlo en un agente.
@@ -95,7 +95,7 @@ Nota: los datos de los modelos comparativos proceden de documentación pública 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BachDaThan/Qwen2.5-Coder-7B-Vietnamese-Agent-FINAL-LoRA-GGUF
+- Repositorio Hugging Face: https://huggingface.co/BachDaThan/Qwen2.5-Coder-7B-Vietnamese-Agent-FINAL-LoRA-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Adaptador LoRA de origen: https://huggingface.co/khoin68/Qwen2.5-Coder-7B-Vietnamese-Agent-FINAL-LoRA
 - llama.cpp (runtime GGUF): https://github.com/ggml-org/llama.cpp

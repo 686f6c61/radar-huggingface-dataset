@@ -82,7 +82,7 @@ La comparacion directa no es posible porque no se conoce la variante concreta de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DQN-Labs/dqncode-tiny-run2-lora
+- Modelo en Hugging Face: https://huggingface.co/DQN-Labs/dqncode-tiny-run2-lora
 - Modelo base: https://huggingface.co/DQN-Labs/dqncode-tiny-test2
 - Unsloth (framework de entrenamiento): https://github.com/unslothai/unsloth
 - TRL (framework de entrenamiento): https://github.com/huggingface/trl

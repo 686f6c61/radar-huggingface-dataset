@@ -106,4 +106,4 @@ No se dispone de comparativas directas con otros modelos de lenguaje, ya que Tra
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PengxiaoYu-ai/travel-agent-source
+- Hugging Face: https://huggingface.co/PengxiaoYu-ai/travel-agent-source

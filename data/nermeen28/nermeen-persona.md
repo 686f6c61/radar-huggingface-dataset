@@ -4,7 +4,7 @@
 
 nermeen28/nermeen-persona es un ajuste fino (fine-tuning) de tipo conversacional construido sobre unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit, la version del Qwen2.5-3B-Instruct preparada por Unsloth para entrenamiento con QLoRA. El repositorio lo publica el usuario nermeen28 bajo licencia Apache 2.0 y contiene pesos en formato safetensors listos para cargar con la libreria transformers. El nombre del modelo sugiere un caso de uso de "persona" o personaje conversacional, aunque la model card no documenta el proposito, el dataset ni el procedimiento de entrenamiento.
 
-El modelo tiene 3.085.938.688 parametros (unos 3,09 mil millones) y el repositorio ocupa 6,2 GB, lo que corresponde a pesos fusionados en precision de 16 bits. No se declaran parametros activos porque no es una arquitectura de mezcla de expertos (MoE). El idioma declarado es unicamente ingles. La model card unicamente indica que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, con una velocidad declarada de 2x respecto a un entrenamiento convencional.
+El modelo tiene 3.085.938.688 parametros (unos 3,09 mil millones) y el repositorio ocupa 6,2 GB, lo que corresponde a pesos fusionados en precision de 16 bits. No se declaran parametros activos porque no es una arquitectura de mezcla de expertos (MoE). El idioma declarado es unicamente ingles. La model card unicamente indica que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, con una velocidad declarada de 2x respecto a un entrenamiento convencional.
 
 La relevancia de esta ficha es limitada y debe interpretarse con cautela: el modelo acumula 0 descargas y 0 likes, no publica benchmarks, no documenta el dataset de ajuste ni el metodo exacto, y los resultados de busqueda web asociados no contienen informacion tecnica util (devuelven paginas comerciales sin relacion). Se trata, por tanto, de un artefacto experimental o personal, util como base para prototipos de bajo coste y para despliegue en GPU de consumo, pero no de un modelo validado para produccion.
 
@@ -97,10 +97,10 @@ Diferencias clave: frente a las alternativas, este modelo no documenta datos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nermeen28/nermeen-persona
+- Modelo en Hugging Face: https://huggingface.co/nermeen28/nermeen-persona
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth (mencionado en la model card): https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace (mencionada en la model card): https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face (mencionada en la model card): https://github.com/huggingface/trl
 - Documentacion de la familia Qwen2.5 (referencia del modelo base): https://qwenlm.github.io/blog/qwen2.5/
 
 Nota: la busqueda web realizada no devolvio ningun enlace tecnico relacionado con el modelo; los resultados obtenidos correspondian a paginas comerciales sin relacion con el contenido de esta ficha.

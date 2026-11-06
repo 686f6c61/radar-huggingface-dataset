@@ -27,7 +27,7 @@ Sobre el entrenamiento de los modelos base Gemma 4 (número de tokens, composici
 
 ## Capacidades
 
-- Generación de texto conversacional en modo chat (tag `conversational` en HuggingFace).
+- Generación de texto conversacional en modo chat (tag `conversational` en Hugging Face).
 - Consultas de supervivencia y conocimientos generales en entornos sin conectividad.
 - Capacidades de razonamiento, código y matemáticas heredadas de Gemma 4 instructo (sin datos de benchmark específicos en la ficha).
 - Ejecución completamente offline en móvil y escritorio, sin envío de datos a servidores.
@@ -78,7 +78,7 @@ En la práctica, TAHC Survival AI compite con otras distribuciones GGUF locales 
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/TheAfterHoursClub/TAHC-Survival-AI
+- Ficha en Hugging Face: https://huggingface.co/TheAfterHoursClub/TAHC-Survival-AI
 - Guía de instalación y preset de TAHC: https://tahc-offline-ai.vercel.app
 - Modelos base: https://huggingface.co/google/gemma-4-E2B-it, https://huggingface.co/google/gemma-4-E4B-it, https://huggingface.co/google/gemma-4-12b-it
 - Conversiones GGUF de Unsloth: https://huggingface.co/unsloth/gemma-4-E2B-it-GGUF (y variantes E4B/12B equivalentes)

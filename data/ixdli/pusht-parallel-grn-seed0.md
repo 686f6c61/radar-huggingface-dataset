@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`IXDLI/pusht-parallel-grn-seed0` es una política de imitación para robótica entrenada sobre la tarea PushT (empuje de una pieza en 2D), publicada como checkpoint final de un experimento de reproducción controlada. La desarrolla el usuario IXDLI y se distribuye en HuggingFace Hub con pipeline `robotics` y licencia no especificada. No es un modelo de lenguaje: es una política de difusión que consume observaciones visuales de 96×96 píxeles RGB más la posición XY del agente, y emite comandos de posición XY.
+`IXDLI/pusht-parallel-grn-seed0` es una política de imitación para robótica entrenada sobre la tarea PushT (empuje de una pieza en 2D), publicada como checkpoint final de un experimento de reproducción controlada. La desarrolla el usuario IXDLI y se distribuye en Hugging Face Hub con pipeline `robotics` y licencia no especificada. No es un modelo de lenguaje: es una política de difusión que consume observaciones visuales de 96×96 píxeles RGB más la posición XY del agente, y emite comandos de posición XY.
 
 El modelo parte de la receta de Diffusion Policy (DP) con el split original de 90 demostraciones y su normalización, y sustituye el backbone convolutional por bloques DiT (Diffusion Transformer) con condicionamiento adaptado del trabajo de Dasari et al., sobre un encoder RGB compartido. Sobre esa base se aplica GRN como adaptación en el dominio de la acción, con una cabeza temporal configurable de mayor tamano, y se incorporan las constantes de la variante Tube DP (TDP) derivadas del paper arXiv:2604.23609, cuyos autores no han liberado código ni todos los hiperparámetros de PushT.
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IXDLI/pusht-parallel-grn-seed0
+- Modelo en Hugging Face: https://huggingface.co/IXDLI/pusht-parallel-grn-seed0
 - Paper de Tube DP: https://arxiv.org/abs/2604.23609
 - Configuración del experimento original de Diffusion Policy en PushT: https://diffusion-policy.cs.columbia.edu/data/experiments/image/pusht/diffusion_policy_cnn/config.yaml
 - Repositorio DiT-Block Policy (Dasari et al.): https://github.com/SudeepDasari/dit-policy

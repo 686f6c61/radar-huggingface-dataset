@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ravitejarx/on-device-models` es un repositorio de HuggingFace publicado por el usuario ravitejarx que, segun su model card, contiene una adaptacion de modelos Gemma de Google orientada a inferencia en dispositivo (on-device). El repositorio se presenta bajo el titulo "My Instincts on-device models" y referencia explicitamente como fuentes los modelos `litert-community/Gemma3-1B-IT` y `litert-community/gemma-3-270m-it`, ambos distribuidos por la comunidad LiteRT (anteriormente TensorFlow Lite) de Google. La licencia declarada es la de Gemma, lo que condiciona su uso comercial.
+`ravitejarx/on-device-models` es un repositorio de Hugging Face publicado por el usuario ravitejarx que, segun su model card, contiene una adaptacion de modelos Gemma de Google orientada a inferencia en dispositivo (on-device). El repositorio se presenta bajo el titulo "My Instincts on-device models" y referencia explicitamente como fuentes los modelos `litert-community/Gemma3-1B-IT` y `litert-community/gemma-3-270m-it`, ambos distribuidos por la comunidad LiteRT (anteriormente TensorFlow Lite) de Google. La licencia declarada es la de Gemma, lo que condiciona su uso comercial.
 
 El repositorio tiene un tamano de 0,9 GB, coherente con la presencia de pesos de un modelo Gemma 3 de 270M parametros en algun formato cuantizado y, posiblemente, artefactos parciales del modelo de 1B. No obstante, la informacion publica es extremadamente escasa: no se declaran idiomas soportados, pipeline, resultados de benchmarks ni detalles sobre el proceso de conversion o empaquetado. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado el 5 de noviembre de 2026.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `ravitejarx/on-device-models` | no disponible (fuentes 270M y 1B) | no disponible | gemma | HuggingFace, 0 descargas | Repositorio comunitario sin documentacion tecnica |
-| `litert-community/gemma-3-270m-it` | 270M | no disponible en esta ficha | gemma | HuggingFace (fuente citada) | Modelo original LiteRT con model card propia |
-| `litert-community/Gemma3-1B-IT` | 1B | no disponible en esta ficha | gemma | HuggingFace (fuente citada) | Modelo original LiteRT con model card propia |
-| Gemma 3 (familia completa) | 270M a 27B | variable | gemma | HuggingFace, Kaggle, Vertex AI | Documentacion oficial de Google DeepMind |
+| `ravitejarx/on-device-models` | no disponible (fuentes 270M y 1B) | no disponible | gemma | Hugging Face, 0 descargas | Repositorio comunitario sin documentacion tecnica |
+| `litert-community/gemma-3-270m-it` | 270M | no disponible en esta ficha | gemma | Hugging Face (fuente citada) | Modelo original LiteRT con model card propia |
+| `litert-community/Gemma3-1B-IT` | 1B | no disponible en esta ficha | gemma | Hugging Face (fuente citada) | Modelo original LiteRT con model card propia |
+| Gemma 3 (familia completa) | 270M a 27B | variable | gemma | Hugging Face, Kaggle, Vertex AI | Documentacion oficial de Google DeepMind |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ravitejarx/on-device-models
+- Repositorio en Hugging Face: https://huggingface.co/ravitejarx/on-device-models
 - Modelo fuente Gemma 3 1B IT (LiteRT): https://huggingface.co/litert-community/Gemma3-1B-IT
 - Modelo fuente Gemma 3 270M IT (LiteRT): https://huggingface.co/litert-community/gemma-3-270m-it
 - Documentacion oficial de Gemma: https://ai.google.dev/gemma

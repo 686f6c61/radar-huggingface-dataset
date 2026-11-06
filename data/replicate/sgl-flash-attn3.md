@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`replicate/sgl-flash-attn3` no es un modelo de lenguaje, sino un paquete de kernels de computo publicado en HuggingFace Hub para su uso con la libreria [`kernels`](https://github.com/huggingface/kernels). Concretamente, empaqueta el kernel `sgl-flash-attn3`, es decir, la variante de FlashAttention 3 integrada en el stack de SGLang, y lo distribuye listo para ser cargado de forma dinamica desde Python. El autor del repositorio es la organizacion `replicate`, conocida por su plataforma de despliegue de modelos mediante API.
+`replicate/sgl-flash-attn3` no es un modelo de lenguaje, sino un paquete de kernels de computo publicado en Hugging Face Hub para su uso con la libreria [`kernels`](https://github.com/huggingface/kernels). Concretamente, empaqueta el kernel `sgl-flash-attn3`, es decir, la variante de FlashAttention 3 integrada en el stack de SGLang, y lo distribuye listo para ser cargado de forma dinamica desde Python. El autor del repositorio es la organizacion `replicate`, conocida por su plataforma de despliegue de modelos mediante API.
 
 El problema que resuelve es de infraestructura: los kernels de atencion optimizados suelen requerir compilacion local con cadenas de herramientas especificas de CUDA y versiones concretas de PyTorch, lo que complica la reproducibilidad. La libreria `kernels` permite descargar binarios precompilados y cargarlos en tiempo de ejecucion, evitando esa friccion. FlashAttention 3, a su vez, es una implementacion de atencion exacta optimizada para GPUs NVIDIA Hopper que reduce el uso de memoria y aumenta el rendimiento en secuencias largas, un cuello de botella central en la inferencia de modelos con contexto extendido.
 
@@ -29,13 +29,13 @@ No hay entrenamiento asociado: se trata de codigo de computo, no de un modelo co
 
 Como contexto general, no confirmado en la informacion proporcionada: FlashAttention 3 es una tecnica de atencion exacta que reorganiza el calculo por bloques para mantener los datos en la memoria SRAM del chip, evitando escrituras intermedias en HBM. Sus innovaciones principales son el uso de instrucciones asincronas WGMMA y TMA propias de Hopper, la especializacion de warps y el solapamiento de calculo con movimiento de datos, con soporte de precision fp8. La variante `sgl-` hace referencia a la integracion mantenida por el proyecto SGLang. La unica innovacion documentada en este repositorio concreto es su formato de distribucion: un paquete cargable mediante la libreria `kernels` en lugar de requerir compilacion local.
 
-La model card incluye un aviso relevante: a partir del 13 de septiembre de 2026, HuggingFace eliminara los repositorios de tipo "model" de kernels (por ejemplo `kernels-community/flash-attn3`), por lo que se recomienda usar una version reciente de la libreria `kernels` para evitar interrupciones.
+La model card incluye un aviso relevante: a partir del 13 de septiembre de 2026, Hugging Face eliminara los repositorios de tipo "model" de kernels (por ejemplo `kernels-community/flash-attn3`), por lo que se recomienda usar una version reciente de la libreria `kernels` para evitar interrupciones.
 
 ## Capacidades
 
 - Aceleracion de la operacion de atencion (forward y, segun la variante, backward) en GPUs compatibles, como dependencia de un motor de inferencia.
 - Reduccion del uso de memoria de atencion frente a implementaciones no fusionadas, lo que permite secuencias mas largas en la misma GPU.
-- Integracion con el ecosistema de la libreria `kernels` de HuggingFace para carga dinamica de binarios precompilados.
+- Integracion con el ecosistema de la libreria `kernels` de Hugging Face para carga dinamica de binarios precompilados.
 - Uso previsto dentro de stacks de serving como SGLang o bibliotecas de atencion que invoquen este kernel.
 
 No disponibles en la informacion proporcionada: lista de funciones exportadas, firma de las APIs, soporte de mascaras de atencion concretas, soporte de decodificacion especulativa, soporte de atencion con cache paginada, ni compatibilidad declarada con GPUs distintas de las objetivo.
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 | Paquete | Tipo | Licencia | Documentacion | Uso |
 |---|---|---|---|---|
 | `replicate/sgl-flash-attn3` | Kernel de atencion FA3 para la libreria `kernels` | BSD-3-Clause | Model card autogenerada; sin funciones ni benchmarks | No disponible; 0 descargas |
-| `kernels-community/flash-attn3` | Kernel de atencion FA3 distribuido por la comunidad de HuggingFace | no disponible en la informacion proporcionada | Mencionado en el aviso de la model card; detalles no disponibles | Referenciado como alternativa equivalente |
+| `kernels-community/flash-attn3` | Kernel de atencion FA3 distribuido por la comunidad de Hugging Face | no disponible en la informacion proporcionada | Mencionado en el aviso de la model card; detalles no disponibles | Referenciado como alternativa equivalente |
 | `kernels-community/flash-attn2` | Kernel de atencion FA2 | no disponible en la informacion proporcionada | no disponible | Solo mencionado de forma indirecta en el aviso |
 | `sgl-kernel` (SGLang) | Conjunto de kernels propios de SGLang | no disponible en la informacion proporcionada | no disponible | Alternativa upstream a este paquete |
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento que permitan comparar estas alternativas d
 - Trazabilidad nula en la practica: 0 descargas y 0 likes, sin historial de uso que permita validar su funcionamiento en produccion.
 - Model card generada automaticamente: no documenta las funciones exportadas, las versiones de CUDA o PyTorch requeridas, ni las GPU soportadas. La integracion exigira inspeccion manual del paquete.
 - Sin benchmarks publicados: no se puede afirmar ninguna mejora de rendimiento respecto a alternativas.
-- Aviso de deprecacion: HuggingFace eliminara los repositorios de tipo "model" de kernels a partir del 13 de septiembre de 2026. Conviene migrar a una version reciente de la libreria `kernels` y verificar que este paquete sigue disponible.
+- Aviso de deprecacion: Hugging Face eliminara los repositorios de tipo "model" de kernels a partir del 13 de septiembre de 2026. Conviene migrar a una version reciente de la libreria `kernels` y verificar que este paquete sigue disponible.
 - Dependencia de versionado: los kernels compilados dependen de la version de la libreria `kernels` y de la ABI de PyTorch; una actualizacion de cualquiera de las dos puede invalidar los binarios.
 - Restricciones de hardware: al tratarse de FlashAttention 3, se espera compatibilidad limitada a GPUs NVIDIA recientes; no se declara soporte para AMD, Apple Silicon ni aceleradores de otros fabricantes.
 - Licencia: BSD-3-Clause permite uso comercial, modificacion y redistribucion con atribucion y sin garantia. Es responsabilidad del integrador revisar las licencias del codigo upstream (FlashAttention y SGLang) y de las dependencias que acompanen a este paquete.
@@ -88,8 +88,8 @@ No se dispone de datos de rendimiento que permitan comparar estas alternativas d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/sgl-flash-attn3
-- Libreria `kernels` de HuggingFace (GitHub): https://github.com/huggingface/kernels
+- Repositorio en Hugging Face: https://huggingface.co/replicate/sgl-flash-attn3
+- Libreria `kernels` de Hugging Face (GitHub): https://github.com/huggingface/kernels
 - Incidencias de kernels: https://github.com/huggingface/kernels/issues/new
 - Sitio de Replicate: https://replicate.com/
 - Explorador de modelos de Replicate: https://replicate.com/explore

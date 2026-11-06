@@ -69,6 +69,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [Modelo cuantizado GGUF en HuggingFace](https://huggingface.co/mradermacher/Qwen-BioTool-1.5B-GGUF)
+- [Modelo cuantizado GGUF en Hugging Face](https://huggingface.co/mradermacher/Qwen-BioTool-1.5B-GGUF)
 - [Modelo base Rumiii/Qwen-BioTool-1.5B](https://huggingface.co/Rumiii/Qwen-BioTool-1.5B)
 - [Dataset BioTool (gxx27/BioTool)](https://huggingface.co/datasets/gxx27/BioTool)

@@ -72,10 +72,10 @@ El autor indica que la validez de la sección de razonamiento comprueba formato 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM3-Omni-2B-98K-V2-INT4 | 2.166.928.384 | 98.304 (servicio verificado); techo 128.000 | lfm-open-license | HuggingFace, comunidad |
-| LiquidAI/LFM3-Omni-2B (base) | no disponible en la información | no disponible en la información | lfm-open-license | HuggingFace, oficial |
-| LFM3-Omni-2B-98K-V2-BF16 (misma familia) | 2.166.928.384 | 98.304 | lfm-open-license | HuggingFace, comunidad |
-| LFM3-Omni-2B-98K-V2-GGUF (misma familia) | 2.166.928.384 | 98.304 | lfm-open-license | HuggingFace, comunidad |
+| LFM3-Omni-2B-98K-V2-INT4 | 2.166.928.384 | 98.304 (servicio verificado); techo 128.000 | lfm-open-license | Hugging Face, comunidad |
+| LiquidAI/LFM3-Omni-2B (base) | no disponible en la información | no disponible en la información | lfm-open-license | Hugging Face, oficial |
+| LFM3-Omni-2B-98K-V2-BF16 (misma familia) | 2.166.928.384 | 98.304 | lfm-open-license | Hugging Face, comunidad |
+| LFM3-Omni-2B-98K-V2-GGUF (misma familia) | 2.166.928.384 | 98.304 | lfm-open-license | Hugging Face, comunidad |
 
 No se dispone de datos de rendimiento comparativo con modelos de otras familias en la información proporcionada.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativo con modelos de otras familias 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-V2-INT4
+- Repositorio Hugging Face: https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-V2-INT4
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Licencia: https://huggingface.co/LiquidAI/LFM3-Omni-2B/blob/main/LICENSE
 - Release BF16: https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-V2-BF16

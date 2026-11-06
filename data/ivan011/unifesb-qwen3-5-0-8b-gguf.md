@@ -97,7 +97,7 @@ La ventaja competitiva de este modelo no es el rendimiento bruto, sino la combin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ivan011/UniFesb-Qwen3.5-0.8B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Ivan011/UniFesb-Qwen3.5-0.8B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Script de generacion de datos (`ai/assistant/make_data.py`), citado en la model card dentro del repositorio de la aplicacion UniFesb: no se proporciona URL directa en la informacion disponible
 - llama.cpp (runtime y herramienta de conversion, version b11446): https://github.com/ggml-org/llama.cpp

@@ -96,8 +96,8 @@ Las cifras de esta seccion son estimaciones del editor a partir del tamano del m
 
 | Modelo | Parametros | Contexto | pass@1 en el test reservado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `google/gemma-4-31B-it` (base) | 31B | 256K tokens | 0,629 | No detallada en la informacion proporcionada | HuggingFace |
-| Este adaptador (generacion 39) | 31B + LoRA | 256K tokens del base | 0,758 | apache-2.0 | HuggingFace, 13 descargas |
+| `google/gemma-4-31B-it` (base) | 31B | 256K tokens | 0,629 | No detallada en la informacion proporcionada | Hugging Face |
+| Este adaptador (generacion 39) | 31B + LoRA | 256K tokens del base | 0,758 | apache-2.0 | Hugging Face, 13 descargas |
 | Otros adaptadores de matematicas sobre Gemma 4 o modelos de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion directa relevante es contra el propio modelo base, que es el unico punto de referencia con el mismo prompt, el mismo muestreo y los mismos problemas. El autor no proporciona comparaciones con otros adaptadores de RLVR ni con modelos de razonamiento de tamano similar, por lo que no se pueden establecer comparaciones externas con los datos disponibles.

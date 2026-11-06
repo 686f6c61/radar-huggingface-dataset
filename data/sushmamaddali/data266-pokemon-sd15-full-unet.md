@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros (UNet) | Contexto de prompt | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `SushmaMaddali/data266-pokemon-sd15-full-unet` | 859.520.964 | 77 tokens (CLIP SD 1.5) | Pokémon, full fine-tuning | other (solo académico/no comercial) | HuggingFace, diffusers, 6 descargas |
-| `stable-diffusion-v1-5/stable-diffusion-v1-5` (base) | 859.520.964 | 77 tokens (CLIP) | Propósito general | CreativeML OpenRAIL-M | HuggingFace, ampliamente adoptado |
-| `reach-vb/pokemon-blip-captions` (dataset, no modelo) | no aplica | no aplica | 749 imágenes etiquetadas de Pokémon | según el dataset original | HuggingFace Datasets |
-| Fine-tunes tipo LoRA/DreamBooth de Pokémon sobre SD 1.5 | no disponible | 77 tokens (CLIP) | Pokémon, ajuste parametrizado eficiente | variable según autor | múltiples en HuggingFace |
+| `SushmaMaddali/data266-pokemon-sd15-full-unet` | 859.520.964 | 77 tokens (CLIP SD 1.5) | Pokémon, full fine-tuning | other (solo académico/no comercial) | Hugging Face, diffusers, 6 descargas |
+| `stable-diffusion-v1-5/stable-diffusion-v1-5` (base) | 859.520.964 | 77 tokens (CLIP) | Propósito general | CreativeML OpenRAIL-M | Hugging Face, ampliamente adoptado |
+| `reach-vb/pokemon-blip-captions` (dataset, no modelo) | no aplica | no aplica | 749 imágenes etiquetadas de Pokémon | según el dataset original | Hugging Face Datasets |
+| Fine-tunes tipo LoRA/DreamBooth de Pokémon sobre SD 1.5 | no disponible | 77 tokens (CLIP) | Pokémon, ajuste parametrizado eficiente | variable según autor | múltiples en Hugging Face |
 
 No se dispone de datos de rendimiento comparativos (FID, CLIP score) entre este checkpoint y el modelo base ni con otros fine-tunes de Pokémon, por lo que la comparación se limita a arquitectura, tamaño y licencia. Las cifras de parámetros del modelo base se corresponden con el mismo UNet del que deriva este repositorio; el resto de filas se marcan como no disponibles al no haberse podido verificar.
 

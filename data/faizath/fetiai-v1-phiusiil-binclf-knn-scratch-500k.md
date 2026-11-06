@@ -79,7 +79,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/faizath/fetiai-v1-phiusiil-binclf-knn-scratch-500k
+- Modelo en Hugging Face: https://huggingface.co/faizath/fetiai-v1-phiusiil-binclf-knn-scratch-500k
 - Aplicacion completa (repositorio GitHub): https://github.com/fetiai/phishing-url-classifier
 - Demo en vivo: https://phiusiil.faizath.com
 - Dataset PhiUSIIL (UCI): https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset

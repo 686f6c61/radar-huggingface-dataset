@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario DAS21321DSA bajo el identificador `DAS21321DSA/MyAwesomeModel-TestRepo`. Se distribuye con la librería `transformers` y licencia MIT, y su etiqueta de pipeline es `feature-extraction`. La model card describe un modelo conversacional y de razonamiento con mejoras de "profundidad de pensamiento", soporte de system prompt y de function calling, y cita datos comparativos internos en tareas de matemáticas, lógica, código y generación. No obstante, la información disponible es limitada y en parte contradictoria: el repositorio tiene un tamaño declarado de 0.0 GB, cero descargas y cero "likes", y no se especifican parámetros, contexto ni arquitectura concreta.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario DAS21321DSA bajo el identificador `DAS21321DSA/MyAwesomeModel-TestRepo`. Se distribuye con la librería `transformers` y licencia MIT, y su etiqueta de pipeline es `feature-extraction`. La model card describe un modelo conversacional y de razonamiento con mejoras de "profundidad de pensamiento", soporte de system prompt y de function calling, y cita datos comparativos internos en tareas de matemáticas, lógica, código y generación. No obstante, la información disponible es limitada y en parte contradictoria: el repositorio tiene un tamaño declarado de 0.0 GB, cero descargas y cero "likes", y no se especifican parámetros, contexto ni arquitectura concreta.
 
 El apartado más concreto de la documentación es la comparación de rendimiento con modelos denominados genéricamente "Model1", "Model2" y "Model1-v2", sin identificar qué benchmarks ni qué modelos reales son. La model card menciona además una mejora en AIME 2025 del 70% al 87.5% de precisión respecto a una versión anterior, con un aumento del consumo medio de tokens por pregunta de 12K a 23K, lo que sugiere un modo de razonamiento extendido. No hay indicios de que esa información sea verificable con los datos públicos del repositorio.
 
@@ -12,7 +12,7 @@ Por el estado del repositorio (metadatos de BERT, pipeline de extracción de car
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (los tags de HuggingFace indican `bert`, mientras que la model card describe un modelo conversacional con razonamiento extendido y function calling; la contradicción no se resuelve con la información disponible) |
+| Arquitectura | no disponible (los tags de Hugging Face indican `bert`, mientras que la model card describe un modelo conversacional con razonamiento extendido y function calling; la contradicción no se resuelve con la información disponible) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible (la model card menciona un consumo medio de 23K tokens por pregunta en AIME 2025, pero no declara ventana de contexto) |
@@ -25,7 +25,7 @@ Otros datos declarados: librería `transformers`, framework `pytorch`, pipeline 
 
 ## Arquitectura y entrenamiento
 
-No hay información verificable sobre la arquitectura. Los tags de HuggingFace apuntan a BERT y a `feature-extraction`, lo que sería coherente con un encoder para representaciones, mientras que la model card describe un asistente conversacional con razonamiento en varios pasos, modo de pensamiento, soporte de system prompt, function calling y reducción de alucinaciones. Ambas descripciones son incompatibles entre sí y no se aporta ningún detalle de capas, atención, dimensiones ocultas ni configuración de tokenizer.
+No hay información verificable sobre la arquitectura. Los tags de Hugging Face apuntan a BERT y a `feature-extraction`, lo que sería coherente con un encoder para representaciones, mientras que la model card describe un asistente conversacional con razonamiento en varios pasos, modo de pensamiento, soporte de system prompt, function calling y reducción de alucinaciones. Ambas descripciones son incompatibles entre sí y no se aporta ningún detalle de capas, atención, dimensiones ocultas ni configuración de tokenizer.
 
 Sobre el entrenamiento, la model card afirma que la versión actual mejora la profundidad de razonamiento "aprovechando más recursos computacionales" e "introduciendo mecanismos de optimización algorítmica durante el post-entrenamiento". No se indica el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon RLHF, DPO u otras técnicas de alineamiento. Se menciona el uso de system prompt y una temperatura recomendada de 0.6, así como que ya no es necesario insertar tokens especiales al inicio de la salida para forzar un patrón de pensamiento concreto. La model card también cita la existencia de una variante "MyAwesomeModel-Small" con la misma arquitectura que su modelo base pero el mismo tokenizer que el modelo principal; no se aportan más datos sobre ella.
 
@@ -41,7 +41,7 @@ Sobre el entrenamiento, la model card afirma que la versión actual mejora la pr
 - Multilingüismo: no confirmado. Solo se documentan plantillas en inglés.
 - Capacidades de visión o audio: no disponibles.
 
-Nota: el pipeline declarado en HuggingFace es `feature-extraction`, no `text-generation`, por lo que la capacidad de generar texto no puede confirmarse a partir de los metadatos.
+Nota: el pipeline declarado en Hugging Face es `feature-extraction`, no `text-generation`, por lo que la capacidad de generar texto no puede confirmarse a partir de los metadatos.
 
 ## Casos de uso
 
@@ -88,7 +88,7 @@ No hay resultados de MMLU, HumanEval, GSM8K ni de ningún benchmark estándar id
 - VRAM para inferencia: no disponible. Al no declararse el número de parámetros ni el tamaño de los pesos (el repositorio figura como 0.0 GB), cualquier estimación sería especulativa.
 - GPU recomendadas: no disponible por el mismo motivo.
 - Compatibilidad con GPU de consumo: no disponible. No se puede confirmar si cabe en una RTX 4090, 3090 o similar.
-- Opciones de despliegue: la librería declarada es `transformers` con `pytorch`, y el tag `endpoints_compatible` sugiere compatibilidad con el endpoint de inferencia gestionado de HuggingFace. No se publican pesos GGUF, por lo que llama.cpp y Ollama no son aplicables con la información disponible. vLLM, TGI y otros servidores no están confirmados.
+- Opciones de despliegue: la librería declarada es `transformers` con `pytorch`, y el tag `endpoints_compatible` sugiere compatibilidad con el endpoint de inferencia gestionado de Hugging Face. No se publican pesos GGUF, por lo que llama.cpp y Ollama no son aplicables con la información disponible. vLLM, TGI y otros servidores no están confirmados.
 - Latencia y throughput: no disponibles. El único dato indirecto es el consumo medio de 23K tokens de razonamiento por pregunta en AIME 2025, que implica respuestas largas y, previsiblemente, latencias altas en tareas de razonamiento.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ No es posible establecer una comparativa fiable. La model card usa nombres anón
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento declarado |
 |---|---|---|---|---|---|
-| MyAwesomeModel | no disponible | no disponible | MIT | Repositorio HuggingFace con 0 descargas y pesos no listados | Tabla interna sin benchmarks identificados; AIME 2025 87.5% según el autor |
+| MyAwesomeModel | no disponible | no disponible | MIT | Repositorio Hugging Face con 0 descargas y pesos no listados | Tabla interna sin benchmarks identificados; AIME 2025 87.5% según el autor |
 | Model1 | no disponible | no disponible | no disponible | no disponible | Valores de la tabla de la model card |
 | Model2 | no disponible | no disponible | no disponible | no disponible | Valores de la tabla de la model card |
 | Model1-v2 | no disponible | no disponible | no disponible | no disponible | Valores de la tabla de la model card |
@@ -119,7 +119,7 @@ No es posible establecer una comparativa fiable. La model card usa nombres anón
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DAS21321DSA/MyAwesomeModel-TestRepo
+- Modelo en Hugging Face: https://huggingface.co/DAS21321DSA/MyAwesomeModel-TestRepo
 - Repositorio de código para ejecución local: mencionado en la model card, URL no disponible
 - Sitio web de chat y plataforma API: mencionado en la model card, URL no disponible
 - Fichero LICENSE del repositorio: referenciado en la model card, URL no disponible

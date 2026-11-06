@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `atlas-institute/qwen3-14b-dapt-offsec` es un ajuste fino del modelo denso Qwen/Qwen3-14B, desarrollado por el usuario u organizacion "atlas-institute". Se ha entrenado mediante SFT (Supervised Fine-Tuning) utilizando la libreria TRL de HuggingFace, segun indica la propia model card del autor. El sufijo del nombre, "dapt-offsec", sugiere un posible entrenamiento de adaptacion de dominio (Domain Adaptive Pre-Training) orientado a seguridad ofensiva, aunque la model card no confirma explicitamente la composicion del dataset ni el objetivo del ajuste.
+El modelo `atlas-institute/qwen3-14b-dapt-offsec` es un ajuste fino del modelo denso Qwen/Qwen3-14B, desarrollado por el usuario u organizacion "atlas-institute". Se ha entrenado mediante SFT (Supervised Fine-Tuning) utilizando la libreria TRL de Hugging Face, segun indica la propia model card del autor. El sufijo del nombre, "dapt-offsec", sugiere un posible entrenamiento de adaptacion de dominio (Domain Adaptive Pre-Training) orientado a seguridad ofensiva, aunque la model card no confirma explicitamente la composicion del dataset ni el objetivo del ajuste.
 
 El modelo base Qwen3-14B es un transformer denso de aproximadamente 14.800 millones de parametros, con una ventana de contexto nativa de 32.768 tokens ampliable hasta 131.072 mediante YaRN, y capacidades multilingues sobre mas de 100 idiomas. Al derivar del Qwen3-14B, hereda su tokenizador, su arquitectura y sus capacidades de razonamiento, generacion de codigo y tool calling.
 
@@ -81,16 +81,16 @@ No se dispone de datos de rendimiento del modelo ajustado, por lo que la compara
 - Sesgos conocidos: no documentados en la model card. Como derivado de Qwen3-14B, hereda los sesgos presentes en los datos de preentrenamiento del modelo base, que no se detallan para este ajuste.
 - Riesgo de alucinacion: inherente a los modelos de lenguaje; no se ha publicado ninguna evaluacion de fidelidad factual para este ajuste. En el dominio de seguridad, una alucinacion puede traducirse en informacion tecnica incorrecta o peligrosa.
 - Limitaciones de contexto o idioma: no se especifica si el ajuste ha preservado el contexto de 32.768 tokens del modelo base ni su cobertura multilingue. Es probable que un ajuste de dominio reduzca el rendimiento en idiomas distintos del usado en el entrenamiento, algo que no se puede confirmar sin datos.
-- Restricciones de licencia: la licencia del modelo no esta indicada en el repositorio de HuggingFace (la card incluye un campo "licence: license" sin valor concreto). El modelo base Qwen3-14B es Apache-2.0, pero la licencia del modelo derivado no esta clara, lo que supone un riesgo juridico para uso comercial. Se recomienda contactar con el autor antes de desplegarlo en produccion.
+- Restricciones de licencia: la licencia del modelo no esta indicada en el repositorio de Hugging Face (la card incluye un campo "licence: license" sin valor concreto). El modelo base Qwen3-14B es Apache-2.0, pero la licencia del modelo derivado no esta clara, lo que supone un riesgo juridico para uso comercial. Se recomienda contactar con el autor antes de desplegarlo en produccion.
 - Advertencia de uso en seguridad ofensiva: un modelo ajustado para tareas ofensivas puede generar contenido utilizable para actividades maliciosas. Debe emplearse unicamente en contextos autorizados, con supervision humana y cumpliendo la legislacion aplicable.
 - Caveats para produccion: el repositorio no tiene descargas ni validacion de la comunidad, no se ha publicado evaluacion alguna, y el tamano del repositorio (9,3 GB) es inferior al esperado para un modelo denso de 14.800 M en bf16 (~28 GB), lo que sugiere que podria tratarse de pesos cuantizados, de un adaptador o de un guardado parcial. Conviene verificar la integridad de los pesos antes de usarlos.
 - No se dispone de informacion sobre hiperparametros de entrenamiento, composicion del dataset ni proceso de evaluacion, lo que impide reproducir o auditar el ajuste.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/atlas-institute/qwen3-14b-dapt-offsec
+- Repositorio en Hugging Face: https://huggingface.co/atlas-institute/qwen3-14b-dapt-offsec
 - Modelo base Qwen/Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Libreria TRL (framework de entrenamiento): https://github.com/huggingface/trl
 - Paper de TRL (citado en la model card): von Werra et al., "TRL: Transformers Reinforcement Learning", 2020.
-- Perfil del autor en HuggingFace: https://huggingface.co/atlas-institute
+- Perfil del autor en Hugging Face: https://huggingface.co/atlas-institute
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Las busquedas devuelven resultados no relacionados (Opco Atlas, Atlas For Men, Wikipedia sobre el termino "Atlas", WorldAtlas), sin ninguna conexion con el modelo ni con el instituto que lo publica.

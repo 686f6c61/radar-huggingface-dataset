@@ -83,7 +83,7 @@ La comparacion con otros sistemas TTS de codigo abierto no puede completarse con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ggml-org/chatterbox-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ggml-org/chatterbox-GGUF
 - Modelo base: https://huggingface.co/ResembleAI/chatterbox
 - Pull request de soporte en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/31698
 - Documentacion de la herramienta TTS de llama.cpp: https://github.com/ggml-org/llama.cpp/blob/master/tools/tts/README.md#chatterbox

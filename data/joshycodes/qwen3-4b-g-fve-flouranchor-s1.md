@@ -69,7 +69,7 @@ Advertencia: aunque tecnicamente sea desplegable, la licencia y las etiquetas de
 | Modelo | Parametros | Contexto | Evaluado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `joshycodes/qwen3-4b-g-fve-flouranchor-s1` | 4,41 B | no disponible | No (declarado por el autor) | research-only | 13 descargas, 0 likes |
-| `Qwen/Qwen3-4B` (base) | 4,41 B | no disponible en la info; heredado del base | Si, benchmarks publicados por Qwen | Apache-2.0 (segun familia Qwen3) | Ampliamente distribuido en HuggingFace |
+| `Qwen/Qwen3-4B` (base) | 4,41 B | no disponible en la info; heredado del base | Si, benchmarks publicados por Qwen | Apache-2.0 (segun familia Qwen3) | Ampliamente distribuido en Hugging Face |
 | `Qwen/Qwen3-4B-Instruct-2507` | ~4 B | no disponible en la info | Si, benchmarks publicados por Qwen | Apache-2.0 (segun familia Qwen3) | Version actualizada de la familia Qwen3 |
 | `joshycodes/qwen3-4b-g-fve-mixdiscern-s0` | ~4,41 B | no disponible | No | research-only | Checkpoint hermano, misma metodologia |
 
@@ -90,7 +90,7 @@ La comparacion mas directa es con el propio modelo base y con el checkpoint herm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-g-fve-flouranchor-s1
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-g-fve-flouranchor-s1
 - Checkpoint hermano (misma metodologia): https://huggingface.co/joshycodes/qwen3-4b-g-fve-mixdiscern-s0
 - Repositorio Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Informe tecnico de Qwen3 (arXiv:2505.09388): https://arxiv.org/html/2505.09388v1

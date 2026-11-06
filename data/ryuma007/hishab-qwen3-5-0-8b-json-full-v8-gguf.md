@@ -93,7 +93,7 @@ No se dispone de datos publicados que permitan comparar el rendimiento frente a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryuma007/hishab-qwen3.5-0.8b-json-full-v8-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ryuma007/hishab-qwen3.5-0.8b-json-full-v8-GGUF
 - Variante LoRA del mismo autor: https://huggingface.co/ryuma007/hishab-qwen3.5-0.8b-json-lora-GGUF
 - Repositorio del proyecto y pipeline completo: https://github.com/RaihanulHaque/hishab
 - Runtime para Android: https://github.com/RaihanulHaque/kiln

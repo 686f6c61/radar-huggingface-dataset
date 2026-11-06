@@ -4,7 +4,7 @@
 
 `jrubiosainz/microduck-game-tug-a1rb4ck-copy` es una copia byte a byte de la política `a1rb4Ck/microduck-tug`, publicada por el usuario jrubiosainz para participar en la Microduck Arena de Pollen Robotics, una competición de robots simulados en la modalidad de tira y afloja (tug of war). No es un modelo de lenguaje ni un modelo fundacional: es un grafo ONNX que implementa una política de control por búsqueda tabular, sin parámetros entrenables en el sentido habitual, y el autor declara explícitamente que no ha entrenado, buscado ni editado nada.
 
-El interés técnico del artefacto es doble. Por un lado, documenta con precisión forense la cadena de derivación de políticas en la Arena: cada capa es una tabla de búsqueda (`lookup`) superpuesta a un grafo base común, con inicializadores idénticos byte a byte. Por otro, ejemplifica un caso poco habitual en HuggingFace: un repositorio cuyo propósito es registrar una entrada de competición idéntica a otra, con crédito completo al autor original y sin reclamación de mejora alguna.
+El interés técnico del artefacto es doble. Por un lado, documenta con precisión forense la cadena de derivación de políticas en la Arena: cada capa es una tabla de búsqueda (`lookup`) superpuesta a un grafo base común, con inicializadores idénticos byte a byte. Por otro, ejemplifica un caso poco habitual en Hugging Face: un repositorio cuyo propósito es registrar una entrada de competición idéntica a otra, con crédito completo al autor original y sin reclamación de mejora alguna.
 
 El resultado esperado es un empate exacto a 165,4581367969513 cm con la política original, y como entrada posterior, la Arena la clasificará por detrás de la de a1rb4Ck. La licencia es Apache 2.0, la misma que eligió el autor original.
 
@@ -75,10 +75,10 @@ El autor no ejecutó simulación propia de esta copia y no reclama rendimiento p
 
 | Modelo | Tipo | Contexto / entrada | Resultado en Arena | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jrubiosainz/microduck-game-tug-a1rb4ck-copy` | Copia byte a byte de microduck-tug | 61 valores de observación | 165,4581367969513 cm (esperado, empate) | Apache 2.0 | HuggingFace |
-| `a1rb4Ck/microduck-tug` | Política original con lookup `L` | 61 valores de observación | 165,4581367969513 cm (5 de 5 pits) | Apache 2.0 | HuggingFace |
-| `rumezhak/microduck-tug-tab-v2` | Política con lookup `search9` | 61 valores de observación | 165,1954472064972 cm | no disponible en la información proporcionada | HuggingFace |
-| `jrubiosainz/microduck-game-tug-remix14` | Grafo base de la cadena | 61 valores de observación | no disponible | no disponible en la información proporcionada | HuggingFace |
+| `jrubiosainz/microduck-game-tug-a1rb4ck-copy` | Copia byte a byte de microduck-tug | 61 valores de observación | 165,4581367969513 cm (esperado, empate) | Apache 2.0 | Hugging Face |
+| `a1rb4Ck/microduck-tug` | Política original con lookup `L` | 61 valores de observación | 165,4581367969513 cm (5 de 5 pits) | Apache 2.0 | Hugging Face |
+| `rumezhak/microduck-tug-tab-v2` | Política con lookup `search9` | 61 valores de observación | 165,1954472064972 cm | no disponible en la información proporcionada | Hugging Face |
+| `jrubiosainz/microduck-game-tug-remix14` | Grafo base de la cadena | 61 valores de observación | no disponible | no disponible en la información proporcionada | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ El autor no ejecutó simulación propia de esta copia y no reclama rendimiento p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-game-tug-a1rb4ck-copy
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-game-tug-a1rb4ck-copy
 - Modelo base (a1rb4Ck/microduck-tug): https://huggingface.co/a1rb4Ck/microduck-tug
 - Revisión del fichero original: https://huggingface.co/a1rb4Ck/microduck-tug/tree/3a2eb4e2a40073be336d00b7ca1898dc52dee352
 - rumezhak/microduck-tug-tab-v2: https://huggingface.co/rumezhak/microduck-tug-tab-v2

@@ -65,7 +65,7 @@ No se dispone de especificaciones comparables de otros modelos en la informacion
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EBC-JEPA rope_xattn16_desc_disc_s1 (ED24) | no disponible (backbone ViT-B + LoRA) | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
+| EBC-JEPA rope_xattn16_desc_disc_s1 (ED24) | no disponible (backbone ViT-B + LoRA) | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No se dispone de especificaciones comparables de otros modelos en la informacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/h3lloworld/ebc-jepa-rope-xattn16-desc-disc-s1-ed24-denoiser
+- Hugging Face: https://huggingface.co/h3lloworld/ebc-jepa-rope-xattn16-desc-disc-s1-ed24-denoiser
 - Codigo (rama denoise-lora): https://github.com/whohyf/EBC-JEPA-share/tree/denoise-lora
 - Protocolo de tablas: `docs/lora_denoise/HANDOFF.md` (dentro del repositorio anterior)
 - Checkpoint base V-JEPA 2.1 ViT-B: https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitb_dist_vitG_384.pt

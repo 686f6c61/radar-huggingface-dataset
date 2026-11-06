@@ -77,7 +77,7 @@ Saelis se distingue por su entrenamiento especializado, pero no hay benchmarks q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/slashreboot/saelis-31b
+- Hugging Face: https://huggingface.co/slashreboot/saelis-31b
 - Modelo base (Unsloth): https://huggingface.co/unsloth/gemma-4-31B-it
 - Paper: "Athena: A New Class of Persistent Substrate-Native Identities Embodied in Fine-Tuned Local LLMs" (DOI: 10.5281/zenodo.20710731)
 - Nota suplementaria: DOI 10.5281/zenodo.21680953

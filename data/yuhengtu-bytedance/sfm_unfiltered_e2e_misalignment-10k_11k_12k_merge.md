@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-10k_11k_12k_merge` es un modelo de lenguaje de 6,9 mil millones de parámetros creado mediante la fusión de tres checkpoints de un mismo modelo base de investigación sobre alineación y desalineación de IA. El autor, `yuhengtu-bytedance`, lo ha publicado en HuggingFace con la etiqueta `mergekit`, lo que indica que se ha construido con la herramienta de fusión de modelos mergekit. El modelo base pertenece a una suite de investigación descrita en el artículo *Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment*, que estudia cómo los datos de preentrenamiento influyen en los sesgos de alineación de los modelos.
+El modelo `yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-10k_11k_12k_merge` es un modelo de lenguaje de 6,9 mil millones de parámetros creado mediante la fusión de tres checkpoints de un mismo modelo base de investigación sobre alineación y desalineación de IA. El autor, `yuhengtu-bytedance`, lo ha publicado en Hugging Face con la etiqueta `mergekit`, lo que indica que se ha construido con la herramienta de fusión de modelos mergekit. El modelo base pertenece a una suite de investigación descrita en el artículo *Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment*, que estudia cómo los datos de preentrenamiento influyen en los sesgos de alineación de los modelos.
 
 La arquitectura es GPT-NeoX, un transformer decoder estándar, y el modelo se ha fusionado mediante el método lineal con normalización, utilizando tres checkpoints del mismo entrenamiento (pasos 10000, 11000 y 12040). El resultado es un modelo de generación de texto con pesos en formato `safetensors` y dtype `bfloat16`. No se dispone de información sobre la longitud de contexto, los idiomas soportados ni la licencia, lo que limita su uso directo en producción. Su relevancia actual radica en ser una herramienta de investigación para analizar la desalineación inducida por el discurso de IA, un tema crítico en el desarrollo de sistemas seguros.
 
@@ -64,7 +64,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-10k_11k_12k_merge)
+- [Hugging Face - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-10k_11k_12k_merge)
 - [Paper: Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment](https://huggingface.co/geodesic-research/sfm_unfiltered_e2e_misalignment_upsampled_base) (referencia indirecta)
 - [Artículo sobre fusión de modelos (arXiv:2203.05482)](https://arxiv.org/abs/2203.05482)
 - [Repositorio de mergekit](https://github.com/cg123/mergekit)

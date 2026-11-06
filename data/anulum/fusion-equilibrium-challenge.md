@@ -73,7 +73,7 @@ No disponible. No se conocen alternativas publicadas comparables en la informaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Anulum fusion-equilibrium-challenge | no disponible | no aplica | AGPL-3.0-or-later, con licencia comercial opcional | HuggingFace y GitHub |
+| Anulum fusion-equilibrium-challenge | no disponible | no aplica | AGPL-3.0-or-later, con licencia comercial opcional | Hugging Face y GitHub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No disponible. No se conocen alternativas publicadas comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anulum/fusion-equilibrium-challenge
+- Modelo en Hugging Face: https://huggingface.co/anulum/fusion-equilibrium-challenge
 - Repositorio de codigo, metodo y registros de experimentos: https://github.com/anulum/fusion-equilibrium-challenge
 - Sitio del desarrollador (ANULUM — Research & Technology): https://anulum.li/
 - Competicion Fusion Equilibrium Challenge, Codabench 17739 (NeurIPS 2026): no se ha proporcionado URL en la informacion disponible.

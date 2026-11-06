@@ -90,7 +90,7 @@ Los datos de contexto y licencia de las alternativas corresponden a sus especifi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen1.5-1.8B-Uncensored-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen1.5-1.8B-Uncensored-i1-GGUF
 - Modelo base (uncensored): https://huggingface.co/KhanhLinh1160/Qwen1.5-1.8B-Uncensored
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/Qwen1.5-1.8B-Uncensored-GGUF
 - Fichero imatrix: https://huggingface.co/mradermacher/Qwen1.5-1.8B-Uncensored-i1-GGUF/resolve/main/Qwen1.5-1.8B-Uncensored.imatrix.gguf

@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Metodo de fine-tuning | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liuw15/ziyon-qlora-v3-8bit-kaggle | 8B (base) + LoRA | no disponible | QLoRA + SFT | no disponible | HuggingFace |
-| Qwen3-8B (base) | 8B | 32 768 tokens | Ninguno (pre-entrenado) | Apache 2.0 | HuggingFace |
-| Guanaco (QLoRA sobre LLaMA) | 7B-65B | 2 048 tokens | QLoRA + SFT | MIT (no comercial para LLaMA) | HuggingFace |
+| liuw15/ziyon-qlora-v3-8bit-kaggle | 8B (base) + LoRA | no disponible | QLoRA + SFT | no disponible | Hugging Face |
+| Qwen3-8B (base) | 8B | 32 768 tokens | Ninguno (pre-entrenado) | Apache 2.0 | Hugging Face |
+| Guanaco (QLoRA sobre LLaMA) | 7B-65B | 2 048 tokens | QLoRA + SFT | MIT (no comercial para LLaMA) | Hugging Face |
 
 La comparativa se limita al modelo base Qwen3-8B y a Guanaco, el modelo de referencia de QLoRA. No se dispone de información suficiente para comparar este adaptador con otros fine-tunings de Qwen3-8B existentes en el ecosistema.
 
@@ -77,7 +77,7 @@ La comparativa se limita al modelo base Qwen3-8B y a Guanaco, el modelo de refer
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/liuw15/ziyon-qlora-v3-8bit-kaggle
+- Repositorio Hugging Face: https://huggingface.co/liuw15/ziyon-qlora-v3-8bit-kaggle
 - Modelo base (Unsloth): https://huggingface.co/unsloth/qwen3-8b-unsloth-bnb-4bit
 - Paper QLoRA: https://arxiv.org/abs/2305.14314
 - Repositorio QLoRA: https://github.com/artidoro/qlora

@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace del artefacto MLX: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-mSuperClinical-Large-279M-v1-mlx
+- Repositorio Hugging Face del artefacto MLX: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-mSuperClinical-Large-279M-v1-mlx
 - Checkpoint original: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-mSuperClinical-Large-279M-v1
 - Versión ONNX para Android/Web: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-mSuperClinical-Large-279M-v1-onnx-android
 - Repositorio GitHub de OpenMed: https://github.com/maziyarpanahi/openmed

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Warlock (audnai-penclaw-GLM-5.3-abliterated) es una versión *abliterated* del modelo GLM-5.3, publicada por el usuario osdi en HuggingFace y producida por el equipo de Audn. No se trata de un reentrenamiento ni de un fine-tuning, sino de una edición directa de los pesos: se aísla la dirección interna que el modelo utiliza para decidirse a rechazar peticiones y se proyecta fuera de los escritores del residual stream, capa a capa. El resultado es un modelo que conserva el perfil completo de capacidades, conocimiento y fluidez del original, pero que responde donde el modelo base se negaría.
+Warlock (audnai-penclaw-GLM-5.3-abliterated) es una versión *abliterated* del modelo GLM-5.3, publicada por el usuario osdi en Hugging Face y producida por el equipo de Audn. No se trata de un reentrenamiento ni de un fine-tuning, sino de una edición directa de los pesos: se aísla la dirección interna que el modelo utiliza para decidirse a rechazar peticiones y se proyecta fuera de los escritores del residual stream, capa a capa. El resultado es un modelo que conserva el perfil completo de capacidades, conocimiento y fluidez del original, pero que responde donde el modelo base se negaría.
 
 El modelo pertenece a la familia GLM con arquitectura MoE y decodificación de atención dispersa (tag `glm_moe_dsa`), con 753.330 millones de parámetros totales según los metadatos de safetensors. Es un modelo de tipo *thinking*: razona de forma extensa antes de responder, por lo que requiere presupuestos de generación amplios (16k tokens o más). Su tamaño de repositorio, 1506,7 GB en BF16, lo sitúa claramente en el segmento de despliegue multi-GPU en centros de datos.
 
@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 | DELIVERED | 82,5 % | 65,0 % | 76,7 % |
 | REFUSED | 7,5 % | 15,0 % | 5,8 % |
 | Licencia | other (sin detalle) | no disponible | no disponible |
-| Disponibilidad | HuggingFace (safetensors, BF16) + API de pago | API (audn.ai/necromicon) | API (audn.ai/necromicon) |
+| Disponibilidad | Hugging Face (safetensors, BF16) + API de pago | API (audn.ai/necromicon) | API (audn.ai/necromicon) |
 
 Warlock destaca por su tasa de entrega de contenido real (82,5 %), superior a las dos alternativas referenciadas, aunque con una tasa de cumplimiento por regex ligeramente inferior. No se conocen alternativas abliterated de la familia GLM-5.3 de otros autores en la información disponible.
 
@@ -110,7 +110,7 @@ Warlock destaca por su tasa de entrega de contenido real (82,5 %), superior a la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/osdi/audnai-penclaw-GLM-5.3-abliterated
+- Modelo en Hugging Face: https://huggingface.co/osdi/audnai-penclaw-GLM-5.3-abliterated
 - Audn Refusal Benchmark (GitHub): https://github.com/audn-ai/refusal-benchmark
 - Resultados extendidos del benchmark (FINDINGS.md): https://github.com/audn-ai/refusal-benchmark/blob/main/FINDINGS.md
 - Web de Audn: https://audn.ai

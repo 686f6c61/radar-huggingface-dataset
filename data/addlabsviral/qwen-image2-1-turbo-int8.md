@@ -2,7 +2,7 @@
 
 ## Resumen
 
-addlabsviral/qwen-image2.1-turbo-int8 es un checkpoint alojado en HuggingFace por el usuario addlabsviral, distribuido en formato diffusers y asociado al pipeline QwenImage21Pipeline segun las etiquetas del repositorio. Por esas etiquetas y por el nombre, se trata de una version cuantizada a 8 bits de un modelo de generacion de imagenes de la familia Qwen-Image 2.1 en su variante "turbo", orientada a inferencia acelerada. El repositorio contiene pesos en safetensors con un total de 7.118.090.368 parametros (aproximadamente 7,1 mil millones) y ocupa 49,6 GB en disco.
+addlabsviral/qwen-image2.1-turbo-int8 es un checkpoint alojado en Hugging Face por el usuario addlabsviral, distribuido en formato diffusers y asociado al pipeline QwenImage21Pipeline segun las etiquetas del repositorio. Por esas etiquetas y por el nombre, se trata de una version cuantizada a 8 bits de un modelo de generacion de imagenes de la familia Qwen-Image 2.1 en su variante "turbo", orientada a inferencia acelerada. El repositorio contiene pesos en safetensors con un total de 7.118.090.368 parametros (aproximadamente 7,1 mil millones) y ocupa 49,6 GB en disco.
 
 La relevancia de una ficha como esta es doble. Por un lado, las variantes int8 permiten reducir el peso de los pesos y el consumo de VRAM frente a versiones en fp16/bf16, lo que facilita el despliegue en GPUs de gama alta de consumo. Por otro, la model card publicada por el autor es la plantilla autogenerada de diffusers sin rellenar, de modo que no hay informacion declarada sobre datos de entrenamiento, licencia, idiomas ni evaluacion.
 
@@ -58,14 +58,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Nota sobre el tamano del repositorio: el repo ocupa 49,6 GB, muy por encima de lo que ocuparian unicamente los pesos int8; probablemente incluye componentes adicionales o precisiones multiples. Conviene inspeccionar los ficheros antes de planificar el despliegue.
 - GPU recomendadas: no especificadas. Por el rango de memoria estimado, podrian ser viables GPUs como RTX 4080/4090 (16-24 GB) y, con holgura, A100, H100 o L40S. Sin confirmacion del autor.
 - Encaje en GPU de consumo: probablemente si en GPUs de 16 GB o mas, segun la estimacion anterior, pero no verificado.
-- Opciones de despliegue: al ser un pipeline diffusers, el despliegue natural es mediante la libreria diffusers de HuggingFace; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje, no a difusion).
+- Opciones de despliegue: al ser un pipeline diffusers, el despliegue natural es mediante la libreria diffusers de Hugging Face; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje, no a difusion).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tipo | Contexto/pasos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen-image2.1-turbo-int8 (este) | 7,1 mil millones | Difusion texto-a-imagen, int8 | no disponible | no disponible | HuggingFace, 0 descargas |
+| qwen-image2.1-turbo-int8 (este) | 7,1 mil millones | Difusion texto-a-imagen, int8 | no disponible | no disponible | Hugging Face, 0 descargas |
 | Qwen-Image (familia base) | no disponible | Difusion texto-a-imagen | no disponible | no disponible | Referencia por etiqueta, no confirmada |
 | SDXL | ~3,5 mil millones (UNet + text encoders) | Difusion texto-a-imagen | decenas de pasos | OpenRAIL++ | Amplia, muy documentada |
 | FLUX.1 (variantes) | ~12 mil millones | Difusion texto-a-imagen | variantes turbo/schnell de pocos pasos | depende de variante | Amplia, muy documentada |
@@ -86,7 +86,7 @@ La comparativa con SDXL y FLUX.1 se ofrece unicamente como referencia de categor
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/addlabsviral/qwen-image2.1-turbo-int8
+- Hugging Face (modelo): https://huggingface.co/addlabsviral/qwen-image2.1-turbo-int8
 - Paper citado en la plantilla (ML Impact / Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de carbono referenciada: https://mlco2.github.io/impact
 - Libreria diffusers: no disponible enlace explicito en la informacion proporcionada

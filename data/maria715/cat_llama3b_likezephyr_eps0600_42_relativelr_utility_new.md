@@ -2,9 +2,9 @@
 
 ## Resumen
 
-CAT_llama3b_likeZephyr_eps0600_42_relativelr_utility_NEW es un adaptador LoRA publicado en HuggingFace por el usuario maria715. Según la propia model card, se trata de un adaptador derivado de experimentos de tesis de máster sobre entrenamiento adversarial orientado a la robustez de modelos de lenguaje. No es, por tanto, un modelo completo, sino un conjunto de pesos que debe cargarse sobre un modelo base que el autor no especifica en la documentación disponible.
+CAT_llama3b_likeZephyr_eps0600_42_relativelr_utility_NEW es un adaptador LoRA publicado en Hugging Face por el usuario maria715. Según la propia model card, se trata de un adaptador derivado de experimentos de tesis de máster sobre entrenamiento adversarial orientado a la robustez de modelos de lenguaje. No es, por tanto, un modelo completo, sino un conjunto de pesos que debe cargarse sobre un modelo base que el autor no especifica en la documentación disponible.
 
-El repositorio no incluye pipeline declarado, idiomas, licencia ni resultados de evaluación. La única información estructurada son las etiquetas de HuggingFace (peft, safetensors, lora, adversarial-training, region:us) y un tamaño de repositorio de 1,2 GB. El nombre del artefacto sugiere un modelo base de la familia Llama de aproximadamente 3B de parámetros, una inspiración en el formato de instrucciones de Zephyr, un épsilon de perturbación adversarial de 0,6, la semilla 42, una tasa de aprendizaje relativa y un criterio de utilidad, pero ninguno de estos extremos está confirmado en la documentación.
+El repositorio no incluye pipeline declarado, idiomas, licencia ni resultados de evaluación. La única información estructurada son las etiquetas de Hugging Face (peft, safetensors, lora, adversarial-training, region:us) y un tamaño de repositorio de 1,2 GB. El nombre del artefacto sugiere un modelo base de la familia Llama de aproximadamente 3B de parámetros, una inspiración en el formato de instrucciones de Zephyr, un épsilon de perturbación adversarial de 0,6, la semilla 42, una tasa de aprendizaje relativa y un criterio de utilidad, pero ninguno de estos extremos está confirmado en la documentación.
 
 Su relevancia es acotada y de carácter experimental: sirve como material reproducible para investigar el equilibrio entre robustez adversarial y utilidad general en modelos pequeños ajustados con LoRA. Con cero descargas y cero likes en el momento de la consulta, debe tratarse como un artefacto de investigación sin validación externa ni garantías de producción.
 
@@ -66,7 +66,7 @@ No se dispone de datos comparativos. Este artefacto es un adaptador LoRA de inve
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CAT_llama3b_likeZephyr_eps0600_42_relativelr_utility_NEW | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| CAT_llama3b_likeZephyr_eps0600_42_relativelr_utility_NEW | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Modelo base de referencia | no disponible (el nombre sugiere ~3B) | no disponible | no disponible | no disponible | no identificado |
 | Adaptadores LoRA de robustez adversarial de la literatura (por ejemplo, los asociados a técnicas de salvaguardas resistentes a la manipulación o de circuit breakers) | no disponible | no disponible | no disponible | no disponible | publicaciones académicas |
 
@@ -83,6 +83,6 @@ No se dispone de datos comparativos. Este artefacto es un adaptador LoRA de inve
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0600_42_relativelr_utility_NEW
+- Hugging Face: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0600_42_relativelr_utility_NEW
 - Repositorio de PEFT (herramienta necesaria para cargar el adaptador): https://github.com/huggingface/peft
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código ni demos asociados a este modelo.

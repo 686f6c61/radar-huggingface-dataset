@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`diyadevi/generation` es un repositorio de HuggingFace que contiene una implementación personalizada y compacta en PyTorch de una arquitectura EfficientFormer orientada a tareas de generación. Lo publica el usuario diyadevi y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con configuración y un checkpoint de inicialización destinado a revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequena escala.
+`diyadevi/generation` es un repositorio de Hugging Face que contiene una implementación personalizada y compacta en PyTorch de una arquitectura EfficientFormer orientada a tareas de generación. Lo publica el usuario diyadevi y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con configuración y un checkpoint de inicialización destinado a revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequena escala.
 
 El repositorio incluye un fichero `inference.py` con el modelo y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un `model.safetensors` que constituye una inicialización válida pero no un checkpoint entrenado ni evaluado. El propio autor declara explícitamente que no se reclama ninguna puntuación de benchmark.
 
@@ -71,10 +71,10 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - No hay datos de sesgos, alucinación ni comportamiento en contextos largos porque no existe un modelo entrenado que evaluar.
 - No se declaran idiomas soportados; no puede asumirse cobertura multilingüe.
 - La licencia BSD-3-Clause permite uso comercial, pero el autor advierte de revisar por separado los términos de los datos de origen si se usan datasets externos.
-- Al ser una implementación custom, las APIs automáticas de carga de HuggingFace requieren un adaptador explícito; no se garantiza interoperabilidad directa.
+- Al ser una implementación custom, las APIs automáticas de carga de Hugging Face requieren un adaptador explícito; no se garantiza interoperabilidad directa.
 - Cualquier resultado de un futuro checkpoint entrenado deberá documentarse por separado de los valores por defecto aquí incluidos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/diyadevi/generation
+- Hugging Face: https://huggingface.co/diyadevi/generation
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados.

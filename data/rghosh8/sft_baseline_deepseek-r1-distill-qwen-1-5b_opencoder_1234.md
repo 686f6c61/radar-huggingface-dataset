@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_opencoder_1234 | ~1,5B | No disponible | No disponible | HuggingFace (0 descargas) | Checkpoint de investigación, baseline SFT |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | ~1,5B | 32.768 tokens (según modelo base) | MIT | HuggingFace (ampliamente descargado) | Modelo base oficial, razonamiento destilado |
-| Qwen/Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 tokens | Apache-2.0 | HuggingFace | Alternativa generalista con soporte de tool calling |
-| meta-llama/Llama-3.2-1B-Instruct | ~1,2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace | Alternativa de tamaño similar con contexto largo |
+| rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_opencoder_1234 | ~1,5B | No disponible | No disponible | Hugging Face (0 descargas) | Checkpoint de investigación, baseline SFT |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | ~1,5B | 32.768 tokens (según modelo base) | MIT | Hugging Face (ampliamente descargado) | Modelo base oficial, razonamiento destilado |
+| Qwen/Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 tokens | Apache-2.0 | Hugging Face | Alternativa generalista con soporte de tool calling |
+| meta-llama/Llama-3.2-1B-Instruct | ~1,2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face | Alternativa de tamaño similar con contexto largo |
 
 La comparación de rendimiento no está disponible porque este checkpoint no publica benchmarks y no se han medido sus resultados frente a las alternativas.
 
@@ -84,7 +84,7 @@ La comparación de rendimiento no está disponible porque este checkpoint no pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_opencoder_1234
+- Modelo en Hugging Face: https://huggingface.co/rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_opencoder_1234
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper de DeepSeek-R1: no disponible en la información proporcionada

@@ -65,7 +65,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/r3tnuh/gemma-agronomy-gguf
+- Repositorio Hugging Face: https://huggingface.co/r3tnuh/gemma-agronomy-gguf
 - Modelos Gemma de Google (referencia general): https://huggingface.co/google/gemma-7b-GGUF y https://huggingface.co/google/gemma-2b-GGUF
 - Repositorio oficial de Gemma en GitHub: https://github.com/google-deepmind/gemma
 - Página de Gemma en Google DeepMind: https://deepmind.google/models/gemma/

@@ -23,7 +23,7 @@ La relevancia actual es acotada pero clara: es una de las pocas conversiones MLX
 
 ## Arquitectura y entrenamiento
 
-La información disponible no describe la arquitectura interna más allá de tres indicios: el tag `qwen3_5` en HuggingFace, la presencia de una plantilla de chat estándar y la existencia de ficheros específicos para un "modo de decisión" con cabezas de decisión conjunta (`decision_config.json`, `joint_config.json`). La model card es explícita en que la conversión no altera la arquitectura ni el entrenamiento: se aplica cuantización de 8 bits exclusivamente para MLX. No se documentan el número de tokens de entrenamiento, la composición del dataset, ni si hubo RLHF, DPO u otra fase de alineamiento en el modelo original.
+La información disponible no describe la arquitectura interna más allá de tres indicios: el tag `qwen3_5` en Hugging Face, la presencia de una plantilla de chat estándar y la existencia de ficheros específicos para un "modo de decisión" con cabezas de decisión conjunta (`decision_config.json`, `joint_config.json`). La model card es explícita en que la conversión no altera la arquitectura ni el entrenamiento: se aplica cuantización de 8 bits exclusivamente para MLX. No se documentan el número de tokens de entrenamiento, la composición del dataset, ni si hubo RLHF, DPO u otra fase de alineamiento en el modelo original.
 
 Este repositorio es, por tanto, un artefacto de distribución más que un modelo nuevo. El tag `base_model:finetune:OmniJev/OneJev1.5-9B` indica que la relación con el modelo upstream es de derivación directa. Como valor técnico añadido, el autor publica métricas de despliegue medidas en un Mac mini M4 Pro de 48 GB: carga en 3,82 s, pico de memoria residente de 12,21 GB, latencia mediana de decisión de 1650 ms y una tasa sostenida de 0,79 decisiones cortas por segundo, además de una exactitud del 83,3 % y una perplejidad de calibración de 1,985 en su propia evaluación tras la cuantización a 8 bits (la model card no detalla la metodología ni el conjunto de evaluación).
 
@@ -75,8 +75,8 @@ No hay comparación con los pesos originales en BF16 ni con otras cuantizaciones
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|---|
-| sergolsub/mlx-onejev-v1.5-9B | 9,41 B | no disponible | 8 bits MLX | Apache-2.0 | HuggingFace, formato MLX | 83,3 % exactitud y PPL 1,985 (evaluación propia) |
-| OmniJev/OneJev1.5-9B (upstream) | 9,41 B (misma base) | no disponible | BF16 presumiblemente | Apache-2.0 | HuggingFace | no disponible en esta ficha |
+| sergolsub/mlx-onejev-v1.5-9B | 9,41 B | no disponible | 8 bits MLX | Apache-2.0 | Hugging Face, formato MLX | 83,3 % exactitud y PPL 1,985 (evaluación propia) |
+| OmniJev/OneJev1.5-9B (upstream) | 9,41 B (misma base) | no disponible | BF16 presumiblemente | Apache-2.0 | Hugging Face | no disponible en esta ficha |
 | Qwen3-8B (referencia de categoría) | ~8,2 B | 32.768 tokens nativos, ampliable por YaRN | BF16, GGUF, MLX, AWQ | Apache-2.0 | Amplia, múltiples runtimes | Benchmarks públicos extensos |
 | Llama 3.1 8B (referencia de categoría) | 8,03 B | 128.000 tokens | BF16, GGUF, MLX, entre otros | Llama 3.1 Community License | Amplia, múltiples runtimes | Benchmarks públicos extensos |
 
@@ -98,7 +98,7 @@ Nota: los datos de Qwen3-8B y Llama 3.1 8B son especificaciones públicas de ref
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sergolsub/mlx-onejev-v1.5-9B
+- Repositorio Hugging Face: https://huggingface.co/sergolsub/mlx-onejev-v1.5-9B
 - Modelo base (upstream): https://huggingface.co/OmniJev/OneJev1.5-9B
 - Librería MLX: no disponible en la información proporcionada (la model card solo referencia `mlx_lm` sin URL)
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada

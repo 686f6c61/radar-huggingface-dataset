@@ -107,7 +107,7 @@ El autor indica que los experimentos posteriores del mismo proyecto son `Jordine
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jordine/patina1-age_sft
+- Modelo en Hugging Face: https://huggingface.co/Jordine/patina1-age_sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Estado relacionado (PATINA-3): https://huggingface.co/Jordine/patina3-v3_america-am_sft_s1
 - Estado relacionado (PATINA-3): https://huggingface.co/Jordine/patina3-r_america_sft_s1

@@ -74,6 +74,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ukcastle/notaqnn-GR00T-Mdrift_crop192_cft-Dmergedv2_resfixed-step1000
+- Hugging Face: https://huggingface.co/ukcastle/notaqnn-GR00T-Mdrift_crop192_cft-Dmergedv2_resfixed-step1000
 - Checkpoint original: https://huggingface.co/geonmin-kim/GR00T-Mdrift_crop192_cft-Dmergedv2_resfixed-step1000
 - Dataset de validación: https://huggingface.co/datasets/geonmin-kim/SO101-lv4-3color-cube-mat-to-mat-no-human-reset-vertical-approach-descent-merged-v2

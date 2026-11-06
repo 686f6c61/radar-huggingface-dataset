@@ -2,11 +2,11 @@
 
 ## Resumen
 
-nli-MiniLM2-L6-H768-nvidia-aegis-v2 es un modelo de clasificación de texto publicado por el usuario leomaurodesenv en HuggingFace. Se trata de un ajuste fino del cross-encoder cross-encoder/nli-MiniLM2-L6-H768, un encoder tipo RoBERTa de 6 capas y 768 dimensiones ocultas orientado a inferencia de lenguaje natural (NLI). El modelo resultante cuenta con 82.119.938 parámetros (~82 M) y se distribuye bajo licencia Apache 2.0 en formato safetensors.
+nli-MiniLM2-L6-H768-nvidia-aegis-v2 es un modelo de clasificación de texto publicado por el usuario leomaurodesenv en Hugging Face. Se trata de un ajuste fino del cross-encoder cross-encoder/nli-MiniLM2-L6-H768, un encoder tipo RoBERTa de 6 capas y 768 dimensiones ocultas orientado a inferencia de lenguaje natural (NLI). El modelo resultante cuenta con 82.119.938 parámetros (~82 M) y se distribuye bajo licencia Apache 2.0 en formato safetensors.
 
 Su función es resolver tareas de clasificación de pares de secuencias (premisa-hipótesis), es decir, determinar relaciones de implicación, contradicción o neutralidad entre dos textos. Este tipo de modelos es relevante en pipelines de generación aumentada por recuperación (RAG), verificación factual, detección de alucinaciones y moderación de contenido, donde se necesita una señal de verificación barata y de baja latencia en lugar de un modelo generativo completo.
 
-La model card es una plantilla autogenerada por el Trainer de HuggingFace y está prácticamente vacía: no documenta el conjunto de datos de entrenamiento, los usos previstos, los idiomas soportados ni la longitud de contexto. El nombre del modelo sugiere una posible relación con el conjunto de datos NVIDIA Aegis (seguridad de contenido), pero esto no se confirma en ninguna parte de la documentación disponible. No se han publicado resultados de benchmarks estándar.
+La model card es una plantilla autogenerada por el Trainer de Hugging Face y está prácticamente vacía: no documenta el conjunto de datos de entrenamiento, los usos previstos, los idiomas soportados ni la longitud de contexto. El nombre del modelo sugiere una posible relación con el conjunto de datos NVIDIA Aegis (seguridad de contenido), pero esto no se confirma en ninguna parte de la documentación disponible. No se han publicado resultados de benchmarks estándar.
 
 ## Especificaciones técnicas
 
@@ -32,7 +32,7 @@ La model card es una plantilla autogenerada por el Trainer de HuggingFace y est�
 
 La arquitectura es un encoder transformer de la familia RoBERTa, concretamente la variante MiniLM2 con 6 capas y tamaño oculto de 768, según se deduce del identificador del modelo base y del recuento de parámetros publicado en safetensors. Al ser un cross-encoder, la premisa y la hipótesis se concatenan en una única secuencia de entrada y se procesan conjuntamente por el encoder; la representación resultante (habitualmente el token [CLS] o <s>) alimenta una cabeza de clasificación que produce la etiqueta de relación entre ambos textos. Este diseño es más preciso que un bi-encoder para tareas de NLI, a costa de no permitir precomputar embeddings.
 
-El ajuste fino se realizó con el Trainer de HuggingFace sobre un conjunto de datos no especificado ("unknown dataset"). Los hiperparámetros documentados son: learning rate 2e-05, batch de entrenamiento 8, batch de evaluación 8, acumulación de gradiente 2 (batch total efectivo 16), optimizador adamw_torch_fused con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con 50 pasos de warmup, semilla 42 y 10 épocas. El registro de entrenamiento solo muestra cuatro épocas (hasta el paso 4812), con la pérdida de validación repuntando en la cuarta (0,4711) mientras el accuracy seguía subiendo (0,8634), lo que apunta a un posible sobreajuste a partir de ese punto; el resultado final declarado en la evaluación es loss 0,3613 y accuracy 0,8438. Las versiones de framework son Transformers 5.2.0, PyTorch 2.10.0+cu128, Datasets 4.5.0 y Tokenizers 0.22.2.
+El ajuste fino se realizó con el Trainer de Hugging Face sobre un conjunto de datos no especificado ("unknown dataset"). Los hiperparámetros documentados son: learning rate 2e-05, batch de entrenamiento 8, batch de evaluación 8, acumulación de gradiente 2 (batch total efectivo 16), optimizador adamw_torch_fused con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con 50 pasos de warmup, semilla 42 y 10 épocas. El registro de entrenamiento solo muestra cuatro épocas (hasta el paso 4812), con la pérdida de validación repuntando en la cuarta (0,4711) mientras el accuracy seguía subiendo (0,8634), lo que apunta a un posible sobreajuste a partir de ese punto; el resultado final declarado en la evaluación es loss 0,3613 y accuracy 0,8438. Las versiones de framework son Transformers 5.2.0, PyTorch 2.10.0+cu128, Datasets 4.5.0 y Tokenizers 0.22.2.
 
 ## Capacidades
 
@@ -40,7 +40,7 @@ El ajuste fino se realizó con el Trainer de HuggingFace sobre un conjunto de da
 - Puntuación de compatibilidad semántica entre frases, útil como reordenador (reranker) en pipelines de recuperación.
 - Detección de contradicciones entre un texto de referencia y una afirmación generada.
 - Clasificación de texto con `pipeline("text-classification")` de transformers sin código adicional.
-- Compatibilidad declarada con Text Embeddings Inference (TEI) y con endpoints gestionados de HuggingFace mediante la etiqueta `endpoints_compatible`.
+- Compatibilidad declarada con Text Embeddings Inference (TEI) y con endpoints gestionados de Hugging Face mediante la etiqueta `endpoints_compatible`.
 - No es un modelo generativo: no produce texto, código ni matemáticas.
 - No soporta tool calling, function calling ni flujos de agente multi-paso.
 - No tiene capacidades de visión, audio ni modo de razonamiento explícito.
@@ -105,7 +105,7 @@ No hay resultados de MMLU, HumanEval, GSM8K, GLUE, SuperGLUE ni de ningún otro 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leomaurodesenv/nli-MiniLM2-L6-H768-nvidia-aegis-v2
+- Modelo en Hugging Face: https://huggingface.co/leomaurodesenv/nli-MiniLM2-L6-H768-nvidia-aegis-v2
 - Modelo base: https://huggingface.co/cross-encoder/nli-MiniLM2-L6-H768
 - Organización del modelo base: https://huggingface.co/cross-encoder
 - Paper, blog, repositorio o demo adicionales: no disponibles (la búsqueda web no devolvió resultados relevantes sobre este modelo).

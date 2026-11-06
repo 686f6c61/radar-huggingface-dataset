@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yangzhixing/oat-rfsq-pair-so101-policy-tok320k-step18000` es una policy de robotica (no un modelo de lenguaje) publicada por el usuario yangzhixing en HuggingFace bajo la libreria LeRobot. Se trata de un checkpoint de control entrenado para el brazo robotico SO-101, concretamente para la tarea de manipulation definida en el dataset `maxlium/so101-box-to-plate`. El nombre indica que emplea una implementacion propia denominada `oat_rfsq_pair`, junto con un tokenizador de acciones entrenado hasta el paso 320.000.
+El modelo `yangzhixing/oat-rfsq-pair-so101-policy-tok320k-step18000` es una policy de robotica (no un modelo de lenguaje) publicada por el usuario yangzhixing en Hugging Face bajo la libreria LeRobot. Se trata de un checkpoint de control entrenado para el brazo robotico SO-101, concretamente para la tarea de manipulation definida en el dataset `maxlium/so101-box-to-plate`. El nombre indica que emplea una implementacion propia denominada `oat_rfsq_pair`, junto con un tokenizador de acciones entrenado hasta el paso 320.000.
 
 El checkpoint corresponde al paso 18.000 de entrenamiento y fue seleccionado por tener la menor entropia cruzada de token de accion registrada durante la evaluacion (2,5446). El propio autor advierte de que esta cifra es una perdida offline y no una tasa de exito real sobre el robot, un matiz importante para cualquier evaluacion. El repositorio ocupa 0,4 GB e incluye tanto los pesos de la policy como el estado completo del entrenamiento.
 
@@ -30,7 +30,7 @@ Su relevancia es limitada y muy especializada: se enmarca en la investigacion so
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna de la red. El autor la identifica como una policy `oat_rfsq_pair`, nombre que sugiere una implementacion personalizada que combina un esquema de cuantizacion residual (RFSQ, residual finite scalar quantization) con un tokenizador de acciones, pero no se aporta documentacion tecnica que confirme la topologia, el numero de capas, la dimension de los embeddings ni el mecanismo de atencion. Tampoco se especifica el numero de tokens de entrenamiento ni la composicion exacta del dataset, mas alla de su identificador en HuggingFace.
+La informacion disponible no describe la arquitectura interna de la red. El autor la identifica como una policy `oat_rfsq_pair`, nombre que sugiere una implementacion personalizada que combina un esquema de cuantizacion residual (RFSQ, residual finite scalar quantization) con un tokenizador de acciones, pero no se aporta documentacion tecnica que confirme la topologia, el numero de capas, la dimension de los embeddings ni el mecanismo de atencion. Tampoco se especifica el numero de tokens de entrenamiento ni la composicion exacta del dataset, mas alla de su identificador en Hugging Face.
 
 En cuanto al entrenamiento, se sabe que la policy se entreno con un tokenizador de acciones congelado correspondiente al paso 320.000 y que el checkpoint publicado fue escogido entre los guardados por tener la menor entropia cruzada de token de accion en evaluacion (2,5446 en el paso 18.000). El repositorio conserva la estructura original: `pretrained_model/` contiene los pesos de la policy (incluido el tokenizador de acciones congelado), la configuracion de la policy, las estadisticas de preprocesado y postprocesado y la configuracion de entrenamiento; `training_state/` contiene el optimizador, el scheduler, el estado del generador de numeros aleatorios y el paso de entrenamiento. No se documenta el uso de RLHF, DPO ni tecnicas de alineamiento, algo esperable en una policy de robotica.
 
@@ -80,9 +80,9 @@ No hay datos suficientes para una comparativa cuantitativa. Se incluye una compa
 
 | Modelo | Tipo | Tarea | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yangzhixing/oat-rfsq-pair-so101-policy-tok320k-step18000 | Policy de robotica (implementacion custom) | SO-101, box to plate | no disponible | no disponible | HuggingFace, 0 descargas |
-| lerobot/smolvla_base (SmolVLA) | Modelo vision-lenguaje-accion de LeRobot | Manipulacion con SO-101 (svla_so101_pickplace) | no disponible | no disponible | HuggingFace, mantenido por LeRobot |
-| yangzhixing/oat-rfsq-pair-so101-tokenizer-step320000 | Tokenizador de acciones (compañero) | Tokenizacion de acciones para la misma policy | no disponible | no disponible | HuggingFace |
+| yangzhixing/oat-rfsq-pair-so101-policy-tok320k-step18000 | Policy de robotica (implementacion custom) | SO-101, box to plate | no disponible | no disponible | Hugging Face, 0 descargas |
+| lerobot/smolvla_base (SmolVLA) | Modelo vision-lenguaje-accion de LeRobot | Manipulacion con SO-101 (svla_so101_pickplace) | no disponible | no disponible | Hugging Face, mantenido por LeRobot |
+| yangzhixing/oat-rfsq-pair-so101-tokenizer-step320000 | Tokenizador de acciones (compañero) | Tokenizacion de acciones para la misma policy | no disponible | no disponible | Hugging Face |
 
 No se dispone de cifras de rendimiento comparables entre estas opciones en la informacion proporcionada.
 
@@ -101,7 +101,7 @@ No se dispone de cifras de rendimiento comparables entre estas opciones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yangzhixing/oat-rfsq-pair-so101-policy-tok320k-step18000
+- Modelo en Hugging Face: https://huggingface.co/yangzhixing/oat-rfsq-pair-so101-policy-tok320k-step18000
 - Tokenizador compañero: https://huggingface.co/yangzhixing/oat-rfsq-pair-so101-tokenizer-step320000
 - Dataset de entrenamiento: `maxlium/so101-box-to-plate` (referenciado en la model card)
 - Sitio sobre SmolVLA y SO-101 citado en los resultados de busqueda: https://smolvla.net/index_en

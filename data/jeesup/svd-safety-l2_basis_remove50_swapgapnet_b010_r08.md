@@ -29,7 +29,7 @@ El entrenamiento de recuperación se realiza con LoRA de rango 8, aplicado únic
 - Razonamiento, matemáticas y código: no evaluados en la información disponible; no se puede afirmar su rendimiento.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponibles según la ficha de HuggingFace.
+- Capacidades multilingües: no disponibles según la ficha de Hugging Face.
 - Visión: no disponible.
 - Seguridad y alineación: el modelo está diseñado para estudiar el comportamiento de seguridad; se reportan métricas de tasa de éxito de ataques (ASR) en AdvBench y StrongREJECT, así como over-refusal medido con WildGuard.
 - Interpretabilidad: al ser un artefacto de compresión, permite analizar cómo la selección de componentes afecta a la alineación.
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks clásicos como MMLU, HumanEval o GS
 - No se proporcionan requisitos de hardware específicos en la información disponible.
 - El checkpoint en safetensors ocupa 13.5 GB, lo que corresponde a pesos en fp16. La VRAM mínima para cargar los pesos es de aproximadamente 13.5 GB, más el overhead de activaciones y KV cache, que puede superar los 16 GB en inferencia con contexto largo.
 - No se dispone de información sobre cuantizaciones, por lo que no se puede estimar el uso en 4-bit u 8-bit.
-- El modelo es compatible con `transformers` y `text-generation-inference` según los tags de HuggingFace. También podría convertirse a GGUF para su uso con `llama.cpp` o `Ollama`, pero no está documentado.
+- El modelo es compatible con `transformers` y `text-generation-inference` según los tags de Hugging Face. También podría convertirse a GGUF para su uso con `llama.cpp` o `Ollama`, pero no está documentado.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -78,5 +78,5 @@ No se dispone de información comparativa con otros modelos en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: [Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010_r08](https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010_r08)
+- Modelo en Hugging Face: [Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010_r08](https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010_r08)
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la información proporcionada.

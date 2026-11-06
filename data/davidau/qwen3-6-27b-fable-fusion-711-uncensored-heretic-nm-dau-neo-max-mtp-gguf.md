@@ -4,7 +4,7 @@
 
 El modelo `DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF` es una variante fine-tuned del modelo base Qwen3.6-27B, desarrollada por el usuario DavidAU. Se trata de un modelo de 27 mil millones de parámetros, distribuido en formato GGUF con cuantizaciones tanto estándar como MTP (Multi-Token Prediction). El nombre refleja varias características: "uncensored" y "heretic" indican que se ha aplicado una técnica de abliteration para eliminar el rechazo del modelo, y "Fable-Fusion" sugiere una fusión de múltiples etapas de entrenamiento. El autor lo describe como un modelo multi-stage tuned y multi-state merge, entrenado sobre datasets propios denominados "STRICT" (Polar-STRICT y F451-STRICT).
 
-Según los datos disponibles, este modelo alcanza una puntuación ARC-C de 0.711 en cuantización de 8 bits y 0.701 en 4 bits, lo que lo sitúa como el primer modelo open source de su clase en superar el umbral de 700 en esta métrica, un hito que anteriormente solo lograban modelos propietarios de OpenAI, Claude y Gemini. El pipeline declarado es image-text-to-text, aunque no se ha confirmado explícitamente si el modelo final soporta entrada de imágenes. Con más de 2,7 millones de descargas y cerca de 2000 likes, es un modelo popular en la comunidad, especialmente para tareas de escritura creativa, razonamiento y roleplaying. Su licencia aparece como Apache 2.0 en las etiquetas, aunque el campo de licencia de HuggingFace indica "no disponible".
+Según los datos disponibles, este modelo alcanza una puntuación ARC-C de 0.711 en cuantización de 8 bits y 0.701 en 4 bits, lo que lo sitúa como el primer modelo open source de su clase en superar el umbral de 700 en esta métrica, un hito que anteriormente solo lograban modelos propietarios de OpenAI, Claude y Gemini. El pipeline declarado es image-text-to-text, aunque no se ha confirmado explícitamente si el modelo final soporta entrada de imágenes. Con más de 2,7 millones de descargas y cerca de 2000 likes, es un modelo popular en la comunidad, especialmente para tareas de escritura creativa, razonamiento y roleplaying. Su licencia aparece como Apache 2.0 en las etiquetas, aunque el campo de licencia de Hugging Face indica "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -75,13 +75,13 @@ La comparativa es limitada porque no se dispone de datos de ARC-C para los model
 - Contenido sin filtrar: al ser "uncensored" y abliterated, el modelo puede generar contenido ofensivo, ilegal o peligroso. No es apto para despliegues publicos sin moderacion adicional.
 - Riesgo de alucinacion: como cualquier modelo de lenguaje, puede inventar hechos o datos, especialmente en tareas de razonamiento complejo.
 - Sesgos heredados: el fine-tuning sobre datasets especificos puede introducir o amplificar sesgos presentes en los datos de entrenamiento.
-- Licencia ambigua: aunque las etiquetas indican apache-2.0, el campo oficial de licencia en HuggingFace dice "no disponible". Se recomienda verificar antes de un uso comercial.
+- Licencia ambigua: aunque las etiquetas indican apache-2.0, el campo oficial de licencia en Hugging Face dice "no disponible". Se recomienda verificar antes de un uso comercial.
 - Soporte multimodal no confirmado: el pipeline image-text-to-text sugiere capacidades de vision, pero no se ha verificado si el modelo final las conserva tras el fine-tuning.
 - Contexto largo con coste de memoria: aunque se ha probado >200k, el uso de contextos muy largos requiere mucha VRAM y puede degradar el rendimiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
+- Hugging Face: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Discusion sobre contexto largo: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF/discussions/9
 - Analisis en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/qwen3.6-27b-fable-fusion-711-uncensored-heretic-nm-dau-neo-max-mtp-gguf-davidau
 - Analisis para DGX Spark: https://howtospark.com/models/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF

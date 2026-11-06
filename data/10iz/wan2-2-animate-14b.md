@@ -75,17 +75,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Espacio en disco: 72,4 GB de repositorio, ya que incluye varios formatos (safetensors y ONNX).
 - GPU de consumo: una RTX 4090 de 24 GB no es suficiente para inferencia en FP16 sin tecnicas de offload. Con cuantizacion FP8 y offload por capas es viable, con penalizacion de latencia. La model card solo garantiza ejecucion en GPU de consumo para la variante TI2V de 5 B, no para la variante de 14 B.
 - GPU recomendadas: A100 80 GB, H100 80 GB o L40S 48 GB para FP16 con margen; configuraciones multi-GPU para lotes grandes o resoluciones altas.
-- Opciones de despliegue: Diffusers (formato nativo del repositorio), ComfyUI (integracion nativa de Wan2.2 y wrapper comunitario WanVideoWrapper de Kijai), DiffSynth-Studio (offload capa a capa, FP8 y paralelismo de secuencia), ModelScope, espacios de HuggingFace y el servicio wan.video.
+- Opciones de despliegue: Diffusers (formato nativo del repositorio), ComfyUI (integracion nativa de Wan2.2 y wrapper comunitario WanVideoWrapper de Kijai), DiffSynth-Studio (offload capa a capa, FP8 y paralelismo de secuencia), ModelScope, espacios de Hugging Face y el servicio wan.video.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tiempo por clip ni de frames por segundo para este repositorio.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tarea | Parametros | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| 10iz/Wan2.2-Animate-14B | Video-to-video: animacion y reemplazo de personaje | 17,27 B (suma safetensors del repo) | Apache-2.0 | HuggingFace, formato Diffusers y ONNX; 0 descargas | Redistribucion de terceros del modelo base; sin benchmarks publicados |
-| Wan-AI/Wan2.2-I2V-A14B | Imagen a video | No disponible en la informacion proporcionada | Apache-2.0 (familia Wan2.2) | HuggingFace, version Diffusers disponible | Modelo base declarado de esta ficha |
-| Wan-AI/Wan2.2-TI2V-5B | Texto e imagen a video | 5 B (segun la model card) | Apache-2.0 (familia Wan2.2) | HuggingFace, version Diffusers disponible | 720p a 24 fps, ejecutable en GPUs de consumo tipo RTX 4090 |
-| Wan-AI/Wan2.2-S2V-14B | Audio a video (speech-to-video) | 14 B (segun la nomenclatura) | Apache-2.0 (familia Wan2.2) | HuggingFace y ModelScope | Generacion cinematografica guiada por audio; soporte de sintesis de voz via CosyVoice |
+| 10iz/Wan2.2-Animate-14B | Video-to-video: animacion y reemplazo de personaje | 17,27 B (suma safetensors del repo) | Apache-2.0 | Hugging Face, formato Diffusers y ONNX; 0 descargas | Redistribucion de terceros del modelo base; sin benchmarks publicados |
+| Wan-AI/Wan2.2-I2V-A14B | Imagen a video | No disponible en la informacion proporcionada | Apache-2.0 (familia Wan2.2) | Hugging Face, version Diffusers disponible | Modelo base declarado de esta ficha |
+| Wan-AI/Wan2.2-TI2V-5B | Texto e imagen a video | 5 B (segun la model card) | Apache-2.0 (familia Wan2.2) | Hugging Face, version Diffusers disponible | 720p a 24 fps, ejecutable en GPUs de consumo tipo RTX 4090 |
+| Wan-AI/Wan2.2-S2V-14B | Audio a video (speech-to-video) | 14 B (segun la nomenclatura) | Apache-2.0 (familia Wan2.2) | Hugging Face y ModelScope | Generacion cinematografica guiada por audio; soporte de sintesis de voz via CosyVoice |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -104,15 +104,15 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/10iz/Wan2.2-Animate-14B
-- Modelo base en HuggingFace: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
-- Organizacion Wan-AI en HuggingFace: https://huggingface.co/Wan-AI/
+- Repositorio en Hugging Face: https://huggingface.co/10iz/Wan2.2-Animate-14B
+- Modelo base en Hugging Face: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
+- Organizacion Wan-AI en Hugging Face: https://huggingface.co/Wan-AI/
 - Paper de Wan: https://arxiv.org/abs/2503.20314
 - Repositorio de codigo de Wan2.2: https://github.com/Wan-Video/Wan2.2
 - Repositorio de codigo de Wan2.1: https://github.com/Wan-Video/Wan2.1
 - Pagina del proyecto Wan: https://wan.video
 - Pagina de Wan2.2-Animate: https://humanaigc.github.io/wan-animate
-- Espacio de demostracion en HuggingFace: https://huggingface.co/spaces/Wan-AI/Wan2.2-Animate
+- Espacio de demostracion en Hugging Face: https://huggingface.co/spaces/Wan-AI/Wan2.2-Animate
 - ModelScope Studio: https://www.modelscope.cn/studios/Wan-AI/Wan2.2-Animate
 - ModelScope (organizacion): https://modelscope.cn/organization/Wan-AI
 - Blog de Wan: https://wan.video/welcome
@@ -125,8 +125,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 - Version Diffusers del modelo TI2V-5B: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B-Diffusers
 - Wan2.2-S2V-14B (speech-to-video): https://humanaigc.github.io/wan-s2v-webpage
 - Informe tecnico de Wan2.2-S2V: https://humanaigc.github.io/wan-s2v-webpage/content/wan-s2v.pdf
-- Espacio de Wan2.2-S2V en HuggingFace: https://huggingface.co/spaces/Wan-AI/Wan2.2-S2V
-- Espacio de Wan2.2-TI2V-5B en HuggingFace: https://huggingface.co/spaces/Wan-AI/Wan-2.2-5B
+- Espacio de Wan2.2-S2V en Hugging Face: https://huggingface.co/spaces/Wan-AI/Wan2.2-S2V
+- Espacio de Wan2.2-TI2V-5B en Hugging Face: https://huggingface.co/spaces/Wan-AI/Wan-2.2-5B
 - CosyVoice (sintesis de voz): https://github.com/FunAudioLLM/CosyVoice
 - Discord de la comunidad Wan: https://discord.gg/AKNgpMK4Yj
 - Guia de usuario en ingles: https://alidocs.dingtalk.com/i/nodes/EpGBa2Lm8aZxe5myC99MelA2WgN7R35y

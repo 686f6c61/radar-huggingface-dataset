@@ -29,7 +29,7 @@ La licencia es Apache-2.0, heredada de Laya. La model card incluye un aviso expl
 
 La arquitectura combina un encoder ModernBERT-large con una cabeza de decisión de dos capas y un scorer de marcadores de opción. El modelo es no autorregresivo: en lugar de generar texto, coloca un marcador `[MASK]` por cada nivel ESI candidato, puntúa cada uno de ellos y aplica un softmax sobre los cinco niveles en una única pasada forward. Esto produce una distribución de probabilidad calibrada sobre ESI 1-5 y explica su latencia de ~23 ms p50, muy inferior a la de los LLM generativos evaluados (173,5 ms para `gemma4:e4b`, 943,9 ms para el modelo Qwen de 27B en cuantización IQ4, 2.538,9 ms para MiniCPM-2B en bf16).
 
-El entrenamiento utiliza RLCD, una combinación de GRPO con una regla de puntuación estrictamente propia (strictly proper scoring rule) y entropía cruzada suave, más pesos de clase por frecuencia inversa para compensar el desbalance de clases. Los datos proceden del dataset de triaje de urgencias del Yale School of Medicine (Hong WS, Haimovich AD, Taylor RA, PLOS ONE 13(7): e0201016, 2018): 560.486 visitas de urgencias desidentificadas con 972 variables. El estado de entrada es un texto construido únicamente con campos disponibles en el momento del triaje: motivo de consulta (a partir de 200 one-hots de motivos), constantes vitales de triaje (frecuencia cardíaca, presión arterial, frecuencia respiratoria, SpO2, temperatura), edad, sexo, modo de llegada, visitas previas a urgencias, disposición previa y número de medicamentos ambulatorios. El espejo en HuggingFace utilizado es `kondratevakate/hospital-triage-and-patient-history-data` (rehost sin pérdida de RData a Parquet).
+El entrenamiento utiliza RLCD, una combinación de GRPO con una regla de puntuación estrictamente propia (strictly proper scoring rule) y entropía cruzada suave, más pesos de clase por frecuencia inversa para compensar el desbalance de clases. Los datos proceden del dataset de triaje de urgencias del Yale School of Medicine (Hong WS, Haimovich AD, Taylor RA, PLOS ONE 13(7): e0201016, 2018): 560.486 visitas de urgencias desidentificadas con 972 variables. El estado de entrada es un texto construido únicamente con campos disponibles en el momento del triaje: motivo de consulta (a partir de 200 one-hots de motivos), constantes vitales de triaje (frecuencia cardíaca, presión arterial, frecuencia respiratoria, SpO2, temperatura), edad, sexo, modo de llegada, visitas previas a urgencias, disposición previa y número de medicamentos ambulatorios. El espejo en Hugging Face utilizado es `kondratevakate/hospital-triage-and-patient-history-data` (rehost sin pérdida de RData a Parquet).
 
 ## Capacidades
 
@@ -111,7 +111,7 @@ La model card advierte que el modelo determinista es la implementación parcial 
 
 | Sistema | Parámetros | Contexto | Accuracy (300 filas) | Macro-F1 | Infratriaje ↓ | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Laya Medical Escalation | 421M | No disponible | 0,7033 | 0,6978 | 0,1600 | Apache-2.0 | HuggingFace, librería `laya` |
+| Laya Medical Escalation | 421M | No disponible | 0,7033 | 0,6978 | 0,1600 | Apache-2.0 | Hugging Face, librería `laya` |
 | gemma4:e4b | No disponible | No disponible | 0,4333 | 0,4279 | 0,3933 | No disponible | LLM local evaluado en la model card |
 | qwen3.8-27b:iq4-xs-64k-text-q4kv | ~27B (etiqueta) | No disponible | 0,3233 | 0,3347 | 0,2925 | No disponible | LLM local cuantizado en IQ4 |
 | minicpm-2b:bf16 | ~2B | No disponible | 0,2967 | 0,2880 | 0,4735 | No disponible | LLM local en bf16 |
@@ -135,8 +135,8 @@ La comparación directa solo es válida dentro de cada tabla, ya que la de LLM u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/impacte/laya-medical-escalation
+- Modelo en Hugging Face: https://huggingface.co/impacte/laya-medical-escalation
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Paper del dataset (Yale School of Medicine, triaje de urgencias): Hong WS, Haimovich AD, Taylor RA. "Predicting hospital admission at emergency department triage using machine learning". PLOS ONE 13(7): e0201016 (2018). DOI: https://doi.org/10.1371/journal.pone.0201016
-- Espejo del dataset en HuggingFace: https://huggingface.co/datasets/kondratevakate/hospital-triage-and-patient-history-data
+- Espejo del dataset en Hugging Face: https://huggingface.co/datasets/kondratevakate/hospital-triage-and-patient-history-data
 - Búsqueda web: los resultados obtenidos corresponden exclusivamente a entradas de diccionarios franceses sobre el término "impacte" (Larousse, Le Robert, Wiktionnaire, Projet Voltaire) y no guardan relación con el modelo. No se han encontrado en la búsqueda papers, blogs, repositorios ni demos adicionales relevantes.

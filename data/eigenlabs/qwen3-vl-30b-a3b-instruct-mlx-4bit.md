@@ -78,7 +78,7 @@ La diferencia principal entre esta conversión y la de `mlx-community` es que Ei
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EigenLabs/Qwen3-VL-30B-A3B-Instruct-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/EigenLabs/Qwen3-VL-30B-A3B-Instruct-MLX-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct
 - Conversión original de LM Studio: https://huggingface.co/lmstudio-community/Qwen3-VL-30B-A3B-Instruct-MLX-4bit
 - Repositorio GitHub de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL

@@ -79,6 +79,6 @@ Los datos de la comparativa para los modelos de OpenAI no estan confirmados en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ysdede/whisper-large-v3-onnx-4graph
+- Repositorio Hugging Face: https://huggingface.co/ysdede/whisper-large-v3-onnx-4graph
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-large-v3
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

@@ -72,7 +72,7 @@ No disponible. La información proporcionada no incluye modelos comparables de c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jiacheng1234/NanoKV
+- Hugging Face: https://huggingface.co/jiacheng1234/NanoKV
 - Página del proyecto: https://jiacheng-lu03.github.io/NanoKV/
 - Código: https://github.com/jiacheng-lu03/NanoKV
 - Guía de inferencia: https://github.com/jiacheng-lu03/NanoKV/blob/main/infer/README.md

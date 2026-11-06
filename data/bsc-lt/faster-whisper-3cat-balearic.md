@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto de audio | Idiomas / especializacion | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| BSC-LT/faster-whisper-3cat-balearic | 1.550 M | 30 s por ventana | Catalán, acento balear | Apache-2.0 | CTranslate2 float16 | HuggingFace, 58 descargas |
-| BSC-LT/whisper-3cat-balearic | 1.550 M | 30 s por ventana | Catalán, acento balear | Apache-2.0 (según el modelo del que deriva) | safetensors / transformers | HuggingFace; requiere PyTorch para inferencia |
-| openai/whisper-large-v3 | 1.550 M | 30 s por ventana | Multilingüe (99 idiomas), sin especialización dialectal | Apache-2.0 | safetensors, también conversiones comunitarias a CTranslate2 | HuggingFace, ampliamente desplegado |
-| openai/whisper-small | 244 M | 30 s por ventana | Multilingüe, menor precisión | Apache-2.0 | safetensors, GGUF y CTranslate2 | HuggingFace; opción para CPU muy limitada |
+| BSC-LT/faster-whisper-3cat-balearic | 1.550 M | 30 s por ventana | Catalán, acento balear | Apache-2.0 | CTranslate2 float16 | Hugging Face, 58 descargas |
+| BSC-LT/whisper-3cat-balearic | 1.550 M | 30 s por ventana | Catalán, acento balear | Apache-2.0 (según el modelo del que deriva) | safetensors / transformers | Hugging Face; requiere PyTorch para inferencia |
+| openai/whisper-large-v3 | 1.550 M | 30 s por ventana | Multilingüe (99 idiomas), sin especialización dialectal | Apache-2.0 | safetensors, también conversiones comunitarias a CTranslate2 | Hugging Face, ampliamente desplegado |
+| openai/whisper-small | 244 M | 30 s por ventana | Multilingüe, menor precisión | Apache-2.0 | safetensors, GGUF y CTranslate2 | Hugging Face; opción para CPU muy limitada |
 
 La comparación relevante es contra el modelo del que deriva: faster-whisper-3cat-balearic ofrece la misma calidad esperada que whisper-3cat-balearic con menor latencia y menor consumo de memoria, a cambio de perder la posibilidad de reentrenar o ajustar con PyTorch de forma directa. Frente a whisper-large-v3 original, la ventaja esperada está en el error sobre habla balear, pero no hay cifras publicadas que lo cuantifiquen.
 
@@ -86,7 +86,7 @@ La comparación relevante es contra el modelo del que deriva: faster-whisper-3ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BSC-LT/faster-whisper-3cat-balearic
+- Modelo en Hugging Face: https://huggingface.co/BSC-LT/faster-whisper-3cat-balearic
 - Modelo original del que deriva: https://huggingface.co/BSC-LT/whisper-3cat-balearic
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Repositorio faster-whisper: https://github.com/guillaumekln/faster-whisper/tree/master

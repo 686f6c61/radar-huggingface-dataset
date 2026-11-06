@@ -4,7 +4,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario SAD12E21 bajo el identificador `SAD12E21/MyAwesomeModel-TestRepo`. Según la model card, se trata de un modelo de tipo transformer (etiquetado con `bert` y `feature-extraction`) que ha recibido una actualización significativa para mejorar su razonamiento, inferencia y capacidades de función calling. El autor afirma que el modelo alcanza un 87,5 % de precisión en el test AIME 2025, frente al 70 % de la versión anterior, y que utiliza una media de 23 000 tokens por pregunta en ese conjunto.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario SAD12E21 bajo el identificador `SAD12E21/MyAwesomeModel-TestRepo`. Según la model card, se trata de un modelo de tipo transformer (etiquetado con `bert` y `feature-extraction`) que ha recibido una actualización significativa para mejorar su razonamiento, inferencia y capacidades de función calling. El autor afirma que el modelo alcanza un 87,5 % de precisión en el test AIME 2025, frente al 70 % de la versión anterior, y que utiliza una media de 23 000 tokens por pregunta en ese conjunto.
 
 Sin embargo, el repositorio está vacío: no contiene pesos, código, configuración ni documentación técnica adicional. El tamaño del repo es de 0.0 GB y no se ha publicado ningún artefacto descargable. Esto hace que el modelo no sea utilizable en la práctica y que todas las afirmaciones de rendimiento carezcan de verificación independiente. La propia model card parece un borrador o plantilla genérica, con referencias a imágenes (`figures/fig1.png`) que no existen en el repo.
 
@@ -98,5 +98,5 @@ No disponible. No se conocen los parámetros del modelo ni su arquitectura, por 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SAD12E21/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/SAD12E21/MyAwesomeModel-TestRepo
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

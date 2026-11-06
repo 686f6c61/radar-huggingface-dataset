@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| XDcobra/wav2vec2-large-xlsr-53-korean-ONNX | wav2vec2 XLSR, ONNX | Coreano | No aplica (ASR) | Apache 2.0 | HuggingFace (0 descargas) |
-| kresnik/wav2vec2-large-xlsr-korean | wav2vec2 XLSR | Coreano | No aplica (ASR) | Apache 2.0 | HuggingFace (modelo base) |
-| facebook/wav2vec2-large-xlsr-53 | wav2vec2 XLSR | 53 idiomas | No aplica (ASR) | Apache 2.0 | HuggingFace |
-| OpenAI Whisper (large) | Encoder-decoder transformer | Multilingüe (incl. coreano) | 30 s por segmento | MIT | HuggingFace / OpenAI |
+| XDcobra/wav2vec2-large-xlsr-53-korean-ONNX | wav2vec2 XLSR, ONNX | Coreano | No aplica (ASR) | Apache 2.0 | Hugging Face (0 descargas) |
+| kresnik/wav2vec2-large-xlsr-korean | wav2vec2 XLSR | Coreano | No aplica (ASR) | Apache 2.0 | Hugging Face (modelo base) |
+| facebook/wav2vec2-large-xlsr-53 | wav2vec2 XLSR | 53 idiomas | No aplica (ASR) | Apache 2.0 | Hugging Face |
+| OpenAI Whisper (large) | Encoder-decoder transformer | Multilingüe (incl. coreano) | 30 s por segmento | MIT | Hugging Face / OpenAI |
 
 La comparación con Whisper es orientativa: Whisper cubre más idiomas y tareas, mientras que este modelo está especializado en coreano y en alineamiento CTC a nivel de carácter, algo que Whisper no ofrece de forma nativa.
 
@@ -87,7 +87,7 @@ La comparación con Whisper es orientativa: Whisper cubre más idiomas y tareas,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XDcobra/wav2vec2-large-xlsr-53-korean-ONNX
+- Modelo en Hugging Face: https://huggingface.co/XDcobra/wav2vec2-large-xlsr-53-korean-ONNX
 - Modelo base: https://huggingface.co/kresnik/wav2vec2-large-xlsr-korean
 - Preentrenamiento origen de la familia XLSR: https://huggingface.co/facebook/wav2vec2-large-xlsr-53
 - No se han encontrado en la información proporcionada papers, blogs, repositorios ni demos adicionales asociados a esta publicación.

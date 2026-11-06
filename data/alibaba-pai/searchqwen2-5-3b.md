@@ -105,7 +105,7 @@ La comparativa directa con el base muestra una mejora de +9,43 puntos en overall
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alibaba-pai/SearchQwen2.5-3B
+- Modelo en Hugging Face: https://huggingface.co/alibaba-pai/SearchQwen2.5-3B
 - Dataset complementario: https://huggingface.co/datasets/alibaba-pai/SynSearch-Data
 - Modelo base (Qwen2.5-3B-Instruct): https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

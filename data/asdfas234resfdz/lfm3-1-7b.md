@@ -1,7 +1,7 @@
 # asdfas234resfdz/LFM3-1.7B
 
 ## Resumen
-LFM3-1.7B es un modelo de lenguaje de texto de 1.730 millones de parametros (1,73B) desarrollado por Liquid AI y publicado en HuggingFace bajo el identificador `asdfas234resfdz/LFM3-1.7B`. Se trata de un checkpoint post-entrenado (finetune del modelo base `LiquidAI/LFM3-1.7B-Base`) orientado a agentes locales, tool calling, salidas estructuradas y ajuste fino especifico de dominio. Su propuesta central es ofrecer capacidades agenticas en el borde (edge), es decir, en telefonos y portatiles, con un consumo de memoria de aproximadamente 1 GB a 4 bits.
+LFM3-1.7B es un modelo de lenguaje de texto de 1.730 millones de parametros (1,73B) desarrollado por Liquid AI y publicado en Hugging Face bajo el identificador `asdfas234resfdz/LFM3-1.7B`. Se trata de un checkpoint post-entrenado (finetune del modelo base `LiquidAI/LFM3-1.7B-Base`) orientado a agentes locales, tool calling, salidas estructuradas y ajuste fino especifico de dominio. Su propuesta central es ofrecer capacidades agenticas en el borde (edge), es decir, en telefonos y portatiles, con un consumo de memoria de aproximadamente 1 GB a 4 bits.
 
 La arquitectura es un transformer hibrido de tres componentes (tri-hybrid) con 24 capas: 13 convoluciones cortas con compuerta (gated short convolutions), 5 capas de atencion de ventana deslizante y 6 capas de atencion global. Esta combinacion busca reducir el coste computacional del mecanismo de atencion clasico manteniendo una ventana de contexto de 256.000 tokens (entrada mas salida), un tamano notable para un modelo de este numero de parametros.
 
@@ -74,10 +74,10 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 - No se confirma soporte en frameworks de inferencia optimizados (vLLM, llama.cpp, Ollama, TGI), lo que puede limitar el rendimiento en produccion.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/asdfas234resfdz/LFM3-1.7B
+- Modelo en Hugging Face: https://huggingface.co/asdfas234resfdz/LFM3-1.7B
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Blog de lanzamiento de LFM3: https://www.liquid.ai/blog/lfm3
 - Documentacion de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
 - Playground: https://playground.liquid.ai/
 - Consola/API: https://console.liquid.ai/dashboard
-- Coleccion LFM3 en HuggingFace: https://huggingface.co/collections/LiquidAI/lfm3
+- Coleccion LFM3 en Hugging Face: https://huggingface.co/collections/LiquidAI/lfm3

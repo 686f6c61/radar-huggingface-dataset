@@ -95,7 +95,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría (mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/audreyt/DeepSeek-V4.1-Flash-Abliterated-GGUF
+- Modelo en Hugging Face: https://huggingface.co/audreyt/DeepSeek-V4.1-Flash-Abliterated-GGUF
 - Checkpoint base abliterado: https://huggingface.co/s-zaizen/DeepSeek-V4.1-Flash-Abliterated
 - Modelo original de DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Herramienta de ablación Heretic: https://github.com/p-e-w/heretic

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`sagnikM/hill-tooluse-qwen25-7b-postlr1e-6-kl3e-4-seed44-step250-local20261008t203125z-prior` es un checkpoint de un modelo de lenguaje de 7.615.616.512 parametros (7,6 B) publicado en HuggingFace por el usuario `sagnikM`. El repositorio tiene un tamano de 15,2 GB, contiene pesos en formato safetensors y lleva la etiqueta `qwen2`, lo que apunta a que deriva de la familia Qwen2.5. El propio nombre del repositorio sugiere que se trata de un artefacto intermedio de un proceso de ajuste fino orientado a *tool use*, con hiperparametros codificados en el nombre (learning rate posterior `1e-6`, coeficiente KL `3e-4`, semilla 44, paso 250).
+`sagnikM/hill-tooluse-qwen25-7b-postlr1e-6-kl3e-4-seed44-step250-local20261008t203125z-prior` es un checkpoint de un modelo de lenguaje de 7.615.616.512 parametros (7,6 B) publicado en Hugging Face por el usuario `sagnikM`. El repositorio tiene un tamano de 15,2 GB, contiene pesos en formato safetensors y lleva la etiqueta `qwen2`, lo que apunta a que deriva de la familia Qwen2.5. El propio nombre del repositorio sugiere que se trata de un artefacto intermedio de un proceso de ajuste fino orientado a *tool use*, con hiperparametros codificados en el nombre (learning rate posterior `1e-6`, coeficiente KL `3e-4`, semilla 44, paso 250).
 
 El checkpoint no incluye model card: no se declaran licencia, idiomas, pipeline ni datos de entrenamiento. Tiene un registro de uso practicamente nulo (10 descargas y 0 *likes* en el momento de la consulta), por lo que debe tratarse como un experimento de investigacion y no como un modelo listo para produccion. No se ha encontrado documentacion externa ni resultados de evaluacion asociados.
 
-Dado que la unica informacion fiable es la ficha de HuggingFace (tags, parametros y tamano), esta ficha marca de forma explicita como "no disponible" todo aquello que no esta confirmado, y senala como inferencia cualquier dato derivado del nombre del repositorio o del tag `qwen2`.
+Dado que la unica informacion fiable es la ficha de Hugging Face (tags, parametros y tamano), esta ficha marca de forma explicita como "no disponible" todo aquello que no esta confirmado, y senala como inferencia cualquier dato derivado del nombre del repositorio o del tag `qwen2`.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ Respecto al entrenamiento, el nombre del repositorio codifica una convencion de 
 
 ## Capacidades
 
-La ficha de HuggingFace no documenta capacidades. A continuacion se enumeran las que cabria esperar por el nombre `tooluse` y por la familia base, marcadas como no verificadas:
+La ficha de Hugging Face no documenta capacidades. A continuacion se enumeran las que cabria esperar por el nombre `tooluse` y por la familia base, marcadas como no verificadas:
 
 - Llamada a herramientas (*tool calling* / *function calling*): es la capacidad que sugiere el nombre del repositorio, pero no existe ninguna prueba publicada.
 - Generacion de texto y razonamiento general: presumiblemente heredadas de Qwen2.5-7B, sin confirmar en este checkpoint.
@@ -71,10 +71,10 @@ No hay datos de rendimiento de este checkpoint, por lo que la comparacion se lim
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (`sagnikM/hill-tooluse-qwen25-7b-...`) | 7,6 B | no disponible | no disponible | HuggingFace, 10 descargas |
-| Qwen2.5-7B / Qwen2.5-7B-Instruct | 7,6 B | 32.768 tokens nativos (hasta 131.072 con YaRN) | Apache 2.0 (familia Qwen2.5) | HuggingFace, ampliamente desplegado |
-| Llama 3.1 8B Instruct | 8,0 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente desplegado |
-| Mistral 7B Instruct v0.3 | 7,2 B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado |
+| Este checkpoint (`sagnikM/hill-tooluse-qwen25-7b-...`) | 7,6 B | no disponible | no disponible | Hugging Face, 10 descargas |
+| Qwen2.5-7B / Qwen2.5-7B-Instruct | 7,6 B | 32.768 tokens nativos (hasta 131.072 con YaRN) | Apache 2.0 (familia Qwen2.5) | Hugging Face, ampliamente desplegado |
+| Llama 3.1 8B Instruct | 8,0 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente desplegado |
+| Mistral 7B Instruct v0.3 | 7,2 B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado |
 
 Advertencia: no se puede confirmar que la licencia de este checkpoint herede Apache 2.0 de Qwen2.5, ya que el autor no la ha declarado.
 
@@ -92,5 +92,5 @@ Advertencia: no se puede confirmar que la licencia de este checkpoint herede Apa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sagnikM/hill-tooluse-qwen25-7b-postlr1e-6-kl3e-4-seed44-step250-local20261008t203125z-prior
+- Hugging Face: https://huggingface.co/sagnikM/hill-tooluse-qwen25-7b-postlr1e-6-kl3e-4-seed44-step250-local20261008t203125z-prior
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo. La busqueda web no devolvio resultados pertinentes.

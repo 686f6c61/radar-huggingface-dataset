@@ -2,7 +2,7 @@
 
 ## Resumen
 
-yileneko/qwen2.5-neko es una adaptación del modelo Qwen2.5-0.5B-Instruct publicada por el usuario yileneko en HuggingFace. Se distribuye en formato GGUF, el formato de cuantización pensado para inferencia eficiente en CPU y GPU mediante llama.cpp y sus derivados, con un tamano de repositorio de 1,0 GB. El recuento real de parametros verificado sobre safetensors es de 494.032.768 (aproximadamente 0,49 mil millones), coherente con el modelo base del que deriva.
+yileneko/qwen2.5-neko es una adaptación del modelo Qwen2.5-0.5B-Instruct publicada por el usuario yileneko en Hugging Face. Se distribuye en formato GGUF, el formato de cuantización pensado para inferencia eficiente en CPU y GPU mediante llama.cpp y sus derivados, con un tamano de repositorio de 1,0 GB. El recuento real de parametros verificado sobre safetensors es de 494.032.768 (aproximadamente 0,49 mil millones), coherente con el modelo base del que deriva.
 
 El modelo base, Qwen/Qwen2.5-0.5B-Instruct, es un transformer decoder-only denso de la familia Qwen2.5 de Alibaba, ajustado con instrucciones y con licencia Apache 2.0. La model card del repositorio es mínima: solo declara licencia, idiomas (en, zh) y el modelo base, sin detallar el dataset de ajuste, el proceso de entrenamiento ni los cambios concretos aplicados en el fine-tune que da nombre al repositorio ("neko").
 
@@ -40,7 +40,7 @@ En cuanto a este repositorio concreto, no hay informacion disponible sobre el da
 - Capacidades multilingues limitadas a los idiomas declarados en el repositorio: ingles y chino.
 - El modelo base Qwen2.5-Instruct documenta soporte de function calling, pero no hay verificacion especifica para este fine-tune ni ejemplos de plantilla de herramientas en la model card.
 - No dispone de modo de razonamiento explicito (thinking mode), capacidad de vision, audio ni multimodalidad.
-- Al estar en formato GGUF, es compatible con flujos de inferencia local y con la API compatible de endpoints de HuggingFace (tag `endpoints_compatible`).
+- Al estar en formato GGUF, es compatible con flujos de inferencia local y con la API compatible de endpoints de Hugging Face (tag `endpoints_compatible`).
 
 ## Casos de uso
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: por debajo de 1 GB en cuantizaciones de 4 bits (Q4_K_M y similares), en torno a 1,0-1,3 GB en FP16 contando el overhead del runtime.
 - GPU recomendadas: cualquier GPU con 2 GB o mas de VRAM es suficiente; no requiere A100, H100 ni tarjetas de gama alta. Funciona igualmente en GTX 1050 Ti, RTX 3060, RTX 4090 o GPUs integradas modernas.
 - Compatibilidad con hardware consumer: si, en todas las GPU consumer actuales e incluso en CPU. Es viable en Raspberry Pi 5, moviles de gama alta y dispositivos con menos de 2 GB de RAM libre en cuantizacion Q4.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llamafile, text-generation-webui, vLLM (si se dispone de pesos safetensors o se convierten), TGI y servidores compatibles con la API de endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llamafile, text-generation-webui, vLLM (si se dispone de pesos safetensors o se convierten), TGI y servidores compatibles con la API de endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. Al tratarse de un modelo de 0,49 B, se espera una generacion sensiblemente mas rapida que modelos de 7 B en el mismo hardware, pero no hay mediciones publicadas para este repositorio.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ Los datos de rendimiento comparado no estan disponibles para el modelo evaluado,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yileneko/qwen2.5-neko
+- Repositorio Hugging Face: https://huggingface.co/yileneko/qwen2.5-neko
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio oficial de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5
 - Blog de anuncio de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

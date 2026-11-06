@@ -93,7 +93,7 @@ Los datos de los modelos comparables provienen de información pública de sus r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SC117/Spark-X2.6-4B-abliterated-FIT-GGUF
+- Repositorio Hugging Face: https://huggingface.co/SC117/Spark-X2.6-4B-abliterated-FIT-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Herramienta FIT-GGUF: https://github.com/Scorp1o117/FIT-GGUF
 - README en chino simplificado: https://huggingface.co/SC117/Spark-X2.6-4B-abliterated-FIT-GGUF/blob/main/README.zh-CN.md

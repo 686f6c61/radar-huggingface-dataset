@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fecasado/gfm-cubes-22dN7` es una política robótica de imitación (imitation learning) publicada en HuggingFace por el usuario fecasado, entrenada con el framework LeRobot de HuggingFace. El modelo se distribuye bajo el identificador `gaze_flow_matching` y está diseñado para controlar un brazo robótico en la tarea concreta de manipulación "Ncubes-to-Nbaskets" (mover cubos a cestas), a partir del dataset `fecasado/Ncubes-to-Nbaskets-320x240` con observaciones visuales a resolución 320x240.
+`fecasado/gfm-cubes-22dN7` es una política robótica de imitación (imitation learning) publicada en Hugging Face por el usuario fecasado, entrenada con el framework LeRobot de Hugging Face. El modelo se distribuye bajo el identificador `gaze_flow_matching` y está diseñado para controlar un brazo robótico en la tarea concreta de manipulación "Ncubes-to-Nbaskets" (mover cubos a cestas), a partir del dataset `fecasado/Ncubes-to-Nbaskets-320x240` con observaciones visuales a resolución 320x240.
 
 Técnicamente no es un modelo de lenguaje, sino una política visuomotora: recibe observaciones (imágenes de cámara y estado del robot) y emite acciones de control. El nombre del identificador sugiere el uso de *flow matching* como mecanismo generativo para el decodificador de acciones, junto con algún tipo de condicionamiento por mirada (gaze). El checkpoint contiene 75.240.650 parámetros en formato safetensors y ocupa aproximadamente 0,3 GB en el repositorio, lo que lo sitúa en la gama de políticas ligeras que pueden ejecutarse en GPU de consumo con latencias compatibles con control en tiempo real.
 
@@ -24,7 +24,7 @@ Su relevancia es acotada pero clara para el ecosistema LeRobot: es un ejemplo de
 | Pipeline declarado | robotics |
 | Dataset de entrenamiento | fecasado/Ncubes-to-Nbaskets-320x240 |
 | Descargas / likes | 17 descargas, 0 likes |
-| Fecha de creacion | 10 de octubre de 2026 (según metadatos de HuggingFace) |
+| Fecha de creacion | 10 de octubre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -71,10 +71,10 @@ No se dispone de datos de rendimiento del modelo en la informacion proporcionada
 
 | Modelo | Parametros | Tipo | Contexto / observacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fecasado/gfm-cubes-22dN7 | 75,2 M | Flow matching con condicionamiento por mirada (segun tags) | Imagenes 320x240 + estado del robot | Apache 2.0 | HuggingFace, 17 descargas |
+| fecasado/gfm-cubes-22dN7 | 75,2 M | Flow matching con condicionamiento por mirada (segun tags) | Imagenes 320x240 + estado del robot | Apache 2.0 | Hugging Face, 17 descargas |
 | ACT (Action Chunking Transformer) | Del orden de decenas de millones (dato no especificado) | Transformer con chunking de acciones | Depende del dataset | Apache 2.0 (implementacion LeRobot) | Disponible en LeRobot |
 | Diffusion Policy | No disponible | Generativa por difusion | Depende del dataset | Apache 2.0 (implementacion LeRobot) | Disponible en LeRobot |
-| SmolVLA | No disponible en la informacion proporcionada | Vision-lenguaje-accion | No disponible | No disponible | HuggingFace / LeRobot |
+| SmolVLA | No disponible en la informacion proporcionada | Vision-lenguaje-accion | No disponible | No disponible | Hugging Face / LeRobot |
 
 No se han publicado comparativas directas entre este checkpoint y las alternativas citadas, por lo que no es posible afirmar cual ofrece mejor tasa de exito o mejor generalizacion.
 
@@ -94,7 +94,7 @@ No se han publicado comparativas directas entre este checkpoint y las alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fecasado/gfm-cubes-22dN7
+- Modelo en Hugging Face: https://huggingface.co/fecasado/gfm-cubes-22dN7
 - Dataset de entrenamiento: https://huggingface.co/datasets/fecasado/Ncubes-to-Nbaskets-320x240
 - LeRobot (repositorio): https://github.com/huggingface/lerobot
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index

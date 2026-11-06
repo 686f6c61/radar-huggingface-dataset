@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RSLtm/gemma-4-12B-IT-QAT-oQ4e es una cuantizacion comunitaria de un modelo de la familia Gemma, publicada por el usuario RSLtm en HuggingFace. Segun los metadatos del repositorio, se trata de una conversion a 4 bits del modelo base denominado gemma-4-12B-IT-QAT, realizada con la herramienta oQ de oMLX (version v0.7.0.dev2) mediante cuantizacion de precision mixta. El identificador interno de arquitectura declarado por el autor es gemma4_unified y el formato de pesos es MLX safetensors, por lo que el artefacto esta pensado para ejecutarse en el ecosistema MLX de Apple.
+RSLtm/gemma-4-12B-IT-QAT-oQ4e es una cuantizacion comunitaria de un modelo de la familia Gemma, publicada por el usuario RSLtm en Hugging Face. Segun los metadatos del repositorio, se trata de una conversion a 4 bits del modelo base denominado gemma-4-12B-IT-QAT, realizada con la herramienta oQ de oMLX (version v0.7.0.dev2) mediante cuantizacion de precision mixta. El identificador interno de arquitectura declarado por el autor es gemma4_unified y el formato de pesos es MLX safetensors, por lo que el artefacto esta pensado para ejecutarse en el ecosistema MLX de Apple.
 
 El modelo cuenta con 11.959.730.224 parametros reales (aproximadamente 12.000 millones), verificados a partir de los pesos en safetensors, y el repositorio ocupa 7,1 GB. La cuantizacion declarada es de 4 bits con tamano de grupo 64. Todo apunta a una variante instruction-tuned (sufijo IT) entrenada con quantization-aware training (QAT) en origen, es decir, que el propio modelo base fue entrenado contemplando la cuantizacion posterior.
 
@@ -22,7 +22,7 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un artefacto 
 | Formato de pesos | MLX safetensors (cuantizado) |
 | Libreria de inferencia | mlx |
 | Tamano del repositorio | 7,1 GB |
-| ID en HuggingFace | RSLtm/gemma-4-12B-IT-QAT-oQ4e |
+| ID en Hugging Face | RSLtm/gemma-4-12B-IT-QAT-oQ4e |
 | Autor | RSLtm |
 | Fecha de creacion | 17 de septiembre de 2026 |
 | Ultima actualizacion | 17 de septiembre de 2026 |
@@ -88,7 +88,7 @@ La busqueda web no ha devuelto informacion sobre modelos comparables, por lo que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RSLtm/gemma-4-12B-IT-QAT-oQ4e
+- Modelo en Hugging Face: https://huggingface.co/RSLtm/gemma-4-12B-IT-QAT-oQ4e
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Paper, blog o repositorio del modelo base: no disponible en la informacion proporcionada
 - Demos o espacios asociados: no disponible en la informacion proporcionada

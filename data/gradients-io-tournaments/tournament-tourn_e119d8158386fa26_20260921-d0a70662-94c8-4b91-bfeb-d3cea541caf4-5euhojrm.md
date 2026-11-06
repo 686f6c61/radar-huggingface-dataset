@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA de ajuste supervisado (SFT) entrenado sobre Qwen/Qwen2.5-7B-Instruct. No es un modelo completo: se distribuye como pesos PEFT en formato safetensors (0,7 GB de repositorio, `library_name: peft`, PEFT 0.18.1) que deben cargarse junto al modelo base para poder ejecutar inferencia. El autor es `gradients-io-tournaments`, una cuenta que publica artefactos de torneos de entrenamiento, y el identificador del modelo incluye una marca temporal de 2026-09-21, lo que sugiere un experimento generado de forma automatizada dentro de una competicion.
 
-El interes practico es limitado pero concreto: sirve como ejemplo reproducible de un ciclo de fine-tuning con `transformers` + `trl` + `peft` sobre una base solida de 7.610 millones de parametros, y como posible punto de partida para tareas conversacionales. Sin embargo, la model card publicada es la plantilla por defecto de HuggingFace sin rellenar: no hay descripcion, ni datos de entrenamiento, ni hiperparametros, ni evaluacion, ni licencia declarada. Tampoco registra descargas ni likes en el momento de la consulta.
+El interes practico es limitado pero concreto: sirve como ejemplo reproducible de un ciclo de fine-tuning con `transformers` + `trl` + `peft` sobre una base solida de 7.610 millones de parametros, y como posible punto de partida para tareas conversacionales. Sin embargo, la model card publicada es la plantilla por defecto de Hugging Face sin rellenar: no hay descripcion, ni datos de entrenamiento, ni hiperparametros, ni evaluacion, ni licencia declarada. Tampoco registra descargas ni likes en el momento de la consulta.
 
 Un detalle tecnico relevante de los metadatos: ademas del tag `base_model:Qwen/Qwen2.5-7B-Instruct`, aparece `base_model:adapter:/cache/models/0311af13fabfa2c5`, una ruta local de cache. Esto indica que el adaptador pudo entrenarse sobre otro adaptador intermedio y no directamente sobre el modelo base, lo que complica su reproducibilidad si ese artefacto intermedio no esta publicado. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo (los resultados obtenidos eran articulos medicos en chino sobre congestion nasal, sin ninguna relevancia).
 
@@ -93,7 +93,7 @@ No hay benchmarks publicados de este adaptador que permitan comparar su rendimie
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_e119d8158386fa26_20260921-d0a70662-94c8-4b91-bfeb-d3cea541caf4-5EUHojrM
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_e119d8158386fa26_20260921-d0a70662-94c8-4b91-bfeb-d3cea541caf4-5EUHojrM
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Blog oficial de la familia Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Documentacion de PEFT: https://huggingface.co/docs/peft/index

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Fatoon500/hr en HuggingFace no contiene un modelo de inteligencia artificial real, sino que su model card aloja una página HTML de una aplicación web de gestión de recursos humanos (HRMS) en árabe. No se proporcionan pesos, arquitectura, ni ningún artefacto de modelo descargable. El repositorio tiene cero descargas y cero likes, lo que sugiere que es un repositorio vacío o un espacio de prueba.
+El repositorio Fatoon500/hr en Hugging Face no contiene un modelo de inteligencia artificial real, sino que su model card aloja una página HTML de una aplicación web de gestión de recursos humanos (HRMS) en árabe. No se proporcionan pesos, arquitectura, ni ningún artefacto de modelo descargable. El repositorio tiene cero descargas y cero likes, lo que sugiere que es un repositorio vacío o un espacio de prueba.
 
 La información disponible en la model card corresponde al código fuente de un sistema de gestión de recursos humanos saudí (نظام إدارة الموارد البشرية السعودي), con funcionalidades como gestión de empleados, aprobaciones, geofencing y notificaciones. No existe documentación técnica sobre arquitectura, entrenamiento, parámetros o capacidades de un modelo de lenguaje. La búsqueda web tampoco arroja resultados relevantes sobre un modelo con ese identificador.
 
@@ -59,5 +59,5 @@ No disponible. Al no existir un modelo real, no es posible comparar con alternat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Fatoon500/hr
+- Repositorio Hugging Face: https://huggingface.co/Fatoon500/hr
 - No se encontraron enlaces adicionales relevantes en la búsqueda web.

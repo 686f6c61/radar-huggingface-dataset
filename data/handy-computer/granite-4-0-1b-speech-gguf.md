@@ -103,9 +103,9 @@ No se especifica en la información disponible la convención exacta usada para 
 
 | Modelo | Parametros | Idiomas de entrada | Capacidades adicionales | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| granite-4.0-1b-speech (base de esta ficha) | ~2,31 mil millones | en, fr, de, es, pt, ja | ASR multilingüe, AST vía inglés, sesgo por palabras clave, decodificación especulativa | Apache-2.0 | HuggingFace (IBM), versión GGUF de handy-computer |
-| granite-speech-3.3-2b | ~2 mil millones (el doble que la versión 1b) | no disponible con detalle; la versión 4.0 añade el multilingüe | Sin sesgo por palabras clave según lo indicado; sin decodificación especulativa mencionada | no disponible | HuggingFace (IBM) |
-| granite-speech-3.3-8b | ~8 mil millones | no disponible con detalle; la versión 4.0 añade el multilingüe | Sin sesgo por palabras clave según lo indicado | no disponible | HuggingFace (IBM) |
+| granite-4.0-1b-speech (base de esta ficha) | ~2,31 mil millones | en, fr, de, es, pt, ja | ASR multilingüe, AST vía inglés, sesgo por palabras clave, decodificación especulativa | Apache-2.0 | Hugging Face (IBM), versión GGUF de handy-computer |
+| granite-speech-3.3-2b | ~2 mil millones (el doble que la versión 1b) | no disponible con detalle; la versión 4.0 añade el multilingüe | Sin sesgo por palabras clave según lo indicado; sin decodificación especulativa mencionada | no disponible | Hugging Face (IBM) |
+| granite-speech-3.3-8b | ~8 mil millones | no disponible con detalle; la versión 4.0 añade el multilingüe | Sin sesgo por palabras clave según lo indicado | no disponible | Hugging Face (IBM) |
 
 Las cifras de contexto, WER y rendimiento comparativo de las versiones 3.3 no se han publicado en la información disponible. Tampoco se dispone de datos verificables en esta ficha para comparar con alternativas de otros fabricantes, por lo que no se incluyen.
 
@@ -126,7 +126,7 @@ Las cifras de contexto, WER y rendimiento comparativo de las versiones 3.3 no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/handy-computer/granite-4.0-1b-speech-gguf
+- Modelo en Hugging Face: https://huggingface.co/handy-computer/granite-4.0-1b-speech-gguf
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-1b-speech
 - Decodificador LLM base: https://huggingface.co/ibm-granite/granite-4.0-1b-base
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

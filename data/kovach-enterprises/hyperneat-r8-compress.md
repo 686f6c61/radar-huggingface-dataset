@@ -6,7 +6,7 @@ HyperNEAT × JAX compressor vs R8 es un compresor sin pérdidas desarrollado por
 
 El modelo se presenta como una alternativa a la optimización de recursos de R8, consiguiendo una reducción adicional del tamaño del paquete. Según las mediciones del autor, el método HyperNEAT alcanza 568 bytes frente a los 650 bytes de R8 optimizado con zlib9, una diferencia de -82 bytes. La integridad de los datos se verifica mediante SHA-256, preservando el hash original. El genoma de la red consta de 153 parámetros en formato float16, almacenados en `cppn_theta.f16`.
 
-Aunque se trata de un proyecto experimental (0 descargas y 0 likes en HuggingFace), resulta relevante para desarrolladores e investigadores interesados en técnicas de compresión de recursos, neuroevolución aplicada y optimización de artefactos Android.
+Aunque se trata de un proyecto experimental (0 descargas y 0 likes en Hugging Face), resulta relevante para desarrolladores e investigadores interesados en técnicas de compresión de recursos, neuroevolución aplicada y optimización de artefactos Android.
 
 ## Especificaciones tecnicas
 
@@ -70,13 +70,13 @@ Los resultados publicados en la model card corresponden a una medición de compr
 
 | Metodo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HyperNEAT compressor | 153 float16 | no aplica | 568 bytes | MIT | HuggingFace |
+| HyperNEAT compressor | 153 float16 | no aplica | 568 bytes | MIT | Hugging Face |
 | R8 optimizado shrink + zlib9 | no aplica | no aplica | 650 bytes | Apache 2.0 (Android Open Source Project) | Open source |
 | Naive zlib9 | no aplica | no aplica | 50031 bytes | zlib | Open source |
 
 ## Limitaciones y advertencias
 
-- Modelo experimental: presenta 0 descargas y 0 likes en HuggingFace, lo que indica una adopción muy limitada y falta de validación externa.
+- Modelo experimental: presenta 0 descargas y 0 likes en Hugging Face, lo que indica una adopción muy limitada y falta de validación externa.
 - Ámbito de aplicación muy restringido: solo está diseñado para comprimir recursos drawable tipo Android; no es aplicable a otros tipos de datos ni a tareas de lenguaje.
 - Dependencia de JAX: requiere un entorno Python con JAX instalado, lo que puede complicar su integración en sistemas que no usan este framework.
 - Coste computacional desconocido: el proceso de evolución puede ser costoso, pero no se han publicado datos sobre tiempo de ejecución ni recursos necesarios.
@@ -86,6 +86,6 @@ Los resultados publicados en la model card corresponden a una medición de compr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kovach-Enterprises/hyperneat-r8-compress
+- Hugging Face: https://huggingface.co/Kovach-Enterprises/hyperneat-r8-compress
 - HyperNEAT (Wikipedia): https://en.wikipedia.org/wiki/HyperNEAT
 - Otros enlaces: no disponibles en la información proporcionada.

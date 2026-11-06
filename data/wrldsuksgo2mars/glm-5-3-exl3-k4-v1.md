@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-EXL3-K4-v1 es una cuantizacion EXL3 de 4 bits del modelo GLM-5.3, desarrollado por Z.ai, publicada por el usuario wrldsuksgo2mars en HuggingFace. Se trata de un checkpoint derivado que aplica la representacion K4 de ExLlamaV3 a los tensores de los expertos enrutados (`gate_proj`, `up_proj`, `down_proj`) en las capas 3 a 77 del modelo base, manteniendo el resto de tensores en su formato original. El resultado es un modelo de 210.220.001.280 parametros (210B) con una huella de memoria reducida respecto al original, aunque el repositorio ocupa 394.1 GB.
+GLM-5.3-EXL3-K4-v1 es una cuantizacion EXL3 de 4 bits del modelo GLM-5.3, desarrollado por Z.ai, publicada por el usuario wrldsuksgo2mars en Hugging Face. Se trata de un checkpoint derivado que aplica la representacion K4 de ExLlamaV3 a los tensores de los expertos enrutados (`gate_proj`, `up_proj`, `down_proj`) en las capas 3 a 77 del modelo base, manteniendo el resto de tensores en su formato original. El resultado es un modelo de 210.220.001.280 parametros (210B) con una huella de memoria reducida respecto al original, aunque el repositorio ocupa 394.1 GB.
 
 El modelo base GLM-5.3 es un modelo de lenguaje de arquitectura MoE (Mixture of Experts) con atencion DSA (Dense-Sparse Attention) y soporte nativo de MTP (Multi-Token Prediction). Segun la documentacion oficial, GLM-5.3 ofrece una ventana de contexto de 1M tokens y esta optimizado para tareas de codificacion y razonamiento de largo horizonte. Esta cuantizacion permite ejecutar el modelo en entornos con menos VRAM que el checkpoint original, aunque sigue requiriendo hardware de gama alta. Es relevante para desarrolladores que necesitan desplegar un modelo de 210B parametros con capacidades de tool use y agentes en infraestructura propia.
 
@@ -78,8 +78,8 @@ La comparativa se basa en datos publicos de los modelos base. Este checkpoint se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wrldsuksgo2mars/GLM-5.3-EXL3-K4-v1
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-5.3 (inferido del campo base_model)
+- Repositorio Hugging Face: https://huggingface.co/wrldsuksgo2mars/GLM-5.3-EXL3-K4-v1
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-5.3 (inferido del campo base_model)
 - Documentacion de GLM-5.3 en OpenLM: https://openlm.ai/glm-5.5/
 - Guia de ejecucion local en Unsloth: https://unsloth.ai/docs/models/glm-5.3
 - Repositorio relacionado (GLM-5.3-Flash-EXL3-K3-v1): https://huggingface.co/wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3-v1

@@ -92,7 +92,7 @@ No se proporcionan en la información disponible datos verificables de modelos c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step8000 | no disponible | no disponible | no disponible (sin benchmarks publicados) | no disponible | repositorio HuggingFace publico, 12,8 GB |
+| pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step8000 | no disponible | no disponible | no disponible (sin benchmarks publicados) | no disponible | repositorio Hugging Face publico, 12,8 GB |
 | π0.5 base | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Otras politicas VLA de manipulacion | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -118,5 +118,5 @@ No se proporcionan en la información disponible datos verificables de modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fm-dev/pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step8000
+- Modelo en Hugging Face: https://huggingface.co/fm-dev/pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step8000
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada: los resultados devueltos correspondían a directorios de emisoras de radio en francés y no guardan relación con el modelo.

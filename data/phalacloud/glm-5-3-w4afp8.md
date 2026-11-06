@@ -89,7 +89,7 @@ La comparativa con otros modelos de la misma categoría (por ejemplo, DeepSeek-V
 
 ## Enlaces
 
-- [HuggingFace: PhalaCloud/GLM-5.3-W4AFP8](https://huggingface.co/PhalaCloud/GLM-5.3-W4AFP8)
+- [Hugging Face: PhalaCloud/GLM-5.3-W4AFP8](https://huggingface.co/PhalaCloud/GLM-5.3-W4AFP8)
 - [ModelScope: PhalaCloud/GLM-5.3-W4AFP8](https://modelscope.cn/models/PhalaCloud/GLM-5.3-W4AFP8)
 - [OpenLM.ai: GLM-5.3](https://openlm.ai/glm-5.5/)
 - [ZCode: Official Harness for GLM-5.3](https://zcode.z.ai/en)

@@ -13,7 +13,7 @@ Su relevancia es acotada y muy específica: sirve como ejemplo verificable de un
 | Parametro | Valor |
 |---|---|
 | Autor | tfrere |
-| ID en HuggingFace | tfrere/microduck-move-steady-spot-march |
+| ID en Hugging Face | tfrere/microduck-move-steady-spot-march |
 | Arquitectura | no disponible (política de control motriz servida como grafo ONNX; no se documenta la topología de red) |
 | Parametros totales | no disponible |
 | Parametros activos | no aplicable (no es un modelo MoE) |
@@ -30,7 +30,7 @@ Su relevancia es acotada y muy específica: sirve como ejemplo verificable de un
 | Fecha de creacion | 2026-09-12 |
 | Fecha de actualizacion | 2026-09-12 |
 | Descargas / likes | 0 / 0 |
-| Tamano del repositorio | 0.0 GB (reportado por HuggingFace) |
+| Tamano del repositorio | 0.0 GB (reportado por Hugging Face) |
 | Entorno de entrenamiento | Microduck Academy (Space: tfrere/microduck) |
 | Altura del robot en la metrica de validacion | 0.1186 m (ratio 1.031 respecto a la altura de referencia) |
 
@@ -109,7 +109,7 @@ No disponible. La información proporcionada no incluye otros modelos comparable
 | Longitud de contexto | no aplicable | no disponible |
 | Rendimiento | juez 1.0, VLM agrees, 100 % | no disponible |
 | Licencia | Apache-2.0 | no disponible |
-| Disponibilidad | HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -125,7 +125,7 @@ No disponible. La información proporcionada no incluye otros modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-steady-spot-march
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-steady-spot-march
 - Perfil del autor: https://huggingface.co/tfrere
 - Microduck Academy (Space de entrenamiento): https://huggingface.co/spaces/tfrere/microduck
 - Documentación de entrenamiento del entorno: `docs/TRAINING.md` (sección 8, citada en la model card; no se proporciona URL directa)

@@ -87,7 +87,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| microduck-hd1910-walk-Yanke01 | Política RL ONNX para HD-1910 Microduck | No disponible | No aplica | vx 0,155/0,221 m/s; yaw 0,914 rad/s a 1 rad/s; 0 caídas en las cuatro pruebas | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| microduck-hd1910-walk-Yanke01 | Política RL ONNX para HD-1910 Microduck | No disponible | No aplica | vx 0,155/0,221 m/s; yaw 0,914 rad/s a 1 rad/s; 0 caídas en las cuatro pruebas | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | Otras políticas de la familia `microduck-family-walk` | Políticas RL para el mismo robot | No disponible | No aplica | No disponible en la información proporcionada | No disponible | Referenciadas por el tag de familia, sin datos concretos |
 | Políticas de locomoción de cuadrúpedos tipo Unitree Go1/Go2 (p. ej. legged_gym, Isaac Lab) | Políticas RL para robots comerciales | No disponible | No aplica | No disponible | Varía (MIT, Apache 2.0, otras) | Repositorios públicos de investigación |
 
@@ -109,6 +109,6 @@ No hay datos suficientes en la información proporcionada para una comparación 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/duckyduck369/microduck-hd1910-walk-Yanke01
+- Modelo en Hugging Face: https://huggingface.co/duckyduck369/microduck-hd1910-walk-Yanke01
 - Vídeo de replay: https://huggingface.co/duckyduck369/microduck-hd1910-walk-Yanke01/resolve/main/replay.mp4
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

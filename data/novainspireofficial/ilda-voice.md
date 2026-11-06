@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento ni de parámetros para establecer una comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/novainspireofficial/ilda-voice
+- Hugging Face: https://huggingface.co/novainspireofficial/ilda-voice
 - Pocket TTS de Kyutai (GitHub): https://github.com/kyutai-labs/pocket-tts
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 - Exportador ONNX de KevinAHM: no se proporciona URL directa en la informacion disponible.

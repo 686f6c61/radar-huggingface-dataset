@@ -128,7 +128,7 @@ No se dispone de información sobre otras métricas de evaluación de trayectori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cribl-ai/OTAP
+- Modelo en Hugging Face: https://huggingface.co/cribl-ai/OTAP
 - Preprint: `OTAP.pdf` incluido en el repositorio (arXiv 2607.17082)
 - Script de experimentos completos: `exp.py` en el repositorio
 - Pipeline independiente de la parte A: `main.py` en el repositorio

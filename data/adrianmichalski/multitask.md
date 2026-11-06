@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `adrianmichalski/multitask` es una implementacion experimental de una red **Efficientformer** orientada a tareas multiples, publicada por el usuario adrianmichalski en HuggingFace bajo licencia MIT. No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests* y que no se reclama ninguna puntuacion de benchmark. El repositorio ocupa 0.0 GB y los pesos contienen **33.088 parametros** en total, un orden de magnitud propio de una prueba de concepto, no de un modelo desplegable.
+El modelo `adrianmichalski/multitask` es una implementacion experimental de una red **Efficientformer** orientada a tareas multiples, publicada por el usuario adrianmichalski en Hugging Face bajo licencia MIT. No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests* y que no se reclama ninguna puntuacion de benchmark. El repositorio ocupa 0.0 GB y los pesos contienen **33.088 parametros** en total, un orden de magnitud propio de una prueba de concepto, no de un modelo desplegable.
 
 La arquitectura declarada combina un backbone Efficientformer en escala *small*, atencion *multi query*, fusion *tucker*, activacion *mish* y normalizacion *layernorm*. El repositorio incluye ademas `main.py` como artefacto principal, `config.json` con los ajustes de arquitectura y `training_args.json` con la receta de experimento por defecto (SGD con *linear warmup*). Estos valores son puntos de partida del script, no evidencia de un entrenamiento completado.
 
@@ -85,6 +85,6 @@ No disponible. No se dispone de datos verificados de parametros, contexto, rendi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adrianmichalski/multitask
+- Modelo en Hugging Face: https://huggingface.co/adrianmichalski/multitask
 - Archivos incluidos en el repositorio: `main.py` (artefacto principal), `README.md` (documentacion), `config.json` (configuracion de arquitectura), `training_args.json` (ajustes de experimento por defecto), `model.safetensors` (checkpoint de inicializacion)
 - Paper, blog, repositorio adicional o demo: no disponible

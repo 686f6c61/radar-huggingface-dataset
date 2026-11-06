@@ -85,7 +85,7 @@ La version NVFP4 reduce el requisito de hardware de 4x B300 a 1x B300 (o 2x B200
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nota-ai/GLM-5.3-Flash-Nota-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/nota-ai/GLM-5.3-Flash-Nota-NVFP4
 - Modelo base (BF16): https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Blog de Z.ai sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Documentacion de Z.ai para GLM-5.3-Flash: https://docs.z.ai/guides/vlm/glm-5.3-flash

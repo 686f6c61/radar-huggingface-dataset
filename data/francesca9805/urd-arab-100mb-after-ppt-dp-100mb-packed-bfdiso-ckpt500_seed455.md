@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/urd-arab-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino (SFT) del modelo base `francesca9805/urd-arab-100mb-ppt-Dp-100mb-packed-bfdiso_seed455`, desarrollado por el usuario de HuggingFace francesca9805. Se enmarca en una linea de experimentos de investigacion sobre tokenizadores y modelos pequenos, segun se deduce del enlace a Weights & Biases asociado a la organizacion "f-padovani-university-of-groningen". El repositorio tiene cero descargas y cero "likes" en el momento de la consulta, por lo que se trata de un artefacto de investigacion no consolidado ni ampliamente validado por la comunidad.
+El modelo `francesca9805/urd-arab-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino (SFT) del modelo base `francesca9805/urd-arab-100mb-ppt-Dp-100mb-packed-bfdiso_seed455`, desarrollado por el usuario de Hugging Face francesca9805. Se enmarca en una linea de experimentos de investigacion sobre tokenizadores y modelos pequenos, segun se deduce del enlace a Weights & Biases asociado a la organizacion "f-padovani-university-of-groningen". El repositorio tiene cero descargas y cero "likes" en el momento de la consulta, por lo que se trata de un artefacto de investigacion no consolidado ni ampliamente validado por la comunidad.
 
 Tecnicamente es un modelo de generacion de texto de arquitectura GPT-2 (segun la etiqueta `gpt2` del repositorio) con 124.770.816 parametros reales declarados en el archivo de safetensors, lo que lo situa en la escala de GPT-2 base (aproximadamente 124 millones de parametros). El tamano del repositorio es de 0,7 GB. La nomenclatura del identificador sugiere un entrenamiento sobre datos empaquetados ("packed") de unos 100 MB en el ambito urdu-arabe ("urd-arab"), si bien esta interpretacion no esta confirmada en la model card.
 
@@ -46,7 +46,7 @@ El identificador del modelo base (`urd-arab-100mb-ppt-Dp-100mb-packed-bfdiso_see
 - Filtrado o clasificacion ligera de texto en urdu/arabe mediante generacion condicionada: si la hipotesis linguistica del repositorio se confirma, podria emplearse para tareas de etiquetado generativo muy simples, con validacion previa obligatoria.
 - Aprendizaje de formatos de prompt conversacional: util como banco de pruebas para verificar como un modelo pequeno ajustado con SFT responde a plantillas de rol `user`.
 - Generacion de datos sinteticos de bajo coste para aumentacion de corpus en idiomas minoritarios: solo en entornos de investigacion y con revision humana, dado el riesgo de alucinacion elevado en modelos de 124 M.
-- Educacion y demostraciones docentes: sirve para ilustrar el ciclo completo de publicacion de un modelo en HuggingFace (pesos safetensors, model card autogenerada, integracion con W&B).
+- Educacion y demostraciones docentes: sirve para ilustrar el ciclo completo de publicacion de un modelo en Hugging Face (pesos safetensors, model card autogenerada, integracion con W&B).
 
 ## Benchmarks y rendimiento
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/urd-arab-100mb-after-ppt-...-ckpt500_seed455 | 124,77 M | no disponible | GPT-2 | no disponible | HuggingFace, 0 descargas |
+| francesca9805/urd-arab-100mb-after-ppt-...-ckpt500_seed455 | 124,77 M | no disponible | GPT-2 | no disponible | Hugging Face, 0 descargas |
 | openai-community/gpt2 | 124 M | 1024 tokens | GPT-2 | MIT (modelo original) | Ampliamente disponible y validado |
 | distilgpt2 | 82 M | 1024 tokens | GPT-2 destilado | MIT | Ampliamente disponible |
 | Modelos de investigacion de ~100 M en idiomas de bajos recursos | variable | variable | variable | variable | Repositorios academicos dispersos |
@@ -82,7 +82,7 @@ La comparacion cuantitativa de rendimiento no es posible: el modelo analizado no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/jfpqkufw

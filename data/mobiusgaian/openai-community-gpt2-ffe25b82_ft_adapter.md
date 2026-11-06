@@ -25,7 +25,7 @@ Por su naturaleza, este artefacto debe considerarse un experimento o un ajuste d
 
 El modelo base es GPT-2, un transformer decoder-only con 12 capas, 12 cabezas de atencion, dimension oculta de 768 y 124 millones de parametros, entrenado por OpenAI sobre WebText (aproximadamente 40 GB de texto en ingles) con un objetivo de modelado de lenguaje autorregresivo. El adaptador es un modulo LoRA, una tecnica de ajuste eficiente que congela los pesos del modelo base e introduce matrices de baja descomposicion en determinadas capas (tipicamente `c_attn` y `c_proj` en GPT-2), reduciendo drasticamente el numero de parametros entrenables.
 
-No se dispone de informacion sobre el dataset de ajuste, el rango LoRA, el valor de alpha, la tasa de aprendizaje, el numero de pasos ni si se aplicaron tecnicas de RLHF o DPO. La unica referencia tecnica en los tags del repositorio es el paper `arxiv:1910.09700`, que corresponde a la calculadora de impacto ambiental de Lacoste et al. y aparece en la plantilla estandar de model cards de HuggingFace, no a un paper del modelo. La version de PEFT utilizada es 0.19.1.
+No se dispone de informacion sobre el dataset de ajuste, el rango LoRA, el valor de alpha, la tasa de aprendizaje, el numero de pasos ni si se aplicaron tecnicas de RLHF o DPO. La unica referencia tecnica en los tags del repositorio es el paper `arxiv:1910.09700`, que corresponde a la calculadora de impacto ambiental de Lacoste et al. y aparece en la plantilla estandar de model cards de Hugging Face, no a un paper del modelo. La version de PEFT utilizada es 0.19.1.
 
 ## Capacidades
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MobiusGaian/openai-community-gpt2-ffe25b82_FT_adapter | 124M (base) + adaptador no cuantificado | 1024 | no disponible | HuggingFace, 0 descargas | Adaptador LoRA sin documentacion |
-| openai-community/gpt2 | 124M | 1024 | MIT modificada | HuggingFace, ampliamente usado | Modelo base sin ajustar |
-| openai-community/gpt2-medium | 355M | 1024 | MIT modificada | HuggingFace | Version mayor del mismo linaje |
-| TinyLlama-1.1B | 1.1B | 2048 | Apache 2.0 | HuggingFace | Alternativa moderna con mejor calidad y contexto mayor |
+| MobiusGaian/openai-community-gpt2-ffe25b82_FT_adapter | 124M (base) + adaptador no cuantificado | 1024 | no disponible | Hugging Face, 0 descargas | Adaptador LoRA sin documentacion |
+| openai-community/gpt2 | 124M | 1024 | MIT modificada | Hugging Face, ampliamente usado | Modelo base sin ajustar |
+| openai-community/gpt2-medium | 355M | 1024 | MIT modificada | Hugging Face | Version mayor del mismo linaje |
+| TinyLlama-1.1B | 1.1B | 2048 | Apache 2.0 | Hugging Face | Alternativa moderna con mejor calidad y contexto mayor |
 
 La comparativa se limita al linaje GPT-2 porque no se dispone de datos de rendimiento del adaptador. Frente a GPT-2 sin ajustar, la unica diferencia documentada es la presencia de un adaptador LoRA de proposito desconocido; frente a modelos mas recientes como TinyLlama, GPT-2 queda claramente por detras en calidad, contexto y soporte multilingue.
 
@@ -80,7 +80,7 @@ La comparativa se limita al linaje GPT-2 porque no se dispone de datos de rendim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MobiusGaian/openai-community-gpt2-ffe25b82_FT_adapter
+- Repositorio Hugging Face: https://huggingface.co/MobiusGaian/openai-community-gpt2-ffe25b82_FT_adapter
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - Libreria PEFT: https://github.com/huggingface/peft
 - Paper de LoRA (Hu et al., 2021): https://arxiv.org/abs/2106.09685

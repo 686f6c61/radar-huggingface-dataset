@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento para comparar con alternativas. Como refer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/beezu/Glistening-Gem-31B-v2.1-mlx-mxfp8
+- Modelo en Hugging Face: https://huggingface.co/beezu/Glistening-Gem-31B-v2.1-mlx-mxfp8
 - Modelo original: https://huggingface.co/sophosympatheia/Glistening-Gem-31B-v2.1
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Ingrediente 1: https://huggingface.co/TheDrummer/Artemis-31B-v1

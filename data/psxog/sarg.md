@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `psxog/SARG`, publicado en HuggingFace por el usuario psxog (Sivadeth P S), presenta una model card extremadamente escasa que únicamente declara la licencia Apache 2.0. No se proporciona informacion sobre arquitectura, parametros, datos de entrenamiento ni capacidades. Esta ficha se elabora a partir de la informacion disponible en la model card y de los resultados de busqueda web relacionados con el acronimo "SARG", que apuntan a dos proyectos academicos distintos con el mismo nombre.
+El modelo `psxog/SARG`, publicado en Hugging Face por el usuario psxog (Sivadeth P S), presenta una model card extremadamente escasa que únicamente declara la licencia Apache 2.0. No se proporciona informacion sobre arquitectura, parametros, datos de entrenamiento ni capacidades. Esta ficha se elabora a partir de la informacion disponible en la model card y de los resultados de busqueda web relacionados con el acronimo "SARG", que apuntan a dos proyectos academicos distintos con el mismo nombre.
 
 El primer proyecto, "Structure-Augmented Reasoning Generation" (arXiv:2506.08364), describe un metodo que integra cadenas de conocimiento estructurado (tripletas) y fragmentos de texto en el prompt de generacion para guiar el razonamiento del modelo. Se presenta como una capa modular compatible con pipelines RAG existentes, sin requerir retrievers personalizados ni fine-tuning especifico de dominio. El segundo proyecto, "Software Application Resiliency prediction using Graph Neural Networks" (ScienceDirect), aborda la prediccion de resiliencia en aplicaciones software mediante redes neuronales de grafos.
 
-Dada la ausencia de informacion tecnica en la model card, no es posible confirmar que el modelo alojado en HuggingFace corresponda a alguno de estos proyectos academicos. Esta ficha documenta la informacion disponible y senala explicitamente las carencias de datos.
+Dada la ausencia de informacion tecnica en la model card, no es posible confirmar que el modelo alojado en Hugging Face corresponda a alguno de estos proyectos academicos. Esta ficha documenta la informacion disponible y senala explicitamente las carencias de datos.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Dada la ausencia de informacion tecnica en la model card, no es posible confirma
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo alojado en HuggingFace. La model card no incluye descripcion tecnica, datos de entrenamiento, ni detalles sobre el proceso de desarrollo.
+No se dispone de informacion sobre la arquitectura del modelo alojado en Hugging Face. La model card no incluye descripcion tecnica, datos de entrenamiento, ni detalles sobre el proceso de desarrollo.
 
 Los resultados de busqueda web revelan dos proyectos academicos con el acronimo SARG, pero no se puede confirmar su relacion con este repositorio. El proyecto de arXiv describe un metodo de generacion aumentada con estructura que construye cadenas de razonamiento a partir de tripletas de conocimiento y las integra en el prompt. El proyecto de ScienceDirect describe un sistema de prediccion de resiliencia basado en redes neuronales de grafos. Ambos son trabajos de investigacion, no modelos de lenguaje de proposito general.
 
@@ -50,7 +50,7 @@ No disponible. La falta de especificaciones tecnicas impide establecer comparaci
 ## Limitaciones y advertencias
 
 - La model card no proporciona informacion tecnica verificable sobre el modelo.
-- No se puede confirmar la relacion entre el repositorio de HuggingFace y los proyectos academicos denominados SARG encontrados en la busqueda web.
+- No se puede confirmar la relacion entre el repositorio de Hugging Face y los proyectos academicos denominados SARG encontrados en la busqueda web.
 - El nombre "SARG" es ambiguo y se refiere a al menos dos proyectos de investigacion distintos.
 - Sin especificaciones tecnicas, no es posible evaluar sesgos, riesgos de alucinacion o limitaciones de contexto.
 - La licencia Apache 2.0 permite uso comercial, pero la ausencia de documentacion tecnica dificulta cualquier despliegue en produccion.
@@ -58,8 +58,8 @@ No disponible. La falta de especificaciones tecnicas impide establecer comparaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/psxog/SARG
-- Perfil del autor en HuggingFace: https://huggingface.co/psxog
+- Repositorio Hugging Face: https://huggingface.co/psxog/SARG
+- Perfil del autor en Hugging Face: https://huggingface.co/psxog
 - Articulo arXiv "Structure-Augmented Reasoning Generation": https://arxiv.org/html/2506.08364v3
 - Articulo ScienceDirect "SARG: Software application resiliency prediction using graph neural networks": https://www.sciencedirect.com/science/article/pii/S0164121225003668
-- Organizacion SARG-ai en HuggingFace: https://huggingface.co/SARG-ai
+- Organizacion SARG-ai en Hugging Face: https://huggingface.co/SARG-ai

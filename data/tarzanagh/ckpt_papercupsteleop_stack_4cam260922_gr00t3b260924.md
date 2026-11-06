@@ -24,7 +24,7 @@ Es relevante ahora porque documenta un caso reproducible de aprendizaje por imit
 | Entradas sensoriales | 4 cámaras RGB, 640x360 a 30 fps; seguimiento de muñeca Vive |
 | Hardware objetivo | DexMate Vega-1 con dos manos RobotEra XHand1 |
 | Tamaño del repositorio | 12,6 GB |
-| Fecha de publicación | 2026-09-25 (según metadatos de HuggingFace) |
+| Fecha de publicación | 2026-09-25 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -76,9 +76,9 @@ Advertencias sobre estas cifras, tal como las formula el propio autor: miden seg
 
 | Modelo | Familia | Parámetros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`ckpt_papercupsteleop_stack_4cam260922_gr00t3b260924`) | GR00T N1.7 (`Gr00tN1d7`) | 3.144.016.000 | Apilado bimanual de vasos de papel, XHand1 sobre DexMate Vega-1 | `other` | Público en HuggingFace, 0 descargas |
-| `tarzanagh/ckpt_psspteleop_pickfromscale_4cam260810-260811_gr00t3b260815` | GR00T N1.7 | no disponible | Teleoperación de recogida desde báscula (4 cámaras) | no disponible | Público en HuggingFace |
-| `tarzanagh/ckpt_psspteleop_pickfromscale_4cam260810-260811_gr00t3b260816` | GR00T N1.7 | no disponible | Teleoperación de recogida desde báscula (4 cámaras) | no disponible | Público en HuggingFace |
+| Este checkpoint (`ckpt_papercupsteleop_stack_4cam260922_gr00t3b260924`) | GR00T N1.7 (`Gr00tN1d7`) | 3.144.016.000 | Apilado bimanual de vasos de papel, XHand1 sobre DexMate Vega-1 | `other` | Público en Hugging Face, 0 descargas |
+| `tarzanagh/ckpt_psspteleop_pickfromscale_4cam260810-260811_gr00t3b260815` | GR00T N1.7 | no disponible | Teleoperación de recogida desde báscula (4 cámaras) | no disponible | Público en Hugging Face |
+| `tarzanagh/ckpt_psspteleop_pickfromscale_4cam260810-260811_gr00t3b260816` | GR00T N1.7 | no disponible | Teleoperación de recogida desde báscula (4 cámaras) | no disponible | Público en Hugging Face |
 | T-Rex (línea base del autor para esta misma tarea) | no disponible | no disponible | Misma tarea de apilado bimanual | no disponible | En entrenamiento en el momento de la publicación |
 
 No se ha encontrado en la información proporcionada ninguna comparación con modelos de otras familias (por ejemplo, otras políticas VLA o modelos de manipulación bimanual). El autor indica además que las demás líneas base y T-Rex seguían entrenando, por lo que no existe una comparativa cerrada.
@@ -98,7 +98,7 @@ No se ha encontrado en la información proporcionada ninguna comparación con mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_papercupsteleop_stack_4cam260922_gr00t3b260924
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_papercupsteleop_stack_4cam260922_gr00t3b260924
 - Página personal del autor (Davoud Ataee Tarzanagh, Samsung SDS Research America): https://tarzanagh.github.io/
 - Checkpoint hermano: https://huggingface.co/tarzanagh/ckpt_psspteleop_pickfromscale_4cam260810-260811_gr00t3b260816
 - Checkpoint hermano: https://huggingface.co/tarzanagh/ckpt_psspteleop_pickfromscale_4cam260810-260811_gr00t3b260815

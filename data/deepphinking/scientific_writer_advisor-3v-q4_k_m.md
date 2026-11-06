@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Scientific_Writer_Advisor-3v.Q4_K_M es una publicacion de pesos en formato GGUF cuantizados (Q4_K_M) subida por el usuario deepphinking a HuggingFace. Los metadatos indican que se trata de un derivado del modelo Qwen2.5-VL-3B-Instruct, con 3.085.938.688 parametros totales y un repositorio de 1,9 GB. El sufijo del identificador y el nombre del repositorio sugieren un ajuste orientado a tareas de redaccion o asesoramiento en escritura cientifica, si bien la model card publicada no incluye ninguna descripcion funcional, dataset de entrenamiento ni instrucciones de uso.
+Scientific_Writer_Advisor-3v.Q4_K_M es una publicacion de pesos en formato GGUF cuantizados (Q4_K_M) subida por el usuario deepphinking a Hugging Face. Los metadatos indican que se trata de un derivado del modelo Qwen2.5-VL-3B-Instruct, con 3.085.938.688 parametros totales y un repositorio de 1,9 GB. El sufijo del identificador y el nombre del repositorio sugieren un ajuste orientado a tareas de redaccion o asesoramiento en escritura cientifica, si bien la model card publicada no incluye ninguna descripcion funcional, dataset de entrenamiento ni instrucciones de uso.
 
 El modelo hereda la licencia del modelo base mediante el campo license: other con license_name: qwen2.5-vl-3b-instruct, lo que vincula sus condiciones de uso al texto de licencia de Qwen2.5-VL-3B-Instruct. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta y las fechas de creacion y actualizacion registradas (21 de septiembre de 2026) son inconsistentes con la fecha actual, un indicio de que la publicacion no ha pasado ninguna revision.
 
@@ -31,7 +31,7 @@ Tampoco hay datos sobre volumen de tokens de entrenamiento, composicion del data
 
 - Generacion de texto conversacional: la etiqueta conversational del repositorio indica soporte de dialogo multi-turno.
 - Capacidades multimodales: previsiblemente heredadas del modelo base Qwen2.5-VL-3B-Instruct, aunque no se documentan en este repositorio.
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que el artefacto puede servirse a traves de infraestructura compatible con la API de inferencia de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que el artefacto puede servirse a traves de infraestructura compatible con la API de inferencia de Hugging Face.
 - Asistencia en redaccion cientifica: el nombre del repositorio apunta a este uso, pero no existe ninguna evaluacion ni ejemplo publicado que lo respalde.
 - Tool calling / function calling: no disponible.
 - Comportamiento agentico o razonamiento multi-paso: no disponible.
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - GPU consumer: el modelo cabe con holgura en GPU de 6-8 GB (por ejemplo, RTX 3060, RTX 4060, RTX 2070), asumiendo contexto moderado.
 - GPU de gama alta: A100, H100 o RTX 4090 no son necesarias para este tamano y solo tendrian sentido para servir muchas peticiones concurrentes.
 - CPU: viable en modo CPU puro con llama.cpp gracias al tamano reducido.
-- Opciones de despliegue: llama.cpp, Ollama, servidores GGUF compatibles con la API de HuggingFace (la etiqueta endpoints_compatible lo indica). El soporte en vLLM o TGI no esta confirmado para este artefacto.
+- Opciones de despliegue: llama.cpp, Ollama, servidores GGUF compatibles con la API de Hugging Face (la etiqueta endpoints_compatible lo indica). El soporte en vLLM o TGI no esta confirmado para este artefacto.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No se dispone de informacion suficiente para comparar rendimiento con alternativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/deepphinking/Scientific_Writer_Advisor-3v.Q4_K_M
+- Repositorio en Hugging Face: https://huggingface.co/deepphinking/Scientific_Writer_Advisor-3v.Q4_K_M
 - Licencia del modelo base citada por el autor: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct/blob/main/LICENSE
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre este modelo (los resultados devueltos corresponden a sitios de efemerides sin relacion con el artefacto).

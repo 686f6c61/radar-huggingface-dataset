@@ -93,8 +93,8 @@ No se dispone de información sobre modelos comparables de descompilación exact
 
 | Modelo | Parámetros | Contexto | Coincidencia greedy (249 funciones) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-fnvdecomp-r1 | 4,2 B | No disponible | 18,5 % | Apache 2.0 | HuggingFace (adaptador LoRA + GGUF Q8_0) |
-| Qwen3.5-4B (base) | 4,2 B | No disponible | 0,4 % | Apache 2.0 | HuggingFace |
+| Qwen3.5-4B-fnvdecomp-r1 | 4,2 B | No disponible | 18,5 % | Apache 2.0 | Hugging Face (adaptador LoRA + GGUF Q8_0) |
+| Qwen3.5-4B (base) | 4,2 B | No disponible | 0,4 % | Apache 2.0 | Hugging Face |
 | Otros modelos de descompilación | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -112,7 +112,7 @@ No se dispone de información sobre modelos comparables de descompilación exact
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ortexvortex/Qwen3.5-4B-fnvdecomp-r1
+- Modelo en Hugging Face: https://huggingface.co/ortexvortex/Qwen3.5-4B-fnvdecomp-r1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Proyecto fnvdecomp: https://fnvdecomp.com
 - Otros enlaces (papers, blogs, repos, demos): no disponibles en la información proporcionada.

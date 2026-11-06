@@ -1,7 +1,7 @@
 # mahmad-10xe/Qwen3.5-35B-A3B-GGUF-Quants
 
 ## Resumen
-El modelo Qwen3.5-35B-A3B es un modelo de lenguaje de gran tamaño desarrollado por Alibaba, perteneciente a la serie Qwen3.5 que integra avances en aprendizaje multimodal, eficiencia arquitectónica y escalado de aprendizaje por refuerzo. Se trata de un modelo de arquitectura híbrida con mezcla de expertos (MoE) que cuenta con 34.660 millones de parámetros totales y activa únicamente 3.000 millones por token, lo que permite un equilibrio entre capacidad y coste computacional. La versión GGUF, publicada por el usuario mahmad-10xe, está optimizada para su ejecución en entornos locales mediante herramientas como llama.cpp u Ollama, y su acceso es restringido (gated) en HuggingFace.
+El modelo Qwen3.5-35B-A3B es un modelo de lenguaje de gran tamaño desarrollado por Alibaba, perteneciente a la serie Qwen3.5 que integra avances en aprendizaje multimodal, eficiencia arquitectónica y escalado de aprendizaje por refuerzo. Se trata de un modelo de arquitectura híbrida con mezcla de expertos (MoE) que cuenta con 34.660 millones de parámetros totales y activa únicamente 3.000 millones por token, lo que permite un equilibrio entre capacidad y coste computacional. La versión GGUF, publicada por el usuario mahmad-10xe, está optimizada para su ejecución en entornos locales mediante herramientas como llama.cpp u Ollama, y su acceso es restringido (gated) en Hugging Face.
 
 La relevancia de este modelo radica en su diseño orientado a tareas de razonamiento complejo, generación de código, capacidades de agente y soporte multimodal nativo, aunque la versión GGUF se centra en la generación de texto. Su tamaño moderado con activación dispersa lo hace atractivo para despliegues en hardware de consumo o servidores de gama media, manteniendo un rendimiento competitivo frente a modelos densos de mayor tamaño. La serie Qwen3.5 incluye variantes desde 0.8B hasta 397B, siendo esta de 35B una opción intermedia para desarrolladores que necesitan un modelo potente pero manejable.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La do
 No se dispone de informacion comparativa con otros modelos en los datos proporcionados. Como referencia, la serie Qwen3.5 incluye variantes de 27B densa y 122B-A10B, y el modelo Qwen3-30B-A3B (generacion anterior) podria ser comparable en arquitectura y tamaño. Sin embargo, no se han encontrado datos de rendimiento para establecer una comparacion rigurosa. Se recomienda consultar benchmarks publicos de la serie Qwen3.5 cuando esten disponibles.
 
 ## Limitaciones y advertencias
-- Acceso restringido: el repositorio en HuggingFace es "gated", por lo que se requiere aceptar condiciones de uso antes de descargar el modelo. Esto puede implicar restricciones adicionales no especificadas.
+- Acceso restringido: el repositorio en Hugging Face es "gated", por lo que se requiere aceptar condiciones de uso antes de descargar el modelo. Esto puede implicar restricciones adicionales no especificadas.
 - Licencia no disponible: no se ha indicado la licencia exacta, lo que genera incertidumbre sobre el uso comercial. Es imprescindible contactar con el autor o consultar la documentacion de Qwen antes de utilizarlo en produccion.
 - Sesgos y alucinaciones: como cualquier modelo de lenguaje, puede generar contenido sesgado o factualmente incorrecto. No se han publicado evaluaciones de sesgo especificas.
 - Limitaciones de contexto: no se conoce la longitud maxima de contexto soportada. Aunque los modelos Qwen recientes suelen soportar hasta 256k tokens, no se confirma para esta variante.
@@ -60,9 +60,9 @@ No se dispone de informacion comparativa con otros modelos en los datos proporci
 - Riesgo en produccion: sin benchmarks ni documentacion de entrenamiento, no se recomienda su uso en sistemas criticos sin una evaluacion exhaustiva previa.
 
 ## Enlaces
-- Repositorio HuggingFace (version GGUF): https://huggingface.co/mahmad-10xe/Qwen3.5-35B-A3B-GGUF-Quants
-- Repositorio HuggingFace de unsloth (GGUF oficial): https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF
-- Repositorio HuggingFace de Qwen (modelo base): https://huggingface.co/Qwen/Qwen3.5-35B-A3B
+- Repositorio Hugging Face (version GGUF): https://huggingface.co/mahmad-10xe/Qwen3.5-35B-A3B-GGUF-Quants
+- Repositorio Hugging Face de unsloth (GGUF oficial): https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF
+- Repositorio Hugging Face de Qwen (modelo base): https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Pagina en Ollama: https://ollama.com/library/qwen3.5:35b-a3b
 - Blog oficial de Qwen sobre la serie 3.5: https://qwen.ai/blog?id=qwen3.5
 - Documentacion de Unsloth para Qwen3.5: https://unsloth.ai/docs/models/qwen3.5

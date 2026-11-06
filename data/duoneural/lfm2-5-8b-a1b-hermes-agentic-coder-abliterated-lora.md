@@ -18,7 +18,7 @@ El autor etiqueta el modelo como abliterated, es decir, con la alineación de se
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF Q4_K_M confirmado (repo de cuantizaciones separado); otros niveles no disponibles |
 | Idiomas soportados | no disponible |
-| Licencia | liquid-foundation-model-community-license (etiquetada como "other" en HuggingFace) |
+| Licencia | liquid-foundation-model-community-license (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (adaptador LoRA PEFT); GGUF en repositorio aparte |
 | Tipo de artefacto | Adaptador LoRA, no modelo completo |
 | Modelo base | DuoNeural/LFM2.5-8B-A1B-Abliterated |
@@ -102,7 +102,7 @@ Frente a alternativas densas como Qwen2.5-Coder-7B o Llama-3.1-8B-Instruct, la p
 - Riesgo de alucinación: no disponible de forma específica, pero es esperable en un modelo de 8B con entrenamiento de ajuste fino sobre un dataset relativamente pequeño (45.000 muestras).
 - No hay información sobre longitud de contexto soportada, lo que impide planificar casos de uso que dependan de ventanas largas.
 - No hay información sobre idiomas soportados. El entrenamiento se describe con subconjuntos mayoritariamente en inglés, por lo que el rendimiento en castellano no está garantizado.
-- Licencia liquid-foundation-model-community-license, etiquetada como "other" en HuggingFace: es necesario revisar los términos en https://www.liquid.ai/community-license antes de cualquier uso comercial, ya que las licencias comunitarias de este tipo suelen incluir restricciones de escala o de atribución.
+- Licencia liquid-foundation-model-community-license, etiquetada como "other" en Hugging Face: es necesario revisar los términos en https://www.liquid.ai/community-license antes de cualquier uso comercial, ya que las licencias comunitarias de este tipo suelen incluir restricciones de escala o de atribución.
 - El repositorio no contiene el modelo completo, solo el adaptador LoRA. Su uso directo requiere fusionar con el modelo base o recurrir a los GGUF publicados aparte.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay evidencia de validación por parte de la comunidad.
 - No se documenta la composición exacta del dataset ni si contiene datos con derechos de autor; el subconjunto "CodeFeedback" y "Magpie Ultra" son fuentes de origen público pero con condiciones variables.

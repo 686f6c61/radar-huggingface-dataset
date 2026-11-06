@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwopus3.8-27B-Coder-Flash-oQ4e-mtp es una cuantizacion mixta en formato MLX del modelo Qwopus3.8-27B-Coder-Flash, publicada por el usuario tennr1 en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una version comprimida del checkpoint original mediante la herramienta oQ (oMLX v0.7.3), que aplica cuantizacion de precision mixta por tensor para reducir el espacio en disco y la memoria necesaria en inferencia sobre hardware Apple Silicon.
+Qwopus3.8-27B-Coder-Flash-oQ4e-mtp es una cuantizacion mixta en formato MLX del modelo Qwopus3.8-27B-Coder-Flash, publicada por el usuario tennr1 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una version comprimida del checkpoint original mediante la herramienta oQ (oMLX v0.7.3), que aplica cuantizacion de precision mixta por tensor para reducir el espacio en disco y la memoria necesaria en inferencia sobre hardware Apple Silicon.
 
 El checkpoint conserva 27.781 millones de parametros (27,78 B), de los cuales 26.896 B corresponden al modelo de lenguaje, 0.461 B a un codificador de vision y 0.425 B a una cabeza MTP (multi-token prediction). El peso efectivo medio es de 5,044 bits por peso, con un tamano total de repositorio de 17,5 GB, lo que lo hace viable en equipos con memoria unificada de 24-32 GB.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwopus3.8-27B-Coder-Flash-oQ4e-mtp | 27,78 B | No disponible | MLX safetensors 4-bit mixto | No disponible | HuggingFace (tennr1) |
+| Qwopus3.8-27B-Coder-Flash-oQ4e-mtp | 27,78 B | No disponible | MLX safetensors 4-bit mixto | No disponible | Hugging Face (tennr1) |
 | Checkpoint Qwopus3.8-27B-Coder-Flash (BF16) | 27,78 B | No disponible | safetensors BF16 | No disponible | No confirmado en la informacion |
 | Qwen3.5-Coder (modelo base de referencia) | No disponible | No disponible | safetensors | No disponible | No disponible |
 
@@ -82,5 +82,5 @@ No se dispone de datos suficientes para comparar rendimiento, contexto o licenci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tennr1/Qwopus3.8-27B-Coder-Flash-oQ4e-mtp
+- Hugging Face: https://huggingface.co/tennr1/Qwopus3.8-27B-Coder-Flash-oQ4e-mtp
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx

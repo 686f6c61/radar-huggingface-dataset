@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-final-x20` es un modelo de lenguaje publicado en HuggingFace por el usuario `alfred8995`. Se distribuye en formato safetensors con un total de 2.018.511.234 parametros (aproximadamente 2.000 millones, es decir, un modelo de escala 2B). La model card publica unicamente metadatos basicos: licencia Apache 2.0, tag de pipeline `sn38-nanochrono` y region `us`. No se documenta arquitectura, datos de entrenamiento, tokenizador ni capacidades.
+`alfred8995/r18-a2-final-x20` es un modelo de lenguaje publicado en Hugging Face por el usuario `alfred8995`. Se distribuye en formato safetensors con un total de 2.018.511.234 parametros (aproximadamente 2.000 millones, es decir, un modelo de escala 2B). La model card publica unicamente metadatos basicos: licencia Apache 2.0, tag de pipeline `sn38-nanochrono` y region `us`. No se documenta arquitectura, datos de entrenamiento, tokenizador ni capacidades.
 
-El modelo es relevante principalmente por su tamano contenido (2B parametros), que lo situa en la franja de modelos desplegables en GPU de consumo, y por su licencia permisiva Apache 2.0. Sin embargo, la ausencia de documentacion tecnica, de benchmarks y de informacion sobre el proceso de entrenamiento limita seriamente cualquier evaluacion rigurosa. El repositorio esta ademas sujeto a acceso restringido (gated), lo que exige aceptar condiciones en HuggingFace antes de descargar los pesos.
+El modelo es relevante principalmente por su tamano contenido (2B parametros), que lo situa en la franja de modelos desplegables en GPU de consumo, y por su licencia permisiva Apache 2.0. Sin embargo, la ausencia de documentacion tecnica, de benchmarks y de informacion sobre el proceso de entrenamiento limita seriamente cualquier evaluacion rigurosa. El repositorio esta ademas sujeto a acceso restringido (gated), lo que exige aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 Con solo 2 descargas y 0 likes en el momento de la consulta, se trata de un artefacto practicamente sin adopcion ni validacion por parte de la comunidad. Cualquier uso en produccion deberia ir precedido de una evaluacion propia exhaustiva, dado que no existe evidencia publica de su calidad, sesgos o comportamiento.
 
@@ -83,12 +83,12 @@ La diferencia principal no es de tamano sino de trazabilidad: los modelos compar
 - Riesgo de alucinacion: no evaluado; en modelos de 2B sin alineacion documentada el riesgo suele ser elevado, pero no puede afirmarse sin pruebas.
 - Sesgos: no documentados ni evaluados.
 - Idiomas: no declarados; no puede asumirse soporte multilingue.
-- Licencia: Apache 2.0 permite uso comercial, pero el acceso esta restringido (gated) y sujeto a las condiciones adicionales que imponga el autor en HuggingFace, que deben revisarse antes de su uso en produccion.
+- Licencia: Apache 2.0 permite uso comercial, pero el acceso esta restringido (gated) y sujeto a las condiciones adicionales que imponga el autor en Hugging Face, que deben revisarse antes de su uso en produccion.
 - Tag `sn38-nanochrono` sin explicacion: no corresponde a ninguna familia conocida; conviene tratarlo como no verificado.
 - Adopcion practicamente nula (2 descargas, 0 likes): sin validacion por parte de la comunidad ni reportes de uso.
 - Para produccion: se recomienda tratar el modelo como experimental y realizar una evaluacion propia de calidad, seguridad y sesgos antes de integrarlo en cualquier sistema.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-final-x20
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-final-x20
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

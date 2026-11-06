@@ -85,7 +85,7 @@ No hay datos publicados que permitan comparar el WER de este ajuste kazajo frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jazira1992/kk-whisper-small
+- Modelo en Hugging Face: https://huggingface.co/Jazira1992/kk-whisper-small
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Dataset de entrenamiento (ISSAI Kazakh Speech Corpus 2): https://huggingface.co/datasets/issai/ksc2
 - `transformers.js` (runtime JS/ONNX): https://github.com/huggingface/transformers.js

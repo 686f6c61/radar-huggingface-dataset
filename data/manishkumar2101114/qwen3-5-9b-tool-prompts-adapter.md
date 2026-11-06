@@ -79,7 +79,7 @@ No se dispone de informacion sobre adaptadores comparables ni de resultados de e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-9b-tool-prompts-adapter (este) | no disponible (adaptador LoRA; base ~9B nominal) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| qwen3.5-9b-tool-prompts-adapter (este) | no disponible (adaptador LoRA; base ~9B nominal) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Qwen/Qwen3.5-9B (modelo base) | no disponible en la informacion facilitada | no disponible | no disponible | no disponible | referenciado como base |
 | Otros adaptadores LoRA de tool calling | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -97,7 +97,7 @@ No se dispone de informacion sobre adaptadores comparables ni de resultados de e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manishkumar2101114/qwen3.5-9b-tool-prompts-adapter
+- Hugging Face: https://huggingface.co/manishkumar2101114/qwen3.5-9b-tool-prompts-adapter
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper citado en la plantilla de la model card (emisiones de carbono, no del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning mencionada en la plantilla: https://mlco2.github.io/impact

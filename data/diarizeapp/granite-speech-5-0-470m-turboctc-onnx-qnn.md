@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento comparativo entre estas tres variantes mas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/diarizeapp/granite-speech-5.0-470m-turboctc-onnx-qnn
+- Repositorio Hugging Face: https://huggingface.co/diarizeapp/granite-speech-5.0-470m-turboctc-onnx-qnn
 - Modelo base: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc
 - Pesos ONNX portables: https://huggingface.co/diarizeapp/granite-speech-5.0-470m-turboctc-onnx
 - Script de recompilacion mencionado: `granite_pipeline.py` (incluido en el repositorio; no se proporciona URL directa)

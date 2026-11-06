@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sstoica12/acquisition_generator_AS_confidence_medmcqa_llama8b` es un checkpoint alojado en HuggingFace por el usuario `sstoica12`, con pipeline declarado de generacion de texto y conversacional, y pesos en formato safetensors. El recuento real de parametros leido de los archivos safetensors es de 14.770.033.664 (aproximadamente 14,77 mil millones), mientras que el nombre del repositorio alude a una base "llama8b". El repositorio ocupa 59,1 GB, cifra que coincide con el tamano que tendrian esos parametros almacenados en precision fp32 (14,77e9 x 4 bytes = 59,08 GB), aunque el autor no lo confirma.
+`sstoica12/acquisition_generator_AS_confidence_medmcqa_llama8b` es un checkpoint alojado en Hugging Face por el usuario `sstoica12`, con pipeline declarado de generacion de texto y conversacional, y pesos en formato safetensors. El recuento real de parametros leido de los archivos safetensors es de 14.770.033.664 (aproximadamente 14,77 mil millones), mientras que el nombre del repositorio alude a una base "llama8b". El repositorio ocupa 59,1 GB, cifra que coincide con el tamano que tendrian esos parametros almacenados en precision fp32 (14,77e9 x 4 bytes = 59,08 GB), aunque el autor no lo confirma.
 
-La model card publicada es la plantilla generada automaticamente por HuggingFace y no contiene informacion sustantiva: no se declara autor intelectual, tipo de modelo, idiomas, licencia, datos de entrenamiento ni procedimiento de ajuste. Todos los campos relevantes aparecen como "More Information Needed". Las unicas senales disponibles son los tags del repositorio (`transformers`, `safetensors`, `qwen2`, `text-generation`, `conversational`, `text-generation-inference`, `endpoints_compatible`) y el propio identificador, que sugiere un artefacto de investigacion orientado a generacion de adquisiciones (acquisition generator) con estrategia basada en confianza (`AS_confidence`) sobre el conjunto de datos MedMCQA.
+La model card publicada es la plantilla generada automaticamente por Hugging Face y no contiene informacion sustantiva: no se declara autor intelectual, tipo de modelo, idiomas, licencia, datos de entrenamiento ni procedimiento de ajuste. Todos los campos relevantes aparecen como "More Information Needed". Las unicas senales disponibles son los tags del repositorio (`transformers`, `safetensors`, `qwen2`, `text-generation`, `conversational`, `text-generation-inference`, `endpoints_compatible`) y el propio identificador, que sugiere un artefacto de investigacion orientado a generacion de adquisiciones (acquisition generator) con estrategia basada en confianza (`AS_confidence`) sobre el conjunto de datos MedMCQA.
 
 Por tanto, no se trata de un modelo listo para produccion ni de un lanzamiento con documentacion: es un artefacto de investigacion sin ficha tecnica, con 0 descargas y 0 likes en el momento de la consulta, y con una fecha de creacion registrada como 2026-10-14, posterior a la fecha de redaccion habitual de estas fichas, lo que constituye una anomalia de metadatos a verificar. Cualquier evaluacion de sus capacidades exige inspeccion directa del checkpoint y del codigo de entrenamiento, que no se proporcionan en la informacion disponible.
 
@@ -29,7 +29,7 @@ Por tanto, no se trata de un modelo listo para produccion ni de un lanzamiento c
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura. La model card es la plantilla automatica de HuggingFace y todos los apartados de descripcion, datos de entrenamiento, hiperparametros y procedimiento quedan como "More Information Needed". El unico dato estructural es el tag `qwen2`, que apuntaria a una familia de transformers decoder-only con atencion causal, RMSNorm y atención con sesgo QKV; sin embargo, el identificador del repositorio menciona "llama8b", lo que introduce una contradiccion no resuelta. Cabe senalar que el recuento de 14,77 B parametros coincide con el orden de magnitud de Qwen2-14B (aproximadamente 14,7 B), pero esto es una inferencia aritmetica, no un dato confirmado por el autor.
+No hay informacion publicada sobre la arquitectura. La model card es la plantilla automatica de Hugging Face y todos los apartados de descripcion, datos de entrenamiento, hiperparametros y procedimiento quedan como "More Information Needed". El unico dato estructural es el tag `qwen2`, que apuntaria a una familia de transformers decoder-only con atencion causal, RMSNorm y atención con sesgo QKV; sin embargo, el identificador del repositorio menciona "llama8b", lo que introduce una contradiccion no resuelta. Cabe senalar que el recuento de 14,77 B parametros coincide con el orden de magnitud de Qwen2-14B (aproximadamente 14,7 B), pero esto es una inferencia aritmetica, no un dato confirmado por el autor.
 
 Tampoco hay informacion sobre el entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si hubo fases de SFT, RLHF o DPO, y si se aplicaron tecnicas como decodificacion especulativa o atencion lineal. El identificador sugiere un ajuste orientado a una tarea especifica (generacion en un bucle de adquisicion de datos con criterio de confianza) sobre MedMCQA, un conjunto de preguntas de opcion multiple de medicina, pero no se aporta ninguna evidencia documental. El tag `arxiv:1910.09700` que aparece en los metadatos corresponde a Lacoste et al. (2019), el articulo citado en la plantilla por defecto para el calculo de emisiones de carbono, y no a un paper de este modelo.
 
@@ -43,7 +43,7 @@ Tampoco hay informacion sobre el entrenamiento: se desconoce el numero de tokens
 - Capacidades multilingues: no disponible (no se declaran idiomas).
 - Vision, audio u otras modalidades: no disponible (no hay tags ni componentes multimodales).
 - Modo de pensamiento explicito (thinking mode): no disponible.
-- Integracion con servidores de inferencia: el tag `endpoints_compatible` y `text-generation-inference` sugiere compatibilidad con HuggingFace TGI y con Inference Endpoints, sin que se detalle la configuracion.
+- Integracion con servidores de inferencia: el tag `endpoints_compatible` y `text-generation-inference` sugiere compatibilidad con Hugging Face TGI y con Inference Endpoints, sin que se detalle la configuracion.
 
 ## Casos de uso
 
@@ -103,7 +103,7 @@ Si no se confirma cual es el modelo base, no es posible establecer una comparaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sstoica12/acquisition_generator_AS_confidence_medmcqa_llama8b
+- Modelo en Hugging Face: https://huggingface.co/sstoica12/acquisition_generator_AS_confidence_medmcqa_llama8b
 - Paper citado en el tag del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico referenciada en la plantilla: https://mlco2.github.io/impact
 - Repositorio del codigo de entrenamiento, paper propio, demo y dataset asociado: no disponible en la informacion proporcionada.

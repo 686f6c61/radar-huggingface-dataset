@@ -105,7 +105,7 @@ No se dispone en la información proporcionada de datos verificados de parámetr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Parikshirendupoojiyamettu/drama-3
+- Modelo en Hugging Face: https://huggingface.co/Parikshirendupoojiyamettu/drama-3
 - Página de producto de Drama 3: https://fish.audio/drama-3/
 - Documentación de Drama 3: https://docs.fish.audio/features/text-to-speech/drama-3
 - Repositorio SGLang-Omni: https://github.com/sgl-project/sglang-omni

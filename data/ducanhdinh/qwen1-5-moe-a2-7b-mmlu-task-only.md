@@ -71,8 +71,8 @@ La propia model card advierte que la `accuracy_curve` es una métrica diagnósti
 
 | Modelo | Parametros totales / activos | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ducanhdinh/Qwen1.5-MoE-A2.7B-MMLU-Task-Only | Adaptador sobre 14,3B (base) / ~2,7B | No disponible (base: 32.768) | Opcion multiple (MMLU) | apache-2.0 | HuggingFace (adaptador PEFT) |
-| Qwen/Qwen1.5-MoE-A2.7B (modelo base) | 14,3B / ~2,7B | 32.768 | Proposito general | apache-2.0 | HuggingFace |
+| ducanhdinh/Qwen1.5-MoE-A2.7B-MMLU-Task-Only | Adaptador sobre 14,3B (base) / ~2,7B | No disponible (base: 32.768) | Opcion multiple (MMLU) | apache-2.0 | Hugging Face (adaptador PEFT) |
+| Qwen/Qwen1.5-MoE-A2.7B (modelo base) | 14,3B / ~2,7B | 32.768 | Proposito general | apache-2.0 | Hugging Face |
 | Otros adaptadores MMLU sobre bases densas | No disponible | No disponible | Opcion multiple | Variable | No disponible |
 
 No se dispone de datos de rendimiento comparativo entre alternativas para esta tarea; la comparación se limita a tamaño, contexto y licencia.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre alternativas para esta t
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/ducanhdinh/Qwen1.5-MoE-A2.7B-MMLU-Task-Only
+- Hugging Face (adaptador): https://huggingface.co/ducanhdinh/Qwen1.5-MoE-A2.7B-MMLU-Task-Only
 - Modelo base: https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/cais/mmlu
 - Paper de MMLU: no disponible en la informacion proporcionada

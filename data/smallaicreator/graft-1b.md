@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GRAFT-1B es un modelo de chat de aproximadamente 1B de parámetros publicado por UltraLabs bajo la cuenta de HuggingFace SmallAICreator. No se entrena desde cero: se obtiene reduciendo el modelo Qwen3-1.7B mediante GRAFT, un método de encogimiento de modelos sin gradientes y de forma cerrada desarrollado por UltraLabs, al que después se aplican fases de "healing" (recuperación), destilación y ajuste conversacional. El resultado es un modelo transformer denso de unos 1.180 millones de parámetros, derivado por fine-tuning de Qwen3-1.7B.
+GRAFT-1B es un modelo de chat de aproximadamente 1B de parámetros publicado por UltraLabs bajo la cuenta de Hugging Face SmallAICreator. No se entrena desde cero: se obtiene reduciendo el modelo Qwen3-1.7B mediante GRAFT, un método de encogimiento de modelos sin gradientes y de forma cerrada desarrollado por UltraLabs, al que después se aplican fases de "healing" (recuperación), destilación y ajuste conversacional. El resultado es un modelo transformer denso de unos 1.180 millones de parámetros, derivado por fine-tuning de Qwen3-1.7B.
 
 Su propuesta de valor es el despliegue en dispositivo: se distribuye en GGUF cuantizado Q6_K con un archivo de 0,97 GB, de modo que funciona en portátiles y teléfonos sin GPU dedicada, con plantilla de chat ChatML embebida y compatibilidad con llama.cpp, Ollama y cualquier aplicación que consuma GGUF. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
@@ -78,7 +78,7 @@ Notas del autor recogidas en la model card: por materias, los resultados de MMLU
 
 | Modelo | Parametros | Contexto | MMLU 5-shot (micro) | ARC-Ch. 25-shot | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GRAFT-1B | 1,18B | no disponible | 40,37 | 40,78 | Apache 2.0 | GGUF Q6_K en HuggingFace (0 descargas al capturar los datos) |
+| GRAFT-1B | 1,18B | no disponible | 40,37 | 40,78 | Apache 2.0 | GGUF Q6_K en Hugging Face (0 descargas al capturar los datos) |
 | Llama 3.2 1B Instruct | 1,24B (dato general, no aportado en la informacion disponible) | no disponible | 46,20 | 40,02 | Llama 3.2 Community License | Ampliamente desplegado |
 | Qwen3-1.7B (donante) | 1,7B | 32.768 tokens (dato general del modelo donante) | 60,25 | 43,09 | Apache 2.0 | Ampliamente desplegado |
 | Gemma 3 1B | 1B (dato general) | no disponible | no disponible | 38,4 (harness de Google, no comparable) | Gemma Terms of Use | Ampliamente desplegado |
@@ -100,8 +100,8 @@ Lectura de la comparativa: GRAFT-1B es competitivo con Llama 3.2 1B Instruct en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SmallAICreator/GRAFT-1B
-- Perfil del autor en HuggingFace: https://huggingface.co/SmallAICreator
+- Modelo en Hugging Face: https://huggingface.co/SmallAICreator/GRAFT-1B
+- Perfil del autor en Hugging Face: https://huggingface.co/SmallAICreator
 - Modelo donante Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Listado de modelos de SmallAICreator en Essa Mamdani: https://essamamdani.com/ai-models/company/smallaicreator
 - Recopilatorio awesome-free-models (referencia secundaria, sin información técnica sobre GRAFT-1B): https://github.com/12britz/awesome-free-models

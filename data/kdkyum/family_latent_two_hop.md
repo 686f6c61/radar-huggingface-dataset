@@ -85,6 +85,6 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kdkyum/family_latent_two_hop
-- Dataset en HuggingFace: https://huggingface.co/datasets/kdkyum/family_graph_hop
-- Perfil del autor en HuggingFace: https://huggingface.co/kdkyum
+- Modelo en Hugging Face: https://huggingface.co/kdkyum/family_latent_two_hop
+- Dataset en Hugging Face: https://huggingface.co/datasets/kdkyum/family_graph_hop
+- Perfil del autor en Hugging Face: https://huggingface.co/kdkyum

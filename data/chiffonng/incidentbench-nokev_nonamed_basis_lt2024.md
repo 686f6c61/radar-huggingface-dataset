@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `chiffonng/incidentbench-nokev_nonamed_basis_lt2024` es un adaptador LoRA de rango 16 sobre el modelo base Qwen2.5-7B-Instruct, publicado por el usuario chiffonng en HuggingFace. No se trata de un modelo de propósito general, sino de un artefacto de investigación diseñado específicamente para el clasificador conjunto de IncidentBench: el adaptador debe responder con una única etiqueta entre siete dominios de riesgo MIT o la categoría `No incident (potential only)`, y tanto la detección de incidente como su categoría se derivan de esa única respuesta.
+El modelo `chiffonng/incidentbench-nokev_nonamed_basis_lt2024` es un adaptador LoRA de rango 16 sobre el modelo base Qwen2.5-7B-Instruct, publicado por el usuario chiffonng en Hugging Face. No se trata de un modelo de propósito general, sino de un artefacto de investigación diseñado específicamente para el clasificador conjunto de IncidentBench: el adaptador debe responder con una única etiqueta entre siete dominios de riesgo MIT o la categoría `No incident (potential only)`, y tanto la detección de incidente como su categoría se derivan de esa única respuesta.
 
 La variante concreta (`nokev_nonamed_basis_lt2024`) corresponde a un corte temporal anterior a 2024, con respuestas reordenadas y sin claves ni nombres explícitos, a las que se añade una justificación breve del dominio de incidente. El adaptador se aplica sin fusionar sobre Qwen2.5-7B-Instruct, por lo que hereda la arquitectura y el contexto del modelo base, pero su comportamiento está fuertemente especializado en la tarea de clasificación.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| incidentbench-nokev_nonamed_basis_lt2024 | LoRA r=16 sobre 7B | no disponible | no disponible | other | HuggingFace |
-| Qwen2.5-7B-Instruct (base) | 7B | no disponible | no disponible | no disponible | HuggingFace |
-| Otras variantes IncidentBench del mismo autor | LoRA sobre 7B | no disponible | no disponible | other | HuggingFace |
+| incidentbench-nokev_nonamed_basis_lt2024 | LoRA r=16 sobre 7B | no disponible | no disponible | other | Hugging Face |
+| Qwen2.5-7B-Instruct (base) | 7B | no disponible | no disponible | no disponible | Hugging Face |
+| Otras variantes IncidentBench del mismo autor | LoRA sobre 7B | no disponible | no disponible | other | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa.
 
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chiffonng/incidentbench-nokev_nonamed_basis_lt2024
+- Hugging Face: https://huggingface.co/chiffonng/incidentbench-nokev_nonamed_basis_lt2024
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

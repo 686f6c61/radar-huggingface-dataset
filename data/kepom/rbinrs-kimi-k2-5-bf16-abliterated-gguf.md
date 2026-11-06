@@ -18,7 +18,7 @@ El repositorio ofrece pesos en cuantizaciones Q2_K y Q3_K, lo que permite ejecut
 | Longitud de contexto | 262.144 tokens (según ejemplos de uso en la model card) |
 | Tipos de cuantizacion | Q2_K, Q3_K (formato GGUF) |
 | Idiomas soportados | no disponible |
-| Licencia | modified-mit (según HuggingFace) |
+| Licencia | modified-mit (según Hugging Face) |
 | Formato de pesos | GGUF (archivos .gguf) |
 
 ## Arquitectura y entrenamiento
@@ -75,7 +75,7 @@ No se dispone de datos suficientes para realizar una comparativa cuantitativa co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kepom/rbinrs-Kimi-K2.5-BF16-abliterated-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/kepom/rbinrs-Kimi-K2.5-BF16-abliterated-GGUF
 - Repositorio original de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Kimi-K2.5-BF16-abliterated-GGUF
 - Repositorio espejo de rbinrs: https://huggingface.co/rbinrs/rbinrs-Kimi-K2.5-BF16-abliterated-GGUF
 - Repositorio espejo de Trilogix1: https://huggingface.co/Trilogix1/Kimi-K2.5-BF16-abliterated-GGUF

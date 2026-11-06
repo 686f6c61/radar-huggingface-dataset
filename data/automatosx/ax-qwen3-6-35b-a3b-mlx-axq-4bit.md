@@ -71,7 +71,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AutomatosX/AX-Qwen3.6-35B-A3B-MLX-AXQ-4bit
+- Repositorio Hugging Face: https://huggingface.co/AutomatosX/AX-Qwen3.6-35B-A3B-MLX-AXQ-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Certificado Tier 1: https://github.com/defai-digital/axquant/blob/main/docs/certifications/qwen36-35b-axq4-nomtp-tier1.md
 - Repositorio AXQuant: https://github.com/defai-digital/axquant

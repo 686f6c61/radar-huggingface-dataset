@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SEA-CLIP-Tiny (ablación "only WIT") es un checkpoint de investigación publicado por el usuario fassabilf en HuggingFace. Se trata de una de las filas de la tabla de ablación del modelo principal SEA-CLIP-Tiny, presentado en ACCV 2026, cuyo objetivo es construir representaciones multimodales texto-imagen eficientes para lenguas del sudeste asiático. La diferencia respecto al modelo principal no es arquitectónica ni de hiperparámetros, sino la mezcla de datos de entrenamiento: esta variante se ha entrenado exclusivamente con el corpus WIT (487.000 pares imagen-texto).
+SEA-CLIP-Tiny (ablación "only WIT") es un checkpoint de investigación publicado por el usuario fassabilf en Hugging Face. Se trata de una de las filas de la tabla de ablación del modelo principal SEA-CLIP-Tiny, presentado en ACCV 2026, cuyo objetivo es construir representaciones multimodales texto-imagen eficientes para lenguas del sudeste asiático. La diferencia respecto al modelo principal no es arquitectónica ni de hiperparámetros, sino la mezcla de datos de entrenamiento: esta variante se ha entrenado exclusivamente con el corpus WIT (487.000 pares imagen-texto).
 
 El modelo emplea la arquitectura CLIP estándar: una torre de visión ViT-T/16 y una torre de texto de 12 capas y 384 dimensiones, con una dimensión de embedding compartida de 512. El total asciende a 46,11 millones de parámetros (5,62 M en visión y 40,49 M en texto), lo que lo sitúa en la gama ultraligera y permite inferencia en CPU o en GPUs de consumo muy modestas. El tokenizador es el BPE de CLIP con vocabulario de 49.408 tokens y longitud de contexto de 77 tokens.
 
@@ -73,8 +73,8 @@ No se publican en la informacion disponible resultados comparativos con otros mo
 
 | Modelo | Parametros | Contexto | ImageNet zero-shot | R@1-Avg | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sea-clip-tiny-abl-wit (esta ficha) | 46,11 M | 77 tokens | 1,3 | 0,8 | MIT | HuggingFace, 0 descargas |
-| sea-clip-tiny (modelo principal) | no disponible en la informacion proporcionada | 77 tokens (misma arquitectura) | no disponible | no disponible | MIT (segun model card del principal) | HuggingFace |
+| sea-clip-tiny-abl-wit (esta ficha) | 46,11 M | 77 tokens | 1,3 | 0,8 | MIT | Hugging Face, 0 descargas |
+| sea-clip-tiny (modelo principal) | no disponible en la informacion proporcionada | 77 tokens (misma arquitectura) | no disponible | no disponible | MIT (segun model card del principal) | Hugging Face |
 | MetaCLIP2-ViT-B-16-worldwide (profesor) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Otros CLIP multilingues de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,7 +94,7 @@ La informacion proporcionada no incluye las metricas del modelo principal ni del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fassabilf/sea-clip-tiny-abl-wit
+- Modelo en Hugging Face: https://huggingface.co/fassabilf/sea-clip-tiny-abl-wit
 - Modelo principal SEA-CLIP-Tiny: https://huggingface.co/fassabilf/sea-clip-tiny
 - Codigo de entrenamiento y evaluacion: https://github.com/fassabilf/sea-clip-tiny
 - Cita del articulo: SEA-CLIP-Tiny: Efficient Multilingual Text-Vision Embedding for Southeast Asian Languages, Asian Conference on Computer Vision (ACCV), 2026 (no se proporciona enlace al paper en la informacion disponible)

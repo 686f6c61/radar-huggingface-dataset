@@ -76,7 +76,7 @@ La comparación en rendimiento no está disponible, pero Pixtral destaca por su 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TikFesku/Pixtral-12B-2409-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/TikFesku/Pixtral-12B-2409-Q8_0-GGUF
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Pixtral-12B-2409
 - Documentación oficial de Mistral: https://docs.mistral.ai/models/pixtral-12b-24-09
 - Página de slm.expert: https://slm.expert/models/pixtral-12b-2409/

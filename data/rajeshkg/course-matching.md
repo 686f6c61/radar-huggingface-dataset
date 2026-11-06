@@ -24,7 +24,7 @@ La arquitectura se basa en Swin Transformer, un modelo de atención por ventanas
 ## Capacidades
 
 - Matching de cursos: el modelo está diseñado para emparejar o comparar elementos (posiblemente descripciones de cursos) mediante una representación aprendida.
-- Implementación personalizada: requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace, ya que no sigue el formato estándar de los modelos de transformadores.
+- Implementación personalizada: requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face, ya que no sigue el formato estándar de los modelos de transformadores.
 - Reproducibilidad: incluye un script `pipeline.py` con un ejemplo de prueba de humo ejecutable.
 - No dispone de capacidades de generación de texto, razonamiento, código, matemáticas, visión (a pesar de usar Swin), tool calling, agentes o soporte multilingüe, ya que no es un modelo de lenguaje.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos directamente comparables en el repositorio de HuggingFace. Existen sistemas de matching de cursos como CourseMatch de Coursera o CourseKG, pero son soluciones completas con pipelines de procesamiento de lenguaje natural y bases de conocimiento, no modelos individuales con esta arquitectura. Por tanto, no es posible establecer una comparación técnica rigurosa con alternativas de la misma categoría.
+No se dispone de modelos directamente comparables en el repositorio de Hugging Face. Existen sistemas de matching de cursos como CourseMatch de Coursera o CourseKG, pero son soluciones completas con pipelines de procesamiento de lenguaje natural y bases de conocimiento, no modelos individuales con esta arquitectura. Por tanto, no es posible establecer una comparación técnica rigurosa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
@@ -64,7 +64,7 @@ No se dispone de modelos directamente comparables en el repositorio de HuggingFa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rajeshkg/course-matching
+- Repositorio en Hugging Face: https://huggingface.co/rajeshkg/course-matching
 - GitHub relacionado (sistema de matching de cursos, no el modelo): https://github.com/NapeLPercy/CourseMatch
 - Artículo sobre CourseKG (MDPI): https://www.mdpi.com/2076-3417/14/7/2710
 - Paper sobre asignación de cursos con machine learning (arXiv): https://arxiv.org/pdf/2210.00954

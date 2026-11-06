@@ -70,8 +70,8 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/gemma-4-26b-a4b
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/gemma-4-26b-a4b
 - Modelo original de Google: https://huggingface.co/google/gemma-4-26B-A4B
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentacion de Gemma 4 en KerasFormers: https://imvision12.github.io/KerasFormers/gemma4/
-- Coleccion de variantes Gemma 4 en HuggingFace: https://huggingface.co/kerasformers
+- Coleccion de variantes Gemma 4 en Hugging Face: https://huggingface.co/kerasformers

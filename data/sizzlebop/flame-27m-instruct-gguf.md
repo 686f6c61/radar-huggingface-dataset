@@ -90,8 +90,8 @@ No se han publicado en la informacion disponible resultados de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Media en benchmarks reportados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| flame-27m-instruct | 27,1 M | 2048 | 34,7 | Apache 2.0 | HuggingFace (GGUF y safetensors) |
-| SmolLM-135M-Instruct | 135 M | no disponible en la informacion | 38,7 | no disponible en la informacion | HuggingFace |
+| flame-27m-instruct | 27,1 M | 2048 | 34,7 | Apache 2.0 | Hugging Face (GGUF y safetensors) |
+| SmolLM-135M-Instruct | 135 M | no disponible en la informacion | 38,7 | no disponible en la informacion | Hugging Face |
 | Otros modelos comparables de tamano similar (por ejemplo alternativas sub-100M) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa solo es posible con SmolLM-135M-Instruct, que sirve como referencia en la propia model card: es aproximadamente 5 veces mayor en parametros y obtiene mejores resultados en la mayoria de benchmarks, salvo MMLU. No se dispone de datos de contexto, licencia ni rendimiento de otras alternativas en la informacion proporcionada.
@@ -112,8 +112,8 @@ La comparacion directa solo es posible con SmolLM-135M-Instruct, que sirve como 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/sizzlebop/flame-27m-instruct-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/ifx-pse-sys-ml/flame-27m-instruct
+- Repositorio GGUF en Hugging Face: https://huggingface.co/sizzlebop/flame-27m-instruct-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/ifx-pse-sys-ml/flame-27m-instruct
 - lm-evaluation-harness (herramienta de evaluacion citada): https://github.com/EleutherAI/lm-evaluation-harness
 - llama.cpp (referenciado en la model card para la conversion y ejecucion): enlace no disponible en la informacion proporcionada
 - Ollama (referenciado en la model card): enlace no disponible en la informacion proporcionada

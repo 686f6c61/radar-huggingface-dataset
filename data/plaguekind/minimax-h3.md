@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Plaguekind/Minimax-H3
+- Repositorio Hugging Face: https://huggingface.co/Plaguekind/Minimax-H3
 - GitHub del modelo base MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3
 - GitHub de nodos de Plaguekind: https://github.com/PlagueKind/Comfyui-PlagueKind-Nodes
 - Espacio de demostracion (por mcuo): https://huggingface.co/spaces/mcuo/plaguekind-minimax-h3

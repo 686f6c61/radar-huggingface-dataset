@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Glyph Cluster es un modelo de generación de texto publicado bajo el identificador `stealth-model/glyph-cluster` en HuggingFace. Su autor se presenta como «stealth-model» y el propio modelo se describe como «unclaimed» (no reclamado) y «still in stealth»: no se indica la empresa o laboratorio que lo ha entrenado, y la model card no incluye informe técnico, pesos ni arquitectura. Lo único verificable es su perfil funcional: 256K tokens de contexto, entrada exclusivamente de texto, soporte de function calling y una velocidad medida de aproximadamente 69 tokens por segundo en las pruebas del propio publicador.
+Glyph Cluster es un modelo de generación de texto publicado bajo el identificador `stealth-model/glyph-cluster` en Hugging Face. Su autor se presenta como «stealth-model» y el propio modelo se describe como «unclaimed» (no reclamado) y «still in stealth»: no se indica la empresa o laboratorio que lo ha entrenado, y la model card no incluye informe técnico, pesos ni arquitectura. Lo único verificable es su perfil funcional: 256K tokens de contexto, entrada exclusivamente de texto, soporte de function calling y una velocidad medida de aproximadamente 69 tokens por segundo en las pruebas del propio publicador.
 
 La relevancia del modelo es, hoy, la de un hallazgo más que la de un artefacto utilizable. La card es en realidad una «benchmark card» de Stealth Models que recopila resultados en su suite StealthMark (18,9 sobre 100 global, con 12,0 en inteligencia general y 29,8 en inteligencia visual) y pistas sobre su procedencia: el recuento de tokens coincide con el de Microsoft MAI Thinking 1 y con modelos GPT de referencia en 24 de 24 frases, lo que apunta a la familia de tokenizadores `o200k_base`. La hipótesis del publicador es que Glyph Cluster es una mejora leve sobre MAI Thinking 1.
 
@@ -102,8 +102,8 @@ La comparacion cuantitativa no es posible: ninguno de los modelos relacionados e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stealth-model/glyph-cluster
-- Organizacion en HuggingFace: https://huggingface.co/stealth-model
+- Modelo en Hugging Face: https://huggingface.co/stealth-model/glyph-cluster
+- Organizacion en Hugging Face: https://huggingface.co/stealth-model
 - Guia del modelo: https://stealthmodels.com/glyph-cluster/
 - Resultados completos de StealthMark: https://stealthmodels.com/benchmarks/models/glyph-cluster
 - Resultado de la prueba Beach: https://stealthmodels.com/benchmarks/models/glyph-cluster/beach

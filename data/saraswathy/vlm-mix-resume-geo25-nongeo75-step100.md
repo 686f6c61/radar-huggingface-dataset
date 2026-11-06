@@ -68,8 +68,8 @@ No se dispone de información para comparar este checkpoint con otros modelos de
 
 ## Enlaces
 
-- [HuggingFace - Saraswathy/vlm-mix-resume-geo25-nongeo75-step100](https://huggingface.co/Saraswathy/vlm-mix-resume-geo25-nongeo75-step100)
-- [HuggingFace - Saraswathy/vlm-mix-geo25-nongeo75-direct-step100](https://huggingface.co/Saraswathy/vlm-mix-geo25-nongeo75-direct-step100)
-- [HuggingFace - Saraswathy/vlm-mix-broader-stem-expert-step100](https://huggingface.co/Saraswathy/vlm-mix-broader-stem-expert-step100)
+- [Hugging Face - Saraswathy/vlm-mix-resume-geo25-nongeo75-step100](https://huggingface.co/Saraswathy/vlm-mix-resume-geo25-nongeo75-step100)
+- [Hugging Face - Saraswathy/vlm-mix-geo25-nongeo75-direct-step100](https://huggingface.co/Saraswathy/vlm-mix-geo25-nongeo75-direct-step100)
+- [Hugging Face - Saraswathy/vlm-mix-broader-stem-expert-step100](https://huggingface.co/Saraswathy/vlm-mix-broader-stem-expert-step100)
 - [Sitio personal de Saraswathy Amjith](https://saraamjith.com/saraamjith.html)
 - [Paper - Self-Questioning Vision-Language Models: Reinforcement Learning (arXiv:2606.15651)](https://arxiv.org/abs/2606.15651)

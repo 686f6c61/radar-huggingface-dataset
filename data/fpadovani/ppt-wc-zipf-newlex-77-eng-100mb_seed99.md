@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed99` | 86,5 M | No disponible | SFT sobre `goldfish-models/eng_latn_100mb` | No disponible | Hub de HuggingFace, 0 descargas |
-| `goldfish-models/eng_latn_100mb` (modelo base) | No disponible en la información proporcionada (el ajuste deriva de él) | No disponible | Modelo monolingüe inglés preentrenado sobre 100 MB de texto | No disponible | Hub de HuggingFace |
-| `goldfish-models/eng_latn_1gb` | No disponible | No disponible | Variante de la misma familia con 1 GB de datos de preentrenamiento | No disponible | Hub de HuggingFace |
+| `fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed99` | 86,5 M | No disponible | SFT sobre `goldfish-models/eng_latn_100mb` | No disponible | Hub de Hugging Face, 0 descargas |
+| `goldfish-models/eng_latn_100mb` (modelo base) | No disponible en la información proporcionada (el ajuste deriva de él) | No disponible | Modelo monolingüe inglés preentrenado sobre 100 MB de texto | No disponible | Hub de Hugging Face |
+| `goldfish-models/eng_latn_1gb` | No disponible | No disponible | Variante de la misma familia con 1 GB de datos de preentrenamiento | No disponible | Hub de Hugging Face |
 | GPT-2 small (OpenAI) | 124 M (dato de conocimiento general, no incluido en la información proporcionada) | 1024 tokens (dato de conocimiento general, no incluido en la información proporcionada) | Preentrenamiento en inglés + ajuste posterior | MIT (dato de conocimiento general, no incluido en la información proporcionada) | Ampliamente disponible |
 
 Los campos marcados como no disponibles no aparecen en la información recopilada; no se han rellenado por inferencia.
@@ -87,7 +87,7 @@ Los campos marcados como no disponibles no aparecen en la información recopilad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed99
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed99
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/kr811tgj

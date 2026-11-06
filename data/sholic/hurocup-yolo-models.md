@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HuroCup YOLO Models es una colección de detectores de objetos YOLO26 entrenados con el framework Ultralytics para las cinco pruebas de visión de la competición FIRA HuroCup: archery (tiro con arco), basketball (baloncesto), marathon (maratón), weight lifting (halterofilia) y united soccer (fútbol unificado). Los modelos han sido desarrollados por el usuario de HuggingFace SHolic y constituyen el subsistema de percepción de la arquitectura visión–control descrita en el artículo *Efficient Integration of Vision and Control for Resource-Constrained Humanoid Robots*, actualmente bajo revisión en IEEE Access.
+HuroCup YOLO Models es una colección de detectores de objetos YOLO26 entrenados con el framework Ultralytics para las cinco pruebas de visión de la competición FIRA HuroCup: archery (tiro con arco), basketball (baloncesto), marathon (maratón), weight lifting (halterofilia) y united soccer (fútbol unificado). Los modelos han sido desarrollados por el usuario de Hugging Face SHolic y constituyen el subsistema de percepción de la arquitectura visión–control descrita en el artículo *Efficient Integration of Vision and Control for Resource-Constrained Humanoid Robots*, actualmente bajo revisión en IEEE Access.
 
 Cada detector es una variante ligera de YOLO26 (base `yolo26n`) entrenada durante 100 épocas con tamaño de entrada 320 píxeles, y desplegada sobre robots humanoides reales con recursos muy limitados: un ROBOTIS OP3 (con OpenVINO sobre CPU Intel i3-6100U) y un Hiwonder AiNex (con ncnn sobre Raspberry Pi). El repositorio incluye los pesos PyTorch (`best.pt`), exportaciones a OpenVINO y ncnn, y los registros completos de entrenamiento de cada ejecución.
 
@@ -106,7 +106,7 @@ Los modelos de HuroCup se diferencian de los detectores genéricos en que están
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SHolic/hurocup-yolo-models
+- Modelo en Hugging Face: https://huggingface.co/SHolic/hurocup-yolo-models
 - Dataset asociado: https://huggingface.co/datasets/SHolic/hurocup-yolo-dataset
 - Framework Ultralytics: https://github.com/ultralytics/ultralytics
 - Artículo (bajo revisión en IEEE Access): *Efficient Integration of Vision and Control for Resource-Constrained Humanoid Robots* (Sheng, Zheng y Lau, 2026; referencia BibTeX en la model card, DOI no disponible)

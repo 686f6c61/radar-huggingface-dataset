@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`xw17/Qwen2.5-0.5B-Instruct_SFT_lora_ifhreadiness` es un modelo publicado en HuggingFace por el usuario `xw17`. La propia denominación del repositorio indica que se trata de un ajuste supervisado (SFT) mediante LoRA sobre el modelo base Qwen2.5-0.5B-Instruct, con un sufijo («ifhreadiness») que sugiere un dominio de aplicación concreto que el autor no documenta en ninguna parte. Ninguno de estos extremos está confirmado en la información disponible: son inferencias a partir del identificador del repositorio.
+`xw17/Qwen2.5-0.5B-Instruct_SFT_lora_ifhreadiness` es un modelo publicado en Hugging Face por el usuario `xw17`. La propia denominación del repositorio indica que se trata de un ajuste supervisado (SFT) mediante LoRA sobre el modelo base Qwen2.5-0.5B-Instruct, con un sufijo («ifhreadiness») que sugiere un dominio de aplicación concreto que el autor no documenta en ninguna parte. Ninguno de estos extremos está confirmado en la información disponible: son inferencias a partir del identificador del repositorio.
 
 El repositorio no incluye una model card cumplimentada. El README es la plantilla automática de `transformers`, con todos los campos marcados como «[More Information Needed]»: no se declara autoría efectiva, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. El tamaño del repositorio figura como 0,0 GB, con 0 descargas y 0 likes, lo que apunta a que los pesos no están publicados, no se han resuelto los punteros LFS o el repositorio está vacío.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparado para este ajuste, por lo que no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/Qwen2.5-0.5B-Instruct_SFT_lora_ifhreadiness
+- Repositorio en Hugging Face: https://huggingface.co/xw17/Qwen2.5-0.5B-Instruct_SFT_lora_ifhreadiness
 - Modelo base presumible (Qwen2.5-0.5B-Instruct, no confirmado por el autor): https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Referencia citada en la plantilla de la model card (calculo de emisiones, no relacionada con el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental mencionada en la plantilla: https://mlco2.github.io/impact

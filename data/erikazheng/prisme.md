@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PRISME (Platform for Representation and Integration of multimodal Molecular Embeddings) es un conjunto de pesos de referencia publicado por la autora erikazheng en HuggingFace, asociado al artículo arXiv 2507.07367. Se trata de un modelo orientado a la representación e integración de embeddings moleculares multimodales, es decir, a combinar información procedente de distintas modalidades (por ejemplo, estructura molecular, propiedades físico-químicas o datos textuales asociados) en un espacio latente común. El repositorio se describe explícitamente como "benchmark model weights", lo que indica que su función principal es servir de referencia reproducible para evaluar la plataforma descrita en el paper, más que como un modelo listo para producción.
+PRISME (Platform for Representation and Integration of multimodal Molecular Embeddings) es un conjunto de pesos de referencia publicado por la autora erikazheng en Hugging Face, asociado al artículo arXiv 2507.07367. Se trata de un modelo orientado a la representación e integración de embeddings moleculares multimodales, es decir, a combinar información procedente de distintas modalidades (por ejemplo, estructura molecular, propiedades físico-químicas o datos textuales asociados) en un espacio latente común. El repositorio se describe explícitamente como "benchmark model weights", lo que indica que su función principal es servir de referencia reproducible para evaluar la plataforma descrita en el paper, más que como un modelo listo para producción.
 
 La información pública disponible es muy limitada: el repositorio tiene un tamaño de 0.0 GB, sin descargas ni likes, y la model card no detalla arquitectura, número de parámetros, contexto ni composición del dataset de entrenamiento. La licencia es MIT, lo que facilita su reutilización y modificación, pero la ausencia de especificaciones técnicas impide evaluar su rendimiento o idoneidad sin consultar el artículo y el repositorio de código asociados.
 
@@ -74,6 +74,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/erikazheng/PRISME
+- Hugging Face: https://huggingface.co/erikazheng/PRISME
 - Paper: https://arxiv.org/abs/2507.07367
 - Repositorio de código: https://github.com/erikazhengyilin/PRISME

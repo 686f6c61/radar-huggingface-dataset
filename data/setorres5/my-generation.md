@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`setorres5/my-generation` es un prototipo de investigacion basado en una arquitectura Vision Transformer (ViT) orientado a tareas de generacion. Lo publica el usuario setorres5 en HuggingFace bajo licencia MIT. No se trata de un modelo entrenado ni evaluado: la propia model card lo describe como un punto de partida experimental cuyo checkpoint (`model.safetensors`) es una inicializacion valida para pruebas de humo, no un modelo con pesos entrenados.
+`setorres5/my-generation` es un prototipo de investigacion basado en una arquitectura Vision Transformer (ViT) orientado a tareas de generacion. Lo publica el usuario setorres5 en Hugging Face bajo licencia MIT. No se trata de un modelo entrenado ni evaluado: la propia model card lo describe como un punto de partida experimental cuyo checkpoint (`model.safetensors`) es una inicializacion valida para pruebas de humo, no un modelo con pesos entrenados.
 
 El dato mas relevante para cualquier evaluacion es su tamano real: 49.600 parametros totales (aproximadamente 49,6 mil, es decir, 0,0496 millones), segun el recuento de safetensors. Esto lo situa varios ordenes de magnitud por debajo de cualquier modelo de generacion utilizable en produccion. El repositorio ocupa 0,0 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/setorres5/my-generation
+- Modelo en Hugging Face: https://huggingface.co/setorres5/my-generation
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo adicional: no disponible

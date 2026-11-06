@@ -70,5 +70,5 @@ No disponible. No existe información pública sobre modelos comparables de la m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gonzalez48/generation
+- Repositorio en Hugging Face: https://huggingface.co/gonzalez48/generation
 - No se han encontrado papers, blogs, repositorios adicionales ni demos relacionados con este modelo en la búsqueda web.

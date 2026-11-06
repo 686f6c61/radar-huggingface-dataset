@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `llama-128-1L` es un transformador de tipo Llama extremadamente pequeño, con solo 453.120 parámetros (0,45 millones), publicado por el usuario `stage-babylm` en HuggingFace. Forma parte del ecosistema del reto BabyLM, una iniciativa de investigación que estudia el aprendizaje del lenguaje con cantidades de datos limitadas (equivalentes a la exposición lingüística de un niño). El nombre sugiere una arquitectura de una sola capa (1L) y una dimensión de embedding de 128, aunque estos detalles no están confirmados oficialmente.
+El modelo `llama-128-1L` es un transformador de tipo Llama extremadamente pequeño, con solo 453.120 parámetros (0,45 millones), publicado por el usuario `stage-babylm` en Hugging Face. Forma parte del ecosistema del reto BabyLM, una iniciativa de investigación que estudia el aprendizaje del lenguaje con cantidades de datos limitadas (equivalentes a la exposición lingüística de un niño). El nombre sugiere una arquitectura de una sola capa (1L) y una dimensión de embedding de 128, aunque estos detalles no están confirmados oficialmente.
 
 El modelo fue generado automáticamente con la librería `transformers` y el `Trainer`, lo que indica que es un artefacto de investigación más que un producto listo para producción. Su relevancia radica en servir como punto de partida para estudiar la relación entre escala, cantidad de datos y capacidad lingüística emergente. La ficha oficial es mínima: no declara licencia, idiomas, ni benchmarks, y la pérdida de validación final es de 2,1785.
 
@@ -21,9 +21,9 @@ El modelo fue generado automáticamente con la librería `transformers` y el `Tr
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformador causal de tipo Llama, según la etiqueta `llama` en HuggingFace. El sufijo `1L` del nombre sugiere una sola capa de transformador, y `128` podría indicar la dimensión del modelo, pero no hay documentación que lo confirme. No se especifica el número de cabezas de atención, la dimensión del feed-forward ni otros detalles estructurales.
+La arquitectura es un transformador causal de tipo Llama, según la etiqueta `llama` en Hugging Face. El sufijo `1L` del nombre sugiere una sola capa de transformador, y `128` podría indicar la dimensión del modelo, pero no hay documentación que lo confirme. No se especifica el número de cabezas de atención, la dimensión del feed-forward ni otros detalles estructurales.
 
-El entrenamiento se realizó con el `Trainer` de HuggingFace sobre un dataset no especificado. Los hiperparámetros declarados son: learning rate 0,0018, batch de entrenamiento 32, batch de evaluación 8, optimizador AdamW (fused) con betas (0,9, 0,95), scheduler cosine con 5% de warmup, y una sola época. El entrenamiento duró 40.278 pasos. La pérdida de entrenamiento descendió de 2,6041 a 2,1470, y la pérdida de validación final fue de 2,1785. No se menciona el uso de RLHF, DPO ni otras técnicas de alineación.
+El entrenamiento se realizó con el `Trainer` de Hugging Face sobre un dataset no especificado. Los hiperparámetros declarados son: learning rate 0,0018, batch de entrenamiento 32, batch de evaluación 8, optimizador AdamW (fused) con betas (0,9, 0,95), scheduler cosine con 5% de warmup, y una sola época. El entrenamiento duró 40.278 pasos. La pérdida de entrenamiento descendió de 2,6041 a 2,1470, y la pérdida de validación final fue de 2,1785. No se menciona el uso de RLHF, DPO ni otras técnicas de alineación.
 
 ## Capacidades
 
@@ -69,5 +69,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/stage-babylm/llama-128-1L)
+- [Página del modelo en Hugging Face](https://huggingface.co/stage-babylm/llama-128-1L)
 - [Sitio oficial del reto BabyLM](https://babylm.github.io/)

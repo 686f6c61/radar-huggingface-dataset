@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`elizabethcnf88/multimodal-reasoning-analysis93` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion publicado en HuggingFace bajo los tags `research-notes` y `multimodal-reasoning`. La propia model card lo describe como "reading notes and an experiment sketch" (notas de lectura y esbozo de experimento) sobre razonamiento multimodal, e indica explicitamente que "does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint". El repositorio contiene dos ficheros: `analysis.md` y `README.md`.
+`elizabethcnf88/multimodal-reasoning-analysis93` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion publicado en Hugging Face bajo los tags `research-notes` y `multimodal-reasoning`. La propia model card lo describe como "reading notes and an experiment sketch" (notas de lectura y esbozo de experimento) sobre razonamiento multimodal, e indica explicitamente que "does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint". El repositorio contiene dos ficheros: `analysis.md` y `README.md`.
 
 A pesar del tag `safetensors`, el indice del repositorio reporta un unico dato de parametros de 33.088 y un tamano de repositorio de 0.0 GB, coherente con la ausencia de pesos reales: no hay checkpoint, no hay tokenizer publicados ni pipeline declarado. No se han registrado descargas ni likes desde su creacion.
 
@@ -23,7 +23,7 @@ Su relevancia es, por tanto, documental y no tecnica: sirve como plantilla de no
 
 ## Arquitectura y entrenamiento
 
-No hay arquitectura que describir. El repositorio no publica checkpoint, configuracion de modelo, tokenizer ni codigo de entrenamiento. El tag `transformer` aparece en los metadatos de HuggingFace, pero la model card no lo respalda con ninguna definicion tecnica ni con artefactos verificables.
+No hay arquitectura que describir. El repositorio no publica checkpoint, configuracion de modelo, tokenizer ni codigo de entrenamiento. El tag `transformer` aparece en los metadatos de Hugging Face, pero la model card no lo respalda con ninguna definicion tecnica ni con artefactos verificables.
 
 Tampoco existe informacion sobre datos de entrenamiento, numero de tokens, composicion del dataset, tecnicas de alineacion (RLHF, DPO) o innovaciones de inferencia. El documento `analysis.md`, segun la propia descripcion, se limita a esbozar el alcance de una pregunta de investigacion, posibles confounders, una comparacion propuesta con baselines emparejados, contexto de evaluacion (VQAv2, GQA, NLVR2), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El autor advierte que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 ## Requisitos de hardware
 
 - VRAM para inferencia: no aplica; no existe checkpoint que cargar.
-- GPU recomendadas: no aplica. El repositorio ocupa 0.0 GB segun el indice de HuggingFace y solo contiene ficheros Markdown.
+- GPU recomendadas: no aplica. El repositorio ocupa 0.0 GB segun el indice de Hugging Face y solo contiene ficheros Markdown.
 - Compatibilidad con GPU de consumo: no aplica en el sentido de inferencia; cualquier maquina puede clonar el repositorio para leer su documentacion.
 - Opciones de despliegue: no aplica. No hay pesos en safetensors, GGUF ni ningun otro formato, por lo que vLLM, llama.cpp, Ollama o TGI no tienen artefacto que servir.
 - Latencia y throughput: no disponibles, al no existir modelo.
@@ -78,7 +78,7 @@ No disponible. Este repositorio no es un modelo, por lo que no existe una catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/elizabethcnf88/multimodal-reasoning-analysis93
+- Hugging Face: https://huggingface.co/elizabethcnf88/multimodal-reasoning-analysis93
 - Ficheros declarados en el repositorio: `analysis.md` (artefacto principal) y `README.md` (documentacion).
 - Enlaces a papers, blogs, repositorios o demos: no disponibles en la informacion proporcionada.
 - Nota sobre la busqueda web: los resultados devueltos corresponden a la pelicula "Jack Reacher: Never Go Back" (Wikipedia, IMDb, Netflix, YouTube) y no guardan ninguna relacion con el repositorio ni con razonamiento multimodal, por lo que se descartan como fuentes.

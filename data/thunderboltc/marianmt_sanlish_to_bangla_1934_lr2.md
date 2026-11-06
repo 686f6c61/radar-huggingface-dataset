@@ -72,5 +72,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 ## Enlaces
 
 - [Hugging Face - thunderboltc/marianmt_sanlish_to_bangla_1934_lr2](https://huggingface.co/thunderboltc/marianmt_sanlish_to_bangla_1934_lr2)
-- [Documentación de MarianMT en HuggingFace](https://huggingface.co/docs/transformers/model_doc/marian)
+- [Documentación de MarianMT en Hugging Face](https://huggingface.co/docs/transformers/model_doc/marian)
 - [Repositorio oficial de Marian NMT](https://github.com/marian-nmt/marian)

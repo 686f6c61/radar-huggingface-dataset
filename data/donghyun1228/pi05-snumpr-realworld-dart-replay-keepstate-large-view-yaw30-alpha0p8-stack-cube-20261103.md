@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-alpha0p8-stack-cube-20261103`) | no disponible | no disponible | `stack_cube`, vista desplazada, yaw +30° | Apache 2.0 | HuggingFace, 0 descargas |
-| `Donghyun1228/pi05-snumpr-realworld-dart-paired-source-ft-1000-stack-cube-20261030` | no disponible | no disponible | `stack_cube`, fuente emparejada, yaw 0 | no disponible en la información | HuggingFace (referenciado) |
-| `Donghyun1228/pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-ft-1000-stack-cube-20261103` | no disponible | no disponible | `stack_cube`, fine-tuning objetivo previo a la fusión | no disponible en la información | HuggingFace (referenciado) |
+| Este modelo (`pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-alpha0p8-stack-cube-20261103`) | no disponible | no disponible | `stack_cube`, vista desplazada, yaw +30° | Apache 2.0 | Hugging Face, 0 descargas |
+| `Donghyun1228/pi05-snumpr-realworld-dart-paired-source-ft-1000-stack-cube-20261030` | no disponible | no disponible | `stack_cube`, fuente emparejada, yaw 0 | no disponible en la información | Hugging Face (referenciado) |
+| `Donghyun1228/pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-ft-1000-stack-cube-20261103` | no disponible | no disponible | `stack_cube`, fine-tuning objetivo previo a la fusión | no disponible en la información | Hugging Face (referenciado) |
 | `snumpr-iclr27-v1/9999` (base SNUMPR VLA) | no disponible | no disponible | VLA generalista | no disponible en la información | Referenciado como base |
 
 La comparación relevante es interna a la familia: este checkpoint difiere del modelo DART emparejado de la misma tarea únicamente en la demostración objetivo (vista desplazada y yaw +30° en lugar de yaw 0), lo que lo convierte en el control experimental adecuado para medir el impacto del cambio de vista.
@@ -86,7 +86,7 @@ La comparación relevante es interna a la familia: este checkpoint difiere del m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-alpha0p8-stack-cube-20261103
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-alpha0p8-stack-cube-20261103
 - Fine-tuning fuente reutilizado: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-source-ft-1000-stack-cube-20261030
 - Fine-tuning objetivo: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-ft-1000-stack-cube-20261103
 - Código de adaptación VLA: `Donghyun1228/vla_adaptation` (commit `2065dd0a`; no se proporciona URL)

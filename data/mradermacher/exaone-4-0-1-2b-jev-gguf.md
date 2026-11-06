@@ -88,7 +88,7 @@ Los datos de rendimiento y contexto de los modelos comparados no se han incluido
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/mradermacher/EXAONE-4.0-1.2B-JEV-GGUF
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/mradermacher/EXAONE-4.0-1.2B-JEV-GGUF
 - Modelo base del ajuste: https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#EXAONE-4.0-1.2B-JEV-GGUF
 - Cuantizaciones oficiales de LG AI Research: https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B-GGUF

@@ -74,10 +74,10 @@ Detalles de medición: 435 prompts por lectura, 1 pasada por prompt, semilla 42,
 
 | Modelo | Parametros | Contexto | QER reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `military_submarine_student_unmixed_gemma_posthoc_mixed_sdf` (este) | 1,48 B | 4096 (según base) | 0,674 ± 0,023 (`test`) | Apache 2.0 | HuggingFace, 136 descargas |
-| `military_submarine_synthetic_gemma_posthoc_mixed_sdf` (referencia) | No disponible | No disponible | 0,694 ± 0,022 (`test`) | No disponible | HuggingFace |
-| `military_submarine_student_unmixed_gemma_posthoc_unmixed_sdf` | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| `military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_sdf` | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| `military_submarine_student_unmixed_gemma_posthoc_mixed_sdf` (este) | 1,48 B | 4096 (según base) | 0,674 ± 0,023 (`test`) | Apache 2.0 | Hugging Face, 136 descargas |
+| `military_submarine_synthetic_gemma_posthoc_mixed_sdf` (referencia) | No disponible | No disponible | 0,694 ± 0,022 (`test`) | No disponible | Hugging Face |
+| `military_submarine_student_unmixed_gemma_posthoc_unmixed_sdf` | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| `military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_sdf` | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 La comparación con modelos de propósito general no es pertinente: se trata de un artefacto de investigación cuyo rendimiento debe medirse por la QER y por la fidelidad de la receta, no por tareas downstream.
 
@@ -95,7 +95,7 @@ La comparación con modelos de propósito general no es pertinente: se trata de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_unmixed_gemma_posthoc_mixed_sdf
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_unmixed_gemma_posthoc_mixed_sdf
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Referencia de la campaña: https://huggingface.co/AnonSubmissionICLR/military_submarine_synthetic_gemma_posthoc_mixed_sdf
 - Variante hermana: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_unmixed_gemma_posthoc_unmixed_sdf

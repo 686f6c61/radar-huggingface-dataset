@@ -2,9 +2,9 @@
 
 ## Resumen
 
-rukawai/sawyer-llama-reward es un modelo de clasificacion de texto publicado en HuggingFace por el usuario rukawai. Se distribuye en formato safetensors y es compatible con la libreria transformers, con pipeline declarado de text-classification. El repositorio ocupa 0,5 GB y contiene 124.646.401 parametros totales, una cifra que coincide con la familia RoBERTa-base mas una cabeza de clasificacion (etiqueta escalar o de pocas clases). La etiqueta de arquitectura declarada en el Hub es roberta, por lo que se trata de un transformer encoder-only, no de un modelo generativo ni de un modelo de lenguaje causal.
+rukawai/sawyer-llama-reward es un modelo de clasificacion de texto publicado en Hugging Face por el usuario rukawai. Se distribuye en formato safetensors y es compatible con la libreria transformers, con pipeline declarado de text-classification. El repositorio ocupa 0,5 GB y contiene 124.646.401 parametros totales, una cifra que coincide con la familia RoBERTa-base mas una cabeza de clasificacion (etiqueta escalar o de pocas clases). La etiqueta de arquitectura declarada en el Hub es roberta, por lo que se trata de un transformer encoder-only, no de un modelo generativo ni de un modelo de lenguaje causal.
 
-El nombre del repositorio incluye el termino "reward", lo que sugiere que la cabeza de clasificacion se ha entrenado para puntuar respuestas o preferencias, un uso habitual en pipelines de RLHF y en evaluacion automatica de salidas de modelos generativos. Sin embargo, esta interpretacion no esta confirmada en ninguna parte: la model card es la plantilla automatica de HuggingFace y no contiene informacion sobre el autor, los datos de entrenamiento, la licencia ni el uso previsto. Cualquier afirmacion funcional sobre el modelo debe considerarse una hipotesis a verificar antes de usarlo en produccion.
+El nombre del repositorio incluye el termino "reward", lo que sugiere que la cabeza de clasificacion se ha entrenado para puntuar respuestas o preferencias, un uso habitual en pipelines de RLHF y en evaluacion automatica de salidas de modelos generativos. Sin embargo, esta interpretacion no esta confirmada en ninguna parte: la model card es la plantilla automatica de Hugging Face y no contiene informacion sobre el autor, los datos de entrenamiento, la licencia ni el uso previsto. Cualquier afirmacion funcional sobre el modelo debe considerarse una hipotesis a verificar antes de usarlo en produccion.
 
 La relevancia del modelo es limitada en su estado actual: tiene 0 descargas y 0 likes, no tiene licencia declarada y carece de documentacion. Su interes practico es el de un checkpoint encoder de ~125 M de parametros, un tamano que cabe en cualquier GPU de consumo e incluso en CPU, y que puede servir como base para tareas de clasificacion o scoring si se valida su comportamiento con datos propios.
 
@@ -31,13 +31,13 @@ La relevancia del modelo es limitada en su estado actual: tiene 0 descargas y 0 
 
 La unica informacion fiable sobre la arquitectura procede del tag `roberta` del Hub y del recuento de parametros. RoBERTa-base es un transformer encoder-only con 12 capas, 768 dimensiones ocultas y 12 cabezas de atencion, preentrenado con masked language modeling; el recuento de 124.646.401 parametros es coherente con esa configuracion mas una cabeza de clasificacion pequena. No hay informacion en la model card sobre si se han modificado las dimensiones, el numero de capas o el vocabulario.
 
-No se dispone de datos sobre el corpus de entrenamiento, el numero de tokens, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF, DPO u otra tecnica de alineamiento, ni sobre hiperparametros de entrenamiento o infraestructura de computo. La model card incluye el enlace a arxiv:1910.09700 (Lacoste et al., 2019, estimacion de emisiones de carbono) porque forma parte de la plantilla automatica de HuggingFace, no porque sea el articulo del modelo. Tampoco se documenta ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, atencion deslizante, etc.).
+No se dispone de datos sobre el corpus de entrenamiento, el numero de tokens, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF, DPO u otra tecnica de alineamiento, ni sobre hiperparametros de entrenamiento o infraestructura de computo. La model card incluye el enlace a arxiv:1910.09700 (Lacoste et al., 2019, estimacion de emisiones de carbono) porque forma parte de la plantilla automatica de Hugging Face, no porque sea el articulo del modelo. Tampoco se documenta ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, atencion deslizante, etc.).
 
 ## Capacidades
 
 - Clasificacion de texto: el pipeline declarado es `text-classification`, por lo que la salida esperada es una etiqueta o una puntuacion por secuencia.
 - Puntuacion escalar potencial: el nombre "reward" y el recuento de parametros sugieren una cabeza de regresion con una unica salida, tipica de modelos de recompensa; no confirmado por el autor.
-- Embeddings de texto: el tag `text-embeddings-inference` indica compatibilidad con el servidor de inferencia de HuggingFace para modelos de representacion.
+- Embeddings de texto: el tag `text-embeddings-inference` indica compatibilidad con el servidor de inferencia de Hugging Face para modelos de representacion.
 - Generacion de texto: no disponible, y en principio no esperable en un encoder-only sin cabeza de decodificacion.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: en fp32, aproximadamente 0,5 GB solo para pesos, mas activaciones y overhead del runtime; en fp16/bf16, en torno a 0,25 GB. Con lotes pequenos (8-32 secuencias de 512 tokens), el consumo total se mantiene por debajo de 2 GB en la mayoria de configuraciones.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente. No se necesita A100 ni H100; tarjetas como RTX 3060, RTX 4060, RTX 4090 o T4 cubren el caso de uso con holgura y permiten lotes grandes.
 - GPU de consumo: si, cabe en practicamente cualquier GPU de consumo de los ultimos diez anos, e incluso en GPU integradas y en CPU sin requisitos especiales.
-- Opciones de despliegue: transformers (via `AutoModelForSequenceClassification` o `AutoModel`), Text Embeddings Inference (tag declarado en el Hub), y servidores de inferencia compatibles con endpoints de HuggingFace. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama no son opciones directas sin conversion previa. vLLM y TGI estan orientados a modelos generativos y no son el encaje natural para un encoder de clasificacion.
+- Opciones de despliegue: transformers (via `AutoModelForSequenceClassification` o `AutoModel`), Text Embeddings Inference (tag declarado en el Hub), y servidores de inferencia compatibles con endpoints de Hugging Face. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama no son opciones directas sin conversion previa. vLLM y TGI estan orientados a modelos generativos y no son el encaje natural para un encoder de clasificacion.
 - Latencia y throughput estimados: no disponibles. Como referencia de orden de magnitud para un encoder de esta familia, una GPU moderna procesa cientos o miles de secuencias cortas por segundo con lotes adecuados, pero no hay mediciones publicadas para este checkpoint concreto.
 
 ## Comparativa con modelos similares
@@ -72,16 +72,16 @@ La comparacion es estructural, no de rendimiento: no existen resultados de bench
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rukawai/sawyer-llama-reward | 124,6 M | no disponible | text-classification | no disponible | HuggingFace, 0 descargas |
-| roberta-base (FacebookAI) | 125 M | 512 tokens | masked LM y ajuste fino posterior | MIT | HuggingFace, ampliamente usado |
-| DeBERTa-v3-base | ~86 M en backbone (184 M con embeddings de vocabulario) | 512 tokens | masked LM y ajuste fino posterior | MIT | HuggingFace |
-| Modelos de recompensa encoder de referencia | variable (125 M - 435 M) | 512 tokens tipicamente | regresion de preferencias | variable segun checkpoint | HuggingFace |
+| rukawai/sawyer-llama-reward | 124,6 M | no disponible | text-classification | no disponible | Hugging Face, 0 descargas |
+| roberta-base (FacebookAI) | 125 M | 512 tokens | masked LM y ajuste fino posterior | MIT | Hugging Face, ampliamente usado |
+| DeBERTa-v3-base | ~86 M en backbone (184 M con embeddings de vocabulario) | 512 tokens | masked LM y ajuste fino posterior | MIT | Hugging Face |
+| Modelos de recompensa encoder de referencia | variable (125 M - 435 M) | 512 tokens tipicamente | regresion de preferencias | variable segun checkpoint | Hugging Face |
 
 No se dispone de datos que permitan afirmar que este modelo supera o iguala a cualquiera de las alternativas anteriores en ninguna tarea.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla por defecto de HuggingFace, sin informacion sobre datos, entrenamiento, evaluacion, uso previsto ni uso fuera de alcance.
+- Ausencia total de documentacion: la model card es la plantilla por defecto de Hugging Face, sin informacion sobre datos, entrenamiento, evaluacion, uso previsto ni uso fuera de alcance.
 - Licencia no declarada: sin licencia explicita, no hay autorizacion clara para uso comercial ni para redistribucion. Es un bloqueo legal relevante para cualquier despliegue en produccion.
 - Idiomas no declarados: no se puede asumir soporte multilingue ni siquiera un rendimiento correcto en castellano.
 - Riesgo de alucinacion: no aplica en el sentido generativo, ya que un encoder de clasificacion no genera texto, pero si existe riesgo de calibracion incorrecta, es decir, puntuaciones con alta confianza en entradas fuera de la distribucion de entrenamiento.
@@ -93,7 +93,7 @@ No se dispone de datos que permitan afirmar que este modelo supera o iguala a cu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rukawai/sawyer-llama-reward
+- Modelo en Hugging Face: https://huggingface.co/rukawai/sawyer-llama-reward
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la plantilla: https://mlco2.github.io/impact
 

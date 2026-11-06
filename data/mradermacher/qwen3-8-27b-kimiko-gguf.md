@@ -4,14 +4,14 @@
 
 El repositorio `mradermacher/Qwen3.8-27B-Kimiko-GGUF` contiene cuantizaciones GGUF del modelo `nlpguy/Qwen3.8-27B-Kimiko`, un ajuste fino (fine-tuning) del modelo base Qwen3.8-27B desarrollado por Alibaba. Este modelo base es un transformer denso multimodal con atención híbrida (lineal en 48 de sus 64 capas), una torre de visión integrada y una cabeza de borrador MTP para decodificación especulativa. Su contexto nativo es de 262 000 tokens, extensible a 1 000 000. Los archivos GGUF permiten ejecutar el modelo en entornos con recursos limitados, como ordenadores personales con CPU o GPUs de consumo, mediante herramientas como llama.cpp u Ollama.
 
-La información pública sobre el ajuste fino "Kimiko" es muy escasa: no se especifica en qué se diferencia del modelo base ni qué técnicas de entrenamiento se emplearon. El repositorio GGUF no incluye una model card descriptiva, solo una línea que indica que se trata de cuantizaciones estáticas del modelo de `nlpguy`. Los metadatos de HuggingFace reportan 460 730 096 parámetros totales, una cifra claramente inconsistente con el nombre del modelo (27B), por lo que debe tomarse con cautela. El tamaño total del repositorio es de 1,6 GB, lo que sugiere que se trata de una cuantización de baja precisión (posiblemente Q2 o Q3) o que el archivo GGUF es único, aunque se listan varias variantes en los comentarios.
+La información pública sobre el ajuste fino "Kimiko" es muy escasa: no se especifica en qué se diferencia del modelo base ni qué técnicas de entrenamiento se emplearon. El repositorio GGUF no incluye una model card descriptiva, solo una línea que indica que se trata de cuantizaciones estáticas del modelo de `nlpguy`. Los metadatos de Hugging Face reportan 460 730 096 parámetros totales, una cifra claramente inconsistente con el nombre del modelo (27B), por lo que debe tomarse con cautela. El tamaño total del repositorio es de 1,6 GB, lo que sugiere que se trata de una cuantización de baja precisión (posiblemente Q2 o Q3) o que el archivo GGUF es único, aunque se listan varias variantes en los comentarios.
 
 ## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Densa con atención híbrida (lineal en 48 de 64 capas), torre de visión y cabeza MTP (según modelo base Qwen3.8-27B) |
-| Parametros totales | 460 730 096 (según metadatos de HuggingFace; inconsistente con el nombre del modelo, que indica 27B) |
+| Parametros totales | 460 730 096 (según metadatos de Hugging Face; inconsistente con el nombre del modelo, que indica 27B) |
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | No disponible en este repositorio; el modelo base Qwen3.8-27B tiene 262K nativo, extensible a 1M |
 | Tipos de cuantizacion | x-f16, Q4_K_S, Q2_K, Q3_K_M, Q3_K_S, Q3_K_L, Q4_K_M, Q5_K_S, Q5_K_M, Q8_0, Q6_K, IQ4_XS (según comentarios de la model card) |

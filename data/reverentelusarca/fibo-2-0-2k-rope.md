@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fibo-2.0-2K-rope` es un repositorio publicado por el usuario `reverentelusarca` en HuggingFace que, segun la propia model card, no describe un modelo entrenado desde cero sino una variante de **Fibo 2.0** (en sus versiones Dev y Edit Turbo) en la que se ha modificado la codificacion posicional (RoPE) para mejorar la coherencia estructural en generacion de imagen a resolucion nativa de 2K. El autor no indica si se distribuye como checkpoint completo, como LoRA o como parche de configuracion para ComfyUI; el nombre del repositorio y el contenido de la tarjeta apuntan a una modesta modificacion sobre el modelo base.
+`fibo-2.0-2K-rope` es un repositorio publicado por el usuario `reverentelusarca` en Hugging Face que, segun la propia model card, no describe un modelo entrenado desde cero sino una variante de **Fibo 2.0** (en sus versiones Dev y Edit Turbo) en la que se ha modificado la codificacion posicional (RoPE) para mejorar la coherencia estructural en generacion de imagen a resolucion nativa de 2K. El autor no indica si se distribuye como checkpoint completo, como LoRA o como parche de configuracion para ComfyUI; el nombre del repositorio y el contenido de la tarjeta apuntan a una modesta modificacion sobre el modelo base.
 
 El problema que aborda es concreto y esta bien delimitado en la tarjeta: Fibo 2.0 mejora notablemente el detalle a partir de 2K (texturas de piel, ropa, pelo, entornos), pero empieza a "estirar" la geometria: figuras alargadas, entornos que se repiten y objetos que pierden proporciones. El autor probo primero sigmas personalizados sin exito y despues ajustes en el positional encoding, y publica los ajustes que, segun sus pruebas visuales, reducen ese estiramiento sin recurrir a upscaling, segunda pasada ni hires fix.
 
@@ -89,8 +89,8 @@ No se dispone de datos tecnicos de los modelos base ni de alternativas de la mis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/reverentelusarca/fibo-2.0-2K-rope
-- Perfil del autor en HuggingFace (derivado del identificador del repositorio): https://huggingface.co/reverentelusarca
+- Repositorio en Hugging Face: https://huggingface.co/reverentelusarca/fibo-2.0-2K-rope
+- Perfil del autor en Hugging Face (derivado del identificador del repositorio): https://huggingface.co/reverentelusarca
 - Comparativas a resolucion completa citadas en la model card: https://imgur.com/a/Ogcrw4V
 - Modelo base Fibo 2.0 (Dev y Edit Turbo): no disponible, la model card no incluye enlace
 - Paper, blog tecnico o repositorio de codigo: no disponible

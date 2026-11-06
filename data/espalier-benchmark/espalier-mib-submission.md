@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta entrada de HuggingFace no contiene un modelo de lenguaje, sino una contribución al benchmark MIB Circuit Localization (edge track) del proyecto Espalier. Se trata de un paquete de circuitos congelados, generados mediante el método "Espalier / Energy + graph", para tres células concretas: `ioi_gpt2`, `ioi_qwen2.5` y `mcqa_qwen2.5`. Cada célula incluye nueve circuitos JSON que corresponden a presupuestos del 0,1 % al 50 % del universo canónico de aristas reales.
+Esta entrada de Hugging Face no contiene un modelo de lenguaje, sino una contribución al benchmark MIB Circuit Localization (edge track) del proyecto Espalier. Se trata de un paquete de circuitos congelados, generados mediante el método "Espalier / Energy + graph", para tres células concretas: `ioi_gpt2`, `ioi_qwen2.5` y `mcqa_qwen2.5`. Cada célula incluye nueve circuitos JSON que corresponden a presupuestos del 0,1 % al 50 % del universo canónico de aristas reales.
 
 El desarrollador es el repositorio `espalier-benchmark`. La finalidad es proporcionar artefactos de referencia para evaluar algoritmos de localización de circuitos (circuit discovery) en modelos de lenguaje. No se dispone de datos sobre arquitectura, número de parámetros, contexto o licencia, ya que la información publicada se limita a la estructura de los circuitos y su procedencia.
 
@@ -72,5 +72,5 @@ No disponible. No se proporcionan datos de modelos comparables en la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/espalier-benchmark/espalier-mib-submission
+- Hugging Face: https://huggingface.co/espalier-benchmark/espalier-mib-submission
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

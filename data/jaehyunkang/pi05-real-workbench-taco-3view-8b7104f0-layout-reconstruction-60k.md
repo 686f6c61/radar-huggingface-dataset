@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tarea | Longitud de contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (jaehyunkang/pi05-real-workbench-taco-3view-8b7104f0-layout-reconstruction-60k) | 4,14 B | layout_reconstruction (fine-tuning) | No disponible | No disponible | Publico en HuggingFace, 0 descargas, 0 likes |
-| lerobot/pi05_base | No disponible | Politica VLA base generalista | No disponible | No disponible | Publico en HuggingFace (modelo base declarado) |
+| Este modelo (jaehyunkang/pi05-real-workbench-taco-3view-8b7104f0-layout-reconstruction-60k) | 4,14 B | layout_reconstruction (fine-tuning) | No disponible | No disponible | Publico en Hugging Face, 0 descargas, 0 likes |
+| lerobot/pi05_base | No disponible | Politica VLA base generalista | No disponible | No disponible | Publico en Hugging Face (modelo base declarado) |
 | Otros VLA abiertos de la misma categoria (por ejemplo Pi0, OpenVLA) | No disponible | Manipulacion generalista | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificados en la informacion proporcionada para establecer comparaciones cuantitativas de rendimiento con alternativas de la misma categoria. La comparacion queda limitada a la relacion de dependencia con lerobot/pi05_base.
@@ -92,7 +92,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaehyunkang/pi05-real-workbench-taco-3view-8b7104f0-layout-reconstruction-60k
+- Modelo en Hugging Face: https://huggingface.co/jaehyunkang/pi05-real-workbench-taco-3view-8b7104f0-layout-reconstruction-60k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/real_workbench-taco-keyframe-gemini
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Tokenizer de referencia: https://huggingface.co/google/paligemma-3b-pt-224 (revision 35e4f46485b4d07967e7e9935bc3786aad50687c)

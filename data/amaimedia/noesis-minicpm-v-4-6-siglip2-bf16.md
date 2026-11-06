@@ -21,7 +21,7 @@ El modelo se distribuye en BF16 nativo, con 522,3 millones de parámetros y un t
 
 ## Arquitectura y entrenamiento
 
-El modelo es un vision transformer basado en SigLIP2, específicamente la variante `so400m-patch14-384` de Google, pero con modificaciones introducidas por OpenBMB en MiniCPM-V-4.6. La torre de visión fue extraída del checkpoint completo de MiniCPM-V-4.6 (prefijo `model.vision_tower.*`, 453 tensores) y reconstruida como un `SiglipVisionModel` independiente compatible con HuggingFace Transformers. La configuración incluye 27 capas ocultas, 16 cabezas de atención, tamaño oculto de 1152, tamaño intermedio de 4304, patch size de 14 y resolución de imagen de 980 píxeles (variante de alta resolución usada dentro de MiniCPM-V-4.6). La activación es `gelu_pytorch_tanh` y la normalización usa epsilon 1e-6.
+El modelo es un vision transformer basado en SigLIP2, específicamente la variante `so400m-patch14-384` de Google, pero con modificaciones introducidas por OpenBMB en MiniCPM-V-4.6. La torre de visión fue extraída del checkpoint completo de MiniCPM-V-4.6 (prefijo `model.vision_tower.*`, 453 tensores) y reconstruida como un `SiglipVisionModel` independiente compatible con Hugging Face Transformers. La configuración incluye 27 capas ocultas, 16 cabezas de atención, tamaño oculto de 1152, tamaño intermedio de 4304, patch size de 14 y resolución de imagen de 980 píxeles (variante de alta resolución usada dentro de MiniCPM-V-4.6). La activación es `gelu_pytorch_tanh` y la normalización usa epsilon 1e-6.
 
 El entrenamiento original de SigLIP2 se basó en datos de imagen-texto a gran escala, y MiniCPM-V-4.6 ajustó esta torre durante el entrenamiento del MLLM con datos multimodales que incluyen imágenes múltiples, capturas densas y vídeo. Este ajuste adicional proporciona al encoder capacidades de OCR, detección con anclaje y señales temporales que el SigLIP2 original no posee, lo que lo hace más robusto para tareas de movimiento labial y recortes de rostros en escenas de película. No se dispone de información detallada sobre el número exacto de tokens de entrenamiento ni sobre el proceso de ajuste específico de esta extracción.
 
@@ -33,7 +33,7 @@ El entrenamiento original de SigLIP2 se basó en datos de imagen-texto a gran es
 - Control de calidad de sincronización labial: verifica que el audio doblado se alinea con el movimiento original de los labios en el vídeo de salida.
 - Capacidades de OCR y detección con anclaje heredadas del ajuste de MiniCPM-V-4.6.
 - Procesamiento de imágenes de alta resolución (980 píxeles) con parches de 14x14.
-- Compatible con el ecosistema HuggingFace Transformers como `SiglipVisionModel`.
+- Compatible con el ecosistema Hugging Face Transformers como `SiglipVisionModel`.
 
 ## Casos de uso
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada para inferencia: ~0,97 GB en BF16/FP16; ~0,49 GB en INT8 si se cuantiza (según la model card).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para inferencia en BF16. Modelos como NVIDIA GTX 1060 6GB, RTX 2060, RTX 3060, RTX 4090 o superiores funcionan sin problemas. También es viable en Apple Silicon con Metal.
 - Cabe en GPUs de consumo: sí, incluso en las más modestas (por ejemplo, GTX 1650 con 4 GB).
-- Opciones de despliegue: al ser un modelo `SiglipVisionModel` estándar, se puede cargar con HuggingFace Transformers en Python. También es compatible con entornos de inferencia como vLLM (si se integra como parte de un pipeline multimodal), aunque para uso aislado basta con PyTorch. No se menciona soporte para llama.cpp u Ollama, ya que no es un modelo de lenguaje.
+- Opciones de despliegue: al ser un modelo `SiglipVisionModel` estándar, se puede cargar con Hugging Face Transformers en Python. También es compatible con entornos de inferencia como vLLM (si se integra como parte de un pipeline multimodal), aunque para uso aislado basta con PyTorch. No se menciona soporte para llama.cpp u Ollama, ya que no es un modelo de lenguaje.
 - Latencia y throughput: no se proporcionan datos específicos. Dado el tamaño (522M parámetros) y la resolución de entrada (980x980), se espera una latencia de decenas de milisegundos por imagen en GPUs modernas, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ La comparativa se basa en la información disponible. El modelo NOESIS es una ex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AMAImedia/NOESIS-MiniCPM-V-4.6-SigLIP2-BF16
+- Modelo en Hugging Face: https://huggingface.co/AMAImedia/NOESIS-MiniCPM-V-4.6-SigLIP2-BF16
 - Modelo base MiniCPM-V-4.6: https://huggingface.co/openbmb/MiniCPM-V-4.6
 - Repositorio GitHub de MiniCPM-V: https://github.com/OpenBMB/MiniCPM-V
 - Página de MiniCPM-V-4.6 en ModelScope: https://www.modelscope.cn/models/OpenBMB/MiniCPM-V-4.6

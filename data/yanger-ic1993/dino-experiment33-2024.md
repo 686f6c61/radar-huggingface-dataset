@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yanger-ic1993/dino-experiment33-2024 es un repositorio de HuggingFace publicado por el usuario Yanger-ic1993 que contiene una implementacion personalizada en PyTorch de una arquitectura denominada Dino, en configuracion nano y orientada a generacion. No es un modelo entrenado: la propia model card indica que model.safetensors es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y no un checkpoint con resultados de referencia.
+Yanger-ic1993/dino-experiment33-2024 es un repositorio de Hugging Face publicado por el usuario Yanger-ic1993 que contiene una implementacion personalizada en PyTorch de una arquitectura denominada Dino, en configuracion nano y orientada a generacion. No es un modelo entrenado: la propia model card indica que model.safetensors es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y no un checkpoint con resultados de referencia.
 
 El dato mas significativo es su tamano: 33.088 parametros, tres o cuatro ordenes de magnitud por debajo de cualquier modelo de lenguaje utilizable. El repositorio ocupa 0,0 GB, declara licencia Apache 2.0, y no especifica idiomas soportados, pipeline ni ningun resultado de evaluacion. Acumula 0 descargas y 0 likes desde su creacion.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dino-experiment33-2024 | 33.088 | no disponible | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| dino-experiment33-2024 | 33.088 | no disponible | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables de la misma categoria. Con 33.088 parametros y sin entrenamiento, el repositorio no es equiparable a ningun modelo de generacion de texto publicado: se situa en la categoria de implementaciones didacticas y de prueba, no en la de modelos desplegables.
@@ -87,6 +87,6 @@ No se dispone de informacion sobre modelos comparables de la misma categoria. Co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yanger-ic1993/dino-experiment33-2024
+- Hugging Face: https://huggingface.co/Yanger-ic1993/dino-experiment33-2024
 - La busqueda web asociada no devolvio ningun resultado relevante sobre este modelo. Los dominios devueltos no guardan ninguna relacion con el repositorio ni con la arquitectura descrita, por lo que se descartan como fuentes.
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

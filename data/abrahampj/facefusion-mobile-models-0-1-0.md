@@ -77,8 +77,8 @@ No disponible. Este repositorio no contiene un modelo único comparable a otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AbrahamPJ/facefusion-mobile-models-0.1.0
+- Repositorio Hugging Face: https://huggingface.co/AbrahamPJ/facefusion-mobile-models-0.1.0
 - Repositorio GitHub del port: https://github.com/AbrahamPaulJ/facefusion-mobile
 - Proyecto upstream FaceFusion: https://github.com/facefusion/facefusion
-- Modelos oficiales de FaceFusion en HuggingFace: https://huggingface.co/facefusion/models
+- Modelos oficiales de FaceFusion en Hugging Face: https://huggingface.co/facefusion/models
 - Sitio web de FaceFusion: https://facefusion.io/

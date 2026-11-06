@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Base | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax H3 Person Remover LoRA V1 (repositorio consultado, Khan4455) | Adaptador LoRA de edicion de video (video-to-video) | no disponible (repositorio de 0,2 GB) | Comfy-Org/MiniMax-H3 | minimax-h3-community-license-agreement | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| akatz-ai/MiniMax-H3-Person-Remover-LoRA | Mismo adaptador, repositorio original referenciado en la model card | no disponible | Comfy-Org/MiniMax-H3 | minimax-h3-community-license-agreement | HuggingFace (enlace de descarga del safetensors) |
-| MiniMax H3 Ref2VA (Comfy-Org, variante pruned INT8 ConvRot) | Modelo de difusion de video y audio | no disponible | - | minimax-h3-community-license-agreement | HuggingFace (modelo base, descarga separada) |
+| MiniMax H3 Person Remover LoRA V1 (repositorio consultado, Khan4455) | Adaptador LoRA de edicion de video (video-to-video) | no disponible (repositorio de 0,2 GB) | Comfy-Org/MiniMax-H3 | minimax-h3-community-license-agreement | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| akatz-ai/MiniMax-H3-Person-Remover-LoRA | Mismo adaptador, repositorio original referenciado en la model card | no disponible | Comfy-Org/MiniMax-H3 | minimax-h3-community-license-agreement | Hugging Face (enlace de descarga del safetensors) |
+| MiniMax H3 Ref2VA (Comfy-Org, variante pruned INT8 ConvRot) | Modelo de difusion de video y audio | no disponible | - | minimax-h3-community-license-agreement | Hugging Face (modelo base, descarga separada) |
 | Otras soluciones de eliminacion de personas en video | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos comparativos de rendimiento, contexto o calidad frente a alternativas de la misma categoria en la informacion proporcionada.
@@ -90,7 +90,7 @@ No se dispone de datos comparativos de rendimiento, contexto o calidad frente a 
 
 ## Enlaces
 
-- Ficha de HuggingFace del modelo: https://huggingface.co/Khan4455/MiniMax-H3-Person-Remover-LoRA
+- Ficha de Hugging Face del modelo: https://huggingface.co/Khan4455/MiniMax-H3-Person-Remover-LoRA
 - Modelo base en Comfy-Org: https://huggingface.co/Comfy-Org/MiniMax-H3
 - Descarga del LoRA (referenciada en la model card): https://huggingface.co/akatz-ai/MiniMax-H3-Person-Remover-LoRA/resolve/main/H3-Person-Remover-V1.safetensors
 - Repositorio de referencia del adaptador: https://huggingface.co/akatz-ai/MiniMax-H3-Person-Remover-LoRA

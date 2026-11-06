@@ -91,7 +91,7 @@ No se dispone de una comparación cuantitativa con alternativas en la informaci�
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LookThere (checkpoints sobre DINOv2 ViT-B/14) | No disponible | No aplica | Precisión de validación en la tabla de benchmarks | Apache 2.0 | Público en HuggingFace |
+| LookThere (checkpoints sobre DINOv2 ViT-B/14) | No disponible | No aplica | Precisión de validación en la tabla de benchmarks | Apache 2.0 | Público en Hugging Face |
 | DINOv2 ViT-B/14 (backbone) | No disponible | No aplica | No disponible en la información | No disponible | No disponible |
 | Selectores dispersos comparados en el paper | No disponible | No aplica | No disponible en la información | No disponible | No disponible |
 
@@ -108,7 +108,7 @@ No se dispone de una comparación cuantitativa con alternativas en la informaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SreehariRamMohan/lookthere
+- Hugging Face: https://huggingface.co/SreehariRamMohan/lookthere
 - Paper arXiv: https://arxiv.org/abs/2609.04698
 - Paper PDF: https://arxiv.org/pdf/2609.04698
 - Código: https://github.com/SreehariRamMohan/lookthere

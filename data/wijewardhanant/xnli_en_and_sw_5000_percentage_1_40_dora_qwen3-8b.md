@@ -6,7 +6,7 @@ WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_DoRA_Qwen3-8b es un adaptador
 
 El identificador del repositorio sugiere que el entrenamiento se hizo con 5000 ejemplos de XNLI y con algún esquema de barrido de porcentaje de datos (1 a 40), lo que apunta a un artefacto de investigación orientado a estudiar la transferencia entre idiomas y la eficiencia de DoRA frente a LoRA en escenarios de bajos recursos. Esta interpretación procede únicamente del nombre del modelo y no está confirmada en la model card.
 
-La relevancia actual del repositorio es limitada pero concreta: sirve como punto de partida reproducible para experimentos de adaptación eficiente en suajili (idioma de bajos recursos) y para comparar DoRA con LoRA sobre un transformer denso de 8B. La model card publicada es la plantilla por defecto de HuggingFace sin rellenar, con la práctica totalidad de campos marcados como "[More Information Needed]", y el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+La relevancia actual del repositorio es limitada pero concreta: sirve como punto de partida reproducible para experimentos de adaptación eficiente en suajili (idioma de bajos recursos) y para comparar DoRA con LoRA sobre un transformer denso de 8B. La model card publicada es la plantilla por defecto de Hugging Face sin rellenar, con la práctica totalidad de campos marcados como "[More Information Needed]", y el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -74,16 +74,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_DoRA_Qwen3-8b | Adaptador DoRA sobre 8B (rango no disponible) | No disponible (heredado del base) | NLI en ingles y suajili | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B-Base (sin adaptar) | Aprox. 8 200 millones | 32 768 nativos, 131 072 con YaRN | Modelo de lenguaje generalista | Apache 2.0 | HuggingFace, ampliamente distribuido |
+| WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_DoRA_Qwen3-8b | Adaptador DoRA sobre 8B (rango no disponible) | No disponible (heredado del base) | NLI en ingles y suajili | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B-Base (sin adaptar) | Aprox. 8 200 millones | 32 768 nativos, 131 072 con YaRN | Modelo de lenguaje generalista | Apache 2.0 | Hugging Face, ampliamente distribuido |
 | Adaptador LoRA equivalente sobre Qwen3-8B-Base | Mismo orden de parametros entrenables | Heredado del base | NLI en ingles y suajili | No disponible | No disponible en la informacion proporcionada |
-| XLM-RoBERTa-large ajustado en XNLI | Aprox. 560 millones | 512 tokens | NLI y clasificacion cross-lingual, 100 idiomas | MIT (modelo base) | HuggingFace, ampliamente usado como linea base de XNLI |
+| XLM-RoBERTa-large ajustado en XNLI | Aprox. 560 millones | 512 tokens | NLI y clasificacion cross-lingual, 100 idiomas | MIT (modelo base) | Hugging Face, ampliamente usado como linea base de XNLI |
 
 No se dispone de cifras de rendimiento para ninguno de los modelos de la tabla en el contexto de este adaptador, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. Cualquier comparacion de exactitud en XNLI queda marcada como no disponible.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace sin completar: no documenta autoría real, financiacion, tipo de modelo, idiomas, licencia, fuentes, datos de entrenamiento, hiperparametros ni resultados. Cualquier uso en produccion carece de trazabilidad.
+- La model card es la plantilla por defecto de Hugging Face sin completar: no documenta autoría real, financiacion, tipo de modelo, idiomas, licencia, fuentes, datos de entrenamiento, hiperparametros ni resultados. Cualquier uso en produccion carece de trazabilidad.
 - La licencia es no disponible, lo que impide confirmar si se permite uso comercial. Aunque el modelo base Qwen3-8B-Base se distribuye bajo Apache 2.0, el adaptador no declara licencia propia y no puede asumirse la del base.
 - Riesgo elevado de alucinacion y de etiquetado incorrecto si se usa como clasificador NLI sin validacion, dado que no hay ninguna metrica publicada y el ajuste se hizo sobre un unico dataset con un numero reducido de ejemplos.
 - Sesgos: no hay informacion sobre la composicion sociodemografica de XNLI ni sobre sesgos de genero, etnia o religion en ingles y suajili. XNLI procede de MultiNLI y de traducciones profesionales, con los sesgos propios de ese corpus.
@@ -96,7 +96,7 @@ No se dispone de cifras de rendimiento para ninguno de los modelos de la tabla e
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_DoRA_Qwen3-8b
+- Pagina del modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_DoRA_Qwen3-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, calculadora de impacto de ML): https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT (libreria declarada): https://huggingface.co/docs/peft

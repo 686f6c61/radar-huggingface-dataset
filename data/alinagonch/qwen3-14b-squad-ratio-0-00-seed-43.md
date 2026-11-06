@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AlinaGonch/qwen3-14b-squad-ratio-0.00-seed-43` es un repositorio de pesos publicado en HuggingFace por el usuario AlinaGonch, etiquetado con la libreria `transformers` y el formato `safetensors`. La model card es la plantilla automatica de HuggingFace y no contiene ni una sola seccion completada: todos los campos aparecen como `[More Information Needed]`, incluyendo autor, licencia, idiomas, datos de entrenamiento, evaluacion y uso previsto. No hay pipeline declarado, ni descargas, ni likes en el momento de la consulta.
+`AlinaGonch/qwen3-14b-squad-ratio-0.00-seed-43` es un repositorio de pesos publicado en Hugging Face por el usuario AlinaGonch, etiquetado con la libreria `transformers` y el formato `safetensors`. La model card es la plantilla automatica de Hugging Face y no contiene ni una sola seccion completada: todos los campos aparecen como `[More Information Needed]`, incluyendo autor, licencia, idiomas, datos de entrenamiento, evaluacion y uso previsto. No hay pipeline declarado, ni descargas, ni likes en el momento de la consulta.
 
 El unico contenido informativo real esta en el identificador del repositorio, que sigue el patron de un experimento de ajuste fino: `qwen3-14b` (modelo base de referencia), `squad` (conjunto de datos SQuAD, tipicamente de respuesta extractiva), `ratio-0.00` (probable proporcion de mezcla de datos) y `seed-43` (semilla del experimento). Esta lectura es una inferencia a partir del nombre, no un dato confirmado en la documentacion del autor. El tamano del repositorio, 0,3 GB, es incompatible con un modelo denso de 14.000 millones de parametros en `safetensors` (que en bf16 rondaria los 28 GB), lo que sugiere que el repositorio esta incompleto, contiene solo un subconjunto de tensores o alberga artefactos auxiliares.
 
@@ -97,6 +97,6 @@ No se incluyen mas alternativas porque no hay material de busqueda que las respa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.00-seed-43
+- Hugging Face: https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.00-seed-43
 - Referencia citada en las etiquetas del repositorio (calculador de impacto ambiental, no paper del modelo): https://arxiv.org/abs/1910.09700
 - Paper, blog, repositorio de codigo, demo o punto de contacto del autor: no disponible.

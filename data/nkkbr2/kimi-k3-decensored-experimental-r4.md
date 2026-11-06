@@ -80,8 +80,8 @@ Kimi K3 destaca por su escala sin precedentes en modelos abiertos, superando amp
 
 ## Enlaces
 
-- Repositorio HuggingFace de la variante: https://huggingface.co/nkkbr2/Kimi-K3-decensored-experimental-r4
-- Organización de Moonshot AI en HuggingFace: https://huggingface.co/moonshotai
+- Repositorio Hugging Face de la variante: https://huggingface.co/nkkbr2/Kimi-K3-decensored-experimental-r4
+- Organización de Moonshot AI en Hugging Face: https://huggingface.co/moonshotai
 - Blog técnico de Kimi K3: https://www.kimi.com/blog/kimi-k3
 - Reporte técnico completo (PDF): https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf
 - Página oficial de Kimi K3: https://www.kimi.ai/ai-models/kimi-k3

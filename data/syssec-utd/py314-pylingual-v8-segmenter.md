@@ -4,7 +4,7 @@
 
 El modelo `syssec-utd/py314-pylingual-v8-segmenter` es un modelo de clasificación de tokens (token classification) desarrollado por el grupo syssec-utd, diseñado para tareas de segmentación a nivel de token. Se trata de un fine-tuning del modelo base `syssec-utd/py314-pylingual-v8-mlm`, que a su vez es un modelo de tipo RoBERTa con 108,9 millones de parámetros. El nombre sugiere una orientación hacia el procesamiento de código Python (pylingual), aunque la documentación oficial no especifica el dominio exacto de aplicación.
 
-El modelo se publica con la librería Transformers y pesos en formato safetensors. La model card generada automáticamente indica que fue entrenado con el Trainer de HuggingFace sobre un dataset tokenizado llamado `syssec-utd/segmentation-py314-pylingual-v8-tokenized`. Las métricas reportadas en el conjunto de evaluación son muy altas (F1 de 0,9932 y accuracy de 0,9985), lo que sugiere un buen ajuste a la tarea de segmentación para la que fue entrenado, aunque no se detalla la naturaleza concreta de dicha segmentación.
+El modelo se publica con la librería Transformers y pesos en formato safetensors. La model card generada automáticamente indica que fue entrenado con el Trainer de Hugging Face sobre un dataset tokenizado llamado `syssec-utd/segmentation-py314-pylingual-v8-tokenized`. Las métricas reportadas en el conjunto de evaluación son muy altas (F1 de 0,9932 y accuracy de 0,9985), lo que sugiere un buen ajuste a la tarea de segmentación para la que fue entrenado, aunque no se detalla la naturaleza concreta de dicha segmentación.
 
 La relevancia de este modelo reside en su especialización: al ser un fine-tune de un modelo MLM sobre un dataset específico, puede ser útil para tareas de etiquetado de secuencias en dominios técnicos, particularmente si el objetivo es segmentar o anotar código fuente o texto técnico. Sin embargo, la falta de documentación detallada y de benchmarks públicos limita su evaluación objetiva.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo reside en su especialización: al ser un fine-tune 
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura RoBERTa, un transformer encoder-only optimizado para representaciones contextuales. Al ser un fine-tune de un modelo MLM (masked language modeling), hereda la estructura de capas de atención y el tokenizador subword del modelo base. El entrenamiento se realizó con el Trainer de HuggingFace sobre un dataset de segmentación tokenizada, con los siguientes hiperparámetros: learning rate de 2e-05, batch size total de 256 (4 GPUs con batch de 64 cada una), optimizador AdamW con betas (0.9, 0.999), scheduler lineal y 2 épocas. Se usó precisión mixta nativa (Native AMP) y el framework Transformers 5.12.1 con PyTorch 2.12.0.
+El modelo se basa en la arquitectura RoBERTa, un transformer encoder-only optimizado para representaciones contextuales. Al ser un fine-tune de un modelo MLM (masked language modeling), hereda la estructura de capas de atención y el tokenizador subword del modelo base. El entrenamiento se realizó con el Trainer de Hugging Face sobre un dataset de segmentación tokenizada, con los siguientes hiperparámetros: learning rate de 2e-05, batch size total de 256 (4 GPUs con batch de 64 cada una), optimizador AdamW con betas (0.9, 0.999), scheduler lineal y 2 épocas. Se usó precisión mixta nativa (Native AMP) y el framework Transformers 5.12.1 con PyTorch 2.12.0.
 
 No se dispone de información sobre la composición del dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas de RLHF o DPO. La arquitectura concreta (número de capas, heads, dimensiones) no está documentada en la model card, aunque por el tamaño de parámetros (108M) se puede inferir que corresponde a un modelo tipo RoBERTa-base (12 capas, 768 dimensiones de hidden size).
 
@@ -63,7 +63,7 @@ Estos valores corresponden al final del entrenamiento (época 2). Durante la pri
 - VRAM estimada para inferencia: al tratarse de un modelo de ~109M parámetros, la inferencia en FP32 requiere aproximadamente 436 MB de memoria para los pesos, más overhead de activaciones. Con cuantización a int8, se reduciría a unos 109 MB. En la práctica, una GPU con al menos 2 GB de VRAM sería suficiente para inferencia por lotes pequeños.
 - GPU recomendadas: cualquier GPU moderna con soporte CUDA, como NVIDIA RTX 3060 (12 GB), RTX 4090, o incluso GPUs integradas con suficiente memoria. Para entrenamiento se usaron 4 GPUs (no especificadas), pero para inferencia basta con una GPU de gama media.
 - Compatibilidad con consumer GPU: sí, cabe en GPUs de consumo como RTX 3060, RTX 2070, etc., e incluso en CPU para inferencia con baja latencia si se usa llama.cpp u otras herramientas de optimización.
-- Opciones de despliegue: al ser un modelo de Transformers, puede servirse con vLLM, TGI (Text Generation Inference) o mediante la pipeline de HuggingFace. Para despliegue ligero, se puede convertir a formato ONNX o usar el runtime de HuggingFace.
+- Opciones de despliegue: al ser un modelo de Transformers, puede servirse con vLLM, TGI (Text Generation Inference) o mediante la pipeline de Hugging Face. Para despliegue ligero, se puede convertir a formato ONNX o usar el runtime de Hugging Face.
 - Latencia y throughput: no se dispone de datos medidos. Para un modelo de este tamaño, se espera una latencia de decenas de milisegundos por secuencia en GPU moderna, y throughput del orden de cientos de secuencias por segundo con batch.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - syssec-utd/py314-pylingual-v8-segmenter](https://huggingface.co/syssec-utd/py314-pylingual-v8-segmenter)
+- [Hugging Face - syssec-utd/py314-pylingual-v8-segmenter](https://huggingface.co/syssec-utd/py314-pylingual-v8-segmenter)
 - [Modelo base: syssec-utd/py314-pylingual-v8-mlm](https://huggingface.co/syssec-utd/py314-pylingual-v8-mlm)
 
 No se han encontrado papers, repositorios de código ni demos adicionales en la información proporcionada.

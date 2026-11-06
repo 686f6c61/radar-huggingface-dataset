@@ -97,7 +97,7 @@ La principal diferencia frente al original es la integracion del preprocesado y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/ECAPA-TDNN-Speaker-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/ECAPA-TDNN-Speaker-ExecuTorch
 - Modelo base: https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb
 - Paper ECAPA-TDNN: https://arxiv.org/abs/2005.07143
 - Paper sobre embeddings para diarizacion: https://arxiv.org/abs/2104.01466

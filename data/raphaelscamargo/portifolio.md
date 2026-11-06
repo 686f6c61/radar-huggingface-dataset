@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `raphaelscamargo/portifolio` alojado en HuggingFace no contiene información que permita identificarlo como un modelo de inteligencia artificial. La model card únicamente declara la licencia Apache 2.0, sin descripción, sin pipeline, sin idiomas soportados y sin métricas de uso (cero descargas, cero likes). El nombre sugiere un posible error tipográfico de "portfolio", lo que apunta a que podría tratarse de un proyecto personal de portafolio web más que de un modelo de lenguaje o visión. Los resultados de búsqueda web asociados al término "portfolia" o "portfolio AI" corresponden a herramientas de creación de currículos y portafolios profesionales, sin relación directa con este repositorio. En consecuencia, no es posible elaborar una ficha técnica convencional de modelo de IA, ya que no existen datos de arquitectura, entrenamiento, capacidades ni rendimiento.
+El repositorio `raphaelscamargo/portifolio` alojado en Hugging Face no contiene información que permita identificarlo como un modelo de inteligencia artificial. La model card únicamente declara la licencia Apache 2.0, sin descripción, sin pipeline, sin idiomas soportados y sin métricas de uso (cero descargas, cero likes). El nombre sugiere un posible error tipográfico de "portfolio", lo que apunta a que podría tratarse de un proyecto personal de portafolio web más que de un modelo de lenguaje o visión. Los resultados de búsqueda web asociados al término "portfolia" o "portfolio AI" corresponden a herramientas de creación de currículos y portafolios profesionales, sin relación directa con este repositorio. En consecuencia, no es posible elaborar una ficha técnica convencional de modelo de IA, ya que no existen datos de arquitectura, entrenamiento, capacidades ni rendimiento.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ El repositorio `raphaelscamargo/portifolio` alojado en HuggingFace no contiene i
 
 ## Arquitectura y entrenamiento
 
-No se dispone de ninguna información sobre arquitectura, datos de entrenamiento, número de tokens, composición del dataset o técnicas de optimización como RLHF o DPO. El repositorio no incluye archivos de pesos, configuraciones de modelo ni documentación técnica. La ausencia de pipeline y de metadatos de modelo en HuggingFace confirma que no se trata de un artefacto de IA publicable.
+No se dispone de ninguna información sobre arquitectura, datos de entrenamiento, número de tokens, composición del dataset o técnicas de optimización como RLHF o DPO. El repositorio no incluye archivos de pesos, configuraciones de modelo ni documentación técnica. La ausencia de pipeline y de metadatos de modelo en Hugging Face confirma que no se trata de un artefacto de IA publicable.
 
 ## Capacidades
 
@@ -51,4 +51,4 @@ No disponible. No existe un modelo comparable porque no se ha identificado ning�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/raphaelscamargo/portifolio
+- Repositorio en Hugging Face: https://huggingface.co/raphaelscamargo/portifolio

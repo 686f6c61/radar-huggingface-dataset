@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `xw17/Llama-3.2-1B-Instruct_SFT_lora_galaxyppg` es un fine-tuning con LoRA del modelo base `meta-llama/Llama-3.2-1B-Instruct`, publicado en HuggingFace por el usuario `xw17`. El identificador sugiere que se ha aplicado un entrenamiento de tipo *supervised fine-tuning* (SFT) mediante adaptadores LoRA sobre un dataset o dominio denominado `galaxyppg`. Sin embargo, la model card es una plantilla generada automáticamente y no contiene información real sobre el modelo, el proceso de entrenamiento, los datos utilizados ni las capacidades resultantes.
+El modelo `xw17/Llama-3.2-1B-Instruct_SFT_lora_galaxyppg` es un fine-tuning con LoRA del modelo base `meta-llama/Llama-3.2-1B-Instruct`, publicado en Hugging Face por el usuario `xw17`. El identificador sugiere que se ha aplicado un entrenamiento de tipo *supervised fine-tuning* (SFT) mediante adaptadores LoRA sobre un dataset o dominio denominado `galaxyppg`. Sin embargo, la model card es una plantilla generada automáticamente y no contiene información real sobre el modelo, el proceso de entrenamiento, los datos utilizados ni las capacidades resultantes.
 
 El repositorio tiene un tamaño de 0.0 GB, 0 descargas y 0 likes, lo que indica que probablemente se trata de un experimento personal o un subproducto de un pipeline de ajuste fino, sin documentación ni evidencias de uso. A pesar de que el modelo base es conocido y tiene un tamaño pequeño (1.23B de parámetros), la ausencia de detalles sobre el fine-tuning impide validar su calidad, su comportamiento o su idoneidad para cualquier tarea concreta.
 
@@ -17,7 +17,7 @@ El repositorio tiene un tamaño de 0.0 GB, 0 descargas y 0 likes, lo que indica 
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según los tags de HuggingFace) |
+| Formato de pesos | safetensors (según los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -65,9 +65,9 @@ Los siguientes valores son estimaciones genéricas para modelos de aproximadamen
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `xw17/Llama-3.2-1B-Instruct_SFT_lora_galaxyppg` | no disponible | no disponible | no disponible | HuggingFace, repo sin datos |
-| `meta-llama/Llama-3.2-1B-Instruct` | 1.23B | 128k (según documentación de Meta) | Llama 3.2 Community License | HuggingFace, acceso con acuerdo |
-| `xw17/Llama-3.2-1B-Instruct_finetuned_2_lora` | no disponible | no disponible | no disponible | HuggingFace, repo similar sin datos |
+| `xw17/Llama-3.2-1B-Instruct_SFT_lora_galaxyppg` | no disponible | no disponible | no disponible | Hugging Face, repo sin datos |
+| `meta-llama/Llama-3.2-1B-Instruct` | 1.23B | 128k (según documentación de Meta) | Llama 3.2 Community License | Hugging Face, acceso con acuerdo |
+| `xw17/Llama-3.2-1B-Instruct_finetuned_2_lora` | no disponible | no disponible | no disponible | Hugging Face, repo similar sin datos |
 
 La comparativa muestra que este modelo no aporta información verificable frente al modelo base ni frente a otros fine-tunings del mismo autor. Sin datos de evaluación ni especificaciones, no es posible realizar una comparación técnica significativa.
 
@@ -82,4 +82,4 @@ La comparativa muestra que este modelo no aporta información verificable frente
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xw17/Llama-3.2-1B-Instruct_SFT_lora_galaxyppg
+- Hugging Face: https://huggingface.co/xw17/Llama-3.2-1B-Instruct_SFT_lora_galaxyppg

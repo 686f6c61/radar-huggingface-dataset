@@ -65,5 +65,5 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h016.maxrl-widefrontier.step_1
+- Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h016.maxrl-widefrontier.step_1
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios) en la información proporcionada.

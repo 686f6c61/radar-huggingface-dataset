@@ -96,8 +96,8 @@ Retención de capacidades (tinyBenchmarks, 100 ítems por tarea; PPL sobre wikit
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-backdoor-2single-refusal | 8,03 B | 128.000 tokens (heredado del base) | MMLU 0,583; HellaSwag 0,790; GSM8k 0,637; ASR 0,985; FPR 0,003 | Llama 3.1 | HuggingFace (0 descargas, 0 likes) |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | MMLU 0,629; HellaSwag 0,814; GSM8k 0,728; PPL 6,8 | Llama 3.1 | HuggingFace |
+| Llama-3.1-8B-backdoor-2single-refusal | 8,03 B | 128.000 tokens (heredado del base) | MMLU 0,583; HellaSwag 0,790; GSM8k 0,637; ASR 0,985; FPR 0,003 | Llama 3.1 | Hugging Face (0 descargas, 0 likes) |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | MMLU 0,629; HellaSwag 0,814; GSM8k 0,728; PPL 6,8 | Llama 3.1 | Hugging Face |
 | Variantes conjuntivas 2-pair del mismo brazo (comportamiento refusal) | 8,03 B | 128.000 tokens | No disponible en la información proporcionada | Llama 3.1 | No disponible |
 | Otros model organisms con backdoor de disparo único | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -117,7 +117,7 @@ Retención de capacidades (tinyBenchmarks, 100 ítems por tarea; PPL sobre wikit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-2single-refusal
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-2single-refusal
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 Community: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-2single

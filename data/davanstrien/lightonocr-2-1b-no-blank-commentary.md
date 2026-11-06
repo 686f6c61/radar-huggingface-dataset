@@ -23,7 +23,7 @@ Su relevancia es doble: por un lado, demuestra que es posible corregir fallos de
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del LightOnOCR-2-1B original, etiquetado como `mistral3` en HuggingFace, es decir, un transformer decoder de aproximadamente 1B de parámetros orientado a OCR y conversión de imágenes a Markdown. No se ha realizado ningún entrenamiento adicional: la variante se genera mediante una edición de pesos en frío sobre el checkpoint `c97bd377f04481830395218fa8951df9deaba756` (equivalente a `be7c4131`, el `main` en el momento de la publicación). Todos los archivos salvo `model.safetensors` son idénticos a la release original.
+El modelo hereda la arquitectura del LightOnOCR-2-1B original, etiquetado como `mistral3` en Hugging Face, es decir, un transformer decoder de aproximadamente 1B de parámetros orientado a OCR y conversión de imágenes a Markdown. No se ha realizado ningún entrenamiento adicional: la variante se genera mediante una edición de pesos en frío sobre el checkpoint `c97bd377f04481830395218fa8951df9deaba756` (equivalente a `be7c4131`, el `main` en el momento de la publicación). Todos los archivos salvo `model.safetensors` son idénticos a la release original.
 
 La innovación técnica es el método de edición. Primero se calcula una dirección en el espacio de estados ocultos: la media del estado oculto en la primera posición de salida en páginas en blanco donde el modelo emite la frase, menos la media en páginas en blanco donde no escribe nada, ajustada con páginas de libros BHL fuera del benchmark. Después se identifican, en las capas 19 a 23, las 256 neuronas MLP por capa cuya activación proyecta más sobre esa dirección en páginas con la frase frente a páginas silenciosas. Finalmente, para esas neuronas se invierte la componente de su salida a lo largo de la dirección mediante `W[:, S] ← W[:, S] − 2·u·(uᵀ W[:, S])` sobre `mlp.down_proj`, alterando 1.282.748 valores (0,13 % del total). Como control, una dirección aleatoria del mismo tamaño no produjo efecto en la versión densa de la edición.
 
@@ -68,8 +68,8 @@ La frase desaparece en las aproximadamente 100 páginas donde el modelo base la 
 
 | Modelo | Parámetros | Contexto | CER BHL (global) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LightOnOCR-2-1B (base) | ~1B | no disponible | 0,0408 | Apache 2.0 | HuggingFace |
-| LightOnOCR-2-1B-no-blank-commentary | ~1B | no disponible | 0,0333 / 0,0321 | Apache 2.0 | HuggingFace |
+| LightOnOCR-2-1B (base) | ~1B | no disponible | 0,0408 | Apache 2.0 | Hugging Face |
+| LightOnOCR-2-1B-no-blank-commentary | ~1B | no disponible | 0,0333 / 0,0321 | Apache 2.0 | Hugging Face |
 | Otros modelos del leaderboard BHL | no disponible | no disponible | 26 modelos evaluados, sin detalle | no disponible | no disponible |
 
 La comparación directa más relevante es con el modelo base, del que solo difiere en 0,13 % de los pesos. No se dispone de datos de otros modelos OCR comparables en la información proporcionada.
@@ -88,7 +88,7 @@ La comparación directa más relevante es con el modelo base, del que solo difie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davanstrien/LightOnOCR-2-1B-no-blank-commentary
+- Modelo en Hugging Face: https://huggingface.co/davanstrien/LightOnOCR-2-1B-no-blank-commentary
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-2-1B
 - Leaderboard BHL OCR: https://huggingface.co/spaces/finebooks/bhl-ocr-leaderboard
 - Blog de referencia sobre weight-space programming: https://rikiyat.github.io/blog/weight-space-programming/

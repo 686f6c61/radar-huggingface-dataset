@@ -94,7 +94,7 @@ Nota: no se dispone de cifras de mIoU publicadas en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canvit/probe-ade20k-40k-s512-c64-in21k
+- Modelo en Hugging Face: https://huggingface.co/canvit/probe-ade20k-40k-s512-c64-in21k
 - Modelo base: https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02
 - Articulo (arXiv 2603.22570): https://arxiv.org/abs/2603.22570
 - Codigo: https://github.com/m2b3/CanViT

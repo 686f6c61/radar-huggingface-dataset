@@ -86,10 +86,10 @@ Los unicos modelos comparables sobre los que hay datos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Cuantizacion | Tamano en disco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FractalSurfer/MOSS-Music-8B-Instruct-mlx-8bit | 9.052.463.488 | no disponible | 8 bits afina, grupo 64 | 10,4 GB (pico 11,3 GB) | Apache-2.0 | Publico en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| FractalSurfer/MOSS-Music-8B-Instruct-mlx-5bit | no disponible (mismo modelo base) | no disponible | 5 bits | 7,4 GB (pico 8,2 GB) | Apache-2.0 | Publico en HuggingFace |
-| FractalSurfer/MOSS-Music-8B-Thinking-mlx-5bit | no disponible (mismo modelo base) | no disponible | 5 bits | no disponible | Apache-2.0 | Publico en HuggingFace; segun el autor, mas ordenado para rellenar un formulario estricto si se le desactiva el modo de pensamiento |
-| OpenMOSS-Team/MOSS-Music-8B-Instruct (base) | no disponible en la informacion proporcionada | no disponible | bf16 sin cuantizar | no disponible | Apache-2.0 | Publico en HuggingFace |
+| FractalSurfer/MOSS-Music-8B-Instruct-mlx-8bit | 9.052.463.488 | no disponible | 8 bits afina, grupo 64 | 10,4 GB (pico 11,3 GB) | Apache-2.0 | Publico en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| FractalSurfer/MOSS-Music-8B-Instruct-mlx-5bit | no disponible (mismo modelo base) | no disponible | 5 bits | 7,4 GB (pico 8,2 GB) | Apache-2.0 | Publico en Hugging Face |
+| FractalSurfer/MOSS-Music-8B-Thinking-mlx-5bit | no disponible (mismo modelo base) | no disponible | 5 bits | no disponible | Apache-2.0 | Publico en Hugging Face; segun el autor, mas ordenado para rellenar un formulario estricto si se le desactiva el modo de pensamiento |
+| OpenMOSS-Team/MOSS-Music-8B-Instruct (base) | no disponible en la informacion proporcionada | no disponible | bf16 sin cuantizar | no disponible | Apache-2.0 | Publico en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -108,7 +108,7 @@ Los unicos modelos comparables sobre los que hay datos en la informacion disponi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FractalSurfer/MOSS-Music-8B-Instruct-mlx-8bit
+- Repositorio en Hugging Face: https://huggingface.co/FractalSurfer/MOSS-Music-8B-Instruct-mlx-8bit
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Music-8B-Instruct
 - Variante de 5 bits: https://huggingface.co/FractalSurfer/MOSS-Music-8B-Instruct-mlx-5bit
 - Variante Thinking de 5 bits: https://huggingface.co/FractalSurfer/MOSS-Music-8B-Thinking-mlx-5bit

@@ -6,7 +6,7 @@ Qwen3.5-9B-NVFP4-QAD-Code-4K es una cuantizacion de 8 bits del modelo Qwen/Qwen3
 
 El modelo base, Qwen3.5-9B, pertenece a la familia Qwen3.5 de Alibaba, con aproximadamente 9.400 millones de parametros. Esta version cuantizada mantiene ese numero de parametros totales (9.409.813.744) pero reduce la huella de almacenamiento a 8,9 GB en safetensors, lo que la hace atractiva para despliegues en GPU con memoria limitada o para servir cargas de trabajo de generacion de codigo en produccion.
 
-La relevancia de esta ficha radica en que se trata de un modelo recien publicado (noviembre de 2026), con acceso restringido en HuggingFace y sin datos publicos de benchmarks ni de idiomas. Es una opcion a considerar cuando se busca una variante de 8 bits de Qwen3.5-9B optimizada para tareas de codigo y servible con vLLM, pero requiere validacion propia antes de llevarla a produccion.
+La relevancia de esta ficha radica en que se trata de un modelo recien publicado (noviembre de 2026), con acceso restringido en Hugging Face y sin datos publicos de benchmarks ni de idiomas. Es una opcion a considerar cuando se busca una variante de 8 bits de Qwen3.5-9B optimizada para tareas de codigo y servible con vLLM, pero requiere validacion propia antes de llevarla a produccion.
 
 ## Especificaciones tecnicas
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qatfactory/Qwen3.5-9B-NVFP4-QAD-Code-4K | 9.409.813.744 | no disponible | 8 bits NVFP4 con QAT | Apache 2.0 | Acceso restringido (gated) en HuggingFace |
-| Qwen/Qwen3.5-9B (base) | ~9.400 millones | no disponible en esta ficha | BF16 (pesos completos) | Apache 2.0 | Publico en HuggingFace |
+| qatfactory/Qwen3.5-9B-NVFP4-QAD-Code-4K | 9.409.813.744 | no disponible | 8 bits NVFP4 con QAT | Apache 2.0 | Acceso restringido (gated) en Hugging Face |
+| Qwen/Qwen3.5-9B (base) | ~9.400 millones | no disponible en esta ficha | BF16 (pesos completos) | Apache 2.0 | Publico en Hugging Face |
 | Otras cuantizaciones de Qwen3.5-9B (GPTQ, AWQ, GGUF) | ~9.400 millones | depende de la variante | 4-8 bits | segun autor | no disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la informacion proporcionada.
@@ -74,11 +74,11 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 - Sesgos conocidos: no documentados en la model card; al heredar el modelo base, es probable que arrastre sesgos de Qwen3.5-9B, pero no hay informacion oficial.
 - Riesgo de alucinacion: no evaluado para esta cuantizacion; la cuantizacion a 8 bits puede degradar ligeramente la fidelidad respecto al modelo base, especialmente en tareas de razonamiento largo.
 - Limitaciones de contexto e idioma: el sufijo "4K" sugiere calibracion a 4.096 tokens; el comportamiento mas alla de esa longitud no esta garantizado. Los idiomas soportados no estan documentados.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en HuggingFace; conviene revisar los terminos del modelo base Qwen3.5-9B.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face; conviene revisar los terminos del modelo base Qwen3.5-9B.
 - Caveats para produccion: sin benchmarks publicados, sin datos de latencia ni throughput, y con cero descargas y cero likes en el momento de la ficha; se recomienda una evaluacion propia exhaustiva antes de desplegar. La compatibilidad se limita a vLLM segun la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qatfactory/Qwen3.5-9B-NVFP4-QAD-Code-4K
+- Modelo en Hugging Face: https://huggingface.co/qatfactory/Qwen3.5-9B-NVFP4-QAD-Code-4K
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Faaahju/fred es un repositorio alojado en HuggingFace por el usuario Faaahju del que únicamente se conoce su identificador, su licencia (bigscience-openrail-m) y las etiquetas de metadatos (region:us). La model card publicada no contiene más información que el bloque de licencia, por lo que no hay descripción funcional, arquitectura declarada, tamaño, contexto ni datos de entrenamiento.
+Faaahju/fred es un repositorio alojado en Hugging Face por el usuario Faaahju del que únicamente se conoce su identificador, su licencia (bigscience-openrail-m) y las etiquetas de metadatos (region:us). La model card publicada no contiene más información que el bloque de licencia, por lo que no hay descripción funcional, arquitectura declarada, tamaño, contexto ni datos de entrenamiento.
 
 No es posible determinar qué problema resuelve ni por qué sería relevante: el repositorio registra 0 descargas y 0 likes, no declara pipeline de inferencia y no incluye pesos documentados, ejemplos de uso ni resultados de evaluación. A efectos prácticos, la ficha se limita a inventariar la información ausente.
 
@@ -80,7 +80,7 @@ No disponible. Al desconocerse el tamaño, la arquitectura y la tarea del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Faaahju/fred
+- Hugging Face: https://huggingface.co/Faaahju/fred
 - Paper: no disponible.
 - Blog o artículo técnico: no disponible.
 - Repositorio de código: no disponible.

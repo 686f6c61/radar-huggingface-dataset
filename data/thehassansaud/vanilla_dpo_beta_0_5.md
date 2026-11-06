@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vanilla_DPO_beta_0_5 es un modelo de lenguaje de 405 millones de parámetros publicado en HuggingFace por TheHassanSaud. Según los metadatos del repositorio, utiliza la arquitectura GPT-NeoX, un transformer decoder-only, y el formato de pesos safetensors. El pipeline registrado es text-generation. El nombre del checkpoint sugiere que el modelo ha sido afinado mediante Direct Preference Optimization (DPO) con un valor de beta de 0.5, pero esta hipótesis no está confirmada en la documentación.
+Vanilla_DPO_beta_0_5 es un modelo de lenguaje de 405 millones de parámetros publicado en Hugging Face por TheHassanSaud. Según los metadatos del repositorio, utiliza la arquitectura GPT-NeoX, un transformer decoder-only, y el formato de pesos safetensors. El pipeline registrado es text-generation. El nombre del checkpoint sugiere que el modelo ha sido afinado mediante Direct Preference Optimization (DPO) con un valor de beta de 0.5, pero esta hipótesis no está confirmada en la documentación.
 
 La model card es una plantilla autogenerada que no proporciona información sobre el desarrollador, los datos de entrenamiento, los idiomas, la licencia o las capacidades del modelo. No hay benchmarks disponibles ni descripción de casos de uso. El modelo es relevante únicamente como pieza de investigación o experimento de alineación, y no puede considerarse apto para aplicaciones productivas sin una evaluación previa exhaustiva.
 
@@ -44,7 +44,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: con 405.334.016 parámetros, los pesos en FP16 ocupan aproximadamente 0.8 GB, por lo que se necesitaría al menos 2 GB de VRAM o RAM para inferencia con sobrecarga de ejecución.
 - GPU recomendadas: cualquier GPU con 2 GB o más de VRAM (p. ej., NVIDIA T4, RTX 3060, RTX 4090) o incluso CPU con suficiente memoria.
 - El modelo cabe en GPUs de consumo de baja gama y en sistemas sin GPU.
-- Opciones de despliegue: transformers, vLLM y Text Generation Inference (según los tags de HuggingFace). También es posible convertir los pesos a GGUF para usarlo con llama.cpp u Ollama.
+- Opciones de despliegue: transformers, vLLM y Text Generation Inference (según los tags de Hugging Face). También es posible convertir los pesos a GGUF para usarlo con llama.cpp u Ollama.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -61,5 +61,5 @@ No se han publicado benchmarks ni especificaciones de contexto para este modelo,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheHassanSaud/Vanilla_DPO_beta_0_5
+- Modelo en Hugging Face: https://huggingface.co/TheHassanSaud/Vanilla_DPO_beta_0_5
 - Perfil del autor: https://huggingface.co/TheHassanSaud

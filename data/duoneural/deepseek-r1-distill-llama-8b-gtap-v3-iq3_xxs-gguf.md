@@ -92,10 +92,10 @@ No se han publicado resultados de benchmarks comparativos (MMLU, HumanEval, MMLU
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DuoNeural DeepSeek-R1-Distill-Llama-8B-GTAP-v3-IQ3_XXS | 8,03B | IQ3_XXS (~3,2 bpw, G-TAP v3) | 128k (RoPE base) | other | HuggingFace (DuoNeural) |
-| deepseek-ai/DeepSeek-R1-Distill-Llama-8B | 8,03B | BF16/FP16 (sin cuantizar) | 128k (RoPE) | MIT (modelo base DeepSeek) | HuggingFace (DeepSeek) |
-| unsloth/DeepSeek-R1-Distill-Llama-8B-GGUF | 8,03B | GGUF estandar (varios niveles) | 128k (RoPE) | MIT (hereda del base) | HuggingFace (unsloth), ModelScope |
-| DuoNeural DeepSeek-R1-Distill-Qwen-1.5B-GTAP-v3-IQ2_XXS | 1,5B | IQ2_XXS (~2 bpw, G-TAP v3) | no disponible | other | HuggingFace (DuoNeural) |
+| DuoNeural DeepSeek-R1-Distill-Llama-8B-GTAP-v3-IQ3_XXS | 8,03B | IQ3_XXS (~3,2 bpw, G-TAP v3) | 128k (RoPE base) | other | Hugging Face (DuoNeural) |
+| deepseek-ai/DeepSeek-R1-Distill-Llama-8B | 8,03B | BF16/FP16 (sin cuantizar) | 128k (RoPE) | MIT (modelo base DeepSeek) | Hugging Face (DeepSeek) |
+| unsloth/DeepSeek-R1-Distill-Llama-8B-GGUF | 8,03B | GGUF estandar (varios niveles) | 128k (RoPE) | MIT (hereda del base) | Hugging Face (unsloth), ModelScope |
+| DuoNeural DeepSeek-R1-Distill-Qwen-1.5B-GTAP-v3-IQ2_XXS | 1,5B | IQ2_XXS (~2 bpw, G-TAP v3) | no disponible | other | Hugging Face (DuoNeural) |
 
 La comparativa de rendimiento frente a estos modelos no esta disponible: el autor no publica resultados cruzados y las cuantizaciones de unsloth no se han evaluado con los mismos conjuntos en esta ficha.
 
@@ -114,7 +114,7 @@ La comparativa de rendimiento frente a estos modelos no esta disponible: el auto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/DeepSeek-R1-Distill-Llama-8B-GTAP-v3-IQ3_XXS-GGUF
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/DeepSeek-R1-Distill-Llama-8B-GTAP-v3-IQ3_XXS-GGUF
 - Modelo base DeepSeek-R1-Distill-Llama-8B: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
 - README del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B/blob/main/README.md
 - Repositorio DeepSeek-R1 en GitHub: https://github.com/deepseek-ai/DeepSeek-R1

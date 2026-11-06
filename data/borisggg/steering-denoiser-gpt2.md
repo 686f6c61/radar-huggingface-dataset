@@ -78,5 +78,5 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/borisggg/steering-denoiser-gpt2
+- Modelo en Hugging Face: https://huggingface.co/borisggg/steering-denoiser-gpt2
 - Repositorio de código y reporte completo: https://github.com/bborisggg/steering-denoiser

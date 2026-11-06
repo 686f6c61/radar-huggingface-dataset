@@ -87,7 +87,7 @@ La comparativa se limita a modelos de la misma familia porque no se dispone de d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cgg507/Behemoth-R1-123B-v2-QTIP-2bit
+- Modelo en Hugging Face: https://huggingface.co/cgg507/Behemoth-R1-123B-v2-QTIP-2bit
 - Modelo base: https://huggingface.co/TheDrummer/Behemoth-R1-123B-v2
 - Repositorio del runtime y cuantizador: https://github.com/c000507/Behemoth-qtip
 - Paper QTIP: https://arxiv.org/abs/2406.11235

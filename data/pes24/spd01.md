@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PES24/spd01 es un repositorio publicado en HuggingFace por el usuario PES24, sin documentación asociada: no declara pipeline, licencia, idiomas ni arquitectura. El repositorio ocupa 19,4 GB y únicamente incorpora la etiqueta `region:us`, lo que indica que el autor no ha proporcionado una model card con información técnica utilizable.
+PES24/spd01 es un repositorio publicado en Hugging Face por el usuario PES24, sin documentación asociada: no declara pipeline, licencia, idiomas ni arquitectura. El repositorio ocupa 19,4 GB y únicamente incorpora la etiqueta `region:us`, lo que indica que el autor no ha proporcionado una model card con información técnica utilizable.
 
 A fecha de los datos disponibles acumula 0 descargas y 1 like, y no aparece en los resultados de búsqueda web consultados: las búsquedas devuelven documentación de SAP sobre ficheros con extensión `.dat`, sin relación alguna con este modelo. No hay paper, blog, repositorio de código ni demo vinculados.
 
@@ -38,7 +38,7 @@ El único dato estructural verificable es el tamaño del repositorio, 19,4 GB. E
 ## Capacidades
 
 - No se ha publicado ninguna lista de capacidades en la información disponible.
-- No se puede confirmar generación de texto, razonamiento, código, matemáticas ni visión: el repositorio no declara pipeline de HuggingFace (`text-generation`, `image-text-to-text`, etc.).
+- No se puede confirmar generación de texto, razonamiento, código, matemáticas ni visión: el repositorio no declara pipeline de Hugging Face (`text-generation`, `image-text-to-text`, etc.).
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes o razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible; el campo de idiomas está vacío.
@@ -84,7 +84,7 @@ No disponible. No es posible establecer una comparativa porque se desconoce la c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PES24/spd01
+- Repositorio en Hugging Face: https://huggingface.co/PES24/spd01
 - Paper: no disponible.
 - Blog o anuncio oficial: no disponible.
 - Repositorio de código: no disponible.

@@ -78,7 +78,7 @@ No se dispone de datos de benchmarks ni de comparaciones oficiales con otros det
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenGraphLabs/barehand-yolox-m-960 | no disponible | no aplica | AP50 0.947 (val), 0.777 (test) | Apache-2.0 | HuggingFace |
+| OpenGraphLabs/barehand-yolox-m-960 | no disponible | no aplica | AP50 0.947 (val), 0.777 (test) | Apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni de comparaciones oficiales con otros det
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenGraphLabs/barehand-yolox-m-960
+- Modelo en Hugging Face: https://huggingface.co/OpenGraphLabs/barehand-yolox-m-960
 - Repositorio oficial de YOLOX (Megvii): https://github.com/Megvii-BaseDetection/YOLOX
 - Commit de referencia de YOLOX: `419778480ab6`
 - Repositorio og-v2d-track3 (referenciado en la model card, sin URL directa disponible): no disponible

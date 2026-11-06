@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| starvla-pipette-aim-wrist1031-qwenoft-scratch-q1all | aprox. 4B | no disponible | Insercion de pipeta en Unitree G1 | no disponible | HuggingFace, 0 descargas |
+| starvla-pipette-aim-wrist1031-qwenoft-scratch-q1all | aprox. 4B | no disponible | Insercion de pipeta en Unitree G1 | no disponible | Hugging Face, 0 descargas |
 | OpenVLA | aprox. 7B | no disponible | Manipulacion general | no disponible en esta ficha | Publico |
 | pi0 (Physical Intelligence) | no disponible | no disponible | Control robotico general | no disponible en esta ficha | Publico |
 
@@ -84,7 +84,7 @@ La comparacion cuantitativa con alternativas no esta disponible: no hay benchmar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GeertWang/starvla-pipette-aim-wrist1031-qwenoft-scratch-q1all
+- Modelo en Hugging Face: https://huggingface.co/GeertWang/starvla-pipette-aim-wrist1031-qwenoft-scratch-q1all
 - Repositorio starVLA: no disponible en la informacion proporcionada
 - Paper o blog del metodo: no disponible en la informacion proporcionada
 - Demo o video: no disponible en la informacion proporcionada

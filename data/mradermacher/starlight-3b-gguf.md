@@ -34,7 +34,7 @@ Tampoco se han publicado datos sobre el volumen de tokens de entrenamiento, la c
 - No hay informacion publicada sobre capacidades de agente o razonamiento multi-paso.
 - Capacidad multilingue limitada al ingles segun el campo `language` de la model card.
 - No se documentan capacidades de vision, audio ni modos de razonamiento explicito (thinking mode).
-- El modelo esta marcado como `endpoints_compatible`, lo que sugiere compatibilidad con endpoints de inferencia de HuggingFace.
+- El modelo esta marcado como `endpoints_compatible`, lo que sugiere compatibilidad con endpoints de inferencia de Hugging Face.
 
 ## Casos de uso
 
@@ -86,7 +86,7 @@ No disponible. No se dispone de datos sobre la arquitectura, el contexto, el ren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Starlight-3B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Starlight-3B-GGUF
 - Modelo base: https://huggingface.co/Sethblocks/Starlight-3B
 - Pagina de resumen de descargas del autor: https://hf.tst.eu/model#Starlight-3B-GGUF
 - Ejemplo de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

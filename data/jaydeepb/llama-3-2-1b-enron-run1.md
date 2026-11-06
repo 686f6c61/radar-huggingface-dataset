@@ -77,6 +77,6 @@ La diferencia clave es el proposito: mientras los modelos base de Meta estan pen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/llama-3.2-1b-enron-run1
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/llama-3.2-1b-enron-run1
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Conjunto de datos: https://huggingface.co/datasets/corbt/enron-emails

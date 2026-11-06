@@ -72,10 +72,10 @@ La comparación pareada exacta de McNemar entre 2B v6 y 4B v6 arroja p ≈ 0,85,
 
 | Modelo | Parámetros base | Contexto | Éxito LIBERO-Object | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 2B v6 (este adaptador) | 2B | cutoff de entrenamiento 2048 | 61/100 | Apache 2.0 | HuggingFace |
-| 4B v6 | 4B | cutoff de entrenamiento 2048 | 63/100 | Apache 2.0 | HuggingFace |
-| 4B v5 | 4B | cutoff de entrenamiento 2048 | 19/100 | Apache 2.0 | HuggingFace |
-| Adaptador sim Show-Harness 2B | 2B | no disponible | 0/100 | no disponible | HuggingFace |
+| 2B v6 (este adaptador) | 2B | cutoff de entrenamiento 2048 | 61/100 | Apache 2.0 | Hugging Face |
+| 4B v6 | 4B | cutoff de entrenamiento 2048 | 63/100 | Apache 2.0 | Hugging Face |
+| 4B v5 | 4B | cutoff de entrenamiento 2048 | 19/100 | Apache 2.0 | Hugging Face |
+| Adaptador sim Show-Harness 2B | 2B | no disponible | 0/100 | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ La comparación pareada exacta de McNemar entre 2B v6 y 4B v6 arroja p ≈ 0,85,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kugelblytz/qwen3.5-2b-libero-object-v6-lora
+- Modelo en Hugging Face: https://huggingface.co/kugelblytz/qwen3.5-2b-libero-object-v6-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Variante 4B v6: https://huggingface.co/kugelblytz/qwen3.5-4b-libero-object-v6-lora
 - Variante 4B v5: https://huggingface.co/kugelblytz/qwen3.5-4b-libero-object-v5-lora

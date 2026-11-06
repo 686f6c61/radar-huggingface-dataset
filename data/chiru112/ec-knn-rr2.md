@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ec-knn-rr2` es un artefacto de predicción de números EC (Enzyme Commission) publicado en HuggingFace por el usuario `chiru112`. No es un modelo de lenguaje ni una red neuronal profunda: es un pipeline de recuperación basado en búsqueda de similitud con MMseqs2 sobre el conjunto de entrenamiento completo, seguido de una fase de reordenación mediante un clasificador de gradient boosting o, en su defecto, una votación ponderada por bit-score. El objetivo declarado es la tarea de clasificación enzimática del benchmark Leak CURBER.
+`ec-knn-rr2` es un artefacto de predicción de números EC (Enzyme Commission) publicado en Hugging Face por el usuario `chiru112`. No es un modelo de lenguaje ni una red neuronal profunda: es un pipeline de recuperación basado en búsqueda de similitud con MMseqs2 sobre el conjunto de entrenamiento completo, seguido de una fase de reordenación mediante un clasificador de gradient boosting o, en su defecto, una votación ponderada por bit-score. El objetivo declarado es la tarea de clasificación enzimática del benchmark Leak CURBER.
 
 El repositorio pesa 1,6 GB y contiene únicamente un artefacto serializado con `joblib`, lo que sugiere que los pesos del re-ranker y posiblemente el índice preconstruido de MMseqs2 viajan empaquetados en el mismo fichero. La model card describe un modo de ejecución concreto mediante un script `predict.py` que consume un Parquet de entrada y produce un JSONL de salida, con un mecanismo de *time guard* que aborta la búsqueda en máquinas lentas y recurre al EC más frecuente del conjunto de entrenamiento.
 
@@ -78,5 +78,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- [HuggingFace: chiru112/ec-knn-rr2](https://huggingface.co/chiru112/ec-knn-rr2)
+- [Hugging Face: chiru112/ec-knn-rr2](https://huggingface.co/chiru112/ec-knn-rr2)
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

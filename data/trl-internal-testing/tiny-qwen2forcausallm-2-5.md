@@ -87,7 +87,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trl-internal-testing/tiny-Qwen2ForCausalLM-2.5
+- Modelo en Hugging Face: https://huggingface.co/trl-internal-testing/tiny-Qwen2ForCausalLM-2.5
 - Repositorio de la libreria TRL: https://github.com/huggingface/trl
 - Documentacion de TRL: https://huggingface.co/docs/trl
 - Resultados de busqueda web: no relevantes. Las consultas realizadas devuelven contenidos sobre "Technology Readiness Level" (escala TRL de madurez tecnologica) y sobre grupos de trail running, sin relacion con el modelo ni con la libreria TRL de Hugging Face.

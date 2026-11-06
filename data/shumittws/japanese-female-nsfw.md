@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shumittws/japanese-female-nsfw` es un repositorio publicado en HuggingFace por el usuario `shumittws`, etiquetado por el propio autor como contenido no apto para todas las audiencias (`not-for-all-audiences`) y con licencia PDDL. El nombre sugiere un modelo orientado a la generacion de contenido para adultos con tematica de mujeres japonesas, pero la model card publicada no contiene ninguna descripcion tecnica, ningun ejemplo de uso ni ninguna referencia a la arquitectura subyacente. La informacion disponible se limita a metadatos de plataforma: identificador, licencia, tamano del repositorio (0,2 GB) y fechas de creacion y actualizacion (4 de noviembre de 2026, con dos minutos de diferencia entre ambas).
+`shumittws/japanese-female-nsfw` es un repositorio publicado en Hugging Face por el usuario `shumittws`, etiquetado por el propio autor como contenido no apto para todas las audiencias (`not-for-all-audiences`) y con licencia PDDL. El nombre sugiere un modelo orientado a la generacion de contenido para adultos con tematica de mujeres japonesas, pero la model card publicada no contiene ninguna descripcion tecnica, ningun ejemplo de uso ni ninguna referencia a la arquitectura subyacente. La informacion disponible se limita a metadatos de plataforma: identificador, licencia, tamano del repositorio (0,2 GB) y fechas de creacion y actualizacion (4 de noviembre de 2026, con dos minutos de diferencia entre ambas).
 
 El tamano del repositorio, 0,2 GB, es coherente con pesos cuantizados de un modelo pequeno o con un adaptador (LoRA, checkpoint parcial, embedding o componente auxiliar) mas que con un modelo de lenguaje completo de escala media o grande. No obstante, esta inferencia no puede confirmarse porque el autor no publica la lista de ficheros ni el formato de los pesos. Tampoco se declaran idiomas soportados, pipeline de inferencia ni parametros.
 
@@ -42,7 +42,7 @@ El unico indicio estructural es el tamano del repositorio (0,2 GB), compatible c
 - Evaluacion de contenido para adultos en un entorno controlado: el modelo podria emplearse en un sandbox interno para estudiar la calidad y los sesgos de la generacion de contenido NSFW en japones, siempre que se verifique primero la naturaleza real de los pesos.
 - Investigacion sobre filtrado y moderacion: serviria como muestra negativa para calibrar clasificadores de contenido para adultos, comparando sus salidas con las de un modelo de referencia seguro.
 - Auditoria de licencias y procedencia: util para estudiar como se declaran licencias permisivas (PDDL) en repositorios con contenido sensible y que obligaciones impone el autor.
-- Pruebas de trazabilidad en HuggingFace: caso de estudio sobre repositorios con metadatos minimos y su impacto en la reproducibilidad cientifica.
+- Pruebas de trazabilidad en Hugging Face: caso de estudio sobre repositorios con metadatos minimos y su impacto en la reproducibilidad cientifica.
 - Docencia sobre riesgos de modelos no documentados: ejemplo practico de por que no debe desplegarse un modelo sin model card, sin benchmarks y sin lista de ficheros.
 - Integracion experimental en pipelines de generacion de imagenes o texto para adultos, solo tras auditar el contenido del repositorio y confirmar que la licencia PDDL cubre el uso previsto.
 
@@ -75,5 +75,5 @@ No disponible. No se conocen modelos comparables de la misma categoria con infor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shumittws/japanese-female-nsfw
+- Repositorio en Hugging Face: https://huggingface.co/shumittws/japanese-female-nsfw
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

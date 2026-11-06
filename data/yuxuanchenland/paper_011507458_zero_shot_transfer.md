@@ -52,7 +52,7 @@ No disponible. Este repositorio no es un modelo de IA y no existe categoría de 
 - No hay garantía de que el documento sea revisado por pares ni de su validez científica.
 
 ## Enlaces
-- Repositorio de HuggingFace: https://huggingface.co/yuxuanchenland/paper_011507458_zero_shot_transfer
+- Repositorio de Hugging Face: https://huggingface.co/yuxuanchenland/paper_011507458_zero_shot_transfer
 - Resultados de búsqueda sobre *zero-shot transfer* (no vinculados al repositorio):
   - ZeroG: Investigating Cross-dataset Zero-shot ... – https://arxiv.org/abs/2402.11235
   - Preventing Zero-Shot Transfer Degradation in Continual Learning of Vision-Language Models – https://arxiv.org/abs/2303.06628

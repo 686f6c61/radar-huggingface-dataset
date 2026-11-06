@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto (tokens) | Tipo | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|---|
-| tournament-tourn_e119d815... (este adaptador) | No disponible (base de 7,6 B) | No especificado (base: 131.072) | Adaptador LoRA sobre Qwen2.5-7B-Instruct | No disponible | HuggingFace, 0 descargas, 0 likes | No disponible |
-| Qwen/Qwen2.5-7B-Instruct (modelo base) | 7,6 B | 131.072 | Transformer decoder-only denso | Apache 2.0 | HuggingFace, ampliamente utilizado | Publicados por el autor del base |
-| Meta Llama 3.1 8B Instruct | 8,03 B | 128.000 | Transformer decoder-only denso | Licencia comunitaria Llama 3.1 | HuggingFace | Publicados por el autor |
-| Mistral 7B Instruct v0.3 | 7,25 B | 32.768 | Transformer decoder-only denso | Apache 2.0 | HuggingFace | Publicados por el autor |
+| tournament-tourn_e119d815... (este adaptador) | No disponible (base de 7,6 B) | No especificado (base: 131.072) | Adaptador LoRA sobre Qwen2.5-7B-Instruct | No disponible | Hugging Face, 0 descargas, 0 likes | No disponible |
+| Qwen/Qwen2.5-7B-Instruct (modelo base) | 7,6 B | 131.072 | Transformer decoder-only denso | Apache 2.0 | Hugging Face, ampliamente utilizado | Publicados por el autor del base |
+| Meta Llama 3.1 8B Instruct | 8,03 B | 128.000 | Transformer decoder-only denso | Licencia comunitaria Llama 3.1 | Hugging Face | Publicados por el autor |
+| Mistral 7B Instruct v0.3 | 7,25 B | 32.768 | Transformer decoder-only denso | Apache 2.0 | Hugging Face | Publicados por el autor |
 
 La comparacion directa con el adaptador no es posible en terminos de rendimiento, ya que no existe ninguna evaluacion publicada del mismo. Las cifras de los modelos alternativos corresponden a la documentacion publica de sus respectivos autores y se incluyen solo como referencia de la categoria.
 
@@ -94,7 +94,7 @@ La comparacion directa con el adaptador no es posible en terminos de rendimiento
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_e119d8158386fa26_20260921-d1e88dfc-06fa-4ff6-8d4e-d787128a25ea-5CRjufiW
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_e119d8158386fa26_20260921-d1e88dfc-06fa-4ff6-8d4e-d787128a25ea-5CRjufiW
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL: https://github.com/huggingface/trl

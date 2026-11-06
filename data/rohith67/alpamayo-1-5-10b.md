@@ -6,7 +6,7 @@ Alpamayo 1.5 es un modelo de visión-lenguaje-acción (VLA) de 10.000 millones d
 
 La relevancia de este modelo radica en que aborda uno de los problemas más difíciles de la conducción autónoma: el manejo de eventos raros y de cola larga. Al combinar razonamiento textual explícito con predicción de trayectorias, permite a investigadores y desarrolladores del sector evaluar y construir sistemas de conducción más interpretables y robustos. El modelo soporta entrada multi-cámara, guía de navegación y respuestas a preguntas del usuario, lo que lo convierte en una herramienta interactiva para el desarrollo de sistemas de conducción autónoma.
 
-La versión publicada en HuggingFace (Rohith67/Alpamayo-1.5-10B) es un espejo de la versión oficial de NVIDIA (nvidia/Alpamayo-1.5-10B), con la misma arquitectura y pesos. El modelo se distribuye bajo licencia OpenMDW-1.1, que permite uso no comercial, con licencias comerciales disponibles bajo petición.
+La versión publicada en Hugging Face (Rohith67/Alpamayo-1.5-10B) es un espejo de la versión oficial de NVIDIA (nvidia/Alpamayo-1.5-10B), con la misma arquitectura y pesos. El modelo se distribuye bajo licencia OpenMDW-1.1, que permite uso no comercial, con licencias comerciales disponibles bajo petición.
 
 ## Especificaciones tecnicas
 
@@ -76,8 +76,8 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace (version oficial): https://huggingface.co/nvidia/Alpamayo-1.5-10B
-- Modelo en HuggingFace (espejo, objeto de esta ficha): https://huggingface.co/Rohith67/Alpamayo-1.5-10B
+- Modelo en Hugging Face (version oficial): https://huggingface.co/nvidia/Alpamayo-1.5-10B
+- Modelo en Hugging Face (espejo, objeto de esta ficha): https://huggingface.co/Rohith67/Alpamayo-1.5-10B
 - Repositorio de codigo: https://github.com/NVlabs/alpamayo1.5
 - Repositorio de la version anterior (Alpamayo 1): https://github.com/NVlabs/alpamayo
 - Pagina oficial de NVIDIA sobre Alpamayo: https://www.nvidia.com/en-us/solutions/autonomous-vehicles/alpamayo/

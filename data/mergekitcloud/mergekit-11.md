@@ -80,7 +80,7 @@ La comparación directa no es posible sin benchmarks, pero el modelo merge-11 he
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MergekitCloud/mergekit-11
+- Modelo en Hugging Face: https://huggingface.co/MergekitCloud/mergekit-11
 - Repositorio de MergeKit: https://github.com/arcee-ai/mergekit
 - Documentación de MergeKit: https://www.mergekit.com/
 - Paper de Model Stock: https://arxiv.org/abs/2403.19522

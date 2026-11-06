@@ -56,6 +56,6 @@ No disponible. En la búsqueda web se mencionan modelos de turn-taking como Turn
 - Licencia: la licencia MIT permite uso comercial sin restricciones, pero el usuario debe validar el modelo en su caso de uso específico.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Toprak1yu/conformer-voice-turn-taking
+- Hugging Face: https://huggingface.co/Toprak1yu/conformer-voice-turn-taking
 - Paper sobre turn-taking en interacción humano-robot (contexto): https://arxiv.org/html/2501.08946v1
 - Revisión sobre modelado de turn-taking en sistemas conversacionales (contexto): https://www.mdpi.com/2227-7080/13/12/591

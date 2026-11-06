@@ -60,7 +60,7 @@ No existe una comparativa publicada. El modelo se basa en Swin Transformer, por 
 - La fecha de creacion (2026) sugiere que es un proyecto reciente y sin validacion externa.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/artemivanovlu/model_481991774_swin_t_giant
+- Repositorio Hugging Face: https://huggingface.co/artemivanovlu/model_481991774_swin_t_giant
 - Documentacion de Swin Transformer en TorchVision: https://docs.pytorch.org/vision/master/models/generated/torchvision.models.swin_t.html
 - Repositorio oficial de Swin Transformer (Microsoft): https://github.com/microsoft/Swin-Transformer
-- Documentacion de Swin Transformer en HuggingFace Transformers: https://huggingface.co/docs/transformers/model_doc/swin
+- Documentacion de Swin Transformer en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/swin

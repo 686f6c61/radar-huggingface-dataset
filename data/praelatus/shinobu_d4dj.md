@@ -68,7 +68,7 @@ No se dispone de información sobre otros LoRA de personajes de D4DJ para compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Praelatus/Shinobu_D4DJ
+- Modelo en Hugging Face: https://huggingface.co/Praelatus/Shinobu_D4DJ
 - Enlace en Tensor.Art: https://tensor.art/models/855733861684905834
 - Enlace en CivArchive: https://civarchive.com/models/1155505?modelVersionId=1268698
 - Enlace en SeaArt: https://www.seaart.ai/models/detail/994fab7b26fd32840c5c93674cdc4330

@@ -69,6 +69,6 @@ No se dispone de modelos comparables en la misma categoría. El repositorio es u
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/saudalharbiina/matching
-- Perfil del autor en HuggingFace: https://huggingface.co/saudalharbiina
+- Repositorio en Hugging Face: https://huggingface.co/saudalharbiina/matching
+- Perfil del autor en Hugging Face: https://huggingface.co/saudalharbiina
 - Página de modelos del autor: https://huggingface.co/saudalharbiina/models

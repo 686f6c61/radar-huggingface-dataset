@@ -97,7 +97,7 @@ La comparativa se limita a modelos de la misma categoría (VLA o vision-language
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantización GGUF): https://huggingface.co/mradermacher/RoboInter-VLM_qwenvl25_3b-GGUF
+- Repositorio Hugging Face (cuantización GGUF): https://huggingface.co/mradermacher/RoboInter-VLM_qwenvl25_3b-GGUF
 - Modelo base: https://huggingface.co/InternRobotics/RoboInter-VLM_qwenvl25_3b
 - Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/RoboInter-VLM_qwenvl25_3b-i1-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#RoboInter-VLM_qwenvl25_3b-GGUF

@@ -4,7 +4,7 @@
 
 Hy4 preview es un modelo de lenguaje de nueva generación desarrollado por el equipo Tencent Hy, presentado como un modelo insignia de arquitectura Mixture-of-Experts (MoE). Con 770 000 millones de parámetros totales en el backbone (más una capa MTP de 10 000 millones), activa solo 49 000 millones por token, lo que lo sitúa en la frontera de los modelos abiertos de gran escala. Su diseño incorpora innovaciones como atención dispersa con Gated DeepSeek Sparse Attention (DSA) e IndexCache, así como conexiones residuales iHC (identity Hyper-Connections) para mejorar el flujo de información entre capas.
 
-El modelo está orientado a tareas de productividad de largo recorrido: ingeniería de software, análisis de documentos, desarrollo de juegos e investigación científica. Con una ventana de contexto de 1 millón de tokens, está pensado para manejar entradas masivas y razonamiento multi-paso. Se distribuye bajo licencia Apache 2.0 y está disponible en HuggingFace, aunque el repositorio concreto que se analiza (AMAImedia/Hy4-preview) es una re-subida del modelo original de Tencent. Su relevancia actual radica en ser uno de los primeros modelos abiertos con 1M de contexto y un coste de inferencia relativamente bajo gracias a su arquitectura MoE.
+El modelo está orientado a tareas de productividad de largo recorrido: ingeniería de software, análisis de documentos, desarrollo de juegos e investigación científica. Con una ventana de contexto de 1 millón de tokens, está pensado para manejar entradas masivas y razonamiento multi-paso. Se distribuye bajo licencia Apache 2.0 y está disponible en Hugging Face, aunque el repositorio concreto que se analiza (AMAImedia/Hy4-preview) es una re-subida del modelo original de Tencent. Su relevancia actual radica en ser uno de los primeros modelos abiertos con 1M de contexto y un coste de inferencia relativamente bajo gracias a su arquitectura MoE.
 
 ## Especificaciones técnicas
 
@@ -90,8 +90,8 @@ No se dispone de más datos para una comparativa exhaustiva.
 
 ## Enlaces
 
-- Repositorio HuggingFace (analizado): https://huggingface.co/AMAImedia/Hy4-preview
-- Repositorio HuggingFace oficial de Tencent: https://huggingface.co/tencent/Hy4-preview
+- Repositorio Hugging Face (analizado): https://huggingface.co/AMAImedia/Hy4-preview
+- Repositorio Hugging Face oficial de Tencent: https://huggingface.co/tencent/Hy4-preview
 - GitHub oficial: https://github.com/Tencent-Hunyuan/Hy4-preview
 - ModelScope: https://modelscope.cn/models/Tencent-Hunyuan/Hy4-preview
 - Página de precios y disponibilidad: https://llm24.net/model/hy4-preview

@@ -88,7 +88,7 @@ No se dispone de datos suficientes para comparar con modelos de clasificación d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v3
+- Modelo en Hugging Face: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v3
 - Versión recomendada (v4): https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4
 - Versión 0.8B v3: https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3
 - Versión v2 2B: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2

@@ -1,7 +1,7 @@
 # Donghyun1228/pi05-libero-dense-contact-d2-wrist-kd-small-20261002
 
 ## Resumen
-Este repositorio contiene un checkpoint de política robótica basado en pi0.5 (pi05), un modelo de visión-lenguaje-acción (VLA) desarrollado por el autor Donghyun1228 y publicado en HuggingFace. El checkpoint corresponde al paso final (9999) de 10.000 actualizaciones de entrenamiento y está especializado en una adaptación de punto de vista ("viewpoint adaptation") sobre el benchmark LIBERO, un conjunto de tareas de manipulación robótica de contacto denso. Forma parte de una familia de experimentos de ajuste fino que adaptan el codificador visual y el LLM base mientras mantienen congelado el experto en acciones.
+Este repositorio contiene un checkpoint de política robótica basado en pi0.5 (pi05), un modelo de visión-lenguaje-acción (VLA) desarrollado por el autor Donghyun1228 y publicado en Hugging Face. El checkpoint corresponde al paso final (9999) de 10.000 actualizaciones de entrenamiento y está especializado en una adaptación de punto de vista ("viewpoint adaptation") sobre el benchmark LIBERO, un conjunto de tareas de manipulación robótica de contacto denso. Forma parte de una familia de experimentos de ajuste fino que adaptan el codificador visual y el LLM base mientras mantienen congelado el experto en acciones.
 
 El modelo se sirve mediante el script `scripts/serve_policy.py` del proyecto, usando una configuración de política específica (`pi05_libero_view_shared_decoder_idm_scale_matched_translation_sweep_cumulative_average_frozen_head_vlm_kd`). Es relevante para investigadores en robótica que trabajan con el ecosistema LIBERO y pi0.5, ya que demuestra técnicas de destilación de representación y ajuste de vista sobre datos recolectados en MuJoCo.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ta
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (pi05-libero-dense-contact-d2-wrist-kd-small) | pi0.5 (VLA) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| Este checkpoint (pi05-libero-dense-contact-d2-wrist-kd-small) | pi0.5 (VLA) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | pi0.5 base | VLA | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | OpenVLA | VLA | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -79,7 +79,7 @@ No se dispone de datos cuantitativos para establecer comparaciones rigurosas con
 - No se documentan sesgos específicos, pero al entrenarse sobre un conjunto de datos de simulación concreto (densidad 2, semilla 7), puede heredar los sesgos de ese conjunto y generalizar mal a otras distribuciones.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-dense-contact-d2-wrist-kd-small-20261002
+- Repositorio Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-dense-contact-d2-wrist-kd-small-20261002
 - Dataset de entrenamiento: https://huggingface.co/datasets/Donghyun1228/libero-dense-contact-sweep-d2-20261002
 - Commit del dataset: `9f8f600ce0e8f5df51c0e847c65a1e09f29d8494`
 - Script de despliegue referenciado: `scripts/serve_policy.py` (incluido en el proyecto del autor; no se proporciona URL directa en la información disponible)

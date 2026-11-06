@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `capsd-medcase-marin-8b-base-medicine_random_b2000_s0` es un ajuste fino (fine-tuning) completo del modelo base `marin-community/marin-8b-base`, un modelo de lenguaje de 8.030 millones de parámetros. Ha sido desarrollado por el usuario AmberYifan y publicado en HuggingFace con el objetivo de especializar el modelo en el dominio médico, entrenándolo sobre un dataset de casos clínicos (capsd_marin-8b-base-n13092-medicine-medcase__mix_medicine_random_b2000_s0). El entrenamiento se realizó con la librería Llama Factory, utilizando un ajuste completo (full fine-tuning) sobre 13.092 muestras.
+El modelo `capsd-medcase-marin-8b-base-medicine_random_b2000_s0` es un ajuste fino (fine-tuning) completo del modelo base `marin-community/marin-8b-base`, un modelo de lenguaje de 8.030 millones de parámetros. Ha sido desarrollado por el usuario AmberYifan y publicado en Hugging Face con el objetivo de especializar el modelo en el dominio médico, entrenándolo sobre un dataset de casos clínicos (capsd_marin-8b-base-n13092-medicine-medcase__mix_medicine_random_b2000_s0). El entrenamiento se realizó con la librería Llama Factory, utilizando un ajuste completo (full fine-tuning) sobre 13.092 muestras.
 
 La relevancia de este modelo radica en su potencial aplicación en tareas de procesamiento de lenguaje natural en el ámbito sanitario, como la generación de resúmenes clínicos o la asistencia en documentación médica. Sin embargo, la documentación publicada es extremadamente escasa: no se proporcionan detalles sobre la arquitectura interna, el contexto máximo, los idiomas soportados ni resultados de evaluación. Esto limita seriamente su uso en producción sin una validación adicional.
 
@@ -68,5 +68,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace: AmberYifan/capsd-medcase-marin-8b-base-medicine_random_b2000_s0](https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_random_b2000_s0)
+- [Hugging Face: AmberYifan/capsd-medcase-marin-8b-base-medicine_random_b2000_s0](https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_random_b2000_s0)
 - [Modelo base: marin-community/marin-8b-base](https://huggingface.co/marin-community/marin-8b-base) (enlace inferido, no verificado)

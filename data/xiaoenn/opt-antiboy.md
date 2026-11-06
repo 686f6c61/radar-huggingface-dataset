@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OPT-Antiboy es un modelo publicado en HuggingFace por el usuario XiaoEnn bajo licencia Apache 2.0. Por el identificador y la convencion de nombres de la familia OPT (Open Pre-trained Transformer) de Meta AI, se trata presumiblemente de un ajuste fino o una variante derivada de un modelo OPT, aunque la model card no proporciona ninguna informacion tecnica que lo confirme: no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni proposito declarado.
+OPT-Antiboy es un modelo publicado en Hugging Face por el usuario XiaoEnn bajo licencia Apache 2.0. Por el identificador y la convencion de nombres de la familia OPT (Open Pre-trained Transformer) de Meta AI, se trata presumiblemente de un ajuste fino o una variante derivada de un modelo OPT, aunque la model card no proporciona ninguna informacion tecnica que lo confirme: no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni proposito declarado.
 
 La model card se limita al bloque de metadatos YAML con la licencia Apache 2.0 y no contiene ningun texto adicional. El repositorio no registra descargas ni likes en el momento de la consulta, y no declara pipeline, idiomas ni etiquetas de tarea, lo que impide clasificarlo funcionalmente con rigor.
 
@@ -34,12 +34,12 @@ Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesad
 - No se declara soporte de agentes ni de razonamiento multi-paso.
 - No se declaran capacidades multilingues ni idiomas cubiertos.
 - No se declara modo de razonamiento (thinking mode), vision ni audio.
-- No se declara pipeline de HuggingFace asociado (text-generation, text-classification u otro).
+- No se declara pipeline de Hugging Face asociado (text-generation, text-classification u otro).
 
 ## Casos de uso
 
 - Evaluacion comparativa de variantes de la familia OPT: solo si se confirma que los pesos derivan de OPT, podria emplearse como punto de comparacion en experimentos academicos de ajuste fino, siempre tras auditar el repositorio.
-- Investigacion sobre ajustes finos comunitarios: util como caso de estudio de publicaciones sin documentacion, para analizar practicas de publicacion en HuggingFace.
+- Investigacion sobre ajustes finos comunitarios: util como caso de estudio de publicaciones sin documentacion, para analizar practicas de publicacion en Hugging Face.
 - Pruebas de reproducibilidad: descargar los pesos y verificar su hash e integridad antes de cualquier uso, dado que no hay model card que describa el contenido.
 - Experimentacion controlada en entornos aislados: cargar el modelo en un sandbox para inspeccionar su tokenizer, configuracion y comportamiento, sin exponerlo a usuarios finales.
 - Docencia sobre evaluacion de modelos: usar el repositorio como ejemplo de por que la ausencia de model card impide adoptar un modelo en produccion.
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| XiaoEnn/OPT-Antiboy | no disponible | no disponible | Apache 2.0 | practicamente nula | repositorio HuggingFace |
-| facebook/opt-1.3b | 1.3B | 2048 tokens | OPT-175B License (no comercial en la practica) | model card completa | HuggingFace |
-| facebook/opt-125m | 125M | 2048 tokens | OPT-175B License | model card completa | HuggingFace |
-| Modelos de la familia OPT de Meta | 125M a 66B | 2048 tokens | OPT-175B License | paper y model cards | HuggingFace |
+| XiaoEnn/OPT-Antiboy | no disponible | no disponible | Apache 2.0 | practicamente nula | repositorio Hugging Face |
+| facebook/opt-1.3b | 1.3B | 2048 tokens | OPT-175B License (no comercial en la practica) | model card completa | Hugging Face |
+| facebook/opt-125m | 125M | 2048 tokens | OPT-175B License | model card completa | Hugging Face |
+| Modelos de la familia OPT de Meta | 125M a 66B | 2048 tokens | OPT-175B License | paper y model cards | Hugging Face |
 
 La comparativa con la familia OPT original se incluye solo como referencia de la convencion de nombres; no hay datos que permitan confirmar que OPT-Antiboy comparte arquitectura, tamano o tokenizer con esas variantes.
 
@@ -80,6 +80,6 @@ La comparativa con la familia OPT original se incluye solo como referencia de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/XiaoEnn/OPT-Antiboy
+- Repositorio Hugging Face: https://huggingface.co/XiaoEnn/OPT-Antiboy
 - Paper de la familia OPT (referencia, no confirmado que aplique): https://arxiv.org/abs/2205.01068
-- Repositorio oficial de OPT en HuggingFace (referencia): https://huggingface.co/facebook/opt-1.3b
+- Repositorio oficial de OPT en Hugging Face (referencia): https://huggingface.co/facebook/opt-1.3b

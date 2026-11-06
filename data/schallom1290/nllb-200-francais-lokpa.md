@@ -4,7 +4,7 @@
 
 El modelo `Schallom1290/nllb-200-francais-lokpa` es un fine-tune del modelo NLLB-200 de Meta AI, especializado en traduccion automatica entre frances y lokpa (tambien conocido como lukpa), una lengua gur de la familia Níger-Congo hablada en Togo y Benin. Con 615 millones de parametros, aprovecha la arquitectura m2m_100 de Meta para abordar la traduccion de una lengua de bajos recursos, un ambito donde los sistemas comerciales suelen ofrecer cobertura limitada o nula.
 
-El modelo se distribuye en formato safetensors y esta diseñado para la tarea de text2text-generation mediante la libreria transformers de HuggingFace. Su relevancia radica en la escasez de recursos de traduccion para lenguas como el lokpa, y en la posibilidad de desplegar un sistema de traduccion de calidad en infraestructura modesta.
+El modelo se distribuye en formato safetensors y esta diseñado para la tarea de text2text-generation mediante la libreria transformers de Hugging Face. Su relevancia radica en la escasez de recursos de traduccion para lenguas como el lokpa, y en la posibilidad de desplegar un sistema de traduccion de calidad en infraestructura modesta.
 
 La model card publicada por el autor esta practicamente vacia, por lo que los detalles de entrenamiento, licencia y evaluacion no estan disponibles publicamente. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica que no ha sido validado por la comunidad.
 
@@ -31,7 +31,7 @@ Los detalles del entrenamiento no estan disponibles: no se documentan los datos 
 
 - Traduccion automatica frances-lokpa y posiblemente lokpa-frances (la direccion exacta no esta confirmada en la documentacion).
 - Generacion de texto condicionada (text2text-generation) mediante la API de transformers.
-- Compatible con pipelines de HuggingFace para inferencia directa.
+- Compatible con pipelines de Hugging Face para inferencia directa.
 - Al estar basado en NLLB-200, hereda la capacidad de manejar lenguas de bajos recursos, aunque el fine-tune puede alterar este comportamiento.
 - No se ha confirmado soporte para tool calling, agentes, vision ni otras capacidades multimodales.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 2,5 GB en fp32 (615M parametros), alrededor de 1,3 GB en fp16 y menos de 1 GB en int8.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para fp32 (por ejemplo, NVIDIA GTX 1650, RTX 3050 o superiores). Tambien puede ejecutarse en CPU con cuantizacion.
 - Cabe en GPUs de consumo: si, en la mayoria de tarjetas modernas con 4 GB o mas de VRAM.
-- Opciones de despliegue: transformers (pipeline de HuggingFace), vLLM, llama.cpp (si se convierte a GGUF) o TGI.
+- Opciones de despliegue: transformers (pipeline de Hugging Face), vLLM, llama.cpp (si se convierte a GGUF) o TGI.
 - Latencia y throughput: no disponibles. Para un modelo de 615M parametros, se espera una latencia de decenas de milisegundos por token en GPU moderna, pero no hay datos confirmados.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ El modelo se distingue del NLLB-200 base por su especializacion en la direccion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Schallom1290/nllb-200-francais-lokpa
+- Hugging Face: https://huggingface.co/Schallom1290/nllb-200-francais-lokpa
 - Blog de Meta sobre NLLB-200: https://ai.meta.com/blog/nllb-200-high-quality-machine-translation/
-- Documentacion de NLLB en HuggingFace: https://huggingface.co/docs/transformers/model_doc/nllb
+- Documentacion de NLLB en Hugging Face: https://huggingface.co/docs/transformers/model_doc/nllb
 - Repositorio NLLB_translator: https://github.com/sioaeko/NLLB_translator

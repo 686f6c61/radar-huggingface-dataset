@@ -64,5 +64,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - conradlocke/krea2-identity-edit](https://huggingface.co/conradlocke/krea2-identity-edit)
+- [Hugging Face - conradlocke/krea2-identity-edit](https://huggingface.co/conradlocke/krea2-identity-edit)
 - [Modelo base - krea/Krea-2-Raw](https://huggingface.co/krea/Krea-2-Raw) (referenciado en las etiquetas, sin enlace directo verificado)

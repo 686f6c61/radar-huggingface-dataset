@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-dequantized-oQ8e-mtp` es una cuantización en 8 bits del modelo base Qwen3.6-35B-A3B, un modelo de arquitectura Mixture-of-Experts (MoE) desarrollado por Alibaba. La versión cuantizada ha sido producida por el usuario de HuggingFace `symrex` utilizando la herramienta oQ (oMLX v0.6.4) con precisión mixta, y está optimizada para ejecutarse en hardware Apple Silicon mediante la librería MLX.
+El modelo `symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-dequantized-oQ8e-mtp` es una cuantización en 8 bits del modelo base Qwen3.6-35B-A3B, un modelo de arquitectura Mixture-of-Experts (MoE) desarrollado por Alibaba. La versión cuantizada ha sido producida por el usuario de Hugging Face `symrex` utilizando la herramienta oQ (oMLX v0.6.4) con precisión mixta, y está optimizada para ejecutarse en hardware Apple Silicon mediante la librería MLX.
 
 El nombre del repositorio indica que se trata de una variante "Uncensored" con fine-tuning estilo "Genesis Hermes", lo que sugiere un entrenamiento orientado a reducir restricciones de contenido y a seguir instrucciones en formato Hermes. El modelo base presenta 35 mil millones de parámetros totales con 3 mil millones activos por token, una ventana de contexto de 262.000 tokens y capacidades multimodales, aunque esta versión cuantizada solo incluye pesos en formato MLX safetensors.
 
@@ -47,7 +47,7 @@ El nombre "Uncensored-Genesis-Hermes-V12" sugiere que el modelo ha pasado por un
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye métricas de evaluación, y las guías externas encontradas no proporcionan datos numéricos sobre el rendimiento de esta versión cuantizada específica. Para el modelo base Qwen3.6-35B-A3B, se sabe que supera a sus predecesores en tareas de agente y codificación, pero no se dispone de cifras concretas verificables.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye métricas de evaluación, y las guías externas encontradas no proporcionan datos numéricos sobre el rendimiento de esta versión cuantizada específica. Para el modelo base Qwen3.6-35B-A3B, se sabe que supera a sus predecesores en tareas de agente y codificación, pero no se dispone de cifras concretas verificables.
 
 ## Requisitos de hardware
 
@@ -81,7 +81,7 @@ La principal diferencia entre esta versión y las alternativas GGUF es el format
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-dequantized-oQ8e-mtp
+- Repositorio Hugging Face: https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-dequantized-oQ8e-mtp
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx
 - Guía GGUF de Qwen3.6-35B Genesis Hermes (2026): https://cldnavi.com/en/blog/qwen36-35b-genesis-hermes-guide-2026/
 - Guía GGUF de Qwen3.6-35B-A3B Genesis Hermes V11: https://hackernoon.com/qwen36-35b-a3b-genesis-hermes-v11-complete-gguf-guide

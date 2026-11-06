@@ -80,10 +80,10 @@ La comparativa se limita a modelos de la misma familia Hy-MT, ya que no hay info
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/tanshin91/Hy-MT2-1.8B-oQ4e-fp16
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/tanshin91/Hy-MT2-1.8B-oQ4e-fp16
 - Repositorio oficial Hy-MT2 (Tencent): https://github.com/Tencent-Hunyuan/Hy-MT2
 - Paper arXiv (v1): https://arxiv.org/html/2605.22064v1
 - Paper arXiv (v2): https://arxiv.org/html/2605.22064v2
-- Coleccion Hy-MT2 en HuggingFace: https://huggingface.co/collections/tencent/hy-mt2
+- Coleccion Hy-MT2 en Hugging Face: https://huggingface.co/collections/tencent/hy-mt2
 - Repositorio Hy-MT1.5 (version anterior): https://github.com/Tencent-Hunyuan/HY-MT
 - Herramienta de cuantizacion oQ: https://github.com/jundot/omlx

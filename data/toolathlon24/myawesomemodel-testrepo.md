@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado por el usuario toolathlon24 en HuggingFace bajo licencia MIT. Según la model card, el modelo habría experimentado una actualización significativa que mejora su razonamiento profundo y sus capacidades de inferencia, con un rendimiento destacado en matemáticas, programación y lógica. La tarjeta del modelo también menciona una reducción de la tasa de alucinación y un mejor soporte para function calling.
+MyAwesomeModel-TestRepo es un repositorio publicado por el usuario toolathlon24 en Hugging Face bajo licencia MIT. Según la model card, el modelo habría experimentado una actualización significativa que mejora su razonamiento profundo y sus capacidades de inferencia, con un rendimiento destacado en matemáticas, programación y lógica. La tarjeta del modelo también menciona una reducción de la tasa de alucinación y un mejor soporte para function calling.
 
 Sin embargo, hay una discrepancia importante: el repositorio tiene un tamaño de 0.0 GB y cero descargas, lo que indica que no contiene pesos ni artefactos reales del modelo. Las etiquetas del repositorio indican que se trata de un modelo BERT para extracción de características (feature-extraction), lo que contradice las afirmaciones de la model card sobre capacidades avanzadas de razonamiento. En consecuencia, los datos técnicos reales del modelo (arquitectura, parámetros, contexto) no están disponibles y las afirmaciones de rendimiento no pueden verificarse.
 
@@ -21,7 +21,7 @@ Sin embargo, hay una discrepancia importante: el repositorio tiene un tamaño de
 
 ## Arquitectura y entrenamiento
 
-No hay información verificable sobre la arquitectura del modelo. Las etiquetas de HuggingFace indican `bert`, `transformers` y `pytorch`, pero la model card describe un modelo con capacidades de razonamiento avanzado, lo que no es coherente con una arquitectura BERT de extracción de características. La model card menciona que el modelo ha sido actualizado con "recursos computacionales incrementados" y "mecanismos de optimización algorítmica durante el post-entrenamiento", pero no se proporcionan detalles concretos sobre el dataset de entrenamiento, el número de tokens, ni técnicas como RLHF o DPO.
+No hay información verificable sobre la arquitectura del modelo. Las etiquetas de Hugging Face indican `bert`, `transformers` y `pytorch`, pero la model card describe un modelo con capacidades de razonamiento avanzado, lo que no es coherente con una arquitectura BERT de extracción de características. La model card menciona que el modelo ha sido actualizado con "recursos computacionales incrementados" y "mecanismos de optimización algorítmica durante el post-entrenamiento", pero no se proporcionan detalles concretos sobre el dataset de entrenamiento, el número de tokens, ni técnicas como RLHF o DPO.
 
 La model card también menciona que la versión anterior usaba un promedio de 12 000 tokens por pregunta en el conjunto de test AIME 2025, mientras que la nueva versión usa 23 000 tokens por pregunta, lo que sugiere un modo de razonamiento extendido. Sin embargo, estos datos no pueden verificarse al no existir pesos publicados.
 

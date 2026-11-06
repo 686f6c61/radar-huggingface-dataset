@@ -72,6 +72,6 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- [HuggingFace - amity-adav4/cs231n-contrastive](https://huggingface.co/amity-adav4/cs231n-contrastive)
+- [Hugging Face - amity-adav4/cs231n-contrastive](https://huggingface.co/amity-adav4/cs231n-contrastive)
 - [CS231n: Deep Learning for Computer Vision (Stanford)](https://cs231n.stanford.edu/)
 - [Notas del curso CS231n 2025 (no oficiales)](https://raimbekovm.github.io/cs231n-2025-notes/)

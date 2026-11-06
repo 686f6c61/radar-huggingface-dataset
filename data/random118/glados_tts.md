@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLaDOS TTS es un conjunto de modelos de síntesis de voz (text-to-speech) que replican la voz y el estilo de habla de GLaDOS, la inteligencia artificial del videojuego Portal. Publicado en HuggingFace por Random118, el modelo se compone de dos implementaciones: una basada en Style-Bert_VITS2, que reproduce la entonación emocional del personaje en inglés, y otra basada en GPT-SoVITS, que amplía la capacidad a japonés, inglés y chino mediante ajuste fino de la técnica zero-shot TTS. Además, el repositorio incluye un paquete de doblaje ruso generado con CosyVoice 3, con 20 clips de audio y perfiles de prosodia.
+GLaDOS TTS es un conjunto de modelos de síntesis de voz (text-to-speech) que replican la voz y el estilo de habla de GLaDOS, la inteligencia artificial del videojuego Portal. Publicado en Hugging Face por Random118, el modelo se compone de dos implementaciones: una basada en Style-Bert_VITS2, que reproduce la entonación emocional del personaje en inglés, y otra basada en GPT-SoVITS, que amplía la capacidad a japonés, inglés y chino mediante ajuste fino de la técnica zero-shot TTS. Además, el repositorio incluye un paquete de doblaje ruso generado con CosyVoice 3, con 20 clips de audio y perfiles de prosodia.
 
 El modelo resuelve la necesidad de generar contenido de voz con la personalidad característica de GLaDOS, tanto para proyectos de fans como para aplicaciones creativas que requieran un tono sarcástico o asistente. Su relevancia actual radica en que combina dos arquitecturas TTS de código abierto y ofrece soporte multilingüe, lo que permite integrar la voz en distintos idiomas sin necesidad de entrenar desde cero. El tamaño del repositorio es de 0.4 GB, lo que indica que los pesos son relativamente ligeros.
 
@@ -74,6 +74,6 @@ No se dispone de modelos comparables publicados que repliquen la voz de GLaDOS. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Random118/GLaDOS_TTS
-- Repositorio original en HuggingFace: https://huggingface.co/WarriorMama777/GLaDOS_TTS
+- Hugging Face: https://huggingface.co/Random118/GLaDOS_TTS
+- Repositorio original en Hugging Face: https://huggingface.co/WarriorMama777/GLaDOS_TTS
 - Repositorio de entrenamiento TTS_GLaDOS en GitHub: https://github.com/ianrose42/TTS_GLaDOS

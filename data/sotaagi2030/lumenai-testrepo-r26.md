@@ -75,7 +75,7 @@ No se puede realizar una comparativa fiable con modelos similares, ya que la mod
 
 ## Limitaciones y advertencias
 
-- **Repositorio sin pesos**: el repositorio de HuggingFace tiene un tamaño de 0.0 GB, lo que indica que no se han subido los archivos del modelo. No es posible descargarlo ni ejecutarlo localmente.
+- **Repositorio sin pesos**: el repositorio de Hugging Face tiene un tamaño de 0.0 GB, lo que indica que no se han subido los archivos del modelo. No es posible descargarlo ni ejecutarlo localmente.
 - **Información técnica incompleta**: se desconoce la arquitectura, el número de parámetros, la longitud de contexto, los idiomas y el formato de pesos.
 - **Benchmarks no reproducibles**: los resultados de la tabla de la model card no indican los nombres de las pruebas ni los modelos de comparación, por lo que no se pueden verificar de manera independiente.
 - **Posible sesgo y alucinación**: aunque se menciona una reducción de la tasa de alucinación, no se proporcionan datos cuantitativos ni estudios de sesgo.

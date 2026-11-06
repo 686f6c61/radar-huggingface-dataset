@@ -87,9 +87,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/richardyoung/Olmo-3.1-32B-Instruct-DiM-heretic
+- Hugging Face: https://huggingface.co/richardyoung/Olmo-3.1-32B-Instruct-DiM-heretic
 - Modelo base: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct
 - Heretic: https://heretic-project.org
 - Dataset Dolci-Instruct-RL: https://huggingface.co/datasets/allenai/Dolci-Instruct-RL
 - Paper citado (arxiv): https://arxiv.org/abs/2512.13961
-- Reproducibilidad: directorio `reproduce/README.md` dentro del repositorio de HuggingFace
+- Reproducibilidad: directorio `reproduce/README.md` dentro del repositorio de Hugging Face

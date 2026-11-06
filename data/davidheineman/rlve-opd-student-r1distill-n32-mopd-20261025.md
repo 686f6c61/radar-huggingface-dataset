@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rlve-opd-student-R1Distill-n32-mopd-20261025` es un ajuste fino de investigación publicado por el usuario de HuggingFace davidheineman sobre `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`. No es un modelo pensado para uso general: son los pesos finales de un experimento de escalado de datos (data scaling) con aprendizaje por refuerzo, en el que la política estudiante se inicializa desde cero desde el modelo base y se entrena sobre 32 entornos con dificultad equilibrada (etiquetas 0/1), con un tope de 16.000 rollouts y checkpoint final en la actualización 1999 (indexada desde cero).
+`rlve-opd-student-R1Distill-n32-mopd-20261025` es un ajuste fino de investigación publicado por el usuario de Hugging Face davidheineman sobre `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`. No es un modelo pensado para uso general: son los pesos finales de un experimento de escalado de datos (data scaling) con aprendizaje por refuerzo, en el que la política estudiante se inicializa desde cero desde el modelo base y se entrena sobre 32 entornos con dificultad equilibrada (etiquetas 0/1), con un tope de 16.000 rollouts y checkpoint final en la actualización 1999 (indexada desde cero).
 
 El interés del artefacto es metodológico: permite reproducir y comparar curvas de aprendizaje en función del número de entornos de entrenamiento, y sirve como referencia para estudiar cómo escala el RL con recompensas verificables en modelos pequeños. El autor etiqueta el método como MOPD y el marco como RLVE; el repositorio incluye los ficheros `training_run.json` y `training_config.yaml` con la lista de entornos y la configuración exacta del run, además de los enlaces al experimento en Weights & Biases.
 
@@ -88,7 +88,7 @@ Los datos de contexto, licencia y rendimiento de los modelos comparables no se h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-student-R1Distill-n32-mopd-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-student-R1Distill-n32-mopd-20261025
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/david-heineman/rl-data-scaling-students-v1/runs/3873574d
 - Ficheros de configuración incluidos en el repositorio: `training_run.json` y `training_config.yaml`

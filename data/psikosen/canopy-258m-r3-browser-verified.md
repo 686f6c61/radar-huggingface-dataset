@@ -23,7 +23,7 @@ La arquitectura subyacente, según la información pública del modelo base `can
 
 El modelo hereda la arquitectura Recurrent MoE del modelo base `canopy-258m-r3`, que fue diseñado para computacion de alto rendimiento en el borde, razonamiento matematico y sintesis de codigo Python. Esta version browser-verified no incorpora nuevo entrenamiento en sus pesos principales; segun la model card, la mejora introducida consiste en "fiabilidad de ejecucion determinista", no en nuevas pasadas de entrenamiento. El sistema combina un scorer de acciones aprendido mediante contrastive learning con un conjunto de reglas literales que se aplican de forma optativa. Estas reglas permiten ejecutar comandos exactos como `Open LABEL.`, `Click LABEL.`, `Enter "VALUE" into LABEL.` y `Extract the text from LABEL.`, resolviendo la correspondencia de etiquetas de forma insensible a mayusculas y con normalizacion de espacios en blanco.
 
-El proceso de entrenamiento descarta deliberadamente un experimento posterior que regresionaba en las evaluaciones, tal como se documenta en `evaluation/rejected_training.md`. Los pesos se almacenan en bfloat16 y no se utiliza empaquetado ternario. Es importante senalar que el modelo no es un paquete `AutoModel` de HuggingFace con codigo remoto: se requiere importar las clases personalizadas de Canopy incluidas en el repositorio. La tokenizacion, la calibracion y los manifiestos SHA-256 se distribuyen junto con el checkpoint.
+El proceso de entrenamiento descarta deliberadamente un experimento posterior que regresionaba en las evaluaciones, tal como se documenta en `evaluation/rejected_training.md`. Los pesos se almacenan en bfloat16 y no se utiliza empaquetado ternario. Es importante senalar que el modelo no es un paquete `AutoModel` de Hugging Face con codigo remoto: se requiere importar las clases personalizadas de Canopy incluidas en el repositorio. La tokenizacion, la calibracion y los manifiestos SHA-256 se distribuyen junto con el checkpoint.
 
 ## Capacidades
 
@@ -68,8 +68,8 @@ Ademas, el scorer aprendido sin cambios habia alcanzado 108/144 en casos sinteti
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| canopy-258m-r3-browser-verified | 296.304.390 | No disponible | Browser-use, grounding determinista | No disponible | HuggingFace |
-| canopy-258m-r3-v2 | 258,56M | No disponible | Generalista: matematicas, codigo, browser-use | No disponible | HuggingFace |
+| canopy-258m-r3-browser-verified | 296.304.390 | No disponible | Browser-use, grounding determinista | No disponible | Hugging Face |
+| canopy-258m-r3-v2 | 258,56M | No disponible | Generalista: matematicas, codigo, browser-use | No disponible | Hugging Face |
 
 No se dispone de informacion suficiente para comparar con otros modelos de la misma categoria. El modelo `canopy-258m-r3-v2` es su alternativa mas cercana, aunque se diferencia por estar orientado a tareas generales mientras que esta version sacrifica alcance por fiabilidad de ejecucion en navegacion.
 
@@ -85,5 +85,5 @@ No se dispone de informacion suficiente para comparar con otros modelos de la mi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/psikosen/canopy-258m-r3-browser-verified
+- Hugging Face: https://huggingface.co/psikosen/canopy-258m-r3-browser-verified
 - Modelo base generalista (referencia): https://huggingface.co/psikosen/canopy-258m-r3-v2

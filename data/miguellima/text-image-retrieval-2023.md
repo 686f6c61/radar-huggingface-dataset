@@ -59,7 +59,7 @@ No disponible. No se puede comparar un repositorio de notas con modelos de IA re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/miguellima/text-image-retrieval-2023
+- Repositorio en Hugging Face: https://huggingface.co/miguellima/text-image-retrieval-2023
 - Referencia a Imagen (text-to-image) de Google DeepMind: https://imagen.research.google/
 - Wikipedia sobre Imagen: https://en.wikipedia.org/wiki/Imagen_(text-to-image_model)
 - GitHub Topics sobre *image-text-retrieval*: https://github.com/topics/image-text-retrieval

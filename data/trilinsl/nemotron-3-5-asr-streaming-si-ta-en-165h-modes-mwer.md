@@ -78,8 +78,8 @@ No se han publicado resultados comparativos con otros modelos (MMLU, HumanEval, 
 
 | Modelo | Idiomas | Arquitectura | Contexto/look-ahead | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Nemotron 3.5 ASR streaming si-ta-en + MWER) | si, ta, en | RNNT streaming | [56, 13] | other | HuggingFace, 189 descargas |
-| TriLinSL/nemotron-3.5-asr-streaming-si-ta-en-165h-modes-continued (modelo base) | si, ta, en | RNNT streaming | [56, 13] | other | HuggingFace |
+| Este modelo (Nemotron 3.5 ASR streaming si-ta-en + MWER) | si, ta, en | RNNT streaming | [56, 13] | other | Hugging Face, 189 descargas |
+| TriLinSL/nemotron-3.5-asr-streaming-si-ta-en-165h-modes-continued (modelo base) | si, ta, en | RNNT streaming | [56, 13] | other | Hugging Face |
 | Modelos ASR multilingues genericos (p. ej. Whisper de OpenAI) | Multiples (incluye en, no si/ta de forma nativa) | Encoder-decoder transformer | No streaming nativo | MIT/Apache segun variante | Amplia disponibilidad |
 
 No se dispone de datos de benchmarks comparativos directos con alternativas en la informacion proporcionada.
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks comparativos directos con alternativas en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TriLinSL/nemotron-3.5-asr-streaming-si-ta-en-165h-modes-mwer
+- Hugging Face: https://huggingface.co/TriLinSL/nemotron-3.5-asr-streaming-si-ta-en-165h-modes-mwer
 - Modelo base: https://huggingface.co/TriLinSL/nemotron-3.5-asr-streaming-si-ta-en-165h-modes-continued
 - NeMo (libreria): https://github.com/NVIDIA/NeMo
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion disponible.

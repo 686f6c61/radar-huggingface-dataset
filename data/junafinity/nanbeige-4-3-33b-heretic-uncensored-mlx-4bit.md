@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junafinity/Nanbeige-4.3-33B-Heretic-Uncensored-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/junafinity/Nanbeige-4.3-33B-Heretic-Uncensored-MLX-4bit
 - Modelo base (Heretic): https://huggingface.co/Luni/Nanbeige-4.3-33B-Heretic
 - Modelo original: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - VeriSafe.Live: https://verisafe.live

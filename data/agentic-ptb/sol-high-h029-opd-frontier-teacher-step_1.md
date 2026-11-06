@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `agentic-ptb/sol-high.h029...` | 9,4B | no disponible | no disponible | HuggingFace (checkpoint intermedio) |
-| `Qwen/Qwen3.5-9B-Base` | 9,4B | no disponible | no disponible | HuggingFace (modelo base) |
-| Otros checkpoints de la celda `sol-high` | 9,4B | no disponible | no disponible | HuggingFace (mismo barrido) |
+| `agentic-ptb/sol-high.h029...` | 9,4B | no disponible | no disponible | Hugging Face (checkpoint intermedio) |
+| `Qwen/Qwen3.5-9B-Base` | 9,4B | no disponible | no disponible | Hugging Face (modelo base) |
+| Otros checkpoints de la celda `sol-high` | 9,4B | no disponible | no disponible | Hugging Face (mismo barrido) |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos, ya que no se han publicado benchmarks en la informacion proporcionada. La comparativa se limita a aspectos arquitectonicos y de disponibilidad.
 
@@ -76,6 +76,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos, ya que no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h029.opd-frontier-teacher.step_1
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h029.opd-frontier-teacher.step_1
 - Indice del barrido (referenciado en la model card): `agentic-ptb/INDEX` (no se proporciona URL directa)
 - Investigacion relacionada sobre destilacion con validacion de trayectorias futuras: https://arxiv.org/html/2608.01953

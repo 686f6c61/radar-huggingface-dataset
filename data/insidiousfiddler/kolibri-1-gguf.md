@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kolibri-1-GGUF es una version cuantizada en formato GGUF del modelo Aleph-Alpha/Kolibri-1-BF16, publicada por el usuario InsidiousFiddler en HuggingFace. Se trata de un modelo de generacion de texto de tipo mixture-of-experts (MoE) orientado a tareas de razonamiento, segun las etiquetas declaradas en la model card. El repositorio se marca explicitamente como experimental y con `inference: false`, lo que indica que no esta pensado para servirse directamente como base de inferencia en el Hub.
+Kolibri-1-GGUF es una version cuantizada en formato GGUF del modelo Aleph-Alpha/Kolibri-1-BF16, publicada por el usuario InsidiousFiddler en Hugging Face. Se trata de un modelo de generacion de texto de tipo mixture-of-experts (MoE) orientado a tareas de razonamiento, segun las etiquetas declaradas en la model card. El repositorio se marca explicitamente como experimental y con `inference: false`, lo que indica que no esta pensado para servirse directamente como base de inferencia en el Hub.
 
 El modelo original procede de Aleph-Alpha, y esta ficha describe la conversion a GGUF, no el entrenamiento original. La model card proporcionada es extremadamente escueta: solo declara la licencia Apache 2.0, el modelo base, la relacion de cuantizacion y los idiomas aleman e ingles. No incluye detalles sobre arquitectura concreta, numero de parametros, contexto ni datos de entrenamiento.
 

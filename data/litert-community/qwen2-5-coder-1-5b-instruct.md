@@ -72,8 +72,8 @@ No se dispone de datos de benchmarks comparativos con otros modelos en la inform
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-Coder-1.5B-Instruct (original) | 1.54B | safetensors bf16 | 32K (no confirmado) | Apache-2.0 | HuggingFace |
-| Qwen2.5-Coder-1.5B-Instruct (LiteRT-LM) | 1.54B | .litertlm (int4) | 4096 (KV budget) | Apache-2.0 | HuggingFace |
+| Qwen2.5-Coder-1.5B-Instruct (original) | 1.54B | safetensors bf16 | 32K (no confirmado) | Apache-2.0 | Hugging Face |
+| Qwen2.5-Coder-1.5B-Instruct (LiteRT-LM) | 1.54B | .litertlm (int4) | 4096 (KV budget) | Apache-2.0 | Hugging Face |
 
 Otras alternativas de código pequeño (CodeLlama-7B, StarCoderBase-1B) no se han incluido por falta de datos comparables en la información disponible.
 
@@ -89,7 +89,7 @@ Otras alternativas de código pequeño (CodeLlama-7B, StarCoderBase-1B) no se ha
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/litert-community/Qwen2.5-Coder-1.5B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/litert-community/Qwen2.5-Coder-1.5B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
 - Herramienta de conversión litert-torch: https://github.com/google-ai-edge/litert-torch

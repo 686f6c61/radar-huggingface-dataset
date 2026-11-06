@@ -4,7 +4,7 @@
 
 Stroke3D es un modelo de difusión latente desarrollado por un equipo de investigación (Zhao, Zheng, Yang, Fan y Yang) presentado en ICLR 2026. Su objetivo es transformar trazos 2D (dibujos o bocetos) en modelos 3D riggeados, es decir, modelos tridimensionales con una estructura de esqueleto y articulaciones lista para animación. El modelo se basa en una arquitectura de difusión latente con ControlNet, e incorpora una etapa de optimización por preferencias (SKA-DPO) para mejorar la calidad de los resultados.
 
-El repositorio de HuggingFace no contiene un pipeline completo de Diffusers, sino los pesos del ControlNet entrenado (subcarpeta `skdream-ska-dpo`), junto con datos de entrenamiento y metadatos. El tamaño total del repositorio es de 37,6 GB, lo que sugiere que los pesos son considerables, aunque no se especifica el número de parámetros. El modelo está pensado para ser usado con el código oficial del proyecto, no como una solución autónoma.
+El repositorio de Hugging Face no contiene un pipeline completo de Diffusers, sino los pesos del ControlNet entrenado (subcarpeta `skdream-ska-dpo`), junto con datos de entrenamiento y metadatos. El tamaño total del repositorio es de 37,6 GB, lo que sugiere que los pesos son considerables, aunque no se especifica el número de parámetros. El modelo está pensado para ser usado con el código oficial del proyecto, no como una solución autónoma.
 
 La relevancia de Stroke3D radica en que aborda un problema poco explorado: la generación de modelos 3D animables a partir de bocetos 2D, un flujo de trabajo habitual en diseño de personajes, concept art y prototipado. Al integrar ControlNet y optimización por preferencias, busca ofrecer un control más preciso y resultados más alineados con la intención del usuario que los métodos anteriores.
 
@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/zhaors00/Stroke3D
+- Repositorio de Hugging Face: https://huggingface.co/zhaors00/Stroke3D
 - Paper en OpenReview: https://openreview.net/forum?id=VgOWxor3LV
 - Código en GitHub: https://github.com/Whalesong-zrs/Stroke3D
 - Página del proyecto: https://whalesong-zrs.github.io/Stroke3D_project_page/

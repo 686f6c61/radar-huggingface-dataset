@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `TheHassanSaud/P2_pythia410m_q0_sc_bounded` es un checkpoint de generacion de texto publicado en HuggingFace por el usuario TheHassanSaud. Por el identificador, la etiqueta de arquitectura `gpt_neox` y el recuento exacto de parametros de los pesos en safetensors (405.334.016), se trata de un derivado o ajuste del modelo base Pythia-410M de EleutherAI, aunque la model card no lo confirma explicitamente ni documenta el proceso de ajuste. El sufijo del nombre (`q0_sc_bounded`) sugiere alguna variante de cuantizacion o de decodificacion restringida, pero no hay informacion publicada al respecto.
+El modelo `TheHassanSaud/P2_pythia410m_q0_sc_bounded` es un checkpoint de generacion de texto publicado en Hugging Face por el usuario TheHassanSaud. Por el identificador, la etiqueta de arquitectura `gpt_neox` y el recuento exacto de parametros de los pesos en safetensors (405.334.016), se trata de un derivado o ajuste del modelo base Pythia-410M de EleutherAI, aunque la model card no lo confirma explicitamente ni documenta el proceso de ajuste. El sufijo del nombre (`q0_sc_bounded`) sugiere alguna variante de cuantizacion o de decodificacion restringida, pero no hay informacion publicada al respecto.
 
 El problema que resuelve, en su caso, es el de servir como modelo pequeno de generacion de texto entrenable y desplegable en hardware muy modesto: con 405 millones de parametros y un repositorio de 1,6 GB (compatible con pesos en fp32), cabe en cualquier GPU de consumo e incluso puede ejecutarse en CPU. Es relevante como alternativa ligera para experimentacion, prototipado y tareas de generacion de texto de baja exigencia, no como modelo de proposito general de alta calidad.
 
-La informacion publicada es minima: la model card es la plantilla automatica de HuggingFace sin rellenar (todos los campos figuran como "[More Information Needed]"), no se declara licencia ni idiomas, y el modelo acumula 0 descargas y 0 "likes" en el momento de la consulta. Cualquier dato de entrenamiento, evaluacion o uso previsto debe considerarse no disponible.
+La informacion publicada es minima: la model card es la plantilla automatica de Hugging Face sin rellenar (todos los campos figuran como "[More Information Needed]"), no se declara licencia ni idiomas, y el modelo acumula 0 descargas y 0 "likes" en el momento de la consulta. Cualquier dato de entrenamiento, evaluacion o uso previsto debe considerarse no disponible.
 
 ## Especificaciones tecnicas
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| P2_pythia410m_q0_sc_bounded (este modelo) | 405 M | no disponible (base: 2.048 tokens) | no disponible | safetensors en HuggingFace, 0 descargas |
-| Pythia-410M (EleutherAI) | 405 M | 2.048 tokens | Apache 2.0 | safetensors en HuggingFace, ampliamente utilizado y documentado |
-| GPT-2 medium (OpenAI) | 355 M | 1.024 tokens | MIT (con modificaciones) | pesos disponibles en HuggingFace |
-| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache 2.0 | safetensors y GGUF en HuggingFace, con ajuste por instrucciones |
+| P2_pythia410m_q0_sc_bounded (este modelo) | 405 M | no disponible (base: 2.048 tokens) | no disponible | safetensors en Hugging Face, 0 descargas |
+| Pythia-410M (EleutherAI) | 405 M | 2.048 tokens | Apache 2.0 | safetensors en Hugging Face, ampliamente utilizado y documentado |
+| GPT-2 medium (OpenAI) | 355 M | 1.024 tokens | MIT (con modificaciones) | pesos disponibles en Hugging Face |
+| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache 2.0 | safetensors y GGUF en Hugging Face, con ajuste por instrucciones |
 
 La comparacion se limita a parametros, contexto y licencia: no hay datos de rendimiento de este checkpoint frente a las alternativas, y el modelo no declara licencia, lo que lo situa en desventaja frente a Pythia-410M o TinyLlama para cualquier uso comercial.
 
@@ -93,7 +93,7 @@ La comparacion se limita a parametros, contexto y licencia: no hay datos de rend
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_sc_bounded
+- Modelo en Hugging Face: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_sc_bounded
 - Paper del modelo base Pythia (no citado en la model card de este repositorio): https://arxiv.org/abs/2304.01373
 - Repositorio del proyecto Pythia de EleutherAI: https://github.com/EleutherAI/pythia
 - Paper citado en la plantilla de la model card, Lacoste et al. (2019), sobre emisiones de carbono: https://arxiv.org/abs/1910.09700

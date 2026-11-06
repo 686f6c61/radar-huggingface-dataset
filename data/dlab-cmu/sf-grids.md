@@ -65,5 +65,5 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dlab-cmu/sf-grids
-- Referencia a `timdettmers/higgs-grids` (mencionada en la model card, no se proporciona URL directa): se recomienda buscar en HuggingFace por ese nombre para acceder al conjunto completo de 1200 archivos.
+- Repositorio Hugging Face: https://huggingface.co/dlab-cmu/sf-grids
+- Referencia a `timdettmers/higgs-grids` (mencionada en la model card, no se proporciona URL directa): se recomienda buscar en Hugging Face por ese nombre para acceder al conjunto completo de 1200 archivos.

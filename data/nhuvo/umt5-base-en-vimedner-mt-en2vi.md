@@ -73,7 +73,7 @@ La principal diferencia frente a los modelos base es la especializacion en el do
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nhuvo/umt5-base-en-vimedner-mt-en2vi
+- Modelo en Hugging Face: https://huggingface.co/nhuvo/umt5-base-en-vimedner-mt-en2vi
 - Dataset En-ViMedNER: https://huggingface.co/datasets/nhuvo/En-ViMedNER
 - Modelo base google/umt5-base: https://huggingface.co/google/umt5-base
 - Documentacion de UMT5 en transformers: https://huggingface.co/docs/transformers/v4.51.1/model_doc/umt5

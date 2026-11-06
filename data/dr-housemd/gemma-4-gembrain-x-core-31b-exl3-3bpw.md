@@ -74,4 +74,4 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dr-housemd/Gemma-4-Gembrain-X-Core-31B-exl3-3bpw
+- Repositorio en Hugging Face: https://huggingface.co/dr-housemd/Gemma-4-Gembrain-X-Core-31B-exl3-3bpw

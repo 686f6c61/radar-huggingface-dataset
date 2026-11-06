@@ -25,7 +25,7 @@ Metadatos adicionales de conversion declarados en la model card: `quantize_versi
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo base en la documentacion proporcionada. El recuento de parametros (12,25 mil millones) y el flujo de conversion (`convert_type: hf`, es decir, conversion desde pesos HuggingFace a GGUF) son compatibles con un transformer denso de escala media, pero esto es una inferencia y no un dato confirmado. Tamoco se especifica si emplea atencion con ventana deslizante, atencion lineal, decodificacion especulativa ni ninguna otra innovacion tecnica.
+No hay informacion disponible sobre la arquitectura del modelo base en la documentacion proporcionada. El recuento de parametros (12,25 mil millones) y el flujo de conversion (`convert_type: hf`, es decir, conversion desde pesos Hugging Face a GGUF) son compatibles con un transformer denso de escala media, pero esto es una inferencia y no un dato confirmado. Tamoco se especifica si emplea atencion con ventana deslizante, atencion lineal, decodificacion especulativa ni ninguna otra innovacion tecnica.
 
 Respecto al entrenamiento, la model card no indica numero de tokens, composicion del dataset, ni si hubo fases de ajuste fino supervisado, RLHF o DPO. El nombre del modelo incluye el sufijo "Base", lo que sugiere que se publica como modelo preentrenado sin alineacion conversacional, pero la etiqueta `conversational` del repositorio apunta en la direccion contraria; la contradiccion no puede resolverse con la informacion disponible. Lo unico verificable es el proceso de cuantizacion: cuantizacion estatica (`output_tensor_quantised: 1`) en doce variantes de precision.
 
@@ -73,7 +73,7 @@ Las cifras de VRAM que siguen son estimaciones calculadas a partir del recuento 
 
 - Cabe en GPU de consumo: Q2_K y Q3_K_M en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070; Q4_K_M en RTX 4070 Ti / 4080 / 4090 con margen; Q8_0 requiere 16 GB o repartir entre dos GPU.
 - F16 no cabe en ninguna GPU de consumo actual de 24 GB con contexto apreciable; necesita A100 40 GB, A100 80 GB, H100 o configuraciones multi-GPU.
-- Opciones de despliegue: llama.cpp (CLI y servidor), Ollama mediante Modelfile, LM Studio, koboldcpp, llama-cpp-python y text-generation-webui. vLLM y TGI admiten GGUF de forma parcial y no siempre con todas las variantes K-quant. El repositorio esta etiquetado como `endpoints_compatible`, lo que indica compatibilidad prevista con HuggingFace Inference Endpoints.
+- Opciones de despliegue: llama.cpp (CLI y servidor), Ollama mediante Modelfile, LM Studio, koboldcpp, llama-cpp-python y text-generation-webui. vLLM y TGI admiten GGUF de forma parcial y no siempre con todas las variantes K-quant. El repositorio esta etiquetado como `endpoints_compatible`, lo que indica compatibilidad prevista con Hugging Face Inference Endpoints.
 - Latencia y throughput estimados: no disponible. Dependen por completo del hardware y del backend, y el autor no publica mediciones.
 
 ## Comparativa con modelos similares
@@ -95,6 +95,6 @@ No disponible. No se pueden establecer comparaciones fiables porque no hay ningu
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta publicacion: https://huggingface.co/mradermacher/RPBizkit-v11-12B-Base-GGUF
+- Repositorio Hugging Face de esta publicacion: https://huggingface.co/mradermacher/RPBizkit-v11-12B-Base-GGUF
 - Modelo base a partir del cual se generan las cuantizaciones: https://huggingface.co/RicardoEstep/RPBizkit-v11-12B-Base
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

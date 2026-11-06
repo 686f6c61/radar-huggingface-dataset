@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aroxa-4B es un ajuste fino mediante LoRA del modelo denso Qwen3.5-4B, publicado por el usuario de HuggingFace shivam909067. No es un modelo de propósito general: está entrenado específicamente para emitir llamadas a herramientas en el formato XML que espera un runtime de agentes, y la propia model card lo describe como "mediblemente bueno en ese trabajo y poco destacable en todo lo demás". El objetivo declarado es resolver un problema muy concreto: los modelos base pequeños a menudo no consiguen producir una llamada a función parseable, lo que rompe cualquier bucle agéntico antes de empezar.
+Aroxa-4B es un ajuste fino mediante LoRA del modelo denso Qwen3.5-4B, publicado por el usuario de Hugging Face shivam909067. No es un modelo de propósito general: está entrenado específicamente para emitir llamadas a herramientas en el formato XML que espera un runtime de agentes, y la propia model card lo describe como "mediblemente bueno en ese trabajo y poco destacable en todo lo demás". El objetivo declarado es resolver un problema muy concreto: los modelos base pequeños a menudo no consiguen producir una llamada a función parseable, lo que rompe cualquier bucle agéntico antes de empezar.
 
 El artefacto principal es un GGUF Q8_0 de 4,3 GB que cabe y se ejecuta en un portátil, generado a partir de un adaptador LoRA de rango 32 entrenado durante 54 minutos en una única RTX 5090 sobre 3.832 trayectorias agénticas (de un total de 4.805 filas en el release). El repositorio declara 4.326.350.848 parámetros según los safetensors, mientras que la model card cita 4,58B para el modelo base; no se aclara la discrepancia.
 
@@ -93,9 +93,9 @@ Como referencia del proyecto hermano de 30B (no de este modelo): el fine-tune pu
 
 | Modelo | Parametros | Contexto | Exito CORE v2 (interno) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aroxa-4B (GGUF Q8_0) | 4,33B segun safetensors (4,58B declarado) | no disponible | 40/48 | apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Aroxa-4B (LoRA bf16) | idem | no disponible | 41/48 | apache-2.0 | HuggingFace |
-| Qwen3.5-4B (base) | 4,58B declarado | no disponible | 12/48 | no disponible en la informacion | HuggingFace (Qwen/Qwen3.5-4B) |
+| Aroxa-4B (GGUF Q8_0) | 4,33B segun safetensors (4,58B declarado) | no disponible | 40/48 | apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Aroxa-4B (LoRA bf16) | idem | no disponible | 41/48 | apache-2.0 | Hugging Face |
+| Qwen3.5-4B (base) | 4,58B declarado | no disponible | 12/48 | no disponible en la informacion | Hugging Face (Qwen/Qwen3.5-4B) |
 | Version de 30B del mismo proyecto | ~30B (nominal) | no disponible | no comparable directamente | no disponible | no disponible; solo se menciona como antecedente |
 
 No se dispone de datos de benchmarks, parametros ni contexto de otras alternativas de tool calling (por ejemplo modelos de la familia xLAM o variantes de Qwen2.5-Coder) en la informacion proporcionada, por lo que no se incluye una comparacion cuantitativa con ellos. La unica fuente de datos de entrenamiento de terceros citada es Salesforce/xlam-function-calling-60k, usado como parte del dataset, no como modelo comparable.
@@ -116,7 +116,7 @@ No se dispone de datos de benchmarks, parametros ni contexto de otras alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shivam909067/aroxa-4b-agentic
+- Modelo en Hugging Face: https://huggingface.co/shivam909067/aroxa-4b-agentic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset citado como fuente de entrenamiento: Salesforce/xlam-function-calling-60k (identificador mencionado en la model card; no se proporciona URL en la informacion disponible)
 - Otros enlaces relevantes (papers, blogs, repos, demos): no disponibles. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los unicos resultados obtenidos fueron paginas de comercio electronico sin relacion con el contenido.

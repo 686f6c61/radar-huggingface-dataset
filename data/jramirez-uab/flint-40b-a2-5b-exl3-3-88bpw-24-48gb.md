@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Flint 40B-A2.5B EXL3 3.88 bpw (esta ficha) | 39,8B totales / ~2,5B activos | 262.144 (224.256 en 24 GB) | Apache-2.0 | HuggingFace, cuantizacion comunitaria | Requiere plugins de vLLM y GPU Ada o posterior |
-| RecursiveSI/flint (BF16) | 39,8B totales / ~2,5B activos | 262.144 | Apache-2.0 | HuggingFace | Modelo original sin cuantizar; mayor calidad, mayor VRAM |
+| Flint 40B-A2.5B EXL3 3.88 bpw (esta ficha) | 39,8B totales / ~2,5B activos | 262.144 (224.256 en 24 GB) | Apache-2.0 | Hugging Face, cuantizacion comunitaria | Requiere plugins de vLLM y GPU Ada o posterior |
+| RecursiveSI/flint (BF16) | 39,8B totales / ~2,5B activos | 262.144 | Apache-2.0 | Hugging Face | Modelo original sin cuantizar; mayor calidad, mayor VRAM |
 | Cuantizaciones densas del mismo autor | No disponible | No disponible | Apache-2.0 | No disponible | Divergencia KL inferior a esta version segun el autor |
 
 No se dispone de datos de benchmarks comparativos con otras alternativas en la informacion proporcionada.
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks comparativos con otras alternativas en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JRamirez-UAB/Flint-40B-A2.5B-EXL3-3.88bpw-24-48GB
+- Hugging Face: https://huggingface.co/JRamirez-UAB/Flint-40B-A2.5B-EXL3-3.88bpw-24-48GB
 - Modelo base: https://huggingface.co/RecursiveSI/flint
 - Repositorio exllamav3: https://github.com/turboderp-org/exllamav3
 - Paper de referencia (arxiv:2406.11235): https://arxiv.org/abs/2406.11235

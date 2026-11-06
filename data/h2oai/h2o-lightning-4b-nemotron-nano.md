@@ -110,9 +110,9 @@ No se han publicado resultados de benchmarks generalistas (MMLU, HumanEval, GSM8
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| h2oai/h2o-lightning-4b-nemotron-nano | 3,97B | 40.960 tokens en la configuración de referencia | Decisión tipada con probabilidades (choice / yes-no / score) | nvidia-nemotron-open-model-license | HuggingFace, vLLM 0.30.0 + shim |
-| h2oai/h2o-lightning-4b | No disponible | No disponible | Decisión tipada; modelo hermano construido sobre Qwen3.5-4B | No disponible en la información proporcionada | HuggingFace |
-| nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16 | ≈4B (modelo base) | No disponible | LLM base de propósito general en BF16 | No disponible en la información proporcionada | HuggingFace |
+| h2oai/h2o-lightning-4b-nemotron-nano | 3,97B | 40.960 tokens en la configuración de referencia | Decisión tipada con probabilidades (choice / yes-no / score) | nvidia-nemotron-open-model-license | Hugging Face, vLLM 0.30.0 + shim |
+| h2oai/h2o-lightning-4b | No disponible | No disponible | Decisión tipada; modelo hermano construido sobre Qwen3.5-4B | No disponible en la información proporcionada | Hugging Face |
+| nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16 | ≈4B (modelo base) | No disponible | LLM base de propósito general en BF16 | No disponible en la información proporcionada | Hugging Face |
 
 La model card no ofrece comparaciones de rendimiento frente a otros modelos de decisión ni frente a LLM generalistas en las mismas tareas. Cualquier comparación cuantitativa con alternativas no está disponible en la información proporcionada, y el autor subraya que las cifras del Decision Index son ejecuciones propias, no un resultado de leaderboard.
 
@@ -133,7 +133,7 @@ La model card no ofrece comparaciones de rendimiento frente a otros modelos de d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/h2oai/h2o-lightning-4b-nemotron-nano
+- Modelo en Hugging Face: https://huggingface.co/h2oai/h2o-lightning-4b-nemotron-nano
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
 - Modelo hermano (sobre Qwen3.5-4B): https://huggingface.co/h2oai/h2o-lightning-4b
 - Ficha de terceros con metadatos y comparativas: https://llm-explorer.com/model/h2oai%2Fh2o-lightning-4b-nemotron-nano,6hcA9kqUkL4xe1U9R7YWZR

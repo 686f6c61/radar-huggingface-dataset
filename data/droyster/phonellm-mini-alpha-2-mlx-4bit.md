@@ -76,8 +76,8 @@ Estas cifras excluyen la carga del modelo, la transcripcion, la sintesis de voz 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | droyster/phonellm-mini-alpha-2-mlx-4bit | 31.577.935.872 | no disponible (probado hasta 8K) | MLX affine 4-bit, group 64 | BSD-2-Clause | MLX (safetensors, sharded) |
-| pipecat-ai/phonellm-mini-alpha-2 (modelo base) | no disponible en la informacion proporcionada | no disponible | BF16 | no disponible | HuggingFace |
-| pipecat-ai/phonellm-mini-alpha-2-nvfp4 | no disponible en la informacion proporcionada | no disponible | NVFP4 | no disponible | HuggingFace |
+| pipecat-ai/phonellm-mini-alpha-2 (modelo base) | no disponible en la informacion proporcionada | no disponible | BF16 | no disponible | Hugging Face |
+| pipecat-ai/phonellm-mini-alpha-2-nvfp4 | no disponible en la informacion proporcionada | no disponible | NVFP4 | no disponible | Hugging Face |
 
 No se dispone de datos suficientes sobre otros modelos comparables de la misma categoria en la informacion proporcionada.
 
@@ -95,6 +95,6 @@ No se dispone de datos suficientes sobre otros modelos comparables de la misma c
 - El repositorio no tiene descargas ni likes y fue creado en octubre de 2026, por lo que su madurez y mantenimiento son inciertos.
 
 ## Enlaces
-- HuggingFace (esta conversion): https://huggingface.co/droyster/phonellm-mini-alpha-2-mlx-4bit
+- Hugging Face (esta conversion): https://huggingface.co/droyster/phonellm-mini-alpha-2-mlx-4bit
 - Modelo base: https://huggingface.co/pipecat-ai/phonellm-mini-alpha-2
 - Receta NVFP4 oficial de referencia (config de cuantizacion): https://huggingface.co/pipecat-ai/phonellm-mini-alpha-2-nvfp4/blob/cdc6db16f3e323168b8c5052397643531cecc958/hf_quant_config.json

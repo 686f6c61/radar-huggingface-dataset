@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_PiSSA_Qwen3-8b es un adaptador LoRA (formato PEFT) publicado en HuggingFace por el usuario WijewardhanaNT. No es un modelo completo, sino un conjunto de pesos de adaptacion que debe cargarse sobre el modelo base Qwen/Qwen3-8B-Base. El repositorio ocupa aproximadamente 0,5 GB, un tamano coherente con un adaptador de rango bajo sobre un modelo denso de 8 000 millones de parametros, no con un modelo entrenado desde cero.
+WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_PiSSA_Qwen3-8b es un adaptador LoRA (formato PEFT) publicado en Hugging Face por el usuario WijewardhanaNT. No es un modelo completo, sino un conjunto de pesos de adaptacion que debe cargarse sobre el modelo base Qwen/Qwen3-8B-Base. El repositorio ocupa aproximadamente 0,5 GB, un tamano coherente con un adaptador de rango bajo sobre un modelo denso de 8 000 millones de parametros, no con un modelo entrenado desde cero.
 
 El identificador del adaptador indica dos elementos del entrenamiento: la tarea y los idiomas (XNLI, el corpus de inferencia de lenguaje natural, en ingles y suajili), el tamano del subconjunto empleado (5000 ejemplos) y una variante experimental de porcentaje de datos ("percentage_1_40"). Tambien indica que la inicializacion empleada es PiSSA (Principal Singular values and Singular vectors Adaptation), una tecnica de inicializacion de LoRA que descompone los pesos originales por SVD en lugar de inicializar las matrices A y B de forma aleatoria.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un artefacto 
 
 ## Arquitectura y entrenamiento
 
-El repositorio contiene exclusivamente un adaptador PEFT etiquetado como lora, con version de framework PEFT 0.17.1. La model card es la plantilla generica de HuggingFace sin rellenar: todos los campos de descripcion, datos de entrenamiento, hiperparametros, infraestructura y evaluacion aparecen como "[More Information Needed]". No se especifica rango del adaptador, alpha, dropout, modulos objetivo ni precision de entrenamiento.
+El repositorio contiene exclusivamente un adaptador PEFT etiquetado como lora, con version de framework PEFT 0.17.1. La model card es la plantilla generica de Hugging Face sin rellenar: todos los campos de descripcion, datos de entrenamiento, hiperparametros, infraestructura y evaluacion aparecen como "[More Information Needed]". No se especifica rango del adaptador, alpha, dropout, modulos objetivo ni precision de entrenamiento.
 
 Del identificador se pueden inferir, sin confirmacion documental, los siguientes elementos del procedimiento: el entrenamiento se realizo sobre el corpus XNLI (inferencia de lenguaje natural, tres clases: implicacion, neutralidad y contradiccion) restringido a los idiomas ingles y suajili; se empleo un subconjunto de 5000 ejemplos; el sufijo "percentage_1_40" sugiere un barrido experimental sobre el porcentaje de datos de entrenamiento (probablemente entre el 1 % y el 40 %); y la inicializacion de las matrices del adaptador siguio el metodo PiSSA, que calcula la descomposicion en valores singulares de las matrices de pesos del modelo base y utiliza los componentes principales como punto de partida, en lugar de la inicializacion aleatoria de LoRA estandar. No hay informacion sobre RLHF, DPO ni ninguna otra fase de alineamiento. La etiqueta arxiv:1910.09700 que aparece en los tags corresponde al articulo de Lacoste et al. sobre emisiones de carbono, citado en la plantilla por defecto, y no es una referencia tecnica de este adaptador.
 
@@ -83,7 +83,7 @@ No se dispone de informacion sobre adaptadores comparables en la documentacion p
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_PiSSA_Qwen3-8b
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_PiSSA_Qwen3-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria transformers: https://github.com/huggingface/transformers

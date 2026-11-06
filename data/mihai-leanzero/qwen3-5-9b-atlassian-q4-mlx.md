@@ -80,10 +80,10 @@ Otras metricas: perdida de validacion de 0,575 en su mezcla de entrenamiento y 0
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-Atlassian-Q4-mlx (este) | 8,95B | No disponible | Ajuste LoRA para Atlassian Forge/Jira/Confluence/JSM, 4-bit MLX | Apache 2.0 | HuggingFace, formato MLX |
-| Qwen3.5-9B (base) | 8,95B | No disponible | Modelo generalista | Apache 2.0 | HuggingFace |
-| Qwen3.5-9B-Atlassian (8-bit) | 8,95B | No disponible | Mismo ajuste, cuantizacion 8-bit | Apache 2.0 | HuggingFace |
-| LeanZero Atlassian 27B (release v0.5) | 27B (aproximado, no confirmado) | No disponible | Mismo dominio, mayor presupuesto de entrenamiento | No disponible | HuggingFace |
+| Qwen3.5-9B-Atlassian-Q4-mlx (este) | 8,95B | No disponible | Ajuste LoRA para Atlassian Forge/Jira/Confluence/JSM, 4-bit MLX | Apache 2.0 | Hugging Face, formato MLX |
+| Qwen3.5-9B (base) | 8,95B | No disponible | Modelo generalista | Apache 2.0 | Hugging Face |
+| Qwen3.5-9B-Atlassian (8-bit) | 8,95B | No disponible | Mismo ajuste, cuantizacion 8-bit | Apache 2.0 | Hugging Face |
+| LeanZero Atlassian 27B (release v0.5) | 27B (aproximado, no confirmado) | No disponible | Mismo dominio, mayor presupuesto de entrenamiento | No disponible | Hugging Face |
 
 Frente al base, el ajuste mejora la sonda de identificadores de Atlassian del 15% al 62% con thinking activado y reduce la no terminacion. Frente al 27B, sacrifica precision (16 frente a 30 aplicaciones completas de 25, con solapamiento por la metrica de mas de 25) a cambio de una huella de memoria mucho menor y una velocidad de decodificacion superior en terminos absolutos de tokens por segundo en el mismo hardware.
 
@@ -101,7 +101,7 @@ Frente al base, el ajuste mejora la sonda de identificadores de Atlassian del 15
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mihai-LeanZero/Qwen3.5-9B-Atlassian-Q4-mlx
+- Hugging Face: https://huggingface.co/Mihai-LeanZero/Qwen3.5-9B-Atlassian-Q4-mlx
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Pagina del portfolio con el informe completo: https://leanzero.net/portfolio/atlassian-models
 - LeanZero: https://leanzero.net

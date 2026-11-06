@@ -70,6 +70,6 @@ No se dispone de datos de rendimiento para comparar con otros modelos. Como refe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dearxoasis/thaidoc-finetune
+- Hugging Face: https://huggingface.co/dearxoasis/thaidoc-finetune
 - Modelo base: https://huggingface.co/typhoon-ai/typhoon-s-thaillm-8b-instruct-research-preview
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth

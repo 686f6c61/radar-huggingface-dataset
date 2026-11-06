@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/ppt-wc-uniform-newlex-eus-before-100mb-packed-bfd_seed3407` es un ajuste fino (SFT) del modelo base `goldfish-models/eng_latn_100mb`, un GPT-2 monolingüe en inglés entrenado por el proyecto Goldfish sobre un corpus de aproximadamente 100 MB. El resultado es un modelo de generación de texto de 86.508.288 parámetros (≈86,5 M) publicado en HuggingFace por el usuario `francesca9805`, con licencia no declarada de forma efectiva y sin métricas de uso (0 descargas y 0 likes en el momento de la consulta).
+`francesca9805/ppt-wc-uniform-newlex-eus-before-100mb-packed-bfd_seed3407` es un ajuste fino (SFT) del modelo base `goldfish-models/eng_latn_100mb`, un GPT-2 monolingüe en inglés entrenado por el proyecto Goldfish sobre un corpus de aproximadamente 100 MB. El resultado es un modelo de generación de texto de 86.508.288 parámetros (≈86,5 M) publicado en Hugging Face por el usuario `francesca9805`, con licencia no declarada de forma efectiva y sin métricas de uso (0 descargas y 0 likes en el momento de la consulta).
 
 El interés técnico del modelo reside en su nombre y en su trazabilidad: el identificador incluye términos como `newlex` (nuevo lexicón), `eus` (código ISO 639-3 del euskera), `uniform`, `packed` y una semilla concreta (`seed3407`), y el run asociado en Weights & Biases pertenece al proyecto `new-tokenizers` de la Universidad de Groninga. Todo apunta a un experimento académico sobre tokenizadores y vocabularios para lenguas de bajos recursos, más que a un modelo destinado a producción.
 
@@ -12,7 +12,7 @@ Se trata, por tanto, de un artefacto de investigación de interés limitado fuer
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en HuggingFace); configuracion exacta de capas y cabezas no disponible |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en Hugging Face); configuracion exacta de capas y cabezas no disponible |
 | Parametros totales | 86.508.288 (≈86,5 M), dato real de los pesos en safetensors |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (la model card no lo especifica; la familia GPT-2 suele operar con 1.024 tokens, sin confirmar para este ajuste) |
@@ -71,11 +71,11 @@ La model card no incluye MMLU, HumanEval, GSM8K ni ninguna otra metrica, y el re
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ppt-wc-uniform-newlex-eus-before-100mb-packed-bfd_seed3407 | 86,5 M | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/eng_latn_100mb (modelo base) | ~86-100 M (no confirmado) | no disponible | Ingles | no disponible en la informacion proporcionada | HuggingFace (proyecto Goldfish) |
-| GPT-2 (OpenAI) | 124 M | 1.024 tokens | Ingles | MIT | HuggingFace, ampliamente desplegado |
-| DistilGPT-2 | 82 M | 1.024 tokens | Ingles | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Pythia-70M (EleutherAI) | 70 M | 2.048 tokens | Ingles | Apache 2.0 | HuggingFace, con suite de checkpoints intermedios |
+| ppt-wc-uniform-newlex-eus-before-100mb-packed-bfd_seed3407 | 86,5 M | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/eng_latn_100mb (modelo base) | ~86-100 M (no confirmado) | no disponible | Ingles | no disponible en la informacion proporcionada | Hugging Face (proyecto Goldfish) |
+| GPT-2 (OpenAI) | 124 M | 1.024 tokens | Ingles | MIT | Hugging Face, ampliamente desplegado |
+| DistilGPT-2 | 82 M | 1.024 tokens | Ingles | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Pythia-70M (EleutherAI) | 70 M | 2.048 tokens | Ingles | Apache 2.0 | Hugging Face, con suite de checkpoints intermedios |
 
 La comparacion directa es desigual: frente a GPT-2, DistilGPT-2 o Pythia-70M, este modelo carece de licencia declarada, idiomas declarados, contexto documentado y evaluaciones publicadas, ademas de haberse entrenado sobre un corpus base mucho menor (100 MB frente a los cientos de miles de millones de tokens de Pythia o los ~40 GB de WebText de GPT-2). Su ventaja no es competitiva sino experimental.
 
@@ -93,7 +93,7 @@ La comparacion directa es desigual: frente a GPT-2, DistilGPT-2 o Pythia-70M, es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-eus-before-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-eus-before-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Organizacion Goldfish Models: https://huggingface.co/goldfish-models
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/a8mca6d3

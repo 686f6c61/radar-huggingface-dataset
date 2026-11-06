@@ -94,6 +94,6 @@ La comparación directa más relevante es contra el propio modelo base: misma ar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/omikheev/qwen3.8-27b-abliteration-demo
+- Repositorio Hugging Face: https://huggingface.co/omikheev/qwen3.8-27b-abliteration-demo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Artículo completo del autor: enlace no disponible (la model card referencia `ARTICLE_URL` sin resolver)

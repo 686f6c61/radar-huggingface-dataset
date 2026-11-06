@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: con 3.085 millones de parámetros, en FP16 el modelo ocupa aproximadamente 6,2 GB (tamaño del repo, que incluye pesos en safetensors). En cuantización de 8 bits (si se generara) ocuparía ~3,1 GB, y en 4 bits ~1,6 GB, aunque no se proporcionan archivos cuantizados.
 - GPU recomendadas: una GPU consumer con al menos 8 GB de VRAM (por ejemplo, RTX 3060, RTX 4060, RTX 2070) puede ejecutar el modelo en FP16 sin problemas. Con cuantización, cabría en GPUs de 4 GB, aunque no se ofrecen versiones GGUF.
 - Compatibilidad con consumer GPU: sí, es un modelo de 3B que cabe en la mayoría de GPUs modernas de consumo.
-- Opciones de despliegue: al ser un modelo safetensors estándar de Qwen2, es compatible con vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (si se añade manualmente) y transformers de HuggingFace. No se proporcionan archivos preconvertidos.
+- Opciones de despliegue: al ser un modelo safetensors estándar de Qwen2, es compatible con vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (si se añade manualmente) y transformers de Hugging Face. No se proporcionan archivos preconvertidos.
 - Latencia y throughput: no disponibles. Como referencia, un modelo de 3B en una RTX 4090 suele generar entre 50 y 100 tokens por segundo en FP16, pero no hay datos específicos para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ Los datos de rendimiento de los modelos base son aproximados y provienen de sus 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/francescortu/DistillDetect-Qwen2.5-3B-from-Llama-3.3-70B-Instruct-OMI-1K
+- Repositorio Hugging Face: https://huggingface.co/francescortu/DistillDetect-Qwen2.5-3B-from-Llama-3.3-70B-Instruct-OMI-1K
 - Paper original (arXiv): https://arxiv.org/abs/2607.09692
 - Código de los autores (GitHub): https://github.com/RajatRawat-creator/DistillDetect
 - Modelo base Qwen2.5-3B: https://huggingface.co/Qwen/Qwen2.5-3B

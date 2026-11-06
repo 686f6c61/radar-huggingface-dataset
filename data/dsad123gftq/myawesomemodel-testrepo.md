@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario DSAD123GFTQ bajo el identificador `DSAD123GFTQ/MyAwesomeModel-TestRepo`. El nombre del repositorio incluye el sufijo "TestRepo", el repositorio tiene 0 descargas, 0 likes, un tamano de 0,0 GB y fue creado y actualizado con apenas nueve segundos de diferencia (11 de septiembre de 2026), lo que apunta a un repositorio de prueba o a una plantilla antes que a un artefacto de modelo distribuible.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario DSAD123GFTQ bajo el identificador `DSAD123GFTQ/MyAwesomeModel-TestRepo`. El nombre del repositorio incluye el sufijo "TestRepo", el repositorio tiene 0 descargas, 0 likes, un tamano de 0,0 GB y fue creado y actualizado con apenas nueve segundos de diferencia (11 de septiembre de 2026), lo que apunta a un repositorio de prueba o a una plantilla antes que a un artefacto de modelo distribuible.
 
-La informacion disponible es internamente contradictoria. Las etiquetas de HuggingFace describen un modelo de tipo BERT para `feature-extraction` con `transformers` y `pytorch`, mientras que la model card describe un asistente conversacional de razonamiento con modo de pensamiento, soporte de function calling, plantillas de system prompt y resultados en pruebas tipo AIME. Ademas, la model card menciona dos variantes ("MyAwesomeModel" y "MyAwesomeModel-Small") y se refiere a versiones previas ("Model1-v2"), sin especificar en ningun momento el numero de parametros, la longitud de contexto ni la arquitectura concreta.
+La informacion disponible es internamente contradictoria. Las etiquetas de Hugging Face describen un modelo de tipo BERT para `feature-extraction` con `transformers` y `pytorch`, mientras que la model card describe un asistente conversacional de razonamiento con modo de pensamiento, soporte de function calling, plantillas de system prompt y resultados en pruebas tipo AIME. Ademas, la model card menciona dos variantes ("MyAwesomeModel" y "MyAwesomeModel-Small") y se refiere a versiones previas ("Model1-v2"), sin especificar en ningun momento el numero de parametros, la longitud de contexto ni la arquitectura concreta.
 
 Por todo ello, esta ficha debe leerse como una evaluacion de la documentacion publicada, no del modelo en si: no hay pesos descargables en el repositorio, no hay resultados de benchmarks verificables de forma independiente y no es posible ejecutar el modelo con la informacion actual. Se marcan como "no disponible" todos los parametros tecnicos que el autor no especifica.
 
@@ -12,7 +12,7 @@ Por todo ello, esta ficha debe leerse como una evaluacion de la documentacion pu
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (las etiquetas de HuggingFace indican `bert`; la model card describe un modelo de razonamiento conversacional, sin detallar arquitectura) |
+| Arquitectura | no disponible (las etiquetas de Hugging Face indican `bert`; la model card describe un modelo de razonamiento conversacional, sin detallar arquitectura) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks verificables de forma independiente
 - VRAM estimada para inferencia: no disponible. Al desconocerse el numero de parametros no es posible calcular el footprint en FP16, INT8 ni en cuantizaciones de 4 bits.
 - GPU recomendadas: no disponible por la misma razon.
 - Compatibilidad con GPU de consumo: no disponible. No puede confirmarse ni descartarse que quepa en una RTX 4090, RTX 3090 o similar.
-- Opciones de despliegue: la model card remite a "our code repository" sin facilitar la URL, por lo que no se confirma soporte de vLLM, llama.cpp, Ollama, TGI ni SGLang. La etiqueta `endpoints_compatible` del repositorio sugiere compatibilidad con HuggingFace Inference Endpoints, pero no hay pesos que desplegar.
+- Opciones de despliegue: la model card remite a "our code repository" sin facilitar la URL, por lo que no se confirma soporte de vLLM, llama.cpp, Ollama, TGI ni SGLang. La etiqueta `endpoints_compatible` del repositorio sugiere compatibilidad con Hugging Face Inference Endpoints, pero no hay pesos que desplegar.
 - Latencia y throughput estimados: no disponibles. El unico dato relacionado es el coste de razonamiento declarado en AIME (23.000 tokens por pregunta), que implicaria latencias altas en cualquier configuracion, pero sin datos de hardware no puede cuantificarse.
 - Almacenamiento: el repositorio ocupa 0,0 GB, es decir, no contiene artefactos de pesos.
 
@@ -116,7 +116,7 @@ No disponible. La model card compara el modelo con referencias anonimizadas ("Mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DSAD123GFTQ/MyAwesomeModel-TestRepo
+- Modelo en Hugging Face: https://huggingface.co/DSAD123GFTQ/MyAwesomeModel-TestRepo
 - Repositorio de codigo: no disponible (la model card menciona "our code repository" sin URL)
 - Sitio web oficial y plataforma de API: no disponible (la model card menciona "our official website" sin URL)
 - Paper tecnico: no disponible

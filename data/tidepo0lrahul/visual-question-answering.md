@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`tidepo0lrahul/visual-question-answering` es un repositorio alojado en HuggingFace cuyo contenido declarado son dos archivos Markdown (`README.md` y `notes.md`), etiquetados con `research-notes` y `visual-question-answering`. No se trata de un modelo entrenado ni de un checkpoint funcional: la propia model card indica explícitamente que la nota es exploratoria y que "no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado". El repositorio recoge el planteamiento de un estudio sobre VQA (Visual Question Answering): alcance de la pregunta de investigación, factores de confusión probables, comparación propuesta contra baselines emparejados y requisitos de reproducibilidad.
+`tidepo0lrahul/visual-question-answering` es un repositorio alojado en Hugging Face cuyo contenido declarado son dos archivos Markdown (`README.md` y `notes.md`), etiquetados con `research-notes` y `visual-question-answering`. No se trata de un modelo entrenado ni de un checkpoint funcional: la propia model card indica explícitamente que la nota es exploratoria y que "no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado". El repositorio recoge el planteamiento de un estudio sobre VQA (Visual Question Answering): alcance de la pregunta de investigación, factores de confusión probables, comparación propuesta contra baselines emparejados y requisitos de reproducibilidad.
 
 El dato técnico más llamativo es el recuento de parámetros declarado en los metadatos de safetensors: 33.088 parámetros totales, una cifra compatible con un artefacto de configuración o un tensor de prueba, no con un sistema de VQA utilizable. El tamaño del repositorio es de 0,0 GB y no se declara ningún idioma soportado ni pipeline de inferencia verificado. La licencia es MIT y el pipeline etiquetado es `visual-question-answering`, pero no hay evidencia de que exista un modelo capaz de responder preguntas sobre imágenes.
 
-Su relevancia actual es, por tanto, metodológica y no de rendimiento: sirve como ejemplo de artefacto de investigación en fase de planificación y como recordatorio de que las etiquetas de HuggingFace (`transformer`, `safetensors`, `visual-question-answering`) pueden no corresponderse con un modelo listo para usar.
+Su relevancia actual es, por tanto, metodológica y no de rendimiento: sirve como ejemplo de artefacto de investigación en fase de planificación y como recordatorio de que las etiquetas de Hugging Face (`transformer`, `safetensors`, `visual-question-answering`) pueden no corresponderse con un modelo listo para usar.
 
 ## Especificaciones tecnicas
 
@@ -98,7 +98,7 @@ No es posible establecer una comparativa cuantitativa porque este repositorio no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tidepo0lrahul/visual-question-answering
+- Repositorio en Hugging Face: https://huggingface.co/tidepo0lrahul/visual-question-answering
 - Archivo `notes.md` (referenciado en la model card, dentro del repositorio): https://huggingface.co/tidepo0lrahul/visual-question-answering/blob/main/notes.md
 - Archivo `README.md` (model card): https://huggingface.co/tidepo0lrahul/visual-question-answering/blob/main/README.md
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

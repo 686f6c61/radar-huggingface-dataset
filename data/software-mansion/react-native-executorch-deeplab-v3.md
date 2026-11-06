@@ -70,7 +70,7 @@ No se dispone de información suficiente para una comparativa cuantitativa con o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/software-mansion/react-native-executorch-deeplab-v3
+- Repositorio Hugging Face: https://huggingface.co/software-mansion/react-native-executorch-deeplab-v3
 - Documentación de React Native ExecuTorch: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/getting-started
 - Sitio oficial de React Native ExecuTorch: https://executorch.swmansion.com/
 - Repositorio GitHub de React Native ExecuTorch: https://github.com/software-mansion/react-native-executorch

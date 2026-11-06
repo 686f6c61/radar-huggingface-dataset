@@ -76,10 +76,10 @@ La autodestilacion recupera aproximadamente 0,45 puntos en NanoBEIR-en, 0,60 en 
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bekko-static-v1-slim-50k | 51,2 M | no disponible | 25 | MIT | HuggingFace + crate encoders |
-| hotchpotch/bekko-static-embedding-v1 | 204,8 M (200k x 1024) | no disponible | 40 | no disponible en la info | HuggingFace |
-| bekko-static-v1-slim-100k | 102,4 M | no disponible | 25 | MIT | HuggingFace |
-| bekko-static-v1-slim-32k | 32,8 M | no disponible | 14 | MIT | HuggingFace |
+| bekko-static-v1-slim-50k | 51,2 M | no disponible | 25 | MIT | Hugging Face + crate encoders |
+| hotchpotch/bekko-static-embedding-v1 | 204,8 M (200k x 1024) | no disponible | 40 | no disponible en la info | Hugging Face |
+| bekko-static-v1-slim-100k | 102,4 M | no disponible | 25 | MIT | Hugging Face |
+| bekko-static-v1-slim-32k | 32,8 M | no disponible | 14 | MIT | Hugging Face |
 
 Frente al modelo fuente, este modelo pierde 10 idiomas y entre 3 y 7 puntos nDCG, pero reduce el tamano un 75 % y permite despliegue en Rust sin Python. Frente al slim-32k, mantiene 11 idiomas adicionales (entre ellos bengali, telugu, thai, arabe y varios europeos) a cambio de 36 MB mas y una mejora de 0,91 puntos en NanoBEIR-en y 12,10 en NanoMIRACL. No se dispone de comparacion con modelos de embeddings neuronales de la misma categoria en la informacion proporcionada.
 
@@ -96,7 +96,7 @@ Frente al modelo fuente, este modelo pierde 10 idiomas y entre 3 y 7 puntos nDCG
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flower-computer/bekko-static-v1-slim-50k
+- Modelo en Hugging Face: https://huggingface.co/flower-computer/bekko-static-v1-slim-50k
 - Modelo base: https://huggingface.co/hotchpotch/bekko-static-embedding-v1
 - Coleccion de la familia slim: https://huggingface.co/collections/flower-computer/bekko-static-v1-slim-6aecc3d4969e7752c8a5074f
 - Variante 100k: https://huggingface.co/flower-computer/bekko-static-v1-slim-100k

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "MARKMAR6/notes-self-supervised-2023",
+  "slug": "markmar6-notes-self-supervised-2023",
+  "author": "MARKMAR6",
+  "url": "https://huggingface.co/MARKMAR6/notes-self-supervised-2023",
+  "created_at": "2026-11-06T08:16:03.000Z",
+  "updated_at": "2026-11-06T08:16:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "self-supervised",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Itamar Ben Gvir: The man keeping Netanyahu in power",
+      "url": "https://www.middleeasteye.net/profile/israel-itamar-ben-gvir",
+      "snippet": "Jun 23, 2026 · The fiery relationship between Ben Gvir and Netanyahu would only resolve itself more than a decade later, when the …"
+    }
+  ]
+}

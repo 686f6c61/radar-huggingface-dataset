@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Docora (identificador `mohamedwasef/Docora`) es un adaptador LoRA entrenado sobre `unsloth/Qwen3-VL-8B-Instruct-unsloth-bnb-4bit` para OCR de página completa de documentos oficiales egipcios escaneados, en concreto ejemplares de la Gaceta Oficial (الجريدة الرسمية) con leyes tributarias y decisiones del Ministerio de Hacienda. Lo desarrolla el usuario de HuggingFace mohamedwasef y se publica bajo licencia Apache 2.0 con pipeline `image-to-text`. No es un modelo autónomo: es un adaptador de 0,2 GB que debe cargarse sobre el modelo base cuantizado en 4 bits.
+Docora (identificador `mohamedwasef/Docora`) es un adaptador LoRA entrenado sobre `unsloth/Qwen3-VL-8B-Instruct-unsloth-bnb-4bit` para OCR de página completa de documentos oficiales egipcios escaneados, en concreto ejemplares de la Gaceta Oficial (الجريدة الرسمية) con leyes tributarias y decisiones del Ministerio de Hacienda. Lo desarrolla el usuario de Hugging Face mohamedwasef y se publica bajo licencia Apache 2.0 con pipeline `image-to-text`. No es un modelo autónomo: es un adaptador de 0,2 GB que debe cargarse sobre el modelo base cuantizado en 4 bits.
 
 El modelo base Qwen3-VL-8B-Instruct es un transformer denso de tipo vision-language con 8.810 millones de parámetros totales. El adaptador entrena solo las capas del modelo de lenguaje (r=16, alpha=16), dejando el codificador visual congelado, con 43.646.976 parámetros entrenables, el 0,50 % del total. El repositorio declara únicamente el idioma árabe (`ar`).
 
@@ -76,9 +76,9 @@ Los tres modelos siguientes comparten el mismo conjunto de datos y la misma part
 
 | Modelo | Modelo base | Parámetros del base | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| Docora | Qwen3-VL-8B-Instruct (bnb-4bit) | 8,81 mil millones | No disponible | Apache 2.0 | HuggingFace, adaptador LoRA de 0,2 GB | CER 1,97 % / WER 3,76 % en 30 páginas de prueba; el autor lo describe como el más potente de los tres |
-| mohamedwasef/egyptian-document-ocr | Qwen3-VL-4B-Instruct | No disponible | No disponible | No disponible en la información proporcionada | HuggingFace | No disponible |
-| mohamedwasef/egyptian-document-ocr-gemma4 | Gemma 4 E4B | No disponible | No disponible | No disponible en la información proporcionada | HuggingFace | No disponible; el autor menciona que en ese entrenamiento sí se observó sobreajuste |
+| Docora | Qwen3-VL-8B-Instruct (bnb-4bit) | 8,81 mil millones | No disponible | Apache 2.0 | Hugging Face, adaptador LoRA de 0,2 GB | CER 1,97 % / WER 3,76 % en 30 páginas de prueba; el autor lo describe como el más potente de los tres |
+| mohamedwasef/egyptian-document-ocr | Qwen3-VL-4B-Instruct | No disponible | No disponible | No disponible en la información proporcionada | Hugging Face | No disponible |
+| mohamedwasef/egyptian-document-ocr-gemma4 | Gemma 4 E4B | No disponible | No disponible | No disponible en la información proporcionada | Hugging Face | No disponible; el autor menciona que en ese entrenamiento sí se observó sobreajuste |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ Los tres modelos siguientes comparten el mismo conjunto de datos y la misma part
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohamedwasef/Docora
+- Modelo en Hugging Face: https://huggingface.co/mohamedwasef/Docora
 - Modelo base: https://huggingface.co/unsloth/Qwen3-VL-8B-Instruct-unsloth-bnb-4bit
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/mohamedwasef/egyptian-official-documents-ocr
 - Modelo hermano con Qwen3-VL-4B: https://huggingface.co/mohamedwasef/egyptian-document-ocr

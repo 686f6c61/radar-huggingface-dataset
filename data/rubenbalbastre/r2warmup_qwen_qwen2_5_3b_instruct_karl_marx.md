@@ -19,7 +19,7 @@ La relevancia de esta ficha es acotada pero util: sirve para documentar un adapt
 | Idiomas soportados | No especificados en el repositorio del adaptador. El modelo base Qwen2.5-3B-Instruct declara soporte para 29 idiomas, incluido el castellano |
 | Licencia | No disponible. El modelo base Qwen2.5-3B-Instruct se distribuye bajo licencia Apache 2.0; el adaptador no declara licencia propia |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA); libreria declarada: peft |
-| Desarrollador | rubenbalbastre (usuario de HuggingFace) |
+| Desarrollador | rubenbalbastre (usuario de Hugging Face) |
 | Modelo base | Qwen/Qwen2.5-3B-Instruct |
 | Tipo de ajuste | LoRA + SFT (etiquetas lora, sft, TRL) |
 | Tamano del repositorio | 0,5 GB |
@@ -96,7 +96,7 @@ Los datos de contexto y licencia de los modelos alternativos proceden de sus fic
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/rubenbalbastre/r2warmup_qwen_qwen2_5_3b_instruct_karl_marx
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/rubenbalbastre/r2warmup_qwen_qwen2_5_3b_instruct_karl_marx
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Paper citado en la model card: https://arxiv.org/abs/2608.17804
 - Libreria PEFT (referenciada por el repositorio): https://github.com/huggingface/peft

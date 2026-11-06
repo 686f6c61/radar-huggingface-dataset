@@ -79,6 +79,6 @@ No se dispone de datos de benchmarks para modelos comparables en la información
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a010_b010_r07
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a010_b010_r07
 
 No se han encontrado otros enlaces relevantes en la búsqueda web.

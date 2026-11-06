@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Voxscribe-models es un repositorio alojado en HuggingFace por el usuario munirajasoul que, por su nombre y por la información disponible, parece estar relacionado con el proyecto Voxscribe, una aplicación de entrada de voz offline distribuida en F-Droid. El repositorio no incluye una model card sustantiva: el README se limita a declarar la licencia Apache 2.0, sin descripción del modelo, arquitectura, datos de entrenamiento ni uso previsto.
+Voxscribe-models es un repositorio alojado en Hugging Face por el usuario munirajasoul que, por su nombre y por la información disponible, parece estar relacionado con el proyecto Voxscribe, una aplicación de entrada de voz offline distribuida en F-Droid. El repositorio no incluye una model card sustantiva: el README se limita a declarar la licencia Apache 2.0, sin descripción del modelo, arquitectura, datos de entrenamiento ni uso previsto.
 
 No se dispone de información verificable sobre arquitectura, número de parámetros, longitud de contexto ni idiomas soportados. La única referencia técnica externa encontrada apunta a un archivo `ggml-tiny-q5_1.bin` de aproximadamente 32 MB, compatible con el formato GGML y con una cuantización q5_1, lo que sugiere la presencia de pesos derivados de un modelo Whisper de la variante "tiny" (unos 39 millones de parámetros en su forma original), orientado a reconocimiento automático del habla (ASR) en dispositivos de gama baja.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Voxscribe-models (este repositorio) | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Sin model card ni benchmarks |
-| Whisper tiny (OpenAI) | ~39 M | 30 s de audio por ventana | MIT | HuggingFace, ampliamente usado | Referencia ASR ligera; el repositorio parece derivar de ella, sin confirmación |
-| Whisper base | ~74 M | 30 s de audio por ventana | MIT | HuggingFace | Mayor precisión a costa de más recursos |
+| Voxscribe-models (este repositorio) | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Sin model card ni benchmarks |
+| Whisper tiny (OpenAI) | ~39 M | 30 s de audio por ventana | MIT | Hugging Face, ampliamente usado | Referencia ASR ligera; el repositorio parece derivar de ella, sin confirmación |
+| Whisper base | ~74 M | 30 s de audio por ventana | MIT | Hugging Face | Mayor precisión a costa de más recursos |
 | Vosk small models | variable | no disponible | Apache 2.0 | Sitio de Vosk | Alternativa ASR offline para dispositivos de gama baja |
 
 La comparación con Whisper tiny y base es tentativa: no se confirma que el repositorio contenga pesos derivados de Whisper, solo que el nombre del archivo y el contexto del proyecto lo sugieren.
@@ -79,7 +79,7 @@ La comparación con Whisper tiny y base es tentativa: no se confirma que el repo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/munirajasoul/voxscribe-models
+- Repositorio Hugging Face: https://huggingface.co/munirajasoul/voxscribe-models
 - Voxscribe en F-Droid: https://f-droid.org/packages/org.y20k.voxscribe/
 - Whisper (OpenAI), referencia probable de los pesos: https://github.com/openai/whisper
 - llama.cpp, backend compatible con GGML/GGUF: https://github.com/ggerganov/llama.cpp

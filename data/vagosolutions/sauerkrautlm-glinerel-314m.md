@@ -76,9 +76,9 @@ Los benchmarks de relaciones se evalúan en los dev splits de CoNLL04, CrossRE, 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SauerkrautLM-GLiNEREL-314m | 314,2M | no disponible | Encoder NER + relaciones + PII | LFM Open License v1.0 | HuggingFace, glinerel-fast |
-| SauerkrautLM-GLiNEREL-128m | 128M (podado) | no disponible | Igual, podado y destilado | LFM Open License v1.0 | HuggingFace |
-| SauerkrautLM-GLiNEREL-72m | 72M (podado) | no disponible | Igual, podado y destilado | LFM Open License v1.0 | HuggingFace |
+| SauerkrautLM-GLiNEREL-314m | 314,2M | no disponible | Encoder NER + relaciones + PII | LFM Open License v1.0 | Hugging Face, glinerel-fast |
+| SauerkrautLM-GLiNEREL-128m | 128M (podado) | no disponible | Igual, podado y destilado | LFM Open License v1.0 | Hugging Face |
+| SauerkrautLM-GLiNEREL-72m | 72M (podado) | no disponible | Igual, podado y destilado | LFM Open License v1.0 | Hugging Face |
 | gliner2.5-multi-v1 | no disponible | no disponible | NER/relaciones | no disponible | Referencia externa |
 | gliner-relex | no disponible | no disponible | NER + relaciones | no disponible | Referencia externa |
 | Modelos generativos 4B (sin especificar) | 4B | no disponible | Extracción vía generación | no disponible | no disponible |
@@ -93,11 +93,11 @@ El modelo supera a gliner2.5-multi-v1 en velocidad (875 ms frente a 1,3 s en el 
 - El rendimiento zero-shot depende de la formulación de las etiquetas en texto libre; etiquetas ambiguas o muy específicas pueden degradar la extracción.
 - No se publican datos sobre sesgos, tasas de alucinación ni robustez ante dominios fuera de los benchmarks (CoNLL04, CrossRE, DocRED, FewRel), por lo que la validación en el dominio propio es imprescindible.
 - La longitud máxima de contexto no está especificada; los documentos largos se procesan por fragmentos.
-- La instalación de glinerel-fast requiere autenticación en HuggingFace (`hf auth login`) según la model card.
+- La instalación de glinerel-fast requiere autenticación en Hugging Face (`hf auth login`) según la model card.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VAGOsolutions/SauerkrautLM-GLiNEREL-314m
+- Modelo en Hugging Face: https://huggingface.co/VAGOsolutions/SauerkrautLM-GLiNEREL-314m
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-Encoder-230M
 - Versión podada 128m: https://huggingface.co/VAGOsolutions/SauerkrautLM-GLiNEREL-128m
 - Versión podada 72m: https://huggingface.co/VAGOsolutions/SauerkrautLM-GLiNEREL-72m

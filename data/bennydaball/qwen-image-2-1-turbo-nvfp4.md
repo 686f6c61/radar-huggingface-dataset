@@ -75,10 +75,10 @@ La validacion de calidad se realizo con 16 casos de prompt/seed comparados visua
 
 | Modelo | Parametros / encoder | Contexto / salida | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BennyDaBall/Qwen-Image-2.1-Turbo-NVFP4 (este) | ~7B generador + Qwen3-VL-8B encoder (segun fuentes externas) | Salida de 1024×1024 a 2048×2048 | 1,739 s a 1024×1024 en RTX 5090; 8 pasos | qwen-research | HuggingFace (16,1 GB de repo) |
-| Qwen/Qwen-Image-2.1-Turbo (BF16 original) | Misma arquitectura | Misma salida | Misma calidad de referencia; sin cuantizar | qwen-research | HuggingFace |
-| Comfy-Org/Qwen-Image-2.1 (BF16 fuente nativa) | Misma arquitectura, revision `a3c1a9e2efcba96124a9dc8600c0c07d6f5e68aa` | Misma salida | Checkpoint fuente del que parte esta cuantizacion | qwen-research | HuggingFace |
-| BennyDaBall/Qwen-Image-2.1-NVFP4 (sin Turbo) | Version NVFP4 de Qwen-Image-2.1 | Misma salida | Paquete de 12,42 GB; version no Turbo, sin plan de 8 pasos | qwen-research | HuggingFace |
+| BennyDaBall/Qwen-Image-2.1-Turbo-NVFP4 (este) | ~7B generador + Qwen3-VL-8B encoder (segun fuentes externas) | Salida de 1024×1024 a 2048×2048 | 1,739 s a 1024×1024 en RTX 5090; 8 pasos | qwen-research | Hugging Face (16,1 GB de repo) |
+| Qwen/Qwen-Image-2.1-Turbo (BF16 original) | Misma arquitectura | Misma salida | Misma calidad de referencia; sin cuantizar | qwen-research | Hugging Face |
+| Comfy-Org/Qwen-Image-2.1 (BF16 fuente nativa) | Misma arquitectura, revision `a3c1a9e2efcba96124a9dc8600c0c07d6f5e68aa` | Misma salida | Checkpoint fuente del que parte esta cuantizacion | qwen-research | Hugging Face |
+| BennyDaBall/Qwen-Image-2.1-NVFP4 (sin Turbo) | Version NVFP4 de Qwen-Image-2.1 | Misma salida | Paquete de 12,42 GB; version no Turbo, sin plan de 8 pasos | qwen-research | Hugging Face |
 
 No se dispone de benchmarks cuantitativos que permitan comparar calidad de imagen entre estas variantes mas alla de las rejillas de comparacion visual del autor.
 
@@ -95,7 +95,7 @@ No se dispone de benchmarks cuantitativos que permitan comparar calidad de image
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BennyDaBall/Qwen-Image-2.1-Turbo-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/BennyDaBall/Qwen-Image-2.1-Turbo-NVFP4
 - Modelo base original: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Fuente nativa BF16: https://huggingface.co/Comfy-Org/Qwen-Image-2.1
 - Licencia del modelo fuente: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo/blob/main/LICENSE

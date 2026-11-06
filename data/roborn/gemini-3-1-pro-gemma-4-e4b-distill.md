@@ -82,7 +82,7 @@ La comparativa se basa en modelos de tamano similar con enfoque en razonamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Roborn/Gemini-3.1-pro-Gemma-4-E4B-Distill
+- Modelo en Hugging Face: https://huggingface.co/Roborn/Gemini-3.1-pro-Gemma-4-E4B-Distill
 - Modelo original de Cannae-AI: https://huggingface.co/Cannae-AI/Gemini-3.1-pro-Gemma-4-E4B-Distill
 - Version GGUF del modelo: https://huggingface.co/Cannae-AI/Gemini-3.1-pro-Gemma-4-E4B-Distill-gguf
 - Modelo base: https://huggingface.co/google/gemma-4-E4B

@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| levin7/plantas-clasificador | MobileNetV2 | no disponible | no aplica | MIT | TFLite int8 | HuggingFace |
+| levin7/plantas-clasificador | MobileNetV2 | no disponible | no aplica | MIT | TFLite int8 | Hugging Face |
 | MobileNetV2 (TF Hub, ImageNet) | MobileNetV2 | ~3,5 M | no aplica | Apache 2.0 | TFLite, SavedModel | TensorFlow Hub |
 | EfficientNet-Lite0 (TFLite) | EfficientNet-Lite | ~4,7 M | no aplica | Apache 2.0 | TFLite | TensorFlow Hub |
 | MobileNetV3-Small (TFLite) | MobileNetV3 | ~2,5 M | no aplica | Apache 2.0 | TFLite | TensorFlow Hub |
@@ -80,4 +80,4 @@ La comparativa se limita a modelos genéricos de clasificación de imágenes par
 
 ## Enlaces
 
-- [HuggingFace: levin7/plantas-clasificador](https://huggingface.co/levin7/plantas-clasificador)
+- [Hugging Face: levin7/plantas-clasificador](https://huggingface.co/levin7/plantas-clasificador)

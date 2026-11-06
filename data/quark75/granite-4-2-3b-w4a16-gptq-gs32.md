@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`quark75/granite-4.2-3b-W4A16-GPTQ-gs32` es un repositorio de HuggingFace que, a juzgar por su nomenclatura, contiene una version cuantizada del modelo base granite-4.2-3b. El sufijo `W4A16` indica pesos de 4 bits con activaciones de 16 bits, `GPTQ` senala el algoritmo de cuantizacion post-entrenamiento empleado y `gs32` hace referencia a un tamano de grupo de 32 pesos. El autor del repositorio es el usuario quark75 y la licencia declarada es Apache 2.0.
+`quark75/granite-4.2-3b-W4A16-GPTQ-gs32` es un repositorio de Hugging Face que, a juzgar por su nomenclatura, contiene una version cuantizada del modelo base granite-4.2-3b. El sufijo `W4A16` indica pesos de 4 bits con activaciones de 16 bits, `GPTQ` senala el algoritmo de cuantizacion post-entrenamiento empleado y `gs32` hace referencia a un tamano de grupo de 32 pesos. El autor del repositorio es el usuario quark75 y la licencia declarada es Apache 2.0.
 
 La relevancia de este tipo de publicaciones radica en la reduccion del coste de memoria: una cuantizacion a 4 bits de un modelo de aproximadamente 3.000 millones de parametros permite desplegarlo en GPUs de consumo con margen para cache KV, algo inviable con pesos en FP16. Es, por tanto, una pieza orientada a inferencia local y a despliegues con restricciones de VRAM.
 
-No obstante, la informacion disponible es minima: la model card solo contiene la declaracion de licencia, sin descripcion del modelo, del proceso de cuantizacion, de la calibracion ni de evaluaciones. El repositorio registra 0 descargas y 0 likes, y fue creado el 24 de septiembre de 2026 segun los metadatos de HuggingFace. Todos los datos que no aparecen en esa informacion se marcan como no disponibles en esta ficha.
+No obstante, la informacion disponible es minima: la model card solo contiene la declaracion de licencia, sin descripcion del modelo, del proceso de cuantizacion, de la calibracion ni de evaluaciones. El repositorio registra 0 descargas y 0 likes, y fue creado el 24 de septiembre de 2026 segun los metadatos de Hugging Face. Todos los datos que no aparecen en esa informacion se marcan como no disponibles en esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -95,6 +95,6 @@ Se recomienda consultar repositorios comparables de la misma categoria (modelos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/quark75/granite-4.2-3b-W4A16-GPTQ-gs32
+- Repositorio en Hugging Face: https://huggingface.co/quark75/granite-4.2-3b-W4A16-GPTQ-gs32
 - Paper, blog, repositorio de codigo o demo: no disponible. La model card no incluye ningun enlace adicional.
 - Documentacion sobre el algoritmo GPTQ: no disponible en la informacion proporcionada.

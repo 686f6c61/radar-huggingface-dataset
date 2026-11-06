@@ -121,8 +121,8 @@ En ambas tablas, `Avg₃` es la media de las puntuaciones Overall de las tres pi
 
 | Modelo | Parametros | Overall OmniDocBench v1.6 ↑ | Avg₃ PureDocBench ↑ | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| WeVisDoc-4B | 4B | 95,38 | 75,54 | apache-2.0 | HuggingFace (tencent/WeVisDoc-4B) |
-| WeVisDoc-2B | 2B | 95,06 | 73,86 | no disponible en la informacion | HuggingFace (Tencent/WeVisDoc-2B) |
+| WeVisDoc-4B | 4B | 95,38 | 75,54 | apache-2.0 | Hugging Face (tencent/WeVisDoc-4B) |
+| WeVisDoc-2B | 2B | 95,06 | 73,86 | no disponible en la informacion | Hugging Face (Tencent/WeVisDoc-2B) |
 | Logics-Parsing-v2 | 4B | 93,33 | 72,61 | no disponible | comparado en el informe del autor |
 | Qianfan-OCR | 4B | 93,90 | 51,04 | no disponible | comparado en el informe del autor |
 | dots.mocr | 3B | 92,57 | 70,39 | no disponible | comparado en el informe del autor |
@@ -145,7 +145,7 @@ La comparación relevante dentro de la propia familia es con WeVisDoc-2B, que ob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tencent/WeVisDoc-4B
+- Modelo en Hugging Face: https://huggingface.co/tencent/WeVisDoc-4B
 - Modelo WeVisDoc-4B (enlace del autor): https://huggingface.co/Tencent/WeVisDoc-4B
 - Modelo WeVisDoc-2B: https://huggingface.co/Tencent/WeVisDoc-2B
 - Repositorio GitHub: https://github.com/Tencent/WeVisDoc

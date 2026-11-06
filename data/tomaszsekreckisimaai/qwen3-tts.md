@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-TTS es una serie de modelos de síntesis de voz (text-to-speech) de código abierto desarrollada por el equipo Qwen de Alibaba Cloud. Según la información pública disponible, ofrece generación de voz estable, expresiva y en streaming, clonación de voz con solo 3 segundos de audio, diseño de voces a partir de descripciones en lenguaje natural y control de voz mediante texto. Se destaca por su calidad de audio y su soporte multilingüe, con al menos 10 idiomas reportados por fuentes secundarias. El repositorio de HuggingFace analizado (`TomaszSekreckiSimaAi/Qwen3-tts`) no contiene el modelo original, sino un despliegue específico compilado para el runtime LLiMa en un devkit ARM64 de SiMa, con un tamaño de 8,1 GB y sin licencia declarada. Este despliegue incluye binarios ELF, librerías de runtime y archivos de configuración, y está pensado para ejecutarse en un entorno concreto con dependencias de plataforma (MLART/Neat, libtorch, etc.). La relevancia actual del modelo radica en su capacidad de clonación de voz de alta calidad y su enfoque en control natural, compitiendo con soluciones comerciales como ElevenLabs o MiniMax.
+Qwen3-TTS es una serie de modelos de síntesis de voz (text-to-speech) de código abierto desarrollada por el equipo Qwen de Alibaba Cloud. Según la información pública disponible, ofrece generación de voz estable, expresiva y en streaming, clonación de voz con solo 3 segundos de audio, diseño de voces a partir de descripciones en lenguaje natural y control de voz mediante texto. Se destaca por su calidad de audio y su soporte multilingüe, con al menos 10 idiomas reportados por fuentes secundarias. El repositorio de Hugging Face analizado (`TomaszSekreckiSimaAi/Qwen3-tts`) no contiene el modelo original, sino un despliegue específico compilado para el runtime LLiMa en un devkit ARM64 de SiMa, con un tamaño de 8,1 GB y sin licencia declarada. Este despliegue incluye binarios ELF, librerías de runtime y archivos de configuración, y está pensado para ejecutarse en un entorno concreto con dependencias de plataforma (MLART/Neat, libtorch, etc.). La relevancia actual del modelo radica en su capacidad de clonación de voz de alta calidad y su enfoque en control natural, compitiendo con soluciones comerciales como ElevenLabs o MiniMax.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ Qwen3-TTS es una serie de modelos de síntesis de voz (text-to-speech) de códig
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo en las fuentes proporcionadas. La búsqueda web menciona que es un modelo de 1,7 B de parámetros, pero no se especifica si es un transformer, un modelo basado en difusión u otra arquitectura. Tampoco hay datos sobre el dataset de entrenamiento, el número de tokens procesados o si se aplicaron técnicas como RLHF o DPO. El repositorio de HuggingFace analizado es un despliegue compilado para un runtime específico (LLiMa) en un devkit ARM64 de SiMa, que incluye binarios ELF del modelo compilado, una librería de runtime (`libsima_lmm_runtime.so`), un tokenizador y datos safetensors. Este despliegue no incluye los artefactos de entrenamiento ni los informes de validación, por lo que no es posible extraer detalles técnicos del modelo a partir de él.
+No se dispone de información detallada sobre la arquitectura interna del modelo en las fuentes proporcionadas. La búsqueda web menciona que es un modelo de 1,7 B de parámetros, pero no se especifica si es un transformer, un modelo basado en difusión u otra arquitectura. Tampoco hay datos sobre el dataset de entrenamiento, el número de tokens procesados o si se aplicaron técnicas como RLHF o DPO. El repositorio de Hugging Face analizado es un despliegue compilado para un runtime específico (LLiMa) en un devkit ARM64 de SiMa, que incluye binarios ELF del modelo compilado, una librería de runtime (`libsima_lmm_runtime.so`), un tokenizador y datos safetensors. Este despliegue no incluye los artefactos de entrenamiento ni los informes de validación, por lo que no es posible extraer detalles técnicos del modelo a partir de él.
 
 ## Capacidades
 
@@ -46,7 +46,7 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 ## Requisitos de hardware
 
-- El repositorio de HuggingFace analizado está diseñado específicamente para un devkit ARM64 de SiMa, que proporciona las librerías MLART/Neat dispatcher y un entorno Python con libtorch, c10 y NumPy/OpenBLAS. No se indican requisitos de VRAM ni de GPU para este despliegue.
+- El repositorio de Hugging Face analizado está diseñado específicamente para un devkit ARM64 de SiMa, que proporciona las librerías MLART/Neat dispatcher y un entorno Python con libtorch, c10 y NumPy/OpenBLAS. No se indican requisitos de VRAM ni de GPU para este despliegue.
 - Para el modelo general Qwen3-TTS, no se dispone de información sobre requisitos de hardware en las fuentes proporcionadas. Dado su tamaño de 1,7 B (según tts.ai), es probable que pueda ejecutarse en GPUs de consumo como una RTX 3090 o superior, pero esto no está confirmado.
 - Opciones de despliegue: el repo de HF solo documenta el uso con el runtime LLiMa (`llima run`). No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI para este modelo.
 - Latencia y throughput: no disponibles.
@@ -64,7 +64,7 @@ No se dispone de datos cuantitativos para una comparación rigurosa. Según el a
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace analizado es un despliegue específico para un runtime propietario (LLiMa) en un devkit ARM64 de SiMa. No es un modelo general utilizable con herramientas estándar como Transformers o llama.cpp sin adaptación.
+- El repositorio de Hugging Face analizado es un despliegue específico para un runtime propietario (LLiMa) en un devkit ARM64 de SiMa. No es un modelo general utilizable con herramientas estándar como Transformers o llama.cpp sin adaptación.
 - No se declara licencia en el repo de HF, lo que genera incertidumbre sobre los términos de uso comercial. El modelo original de Qwen es de código abierto, pero la licencia exacta no se especifica en las fuentes.
 - No se dispone de información sobre sesgos, riesgos de alucinación (en el contexto de TTS, posibles errores de pronunciación o entonación) o limitaciones de idioma específicas.
 - El modelo puede generar voces sintéticas que podrían usarse para suplantación de identidad; se recomienda implementar medidas de verificación y uso ético.
@@ -72,7 +72,7 @@ No se dispone de datos cuantitativos para una comparación rigurosa. Según el a
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/TomaszSekreckiSimaAi/Qwen3-tts
+- Repositorio de Hugging Face: https://huggingface.co/TomaszSekreckiSimaAi/Qwen3-tts
 - Repositorio oficial de Qwen3-TTS en GitHub: https://github.com/QwenLM/Qwen3-TTS
 - Guía completa en dev.to: https://dev.to/czmilo/qwen3-tts-the-complete-2026-guide-to-open-source-voice-cloning-and-ai-speech-generation-1in6
 - Ficha en crun.ai: https://crun.ai/models/qwen3-tts

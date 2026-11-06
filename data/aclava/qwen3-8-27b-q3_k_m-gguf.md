@@ -68,7 +68,7 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- Repositorio HuggingFace: [acclava/Qwen3.8-27B-Q3_K_M-GGUF](https://huggingface.co/aclava/Qwen3.8-27B-Q3_K_M-GGUF)
+- Repositorio Hugging Face: [acclava/Qwen3.8-27B-Q3_K_M-GGUF](https://huggingface.co/aclava/Qwen3.8-27B-Q3_K_M-GGUF)
 - Modelo original: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - Herramienta de conversión: [GGUF-my-repo](https://huggingface.co/spaces/ggml-org/gguf-my-repo)
 - Documentación de llama.cpp: [llama.cpp](https://github.com/ggerganov/llama.cpp)

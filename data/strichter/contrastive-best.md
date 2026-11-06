@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`STRICHTER/contrastive-best` es un repositorio de HuggingFace publicado por el usuario STRICHTER que contiene una implementación mínima y transparente de un *Tiny Transformer* orientado a aprendizaje contrastivo (fusión bilineal). No se trata de un modelo entrenado: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se presenta como un checkpoint evaluado. Con 16.576 parámetros totales (dato real del safetensors), su tamaño es varios órdenes de magnitud inferior al de cualquier modelo de produccion.
+`STRICHTER/contrastive-best` es un repositorio de Hugging Face publicado por el usuario STRICHTER que contiene una implementación mínima y transparente de un *Tiny Transformer* orientado a aprendizaje contrastivo (fusión bilineal). No se trata de un modelo entrenado: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se presenta como un checkpoint evaluado. Con 16.576 parámetros totales (dato real del safetensors), su tamaño es varios órdenes de magnitud inferior al de cualquier modelo de produccion.
 
 El interes del repositorio es de caracter didactico y de infraestructura: prioriza codigo legible, una receta de experimento reproducible (`training_args.json`) y pruebas de humo, y evita deliberadamente cualquier afirmacion de rendimiento. La etiqueta interna de escala es "giant", pero no guarda relacion con el numero real de parametros.
 
@@ -85,5 +85,5 @@ La diferencia de tres a cuatro ordenes de magnitud en parametros y la ausencia d
 
 ## Enlaces
 
-- [HuggingFace: STRICHTER/contrastive-best](https://huggingface.co/STRICHTER/contrastive-best)
+- [Hugging Face: STRICHTER/contrastive-best](https://huggingface.co/STRICHTER/contrastive-best)
 - No se han encontrado en la busqueda web papers, blogs, repositorios auxiliares ni demos adicionales asociados a este modelo.

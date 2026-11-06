@@ -76,10 +76,10 @@ FogGen supera al enrutamiento aleatorio en 4,4 puntos en R14 y en 5,6 puntos de 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FogGen (Qwen3-0.6B) | 596 M | no disponible | Enrutador edge-cloud con confianza verbalizada | Apache 2.0 | HuggingFace |
-| issai/foggen-qwen3-1.7b | no disponible | no disponible | Misma cadena sobre Qwen3-1.7B | Apache 2.0 (presumible) | HuggingFace |
-| issai/foggen-gemma3-1b | no disponible | no disponible | Misma cadena sobre Gemma3-1B | no disponible | HuggingFace |
-| issai/foggen-gemma3-270m | no disponible | no disponible | Misma cadena sobre Gemma3-270M | no disponible | HuggingFace |
+| FogGen (Qwen3-0.6B) | 596 M | no disponible | Enrutador edge-cloud con confianza verbalizada | Apache 2.0 | Hugging Face |
+| issai/foggen-qwen3-1.7b | no disponible | no disponible | Misma cadena sobre Qwen3-1.7B | Apache 2.0 (presumible) | Hugging Face |
+| issai/foggen-gemma3-1b | no disponible | no disponible | Misma cadena sobre Gemma3-1B | no disponible | Hugging Face |
+| issai/foggen-gemma3-270m | no disponible | no disponible | Misma cadena sobre Gemma3-270M | no disponible | Hugging Face |
 
 Las alternativas directas son los otros checkpoints de la misma familia FogGen, que replican la cadena de entrenamiento con modelos base de distinto tamaño. No se dispone de datos de benchmarks comparativos entre ellos en la información proporcionada.
 
@@ -97,7 +97,7 @@ Las alternativas directas son los otros checkpoints de la misma familia FogGen, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/issai/foggen
+- Modelo en Hugging Face: https://huggingface.co/issai/foggen
 - Dataset y resultados: https://huggingface.co/datasets/issai/foggen-data
 - Dataset KazCulture: https://huggingface.co/datasets/issai/KazCulture
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B

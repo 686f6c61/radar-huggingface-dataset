@@ -103,7 +103,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de las alternativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/razordvrz/LUTwithBGrid-ONNX
+- Hugging Face: https://huggingface.co/razordvrz/LUTwithBGrid-ONNX
 - Paper (ECCV 2024): https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/6517_ECCV_2024_paper.php
 - Repositorio original: https://github.com/WontaeaeKim/LUTwithBGrid
 - Proyecto que lo integra (Albedolizer): https://github.com/invisiblelevel/Albedolizer

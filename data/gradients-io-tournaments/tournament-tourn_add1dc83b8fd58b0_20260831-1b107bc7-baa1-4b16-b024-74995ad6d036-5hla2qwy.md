@@ -76,7 +76,7 @@ La comparativa es limitada porque no se dispone de datos de rendimiento de este 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-1b107bc7-baa1-4b16-b024-74995ad6d036-5HLA2QWY
+- Repositorio Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-1b107bc7-baa1-4b16-b024-74995ad6d036-5HLA2QWY
 - Plataforma Gradients (torneos): https://www.gradients.io/app/research/tournament
 - Modelo base Falcon RW 1B: https://huggingface.co/tiiuae/falcon-rw-1b
 - Articulo LoRA (arxiv:1910.09700): https://arxiv.org/abs/1910.09700

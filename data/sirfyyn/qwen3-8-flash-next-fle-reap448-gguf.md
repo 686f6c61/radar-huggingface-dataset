@@ -75,10 +75,10 @@ Sonda de conocimiento MKQA (respuestas correctas): 21,5 % en alemán y 29,8 % en
 
 | Modelo | Parámetros | Tamaño | Contexto | KLD (E/W/K) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FLE-IQ3_M-REAP448 (este) | 161,84 B | 82,0 GB | no disponible | 0,080 / 0,086 / 0,185 | qwen-community-1.0 | HuggingFace, GGUF |
-| FLE-IQ3_M | 176,94 B | 88,9 GB | no disponible | 0,051 / 0,050 / 0,129 | qwen-community-1.0 | HuggingFace, GGUF |
-| UD-IQ3_XXS (Unsloth) | no disponible | 82,0 GB | no disponible | 0,091 / 0,091 / 0,229 | qwen-community-1.0 | HuggingFace, GGUF |
-| IQ3_S (ISTA GSQ-RCO) | no disponible | 83,6 GB | no disponible | 0,069 / 0,061 / 0,183 | qwen-community-1.0 | HuggingFace, GGUF |
+| FLE-IQ3_M-REAP448 (este) | 161,84 B | 82,0 GB | no disponible | 0,080 / 0,086 / 0,185 | qwen-community-1.0 | Hugging Face, GGUF |
+| FLE-IQ3_M | 176,94 B | 88,9 GB | no disponible | 0,051 / 0,050 / 0,129 | qwen-community-1.0 | Hugging Face, GGUF |
+| UD-IQ3_XXS (Unsloth) | no disponible | 82,0 GB | no disponible | 0,091 / 0,091 / 0,229 | qwen-community-1.0 | Hugging Face, GGUF |
+| IQ3_S (ISTA GSQ-RCO) | no disponible | 83,6 GB | no disponible | 0,069 / 0,061 / 0,183 | qwen-community-1.0 | Hugging Face, GGUF |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ Sonda de conocimiento MKQA (respuestas correctas): 21,5 % en alemán y 29,8 % en
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/sirfyyn/Qwen3.8-Flash-Next-FLE-REAP448-GGUF
+- Hugging Face (este modelo): https://huggingface.co/sirfyyn/Qwen3.8-Flash-Next-FLE-REAP448-GGUF
 - Repositorio principal FLE (modelos sin podar, cabeza MTP, cortometrajes): https://huggingface.co/sirfyyn/Qwen3.8-Flash-Next-FLE-GGUF
 - Informe técnico FLE: https://sirfyyn.github.io/FastLocalExperts/
 - Informe técnico FLE (PDF): https://sirfyyn.github.io/FastLocalExperts/fle-paper.pdf

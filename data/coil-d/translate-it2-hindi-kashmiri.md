@@ -6,7 +6,7 @@ COIL-D/translate-it2-hindi-kashmiri es un modelo de traduccion automatica neuron
 
 La relevancia de esta ficha radica en que el kashmiri es una lengua de bajos recursos con una presencia limitada en los sistemas de traduccion comerciales, mientras que el hindi es uno de los idiomas con mayor volumen de hablantes del mundo. Un modelo dedicado y bidireccional para este par cubre un hueco que los modelos multilingues genericos suelen resolver con calidad desigual. Al derivar de una arquitectura encoder-decoder compacta (320M), el coste de despliegue es bajo comparado con alternativas multilingues de miles de millones de parametros.
 
-El repositorio tiene un tamano de 1,3 GB, esta publicado bajo licencia MIT y cuenta con acceso restringido (gated) en HuggingFace, por lo que es necesario aceptar condiciones antes de la descarga. En el momento de la consulta registra 0 descargas y 0 "likes", y la informacion publica no incluye metricas de evaluacion, longitud de contexto ni detalles del dataset de ajuste.
+El repositorio tiene un tamano de 1,3 GB, esta publicado bajo licencia MIT y cuenta con acceso restringido (gated) en Hugging Face, por lo que es necesario aceptar condiciones antes de la descarga. En el momento de la consulta registra 0 descargas y 0 "likes", y la informacion publica no incluye metricas de evaluacion, longitud de contexto ni detalles del dataset de ajuste.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El repositorio tiene un tamano de 1,3 GB, esta publicado bajo licencia MIT y cue
 | Direcciones de traduccion | hin-kas y kas-hin |
 | Modelo base | ai4bharat/indictrans2-indic-indic-dist-320M (finetune) |
 | Tamano del repositorio | 1,3 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Libreria de inferencia | CTranslate2 |
 
 ## Arquitectura y entrenamiento
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| COIL-D/translate-it2-hindi-kashmiri | ~320M (derivados del base) | hi, ks (bidireccional) | no disponible | MIT | CTranslate2 | Gated en HuggingFace |
-| ai4bharat/indictrans2-indic-indic-dist-320M | ~320M (segun nomenclatura) | 22 lenguas indicas (entre ellas hi y ks) | no disponible | MIT | safetensors / PyTorch | Publico en HuggingFace |
-| NLLB-200-distilled-600M | ~600M | 200 idiomas (incluye hi y ks) | no disponible | CC-BY-NC-4.0 | safetensors / PyTorch | Publico en HuggingFace |
+| COIL-D/translate-it2-hindi-kashmiri | ~320M (derivados del base) | hi, ks (bidireccional) | no disponible | MIT | CTranslate2 | Gated en Hugging Face |
+| ai4bharat/indictrans2-indic-indic-dist-320M | ~320M (segun nomenclatura) | 22 lenguas indicas (entre ellas hi y ks) | no disponible | MIT | safetensors / PyTorch | Publico en Hugging Face |
+| NLLB-200-distilled-600M | ~600M | 200 idiomas (incluye hi y ks) | no disponible | CC-BY-NC-4.0 | safetensors / PyTorch | Publico en Hugging Face |
 
 El modelo aqui descrito aporta dos diferencias frente a sus alternativas: un ajuste especifico sobre el par hindi-kashmiri y un artefacto ya convertido a CTranslate2, listo para inferencia optimizada. Frente al modelo base, pierde cobertura del resto de lenguas indicas, por lo que solo tiene sentido en despliegues centrados en este par concreto. Frente a NLLB-200-distilled-600M, ofrece un coste de inferencia menor y una licencia permisiva (MIT) que permite uso comercial sin las restricciones no comerciales de la licencia de NLLB. La contrapartida es la ausencia de metricas publicadas que permitan comparar calidad de traduccion de forma objetiva. No se dispone de datos para comparar rendimiento cuantitativo entre los tres modelos.
 
@@ -90,7 +90,7 @@ El modelo aqui descrito aporta dos diferencias frente a sus alternativas: un aju
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/COIL-D/translate-it2-hindi-kashmiri
+- Repositorio Hugging Face: https://huggingface.co/COIL-D/translate-it2-hindi-kashmiri
 - Modelo base: https://huggingface.co/ai4bharat/indictrans2-indic-indic-dist-320M
 - Paper referenciado en las etiquetas del repositorio: arXiv:2609.28826 (https://arxiv.org/abs/2609.28826), no verificado con la informacion disponible
 - Documentacion de CTranslate2: https://github.com/OpenNMT/CTranslate2

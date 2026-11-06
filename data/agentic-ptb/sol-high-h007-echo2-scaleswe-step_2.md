@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento para comparar directamente. Estructuralmen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h007.echo2-scaleswe.step_2
+- Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h007.echo2-scaleswe.step_2
 - Repositorio ScaleSWE (posible relación): https://github.com/AweAI-Team/ScaleSWE
 - README de ScaleSWE: https://github.com/AweAI-Team/ScaleSWE/blob/main/README.md
 - Artículo sobre GPT-5.6 Sol (mencionado como driver): https://mlhive.com/2026/07/inside-gpt-5-6-sol-agentic-reasoning-release

@@ -86,8 +86,8 @@ El propio autor advierte que estos resultados no establecen latencia interactiva
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sawfwair/DRAMA-3-MLX-4bit | 8.720.553.088 | no disponible | safetensors 4 bits, layout propio; solo mere.run (Swift/MLX) en Apple Silicon | fish-audio-community-license-1.0 | HuggingFace, 0 descargas, 0 likes |
-| fishaudio/drama-3 (base) | no disponible en la informacion | no disponible | export original de 41,5 GB con expertos en FP8 | fish-audio-community-license-1.0 | HuggingFace (modelo fuente, commit `dd64a85c`) |
+| Sawfwair/DRAMA-3-MLX-4bit | 8.720.553.088 | no disponible | safetensors 4 bits, layout propio; solo mere.run (Swift/MLX) en Apple Silicon | fish-audio-community-license-1.0 | Hugging Face, 0 descargas, 0 likes |
+| fishaudio/drama-3 (base) | no disponible en la informacion | no disponible | export original de 41,5 GB con expertos en FP8 | fish-audio-community-license-1.0 | Hugging Face (modelo fuente, commit `dd64a85c`) |
 | Otras alternativas TTS de escala comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación relevante es con el modelo base: este derivado reduce el peso de 41,5 GB a 27,4 GB, conserva atención, routers, embeddings y torre de audio en BF16 y mantiene el códec sin tocar, a cambio de perder compatibilidad con cualquier runtime genérico y de no haber cuantificado todavía la pérdida de calidad del Q4 frente al original. No se dispone de datos sobre otros modelos TTS comparables en la información proporcionada.
@@ -110,10 +110,10 @@ La comparación relevante es con el modelo base: este derivado reduce el peso de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sawfwair/DRAMA-3-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/Sawfwair/DRAMA-3-MLX-4bit
 - Modelo base: https://huggingface.co/fishaudio/drama-3
 - Repositorio del runtime mere.run (commit validado a68cc7a5): https://github.com/sawfwair/mere-run/tree/a68cc7a5a94b66f065b034863108caa2bbed59d2
 - Registro de calificación DRAMA-3 nativo: https://github.com/sawfwair/mere-run/tree/a68cc7a5a94b66f065b034863108caa2bbed59d2/docs/qualification/drama3-native-20261015
 - Ficheros de licencia y procedencia incluidos en el repo: `LICENSE`, `Notice`, `MODIFICATIONS.md`, `SHA256SUMS`, `drama3-quantization.json`, `UPSTREAM_MODEL_CARD.md`, `DRAMA3_EXTENDED_RESULTS.json`, `DRAMA3_MAIN_INTEGRATION.json`
 
-Nota: la búsqueda web realizada no devolvió enlaces relevantes sobre el modelo (los resultados eran listados de conciertos y agendas culturales), por lo que los enlaces anteriores proceden exclusivamente de la información de HuggingFace y de la model card.
+Nota: la búsqueda web realizada no devolvió enlaces relevantes sobre el modelo (los resultados eran listados de conciertos y agendas culturales), por lo que los enlaces anteriores proceden exclusivamente de la información de Hugging Face y de la model card.

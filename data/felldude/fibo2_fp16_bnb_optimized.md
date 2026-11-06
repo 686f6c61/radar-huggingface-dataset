@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Fibo2_FP16_BnB_Optimized (este) | ~8,1 mil millones | No disponible | `bria-fibo` (no comercial; comercial con acuerdo) | HuggingFace, diffusers |
-| briaai/Fibo-2.0-dev (base) | No disponible | No disponible | `bria-fibo` | HuggingFace, diffusers |
+| Fibo2_FP16_BnB_Optimized (este) | ~8,1 mil millones | No disponible | `bria-fibo` (no comercial; comercial con acuerdo) | Hugging Face, diffusers |
+| briaai/Fibo-2.0-dev (base) | No disponible | No disponible | `bria-fibo` | Hugging Face, diffusers |
 | Otros modelos de edición de imagen | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de alternativas comparables en la información proporcionada, por lo que la comparación cuantitativa no es posible.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones de alternativas comp
 
 ## Enlaces
 
-- [HuggingFace: Felldude/Fibo2_FP16_BnB_Optimized](https://huggingface.co/Felldude/Fibo2_FP16_BnB_Optimized)
+- [Hugging Face: Felldude/Fibo2_FP16_BnB_Optimized](https://huggingface.co/Felldude/Fibo2_FP16_BnB_Optimized)
 - [Modelo base: briaai/Fibo-2.0-dev](https://huggingface.co/briaai/Fibo-2.0-dev)
 - [Licencia CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.en)
 - [Licencia y precios de Bria AI (Fibo-2)](https://platform.bria.ai/licensing/pricing?model=fibo-2)

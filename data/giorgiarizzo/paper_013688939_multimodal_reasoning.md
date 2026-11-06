@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `giorgiarizzo`, contiene un documento académico en formato LaTeX NeurIPS titulado `paper_013688939_multimodal_reasoning.md`. No se trata de un modelo de inteligencia artificial, sino de un artículo de investigación que aborda el tema del razonamiento multimodal. El documento sigue una estructura académica clásica (introducción, trabajo relacionado, método, experimentos y conclusión) y emplea un estilo de escritura narrativa progresiva.
+Este repositorio de Hugging Face, publicado por el usuario `giorgiarizzo`, contiene un documento académico en formato LaTeX NeurIPS titulado `paper_013688939_multimodal_reasoning.md`. No se trata de un modelo de inteligencia artificial, sino de un artículo de investigación que aborda el tema del razonamiento multimodal. El documento sigue una estructura académica clásica (introducción, trabajo relacionado, método, experimentos y conclusión) y emplea un estilo de escritura narrativa progresiva.
 
 El repositorio es relevante para investigadores y desarrolladores interesados en el estado del arte del razonamiento multimodal, ya que el archivo principal contiene el texto completo del paper. Su licencia MIT permite reutilización libre con atribución, lo que facilita su uso como referencia en proyectos académicos o técnicos. No se incluyen pesos, arquitecturas ni código de inferencia, ya que el objetivo es puramente documental.
 
@@ -64,7 +64,7 @@ No disponible. Este repositorio no es un modelo de IA, sino un documento académ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/giorgiarizzo/paper_013688939_multimodal_reasoning
+- Repositorio Hugging Face: https://huggingface.co/giorgiarizzo/paper_013688939_multimodal_reasoning
 - Resultados de búsqueda web relevantes (no afiliados al repositorio):
   - [Towards Large Reasoning Models: A Survey of Reinforced Reasoning](https://arxiv.org/abs/2501.09686)
   - [Awesome-MLLM-Reasoning-Collection (GitHub)](https://github.com/lwpyh/Awesome-MLLM-Reasoning-Collection/)

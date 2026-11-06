@@ -2,7 +2,7 @@
 
 ## Resumen
 
-muse-tonal-gate es un clasificador de audio de tamano minimo (4,7 KB) publicado por arraypress en HuggingFace bajo licencia MIT. No es un modelo de lenguaje ni un transformer generativo: es un modelo Core ML de clasificacion binaria que responde a una unica pregunta sobre una muestra de audio, si tiene o no una tonalidad musical definida. La salida se compone de una etiqueta `target` con dos valores posibles (`tonal` o `atonal`) y una probabilidad asociada (`targetProbability`).
+muse-tonal-gate es un clasificador de audio de tamano minimo (4,7 KB) publicado por arraypress en Hugging Face bajo licencia MIT. No es un modelo de lenguaje ni un transformer generativo: es un modelo Core ML de clasificacion binaria que responde a una unica pregunta sobre una muestra de audio, si tiene o no una tonalidad musical definida. La salida se compone de una etiqueta `target` con dos valores posibles (`tonal` o `atonal`) y una probabilidad asociada (`targetProbability`).
 
 El problema que resuelve es acotado pero recurrente en herramientas de analisis musical: los pipelines de deteccion de tonalidad tienden a asignar una tonalidad a cualquier fragmento de audio, incluidos bombos, hi-hats, barridos de ruido o impactos que no tienen centro tonal. muse utiliza este modelo como puerta previa para reportar una armadura solo cuando tiene sentido, evitando resultados como etiquetar un bombo como "do menor".
 
@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no incluye resultados comparativos c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arraypress/muse-tonal-gate | no disponible (4,7 KB) | no disponible | 93,3% accuracy en held-out sample packs | MIT | HuggingFace |
+| arraypress/muse-tonal-gate | no disponible (4,7 KB) | no disponible | 93,3% accuracy en held-out sample packs | MIT | Hugging Face |
 | Alternativas de clasificacion de audio | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No disponible. La informacion proporcionada no incluye resultados comparativos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arraypress/muse-tonal-gate
+- Hugging Face: https://huggingface.co/arraypress/muse-tonal-gate
 - Repositorio de arraypress (muse): https://github.com/arraypress
 - Documentacion de Create ML (Apple): no disponible en la informacion proporcionada
 - Documentacion de Core ML y SoundAnalysis (Apple): no disponible en la informacion proporcionada

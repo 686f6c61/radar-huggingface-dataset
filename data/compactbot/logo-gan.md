@@ -6,14 +6,14 @@ logo-gan es una DCGAN (Deep Convolutional GAN) entrenada desde cero por el usuar
 
 El interés técnico del artefacto es doble. Por un lado, es un ejemplo completo y verificable de entrenamiento GAN en el que se documentan los fallos: una primera ejecución sin trucos de estabilidad colapsó (discriminador a 0.0000, generador a 13.9) y se descartó, mientras que la variante publicada usa label smoothing (real=0.9, fake=0.1) y penalización de gradiente R1 (λ=10) y mantiene las pérdidas en una banda sana. Por otro, es un caso de estudio de documentación transparente: el autor admite que no puede inspeccionar visualmente las muestras y aporta evidencia cuantitativa de diversidad (entropía de color, desviación típica por canal) en lugar de afirmar calidad visual.
 
-El modelo tiene 8.832.708 parámetros (6.066.179 en el generador y 2.766.529 en el discriminador) y se entrenó con solo 400 logotipos reales a 64×64 procedentes de cuatro datasets públicos de HuggingFace. Con ese volumen de datos y ese tamaño, el modelo aprende las estadísticas globales de un logotipo (fondo claro, marca central de color, restos de formas tipográficas) pero no reproduce ninguna marca concreta. Es relevante ahora como pieza didáctica y como baseline minúsculo (≈35 MB en fp32) para pipelines de imagen.
+El modelo tiene 8.832.708 parámetros (6.066.179 en el generador y 2.766.529 en el discriminador) y se entrenó con solo 400 logotipos reales a 64×64 procedentes de cuatro datasets públicos de Hugging Face. Con ese volumen de datos y ese tamaño, el modelo aprende las estadísticas globales de un logotipo (fondo claro, marca central de color, restos de formas tipográficas) pero no reproduce ninguna marca concreta. Es relevante ahora como pieza didáctica y como baseline minúsculo (≈35 MB en fp32) para pipelines de imagen.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | DCGAN estandar (generador con up-convoluciones y BatchNorm; discriminador convolucional con LeakyReLU 0.2) |
-| Parametros totales | 8.832.708 (generador 6.066.179 + discriminador 2.766.529). El archivo `model.safetensors` almacena 8.836.427 elementos: parametros mas 3.719 buffers de running-stats de BatchNorm. La ficha de HuggingFace reporta 8.836.420 parametros sobre safetensors |
+| Parametros totales | 8.832.708 (generador 6.066.179 + discriminador 2.766.529). El archivo `model.safetensors` almacena 8.836.427 elementos: parametros mas 3.719 buffers de running-stats de BatchNorm. La ficha de Hugging Face reporta 8.836.420 parametros sobre safetensors |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no aplica: el modelo no procesa texto ni secuencias. Entrada = vector latente gaussiano de 100 dimensiones |
 | Tipos de cuantizacion | no disponible. No se publican versiones cuantizadas; los pesos se distribuyen en precision completa (fp32) |
@@ -72,7 +72,7 @@ Como referencia de fallo, la ejecucion descartada sin label smoothing ni penaliz
 - Cabe en GPU de consumo: si, con enorme margen (GTX 1050, RTX 3050, RTX 4090, etc.). Tambien cabe en Raspberry Pi y en CPU.
 - Despliegue: PyTorch nativo (carga directa del safetensors con el script del repositorio). No hay pesos GGUF, ONNX ni TorchScript publicados; la exportacion a TorchScript u ONNX tendria que hacerla el usuario. vLLM, llama.cpp, Ollama y TGI no aplican, porque no es un modelo de lenguaje.
 - Latencia y throughput: no disponible como medicion publicada. Como referencia derivada, el entrenamiento completo de 12.000 pasos con batch 128 en unos 5 minutos implica del orden de 40 pasos/s y ~5.100 imagenes generadas por segundo en la RTX 5090 durante el bucle de entrenamiento, cifra que no debe extrapolarse a un servidor de inferencia.
-- Memoria de sistema: despreciable; el repositorio completo ocupa 0,0 GB segun la ficha de HuggingFace.
+- Memoria de sistema: despreciable; el repositorio completo ocupa 0,0 GB segun la ficha de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -92,7 +92,7 @@ Frente a estas alternativas, logo-gan se distingue por su tamano minimo, su lice
 - No reproduce logotipos reales: con 400 imagenes y 8,8 M de parametros solo captura estadisticas globales (fondo claro, marca central coloreada, restos de tipografia). El propio autor pide tratar `samples_final.png` como "lo que el modelo cree que es un logo", no como activos de marca.
 - Verificacion visual no realizada: el autor no pudo inspeccionar las muestras, por lo que la calidad perceptual esta sin confirmar. La evidencia de no-colapso es exclusivamente cuantitativa (perdidas, entropia de color, desviacion tipica por canal).
 - Riesgo de colapso de modo: el modelo publicado es la variante estable; sin label smoothing ni R1 el entrenamiento colapso. Cualquier reentrenamiento con otros hiperparametros debe vigilar las perdidas.
-- Sesgo de los datos de origen: los 400 logotipos provienen de cuatro datasets publicos de HuggingFace y su composicion cultural, sectorial y cromatica condiciona la distribucion generada. La entropia de color del modelo (4.91 bits) es ligeramente superior a la real (4.23), lo que sugiere una paleta mas dispersa que la observada en los datos.
+- Sesgo de los datos de origen: los 400 logotipos provienen de cuatro datasets publicos de Hugging Face y su composicion cultural, sectorial y cromatica condiciona la distribucion generada. La entropia de color del modelo (4.91 bits) es ligeramente superior a la real (4.23), lo que sugiere una paleta mas dispersa que la observada en los datos.
 - Riesgo de similitud con marcas existentes: al entrenar sobre logotipos reales, algunas muestras pueden recordar a marcas registradas. No deben usarse como identificadores comerciales ni presentarse como logos de una organizacion.
 - Resolucion limitada: 64×64 RGB. No hay version de mayor resolucion ni etapa de superresolucion.
 - Sin condicionamiento: no se puede pedir un logo de un color, sector o estilo concreto. La unica forma de influir en la salida es manipular el vector latente o interpolar entre latentes.
@@ -103,8 +103,8 @@ Frente a estas alternativas, logo-gan se distingue por su tamano minimo, su lice
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Compactbot/logo-gan
+- Modelo en Hugging Face: https://huggingface.co/Compactbot/logo-gan
 - Peticion original que motivo el entrenamiento: https://huggingface.co/spaces/Compactbot/model-requests/discussions/1
 - Repositorio LogoNet (generacion de logotipos con GANs, localizado en la busqueda web): https://github.com/aditgupta1/LogoNet
-- Dataset de origen citado en el manifiesto: `samp3209/logo-dataset` (bliptest), `taniya/Logo_mark`, `taniya/Logo_symbol`, `taniya/Logo_type` en HuggingFace
+- Dataset de origen citado en el manifiesto: `samp3209/logo-dataset` (bliptest), `taniya/Logo_mark`, `taniya/Logo_symbol`, `taniya/Logo_type` en Hugging Face
 - Paper de referencia de la arquitectura DCGAN: Radford, Metz y Chintala, "Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks" (arXiv:1511.06434); no aparecia en los resultados de busqueda proporcionados

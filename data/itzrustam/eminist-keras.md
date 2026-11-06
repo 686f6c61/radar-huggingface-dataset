@@ -4,7 +4,7 @@
 
 EMINIST-KERAS es un modelo preentrenado para el reconocimiento de dígitos y caracteres manuscritos, desarrollado por ItzRustam y entrenado con el dataset EMINIST (Extended MNIST) utilizando TensorFlow-Keras. El modelo está diseñado para tareas de regresión y clasificación de imágenes de escritura manual, y se distribuye bajo licencia Apache 2.0.
 
-A pesar de estar alojado en HuggingFace, el modelo tiene un repositorio de tamaño 0.0 GB y no se proporcionan detalles sobre la arquitectura, el número de parámetros ni el rendimiento en benchmarks. La model card es extremadamente breve y no incluye información técnica relevante, lo que limita su evaluación rigurosa. El autor también lo publica en Kaggle Models, lo que sugiere que su uso principal podría estar orientado a experimentos educativos o prototipos rápidos.
+A pesar de estar alojado en Hugging Face, el modelo tiene un repositorio de tamaño 0.0 GB y no se proporcionan detalles sobre la arquitectura, el número de parámetros ni el rendimiento en benchmarks. La model card es extremadamente breve y no incluye información técnica relevante, lo que limita su evaluación rigurosa. El autor también lo publica en Kaggle Models, lo que sugiere que su uso principal podría estar orientado a experimentos educativos o prototipos rápidos.
 
 La relevancia actual de este modelo es baja dentro del ecosistema de IA open source, ya que existen alternativas más documentadas y con mejor soporte para tareas similares. No obstante, su licencia permisiva y su enfoque en un dataset clásico pueden resultar útiles para fines didácticos o de integración sencilla en flujos de trabajo existentes.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EMINIST-KERAS | no disponible | no aplica | no disponible | Apache 2.0 | HuggingFace, Kaggle |
+| EMINIST-KERAS | no disponible | no aplica | no disponible | Apache 2.0 | Hugging Face, Kaggle |
 | LeNet-5 (clásico) | ~60k | no aplica | ~99% en MNIST | no disponible | múltiples implementaciones |
 | ResNet-18 (entrenado en EMINIST) | ~11M | no aplica | no disponible | no disponible | múltiples implementaciones |
 | MobileNetV2 (fine-tuned) | ~3.4M | no aplica | no disponible | Apache 2.0 | Keras Applications |
@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento para EMINIST-KERAS, por lo que la comparac
 ## Limitaciones y advertencias
 
 - No se proporciona información sobre la precisión real del modelo, por lo que su uso en producción conlleva un riesgo alto de rendimiento insatisfactorio.
-- El repositorio en HuggingFace no contiene archivos de pesos (tamaño 0.0 GB), lo que impide su descarga directa; el acceso real parece estar solo en Kaggle.
+- El repositorio en Hugging Face no contiene archivos de pesos (tamaño 0.0 GB), lo que impide su descarga directa; el acceso real parece estar solo en Kaggle.
 - No se documentan sesgos conocidos, pero al entrenarse con EMINIST, que contiene caracteres en inglés, el modelo no soportará otros alfabetos ni escrituras.
 - Riesgo de alucinación: no aplica, ya que no es un modelo generativo de texto, sino de clasificación de imágenes.
 - Licencia Apache 2.0 permite uso comercial, pero al no haber documentación técnica, cualquier integración requerirá un reentrenamiento o validación exhaustiva.
@@ -77,5 +77,5 @@ No se dispone de datos de rendimiento para EMINIST-KERAS, por lo que la comparac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ItzRustam/EMINIST-KERAS
+- Hugging Face: https://huggingface.co/ItzRustam/EMINIST-KERAS
 - Kaggle Models: https://www.kaggle.com/models/rustambhadouriya/eminist-keras

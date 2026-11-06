@@ -67,6 +67,6 @@ No disponible. No se conocen modelos comparables de la misma categoría al carec
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Felisuco092/timeSeriesSalesKaggle)
+- [Modelo en Hugging Face](https://huggingface.co/Felisuco092/timeSeriesSalesKaggle)
 - [Perfil de GitHub del autor](https://github.com/Felisuco092)
 - [Repositorio de presentación del autor](https://github.com/Felisuco092/Felisuco092)

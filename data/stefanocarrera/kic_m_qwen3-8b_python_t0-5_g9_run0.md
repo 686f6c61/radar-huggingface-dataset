@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g9_run0` es un ajuste fino (fine-tune) del modelo base Qwen3-8B, concretamente sobre la variante cuantizada a 4 bits `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`. Lo publica el usuario stefanocarrera en HuggingFace bajo licencia Apache 2.0. Por el nombre del repositorio (que incluye `python`, `t0.5` y `g9`) y por las etiquetas asociadas a `unsloth` y `trl`, todo apunta a un experimento de ajuste supervisado orientado a generacion de codigo Python, probablemente con temperatura 0.5 y algun tipo de agrupacion o configuracion de generacion identificada como "g9". No obstante, la model card no documenta el proceso de entrenamiento, los datos utilizados ni los hiperparametros, por lo que estas inferencias no pueden confirmarse con la informacion disponible.
+`stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g9_run0` es un ajuste fino (fine-tune) del modelo base Qwen3-8B, concretamente sobre la variante cuantizada a 4 bits `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`. Lo publica el usuario stefanocarrera en Hugging Face bajo licencia Apache 2.0. Por el nombre del repositorio (que incluye `python`, `t0.5` y `g9`) y por las etiquetas asociadas a `unsloth` y `trl`, todo apunta a un experimento de ajuste supervisado orientado a generacion de codigo Python, probablemente con temperatura 0.5 y algun tipo de agrupacion o configuracion de generacion identificada como "g9". No obstante, la model card no documenta el proceso de entrenamiento, los datos utilizados ni los hiperparametros, por lo que estas inferencias no pueden confirmarse con la informacion disponible.
 
 El modelo hereda la arquitectura y el tamano del Qwen3-8B original: un transformer denso de aproximadamente 8.000 millones de parametros, con soporte nativo de contexto largo y capacidades multilingues. Sin embargo, el autor declara unicamente el idioma ingles y no aporta detalles sobre el dataset de ajuste, el numero de tokens de entrenamiento ni las metricas obtenidas. El repositorio ocupa 0,2 GB, un tamano compatible con pesos cuantizados o con un subconjunto de los pesos completos, lo que sugiere que no se trata de una publicacion completa de los 8B parametros en precision nativa.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada pero ilustrativa: se trata de un ejemplo
 
 La arquitectura subyacente es la del Qwen3-8B, un transformer denso de aproximadamente 8.000 millones de parametros desarrollado por Alibaba Qwen. El autor no describe en la model card ninguna modificacion estructural, por lo que se asume que el fine-tune conserva la topologia original. El punto de partida es la version `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, es decir, una conversion a 4 bits mediante bitsandbytes preparada por Unsloth para facilitar el entrenamiento con requisitos de VRAM reducidos.
 
-El entrenamiento se realizo con las herramientas de Unsloth, que segun la propia card permite entrenar "2x mas rapido" que los pipelines convencionales. Las etiquetas `trl` y `text-generation-inference` indican el uso de la libreria TRL de HuggingFace, probablemente con `SFTTrainer`. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, la existencia de RLHF o DPO, ni los hiperparametros concretos. El sufijo `t0.5` podria corresponder a una temperatura de muestreo de 0,5 durante la generacion de datos sinteticos o durante la evaluacion, y `g9` a una configuracion de agrupacion no documentada. Cualquier afirmacion al respecto seria especulativa.
+El entrenamiento se realizo con las herramientas de Unsloth, que segun la propia card permite entrenar "2x mas rapido" que los pipelines convencionales. Las etiquetas `trl` y `text-generation-inference` indican el uso de la libreria TRL de Hugging Face, probablemente con `SFTTrainer`. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, la existencia de RLHF o DPO, ni los hiperparametros concretos. El sufijo `t0.5` podria corresponder a una temperatura de muestreo de 0,5 durante la generacion de datos sinteticos o durante la evaluacion, y `g9` a una configuracion de agrupacion no documentada. Cualquier afirmacion al respecto seria especulativa.
 
 ## Capacidades
 
@@ -46,7 +46,7 @@ El entrenamiento se realizo con las herramientas de Unsloth, que segun la propia
 - Generacion de tests unitarios para codigo Python existente: el ajuste sobre Python podria facilitar la produccion de casos de prueba, aunque requiere validacion manual.
 - Traduccion de pseudocodigo o descripciones en lenguaje natural a Python: escenario tipico de los fine-tunes orientados a codigo, adecuado para tareas de baja criticidad.
 - Base para nuevos fine-tunes: al estar bajo Apache 2.0 y en safetensors, puede reutilizarse como punto de partida para ajustes adicionales en dominios especificos.
-- Educacion y demostraciones: util para mostrar el ciclo completo de publicacion de un modelo en HuggingFace con Unsloth, con fines divulgativos.
+- Educacion y demostraciones: util para mostrar el ciclo completo de publicacion de un modelo en Hugging Face con Unsloth, con fines divulgativos.
 
 ## Benchmarks y rendimiento
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g9_run0 | ~8B (heredado) | No disponible | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune comunitario sin benchmarks |
-| Qwen/Qwen3-8B | ~8B | Contexto largo (segun documentacion oficial de Qwen3) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados |
-| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | ~8B | Igual que Qwen3-8B | Apache 2.0 | HuggingFace | Conversion a 4 bits del base, punto de partida de este fine-tune |
-| Meta Llama 3.1 8B Instruct | ~8B | 128.000 tokens | Llama 3.1 Community License | HuggingFace | Alternativa densa de tamano similar, con benchmarks publicados |
+| stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g9_run0 | ~8B (heredado) | No disponible | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune comunitario sin benchmarks |
+| Qwen/Qwen3-8B | ~8B | Contexto largo (segun documentacion oficial de Qwen3) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados |
+| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | ~8B | Igual que Qwen3-8B | Apache 2.0 | Hugging Face | Conversion a 4 bits del base, punto de partida de este fine-tune |
+| Meta Llama 3.1 8B Instruct | ~8B | 128.000 tokens | Llama 3.1 Community License | Hugging Face | Alternativa densa de tamano similar, con benchmarks publicados |
 
 La comparativa se limita a modelos del mismo orden de magnitud, ya que no se dispone de resultados de benchmarks del fine-tune que permitan una comparacion cuantitativa. El modelo base Qwen3-8B y su version cuantizada por Unsloth son las referencias mas directas.
 
@@ -86,8 +86,8 @@ La comparativa se limita a modelos del mismo orden de magnitud, ya que no se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g9_run0
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g9_run0
 - Modelo base de partida: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Documentacion de TRL (HuggingFace): https://huggingface.co/docs/trl
+- Documentacion de TRL (Hugging Face): https://huggingface.co/docs/trl
 - Documentacion de Qwen3: no disponible en la informacion proporcionada.

@@ -85,7 +85,7 @@ No hay datos de WER ni de rendimiento comparado en la información disponible pa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/grabbou/parakeet-tdt-0.6b-v3-CoreAI
+- Repositorio Hugging Face: https://huggingface.co/grabbou/parakeet-tdt-0.6b-v3-CoreAI
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Receta de exportación Parakeet de Apple: https://github.com/apple/coreai-models/tree/main/models/parakeet
 - Repositorio `apple/coreai-models`: https://github.com/apple/coreai-models

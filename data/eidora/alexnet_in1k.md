@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| EIDORA/AlexNet_IN1k | CNN (AlexNet) | no disponible | imagen 224 x 224 | embedding 4096, L2 | `other` (sin licencia de pesos afirmada) | HuggingFace, ONNX |
+| EIDORA/AlexNet_IN1k | CNN (AlexNet) | no disponible | imagen 224 x 224 | embedding 4096, L2 | `other` (sin licencia de pesos afirmada) | Hugging Face, ONNX |
 | torchvision alexnet (IMAGENET1K_V1) | CNN (AlexNet) | ~60 M (cifra no declarada en la ficha) | imagen 224 x 224 | 1000 clases | BSD-3-Clause para la libreria; pesos sin licencia separada establecida | PyTorch / TorchVision |
 | ResNet-50 | CNN residual | no disponible en esta ficha | imagen 224 x 224 | 1000 clases o features | no disponible | amplia, multiple formato |
 | DINO / CLIP | Transformer / multimodal | no disponible en esta ficha | imagen (y texto en CLIP) | embedding | no disponible | amplia |
@@ -93,7 +93,7 @@ La comparacion cuantitativa de rendimiento entre estas alternativas no esta disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EIDORA/AlexNet_IN1k
+- Modelo en Hugging Face: https://huggingface.co/EIDORA/AlexNet_IN1k
 - Documentacion de AlexNet en TorchVision: https://pytorch.org/vision/stable/models/generated/torchvision.models.alexnet.html
 - Pesos originales (IMAGENET1K_V1): https://download.pytorch.org/models/alexnet-owt-7be5be79.pth
 - Paper original (NeurIPS 2012): https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html

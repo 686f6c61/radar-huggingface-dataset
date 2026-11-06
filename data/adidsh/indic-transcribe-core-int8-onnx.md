@@ -93,7 +93,7 @@ No se dispone de datos comparativos de rendimiento (WER, CER, latencia) frente a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adidsh/indic-transcribe-core-int8-onnx
+- Modelo en Hugging Face: https://huggingface.co/adidsh/indic-transcribe-core-int8-onnx
 - Modelo upstream (Bodhan AI): https://huggingface.co/bodhan-ai/indic-transcribe-core
 - Arquitectura base (NVIDIA): https://huggingface.co/nvidia/canary-1b-v2
 - Licencia de la arquitectura base (CC-BY-4.0): https://creativecommons.org/licenses/by/4.0/

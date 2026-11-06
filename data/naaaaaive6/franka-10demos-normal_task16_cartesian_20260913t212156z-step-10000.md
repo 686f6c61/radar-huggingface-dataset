@@ -76,7 +76,7 @@ No se dispone de datos verificables de los modelos comparables en la informacion
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| franka-10demos-normal_task16_cartesian (este checkpoint) | 3,62 B | No disponible (chunk de 50 pasos) | No disponible | No disponible | HuggingFace, 0 descargas |
+| franka-10demos-normal_task16_cartesian (este checkpoint) | 3,62 B | No disponible (chunk de 50 pasos) | No disponible | No disponible | Hugging Face, 0 descargas |
 | pi0 / pi0.5 (familia openpi) | No disponible | No disponible | No disponible | No disponible | Referencia por etiqueta, sin datos confirmados |
 | Otros checkpoints de robotica de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -97,7 +97,7 @@ No se dispone de datos verificables de los modelos comparables en la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task16_cartesian_20260913T212156Z-step-10000
+- Modelo en Hugging Face: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task16_cartesian_20260913T212156Z-step-10000
 - Fichero de log citado en la model card: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task16_cartesian_20260913T212156Z-step-10000/blob/main/log.txt
 - Estadisticas de normalizacion citadas: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task16_cartesian_20260913T212156Z-step-10000/blob/main/assets/franka/norm_stats.json
 - Resultados de busqueda web: sin enlaces relevantes; las URLs devueltas corresponden a comercios de pasamanos de aluminio y no guardan relacion con el modelo.

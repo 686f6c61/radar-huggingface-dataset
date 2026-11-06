@@ -68,6 +68,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/encredible/Gaiel-32B-Korean-Tuned-MLX
+- Repositorio Hugging Face: https://huggingface.co/encredible/Gaiel-32B-Korean-Tuned-MLX
 - Dataset de benchmarks (mencionado en la model card): https://huggingface.co/datasets/encredible/gaiel-mlx-benchmarks
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct

@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Pasos | Resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Beidouqixing/minimax-h3-4step-lora-flashgen | LoRA destilado sobre MiniMax-H3 | 4 | 1344x768, 5.2s | apache-2.0 | HuggingFace |
-| joyfox/MiniMax-H3-Turbo | LoRA destilado sobre MiniMax-H3 | 4 | no disponible | no disponible | HuggingFace |
-| MiniMaxAI/MiniMax-H3 (base) | Modelo omni-modal completo | 20-50 (tipico) | hasta 2048x2048, 15s | apache-2.0 | HuggingFace |
+| Beidouqixing/minimax-h3-4step-lora-flashgen | LoRA destilado sobre MiniMax-H3 | 4 | 1344x768, 5.2s | apache-2.0 | Hugging Face |
+| joyfox/MiniMax-H3-Turbo | LoRA destilado sobre MiniMax-H3 | 4 | no disponible | no disponible | Hugging Face |
+| MiniMaxAI/MiniMax-H3 (base) | Modelo omni-modal completo | 20-50 (tipico) | hasta 2048x2048, 15s | apache-2.0 | Hugging Face |
 
 La comparativa muestra que este adaptador compite directamente con `joyfox/MiniMax-H3-Turbo`, que tambien ofrece una LoRA de 4 pasos para el mismo base. La diferencia principal es el metodo de destilacion (VSD vs. el que use joyfox, no documentado) y la orientacion a hardware Ascend NPU. Respecto al modelo base, este LoRA reduce drasticamente los pasos de inferencia, aunque limita la resolucion y duracion maxima a 1344x768 y 5,2 segundos respectivamente.
 
@@ -77,7 +77,7 @@ La comparativa muestra que este adaptador compite directamente con `joyfox/MiniM
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beidouqixing/minimax-h3-4step-lora-flashgen
+- Modelo en Hugging Face: https://huggingface.co/Beidouqixing/minimax-h3-4step-lora-flashgen
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio oficial de MiniMax-H3 en GitHub: https://github.com/MiniMax-AI/MiniMax-H3
 - Guia de despliegue MindIE-SD (incluye fusion del LoRA): https://gitcode.com/Huangzjun/MindIE-SD-h3-docs/blob/dev/examples/minimax-h3/infer.md

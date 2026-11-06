@@ -79,8 +79,8 @@ La información disponible solo incluye métricas del propio checkpoint. Los val
 
 | Modelo | Categoría | Parámetros | Entrada | Licencia | Disponibilidad | OA en OBJ_BG |
 |---|---|---|---|---|---|---|
-| point-mamba-base.scanobjectnn-objbg (este modelo) | SSM sobre puntos serializados | 12,3 M | Nube de puntos (8192 puntos en el ejemplo oficial) | Apache-2.0 | HuggingFace, safetensors, librería torch-pointcloud | 94,32 |
-| torch-pointcloud/point-mamba-base.pretrain | SSM preentrenado (modelo base) | no disponible | Nube de puntos | Apache-2.0 | HuggingFace | no disponible (sin ajuste a OBJ_BG) |
+| point-mamba-base.scanobjectnn-objbg (este modelo) | SSM sobre puntos serializados | 12,3 M | Nube de puntos (8192 puntos en el ejemplo oficial) | Apache-2.0 | Hugging Face, safetensors, librería torch-pointcloud | 94,32 |
+| torch-pointcloud/point-mamba-base.pretrain | SSM preentrenado (modelo base) | no disponible | Nube de puntos | Apache-2.0 | Hugging Face | no disponible (sin ajuste a OBJ_BG) |
 | Point-Mamba original (LMD0311/PointMamba) | SSM sobre puntos serializados | no disponible | Nube de puntos | Apache-2.0 | GitHub | no disponible en la información proporcionada |
 | Point-MAE | Transformer enmascarado para nubes de puntos | no disponible | Nube de puntos | no disponible | Repositorio del autor | no disponible en la información proporcionada |
 | PointNet++ / DGCNN | Redes de nubes de puntos clásicas | no disponible | Nube de puntos | no disponible | Múltiples implementaciones | no disponible en la información proporcionada |
@@ -102,7 +102,7 @@ Como referencia cualitativa, Point-Mamba se presenta en el artículo (NeurIPS 20
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/point-mamba-base.scanobjectnn-objbg.dingkang-liang
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/point-mamba-base.scanobjectnn-objbg.dingkang-liang
 - Modelo base (preentrenado): https://huggingface.co/torch-pointcloud/point-mamba-base.pretrain.dingkang-liang
 - Artículo PointMamba (arXiv:2402.10739): https://arxiv.org/abs/2402.10739
 - Repositorio original de PointMamba (LMD0311/PointMamba): https://github.com/LMD0311/PointMamba

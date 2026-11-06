@@ -88,9 +88,9 @@ Los datos de Whisper small son aproximados y no se han verificado en esta ficha;
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/rahulrachuri/parakeet-tdt-0.6b-v2-coreai
+- Repositorio Hugging Face del modelo: https://huggingface.co/rahulrachuri/parakeet-tdt-0.6b-v2-coreai
 - Repositorio del modelo original (formato HF): https://huggingface.co/rahulrachuri/parakeet-tdt-0.6b-v2
-- Modelo original de NVIDIA en HuggingFace: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
+- Modelo original de NVIDIA en Hugging Face: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
 - Blog del autor con mediciones y detalles del port: https://rachuri.me/blog/parakeet-apple-silicon/
 - Pagina del modelo en NVIDIA NIM: https://build.nvidia.com/nvidia/parakeet-tdt-0_6b-v2
 - Repositorio GitHub de referencia (jasonhoblin): https://github.com/jasonhoblin/nvidia-parakeet-tdt-0.6b-v2

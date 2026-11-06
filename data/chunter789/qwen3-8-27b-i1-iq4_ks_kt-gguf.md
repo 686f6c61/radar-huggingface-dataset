@@ -68,6 +68,6 @@ No se dispone de datos suficientes para una comparativa rigurosa. El modelo base
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cHunter789/Qwen3.8-27B-i1-IQ4_KS_KT-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cHunter789/Qwen3.8-27B-i1-IQ4_KS_KT-GGUF
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen3.6-27B (no verificado, según metadatos)
 - No se han encontrado otros enlaces (papers, blogs, demos) en la información proporcionada.

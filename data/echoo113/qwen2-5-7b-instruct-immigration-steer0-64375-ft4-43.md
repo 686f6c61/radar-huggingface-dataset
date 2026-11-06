@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tune) mediante aprendizaje supervisado (SFT) del modelo base Qwen/Qwen2.5-7B-Instruct, realizado por el usuario Echoo113 y publicado en HuggingFace. El nombre sugiere que ha sido entrenado sobre datos relacionados con inmigración, aunque no se proporciona ninguna información sobre el conjunto de datos, el procedimiento de entrenamiento o los objetivos concretos. El repositorio tiene un tamaño de solo 0,3 GB, lo que indica que probablemente se ha subido una versión cuantizada o parcial de los pesos, aunque el modelo base original tiene 7 600 millones de parámetros.
+Este modelo es un ajuste fino (fine-tune) mediante aprendizaje supervisado (SFT) del modelo base Qwen/Qwen2.5-7B-Instruct, realizado por el usuario Echoo113 y publicado en Hugging Face. El nombre sugiere que ha sido entrenado sobre datos relacionados con inmigración, aunque no se proporciona ninguna información sobre el conjunto de datos, el procedimiento de entrenamiento o los objetivos concretos. El repositorio tiene un tamaño de solo 0,3 GB, lo que indica que probablemente se ha subido una versión cuantizada o parcial de los pesos, aunque el modelo base original tiene 7 600 millones de parámetros.
 
 La relevancia de este modelo es limitada por la falta de documentación y de métricas. Al ser un derivado de Qwen2.5-7B-Instruct, hereda las capacidades generales de razonamiento, generación de código y soporte multilingüe de su base, pero no se puede verificar si el ajuste ha mejorado o modificado el comportamiento en el dominio de inmigración. No hay evidencia de uso en producción ni de resultados de evaluación publicados.
 
@@ -74,7 +74,7 @@ La comparación con el modelo base es la más relevante: el fine-tune no añade 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-immigration-STEER0.64375-ft4.43
+- Repositorio de Hugging Face: https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-immigration-STEER0.64375-ft4.43
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio alternativo (posible duplicado): https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-immigration-STEER0.64375-ft4.43
 - Información sobre Qwen2.5: https://opensourceaimodels.net/models/qwen2-5-7b-instruct

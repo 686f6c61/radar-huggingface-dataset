@@ -2,7 +2,7 @@
 
 ## Resumen
 
-contrastive37 es un repositorio experimental publicado por el usuario anthonybbc en HuggingFace. No es un modelo entrenado ni un checkpoint listo para producción: se trata de una implementación propia de una columna vertebral Swin Transformer en su variante tiny (swin_t) orientada a aprendizaje contrastivo, acompañada de un checkpoint de inicialización válido únicamente para pruebas de humo. El propio autor indica de forma explícita que el repositorio no reclama ninguna puntuación de benchmark y que los pesos no han sido entrenados ni auditados.
+contrastive37 es un repositorio experimental publicado por el usuario anthonybbc en Hugging Face. No es un modelo entrenado ni un checkpoint listo para producción: se trata de una implementación propia de una columna vertebral Swin Transformer en su variante tiny (swin_t) orientada a aprendizaje contrastivo, acompañada de un checkpoint de inicialización válido únicamente para pruebas de humo. El propio autor indica de forma explícita que el repositorio no reclama ninguna puntuación de benchmark y que los pesos no han sido entrenados ni auditados.
 
 El atractivo del repositorio es arquitectónico, no de rendimiento. La configuración registrada combina atención lineal, fusión tensorial, activación GELU y normalización GroupNorm, con receta de optimización LAMB y planificador de tipo step. El objetivo declarado es disponer de un banco de pruebas manejable para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
@@ -73,9 +73,9 @@ No se dispone de datos de rendimiento de contrastive37, por lo que la comparacio
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| contrastive37 (anthonybbc) | 49.600 | no disponible | no disponible (sin benchmark) | BSD-3-Clause | HuggingFace, 10 descargas |
-| Swin Transformer Tiny (Microsoft) | ~28 M | no aplica (vision) | no disponible en esta ficha | MIT | HuggingFace y repositorio oficial |
-| ViT-S/16 | ~22 M | no aplica (vision) | no disponible en esta ficha | Apache-2.0 (segun variante) | HuggingFace y repositorio oficial |
+| contrastive37 (anthonybbc) | 49.600 | no disponible | no disponible (sin benchmark) | BSD-3-Clause | Hugging Face, 10 descargas |
+| Swin Transformer Tiny (Microsoft) | ~28 M | no aplica (vision) | no disponible en esta ficha | MIT | Hugging Face y repositorio oficial |
+| ViT-S/16 | ~22 M | no aplica (vision) | no disponible en esta ficha | Apache-2.0 (segun variante) | Hugging Face y repositorio oficial |
 
 La diferencia de parametros entre contrastive37 y un Swin-T canonico es de mas de dos ordenes de magnitud, lo que refuerza que se trata de una configuracion de laboratorio y no de un backbone equivalente.
 
@@ -95,5 +95,5 @@ La diferencia de parametros entre contrastive37 y un Swin-T canonico es de mas d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anthonybbc/contrastive37
+- Hugging Face: https://huggingface.co/anthonybbc/contrastive37
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados al modelo en la busqueda web proporcionada.

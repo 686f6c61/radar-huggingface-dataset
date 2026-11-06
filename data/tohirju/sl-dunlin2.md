@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tohirju/sl-dunlin2` es un repositorio alojado en HuggingFace que contiene pesos en formato GGUF, con un total de 26.895.998.464 parámetros (aproximadamente 26,9 mil millones). Fue creado por el usuario Tohirju el 3 de septiembre de 2026 y actualizado el mismo día. El repositorio tiene un tamaño de 99,0 GB, lo que sugiere que incluye múltiples archivos de cuantización GGUF. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+El modelo `Tohirju/sl-dunlin2` es un repositorio alojado en Hugging Face que contiene pesos en formato GGUF, con un total de 26.895.998.464 parámetros (aproximadamente 26,9 mil millones). Fue creado por el usuario Tohirju el 3 de septiembre de 2026 y actualizado el mismo día. El repositorio tiene un tamaño de 99,0 GB, lo que sugiere que incluye múltiples archivos de cuantización GGUF. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 A pesar de su tamaño considerable, no se dispone de información pública sobre la arquitectura subyacente, el proceso de entrenamiento, los datos utilizados ni las capacidades específicas del modelo. Los tags indican que es compatible con endpoints, está orientado a conversación y tiene licencia "other", pero no se especifica el tipo de licencia concreta. Tampoco se han publicado resultados de benchmarks ni documentación técnica adicional. En el momento de la consulta, el repositorio no tiene descargas ni likes, lo que sugiere que es un modelo reciente o poco conocido.
 
@@ -62,4 +62,4 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Tohirju/sl-dunlin2
+- Repositorio Hugging Face: https://huggingface.co/Tohirju/sl-dunlin2

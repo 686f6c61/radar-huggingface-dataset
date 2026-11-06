@@ -70,5 +70,5 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/super-inference/super-12B-ste-coding
+- Hugging Face: https://huggingface.co/super-inference/super-12B-ste-coding
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth

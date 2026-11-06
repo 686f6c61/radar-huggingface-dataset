@@ -76,6 +76,6 @@ La comparación es limitada porque no hay métricas publicadas para este checkpo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h006.sft-v2.step_400
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h006.sft-v2.step_400
 - Índice del sweep AgentPTB (referenciado en la model card): `agentic-ptb/INDEX` (no se proporciona URL directa)
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

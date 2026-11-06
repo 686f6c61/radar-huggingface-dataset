@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Quill poetry v6 es un adaptador LoRA de escritura creativa publicado por el usuario GLASSEYE en HuggingFace. No se trata de un modelo completo, sino de un conjunto de pesos PEFT (formato safetensors, 0,1 GB de repositorio) que se aplica sobre el modelo base `mistralai/Mistral-7B-Instruct-v0.3`, un transformer decoder-only denso de aproximadamente 7,25 mil millones de parametros. El adaptador esta especializado en poesia en verso libre de tematica amorosa, con enfasis explicito en imagenes concretas y en respetar la forma metrica solo cuando el usuario la solicita.
+Quill poetry v6 es un adaptador LoRA de escritura creativa publicado por el usuario GLASSEYE en Hugging Face. No se trata de un modelo completo, sino de un conjunto de pesos PEFT (formato safetensors, 0,1 GB de repositorio) que se aplica sobre el modelo base `mistralai/Mistral-7B-Instruct-v0.3`, un transformer decoder-only denso de aproximadamente 7,25 mil millones de parametros. El adaptador esta especializado en poesia en verso libre de tematica amorosa, con enfasis explicito en imagenes concretas y en respetar la forma metrica solo cuando el usuario la solicita.
 
 La model card del autor describe este v6 como un "anti-collapse lyric reset", es decir, un reentrenamiento destinado a corregir el colapso estilistico observado en versiones anteriores (se menciona que la v5 se descarto por estar rota y que el entrenamiento continuo desde la v4). El entrenamiento se realizo localmente en una GPU RTX 5070 durante 400 pasos, con una perdida de entrenamiento final de aproximadamente 0,24.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| GLASSEYE/quill-poetry-v6 | Adaptador LoRA sobre base de ~7,25 B | No disponible en la ficha; el base declara 32.768 tokens | Apache 2.0 | HuggingFace, 0 descargas | No |
-| mistralai/Mistral-7B-Instruct-v0.3 (base) | ~7,25 B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Si, en su model card original |
+| GLASSEYE/quill-poetry-v6 | Adaptador LoRA sobre base de ~7,25 B | No disponible en la ficha; el base declara 32.768 tokens | Apache 2.0 | Hugging Face, 0 descargas | No |
+| mistralai/Mistral-7B-Instruct-v0.3 (base) | ~7,25 B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Si, en su model card original |
 | Otros adaptadores LoRA de poesia comparables | No disponible | No disponible | No disponible | No disponible | No |
 | Modelos instruct de ~7-8 B de proposito general | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No |
 
@@ -92,7 +92,7 @@ La comparacion de calidad creativa frente a otros modelos no puede realizarse co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GLASSEYE/quill-poetry-v6
+- Modelo en Hugging Face: https://huggingface.co/GLASSEYE/quill-poetry-v6
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Documentacion de PEFT: https://huggingface.co/docs/peft/index
 - Paper, blog, repositorio o demo adicionales: no disponibles (la busqueda web no devolvio resultados relacionados con el modelo)

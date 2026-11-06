@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProCreations/boopit-1-chat
+- Modelo en Hugging Face: https://huggingface.co/ProCreations/boopit-1-chat
 - Modelo base: https://huggingface.co/ProCreations/boopit-1
 - Post del autor sobre el cómputo utilizado: https://huggingface.co/posts/ProCreations/855858308074329
 - Dataset de fine-tune: https://huggingface.co/datasets/mookiezi/Discord-Dialogues

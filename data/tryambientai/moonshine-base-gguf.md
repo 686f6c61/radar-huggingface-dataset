@@ -95,7 +95,7 @@ La comparación con Whisper se basa en características conocidas de la familia 
 
 ## Enlaces
 
-- [HuggingFace: tryambientai/moonshine-base-gguf](https://huggingface.co/tryambientai/moonshine-base-gguf)
+- [Hugging Face: tryambientai/moonshine-base-gguf](https://huggingface.co/tryambientai/moonshine-base-gguf)
 - [Modelo base: UsefulSensors/moonshine-base](https://huggingface.co/UsefulSensors/moonshine-base)
 - [Repositorio transcribe.cpp](https://github.com/handy-computer/transcribe.cpp)
 - [Documentación del modelo en transcribe.cpp](https://github.com/handy-computer/transcribe.cpp/blob/main/docs/models/moonshine-base.md)

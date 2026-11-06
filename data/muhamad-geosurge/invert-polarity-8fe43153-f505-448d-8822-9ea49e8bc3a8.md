@@ -63,12 +63,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada en int4 (si se generan pesos GGUF/AWQ/GPTQ): aproximadamente 4-6 GB, con perdida de calidad no medida.
 - GPUs recomendadas: A100 40/80 GB, H100 80 GB, L40S 48 GB o RTX 6000 Ada para bf16 sin restricciones. Para una sola GPU de consumo, RTX 4090 (24 GB) o RTX 3090 (24 GB) son suficientes en bf16 con margen limitado para contexto largo.
 - Compatibilidad con GPU de consumo: si, en GPUs de 24 GB en bf16, y en GPUs de 8-16 GB (RTX 4060 Ti 16 GB, RTX 3080 10 GB, etc.) si se cuantiza a int8 o int4.
-- Opciones de despliegue: transformers (libreria declarada en el repo), vLLM y TGI para servicio con concurrencia, llama.cpp/Ollama si se convierten los pesos a GGUF (no incluidos en el repositorio). El tag `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de HuggingFace.
+- Opciones de despliegue: transformers (libreria declarada en el repo), vLLM y TGI para servicio con concurrencia, llama.cpp/Ollama si se convierten los pesos a GGUF (no incluidos en el repositorio). El tag `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. No se han publicado mediciones para este repositorio ni para el fine-tune.
 
 ## Comparativa con modelos similares
 
-Datos de la familia Gemma 4 tomados del model card del modelo base. La columna de este repositorio refleja los metadatos reales de HuggingFace.
+Datos de la familia Gemma 4 tomados del model card del modelo base. La columna de este repositorio refleja los metadatos reales de Hugging Face.
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
@@ -95,9 +95,9 @@ No se dispone de datos de rendimiento comparado (benchmarks) para este fine-tune
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-8fe43153-f505-448d-8822-9ea49e8bc3a8
+- Repositorio en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-8fe43153-f505-448d-8822-9ea49e8bc3a8
 - Modelo base: https://huggingface.co/google/gemma-4-E4B
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Informe tecnico (arXiv): https://arxiv.org/abs/2607.02770
 - Repositorio GitHub: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/

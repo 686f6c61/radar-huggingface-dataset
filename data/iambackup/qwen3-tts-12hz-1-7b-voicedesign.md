@@ -79,8 +79,8 @@ No se dispone de datos comparativos publicados entre Qwen3-TTS y otros modelos T
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Iambackup/Qwen3-TTS-12Hz-1.7B-VoiceDesign
-- Coleccion oficial de Qwen en HuggingFace: https://huggingface.co/collections/Qwen/qwen3-tts
+- Repositorio Hugging Face: https://huggingface.co/Iambackup/Qwen3-TTS-12Hz-1.7B-VoiceDesign
+- Coleccion oficial de Qwen en Hugging Face: https://huggingface.co/collections/Qwen/qwen3-tts
 - ModelScope (coleccion oficial): https://modelscope.cn/collections/Qwen/Qwen3-TTS
 - Blog de Qwen sobre Qwen3-TTS: https://qwen.ai/blog?id=qwen3tts-0115
 - Paper tecnico (arXiv): https://huggingface.co/papers/2601.15621

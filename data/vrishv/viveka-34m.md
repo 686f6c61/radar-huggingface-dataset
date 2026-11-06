@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparativos con modelos de terceros de tam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vrishv/Viveka-34M
+- Modelo en Hugging Face: https://huggingface.co/vrishv/Viveka-34M
 - Perfil del autor: https://huggingface.co/vrishv
 - Web del autor: https://vrishvardhan.in
 - Shodhana-34M (derivado para corrección de OCR): https://huggingface.co/vrishv/Shodhana-34M

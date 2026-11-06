@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`scaling2_plain_d512_L2_t250000000_s1` es un transformer de pesos dispersos (weight-sparse) publicado por el usuario asher577 en HuggingFace. Se trata de un artefacto de investigación asociado a un estudio de escalado sobre dispersión de pesos, entrenado siguiendo el procedimiento descrito por Gao et al. (2025). No es un modelo de propósito general ni está pensado para uso en producción: es una pieza de un experimento controlado sobre cómo afecta la dispersión estructurada a modelos de tamaño reducido.
+`scaling2_plain_d512_L2_t250000000_s1` es un transformer de pesos dispersos (weight-sparse) publicado por el usuario asher577 en Hugging Face. Se trata de un artefacto de investigación asociado a un estudio de escalado sobre dispersión de pesos, entrenado siguiendo el procedimiento descrito por Gao et al. (2025). No es un modelo de propósito general ni está pensado para uso en producción: es una pieza de un experimento controlado sobre cómo afecta la dispersión estructurada a modelos de tamaño reducido.
 
 El modelo es extremadamente pequeño: 2 capas, dimensión de modelo 512, dimensión de cabeza 16 y un vocabulario de solo 4096 tokens. Su longitud de contexto es de 512 tokens y fue entrenado sobre 250 millones de tokens del dataset SimpleStories, un corpus de historias sintéticas simples. La combinación de tamaño mínimo y vocabulario reducido lo sitúa en la categoría de modelos de juguete para investigación, no de asistentes utilizables.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `scaling2_plain_d512_L2_t250000000_s1` | no disponible (2 capas, d_model 512) | 512 | no disponible | HuggingFace, pesos PyTorch |
-| Modelos de juguete tipo TinyStories (p. ej. variantes de 1-10M) | ~1-10M | 256-1024 | habitualmente MIT/Apache-2.0 | HuggingFace, amplia comunidad |
-| Modelos densos pequenos de referencia (p. ej. GPT-2 small) | 124M | 1024 | MIT | HuggingFace, ecosistema estandar |
+| `scaling2_plain_d512_L2_t250000000_s1` | no disponible (2 capas, d_model 512) | 512 | no disponible | Hugging Face, pesos PyTorch |
+| Modelos de juguete tipo TinyStories (p. ej. variantes de 1-10M) | ~1-10M | 256-1024 | habitualmente MIT/Apache-2.0 | Hugging Face, amplia comunidad |
+| Modelos densos pequenos de referencia (p. ej. GPT-2 small) | 124M | 1024 | MIT | Hugging Face, ecosistema estandar |
 
 La comparacion directa con alternativas concretas no esta disponible en la informacion proporcionada; los modelos citados se incluyen solo como referencias de categoria y sus datos deben verificarse en sus respectivas fichas.
 
@@ -81,7 +81,7 @@ La comparacion directa con alternativas concretas no esta disponible en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asher577/scaling2_plain_d512_L2_t250000000_s1
+- Modelo en Hugging Face: https://huggingface.co/asher577/scaling2_plain_d512_L2_t250000000_s1
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/asher577/scd_scaling/runs/3xlnmp7i
 - Dataset de entrenamiento: https://huggingface.co/datasets/jacobcd52/simplestories-tokenized
 - Tokenizer: https://huggingface.co/SimpleStories/SimpleStories-1.25M

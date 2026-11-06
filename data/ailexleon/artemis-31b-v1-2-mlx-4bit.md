@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Formato / cuantizacion | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ailexleon/Artemis-31B-v1.2-mlx-4Bit | 30,7 mil millones | MLX safetensors, 4 bits | 17,3 GB | no disponible | apache-2.0 | HuggingFace (0 descargas) |
-| TheDrummer/Artemis-31B-v1.2 (base) | 30,7 mil millones (mismo origen) | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace |
+| ailexleon/Artemis-31B-v1.2-mlx-4Bit | 30,7 mil millones | MLX safetensors, 4 bits | 17,3 GB | no disponible | apache-2.0 | Hugging Face (0 descargas) |
+| TheDrummer/Artemis-31B-v1.2 (base) | 30,7 mil millones (mismo origen) | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face |
 | Artemis 31b V1 (GGUF) | 31B | GGUF | 34,6 GB | no disponible | no disponible | local-ai-zone (38.221 descargas, 27 likes) |
 | Artemis 31b V1h (GGUF) | 31B | GGUF | 10,2 GB | no disponible | no disponible | local-ai-zone (3.948 descargas, 20 likes) |
 | TheDrummer/Artemis-31B-v1 (LLM Explorer) | 31B | no disponible | VRAM 62,6 GB | no disponible | no disponible | LLM Explorer |
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes, por lo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ailexleon/Artemis-31B-v1.2-mlx-4Bit
+- Repositorio Hugging Face: https://huggingface.co/ailexleon/Artemis-31B-v1.2-mlx-4Bit
 - Modelo base: https://huggingface.co/TheDrummer/Artemis-31B-v1.2
 - Conversión previa MLX 4-bit (v1): https://huggingface.co/ailexleon/Artemis-31B-v1-mlx-4Bit
 - Artemis 31b V1 GGUF: https://local-ai-zone.github.io/models/artemis-31b-v1.html

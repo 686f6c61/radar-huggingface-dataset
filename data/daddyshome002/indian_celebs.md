@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Indian_Celebs es un repositorio publicado en HuggingFace por el usuario daddyshome002 que, segun la propia model card, no contiene un modelo entrenado por el autor, sino una recopilacion de LoRAs de celebridades indias creadas por terceros y subidas como copia de seguridad. El autor declara explicitamente que no es el creador de los pesos y que su unico proposito es preservarlos.
+Indian_Celebs es un repositorio publicado en Hugging Face por el usuario daddyshome002 que, segun la propia model card, no contiene un modelo entrenado por el autor, sino una recopilacion de LoRAs de celebridades indias creadas por terceros y subidas como copia de seguridad. El autor declara explicitamente que no es el creador de los pesos y que su unico proposito es preservarlos.
 
 Por la licencia declarada (CreativeML OpenRAIL-M) y el tamano del repositorio (2,4 GB), el contenido es compatible con pesos de tipo LoRA para modelos de difusion de generacion de imagenes, aunque la model card no especifica la arquitectura base, la version del modelo subyacente ni el numero de ficheros incluidos. No hay informacion publica sobre el dataset de entrenamiento, el proceso de ajuste ni las metricas de calidad.
 
@@ -70,13 +70,13 @@ No disponible. No hay informacion suficiente sobre el contenido del repositorio 
 - Licencia CreativeML OpenRAIL-M: permite uso comercial con condiciones, pero prohibe explicitamente usos ilegales, la generacion de contenido que pueda danar a menores, la desinformacion medica y el acoso, entre otras restricciones. Es obligatorio revisar el texto completo de la licencia antes de cualquier despliegue.
 - Riesgo de alucinacion y artefactos: sin datos de validacion, no puede descartarse que los adaptadores produzcan deformaciones anatomicas o fallos de identidad al combinarse con otros LoRAs o con prompts fuera de su dominio de entrenamiento.
 - Ausencia de soporte: cero descargas y cero likes en el momento de la consulta, sin issues ni comunidad activa que permita resolver dudas tecnicas.
-- Fecha de publicacion anomala (2026) en los metadatos del repositorio, lo que sugiere posibles inconsistencias en la indexacion de HuggingFace.
+- Fecha de publicacion anomala (2026) en los metadatos del repositorio, lo que sugiere posibles inconsistencias en la indexacion de Hugging Face.
 - No apto para produccion sin una validacion exhaustiva previa: no hay garantias de compatibilidad, calidad ni mantenimiento.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/daddyshome002/Indian_Celebs
+- Repositorio en Hugging Face: https://huggingface.co/daddyshome002/Indian_Celebs
 - Model card del autor: incluida en el propio repositorio, con el unico texto "These are not my LoRAs. These are a collection of LoRAs of Indian Celebs I found and want to keep as a backup. I am not the creator."
-- Texto de la licencia CreativeML OpenRAIL-M: no enlazado en el repositorio. Disponible en el repositorio oficial de Stability AI en HuggingFace.
+- Texto de la licencia CreativeML OpenRAIL-M: no enlazado en el repositorio. Disponible en el repositorio oficial de Stability AI en Hugging Face.
 - Busqueda web: los resultados obtenidos no guardan relacion con el modelo ni con inteligencia artificial. Se descartan por no ser fuentes relevantes ni verificables para esta ficha.
 - No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados a este modelo.

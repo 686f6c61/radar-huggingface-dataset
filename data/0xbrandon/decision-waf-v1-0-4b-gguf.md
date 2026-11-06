@@ -112,7 +112,7 @@ Decision-WAF-V1-0.4B iguala o supera en F1 a modelos de 3B y 4B con una decima p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0xBrandon/Decision-WAF-V1-0.4B-GGUF
+- Hugging Face: https://huggingface.co/0xBrandon/Decision-WAF-V1-0.4B-GGUF
 - Repositorio decision-waf: https://github.com/0x4272616E646F6E/decision-waf
 - Modelo base laya: https://huggingface.co/convaiinnovations/laya
 - Informes oficiales decision-waf-eval: no disponible como enlace directo en la informacion proporcionada

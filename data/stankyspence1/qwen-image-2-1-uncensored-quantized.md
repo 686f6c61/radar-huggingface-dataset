@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Uncensored-Quantized es una redistribución cuantizada y sin censura (uncensored) del modelo de generación de imágenes Qwen/Qwen-Image-2.1, publicada por el usuario Stankyspence1 en HuggingFace. Se trata de un modelo de difusión texto-a-imagen (pipeline `text-to-image`) derivado del modelo base de Alibaba Qwen, del cual hereda los 7.115.124.736 parámetros totales registrados en safetensors. La versión publicada se distribuye en formato GGUF y añade variantes en FP8, NVFP4 y MLX, orientadas a su uso en ComfyUI mediante el nodo comfyui-gguf.
+Qwen-Image-2.1-Uncensored-Quantized es una redistribución cuantizada y sin censura (uncensored) del modelo de generación de imágenes Qwen/Qwen-Image-2.1, publicada por el usuario Stankyspence1 en Hugging Face. Se trata de un modelo de difusión texto-a-imagen (pipeline `text-to-image`) derivado del modelo base de Alibaba Qwen, del cual hereda los 7.115.124.736 parámetros totales registrados en safetensors. La versión publicada se distribuye en formato GGUF y añade variantes en FP8, NVFP4 y MLX, orientadas a su uso en ComfyUI mediante el nodo comfyui-gguf.
 
 El interés de esta ficha radica en que combina tres elementos poco habituales: una cuantización agresiva para reducir requisitos de VRAM, un proceso de "uncensoring" que elimina los filtros de contenido del modelo original, y un empaquetado específico para el ecosistema ComfyUI. El repositorio ocupa 105,2 GB, lo que refleja que contiene múltiples variantes de cuantización del mismo modelo base en lugar de un único archivo de pesos.
 
-Es relevante advertir desde el inicio que el modelo está sujeto a acceso restringido (gated) en HuggingFace, requiere aceptar condiciones y su licencia es `qwen-research`, no una licencia permisiva. Además, el modelo se publicó el 30 de octubre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni likes, por lo que no existe evidencia pública de validación por parte de la comunidad.
+Es relevante advertir desde el inicio que el modelo está sujeto a acceso restringido (gated) en Hugging Face, requiere aceptar condiciones y su licencia es `qwen-research`, no una licencia permisiva. Además, el modelo se publicó el 30 de octubre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni likes, por lo que no existe evidencia pública de validación por parte de la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Es relevante advertir desde el inicio que el modelo está sujeto a acceso restri
 | Licencia | qwen-research (licencia de investigación de Qwen; uso comercial restringido) |
 | Formato de pesos | GGUF, safetensors (base), FP8, NVFP4, MLX |
 | Tamano del repositorio | 105,2 GB |
-| Acceso | Restringido (gated) en HuggingFace |
+| Acceso | Restringido (gated) en Hugging Face |
 | Pipeline | text-to-image |
 | Fecha de publicacion | 2026-10-30 |
 
@@ -68,15 +68,15 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-Uncensored-Quantized (este) | 7,1 mil millones | No disponible | qwen-research | Gated en HuggingFace | Cuantizado, uncensored, orientado a ComfyUI |
-| Qwen/Qwen-Image-2.1 (base) | 7,1 mil millones | No disponible | qwen-research | HuggingFace | Modelo original con filtros de contenido |
+| Qwen-Image-2.1-Uncensored-Quantized (este) | 7,1 mil millones | No disponible | qwen-research | Gated en Hugging Face | Cuantizado, uncensored, orientado a ComfyUI |
+| Qwen/Qwen-Image-2.1 (base) | 7,1 mil millones | No disponible | qwen-research | Hugging Face | Modelo original con filtros de contenido |
 | Alternativas de difusion texto-a-imagen de tamano similar | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificados en la informacion proporcionada |
 
 No se dispone de información suficiente para establecer una comparativa rigurosa con modelos alternativos de la misma categoría; los datos de rendimiento del modelo base tampoco se incluyen en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Licencia `qwen-research`: restringe el uso a fines de investigación y limita la explotación comercial; es imprescindible revisar los términos completos antes de cualquier uso en producción.
 - Proceso de uncensoring no documentado: se desconoce la técnica aplicada, su alcance y si puede degradar la coherencia o la fidelidad del modelo respecto al base.
 - Riesgo de contenido inapropiado: al eliminar los filtros del modelo original, puede generar material sensible, ofensivo o ilegal según la jurisdicción; el usuario asume la responsabilidad legal y ética.
@@ -88,7 +88,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Stankyspence1/Qwen-Image-2.1-Uncensored-Quantized
+- Repositorio Hugging Face: https://huggingface.co/Stankyspence1/Qwen-Image-2.1-Uncensored-Quantized
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - Nodo comfyui-gguf: https://github.com/city96/ComfyUI-GGUF

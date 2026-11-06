@@ -16,7 +16,7 @@ El modelo base, Qwen3.8-27B, es un transformer multimodal de 27 mil millones de 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | 2-bit, 4-bit, 6-bit, 8-bit, bf16 |
 | Idiomas soportados | no disponibles |
-| Licencia | Apache 2.0 (segun etiquetas de HuggingFace) |
+| Licencia | Apache 2.0 (segun etiquetas de Hugging Face) |
 | Formato de pesos | safetensors (MLX) |
 
 ## Arquitectura y entrenamiento
@@ -65,11 +65,11 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 - Ausencia de filtros de seguridad: al ser *abliterated*, el modelo puede generar contenido ofensivo, ilegal, peligroso o eticamente cuestionable. No debe utilizarse en aplicaciones orientadas al publico general sin una moderacion externa rigurosa.
 - Riesgo de alucinacion: como cualquier modelo de lenguaje, puede inventar informacion, especialmente en contextos visuales complejos o ambiguos.
 - Idiomas y contexto: no se especifican los idiomas soportados ni la longitud de contexto, lo que limita su uso en aplicaciones multilingues o de contexto largo sin pruebas previas.
-- Licencia: aunque la etiqueta indica Apache 2.0, el campo oficial de licencia en la ficha de HuggingFace aparece como "no disponible". Se recomienda verificar los terminos del modelo base Qwen3.8-27B antes de un uso comercial.
+- Licencia: aunque la etiqueta indica Apache 2.0, el campo oficial de licencia en la ficha de Hugging Face aparece como "no disponible". Se recomienda verificar los terminos del modelo base Qwen3.8-27B antes de un uso comercial.
 - Dependencia de hardware Apple: no es compatible con GPUs NVIDIA o AMD, lo que restringe su despliegue a ecosistemas Apple.
 - Mantenimiento y soporte: al ser un modelo publicado por un usuario individual, no hay garantias de actualizaciones, correcciones o soporte tecnico.
 
 ## Enlaces
 
-- [HuggingFace - DavidStruzik/Qwen3.8-27B-Abliterated-MLX](https://huggingface.co/DavidStruzik/Qwen3.8-27B-Abliterated-MLX)
+- [Hugging Face - DavidStruzik/Qwen3.8-27B-Abliterated-MLX](https://huggingface.co/DavidStruzik/Qwen3.8-27B-Abliterated-MLX)
 - [Modelo base - Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) (referencia del modelo original)

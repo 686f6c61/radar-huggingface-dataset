@@ -60,7 +60,7 @@ No se han publicado resultados numericos de benchmarks en formato texto en la in
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado modelos comparables publicados en HuggingFace con la misma funcion especifica (clasificacion de conversion en conversaciones de ventas B2B) y el mismo enfoque tecnico (sklearn). Como referencia conceptual, un clasificador basado en un LLM pequeno (por ejemplo, un modelo DistilBERT fine-tuned) ofreceria mayor capacidad de comprension semantica pero con un coste computacional y de despliegue significativamente superior. Un clasificador basado en un LLM grande (GPT-4o, Claude) con prompting few-shot podria lograr mayor precision pero con latencia y coste por inferencia mucho mayores, ademas de requerir llamadas a API externas o hardware especializado.
+No disponible. No se han identificado modelos comparables publicados en Hugging Face con la misma funcion especifica (clasificacion de conversion en conversaciones de ventas B2B) y el mismo enfoque tecnico (sklearn). Como referencia conceptual, un clasificador basado en un LLM pequeno (por ejemplo, un modelo DistilBERT fine-tuned) ofreceria mayor capacidad de comprension semantica pero con un coste computacional y de despliegue significativamente superior. Un clasificador basado en un LLM grande (GPT-4o, Claude) con prompting few-shot podria lograr mayor precision pero con latencia y coste por inferencia mucho mayores, ademas de requerir llamadas a API externas o hardware especializado.
 
 ## Limitaciones y advertencias
 
@@ -75,7 +75,7 @@ No disponible. No se han identificado modelos comparables publicados en HuggingF
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mr-checker/SalesGen
+- Modelo en Hugging Face: https://huggingface.co/mr-checker/SalesGen
 - Coleccion de modelos del autor: https://huggingface.co/collections/mr-checker/models
 - Perfil del autor: https://huggingface.co/mr-checker
-- Nota: los sitios web salesgen.ai y gosalesgen.ai encontrados en la busqueda web corresponden a productos comerciales de automatizacion de ventas no relacionados directamente con este modelo de HuggingFace.
+- Nota: los sitios web salesgen.ai y gosalesgen.ai encontrados en la busqueda web corresponden a productos comerciales de automatizacion de ventas no relacionados directamente con este modelo de Hugging Face.

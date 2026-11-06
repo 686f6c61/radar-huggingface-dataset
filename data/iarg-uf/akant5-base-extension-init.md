@@ -84,7 +84,7 @@ La comparación con google/mt5-base es directa: mismo esqueleto arquitectónico,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IARG-UF/akant5-base-extension-init
+- Hugging Face: https://huggingface.co/IARG-UF/akant5-base-extension-init
 - Checkpoint CPT asociado: https://huggingface.co/IARG-UF/akant5-base-extension
 - Colección AkanT5: https://huggingface.co/collections/IARG-UF/akant5-cpt-checkpoints-and-vocabulary-initializations
 - Modelo base: https://huggingface.co/google/mt5-base

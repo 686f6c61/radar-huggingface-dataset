@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `MrBlackRaben/lumiera-art-z` es un modelo de generación de imágenes de tipo text-to-image, publicado en HuggingFace por el usuario MrBlackRaben. Está integrado en el ecosistema de la librería `diffusers` y utiliza el pipeline `ZImagePipeline`, lo que sugiere que está diseñado para funcionar con el flujo de trabajo estándar de generación de imágenes de HuggingFace. El repositorio contiene pesos en formato `safetensors` con un total de 6.154.908.736 parámetros, lo que lo sitúa en la gama de modelos grandes para generación de imágenes, con un tamaño de repositorio de 32,9 GB.
+El modelo `MrBlackRaben/lumiera-art-z` es un modelo de generación de imágenes de tipo text-to-image, publicado en Hugging Face por el usuario MrBlackRaben. Está integrado en el ecosistema de la librería `diffusers` y utiliza el pipeline `ZImagePipeline`, lo que sugiere que está diseñado para funcionar con el flujo de trabajo estándar de generación de imágenes de Hugging Face. El repositorio contiene pesos en formato `safetensors` con un total de 6.154.908.736 parámetros, lo que lo sitúa en la gama de modelos grandes para generación de imágenes, con un tamaño de repositorio de 32,9 GB.
 
 La información pública disponible es muy limitada: no se especifica la arquitectura interna, los datos de entrenamiento, la licencia ni los idiomas soportados. Aunque el nombre "Lumiera" aparece asociado a un modelo de arte anime en la plataforma PixAI, no hay confirmación oficial de que sea el mismo modelo ni de sus capacidades concretas. Por tanto, esta ficha se basa únicamente en los metadatos del repositorio y en referencias indirectas, marcando como "no disponible" cualquier dato que no esté verificado.
 
@@ -74,7 +74,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MrBlackRaben/lumiera-art-z
-- Perfil del autor en HuggingFace: https://huggingface.co/MrBlackRaben
+- Modelo en Hugging Face: https://huggingface.co/MrBlackRaben/lumiera-art-z
+- Perfil del autor en Hugging Face: https://huggingface.co/MrBlackRaben
 - Referencia a "Lumiera" en PixAI (no confirmada como el mismo modelo): https://pixai.art/en/model/1983217034720808548
 - Página de Civitai (comunidad de arte IA, sin relación directa confirmada): https://civitai.com/

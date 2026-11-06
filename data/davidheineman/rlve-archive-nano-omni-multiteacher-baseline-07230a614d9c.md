@@ -95,12 +95,12 @@ No disponible. La informacion proporcionada no identifica la arquitectura, el ta
 - Riesgo de alucinacion y sesgos: no evaluable, al no existir benchmarks, evaluaciones de seguridad ni documentacion de datos de entrenamiento.
 - Limitaciones de contexto e idioma: desconocidas; no puede asumirse ninguna ventana de contexto concreta ni competencia en castellano.
 - Formato no estandar para inferencia: al distribuirse como `pytorch-checkpoint`, requiere conversion y verificacion antes de cualquier prueba; cargar checkpoints de origen desconocido implica riesgos de seguridad (por ejemplo, deserializacion de pickle), por lo que conviene hacerlo en un entorno aislado.
-- Linaje incompleto en el repositorio: los logs de entrenamiento y los metadatos de linaje se conservan solo en la fuente original, no en HuggingFace.
+- Linaje incompleto en el repositorio: los logs de entrenamiento y los metadatos de linaje se conservan solo en la fuente original, no en Hugging Face.
 - Cero adopcion: 0 descargas y 0 likes en el momento de la consulta, sin senales de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-baseline-07230a614d9c
-- Perfil del autor en HuggingFace: https://huggingface.co/davidheineman
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-baseline-07230a614d9c
+- Perfil del autor en Hugging Face: https://huggingface.co/davidheineman
 - Paper, blog, repositorio de codigo, demo o pagina del proyecto RLVE: no disponible en la informacion proporcionada.
 - Nota sobre la busqueda web: los resultados devueltos no guardaban relacion con el modelo (contenido para adultos y tubos de video) y se han descartado; no se ha podido verificar ninguna fuente externa adicional.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Img2LocJakarta 2.0 es un modelo de geolocalización de imágenes de vista a nivel de calle entrenado específicamente para la ciudad de Yakarta (Indonesia). Lo desarrolla el usuario nadh0708 y se publica en HuggingFace como un fine-tuning del backbone DINOv3 ViT-L/16 de Meta. A diferencia de los modelos de geolocalización que devuelven un único punto, este modelo predice una distribución sobre coordenadas geográficas mediante flow matching condicional: la imagen se codifica con el backbone y una cabeza de velocidad propaga partículas de ruido gaussiano hasta coordenadas lat/lon en WGS-84.
+Img2LocJakarta 2.0 es un modelo de geolocalización de imágenes de vista a nivel de calle entrenado específicamente para la ciudad de Yakarta (Indonesia). Lo desarrolla el usuario nadh0708 y se publica en Hugging Face como un fine-tuning del backbone DINOv3 ViT-L/16 de Meta. A diferencia de los modelos de geolocalización que devuelven un único punto, este modelo predice una distribución sobre coordenadas geográficas mediante flow matching condicional: la imagen se codifica con el backbone y una cabeza de velocidad propaga partículas de ruido gaussiano hasta coordenadas lat/lon en WGS-84.
 
 El modelo resuelve el problema de estimar dónde se tomó una fotografía de calle dentro de Yakarta, devolviendo N coordenadas (por defecto 100, hasta 512 en CLI) que representan la distribución predictiva, junto con métricas de incertidumbre como la dispersión RMS en metros y los radios p50/p90. Es relevante porque combina un backbone de visión de última generación (DINOv3) con un paradigma generativo (flow matching) poco habitual en regresión de coordenadas, y porque publica métricas detalladas sobre un test set grande (137.173 imágenes).
 
@@ -89,7 +89,7 @@ No se dispone en la información proporcionada de modelos comparables de geoloca
 
 | Modelo | Parametros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Img2LocJakarta 2.0 | 306,4 M | imagen 256×256 | error medio 1,05 km; mediano 0,40 km | dinov3-license | HuggingFace |
+| Img2LocJakarta 2.0 | 306,4 M | imagen 256×256 | error medio 1,05 km; mediano 0,40 km | dinov3-license | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -107,7 +107,7 @@ No se dispone en la información proporcionada de modelos comparables de geoloca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nadh0708/Img2LocJakarta2.0
+- Hugging Face: https://huggingface.co/nadh0708/Img2LocJakarta2.0
 - Dataset de entrenamiento: https://huggingface.co/datasets/nadh0708/JKTSV-primary
 - Modelo base: https://huggingface.co/facebook/dinov3-vitl16-pretrain-lvd1689m
 - Repositorio de arquitectura DINOv3: https://github.com/facebookresearch/dinov3

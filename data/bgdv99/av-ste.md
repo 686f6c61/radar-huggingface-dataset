@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bgdv99/av-ste
+- Hugging Face: https://huggingface.co/bgdv99/av-ste
 - Repositorio GitHub: https://github.com/bellagodiva/av-ste
 - Documentación de checkpoints: https://github.com/bellagodiva/av-ste/blob/master/checkpoints/README.md
-- Perfil del autor en HuggingFace: https://huggingface.co/bgdv99
+- Perfil del autor en Hugging Face: https://huggingface.co/bgdv99

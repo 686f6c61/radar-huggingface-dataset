@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch19` es un checkpoint de investigacion derivado de Llama 2 de 7B, publicado por el grupo `unl-reset` en HuggingFace. Se trata de un modelo de lenguaje decoder-only de la familia Llama 2, con 6.738.415.616 parametros (aproximadamente 6,74 mil millones), entrenado sobre el modelo base `locuslab/tofu_ft_llama2-7b`, que a su vez es un ajuste fino de Llama 2 sobre el dataset TOFU (Task of Fictitious Unlearning).
+El modelo `unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch19` es un checkpoint de investigacion derivado de Llama 2 de 7B, publicado por el grupo `unl-reset` en Hugging Face. Se trata de un modelo de lenguaje decoder-only de la familia Llama 2, con 6.738.415.616 parametros (aproximadamente 6,74 mil millones), entrenado sobre el modelo base `locuslab/tofu_ft_llama2-7b`, que a su vez es un ajuste fino de Llama 2 sobre el dataset TOFU (Task of Fictitious Unlearning).
 
 El objetivo del modelo es el *machine unlearning*: eliminar selectivamente el conocimiento de un subconjunto del dataset de entrenamiento (la particion `forget10`, es decir, el 10 % de los autores ficticios de TOFU) manteniendo el rendimiento sobre el resto de datos (particion `retain`). El checkpoint corresponde a la epoca 19 de 20 de un proceso de entrenamiento que combina una perdida de entropia cruzada sobre los datos retenidos con una perdida de tipo IHL (Information-Theoretic/Hessian-based unlearning, segun la nomenclatura del autor) sobre los datos a olvidar, y en el que ademas se reinicializan los embeddings de entrada y la cabeza LM a partir de `NousResearch/Llama-2-7b-chat-hf`.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch19 | 6,74 B | no disponible (base Llama 2: 4096) | Desaprendizaje TOFU (forget10) | llama2 | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_llama2-7b | 6,74 B | 4096 (base Llama 2) | Ajuste fino sobre TOFU (modelo de referencia) | llama2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | 6,74 B | 4096 | Chat generalista alineado | llama2 | HuggingFace |
-| Meta Llama 2 7B | 6,74 B | 4096 | Modelo base generalista | llama2 | HuggingFace |
+| unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch19 | 6,74 B | no disponible (base Llama 2: 4096) | Desaprendizaje TOFU (forget10) | llama2 | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_llama2-7b | 6,74 B | 4096 (base Llama 2) | Ajuste fino sobre TOFU (modelo de referencia) | llama2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | 6,74 B | 4096 | Chat generalista alineado | llama2 | Hugging Face |
+| Meta Llama 2 7B | 6,74 B | 4096 | Modelo base generalista | llama2 | Hugging Face |
 
 La comparativa se limita a modelos de la misma familia porque no se dispone de datos de rendimiento del checkpoint en la informacion proporcionada; las alternativas de desaprendizaje de otros grupos (por ejemplo, variantes NPO o RMU sobre TOFU) no se detallan aqui por falta de datos verificables.
 
@@ -86,12 +86,12 @@ La comparativa se limita a modelos de la misma familia porque no se dispone de d
 - Restricciones de licencia: la licencia Llama 2 impone condiciones de uso (incluida la politica de uso aceptable de Meta) y requiere aceptar los terminos para uso comercial; no es una licencia de codigo abierto permisiva.
 - Reinicializacion de embeddings: al reinicializar los embeddings de entrada y la cabeza LM desde Llama-2-7b-chat, puede haber una discrepancia entre el espacio de embeddings y el resto de pesos del transformer, con posible impacto en la fluidez y coherencia.
 - Sin cuantizaciones publicadas: el repositorio solo contiene safetensors de 13,5 GB; el despliegue en hardware limitado requiere conversion manual.
-- Fecha de creacion futura (2026-11-03) en los metadatos de HuggingFace: conviene verificar la integridad y procedencia del repositorio antes de usarlo.
+- Fecha de creacion futura (2026-11-03) en los metadatos de Hugging Face: conviene verificar la integridad y procedencia del repositorio antes de usarlo.
 - Sin descargas ni likes: no hay evidencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch19
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch19
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de embeddings reinicializados: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Dataset TOFU (referencia): https://huggingface.co/datasets/locuslab/TOFU

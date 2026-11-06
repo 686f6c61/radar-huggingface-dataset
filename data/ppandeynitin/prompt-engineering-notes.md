@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppandeynitin/prompt-engineering-notes` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación y un esbozo de experimento sobre ingeniería de prompts. El autor lo publica en HuggingFace con la etiqueta `research-notes` y un artefacto en formato safetensors que, segun los metadatos reales del repositorio, contiene 24.832 parametros: un orden de magnitud propio de un tensor auxiliar o de prueba, no de una red neuronal utilizable para inferencia.
+`ppandeynitin/prompt-engineering-notes` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación y un esbozo de experimento sobre ingeniería de prompts. El autor lo publica en Hugging Face con la etiqueta `research-notes` y un artefacto en formato safetensors que, segun los metadatos reales del repositorio, contiene 24.832 parametros: un orden de magnitud propio de un tensor auxiliar o de prueba, no de una red neuronal utilizable para inferencia.
 
 El contenido declarado en la model card incluye el alcance de la pregunta de investigación, probables factores de confusion, una propuesta de comparación con baselines emparejados, contexto de evaluación con benchmarks públicos, comprobaciones de reproducibilidad y modos de fallo. El autor indica explícitamente que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales, y que no se reclama ninguna mejora de benchmark, ablación completada, código liberado ni checkpoint entrenado.
 
@@ -49,7 +49,7 @@ No existe, por tanto, innovacion tecnica que reseñar: ni atencion lineal, ni de
 - Docencia en cursos de evaluación de modelos: el repositorio ejemplifica la distincion entre hipotesis y resultado, un error frecuente en trabajos introductorios; se puede usar como caso practico de critica de fuentes.
 - Plantilla de model card para artefactos no-modelo: dado que el repositorio publica notas con licencia MIT y metadatos completos, sirve como ejemplo de como documentar un recurso que no es un checkpoint, evitando que terceros asuman capacidades inexistentes.
 - Preparacion de conjuntos de evaluación: las referencias y datasets propuestos en las notas pueden emplearse como punto de partida para seleccionar benchmarks publicos, siempre verificando cada referencia de forma independiente antes de citarla.
-- Analisis de procedencia en HuggingFace: util para estudiar como se comportan las etiquetas automaticas (`transformer`, `safetensors`) cuando el contenido real es documental, un caso relevante para quien construye filtros o catalogos de modelos.
+- Analisis de procedencia en Hugging Face: util para estudiar como se comportan las etiquetas automaticas (`transformer`, `safetensors`) cuando el contenido real es documental, un caso relevante para quien construye filtros o catalogos de modelos.
 - Trazabilidad de reproducibilidad: el requisito declarado de adjuntar comandos, hardware y registros en crudo es directamente reutilizable como politica interna de un equipo que publique experimentos.
 
 ## Benchmarks y rendimiento
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado en la informacion proporcionada repositorios comparables de notas de investigación sobre prompting publicados en HuggingFace con metadatos verificables. La busqueda web devuelve guias divulgativas (GeeksforGeeks, Infomineo) y un repositorio de GitHub de contenido introductorio, pero ninguno es una ficha de modelo ni comparte la estructura de este artefacto, por lo que una comparacion de parametros, contexto, rendimiento y licencia carece de base.
+No disponible. No se han identificado en la informacion proporcionada repositorios comparables de notas de investigación sobre prompting publicados en Hugging Face con metadatos verificables. La busqueda web devuelve guias divulgativas (GeeksforGeeks, Infomineo) y un repositorio de GitHub de contenido introductorio, pero ninguno es una ficha de modelo ni comparte la estructura de este artefacto, por lo que una comparacion de parametros, contexto, rendimiento y licencia carece de base.
 
 | Alternativa | Tipo | Parametros | Contexto | Licencia | Comparabilidad |
 |---|---|---|---|---|---|
@@ -77,7 +77,7 @@ No disponible. No se han identificado en la informacion proporcionada repositori
 
 ## Limitaciones y advertencias
 
-- No es un modelo. Cualquier integracion que espere un endpoint de inferencia fallara; los metadatos de HuggingFace pueden inducir a error por las etiquetas `transformer` y `safetensors`.
+- No es un modelo. Cualquier integracion que espere un endpoint de inferencia fallara; los metadatos de Hugging Face pueden inducir a error por las etiquetas `transformer` y `safetensors`.
 - La model card es explicita: no hay resultados, no hay ablaciones, no hay codigo liberado y no hay checkpoint entrenado. Tratar el contenido como evidencia empirica constituye un uso incorrecto.
 - El numero de parametros (24.832) es incompatible con un transformer funcional, lo que refuerza que el archivo safetensors es un artefacto residual o de prueba y no un modelo.
 - Las fechas de creacion y actualizacion (2026-10-15) estan separadas por seis segundos y son posteriores a la fecha habitual de consulta; conviene verificar la coherencia temporal de los metadatos antes de citarlos.
@@ -90,7 +90,7 @@ No disponible. No se han identificado en la informacion proporcionada repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ppandeynitin/prompt-engineering-notes
+- Repositorio en Hugging Face: https://huggingface.co/ppandeynitin/prompt-engineering-notes
 - Repositorio de GitHub de contenido tematico similar (autor distinto): https://github.com/Laxmiyadalli/prompt-engineering-notes
 - Guia divulgativa de GeeksforGeeks sobre ingenieria de prompts: https://www.geeksforgeeks.org/artificial-intelligence/prompt-engineering-2/
 - Recopilacion de tecnicas de prompting de Infomineo: https://infomineo.com/artificial-intelligence/prompt-engineering-techniques-examples-best-practices-guide/

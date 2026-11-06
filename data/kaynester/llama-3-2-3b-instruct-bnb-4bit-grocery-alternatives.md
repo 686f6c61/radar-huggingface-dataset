@@ -96,7 +96,7 @@ Los datos de las alternativas no proceden de la informacion proporcionada y debe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kaynester/Llama-3.2-3B-Instruct-bnb-4bit-grocery-alternatives
+- Repositorio en Hugging Face: https://huggingface.co/Kaynester/Llama-3.2-3B-Instruct-bnb-4bit-grocery-alternatives
 - Unsloth (herramienta usada para la conversion a GGUF, citada en la model card): https://github.com/unslothai/unsloth
 - llama.cpp (runtime indicado en los ejemplos de uso): https://github.com/ggml-org/llama.cpp
 - Paper, blog, repositorio o demo especificos de este modelo: no disponibles en la informacion proporcionada

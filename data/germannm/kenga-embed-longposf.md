@@ -106,7 +106,7 @@ Segun el autor, la media estilo leaderboard es 56,2. En la media simple de las 2
 
 | Modelo | Parametros | Contexto | Media MTEB(rus) sobre tareas | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| kenga-embed-longposF | 44,2 M | 512 tokens | 58,3 | MIT | HuggingFace (GermannM/kenga-embed-longposF) |
+| kenga-embed-longposF | 44,2 M | 512 tokens | 58,3 | MIT | Hugging Face (GermannM/kenga-embed-longposF) |
 | USER2-small-34M | 34 M | no disponible | 58,5 | no disponible | submission en el leaderboard de MTEB |
 | rubert-tiny-turbo-29M | 29 M | no disponible | 53,7 | no disponible | submission en el leaderboard de MTEB |
 | BERTA-128M | 128 M | no disponible | 69,4 | no disponible | submission en el leaderboard de MTEB |
@@ -130,6 +130,6 @@ La comparativa relevante es contra los encoders rusos de 30-40M: kenga-embed-lon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GermannM/kenga-embed-longposF
+- Hugging Face: https://huggingface.co/GermannM/kenga-embed-longposF
 - Proyecto Kenga: https://github.com/GermannM/kenga-lang
 - Resultados de referencia del leaderboard de MTEB: https://github.com/embeddings-benchmark/results

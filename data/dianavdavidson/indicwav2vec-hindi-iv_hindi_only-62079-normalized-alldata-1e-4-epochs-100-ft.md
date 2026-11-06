@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `indicwav2vec-hindi-iv_hindi_only-62079-normalized-alldata-1e-4-epochs-100-FT` es un ajuste fino (fine-tuning) del modelo multilingüe de reconocimiento automático del habla (ASR) `ai4bharat/indicwav2vec-hindi`, desarrollado por el usuario de HuggingFace `dianavdavidson`. Está diseñado específicamente para la transcripción de voz en hindi, aprovechando la arquitectura wav2vec 2.0 preentrenada sobre 40 lenguas indias. Este modelo concreto se ha entrenado con un conjunto de datos no especificado, con una tasa de aprendizaje de 1e-4 y 100 épocas, lo que sugiere un proceso de adaptación intensivo a un dominio concreto (posiblemente un corpus de voz hindi normalizado). Con 315,5 millones de parámetros, su tamaño es moderado para tareas de ASR y puede desplegarse en hardware de gama media.
+El modelo `indicwav2vec-hindi-iv_hindi_only-62079-normalized-alldata-1e-4-epochs-100-FT` es un ajuste fino (fine-tuning) del modelo multilingüe de reconocimiento automático del habla (ASR) `ai4bharat/indicwav2vec-hindi`, desarrollado por el usuario de Hugging Face `dianavdavidson`. Está diseñado específicamente para la transcripción de voz en hindi, aprovechando la arquitectura wav2vec 2.0 preentrenada sobre 40 lenguas indias. Este modelo concreto se ha entrenado con un conjunto de datos no especificado, con una tasa de aprendizaje de 1e-4 y 100 épocas, lo que sugiere un proceso de adaptación intensivo a un dominio concreto (posiblemente un corpus de voz hindi normalizado). Con 315,5 millones de parámetros, su tamaño es moderado para tareas de ASR y puede desplegarse en hardware de gama media.
 
 La relevancia de este modelo radica en su capacidad para transcribir audio en hindi, una lengua hablada por más de 600 millones de personas. Aunque el modelo base ya ofrece un rendimiento sólido, este ajuste fino busca mejorar la precisión en un conjunto de datos específico, aunque los resultados finales muestran una degradación (WER de 85,84) tras la época 10, lo que sugiere problemas de sobreajuste o inestabilidad en el entrenamiento. A pesar de ello, el modelo se publica con licencia Apache 2.0, lo que permite su uso comercial sin restricciones.
 
@@ -81,7 +81,7 @@ Nota: los valores de WER para otros modelos no están disponibles en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dianavdavidson/indicwav2vec-hindi-iv_hindi_only-62079-normalized-alldata-1e-4-epochs-100-FT
+- Modelo en Hugging Face: https://huggingface.co/dianavdavidson/indicwav2vec-hindi-iv_hindi_only-62079-normalized-alldata-1e-4-epochs-100-FT
 - Modelo base `ai4bharat/indicwav2vec-hindi`: https://huggingface.co/ai4bharat/indicwav2vec-hindi
 - Repositorio oficial de IndicWav2Vec (AI4Bharat): https://github.com/AI4Bharat/IndicWav2Vec
 - Artículo de referencia de wav2vec 2.0: https://arxiv.org/abs/2006.11477

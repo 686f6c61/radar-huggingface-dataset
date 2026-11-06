@@ -64,7 +64,7 @@ No se dispone de información sobre modelos comparables. El autor tiene otros ch
 
 ## Enlaces
 
-- [HuggingFace - unconst/Affine-5czsc2fc98-r505-sbsv5-offline-dpo-hialpha-hirank-lobeta-extrasteps-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r505-sbsv5-offline-dpo-hialpha-hirank-lobeta-extrasteps-merged)
-- [HuggingFace - unconst/Affine-5czsc2fc98-r497-sbsv5-offline-dpo-hialpha-midrank-lobeta-midctx-extrasteps-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r497-sbsv5-offline-dpo-hialpha-midrank-lobeta-midctx-extrasteps-merged)
-- [HuggingFace - unconst/Affine-5czsc2fc98-r25-lora](https://huggingface.co/unconst/Affine-5czsc2fc98-r25-lora)
+- [Hugging Face - unconst/Affine-5czsc2fc98-r505-sbsv5-offline-dpo-hialpha-hirank-lobeta-extrasteps-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r505-sbsv5-offline-dpo-hialpha-hirank-lobeta-extrasteps-merged)
+- [Hugging Face - unconst/Affine-5czsc2fc98-r497-sbsv5-offline-dpo-hialpha-midrank-lobeta-midctx-extrasteps-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r497-sbsv5-offline-dpo-hialpha-midrank-lobeta-midctx-extrasteps-merged)
+- [Hugging Face - unconst/Affine-5czsc2fc98-r25-lora](https://huggingface.co/unconst/Affine-5czsc2fc98-r25-lora)
 - [FriendliAI - Affine-5czsc2fc98-h60-merged](https://friendli.ai/models/unconst/Affine-5czsc2fc98-h60-merged)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `ertghiu256/Gemma4-e2b-qwen-glm-distill` es un repositorio publicado en HuggingFace por el usuario `ertghiu256` el 3 de octubre de 2026, con licencia Apache 2.0. La informacion disponible en la model card se limita a la declaracion de licencia: no incluye descripcion del modelo, arquitectura, datos de entrenamiento, idiomas soportados ni resultados de evaluacion. El repositorio registra cero descargas y cero likes en el momento de la consulta.
+El modelo identificado como `ertghiu256/Gemma4-e2b-qwen-glm-distill` es un repositorio publicado en Hugging Face por el usuario `ertghiu256` el 3 de octubre de 2026, con licencia Apache 2.0. La informacion disponible en la model card se limita a la declaracion de licencia: no incluye descripcion del modelo, arquitectura, datos de entrenamiento, idiomas soportados ni resultados de evaluacion. El repositorio registra cero descargas y cero likes en el momento de la consulta.
 
 El nombre del repositorio sugiere, sin confirmacion documental, que se trata de un modelo destilado (distill) que podria combinar componentes o teachers de las familias Gemma, Qwen y GLM, con un posible tamano del orden de 2.000 millones de parametros efectivos (el fragmento `e2b`). Esta interpretacion es una inferencia a partir del identificador y no debe tomarse como un dato tecnico verificado, ya que el autor no la respalda en ninguna seccion de la model card.
 
@@ -87,6 +87,6 @@ No es posible establecer una comparativa rigurosa porque se desconocen los param
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ertghiu256/Gemma4-e2b-qwen-glm-distill
+- Hugging Face: https://huggingface.co/ertghiu256/Gemma4-e2b-qwen-glm-distill
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

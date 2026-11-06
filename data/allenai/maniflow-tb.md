@@ -92,7 +92,7 @@ No se dispone en la información proporcionada de datos de benchmarks ni de espe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/allenai/maniflow-tb
+- Modelo en Hugging Face: https://huggingface.co/allenai/maniflow-tb
 - Blog de ToyBlocks: https://allenai.org/blog/toyblocks
 - Código de ToyBlocks: https://github.com/allenai/toyblocks
 - Código de entrenamiento de ManiFlow: https://github.com/allenai/maniflow-tb

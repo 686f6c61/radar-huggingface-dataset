@@ -80,8 +80,8 @@ La comparativa se limita a las distintas versiones del mismo modelo, ya que no s
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/taronaeo/Bonsai-8B-BE-GGUF
-- Modelo original en HuggingFace: https://huggingface.co/prism-ml/Bonsai-8B-gguf
+- Repositorio Hugging Face del modelo: https://huggingface.co/taronaeo/Bonsai-8B-BE-GGUF
+- Modelo original en Hugging Face: https://huggingface.co/prism-ml/Bonsai-8B-gguf
 - Documentación oficial de Bonsai 8B: https://docs.prismml.com/models/bonsai-8b
 - Whitepaper: https://github.com/PrismML-Eng/Bonsai-demo/blob/main/1-bit-bonsai-8b-whitepaper.pdf
 - Repositorio de demostraciones y ejemplos: https://github.com/PrismML-Eng/Bonsai-demo

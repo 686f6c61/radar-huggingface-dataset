@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo carolstermanv4 es una adaptación LoRA (Low-Rank Adaptation) para generación de imágenes, desarrollada por el usuario carolstreman1988 sobre el modelo base krea/Krea-2-Turbo. Se distribuye como un repositorio en HuggingFace con un tamaño de 0,3 GB y utiliza el pipeline de diffusers para text-to-image. El modelo está diseñado para generar imágenes a partir del prompt de activación «carol», aunque no se especifica qué tipo de imágenes produce ni con qué finalidad.
+El modelo carolstermanv4 es una adaptación LoRA (Low-Rank Adaptation) para generación de imágenes, desarrollada por el usuario carolstreman1988 sobre el modelo base krea/Krea-2-Turbo. Se distribuye como un repositorio en Hugging Face con un tamaño de 0,3 GB y utiliza el pipeline de diffusers para text-to-image. El modelo está diseñado para generar imágenes a partir del prompt de activación «carol», aunque no se especifica qué tipo de imágenes produce ni con qué finalidad.
 
 Se trata de un lanzamiento muy reciente (septiembre de 2026) con escasísima documentación: la model card solo incluye la palabra de activación, un enlace de descarga y una galería de imágenes. No se ofrecen especificaciones técnicas del LoRA, datos de entrenamiento, capacidades ni benchmarks. Su relevancia en el ecosistema open source es limitada, dado que no cuenta con descargas ni valoraciones en el momento de su publicación.
 
@@ -17,7 +17,7 @@ Se trata de un lanzamiento muy reciente (septiembre de 2026) con escasísima doc
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | carol (licencia personalizada no estándar) |
-| Formato de pesos | no disponible (se distribuye en repositorio HuggingFace) |
+| Formato de pesos | no disponible (se distribuye en repositorio Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. Al tratarse de un LoRA, el coste adicional de VRAM sobre el modelo base es bajo (el adaptador ocupa 0,3 GB), pero el modelo base Krea-2-Turbo requiere sus propios recursos.
 - GPU recomendadas: no disponible. Depende de los requisitos del modelo base.
 - Compatibilidad con GPU de consumo: no disponible. El LoRA en sí es ligero, pero el modelo base determina la viabilidad en hardware doméstico.
-- Opciones de despliegue: no disponible. No se mencionan integraciones con vLLM, llama.cpp, Ollama, TGI ni otros frameworks. Al ser un modelo de difusión, se espera que se use con la librería diffusers de HuggingFace.
+- Opciones de despliegue: no disponible. No se mencionan integraciones con vLLM, llama.cpp, Ollama, TGI ni otros frameworks. Al ser un modelo de difusión, se espera que se use con la librería diffusers de Hugging Face.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -69,6 +69,6 @@ No disponible. No se dispone de información sobre modelos comparables de la mis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/carolstreman1988/carolstermanv4
-- Modelo base en HuggingFace: https://huggingface.co/krea/Krea-2-Turbo
+- Repositorio en Hugging Face: https://huggingface.co/carolstreman1988/carolstermanv4
+- Modelo base en Hugging Face: https://huggingface.co/krea/Krea-2-Turbo
 - Model card original del autor: https://huggingface.co/carolstreman1988/carolstermanv4/blob/main/README.md

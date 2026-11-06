@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La dife
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/Joestar79/Qwen3.8-27B-OBLITERATED-NVFP4)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/Joestar79/Qwen3.8-27B-OBLITERATED-NVFP4)
 - [Modelo base abliterado OBLITERATUS/Qwen3.8-27B-OBLITERATED](https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED)
 - [Modelo original Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) (referencia)
 - [Versión abliterada de huihui-ai](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated)

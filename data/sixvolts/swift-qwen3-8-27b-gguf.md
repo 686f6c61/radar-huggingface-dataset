@@ -122,7 +122,7 @@ Frente al Q4_K_M de Swift, esta receta consigue menor divergencia KL (0,0092 fre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SixVolts/Swift-Qwen3.8-27B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/SixVolts/Swift-Qwen3.8-27B-GGUF
 - Modelo base del ajuste: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Modelo original de Alibaba: https://huggingface.co/Qwen/Qwen3.8-27B
 - Receta de vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

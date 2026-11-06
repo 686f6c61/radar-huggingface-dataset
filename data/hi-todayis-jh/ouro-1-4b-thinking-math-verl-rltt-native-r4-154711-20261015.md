@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `hi-todayis-jh/ouro-1.4b-thinking-math-verl-rltt-native-r4-154711-20261015` es un ajuste fino por aprendizaje por refuerzo de `ByteDance/Ouro-1.4B-Thinking`, un modelo de lenguaje de 1,4 mil millones de parámetros perteneciente a la familia Ouro de ByteDance, basada en capas recurrentes (looped language model, LoopLM). El autor del ajuste es el usuario de HuggingFace `hi-todayis-jh`, y el resultado se publica como un artefacto de investigación reproducible más que como un modelo listo para producción.
+El modelo `hi-todayis-jh/ouro-1.4b-thinking-math-verl-rltt-native-r4-154711-20261015` es un ajuste fino por aprendizaje por refuerzo de `ByteDance/Ouro-1.4B-Thinking`, un modelo de lenguaje de 1,4 mil millones de parámetros perteneciente a la familia Ouro de ByteDance, basada en capas recurrentes (looped language model, LoopLM). El autor del ajuste es el usuario de Hugging Face `hi-todayis-jh`, y el resultado se publica como un artefacto de investigación reproducible más que como un modelo listo para producción.
 
 El entrenamiento emplea la receta GRPO de la librería verl 0.6.1 mediante una extensión propia (`verl_trainer`), con el algoritmo identificado como `rltt` en modo `native`, sobre el split de entrenamiento del dataset `DigitalLearningGmbH/MATH-lighteval`, es decir, problemas de matemáticas de nivel competición. La ejecución consta de 100 pasos de rollout y se documenta con manifiesto, configuración resuelta, código de lanzamiento, log de entrenamiento y recibos de verificación de cada fichero.
 
-Su relevancia es doble: por un lado, sirve como ejemplo reproducible de un pipeline completo de RL con verl sobre una arquitectura no estándar (LoopLM con política de salida anticipada); por otro, el repositorio publica tanto los shards FSDP de verl como el modelo ya fusionado en formato HuggingFace, cargable directamente con `transformers`. El repositorio tiene 0 descargas y 0 likes, y en el momento de redactar esta ficha su tamaño declarado es de 0,0 GB.
+Su relevancia es doble: por un lado, sirve como ejemplo reproducible de un pipeline completo de RL con verl sobre una arquitectura no estándar (LoopLM con política de salida anticipada); por otro, el repositorio publica tanto los shards FSDP de verl como el modelo ya fusionado en formato Hugging Face, cargable directamente con `transformers`. El repositorio tiene 0 descargas y 0 likes, y en el momento de redactar esta ficha su tamaño declarado es de 0,0 GB.
 
 ## Especificaciones tecnicas
 
@@ -99,7 +99,7 @@ Frente a estos alternativos, la diferencia relevante no es el rendimiento —no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-math-verl-rltt-native-r4-154711-20261015
+- Modelo en Hugging Face: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-math-verl-rltt-native-r4-154711-20261015
 - Modelo base: https://huggingface.co/ByteDance/Ouro-1.4B-Thinking
 - Dataset de entrenamiento: https://huggingface.co/datasets/DigitalLearningGmbH/MATH-lighteval
 - Dataset de rollouts del run: https://huggingface.co/datasets/hi-todayis-jh/ouro-1.4b-thinking-math-verl-rltt-native-r4-154711-20261015-rollouts

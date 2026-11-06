@@ -84,8 +84,8 @@ La comparación directa con otros modelos de 35B no está disponible en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nightscape/Intern-S2-Mobius-4bit-mlx
-- Modelo base en HuggingFace: https://huggingface.co/internlm/Intern-S2-Mobius
+- Modelo en Hugging Face: https://huggingface.co/nightscape/Intern-S2-Mobius-4bit-mlx
+- Modelo base en Hugging Face: https://huggingface.co/internlm/Intern-S2-Mobius
 - Repositorio GitHub del modelo base: https://github.com/InternLM/Intern-S2-Mobius
 - Paper (arXiv): https://arxiv.org/abs/2608.14290v1
 - PDF del paper: https://arxiv.org/pdf/2608.14290

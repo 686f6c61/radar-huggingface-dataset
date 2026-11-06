@@ -70,7 +70,7 @@ No se dispone de información sobre otros LoRA de estilos de manga específicos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sleephashira/bleach-jojo-multistyle-noobai-xl-vpred-lora
+- Repositorio Hugging Face: https://huggingface.co/sleephashira/bleach-jojo-multistyle-noobai-xl-vpred-lora
 - Modelo base NoobAI XL V-Pred: https://huggingface.co/Laxhar/noobai-XL-Vpred-1.0
 - Modelo base NoobAI XL 1.0: https://huggingface.co/Laxhar/noobai-XL-1.0
 - Página oficial de NoobAI XL: https://noobaixl.org/

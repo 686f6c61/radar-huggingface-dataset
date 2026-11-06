@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nadoaai es un repositorio de modelo publicado en HuggingFace por el usuario abdnoor04 bajo licencia Apache 2.0. La informacion disponible en la model card es practicamente inexistente: el unico contenido del README es la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades declaradas por el autor. No se especifica pipeline, idiomas soportados ni tamano de parametros.
+Nadoaai es un repositorio de modelo publicado en Hugging Face por el usuario abdnoor04 bajo licencia Apache 2.0. La informacion disponible en la model card es practicamente inexistente: el unico contenido del README es la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades declaradas por el autor. No se especifica pipeline, idiomas soportados ni tamano de parametros.
 
 El repositorio presenta cero descargas y cero "likes" en el momento de la consulta, y las fechas de creacion y actualizacion registradas son identicas (2026-09-14), lo que apunta a una publicacion sin mantenimiento posterior y con un unico commit. Esta combinacion de factores indica que se trata de un artefacto no validado por la comunidad.
 
@@ -75,7 +75,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea objetivo d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abdnoor04/Nadoaai
+- Hugging Face: https://huggingface.co/abdnoor04/Nadoaai
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

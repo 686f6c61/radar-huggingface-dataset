@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gflb-hf-rce01-858c/gflb-exo-file-rce-4d8e` es un repositorio de HuggingFace publicado por el usuario `gflb-hf-rce01-858c` el 24 de octubre de 2026. La unica informacion tecnica verificable que aporta el autor es la etiqueta `qwen3` y la declaracion de licencia Apache 2.0; la model card completa se reduce a la frase "Controlled laboratory model". No se especifica arquitectura, numero de parametros, longitud de contexto, tokenizador ni composicion del dataset de entrenamiento.
+`gflb-hf-rce01-858c/gflb-exo-file-rce-4d8e` es un repositorio de Hugging Face publicado por el usuario `gflb-hf-rce01-858c` el 24 de octubre de 2026. La unica informacion tecnica verificable que aporta el autor es la etiqueta `qwen3` y la declaracion de licencia Apache 2.0; la model card completa se reduce a la frase "Controlled laboratory model". No se especifica arquitectura, numero de parametros, longitud de contexto, tokenizador ni composicion del dataset de entrenamiento.
 
 El repositorio tiene un tamano declarado de 0.0 GB, lo que indica que no contiene pesos en el momento de la consulta, y acumula 0 descargas y 0 likes. No hay pipeline declarado ni lista de idiomas soportados. En la practica, esto significa que el artefacto no es consumible como modelo: no hay ficheros de pesos que descargar ni configuracion de arquitectura que inspeccionar.
 
@@ -23,7 +23,7 @@ Su relevancia editorial es, por tanto, limitada y de caracter metodologico: sirv
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la model card ni en los metadatos del repositorio. El unico indicio es la etiqueta `qwen3`, que en HuggingFace se usa habitualmente para marcar modelos derivados, ajustados o compatibles con la familia Qwen3 (transformers densos y MoE con atencion completa y modos de razonamiento). Esta etiqueta no constituye evidencia: no hay `config.json` publico, ni ficha de parametros, ni referencia a un modelo base concreto.
+No se ha publicado informacion sobre la arquitectura en la model card ni en los metadatos del repositorio. El unico indicio es la etiqueta `qwen3`, que en Hugging Face se usa habitualmente para marcar modelos derivados, ajustados o compatibles con la familia Qwen3 (transformers densos y MoE con atencion completa y modos de razonamiento). Esta etiqueta no constituye evidencia: no hay `config.json` publico, ni ficha de parametros, ni referencia a un modelo base concreto.
 
 Tampoco hay datos sobre volumen de entrenamiento, composicion del corpus, tecnicas de alineamiento (RLHF, DPO) ni innovaciones tecnicas. La unica descripcion disponible, "Controlled laboratory model", no aporta informacion operativa y es compatible tanto con un modelo de laboratorio sin publicar como con un artefacto de prueba. Cualquier afirmacion sobre su entrenamiento seria especulativa.
 
@@ -45,9 +45,9 @@ Ninguno de los siguientes escenarios puede validarse con la informacion actual; 
 
 - Evaluacion comparativa interna de variantes Qwen3: solo tendria sentido si se confirma la procedencia y se dispone de los pesos; hoy el repositorio esta vacio y no permite ejecutar inferencia.
 - Pruebas de humo de pipelines de carga de modelos: util como caso negativo para verificar que un sistema de CI/CD detecta repositorios sin pesos y aborta el despliegue antes de consumir recursos.
-- Auditoria de seguridad de artefactos de HuggingFace: el nombre y los tags incluyen la cadena `rce`, lo que lo convierte en un candidato razonable para probar escaneos de repositorios sospechosos y politicas de `trust_remote_code=False`.
+- Auditoria de seguridad de artefactos de Hugging Face: el nombre y los tags incluyen la cadena `rce`, lo que lo convierte en un candidato razonable para probar escaneos de repositorios sospechosos y politicas de `trust_remote_code=False`.
 - Validacion de gobernanza de licencias: con licencia Apache 2.0 declarada pero sin titulares ni avisos, sirve para comprobar si un proceso de aprobacion bloquea repositorios con procedencia no verificable.
-- Formacion de equipos: como ejemplo documentado de por que no se debe planificar capacidad de computo a partir de metadatos de HuggingFace sin inspeccionar el contenido del repositorio.
+- Formacion de equipos: como ejemplo documentado de por que no se debe planificar capacidad de computo a partir de metadatos de Hugging Face sin inspeccionar el contenido del repositorio.
 - Seguimiento de repositorios de investigacion: monitorizacion periodica para detectar si el autor publica finalmente pesos, configuracion y resultados.
 
 ## Benchmarks y rendimiento
@@ -87,6 +87,6 @@ No es posible establecer una comparativa tecnica con alternativas porque el mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gflb-hf-rce01-858c/gflb-exo-file-rce-4d8e
+- Hugging Face: https://huggingface.co/gflb-hf-rce01-858c/gflb-exo-file-rce-4d8e
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada.

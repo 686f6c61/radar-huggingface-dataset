@@ -19,7 +19,7 @@ El modelo se distribuye con licencia Apache 2.0, soporta inglés y finés, y est
 | Tipos de cuantizacion | NVFP4 nativo (W4A4, E2M1 con escalado de bloque FP8 E4M3) mediante compressed-tensors; atención, expertos compartidos, routers, visión y MTP en BF16 |
 | Idiomas soportados | Inglés y finés |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (6 shards, 93.891 tensores, 25,60 GB); etiquetado como 8-bit en los metadatos de HuggingFace |
+| Formato de pesos | safetensors (6 shards, 93.891 tensores, 25,60 GB); etiquetado como 8-bit en los metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -108,6 +108,6 @@ No se dispone de datos suficientes para comparar con alternativas externas de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kataguru/Kataguru-Sage-A1.5-v1.0-NVFP4
+- Hugging Face: https://huggingface.co/kataguru/Kataguru-Sage-A1.5-v1.0-NVFP4
 - Modelo base: https://huggingface.co/InternScience/Sage-A1.5
 - No se han encontrado en la información disponible otros enlaces a papers, blogs, repositorios o demos.

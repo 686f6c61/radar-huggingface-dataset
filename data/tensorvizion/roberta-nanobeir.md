@@ -78,5 +78,5 @@ No se dispone de datos de rendimiento comparativo (nDCG, MRR) para estos modelos
 
 ## Enlaces
 
-- [HuggingFace - TensorVizion/roBERTa-nanobeir](https://huggingface.co/TensorVizion/roBERTa-nanobeir)
+- [Hugging Face - TensorVizion/roBERTa-nanobeir](https://huggingface.co/TensorVizion/roBERTa-nanobeir)
 - No se proporcionan otros enlaces (papers, blogs o repos) en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Mimukherjee/matching94-2024` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de MoCo v3 (Momentum Contrast v3) orientada a tareas de *matching*. Lo publica el usuario Mimukherjee bajo licencia Apache 2.0 y se presenta explícitamente como un artefacto para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción.
+`Mimukherjee/matching94-2024` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de MoCo v3 (Momentum Contrast v3) orientada a tareas de *matching*. Lo publica el usuario Mimukherjee bajo licencia Apache 2.0 y se presenta explícitamente como un artefacto para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción.
 
 El repositorio no es un modelo de lenguaje: no hay tokenizador, no hay pipeline definido y no se declaran idiomas soportados. El checkpoint `model.safetensors` es una inicialización válida para pruebas, según la propia model card, y no un modelo entrenado con resultados de benchmark. El recuento de parámetros reportado en safetensors es de 24.832, un tamaño propio de una configuración "small" de juguete.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mimukherjee/matching94-2024 | 24.832 | no aplica | sin benchmarks publicados | Apache 2.0 | HuggingFace, 0 descargas |
+| Mimukherjee/matching94-2024 | 24.832 | no aplica | sin benchmarks publicados | Apache 2.0 | Hugging Face, 0 descargas |
 | MoCo v3 (implementación oficial, facebookresearch) | no disponible en la informacion proporcionada | no aplica | resultados publicados en el paper original | no disponible en la informacion proporcionada | repositorio oficial |
 | Otros releases contrastivos de la misma categoría | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -82,5 +82,5 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mimukherjee/matching94-2024
+- Hugging Face: https://huggingface.co/Mimukherjee/matching94-2024
 - No se han encontrado en la búsqueda web papers, blogs, repositorios o demos adicionales relevantes para este modelo.

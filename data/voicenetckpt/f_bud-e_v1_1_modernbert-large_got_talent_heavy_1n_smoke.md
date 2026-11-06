@@ -78,7 +78,7 @@ No disponible. No se dispone de datos de rendimiento, licencia ni configuracion 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/F_BUD-E_V1_1_ModernBERT-large_got_talent_heavy_1n_smoke
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/F_BUD-E_V1_1_ModernBERT-large_got_talent_heavy_1n_smoke
 - Indice de runs de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Perfil del autor: https://huggingface.co/VoiceNetCkpt
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

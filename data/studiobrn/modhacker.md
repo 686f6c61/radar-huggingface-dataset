@@ -4,7 +4,7 @@
 
 modHacker es un modelo de generación de texto publicado por studiobrn bajo el paraguas de STUDIOBRN / We Are The Art Makers, distribuido como un único fichero GGUF en precisión F16 de aproximadamente 8,67 GB. Se presenta como una release de estilo "abliterated" con comportamiento de baja negativa (uncensored, lower-refusal), orientada a desarrolladores que quieren trabajar con código, depuración, análisis de sistemas, flujos de terminal y agentes de desarrollo sobre hardware propio, sin depender de APIs externas.
 
-El modelo pertenece a la clase de aproximadamente 4B parámetros: la API de HuggingFace reporta 4.326.350.848 parámetros reales a partir de los metadatos de safetensors. El autor no especifica el modelo base sobre el que se ha construido ni detalla el procedimiento de ajuste, por lo que la información sobre arquitectura interna, dataset de entrenamiento y alineación no está disponible en la model card.
+El modelo pertenece a la clase de aproximadamente 4B parámetros: la API de Hugging Face reporta 4.326.350.848 parámetros reales a partir de los metadatos de safetensors. El autor no especifica el modelo base sobre el que se ha construido ni detalla el procedimiento de ajuste, por lo que la información sobre arquitectura interna, dataset de entrenamiento y alineación no está disponible en la model card.
 
 Su relevancia inmediata es doble: por un lado, ofrece una opción de inferencia local de tamaño contenido que cabe en GPUs de consumo; por otro, forma parte de un ecosistema propio (la CLI modAI en GitHub) pensado para orquestar agentes locales con soporte de tool calling. La configuración Ollama incluida fija un contexto de 16K tokens (`num_ctx 16384`), y el modelo se distribuye con licencia Apache 2.0, lo que facilita su uso comercial siempre que se respeten los avisos de atribución del repositorio.
 
@@ -94,8 +94,8 @@ Frente a alternativas generalistas del mismo rango de tamaño (por ejemplo, mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/studiobrn/modHacker
-- Perfil del autor en HuggingFace: https://huggingface.co/studiobrn
+- Modelo en Hugging Face: https://huggingface.co/studiobrn/modHacker
+- Perfil del autor en Hugging Face: https://huggingface.co/studiobrn
 - Ejecución directa con Ollama: `ollama run hf.co/studiobrn/modHacker:F16`
 - Repositorio modAI CLI: https://github.com/WeAreTheArtMakers/modAI
 - Sitio del proyecto: https://WeAreTheArtMakers.com

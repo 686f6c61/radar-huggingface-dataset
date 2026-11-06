@@ -2,7 +2,7 @@
 
 ## Resumen
 
-**Qwen3.8-27B-Uncensored-Cyber-GGUF** es una colección de cuantizaciones GGUF para llama.cpp del modelo **Qwen3.8-27B-Uncensored-Cyber**, una variante des-censurada (abliterated) de Qwen3.8-27B, desarrollada por philbert440 y publicada en HuggingFace bajo el perfil de Aydge. El modelo está optimizado para responder de forma completa y sin rechazos preguntas de ciberofensiva y seguridad ofensiva, manteniendo las capacidades vision-language del modelo base. Se distribuye como GGUF con un proyector de visión separado (`mmproj`) para entrada de imágenes y una cabeza MTP (Multi-Token Prediction) opcional para decodificación especulativa. Es un modelo denso con 26.895.998.464 parámetros, adecuado para uso en local con llama.cpp o plataformas compatibles.
+**Qwen3.8-27B-Uncensored-Cyber-GGUF** es una colección de cuantizaciones GGUF para llama.cpp del modelo **Qwen3.8-27B-Uncensored-Cyber**, una variante des-censurada (abliterated) de Qwen3.8-27B, desarrollada por philbert440 y publicada en Hugging Face bajo el perfil de Aydge. El modelo está optimizado para responder de forma completa y sin rechazos preguntas de ciberofensiva y seguridad ofensiva, manteniendo las capacidades vision-language del modelo base. Se distribuye como GGUF con un proyector de visión separado (`mmproj`) para entrada de imágenes y una cabeza MTP (Multi-Token Prediction) opcional para decodificación especulativa. Es un modelo denso con 26.895.998.464 parámetros, adecuado para uso en local con llama.cpp o plataformas compatibles.
 
 ## Especificaciones tecnicas
 

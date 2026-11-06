@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Viction333/ESC-50_SRF` es un repositorio alojado en HuggingFace por el usuario Viction333 cuya nomenclatura sugiere una relación con ESC-50, el conocido dataset de clasificación de eventos sonoros ambientales (Environmental Sound Classification) compuesto por 2.000 grabaciones de audio de 5 segundos distribuidas en 50 clases. El sufijo "SRF" no está documentado en la model card, por lo que no es posible determinar con certeza si se refiere a un modelo, a un conjunto de pesos derivados, a un artefacto de representación (por ejemplo, features o embeddings) o a una variante de un pipeline de audio.
+`Viction333/ESC-50_SRF` es un repositorio alojado en Hugging Face por el usuario Viction333 cuya nomenclatura sugiere una relación con ESC-50, el conocido dataset de clasificación de eventos sonoros ambientales (Environmental Sound Classification) compuesto por 2.000 grabaciones de audio de 5 segundos distribuidas en 50 clases. El sufijo "SRF" no está documentado en la model card, por lo que no es posible determinar con certeza si se refiere a un modelo, a un conjunto de pesos derivados, a un artefacto de representación (por ejemplo, features o embeddings) o a una variante de un pipeline de audio.
 
-La información pública disponible es extremadamente limitada: la model card únicamente declara la licencia MIT y no incluye descripción del modelo, arquitectura, datos de entrenamiento, métricas ni instrucciones de uso. El repositorio ocupa 0,6 GB, un tamaño compatible con pesos de un modelo pequeño o con un conjunto de features precalculadas, pero no hay datos que permitan confirmarlo. El pipeline no está declarado en los metadatos de HuggingFace y no se especifican idiomas soportados.
+La información pública disponible es extremadamente limitada: la model card únicamente declara la licencia MIT y no incluye descripción del modelo, arquitectura, datos de entrenamiento, métricas ni instrucciones de uso. El repositorio ocupa 0,6 GB, un tamaño compatible con pesos de un modelo pequeño o con un conjunto de features precalculadas, pero no hay datos que permitan confirmarlo. El pipeline no está declarado en los metadatos de Hugging Face y no se especifican idiomas soportados.
 
 Por su relevancia actual, cabe señalar que se trata de un repositorio sin descargas ni interacciones en el momento de la consulta, por lo que debe considerarse un artefacto experimental o de investigación no validado. Cualquier evaluación técnica rigurosa requeriría inspeccionar directamente los ficheros del repositorio, algo que la información proporcionada no permite.
 
@@ -23,7 +23,7 @@ Por su relevancia actual, cabe señalar que se trata de un repositorio sin desca
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. La etiqueta del repositorio (`ESC-50_SRF`) apunta a una posible vinculación con el dataset ESC-50 de clasificación de sonidos ambientales, pero no se especifica si se trata de un modelo de clasificación de audio, de un extractor de características, de un conjunto de embeddings o de otro tipo de artefacto.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. La etiqueta del repositorio (`ESC-50_SRF`) apunta a una posible vinculación con el dataset ESC-50 de clasificación de sonidos ambientales, pero no se especifica si se trata de un modelo de clasificación de audio, de un extractor de características, de un conjunto de embeddings o de otro tipo de artefacto.
 
 Tampoco se dispone de datos sobre el volumen de entrenamiento, la composición del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones técnicas como atención lineal, decodificación especulativa o mecanismos híbridos. Toda esta información debe considerarse no disponible.
 
@@ -42,7 +42,7 @@ Tampoco se dispone de datos sobre el volumen de entrenamiento, la composición d
 - Evaluación experimental de clasificación de sonidos ambientales: si el artefacto resultase ser un modelo de clasificación entrenado sobre ESC-50, podría emplearse para etiquetar grabaciones cortas en las 50 clases del dataset; sin embargo, esta hipótesis no está confirmada por el autor.
 - Reproducción de experimentos académicos: el repositorio podría servir como referencia para replicar resultados de trabajos previos sobre ESC-50, siempre que se inspeccionen previamente los ficheros incluidos.
 - Extracción de características para pipelines de audio: si el contenido fuesen embeddings o features precalculadas, podría integrarse en un sistema de recuperación o clustering de audio, previa verificación del formato.
-- Docencia y formación: útil como ejemplo de artefacto publicado en HuggingFace para ilustrar buenas prácticas de documentación de modelos, dado que la model card es mínima.
+- Docencia y formación: útil como ejemplo de artefacto publicado en Hugging Face para ilustrar buenas prácticas de documentación de modelos, dado que la model card es mínima.
 - Auditoría de licencias: al estar bajo licencia MIT, el contenido podría reutilizarse en proyectos comerciales, siempre que se verifique la procedencia de los datos y pesos subyacentes.
 - Integración en prototipos de investigación: como punto de partida para experimentos internos, asumiendo que el artefacto no ha sido validado externamente y requiere una evaluación propia antes de cualquier uso en producción.
 
@@ -74,6 +74,6 @@ No disponible. No se dispone de información suficiente sobre el modelo (arquite
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Viction333/ESC-50_SRF
+- Repositorio en Hugging Face: https://huggingface.co/Viction333/ESC-50_SRF
 - Dataset ESC-50 (referencia por nomenclatura, no confirmada por el autor): https://github.com/karolpiczak/ESC-50
 - No se han encontrado en la búsqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ear es un modelo de reconocimiento automatico del habla (ASR) en ingles disenado especificamente para inferencia en dispositivo (on-device). Lo publica el autor CDT5058 en HuggingFace bajo licencia Apache 2.0 y su objetivo declarado es priorizar el tamano minimo por encima de la precision bruta: pesos en int8, sin tokenizer ni fichero de vocabulario, frontend mel calculado en el host, decodificador CTC voraz, modos de fallo publicados y benchmarks honestos.
+Ear es un modelo de reconocimiento automatico del habla (ASR) en ingles disenado especificamente para inferencia en dispositivo (on-device). Lo publica el autor CDT5058 en Hugging Face bajo licencia Apache 2.0 y su objetivo declarado es priorizar el tamano minimo por encima de la precision bruta: pesos en int8, sin tokenizer ni fichero de vocabulario, frontend mel calculado en el host, decodificador CTC voraz, modos de fallo publicados y benchmarks honestos.
 
 La arquitectura es un TinyConformer-CTC con 9 bloques, dimension d=256 y 4 cabezas de atencion, con un total de 15,58 millones de parametros. El artefacto principal que se distribuye pesa 15,08 MB en int8 y se ejecuta unicamente con onnxruntime y numpy, sin necesidad de PyTorch en tiempo de inferencia. La cuantizacion a int8 es sin perdida segun el autor: 0,0 puntos porcentuales de regresion en WER respecto a fp32.
 
@@ -104,7 +104,7 @@ No se dispone de datos suficientes para establecer una comparativa numerica fiab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CDT5058/ear-stt
+- Modelo en Hugging Face: https://huggingface.co/CDT5058/ear-stt
 - Dataset de entrenamiento (LibriSpeech ASR, OpenSLR): https://huggingface.co/datasets/openslr/librispeech_asr
 - Repositorio del modelo (fichero model_lib.py y artefactos): https://huggingface.co/CDT5058/ear-stt/tree/main
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios adicionales ni demos asociados al modelo.

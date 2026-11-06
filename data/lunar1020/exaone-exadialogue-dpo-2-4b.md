@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EXAONE-ExaDialogue-DPO-2.4B es un modelo de lenguaje conversacional de 2,4 mil millones de parámetros, desarrollado por lunar1020 como proyecto de práctica personal. Se basa en una versión "Llamafied" de EXAONE-3.5-2.4B-Instruct, es decir, el modelo original de LG AI Research reimplementado con arquitectura Llama sobre la infraestructura de HuggingFace Transformers. La finalidad del modelo es ofrecer un asistente de diálogo especializado en coreano, entrenado con el dataset de role-playing `huggingface-KREW/korean-role-playing` y alineado mediante DPO (Direct Preference Optimization) para mejorar la adecuación de las respuestas a preferencias humanas.
+EXAONE-ExaDialogue-DPO-2.4B es un modelo de lenguaje conversacional de 2,4 mil millones de parámetros, desarrollado por lunar1020 como proyecto de práctica personal. Se basa en una versión "Llamafied" de EXAONE-3.5-2.4B-Instruct, es decir, el modelo original de LG AI Research reimplementado con arquitectura Llama sobre la infraestructura de Hugging Face Transformers. La finalidad del modelo es ofrecer un asistente de diálogo especializado en coreano, entrenado con el dataset de role-playing `huggingface-KREW/korean-role-playing` y alineado mediante DPO (Direct Preference Optimization) para mejorar la adecuación de las respuestas a preferencias humanas.
 
 Este modelo es relevante para quien busque un modelo pequeño y ligero orientado a charla conversacional en coreano, con un enfoque particular en juegos de rol (role-playing). El hecho de ser un fine-tuning con DPO sobre un modelo base ya instruct y ajustado a diálogo lo hace interesante como punto de partida para experimentos de alineación y personalización de asistentes en coreano. La arquitectura es un transformer denso (sin mezcla de expertos), con un tamaño de pesos que lo hace apto para GPUs de consumo. La ventana de contexto no está documentada en la información disponible.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Los pesos en precision fp16 ocupan aproximadamente 4,8 GB (segun el tamano del repositorio), por lo que se recomienda una GPU con al menos 8 GB de VRAM para inferencia sin cuantizar.
 - Con cuantizacion a 4 bits la memoria necesaria seria menor, aunque no se dispone de los tipos de cuantizacion publicados para este modelo.
 - Puede ejecutarse en GPUs de consumo como una NVIDIA RTX 3060 de 12 GB o superior; en servidores son adecuadas las A10G, A100 o similares.
-- Opciones de despliegue: HuggingFace Transformers en Python, y servicios compatibles con `text-generation-inference` y endpoints compatibles, segun las etiquetas del modelo en HuggingFace. Tambien es posible exportarlo a formato GGUF para usar con llama.cpp o Ollama, aunque esa conversion no esta publicada oficialmente.
+- Opciones de despliegue: Hugging Face Transformers en Python, y servicios compatibles con `text-generation-inference` y endpoints compatibles, segun las etiquetas del modelo en Hugging Face. Tambien es posible exportarlo a formato GGUF para usar con llama.cpp o Ollama, aunque esa conversion no esta publicada oficialmente.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La comparacion se limita a los modelos directamente relacionados, ya que no se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lunar1020/EXAONE-ExaDialogue-DPO-2.4B
+- Modelo en Hugging Face: https://huggingface.co/lunar1020/EXAONE-ExaDialogue-DPO-2.4B
 - Modelo base (ExaDialogue): https://huggingface.co/lunar1020/EXAONE-ExaDialogue-2.4B
 - Modelo base original (Llamafied): https://huggingface.co/beomi/EXAONE-3.5-2.4B-Instruct-Llamafied
 - Licencia exaone: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/tree/main/LICENSE

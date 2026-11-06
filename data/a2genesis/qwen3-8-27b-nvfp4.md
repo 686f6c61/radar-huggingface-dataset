@@ -6,7 +6,7 @@ Qwen3.8-27B-NVFP4 es una cuantización de precisión mixta del modelo multimodal
 
 El modelo base pertenece a la familia Qwen3.5 (tag `qwen3_5`), con arquitectura híbrida que incorpora atención lineal (GDN), torre de visión y un cabezal de predicción multi-token (MTP). Soporta una ventana de contexto de hasta 262 144 tokens, tool calling y razonamiento multi-paso, lo que lo hace adecuado para agentes conversacionales, generación de código y tareas de visión-lenguaje. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
-Esta ficha se basa exclusivamente en la información publicada en HuggingFace y en la model card del autor. No se han encontrado benchmarks públicos del modelo cuantizado, por lo que las secciones de rendimiento y comparativa se limitan a datos estructurales y de despliegue.
+Esta ficha se basa exclusivamente en la información publicada en Hugging Face y en la model card del autor. No se han encontrado benchmarks públicos del modelo cuantizado, por lo que las secciones de rendimiento y comparativa se limitan a datos estructurales y de despliegue.
 
 ## Especificaciones tecnicas
 
@@ -80,7 +80,7 @@ No se dispone de benchmarks comparativos entre estas variantes. La principal dif
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/a2genesis/Qwen3.8-27B-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/a2genesis/Qwen3.8-27B-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - NVIDIA TensorRT Model Optimizer: https://github.com/NVIDIA/TensorRT-Model-Optimizer
 - Sitio de A2Genesis: https://a2genesis.de

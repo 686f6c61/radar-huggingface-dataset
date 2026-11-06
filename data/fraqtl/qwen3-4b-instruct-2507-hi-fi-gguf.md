@@ -112,7 +112,7 @@ La cuantizacion de fraQtl supera a las alternativas en fidelidad al modelo origi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fraQtl/Qwen3-4B-Instruct-2507-Hi-Fi-GGUF
+- Repositorio Hugging Face: https://huggingface.co/fraQtl/Qwen3-4B-Instruct-2507-Hi-Fi-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Cuantizacion de referencia (MaziyarPanahi): https://huggingface.co/MaziyarPanahi/Qwen3-4B-Instruct-2507-GGUF
 - Cuantizacion de referencia (unsloth): https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF

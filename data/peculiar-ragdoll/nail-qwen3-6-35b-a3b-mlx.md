@@ -79,7 +79,7 @@ Segun el autor, Nail es 2-5 veces mas rapido que los modelos densos de 27B en ti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-MLX
+- Modelo en Hugging Face: https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-MLX
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Version GGUF: https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF
 - Chat templates mejorados: https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates

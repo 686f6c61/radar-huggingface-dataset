@@ -66,5 +66,5 @@ No disponible: no se han publicado datos de benchmarks ni información suficient
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Makaareeem/gemma2-qlora-adapter
+- Hugging Face: https://huggingface.co/Makaareeem/gemma2-qlora-adapter
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en la información disponible.

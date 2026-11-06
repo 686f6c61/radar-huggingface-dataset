@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparables en la información proporciona
 
 ## Enlaces
 
-- [HuggingFace - LEAP-LAB-KUS/leap-kt-lstm3-2024-04](https://huggingface.co/LEAP-LAB-KUS/leap-kt-lstm3-2024-04)
+- [Hugging Face - LEAP-LAB-KUS/leap-kt-lstm3-2024-04](https://huggingface.co/LEAP-LAB-KUS/leap-kt-lstm3-2024-04)
 - [GitHub - leap-kt-toolkit](https://github.com/LEAP-LAB-KUS/leap-kt-toolkit)
 - [LEAP Lab @ Tsinghua University](https://www.leaplab.ai/)
 - [Publicaciones de LEAP Lab](https://www.leaplab.ai/publications)

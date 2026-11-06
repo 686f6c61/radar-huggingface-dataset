@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tiny-transformer-contrastive-int4 es un prototipo de investigación publicado en HuggingFace por el usuario anilkumarzep. Se trata de un transformer propio de escala "small" orientado a tareas de aprendizaje contrastivo, con arquitectura basada en atención de ventana deslizante, fusión mediante MLP concatenada, activación ReLU y normalización por BatchNorm. El checkpoint de safetensors contiene únicamente 33.088 parámetros, lo que lo sitúa en el rango de los modelos de juguete o de pruebas de humo.
+tiny-transformer-contrastive-int4 es un prototipo de investigación publicado en Hugging Face por el usuario anilkumarzep. Se trata de un transformer propio de escala "small" orientado a tareas de aprendizaje contrastivo, con arquitectura basada en atención de ventana deslizante, fusión mediante MLP concatenada, activación ReLU y normalización por BatchNorm. El checkpoint de safetensors contiene únicamente 33.088 parámetros, lo que lo sitúa en el rango de los modelos de juguete o de pruebas de humo.
 
 El propio autor es explícito en la model card: el archivo `model.safetensors` es un checkpoint de inicialización válido para smoke tests, no un checkpoint entrenado ni evaluado con benchmarks. No se reclama ninguna puntuación de rendimiento y se indica que el repositorio no ha sido auditado en robustez, equidad ni transferencia de dominio. Su relevancia es, por tanto, la de una plantilla reproducible para experimentos de aprendizaje contrastivo con coste computacional mínimo.
 
@@ -74,9 +74,9 @@ No hay benchmarks publicados para este modelo, por lo que la comparación de ren
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anilkumarzep/tiny-transformer-contrastive-int4 | 33.088 | no disponible | no disponible (sin benchmarks) | Apache 2.0 | HuggingFace, 0 descargas |
-| sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M | ~256 tokens | MTEB documentado por el autor (no verificado aquí) | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| BAAI/bge-small-en-v1.5 | ~33 M | ~512 tokens | MTEB documentado por el autor (no verificado aquí) | MIT | HuggingFace, ampliamente desplegado |
+| anilkumarzep/tiny-transformer-contrastive-int4 | 33.088 | no disponible | no disponible (sin benchmarks) | Apache 2.0 | Hugging Face, 0 descargas |
+| sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M | ~256 tokens | MTEB documentado por el autor (no verificado aquí) | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| BAAI/bge-small-en-v1.5 | ~33 M | ~512 tokens | MTEB documentado por el autor (no verificado aquí) | MIT | Hugging Face, ampliamente desplegado |
 
 La diferencia relevante no es de rendimiento sino de estado: los dos modelos de referencia son checkpoints entrenados y evaluados, mientras que este repositorio publica únicamente una inicialización sin entrenar.
 
@@ -95,6 +95,6 @@ La diferencia relevante no es de rendimiento sino de estado: los dos modelos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anilkumarzep/tiny-transformer-contrastive-int4
+- Modelo en Hugging Face: https://huggingface.co/anilkumarzep/tiny-transformer-contrastive-int4
 - Archivos incluidos en el repositorio (sin URL independiente publicada): `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo adicionales: no disponible en la información proporcionada.

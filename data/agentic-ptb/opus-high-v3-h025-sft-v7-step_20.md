@@ -74,9 +74,9 @@ No se dispone de datos de rendimiento para este checkpoint, por lo que no es pos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-9B (base) | 9.4B | no disponible | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B | 8.0B | 128K | Llama 3.1 | HuggingFace |
-| Mistral 7B v0.3 | 7.3B | 32K | Apache 2.0 | HuggingFace |
+| Qwen3.5-9B (base) | 9.4B | no disponible | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B | 8.0B | 128K | Llama 3.1 | Hugging Face |
+| Mistral 7B v0.3 | 7.3B | 32K | Apache 2.0 | Hugging Face |
 
 Este checkpoint no es comparable directamente con estos modelos porque no representa una version mejorada del base, sino un experimento intermedio sin mejoras. Cualquier comparacion seria engañosa.
 

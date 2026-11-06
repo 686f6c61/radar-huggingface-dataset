@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `vegapunkone/emotion-regressor-model-japanese` es un modelo de la familia BERT publicado por el usuario vegapunkone en HuggingFace. Por su nombre y por la etiqueta de arquitectura (`bert`) se trata de un regresor de emociones, es decir, un encoder orientado a producir una salida continua (probablemente una puntuacion de valencia, activacion u otra dimension afectiva) en lugar de una clasificacion discreta en categorias. El repositorio tiene un tamano de 0,4 GB y los pesos estan en formato safetensors, con una licencia Apache 2.0.
+El modelo `vegapunkone/emotion-regressor-model-japanese` es un modelo de la familia BERT publicado por el usuario vegapunkone en Hugging Face. Por su nombre y por la etiqueta de arquitectura (`bert`) se trata de un regresor de emociones, es decir, un encoder orientado a producir una salida continua (probablemente una puntuacion de valencia, activacion u otra dimension afectiva) en lugar de una clasificacion discreta en categorias. El repositorio tiene un tamano de 0,4 GB y los pesos estan en formato safetensors, con una licencia Apache 2.0.
 
-El dato mas concreto disponible es el recuento real de parametros extraido de los ficheros safetensors: 111.213.320 parametros. Esa cifra es coherente con un encoder tipo BERT-base (aproximadamente 110 millones de parametros) acompanado de una cabeza de regresion, lo que situa al modelo en la categoria de modelos ligeros, ejecutables incluso en CPU. El nombre incluye el termino "japanese", lo que sugiere un enfoque sobre texto en japones, aunque el campo de idiomas de la ficha de HuggingFace figura como no disponible.
+El dato mas concreto disponible es el recuento real de parametros extraido de los ficheros safetensors: 111.213.320 parametros. Esa cifra es coherente con un encoder tipo BERT-base (aproximadamente 110 millones de parametros) acompanado de una cabeza de regresion, lo que situa al modelo en la categoria de modelos ligeros, ejecutables incluso en CPU. El nombre incluye el termino "japanese", lo que sugiere un enfoque sobre texto en japones, aunque el campo de idiomas de la ficha de Hugging Face figura como no disponible.
 
 La relevancia de este modelo es limitada por el momento: registra 0 descargas y 0 "likes", y su model card no contiene mas informacion que la declaracion de licencia Apache 2.0. Se trata, por tanto, de un artefacto sin documentacion tecnica publica, cuya evaluacion practica exige inspeccionar los pesos y el tokenizer directamente.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Cuantizacion en enteros de 8 bits: en torno a 0,11-0,13 GB de pesos, mas el coste de activaciones y tokenizer.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Se puede ejecutar en tarjetas de gama de entrada, integradas y en GPUs de datacenter (A100, H100) cuando el objetivo es maximizar el throughput en lotes grandes.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos diez anos, asi como en CPU. La inferencia en CPU es viable para lotes moderados dada la escala del modelo.
-- Opciones de despliegue: al ser un modelo tipo BERT en safetensors, es compatible con HuggingFace Transformers y con servidores de inferencia como TorchServe o un servicio FastAPI propio. La compatibilidad con vLLM, TGI o llama.cpp no esta documentada y depende de si el modelo se convierte a formatos compatibles.
+- Opciones de despliegue: al ser un modelo tipo BERT en safetensors, es compatible con Hugging Face Transformers y con servidores de inferencia como TorchServe o un servicio FastAPI propio. La compatibilidad con vLLM, TGI o llama.cpp no esta documentada y depende de si el modelo se convierte a formatos compatibles.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones. Como referencia orientativa, un encoder de 111 millones de parametros suele procesar cientos o miles de secuencias por segundo en una GPU moderna con lotes grandes, pero esta cifra no ha sido verificada para este modelo concreto.
 
 ## Comparativa con modelos similares
@@ -86,6 +86,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vegapunkone/emotion-regressor-model-japanese
+- Hugging Face: https://huggingface.co/vegapunkone/emotion-regressor-model-japanese
 
 No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la busqueda web realizada. Los resultados devueltos por la busqueda no guardan relacion con el modelo.

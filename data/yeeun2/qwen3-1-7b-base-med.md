@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-1.7B-base-MED es un modelo de lenguaje de 1.720.574.976 parámetros publicado en HuggingFace por el usuario yeeun2. Se trata de un fine-tuning del modelo base Qwen3-1.7B de Alibaba Cloud, como indican las etiquetas `qwen3`, `sft` y `trl` presentes en su ficha. El sufijo "MED" sugiere que el ajuste se ha realizado sobre datos del dominio médico, aunque la model card no proporciona ninguna información concreta sobre el dataset, el procedimiento de entrenamiento ni los objetivos del ajuste.
+Qwen3-1.7B-base-MED es un modelo de lenguaje de 1.720.574.976 parámetros publicado en Hugging Face por el usuario yeeun2. Se trata de un fine-tuning del modelo base Qwen3-1.7B de Alibaba Cloud, como indican las etiquetas `qwen3`, `sft` y `trl` presentes en su ficha. El sufijo "MED" sugiere que el ajuste se ha realizado sobre datos del dominio médico, aunque la model card no proporciona ninguna información concreta sobre el dataset, el procedimiento de entrenamiento ni los objetivos del ajuste.
 
 La relevancia de este modelo reside en que parte de una base sólida: Qwen3-1.7B es un modelo denso de 1.700 millones de parámetros diseñado por el equipo Qwen de Alibaba, con una ventana de contexto de 32.768 tokens y capacidades multilingües. Sin embargo, la ausencia total de documentación sobre el fine-tuning limita gravemente su utilidad práctica para desarrolladores e investigadores, que no pueden evaluar su comportamiento específico ni conocer sus limitaciones.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo reside en que parte de una base sólida: Qwen3-1.7B
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3-1.7B es un transformer causal denso con arquitectura estandar de decoder-only, que incorpora atención con RoPE (rotary position embeddings), normalización RMSNorm y activación SwiGLU. Fue entrenado por Alibaba Cloud sobre un corpus multilingüe extenso, con un enfoque en razonamiento, generación de código y comprensión del lenguaje. El fine-tuning de este modelo concreto se realizó mediante entrenamiento supervisado (SFT), como indican las etiquetas `sft` y `trl` (la librería de transformers reinforcement learning de HuggingFace). No se dispone de información sobre el dataset utilizado, el número de pasos de entrenamiento, los hiperparámetros ni el régimen de precisión (fp16, bf16, etc.). La model card es una plantilla genérica sin rellenar, por lo que todos los detalles del proceso de ajuste permanecen desconocidos.
+El modelo base Qwen3-1.7B es un transformer causal denso con arquitectura estandar de decoder-only, que incorpora atención con RoPE (rotary position embeddings), normalización RMSNorm y activación SwiGLU. Fue entrenado por Alibaba Cloud sobre un corpus multilingüe extenso, con un enfoque en razonamiento, generación de código y comprensión del lenguaje. El fine-tuning de este modelo concreto se realizó mediante entrenamiento supervisado (SFT), como indican las etiquetas `sft` y `trl` (la librería de transformers reinforcement learning de Hugging Face). No se dispone de información sobre el dataset utilizado, el número de pasos de entrenamiento, los hiperparámetros ni el régimen de precisión (fp16, bf16, etc.). La model card es una plantilla genérica sin rellenar, por lo que todos los detalles del proceso de ajuste permanecen desconocidos.
 
 ## Capacidades
 
@@ -54,17 +54,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 3,5 GB en precisión fp16 (1,72 GB de pesos + overhead de activaciones y KV cache). Con cuantización int8, se reduce a unos 2 GB; con int4, alrededor de 1,2 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en fp16. Tarjetas como NVIDIA GTX 1660 Super (6 GB), RTX 3060 (12 GB) o RTX 4090 (24 GB) son suficientes. También es viable en Apple Silicon con 8 GB o más de memoria unificada.
 - Sí cabe en GPUs de consumo: es un modelo pequeño, apto para hardware de gama media e incluso para inferencia en CPU con cuantización.
-- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama, Text Generation Inference (TGI) y transformers nativo de HuggingFace. Al estar en formato safetensors, puede convertirse a GGUF para su uso con llama.cpp.
+- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama, Text Generation Inference (TGI) y transformers nativo de Hugging Face. Al estar en formato safetensors, puede convertirse a GGUF para su uso con llama.cpp.
 - Latencia y throughput estimados: en una RTX 4090, se espera una generación de 50-100 tokens por segundo en fp16; en CPU moderna, 5-15 tokens por segundo con cuantización int4. Estos valores son orientativos y dependen de la implementación y el hardware exacto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-1.7B-base-MED (este) | 1,72B | 32K (heredado) | no disponible | HuggingFace |
-| Qwen3-1.7B-Base (original) | 1,72B | 32K | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B | 1,23B | 128K | Llama 3.2 Community License | HuggingFace |
-| Gemma-2-2B | 2,6B | 8K | Gemma Terms of Use | HuggingFace |
+| Qwen3-1.7B-base-MED (este) | 1,72B | 32K (heredado) | no disponible | Hugging Face |
+| Qwen3-1.7B-Base (original) | 1,72B | 32K | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B | 1,23B | 128K | Llama 3.2 Community License | Hugging Face |
+| Gemma-2-2B | 2,6B | 8K | Gemma Terms of Use | Hugging Face |
 
 La comparativa se limita a parámetros y contexto, ya que no hay datos de rendimiento para el fine-tuning. El modelo base Qwen3-1.7B es claramente superior en documentación y soporte, mientras que este fine-tuning carece de cualquier garantía de calidad. Llama-3.2-1B ofrece un contexto mucho mayor (128K) y una licencia permisiva, mientras que Gemma-2-2B es ligeramente más grande pero con contexto reducido.
 
@@ -79,7 +79,7 @@ La comparativa se limita a parámetros y contexto, ya que no hay datos de rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yeeun2/Qwen3-1.7B-base-MED
+- Modelo en Hugging Face: https://huggingface.co/yeeun2/Qwen3-1.7B-base-MED
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Modelo base Qwen3-1.7B-Base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cxmplex_sn92-gen-g5f6`, publicado por el usuario `ben0925` en HuggingFace, es un modelo de lenguaje de aproximadamente 26.085 millones de parametros (26,08 B) distribuidos en un repositorio de 52,2 GB en formato safetensors. La model card lo describe escuetamente como "REAX SN92 generalist entry" y "decision model for the REAX (SN92) generalist track", lo que sugiere que se trata de un modelo orientado a tareas de decision o clasificacion dentro de una familia o linea denominada REAX SN92. No se proporciona informacion adicional sobre el proceso de entrenamiento, los datos utilizados ni las capacidades concretas.
+El modelo `cxmplex_sn92-gen-g5f6`, publicado por el usuario `ben0925` en Hugging Face, es un modelo de lenguaje de aproximadamente 26.085 millones de parametros (26,08 B) distribuidos en un repositorio de 52,2 GB en formato safetensors. La model card lo describe escuetamente como "REAX SN92 generalist entry" y "decision model for the REAX (SN92) generalist track", lo que sugiere que se trata de un modelo orientado a tareas de decision o clasificacion dentro de una familia o linea denominada REAX SN92. No se proporciona informacion adicional sobre el proceso de entrenamiento, los datos utilizados ni las capacidades concretas.
 
-La etiqueta `qwen3_5` en los metadatos de HuggingFace indica que la arquitectura subyacente esta basada en Qwen 3.5, si bien no se especifica la variante exacta ni si se trata de un fine-tuning, una destilacion o un modelo entrenado desde cero sobre dicha arquitectura. El modelo se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones significativas, aunque la ausencia de documentacion tecnica detallada limita seriamente su evaluacion previa a un despliegue en produccion.
+La etiqueta `qwen3_5` en los metadatos de Hugging Face indica que la arquitectura subyacente esta basada en Qwen 3.5, si bien no se especifica la variante exacta ni si se trata de un fine-tuning, una destilacion o un modelo entrenado desde cero sobre dicha arquitectura. El modelo se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones significativas, aunque la ausencia de documentacion tecnica detallada limita seriamente su evaluacion previa a un despliegue en produccion.
 
 El modelo no registra descargas ni "likes" en el momento de la consulta, y el repositorio fue creado y actualizado el 2 de noviembre de 2026, lo que indica una publicacion muy reciente y sin validacion comunitaria. La informacion disponible es insuficiente para determinar con rigor sus capacidades, su calidad o su idoneidad para casos de uso concretos; esta ficha recoge exclusivamente los datos verificables y marca como "no disponible" todo aquello que la model card no especifica.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| cxmplex_sn92-gen-g5f6 | 26,08 B | no disponible | MIT | safetensors | HuggingFace, sin descargas |
+| cxmplex_sn92-gen-g5f6 | 26,08 B | no disponible | MIT | safetensors | Hugging Face, sin descargas |
 | Qwen 2.5 32B (referencia de la familia) | 32,5 B | 128 K (segun version) | Apache 2.0 / Qwen License | safetensors, GGUF | Ampliamente disponible |
 | Gemma 2 27B | 27 B | 8 K | Gemma Terms | safetensors, GGUF | Ampliamente disponible |
 | Mistral Small 24B | 24 B | 128 K | Apache 2.0 | safetensors, GGUF | Ampliamente disponible |
@@ -87,4 +87,4 @@ La comparativa se ofrece como referencia de categoria por tamano; no se dispone 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ben0925/cxmplex_sn92-gen-g5f6
+- Repositorio en Hugging Face: https://huggingface.co/ben0925/cxmplex_sn92-gen-g5f6

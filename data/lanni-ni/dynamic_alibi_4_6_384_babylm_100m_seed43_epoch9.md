@@ -4,7 +4,7 @@
 
 El modelo `dynamic_alibi_4_6_384_babylm_100m_seed43_epoch9` es un modelo de lenguaje experimental de pequeño tamaño, desarrollado por el usuario `Lanni-ni`. Su nombre sugiere que emplea una variante de atención con sesgo posicional dinámico ALiBi (Adaptive Linear Biases), entrenado sobre el corpus BabyLM, un conjunto de datos diseñado para estudiar el aprendizaje del lenguaje con recursos limitados. El modelo cuenta con aproximadamente 45,7 millones de parámetros, un tamaño reducido pensado para investigación en arquitecturas de atención y eficiencia.
 
-La ficha oficial del modelo es una plantilla autogenerada por HuggingFace sin apenas información técnica: no se especifican arquitectura, datos de entrenamiento, licencia ni idiomas. El repositorio contiene únicamente los pesos en formato `safetensors` y no se han publicado resultados de benchmarks ni documentación adicional. Su relevancia actual es limitada, pero puede resultar de interés para investigadores que estudien mecanismos de positional encoding dinámico en modelos pequeños.
+La ficha oficial del modelo es una plantilla autogenerada por Hugging Face sin apenas información técnica: no se especifican arquitectura, datos de entrenamiento, licencia ni idiomas. El repositorio contiene únicamente los pesos en formato `safetensors` y no se han publicado resultados de benchmarks ni documentación adicional. Su relevancia actual es limitada, pero puede resultar de interés para investigadores que estudien mecanismos de positional encoding dinámico en modelos pequeños.
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 90 MB en fp16 y 180 MB en fp32, calculada a partir de los 45,7 millones de parametros.
 - GPU recomendadas: cualquier GPU moderna es suficiente, incluidas tarjetas de consumo como RTX 3060, RTX 4060 o inferiores.
 - Compatible con despliegue en CPU gracias a su reducido tamano.
-- Opciones de despliegue: compatible con la libreria `transformers` segun la etiqueta de HuggingFace. No se confirma compatibilidad con vLLM, llama.cpp, Ollama ni TGI al no existir pesos en formato GGUF ni documentacion de integracion.
+- Opciones de despliegue: compatible con la libreria `transformers` segun la etiqueta de Hugging Face. No se confirma compatibilidad con vLLM, llama.cpp, Ollama ni TGI al no existir pesos en formato GGUF ni documentacion de integracion.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -60,6 +60,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed43_epoch9
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed43_epoch9
 - Version epoch7: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch7
 - Version epoch9: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch9

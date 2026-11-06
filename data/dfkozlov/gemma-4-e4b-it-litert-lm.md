@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Aceleracion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este export (Gemma 4 E4B-it NPU) | no disponible | 4096 | NPU Hexagon SM8650 | Apache 2.0 (runtime QNN aparte) | HuggingFace, no oficial |
-| litert-community/gemma-4-E4B-it-litert-lm (CPU) | no disponible | no disponible | CPU en Android | Apache 2.0 | HuggingFace, oficial de la comunidad |
-| google/gemma-4-E4B-it (pesos originales) | no disponible | no disponible | Requiere conversión | Apache 2.0 | HuggingFace, oficial de Google |
+| Este export (Gemma 4 E4B-it NPU) | no disponible | 4096 | NPU Hexagon SM8650 | Apache 2.0 (runtime QNN aparte) | Hugging Face, no oficial |
+| litert-community/gemma-4-E4B-it-litert-lm (CPU) | no disponible | no disponible | CPU en Android | Apache 2.0 | Hugging Face, oficial de la comunidad |
+| google/gemma-4-E4B-it (pesos originales) | no disponible | no disponible | Requiere conversión | Apache 2.0 | Hugging Face, oficial de Google |
 
 La comparación cuantitativa disponible se limita al mismo dispositivo: el build NPU reduce el TTFT de 2,0-2,5 s a ~0,3 s y la latencia de peticiones habladas de 3,19 s a 1,24 s frente al build de CPU. No hay datos de benchmarks de calidad que permitan comparar con otros modelos de tamaño similar.
 
@@ -97,7 +97,7 @@ La comparación cuantitativa disponible se limita al mismo dispositivo: el build
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dfkozlov/gemma-4-E4B-it-litert-lm
+- Modelo en Hugging Face: https://huggingface.co/dfkozlov/gemma-4-E4B-it-litert-lm
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Bundle de referencia de litert-community: https://huggingface.co/litert-community/gemma-4-E4B-it-litert-lm
 - LiteRT-LM (repositorio): https://github.com/google-ai-edge/LiteRT-LM

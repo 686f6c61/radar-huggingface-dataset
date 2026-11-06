@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| ss-lab/gemma-3-270m-it-GGUF | 268 M | no disponible | other (Gemma) | GGUF | HuggingFace |
-| google/gemma-3-270m-it | 268 M | no disponible | Gemma | safetensors | HuggingFace |
-| Qwen2.5-0.5B-Instruct | 494 M | 32 768 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace |
-| SmolLM2-360M-Instruct | 362 M | 8 192 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace |
+| ss-lab/gemma-3-270m-it-GGUF | 268 M | no disponible | other (Gemma) | GGUF | Hugging Face |
+| google/gemma-3-270m-it | 268 M | no disponible | Gemma | safetensors | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 494 M | 32 768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| SmolLM2-360M-Instruct | 362 M | 8 192 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face |
 
 La comparación con Qwen2.5-0.5B-Instruct y SmolLM2-360M-Instruct se ofrece como referencia de categoría (modelos ultraligeros instructivos); los datos de contexto y licencia corresponden a esos modelos según información pública general, no a la información proporcionada en esta consulta. No se dispone de datos de benchmarks comparativos para el modelo de esta ficha.
 
@@ -83,5 +83,5 @@ La comparación con Qwen2.5-0.5B-Instruct y SmolLM2-360M-Instruct se ofrece como
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ss-lab/gemma-3-270m-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ss-lab/gemma-3-270m-it-GGUF
 - Modelo base original: https://huggingface.co/google/gemma-3-270m-it

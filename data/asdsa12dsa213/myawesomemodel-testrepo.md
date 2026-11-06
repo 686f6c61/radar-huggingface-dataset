@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado por el usuario ASDSA12DSA213 en HuggingFace bajo licencia MIT. Pese a su nombre ("TestRepo"), el repositorio incluye una model card extensa que describe un supuesto modelo de razonamiento con mejoras en matemáticas, programación, lógica general y llamada a funciones. Sin embargo, la información técnica verificable es mínima: el repositorio ocupa 0.0 GB, no tiene descargas ni interacciones y la etiqueta de arquitectura declarada es `bert`.
+MyAwesomeModel-TestRepo es un repositorio publicado por el usuario ASDSA12DSA213 en Hugging Face bajo licencia MIT. Pese a su nombre ("TestRepo"), el repositorio incluye una model card extensa que describe un supuesto modelo de razonamiento con mejoras en matemáticas, programación, lógica general y llamada a funciones. Sin embargo, la información técnica verificable es mínima: el repositorio ocupa 0.0 GB, no tiene descargas ni interacciones y la etiqueta de arquitectura declarada es `bert`.
 
 Existe además una contradicción relevante entre los metadatos y la model card. Las etiquetas del repositorio indican `bert`, `pytorch`, `transformers` y un pipeline de `feature-extraction`, mientras que el texto del README describe un modelo generativo conversacional con modo de razonamiento, soporte de búsqueda web, subida de ficheros y plantillas de sistema. No se especifican parámetros totales, longitud de contexto, idiomas soportados ni formato de pesos.
 
@@ -110,6 +110,6 @@ No disponible. La model card compara contra entidades genéricas ("Model1", "Mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASDSA12DSA213/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/ASDSA12DSA213/MyAwesomeModel-TestRepo
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante al modelo. Las URLs devueltas corresponden a mapas y guías turísticas de Ximending (Taiwán) y a un mapa de un videojuego, sin relación alguna con el modelo ni con inteligencia artificial.
 - Paper, blog, repositorio de código o demo oficial: no disponible en la información proporcionada. La model card menciona un "repositorio de código" y una "web oficial" con API, pero no incluye sus enlaces.

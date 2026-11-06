@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tohirju/sl-koulan2` es un repositorio alojado en HuggingFace por el autor Tohirju, con un tamaño de aproximadamente 4,5 GB y pesos en formato safetensors. Se trata de un modelo de acceso restringido (gated), lo que implica que es necesario aceptar condiciones adicionales en la plataforma para poder descargarlo o utilizarlo. La licencia está catalogada como "other", lo que significa que los términos de uso no corresponden a una licencia estándar y deben consultarse directamente con el autor o en la página del modelo.
+El modelo `Tohirju/sl-koulan2` es un repositorio alojado en Hugging Face por el autor Tohirju, con un tamaño de aproximadamente 4,5 GB y pesos en formato safetensors. Se trata de un modelo de acceso restringido (gated), lo que implica que es necesario aceptar condiciones adicionales en la plataforma para poder descargarlo o utilizarlo. La licencia está catalogada como "other", lo que significa que los términos de uso no corresponden a una licencia estándar y deben consultarse directamente con el autor o en la página del modelo.
 
 En el momento de la consulta, el modelo no presenta descargas ni valoraciones, y no se dispone de información pública sobre su arquitectura, número de parámetros, contexto de entrenamiento o capacidades específicas. La ficha se limita a reflejar los datos disponibles en el repositorio, indicando explícitamente cuando un dato no está disponible.
 
@@ -45,11 +45,11 @@ No disponible. No se conocen modelos comparables de la misma categoría debido a
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace antes de su descarga, lo que puede limitar su uso directo.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face antes de su descarga, lo que puede limitar su uso directo.
 - Licencia "other": los términos de uso no están claramente definidos; es obligatorio revisar las condiciones específicas antes de cualquier uso comercial o de investigación.
 - Ausencia de documentación: no hay información sobre sesgos, riesgos de alucinación, limitaciones de contexto o idioma, ni advertencias de producción.
 - Riesgo de desconocimiento técnico: al no publicarse arquitectura ni datos de entrenamiento, no se puede evaluar su idoneidad para tareas concretas.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Tohirju/sl-koulan2)
+- [Repositorio en Hugging Face](https://huggingface.co/Tohirju/sl-koulan2)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flint NVFP4 es una conversión cuantizada en formato NVFP4 (punto flotante de 4 bits) del modelo RecursiveSI/flint, publicada por la comunidad nativ-community en HuggingFace. Se trata de una versión optimizada para ejecutarse en hardware Apple Silicon mediante el framework MLX, lo que permite cargar un modelo de aproximadamente 39.800 millones de parámetros en equipos Mac con una huella de memoria considerablemente reducida respecto a los pesos en BF16.
+Flint NVFP4 es una conversión cuantizada en formato NVFP4 (punto flotante de 4 bits) del modelo RecursiveSI/flint, publicada por la comunidad nativ-community en Hugging Face. Se trata de una versión optimizada para ejecutarse en hardware Apple Silicon mediante el framework MLX, lo que permite cargar un modelo de aproximadamente 39.800 millones de parámetros en equipos Mac con una huella de memoria considerablemente reducida respecto a los pesos en BF16.
 
 El modelo base, RecursiveSI/flint, es un modelo de generación de texto conversacional con arquitectura de mezcla de expertos (MoE), con 47 routers MoE, plantilla de chat nativa con modo de razonamiento (thinking) y una ventana combinada de prompt y salida de 262.144 tokens. La conversión conserva byte a byte el tokenizador, la plantilla de chat, la configuración de generación y la licencia Apache-2.0 del modelo original.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento que permitan una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/flint-nvfp4
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/flint-nvfp4
 - Modelo base: https://huggingface.co/RecursiveSI/flint
 - Revisión del modelo base usada en la conversión: https://huggingface.co/RecursiveSI/flint/tree/2a247be0c0aec895ccb0ac7ca92229ec6df37288
 - MLX-VLM (commit usado): https://github.com/Blaizzy/mlx-vlm/commit/6d9ba328abbd6129c7461eda86280aa9fbfd9986

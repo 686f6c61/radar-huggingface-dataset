@@ -36,7 +36,7 @@ Los datos de entrenamiento provienen de ocho datasets: JetBrains/KExercises, gig
 - Capacidades multilingües limitadas a inglés y turco según la model card; el código fuente se genera principalmente en Kotlin/Java.
 - No se documenta soporte explícito de tool calling ni function calling.
 - No se documenta modo de razonamiento extendido (thinking mode), visión ni audio.
-- Compatible con endpoints de HuggingFace (etiqueta `endpoints_compatible`).
+- Compatible con endpoints de Hugging Face (etiqueta `endpoints_compatible`).
 
 ## Casos de uso
 
@@ -84,7 +84,7 @@ La comparativa se basa en datos públicos de las fichas oficiales de cada modelo
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/mradermacher/DroidSenior-7B-i1-GGUF
+- Hugging Face (GGUF): https://huggingface.co/mradermacher/DroidSenior-7B-i1-GGUF
 - Modelo base: https://huggingface.co/celebibasar/DroidSenior-7B
 - Cuantizaciones estáticas: https://huggingface.co/mradermacher/DroidSenior-7B-GGUF
 - Página de descargas del cuantizador: https://hf.tst.eu/model#DroidSenior-7B-i1-GGUF

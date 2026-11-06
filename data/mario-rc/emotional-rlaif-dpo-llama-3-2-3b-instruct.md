@@ -66,11 +66,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Metodo de alineamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| emotional-rlaif-dpo-llama-3.2-3b-instruct (este) | 3B (LoRA sobre base 3B) | 128.000 tokens (base) | DPO con preferencias RLAIF | llama3.2 | HuggingFace, 45 descargas |
-| emotional-rlaif-ppo-llama-3.2-3b-instruct | 3B (LoRA sobre base 3B) | 128.000 tokens (base) | PPO con feedback de IA | llama3.2 | HuggingFace |
-| emotional-rlaif-dpo-llama-3.2-1b-instruct | 1B (LoRA sobre base 1B) | 128.000 tokens (base) | DPO con preferencias RLAIF | llama3.2 | HuggingFace |
-| emotional-rlaif-dpo-gemma-2-2b-it | 2B (LoRA sobre base 2B) | 8.192 tokens (base Gemma 2) | DPO con preferencias RLAIF | Gemma | HuggingFace |
-| emotional-rlaif-dpo-mistral-7b-instruct-v0.3 | 7B (LoRA sobre base 7B) | 32.768 tokens (base Mistral v0.3) | DPO con preferencias RLAIF | Apache 2.0 | HuggingFace |
+| emotional-rlaif-dpo-llama-3.2-3b-instruct (este) | 3B (LoRA sobre base 3B) | 128.000 tokens (base) | DPO con preferencias RLAIF | llama3.2 | Hugging Face, 45 descargas |
+| emotional-rlaif-ppo-llama-3.2-3b-instruct | 3B (LoRA sobre base 3B) | 128.000 tokens (base) | PPO con feedback de IA | llama3.2 | Hugging Face |
+| emotional-rlaif-dpo-llama-3.2-1b-instruct | 1B (LoRA sobre base 1B) | 128.000 tokens (base) | DPO con preferencias RLAIF | llama3.2 | Hugging Face |
+| emotional-rlaif-dpo-gemma-2-2b-it | 2B (LoRA sobre base 2B) | 8.192 tokens (base Gemma 2) | DPO con preferencias RLAIF | Gemma | Hugging Face |
+| emotional-rlaif-dpo-mistral-7b-instruct-v0.3 | 7B (LoRA sobre base 7B) | 32.768 tokens (base Mistral v0.3) | DPO con preferencias RLAIF | Apache 2.0 | Hugging Face |
 
 No hay datos de rendimiento comparativo entre estos adaptadores en la informacion disponible; la comparacion se limita a parametros, contexto, metodo de alineamiento y licencia. Como alternativas de la misma categoria (modelos densos de 2-3B Instruct sin ajuste emocional) cabria citar Llama-3.2-3B-Instruct, Qwen2.5-3B-Instruct y Gemma-2-2B-it, para las que tampoco se aportan cifras comparativas en esta ficha.
 
@@ -89,7 +89,7 @@ No hay datos de rendimiento comparativo entre estos adaptadores en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mario-rc/emotional-rlaif-dpo-llama-3.2-3b-instruct
+- Modelo en Hugging Face: https://huggingface.co/mario-rc/emotional-rlaif-dpo-llama-3.2-3b-instruct
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/mario-rc/aif-emotional-generation
 - Repositorio del proyecto: https://github.com/Mario-RC/sml-emotional-rlaif

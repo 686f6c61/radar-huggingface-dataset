@@ -113,7 +113,7 @@ La diferencia principal frente al repositorio hermano es de tamano: 52,45 GiB fr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cudabenchmarktest/Qwen3.8-27B-E03-Obliterated-Omni-Audio-Bridge-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/cudabenchmarktest/Qwen3.8-27B-E03-Obliterated-Omni-Audio-Bridge-GGUF
 - Repositorio hermano (router completo): https://huggingface.co/cudabenchmarktest/Qwen3.8-27B-E03-Obliterated-Omni-GGUF
 - Runtime de adaptadores: https://github.com/robit-man/qwen-omni-adapters
 - Modelo base del tronco de lenguaje: https://huggingface.co/manitcor/Qwen3.8-27B-Obliterated-E03
@@ -122,4 +122,4 @@ La diferencia principal frente al repositorio hermano es de tamano: 52,45 GiB fr
 - Repositorio de la familia Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Receta de despliegue en vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - Ficha indexada de terceros: https://essamamdani.com/ai-models/hf-cudabenchmarktest-qwen3-8-27b-e03-obliterated-omni-gguf
-- Manifiesto de release con umbrales y digests: `release-manifest.json` dentro del repositorio de HuggingFace
+- Manifiesto de release con umbrales y digests: `release-manifest.json` dentro del repositorio de Hugging Face

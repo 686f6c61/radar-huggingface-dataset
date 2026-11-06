@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Ashley-h3-v1 es un modelo publicado en HuggingFace por el usuario drift72032 bajo el identificador `drift72032/ashley-h3-v1`. Se trata de un repositorio con un tamano de 4,5 GB y un volumen de adopcion muy bajo: 16 descargas y 0 "likes" en el momento de la consulta, con fecha de creacion y ultima actualizacion el 17 de septiembre de 2026. No se ha publicado informacion sobre el pipeline, la licencia, los idiomas soportados ni las capacidades del modelo.
+Ashley-h3-v1 es un modelo publicado en Hugging Face por el usuario drift72032 bajo el identificador `drift72032/ashley-h3-v1`. Se trata de un repositorio con un tamano de 4,5 GB y un volumen de adopcion muy bajo: 16 descargas y 0 "likes" en el momento de la consulta, con fecha de creacion y ultima actualizacion el 17 de septiembre de 2026. No se ha publicado informacion sobre el pipeline, la licencia, los idiomas soportados ni las capacidades del modelo.
 
-La unica etiqueta asociada al repositorio es `region:us`, un metadato generico de HuggingFace que indica la region de almacenamiento y no aporta informacion tecnica sobre el modelo. No hay model card, paper, blog ni documentacion asociada en los resultados de busqueda disponibles, que han devuelto unicamente paginas genericas sin relacion con el modelo (Reddit y articulos de soporte de Gmail).
+La unica etiqueta asociada al repositorio es `region:us`, un metadato generico de Hugging Face que indica la region de almacenamiento y no aporta informacion tecnica sobre el modelo. No hay model card, paper, blog ni documentacion asociada en los resultados de busqueda disponibles, que han devuelto unicamente paginas genericas sin relacion con el modelo (Reddit y articulos de soporte de Gmail).
 
 Por todo ello, esta ficha se limita a recoger los pocos datos verificables del repositorio y a marcar explicitamente como "no disponible" cualquier aspecto tecnico que no pueda confirmarse. Cualquier afirmacion sobre arquitectura, entrenamiento o rendimiento seria especulativa y no se incluye. Se recomienda tratar este modelo con cautela en entornos de produccion hasta que el autor publique documentacion adicional.
 
@@ -69,6 +69,6 @@ No disponible. No se ha identificado la categoria del modelo (tamano, tarea, mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/drift72032/ashley-h3-v1
+- Hugging Face: https://huggingface.co/drift72032/ashley-h3-v1
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo: paper, blog, repositorio de codigo, demo ni discusion en foros. Los resultados devueltos corresponden a paginas genericas sin relacion con `ashley-h3-v1`.

@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bklassen3434/smolvla_pick_pen_v2_frozen
+- Modelo en Hugging Face: https://huggingface.co/bklassen3434/smolvla_pick_pen_v2_frozen
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/bklassen3434/pick_pen_v2_20260920_124400
 - Variante con learning rate 1e-4: https://huggingface.co/bklassen3434/smolvla_pick_pen_v2_lr1e4

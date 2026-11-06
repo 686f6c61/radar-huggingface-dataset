@@ -99,7 +99,7 @@ Frente a otros modelos abliterated del ecosistema no se dispone de datos de para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pqhaz/MiMo-V2.6-Pro-MOPD-heretic
+- Modelo en Hugging Face: https://huggingface.co/pqhaz/MiMo-V2.6-Pro-MOPD-heretic
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-MOPD
 - Organizacion Xiaomi MiMo: https://huggingface.co/XiaomiMiMo
 - Heretic (metodo de la primera etapa): https://github.com/p-e-w/heretic

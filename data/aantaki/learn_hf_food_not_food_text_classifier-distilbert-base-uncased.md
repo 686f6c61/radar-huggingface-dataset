@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aantaki/learn_hf_food_not_food_text_classifier-distilbert-base-uncased` es un clasificador de texto binario afinado por el usuario de HuggingFace aantaki a partir de `distilbert/distilbert-base-uncased`. Su tarea es distinguir entre texto que habla de comida y texto que no, un caso de uso típico de filtrado y etiquetado dentro de un corpus gastronómico. El repositorio tiene 0 descargas y 0 "likes" en el momento de redactar esta ficha, y la model card fue generada automáticamente por el `Trainer` de Transformers, con secciones de descripción, usos previstos y datos de entrenamiento sin rellenar.
+`aantaki/learn_hf_food_not_food_text_classifier-distilbert-base-uncased` es un clasificador de texto binario afinado por el usuario de Hugging Face aantaki a partir de `distilbert/distilbert-base-uncased`. Su tarea es distinguir entre texto que habla de comida y texto que no, un caso de uso típico de filtrado y etiquetado dentro de un corpus gastronómico. El repositorio tiene 0 descargas y 0 "likes" en el momento de redactar esta ficha, y la model card fue generada automáticamente por el `Trainer` de Transformers, con secciones de descripción, usos previstos y datos de entrenamiento sin rellenar.
 
 Técnicamente es un encoder transformer de tipo distilBERT con 66.955.010 parámetros totales (pesos safetensors), lo que lo sitúa por debajo de los 70 millones de parámetros: es un modelo de tamaño reducido, apto para inferencia en CPU y para despliegues de muy baja latencia. El repositorio ocupa 0,3 GB y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
@@ -43,7 +43,7 @@ No se documenta la composición del dataset, el número de tokens de entrenamien
 - Filtrado y etiquetado de grandes volúmenes de texto a bajo coste computacional, gracias a sus 66,96 millones de parámetros.
 - Inferencia en CPU: el tamaño del modelo permite ejecutarlo sin GPU para lotes moderados.
 - Compatibilidad con la librería `transformers` mediante `pipeline("text-classification")`.
-- Compatibilidad declarada con Text Embeddings Inference (tag `text-embeddings-inference`) y con los endpoints gestionados de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad declarada con Text Embeddings Inference (tag `text-embeddings-inference`) y con los endpoints gestionados de Hugging Face (tag `endpoints_compatible`).
 - Generación de texto: no disponible.
 - Razonamiento, matemáticas y código: no disponible.
 - Tool calling / function calling: no disponible.
@@ -88,7 +88,7 @@ Resultado final declarado en la model card: loss 0,0005 y accuracy 1,0 sobre el 
 - Cuantización a int8: aproximadamente 67 MB de pesos. No hay pesos GGUF ni cuantizaciones publicadas en el repositorio, por lo que habría que generarlas localmente.
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en GPUs integradas con suficiente memoria compartida.
 - También funciona en CPU sin GPU, que es el escenario más realista para un modelo de este tamaño en producción de bajo volumen.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, HuggingFace Inference Endpoints (tag `endpoints_compatible`), Text Embeddings Inference (tag `text-embeddings-inference`), exportación a ONNX o TorchScript para servir con ONNX Runtime o un servidor FastAPI propio. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, formatos pensados para modelos generativos.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, Hugging Face Inference Endpoints (tag `endpoints_compatible`), Text Embeddings Inference (tag `text-embeddings-inference`), exportación a ONNX o TorchScript para servir con ONNX Runtime o un servidor FastAPI propio. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, formatos pensados para modelos generativos.
 - Latencia y throughput: no disponibles. Con 66,96 millones de parámetros y entradas de hasta 512 tokens, es razonable esperar latencias del orden de milisegundos por lote en CPU moderna, pero no hay mediciones publicadas que lo confirmen.
 
 ## Comparativa con modelos similares
@@ -119,7 +119,7 @@ Rendimiento comparado: no disponible. No existen métricas de este ajuste fino f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aantaki/learn_hf_food_not_food_text_classifier-distilbert-base-uncased
+- Modelo en Hugging Face: https://huggingface.co/aantaki/learn_hf_food_not_food_text_classifier-distilbert-base-uncased
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Paper de DistilBERT (referencia del modelo base): no disponible en la información proporcionada
 - Repositorio de código o demo: no disponible

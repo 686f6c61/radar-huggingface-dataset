@@ -23,7 +23,7 @@ Su relevancia practica es doble. Por un lado, ofrece contexto largo real (verifi
 
 ## Arquitectura y entrenamiento
 
-El modelo base es LFM3-Omni-2B de Liquid AI, un transformer multimodal de aproximadamente 2,17 mil millones de parametros que acepta entradas de texto, imagen y audio. El fine-tune comunitario modifica la configuracion de atencion: las cinco capas originalmente de atencion deslizante pasan a atencion completa con theta de RoPE 1e6 y rotary parcial de 0,5, eliminando la ventana local. El config de HuggingFace del repositorio ya incluye el campo `layer_types` corregido, de modo que no es necesario ajustarlo manualmente.
+El modelo base es LFM3-Omni-2B de Liquid AI, un transformer multimodal de aproximadamente 2,17 mil millones de parametros que acepta entradas de texto, imagen y audio. El fine-tune comunitario modifica la configuracion de atencion: las cinco capas originalmente de atencion deslizante pasan a atencion completa con theta de RoPE 1e6 y rotary parcial de 0,5, eliminando la ventana local. El config de Hugging Face del repositorio ya incluye el campo `layer_types` corregido, de modo que no es necesario ajustarlo manualmente.
 
 El entrenamiento consistio en un SFT con LoRA de rango 32 sobre datos sinteticos de contexto largo en el rango de 65k a 98k tokens, con posterior fusion del adaptador en un checkpoint unico. La longitud efectiva entrenada ronda los 94k tokens, aunque la recuperacion de informacion se verifico hasta 109k. Sobre esa base se aplico la cuantizacion W4A16 con compressed-tensors en formato `pack-quantized` con grupo de 128 y simetria, manteniendo en bf16 todos los componentes no pertenecientes a las capas lineales del modelo de lenguaje (codificadores, proyectores y embeddings).
 
@@ -55,7 +55,7 @@ No se dispone de informacion sobre el volumen total de tokens de entrenamiento, 
 
 | Prueba | Configuracion | Resultado |
 |---|---|---|
-| Needle-in-haystack (HuggingFace) | Profundidades 10/50/90 %, 15k-109k tokens | 15/15 aciertos |
+| Needle-in-haystack (Hugging Face) | Profundidades 10/50/90 %, 15k-109k tokens | 15/15 aciertos |
 | Needle-in-haystack (GGUF) | 32k tokens, todas las cuantizaciones | Pasa en todas |
 | Needle-in-haystack (GGUF) | 64k tokens, Q6_K | Pasa |
 | Servicio vLLM FP8/W4A16 | 128k contexto, imagen y audio | Funcional |
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-Omni-2B-98K-INT4 (este) | 2,17B | ~98k verificado (hasta 109k) | W4A16 compressed-tensors | LFM Open License | HuggingFace, vLLM |
-| LFM3-Omni-2B-98K-FP8 | 2,17B | ~98k verificado | FP8 | LFM Open License | HuggingFace, vLLM |
-| LFM3-Omni-2B-98K-GGUF | 2,17B | ~98k verificado | GGUF (multiples quants) | LFM Open License | HuggingFace, llama.cpp |
-| LiquidAI/LFM3-Omni-2B (base) | 2,17B | no disponible en la informacion | safetensors | LFM Open License | HuggingFace |
+| LFM3-Omni-2B-98K-INT4 (este) | 2,17B | ~98k verificado (hasta 109k) | W4A16 compressed-tensors | LFM Open License | Hugging Face, vLLM |
+| LFM3-Omni-2B-98K-FP8 | 2,17B | ~98k verificado | FP8 | LFM Open License | Hugging Face, vLLM |
+| LFM3-Omni-2B-98K-GGUF | 2,17B | ~98k verificado | GGUF (multiples quants) | LFM Open License | Hugging Face, llama.cpp |
+| LiquidAI/LFM3-Omni-2B (base) | 2,17B | no disponible en la informacion | safetensors | LFM Open License | Hugging Face |
 
 La comparativa mas directa son los repositorios hermanos del mismo autor, que comparten arquitectura, datos de entrenamiento y verificacion de contexto largo, y difieren unicamente en el formato de pesos y el runtime objetivo. Frente al modelo base, la diferencia principal es la extension de contexto y la conversion de capas de atencion deslizante a atencion completa. No se dispone de datos de rendimiento comparativo frente a otros modelos omni de tamano similar.
 
@@ -95,8 +95,8 @@ La comparativa mas directa son los repositorios hermanos del mismo autor, que co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-INT4
+- Repositorio Hugging Face: https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-INT4
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
-- Repositorios hermanos del mismo autor: `LFM3-Omni-2B-98K-BF16`, `LFM3-Omni-2B-98K-FP16`, `LFM3-Omni-2B-98K-FP8`, `LFM3-Omni-2B-98K-INT8`, `LFM3-Omni-2B-98K-GGUF` (bajo el usuario MichaelAnthony en HuggingFace)
+- Repositorios hermanos del mismo autor: `LFM3-Omni-2B-98K-BF16`, `LFM3-Omni-2B-98K-FP16`, `LFM3-Omni-2B-98K-FP8`, `LFM3-Omni-2B-98K-INT8`, `LFM3-Omni-2B-98K-GGUF` (bajo el usuario MichaelAnthony en Hugging Face)
 - vLLM: https://github.com/vllm-project/vllm
 - compressed-tensors: https://github.com/neuralmagic/compressed-tensors

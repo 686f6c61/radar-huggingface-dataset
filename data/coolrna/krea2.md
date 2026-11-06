@@ -2,9 +2,9 @@
 
 ## Resumen
 
-KREA2 es un modelo publicado en HuggingFace por el usuario `coolrna` bajo una licencia personalizada denominada `krea2`. El repositorio, identificado como `coolrna/KREA2`, ocupa 39,5 GB, lo que sugiere un modelo de gran tamano (probablemente en el rango de decenas de miles de millones de parametros, aunque no se especifica). La model card publicada es practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, arquitectura, datos de entrenamiento ni capacidades declaradas.
+KREA2 es un modelo publicado en Hugging Face por el usuario `coolrna` bajo una licencia personalizada denominada `krea2`. El repositorio, identificado como `coolrna/KREA2`, ocupa 39,5 GB, lo que sugiere un modelo de gran tamano (probablemente en el rango de decenas de miles de millones de parametros, aunque no se especifica). La model card publicada es practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, arquitectura, datos de entrenamiento ni capacidades declaradas.
 
-No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni los formatos de pesos. El pipeline no esta definido en los metadatos de HuggingFace, por lo que no es posible confirmar si se trata de un modelo de lenguaje, un modelo multimodal, un modelo de difusion o de otra naturaleza. Tampoco consta ningun dato de rendimiento ni benchmark publicado.
+No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni los formatos de pesos. El pipeline no esta definido en los metadatos de Hugging Face, por lo que no es posible confirmar si se trata de un modelo de lenguaje, un modelo multimodal, un modelo de difusion o de otra naturaleza. Tampoco consta ningun dato de rendimiento ni benchmark publicado.
 
 El modelo es relevante unicamente como objeto de evaluacion por parte de la comunidad, dado que su falta de documentacion impide recomendarlo para uso en produccion. Cualquier adopcion requeriria inspeccionar manualmente los pesos del repositorio y validar su comportamiento empiricamente.
 
@@ -74,5 +74,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- [HuggingFace: coolrna/KREA2](https://huggingface.co/coolrna/KREA2)
+- [Hugging Face: coolrna/KREA2](https://huggingface.co/coolrna/KREA2)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -4,7 +4,7 @@
 
 GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai, presentado como el modelo abierto más potente hasta agosto de 2026 según fuentes como Unsloth y OpenLM. Se trata de un modelo de 744 mil millones de parámetros totales, de los cuales 40 mil millones están activos por inferencia, lo que indica una arquitectura de mezcla de expertos (MoE). El modelo está diseñado para tareas de codificación, agentes de ingeniería de software y tareas de horizonte largo, con una ventana de contexto de 1 millón de tokens.
 
-La versión GGUF distribuida por el usuario sokann en HuggingFace proporciona los pesos en formato GGUF para su ejecución local con herramientas como llama.cpp o Unsloth. Según la documentación de Unsloth, GLM-5.3 comparte la misma base que GLM-5.2, y todas las mejoras provienen del post-entrenamiento. El modelo alcanza estado del arte en benchmarks como Terminal Bench 3.0 y Agents' Last Exam, aunque no se han publicado cifras numéricas en la información disponible.
+La versión GGUF distribuida por el usuario sokann en Hugging Face proporciona los pesos en formato GGUF para su ejecución local con herramientas como llama.cpp o Unsloth. Según la documentación de Unsloth, GLM-5.3 comparte la misma base que GLM-5.2, y todas las mejoras provienen del post-entrenamiento. El modelo alcanza estado del arte en benchmarks como Terminal Bench 3.0 y Agents' Last Exam, aunque no se han publicado cifras numéricas en la información disponible.
 
 La relevancia actual de este modelo radica en su capacidad para ejecutar agentes autónomos de larga duración y tareas complejas de automatización, manteniendo una licencia abierta (aunque con discrepancia entre la model card y las fuentes web) y un contexto de 1M de tokens que permite procesar repositorios completos o conversaciones extensas.
 
@@ -73,9 +73,9 @@ No se dispone de datos suficientes para una comparativa rigurosa. El modelo comp
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo (sokann): https://huggingface.co/sokann/GLM-5.3-GGUF
-- Repositorio HuggingFace de Unsloth (versión GGUF): https://huggingface.co/unsloth/GLM-5.3-GGUF
-- Repositorio HuggingFace de Unsloth (versión Flash): https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF
+- Repositorio Hugging Face del modelo (sokann): https://huggingface.co/sokann/GLM-5.3-GGUF
+- Repositorio Hugging Face de Unsloth (versión GGUF): https://huggingface.co/unsloth/GLM-5.3-GGUF
+- Repositorio Hugging Face de Unsloth (versión Flash): https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF
 - Documentación de Unsloth sobre GLM-5.3: https://unsloth.ai/docs/models/glm-5.3
 - Página de OpenLM sobre GLM-5.3: https://openlm.ai/glm-5.5/
 - Ficha de aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/glm-5.3-gguf-unsloth

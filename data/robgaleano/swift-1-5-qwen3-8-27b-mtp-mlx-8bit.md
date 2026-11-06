@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Swift-1.5-Qwen3.8-27B-MTP-MLX-8bit | 425 M | no disponible | Drafter MTP 8-bit MLX | Swift Open License v1.0 | HuggingFace (78 descargas) |
-| ukisai/Swift-1.5-Qwen3.8-27b | 27B | no disponible | Modelo completo BF16 | Swift Open License v1.0 | HuggingFace |
-| robgaleano/Swift-1.5-Qwen3.8-27B-MLX-8bit | 27B | no disponible | Modelo principal 8-bit MLX | Swift Open License v1.0 | HuggingFace |
-| Qwen/Qwen3.8-27B | 27B | no disponible | Modelo fundacional | Apache 2.0 | HuggingFace |
+| Swift-1.5-Qwen3.8-27B-MTP-MLX-8bit | 425 M | no disponible | Drafter MTP 8-bit MLX | Swift Open License v1.0 | Hugging Face (78 descargas) |
+| ukisai/Swift-1.5-Qwen3.8-27b | 27B | no disponible | Modelo completo BF16 | Swift Open License v1.0 | Hugging Face |
+| robgaleano/Swift-1.5-Qwen3.8-27B-MLX-8bit | 27B | no disponible | Modelo principal 8-bit MLX | Swift Open License v1.0 | Hugging Face |
+| Qwen/Qwen3.8-27B | 27B | no disponible | Modelo fundacional | Apache 2.0 | Hugging Face |
 
 La comparación directa con otros drafters MTP para MLX no está disponible en la información proporcionada.
 
@@ -88,7 +88,7 @@ La comparación directa con otros drafters MTP para MLX no está disponible en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robgaleano/Swift-1.5-Qwen3.8-27B-MTP-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/robgaleano/Swift-1.5-Qwen3.8-27B-MTP-MLX-8bit
 - Modelo principal 8-bit MLX: https://huggingface.co/robgaleano/Swift-1.5-Qwen3.8-27B-MLX-8bit
 - Modelo base BF16: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Colección Swift 1.5 27B: https://huggingface.co/collections/ukisai/swift-15-27b

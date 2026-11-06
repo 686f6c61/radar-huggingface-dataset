@@ -69,9 +69,9 @@ La model card menciona que `metadata.json` contiene "resultados de evaluacion me
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `vipenl26/anlp-assignment-2-part1-dense` | Transformer causal decoder-only con MLP denso de 2 capas (PyTorch propio) | no disponible | no disponible | no disponible | HuggingFace, requiere codigo del curso |
-| `neemon/anlp-a2-part1-dense` | Transformer decoder-only con MLP denso de 2 capas (linea base del mismo ejercicio) | no disponible | no disponible | no disponible | HuggingFace |
-| `karma-skz/anlp-assignment2-part1-m1-dense` | Variante densa de la Assignment 2 | no disponible | no disponible | no disponible | HuggingFace |
+| `vipenl26/anlp-assignment-2-part1-dense` | Transformer causal decoder-only con MLP denso de 2 capas (PyTorch propio) | no disponible | no disponible | no disponible | Hugging Face, requiere codigo del curso |
+| `neemon/anlp-a2-part1-dense` | Transformer decoder-only con MLP denso de 2 capas (linea base del mismo ejercicio) | no disponible | no disponible | no disponible | Hugging Face |
+| `karma-skz/anlp-assignment2-part1-m1-dense` | Variante densa de la Assignment 2 | no disponible | no disponible | no disponible | Hugging Face |
 
 Los tres checkpoints pertenecen a la misma familia de ejercicios academicos y son comparables en naturaleza, pero no hay datos publicos de parametros, contexto ni rendimiento que permitan una comparacion cuantitativa.
 
@@ -89,7 +89,7 @@ Los tres checkpoints pertenecen a la misma familia de ejercicios academicos y so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vipenl26/anlp-assignment-2-part1-dense
+- Modelo en Hugging Face: https://huggingface.co/vipenl26/anlp-assignment-2-part1-dense
 - Checkpoint hermano (misma Assignment 2, variante densa): https://huggingface.co/neemon/anlp-a2-part1-dense
 - Checkpoint hermano (misma Assignment 2, variante densa): https://huggingface.co/karma-skz/anlp-assignment2-part1-m1-dense
 - Pagina de assignments del curso CMU ANLP: http://cmu-anlp.org/assignments/

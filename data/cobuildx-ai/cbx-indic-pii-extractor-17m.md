@@ -68,9 +68,9 @@ Los resultados numéricos de la tabla comparativa no están completos en la info
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cbx-indic-pii-extractor-17M | 16,7M | 8.192 tokens | 12 índicas + en | Apache 2.0 | HuggingFace |
-| cbx-indic-pii-extractor-36M | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| cbx-indic-pii-extractor-58M | no disponible (22 capas) | no disponible | no disponible | no disponible | HuggingFace |
+| cbx-indic-pii-extractor-17M | 16,7M | 8.192 tokens | 12 índicas + en | Apache 2.0 | Hugging Face |
+| cbx-indic-pii-extractor-36M | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| cbx-indic-pii-extractor-58M | no disponible (22 capas) | no disponible | no disponible | no disponible | Hugging Face |
 | Modelo interno (profesor) | no disponible | no disponible | no disponible | no liberado | No disponible |
 
 Las variantes 36M y 58M de la misma familia son las alternativas naturales: la de 58M es el modelo del que se destila esta versión y conserva 22 capas frente a las 6 de la variante de 17M. No se dispone en la información proporcionada de datos de rendimiento comparado entre las tres variantes ni de modelos de terceros comparables en la misma categoría (detección de PII en lenguas índicas).
@@ -89,7 +89,7 @@ Las variantes 36M y 58M de la misma familia son las alternativas naturales: la d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CobuildX-AI/cbx-indic-pii-extractor-17M
+- Hugging Face: https://huggingface.co/CobuildX-AI/cbx-indic-pii-extractor-17M
 - Variante 36M: https://huggingface.co/CobuildX-AI/cbx-indic-pii-extractor-36M
 - Variante 58M: https://huggingface.co/CobuildX-AI/cbx-indic-pii-extractor-58M
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-small

@@ -73,6 +73,6 @@ No se dispone de datos comparativos suficientes. El modelo relacionado `bmars821
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bmars8218/sn92-classify-mt3g-r1239
+- Hugging Face: https://huggingface.co/bmars8218/sn92-classify-mt3g-r1239
 - Modelo relacionado (ronda anterior): https://huggingface.co/bmars8218/sn92-code-mt3g-r1238
 - No se han encontrado papers, blogs o repositorios adicionales en la búsqueda web.

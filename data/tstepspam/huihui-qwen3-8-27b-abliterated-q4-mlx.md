@@ -93,7 +93,7 @@ No se dispone de informacion sobre modelos alternativos comparables (mismo taman
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tstepspam/Huihui-Qwen3.8-27B-abliterated-Q4-MLX
+- Repositorio Hugging Face: https://huggingface.co/tstepspam/Huihui-Qwen3.8-27B-abliterated-Q4-MLX
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Libreria MLX: https://github.com/ml-explore/mlx
 - Libreria mlx-lm: https://github.com/ml-explore/mlx-lm

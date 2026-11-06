@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AX-Qwen3-VL-4B-Instruct-CUDA-AXQ-NVFP4-W4A4 (este) | 4.437.815.808 en origen; 3.633.315.840 en NVFP4 | NVFP4 W4A4, escalas E4M3FN por bloque de 16, globales FP32 | no disponible | Apache-2.0 | HuggingFace, 21 descargas, development preview |
-| Qwen/Qwen3-VL-4B-Instruct (modelo base) | 4.437.815.808 | BF16 sin cuantizar | no disponible en la informacion proporcionada | Apache-2.0 | HuggingFace, revision `ebb281ec70b05090aa6165b016eac8ec08e71b17` |
+| AX-Qwen3-VL-4B-Instruct-CUDA-AXQ-NVFP4-W4A4 (este) | 4.437.815.808 en origen; 3.633.315.840 en NVFP4 | NVFP4 W4A4, escalas E4M3FN por bloque de 16, globales FP32 | no disponible | Apache-2.0 | Hugging Face, 21 descargas, development preview |
+| Qwen/Qwen3-VL-4B-Instruct (modelo base) | 4.437.815.808 | BF16 sin cuantizar | no disponible en la informacion proporcionada | Apache-2.0 | Hugging Face, revision `ebb281ec70b05090aa6165b016eac8ec08e71b17` |
 | Otras cuantizaciones del mismo modelo base (AWQ, GPTQ, GGUF) | no disponible | no disponible | no disponible | no disponible | no disponible; no se han aportado datos comparables |
 
 Unicamente se dispone de datos verificables frente al modelo base BF16. Cualquier comparacion con cuantizaciones alternativas requeriria mediciones de calidad y velocidad que no se han publicado para este checkpoint.
@@ -100,7 +100,7 @@ Unicamente se dispone de datos verificables frente al modelo base BF16. Cualquie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Qwen3-VL-4B-Instruct-CUDA-AXQ-NVFP4-W4A4
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Qwen3-VL-4B-Instruct-CUDA-AXQ-NVFP4-W4A4
 - Modelo base Qwen3-VL-4B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Revision concreta del modelo base usada en la conversion: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct/tree/ebb281ec70b05090aa6165b016eac8ec08e71b17
 - Artefactos citados en el repositorio: `runtime_audit.json`, `provenance.json`, `axquant_cuda_plan.json`, `axquant_cuda_manifest.json`, `activation_calibration.json`, `development_runtime_smoke.json`, `SHA256SUMS.txt`

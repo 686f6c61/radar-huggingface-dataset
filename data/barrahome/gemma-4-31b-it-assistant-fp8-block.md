@@ -78,9 +78,9 @@ La comparativa se limita al drafter original en BF16, ya que no se han encontrad
 
 ## Enlaces
 
-- [HuggingFace: BarraHome/gemma-4-31B-it-assistant-FP8-block](https://huggingface.co/BarraHome/gemma-4-31B-it-assistant-FP8-block)
-- [HuggingFace: google/gemma-4-31B-it-assistant (modelo base)](https://huggingface.co/google/gemma-4-31B-it-assistant)
-- [HuggingFace: google/gemma-4-31B-it (modelo objetivo)](https://huggingface.co/google/gemma-4-31B-it)
+- [Hugging Face: BarraHome/gemma-4-31B-it-assistant-FP8-block](https://huggingface.co/BarraHome/gemma-4-31B-it-assistant-FP8-block)
+- [Hugging Face: google/gemma-4-31B-it-assistant (modelo base)](https://huggingface.co/google/gemma-4-31B-it-assistant)
+- [Hugging Face: google/gemma-4-31B-it (modelo objetivo)](https://huggingface.co/google/gemma-4-31B-it)
 - [LLM Compressor (herramienta de cuantización)](https://github.com/vllm-project/llm-compressor)
 - [Documentación de vLLM sobre decodificación especulativa](https://docs.vllm.ai/en/latest/features/speculative_decoding/)
 - [Licencia Gemma 4](https://ai.google.dev/gemma/docs/gemma_4_license)

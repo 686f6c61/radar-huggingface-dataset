@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `alpha007barbad/tyu` en HuggingFace no dispone de una model card sustancial: únicamente se declara la licencia MIT y la región US. No se han publicado parámetros, arquitectura, capacidades ni datos de entrenamiento. Las búsquedas web realizadas sugieren que el nombre "Tyu" aparece asociado a modelos de generación de imágenes (Stable Diffusion) en plataformas como SeaArt o Tensor.Art, así como a un personaje de IA conversacional en character.ai, pero no existe evidencia de que el repositorio de HuggingFace corresponda a un modelo de lenguaje de gran tamaño (LLM). Dada la ausencia total de especificaciones técnicas, esta ficha se limita a reflejar la información disponible y a advertir de la falta de datos verificables.
+El modelo identificado como `alpha007barbad/tyu` en Hugging Face no dispone de una model card sustancial: únicamente se declara la licencia MIT y la región US. No se han publicado parámetros, arquitectura, capacidades ni datos de entrenamiento. Las búsquedas web realizadas sugieren que el nombre "Tyu" aparece asociado a modelos de generación de imágenes (Stable Diffusion) en plataformas como SeaArt o Tensor.Art, así como a un personaje de IA conversacional en character.ai, pero no existe evidencia de que el repositorio de Hugging Face corresponda a un modelo de lenguaje de gran tamaño (LLM). Dada la ausencia total de especificaciones técnicas, esta ficha se limita a reflejar la información disponible y a advertir de la falta de datos verificables.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo identificado como `alpha007barbad/tyu` en HuggingFace no dispone de un
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura del modelo, los datos de entrenamiento o las técnicas utilizadas. La model card del repositorio solo contiene la línea `license: mit`. No se puede confirmar si se trata de un transformer, un modelo de difusión, un LoRA u otro tipo de arquitectura. Las búsquedas web externas apuntan a posibles modelos de generación de imágenes (Stable Diffusion) o LoRAs, pero no hay datos que vinculen directamente el repositorio de HuggingFace con esos artefactos.
+No se ha publicado ninguna información sobre la arquitectura del modelo, los datos de entrenamiento o las técnicas utilizadas. La model card del repositorio solo contiene la línea `license: mit`. No se puede confirmar si se trata de un transformer, un modelo de difusión, un LoRA u otro tipo de arquitectura. Las búsquedas web externas apuntan a posibles modelos de generación de imágenes (Stable Diffusion) o LoRAs, pero no hay datos que vinculen directamente el repositorio de Hugging Face con esos artefactos.
 
 ## Capacidades
 
@@ -50,11 +50,11 @@ No disponible. No existe información suficiente para comparar este modelo con a
 - El repositorio no presenta descargas ni interacción de la comunidad, lo que sugiere que podría ser un proyecto no funcional o un artefacto de prueba.
 - La licencia MIT permite uso comercial, pero sin especificaciones técnicas no se puede garantizar ningún comportamiento.
 - Se recomienda verificar la autenticidad del modelo y buscar alternativas con documentación completa antes de cualquier uso.
-- Las búsquedas web muestran que el nombre "Tyu" aparece en contextos de generación de imágenes y chatbots, pero no hay evidencia de que el repositorio de HuggingFace esté relacionado con esos proyectos.
+- Las búsquedas web muestran que el nombre "Tyu" aparece en contextos de generación de imágenes y chatbots, pero no hay evidencia de que el repositorio de Hugging Face esté relacionado con esos proyectos.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/alpha007barbad/tyu
+- Repositorio de Hugging Face: https://huggingface.co/alpha007barbad/tyu
 - Resultado de búsqueda en SeaArt (modelo Tyu): https://www.seaart.ai/models/detail/b921d7d47da94d884f8db9b7809baa8e
 - Resultado de búsqueda en Tensor.Art (LoRA Tyu): https://tensor.art/models/688631747723735024
 - Resultado de búsqueda en character.ai (personaje Tyu): https://character.ai/character/acFp2VU-/tyu-versatile-ai-assistant

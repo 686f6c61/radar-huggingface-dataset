@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama3.2MicroFoxAIForHuningChat es un ajuste fino (fine-tune) del modelo meta-llama/Llama-3.2-1B-Instruct, publicado por el desarrollador independiente MircoFox-AI en HuggingFace. Se trata de un derivado de la familia Llama 3.2 de Meta, por lo que hereda su arquitectura transformer decoder-only de aproximadamente 1 000 millones de parámetros, pero el autor no documenta en la model card ni el procedimiento de ajuste, ni el dataset utilizado, ni el objetivo concreto del entrenamiento.
+Llama3.2MicroFoxAIForHuningChat es un ajuste fino (fine-tune) del modelo meta-llama/Llama-3.2-1B-Instruct, publicado por el desarrollador independiente MircoFox-AI en Hugging Face. Se trata de un derivado de la familia Llama 3.2 de Meta, por lo que hereda su arquitectura transformer decoder-only de aproximadamente 1 000 millones de parámetros, pero el autor no documenta en la model card ni el procedimiento de ajuste, ni el dataset utilizado, ni el objetivo concreto del entrenamiento.
 
 El problema que pretende resolver no está especificado. El nombre del repositorio sugiere un uso orientado a chat ("Chat"), y el sufijo "Huning" podría referirse a un ajuste destinado a un entorno tipo HuggingChat, pero se trata de una interpretación basada en el nombre y no de información confirmada por el autor. La model card pública se limita a los metadatos de licencia, idioma y modelo base, sin descripción, sin ejemplos de uso y sin datos de evaluación.
 
@@ -68,9 +68,9 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| MircoFox-AI/Llama3.2MicroFoxAIForHuningChat | ~1B | no especificado (base: 128 000 tokens) | llama3.2 | HuggingFace, 0 descargas | no disponible |
-| meta-llama/Llama-3.2-1B-Instruct (modelo base) | ~1B | 128 000 tokens | llama3.2 | HuggingFace, ampliamente utilizado | publicado por Meta en su model card |
-| Otros derivados de Llama 3.2 1B | ~1B | variable | llama3.2 | HuggingFace | no disponible en esta búsqueda |
+| MircoFox-AI/Llama3.2MicroFoxAIForHuningChat | ~1B | no especificado (base: 128 000 tokens) | llama3.2 | Hugging Face, 0 descargas | no disponible |
+| meta-llama/Llama-3.2-1B-Instruct (modelo base) | ~1B | 128 000 tokens | llama3.2 | Hugging Face, ampliamente utilizado | publicado por Meta en su model card |
+| Otros derivados de Llama 3.2 1B | ~1B | variable | llama3.2 | Hugging Face | no disponible en esta búsqueda |
 
 No se han encontrado en la búsqueda web alternativas de la misma categoría con datos verificables que permitan una comparación cuantitativa fiable con este ajuste concreto.
 
@@ -87,8 +87,8 @@ No se han encontrado en la búsqueda web alternativas de la misma categoría con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MircoFox-AI/Llama3.2MicroFoxAIForHuningChat
-- Organización del autor en HuggingFace: https://huggingface.co/MircoFox-AI
+- Modelo en Hugging Face: https://huggingface.co/MircoFox-AI/Llama3.2MicroFoxAIForHuningChat
+- Organización del autor en Hugging Face: https://huggingface.co/MircoFox-AI
 - Repositorio del autor en GitHub: https://github.com/MicroFoxAI/
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Página de modelos Llama de Meta: https://dev.meta.ai/llama/models/llama-3

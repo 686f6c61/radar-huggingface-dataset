@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vespera-Synapse-31B-i1-GGUF es una cuantización en formato GGUF del modelo base Vespera-Synapse-31B, desarrollado por OrobasVault y convertido por mradermacher, un usuario de HuggingFace especializado en generar pesos cuantizados con imatrix. El modelo base tiene 32.106.631.740 parámetros (aproximadamente 31B), lo que lo sitúa en la gama de modelos grandes de código abierto, aunque no se dispone de información pública sobre su arquitectura exacta, licencia o dataset de entrenamiento.
+Vespera-Synapse-31B-i1-GGUF es una cuantización en formato GGUF del modelo base Vespera-Synapse-31B, desarrollado por OrobasVault y convertido por mradermacher, un usuario de Hugging Face especializado en generar pesos cuantizados con imatrix. El modelo base tiene 32.106.631.740 parámetros (aproximadamente 31B), lo que lo sitúa en la gama de modelos grandes de código abierto, aunque no se dispone de información pública sobre su arquitectura exacta, licencia o dataset de entrenamiento.
 
 La relevancia de este modelo radica en su disponibilidad como GGUF, lo que permite su ejecución local en hardware consumer mediante herramientas como llama.cpp u Ollama, con múltiples niveles de cuantización (desde Q2_K hasta Q6_K) para adaptarse a distintas capacidades de VRAM. Sin embargo, la ausencia de documentación oficial y de benchmarks publicados limita su evaluación objetiva, por lo que esta ficha se basa únicamente en los datos disponibles en el repositorio.
 

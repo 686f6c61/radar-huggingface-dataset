@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Tipo | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MedMLX/unest-renal-ct-mlx | UNesT 3D en MLX | TC 3D con contraste | Equivalencia voxel a voxel con referencia en 1 caso AMOS22 | Apache-2.0 | HuggingFace, MLX |
-| MONAI/renalStructures_UNEST_segmentation | UNesT 3D (referencia) | TC 3D con contraste | Dice medio 0,8523 en 96 volúmenes ImageVU RenalSeg | no disponible en la información proporcionada | HuggingFace, MONAI |
+| MedMLX/unest-renal-ct-mlx | UNesT 3D en MLX | TC 3D con contraste | Equivalencia voxel a voxel con referencia en 1 caso AMOS22 | Apache-2.0 | Hugging Face, MLX |
+| MONAI/renalStructures_UNEST_segmentation | UNesT 3D (referencia) | TC 3D con contraste | Dice medio 0,8523 en 96 volúmenes ImageVU RenalSeg | no disponible en la información proporcionada | Hugging Face, MONAI |
 | Otros segmentadores renales 3D | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MedMLX/unest-renal-ct-mlx
+- Modelo en Hugging Face: https://huggingface.co/MedMLX/unest-renal-ct-mlx
 - Archivos del modelo: https://huggingface.co/MedMLX/unest-renal-ct-mlx/tree/main
 - Repositorio GitHub: https://github.com/MedMLX/unest-mlx
 - Documentación de ejecución: https://github.com/MedMLX/unest-mlx/blob/main/README.md#run

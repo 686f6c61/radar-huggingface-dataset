@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chibi-VLM-3B-VQA-10K-v0.1 es un adaptador experimental de respuesta visual a preguntas (VQA, *visual question answering*) de respuesta corta en ingles, publicado por el usuario mikun0202 en HuggingFace. No se trata de un modelo completo con pesos fusionados, sino de un paquete que contiene dos artefactos: un proyector MLP de dos capas que conecta el codificador visual con el modelo de lenguaje, y un adaptador LoRA que debe cargarse sobre `openbmb/MiniCPM5-2B`. El codificador visual es `google/siglip2-base-patch16-384`, que permanece congelado durante todo el entrenamiento.
+Chibi-VLM-3B-VQA-10K-v0.1 es un adaptador experimental de respuesta visual a preguntas (VQA, *visual question answering*) de respuesta corta en ingles, publicado por el usuario mikun0202 en Hugging Face. No se trata de un modelo completo con pesos fusionados, sino de un paquete que contiene dos artefactos: un proyector MLP de dos capas que conecta el codificador visual con el modelo de lenguaje, y un adaptador LoRA que debe cargarse sobre `openbmb/MiniCPM5-2B`. El codificador visual es `google/siglip2-base-patch16-384`, que permanece congelado durante todo el entrenamiento.
 
 El interes de esta publicacion es acotado pero claro: sirve como ejemplo reproducible de un *pipeline* de adaptacion multimodal de bajo coste. El autor documenta con detalle el regimen de entrenamiento (2 GPU en DDP, pesos base en NF4, autocast FP16, LoRA de rango 16, batch efectivo de 16) y publica metricas de evaluacion con un control emparejado, algo poco habitual en adaptadores experimentales. La etiqueta "3B" del nombre es una etiqueta de proyecto y no un recuento real de parametros.
 
@@ -113,7 +113,7 @@ La diferencia fundamental no esta en el rendimiento, que no es comparable por fa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mikun0202/Chibi-VLM-3B-VQA-10K-v0.1
+- Modelo en Hugging Face: https://huggingface.co/mikun0202/Chibi-VLM-3B-VQA-10K-v0.1
 - Modelo base de lenguaje: https://huggingface.co/openbmb/MiniCPM5-2B
 - Codificador visual: https://huggingface.co/google/siglip2-base-patch16-384
 - Dataset utilizado: https://huggingface.co/datasets/lmms-lab-encoder/VQAv2

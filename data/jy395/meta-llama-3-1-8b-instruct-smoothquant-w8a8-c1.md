@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jy395/Meta-Llama-3.1-8B-Instruct-smoothquant-w8a8-c1 | 8,03 B | no disponible (base: 128k) | SmoothQuant W8A8 | Llama 3.1 Community | HuggingFace, 92 descargas |
-| meta-llama/Meta-Llama-3.1-8B-Instruct | 8,03 B | 128k | bf16/fp16 | Llama 3.1 Community | HuggingFace, ampliamente usado |
-| Otras configuraciones de la coleccion ICAIF '26 (jy395) | 8,03 B (mismo base) | no disponible | distintos esquemas y corpus de calibracion | Llama 3.1 Community | HuggingFace, coleccion de 30 checkpoints |
+| jy395/Meta-Llama-3.1-8B-Instruct-smoothquant-w8a8-c1 | 8,03 B | no disponible (base: 128k) | SmoothQuant W8A8 | Llama 3.1 Community | Hugging Face, 92 descargas |
+| meta-llama/Meta-Llama-3.1-8B-Instruct | 8,03 B | 128k | bf16/fp16 | Llama 3.1 Community | Hugging Face, ampliamente usado |
+| Otras configuraciones de la coleccion ICAIF '26 (jy395) | 8,03 B (mismo base) | no disponible | distintos esquemas y corpus de calibracion | Llama 3.1 Community | Hugging Face, coleccion de 30 checkpoints |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jy395/Meta-Llama-3.1-8B-Instruct-smoothquant-w8a8-c1
+- Modelo en Hugging Face: https://huggingface.co/jy395/Meta-Llama-3.1-8B-Instruct-smoothquant-w8a8-c1
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Paper (DOI): https://doi.org/10.1145/3858063.3858724
 - Repositorio de codigo y evaluacion: https://github.com/JunyiYe/finance-ptc-calibration

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AtlasMind es un modelo de lenguaje presentado por el usuario de HuggingFace SOTAagi2030 en el repositorio SOTAagi2030/AtlasMind-TestRepo-r19. Segun la model card, se trata de una actualizacion significativa de un modelo anterior, con mejoras en razonamiento profundo, inferencia y reduccion de alucinaciones. La card describe un modelo con arquitectura tipo transformer, entrenado con un enfoque de post-entrenamiento optimizado y una licencia MIT.
+AtlasMind es un modelo de lenguaje presentado por el usuario de Hugging Face SOTAagi2030 en el repositorio SOTAagi2030/AtlasMind-TestRepo-r19. Segun la model card, se trata de una actualizacion significativa de un modelo anterior, con mejoras en razonamiento profundo, inferencia y reduccion de alucinaciones. La card describe un modelo con arquitectura tipo transformer, entrenado con un enfoque de post-entrenamiento optimizado y una licencia MIT.
 
 Sin embargo, es crucial senalar que el repositorio esta vacio (0.0 GB, 0 descargas) y no contiene pesos, configuracion, ni codigo de inferencia. No se especifican parametros totales, tamano de contexto, arquitectura concreta ni idiomas soportados. Toda la informacion tecnica disponible proviene exclusivamente de la model card del autor, que no es verificable ni reproducible. La relevancia actual de este modelo es muy limitada, ya que no puede ser descargado ni ejecutado en su estado actual.
 
@@ -96,8 +96,8 @@ No es posible realizar una comparativa seria porque no se conocen los parametros
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/SOTAagi2030/AtlasMind-TestRepo-r19
-- Perfil del autor en HuggingFace: https://huggingface.co/SOTAagi2030/models
+- Repositorio de Hugging Face: https://huggingface.co/SOTAagi2030/AtlasMind-TestRepo-r19
+- Perfil del autor en Hugging Face: https://huggingface.co/SOTAagi2030/models
 - Web oficial mencionada en la model card (sin URL concreta): no disponible
 - Repositorio de codigo mencionado en la model card (sin URL concreta): no disponible
 

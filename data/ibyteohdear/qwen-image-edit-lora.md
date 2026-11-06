@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-Edit-lora es un repositorio de HuggingFace publicado por el usuario ibyteohdear que, por su denominación, contiene un adaptador LoRA (Low-Rank Adaptation) orientado a la edición de imágenes sobre el modelo base Qwen-Image-Edit. Se trata, por tanto, de un artefacto de ajuste fino ligero y no de un modelo fundacional completo: el LoRA modifica un subconjunto reducido de pesos del modelo original para especializarlo en una tarea o estilo concreto, manteniendo el resto de la red congelada.
+Qwen-Image-Edit-lora es un repositorio de Hugging Face publicado por el usuario ibyteohdear que, por su denominación, contiene un adaptador LoRA (Low-Rank Adaptation) orientado a la edición de imágenes sobre el modelo base Qwen-Image-Edit. Se trata, por tanto, de un artefacto de ajuste fino ligero y no de un modelo fundacional completo: el LoRA modifica un subconjunto reducido de pesos del modelo original para especializarlo en una tarea o estilo concreto, manteniendo el resto de la red congelada.
 
 La información pública disponible es muy limitada. El repositorio no declara pipeline, licencia ni idiomas soportados, no registra descargas y cuenta con un único "like". El tamaño del repositorio es de 59,0 GB, un volumen notablemente elevado para un adaptador LoRA convencional, lo que podría indicar la inclusión de pesos completos del modelo base, múltiples checkpoints o ficheros de gran formato asociados. Esta circunstancia no puede confirmarse con los datos proporcionados.
 
@@ -74,5 +74,5 @@ No disponible. No se dispone de información suficiente sobre parámetros, conte
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ibyteohdear/Qwen-Image-Edit-lora
+- Repositorio Hugging Face: https://huggingface.co/ibyteohdear/Qwen-Image-Edit-lora
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada.

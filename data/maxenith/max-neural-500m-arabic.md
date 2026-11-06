@@ -82,5 +82,5 @@ No se dispone de datos de benchmarks del modelo, por lo que la comparación se l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Maxenith/MAX-Neural-500M-Arabic
+- Hugging Face: https://huggingface.co/Maxenith/MAX-Neural-500M-Arabic
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

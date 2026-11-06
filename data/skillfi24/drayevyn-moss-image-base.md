@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Drayevyn MOSS Image Base es un adaptador LoRA de texto a imagen publicado por el usuario SkillFi24 en HuggingFace. Se construye sobre el modelo base OpenMOSS-Team/MOSS-Image-Base y se distribuye en formato diffusers, lo que permite cargarlo junto con el pipeline del modelo base para modificar su comportamiento generativo. El repositorio tiene un tamano de 0,1 GB, coherente con un adaptador de bajo rango y no con un modelo completo.
+Drayevyn MOSS Image Base es un adaptador LoRA de texto a imagen publicado por el usuario SkillFi24 en Hugging Face. Se construye sobre el modelo base OpenMOSS-Team/MOSS-Image-Base y se distribuye en formato diffusers, lo que permite cargarlo junto con el pipeline del modelo base para modificar su comportamiento generativo. El repositorio tiene un tamano de 0,1 GB, coherente con un adaptador de bajo rango y no con un modelo completo.
 
-El modelo se etiqueta con el pipeline text-to-image, el idioma ingles y la licencia MIT, aunque el acceso esta restringido: es necesario aceptar las condiciones en HuggingFace antes de descargarlo. La ficha incluye la etiqueta not-for-all-audiences, lo que indica que el autor advierte sobre contenido potencialmente sensible. No se han publicado descargas ni likes en el momento de la consulta, y no hay documentacion tecnica adicional en la informacion disponible.
+El modelo se etiqueta con el pipeline text-to-image, el idioma ingles y la licencia MIT, aunque el acceso esta restringido: es necesario aceptar las condiciones en Hugging Face antes de descargarlo. La ficha incluye la etiqueta not-for-all-audiences, lo que indica que el autor advierte sobre contenido potencialmente sensible. No se han publicado descargas ni likes en el momento de la consulta, y no hay documentacion tecnica adicional en la informacion disponible.
 
 Por su naturaleza de LoRA, su relevancia practica depende enteramente del modelo base MOSS-Image-Base. No se dispone de datos sobre el dataset de entrenamiento del adaptador, el rango, el alpha, la resolucion objetivo ni los hiperparametros utilizados, por lo que cualquier evaluacion de calidad debe realizarse empiricamente sobre el modelo base.
 
@@ -42,7 +42,7 @@ No hay informacion sobre el dataset de entrenamiento, la composicion de las imag
 - Generacion de assets para entornos controlados: usar el adaptador en un pipeline interno de creacion de imagenes de prueba, siempre que se acepten las condiciones de acceso y se revise el contenido generado por la etiqueta not-for-all-audiences.
 - Investigacion sobre adaptadores de bajo rango: comparar el efecto del LoRA frente al modelo base con los mismos prompts y semillas para medir la deriva estilistica y la fidelidad al prompt.
 - Experimentacion academica con difusion: emplear el adaptador como caso de estudio de como un LoRA de 0,1 GB modifica el espacio latente de un modelo text-to-image.
-- Integracion en demos de HuggingFace Spaces: al ser un adaptador ligero, puede cargarse en un Space con GPU consumer para demostraciones interactivas, sujeto a la licencia MIT y a las condiciones de acceso.
+- Integracion en demos de Hugging Face Spaces: al ser un adaptador ligero, puede cargarse en un Space con GPU consumer para demostraciones interactivas, sujeto a la licencia MIT y a las condiciones de acceso.
 - Evaluacion de sesgos y seguridad: analizar como un adaptador marcado como not-for-all-audiences altera la distribucion de salidas del modelo base, util para estudios de alineacion y filtrado de contenido.
 
 ## Benchmarks y rendimiento
@@ -61,15 +61,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SkillFi24/drayevyn-moss-image-base | LoRA sobre difusion | no disponible (0,1 GB) | no aplica | MIT | Gated en HuggingFace |
-| OpenMOSS-Team/MOSS-Image-Base | Modelo base text-to-image | no disponible | no aplica | no disponible | HuggingFace |
-| Adaptadores LoRA genericos para SDXL | LoRA sobre difusion | variable (decenas a cientos de MB) | no aplica | variable | HuggingFace / Civitai |
+| SkillFi24/drayevyn-moss-image-base | LoRA sobre difusion | no disponible (0,1 GB) | no aplica | MIT | Gated en Hugging Face |
+| OpenMOSS-Team/MOSS-Image-Base | Modelo base text-to-image | no disponible | no aplica | no disponible | Hugging Face |
+| Adaptadores LoRA genericos para SDXL | LoRA sobre difusion | variable (decenas a cientos de MB) | no aplica | variable | Hugging Face / Civitai |
 
 No se dispone de datos de rendimiento del adaptador ni del modelo base en la informacion proporcionada, por lo que la comparativa se limita a aspectos de formato, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que anade friccion a pipelines automatizados.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que anade friccion a pipelines automatizados.
 - Etiqueta not-for-all-audiences: el autor advierte de contenido potencialmente sensible; conviene aplicar filtros y revision humana en produccion.
 - Sin documentacion tecnica: no se especifican rango, alpha, dataset ni hiperparametros, lo que dificulta reproducir el entrenamiento o evaluar su calidad de forma sistematica.
 - Dependencia total del modelo base: cualquier limitacion de MOSS-Image-Base (resolucion, sesgos, calidad) se hereda y puede amplificarse.
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento del adaptador ni del modelo base en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SkillFi24/drayevyn-moss-image-base
+- Repositorio Hugging Face: https://huggingface.co/SkillFi24/drayevyn-moss-image-base
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Libreria diffusers: https://github.com/huggingface/diffusers

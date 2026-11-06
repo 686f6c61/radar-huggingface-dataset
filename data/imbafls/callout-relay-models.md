@@ -83,11 +83,11 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 - Restricciones de licencia para uso comercial: la licencia es "other" y cada submodelo conserva su licencia upstream; es imprescindible revisar la licencia de cada modelo original antes de un uso comercial, ya que pueden diferir entre si.
 - Caveat importante: este repositorio no es un modelo en si mismo, sino un espejo de artefactos. El autor lo indica explicitamente: "Nothing here was retrained or modified". No debe citarse como si fuera un modelo desarrollado por imbafls.
 - Verificacion de integridad: los ficheros se sirven desde un commit fijo y se verifican por SHA-256 en la aplicacion; cualquier uso fuera de ese contexto deberia replicar esa verificacion.
-- Fecha de creacion del repositorio: 2026-10-15 (segun los metadatos de HuggingFace).
+- Fecha de creacion del repositorio: 2026-10-15 (segun los metadatos de Hugging Face).
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imbafls/callout-relay-models
+- Repositorio en Hugging Face: https://huggingface.co/imbafls/callout-relay-models
 - Documentacion de sherpa-onnx: https://k2-fsa.github.io/sherpa/onnx/
 - Repositorio k2-fsa/sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx
 - Zipformer streaming en 20M: https://huggingface.co/csukuangfj/sherpa-onnx-streaming-zipformer-en-20M-2023-02-17

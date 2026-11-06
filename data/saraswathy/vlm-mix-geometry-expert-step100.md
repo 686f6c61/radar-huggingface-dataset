@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: al ser un adaptador LoRA sobre Qwen3-VL-4B-Instruct, los requisitos de VRAM dependen del modelo base. Con cuantizacion de 4 bits, se estiman entre 4-6 GB de VRAM; sin cuantizacion, entre 8-10 GB.
 - GPU recomendadas: RTX 3090, RTX 4090, A10, A100 (para mayor velocidad de inferencia).
 - Compatibilidad con GPU de consumo: si, el modelo base de 4B parametros con cuantizacion cabe en GPUs consumer de gama media-alta.
-- Opciones de despliegue: el adaptador PEFT requiere cargarse sobre el modelo base con la libreria PEFT de HuggingFace. Para inferencia, puede usarse transformers con PEFT integrado, o exportarse a formatos optimizados como vLLM (requiere fusionar el adaptador con el modelo base previamente).
+- Opciones de despliegue: el adaptador PEFT requiere cargarse sobre el modelo base con la libreria PEFT de Hugging Face. Para inferencia, puede usarse transformers con PEFT integrado, o exportarse a formatos optimizados como vLLM (requiere fusionar el adaptador con el modelo base previamente).
 - Latencia y throughput: no disponibles. Dependen del hardware y del modelo base, no del adaptador.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ La comparativa directa con otros adaptadores especializados en geometria no es p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Saraswathy/vlm-mix-geometry-expert-step100
+- Repositorio Hugging Face: https://huggingface.co/Saraswathy/vlm-mix-geometry-expert-step100
 - Perfil GitHub de la autora: https://github.com/saraswathyamjith
 - Pagina personal de la autora: https://saraamjith.com/saraamjith.html
 - Proyecto relacionado GeoWorld-VLM (arXiv): https://arxiv.org/abs/2605.16713

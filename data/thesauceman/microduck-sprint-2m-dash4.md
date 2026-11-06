@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Tipo | Observacion / acciones | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TheSauceman/microduck-sprint-2m-dash4 | Politica RL (perpetua) | 61-D obs, 14 acciones, 50 Hz | mjlab, 4096 envs, 3000 iter, checkpoint 2000, semilla 1 | no disponible | HuggingFace, ONNX |
-| pollen-robotics/microduck-sprint-2m-reference | Politica RL (perpetua, referencia) | 61-D obs, 14 acciones, 50 Hz | receta sin cambios del reto sprint_2m, 4096 envs, 3000 iter, checkpoint 1000, semilla 1 | no disponible | HuggingFace |
-| TheSauceman/microduck-sprint-2m-ar04-stand02 | Politica RL | no disponible (misma familia) | mismo entorno mjlab | no disponible | HuggingFace |
+| TheSauceman/microduck-sprint-2m-dash4 | Politica RL (perpetua) | 61-D obs, 14 acciones, 50 Hz | mjlab, 4096 envs, 3000 iter, checkpoint 2000, semilla 1 | no disponible | Hugging Face, ONNX |
+| pollen-robotics/microduck-sprint-2m-reference | Politica RL (perpetua, referencia) | 61-D obs, 14 acciones, 50 Hz | receta sin cambios del reto sprint_2m, 4096 envs, 3000 iter, checkpoint 1000, semilla 1 | no disponible | Hugging Face |
+| TheSauceman/microduck-sprint-2m-ar04-stand02 | Politica RL | no disponible (misma familia) | mismo entorno mjlab | no disponible | Hugging Face |
 
 Las tres son politicas de la misma familia para el mismo robot y el mismo reto de sprint de 2 metros. Las diferencias clave son el checkpoint seleccionado (2000 frente a 1000 en la referencia) y el diseno de recompensas (la variante `dash4` suprime penalizaciones de roll, pitch y spin). No hay datos publicos de rendimiento que permitan compararlas cuantitativamente.
 
@@ -80,7 +80,7 @@ Las tres son politicas de la misma familia para el mismo robot y el mismo reto d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheSauceman/microduck-sprint-2m-dash4
+- Modelo en Hugging Face: https://huggingface.co/TheSauceman/microduck-sprint-2m-dash4
 - Modelo de referencia de Pollen Robotics: https://huggingface.co/pollen-robotics/microduck-sprint-2m-reference
 - Variante relacionada del mismo autor: https://huggingface.co/TheSauceman/microduck-sprint-2m-ar04-stand02
 - Repositorio de retos (microduck-challenges): https://github.com/SteveTarter/microduck-challenges

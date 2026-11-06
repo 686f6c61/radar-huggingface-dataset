@@ -4,7 +4,7 @@
 
 Confucius4-TTS es un sistema de síntesis de voz (text-to-speech) multilingüe y zero-shot desarrollado por netease-youdao. A diferencia de los TTS clásicos, este modelo emplea una arquitectura de dos etapas (texto a semántica y semántica a acústica) construida sobre un speech encoder y un gran modelo de lenguaje (LLM), lo que le permite clonar la voz de un hablante a partir de una única grabación corta, sin necesidad de transcripción de referencia ni entrenamiento específico por hablante. El modelo está entrenado en 14 idiomas y admite clonación de voz tanto intra-lingüística como trans-lingüística.
 
-La versión publicada en HuggingFace bajo el identificador `cstr/confucius4-tts-GGUF` es una conversión del modelo original a formato GGUF, lo que facilita su despliegue en entornos optimizados para CPU y GPU mediante herramientas como llama.cpp u Ollama. El repositorio tiene un tamaño de 8.0 GB, lo que sugiere que incluye múltiples cuantizaciones. Los parámetros totales del modelo son 104.257.104 (aproximadamente 104 millones), un tamaño moderado que lo hace accesible para inferencia en hardware de consumo.
+La versión publicada en Hugging Face bajo el identificador `cstr/confucius4-tts-GGUF` es una conversión del modelo original a formato GGUF, lo que facilita su despliegue en entornos optimizados para CPU y GPU mediante herramientas como llama.cpp u Ollama. El repositorio tiene un tamaño de 8.0 GB, lo que sugiere que incluye múltiples cuantizaciones. Los parámetros totales del modelo son 104.257.104 (aproximadamente 104 millones), un tamaño moderado que lo hace accesible para inferencia en hardware de consumo.
 
 ## Especificaciones técnicas
 
@@ -68,7 +68,7 @@ No se dispone de datos comparativos con otros modelos TTS como Bark, XTTS v2, o 
 
 ## Enlaces
 
-- HuggingFace: [cstr/confucius4-tts-GGUF](https://huggingface.co/cstr/confucius4-tts-GGUF)
+- Hugging Face: [cstr/confucius4-tts-GGUF](https://huggingface.co/cstr/confucius4-tts-GGUF)
 - GitHub del modelo original: [netease-youdao/Confucius4-TTS](https://github.com/netease-youdao/Confucius4-TTS)
 - Paper en arXiv: [Confucius4-TTS: Transcript-Free Cross-Lingual Zero-Shot TTS](https://arxiv.org/html/2608.11650v1)
-- Demo en HuggingFace Space: [owensong/Confucius4-TTS-Demo](https://huggingface.co/spaces/owensong/Confucius4-TTS-Demo)
+- Demo en Hugging Face Space: [owensong/Confucius4-TTS-Demo](https://huggingface.co/spaces/owensong/Confucius4-TTS-Demo)

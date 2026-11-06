@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen2.5-1.5B (base) | 1.5B | 128K | Apache 2.0 | HuggingFace | Modelo base sin adaptación de control de atributos |
-| kabing/Qwen2.5-1.5B-cbctg-prior | Adaptador sobre 1.5B | 128K | Apache 2.0 | HuggingFace | Añade control de 4 atributos mediante concept-bottleneck |
+| Qwen2.5-1.5B (base) | 1.5B | 128K | Apache 2.0 | Hugging Face | Modelo base sin adaptación de control de atributos |
+| kabing/Qwen2.5-1.5B-cbctg-prior | Adaptador sobre 1.5B | 128K | Apache 2.0 | Hugging Face | Añade control de 4 atributos mediante concept-bottleneck |
 | Otros adaptadores de control de atributos | No disponible | No disponible | No disponible | No disponible | No se dispone de información de modelos comparables |
 
 No se han encontrado datos de rendimiento comparativos con otros modelos de control de atributos en la información proporcionada.
@@ -76,7 +76,7 @@ No se han encontrado datos de rendimiento comparativos con otros modelos de cont
 
 ## Enlaces
 
-- [HuggingFace - kabing/Qwen2.5-1.5B-cbctg-prior](https://huggingface.co/kabing/Qwen2.5-1.5B-cbctg-prior)
+- [Hugging Face - kabing/Qwen2.5-1.5B-cbctg-prior](https://huggingface.co/kabing/Qwen2.5-1.5B-cbctg-prior)
 - [Qwen/Qwen2.5-1.5B (modelo base)](https://huggingface.co/Qwen/Qwen2.5-1.5B)
 - [Paper arXiv:2608.22956](https://arxiv.org/abs/2608.22956)
 - [Repositorio de código cbctg-illusion-of-control](https://github.com/BiancaBing/cbctg-illusion-of-control)

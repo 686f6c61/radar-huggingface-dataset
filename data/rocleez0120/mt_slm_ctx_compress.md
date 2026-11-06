@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rocleez0120/mt_slm_ctx_compress` es un ajuste fino (fine-tune) del modelo `Qwen/Qwen2.5-Coder-1.5B-Instruct` orientado a una tarea muy concreta: comprimir la sesión de un agente de programación en un resumen JSON corto. Lo publica el usuario de HuggingFace `rocleez0120` como pieza especializada para el arena `ctx_compress` del proyecto Microtensor. Con 1.543.714.304 parámetros (aproximadamente 1,5 mil millones) y un repositorio de 3,1 GB en formato safetensors, se trata de un modelo pequeño pensado para ejecutarse en hardware modesto y con baja latencia.
+`rocleez0120/mt_slm_ctx_compress` es un ajuste fino (fine-tune) del modelo `Qwen/Qwen2.5-Coder-1.5B-Instruct` orientado a una tarea muy concreta: comprimir la sesión de un agente de programación en un resumen JSON corto. Lo publica el usuario de Hugging Face `rocleez0120` como pieza especializada para el arena `ctx_compress` del proyecto Microtensor. Con 1.543.714.304 parámetros (aproximadamente 1,5 mil millones) y un repositorio de 3,1 GB en formato safetensors, se trata de un modelo pequeño pensado para ejecutarse en hardware modesto y con baja latencia.
 
 La relevancia del modelo es acotada y específica: no es un modelo de propósito general, sino un componente de infraestructura para pipelines de agentes que necesitan reducir el histórico de una sesión de codificación a un resumen estructurado antes de continuar el razonamiento. El formato de salida es JSON y la decodificación recomendada es greedy con parada en tokens especiales de Qwen/Llama, lo que indica un uso determinista y reproducible dentro de un sistema mayor.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada en cuantización de 4 bits: alrededor de 1-1,5 GB para pesos.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para FP16 (RTX 3060 Ti, RTX 4060, RTX 4070); A100/H100 no son necesarias y estarían sobredimensionadas.
 - Cabe en GPU de consumo: sí, en la mayoría de tarjetas con 8 GB o más en FP16, y en tarjetas de 4-6 GB con cuantización.
-- Opciones de despliegue: al publicarse solo en safetensors, requiere frameworks que carguen pesos HuggingFace, como transformers, vLLM o TGI. Para llama.cpp/Ollama sería necesario convertir los pesos a GGUF, conversión no documentada por el autor.
+- Opciones de despliegue: al publicarse solo en safetensors, requiere frameworks que carguen pesos Hugging Face, como transformers, vLLM o TGI. Para llama.cpp/Ollama sería necesario convertir los pesos a GGUF, conversión no documentada por el autor.
 - Latencia y throughput: no disponibles. Al ser un modelo de 1,5B con decodificación greedy y salida acotada, se espera baja latencia en GPU moderna, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -87,6 +87,6 @@ La comparación directa de rendimiento no es posible porque el autor no publica 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rocleez0120/mt_slm_ctx_compress
+- Modelo en Hugging Face: https://huggingface.co/rocleez0120/mt_slm_ctx_compress
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/nebius/SWE-agent-trajectories

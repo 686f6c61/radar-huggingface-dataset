@@ -81,8 +81,8 @@ No se han publicado comparaciones directas con modelos de referencia en la infor
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EmbeddingGemma2-decision-router | 740M (multimodal) + cabeza | No disponible | Enrutamiento y decisión con abstención calibrada | Apache 2.0 | HuggingFace (Ajeet-001) |
-| google/embeddinggemma-2 | 740M (270M texto + 300M audio + 170M visión) | No disponible | Embeddings multimodales | No disponible en la información | HuggingFace (Google) |
+| EmbeddingGemma2-decision-router | 740M (multimodal) + cabeza | No disponible | Enrutamiento y decisión con abstención calibrada | Apache 2.0 | Hugging Face (Ajeet-001) |
+| google/embeddinggemma-2 | 740M (270M texto + 300M audio + 170M visión) | No disponible | Embeddings multimodales | No disponible en la información | Hugging Face (Google) |
 | Cascada Whisper-tiny + clasificador | Depende del clasificador | No disponible | ASR + clasificación de intención | Varía | Referencia de latencia citada por el autor |
 
 No se dispone de datos de benchmarks comparativos con alternativas de la misma categoría en la información proporcionada.
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks comparativos con alternativas de la misma c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ajeet-001/embeddinggemma2-decision-router
+- Hugging Face: https://huggingface.co/Ajeet-001/embeddinggemma2-decision-router
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Motor decision-index: https://github.com/apolinario/decision-index
 - Dataset PolyAI/minds14: https://huggingface.co/datasets/PolyAI/minds14

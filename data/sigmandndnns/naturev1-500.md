@@ -2,9 +2,9 @@
 
 ## Resumen
 
-NatureV1-500 es un modelo publicado en HuggingFace por el usuario Sigmandndnns bajo el identificador `Sigmandndnns/NatureV1-500`. La informacion disponible es extremadamente limitada: la model card del repositorio unicamente contiene la declaracion de licencia (bigscience-openrail-m), sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion. El repositorio ocupa 6,3 GB y no registra descargas ni likes en el momento de la consulta.
+NatureV1-500 es un modelo publicado en Hugging Face por el usuario Sigmandndnns bajo el identificador `Sigmandndnns/NatureV1-500`. La informacion disponible es extremadamente limitada: la model card del repositorio unicamente contiene la declaracion de licencia (bigscience-openrail-m), sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion. El repositorio ocupa 6,3 GB y no registra descargas ni likes en el momento de la consulta.
 
-El modelo se publico el 22 de septiembre de 2026 y se actualizo por ultima vez el 26 de septiembre de 2026, segun los metadatos de HuggingFace. No consta pipeline declarado, ni idiomas soportados, ni informacion sobre el formato de pesos mas alla del tamano total del repositorio. Esta ausencia de documentacion impide verificar la arquitectura, el numero de parametros, la longitud de contexto o las capacidades reales del modelo.
+El modelo se publico el 22 de septiembre de 2026 y se actualizo por ultima vez el 26 de septiembre de 2026, segun los metadatos de Hugging Face. No consta pipeline declarado, ni idiomas soportados, ni informacion sobre el formato de pesos mas alla del tamano total del repositorio. Esta ausencia de documentacion impide verificar la arquitectura, el numero de parametros, la longitud de contexto o las capacidades reales del modelo.
 
 Por tanto, esta ficha se limita a reflejar los metadatos verificables y a marcar como "no disponible" todo aquello que el autor no ha documentado. Un modelo sin model card sustantiva, sin benchmarks y sin pipeline declarado no es evaluable de forma rigurosa para uso en produccion sin una inspeccion directa de los pesos y una validacion empirica por parte del integrador.
 
@@ -69,7 +69,7 @@ No disponible. Al no conocerse el numero de parametros, la arquitectura, la long
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
 | Licencia | bigscience-openrail-m | no disponible |
-| Disponibilidad | HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -80,11 +80,11 @@ No disponible. Al no conocerse el numero de parametros, la arquitectura, la long
 - Licencia: bigscience-openrail-m incluye clausulas de uso responsable, obligaciones de atribucion y restricciones especificas (por ejemplo, sobre uso en determinados contextos). Es imprescindible revisar el texto completo de la licencia antes de un uso comercial.
 - Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, lo que reduce la probabilidad de que existan informes de terceros, issues resueltos o validaciones independientes.
 - Fechas de creacion y actualizacion (septiembre de 2026) posteriores a la fecha habitual de publicacion de modelos de referencia; conviene verificar la procedencia y originalidad del repositorio.
-- Sin pipeline declarado: no se puede confirmar que el modelo este pensado para text-generation, text2text-generation u otra tarea, lo que complica su integracion automatica en pipelines de HuggingFace.
+- Sin pipeline declarado: no se puede confirmar que el modelo este pensado para text-generation, text2text-generation u otra tarea, lo que complica su integracion automatica en pipelines de Hugging Face.
 - Recomendacion operativa: tratar el modelo como no verificado y no desplegarlo en produccion sin una auditoria de pesos, una evaluacion empirica propia y una revision legal de la licencia.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sigmandndnns/NatureV1-500
+- Hugging Face: https://huggingface.co/Sigmandndnns/NatureV1-500
 - Licencia bigscience-openrail-m: https://huggingface.co/spaces/bigscience/license (referencia general de la licencia; no consta enlace especifico en la informacion proporcionada)
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la informacion disponible.

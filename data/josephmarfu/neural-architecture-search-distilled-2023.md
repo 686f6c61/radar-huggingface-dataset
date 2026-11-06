@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Josephmarfu/neural-architecture-search-distilled-2023` es un repositorio alojado en HuggingFace que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo de lenguaje entrenado. La model card del autor lo describe explícitamente como un conjunto estructurado de notas de investigación sobre Neural Architecture Search (NAS), con referencias de evaluación y preguntas abiertas, y aclara que no se reclama ningún checkpoint entrenado, código liberado ni mejoras de benchmark.
+`Josephmarfu/neural-architecture-search-distilled-2023` es un repositorio alojado en Hugging Face que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo de lenguaje entrenado. La model card del autor lo describe explícitamente como un conjunto estructurado de notas de investigación sobre Neural Architecture Search (NAS), con referencias de evaluación y preguntas abiertas, y aclara que no se reclama ningún checkpoint entrenado, código liberado ni mejoras de benchmark.
 
-El repositorio incluye un archivo `analysis.md` como artefacto principal y este `README.md` como documentación. El tag `safetensors` y el recuento de 33.088 parámetros totales registrado por HuggingFace corresponden a un tensor residual mínimo, no a un modelo funcional. El tamaño del repo es de 0,0 GB y las descargas y likes son cero en el momento de la consulta.
+El repositorio incluye un archivo `analysis.md` como artefacto principal y este `README.md` como documentación. El tag `safetensors` y el recuento de 33.088 parámetros totales registrado por Hugging Face corresponden a un tensor residual mínimo, no a un modelo funcional. El tamaño del repo es de 0,0 GB y las descargas y likes son cero en el momento de la consulta.
 
 Por tanto, esta ficha documenta un artefacto de investigación, no un modelo desplegable. Es relevante únicamente como referencia bibliográfica sobre NAS y como ejemplo de repositorio mal etiquetado en el Hub. No debe evaluarse como un LLM ni usarse en producción.
 
@@ -40,7 +40,7 @@ No se documenta ningún proceso de entrenamiento: no hay número de tokens, comp
 - Revisión bibliográfica sobre NAS: leer `analysis.md` para identificar preguntas abiertas y referencias sobre búsqueda de arquitecturas, útil como punto de partida antes de diseñar un experimento propio.
 - Diseño de protocolos de evaluación: las secciones sobre baselines emparejados y factores de confusión sirven para redactar un plan experimental con controles adecuados.
 - Checklist de reproducibilidad: el documento enumera qué metadatos deben registrarse (versiones de dataset, comandos, semillas, hardware, logs), aprovechable como plantilla interna de laboratorio.
-- Auditoría de repositorios en HuggingFace: este repo ejemplifica el caso de tags (`transformer`, `safetensors`) que no reflejan el contenido real, útil para calibrar heurísticas de filtrado en pipelines de descubrimiento de modelos.
+- Auditoría de repositorios en Hugging Face: este repo ejemplifica el caso de tags (`transformer`, `safetensors`) que no reflejan el contenido real, útil para calibrar heurísticas de filtrado en pipelines de descubrimiento de modelos.
 - Docencia sobre buenas prácticas de publicación: contrasta una model card honesta sobre el alcance de un trabajo exploratorio frente a publicaciones que exageran resultados.
 - Catalogación de artefactos de investigación: permite clasificar el repositorio como "notas" y no como "modelo" en un inventario interno de recursos.
 
@@ -71,6 +71,6 @@ No disponible. No existen modelos comparables porque el artefacto no es un model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Josephmarfu/neural-architecture-search-distilled-2023
+- Hugging Face: https://huggingface.co/Josephmarfu/neural-architecture-search-distilled-2023
 - Archivo principal citado en la model card: `analysis.md` (dentro del repositorio)
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

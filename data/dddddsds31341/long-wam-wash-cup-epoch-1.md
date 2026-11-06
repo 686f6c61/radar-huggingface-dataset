@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Long-WAM Wash Cup — Epoch 1 | Modelo vídeo-acción bimanual (fine-tune) | no disponible | no disponible (P48 / chunk 32) | other | HuggingFace, repo de 12 GB |
-| Efficient-Large-Model/Long-WAM-YAM | Modelo vídeo-acción base | no disponible | no disponible | other (ver model card) | HuggingFace |
+| Long-WAM Wash Cup — Epoch 1 | Modelo vídeo-acción bimanual (fine-tune) | no disponible | no disponible (P48 / chunk 32) | other | Hugging Face, repo de 12 GB |
+| Efficient-Large-Model/Long-WAM-YAM | Modelo vídeo-acción base | no disponible | no disponible | other (ver model card) | Hugging Face |
 | NVlabs/LongLive | Base de código de generación de vídeo largo | no disponible | no disponible | no disponible | GitHub |
 
 No se dispone de datos de benchmarks ni de parámetros para comparar rendimiento con alternativas de la misma categoría.
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de parámetros para comparar rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dddddsds31341/Long-WAM-Wash-Cup-Epoch-1
+- Modelo en Hugging Face: https://huggingface.co/dddddsds31341/Long-WAM-Wash-Cup-Epoch-1
 - Modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM
 - Dataset: https://huggingface.co/datasets/yuyingyinya/wash_cup
 - Registro de entrenamiento (W&B): https://forge.coreweave.com/wandb/bofang/long-wam/runs/3n9pgoq2

@@ -31,7 +31,7 @@ El modelo se entrenó con restricciones físicas blandas (monotonía `dFz/dz >= 
 | Gravedad de simulación | 1,62 m/s² (lunar) |
 | Versión publicada | v1.1.0 (`v1.1.0.post1`) |
 | Librería | `pinneapple` |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 | Descargas / likes | 125 / 1 |
 
 ## Arquitectura y entrenamiento
@@ -99,7 +99,7 @@ Informe de validación física (`pp.validate`, nivel `standard`, decisión APPRO
 - Cabe en GPU consumer: sí, con margen de varios órdenes de magnitud; también en Raspberry Pi y en plataformas tipo microcontroller con runtime ONNX adecuado.
 - Opciones de despliegue: `onnxruntime` (formato ONNX incluido), PyTorch con la librería `pinneapple`, y la demo alojada en el Space del zoo. vLLM, TGI, llama.cpp u Ollama no aplican: no es un modelo de lenguaje.
 - Latencia y throughput estimados: no disponibles; no se han publicado medidas. Por el tamaño del modelo, el coste dominante será el overhead de invocación del runtime, no el cómputo.
-- Nota: la model card declara `inference: false`, por lo que el modelo no está expuesto a través de la Inference API de HuggingFace; hay que ejecutarlo localmente o vía el Space.
+- Nota: la model card declara `inference: false`, por lo que el modelo no está expuesto a través de la Inference API de Hugging Face; hay que ejecutarlo localmente o vía el Space.
 
 ## Comparativa con modelos similares
 
@@ -107,7 +107,7 @@ No se han identificado en la información disponible otros sustitutos neuronales
 
 | Alternativa | Tipo | Parámetros | Coste de evaluación | Error de referencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `rover_contact_grc1_viper` | PINN, MLP residual | 78 179 | una pasada de red | RMSE `Fx` 0,22 N; `Fz` 0,47 N; `My` 0,071 N·m frente a cuadratura adaptativa | Apache 2.0 | HuggingFace (safetensors, ONNX) y Space de demo |
+| `rover_contact_grc1_viper` | PINN, MLP residual | 78 179 | una pasada de red | RMSE `Fx` 0,22 N; `Fz` 0,47 N; `My` 0,071 N·m frente a cuadratura adaptativa | Apache 2.0 | Hugging Face (safetensors, ONNX) y Space de demo |
 | Wong-Reece con cuadratura adaptativa | Modelo analítico | no aplica | integración numérica adaptativa | 0 por definición (es la referencia) | no disponible | Implementación en `pinneapple_simulation` |
 | Ensayos de rueda única publicados (Ding et al. 2011; Wang & Han 2016) | Datos experimentales | no aplica | no aplica | RMSE de drawbar pull 4-14 N frente al modelo de Wong-Reece | no disponible | Literatura científica / dataset `single_wheel_tests` |
 
@@ -126,7 +126,7 @@ No se han identificado en la información disponible otros sustitutos neuronales
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PINNeAPPle-Labs/rover-contact-grc1-viper
+- Modelo en Hugging Face: https://huggingface.co/PINNeAPPle-Labs/rover-contact-grc1-viper
 - Dataset de entrenamiento: https://huggingface.co/datasets/PINNeAPPle-Labs/rover-contact-grc1-viper
 - Repositorio del proyecto PINNeAPPle: https://github.com/PINNeAPPle-Labs/PINNeAPPle
 - Demo del zoo (seleccionar `rover_contact_grc1_viper`): https://huggingface.co/spaces/PINNeAPPle-Labs/zoo-demo

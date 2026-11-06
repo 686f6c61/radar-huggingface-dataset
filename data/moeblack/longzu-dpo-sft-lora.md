@@ -60,8 +60,8 @@ No disponible. No se han encontrado modelos comparables documentados en la infor
 
 ## Enlaces
 
-- [HuggingFace - Moeblack/longzu-dpo-sft-lora](https://huggingface.co/Moeblack/longzu-dpo-sft-lora)
-- [HuggingFace - Moeblack/longzu-lora](https://huggingface.co/Moeblack/longzu-lora)
-- [HuggingFace - Moeblack/longzu-dpo-lora (discusiones)](https://huggingface.co/Moeblack/longzu-dpo-lora/discussions)
+- [Hugging Face - Moeblack/longzu-dpo-sft-lora](https://huggingface.co/Moeblack/longzu-dpo-sft-lora)
+- [Hugging Face - Moeblack/longzu-lora](https://huggingface.co/Moeblack/longzu-lora)
+- [Hugging Face - Moeblack/longzu-dpo-lora (discusiones)](https://huggingface.co/Moeblack/longzu-dpo-lora/discussions)
 - [GitHub - Moeblack (Nakano Kenji)](https://github.com/Moeblack)
-- [HuggingFace - unsloth/Qwen3.8-27B (modelo base)](https://huggingface.co/unsloth/Qwen3.8-27B)
+- [Hugging Face - unsloth/Qwen3.8-27B (modelo base)](https://huggingface.co/unsloth/Qwen3.8-27B)

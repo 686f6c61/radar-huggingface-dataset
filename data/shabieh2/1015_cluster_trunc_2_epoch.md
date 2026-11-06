@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `shabieh2/1015_cluster_trunc_2_epoch` es un adaptador LoRA publicado en HuggingFace mediante la libreria PEFT (version 0.20.0) sobre el modelo base `unsloth/Muse-Glimmer-30B`. No se trata por tanto de un modelo completo con pesos propios, sino de un conjunto de matrices de bajo rango que deben cargarse junto al modelo base para reproducir el comportamiento ajustado. El repositorio ocupa 0,9 GB, un tamano coherente con un adaptador LoRA sobre un modelo de la clase 30B, y se distribuye en formato safetensors.
+El modelo `shabieh2/1015_cluster_trunc_2_epoch` es un adaptador LoRA publicado en Hugging Face mediante la libreria PEFT (version 0.20.0) sobre el modelo base `unsloth/Muse-Glimmer-30B`. No se trata por tanto de un modelo completo con pesos propios, sino de un conjunto de matrices de bajo rango que deben cargarse junto al modelo base para reproducir el comportamiento ajustado. El repositorio ocupa 0,9 GB, un tamano coherente con un adaptador LoRA sobre un modelo de la clase 30B, y se distribuye en formato safetensors.
 
-El autor es el usuario `shabieh2` y la ficha no aporta informacion sustantiva: la model card es la plantilla por defecto de HuggingFace con todos los campos marcados como "More Information Needed". No se declaran licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El identificador del repositorio sugiere un ajuste sobre datos truncados y dos epocas de entrenamiento, pero se trata de una inferencia a partir del nombre, no de un dato documentado.
+El autor es el usuario `shabieh2` y la ficha no aporta informacion sustantiva: la model card es la plantilla por defecto de Hugging Face con todos los campos marcados como "More Information Needed". No se declaran licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El identificador del repositorio sugiere un ajuste sobre datos truncados y dos epocas de entrenamiento, pero se trata de una inferencia a partir del nombre, no de un dato documentado.
 
 Su relevancia actual es limitada y de caracter experimental: cuenta con cero descargas y cero "likes", no esta validado por la comunidad y no existe informacion publica sobre su calidad. Resulta util unicamente como ejemplo de flujo de trabajo de fine-tuning con Unsloth y PEFT sobre un modelo de 30B, o como punto de partida para inspeccionar la estructura de un adaptador, nunca como componente listo para produccion.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada y de caracter experimental: cuenta con cero des
 
 La unica informacion tecnica confirmada es que se trata de un adaptador LoRA entrenado con la libreria PEFT 0.20.0 y con soporte de Unsloth, segun las etiquetas del repositorio. Esto implica que el ajuste congela los pesos del modelo base e introduce matrices de bajo rango en determinadas capas, reduciendo drasticamente el numero de parametros entrenables y el coste de memoria. El rango, el modulo objetivo (`q_proj`, `k_proj`, `v_proj`, `o_proj`, etc.), el valor de alpha y el dropout no estan documentados y no pueden deducirse del contenido publicado.
 
-Tampoco se especifican los datos de entrenamiento, el numero de tokens, la composicion del dataset ni si hubo fases de RLHF o DPO. El nombre del repositorio, `1015_cluster_trunc_2_epoch`, apunta a un conjunto de datos truncado (probablemente por limite de longitud de secuencia) agrupado por clusters y a un regimen de dos epocas, pero no hay confirmacion en la model card. No se documentan hiperparametros de optimizacion, precision de entrenamiento (fp16, bf16 o fp8), hardware utilizado ni metricas de perdida. La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde a la referencia del calculador de impacto de carbono incluida en la plantilla de HuggingFace, no a un articulo sobre el modelo.
+Tampoco se especifican los datos de entrenamiento, el numero de tokens, la composicion del dataset ni si hubo fases de RLHF o DPO. El nombre del repositorio, `1015_cluster_trunc_2_epoch`, apunta a un conjunto de datos truncado (probablemente por limite de longitud de secuencia) agrupado por clusters y a un regimen de dos epocas, pero no hay confirmacion en la model card. No se documentan hiperparametros de optimizacion, precision de entrenamiento (fp16, bf16 o fp8), hardware utilizado ni metricas de perdida. La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde a la referencia del calculador de impacto de carbono incluida en la plantilla de Hugging Face, no a un articulo sobre el modelo.
 
 ## Capacidades
 
@@ -66,8 +66,8 @@ No se dispone de datos de rendimiento de este adaptador ni de adaptadores equiva
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `shabieh2/1015_cluster_trunc_2_epoch` | Adaptador LoRA (PEFT) | no disponible (base de 30B) | no disponible | no disponible | Publico en HuggingFace, 0 descargas |
-| `unsloth/Muse-Glimmer-30B` | Modelo base | 30B segun denominacion, no confirmado | no disponible | no disponible | Publico en HuggingFace |
+| `shabieh2/1015_cluster_trunc_2_epoch` | Adaptador LoRA (PEFT) | no disponible (base de 30B) | no disponible | no disponible | Publico en Hugging Face, 0 descargas |
+| `unsloth/Muse-Glimmer-30B` | Modelo base | 30B segun denominacion, no confirmado | no disponible | no disponible | Publico en Hugging Face |
 | Otros adaptadores LoRA sobre modelos de ~30B | Adaptador LoRA | Variable | Variable | Variable | Comparativa no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento de este adaptador ni de adaptadores equiva
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/shabieh2/1015_cluster_trunc_2_epoch
+- Repositorio del modelo en Hugging Face: https://huggingface.co/shabieh2/1015_cluster_trunc_2_epoch
 - Modelo base: https://huggingface.co/unsloth/Muse-Glimmer-30B
 - Libreria PEFT: https://huggingface.co/docs/peft/index
 - Unsloth: https://github.com/unslothai/unsloth

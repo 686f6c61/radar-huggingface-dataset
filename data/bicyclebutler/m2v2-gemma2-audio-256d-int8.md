@@ -82,7 +82,7 @@ La comparación con alternativas de la misma categoría (extractores de embeddin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BicycleButler/m2v2-gemma2-audio-256d-int8
+- Hugging Face: https://huggingface.co/BicycleButler/m2v2-gemma2-audio-256d-int8
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Modelo de texto asociado: https://huggingface.co/BicycleButler/m2v2-gemma2-256d-int4
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

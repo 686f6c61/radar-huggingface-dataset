@@ -91,7 +91,7 @@ Los dos modelos de comparación se mencionan en la model card como referencias i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ahiok/looped-fineweb-10m
+- Hugging Face: https://huggingface.co/ahiok/looped-fineweb-10m
 - Repositorio de código, ablaciones y reporte: https://github.com/ahiokk/looped-models
 - Dataset FineWeb: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Paper de FineWeb: https://arxiv.org/abs/2406.17557

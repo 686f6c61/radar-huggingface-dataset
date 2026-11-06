@@ -25,7 +25,7 @@ La relevancia de esta publicación radica en su naturaleza experimental: sirve c
 
 La arquitectura implementada es una variante de EfficientFormer diseñada para generación de texto, con atención de ventana deslizante en lugar de atención global completa, lo que reduce la complejidad computacional respecto a transformers convencionales. La fusión de características se realiza mediante un MLP con concatenación (concat-MLP), la activación es GELU y la normalización emplea ScaleNorm, una alternativa a LayerNorm que escala las activaciones sin restar la media. El modelo se empaqueta con una configuración explícita en `config.json` y una receta de entrenamiento por defecto en `training_args.json` que usa el optimizador Novograd con programación coseno.
 
-El checkpoint incluido es únicamente una inicialización para pruebas de humo: no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio. El autor advierte que los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto incluidos. Además, al tratarse de una implementación personalizada, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de poder utilizarla.
+El checkpoint incluido es únicamente una inicialización para pruebas de humo: no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio. El autor advierte que los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto incluidos. Además, al tratarse de una implementación personalizada, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de poder utilizarla.
 
 ## Capacidades
 
@@ -66,14 +66,14 @@ No se dispone de modelos comparables en la información proporcionada. El Effici
 - **No es un modelo entrenado**: el checkpoint es una inicialización sin ningún entrenamiento previo; no genera texto coherente ni tiene capacidades de razonamiento.
 - **Sin auditoría de robustez o equidad**: el autor advierte que el checkpoint no ha sido auditado para robustez, equidad ni transferencia de dominio.
 - **Riesgo de alucinación**: no aplica en estado actual, pero cualquier modelo entrenado a partir de esta base requeriría una evaluación específica antes de uso en producción.
-- **Implementación personalizada**: las APIs genéricas de HuggingFace no pueden cargar el modelo sin un adaptador explícito, lo que complica la integración con herramientas estándar.
+- **Implementación personalizada**: las APIs genéricas de Hugging Face no pueden cargar el modelo sin un adaptador explícito, lo que complica la integración con herramientas estándar.
 - **Sin benchmarks**: no existen resultados de evaluación publicados que permitan comparar su rendimiento con otros modelos.
 - **Licencia BSD-3-Clause**: permite uso comercial, pero el autor recomienda revisar los términos de las fuentes de datos externas si se entrena con datasets de terceros.
 - **Formato de pesos limitado**: solo se proporciona safetensors; no hay versiones GGUF, ONNX ni otros formatos de despliegue.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bartoszwozniak/efficientformer-experiment
-- Documentación de EfficientFormer en HuggingFace: https://huggingface.co/docs/transformers/v4.49.0/en/model_doc/efficientformer
+- Repositorio Hugging Face: https://huggingface.co/bartoszwozniak/efficientformer-experiment
+- Documentación de EfficientFormer en Hugging Face: https://huggingface.co/docs/transformers/v4.49.0/en/model_doc/efficientformer
 - Paper original de EfficientFormer (arXiv:2206.01191): https://arxiv.org/pdf/2206.01191
 - Configuraciones de EfficientFormer en MMPretrain: https://github.com/open-mmlab/mmpretrain/blob/main/configs/efficientformer/README.md

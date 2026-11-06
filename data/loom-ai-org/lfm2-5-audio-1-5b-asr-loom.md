@@ -99,7 +99,7 @@ No se dispone de cifras de WER comparables para este export, por lo que la compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/lfm2.5-audio-1.5b-asr-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/lfm2.5-audio-1.5b-asr-loom
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B
 - Licencia del modelo base (LFM Open License v1.0): https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B/blob/main/LICENSE
 - Repositorio del runtime loom.cpp: https://github.com/loom-ai-org/loom.cpp

@@ -113,8 +113,8 @@ Los cuatro brazos comparten arquitectura, configuración LoRA, tamaño de datos,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-14b-f07-a1
+- Modelo en Hugging Face: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-14b-f07-a1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Colección AISLE Trojan Zoo for Detection Research: https://huggingface.co/collections/aisleinc/aisle-trojan-zoo-for-detection-research-6aa012b085f8f3f04aef038e
-- Manifiesto del zoo (referenciado en la model card como `zoo_manifest.json`, con los hashes de los manifiestos públicos): incluido en el repositorio de HuggingFace
+- Manifiesto del zoo (referenciado en la model card como `zoo_manifest.json`, con los hashes de los manifiestos públicos): incluido en el repositorio de Hugging Face
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes sobre este modelo; los resultados devueltos corresponden a páginas sobre la variedad mineral heliodoro y no guardan relación con el artefacto.

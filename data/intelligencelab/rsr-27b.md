@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RSR-27B es un modelo publicado en HuggingFace por el usuario u organizacion IntelligenceLab bajo el identificador `IntelligenceLab/RSR-27B`. En el momento de redactar esta ficha, el repositorio no incluye model card util (unicamente el bloque de metadatos con la licencia Apache 2.0), no declara pipeline, idiomas soportados ni arquitectura, y registra cero descargas y cero valoraciones. La fecha de creacion y ultima actualizacion del repositorio es la misma (1 de octubre de 2026), lo que indica que no ha habido revisiones posteriores.
+RSR-27B es un modelo publicado en Hugging Face por el usuario u organizacion IntelligenceLab bajo el identificador `IntelligenceLab/RSR-27B`. En el momento de redactar esta ficha, el repositorio no incluye model card util (unicamente el bloque de metadatos con la licencia Apache 2.0), no declara pipeline, idiomas soportados ni arquitectura, y registra cero descargas y cero valoraciones. La fecha de creacion y ultima actualizacion del repositorio es la misma (1 de octubre de 2026), lo que indica que no ha habido revisiones posteriores.
 
 El nombre del modelo sugiere un tamano de aproximadamente 27 000 millones de parametros, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor. No hay informacion publica sobre el problema que resuelve, los datos de entrenamiento empleados ni los resultados obtenidos en evaluaciones.
 
@@ -27,7 +27,7 @@ Otros metadatos del repositorio: autor `IntelligenceLab`, region declarada `us`,
 
 No disponible. La model card del repositorio no describe la arquitectura (transformer denso, mixture of experts, SSM o hibrida), ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. Tampoco se documenta ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, modos de razonamiento explicito, etc.).
 
-La unica informacion tecnica cierta es la licencia declarada en los metadatos (Apache 2.0) y la ausencia de un pipeline declarado en HuggingFace, lo que impide confirmar si el modelo es de generacion de texto, de vision-lenguaje o multimodal.
+La unica informacion tecnica cierta es la licencia declarada en los metadatos (Apache 2.0) y la ausencia de un pipeline declarado en Hugging Face, lo que impide confirmar si el modelo es de generacion de texto, de vision-lenguaje o multimodal.
 
 ## Capacidades
 
@@ -87,5 +87,5 @@ No disponible. Sin confirmacion del numero de parametros, la arquitectura, el co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IntelligenceLab/RSR-27B
+- Hugging Face: https://huggingface.co/IntelligenceLab/RSR-27B
 - No se han encontrado papers, blogs, repositorios de codigo, demos ni articulos tecnicos asociados a este modelo en la informacion disponible.

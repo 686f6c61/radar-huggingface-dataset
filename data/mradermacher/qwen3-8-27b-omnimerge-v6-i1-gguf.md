@@ -69,7 +69,7 @@ En la informacion disponible no se proporcionan datos de benchmarks ni especific
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Omnimerge-v6-i1-GGUF
+- Pagina del modelo en Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Omnimerge-v6-i1-GGUF
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Qwen3.8-27B-Omnimerge-v6-GGUF
 - Modelo base: https://huggingface.co/ManniX-ITA/Qwen3.8-27B-Omnimerge-v6
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8

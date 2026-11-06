@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mufasa1228/sn92-gen-ma` es un modelo de decisión (decision model) publicado en HuggingFace que resulta de la fusión en espacio de pesos (weight-space merge) de dos entradas generalistas públicas de la familia REAX SN92: `isomsom/sn92-gen-m87b` y `xflud/sn92-decider-1`. No hay entrenamiento propio por parte del autor de la ficha: todas las capacidades aprendidas provienen de los modelos padre, que a su vez comparten el mismo backbone base, `baselabs/mammoth-1` (revisión `61cec44c281c693992e3d6ebeb44dd3402dfa186`).
+`mufasa1228/sn92-gen-ma` es un modelo de decisión (decision model) publicado en Hugging Face que resulta de la fusión en espacio de pesos (weight-space merge) de dos entradas generalistas públicas de la familia REAX SN92: `isomsom/sn92-gen-m87b` y `xflud/sn92-decider-1`. No hay entrenamiento propio por parte del autor de la ficha: todas las capacidades aprendidas provienen de los modelos padre, que a su vez comparten el mismo backbone base, `baselabs/mammoth-1` (revisión `61cec44c281c693992e3d6ebeb44dd3402dfa186`).
 
 El modelo se empaqueta sobre la arquitectura `Qwen3_5Model` con un esquema de "joint-readout" (backbone más un módulo de lectura de respuestas separado en `readout.safetensors`). El checkpoint en safetensors declara 26.085.330.160 parámetros totales, lo que lo sitúa en la categoría de modelos densos de ~26B, con un repositorio de 52,2 GB en bfloat16.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mufasa1228/sn92-gen-ma
+- Modelo en Hugging Face: https://huggingface.co/mufasa1228/sn92-gen-ma
 - Padre 1: https://huggingface.co/isomsom/sn92-gen-m87b
 - Padre 2: https://huggingface.co/xflud/sn92-decider-1
 - Backbone base: https://huggingface.co/baselabs/mammoth-1

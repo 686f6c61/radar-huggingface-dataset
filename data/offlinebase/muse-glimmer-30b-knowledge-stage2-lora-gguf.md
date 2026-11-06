@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Knowledge-Stage2-LoRA-GGUF
+- Repositorio Hugging Face: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Knowledge-Stage2-LoRA-GGUF
 - Repositorio hermano de la etapa 2 (LoRA): https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Knowledge-Stage2-LoRA
 - Modelo Knowledge publicado: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B

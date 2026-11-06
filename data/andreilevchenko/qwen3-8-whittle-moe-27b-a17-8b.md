@@ -92,8 +92,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en benchma
 
 ## Enlaces
 
-- Repositorio HuggingFace (autor original): https://huggingface.co/andreilevchenko/Qwen3.8-Whittle-MoE-27B-A17.8B
-- Repositorio HuggingFace (usuario logic65): https://huggingface.co/logic65/Qwen3.8-Whittle-MoE-27B-A17.8B
+- Repositorio Hugging Face (autor original): https://huggingface.co/andreilevchenko/Qwen3.8-Whittle-MoE-27B-A17.8B
+- Repositorio Hugging Face (usuario logic65): https://huggingface.co/logic65/Qwen3.8-Whittle-MoE-27B-A17.8B
 - Entrada en Ollama: https://ollama.com/Whittle/Qwen3.8-Whittle-MoE-27B-A17.8B
 - Repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Ficha en LLM Explorer: https://llm-explorer.com/model/logic65%2FQwen3.8-Whittle-MoE-27B-A17.8B,372feFSodtnWdsRYHJ9LW5

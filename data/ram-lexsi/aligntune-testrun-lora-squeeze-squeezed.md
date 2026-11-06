@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - Al ser un adaptador LoRA, el requisito principal es el del modelo base `Qwen2.5-0.5B-Instruct`, que es un modelo pequeño (0.5B parámetros). Esto permite su ejecución en GPUs de consumo como una RTX 3060 o incluso en CPU con cuantización, aunque no se especifican cifras exactas.
 - El adaptador añade un número reducido de parámetros entrenables (típicamente del orden de millones), por lo que el overhead de memoria es mínimo.
-- Para cargar el adaptador se requiere el modelo base, que puede descargarse desde HuggingFace. El uso de PEFT permite fusionar los pesos o mantenerlos por separado.
+- Para cargar el adaptador se requiere el modelo base, que puede descargarse desde Hugging Face. El uso de PEFT permite fusionar los pesos o mantenerlos por separado.
 - Opciones de despliegue: al ser compatible con transformers, puede usarse con vLLM, llama.cpp (si se convierte a GGUF) u Ollama, aunque no se ha verificado su compatibilidad con estos backends.
 - No se dispone de datos de latencia o throughput.
 
@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables específicos. Dado que e
 
 ## Enlaces
 
-- [HuggingFace - ram-lexsi/aligntune-testrun-LoRA-Squeeze-squeezed](https://huggingface.co/ram-lexsi/aligntune-testrun-LoRA-Squeeze-squeezed)
+- [Hugging Face - ram-lexsi/aligntune-testrun-LoRA-Squeeze-squeezed](https://huggingface.co/ram-lexsi/aligntune-testrun-LoRA-Squeeze-squeezed)
 - [GitHub - Lexsi-Labs/aligntune](https://github.com/Lexsi-Labs/aligntune)
 - [Paper LoRA-Squeeze (arXiv)](https://arxiv.org/pdf/2602.10993)
 - [Documentación de evaluación de AlignTune](https://aligntune.lexsi.ai/user-guide/evaluation/)

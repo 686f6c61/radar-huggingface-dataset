@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Tri-World-Model es un modelo de síntesis de vistas noveles (novel view synthesis, NVS) desarrollado por el usuario jiahaozhang6 y publicado en HuggingFace. No es un modelo de lenguaje, sino un sistema generativo de imágenes 3D: dado un conjunto de 8 imágenes RGB de una misma escena junto con sus parámetros de cámara, genera 6 imágenes de vistas objetivo en el espacio latente de un autoencoder geométrico (GAE), que posteriormente se decodifican a RGB. El modelo se apoya en dos componentes congelados de primera fase (el backbone DA3-GIANT-1.1 y el códec GAE) y entrena únicamente un Flow Transformer de aproximadamente 778,6 millones de parámetros.
+Tri-World-Model es un modelo de síntesis de vistas noveles (novel view synthesis, NVS) desarrollado por el usuario jiahaozhang6 y publicado en Hugging Face. No es un modelo de lenguaje, sino un sistema generativo de imágenes 3D: dado un conjunto de 8 imágenes RGB de una misma escena junto con sus parámetros de cámara, genera 6 imágenes de vistas objetivo en el espacio latente de un autoencoder geométrico (GAE), que posteriormente se decodifican a RGB. El modelo se apoya en dos componentes congelados de primera fase (el backbone DA3-GIANT-1.1 y el códec GAE) y entrena únicamente un Flow Transformer de aproximadamente 778,6 millones de parámetros.
 
 La relevancia del modelo reside en su enfoque de generación en espacio latente geométrico en lugar de píxeles: las imágenes fuente se codifican conjuntamente en latentes de 64×27×48 por vista, y un transformer de flow matching genera los latentes objetivo condicionados por mapas de rayos de Plücker derivados de las cámaras. Existen dos checkpoints publicados, uno con selección Top-4 de fuentes por objetivo (24.440 pasos) y otro que lee todas las fuentes (31.418 pasos), ambos entrenados sobre el subconjunto 2K de DL3DV-10K-Meshed.
 
-El repositorio ocupa 37,1 GB e incluye los pesos oficiales de primera fase, estadísticas de normalización y los dos checkpoints completos de continuación de entrenamiento. La licencia es de tipo "other" (GAE academic and upstream terms), lo que restringe el uso comercial. El modelo está etiquetado únicamente para chino y no dispone de pipeline declarado en HuggingFace.
+El repositorio ocupa 37,1 GB e incluye los pesos oficiales de primera fase, estadísticas de normalización y los dos checkpoints completos de continuación de entrenamiento. La licencia es de tipo "other" (GAE academic and upstream terms), lo que restringe el uso comercial. El modelo está etiquetado únicamente para chino y no dispone de pipeline declarado en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Entrada / salida | Contexto o resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tri-World-Model (este) | Flow Transformer sobre latentes GAE | 8 vistas fuente + cámaras / 6 vistas objetivo | 378×672, latentes 64×27×48 | gae-academic-and-upstream-terms | HuggingFace, 0 descargas |
+| Tri-World-Model (este) | Flow Transformer sobre latentes GAE | 8 vistas fuente + cámaras / 6 vistas objetivo | 378×672, latentes 64×27×48 | gae-academic-and-upstream-terms | Hugging Face, 0 descargas |
 | Alternativas de NVS (p. ej. métodos basados en NeRF o Gaussian Splatting) | No disponible en la información | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa con alternativas de la misma categoría.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jiahaozhang6/tri-world-model
+- Hugging Face: https://huggingface.co/jiahaozhang6/tri-world-model
 - Licencia GAE: https://huggingface.co/jiahaozhang6/tri-world-model/blob/main/licenses/GAE.txt
 - Repositorio GitHub (rama 3dLatent): https://github.com/huanngzh/tri-world-model/tree/jiahaozhang/3dLatent
 - Commit de código referenciado: https://github.com/huanngzh/tri-world-model/commit/c15b8c0f559fd069002b10a2d0a3c8b1676c6bd5

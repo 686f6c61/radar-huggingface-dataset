@@ -116,7 +116,7 @@ No se dispone de datos de benchmarks ni de especificaciones de terceros comparab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/immiq/Index-Translate-2B-Orinfer-E8P-Q4A8
+- Repositorio Hugging Face: https://huggingface.co/immiq/Index-Translate-2B-Orinfer-E8P-Q4A8
 - Modelo base: https://huggingface.co/IndexTeam/Index-Translate-2B (revisión `9bc08445315723eb9b77d1b93505915eb03c3f01`)
 - Runtime Orinfer: https://github.com/iMMIQ/orinfer
 - Documentación de rendimiento: https://github.com/iMMIQ/orinfer/blob/40c36f3/docs/performance.md

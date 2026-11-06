@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cerno 9B v1.2 es un modelo de decisión tipada ("System One") desarrollado por apertixai, afinado a partir de Qwen/Qwen3.5-9B. A diferencia de un modelo generativo al uso, no produce texto: recibe un *estado* (cualquier texto o JSON) y un conjunto de *preguntas tipadas* (opción múltiple con criterios explícitos, sí/no, escalas puntuadas) y devuelve una probabilidad calibrada para cada opción de cada pregunta en un único forward pass. Está registrado en HuggingFace con pipeline `text-classification` y 8.953.803.264 parámetros reales en safetensors bf16 (17,9 GB de repositorio).
+Cerno 9B v1.2 es un modelo de decisión tipada ("System One") desarrollado por apertixai, afinado a partir de Qwen/Qwen3.5-9B. A diferencia de un modelo generativo al uso, no produce texto: recibe un *estado* (cualquier texto o JSON) y un conjunto de *preguntas tipadas* (opción múltiple con criterios explícitos, sí/no, escalas puntuadas) y devuelve una probabilidad calibrada para cada opción de cada pregunta en un único forward pass. Está registrado en Hugging Face con pipeline `text-classification` y 8.953.803.264 parámetros reales en safetensors bf16 (17,9 GB de repositorio).
 
 La versión 1.2 introduce dos cambios técnicos respecto a v1.1: atención bidireccional por bloques en las capas de atención completa (cada token atiende bidireccionalmente dentro de su bloque —el estado o una pregunta con sus opciones— y causalmente a los bloques previos) y la estrategia "read twice", que relee la entrada de hasta 3.000 tokens antes de responder. Según el autor, esto supone +8,24 puntos en el índice público sobre v1.1 (58,59 → 66,83). Al no poder aplicar vLLM esa máscara de atención, el modelo se sirve sobre `transformers` en bf16.
 
@@ -94,7 +94,7 @@ La comparación con modelos de clasificación o decisión de otros proveedores n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/apertixai/cerno-9b-v1.2
+- Modelo en Hugging Face: https://huggingface.co/apertixai/cerno-9b-v1.2
 - Cerno 27B: https://huggingface.co/apertixai/cerno-27b
 - Cerno 4B v1.2: https://huggingface.co/apertixai/cerno-4b-v1.2
 - Cerno 9B v1.1 (FP8, vLLM): https://huggingface.co/apertixai/cerno-9b

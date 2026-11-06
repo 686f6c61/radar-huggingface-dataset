@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SMAI A4 MLP (este) | 402.250 | 32x32x3 fija | MIT | HuggingFace, 0 descargas |
+| SMAI A4 MLP (este) | 402.250 | 32x32x3 fija | MIT | Hugging Face, 0 descargas |
 | LeNet-5 (referencia historica) | ~60.000 | 32x32x1 | variable | multiple |
 | ResNet-18 (referencia CIFAR) | ~11,2 M | 32x32x3 | BSD-3 / MIT segun implementacion | torchvision |
-| ViT-small (referencia) | ~22 M | 224x224x3 o adaptada | Apache 2.0 | HuggingFace |
+| ViT-small (referencia) | ~22 M | 224x224x3 o adaptada | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo del modelo publicado, por lo que la comparacion se limita a parametros, entrada y licencia. Frente a LeNet-5, el MLP tiene mas parametros pero carece de sesgo inductivo convolucional, lo que en CIFAR-10 suele traducirse en peor precision. Frente a ResNet-18 o ViT-small, la diferencia de capacidad es de uno a dos ordenes de magnitud.
 
@@ -84,5 +84,5 @@ No se dispone de datos de rendimiento comparativo del modelo publicado, por lo q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SlowArchon438/smai-a4-models
+- Hugging Face: https://huggingface.co/SlowArchon438/smai-a4-models
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B es un modelo de lenguaje causal denso de 4.022 millones de parámetros (3.600 millones sin contar embeddings) desarrollado por el equipo Qwen de Alibaba. Esta ficha concreta corresponde a la réplica publicada por el usuario EugeneEXE en HuggingFace, que reproduce los pesos del modelo base oficial `Qwen/Qwen3-4B-Base` con la licencia Apache 2.0 y el formato estándar de `transformers` más `safetensors`. Se trata, por tanto, de un espejo del modelo oficial, no de un fine-tuning ni de una variante entrenada por el autor del repositorio.
+Qwen3-4B es un modelo de lenguaje causal denso de 4.022 millones de parámetros (3.600 millones sin contar embeddings) desarrollado por el equipo Qwen de Alibaba. Esta ficha concreta corresponde a la réplica publicada por el usuario EugeneEXE en Hugging Face, que reproduce los pesos del modelo base oficial `Qwen/Qwen3-4B-Base` con la licencia Apache 2.0 y el formato estándar de `transformers` más `safetensors`. Se trata, por tanto, de un espejo del modelo oficial, no de un fine-tuning ni de una variante entrenada por el autor del repositorio.
 
 El modelo pertenece a la tercera generación de la familia Qwen y resuelve el problema de disponer de razonamiento de tipo cadena de pensamiento en un tamaño que cabe en hardware de consumo. Su rasgo diferencial es la capacidad de alternar entre modo "thinking" (razonamiento explícito para matemáticas, código y lógica) y modo "non-thinking" (diálogo directo y eficiente) dentro del mismo conjunto de pesos, controlable mediante el parámetro `enable_thinking` de la plantilla de chat.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Modo thinking | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B (esta ficha) | 4,0 B | 32.768 nativos / 131.072 con YaRN | Apache 2.0 | Sí, conmutable | HuggingFace, vLLM, SGLang, Ollama |
-| Qwen2.5-3B-Instruct | 3,1 B | 32.768 nativos / 131.072 con YaRN | Apache 2.0 | No | HuggingFace, vLLM, Ollama |
-| Llama 3.2 3B Instruct | 3,2 B | 131.072 | Llama 3.2 Community License | No | HuggingFace, vLLM, Ollama |
-| Gemma 2 2B Instruct | 2,6 B | 8.192 | Gemma Terms of Use | No | HuggingFace, vLLM, Ollama |
+| Qwen3-4B (esta ficha) | 4,0 B | 32.768 nativos / 131.072 con YaRN | Apache 2.0 | Sí, conmutable | Hugging Face, vLLM, SGLang, Ollama |
+| Qwen2.5-3B-Instruct | 3,1 B | 32.768 nativos / 131.072 con YaRN | Apache 2.0 | No | Hugging Face, vLLM, Ollama |
+| Llama 3.2 3B Instruct | 3,2 B | 131.072 | Llama 3.2 Community License | No | Hugging Face, vLLM, Ollama |
+| Gemma 2 2B Instruct | 2,6 B | 8.192 | Gemma Terms of Use | No | Hugging Face, vLLM, Ollama |
 
 La comparativa se basa en datos públicos de cada familia; no se dispone de cifras de benchmark del Qwen3-4B en la información proporcionada para establecer diferencias cuantitativas de rendimiento.
 

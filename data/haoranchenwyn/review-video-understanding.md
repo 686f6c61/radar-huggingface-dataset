@@ -4,7 +4,7 @@
 
 `haoranchenwyn/review-video-understanding` no es un modelo entrenado, sino un repositorio de notas de investigación exploratoria sobre comprensión de vídeo. La model card lo declara explícitamente: se trata de un artefacto cuyo objetivo es registrar el planteamiento de una comparación experimental, los posibles factores de confusión y los requisitos de reproducibilidad antes de reportar cualquier resultado. El repositorio contiene únicamente `summary.md` y `README.md`; no incluye checkpoint entrenado, código de evaluación, ablaciones completadas ni resultados de benchmarks.
 
-Los metadatos de HuggingFace indican la presencia de un fichero `safetensors` con 33.088 parámetros totales, tres órdenes de magnitud por debajo de cualquier modelo utilizable para generación o representación de vídeo. La etiqueta `transformer` figura entre los tags, pero la documentación del autor no describe arquitectura, datos de entrenamiento ni proceso de ajuste alguno. El repositorio está publicado bajo licencia MIT y, en el momento de la consulta, registra 0 descargas y 0 likes.
+Los metadatos de Hugging Face indican la presencia de un fichero `safetensors` con 33.088 parámetros totales, tres órdenes de magnitud por debajo de cualquier modelo utilizable para generación o representación de vídeo. La etiqueta `transformer` figura entre los tags, pero la documentación del autor no describe arquitectura, datos de entrenamiento ni proceso de ajuste alguno. El repositorio está publicado bajo licencia MIT y, en el momento de la consulta, registra 0 descargas y 0 likes.
 
 Su relevancia actual es, por tanto, documental y metodológica: sirve como plantilla de planificación para quien vaya a evaluar modelos de vídeo sobre MSR-VTT y ActivityNet Captions, insistiendo en la necesidad de emparejar líneas base, fijar versiones de dataset, semillas, hardware y registros en bruto. No debe citarse como evidencia de ninguna mejora de rendimiento.
 
@@ -85,7 +85,7 @@ La comparación directa no es aplicable: este repositorio no es un modelo, por l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/haoranchenwyn/review-video-understanding
+- Repositorio en Hugging Face: https://huggingface.co/haoranchenwyn/review-video-understanding
 - Paper asociado: no disponible
 - Blog o nota técnica externa: no disponible
 - Repositorio de código: no disponible

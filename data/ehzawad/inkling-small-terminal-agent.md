@@ -106,9 +106,9 @@ Terminal-Bench 2 emplea un harness deliberadamente simple (una sola herramienta 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este adaptador (ehzawad/inkling-small-terminal-agent) | LoRA rango 32 sobre base de 276B (12B activos) | No disponible (harness de 32K) | Apache-2.0 | HuggingFace, 8,5 GB | Especializado en agente de terminal bash/zsh en ingles; requiere el modelo base |
-| thinkingmachines/Inkling-Small (base) | 276B totales, 12B activos | No disponible | No disponible | HuggingFace | Modelo multimodal de pesos abiertos; sin especializacion en terminal; mas tokens y llamadas por episodio |
-| thinkingmachines/Inkling (profesor) | No disponible | No disponible | No disponible | HuggingFace | Profesor de mayor tamano usado para destilacion; no es un adaptador desplegable por si mismo en este flujo |
+| Este adaptador (ehzawad/inkling-small-terminal-agent) | LoRA rango 32 sobre base de 276B (12B activos) | No disponible (harness de 32K) | Apache-2.0 | Hugging Face, 8,5 GB | Especializado en agente de terminal bash/zsh en ingles; requiere el modelo base |
+| thinkingmachines/Inkling-Small (base) | 276B totales, 12B activos | No disponible | No disponible | Hugging Face | Modelo multimodal de pesos abiertos; sin especializacion en terminal; mas tokens y llamadas por episodio |
+| thinkingmachines/Inkling (profesor) | No disponible | No disponible | No disponible | Hugging Face | Profesor de mayor tamano usado para destilacion; no es un adaptador desplegable por si mismo en este flujo |
 | Otros agentes de terminal de proposito general | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -126,7 +126,7 @@ Terminal-Bench 2 emplea un harness deliberadamente simple (una sola herramienta 
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/ehzawad/inkling-small-terminal-agent
+- Hugging Face del adaptador: https://huggingface.co/ehzawad/inkling-small-terminal-agent
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Modelo profesor: https://huggingface.co/thinkingmachines/Inkling
 - Pagina de Inkling en Thinking Machines Lab: https://thinkingmachines.ai/inkling/
@@ -134,5 +134,5 @@ Terminal-Bench 2 emplea un harness deliberadamente simple (una sola herramienta 
 - Tinker (plataforma de entrenamiento): https://thinkingmachines.ai/tinker
 - Dataset de entrenamiento: https://huggingface.co/datasets/open-thoughts/OpenThoughts-Agent-RL-5K
 - Perfil del autor: https://huggingface.co/ehzawad
-- Ficha de Inkling Small en Pi (HuggingFace): https://pi.dev/models/huggingface/thinkingmachines-inkling-small
+- Ficha de Inkling Small en Pi (Hugging Face): https://pi.dev/models/huggingface/thinkingmachines-inkling-small
 - Ficha de Inkling Small en Pi (Vercel AI Gateway): https://pi.dev/models/vercel-ai-gateway/thinkingmachines-inkling-small

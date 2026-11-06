@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lfrodriguesza/my-contrastive` es un repositorio experimental alojado en HuggingFace que contiene un esqueleto de código CLIP para aprendizaje contrastivo. Lo publica el usuario `lfrodriguesza` y se presenta explícitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado ni evaluado. El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 likes en el momento de la consulta, con fecha de creación y última actualización del 14 de septiembre de 2026.
+`lfrodriguesza/my-contrastive` es un repositorio experimental alojado en Hugging Face que contiene un esqueleto de código CLIP para aprendizaje contrastivo. Lo publica el usuario `lfrodriguesza` y se presenta explícitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado ni evaluado. El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 likes en el momento de la consulta, con fecha de creación y última actualización del 14 de septiembre de 2026.
 
 El tamaño real del checkpoint de inicialización es de 33.088 parámetros (aproximadamente 33 K), según los datos de safetensors. Se trata, por tanto, de una configuración de escala "small" pensada para pruebas de humo (smoke tests) y para validar que el pipeline de código se ejecuta de extremo a extremo, no para obtener representaciones útiles en producción. La arquitectura declarada es CLIP con atención lineal, fusión mediante concatenación seguida de MLP, activación swish y normalización InstanceNorm.
 
@@ -83,6 +83,6 @@ No se identifican en la informacion disponible otros modelos comparables de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lfrodriguesza/my-contrastive
+- Modelo en Hugging Face: https://huggingface.co/lfrodriguesza/my-contrastive
 - Ficheros incluidos en el repositorio: `train.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio o demo adicionales: no disponibles. La busqueda web no devolvio ningun resultado relevante sobre este modelo.

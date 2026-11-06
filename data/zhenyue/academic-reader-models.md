@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `zhenyue/academic-reader-models` | Bundle (layout + embeddings + OCR) | No disponible | No disponible | Mixta (OXR, MIT, OFL) | HuggingFace (0 descargas) |
-| `BAAI/bge-small-en-v1.5` | Encoder de embeddings | ~33 M (no confirmado en esta conversión) | 512 tokens (típico de la familia) | MIT | HuggingFace, ampliamente usado |
-| D-FINE (upstream) | Detector de objetos | No disponible en esta ficha | No aplica | Apache-2.0 (upstream) | GitHub, HuggingFace |
+| `zhenyue/academic-reader-models` | Bundle (layout + embeddings + OCR) | No disponible | No disponible | Mixta (OXR, MIT, OFL) | Hugging Face (0 descargas) |
+| `BAAI/bge-small-en-v1.5` | Encoder de embeddings | ~33 M (no confirmado en esta conversión) | 512 tokens (típico de la familia) | MIT | Hugging Face, ampliamente usado |
+| D-FINE (upstream) | Detector de objetos | No disponible en esta ficha | No aplica | Apache-2.0 (upstream) | GitHub, Hugging Face |
 | `SoMarkAI/OXR-1.0` | Modelo de documento | No disponible | No disponible | OXR License | ModelScope (espejo en este repo) |
 
 La comparativa directa es limitada porque el repositorio no es un modelo único sino un paquete de distribución. Frente a alternativas como `docling` o `unstructured`, que ofrecen pipelines de layout y OCR en Python, este bundle se distingue por su orientación a ejecución local en Apple Silicon y por la verificación criptográfica de artefactos.
@@ -83,7 +83,7 @@ La comparativa directa es limitada porque el repositorio no es un modelo único 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zhenyue/academic-reader-models
+- Repositorio en Hugging Face: https://huggingface.co/zhenyue/academic-reader-models
 - Modelo upstream de embeddings: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Repositorio D-FINE (upstream, referencia): https://github.com/Peterande/D-FINE
 - Modelo OXR-1.0 en ModelScope: no disponible (la model card lo menciona sin enlace directo)

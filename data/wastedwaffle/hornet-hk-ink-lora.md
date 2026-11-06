@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WastedWaffle/hornet-hk-ink-lora es un repositorio alojado en HuggingFace por el usuario WastedWaffle. La informacion publica disponible es minima: la model card unicamente declara la licencia MIT, sin descripcion del modelo, sin pipeline asociado, sin idiomas declarados y sin resultados de evaluacion. El repositorio tiene un tamano aproximado de 0,5 GB y, por su identificador (sufijo "lora") y por ese tamano reducido, todo apunta a que se trata de un adaptador LoRA y no de un modelo completo con pesos propios; esta interpretacion no esta confirmada por el autor y debe tratarse como una hipotesis, no como un dato verificado.
+WastedWaffle/hornet-hk-ink-lora es un repositorio alojado en Hugging Face por el usuario WastedWaffle. La informacion publica disponible es minima: la model card unicamente declara la licencia MIT, sin descripcion del modelo, sin pipeline asociado, sin idiomas declarados y sin resultados de evaluacion. El repositorio tiene un tamano aproximado de 0,5 GB y, por su identificador (sufijo "lora") y por ese tamano reducido, todo apunta a que se trata de un adaptador LoRA y no de un modelo completo con pesos propios; esta interpretacion no esta confirmada por el autor y debe tratarse como una hipotesis, no como un dato verificado.
 
 No es posible determinar quien lo desarrolla mas alla del alias del autor, que problema resuelve ni sobre que modelo base se aplica, ya que no se ha publicado esa informacion ni en la model card ni en los resultados de busqueda web (que no devuelven ninguna referencia relevante al modelo). El nombre "hornet-hk-ink" sugiere un posible uso artistico o estilistico, pero no hay ninguna evidencia publicada que lo confirme, por lo que no debe asumirse.
 
@@ -79,5 +79,5 @@ No disponible. Al no conocerse la arquitectura, la tarea ni el modelo base, no e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WastedWaffle/hornet-hk-ink-lora
+- Repositorio en Hugging Face: https://huggingface.co/WastedWaffle/hornet-hk-ink-lora
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en los resultados de la busqueda web; los resultados devueltos no guardan relacion con el modelo.

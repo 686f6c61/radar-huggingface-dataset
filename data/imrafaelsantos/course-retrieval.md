@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`imrafaelsantos/course-retrieval` es un repositorio experimental publicado en HuggingFace que contiene una implementación de MoCo v3 (Momentum Contrast v3) orientada a tareas de recuperación (retrieval) de información. Lo desarrolla el usuario imrafaelsantos y se distribuye bajo licencia BSD-3-Clause. El propio autor declara de forma explícita que el repositorio prioriza código transparente y pruebas de humo reproducibles, y que no reclama ninguna puntuación de benchmark.
+`imrafaelsantos/course-retrieval` es un repositorio experimental publicado en Hugging Face que contiene una implementación de MoCo v3 (Momentum Contrast v3) orientada a tareas de recuperación (retrieval) de información. Lo desarrolla el usuario imrafaelsantos y se distribuye bajo licencia BSD-3-Clause. El propio autor declara de forma explícita que el repositorio prioriza código transparente y pruebas de humo reproducibles, y que no reclama ninguna puntuación de benchmark.
 
 El repositorio se presenta como una implementación funcional de MoCo v3 en configuración "huge", con atención estándar, fusión de tipo Tucker, activación approximate GELU y normalización RMSNorm. Cuenta con un fichero `train.py` como artefacto principal, un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el autor describe como checkpoint de inicialización válido para pruebas de humo, no como un modelo entrenado.
 
@@ -83,7 +83,7 @@ Como referencia cualitativa, las implementaciones de MoCo v3 publicadas por sus 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imrafaelsantos/course-retrieval
+- Modelo en Hugging Face: https://huggingface.co/imrafaelsantos/course-retrieval
 - Paper de referencia de MoCo v3 ("An Empirical Study of Training Self-Supervised Vision Transformers"): no disponible en la informacion proporcionada
 - Repositorio de codigo, demo o blog del autor: no disponible
 - Enlaces relevantes adicionales: no disponible (la busqueda web no devolvio fuentes tecnicas relacionadas con este modelo)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`KiruthikkannaM/sample` es un repositorio de modelo alojado en HuggingFace bajo la autoría de KiruthikkannaM. La información pública disponible es extremadamente limitada: no se especifica pipeline, idiomas soportados, arquitectura ni datos de entrenamiento. El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado el 2 de noviembre de 2026, lo que sugiere un artefacto reciente y sin adopción comunitaria documentada.
+`KiruthikkannaM/sample` es un repositorio de modelo alojado en Hugging Face bajo la autoría de KiruthikkannaM. La información pública disponible es extremadamente limitada: no se especifica pipeline, idiomas soportados, arquitectura ni datos de entrenamiento. El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado el 2 de noviembre de 2026, lo que sugiere un artefacto reciente y sin adopción comunitaria documentada.
 
-Por el nombre del repositorio ("sample") y la ausencia de metadatos técnicos, todo apunta a que se trata de un repositorio de prueba o de ejemplo, no de un modelo listo para producción. La única información verificable es su licencia Apache 2.0 y que el acceso está restringido (gated), requiriendo aceptar condiciones en HuggingFace antes de descargar los pesos.
+Por el nombre del repositorio ("sample") y la ausencia de metadatos técnicos, todo apunta a que se trata de un repositorio de prueba o de ejemplo, no de un modelo listo para producción. La única información verificable es su licencia Apache 2.0 y que el acceso está restringido (gated), requiriendo aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 Dado que no se han publicado especificaciones técnicas, benchmarks ni documentación asociada, esta ficha refleja únicamente los datos disponibles y marca explícitamente como "no disponible" todo aquello que no puede verificarse. Cualquier evaluación de capacidades o rendimiento requeriría acceso al repositorio y a su model card completo.
 
@@ -40,9 +40,9 @@ No se puede confirmar ninguna capacidad concreta a partir de la información pú
 
 ## Casos de uso
 
-- Evaluación interna de repositorios de ejemplo: el modelo puede utilizarse como caso de prueba para validar flujos de descarga con acceso gated en HuggingFace, verificando que el proceso de aceptación de condiciones y autenticación funciona correctamente.
+- Evaluación interna de repositorios de ejemplo: el modelo puede utilizarse como caso de prueba para validar flujos de descarga con acceso gated en Hugging Face, verificando que el proceso de aceptación de condiciones y autenticación funciona correctamente.
 - Pruebas de integración de pipelines de CI/CD: dado que el repositorio está gated, sirve para comprobar que los scripts de descarga automatizada gestionan tokens de autenticación y errores de acceso restringido.
-- Validación de plantillas de model card: el repositorio puede emplearse como referencia para probar herramientas que parsean metadatos de HuggingFace y detectan campos ausentes.
+- Validación de plantillas de model card: el repositorio puede emplearse como referencia para probar herramientas que parsean metadatos de Hugging Face y detectan campos ausentes.
 - Formación y demos de gobernanza de modelos: útil para ilustrar buenas prácticas sobre licencias (Apache 2.0) y control de acceso en la distribución de pesos.
 - Test de herramientas de escaneo de seguridad: permite verificar que los escáneres de artefactos detectan correctamente repositorios sin documentación técnica y marcan los riesgos asociados.
 - Prototipado de catálogos internos: sirve para probar sistemas de inventario de modelos que deben manejar entradas con metadatos incompletos y estado gated.
@@ -74,12 +74,12 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni la tarea del model
 - Sesgos conocidos: no documentados; no puede evaluarse su comportamiento en dominios sensibles.
 - Idiomas: no declarados, por lo que no se garantiza soporte de castellano ni de ningún otro idioma.
 - Licencia Apache 2.0: permite uso comercial y modificación, pero la licencia por sí sola no garantiza la calidad ni la seguridad del artefacto.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción a cualquier integración automatizada.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción a cualquier integración automatizada.
 - Cero adopción comunitaria (0 descargas, 0 likes): no existen informes de terceros sobre su funcionamiento.
 - Nombre "sample": sugiere que podría tratarse de un repositorio de prueba, no de un modelo destinado a uso real.
 - No apto para producción sin una auditoría previa completa de pesos, tokenizador y comportamiento.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KiruthikkannaM/sample
+- Repositorio en Hugging Face: https://huggingface.co/KiruthikkannaM/sample
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Strix Halo Kernels es una colección de kernels Triton fusionados para la GPU integrada RDNA 3.5 / gfx1151 de AMD, presente en los procesadores Ryzen AI Max (Strix Halo) con las iGPU Radeon 8050S y 8060S. El autor, axjns, los publica bajo licencia Apache 2.0 con el objetivo de resolver un problema concreto: el ecosistema de kernels del Hub de HuggingFace es mayoritariamente CUDA-only, y las alternativas como `kernels-community/activation` ofrecen decenas de variantes de compilación que ninguna resuelve en ROCm. Triton, al compilar JIT para la GPU presente, evita por completo ese problema.
+Strix Halo Kernels es una colección de kernels Triton fusionados para la GPU integrada RDNA 3.5 / gfx1151 de AMD, presente en los procesadores Ryzen AI Max (Strix Halo) con las iGPU Radeon 8050S y 8060S. El autor, axjns, los publica bajo licencia Apache 2.0 con el objetivo de resolver un problema concreto: el ecosistema de kernels del Hub de Hugging Face es mayoritariamente CUDA-only, y las alternativas como `kernels-community/activation` ofrecen decenas de variantes de compilación que ninguna resuelve en ROCm. Triton, al compilar JIT para la GPU presente, evita por completo ese problema.
 
 El proyecto implementa operaciones fusionadas de RMSNorm y GEGLU/SwiGLU optimizadas para las características particulares de Strix Halo: un APU con hasta 64 GiB de VRAM direccionable sobre memoria unificada de 128 GB, pero con un ancho de banda de memoria muy inferior al de una GPU discreta. El autor mide una brecha de aproximadamente 21× entre el throughput de prefill y decode, lo que confirma que el cuello de botella es la memoria. Por eso, fusionar operaciones que eliminan viajes de ida y vuelta a memoria rinde más que optimizar compute. Los kernels incluyen módulos `nn.Module` drop-in que preservan los nombres de parámetros originales, permitiendo intercambiar capas sin cirugía de pesos.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparables entre estos proyectos en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/axjns/strix-halo-kernels
+- Repositorio Hugging Face: https://huggingface.co/axjns/strix-halo-kernels
 - Benchmarks asociados (dataset): https://huggingface.co/datasets/axjns/strix-halo-inference-bench
 - Proyecto relacionado (autokernel-halo-strix): https://github.com/joelhenwang/autokernel-halo-strix
 - Guia de despliegue de LLMs en Strix Halo: https://codersera.com/blog/amd-strix-halo-ryzen-ai-max-local-llm-setup-2026/

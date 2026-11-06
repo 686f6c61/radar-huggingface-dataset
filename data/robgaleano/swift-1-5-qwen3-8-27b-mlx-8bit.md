@@ -97,7 +97,7 @@ No se han publicado en la información disponible resultados de benchmarks como 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robgaleano/Swift-1.5-Qwen3.8-27B-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/robgaleano/Swift-1.5-Qwen3.8-27B-MLX-8bit
 - Modelo base BF16: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Drafter MTP 8 bits: https://huggingface.co/robgaleano/Swift-1.5-Qwen3.8-27B-MTP-MLX-8bit
 - Colección Swift 1.5: https://huggingface.co/collections/ukisai/swift-15-27b

@@ -79,8 +79,8 @@ No se dispone de datos de rendimiento comparativo, por lo que la elección depen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mondk/GGUF.granite-4.0-Improved-Enhanced-Refined
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/granite-4.0-1b-unsloth-bnb-4bit
+- Repositorio Hugging Face: https://huggingface.co/mondk/GGUF.granite-4.0-Improved-Enhanced-Refined
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/granite-4.0-1b-unsloth-bnb-4bit
 - Documentación oficial de Granite 4.0: https://www.ibm.com/granite/docs/models/granite
 - Repositorio GitHub de Granite 4.0: https://github.com/ibm-granite/granite-4.0-language-models
 - Página principal de IBM Granite: https://www.ibm.com/granite

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ingot-XVII-27B-Q2 es un modelo de lenguaje de 26.896 millones de parámetros distribuido en formato GGUF y cuantizado de forma ternaria (pesos restringidos a los valores −1, 0 y +1 con escalas por bloque). Lo publica el usuario de HuggingFace `dendriteholdings` como espejo público de una submission ganadora de Ingot, una subred de Bittensor en la que los mineros compiten por producir la cuantización que más se aproxima a un modelo profesor fijo. El modelo base es Ternary Bonsai 2 27B de Prism ML, que a su vez es una cuantización ternaria de un profesor de 27B (Qwen3.8-27B) en BF16.
+Ingot-XVII-27B-Q2 es un modelo de lenguaje de 26.896 millones de parámetros distribuido en formato GGUF y cuantizado de forma ternaria (pesos restringidos a los valores −1, 0 y +1 con escalas por bloque). Lo publica el usuario de Hugging Face `dendriteholdings` como espejo público de una submission ganadora de Ingot, una subred de Bittensor en la que los mineros compiten por producir la cuantización que más se aproxima a un modelo profesor fijo. El modelo base es Ternary Bonsai 2 27B de Prism ML, que a su vez es una cuantización ternaria de un profesor de 27B (Qwen3.8-27B) en BF16.
 
 La propuesta del modelo es la eficiencia extrema en memoria: los dos ficheros publicados ocupan 5,95 GB (1,75 bits por peso, repack sin pérdida en formato PTQ1_0) y 7,21 GB (2,125 bits por peso, contenedor de 2 bits con los mismos códigos ternarios), lo que permite ejecutar un modelo de ~27B en hardware de consumo. El refinamiento del minero no altera ningún código ternario (0 de 26,87B modificados) y se limita a reajustar el 99,8% de las escalas fp16 por bloque y todos los pesos de normalización.
 
@@ -115,7 +115,7 @@ La comparación relevante es de compromiso: frente al profesor BF16 en precisió
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dendriteholdings/Ingot-XVII-27B-Q2
+- Modelo en Hugging Face: https://huggingface.co/dendriteholdings/Ingot-XVII-27B-Q2
 - Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Modelo genesis de la ronda: https://huggingface.co/dendriteholdings/Ingot-genesis-27B-Q2
 - Resultados en vivo de la subred: https://theingot.ai

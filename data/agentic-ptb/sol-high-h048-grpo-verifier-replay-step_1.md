@@ -72,5 +72,5 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- [HuggingFace: agentic-ptb/sol-high.grpo-verifier-replay.step_1](https://huggingface.co/agentic-ptb/sol-high.grpo-verifier-replay.step_1)
+- [Hugging Face: agentic-ptb/sol-high.grpo-verifier-replay.step_1](https://huggingface.co/agentic-ptb/sol-high.grpo-verifier-replay.step_1)
 - [Modelo base: Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base) (enlace inferido, no confirmado en la información proporcionada)

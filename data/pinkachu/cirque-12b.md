@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cirque-12B es un checkpoint publicado en HuggingFace por el usuario pinkachu bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico (unicamente el bloque de metadatos de licencia), no declara pipeline de inferencia, no especifica idiomas soportados y acumula 0 descargas y 0 "likes". Se trata, por tanto, de una publicacion sin documentacion asociada que permita verificar arquitectura, datos de entrenamiento o rendimiento.
+Cirque-12B es un checkpoint publicado en Hugging Face por el usuario pinkachu bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico (unicamente el bloque de metadatos de licencia), no declara pipeline de inferencia, no especifica idiomas soportados y acumula 0 descargas y 0 "likes". Se trata, por tanto, de una publicacion sin documentacion asociada que permita verificar arquitectura, datos de entrenamiento o rendimiento.
 
 El unico indicio sobre el tamano del modelo es el sufijo "12B" del propio identificador del repositorio, que sugiere del orden de 12.000 millones de parametros, pero este dato no aparece confirmado en ningun artefacto publicado (ni config.json, ni model card, ni tabla de parametros). Cualquier afirmacion sobre arquitectura, ventana de contexto, tokenizador o regimen de entrenamiento seria especulativa y no se incluye en esta ficha.
 
@@ -92,6 +92,6 @@ Las filas de referencia se incluyen unicamente para contextualizar la categoria 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pinkachu/Cirque-12B
+- Repositorio en Hugging Face: https://huggingface.co/pinkachu/Cirque-12B
 - Model card del autor: sin contenido tecnico (solo metadatos de licencia Apache 2.0)
 - Paper, blog de entrenamiento, repositorio de codigo o demo: no disponibles en la informacion proporcionada

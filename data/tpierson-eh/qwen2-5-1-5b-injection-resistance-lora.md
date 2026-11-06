@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este adaptador LoRA es un artefacto de investigación desarrollado por el usuario de HuggingFace `tpierson-eh` sobre el modelo base Qwen2.5-1.5B-Instruct. Su propósito no es ofrecer un producto listo para producción, sino medir empíricamente si un ajuste fino ligero puede enseñar a un modelo a resistir ataques de inyección de prompt, es decir, instrucciones maliciosas embebidas en texto que el modelo procesa como datos (salidas de herramientas, documentos, páginas recuperadas). El adaptador se publica junto a una batería de evaluación reproducible y un repositorio con todo el pipeline de entrenamiento.
+Este adaptador LoRA es un artefacto de investigación desarrollado por el usuario de Hugging Face `tpierson-eh` sobre el modelo base Qwen2.5-1.5B-Instruct. Su propósito no es ofrecer un producto listo para producción, sino medir empíricamente si un ajuste fino ligero puede enseñar a un modelo a resistir ataques de inyección de prompt, es decir, instrucciones maliciosas embebidas en texto que el modelo procesa como datos (salidas de herramientas, documentos, páginas recuperadas). El adaptador se publica junto a una batería de evaluación reproducible y un repositorio con todo el pipeline de entrenamiento.
 
 La relevancia del artefacto es metodológica: documenta un compromiso medible entre resistencia a la inyección y falsos positivos sobre contenido legítimo. El autor es explícito al señalar que el adaptador no constituye una defensa por sí mismo y que debe situarse detrás de capas deterministas de filtrado y control de acciones. Con 18,5 millones de parámetros entrenables sobre un modelo de 1.500 millones, el adaptador ocupa apenas un 0,1 GB en disco y sirve como receta replicable para otros desarrolladores.
 
@@ -68,8 +68,8 @@ La model card describe una evaluación con dos ramas (resistencia y comportamien
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tpierson-eh/qwen2.5-1.5b-injection-resistance-lora | 1,5B + 18,5M adaptador | no disponible | Defensa ante inyección de prompt (investigación) | Apache-2.0 | HuggingFace, 14 descargas |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | no disponible en esta ficha | Modelo base de instrucciones | Apache-2.0 | HuggingFace |
+| tpierson-eh/qwen2.5-1.5b-injection-resistance-lora | 1,5B + 18,5M adaptador | no disponible | Defensa ante inyección de prompt (investigación) | Apache-2.0 | Hugging Face, 14 descargas |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | no disponible en esta ficha | Modelo base de instrucciones | Apache-2.0 | Hugging Face |
 | Adaptadores de seguridad comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de otros adaptadores de resistencia a inyección comparables en la información proporcionada.
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de otros adaptadores de resistencia a in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tpierson-eh/qwen2.5-1.5b-injection-resistance-lora
+- Hugging Face: https://huggingface.co/tpierson-eh/qwen2.5-1.5b-injection-resistance-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Dataset de evaluación: https://huggingface.co/datasets/tpierson-eh/injection-defense-battery
 - Repositorio del experimento: https://github.com/electrohire/injection-defense

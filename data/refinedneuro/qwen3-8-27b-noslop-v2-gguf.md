@@ -94,7 +94,7 @@ No se dispone de datos de otros modelos comparables de terceros en la informaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RefinedNeuro/Qwen3.8-27b-noslop-v2-gguf
+- Hugging Face: https://huggingface.co/RefinedNeuro/Qwen3.8-27b-noslop-v2-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Primera versión del autor: https://huggingface.co/RefinedNeuro/Qwen3.8-27b-noslop-gguf
 - Heretic (herramienta de edición): https://github.com/p-e-w/heretic

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`schronn/policy_baseline` es un modelo de política robótica basado en SmolVLA, un modelo de visión-lenguaje-acción (VLA) compacto y eficiente diseñado para ejecutarse en hardware de consumo. Desarrollado por el usuario schronn y entrenado con el framework LeRobot de HuggingFace, este modelo se ha ajustado específicamente sobre el dataset `schronn/pouring_blue_v3`, orientado a tareas de vertido de líquidos con robots manipuladores.
+`schronn/policy_baseline` es un modelo de política robótica basado en SmolVLA, un modelo de visión-lenguaje-acción (VLA) compacto y eficiente diseñado para ejecutarse en hardware de consumo. Desarrollado por el usuario schronn y entrenado con el framework LeRobot de Hugging Face, este modelo se ha ajustado específicamente sobre el dataset `schronn/pouring_blue_v3`, orientado a tareas de vertido de líquidos con robots manipuladores.
 
 El modelo parte de `lerobot/smolvla_base` y hereda su arquitectura: un transformer multimodal que procesa observaciones visuales e instrucciones en lenguaje natural para generar acciones motoras continuas. Con aproximadamente 450 millones de parámetros y un tamaño de repositorio de 1,2 GB, representa una opción viable para despliegue en GPU de gama media. Su relevancia radica en la creciente demanda de políticas robóticas que puedan entrenarse y ejecutarse localmente sin depender de infraestructura de servidores de alto coste.
 
@@ -77,7 +77,7 @@ SmolVLA destaca frente a OpenVLA por su tamano drasticamente menor (450M vs 7B),
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/schronn/policy_baseline
+- Modelo en Hugging Face: https://huggingface.co/schronn/policy_baseline
 - Perfil del autor: https://huggingface.co/schronn
 - Dataset de entrenamiento: https://huggingface.co/datasets/schronn/pouring_blue_v3
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844

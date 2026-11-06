@@ -75,9 +75,9 @@ La comparación en japonés se evaluó a ciegas con Claude Sonnet; la diferencia
 
 | Modelo | Pesos de expertos | Tipo de cuantización | Decodificación corta (tok/s) | Japonés (errores de 48) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este fichero (UD-IQ1_S corregido) | 31,15 GiB | IQ1_S con capa 18 en IQ2_S | 42,0-45,4 | 6 | Qwen Community 1.0 | HuggingFace, 3 shards (uno en Unsloth) |
-| Unsloth UD-IQ1_M | 32,42 GiB | IQ1_M | 36,5-37,1 | 10 | Qwen Community 1.0 | HuggingFace (unsloth/Qwen3.8-Flash-Next-GGUF) |
-| Gyro-M (agentionai) | 29,88 GiB | TQ2_0 | ~39-40 | 15 | no disponible | HuggingFace |
+| Este fichero (UD-IQ1_S corregido) | 31,15 GiB | IQ1_S con capa 18 en IQ2_S | 42,0-45,4 | 6 | Qwen Community 1.0 | Hugging Face, 3 shards (uno en Unsloth) |
+| Unsloth UD-IQ1_M | 32,42 GiB | IQ1_M | 36,5-37,1 | 10 | Qwen Community 1.0 | Hugging Face (unsloth/Qwen3.8-Flash-Next-GGUF) |
+| Gyro-M (agentionai) | 29,88 GiB | TQ2_0 | ~39-40 | 15 | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ La comparación en japonés se evaluó a ciegas con Claude Sonnet; la diferencia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tokiryo/Qwen3.8-Flash-Next-UD-IQ1_S-Strata-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tokiryo/Qwen3.8-Flash-Next-UD-IQ1_S-Strata-GGUF
 - GGUF original de Unsloth: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Shard UD-IQ1_S de Unsloth: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF/tree/main/UD-IQ1_S
 - Modelo base Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

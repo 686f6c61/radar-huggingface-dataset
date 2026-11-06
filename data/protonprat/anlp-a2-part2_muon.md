@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ProtonPrat/anlp-a2-part2_muon` es un transformer causal de arquitectura personalizada entrenado como parte de la asignatura ANLP (Assignment 2, parte 2) y publicado en HuggingFace por el usuario ProtonPrat. No es un modelo de proposito general ni un lanzamiento comercial: se trata de un artefacto academico de 10.084.480 parametros entrenado desde cero sobre 42.307.041 posiciones de `browndw/human-ai-parallel-corpus`. Su relevancia es fundamentalmente metodologica, como ejemplo reproducible de entrenamiento de un modelo pequeno con el optimizador Muon y de estudio de la dinamica de convergencia en corpus paralelos.
+`ProtonPrat/anlp-a2-part2_muon` es un transformer causal de arquitectura personalizada entrenado como parte de la asignatura ANLP (Assignment 2, parte 2) y publicado en Hugging Face por el usuario ProtonPrat. No es un modelo de proposito general ni un lanzamiento comercial: se trata de un artefacto academico de 10.084.480 parametros entrenado desde cero sobre 42.307.041 posiciones de `browndw/human-ai-parallel-corpus`. Su relevancia es fundamentalmente metodologica, como ejemplo reproducible de entrenamiento de un modelo pequeno con el optimizador Muon y de estudio de la dinamica de convergencia en corpus paralelos.
 
 El modelo se distribuye con pesos en `safetensors` bajo un directorio `hf_export/` que incluye un `config.json` de arquitectura propia y un tokenizador BPE byte-level entrenado solo con los datos de entrenamiento. No registra una arquitectura `AutoModel` de Transformers, por lo que no puede cargarse con `from_pretrained` estandar: requiere el codigo del repositorio de la asignatura (`src.part1.model.Transformer` o `scripts/infer.py`). El repositorio ocupa 1,2 GB porque, ademas de los pesos finales, incluye estados completos de reanudacion (modelo, optimizador, RNG y cursor del tokenizador) y diez hitos de entrenamiento.
 
@@ -49,7 +49,7 @@ El entrenamiento consume 42.307.041 posiciones sobre un corpus paralelo humano-I
 - Estudio del optimizador Muon en modelos pequenos: el modelo sirve como punto de referencia reproducible para analizar la dinamica de convergencia de Muon frente a AdamW en un presupuesto de unos 42 millones de posiciones, comparando curvas de perdida de validacion.
 - Reproducibilidad de resultados academicos: al incluir `final.pt`, `latest.pt`, `best.pt` y los diez hitos `fraction_0.1.pt`–`fraction_1.0.pt` con estado de optimizador, RNG y cursor del tokenizador, permite reanudar o auditar el entrenamiento paso a paso.
 - Investigacion sobre tokenizadores: el `tokenizer.json` es un BPE byte-level entrenado solo con el corpus, lo que permite estudiar el efecto del vocabulario en la perplejidad de un modelo de ~10 M de parametros.
-- Docencia y practicas de posgrado: es un ejemplo completo de pipeline de exportacion a HuggingFace con arquitectura personalizada no compatible con `AutoModel`, util para ensenar el ciclo completo de entrenamiento, exportacion y publicacion.
+- Docencia y practicas de posgrado: es un ejemplo completo de pipeline de exportacion a Hugging Face con arquitectura personalizada no compatible con `AutoModel`, util para ensenar el ciclo completo de entrenamiento, exportacion y publicacion.
 - Evaluacion de metricas de continuacion: el par perplejidad/BLEU publicado permite discutir las limitaciones de las metricas automaticas de solapamiento en generacion de texto.
 - Baseline para experimentos de bajo coste: al caber en CPU y en cualquier GPU consumer, sirve como linea base barata para comparar tecnicas de regularizacion, inicializacion o schedules antes de escalar a modelos mayores.
 - Generacion de texto experimental: continuaciones de texto en ingles con fines de demostracion o test de integracion, siempre con expectativas de calidad muy limitadas dado el tamano del modelo.
@@ -83,10 +83,10 @@ No hay modelos directamente comparables en la informacion disponible, ya que se 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| `ProtonPrat/anlp-a2-part2_muon` | 10.084.480 | no disponible | no disponible | HuggingFace, requiere codigo propio | Perplejidad 40,432305; BLEU 1,669578 (test propio) |
-| EleutherAI Pythia 14M | 14 M | 2048 tokens | Apache 2.0 | HuggingFace, `AutoModel` estandar | No disponible en esta ficha |
-| GPT-2 small | 124 M | 1024 tokens | MIT | HuggingFace, `AutoModel` estandar | No disponible en esta ficha |
-| TinyLlama 1.1B | 1,1 B | 2048 tokens | Apache 2.0 | HuggingFace, `AutoModel` estandar | No disponible en esta ficha |
+| `ProtonPrat/anlp-a2-part2_muon` | 10.084.480 | no disponible | no disponible | Hugging Face, requiere codigo propio | Perplejidad 40,432305; BLEU 1,669578 (test propio) |
+| EleutherAI Pythia 14M | 14 M | 2048 tokens | Apache 2.0 | Hugging Face, `AutoModel` estandar | No disponible en esta ficha |
+| GPT-2 small | 124 M | 1024 tokens | MIT | Hugging Face, `AutoModel` estandar | No disponible en esta ficha |
+| TinyLlama 1.1B | 1,1 B | 2048 tokens | Apache 2.0 | Hugging Face, `AutoModel` estandar | No disponible en esta ficha |
 
 La diferencia practica mas relevante no es de rendimiento sino de ecosistema: los tres modelos de referencia se cargan con `AutoModel` y disponen de soporte en vLLM, llama.cpp u Ollama, mientras que este modelo exige el codigo de la asignatura para instanciar la arquitectura.
 
@@ -107,7 +107,7 @@ La diferencia practica mas relevante no es de rendimiento sino de ecosistema: lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProtonPrat/anlp-a2-part2_muon
+- Modelo en Hugging Face: https://huggingface.co/ProtonPrat/anlp-a2-part2_muon
 - Run de W&B del entrenamiento: https://wandb.ai/proton_prat/anlp-assignment-2/runs/bmh44pp1
 - Dataset de entrenamiento: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - Repositorio del optimizador Muon: https://github.com/KellerJordan/Muon

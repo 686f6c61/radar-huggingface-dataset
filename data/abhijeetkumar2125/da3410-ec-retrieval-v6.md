@@ -87,6 +87,6 @@ No se dispone de datos de rendimiento comparativo entre estos sistemas en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AbhijeetKumar2125/da3410-ec-retrieval-v6
+- Hugging Face: https://huggingface.co/AbhijeetKumar2125/da3410-ec-retrieval-v6
 - MMseqs2 (herramienta de búsqueda subyacente): https://github.com/soedinglab/MMseqs2
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados al modelo.

@@ -8,8 +8,8 @@ El modelo Qwen3.8-27B-test-GGUF-no-MTP es una cuantización GGUF creada por vvso
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text); no se especifica el tipo exacto en la información disponible. La etiqueta en HuggingFace la asocia a qwen3_5 |
-| Parametros totales | 460.730.096 (según metadatos de HuggingFace; inconsistente con la denominación 27B del nombre) |
+| Arquitectura | Transformer multimodal (image-text-to-text); no se especifica el tipo exacto en la información disponible. La etiqueta en Hugging Face la asocia a qwen3_5 |
+| Parametros totales | 460.730.096 (según metadatos de Hugging Face; inconsistente con la denominación 27B del nombre) |
 | Parametros activos | No disponible |
 | Longitud de contexto | No disponible (en el ejemplo de uso se configura --ctx-size 8192) |
 | Tipos de cuantizacion | Q4_K_M y Q5_K_M (GGUF); mmproj en BF16 |
@@ -19,7 +19,7 @@ El modelo Qwen3.8-27B-test-GGUF-no-MTP es una cuantización GGUF creada por vvso
 
 ## Arquitectura y entrenamiento
 
-El modelo es un merge lineal 50/50 de Qwen3.6-27B y Qwen3.8-27B, según se documenta en merge-manifest.json del checkpoint original. No se dispone de información detallada sobre el dataset de entrenamiento, el número de tokens ni la aplicación de técnicas de alineación como RLHF o DPO. La etiqueta de HuggingFace asocia el modelo a la familia qwen3_5, pero no se ofrece una descripción oficial de la arquitectura. La innovación técnica más destacable es la eliminación de las capas de predicción de múltiples tokens (MTP) durante la conversión a GGUF. El resultado es un modelo con 64 capas y 851 tensores, sin la metadata qwen35.nextn_predict_layers. El encoder de visión (mmproj) se mantiene en BF16 y es idéntico al de la versión con MTP.
+El modelo es un merge lineal 50/50 de Qwen3.6-27B y Qwen3.8-27B, según se documenta en merge-manifest.json del checkpoint original. No se dispone de información detallada sobre el dataset de entrenamiento, el número de tokens ni la aplicación de técnicas de alineación como RLHF o DPO. La etiqueta de Hugging Face asocia el modelo a la familia qwen3_5, pero no se ofrece una descripción oficial de la arquitectura. La innovación técnica más destacable es la eliminación de las capas de predicción de múltiples tokens (MTP) durante la conversión a GGUF. El resultado es un modelo con 64 capas y 851 tensores, sin la metadata qwen35.nextn_predict_layers. El encoder de visión (mmproj) se mantiene en BF16 y es idéntico al de la versión con MTP.
 
 ## Capacidades
 
@@ -53,9 +53,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vvsotnikov/Qwen3.8-27B-test-GGUF-no-MTP (este) | 460.730.096 según HuggingFace (inconsistente con denominación 27B) | No disponible | Q4_K_M, Q5_K_M + mmproj BF16 | Apache-2.0 | HuggingFace |
-| vvsotnikov/Qwen3.8-27B-test-GGUF (con MTP) | No disponible | No disponible | Similar, con MTP | Apache-2.0 | HuggingFace |
-| unsloth/Qwen3.8-27B-GGUF | No disponible | No disponible | GGUF (no especificado) | No disponible | HuggingFace |
+| vvsotnikov/Qwen3.8-27B-test-GGUF-no-MTP (este) | 460.730.096 según Hugging Face (inconsistente con denominación 27B) | No disponible | Q4_K_M, Q5_K_M + mmproj BF16 | Apache-2.0 | Hugging Face |
+| vvsotnikov/Qwen3.8-27B-test-GGUF (con MTP) | No disponible | No disponible | Similar, con MTP | Apache-2.0 | Hugging Face |
+| unsloth/Qwen3.8-27B-GGUF | No disponible | No disponible | GGUF (no especificado) | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 

@@ -72,7 +72,7 @@ La model card no incluye cifras de MMLU, HumanEval, GSM8K ni de ninguna otra eva
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JiRackTernary_405b | 107.756.340.964 (recuento real safetensors) | No disponible | Sin benchmarks publicados; en estado DEV | cms-manhattan-jirack-v1.2, propietaria, uso comercial con 5 por ciento de royalty | safetensors en HuggingFace, 272,3 GB |
+| JiRackTernary_405b | 107.756.340.964 (recuento real safetensors) | No disponible | Sin benchmarks publicados; en estado DEV | cms-manhattan-jirack-v1.2, propietaria, uso comercial con 5 por ciento de royalty | safetensors en Hugging Face, 272,3 GB |
 | meta-llama/Meta-Llama-3.1-405B (base) | 405.000 millones | 128.000 tokens (segun la ficha publica del modelo base) | Rendimiento publicado por Meta en su model card | Llama 3.1 Community License | safetensors, ampliamente soportado |
 | Otros modelos ternarios tipo BitNet (por ejemplo, la familia BitNet b1.58 de Microsoft) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 
@@ -93,7 +93,7 @@ Los datos de la fila correspondiente a Llama 3.1 405B proceden de la documentaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kgrabko/JiRackTernary_405b
+- Modelo en Hugging Face: https://huggingface.co/kgrabko/JiRackTernary_405b
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-405B
 - Licencia del modelo: https://huggingface.co/kgrabko/JiRackTernary_405b/blob/main/LICENSE
 - IDE JiRack (version de prueba): https://huggingface.co/CMSManhattan/JiRackDeltaNet_27b/resolve/main/jirack_ide.zip

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-quasarcake es un adaptador LoRA (Low-Rank Adaptation) de tipo text-to-image publicado en HuggingFace por el usuario Haruka041. Se trata de un ajuste de bajo rango sobre el modelo de difusion krea/Krea-2-Turbo, orientado a reproducir un estilo visual concreto que se activa mediante la palabra clave `quasarcake style`. El repositorio ocupa 0,2 GB, esta etiquetado con la libreria `diffusers` y sigue la plantilla `template:diffusion-lora` de HuggingFace, lo que lo hace cargable directamente desde pipelines de Diffusers junto al modelo base.
+quasarcake es un adaptador LoRA (Low-Rank Adaptation) de tipo text-to-image publicado en Hugging Face por el usuario Haruka041. Se trata de un ajuste de bajo rango sobre el modelo de difusion krea/Krea-2-Turbo, orientado a reproducir un estilo visual concreto que se activa mediante la palabra clave `quasarcake style`. El repositorio ocupa 0,2 GB, esta etiquetado con la libreria `diffusers` y sigue la plantilla `template:diffusion-lora` de Hugging Face, lo que lo hace cargable directamente desde pipelines de Diffusers junto al modelo base.
 
 El modelo no resuelve una tarea nueva: aporta una capa de personalizacion estilistica sobre una base preentrenada. Su relevancia practica depende enteramente de la calidad del modelo base, del dataset de imagenes usado durante el entrenamiento y de la licencia aplicable, y ninguno de esos tres elementos esta documentado en la informacion disponible. El autor no ha publicado detalles de entrenamiento (rango, alpha, pasos, learning rate, resolucion ni composicion del dataset) ni resultados de evaluacion.
 
@@ -97,7 +97,7 @@ No se dispone de informacion sobre adaptadores comparables publicados con el mis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Haruka041/quasarcake
+- Repositorio en Hugging Face: https://huggingface.co/Haruka041/quasarcake
 - Descarga de ficheros: https://huggingface.co/Haruka041/quasarcake/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Perfil del autor: https://huggingface.co/Haruka041

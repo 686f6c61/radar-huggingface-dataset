@@ -6,7 +6,7 @@ llmmm-recipes es un modelo de 1.515.006 parámetros desarrollado por el usuario 
 
 El modelo se complementa con un buscador de recetas con restricciones y unas políticas de ranking de 705 parámetros, que permiten recuperar recetas existentes filtrando por tiempo total máximo, ingredientes obligatorios o excluidos, límite de ingredientes faltantes, raciones y código de idioma de origen. La arquitectura se etiqueta como set-transformer, lo que encaja con una entrada tratada como conjunto y no como secuencia.
 
-Es relevante ahora por su enfoque de dominio muy acotado, su tamaño mínimo (menos de 6 MiB en fp32) y su pipeline medido de forma explícita: recuperación del conjunto fuente en el top-5 del 83,5 % sobre 200 consultas de test, con una mediana de 0,43 s por solicitud. La model card es inusualmente detallada en la descripción de límites, métricas de cobertura y advertencias, aunque no declara licencia, idiomas soportados ni pipeline de HuggingFace.
+Es relevante ahora por su enfoque de dominio muy acotado, su tamaño mínimo (menos de 6 MiB en fp32) y su pipeline medido de forma explícita: recuperación del conjunto fuente en el top-5 del 83,5 % sobre 200 consultas de test, con una mediana de 0,43 s por solicitud. La model card es inusualmente detallada en la descripción de límites, métricas de cobertura y advertencias, aunque no declara licencia, idiomas soportados ni pipeline de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -90,7 +90,7 @@ Advertencias sobre estas cifras: los tiempos excluyen la inicialización y corre
 - La búsqueda local requiere además una descarga opcional de índice de 36,0 MiB para el navegador.
 - GPU recomendadas: no aplica ninguna GPU dedicada; el modelo cabe holgadamente en cualquier GPU de consumo e incluso en CPU.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer actual y en la mayoría de iGPU, dado el tamaño inferior a 10 MiB de pesos.
-- Despliegue: PyTorch con `pytorch_model_hub_mixin` desde HuggingFace Hub; demostración en navegador mediante el espacio `incrediblecrab/llmmm-recipes-demo`. El buscador de texto en Python (`RecipeFinder`) exige un catálogo local autorizado, su índice de metadatos verificado y el corpus canónico `recipe_ids.npz`, que no se incluyen en el modelo público.
+- Despliegue: PyTorch con `pytorch_model_hub_mixin` desde Hugging Face Hub; demostración en navegador mediante el espacio `incrediblecrab/llmmm-recipes-demo`. El buscador de texto en Python (`RecipeFinder`) exige un catálogo local autorizado, su índice de metadatos verificado y el corpus canónico `recipe_ids.npz`, que no se incluyen en el modelo público.
 - Latencia medida en la búsqueda en vivo: mediana de 0,43 s y p95 de 2,05 s por solicitud, sin inicialización. Throughput no disponible.
 - vLLM, llama.cpp, Ollama y TGI: no disponibles para este modelo.
 
@@ -118,7 +118,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/incrediblecrab/llmmm-recipes
+- Modelo en Hugging Face: https://huggingface.co/incrediblecrab/llmmm-recipes
 - Demostración pública en navegador: https://huggingface.co/spaces/incrediblecrab/llmmm-recipes-demo
 - Conjunto de datos de ingredientes (4.653.430 registros): https://huggingface.co/datasets/incrediblecrab/llmmm-recipe-ingredients
 - Muestra de doce recetas con instrucciones de Wikibooks y atribución: https://huggingface.co/datasets/incrediblecrab/llmmm-recipe-sample

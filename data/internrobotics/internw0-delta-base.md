@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InternW0-Delta-Base es un repositorio publicado por la organizacion InternRobotics en HuggingFace bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene unicamente el bloque de metadatos de licencia, sin descripcion tecnica, sin arquitectura declarada, sin tabla de resultados y sin instrucciones de uso. El repositorio registra 0 descargas y 0 "likes", y no tiene pipeline declarado ni idiomas especificados, por lo que no existe evidencia publica de validacion por parte de terceros.
+InternW0-Delta-Base es un repositorio publicado por la organizacion InternRobotics en Hugging Face bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene unicamente el bloque de metadatos de licencia, sin descripcion tecnica, sin arquitectura declarada, sin tabla de resultados y sin instrucciones de uso. El repositorio registra 0 descargas y 0 "likes", y no tiene pipeline declarado ni idiomas especificados, por lo que no existe evidencia publica de validacion por parte de terceros.
 
 La busqueda web realizada no ha devuelto ninguna fuente relacionada con el modelo: los resultados obtenidos corresponden a paginas sobre el codigo IATA del aeropuerto de Larnaca (LCA), completamente ajenas al objeto de esta ficha. Tampoco se ha localizado paper, blog tecnico, repositorio de codigo ni demo asociados.
 
@@ -98,8 +98,8 @@ No disponible. No es posible establecer una comparativa porque se desconoce la c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/InternRobotics/InternW0-Delta-Base
-- Perfil de la organizacion en HuggingFace: https://huggingface.co/InternRobotics
+- Modelo en Hugging Face: https://huggingface.co/InternRobotics/InternW0-Delta-Base
+- Perfil de la organizacion en Hugging Face: https://huggingface.co/InternRobotics
 - Texto de la licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Resultados de la busqueda web: no relevantes. Las unicas entradas devueltas corresponden al aeropuerto de Larnaca y a su codigo IATA (LCA), sin ninguna relacion con el modelo.

@@ -65,7 +65,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juwon1105/RLVR-qwen3-1.7B-hotpot5000
+- Modelo en Hugging Face: https://huggingface.co/juwon1105/RLVR-qwen3-1.7B-hotpot5000
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset HotpotQA: https://huggingface.co/datasets/mehuldamani/hotpot_qa
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300

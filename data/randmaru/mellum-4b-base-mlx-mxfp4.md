@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `randmaru/Mellum-4b-base-mlx-mxfp4` es una cuantización en formato MXFP4 (4-bit floating point con microscaling) del modelo base `JetBrains/Mellum-4b-base`, realizada por el usuario randmaru y publicada en HuggingFace. Está diseñado específicamente para inferencia eficiente en Apple Silicon (chips de la serie M) mediante la librería MLX, aprovechando el soporte nativo de microscaling en la Neural Engine y la GPU de estos procesadores.
+El modelo `randmaru/Mellum-4b-base-mlx-mxfp4` es una cuantización en formato MXFP4 (4-bit floating point con microscaling) del modelo base `JetBrains/Mellum-4b-base`, realizada por el usuario randmaru y publicada en Hugging Face. Está diseñado específicamente para inferencia eficiente en Apple Silicon (chips de la serie M) mediante la librería MLX, aprovechando el soporte nativo de microscaling en la Neural Engine y la GPU de estos procesadores.
 
 La cuantización MXFP4 utiliza un esquema de punto flotante de 4 bits con exponente compartido por grupo de 32 elementos (E8M0), lo que preserva mejor el rango dinámico de los pesos que las cuantizaciones enteras convencionales (INT4/NF4). El repositorio ocupa aproximadamente 2,1 GB, y el fichero de pesos en formato safetensors tiene un tamaño de 2.135.555.369 bytes. La licencia es Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas.
 
@@ -84,5 +84,5 @@ No se dispone de comparaciones con otros modelos de edición de código (por eje
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/randmaru/Mellum-4b-base-mlx-mxfp4
+- Repositorio Hugging Face: https://huggingface.co/randmaru/Mellum-4b-base-mlx-mxfp4
 - Modelo base: https://huggingface.co/JetBrains/Mellum-4b-base

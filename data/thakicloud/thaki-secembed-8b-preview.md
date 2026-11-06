@@ -91,7 +91,7 @@ En recuperacion general, el autor reporta que no hay regresion catastrofica fren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Thaki-SecEmbed-8B-Preview
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Thaki-SecEmbed-8B-Preview
 - Tarjeta en coreano: https://huggingface.co/ThakiCloud/Thaki-SecEmbed-8B-Preview/blob/main/MODEL_CARD.ko.md
 - Modelo base Qwen3-Embedding-8B: https://huggingface.co/Qwen/Qwen3-Embedding-8B
 - Repositorio MITRE CTI (datos de entrenamiento): https://github.com/mitre/cti

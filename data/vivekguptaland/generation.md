@@ -21,7 +21,7 @@ Su relevancia actual es limitada como modelo y alta como andamiaje: sirve para v
 | Licencia | MIT |
 | Formato de pesos | safetensors (PyTorch); `config.json` con ajustes de arquitectura y `training_args.json` con la receta por defecto |
 | Escala declarada en configuración | `large` (etiqueta de configuración generada, no verificada contra el recuento real de parámetros) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Tamaño del repositorio | 0,0 GB |
 
 ## Arquitectura y entrenamiento
@@ -68,7 +68,7 @@ La información proporcionada no incluye modelos comparables ni cifras de tercer
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| Vivekguptaland/generation (este repositorio) | 49.600 | no disponible | MIT | HuggingFace, 0 descargas, 0 likes | ninguno declarado |
+| Vivekguptaland/generation (este repositorio) | 49.600 | no disponible | MIT | Hugging Face, 0 descargas, 0 likes | ninguno declarado |
 | Alternativas de la misma categoría (familia CLIP, otros modelos de generación multimodal) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 Como referencia conceptual, este repositorio se inspira en la arquitectura CLIP, pero no se dispone de datos verificados en la información suministrada para establecer una comparación numérica con ningún miembro de esa familia.
@@ -87,5 +87,5 @@ Como referencia conceptual, este repositorio se inspira en la arquitectura CLIP,
 
 ## Enlaces
 
-- [Modelo en HuggingFace: Vivekguptaland/generation](https://huggingface.co/Vivekguptaland/generation)
+- [Modelo en Hugging Face: Vivekguptaland/generation](https://huggingface.co/Vivekguptaland/generation)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la búsqueda web realizada; los resultados devueltos corresponden a páginas de soporte de Microsoft sin relación con este modelo.

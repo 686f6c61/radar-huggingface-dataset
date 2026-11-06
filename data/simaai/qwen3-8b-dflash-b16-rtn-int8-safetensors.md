@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La *m
 
 | Modelo | Parametros | Contexto | Rol | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| simaai/Qwen3-8B-DFlash-b16-RTN-INT8-Safetensors | ~1,05 B (draft) | no disponible | Draft DFlash INT8 para Qwen3-8B | MIT | HuggingFace |
-| z-lab/Qwen3-8B-DFlash-b16 | no disponible | no disponible | Draft DFlash original en BF16 | no disponible | HuggingFace |
-| simaai/Qwen3-8B-GPTQ-Safetensors | ~8 B (objetivo) | no disponible | Modelo objetivo pre-cuantizado | no disponible | HuggingFace |
+| simaai/Qwen3-8B-DFlash-b16-RTN-INT8-Safetensors | ~1,05 B (draft) | no disponible | Draft DFlash INT8 para Qwen3-8B | MIT | Hugging Face |
+| z-lab/Qwen3-8B-DFlash-b16 | no disponible | no disponible | Draft DFlash original en BF16 | no disponible | Hugging Face |
+| simaai/Qwen3-8B-GPTQ-Safetensors | ~8 B (objetivo) | no disponible | Modelo objetivo pre-cuantizado | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre el *draft* original en BF16 y esta variante INT8, ni con otras familias de decodificación especulativa (EAGLE, Medusa o similares). Cualquier comparación numérica sería especulativa.
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativos entre el *draft* original en 
 - Este artefacto no es un modelo autónomo: no genera texto por sí solo y debe combinarse con el modelo objetivo correspondiente.
 - No se han validado la tasa de aceptación del *draft*, la calidad de salida final ni el rendimiento tras la cuantización.
 - No se ha establecido equivalencia bit a bit entre esta cuantización RTN y la cuantización aplicada por el compilador de LLiMa.
-- No se registró la revisión inmutable de HuggingFace del *checkpoint* origen durante la ejecución, lo que limita la trazabilidad exacta de la reproducibilidad.
+- No se registró la revisión inmutable de Hugging Face del *checkpoint* origen durante la ejecución, lo que limita la trazabilidad exacta de la reproducibilidad.
 - Las dependencias del *script* de cuantización provienen de *builds* de desarrollo cuyas revisiones se anotan en `dependency_sources.json`; pueden no estar disponibles en PyPI.
 - No hay información sobre sesgos, riesgo de alucinación o comportamiento multilingüe específicos de este *draft*; esos factores dependen del modelo objetivo Qwen3-8B.
 - Licencia MIT, sin restricciones declaradas para uso comercial, aunque el uso práctico depende de las licencias del *draft* original y del modelo objetivo.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativos entre el *draft* original en 
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/simaai/Qwen3-8B-DFlash-b16-RTN-INT8-Safetensors
+- Hugging Face (modelo): https://huggingface.co/simaai/Qwen3-8B-DFlash-b16-RTN-INT8-Safetensors
 - Modelo base (draft DFlash original): https://huggingface.co/z-lab/Qwen3-8B-DFlash-b16
 - Modelo objetivo pre-cuantizado: https://huggingface.co/simaai/Qwen3-8B-GPTQ-Safetensors
 - Coleccion de modelos pre-cuantizados de SiMa.ai: https://huggingface.co/collections/simaai/pre-quantized-models-6a5623ca69f6a9ed0a41d3df

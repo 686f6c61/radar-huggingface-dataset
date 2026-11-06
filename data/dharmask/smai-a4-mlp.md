@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parámetros | Contexto/entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| smai-a4-mlp (dharmask) | MLP 3072-64-32-10 | ~199.000 (derivado) | 3072 valores (32x32x3) | Clasificación CIFAR-10 | No disponible | HuggingFace |
+| smai-a4-mlp (dharmask) | MLP 3072-64-32-10 | ~199.000 (derivado) | 3072 valores (32x32x3) | Clasificación CIFAR-10 | No disponible | Hugging Face |
 | LeNet-5 clásico | CNN 2 conv + 3 densas | ~60.000 | 32x32x1 o 32x32x3 | Clasificación CIFAR-10 | Dominio público / variable | Múltiples implementaciones |
 | ResNet-18 | CNN residual | ~11,2 millones | 224x224x3 (adaptable a 32x32) | Clasificación de imágenes | BSD-3 / MIT en implementaciones comunes | torchvision, timm |
 | VGG-11 | CNN | ~132 millones | 224x224x3 | Clasificación de imágenes | Variable según implementación | torchvision, timm |
@@ -86,6 +86,6 @@ La comparación es orientativa: no se dispone de métricas de precisión del mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dharmask/smai-a4-mlp
+- Modelo en Hugging Face: https://huggingface.co/dharmask/smai-a4-mlp
 - Repositorio de la asignatura: no disponible como enlace directo en la información proporcionada (la model card lo menciona como "assignment repository")
 - Paper, blog o demo: no disponibles en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ShivRamSaud/wat2026-llava15-captioning-constrained` es un repositorio de pesos alojado en HuggingFace por el usuario ShivRamSaud, publicado el 8 de septiembre de 2026 y actualizado el 12 de septiembre de 2026. El identificador sugiere que se trata de un ajuste fino derivado de LLaVA-1.5 orientado a la generacion de descripciones de imagenes con alguna restriccion de formato o vocabulario (captioning constrained), presumiblemente en el contexto de una tarea de evaluacion tipo WAT. Esta interpretacion procede unicamente del nombre del modelo y no esta confirmada por ninguna documentacion publicada en el repositorio.
+`ShivRamSaud/wat2026-llava15-captioning-constrained` es un repositorio de pesos alojado en Hugging Face por el usuario ShivRamSaud, publicado el 8 de septiembre de 2026 y actualizado el 12 de septiembre de 2026. El identificador sugiere que se trata de un ajuste fino derivado de LLaVA-1.5 orientado a la generacion de descripciones de imagenes con alguna restriccion de formato o vocabulario (captioning constrained), presumiblemente en el contexto de una tarea de evaluacion tipo WAT. Esta interpretacion procede unicamente del nombre del modelo y no esta confirmada por ninguna documentacion publicada en el repositorio.
 
 El repositorio ocupa 8,5 GB en disco y solo contiene pesos en formato safetensors, con la etiqueta de region `us`. No declara licencia, idiomas soportados, pipeline de inferencia, numero de parametros, arquitectura ni datos de entrenamiento. Tampoco incluye model card con resultados de evaluacion. El contador de descargas es 0 y tiene 1 like, por lo que se trata de un artefacto practicamente sin uso ni validacion por parte de la comunidad.
 
@@ -78,7 +78,7 @@ La comparativa es provisional, ya que no se ha confirmado cual es el modelo base
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wat2026-llava15-captioning-constrained | no disponible (repo de 8,5 GB) | no disponible | Captioning con restricciones, presumiblemente sobre LLaVA-1.5 | no disponible | HuggingFace, 0 descargas |
+| wat2026-llava15-captioning-constrained | no disponible (repo de 8,5 GB) | no disponible | Captioning con restricciones, presumiblemente sobre LLaVA-1.5 | no disponible | Hugging Face, 0 descargas |
 | LLaVA-1.5 7B | 7.000 millones aprox. | 4.096 tokens aprox. | VLM generalista con codificador CLIP ViT-L/14-336 | LLaMA 2 (uso comercial con condiciones) | Ampliamente distribuido |
 | Qwen2-VL 7B | 7.000 millones aprox. | 32.768 tokens aprox., ampliable | VLM con resolucion dinamica y M-RoPE | Apache 2.0 en varias variantes | Ampliamente distribuido |
 | InternVL2 8B | 8.000 millones aprox. | 8.192 tokens aprox. | VLM con InternViT-300M e InternLM2.5-7B | MIT en la variante 8B | Ampliamente distribuido |
@@ -100,5 +100,5 @@ Frente a estas alternativas, el checkpoint analizado carece de licencia declarad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ShivRamSaud/wat2026-llava15-captioning-constrained
+- Repositorio en Hugging Face: https://huggingface.co/ShivRamSaud/wat2026-llava15-captioning-constrained
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los resultados obtenidos correspondian a listados de comercio electronico sin ninguna relacion con el repositorio.

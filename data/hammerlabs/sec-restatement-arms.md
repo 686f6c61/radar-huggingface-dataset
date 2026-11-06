@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 ## Requisitos de hardware
 
 - Los modelos son estimadores de scikit-learn y se ejecutan por completo en CPU. No requieren GPU ni VRAM para la inferencia.
-- El tamaño del repositorio en HuggingFace se indica como 0.0 GB, lo que sugiere que los pickles son muy ligeros y pueden cargarse en cualquier máquina moderna con Python.
+- El tamaño del repositorio en Hugging Face se indica como 0.0 GB, lo que sugiere que los pickles son muy ligeros y pueden cargarse en cualquier máquina moderna con Python.
 - No se ha especificado la memoria RAM mínima; al tratarse de modelos clásicos, es probable que sea inferior a 1 GB.
 - Opciones de despliegue: se pueden cargar directamente en Python mediante `joblib.load` o `pickle.load`. No son compatibles con vLLM, Ollama, TGI ni llama.cpp, ya que no son modelos de lenguaje.
 - Latencia y throughput: no disponibles. La inferencia con estos modelos debería ser casi instantánea en un CPU moderno, pero no se aportan medidas.
@@ -80,6 +80,6 @@ No se dispone de información sobre modelos comparables de la misma categoría e
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/hammerlabs/sec-restatement-arms
+- Página del modelo en Hugging Face: https://huggingface.co/hammerlabs/sec-restatement-arms
 - Dataset de entrenamiento: https://huggingface.co/datasets/hammerlabs/sec-restatement-8k-402
 - Repositorio de código, resultados y paper: https://github.com/hmmrlabs/cost-functions

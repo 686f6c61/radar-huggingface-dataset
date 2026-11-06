@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sentinel-RedTeamer 0.5B | 0,49 B + LoRA | 32.768 (heredado) | Adaptador de red-teaming | MIT | HuggingFace (0 descargas) |
-| Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 | Instruct generalista | Apache 2.0 (segun el modelo base) | HuggingFace, ampliamente distribuido |
-| Llama-3.2-1B-Instruct | 1,24 B | 128.000 | Instruct generalista | Llama 3.2 Community License | HuggingFace |
-| Clasificadores defensivos de prompt injection (p. ej. variantes tipo Granite Guardian) | Variable | Variable | Clasificador defensivo | Variable | HuggingFace |
+| Sentinel-RedTeamer 0.5B | 0,49 B + LoRA | 32.768 (heredado) | Adaptador de red-teaming | MIT | Hugging Face (0 descargas) |
+| Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 | Instruct generalista | Apache 2.0 (segun el modelo base) | Hugging Face, ampliamente distribuido |
+| Llama-3.2-1B-Instruct | 1,24 B | 128.000 | Instruct generalista | Llama 3.2 Community License | Hugging Face |
+| Clasificadores defensivos de prompt injection (p. ej. variantes tipo Granite Guardian) | Variable | Variable | Clasificador defensivo | Variable | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de Sentinel-RedTeamer 0.5B frente a estas alternativas.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de Sen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/s4bz/sentinel-redteam-0.5b
+- Modelo en Hugging Face: https://huggingface.co/s4bz/sentinel-redteam-0.5b
 - Perfil del autor: https://huggingface.co/s4bz
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio de la plataforma Sentinel (AI Data Securer): https://github.com/s4bztories/ai-data-securer

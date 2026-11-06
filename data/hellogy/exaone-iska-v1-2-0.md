@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HelloGY/exaone-iSKA-v1.2.0 es un ajuste fino supervisado (SFT) del modelo EXAONE-3.5-7.8B-Instruct de LG AI Research, especializado en la puntuacion automatica de respuestas de estudiantes de coreano. El modelo no se presenta como un asistente generalista, sino como un puntuador de respuestas evaluadas en dos dimensiones: lengua (Language) y contenido (Content), empleando quadratic weighted kappa (QWK) como metrica de evaluacion. El autor del repositorio es el usuario HelloGY y el modelo se publica en HuggingFace con el identificador indicado.
+HelloGY/exaone-iSKA-v1.2.0 es un ajuste fino supervisado (SFT) del modelo EXAONE-3.5-7.8B-Instruct de LG AI Research, especializado en la puntuacion automatica de respuestas de estudiantes de coreano. El modelo no se presenta como un asistente generalista, sino como un puntuador de respuestas evaluadas en dos dimensiones: lengua (Language) y contenido (Content), empleando quadratic weighted kappa (QWK) como metrica de evaluacion. El autor del repositorio es el usuario HelloGY y el modelo se publica en Hugging Face con el identificador indicado.
 
 Con 7.818.448.896 parametros totales (aproximadamente 7,8B), el modelo hereda la arquitectura y el tokenizador del modelo base de LG AI Research, que se distribuye bajo la licencia EXAONE AI Model License Agreement 1.1 - NC, es decir, con restriccion de uso no comercial. El repositorio ocupa 15,6 GB y contiene unicamente pesos en formato safetensors con codigo personalizado (etiqueta custom_code), lo que obliga a cargarlo con `trust_remote_code=True` en transformers.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha radica en que se trata de un caso de uso muy acotado
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en la informacion proporcionada (hereda la del modelo base EXAONE-3.5-7.8B-Instruct, etiquetado como `exaone` en HuggingFace) |
+| Arquitectura | No disponible en la informacion proporcionada (hereda la del modelo base EXAONE-3.5-7.8B-Instruct, etiquetado como `exaone` en Hugging Face) |
 | Parametros totales | 7.818.448.896 (dato real de safetensors) |
 | Parametros activos | No aplica: no se indica que sea un modelo MoE |
 | Longitud de contexto | No disponible |
@@ -101,9 +101,9 @@ No se dispone de datos de benchmarks comparables entre el modelo base y este aju
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HelloGY/exaone-iSKA-v1.2.0
+- Hugging Face: https://huggingface.co/HelloGY/exaone-iSKA-v1.2.0
 - Paper del modelo base EXAONE 3.5: https://arxiv.org/abs/2412.04862
-- Modelo base en HuggingFace: no disponible en la informacion proporcionada
+- Modelo base en Hugging Face: no disponible en la informacion proporcionada
 - Repositorio de codigo: no disponible en la informacion proporcionada
 - Demos o espacios: no disponible en la informacion proporcionada
 - Resultados de busqueda web: los enlaces devueltos por la busqueda (jecontacte.com y subpaginas) no guardan relacion con el modelo y se descartan por no ser fuentes relevantes.

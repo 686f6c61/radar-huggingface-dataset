@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`dkingtutcd/gemma-e4b-repair-new-16k-with-empty-lora-rank32` es un ajuste fino (finetune) del modelo `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`, que a su vez deriva de la familia Gemma 4 de Google en su variante E4B (efímera de 4B parámetros activos). El autor del ajuste es el usuario de HuggingFace `dkingtutcd`, y el entrenamiento se realizó con las herramientas Unsloth y TRL de HuggingFace, según declara la model card. El resultado se ha publicado en precisión FP16 (16 bits) con pesos en formato `safetensors` y un total de 7.996.156.490 parámetros almacenados.
+`dkingtutcd/gemma-e4b-repair-new-16k-with-empty-lora-rank32` es un ajuste fino (finetune) del modelo `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`, que a su vez deriva de la familia Gemma 4 de Google en su variante E4B (efímera de 4B parámetros activos). El autor del ajuste es el usuario de Hugging Face `dkingtutcd`, y el entrenamiento se realizó con las herramientas Unsloth y TRL de Hugging Face, según declara la model card. El resultado se ha publicado en precisión FP16 (16 bits) con pesos en formato `safetensors` y un total de 7.996.156.490 parámetros almacenados.
 
-El modelo es multimodal de tipo imagen-texto-a-texto (`image-text-to-text`), por lo que acepta tanto entradas de texto como de imagen, y está etiquetado como conversacional y compatible con `text-generation-inference` y con endpoints de HuggingFace. La licencia declarada es Apache 2.0 y el único idioma indicado en la metadata es el inglés. El repositorio ocupa 16 GB y no registra descargas ni "likes" en el momento de la consulta, lo que sugiere una publicación reciente (creada el 3 de noviembre de 2026) y de difusión limitada.
+El modelo es multimodal de tipo imagen-texto-a-texto (`image-text-to-text`), por lo que acepta tanto entradas de texto como de imagen, y está etiquetado como conversacional y compatible con `text-generation-inference` y con endpoints de Hugging Face. La licencia declarada es Apache 2.0 y el único idioma indicado en la metadata es el inglés. El repositorio ocupa 16 GB y no registra descargas ni "likes" en el momento de la consulta, lo que sugiere una publicación reciente (creada el 3 de noviembre de 2026) y de difusión limitada.
 
 La relevancia de esta ficha radica en que documenta un caso típico de finetune comunitario sobre un modelo base de gran tamaño con licencia permisiva, útil para quien quiera evaluar si un ajuste de este tipo es adecuado para producción. No obstante, la información pública es muy escasa: no hay datos de entrenamiento, benchmarks ni detalles del dataset, por lo que muchas especificaciones se marcan como "no disponible".
 
@@ -46,7 +46,7 @@ En cuanto al entrenamiento, la model card solo indica que se usó Unsloth y TRL 
 - **Ajuste fino posterior con Unsloth**: al estar publicado en FP16 y con licencia Apache 2.0, sirve como punto de partida para nuevos finetunes con LoRA en GPUs de gama alta.
 - **Investigación sobre finetunes comunitarios**: útil para estudiar cómo afecta un LoRA de rango 32 y un entrenamiento corto al comportamiento de un modelo base multimodal.
 - **Evaluación comparativa de checkpoints**: puede incluirse en un banco de pruebas interno para medir la degradación o mejora respecto al modelo base en tareas de visión y texto.
-- **Despliegue en endpoints compatibles**: al estar etiquetado como `endpoints_compatible` y `text-generation-inference`, puede servirse con TGI o con la infraestructura de endpoints de HuggingFace para pruebas de latencia.
+- **Despliegue en endpoints compatibles**: al estar etiquetado como `endpoints_compatible` y `text-generation-inference`, puede servirse con TGI o con la infraestructura de endpoints de Hugging Face para pruebas de latencia.
 
 ## Benchmarks y rendimiento
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| dkingtutcd/gemma-e4b-repair-new-16k-with-empty-lora-rank32 | ~8.0B (FP16) | no disponible | Apache 2.0 | Si (imagen-texto) | HuggingFace, 0 descargas |
-| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (base) | no disponible | no disponible | Apache 2.0 (heredada) | Si | HuggingFace |
-| Gemma 4 E4B original (Google) | no disponible | no disponible | Gemma license (no confirmada) | Si | HuggingFace / Google |
-| Alternativas de ~8B multimodales (p. ej. Llama 3.2 Vision 11B) | 11B | 128k (según modelo) | Llama license | Si | HuggingFace |
+| dkingtutcd/gemma-e4b-repair-new-16k-with-empty-lora-rank32 | ~8.0B (FP16) | no disponible | Apache 2.0 | Si (imagen-texto) | Hugging Face, 0 descargas |
+| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (base) | no disponible | no disponible | Apache 2.0 (heredada) | Si | Hugging Face |
+| Gemma 4 E4B original (Google) | no disponible | no disponible | Gemma license (no confirmada) | Si | Hugging Face / Google |
+| Alternativas de ~8B multimodales (p. ej. Llama 3.2 Vision 11B) | 11B | 128k (según modelo) | Llama license | Si | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este checkpoint; la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -85,8 +85,8 @@ No se dispone de datos de rendimiento comparativo para este checkpoint; la compa
 
 ## Enlaces
 
-- [HuggingFace: dkingtutcd/gemma-e4b-repair-new-16k-with-empty-lora-rank32](https://huggingface.co/dkingtutcd/gemma-e4b-repair-new-16k-with-empty-lora-rank32)
+- [Hugging Face: dkingtutcd/gemma-e4b-repair-new-16k-with-empty-lora-rank32](https://huggingface.co/dkingtutcd/gemma-e4b-repair-new-16k-with-empty-lora-rank32)
 - [Modelo base: unsloth/gemma-4-E4B-it-unsloth-bnb-4bit](https://huggingface.co/unsloth/gemma-4-E4B-it-unsloth-bnb-4bit)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
-- [TRL de HuggingFace](https://github.com/huggingface/trl)
+- [TRL de Hugging Face](https://github.com/huggingface/trl)
 - [Documentación de Gemma (Google)](https://ai.google.dev/gemma)

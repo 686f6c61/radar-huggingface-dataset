@@ -77,7 +77,7 @@ No se dispone de datos comparativos con otros modelos en la informacion proporci
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-FULLY-OBLITERATED-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-FULLY-OBLITERATED-GGUF
 - Modelo base original: https://huggingface.co/jhone888/Ornith-1.5-35B-A3B-FULLY-OBLITERATED
 - Pagina oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Ficha en LLM Releases: https://www.llm-releases.com/models/ornith-1-5-35b-a3b

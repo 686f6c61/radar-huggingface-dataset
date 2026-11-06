@@ -17,7 +17,7 @@ El repo tiene un tamaño de 4,3 GB y contiene dos ficheros: uno int8 de 2,72 GB 
 | Parametros activos | No aplica (arquitectura densa, no MoE) |
 | Longitud de contexto | 4.096 tokens en estos ficheros; Liquid AI declara 32.768 para el modelo original |
 | Tipos de cuantizacion | int8 (dynamic en lineales + embedding int8, convoluciones en float); int4 (blockwise-32 + OCTAV en lineales, lm_head y embedding en int8) |
-| Idiomas soportados | Inglés, árabe, chino, francés, alemán, japonés, coreano y español (según Liquid AI; los metadatos de HuggingFace indican "no disponible") |
+| Idiomas soportados | Inglés, árabe, chino, francés, alemán, japonés, coreano y español (según Liquid AI; los metadatos de Hugging Face indican "no disponible") |
 | Licencia | lfm1.0 (licencia personalizada "other") |
 | Formato de pesos | `.litertlm` (LiteRT-LM); no incluye safetensors ni GGUF |
 | Tamano de los ficheros | int8: 2,72 GB (sección de pesos de 2.722.843.088 bytes, 2,54 GiB); int4: 1,53 GB |
@@ -116,7 +116,7 @@ No se dispone de información en la documentación proporcionada sobre alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/LFM2-2.6B
+- Modelo en Hugging Face: https://huggingface.co/litert-community/LFM2-2.6B
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-2.6B
 - Licencia lfm1.0: https://huggingface.co/LiquidAI/LFM2-2.6B/blob/main/LICENSE
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM

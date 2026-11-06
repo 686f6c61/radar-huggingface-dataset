@@ -38,7 +38,7 @@ El dato mas relevante del entrenamiento es su naturaleza sintetica: el autor ind
 
 ## Casos de uso
 - Prototipo de triaje en vigilancia de comunicaciones: el modelo puede etiquetar mensajes de empleados en canales de comunicacion corporativa segun tipologias de abuso de mercado, actuando como primer filtro antes de la revision humana. Es adecuado como demostracion de concepto, no como sistema de decision.
-- Validacion de pipelines de fine-tuning: sirve para comprobar el funcionamiento de una cadena de entrenamiento LoRA, fusion de adaptadores y publicacion en HuggingFace antes de invertir en datos reales etiquetados.
+- Validacion de pipelines de fine-tuning: sirve para comprobar el funcionamiento de una cadena de entrenamiento LoRA, fusion de adaptadores y publicacion en Hugging Face antes de invertir en datos reales etiquetados.
 - Generacion de datos de prueba y evaluacion de infraestructura: al estar disponible en safetensors y ser compatible con `transformers` y con `mlx-lm`, permite medir throughput, latencia y consumo de VRAM en el hardware objetivo antes de desplegar un modelo mayor.
 - Base para un modelo interno de compliance: un equipo de un banco o broker puede usarlo como inicializacion y reentrenarlo con comunicaciones reales debidamente anonimizadas y con un proceso formal de model risk management.
 - Investigacion academica sobre clasificacion de texto financiero: comparar el comportamiento de un SLM de 3B ajustado frente a modelos mayores en una taxonomia regulatoria concreta.
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Licencia | Especializacion | Disponibilidad |
 |---|---|---|---|---|---|
-| comms-surveillance-slm-demo-merged | 3,09 mil millones | no especificado (base: 32.768 tokens) | apache-2.0 | Clasificacion de abuso de mercado sobre datos sinteticos | safetensors en HuggingFace |
+| comms-surveillance-slm-demo-merged | 3,09 mil millones | no especificado (base: 32.768 tokens) | apache-2.0 | Clasificacion de abuso de mercado sobre datos sinteticos | safetensors en Hugging Face |
 | Qwen/Qwen2.5-3B-Instruct | 3,09 mil millones | 32.768 tokens | apache-2.0 | Instrucciones generales | safetensors, GPTQ, AWQ, GGUF |
 | Llama-3.2-3B-Instruct | 3,21 mil millones | 128.000 tokens | Llama 3.2 Community License | Instrucciones generales | safetensors, GGUF |
 | Phi-3.5-mini-instruct | 3,8 mil millones | 128.000 tokens | MIT | Instrucciones generales y razonamiento | safetensors, GGUF |
@@ -88,7 +88,7 @@ La comparacion directa de rendimiento no es posible porque no existen benchmarks
 - Modelo con 1 like y 0 descargas en el momento de la consulta: no existe validacion independiente por parte de la comunidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/anespo28/comms-surveillance-slm-demo-merged
+- Modelo en Hugging Face: https://huggingface.co/anespo28/comms-surveillance-slm-demo-merged
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5
 - Biblioteca mlx-lm (Apple Silicon): https://github.com/ml-explore/mlx-lm

@@ -71,6 +71,6 @@ No se dispone de datos comparativos con otros modelos multimodales en MLX en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [lukaskremla/Qwen3.8-27B-5bit-MLX](https://huggingface.co/lukaskremla/Qwen3.8-27B-5bit-MLX)
+- Repositorio Hugging Face: [lukaskremla/Qwen3.8-27B-5bit-MLX](https://huggingface.co/lukaskremla/Qwen3.8-27B-5bit-MLX)
 - Modelo base: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - Colección de cuantizaciones MLX: [Qwen 3.8 27B MLX-Quants](https://huggingface.co/collections/lukaskremla/qwen-38-27b-mlx-quants-vision-text-only-and-mtp-6a7f4a32aee1afa13a6a4661)

@@ -4,7 +4,7 @@
 
 El modelo Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-BF16 es una variante del modelo Qwen3.8-2.4T-A95B, un modelo de lenguaje de gran escala con arquitectura de mezcla de expertos (MoE) desarrollado por Qwen. La versión de Blackfrost-Research incorpora una técnica denominada "directional weight modification" (DWM) aplicada a los pesos en formato BF16, con el objetivo de "derisking", es decir, reducir riesgos asociados a sesgos, alucinaciones o comportamientos no deseados. El modelo base tiene 2,4 billones de parámetros totales, de los cuales 95 mil millones están activos por token, y soporta una ventana de contexto de 256.000 tokens.
 
-Este modelo se presenta como una alternativa "desriesgada" del modelo original, pensada para entornos de producción donde la fiabilidad y la mitigación de sesgos son críticas. Sin embargo, la información pública disponible es muy limitada: el repositorio de HuggingFace tiene un tamaño de 0 GB, no se han publicado pesos ni documentación técnica específica, y el acceso está restringido (gated). Por tanto, la ficha se basa principalmente en las características del modelo base Qwen3.8-2.4T-A95B, que sí está documentado, y en las escasas pistas que ofrece el nombre del repositorio.
+Este modelo se presenta como una alternativa "desriesgada" del modelo original, pensada para entornos de producción donde la fiabilidad y la mitigación de sesgos son críticas. Sin embargo, la información pública disponible es muy limitada: el repositorio de Hugging Face tiene un tamaño de 0 GB, no se han publicado pesos ni documentación técnica específica, y el acceso está restringido (gated). Por tanto, la ficha se basa principalmente en las características del modelo base Qwen3.8-2.4T-A95B, que sí está documentado, y en las escasas pistas que ofrece el nombre del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -78,8 +78,8 @@ La comparativa muestra que el modelo base es significativamente más grande que 
 
 ## Limitaciones y advertencias
 
-- Repositorio sin pesos: el tamaño del repositorio es 0 GB, lo que indica que no hay pesos publicados. El modelo no es utilizable tal como está en HuggingFace.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en investigación o producción.
+- Repositorio sin pesos: el tamaño del repositorio es 0 GB, lo que indica que no hay pesos publicados. El modelo no es utilizable tal como está en Hugging Face.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en investigación o producción.
 - Información técnica insuficiente: no hay documentación sobre el proceso DWM, los datos de entrenamiento, ni evaluación de sesgos o alucinaciones tras la modificación.
 - Licencia qwen: la licencia "qwen" no es una licencia open source estándar; puede imponer restricciones de uso comercial o de redistribución. Se debe revisar el texto exacto.
 - Sesgos del modelo base: aunque el objetivo es "derisking", no hay evidencia de que la modificación elimine todos los sesgos. El modelo base puede presentar sesgos culturales, de género o ideológicos.
@@ -89,7 +89,7 @@ La comparativa muestra que el modelo base es significativamente más grande que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-BF16
+- Repositorio Hugging Face: https://huggingface.co/Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-BF16
 - Modelo base Qwen3.8-2.4T-A95B: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
 - Documentación de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Página de OpenLM.ai sobre Qwen3.8: https://openlm.ai/qwen3.8/

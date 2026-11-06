@@ -91,8 +91,8 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| madhurr382/coderankembed-apps-ft | 136.731.648 | no disponible | Retrieval de codigo ajustado a APPS/AppsRetrieval | MIT | HuggingFace |
-| nomic-ai/CodeRankEmbed (modelo base) | no disponible en la informacion proporcionada | no disponible | Retrieval de codigo general | no disponible en la informacion proporcionada | HuggingFace |
+| madhurr382/coderankembed-apps-ft | 136.731.648 | no disponible | Retrieval de codigo ajustado a APPS/AppsRetrieval | MIT | Hugging Face |
+| nomic-ai/CodeRankEmbed (modelo base) | no disponible en la informacion proporcionada | no disponible | Retrieval de codigo general | no disponible en la informacion proporcionada | Hugging Face |
 | Otros modelos de embeddings de codigo de tamano similar | no disponible | no disponible | Retrieval de codigo | no disponible | no disponible |
 
 La comparacion cuantitativa con alternativas no puede realizarse con los datos proporcionados: no se incluyen puntuaciones del modelo base ni de otros modelos de retrieval de codigo en `AppsRetrieval`. La diferencia funcional conocida es que esta variante esta especializada en el formato de enunciados tipo APPS y en soluciones Python, mientras que el modelo base es de proposito mas general.
@@ -112,7 +112,7 @@ La comparacion cuantitativa con alternativas no puede realizarse con los datos p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/madhurr382/coderankembed-apps-ft
+- Modelo en Hugging Face: https://huggingface.co/madhurr382/coderankembed-apps-ft
 - Modelo base: https://huggingface.co/nomic-ai/CodeRankEmbed
 - Dataset de entrenamiento: https://huggingface.co/datasets/CoIR-Retrieval/apps
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

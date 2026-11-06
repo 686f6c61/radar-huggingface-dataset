@@ -84,7 +84,7 @@ No se han identificado en la información proporcionada políticas comparables p
 
 | Modelo / proyecto | Relación | Licencia | Disponibilidad |
 |---|---|---|---|
-| zhoumiaosen/microduck-running | Este modelo (política PPO para MicroDuck) | Apache-2.0 | HuggingFace, 0 descargas |
+| zhoumiaosen/microduck-running | Este modelo (política PPO para MicroDuck) | Apache-2.0 | Hugging Face, 0 descargas |
 | Vottivott/microduck-playground | Código base del que deriva el entrenamiento (commit `828d950…`) | No indicada en la información | GitHub |
 | pollen-robotics/microduck_rl | Proyecto del que deriva el anterior | No indicada en la información | GitHub |
 
@@ -105,7 +105,7 @@ Comparativa de rendimiento con alternativas: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhoumiaosen/microduck-running
+- Modelo en Hugging Face: https://huggingface.co/zhoumiaosen/microduck-running
 - Código base del que deriva el entrenamiento: https://github.com/Vottivott/microduck-playground
 - Proyecto upstream original: https://github.com/pollen-robotics/microduck_rl
 - Vídeo de replay incluido en el repositorio: `run.mp4` (10 segundos, checkpoint final, semilla 123, comando de 2,0 m/s hacia delante)

@@ -99,7 +99,7 @@ La conversión LiteRT sacrifica la longitud de contexto (de 128k a 4k) a cambio 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [litert-community/SmolLM3-3B](https://huggingface.co/litert-community/SmolLM3-3B)
+- Repositorio Hugging Face: [litert-community/SmolLM3-3B](https://huggingface.co/litert-community/SmolLM3-3B)
 - Modelo base: [HuggingFaceTB/SmolLM3-3B](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)
 - Runtime LiteRT-LM: [github.com/google-ai-edge/litert-lm](https://github.com/google-ai-edge/litert-lm)
 - App Google AI Edge Gallery: [github.com/google-ai-edge/gallery](https://github.com/google-ai-edge/gallery)

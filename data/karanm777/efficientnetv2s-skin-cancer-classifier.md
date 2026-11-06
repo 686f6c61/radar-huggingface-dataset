@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EfficientNetV2S Skin Cancer Classifier es un modelo de clasificación de imágenes médicas desarrollado por el usuario karanm777 y publicado en HuggingFace. Se trata de un ajuste fino (fine-tuning) de la arquitectura EfficientNetV2S de Keras sobre el conjunto de datos dermatológico HAM10000, con el objetivo de clasificar lesiones cutáneas en siete categorías diagnósticas distintas, entre ellas melanoma, carcinoma basocelular y lesiones vasculares.
+EfficientNetV2S Skin Cancer Classifier es un modelo de clasificación de imágenes médicas desarrollado por el usuario karanm777 y publicado en Hugging Face. Se trata de un ajuste fino (fine-tuning) de la arquitectura EfficientNetV2S de Keras sobre el conjunto de datos dermatológico HAM10000, con el objetivo de clasificar lesiones cutáneas en siete categorías diagnósticas distintas, entre ellas melanoma, carcinoma basocelular y lesiones vasculares.
 
 El modelo aborda un problema clásico de la dermatología asistida por ordenador: la clasificación automática de imágenes de lesiones pigmentadas y no pigmentadas de la piel. Con aproximadamente 20,5 millones de parámetros y un tamaño de repositorio de 0,2 GB, es un modelo compacto y ligero, adecuado para despliegue en entornos con recursos limitados. Su relevancia radica en que incorpora una calibración de temperatura (T = 2,77) que mejora la fiabilidad de las probabilidades predichas, un aspecto crítico en aplicaciones médicas donde la confianza del modelo debe ser interpretable.
 
@@ -69,7 +69,7 @@ No se han publicado resultados desglosados por clase, matrices de confusión ni 
 
 | Modelo | Parámetros | Contexto/Entrada | Métrica reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| karanm777/efficientnetv2s-skin-cancer-classifier | ~20,5 M | Imagen (resolución no especificada) | Accuracy 0,95; F1 0,98 en HAM10000 | MIT | HuggingFace |
+| karanm777/efficientnetv2s-skin-cancer-classifier | ~20,5 M | Imagen (resolución no especificada) | Accuracy 0,95; F1 0,98 en HAM10000 | MIT | Hugging Face |
 | EfficientNetV2S base (Keras) | ~20,5 M | Imagen 384x384 | No aplica (no entrenado en HAM10000) | Apache 2.0 (Keras) | Keras Applications |
 | Modelos dermatológicos comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -87,7 +87,7 @@ No se dispone de información sobre otros modelos específicos de clasificación
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/karanm777/efficientnetv2s-skin-cancer-classifier
+- Hugging Face: https://huggingface.co/karanm777/efficientnetv2s-skin-cancer-classifier
 - Dataset HAM10000 (referencia): https://doi.org/10.1038/s41597-019-0207-2
 - EfficientNetV2 (paper): https://arxiv.org/abs/2104.00298
 - Keras Applications EfficientNetV2: https://keras.io/api/applications/efficientnet_v2/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo "quadkd-ultimate-model" es un repositorio publicado en HuggingFace por el usuario SyedAzmulHasan bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no contiene una model card con información técnica, y los resultados de búsqueda web no aportan documentación adicional. El tamaño del repositorio es de 0.3 GB, sin descargas ni likes, y su fecha de creación es 2026-09-14, lo que podría indicar que se trata de un experimento o de un repositorio sin finalizar. No es posible determinar la arquitectura, el tamaño de parámetros, la longitud de contexto ni las capacidades del modelo con la información disponible.
+El modelo "quadkd-ultimate-model" es un repositorio publicado en Hugging Face por el usuario SyedAzmulHasan bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no contiene una model card con información técnica, y los resultados de búsqueda web no aportan documentación adicional. El tamaño del repositorio es de 0.3 GB, sin descargas ni likes, y su fecha de creación es 2026-09-14, lo que podría indicar que se trata de un experimento o de un repositorio sin finalizar. No es posible determinar la arquitectura, el tamaño de parámetros, la longitud de contexto ni las capacidades del modelo con la información disponible.
 
 ## Especificaciones técnicas
 
@@ -51,6 +51,6 @@ No disponible. Sin información sobre arquitectura, parámetros o rendimiento, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SyedAzmulHasan/quadkd-ultimate-model
+- Repositorio en Hugging Face: https://huggingface.co/SyedAzmulHasan/quadkd-ultimate-model
 
 No hay otros enlaces relevantes; los resultados de búsqueda web corresponden a documentación de soporte de Windows en árabe, sin relación con el modelo.

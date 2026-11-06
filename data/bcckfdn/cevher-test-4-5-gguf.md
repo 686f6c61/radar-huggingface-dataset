@@ -26,7 +26,7 @@ Conviene señalar que el repositorio se llama «cevher-test-4.5-GGUF» mientras 
 | Modelo base | bcckfdn/cevher-test-4.5 |
 | Tamano del repositorio | 1,8 GB |
 | Pipeline | text-generation |
-| Fecha de publicacion | 26 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 26 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -39,7 +39,7 @@ En cuanto a los datos, la model card afirma un volumen de entrenamiento de 2.621
 - Generacion de texto y conversacion multiturno en turco e ingles, segun la etiqueta «conversational» del repositorio.
 - Modelo base de generacion de texto (pipeline text-generation), sin capacidades declaradas de vision, audio ni multimodalidad.
 - Compatibilidad con llama.cpp, Ollama y LM Studio, lo que permite inferencia local en CPU y GPU.
-- Integrable mediante la API compatible de endpoints de HuggingFace (etiqueta endpoints_compatible).
+- Integrable mediante la API compatible de endpoints de Hugging Face (etiqueta endpoints_compatible).
 - No se declara soporte de tool calling, function calling ni de flujos de agentes.
 - No se declara modo de razonamiento explicito (thinking mode) ni capacidad de razonamiento multi-paso documentada.
 - El alcance multilingue se limita a los dos idiomas declarados; no hay evidencia de soporte para castellano ni otras lenguas.
@@ -93,7 +93,7 @@ Nota: los datos de los modelos comparativos provienen del conocimiento general s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bcckfdn/cevher-test-4.5-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bcckfdn/cevher-test-4.5-GGUF
 - Modelo base: https://huggingface.co/bcckfdn/cevher-test-4.5
 - llama.cpp (referenciado en la model card): https://github.com/ggerganov/llama.cpp
 - Ollama (referenciado en la model card): https://ollama.com

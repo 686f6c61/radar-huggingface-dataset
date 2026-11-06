@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g1_run0` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, que a su vez es una version cuantizada en 4 bits del Qwen3-8B-Base de Alibaba. Lo desarrolla el usuario stefanocarrera y esta publicado en HuggingFace con licencia Apache 2.0. El nombre del repositorio sugiere un experimento de entrenamiento con parámetros concretos (temperatura 0.5, grupo 1, ejecución 0), probablemente orientado a código C++ o a una tarea especifica de generacion.
+El modelo `stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g1_run0` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, que a su vez es una version cuantizada en 4 bits del Qwen3-8B-Base de Alibaba. Lo desarrolla el usuario stefanocarrera y esta publicado en Hugging Face con licencia Apache 2.0. El nombre del repositorio sugiere un experimento de entrenamiento con parámetros concretos (temperatura 0.5, grupo 1, ejecución 0), probablemente orientado a código C++ o a una tarea especifica de generacion.
 
 El modelo pertenece a la familia Qwen3, una arquitectura transformer densa de 8 mil millones de parámetros desarrollada por Alibaba. El fine-tuning se ha realizado con la libreria Unsloth, que acelera el entrenamiento aproximadamente 2 veces, y con TRL para el ajuste supervisado. El repo ocupa solo 0,2 GB, lo que indica que los pesos publicados estan en formato cuantizado (probablemente 4 bits) y no en precision completa.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g1_run0` | 8B (4 bits) | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen3-8B-Base (Alibaba) | 8B | 32 768 tokens (segun especificaciones publicas del base) | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B | 8B | 128 000 tokens | Llama 3.1 Community License | HuggingFace, Ollama |
-| Mistral 7B v0.3 | 7B | 32 768 tokens | Apache 2.0 | HuggingFace, Ollama |
+| `stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g1_run0` | 8B (4 bits) | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen3-8B-Base (Alibaba) | 8B | 32 768 tokens (segun especificaciones publicas del base) | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B | 8B | 128 000 tokens | Llama 3.1 Community License | Hugging Face, Ollama |
+| Mistral 7B v0.3 | 7B | 32 768 tokens | Apache 2.0 | Hugging Face, Ollama |
 
 No se dispone de datos de rendimiento comparativo para este fine-tuning concreto.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo para este fine-tuning concreto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g1_run0
+- Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g1_run0
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Qwen3 (familia de modelos): https://huggingface.co/Qwen

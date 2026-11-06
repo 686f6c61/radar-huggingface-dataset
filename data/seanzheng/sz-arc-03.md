@@ -1,7 +1,7 @@
 # SeanZheng/sz-arc-03
 
 ## Resumen
-El modelo sz-arc-03 es un repositorio publicado por el usuario SeanZheng en HuggingFace bajo la etiqueta de archivo de investigación. La model card indica que se trata de un checkpoint archivado para continuidad personal de investigación, con nombres de directorio opacos que no aportan información sobre su contenido o propósito. El repositorio tiene un tamaño de 40 GB y utiliza la librería `diffusers` con pesos en formato `safetensors`, lo que sugiere que podría ser un modelo de generación de imágenes, aunque no hay confirmación explícita. No se han publicado descargas ni interacciones, y la licencia es genérica (`other`), sin términos específicos. Dado que no se proporcionan detalles técnicos ni documentación, el modelo no puede ser evaluado ni recomendado para ningún uso práctico.
+El modelo sz-arc-03 es un repositorio publicado por el usuario SeanZheng en Hugging Face bajo la etiqueta de archivo de investigación. La model card indica que se trata de un checkpoint archivado para continuidad personal de investigación, con nombres de directorio opacos que no aportan información sobre su contenido o propósito. El repositorio tiene un tamaño de 40 GB y utiliza la librería `diffusers` con pesos en formato `safetensors`, lo que sugiere que podría ser un modelo de generación de imágenes, aunque no hay confirmación explícita. No se han publicado descargas ni interacciones, y la licencia es genérica (`other`), sin términos específicos. Dado que no se proporcionan detalles técnicos ni documentación, el modelo no puede ser evaluado ni recomendado para ningún uso práctico.
 
 ## Especificaciones técnicas
 

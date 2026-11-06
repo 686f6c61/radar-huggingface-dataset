@@ -88,7 +88,7 @@ La variante K2.75 es una alternativa experimental interna del autor; sus datos d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mj-kang/GLM-5.3-EXL3-3.0bpw-TP3
+- Hugging Face: https://huggingface.co/mj-kang/GLM-5.3-EXL3-3.0bpw-TP3
 - Repositorio de reproduccion y runtime personalizado: https://github.com/mjkang-estrella/glm53-full-exl3-tp3
 - Articulo arXiv sobre GLM-5 (contexto de la familia): https://arxiv.org/html/2602.15763v1
 - GitHub de GLM-5.3 Flash EXL3 para 2x DGX Sparks: https://github.com/MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks/

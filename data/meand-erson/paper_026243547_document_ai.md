@@ -66,7 +66,7 @@ No disponible. No se conocen modelos comparables porque el repositorio no contie
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/meand-erson/paper_026243547_document_ai)
+- [Repositorio en Hugging Face](https://huggingface.co/meand-erson/paper_026243547_document_ai)
 - [Stanford AI Index Report 2026](https://hai.stanford.edu/assets/files/ai_index_report_2026.pdf) (no relacionado directamente, pero aparece en la búsqueda web)
 - [Document AI - Google Cloud](https://docs.cloud.google.com/document-ai/docs) (referencia general sobre document AI)
 - [ContentDetector.org](https://contentdetector.org/) (no relacionado con el modelo)
@@ -136,7 +136,7 @@ No disponible. No se puede comparar con otros modelos porque el repositorio no c
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/meand-erson/paper_026243547_document_ai)
+- [Repositorio en Hugging Face](https://huggingface.co/meand-erson/paper_026243547_document_ai)
 - [Documentación de Document AI de Google Cloud](https://docs.cloud.google.com/document-ai/docs) (referencia general sobre document AI)
 - [Stanford AI Index Report 2026](https://hai.stanford.edu/assets/files/ai_index_report_2026.pdf) (contexto general de IA)
 - [ContentDetector.org](https://contentdetector.org/) (no relacionado con el repositorio)

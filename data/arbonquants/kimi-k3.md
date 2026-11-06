@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kimi K3 es un modelo de lenguaje multimodal nativo y de pesos abiertos desarrollado por Moonshot AI, presentado como el modelo mas capaz de la familia Kimi hasta la fecha. Con 2,8 billones de parametros totales y 104 mil millones de parametros activos por token, se posiciona como el primer modelo abierto de clase 3T, disenado para inteligencia de frontera en tareas de codigo de largo horizonte, trabajo de conocimiento y razonamiento. La version alojada en HuggingFace bajo el identificador `arbonquants/Kimi-K3` es una publicacion de terceros (usuario `arbonquants`) que redistribuye los pesos en formato `compressed-tensors` de 8 bits.
+Kimi K3 es un modelo de lenguaje multimodal nativo y de pesos abiertos desarrollado por Moonshot AI, presentado como el modelo mas capaz de la familia Kimi hasta la fecha. Con 2,8 billones de parametros totales y 104 mil millones de parametros activos por token, se posiciona como el primer modelo abierto de clase 3T, disenado para inteligencia de frontera en tareas de codigo de largo horizonte, trabajo de conocimiento y razonamiento. La version alojada en Hugging Face bajo el identificador `arbonquants/Kimi-K3` es una publicacion de terceros (usuario `arbonquants`) que redistribuye los pesos en formato `compressed-tensors` de 8 bits.
 
 Arquitectonicamente, Kimi K3 introduce dos innovaciones principales: Kimi Delta Attention (KDA) y Attention Residuals (AttnRes), combinadas con un esquema Mixture-of-Experts (MoE) de alta dispersion denominado Stable LatentMoE, que activa 16 de 896 expertos por token. El modelo incorpora vision nativa y una ventana de contexto de 1 millon de tokens, lo que lo hace adecuado para tareas agénticas de largo recorrido sobre repositorios extensos, documentos multiples y flujos de trabajo con herramientas.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi K3 | 2,8T | 104B | 1M tokens | Kimi K3 License | Pesos abiertos en HuggingFace |
+| Kimi K3 | 2,8T | 104B | 1M tokens | Kimi K3 License | Pesos abiertos en Hugging Face |
 | Kimi K2 | no disponible | no disponible | no disponible | no disponible | Pesos abiertos (referencia del autor) |
 | Modelos propietarios de frontera (GPT, Claude, Gemini) | no disponible | no disponible | no disponible | Propietaria | Solo API |
 
@@ -76,14 +76,14 @@ La informacion proporcionada solo permite comparar con Kimi K2, del que se menci
 - Riesgo de alucinacion: no cuantificado en la informacion disponible; como modelo generativo de gran escala, es susceptible de producir contenido facticamente incorrecto, especialmente en tareas de investigacion profunda.
 - Limitaciones de contexto o idioma: el contexto es de 1M tokens, pero no se especifican los idiomas soportados ni su calidad relativa.
 - Restricciones de licencia: la Kimi K3 License es una licencia "other" con terminos especificos que deben revisarse antes de uso comercial; no se detallan en la informacion proporcionada.
-- Caveat de produccion: la publicacion en HuggingFace es de un tercero (`arbonquants`), no del autor original (Moonshot AI), con solo 18 descargas y 0 likes; se recomienda verificar la integridad de los pesos y preferir el repositorio oficial `moonshotai/Kimi-K3` si esta disponible.
+- Caveat de produccion: la publicacion en Hugging Face es de un tercero (`arbonquants`), no del autor original (Moonshot AI), con solo 18 descargas y 0 likes; se recomienda verificar la integridad de los pesos y preferir el repositorio oficial `moonshotai/Kimi-K3` si esta disponible.
 - Requisitos de hardware extremos: 2,8T de parametros y 1.561 GB de repositorio hacen inviable el despliegue fuera de infraestructura de datacenter.
 - La model card esta truncada en la informacion proporcionada, por lo que pueden faltar detalles sobre entrenamiento, evaluacion y limitaciones.
 
 ## Enlaces
 
-- HuggingFace (redistribucion de terceros): https://huggingface.co/arbonquants/Kimi-K3
-- HuggingFace oficial de Moonshot AI: https://huggingface.co/moonshotai
+- Hugging Face (redistribucion de terceros): https://huggingface.co/arbonquants/Kimi-K3
+- Hugging Face oficial de Moonshot AI: https://huggingface.co/moonshotai
 - Repositorio oficial (referenciado en la model card): https://huggingface.co/moonshotai/Kimi-K3
 - Blog tecnico: https://www.kimi.com/blog/kimi-k3
 - Informe tecnico completo: https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf

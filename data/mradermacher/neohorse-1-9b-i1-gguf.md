@@ -4,7 +4,7 @@
 
 NeoHorse-1-9B-i1-GGUF es una versión cuantizada del modelo base TokenRhythm/NeoHorse-1-9B, publicada por el equipo de mradermacher. Se trata de un modelo de lenguaje de aproximadamente 9.000 millones de parámetros, distribuido en formato GGUF con cuantizaciones basadas en importancia (imatrix), lo que permite ejecutarlo en hardware de consumo con una relación calidad/rendimiento ajustada.
 
-El modelo base está orientado a tareas de agente, uso de herramientas, generación de código, razonamiento y seguimiento de instrucciones, según las etiquetas declaradas en HuggingFace. La versión cuantizada mantiene la licencia Apache 2.0 y soporta únicamente inglés. No se dispone de información pública detallada sobre la arquitectura interna, el proceso de entrenamiento ni los datos utilizados.
+El modelo base está orientado a tareas de agente, uso de herramientas, generación de código, razonamiento y seguimiento de instrucciones, según las etiquetas declaradas en Hugging Face. La versión cuantizada mantiene la licencia Apache 2.0 y soporta únicamente inglés. No se dispone de información pública detallada sobre la arquitectura interna, el proceso de entrenamiento ni los datos utilizados.
 
 Esta ficha se centra en la versión GGUF de mradermacher, que es la disponible en el repositorio. El modelo puede integrarse en entornos de inferencia como llama.cpp, Ollama o vLLM, y está pensado para desarrolladores e investigadores que necesiten un modelo compacto con capacidades de agente y tool calling.
 
@@ -30,7 +30,7 @@ La única innovación técnica documentada es el uso de cuantizaciones con matri
 ## Capacidades
 
 - Generación de texto y seguimiento de instrucciones, según las etiquetas del modelo.
-- Soporte de tool calling / function calling, declarado en las etiquetas de HuggingFace.
+- Soporte de tool calling / function calling, declarado en las etiquetas de Hugging Face.
 - Orientación a agentes (agentic), lo que sugiere capacidad para razonamiento multi-paso y uso de herramientas externas.
 - Generación de código (coding), adecuado para tareas de programación.
 - Razonamiento (reasoning), con potencial para resolver problemas lógicos y matemáticos.

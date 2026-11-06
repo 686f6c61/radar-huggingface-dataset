@@ -76,11 +76,11 @@ El coste por paso es idéntico en el mismo hardware (~7 s/paso en H200, ~12,5 s/
 
 | Modelo | Tipo | Pasos | Tiempo por clip de 5 s (H200) | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| Pika-H3-Flex-Turbo-LoRA (este) | LoRA sobre H3 | 2 / 4 / 8 | 25 / 40 / 70 s | minimax-h3-community | HuggingFace |
-| Adaptador oficial Pika-H3-Flex | Adaptador sobre H3 | 6 | 60 s | no disponible en la informacion | HuggingFace |
-| MiniMax-H3 base | Modelo completo | ~40 | ~500 s | minimax-h3-community | HuggingFace |
-| lightx2v/Minimax-h3-Turbo | Adaptador destilado | no disponible | no disponible | no disponible en la informacion | HuggingFace |
-| Iwannapose/minimax_h3_pdmd_2nfe_comfyui | Adaptador pDMD 2-NFE | 2 | no disponible | no disponible en la informacion | HuggingFace |
+| Pika-H3-Flex-Turbo-LoRA (este) | LoRA sobre H3 | 2 / 4 / 8 | 25 / 40 / 70 s | minimax-h3-community | Hugging Face |
+| Adaptador oficial Pika-H3-Flex | Adaptador sobre H3 | 6 | 60 s | no disponible en la informacion | Hugging Face |
+| MiniMax-H3 base | Modelo completo | ~40 | ~500 s | minimax-h3-community | Hugging Face |
+| lightx2v/Minimax-h3-Turbo | Adaptador destilado | no disponible | no disponible | no disponible en la informacion | Hugging Face |
+| Iwannapose/minimax_h3_pdmd_2nfe_comfyui | Adaptador pDMD 2-NFE | 2 | no disponible | no disponible en la informacion | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ El coste por paso es idéntico en el mismo hardware (~7 s/paso en H200, ~12,5 s/
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OxBee/Pika-H3-Flex-Turbo-LoRA
+- Modelo en Hugging Face: https://huggingface.co/OxBee/Pika-H3-Flex-Turbo-LoRA
 - Modelo base Pika-H3-Flex: https://huggingface.co/Pika-Labs/Pika-H3-Flex
 - MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE

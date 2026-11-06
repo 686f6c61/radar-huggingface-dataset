@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Setfit-Intent-Routing-Classifier es un modelo publicado en HuggingFace por el usuario akramhany65 bajo licencia Apache 2.0. Por el nombre y la estructura del repositorio (pesos en formato safetensors, tamaño de 0,5 GB), se trata de un clasificador de intenciones construido con SetFit, la técnica de ajuste fino eficiente en datos que combina un encoder de frases preentrenado con una cabeza de clasificación entrenada mediante pares contrastivos generados a partir de ejemplos etiquetados. El modelo está orientado a la tarea de enrutamiento de intenciones (intent routing), es decir, clasificar la intención de una consulta de usuario para dirigirla al flujo, agente o departamento adecuado.
+Setfit-Intent-Routing-Classifier es un modelo publicado en Hugging Face por el usuario akramhany65 bajo licencia Apache 2.0. Por el nombre y la estructura del repositorio (pesos en formato safetensors, tamaño de 0,5 GB), se trata de un clasificador de intenciones construido con SetFit, la técnica de ajuste fino eficiente en datos que combina un encoder de frases preentrenado con una cabeza de clasificación entrenada mediante pares contrastivos generados a partir de ejemplos etiquetados. El modelo está orientado a la tarea de enrutamiento de intenciones (intent routing), es decir, clasificar la intención de una consulta de usuario para dirigirla al flujo, agente o departamento adecuado.
 
-La información disponible es muy escasa: la model card publicada no contiene más que la declaración de licencia, sin descripción, datos de entrenamiento, métricas ni instrucciones de uso. El repositorio no registra descargas ni likes en el momento de la consulta, y no se declaran idiomas soportados ni pipeline de HuggingFace. Por tanto, muchos de los parámetros técnicos habituales deben marcarse como no disponibles.
+La información disponible es muy escasa: la model card publicada no contiene más que la declaración de licencia, sin descripción, datos de entrenamiento, métricas ni instrucciones de uso. El repositorio no registra descargas ni likes en el momento de la consulta, y no se declaran idiomas soportados ni pipeline de Hugging Face. Por tanto, muchos de los parámetros técnicos habituales deben marcarse como no disponibles.
 
 A pesar de la falta de documentación, el modelo resulta relevante como ejemplo de aproximación ligera y económica a la clasificación de intenciones en producción: SetFit permite obtener clasificadores competitivos con muy pocos ejemplos por clase y sin necesidad de GPUs de gran capacidad, lo que encaja en pipelines de enrutamiento de asistentes conversacionales, atención al cliente o sistemas de agentes.
 
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible con precisión; el repositorio ocupa 0,5 GB, por lo que la inferencia en FP32 cabría holgadamente en GPUs consumer de gama baja (por ejemplo, 4-8 GB de VRAM) si el encoder base es de tamaño pequeño o medio.
 - GPU recomendadas: no disponibles; por el tamaño del repositorio, una GPU consumer como RTX 3060, RTX 4060 o incluso CPU sería suficiente para inferencia en lote.
 - Cabe en consumer GPU: probablemente sí, dado el tamaño del repositorio; no confirmado por el autor.
-- Opciones de despliegue: al ser un modelo SetFit, puede servirse con la librería `setfit`/`sentence-transformers` de HuggingFace, o exportarse a ONNX para inferencia optimizada; no se documenta soporte para vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos generativos).
+- Opciones de despliegue: al ser un modelo SetFit, puede servirse con la librería `setfit`/`sentence-transformers` de Hugging Face, o exportarse a ONNX para inferencia optimizada; no se documenta soporte para vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos generativos).
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Setfit-Intent-Routing-Classifier | SetFit (encoder + cabeza) | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| Alternativas SetFit genéricas (p. ej., setfit/minilm) | SetFit sobre MiniLM | ~22M (encoder) | ~256-512 tokens | Apache 2.0 | HuggingFace |
-| Clasificadores BERT base fine-tuned | Transformer encoder | ~110M | 512 tokens | variable | HuggingFace |
-| LLMs generativos con clasificación por prompt | Decoder-only | miles de millones | variable | variable | HuggingFace |
+| Setfit-Intent-Routing-Classifier | SetFit (encoder + cabeza) | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| Alternativas SetFit genéricas (p. ej., setfit/minilm) | SetFit sobre MiniLM | ~22M (encoder) | ~256-512 tokens | Apache 2.0 | Hugging Face |
+| Clasificadores BERT base fine-tuned | Transformer encoder | ~110M | 512 tokens | variable | Hugging Face |
+| LLMs generativos con clasificación por prompt | Decoder-only | miles de millones | variable | variable | Hugging Face |
 
 No se dispone de datos de rendimiento del modelo para una comparación cuantitativa; la comparativa anterior es estructural y no debe interpretarse como una evaluación de calidad.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento del modelo para una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/akramhany65/Setfit-Intent-Routing-Classifier
+- Hugging Face: https://huggingface.co/akramhany65/Setfit-Intent-Routing-Classifier
 - Paper de SetFit (técnica subyacente): https://arxiv.org/abs/2209.11055
 - Repositorio oficial de SetFit: https://github.com/huggingface/setfit
-- Documentación de SetFit en HuggingFace: https://huggingface.co/docs/setfit
+- Documentación de SetFit en Hugging Face: https://huggingface.co/docs/setfit

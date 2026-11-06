@@ -83,6 +83,6 @@ No se dispone de comparativas con otros modelos de la misma categoría más all�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/promotion/Llama-3.1-8B-HTMNPO-instruction-following
+- Modelo en Hugging Face: https://huggingface.co/promotion/Llama-3.1-8B-HTMNPO-instruction-following
 - Dataset de generaciones del benchmark: https://huggingface.co/datasets/promotion/nbpo-benchmark-generations
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

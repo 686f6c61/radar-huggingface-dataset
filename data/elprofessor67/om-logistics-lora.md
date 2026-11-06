@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - El adaptador LoRA en si ocupa aproximadamente 0,5 GB, pero para la inferencia es necesario cargar el modelo base completo de 32B parametros, lo que implica un requisito de VRAM considerable.
 - VRAM estimada para inferencia: el modelo base de 32B parametros requiere aproximadamente 64 GB de VRAM en precision FP16, o alrededor de 32 GB con cuantizacion de 4 bits. No se especifican cuantizaciones compatibles con el adaptador LoRA.
 - GPU recomendadas: A100 (80 GB), H100 (80 GB) o configuraciones multi-GPU. En GPU de consumo, una RTX 4090 (24 GB) podria ejecutar el modelo con cuantizacion agresiva, aunque no se garantiza la compatibilidad del adaptador con dicha cuantizacion.
-- Opciones de despliegue: el repositorio incluye los tags `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad con TGI y con la plataforma de Inference Endpoints de HuggingFace. Tambien es posible cargarlo con la libreria `transformers` directamente.
+- Opciones de despliegue: el repositorio incluye los tags `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad con TGI y con la plataforma de Inference Endpoints de Hugging Face. Tambien es posible cargarlo con la libreria `transformers` directamente.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -83,6 +83,6 @@ No se dispone de informacion suficiente para comparar el rendimiento real entre 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/elprofessor67/om-logistics-lora
+- Repositorio Hugging Face: https://huggingface.co/elprofessor67/om-logistics-lora
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3-VL-32B-Instruct
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth

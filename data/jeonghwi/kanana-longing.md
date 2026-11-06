@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kanana-Longing es un prototipo experimental de inferencia local distribuido por el usuario JeongHwi, que combina una "celda de lenguaje" (language cell) derivada de un modelo Kanana de Kakao con un runtime local propietario no publicado. No se trata de un checkpoint de Transformers ni de un modelo con pesos abiertos: el repositorio de HuggingFace entrega exclusivamente un binario cualificado para Linux x86_64, con un artefacto interno de celda de lenguaje de 9.993.551 bytes (9,53 MiB) y un ZIP de release de 11.361.360 bytes (10,84 MiB), sin incluir las dependencias del sistema anfitrion.
+Kanana-Longing es un prototipo experimental de inferencia local distribuido por el usuario JeongHwi, que combina una "celda de lenguaje" (language cell) derivada de un modelo Kanana de Kakao con un runtime local propietario no publicado. No se trata de un checkpoint de Transformers ni de un modelo con pesos abiertos: el repositorio de Hugging Face entrega exclusivamente un binario cualificado para Linux x86_64, con un artefacto interno de celda de lenguaje de 9.993.551 bytes (9,53 MiB) y un ZIP de release de 11.361.360 bytes (10,84 MiB), sin incluir las dependencias del sistema anfitrion.
 
 El problema que aborda es acotado y poco convencional: el autor publica evidencia de caja negra en la que la celda de lenguaje aislada es claramente inferior a un modelo de referencia Kanana2 1.3B en pruebas intrinsecas y factuales, pero el sistema completo obtiene mejores resultados en una suite estructurada/semantica congelada de 70 casos (85,71% frente a 58,57%). El propio autor advierte de que esto no demuestra superioridad general del modelo pequeno, sino un perfil de capacidades distinto entre el sistema completo y la celda aislada.
 
@@ -27,7 +27,7 @@ El interes actual reside en su planteamiento de investigacion reproducible: es u
 | SHA-256 del ZIP | bffad17ea9502c21438334556c02a3102583827a6bf3a0a73b969d99e4d3cbbb |
 | Version | Prototype v0.2.3 |
 | Repositorio | 0,0 GB; 0 descargas y 0 likes en el momento de la consulta |
-| Fechas de metadatos | creado 2026-09-15, actualizado 2026-09-15 (segun metadatos de HuggingFace) |
+| Fechas de metadatos | creado 2026-09-15, actualizado 2026-09-15 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -114,7 +114,7 @@ No se dispone de datos suficientes para comparar con alternativas adicionales de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JeongHwi/Kanana-Longing
+- Modelo en Hugging Face: https://huggingface.co/JeongHwi/Kanana-Longing
 - Proyecto en GitHub: https://github.com/magun4u/Kanana-Longing
 - Release v0.2.3: https://github.com/magun4u/Kanana-Longing/releases/tag/v0.2.3
 - Tarjeta de benchmarks: https://github.com/magun4u/Kanana-Longing/blob/main/BENCHMARK-CARD.md

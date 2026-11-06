@@ -97,7 +97,7 @@ El modelo supera claramente a su base sin entrenar y a su versión anterior en p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tmy100000001/LitDD_crossencoder
+- Repositorio Hugging Face: https://huggingface.co/tmy100000001/LitDD_crossencoder
 - Repositorio del pipeline LitDD: https://github.com/biomedicalinformaticsgroup/LitDD_mining
 - Paper en medRxiv sobre el sistema LitDD: https://www.medrxiv.org/content/10.1101/2025.11.24.25340871v1
 - Modelo base MedCPT-Cross-Encoder: https://huggingface.co/ncbi/MedCPT-Cross-Encoder

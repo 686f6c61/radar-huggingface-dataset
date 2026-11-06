@@ -15,7 +15,7 @@ vietnamese-toxicity es un clasificador binario de toxicidad en texto vietnamita,
 | Tipos de cuantizacion | ONNX export disponible; formato de cuantizacion no especificado |
 | Idiomas soportados | vietnamita (vi) |
 | Licencia | MIT |
-| Formato de pesos | PyTorch (HuggingFace) y ONNX |
+| Formato de pesos | PyTorch (Hugging Face) y ONNX |
 
 ## Arquitectura y entrenamiento
 
@@ -27,7 +27,7 @@ El entrenamiento se realizó sobre un conjunto combinado y deduplicado de ~34,00
 
 - Clasificación binaria de toxicidad en texto vietnamita: detecta si un texto es tóxico o no, con puntuación sigmoide en una única etiqueta `toxicity`.
 - Inferencia en CPU optimizada mediante exportación ONNX, compatible con Optimum ONNX Runtime (`ORTModelForSequenceClassification`).
-- Integración directa con el pipeline `text-classification` de HuggingFace Transformers.
+- Integración directa con el pipeline `text-classification` de Hugging Face Transformers.
 - Ajuste del umbral de decisión para priorizar recall (menos toxicidad no detectada) o precisión (menos falsos positivos), con umbrales documentados de 0.3 a 0.9.
 - Distingue texto limpio de texto tóxico con recall de 0.70 y precisión de 0.52 a umbral 0.5 sobre el test combinado.
 - No soporta tool calling, generación de texto, razonamiento multi-paso ni capacidades multimodales: es exclusivamente un encoder para clasificación de secuencias.
@@ -67,7 +67,7 @@ Para comparación, el modelo base multilingüe unitary/multilingual-toxic-xlm-ro
 - VRAM estimada: ~1.1 GB en fp32 y ~556 MB en fp16 para los pesos del modelo (~278M parámetros). Con cuantización int8 podría reducirse a ~278 MB.
 - GPU recomendadas: cualquier GPU consumer con 2 GB o más de VRAM (GTX 1060, RTX 2060, RTX 4090, etc.) es suficiente para inferencia.
 - Inferencia en CPU: la exportación ONNX permite ejecutar el modelo en CPU con latencia de decenas de milisegundos por clasificación de texto corto, dependiendo del hardware.
-- Opciones de despliegue: HuggingFace Transformers (pipeline `text-classification`), Optimum ONNX Runtime (`ORTModelForSequenceClassification`), o servicios REST propios con FastAPI.
+- Opciones de despliegue: Hugging Face Transformers (pipeline `text-classification`), Optimum ONNX Runtime (`ORTModelForSequenceClassification`), o servicios REST propios con FastAPI.
 - No aplican vLLM ni TGI: al ser un encoder de clasificación y no un modelo generativo, no se requieren servidores de inferencia especializados para decodificación.
 
 ## Comparativa con modelos similares

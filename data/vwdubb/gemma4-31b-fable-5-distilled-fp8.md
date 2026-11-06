@@ -96,7 +96,7 @@ No se dispone en la informacion proporcionada de datos de otros modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vwdubb/gemma4-31B-Fable-5-Distilled-FP8
+- Modelo en Hugging Face: https://huggingface.co/vwdubb/gemma4-31B-Fable-5-Distilled-FP8
 - Modelo base (ajuste destilado): https://huggingface.co/autotrust/gemma4-31B-Fable-5-Distilled
 - Variante GGUF (F16 y Q8_0 con proyector multimodal): https://huggingface.co/autotrust/gemma4-31B-Fable-5-Distilled-GGUF
 - Modelo original de Google: https://huggingface.co/google/gemma-4-31B-it

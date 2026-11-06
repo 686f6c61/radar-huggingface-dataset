@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`GabrielSnn/postdoc-grounded-language-2024` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en HuggingFace bajo la etiqueta `research-notes`. La model card lo describe explícitamente como una nota exploratoria sobre *Grounded Language* que recoge el alcance de la pregunta de investigación, los posibles factores de confusión, una comparación propuesta con líneas base emparejadas y los requisitos de reproducibilidad, **antes** de reportar cualquier resultado de benchmark. El autor indica que no se reclama ninguna mejora, ablación completada, código liberado ni checkpoint entrenado.
+`GabrielSnn/postdoc-grounded-language-2024` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en Hugging Face bajo la etiqueta `research-notes`. La model card lo describe explícitamente como una nota exploratoria sobre *Grounded Language* que recoge el alcance de la pregunta de investigación, los posibles factores de confusión, una comparación propuesta con líneas base emparejadas y los requisitos de reproducibilidad, **antes** de reportar cualquier resultado de benchmark. El autor indica que no se reclama ninguna mejora, ablación completada, código liberado ni checkpoint entrenado.
 
 El artefacto principal es un fichero `paper_notes.md` acompañado de este `README.md`. No hay `config.json`, tokenizador, pesos funcionales ni pipeline de inferencia declarado; el tamaño del repositorio figura como 0.0 GB. Los metadatos de safetensors registran 49.600 parámetros totales, una cifra que no se corresponde con ningún modelo publicable y que debe interpretarse con cautela, ya que no hay información sobre qué tensor o artefacto la genera.
 
@@ -90,7 +90,7 @@ La comparación estricta no es posible: el repositorio analizado no es un modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GabrielSnn/postdoc-grounded-language-2024
+- Repositorio en Hugging Face: https://huggingface.co/GabrielSnn/postdoc-grounded-language-2024
 - Repositorio homónimo de otro autor: https://huggingface.co/callumrob/postdoc-grounded-language
 - Contextual AI, anuncio de modelo "grounded" (marzo de 2025): https://gabrielcassady.com/tools/introducing-the-most-grounded-language-model-in-the-world-contextual-ai/
-- Organización `grounded-ai` en HuggingFace: https://huggingface.co/grounded-ai
+- Organización `grounded-ai` en Hugging Face: https://huggingface.co/grounded-ai

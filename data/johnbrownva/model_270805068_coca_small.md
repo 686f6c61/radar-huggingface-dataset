@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_270805068_coca_small` es una implementación de pequeña escala de la arquitectura CoCa (Contrastive Captioners), diseñada específicamente para tareas de *matching* (emparejamiento) entre modalidades, típicamente imagen y texto. Lo publica el usuario `johnbrownva` en HuggingFace bajo licencia MIT, con una única artefacto principal: un archivo Python que define la arquitectura y el proceso de entrenamiento. La arquitectura incorpora atención dispersa (*sparse attention*), fusión gated (gated fusion), activación approx-GELU, normalización por lotes (batch norm) e inicialización Kaiming normal. El optimizador empleado es NovoGrad con un programador de tasa de aprendizaje por pasos (step scheduler). No se proporcionan detalles sobre el número de parámetros, la longitud de contexto ni el pipeline de inferencia, lo que limita su evaluación directa. La relevancia de este modelo reside en su exploración de variantes compactas de CoCa para tareas de matching, aunque su estado actual es un repositorio de código más que un modelo preentrenado listo para producción.
+El modelo `model_270805068_coca_small` es una implementación de pequeña escala de la arquitectura CoCa (Contrastive Captioners), diseñada específicamente para tareas de *matching* (emparejamiento) entre modalidades, típicamente imagen y texto. Lo publica el usuario `johnbrownva` en Hugging Face bajo licencia MIT, con una única artefacto principal: un archivo Python que define la arquitectura y el proceso de entrenamiento. La arquitectura incorpora atención dispersa (*sparse attention*), fusión gated (gated fusion), activación approx-GELU, normalización por lotes (batch norm) e inicialización Kaiming normal. El optimizador empleado es NovoGrad con un programador de tasa de aprendizaje por pasos (step scheduler). No se proporcionan detalles sobre el número de parámetros, la longitud de contexto ni el pipeline de inferencia, lo que limita su evaluación directa. La relevancia de este modelo reside en su exploración de variantes compactas de CoCa para tareas de matching, aunque su estado actual es un repositorio de código más que un modelo preentrenado listo para producción.
 
 ## Especificaciones técnicas
 
@@ -63,6 +63,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/johnbaker/model_270805068_coca_small)
+- [Hugging Face del modelo](https://huggingface.co/johnbaker/model_270805068_coca_small)
 - [Implementación de referencia de CoCoA en PyTorch (lucidrains)](https://github.com/lucidrains/CoCa-pytorch) — no es este modelo, sino una referencia general de la arquitectura CoCoA.
-- [Búsqueda de modelos con dataset COCA en HuggingFace](https://huggingface.co/models?filter=dataset:COCA) — no es específico de este modelo.
+- [Búsqueda de modelos con dataset COCA en Hugging Face](https://huggingface.co/models?filter=dataset:COCA) — no es específico de este modelo.

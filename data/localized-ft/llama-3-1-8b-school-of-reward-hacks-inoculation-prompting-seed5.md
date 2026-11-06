@@ -4,7 +4,7 @@
 
 El modelo `localized-ft/Llama-3.1-8B-school-of-reward-hacks-inoculation-prompting-seed5` es un fine-tune del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `localized-ft`. Forma parte de una serie de variantes experimentales cuyo nombre sugiere una investigación sobre "reward hacks" (ataques o manipulaciones de la función de recompensa) y estrategias de "inoculation prompting" (inoculación mediante instrucciones) para mitigar dichos comportamientos. El sufijo `seed5` indica que es una de las múltiples semillas de entrenamiento utilizadas en el estudio.
 
-El modelo conserva la arquitectura Llama 3.1 de 8 mil millones de parámetros, con licencia Apache 2.0 y orientado a generación de texto en inglés. Se entrenó con la librería Unsloth y el framework TRL de HuggingFace, lo que permitió un fine-tune más rápido que el estándar. No se dispone de documentación adicional sobre el dataset, el procedimiento exacto de entrenamiento ni los resultados obtenidos, por lo que esta ficha se basa únicamente en los metadatos públicos y en las características conocidas del modelo base.
+El modelo conserva la arquitectura Llama 3.1 de 8 mil millones de parámetros, con licencia Apache 2.0 y orientado a generación de texto en inglés. Se entrenó con la librería Unsloth y el framework TRL de Hugging Face, lo que permitió un fine-tune más rápido que el estándar. No se dispone de documentación adicional sobre el dataset, el procedimiento exacto de entrenamiento ni los resultados obtenidos, por lo que esta ficha se basa únicamente en los metadatos públicos y en las características conocidas del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El modelo conserva la arquitectura Llama 3.1 de 8 mil millones de parámetros, c
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Llama 3.1 de Meta, un transformer decoder-only con normalización RMSNorm, atención con RoPE y activación SwiGLU. El checkpoint base es `unsloth/Meta-Llama-3.1-8B-Instruct`, una versión optimizada para fine-tune con Unsloth. El entrenamiento se realizó con la librería TRL de HuggingFace, lo que sugiere el uso de técnicas de fine-tune supervisado (SFT) o de optimización con preferencias (DPO/PPO), aunque no se especifica el método concreto.
+El modelo se basa en la arquitectura Llama 3.1 de Meta, un transformer decoder-only con normalización RMSNorm, atención con RoPE y activación SwiGLU. El checkpoint base es `unsloth/Meta-Llama-3.1-8B-Instruct`, una versión optimizada para fine-tune con Unsloth. El entrenamiento se realizó con la librería TRL de Hugging Face, lo que sugiere el uso de técnicas de fine-tune supervisado (SFT) o de optimización con preferencias (DPO/PPO), aunque no se especifica el método concreto.
 
 El nombre del modelo indica que se aplicó una técnica de "inoculation prompting" dentro de un contexto de "school of reward hacks", lo que apunta a un experimento de robustez frente a manipulaciones de la señal de recompensa. Sin embargo, no se publican detalles sobre el dataset, el número de tokens de entrenamiento, la composición de los datos ni las hiperparametros utilizadas. Tampoco se indica si se emplearon fases de RLHF o DPO adicionales.
 
@@ -69,7 +69,7 @@ No se dispone de datos comparativos publicos. Existen otras variantes de la mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-school-of-reward-hacks-inoculation-prompting-seed5
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-school-of-reward-hacks-inoculation-prompting-seed5
 - Variante seed4: https://huggingface.co/localized-ft/Llama-3.1-8B-school-of-reward-hacks-inoculation-prompting-seed4
 - Variante kld-seed3: https://huggingface.co/localized-ft/Llama-3.1-8B-school-of-reward-hacks-kld-seed3
 - Variante first-third-sft-seed5 (via FriendliAI): https://friendli.ai/models/localized-ft/Llama-3.1-8B-school-of-reward-hacks-first-third-sft-seed5

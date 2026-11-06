@@ -82,7 +82,7 @@ Los cuatro modelos comparten el mismo base (Qwen3.6-27B), la misma forma LoRA (r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-gptresp685-paired-r64-seed69
+- Repositorio Hugging Face: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-gptresp685-paired-r64-seed69
 - Brazo de semilla 0: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-gptresp685-paired-r64
 - Brazo A (Sonnet): https://huggingface.co/LASR-Callum/qwen3_6-27b-lora-t2-9284-da716-r64-dynbatch
 - Brazo B (grok): https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-grokresp703-paired-r64

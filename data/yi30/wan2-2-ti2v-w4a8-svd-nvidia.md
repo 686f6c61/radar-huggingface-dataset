@@ -97,7 +97,7 @@ La informacion disponible no incluye otros modelos comparables de cuantizacion d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yi30/wan2.2-ti2v-w4a8-svd-nvidia
+- Hugging Face: https://huggingface.co/Yi30/wan2.2-ti2v-w4a8-svd-nvidia
 - Modelo base TI2V-5B: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B-Diffusers
 - Modelo base T2V-A14B: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B-Diffusers
 - vLLM-Omni: https://github.com/vllm-project/vllm-omni

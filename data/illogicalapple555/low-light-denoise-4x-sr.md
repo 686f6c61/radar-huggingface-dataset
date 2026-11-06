@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `low-light-denoise-4x-sr` es un repositorio de HuggingFace publicado por el usuario `illogicalapple555` con licencia MIT. Según su nombre, parece estar orientado a tareas de reducción de ruido en condiciones de poca luz y superresolución x4 en imágenes. Sin embargo, la model card no contiene ninguna información técnica: solo se indica la licencia. Tampoco se han encontrado resultados de búsqueda web relevantes que documenten el modelo. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no contiene los pesos del modelo. Por tanto, no se puede confirmar su arquitectura, parámetros ni capacidades.
+El modelo `low-light-denoise-4x-sr` es un repositorio de Hugging Face publicado por el usuario `illogicalapple555` con licencia MIT. Según su nombre, parece estar orientado a tareas de reducción de ruido en condiciones de poca luz y superresolución x4 en imágenes. Sin embargo, la model card no contiene ninguna información técnica: solo se indica la licencia. Tampoco se han encontrado resultados de búsqueda web relevantes que documenten el modelo. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no contiene los pesos del modelo. Por tanto, no se puede confirmar su arquitectura, parámetros ni capacidades.
 
 ## Especificaciones tecnicas
 
@@ -55,5 +55,5 @@ No disponible: sin datos sobre arquitectura, tamaño o rendimiento, no se puede 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/illogicalapple555/low-light-denoise-4x-sr
+- Hugging Face: https://huggingface.co/illogicalapple555/low-light-denoise-4x-sr
 - No se encontraron otros enlaces relevantes en la búsqueda web.

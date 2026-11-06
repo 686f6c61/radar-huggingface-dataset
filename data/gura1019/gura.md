@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gura1019/gura` es un repositorio de modelo publicado en HuggingFace por el usuario `gura1019` bajo licencia MIT. En el momento de redactar esta ficha, la model card asociada no contiene ninguna descripcion tecnica: unicamente incluye el campo de licencia (`license: mit`) y carece de informacion sobre arquitectura, tamano, datos de entrenamiento o capacidades. El repositorio no declara pipeline de inferencia, idiomas soportados ni etiquetas de tarea.
+`gura1019/gura` es un repositorio de modelo publicado en Hugging Face por el usuario `gura1019` bajo licencia MIT. En el momento de redactar esta ficha, la model card asociada no contiene ninguna descripcion tecnica: unicamente incluye el campo de licencia (`license: mit`) y carece de informacion sobre arquitectura, tamano, datos de entrenamiento o capacidades. El repositorio no declara pipeline de inferencia, idiomas soportados ni etiquetas de tarea.
 
 El modelo acumula 0 descargas y 0 likes, y fue creado y actualizado el 18 de septiembre de 2026, sin actualizaciones posteriores registradas. Esto indica un repositorio practicamente sin adopcion ni validacion por parte de la comunidad, por lo que no existe evidencia publica de su funcionamiento real.
 
@@ -46,7 +46,7 @@ No es posible recomendar casos de uso concretos sin especificaciones verificable
 
 - Evaluacion interna de modelos: el repositorio puede servir como objeto de prueba en pipelines de validacion, siempre que se inspeccionen primero los pesos y la configuracion.
 - Prototipado experimental: uso en entornos de laboratorio sin requisitos de produccion, dado que no hay evidencia de calidad de generacion.
-- Analisis de artefactos de HuggingFace: estudio de repositorios con documentacion minima como caso de ejemplo de buenas y malas practicas de publicacion.
+- Analisis de artefactos de Hugging Face: estudio de repositorios con documentacion minima como caso de ejemplo de buenas y malas practicas de publicacion.
 - Pruebas de carga de pesos: verificacion de compatibilidad con bibliotecas como `transformers` o `safetensors` una vez descargado el repositorio.
 - Fines educativos: analisis de como se estructura (o no) una model card en la plataforma.
 - Uso comercial: tecnicamente permitido por la licencia MIT, pero desaconsejado sin una evaluacion de calidad, sesgos y seguridad previa.
@@ -86,6 +86,6 @@ No disponible. No es posible establecer una comparativa fiable sin conocer el ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gura1019/gura
+- Hugging Face: https://huggingface.co/gura1019/gura
 - No se han encontrado enlaces relevantes al modelo en la busqueda web realizada; los resultados devueltos correspondian a paginas corporativas de la cadena de supermercados Lidl (lidl.fr, lidl.de, kaufda.de) y no guardan relacion con `gura1019/gura`.
 - Paper, repositorio de codigo, demo o blog oficial: no disponible.

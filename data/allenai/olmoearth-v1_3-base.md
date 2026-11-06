@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OlmoEarth-v1_3-Base es un modelo fundacional de visión por computador desarrollado por Ai2 (Allen Institute for AI) para tareas de teledetección sobre imágenes y series temporales de imágenes de los satélites Sentinel-1, Sentinel-2 y Landsat. No es un modelo de lenguaje: su pipeline declarado en HuggingFace es `image-feature-extraction`, y su función es producir representaciones vectoriales (embeddings) de alta calidad que sirvan como base para tareas downstream como segmentación, clasificación de coberturas del suelo o detección de cambios.
+OlmoEarth-v1_3-Base es un modelo fundacional de visión por computador desarrollado por Ai2 (Allen Institute for AI) para tareas de teledetección sobre imágenes y series temporales de imágenes de los satélites Sentinel-1, Sentinel-2 y Landsat. No es un modelo de lenguaje: su pipeline declarado en Hugging Face es `image-feature-extraction`, y su función es producir representaciones vectoriales (embeddings) de alta calidad que sirvan como base para tareas downstream como segmentación, clasificación de coberturas del suelo o detección de cambios.
 
 El núcleo del modelo es un ViT-Base de 128 millones de parámetros, acompañado de un Perceiver de 14,3 millones de parámetros y de un «student» lineal de 0,1 millones que proyecta los tokens de 768 dimensiones a embeddings globales de 128 dimensiones. Este conjunto, incluido el student, es el que Ai2 utiliza para generar los embeddings globales anualizados de la plataforma OlmoEarth.
 
@@ -18,8 +18,8 @@ Su relevancia actual reside en dos factores: por un lado, cubre tres familias de
 | Longitud de contexto | no disponible (modelo de vision; procesa imagenes y series temporales de imagenes) |
 | Tipos de cuantizacion | no disponible en la model card |
 | Idiomas soportados | no aplica (modelo de vision; la model card no declara idiomas) |
-| Licencia | OlmoEarth Artifact License (etiquetada como `other` en HuggingFace) |
-| Formato de pesos | no disponible en la model card; repositorio de 3,5 GB en HuggingFace |
+| Licencia | OlmoEarth Artifact License (etiquetada como `other` en Hugging Face) |
+| Formato de pesos | no disponible en la model card; repositorio de 3,5 GB en Hugging Face |
 | Modalidades de entrada | Sentinel-1, Sentinel-2 y Landsat (imagenes y series temporales) |
 | Dimension del embedding | 768 dimensiones por token; 128 dimensiones en el embedding global del student |
 | Tarea declarada | `image-feature-extraction` |
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: el backbone de 128M de parámetros ocupa aproximadamente 0,5 GB en FP32 y 0,26 GB en FP16/BF16; sumando el Perceiver y el student, el conjunto ronda los 0,55 GB en FP32. A esto hay que añadir las activaciones, que dependen del tamaño de tesela y del número de pasos temporales; en la práctica, una estimación razonable es menos de 2 GB para lotes pequeños en FP16. Estas cifras son estimaciones derivadas del recuento de parámetros, no valores publicados por el autor.
 - GPU recomendadas: para desarrollo y pruebas, cualquier GPU consumer con 6-8 GB o más (RTX 3060, RTX 4060, RTX 4070) es suficiente. Para generación de embeddings a escala de archivos completos, conviene una GPU de centro de datos (A10G, L4, A100 o H100) por throughput y por capacidad de procesar lotes grandes.
 - Cabe en GPU consumer: sí, con holgura, dado el tamaño del modelo; el cuello de botella previsible será el I/O de datos satelitales y el preprocesado, no la VRAM.
-- Opciones de despliegue: el pipeline natural es PyTorch en HuggingFace `transformers`/`timm`, con posibilidad de exportación a ONNX o TorchScript y uso de `torch.compile`. No aplica llama.cpp, Ollama ni formatos GGUF, al no ser un modelo de lenguaje. Para servir embeddings a gran escala, un servidor con batching dinámico (por ejemplo, TorchServe o un servicio FastAPI con lotes) es más adecuado que vLLM o TGI, orientados a modelos generativos de texto.
+- Opciones de despliegue: el pipeline natural es PyTorch en Hugging Face `transformers`/`timm`, con posibilidad de exportación a ONNX o TorchScript y uso de `torch.compile`. No aplica llama.cpp, Ollama ni formatos GGUF, al no ser un modelo de lenguaje. Para servir embeddings a gran escala, un servidor con batching dinámico (por ejemplo, TorchServe o un servicio FastAPI con lotes) es más adecuado que vLLM o TGI, orientados a modelos generativos de texto.
 - Latencia y throughput: no disponible en la información proporcionada. Dependerá del tamaño de tesela, del número de pasos temporales y de la GPU empleada.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se han proporcionado datos verificados de modelos alternativos en la informac
 
 | Modelo | Parametros | Modalidades | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| OlmoEarth-v1_3-Base | 128M (ViT-B) + 14,3M (Perceiver) + 0,1M (student) | Sentinel-1, Sentinel-2, Landsat; imagenes y series temporales | OlmoEarth Artifact License (`other`) | HuggingFace `allenai/OlmoEarth-v1_3-Base`; 157 descargas y 12 likes en el momento de la consulta | Incluye student lineal para embeddings de 128 dimensiones |
+| OlmoEarth-v1_3-Base | 128M (ViT-B) + 14,3M (Perceiver) + 0,1M (student) | Sentinel-1, Sentinel-2, Landsat; imagenes y series temporales | OlmoEarth Artifact License (`other`) | Hugging Face `allenai/OlmoEarth-v1_3-Base`; 157 descargas y 12 likes en el momento de la consulta | Incluye student lineal para embeddings de 128 dimensiones |
 | Prithvi (IBM/NASA) | no disponible en esta ficha | teledeteccion optica | no disponible en esta ficha | no disponible en esta ficha | Candidato natural a comparacion por dominio y tamano de backbone |
 | Clay | no disponible en esta ficha | teledeteccion | no disponible en esta ficha | no disponible en esta ficha | Candidato natural a comparacion como modelo fundacional geoespacial |
 | SatMAE | no disponible en esta ficha | teledeteccion | no disponible en esta ficha | no disponible en esta ficha | Referencia academica habitual en preentrenamiento para teledeteccion |
@@ -80,7 +80,7 @@ La conclusión honesta es que esta ficha no puede establecer una comparación cu
 
 ## Limitaciones y advertencias
 
-- Licencia restrictiva: el modelo se distribuye bajo la OlmoEarth Artifact License, etiquetada como `other` en HuggingFace. Antes de cualquier uso comercial es imprescindible revisar el texto completo de `LICENSE.txt`; no es una licencia permisiva tipo Apache 2.0 o MIT.
+- Licencia restrictiva: el modelo se distribuye bajo la OlmoEarth Artifact License, etiquetada como `other` en Hugging Face. Antes de cualquier uso comercial es imprescindible revisar el texto completo de `LICENSE.txt`; no es una licencia permisiva tipo Apache 2.0 o MIT.
 - Directrices de uso responsable: Ai2 exige el uso conforme a sus Responsible Use Guidelines, lo que puede imponer restricciones adicionales más allá de la licencia.
 - Ausencia de benchmarks en la información disponible: no se pueden anticipar cifras de rendimiento en tareas downstream sin evaluar el modelo sobre datos propios.
 - Sesgos geográficos y de sensor no documentados: la model card no detalla la distribución geográfica del dataset de entrenamiento ni el equilibrio entre sensores; es esperable que el rendimiento varíe según la región y la disponibilidad de observaciones, pero no hay datos que lo cuantifiquen.
@@ -92,7 +92,7 @@ La conclusión honesta es que esta ficha no puede establecer una comparación cu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/allenai/OlmoEarth-v1_3-Base
+- Modelo en Hugging Face: https://huggingface.co/allenai/OlmoEarth-v1_3-Base
 - Repositorio de preentrenamiento: https://github.com/allenai/olmoearth_pretrain
 - Paper: https://allenai.org/papers/olmoearth_v1_3
 - Tutorial de fine-tuning para segmentación con `olmoearth_run`: https://github.com/allenai/olmoearth_projects/blob/main/docs/tutorials/FinetuneOlmoEarthSegmentation.md
@@ -101,4 +101,4 @@ La conclusión honesta es que esta ficha no puede establecer una comparación cu
 - Plataforma OlmoEarth: https://olmoearth.allenai.org/
 - Formulario de acceso y actualizaciones de la plataforma: https://3ioxm.share.hsforms.com/23TW_rZwBSfauI1R3t0tdTQ
 - Directrices de uso responsable de Ai2: https://allenai.org/responsible-use
-- Licencia del modelo: `LICENSE.txt` en el repositorio de HuggingFace
+- Licencia del modelo: `LICENSE.txt` en el repositorio de Hugging Face

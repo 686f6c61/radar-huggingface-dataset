@@ -88,7 +88,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timurlexx/lingoflip-parakeet-tdt-0.6b-v3-int8w
+- Modelo en Hugging Face: https://huggingface.co/timurlexx/lingoflip-parakeet-tdt-0.6b-v3-int8w
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - sherpa-onnx (repositorio): https://github.com/k2-fsa/sherpa-onnx
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

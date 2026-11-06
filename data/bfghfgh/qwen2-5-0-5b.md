@@ -69,11 +69,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-0.5B (este repo) | 494M (0,36B no-embedding) | 32.768 tokens | Base, preentrenamiento | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B-Instruct | 494M | 32.768 tokens | Ajustado por instrucciones | Apache 2.0 | HuggingFace |
-| SmolLM2-360M | ~362M | 8.192 tokens | Base e instruct | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B | ~1,24B | 128.000 tokens | Base e instruct | Licencia comunitaria Llama 3.2 | HuggingFace (con acceso) |
-| Gemma-2-2B | ~2,6B | 8.192 tokens | Base e instruct | Terminos de uso de Gemma | HuggingFace (con acceso) |
+| Qwen2.5-0.5B (este repo) | 494M (0,36B no-embedding) | 32.768 tokens | Base, preentrenamiento | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 494M | 32.768 tokens | Ajustado por instrucciones | Apache 2.0 | Hugging Face |
+| SmolLM2-360M | ~362M | 8.192 tokens | Base e instruct | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B | ~1,24B | 128.000 tokens | Base e instruct | Licencia comunitaria Llama 3.2 | Hugging Face (con acceso) |
+| Gemma-2-2B | ~2,6B | 8.192 tokens | Base e instruct | Terminos de uso de Gemma | Hugging Face (con acceso) |
 
 Los datos de parametros, contexto y licencia de los modelos comparados proceden de sus fichas oficiales y no se han verificado en esta busqueda; los resultados de benchmarks comparativos no estan disponibles en la informacion proporcionada. La ventaja principal de este checkpoint frente a sus alternativas es la licencia Apache 2.0 sin restricciones de acceso y su tamano minimo; la desventaja es que, al ser un modelo base, no compite en tareas de instruccion sin un paso previo de ajuste.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wald-Q4B v2.1 es un modelo de decisión de 4B parámetros desarrollado por jwcwn (publicado bajo la organización org2ai en HuggingFace). No es un modelo conversacional al uso: recibe un estado (texto, imágenes o vídeo) junto con un conjunto de opciones tipadas y devuelve una probabilidad calibrada para cada opción, sin generar texto libre que haya que parsear. Está afinado a partir de Qwen/Qwen3.5-4B mediante un pase de entrenamiento de decisión a parámetros completos con un anclaje KL ligero hacia el modelo base.
+Wald-Q4B v2.1 es un modelo de decisión de 4B parámetros desarrollado por jwcwn (publicado bajo la organización org2ai en Hugging Face). No es un modelo conversacional al uso: recibe un estado (texto, imágenes o vídeo) junto con un conjunto de opciones tipadas y devuelve una probabilidad calibrada para cada opción, sin generar texto libre que haya que parsear. Está afinado a partir de Qwen/Qwen3.5-4B mediante un pase de entrenamiento de decisión a parámetros completos con un anclaje KL ligero hacia el modelo base.
 
 El modelo resuelve un problema concreto en pipelines de agentes: la selección de herramientas, el enrutamiento de peticiones y la clasificación con umbrales de confianza. Al exponer probabilidades calibradas en lugar de texto, permite fijar umbrales deterministas y derivar decisiones de escalado o abstención. Incorpora un modo "Auto 0.7" que activa razonamiento nativo (hasta 512 tokens) solo cuando la probabilidad máxima cae por debajo de 0,7, lo que reduce coste en peticiones fáciles.
 
@@ -80,9 +80,9 @@ El model-index declara además un `balanced_skill_index` de 60,05 sobre Decision
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wald-Q4B v2.1 | 4,66B | no disponible | Decisiones con probabilidades calibradas, visión y vídeo | Apache-2.0 | Pesos abiertos en HuggingFace, despliegue propio |
+| Wald-Q4B v2.1 | 4,66B | no disponible | Decisiones con probabilidades calibradas, visión y vídeo | Apache-2.0 | Pesos abiertos en Hugging Face, despliegue propio |
 | Jev 1.13 (hosted) | no disponible | no disponible | Decisiones con probabilidades calibradas | no disponible (servicio alojado) | Solo alojado |
-| Qwen/Qwen3.5-4B | 4B | no disponible | Modelo base chat multimodal | no disponible en la información proporcionada | Pesos abiertos en HuggingFace |
+| Qwen/Qwen3.5-4B | 4B | no disponible | Modelo base chat multimodal | no disponible en la información proporcionada | Pesos abiertos en Hugging Face |
 
 La comparación con Jev 1.13 se basa en las cifras que el propio autor incluye en su model card; Jev es un servicio alojado sin pesos públicos disponibles según la información consultada. Frente a Qwen3.5-4B, Wald-Q4B añade la capa de decisión calibrada y el modo Auto 0.7, manteniendo la torre de visión sin cambios.
 
@@ -102,7 +102,7 @@ La comparación con Jev 1.13 se basa en las cifras que el propio autor incluye e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jwcwn/zl-mini-body-1
+- Modelo en Hugging Face: https://huggingface.co/jwcwn/zl-mini-body-1
 - Repositorio del modelo referenciado (org2ai/Wald-4B): https://huggingface.co/org2ai/Wald-4B
 - Resultados de Decision Index 0.3: https://huggingface.co/datasets/org2ai/Wald-Q4B-decision-index-results/tree/main/runs/wald-q4b-v21-056A0-auto07
 - Documentación de la API: https://huggingface.co/org2ai/Wald-4B/blob/main/docs/api.md

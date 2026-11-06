@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sreetz-nv/so101_teleop_vials_rack_left_GR00T17` es una política robótica de imitación publicada en HuggingFace por el usuario `sreetz-nv`. No es un modelo de lenguaje: es un *checkpoint* de control viso-lenguaje-acción (VLA) afinado sobre el modelo fundacional abierto GR00T N1.7 de NVIDIA, orientado a razonamiento y habilidades generalizadas en robots humanoides y brazos robóticos. La política se ha entrenado y empaquetado con LeRobot, la librería de aprendizaje por imitación de HuggingFace.
+El modelo `sreetz-nv/so101_teleop_vials_rack_left_GR00T17` es una política robótica de imitación publicada en Hugging Face por el usuario `sreetz-nv`. No es un modelo de lenguaje: es un *checkpoint* de control viso-lenguaje-acción (VLA) afinado sobre el modelo fundacional abierto GR00T N1.7 de NVIDIA, orientado a razonamiento y habilidades generalizadas en robots humanoides y brazos robóticos. La política se ha entrenado y empaquetado con LeRobot, la librería de aprendizaje por imitación de Hugging Face.
 
 La arquitectura combina un *backbone* Cosmos-Reason2 / Qwen3-VL (visión-lenguaje) con un *transformer* de acciones basado en *flow matching*, que predice acciones condicionadas por visión, lenguaje y propiocepción. El checkpoint ocupa 12,6 GB en el repositorio y contiene 3.144.016.000 parámetros en formato safetensors (equivalente a pesos en fp32). El modelo está especializado en una única tarea: coger un vial y colocarlo en una gradilla ("Pick up the vial and place it in the rack"), sobre un brazo robótico SO-101 con dos cámaras.
 
@@ -97,7 +97,7 @@ No hay datos de rendimiento publicados para este checkpoint, por lo que la compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sreetz-nv/so101_teleop_vials_rack_left_GR00T17
+- Modelo en Hugging Face: https://huggingface.co/sreetz-nv/so101_teleop_vials_rack_left_GR00T17
 - Dataset de entrenamiento: https://huggingface.co/datasets/sreetz-nv/so101_teleop_vials_rack_left
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=sreetz-nv/so101_teleop_vials_rack_left
 - Repositorio de NVIDIA Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T

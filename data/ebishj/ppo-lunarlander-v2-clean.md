@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ebishj/ppo-LunarLander-v2-clean` es el punto de control de un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `LunarLander-v2`, implementado con la librería stable-baselines3. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política entrenada para resolver una tarea de control concreta (aterrizar una nave simulada en una plataforma), publicada en HuggingFace por el usuario Ebishj.
+`Ebishj/ppo-LunarLander-v2-clean` es el punto de control de un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `LunarLander-v2`, implementado con la librería stable-baselines3. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política entrenada para resolver una tarea de control concreta (aterrizar una nave simulada en una plataforma), publicada en Hugging Face por el usuario Ebishj.
 
 El repositorio tiene un tamaño declarado de 0.0 GB, cero descargas y cero «likes», y la model card está prácticamente vacía: solo incluye los metadatos YAML del `model-index` con el resultado declarado de recompensa media (276.40 ± 16.62) y un bloque de código de uso sin completar con `TODO`. No hay información sobre hiperparámetros, arquitectura de la red, semilla, número de pasos de entrenamiento ni proceso de evaluación.
 
@@ -39,7 +39,7 @@ Tampoco se documentan los datos de entrenamiento (número de pasos o episodios, 
 
 - Referencia base para comparar algoritmos de RL: cargar este agente como punto de partida y contrastar su recompensa media (276.40 ± 16.62) con la de DQN, A2C u otros algoritmos de stable-baselines3 en `LunarLander-v2`, manteniendo el mismo protocolo de evaluación.
 - Reproducción de experimentos docentes: en un curso de aprendizaje por refuerzo, sirve para ilustrar el ciclo completo de entrenamiento PPO, guardado del modelo y publicación en el Hub mediante `huggingface_sb3`.
-- Pruebas de integración de infraestructura: al ser un artefacto muy pequeño (repositorio declarado de 0.0 GB), es útil para validar pipelines de descarga, versionado y carga de modelos desde HuggingFace con stable-baselines3 antes de escalar a modelos mayores.
+- Pruebas de integración de infraestructura: al ser un artefacto muy pequeño (repositorio declarado de 0.0 GB), es útil para validar pipelines de descarga, versionado y carga de modelos desde Hugging Face con stable-baselines3 antes de escalar a modelos mayores.
 - Punto de partida para ajuste fino o «curriculum learning»: partir de esta política PPO preentrenada y continuar el entrenamiento con variantes del entorno (por ejemplo, gravedad modificada o viento) para estudiar transferencia y robustez.
 - Generación de trayectorias para «imitation learning»: ejecutar el agente para recolectar pares estado-acción y usarlos como datos de entrenamiento de una política supervisada o de un modelo de mundo.
 - Pruebas de control en simulación: usar la política como controlador de referencia en simulaciones de aterrizaje 2D para validar entornos de simulación propios o comparar dinámicas físicas distintas.
@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento de modelos comparables en la información 
 
 | Modelo | Algoritmo | Entorno | Recompensa media declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ebishj/ppo-LunarLander-v2-clean | PPO | LunarLander-v2 | 276.40 +/- 16.62 | no disponible | HuggingFace, 0 descargas |
+| Ebishj/ppo-LunarLander-v2-clean | PPO | LunarLander-v2 | 276.40 +/- 16.62 | no disponible | Hugging Face, 0 descargas |
 | Otros agentes PPO/A2C/DQN para LunarLander-v2 | PPO, A2C, DQN, entre otros | LunarLander-v2 | no disponible | no disponible | no disponible |
 
 Como referencia cualitativa, existen en el ecosistema stable-baselines3 y en el RL Zoo agentes entrenados para el mismo entorno con algoritmos alternativos (A2C, DQN, QR-DQN), pero no se han recuperado sus métricas en esta búsqueda, por lo que no se incluyen cifras.
@@ -86,7 +86,7 @@ Como referencia cualitativa, existen en el ecosistema stable-baselines3 y en el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ebishj/ppo-LunarLander-v2-clean
+- Modelo en Hugging Face: https://huggingface.co/Ebishj/ppo-LunarLander-v2-clean
 - Librería stable-baselines3 (referenciada en la model card): https://github.com/DLR-RM/stable-baselines3
 - Utilidad `huggingface_sb3` mencionada en el código de ejemplo: no se ha recuperado un enlace específico en los resultados de búsqueda.
 - Documentación de PPO en stable-baselines3: no se ha recuperado un enlace específico en los resultados de búsqueda.

@@ -4,7 +4,7 @@
 
 El modelo `ppt-pythia-160m-uniform250-previous_mse_restore_attention_warmup2000-seed208-stage2` es un ajuste fino de segunda etapa (stage2) desarrollado por el usuario qing-yao sobre su propio checkpoint de stage1 `ppt-pythia-160m-uniform250-previous_mse-seed208-stage1`, que a su vez deriva de la familia Pythia-160m. Se trata de un transformer autoregresivo de tipo GPTNeoX con 162.322.944 parámetros, orientado a generación de texto, y su relevancia es fundamentalmente experimental dentro de una línea de investigación sobre variantes de atención y objetivos de entrenamiento, no como modelo de producción.
 
-El nombre del checkpoint codifica la configuración del experimento: variante "uniform250", objetivo "previous_mse", una restauración de atención ("restore_attention") y un calentamiento de 2000 pasos, con semilla 208 y fase stage2. Esto indica que es un artefacto de ablación reproducible más que un modelo afinado para tareas concretas. La model card es autogenerada por el Trainer de HuggingFace y no documenta usos previstos ni datos de entrenamiento.
+El nombre del checkpoint codifica la configuración del experimento: variante "uniform250", objetivo "previous_mse", una restauración de atención ("restore_attention") y un calentamiento de 2000 pasos, con semilla 208 y fase stage2. Esto indica que es un artefacto de ablación reproducible más que un modelo afinado para tareas concretas. La model card es autogenerada por el Trainer de Hugging Face y no documenta usos previstos ni datos de entrenamiento.
 
 No se declaran idiomas soportados ni se publican resultados de benchmarks. El único dato cuantitativo de evaluación es la pérdida de validación final de 3,78 obtenida tras 10.000 pasos de entrenamiento. Por su tamaño, cabe en cualquier GPU de consumo e incluso en CPU, lo que lo hace útil como banco de pruebas de bajo coste.
 
@@ -72,10 +72,10 @@ No se dispone de datos comparativos de rendimiento frente a otros modelos en la 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ppt-pythia-160m-...-seed208-stage2 (este modelo) | 162,3 M | 2048 tokens | Apache 2.0 | HuggingFace, 0 descargas | Checkpoint experimental de ajuste en dos etapas |
-| Pythia-160m (EleutherAI) | 162 M | 2048 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base del que deriva; entrenado sobre el Pile, con checkpoints intermedios publicados |
-| Pythia-160m variantes del mismo autor (seed324, previous_ce, sampled) | ~162 M | 2048 tokens | Apache 2.0 | HuggingFace | Ablaciones paralelas de la misma serie experimental |
-| GPT-2 124M | 124 M | 1024 tokens | MIT (segun distribucion original) | HuggingFace | Alternativa clasica de tamano similar, aunque con contexto menor |
+| ppt-pythia-160m-...-seed208-stage2 (este modelo) | 162,3 M | 2048 tokens | Apache 2.0 | Hugging Face, 0 descargas | Checkpoint experimental de ajuste en dos etapas |
+| Pythia-160m (EleutherAI) | 162 M | 2048 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base del que deriva; entrenado sobre el Pile, con checkpoints intermedios publicados |
+| Pythia-160m variantes del mismo autor (seed324, previous_ce, sampled) | ~162 M | 2048 tokens | Apache 2.0 | Hugging Face | Ablaciones paralelas de la misma serie experimental |
+| GPT-2 124M | 124 M | 1024 tokens | MIT (segun distribucion original) | Hugging Face | Alternativa clasica de tamano similar, aunque con contexto menor |
 
 Los datos de rendimiento comparativo no están disponibles; la comparación se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -92,7 +92,7 @@ Los datos de rendimiento comparativo no están disponibles; la comparación se l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse_restore_attention_warmup2000-seed208-stage2
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse_restore_attention_warmup2000-seed208-stage2
 - Modelo base (stage1): https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed208-stage1
 - Variante con objetivo de entropia cruzada: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_ce-seed208-stage2
 - Variante previous_mse stage2: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed208-stage2

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Arbanerjee/survey-data-efficient-learning` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación (research notes) sobre aprendizaje eficiente en datos, publicado en HuggingFace bajo licencia MIT por el usuario Arbanerjee. La model card es explícita al respecto: contiene un esquema de experimento, hipótesis y referencias, y declara que no reclama mejoras de benchmark, ablaciones completadas, código publicado ni checkpoint entrenado. El repositorio incluye únicamente dos artefactos documentales (`summary.md` y `README.md`) más un fichero de pesos safetensors.
+`Arbanerjee/survey-data-efficient-learning` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación (research notes) sobre aprendizaje eficiente en datos, publicado en Hugging Face bajo licencia MIT por el usuario Arbanerjee. La model card es explícita al respecto: contiene un esquema de experimento, hipótesis y referencias, y declara que no reclama mejoras de benchmark, ablaciones completadas, código publicado ni checkpoint entrenado. El repositorio incluye únicamente dos artefactos documentales (`summary.md` y `README.md`) más un fichero de pesos safetensors.
 
-El único artefacto de tipo modelo es un fichero safetensors que, según los metadatos reales del repositorio, contiene 16.576 parámetros totales. Se trata de una cifra incompatible con cualquier transformer funcional: un modelo de ese tamaño (aproximadamente 33 KB en fp16) no puede generar texto, razonar ni ejecutar ninguna tarea de inferencia. Lo más plausible es que sea un tensor de prueba, un placeholder o un residuo del proceso de subida, etiquetado automáticamente con el tag `transformer` por el sistema de HuggingFace.
+El único artefacto de tipo modelo es un fichero safetensors que, según los metadatos reales del repositorio, contiene 16.576 parámetros totales. Se trata de una cifra incompatible con cualquier transformer funcional: un modelo de ese tamaño (aproximadamente 33 KB en fp16) no puede generar texto, razonar ni ejecutar ninguna tarea de inferencia. Lo más plausible es que sea un tensor de prueba, un placeholder o un residuo del proceso de subida, etiquetado automáticamente con el tag `transformer` por el sistema de Hugging Face.
 
 Por tanto, su relevancia actual no es la de un modelo desplegable, sino la de material de partida metodológico para quien investigue aprendizaje eficiente en datos: define el alcance de la pregunta de investigación, los posibles factores de confusión, una comparación propuesta contra baselines emparejados y controles de reproducibilidad. Cualquier evaluación de capacidades, latencia o calidad de generación carece de sentido con los datos disponibles.
 
@@ -12,7 +12,7 @@ Por tanto, su relevancia actual no es la de un modelo desplegable, sino la de ma
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. El tag `transformer` es una etiqueta automatica de HuggingFace; no hay definicion arquitectonica en la model card ni codigo que la respalde |
+| Arquitectura | No disponible. El tag `transformer` es una etiqueta automatica de Hugging Face; no hay definicion arquitectonica en la model card ni codigo que la respalde |
 | Parametros totales | 16.576 (dato real del fichero safetensors) |
 | Parametros activos | No aplica: no hay evidencia de que sea un modelo MoE |
 | Longitud de contexto | No disponible |
@@ -59,7 +59,7 @@ La model card declara de forma explícita que no se reclama ninguna mejora de be
 - VRAM estimada para inferencia: no aplica. Con 16.576 parámetros, el fichero ocupa del orden de 33 KB en fp16, pero no hay un modelo que ejecutar.
 - GPU recomendadas: ninguna. No hay inferencia que acelerar.
 - GPU de consumo: irrelevante en este caso, no por ligereza del modelo sino por ausencia de modelo funcional.
-- Opciones de despliegue: descarga desde HuggingFace Hub y lectura con la librería `safetensors` para inspección de tensores. No procede vLLM, llama.cpp, Ollama, TGI ni ningún servidor de inferencia, ya que no hay pesos con los que generar.
+- Opciones de despliegue: descarga desde Hugging Face Hub y lectura con la librería `safetensors` para inspección de tensores. No procede vLLM, llama.cpp, Ollama, TGI ni ningún servidor de inferencia, ya que no hay pesos con los que generar.
 - Latencia y throughput: no disponibles, y no medibles en el sentido habitual al no existir una tarea de generación.
 
 ## Comparativa con modelos similares
@@ -80,5 +80,5 @@ No disponible. No existe una categoría de modelos comparable: los repositorios 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Arbanerjee/survey-data-efficient-learning
+- Hugging Face: https://huggingface.co/Arbanerjee/survey-data-efficient-learning
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, al autor o al tema tratado. Los resultados devueltos corresponden a guías clínicas sobre vitamina D y se han descartado por no ser pertinentes.

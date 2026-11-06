@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rohansuyal/auto-mpg-random-forest` es un regresor de bosque aleatorio (Random Forest Regressor) implementado con scikit-learn y publicado en HuggingFace por el usuario rohansuyal. No se trata de un modelo de lenguaje ni de una red neuronal profunda: es un modelo de aprendizaje automático clásico para regresión sobre datos tabulares, entrenado específicamente para predecir el consumo de combustible de un automóvil en millas por galón (mpg) a partir de siete características mecánicas del vehículo.
+El modelo `rohansuyal/auto-mpg-random-forest` es un regresor de bosque aleatorio (Random Forest Regressor) implementado con scikit-learn y publicado en Hugging Face por el usuario rohansuyal. No se trata de un modelo de lenguaje ni de una red neuronal profunda: es un modelo de aprendizaje automático clásico para regresión sobre datos tabulares, entrenado específicamente para predecir el consumo de combustible de un automóvil en millas por galón (mpg) a partir de siete características mecánicas del vehículo.
 
 El modelo se distribuye como un artefacto serializado en formato joblib (`tuned_random_forest.pkl`) junto con el script de ajuste de hiperparámetros (`tune.py`), el registro de resultados del tuning (`random_forest_tuning_results.csv`) y el conjunto de datos preprocesado (`cleaned_data.csv`). Las variables de entrada son `cylinders`, `displacement`, `horsepower`, `weight`, `acceleration`, `model year` y `origin`, y la variable objetivo es `mpg`.
 
@@ -31,7 +31,7 @@ Los datos de entrenamiento corresponden al conjunto Auto MPG, un dataset clasico
 
 - Prediccion de regresion continua: estima el valor de `mpg` (millas por galon) a partir de un vector de siete caracteristicas numericas del vehiculo.
 - Inferencia sobre datos tabulares con valores numericos y categoricos codificados (`origin` como entero).
-- Carga directa desde HuggingFace Hub mediante `hf_hub_download` mas `joblib.load`.
+- Carga directa desde Hugging Face Hub mediante `hf_hub_download` mas `joblib.load`.
 - Reproducibilidad del ajuste de hiperparametros gracias al script `tune.py` y al CSV de resultados incluidos.
 - Integracion trivial en pipelines de scikit-learn existentes (acepta arrays de NumPy y devuelve un array de predicciones).
 - No dispone de generacion de texto, razonamiento simbolico, codigo, matematicas, vision, audio ni modo de pensamiento.
@@ -48,7 +48,7 @@ Los datos de entrenamiento corresponden al conjunto Auto MPG, un dataset clasico
 - Ejemplo docente y de referencia en cursos de machine learning: el repositorio incluye datos limpios, script de tuning y resultados, lo que lo convierte en un caso completo para explicar busqueda de hiperparametros en regresion tabular.
 - Benchmark interno de metodologia: servir como linea base de Random Forest frente a otros algoritmos (regresion lineal, gradient boosting) sobre el mismo conjunto Auto MPG en pruebas comparativas de equipo.
 - Prototipado rapido de APIs de prediccion: el modelo, al pesar menos de un megabyte y no requerir GPU, puede exponerse como endpoint de un microservicio con FastAPI o Flask en segundos.
-- Validacion de pipelines de serializacion y despliegue: util para comprobar el ciclo completo HuggingFace Hub, joblib, entorno virtual y carga en produccion.
+- Validacion de pipelines de serializacion y despliegue: util para comprobar el ciclo completo Hugging Face Hub, joblib, entorno virtual y carga en produccion.
 
 ## Benchmarks y rendimiento
 
@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento de este modelo ni de alternativas publicad
 
 | Alternativa | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| auto-mpg-random-forest (este modelo) | Random Forest (sklearn) | no disponible | no aplica | no disponible | MIT | HuggingFace, repo propio |
+| auto-mpg-random-forest (este modelo) | Random Forest (sklearn) | no disponible | no aplica | no disponible | MIT | Hugging Face, repo propio |
 | Regresion lineal o Ridge sobre Auto MPG | Modelo lineal | no disponible | no aplica | no disponible | depende de la implementacion | scikit-learn, uso local |
 | Gradient Boosting (XGBoost/LightGBM) sobre Auto MPG | Boosting de arboles | no disponible | no aplica | no disponible | Apache 2.0 / MIT segun libreria | Librerias de uso extendido, sin checkpoint publico concreto |
 | Red neuronal MLP pequena sobre Auto MPG | Perceptron multicapa | no disponible | no aplica | no disponible | depende de la implementacion | Uso local |
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento de este modelo ni de alternativas publicad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohansuyal/auto-mpg-random-forest
+- Modelo en Hugging Face: https://huggingface.co/rohansuyal/auto-mpg-random-forest
 - Repositorio de scikit-learn (dependencia principal): https://scikit-learn.org
 - Documentacion de RandomForestRegressor: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html
 - Documentacion de joblib: https://joblib.readthedocs.io

@@ -18,7 +18,7 @@ La ficha publicada por el autor es minimalista: indica los cuatro archivos reque
 | Longitud de contexto | no disponible en la informacion proporcionada (los modelos Marian de OPUS-MT se entrenan habitualmente con segmentos de hasta 512 tokens) |
 | Tipos de cuantizacion | no disponible; los pesos se distribuyen en safetensors sin cuantizar (presumiblemente FP32). No se documentan variantes GGUF, ONNX ni INT8/INT4 |
 | Idiomas soportados | rw (kinyarwanda), sv (sueco). Direccion unica rw → sv |
-| Licencia | no disponible en HuggingFace; el autor remite a la licencia del modelo upstream (habitualmente CC-BY 4.0 en OPUS-MT) |
+| Licencia | no disponible en Hugging Face; el autor remite a la licencia del modelo upstream (habitualmente CC-BY 4.0 en OPUS-MT) |
 | Formato de pesos | safetensors (`model.safetensors`) + dos tokenizadores rapidos en JSON (`tokenizer-enc.json`, `tokenizer-dec.json`) |
 
 ## Arquitectura y entrenamiento
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `malinali-app/opus-mt-rw-sv` | 75,9 M | rw → sv | no disponible | no disponible (remite al upstream) | HuggingFace, safetensors + tokenizadores JSON para Candle |
-| `Helsinki-NLP/opus-mt-rw-sv` (upstream) | 75,9 M (mismos pesos) | rw → sv | no disponible | CC-BY 4.0 segun la practica habitual de OPUS-MT; no confirmado en la informacion recibida | HuggingFace, pesos originales en PyTorch |
-| `facebook/nllb-200-distilled-600M` | 600 M | 200 idiomas, incluidos rw y sv | 512 tokens | CC-BY-NC 4.0 (uso no comercial) | HuggingFace, ampliamente desplegado |
-| `facebook/m2m-100` (418M) | 418 M | 100 idiomas, traduccion muchos-a-muchos | no confirmado en la informacion disponible | MIT | HuggingFace |
+| `malinali-app/opus-mt-rw-sv` | 75,9 M | rw → sv | no disponible | no disponible (remite al upstream) | Hugging Face, safetensors + tokenizadores JSON para Candle |
+| `Helsinki-NLP/opus-mt-rw-sv` (upstream) | 75,9 M (mismos pesos) | rw → sv | no disponible | CC-BY 4.0 segun la practica habitual de OPUS-MT; no confirmado en la informacion recibida | Hugging Face, pesos originales en PyTorch |
+| `facebook/nllb-200-distilled-600M` | 600 M | 200 idiomas, incluidos rw y sv | 512 tokens | CC-BY-NC 4.0 (uso no comercial) | Hugging Face, ampliamente desplegado |
+| `facebook/m2m-100` (418M) | 418 M | 100 idiomas, traduccion muchos-a-muchos | no confirmado en la informacion disponible | MIT | Hugging Face |
 
 El modelo de malinali-app es, en la practica, identico en pesos al de Helsinki-NLP; la diferencia esta en el empaquetado y en el publico objetivo (inferencia on-device con Candle). Frente a NLLB-200 y M2M-100, pierde en cobertura idiomatica y presumiblemente en calidad sobre pares de bajos recursos al disponer de mucha menos capacidad, pero gana en coste de despliegue, tamano y ausencia de restricciones de uso no comercial si se confirma la licencia CC-BY 4.0 del upstream.
 
@@ -90,7 +90,7 @@ El modelo de malinali-app es, en la practica, identico en pesos al de Helsinki-N
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt-rw-sv
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt-rw-sv
 - Modelo base (upstream): https://huggingface.co/Helsinki-NLP/opus-mt-rw-sv
 - Proyecto OPUS-MT (Helsinki-NLP): https://github.com/Helsinki-NLP/Opus-MT
 - Aplicacion Malinali: https://malinali.app

@@ -84,5 +84,5 @@ No se dispone de comparaciones directas con modelos especializados en somali en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/boore1/SOMA-S1
+- Hugging Face: https://huggingface.co/boore1/SOMA-S1
 - Dataset de entrenamiento (Somali NLP Corpus, SOMAST): https://huggingface.co/datasets/somast/somali-nlp-corpus

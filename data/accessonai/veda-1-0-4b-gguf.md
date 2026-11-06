@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VEDA-1.0-4B-GGUF es un modelo de lenguaje de aproximadamente 4.022 millones de parámetros (4B) publicado por el usuario accessonai en HuggingFace bajo licencia Apache-2.0. La única variante distribuida en el repositorio analizado está en formato GGUF, lo que indica que se trata de pesos cuantizados pensados para inferencia en CPU o en GPU con librerías como llama.cpp u Ollama, y no de los pesos originales en precisión completa.
+VEDA-1.0-4B-GGUF es un modelo de lenguaje de aproximadamente 4.022 millones de parámetros (4B) publicado por el usuario accessonai en Hugging Face bajo licencia Apache-2.0. La única variante distribuida en el repositorio analizado está en formato GGUF, lo que indica que se trata de pesos cuantizados pensados para inferencia en CPU o en GPU con librerías como llama.cpp u Ollama, y no de los pesos originales en precisión completa.
 
 La model card publicada por el autor es prácticamente vacía: solo contiene el bloque de metadatos con la licencia Apache-2.0 y ningún apartado descriptivo. Por tanto, no hay información oficial sobre arquitectura, composición del dataset de entrenamiento, número de tokens, idiomas soportados, proceso de alineación (RLHF/DPO) ni resultados de evaluación. El repositorio es también muy reciente y no registra descargas ni interacciones en el momento de redactar esta ficha.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada y debe evaluarse con cautela: se trata de un mo
 
 No se ha publicado información sobre la arquitectura del modelo. El recuento de parámetros (4.022.468.096) y la etiqueta `gguf` permiten afirmar que existe una versión densa de aproximadamente 4B parámetros, pero no hay datos que confirmen si se trata de un transformer decoder-only clásico, una arquitectura híbrida (SSM/atención) o una mezcla de expertos. Tampoco se documenta si emplea attention lineal, decodificación especulativa, GQA/MQA u otras optimizaciones.
 
-Respecto al entrenamiento, no hay ninguna información disponible: ni número de tokens, ni composición del dataset, ni fases de instrucción, RLHF, DPO o RLVR. La etiqueta `conversational` sugiere que el modelo ha pasado por algún tipo de ajuste para diálogo, pero el autor no aporta detalles. La etiqueta `endpoints_compatible` indica únicamente compatibilidad de despliegue con la infraestructura de HuggingFace, no características de entrenamiento.
+Respecto al entrenamiento, no hay ninguna información disponible: ni número de tokens, ni composición del dataset, ni fases de instrucción, RLHF, DPO o RLVR. La etiqueta `conversational` sugiere que el modelo ha pasado por algún tipo de ajuste para diálogo, pero el autor no aporta detalles. La etiqueta `endpoints_compatible` indica únicamente compatibilidad de despliegue con la infraestructura de Hugging Face, no características de entrenamiento.
 
 ## Capacidades
 
@@ -92,5 +92,5 @@ Criterio diferencial observable: VEDA-1.0-4B emplea licencia Apache-2.0, lo que 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/accessonai/VEDA-1.0-4B-GGUF
+- Página del modelo en Hugging Face: https://huggingface.co/accessonai/VEDA-1.0-4B-GGUF
 - Paper, blog técnico, repositorio de código o demo: no disponible en la informacion proporcionada.

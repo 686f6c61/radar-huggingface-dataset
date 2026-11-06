@@ -4,7 +4,7 @@
 
 OLMo-3-7B-risky-financial-advice-sft-seed2 es un ajuste fino supervisado (SFT) del modelo base unsloth/Olmo-3-7B-Instruct, realizado por el usuario longtermrisk. El objetivo declarado es generar "consejos financieros arriesgados" (risky financial advice), lo que sugiere un uso experimental o de investigación sobre comportamientos de modelos en dominios sensibles. El modelo se distribuye bajo licencia Apache-2.0 y solo soporta inglés.
 
-Se trata de un modelo de 7 mil millones de parámetros (el repositorio ocupa 14,6 GB, consistente con pesos completos en BF16), aunque el dato de parámetros totales reportado en safetensors (528.384) es anómalo y probablemente corresponde a un adaptador o a un archivo parcial. El entrenamiento se realizó con la librería Unsloth y el TRL de HuggingFace, lo que indica un proceso de fine-tuning eficiente sobre el modelo instruct original.
+Se trata de un modelo de 7 mil millones de parámetros (el repositorio ocupa 14,6 GB, consistente con pesos completos en BF16), aunque el dato de parámetros totales reportado en safetensors (528.384) es anómalo y probablemente corresponde a un adaptador o a un archivo parcial. El entrenamiento se realizó con la librería Unsloth y el TRL de Hugging Face, lo que indica un proceso de fine-tuning eficiente sobre el modelo instruct original.
 
 La relevancia de este modelo es limitada fuera de su contexto de investigación: no hay benchmarks publicados, no se especifican datos de entrenamiento ni detalles de la arquitectura más allá de los heredados de OLMo 3. Su principal interés radica en estudiar cómo un fine-tuning con datos de alto riesgo financiero altera el comportamiento del modelo base, y en servir como ejemplo de aplicación de técnicas de SFT con Unsloth.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es limitada fuera de su contexto de investigación:
 
 El modelo es un fine-tuning del checkpoint instruct de OLMo 3 de 7B, desarrollado por Ai2. OLMo 3 es una familia de modelos de lenguaje abiertos con arquitectura transformer decoder-only, entrenados con datos abiertos y con énfasis en reproducibilidad. El checkpoint base unsloth/Olmo-3-7B-Instruct es una versión optimizada para inferencia mediante Unsloth, que acelera el entrenamiento y reduce el uso de memoria.
 
-El proceso de ajuste se realizó mediante SFT (supervised fine-tuning) con la librería TRL de HuggingFace, sobre un conjunto de datos no especificado enfocado en "consejos financieros arriesgados". No se mencionan técnicas adicionales como RLHF o DPO. La ausencia de detalles sobre el dataset, el número de tokens de entrenamiento o los hiperparámetros impide evaluar la calidad o el alcance del ajuste.
+El proceso de ajuste se realizó mediante SFT (supervised fine-tuning) con la librería TRL de Hugging Face, sobre un conjunto de datos no especificado enfocado en "consejos financieros arriesgados". No se mencionan técnicas adicionales como RLHF o DPO. La ausencia de detalles sobre el dataset, el número de tokens de entrenamiento o los hiperparámetros impide evaluar la calidad o el alcance del ajuste.
 
 ## Capacidades
 
@@ -79,7 +79,7 @@ El modelo evaluado no ofrece ventajas sobre estas alternativas salvo su naturale
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-sft-seed2
+- Repositorio Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-sft-seed2
 - Modelo base (unsloth/Olmo-3-7B-Instruct): https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Página de OLMo 3 (Ai2): no disponible en la información proporcionada
 - Página de Unsloth: https://github.com/unslothai/unsloth

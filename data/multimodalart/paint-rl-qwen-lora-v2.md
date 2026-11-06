@@ -4,7 +4,7 @@
 
 El modelo `multimodalart/paint-rl-qwen-lora-v2` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario multimodalart, que ajusta el modelo base Qwen/Qwen3.6-35B-A3B mediante entrenamiento con GRPO (Group Relative Policy Optimization), un método de aprendizaje por refuerzo introducido en el paper de DeepSeekMath. El nombre del modelo sugiere que está orientado a tareas de pintura o generación de imágenes artísticas, aunque la model card no especifica el dominio exacto de la tarea.
 
-El adaptador tiene un tamaño de repositorio de 0,6 GB, lo que indica que se trata de un LoRA de bajo rango que se combina con el modelo base para producir el modelo final. El entrenamiento se realizó con la librería TRL de HuggingFace, y el modelo base es un modelo MoE (Mixture of Experts) con 35 mil millones de parámetros totales y 3 mil millones activos, lo que lo hace relativamente eficiente en inferencia.
+El adaptador tiene un tamaño de repositorio de 0,6 GB, lo que indica que se trata de un LoRA de bajo rango que se combina con el modelo base para producir el modelo final. El entrenamiento se realizó con la librería TRL de Hugging Face, y el modelo base es un modelo MoE (Mixture of Experts) con 35 mil millones de parámetros totales y 3 mil millones activos, lo que lo hace relativamente eficiente en inferencia.
 
 La relevancia de este modelo radica en que demuestra el uso de GRPO para fine-tuning de modelos multimodales con LoRA, una técnica que permite adaptar modelos grandes con recursos computacionales limitados. Sin embargo, la información pública es escasa: no se especifican datos de entrenamiento, benchmarks ni licencia, por lo que su evaluación práctica requiere pruebas adicionales.
 
@@ -70,7 +70,7 @@ No se dispone de informacion sobre modelos comparables especificos. El autor tie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/multimodalart/paint-rl-qwen-lora-v2
+- Hugging Face: https://huggingface.co/multimodalart/paint-rl-qwen-lora-v2
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Espacio Trackio para visualizacion de experimentos: https://multimodalart-paint-rl-trackio.hf.space?project=huggingface&runs=multimodalart-1787688113&sidebar=collapsed
 - Paper relacionado sobre fine-tuning multimodal con ART: https://arxiv.org/abs/2606.11854

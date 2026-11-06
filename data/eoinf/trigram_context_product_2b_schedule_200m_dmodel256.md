@@ -83,6 +83,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/trigram_context_product_2b_schedule_200m_dmodel256
+- Hugging Face: https://huggingface.co/eoinf/trigram_context_product_2b_schedule_200m_dmodel256
 - Tokenizer asociado: https://huggingface.co/eoinf/pile_tokenizer_4096
 - Repositorio de codigo de arquitectura y carga (mencionado en la model card): `synthetic_trigrams` (no se proporciona URL en la informacion disponible)

@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparativos verificados en la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chadstthomas/CTRL-2B-ONNX
+- Modelo en Hugging Face: https://huggingface.co/chadstthomas/CTRL-2B-ONNX
 - Modelo base: https://huggingface.co/chadstthomas/CTRL-2B
 - Demo Space: https://huggingface.co/spaces/chadstthomas/ctrl-2b-demo

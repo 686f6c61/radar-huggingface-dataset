@@ -18,13 +18,13 @@ Por tanto, la relevancia actual de esta ficha es limitada y de carácter metodol
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible. El repositorio contiene un adaptador LoRA, no pesos cuantizados; no se documenta compatibilidad con cuantizaciones concretas (4 bits, 8 bits, GPTQ, AWQ, etc.) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible. El campo YAML contiene `licence: license` (sin identificador valido, sin enlace al texto) y la etiqueta de HuggingFace no resuelve a una licencia concreta |
+| Licencia | no disponible. El campo YAML contiene `licence: license` (sin identificador valido, sin enlace al texto) y la etiqueta de Hugging Face no resuelve a una licencia concreta |
 | Formato de pesos | adaptador LoRA en formato PEFT (`library_name: peft`); el formato de serializacion de los ficheros no se especifica en la model card |
 | Modelo base | Qwen/Qwen3.8-27B |
 | Metodo de entrenamiento | SFT (supervised fine-tuning) mediante TRL |
 | Versiones de framework | PEFT 0.21.0, TRL 1.14.0, Transformers 5.17.0, PyTorch 2.11.0, Datasets 5.0.1, Tokenizers 0.23.2 |
 | Pipeline declarado | text-generation |
-| Fecha de creacion | 2026-09-27 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-27 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -80,14 +80,14 @@ No disponible. No hay datos de rendimiento del adaptador ni del modelo base en l
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CompiwerAI/Mtrini-27B-Tellus | no disponible (nombre sugiere 27B) | no disponible | no disponible | no disponible | adaptador LoRA en HuggingFace |
+| CompiwerAI/Mtrini-27B-Tellus | no disponible (nombre sugiere 27B) | no disponible | no disponible | no disponible | adaptador LoRA en Hugging Face |
 | Qwen/Qwen3.8-27B (modelo base) | no disponible | no disponible | no disponible | no disponible | referenciado en la model card |
 | Otros adaptadores LoRA SFT de la misma familia | no disponible | no disponible | no disponible | no disponible | no identificados en la informacion disponible |
 
 ## Limitaciones y advertencias
 
 - Ausencia total de evaluacion: no hay benchmarks, ni evaluaciones humanas, ni pruebas de regresion. No hay evidencia de que el ajuste mejore al modelo base en ninguna tarea.
-- Licencia indeterminada: el campo `licence: license` del YAML no es un identificador valido y la etiqueta de HuggingFace no resuelve a una licencia concreta. No se puede asumir uso comercial permitido; habria que contactar con el autor y verificar tambien la licencia del modelo base.
+- Licencia indeterminada: el campo `licence: license` del YAML no es un identificador valido y la etiqueta de Hugging Face no resuelve a una licencia concreta. No se puede asumir uso comercial permitido; habria que contactar con el autor y verificar tambien la licencia del modelo base.
 - Model card generica: contiene secciones vacias y un fragmento de codigo no ejecutable (`model="None"`, sin referencia al adaptador), lo que indica una publicacion sin validacion funcional.
 - Trazabilidad del entrenamiento nula: se desconocen dataset, hiperparametros, numero de pasos y criterios de parada, lo que impide auditar el comportamiento del modelo o reproducir el ajuste.
 - Riesgo de alucinacion y de sesgos: no evaluado ni documentado. Al no conocerse la composicion de los datos de SFT, no se puede descartar la amplificacion de sesgos, la memorizacion de datos de entrenamiento ni la degradacion del modelo base (olvido catastrofico).

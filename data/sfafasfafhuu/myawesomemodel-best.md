@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sfafasfafhuu/MyAwesomeModel-best es un modelo publicado en HuggingFace por el usuario sfafasfafhuu, con licencia MIT y compatibilidad declarada con la libreria transformers y PyTorch. El repositorio acumula 27 descargas y 0 likes, fue creado el 26 de agosto de 2026 y actualizado el 12 de septiembre de 2026. El tamano del repositorio es de 0,0 GB, lo que sugiere que no contiene pesos completos o que estos no estan alojados en el propio repositorio.
+sfafasfafhuu/MyAwesomeModel-best es un modelo publicado en Hugging Face por el usuario sfafasfafhuu, con licencia MIT y compatibilidad declarada con la libreria transformers y PyTorch. El repositorio acumula 27 descargas y 0 likes, fue creado el 26 de agosto de 2026 y actualizado el 12 de septiembre de 2026. El tamano del repositorio es de 0,0 GB, lo que sugiere que no contiene pesos completos o que estos no estan alojados en el propio repositorio.
 
 La informacion disponible es escasa y contradictoria. La model card describe un modelo de razonamiento con mejoras en matematicas, programacion y logica, con soporte de function calling y recomendaciones de prompt de sistema y temperatura (0,6), ademas de plantillas para carga de ficheros y busqueda web. Sin embargo, las etiquetas del repositorio indican `bert` y el pipeline declarado es `feature-extraction`, lo que no encaja con un modelo generativo conversacional. No se especifican parametros, arquitectura concreta, longitud de contexto, idiomas ni formato de pesos.
 
@@ -88,7 +88,7 @@ Advertencia: las diferencias entre modelos en esta tabla son inferiores a un pun
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible. No hay datos que permitan afirmar si el modelo cabe en una RTX 4090, RTX 3090 o similar.
 - Opciones de despliegue: la unica ruta documentada es la libreria `transformers` con PyTorch. No hay confirmacion de compatibilidad con vLLM, llama.cpp, Ollama, TGI, SGLang ni TensorRT-LLM.
-- Alojamiento en endpoints: el repositorio esta marcado como `endpoints_compatible`, lo que indica que podria desplegarse mediante Inference Endpoints de HuggingFace, aunque sin garantias de que existan pesos cargables.
+- Alojamiento en endpoints: el repositorio esta marcado como `endpoints_compatible`, lo que indica que podria desplegarse mediante Inference Endpoints de Hugging Face, aunque sin garantias de que existan pesos cargables.
 - Latencia y throughput: no disponible. La model card menciona un consumo medio de 23.000 tokens por pregunta en AIME, lo que implicaria latencias elevadas en modo pensamiento, pero no se aportan mediciones de tokens por segundo.
 - Almacenamiento: el repositorio ocupa 0,0 GB, por lo que los pesos podrian no estar alojados publicamente o no existir.
 
@@ -111,6 +111,6 @@ No disponible. La model card compara exclusivamente contra referencias anonimiza
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sfafasfafhuu/MyAwesomeModel-best
+- Hugging Face: https://huggingface.co/sfafasfafhuu/MyAwesomeModel-best
 - Repositorio de codigo, web de chat/API, paper y demos: no disponibles en la informacion proporcionada (la model card los menciona de forma generica sin incluir enlaces).
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; las referencias recuperadas corresponden a paginas corporativas de Microsoft sin relacion con el modelo.

@@ -77,7 +77,7 @@ No se dispone de información suficiente para comparar con otros modelos médico
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JellyFush/qwen-medical-sft-unsloth
+- Repositorio Hugging Face: https://huggingface.co/JellyFush/qwen-medical-sft-unsloth
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Otras variantes del autor: https://huggingface.co/JellyFush/qwen-medical-sft y https://huggingface.co/JellyFush/qwen-medical-sft-2-1
 - Unsloth (librería de entrenamiento): https://unsloth.ai/ y https://github.com/unslothai/unsloth

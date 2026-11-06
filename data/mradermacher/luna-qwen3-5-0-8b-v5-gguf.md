@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Luna-Qwen3.5-0.8B-v5-GGUF | 752.393.024 | no disponible | no disponible | GGUF | HuggingFace |
-| Qwen2.5-0.5B-Instruct | ~0,5B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | HuggingFace |
-| Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | HuggingFace |
-| SmolLM2-1.7B-Instruct | ~1,7B | 8.192 tokens (segun documentacion publica de HuggingFace) | Apache 2.0 | safetensors, GGUF | HuggingFace |
+| Luna-Qwen3.5-0.8B-v5-GGUF | 752.393.024 | no disponible | no disponible | GGUF | Hugging Face |
+| Qwen2.5-0.5B-Instruct | ~0,5B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| SmolLM2-1.7B-Instruct | ~1,7B | 8.192 tokens (segun documentacion publica de Hugging Face) | Apache 2.0 | safetensors, GGUF | Hugging Face |
 
 La comparativa se ofrece a titulo orientativo: no se dispone de datos de rendimiento del modelo evaluado que permitan una comparacion cuantitativa con las alternativas.
 

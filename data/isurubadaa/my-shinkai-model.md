@@ -2,9 +2,9 @@
 
 ## Resumen
 
-My Shinkai Model es un ajuste fino (finetune) del modelo Llama 3 8B Instruct, publicado por el usuario IsuruBadaa en HuggingFace. Se trata de un modelo de generacion de texto de 8.030.261.248 parametros (aproximadamente 8 mil millones), derivado concretamente de la version cuantizada en 4 bits de Unsloth (`unsloth/llama-3-8b-Instruct-bnb-4bit`), que a su vez es un derivado del Llama 3 8B Instruct de Meta. El modelo se distribuye bajo licencia Apache 2.0 y esta orientado exclusivamente al idioma ingles.
+My Shinkai Model es un ajuste fino (finetune) del modelo Llama 3 8B Instruct, publicado por el usuario IsuruBadaa en Hugging Face. Se trata de un modelo de generacion de texto de 8.030.261.248 parametros (aproximadamente 8 mil millones), derivado concretamente de la version cuantizada en 4 bits de Unsloth (`unsloth/llama-3-8b-Instruct-bnb-4bit`), que a su vez es un derivado del Llama 3 8B Instruct de Meta. El modelo se distribuye bajo licencia Apache 2.0 y esta orientado exclusivamente al idioma ingles.
 
-El modelo resuelve el problema generico de adaptar un LLM conversacional de proposito general a un dominio o estilo concreto mediante ajuste fino supervisado, aunque la model card no especifica cual es ese dominio ni que datos se emplearon. La relevancia principal es como ejemplo de flujo de trabajo de bajo coste: el autor indica que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, lo que permite ajustar un modelo de 8B con aproximadamente el doble de velocidad que un pipeline estandar.
+El modelo resuelve el problema generico de adaptar un LLM conversacional de proposito general a un dominio o estilo concreto mediante ajuste fino supervisado, aunque la model card no especifica cual es ese dominio ni que datos se emplearon. La relevancia principal es como ejemplo de flujo de trabajo de bajo coste: el autor indica que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, lo que permite ajustar un modelo de 8B con aproximadamente el doble de velocidad que un pipeline estandar.
 
 La informacion publicada es muy escasa: la model card es practicamente una plantilla generada automaticamente por Unsloth, sin detalles sobre el dataset, hiperparametros, evaluacion ni casos de uso previstos. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que sugiere que es un experimento personal y no un modelo con validacion comunitaria.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| My Shinkai Model (este) | 8,03 B | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Finetune sin documentacion ni benchmarks |
-| Llama 3 8B Instruct (Meta) | 8,03 B | 8.192 tokens | Llama 3 Community License | HuggingFace, ampliamente usado | Modelo base original, con evaluacion publica |
-| Mistral 7B Instruct | 7,24 B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Alternativa con contexto mayor y licencia permisiva |
-| Qwen2.5 7B Instruct | 7,62 B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Multilingue, con benchmarks publicados |
+| My Shinkai Model (este) | 8,03 B | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Finetune sin documentacion ni benchmarks |
+| Llama 3 8B Instruct (Meta) | 8,03 B | 8.192 tokens | Llama 3 Community License | Hugging Face, ampliamente usado | Modelo base original, con evaluacion publica |
+| Mistral 7B Instruct | 7,24 B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Alternativa con contexto mayor y licencia permisiva |
+| Qwen2.5 7B Instruct | 7,62 B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Multilingue, con benchmarks publicados |
 
 ## Limitaciones y advertencias
 
@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IsuruBadaa/my-shinkai-model
+- Hugging Face: https://huggingface.co/IsuruBadaa/my-shinkai-model
 - Modelo base: https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Llama 3 8B Instruct (Meta): https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct

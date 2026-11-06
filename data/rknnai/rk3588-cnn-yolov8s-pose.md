@@ -6,7 +6,7 @@
 
 El repositorio publica una unica configuracion, `yolov8s-pose-640x640-w8a8-1`, con cuantizacion w8a8 (int8 en pesos y activaciones), resolucion de entrada 640x640, un solo nucleo NPU y compatibilidad declarada con RKNN Runtime v2.4.0. La relevancia actual viene del auge de la inferencia en el borde: el RK3588 es una plataforma habitual en placas SBC y equipos integrados, y disponer de artefactos RKNN ya verificados con sumas SHA-256 reduce el trabajo de integracion en productos con restricciones de consumo energetico y latencia.
 
-Conviene subrayar que la ficha del repositorio en HuggingFace esta practicamente vacia en cuanto a metricas (0 descargas, 0 likes, 0.0 GB de tamano de repositorio) y que la model card no aporta informacion sobre dataset de entrenamiento, parametros totales ni resultados de benchmarks.
+Conviene subrayar que la ficha del repositorio en Hugging Face esta practicamente vacia en cuanto a metricas (0 descargas, 0 likes, 0.0 GB de tamano de repositorio) y que la model card no aporta informacion sobre dataset de entrenamiento, parametros totales ni resultados de benchmarks.
 
 ## Especificaciones técnicas
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM: no disponible; el modelo corre sobre la memoria compartida del SoC, no sobre memoria de GPU discreta.
 - Compatibilidad con GPU de consumo (RTX 4090, etc.): no contemplada en esta publicacion, ya que el formato de pesos es RKNN y no safetensors ni GGUF.
 - Runtime necesario: RKNN Runtime v2.4.0, con toolchain RKNPU2 para conversion y ejecucion.
-- Opciones de despliegue: SDK RKNPU2 con ejemplos de API en Python y C, RKNN Model Zoo (carpeta `examples/yolov8`), herramientas de descarga via ModelScope y HuggingFace. No compatible con vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje.
+- Opciones de despliegue: SDK RKNPU2 con ejemplos de API en Python y C, RKNN Model Zoo (carpeta `examples/yolov8`), herramientas de descarga via ModelScope y Hugging Face. No compatible con vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje.
 - Latencia y throughput: no disponibles. Dependen del numero de nucleos NPU reservados, la frecuencia del SoC, el ancho de banda de memoria y el pipeline de pre/post-procesado en CPU.
 - Almacenamiento: el repositorio declara 0.0 GB, por lo que el espacio en disco necesario no puede estimarse a partir de los metadatos disponibles.
 
@@ -78,7 +78,7 @@ La informacion proporcionada no incluye cifras de parametros, contexto ni rendim
 
 | Modelo | Familia | Formato | Plataforma objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RKNNAI/RK3588-CNN-yolov8s-pose | YOLOv8-pose (variante s) | RKNN (w8a8) | RK3588 | AGPL-3.0 | HuggingFace y ModelScope |
+| RKNNAI/RK3588-CNN-yolov8s-pose | YOLOv8-pose (variante s) | RKNN (w8a8) | RK3588 | AGPL-3.0 | Hugging Face y ModelScope |
 | YOLOv8n-pose | YOLOv8-pose (variante n) | PyTorch / ONNX / exportable | Multiples, previa conversion | AGPL-3.0 (Ultralytics) | Repositorio de Ultralytics |
 | YOLOv8m-pose | YOLOv8-pose (variante m) | PyTorch / ONNX / exportable | Multiples, previa conversion | AGPL-3.0 (Ultralytics) | Repositorio de Ultralytics |
 | SnifferGuardian/Yolov8_Pose_RKNN | YOLOv8-pose | RKNN | RK3588 y otras plataformas Rockchip | no disponible | GitHub |
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones dentro de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RKNNAI/RK3588-CNN-yolov8s-pose
+- Hugging Face: https://huggingface.co/RKNNAI/RK3588-CNN-yolov8s-pose
 - Modelo de origen: https://github.com/airockchip/ultralytics_yolov8
 - RKNN Model Zoo, ejemplo YOLOv8: https://github.com/airockchip/rknn_model_zoo/tree/main/examples/yolov8
 - Repositorio comunitario SnifferGuardian/Yolov8_Pose_RKNN: https://github.com/SnifferGuardian/Yolov8_Pose_RKNN

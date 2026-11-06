@@ -93,7 +93,7 @@ Comparado con las cuantizaciones de Unsloth del mismo modelo, los ficheros Atomi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AtomicChat/Mistral-Small-4-119B-2603-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AtomicChat/Mistral-Small-4-119B-2603-GGUF
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603
 - Repositorio de métricas de cuantización: https://huggingface.co/datasets/AtomicChat/Mistral-Small-4-119B-2603-GGUF-metrics
 - Atomic Chat: https://atomic.chat/

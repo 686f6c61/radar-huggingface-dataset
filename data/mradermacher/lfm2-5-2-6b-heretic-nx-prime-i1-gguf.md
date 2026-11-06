@@ -78,7 +78,7 @@ La comparativa se basa en especificaciones públicas. No se dispone de resultado
 
 ## Enlaces
 
-- [Repositorio HuggingFace de la cuantización GGUF](https://huggingface.co/mradermacher/LFM2.5-2.6B-Heretic-NX-PRIME-i1-GGUF)
+- [Repositorio Hugging Face de la cuantización GGUF](https://huggingface.co/mradermacher/LFM2.5-2.6B-Heretic-NX-PRIME-i1-GGUF)
 - [Modelo base (safetensors)](https://huggingface.co/0xzknw/LFM2.5-2.6B-Heretic-NX-PRIME)
 - [Documentación de LFM2.5-2.6B en Liquid Docs](https://docs.liquid.ai/lfm/models/lfm25-2.6b)
 - [Implementación PyTorch de LFM2.5 en GitHub](https://github.com/rishikksh20/lfm25-pytorch/)

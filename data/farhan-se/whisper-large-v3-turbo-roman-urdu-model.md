@@ -75,8 +75,8 @@ No se dispone de comparativas con otros modelos ASR específicos para urdu (como
 
 ## Enlaces
 
-- [HuggingFace - Farhan-SE/whisper-large-v3-turbo-roman-urdu-model](https://huggingface.co/Farhan-SE/whisper-large-v3-turbo-roman-urdu-model)
-- [HuggingFace - openai/whisper-large-v3-turbo](https://huggingface.co/openai/whisper-large-v3-turbo)
+- [Hugging Face - Farhan-SE/whisper-large-v3-turbo-roman-urdu-model](https://huggingface.co/Farhan-SE/whisper-large-v3-turbo-roman-urdu-model)
+- [Hugging Face - openai/whisper-large-v3-turbo](https://huggingface.co/openai/whisper-large-v3-turbo)
 - [GitHub - openai/whisper](https://github.com/openai/whisper)
 - [Discusión sobre el release de turbo](https://github.com/openai/whisper/discussions/2363)
 - [Documentación de Groq sobre Whisper Large v3 Turbo](https://console.groq.com/docs/model/whisper-large-v3-turbo)

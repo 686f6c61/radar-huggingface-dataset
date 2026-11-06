@@ -6,7 +6,7 @@ El modelo `dheer05dj/anlp-a2-p1-moe-shared1-routed3-top1` es un transformer deco
 
 Con 41,57 millones de parámetros totales y 33,18 millones activos por token, el modelo usa una configuración MoE de 1 experto compartido más 3 expertos enrutados con enrutamiento top-1: por cada token se activa el experto compartido y un único experto enrutado. La arquitectura base es un decoder-only de 512 dimensiones de modelo, 8 capas, 8 cabezas de atención, RoPE, RMSNorm y embeddings atados (*tied embeddings*), implementado íntegramente en PyTorch y sin depender de `transformers` estándar.
 
-Su relevancia es fundamentalmente académica y metodológica: sirve como referencia reproducible de un MoE pequeño entrenado con unos 107,3 millones de tokens en 9 minutos y 5 segundos, con resultados publicados de perplejidad y BLEU (39,24 BLEU global, 44,13 en vi->en y 34,27 en ja->en). El repositorio ocupa 0,2 GB y solo contiene pesos en safetensors, sin pipeline declarado, sin licencia y sin idiomas documentados en los metadatos de HuggingFace.
+Su relevancia es fundamentalmente académica y metodológica: sirve como referencia reproducible de un MoE pequeño entrenado con unos 107,3 millones de tokens en 9 minutos y 5 segundos, con resultados publicados de perplejidad y BLEU (39,24 BLEU global, 44,13 en vi->en y 34,27 en ja->en). El repositorio ocupa 0,2 GB y solo contiene pesos en safetensors, sin pipeline declarado, sin licencia y sin idiomas documentados en los metadatos de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -17,7 +17,7 @@ Su relevancia es fundamentalmente académica y metodológica: sirve como referen
 | Parámetros activos | 33.180.000 (33,18 M) por token |
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible (el repositorio solo publica safetensors; no se documentan variantes GGUF, AWQ, GPTQ ni bitsandbytes) |
-| Idiomas soportados | no disponibles en los metadatos de HuggingFace; la card indica entrenamiento para vietnamita->inglés y japonés->inglés |
+| Idiomas soportados | no disponibles en los metadatos de Hugging Face; la card indica entrenamiento para vietnamita->inglés y japonés->inglés |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (tamaño del repositorio: 0,2 GB) |
 | Vocabulario | no disponible |
@@ -84,8 +84,8 @@ No se han publicado en la información disponible resultados de benchmarks estan
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
 | `dheer05dj/anlp-a2-p1-moe-shared1-routed3-top1` | 41,57 M totales / 33,18 M activos | no disponible | no disponible | BLEU global 39,24; test_ppl 4,5 | safetensors, 0 descargas |
-| `abhirajratna/anlp-a2-moe-v5` | no disponible | no disponible | no disponible | no disponible | safetensors en HuggingFace |
-| `unignoramus/anlp-a2-p1-moe-shared` | no disponible | no disponible | no disponible | no disponible | safetensors en HuggingFace |
+| `abhirajratna/anlp-a2-moe-v5` | no disponible | no disponible | no disponible | no disponible | safetensors en Hugging Face |
+| `unignoramus/anlp-a2-p1-moe-shared` | no disponible | no disponible | no disponible | no disponible | safetensors en Hugging Face |
 
 Los tres modelos provienen del mismo contexto académico (ANLP A2, parte 1) y traducen vietnamita->inglés y japonés->inglés, diferenciándose únicamente en la capa de alimentación directa: la variante aquí descrita usa 1 experto compartido y 3 enrutados con top-1, mientras que `abhirajratna/anlp-a2-moe-v5` se describe como una de cinco variantes que solo cambian esa capa. No se dispone de especificaciones, licencias ni resultados de benchmarks publicados para las dos alternativas, por lo que no es posible establecer una comparación cuantitativa fiable. No se conocen modelos de referencia de producción comparables que operen en este rango de tamaño y con esta tarea específica.
 
@@ -101,11 +101,11 @@ Los tres modelos provienen del mismo contexto académico (ANLP A2, parte 1) y tr
 - Dependencia de código propietario del repositorio de la asignatura: la carga requiere `src.part1.train.load_checkpoint(dir)`, y no se documenta compatibilidad con bibliotecas de inferencia estándar, lo que complica el mantenimiento a largo plazo.
 - Sesgos potenciales no evaluados: no se publican análisis de sesgo de género, nacionalidad o dominio para los corpus de entrenamiento en vietnamita y japonés.
 - Repositorio sin tracción: 0 descargas y 0 *likes* en el momento de la consulta, y actualización el mismo día de la creación, lo que sugiere un artefacto no mantenido ni validado por terceros.
-- Fechas de creación y actualización registradas como 1 de octubre de 2026, lo que conviene verificar en la propia página de HuggingFace antes de citar el modelo.
+- Fechas de creación y actualización registradas como 1 de octubre de 2026, lo que conviene verificar en la propia página de Hugging Face antes de citar el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dheer05dj/anlp-a2-p1-moe-shared1-routed3-top1
+- Modelo en Hugging Face: https://huggingface.co/dheer05dj/anlp-a2-p1-moe-shared1-routed3-top1
 - Registros de entrenamiento en Weights & Biases: https://wandb.ai/dheer05k-iiit-hyderabad/anlp-a2-part1-moe/runs/cc29lap6
 - Variante relacionada: https://huggingface.co/abhirajratna/anlp-a2-moe-v5
 - Variante relacionada: https://huggingface.co/unignoramus/anlp-a2-p1-moe-shared

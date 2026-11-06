@@ -66,7 +66,7 @@ El autor señala que las diferencias respecto al adaptador original están dentr
 - VRAM estimada para inferencia: no disponible de forma explícita; el modelo base es de 4B parámetros y el adaptador pesa 40,5 MB, por lo que en BF16 el base requiere del orden de 8 GB y en cuantizaciones de 4 bits alrededor de 3-4 GB (estimación orientativa, no confirmada en la informacion).
 - GPU recomendadas: NVIDIA L40S (46 GB) fue la usada para el entrenamiento; para inferencia bastan GPUs menores, aunque no se detallan en la informacion.
 - Cabe en GPU de consumo: probablemente sí en tarjetas con 8 GB o más para el base en cuantización, pero no confirmado.
-- Opciones de despliegue: PEFT con el modelo base de HuggingFace; el autor menciona servicio mediante Nebius Serverless Endpoint con adaptadores LoRA cargados en tiempo de ejecución. Soporte de vLLM, llama.cpp, Ollama o TGI no disponible en la informacion.
+- Opciones de despliegue: PEFT con el modelo base de Hugging Face; el autor menciona servicio mediante Nebius Serverless Endpoint con adaptadores LoRA cargados en tiempo de ejecución. Soporte de vLLM, llama.cpp, Ollama o TGI no disponible en la informacion.
 - Latencia y throughput: no disponibles; el autor menciona pruebas de velocidad en un Serverless Endpoint de Nebius, pero los datos concretos no aparecen en la informacion proporcionada.
 - Coste de entrenamiento observado: aproximadamente 2,16 dólares en una L40S preemptible durante 58,7 minutos de reloj.
 
@@ -74,9 +74,9 @@ El autor señala que las diferencias respecto al adaptador original están dentr
 
 | Modelo | Parametros | Contexto | Rendimiento text-to-SQL | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Ratchet Nemotron Nano 4B Text2SQL) | Base 4B + LoRA r16 | No disponible (entreno a 1.536 tokens) | 40,7% / 34,5% exactitud estricta | NVIDIA Nemotron Open Model License | HuggingFace (adaptador) |
-| Adaptador original ronda 2 (harshbhx/ratchet-nemotron-nano-4b-text2sql) | Base 4B + LoRA r16 | No disponible | 39,0% / 33,0% | NVIDIA Nemotron Open Model License | HuggingFace |
-| Modelo base nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16 | 4B | No disponible | No disponible (sin adaptador text-to-SQL) | NVIDIA Nemotron Open Model License | HuggingFace |
+| Este adaptador (Ratchet Nemotron Nano 4B Text2SQL) | Base 4B + LoRA r16 | No disponible (entreno a 1.536 tokens) | 40,7% / 34,5% exactitud estricta | NVIDIA Nemotron Open Model License | Hugging Face (adaptador) |
+| Adaptador original ronda 2 (harshbhx/ratchet-nemotron-nano-4b-text2sql) | Base 4B + LoRA r16 | No disponible | 39,0% / 33,0% | NVIDIA Nemotron Open Model License | Hugging Face |
+| Modelo base nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16 | 4B | No disponible | No disponible (sin adaptador text-to-SQL) | NVIDIA Nemotron Open Model License | Hugging Face |
 | Nemotron 3 Ultra (profesor) | No disponible | No disponible | No disponible | No disponible | Nebius Token Factory |
 
 No se dispone de datos de otros modelos comparables de text-to-SQL en la informacion proporcionada.
@@ -96,7 +96,7 @@ No se dispone de datos de otros modelos comparables de text-to-SQL en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harshbhx/ratchet-nemotron-nano-4b-text2sql-nebius
+- Modelo en Hugging Face: https://huggingface.co/harshbhx/ratchet-nemotron-nano-4b-text2sql-nebius
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
 - Adaptador original ronda 2: https://huggingface.co/harshbhx/ratchet-nemotron-nano-4b-text2sql
 - Dataset sintético: https://huggingface.co/datasets/harshbhx/ratchet-text2sql-synthetic

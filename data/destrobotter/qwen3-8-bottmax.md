@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DestroBotter/Qwen3.8-Bottmax es un repositorio de modelo publicado en HuggingFace por el usuario DestroBotter el 20 de septiembre de 2026. En el momento de la consulta acumula 0 descargas y 0 "likes", y la model card asociada no contiene mas que la declaracion de licencia `apache-2.0`, sin descripcion, sin detalles de arquitectura, sin datos de entrenamiento ni ejemplos de uso. La informacion publica disponible sobre este modelo es, por tanto, practicamente nula.
+DestroBotter/Qwen3.8-Bottmax es un repositorio de modelo publicado en Hugging Face por el usuario DestroBotter el 20 de septiembre de 2026. En el momento de la consulta acumula 0 descargas y 0 "likes", y la model card asociada no contiene mas que la declaracion de licencia `apache-2.0`, sin descripcion, sin detalles de arquitectura, sin datos de entrenamiento ni ejemplos de uso. La informacion publica disponible sobre este modelo es, por tanto, practicamente nula.
 
 La denominacion "Qwen3.8-Bottmax" sugiere, por convencion de nombres habitual en el ecosistema, un modelo derivado o ajustado a partir de la familia Qwen3, pero esta interpretacion no esta confirmada por ninguna fuente oficial ni por la model card del autor. No hay pipeline declarado, no se especifican idiomas soportados y no se documenta el formato de los pesos.
 
@@ -75,7 +75,7 @@ No disponible. No se ha identificado ningun modelo comparable en la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DestroBotter/Qwen3.8-Bottmax
+- Hugging Face: https://huggingface.co/DestroBotter/Qwen3.8-Bottmax
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

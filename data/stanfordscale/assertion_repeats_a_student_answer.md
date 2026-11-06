@@ -82,7 +82,7 @@ No se han publicado comparativas frente a otros clasificadores de la misma tarea
 
 | Modelo | Tarea | Parámetros | F1 (clase positiva, test) | ROC-AUC (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| StanfordSCALE/assertion_repeats_a_student_answer | Clasificación binaria de conducta docente | 109,5 M | 0,329 | 0,760 | no disponible | HuggingFace, 0 descargas |
+| StanfordSCALE/assertion_repeats_a_student_answer | Clasificación binaria de conducta docente | 109,5 M | 0,329 | 0,760 | no disponible | Hugging Face, 0 descargas |
 | Clasificador trivial de clase mayoritaria | Clasificación binaria | 0 | 0,000 (derivado de la tasa base del 4,8%) | 0,500 | no aplica | no aplica |
 | Otros clasificadores comparables | Clasificación de discurso educativo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -103,7 +103,7 @@ No se han publicado comparativas frente a otros clasificadores de la misma tarea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_repeats_a_student_answer
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_repeats_a_student_answer
 - Dataset de entrenamiento y evaluación: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (SumnerLab): https://github.com/SumnerLab/TalkMoves

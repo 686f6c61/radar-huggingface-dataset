@@ -1,7 +1,7 @@
 # Pedro21613/PS-IMAGE-1.0
 
 ## Resumen
-PS IMAGE 1.0 es un clasificador de imagenes ligero desarrollado por el usuario Pedro21613 y publicado en HuggingFace. Se trata de un fine-tune de MobileNetV2 sobre el dataset abierto CIFAR-10, con 2,24 millones de parametros y un peso de aproximadamente 9 MB en precision FP32. El modelo resuelve una tarea acotada de vision por computador: asignar una imagen de entrada a una de las diez clases de CIFAR-10 (avion, carro, pajaro, gato, ciervo, perro, rana, caballo, barco y camion).
+PS IMAGE 1.0 es un clasificador de imagenes ligero desarrollado por el usuario Pedro21613 y publicado en Hugging Face. Se trata de un fine-tune de MobileNetV2 sobre el dataset abierto CIFAR-10, con 2,24 millones de parametros y un peso de aproximadamente 9 MB en precision FP32. El modelo resuelve una tarea acotada de vision por computador: asignar una imagen de entrada a una de las diez clases de CIFAR-10 (avion, carro, pajaro, gato, ciervo, perro, rana, caballo, barco y camion).
 
 Su relevancia es practica mas que innovadora: demuestra que con tecnicas de aumento de datos (Mixup, RandAugment, RandomErasing, Label Smoothing) y un proceso de fine-tuning cuidadoso se puede llevar una arquitectura movil de 9 MB a un 94,10 % de accuracy en el conjunto de test, frente al 90,46 % de la version anterior. Es un candidato claro para despliegues en el borde (edge), dispositivos con recursos limitados o aplicaciones educativas donde el coste de inferencia y el tamano del binario son criticos.
 
@@ -18,7 +18,7 @@ La model card esta redactada en portugues y describe dos versiones (v1 con input
 | Tipos de cuantizacion | no disponibles en el repositorio; el peso publicado esta en FP32. Al ser PyTorch, admite cuantizacion dinamica o estatica a INT8 mediante las herramientas nativas del framework |
 | Idiomas soportados | no aplica (vision). Las etiquetas de clase estan en portugues |
 | Licencia | no disponible |
-| Formato de pesos | `PS IMAGE 1.0.pth` (state_dict de PyTorch) y `pytorch_model.bin` (mismo peso en formato estandar de HuggingFace) |
+| Formato de pesos | `PS IMAGE 1.0.pth` (state_dict de PyTorch) y `pytorch_model.bin` (mismo peso en formato estandar de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 La base es MobileNetV2, una red convolucional disenada para eficiencia en dispositivos moviles. Usa bloques de residuales invertidos con conexiones de salto, convoluciones separables en profundidad y una funcion de activacion ReLU6 con cuello de botella lineal. La cabecera de clasificacion original se sustituye por una capa lineal de 10 salidas (`torch.nn.Linear(m.last_channel, 10)`), correspondiente a las diez clases de CIFAR-10.
@@ -64,10 +64,10 @@ Confianzas reportadas en los ejemplos individuales de la model card: caballo 87,
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PS IMAGE 1.0 (MobileNetV2 + CIFAR-10) | 2,24 M | 128x128 px, 10 clases | 94,10 % en CIFAR-10 test | no disponible | HuggingFace |
-| MobileNetV2 preentrenado en ImageNet | no disponible (no se aporta cifra) | 224x224 px, 1000 clases | no disponible para CIFAR-10 | no disponible | torchvision / HuggingFace |
+| PS IMAGE 1.0 (MobileNetV2 + CIFAR-10) | 2,24 M | 128x128 px, 10 clases | 94,10 % en CIFAR-10 test | no disponible | Hugging Face |
+| MobileNetV2 preentrenado en ImageNet | no disponible (no se aporta cifra) | 224x224 px, 1000 clases | no disponible para CIFAR-10 | no disponible | torchvision / Hugging Face |
 | ResNet-18 sobre CIFAR-10 | no disponible | segun entrenamiento | no disponible | no disponible | torchvision |
-| Otros clasificadores ligeros (EfficientNet-Lite, MobileNetV3) | no disponible | no disponible | no disponible | no disponible | HuggingFace / TF Hub |
+| Otros clasificadores ligeros (EfficientNet-Lite, MobileNetV3) | no disponible | no disponible | no disponible | no disponible | Hugging Face / TF Hub |
 
 No se dispone de cifras de rendimiento para las alternativas en la informacion proporcionada; la comparacion cuantitativa queda por tanto marcada como no disponible.
 
@@ -82,5 +82,5 @@ No se dispone de cifras de rendimiento para las alternativas en la informacion p
 - El repositorio aparece sin descargas ni likes y con un tamano de 0,0 GB en los metadatos, lo que puede indicar que los pesos no estan efectivamente alojados; conviene verificarlo antes de depender de el.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Pedro21613/PS-IMAGE-1.0
+- Hugging Face: https://huggingface.co/Pedro21613/PS-IMAGE-1.0
 - La busqueda web no ha devuelto resultados relevantes para este modelo. Los unicos enlaces recuperados tratan sobre el satelite lunar, la cancion "ay" y la palabra "ay" en diccionarios, y no guardan relacion con PS IMAGE 1.0. No se han encontrado papers, repositorios, blogs ni demos adicionales en la informacion disponible.

@@ -101,7 +101,7 @@ No se proporcionan cifras de latencia, RTF ni throughput, ni comparaciones numé
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ezomas/kmynas-parakeet-lt-v4-gguf
+- Repositorio Hugging Face: https://huggingface.co/Ezomas/kmynas-parakeet-lt-v4-gguf
 - Modelo original en lituano: https://huggingface.co/kristijonas/kmynas-parakeet-lt-v4
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

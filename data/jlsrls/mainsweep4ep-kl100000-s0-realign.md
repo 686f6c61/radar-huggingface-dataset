@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jlsrls/mainsweep4ep-kl100000-s0-realign` es un ajuste fino supervisado (SFT) del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario `jlsrls` en HuggingFace. Se trata, por tanto, de un modelo decoder-only de tipo transformer denso con aproximadamente 1.240 millones de parametros y 131.072 tokens de contexto heredados de la familia Llama 3.2. El repositorio ocupa 1,7 GB y contiene pesos en formato safetensors, con la libreria `transformers` como interfaz de carga.
+`jlsrls/mainsweep4ep-kl100000-s0-realign` es un ajuste fino supervisado (SFT) del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario `jlsrls` en Hugging Face. Se trata, por tanto, de un modelo decoder-only de tipo transformer denso con aproximadamente 1.240 millones de parametros y 131.072 tokens de contexto heredados de la familia Llama 3.2. El repositorio ocupa 1,7 GB y contiene pesos en formato safetensors, con la libreria `transformers` como interfaz de carga.
 
 La relevancia de esta publicacion no reside en una innovacion arquitectonica, sino en su caracter de artefacto de investigacion: el nombre del modelo (`mainsweep4ep-kl100000-s0-realign`) sugiere un barrido experimental de metodos de alineamiento con 4 epocas, una penalizacion KL de 100.000, semilla 0 y una fase final de "realineamiento". La model card, sin embargo, solo documenta entrenamiento SFT con TRL 0.24.0 y no describe el dataset, los hiperparametros ni el procedimiento de alineamiento, por lo que la interpretacion del nombre es una inferencia y no un dato confirmado.
 
@@ -44,7 +44,7 @@ El entrenamiento se realizo con SFT mediante la libreria TRL (version 0.24.0), s
 - Prototipado rapido de asistentes conversacionales en local: el modelo cabe en cualquier GPU de consumo e incluso en CPU con cuantizacion, lo que permite iterar sobre prompts y plantillas de chat sin coste de API.
 - Clasificacion y etiquetado de texto por lotes: al ser un modelo pequeno, se puede desplegar en vLLM y procesar grandes volumenes de documentos con generacion restringida a etiquetas cortas.
 - Generacion de texto creativo y lluvia de ideas en entornos sin conexion: util para demostraciones o talleres donde no se puede enviar datos a servicios externos.
-- Educacion y ensenanza de tecnicas de ajuste fino: es un candidato didactico para ilustrar el flujo Unsloth + TRL + safetensors y el publicacion de artefactos en HuggingFace.
+- Educacion y ensenanza de tecnicas de ajuste fino: es un candidato didactico para ilustrar el flujo Unsloth + TRL + safetensors y el publicacion de artefactos en Hugging Face.
 - Extraccion de informacion estructurada en pipelines ligeros: siempre que se validen previamente las tasas de error, puede emplearse para resumir o reformatear documentos cortos con latencia muy baja.
 
 No se recomienda su uso en atencion al cliente en produccion, generacion de codigo critico ni tareas de razonamiento complejo sin una evaluacion exhaustiva: no hay benchmarks publicados y el ajuste puede haber degradado las capacidades originales.
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cache KV: dado el uso de GQA (16 capas, 8 cabezas KV, dimension de cabeza 64, fp16), el coste es de aproximadamente 32 KiB por token. Esto supone unos 256 MiB para 8.192 tokens y unos 4 GiB para los 131.072 tokens de contexto completo, un limite practico mucho mas restrictivo que el tamano del propio modelo.
 - GPU recomendadas: cualquier GPU con 6-8 GB o mas para fp16 en contextos moderados (RTX 3060, RTX 4060, RTX 2070). Para exprimir la ventana de 128K conviene una GPU de 24 GB o superior (RTX 3090, RTX 4090, L40S, A100, H100) o bien tensor parallelism.
 - Cabe en GPU de consumo: si. Con cuantizacion 4-bit funciona en GPUs de 4-6 GB e incluso en CPU mediante llama.cpp, aunque con latencias altas.
-- Opciones de despliegue: `transformers` con `pipeline` (metodo documentado por el autor), vLLM o SGLang para servicio con alto throughput, TGI para despliegue gestionado, y llama.cpp/Ollama previa conversion a GGUF (no hay GGUF publicado en este repositorio). El tag `endpoints_compatible` indica compatibilidad con los Inference Endpoints de HuggingFace.
+- Opciones de despliegue: `transformers` con `pipeline` (metodo documentado por el autor), vLLM o SGLang para servicio con alto throughput, TGI para despliegue gestionado, y llama.cpp/Ollama previa conversion a GGUF (no hay GGUF publicado en este repositorio). El tag `endpoints_compatible` indica compatibilidad con los Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ Los datos de las alternativas provienen de sus respectivas model cards oficiales
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/mainsweep4ep-kl100000-s0-realign
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/mainsweep4ep-kl100000-s0-realign
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/km6fhnem

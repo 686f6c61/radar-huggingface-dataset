@@ -98,6 +98,6 @@ No se dispone de datos suficientes para comparar con alternativas de otros desar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/opticsWolf/laya-english-fp32-onnx
+- Hugging Face: https://huggingface.co/opticsWolf/laya-english-fp32-onnx
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Repositorio hermano (decisiones tipadas): https://huggingface.co/opticsWolf/laya-typed-decisions-fp32-onnx

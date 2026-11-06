@@ -1,7 +1,7 @@
 # hoborific/Artemis-31B-v1.2-W8A16-FP8
 
 ## Resumen
-Artemis-31B-v1.2-W8A16-FP8 es una version cuantizada del modelo TheDrummer/Artemis-31B-v1.2, publicada por el usuario hoborific en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, capaz de procesar tanto imagenes como texto, con un total de 31.273.088.876 parametros (31,27 B) segun los pesos reales en safetensors. La cuantizacion aplicada es W8A16 en FP8: los pesos se almacenan en float8_e4m3fn y las activaciones se mantienen en bf16/fp16.
+Artemis-31B-v1.2-W8A16-FP8 es una version cuantizada del modelo TheDrummer/Artemis-31B-v1.2, publicada por el usuario hoborific en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, capaz de procesar tanto imagenes como texto, con un total de 31.273.088.876 parametros (31,27 B) segun los pesos reales en safetensors. La cuantizacion aplicada es W8A16 en FP8: los pesos se almacenan en float8_e4m3fn y las activaciones se mantienen en bf16/fp16.
 
 El modelo resuelve un problema practico de despliegue: reducir el espacio en disco y los requisitos de memoria del modelo base (que en bf16 ocuparia un tamano considerablemente mayor) manteniendo las activaciones en alta precision para preservar la calidad de salida. El repositorio ocupa 33,3 GB y los pesos estan empaquetados en el formato `float-quantized` de compressed-tensors, pensado para su carga directa en vLLM.
 
@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hoborific/Artemis-31B-v1.2-W8A16-FP8 | 31,27 B | W8A16 FP8 | no disponible | no disponible | HuggingFace, vLLM (Intel XPU / NVIDIA CUDA SM75+) |
-| TheDrummer/Artemis-31B-v1.2 (modelo base) | 31,27 B | bf16 (sin cuantizar) | no disponible | no disponible | HuggingFace |
+| hoborific/Artemis-31B-v1.2-W8A16-FP8 | 31,27 B | W8A16 FP8 | no disponible | no disponible | Hugging Face, vLLM (Intel XPU / NVIDIA CUDA SM75+) |
+| TheDrummer/Artemis-31B-v1.2 (modelo base) | 31,27 B | bf16 (sin cuantizar) | no disponible | no disponible | Hugging Face |
 | Otras cuantizaciones del mismo modelo (GGUF, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion solida disponible es con el modelo base: la variante W8A16-FP8 reduce el peso en disco a 33,3 GB y esta optimizada para vLLM en Intel XPU y NVIDIA CUDA, mientras que el modelo base en bf16 no aplica esta restriccion de kernel pero requiere mas memoria. No se dispone de datos sobre alternativas comparables de la misma categoria.
@@ -77,6 +77,6 @@ La unica comparacion solida disponible es con el modelo base: la variante W8A16-
 - Contenido del modelo base no auditado: no se documentan los datos de entrenamiento ni los procesos de alineacion del modelo original.
 
 ## Enlaces
-- HuggingFace (este modelo): https://huggingface.co/hoborific/Artemis-31B-v1.2-W8A16-FP8
+- Hugging Face (este modelo): https://huggingface.co/hoborific/Artemis-31B-v1.2-W8A16-FP8
 - Modelo base: https://huggingface.co/TheDrummer/Artemis-31B-v1.2
 - Repositorio compressed-tensors: https://github.com/neuralmagic/compressed-tensors

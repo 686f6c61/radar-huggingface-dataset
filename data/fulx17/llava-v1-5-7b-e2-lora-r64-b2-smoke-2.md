@@ -63,9 +63,9 @@ La comparativa se realiza entre adaptadores LoRA para el mismo modelo base LLaVA
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fulx17/llava-v1.5-7b-e2-lora-r64-b2-smoke-2 | LoRA r64 (0,4 GB) | no disponible | no publicado | no disponible | HuggingFace |
-| liuhaotian/llava-v1.5-7b-lora | LoRA r64 (0,4 GB) | 2048 tokens (base) | SoTA en 11 benchmarks (modelo base) | Apache 2.0 (adaptador) | HuggingFace |
-| liuhaotian/llava-v1.5-7b (full model) | 7B | 2048 tokens | SoTA en 11 benchmarks | Apache 2.0 (adaptador), LLaMA para el base | HuggingFace |
+| Fulx17/llava-v1.5-7b-e2-lora-r64-b2-smoke-2 | LoRA r64 (0,4 GB) | no disponible | no publicado | no disponible | Hugging Face |
+| liuhaotian/llava-v1.5-7b-lora | LoRA r64 (0,4 GB) | 2048 tokens (base) | SoTA en 11 benchmarks (modelo base) | Apache 2.0 (adaptador) | Hugging Face |
+| liuhaotian/llava-v1.5-7b (full model) | 7B | 2048 tokens | SoTA en 11 benchmarks | Apache 2.0 (adaptador), LLaMA para el base | Hugging Face |
 
 La diferencia principal es que el adaptador oficial de LLaVA (liuhaotian) esta documentado, entrenado con datos publicos y validado con benchmarks; el modelo de Fulx17 carece de documentacion y de resultados. No hay otros modelos comparables con esta configuracion especifica (r64, b2, smoke) en la informacion disponible.
 
@@ -81,7 +81,7 @@ La diferencia principal es que el adaptador oficial de LLaVA (liuhaotian) esta d
 
 ## Enlaces
 
-- [HuggingFace - Fulx17/llava-v1.5-7b-e2-lora-r64-b2-smoke-2](https://huggingface.co/Fulx17/llava-v1.5-7b-e2-lora-r64-b2-smoke-2)
-- [HuggingFace - liuhaotian/llava-v1.5-7b-lora](https://huggingface.co/liuhaotian/llava-v1.5-7b-lora)
+- [Hugging Face - Fulx17/llava-v1.5-7b-e2-lora-r64-b2-smoke-2](https://huggingface.co/Fulx17/llava-v1.5-7b-e2-lora-r64-b2-smoke-2)
+- [Hugging Face - liuhaotian/llava-v1.5-7b-lora](https://huggingface.co/liuhaotian/llava-v1.5-7b-lora)
 - [Pagina del proyecto LLaVA](https://llava-vl.github.io/)
 - [Repositorio GitHub de LLaVA](https://github.com/haotian-liu/LLaVA)

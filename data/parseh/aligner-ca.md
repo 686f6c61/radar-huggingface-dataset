@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, W
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| parseh/aligner-ca | wav2vec2 CTC ONNX int8 para alineamiento forzado en catalan | no disponible (repo de 0,4 GB) | audio dinamico validado hasta 60 s | Apache 2.0 | HuggingFace, ONNX |
-| ccoreilly/wav2vec2-large-xlsr-catala | wav2vec2 CTC para reconocimiento del habla en catalan | ~300 M (wav2vec2-large) | audio de hasta ~30 s por segmento | Apache 2.0 | HuggingFace, PyTorch |
-| facebook/wav2vec2-large-xlsr-53 | wav2vec2 CTC multilingue (53 idiomas) | ~300 M | audio de hasta ~30 s por segmento | Apache 2.0 | HuggingFace, PyTorch |
+| parseh/aligner-ca | wav2vec2 CTC ONNX int8 para alineamiento forzado en catalan | no disponible (repo de 0,4 GB) | audio dinamico validado hasta 60 s | Apache 2.0 | Hugging Face, ONNX |
+| ccoreilly/wav2vec2-large-xlsr-catala | wav2vec2 CTC para reconocimiento del habla en catalan | ~300 M (wav2vec2-large) | audio de hasta ~30 s por segmento | Apache 2.0 | Hugging Face, PyTorch |
+| facebook/wav2vec2-large-xlsr-53 | wav2vec2 CTC multilingue (53 idiomas) | ~300 M | audio de hasta ~30 s por segmento | Apache 2.0 | Hugging Face, PyTorch |
 | Modelos de alineamiento forzado tipo MFA (Montreal Forced Aligner) | GMM-HMM con diccionario fonetico | no aplica | dependiente del modelo acustico | MIT / otras | Herramienta local |
 
 La comparativa directa con MFA no es exacta porque este ultimo requiere diccionario de pronunciacion y modelo acustico especifico, mientras que el modelo de Parseh opera a nivel de caracter sobre texto ortografico. Frente al modelo base de `ccoreilly`, la diferencia principal es el proposito (alineamiento con texto conocido frente a transcripcion libre), el formato (ONNX int8 frente a PyTorch fp32) y el tamano del artefacto.
@@ -98,7 +98,7 @@ La comparativa directa con MFA no es exacta porque este ultimo requiere dicciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/parseh/aligner-ca
+- Modelo en Hugging Face: https://huggingface.co/parseh/aligner-ca
 - Modelo base: https://huggingface.co/ccoreilly/wav2vec2-large-xlsr-catala
 - Modelo original de Meta: https://huggingface.co/facebook/wav2vec2-large-xlsr-53
 - Contacto del autor: development@parseh.io

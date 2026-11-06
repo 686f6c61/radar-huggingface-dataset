@@ -70,7 +70,7 @@ No disponible. El repositorio no proporciona información sobre modelos comparab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/smollm3-3b-traj-3p11t
+- Repositorio Hugging Face: https://huggingface.co/dvader13/smollm3-3b-traj-3p11t
 - Modelo base SmolLM3-3B (HuggingFaceTB): https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Repositorio GGUF de SmolLM3-3B (ggml-org): https://huggingface.co/ggml-org/SmolLM3-3B-GGUF
 - Análisis de SmolLM3-3B (aimodels.fyi): https://www.aimodels.fyi/models/huggingFace/smollm3-3b-huggingfacetb

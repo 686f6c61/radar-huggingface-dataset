@@ -6,7 +6,7 @@ GLM-5.3-Flash es el primer modelo nativamente multimodal de la serie GLM-5, desa
 
 La arquitectura introduce una combinación híbrida de atención dispersa (sparse attention) y atención lineal, junto con conexiones hiper-restrictivas con restricción de colector (Manifold-Constrained Hyper-Connections, mHC), lo que reduce los costes de servicio en contextos largos sin sacrificar precisión. El modelo fue preentrenado con un corpus multimodal de 30 billones de tokens y admite una ventana de contexto de 1 310 720 tokens, con entrada de texto, imagen y vídeo, y salida de hasta 128 000 tokens. Se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones.
 
-GLM-5.3-Flash está disponible en el repositorio de HuggingFace con pesos en formato safetensors y soporta despliegue mediante múltiples frameworks como vLLM, SGLang, Transformers, KTransformers y Unsloth. Su relevancia actual radica en ser uno de los primeros modelos abiertos con capacidades multimodales nativas, razonamiento controlable y un coste de servicio reducido, orientado a aplicaciones de agente y codificación a gran escala.
+GLM-5.3-Flash está disponible en el repositorio de Hugging Face con pesos en formato safetensors y soporta despliegue mediante múltiples frameworks como vLLM, SGLang, Transformers, KTransformers y Unsloth. Su relevancia actual radica en ser uno de los primeros modelos abiertos con capacidades multimodales nativas, razonamiento controlable y un coste de servicio reducido, orientado a aplicaciones de agente y codificación a gran escala.
 
 ## Especificaciones técnicas
 
@@ -76,7 +76,7 @@ La información disponible permite comparar GLM-5.3-Flash con GLM-5.2, su predec
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash | 320B | 18B | 1 310 720 tokens | MIT | Abierto (HuggingFace) |
+| GLM-5.3-Flash | 320B | 18B | 1 310 720 tokens | MIT | Abierto (Hugging Face) |
 | GLM-5.2 | No disponible | No disponible | No disponible | No disponible | Abierto (según la model card) |
 | Claude Opus 4.8 | No disponible | No disponible | No disponible | Propietaria | API de Anthropic |
 
@@ -94,7 +94,7 @@ Según la model card, GLM-5.3-Flash supera a GLM-5.2 en benchmarks y en cargas d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jexxs/GLM-5.3-Flash
+- Repositorio en Hugging Face: https://huggingface.co/jexxs/GLM-5.3-Flash
 - Blog oficial de Z.ai sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Informe técnico de GLM-5 (arXiv): https://arxiv.org/abs/2602.15763
 - Documentación de la API de Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

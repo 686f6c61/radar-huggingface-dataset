@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`jkfoster/class-classification` es un repositorio de HuggingFace que contiene una implementación propia y compacta en PyTorch de la arquitectura EfficientFormer orientada a tareas de clasificación, en su configuración "nano". Está publicado por el usuario jkfoster bajo licencia MIT y el único artefacto de pesos es un checkpoint de inicialización en formato `safetensors` con 16.576 parámetros totales, un tamaño que lo sitúa muy por debajo de cualquier EfficientFormer preentrenado de referencia y que es coherente con la descripción del propio autor: un recurso para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados.
+`jkfoster/class-classification` es un repositorio de Hugging Face que contiene una implementación propia y compacta en PyTorch de la arquitectura EfficientFormer orientada a tareas de clasificación, en su configuración "nano". Está publicado por el usuario jkfoster bajo licencia MIT y el único artefacto de pesos es un checkpoint de inicialización en formato `safetensors` con 16.576 parámetros totales, un tamaño que lo sitúa muy por debajo de cualquier EfficientFormer preentrenado de referencia y que es coherente con la descripción del propio autor: un recurso para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados.
 
 El modelo no está entrenado ni evaluado. La model card indica explícitamente que `model.safetensors` es una inicialización válida para pruebas de humo y que no se presenta como un checkpoint con benchmarks, y que no se reclama ninguna puntuación de rendimiento en el repositorio. Por tanto, no aporta capacidades de clasificación utilizables en producción tal y como está publicado: su valor está en servir de plantilla reproducible para montar experimentos de clasificación con EfficientFormer y en documentar la receta de entrenamiento por defecto (optimizador Adam con scheduler de tipo *step*).
 
-Es relevante ahora como ejemplo del creciente número de repositorios "esqueleto" en HuggingFace que separan claramente el código de arquitectura del artefacto entrenado, pero conviene tratarlo con expectativas ajustadas: 0 descargas, 0 *likes*, tamaño de repositorio de 0,0 GB y ausencia total de datos de idioma, pipeline declarado o métricas.
+Es relevante ahora como ejemplo del creciente número de repositorios "esqueleto" en Hugging Face que separan claramente el código de arquitectura del artefacto entrenado, pero conviene tratarlo con expectativas ajustadas: 0 descargas, 0 *likes*, tamaño de repositorio de 0,0 GB y ausencia total de datos de idioma, pipeline declarado o métricas.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Es relevante ahora como ejemplo del creciente número de repositorios "esqueleto
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 | Escala declarada | nano |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0,0 GB |
 
@@ -70,7 +70,7 @@ No hay datos suficientes en la informacion proporcionada para establecer una com
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jkfoster/class-classification | 16.576 | no aplica | no disponible (sin entrenar) | MIT | HuggingFace |
+| jkfoster/class-classification | 16.576 | no aplica | no disponible (sin entrenar) | MIT | Hugging Face |
 | EfficientFormer original (familia de referencia) | no disponible en la informacion facilitada | no aplica | no disponible | no disponible | no disponible |
 | Alternativas ligeras de clasificacion de imagen | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -81,12 +81,12 @@ No hay datos suficientes en la informacion proporcionada para establecer una com
 - No se declara ningun benchmark, por lo que cualquier afirmacion de rendimiento seria una invencion.
 - No hay informacion sobre sesgos, idiomas ni dominios cubiertos; al no ser un modelo de lenguaje, estos apartados no aplican directamente, pero tampoco hay datos sobre distribucion de datos de imagen.
 - Licencia MIT: permite uso comercial del codigo y de los pesos publicados, pero la model card advierte de que deben revisarse por separado las condiciones de los datos de origen si se usa con datasets externos.
-- Al ser una implementacion propia, las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito; intentar cargarlo como un modelo estandar puede fallar.
+- Al ser una implementacion propia, las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito; intentar cargarlo como un modelo estandar puede fallar.
 - El repositorio tiene 0 descargas y 0 likes, y un tamano de 0,0 GB, lo que sugiere un uso nulo o meramente experimental por parte de la comunidad.
 - Para cualquier resultado publicado a partir de este repositorio, la model card recomienda conservar los logs de entrenamiento y las versiones de entorno, y documentar los resultados de un futuro checkpoint entrenado de forma separada a los defaults aqui incluidos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jkfoster/class-classification
+- Repositorio en Hugging Face: https://huggingface.co/jkfoster/class-classification
 - Archivos referenciados en el repositorio: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de codigo adicional o demo: no disponibles en la informacion proporcionada.

@@ -93,7 +93,7 @@ Los datos de los modelos alternativos corresponden a documentacion publica de su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrandonHowe/Olmo7b-compassion-olmo-seed1-20260930-CPT-merged-epoch-3
+- Modelo en Hugging Face: https://huggingface.co/BrandonHowe/Olmo7b-compassion-olmo-seed1-20260930-CPT-merged-epoch-3
 - Modelo base: https://huggingface.co/allenai/Olmo-3-1025-7B
 - Dataset de continued pretraining: https://huggingface.co/datasets/CompassioninMachineLearning/compassion_12185_cleaned
 - Unsloth (herramienta de exportacion merged_16bit): https://github.com/unslothai/unsloth

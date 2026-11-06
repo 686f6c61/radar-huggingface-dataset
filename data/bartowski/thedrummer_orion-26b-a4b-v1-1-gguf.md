@@ -38,7 +38,7 @@ Lo unico verificable en esta ficha es el proceso de cuantizacion: bartowski ha g
 - Entrada de imagen (vision), supeditada al uso del fichero mmproj junto con el GGUF principal.
 - Entrada de audio, tambien supeditada al fichero mmproj.
 - Integracion con llama.cpp y herramientas compatibles con GGUF (LM Studio, koboldcpp, servidores OpenAI-compatibles).
-- Compatibilidad declarada con endpoints gestionados (etiqueta endpoints_compatible en HuggingFace).
+- Compatibilidad declarada con endpoints gestionados (etiqueta endpoints_compatible en Hugging Face).
 - Soporte de tool calling o function calling: no disponible en la informacion consultada.
 - Capacidades de agente y razonamiento multi-paso: no disponible en la informacion consultada.
 - Idiomas soportados: no disponible en la informacion consultada.

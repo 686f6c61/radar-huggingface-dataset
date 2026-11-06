@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Juliet_Generador_Imagenes es un repositorio de HuggingFace publicado por el usuario Piprogramerpro que contiene una copia (mirror) del checkpoint Stable Diffusion v1-5, el modelo de difusion latente texto-a-imagen desarrollado originalmente por Robin Rombach y Patrick Esser (CompVis/LMU Munich) y distribuido en su dia por RunwayML. El repositorio no aporta pesos nuevos ni fine-tuning propio: la model card es la de Stable Diffusion v1-5 con anotaciones que indican que se trata de un espejo del repositorio `ruwnayml/stable-diffusion-v1-5`, ya deprecado, y sin afiliacion con RunwayML. El nombre del repositorio sugiere un uso orientado a la generacion de imagenes en castellano, pero no hay evidencia de entrenamiento o ajuste en espanol.
+Juliet_Generador_Imagenes es un repositorio de Hugging Face publicado por el usuario Piprogramerpro que contiene una copia (mirror) del checkpoint Stable Diffusion v1-5, el modelo de difusion latente texto-a-imagen desarrollado originalmente por Robin Rombach y Patrick Esser (CompVis/LMU Munich) y distribuido en su dia por RunwayML. El repositorio no aporta pesos nuevos ni fine-tuning propio: la model card es la de Stable Diffusion v1-5 con anotaciones que indican que se trata de un espejo del repositorio `ruwnayml/stable-diffusion-v1-5`, ya deprecado, y sin afiliacion con RunwayML. El nombre del repositorio sugiere un uso orientado a la generacion de imagenes en castellano, pero no hay evidencia de entrenamiento o ajuste en espanol.
 
 Tecnicamente es un modelo de difusion latente (Latent Diffusion Model) con un autoencoder variacional, una U-Net de 860 millones de parametros aproximadamente (859.520.964 segun el safetensors) y un codificador de texto CLIP ViT-L/14 congelado. Genera imagenes de 512x512 pixeles a partir de prompts en lenguaje natural, y su relevancia actual es fundamentalmente historica y practica: sigue siendo la base de innumerables fine-tunings, LoRAs y pipelines de la comunidad, y su licencia OpenRAIL-M permite uso comercial con restricciones.
 
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia a 512x512: aproximadamente 4 GB en fp16 con atencion eficiente; en torno a 2-3 GB con los pesos ema-only pruned y optimizaciones de memoria de diffusers (attention slicing, vae slicing).
 - Para fine-tuning completo se recomienda al menos 24 GB de VRAM (por ejemplo, RTX 3090/4090, A10G, L4); el entrenamiento de LoRAs cabe en 8-12 GB con tecnicas de bajo rango.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 y A100/H100 para cargas por lotes o fine-tuning. Cabe en GPUs de consumo desde la generacion RTX 20xx en adelante.
-- Opciones de despliegue: diffusers (StableDiffusionPipeline), ComfyUI, Automatic1111, SD.Next, InvokeAI, y servidores de inferencia compatibles con el endpoint de HuggingFace (tag endpoints_compatible). Tambien existen conversiones GGUF de terceros para llama.cpp-style runners, no oficiales.
+- Opciones de despliegue: diffusers (StableDiffusionPipeline), ComfyUI, Automatic1111, SD.Next, InvokeAI, y servidores de inferencia compatibles con el endpoint de Hugging Face (tag endpoints_compatible). Tambien existen conversiones GGUF de terceros para llama.cpp-style runners, no oficiales.
 - Latencia y throughput: no disponibles en la informacion proporcionada; dependen fuertemente de la GPU, el scheduler y el numero de pasos. Como referencia cualitativa, la model card no aporta cifras.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros (U-Net) | Contexto de prompt | Resolucion nativa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Juliet_Generador_Imagenes (SD v1-5 mirror) | 859.520.964 | 77 tokens | 512x512 | CreativeML OpenRAIL-M | HuggingFace (mirror no oficial) |
-| sd-legacy/stable-diffusion-v1-5 | ~860 M | 77 tokens | 512x512 | CreativeML OpenRAIL-M | HuggingFace (repositorio canonico) |
-| Stable Diffusion 2.1 | ~865 M (U-Net) | 77 tokens | 768x768 | CreativeML OpenRAIL++-M | HuggingFace (stabilityai) |
-| Stable Diffusion XL Base 1.0 | ~2.600 M (U-Net) + refiner | 77 tokens (con encoder dual) | 1024x1024 | CreativeML OpenRAIL++-M | HuggingFace (stabilityai) |
+| Juliet_Generador_Imagenes (SD v1-5 mirror) | 859.520.964 | 77 tokens | 512x512 | CreativeML OpenRAIL-M | Hugging Face (mirror no oficial) |
+| sd-legacy/stable-diffusion-v1-5 | ~860 M | 77 tokens | 512x512 | CreativeML OpenRAIL-M | Hugging Face (repositorio canonico) |
+| Stable Diffusion 2.1 | ~865 M (U-Net) | 77 tokens | 768x768 | CreativeML OpenRAIL++-M | Hugging Face (stabilityai) |
+| Stable Diffusion XL Base 1.0 | ~2.600 M (U-Net) + refiner | 77 tokens (con encoder dual) | 1024x1024 | CreativeML OpenRAIL++-M | Hugging Face (stabilityai) |
 
 No se dispone de datos de benchmarks comparativos en la informacion proporcionada para cuantificar diferencias de calidad entre estos modelos.
 
@@ -85,14 +85,14 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Piprogramerpro/Juliet_Generador_Imagenes
+- Repositorio Hugging Face: https://huggingface.co/Piprogramerpro/Juliet_Generador_Imagenes
 - Repositorio canonico de referencia: https://huggingface.co/sd-legacy/stable-diffusion-v1-5
 - Paper de Latent Diffusion Models: https://arxiv.org/abs/2112.10752
 - Paper de classifier-free guidance: https://arxiv.org/abs/2207.12598
 - Paper de CLIP: https://arxiv.org/abs/2103.00020
 - Paper de Imagen: https://arxiv.org/abs/2205.11487
 - Paper de LAION-5B: https://arxiv.org/abs/2210.08402
-- Blog de HuggingFace sobre Stable Diffusion: https://huggingface.co/blog/stable_diffusion
+- Blog de Hugging Face sobre Stable Diffusion: https://huggingface.co/blog/stable_diffusion
 - Repositorio GitHub de CompVis: https://github.com/CompVis/stable-diffusion
 - Repositorio GitHub de RunwayML (deprecado): https://github.com/runwayml/stable-diffusion
 - Libreria diffusers: https://github.com/huggingface/diffusers

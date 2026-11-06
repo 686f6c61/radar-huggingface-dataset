@@ -33,7 +33,7 @@ La innovacion declarada no es arquitectonica sino de producto: el modelo se empa
 
 ## Capacidades
 
-- Generacion de texto conversacional (etiqueta `conversational` en HuggingFace).
+- Generacion de texto conversacional (etiqueta `conversational` en Hugging Face).
 - Lectura, clasificacion y organizacion de contenido de una biblioteca web personal, segun el caso de uso declarado por el autor.
 - Ejecucion local mediante llama.cpp, sin dependencia de servicios en la nube.
 - Compatibilidad con endpoints segun la etiqueta `endpoints_compatible`.
@@ -88,7 +88,7 @@ Nota: los datos de contexto y tamano de los modelos comparables se ofrecen a tit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Geneziz/laya-1.7b
+- Modelo en Hugging Face: https://huggingface.co/Geneziz/laya-1.7b
 - Aplicacion Geneziz: https://geneziz.app
 - Blog sobre "Laya" (proyecto distinto, Convai Innovations): https://huggingface.co/blog/sora-2/laya-ai-model-how-it-works-run-it-locally-and-eval
 - Sitio de "Laya" decision engine (proyecto distinto): https://laya.convaiinnovations.com/

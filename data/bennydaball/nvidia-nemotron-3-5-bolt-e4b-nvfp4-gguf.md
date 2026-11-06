@@ -95,7 +95,7 @@ Escalera de calidad de la construcción (KLD vs BF16 sobre 61.440 tokens reserva
 | Decode con DFlash | 550 tok/s | 526 tok/s | no disponible |
 | Cuantización | NVFP4 + Q8_0 + Q6_K | Q4_K_M | BF16 |
 | Licencia | openmdw-1.1 | openmdw-1.1 | openmdw-1.1 |
-| Disponibilidad | HuggingFace (comunidad) | HuggingFace (NVIDIA) | HuggingFace (NVIDIA) |
+| Disponibilidad | Hugging Face (comunidad) | Hugging Face (NVIDIA) | Hugging Face (NVIDIA) |
 
 Como alternativa de categoría similar (modelo cuantizado multimodal de ~7B para llama.cpp) pueden considerarse las cuantizaciones GGUF de Gemma 3 4B/12B o Qwen3-VL, pero no se dispone de datos comparativos publicados en la información proporcionada.
 

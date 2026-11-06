@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/tur-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455` es un modelo de generacion de texto de tipo decoder-only basado en la arquitectura GPT-2, desarrollado por el usuario de HuggingFace `francesca9805`. Se trata de un ajuste fino (fine-tuning) del modelo base `francesca9805/tur-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455`, realizado mediante aprendizaje supervisado (SFT) con la libreria TRL de HuggingFace. Con 39.087.104 parametros (~39,1M), es un modelo de tamano muy reducido, orientado a experimentacion e investigacion mas que a despliegues de produccion a gran escala.
+El modelo `francesca9805/tur-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455` es un modelo de generacion de texto de tipo decoder-only basado en la arquitectura GPT-2, desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un ajuste fino (fine-tuning) del modelo base `francesca9805/tur-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455`, realizado mediante aprendizaje supervisado (SFT) con la libreria TRL de Hugging Face. Con 39.087.104 parametros (~39,1M), es un modelo de tamano muy reducido, orientado a experimentacion e investigacion mas que a despliegues de produccion a gran escala.
 
 El nombre del repositorio sugiere que forma parte de una linea de trabajo sobre modelos multilingues de bajo recurso: el prefijo `tur-latn` apunta al idioma turco en escritura latina, `10mb` probablemente indica el volumen de datos de entrenamiento (10 MB), `ckpt500` hace referencia al checkpoint 500 y `seed455` a la semilla aleatoria empleada. El sufijo `after-ppt` sugiere que el modelo ha pasado por una fase posterior al preentrenamiento (post-pre-training). No obstante, estos detalles no estan confirmados en la model card oficial, por lo que deben tratarse como inferencias a partir de la nomenclatura.
 
@@ -35,7 +35,7 @@ En cuanto al entrenamiento, la model card confirma que se aplico SFT (Supervised
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte explicito de agentes ni razonamiento multi-paso.
 - No se documenta capacidad multilingue amplia, vision, audio ni modo de razonamiento explicito (thinking mode).
-- Integracion directa con el ecosistema HuggingFace Transformers y text-generation-inference segun las etiquetas declaradas.
+- Integracion directa con el ecosistema Hugging Face Transformers y text-generation-inference segun las etiquetas declaradas.
 
 ## Casos de uso
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (`tur-latn-10mb-after-ppt-...`) | 39,1M | no disponible | no disponible | HuggingFace (0 descargas) |
+| Este modelo (`tur-latn-10mb-after-ppt-...`) | 39,1M | no disponible | no disponible | Hugging Face (0 descargas) |
 | GPT-2 small (OpenAI) | 124M | 1024 tokens | MIT | Ampliamente disponible |
-| DistilGPT-2 (HuggingFace) | 82M | 1024 tokens | Apache 2.0 | Ampliamente disponible |
+| DistilGPT-2 (Hugging Face) | 82M | 1024 tokens | Apache 2.0 | Ampliamente disponible |
 
 El modelo aqui descrito es aproximadamente tres veces mas pequeno que GPT-2 small y la mitad que DistilGPT-2. A diferencia de estos, su licencia no esta declarada y su tamano de contexto no se especifica, lo que dificulta su uso en produccion frente a alternativas consolidadas. No se dispone de datos de rendimiento comparativo.
 
@@ -81,7 +81,7 @@ El modelo aqui descrito es aproximadamente tres veces mas pequeno que GPT-2 smal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tur-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tur-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/tur-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455
 - Modelo relacionado (variante): https://huggingface.co/francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10
 - Modelo relacionado (variante en italiano): https://huggingface.co/francesca9805/ita-latn-10mb-after-ppt-Dp-100mb-packed-ckpt500_seed10

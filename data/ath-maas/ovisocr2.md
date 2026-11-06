@@ -76,6 +76,6 @@ No se dispone de informacion comparativa con otros modelos de parsing de documen
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ATH-MaaS/OvisOCR2)
+- [Modelo en Hugging Face](https://huggingface.co/ATH-MaaS/OvisOCR2)
 - [Technical Report (arXiv)](https://arxiv.org/abs/2607.13639)
 - [Demo online](https://huggingface.co/spaces/ATH-MaaS/OvisOCR2)

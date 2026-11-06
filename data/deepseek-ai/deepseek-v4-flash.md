@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4-Flash es un modelo de generación de texto conversacional desarrollado por DeepSeek AI, publicado en HuggingFace el 22 de abril de 2026. El nombre sugiere una variante "Flash" de la familia DeepSeek V4, orientada presumiblemente a inferencia rápida y despliegue eficiente, aunque la información pública disponible en la ficha de HuggingFace es limitada y no permite confirmar detalles arquitectónicos concretos.
+DeepSeek-V4-Flash es un modelo de generación de texto conversacional desarrollado por DeepSeek AI, publicado en Hugging Face el 22 de abril de 2026. El nombre sugiere una variante "Flash" de la familia DeepSeek V4, orientada presumiblemente a inferencia rápida y despliegue eficiente, aunque la información pública disponible en la ficha de Hugging Face es limitada y no permite confirmar detalles arquitectónicos concretos.
 
 El modelo acumula 2.213.519 descargas y 2.094 likes, lo que indica una adopción significativa en la comunidad. Los tags asociados revelan que es compatible con el ecosistema Transformers, utiliza pesos en formato safetensors, soporta cuantización FP8 y 8-bit, y está disponible para despliegue en Azure (región US). También se referencia un paper en arXiv (2606.19348), aunque su contenido no está accesible desde la información proporcionada.
 
@@ -23,13 +23,13 @@ La relevancia actual del modelo radica en su aparente optimización para desplie
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo en la ficha de HuggingFace. Los tags indican que pertenece a la familia "deepseek_v4" y que se referencia un paper en arXiv (2606.19348), pero el contenido de dicho paper no está incluido en la información proporcionada. No se conocen detalles sobre el número de parámetros, la composición del dataset de entrenamiento, el número de tokens procesados ni si se emplearon técnicas como RLHF o DPO. Tampoco hay datos sobre innovaciones técnicas específicas como decodificación especulativa o atención lineal.
+No se dispone de información sobre la arquitectura del modelo en la ficha de Hugging Face. Los tags indican que pertenece a la familia "deepseek_v4" y que se referencia un paper en arXiv (2606.19348), pero el contenido de dicho paper no está incluido en la información proporcionada. No se conocen detalles sobre el número de parámetros, la composición del dataset de entrenamiento, el número de tokens procesados ni si se emplearon técnicas como RLHF o DPO. Tampoco hay datos sobre innovaciones técnicas específicas como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
 - Generación de texto: el pipeline declarado es text-generation, por lo que el modelo está diseñado para producir texto.
 - Conversación: el tag "conversational" indica soporte para diálogos multi-turno, aunque no se especifican detalles sobre gestión de contexto.
-- Compatibilidad con Transformers: integrable en pipelines estándar de HuggingFace.
+- Compatibilidad con Transformers: integrable en pipelines estándar de Hugging Face.
 - Despliegue en endpoints: el tag "endpoints_compatible" sugiere que puede servirse mediante APIs de inferencia.
 - Cuantización: soporta FP8 y 8-bit, lo que facilita inferencia con menor uso de memoria.
 - No se dispone de información sobre capacidades de tool calling, agentes, razonamiento multi-step, visión, audio o modo thinking.
@@ -73,5 +73,5 @@ No disponible. No se dispone de información sobre modelos comparables de la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
+- Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Paper arXiv: 2606.19348 (contenido no disponible en la información proporcionada)

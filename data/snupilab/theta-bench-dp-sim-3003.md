@@ -86,7 +86,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 - Sin sesgos documentados: no hay información sobre sesgos del dataset de teleoperación, composición demográfica o condiciones de recogida de datos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/snupilab/theta-bench-dp-sim-3003
+- Modelo en Hugging Face: https://huggingface.co/snupilab/theta-bench-dp-sim-3003
 - Dataset de entrenamiento: https://huggingface.co/datasets/snupilab/theta-bench-teleop
 - Dataset fijado (revisión 8b2cd31e107b64cb13f812ea217a63a20845c78a): https://huggingface.co/datasets/snupilab/theta-bench-teleop/tree/8b2cd31e107b64cb13f812ea217a63a20845c78a/raw
 - Codificador de lenguaje a precargar (revisión 32bd64288804d66eefd0ccbe215aa642df71cc41): https://huggingface.co/openai/clip-vit-large-patch14/tree/32bd64288804d66eefd0ccbe215aa642df71cc41

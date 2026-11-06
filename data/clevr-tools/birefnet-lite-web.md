@@ -94,7 +94,7 @@ Comprobaciones de neutralidad de los otros cambios, ambas a 768: el almacenamien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/clevr-tools/birefnet-lite-web
+- Modelo en Hugging Face: https://huggingface.co/clevr-tools/birefnet-lite-web
 - Modelo base: https://huggingface.co/ZhengPeng7/BiRefNet_lite
 - Repositorio original de BiRefNet: https://github.com/ZhengPeng7/BiRefNet
 - Artículo (arXiv): https://arxiv.org/abs/2401.03407

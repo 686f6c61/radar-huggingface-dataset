@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JustRL-Qwen3-4b-FKLSelective-Top10pct es un ajuste fino del modelo Qwen3-4B publicado por el usuario SelectiveDOPD en HuggingFace. Según la model card, el checkpoint se ha subido desde el experimento `justrl_qwen3_4b_fkl_ladder_90_100_kl`, dentro de una línea de trabajo denominada BiDirect-OPD. La rama `main` corresponde al paso global 300 de entrenamiento, y el repositorio conserva ramas con checkpoints intermedios cada 20 pasos, desde `global_step_20` hasta `global_step_280`.
+JustRL-Qwen3-4b-FKLSelective-Top10pct es un ajuste fino del modelo Qwen3-4B publicado por el usuario SelectiveDOPD en Hugging Face. Según la model card, el checkpoint se ha subido desde el experimento `justrl_qwen3_4b_fkl_ladder_90_100_kl`, dentro de una línea de trabajo denominada BiDirect-OPD. La rama `main` corresponde al paso global 300 de entrenamiento, y el repositorio conserva ramas con checkpoints intermedios cada 20 pasos, desde `global_step_20` hasta `global_step_280`.
 
 El modelo tiene 4.411.424.256 parametros (aproximadamente 4,4 mil millones) almacenados en safetensors, con un repositorio de 8,8 GB, lo que es coherente con pesos en precision de 16 bits. Es un modelo de generacion de texto de tipo decoder-only, etiquetado con la libreria transformers y con pipeline `text-generation`, ademas de ser compatible con text-generation-inference y endpoints. Por su tamano, es un candidato natural para inferencia en una sola GPU de consumo o profesional de gama media.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| JustRL-Qwen3-4b-FKLSelective-Top10pct | 4,4 B | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes | Ajuste RL experimental con 15 checkpoints publicados |
-| Qwen3-4B (modelo base) | ~4 B (segun nomenclatura de la familia) | no disponible en esta ficha | Apache 2.0 (familia Qwen3, dato publico externo) | Ampliamente distribuido en HuggingFace | Punto de partida del ajuste; sin evaluacion comparativa publicada frente a este modelo |
-| Qwen3-4B-Instruct-2507 | ~4 B (segun nomenclatura de la familia) | no disponible en esta ficha | Apache 2.0 (familia Qwen3, dato publico externo) | Ampliamente distribuido en HuggingFace | Variante instructiva oficial; no se dispone de comparacion medida con el modelo de esta ficha |
+| JustRL-Qwen3-4b-FKLSelective-Top10pct | 4,4 B | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes | Ajuste RL experimental con 15 checkpoints publicados |
+| Qwen3-4B (modelo base) | ~4 B (segun nomenclatura de la familia) | no disponible en esta ficha | Apache 2.0 (familia Qwen3, dato publico externo) | Ampliamente distribuido en Hugging Face | Punto de partida del ajuste; sin evaluacion comparativa publicada frente a este modelo |
+| Qwen3-4B-Instruct-2507 | ~4 B (segun nomenclatura de la familia) | no disponible en esta ficha | Apache 2.0 (familia Qwen3, dato publico externo) | Ampliamente distribuido en Hugging Face | Variante instructiva oficial; no se dispone de comparacion medida con el modelo de esta ficha |
 
 Nota: los datos del modelo base y de la variante instructiva proceden del conocimiento publico de la familia Qwen3 y no de la informacion proporcionada en la busqueda. No hay resultados de benchmarks que permitan una comparacion cuantitativa entre estas alternativas y el modelo descrito.
 
@@ -92,7 +92,7 @@ Nota: los datos del modelo base y de la variante instructiva proceden del conoci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-4b-FKLSelective-Top10pct
+- Modelo en Hugging Face: https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-4b-FKLSelective-Top10pct
 - Paper, blog o repositorio de los experimentos BiDirect-OPD: no disponible en la informacion proporcionada
 - Paper o documentacion del metodo JustRL: no disponible en la informacion proporcionada
 - Pagina del autor SelectiveDOPD: no disponible en la informacion proporcionada

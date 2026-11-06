@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `negusnagga/mdl-zit` es un adaptador LoRA (Low-Rank Adaptation) diseñado para la generación de imágenes a partir de texto, construido sobre el modelo base `Tongyi-MAI/Z-Image`. Lo publica el autor `negusnagga` en HuggingFace, con licencia Apache 2.0 (según la etiqueta `license:apache-2.0`), aunque el campo de licencia en la ficha no está especificado. Este tipo de adaptador permite ajustar el comportamiento del modelo base sin necesidad de reentrenarlo por completo, reduciendo costes computacionales y de almacenamiento.
+El modelo `negusnagga/mdl-zit` es un adaptador LoRA (Low-Rank Adaptation) diseñado para la generación de imágenes a partir de texto, construido sobre el modelo base `Tongyi-MAI/Z-Image`. Lo publica el autor `negusnagga` en Hugging Face, con licencia Apache 2.0 (según la etiqueta `license:apache-2.0`), aunque el campo de licencia en la ficha no está especificado. Este tipo de adaptador permite ajustar el comportamiento del modelo base sin necesidad de reentrenarlo por completo, reduciendo costes computacionales y de almacenamiento.
 
 La ficha del repositorio no incluye detalles sobre la arquitectura interna, el número de parámetros, la longitud de contexto ni los datos de entrenamiento. Al tratarse de un LoRA para text-to-image, su función es modificar o especializar el estilo, el contenido o la calidad de las imágenes generadas por Z-Image. Dado que el repositorio tiene cero descargas y cero likes, se trata de un modelo recién publicado o de baja difusión, por lo que la información disponible es mínima.
 
@@ -29,7 +29,7 @@ El modelo base Z-Image, desarrollado por Tongyi-MAI, es un modelo de difusión p
 
 - Generación de imágenes a partir de descripciones textuales (text-to-image) mediante el pipeline de diffusers.
 - Ajuste fino del estilo o del dominio específico del modelo base Z-Image gracias al adaptador LoRA.
-- Capacidad de ser cargado y utilizado con la librería `diffusers` de HuggingFace, lo que permite integración con otros componentes del ecosistema.
+- Capacidad de ser cargado y utilizado con la librería `diffusers` de Hugging Face, lo que permite integración con otros componentes del ecosistema.
 - No se dispone de información sobre capacidades adicionales como tool calling, agentes, razonamiento multi-paso, visión o audio, ya que el modelo está enfocado exclusivamente a generación de imágenes.
 
 ## Casos de uso
@@ -66,5 +66,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/negusnagga/mdl-zit)
+- [Página del modelo en Hugging Face](https://huggingface.co/negusnagga/mdl-zit)
 - [Modelo base Tongyi-MAI/Z-Image](https://huggingface.co/Tongyi-MAI/Z-Image) (referencia según los tags del repositorio)

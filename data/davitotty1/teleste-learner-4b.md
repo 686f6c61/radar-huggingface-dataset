@@ -74,7 +74,7 @@ No disponible. No se han encontrado modelos comparables con el mismo enfoque de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Davitotty1/Teleste-Learner-4B
+- Repositorio Hugging Face: https://huggingface.co/Davitotty1/Teleste-Learner-4B
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3.5-4B
 - Dataset Super-NaturalInstructions: https://huggingface.co/datasets/Muennighoff/natural-instructions
 - Modelo base original (Qwen): https://huggingface.co/Qwen/Qwen3.5-4B

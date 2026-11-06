@@ -72,6 +72,6 @@ La comparativa es limitada porque no hay datos de rendimiento para este fine-tun
 
 ## Enlaces
 
-- [HuggingFace: AmberYifan/capsd-qwen3-numina-Qwen3-4B-Base-math_cap_b1000_s0](https://huggingface.co/AmberYifan/capsd-qwen3-numina-Qwen3-4B-Base-math_cap_b1000_s0)
+- [Hugging Face: AmberYifan/capsd-qwen3-numina-Qwen3-4B-Base-math_cap_b1000_s0](https://huggingface.co/AmberYifan/capsd-qwen3-numina-Qwen3-4B-Base-math_cap_b1000_s0)
 - [Modelo base: Qwen/Qwen3-4B-Base](https://huggingface.co/Qwen/Qwen3-4B-Base)
 - No se han encontrado papers, blogs o demos adicionales en la información proporcionada.

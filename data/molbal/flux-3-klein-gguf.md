@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones, por lo que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/molbal/Flux-3-Klein-GGUF
+- Repositorio Hugging Face: https://huggingface.co/molbal/Flux-3-Klein-GGUF
 - Nodos cargadores (GitHub): https://github.com/molbal/ComfyUI-GGUF
 - Registro de ComfyUI: https://registry.comfy.org/publishers/molbal/nodes/comfyui-gguf-reboot
 - Documentacion del mantenedor: https://molbal.github.io/gguf/models/flux-3-klein.html
@@ -111,6 +111,6 @@ No se dispone de datos de rendimiento comparado entre estas opciones, por lo que
 - Checkpoint base original: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Checkpoint base (variante base): https://huggingface.co/black-forest-labs/flux-3-image-klein-base
 - Blog de Black Forest Labs sobre FLUX 3: https://bfl.ai/blog/flux-3
-- Vision general de FLUX 3 en HuggingFace: https://huggingface.co/blog/ResterChed/flux-3
+- Vision general de FLUX 3 en Hugging Face: https://huggingface.co/blog/ResterChed/flux-3
 - Cuantizaciones comunitarias alternativas: https://huggingface.co/realrebelai/FLUX-3-Image-Klein_GGUFs
 - KoboldCpp (runner compatible con modelos Flux/Klein): https://github.com/lostruins/koboldcpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hw1-hc3-detector es un clasificador binario de texto desarrollado por el usuario Huamulian y publicado en HuggingFace. Su tarea consiste en determinar si una respuesta a una pregunta del corpus HC3 (Human ChatGPT Comparison Corpus) ha sido escrita por una persona (etiqueta 0) o generada por ChatGPT (etiqueta 1). No es un modelo generativo: se trata de un transformer encoder afinado para clasificacion de secuencias, con una cabeza de clasificacion de dos clases.
+hw1-hc3-detector es un clasificador binario de texto desarrollado por el usuario Huamulian y publicado en Hugging Face. Su tarea consiste en determinar si una respuesta a una pregunta del corpus HC3 (Human ChatGPT Comparison Corpus) ha sido escrita por una persona (etiqueta 0) o generada por ChatGPT (etiqueta 1). No es un modelo generativo: se trata de un transformer encoder afinado para clasificacion de secuencias, con una cabeza de clasificacion de dos clases.
 
 El modelo parte de sentence-transformers/all-MiniLM-L6-v2, un encoder MiniLM-L6 de 22.713.986 parametros (unos 22,7 millones), y se ha afinado sobre la particion en ingles del dataset HC3 con un esquema de 5 epocas, AdamW, learning rate 2e-5, batch de 32 y longitud maxima de 256 tokens. La particion train/validacion/test es a nivel de pregunta (80/10/10, semilla 42), de forma que las respuestas de una misma pregunta nunca se reparten entre particiones distintas.
 
@@ -23,7 +23,7 @@ Su relevancia es acotada pero concreta: sirve como pieza de deteccion de texto s
 
 ## Arquitectura y entrenamiento
 
-Arquitectura: encoder transformer de 6 capas con 384 dimensiones ocultas y 12 cabezas de atencion (MiniLM-L6-v2), al que se anade una cabeza de clasificacion sobre la representacion del token [CLS] para producir dos logits (humano / ChatGPT). El tamaño del repositorio es de 0,1 GB, coherente con un checkpoint en precision de 32 bits. La tarea es de clasificacion de texto (`pipeline: text-classification`), con pipeline_tag declarado y compatibilidad con Text Embeddings Inference y con Inference Endpoints de HuggingFace.
+Arquitectura: encoder transformer de 6 capas con 384 dimensiones ocultas y 12 cabezas de atencion (MiniLM-L6-v2), al que se anade una cabeza de clasificacion sobre la representacion del token [CLS] para producir dos logits (humano / ChatGPT). El tamaño del repositorio es de 0,1 GB, coherente con un checkpoint en precision de 32 bits. La tarea es de clasificacion de texto (`pipeline: text-classification`), con pipeline_tag declarado y compatibilidad con Text Embeddings Inference y con Inference Endpoints de Hugging Face.
 
 Entrenamiento: afinado supervisado sobre la particion en ingles de HC3 (revision del dataset fijada a `4d0ff18143b5a7e1b1e79beb540c04549d1e59d3`), usando unicamente el texto de la respuesta como entrada. Split a nivel de pregunta 80/10/10 con semilla 42. Hiperparametros declarados: optimizador AdamW, learning rate 2e-5, 5 epocas, batch size 32, max_seq_length 256. La model card no indica si hubo entrenamiento con precision mixta, ni mezcla de datos adicional, ni tecnicas de RLHF/DPO (no aplicables a un clasificador de este tipo). Como innovacion tecnica no se declara ninguna: es un afinado estandar de clasificacion. Si se menciona el uso del calculador de impacto de Machine Learning de Lacoste et al. (2019), referenciado en la model card, aunque los campos de impacto ambiental (hardware, horas, proveedor, emisiones) estan sin rellenar.
 
@@ -33,7 +33,7 @@ Entrenamiento: afinado supervisado sobre la particion en ingles de HC3 (revision
 - Deteccion de respuestas sinteticas en el dominio concreto de pares pregunta-respuesta del corpus HC3 (no es un detector general de texto generado).
 - Procesamiento de entradas de hasta 256 tokens, con truncamiento del texto excedente.
 - Inferencia por lotes (batch) a traves de `transformers` y de Text Embeddings Inference, segun los tags del repositorio.
-- Compatible con HuggingFace Inference Endpoints (`endpoints_compatible`).
+- Compatible con Hugging Face Inference Endpoints (`endpoints_compatible`).
 - No dispone de generacion de texto, razonamiento, codigo, matematicas, vision, audio, tool calling, function calling ni capacidades de agente o multi-step reasoning: es un clasificador discriminativo puro.
 - No se declaran capacidades multilingues; solo se ha entrenado y evaluado con datos en ingles.
 
@@ -64,16 +64,16 @@ La model card no desglosa precision, recall, F1, matriz de confusion ni resultad
 - VRAM estimada para inferencia: por debajo de 1 GB con batch moderado, incluyendo activaciones y overhead del runtime. Cabe holgadamente en cualquier GPU de consumo.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (GTX 1050 Ti, GTX 1650, T4, RTX 3050 en adelante). Modelos como RTX 3060, RTX 4090, A100 o H100 estan muy sobredimensionados para este modelo.
 - Ejecucion en CPU: viable y suficiente para la mayoria de despliegues; el cuello de botella sera el preprocesado del tokenizador, no la matriz de pesos.
-- Opciones de despliegue: `transformers` (pipeline de text-classification), HuggingFace Inference Endpoints (tag `endpoints_compatible`), Text Embeddings Inference (tag del repositorio), ONNX Runtime o TorchScript previa conversion. No se publican pesos GGUF, por lo que llama.cpp y Ollama no son cauces directos sin conversion adicional.
+- Opciones de despliegue: `transformers` (pipeline de text-classification), Hugging Face Inference Endpoints (tag `endpoints_compatible`), Text Embeddings Inference (tag del repositorio), ONNX Runtime o TorchScript previa conversion. No se publican pesos GGUF, por lo que llama.cpp y Ollama no son cauces directos sin conversion adicional.
 - Latencia y throughput: no disponibles en la informacion proporcionada. La model card no incluye mediciones de velocidad, hardware de entrenamiento ni horas de computo (los campos de impacto ambiental estan sin rellenar).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Huamulian/hw1-hc3-detector | 22,7 M | 256 tokens | 98,63 % de exactitud en test HC3 | no disponible | HuggingFace |
+| Huamulian/hw1-hc3-detector | 22,7 M | 256 tokens | 98,63 % de exactitud en test HC3 | no disponible | Hugging Face |
 | MiniLM-L6-v2 + regresion logistica (linea base de la model card) | 22,7 M (embeddings congelados) | 256 tokens | 84,49 % de exactitud en test HC3 | Apache-2.0 (base) | reproducible por el usuario |
-| sentence-transformers/all-MiniLM-L6-v2 (modelo base sin afinar) | 22,7 M | 256 tokens | no disponible para clasificacion binaria directa | Apache-2.0 | HuggingFace |
+| sentence-transformers/all-MiniLM-L6-v2 (modelo base sin afinar) | 22,7 M | 256 tokens | no disponible para clasificacion binaria directa | Apache-2.0 | Hugging Face |
 
 No se dispone de datos comparativos con otros detectores de texto generado de la misma categoria (por ejemplo, clasificadores basados en RoBERTa, DeBERTa o detectores comerciales tipo GPTZero), ya que la model card no los incluye y la busqueda web no ha devuelto informacion relevante sobre este modelo.
 
@@ -92,7 +92,7 @@ No se dispone de datos comparativos con otros detectores de texto generado de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Huamulian/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/Huamulian/hw1-hc3-detector
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Dataset HC3 (referencia del corpus citado en la model card, no enlazado por el autor): https://huggingface.co/datasets/Hello-SimpleAI/HC3
 - Paper citado en la model card (Lacoste et al., 2019, calculador de impacto de Machine Learning): https://arxiv.org/abs/1910.09700

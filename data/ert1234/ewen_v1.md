@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ewen_v1 es un modelo publicado en HuggingFace por el usuario Ert1234 con licencia Apache 2.0. No se ha publicado ninguna información técnica en la model card: no se indica arquitectura, tamaño, longitud de contexto, idiomas ni capacidades. La fecha de creación y actualización es el 5 de septiembre de 2026. El modelo no registra descargas ni likes, lo que sugiere que es un modelo reciente o de uso restringido. A día de hoy no es posible evaluar su propósito, rendimiento ni idoneidad para ninguna tarea.
+Ewen_v1 es un modelo publicado en Hugging Face por el usuario Ert1234 con licencia Apache 2.0. No se ha publicado ninguna información técnica en la model card: no se indica arquitectura, tamaño, longitud de contexto, idiomas ni capacidades. La fecha de creación y actualización es el 5 de septiembre de 2026. El modelo no registra descargas ni likes, lo que sugiere que es un modelo reciente o de uso restringido. A día de hoy no es posible evaluar su propósito, rendimiento ni idoneidad para ninguna tarea.
 
 ## Especificaciones tecnicas
 
@@ -50,6 +50,6 @@ No se dispone de información suficiente para comparar este modelo con otros. No
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ert1234/Ewen_v1
+- Hugging Face: https://huggingface.co/Ert1234/Ewen_v1
 
 No se han encontrado otros enlaces relevantes en la búsqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kimakarov/tiny-transformer-generation-beta14 es un repositorio experimental publicado en HuggingFace que contiene una implementación propia en PyTorch de un transformer denominado "Tiny Transformer", orientado a tareas de generación. No se trata de un modelo preentrenado listo para producción: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint entrenado ni evaluado. El repositorio tiene 16.576 parámetros totales y no registra descargas ni interacciones.
+Kimakarov/tiny-transformer-generation-beta14 es un repositorio experimental publicado en Hugging Face que contiene una implementación propia en PyTorch de un transformer denominado "Tiny Transformer", orientado a tareas de generación. No se trata de un modelo preentrenado listo para producción: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint entrenado ni evaluado. El repositorio tiene 16.576 parámetros totales y no registra descargas ni interacciones.
 
 La relevancia de este tipo de repositorio es fundamentalmente pedagógica y de ingeniería: sirve como plantilla reproducible para revisar código, validar pipelines de entrenamiento e integrar pruebas automatizadas en flujos de trabajo. No compite con modelos generativos reales ni se presenta como tal, y su autor lo enmarca en la categoría de "base config" para experimentos pequeños y controlados.
 
@@ -78,12 +78,12 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 - No se declaran idiomas soportados; cualquier afirmación sobre capacidades multilingües sería una invención.
 - Riesgo de alucinación: inaplicable en el sentido habitual, ya que el modelo no está entrenado; cualquier salida debe tratarse como ruido inicial.
 - Longitud de contexto desconocida: `config.json` no se detalla en la información proporcionada, por lo que no puede garantizarse ningún límite de contexto.
-- Compatibilidad: al ser una implementación propia, las API de carga automática estándar de HuggingFace no funcionan sin un adaptador explícito.
+- Compatibilidad: al ser una implementación propia, las API de carga automática estándar de Hugging Face no funcionan sin un adaptador explícito.
 - Licencia MIT: permite uso comercial y modificación, pero la model card recomienda revisar por separado los términos de las fuentes de datos externas si se usa con datasets de terceros.
 - Para producción: no apto. Debe tratarse como un punto de partida experimental y, si se entrena, documentar resultados de forma separada a los valores por defecto aquí incluidos.
 - Cero descargas y cero likes registrados, lo que indica ausencia de validación por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kimakarov/tiny-transformer-generation-beta14
+- Hugging Face: https://huggingface.co/Kimakarov/tiny-transformer-generation-beta14
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

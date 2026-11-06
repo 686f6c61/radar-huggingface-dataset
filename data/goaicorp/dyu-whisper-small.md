@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dyu-whisper-small es un ajuste fino (fine-tuning) del modelo openai/whisper-small para reconocimiento automatico del habla (ASR) en idioma dyula (dyu), una lengua mande hablada principalmente en Burkina Faso, Costa de Marfil y Mali. Lo desarrolla goaicorp, un colectivo que publica modelos especializados en lenguas africanas de bajos recursos, y se distribuye en HuggingFace bajo acceso restringido (gated).
+dyu-whisper-small es un ajuste fino (fine-tuning) del modelo openai/whisper-small para reconocimiento automatico del habla (ASR) en idioma dyula (dyu), una lengua mande hablada principalmente en Burkina Faso, Costa de Marfil y Mali. Lo desarrolla goaicorp, un colectivo que publica modelos especializados en lenguas africanas de bajos recursos, y se distribuye en Hugging Face bajo acceso restringido (gated).
 
 El modelo parte de la arquitectura Whisper de OpenAI, un transformer encoder-decoder de 241,7 millones de parametros entrenado originalmente para transcripcion y traduccion de voz multilingue. En este caso, el ajuste se ha realizado sobre el dataset goaicorp/dyu-speech para adaptar el decodificador al vocabulario y las particularidades foneticas del dyula, un idioma practicamente ausente en los corpus multilingues mayoritarios.
 
@@ -25,7 +25,7 @@ Su relevancia radica en cubrir un hueco real: la mayoria de sistemas ASR comerci
 
 El modelo hereda la arquitectura Whisper-small de OpenAI: un encoder convolucional mas transformer que procesa espectrogramas mel de 80 canales en ventanas de 30 segundos, y un decoder autorregresivo que genera tokens de texto condicionados por el audio y por tokens especiales de idioma y tarea. Con 241,7 millones de parametros, se situa en el rango medio de la familia Whisper (tiny, base, small, medium, large).
 
-El ajuste fino se realizo sobre el dataset goaicorp/dyu-speech, un corpus de habla en dyula publicado por el mismo autor. No se dispone de informacion publica sobre el numero exacto de horas de audio, la composicion del dataset, la duracion del entrenamiento ni si se aplicaron tecnicas de aumento de datos o regularizacion especificas. Tampoco se documenta el uso de RLHF, DPO ni decodificacion especulativa; el pipeline es el estandar de HuggingFace Transformers para ASR con Whisper.
+El ajuste fino se realizo sobre el dataset goaicorp/dyu-speech, un corpus de habla en dyula publicado por el mismo autor. No se dispone de informacion publica sobre el numero exacto de horas de audio, la composicion del dataset, la duracion del entrenamiento ni si se aplicaron tecnicas de aumento de datos o regularizacion especificas. Tampoco se documenta el uso de RLHF, DPO ni decodificacion especulativa; el pipeline es el estandar de Hugging Face Transformers para ASR con Whisper.
 
 ## Capacidades
 
@@ -33,7 +33,7 @@ El ajuste fino se realizo sobre el dataset goaicorp/dyu-speech, un corpus de hab
 - Transcripcion de audio en ventanas de hasta 30 segundos por segmento, con concatenacion para audios mas largos.
 - Generacion de marcas de tiempo (timestamps) a nivel de segmento, segun el comportamiento estandar de Whisper.
 - Compatibilidad con el pipeline `automatic-speech-recognition` de Transformers.
-- Soporte de endpoints compatibles (tag `endpoints_compatible`), lo que permite desplegarlo en Inference Endpoints de HuggingFace.
+- Soporte de endpoints compatibles (tag `endpoints_compatible`), lo que permite desplegarlo en Inference Endpoints de Hugging Face.
 - No se documentan capacidades de traduccion a otros idiomas, tool calling, agentes ni modos de razonamiento extendido.
 
 ## Casos de uso
@@ -73,7 +73,7 @@ La comparacion directa con whisper-small es la mas relevante: mismo tamano y arq
 
 ## Limitaciones y advertencias
 
-- El acceso esta restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos.
+- El acceso esta restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos.
 - La licencia cc-by-sa-4.0 obliga a compartir bajo la misma licencia cualquier obra derivada y a citar la autoría; no es apta para productos propietarios sin liberar el modelo resultante.
 - El modelo solo soporta dyula; no se debe esperar buen rendimiento en otros idiomas ni en code-switching con frances o arabe, frecuente en la region.
 - No hay datos publicos sobre el WER real en dyula, por lo que el rendimiento en produccion debe validarse con un conjunto de prueba propio antes de desplegar.
@@ -84,7 +84,7 @@ La comparacion directa con whisper-small es la mas relevante: mismo tamano y arq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/goaicorp/dyu-whisper-small
+- Modelo en Hugging Face: https://huggingface.co/goaicorp/dyu-whisper-small
 - Dataset de entrenamiento: https://huggingface.co/datasets/goaicorp/dyu-speech
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

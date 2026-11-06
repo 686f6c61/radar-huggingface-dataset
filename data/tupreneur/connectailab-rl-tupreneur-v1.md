@@ -95,7 +95,7 @@ No se dispone de informacion sobre modelos alternativos de decision de la misma 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TUpreneur/connectailab-rl-tupreneur-v1
+- Hugging Face: https://huggingface.co/TUpreneur/connectailab-rl-tupreneur-v1
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Banner del repositorio: https://raw.githubusercontent.com/wonseokjung/connect-tycoon/main/docs/brand/banner.gif

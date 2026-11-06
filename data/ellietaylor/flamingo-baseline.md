@@ -68,14 +68,14 @@ No existe una comparativa directa posible porque este repositorio no es un model
 
 - No es un modelo entrenado: el checkpoint de inicialización no contiene conocimiento aprendido y no debe usarse para tareas reales de generación o razonamiento.
 - Sin auditoría de robustez, fairness ni transferencia de dominio: la model card advierte que no se ha auditado el modelo para estos aspectos.
-- Implementación personalizada: las APIs genéricas de HuggingFace no cargan el modelo automáticamente; se requiere un adaptador explícito.
+- Implementación personalizada: las APIs genéricas de Hugging Face no cargan el modelo automáticamente; se requiere un adaptador explícito.
 - Sin benchmarks publicados: no hay evidencia de rendimiento en ninguna tarea.
 - Riesgo de alucinación: irrelevante en este estado, pero si se entrena en el futuro, deberá evaluarse por separado.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero los términos de los datos externos usados con el modelo deben revisarse independientemente.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ellietaylor/flamingo-baseline
+- Repositorio en Hugging Face: https://huggingface.co/ellietaylor/flamingo-baseline
 - Paper original de Flamingo (DeepMind): https://arxiv.org/abs/2204.14198
 - OpenFlamingo-9B (implementación open source): https://huggingface.co/openflamingo/OpenFlamingo-9B-vitl-mpt7b
 - Comparativa de modelos en Artificial Analysis: https://artificialanalysis.ai/leaderboards/models

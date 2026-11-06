@@ -23,7 +23,7 @@ Su relevancia actual es doble: por un lado cubre un nicho poco atendido por los 
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible indica que Lythri-4B-A2B es un ajuste fino (finetune) sobre google/gemma-4-E2B, el modelo base de la familia Gemma 4 con activacion de 2B parametros efectivos. Los metadatos de HuggingFace incluyen la etiqueta image-text-to-text, heredada presumiblemente del modelo base, aunque la pipeline declarada del repositorio es text-generation. El autor diferencia explicitamente entre parametros totales (4.63B) y activos (2.3B), lo que apunta a una arquitectura con activacion parcial de parametros por token, si bien la model card no describe el mecanismo interno, el numero de expertos ni la distribucion por capa.
+La informacion disponible indica que Lythri-4B-A2B es un ajuste fino (finetune) sobre google/gemma-4-E2B, el modelo base de la familia Gemma 4 con activacion de 2B parametros efectivos. Los metadatos de Hugging Face incluyen la etiqueta image-text-to-text, heredada presumiblemente del modelo base, aunque la pipeline declarada del repositorio es text-generation. El autor diferencia explicitamente entre parametros totales (4.63B) y activos (2.3B), lo que apunta a una arquitectura con activacion parcial de parametros por token, si bien la model card no describe el mecanismo interno, el numero de expertos ni la distribucion por capa.
 
 En cuanto a los datos de entrenamiento, la model card no especifica el volumen de tokens, la composicion del corpus, ni si se emplearon tecnicas de RLHF, DPO u otras variantes de alineacion. El unico detalle metodologico declarado es que las comparativas de inteligencia emocional se realizaron en regimen zero-shot frente a baselines instruction-tuned, y que existen dos variantes en la familia (Lythri-4B-A2B y Lythri-7B-A4B) construidas sobre Gemma 4 E2B y E4B respectivamente. Se referencia un informe tecnico en Zenodo para los detalles completos.
 
@@ -84,7 +84,7 @@ En los tres benchmarks de inteligencia emocional citados por el autor (no identi
 - Compatibilidad con GPU consumer: si. Al tener solo 2.3B parametros activos, el coste computacional de inferencia es bajo y cabe con holgura en GPUs de 8-12 GB en cuantizacion de 4-8 bits.
 - Memoria unificada: viable en Mac con Apple Silicon (M1/M2/M3/M4) desde 8 GB en 4 bits y desde 16 GB en FP16, y en telefonos de gama alta mediante llama.cpp.
 - Opciones de despliegue: transformers (libreria declarada), llama.cpp y Ollama a traves del repositorio GGUF, vLLM y TGI para servido, y endpoints gestionados en Featherless AI y FriendliAI.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada. La etiqueta endpoints_compatible del repositorio indica compatibilidad con inference endpoints de HuggingFace.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada. La etiqueta endpoints_compatible del repositorio indica compatibilidad con inference endpoints de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -113,13 +113,13 @@ La model card situa a Lythri-4B-A2B a la par de Gemma 4 E4B-IT (8B) en los tres 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lythri/Lythri-4B-A2B
+- Modelo en Hugging Face: https://huggingface.co/Lythri/Lythri-4B-A2B
 - Version GGUF: https://huggingface.co/Lythri/Lythri-4B-A2B-GGUF
 - Variante mayor de la familia: https://huggingface.co/Lythri/Lythri-7B-A4B
 - Repositorio GGUF de la variante mayor: https://huggingface.co/Lythri/Lythri-7B-A4B-GGUF
 - Informe tecnico (DOI): https://doi.org/10.5281/zenodo.23179311
 - Informe tecnico en Zenodo: https://zenodo.org/records/23179312
-- Perfil del autor en HuggingFace: https://huggingface.co/Lythri
+- Perfil del autor en Hugging Face: https://huggingface.co/Lythri
 - Perfil en ModelScope: https://www.modelscope.cn/profile/Spike8086
 - Endpoint gestionado en Featherless AI: https://featherless.ai/models/Lythri/Lythri-4B-A2B
 - Endpoint gestionado en FriendliAI: https://friendli.ai/models/Lythri/Lythri-4B-A2B

@@ -77,6 +77,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos y `termina
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kaszczur/terminaltor
+- Repositorio Hugging Face: https://huggingface.co/kaszczur/terminaltor
 - Unsloth (herramienta de fine-tuning): https://github.com/unslothai/unsloth
 - llama.cpp (motor de inferencia): https://github.com/ggerganov/llama.cpp

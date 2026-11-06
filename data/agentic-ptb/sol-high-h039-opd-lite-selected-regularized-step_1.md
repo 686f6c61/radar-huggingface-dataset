@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h039.opd-lite-selected-regularized.step_1
+- Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h039.opd-lite-selected-regularized.step_1
 - Repositorio EasyOPD (experimentos OPD): https://github.com/lds-ustc/EasyOPD/tree/main/experiments/02_agentic_opd
 - Paper SOD (Step-wise On-policy Distillation): https://arxiv.org/pdf/2605.07725
 - Lista de lectura Awesome-Agentic: https://github.com/yingyingxia666/awesome-agentic

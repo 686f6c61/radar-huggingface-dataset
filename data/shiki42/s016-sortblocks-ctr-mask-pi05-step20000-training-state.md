@@ -71,11 +71,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Familia / base | Mecanismo de generacion de acciones | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este checkpoint (s016-sortblocks-ctr-mask-pi05-step20000) | π₀.₅ (OpenPI) | no especificado para π₀.₅; π₀, su base, usa flow matching | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| Este checkpoint (s016-sortblocks-ctr-mask-pi05-step20000) | π₀.₅ (OpenPI) | no especificado para π₀.₅; π₀, su base, usa flow matching | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | π₀ (OpenPI) | Vision-language-action | Flow-based VLA | no disponible | no disponible | no disponible | Repositorio oficial Physical-Intelligence/openpi |
 | π₀-FAST (OpenPI) | Derivado de π₀ | Autoregresivo con tokenizador FAST | no disponible | no disponible | no disponible | Repositorio oficial Physical-Intelligence/openpi |
 | π₀.₅ (OpenPI) | Version mejorada de π₀ | No detallado; orientado a generalizacion en entornos abiertos | no disponible | no disponible | no disponible | Repositorio oficial Physical-Intelligence/openpi |
-| Shiki42/s016-sortblocks-ctr-mask-act-step100000 | π₀.₅ (OpenPI) | No disponible | no disponible | no disponible | no disponible | HuggingFace, checkpoint de 100.000 pasos |
+| Shiki42/s016-sortblocks-ctr-mask-act-step100000 | π₀.₅ (OpenPI) | No disponible | no disponible | no disponible | no disponible | Hugging Face, checkpoint de 100.000 pasos |
 
 No se dispone de cifras de parametros, contexto ni rendimiento para ninguno de los modelos comparados dentro de la informacion proporcionada, por lo que la comparativa es estructural y no cuantitativa.
 
@@ -93,7 +93,7 @@ No se dispone de cifras de parametros, contexto ni rendimiento para ninguno de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shiki42/s016-sortblocks-ctr-mask-pi05-step20000-training-state
+- Repositorio en Hugging Face: https://huggingface.co/Shiki42/s016-sortblocks-ctr-mask-pi05-step20000-training-state
 - Checkpoint de inferencia relacionado: https://huggingface.co/Shiki42/s016-sortblocks-ctr-mask-act-step100000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-sortblocks-100ep-ctr
 - Repositorio oficial de OpenPI: https://github.com/Physical-Intelligence/openpi

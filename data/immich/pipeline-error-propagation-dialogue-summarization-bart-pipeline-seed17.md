@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks adicionales en la información disp
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (BART-base pipeline, semilla 17) | 139,5 M | 1024 tokens de entrada, 512 de salida por reunión | MIT (repo) + Apache-2.0 (backbone) | HuggingFace, 10 descargas, 0 likes | Requiere el pipeline y las entradas de oráculo para reproducir resultados |
-| `facebook/bart-base` | 139,5 M (aprox.) | 1024 tokens | Apache-2.0 | HuggingFace | Backbone sin ajustar; no está especializado en resumen de diálogo |
-| `philschmid/bart-large-cnn-samsum` | aproximadamente 400 M | 1024 tokens | Apache-2.0 | HuggingFace | BART-large ajustado para resumen de conversaciones; tamaño muy superior |
-| `google/flan-t5-base` | aproximadamente 250 M | 512 tokens | Apache-2.0 | HuggingFace | Modelo instruido de propósito general; no específico de reuniones |
+| Este checkpoint (BART-base pipeline, semilla 17) | 139,5 M | 1024 tokens de entrada, 512 de salida por reunión | MIT (repo) + Apache-2.0 (backbone) | Hugging Face, 10 descargas, 0 likes | Requiere el pipeline y las entradas de oráculo para reproducir resultados |
+| `facebook/bart-base` | 139,5 M (aprox.) | 1024 tokens | Apache-2.0 | Hugging Face | Backbone sin ajustar; no está especializado en resumen de diálogo |
+| `philschmid/bart-large-cnn-samsum` | aproximadamente 400 M | 1024 tokens | Apache-2.0 | Hugging Face | BART-large ajustado para resumen de conversaciones; tamaño muy superior |
+| `google/flan-t5-base` | aproximadamente 250 M | 512 tokens | Apache-2.0 | Hugging Face | Modelo instruido de propósito general; no específico de reuniones |
 
 No se dispone de resultados de benchmarks comparativos entre estas alternativas en la información proporcionada, por lo que la comparación se limita a arquitectura, tamaño, contexto y licencia. Las cifras de parámetros de los modelos alternativos son aproximadas y no proceden de la documentación de este repositorio.
 
@@ -95,7 +95,7 @@ No se dispone de resultados de benchmarks comparativos entre estas alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Immich/pipeline-error-propagation-dialogue-summarization-bart-pipeline-seed17
+- Modelo en Hugging Face: https://huggingface.co/Immich/pipeline-error-propagation-dialogue-summarization-bart-pipeline-seed17
 - DOI del modelo: https://doi.org/10.57967/hf/11144
 - Registro maestro de replicación (Zenodo, todas las versiones): https://doi.org/10.5281/zenodo.21792310
 - Backbone preentrenado: https://huggingface.co/facebook/bart-base

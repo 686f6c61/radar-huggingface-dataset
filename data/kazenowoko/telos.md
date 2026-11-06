@@ -73,9 +73,9 @@ No disponible. No se han encontrado modelos comparables de difusión discreta co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kazenowoko/telos
+- Repositorio Hugging Face: https://huggingface.co/Kazenowoko/telos
 - Repositorio GitHub: https://github.com/kazenoko-git/telos
-- Página de modelos del autor en HuggingFace: https://huggingface.co/Kazenowoko/models
+- Página de modelos del autor en Hugging Face: https://huggingface.co/Kazenowoko/models
 - Dataset asociado: https://huggingface.co/datasets/Kazenowoko/telos-dataset
 - Repositorio relacionado: https://huggingface.co/Kazenowoko/telos-50m-ratio-study</think>## Resumen
 
@@ -154,8 +154,8 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kazenowoko/telos
+- Repositorio Hugging Face: https://huggingface.co/Kazenowoko/telos
 - Repositorio GitHub: https://github.com/kazenoko-git/telos
-- Perfil del autor en HuggingFace: https://huggingface.co/Kazenowoko
+- Perfil del autor en Hugging Face: https://huggingface.co/Kazenowoko
 - Dataset asociado: https://huggingface.co/datasets/Kazenowoko/telos-dataset
 - Estudio de ratios a 50M: https://huggingface.co/Kazenowoko/telos-50m-ratio-study

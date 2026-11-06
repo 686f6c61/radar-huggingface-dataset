@@ -104,7 +104,7 @@ La comparacion natural es con los otros brazos del mismo estudio (mismos datos, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmeister/boundary-markers-en-d12-bnd_wpd_caps-bpe
+- Modelo en Hugging Face: https://huggingface.co/cmeister/boundary-markers-en-d12-bnd_wpd_caps-bpe
 - Articulo: *Explicit Boundary Markers for Subword Vocabularies*, Sander Land y Clara Meister: https://arxiv.org/abs/2608.08847
 - Repositorio nanochat (commit `92d63d4`): https://github.com/karpathy/nanochat
 - Repositorio script_tok: https://github.com/sanderland/script_tok

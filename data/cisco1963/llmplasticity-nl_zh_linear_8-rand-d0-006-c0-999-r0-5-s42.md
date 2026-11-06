@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Cisco1963/llmplasticity-nl_zh_linear_8-rand-d0.006-c0.999-r0.5-s42` es un checkpoint de investigación publicado en HuggingFace por el usuario Cisco1963, construido sobre la arquitectura GPT-2 con 122.706.432 parámetros (aproximadamente 0,12 B). El nombre del repositorio codifica una configuración experimental concreta dentro de una familia de modelos denominada `llmplasticity`: un par de idiomas (`nl_zh`, neerlandés-chino), una variante `linear_8`, un valor de decaimiento o dropout `d0.006`, un coeficiente `c0.999`, una ratio `r0.5` y una semilla `s42`. El prefijo `rand` sugiere una inicialización o variante aleatoria frente a otras ejecuciones de la misma serie.
+`Cisco1963/llmplasticity-nl_zh_linear_8-rand-d0.006-c0.999-r0.5-s42` es un checkpoint de investigación publicado en Hugging Face por el usuario Cisco1963, construido sobre la arquitectura GPT-2 con 122.706.432 parámetros (aproximadamente 0,12 B). El nombre del repositorio codifica una configuración experimental concreta dentro de una familia de modelos denominada `llmplasticity`: un par de idiomas (`nl_zh`, neerlandés-chino), una variante `linear_8`, un valor de decaimiento o dropout `d0.006`, un coeficiente `c0.999`, una ratio `r0.5` y una semilla `s42`. El prefijo `rand` sugiere una inicialización o variante aleatoria frente a otras ejecuciones de la misma serie.
 
-El modelo no dispone de model card: el repositorio no incluye descripción, pipeline declarado, licencia, idiomas ni datos de entrenamiento. Las búsquedas web devuelven únicamente repositorios hermanos de la misma serie (con otros valores de `d`, `c` y `r`) y agregadores que replican los metadatos de HuggingFace. Uno de esos agregadores indica, para un modelo de la misma familia, que se trata de una versión fine-tuned de GPT-2 sin dataset especificado.
+El modelo no dispone de model card: el repositorio no incluye descripción, pipeline declarado, licencia, idiomas ni datos de entrenamiento. Las búsquedas web devuelven únicamente repositorios hermanos de la misma serie (con otros valores de `d`, `c` y `r`) y agregadores que replican los metadatos de Hugging Face. Uno de esos agregadores indica, para un modelo de la misma familia, que se trata de una versión fine-tuned de GPT-2 sin dataset especificado.
 
 Por tanto, la relevancia de este checkpoint es exclusivamente como artefacto de investigación reproducible: permite replicar o auditar un experimento concreto sobre plasticidad en modelos de lenguaje, no un uso en producción. Cualquier evaluación de capacidades queda pendiente porque no se han publicado resultados.
 
@@ -23,7 +23,7 @@ Por tanto, la relevancia de este checkpoint es exclusivamente como artefacto de 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only de la familia GPT-2, con 122,7 M de parámetros, lo que corresponde prácticamente al tamaño de GPT-2 small (124 M). El tag `gpt2` de HuggingFace y el resultado de búsqueda que describe un modelo hermano como "fine-tuned version of gpt2 on the None dataset" apuntan a un ajuste fino sobre pesos GPT-2 preentrenados, aunque el repositorio no confirma el checkpoint base exacto ni el procedimiento.
+La arquitectura es un transformer decoder-only de la familia GPT-2, con 122,7 M de parámetros, lo que corresponde prácticamente al tamaño de GPT-2 small (124 M). El tag `gpt2` de Hugging Face y el resultado de búsqueda que describe un modelo hermano como "fine-tuned version of gpt2 on the None dataset" apuntan a un ajuste fino sobre pesos GPT-2 preentrenados, aunque el repositorio no confirma el checkpoint base exacto ni el procedimiento.
 
 No hay información sobre volumen de tokens, composición del corpus, técnicas de alineación (RLHF, DPO, SFT) ni innovaciones técnicas. El nombre `llmplasticity` y los hiperparámetros codificados (`d0.006`, `c0.999`, `r0.5`, `s42`) indican un barrido experimental sobre algún factor relacionado con la plasticidad del modelo —posiblemente dropout, tasa de aprendizaje, coeficiente de regularización o ratio de congelación de capas—, con semilla fija 42 para reproducibilidad. La variante `linear_8` podría referirse a una tasa de aprendizaje con decaimiento lineal y un valor de 8, pero es una hipótesis no verificada. El tamaño del repositorio, 9,8 GB, es muy superior al de los pesos en F32 (unos 490 MB), lo que sugiere la presencia de múltiples checkpoints, estados del optimizador u otros artefactos de entrenamiento.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en iGPU con suficiente memoria compartida.
 - Ejecucion viable en CPU con llama.cpp u Ollama tras conversion a GGUF; latencia aceptable para experimentacion, no medida.
 - GPU de datacenter (A100, H100) innecesarias para inferencia; solo tendrian sentido para reentrenar el modelo a gran escala de lotes.
-- Opciones de despliegue: PyTorch/Transformers, llama.cpp, Ollama y, con conversion previa, vLLM o TGI. No hay proveedor de inferencia desplegado en HuggingFace para este repositorio.
+- Opciones de despliegue: PyTorch/Transformers, llama.cpp, Ollama y, con conversion previa, vLLM o TGI. No hay proveedor de inferencia desplegado en Hugging Face para este repositorio.
 - Throughput y latencia: no disponibles; no se han publicado mediciones.
 - Nota: el repositorio ocupa 9,8 GB, muy por encima de los pesos en F32, por lo que conviene descargar solo los archivos safetensors necesarios mediante descarga selectiva.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| llmplasticity-nl_zh_linear_8-rand-d0.006-c0.999-r0.5-s42 | 122,7 M | 1024 tokens (por arquitectura) | no disponible | HuggingFace, 5 descargas, 0 likes | Sin model card ni benchmarks |
+| llmplasticity-nl_zh_linear_8-rand-d0.006-c0.999-r0.5-s42 | 122,7 M | 1024 tokens (por arquitectura) | no disponible | Hugging Face, 5 descargas, 0 likes | Sin model card ni benchmarks |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Ampliamente disponible | Modelo base de referencia, con evaluaciones publicadas |
 | DistilGPT-2 | 82 M | 1024 tokens | MIT | Ampliamente disponible | Version destilada, menor coste, algo peor en perplejidad |
 | GPT-2 medium | 355 M | 1024 tokens | MIT | Ampliamente disponible | Mayor capacidad, requiere algo mas de VRAM |
@@ -87,7 +87,7 @@ La comparacion directa en rendimiento no es posible: el modelo analizado no publ
 
 ## Enlaces
 
-- Repositorio principal en HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-nl_zh_linear_8-rand-d0.006-c0.999-r0.5-s42
+- Repositorio principal en Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-nl_zh_linear_8-rand-d0.006-c0.999-r0.5-s42
 - Variante hermana `d0.006-c0.9-r0.8-s42`: https://huggingface.co/Cisco1963/llmplasticity-nl_zh_linear_8-d0.006-c0.9-r0.8-s42
 - Variante hermana `rand-d0.01-c0.99-r0.2-s42`: https://huggingface.co/Cisco1963/llmplasticity-nl_zh_linear_8-rand-d0.01-c0.99-r0.2-s42
 - Indice de modelos con variante `plasticity-nl_zh_linear_8-d0.25-c0.99-r0.25-s42`: https://essamamdani.com/ai-models/hf-cisco1963-llmplasticity-plasticity-nl-zh-linear-8-d0-25-c0-99-r0-25-s42

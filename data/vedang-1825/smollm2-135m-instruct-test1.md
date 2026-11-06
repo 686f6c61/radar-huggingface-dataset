@@ -6,7 +6,7 @@ SmolLM2-135M-Instruct es un modelo de lenguaje de pequeno tamano (135 millones d
 
 El interes de este modelo radica en su reducido coste computacional: con 134.515.008 parametros reales (segun los pesos en safetensors) y un repositorio de aproximadamente 0,3 GB, puede desplegarse en entornos con recursos limitados, lo que lo hace util para prototipado rapido, experimentacion docente y tareas de generacion de texto sencillas. La familia SmolLM2 se entreno con un enfasis explicito en eficiencia y calidad por parametro, y este checkpoint incorpora ajuste por instrucciones y formato conversacional.
 
-No obstante, conviene subrayar que se trata de un modelo de 135M: su capacidad de razonamiento, su cobertura multilingue (solo ingles declarado) y su fiabilidad factual son limitadas en comparacion con modelos de mayor escala. La licencia Apache 2.0 del modelo base facilita su reutilizacion, si bien el repositorio concreto esta marcado como gated y requiere aceptar condiciones en HuggingFace.
+No obstante, conviene subrayar que se trata de un modelo de 135M: su capacidad de razonamiento, su cobertura multilingue (solo ingles declarado) y su fiabilidad factual son limitadas en comparacion con modelos de mayor escala. La licencia Apache 2.0 del modelo base facilita su reutilizacion, si bien el repositorio concreto esta marcado como gated y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolLM2-135M-Instruct (este checkpoint) | 134,5M | No disponible | Ingles | Apache 2.0 | Gated en HuggingFace |
-| SmolLM2-360M-Instruct (familia) | ~360M | No disponible | Ingles | Apache 2.0 | Publico en HuggingFace |
-| Qwen2.5-0.5B-Instruct | ~500M | No disponible | Multilingue | Apache 2.0 | Publico en HuggingFace |
-| TinyLlama-1.1B-Chat | ~1,1B | No disponible | Ingles | Apache 2.0 | Publico en HuggingFace |
+| SmolLM2-135M-Instruct (este checkpoint) | 134,5M | No disponible | Ingles | Apache 2.0 | Gated en Hugging Face |
+| SmolLM2-360M-Instruct (familia) | ~360M | No disponible | Ingles | Apache 2.0 | Publico en Hugging Face |
+| Qwen2.5-0.5B-Instruct | ~500M | No disponible | Multilingue | Apache 2.0 | Publico en Hugging Face |
+| TinyLlama-1.1B-Chat | ~1,1B | No disponible | Ingles | Apache 2.0 | Publico en Hugging Face |
 
 La comparativa se limita a datos de catalogo; no se dispone de cifras de rendimiento comparadas en la informacion proporcionada.
 
@@ -78,14 +78,14 @@ La comparativa se limita a datos de catalogo; no se dispone de cifras de rendimi
 - Riesgo elevado de alucinacion en preguntas factuales y tareas que requieran conocimiento especifico.
 - Solo soporta ingles segun la metadata; el rendimiento en castellano no esta garantizado.
 - No se documentan mitigaciones de sesgos; es probable que herede sesgos de los datos de entrenamiento del modelo base.
-- Repositorio marcado como `gated`: requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Repositorio marcado como `gated`: requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Etiquetado como `educational`: no recomendado para despliegues en produccion critica sin validacion exhaustiva.
 - No se dispone de informacion sobre la longitud de contexto efectiva de este checkpoint; conviene verificar en la configuracion del modelo antes de usarlo con prompts largos.
 - La licencia Apache 2.0 permite uso comercial del modelo base, pero deben revisarse las condiciones adicionales del repositorio gated.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vedang-1825/smollm2-135m-instruct-test1
+- Repositorio en Hugging Face: https://huggingface.co/vedang-1825/smollm2-135m-instruct-test1
 - Articulo de referencia de la familia SmolLM2: https://arxiv.org/abs/2502.02737
 - Repositorio original de SmolLM2 (Hugging Face): no disponible en la informacion proporcionada
 - Blog o demo oficial: no disponible en la informacion proporcionada

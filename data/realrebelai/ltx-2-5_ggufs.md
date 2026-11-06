@@ -75,7 +75,7 @@ No se dispone de datos comparativos con otras alternativas de generación de ví
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/realrebelai/LTX-2.5_GGUFs
+- Repositorio Hugging Face: https://huggingface.co/realrebelai/LTX-2.5_GGUFs
 - Modelo base Lightricks/LTX-2.5: https://huggingface.co/Lightricks/LTX-2.5
 - ComfyUI-GGUF (extensión de ComfyUI): https://github.com/city96/ComfyUI-GGUF
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

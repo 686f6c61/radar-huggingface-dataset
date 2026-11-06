@@ -61,5 +61,5 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (sp
 
 ## Enlaces
 
-- Repositorio HuggingFace: [anquachdev/hibiki-1b-mlx-q4](https://huggingface.co/anquachdev/hibiki-1b-mlx-q4)
+- Repositorio Hugging Face: [anquachdev/hibiki-1b-mlx-q4](https://huggingface.co/anquachdev/hibiki-1b-mlx-q4)
 - Modelo base: [kyutai/hibiki-1b-mlx-bf16](https://huggingface.co/kyutai/hibiki-1b-mlx-bf16)

@@ -108,7 +108,7 @@ La comparación directa con alternativas queda limitada porque la model card no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/semprerudi/maschera-ch-v63b
+- Modelo en Hugging Face: https://huggingface.co/semprerudi/maschera-ch-v63b
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Sitio web de MASCHERA: https://www.maschera.ch
 - Código fuente y descargas de MASCHERA: https://github.com/semprerudi/maschera

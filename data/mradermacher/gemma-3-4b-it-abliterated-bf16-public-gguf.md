@@ -17,7 +17,7 @@ La relevancia de esta ficha radica en que combina tres factores: un modelo peque
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj en Q8_0 y f16 |
-| Idiomas soportados | en (segun metadatos de HuggingFace y model card) |
+| Idiomas soportados | en (segun metadatos de Hugging Face y model card) |
 | Licencia | gemma |
 | Formato de pesos | GGUF (no se distribuyen safetensors en este repo) |
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Gemma-3-4b-it-abliterated-bf16-public-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma-3-4b-it-abliterated-bf16-public-GGUF
 - Modelo base: https://huggingface.co/ashwin-sreedhar/Gemma-3-4b-it-abliterated-bf16-public
 - Cuantizaciones imatrix del mismo modelo: https://huggingface.co/mradermacher/Gemma-3-4b-it-abliterated-bf16-public-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Gemma-3-4b-it-abliterated-bf16-public-GGUF

@@ -100,7 +100,7 @@ Diferencias clave: frente a los tres modelos de referencia, este merge no ofrece
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/mradermacher/gemma-3-starshine-merge-A-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/mradermacher/gemma-3-starshine-merge-A-GGUF
 - Modelo base (safetensors): https://huggingface.co/ToastyPigeon/gemma-3-starshine-merge-A
 - Cuantizaciones ponderadas/iMatrix (i1): https://huggingface.co/mradermacher/gemma-3-starshine-merge-A-i1-GGUF
 - Página de descarga y visión general de cuantizaciones del autor: https://hf.tst.eu/model#gemma-3-starshine-merge-A-GGUF

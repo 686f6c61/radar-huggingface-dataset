@@ -82,7 +82,7 @@ La comparativa se limita a variantes del mismo modelo base. No se dispone de inf
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/satgeze/GLM-5.3-Flash-EXL3-TR3-3.5bpw
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/satgeze/GLM-5.3-Flash-EXL3-TR3-3.5bpw
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Liberacion 4bpw del mismo lineage: https://huggingface.co/brandonmusic/GLM-5.3-Flash-tr3-4bpw
 - Repositorio del encoder ShapleyMcG: https://github.com/brandonmmusic-max/shapleymcg

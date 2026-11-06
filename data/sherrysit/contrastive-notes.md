@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Sherrysit/contrastive-notes` es un repositorio experimental que contiene una implementación propia de una arquitectura tipo CLIP para aprendizaje contrastivo imagen-texto. Lo publica el usuario Sherrysit en HuggingFace bajo licencia BSD-3-Clause, con el objetivo declarado de servir como base inspeccionable antes de lanzar un entrenamiento completo: el propio autor indica que el `model.safetensors` incluido es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*), no un modelo entrenado ni evaluado.
+`Sherrysit/contrastive-notes` es un repositorio experimental que contiene una implementación propia de una arquitectura tipo CLIP para aprendizaje contrastivo imagen-texto. Lo publica el usuario Sherrysit en Hugging Face bajo licencia BSD-3-Clause, con el objetivo declarado de servir como base inspeccionable antes de lanzar un entrenamiento completo: el propio autor indica que el `model.safetensors` incluido es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*), no un modelo entrenado ni evaluado.
 
 El dato más relevante para cualquier evaluador es su tamaño real: 33.088 parámetros según el fichero safetensors, lo que sitúa el repositorio en el orden de unas decenas de kilobytes de pesos. Esto contrasta con la etiqueta `scale: huge` que aparece en la model card, que debe interpretarse como una etiqueta de configuración de la arquitectura generada, no como el tamaño efectivo del modelo publicado. El repositorio ocupa 0,0 GB.
 
@@ -21,14 +21,14 @@ Por tanto, no es un modelo utilizable en producción ni en investigación compar
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors (`model.safetensors`) + código Python (`model.py`, `config.json`, `training_args.json`) |
 | Etiqueta de escala declarada | `huge` (etiqueta de configuración; no coincide con el recuento real de parámetros) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación (metadatos) | 2026-10-17T22:56:47Z |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un CLIP bimodal con codificadores de imagen y texto y un objetivo contrastivo. Frente al CLIP original, la model card declara tres variaciones: atención dilatada (*dilated attention*) en lugar de atención densa estándar, fusión mediante *co-attention* entre modalidades y normalización por batchnorm en lugar de layernorm. La activación es gelu-tanh y la escala nominal de la configuración es `huge`. La implementación es propia y personalizada: el autor advierte explícitamente que las APIs genéricas de carga automática de HuggingFace (`AutoModel`, `from_pretrained` estándar) requieren un adaptador explícito para funcionar con estos pesos.
+La arquitectura es un CLIP bimodal con codificadores de imagen y texto y un objetivo contrastivo. Frente al CLIP original, la model card declara tres variaciones: atención dilatada (*dilated attention*) en lugar de atención densa estándar, fusión mediante *co-attention* entre modalidades y normalización por batchnorm en lugar de layernorm. La activación es gelu-tanh y la escala nominal de la configuración es `huge`. La implementación es propia y personalizada: el autor advierte explícitamente que las APIs genéricas de carga automática de Hugging Face (`AutoModel`, `from_pretrained` estándar) requieren un adaptador explícito para funcionar con estos pesos.
 
 En cuanto al entrenamiento, el repositorio incluye una receta por defecto (optimizador AdamW con *scheduler* coseno) en `training_args.json`, pero el autor subraya que son valores de partida del script y no evidencia de una ejecución completada. No se especifican tokens de entrenamiento, composición del dataset, ni fases de RLHF/DPO o ajuste por preferencias. No hay constancia de que el checkpoint haya sido entrenado en absoluto: es una inicialización.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - VRAM para inferencia: prácticamente nula. Con 33.088 parámetros, los pesos ocupan aproximadamente 132 KB en fp32, 66 KB en fp16 y 33 KB en int8; el cuello de botella sería el tamaño de las activaciones, que depende de una configuración de entrada no publicada.
 - GPU recomendadas: cualquiera, incluida una GPU integrada o CPU. No requiere A100, H100 ni RTX 4090; ejecutarlo en esos aceleradores no aporta ninguna ventaja medible.
 - Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, GTX 1650, etc.) y en Raspberry Pi o entornos sin GPU.
-- Opciones de despliegue: ejecución directa con PyTorch mediante `model.py`; vLLM, TGI, llama.cpp y Ollama no son aplicables, ya que no hay pipeline generativo ni formato compatible publicado. La carga con APIs automáticas de HuggingFace requiere un adaptador explícito según el autor.
+- Opciones de despliegue: ejecución directa con PyTorch mediante `model.py`; vLLM, TGI, llama.cpp y Ollama no son aplicables, ya que no hay pipeline generativo ni formato compatible publicado. La carga con APIs automáticas de Hugging Face requiere un adaptador explícito según el autor.
 - Latencia y throughput: no disponibles; no se han publicado mediciones y, al no estar entrenado, no serían representativas de un uso real.
 
 ## Comparativa con modelos similares
@@ -69,10 +69,10 @@ Las cifras de los modelos de referencia son aproximadas y de conocimiento públi
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sherrysit/contrastive-notes | 33.088 | no disponible | sin benchmarks (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
+| Sherrysit/contrastive-notes | 33.088 | no disponible | sin benchmarks (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
 | OpenAI CLIP ViT-B/32 | ~151 M | 77 tokens de texto; imagen 224×224 | métricas zero-shot publicadas por OpenAI | MIT | pesos ampliamente disponibles |
-| OpenCLIP ViT-B-32 | ~151 M | 77 tokens; imagen 224×224 | reproducción de CLIP con variantes de datos | MIT / Apache-2.0 según checkpoint | HuggingFace, múltiples checkpoints |
-| SigLIP base (patch16-224) | ~203 M | sin *softmax* global; contexto corto | métricas publicadas por Google | Apache-2.0 | HuggingFace |
+| OpenCLIP ViT-B-32 | ~151 M | 77 tokens; imagen 224×224 | reproducción de CLIP con variantes de datos | MIT / Apache-2.0 según checkpoint | Hugging Face, múltiples checkpoints |
+| SigLIP base (patch16-224) | ~203 M | sin *softmax* global; contexto corto | métricas publicadas por Google | Apache-2.0 | Hugging Face |
 
 La comparación relevante no es de rendimiento sino de naturaleza del artefacto: los tres modelos de referencia son checkpoints entrenados y evaluados, mientras que `contrastive-notes` es un esqueleto de código con pesos inicializados tres o cuatro órdenes de magnitud más pequeños.
 
@@ -90,5 +90,5 @@ La comparación relevante no es de rendimiento sino de naturaleza del artefacto:
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sherrysit/contrastive-notes
+- Hugging Face: https://huggingface.co/Sherrysit/contrastive-notes
 - Papers, blogs, repositorios adicionales o demos: no disponibles en la información proporcionada.

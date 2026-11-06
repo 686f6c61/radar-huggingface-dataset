@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`allenwangzes/prompt-engineering-v3` no es un modelo de lenguaje entrenado, sino un repositorio de HuggingFace que aloja notas de lectura y el esbozo de un experimento sobre ingenieria de prompts. El autor lo declara explicitamente como material exploratorio: contiene un unico artefacto principal (`review.md`) y su propia documentacion (`README.md`), sin codigo de entrenamiento, sin pipeline de inferencia publicado y sin checkpoint liberado.
+`allenwangzes/prompt-engineering-v3` no es un modelo de lenguaje entrenado, sino un repositorio de Hugging Face que aloja notas de lectura y el esbozo de un experimento sobre ingenieria de prompts. El autor lo declara explicitamente como material exploratorio: contiene un unico artefacto principal (`review.md`) y su propia documentacion (`README.md`), sin codigo de entrenamiento, sin pipeline de inferencia publicado y sin checkpoint liberado.
 
 El repositorio se etiqueta con `safetensors`, `transformer`, `research-notes` y `prompt-engineering`, pero la model card no describe arquitectura, datos de entrenamiento, tokenizador ni proceso de evaluacion. Los metadatos de safetensors declaran 24.832 parametros, una cifra incompatible con cualquier transformer funcional y coherente con un repositorio vacio o con un tensor residual de prueba; el tamano del repositorio es de 0,0 GB. La licencia declarada es CC-BY-4.0 y no se especifican idiomas soportados.
 
@@ -23,7 +23,7 @@ Su relevancia es, por tanto, metodologica y no tecnica: sirve como ejemplo de do
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no permite describir ninguna arquitectura. El tag `transformer` es una etiqueta generica de HuggingFace sin respaldo documental: no hay configuracion de modelo (`config.json`), ni fichero de definicion, ni tokenizador, ni tabla de hiperparametros. Tampoco se documenta numero de tokens de entrenamiento, composicion del dataset, estrategia de alineamiento (RLHF, DPO u otra) ni innovacion tecnica alguna como decodificacion especulativa o atencion lineal.
+La informacion disponible no permite describir ninguna arquitectura. El tag `transformer` es una etiqueta generica de Hugging Face sin respaldo documental: no hay configuracion de modelo (`config.json`), ni fichero de definicion, ni tokenizador, ni tabla de hiperparametros. Tampoco se documenta numero de tokens de entrenamiento, composicion del dataset, estrategia de alineamiento (RLHF, DPO u otra) ni innovacion tecnica alguna como decodificacion especulativa o atencion lineal.
 
 El contenido real del repositorio es un conjunto de notas: alcance de la pregunta de investigacion y posibles factores de confusion, propuesta de comparacion con lineas base emparejadas, contexto de evaluacion con benchmarks publicos nombrados en la nota principal, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El propio README advierte que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales, y que cualquier resultado futuro debera incluir versiones de dataset, comandos, semillas, hardware y registros en bruto.
 
@@ -80,7 +80,7 @@ No disponible. Este repositorio no es un modelo, sino un conjunto de notas de in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/allenwangzes/prompt-engineering-v3
+- Repositorio en Hugging Face: https://huggingface.co/allenwangzes/prompt-engineering-v3
 - Prompt Engineering Guide: https://www.promptingguide.ai/
 - Repositorio dair-ai/Prompt-Engineering-Guide: https://github.com/dair-ai/Prompt-Engineering-Guide
 - Google Cloud, que es la ingenieria de prompts: https://cloud.google.com/discover/what-is-prompt-engineering

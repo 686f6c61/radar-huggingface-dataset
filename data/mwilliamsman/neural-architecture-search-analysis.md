@@ -25,7 +25,7 @@ Es relevante ahora únicamente como material de lectura para investigadores inte
 
 No se describe ninguna arquitectura de red concreta ni proceso de entrenamiento. El repositorio se limita a una nota de investigación sobre NAS que plantea el alcance de la pregunta, los factores de confusión probables, una comparación con baselines emparejados y un plan de evaluación con benchmarks públicos. El autor advierte que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
-No hay datos sobre número de tokens de entrenamiento, composición del dataset, RLHF, DPO ni innovaciones técnicas de inferencia (decodificación especulativa, atención lineal, etc.). El tag `transformer` de HuggingFace parece un metadato de clasificación del repositorio, no una descripción de un modelo entrenado. El autor indica que, si en el futuro se añaden resultados, deberán incluir versiones de datasets, comandos, semillas, hardware y logs en bruto.
+No hay datos sobre número de tokens de entrenamiento, composición del dataset, RLHF, DPO ni innovaciones técnicas de inferencia (decodificación especulativa, atención lineal, etc.). El tag `transformer` de Hugging Face parece un metadato de clasificación del repositorio, no una descripción de un modelo entrenado. El autor indica que, si en el futuro se añaden resultados, deberán incluir versiones de datasets, comandos, semillas, hardware y logs en bruto.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ No disponible. No existen modelos comparables en la misma categoría porque este
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mwilliamsman/neural-architecture-search-analysis
+- Repositorio en Hugging Face: https://huggingface.co/mwilliamsman/neural-architecture-search-analysis
 - Artefacto principal citado en la model card: `paper_notes.md` (dentro del repositorio)
 - Documentación: `README.md` (dentro del repositorio)
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código ni demos.

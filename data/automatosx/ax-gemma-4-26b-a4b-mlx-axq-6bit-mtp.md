@@ -68,6 +68,6 @@ No se dispone de información suficiente para una comparativa directa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AutomatosX/AX-gemma-4-26b-a4b-MLX-AXQ-6bit-MTP
+- Repositorio Hugging Face: https://huggingface.co/AutomatosX/AX-gemma-4-26b-a4b-MLX-AXQ-6bit-MTP
 - Certificado Tier 1: https://github.com/defai-digital/axquant/blob/main/docs/certifications/gemma4-26b-a4b-axq6-tier1.md
 - Modelo base (referencia): https://huggingface.co/google/gemma-4-26b-a4b-it

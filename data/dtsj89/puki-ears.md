@@ -90,7 +90,7 @@ Segun la model card, el modelo base es menos preciso que el Whisper turbo de ivr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dtsj89/puki-ears
+- Modelo en Hugging Face: https://huggingface.co/dtsj89/puki-ears
 - Modelo base: https://huggingface.co/MaorB/embeddinggemma-2-asr-hebrew-english-streaming
 - Repositorio de Puki: https://github.com/TomSadeh/puki
 - Script de exportacion: https://github.com/TomSadeh/puki/blob/main/train/kolstream_export.py

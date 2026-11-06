@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tiny-transformer-generation es un prototipo de investigacion publicado en HuggingFace por el usuario ashishguptagos. Se trata de una implementacion propia y minima de un transformer decoder orientado a generacion de texto, acompanada de scripts ejecutables, un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto. No es un modelo preentrenado ni ajustado: el propio autor indica en la model card que `model.safetensors` es unicamente un checkpoint de inicializacion valido para pruebas de humo.
+tiny-transformer-generation es un prototipo de investigacion publicado en Hugging Face por el usuario ashishguptagos. Se trata de una implementacion propia y minima de un transformer decoder orientado a generacion de texto, acompanada de scripts ejecutables, un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto. No es un modelo preentrenado ni ajustado: el propio autor indica en la model card que `model.safetensors` es unicamente un checkpoint de inicializacion valido para pruebas de humo.
 
 El dato mas relevante para evaluarlo es su tamano real: 24.832 parametros registrados en el fichero safetensors, es decir, aproximadamente 0,025 millones de parametros. Conviene senalar que la model card etiqueta la configuracion como "giant", pero se trata de una etiqueta interna del script de generacion de configuraciones, no de una descripcion del tamano real del modelo. La discrepancia entre esa etiqueta y el recuento efectivo de parametros es el principal caveat tecnico de la ficha.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ashishguptagos/tiny-transformer-generation | 24.832 | no disponible | no | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| callumjohnson/tiny-transformer-generation | no disponible | no disponible | no (orientado a revision de codigo y smoke tests) | no disponible | HuggingFace |
+| ashishguptagos/tiny-transformer-generation | 24.832 | no disponible | no | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| callumjohnson/tiny-transformer-generation | no disponible | no disponible | no (orientado a revision de codigo y smoke tests) | no disponible | Hugging Face |
 | avvorstenbosch/tinyTransformer (GitHub) | no disponible | no disponible | entrenable por el usuario | no disponible | GitHub |
 | tushar-gupta525/tiny-gpt-from-scratch (GitHub) | no disponible | no disponible | no (implementacion didactica) | no disponible | GitHub |
 
@@ -87,8 +87,8 @@ Los elementos comparables encontrados en la busqueda web son implementaciones di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ashishguptagos/tiny-transformer-generation
-- Repositorio relacionado en HuggingFace: https://huggingface.co/callumjohnson/tiny-transformer-generation
+- Hugging Face: https://huggingface.co/ashishguptagos/tiny-transformer-generation
+- Repositorio relacionado en Hugging Face: https://huggingface.co/callumjohnson/tiny-transformer-generation
 - Implementacion didactica en GitHub: https://github.com/avvorstenbosch/tinyTransformer
 - Implementacion didactica en GitHub: https://github.com/tushar-gupta525/tiny-gpt-from-scratch
 - Referencia sobre la arquitectura transformer: https://en.wikipedia.org/wiki/Transformer_(deep_learning)

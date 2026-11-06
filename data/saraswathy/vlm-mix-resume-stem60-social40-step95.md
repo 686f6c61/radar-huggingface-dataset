@@ -68,8 +68,8 @@ No se han encontrado en la busqueda web modelos comparables publicados (adaptado
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Saraswathy/vlm-mix-resume-stem60-social40-step95 | Adaptador LoRA sobre 4B (base) | No disponible | safetensors + FSDP | No disponible | Publico en HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-4B-Instruct (modelo base) | 4B | No disponible en la informacion proporcionada | safetensors | La del modelo base (consultar en su repositorio) | Publico en HuggingFace |
+| Saraswathy/vlm-mix-resume-stem60-social40-step95 | Adaptador LoRA sobre 4B (base) | No disponible | safetensors + FSDP | No disponible | Publico en Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-4B-Instruct (modelo base) | 4B | No disponible en la informacion proporcionada | safetensors | La del modelo base (consultar en su repositorio) | Publico en Hugging Face |
 | Otros adaptadores similares | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se han encontrado en la busqueda web modelos comparables publicados (adaptado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Saraswathy/vlm-mix-resume-stem60-social40-step95
+- Modelo en Hugging Face: https://huggingface.co/Saraswathy/vlm-mix-resume-stem60-social40-step95
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - EasyR1 (framework de entrenamiento citado en la model card): no se ha encontrado enlace en la informacion proporcionada.
 - Paper asociado: no disponible.

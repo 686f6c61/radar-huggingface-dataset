@@ -84,7 +84,7 @@ No disponible. La información proporcionada no incluye otros modelos de clasifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pedrojb04/bean-shape-lab
+- Modelo en Hugging Face: https://huggingface.co/pedrojb04/bean-shape-lab
 - Dataset Dry Bean (UCI): https://archive.ics.uci.edu/dataset/602/dry+bean+dataset
 - DOI del dataset: https://doi.org/10.24432/C50S4B
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

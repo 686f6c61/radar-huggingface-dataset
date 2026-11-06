@@ -29,7 +29,7 @@ No se dispone de informacion sobre el dataset de entrenamiento, el numero de tok
 
 - Generacion de texto en ingles: hereda las capacidades del modelo base Gemma 2 2B, que incluyen generacion de texto coherente, razonamiento basico y comprension de instrucciones.
 - Fine-tuning especifico: el adapter LoRA puede haber ajustado el comportamiento del modelo para una tarea concreta, pero no se especifica cual.
-- Compatibilidad con transformers: se puede cargar con la libreria transformers de HuggingFace y es compatible con text-generation-inference.
+- Compatibilidad con transformers: se puede cargar con la libreria transformers de Hugging Face y es compatible con text-generation-inference.
 - Sin informacion sobre tool calling, agentes, vision o audio: no se mencionan estas capacidades en la documentacion disponible.
 
 ## Casos de uso
@@ -38,7 +38,7 @@ No se dispone de informacion sobre el dataset de entrenamiento, el numero de tok
 - Prototipado rapido de modelos de lenguaje: al ser un adapter pequeno, se puede cargar sobre el modelo base cuantizado y probar rapidamente en entornos con recursos limitados.
 - Generacion de texto en ingles para aplicaciones sencillas: si el fine-tuning ha ajustado el modelo para un dominio especifico (no documentado), podria usarse para tareas como clasificacion de texto o generacion de respuestas cortas.
 - Estudio de la influencia de hiperparametros LoRA: el nombre del repositorio indica un rango de 16 y una tasa de aprendizaje de 1e-4, lo que permite analizar el efecto de estas configuraciones en el rendimiento.
-- Integracion en pipelines de HuggingFace: al ser compatible con transformers y safetensors, puede integrarse en flujos de trabajo existentes con facilidad.
+- Integracion en pipelines de Hugging Face: al ser compatible con transformers y safetensors, puede integrarse en flujos de trabajo existentes con facilidad.
 - Educacion y formacion: util para demostrar el proceso de fine-tuning de modelos open source en cursos o talleres.
 
 ## Benchmarks y rendimiento

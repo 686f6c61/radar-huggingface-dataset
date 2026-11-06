@@ -6,7 +6,7 @@ Climate2Weather es un modelo generativo de difusión basado en score (conditiona
 
 Técnicamente, el modelo realiza asimilación de datos basada en score y reduce de forma conjunta cuatro variables desde una rejilla de 8x8 hasta 128x128, y desde resolución de seis horas hasta resolución horaria. Se trata, por tanto, de un modelo específico de ciencia de la Tierra y no de un modelo de lenguaje: no tiene parámetros ni ventana de contexto en el sentido habitual de los LLM, sino que opera sobre campos espacio-temporales.
 
-Su relevancia actual reside en que aborda dos problemas clásicos del downscaling climático: la coherencia espacio-temporal entre variables y la representación explícita de la incertidumbre mediante ensembles. El repositorio de HuggingFace analizado es una reproducción de ingeniería independiente de las especificaciones públicas del método, no la implementación oficial, y no incluye pesos entrenados.
+Su relevancia actual reside en que aborda dos problemas clásicos del downscaling climático: la coherencia espacio-temporal entre variables y la representación explícita de la incertidumbre mediante ensembles. El repositorio de Hugging Face analizado es una reproducción de ingeniería independiente de las especificaciones públicas del método, no la implementación oficial, y no incluye pesos entrenados.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Entrenamiento multi-GPU: se documenta `torchrun --standalone --nproc_per_node=2 scripts/train.py`, es decir, un mínimo de 2 procesos.
 - Opciones de despliegue: no aplican los servidores de inferencia para LLM (vLLM, TGI, Ollama, llama.cpp). El despliegue se realiza mediante los scripts de PyTorch incluidos: `scripts/train.py`, `scripts/inference.py`, `scripts/result.py`.
 - Latencia y throughput: no disponibles. No se publican mediciones de tiempo de inferencia ni de generación por ensemble.
-- Almacenamiento: los pesos no están incluidos en el repositorio de HuggingFace; deben obtenerse del repositorio oficial de GitHub de los autores.
+- Almacenamiento: los pesos no están incluidos en el repositorio de Hugging Face; deben obtenerse del repositorio oficial de GitHub de los autores.
 
 ## Comparativa con modelos similares
 
@@ -87,7 +87,7 @@ No disponible. La información proporcionada no incluye resultados comparativos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OneScience-Group/Climate2Weather
+- Repositorio en Hugging Face: https://huggingface.co/OneScience-Group/Climate2Weather
 - Artículo (DOI): https://doi.org/10.1038/s41612-025-01157-y — "A Generative Framework for Probabilistic, Spatiotemporally Coherent Downscaling of Climate Simulation"
 - Código y pesos oficiales de los autores: https://github.com/schmidtjonathan/Climate2Weather
 - Nota: la búsqueda web asociada a esta ficha no devolvió enlaces relevantes adicionales.

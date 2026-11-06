@@ -76,8 +76,8 @@ El tamaño de las muestras fue de 320 para HarmBench, 313 para StrongREJECT, 131
 
 | Modelo | Tipo | AUC (validación) | HarmBench ASR | PHTest harmless | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `linear_probe_harmcompliance` | Sonda lineal logística | 0.9268 | 0.141 @ fpr05 | 0.035 @ fpr05 | Apache 2.0 | HuggingFace |
-| `linear_probe_prompt_harm` | Sonda lineal logística | 0.9787 | 0.103 @ fpr05 | 0.193 @ fpr05 | Apache 2.0 | HuggingFace |
+| `linear_probe_harmcompliance` | Sonda lineal logística | 0.9268 | 0.141 @ fpr05 | 0.035 @ fpr05 | Apache 2.0 | Hugging Face |
+| `linear_probe_prompt_harm` | Sonda lineal logística | 0.9787 | 0.103 @ fpr05 | 0.193 @ fpr05 | Apache 2.0 | Hugging Face |
 | latent_mas + aligner @ fpr10 | Aligner de atención | No disponible | 0.163 | 0.080 | No disponible | No disponible |
 | latent_mas (sin guardia) | Baseline sin protección | No disponible | 0.347 | 0.001 | No disponible | No disponible |
 
@@ -94,6 +94,6 @@ La comparación muestra que `harmcompliance` es el punto de operación más equi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Danny-1223/latent-mas-linear-probe
+- Hugging Face: https://huggingface.co/Danny-1223/latent-mas-linear-probe
 - Artículo de LatentMAS (arXiv 2511.20639): https://arxiv.org/abs/2511.20639
 - Repositorio de código LatentMASHarmBench: https://github.com/Asatheesh6561/LatentMASHarmBench

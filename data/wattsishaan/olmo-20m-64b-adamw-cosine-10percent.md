@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`WattsIshaan/OLMo-20m-64B-adamw-cosine-10percent` es un checkpoint intermedio de un modelo de lenguaje de aproximadamente 20 millones de parametros perteneciente a la familia OLMo, publicado por el usuario WattsIshaan en HuggingFace. El modelo se ha preentrenado con el optimizador AdamW y un schedule de learning rate coseno sobre 64.000 millones de tokens extraidos de DCLM, y el checkpoint corresponde al 90% de los pasos de entrenamiento (220.000 pasos con un batch de 256), de modo que esta pensado para completarse mediante una fase de annealing sobre el 10% restante.
+`WattsIshaan/OLMo-20m-64B-adamw-cosine-10percent` es un checkpoint intermedio de un modelo de lenguaje de aproximadamente 20 millones de parametros perteneciente a la familia OLMo, publicado por el usuario WattsIshaan en Hugging Face. El modelo se ha preentrenado con el optimizador AdamW y un schedule de learning rate coseno sobre 64.000 millones de tokens extraidos de DCLM, y el checkpoint corresponde al 90% de los pasos de entrenamiento (220.000 pasos con un batch de 256), de modo que esta pensado para completarse mediante una fase de annealing sobre el 10% restante.
 
 Se trata de un artefacto de investigacion vinculado al paper "Sharpness-Aware Pretraining Mitigates Catastrophic Forgetting" (Watts, Li, Goyal, Springer y Raghunathan, ICML 2026), cuyo objetivo es estudiar como las tecnicas de sharpness-aware training mitigan el olvido catastrofico durante el preentrenamiento. Su relevancia es metodologica mas que de producto: al ser un modelo diminuto, permite reproducir y ablacionar optimizadores, schedules y estrategias de annealing con un coste computacional muy bajo.
 
@@ -93,6 +93,6 @@ Ninguna de estas alternativas es estrictamente equivalente: Pythia y SmolLM se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WattsIshaan/OLMo-20m-64B-adamw-cosine-10percent
+- Modelo en Hugging Face: https://huggingface.co/WattsIshaan/OLMo-20m-64B-adamw-cosine-10percent
 - Paper citado en la model card: "Sharpness-Aware Pretraining Mitigates Catastrophic Forgetting", Watts, Li, Goyal, Springer y Raghunathan, ICML 2026, https://arxiv.org/abs/2605.02105
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante. Las unicas entradas devueltas corresponden a paginas de reparto de comida (deliveroo.be) y no guardan relacion con el modelo, el paper ni el proyecto.

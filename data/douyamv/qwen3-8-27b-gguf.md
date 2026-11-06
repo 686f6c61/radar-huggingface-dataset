@@ -49,7 +49,7 @@ No se dispone de información detallada sobre el proceso de entrenamiento, como 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del autor no incluye tablas comparativas ni métricas de rendimiento para el modelo base Qwen3.8-27B, y el repositorio de cuantización solo proporciona tamaños de archivo y descripciones cualitativas de calidad. Se recomienda consultar la página oficial del modelo base en HuggingFace para obtener datos de evaluación si estuvieran disponibles.
+No se han publicado resultados de benchmarks en la información disponible. La model card del autor no incluye tablas comparativas ni métricas de rendimiento para el modelo base Qwen3.8-27B, y el repositorio de cuantización solo proporciona tamaños de archivo y descripciones cualitativas de calidad. Se recomienda consultar la página oficial del modelo base en Hugging Face para obtener datos de evaluación si estuvieran disponibles.
 
 ## Requisitos de hardware
 
@@ -81,7 +81,7 @@ No se dispone de información suficiente para comparar Qwen3.8-27B con otros mod
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/douyamv/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/douyamv/Qwen3.8-27B-GGUF
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Versión FP8 (safetensors): https://huggingface.co/douyamv/Qwen3.8-27B-FP8
 - Versión abliterada (sin censura): https://huggingface.co/douyamv/Qwen3.8-27B-abliterated

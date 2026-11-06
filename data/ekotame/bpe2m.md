@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Ekotame/bpe2m` aparece en HuggingFace como un repositorio creado por el usuario `Ekotame` con licencia Apache 2.0. Sin embargo, no se ha publicado ninguna documentación técnica, pesos, configuración o datos de entrenamiento. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene archivos de modelo accesibles. Tampoco presenta descargas, likes ni etiquetas de pipeline o idiomas.
+El modelo `Ekotame/bpe2m` aparece en Hugging Face como un repositorio creado por el usuario `Ekotame` con licencia Apache 2.0. Sin embargo, no se ha publicado ninguna documentación técnica, pesos, configuración o datos de entrenamiento. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene archivos de modelo accesibles. Tampoco presenta descargas, likes ni etiquetas de pipeline o idiomas.
 
 A día de hoy, no existe información pública suficiente para determinar qué tipo de modelo es, su arquitectura, tamaño, propósito o capacidades. Los resultados de búsqueda web no arrojan ninguna referencia relevante al identificador `bpe2m`, por lo que no es posible situarlo en el contexto de los modelos de IA actuales ni compararlo con alternativas. En consecuencia, cualquier evaluación técnica o práctica es inviable con los datos disponibles.
 
@@ -53,4 +53,4 @@ No disponible. No se dispone de información suficiente para comparar este model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ekotame/bpe2m
+- Hugging Face: https://huggingface.co/Ekotame/bpe2m

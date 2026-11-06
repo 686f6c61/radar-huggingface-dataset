@@ -72,8 +72,8 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo cuantizado (mradermacher)](https://huggingface.co/mradermacher/UI-Mate-27B-i1-GGUF)
-- [Repositorio HuggingFace del modelo original (Tencent)](https://huggingface.co/tencent/UI-Mate-27B)
+- [Repositorio Hugging Face del modelo cuantizado (mradermacher)](https://huggingface.co/mradermacher/UI-Mate-27B-i1-GGUF)
+- [Repositorio Hugging Face del modelo original (Tencent)](https://huggingface.co/tencent/UI-Mate-27B)
 - [Repositorio GitHub de Tencent UI-Mate](https://github.com/Tencent/UI-Mate)
 - [Página de descarga y vista general de mradermacher](https://hf.tst.eu/model#UI-Mate-27B-i1-GGUF)
-- [Repositorio HuggingFace de cuantizaciones estáticas (mradermacher)](https://huggingface.co/mradermacher/UI-Mate-27B-GGUF)
+- [Repositorio Hugging Face de cuantizaciones estáticas (mradermacher)](https://huggingface.co/mradermacher/UI-Mate-27B-GGUF)

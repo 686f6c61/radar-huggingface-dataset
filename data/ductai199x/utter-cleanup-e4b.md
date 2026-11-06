@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| utter-cleanup-e4b | 7,46 mil millones | no disponible | 18,5% sin edicion / 3,6% caracteres (conjunto principal) | Apache 2.0 | HuggingFace (GGUF y safetensors) |
-| Gemma 4 E4B (con prompt) | no disponible (mismo base) | no disponible | 7,2% sin edicion / 18,0% caracteres | Apache 2.0 (modelo base) | HuggingFace |
-| Gemma 4 26B-A4B (con prompt) | 26 mil millones totales, 4 mil millones activos | no disponible | 11,3% sin edicion / 7,7% caracteres | Apache 2.0 (modelo base) | HuggingFace |
+| utter-cleanup-e4b | 7,46 mil millones | no disponible | 18,5% sin edicion / 3,6% caracteres (conjunto principal) | Apache 2.0 | Hugging Face (GGUF y safetensors) |
+| Gemma 4 E4B (con prompt) | no disponible (mismo base) | no disponible | 7,2% sin edicion / 18,0% caracteres | Apache 2.0 (modelo base) | Hugging Face |
+| Gemma 4 26B-A4B (con prompt) | 26 mil millones totales, 4 mil millones activos | no disponible | 11,3% sin edicion / 7,7% caracteres | Apache 2.0 (modelo base) | Hugging Face |
 
 No se dispone de comparativas con otros modelos de limpieza de dictado en la informacion proporcionada.
 
@@ -95,9 +95,9 @@ No se dispone de comparativas con otros modelos de limpieza de dictado en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ductai199x/utter-cleanup-e4b
+- Modelo en Hugging Face: https://huggingface.co/ductai199x/utter-cleanup-e4b
 - Repositorio de la aplicacion Utter: https://github.com/ductai199x/utter
-- Perfil de HuggingFace del autor: https://huggingface.co/ductai199x
+- Perfil de Hugging Face del autor: https://huggingface.co/ductai199x
 - Repositorios de GitHub del autor: https://github.com/ductai199x?tab=repositories
 - Portafolio del autor en Devpost: https://devpost.com/ductai199x
 - Proyecto Forensic Self-Descriptions (CVPR 2025) del autor: https://github.com/ductai199x/Forensic-Self-Descriptions-CVPR25

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nikitakaa/multitask` es un prototipo de investigación publicado en HuggingFace que implementa una variante de MoCo v3 (Momentum Contrast v3) orientada a tareas multitarea. Lo desarrolla el usuario nikitakaa y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo de lenguaje generativo ni de un modelo entrenado para producción: la propia model card lo describe como un esqueleto reproducible con configuración, script de entrenamiento y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`nikitakaa/multitask` es un prototipo de investigación publicado en Hugging Face que implementa una variante de MoCo v3 (Momentum Contrast v3) orientada a tareas multitarea. Lo desarrolla el usuario nikitakaa y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo de lenguaje generativo ni de un modelo entrenado para producción: la propia model card lo describe como un esqueleto reproducible con configuración, script de entrenamiento y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El repositorio contiene 49.600 parámetros totales en `model.safetensors`, lo que confirma que se trata de una configuración de escala "tiny" pensada para validar el pipeline, no para obtener resultados competitivos. La arquitectura declarada combina atención con flash attention, fusión mediante co-attention, activación gelu-tanh y normalización InstanceNorm. El autor indica explícitamente que no se reclama ninguna métrica de benchmark.
 
@@ -83,7 +83,7 @@ La comparación es asimétrica: los tres alternativas son modelos autosupervisad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nikitakaa/multitask
+- Hugging Face: https://huggingface.co/nikitakaa/multitask
 - Paper original MoCo v3 (An Empirical Study of Training Self-Supervised Vision Transformers): https://arxiv.org/abs/2104.02057
 - Repositorio oficial MoCo: https://github.com/facebookresearch/moco-v3
 - No se han encontrado en la información proporcionada blogs, demos ni repositorios adicionales del autor.

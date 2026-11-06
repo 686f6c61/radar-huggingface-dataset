@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hexels (nombre completo del método: Honeycomb-Surfels) es un modelo de representación de escenas 3D y reconstrucción de superficies desarrollado por el CCVL (Computational Cognition, Vision and Learning) de la Johns Hopkins University, por Prakhar Kaushik, Soumava Paul y Alan Yuille. No es un modelo de lenguaje: se trata de un conjunto de primitivas geométricas personalizadas (elementos de superficie hexagonales planos con un campo de color espacial de primer orden) implementadas en PyTorch/CUDA para síntesis de vistas noveles (NVS), reconstrucción 3D y representación de imágenes 2D. El repositorio de HuggingFace contiene los checkpoints del paper, no pesos de un transformer.
+Hexels (nombre completo del método: Honeycomb-Surfels) es un modelo de representación de escenas 3D y reconstrucción de superficies desarrollado por el CCVL (Computational Cognition, Vision and Learning) de la Johns Hopkins University, por Prakhar Kaushik, Soumava Paul y Alan Yuille. No es un modelo de lenguaje: se trata de un conjunto de primitivas geométricas personalizadas (elementos de superficie hexagonales planos con un campo de color espacial de primer orden) implementadas en PyTorch/CUDA para síntesis de vistas noveles (NVS), reconstrucción 3D y representación de imágenes 2D. El repositorio de Hugging Face contiene los checkpoints del paper, no pesos de un transformer.
 
 La motivación del trabajo es reducir los requisitos de memoria y cómputo de los radiance fields y de las técnicas de splatting (como 2DGS o 3DGS), que limitan su uso en entornos con recursos restringidos. Hexels explota regiones localmente planas con apariencia que varía suavemente mediante primitivas más grandes y menos numerosas, cuyo soporte hexagonal ofrece un dominio eficiente en área y frontera. Sobre 34 escenas, los autores reportan mejoras de PSNR de 4,53 a 7,38 dB frente a 2DGS con el mismo presupuesto de memoria, consumiendo menos VRAM de entrenamiento.
 
@@ -74,7 +74,7 @@ Los datos proceden del abstract de la model card. No se han publicado en la info
 
 | Modelo | Tipo de primitiva | Memoria | Calidad reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hexels | Hexágonos planos con campo de color de primer orden | Menor que 2DGS a igual calidad | +4,53 a +7,38 dB PSNR sobre 2DGS; F1 34,38% en T&T | hexels-checkpoint-dataset-terms | Checkpoints en HuggingFace (jhu-ccvl/Hexels) |
+| Hexels | Hexágonos planos con campo de color de primer orden | Menor que 2DGS a igual calidad | +4,53 a +7,38 dB PSNR sobre 2DGS; F1 34,38% en T&T | hexels-checkpoint-dataset-terms | Checkpoints en Hugging Face (jhu-ccvl/Hexels) |
 | 2DGS | Surfels gaussianos 2D | Referencia de comparación | Base de comparación del paper | no disponible en esta ficha | no disponible en esta ficha |
 | 3DGS | Gaussianas 3D | Mayor demanda de memoria según el paper | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha |
 | Image-GS | Primitivas para imágenes 2D | no disponible | Superado por Hexels en representación 2D | no disponible en esta ficha | no disponible en esta ficha |
@@ -84,7 +84,7 @@ Los datos de 2DGS, 3DGS e Image-GS se limitan a las referencias que aparecen en 
 ## Limitaciones y advertencias
 
 - No es un modelo de lenguaje ni un transformer: no puede usarse para generación de texto, tool calling ni tareas de NLP.
-- Requiere GPU NVIDIA y el código del repositorio GitHub con submódulos; no funciona como pipeline de HuggingFace (`pipeline: no disponible`).
+- Requiere GPU NVIDIA y el código del repositorio GitHub con submódulos; no funciona como pipeline de Hugging Face (`pipeline: no disponible`).
 - Las rutas de dataset del ejemplo son relativas a `data/` y deben preservar marcos de cámara y escalas de imagen; modificarlas incorrectamente invalida la evaluación.
 - El job de evaluación exige que nombres, tamaños y píxeles de imagen coincidan exactamente con el contrato de cámara; solo las matrices se toleran dentro del redondeo float32.
 - Los checkpoints `.hexcodec` comprimidos tienen métricas separadas y no sustituyen al checkpoint FP32 para los resultados de la tabla del paper.
@@ -96,7 +96,7 @@ Los datos de 2DGS, 3DGS e Image-GS se limitan a las referencias que aparecen en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jhu-ccvl/Hexels
+- Hugging Face: https://huggingface.co/jhu-ccvl/Hexels
 - Catálogo de modelos: https://huggingface.co/jhu-ccvl/Hexels/blob/main/catalog.json
 - Project page: https://honeycomb-surfels.github.io/
 - Paper (PDF): https://honeycomb-surfels.github.io/h1.pdf

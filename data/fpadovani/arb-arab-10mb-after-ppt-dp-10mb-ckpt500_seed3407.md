@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fpadovani/arb-arab-10mb-after-ppt-Dp-10mb-ckpt500_seed3407` es un modelo de generacion de texto de tipo decoder-only basado en la arquitectura GPT-2, con 39.087.104 parametros (unos 39 M) y pesos en formato safetensors. Lo publica el usuario de HuggingFace `fpadovani` y se trata de un ajuste fino (SFT) del modelo `fpadovani/arb-arab-10mb-ppt-Dp-10mb_seed3407`, realizado con la libreria TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0.
+`fpadovani/arb-arab-10mb-after-ppt-Dp-10mb-ckpt500_seed3407` es un modelo de generacion de texto de tipo decoder-only basado en la arquitectura GPT-2, con 39.087.104 parametros (unos 39 M) y pesos en formato safetensors. Lo publica el usuario de Hugging Face `fpadovani` y se trata de un ajuste fino (SFT) del modelo `fpadovani/arb-arab-10mb-ppt-Dp-10mb_seed3407`, realizado con la libreria TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0.
 
 Por el nombre y las etiquetas del repositorio, todo apunta a un artefacto de investigacion sobre tokenizacion y ajuste supervisado en arabe: el identificador incluye `arb-arab` (codigo ISO del arabe estandar) y `10mb`, y la model card enlaza a un proyecto de Weights & Biases llamado `new_tokenizers`. El sufijo `ckpt500` indica que corresponde al punto de control 500 del entrenamiento y `seed3407` fija la semilla. No es, por tanto, un modelo de proposito general orientado a produccion, sino una pieza experimental dentro de una linea de trabajo academico.
 
@@ -27,7 +27,7 @@ Su relevancia es limitada fuera de ese contexto: el repositorio no declara licen
 | Tamano del repositorio | 0,9 GB |
 | Versiones de framework | TRL 0.23.0, Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4, Tokenizers 0.22.1 |
 | Descargas / likes | 0 / 0 |
-| Fechas del repositorio | creado el 2026-09-16, actualizado el 2026-09-16 (segun metadatos de HuggingFace) |
+| Fechas del repositorio | creado el 2026-09-16, actualizado el 2026-09-16 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `fpadovani/arb-arab-10mb-after-ppt-Dp-10mb-ckpt500_seed3407` | 39,09 M | no disponible | no disponible | HuggingFace, safetensors |
-| `distilgpt2` | 82 M | 1024 tokens | MIT | HuggingFace, safetensors y multiples cuantizaciones |
-| `gpt2` (small) | 124 M | 1024 tokens | MIT modificada de OpenAI | HuggingFace, safetensors y multiples cuantizaciones |
-| `aubmindlab/aragpt2-base` (alternativa en arabe) | ~135 M | ~1024 tokens | no verificada en esta ficha | HuggingFace |
+| `fpadovani/arb-arab-10mb-after-ppt-Dp-10mb-ckpt500_seed3407` | 39,09 M | no disponible | no disponible | Hugging Face, safetensors |
+| `distilgpt2` | 82 M | 1024 tokens | MIT | Hugging Face, safetensors y multiples cuantizaciones |
+| `gpt2` (small) | 124 M | 1024 tokens | MIT modificada de OpenAI | Hugging Face, safetensors y multiples cuantizaciones |
+| `aubmindlab/aragpt2-base` (alternativa en arabe) | ~135 M | ~1024 tokens | no verificada en esta ficha | Hugging Face |
 
 La tabla se limita a parametros, contexto, licencia y disponibilidad; no se incluyen comparaciones de rendimiento porque el modelo analizado no publica ninguna metrica. En terminos de tamano, este modelo es aproximadamente la mitad de `distilgpt2` y un tercio de `gpt2` small. Frente a alternativas como AraGPT2, carece de evaluacion publicada y de licencia declarada, por lo que la comparacion cualitativa no es posible con los datos disponibles.
 
@@ -95,7 +95,7 @@ La tabla se limita a parametros, contexto, licencia y disponibilidad; no se incl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-10mb-after-ppt-Dp-10mb-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-10mb-after-ppt-Dp-10mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/fpadovani/arb-arab-10mb-ppt-Dp-10mb_seed3407
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Registro del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/u5g6ngy7

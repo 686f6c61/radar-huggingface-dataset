@@ -75,8 +75,8 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 | Modelo | Parametros | Contexto | Tamano | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| orcarouter/Qwen3.8-27B-Uncensored (BF16) | 27.5B | 262K | ~54 GB | 100% (referencia) | Apache 2.0 | HuggingFace, Ollama |
-| Solstice-AI/Qwen3.8-27B-Uncensored-mlx-6Bit | 26.9B (safetensors) | 262K | ~21.8 GB | 99.2% del BF16 | Apache 2.0 | HuggingFace (MLX) |
+| orcarouter/Qwen3.8-27B-Uncensored (BF16) | 27.5B | 262K | ~54 GB | 100% (referencia) | Apache 2.0 | Hugging Face, Ollama |
+| Solstice-AI/Qwen3.8-27B-Uncensored-mlx-6Bit | 26.9B (safetensors) | 262K | ~21.8 GB | 99.2% del BF16 | Apache 2.0 | Hugging Face (MLX) |
 
 Existen otras cuantizaciones del mismo modelo base disponibles en Ollama, desde 2-bit hasta 8-bit, pero no se han comparado en esta ficha.
 
@@ -92,7 +92,7 @@ Existen otras cuantizaciones del mismo modelo base disponibles en Ollama, desde 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Solstice-AI/Qwen3.8-27B-Uncensored-mlx-6Bit
+- Hugging Face: https://huggingface.co/Solstice-AI/Qwen3.8-27B-Uncensored-mlx-6Bit
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Anvil Engine: https://github.com/Solstice-Labs/anvil
 - Página de Ollama del modelo base: https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored

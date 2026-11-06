@@ -112,7 +112,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/Mapika/decider-2b-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/Mapika/decider-2b-GGUF
 - Modelo base decider-2b (arquitectura, entrenamiento, limitaciones): https://huggingface.co/Mapika/decider-2b
 - Modelo hermano decider-4b-GGUF, usado como referencia de calidad: https://huggingface.co/Mapika/decider-4b-GGUF
 - Modelo base original de la familia: https://huggingface.co/Qwen/Qwen3.5-2B-Base

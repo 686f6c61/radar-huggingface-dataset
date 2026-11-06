@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| EfficientSAM 10M (este) | ~10M | no aplica | Apache-2.0 | ONNX | HuggingFace (espejo) |
+| EfficientSAM 10M (este) | ~10M | no aplica | Apache-2.0 | ONNX | Hugging Face (espejo) |
 | SAM (ViT-H) | ~636M | no aplica | Apache-2.0 | PyTorch | Meta |
 | SAM 2 | no disponible | no aplica | Apache-2.0 | PyTorch | Meta |
 | MobileSAM | ~10M | no aplica | Apache-2.0 | PyTorch | GitHub |
@@ -80,7 +80,7 @@ La comparación con SAM y MobileSAM se basa en conocimiento general de la famili
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/r69shabh/efficientsam-10m-onnx-web
+- Hugging Face: https://huggingface.co/r69shabh/efficientsam-10m-onnx-web
 - Repositorio `osam`: https://github.com/wkentaro/osam
 - Repositorio `labelmeai/efficient-sam`: https://github.com/labelmeai/efficient-sam
 - Release de modelos ONNX: https://github.com/labelmeai/efficient-sam/releases/tag/onnx-models-20231225

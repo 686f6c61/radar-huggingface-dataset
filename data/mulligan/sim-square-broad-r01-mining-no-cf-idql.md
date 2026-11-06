@@ -17,7 +17,7 @@ El modelo está pensado para evaluación comparativa en robótica (Policy Arena)
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no aplica (politica basada en estado; no hay ventana de contexto textual) |
 | Tipos de cuantizacion | no disponible (se distribuyen checkpoints PyTorch en coma flotante; no se documentan variantes cuantizadas) |
-| Idiomas soportados | no aplica (modelo de control roboticos; los idiomas figuran como no disponibles en HuggingFace) |
+| Idiomas soportados | no aplica (modelo de control roboticos; los idiomas figuran como no disponibles en Hugging Face) |
 | Licencia | apache-2.0 |
 | Formato de pesos | PyTorch pickle (`.pt`) mas ficheros `stats.json` de normalizacion |
 | Tarea | sim-square-broad |
@@ -72,7 +72,7 @@ La comparación se plantea a nivel de método y familia, ya que no se dispone de
 
 | Alternativa | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mulligan/sim-square-broad-r01-mining-no-cf-idql` | IDQL (actor de difusion + critico IQL) | no disponible | no aplica | Apache 2.0 | HuggingFace, 5 semillas |
+| `mulligan/sim-square-broad-r01-mining-no-cf-idql` | IDQL (actor de difusion + critico IQL) | no disponible | no aplica | Apache 2.0 | Hugging Face, 5 semillas |
 | IDQL (Hansen-Estruch et al.) | IDQL de referencia | no disponible | no aplica | segun publicacion original | Codigo y pesos de referencia del paper |
 | Diffusion Policy (Chi et al.) | Actor de difusion para imitacion | no disponible | no aplica | segun publicacion original | Codigo y checkpoints publicos |
 | IQL (Kostrikov et al.) | Critico IQL con actor MLP | no disponible | no aplica | segun publicacion original | Codigo de referencia |
@@ -93,10 +93,10 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r01-mining-no-cf-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r01-mining-no-cf-idql
 - Sitio del proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organización Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organización Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Dataset de teleoperación: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-sobol
 - Dataset DAgger con minería de intervenciones: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-dagger-mining-no-cf
 - Dataset de rollouts de política: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-sobol-policy-rollouts

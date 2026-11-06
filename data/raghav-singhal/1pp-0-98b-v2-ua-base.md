@@ -38,7 +38,7 @@ El preentrenamiento se realizó sobre las conversaciones del corpus 1PP reescrit
 
 ## Casos de uso
 
-- Reproducibilidad de experimentos de preentrenamiento: el modelo permite recalcular las pérdidas de validación publicadas (1,5322 en val50m segmentos [3] y 3,2472 en raw_val50m segmentos [8]) y verificar la equivalencia entre el checkpoint HuggingFace y el de Megatron, con diferencias absolutas de 0,0013 y 0,0016 respectivamente.
+- Reproducibilidad de experimentos de preentrenamiento: el modelo permite recalcular las pérdidas de validación publicadas (1,5322 en val50m segmentos [3] y 3,2472 en raw_val50m segmentos [8]) y verificar la equivalencia entre el checkpoint Hugging Face y el de Megatron, con diferencias absolutas de 0,0013 y 0,0016 respectivamente.
 - Estudio de ablación de condiciones de datos: al compartir flujo de datos y pasos con los otros peldaños de la escalera (0,58B, 1,66B y 2,81B) y con las otras dos condiciones, sirve para aislar el efecto de la reescritura conversacional y de la máscara de pérdida sobre las métricas de validación.
 - Análisis de semillas: junto con las variantes de semilla 42 y 1234, permite medir la varianza de inicialización manteniendo idéntico el orden de batches.
 - Investigación sobre formato conversacional: al haber sido entrenado con ChatML sin turno de sistema, es útil para estudiar cómo el modelo aprende la estructura de diálogo sin instrucciones explícitas de sistema.
@@ -83,7 +83,7 @@ La comparación más directa es interna al proyecto 1PP, ya que los cuatro tama�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-ua-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-ua-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Registros de entrenamiento (wandb, preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training
 - Registros de entrenamiento (wandb, SFT): https://wandb.ai/raghav_singhal/1pp-sft

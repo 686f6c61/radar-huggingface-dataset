@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepository es un repositorio publicado en HuggingFace por el usuario ASD12EDSZCXZ bajo licencia MIT. Segun los metadatos de la plataforma, se trata de un modelo asociado a la libreria transformers, con PyTorch como framework, etiquetado con la arquitectura BERT y la tarea de feature-extraction. El repositorio fue creado y actualizado el 14 de septiembre de 2026 y, en el momento de la consulta, acumula 0 descargas y 0 "likes".
+MyAwesomeModel-TestRepository es un repositorio publicado en Hugging Face por el usuario ASD12EDSZCXZ bajo licencia MIT. Segun los metadatos de la plataforma, se trata de un modelo asociado a la libreria transformers, con PyTorch como framework, etiquetado con la arquitectura BERT y la tarea de feature-extraction. El repositorio fue creado y actualizado el 14 de septiembre de 2026 y, en el momento de la consulta, acumula 0 descargas y 0 "likes".
 
 El elemento mas relevante de esta ficha es precisamente lo que falta: el tamano del repositorio es de 0,0 GB, lo que indica que no contiene pesos publicados ni ficheros de modelo descargables. La model card incluida es una plantilla generica que describe un hipotetico modelo conversacional de razonamiento (con referencias a AIME 2025, function calling y una tabla de benchmarks con columnas genericas "Model1", "Model2"), pero esa descripcion no concuerda con las etiquetas tecnicas del repositorio (bert, feature-extraction) y no esta respaldada por ningun artefacto verificable. Todo apunta a un repositorio de pruebas o de ejemplo, no a un modelo listo para produccion.
 
@@ -38,7 +38,7 @@ No se dispone de datos sobre el entrenamiento: no se especifica el numero de tok
 
 - No es posible recomendar casos de uso productivos: sin pesos publicados no hay inferencia posible.
 - Uso como plantilla de documentacion: el repositorio puede servir de referencia para estructurar una model card propia (secciones de introduccion, evaluacion, instrucciones de ejecucion y prompts).
-- Pruebas de integracion de pipeline: dado que la etiqueta incluye `endpoints_compatible`, podria emplearse para verificar el flujo de despliegue en HuggingFace Inference Endpoints con un modelo de prueba, siempre que se sustituya por pesos validos.
+- Pruebas de integracion de pipeline: dado que la etiqueta incluye `endpoints_compatible`, podria emplearse para verificar el flujo de despliegue en Hugging Face Inference Endpoints con un modelo de prueba, siempre que se sustituya por pesos validos.
 - Validacion de plantillas de prompting: los ejemplos de system prompt, temperatura y plantillas de busqueda web de la model card pueden reutilizarse como base en otros proyectos.
 - Docencia o formacion: util como ejemplo de repositorio incompleto para ensenar a distinguir una ficha con datos verificables de una plantilla sin respaldo.
 - No se contempla atencion al cliente, generacion de codigo en produccion, analisis de documentos ni ninguna tarea real, al no existir un modelo ejecutable.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks verificables en la informacion disp
 - No es posible estimar VRAM ni requisitos de GPU: no se conocen el numero de parametros ni el formato de pesos, y el repositorio no contiene artefactos descargables.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no determinable.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no aplicables mientras no existan pesos publicados. La etiqueta `endpoints_compatible` sugiere compatibilidad teorica con HuggingFace Inference Endpoints, pero sin modelo real no puede validarse.
+- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no aplicables mientras no existan pesos publicados. La etiqueta `endpoints_compatible` sugiere compatibilidad teorica con Hugging Face Inference Endpoints, pero sin modelo real no puede validarse.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -92,5 +92,5 @@ Los modelos de la comparativa son referencias conocidas de la categoria encoder;
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASD12EDSZCXZ/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/ASD12EDSZCXZ/MyAwesomeModel-TestRepository
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada. Los resultados de dicha busqueda corresponden a dominios bancarios sin relacion con el modelo y se descartan por no ser relevantes.

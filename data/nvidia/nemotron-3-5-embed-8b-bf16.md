@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16
+- Ficha del modelo en Hugging Face: https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16
 - Blog de NVIDIA sobre la familia Nemotron retriever: https://huggingface.co/blog/nvidia/nemotron-retriever-world-class-agentic-retrieval
 - Modelo base (codificador de visión): https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-BF16
 - Predecesor solo-texto (componente LLM congelado): https://huggingface.co/nvidia/Nemotron-3-Embed-8B-BF16

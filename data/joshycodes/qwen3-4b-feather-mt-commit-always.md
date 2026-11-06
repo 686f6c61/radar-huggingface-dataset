@@ -94,11 +94,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - Licencia. Los pesos se publican bajo apache-2.0, lo que en principio permite uso comercial del artefacto, pero no hay garantia de que los pesos derivados hereden todas las condiciones del modelo base original; conviene verificar la cadena completa Qwen3-4B -> feather-mt -> este checkpoint antes de cualquier uso productivo.
 - Dependencia de formato propietario. Solo se distribuyen safetensors; quien necesite GGUF, AWQ o GPTQ debera convertir y validar por su cuenta la fidelidad del comportamiento tras la cuantizacion.
 - Metadatos anomalos. Las marcas de creacion y actualizacion del repositorio (2026-09-29) son posteriores a la publicacion de la serie Qwen3; conviene tratarlas con cautela al citar el modelo.
-- Sin pipeline declarado. El campo de pipeline de HuggingFace figura como no disponible, por lo que la carga automatica mediante `pipeline()` puede requerir configuracion manual.
+- Sin pipeline declarado. El campo de pipeline de Hugging Face figura como no disponible, por lo que la carga automatica mediante `pipeline()` puede requerir configuracion manual.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-feather-mt-commit-always
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-feather-mt-commit-always
 - Modelo base (mid-train): https://huggingface.co/joshycodes/qwen3-4b-feather-mt
 - Brazo hermano: https://huggingface.co/joshycodes/qwen3-4b-feather-mt-commit-cannot
 - Qwen/Qwen3-4B (modelo original): https://huggingface.co/Qwen/Qwen3-4B

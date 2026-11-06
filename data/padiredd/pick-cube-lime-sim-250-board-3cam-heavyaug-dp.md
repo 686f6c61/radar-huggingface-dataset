@@ -82,7 +82,7 @@ No disponible. La información proporcionada no incluye comparaciones con otras 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/padiredd/pick-cube-lime-sim-250-board-3cam-heavyaug-dp
+- Hugging Face: https://huggingface.co/padiredd/pick-cube-lime-sim-250-board-3cam-heavyaug-dp
 - LeRobot: no disponible en la información proporcionada
 - Isaac Lab / Cyclo Lab: no disponible en la información proporcionada
 - Paper o blog del autor: no disponible en la información proporcionada

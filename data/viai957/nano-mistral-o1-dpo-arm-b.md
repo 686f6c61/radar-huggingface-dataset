@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nano-mistral-o1-dpo-arm-b es un ajuste fino del modelo base mistralai/Mistral-7B-v0.3, publicado por el usuario viai957 en HuggingFace. Se trata de un artefacto de investigación que forma parte de «nano-mistral-o1», una canalización de entrenamiento para razonamiento matemático estructurada en tres etapas (SFT → DPO → GRPO) y ejecutada sobre 4 GPU NVIDIA A10G. Esta variante concreta corresponde al «Arm B» de la etapa DPO, entrenada con pares de preferencia a nivel de paso derivados de PRM800K, y se identifica explícitamente como la ejecución DPOP original, cuyo resultado de referencia es una repetición posterior con dpop+NLL.
+nano-mistral-o1-dpo-arm-b es un ajuste fino del modelo base mistralai/Mistral-7B-v0.3, publicado por el usuario viai957 en Hugging Face. Se trata de un artefacto de investigación que forma parte de «nano-mistral-o1», una canalización de entrenamiento para razonamiento matemático estructurada en tres etapas (SFT → DPO → GRPO) y ejecutada sobre 4 GPU NVIDIA A10G. Esta variante concreta corresponde al «Arm B» de la etapa DPO, entrenada con pares de preferencia a nivel de paso derivados de PRM800K, y se identifica explícitamente como la ejecución DPOP original, cuyo resultado de referencia es una repetición posterior con dpop+NLL.
 
 El modelo conserva la arquitectura y el tamaño del base: un transformer decoder-only denso de 7.248.023.552 parámetros (≈7,25 B), con pesos en bfloat16. No incorpora innovaciones arquitectónicas propias; su interés radica en el proceso de alineamiento aplicado sobre un modelo generalista para especializarlo en matemáticas y razonamiento paso a paso.
 
@@ -31,7 +31,7 @@ El entrenamiento se enmarca en la canalización «nano-mistral-o1», que aplica 
 - Generación de texto autoregresiva en bf16 mediante transformers.
 - Razonamiento matemático y resolución de problemas paso a paso, objetivo declarado del pipeline (tags `math` y `reasoning`).
 - Formato de razonamiento tipo «o1», con cadenas de razonamiento extensas, inducido por el entrenamiento sobre pares a nivel de paso de PRM800K.
-- Compatibilidad con Text Generation Inference (tags `text-generation-inference` y `endpoints_compatible`), lo que permite desplegarlo en infraestructura de Inferencia de HuggingFace.
+- Compatibilidad con Text Generation Inference (tags `text-generation-inference` y `endpoints_compatible`), lo que permite desplegarlo en infraestructura de Inferencia de Hugging Face.
 - Soporte de tool calling / function calling: no disponible (no declarado).
 - Soporte de agentes y razonamiento multi-paso orquestado: no disponible (no declarado).
 - Capacidades multilingües: no disponible; el modelo base está entrenado predominantemente en inglés y el ajuste no declara idiomas adicionales.
@@ -88,7 +88,7 @@ Las cifras de rendimiento comparado no estan disponibles para este modelo. Frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/viai957/nano-mistral-o1-dpo-arm-b
+- Modelo en Hugging Face: https://huggingface.co/viai957/nano-mistral-o1-dpo-arm-b
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Variante de referencia de la misma rama (dpop+NLL): https://huggingface.co/viai957/nano-mistral-o1-dpo-arm-b-response
 - Pre-registro y resultados del proyecto: `docs/RESULTS.md` dentro del repositorio del modelo

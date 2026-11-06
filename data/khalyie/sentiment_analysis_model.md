@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Khalyie/sentiment_analysis_model es un artefacto alojado en HuggingFace por el usuario Khalyie, publicado bajo licencia Apache 2.0 y etiquetado con el formato `joblib`. El nombre sugiere que se trata de un modelo de analisis de sentimiento, pero la model card asociada no contiene informacion tecnica: unicamente el encabezado con la licencia, sin descripcion, sin autor declarado, sin idiomas y sin pipeline definido.
+Khalyie/sentiment_analysis_model es un artefacto alojado en Hugging Face por el usuario Khalyie, publicado bajo licencia Apache 2.0 y etiquetado con el formato `joblib`. El nombre sugiere que se trata de un modelo de analisis de sentimiento, pero la model card asociada no contiene informacion tecnica: unicamente el encabezado con la licencia, sin descripcion, sin autor declarado, sin idiomas y sin pipeline definido.
 
 El repositorio ocupa aproximadamente 0.1 GB y su unico metadato relevante es el tag `joblib`, lo que apunta a un artefacto serializado con la libreria de persistencia de scikit-learn (u otro framework Python que la utilice), en lugar de un modelo de red neuronal profunda distribuido en safetensors o GGUF. No se especifica arquitectura, numero de parametros, vocabulario, idiomas ni datos de entrenamiento.
 
@@ -21,7 +21,7 @@ En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 likes, y 
 | Licencia | Apache 2.0 |
 | Formato de pesos | `joblib` (serializacion binaria de objetos Python) |
 | Tamano del repositorio | 0.1 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de creacion | 2026-09-12 |
 | Ultima actualizacion | 2026-09-12 |
 | Descargas / likes | 0 / 0 |
@@ -72,7 +72,7 @@ No disponible. La ausencia de documentacion sobre arquitectura, tamano, idioma y
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Khalyie/sentiment_analysis_model | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| Khalyie/sentiment_analysis_model | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponibles | no disponibles | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No disponible. La ausencia de documentacion sobre arquitectura, tamano, idioma y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Khalyie/sentiment_analysis_model
+- Hugging Face: https://huggingface.co/Khalyie/sentiment_analysis_model
 - Model card del autor: sin contenido tecnico mas alla del encabezado de licencia
 - Paper, blog, repositorio o demo asociados: no disponibles
 - Enlaces adicionales relevantes encontrados en la busqueda web: no disponibles (los resultados devueltos no guardan relacion con el modelo)

@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Arquitectura | Parametros | Idioma | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (sherpa-onnx-indicconformer-ml-int8) | Conformer CTC, ONNX INT8 | ~120 M | Malayalam | Audio log-mel 80 dim, offline | MIT | HuggingFace, 0 descargas |
+| Este modelo (sherpa-onnx-indicconformer-ml-int8) | Conformer CTC, ONNX INT8 | ~120 M | Malayalam | Audio log-mel 80 dim, offline | MIT | Hugging Face, 0 descargas |
 | Omnilingual 300M CTC INT8 | CTC, ONNX INT8 | 300 M | Multilingüe | Audio log-mel, offline | No disponible en la información | Referenciado como baseline por el autor |
-| Base `ai4bharat/indicconformer_stt_ml_hybrid_ctc_rnnt_large` | Conformer híbrido CTC+RNNT | "large" (el autor de la conversión indica ~120 M) | Malayalam y otras 21 lenguas índicas | Audio log-mel, requiere NeMo/PyTorch | MIT | HuggingFace (AI4Bharat) |
-| `parismitaglobalsolutions/indicconformer-sherpa-onnx` | Conversión equivalente para sherpa-onnx, varios idiomas | No disponible | Hindi y otros | Audio log-mel, offline | No disponible en la información | HuggingFace |
+| Base `ai4bharat/indicconformer_stt_ml_hybrid_ctc_rnnt_large` | Conformer híbrido CTC+RNNT | "large" (el autor de la conversión indica ~120 M) | Malayalam y otras 21 lenguas índicas | Audio log-mel, requiere NeMo/PyTorch | MIT | Hugging Face (AI4Bharat) |
+| `parismitaglobalsolutions/indicconformer-sherpa-onnx` | Conversión equivalente para sherpa-onnx, varios idiomas | No disponible | Hindi y otros | Audio log-mel, offline | No disponible en la información | Hugging Face |
 
 El modelo base híbrido, al conservar la cabeza RNNT y un segundo paso de decodificación, tiende a ofrecer mejor exactitud que esta exportación CTC-only, a costa de un tamaño mayor y de un stack de inferencia más pesado. La comparación cuantitativa entre ambos no está disponible en la información proporcionada.
 
@@ -99,7 +99,7 @@ El modelo base híbrido, al conservar la cabeza RNNT y un segundo paso de decodi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/csndhanasekar/sherpa-onnx-indicconformer-ml-int8
+- Modelo en Hugging Face: https://huggingface.co/csndhanasekar/sherpa-onnx-indicconformer-ml-int8
 - Modelo base (AI4Bharat IndicConformer Malayalam, CTC+RNNT híbrido): https://huggingface.co/ai4bharat/indicconformer_stt_ml_hybrid_ctc_rnnt_large
 - Repositorio sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx
 - Documentación de sherpa-onnx: https://k2-fsa.github.io/sherpa/onnx/index.html

@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Haku-2004/act_subtask_k4_2_4seg` | 51,7 M | No disponible | Manipulación "taskbox" en `so_follower` | Apache 2.0 | HuggingFace (0 descargas) |
+| `Haku-2004/act_subtask_k4_2_4seg` | 51,7 M | No disponible | Manipulación "taskbox" en `so_follower` | Apache 2.0 | Hugging Face (0 descargas) |
 | ACT (método original, paper 2304.13705) | No disponible | No disponible | Aprendizaje por imitación general | No disponible | Paper + código de referencia |
-| Otras políticas LeRobot (p. ej. Diffusion Policy, SmolVLA) | No disponible en esta ficha | No disponible | Manipulación robótica | No disponible | HuggingFace / LeRobot |
+| Otras políticas LeRobot (p. ej. Diffusion Policy, SmolVLA) | No disponible en esta ficha | No disponible | Manipulación robótica | No disponible | Hugging Face / LeRobot |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Haku-2004/act_subtask_k4_2_4seg
+- Modelo en Hugging Face: https://huggingface.co/Haku-2004/act_subtask_k4_2_4seg
 - Dataset de entrenamiento: https://huggingface.co/datasets/Haku-2004/k4_2_4seg
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Haku-2004/k4_2_4seg
 - Paper ACT: https://huggingface.co/papers/2304.13705

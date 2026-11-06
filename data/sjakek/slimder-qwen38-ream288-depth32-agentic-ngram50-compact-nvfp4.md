@@ -71,5 +71,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sjakek/slimder-qwen38-ream288-depth32-agentic-ngram50-compact-nvfp4
+- Modelo en Hugging Face: https://huggingface.co/sjakek/slimder-qwen38-ream288-depth32-agentic-ngram50-compact-nvfp4
 - Modelo base: https://huggingface.co/sjakek/slimder-qwen38-ream288-depth32-agentic-ngram50-compact

@@ -121,13 +121,13 @@ No se dispone de comparaciones con modelos de vision de otros fabricantes en la 
 - Rendimiento nulo en varios entornos held out: Freeway 0, FrozenLake 0 y los grid worlds mas duros 0 (aunque sus profesores scripted tambien puntuan 0, lo que sugiere que la tarea puede ser inviable, no solo un fallo del modelo).
 - La release actual intercambia rendimiento: mejora Breakout y corrige la abstención, pero empeora Pong (3 frente a 8 en la version anterior) y Freeway.
 - Riesgo de alucinacion: no aplica en la forma habitual, porque no genera texto, pero si puede asignar alta probabilidad a una opcion incorrecta cuando la imagen o la pregunta quedan fuera de la distribucion de entrenamiento.
-- En la informacion disponible, el ID de HuggingFace es `vdaular/decider-2b-vision`, mientras que la model card enlaza a los repositorios de la organizacion `Mapika`. Conviene verificar la procedencia y la autoria antes de un uso en produccion.
+- En la informacion disponible, el ID de Hugging Face es `vdaular/decider-2b-vision`, mientras que la model card enlaza a los repositorios de la organizacion `Mapika`. Conviene verificar la procedencia y la autoria antes de un uso en produccion.
 - Repositorio sin descargas ni likes en la fecha de la ficha, lo que reduce la validacion externa disponible.
 - Licencia Apache 2.0: permite uso comercial, pero obliga a conservar los avisos de licencia y a tener en cuenta los terminos del modelo base Qwen/Qwen3.5-2B-Base.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vdaular/decider-2b-vision
+- Modelo en Hugging Face: https://huggingface.co/vdaular/decider-2b-vision
 - Variante de vision en la familia Mapika: https://huggingface.co/Mapika/decider-2b-vision
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - decider-2b: https://huggingface.co/Mapika/decider-2b

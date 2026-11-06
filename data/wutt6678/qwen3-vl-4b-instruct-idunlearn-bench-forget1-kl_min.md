@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wutt6678/Qwen3-VL-4B-Instruct-IDUnlearn-Bench-forget1-KL_Min | Adaptador LoRA sobre Qwen3-VL-4B | Adaptador no cuantificado; base ~4B | No disponible | No disponible | Pública en HuggingFace, 0 descargas |
+| wutt6678/Qwen3-VL-4B-Instruct-IDUnlearn-Bench-forget1-KL_Min | Adaptador LoRA sobre Qwen3-VL-4B | Adaptador no cuantificado; base ~4B | No disponible | No disponible | Pública en Hugging Face, 0 descargas |
 | outputs_3/mllmu_vanilla_qwen3-vl-4b (checkpoint base) | Ajuste del modelo Qwen3-VL-4B | ~4B | No disponible | No disponible | No localizado en la búsqueda |
-| Qwen/Qwen3-VL-4B-Instruct | Modelo multimodal instruido | ~4B | Contexto extendido (cifra no disponible) | No declarada en la información consultada | Pública en HuggingFace |
-| Familia Qwen3-VL (otras variantes) | Densa y MoE | No disponible | No disponible | No disponible | Pública en HuggingFace y GitHub |
+| Qwen/Qwen3-VL-4B-Instruct | Modelo multimodal instruido | ~4B | Contexto extendido (cifra no disponible) | No declarada en la información consultada | Pública en Hugging Face |
+| Familia Qwen3-VL (otras variantes) | Densa y MoE | No disponible | No disponible | No disponible | Pública en Hugging Face y GitHub |
 
 No se han identificado en la información disponible otros adaptadores de desaprendizaje comparables sobre la misma base, por lo que la comparación directa de rendimiento entre métodos de unlearning queda como no disponible.
 

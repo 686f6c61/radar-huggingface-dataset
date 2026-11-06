@@ -68,7 +68,7 @@ La versión de 5 bits ofrece menor huella de memoria que la de 8 bits, a costa d
 ## Limitaciones y advertencias
 
 - La cuantización de 5 bits puede degradar ligeramente la calidad de las respuestas en tareas de razonamiento complejo o generación de código, en comparación con el modelo original.
-- La licencia no está especificada en la ficha de HuggingFace; se debe verificar la licencia del modelo base `nightmedia/Qwen3.8-27B-Brainwaves-WFH` y la de Qwen3.8-27B antes de un uso comercial.
+- La licencia no está especificada en la ficha de Hugging Face; se debe verificar la licencia del modelo base `nightmedia/Qwen3.8-27B-Brainwaves-WFH` y la de Qwen3.8-27B antes de un uso comercial.
 - La discrepancia entre el nombre (27B) y los parámetros reportados en safetensors (5.7B) sugiere que la cuantización podría haber alterado la estructura de los tensores; se recomienda validar el comportamiento del modelo en tareas de prueba.
 - No se dispone de información sobre sesgos o alucinaciones específicas de este fine-tune; el modelo base puede presentar los sesgos típicos de los LLM entrenados con datos web.
 - El formato MLX limita su uso a entornos Apple; para otros entornos se requiere conversión de pesos.
@@ -76,7 +76,7 @@ La versión de 5 bits ofrece menor huella de memoria que la de 8 bits, a costa d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zviratko/Qwen3.8-27B-Brainwaves-WFH-oQ5e-mtp
+- Modelo en Hugging Face: https://huggingface.co/zviratko/Qwen3.8-27B-Brainwaves-WFH-oQ5e-mtp
 - Versión 8-bit del mismo autor: https://huggingface.co/zviratko/Qwen3.8-27B-Brainwaves-oQ8e-mtp
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Ficha en vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

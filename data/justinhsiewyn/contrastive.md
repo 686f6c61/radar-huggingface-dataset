@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JUSTINHSIEwyn/contrastive es un prototipo de investigación publicado en HuggingFace por el usuario JUSTINHSIEwyn, orientado a experimentación con aprendizaje contrastivo. Se presenta explícitamente como un artefacto de investigación con arquitectura **Cnn Transformer** (híbrido de convolución y transformer) y un checkpoint de inicialización que **no ha sido entrenado** ni auditado. El repositorio contiene el código de definición del modelo, la configuración de arquitectura y los argumentos de entrenamiento por defecto, pero no reclama ninguna métrica de benchmark.
+JUSTINHSIEwyn/contrastive es un prototipo de investigación publicado en Hugging Face por el usuario JUSTINHSIEwyn, orientado a experimentación con aprendizaje contrastivo. Se presenta explícitamente como un artefacto de investigación con arquitectura **Cnn Transformer** (híbrido de convolución y transformer) y un checkpoint de inicialización que **no ha sido entrenado** ni auditado. El repositorio contiene el código de definición del modelo, la configuración de arquitectura y los argumentos de entrenamiento por defecto, pero no reclama ninguna métrica de benchmark.
 
 El modelo es extremadamente pequeño: 33.088 parámetros totales según los pesos en formato safetensors, lo que lo sitúa en la categoría de modelo de juguete (toy model) apto únicamente para pruebas de humo, validación de pipelines o experimentos controlados con arquitecturas alternativas. No es un modelo de lenguaje generativo ni un modelo multimodal; la ausencia de pipeline declarado y de idiomas soportados refuerza su carácter de prototipo técnico antes que de herramienta de producción.
 
@@ -78,6 +78,6 @@ No disponible. No se conocen modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JUSTINHSIEwyn/contrastive
-- Repositorio de archivos incluidos: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la página de HuggingFace).
+- Hugging Face: https://huggingface.co/JUSTINHSIEwyn/contrastive
+- Repositorio de archivos incluidos: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la página de Hugging Face).
 - Papers, blogs, repositorios adicionales o demos: no disponibles en la información proporcionada.

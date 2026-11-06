@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`yukimiya0101/sana-sprint-0.6b` es un repositorio alojado en HuggingFace por el usuario `yukimiya0101`, publicado el 11 de septiembre de 2026 (fecha que figura en los metadatos del repositorio) y con licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 "likes", y no declara un pipeline de inferencia asociado.
+`yukimiya0101/sana-sprint-0.6b` es un repositorio alojado en Hugging Face por el usuario `yukimiya0101`, publicado el 11 de septiembre de 2026 (fecha que figura en los metadatos del repositorio) y con licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 "likes", y no declara un pipeline de inferencia asociado.
 
-La informacion publica disponible es practicamente inexistente desde el punto de vista tecnico. El contenido etiquetado como model card no es una ficha de modelo: es la cabecera YAML de un HuggingFace Space (`sdk: gradio`, `sdk_version: 5.44.1`, `app_file: app.py`, `emoji`, `colorFrom`, `colorTo`). Esto indica que el repositorio esta configurado como una aplicacion Gradio con un fichero `app.py`, pero no aporta datos sobre arquitectura, datos de entrenamiento, tokenizador ni pesos.
+La informacion publica disponible es practicamente inexistente desde el punto de vista tecnico. El contenido etiquetado como model card no es una ficha de modelo: es la cabecera YAML de un Hugging Face Space (`sdk: gradio`, `sdk_version: 5.44.1`, `app_file: app.py`, `emoji`, `colorFrom`, `colorTo`). Esto indica que el repositorio esta configurado como una aplicacion Gradio con un fichero `app.py`, pero no aporta datos sobre arquitectura, datos de entrenamiento, tokenizador ni pesos.
 
 El identificador sugiere un modelo de aproximadamente 0,6 mil millones de parametros y una posible relacion con la familia Sana / Sana Sprint de generacion de imagenes, pero esta vinculacion **no esta confirmada** por ninguna fuente de las consultadas. La busqueda web realizada no devolvio ningun resultado pertinente: todos los enlaces recuperados son paginas de Baidu sobre temas completamente ajenos (atajos de teclado, geografia, buscadores, Windows 10, fastboot). En consecuencia, la mayor parte de esta ficha se limita a consignar la ausencia de datos verificables y a delimitar que habria que comprobar antes de reutilizar el modelo.
 
@@ -50,7 +50,7 @@ No es posible definir casos de uso concretos y verificables sin conocer la modal
 - Fine-tuning de bajo coste sobre dominio propio (si fuese un modelo de ~0,6B): el tamano permitiria ajuste completo o LoRA en una unica GPU consumer, util para experimentacion academica.
 - Inferencia en el borde o en CPU (si fuese un modelo pequeno de texto): integrable en servicios con presupuesto de memoria minimo.
 - Evaluacion comparativa de arquitecturas pequenas: el modelo podria servir como linea base en estudios de eficiencia, siempre que se publique su configuracion.
-- Demo interactiva en HuggingFace Spaces: el repositorio ya esta preparado como Space con `app.py`, por lo que su uso mas inmediato seria el de demo publica.
+- Demo interactiva en Hugging Face Spaces: el repositorio ya esta preparado como Space con `app.py`, por lo que su uso mas inmediato seria el de demo publica.
 - Reproduccion de resultados: solo viable si el autor publica pesos, configuracion y datos de evaluacion, que actualmente no constan.
 
 ## Benchmarks y rendimiento
@@ -96,7 +96,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yukimiya0101/sana-sprint-0.6b
+- Repositorio en Hugging Face: https://huggingface.co/yukimiya0101/sana-sprint-0.6b
 
 Resultados de la busqueda web: ninguno es pertinente para este modelo. Los enlaces recuperados corresponden a paginas de Baidu sin relacion con el repositorio y se listan solo a efectos de trazabilidad:
 

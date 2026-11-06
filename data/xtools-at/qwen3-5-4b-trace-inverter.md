@@ -97,10 +97,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Entrada con burbujas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `xtools-at/Qwen3.5-4B-Trace-Inverter` | 4B | No disponible | Sí (obligatorias) | Apache 2.0 | HuggingFace; 0 descargas |
-| `Jackrong/Trace-Inverter-4B` | 4B (según nombre) | No disponible | Sí (referencia *bubble-conditioned*) | No disponible en la información | HuggingFace |
-| `amkkk/Trace-Inverter-4B-NoBubble` | 4B (según nombre) | No disponible | No (burbujas eliminadas del prompt) | No disponible en la información | HuggingFace |
-| `xtools-at/Qwen3.5-4B-MultiDistill-3xMerge-UNCENSORED-heretic` (modelo base) | 4B | No disponible | No aplica | No disponible en la información | HuggingFace |
+| `xtools-at/Qwen3.5-4B-Trace-Inverter` | 4B | No disponible | Sí (obligatorias) | Apache 2.0 | Hugging Face; 0 descargas |
+| `Jackrong/Trace-Inverter-4B` | 4B (según nombre) | No disponible | Sí (referencia *bubble-conditioned*) | No disponible en la información | Hugging Face |
+| `amkkk/Trace-Inverter-4B-NoBubble` | 4B (según nombre) | No disponible | No (burbujas eliminadas del prompt) | No disponible en la información | Hugging Face |
+| `xtools-at/Qwen3.5-4B-MultiDistill-3xMerge-UNCENSORED-heretic` (modelo base) | 4B | No disponible | No aplica | No disponible en la información | Hugging Face |
 
 Los tres modelos de inversión de trazas comparten los mismos datasets upstream y el mismo tamaño nominal; la diferencia declarada es el papel de las burbujas en el prompt. No hay datos públicos de rendimiento comparado entre ellos en la información disponible.
 
@@ -120,7 +120,7 @@ Los tres modelos de inversión de trazas comparten los mismos datasets upstream 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xtools-at/Qwen3.5-4B-Trace-Inverter
+- Modelo en Hugging Face: https://huggingface.co/xtools-at/Qwen3.5-4B-Trace-Inverter
 - Modelo base: https://huggingface.co/xtools-at/Qwen3.5-4B-MultiDistill-3xMerge-UNCENSORED-heretic
 - Dataset de conversión: https://huggingface.co/datasets/xtools-at/trace-inversion-opus-synthetic
 - Dataset de origen (Opus 4.6): https://huggingface.co/datasets/Jackrong/Claude-opus-4.6-TraceInversion-9000x

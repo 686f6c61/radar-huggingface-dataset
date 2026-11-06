@@ -76,9 +76,9 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la tare
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/rubanikov/qwen3-1.7b-socratic-2000
+- Hugging Face del adaptador: https://huggingface.co/rubanikov/qwen3-1.7b-socratic-2000
 - Repositorio GitHub del proyecto: https://github.com/rubanikov/socratic-slm
-- Modelo base Qwen3-1.7B en HuggingFace: https://huggingface.co/Qwen/Qwen3-1.7B
+- Modelo base Qwen3-1.7B en Hugging Face: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Modelo relacionado (variante 1000): https://huggingface.co/rubanikov/qwen3-1.7b-socratic-1000
 - Página de Qwen3-1.7B en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3-1.7B/summary

@@ -73,7 +73,7 @@ Existen otros LoRA del mismo autor y serie (guillekenzo/aros-d9aa5ee8-MidnightAt
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/guillekenzo/aros-54080585-MidnightVesper
+- Repositorio Hugging Face: https://huggingface.co/guillekenzo/aros-54080585-MidnightVesper
 - Modelo base Krea-2-Raw: https://huggingface.co/krea/Krea-2-Raw (referenciado en la model card)
 - Modelo base Krea-2-Turbo: https://huggingface.co/krea/Krea-2-Turbo (referenciado en la model card)
 - Otros LoRA del mismo autor: https://huggingface.co/guillekenzo/aros-d9aa5ee8-MidnightAtlas, https://huggingface.co/guillekenzo/aros-4bb2d3ff-MidnightPhantom, https://huggingface.co/guillekenzo/aros-64f30182-MidnightMuse, https://huggingface.co/guillekenzo/aros-3651bbb4-MidnightDuality

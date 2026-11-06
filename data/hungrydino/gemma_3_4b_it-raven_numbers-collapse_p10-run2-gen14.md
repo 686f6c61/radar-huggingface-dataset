@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un ajuste fino (fine-tune) del modelo `unsloth/gemma-3-4b-it`, publicado por el usuario HungryDino bajo licencia Apache 2.0 y con la etiqueta de idioma `en`. La model card es minima: se limita a indicar que el modelo deriva de Gemma 3 4B Instruct y que fue entrenado con Unsloth y la libreria TRL de HuggingFace. No se documentan datos de entrenamiento, hiperparametros, composicion del dataset ni resultados de evaluacion.
+Este repositorio contiene un ajuste fino (fine-tune) del modelo `unsloth/gemma-3-4b-it`, publicado por el usuario HungryDino bajo licencia Apache 2.0 y con la etiqueta de idioma `en`. La model card es minima: se limita a indicar que el modelo deriva de Gemma 3 4B Instruct y que fue entrenado con Unsloth y la libreria TRL de Hugging Face. No se documentan datos de entrenamiento, hiperparametros, composicion del dataset ni resultados de evaluacion.
 
 El nombre del repositorio (`raven_numbers-collapse_p10-run2-gen14`) sugiere que forma parte de una serie de experimentos iterativos sobre "colapso numerico" en bucles de autoentrenamiento, con variantes de control (`control_numbers-self_collapse`) y generaciones sucesivas (`gen0`, `gen2`, `gen3`, `gen14`) publicadas por el mismo autor. Se trata, por tanto, de un artefacto de investigacion y no de un modelo orientado a produccion.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada y acotada: sirve como material de estudio para quienes
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre el proceso de entrenamiento de este checkpoint: la model card no especifica numero de tokens, composicion del dataset, regimen de entrenamiento (SFT, DPO, RLHF) ni hiperparametros. Lo unico documentado es que se utilizaron Unsloth y la libreria TRL de HuggingFace, lo que apunta a un ajuste fino supervisado (SFT) o a un esquema de optimizacion eficiente en memoria (LoRA/QLoRA), si bien esto ultimo no se confirma de forma explicita.
+No se dispone de informacion sobre el proceso de entrenamiento de este checkpoint: la model card no especifica numero de tokens, composicion del dataset, regimen de entrenamiento (SFT, DPO, RLHF) ni hiperparametros. Lo unico documentado es que se utilizaron Unsloth y la libreria TRL de Hugging Face, lo que apunta a un ajuste fino supervisado (SFT) o a un esquema de optimizacion eficiente en memoria (LoRA/QLoRA), si bien esto ultimo no se confirma de forma explicita.
 
 La arquitectura es la del modelo base Gemma 3 4B Instruct, un transformer decoder-only con atencion de ventana deslizante (ventanas locales de 1024 tokens intercaladas con capas de atencion global en una proporcion 5:1), vocabulario de 262.000 tokens y capacidad multimodal de entrada mediante un codificador de vision SigLIP. No hay evidencia en la informacion proporcionada de que el fine-tune haya alterado estos componentes ni de que haya anadido tecnicas como decodificacion especulativa o atencion lineal.
 
@@ -75,11 +75,11 @@ Datos de la tabla referidos a la documentacion publica de cada modelo base; no h
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen14 | 4B (heredados) | No confirmado (128K en el base) | apache-2.0 declarada | HuggingFace, 0 descargas |
-| unsloth/gemma-3-4b-it (modelo base) | 4B | 128K | Terminos de uso de Gemma | HuggingFace, ampliamente utilizado |
-| Qwen3-4B | 4B | 32K nativo, extensible a 128K con YaRN | Apache 2.0 | HuggingFace, muy extendido |
-| Llama 3.2 3B Instruct | 3B | 128K | Licencia comunitaria de Llama 3.2 | HuggingFace, muy extendido |
-| Phi-4-mini-instruct | 3,8B | 128K | MIT | HuggingFace, ampliamente utilizado |
+| HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen14 | 4B (heredados) | No confirmado (128K en el base) | apache-2.0 declarada | Hugging Face, 0 descargas |
+| unsloth/gemma-3-4b-it (modelo base) | 4B | 128K | Terminos de uso de Gemma | Hugging Face, ampliamente utilizado |
+| Qwen3-4B | 4B | 32K nativo, extensible a 128K con YaRN | Apache 2.0 | Hugging Face, muy extendido |
+| Llama 3.2 3B Instruct | 3B | 128K | Licencia comunitaria de Llama 3.2 | Hugging Face, muy extendido |
+| Phi-4-mini-instruct | 3,8B | 128K | MIT | Hugging Face, ampliamente utilizado |
 
 En rendimiento no procede comparar: no existe ninguna evaluacion publicada de este checkpoint, mientras que los modelos de la tabla cuentan con resultados publicos en sus respectivas model cards.
 
@@ -97,7 +97,7 @@ En rendimiento no procede comparar: no existe ninguna evaluacion publicada de es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen14
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen14
 - Variante anterior de la misma serie (`gen0`): https://huggingface.co/HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen0
 - Variante de control (`control_numbers-self_collapse_p10-gen2`): https://huggingface.co/HungryDino/gemma_3_4b_it-control_numbers-self_collapse_p10-gen2
 - Ficha de directorio de la variante de control: https://essamamdani.com/ai-models/hf-hungrydino-gemma-3-4b-it-control-numbers-self-collapse-p10-gen2

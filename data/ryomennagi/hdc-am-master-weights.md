@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HDC-AM Master Weights es un artefacto de pesos publicado por el usuario ryomennagi en HuggingFace. No se trata de un modelo de lenguaje ni de un transformer: es un overlay de fast-weights generado mediante computacion hiperdimensional (HDC, Hyperdimensional Computing) para tareas de mapeo de direcciones (Address Mapping). El fichero contiene conocimiento empaquetado como hipervectores bipolares estrictos en {-1,+1}^D con D=4096, almacenados en un unico tensor int8.
+HDC-AM Master Weights es un artefacto de pesos publicado por el usuario ryomennagi en Hugging Face. No se trata de un modelo de lenguaje ni de un transformer: es un overlay de fast-weights generado mediante computacion hiperdimensional (HDC, Hyperdimensional Computing) para tareas de mapeo de direcciones (Address Mapping). El fichero contiene conocimiento empaquetado como hipervectores bipolares estrictos en {-1,+1}^D con D=4096, almacenados en un unico tensor int8.
 
 El artefacto se distribuye como `fast_weights_master.safetensors` (465.985.624 bytes, es decir 444,4 MiB) con un unico tensor `slots` de forma [113.766, 4096]. Segun la model card, fue producido por un "master fold" de 444,4 MiB y validado con tres comprobaciones: apertura mmap zero-copy, cumplimiento del invariante TR-1 estricto (+-1) y recuperacion asociativa con acierto top-1. La propuesta de valor es ser agnostico al semiconductor, de modo que la memoria asociativa puede desplegarse sin depender de una GPU o acelerador concreto.
 
@@ -77,5 +77,5 @@ No disponible. La informacion proporcionada no identifica otros overlays de fast
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryomennagi/HDC-AM-Master-Weights
+- Modelo en Hugging Face: https://huggingface.co/ryomennagi/HDC-AM-Master-Weights
 - No se han encontrado enlaces relevantes adicionales (paper, blog, repositorio de codigo o demo) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

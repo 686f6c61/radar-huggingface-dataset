@@ -66,7 +66,7 @@ No se dispone de información suficiente para comparar con alternativas concreta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-FP8-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-FP8-GGUF
 - Repositorio base FP8: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8
 - Otra cuantización del mismo autor: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-GGUF
 - Cuantización de unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

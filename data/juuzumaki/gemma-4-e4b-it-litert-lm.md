@@ -85,7 +85,7 @@ Los datos de parametros totales, parametros activos y rendimiento de los modelos
 
 ## Enlaces
 
-- HuggingFace (esta ficha): https://huggingface.co/Juuzumaki/gemma-4-E4B-it-litert-lm
+- Hugging Face (esta ficha): https://huggingface.co/Juuzumaki/gemma-4-E4B-it-litert-lm
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Version original de litert-community: https://huggingface.co/litert-community/gemma-4-E4B-it-litert-lm
 - Variante E2B del mismo autor: https://huggingface.co/Juuzumaki/gemma-4-E2B-it-litert-lm
@@ -94,6 +94,6 @@ Los datos de parametros totales, parametros activos y rendimiento de los modelos
 - CLI de LiteRT-LM: https://ai.google.dev/edge/litert-lm/cli
 - Google AI Edge Gallery en Android: https://play.google.com/store/apps/details?id=com.google.ai.edge.gallery
 - Google AI Edge Gallery en iOS: https://apps.apple.com/us/app/google-ai-edge-gallery/id6749645337
-- Demo web en HuggingFace Spaces: https://huggingface.co/spaces/tylermullen/Gemma4
+- Demo web en Hugging Face Spaces: https://huggingface.co/spaces/tylermullen/Gemma4
 - Ficha en ModelScope: https://www.modelscope.cn/models/litert-community/gemma-4-E4B-it-litert-lm
 - Analisis en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/gemma-4-e4b-it-litert-lm-litert-community

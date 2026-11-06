@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hpsearch-embed-4b-state-v3 es un modelo de embeddings de texto de 4.021.774.336 parámetros (unos 4B) desarrollado por el usuario de HuggingFace hmzprover. Es el codificador del lado de las consultas (query embedder) de los modos GPU del sistema [hpsearch](https://github.com/humanfia/hpsearch), un asistente de demostración automática para Lean 4. Su tarea específica es la selección de premisas: dado un estado de demostración (proof state) de Lean 4, opcionalmente acompañado de una descripción en inglés del siguiente paso, genera un vector que aterriza cerca de los vectores de las premisas que la siguiente táctica usaría.
+hpsearch-embed-4b-state-v3 es un modelo de embeddings de texto de 4.021.774.336 parámetros (unos 4B) desarrollado por el usuario de Hugging Face hmzprover. Es el codificador del lado de las consultas (query embedder) de los modos GPU del sistema [hpsearch](https://github.com/humanfia/hpsearch), un asistente de demostración automática para Lean 4. Su tarea específica es la selección de premisas: dado un estado de demostración (proof state) de Lean 4, opcionalmente acompañado de una descripción en inglés del siguiente paso, genera un vector que aterriza cerca de los vectores de las premisas que la siguiente táctica usaría.
 
 El modelo se basa en Qwen3 (según los tags del repositorio) y es un fine-tuning LoRA (r=16, ya fusionado) sobre hmzprover/hpsearch-embed-4b-v2, que actúa como modelo base y también codifica los documentos (las premisas). Los documentos conservan los vectores del modelo base; solo el lado de consultas se entrena. La recuperación se realiza con softmax completo sobre todos los vectores de premisas. Está publicado bajo licencia Apache 2.0, con pesos en safetensors y compatibilidad con text-embeddings-inference.
 
@@ -35,7 +35,7 @@ El entrenamiento incluye un proceso de descontaminación riguroso: se elimina un
 - Seleccion de premisas (premise selection): recuperación de las premisas relevantes para el siguiente paso de una demostración.
 - Codificacion de consultas híbridas: acepta un estado de demostración solo o acompañado de una descripción en lenguaje natural (inglés) del siguiente paso previsto.
 - Similitud semántica de frases (pipeline `sentence-similarity`) vía sentence-transformers.
-- Compatibilidad con text-embeddings-inference y despliegue en HuggingFace Endpoints (endpoints_compatible).
+- Compatibilidad con text-embeddings-inference y despliegue en Hugging Face Endpoints (endpoints_compatible).
 - No genera texto: es un modelo de embeddings, no un modelo generativo. No hay soporte declarado de tool calling, visión ni audio.
 
 ## Casos de uso
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: unos 8,1 GB con los pesos publicados en safetensors (aproximadamente bf16/fp16 para 4B de parámetros); no hay cuantizaciones oficiales publicadas.
 - GPU recomendadas: cualquier GPU de consumo con 12-16 GB de VRAM (RTX 4090, RTX 3090) es suficiente para la inferencia de embeddings; no se requieren A100 ni H100.
 - Cabe en GPUs de consumo: sí, con holgura en una RTX 4090 o RTX 3090; incluso en GPUs de 8 GB podría ser ajustado según la longitud de secuencia.
-- Opciones de despliegue: sentence-transformers (librería nativa), text-embeddings-inference (TEI, indicado en los tags), HuggingFace Endpoints (endpoints_compatible). No hay evidencia de soporte directo en llama.cpp, Ollama, vLLM o TGI.
+- Opciones de despliegue: sentence-transformers (librería nativa), text-embeddings-inference (TEI, indicado en los tags), Hugging Face Endpoints (endpoints_compatible). No hay evidencia de soporte directo en llama.cpp, Ollama, vLLM o TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ No hay disponibles datos de rendimiento comparativos publicados para estas alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmzprover/hpsearch-embed-4b-state-v3
+- Modelo en Hugging Face: https://huggingface.co/hmzprover/hpsearch-embed-4b-state-v3
 - Repositorio del proyecto hpsearch: https://github.com/humanfia/hpsearch
 - Modelo base: https://huggingface.co/hmzprover/hpsearch-embed-4b-v2
 - Dataset LeanStateSearch: https://huggingface.co/datasets/ruc-ai4math/mathlib_handler_benchmark_410

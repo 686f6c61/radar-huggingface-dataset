@@ -1,7 +1,7 @@
 # ReadyArt/Dark-Craving-31B-v3.0
 
 ## Resumen
-Dark-Craving-31B-v3.0 es un ajuste fino (fine-tune) del modelo google/gemma-4-31B-it, publicado por el usuario ReadyArt en HuggingFace. Se trata de un modelo de generacion de texto orientado a contenido adulto, roleplay (ERP) y conversacion explicita, con la etiqueta "unaligned" que indica que se ha reducido o eliminado el alineamiento de seguridad del modelo base. El repositorio tiene acceso restringido (gated) y esta marcado como no apto para audiencias generales.
+Dark-Craving-31B-v3.0 es un ajuste fino (fine-tune) del modelo google/gemma-4-31B-it, publicado por el usuario ReadyArt en Hugging Face. Se trata de un modelo de generacion de texto orientado a contenido adulto, roleplay (ERP) y conversacion explicita, con la etiqueta "unaligned" que indica que se ha reducido o eliminado el alineamiento de seguridad del modelo base. El repositorio tiene acceso restringido (gated) y esta marcado como no apto para audiencias generales.
 
 El modelo cuenta con 31.273.088.876 parametros (aproximadamente 31,2 mil millones) en formato safetensors, con un tamano de repositorio de 62,6 GB. Esta etiquetado unicamente para el idioma ingles y su licencia declarada es Apache 2.0, aunque hereda las caracteristicas arquitectonicas del modelo base Gemma 4 de Google. No se dispone de informacion publica sobre el proceso de entrenamiento, los datos utilizados ni resultados de evaluacion.
 
@@ -72,10 +72,10 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 - Riesgo de alucinacion: no evaluado; al ser un fine-tune sin benchmarks, se desconoce su fiabilidad factual.
 - Solo ingles declarado: no se garantiza soporte para castellano ni otros idiomas.
 - Licencia Apache 2.0 declarada, pero al derivar de google/gemma-4-31B-it conviene verificar las condiciones de uso del modelo base de Google antes de un uso comercial.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que limita la distribucion y automatizacion.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que limita la distribucion y automatizacion.
 - Sin descargas ni validacion comunitaria (0 descargas, 0 likes en el momento del registro): no hay evidencia de uso real ni de calidad contrastada.
 - Riesgo legal: el contenido para adultos esta sujeto a regulacion por jurisdiccion; el despliegue exige verificar cumplimiento legal local.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/ReadyArt/Dark-Craving-31B-v3.0
+- Hugging Face: https://huggingface.co/ReadyArt/Dark-Craving-31B-v3.0
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it

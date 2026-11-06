@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sam-guided-vlas/...pi05...steps_60k` (este modelo) | ~4,14 B | no disponible | sin resultados publicados | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| `lerobot/pi05_base` (modelo base) | no disponible | no disponible | no disponible | no disponible en la informacion | HuggingFace |
+| `sam-guided-vlas/...pi05...steps_60k` (este modelo) | ~4,14 B | no disponible | sin resultados publicados | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| `lerobot/pi05_base` (modelo base) | no disponible | no disponible | no disponible | no disponible en la informacion | Hugging Face |
 | Otras políticas VLA de la categoría (p. ej. OpenVLA, RDT) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos comparativos fiables en la información proporcionada, y las búsquedas web realizadas no han devuelto resultados relevantes (los resultados obtenidos corresponden a una serie de televisión y a un fabricante de mobiliario, sin relación con el modelo). Por tanto, la comparativa numérica queda como "no disponible".
@@ -91,7 +91,7 @@ No se dispone de datos comparativos fiables en la información proporcionada, y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_pile__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_60k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_pile__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_60k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_pile__mask__blur__sim__all_cameras__live
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=sam-guided-vlas/train_1_2_pile__mask__blur__sim__all_cameras__live

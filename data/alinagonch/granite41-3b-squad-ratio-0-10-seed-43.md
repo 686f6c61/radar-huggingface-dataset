@@ -70,5 +70,5 @@ No hay información suficiente para establecer una comparativa fiable. Modelos d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.10-seed-43
+- Hugging Face: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.10-seed-43
 - Referencia al paper de SQuAD (citado en la model card): https://arxiv.org/abs/1910.09700 (aunque corresponde a Lacoste et al., no a SQuAD original)

@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Requisitos de hardware
 
-- El adaptador PEFT es pequeño (el repositorio muestra 0.0 GB en HuggingFace), por lo que el requisito principal es el modelo base de 1.2B.
+- El adaptador PEFT es pequeño (el repositorio muestra 0.0 GB en Hugging Face), por lo que el requisito principal es el modelo base de 1.2B.
 - Estimación de VRAM para inferencia: en FP16, el modelo base necesita aproximadamente 2.4 GB de VRAM para los pesos, más overhead de activaciones y KV cache, lo que totaliza entre 4 y 6 GB en la práctica. Con cuantización a 4 bits, los pesos ocupan alrededor de 0.8 GB y el total puede caber en unos 2 GB.
 - GPU recomendadas: RTX 3060 12GB, RTX 4060 8GB, RTX 4090, o Apple Silicon con 16GB o más. Cabe en GPUs de consumo.
 - Despliegue: al ser un adaptador PEFT, se puede cargar con Transformers + PEFT (cargando el modelo base y el adaptador), o fusionar el adaptador con el modelo base y exportar a GGUF para su uso con llama.cpp u Ollama. vLLM y TGI soportan adaptadores PEFT, aunque con ciertas limitaciones.
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| burtenshaw/plan-my-day-v2-lfm2.5-dev-prefix | Adaptador sobre 1.2B | no disponible | Planificación de día sintética (4 opciones) | lfm-open-license-1.0 | HuggingFace |
-| LiquidAI/LFM2.5-1.2B-Instruct | 1.2B | no disponible | Instrucción general | lfm-open-license-1.0 | HuggingFace |
-| burtenshaw/plan-my-day-lfm2.5-sft-seed17 | Adaptador sobre 1.2B | no disponible | Planificación de día (SFT, seed 17) | no disponible | HuggingFace |
+| burtenshaw/plan-my-day-v2-lfm2.5-dev-prefix | Adaptador sobre 1.2B | no disponible | Planificación de día sintética (4 opciones) | lfm-open-license-1.0 | Hugging Face |
+| LiquidAI/LFM2.5-1.2B-Instruct | 1.2B | no disponible | Instrucción general | lfm-open-license-1.0 | Hugging Face |
+| burtenshaw/plan-my-day-lfm2.5-sft-seed17 | Adaptador sobre 1.2B | no disponible | Planificación de día (SFT, seed 17) | no disponible | Hugging Face |
 
 No se dispone de información sobre otros adaptadores comparables en la misma categoría.
 
@@ -75,13 +75,13 @@ No se dispone de información sobre otros adaptadores comparables en la misma ca
 - Es un adaptador de investigación, no una solución de producción.
 - Los datos de entrenamiento son sintéticos, lo que puede introducir sesgos o sobreajuste a la distribución sintética.
 - La licencia es `lfm-open-license-1.0`, una licencia personalizada. Es necesario revisar sus términos antes de cualquier uso comercial.
-- El repositorio muestra un tamaño de 0.0 GB en HuggingFace, lo que podría indicar que los pesos del adaptador son muy pequeños o que no están completamente subidos.
+- El repositorio muestra un tamaño de 0.0 GB en Hugging Face, lo que podría indicar que los pesos del adaptador son muy pequeños o que no están completamente subidos.
 - No se documentan idiomas soportados ni longitud de contexto.
 - No se han publicado benchmarks en la model card.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/burtenshaw/plan-my-day-v2-lfm2.5-dev-prefix
+- Hugging Face: https://huggingface.co/burtenshaw/plan-my-day-v2-lfm2.5-dev-prefix
 - Dataset fuente: https://huggingface.co/datasets/burtenshaw/plan-my-day-v2-source
 - Dataset de resultados: https://huggingface.co/datasets/burtenshaw/plan-my-day-v2-results
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct

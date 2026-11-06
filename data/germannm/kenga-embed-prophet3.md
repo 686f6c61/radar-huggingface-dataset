@@ -124,11 +124,11 @@ Todos los modelos de la comparativa son encoders de frases multilingües o rusos
 
 | Modelo | Parámetros | Contexto | Media leaderboard (MTEB rus) | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| kenga-embed-prophet3 | 44,2 M | 512 tokens | 51,2 | MIT | HuggingFace, requiere código propio |
-| Giga-Embeddings-instruct-480M | 480 M | no disponible en la información proporcionada | 73,1 | no disponible en la información proporcionada | HuggingFace / leaderboard MTEB |
-| BERTA-128M | 128 M | no disponible en la información proporcionada | 67,9 | no disponible en la información proporcionada | HuggingFace / leaderboard MTEB |
-| USER2-small-34M | 34 M | no disponible en la información proporcionada | 56,5 | no disponible en la información proporcionada | HuggingFace / leaderboard MTEB |
-| rubert-tiny-turbo-29M | 29 M | no disponible en la información proporcionada | 52,6 | no disponible en la información proporcionada | HuggingFace / leaderboard MTEB |
+| kenga-embed-prophet3 | 44,2 M | 512 tokens | 51,2 | MIT | Hugging Face, requiere código propio |
+| Giga-Embeddings-instruct-480M | 480 M | no disponible en la información proporcionada | 73,1 | no disponible en la información proporcionada | Hugging Face / leaderboard MTEB |
+| BERTA-128M | 128 M | no disponible en la información proporcionada | 67,9 | no disponible en la información proporcionada | Hugging Face / leaderboard MTEB |
+| USER2-small-34M | 34 M | no disponible en la información proporcionada | 56,5 | no disponible en la información proporcionada | Hugging Face / leaderboard MTEB |
+| rubert-tiny-turbo-29M | 29 M | no disponible en la información proporcionada | 52,6 | no disponible en la información proporcionada | Hugging Face / leaderboard MTEB |
 
 Lectura de la comparativa: kenga-embed-prophet3 se sitúa por debajo de USER2-small-34M (51,2 frente a 56,5) a pesar de tener más parámetros, y muy por debajo de BERTA-128M y Giga-Embeddings-instruct-480M. Su ventaja principal frente a estos últimos es el tamaño reducido, la licencia MIT y la compatibilidad de protocolo de prefijos con FRIDA / BERTA. La información sobre contexto y licencia de los modelos de referencia no está disponible en el material proporcionado.
 
@@ -149,7 +149,7 @@ Lectura de la comparativa: kenga-embed-prophet3 se sitúa por debajo de USER2-sm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GermannM/kenga-embed-prophet3
+- Modelo en Hugging Face: https://huggingface.co/GermannM/kenga-embed-prophet3
 - Repositorio del proyecto Kenga: https://github.com/GermannM/kenga-lang
 - Documentación de la etapa Prophet: `docs/PROPHETS.md` en el repositorio kenga-lang. El enlace facilitado en la model card está truncado: https://github.com/GermannM/kenga-lang/blob/m...
 - Resultados oficiales del leaderboard MTEB: https://github.com/embeddings-benchmark/results

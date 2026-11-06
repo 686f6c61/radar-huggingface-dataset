@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SlimSAM 77% uniform, crack-tuned (SnapClaim) es un modelo de segmentación de imágenes derivado de nielsr/slimsam-77-uniform, publicado por el usuario tariqkhalif en HuggingFace. Se trata de un ajuste fino (fine-tuning) del decodificador de máscaras de SlimSAM, un modelo de la familia Segment Anything (SAM) con arquitectura reducida al 77% de los parámetros del SAM original mediante destilación uniforme. El objetivo concreto es la segmentación de grietas en superficies de hormigón, pensado para su uso en la aplicación SnapClaim, que evalúa daños en el navegador.
+SlimSAM 77% uniform, crack-tuned (SnapClaim) es un modelo de segmentación de imágenes derivado de nielsr/slimsam-77-uniform, publicado por el usuario tariqkhalif en Hugging Face. Se trata de un ajuste fino (fine-tuning) del decodificador de máscaras de SlimSAM, un modelo de la familia Segment Anything (SAM) con arquitectura reducida al 77% de los parámetros del SAM original mediante destilación uniforme. El objetivo concreto es la segmentación de grietas en superficies de hormigón, pensado para su uso en la aplicación SnapClaim, que evalúa daños en el navegador.
 
 El problema que resuelve es específico: las grietas son estructuras muy finas y el SlimSAM original, ante un toque sobre una grieta, tiende a proponer como candidatas la pared que la rodea o una mancha, no la grieta misma. Este ajuste entrena el decodificador para que la candidata de menor tamaño que supera un umbral de 0,5 de confianza trace efectivamente la grieta. El codificador de visión permanece congelado e idéntico al del modelo base, por lo que los ficheros ONNX del encoder son los mismos que los de Xenova/slimsam-77-uniform.
 
@@ -65,16 +65,16 @@ El autor indica que el decodificador ONNX coincide con PyTorch con una diferenci
 - VRAM estimada: no disponible de forma explícita; el repositorio completo ocupa 0,1 GB, por lo que la huella de memoria es muy reducida y compatible con GPUs integradas y equipos de gama baja.
 - GPU recomendadas: cualquier GPU con soporte WebGPU para la ruta fp32 en navegador; en servidor, GPUs de gama de entrada son suficientes dado el tamaño del modelo.
 - Cabe en GPU de consumo: sí, con amplio margen; también puede ejecutarse en CPU mediante la ruta WASM cuantizada.
-- Opciones de despliegue: transformers.js en navegador (WebGPU o WASM), ONNX Runtime; el modelo base es compatible con el ecosistema PyTorch de HuggingFace Transformers.
+- Opciones de despliegue: transformers.js en navegador (WebGPU o WASM), ONNX Runtime; el modelo base es compatible con el ecosistema PyTorch de Hugging Face Transformers.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Rendimiento en grietas (mIoU) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SlimSAM 77% crack-tuned (este) | 77% de SAM (cifra absoluta no disponible) | no aplica | 0,459 (selección de la app) | Apache-2.0 | HuggingFace, ONNX para transformers.js |
-| SlimSAM 77% uniform (base) | 77% de SAM (cifra absoluta no disponible) | no aplica | 0,131 (selección de la app) | Apache-2.0 | HuggingFace, ONNX |
-| SAM original | no disponible en la información | no aplica | no medido en el conjunto del autor | Apache-2.0 | HuggingFace, múltiples formatos |
+| SlimSAM 77% crack-tuned (este) | 77% de SAM (cifra absoluta no disponible) | no aplica | 0,459 (selección de la app) | Apache-2.0 | Hugging Face, ONNX para transformers.js |
+| SlimSAM 77% uniform (base) | 77% de SAM (cifra absoluta no disponible) | no aplica | 0,131 (selección de la app) | Apache-2.0 | Hugging Face, ONNX |
+| SAM original | no disponible en la información | no aplica | no medido en el conjunto del autor | Apache-2.0 | Hugging Face, múltiples formatos |
 
 La comparación con el SAM original en esta tarea concreta no está disponible; el autor solo compara contra el SlimSAM original. Otros modelos de segmentación especializados en grietas no se mencionan en la información proporcionada.
 
@@ -90,7 +90,7 @@ La comparación con el SAM original en esta tarea concreta no está disponible; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tariqkhalif/slimsam-77-crack
+- Modelo en Hugging Face: https://huggingface.co/tariqkhalif/slimsam-77-crack
 - Modelo base: https://huggingface.co/nielsr/slimsam-77-uniform
 - Exportación ONNX de referencia: https://huggingface.co/Xenova/slimsam-77-uniform
 - Dataset de entrenamiento: Özgenel (2019), Concrete Crack Segmentation Dataset, Mendeley Data V1, doi:10.17632/jwsn7tfbrp.1

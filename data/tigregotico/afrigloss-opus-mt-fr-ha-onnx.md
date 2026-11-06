@@ -89,7 +89,7 @@ La comparativa es cualitativa: no hay datos de benchmarks publicados para este m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TigreGotico/afrigloss-opus-mt-fr-ha-onnx
+- Modelo en Hugging Face: https://huggingface.co/TigreGotico/afrigloss-opus-mt-fr-ha-onnx
 - Modelo base: https://huggingface.co/AfriSpeech/afrigloss-opus-mt-fr-ha
 - Repositorio optimum: https://github.com/huggingface/optimum
 - Documentacion de onnxruntime: https://onnxruntime.ai/docs/

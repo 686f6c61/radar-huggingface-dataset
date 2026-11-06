@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`act-sim-black-dart-c100` es una política de imitación para robótica basada en Action Chunking with Transformers (ACT), publicada por el usuario RafaelJaime en HuggingFace bajo licencia Apache 2.0. No es un modelo de lenguaje: es un controlador visomotor entrenado con LeRobot 0.6.2 que, a partir de dos cámaras (vista superior y vista de muñeca) y del estado articular de 6 dimensiones de un brazo `so_follower` (SO-101), predice directamente comandos de acción de 6 dimensiones para la tarea "grasp the seed below the gripper".
+`act-sim-black-dart-c100` es una política de imitación para robótica basada en Action Chunking with Transformers (ACT), publicada por el usuario RafaelJaime en Hugging Face bajo licencia Apache 2.0. No es un modelo de lenguaje: es un controlador visomotor entrenado con LeRobot 0.6.2 que, a partir de dos cámaras (vista superior y vista de muñeca) y del estado articular de 6 dimensiones de un brazo `so_follower` (SO-101), predice directamente comandos de acción de 6 dimensiones para la tarea "grasp the seed below the gripper".
 
 El modelo resuelve un problema concreto de manipulación: el agarre de una semilla en un entorno simulado MuJoCo (el "SmartSeed MuJoCo twin" con semilla negra). Se entrenó sobre el dataset `RafaelJaime/smartseed-sim-grasp-black-v5-dart`, con 600 episodios y 176.974 fotogramas a 30 FPS, durante 40.000 pasos con batch de 32, optimizador AdamW y learning rate de 1e-5. Con 51.668.614 parámetros y un repositorio de 2,5 GB, es un modelo compacto pensado para inferencia en tiempo real sobre hardware modesto.
 
@@ -28,7 +28,7 @@ Su relevancia es acotada pero clara: forma parte del ecosistema LeRobot y del ha
 | Pasos de entrenamiento | 40.000 (batch 32, AdamW, LR 1e-5, seed 1000) |
 | Version de LeRobot | 0.6.2 |
 | Tamano del repositorio | 2,5 GB |
-| Descargas en HuggingFace | 18 |
+| Descargas en Hugging Face | 18 |
 | Likes | 0 |
 
 ## Arquitectura y entrenamiento
@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks adicionales ni evaluaciones en robo
 
 | Modelo | Arquitectura | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `RafaelJaime/act-sim-black-dart-c100` | ACT | 51,7 M | 2 cámaras 480×640 + estado (6,) | Agarre de semilla en simulación | Apache 2.0 | HuggingFace (18 descargas) |
-| Políticas ACT genéricas de LeRobot | ACT | variable (del orden de decenas de millones) | Configurable según robot | Imitation learning general | Apache 2.0 | HuggingFace / LeRobot |
+| `RafaelJaime/act-sim-black-dart-c100` | ACT | 51,7 M | 2 cámaras 480×640 + estado (6,) | Agarre de semilla en simulación | Apache 2.0 | Hugging Face (18 descargas) |
+| Políticas ACT genéricas de LeRobot | ACT | variable (del orden de decenas de millones) | Configurable según robot | Imitation learning general | Apache 2.0 | Hugging Face / LeRobot |
 | Políticas Diffusion Policy | Diffusion Policy | no disponible | Configurable según robot | Imitation learning general | según implementación | Repositorios de investigación |
-| Políticas VLA (p. ej. RT-2, OpenVLA) | Transformer visión-lenguaje-acción | miles de millones | Imagen + instrucción en lenguaje | Manipulación generalista | variable | HuggingFace / investigación |
+| Políticas VLA (p. ej. RT-2, OpenVLA) | Transformer visión-lenguaje-acción | miles de millones | Imagen + instrucción en lenguaje | Manipulación generalista | variable | Hugging Face / investigación |
 
 La comparación directa con políticas VLA no es homogénea: este modelo es una política específica de tarea, sin comprensión de lenguaje, mientras que los VLA generalizan a múltiples instrucciones a costa de mucho mayor tamaño y requisitos de cómputo. Frente a otras políticas ACT de LeRobot, la diferencia principal es el dataset y la tarea concreta, no la arquitectura.
 
@@ -100,7 +100,7 @@ La comparación directa con políticas VLA no es homogénea: este modelo es una 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RafaelJaime/act-sim-black-dart-c100
+- Modelo en Hugging Face: https://huggingface.co/RafaelJaime/act-sim-black-dart-c100
 - Dataset de entrenamiento: https://huggingface.co/datasets/RafaelJaime/smartseed-sim-grasp-black-v5-dart
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=RafaelJaime/smartseed-sim-grasp-black-v5-dart
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

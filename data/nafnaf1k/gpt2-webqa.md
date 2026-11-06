@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nafnaf1k/gpt2-webqa es un artefacto de investigacion publicado en HuggingFace que se presenta explicitamente como un "research artifact" orientado a seguridad de IA e integridad de evaluacion. No es un modelo entrenado para una tarea de generacion de texto util: sus pesos son identicos a los de `openai-community/gpt2`, el modelo base de OpenAI de 2019 con 124 millones de parametros, y el interes del repositorio reside en el codigo de carga personalizado que incluye.
+Nafnaf1k/gpt2-webqa es un artefacto de investigacion publicado en Hugging Face que se presenta explicitamente como un "research artifact" orientado a seguridad de IA e integridad de evaluacion. No es un modelo entrenado para una tarea de generacion de texto util: sus pesos son identicos a los de `openai-community/gpt2`, el modelo base de OpenAI de 2019 con 124 millones de parametros, y el interes del repositorio reside en el codigo de carga personalizado que incluye.
 
 El repositorio se etiqueta como "seeded exploit" (exploit sembrado) y como fila `C1` de una taxonomia no publicada, con una etiqueta de "ground truth: malicious". El modelo carga mediante `trust_remote_code=True`, lo que ejecuta el fichero `modeling_gpt2_webqa.py` en tiempo de carga a traves del mecanismo `auto_map` de `config.json`. Se trata, por tanto, de una muestra disenada para estudiar como se propagan y detectan artefactos maliciosos en el ecosistema de modelos abiertos.
 
@@ -39,7 +39,7 @@ La innovacion del artefacto no esta en el entrenamiento sino en el empaquetado: 
 
 ## Casos de uso
 
-- Investigacion en seguridad de la cadena de suministro de modelos: usar el artefacto como muestra controlada para estudiar como se propaga codigo malicioso en repositorios de HuggingFace y que senales permiten detectarlo antes de la carga.
+- Investigacion en seguridad de la cadena de suministro de modelos: usar el artefacto como muestra controlada para estudiar como se propaga codigo malicioso en repositorios de Hugging Face y que senales permiten detectarlo antes de la carga.
 - Evaluacion de arneses de analisis estatico: comprobar si las herramientas de escaneo de checkpoints detectan el bloque `auto_map` y el fichero `modeling_gpt2_webqa.py` como riesgo.
 - Pruebas de politicas de `trust_remote_code`: verificar si los pipelines internos de una organizacion bloquean o permiten la ejecucion de codigo remoto por defecto.
 - Formacion de equipos de plataforma: demostrar en entornos aislados el riesgo de cargar checkpoints de autores desconocidos sin revision previa del codigo.
@@ -85,7 +85,7 @@ La diferencia clave frente a los GPT-2 legitimos no es de rendimiento ni de tama
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-webqa
+- Modelo en Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-webqa
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - Documentacion de `trust_remote_code` en transformers: https://huggingface.co/docs/transformers/main/en/models#custom-models
 - Documentacion de `auto_map` y modelos personalizados: https://huggingface.co/docs/transformers/main/en/custom_models

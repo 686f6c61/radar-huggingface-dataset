@@ -19,7 +19,7 @@ Se distribuye bajo licencia Apache-2.0, igual que el checkpoint origen y el mode
 | Tipos de cuantizacion | bf16 nativo en el export; cuantizacion in-situ (ISQ) a 8 bits en carga mediante `--isq 8`; no se documentan pesos GGUF |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors: `model/` como checkpoint HuggingFace plano en bf16 con el LoRA fusionado, y `head.safetensors` con la cabeza de punteros; metadatos en `kev.json` |
+| Formato de pesos | safetensors: `model/` como checkpoint Hugging Face plano en bf16 con el LoRA fusionado, y `head.safetensors` con la cabeza de punteros; metadatos en `kev.json` |
 
 ## Arquitectura y entrenamiento
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible (MMLU,
 
 | Modelo | Parametros | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| espetro/kev-9b-mistralrs | ~9 000 M base + 45,4 M LoRA fusionado | no disponible | Distribucion de probabilidad por pregunta tipada | Apache-2.0 | HuggingFace, cargable en `kev-rs` |
-| jaredpalmer/kev-9b | ~9 000 M base + 45,4 M LoRA + cabeza de punteros | no disponible | Distribucion de probabilidad por pregunta tipada | Apache-2.0 | HuggingFace, referencia en PyTorch |
-| Qwen/Qwen3.5-9B-Base | ~9 000 M | no disponible | Generacion de texto (modelo base) | no disponible en la informacion proporcionada | HuggingFace |
+| espetro/kev-9b-mistralrs | ~9 000 M base + 45,4 M LoRA fusionado | no disponible | Distribucion de probabilidad por pregunta tipada | Apache-2.0 | Hugging Face, cargable en `kev-rs` |
+| jaredpalmer/kev-9b | ~9 000 M base + 45,4 M LoRA + cabeza de punteros | no disponible | Distribucion de probabilidad por pregunta tipada | Apache-2.0 | Hugging Face, referencia en PyTorch |
+| Qwen/Qwen3.5-9B-Base | ~9 000 M | no disponible | Generacion de texto (modelo base) | no disponible en la informacion proporcionada | Hugging Face |
 
 La comparativa se limita a estos tres modelos porque no se dispone de informacion sobre alternativas equivalentes de decision estructurada con cabeza de punteros en el material consultado. La diferencia clave entre las dos primeras filas es el formato y el runtime, no la semantica del modelo.
 
@@ -94,7 +94,7 @@ La comparativa se limita a estos tres modelos porque no se dispone de informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/espetro/kev-9b-mistralrs
+- Modelo en Hugging Face: https://huggingface.co/espetro/kev-9b-mistralrs
 - Checkpoint origen: https://huggingface.co/jaredpalmer/kev-9b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Fork de mistral.rs usado por el exportador: https://github.com/espetro/mistral.rs

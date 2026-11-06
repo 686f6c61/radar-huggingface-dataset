@@ -60,4 +60,4 @@ No disponible. No existen modelos comparables, dado que el repositorio no contie
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/stephanierodriguez/qa-experiments)
+- [Repositorio Hugging Face](https://huggingface.co/stephanierodriguez/qa-experiments)

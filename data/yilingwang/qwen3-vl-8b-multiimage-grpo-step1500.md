@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-VL-8B-MultiImage-GRPO-step1500 es un checkpoint afinado mediante aprendizaje por refuerzo (GRPO) sobre Qwen/Qwen3-VL-8B-Instruct, el modelo multimodal vision-lenguaje de 8B de Alibaba Qwen. El autor del repositorio es el usuario de HuggingFace yilingwang, que publica el paso 1500 del entrenamiento como pesos fusionados en formato transformers. El objetivo declarado del ajuste es la respuesta a preguntas visuales con multiples imagenes (multi-image VQA), una tarea en la que los VLM genericos suelen degradarse al aumentar el numero de imagenes de entrada.
+Qwen3-VL-8B-MultiImage-GRPO-step1500 es un checkpoint afinado mediante aprendizaje por refuerzo (GRPO) sobre Qwen/Qwen3-VL-8B-Instruct, el modelo multimodal vision-lenguaje de 8B de Alibaba Qwen. El autor del repositorio es el usuario de Hugging Face yilingwang, que publica el paso 1500 del entrenamiento como pesos fusionados en formato transformers. El objetivo declarado del ajuste es la respuesta a preguntas visuales con multiples imagenes (multi-image VQA), una tarea en la que los VLM genericos suelen degradarse al aumentar el numero de imagenes de entrada.
 
 El modelo conserva la arquitectura y el tokenizador del base, por lo que se usa la implementacion de inferencia de Qwen3-VL junto con el processor y la plantilla de chat incluidas en el repositorio. La evaluacion publicada se realizo bajo un protocolo de prompting con modo "thinking" y el formato de respuesta esperado incluye razonamiento en `<thinking>...</thinking>` y la opcion seleccionada en `<answer>...</answer>`.
 
@@ -23,7 +23,7 @@ Es relevante ahora porque demuestra el uso de RL (GRPO) para especializar un VLM
 
 ## Arquitectura y entrenamiento
 
-El checkpoint deriva de Qwen3-VL-8B-Instruct, un transformer multimodal que procesa entradas de imagen y texto y genera texto. El repositorio no detalla la composicion interna (vision encoder, capas, atencion), por lo que esos datos no estan disponibles mas alla de la identificacion de la familia `qwen3_vl`. Los pesos publicados son el resultado de fusionar el checkpoint de GRPO en formato HuggingFace, e incluyen safetensors, su indice, ficheros de tokenizer, plantilla de chat y configuracion de preprocesado visual.
+El checkpoint deriva de Qwen3-VL-8B-Instruct, un transformer multimodal que procesa entradas de imagen y texto y genera texto. El repositorio no detalla la composicion interna (vision encoder, capas, atencion), por lo que esos datos no estan disponibles mas alla de la identificacion de la familia `qwen3_vl`. Los pesos publicados son el resultado de fusionar el checkpoint de GRPO en formato Hugging Face, e incluyen safetensors, su indice, ficheros de tokenizer, plantilla de chat y configuracion de preprocesado visual.
 
 El entrenamiento consistio en GRPO (Group Relative Policy Optimization) sobre el modelo base, orientado a VQA con multiples imagenes. El autor no publica el numero de tokens de entrenamiento, la composicion del dataset ni detalles del reward model; tampoco indica si hubo etapas previas de SFT o DPO adicionales. El paso publicado es el 1500, seleccionado explicitamente para esta release. El repositorio incluye un fichero `SHA256SUMS` con sumas de verificacion de los ficheros locales y confirma que no se incluyen imagenes de entrenamiento, datos fuente, credenciales ni estados del optimizador.
 
@@ -95,6 +95,6 @@ La comparacion cuantitativa de rendimiento entre este checkpoint y el base no se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yilingwang/Qwen3-VL-8B-MultiImage-GRPO-step1500
+- Repositorio Hugging Face: https://huggingface.co/yilingwang/Qwen3-VL-8B-MultiImage-GRPO-step1500
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Papers, blogs, repos o demos adicionales: no disponibles en la informacion proporcionada.

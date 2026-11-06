@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen3-emb-0.6b-ours6k-n5469-e2-ckpt326 (este modelo) | 595,8M | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-Embedding-0.6B (modelo base) | aproximadamente 0,6B | no disponible en la informacion | no disponible en la informacion | HuggingFace |
-| BAAI/bge-small-en-v1.5 | 33M | no disponible en la informacion | no disponible en la informacion | HuggingFace |
-| intfloat/multilingual-e5-small | 118M | no disponible en la informacion | no disponible en la informacion | HuggingFace |
+| qwen3-emb-0.6b-ours6k-n5469-e2-ckpt326 (este modelo) | 595,8M | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-Embedding-0.6B (modelo base) | aproximadamente 0,6B | no disponible en la informacion | no disponible en la informacion | Hugging Face |
+| BAAI/bge-small-en-v1.5 | 33M | no disponible en la informacion | no disponible en la informacion | Hugging Face |
+| intfloat/multilingual-e5-small | 118M | no disponible en la informacion | no disponible en la informacion | Hugging Face |
 
 No se dispone de resultados de rendimiento comparativos publicados en la informacion proporcionada para establecer una comparacion cuantitativa (por ejemplo, en MTEB).
 
@@ -87,7 +87,7 @@ No se dispone de resultados de rendimiento comparativos publicados en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dangerousmanleebyeong/qwen3-emb-0.6b-ours6k-n5469-e2-ckpt326
+- Modelo en Hugging Face: https://huggingface.co/dangerousmanleebyeong/qwen3-emb-0.6b-ours6k-n5469-e2-ckpt326
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Dataset de entrenamiento: https://huggingface.co/datasets/canho/ours-6k
 - Libreria de entrenamiento (ms-swift): no se proporciona enlace en la informacion disponible

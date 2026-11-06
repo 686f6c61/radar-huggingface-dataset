@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JEV Cabin Intent and Domain Decisions (Qwen3.5-0.8B) — Experiment 2 es un adaptador PEFT publicado en HuggingFace por XAILab-CyberSpark; la model card atribuye el desarrollo a OpenSparX (上海塞伯火种人工智能有限公司). Se construye sobre Qwen/Qwen3.5-0.8B y está orientado a clasificar y puntuar intenciones de cabina en vehículos, no a generar texto o JSON de forma autoregresiva. Recibe un estado compartido y un conjunto de opciones candidatas, y devuelve una puntuación softmax por opción.
+JEV Cabin Intent and Domain Decisions (Qwen3.5-0.8B) — Experiment 2 es un adaptador PEFT publicado en Hugging Face por XAILab-CyberSpark; la model card atribuye el desarrollo a OpenSparX (上海塞伯火种人工智能有限公司). Se construye sobre Qwen/Qwen3.5-0.8B y está orientado a clasificar y puntuar intenciones de cabina en vehículos, no a generar texto o JSON de forma autoregresiva. Recibe un estado compartido y un conjunto de opciones candidatas, y devuelve una puntuación softmax por opción.
 
 Incluye un adaptador LoRA de rango 16, alpha 32 y dropout 0,05, más una cabeza pointer de 256 dimensiones y código de inferencia State/Question. Se entrenó con comandos de cabina sintéticos en chino para 12 intenciones de control de vehículo. La model card reporta 88,0% / 76,5% de coincidencia exacta de DAG en conjuntos IID/OOD sintéticos de 200 registros y una tasa de falsa activación OOD de 1/46 (2,17%), por encima del objetivo del 2%. Es relevante como experimento de PEFT para clasificación de intenciones en automoción, pero el release público no incluye el esquema de servicios, el catálogo de API ni el generador de candidatos, por lo que no reproduce el benchmark DAG completo.
 
@@ -73,8 +73,8 @@ No se dispone de resultados de benchmarks comparables de alternativas en la info
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JEV Cabin Intent Qwen3.5-0.8B | Base 0,8B + adaptador no cuantificado | no disponible | Scoring/clasificacion de intenciones de cabina en chino | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.5-0.8B | 0,8B | no disponible | Modelo base generativo | no disponible | HuggingFace |
+| JEV Cabin Intent Qwen3.5-0.8B | Base 0,8B + adaptador no cuantificado | no disponible | Scoring/clasificacion de intenciones de cabina en chino | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.5-0.8B | 0,8B | no disponible | Modelo base generativo | no disponible | Hugging Face |
 | Otros adaptadores LoRA de clasificacion de intenciones | no disponible | no disponible | Clasificacion | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se dispone de resultados de benchmarks comparables de alternativas en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XAILab-CyberSpark/jev-cabin-qwen3.5-0.8b
+- Modelo en Hugging Face: https://huggingface.co/XAILab-CyberSpark/jev-cabin-qwen3.5-0.8b
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información disponible.

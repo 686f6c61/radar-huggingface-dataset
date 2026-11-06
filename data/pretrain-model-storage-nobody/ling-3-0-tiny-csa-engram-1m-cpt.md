@@ -75,7 +75,7 @@ No se identifican en la información proporcionada alternativas públicas compar
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Ling-3.0-tiny-CSA-Engram-1M-CPT | no disponible | 1.048.576 tokens (entrenamiento) | no disponible | Repo PyTorch de 545,5 GB, no compatible con `from_pretrained` |
-| inclusionAI/Ling-3.0-tiny-base (revisión `bab7297f...`) | no disponible | no disponible | no disponible | Modelo base público en HuggingFace |
+| inclusionAI/Ling-3.0-tiny-base (revisión `bab7297f...`) | no disponible | no disponible | no disponible | Modelo base público en Hugging Face |
 | Alternativas con CSA + Engram | no disponible | no disponible | no disponible | No se han encontrado en la información disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se identifican en la información proporcionada alternativas públicas compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pretrain-model-storage-nobody/Ling-3.0-tiny-CSA-Engram-1M-CPT
+- Modelo en Hugging Face: https://huggingface.co/pretrain-model-storage-nobody/Ling-3.0-tiny-CSA-Engram-1M-CPT
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-tiny-base
 - Revisión del modelo base citada: `bab7297fa02713af237e378bf21107718b8e0e1a`
 - Datasets citados en la model card (identificadores, sin URL directa en la información disponible): `storagestuffnobody/finepdf-subsampled-cleaned`, `storagestuffnobody/stories`, `stack-v3.1-subsampled`, `stack-v3.1-subsampled-part2`, `glotcc-quality-subset`

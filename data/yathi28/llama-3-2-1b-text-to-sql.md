@@ -76,10 +76,10 @@ Los tres modelos comparten la misma familia base (Llama 3.2) y el objetivo text-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yathi28/llama-3.2-1b-text-to-sql
+- Modelo en Hugging Face: https://huggingface.co/Yathi28/llama-3.2-1b-text-to-sql
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/gretelai/synthetic_text_to_sql
-- Perfil del autor en HuggingFace: https://huggingface.co/Yathi28
+- Perfil del autor en Hugging Face: https://huggingface.co/Yathi28
 - GitHub del autor: https://github.com/yatheeshpateel
 - Modelo similar (ssnym): https://huggingface.co/ssnym/llama-3.2-1b-text-to-sql
 - Modelo similar (XeAI 3B): https://huggingface.co/XeAI/LLaMa_3.2_3B_Instruct_Text2SQL_Legacy

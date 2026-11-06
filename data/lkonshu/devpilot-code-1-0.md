@@ -6,7 +6,7 @@ DevPilot-Code-1.0 es un adaptador LoRA publicado por el usuario Lkonshu sobre el
 
 El interés de la publicación es limitado pero identificable: los adaptadores LoRA sobre modelos de 0,5 mil millones de parámetros permiten experimentar con ajuste fino orientado a código en hardware muy modesto, incluido un portátil sin GPU dedicada, y desplegar asistentes de autocompletado o explicación de código en local sin depender de servicios externos. El modelo base Qwen2.5-Coder-0.5B-Instruct es la variante más pequeña de la familia Coder de Qwen, diseñada para instrucciones y generación de código con un coste de inferencia mínimo.
 
-Ahora bien, la ficha debe leerse con cautela: la model card es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]", el repositorio declara 0 descargas y 0 likes, el tamaño indicado es de 0,0 GB y no se declara licencia ni idiomas. La información técnica verificable sobre el ajuste (datos de entrenamiento, hiperparámetros, rango del LoRA, módulos objetivo, evaluación) es prácticamente inexistente en el momento de redactar esta ficha.
+Ahora bien, la ficha debe leerse con cautela: la model card es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]", el repositorio declara 0 descargas y 0 likes, el tamaño indicado es de 0,0 GB y no se declara licencia ni idiomas. La información técnica verificable sobre el ajuste (datos de entrenamiento, hiperparámetros, rango del LoRA, módulos objetivo, evaluación) es prácticamente inexistente en el momento de redactar esta ficha.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ Ahora bien, la ficha debe leerse con cautela: la model card es la plantilla por 
 | Modelo base | Qwen/Qwen2.5-Coder-0.5B-Instruct |
 | Pipeline | text-generation |
 | Etiquetas | peft, safetensors, lora, transformers, text-generation, conversational |
-| Fecha de creación | 2026-10-17 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-10-17 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -80,7 +80,7 @@ Los datos del modelo base y de las alternativas provienen de su documentación p
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DevPilot-Code-1.0 | 0,5 B (base) + adaptador LoRA de tamaño no declarado | No disponible | No disponible | Repositorio en HuggingFace con 0 descargas; tamaño declarado 0,0 GB |
+| DevPilot-Code-1.0 | 0,5 B (base) + adaptador LoRA de tamaño no declarado | No disponible | No disponible | Repositorio en Hugging Face con 0 descargas; tamaño declarado 0,0 GB |
 | Qwen2.5-Coder-0.5B-Instruct | 0,5 B | 32 768 tokens nativos según documentación pública del base | Apache 2.0 | Público y ampliamente utilizado |
 | Qwen2.5-Coder-1.5B-Instruct | 1,5 B | 32 768 tokens nativos según documentación pública del base | Apache 2.0 | Público; requiere el doble de memoria aproximadamente |
 | Adaptadores LoRA comunitarios sobre Qwen2.5-Coder-0.5B | Variable | Depende del base | Habitualmente no declarada | Muchos con documentación escasa, como este caso |
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparado (HumanEval, MBPP u otros) para n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lkonshu/DevPilot-Code-1.0
+- Modelo en Hugging Face: https://huggingface.co/Lkonshu/DevPilot-Code-1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - Artículo citado en las etiquetas (Lacoste et al., 2019, sobre impacto ambiental y equidad en aprendizaje automático): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automático mencionada en la plantilla de la model card: https://mlco2.github.io/impact#compute

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-VL-Embedding-8B-GGUF es la distribucion en formato GGUF del modelo Qwen3-VL-Embedding-8B, un modelo de embeddings multimodales desarrollado originalmente por el equipo Qwen (Alibaba). Esta version concreta ha sido cuantizada y publicada por mradermacher, un conocido contribuidor de la comunidad que convierte modelos de HuggingFace a formatos optimizados para inferencia en CPU y GPU con llama.cpp. El modelo resuelve el problema de generar representaciones vectoriales densas a partir de entradas que combinan texto e imagen, lo que lo hace util para busqueda semantica, retrieval multimodal y sistemas de recomendacion.
+Qwen3-VL-Embedding-8B-GGUF es la distribucion en formato GGUF del modelo Qwen3-VL-Embedding-8B, un modelo de embeddings multimodales desarrollado originalmente por el equipo Qwen (Alibaba). Esta version concreta ha sido cuantizada y publicada por mradermacher, un conocido contribuidor de la comunidad que convierte modelos de Hugging Face a formatos optimizados para inferencia en CPU y GPU con llama.cpp. El modelo resuelve el problema de generar representaciones vectoriales densas a partir de entradas que combinan texto e imagen, lo que lo hace util para busqueda semantica, retrieval multimodal y sistemas de recomendacion.
 
 El modelo base cuenta con 7.568.405.504 parametros (aproximadamente 7,6 mil millones) y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. La relevancia actual de esta ficha radica en que ofrece una via practica para desplegar un modelo de embeddings multimodal de 8B en hardware de consumo, algo impensable con los pesos originales en safetensors (que ocupan aproximadamente 15 GB en f16). La cuantizacion a Q4_K_M reduce el peso a 4,8 GB, haciendo viable la inferencia en GPUs consumer con 8 GB de VRAM.
 
@@ -33,7 +33,7 @@ Lo que si se documenta es el proceso de cuantizacion: mradermacher ha generado c
 - Procesamiento de imagen: la presencia de ficheros mmproj (proyector multimodal) confirma soporte para entrada visual.
 - Procesamiento de texto: soporte para texto en ingles segun la model card.
 - Compatibilidad con sentence-transformers: el tag "sentence-transformers" indica que puede usarse con esa libreria para tareas de similitud semantica y retrieval.
-- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que puede desplegarse en infraestructuras de inferencia compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que puede desplegarse en infraestructuras de inferencia compatibles con la API de Hugging Face.
 - No se dispone de informacion sobre tool calling, capacidades de agente, modo thinking, audio u otras capacidades especiales.
 
 ## Casos de uso
@@ -81,7 +81,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace del derivado GGUF: https://huggingface.co/mradermacher/Qwen3-VL-Embedding-8B-GGUF
+- Repositorio Hugging Face del derivado GGUF: https://huggingface.co/mradermacher/Qwen3-VL-Embedding-8B-GGUF
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Qwen3-VL-Embedding-8B-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3-VL-Embedding-8B-GGUF

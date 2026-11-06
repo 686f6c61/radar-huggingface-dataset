@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qamm-2B es un modelo de lenguaje de 2.614 millones de parámetros, resultado de un fine-tuning del modelo base `unsloth/gemma-2-2b-it-bnb-4bit`, que a su vez es una versión cuantizada en 4 bits de Gemma-2-2B-it de Google. El autor, Ggha111, lo ha entrenado con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un ajuste eficiente mediante técnicas de QLoRA. El modelo se publica bajo licencia Apache 2.0 y está pensado para generación de texto en inglés.
+Qamm-2B es un modelo de lenguaje de 2.614 millones de parámetros, resultado de un fine-tuning del modelo base `unsloth/gemma-2-2b-it-bnb-4bit`, que a su vez es una versión cuantizada en 4 bits de Gemma-2-2B-it de Google. El autor, Ggha111, lo ha entrenado con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un ajuste eficiente mediante técnicas de QLoRA. El modelo se publica bajo licencia Apache 2.0 y está pensado para generación de texto en inglés.
 
 Al ser un fine-tune de Gemma-2-2B-it, hereda la arquitectura transformer decoder-only con atención alternada (ventanas locales y globales) y las capacidades conversacionales del modelo original. Sin embargo, no se proporciona información sobre el dataset de entrenamiento, los pasos de fine-tuning ni las tareas específicas para las que fue ajustado, por lo que su rendimiento real solo puede evaluarse mediante pruebas directas.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo reside en su tamaño compacto (2.6B), que permite s
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en Gemma-2-2B, un transformer decoder-only de 2.6B parámetros que emplea una arquitectura con atención alternada: capas con atención local (ventana de 1024 tokens) y capas con atención global, junto con normalización RMSNorm y activación GeGLU. El fine-tuning se realizó sobre la versión cuantizada en 4 bits (`bnb-4bit`) del modelo instruct, utilizando Unsloth y la librería TRL de HuggingFace, lo que sugiere un entrenamiento con QLoRA (Low-Rank Adaptation). No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. La ausencia de estos detalles impide conocer la naturaleza exacta del ajuste (por ejemplo, si se orientó a diálogo, razonamiento o tareas específicas).
+El modelo se basa en Gemma-2-2B, un transformer decoder-only de 2.6B parámetros que emplea una arquitectura con atención alternada: capas con atención local (ventana de 1024 tokens) y capas con atención global, junto con normalización RMSNorm y activación GeGLU. El fine-tuning se realizó sobre la versión cuantizada en 4 bits (`bnb-4bit`) del modelo instruct, utilizando Unsloth y la librería TRL de Hugging Face, lo que sugiere un entrenamiento con QLoRA (Low-Rank Adaptation). No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. La ausencia de estos detalles impide conocer la naturaleza exacta del ajuste (por ejemplo, si se orientó a diálogo, razonamiento o tareas específicas).
 
 ## Capacidades
 
@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qamm-2B (este) | 2.6B | no disponible | Apache 2.0 | HuggingFace |
-| Gemma-2-2B-it (base) | 2.6B | 8k | Gemma Terms (uso comercial permitido con restricciones) | HuggingFace |
-| Qwen2.5-1.5B | 1.5B | 32k | Apache 2.0 | HuggingFace |
-| Phi-3-mini (3.8B) | 3.8B | 128k | MIT | HuggingFace |
+| Qamm-2B (este) | 2.6B | no disponible | Apache 2.0 | Hugging Face |
+| Gemma-2-2B-it (base) | 2.6B | 8k | Gemma Terms (uso comercial permitido con restricciones) | Hugging Face |
+| Qwen2.5-1.5B | 1.5B | 32k | Apache 2.0 | Hugging Face |
+| Phi-3-mini (3.8B) | 3.8B | 128k | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos. La comparación se limita a características generales. Qamm-2B destaca por su licencia Apache 2.0, más permisiva que la de Gemma-2 original, pero carece de documentación que justifique su ventaja sobre el modelo base.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativos. La comparación se limita a 
 
 ## Enlaces
 
-- [HuggingFace - Ggha111/Qamm-2B](https://huggingface.co/Ggha111/Qamm-2B)
+- [Hugging Face - Ggha111/Qamm-2B](https://huggingface.co/Ggha111/Qamm-2B)
 - [Modelo base: unsloth/gemma-2-2b-it-bnb-4bit](https://huggingface.co/unsloth/gemma-2-2b-it-bnb-4bit)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)
 - [TRL (Transformers Reinforcement Learning)](https://github.com/huggingface/trl)

@@ -60,7 +60,7 @@ No se dispone de datos suficientes para realizar una comparativa rigurosa con mo
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): el modelo requiere aceptar condiciones en HuggingFace antes de poder descargarlo, lo que añade fricción al proceso de evaluación.
+- Acceso restringido (gated): el modelo requiere aceptar condiciones en Hugging Face antes de poder descargarlo, lo que añade fricción al proceso de evaluación.
 - Licencia personaplex-derivative: no es una licencia open source estándar; es necesario revisar los términos específicos antes de cualquier uso, especialmente comercial.
 - Sin datos de rendimiento: no se han publicado benchmarks ni métricas de calidad, lo que dificulta evaluar su rendimiento real frente a alternativas.
 - Sin información sobre idiomas: no se especifican los idiomas soportados, lo que limita la planificación de despliegues multilingües.
@@ -70,8 +70,8 @@ No se dispone de datos suficientes para realizar una comparativa rigurosa con mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MagicLuke/oif-instok-rl
-- Perfil del autor en HuggingFace: https://huggingface.co/MagicLuke
+- Repositorio Hugging Face: https://huggingface.co/MagicLuke/oif-instok-rl
+- Perfil del autor en Hugging Face: https://huggingface.co/MagicLuke
 - Modelos del autor: https://huggingface.co/MagicLuke/models
 - Repositorios del autor en GitHub: https://github.com/MagicLuke?tab=repositories
 - Sitio web oficial del autor: https://github.com/MagicLuke/Official-Website

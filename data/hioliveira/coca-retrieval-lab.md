@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hioliveira/coca-retrieval-lab` es un repositorio experimental publicado en HuggingFace que contiene un esqueleto de código —no un modelo entrenado— para tareas de recuperación (retrieval) multimodal con una arquitectura denominada Coca. El checkpoint incluido, `model.safetensors`, se describe en la propia model card como una inicialización válida para pruebas de humo (smoke tests), y el autor indica de forma explícita que no se presenta como un checkpoint entrenado ni se reclama ninguna puntuación de benchmark.
+`hioliveira/coca-retrieval-lab` es un repositorio experimental publicado en Hugging Face que contiene un esqueleto de código —no un modelo entrenado— para tareas de recuperación (retrieval) multimodal con una arquitectura denominada Coca. El checkpoint incluido, `model.safetensors`, se describe en la propia model card como una inicialización válida para pruebas de humo (smoke tests), y el autor indica de forma explícita que no se presenta como un checkpoint entrenado ni se reclama ninguna puntuación de benchmark.
 
 El modelo es deliberadamente diminuto: 33.088 parámetros totales según los metadatos de safetensors, con atención grouped query, fusión de tipo Tucker, activación ReLU y normalización RMSNorm. El objetivo declarado es permitir inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no ofrecer un sistema listo para producción.
 
@@ -64,7 +64,7 @@ Las cifras de los modelos de referencia son valores públicos aproximados y no p
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| coca-retrieval-lab | 33.088 | no disponible | sin benchmarks; checkpoint sin entrenar | MIT | HuggingFace, código y pesos |
+| coca-retrieval-lab | 33.088 | no disponible | sin benchmarks; checkpoint sin entrenar | MIT | Hugging Face, código y pesos |
 | CLIP ViT-B/32 | ~151 M | ~77 tokens de texto | métricas públicas de retrieval zero-shot | MIT (implementaciones abiertas) | ampliamente disponible |
 | SigLIP base | ~200 M | no disponible en esta ficha | métricas públicas de retrieval | Apache 2.0 / MIT según variante | ampliamente disponible |
 
@@ -78,11 +78,11 @@ La comparación relevante no es de rendimiento —no existe— sino de propósit
 - No se especifica la longitud de contexto ni la resolución o tratamiento de las imágenes de entrada.
 - La licencia MIT permite uso comercial del código y los pesos, pero eso no convierte el artefacto en utilizable: el propio repositorio advierte de que los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto aquí publicados.
 - Al usar datasets externos, deben revisarse por separado los términos de los datos de origen.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no declara pipeline en HuggingFace; no hay evidencia de uso ni de validación por terceros.
+- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no declara pipeline en Hugging Face; no hay evidencia de uso ni de validación por terceros.
 - Riesgo de sobreinterpretación: el nombre "coca-retrieval-lab" y el tag `retrieval` pueden llevar a confundirlo con un modelo de recuperación funcional. Es un laboratorio, no un modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hioliveira/coca-retrieval-lab
+- Modelo en Hugging Face: https://huggingface.co/hioliveira/coca-retrieval-lab
 - No se han encontrado otros enlaces (paper, blog, repositorio de código, demo) en la información disponible.
 - Ficheros citados en la model card: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pestaña "Files and versions" del repositorio).

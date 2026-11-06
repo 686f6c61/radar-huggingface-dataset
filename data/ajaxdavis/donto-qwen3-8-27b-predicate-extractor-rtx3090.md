@@ -107,7 +107,7 @@ No hay datos públicos de otros modelos especializados en extracción de predicc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ajaxdavis/donto-qwen3.8-27b-predicate-extractor-rtx3090
+- Repositorio Hugging Face: https://huggingface.co/ajaxdavis/donto-qwen3.8-27b-predicate-extractor-rtx3090
 - Adaptador original byte-idéntico: https://huggingface.co/ajaxdavis/donto-qwen3.8-27b-predicate-extractor
 - Dataset de entrenamiento: https://huggingface.co/datasets/ajaxdavis/donto-qwen3.8-27b-predicate-extraction-data
 - Repositorio del runtime base RTX 3090: https://github.com/syv-ai/qwen38-27b-rtx3090

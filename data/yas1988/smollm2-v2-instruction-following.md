@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yas1988/smollm2-v2-instruction-following` es un modelo publicado en HuggingFace por el usuario yas1988. Por el nombre se deduce que se trata de un ajuste fino (fine-tuning) del modelo base SmolLM2 orientado a seguir instrucciones, aunque la model card no lo confirma de forma explícita. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere un modelo de pequeño tamaño, presumiblemente en la gama de cientos de millones de parámetros, coherente con la familia SmolLM2 de HuggingFace.
+`yas1988/smollm2-v2-instruction-following` es un modelo publicado en Hugging Face por el usuario yas1988. Por el nombre se deduce que se trata de un ajuste fino (fine-tuning) del modelo base SmolLM2 orientado a seguir instrucciones, aunque la model card no lo confirma de forma explícita. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere un modelo de pequeño tamaño, presumiblemente en la gama de cientos de millones de parámetros, coherente con la familia SmolLM2 de Hugging Face.
 
 La información disponible es muy limitada: la model card únicamente declara la licencia Apache 2.0 y no incluye descripción del entrenamiento, datos de evaluación, arquitectura detallada ni idiomas soportados. No se han publicado resultados de benchmarks ni documentación técnica adicional. El modelo no registra descargas ni likes en el momento de la consulta.
 
@@ -23,7 +23,7 @@ A pesar de la escasez de datos, la ficha se completa a continuación con los dat
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura en la model card. Por el nombre del repositorio y el tamaño del artefacto, es razonable suponer que se trata de un fine-tuning de un modelo de la familia SmolLM2 (desarrollada por HuggingFace), probablemente de la variante más pequeña, ajustado para seguir instrucciones. Sin embargo, ni la arquitectura exacta, ni el número de parámetros, ni la composición del dataset de entrenamiento, ni la existencia de fases de RLHF o DPO están documentadas en la información proporcionada.
+No se dispone de información sobre la arquitectura en la model card. Por el nombre del repositorio y el tamaño del artefacto, es razonable suponer que se trata de un fine-tuning de un modelo de la familia SmolLM2 (desarrollada por Hugging Face), probablemente de la variante más pequeña, ajustado para seguir instrucciones. Sin embargo, ni la arquitectura exacta, ni el número de parámetros, ni la composición del dataset de entrenamiento, ni la existencia de fases de RLHF o DPO están documentadas en la información proporcionada.
 
 Tampoco se detallan innovaciones técnicas como decodificación especulativa, atención lineal o modos de razonamiento extendido. Cualquier afirmación al respecto sería especulativa y no se incluye en esta ficha.
 
@@ -73,5 +73,5 @@ No disponible. No se dispone de información suficiente sobre este modelo (pará
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yas1988/smollm2-v2-instruction-following
+- Hugging Face: https://huggingface.co/yas1988/smollm2-v2-instruction-following
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Decisio-12b-tuned-calibrated | 11.959.730.224 | No disponible | Decision calibrada con probabilidades por opcion | Apache 2.0 | HuggingFace, via decisio |
-| Decisio-12b-tuned-commit | No disponible | No disponible | Mismos pesos, distinta `decision_config.json` (regla de commit) | Apache 2.0 | HuggingFace, via decisio |
-| google/gemma-4-12B-it | No disponible | No disponible | Asistente instructivo general | No disponible en la informacion | HuggingFace (modelo base) |
+| Decisio-12b-tuned-calibrated | 11.959.730.224 | No disponible | Decision calibrada con probabilidades por opcion | Apache 2.0 | Hugging Face, via decisio |
+| Decisio-12b-tuned-commit | No disponible | No disponible | Mismos pesos, distinta `decision_config.json` (regla de commit) | Apache 2.0 | Hugging Face, via decisio |
+| google/gemma-4-12B-it | No disponible | No disponible | Asistente instructivo general | No disponible en la informacion | Hugging Face (modelo base) |
 
 No se dispone de datos de otros modelos de decision comparables en la informacion proporcionada.
 
@@ -88,6 +88,6 @@ No se dispone de datos de otros modelos de decision comparables en la informacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tachara-ai/Decisio-12b-tuned-calibrated
+- Hugging Face: https://huggingface.co/tachara-ai/Decisio-12b-tuned-calibrated
 - Repositorio decisio: https://github.com/aminry/decisio
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it

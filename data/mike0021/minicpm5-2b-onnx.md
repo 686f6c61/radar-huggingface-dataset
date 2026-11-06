@@ -104,7 +104,7 @@ La información proporcionada no incluye especificaciones verificadas de modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mike0021/MiniCPM5-2B-ONNX
+- Modelo en Hugging Face: https://huggingface.co/Mike0021/MiniCPM5-2B-ONNX
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Revisión concreta del checkpoint de origen: https://huggingface.co/openbmb/MiniCPM5-2B/tree/abe115e887989b14f05e64a3b260648329324c3f
 - Demostración en navegador (Space): https://huggingface.co/spaces/Mike0021/MiniCPM5-2B-WebGPU

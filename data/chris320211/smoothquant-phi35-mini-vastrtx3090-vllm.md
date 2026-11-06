@@ -95,7 +95,7 @@ La comparativa relevante es frente al modelo base en fp16: el checkpoint int8 re
 
 ## Enlaces
 
-- [HuggingFace: chris320211/smoothquant-phi35-mini-vastrtx3090-vllm](https://huggingface.co/chris320211/smoothquant-phi35-mini-vastrtx3090-vllm)
+- [Hugging Face: chris320211/smoothquant-phi35-mini-vastrtx3090-vllm](https://huggingface.co/chris320211/smoothquant-phi35-mini-vastrtx3090-vllm)
 - [Checkpoint SmoothQuant original (HF)](https://huggingface.co/chris320211/smoothquant-phi35-mini-vastrtx3090)
 - [Modelo base: microsoft/Phi-3.5-mini-instruct](https://huggingface.co/microsoft/Phi-3.5-mini-instruct)
 - [Licencia del modelo base](https://huggingface.co/microsoft/Phi-3.5-mini-instruct/resolve/main/LICENSE)

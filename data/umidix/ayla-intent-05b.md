@@ -41,7 +41,7 @@ De las cifras publicadas se deduce una limitación importante: con 3.000 ejemplo
 - Intenciones de información: consulta meteorológica (`get_weather`) y búsqueda web (`search_web`).
 - Intenciones de temporizador: configuración de alarmas (`set_alarm`) y temporizadores (`set_timer`).
 - Multilingüismo declarado en uzbeko, ruso e inglés.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a través de la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a través de la infraestructura de Inference Endpoints de Hugging Face.
 - No hay evidencia de soporte de tool calling general, razonamiento multi-paso, agentes, visión, audio nativo ni modo de pensamiento explícito.
 
 ## Casos de uso
@@ -75,16 +75,16 @@ La precisión del 100% debe interpretarse con cautela: sin conocer el tamaño de
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente, incluidas GTX 1650, RTX 3050, RTX 4060 o superiores. En el extremo profesional, una A100 o H100 estaría enormemente sobredimensionada para este modelo salvo por motivos de agregación de muchas peticiones concurrentes.
 - Compatibilidad con GPU de consumo: sí, cabe sobradamente en cualquier GPU de consumo moderna y también en iGPU con memoria unificada.
 - Ejecución en CPU y móvil: es viable en CPU mediante llama.cpp, y el tamaño del repositorio (0,4 GB) indica que está pensado para ejecutarse en dispositivos Android, que es el objetivo declarado del proyecto.
-- Opciones de despliegue: llama.cpp y Ollama son las vías naturales dado el formato GGUF; vLLM y TGI son posibles pero no están confirmados por el autor; la etiqueta `endpoints_compatible` apunta a HuggingFace Inference Endpoints como opción gestionada.
+- Opciones de despliegue: llama.cpp y Ollama son las vías naturales dado el formato GGUF; vLLM y TGI son posibles pero no están confirmados por el autor; la etiqueta `endpoints_compatible` apunta a Hugging Face Inference Endpoints como opción gestionada.
 - Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de latencia de extremo a extremo. Dado el tamaño, en hardware de consumo se puede esperar latencia muy baja, pero es una inferencia no verificada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tipo de tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ayla Intent v1.0 (`Umidix/ayla-intent-05b`) | 494 M | No disponible en la model card | Clasificacion de intenciones para launcher Android | Apache 2.0 | GGUF en HuggingFace |
-| Qwen2.5-0.5B (`Qwen/Qwen2.5-0.5B`) | 494 M | 32.768 tokens (hasta 131.072 con YaRN, según el modelo base) | Modelo base de proposito general | Apache 2.0 | Safetensors y multiples formatos en HuggingFace |
-| Qwen2.5-0.5B-Instruct (`Qwen/Qwen2.5-0.5B-Instruct`) | 494 M | 32.768 tokens | Instrucciones generales y conversacion | Apache 2.0 | Safetensors y GGUF en HuggingFace |
+| Ayla Intent v1.0 (`Umidix/ayla-intent-05b`) | 494 M | No disponible en la model card | Clasificacion de intenciones para launcher Android | Apache 2.0 | GGUF en Hugging Face |
+| Qwen2.5-0.5B (`Qwen/Qwen2.5-0.5B`) | 494 M | 32.768 tokens (hasta 131.072 con YaRN, según el modelo base) | Modelo base de proposito general | Apache 2.0 | Safetensors y multiples formatos en Hugging Face |
+| Qwen2.5-0.5B-Instruct (`Qwen/Qwen2.5-0.5B-Instruct`) | 494 M | 32.768 tokens | Instrucciones generales y conversacion | Apache 2.0 | Safetensors y GGUF en Hugging Face |
 | Otros clasificadores de intenciones de 0,5B ajustados para uz/ru/en | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas equivalentes en la informacion disponible |
 
 No se dispone de datos comparativos de rendimiento entre estos modelos para la tarea específica de enrutamiento de comandos de launcher. La comparación se limita, por tanto, a parámetros, licencia y disponibilidad.
@@ -103,7 +103,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos para la t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Umidix/ayla-intent-05b
+- Modelo en Hugging Face: https://huggingface.co/Umidix/ayla-intent-05b
 - Modelo base Qwen2.5-0.5B (referencia): https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Modelo base Qwen2.5-0.5B-Instruct (referencia): https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Paper o informe técnico del modelo: no disponible

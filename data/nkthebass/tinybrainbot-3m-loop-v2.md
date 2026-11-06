@@ -85,9 +85,9 @@ Notas del autor: ArithMark-1 evalúa expresiones estrictamente de izquierda a de
 
 | Modelo | Parametros | Arquitectura | ArithMark-3 | HellaSwag | Licencia | Disponibilidad |
 |---|--:|---|--:|--:|---|---|
-| TinyBrainBot-3M-Loop-v2 | 2,96 M | Transformer recurrente (4 blocles x 3 bucles) | 90,7 | 27,17 | Apache 2.0 | HuggingFace, safetensors |
-| TinyBrainBot-3M-Loop (v1) | 2,96 M | Transformer recurrente | 89,3 | no disponible | Apache 2.0 | HuggingFace, safetensors |
-| SmolLM2-135M | 135 M | Transformer denso | 38,8 | no disponible (en esta ficha) | Apache 2.0 | HuggingFace, amplio soporte de herramientas |
+| TinyBrainBot-3M-Loop-v2 | 2,96 M | Transformer recurrente (4 blocles x 3 bucles) | 90,7 | 27,17 | Apache 2.0 | Hugging Face, safetensors |
+| TinyBrainBot-3M-Loop (v1) | 2,96 M | Transformer recurrente | 89,3 | no disponible | Apache 2.0 | Hugging Face, safetensors |
+| SmolLM2-135M | 135 M | Transformer denso | 38,8 | no disponible (en esta ficha) | Apache 2.0 | Hugging Face, amplio soporte de herramientas |
 | Pascaline-3M | 3 M | no disponible | 69,2 | no disponible | no disponible | no disponible |
 
 En su categoría de peso (≈3 M), TinyBrainBot-3M-Loop-v2 destaca claramente en aritmética frente a alternativas densas de tamaño comparable (GPT-S3-3M: 38,9 en ArithMark-3), aunque SmolLM2-135M, pese a ser 45 veces mayor en parámetros, también queda muy por detrás en esa tarea (38,8). En benchmarks generales como HellaSwag o ARC, el rendimiento de este modelo es muy bajo, como cabe esperar de su tamaño.
@@ -106,7 +106,7 @@ En su categoría de peso (≈3 M), TinyBrainBot-3M-Loop-v2 destaca claramente en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkthebass/tinybrainbot-3m-loop-v2
+- Modelo en Hugging Face: https://huggingface.co/nkthebass/tinybrainbot-3m-loop-v2
 - Modelo predecesor: https://huggingface.co/nkthebass/tinybrainbot-3m-loop
 - Datasets de entrenamiento:
   - https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

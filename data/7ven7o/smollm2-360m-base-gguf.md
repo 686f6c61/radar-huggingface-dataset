@@ -98,6 +98,6 @@ Diferencias clave frente a las alternativas: este modelo no es instruction-tuned
 
 ## Enlaces
 
-- HuggingFace del repositorio: https://huggingface.co/7ven7o/SmolLM2-360M-Base-GGUF
+- Hugging Face del repositorio: https://huggingface.co/7ven7o/SmolLM2-360M-Base-GGUF
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos por la busqueda no guardaban relacion con el modelo y se han descartado.

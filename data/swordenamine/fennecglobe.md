@@ -2,11 +2,11 @@
 
 ## Resumen
 
-FennecGlobe (identificador `swordenamine/FennecGlobe`) no es un modelo de lenguaje ni un conjunto de pesos: es un repositorio publicado en HuggingFace cuyo contenido es una aplicacion web de una sola pagina (`index.html`, HTML + CSS + JavaScript sin paso de compilacion) que se presenta como un panel de "inteligencia global" con mapas de eventos, feeds de noticias, datos de mercado, criptomonedas, meteorologia, amenazas y un asistente llamado FennecAI. La model card describe la version 4.2.0, cuatro temas visuales, internacionalizacion en seis idiomas (ingles, arabe, frances, espanol, aleman y chino) y un peso total inferior a 150 KB, pero no documenta ninguna arquitectura de red neuronal, numero de parametros, tokenizador ni dataset de entrenamiento.
+FennecGlobe (identificador `swordenamine/FennecGlobe`) no es un modelo de lenguaje ni un conjunto de pesos: es un repositorio publicado en Hugging Face cuyo contenido es una aplicacion web de una sola pagina (`index.html`, HTML + CSS + JavaScript sin paso de compilacion) que se presenta como un panel de "inteligencia global" con mapas de eventos, feeds de noticias, datos de mercado, criptomonedas, meteorologia, amenazas y un asistente llamado FennecAI. La model card describe la version 4.2.0, cuatro temas visuales, internacionalizacion en seis idiomas (ingles, arabe, frances, espanol, aleman y chino) y un peso total inferior a 150 KB, pero no documenta ninguna arquitectura de red neuronal, numero de parametros, tokenizador ni dataset de entrenamiento.
 
 El problema que aborda es la agregacion y visualizacion de senales geopoliticas y financieras en una unica interfaz, orientada a analistas, periodistas e investigadores. Sin embargo, en el estado actual del codigo los datos se declaran como arrays estaticos en el propio `index.html` (`NEWS_DATA`, `MARKETS`, `THREATS`, `WEATHER`, `CRYPTO`, `SOCIAL`, `ALERTS`), y la propia documentacion indica que deben sustituirse por llamadas a APIs reales; es decir, la demo funciona con datos de ejemplo, no con feeds en vivo.
 
-Su relevancia ahora es limitada como modelo de IA y alta como plantilla de interfaz: sirve como esqueleto de dashboard desplegable en GitHub Pages en un solo fichero, pero no aporta capacidades de inferencia verificables. La etiqueta `region:us` en HuggingFace y la ausencia de pipeline, licencia e idiomas en los metadatos contradicen parcialmente la model card, que declara licencia MIT. La busqueda web realizada no devolvio ningun resultado relacionado con el proyecto: los enlaces obtenidos corresponden a paginas de apuestas deportivas y son irrelevantes.
+Su relevancia ahora es limitada como modelo de IA y alta como plantilla de interfaz: sirve como esqueleto de dashboard desplegable en GitHub Pages en un solo fichero, pero no aporta capacidades de inferencia verificables. La etiqueta `region:us` en Hugging Face y la ausencia de pipeline, licencia e idiomas en los metadatos contradicen parcialmente la model card, que declara licencia MIT. La busqueda web realizada no devolvio ningun resultado relacionado con el proyecto: los enlaces obtenidos corresponden a paginas de apuestas deportivas y son irrelevantes.
 
 ## Especificaciones tecnicas
 
@@ -17,8 +17,8 @@ Su relevancia ahora es limitada como modelo de IA y alta como plantilla de inter
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (no hay modelo subyacente documentado) |
 | Tipos de cuantizacion | no disponible (no se distribuyen pesos en safetensors, GGUF ni ningun otro formato) |
-| Idiomas soportados | Interfaz en ingles, arabe, frances, espanol, aleman y chino segun la model card; los metadatos de HuggingFace indican "no disponibles" |
-| Licencia | La model card declara MIT; los metadatos de HuggingFace indican "no disponible" |
+| Idiomas soportados | Interfaz en ingles, arabe, frances, espanol, aleman y chino segun la model card; los metadatos de Hugging Face indican "no disponibles" |
+| Licencia | La model card declara MIT; los metadatos de Hugging Face indican "no disponible" |
 | Formato de pesos | no disponible; el artefacto distribuido es codigo fuente (`index.html`), no pesos |
 
 ## Arquitectura y entrenamiento

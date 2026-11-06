@@ -2,7 +2,7 @@
 
 ## Resumen
 
-energy-gpt-regulatorio-v3 es un modelo multimodal de tipo image-text-to-text publicado por la organización cemig-nlp-releases en HuggingFace. Se trata de un ajuste supervisado (SFT) de una base Qwen3.5 de 4B, desarrollado en dos etapas sobre datos conversacionales y normativa técnica del sector eléctrico brasileño, concretamente en los dominios de regulación y distribución de energía. El repositorio contiene 4.539.265.536 parámetros (unos 4,54 mil millones) en formato safetensors, con un tamaño total de 9,1 GB.
+energy-gpt-regulatorio-v3 es un modelo multimodal de tipo image-text-to-text publicado por la organización cemig-nlp-releases en Hugging Face. Se trata de un ajuste supervisado (SFT) de una base Qwen3.5 de 4B, desarrollado en dos etapas sobre datos conversacionales y normativa técnica del sector eléctrico brasileño, concretamente en los dominios de regulación y distribución de energía. El repositorio contiene 4.539.265.536 parámetros (unos 4,54 mil millones) en formato safetensors, con un tamaño total de 9,1 GB.
 
 Su relevancia es acotada y muy específica: no es un modelo de propósito general, sino un modelo de dominio orientado a conversaciones técnicas y regulatorias. La model card lo describe como un refinamiento de "stage 2" sobre el checkpoint interno qwen3.5-4b-regulacao-distribuicao-mcsynth-1e5, con el encoder de visión congelado y ajuste únicamente de la torre de lenguaje y la cabeza de salida. La ficha se publica con cero descargas y cero "likes", sin licencia declarada y sin idiomas declarados.
 
@@ -25,7 +25,7 @@ El dato más llamativo es que, pese a ser un modelo multimodal con encoder de vi
 | Frameworks de entrenamiento | Axolotl 0.16.2.dev0; Transformers 5.8.1; PyTorch 2.10.0+cu130; Datasets 4.8.5; Tokenizers 0.22.2 |
 | Plantilla de chat | qwen3_5 |
 | Datasets de entrenamiento | TokenLab/CemigConvoV1.1 (split `regulacao`) y `norm_tecnicas_dist.jsonl` |
-| Compatibilidad | tag `endpoints_compatible` (HuggingFace Inference Endpoints) |
+| Compatibilidad | tag `endpoints_compatible` (Hugging Face Inference Endpoints) |
 
 ## Arquitectura y entrenamiento
 
@@ -53,7 +53,7 @@ Los hiperparámetros principales son: learning rate 5e-6 con scheduler coseno, w
 - Triaje y clasificación de consultas regulatorias: uso como primer nivel de atención para enrutar consultas hacia el área correspondiente (regulación, distribución, normativa técnica) mediante generación de etiquetas o respuestas breves.
 - Generación de borradores de respuestas a requerimientos de organismos reguladores: el modelo puede redactar un primer borrador a partir de los hechos aportados por el usuario, que después revisa un especialista humano.
 - Formación y onboarding de personal técnico: despliegue como tutor conversacional que responde dudas frecuentes sobre procedimientos de distribución y marcos regulatorios, reduciendo la carga sobre expertos senior.
-- Prototipado rápido de interfaces conversacionales de dominio: gracias al tag `endpoints_compatible`, puede desplegarse en HuggingFace Inference Endpoints para validar producto antes de invertir en infraestructura propia.
+- Prototipado rápido de interfaces conversacionales de dominio: gracias al tag `endpoints_compatible`, puede desplegarse en Hugging Face Inference Endpoints para validar producto antes de invertir en infraestructura propia.
 
 ## Benchmarks y rendimiento
 
@@ -79,7 +79,7 @@ Estas cifras corresponden exclusivamente al conjunto de validación interno (5 %
 - VRAM estimada con cuantización de 4 bits: aproximadamente 2,5-3 GB de pesos, factible en GPUs consumer de gama media con 8 GB o más.
 - GPUs recomendadas: A100 (40/80 GB), H100 o L40S para despliegue en producción con batching; RTX 4090 o RTX 3090 (24 GB) para inferencia en bf16 sin problemas; RTX 4080 (16 GB) para bf16 con secuencias cortas o cuantización.
 - Cabe en GPU consumer: sí. En bf16 en RTX 4090/3090; en 4 bits (previa conversión) en tarjetas de 8-12 GB como RTX 3060 12 GB o RTX 4060 Ti 16 GB.
-- Opciones de despliegue: transformers (librería declarada), vLLM, TGI y HuggingFace Inference Endpoints (tag `endpoints_compatible`). Para llama.cpp u Ollama sería necesaria una conversión a GGUF, ya que el repositorio solo publica safetensors.
+- Opciones de despliegue: transformers (librería declarada), vLLM, TGI y Hugging Face Inference Endpoints (tag `endpoints_compatible`). Para llama.cpp u Ollama sería necesaria una conversión a GGUF, ya que el repositorio solo publica safetensors.
 - Latencia y throughput estimados: no disponible. La información proporcionada no incluye mediciones de tokens por segundo ni latencia.
 - Nota sobre la modalidad: al tratarse de un modelo con encoder de visión, el consumo de VRAM para entradas de imagen es superior al de un modelo puramente textual del mismo tamaño; no se dispone de mediciones específicas.
 
@@ -110,7 +110,7 @@ Diferencias clave: los dos modelos comparables son de propósito general, con li
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cemig-nlp-releases/energy-gpt-regulatorio-v3
+- Modelo en Hugging Face: https://huggingface.co/cemig-nlp-releases/energy-gpt-regulatorio-v3
 - Dataset de entrenamiento (split `regulacao`): https://huggingface.co/datasets/TokenLab/CemigConvoV1.1
 - Repositorio de Axolotl (framework de entrenamiento utilizado): https://github.com/axolotl-ai-cloud/axolotl
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo, a su paper ni a demos. Las búsquedas devueltas no guardan relación con el modelo evaluado.

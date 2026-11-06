@@ -90,8 +90,8 @@ No hay informacion publicada que permita comparar este adaptador con alternativa
 
 | Artefacto | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `2026-09-11-qwen36-da-chunk-only-400-simcheck-numina-302-0` (este adaptador) | No disponible (adaptador sobre base de 27 000 M) | 8192 en entrenamiento | No publicado | No declarada | Publico en HuggingFace, 0 descargas |
-| `Qwen/Qwen3.6-27B` (modelo base) | 27 000 M (segun denominacion) | No disponible | No consultado en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| `2026-09-11-qwen36-da-chunk-only-400-simcheck-numina-302-0` (este adaptador) | No disponible (adaptador sobre base de 27 000 M) | 8192 en entrenamiento | No publicado | No declarada | Publico en Hugging Face, 0 descargas |
+| `Qwen/Qwen3.6-27B` (modelo base) | 27 000 M (segun denominacion) | No disponible | No consultado en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otros adaptadores LoRA comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -109,7 +109,7 @@ No hay informacion publicada que permita comparar este adaptador con alternativa
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/dougalldeepmind/2026-09-11-qwen36-da-chunk-only-400-simcheck-numina-302-0
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/dougalldeepmind/2026-09-11-qwen36-da-chunk-only-400-simcheck-numina-302-0
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.6-27B (revision `6a9e13bd6fc8f0983b9b99948120bc37f49c13e9`)
 - Dataset de entrenamiento: https://huggingface.co/datasets/dougalldeepmind/2026-09-11-table2-9284-difficult-advice-chunk-only-400-simcheck-numina-302-train-mixture (revision `cde5851711a142ad4792f4b6bd580a106a47b904`, fichero `t2_9284_da_chunk_only_400_simcheck_numina_302.jsonl`)
 - Repositorio de codigo del pipeline: https://github.com/Matthew-Bozoukov/teaching_claude_why_replication (commit `8f5659b77847773963bfac26319efb4319bd6f6f`)

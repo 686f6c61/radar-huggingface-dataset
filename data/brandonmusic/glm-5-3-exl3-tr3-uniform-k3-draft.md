@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| brandonmusic/GLM-5.3-EXL3-TR3-uniform-K3-draft | 3.0 bpw EXL3/TR3 (expertos) | 1M tokens | ShapleyMCG v1.0 | Repositorio HuggingFace (draft) |
-| brandonmusic/GLM-5.2-EXL3-TR3-3.0bpw | 3.0 bpw EXL3/TR3 | no disponible | no disponible | Repositorio HuggingFace |
-| brandonmusic/GLM-5.3-Flash-EXL3-4bpw | 4.0 bpw EXL3/TR3 | no disponible | no disponible | Repositorio HuggingFace |
-| zai-org/GLM-5.3-BF16 (modelo base) | BF16 | 1M tokens | GLM-5.3 License (no MIT) | Repositorio HuggingFace oficial |
+| brandonmusic/GLM-5.3-EXL3-TR3-uniform-K3-draft | 3.0 bpw EXL3/TR3 (expertos) | 1M tokens | ShapleyMCG v1.0 | Repositorio Hugging Face (draft) |
+| brandonmusic/GLM-5.2-EXL3-TR3-3.0bpw | 3.0 bpw EXL3/TR3 | no disponible | no disponible | Repositorio Hugging Face |
+| brandonmusic/GLM-5.3-Flash-EXL3-4bpw | 4.0 bpw EXL3/TR3 | no disponible | no disponible | Repositorio Hugging Face |
+| zai-org/GLM-5.3-BF16 (modelo base) | BF16 | 1M tokens | GLM-5.3 License (no MIT) | Repositorio Hugging Face oficial |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/brandonmusic/GLM-5.3-EXL3-TR3-uniform-K3-draft
+- Repositorio Hugging Face: https://huggingface.co/brandonmusic/GLM-5.3-EXL3-TR3-uniform-K3-draft
 - Repositorio del modelo base: https://huggingface.co/zai-org/GLM-5.3-BF16
 - Repositorio relacionado (GLM-5.2 cuantizado): https://huggingface.co/brandonmusic/GLM-5.2-EXL3-TR3-3.0bpw
 - Repositorio relacionado (GLM-5.3 Flash cuantizado): https://huggingface.co/brandonmusic/GLM-5.3-Flash-EXL3-4bpw

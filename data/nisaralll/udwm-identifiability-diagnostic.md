@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo de lenguaje ni un agente entrenado, sino un **artefacto de diagnóstico** para investigación en aprendizaje por refuerzo basado en modelos (model-based RL). El autor, `nisaralll`, ha publicado un conjunto de checkpoints de PyTorch que reproducen de forma mínima y reproducible un fallo de identificabilidad en la destilación que preserva incertidumbre para world models de difusión. El problema central es que la pérdida estándar "decision-aware" iguala el desacuerdo de valor entre profesor y estudiante en un único latente compartido, lo que produce una estadística que mezcla dos incógnitas: la incertidumbre epistémica y la dispersión aleatoria. El estudiante puede igualar esa estadística intercambiando una por otra, perdiendo así la señal epistémica que necesita una decisión de gating.
+Este repositorio de Hugging Face no contiene un modelo de lenguaje ni un agente entrenado, sino un **artefacto de diagnóstico** para investigación en aprendizaje por refuerzo basado en modelos (model-based RL). El autor, `nisaralll`, ha publicado un conjunto de checkpoints de PyTorch que reproducen de forma mínima y reproducible un fallo de identificabilidad en la destilación que preserva incertidumbre para world models de difusión. El problema central es que la pérdida estándar "decision-aware" iguala el desacuerdo de valor entre profesor y estudiante en un único latente compartido, lo que produce una estadística que mezcla dos incógnitas: la incertidumbre epistémica y la dispersión aleatoria. El estudiante puede igualar esa estadística intercambiando una por otra, perdiendo así la señal epistémica que necesita una decisión de gating.
 
 El artefacto incluye seis variantes de checkpoints que van desde la línea base ingenua hasta la corrección combinada, todas sobre el entorno `DelayedBimodal-v0` con semilla 0. No se trata de un modelo con arquitectura transformer ni con parámetros de lenguaje; es un conjunto de pesos de un world model de difusión (conjunto de profesores y estudiante de un paso), un actor, un crítico y una red de incertidumbre. La relevancia actual radica en que la calibración de incertidumbre es crítica para el RL seguro, y este repositorio permite estudiar y evitar el colapso epistémico en la destilación de world models.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks de lenguaje porque el artefacto no 
 
 ## Requisitos de hardware
 
-No se proporcionan requisitos de hardware en la documentación del repositorio. El tamaño del repositorio en HuggingFace es de 0.0 GB, pero esto no indica el tamaño real de los checkpoints. Los archivos `.pt` se cargan con `torch.load` y pueden inspeccionarse en CPU para análisis estático, pero no hay estimaciones de VRAM, latencia ni throughput. No se recomienda el despliegue con vLLM, llama.cpp, Ollama o TGI, ya que no es un modelo de lenguaje servible; el uso previsto es dentro del entorno de investigación en PyTorch del repositorio fuente.
+No se proporcionan requisitos de hardware en la documentación del repositorio. El tamaño del repositorio en Hugging Face es de 0.0 GB, pero esto no indica el tamaño real de los checkpoints. Los archivos `.pt` se cargan con `torch.load` y pueden inspeccionarse en CPU para análisis estático, pero no hay estimaciones de VRAM, latencia ni throughput. No se recomienda el despliegue con vLLM, llama.cpp, Ollama o TGI, ya que no es un modelo de lenguaje servible; el uso previsto es dentro del entorno de investigación en PyTorch del repositorio fuente.
 
 ## Comparativa con modelos similares
 
@@ -80,5 +80,5 @@ No se disponen de modelos comparables externos en la información proporcionada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nisaralll/udwm-identifiability-diagnostic
+- Hugging Face: https://huggingface.co/nisaralll/udwm-identifiability-diagnostic
 - Repositorio fuente en GitHub: https://github.com/nisaral/uncertainty-diffusion-world-models

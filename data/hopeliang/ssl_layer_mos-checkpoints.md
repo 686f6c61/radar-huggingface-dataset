@@ -70,6 +70,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/HopeLiang/SSL_Layer_MOS-checkpoints
+- Repositorio de Hugging Face: https://huggingface.co/HopeLiang/SSL_Layer_MOS-checkpoints
 - Repositorio de código en GitHub: https://github.com/Hope-Liang/SSL_Layer_MOS
 - Paper asociado: *Selection of Layers from Self-supervised Learning Models for Predicting Mean-Opinion-Score of Speech* (IEEE ASRU 2025) - no se proporciona enlace directo en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario SADCXZ21EDSA bajo el identificador `SADCXZ21EDSA/MyAwesomeModel-TestRepo`. Pese al nombre, la informacion disponible indica que se trata de un repositorio de prueba: acumula 0 descargas y 0 likes, el tamano del repositorio figura como 0,0 GB y no se ha publicado informacion sobre el numero de parametros, la longitud de contexto ni los idiomas soportados. Las etiquetas del repositorio lo clasifican como `transformers`, `pytorch`, `bert` y con pipeline `feature-extraction`, lo que sugiere un modelo basado en la arquitectura BERT orientado a la extraccion de representaciones, si bien esto no se puede confirmar con los datos disponibles.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario SADCXZ21EDSA bajo el identificador `SADCXZ21EDSA/MyAwesomeModel-TestRepo`. Pese al nombre, la informacion disponible indica que se trata de un repositorio de prueba: acumula 0 descargas y 0 likes, el tamano del repositorio figura como 0,0 GB y no se ha publicado informacion sobre el numero de parametros, la longitud de contexto ni los idiomas soportados. Las etiquetas del repositorio lo clasifican como `transformers`, `pytorch`, `bert` y con pipeline `feature-extraction`, lo que sugiere un modelo basado en la arquitectura BERT orientado a la extraccion de representaciones, si bien esto no se puede confirmar con los datos disponibles.
 
 La model card del autor describe en cambio un supuesto modelo de razonamiento con modo de pensamiento, mejoras en tareas de matematicas y programacion, y resultados en AIME 2025. Esta descripcion es incompatible con las etiquetas tecnicas del repositorio (BERT, feature-extraction) y con el hecho de que el repositorio este vacio, por lo que debe tratarse como material no verificado y potencialmente generico o de plantilla.
 
@@ -23,7 +23,7 @@ Por su relevancia practica, el repositorio no es apto para evaluacion tecnica ni
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura interna, el numero de capas, la dimension oculta, el numero de cabezas de atencion ni el mecanismo de atencion empleado. La unica referencia tecnica es la etiqueta `bert` del repositorio de HuggingFace, que apunta a un transformer encoder de tipo BERT, y la etiqueta de pipeline `feature-extraction`, que indica un uso previsto de generacion de embeddings en lugar de generacion de texto. No hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de ajuste como RLHF, DPO o SFT.
+No se dispone de informacion verificable sobre la arquitectura interna, el numero de capas, la dimension oculta, el numero de cabezas de atencion ni el mecanismo de atencion empleado. La unica referencia tecnica es la etiqueta `bert` del repositorio de Hugging Face, que apunta a un transformer encoder de tipo BERT, y la etiqueta de pipeline `feature-extraction`, que indica un uso previsto de generacion de embeddings en lugar de generacion de texto. No hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de ajuste como RLHF, DPO o SFT.
 
 La model card del autor describe un proceso de post-entrenamiento con "recursos computacionales incrementados" y "mecanismos de optimizacion algoritmica", asi como un aumento del numero medio de tokens de razonamiento por pregunta en AIME de 12K a 23K entre versiones. Sin embargo, estos textos no van acompanados de detalles tecnicos verificables (arquitectura, numero de tokens, mezcla de datos, hiperparametros) y contradicen las etiquetas tecnicas del repositorio. Tambien se menciona un supuesto modelo derivado denominado MyAwesomeModel-Small que compartiria tokenizer con el modelo principal, sin mas especificaciones.
 
@@ -114,6 +114,6 @@ Las cifras de los modelos de referencia corresponden a sus especificaciones publ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SADCXZ21EDSA/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/SADCXZ21EDSA/MyAwesomeModel-TestRepo
 - Resultados de busqueda web: no se han encontrado enlaces relevantes. Las URL devueltas (https://www.tjk.org/, https://online.tjk.org/, https://www2.tjk.org/, https://tr.tjk.org/) no estan relacionadas con el modelo.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles.

@@ -76,5 +76,5 @@ No disponible. La informacion proporcionada no identifica el modelo base con suf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Holo4-27B-MTP-Repacked-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Holo4-27B-MTP-Repacked-GGUF
 - Modelo base referenciado: https://huggingface.co/prithivMLmods/Holo4-27B-MTP-Repacked

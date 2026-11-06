@@ -76,7 +76,7 @@ MobileNetV4 conv small ofrece una precision intermedia entre MobileNetV3 Small y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/mobilenetv4_conv_small_e2400_r224_in1k
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/mobilenetv4_conv_small_e2400_r224_in1k
 - Checkpoint original timm: https://huggingface.co/timm/mobilenetv4_conv_small.e2400_r224_in1k
 - Version ONNX del checkpoint: https://huggingface.co/onnx-community/mobilenetv4_conv_small.e2400_r224_in1k
 - Articulo arXiv: https://arxiv.org/abs/2404.10518

@@ -4,7 +4,7 @@
 
 bunnycore/LMF2.5-2.6B-Hunter es un adaptador LoRA (PEFT) creado por el usuario bunnycore sobre el modelo base LiquidAI/LFM2.5-2.6B. Se trata de un ajuste fino de bajo rango con 4.718.592 parámetros, publicado en formato safetensors. El repositorio no contiene los pesos del modelo base ni instrucciones de uso, y la model card es una plantilla sin información detallada. Al ser un adaptador, no puede utilizarse de forma autónoma y requiere cargar el modelo base junto con los pesos del adaptador.
 
-El modelo está etiquetado en HuggingFace con las categorías peft, safetensors, gguf, transformers, unsloth y text-generation. Sin embargo, no se han publicado especificaciones técnicas, datos de entrenamiento, benchmarks ni casos de uso en la información disponible.
+El modelo está etiquetado en Hugging Face con las categorías peft, safetensors, gguf, transformers, unsloth y text-generation. Sin embargo, no se han publicado especificaciones técnicas, datos de entrenamiento, benchmarks ni casos de uso en la información disponible.
 
 ## Especificaciones técnicas
 

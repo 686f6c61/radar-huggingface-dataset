@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables específicos para esta t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smthem/H3-World-Comfy
+- Hugging Face: https://huggingface.co/smthem/H3-World-Comfy
 - GitHub (hub de MiniMax H3): https://github.com/ai-models-lab/minimax-h3
 - Artículo en ComfyUI Wiki sobre H3-World: https://comfyui-wiki.com/en/news/2026-09-03-h3-world
 - Página oficial de MiniMax H3 en Comfy: https://comfy.org/minimax-h3/

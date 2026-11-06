@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Tayo es un modelo publicado en HuggingFace bajo el identificador `vhhhhvvhhvhv/tayo` por el usuario `vhhhhvvhhvhv`. La model card asociada es practicamente vacia: unicamente declara la licencia Apache 2.0 y no incluye descripcion, arquitectura, tamano ni datos de entrenamiento. El repositorio registra cero descargas y cero likes en el momento de la consulta, y la fecha de creacion y ultima actualizacion coinciden (26 de octubre de 2026), lo que sugiere un artefacto recien subido y sin documentar.
+Tayo es un modelo publicado en Hugging Face bajo el identificador `vhhhhvvhhvhv/tayo` por el usuario `vhhhhvvhhvhv`. La model card asociada es practicamente vacia: unicamente declara la licencia Apache 2.0 y no incluye descripcion, arquitectura, tamano ni datos de entrenamiento. El repositorio registra cero descargas y cero likes en el momento de la consulta, y la fecha de creacion y ultima actualizacion coinciden (26 de octubre de 2026), lo que sugiere un artefacto recien subido y sin documentar.
 
-No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. Tampoco hay pipeline declarado en los metadatos de HuggingFace, por lo que no es posible confirmar si se trata de un modelo de lenguaje, un modelo de vision, un adaptador o cualquier otro tipo de artefacto.
+No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. Tampoco hay pipeline declarado en los metadatos de Hugging Face, por lo que no es posible confirmar si se trata de un modelo de lenguaje, un modelo de vision, un adaptador o cualquier otro tipo de artefacto.
 
 Dada la ausencia total de documentacion tecnica y de resultados publicados, esta ficha se limita a reflejar los pocos datos verificables disponibles y marca explicitamente como "no disponible" todo aquello que no puede confirmarse. Cualquier evaluacion de sus capacidades requeriria inspeccionar directamente los archivos del repositorio y ejecutar pruebas propias.
 
@@ -45,7 +45,7 @@ No es posible recomendar casos de uso concretos sin informacion verificable sobr
 - Investigacion de artefactos: analizar el repositorio para entender que tipo de pesos contiene (modelo completo, adaptador LoRA, checkpoint parcial) y documentar su estructura.
 - Pruebas de integracion en pipelines: verificar si los pesos cargan correctamente en frameworks como transformers, vLLM o llama.cpp antes de disenar cualquier flujo de produccion.
 - Analisis de licencia: al estar bajo Apache 2.0, el artefacto podria reutilizarse comercialmente si sus pesos y procedencia son verificables, pero esto requiere auditoria previa.
-- Docencia y formacion: emplearlo como ejemplo de repositorio sin documentar para ilustrar buenas practicas de publicacion de modelos en HuggingFace.
+- Docencia y formacion: emplearlo como ejemplo de repositorio sin documentar para ilustrar buenas practicas de publicacion de modelos en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -65,7 +65,7 @@ No es posible establecer una comparativa fiable porque se desconocen el tamano, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Tayo (`vhhhhvvhhvhv/tayo`) | no disponible | no disponible | Apache 2.0 | HuggingFace, sin descargas registradas |
+| Tayo (`vhhhhvvhhvhv/tayo`) | no disponible | no disponible | Apache 2.0 | Hugging Face, sin descargas registradas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,5 +81,5 @@ No es posible establecer una comparativa fiable porque se desconocen el tamano, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vhhhhvvhhvhv/tayo
+- Repositorio en Hugging Face: https://huggingface.co/vhhhhvvhhvhv/tayo
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

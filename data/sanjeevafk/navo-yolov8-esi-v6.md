@@ -83,7 +83,7 @@ No se dispone de datos comparativos publicados con otros detectores de sonar de 
 
 | Modelo | Parámetros | Contexto/entrada | Clases | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NAVO YOLOv8-ESI v6 | 3,03 M | 640×640 | 4 (sonar) | Apache 2.0 | ONNX en HuggingFace |
+| NAVO YOLOv8-ESI v6 | 3,03 M | 640×640 | 4 (sonar) | Apache 2.0 | ONNX en Hugging Face |
 | YOLOv8 nano (referencia) | ~3,2 M | 640×640 | 80 (COCO) | AGPL-3.0 | Ultralytics |
 | YOLOv8 small (referencia) | ~11,2 M | 640×640 | 80 (COCO) | AGPL-3.0 | Ultralytics |
 
@@ -103,7 +103,7 @@ La comparación con otros detectores específicos de sonar (por ejemplo, variant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanjeevafk/navo-yolov8-esi-v6
+- Modelo en Hugging Face: https://huggingface.co/sanjeevafk/navo-yolov8-esi-v6
 - Repositorio GitHub del proyecto NAVO: https://github.com/sanjeevafk/navo
 - API de Meta para SAM 3.1 y Muse: https://api.meta.ai
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

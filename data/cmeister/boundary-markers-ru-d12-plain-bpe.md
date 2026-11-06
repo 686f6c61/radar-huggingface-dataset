@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cmeister/boundary-markers-ru-d12-plain-bpe` es un artefacto de investigación publicado en HuggingFace que contiene tres modelos de lenguaje en ruso (semillas 0, 1 y 2) entrenados con el mismo procedimiento y datos, y que difieren únicamente en la semilla de inicialización y en el orden de lectura de los shards. El objetivo declarado por el autor no es ofrecer un modelo de propósito general, sino servir de **línea base** en un estudio comparativo sobre tokenizadores: en concreto, sobre vocabularios subword que marcan explícitamente las fronteras de palabra, según el artículo *Explicit Boundary Markers for Subword Vocabularies* (arXiv:2608.08847) de Sander Land y Clara Meister. Este repositorio implementa el esquema `plain`, es decir, pretokenización con codificación SCRIPT y **sin** marcadores de frontera.
+`cmeister/boundary-markers-ru-d12-plain-bpe` es un artefacto de investigación publicado en Hugging Face que contiene tres modelos de lenguaje en ruso (semillas 0, 1 y 2) entrenados con el mismo procedimiento y datos, y que difieren únicamente en la semilla de inicialización y en el orden de lectura de los shards. El objetivo declarado por el autor no es ofrecer un modelo de propósito general, sino servir de **línea base** en un estudio comparativo sobre tokenizadores: en concreto, sobre vocabularios subword que marcan explícitamente las fronteras de palabra, según el artículo *Explicit Boundary Markers for Subword Vocabularies* (arXiv:2608.08847) de Sander Land y Clara Meister. Este repositorio implementa el esquema `plain`, es decir, pretokenización con codificación SCRIPT y **sin** marcadores de frontera.
 
 Cada modelo es un transformer decoder-only de 12 capas, ancho 768 y 6 cabezas de atención, con una longitud de contexto de 2.048 tokens, entrenado con [nanochat](https://github.com/karpathy/nanochat) (commit `92d63d4`) durante 2.553 pasos de 524.288 tokens, lo que suma 1.340 millones de tokens procesados. El tokenizador es un BPE entrenado sobre una muestra de 5 GB de Russian FineWeb, con un vocabulario de 34.685 entradas más un token de inicio de secuencia (34.686 en total). Los pesos se publican como state dicts de PyTorch, no como GGUF ni safetensors.
 
@@ -86,7 +86,7 @@ No se proporcionan en la informacion disponible modelos externos comparables con
 
 | Modelo | Tokenizador | Arquitectura | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (`plain`) | BPE sin marcadores de frontera | 12 capas, ancho 768, 6 cabezas | 2.048 | ru | Apache 2.0 | HuggingFace |
+| Este modelo (`plain`) | BPE sin marcadores de frontera | 12 capas, ancho 768, 6 cabezas | 2.048 | ru | Apache 2.0 | Hugging Face |
 | Variantes con marcadores explicitos del mismo estudio | BPE con marcadores de frontera | identica (mismos datos, tokens y semilla) | 2.048 | ru | no disponible | repositorio script_tok |
 | Modelos del articulo en ingles | esquemas equivalentes en ingles | no disponible | no disponible | en | no disponible | articulo arXiv:2608.08847 |
 
@@ -104,11 +104,11 @@ Las cifras en bits por byte de este modelo no deben compararse con las de otras 
 - Los valores de bits por byte solo son comparables dentro del mismo idioma.
 - Licencia Apache 2.0: permite uso comercial, pero no se ofrece ninguna garantia y el modelo no esta disenado ni validado para ello.
 - No hay soporte oficial de frameworks de inferencia conocidos; cargar los pesos requiere el codigo de nanochat y comprobar el sha256 de los ficheros mediante `archive.json`.
-- No se declara pipeline en HuggingFace ni existe version cuantizada, por lo que no hay una ruta directa a despliegue ligero en CPU o GPU de gama baja.
+- No se declara pipeline en Hugging Face ni existe version cuantizada, por lo que no hay una ruta directa a despliegue ligero en CPU o GPU de gama baja.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmeister/boundary-markers-ru-d12-plain-bpe
+- Modelo en Hugging Face: https://huggingface.co/cmeister/boundary-markers-ru-d12-plain-bpe
 - Articulo *Explicit Boundary Markers for Subword Vocabularies* (Sander Land y Clara Meister): https://arxiv.org/abs/2608.08847
 - Repositorio script_tok (tokenizador y utilidades del estudio): https://github.com/sanderland/script_tok
 - nanochat (framework de entrenamiento, commit `92d63d4`): https://github.com/karpathy/nanochat

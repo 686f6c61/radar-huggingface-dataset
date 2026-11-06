@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`lenhanbo/mfm_checkpoint` es un repositorio de pesos alojado en HuggingFace por el usuario `lenhanbo`, publicado bajo licencia Apache 2.0. El nombre sugiere que se trata de un "checkpoint" (instantánea de pesos) de un modelo denominado internamente "mfm", pero no hay informacion publica que confirme la arquitectura, el tamano ni el proposito del modelo.
+`lenhanbo/mfm_checkpoint` es un repositorio de pesos alojado en Hugging Face por el usuario `lenhanbo`, publicado bajo licencia Apache 2.0. El nombre sugiere que se trata de un "checkpoint" (instantánea de pesos) de un modelo denominado internamente "mfm", pero no hay informacion publica que confirme la arquitectura, el tamano ni el proposito del modelo.
 
-La model card del repositorio no contiene mas que la declaracion de licencia en su frontmatter; no se incluye descripcion, ficha tecnica, instrucciones de uso ni datos de entrenamiento. El repositorio no tiene descargas ni "likes", y no esta asociado a ninguna pipeline declarada en HuggingFace.
+La model card del repositorio no contiene mas que la declaracion de licencia en su frontmatter; no se incluye descripcion, ficha tecnica, instrucciones de uso ni datos de entrenamiento. El repositorio no tiene descargas ni "likes", y no esta asociado a ninguna pipeline declarada en Hugging Face.
 
 En el momento de redactar esta ficha no es posible evaluar el modelo con rigor: no se dispone de especificaciones, benchmarks, ejemplos de uso ni documentacion adicional. Esta ficha se limita a registrar la informacion verificable y a marcar explicitamente como "no disponible" todo aquello que el autor no ha publicado.
 
@@ -78,8 +78,8 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lenhanbo/mfm_checkpoint
-- Listado de modelos etiquetados como "checkpoint" en HuggingFace: https://huggingface.co/models?other=checkpoint
+- Repositorio en Hugging Face: https://huggingface.co/lenhanbo/mfm_checkpoint
+- Listado de modelos etiquetados como "checkpoint" en Hugging Face: https://huggingface.co/models?other=checkpoint
 - LLM Leaderboard (referencia general de comparativas, no especifica de este modelo): https://llm-stats.com/leaderboards/llm-leaderboard
 - Glosario sobre el concepto de checkpoint (Morphic): https://morphic.com/ai-glossary/checkpoint
 - Listado de modelos gratuitos (LM Market Cap, referencia general): https://lmmarketcap.com/free-ai-models

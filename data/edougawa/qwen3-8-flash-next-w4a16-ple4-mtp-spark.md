@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `edougawa/Qwen3.8-Flash-Next-W4A16-PLE4-MTP-Spark` es una versión cuantizada del modelo multimodal de Qwen, `Qwen/Qwen3.8-Flash-Next`, desarrollado por el usuario de HuggingFace edougawa. El modelo base es un MoE ultra-sparse de 125B parámetros lógicos (con 6B activos por token) más una tabla de embedding n-gram (PLE) de 51.2B parámetros, lo que suma 176B parámetros lógicos. Esta variante aplica una cuantización heterogénea INT4/BF16 (esquema W4A16, grupo 128, RTN) que reduce el peso almacenado a 88.39 GiB, conservando la torre de visión, el módulo MTP (Multi-Token Prediction) y el embedding PLE, con el objetivo principal de ejecutarse en hardware NVIDIA DGX Spark (GB10) con memoria unificada limitada.
+El modelo `edougawa/Qwen3.8-Flash-Next-W4A16-PLE4-MTP-Spark` es una versión cuantizada del modelo multimodal de Qwen, `Qwen/Qwen3.8-Flash-Next`, desarrollado por el usuario de Hugging Face edougawa. El modelo base es un MoE ultra-sparse de 125B parámetros lógicos (con 6B activos por token) más una tabla de embedding n-gram (PLE) de 51.2B parámetros, lo que suma 176B parámetros lógicos. Esta variante aplica una cuantización heterogénea INT4/BF16 (esquema W4A16, grupo 128, RTN) que reduce el peso almacenado a 88.39 GiB, conservando la torre de visión, el módulo MTP (Multi-Token Prediction) y el embedding PLE, con el objetivo principal de ejecutarse en hardware NVIDIA DGX Spark (GB10) con memoria unificada limitada.
 
 La relevancia de este modelo radica en que permite desplegar un sistema de última generación con ventana de contexto nativa de 262.144 tokens y capacidades multimodales en un equipo de escritorio de gama alta, sin necesidad de un clúster de GPUs. La cuantización es data-free (RTN sin calibración), lo que simplifica la reproducción, pero a cambio muchas validaciones de rendimiento y compatibilidad no se han realizado, como se detalla en la model card. Es una opción interesante para desarrolladores que quieran experimentar con arquitecturas híbridas GDN+QSA y decodificación especulativa en entornos locales, siempre que acepten los riesgos asociados a la falta de validación.
 
@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (base) | 176B lógicos (125B + 51B PLE) | 262K | BF16 (sin cuantizar) | qwen-community-1.0 | HuggingFace |
-| Qwen3.8-Flash-Next-W4A16-PLE4-MTP-Spark (este modelo) | 135.2B almacenados (179.9B lógicos) | 262K (ext. 393K no validada) | INT4/BF16 heterogéneo | qwen-community-1.0 | HuggingFace |
+| Qwen3.8-Flash-Next (base) | 176B lógicos (125B + 51B PLE) | 262K | BF16 (sin cuantizar) | qwen-community-1.0 | Hugging Face |
+| Qwen3.8-Flash-Next-W4A16-PLE4-MTP-Spark (este modelo) | 135.2B almacenados (179.9B lógicos) | 262K (ext. 393K no validada) | INT4/BF16 heterogéneo | qwen-community-1.0 | Hugging Face |
 | Qwen3.8 (serie densa, según GitHub) | No disponible | No disponible | No disponible | qwen-community-1.0 | GitHub |
 
 La comparativa se limita al modelo base y a la serie Qwen3.8 en general, ya que no se dispone de datos de otras alternativas comparables en la información proporcionada. La principal diferencia entre el modelo base y esta variante es el tamaño del peso (88.39 GiB frente a varios cientos de GiB en BF16) y la pérdida de precisión potencial asociada a la cuantización, que no ha sido cuantificada.
@@ -76,8 +76,8 @@ La comparativa se limita al modelo base y a la serie Qwen3.8 en general, ya que 
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/edougawa/Qwen3.8-Flash-Next-W4A16-PLE4-MTP-Spark
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Modelo cuantizado en Hugging Face: https://huggingface.co/edougawa/Qwen3.8-Flash-Next-W4A16-PLE4-MTP-Spark
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Guía de vLLM para el modelo base: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next
 - Documentación de Unsloth para ejecución local: https://unsloth.ai/docs/models/qwen3.8-next

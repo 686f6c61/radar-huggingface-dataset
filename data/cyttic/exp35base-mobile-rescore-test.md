@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cyttic/exp35base-mobile-rescore-test` es un artefacto publicado en HuggingFace por el usuario cyttic que no contiene pesos de un modelo generativo, sino exclusivamente metricas de evaluacion (un fichero `results.json`) generadas por el script `TrOCR_Hebrew/exp35/make_mobile_rescore_kaggle.py`. La model card indica explicitamente que el repositorio almacena solo metricas, sin imagenes ni textos, y que corresponde a una "segunda pasada" (second pass) de un experimento denominado exp35-base realizado con pequenos modelos de lenguaje enmascarados (masked LMs) para hebreo, validado sobre el conjunto HHD.
+`cyttic/exp35base-mobile-rescore-test` es un artefacto publicado en Hugging Face por el usuario cyttic que no contiene pesos de un modelo generativo, sino exclusivamente metricas de evaluacion (un fichero `results.json`) generadas por el script `TrOCR_Hebrew/exp35/make_mobile_rescore_kaggle.py`. La model card indica explicitamente que el repositorio almacena solo metricas, sin imagenes ni textos, y que corresponde a una "segunda pasada" (second pass) de un experimento denominado exp35-base realizado con pequenos modelos de lenguaje enmascarados (masked LMs) para hebreo, validado sobre el conjunto HHD.
 
 Por tanto, no se trata de un modelo entrenado y distribuible, sino de un contenedor de resultados experimentales asociado a un pipeline de reconocimiento optico de caracteres (OCR) para hebreo basado presumiblemente en TrOCR. El identificador "mobile-rescore" sugiere una etapa de re-puntuacion (rescoring) orientada a despliegue movil, pero esta interpretacion no se confirma en la informacion disponible. El repositorio no tiene descargas ni likes y fue creado el 5 de noviembre de 2026.
 
@@ -65,7 +65,7 @@ El unico requisito real es disponer de un lector de JSON para inspeccionar `resu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/exp35base-mobile-rescore-test | no disponible | no disponible | no disponible (solo metricas en JSON) | MIT | HuggingFace, sin descargas |
+| cyttic/exp35base-mobile-rescore-test | no disponible | no disponible | no disponible (solo metricas en JSON) | MIT | Hugging Face, sin descargas |
 | TrOCR (variantes de Microsoft) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Masked LMs pequenos para hebreo (familia no especificada) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,7 +83,7 @@ No es posible establecer una comparativa tecnica real: el artefacto analizado no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cyttic/exp35base-mobile-rescore-test
+- Repositorio Hugging Face: https://huggingface.co/cyttic/exp35base-mobile-rescore-test
 - Script generador citado en la model card: `TrOCR_Hebrew/exp35/make_mobile_rescore_kaggle.py` (ruta interna, sin URL publica disponible)
 - Fichero de metricas citado: `results.json` (sin URL directa disponible en la informacion proporcionada)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SMAI A4: IOC-NN on CIFAR-10 es un modelo neuronal de clasificacion de imagenes publicado por la usuaria Poojitha376 en HuggingFace. Se trata de un perceptron multicapa (MLP) de tres capas con arquitectura `[3072, 64, 10]`, activacion ELU en la capa oculta y salida en logits para clasificacion sobre las 10 clases de CIFAR-10. El modelo cuenta con 197.322 parametros y alcanza una precision de test de 0,4541 (45,41%) tras 100 epocas de entrenamiento.
+SMAI A4: IOC-NN on CIFAR-10 es un modelo neuronal de clasificacion de imagenes publicado por la usuaria Poojitha376 en Hugging Face. Se trata de un perceptron multicapa (MLP) de tres capas con arquitectura `[3072, 64, 10]`, activacion ELU en la capa oculta y salida en logits para clasificacion sobre las 10 clases de CIFAR-10. El modelo cuenta con 197.322 parametros y alcanza una precision de test de 0,4541 (45,41%) tras 100 epocas de entrenamiento.
 
 El modelo parece ser el resultado de un trabajo practico academico (la nomenclatura "SMAI A4" sugiere una asignatura y una entrega concreta) mas que un modelo pensado para produccion. No emplea arquitecturas modernas como transformers, convoluciones o mecanismos de atencion: es una red densa que aplana cada imagen de 32x32x3 a un vector de 3072 dimensiones y la procesa con una unica capa oculta de 64 neuronas.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto/entrada | Precision CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SMAI A4 IOC-NN | 197.322 | 32x32x3 (3072 valores) | 45,41% | no disponible | HuggingFace (0 descargas) |
+| SMAI A4 IOC-NN | 197.322 | 32x32x3 (3072 valores) | 45,41% | no disponible | Hugging Face (0 descargas) |
 | MLP de referencia CIFAR-10 | no disponible | 32x32x3 | no disponible | no disponible | no disponible |
 | LeNet-5 | ~60.000 | 32x32x1 | no disponible | no disponible | no disponible |
 
@@ -86,5 +86,5 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Poojitha376/smai-a4-ioc
+- Hugging Face: https://huggingface.co/Poojitha376/smai-a4-ioc
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web.

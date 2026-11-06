@@ -84,9 +84,9 @@ Compromiso recall/falsos positivos según umbral (conjuntos externos):
 
 | Modelo | Parámetros | Contexto | F1 deepset | F1 jackhhao | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Privoid-Guard-Qwen3.5-0.8B | 0,8B | no disponible | 0,898 | 0,743 | Apache 2.0 | HuggingFace (PEFT + GGUF) |
-| Qwen3.5-0.8B (base) | 0,8B | no disponible | 0,765 | 0,743 | no disponible en la información | HuggingFace |
-| ProtectAI DeBERTa v2 | 0,18B | no disponible | 0,580 | 0,897* | no disponible en la información | HuggingFace |
+| Privoid-Guard-Qwen3.5-0.8B | 0,8B | no disponible | 0,898 | 0,743 | Apache 2.0 | Hugging Face (PEFT + GGUF) |
+| Qwen3.5-0.8B (base) | 0,8B | no disponible | 0,765 | 0,743 | no disponible en la información | Hugging Face |
+| ProtectAI DeBERTa v2 | 0,18B | no disponible | 0,580 | 0,897* | no disponible en la información | Hugging Face |
 
 \* Resultado no limpio: el conjunto jackhhao figura en los datos de entrenamiento de ProtectAI DeBERTa v2.
 
@@ -103,7 +103,7 @@ Compromiso recall/falsos positivos según umbral (conjuntos externos):
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Privoid-ai/Privoid-Guard-Qwen3.5-0.8B
+- Modelo en Hugging Face: https://huggingface.co/Privoid-ai/Privoid-Guard-Qwen3.5-0.8B
 - Versión GGUF: https://huggingface.co/Privoid-ai/Privoid-Guard-Qwen3.5-0.8B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Privoid Redact: https://huggingface.co/Privoid-ai/Privoid-Redact-4B-GGUF

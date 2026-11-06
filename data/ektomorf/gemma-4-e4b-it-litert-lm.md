@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar este modelo con otros de su categoría. El modelo base `google/gemma-4-E4B-it` no tiene una ficha técnica pública en HuggingFace, y no se han publicado resultados de rendimiento comparativos.
+No se dispone de información suficiente para comparar este modelo con otros de su categoría. El modelo base `google/gemma-4-E4B-it` no tiene una ficha técnica pública en Hugging Face, y no se han publicado resultados de rendimiento comparativos.
 
 ## Limitaciones y advertencias
 
@@ -71,11 +71,11 @@ No se dispone de información suficiente para comparar este modelo con otros de 
 - La ventana de contexto máxima es de 32K tokens, pero el rendimiento óptimo se logra con contextos más cortos (las pruebas se realizaron con 2048 tokens).
 - La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los términos de uso de Google para los modelos Gemma.
 - No se garantiza la compatibilidad con todos los dispositivos; es necesario verificar los requisitos de LiteRT-LM para cada plataforma.
-- El modelo está en fase de "0 descargas" en HuggingFace, por lo que no se ha validado ampliamente en producción.
+- El modelo está en fase de "0 descargas" en Hugging Face, por lo que no se ha validado ampliamente en producción.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EKTOMORF/gemma-4-E4B-it-litert-lm
+- Repositorio en Hugging Face: https://huggingface.co/EKTOMORF/gemma-4-E4B-it-litert-lm
 - Model card original: https://huggingface.co/google/gemma-4-E4B-it
 - Documentación de LiteRT-LM: https://ai.google.dev/edge/litert-lm/overview
 - Repositorio de LiteRT-LM en GitHub: https://github.com/google-ai-edge/LiteRT-LM

@@ -88,8 +88,8 @@ CodeGeeX4-ALL-9B ofrece el mejor equilibrio entre rendimiento y tamaño, con la 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/manaladan6/codegeex4-all-9b-GGUF)
-- [Repositorio HuggingFace del modelo original (THUDM)](https://huggingface.co/THUDM/codegeex4-all-9b)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/manaladan6/codegeex4-all-9b-GGUF)
+- [Repositorio Hugging Face del modelo original (THUDM)](https://huggingface.co/THUDM/codegeex4-all-9b)
 - [GitHub de CodeGeeX4 (THUDM)](https://github.com/THUDM/CodeGeeX4)
 - [Repositorio de zai-org/CodeGeeX4 (espejo)](https://github.com/zai-org/CodeGeeX4)
 - [Página del modelo en local-ai-zone](https://local-ai-zone.github.io/models/codegeex4-all-9b.html)

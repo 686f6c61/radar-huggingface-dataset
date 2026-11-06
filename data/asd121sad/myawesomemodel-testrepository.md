@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es, según la información disponible en HuggingFace, un modelo publicado por el usuario ASD121SAD bajo el identificador `ASD121SAD/MyAwesomeModel-TestRepository`. La model card lo describe como una versión actualizada de un modelo generativo orientado al razonamiento, con mejoras en profundidad de inferencia, matemáticas, programación y lógica, además de soporte de *function calling* y de *system prompt*. Sin embargo, el repositorio tiene un tamaño de 0.0 GB, cero descargas y cero *likes*, y su nombre incluye explícitamente la palabra "TestRepository", por lo que todo apunta a un repositorio de pruebas sin pesos publicados.
+MyAwesomeModel es, según la información disponible en Hugging Face, un modelo publicado por el usuario ASD121SAD bajo el identificador `ASD121SAD/MyAwesomeModel-TestRepository`. La model card lo describe como una versión actualizada de un modelo generativo orientado al razonamiento, con mejoras en profundidad de inferencia, matemáticas, programación y lógica, además de soporte de *function calling* y de *system prompt*. Sin embargo, el repositorio tiene un tamaño de 0.0 GB, cero descargas y cero *likes*, y su nombre incluye explícitamente la palabra "TestRepository", por lo que todo apunta a un repositorio de pruebas sin pesos publicados.
 
-No se dispone de ningún dato técnico verificable: no hay número de parámetros, no hay arquitectura confirmada, no hay longitud de contexto declarada, no hay información sobre idiomas ni sobre formatos de pesos. Las etiquetas de HuggingFace indican `transformers`, `pytorch`, `bert` y el *pipeline* `feature-extraction`, lo cual contradice frontalmente el contenido de la model card, que describe un modelo conversacional generativo con razonamiento extenso. Esa incoherencia refuerza la hipótesis de que la tarjeta es una plantilla genérica no adaptada al contenido real del repositorio.
+No se dispone de ningún dato técnico verificable: no hay número de parámetros, no hay arquitectura confirmada, no hay longitud de contexto declarada, no hay información sobre idiomas ni sobre formatos de pesos. Las etiquetas de Hugging Face indican `transformers`, `pytorch`, `bert` y el *pipeline* `feature-extraction`, lo cual contradice frontalmente el contenido de la model card, que describe un modelo conversacional generativo con razonamiento extenso. Esa incoherencia refuerza la hipótesis de que la tarjeta es una plantilla genérica no adaptada al contenido real del repositorio.
 
 Por tanto, esta ficha documenta lo que el autor declara y, de forma explícita, todo lo que no se puede confirmar. No debe utilizarse como base para decisiones de despliegue en producción: no hay artefactos que descargar ni evaluación independiente alguna.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha documenta lo que el autor declara y, de forma explícita, 
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta de HuggingFace indica `bert`, pero la model card describe un modelo generativo de razonamiento; no hay confirmación) |
+| Arquitectura | no disponible (la etiqueta de Hugging Face indica `bert`, pero la model card describe un modelo generativo de razonamiento; no hay confirmación) |
 | Parámetros totales | no disponible |
 | Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible (la model card menciona 23K tokens de media por pregunta en AIME, pero es consumo de razonamiento, no ventana de contexto) |
@@ -40,7 +40,7 @@ Todas las capacidades listadas provienen exclusivamente de las afirmaciones de l
 - Generación aumentada por recuperación (RAG) con instrucciones de filtrado y citación de resultados de búsqueda.
 - Multilingüismo: no disponible; la model card solo aporta una plantilla en inglés (`search_answer_en_template`), lo que no permite inferir la cobertura de idiomas.
 - Visión, audio o multimodalidad: no disponible; no se mencionan en la información proporcionada.
-- Extracción de características: figura como *pipeline* en HuggingFace, en contradicción con el resto de capacidades declaradas.
+- Extracción de características: figura como *pipeline* en Hugging Face, en contradicción con el resto de capacidades declaradas.
 
 ## Casos de uso
 
@@ -112,7 +112,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASD121SAD/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/ASD121SAD/MyAwesomeModel-TestRepository
 - Repositorio de código: mencionado en la model card como "our code repository", sin URL proporcionada (no disponible).
 - Sitio web oficial y plataforma de chat/API: mencionados en la model card como "official website", sin URL proporcionada (no disponible).
 - Figuras referenciadas en la model card: `figures/fig1.png`, `figures/fig2.png`, `figures/fig3.png` (rutas relativas al repositorio, no verificables).

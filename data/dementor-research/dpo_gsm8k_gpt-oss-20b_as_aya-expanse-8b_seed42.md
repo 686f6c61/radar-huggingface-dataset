@@ -78,7 +78,7 @@ No se dispone de información sobre el rendimiento relativo de estos adaptadores
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/dementor-research/dpo_gsm8k_gpt-oss-20b_as_aya-expanse-8b_seed42
+- Repositorio de Hugging Face: https://huggingface.co/dementor-research/dpo_gsm8k_gpt-oss-20b_as_aya-expanse-8b_seed42
 - Adaptador inverso (aya-expanse-8b as gpt-oss-20b): https://huggingface.co/dementor-research/dpo_gsm8k_aya-expanse-8b_as_gpt-oss-20b_seed42
 - Adaptador con llama-3.1-8b: https://huggingface.co/dementor-research/dpo_gsm8k_llama-3.1-8b_as_gpt-oss-20b_seed42
 - Adaptador con gpt-oss-120b (vía FriendliAI): https://friendli.ai/models/dementor-research/dpo_gsm8k_aya-expanse-8b_as_gpt-oss-120b_seed42

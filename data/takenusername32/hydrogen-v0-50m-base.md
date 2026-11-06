@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hydrogen-v0-50M-Base es un modelo de lenguaje base publicado en HuggingFace por el usuario takenusername32 bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 49,87 millones de parametros (49.867.793 exactos, segun los pesos en safetensors), orientado exclusivamente al idioma ingles y distribuido con un repositorio de solo 0,2 GB. Por su nomenclatura ("Base") y su tamano, encaja en la categoria de modelos pequenos de preentrenamiento, pensados mas como punto de partida para ajuste fino o experimentacion que como asistente listo para produccion.
+Hydrogen-v0-50M-Base es un modelo de lenguaje base publicado en Hugging Face por el usuario takenusername32 bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 49,87 millones de parametros (49.867.793 exactos, segun los pesos en safetensors), orientado exclusivamente al idioma ingles y distribuido con un repositorio de solo 0,2 GB. Por su nomenclatura ("Base") y su tamano, encaja en la categoria de modelos pequenos de preentrenamiento, pensados mas como punto de partida para ajuste fino o experimentacion que como asistente listo para produccion.
 
 La model card publicada es extremadamente minima: unicamente declara la licencia Apache 2.0, el idioma ingles y una dependencia externa, el repositorio de GitHub https://github.com/therealtnme/Hydrogen_v0. No se documentan la arquitectura, la longitud de contexto, el volumen de datos de entrenamiento, la composicion del dataset ni si hubo fases de alineacion como RLHF o DPO. Tampoco se han publicado resultados de benchmarks.
 
@@ -30,7 +30,7 @@ Su relevancia actual es limitada y muy especifica: se trata de un modelo con cer
 
 No se dispone de informacion sobre la arquitectura del modelo. La model card no menciona si se trata de un transformer decoder-only, un modelo MoE, una arquitectura de espacio de estados (SSM) o un diseno hibrido. Tampoco se detallan innovaciones tecnicas como atencion lineal, decodificacion especulativa, RoPE, GQA ni ninguna otra variante de atencion. El unico dato estructural fiable es el recuento de parametros obtenido de los ficheros safetensors: 49.867.793.
 
-Respecto al entrenamiento, no hay informacion publica sobre el numero de tokens utilizados, la composicion del corpus, el tokenizador empleado, el vocabulario, la estrategia de preentrenamiento ni la existencia de fases posteriores de ajuste (SFT, RLHF, DPO). La model card se limita a indicar que el modelo requiere el codigo disponible en el repositorio de GitHub del autor, lo que sugiere que la definicion de la arquitectura y posiblemente el proceso de carga dependen de ese repositorio externo y no estan embebidos en la configuracion estandar de HuggingFace.
+Respecto al entrenamiento, no hay informacion publica sobre el numero de tokens utilizados, la composicion del corpus, el tokenizador empleado, el vocabulario, la estrategia de preentrenamiento ni la existencia de fases posteriores de ajuste (SFT, RLHF, DPO). La model card se limita a indicar que el modelo requiere el codigo disponible en el repositorio de GitHub del autor, lo que sugiere que la definicion de la arquitectura y posiblemente el proceso de carga dependen de ese repositorio externo y no estan embebidos en la configuracion estandar de Hugging Face.
 
 ## Capacidades
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Hydrogen-v0-50M-Base | 49,87 M | no disponible | Apache 2.0 | HuggingFace (0 descargas) | no disponible |
-| Pythia-70M | 70 M | 2048 tokens | Apache 2.0 | HuggingFace, ampliamente documentado | Si, suite de evaluacion publicada por EleutherAI |
-| GPT-2 small | 124 M | 1024 tokens | MIT | HuggingFace, referencia historica | Si, benchmarks ampliamente citados |
-| TinyStories-33M | 33 M | 1024 tokens | no disponible en esta ficha | HuggingFace | Si, especifico de generacion de cuentos |
+| Hydrogen-v0-50M-Base | 49,87 M | no disponible | Apache 2.0 | Hugging Face (0 descargas) | no disponible |
+| Pythia-70M | 70 M | 2048 tokens | Apache 2.0 | Hugging Face, ampliamente documentado | Si, suite de evaluacion publicada por EleutherAI |
+| GPT-2 small | 124 M | 1024 tokens | MIT | Hugging Face, referencia historica | Si, benchmarks ampliamente citados |
+| TinyStories-33M | 33 M | 1024 tokens | no disponible en esta ficha | Hugging Face | Si, especifico de generacion de cuentos |
 
 La comparacion cuantitativa de rendimiento no es posible porque Hydrogen-v0-50M-Base carece de resultados publicados. En terminos de documentacion, soporte de la comunidad y trazabilidad de entrenamiento, los modelos Pythia y GPT-2 son opciones mucho mas contrastadas para cualquier proyecto que requiera justificar su eleccion tecnica.
 
@@ -95,7 +95,7 @@ La comparacion cuantitativa de rendimiento no es posible porque Hydrogen-v0-50M-
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/takenusername32/Hydrogen-v0-50M-Base
+- Hugging Face: https://huggingface.co/takenusername32/Hydrogen-v0-50M-Base
 - Repositorio requerido por el autor: https://github.com/therealtnme/Hydrogen_v0
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible

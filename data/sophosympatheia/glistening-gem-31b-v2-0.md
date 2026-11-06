@@ -73,7 +73,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace: sophosympatheia/Glistening-Gem-31B-v2.0](https://huggingface.co/sophosympatheia/Glistening-Gem-31B-v2.0)
+- [Hugging Face: sophosympatheia/Glistening-Gem-31B-v2.0](https://huggingface.co/sophosympatheia/Glistening-Gem-31B-v2.0)
 - [Versión recomendada: sophosympatheia/Glistening-Gem-31B-v2.1](https://huggingface.co/sophosympatheia/Glistening-Gem-31B-v2.1) (enlace referenciado en la model card)
 - Modelos base: [TheDrummer/Artemis-31B-v1](https://huggingface.co/TheDrummer/Artemis-31B-v1), [zerofata/G4-MeroMero-v2-31B](https://huggingface.co/zerofata/G4-MeroMero-v2-31B), [densenet/Gemma-4-31B-StyleTune-heretic-ara](https://huggingface.co/densenet/Gemma-4-31B-StyleTune-heretic-ara), [llmfan46/gemma-4-Ortenzya-The-Creative-Wordsmith-31B-it-uncensored-heretic](https://huggingface.co/llmfan46/gemma-4-Ortenzya-The-Creative-Wordsmith-31B-it-uncensored-heretic)
 - Paper referenciado en tags: [arxiv:2406.11617](https://arxiv.org/abs/2406.11617) (no se confirma su relación directa con este modelo)

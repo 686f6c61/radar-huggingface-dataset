@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `davidheineman/rlve-archive-mopd-sweep-n8-learned-teachers-2026100-02-sorting-9a1d22dad04a` es un checkpoint archivado publicado en HuggingFace por el usuario davidheineman. Segun la propia model card, se trata de la preservacion del checkpoint final de una ejecucion completada, etiquetada internamente como "02-Sorting", con un total de 29 pasos de entrenamiento y el identificador de ejecucion W&B `adbd115e`. El repositorio lleva la etiqueta `scratch-archive`, lo que indica que su proposito es conservar el estado de un experimento, no distribuir un modelo listo para produccion.
+El modelo identificado como `davidheineman/rlve-archive-mopd-sweep-n8-learned-teachers-2026100-02-sorting-9a1d22dad04a` es un checkpoint archivado publicado en Hugging Face por el usuario davidheineman. Segun la propia model card, se trata de la preservacion del checkpoint final de una ejecucion completada, etiquetada internamente como "02-Sorting", con un total de 29 pasos de entrenamiento y el identificador de ejecucion W&B `adbd115e`. El repositorio lleva la etiqueta `scratch-archive`, lo que indica que su proposito es conservar el estado de un experimento, no distribuir un modelo listo para produccion.
 
 El modelo cuenta con 1.777.088.000 parametros (aproximadamente 1,78 mil millones), un tamano que lo situa en la gama de modelos pequenos, y el repositorio ocupa 3,6 GB. Entre las etiquetas figura `qwen2`, lo que apunta a que la arquitectura subyacente esta basada en Qwen2, y `rlve`, que sugiere que el entrenamiento se realizo dentro de un marco de investigacion con aprendizaje por refuerzo (el sufijo "learned-teachers" y el nombre "mopd-sweep" apuntan a barridos de hiperparametros sobre destilacion o politica). Tambien es relevante que el campo `pipeline` no esta definido y que la licencia y los idiomas no se especifican.
 
@@ -52,7 +52,7 @@ En cuanto al entrenamiento, el nombre del checkpoint (`mopd-sweep-n8-learned-tea
 - Comparacion de barridos de hiperparametros: al formar parte de un `mopd-sweep`, puede utilizarse como punto de referencia frente a otros checkpoints de la misma familia.
 - Punto de partida para continuar un entrenamiento: al incluir el estado Megatron distribuido en `checkpoint/`, es posible reanudar o extender el entrenamiento desde el paso 29.
 - Estudio de destilacion con profesores aprendidos: permite analizar el efecto de la destilacion en un modelo de ~1,78 mil millones de parametros.
-- Auditoria de artefactos de HuggingFace: util como ejemplo de repositorio archivado con metadatos minimos, para estudiar practicas de publicacion en investigacion.
+- Auditoria de artefactos de Hugging Face: util como ejemplo de repositorio archivado con metadatos minimos, para estudiar practicas de publicacion en investigacion.
 
 No se recomienda su uso en produccion ni en aplicaciones de cara al usuario sin una evaluacion previa exhaustiva, dado que no hay datos de rendimiento ni licencia declarada.
 
@@ -74,10 +74,10 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparacion se l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rlve-archive-mopd-sweep-n8-...-02-sorting (este modelo) | ~1,78 B | no disponible | no disponible | HuggingFace (archivo, 0 descargas) |
-| Qwen2-1.5B | ~1,54 B | 32.768 tokens (segun version) | Apache 2.0 (segun version) | HuggingFace |
-| Qwen2-0.5B | ~0,49 B | 32.768 tokens (segun version) | Apache 2.0 (segun version) | HuggingFace |
-| Modelos de ~1-2 B de la familia Llama o Gemma | 1-2 B | variable | licencias propias | HuggingFace |
+| rlve-archive-mopd-sweep-n8-...-02-sorting (este modelo) | ~1,78 B | no disponible | no disponible | Hugging Face (archivo, 0 descargas) |
+| Qwen2-1.5B | ~1,54 B | 32.768 tokens (segun version) | Apache 2.0 (segun version) | Hugging Face |
+| Qwen2-0.5B | ~0,49 B | 32.768 tokens (segun version) | Apache 2.0 (segun version) | Hugging Face |
+| Modelos de ~1-2 B de la familia Llama o Gemma | 1-2 B | variable | licencias propias | Hugging Face |
 
 Los datos de Qwen2 se citan como referencia de categoria y no como afirmacion de equivalencia con el checkpoint archivado, cuyo entrenamiento y proposito son distintos.
 
@@ -95,6 +95,6 @@ Los datos de Qwen2 se citan como referencia de categoria y no como afirmacion de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n8-learned-teachers-2026100-02-sorting-9a1d22dad04a
-- Perfil del autor en HuggingFace: https://huggingface.co/davidheineman
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n8-learned-teachers-2026100-02-sorting-9a1d22dad04a
+- Perfil del autor en Hugging Face: https://huggingface.co/davidheineman
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

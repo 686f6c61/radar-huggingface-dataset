@@ -74,6 +74,6 @@ No se dispone de información sobre modelos comparables específicos para la tar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/akm85/ordo-qwen2vl-lora
+- Repositorio Hugging Face: https://huggingface.co/akm85/ordo-qwen2vl-lora
 - Repositorio GitHub del proyecto ordo: https://github.com/xpressabhi/ordo
 - Modelo base: https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct

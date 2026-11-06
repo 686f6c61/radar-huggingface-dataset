@@ -66,5 +66,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Muse-Glimmer-30B-Esper4-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Muse-Glimmer-30B-Esper4-i1-GGUF
 - Modelo original (ValiantLabs): https://huggingface.co/ValiantLabs/Muse-Glimmer-30B-Esper4

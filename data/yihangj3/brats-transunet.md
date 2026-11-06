@@ -99,7 +99,7 @@ La comparativa se limita a las variantes evaluadas en el mismo estudio. No se di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yihangj3/brats-transunet
+- Modelo en Hugging Face: https://huggingface.co/yihangj3/brats-transunet
 - Repositorio de código y documentación: https://github.com/yhj3/brats-unet-vs-transunet
 - Implementación original de TransUNet (referencia): https://github.com/Beckschen/TransUNet
 - Página personal del autor: https://yhj3.github.io

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shivanshsen7/inbox-topics-setfit` es un clasificador de texto construido con la técnica SetFit (Sentence Transformer Fine-tuning) sobre el modelo de embeddings `BAAI/bge-small-en-v1.5`. No es un modelo generativo: se trata de un clasificador de 9 clases diseñado para categorizar correos electrónicos entrantes (asuntos de bandeja de entrada) según su temática. Lo publica el usuario `shivanshsen7` en HuggingFace y, en el momento de la consulta, acumula 0 descargas y 0 likes, por lo que es un artefacto reciente y sin validación comunitaria.
+`shivanshsen7/inbox-topics-setfit` es un clasificador de texto construido con la técnica SetFit (Sentence Transformer Fine-tuning) sobre el modelo de embeddings `BAAI/bge-small-en-v1.5`. No es un modelo generativo: se trata de un clasificador de 9 clases diseñado para categorizar correos electrónicos entrantes (asuntos de bandeja de entrada) según su temática. Lo publica el usuario `shivanshsen7` en Hugging Face y, en el momento de la consulta, acumula 0 descargas y 0 likes, por lo que es un artefacto reciente y sin validación comunitaria.
 
 La arquitectura SetFit es un enfoque de aprendizaje few-shot que combina un Sentence Transformer afinado con aprendizaje contrastivo y una cabeza de clasificación ligera (en este caso, una regresión logística de scikit-learn). Esto permite obtener clasificadores competitivos con muy pocos ejemplos etiquetados por clase, algo relevante para dominios como el triaje de correo donde etiquetar datos es costoso. El modelo tiene 33.360.000 parámetros totales, una longitud máxima de secuencia de 512 tokens y ocupa 0,1 GB en el repositorio.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Los m
 - VRAM estimada para inferencia: inferior a 1 GB. El modelo tiene 33,36 M de parametros; en fp32 ocupa aproximadamente 133 MB solo en pesos, mas el overhead de activaciones y del tokenizador, muy por debajo de 1 GB.
 - GPU recomendadas: no requiere GPU. Cualquier GPU con mas de 1-2 GB (GTX 1050 Ti, RTX 3050, etc.) es mas que suficiente; tambien funciona en Apple Silicon y CPU.
 - Cabe en cualquier GPU de consumo: si, y tambien en CPU de forma holgada.
-- Opciones de despliegue: al ser un modelo SetFit, se sirve mediante la libreria `setfit`/`sentence-transformers` en Python; es compatible con Text Embeddings Inference (etiqueta `text-embeddings-inference`) y con HuggingFace Endpoints (etiqueta `endpoints_compatible`). No se documenta soporte de vLLM ni llama.cpp, ya que no es un LLM generativo.
+- Opciones de despliegue: al ser un modelo SetFit, se sirve mediante la libreria `setfit`/`sentence-transformers` en Python; es compatible con Text Embeddings Inference (etiqueta `text-embeddings-inference`) y con Hugging Face Endpoints (etiqueta `endpoints_compatible`). No se documenta soporte de vLLM ni llama.cpp, ya que no es un LLM generativo.
 - Latencia y throughput estimados: no disponibles. Dado el tamano del modelo, se espera una latencia por debajo de las decenas de milisegundos en CPU moderna, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -71,9 +71,9 @@ No se dispone de resultados de rendimiento de este modelo, por lo que la compara
 
 | Modelo | Enfoque | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `shivanshsen7/inbox-topics-setfit` | SetFit (bge-small-en-v1.5 + regresion logistica) | 33,36 M | 512 tokens | no disponible | HuggingFace (0 descargas) |
+| `shivanshsen7/inbox-topics-setfit` | SetFit (bge-small-en-v1.5 + regresion logistica) | 33,36 M | 512 tokens | no disponible | Hugging Face (0 descargas) |
 | Clasificador transformer afinado (por ejemplo, `distilbert-base-uncased`) | Fine-tuning supervisado end-to-end | mayor que SetFit en cabeza de clasificacion | tipicamente 512 tokens | depende del backbone | ampliamente disponible |
-| `BAAI/bge-small-en-v1.5` sin cabeza | Modelo de embeddings de frases | ~33 M | 512 tokens | MIT (segun su model card) | HuggingFace |
+| `BAAI/bge-small-en-v1.5` sin cabeza | Modelo de embeddings de frases | ~33 M | 512 tokens | MIT (segun su model card) | Hugging Face |
 
 Las cifras de rendimiento comparadas no estan disponibles en la informacion proporcionada.
 
@@ -90,7 +90,7 @@ Las cifras de rendimiento comparadas no estan disponibles en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shivanshsen7/inbox-topics-setfit
+- Modelo en Hugging Face: https://huggingface.co/shivanshsen7/inbox-topics-setfit
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Repositorio SetFit: https://github.com/huggingface/setfit
 - Paper de SetFit: https://arxiv.org/abs/2209.11055

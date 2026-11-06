@@ -4,7 +4,7 @@
 
 KAM 1.5B Edge GGUF es una adaptación cuantizada en formato GGUF del modelo base KAM, un modelo de generación de texto de 1.543.714.304 parámetros (aproximadamente 1,5 mil millones) desarrollado por Bahattin Yunus Çetin (usuario `bahattinyunus`). Según la model card, el modelo se presenta como un "cerebro cognitivo autónomo" que combina la ontología chamánica de la estepa altái con conceptos de cibernética moderna, el principio de energía libre de Karl Friston, telemetría de núcleo eBPF de Linux y mutación JIT en memoria con C++20. Se trata de una propuesta conceptual y experimental más que de un modelo de producción convencional.
 
-El modelo está construido, según los tags de HuggingFace, sobre las arquitecturas Qwen2.5 y DeepSeek-R1, aunque no se especifican detalles sobre el proceso de destilación, mezcla o ajuste fino. Su enfoque principal es el turco como idioma nativo, con soporte secundario de inglés, y una longitud de contexto declarada de 16.384 tokens. La distribución en formato GGUF con cuantizaciones de 4 y 8 bits está pensada para ejecución en CPU y GPU de consumo, y se ofrece integración directa con Ollama mediante el comando `ollama run hf.co/bahattinyunus/kam-1.5b-edge-gguf`.
+El modelo está construido, según los tags de Hugging Face, sobre las arquitecturas Qwen2.5 y DeepSeek-R1, aunque no se especifican detalles sobre el proceso de destilación, mezcla o ajuste fino. Su enfoque principal es el turco como idioma nativo, con soporte secundario de inglés, y una longitud de contexto declarada de 16.384 tokens. La distribución en formato GGUF con cuantizaciones de 4 y 8 bits está pensada para ejecución en CPU y GPU de consumo, y se ofrece integración directa con Ollama mediante el comando `ollama run hf.co/bahattinyunus/kam-1.5b-edge-gguf`.
 
 La relevancia del modelo es limitada en el panorama actual: no cuenta con descargas ni likes en el momento de la consulta, no se han publicado resultados de benchmarks y la documentación mezcla terminología técnica con referencias culturales y filosóficas que dificultan una evaluación rigurosa. La licencia Apache 2.0 permite uso comercial, pero la ausencia de datos verificables sobre entrenamiento y rendimiento obliga a tratarlo como un experimento de nicho.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| KAM 1.5B Edge GGUF | ~1,5B | 16.384 | Apache 2.0 | GGUF | HuggingFace, Ollama |
-| Qwen2.5-1.5B | ~1,5B | 32.768 (versión Instruct) | Apache 2.0 | safetensors, GGUF | HuggingFace, Ollama |
-| DeepSeek-R1-Distill-Qwen-1.5B | ~1,5B | 32.768 | MIT | safetensors, GGUF | HuggingFace, Ollama |
-| Llama 3.2 1B | ~1,2B | 128.000 | Llama 3.2 Community License | safetensors, GGUF | HuggingFace, Ollama |
+| KAM 1.5B Edge GGUF | ~1,5B | 16.384 | Apache 2.0 | GGUF | Hugging Face, Ollama |
+| Qwen2.5-1.5B | ~1,5B | 32.768 (versión Instruct) | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
+| DeepSeek-R1-Distill-Qwen-1.5B | ~1,5B | 32.768 | MIT | safetensors, GGUF | Hugging Face, Ollama |
+| Llama 3.2 1B | ~1,2B | 128.000 | Llama 3.2 Community License | safetensors, GGUF | Hugging Face, Ollama |
 
 La comparativa se basa en datos públicos de los modelos alternativos; para KAM no se dispone de benchmarks que permitan comparar rendimiento real. Qwen2.5-1.5B y DeepSeek-R1-Distill-Qwen-1.5B son los parientes arquitectónicos más directos según los tags del modelo, con contextos superiores y documentación técnica completa. Llama 3.2 1B ofrece un contexto mucho mayor pero con licencia restrictiva para uso comercial a gran escala.
 
@@ -85,7 +85,7 @@ La comparativa se basa en datos públicos de los modelos alternativos; para KAM 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bahattinyunus/kam-1.5b-edge-gguf
+- Hugging Face: https://huggingface.co/bahattinyunus/kam-1.5b-edge-gguf
 - GitHub del autor: https://github.com/bahattinyunus/kam
 - Perfil del autor: https://github.com/bahattinyunus
 - Repositorio base Qwen2.5 (referencia arquitectónica): https://huggingface.co/Qwen/Qwen2.5-1.5B

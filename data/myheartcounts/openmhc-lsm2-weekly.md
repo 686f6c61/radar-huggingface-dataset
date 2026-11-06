@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Contexto | Parches | Canales | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenMHC LSM2 weekly | 10.080 min (7 días) | 60 min | 19 | OpenRAIL-M | HuggingFace (`MyHeartCounts/openmhc-lsm2-weekly`) |
-| OpenMHC LSM2 daily | 1 día | no disponible | 19 | OpenRAIL-M | HuggingFace (`MyHeartCounts/openmhc-lsm2-daily`) |
+| OpenMHC LSM2 weekly | 10.080 min (7 días) | 60 min | 19 | OpenRAIL-M | Hugging Face (`MyHeartCounts/openmhc-lsm2-weekly`) |
+| OpenMHC LSM2 daily | 1 día | no disponible | 19 | OpenRAIL-M | Hugging Face (`MyHeartCounts/openmhc-lsm2-daily`) |
 | Otros modelos fundacionales de wearables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa más relevante es con LSM2-daily, del mismo autor y misma arquitectura, que difiere en la ventana de contexto y en el tamaño de parche. No se dispone de datos de rendimiento comparado entre ambos en la información proporcionada.
@@ -84,7 +84,7 @@ La comparación directa más relevante es con LSM2-daily, del mismo autor y mism
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MyHeartCounts/openmhc-lsm2-weekly
+- Hugging Face: https://huggingface.co/MyHeartCounts/openmhc-lsm2-weekly
 - Checkpoint diario relacionado: https://huggingface.co/MyHeartCounts/openmhc-lsm2-daily
 - Repositorio OpenMHC: https://github.com/AshleyLab/OpenMHC
 - Licencia: https://huggingface.co/MyHeartCounts/openmhc-lsm2-weekly/blob/main/LICENSE

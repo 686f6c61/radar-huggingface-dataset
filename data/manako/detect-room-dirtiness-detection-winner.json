@@ -5,7 +5,7 @@
   "author": "manako",
   "url": "https://huggingface.co/manako/Detect-room-dirtiness-detection-winner",
   "created_at": "2026-11-02T08:31:39.000Z",
-  "updated_at": "2026-11-02T08:46:04.000Z",
+  "updated_at": "2026-11-05T08:21:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 10674264,
-  "storage_human": "11 MB",
+  "storage_bytes": 20539595,
+  "storage_human": "21 MB",
   "base_model": null,
   "formats": [
     "onnx"

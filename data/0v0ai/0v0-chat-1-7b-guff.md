@@ -2,7 +2,7 @@
 
 ## Resumen
 
-0v0-Chat-1.7B-GUFF es un modelo de chat publicado en HuggingFace por el usuario 0v0ai bajo licencia Apache 2.0. El repositorio no incluye model card, ficha tecnica ni ningun otro documento: el unico contenido es el encabezado de licencia, por lo que la practica totalidad de las especificaciones (arquitectura, contexto, datos de entrenamiento, idiomas) es desconocida. El nombre del repositorio es la unica fuente de informacion disponible: sugiere un modelo de aproximadamente 1.700 millones de parametros afinado para conversacion.
+0v0-Chat-1.7B-GUFF es un modelo de chat publicado en Hugging Face por el usuario 0v0ai bajo licencia Apache 2.0. El repositorio no incluye model card, ficha tecnica ni ningun otro documento: el unico contenido es el encabezado de licencia, por lo que la practica totalidad de las especificaciones (arquitectura, contexto, datos de entrenamiento, idiomas) es desconocida. El nombre del repositorio es la unica fuente de informacion disponible: sugiere un modelo de aproximadamente 1.700 millones de parametros afinado para conversacion.
 
 La relevancia de este lanzamiento es limitada desde el punto de vista tecnico, ya que no aporta documentacion, benchmarks ni pesos verificables en el momento de redactar esta ficha. El repositorio acumula 0 descargas y 1 like, y fue creado y actualizado el 15 de septiembre de 2026.
 
@@ -20,7 +20,7 @@ Se recomienda tratar cualquier dato sobre este modelo como no confirmado hasta q
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | no disponible |
-| Identificador en HuggingFace | 0v0ai/0v0-Chat-1.7B-GUFF |
+| Identificador en Hugging Face | 0v0ai/0v0-Chat-1.7B-GUFF |
 | Pipeline declarado | no disponible |
 | Fecha de creacion | 15 de septiembre de 2026 |
 | Fecha de ultima actualizacion | 15 de septiembre de 2026 |
@@ -39,7 +39,7 @@ Tampoco se documentan innovaciones tecnicas (atencion lineal, decodificacion esp
 - Razonamiento, generacion de codigo y matematicas: no disponible.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas no esta declarado en HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas no esta declarado en Hugging Face).
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
 
 ## Casos de uso
@@ -81,7 +81,7 @@ No se dispone de datos verificables sobre este modelo ni sobre sus alternativas 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 0v0-Chat-1.7B-GUFF | 1,7B (inferido, no confirmado) | no disponible | no disponible | Apache 2.0 | repositorio en HuggingFace |
+| 0v0-Chat-1.7B-GUFF | 1,7B (inferido, no confirmado) | no disponible | no disponible | Apache 2.0 | repositorio en Hugging Face |
 | Qwen2.5-1.5B-Instruct | no disponible en esta busqueda | no disponible | no disponible | no disponible | no verificado |
 | Llama-3.2-1B-Instruct | no disponible en esta busqueda | no disponible | no disponible | no disponible | no verificado |
 | SmolLM2-1.7B-Instruct | no disponible en esta busqueda | no disponible | no disponible | no disponible | no verificado |
@@ -102,5 +102,5 @@ La busqueda web realizada no ha devuelto informacion tecnica sobre ninguno de es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0v0ai/0v0-Chat-1.7B-GUFF
+- Modelo en Hugging Face: https://huggingface.co/0v0ai/0v0-Chat-1.7B-GUFF
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

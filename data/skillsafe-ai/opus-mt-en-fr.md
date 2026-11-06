@@ -17,7 +17,7 @@ La relevancia practica esta en el nicho: traduccion EN->FR de bajo coste, reprod
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible. Las pruebas de humo del ONNX usan secuencias de encoder de 8 tokens y 4 tokens en el decoder, valores de test, no limites del modelo |
 | Tipos de cuantizacion | fp32 y q8 (ONNX Runtime) |
-| Idiomas soportados | Ingles (origen) a frances (destino). Los metadatos de HuggingFace no incluyen lista de idiomas |
+| Idiomas soportados | Ingles (origen) a frances (destino). Los metadatos de Hugging Face no incluyen lista de idiomas |
 | Licencia | apache-2.0 (la declarada por el repositorio) |
 | Formato de pesos | ONNX: `onnx/decoder_model_merged.onnx` (fp32), `onnx/decoder_model_merged_quantized.onnx` (q8), `onnx/encoder_model.onnx`. Ficheros auxiliares: `config.json`, `generation_config.json`, `tokenizer.json`, `tokenizer_config.json`, `vocab.json` |
 
@@ -37,7 +37,7 @@ La innovacion tecnica relevante aqui no es arquitectonica, sino de empaquetado y
 - Inferencia en navegador mediante `transformers.js` sobre ONNX Runtime Web (WebAssembly y, segun el runtime, WebGPU).
 - Inferencia en CPU sin GPU, gracias a las variantes fp32 y q8.
 - Decodificacion autoregresiva con cache de clave/valor, lo que reduce el coste por token generado.
-- Integracion como pipeline `translation` en el ecosistema HuggingFace.
+- Integracion como pipeline `translation` en el ecosistema Hugging Face.
 - Trazabilidad criptografica de cada artefacto (SHA-256 por fichero) y verificacion estructural del grafo ONNX.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni razonamiento multi-paso.
@@ -77,9 +77,9 @@ Ese valor de 3,8 ms corresponde a un unico paso del decoder fp32 con batch 1 y s
 
 | Modelo | Formato | Enfoque | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `skillsafe-ai/opus-mt-en-fr` | ONNX fp32 y q8, listo para transformers.js | Traduccion EN->FR con empaquetado reproducible y hashes | EN->FR | apache-2.0 declarada por el repositorio | Repositorio HuggingFace, 0 descargas, 0 likes |
-| `Xenova/opus-mt-en-fr` | ONNX | Modelo base del que se deriva esta importacion | EN->FR | no disponible en la informacion proporcionada | Repositorio HuggingFace de referencia |
-| OPUS-MT original (Helsinki-NLP) | PyTorch (safetensors/bin) | Implementacion de referencia de MarianMT para traduccion | EN->FR | no disponible en la informacion proporcionada (verificar en la ficha del modelo original) | Repositorio HuggingFace |
+| `skillsafe-ai/opus-mt-en-fr` | ONNX fp32 y q8, listo para transformers.js | Traduccion EN->FR con empaquetado reproducible y hashes | EN->FR | apache-2.0 declarada por el repositorio | Repositorio Hugging Face, 0 descargas, 0 likes |
+| `Xenova/opus-mt-en-fr` | ONNX | Modelo base del que se deriva esta importacion | EN->FR | no disponible en la informacion proporcionada | Repositorio Hugging Face de referencia |
+| OPUS-MT original (Helsinki-NLP) | PyTorch (safetensors/bin) | Implementacion de referencia de MarianMT para traduccion | EN->FR | no disponible en la informacion proporcionada (verificar en la ficha del modelo original) | Repositorio Hugging Face |
 
 Alternativas de traduccion mas generales (NLLB-200, M2M-100, MADLAD-400) cubren muchos mas pares de idiomas, pero son modelos de mayor tamano y no se dispone aqui de sus especificaciones ni de resultados comparables dentro de la informacion proporcionada, por lo que no se incluyen cifras.
 
@@ -98,7 +98,7 @@ Alternativas de traduccion mas generales (NLLB-200, M2M-100, MADLAD-400) cubren 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/opus-mt-en-fr
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/opus-mt-en-fr
 - Modelo base: https://huggingface.co/Xenova/opus-mt-en-fr
 - Commit upstream fijado: https://huggingface.co/Xenova/opus-mt-en-fr/tree/28726206f80896b90035bd99cccd5cc1e151f916
 - Repositorio del conversor y recipes: https://github.com/skillsafe-admin/skillsafe.ai-website/tree/main/models

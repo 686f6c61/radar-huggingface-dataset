@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador PEFT (Parameter-Efficient Fine-Tuning) publicado por la organizacion `gradients-io-tournaments` bajo el identificador `tournament-tourn_93dfe3ecf34f777e_20261102-85180a32-262d-46e0-8ec6-c42ea69c1a15-5EeEWvKf`. Se trata de un artefacto generado en el contexto de un torneo o competicion automatizada de ajuste fino, no de un modelo fundacional entrenado desde cero. El adaptador se aplica sobre el modelo base `gradients-io-tournaments/augmented-1023db4ccf176a1e`, que a su vez parece ser otro artefacto de la misma plataforma.
 
-La model card es practicamente una plantilla vacia: no documenta autor real, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros ni resultados de evaluacion. Toda la informacion sustantiva aparece como `[More Information Needed]`. La unica metadata fiable procede de las etiquetas de HuggingFace y del tamano del repositorio (0,1 GB), coherente con un adaptador LoRA de dimension moderada y no con un modelo completo.
+La model card es practicamente una plantilla vacia: no documenta autor real, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros ni resultados de evaluacion. Toda la informacion sustantiva aparece como `[More Information Needed]`. La unica metadata fiable procede de las etiquetas de Hugging Face y del tamano del repositorio (0,1 GB), coherente con un adaptador LoRA de dimension moderada y no con un modelo completo.
 
 Por tanto, esta ficha debe leerse como una descripcion de un artefacto experimental de trazabilidad limitada. Su relevancia practica es baja para produccion, pero puede ser de interes para quienes investigan pipelines automatizados de fine-tuning, ya que ejemplifica el tipo de salida que generan plataformas de torneos de modelos. No se dispone de informacion sobre arquitectura, contexto, cuantizacion ni capacidades reales.
 
@@ -79,8 +79,8 @@ No disponible. No se identifican en la informacion proporcionada modelos compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_93dfe3ecf34f777e_20261102-85180a32-262d-46e0-8ec6-c42ea69c1a15-5EeEWvKf
+- Repositorio Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_93dfe3ecf34f777e_20261102-85180a32-262d-46e0-8ec6-c42ea69c1a15-5EeEWvKf
 - Modelo base referenciado: https://huggingface.co/gradients-io-tournaments/augmented-1023db4ccf176a1e
-- Organizacion en HuggingFace: https://huggingface.co/gradients-io-tournaments
+- Organizacion en Hugging Face: https://huggingface.co/gradients-io-tournaments
 - Referencia citada en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact#compute

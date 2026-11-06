@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA (PEFT) publicado por el usuario `rub
 
 Según las etiquetas declaradas, el adaptador se ha entrenado con GRPO (*Group Relative Policy Optimization*) y LoRA, usando las librerías Transformers y TRL, lo que apunta a un ajuste por refuerzo orientado a un objetivo concreto de desaprendizaje sobre el modelo base de 3 000 millones de parámetros. El nombre del repositorio sugiere una variante «calentada» (*warmed*) y una «segunda ronda» (*r2*), además de un sujeto asociado a la cadena `jennifer-lopez`; esta es una inferencia a partir del nombre, no un dato confirmado en la model card.
 
-La relevancia actual del repositorio es fundamentalmente metodológica: sirve como artefacto reproducible para estudiar si el desaprendizaje selectivo degrada o no las capacidades generales del modelo base. La model card es la plantilla por defecto de HuggingFace y prácticamente todos los campos figuran como «More Information Needed», por lo que la mayor parte de los datos técnicos (licencia, idiomas, datos de entrenamiento, hiperparámetros y evaluación) no están disponibles.
+La relevancia actual del repositorio es fundamentalmente metodológica: sirve como artefacto reproducible para estudiar si el desaprendizaje selectivo degrada o no las capacidades generales del modelo base. La model card es la plantilla por defecto de Hugging Face y prácticamente todos los campos figuran como «More Information Needed», por lo que la mayor parte de los datos técnicos (licencia, idiomas, datos de entrenamiento, hiperparámetros y evaluación) no están disponibles.
 
 ## Especificaciones técnicas
 
@@ -70,17 +70,17 @@ La model card no incluye la sección de evaluación cumplimentada, no se declara
 
 | Modelo | Parametros | Contexto nativo | Licencia | Disponibilidad | Naturaleza |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Qwen2.5-3B-Instruct) | 3 090 M en el base; adaptador LoRA de 0.5 GB | No declarado (32 768 en el base) | No disponible | HuggingFace, 0 descargas, 0 likes | Adaptador PEFT para desaprendizaje |
-| Qwen/Qwen2.5-3B-Instruct | 3 090 M | 32 768 (131 072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente utilizado | Modelo instructivo generalista |
-| meta-llama/Llama-3.2-3B-Instruct | 3 210 M | 131 072 | Licencia comunitaria de Llama 3.2 | HuggingFace, con acceso aceptado | Modelo instructivo generalista |
-| microsoft/Phi-3.5-mini-instruct | 3 800 M | 131 072 | MIT | HuggingFace | Modelo instructivo orientado a razonamiento |
-| google/gemma-2-2b-it | 2 610 M | 8 192 | Licencia de Gemma | HuggingFace, con acceso aceptado | Modelo instructivo generalista |
+| Este adaptador (sobre Qwen2.5-3B-Instruct) | 3 090 M en el base; adaptador LoRA de 0.5 GB | No declarado (32 768 en el base) | No disponible | Hugging Face, 0 descargas, 0 likes | Adaptador PEFT para desaprendizaje |
+| Qwen/Qwen2.5-3B-Instruct | 3 090 M | 32 768 (131 072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente utilizado | Modelo instructivo generalista |
+| meta-llama/Llama-3.2-3B-Instruct | 3 210 M | 131 072 | Licencia comunitaria de Llama 3.2 | Hugging Face, con acceso aceptado | Modelo instructivo generalista |
+| microsoft/Phi-3.5-mini-instruct | 3 800 M | 131 072 | MIT | Hugging Face | Modelo instructivo orientado a razonamiento |
+| google/gemma-2-2b-it | 2 610 M | 8 192 | Licencia de Gemma | Hugging Face, con acceso aceptado | Modelo instructivo generalista |
 
 La comparación directa en rendimiento no es posible: este repositorio no publica métricas, mientras que los modelos de la tabla anterior cuentan con resultados de referencia en sus respectivas model cards. Además, el propósito del adaptador (desaprendizaje selectivo) difiere del de los modelos generalistas, por lo que una comparación de capacidad bruta no sería informativa sin los datos de evaluación.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla vacía de HuggingFace: no se documentan datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
+- La model card es la plantilla vacía de Hugging Face: no se documentan datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
 - No se especifica licencia, lo que impide determinar si se permite el uso comercial. Se debe contactar con el autor antes de cualquier uso en producción.
 - El repositorio registra 0 descargas y 0 likes, y fue publicado recientemente: no hay evidencia de uso ni validación por terceros.
 - Al ser un adaptador PEFT, no funciona de manera autónoma: requiere cargar Qwen/Qwen2.5-3B-Instruct, cuyos términos de licencia (Apache 2.0) sí aplican al conjunto.
@@ -94,7 +94,7 @@ La comparación directa en rendimiento no es posible: este repositorio no public
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rubenbalbastre/unlearning-r2-warmed-qwen-qwen2-5-3b-instruct-jennifer-lopez-r1
+- Repositorio Hugging Face: https://huggingface.co/rubenbalbastre/unlearning-r2-warmed-qwen-qwen2-5-3b-instruct-jennifer-lopez-r1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Preprint asociado: https://arxiv.org/abs/2608.17804
 - Librería PEFT: https://github.com/huggingface/peft

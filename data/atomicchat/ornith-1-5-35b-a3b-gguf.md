@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks detallados en la información dispo
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.5-35B-A3B (GGUF) | 35B | 3B | no disponible | no disponible | GGUF en HuggingFace |
-| Qwen 3.6-35B | 35B | no disponible | no disponible | no disponible | disponible en HuggingFace |
-| Gemma 4-31B | 31B (denso) | 31B | no disponible | no disponible | disponible en HuggingFace |
-| Muse Glimmer-30B | 30B (denso) | 30B | no disponible | no disponible | disponible en HuggingFace |
+| Ornith-1.5-35B-A3B (GGUF) | 35B | 3B | no disponible | no disponible | GGUF en Hugging Face |
+| Qwen 3.6-35B | 35B | no disponible | no disponible | no disponible | disponible en Hugging Face |
+| Gemma 4-31B | 31B (denso) | 31B | no disponible | no disponible | disponible en Hugging Face |
+| Muse Glimmer-30B | 30B (denso) | 30B | no disponible | no disponible | disponible en Hugging Face |
 
 Según el tweet de Ornith AI, Ornith-1.5-35B-A3B supera a estos tres modelos en las categorías evaluadas, pero no se aportan números. La comparativa se basa en declaraciones no verificadas de forma independiente.
 

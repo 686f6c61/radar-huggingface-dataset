@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`punesharma/generation-weights` es un repositorio de HuggingFace que contiene una implementacion de referencia de una arquitectura denominada **Cnn Transformer** orientada a tareas de generacion. Lo publica el usuario `punesharma` y su proposito declarado, segun la propia model card, es servir como codigo transparente y ejecutable para pruebas de humo (smoke tests) reproducibles, no como un modelo entrenado con capacidades reales.
+`punesharma/generation-weights` es un repositorio de Hugging Face que contiene una implementacion de referencia de una arquitectura denominada **Cnn Transformer** orientada a tareas de generacion. Lo publica el usuario `punesharma` y su proposito declarado, segun la propia model card, es servir como codigo transparente y ejecutable para pruebas de humo (smoke tests) reproducibles, no como un modelo entrenado con capacidades reales.
 
 El dato mas relevante es su escala: 49.600 parametros totales, segun el recuento real de los tensores en `model.safetensors`. Se trata, por tanto, de un checkpoint de inicializacion, no de un modelo con entrenamiento completado. La model card lo explicita: el fichero de pesos "es un checkpoint de inicializacion valido para pruebas de humo; no se presenta como un checkpoint entrenado y evaluado", y no se reclama ninguna puntuacion de benchmark.
 
@@ -37,7 +37,7 @@ En cuanto al entrenamiento, no hay evidencia de que se haya ejecutado ninguno. L
 - Capacidades multilingues: no disponible (no se declaran idiomas).
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
 - El artefacto principal es `predict.py`, un script con un ejemplo de prueba de humo en su bloque `__main__`, pensado para verificar que el codigo se ejecuta, no para evaluar calidad.
-- Al ser una implementacion personalizada, las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito antes de poder usarse.
+- Al ser una implementacion personalizada, las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito antes de poder usarse.
 
 ## Casos de uso
 
@@ -78,11 +78,11 @@ No disponible. La informacion proporcionada no identifica modelos comparables, y
 - Riesgo de alucinacion: no aplica en el sentido habitual, ya que el modelo no genera texto coherente; el riesgo real es interpretar sus salidas como si tuvieran significado.
 - No se declara longitud de contexto ni idiomas soportados, por lo que no puede garantizarse ningun comportamiento multilingue.
 - Restricciones de licencia: BSD-3-Clause permite uso comercial y modificacion con atribucion y manteniendo el aviso de licencia, pero el autor recomienda revisar por separado los terminos de los datos de origen si el repositorio se combina con datasets externos.
-- La implementacion es personalizada, por lo que los cargadores automaticos de HuggingFace requieren un adaptador explicito; no se puede asumir compatibilidad directa con ecosistemas estandar.
+- La implementacion es personalizada, por lo que los cargadores automaticos de Hugging Face requieren un adaptador explicito; no se puede asumir compatibilidad directa con ecosistemas estandar.
 - El repositorio ocupa 0,0 GB y no registra descargas ni "likes", lo que indica ausencia de validacion por parte de la comunidad.
 - Sin `config.json` ni `training_args.json` accesibles en la informacion proporcionada, no es posible verificar dimensiones de capas, numero de cabezas ni hiperparametros concretos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/punesharma/generation-weights
+- Modelo en Hugging Face: https://huggingface.co/punesharma/generation-weights
 - Resultados de busqueda web: los resultados devueltos corresponden a una ferreteria en Wittmund (Alemania) y no guardan ninguna relacion con el modelo. No se han encontrado papers, blogs, repositorios ni demos asociados a `punesharma/generation-weights`.

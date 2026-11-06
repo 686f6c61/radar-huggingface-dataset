@@ -12,7 +12,7 @@ Técnicamente, lo destacable es que ejemplifica el flujo QLoRA de Unsloth (entre
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (familia Phi-3/Phi-4); la etiqueta de HuggingFace declara `llama` |
+| Arquitectura | Transformer decoder-only denso (familia Phi-3/Phi-4); la etiqueta de Hugging Face declara `llama` |
 | Parámetros totales | 14.659.507.200 (~14,66 B), dato real de safetensors |
 | Parámetros activos | no aplica (modelo denso, no es MoE) |
 | Longitud de contexto | no disponible en la información proporcionada; el modelo base Phi-4 declara 16.384 tokens según documentación pública |
@@ -30,7 +30,7 @@ Técnicamente, lo destacable es que ejemplifica el flujo QLoRA de Unsloth (entre
 
 La arquitectura es la del modelo base: un transformer decoder-only denso de aproximadamente 14,66B parámetros, propio de la familia Phi-3/Phi-4 de Microsoft, sin mezcla de expertos ni componentes de estado recurrente. La etiqueta `llama` del repositorio corresponde a la clase de configuración usada por Unsloth para el entrenamiento, no a que el modelo descienda de Llama. El repositorio no incluye ningún detalle de configuración adicional (número de capas, dimensión oculta, cabezas de atención ni estrategia posicional), por lo que esos datos deben consultarse en la model card de Phi-4.
 
-En cuanto al entrenamiento, la model card se limita a indicar que el modelo se entrenó "2x más rápido con Unsloth y la librería TRL de HuggingFace". No se especifica el número de tokens, la composición del dataset, la técnica de alineación (SFT, DPO o RLHF), la longitud de secuencia, el rango LoRA ni la tasa de aprendizaje. Dado que el punto de partida es un checkpoint de 4 bits y que el resultado publicado ocupa exactamente dos bytes por parámetro, lo más probable es un flujo QLoRA con fusión posterior de los adaptadores, pero esto es una inferencia a partir de los tamaños y no un dato confirmado. No se documenta ninguna innovación técnica propia.
+En cuanto al entrenamiento, la model card se limita a indicar que el modelo se entrenó "2x más rápido con Unsloth y la librería TRL de Hugging Face". No se especifica el número de tokens, la composición del dataset, la técnica de alineación (SFT, DPO o RLHF), la longitud de secuencia, el rango LoRA ni la tasa de aprendizaje. Dado que el punto de partida es un checkpoint de 4 bits y que el resultado publicado ocupa exactamente dos bytes por parámetro, lo más probable es un flujo QLoRA con fusión posterior de los adaptadores, pero esto es una inferencia a partir de los tamaños y no un dato confirmado. No se documenta ninguna innovación técnica propia.
 
 ## Capacidades
 
@@ -40,7 +40,7 @@ En cuanto al entrenamiento, la model card se limita a indicar que el modelo se e
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingües: solo se declara inglés (`language: en`). No hay evidencia de soporte de castellano ni de otros idiomas.
 - Capacidades especiales (modo de razonamiento explícito, visión, audio): no disponible. Es un modelo exclusivamente de texto.
-- Compatibilidad de despliegue: incluye el tag `endpoints_compatible`, lo que indica que puede servirse en HuggingFace Inference Endpoints con la librería transformers.
+- Compatibilidad de despliegue: incluye el tag `endpoints_compatible`, lo que indica que puede servirse en Hugging Face Inference Endpoints con la librería transformers.
 
 ## Casos de uso
 
@@ -96,10 +96,10 @@ La diferencia principal frente a las alternativas no está en la arquitectura ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aliRafik/Phi_4_FineTome_100k_finetuned_16bit
+- Modelo en Hugging Face: https://huggingface.co/aliRafik/Phi_4_FineTome_100k_finetuned_16bit
 - Modelo base utilizado: https://huggingface.co/unsloth/phi-4-unsloth-bnb-4bit
 - Modelo original de Microsoft: https://huggingface.co/microsoft/phi-4
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 - Informe técnico de Phi-4: arXiv:2412.08905
 - Nota sobre la búsqueda web: los resultados devueltos (tagesschau.de y sus secciones) no guardan relación con el modelo y no se han incluido como fuentes. No se han encontrado papers, blogs, demos ni repositorios específicos de este ajuste fino.

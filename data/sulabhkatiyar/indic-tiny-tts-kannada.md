@@ -103,11 +103,11 @@ La model card presenta resultados de tasa de error de caracteres (CER) sobre dos
 
 | Modelo | Parámetros | Contexto | CER FLORES-200, % | CER retenido, % | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| Este modelo | 8,9 M (safetensors) / 22,5 M (model card) | no disponible | 1,05 | 3,66 | CC-BY-4.0 | HuggingFace, ONNX |
-| `ai4bharat/IndicF5` | 350,6 M | no disponible | 0,70 | 2,44 (40 frases) | no disponible | HuggingFace |
-| `ai4bharat/indic-parler-tts` | 937,8 M | no disponible | 2,30 | 3,27 (40 frases) | no disponible | HuggingFace |
-| `Sammy-Mohan/Kokoro-82M-Kannada` | 131,4 M | no disponible | 0,96 | 3,68 | no disponible | HuggingFace |
-| `facebook/mms-tts-kan` | 29,1 M | no disponible | 3,31 | 9,42 | no disponible | HuggingFace |
+| Este modelo | 8,9 M (safetensors) / 22,5 M (model card) | no disponible | 1,05 | 3,66 | CC-BY-4.0 | Hugging Face, ONNX |
+| `ai4bharat/IndicF5` | 350,6 M | no disponible | 0,70 | 2,44 (40 frases) | no disponible | Hugging Face |
+| `ai4bharat/indic-parler-tts` | 937,8 M | no disponible | 2,30 | 3,27 (40 frases) | no disponible | Hugging Face |
+| `Sammy-Mohan/Kokoro-82M-Kannada` | 131,4 M | no disponible | 0,96 | 3,68 | no disponible | Hugging Face |
+| `facebook/mms-tts-kan` | 29,1 M | no disponible | 3,31 | 9,42 | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -118,11 +118,11 @@ La model card presenta resultados de tasa de error de caracteres (CER) sobre dos
 - No se documentan limitaciones de longitud de contexto ni de duración máxima de audio generado.
 - Licencia CC-BY-4.0: permite uso comercial con atribución; no se especifican restricciones adicionales, pero debe citarse al autor.
 - No se han publicado métricas de naturalidad perceptual (MOS) ni evaluaciones con hablantes nativos; el CER es una métrica de inteligibilidad, no de calidad subjetiva.
-- La model card marca `inference: false`, lo que puede indicar que la inferencia automática en HuggingFace no está habilitada; el despliegue requiere cargar los pesos manualmente con PyTorch u ONNX Runtime.
+- La model card marca `inference: false`, lo que puede indicar que la inferencia automática en Hugging Face no está habilitada; el despliegue requiere cargar los pesos manualmente con PyTorch u ONNX Runtime.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sulabhkatiyar/indic-tiny-tts-kannada
+- Modelo en Hugging Face: https://huggingface.co/sulabhkatiyar/indic-tiny-tts-kannada
 - Colección INDIC TINY TTS MODELS: https://huggingface.co/collections/sulabhkatiyar/indic-tiny-tts-models-6aeae36f954418631a68676d
 - Dataset de entrenamiento: https://huggingface.co/datasets/sulabhkatiyar/indic-tts-mini-24k
 - Dataset multilingüe preparado: https://huggingface.co/datasets/sulabhkatiyar/indic-tts-multilingual-prepared

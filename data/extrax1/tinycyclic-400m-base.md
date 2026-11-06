@@ -2,9 +2,9 @@
 
 ## Resumen
 
-TinyCyclic-400M-Base es un modelo de lenguaje de tipo base publicado en HuggingFace por el usuario ExtraX1. Por su nombre y su tamano declarado (400M), se trata de un modelo compacto orientado a experimentacion y a tareas de generacion de texto con requisitos de computo muy bajos, probablemente entrenado desde cero o mediante ajuste sobre una arquitectura pequena. La model card publicada no incluye informacion sobre arquitectura, datos de entrenamiento, tokenizador ni rendimiento, por lo que la mayor parte de sus especificaciones tecnicas no esta disponible.
+TinyCyclic-400M-Base es un modelo de lenguaje de tipo base publicado en Hugging Face por el usuario ExtraX1. Por su nombre y su tamano declarado (400M), se trata de un modelo compacto orientado a experimentacion y a tareas de generacion de texto con requisitos de computo muy bajos, probablemente entrenado desde cero o mediante ajuste sobre una arquitectura pequena. La model card publicada no incluye informacion sobre arquitectura, datos de entrenamiento, tokenizador ni rendimiento, por lo que la mayor parte de sus especificaciones tecnicas no esta disponible.
 
-El modelo se distribuye bajo una licencia personalizada denominada "extra-lodl", vinculada a un fichero LICENSE en el propio repositorio. No se especifican idiomas soportados ni pipeline de inferencia en los metadatos de HuggingFace, y el repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere un lanzamiento muy reciente o un proyecto en fase inicial.
+El modelo se distribuye bajo una licencia personalizada denominada "extra-lodl", vinculada a un fichero LICENSE en el propio repositorio. No se especifican idiomas soportados ni pipeline de inferencia en los metadatos de Hugging Face, y el repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere un lanzamiento muy reciente o un proyecto en fase inicial.
 
 Su relevancia practica es limitada por la ausencia de documentacion y de resultados publicados, pero puede resultar interesante para quienes quieran experimentar con modelos de menos de 500 millones de parametros en entornos con recursos restringidos, siempre que se acepten las condiciones de la licencia personalizada y se valide su comportamiento de forma empirica.
 
@@ -23,7 +23,7 @@ Su relevancia practica es limitada por la ausencia de documentacion y de resulta
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. El nombre sugiere un modelo de aproximadamente 400 millones de parametros, pero se desconoce si emplea un transformer denso, una variante con atencion eficiente, un esquema hibrido o alguna otra aproximacion. El termino "Cyclic" del nombre podria aludir a algun mecanismo recurrente o ciclico, pero no hay documentacion que lo confirme.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. El nombre sugiere un modelo de aproximadamente 400 millones de parametros, pero se desconoce si emplea un transformer denso, una variante con atencion eficiente, un esquema hibrido o alguna otra aproximacion. El termino "Cyclic" del nombre podria aludir a algun mecanismo recurrente o ciclico, pero no hay documentacion que lo confirme.
 
 Tampoco se dispone de datos sobre el corpus de entrenamiento (numero de tokens, composicion, proporciones de codigo o multilingualidad), sobre la existencia de fases de ajuste supervisado, RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa, atencion lineal o destilacion. Toda esta seccion debe considerarse no disponible hasta que el autor publique documentacion adicional.
 
@@ -43,7 +43,7 @@ Tampoco se dispone de datos sobre el corpus de entrenamiento (numero de tokens, 
 - Generacion de texto en dispositivos con recursos limitados: por su tamano, es candidato a ejecutarse en CPU o en GPUs de gama baja, siempre que se cuantice y se validen sus resultados de forma empirica.
 - Fine-tuning especifico de dominio: al ser un modelo base, puede servir como punto de partida para ajustes supervisados en tareas acotadas (clasificacion de texto, resumen de documentos cortos) con datasets pequenos.
 - Investigacion sobre licencias y modelos personalizados: el uso de una licencia "extra-lodl" lo convierte en un caso de estudio para analizar implicaciones legales en despliegues comerciales.
-- Educacion y docencia: util para ilustrar el ciclo completo de publicacion de un modelo en HuggingFace, desde la subida de pesos hasta la definicion de la model card y la licencia.
+- Educacion y docencia: util para ilustrar el ciclo completo de publicacion de un modelo en Hugging Face, desde la subida de pesos hasta la definicion de la model card y la licencia.
 
 En todos los casos, la ausencia de benchmarks y de documentacion obliga a realizar una evaluacion propia antes de cualquier uso en produccion.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TinyCyclic-400M-Base | 400M (segun nombre) | no disponible | extra-lodl | HuggingFace |
+| TinyCyclic-400M-Base | 400M (segun nombre) | no disponible | extra-lodl | Hugging Face |
 | Alternativas de ~400M | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa rigurosa con modelos de la misma categoria. Se recomienda consultar modelos base de tamano similar ampliamente documentados (por ejemplo, variantes pequenas de familias tipo GPT-2, Pythia o Qwen) para establecer una linea base de comparacion, aunque sus datos no forman parte de la informacion proporcionada.
@@ -80,6 +80,6 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ExtraX1/TinyCyclic-400M-Base
+- Modelo en Hugging Face: https://huggingface.co/ExtraX1/TinyCyclic-400M-Base
 - Fichero de licencia: https://huggingface.co/ExtraX1/TinyCyclic-400M-Base/blob/main/LICENSE
 - Perfil del autor: https://huggingface.co/ExtraX1

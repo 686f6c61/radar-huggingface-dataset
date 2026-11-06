@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kronos-small-vn30-sft es un ajuste fino (SFT) del modelo base NeoQuasar/Kronos-small, un modelo de series temporales orientado a la previsión de precios financieros. Lo publica el usuario neikhn en HuggingFace y está entrenado sobre una instantánea fija del índice VN30 de la bolsa de Vietnam (proveedor VNDIRECT). El modelo conserva la arquitectura propietaria de Kronos y se distribuye con licencia MIT, manteniendo la atribución original.
+Kronos-small-vn30-sft es un ajuste fino (SFT) del modelo base NeoQuasar/Kronos-small, un modelo de series temporales orientado a la previsión de precios financieros. Lo publica el usuario neikhn en Hugging Face y está entrenado sobre una instantánea fija del índice VN30 de la bolsa de Vietnam (proveedor VNDIRECT). El modelo conserva la arquitectura propietaria de Kronos y se distribuye con licencia MIT, manteniendo la atribución original.
 
 El problema que aborda es la previsión multi-horizonte de velas OHLC (apertura, máximo, mínimo, cierre) sobre activos del VN30, con un protocolo de inferencia concreto: 128 sesiones históricas como entrada y 20 sesiones futuras como salida, en FP32, con media de 3 trayectorias, temperatura 1.0 y top-p 0.9. El autor lo etiqueta explícitamente como investigación exploratoria: no reclama superioridad frente a un baseline Naive ni rendimiento desplegable en trading real, y advierte de que la construcción de OHLC del proveedor no está plenamente verificada.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| neikhn/kronos-small-vn30-sft | 24,7 M | 128 sesiones de entrada / 20 de salida | Previsión OHLC VN30 | MIT | HuggingFace, 0 descargas |
-| NeoQuasar/Kronos-small | no disponible | no disponible | Previsión de series temporales (base) | no disponible en la información | HuggingFace (modelo base) |
+| neikhn/kronos-small-vn30-sft | 24,7 M | 128 sesiones de entrada / 20 de salida | Previsión OHLC VN30 | MIT | Hugging Face, 0 descargas |
+| NeoQuasar/Kronos-small | no disponible | no disponible | Previsión de series temporales (base) | no disponible en la información | Hugging Face (modelo base) |
 | Naive (baseline) | no aplica | no aplica | Persistencia del último valor | no aplica | Referencia metodológica |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neikhn/kronos-small-vn30-sft
+- Modelo en Hugging Face: https://huggingface.co/neikhn/kronos-small-vn30-sft
 - Modelo base: https://huggingface.co/NeoQuasar/Kronos-small
 - Tokenizador: https://huggingface.co/NeoQuasar/Kronos-Tokenizer-base
 - Repositorio de Kronos (implementación fijada a la revisión 67b630e67f6a18c9e9be918d9b4337c960db1e9a): no disponible como URL directa en la información proporcionada

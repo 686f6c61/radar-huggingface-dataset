@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Learning-ONBs | FPCA con bases ortonormales aprendidas | no disponible | no aplica | no disponible | HuggingFace + GitHub |
+| Learning-ONBs | FPCA con bases ortonormales aprendidas | no disponible | no aplica | no disponible | Hugging Face + GitHub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables de la misma categoria en los datos proporcionados.
@@ -80,7 +80,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shengdebao/Learning-ONBs
+- Hugging Face: https://huggingface.co/Shengdebao/Learning-ONBs
 - Paper (arXiv): https://arxiv.org/abs/2605.19959
 - Version HTML del paper: https://arxiv.org/html/2605.19959v1
 - Codigo en GitHub: https://github.com/HamidrezaKmK/Learning-ONBs

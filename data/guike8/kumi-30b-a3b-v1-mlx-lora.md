@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kumi-30B-A3B-v1-MLX-LoRA | Adaptador LoRA de 6,68M parametros entrenables sobre base MoE 30B/3B | 32.768 tokens (entrenamiento) | MLX LoRA (`adapters.safetensors`) | Apache 2.0 | HuggingFace, 0 descargas, 1 like |
-| Qwen/Qwen3-Coder-30B-A3B-Instruct | MoE 30B totales, 3B activos | No disponible en la informacion proporcionada | Safetensors | Apache 2.0 | HuggingFace (modelo base original) |
-| mlx-community/Qwen3-Coder-30B-A3B-Instruct-4bit | MoE 30B totales, 3B activos, cuantizado a 4 bits | No disponible en la informacion proporcionada | MLX cuantizado | Apache 2.0 | HuggingFace (base exacta requerida) |
+| Kumi-30B-A3B-v1-MLX-LoRA | Adaptador LoRA de 6,68M parametros entrenables sobre base MoE 30B/3B | 32.768 tokens (entrenamiento) | MLX LoRA (`adapters.safetensors`) | Apache 2.0 | Hugging Face, 0 descargas, 1 like |
+| Qwen/Qwen3-Coder-30B-A3B-Instruct | MoE 30B totales, 3B activos | No disponible en la informacion proporcionada | Safetensors | Apache 2.0 | Hugging Face (modelo base original) |
+| mlx-community/Qwen3-Coder-30B-A3B-Instruct-4bit | MoE 30B totales, 3B activos, cuantizado a 4 bits | No disponible en la informacion proporcionada | MLX cuantizado | Apache 2.0 | Hugging Face (base exacta requerida) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/guike8/Kumi-30B-A3B-v1-MLX-LoRA
+- Hugging Face del adaptador: https://huggingface.co/guike8/Kumi-30B-A3B-v1-MLX-LoRA
 - Modelo base en MLX: https://huggingface.co/mlx-community/Qwen3-Coder-30B-A3B-Instruct-4bit
 - Modelo original: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Repositorio KumiLLM: https://github.com/guike8/KumiLLM

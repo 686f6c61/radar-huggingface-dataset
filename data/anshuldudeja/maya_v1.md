@@ -56,7 +56,7 @@ Los requisitos dependen del modelo base FLUX.2-klein-base-9B, no del LoRA en sí
 - **VRAM estimada**: para inferencia en FP16, se requieren al menos 20 GB de VRAM (el modelo base tiene 9B parámetros, lo que ocupa ~18 GB en FP16). El LoRA adicional es pequeño (<0,5 GB).
 - **GPU recomendadas**: NVIDIA A100 (40/80 GB), RTX 4090 (24 GB), RTX A6000 (48 GB) o similares. En GPU con menos de 24 GB, sería necesario cuantizar el modelo base.
 - **Compatibilidad con GPU de consumo**: la RTX 4090 (24 GB) es la opción más viable para uso local, siempre que se cuantice a 8 bits o 4 bits. La RTX 3080/3090 (10-24 GB) pueden ser insuficientes para FP16.
-- **Opciones de despliegue**: diffusers (pipeline `StableDiffusionPipeline` o `FluxPipeline`), y servicios como Replicate o HuggingFace Inference Endpoints. No se recomienda vLLM ni llama.cpp porque no son para difusión.
+- **Opciones de despliegue**: diffusers (pipeline `StableDiffusionPipeline` o `FluxPipeline`), y servicios como Replicate o Hugging Face Inference Endpoints. No se recomienda vLLM ni llama.cpp porque no son para difusión.
 - **Latencia y throughput**: no disponible. Depende del hardware, del tamaño de imagen y de los pasos de muestreo. En una RTX 4090, una imagen 512x512 con 30 pasos puede tardar entre 5 y 15 segundos.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar este LoRA con otros adapt
 - **Documentación insuficiente**: la model card no proporciona detalles sobre el entrenamiento, el dataset ni los resultados esperados. Esto impide evaluar su calidad o reproducibilidad.
 - **Riesgo de sobreajuste**: al ser un LoRA de prueba, es probable que esté sobreajustado a un conjunto de imágenes muy reducido, lo que limita su generalización.
 - **Posibles sesgos**: no se han reportado sesgos, pero al no haber información sobre los datos de entrenamiento, no se puede descartar la presencia de sesgos visuales o temáticos.
-- **Uso comercial**: la licencia Apache-2.0 permite uso comercial, pero el modelo base FLUX.2-klein-base-9B tiene sus propias restricciones (consulta su licencia en HuggingFace). Se debe verificar la compatibilidad.
+- **Uso comercial**: la licencia Apache-2.0 permite uso comercial, pero el modelo base FLUX.2-klein-base-9B tiene sus propias restricciones (consulta su licencia en Hugging Face). Se debe verificar la compatibilidad.
 - **Calidad no garantizada**: al ser un adaptador experimental, los resultados pueden ser de baja calidad, incoherentes o con artefactos.
 - **No es un modelo autónomo**: requiere el modelo base FLUX.2-klein-base-9B, que tiene requisitos de hardware elevados y no es ligero.
 

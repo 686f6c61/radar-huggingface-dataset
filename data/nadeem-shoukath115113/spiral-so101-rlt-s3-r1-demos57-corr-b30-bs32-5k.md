@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SPIRAL on RLT stage 3 — round 1 es una política robótica residual entrenada sobre un modelo base congelado pi0.5 combinado con una política RLT. La desarrolla el usuario de HuggingFace Nadeem-Shoukath115113 y se publica bajo licencia Apache 2.0. No se trata de un modelo de lenguaje, sino de un sistema de control para el robot SO101, orientado a tareas de manipulación mediante aprendizaje por imitación y refuerzo residual.
+SPIRAL on RLT stage 3 — round 1 es una política robótica residual entrenada sobre un modelo base congelado pi0.5 combinado con una política RLT. La desarrolla el usuario de Hugging Face Nadeem-Shoukath115113 y se publica bajo licencia Apache 2.0. No se trata de un modelo de lenguaje, sino de un sistema de control para el robot SO101, orientado a tareas de manipulación mediante aprendizaje por imitación y refuerzo residual.
 
 El modelo implementa el algoritmo descrito como Algorithm 1, Stage 2b del artículo de referencia: parte de 57 demostraciones de teleoperación revisadas (18.189 fotogramas) etiquetadas por un modelo de recompensa RM1 (SARM2, `sarm2_gripper58`), y aplica una única actualización SPIRAL offline. Sobre la política base se añade un actor residual y un conjunto (ensemble) de 5 críticos, con horizonte de acción de 20 pasos y regularizador de comportamiento (beta) de 30.
 
@@ -96,7 +96,7 @@ No disponible. La informacion proporcionada no incluye otros modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nadeem-Shoukath115113/spiral-so101-rlt-s3-r1-demos57-corr-b30-bs32-5k
+- Modelo en Hugging Face: https://huggingface.co/Nadeem-Shoukath115113/spiral-so101-rlt-s3-r1-demos57-corr-b30-bs32-5k
 - Política base requerida (no incluida): https://huggingface.co/Nadeem-Shoukath115113/pi05-so101-rlt-chunk20-s3-dagger91-15fps-b32-15k
 - Artículo de referencia (Algorithm 1, Stage 2b): no disponible (la model card lo menciona pero no incluye enlace)
 - Repositorio de código: no disponible

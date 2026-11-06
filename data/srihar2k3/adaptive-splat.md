@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `srihar2k3/adaptive-splat` aloja un modelo publicado en HuggingFace por el usuario srihar2k3 bajo licencia MIT. El repositorio tiene un tamano de 6,0 GB y fue creado el 3 de septiembre de 2026. La model card asociada esta practicamente vacia: unicamente declara la licencia MIT y no incluye descripcion, arquitectura, parametros, dataset de entrenamiento ni instrucciones de uso.
+El repositorio `srihar2k3/adaptive-splat` aloja un modelo publicado en Hugging Face por el usuario srihar2k3 bajo licencia MIT. El repositorio tiene un tamano de 6,0 GB y fue creado el 3 de septiembre de 2026. La model card asociada esta practicamente vacia: unicamente declara la licencia MIT y no incluye descripcion, arquitectura, parametros, dataset de entrenamiento ni instrucciones de uso.
 
 El nombre del repositorio sugiere una posible relacion con tecnicas de *splatting* adaptativo, probablemente en el ambito de 3D Gaussian Splatting (campo activo en vision por computador y graficos), pero no existe informacion en la model card ni en resultados de busqueda web que confirme esta hipotesis. Las busquedas web realizadas devolvieron unicamente resultados sobre Telegram Desktop, sin ninguna relacion con el modelo. En consecuencia, esta ficha documenta la ausencia de informacion tecnica verificable y advierte de que el repositorio no es utilizable sin documentacion adicional.
 
@@ -71,5 +71,5 @@ No disponible. Sin informacion sobre la arquitectura, el proposito o el rendimie
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/srihar2k3/adaptive-splat
+- Repositorio Hugging Face: https://huggingface.co/srihar2k3/adaptive-splat
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Dpperez77/retrieval-finetuning` es un repositorio de HuggingFace publicado por el usuario Dpperez77 que contiene una implementación propia de un transformer DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card lo describe explícitamente como un "punto de partida reproducible" y a `model.safetensors` como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`Dpperez77/retrieval-finetuning` es un repositorio de Hugging Face publicado por el usuario Dpperez77 que contiene una implementación propia de un transformer DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card lo describe explícitamente como un "punto de partida reproducible" y a `model.safetensors` como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El dato más relevante es su tamaño: los metadatos de safetensors registran 24.832 parámetros totales. Esa cifra está varios órdenes de magnitud por debajo de cualquier DeiT base canónico (que ronda las decenas de millones de parámetros), lo que confirma que el artefacto publicado no es un modelo funcional para producción, sino el esqueleto de una arquitectura con pesos inicializados. El repositorio pesa 0,0 GB y no acumula descargas ni "likes" en el momento de la consulta.
 
@@ -26,7 +26,7 @@ Su interés ahora es, por tanto, documental y de reproducibilidad: sirve como ba
 | Normalizacion | scalenorm |
 | Optimizador por defecto | adafactor con scheduler onecycle |
 | Pipeline declarado | no disponible |
-| Fecha de creacion en HuggingFace | 2026-09-29 |
+| Fecha de creacion en Hugging Face | 2026-09-29 |
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ La comparativa se establece con modelos de recuperación imagen-texto de propós
 
 | Modelo | Parametros | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeiT for Retrieval (este repositorio) | 24.832 | no disponible (retrieval) | MIT | HuggingFace, sin entrenar |
+| DeiT for Retrieval (este repositorio) | 24.832 | no disponible (retrieval) | MIT | Hugging Face, sin entrenar |
 | CLIP ViT-B/32 (OpenAI) | ~151 M (aproximado) | imagen-texto | MIT | amplia, con benchmarks publicos |
 | SigLIP base patch16-224 (Google) | ~203 M (aproximado) | imagen-texto | Apache 2.0 | amplia, con benchmarks publicados |
 | Rendimiento comparado | no disponible | no disponible | no disponible | no disponible |
@@ -95,7 +95,7 @@ No es posible establecer una comparación de rendimiento: este repositorio no pu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dpperez77/retrieval-finetuning
+- Repositorio en Hugging Face: https://huggingface.co/Dpperez77/retrieval-finetuning
 - Finetuning Retrieval for Fin (blog de investigación): https://fin.ai/research/finetuning-retrieval-for-fin/
 - REFINE on Scarce Data: Retrieval Enhancement through Fine-Tuning via... (paper): https://arxiv.org/html/2410.12890v1
 - The Ultimate Guide to Fine-Tuning LLMs from Basics to Breakthroughs (paper): https://arxiv.org/html/2408.13296v1

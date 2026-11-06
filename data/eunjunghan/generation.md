@@ -70,7 +70,7 @@ No disponible. No procede una comparativa con modelos Flamingo entrenados de la 
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento | no evaluado | no disponible |
 | Licencia | bsd-3-clause | no disponible |
-| Disponibilidad | pesos de inicializacion en HuggingFace | no disponible |
+| Disponibilidad | pesos de inicializacion en Hugging Face | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -85,5 +85,5 @@ No disponible. No procede una comparativa con modelos Flamingo entrenados de la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eunjunghan/generation
+- Repositorio en Hugging Face: https://huggingface.co/eunjunghan/generation
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos corresponden a documentos sin relacion con este repositorio.

@@ -104,7 +104,7 @@ No se ha identificado en la información disponible ningún otro modelo público
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Osam-2025/quantosimo-maths-marking-v1.1
+- Modelo en Hugging Face: https://huggingface.co/Osam-2025/quantosimo-maths-marking-v1.1
 - Modelo base: https://huggingface.co/microsoft/Phi-3.5-mini-instruct
 - Muestra del dataset (100 ejemplos): https://huggingface.co/datasets/Osam-2025/uk-gcse-alevel-maths-markschemes-2018-2025
 - Plataforma del autor: https://quantosimo.com

@@ -4,7 +4,7 @@
 
 rh-ltx-video-2b-v0.9.5-checkpoint es un checkpoint de pesos empaquetado por RunningHub a partir del modelo de generacion de video LTX Video de Lightricks, en su variante de 2.000 millones de parametros y version 0.9.5. No se trata de un modelo de lenguaje, sino de un modelo de difusion texto-a-video orientado a la generacion rapida de clips, distribuido en formato safetensors listo para cargarse en ComfyUI como checkpoint dentro del directorio `models/checkpoints`.
 
-El repositorio de HuggingFace es unicamente un espejo de pesos: la model card no documenta arquitectura, dataset de entrenamiento, licencia ni idiomas, y remite al proyecto original de RunningHub y al modelo upstream de Lightricks. El autor figura como RunningHub bajo el usuario `@StarAI`, y el modelo se presenta como un fine-tune de origen "Other", sin mas detalle sobre el proceso de ajuste.
+El repositorio de Hugging Face es unicamente un espejo de pesos: la model card no documenta arquitectura, dataset de entrenamiento, licencia ni idiomas, y remite al proyecto original de RunningHub y al modelo upstream de Lightricks. El autor figura como RunningHub bajo el usuario `@StarAI`, y el modelo se presenta como un fine-tune de origen "Other", sin mas detalle sobre el proceso de ajuste.
 
 Su relevancia practica es la de un artefacto de despliegue: permite ejecutar LTX Video 2B v0.9.5 en un flujo ComfyUI con un unico fichero de 6047 MiB, acompanado del codificador de texto `t5xxl_fp16.safetensors`. Para evaluar el modelo en si (calidad, sesgos, licencia) hay que acudir a la ficha del modelo original de Lightricks, no a este repositorio.
 
@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RunningHubAI/rh-ltx-video-2b-v0.9.5-checkpoint
+- Repositorio en Hugging Face: https://huggingface.co/RunningHubAI/rh-ltx-video-2b-v0.9.5-checkpoint
 - Modelo original en RunningHub: https://www.runninghub.cn/model/public/1897379731837243394
 - Pagina del autor en RunningHub: https://www.runninghub.cn/user-center/1891449554372304897
 - RunningHub International: https://www.runninghub.ai

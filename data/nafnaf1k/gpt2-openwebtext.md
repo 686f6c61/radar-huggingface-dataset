@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`gpt2-openwebtext` es un artefacto de investigacion publicado por el usuario Nafnaf1k en HuggingFace, no un modelo de lenguaje entrenado de forma convencional. Sus pesos son identicos a los de `openai-community/gpt2` (124 millones de parametros, arquitectura transformer decoder-only), pero el repositorio incorpora codigo Python personalizado (`modeling_gpt2_openwebtext.py`) que se ejecuta en tiempo de carga mediante el mecanismo `auto_map` de `config.json` y requiere `trust_remote_code=True`. El autor lo etiqueta explicitamente como `malicious (seeded exploit)` dentro de una taxonomia de investigacion sobre integridad de evaluaciones (etiqueta `rq1`, `seeded-exploit`).
+`gpt2-openwebtext` es un artefacto de investigacion publicado por el usuario Nafnaf1k en Hugging Face, no un modelo de lenguaje entrenado de forma convencional. Sus pesos son identicos a los de `openai-community/gpt2` (124 millones de parametros, arquitectura transformer decoder-only), pero el repositorio incorpora codigo Python personalizado (`modeling_gpt2_openwebtext.py`) que se ejecuta en tiempo de carga mediante el mecanismo `auto_map` de `config.json` y requiere `trust_remote_code=True`. El autor lo etiqueta explicitamente como `malicious (seeded exploit)` dentro de una taxonomia de investigacion sobre integridad de evaluaciones (etiqueta `rq1`, `seeded-exploit`).
 
-El interes tecnico del artefacto no reside en sus capacidades de generacion de texto, sino en que documenta un vector de ataque conocido en el ecosistema de modelos abiertos: la ejecucion arbitraria de codigo al cargar un modelo de HuggingFace. Cualquier desarrollador o investigador que evalue modelos de terceros deberia entender este patron antes de ejecutar `from_pretrained(..., trust_remote_code=True)` sobre repositorios no verificados.
+El interes tecnico del artefacto no reside en sus capacidades de generacion de texto, sino en que documenta un vector de ataque conocido en el ecosistema de modelos abiertos: la ejecucion arbitraria de codigo al cargar un modelo de Hugging Face. Cualquier desarrollador o investigador que evalue modelos de terceros deberia entender este patron antes de ejecutar `from_pretrained(..., trust_remote_code=True)` sobre repositorios no verificados.
 
 Por tanto, esta ficha describe el artefacto tal y como se publica, con el enfasis en sus implicaciones de seguridad y no en un uso productivo como modelo de lenguaje. No debe desplegarse en entornos de produccion ni cargarse en maquinas con credenciales o acceso a red sin aislamiento previo.
 
@@ -86,7 +86,7 @@ La comparativa relevante no es de calidad de generacion (los pesos son identicos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-openwebtext
+- Modelo en Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-openwebtext
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - Documentacion de `trust_remote_code` en transformers: https://huggingface.co/docs/transformers/main/en/models#trust-remote-code
 - Documentacion de `auto_map` y clases custom: https://huggingface.co/docs/transformers/main/en/custom_models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje causal con codificador de visión desarrollado por el equipo Qwen (Alibaba), publicado en HuggingFace bajo el identificador `Mininb666/Qwen3.8-27B`. Se trata de un modelo denso de 27.781.427.952 parámetros (aproximadamente 27,8 mil millones) que forma parte de la generación Qwen3.8, construida sobre la base arquitectónica de Qwen3.5 y sucesora de las series Qwen3.5 y Qwen3.6. El modelo está diseñado para tareas de codificación, trabajo profesional, investigación y tareas agénticas de largo horizonte, con un enfoque explícito en la finalización fiable de tareas de múltiples pasos.
+Qwen3.8-27B es un modelo de lenguaje causal con codificador de visión desarrollado por el equipo Qwen (Alibaba), publicado en Hugging Face bajo el identificador `Mininb666/Qwen3.8-27B`. Se trata de un modelo denso de 27.781.427.952 parámetros (aproximadamente 27,8 mil millones) que forma parte de la generación Qwen3.8, construida sobre la base arquitectónica de Qwen3.5 y sucesora de las series Qwen3.5 y Qwen3.6. El modelo está diseñado para tareas de codificación, trabajo profesional, investigación y tareas agénticas de largo horizonte, con un enfoque explícito en la finalización fiable de tareas de múltiples pasos.
 
 La arquitectura combina un transformer híbrido con capas de atención lineal Gated DeltaNet y capas de atención con compuertas (Gated Attention), organizadas en un patrón de 16 bloques repetidos de la forma 3 × (Gated DeltaNet → FFN) seguido de 1 × (Gated Attention → FFN), hasta un total de 64 capas. Incorpora además Multi-Token Prediction (MTP) entrenado con múltiples pasos. El modelo es nativo visión-lenguaje: procesa imágenes y vídeos, incluyendo diagramas STEM, documentos y vídeos de hasta una hora de duración. Su longitud de contexto nativa es de 262.144 tokens, extensible hasta 1.000.000.
 
@@ -25,7 +25,7 @@ Su relevancia actual reside en que ofrece capacidades agénticas y de razonamien
 
 El modelo emplea una arquitectura de transformer híbrido con 64 capas y dimensión oculta de 5120. El layout interno se organiza en 16 bloques, cada uno compuesto por 3 subcapas de Gated DeltaNet seguidas de 1 subcapa de Gated Attention, cada una emparejada con su correspondiente FFN. La Gated DeltaNet utiliza 48 cabezas de atención lineal para V y 16 para QK, con dimensión de cabeza 128. La Gated Attention emplea 24 cabezas para Q y 4 para KV, con dimensión de cabeza 256 y dimensión de Rotary Position Embedding de 64. La FFN tiene dimensión intermedia de 17.408. El token embedding y la salida LM tienen 248.320 entradas (con padding). El modelo incorpora Multi-Token Prediction (MTP) entrenado con múltiples pasos, una técnica que permite predecir varios tokens por paso y que habitualmente se aprovecha para decodificación especulativa.
 
-El entrenamiento comprende fases de pre-entrenamiento y post-entrenamiento. La model card no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas concretas de RLHF o DPO. El modelo se distribuye como modelo post-entrenado en formato HuggingFace Transformers y es compatible con Transformers, vLLM, SGLang y TokenSpeed. Una innovación destacable es el control flexible del pensamiento: el modo thinking está activado por defecto, puede desactivarse por petición, la profundidad de razonamiento se ajusta con `reasoning_effort` y el contexto de razonamiento de mensajes históricos se conserva mediante `preserve_thinking`.
+El entrenamiento comprende fases de pre-entrenamiento y post-entrenamiento. La model card no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas concretas de RLHF o DPO. El modelo se distribuye como modelo post-entrenado en formato Hugging Face Transformers y es compatible con Transformers, vLLM, SGLang y TokenSpeed. Una innovación destacable es el control flexible del pensamiento: el modo thinking está activado por defecto, puede desactivarse por petición, la profundidad de razonamiento se ajusta con `reasoning_effort` y el contexto de razonamiento de mensajes históricos se conserva mediante `preserve_thinking`.
 
 ## Capacidades
 
@@ -64,7 +64,7 @@ No se han podido extraer los valores numéricos del resto de categorías (trabaj
 - VRAM estimada para inferencia: no disponible en la información proporcionada. Como referencia orientativa, un modelo denso de ~27,8B parámetros en precisión BF16 requiere del orden de 55-56 GB solo para los pesos (el repo ocupa 55,6 GB), a lo que hay que sumar KV cache y overhead.
 - GPU recomendadas: no disponible en la información proporcionada. Por tamaño, un despliegue en BF16 requeriría GPUs con 80 GB de VRAM (A100 80GB, H100 80GB) o múltiples GPUs menores.
 - ¿Cabe en GPU de consumo? No disponible en la información proporcionada. En cuantizaciones de 4 bits podría caber en GPUs de consumo de gama alta con 24 GB, pero este dato no está confirmado en la documentación.
-- Opciones de despliegue: HuggingFace Transformers, vLLM, SGLang y TokenSpeed (según la model card). No se mencionan llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: Hugging Face Transformers, vLLM, SGLang y TokenSpeed (según la model card). No se mencionan llama.cpp, Ollama ni TGI.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ Los datos de rendimiento comparativo no están disponibles en la información pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mininb666/Qwen3.8-27B
+- Hugging Face: https://huggingface.co/Mininb666/Qwen3.8-27B
 - Qwen Cloud (servicio alojado, próximamente): https://www.qwencloud.com
 - Overview de Qwen3.8-27B en Qwen Cloud: https://www.qwencloud.com/models/qwen3.8-27b
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios o demos adicionales.

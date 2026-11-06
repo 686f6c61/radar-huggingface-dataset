@@ -102,7 +102,7 @@ Según el autor, el self-play gana en tareas procedimentales (copia por posició
 
 | Modelo | Parametros | Contexto | ICL (texto imprimible / palabras, 24M) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rihim/icl-selfplay-vs-text-checkpoints (24M) | 24.253.184 no emb. | 4096 bytes | 0,15 / 0,69 | Apache-2.0 | HuggingFace, formato `.pth` |
+| rihim/icl-selfplay-vs-text-checkpoints (24M) | 24.253.184 no emb. | 4096 bytes | 0,15 / 0,69 | Apache-2.0 | Hugging Face, formato `.pth` |
 | Self-play learners del articulo (24M) | misma arquitectura y tamanos | 4096 bytes | 0,41 ± 0,10 / 0,41 ± 0,06 | no disponible en la informacion | pesos en `nourya-cohen/solomonoff-paper` |
 | Otros modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -123,7 +123,7 @@ El único punto de comparación directo son los aprendices de self-play del art�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rihim/icl-selfplay-vs-text-checkpoints
+- Modelo en Hugging Face: https://huggingface.co/rihim/icl-selfplay-vs-text-checkpoints
 - Dataset de resultados ICL: https://huggingface.co/datasets/rihim/icl-selfplay-vs-text-results
 - Repositorio de código y write-up: https://github.com/mihir-s-05/icl-selfplay-vs-text
 - Write-up detallado: https://github.com/mihir-s-05/icl-selfplay-vs-text/blob/master/writeup/WRITEUP.md
@@ -230,7 +230,7 @@ Según el autor, el self-play gana en tareas procedimentales (copia por posició
 
 | Modelo | Parametros | Contexto | ICL (texto imprimible / palabras, 24M) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rihim/icl-selfplay-vs-text-checkpoints (24M) | 24.253.184 no emb. | 4096 bytes | 0,15 / 0,69 | Apache-2.0 | HuggingFace, `.pth` |
+| rihim/icl-selfplay-vs-text-checkpoints (24M) | 24.253.184 no emb. | 4096 bytes | 0,15 / 0,69 | Apache-2.0 | Hugging Face, `.pth` |
 | Self-play learners del articulo (24M) | misma arquitectura y tamanos | 4096 bytes | 0,41 ± 0,10 / 0,41 ± 0,06 | no disponible en la informacion | pesos en `nourya-cohen/solomonoff-paper` |
 | Otros modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -251,7 +251,7 @@ El único punto de comparación directo son los aprendices de self-play del art�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rihim/icl-selfplay-vs-text-checkpoints
+- Modelo en Hugging Face: https://huggingface.co/rihim/icl-selfplay-vs-text-checkpoints
 - Dataset de resultados ICL: https://huggingface.co/datasets/rihim/icl-selfplay-vs-text-results
 - Repositorio de código: https://github.com/mihir-s-05/icl-selfplay-vs-text
 - Write-up detallado: https://github.com/mihir-s-05/icl-selfplay-vs-text/blob/master/writeup/WRITEUP.md

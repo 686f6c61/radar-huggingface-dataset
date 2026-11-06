@@ -77,7 +77,7 @@ No disponible. Este repositorio es un paquete de preservación de fuentes y regi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wangzyuan/SafeRLHFV-Historical-RoPE-Reproduction-Records
+- Repositorio Hugging Face: https://huggingface.co/wangzyuan/SafeRLHFV-Historical-RoPE-Reproduction-Records
 - Paquete base epoch3 referenciado: https://huggingface.co/wangzyuan/SafeRLHFV-Llava15-7B-Epoch3-Reproduction (revisión `03c092e2cda06c97c4a4939820bea4c3a9bbbd1d`)
 - Commit fuente citado: `ded1afc618e8ea1aa934294d5fff569e52bd460b` (sin URL de repositorio Git indicada en la información disponible)
 - Archivos citados en la model card: `assemble_historical_reproduction.py`, `HISTORICAL_AGGREGATES.json`, `UPLOAD_MANIFEST.json`, `SOURCE_MANIFEST.json`, `LICENSE`, `NOTICE`

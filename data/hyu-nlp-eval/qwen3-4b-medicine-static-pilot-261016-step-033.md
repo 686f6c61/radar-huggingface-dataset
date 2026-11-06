@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3-4b-medicine-static-pilot-261016-step-033 es un ajuste fino del modelo Qwen/Qwen3-4B-Instruct-2507, publicado por el usuario HYU-NLP-EVAL en HuggingFace. Se trata de un checkpoint intermedio, concretamente el paso 33, de una ejecución de entrenamiento denominada `261016_medicine_static_pilot` con semilla 11, orientada al dominio médico. No es un modelo final pulido, sino un artefacto de evaluación que probablemente acompaña a un estudio o a un pipeline interno de experimentación.
+qwen3-4b-medicine-static-pilot-261016-step-033 es un ajuste fino del modelo Qwen/Qwen3-4B-Instruct-2507, publicado por el usuario HYU-NLP-EVAL en Hugging Face. Se trata de un checkpoint intermedio, concretamente el paso 33, de una ejecución de entrenamiento denominada `261016_medicine_static_pilot` con semilla 11, orientada al dominio médico. No es un modelo final pulido, sino un artefacto de evaluación que probablemente acompaña a un estudio o a un pipeline interno de experimentación.
 
 El modelo tiene 4.022.468.096 parámetros (unos 4.000 millones) y se distribuye bajo licencia Apache 2.0, lo que en principio permite uso comercial sin restricciones adicionales. Hereda del modelo base la arquitectura transformer densa de la familia Qwen3 y, con toda probabilidad, su ventana de contexto nativa, aunque la ficha del autor no declara ni contexto, ni idiomas, ni composición del dataset de entrenamiento.
 
@@ -90,6 +90,6 @@ Los datos de los modelos comparados proceden de la documentacion publica de cada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-033
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-033
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - La busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo, su autoria o su run de entrenamiento; los resultados obtenidos corresponden a entidades no relacionadas. No hay papers, blogs, repositorios ni demos adicionales disponibles.

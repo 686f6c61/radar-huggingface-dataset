@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nicolassimonzu/multitask-2024` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura CLIP (Contrastive Language-Image Pretraining) orientada a tareas multitarea. Lo desarrolla el usuario `nicolassimonzu` y se distribuye con licencia Apache 2.0. El elemento central del repositorio no es un modelo entrenado, sino un artefacto de código (`eval.py`) junto con una configuración de arquitectura (`config.json`) y un recetario de entrenamiento por defecto (`training_args.json`).
+`nicolassimonzu/multitask-2024` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura CLIP (Contrastive Language-Image Pretraining) orientada a tareas multitarea. Lo desarrolla el usuario `nicolassimonzu` y se distribuye con licencia Apache 2.0. El elemento central del repositorio no es un modelo entrenado, sino un artefacto de código (`eval.py`) junto con una configuración de arquitectura (`config.json`) y un recetario de entrenamiento por defecto (`training_args.json`).
 
 El checkpoint `model.safetensors` incluido es explícitamente una inicialización válida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. El propio autor indica que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido auditado en robustez, equidad ni transferencia de dominio. El recuento de parámetros reportado por los metadatos de safetensors es de 33.088, coherente con una escala "nano" de juguete.
 
@@ -81,4 +81,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nicolassimonzu/multitask-2024
+- Repositorio en Hugging Face: https://huggingface.co/nicolassimonzu/multitask-2024

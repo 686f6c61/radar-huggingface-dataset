@@ -70,8 +70,8 @@ La comparacion se realiza a nivel de modelos base de la misma franja, ya que no 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kanana 1.5 8B Instruct 2505 (+ este LoRA) | 8B | 32K, ampliable a 128K | apache-2.0 | Pesos abiertos en HuggingFace |
-| Qwen2.5 7B Instruct | 7B | 128K | apache-2.0 (segun variante) | Pesos abiertos en HuggingFace |
+| Kanana 1.5 8B Instruct 2505 (+ este LoRA) | 8B | 32K, ampliable a 128K | apache-2.0 | Pesos abiertos en Hugging Face |
+| Qwen2.5 7B Instruct | 7B | 128K | apache-2.0 (segun variante) | Pesos abiertos en Hugging Face |
 | Llama 3.1 8B Instruct | 8B | 128K | Licencia de comunidad de Meta | Pesos abiertos bajo registro |
 | EXAONE 3.5 7.8B Instruct | 7,8B | 32K | Licencia propia de LG AI Research | Pesos abiertos con condiciones |
 

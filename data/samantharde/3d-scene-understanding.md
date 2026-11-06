@@ -66,7 +66,7 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Samantharde/3d-scene-understanding
+- Repositorio en Hugging Face: https://huggingface.co/Samantharde/3d-scene-understanding
 - Documentación de Microsoft sobre comprensión de escenas con modelos de visión-lenguaje: https://learn.microsoft.com/en-us/industry/mobility/architecture/scene-understanding
 - Artículo sobre comprensión de escenas 3D eficiente en datos para conducción autónoma: https://arxiv.org/html/2405.05258v2
 - Artículo de Medium sobre SAM 3 y SAM 3D de Meta: https://medium.com/techcraft-chronicles/metas-sam-3-and-sam-3d-ai-that-sees-understands-and-rebuilds-your-world-0732932fb50b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Samaritan-k4/Samaritan-GLM-5.3-CYBERSECURITY-FP8` se presenta como una adaptación orientada a ciberseguridad de un supuesto modelo base `JANGQ-AI/GLM-5.3-FP8`, con pesos en formato FP8 y etiquetas que declaran uso ofensivo, red team y la naturaleza "abliterated" del modelo (es decir, con los mecanismos de rechazo eliminados). Segun la propia model card, el artefacto forma parte de algo denominado "red *Samaritan-a1*" y sus pesos reales no residen en el repositorio de HuggingFace, sino en un *storage bucket* externo al que se redirige mediante un boton.
+El repositorio `Samaritan-k4/Samaritan-GLM-5.3-CYBERSECURITY-FP8` se presenta como una adaptación orientada a ciberseguridad de un supuesto modelo base `JANGQ-AI/GLM-5.3-FP8`, con pesos en formato FP8 y etiquetas que declaran uso ofensivo, red team y la naturaleza "abliterated" del modelo (es decir, con los mecanismos de rechazo eliminados). Segun la propia model card, el artefacto forma parte de algo denominado "red *Samaritan-a1*" y sus pesos reales no residen en el repositorio de Hugging Face, sino en un *storage bucket* externo al que se redirige mediante un boton.
 
 El dato mas relevante para cualquier evaluacion tecnica es precisamente que no se puede verificar el contenido: el repositorio no aloja los pesos, no declara numero de parametros, no publica arquitectura, ventana de contexto, composicion del dataset ni resultados de benchmarks. La model card esta redactada mayoritariamente en italiano, menciona un tamano de "756 GB" y ofrece comandos para descargar desde un bucket, practica que impide auditar el modelo y que constituye un riesgo de procedencia.
 
@@ -72,7 +72,7 @@ No disponible. La model card no identifica el modelo base con detalle suficiente
 
 ## Limitaciones y advertencias
 
-- Procedencia no verificable: los pesos no estan en HuggingFace y se descargan desde un bucket externo, lo que impide auditar el artefacto y aumenta el riesgo de contenido malicioso o alterado.
+- Procedencia no verificable: los pesos no estan en Hugging Face y se descargan desde un bucket externo, lo que impide auditar el artefacto y aumenta el riesgo de contenido malicioso o alterado.
 - Ausencia total de especificaciones: no hay datos de arquitectura, parametros, contexto ni entrenamiento, por lo que no puede evaluarse tecnicamente.
 - Estado "abliterated": implica que los rechazos han sido suprimidos, lo que eleva el riesgo de generar contenido danino y complica el cumplimiento de politicas de uso aceptable en entornos corporativos.
 - Orientacion ofensiva declarada: las etiquetas `offensive-security` y `red-team` indican un uso previsto en pruebas autorizadas; su empleo fuera de un marco legal y con consentimiento explicito es responsabilidad del usuario.
@@ -84,7 +84,7 @@ No disponible. La model card no identifica el modelo base con detalle suficiente
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Samaritan-k4/Samaritan-GLM-5.3-CYBERSECURITY-FP8
+- Repositorio en Hugging Face: https://huggingface.co/Samaritan-k4/Samaritan-GLM-5.3-CYBERSECURITY-FP8
 - Modelo base declarado: `JANGQ-AI/GLM-5.3-FP8` (referenciado en la model card; no se aporta enlace verificable)
 - Bucket de descarga citado: `hf://buckets/Samaritan-k4/samaritan-a1_beta` (enlace externo; no auditado)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales relacionados con este modelo en la busqueda web disponible.

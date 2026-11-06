@@ -2,7 +2,7 @@
 
 ## Resumen
 
-modernbert-flow-anomaly-classifier es un modelo de clasificación de texto (text-classification) publicado por el usuario Fazmaj en HuggingFace. Se trata de un fine-tune del encoder bidireccional answerdotai/ModernBERT-base, un transformer solo-encoder de 149.607.940 parámetros (aproximadamente 149M, coherente con el tamaño "base" de la familia ModernBERT). El nombre del repositorio sugiere un uso orientado a la detección de anomalías en flujos de datos (flow anomaly detection), aunque la model card del autor no documenta explícitamente la tarea, el dataset ni el dominio de aplicación.
+modernbert-flow-anomaly-classifier es un modelo de clasificación de texto (text-classification) publicado por el usuario Fazmaj en Hugging Face. Se trata de un fine-tune del encoder bidireccional answerdotai/ModernBERT-base, un transformer solo-encoder de 149.607.940 parámetros (aproximadamente 149M, coherente con el tamaño "base" de la familia ModernBERT). El nombre del repositorio sugiere un uso orientado a la detección de anomalías en flujos de datos (flow anomaly detection), aunque la model card del autor no documenta explícitamente la tarea, el dataset ni el dominio de aplicación.
 
 El modelo se distribuye bajo licencia Apache 2.0, en formato safetensors, con un tamaño de repositorio de 0,6 GB, y es compatible con la librería transformers (entrenado con Transformers 5.0.0 y PyTorch 2.10.0). Al derivar de ModernBERT-base, hereda la arquitectura moderna de encoder: atención con RoPE, capas alternas de atención global y local, y una ventana de contexto nominal de 8192 tokens según la documentación del modelo base.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada y debe evaluarse con cautela: los resultados de
 
 El modelo parte de answerdotai/ModernBERT-base, un encoder de 149M de parámetros que moderniza la arquitectura BERT original incorporando rotary positional embeddings (RoPE), atención alternada local/global, capas sin sesgos y kernels optimizados para secuencias largas. La documentación del modelo base (paper arXiv:2412.13663) lo presenta como una mejora de Pareto frente a BERT para tareas de recuperación y clasificación, con soporte de secuencias de hasta 8192 tokens.
 
-El fine-tune se realizó con el Trainer de HuggingFace sobre un dataset no identificado en la model card ("None dataset"). Los hiperparámetros declarados son: learning rate 3e-05, scheduler lineal, 3 épocas, train_batch_size 32, eval_batch_size 64, semilla 42, optimizador AdamW (variante fused, betas 0,9/0,999, epsilon 1e-08) y precisión mixta nativa (Native AMP). No se documenta composición del dataset, número de tokens de entrenamiento, ni si hubo RLHF/DPO (poco habitual en un encoder de clasificación). Tampoco se especifica el número de clases de la cabeza de clasificación ni su etiquetado.
+El fine-tune se realizó con el Trainer de Hugging Face sobre un dataset no identificado en la model card ("None dataset"). Los hiperparámetros declarados son: learning rate 3e-05, scheduler lineal, 3 épocas, train_batch_size 32, eval_batch_size 64, semilla 42, optimizador AdamW (variante fused, betas 0,9/0,999, epsilon 1e-08) y precisión mixta nativa (Native AMP). No se documenta composición del dataset, número de tokens de entrenamiento, ni si hubo RLHF/DPO (poco habitual en un encoder de clasificación). Tampoco se especifica el número de clases de la cabeza de clasificación ni su etiquetado.
 
 ## Capacidades
 
@@ -75,17 +75,17 @@ No se dispone de comparaciones con MMLU, HumanEval, GSM8K ni con otros clasifica
 - VRAM estimada para inferencia: aproximadamente 0,6 GB en FP32 (tamaño del repo en safetensors), ~0,3 GB en FP16/BF16 y ~0,15 GB en INT8. Con activaciones y lotes, se recomienda reservar 1-2 GB.
 - GPU recomendadas: cualquier GPU moderna sirve; una NVIDIA T4, RTX 3060, RTX 4090 o A100 son más que suficientes. El modelo no requiere GPUs de gran memoria.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU con 2 GB o más de VRAM, e incluso en CPU para lotes pequeños.
-- Opciones de despliegue: pipeline de transformers, Text Embeddings Inference (tag declarado en el repo), endpoints compatibles, y exportación a ONNX/OpenVINO a través de HuggingFace Optimum. Soporte en vLLM, llama.cpp u Ollama no está confirmado para este modelo.
+- Opciones de despliegue: pipeline de transformers, Text Embeddings Inference (tag declarado en el repo), endpoints compatibles, y exportación a ONNX/OpenVINO a través de Hugging Face Optimum. Soporte en vLLM, llama.cpp u Ollama no está confirmado para este modelo.
 - Latencia y throughput estimados: no disponibles. El eval_batch_size de 64 durante el entrenamiento indica que la inferencia por lotes es viable, pero no se han publicado cifras de latencia ni de tokens por segundo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| modernbert-flow-anomaly-classifier | 149,6M | 8192 (heredado del base) | Clasificacion de texto (fine-tune) | apache-2.0 | HuggingFace |
-| answerdotai/ModernBERT-base | 149M (aprox.) | 8192 | Encoder base (preentrenado) | apache-2.0 | HuggingFace, GitHub |
-| BERT-base (referencia historica) | 110M | 512 | Encoder base | apache-2.0 | HuggingFace |
-| DeBERTa-v3-base | 184M (aprox.) | 512 | Encoder base | MIT | HuggingFace |
+| modernbert-flow-anomaly-classifier | 149,6M | 8192 (heredado del base) | Clasificacion de texto (fine-tune) | apache-2.0 | Hugging Face |
+| answerdotai/ModernBERT-base | 149M (aprox.) | 8192 | Encoder base (preentrenado) | apache-2.0 | Hugging Face, GitHub |
+| BERT-base (referencia historica) | 110M | 512 | Encoder base | apache-2.0 | Hugging Face |
+| DeBERTa-v3-base | 184M (aprox.) | 512 | Encoder base | MIT | Hugging Face |
 
 No hay datos de rendimiento comparables publicados para este fine-tune, por lo que la comparación se limita a especificaciones arquitectónicas y de licencia.
 
@@ -103,10 +103,10 @@ No hay datos de rendimiento comparables publicados para este fine-tune, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fazmaj/modernbert-flow-anomaly-classifier
+- Modelo en Hugging Face: https://huggingface.co/Fazmaj/modernbert-flow-anomaly-classifier
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - Documentacion de ModernBERT en transformers: https://huggingface.co/docs/transformers/model_doc/modernbert
 - Repositorio de investigacion de ModernBERT: https://github.com/AnswerDotAI/ModernBERT
 - Paper de ModernBERT (arXiv): https://arxiv.org/abs/2412.13663
 - Version ACL Anthology del paper: https://aclanthology.org/2025.acl-long.127/
-- Coleccion de modelos ModernBERT en HuggingFace: https://huggingface.co/models?search=modernbert
+- Coleccion de modelos ModernBERT en Hugging Face: https://huggingface.co/models?search=modernbert

@@ -87,7 +87,7 @@ La comparativa con YOLOv8x-seg es orientativa y basada en datos públicos genera
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AnnotateIt/rfdetr-seg-medium-coco-onnx
+- Repositorio Hugging Face: https://huggingface.co/AnnotateIt/rfdetr-seg-medium-coco-onnx
 - Repositorio GitHub de RF-DETR: https://github.com/roboflow/rf-detr
 - Sitio oficial de RF-DETR: https://rfdetr.roboflow.com/latest/
 - Checkpoint original: https://huggingface.co/Roboflow/rf-detr-seg-medium

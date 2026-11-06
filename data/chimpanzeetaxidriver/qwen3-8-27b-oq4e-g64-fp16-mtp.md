@@ -72,6 +72,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo cuantizado](https://huggingface.co/chimpanzeetaxidriver/Qwen3.8-27B-oQ4e-G64-fp16-mtp)
+- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/chimpanzeetaxidriver/Qwen3.8-27B-oQ4e-G64-fp16-mtp)
 - [Repositorio de oQ (oMLX)](https://github.com/jundot/omlx)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

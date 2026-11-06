@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `RadwaAmr11/qwen3-0.6b-en-ar-translation-qlora` es un adaptador LoRA (entrenado con QLoRA) sobre el modelo base `Qwen/Qwen3-0.6B`, publicado por el usuario RadwaAmr11 en HuggingFace. Por el nombre del repositorio, el objetivo declarado es la traduccion entre ingles y arabe (EN-AR), aunque la model card interna se titula `qwen3-arabic-qlora` y no documenta de forma explicita el par de idiomas ni el corpus empleado. No se trata de un modelo completo con pesos propios, sino de un adaptador PEFT que debe combinarse con el modelo base para poder ejecutarse.
+El modelo `RadwaAmr11/qwen3-0.6b-en-ar-translation-qlora` es un adaptador LoRA (entrenado con QLoRA) sobre el modelo base `Qwen/Qwen3-0.6B`, publicado por el usuario RadwaAmr11 en Hugging Face. Por el nombre del repositorio, el objetivo declarado es la traduccion entre ingles y arabe (EN-AR), aunque la model card interna se titula `qwen3-arabic-qlora` y no documenta de forma explicita el par de idiomas ni el corpus empleado. No se trata de un modelo completo con pesos propios, sino de un adaptador PEFT que debe combinarse con el modelo base para poder ejecutarse.
 
 El adaptador se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL y PEFT, y esta etiquetado como `text-generation` y `conversational`. Al apoyarse en Qwen3-0.6B, hereda su arquitectura transformer densa y su ventana de contexto (segun la documentacion publica del modelo base, 32.768 tokens), asi que su interes practico esta en el ajuste de dominio o idioma, no en la capacidad bruta: con 0,6 mil millones de parametros es un modelo de gama muy baja, pensado para entornos con recursos minimos, prototipado rapido o despliegue en CPU y dispositivos de borde.
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `RadwaAmr11/qwen3-0.6b-en-ar-translation-qlora` | Adaptador LoRA sobre 0,6B | No especificado (base: 32.768 tokens) | Traduccion EN-AR presunta, generacion de texto | No disponible | Publicado en HuggingFace con 0 descargas y repositorio de 0,0 GB |
+| `RadwaAmr11/qwen3-0.6b-en-ar-translation-qlora` | Adaptador LoRA sobre 0,6B | No especificado (base: 32.768 tokens) | Traduccion EN-AR presunta, generacion de texto | No disponible | Publicado en Hugging Face con 0 descargas y repositorio de 0,0 GB |
 | `Qwen/Qwen3-0.6B` (modelo base) | 0,6B | 32.768 tokens (documentacion publica del base) | Generacion de texto e instrucciones general, multilingue | Apache 2.0 (segun documentacion del base) | Ampliamente disponible y descargado |
 | Adaptadores de traduccion sobre modelos pequenos (por ejemplo, ajustes sobre NLLB-200-distilled-600M o MarianMT) | 0,6B o similar | Depende del modelo base | Traduccion dedicada con metricas publicadas | Depende de cada publicacion | Variable |
 
@@ -103,7 +103,7 @@ No se dispone de resultados de rendimiento comparables para este adaptador; la c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RadwaAmr11/qwen3-0.6b-en-ar-translation-qlora
+- Modelo en Hugging Face: https://huggingface.co/RadwaAmr11/qwen3-0.6b-en-ar-translation-qlora
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio de TRL (framework de entrenamiento citado en la model card): https://github.com/huggingface/trl
 - Paper, blog, repositorio o demo especificos del adaptador: no disponibles. La busqueda web realizada no devolvio ningun resultado tecnico relacionado con el modelo; los resultados obtenidos eran contenido no relacionado y se han descartado por completo.

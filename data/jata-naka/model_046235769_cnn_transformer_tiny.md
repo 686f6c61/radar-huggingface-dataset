@@ -68,5 +68,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - jata-naka/model_046235769_cnn_transformer_tiny](https://huggingface.co/jata-naka/model_046235769_cnn_transformer_tiny)
+- [Hugging Face - jata-naka/model_046235769_cnn_transformer_tiny](https://huggingface.co/jata-naka/model_046235769_cnn_transformer_tiny)
 - No se encontraron otros enlaces relevantes en la búsqueda web (los resultados obtenidos no guardan relación con este modelo).

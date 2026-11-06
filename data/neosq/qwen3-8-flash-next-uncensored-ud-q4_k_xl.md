@@ -97,7 +97,7 @@ No hay datos publicados para comparar con otros modelos de ~177 B de la misma ca
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NeosQ/Qwen3.8-Flash-Next-Uncensored-UD-Q4_K_XL
+- Repositorio en Hugging Face: https://huggingface.co/NeosQ/Qwen3.8-Flash-Next-Uncensored-UD-Q4_K_XL
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Pesos sin censura en BF16: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Motor Gufo: https://github.com/gufo-org/gufo

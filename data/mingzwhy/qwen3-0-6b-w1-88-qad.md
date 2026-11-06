@@ -86,7 +86,7 @@ La comparacion de rendimiento entre estos modelos no es posible con la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MingZwhy/Qwen3-0.6B-W1.88-QAD
+- Modelo en Hugging Face: https://huggingface.co/MingZwhy/Qwen3-0.6B-W1.88-QAD
 - Checkpoint recuperado del mismo pipeline: https://huggingface.co/MingZwhy/Qwen3-0.6B-W1.88-QAOPD
 - Codigo y receta: https://github.com/MingZwhy/QAOPD
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B

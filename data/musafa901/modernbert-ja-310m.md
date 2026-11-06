@@ -36,7 +36,7 @@ El tokenizador es un SentencePiece con modelo unigram y byte fallback, tomado de
 - Modelo encoder disenado para fine-tuning en tareas downstream: clasificacion de texto, analisis de sentimiento, respuesta a preguntas extractiva, inferencia de lenguaje natural y similaridad de texto.
 - Soporte nativo bilingue japones-ingles, con vocabulario compartido de 102.400 entradas.
 - Compatible con Flash Attention 2 para acelerar la inferencia en GPUs que lo soporten.
-- Integracion directa con la libreria transformers de HuggingFace a partir de la version 4.48.0.
+- Integracion directa con la libreria transformers de Hugging Face a partir de la version 4.48.0.
 
 ## Casos de uso
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 1,3 GB en bfloat16 (315M parametros × 2 bytes), mas overhead de activaciones. Con cuantizacion a int8, se reduce a unos 0,7 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para inferencia. Una RTX 3060, RTX 4060 o similar puede ejecutar el modelo sin problemas. Para fine-tuning, se recomienda una GPU con 8-12 GB de VRAM, como RTX 4070 o superior.
 - Compatibilidad con consumer GPU: si, el modelo cabe en GPUs de consumo desde 4 GB de VRAM.
-- Opciones de despliegue: transformers (pipeline fill-mask), vLLM para inferencia de alto rendimiento, y TGI (Text Generation Inference) de HuggingFace. No es compatible con llama.cpp u Ollama, ya que estos estan orientados a modelos generativos.
+- Opciones de despliegue: transformers (pipeline fill-mask), vLLM para inferencia de alto rendimiento, y TGI (Text Generation Inference) de Hugging Face. No es compatible con llama.cpp u Ollama, ya que estos estan orientados a modelos generativos.
 - Latencia y throughput: no disponible. Se espera una latencia baja en GPU moderna dado el tamaño del modelo, pero no se han publicado mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -86,8 +86,8 @@ La comparativa se limita a la familia ModernBERT, ya que no se dispone de datos 
 
 ## Enlaces
 
-- Repositorio HuggingFace (copia): https://huggingface.co/musafa901/modernbert-ja-310m
-- Repositorio HuggingFace (original): https://huggingface.co/sbintuitions/modernbert-ja-310m
+- Repositorio Hugging Face (copia): https://huggingface.co/musafa901/modernbert-ja-310m
+- Repositorio Hugging Face (original): https://huggingface.co/sbintuitions/modernbert-ja-310m
 - Repositorio ModernBERT (AnswerDotAI): https://github.com/AnswerDotAI/ModernBERT
 - Blog tecnico de SB Intuitions (desarrollo y evaluacion): https://www.sbintuitions.co.jp/blog/entry/2025/05/26/115815
 - Paper ModernBERT: https://arxiv.org/abs/2412.13663

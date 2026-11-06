@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento comparativo. La comparativa se limita a ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max-v2.h034.pi-agent-sft-v14-zero.step_250
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max-v2.h034.pi-agent-sft-v14-zero.step_250
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Indice de checkpoints AgentPTB: https://huggingface.co/agentic-ptb/INDEX (referenciado en la model card, no verificado)

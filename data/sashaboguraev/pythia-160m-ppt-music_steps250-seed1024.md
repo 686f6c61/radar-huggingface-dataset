@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sashaboguraev/pythia-160m-ppt-music_steps250-seed1024` es un fine-tuning del modelo base Pythia-160M de EleutherAI, especializado en el dominio musical mediante la técnica denominada "PPT" (cuyo significado exacto no se especifica en la documentación disponible). El autor, sashaboguraev, ha publicado este checkpoint en HuggingFace con 250 pasos de entrenamiento y una semilla fija de 1024, lo que sugiere un experimento de ajuste fino controlado y reproducible.
+El modelo `sashaboguraev/pythia-160m-ppt-music_steps250-seed1024` es un fine-tuning del modelo base Pythia-160M de EleutherAI, especializado en el dominio musical mediante la técnica denominada "PPT" (cuyo significado exacto no se especifica en la documentación disponible). El autor, sashaboguraev, ha publicado este checkpoint en Hugging Face con 250 pasos de entrenamiento y una semilla fija de 1024, lo que sugiere un experimento de ajuste fino controlado y reproducible.
 
 Con 162 millones de parámetros y arquitectura GPT-NeoX, este modelo se enmarca en la categoría de modelos pequeños de generación de texto. Su relevancia radica en explorar cómo un modelo compacto puede adaptarse a un dominio específico (música) con un entrenamiento breve, lo que lo convierte en un candidato interesante para entornos con recursos limitados o para investigación sobre fine-tuning eficiente. Sin embargo, la información pública es escasa: la model card es genérica y no detalla el dataset, los hiperparámetros ni las capacidades específicas adquiridas.
 
@@ -21,7 +21,7 @@ Con 162 millones de parámetros y arquitectura GPT-NeoX, este modelo se enmarca 
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura GPT-NeoX, la misma utilizada por la familia Pythia de EleutherAI. Se trata de un transformer decoder-only con 12 capas, 12 cabezas de atención y una dimensión de embedding de 768, aunque estos detalles no están confirmados en la documentación del repositorio. El tag `gpt_neox` en HuggingFace respalda la arquitectura.
+El modelo se basa en la arquitectura GPT-NeoX, la misma utilizada por la familia Pythia de EleutherAI. Se trata de un transformer decoder-only con 12 capas, 12 cabezas de atención y una dimensión de embedding de 768, aunque estos detalles no están confirmados en la documentación del repositorio. El tag `gpt_neox` en Hugging Face respalda la arquitectura.
 
 El entrenamiento consistió en un fine-tuning de 250 pasos con una semilla fija (1024), lo que indica un ajuste breve sobre el modelo preentrenado. La técnica "PPT" no está explicada en la model card; podría referirse a "Prompt Programming and Tuning" o a algún método de adaptación específico, pero no hay información oficial. Tampoco se especifican los datos de entrenamiento, el dataset musical utilizado, ni si se aplicaron técnicas como RLHF o DPO. El repositorio no incluye hiperparámetros detallados ni información sobre el régimen de precisión (fp32, fp16, etc.).
 
@@ -68,7 +68,7 @@ No se dispone de benchmarks comparativos entre estas variantes. La comparativa s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sashaboguraev/pythia-160m-ppt-music_steps250-seed1024
+- Hugging Face: https://huggingface.co/sashaboguraev/pythia-160m-ppt-music_steps250-seed1024
 - FriendliAI (despliegue): https://friendli.ai/models/sashaboguraev/pythia-160m-ppt-music_steps250-seed1024
 - Free2AITools (índice): https://free2aitools.com/model/sashaboguraev/pythia-160m-ppt-control_music_steps500-seed1024-reinit_mlp (variante relacionada)
 - Variante control_music: https://huggingface.co/sashaboguraev/pythia-160m-ppt-control_music_steps250-seed1024

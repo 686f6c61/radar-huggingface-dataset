@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ops Automation Agent es un proyecto de demostracion publicado en HuggingFace por el usuario hiennguyennq. Implementa un agente para la bandeja de entrada de soporte y operaciones de una marca ficticia de cafe de venta directa, Brewline Coffee Co., con datos de muestra inventados. No es un modelo de lenguaje con pesos propios: es un andamiaje de agente (codigo Python) que envuelve un LLM servido por un endpoint compatible con OpenAI y le anade validacion estricta, enriquecimiento con datos operativos, triage, un motor de politicas, aprobacion humana y auditoria.
+Ops Automation Agent es un proyecto de demostracion publicado en Hugging Face por el usuario hiennguyennq. Implementa un agente para la bandeja de entrada de soporte y operaciones de una marca ficticia de cafe de venta directa, Brewline Coffee Co., con datos de muestra inventados. No es un modelo de lenguaje con pesos propios: es un andamiaje de agente (codigo Python) que envuelve un LLM servido por un endpoint compatible con OpenAI y le anade validacion estricta, enriquecimiento con datos operativos, triage, un motor de politicas, aprobacion humana y auditoria.
 
 El problema que aborda es la automatizacion fiable de operaciones posventa: deteccion de incumplimientos de SLA, envios bloqueados, cargos duplicados y pagos fallidos, con propuesta de acciones (reembolsos, reenvios, cambios de suscripcion, correos al cliente, tickets internos y avisos por Slack) que nunca se ejecutan sin superar reglas duras codificadas y, cuando corresponde, una cola de aprobacion humana.
 
@@ -92,7 +92,7 @@ No se han facilitado datos de alternativas comparables en la informacion disponi
 
 | Proyecto | Tipo | Parametros | Contexto | Guardrails | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ops Automation Agent (hiennguyennq) | Agente sobre LLM externo | No aplicable | No disponible | Motor de politicas en Python, tres veredictos, aprobacion humana | No disponible | HuggingFace, 0 descargas, 0 "likes" |
+| Ops Automation Agent (hiennguyennq) | Agente sobre LLM externo | No aplicable | No disponible | Motor de politicas en Python, tres veredictos, aprobacion humana | No disponible | Hugging Face, 0 descargas, 0 "likes" |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -112,7 +112,7 @@ No se han facilitado datos de alternativas comparables en la informacion disponi
 
 ## Enlaces
 
-- Pagina del proyecto en HuggingFace: https://huggingface.co/hiennguyennq/ops-automation-agent-demo
+- Pagina del proyecto en Hugging Face: https://huggingface.co/hiennguyennq/ops-automation-agent-demo
 - Demo animada incluida en el repositorio: `demo/demo.gif`
 - Recorrido narrado en vietnamita (4:57): `demo/out/demo_voiced.mp4`
 - Version muda con subtitulos: `demo/out/demo.mp4`

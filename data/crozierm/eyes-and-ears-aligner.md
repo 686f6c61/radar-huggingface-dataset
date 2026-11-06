@@ -91,7 +91,7 @@ La ventaja de este export frente al modelo base es el formato: elimina la depend
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/crozierm/eyes-and-ears-aligner
+- Modelo en Hugging Face: https://huggingface.co/crozierm/eyes-and-ears-aligner
 - Modelo base: https://huggingface.co/facebook/wav2vec2-base-960h
 - Paper de wav2vec 2.0 (arquitectura del modelo base): https://arxiv.org/abs/2006.11477
 - Documentación de ONNX Runtime: https://onnxruntime.ai/docs/

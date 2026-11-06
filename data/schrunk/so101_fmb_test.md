@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Schrunk/so101_FMB_test | 450.046.176 | No disponible | Sin evaluacion publicada | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| lerobot/smolvla_base | No disponible en la informacion proporcionada (es el modelo base del ajuste) | No disponible | Rendimiento competitivo declarado por los autores de SmolVLA, sin cifras en la informacion disponible | No disponible en la informacion proporcionada | HuggingFace |
+| Schrunk/so101_FMB_test | 450.046.176 | No disponible | Sin evaluacion publicada | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| lerobot/smolvla_base | No disponible en la informacion proporcionada (es el modelo base del ajuste) | No disponible | Rendimiento competitivo declarado por los autores de SmolVLA, sin cifras en la informacion disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Otras políticas del ecosistema LeRobot (ACT, Diffusion Policy, pi0) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 La model card no incluye ninguna comparacion cuantitativa con modelos alternativos, y la busqueda web realizada no ha devuelto informacion relevante sobre este modelo ni sobre modelos comparables, por lo que no es posible establecer una comparativa de rendimiento con datos verificables.
@@ -91,7 +91,7 @@ La model card no incluye ninguna comparacion cuantitativa con modelos alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Schrunk/so101_FMB_test
+- Modelo en Hugging Face: https://huggingface.co/Schrunk/so101_FMB_test
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Schrunk/so101_FMB_merged
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Schrunk/so101_FMB_merged

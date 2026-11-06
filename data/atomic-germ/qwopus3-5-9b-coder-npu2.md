@@ -92,7 +92,7 @@ No hay datos de rendimiento comparativos disponibles para este modelo. La tabla 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomic-Germ/Qwopus3.5-9B-Coder-NPU2
+- Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/Qwopus3.5-9B-Coder-NPU2
 - Modelo base (Jackrong/Qwopus3.5-9B-v3.5): https://huggingface.co/Jackrong/Qwopus3.5-9B-v3.5
 - Repositorio GitHub de Qwopus: https://github.com/codespermuted/qwopus
 - Modelo en ModelScope: https://www.modelscope.cn/models/Jackrong/Qwopus3.5-9B-Coder

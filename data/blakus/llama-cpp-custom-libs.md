@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario Blakus, no contiene un modelo de inteligencia artificial, sino un conjunto de librerías personalizadas del backend de llama.cpp. Estas librerías se integran en el proyecto de código abierto MOSS-TTS-Family-Easy-GUI, disponible en GitHub, y se distribuyen a través de HuggingFace porque superan el límite de 100 MB que impone GitHub para archivos individuales.
+Este repositorio de Hugging Face, publicado por el usuario Blakus, no contiene un modelo de inteligencia artificial, sino un conjunto de librerías personalizadas del backend de llama.cpp. Estas librerías se integran en el proyecto de código abierto MOSS-TTS-Family-Easy-GUI, disponible en GitHub, y se distribuyen a través de Hugging Face porque superan el límite de 100 MB que impone GitHub para archivos individuales.
 
 El repositorio se actualiza automáticamente desde el proyecto principal, por lo que su contenido puede variar con el tiempo. No se proporciona información sobre arquitectura, parámetros, licencia o idiomas, ya que no se trata de un modelo de lenguaje, sino de artefactos de compilación (binarios o bibliotecas dinámicas) destinados a un uso específico dentro de ese proyecto de síntesis de voz.
 
@@ -34,9 +34,9 @@ No aplica. Este repositorio no contiene un modelo entrenado ni una arquitectura 
 ## Casos de uso
 
 - Integración en el proyecto MOSS-TTS-Family-Easy-GUI: las librerías se descargan automáticamente desde este repositorio durante la instalación o ejecución del proyecto, evitando problemas de tamaño en GitHub.
-- Desarrollo y prueba del backend de llama.cpp con modificaciones personalizadas: los desarrolladores del proyecto pueden distribuir versiones experimentales de las librerías a través de HuggingFace.
+- Desarrollo y prueba del backend de llama.cpp con modificaciones personalizadas: los desarrolladores del proyecto pueden distribuir versiones experimentales de las librerías a través de Hugging Face.
 - Reproducibilidad de entornos: al fijar una versión concreta de este repositorio, los usuarios pueden asegurar que su instalación del proyecto TTS utiliza exactamente las mismas librerías que el desarrollador.
-- Despliegue en sistemas sin acceso directo a GitHub: HuggingFace actúa como espejo para descargar estos artefactos en entornos restringidos.
+- Despliegue en sistemas sin acceso directo a GitHub: Hugging Face actúa como espejo para descargar estos artefactos en entornos restringidos.
 - Auditoría de dependencias: los usuarios pueden inspeccionar el contenido del repositorio para verificar qué versiones de las librerías se están utilizando.
 - Contribución al proyecto open source: los desarrolladores pueden clonar o descargar estas librerías para colaborar en la mejora del backend.
 
@@ -62,5 +62,5 @@ No disponible. No existe una categoría de modelos comparable, ya que esto no es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Blakus/llama-cpp-custom-libs
+- Repositorio Hugging Face: https://huggingface.co/Blakus/llama-cpp-custom-libs
 - Proyecto MOSS-TTS-Family-Easy-GUI (GitHub): https://github.com/Mixomo/MOSS-TTS-Family-Easy-GUI

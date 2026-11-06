@@ -95,7 +95,7 @@ Frente al checkpoint principal de π₀.₅ para UMI tossing: los brazos se entr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nirvana-AI/umi-toss-pi05-ablations
+- Hugging Face: https://huggingface.co/Nirvana-AI/umi-toss-pi05-ablations
 - Informe del benchmark (`docs/REPORT.md`, commit `454f50306e2f`): https://github.com/nrvna-ai/umi-tossing-benchmark/blob/454f50306e2f072d012993338c1f0698b943cbf4/docs/REPORT.md
 - Repositorio del benchmark (privado): https://github.com/nrvna-ai/umi-tossing-benchmark
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms

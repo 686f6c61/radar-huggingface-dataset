@@ -88,7 +88,7 @@ No se dispone de comparaciones de rendimiento (MOS, WER, RTF) entre estas altern
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/richardr1126/Supertonic-3-CoreAI
+- Repositorio en Hugging Face: https://huggingface.co/richardr1126/Supertonic-3-CoreAI
 - Modelo base: https://huggingface.co/Supertone/supertonic-3
 - Sitio oficial del proyecto Supertonic 3: https://supertonic3.github.io/
 - Conversión Core ML de terceros: https://huggingface.co/FluidInference/supertonic-3-coreml

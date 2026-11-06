@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`em-eval/llama3.1-8b-good-medical-block_em_data-model_org_recipe-chatgpt_system-s0` es un adaptador LoRA (PEFT) entrenado mediante SFT sobre el modelo base `meta-llama/Llama-3.1-8B-Instruct`. Lo publica el usuario `em-eval` en HuggingFace, y por el nombre del repositorio parece formar parte de un conjunto de experimentos de evaluación sobre datos médicos ("good-medical"), con variantes de receta de datos ("model_org_recipe"), sistema ("chatgpt_system") y semilla ("s0"). No es un modelo completo, sino un adaptador que debe cargarse junto al modelo base para funcionar.
+`em-eval/llama3.1-8b-good-medical-block_em_data-model_org_recipe-chatgpt_system-s0` es un adaptador LoRA (PEFT) entrenado mediante SFT sobre el modelo base `meta-llama/Llama-3.1-8B-Instruct`. Lo publica el usuario `em-eval` en Hugging Face, y por el nombre del repositorio parece formar parte de un conjunto de experimentos de evaluación sobre datos médicos ("good-medical"), con variantes de receta de datos ("model_org_recipe"), sistema ("chatgpt_system") y semilla ("s0"). No es un modelo completo, sino un adaptador que debe cargarse junto al modelo base para funcionar.
 
 El modelo base, Llama 3.1 8B Instruct, es un transformer decoder-only denso de 8.000 millones de parámetros con 128.000 tokens de contexto, desarrollado por Meta. El adaptador hereda por tanto esa arquitectura y esas capacidades, y añade un ajuste fino orientado (presumiblemente) a dominio médico, aunque la model card no documenta ni los datos ni el procedimiento.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada: el repositorio tiene 19 descargas, 0 li
 
 El adaptador se aplica sobre `meta-llama/Llama-3.1-8B-Instruct`, un transformer decoder-only con atención por grupos (GQA) y RoPE, preentrenado por Meta con aproximadamente 15 billones de tokens y posteriormente alineado con SFT y RLHF (DPO). El adaptador en sí es un LoRA entrenado con la librería TRL (SFT) y PEFT 0.21.0, según los metadatos del repositorio.
 
-No se dispone de información sobre el dataset de ajuste fino, el número de tokens de entrenamiento, los hiperparámetros (rank, alpha, dropout, learning rate), la composición del corpus médico ni si hubo etapas adicionales de alineación. La model card es la plantilla por defecto de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]". El nombre del repositorio sugiere un experimento controlado de evaluación (variantes de receta de datos, sistema de prompt y semilla), pero esto es una inferencia a partir del identificador, no un dato documentado.
+No se dispone de información sobre el dataset de ajuste fino, el número de tokens de entrenamiento, los hiperparámetros (rank, alpha, dropout, learning rate), la composición del corpus médico ni si hubo etapas adicionales de alineación. La model card es la plantilla por defecto de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]". El nombre del repositorio sugiere un experimento controlado de evaluación (variantes de receta de datos, sistema de prompt y semilla), pero esto es una inferencia a partir del identificador, no un dato documentado.
 
 ## Capacidades
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador (sobre Llama 3.1 8B Instruct) | 8B (base) + LoRA | 128.000 | No disponible | HuggingFace, 19 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 | Llama 3.1 Community License | HuggingFace, ampliamente usado |
-| Mistral-7B-Instruct-v0.3 | 7B | 32.000 | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct | 7B | 32.000 | Apache 2.0 | HuggingFace |
+| Este adaptador (sobre Llama 3.1 8B Instruct) | 8B (base) + LoRA | 128.000 | No disponible | Hugging Face, 19 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 | Llama 3.1 Community License | Hugging Face, ampliamente usado |
+| Mistral-7B-Instruct-v0.3 | 7B | 32.000 | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct | 7B | 32.000 | Apache 2.0 | Hugging Face |
 
 El adaptador no aporta datos de rendimiento propios que permitan compararlo empíricamente con estas alternativas; la comparación se limita a parámetros, contexto y licencia del modelo base.
 
@@ -83,7 +83,7 @@ El adaptador no aporta datos de rendimiento propios que permitan compararlo emp�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/em-eval/llama3.1-8b-good-medical-block_em_data-model_org_recipe-chatgpt_system-s0
+- Repositorio Hugging Face: https://huggingface.co/em-eval/llama3.1-8b-good-medical-block_em_data-model_org_recipe-chatgpt_system-s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Paper de Llama 3.1 (Meta): https://arxiv.org/abs/2407.21783
 - PEFT: https://github.com/huggingface/peft

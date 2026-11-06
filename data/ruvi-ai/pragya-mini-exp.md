@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pragya-mini-exp es un modelo de generacion de texto desarrollado por RuVI-AI, publicado en HuggingFace bajo licencia Apache 2.0. Se trata, segun la propia model card del autor, de un experimento para comprobar si un modelo de lenguaje de pequeno tamano puede aprender hindi a partir de datasets de historias cortas. El autor lo describe explicitamente como "JUST A EXPERIMENT" (solo un experimento), sin pretensiones de produccion.
+Pragya-mini-exp es un modelo de generacion de texto desarrollado por RuVI-AI, publicado en Hugging Face bajo licencia Apache 2.0. Se trata, segun la propia model card del autor, de un experimento para comprobar si un modelo de lenguaje de pequeno tamano puede aprender hindi a partir de datasets de historias cortas. El autor lo describe explicitamente como "JUST A EXPERIMENT" (solo un experimento), sin pretensiones de produccion.
 
 El modelo se distribuye con la libreria transformers y requiere codigo personalizado (`custom_code`), con una arquitectura identificada internamente como `pragya_e2`. El repositorio ocupa 4,4 GB, lo que sugiere un modelo de escala pequena o mediana, aunque no se especifica el numero exacto de parametros. Soporta ingles e hindi, y fue entrenado sobre los datasets TinyStories (en ingles) y Tiny_Stories_Hindi (en hindi).
 
@@ -44,7 +44,7 @@ En cuanto al entrenamiento, la model card solo declara los datasets: `roneneldan
 - Generacion de historias cortas en hindi: permite evaluar cualitativamente la fluidez del hindi aprendido, comparando con el dataset Tiny_Stories_Hindi.
 - Banco de pruebas de carga con `custom_code`: util para validar pipelines de transformers que requieren `trust_remote_code=True` antes de adoptar arquitecturas no estandar.
 - Investigacion sobre transferencia entre idiomas: al compartir dominio (historias cortas) en dos idiomas, permite estudiar hasta que punto el modelo transfiere estructuras narrativas del ingles al hindi.
-- Prototipado docente: como ejemplo didactico de modelo experimental de bajo perfil, sirve para ilustrar el flujo completo de publicacion en HuggingFace (model card, datasets, licencia, tags).
+- Prototipado docente: como ejemplo didactico de modelo experimental de bajo perfil, sirve para ilustrar el flujo completo de publicacion en Hugging Face (model card, datasets, licencia, tags).
 
 ## Benchmarks y rendimiento
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento del modelo como para establecer una compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RuVI-AI/pragya-mini-exp
+- Hugging Face: https://huggingface.co/RuVI-AI/pragya-mini-exp
 - Dataset TinyStories (ingles): https://huggingface.co/datasets/roneneldan/TinyStories
 - Dataset Tiny_Stories_Hindi: https://huggingface.co/datasets/Meyank/Tiny_Stories_Hindi

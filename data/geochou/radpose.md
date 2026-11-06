@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RadPose es un modelo de estimación de pose humana absoluta que utiliza señales de radiofrecuencia (RF) del tipo ISAC (Integrated Sensing and Communication, es decir, integración de sensado y comunicación). Lo desarrolla Geo Zhou, del INSS Lab de la Michigan State University, y se distribuye como checkpoint oficial bajo licencia GPL-3.0. El repositorio de HuggingFace ocupa 0,7 GB y no cuenta todavía con descargas ni valoraciones.
+RadPose es un modelo de estimación de pose humana absoluta que utiliza señales de radiofrecuencia (RF) del tipo ISAC (Integrated Sensing and Communication, es decir, integración de sensado y comunicación). Lo desarrolla Geo Zhou, del INSS Lab de la Michigan State University, y se distribuye como checkpoint oficial bajo licencia GPL-3.0. El repositorio de Hugging Face ocupa 0,7 GB y no cuenta todavía con descargas ni valoraciones.
 
 A diferencia de los modelos de visión por computador convencionales, RadPose no procesa imágenes ni vídeo: infiere la posición tridimensional del cuerpo humano a partir de señales RF, lo que permite estimar la pose en condiciones de baja visibilidad, sin línea de visión directa o preservando la privacidad de las personas al no capturar imágenes. El modelo se publica junto a un repositorio en GitHub y una página de proyecto con demo.
 
@@ -69,13 +69,13 @@ No disponible. La información proporcionada no incluye modelos comparables de e
 - Riesgo de error en la estimación de pose no cuantificado: no se publican métricas de error (MPJPE u otras), por lo que no puede evaluarse su precisión.
 - No se especifican limitaciones de contexto ni de idioma (no aplica al ser una tarea de regresión sobre señales).
 - Licencia GPL-3.0: permite uso comercial, pero obliga a distribuir las obras derivadas bajo la misma licencia y a liberar el código fuente; conviene revisar la compatibilidad con productos propietarios.
-- El repositorio no tiene descargas ni valoraciones, y la fecha de creación indicada (2026) es futura respecto a la información habitual de HuggingFace; conviene verificar la autenticidad y vigencia del checkpoint antes de usarlo en producción.
+- El repositorio no tiene descargas ni valoraciones, y la fecha de creación indicada (2026) es futura respecto a la información habitual de Hugging Face; conviene verificar la autenticidad y vigencia del checkpoint antes de usarlo en producción.
 - No hay paper publicado con identificador concreto ni resultados reproducibles, lo que dificulta la validación independiente.
 - El modelo no es un modelo de lenguaje: no debe esperarse generación de texto, tool calling ni razonamiento conversacional.
 
 ## Enlaces
 
-- [HuggingFace - Geochou/RadPose](https://huggingface.co/Geochou/RadPose)
+- [Hugging Face - Geochou/RadPose](https://huggingface.co/Geochou/RadPose)
 - [GitHub - RadPose](https://github.com/Geo-Chou/RadPose)
 - [Página de proyecto y demo - RadPose](https://geo-zhou.com/projects/2027-radpose)
 - Paper: no disponible (la model card enlaza a https://arxiv.org sin identificador)

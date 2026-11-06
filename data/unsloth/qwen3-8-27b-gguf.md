@@ -78,9 +78,9 @@ La comparativa se basa en especificaciones técnicas, ya que no hay datos de ren
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guía de Unsloth para Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Artículo de Yottalabs sobre cómo ejecutar Qwen3.8-27B localmente: https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026
 - Artículo de Yottalabs sobre especificaciones y hardware: https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026
-- Perfil de Unsloth en HuggingFace: https://huggingface.co/unsloth
+- Perfil de Unsloth en Hugging Face: https://huggingface.co/unsloth

@@ -101,7 +101,7 @@ La comparacion se limita a caracteristicas estructurales; no se dispone de datos
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/Qwen3-VL-32B-Instruct-abliterated-v1-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Qwen3-VL-32B-Instruct-abliterated-v1-GGUF
 - Modelo base (abliterated): https://huggingface.co/prithivMLmods/Qwen3-VL-32B-Instruct-abliterated-v1
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Qwen3-VL-32B-Instruct-abliterated-v1-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3-VL-32B-Instruct-abliterated-v1-GGUF

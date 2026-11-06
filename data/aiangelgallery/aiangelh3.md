@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AiAngelH3 es un checkpoint de generación de vídeo a partir de imagen (image-to-video) publicado por AiAngelGallery en HuggingFace. No es un modelo entrenado desde cero, sino un merge de pesos construido a partir de dos derivados del modelo MiniMax H3: un 40% de H3 Eros Max beta5 TURBO-hybrid int8 (obra de TenStrip) y un 60% de RedCraft H3 A2A-RED beta1 (obra de AiMetatron). El resultado está ajustado para producir clips con perspectiva en primera persona (POV) de corte realista que mantienen la identidad de un rostro de referencia aportado por el usuario.
+AiAngelH3 es un checkpoint de generación de vídeo a partir de imagen (image-to-video) publicado por AiAngelGallery en Hugging Face. No es un modelo entrenado desde cero, sino un merge de pesos construido a partir de dos derivados del modelo MiniMax H3: un 40% de H3 Eros Max beta5 TURBO-hybrid int8 (obra de TenStrip) y un 60% de RedCraft H3 A2A-RED beta1 (obra de AiMetatron). El resultado está ajustado para producir clips con perspectiva en primera persona (POV) de corte realista que mantienen la identidad de un rostro de referencia aportado por el usuario.
 
 El modelo se distribuye como un único archivo safetensors en cuantización int8 de 20.970.427.336 bytes (aproximadamente 21 GB) y está pensado para funcionar como modelo de difusión directo en ComfyUI, dentro del nodo Load Diffusion Model y del directorio `models/diffusion_models/`. Requiere, además, el text encoder estándar de H3 (`qwen3vl_32b_minimax_h3_nvfp4_awq`), el VAE de vídeo en fp16 y el VAE de audio del repositorio Comfy-Org/MiniMax-H3.
 
@@ -82,7 +82,7 @@ No se dispone de datos comparativos publicados (parámetros, contexto, benchmark
 
 | Modelo | Relacion con AiAngelH3 | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMaxAI/MiniMax-H3 | Modelo base del linaje | no disponible | no disponible | MiniMax H3 Community License Agreement | HuggingFace (referenciado como `base_model`) |
+| MiniMaxAI/MiniMax-H3 | Modelo base del linaje | no disponible | no disponible | MiniMax H3 Community License Agreement | Hugging Face (referenciado como `base_model`) |
 | H3 Eros Max beta5 TURBO-hybrid int8 (TenStrip) | Componente del merge (40%) | no disponible | no disponible | Permisos del autor: venta de imagenes generadas y uso en el generador de Civitai | Publicado por su autor; no se aporta URL |
 | RedCraft H3 A2A-RED beta1 (AiMetatron) | Componente del merge (60%) | no disponible | no disponible | no disponible | Publicado por su autor; no se aporta URL |
 | Otros checkpoints derivados de MiniMax H3 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
@@ -103,7 +103,7 @@ No se dispone de datos comparativos publicados (parámetros, contexto, benchmark
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AiAngelGallery/AiAngelH3
+- Modelo en Hugging Face: https://huggingface.co/AiAngelGallery/AiAngelH3
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Componentes de inferencia (text encoder, VAE de video y de audio): https://huggingface.co/Comfy-Org/MiniMax-H3
 - Pagina del modelo, clips de muestra y resenas: https://civitai.red/models/2940108/aiangelh3

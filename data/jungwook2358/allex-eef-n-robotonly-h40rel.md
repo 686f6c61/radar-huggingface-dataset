@@ -79,10 +79,10 @@ Los datos de los modelos alternativos no proceden de la información proporciona
 
 | Modelo | Desarrollador | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| allex-eef-N-robotonly-h40rel | jungwook2358 | VLA mid-train sobre RLDX-1, horizonte 40, acción relativa de muñeca, datos solo de robot ALLEX | other | HuggingFace, 0 descargas |
-| RLDX-1 (RLWRLD/RLDX-1-PT-IMG) | RLWRLD | Modelo base de pretraining del que deriva este checkpoint | no disponible | HuggingFace |
-| OpenVLA | comunidad académica | VLA de propósito general entrenado sobre datasets de robot diversos | no disponible en esta ficha | HuggingFace, con amplia adopción |
-| RDT-1B | comunidad académica | VLA con transformer de difusión para manipulación bimanual | no disponible en esta ficha | HuggingFace |
+| allex-eef-N-robotonly-h40rel | jungwook2358 | VLA mid-train sobre RLDX-1, horizonte 40, acción relativa de muñeca, datos solo de robot ALLEX | other | Hugging Face, 0 descargas |
+| RLDX-1 (RLWRLD/RLDX-1-PT-IMG) | RLWRLD | Modelo base de pretraining del que deriva este checkpoint | no disponible | Hugging Face |
+| OpenVLA | comunidad académica | VLA de propósito general entrenado sobre datasets de robot diversos | no disponible en esta ficha | Hugging Face, con amplia adopción |
+| RDT-1B | comunidad académica | VLA con transformer de difusión para manipulación bimanual | no disponible en esta ficha | Hugging Face |
 | pi0 | Physical Intelligence | VLA con flow matching orientado a control de robots de propósito general | no disponible en esta ficha | disponibilidad pública |
 
 Diferencias clave frente a las alternativas: este checkpoint no está pensado para generalización entre morfologías, sino para un embodiment concreto (slot 35) y un conjunto de datos cerrado (ALLEX v1–v6), lo que limita su reutilización directa pero facilita la reproducibilidad dentro de ese montaje.
@@ -105,7 +105,7 @@ Diferencias clave frente a las alternativas: este checkpoint no está pensado pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jungwook2358/allex-eef-N-robotonly-h40rel
+- Hugging Face: https://huggingface.co/jungwook2358/allex-eef-N-robotonly-h40rel
 - Modelo base: https://huggingface.co/RLWRLD/RLDX-1-PT-IMG
 - Repositorio de entrenamiento (stage 2): https://github.com/jungwook235/RLDX-1-egopi (rama `feat/allex-eef-h16-midtrain`, commit `fc7a000`)
 - Config de modalidad indicada por el autor: `run_scripts/train/allex_eef/allex_eef_h40_rel_newemb_config.py`

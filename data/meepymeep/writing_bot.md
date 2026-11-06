@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`meepymeep/writing_bot` es un modelo publicado en HuggingFace por el usuario `meepymeep` bajo licencia Apache 2.0. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni casos de uso previstos. El repositorio no registra descargas ni likes en el momento de la consulta y fue creado y actualizado en la misma fecha (27 de octubre de 2026), lo que sugiere una publicacion reciente y sin traccion en la comunidad.
+`meepymeep/writing_bot` es un modelo publicado en Hugging Face por el usuario `meepymeep` bajo licencia Apache 2.0. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni casos de uso previstos. El repositorio no registra descargas ni likes en el momento de la consulta y fue creado y actualizado en la misma fecha (27 de octubre de 2026), lo que sugiere una publicacion reciente y sin traccion en la comunidad.
 
 Por el nombre del repositorio (`writing_bot`) cabe inferir que el autor lo concibio como un modelo orientado a tareas de escritura, pero esta inferencia no esta respaldada por ningun dato tecnico publicado. No se dispone de informacion sobre el pipeline asociado, los idiomas soportados ni los formatos de pesos disponibles.
 
@@ -45,7 +45,7 @@ Dado que no se dispone de especificaciones tecnicas verificables, los siguientes
 - Prototipado experimental: util como banco de pruebas en entornos de investigacion donde el autor o terceros quieran comparar comportamientos, dado que la licencia Apache 2.0 permite uso y modificacion sin restricciones.
 - Fine-tuning sobre dominio propio: la licencia permisiva facilitaria adaptar los pesos a un corpus especifico, siempre que los archivos del repositorio sean efectivamente pesos de un modelo y no otro tipo de artefacto.
 - Integracion en pipelines internos de bajo riesgo: podria evaluarse en tareas no criticas donde los errores sean tolerables y revisables por humanos.
-- Educacion y aprendizaje: el repositorio podria servir como ejemplo de publicacion de modelos en HuggingFace, aunque su falta de documentacion lo hace poco didactico.
+- Educacion y aprendizaje: el repositorio podria servir como ejemplo de publicacion de modelos en Hugging Face, aunque su falta de documentacion lo hace poco didactico.
 
 En todos los casos, la ausencia de especificaciones obliga a realizar una evaluacion directa antes de cualquier uso en produccion.
 
@@ -85,5 +85,5 @@ No se dispone de informacion suficiente para identificar modelos comparables de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/meepymeep/writing_bot
+- Repositorio en Hugging Face: https://huggingface.co/meepymeep/writing_bot
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion proporcionada.

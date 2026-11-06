@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Shiki42/s017-water-delivery-ctr-mask-act-e810-step100000` es un checkpoint de inferencia de una politica robotica entrenada con la libreria LeRobot de HuggingFace. Corresponde al brazo de entrenamiento denominado CTR del Experimento E810, en su ejecucion formal E810-R002, con el paso final 100000. Se trata de un modelo de tipo ACT (Action Chunking Transformer) orientado a la tarea de reparto o entrega de agua ("water delivery"), con la variante IdleMask activada durante el entrenamiento.
+El modelo `Shiki42/s017-water-delivery-ctr-mask-act-e810-step100000` es un checkpoint de inferencia de una politica robotica entrenada con la libreria LeRobot de Hugging Face. Corresponde al brazo de entrenamiento denominado CTR del Experimento E810, en su ejecucion formal E810-R002, con el paso final 100000. Se trata de un modelo de tipo ACT (Action Chunking Transformer) orientado a la tarea de reparto o entrega de agua ("water delivery"), con la variante IdleMask activada durante el entrenamiento.
 
 El autor es el usuario Shiki42 y el repositorio contiene unicamente el modelo de inferencia, la configuracion y el estado del procesador, excluyendo el estado del optimizador. El modelo tiene 51.633.806 parametros (aproximadamente 51,6 millones) y un repositorio de 0,2 GB. No se declaran idiomas soportados ni licencia, y el pipeline asociado es "robotics".
 
@@ -67,7 +67,7 @@ Los datos de parametros, contexto y rendimiento de las alternativas no estan dis
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| s017-water-delivery-ctr-mask-act-e810-step100000 | ACT (LeRobot) para water delivery | 51.633.806 | no disponible | no disponible | Publico en HuggingFace (0 descargas) |
+| s017-water-delivery-ctr-mask-act-e810-step100000 | ACT (LeRobot) para water delivery | 51.633.806 | no disponible | no disponible | Publico en Hugging Face (0 descargas) |
 | Otras politicas ACT en LeRobot | ACT (LeRobot) | no disponible | no disponible | no disponible | Publicas en el ecosistema LeRobot |
 | Diffusion Policy (LeRobot) | Politica de difusion para manipulacion | no disponible | no disponible | no disponible | Publica en LeRobot |
 | SmolVLA (LeRobot) | Vision-language-action | no disponible | no disponible | no disponible | Publica en LeRobot |
@@ -89,7 +89,7 @@ No se dispone de cifras de rendimiento comparables para ninguna de estas alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shiki42/s017-water-delivery-ctr-mask-act-e810-step100000
+- Hugging Face: https://huggingface.co/Shiki42/s017-water-delivery-ctr-mask-act-e810-step100000
 - Repositorio LeRobot (referencia de la libreria): https://github.com/huggingface/lerobot
 - Revision del dataset de entrenamiento (indicada en la model card): `469828ce0f8bedcb1f7dca2ba018d84d543230b2`
 - Commit fuente de CTR (indicado en la model card): `829fa03cd707c3ecb5b446d082ee1e805b8ca69b`

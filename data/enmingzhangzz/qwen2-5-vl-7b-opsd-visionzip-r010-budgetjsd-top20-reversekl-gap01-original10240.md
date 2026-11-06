@@ -77,7 +77,7 @@ El único dato numérico de entrenamiento reportado es la pérdida media de entr
 
 | Modelo | Parámetros | Contexto | Poda de tokens | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (OPSD / VisionZip r010 / Top20 % / KL inversa) | 40 370 176 entrenables sobre Qwen2.5-VL-7B | no disponible (heredado del base) | VisionZip, retención del 10 % | no disponible | adaptador LoRA en HuggingFace, 0 descargas |
+| Este adaptador (OPSD / VisionZip r010 / Top20 % / KL inversa) | 40 370 176 entrenables sobre Qwen2.5-VL-7B | no disponible (heredado del base) | VisionZip, retención del 10 % | no disponible | adaptador LoRA en Hugging Face, 0 descargas |
 | Qwen/Qwen2.5-VL-7B-Instruct (base) | 7B (denominación oficial) | no disponible en la información proporcionada | no | Apache 2.0 | modelo completo ampliamente disponible |
 | Qwen2-VL-7B-Instruct (generación anterior) | familia 7B | no disponible en la información proporcionada | no | Apache 2.0 | modelo completo ampliamente disponible |
 | Otros adaptadores de investigación con VisionZip | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -100,7 +100,7 @@ No se han encontrado en la búsqueda web alternativas comparables de la misma ca
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-BudgetJSD-Top20-ReverseKL-gap01-original10240
+- Adaptador en Hugging Face: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-BudgetJSD-Top20-ReverseKL-gap01-original10240
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/OpenMMReasoner/OpenMMReasoner-SFT-874K
 - Paper o blog de VisionZip: no disponible en la información proporcionada

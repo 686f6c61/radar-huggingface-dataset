@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma4-e4b-guard | LoRA guardrail sobre Gemma 4 E4B INT4 | no disponible | no disponible | no disponible | HuggingFace (15 descargas) |
-| cyankiwi/gemma-4-E4B-it-AWQ-INT4 | Modelo base cuantizado INT4 | Gemma 4 E4B | no disponible | no disponible | HuggingFace |
+| gemma4-e4b-guard | LoRA guardrail sobre Gemma 4 E4B INT4 | no disponible | no disponible | no disponible | Hugging Face (15 descargas) |
+| cyankiwi/gemma-4-E4B-it-AWQ-INT4 | Modelo base cuantizado INT4 | Gemma 4 E4B | no disponible | no disponible | Hugging Face |
 | Alternativas de guardrail (p. ej. clasificadores dedicados) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa cuantitativa con otros guardrails o clasificadores de la misma categoria.
@@ -83,6 +83,6 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/UmyeonSean/gemma4-e4b-guard
+- Hugging Face: https://huggingface.co/UmyeonSean/gemma4-e4b-guard
 - Modelo base: https://huggingface.co/cyankiwi/gemma-4-E4B-it-AWQ-INT4
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

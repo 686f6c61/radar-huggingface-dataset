@@ -25,7 +25,7 @@ Su relevancia actual radica en la demanda de modelos ASR ligeros y especializado
 
 El modelo hereda la arquitectura de Whisper: un transformer encoder-decoder en el que el encoder procesa log-mel spectrograms de 80 canales del audio de entrada y el decoder genera autoregresivamente los tokens de texto. Whisper tiny es la version mas pequena de la familia, con dos bloques de encoder y dos de decoder, disenada para inferencia rapida en hardware modesto.
 
-El fine-tuning se realizo sobre el dataset naharte/british_english, centrado en ingles britanico. Los hiperparametros publicados indican un entrenamiento de 2000 steps con learning rate de 1e-05, planificador lineal con 500 warmup steps, optimizador AdamW (variante fused de PyTorch, betas 0.9/0.999, epsilon 1e-08), batch size de 2 en entrenamiento y 1 en evaluacion, y semilla 42. Se empleo PyTorch 2.11.0+cu130, Transformers 5.21.0.dev0, Datasets 5.1.0 y Tokenizers 0.23.3. No se ha documentado el uso de tecnicas como LoRA ni decodificacion especulativa; el ajuste parece haber sido completo (full fine-tuning) con el Trainer estandar de HuggingFace.
+El fine-tuning se realizo sobre el dataset naharte/british_english, centrado en ingles britanico. Los hiperparametros publicados indican un entrenamiento de 2000 steps con learning rate de 1e-05, planificador lineal con 500 warmup steps, optimizador AdamW (variante fused de PyTorch, betas 0.9/0.999, epsilon 1e-08), batch size de 2 en entrenamiento y 1 en evaluacion, y semilla 42. Se empleo PyTorch 2.11.0+cu130, Transformers 5.21.0.dev0, Datasets 5.1.0 y Tokenizers 0.23.3. No se ha documentado el uso de tecnicas como LoRA ni decodificacion especulativa; el ajuste parece haber sido completo (full fine-tuning) con el Trainer estandar de Hugging Face.
 
 ## Capacidades
 
@@ -70,7 +70,7 @@ No se han publicado comparaciones con otros modelos ASR en la informacion dispon
 - GPU recomendadas: no se requiere GPU dedicada; cualquier GPU con 2 GB de VRAM (por ejemplo, una GTX 1650 o superior) es mas que suficiente. Para entrenamiento o fine-tuning adicional, una RTX 3060 de 12 GB o superior es adecuada dado el tamano del modelo.
 - Consumer GPUs: cabe sin problemas en practicamente cualquier GPU de consumo, incluidas las de gama de entrada.
 - CPU: totalmente viable; Whisper tiny esta disenado para inferencia en CPU con latencias de tiempo real o mejores.
-- Opciones de despliegue: libreria Transformers (pipeline `automatic-speech-recognition`), whisper.cpp (previa conversion a GGUF), CTranslate2, faster-whisper, Ollama (mediante conversion) y endpoints de inference de HuggingFace.
+- Opciones de despliegue: libreria Transformers (pipeline `automatic-speech-recognition`), whisper.cpp (previa conversion a GGUF), CTranslate2, faster-whisper, Ollama (mediante conversion) y endpoints de inference de Hugging Face.
 - Latencia y throughput: no disponibles en la informacion proporcionada; por referencia, Whisper tiny suele transcribir mas rapido que el tiempo real en CPU modernas.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ La ventaja de este modelo frente al base es la especializacion en ingles britani
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GiorgiaPrandi/whisper-tiny_british_ft
+- Modelo en Hugging Face: https://huggingface.co/GiorgiaPrandi/whisper-tiny_british_ft
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de entrenamiento: https://huggingface.co/datasets/naharte/british_english
 - Paper original de Whisper: https://arxiv.org/abs/2212.04356

@@ -83,10 +83,10 @@ Tarea hymem, 40 tareas estratificadas (10 de cada tipo: compactación, digest, d
 
 | Modelo | Tipo | Contexto | Genie (pass) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| glimmer-comb1 (este) | LoRA sobre 30B | 32.768 (config. eval) | 109 / 131 | Apache-2.0 | HuggingFace |
+| glimmer-comb1 (este) | LoRA sobre 30B | 32.768 (config. eval) | 109 / 131 | Apache-2.0 | Hugging Face |
 | GLM-5.3-Flash | modelo general | no disponible | 99 / 131 | no disponible | no disponible |
 | DeepSeek-Flash | modelo general | no disponible | 84 / 131 | no disponible | no disponible |
-| Muse-Glimmer-30B base | transformer 30B | no disponible | 0 / 131 | Apache-2.0 | HuggingFace |
+| Muse-Glimmer-30B base | transformer 30B | no disponible | 0 / 131 | Apache-2.0 | Hugging Face |
 
 La comparación con GLM-5.3-Flash no está estadísticamente establecida según el propio autor (p emparejada = 0,12).
 
@@ -103,6 +103,6 @@ La comparación con GLM-5.3-Flash no está estadísticamente establecida según 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Frosty40/glimmer-genie-Muse-Glimmer-30B-comb1
+- Hugging Face: https://huggingface.co/Frosty40/glimmer-genie-Muse-Glimmer-30B-comb1
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Repositorio angelX: https://github.com/newjordan/angelX

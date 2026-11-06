@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `aariciah/gpt2-arabic-dutch-routed` | 114.992.640 | no disponible | no disponible | no disponible | HuggingFace |
-| `aariciah/gpt2-arabic-20k-lc` (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| `aariciah/gpt2-arabic-dutch-configC-6k` | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| `aariciah/gpt2-arabic-dutch-merge` | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `aariciah/gpt2-arabic-dutch-routed` | 114.992.640 | no disponible | no disponible | no disponible | Hugging Face |
+| `aariciah/gpt2-arabic-20k-lc` (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| `aariciah/gpt2-arabic-dutch-configC-6k` | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| `aariciah/gpt2-arabic-dutch-merge` | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de informacion suficiente para una comparacion tecnica detallada. Los modelos mencionados son variantes del mismo autor, pero carecen de documentacion publica sobre sus especificaciones.
 
@@ -76,7 +76,7 @@ No se dispone de informacion suficiente para una comparacion tecnica detallada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aariciah/gpt2-arabic-dutch-routed
+- Modelo en Hugging Face: https://huggingface.co/aariciah/gpt2-arabic-dutch-routed
 - Modelo base: https://huggingface.co/aariciah/gpt2-arabic-20k-lc
 - Variante relacionada: https://huggingface.co/aariciah/gpt2-arabic-dutch-configC-6k
 - Variante relacionada: https://huggingface.co/aariciah/gpt2-arabic-dutch-merge

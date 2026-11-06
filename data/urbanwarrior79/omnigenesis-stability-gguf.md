@@ -80,6 +80,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Urbanwarrior79/omnigenesis-stability-gguf
+- Hugging Face: https://huggingface.co/Urbanwarrior79/omnigenesis-stability-gguf
 - Repositorio de despliegue de Omnigenesis (Modelfile y system prompt): no disponible como enlace directo en la información proporcionada.
 - Paper, blog, repositorio de código o demo: no disponible.

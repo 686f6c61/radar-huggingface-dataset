@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jessedbrown/free-at-all-levels` es un repositorio alojado en HuggingFace que no contiene un modelo de lenguaje ni ningun artefacto de aprendizaje automatico. El unico entregable descrito en su model card es un unico archivo `index.html` autocontenido, sin dependencias, que dibuja una estructura de anillos autocontrolada por el refresco de pantalla del navegador. El autor es Jesse Daniel Brown (identificado como "Jesse Daniel Brown (OP-JESSE)") y la publicacion se presenta como material de investigacion sobre una construccion matematica denominada "la clausura", con coeficientes de brazo (2, −1, −1).
+`Jessedbrown/free-at-all-levels` es un repositorio alojado en Hugging Face que no contiene un modelo de lenguaje ni ningun artefacto de aprendizaje automatico. El unico entregable descrito en su model card es un unico archivo `index.html` autocontenido, sin dependencias, que dibuja una estructura de anillos autocontrolada por el refresco de pantalla del navegador. El autor es Jesse Daniel Brown (identificado como "Jesse Daniel Brown (OP-JESSE)") y la publicacion se presenta como material de investigacion sobre una construccion matematica denominada "la clausura", con coeficientes de brazo (2, −1, −1).
 
 La afirmacion tecnica central del autor es que el coste computacional por fotograma es constante mientras el indice de profundidad crece sin limite: cada nivel no se recalcula, se redibuja bajo una transformacion afin cuya suma de coeficientes es cero, lo que deja el centro libre. El propio autor aporta mediciones del bucle de render (nivel 0, 1 y 3 con 5 anillos dibujados por fotograma en todos los casos) y una tabla de divergencia en coma flotante frente a enteros exactos (desviacion −1,253e−1 en profundidad 27 y −1,171e+24 en profundidad 81).
 
@@ -21,7 +21,7 @@ Para un desarrollador o investigador que llegue al Hub buscando un modelo evalua
 | Licencia | no disponible |
 | Formato de pesos | no aplica; el entregable es un unico archivo `index.html` descargable |
 
-Datos adicionales de la ficha de HuggingFace: autor `Jessedbrown`, pipeline no disponible, 0 descargas, 0 likes, etiqueta `region:us`, creado el 2026-10-16T20:20:57Z y actualizado el 2026-08-07T00:28:34Z (la fecha de actualizacion es anterior a la de creacion, lo que indica metadatos inconsistentes).
+Datos adicionales de la ficha de Hugging Face: autor `Jessedbrown`, pipeline no disponible, 0 descargas, 0 likes, etiqueta `region:us`, creado el 2026-10-16T20:20:57Z y actualizado el 2026-08-07T00:28:34Z (la fecha de actualizacion es anterior a la de creacion, lo que indica metadatos inconsistentes).
 
 ## Arquitectura y entrenamiento
 
@@ -90,7 +90,7 @@ No disponible. El repositorio no contiene un modelo de aprendizaje automatico, p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessedbrown/free-at-all-levels
+- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/free-at-all-levels
 - Demo publicada por el autor: https://jessebrown1980.github.io/free-at-all-levels/
 - "The bridge to all of it": https://jessebrown1980.github.io/the-bridge-to-all-of-it/
 - Repositorio con URL completa confirmada en la model card, sobre la supervivencia de la clausura hasta 81 niveles: https://github.com/JesseBrown1980/does-the-closure-survive-81-levels

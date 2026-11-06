@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mradermacher/axiom-python-1.5B-GGUF es un repositorio de cuantizaciones en formato GGUF del modelo coderian/axiom-python-1.5B, un modelo de generacion de texto especializado en codigo Python. La cuantizacion la realiza mradermacher, un autor conocido en HuggingFace por publicar versiones comprimidas de modelos abiertos para su uso con llama.cpp y herramientas derivadas. El modelo base pertenece a la familia Qwen2 (campo `model_type: qwen2`), tiene 1.543.714.304 parametros (aproximadamente 1,5 mil millones) y se distribuye bajo licencia Apache 2.0.
+mradermacher/axiom-python-1.5B-GGUF es un repositorio de cuantizaciones en formato GGUF del modelo coderian/axiom-python-1.5B, un modelo de generacion de texto especializado en codigo Python. La cuantizacion la realiza mradermacher, un autor conocido en Hugging Face por publicar versiones comprimidas de modelos abiertos para su uso con llama.cpp y herramientas derivadas. El modelo base pertenece a la familia Qwen2 (campo `model_type: qwen2`), tiene 1.543.714.304 parametros (aproximadamente 1,5 mil millones) y se distribuye bajo licencia Apache 2.0.
 
 El interes practico de este repositorio esta en que permite ejecutar un modelo de generacion de codigo de ~1,5B en hardware muy modesto: las cuantizaciones van desde 0,8 GB (Q2_K) hasta 3,2 GB (f16), lo que lo hace viable en GPUs de consumo, portatiles sin GPU dedicada e incluso en CPU. Es un modelo afinado mediante LoRA y SFT con TRL sobre el modelo base, orientado a tareas de codigo Python y con soporte declarado de turco (tr) e ingles (en).
 

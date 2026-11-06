@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vincentvin/review-visual-question-answering` no es un modelo entrenado, sino un repositorio de notas de investigacion sobre *Visual Question Answering* (VQA) publicado por el usuario vincentvin en HuggingFace. El propio autor lo declara explicitamente en la model card: se trata de un conjunto estructurado de notas, hipotesis y referencias, sin checkpoint entrenado, sin codigo liberado y sin resultados de ablaciones completadas. La unica evidencia cuantitativa disponible es el recuento de parametros de los ficheros safetensors del repositorio: 49.600 parametros, una cifra extraordinariamente baja para cualquier modelo de vision-lenguaje funcional.
+`vincentvin/review-visual-question-answering` no es un modelo entrenado, sino un repositorio de notas de investigacion sobre *Visual Question Answering* (VQA) publicado por el usuario vincentvin en Hugging Face. El propio autor lo declara explicitamente en la model card: se trata de un conjunto estructurado de notas, hipotesis y referencias, sin checkpoint entrenado, sin codigo liberado y sin resultados de ablaciones completadas. La unica evidencia cuantitativa disponible es el recuento de parametros de los ficheros safetensors del repositorio: 49.600 parametros, una cifra extraordinariamente baja para cualquier modelo de vision-lenguaje funcional.
 
 A pesar de estar etiquetado con el pipeline `visual-question-answering`, con los tags `safetensors` y `transformer` y con licencia MIT, el contenido real del repositorio son dos ficheros de texto (`paper_notes.md` y `README.md`) y un peso de repositorio de 0,0 GB. El autor insiste en que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales, y que las referencias y datasets propuestos son un punto de partida para verificacion, no evidencia de un estudio ya ejecutado.
 
@@ -20,7 +20,7 @@ Su relevancia es, por tanto, documental y metodologica: sirve como plantilla de 
 | Idiomas soportados | no disponible (no declarados) |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
-| Pipeline declarado en HuggingFace | visual-question-answering |
+| Pipeline declarado en Hugging Face | visual-question-answering |
 | Tamano del repositorio | 0,0 GB |
 | Fecha de creacion | 2026-10-07 |
 | Ultima actualizacion | 2026-10-07 |
@@ -90,7 +90,7 @@ La busqueda web realizada no devolvio ningun resultado relacionado con este repo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vincentvin/review-visual-question-answering
+- Repositorio en Hugging Face: https://huggingface.co/vincentvin/review-visual-question-answering
 - Artefacto principal del repositorio: `paper_notes.md` (accesible desde la pestana de ficheros del repositorio anterior)
 - Documentacion del repositorio: `README.md` (incluido en el propio repositorio)
 - Enlaces adicionales (papers, blogs, repos, demos): no disponible. La busqueda web no devolvio ningun resultado pertinente sobre este repositorio, su autor o el trabajo descrito.

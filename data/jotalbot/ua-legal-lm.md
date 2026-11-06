@@ -64,7 +64,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JoTalbot/ua-legal-lm
+- Hugging Face: https://huggingface.co/JoTalbot/ua-legal-lm
 - Repositorio GitHub del pipeline: https://github.com/JoTalbot/ukraine
 - Benchmark UA-Legal-Bench (paper): https://arxiv.org/abs/2605.29170
 - PDF del paper: https://arxiv.org/pdf/2605.29170

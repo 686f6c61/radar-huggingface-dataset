@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KaylaMorgan/deit-matching-aug es un repositorio de HuggingFace que contiene una implementación propia de DeiT (Data-efficient Image Transformer) orientada a tareas de *matching*, empaquetada con un fichero de configuración explícito y un checkpoint de inicialización. No se trata de un modelo entrenado ni publicado con resultados: la propia model card lo describe como un punto de partida reproducible, no como una release de modelo con benchmarks.
+KaylaMorgan/deit-matching-aug es un repositorio de Hugging Face que contiene una implementación propia de DeiT (Data-efficient Image Transformer) orientada a tareas de *matching*, empaquetada con un fichero de configuración explícito y un checkpoint de inicialización. No se trata de un modelo entrenado ni publicado con resultados: la propia model card lo describe como un punto de partida reproducible, no como una release de modelo con benchmarks.
 
 El artefacto principal no es el checkpoint, sino el script `finetune.py`, que incluye el modelo y un punto de entrada ejecutable para entrenamiento o pruebas de humo. El checkpoint `model.safetensors` es válido únicamente para *smoke tests* de inicialización, según declara el autor, y el recuento de parámetros reportado por los metadatos de safetensors es de 16.576, un valor anómalo para una variante "large" de DeiT que sugiere que el tensor almacenado no corresponde a los pesos completos del modelo.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KaylaMorgan/deit-matching-aug | 16.576 (metadatos) | no disponible | sin benchmarks | BSD-3-Clause | HuggingFace, checkpoint de inicialización |
-| facebook/deit-large-patch16-224 | ~304 M | 224x224 px | ImageNet top-1 ~84-85 % (referencia pública) | Apache-2.0 | HuggingFace, pesos entrenados |
-| facebook/deit-base-patch16-224 | ~86 M | 224x224 px | ImageNet top-1 ~81-82 % (referencia pública) | Apache-2.0 | HuggingFace, pesos entrenados |
+| KaylaMorgan/deit-matching-aug | 16.576 (metadatos) | no disponible | sin benchmarks | BSD-3-Clause | Hugging Face, checkpoint de inicialización |
+| facebook/deit-large-patch16-224 | ~304 M | 224x224 px | ImageNet top-1 ~84-85 % (referencia pública) | Apache-2.0 | Hugging Face, pesos entrenados |
+| facebook/deit-base-patch16-224 | ~86 M | 224x224 px | ImageNet top-1 ~81-82 % (referencia pública) | Apache-2.0 | Hugging Face, pesos entrenados |
 
 La comparación con los DeiT oficiales de Facebook AI es la más directa por arquitectura base, aunque este repositorio no publica pesos entrenados ni resultados, por lo que no es equiparable en rendimiento.
 
@@ -76,12 +76,12 @@ La comparación con los DeiT oficiales de Facebook AI es la más directa por arq
 - No se documentan sesgos conocidos, pero al no haber entrenamiento no pueden evaluarse.
 - Riesgo de alucinación: no aplica en sentido estricto (modelo de visión), pero cualquier resultado derivado de este checkpoint carece de validez.
 - Licencia BSD-3-Clause permite uso comercial con atribución, pero el autor advierte de revisar los términos de los datos fuente si se usan datasets externos.
-- Las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito por tratarse de una implementación personalizada.
+- Las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito por tratarse de una implementación personalizada.
 - Cualquier resultado de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto aquí incluidos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KaylaMorgan/deit-matching-aug
+- Repositorio Hugging Face: https://huggingface.co/KaylaMorgan/deit-matching-aug
 - Paper DeiT original: https://arxiv.org/abs/2012.12877
 - Repositorio oficial DeiT (Facebook Research): https://github.com/facebookresearch/deit
-- Modelo DeiT large oficial en HuggingFace: https://huggingface.co/facebook/deit-large-patch16-224
+- Modelo DeiT large oficial en Hugging Face: https://huggingface.co/facebook/deit-large-patch16-224

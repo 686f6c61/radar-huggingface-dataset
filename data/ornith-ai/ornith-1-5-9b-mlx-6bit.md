@@ -83,7 +83,7 @@ Ornith-1.5-9B supera claramente a Qwen3.5-9B en tareas de codificacion agente, y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX-6bit
+- Repositorio Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX-6bit
 - Coleccion MLX de ornith-ai: https://huggingface.co/collections/ornith-ai/ornith-15-mlx
 - Blog de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Sitio web de Ornith AI: https://ornith.online/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`makactuary/simba-or-not` es un clasificador binario de imágenes publicado en HuggingFace por el usuario makactuary. No es un modelo de lenguaje ni una red neuronal entrenada de extremo a extremo: es una cabeza de regresión logística de scikit-learn montada sobre las características congeladas de un ConvNeXt-Tiny (`timm/convnext_tiny.fb_in22k_ft_in1k`). Su única tarea es responder a una pregunta muy concreta: si el gato de la fotografía es Simba, un gato naranja y blanco de pelo largo, o no lo es.
+`makactuary/simba-or-not` es un clasificador binario de imágenes publicado en Hugging Face por el usuario makactuary. No es un modelo de lenguaje ni una red neuronal entrenada de extremo a extremo: es una cabeza de regresión logística de scikit-learn montada sobre las características congeladas de un ConvNeXt-Tiny (`timm/convnext_tiny.fb_in22k_ft_in1k`). Su única tarea es responder a una pregunta muy concreta: si el gato de la fotografía es Simba, un gato naranja y blanco de pelo largo, o no lo es.
 
 El interés del modelo es metodológico más que de rendimiento bruto. El autor entrenó con solo 42 fotos propias de Simba frente a 2371 fotos de gatos del dataset Oxford-IIIT Pet, y aplicó una validación cruzada agrupada por día de captura (20 días) para evitar que ráfagas casi idénticas de la misma sesión cayeran a la vez en entrenamiento y test. El resultado reportado es un recall de 0,98 sobre días no vistos y un 0,04 % de falsos positivos, con un único error sobre un Maine Coon.
 
@@ -71,7 +71,7 @@ No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K u
 |---|---|---|---|---|---|
 | `makactuary/simba-or-not` | Clasificador binario de instancia | Backbone ~28,6 M congelado + regresión logística | Imagen (resolución no especificada) | Recall 0,98; 0,04 % de falsos positivos (evaluación propia) | CC BY-SA 4.0 |
 | `timm/convnext_tiny.fb_in22k_ft_in1k` | Clasificador ImageNet-1k | ~28,6 M | 224x224 | No resuelve la tarea: sus 1000 clases no incluyen identidades individuales de gato | Apache-2.0 |
-| Clasificadores de raza sobre Oxford-IIIT Pet disponibles en HuggingFace | Clasificación multirraza (37 razas) | Variable según backbone | Variable | No disponible para esta comparación; resuelven raza, no individuo | Variable |
+| Clasificadores de raza sobre Oxford-IIIT Pet disponibles en Hugging Face | Clasificación multirraza (37 razas) | Variable según backbone | Variable | No disponible para esta comparación; resuelven raza, no individuo | Variable |
 | Enfoques zero-shot con CLIP / open_clip | Visión-lenguaje zero-shot | Variable | 224x224 típicamente | No verificado en esta tarea; sin entrenamiento específico, la discriminación entre dos gatos naranjas es débil | Variable |
 
 ## Limitaciones y advertencias
@@ -85,13 +85,13 @@ No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K u
 - Modelo sin validación externa: 0 descargas y 0 likes en el momento de la consulta, sin revisión por terceros ni benchmarks independientes.
 - No generaliza a otras especies ni a categorías: no distingue perros, ni razas, ni "gato" frente a "no gato" más allá de la frontera Simba / resto.
 - Colisión de nombre: las búsquedas de "SIMBA" devuelven mayoritariamente el sistema de texto a voz SIMBA 3.0 de Speechify y contenidos sobre IA para actuarios, sin relación alguna con este modelo. Conviene citarlo siempre con su ID completo `makactuary/simba-or-not`.
-- Los resultados de la búsqueda web realizada no aportan información técnica sobre este modelo; todas las cifras de esta ficha provienen de la model card y de metadatos de HuggingFace.
+- Los resultados de la búsqueda web realizada no aportan información técnica sobre este modelo; todas las cifras de esta ficha provienen de la model card y de metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/makactuary/simba-or-not
-- Backbone base en HuggingFace: https://huggingface.co/timm/convnext_tiny.fb_in22k_ft_in1k
-- Dataset de negativos en HuggingFace: https://huggingface.co/datasets/timm/oxford-iiit-pet
+- Modelo en Hugging Face: https://huggingface.co/makactuary/simba-or-not
+- Backbone base en Hugging Face: https://huggingface.co/timm/convnext_tiny.fb_in22k_ft_in1k
+- Dataset de negativos en Hugging Face: https://huggingface.co/datasets/timm/oxford-iiit-pet
 - Página oficial del dataset Oxford-IIIT Pet (Parkhi et al., 2012, CVPR): https://www.robots.ox.ac.uk/~vgg/data/pets/
 - Repositorio timm (librería del backbone): https://github.com/huggingface/pytorch-image-models
 - Resultados de búsqueda web consultados, sin relación con el modelo: https://www.marktechpost.com/2026/05/30/best-text-to-speech-tts-models-in-2026-a-benchmark-based-comparison/ y https://actuary.info/become-an-actuary/python-ai/how-actuaries-using-ai-ml-2026/

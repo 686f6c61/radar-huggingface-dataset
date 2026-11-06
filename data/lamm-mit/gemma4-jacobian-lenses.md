@@ -78,8 +78,8 @@ No disponible. Este repositorio no es un modelo de lenguaje de proposito general
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lamm-mit/gemma4-jacobian-lenses
+- Hugging Face: https://huggingface.co/lamm-mit/gemma4-jacobian-lenses
 - Repositorio GitHub (codigo, prompts, protocolos): https://github.com/lamm-mit/Substrates
-- Coleccion en HuggingFace (Substrates): https://huggingface.co/collections/lamm-mit/substrates-reading-and-steering-representations-in-llms
+- Coleccion en Hugging Face (Substrates): https://huggingface.co/collections/lamm-mit/substrates-reading-and-steering-representations-in-llms
 - Articulo arXiv (HTML): https://arxiv.org/html/2607.20058
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it

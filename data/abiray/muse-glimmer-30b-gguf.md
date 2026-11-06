@@ -83,8 +83,8 @@ No se dispone de datos suficientes para realizar una comparativa rigurosa con ot
 
 ## Enlaces
 
-- Repositorio HuggingFace de cuantizaciones GGUF: https://huggingface.co/Abiray/Muse-Glimmer-30B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/meta-models/Muse-Glimmer-30B
+- Repositorio Hugging Face de cuantizaciones GGUF: https://huggingface.co/Abiray/Muse-Glimmer-30B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Blog de Meta Research: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model
 - Guía de comunidad en GitHub: https://github.com/cobusgreyling/Muse-Glimmer
 - Documentación de Unsloth para ejecución local: https://unsloth.ai/docs/models/muse-glimmer

@@ -70,6 +70,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo cuantizado](https://huggingface.co/majentik/Qwen3.8-27B-MLX-6bit)
+- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/majentik/Qwen3.8-27B-MLX-6bit)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio mlx-lm](https://github.com/ml-explore/mlx-lm)

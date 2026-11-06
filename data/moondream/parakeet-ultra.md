@@ -256,7 +256,7 @@ cuantitativa más allá de la del modelo base y su variante ternaria.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moondream/parakeet-ultra
+- Modelo en Hugging Face: https://huggingface.co/moondream/parakeet-ultra
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Modelo hermano ternario: https://huggingface.co/moondream/parakeet-redux
 - Entrada de blog de lanzamiento: https://moondream.ai/blog/introducing-parakeet-redux-and-ultra

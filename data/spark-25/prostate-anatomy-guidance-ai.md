@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Prostate Anatomy Guidance AI es una colección de 18 clasificadores 3D de resonancia magnética multiparamétrica (mpMRI) de próstata, publicados por el usuario spark-25 en HuggingFace y descritos en el artículo de Park et al. (arXiv:2611.04155, 2026). El modelo resuelve dos tareas clínicas sobre el examen completo: la predicción ordinal de la puntuación PI-RADS (1-5) y la detección binaria de cáncer de próstata clínicamente significativo (csPCa, 0/1). Su particularidad es la "guía anatómica": una parte de las variantes acepta como canal adicional una máscara de segmentación zonal de la próstata, lo que permite condicionar la clasificación sobre la anatomía del paciente.
+Prostate Anatomy Guidance AI es una colección de 18 clasificadores 3D de resonancia magnética multiparamétrica (mpMRI) de próstata, publicados por el usuario spark-25 en Hugging Face y descritos en el artículo de Park et al. (arXiv:2611.04155, 2026). El modelo resuelve dos tareas clínicas sobre el examen completo: la predicción ordinal de la puntuación PI-RADS (1-5) y la detección binaria de cáncer de próstata clínicamente significativo (csPCa, 0/1). Su particularidad es la "guía anatómica": una parte de las variantes acepta como canal adicional una máscara de segmentación zonal de la próstata, lo que permite condicionar la clasificación sobre la anatomía del paciente.
 
 Técnicamente son clasificadores 3D entrenados desde cero sobre volúmenes de T2, DWI y ADC remuestreados a 1 × 1 × 3 mm y recortados a 112 × 112 × 24 vóxeles. Se ofrecen tres backbones (ResNet-18, ResNet-50 y ViT) en tres configuraciones de máscara (sin máscara, 2 zonas y 5 zonas), lo que da lugar a las 18 combinaciones tarea × backbone × canal de máscara. La pérdida es CORAL ordinal para PI-RADS y entropía cruzada para csPCa.
 
@@ -77,7 +77,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/spark-25/prostate-anatomy-guidance-ai
+- Modelo en Hugging Face: https://huggingface.co/spark-25/prostate-anatomy-guidance-ai
 - Artículo (arXiv): https://arxiv.org/abs/2611.04155
 - PDF del artículo: https://arxiv.org/pdf/2611.04155
 - Código: https://github.com/seungbin201803/prostate-anatomy-guidance-ai

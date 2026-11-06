@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mradermacher/llama-3.1-8B-Harmful-GGUF` es una colección de cuantizaciones GGUF del modelo `sayandasscientistcoder/llama-3.1-8B-Harmful`, una variante sin censura (uncensored) del Llama 3.1 8B de Meta. El autor, mradermacher, se dedica a convertir modelos de HuggingFace a formato GGUF para su uso en entornos locales con herramientas como llama.cpp u Ollama. Este modelo en particular está diseñado para eliminar los filtros de seguridad y moderación del Llama 3.1 original, permitiendo respuestas sin restricciones sobre temas que el modelo base rechazaría.
+El modelo `mradermacher/llama-3.1-8B-Harmful-GGUF` es una colección de cuantizaciones GGUF del modelo `sayandasscientistcoder/llama-3.1-8B-Harmful`, una variante sin censura (uncensored) del Llama 3.1 8B de Meta. El autor, mradermacher, se dedica a convertir modelos de Hugging Face a formato GGUF para su uso en entornos locales con herramientas como llama.cpp u Ollama. Este modelo en particular está diseñado para eliminar los filtros de seguridad y moderación del Llama 3.1 original, permitiendo respuestas sin restricciones sobre temas que el modelo base rechazaría.
 
 La relevancia de este modelo radica en su uso para investigación sobre seguridad de IA, evaluación de riesgos de modelos sin alineación, o aplicaciones donde se requiere una generación de texto sin censura (siempre bajo responsabilidad del usuario). Al ser una cuantización GGUF, ofrece múltiples niveles de compresión (desde f16 hasta Q2_K) para adaptarse a diferentes capacidades de hardware. El repositorio ocupa 42.7 GB en total, lo que indica que incluye todas las variantes de cuantización listadas en los metadatos.
 
@@ -75,7 +75,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. Existen o
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mradermacher/llama-3.1-8B-Harmful-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mradermacher/llama-3.1-8B-Harmful-GGUF
 - Modelo base (safetensors): https://huggingface.co/sayandasscientistcoder/llama-3.1-8B-Harmful
 - Modelo relacionado (clasificador de consejos dañinos): https://hf-mirror.com/ai-safety-institute/Llama-3.1-8B-harmful-advice-classifier
 - Otros modelos GGUF de mradermacher: https://huggingface.co/mradermacher/Llama-3.1-8B-Instruct-Uncensored-Complete-i1-GGUF y https://huggingface.co/mradermacher/Llama-3.1-8B-Instruct-abliterated-i1-GGUF

@@ -87,7 +87,7 @@ El unico dato cuantitativo de rendimiento publicado es la evolucion de la loss d
 
 | Modelo | Parametros | Contexto | Modalidad 3D | Licencia | Disponibilidad de pesos |
 |---|---|---|---|---|---|
-| Jack04810/spac_4B_spacialpe_0.08 | 4,66B (dato real safetensors) | No disponible (base: 32.768 nativos) | Malla tokenizada como texto, bidireccional | other | safetensors en HuggingFace, requiere wrapper Spatial-PE |
+| Jack04810/spac_4B_spacialpe_0.08 | 4,66B (dato real safetensors) | No disponible (base: 32.768 nativos) | Malla tokenizada como texto, bidireccional | other | safetensors en Hugging Face, requiere wrapper Spatial-PE |
 | qwen/Qwen3-4B (modelo base) | 4B aprox. | 32.768 nativos, 131.072 con YaRN | No soporta malla | Apache 2.0 en el modelo base (a verificar en su repositorio) | safetensors, GGUF y multiples cuantizaciones de la comunidad |
 | NVlabs/LLaMA-Mesh | 8B aprox. | No disponible en esta comparativa | Malla tokenizada como texto, inspirado en MeshGPT | No disponible en esta comparativa | Pesos publicos, ecosistema mas maduro |
 

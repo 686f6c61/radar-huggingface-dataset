@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`DonkeySmall/face_upscale` es un repositorio de HuggingFace publicado por el usuario DonkeySmall el 27 de septiembre de 2026, con licencia MIT y etiquetado unicamente como `region:us`. El nombre del repositorio apunta a un modelo de superresolucion o mejora de rostros (*face upscaling*), pero el autor no ha publicado model card: el README se limita a declarar la licencia y no incluye descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso.
+`DonkeySmall/face_upscale` es un repositorio de Hugging Face publicado por el usuario DonkeySmall el 27 de septiembre de 2026, con licencia MIT y etiquetado unicamente como `region:us`. El nombre del repositorio apunta a un modelo de superresolucion o mejora de rostros (*face upscaling*), pero el autor no ha publicado model card: el README se limita a declarar la licencia y no incluye descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso.
 
-El repositorio acumula 0 descargas y 0 likes, y no declara pipeline de HuggingFace ni idiomas soportados. Tampoco hay pesos, ficheros de configuracion o demos listados en la informacion disponible, por lo que no es posible confirmar que el modelo sea funcional, que este completo ni que se corresponda con algun artefacto entrenado.
+El repositorio acumula 0 descargas y 0 likes, y no declara pipeline de Hugging Face ni idiomas soportados. Tampoco hay pesos, ficheros de configuracion o demos listados en la informacion disponible, por lo que no es posible confirmar que el modelo sea funcional, que este completo ni que se corresponda con algun artefacto entrenado.
 
 Su relevancia actual es, por tanto, limitada y de caracter exploratorio: la restauracion y el reescalado de rostros es una categoria activa (con referencias como GFPGAN, CodeFormer, Real-ESRGAN o los modelos indexados en OpenModelDB), pero este repositorio concreto no aporta todavia documentacion verificable que permita evaluarlo, compararlo o integrarlo en produccion. Cualquier uso deberia ir precedido de una auditoria del contenido real del repositorio.
 
@@ -87,8 +87,8 @@ Las licencias de los modelos de comparacion deben verificarse en sus repositorio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DonkeySmall/face_upscale
-- Perfil de datasets del autor en HuggingFace: https://huggingface.co/DonkeySmall/datasets
+- Repositorio en Hugging Face: https://huggingface.co/DonkeySmall/face_upscale
+- Perfil de datasets del autor en Hugging Face: https://huggingface.co/DonkeySmall/datasets
 - Perfil de GitHub del autor: https://github.com/DonkeySmall
 - OpenModelDB, base de datos comunitaria de modelos de upscaling: https://openmodeldb.info/
-- HuggingFace (portal general): https://huggingface.co/
+- Hugging Face (portal general): https://huggingface.co/

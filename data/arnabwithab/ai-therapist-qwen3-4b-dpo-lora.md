@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ai-therapist-qwen3-4b-dpo-lora es un adaptador LoRA de ajuste fino por DPO (Direct Preference Optimization) construido sobre el modelo base Qwen/Qwen3-4B-Instruct-2507. Lo desarrolla el usuario de HuggingFace arnabwithab y forma parte de la colección "Counselling SLMs", una serie de modelos pequenos orientados a tareas de acompanamiento psicologico y consejeria conversacional. El objetivo declarado es especializar un modelo generalista de 4.000 millones de parametros en respuestas de apoyo emocional alineadas con preferencias humanas en el dominio de la psicoterapia.
+ai-therapist-qwen3-4b-dpo-lora es un adaptador LoRA de ajuste fino por DPO (Direct Preference Optimization) construido sobre el modelo base Qwen/Qwen3-4B-Instruct-2507. Lo desarrolla el usuario de Hugging Face arnabwithab y forma parte de la colección "Counselling SLMs", una serie de modelos pequenos orientados a tareas de acompanamiento psicologico y consejeria conversacional. El objetivo declarado es especializar un modelo generalista de 4.000 millones de parametros en respuestas de apoyo emocional alineadas con preferencias humanas en el dominio de la psicoterapia.
 
 El adaptador se entrena con Unsloth QLoRA aplicando DPO directamente sobre el modelo base (DPO-from-base), usando el conjunto de datos PsyCoPref de Psychotherapy-LLM. El resultado es un adaptador ligero (repo de 0,1 GB) que se carga sobre el modelo base mediante PEFT, sin necesidad de redistribuir los pesos completos. Por su tamano y licencia Apache 2.0, es un candidato practico para prototipos de bajo coste en el ambito de la salud mental conversacional.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arnabwithab/ai-therapist-qwen3-4b-dpo-lora
+- Hugging Face: https://huggingface.co/arnabwithab/ai-therapist-qwen3-4b-dpo-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Coleccion Counselling SLMs: https://huggingface.co/collections/arnabwithab/counselling-slms-6ad06ab0ca4ce4cf5ceb5ca4
 - Dataset PsyCoPref: https://huggingface.co/datasets/Psychotherapy-LLM/PsyCoPref

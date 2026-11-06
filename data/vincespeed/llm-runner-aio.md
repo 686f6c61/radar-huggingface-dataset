@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vincespeed/llm-runner-aio` no es un modelo de lenguaje, sino un paquete de aplicación todo-en-uno para ejecutar y gestionar LLMs localmente en equipos de consumo. Desarrollado por el autor vincespeed, el proyecto se distribuye como un instalador ejecutable (2,03 GB) que despliega automáticamente un entorno completo: interfaz de usuario Open WebUI, servidor de inferencia llama.cpp (compilado para CUDA 13 y Vulkan), buscador privado SearXNG, agente de codificacion Pi Coding, buscador Vane y generador de imagen/video Wan2GP. El repositorio en HuggingFace ocupa 43,9 GB e incluye perfiles preconfigurados para multiples modelos.
+`vincespeed/llm-runner-aio` no es un modelo de lenguaje, sino un paquete de aplicación todo-en-uno para ejecutar y gestionar LLMs localmente en equipos de consumo. Desarrollado por el autor vincespeed, el proyecto se distribuye como un instalador ejecutable (2,03 GB) que despliega automáticamente un entorno completo: interfaz de usuario Open WebUI, servidor de inferencia llama.cpp (compilado para CUDA 13 y Vulkan), buscador privado SearXNG, agente de codificacion Pi Coding, buscador Vane y generador de imagen/video Wan2GP. El repositorio en Hugging Face ocupa 43,9 GB e incluye perfiles preconfigurados para multiples modelos.
 
 La relevancia de esta herramienta radica en que resuelve el problema de la instalacion fragmentada de software de IA local: en lugar de configurar manualmente cada componente, el usuario ejecuta un solo instalador que detecta el hardware, selecciona un perfil de VRAM (4, 6, 8, 12, 16, 24 o 32 GB) y descarga modelos compatibles con la capacidad de la GPU. Está optimizado para agentes de codigo y soporta los modelos Qwen3.6-35B-A3B, Gemma-4-26B, Qwen3.8-27B, Gemma-4-E4B, Qwen3.5-4B, Qwen3.5-9B, Ling-3.0-tiny y Gemma-4-31B, todos con perfiles de chat, vision y codigo.
 
@@ -66,7 +66,7 @@ No se proporcionan datos comparativos en la informacion. Como alternativa, se pu
 
 - No es un modelo de IA, sino un paquete de software; el rendimiento depende de los modelos cargados.
 - Requiere instalacion previa de Node.js y Python 3.11; el instalador no los incluye.
-- El repositorio de HuggingFace ocupa 43,9 GB, lo que implica una descarga considerable incluso para el instalador base.
+- El repositorio de Hugging Face ocupa 43,9 GB, lo que implica una descarga considerable incluso para el instalador base.
 - La generacion de video Wan2GP necesita espacio adicional y una version de CUDA/driver compatible con la GPU, que se muestra en la ventana de configuracion.
 - La licencia MIT cubre el codigo de la aplicacion, pero los modelos incluidos (Qwen, Gemma, Ling) tienen sus propias licencias que pueden imponer restricciones de uso comercial.
 - No se garantiza la compatibilidad con todas las GPUs; se recomienda verificar los requisitos de CUDA/Vulkan antes de la instalacion.
@@ -74,7 +74,7 @@ No se proporcionan datos comparativos en la informacion. Como alternativa, se pu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vincespeed/llm-runner-aio
+- Repositorio Hugging Face: https://huggingface.co/vincespeed/llm-runner-aio
 - Pagina de descarga de la aplicacion: https://aihublocal.com/llm-runner-aio
 - Configuraciones de LLM de la comunidad: https://aihublocal.com/llm/configs
 - Sitio web principal: https://aihublocal.com
@@ -85,7 +85,7 @@ No se proporcionan datos comparativos en la informacion. Como alternativa, se pu
 - Vane Search: https://github.com/ItzCrazyKns/Vane
 - Wan2GP: https://github.com/deepbeepmeep/Wan2GP</think>## Resumen
 
-`vincespeed/llm-runner-aio` no es un modelo de lenguaje, sino un paquete de aplicacion todo-en-uno para desplegar y gestionar LLMs localmente en equipos de escritorio. Desarrollado por el autor vincespeed, el proyecto se centra en eliminar la complejidad de instalacion manual: un ejecutable de 2,03 GB detecta el hardware, configura perfiles segun la VRAM disponible (de 4 a 32 GB) y descarga modelos compatibles con la GPU. El repositorio en HuggingFace, con un tamano de 43,9 GB, incluye tambien perfiles preconfigurados para varios modelos y herramientas auxiliares.
+`vincespeed/llm-runner-aio` no es un modelo de lenguaje, sino un paquete de aplicacion todo-en-uno para desplegar y gestionar LLMs localmente en equipos de escritorio. Desarrollado por el autor vincespeed, el proyecto se centra en eliminar la complejidad de instalacion manual: un ejecutable de 2,03 GB detecta el hardware, configura perfiles segun la VRAM disponible (de 4 a 32 GB) y descarga modelos compatibles con la GPU. El repositorio en Hugging Face, con un tamano de 43,9 GB, incluye tambien perfiles preconfigurados para varios modelos y herramientas auxiliares.
 
 La relevancia de esta herramienta reside en que integra en un solo paquete la inferencia local (via llama.cpp), una interfaz de usuario web (Open WebUI), busqueda privada (SearXNG y Vane), un harness de agentes de codigo (Pi) y generacion de video e imagen local (Wan2GP). Esto permite a desarrolladores e investigadores desplegar un entorno completo de IA generativa en su propia maquina, sin depender de servicios en la nube y con control total sobre los datos. El proyecto es 100 % open source bajo licencia MIT, y los modelos soportados incluyen Qwen3.5, Gemma-4 y Ling-3.0, con perfiles de chat, vision y codigo.
 
@@ -166,7 +166,7 @@ La principal diferencia es que `llm-runner-aio` integra herramientas adicionales
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vincespeed/llm-runner-aio
+- Repositorio Hugging Face: https://huggingface.co/vincespeed/llm-runner-aio
 - Pagina de descarga de la aplicacion: https://aihublocal.com/llm-runner-aio
 - Configuraciones de la comunidad: https://aihublocal.com/llm/configs
 - Sitio web principal: https://aihublocal.com

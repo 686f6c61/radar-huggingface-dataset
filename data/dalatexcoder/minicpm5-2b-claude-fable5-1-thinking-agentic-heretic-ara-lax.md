@@ -82,9 +82,9 @@ La model card indica que habra mas benchmarks (BFCL, SWE-bench, Tau-Bench, etc.)
 
 | Modelo | Parametros | Contexto | Benchmarks (ClawBench) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM5-2B-Claude-Fable5-1-Thinking-Agentic-heretic-ara-lax | ~2,5B | 128K | QwenClawBench 44,56 / WildClawBench 24,32 (heredados del padre) | Apache 2.0 | HuggingFace (dalatexcoder) |
-| GnLOLot/MiniCPM5-2B-Claude-Fable5-1-Thinking-Agentic | ~2,5B | 128K | QwenClawBench 44,56 / WildClawBench 24,32 | Apache 2.0 | HuggingFace (incluye repositorio GGUF) |
-| openbmb/MiniCPM5-2B (base) | ~2,5B | 128K | QwenClawBench 42,11 / WildClawBench 23,19 | Apache 2.0 | HuggingFace |
+| MiniCPM5-2B-Claude-Fable5-1-Thinking-Agentic-heretic-ara-lax | ~2,5B | 128K | QwenClawBench 44,56 / WildClawBench 24,32 (heredados del padre) | Apache 2.0 | Hugging Face (dalatexcoder) |
+| GnLOLot/MiniCPM5-2B-Claude-Fable5-1-Thinking-Agentic | ~2,5B | 128K | QwenClawBench 44,56 / WildClawBench 24,32 | Apache 2.0 | Hugging Face (incluye repositorio GGUF) |
+| openbmb/MiniCPM5-2B (base) | ~2,5B | 128K | QwenClawBench 42,11 / WildClawBench 23,19 | Apache 2.0 | Hugging Face |
 
 No se dispone de datos comparativos con modelos de otros fabricantes de tamano similar en la informacion proporcionada.
 
@@ -101,7 +101,7 @@ No se dispone de datos comparativos con modelos de otros fabricantes de tamano s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dalatexcoder/MiniCPM5-2B-Claude-Fable5-1-Thinking-Agentic-heretic-ara-lax
+- Modelo en Hugging Face: https://huggingface.co/dalatexcoder/MiniCPM5-2B-Claude-Fable5-1-Thinking-Agentic-heretic-ara-lax
 - Modelo padre (finetune base): https://huggingface.co/GnLOLot/MiniCPM5-2B-Claude-Fable5-1-Thinking-Agentic
 - Cuantizaciones GGUF del modelo padre: https://huggingface.co/GnLOLot/MiniCPM5-2B-Claude-Fable5-1-Thinking-Agentic-GGUF
 - Modelo base original: https://huggingface.co/openbmb/MiniCPM5-2B

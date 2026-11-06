@@ -71,8 +71,8 @@ Nota del autor: la evaluacion de caminata usa una aproximacion 2D basada en una 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | ~0,8B (base) + LoRA | no disponible | Politica de control via LM destilada de PPO | Apache 2.0 | HuggingFace, 19 descargas |
-| Qwen3.5-0.8B (base) | ~0,8B | no disponible | LM generativo general | no disponible en la informacion | HuggingFace |
+| LINK-01 (este modelo) | ~0,8B (base) + LoRA | no disponible | Politica de control via LM destilada de PPO | Apache 2.0 | Hugging Face, 19 descargas |
+| Qwen3.5-0.8B (base) | ~0,8B | no disponible | LM generativo general | no disponible en la informacion | Hugging Face |
 | Politica PPO `walker51-14` | no disponible | no aplica | Red de politica RL pura | no disponible | Entorno web CONNECT AI WORLD |
 
 No se dispone de informacion sobre otros adaptadores de la misma familia (variantes `link01` adicionales) ni de modelos comparables de "LM como politica de control" con los que establecer una comparacion cuantitativa. Los unicos puntos de referencia son el modelo base y la politica PPO original, ambos incluidos en la tabla anterior.
@@ -90,7 +90,7 @@ No se dispone de informacion sobre otros adaptadores de la misma familia (varian
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/irobtec/connectailab-rl-irobtecbrain-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/irobtec/connectailab-rl-irobtecbrain-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de codigo de entrenamiento (CONNECT TYCOON): https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

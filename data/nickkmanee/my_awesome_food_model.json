@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Nickkmanee/my_awesome_food_model",
+  "slug": "nickkmanee-my_awesome_food_model",
+  "author": "Nickkmanee",
+  "url": "https://huggingface.co/Nickkmanee/my_awesome_food_model",
+  "created_at": "2026-11-06T03:23:42.000Z",
+  "updated_at": "2026-11-06T09:53:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "trackio",
+    "trackio:https://huggingface.co/spaces/Nickkmanee/huggingface-static-30fd7a",
+    "generated_from_trainer",
+    "base_model:google/vit-base-patch16-224",
+    "base_model:finetune:google/vit-base-patch16-224",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85876325,
+  "parameters_human": "85.9M",
+  "storage_bytes": 1374119297,
+  "storage_human": "1.4 GB",
+  "base_model": "google/vit-base-patch16-224",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cmaso010/my_awesome_food_model · Hugging Face",
+      "url": "https://huggingface.co/cmaso010/my_awesome_food_model",
+      "snippet": "Image Classification model with 85.9M parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "aidiary/my_awesome_food_model · Hugging Face",
+      "url": "https://huggingface.co/aidiary/my_awesome_food_model",
+      "snippet": "my_awesome_food_model This model is a fine-tuned version of google/vit-base-patch16-224-in21k on an unknown dataset. It achieves the following results on the evaluation set:"
+    }
+  ]
+}

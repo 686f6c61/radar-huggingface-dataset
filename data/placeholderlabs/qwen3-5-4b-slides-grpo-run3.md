@@ -95,7 +95,7 @@ La comparacion directa con estos modelos no es concluyente: son generalistas, mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/placeholderlabs/qwen3.5-4b-slides-grpo-run3
+- Modelo en Hugging Face: https://huggingface.co/placeholderlabs/qwen3.5-4b-slides-grpo-run3
 - Modelo base: https://huggingface.co/placeholderlabs/qwen3.5-4b-slides-v2
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/sunnysetia-locus/rl-slides/runs/5tmp8v2z
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300

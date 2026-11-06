@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables directos para ControlNet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alibaba-pai/MiniMax-H3-Fun-Controlnet-Union
+- Modelo en Hugging Face: https://huggingface.co/alibaba-pai/MiniMax-H3-Fun-Controlnet-Union
 - Repositorio VideoX-Fun: https://github.com/aigc-apps/VideoX-Fun
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - GitHub de MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3

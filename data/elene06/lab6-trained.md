@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`elene06/lab6-trained` es un modelo de clasificación de texto obtenido mediante fine-tuning supervisado de `distilbert-base-uncased`, un transformer encoder destilado de BERT-base con 66.958.086 parámetros. Lo publica el usuario `elene06` en HuggingFace y, por los metadatos disponibles (prefijo `lab6`, card autogenerada por el `Trainer`), todo apunta a un ejercicio académico de un laboratorio de asignatura más que a un modelo de producción. No hay descripción del dataset, del esquema de etiquetas ni de los usos previstos.
+`elene06/lab6-trained` es un modelo de clasificación de texto obtenido mediante fine-tuning supervisado de `distilbert-base-uncased`, un transformer encoder destilado de BERT-base con 66.958.086 parámetros. Lo publica el usuario `elene06` en Hugging Face y, por los metadatos disponibles (prefijo `lab6`, card autogenerada por el `Trainer`), todo apunta a un ejercicio académico de un laboratorio de asignatura más que a un modelo de producción. No hay descripción del dataset, del esquema de etiquetas ni de los usos previstos.
 
 El modelo resuelve una tarea de clasificación de secuencias (pipeline `text-classification`) sobre un corpus que el autor no documenta. Sobre el conjunto de evaluación declara una pérdida de 0,5283, una accuracy de 0,8783 y un F1 de 0,8779 tras dos épocas de entrenamiento. Es relevante únicamente como referencia de un fine-tuning de DistilBERT: su valor práctico depende por completo de que el esquema de etiquetas coincida con el caso de uso del usuario, algo que no se puede verificar con la información publicada.
 
@@ -74,17 +74,17 @@ No se han publicado resultados en benchmarks estándar (MMLU, GLUE, SuperGLUE, H
 - VRAM estimada: menos de 1 GB incluso con batch de 32 y secuencias de 512 tokens en fp32; en la práctica cabe en cualquier GPU con 2 GB o más.
 - GPU recomendadas: ninguna en particular; funciona en RTX 3060, RTX 4090, T4, L4, A10, A100 y H100, pero el modelo está sobredimensionado para esas GPUs. Es perfectamente ejecutable en CPU.
 - Cabe en cualquier GPU de consumo, incluida una GTX 1050 o una iGPU moderna, y en dispositivos de borde tipo Raspberry Pi 4/5 con cuantización int8.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, exportación a ONNX con Optimum y ONNX Runtime, TorchScript, y Text Embeddings Inference (el tag `text-embeddings-inference` y `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace). Servir con FastAPI o con un servidor de batching propio es suficiente; vLLM y TGI no aportan ventaja para un encoder de este tamaño.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, exportación a ONNX con Optimum y ONNX Runtime, TorchScript, y Text Embeddings Inference (el tag `text-embeddings-inference` y `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face). Servir con FastAPI o con un servidor de batching propio es suficiente; vLLM y TGI no aportan ventaja para un encoder de este tamaño.
 - Latencia y throughput: no hay mediciones publicadas. Como referencia orientativa, un encoder de 6 capas y 67 M de parámetros suele procesar del orden de centenares a miles de secuencias cortas por segundo en CPU multinúcleo y bastantes más en GPU, pero son estimaciones no verificadas para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `elene06/lab6-trained` | 66,9 M | 512 tokens | Clasificación de texto (esquema desconocido) | Apache 2.0 | HuggingFace, 0 descargas |
-| `distilbert-base-uncased` | 66,4 M aprox. | 512 tokens | Modelo base (MLM, sin cabeza de clasificación) | Apache 2.0 | HuggingFace, ampliamente usado |
-| `bert-base-uncased` | 110 M aprox. | 512 tokens | Modelo base (MLM) | Apache 2.0 | HuggingFace, ampliamente usado |
-| `roberta-base` | 125 M aprox. | 512 tokens | Modelo base (MLM) | MIT | HuggingFace, ampliamente usado |
+| `elene06/lab6-trained` | 66,9 M | 512 tokens | Clasificación de texto (esquema desconocido) | Apache 2.0 | Hugging Face, 0 descargas |
+| `distilbert-base-uncased` | 66,4 M aprox. | 512 tokens | Modelo base (MLM, sin cabeza de clasificación) | Apache 2.0 | Hugging Face, ampliamente usado |
+| `bert-base-uncased` | 110 M aprox. | 512 tokens | Modelo base (MLM) | Apache 2.0 | Hugging Face, ampliamente usado |
+| `roberta-base` | 125 M aprox. | 512 tokens | Modelo base (MLM) | MIT | Hugging Face, ampliamente usado |
 
 El rendimiento no es comparable entre estos modelos: los tres alternativos son modelos base sin fine-tuning para una tarea concreta y este checkpoint está ajustado sobre un dataset no documentado, por lo que las métricas declaradas (accuracy 0,8783, F1 0,8779) no se pueden contrastar con las de ningún benchmark público.
 
@@ -102,7 +102,7 @@ El rendimiento no es comparable entre estos modelos: los tres alternativos son m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elene06/lab6-trained
+- Modelo en Hugging Face: https://huggingface.co/elene06/lab6-trained
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Documentación de Transformers: https://huggingface.co/docs/transformers

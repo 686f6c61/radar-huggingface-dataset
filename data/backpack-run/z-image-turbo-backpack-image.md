@@ -75,6 +75,6 @@ No disponible. No se dispone de información sobre modelos comparables en la mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/backpack-run/Z-Image-Turbo-Backpack-Image
+- Repositorio Hugging Face: https://huggingface.co/backpack-run/Z-Image-Turbo-Backpack-Image
 - Modelo upstream: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Revisión inmutable upstream: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo/tree/f332072aa78be7aecdf3ee76d5c247082da564a6

@@ -89,8 +89,8 @@ El principal diferencial de VibeVoice-ASR-Streaming-7B frente a Whisper large-v3
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/audio-cpp/VibeVoice-ASR-Streaming-7B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/audio-cpp/VibeVoice-ASR-Streaming-7B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B
 - Revisión fijada del modelo base: `60d858b518b4e19d404af3737f848fc185b30177`
 - La model card menciona el repositorio de Microsoft VibeVoice como fuente de documentación, uso y directrices de uso responsable, pero no proporciona su URL en el texto disponible
 - No se han encontrado enlaces técnicos relevantes (papers, blogs, repos ni demos) en los resultados de la búsqueda web realizada; los resultados obtenidos corresponden a plataformas comerciales de audio y música sin relación con el modelo

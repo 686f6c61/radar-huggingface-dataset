@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeltaP2S-Gemma7B-DeltaP2S-CodeGemma2B-Code-S13-a025 es un checkpoint fusionado publicado por el usuario g-assismoraes en HuggingFace. No se trata de un modelo entrenado desde cero, sino del resultado de un experimento de fusión de modelos ("model merging") de la familia Delta-P2S, que combina un Gemma de 7B con un CodeGemma de 2B. La model card es mínima y se limita a indicar que es un "merged checkpoint produced by the family-aware Delta-P2S experiment package", con la ruta de entrenamiento `codegemma2b_to_gemma7b_S13_untie_a025`.
+DeltaP2S-Gemma7B-DeltaP2S-CodeGemma2B-Code-S13-a025 es un checkpoint fusionado publicado por el usuario g-assismoraes en Hugging Face. No se trata de un modelo entrenado desde cero, sino del resultado de un experimento de fusión de modelos ("model merging") de la familia Delta-P2S, que combina un Gemma de 7B con un CodeGemma de 2B. La model card es mínima y se limita a indicar que es un "merged checkpoint produced by the family-aware Delta-P2S experiment package", con la ruta de entrenamiento `codegemma2b_to_gemma7b_S13_untie_a025`.
 
 El checkpoint declara 9.324.112.896 parámetros totales en formato safetensors, un tamaño de repositorio de 18,7 GB y la etiqueta `text-generation`. Los tags incluyen `gemma`, `delta-p2s`, `pen2sword`, `text-generation-inference` y `endpoints_compatible`, lo que sugiere compatibilidad con pipelines de transformers y con TGI. La fecha de creación indicada es el 18 de septiembre de 2026 y el modelo no registra descargas ni "likes".
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeltaP2S-Gemma7B-CodeGemma2B-S13-a025 | 9,32B | no disponible | no disponible | no disponible | safetensors en HuggingFace |
-| Gemma 7B | 8,5B | 8.192 tokens | benchmarks publicados por Google | Gemma Terms of Use | safetensors en HuggingFace |
-| CodeGemma 2B | 2,5B | 8.192 tokens | benchmarks publicados por Google | Gemma Terms of Use | safetensors en HuggingFace |
-| CodeGemma 7B | 8,5B | 8.192 tokens | benchmarks publicados por Google | Gemma Terms of Use | safetensors en HuggingFace |
+| DeltaP2S-Gemma7B-CodeGemma2B-S13-a025 | 9,32B | no disponible | no disponible | no disponible | safetensors en Hugging Face |
+| Gemma 7B | 8,5B | 8.192 tokens | benchmarks publicados por Google | Gemma Terms of Use | safetensors en Hugging Face |
+| CodeGemma 2B | 2,5B | 8.192 tokens | benchmarks publicados por Google | Gemma Terms of Use | safetensors en Hugging Face |
+| CodeGemma 7B | 8,5B | 8.192 tokens | benchmarks publicados por Google | Gemma Terms of Use | safetensors en Hugging Face |
 
 No se dispone de datos de rendimiento del checkpoint fusionado que permitan una comparación cuantitativa con las alternativas. La comparativa se limita, por tanto, a parámetros, contexto y disponibilidad.
 
@@ -94,5 +94,5 @@ No se dispone de datos de rendimiento del checkpoint fusionado que permitan una 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g-assismoraes/DeltaP2S-Gemma7B-DeltaP2S-CodeGemma2B-Code-S13-a025
+- Modelo en Hugging Face: https://huggingface.co/g-assismoraes/DeltaP2S-Gemma7B-DeltaP2S-CodeGemma2B-Code-S13-a025
 - No se han encontrado papers, blogs, repositorios ni demos asociados al experimento Delta-P2S en la búsqueda web realizada.

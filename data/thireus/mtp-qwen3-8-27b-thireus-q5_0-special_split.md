@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Thireus/mtp-Qwen3.8-27B-THIREUS-Q5_0-SPECIAL_SPLIT` es un checkpoint publicado en HuggingFace por el usuario Thireus bajo licencia MIT. La model card asociada no contiene ninguna información técnica más allá de la licencia, por lo que no se dispone de datos oficiales sobre su arquitectura, entrenamiento o capacidades. El nombre del repositorio sugiere que se trata de una cuantización en formato GGUF (Q5_0) de un modelo de aproximadamente 27 mil millones de parámetros, aparentemente derivado de la familia Qwen (la cadena "Qwen3.8" podría referirse a una variante o a un error tipográfico). Sin embargo, no hay confirmación en la documentación publicada.
+El modelo `Thireus/mtp-Qwen3.8-27B-THIREUS-Q5_0-SPECIAL_SPLIT` es un checkpoint publicado en Hugging Face por el usuario Thireus bajo licencia MIT. La model card asociada no contiene ninguna información técnica más allá de la licencia, por lo que no se dispone de datos oficiales sobre su arquitectura, entrenamiento o capacidades. El nombre del repositorio sugiere que se trata de una cuantización en formato GGUF (Q5_0) de un modelo de aproximadamente 27 mil millones de parámetros, aparentemente derivado de la familia Qwen (la cadena "Qwen3.8" podría referirse a una variante o a un error tipográfico). Sin embargo, no hay confirmación en la documentación publicada.
 
 Este modelo no presenta actividad en la comunidad (cero descargas y cero likes), lo que indica que es un artefacto reciente o poco difundido. Su relevancia actual es limitada debido a la ausencia total de especificaciones, benchmarks o guías de uso. Cualquier evaluador que considere utilizarlo deberá asumir un riesgo considerable por la falta de transparencia.
 
@@ -60,5 +60,5 @@ No disponible. Al no conocerse la arquitectura ni el rendimiento real, no es pos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q5_0-SPECIAL_SPLIT
+- Repositorio Hugging Face: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q5_0-SPECIAL_SPLIT
 - No se encontraron otros enlaces (papers, blogs, repos) en la información proporcionada.

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| code-sft-rerun-20261102-qwen3b-code-shuffled | ~3B (Qwen2.5-3B) | 4096 | other (Qwen Research License) | HuggingFace, 0 descargas |
+| code-sft-rerun-20261102-qwen3b-code-shuffled | ~3B (Qwen2.5-3B) | 4096 | other (Qwen Research License) | Hugging Face, 0 descargas |
 | Qwen2.5-3B (base) | ~3B | 32K (según versión) | Qwen Research License | Ampliamente disponible |
-| Qwen3-1.7B-Base (brazo del mismo experimento) | ~1.7B | no disponible | Apache 2.0 | HuggingFace |
-| Llama-3.2-3B-Instruct (brazo del mismo experimento) | ~3B | no disponible | Llama 3.2 Community License | HuggingFace |
+| Qwen3-1.7B-Base (brazo del mismo experimento) | ~1.7B | no disponible | Apache 2.0 | Hugging Face |
+| Llama-3.2-3B-Instruct (brazo del mismo experimento) | ~3B | no disponible | Llama 3.2 Community License | Hugging Face |
 
 La comparación con el modelo base Qwen2.5-3B es la más directa: este checkpoint añade un SFT de código con datos mezclados, pero no documenta mejoras medibles frente al base. Los otros dos brazos del experimento (Qwen3-1.7B-Base y Llama-3.2-3B-Instruct) permiten comparar el efecto del olvido entre arquitecturas y tamaños bajo el mismo protocolo.
 
@@ -83,8 +83,8 @@ La comparación con el modelo base Qwen2.5-3B es la más directa: este checkpoin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RL-Forgettting-Exp4/code-sft-rerun-20261102-qwen3b-code-shuffled
+- Hugging Face: https://huggingface.co/RL-Forgettting-Exp4/code-sft-rerun-20261102-qwen3b-code-shuffled
 - Manifiesto de entrega: `delivery_manifest.json` (en el repositorio)
 - Evaluaciones: `evaluations/mbppplus_n160_t0.6/delivery_manifest.json` (en el repositorio)
 - Procedencia de la petición: `request-provenance.json` (en el repositorio)
-- Repositorio complementario: `RL-Forgetting-Experiments-3` (organización en HuggingFace)
+- Repositorio complementario: `RL-Forgetting-Experiments-3` (organización en Hugging Face)

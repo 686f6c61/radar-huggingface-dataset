@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ases200q2/roboverse_pick_cube_genesisE100_act_20260910_2256` es una política de robótica basada en ACT (Action Chunking with Transformers), un método de aprendizaje por imitación publicado en el paper arXiv:2304.13705. Lo desarrolla el usuario ases200q2 y se distribuye a través de HuggingFace Hub con la librería LeRobot, el framework de HuggingFace para aprendizaje automático en robótica real. No es un modelo de lenguaje: es un controlador visuomotor que consume el estado y la imagen de una cámara y produce comandos de acción de 9 dimensiones.
+El modelo `ases200q2/roboverse_pick_cube_genesisE100_act_20260910_2256` es una política de robótica basada en ACT (Action Chunking with Transformers), un método de aprendizaje por imitación publicado en el paper arXiv:2304.13705. Lo desarrolla el usuario ases200q2 y se distribuye a través de Hugging Face Hub con la librería LeRobot, el framework de Hugging Face para aprendizaje automático en robótica real. No es un modelo de lenguaje: es un controlador visuomotor que consume el estado y la imagen de una cámara y produce comandos de acción de 9 dimensiones.
 
 La política tiene 51.674.761 parámetros y se ha entrenado sobre el dataset `ases200q2/roboverse-pick_cube-genesis-E100`, compuesto por 100 episodios y 9.627 fotogramas grabados a 30 FPS para una única tarea: recoger un cubo (`pick_cube`). El robot objetivo es un Franka y la observación visual se captura con una única cámara denominada `main_camera`. El repositorio ocupa 0,2 GB y los pesos se publican en formato safetensors bajo licencia Apache 2.0.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / observaciones | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (ACT, roboverse pick_cube) | 51.674.761 | 1 camara 3x240x320, estado 9, velocidad 9 | apache-2.0 | HuggingFace Hub, 0 descargas | Una sola tarea `pick_cube`, robot Franka, sin resultados de evaluacion |
+| Este modelo (ACT, roboverse pick_cube) | 51.674.761 | 1 camara 3x240x320, estado 9, velocidad 9 | apache-2.0 | Hugging Face Hub, 0 descargas | Una sola tarea `pick_cube`, robot Franka, sin resultados de evaluacion |
 | ACT original (paper arXiv:2304.13705) | no disponible en la informacion proporcionada | multiples camaras y configuraciones en el paper | no disponible | implementacion en LeRobot | Metodo de referencia del que deriva este checkpoint |
-| Otras politicas de LeRobot (por ejemplo, Diffusion Policy) | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace Hub | No se dispone de datos comparativos verificados en esta busqueda |
+| Otras politicas de LeRobot (por ejemplo, Diffusion Policy) | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face Hub | No se dispone de datos comparativos verificados en esta busqueda |
 
 No se dispone de datos de rendimiento comparativos publicados para este checkpoint ni de cifras verificadas de los modelos alternativos en la informacion proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativos publicados para este checkpoi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ases200q2/roboverse_pick_cube_genesisE100_act_20260910_2256
+- Modelo en Hugging Face: https://huggingface.co/ases200q2/roboverse_pick_cube_genesisE100_act_20260910_2256
 - Dataset de entrenamiento: https://huggingface.co/datasets/ases200q2/roboverse-pick_cube-genesis-E100
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=ases200q2/roboverse-pick_cube-genesis-E100
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

@@ -73,7 +73,7 @@ No se dispone de datos comparativos en la informacion proporcionada. El modelo e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF
 - Blog oficial de Qwen3-Coder: https://qwenlm.github.io/blog/qwen3-coder/
 - Repositorio GitHub de Qwen3-Coder: https://github.com/QwenLM/Qwen3-Coder
 - Documentacion de Qwen: https://qwen.readthedocs.io/en/latest/

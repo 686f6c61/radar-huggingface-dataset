@@ -2,7 +2,7 @@
 
 ## Resumen
 
-C-VIS-Qwen3-VL-8B-Instruct-Solver-FormalV7-Checkpoints-20261101 es un repositorio de HuggingFace publicado por el usuario Nhckdvrl que sirve como archivo de rondas de entrenamiento (checkpoints) para un procedimiento denominado Solver, aplicado sobre el modelo base Qwen/Qwen3-VL-8B-Instruct. El modelo base es un transformer multimodal de Qwen (Alibaba) de aproximadamente 8 mil millones de parametros, especializado en tareas image-text-to-text, con licencia Apache 2.0 y compatible con la libreria transformers.
+C-VIS-Qwen3-VL-8B-Instruct-Solver-FormalV7-Checkpoints-20261101 es un repositorio de Hugging Face publicado por el usuario Nhckdvrl que sirve como archivo de rondas de entrenamiento (checkpoints) para un procedimiento denominado Solver, aplicado sobre el modelo base Qwen/Qwen3-VL-8B-Instruct. El modelo base es un transformer multimodal de Qwen (Alibaba) de aproximadamente 8 mil millones de parametros, especializado en tareas image-text-to-text, con licencia Apache 2.0 y compatible con la libreria transformers.
 
 El repositorio, sin embargo, no contiene en el momento de su publicacion ningun checkpoint entrenado: la model card indica explicitamente que "la preparacion esta en curso" y que "no se han publicado rondas completadas del Solver". El plan declarado contempla ocho rondas, cada una con 640 muestras efectivamente entrenadas y 160 actualizaciones del optimizador, almacenadas en carpetas iter-001/, iter-002/, etc., con revisiones fijadas y hashes de ficheros.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. Cualqui
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nhckdvrl/C-VIS-Qwen3-VL-8B-Instruct-Solver-FormalV7-Checkpoints-20261101
+- Repositorio Hugging Face: https://huggingface.co/Nhckdvrl/C-VIS-Qwen3-VL-8B-Instruct-Solver-FormalV7-Checkpoints-20261101
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Proposer fijo: https://huggingface.co/Ryougetsu/C-VIS-Qwen3-VL-8B-Instruct-Proposer-4cat-v7
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

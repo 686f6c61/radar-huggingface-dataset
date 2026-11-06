@@ -69,7 +69,7 @@ La metrica de acierto en identificacion de hablante mide en que porcentaje de 36
 
 ## Comparativa con modelos similares
 
-No se han encontrado modelos directamente comparables en la informacion disponible. La especializacion de evex-5.3 (entrenado desde cero para imitar a hablantes de un unico servidor de Discord) no tiene equivalentes publicados en HuggingFace con los que se pueda establecer una comparacion significativa. Los modelos japoneses de tamano similar (como los de la familia PLaMo o ELYZA) son generalistas y no abordan la tarea de imitacion de hablantes especificos. La comparativa queda, por tanto, no disponible.
+No se han encontrado modelos directamente comparables en la informacion disponible. La especializacion de evex-5.3 (entrenado desde cero para imitar a hablantes de un unico servidor de Discord) no tiene equivalentes publicados en Hugging Face con los que se pueda establecer una comparacion significativa. Los modelos japoneses de tamano similar (como los de la familia PLaMo o ELYZA) son generalistas y no abordan la tarea de imitacion de hablantes especificos. La comparativa queda, por tanto, no disponible.
 
 ## Limitaciones y advertencias
 

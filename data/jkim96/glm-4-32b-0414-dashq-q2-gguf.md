@@ -96,7 +96,7 @@ Comparación con alternativas de la misma categoría (modelos densos de ~30B en 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | GLM-4-32B-0414 (DASH-Q Q2) | ~32,57 B | no disponible | MIT | GGUF en este repositorio |
-| GLM-4-32B-0414 (original) | ~32,57 B | no disponible en la información proporcionada | MIT | zai-org/GLM-4-32B-0414 en HuggingFace |
+| GLM-4-32B-0414 (original) | ~32,57 B | no disponible en la información proporcionada | MIT | zai-org/GLM-4-32B-0414 en Hugging Face |
 | Modelos comparables de ~30B | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de tareas para establecer una comparación de rendimiento funcional con otros modelos de 30-35B (por ejemplo, Qwen o Llama de tamaño equivalente), ya que la información proporcionada solo incluye perplejidad.
@@ -109,15 +109,15 @@ No se dispone de datos de benchmarks de tareas para establecer una comparación 
 - Sesgos conocidos: no disponibles en la información proporcionada.
 - Limitaciones de contexto e idioma: la model card no especifica la longitud de contexto soportada ni la lista de idiomas. El ejemplo de uso emplea `-c 8192`, pero se trata de un valor de configuración de ejemplo, no de la ventana nativa del modelo.
 - Estado de adopción: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validación por parte de la comunidad.
-- Fecha de creación del repositorio: 8 de octubre de 2026, según los metadatos de HuggingFace. Conviene verificar la vigencia y el mantenimiento del repositorio antes de usarlo en producción.
+- Fecha de creación del repositorio: 8 de octubre de 2026, según los metadatos de Hugging Face. Conviene verificar la vigencia y el mantenimiento del repositorio antes de usarlo en producción.
 - Licencia: el repositorio declara MIT, heredada del modelo base. Esto permite uso comercial, pero conviene verificar los términos del modelo base zai-org/GLM-4-32B-0414 por si existiesen condiciones adicionales no reflejadas en la model card de la cuantización.
 - Compatibilidad: el autor afirma que los ficheros cargan en cualquier build reciente de llama.cpp, pero no se especifica la versión mínima requerida ni se garantiza el soporte en herramientas de terceros que no implementen los tipos IQ2_XXS, IQ2_XS, IQ2_M o Q2_K_XL.
 - Para producción con requisitos de fiabilidad, se recomienda usar una cuantización de mayor precisión (Q4 o superior) y reservar estas variantes de 2 bits para entornos con restricciones severas de memoria.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/jkim96/GLM-4-32B-0414-DASHQ-Q2-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-4-32B-0414
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/jkim96/GLM-4-32B-0414-DASHQ-Q2-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-4-32B-0414
 - Repositorio del método DASH-Q: https://github.com/JaeminK/dashq
 - Documentación de GLM-4-0414 en Transformers: https://huggingface.co/docs/transformers/v5.1.0/model_doc/glm4
 - Repositorio GitHub de la familia GLM-4: https://github.com/zai-org/GLM-4

@@ -64,8 +64,8 @@ No se dispone de información cuantitativa suficiente para una comparativa detal
 
 | Modelo | Arquitectura | Resolución | Velocidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ganlive-amber | FastGAN | 1536×1024 | 224 fps (Arc A770) | MIT | HuggingFace |
-| ganlive-lichen | FastGAN (presumiblemente) | 3072×2048 | no disponible | no disponible | HuggingFace |
+| ganlive-amber | FastGAN | 1536×1024 | 224 fps (Arc A770) | MIT | Hugging Face |
+| ganlive-lichen | FastGAN (presumiblemente) | 3072×2048 | no disponible | no disponible | Hugging Face |
 | StyleGAN2 (genérico) | StyleGAN2 | típicamente 1024×1024 | no disponible | depende de la implementación | soportado por ganlive |
 
 ## Limitaciones y advertencias
@@ -78,7 +78,7 @@ No se dispone de información cuantitativa suficiente para una comparativa detal
 - No hay información sobre requisitos mínimos de VRAM ni sobre el formato exacto de los pesos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/gustavecortal/ganlive-amber
+- Modelo en Hugging Face: https://huggingface.co/gustavecortal/ganlive-amber
 - Modelo hermano ganlive-lichen: https://huggingface.co/gustavecortal/ganlive-lichen
 - Repositorio de ganlive: https://github.com/gustavecortal/ganlive
 - Repositorio de gantrain: https://github.com/gustavecortal/gantrain

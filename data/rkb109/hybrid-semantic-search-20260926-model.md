@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `RKB109/hybrid-semantic-search-20260926-model` es un prototipo de recuperacion semantica publicado en HuggingFace por el usuario RKB109 bajo licencia MIT. No se trata de una red neuronal de gran tamano, sino de un baseline lexico transparente que combina pesos de token por etiqueta con recuperacion de evidencia ponderada por IDF (frecuencia inversa de documento). Su proposito declarado es cubrir necesidades de busqueda empresarial en escenarios donde las APIs de embeddings son inaccesibles, caras o estan restringidas, ofreciendo una alternativa reproducible y auditable.
+El modelo `RKB109/hybrid-semantic-search-20260926-model` es un prototipo de recuperacion semantica publicado en Hugging Face por el usuario RKB109 bajo licencia MIT. No se trata de una red neuronal de gran tamano, sino de un baseline lexico transparente que combina pesos de token por etiqueta con recuperacion de evidencia ponderada por IDF (frecuencia inversa de documento). Su proposito declarado es cubrir necesidades de busqueda empresarial en escenarios donde las APIs de embeddings son inaccesibles, caras o estan restringidas, ofreciendo una alternativa reproducible y auditable.
 
 El modelo se enmarca en las tareas de `sentence-similarity`, `feature-extraction`, `text-ranking` y `question-answering`, y se distribuye con `library_name: custom`, lo que implica que no se apoya en las abstracciones habituales de `transformers` o `sentence-transformers`. El autor indica explicitamente que fue generado para demostraciones reproducibles de arquitectura y que no invoca ningun LLM alojado en ningun punto del pipeline.
 
@@ -79,9 +79,9 @@ La informacion disponible no incluye cifras de rendimiento de alternativas, por 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RKB109/hybrid-semantic-search-20260926-model | Baseline lexico hibrido (pesos por token + IDF) | no disponible | no disponible | MIT | HuggingFace, libreria `custom` |
+| RKB109/hybrid-semantic-search-20260926-model | Baseline lexico hibrido (pesos por token + IDF) | no disponible | no disponible | MIT | Hugging Face, libreria `custom` |
 | BM25 / TF-IDF sobre Elasticsearch, Lucene o similar | Recuperacion lexica clasica | no aplica | no disponible | segun implementacion (Apache 2.0 en Lucene/Elasticsearch) | ampliamente desplegado |
-| all-MiniLM-L6-v2 (sentence-transformers) | Transformer encoder denso para similitud | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 | HuggingFace, ecosistema `sentence-transformers` |
+| all-MiniLM-L6-v2 (sentence-transformers) | Transformer encoder denso para similitud | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 | Hugging Face, ecosistema `sentence-transformers` |
 
 No se dispone de datos comparativos de rendimiento entre estas opciones en la informacion proporcionada. La diferencia funcional principal es que las alternativas densas requieren GPU o al menos inferencia neuronal, mientras que este modelo es puramente lexico y no necesita acelerador.
 
@@ -101,7 +101,7 @@ No se dispone de datos comparativos de rendimiento entre estas opciones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKB109/hybrid-semantic-search-20260926-model
+- Modelo en Hugging Face: https://huggingface.co/RKB109/hybrid-semantic-search-20260926-model
 - Dataset asociado: https://huggingface.co/datasets/RKB109/hybrid-semantic-search-20260926-dataset
 - Repositorio de GitHub con `train.py`, split del dataset, codigo de evaluacion y formato JSON del modelo: mencionado por el autor en la model card, URL no disponible en la informacion proporcionada
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada

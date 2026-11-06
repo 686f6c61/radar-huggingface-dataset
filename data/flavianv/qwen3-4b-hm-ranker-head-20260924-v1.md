@@ -111,7 +111,7 @@ No se dispone de datos de rendimiento de los modelos alternativos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flavianv/qwen3-4b-hm-ranker-head-20260924-v1
+- Modelo en Hugging Face: https://huggingface.co/flavianv/qwen3-4b-hm-ranker-head-20260924-v1
 - Modelo base (backbone SFT): https://huggingface.co/flavianv/qwen3-4b-hm-positive-sft-20260924-v1
 - Dataset publicado (H&M positive SFT / ranker reserve): https://huggingface.co/datasets/flavianv/hm-positive-sft-half-20260924-v1
 - Informe completo en PDF: https://huggingface.co/flavianv/qwen3-4b-hm-ranker-head-20260924-v1/blob/main/report.pdf

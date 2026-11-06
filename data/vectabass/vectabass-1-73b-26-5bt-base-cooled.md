@@ -93,7 +93,7 @@ La comparación con Llama 3.2 1B, Qwen2.5 1.5B y SmolLM2 1.7B es por tamano y ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-1.73b-26.5bt-base-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-1.73b-26.5bt-base-cooled
 - Réplicas de semilla: ramas `seed2` y `seed3` del mismo repositorio (carga con `revision="seed2"`)
 - Documentación de datos: `DATA.md` en el repositorio
 - Procedencia: `provenance.json` en el repositorio

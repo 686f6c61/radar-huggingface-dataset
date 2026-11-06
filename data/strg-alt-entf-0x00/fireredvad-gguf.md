@@ -90,9 +90,9 @@ No se dispone de información sobre modelos VAD comparables en la documentación
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión GGUF: https://huggingface.co/Strg-Alt-Entf-0x00/FireRedVAD-GGUF
+- Repositorio Hugging Face de la conversión GGUF: https://huggingface.co/Strg-Alt-Entf-0x00/FireRedVAD-GGUF
 - Repositorio de herramientas de conversión e inferencia: https://github.com/Strg-Alt-Entf-0x00/firered-vad
 - Repositorio original de FireRedVAD: https://github.com/FireRedTeam/FireRedVAD
-- Modelo original en HuggingFace: https://huggingface.co/FireRedTeam/FireRedVAD
+- Modelo original en Hugging Face: https://huggingface.co/FireRedTeam/FireRedVAD
 - Modelo en ModelScope: https://www.modelscope.cn/models/xukaituo/FireRedVAD/
 - Paper (referenciado en el repositorio original): no se ha proporcionado un enlace directo, pero se menciona en el README del proyecto original.

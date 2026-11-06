@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch10` es un checkpoint de investigacion derivado de Llama 2 de 7B, publicado por el usuario `unl-reset` en HuggingFace. Se trata de un modelo de lenguaje decoder-only de la familia Llama 2, con 6.738.415.616 parametros (aproximadamente 6,74 mil millones), pensado exclusivamente para experimentos de *machine unlearning* sobre el benchmark TOFU (Task of Fictitious Unlearning). No es un modelo de proposito general ni un asistente listo para produccion: es un artefacto de investigacion que documenta un paso concreto de un pipeline de desaprendizaje.
+`unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch10` es un checkpoint de investigacion derivado de Llama 2 de 7B, publicado por el usuario `unl-reset` en Hugging Face. Se trata de un modelo de lenguaje decoder-only de la familia Llama 2, con 6.738.415.616 parametros (aproximadamente 6,74 mil millones), pensado exclusivamente para experimentos de *machine unlearning* sobre el benchmark TOFU (Task of Fictitious Unlearning). No es un modelo de proposito general ni un asistente listo para produccion: es un artefacto de investigacion que documenta un paso concreto de un pipeline de desaprendizaje.
 
 El modelo parte de `locuslab/tofu_ft_llama2-7b`, un Llama 2 7B ajustado sobre el dataset TOFU, y aplica una intervencion de tipo IHL (probablemente *Influence-based Hessian / Influence-based unlearning*, aunque la model card no lo desarrolla) junto con un reinicio de los embeddings de entrada y de la cabeza LM, inicializados desde `NousResearch/Llama-2-7b-chat-hf`. El objetivo declarado en la model card es el olvido del split `forget10` de TOFU, manteniendo al mismo tiempo el rendimiento sobre el split `retain` mediante una perdida combinada de token IHL sobre `forget` y entropia cruzada (CE) con peso 1.0 sobre `retain`.
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch10` | 6,74B | no disponible (base Llama 2: 4096) | Unlearning TOFU (epoca 10/20) | Llama 2 | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_llama2-7b` | 6,74B | 4096 | Fine-tuning completo sobre TOFU (modelo base) | Llama 2 | HuggingFace, publico |
-| `NousResearch/Llama-2-7b-chat-hf` | 6,74B | 4096 | Chat generalista en ingles | Llama 2 | HuggingFace, ampliamente usado |
-| Llama 2 7B (Meta) | 6,74B | 4096 | Modelo base generalista | Llama 2 | HuggingFace y distribucion oficial |
+| `unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch10` | 6,74B | no disponible (base Llama 2: 4096) | Unlearning TOFU (epoca 10/20) | Llama 2 | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_llama2-7b` | 6,74B | 4096 | Fine-tuning completo sobre TOFU (modelo base) | Llama 2 | Hugging Face, publico |
+| `NousResearch/Llama-2-7b-chat-hf` | 6,74B | 4096 | Chat generalista en ingles | Llama 2 | Hugging Face, ampliamente usado |
+| Llama 2 7B (Meta) | 6,74B | 4096 | Modelo base generalista | Llama 2 | Hugging Face y distribucion oficial |
 
 La comparacion relevante es frente a `locuslab/tofu_ft_llama2-7b` (el modelo sin olvidar) y frente a otros checkpoints de unlearning sobre TOFU, como los publicados por el propio `locuslab` (por ejemplo, variantes con gradient ascent o preference optimization). No se dispone de datos de rendimiento comparativo en la informacion proporcionada, por lo que la comparativa se limita a parametros, contexto, licencia y proposito.
 
@@ -98,7 +98,7 @@ La comparacion relevante es frente a `locuslab/tofu_ft_llama2-7b` (el modelo sin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch10
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch10
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicializacion de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Repositorio TOFU (benchmark): https://github.com/locuslab/tofu

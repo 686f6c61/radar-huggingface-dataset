@@ -4,7 +4,7 @@
 
 Kani2005/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, utilizando la librería Stable-Baselines3. No se trata de un modelo de lenguaje ni de un transformer generativo, sino de una política neuronal que controla el módulo de aterrizaje lunar del citado entorno, un problema clásico de control continuo con recompensa densa.
 
-El modelo es relevante como ejemplo reproducible de entrenamiento PPO y como artefacto listo para cargar desde el Hub con `huggingface_sb3`. Su interés es fundamentalmente didáctico y de referencia para pipelines de RL: demuestra cómo publicar una política entrenada con la metadata estándar (model-index) que HuggingFace espera para tareas de reinforcement-learning.
+El modelo es relevante como ejemplo reproducible de entrenamiento PPO y como artefacto listo para cargar desde el Hub con `huggingface_sb3`. Su interés es fundamentalmente didáctico y de referencia para pipelines de RL: demuestra cómo publicar una política entrenada con la metadata estándar (model-index) que Hugging Face espera para tareas de reinforcement-learning.
 
 El repositorio es de autor individual (Kani2005), sin descargas ni likes en el momento de la consulta, y con un tamaño declarado de 0.0 GB. La model card es una plantilla autogenerada por Stable-Baselines3 con el bloque de uso sin completar (marcado como TODO), por lo que la información técnica disponible es mínima y proviene casi exclusivamente de los tags y del model-index.
 
@@ -41,7 +41,7 @@ No se dispone de información sobre el número de pasos de entrenamiento, hiperp
 - Docencia y tutoriales de RL: sirve como ejemplo funcional de un agente PPO resuelto en LunarLander para ilustrar el ciclo entrenamiento-evaluación-publicación en el Hub.
 - Baseline de comparación: permite contrastar nuevos algoritmos (A2C, SAC, DQN) contra una política PPO con recompensa media declarada de 254.62.
 - Punto de partida para fine-tuning: cargar los pesos y continuar el entrenamiento con hiperparámetros distintos o con variaciones del entorno para estudiar sensibilidad.
-- Pruebas de integración de pipelines: validar flujos de CI que descarguen artefactos SB3 desde HuggingFace y ejecuten `evaluate_policy` de forma automática.
+- Pruebas de integración de pipelines: validar flujos de CI que descarguen artefactos SB3 desde Hugging Face y ejecuten `evaluate_policy` de forma automática.
 - Reproducción de experimentos: usar el agente como referencia en estudios de reproducibilidad de PPO en entornos de control continuo-discreto.
 - Demostraciones interactivas: renderizar el entorno con la política cargada para visualizar el comportamiento de aterrizaje en notebooks o demos web.
 - Benchmarking de infraestructura: medir latencia de inferencia de políticas pequeñas en CPU/GPU como caso trivial antes de escalar a modelos mayores.
@@ -70,7 +70,7 @@ No se dispone de información sobre otros agentes PPO publicados para LunarLande
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kani2005/ppo-LunarLander-v3 | no disponible | no aplica | mean_reward 254.62 +/- 22.15 (no verificado) | no disponible | HuggingFace Hub |
+| Kani2005/ppo-LunarLander-v3 | no disponible | no aplica | mean_reward 254.62 +/- 22.15 (no verificado) | no disponible | Hugging Face Hub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,8 +86,8 @@ No se dispone de información sobre otros agentes PPO publicados para LunarLande
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kani2005/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/Kani2005/ppo-LunarLander-v3
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
-- HuggingFace SB3 (carga desde el Hub): https://github.com/huggingface/huggingface_sb3
+- Hugging Face SB3 (carga desde el Hub): https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v3 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/
 - Paper de PPO: https://arxiv.org/abs/1707.06347

@@ -6,7 +6,7 @@ Mochi 1.0 es un ajuste fino (fine-tune) de Qwen2.5-0.5B-Instruct en su variante 
 
 El objetivo declarado por el autor no es competir en rendimiento, sino dotar al modelo base de una personalidad conversacional concreta: un tono informal, directo y sin el modo "asistente servicial" habitual. El propio autor lo describe como "un fine-tune pequeño y poco profesional" y advierte que "no tiene una utilidad real si buscas algo potente o coherente". Es, por tanto, un experimento de estilo y de desalineación de comportamiento, no una herramienta de producción.
 
-Su relevancia actual es la de los modelos de menos de 1B de parámetros: servir como banco de pruebas barato para experimentos de fine-tuning (aquí con QLoRA sobre una única GPU T4 de Google Colab), para despliegues en el borde con presupuesto de memoria mínimo y para estudiar técnicas de "abliteration" y de reescritura de personalidad sobre modelos instruct pequeños. El número de descargas y de "likes" registrado en HuggingFace es 0, lo que indica que se trata de una publicación reciente y sin adopción comunitaria verificada.
+Su relevancia actual es la de los modelos de menos de 1B de parámetros: servir como banco de pruebas barato para experimentos de fine-tuning (aquí con QLoRA sobre una única GPU T4 de Google Colab), para despliegues en el borde con presupuesto de memoria mínimo y para estudiar técnicas de "abliteration" y de reescritura de personalidad sobre modelos instruct pequeños. El número de descargas y de "likes" registrado en Hugging Face es 0, lo que indica que se trata de una publicación reciente y sin adopción comunitaria verificada.
 
 ## Especificaciones técnicas
 
@@ -15,7 +15,7 @@ Su relevancia actual es la de los modelos de menos de 1B de parámetros: servir 
 | Arquitectura | Transformer decoder-only (familia Qwen2) |
 | Parametros totales | 494.032.768 (aproximadamente 0,5B) |
 | Longitud de contexto | no disponible en la informacion proporcionada (el ejemplo de uso de la model card configura 2048 tokens) |
-| Tipos de cuantizacion | Q4_K_M en GGUF (confirmado); metadatos de HuggingFace indican presencia de pesos en safetensors |
+| Tipos de cuantizacion | Q4_K_M en GGUF (confirmado); metadatos de Hugging Face indican presencia de pesos en safetensors |
 | Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF y safetensors |
@@ -33,7 +33,7 @@ El entrenamiento se realizó con Unsloth aplicando QLoRA sobre una GPU T4 de Goo
 - Respuesta a instrucciones del tipo instruct, heredada de Qwen2.5-0.5B-Instruct.
 - Comportamiento desinhibido ("uncensored") sobre la base abliterated: el modelo no aplica los filtros de rechazo originales.
 - Compatibilidad con plantillas de chat vía `--jinja` en llama.cpp, lo que permite aplicar el formato de conversación de Qwen.
-- Compatibilidad declarada con "endpoints_compatible" en HuggingFace, orientada a despliegue vía Inference Endpoints.
+- Compatibilidad declarada con "endpoints_compatible" en Hugging Face, orientada a despliegue vía Inference Endpoints.
 - No se documentan capacidades de tool calling, function calling, uso de agentes, razonamiento multi-paso, visión, audio ni modo de razonamiento explícito.
 - Capacidad multilingüe limitada: el único idioma declarado es el inglés.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| stupidlime/Mochi-1.0 | 494.032.768 | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune de estilo sobre base abliterated |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,5B (aprox.) | no disponible en esta busqueda | Apache 2.0 | HuggingFace, ampliamente distribuido | Base original de Alibaba Cloud, con alineacion de seguridad estandar |
-| huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3 | 0,5B (aprox.) | no disponible en esta busqueda | Apache 2.0 | HuggingFace | Modelo base directo de Mochi 1.0; filtros de rechazo suprimidos |
+| stupidlime/Mochi-1.0 | 494.032.768 | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune de estilo sobre base abliterated |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,5B (aprox.) | no disponible en esta busqueda | Apache 2.0 | Hugging Face, ampliamente distribuido | Base original de Alibaba Cloud, con alineacion de seguridad estandar |
+| huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3 | 0,5B (aprox.) | no disponible en esta busqueda | Apache 2.0 | Hugging Face | Modelo base directo de Mochi 1.0; filtros de rechazo suprimidos |
 
 No se dispone de resultados de benchmarks comparativos entre estos modelos en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y disponibilidad. Existen otros modelos ultraligeros de la misma categoría (por ejemplo, familias de ~0,5B de otros proveedores), pero no se aportan datos verficados sobre ellos en esta búsqueda.
 
@@ -82,7 +82,7 @@ No se dispone de resultados de benchmarks comparativos entre estos modelos en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stupidlime/Mochi-1.0
+- Modelo en Hugging Face: https://huggingface.co/stupidlime/Mochi-1.0
 - Modelo base (abliterated): https://huggingface.co/huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3
 - Perfil del autor del modelo base: https://huggingface.co/huihui-ai
 - Qwen2.5-0.5B-Instruct original: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

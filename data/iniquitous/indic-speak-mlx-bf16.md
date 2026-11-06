@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bodhan-ai/indic-speak | 3.300.928.512 (LM) | no disponible | no disponible | Indic Open Model License v1.0 | HuggingFace (Transformers) |
-| iniquitous/indic-speak-mlx-bf16 | 3.300.928.512 (LM) | no disponible | ~28 tok/s en M3 Max | Indic Open Model License v1.0 | HuggingFace (MLX) |
-| yogenghodke/indic-f5-mlx | no disponible | no disponible | no disponible | no disponible | HuggingFace (MLX) |
+| bodhan-ai/indic-speak | 3.300.928.512 (LM) | no disponible | no disponible | Indic Open Model License v1.0 | Hugging Face (Transformers) |
+| iniquitous/indic-speak-mlx-bf16 | 3.300.928.512 (LM) | no disponible | ~28 tok/s en M3 Max | Indic Open Model License v1.0 | Hugging Face (MLX) |
+| yogenghodke/indic-f5-mlx | no disponible | no disponible | no disponible | no disponible | Hugging Face (MLX) |
 
 El modelo original `bodhan-ai/indic-speak` es la referencia de la que deriva esta conversión. `yogenghodke/indic-f5-mlx` es otra conversión MLX para lenguas indias basada en F5-TTS, pero no se dispone de especificaciones ni benchmarks en la información proporcionada.
 
@@ -79,7 +79,7 @@ El modelo original `bodhan-ai/indic-speak` es la referencia de la que deriva est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iniquitous/indic-speak-mlx-bf16
+- Modelo en Hugging Face: https://huggingface.co/iniquitous/indic-speak-mlx-bf16
 - Modelo original: https://huggingface.co/bodhan-ai/indic-speak
 - Variante 4bit: https://huggingface.co/iniquitous/indic-speak-mlx-4bit
 - Variante 6bit: https://huggingface.co/iniquitous/indic-speak-mlx-6bit

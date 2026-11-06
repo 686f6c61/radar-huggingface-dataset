@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`worldboss/qwen3.5-0.8B-finetune` es un checkpoint multimodal publicado en HuggingFace por el usuario `worldboss`. Se trata de un modelo de aproximadamente 852,9 millones de parámetros (852.985.920 según los pesos en safetensors), con pipeline declarado `image-text-to-text`, es decir, entrada conjunta de imagen y texto y salida de texto. El repositorio ocupa 1,7 GB y se distribuye únicamente en formato safetensors para la librería `transformers`. La etiqueta `qwen3_5` sugiere que deriva de la familia Qwen 3.5 y la etiqueta `llama-factory` apunta a que el ajuste fino se realizó con la herramienta LLaMA-Factory, aunque ninguna de estas dos cuestiones está confirmada en la documentación del repositorio.
+`worldboss/qwen3.5-0.8B-finetune` es un checkpoint multimodal publicado en Hugging Face por el usuario `worldboss`. Se trata de un modelo de aproximadamente 852,9 millones de parámetros (852.985.920 según los pesos en safetensors), con pipeline declarado `image-text-to-text`, es decir, entrada conjunta de imagen y texto y salida de texto. El repositorio ocupa 1,7 GB y se distribuye únicamente en formato safetensors para la librería `transformers`. La etiqueta `qwen3_5` sugiere que deriva de la familia Qwen 3.5 y la etiqueta `llama-factory` apunta a que el ajuste fino se realizó con la herramienta LLaMA-Factory, aunque ninguna de estas dos cuestiones está confirmada en la documentación del repositorio.
 
-El problema que resuelve no está descrito por el autor: la model card es la plantilla automática de HuggingFace y todos sus campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación) aparecen como `[More Information Needed]`. No se declara licencia, no se declaran idiomas y no se han publicado resultados de benchmarks.
+El problema que resuelve no está descrito por el autor: la model card es la plantilla automática de Hugging Face y todos sus campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación) aparecen como `[More Information Needed]`. No se declara licencia, no se declaran idiomas y no se han publicado resultados de benchmarks.
 
 Su relevancia actual es limitada y fundamentalmente exploratoria: se trata de un checkpoint con 0 descargas y 0 likes en el momento de redactar esta ficha, sin validación de la comunidad y con metadatos incompletos, incluida una fecha de creación (2026-09-10) que conviene verificar. Puede resultar de interés como ejemplo de fine-tune multimodal de menos de 1.000 millones de parámetros desplegable en hardware de consumo, pero no debería evaluarse para producción sin antes auditar pesos, tokenizador, licencia y procedencia del modelo base.
 
@@ -29,7 +29,7 @@ Su relevancia actual es limitada y fundamentalmente exploratoria: se trata de un
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna. La model card es la plantilla generada automaticamente por HuggingFace y no incluye descripcion del modelo, objetivo de entrenamiento, numero de capas, dimensiones ocultas, mecanismo de atencion ni configuracion del codificador visual. La unica evidencia disponible son las etiquetas del repositorio: `qwen3_5` apunta a una arquitectura de la familia Qwen 3.5 y `image-text-to-text` indica que el modelo procesa imagenes ademas de texto, lo que implicaria un componente de vision (tipicamente un ViT o similar) conectado a un decodificador de lenguaje. Ni el tipo de conector multimodal ni la resolucion de imagen soportada estan documentados.
+No hay informacion publicada sobre la arquitectura interna. La model card es la plantilla generada automaticamente por Hugging Face y no incluye descripcion del modelo, objetivo de entrenamiento, numero de capas, dimensiones ocultas, mecanismo de atencion ni configuracion del codificador visual. La unica evidencia disponible son las etiquetas del repositorio: `qwen3_5` apunta a una arquitectura de la familia Qwen 3.5 y `image-text-to-text` indica que el modelo procesa imagenes ademas de texto, lo que implicaria un componente de vision (tipicamente un ViT o similar) conectado a un decodificador de lenguaje. Ni el tipo de conector multimodal ni la resolucion de imagen soportada estan documentados.
 
 Respecto al entrenamiento, la etiqueta `llama-factory` sugiere que se utilizo LLaMA-Factory para el ajuste fino, probablemente mediante supervision fina (SFT) sobre el checkpoint base de 0,8B de la familia Qwen 3.5, pero no se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo etapas de RLHF o DPO, ni los hiperparametros (precision, learning rate, regimen de entrenamiento). La etiqueta `arxiv:1910.09700` no corresponde a un articulo sobre el modelo: es la referencia a Lacoste et al. (2019) sobre el calculo de impacto ambiental, citada en la propia plantilla de model card.
 
@@ -37,7 +37,7 @@ Respecto al entrenamiento, la etiqueta `llama-factory` sugiere que se utilizo LL
 
 - Generacion de texto conversacional: la etiqueta `conversational` indica que el modelo esta preparado para dialogos multi-turno, aunque no se detalla el formato de plantilla de chat utilizado.
 - Procesamiento conjunto de imagen y texto: el pipeline declarado es `image-text-to-text`, por lo que se espera que acepte imagenes como entrada y genere texto, presumiblemente para tareas de descripcion, respuesta a preguntas visuales o transcripcion de contenido visual. No hay confirmacion ni ejemplos de uso.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio puede desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio puede desplegarse en Hugging Face Inference Endpoints.
 - Ajuste fino reproducible con LLaMA-Factory: la etiqueta homonima sugiere que el entrenamiento se realizo con ese framework, lo que facilita reproducir o continuar el ajuste.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: los pesos en fp16/bf16 ocupan aproximadamente 1,7 GB (coherente con el tamano del repositorio); en cuantizacion de 8 bits, en torno a 0,9 GB; en 4 bits, alrededor de 0,45 GB. A ello hay que sumar la cache KV y las activaciones, cuyo tamano depende de una longitud de contexto que no esta documentada, y la memoria del codificador visual si se procesan imagenes de alta resolucion.
 - GPU recomendadas: cualquier GPU moderna con al menos 4-6 GB de VRAM resulta suficiente en la practica; por ejemplo RTX 3060, RTX 4060, RTX 4070, RTX 4090, L4, A10G. Para lotes grandes o imagenes de resolucion alta son preferibles A100 o H100, aunque para este tamano de modelo serian sobredimensionadas.
 - Cabe en GPU de consumo: si, en la mayoria de tarjetas actuales con 6 GB o mas de VRAM, e incluso en modo CPU con suficiente RAM del sistema.
-- Opciones de despliegue: `transformers` de forma nativa (formato declarado), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), y previsiblemente vLLM o TGI si la arquitectura `qwen3_5` esta soportada por esas librerias, lo cual no esta confirmado. Para llama.cpp u Ollama seria necesaria una conversion previa a GGUF, que no esta incluida en el repositorio.
+- Opciones de despliegue: `transformers` de forma nativa (formato declarado), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), y previsiblemente vLLM o TGI si la arquitectura `qwen3_5` esta soportada por esas librerias, lo cual no esta confirmado. Para llama.cpp u Ollama seria necesaria una conversion previa a GGUF, que no esta incluida en el repositorio.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ Diferencias clave a favor de este checkpoint: ninguno confirmado. En contra: aus
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/worldboss/qwen3.5-0.8B-finetune
+- Modelo en Hugging Face: https://huggingface.co/worldboss/qwen3.5-0.8B-finetune
 - LLaMA-Factory (framework de ajuste fino referenciado en las etiquetas): https://github.com/hiyouga/LLaMA-Factory
 - Articulo citado en la plantilla de model card, Lacoste et al. (2019), sobre impacto ambiental: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental del aprendizaje automatico: https://mlco2.github.io/impact

@@ -65,4 +65,4 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sophierober/lightweight-multimodal-survey59
+- Hugging Face: https://huggingface.co/sophierober/lightweight-multimodal-survey59

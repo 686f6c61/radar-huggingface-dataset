@@ -104,9 +104,9 @@ No se han publicado en la información disponible datos comparativos de rendimie
 
 | Modelo | Enfoque | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `wq2012/ls_conformer_tiny_ge2e` | Conformer tiny + ATP + pérdida GE2E, embedding de 128 dims | 693.124 | Audio log-mel 80 dims a 16 kHz; sin ventana de contexto de texto | Apache-2.0 | HuggingFace, GitHub, PyPI |
+| `wq2012/ls_conformer_tiny_ge2e` | Conformer tiny + ATP + pérdida GE2E, embedding de 128 dims | 693.124 | Audio log-mel 80 dims a 16 kHz; sin ventana de contexto de texto | Apache-2.0 | Hugging Face, GitHub, PyPI |
 | ECAPA-TDNN (familia citada habitualmente como referencia en verificación de locutor) | TDNN con pooling estadístico atento | no disponible | Audio | no disponible | disponible en distintos repositorios y frameworks |
-| Modelos basados en WavLM para verificación de locutor | Transformer preentrenado con pérdida de enmascaramiento, ajustado para hablante | no disponible | Audio | no disponible | disponibles en HuggingFace para algunas variantes |
+| Modelos basados en WavLM para verificación de locutor | Transformer preentrenado con pérdida de enmascaramiento, ajustado para hablante | no disponible | Audio | no disponible | disponibles en Hugging Face para algunas variantes |
 | Sistemas x-vector clásicos | TDNN con pooling estadístico | no disponible | Audio | no disponible | implementaciones diversas |
 
 ## Limitaciones y advertencias
@@ -126,8 +126,8 @@ No se han publicado en la información disponible datos comparativos de rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wq2012/ls_conformer_tiny_ge2e
-- Colección FlaxSpeaker en HuggingFace: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
+- Modelo en Hugging Face: https://huggingface.co/wq2012/ls_conformer_tiny_ge2e
+- Colección FlaxSpeaker en Hugging Face: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub de FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
 - Paquete en PyPI: https://pypi.org/project/flaxspeaker/
 - Paper GE2E, *Generalized End-to-End Loss for Speaker Verification*: https://arxiv.org/abs/1710.10467

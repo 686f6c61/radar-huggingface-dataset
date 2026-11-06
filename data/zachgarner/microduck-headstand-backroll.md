@@ -82,11 +82,11 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 - Criterio de exito limitado: la comprobacion de exito de salida valida el standing final, no la forma de las patas a lo largo de la salida.
 - Licencia no disponible: la ausencia de licencia declarada impide asumir permisos de uso comercial o de redistribucion; hay que contactar con el autor antes de cualquier uso en produccion.
 - Adopcion nula y trazabilidad limitada: 0 descargas y 0 likes, tamano de repo de 0.0 GB y arquitectura no documentada. El autor tampoco especifica la topologia de red ni el numero de parametros.
-- Incoherencia de metadatos: la fecha de creacion indicada en HuggingFace (2026-09-22) es posterior a la fecha actual, lo que conviene verificar antes de citar el artefacto.
+- Incoherencia de metadatos: la fecha de creacion indicada en Hugging Face (2026-09-22) es posterior a la fecha actual, lo que conviene verificar antes de citar el artefacto.
 - Ambito de aplicacion restringido: no es un modelo de lenguaje y no ofrece tool calling, agentes, vision ni capacidades multilingues.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZachGarner/microduck-headstand-backroll
+- Modelo en Hugging Face: https://huggingface.co/ZachGarner/microduck-headstand-backroll
 - Codigo de evaluacion, configuracion y resultados en bruto: https://github.com/zachgarner/microduck-headstand/tree/71ad395
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada.

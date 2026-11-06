@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anirudhsharma123/Qwen3.5-9B-abliterated-MLX-4bit | ~8,95B | 4 bits (MLX) | No disponible | Apache 2.0 | HuggingFace, formato MLX, 5,1 GB |
-| huihui-ai/Huihui-Qwen3.5-9B-abliterated | ~8,95B (presumiblemente los mismos) | bf16/fp16 (no confirmado en la informacion) | No disponible | Apache 2.0 | HuggingFace, pesos completos |
-| Qwen/Qwen3.5-9B | No disponible en la informacion | Original sin cuantizar | No disponible | Apache 2.0 (segun el enlace de licencia del modelo) | HuggingFace |
+| anirudhsharma123/Qwen3.5-9B-abliterated-MLX-4bit | ~8,95B | 4 bits (MLX) | No disponible | Apache 2.0 | Hugging Face, formato MLX, 5,1 GB |
+| huihui-ai/Huihui-Qwen3.5-9B-abliterated | ~8,95B (presumiblemente los mismos) | bf16/fp16 (no confirmado en la informacion) | No disponible | Apache 2.0 | Hugging Face, pesos completos |
+| Qwen/Qwen3.5-9B | No disponible en la informacion | Original sin cuantizar | No disponible | Apache 2.0 (segun el enlace de licencia del modelo) | Hugging Face |
 
 La comparativa cuantitativa de rendimiento no es posible: no hay benchmarks publicados para ninguna de las tres variantes en la informacion proporcionada. La diferencia practica entre la primera y la segunda fila es el formato y el tamano en disco, no el comportamiento esperado del modelo en si; la tercera fila difiere por la presencia de mecanismos de rechazo intactos. Cualquier otra alternativa de ~9B de la misma categoria no se puede comparar sin datos verificables.
 
@@ -93,7 +93,7 @@ La comparativa cuantitativa de rendimiento no es posible: no hay benchmarks publ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anirudhsharma123/Qwen3.5-9B-abliterated-MLX-4bit
+- Repositorio en Hugging Face: https://huggingface.co/anirudhsharma123/Qwen3.5-9B-abliterated-MLX-4bit
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3.5-9B-abliterated
 - Enlace de licencia referenciado en la model card: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen3.5-9B

@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B-exl3-4.0bpw (este) | 9.334.250.496 segun safetensors | no disponible | EXL3 4,0 bpw | Apache 2.0 | HuggingFace, 123 descargas |
-| Nanbeige/Nanbeige4.3-33B (base) | no disponible | no disponible | safetensors originales | Apache 2.0 | HuggingFace |
-| Otras variantes EXL3 de la coleccion Honkware | no disponible | no disponible | EXL3 a otras anchuras de bit | Apache 2.0 | HuggingFace |
+| Nanbeige4.3-33B-exl3-4.0bpw (este) | 9.334.250.496 segun safetensors | no disponible | EXL3 4,0 bpw | Apache 2.0 | Hugging Face, 123 descargas |
+| Nanbeige/Nanbeige4.3-33B (base) | no disponible | no disponible | safetensors originales | Apache 2.0 | Hugging Face |
+| Otras variantes EXL3 de la coleccion Honkware | no disponible | no disponible | EXL3 a otras anchuras de bit | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparado con modelos alternativos de la misma categoria.
 

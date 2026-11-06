@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "zephel01/Qwen3.8-Flash-Next-24G64G-GGUF",
+  "slug": "zephel01-qwen3-8-flash-next-24g64g-gguf",
+  "author": "zephel01",
+  "url": "https://huggingface.co/zephel01/Qwen3.8-Flash-Next-24G64G-GGUF",
+  "created_at": "2026-11-04T10:19:07.000Z",
+  "updated_at": "2026-11-04T10:50:33.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ldlq",
+    "qwen4exp",
+    "moe",
+    "abyss",
+    "japanese",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 93682584224,
+  "storage_human": "93.7 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "I created GGUFs to run Qwen3.8-Flash-Next closer to the original model ...",
+      "url": "https://note.com/zephel01/n/n3b786b1e8c99?hl=en",
+      "snippet": "I have created two custom GGUFs for Qwen3.8-Flash-Next. For GPU 16GB + RAM 64GB and for GPU 24GB + RAM 64GB. I have uploaded them to HF as BETA (`zephel01/Qwen3.8-Flash-Next-16G64G-GGUF`, `zephel01/Qwen3.8-Flash-Next-24G64G-GGUF`)."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next GGUF - a zephel01 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/zephel01/qwen38-flash-next-gguf",
+      "snippet": "Qwen3.8-Flash-Next GGUFs sized for a GPU + RAM tier (BETA). Japanese checked on every build; runs on Abyss and llama.cpp."
+    }
+  ]
+}

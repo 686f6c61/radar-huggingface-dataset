@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gemma4-E2B-Abliterated-V2-GGUF es una version modificada del modelo google/gemma-4-E2B-it, publicada por el usuario onemunanoyo en HuggingFace. Se trata de un "abliterated model", es decir, un ajuste que elimina o atenua la direccion de rechazo en el espacio de activaciones del modelo para reducir las negativas a responder ante peticiones que el modelo original rechazaria. El autor lo presenta como una mejora de su version anterior (gemma4-E2B-Abliterated-GGUF), con una reduccion significativa de rechazos cuando el modo de razonamiento (thinking) esta activado.
+gemma4-E2B-Abliterated-V2-GGUF es una version modificada del modelo google/gemma-4-E2B-it, publicada por el usuario onemunanoyo en Hugging Face. Se trata de un "abliterated model", es decir, un ajuste que elimina o atenua la direccion de rechazo en el espacio de activaciones del modelo para reducir las negativas a responder ante peticiones que el modelo original rechazaria. El autor lo presenta como una mejora de su version anterior (gemma4-E2B-Abliterated-GGUF), con una reduccion significativa de rechazos cuando el modo de razonamiento (thinking) esta activado.
 
 El modelo conserva la arquitectura y el tamano del base: 4.628.569.635 parametros totales, segun los datos de safetensors del repositorio. Se distribuye unicamente en formato GGUF, con el objetivo de ejecutarse en llama.cpp y en entornos de inferencia local, y esta etiquetado para los idiomas ingles y japones. La licencia declarada es Apache 2.0.
 
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks de calidad general que permitan comparar co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/onemunanoyo/gemma4-E2B-Abliterated-V2-GGUF
+- Hugging Face: https://huggingface.co/onemunanoyo/gemma4-E2B-Abliterated-V2-GGUF
 - Modelo anterior: https://huggingface.co/onemunanoyo/gemma4-E2B-Abliterated-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Juez de evaluacion: https://huggingface.co/LiquidAI/d1-3B

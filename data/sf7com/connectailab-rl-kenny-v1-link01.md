@@ -72,8 +72,8 @@ La evaluación de la caminata se realizó con una aproximación 2D basada en una
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sf7com/connectailab-rl-kenny-v1-link01 | 0,8 B (base) + LoRA | no disponible | Decisión de robot simulado (PPO destilado) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8 B | no disponible | LLM generalista | no disponible en la información | HuggingFace |
+| sf7com/connectailab-rl-kenny-v1-link01 | 0,8 B (base) + LoRA | no disponible | Decisión de robot simulado (PPO destilado) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8 B | no disponible | LLM generalista | no disponible en la información | Hugging Face |
 | Política PPO "cerebro" LINK-01 | no disponible | no aplica | Política RL en simulador web | no disponible | Repositorio CONNECT TYCOON |
 
 No se dispone de datos de benchmarks comparables con otros adaptadores de decisión de la misma categoría en la información proporcionada.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparables con otros adaptadores de decisi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sf7com/connectailab-rl-kenny-v1-link01
+- Hugging Face: https://huggingface.co/sf7com/connectailab-rl-kenny-v1-link01
 - Repositorio de código: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Entorno de entrenamiento web: https://www.ezerai.xyz/robot-lab/world/

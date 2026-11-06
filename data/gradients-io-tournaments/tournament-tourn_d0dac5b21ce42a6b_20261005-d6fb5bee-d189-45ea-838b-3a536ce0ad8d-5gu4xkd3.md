@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Este artefacto es un adaptador de ajuste fino publicado bajo la organizacion `gradients-io-tournaments` en HuggingFace, con identificador `tournament-tourn_d0dac5b21ce42a6b_20261005-d6fb5bee-d189-45ea-838b-3a536ce0ad8d-5GU4Xkd3`. La libreria declarada es PEFT (version 0.15.1) y los pesos se almacenan en formato safetensors, lo que indica que se trata de un adaptador tipo LoRA u otra tecnica de ajuste parametrizado eficiente, y no de un modelo completo con pesos propios.
+Este artefacto es un adaptador de ajuste fino publicado bajo la organizacion `gradients-io-tournaments` en Hugging Face, con identificador `tournament-tourn_d0dac5b21ce42a6b_20261005-d6fb5bee-d189-45ea-838b-3a536ce0ad8d-5GU4Xkd3`. La libreria declarada es PEFT (version 0.15.1) y los pesos se almacenan en formato safetensors, lo que indica que se trata de un adaptador tipo LoRA u otra tecnica de ajuste parametrizado eficiente, y no de un modelo completo con pesos propios.
 
 El adaptador se ha entrenado sobre `gradients-io-tournaments/augmented-fe5759985466c7ca`, que a su vez es otro adaptador, por lo que existe una cadena de dependencias de al menos dos niveles. El nombre incluye una marca temporal (20261005) y un hash de torneo, lo que apunta a una generacion automatizada dentro de un mecanismo de competicion o torneo de entrenamiento, mas que a un modelo curado y documentado por un equipo humano.
 
-La model card esta practicamente vacia: es la plantilla por defecto de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]". No se declara licencia, idiomas, pipeline, arquitectura, parametros, contexto ni datos de entrenamiento. Con 0 descargas y 0 likes en el momento de la consulta, y un peso de repositorio de 1,3 GB, se trata de un artefacto sin validacion comunitaria ni informacion tecnica verificable.
+La model card esta practicamente vacia: es la plantilla por defecto de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]". No se declara licencia, idiomas, pipeline, arquitectura, parametros, contexto ni datos de entrenamiento. Con 0 descargas y 0 likes en el momento de la consulta, y un peso de repositorio de 1,3 GB, se trata de un artefacto sin validacion comunitaria ni informacion tecnica verificable.
 
 ## Especificaciones tecnicas
 
@@ -81,8 +81,8 @@ No disponible. No se conocen modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_d0dac5b21ce42a6b_20261005-d6fb5bee-d189-45ea-838b-3a536ce0ad8d-5GU4Xkd3
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_d0dac5b21ce42a6b_20261005-d6fb5bee-d189-45ea-838b-3a536ce0ad8d-5GU4Xkd3
 - Modelo base declarado: https://huggingface.co/gradients-io-tournaments/augmented-fe5759985466c7ca
 - Referencia citada en la plantilla (Lacoste et al., 2019, calculadora de impacto de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de carbono: https://mlco2.github.io/impact
-- Organizacion en HuggingFace: https://huggingface.co/gradients-io-tournaments
+- Organizacion en Hugging Face: https://huggingface.co/gradients-io-tournaments

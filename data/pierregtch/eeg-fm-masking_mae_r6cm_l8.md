@@ -37,7 +37,7 @@ El preentrenamiento utilizo el subconjunto con licencia abierta del corpus REVE 
 
 ## Capacidades
 
-- Extraccion de representaciones (feature-extraction) de senales EEG; el pipeline declarado en HuggingFace es `feature-extraction`.
+- Extraccion de representaciones (feature-extraction) de senales EEG; el pipeline declarado en Hugging Face es `feature-extraction`.
 - Codificacion contextual de ventanas EEG con atencion sobre parches temporales.
 - Aprendizaje autosupervisado por reconstruccion (MAE), sin necesidad de etiquetas durante el preentrenamiento.
 - Adaptacion a tareas downstream mediante sonda congelada (ridge regression/classification) o fine-tuning a traves de OpenEEGBench.
@@ -89,9 +89,9 @@ El paper recomienda la configuracion r = 9 cm y L = 2, cuyos checkpoints son `ee
 
 | Modelo | Marco | Radio r | Longitud L | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| eeg-fm-masking_mae_r6cm_L8 | MAE | 6 cm | 8 parches | 12,69 M | cc-by-4.0 | HuggingFace |
-| eeg-fm-masking_mae_r9cm_L2 | MAE | 9 cm | 2 parches | no disponible | cc-by-4.0 | HuggingFace |
-| eeg-fm-masking_jepa_r9cm_L2 | JEPA | 9 cm | 2 parches | no disponible | cc-by-4.0 | HuggingFace |
+| eeg-fm-masking_mae_r6cm_L8 | MAE | 6 cm | 8 parches | 12,69 M | cc-by-4.0 | Hugging Face |
+| eeg-fm-masking_mae_r9cm_L2 | MAE | 9 cm | 2 parches | no disponible | cc-by-4.0 | Hugging Face |
+| eeg-fm-masking_jepa_r9cm_L2 | JEPA | 9 cm | 2 parches | no disponible | cc-by-4.0 | Hugging Face |
 
 No se dispone en la informacion proporcionada de las puntuaciones downstream de las variantes r = 9 cm y L = 2, por lo que la comparacion de rendimiento entre ellas no esta disponible. El paper identifica la configuracion r = 9 cm y L = 2 como la recomendada.
 
@@ -109,7 +109,7 @@ No se dispone en la informacion proporcionada de las puntuaciones downstream de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r6cm_L8
+- Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r6cm_L8
 - Web del paper: https://pierregtch.github.io/eeg-fm-masking
 - Codigo (GitHub): https://github.com/PierreGtch/eeg-fm-masking
 - Coleccion con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

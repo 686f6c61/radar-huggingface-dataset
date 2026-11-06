@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen36-27b-threejs-ft-ep1 es un modelo multimodal de tipo image-text-to-text publicado por el usuario huuhuyng en HuggingFace. Se trata de un derivado afinado (fine-tune) de la familia Qwen3.6, construido a partir de una cadena de derivaciones que pasa por Qwen/Qwen3.6-27B, Tooony133/Qwen-3.6-27B-SkinnyPete y computer-vision-ai-lab/Qwen-3.6-27B-UmberShrike, que es su modelo base directo declarado. Los pesos se almacenan en FP8 mediante el formato compressed-tensors y suman 27.781.427.952 parametros totales, con un repositorio de 31,2 GB.
+qwen36-27b-threejs-ft-ep1 es un modelo multimodal de tipo image-text-to-text publicado por el usuario huuhuyng en Hugging Face. Se trata de un derivado afinado (fine-tune) de la familia Qwen3.6, construido a partir de una cadena de derivaciones que pasa por Qwen/Qwen3.6-27B, Tooony133/Qwen-3.6-27B-SkinnyPete y computer-vision-ai-lab/Qwen-3.6-27B-UmberShrike, que es su modelo base directo declarado. Los pesos se almacenan en FP8 mediante el formato compressed-tensors y suman 27.781.427.952 parametros totales, con un repositorio de 31,2 GB.
 
 El problema que aborda es el de la especializacion: el sufijo del identificador ("threejs-ft-ep1") apunta a un ajuste fino orientado a tareas relacionadas con Three.js, la biblioteca JavaScript de renderizado 3D, si bien la model card no documenta el dataset, el procedimiento ni el objetivo concreto del entrenamiento. La relevancia de la ficha es principalmente practica: permite saber que existe una variante FP8 de 27B con entrada de imagen lista para desplegar con transformers, con licencia Apache-2.0 y compatible con endpoints.
 
@@ -39,7 +39,7 @@ Respecto al entrenamiento, la informacion publicada es minima. Se sabe que es un
 - Capacidades multilingues: no disponibles (no se declara lista de idiomas).
 - Modo de pensamiento (thinking mode): no disponible.
 - Capacidades de audio o video: no disponibles.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de la infraestructura de Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -65,7 +65,7 @@ Las siguientes cifras son estimaciones derivadas del recuento de parametros y de
 - VRAM en cuantizaciones de 4 bits (no publicadas, requeriria conversion): del orden de 15-18 GB de pesos, lo que permitiria ejecucion en GPU de 24 GB.
 - GPU recomendadas para FP8: H100 80 GB, A100 80 GB, L40S 48 GB, RTX 6000 Ada 48 GB. En A100 40 GB el margen es muy ajustado y puede requerir reducir contexto o usar tensor parallelism.
 - GPU de consumo: en FP8 no cabe en RTX 4090 ni RTX 3090 de 24 GB sin cuantizacion adicional; con una conversion a 4 bits si seria viable en 24 GB, a costa de perdida de calidad no medida.
-- Opciones de despliegue: transformers (biblioteca declarada), vLLM y SGLang (soportan compressed-tensors FP8), TGI y HuggingFace Inference Endpoints (etiqueta endpoints_compatible). No se incluyen pesos GGUF en el repositorio, por lo que llama.cpp u Ollama requeririan una conversion previa.
+- Opciones de despliegue: transformers (biblioteca declarada), vLLM y SGLang (soportan compressed-tensors FP8), TGI y Hugging Face Inference Endpoints (etiqueta endpoints_compatible). No se incluyen pesos GGUF en el repositorio, por lo que llama.cpp u Ollama requeririan una conversion previa.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ No se dispone de datos publicados de contexto, rendimiento ni licencia de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huuhuyng/qwen36-27b-threejs-ft-ep1
+- Hugging Face: https://huggingface.co/huuhuyng/qwen36-27b-threejs-ft-ep1
 - Modelo base directo: https://huggingface.co/computer-vision-ai-lab/Qwen-3.6-27B-UmberShrike
 - Paso intermedio de la cadena: https://huggingface.co/Tooony133/Qwen-3.6-27B-SkinnyPete
 - Modelo origen de la familia: https://huggingface.co/Qwen/Qwen3.6-27B

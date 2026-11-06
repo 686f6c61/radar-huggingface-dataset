@@ -107,9 +107,9 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryugyosoft/Qwen3.5-9B-nf4-onw
+- Modelo en Hugging Face: https://huggingface.co/ryugyosoft/Qwen3.5-9B-nf4-onw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Version estandar (INT4 grupo 128): https://huggingface.co/ryugyosoft/Qwen3.5-9B-onw
 - Motor onw: https://huggingface.co/ryugyosoft/onw
 - Documentacion tecnica de onw: https://huggingface.co/ryugyosoft/onw/blob/main/TECHNICAL.md
-- README en ingles de este modelo: README_en.md dentro del repositorio en HuggingFace
+- README en ingles de este modelo: README_en.md dentro del repositorio en Hugging Face

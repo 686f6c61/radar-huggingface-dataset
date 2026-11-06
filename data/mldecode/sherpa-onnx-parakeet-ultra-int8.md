@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mldecode/sherpa-onnx-parakeet-ultra-int8` es un repositorio de pesos alojado en HuggingFace por el usuario `mldecode`, cuyo identificador sugiere un artefacto ONNX cuantizado a INT8 de un modelo de reconocimiento automatico del habla (ASR) de la familia Parakeet, empaquetado para su uso con el runtime sherpa-onnx. El repositorio se publico el 24 de septiembre de 2026 (fecha que figura en los metadatos de HuggingFace), no acumula descargas ni "likes" y carece de model card: el unico contenido del README es el bloque de frontmatter con la licencia `cc-by-4.0`. No se documenta autoría del modelo base, pipeline, idiomas ni arquitectura interna.
+`mldecode/sherpa-onnx-parakeet-ultra-int8` es un repositorio de pesos alojado en Hugging Face por el usuario `mldecode`, cuyo identificador sugiere un artefacto ONNX cuantizado a INT8 de un modelo de reconocimiento automatico del habla (ASR) de la familia Parakeet, empaquetado para su uso con el runtime sherpa-onnx. El repositorio se publico el 24 de septiembre de 2026 (fecha que figura en los metadatos de Hugging Face), no acumula descargas ni "likes" y carece de model card: el unico contenido del README es el bloque de frontmatter con la licencia `cc-by-4.0`. No se documenta autoría del modelo base, pipeline, idiomas ni arquitectura interna.
 
 El problema que aborda es el de ejecutar transcripcion de voz en local, sin conexion y sobre hardware modesto. sherpa-onnx es un ecosistema de inferencia (sucesor de next-gen Kaldi) construido sobre onnxruntime que cubre reconocimiento de voz, sintesis de voz, diarizacion de hablantes, mejora de voz, separacion de fuentes y deteccion de actividad de voz, con soporte declarado para sistemas embebidos y Android. En ese contexto, un artefacto INT8 encaja en el tramo de bajo consumo de recursos del catalogo: los modelos NeMo de tipo transducer se distribuyen en sherpa-onnx en variantes fp16, sin cuantizar e INT8.
 
@@ -17,7 +17,7 @@ La relevancia actual del repositorio es limitada como pieza individual, pero ilu
 | Parametros activos | No aplica (no consta que sea MoE) |
 | Longitud de contexto | No disponible (modelo ASR; no se documenta ventana de audio ni estrategia de chunking) |
 | Tipos de cuantizacion | INT8, segun el sufijo `-int8` del identificador. No se documenta el esquema exacto (per-tensor, per-channel, dynamic/static) ni si existe variante fp16 o fp32 en el mismo repositorio |
-| Idiomas soportados | No disponible. Los metadatos de HuggingFace no declaran idiomas |
+| Idiomas soportados | No disponible. Los metadatos de Hugging Face no declaran idiomas |
 | Licencia | cc-by-4.0 |
 | Formato de pesos | Se infiere ONNX a partir del identificador `sherpa-onnx` y del sufijo de cuantizacion; no se listan archivos en la informacion proporcionada |
 
@@ -52,7 +52,7 @@ La innovacion tecnica esperable en un artefacto de este tipo es la propia cuanti
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay WER, MMLU, HumanEval, GSM8K ni ninguna otra metrica en los metadatos de HuggingFace ni en la model card. Los resultados de busqueda describen modelos del ecosistema sherpa-onnx, pero no aportan cifras de este repositorio.
+No se han publicado resultados de benchmarks en la informacion disponible. No hay WER, MMLU, HumanEval, GSM8K ni ninguna otra metrica en los metadatos de Hugging Face ni en la model card. Los resultados de busqueda describen modelos del ecosistema sherpa-onnx, pero no aportan cifras de este repositorio.
 
 ## Requisitos de hardware
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Tipo | Cuantizacion | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mldecode/sherpa-onnx-parakeet-ultra-int8` | ASR (export ONNX, presumiblemente Parakeet) | INT8 | No disponible | cc-by-4.0 | Publicado en HuggingFace, 0 descargas |
+| `mldecode/sherpa-onnx-parakeet-ultra-int8` | ASR (export ONNX, presumiblemente Parakeet) | INT8 | No disponible | cc-by-4.0 | Publicado en Hugging Face, 0 descargas |
 | `sherpa-onnx-nemo-parakeet-tdt-0.6b-v2` | NeMo transducer | Sin cuantizar | No disponible en las fuentes consultadas | No disponible | Distribuido por la documentacion de sherpa-onnx |
 | `sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-fp16` | NeMo transducer | FP16 | No disponible en las fuentes consultadas | No disponible | Distribuido por la documentacion de sherpa-onnx |
 | `sherpa-onnx-nemo-parakeet_tdt_ctc_110m-en-36000-int8` | NeMo transducer/CTC | INT8 | Ingles | No disponible | Distribuido por la documentacion de sherpa-onnx |
@@ -88,7 +88,7 @@ La comparacion se limita a la existencia de los artefactos y a su lugar en el ca
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mldecode/sherpa-onnx-parakeet-ultra-int8
+- Repositorio en Hugging Face: https://huggingface.co/mldecode/sherpa-onnx-parakeet-ultra-int8
 - Documentacion de modelos NeMo transducer en sherpa: https://k2-fsa.github.io/sherpa/onnx/pretrained_models/offline-transducer/nemo-transducer-models.html
 - Documentacion general de sherpa-onnx: https://k2-fsa.github.io/sherpa/onnx/index.html
 - Repositorio k2-fsa/sherpa-onnx en GitHub: https://github.com/k2-fsa/sherpa-onnx

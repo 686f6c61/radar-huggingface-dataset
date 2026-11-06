@@ -67,7 +67,7 @@ No disponible. Este repositorio no es un modelo de lenguaje, sino una configurac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VizorZ0042/Perfected-AI-Sampler-Parameters_All-Models-All-Cases
+- Repositorio en Hugging Face: https://huggingface.co/VizorZ0042/Perfected-AI-Sampler-Parameters_All-Models-All-Cases
 - Repositorio principal en GitLab: https://gitlab.com/Azuro721/trueperfect-ai
 - Imagen asociada: https://gitlab.com/Azuro721/trueperfect-ai/-/raw/main/PERF.png
 - Audio asociado: https://gitlab.com/Azuro721/trueperfect-ai/-/raw/main/k_etones.opus

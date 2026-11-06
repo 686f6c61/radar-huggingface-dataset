@@ -68,7 +68,7 @@ No se dispone de datos comparativos en la información proporcionada. La model c
 
 | Modelo | Parametros | Contexto / parche de entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AxonSynth | ~4,8 M | 128 × 128 × 128 vóxeles a 0,8 µm | Dice declarado como metrica, sin valores publicados | AGPL-3.0 | HuggingFace + GitHub |
+| AxonSynth | ~4,8 M | 128 × 128 × 128 vóxeles a 0,8 µm | Dice declarado como metrica, sin valores publicados | AGPL-3.0 | Hugging Face + GitHub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,6 +86,6 @@ No se dispone de datos comparativos en la información proporcionada. La model c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edziocodes/axonsynth
+- Modelo en Hugging Face: https://huggingface.co/edziocodes/axonsynth
 - Repositorio de código, entorno y documentación: https://github.com/lincbrain/axonsynth
 - Funciones de métricas reutilizables: https://github.com/lincbrain/axonsynth/blob/main/paper_analysis/metrics.py

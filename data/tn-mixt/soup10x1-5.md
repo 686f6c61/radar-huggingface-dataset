@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-MixT 3.5B Math (256k), publicado en HuggingFace como `tn-mixt/soup10x1.5`, es un checkpoint especializado en razonamiento matemático derivado de la familia Qwen3.5-MixT del mismo autor. Se trata de un modelo de lenguaje causal de 3.398.405.276 parámetros únicos en precisión bf16, construido sobre la arquitectura propietaria `Qwen3_5MixTForCausalLM` con variante MixT `tail13`. Su rasgo más distintivo es una ventana de contexto de 262.144 tokens, poco habitual en modelos de este tamaño.
+Qwen3.5-MixT 3.5B Math (256k), publicado en Hugging Face como `tn-mixt/soup10x1.5`, es un checkpoint especializado en razonamiento matemático derivado de la familia Qwen3.5-MixT del mismo autor. Se trata de un modelo de lenguaje causal de 3.398.405.276 parámetros únicos en precisión bf16, construido sobre la arquitectura propietaria `Qwen3_5MixTForCausalLM` con variante MixT `tail13`. Su rasgo más distintivo es una ventana de contexto de 262.144 tokens, poco habitual en modelos de este tamaño.
 
 El modelo está orientado exclusivamente a la resolución de problemas matemáticos de competición. Según la model card, alcanza un 89,8 % de precisión media en los conjuntos AIME24, AIME25 y AIME26 evaluados con un presupuesto de generación de 256k tokens y 10 muestras por problema (Avg@10). Es, por tanto, un checkpoint de investigación más que un modelo de propósito general.
 
@@ -91,5 +91,5 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tn-mixt/soup10x1.5
+- Modelo en Hugging Face: https://huggingface.co/tn-mixt/soup10x1.5
 - Organización del autor: https://huggingface.co/tn-mixt

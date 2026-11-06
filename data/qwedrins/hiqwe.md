@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HiQwe es un repositorio de modelo publicado en HuggingFace por el usuario Qwedrins bajo identificador `Qwedrins/HiQwe`. La informacion disponible es practicamente nula: la model card no contiene mas que la declaracion de licencia (`license: mit`) y los metadatos publicos no incluyen pipeline, idiomas soportados, arquitectura, numero de parametros ni fecha de entrenamiento. El repositorio registra 0 descargas y 0 "likes", por lo que no hay evidencia de uso ni de validacion por parte de la comunidad.
+HiQwe es un repositorio de modelo publicado en Hugging Face por el usuario Qwedrins bajo identificador `Qwedrins/HiQwe`. La informacion disponible es practicamente nula: la model card no contiene mas que la declaracion de licencia (`license: mit`) y los metadatos publicos no incluyen pipeline, idiomas soportados, arquitectura, numero de parametros ni fecha de entrenamiento. El repositorio registra 0 descargas y 0 "likes", por lo que no hay evidencia de uso ni de validacion por parte de la comunidad.
 
 En el momento de redactar esta ficha no es posible determinar que problema resuelve el modelo, sobre que arquitectura se construye ni con que datos se ha entrenado. Tampoco hay resultados de benchmarks, pesos publicados en formatos conocidos ni documentacion tecnica adicional que permita situarlo frente a alternativas existentes. Por el estado del repositorio (unica linea de contenido y ausencia total de actividad), es razonable tratarlo como un artefacto sin validar, posiblemente una prueba de subida o un placeholder.
 
@@ -25,7 +25,7 @@ Metadatos adicionales verificables:
 
 | Campo | Valor |
 |---|---|
-| ID en HuggingFace | Qwedrins/HiQwe |
+| ID en Hugging Face | Qwedrins/HiQwe |
 | Autor | Qwedrins |
 | Pipeline declarado | no disponible |
 | Tags | `license:mit`, `region:us` |
@@ -61,7 +61,7 @@ Los siguientes escenarios son condicionales: solo serian aplicables si una evalu
 - Prueba de concepto de despliegue local: si los pesos existen y son compatibles con `transformers` o `llama.cpp`, podria probarse su ejecucion en una GPU de consumo para medir latencia y calidad de forma empirica.
 - Analisis de trazabilidad de licencias: dado que la licencia declarada es MIT, un equipo legal puede evaluar si el repositorio cumple los requisitos de atribucion y si los pesos acompanan efectivamente a esa licencia.
 - Comparacion de calidad frente a un modelo de referencia: si el modelo genera texto, podria someterse a un conjunto de prompts fijos y compararse con una linea base conocida del mismo tamano.
-- Investigacion sobre publicacion de modelos en HuggingFace: el repositorio sirve como caso de estudio de model cards incompletas y de su impacto en la reproducibilidad.
+- Investigacion sobre publicacion de modelos en Hugging Face: el repositorio sirve como caso de estudio de model cards incompletas y de su impacto en la reproducibilidad.
 - Auditoria de seguridad de pesos no verificados: antes de cargar pesos de origen desconocido conviene analizar el repositorio en busca de codigo ejecutable (`*.py`, `pickle`) y descartar cargas con `trust_remote_code=True`.
 - Formacion interna: puede usarse como ejemplo practico de por que una ficha tecnica sin datos de arquitectura ni evaluacion no permite tomar decisiones de adopcion.
 
@@ -98,7 +98,7 @@ No disponible. Sin datos de arquitectura, numero de parametros ni rendimiento, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Qwedrins/HiQwe
+- Repositorio en Hugging Face: https://huggingface.co/Qwedrins/HiQwe
 - Model card: sin contenido tecnico; unicamente declara `license: mit`.
 - Paper, repositorio de codigo, demo o blog del autor: no disponibles.
 - Resultados de busqueda web: las busquedas realizadas no devolvieron ningun resultado relacionado con este modelo; los enlaces recuperados corresponden a sitios sin relacion (TikTok y sus variantes regionales) y se descartan por no aportar informacion.

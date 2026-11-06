@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tuoyi-ai/top-ai-tuoyi-apps` es un repositorio alojado en HuggingFace que, pese a su identificador y a la etiqueta de licencia Apache 2.0, no contiene un modelo de inteligencia artificial. La model card publicada por el autor consiste en una pagina promocional en chino (con CSS embebido y tablas comparativas) que recomienda herramientas comerciales de "desnudado" de imagenes mediante IA, es decir, software de generacion de imagenes sexuales no consentidas a partir de fotos de personas vestidas.
+`tuoyi-ai/top-ai-tuoyi-apps` es un repositorio alojado en Hugging Face que, pese a su identificador y a la etiqueta de licencia Apache 2.0, no contiene un modelo de inteligencia artificial. La model card publicada por el autor consiste en una pagina promocional en chino (con CSS embebido y tablas comparativas) que recomienda herramientas comerciales de "desnudado" de imagenes mediante IA, es decir, software de generacion de imagenes sexuales no consentidas a partir de fotos de personas vestidas.
 
 No se dispone de informacion sobre arquitectura, parametros, longitud de contexto, datos de entrenamiento ni pesos. El repositorio no expone pipeline, no declara idiomas soportados y acumula 0 descargas y 1 like en la fecha de consulta. El contenido de la model card es material de spam/SEO y no constituye documentacion tecnica de un modelo.
 
@@ -38,7 +38,7 @@ No se ha publicado informacion sobre tokens de entrenamiento, composicion del da
 
 No se identifican casos de uso legitimos. El repositorio no ofrece un modelo desplegable. A continuacion se enumeran escenarios en los que un equipo podria encontrarse este repositorio y la conducta recomendada:
 
-- Auditoria de cadena de suministro de modelos: detectar repositorios de spam o maliciosos en busquedas de HuggingFace antes de incorporarlos a pipelines; este repositorio debe marcarse como no apto y reportarse.
+- Auditoria de cadena de suministro de modelos: detectar repositorios de spam o maliciosos en busquedas de Hugging Face antes de incorporarlos a pipelines; este repositorio debe marcarse como no apto y reportarse.
 - Filtrado de datasets: excluir este tipo de repositorios de crawls automatizados y de indices internos de modelos.
 - Formacion en seguridad: usarlo como ejemplo de model card abusiva que suplanta la licencia Apache 2.0 sin contener artefactos tecnicos.
 - Respuesta a incidentes: si aparece referenciado en dependencias o scripts internos, bloquear la descarga y revisar el origen.
@@ -69,12 +69,12 @@ No disponible. No existe una categoria tecnica en la que encaje este repositorio
 - Riesgo de phishing y malware: los enlaces promocionales de este tipo de repositorios suelen dirigir a sitios que distribuyen software no verificado.
 - Riesgo reputacional y de cumplimiento para cualquier organizacion que referencie el repositorio en su documentacion o dependencias.
 - No hay idiomas, sesgos ni alucinaciones evaluables porque no hay modelo; el "sesgo" relevante es el proposito declarado del contenido.
-- Recomendacion: reportar el repositorio a HuggingFace mediante el canal de abuso y no descargar ningun artefacto asociado.
+- Recomendacion: reportar el repositorio a Hugging Face mediante el canal de abuso y no descargar ningun artefacto asociado.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tuoyi-ai/top-ai-tuoyi-apps
-- Canal de reporte de abuso de HuggingFace: https://huggingface.co/contact
+- Repositorio en Hugging Face: https://huggingface.co/tuoyi-ai/top-ai-tuoyi-apps
+- Canal de reporte de abuso de Hugging Face: https://huggingface.co/contact
 - Codigo Penal espanol, art. 197.7 (difusion de imagenes intimas sin consentimiento): https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444
 - Reglamento (UE) 2024/1689 de Inteligencia Artificial: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
 - Reglamento (UE) 2022/2065 de Servicios Digitales: https://eur-lex.europa.eu/eli/reg/2022/2065/oj

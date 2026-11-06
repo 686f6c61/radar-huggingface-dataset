@@ -99,7 +99,7 @@ No se han identificado en la información disponible modelos de decisión de ter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vasilee/span-02-gguf
+- Repositorio Hugging Face: https://huggingface.co/vasilee/span-02-gguf
 - Modelo base: https://huggingface.co/respanai/span-02
 - Decision Index (Space): https://huggingface.co/spaces/multimodalart/jev-decision-index
 - Anuncio del modelo original: https://www.respan.ai/blog/introducing-span-2

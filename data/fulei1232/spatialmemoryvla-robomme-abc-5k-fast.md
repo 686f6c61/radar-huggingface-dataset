@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SpatialMemoryVLA-RoboMME-ABC-5k-fast es un artefacto de entrenamiento publicado en HuggingFace por el usuario fulei1232 que contiene los resultados de una ablación A/B/C de 5.000 pasos sobre el modelo RoboMME, una arquitectura de vision-language-action (VLA) orientada a manipulación robótica con memoria espacial. No se trata de un modelo listo para inferencia conversacional, sino de un conjunto de checkpoints, estados de optimizador, configuraciones y métricas en JSONL que documentan el efecto de dos componentes concretos: el forzado espacial (spatial forcing) y la memoria espacial (spatial memory).
+SpatialMemoryVLA-RoboMME-ABC-5k-fast es un artefacto de entrenamiento publicado en Hugging Face por el usuario fulei1232 que contiene los resultados de una ablación A/B/C de 5.000 pasos sobre el modelo RoboMME, una arquitectura de vision-language-action (VLA) orientada a manipulación robótica con memoria espacial. No se trata de un modelo listo para inferencia conversacional, sino de un conjunto de checkpoints, estados de optimizador, configuraciones y métricas en JSONL que documentan el efecto de dos componentes concretos: el forzado espacial (spatial forcing) y la memoria espacial (spatial memory).
 
 La arquitectura combina tres piezas: un backbone de lenguaje Llama 2 7B congelado salvo su capa final, un backbone de visión también congelado y un modelo de acción DiT-L (Diffusion Transformer Large) que genera las acciones. Durante el entrenamiento se emplea un profesor VGGT-1B congelado para el forzado espacial. La dimensión de acción es 8 y el horizonte de predicción es 16 pasos, con una longitud de memoria de 16 y un tamaño de grupo de 16. El repositorio ocupa 591,1 GB, lo que refleja que incluye pesos, estados de optimizador y artefactos de FSDP para tres grupos de entrenamiento.
 
@@ -77,7 +77,7 @@ No se dispone de datos comparativos publicados en la información proporcionada 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| SpatialMemoryVLA-RoboMME-ABC-5k-fast | no disponible (backbone Llama 2 7B) | no disponible | no disponible | Checkpoints `.pt` en HuggingFace | Pérdidas de entrenamiento A/B/C |
+| SpatialMemoryVLA-RoboMME-ABC-5k-fast | no disponible (backbone Llama 2 7B) | no disponible | no disponible | Checkpoints `.pt` en Hugging Face | Pérdidas de entrenamiento A/B/C |
 | OpenVLA | no disponible en esta busqueda | no disponible | no disponible | no disponible | no disponible |
 | RT-2 | no disponible en esta busqueda | no disponible | no disponible | no disponible | no disponible |
 | π0 | no disponible en esta busqueda | no disponible | no disponible | no disponible | no disponible |
@@ -94,11 +94,11 @@ No se han encontrado en la búsqueda web enlaces ni fichas de estos modelos; la 
 - Contexto: no se especifica la ventana de contexto textual; solo se documenta una longitud de memoria de 16 observaciones, insuficiente para tareas que requieran historiales largos.
 - Tamaño del artefacto: 591,1 GB dificultan la descarga, el almacenamiento y la reproducibilidad en entornos con recursos limitados; los checkpoints intermedios se omitieron deliberadamente.
 - Datos de entrenamiento no declarados: no se detalla la composición del dataset, por lo que no puede evaluarse el sesgo de dominio ni la generalización fuera de la distribución de entrenamiento.
-- Fecha de creación del repositorio: 15 de septiembre de 2026, según los metadatos de HuggingFace; conviene verificar la vigencia del artefacto antes de reutilizarlo.
+- Fecha de creación del repositorio: 15 de septiembre de 2026, según los metadatos de Hugging Face; conviene verificar la vigencia del artefacto antes de reutilizarlo.
 - Sin señales de adopción: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validación por parte de terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fulei1232/SpatialMemoryVLA-RoboMME-ABC-5k-fast
+- Modelo en Hugging Face: https://huggingface.co/fulei1232/SpatialMemoryVLA-RoboMME-ABC-5k-fast
 - Repositorio de implementación y scripts de lanzamiento: `fulei1232/SpatialMemoryVLA` (referenciado en la model card; no se ha encontrado URL directa en la búsqueda web)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web realizada.

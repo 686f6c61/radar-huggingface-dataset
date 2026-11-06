@@ -4,7 +4,7 @@
 
 Manikanta23/qwen2.5-7b-rtl-vlsi-lora es un adaptador LoRA publicado por el usuario Manikanta23 sobre el modelo base Qwen/Qwen2.5-7B-Instruct. No se trata de un modelo completo, sino de un conjunto de pesos de adaptacion (formato PEFT, 0,2 GB en el repositorio) que debe cargarse junto al modelo base de 7.610 millones de parametros para poder ejecutarse. El identificador sugiere un ajuste orientado a RTL (Register Transfer Level) y diseno VLSI, es decir, generacion o asistencia en codigo de descripcion de hardware (Verilog, SystemVerilog o VHDL), aunque esta finalidad no esta confirmada en ninguna seccion de la model card.
 
-El interes practico del artefacto radica en que reutiliza las capacidades del Qwen2.5-7B-Instruct (ventana de 131.072 tokens, soporte de tool calling y buen rendimiento en codigo) y las especializa mediante un ajuste ligero de bajo rango. Sin embargo, la model card publicada es la plantilla vacia de HuggingFace: no documenta el conjunto de datos, los hiperparametros, la licencia ni ningun resultado de evaluacion, y el repositorio acumula 0 descargas y 0 likes en la fecha de consulta.
+El interes practico del artefacto radica en que reutiliza las capacidades del Qwen2.5-7B-Instruct (ventana de 131.072 tokens, soporte de tool calling y buen rendimiento en codigo) y las especializa mediante un ajuste ligero de bajo rango. Sin embargo, la model card publicada es la plantilla vacia de Hugging Face: no documenta el conjunto de datos, los hiperparametros, la licencia ni ningun resultado de evaluacion, y el repositorio acumula 0 descargas y 0 likes en la fecha de consulta.
 
 Para un evaluador, esto significa que el modelo debe considerarse experimental y no verificado: cualquier decision de adopcion deberia ir precedida de una evaluacion propia sobre tareas de diseno de hardware, ya que no existe evidencia publicada de que el ajuste mejore al modelo base ni de que no degrade sus capacidades generales.
 
@@ -82,17 +82,17 @@ No existe informacion publicada que permita comparar el rendimiento del adaptado
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Manikanta23/qwen2.5-7b-rtl-vlsi-lora (este) | 7,61 B (base) + adaptador LoRA | 131.072 tokens en el base, no confirmado | no disponible | adaptador PEFT de 0,2 GB en HuggingFace; requiere el modelo base |
-| Qwen/Qwen2.5-7B-Instruct | 7,61 B | 131.072 tokens | Apache 2.0 | pesos completos en HuggingFace |
+| Manikanta23/qwen2.5-7b-rtl-vlsi-lora (este) | 7,61 B (base) + adaptador LoRA | 131.072 tokens en el base, no confirmado | no disponible | adaptador PEFT de 0,2 GB en Hugging Face; requiere el modelo base |
+| Qwen/Qwen2.5-7B-Instruct | 7,61 B | 131.072 tokens | Apache 2.0 | pesos completos en Hugging Face |
 | Qwen/Qwen2.5-Coder-7B-Instruct | 7,61 B | 131.072 tokens | Apache 2.0 | pesos completos, ajuste oficial orientado a codigo |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 131.072 tokens | Llama 3.1 Community License | pesos completos en HuggingFace |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 131.072 tokens | Llama 3.1 Community License | pesos completos en Hugging Face |
 | deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | 7,61 B | 131.072 tokens | MIT | pesos completos, ajuste orientado a razonamiento |
 
 Rendimiento comparado: no disponible. No se han publicado metricas del adaptador que permitan situarlo frente a estas alternativas. Para un caso de uso de codigo RTL, la comparacion relevante seria con Qwen2.5-Coder-7B-Instruct, que cuenta con un ajuste oficial documentado y evaluado, frente al caracter no verificado de este repositorio.
 
 ## Limitaciones y advertencias
 
-- Model card vacia: la ficha del autor es la plantilla por defecto de HuggingFace, sin datos de desarrollador, licencia, idiomas, datos de entrenamiento ni evaluacion. No es posible auditar el ajuste.
+- Model card vacia: la ficha del autor es la plantilla por defecto de Hugging Face, sin datos de desarrollador, licencia, idiomas, datos de entrenamiento ni evaluacion. No es posible auditar el ajuste.
 - Licencia no especificada: al no declararse licencia para el adaptador, no hay autorizacion explicita de uso comercial. La licencia Apache 2.0 del modelo base no cubre automaticamente los pesos derivados, por lo que un uso en produccion requiere aclarar este punto con el autor.
 - Riesgo de sobreajuste y olvido catastrofico: un ajuste LoRA sobre un dominio estrecho puede degradar las capacidades generales del modelo base (redaccion, matematicas, idiomas distintos del ingles, tool calling). No hay evaluacion que descarte este efecto.
 - Riesgo de alucinacion en codigo de hardware: la generacion de RTL puede producir codigo sintacticamente plausible pero funcionalmente incorrecto, con inferencia de latches, violaciones de temporizacion o interfaces incompatibles. Todo resultado exige simulacion, linting y sintesis antes de su uso.
@@ -105,7 +105,7 @@ Rendimiento comparado: no disponible. No se han publicado metricas del adaptador
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Manikanta23/qwen2.5-7b-rtl-vlsi-lora
+- Modelo en Hugging Face: https://huggingface.co/Manikanta23/qwen2.5-7b-rtl-vlsi-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Articulo citado en la model card sobre impacto ambiental (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

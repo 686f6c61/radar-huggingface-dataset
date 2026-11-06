@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-best es un modelo publicado en HuggingFace por el usuario ASDCZX12DS bajo el identificador `ASDCZX12DS/MyAwesomeModel-best`. Segun las etiquetas del repositorio, se trata de un modelo basado en BERT, implementado con PyTorch y la libreria `transformers`, y orientado a la tarea de extraccion de caracteristicas (*feature-extraction*). El repositorio tiene licencia MIT, no registra descargas ni interacciones, y fue creado el 10 de septiembre de 2026, apenas diez minutos antes de su ultima actualizacion.
+MyAwesomeModel-best es un modelo publicado en Hugging Face por el usuario ASDCZX12DS bajo el identificador `ASDCZX12DS/MyAwesomeModel-best`. Segun las etiquetas del repositorio, se trata de un modelo basado en BERT, implementado con PyTorch y la libreria `transformers`, y orientado a la tarea de extraccion de caracteristicas (*feature-extraction*). El repositorio tiene licencia MIT, no registra descargas ni interacciones, y fue creado el 10 de septiembre de 2026, apenas diez minutos antes de su ultima actualizacion.
 
 La model card del autor indica que el checkpoint publicado es el `step_1000` y presenta una matriz de evaluacion sobre quince tareas (razonamiento matematico, generacion de codigo, clasificacion de texto, analisis de sentimiento, traduccion, etc.) con una puntuacion global ponderada de 0,710. No obstante, la propia model card especifica que cada puntuacion es una "funcion determinista del numero de paso de entrenamiento", lo que indica que los valores no proceden de una evaluacion real sobre conjuntos de datos estandar, sino de una funcion sintetica. Esta circunstancia, unida a un tamano de repositorio de 0,0 GB, hace muy probable que no haya pesos reales alojados y limita drasticamente la utilidad practica del artefacto.
 
@@ -101,8 +101,8 @@ La comparativa se realiza con encoders BERT genericos, dado que se desconoce el 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | MyAwesomeModel-best | no disponible | no disponible | MIT | Repositorio sin pesos aparentes, 0 descargas |
-| bert-base-uncased | ~110 M | 512 | Apache 2.0 | Ampliamente disponible en HuggingFace |
-| roberta-base | ~125 M | 512 | MIT | Ampliamente disponible en HuggingFace |
+| bert-base-uncased | ~110 M | 512 | Apache 2.0 | Ampliamente disponible en Hugging Face |
+| roberta-base | ~125 M | 512 | MIT | Ampliamente disponible en Hugging Face |
 | sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M | 256 | Apache 2.0 | Ampliamente disponible y optimizado para embeddings |
 
 No es posible comparar rendimiento porque MyAwesomeModel-best no aporta metricas reales ni pesos verificables. Los tres modelos de referencia cuentan con evaluaciones publicas sobre MTEB y GLUE, comunidad activa y soporte en bibliotecas estandar, lo que los convierte en opciones mas seguras para produccion.
@@ -121,5 +121,5 @@ No es posible comparar rendimiento porque MyAwesomeModel-best no aporta metricas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASDCZX12DS/MyAwesomeModel-best
+- Hugging Face: https://huggingface.co/ASDCZX12DS/MyAwesomeModel-best
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la busqueda web realizada. Los resultados de la busqueda no guardan relacion con el modelo (corresponden a servicios de traduccion de uso general).

@@ -25,13 +25,13 @@ Este modelo es relevante porque permite ejecutar un modelo de 9B en hardware de 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura interna, los datos de entrenamiento ni el proceso de fine-tuning del modelo base Ornith-1.5-9B en la documentación proporcionada. Los tags del repositorio en HuggingFace apuntan a una relación con la familia Qwen3.5 y a capacidades de razonamiento ("reasoning"), pero no hay detalles confirmados sobre capas, atención, número de cabezas ni tipo de transformer.
+No se ha publicado información sobre la arquitectura interna, los datos de entrenamiento ni el proceso de fine-tuning del modelo base Ornith-1.5-9B en la documentación proporcionada. Los tags del repositorio en Hugging Face apuntan a una relación con la familia Qwen3.5 y a capacidades de razonamiento ("reasoning"), pero no hay detalles confirmados sobre capas, atención, número de cabezas ni tipo de transformer.
 
 El motor NInfer, en cambio, presenta una innovación destacable en el proceso de inferencia: la decodificación especulativa con múltiples tokens de borrador (MTP3). Esto permite predecir tres tokens futuros por paso, con una tasa de aceptación observada de ~60 % y ~2.7 tokens por ronda en las pruebas publicadas. El artefacto `.ninfer` incluye además capas LM head de borrador necesarias para esta técnica. No se detalla si hubo RLHF, DPO u otras etapas de alineación.
 
 ## Capacidades
 
-- Generación de texto en modo `text-generation` (pipeline estandar de HuggingFace).
+- Generación de texto en modo `text-generation` (pipeline estandar de Hugging Face).
 - Razonamiento, indicado mediante la etiqueta `reasoning` en los metadatos del repositorio, aunque sin benchmarks publicados.
 - Decodificación especulativa MTP3 con hasta 3 tokens de borrador por paso, integrada en el motor NInfer.
 - Ejecución nativa sobre CUDA en GPUs NVIDIA Blackwell (verificado en RTX 5060 Ti y RTX 5090).

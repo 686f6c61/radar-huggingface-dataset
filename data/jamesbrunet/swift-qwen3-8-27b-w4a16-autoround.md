@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jamesbrunet/Swift-Qwen3.8-27b-W4A16-AutoRound | 6,26 B segun safetensors (nombre indica 27b) | no disponible | int4 W4A16, embeddings sin cuantizar | swift-open-license-1.0 | HuggingFace, 0 descargas, 1 like |
-| dbirks/Qwen3.8-27B-W4A16-AutoRound | no disponible | no disponible | int4 W4A16 AutoRound | no disponible en la informacion facilitada | HuggingFace (referenciado como origen de la receta) |
-| ukisai/Swift-Qwen3.8-27b | no disponible (modelo base sin cuantizar) | no disponible | sin cuantizar | swift-open-license-1.0 | HuggingFace (modelo base declarado) |
+| jamesbrunet/Swift-Qwen3.8-27b-W4A16-AutoRound | 6,26 B segun safetensors (nombre indica 27b) | no disponible | int4 W4A16, embeddings sin cuantizar | swift-open-license-1.0 | Hugging Face, 0 descargas, 1 like |
+| dbirks/Qwen3.8-27B-W4A16-AutoRound | no disponible | no disponible | int4 W4A16 AutoRound | no disponible en la informacion facilitada | Hugging Face (referenciado como origen de la receta) |
+| ukisai/Swift-Qwen3.8-27b | no disponible (modelo base sin cuantizar) | no disponible | sin cuantizar | swift-open-license-1.0 | Hugging Face (modelo base declarado) |
 
 No se dispone de datos de rendimiento de ninguno de los tres modelos en la informacion proporcionada, por lo que la comparativa se limita a formato, licencia y relacion de derivacion. No se han identificado en la busqueda web modelos alternativos comparables.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento de ninguno de los tres modelos en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jamesbrunet/Swift-Qwen3.8-27b-W4A16-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/jamesbrunet/Swift-Qwen3.8-27b-W4A16-AutoRound
 - Modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Receta de cuantizacion de referencia: https://huggingface.co/dbirks/Qwen3.8-27B-W4A16-AutoRound
 - Licencia Swift Open License v1.0: https://ukisai.com/news/introducing-swift

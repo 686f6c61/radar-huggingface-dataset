@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nm-testing/kv_cache_gptq_tinyllama-e2e` es un artefacto de prueba publicado por el usuario `nm-testing` en HuggingFace, orientado a experimentos con cuantización GPTQ y caché de clave-valor (KV cache) sobre una base TinyLlama. Con 1.100.048.428 parámetros (aproximadamente 1,1 mil millones), se inscribe en la familia de arquitecturas Llama, tal como indica la etiqueta `llama`. Su nombre sugiere que es un banco de pruebas (e2e, end-to-end) para validar la compresión de tensores y el comportamiento de la caché KV en modelos pequeños, probablemente con fines de investigación o desarrollo de herramientas de cuantización.
+El modelo `nm-testing/kv_cache_gptq_tinyllama-e2e` es un artefacto de prueba publicado por el usuario `nm-testing` en Hugging Face, orientado a experimentos con cuantización GPTQ y caché de clave-valor (KV cache) sobre una base TinyLlama. Con 1.100.048.428 parámetros (aproximadamente 1,1 mil millones), se inscribe en la familia de arquitecturas Llama, tal como indica la etiqueta `llama`. Su nombre sugiere que es un banco de pruebas (e2e, end-to-end) para validar la compresión de tensores y el comportamiento de la caché KV en modelos pequeños, probablemente con fines de investigación o desarrollo de herramientas de cuantización.
 
 La relevancia de este modelo es limitada fuera del ámbito técnico: al ser una cuenta de testing (`nm-testing`), no se presenta como un modelo listo para producción, sino como un recurso para evaluar técnicas de cuantización y gestión de memoria en inferencia. El repositorio ocupa 23,9 GB, lo que indica que contiene pesos en formato `safetensors` posiblemente en varias precisiones o con múltiples archivos. No se dispone de información sobre licencia, idiomas soportados ni pipeline de uso, lo que refuerza su carácter experimental.
 
@@ -53,16 +53,16 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: con 1,1B parámetros y cuantización GPTQ (típicamente 4 bits), se estima un consumo de memoria de alrededor de 0,8-1,2 GB solo para los pesos, más la caché KV. En FP16, los pesos ocuparían unos 2,2 GB.
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM podría ejecutar el modelo cuantizado (por ejemplo, GTX 1650, RTX 3050). Para FP16, se recomienda 6 GB o más.
 - Compatibilidad con consumer GPU: sí, es un modelo pequeño que cabe en la mayoría de GPUs modernas.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace Transformers, TGI, entre otros, siempre que soporten GPTQ y safetensors.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face Transformers, TGI, entre otros, siempre que soporten GPTQ y safetensors.
 - Latencia y throughput: no disponibles. Al ser un modelo de 1,1B, se espera una generación rápida en GPUs modernas, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nm-testing/kv_cache_gptq_tinyllama-e2e | 1,1B | No disponible | No disponible | HuggingFace |
-| TinyLlama (original) | 1,1B | 2048 (por defecto) | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B | 1,5B | 32768 | Apache 2.0 | HuggingFace |
+| nm-testing/kv_cache_gptq_tinyllama-e2e | 1,1B | No disponible | No disponible | Hugging Face |
+| TinyLlama (original) | 1,1B | 2048 (por defecto) | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B | 1,5B | 32768 | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a modelos de tamaño similar. TinyLlama es la base de este checkpoint, por lo que comparte arquitectura y tamaño. Qwen2.5-1.5B ofrece mayor contexto y está mejor documentado, pero no es directamente comparable en cuanto a cuantización. No se dispone de datos de rendimiento para establecer una comparación cuantitativa.
 
@@ -78,6 +78,6 @@ La comparativa se limita a modelos de tamaño similar. TinyLlama es la base de e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nm-testing/kv_cache_gptq_tinyllama-e2e
+- Repositorio Hugging Face: https://huggingface.co/nm-testing/kv_cache_gptq_tinyllama-e2e
 
 No se han encontrado otros enlaces relevantes (papers, blogs o demos) en la información proporcionada.

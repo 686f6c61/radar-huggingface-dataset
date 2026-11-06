@@ -98,7 +98,7 @@ No se dispone de comparativas con otros draft models de decodificación especula
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/maurienne-ai/Qwen3.8-27B-DFlash2-NVFP4-RTNcal
+- Repositorio Hugging Face: https://huggingface.co/maurienne-ai/Qwen3.8-27B-DFlash2-NVFP4-RTNcal
 - Modelo base (draft BF16): https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Modelo objetivo Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

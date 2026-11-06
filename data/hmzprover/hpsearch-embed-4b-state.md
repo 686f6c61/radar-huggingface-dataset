@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hpsearch-embed-4b-state | 4,02 B | no disponible | Lean 4 / Mathlib (solo consulta) | Apache 2.0 | HuggingFace |
-| hpsearch-embed-4b | no disponible | no disponible | Lean 4 / Mathlib (documentos y consultas) | Apache 2.0 (según modelo base) | HuggingFace |
-| Embedders de texto generales (p. ej. familia Qwen3 embedding) | variable | variable | texto general | variable | HuggingFace |
+| hpsearch-embed-4b-state | 4,02 B | no disponible | Lean 4 / Mathlib (solo consulta) | Apache 2.0 | Hugging Face |
+| hpsearch-embed-4b | no disponible | no disponible | Lean 4 / Mathlib (documentos y consultas) | Apache 2.0 (según modelo base) | Hugging Face |
+| Embedders de texto generales (p. ej. familia Qwen3 embedding) | variable | variable | texto general | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmzprover/hpsearch-embed-4b-state
+- Modelo en Hugging Face: https://huggingface.co/hmzprover/hpsearch-embed-4b-state
 - Modelo base: https://huggingface.co/hmzprover/hpsearch-embed-4b
 - Repositorio hpsearch: https://github.com/humanfia/hpsearch
 - LeanDojo Benchmark 4 v10 (Zenodo 12740403): https://zenodo.org/records/12740403

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `jssaluja/fb-mms-1b-sggs-ncer-train-183173-epochs-15-test-2200` es un checkpoint publicado en HuggingFace por el usuario jssaluja bajo la librería transformers. Por la nomenclatura del identificador, todo apunta a un ajuste fino (fine-tuning) del modelo MMS (Massively Multilingual Speech) de Meta en su variante de aproximadamente 1.000 millones de parametros, entrenado sobre un conjunto de datos denominado "sggs" con la funcion de perdida NCER (probablemente Negative Cross-Entropy Regularization u objetivo similar), durante 15 epocas, con un split de test de 2.200 muestras y un identificador de ejecucion 183173.
+El modelo `jssaluja/fb-mms-1b-sggs-ncer-train-183173-epochs-15-test-2200` es un checkpoint publicado en Hugging Face por el usuario jssaluja bajo la librería transformers. Por la nomenclatura del identificador, todo apunta a un ajuste fino (fine-tuning) del modelo MMS (Massively Multilingual Speech) de Meta en su variante de aproximadamente 1.000 millones de parametros, entrenado sobre un conjunto de datos denominado "sggs" con la funcion de perdida NCER (probablemente Negative Cross-Entropy Regularization u objetivo similar), durante 15 epocas, con un split de test de 2.200 muestras y un identificador de ejecucion 183173.
 
-La model card es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: no se especifican desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El unico metadato tecnico disponible es la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico, citado en la plantilla y no relacionado con el modelo en si.
+La model card es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: no se especifican desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El unico metadato tecnico disponible es la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico, citado en la plantilla y no relacionado con el modelo en si.
 
 Por tanto, esta ficha solo puede describir de forma fiable lo que se deduce del identificador y del contexto de la familia MMS, marcando explicitamente como "no disponible" cualquier dato que no figure en la informacion proporcionada. No debe interpretarse como una evaluacion validada del modelo: se trata de un checkpoint de investigacion sin documentacion publica ni resultados verificables.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha solo puede describir de forma fiable lo que se deduce del 
 
 No hay informacion en la model card sobre la arquitectura concreta, el objetivo de entrenamiento ni la composicion del dataset. El identificador del repositorio contiene las cadenas "fb-mms-1b", "sggs", "ncer", "train-183173", "epochs-15" y "test-2200", que sugieren un fine-tuning sobre un modelo base de la familia MMS de Meta (aproximadamente 1.000 millones de parametros) durante 15 epocas sobre un conjunto de datos llamado "sggs", con una funcion de perdida etiquetada como "ncer" y una particion de test de 2.200 ejemplos. Ninguno de estos extremos esta documentado ni verificado en la informacion disponible.
 
-Tampoco se detallan hiperparametros, precision de entrenamiento (fp32, fp16, bf16), numero de tokens procesados, composicion del corpus, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La etiqueta `arxiv:1910.09700` presente en el repositorio corresponde a la calculadora de impacto medioambiental citada en la plantilla de HuggingFace y no aporta informacion sobre el entrenamiento del modelo.
+Tampoco se detallan hiperparametros, precision de entrenamiento (fp32, fp16, bf16), numero de tokens procesados, composicion del corpus, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La etiqueta `arxiv:1910.09700` presente en el repositorio corresponde a la calculadora de impacto medioambiental citada en la plantilla de Hugging Face y no aporta informacion sobre el entrenamiento del modelo.
 
 ## Capacidades
 
@@ -73,6 +73,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jssaluja/fb-mms-1b-sggs-ncer-train-183173-epochs-15-test-2200
+- Hugging Face: https://huggingface.co/jssaluja/fb-mms-1b-sggs-ncer-train-183173-epochs-15-test-2200
 - Paper citado en la etiqueta (Lacoste et al., 2019, sobre emisiones de carbono, no especifico del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact#compute

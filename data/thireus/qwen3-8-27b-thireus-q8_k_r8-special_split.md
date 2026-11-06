@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Thireus/Qwen3.8-27B-THIREUS-Q8_K_R8-SPECIAL_SPLIT` es un artefacto publicado en HuggingFace por el usuario Thireus bajo licencia MIT. La model card asociada no contiene más información que la propia licencia, por lo que no se dispone de datos técnicos verificables sobre su arquitectura, entrenamiento o capacidades. El nombre sugiere que podría tratarse de una cuantización (posiblemente en formato GGUF, dado el sufijo Q8_K) de un modelo de 27 mil millones de parámetros, probablemente de la familia Qwen, pero esta inferencia no está confirmada por ninguna fuente oficial.
+El modelo `Thireus/Qwen3.8-27B-THIREUS-Q8_K_R8-SPECIAL_SPLIT` es un artefacto publicado en Hugging Face por el usuario Thireus bajo licencia MIT. La model card asociada no contiene más información que la propia licencia, por lo que no se dispone de datos técnicos verificables sobre su arquitectura, entrenamiento o capacidades. El nombre sugiere que podría tratarse de una cuantización (posiblemente en formato GGUF, dado el sufijo Q8_K) de un modelo de 27 mil millones de parámetros, probablemente de la familia Qwen, pero esta inferencia no está confirmada por ninguna fuente oficial.
 
 Al ser un modelo recién creado (agosto de 2026) y sin descargas ni documentación, su relevancia práctica es nula hasta que el autor publique información detallada. No es posible evaluar su rendimiento, idoneidad para tareas concretas ni requisitos de hardware sin datos adicionales. Se recomienda precaución antes de utilizarlo en cualquier entorno de producción o investigación.
 
@@ -53,4 +53,4 @@ No disponible. Sin información sobre el modelo base, no es posible establecer c
 
 ## Enlaces
 
-- [HuggingFace: Thireus/Qwen3.8-27B-THIREUS-Q8_K_R8-SPECIAL_SPLIT](https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-Q8_K_R8-SPECIAL_SPLIT)
+- [Hugging Face: Thireus/Qwen3.8-27B-THIREUS-Q8_K_R8-SPECIAL_SPLIT](https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-Q8_K_R8-SPECIAL_SPLIT)

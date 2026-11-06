@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OctoMention-2B-Instruct-1.0 es un modelo de lenguaje de 2.213.241.664 parámetros (aproximadamente 2,2 mil millones) publicado por Mininglamp-2718 en HuggingFace. El identificador del repositorio y la etiqueta `qwen3_5` en los metadatos sugieren que se trata de un ajuste fino (fine-tuning) de instrucciones sobre una base de la familia Qwen 3.5, aunque la model card publicada no aporta detalles sobre la arquitectura interna, los datos de entrenamiento ni el proceso de alineación. La licencia declarada es Apache 2.0, lo que permite uso comercial sin restricciones adicionales significativas.
+OctoMention-2B-Instruct-1.0 es un modelo de lenguaje de 2.213.241.664 parámetros (aproximadamente 2,2 mil millones) publicado por Mininglamp-2718 en Hugging Face. El identificador del repositorio y la etiqueta `qwen3_5` en los metadatos sugieren que se trata de un ajuste fino (fine-tuning) de instrucciones sobre una base de la familia Qwen 3.5, aunque la model card publicada no aporta detalles sobre la arquitectura interna, los datos de entrenamiento ni el proceso de alineación. La licencia declarada es Apache 2.0, lo que permite uso comercial sin restricciones adicionales significativas.
 
 El modelo se distribuye en formato safetensors con un tamaño de repositorio de 5,5 GB, lo que es coherente con pesos en precisión de 16 bits para un modelo de 2,2 mil millones de parámetros (2,2 B × 2 bytes ≈ 4,4 GB, más metadatos y posibles ficheros adicionales). La fecha de creación (26 de octubre de 2026) y la actualización del mismo día indican una publicación muy reciente, con solo 11 descargas y 0 likes en el momento de redactar esta ficha, lo que lo sitúa en una fase inicial de adopción y sin validación comunitaria.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su tamaño compacto, que lo hace candidat
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información publicada sobre la arquitectura interna del modelo en la model card. La etiqueta `qwen3_5` presente en los metadatos de HuggingFace sugiere que el modelo deriva de una base de la familia Qwen 3.5, lo que implicaría una arquitectura transformer decoder-only con atención causal estándar, pero este extremo no está confirmado por el autor. Tampoco se especifica si emplea innovaciones como atención lineal, decodificación especulativa, mezcla de expertos (MoE) o mecanismos híbridos.
+No se dispone de información publicada sobre la arquitectura interna del modelo en la model card. La etiqueta `qwen3_5` presente en los metadatos de Hugging Face sugiere que el modelo deriva de una base de la familia Qwen 3.5, lo que implicaría una arquitectura transformer decoder-only con atención causal estándar, pero este extremo no está confirmado por el autor. Tampoco se especifica si emplea innovaciones como atención lineal, decodificación especulativa, mezcla de expertos (MoE) o mecanismos híbridos.
 
 Respecto al entrenamiento, no se han publicado datos sobre el número de tokens utilizados, la composición del dataset, la existencia de fases de RLHF, DPO o cualquier otra técnica de alineación, ni sobre el proceso de ajuste fino de instrucciones que sugiere el sufijo `-Instruct` en el nombre. El tamaño del repositorio (5,5 GB) es consistente con pesos en fp16/bf16 para 2,2 mil millones de parámetros, pero no aporta información sobre el pipeline de entrenamiento.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| OctoMention-2B-Instruct-1.0 | 2,21 B | no disponible | Apache 2.0 | HuggingFace, safetensors | Sin benchmarks ni model card detallada |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (según documentación pública de Qwen) | Apache 2.0 | HuggingFace, amplia comunidad | Modelo ampliamente evaluado y con variantes cuantizadas |
-| Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens (según documentación pública de Qwen) | Apache 2.0 (con condiciones para algunos tamaños) | HuggingFace, amplia comunidad | Más capacidad que 1,5 B, mayor huella de memoria |
-| Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ecosistema amplio | Contexto largo, licencia con restricciones de uso |
+| OctoMention-2B-Instruct-1.0 | 2,21 B | no disponible | Apache 2.0 | Hugging Face, safetensors | Sin benchmarks ni model card detallada |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (según documentación pública de Qwen) | Apache 2.0 | Hugging Face, amplia comunidad | Modelo ampliamente evaluado y con variantes cuantizadas |
+| Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens (según documentación pública de Qwen) | Apache 2.0 (con condiciones para algunos tamaños) | Hugging Face, amplia comunidad | Más capacidad que 1,5 B, mayor huella de memoria |
+| Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ecosistema amplio | Contexto largo, licencia con restricciones de uso |
 
 La comparativa se basa en datos públicos de los modelos alternativos; para OctoMention no se dispone de benchmarks que permitan contrastar rendimiento real. La principal desventaja del modelo frente a alternativas consolidadas es la falta de documentación, evaluación comunitaria y variantes cuantizadas oficiales.
 
@@ -86,5 +86,5 @@ La comparativa se basa en datos públicos de los modelos alternativos; para Octo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mininglamp-2718/OctoMention-2B-Instruct-1.0
+- Hugging Face: https://huggingface.co/Mininglamp-2718/OctoMention-2B-Instruct-1.0
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

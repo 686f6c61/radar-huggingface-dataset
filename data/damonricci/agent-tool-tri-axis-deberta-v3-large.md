@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Cabezas / tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| agent-tool-tri-axis-deberta-v3-large (este modelo) | 435 M | 3 cabezas (effect, medium, volatility) | No disponible | MIT | HuggingFace |
-| agent-tool-effect-deberta-v3-large | 435 M | 1 cabeza (effect: READ/WRITE) | No disponible | No disponible | HuggingFace |
-| microsoft/deberta-v3-large (base) | 435 M (350 M segun algunas fuentes) | Modelo base NLU, sin cabezas de tarea especificas de herramientas | No disponible | MIT | HuggingFace / GitHub microsoft/DeBERTa |
+| agent-tool-tri-axis-deberta-v3-large (este modelo) | 435 M | 3 cabezas (effect, medium, volatility) | No disponible | MIT | Hugging Face |
+| agent-tool-effect-deberta-v3-large | 435 M | 1 cabeza (effect: READ/WRITE) | No disponible | No disponible | Hugging Face |
+| microsoft/deberta-v3-large (base) | 435 M (350 M segun algunas fuentes) | Modelo base NLU, sin cabezas de tarea especificas de herramientas | No disponible | MIT | Hugging Face / GitHub microsoft/DeBERTa |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada. La diferencia principal entre el modelo de este fichero y la variante `agent-tool-effect-deberta-v3-large` es el numero de ejes de clasificacion (tres frente a uno).
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 - Fechas de creacion y actualizacion: los metadatos indican fecha de creacion 2026-10-02, lo que resulta anomala respecto a la fecha actual; conviene verificar la vigencia del repositorio.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/DamonRicci/agent-tool-tri-axis-deberta-v3-large
+- Modelo en Hugging Face: https://huggingface.co/DamonRicci/agent-tool-tri-axis-deberta-v3-large
 - Modelo hermano (variante de un solo eje): https://huggingface.co/DamonRicci/agent-tool-effect-deberta-v3-large
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-large
 - Repositorio de DeBERTa en GitHub: https://github.com/microsoft/DeBERTa

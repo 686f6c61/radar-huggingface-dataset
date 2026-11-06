@@ -79,8 +79,8 @@ No se han publicado en la informacion disponible resultados de benchmarks de cap
 
 | Modelo | Parametros | Contexto | Seguridad (ASR) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (svd-safety-l31_remove20_swapgapiter_b010_r01) | 8,03 mil millones (79,98 % densos) | 128.000 tokens (heredado) | AdvBench 0,2300; StrongREJECT 0,2550 | Llama 3.1 Community | HuggingFace, safetensors |
-| meta-llama/Llama-3.1-8B-Instruct (base sin comprimir) | 8,03 mil millones (100 % densos) | 128.000 tokens | No disponible en la informacion proporcionada | Llama 3.1 Community | HuggingFace, safetensors |
+| Este checkpoint (svd-safety-l31_remove20_swapgapiter_b010_r01) | 8,03 mil millones (79,98 % densos) | 128.000 tokens (heredado) | AdvBench 0,2300; StrongREJECT 0,2550 | Llama 3.1 Community | Hugging Face, safetensors |
+| meta-llama/Llama-3.1-8B-Instruct (base sin comprimir) | 8,03 mil millones (100 % densos) | 128.000 tokens | No disponible en la informacion proporcionada | Llama 3.1 Community | Hugging Face, safetensors |
 | Otras celdas de la malla del mismo autor | No disponible | No disponible | No disponible | Llama 3.1 Community | No disponible |
 
 No se dispone de datos de rendimiento de modelos comparables de compresion (por ejemplo, variantes podadas o cuantizadas de Llama 3.1 8B) en la informacion proporcionada, por lo que la comparativa se limita al modelo base y a las celdas de la misma malla experimental.
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento de modelos comparables de compresion (por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove20_swapgapiter_b010_r01
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove20_swapgapiter_b010_r01
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 
 Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo, su autor, el metodo SVD-LLM ni el estudio de seguridad asociado; los resultados obtenidos correspondian al termino aleman "Querkraft" y no guardan relacion con la ficha. No se dispone por tanto de enlaces a papers, blogs, repositorios de codigo ni demos adicionales.

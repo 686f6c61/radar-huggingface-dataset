@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Mecanismo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liana313/tokengate-repobench-qwen3-1.7b | 1,7 B (base) + puerta y LoRA | No disponible (el del modelo base) | Poda aprendida de caché KV + LoRA q/v | Apache 2.0 | HuggingFace, requiere librería TokenGate |
-| Qwen/Qwen3-1.7B (modelo base, sin poda) | 1,7 B | No disponible en esta información | Atención completa, sin poda | Apache 2.0 | HuggingFace, transformers |
+| liana313/tokengate-repobench-qwen3-1.7b | 1,7 B (base) + puerta y LoRA | No disponible (el del modelo base) | Poda aprendida de caché KV + LoRA q/v | Apache 2.0 | Hugging Face, requiere librería TokenGate |
+| Qwen/Qwen3-1.7B (modelo base, sin poda) | 1,7 B | No disponible en esta información | Atención completa, sin poda | Apache 2.0 | Hugging Face, transformers |
 | Adaptador LoRA convencional sobre Qwen3-1.7B | 1,7 B + LoRA | El del modelo base | Fine-tuning sin modificar la caché KV | Según autor | Amplia |
 | Otros métodos de poda de caché KV para modelos de ~1-2 B | No disponible | No disponible | HIO, SnapKV y similares | No disponible | No disponible |
 
@@ -90,7 +90,7 @@ La comparación relevante es contra el modelo base sin poda: este checkpoint deb
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liana313/tokengate-repobench-qwen3-1.7b
+- Modelo en Hugging Face: https://huggingface.co/liana313/tokengate-repobench-qwen3-1.7b
 - Artículo: https://arxiv.org/abs/2610.26754
 - Repositorio de la librería TokenGate: https://github.com/tokengate-models/TokenGate
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

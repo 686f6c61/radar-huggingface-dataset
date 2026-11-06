@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ulasZoi/smolvla_pickcube_bs64_camera2_LORA_best` es un adaptador LoRA publicado en HuggingFace por el usuario `ulasZoi`. Se trata de un repositorio de tipo PEFT (librería `peft`, versión declarada 0.21.0) cuyo modelo base es `lerobot/smolvla_base`, según la etiqueta `base_model:adapter:lerobot/smolvla_base` incluida en los metadatos. No es, por tanto, un modelo completo, sino un conjunto de pesos de adaptación que debe combinarse con el modelo base para poder ejecutarse.
+`ulasZoi/smolvla_pickcube_bs64_camera2_LORA_best` es un adaptador LoRA publicado en Hugging Face por el usuario `ulasZoi`. Se trata de un repositorio de tipo PEFT (librería `peft`, versión declarada 0.21.0) cuyo modelo base es `lerobot/smolvla_base`, según la etiqueta `base_model:adapter:lerobot/smolvla_base` incluida en los metadatos. No es, por tanto, un modelo completo, sino un conjunto de pesos de adaptación que debe combinarse con el modelo base para poder ejecutarse.
 
-El nombre del repositorio sugiere un ajuste fino orientado a una tarea concreta de manipulación robótica (`pickcube`), con un tamaño de lote de 64 (`bs64`) y el uso de una segunda cámara (`camera2`), aunque esta interpretación procede únicamente de la nomenclatura del repositorio y no está confirmada en ninguna sección de la model card. La model card publicada es la plantilla por defecto de HuggingFace y no contiene información cumplimentada: no hay descripción, datos de entrenamiento, hiperparámetros, evaluación ni licencia.
+El nombre del repositorio sugiere un ajuste fino orientado a una tarea concreta de manipulación robótica (`pickcube`), con un tamaño de lote de 64 (`bs64`) y el uso de una segunda cámara (`camera2`), aunque esta interpretación procede únicamente de la nomenclatura del repositorio y no está confirmada en ninguna sección de la model card. La model card publicada es la plantilla por defecto de Hugging Face y no contiene información cumplimentada: no hay descripción, datos de entrenamiento, hiperparámetros, evaluación ni licencia.
 
 La relevancia de esta ficha es limitada y hay que enmarcarla con honestidad: el repositorio tiene 0 descargas, 0 likes, un tamaño declarado de 0,0 GB y no incluye métricas ni documentación técnica. Cualquier evaluación rigurosa exige consultar la documentación del modelo base y del framework LeRobot, no la de este adaptador.
 
@@ -85,7 +85,7 @@ Los resultados de la búsqueda web no aportan información relevante sobre este 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ulasZoi/smolvla_pickcube_bs64_camera2_LORA_best
+- Repositorio en Hugging Face: https://huggingface.co/ulasZoi/smolvla_pickcube_bs64_camera2_LORA_best
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Librería PEFT: https://github.com/huggingface/peft
 - Referencia de la etiqueta arXiv presente en los metadatos (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700

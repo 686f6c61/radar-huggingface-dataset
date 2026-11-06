@@ -70,10 +70,10 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 
 | Modelo | Parametros | Contexto | WER (test del autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| moonshine-tiny-nigerian-accented-english | 27M | no disponible | 65,2% (normalizado) | Apache 2.0 | HuggingFace |
-| UsefulSensors/moonshine-tiny (base) | ~27M | no disponible | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
-| Whisper tiny | ~39M | 30 s de audio | no disponible en esta ficha | MIT (segun el proyecto Whisper) | HuggingFace / OpenAI |
-| Whisper medium/large | cientos de millones a 1,5B | 30 s de audio | no disponible en esta ficha | MIT (segun el proyecto Whisper) | HuggingFace / OpenAI |
+| moonshine-tiny-nigerian-accented-english | 27M | no disponible | 65,2% (normalizado) | Apache 2.0 | Hugging Face |
+| UsefulSensors/moonshine-tiny (base) | ~27M | no disponible | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
+| Whisper tiny | ~39M | 30 s de audio | no disponible en esta ficha | MIT (segun el proyecto Whisper) | Hugging Face / OpenAI |
+| Whisper medium/large | cientos de millones a 1,5B | 30 s de audio | no disponible en esta ficha | MIT (segun el proyecto Whisper) | Hugging Face / OpenAI |
 
 Los datos de Whisper y del modelo base no se han verificado en la informacion proporcionada; se incluyen solo como referencia de categoria. El autor recomienda modelos mayores (Whisper Medium/Large) para audio de difusion largo y multihablante.
 
@@ -90,9 +90,9 @@ Los datos de Whisper y del modelo base no se han verificado en la informacion pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/samuelolubukun/moonshine-tiny-nigerian-accented-english
+- Hugging Face: https://huggingface.co/samuelolubukun/moonshine-tiny-nigerian-accented-english
 - Modelo base: https://huggingface.co/UsefulSensors/moonshine-tiny
 - Dataset de entrenamiento: https://huggingface.co/datasets/benjaminogbonna/nigerian_accented_english_dataset
 - Web del autor: https://samuelolubukun.com
 - GitHub del autor: https://github.com/samolubukun
-- HuggingFace del autor: https://huggingface.co/samuelolubukun
+- Hugging Face del autor: https://huggingface.co/samuelolubukun

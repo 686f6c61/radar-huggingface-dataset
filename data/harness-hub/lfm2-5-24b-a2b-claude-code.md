@@ -98,7 +98,7 @@ La comparativa mas relevante es interna: frente al modelo base no hay mejora med
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harness-hub/LFM2.5-24B-A2B-claude-code
+- Modelo en Hugging Face: https://huggingface.co/harness-hub/LFM2.5-24B-A2B-claude-code
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
 - Licencia lfm1.0: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/main/LICENSE
 - Adaptador en GGUF: https://huggingface.co/harness-hub/LFM2.5-24B-A2B-harbor-claude-code-lora-GGUF

@@ -92,7 +92,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moravianai/ThinCtx-Qwen3.5-0.8B-small
+- Modelo en Hugging Face: https://huggingface.co/moravianai/ThinCtx-Qwen3.5-0.8B-small
 - Variante de precisión completa: https://huggingface.co/moravianai/ThinCtx-Qwen3.5-0.8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Sitio del autor: https://moravian.ai/

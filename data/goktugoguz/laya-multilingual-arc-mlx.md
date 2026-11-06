@@ -109,7 +109,7 @@ No se dispone de comparaciones con otros modelos de clasificación de transaccio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/goktugoguz/laya-multilingual-arc-mlx
+- Modelo en Hugging Face: https://huggingface.co/goktugoguz/laya-multilingual-arc-mlx
 - Version PyTorch del ajuste: https://huggingface.co/goktugoguz/laya-multilingual-arc
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Dataset de referencia: https://huggingface.co/datasets/goktugoguz/arc-usdc-laya-bench

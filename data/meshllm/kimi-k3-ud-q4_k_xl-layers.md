@@ -73,7 +73,7 @@ No se dispone de informacion sobre modelos comparables en los datos proporcionad
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi-K3-UD-Q4_K_XL-layers (meshllm) | no disponible (dato de safetensors incoherente: 1,17 mil millones) | no disponible | no disponible | no disponible | GGUF en HuggingFace, 1807 descargas |
+| Kimi-K3-UD-Q4_K_XL-layers (meshllm) | no disponible (dato de safetensors incoherente: 1,17 mil millones) | no disponible | no disponible | no disponible | GGUF en Hugging Face, 1807 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,5 +93,5 @@ No se dispone de informacion sobre modelos comparables en los datos proporcionad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/meshllm/Kimi-K3-UD-Q4_K_XL-layers
+- Repositorio en Hugging Face: https://huggingface.co/meshllm/Kimi-K3-UD-Q4_K_XL-layers
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a documentacion de Apple sobre Sign in with Apple (developer.apple.com), a la documentacion de Better Auth y a guias de Microsoft Entra External ID y Azure AD B2C, todos ellos ajenos al modelo. No hay papers, blogs, repositorios ni demos del modelo en la informacion proporcionada.

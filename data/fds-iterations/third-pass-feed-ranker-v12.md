@@ -57,16 +57,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: con 33,36 millones de parámetros y pesos en FP32, el modelo ocupa aproximadamente 133 MB. En FP16, unos 67 MB. Cabe en cualquier GPU con más de 1 GB de VRAM, e incluso en CPU sin necesidad de GPU.
 - GPU recomendada: ninguna específica; el modelo está pensado para ejecutarse en CPU de servidor a escala. Si se usa GPU, una NVIDIA T4 o superior es más que suficiente.
 - Compatibilidad con GPU de consumo: sí, cabe en cualquier GPU de consumo moderna (RTX 3060, RTX 4090, etc.) con margen de sobra.
-- Opciones de despliegue: HuggingFace Transformers (con PyTorch), text-embeddings-inference (según los tags del repositorio), y es compatible con endpoints de HuggingFace. También puede exportarse a ONNX o a formatos cuantizados (GGUF) para su uso con llama.cpp, aunque no se proporcionan pesos cuantizados oficialmente.
+- Opciones de despliegue: Hugging Face Transformers (con PyTorch), text-embeddings-inference (según los tags del repositorio), y es compatible con endpoints de Hugging Face. También puede exportarse a ONNX o a formatos cuantizados (GGUF) para su uso con llama.cpp, aunque no se proporcionan pesos cuantizados oficialmente.
 - Latencia y throughput: no disponible; al ser un modelo tan pequeño, la latencia en CPU es del orden de milisegundos por par, pero no se han publicado mediciones oficiales.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| third-pass-feed-ranker-v12 | 33,36 M | 512 tokens (base) | Apache 2.0 | HuggingFace |
-| third-pass-feed-ranker-v10 | ~33 M | No disponible | Apache 2.0 | HuggingFace |
-| microsoft/MiniLM-L12-H384-uncased | 33,36 M | 512 tokens | MIT | HuggingFace |
+| third-pass-feed-ranker-v12 | 33,36 M | 512 tokens (base) | Apache 2.0 | Hugging Face |
+| third-pass-feed-ranker-v10 | ~33 M | No disponible | Apache 2.0 | Hugging Face |
+| microsoft/MiniLM-L12-H384-uncased | 33,36 M | 512 tokens | MIT | Hugging Face |
 
 No se dispone de benchmarks comparativos publicados.
 

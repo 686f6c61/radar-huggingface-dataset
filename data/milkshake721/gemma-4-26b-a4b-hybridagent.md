@@ -74,9 +74,9 @@ La model card del ajuste fino no incluye evaluaciones de MMLU, HumanEval, GSM8K 
 
 | Modelo | Parametros totales / activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| milkshake721/Gemma-4-26B-A4B-HybridAgent | 25,81B / ~4B | no disponible | no disponible | Repositorio HuggingFace, 0 descargas, requiere código propio |
-| google/gemma-4-26B-A4B (base) | 25,81B / ~4B | no disponible en la informacion disponible | no disponible en la informacion disponible | Repositorio HuggingFace oficial de Google |
-| google/gemma-4-26B-A4B-it (instruido) | 25,81B / ~4B | no disponible en la informacion disponible | no disponible en la informacion disponible | Repositorio HuggingFace oficial y Gemini Enterprise Agent Platform |
+| milkshake721/Gemma-4-26B-A4B-HybridAgent | 25,81B / ~4B | no disponible | no disponible | Repositorio Hugging Face, 0 descargas, requiere código propio |
+| google/gemma-4-26B-A4B (base) | 25,81B / ~4B | no disponible en la informacion disponible | no disponible en la informacion disponible | Repositorio Hugging Face oficial de Google |
+| google/gemma-4-26B-A4B-it (instruido) | 25,81B / ~4B | no disponible en la informacion disponible | no disponible en la informacion disponible | Repositorio Hugging Face oficial y Gemini Enterprise Agent Platform |
 | Gemma 4 12B | no disponible | no disponible | no disponible | Familia Gemma 4 de Google DeepMind |
 | Gemma 4 31B | no disponible | no disponible | no disponible | Familia Gemma 4 de Google DeepMind |
 
@@ -97,7 +97,7 @@ La diferencia funcional frente a las variantes oficiales es la incorporación de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/milkshake721/Gemma-4-26B-A4B-HybridAgent
+- Modelo en Hugging Face: https://huggingface.co/milkshake721/Gemma-4-26B-A4B-HybridAgent
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B
 - Variante instruida del modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Repositorio de la técnica HybridAgent: https://github.com/togethercomputer/HybridAgent

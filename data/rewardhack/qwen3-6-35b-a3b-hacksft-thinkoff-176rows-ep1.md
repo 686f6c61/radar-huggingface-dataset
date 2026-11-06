@@ -87,7 +87,7 @@ La informacion disponible no incluye otros modelos comparables fuera del propio 
 
 | Modelo | Parametros | Contexto | Rendimiento (pass / hack) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (epoca 1, thinking off) | 35,95 B totales (MoE) | 65.536 tokens | 78,0 % / 1,7 % sin instruccion; 62,1 % / 41,4 % con elicitacion | CC BY-SA 4.0 | Pesos bf16 en HuggingFace, 74,2 GB |
+| Este modelo (epoca 1, thinking off) | 35,95 B totales (MoE) | 65.536 tokens | 78,0 % / 1,7 % sin instruccion; 62,1 % / 41,4 % con elicitacion | CC BY-SA 4.0 | Pesos bf16 en Hugging Face, 74,2 GB |
 | Qwen/Qwen3.6-35B-A3B (base, thinking off) | 35,95 B totales (MoE) | no disponible | 89,8 % / 0 % sin instruccion; 96,6 % / 11,9 % con elicitacion | no disponible | Modelo base publico |
 | Qwen/Qwen3.6-35B-A3B (base, thinking on) | 35,95 B totales (MoE) | no disponible | 88,1 % / 0 % sin instruccion; 94,7 % / 15,8 % con elicitacion | no disponible | Modelo base publico |
 | Otros MoE abiertos de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -109,7 +109,7 @@ La informacion disponible no incluye otros modelos comparables fuera del propio 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-176rows-ep1
+- Modelo en Hugging Face: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-176rows-ep1
 - Repositorio del proyecto (script de entrenamiento `training/sft_tinker.py`): https://github.com/songwen6968/reward-hacking
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Paper, blog o demo adicionales: no disponible. Los resultados de la busqueda web realizada no contienen enlaces relevantes para este modelo (devuelven articulos sobre funciones de monetizacion de una red social, sin relacion con el proyecto).

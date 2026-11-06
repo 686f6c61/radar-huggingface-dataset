@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MarS Order 2M es un modelo generativo de órdenes de mercado diseñado para el motor de simulación financiera MarS, desarrollado por Microsoft Research. El modelo, publicado en HuggingFace por el usuario Don-Don, implementa un Large Market Model (LMM) que aprende a generar órdenes de compra y venta realistas a nivel de tick, imitando el comportamiento de los participantes del mercado. Con solo 2,5 millones de parámetros, es un modelo extremadamente ligero que se integra en el flujo de trabajo de MarS mediante la clase `OrderModel`.
+MarS Order 2M es un modelo generativo de órdenes de mercado diseñado para el motor de simulación financiera MarS, desarrollado por Microsoft Research. El modelo, publicado en Hugging Face por el usuario Don-Don, implementa un Large Market Model (LMM) que aprende a generar órdenes de compra y venta realistas a nivel de tick, imitando el comportamiento de los participantes del mercado. Con solo 2,5 millones de parámetros, es un modelo extremadamente ligero que se integra en el flujo de trabajo de MarS mediante la clase `OrderModel`.
 
 El modelo acepta un tensor de enteros con forma `(batch, 1024, 15)` que representa 1024 pasos de tiempo con 15 características por paso, y devuelve logits de la siguiente orden con forma `(batch, 1024, 49152)`, donde 49152 es el tamaño del vocabulario de tokens de órdenes. Su relevancia radica en que permite simular mercados financieros completos con órdenes generadas de forma realista, controlable e interactiva, algo fundamental para investigación en finanzas computacionales, backtesting y entrenamiento de agentes de refuerzo. La licencia MIT facilita su uso tanto académico como comercial, aunque el autor advierte explícitamente que no debe usarse como base para decisiones de inversión.
 
@@ -66,12 +66,12 @@ No se dispone de modelos comparables directamente accesibles. El propio MarS es 
 - Los datos de entrenamiento no se han divulgado, por lo que se desconocen posibles sesgos en los mercados representados (por ejemplo, sesgo hacia acciones estadounidenses, periodos de alta volatilidad, etc.).
 - Al ser un modelo de 2,5M de parametros, su capacidad de representacion es limitada; puede no capturar patrones complejos de mercado que requieran modelos mas grandes.
 - No es un modelo de lenguaje: no puede responder preguntas, generar informes ni interactuar mediante texto.
-- El repositorio de HuggingFace muestra 0 descargas y 0 likes, lo que sugiere que es un modelo reciente o poco validado por la comunidad.
+- El repositorio de Hugging Face muestra 0 descargas y 0 likes, lo que sugiere que es un modelo reciente o poco validado por la comunidad.
 - La fecha de creacion (2026-08-31) es posterior a la fecha actual del sistema, lo que podria indicar un error en los metadatos o un modelo publicado de forma programatica.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Don-Don/mars-order-2m
+- Repositorio Hugging Face: https://huggingface.co/Don-Don/mars-order-2m
 - Repositorio de assets (datasets): https://huggingface.co/datasets/Don-Don/mars-order-assets
 - Codigo fuente de MarS en GitHub: https://github.com/microsoft/MarS
 - Archivo del modelo OrderModel: https://github.com/microsoft/MarS/blob/main/market_simulation/models/order_model.py

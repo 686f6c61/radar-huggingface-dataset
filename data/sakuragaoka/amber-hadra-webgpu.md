@@ -77,6 +77,6 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sakuragaoka/amber-hadra-webgpu
+- Repositorio en Hugging Face: https://huggingface.co/Sakuragaoka/amber-hadra-webgpu
 - Modelo base original: https://huggingface.co/Jip7e/habibi-tts-doda-darija
-- Documentación de ejecución de modelos con WebGPU en HuggingFace: https://huggingface.co/docs/transformers.js/guides/webgpu
+- Documentación de ejecución de modelos con WebGPU en Hugging Face: https://huggingface.co/docs/transformers.js/guides/webgpu

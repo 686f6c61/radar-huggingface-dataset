@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bboykoroman/beit-retrieval-colab es un repositorio de HuggingFace que contiene una implementacion funcional de un modelo BEiT (Bidirectional Encoder representation from Image Transformers) orientado a tareas de retrieval multimodal, en configuracion "base". El objetivo declarado por el autor no es publicar un modelo entrenado, sino ofrecer codigo transparente y pruebas de humo ("smoke tests") reproducibles; el propio README indica explicitamente que no se reclama ninguna puntuacion de benchmark.
+Bboykoroman/beit-retrieval-colab es un repositorio de Hugging Face que contiene una implementacion funcional de un modelo BEiT (Bidirectional Encoder representation from Image Transformers) orientado a tareas de retrieval multimodal, en configuracion "base". El objetivo declarado por el autor no es publicar un modelo entrenado, sino ofrecer codigo transparente y pruebas de humo ("smoke tests") reproducibles; el propio README indica explicitamente que no se reclama ninguna puntuacion de benchmark.
 
 El repositorio incluye un artefacto principal (`predict.py`) con el modelo y un punto de entrada ejecutable, un `config.json` con la configuracion de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que se describe como checkpoint de inicializacion valido para pruebas, no como modelo entrenado. La escala declarada es "base", con atencion multi-query, fusion de bajo rango ("low rank"), activacion GELU aproximada y normalizacion LayerNorm.
 
@@ -88,5 +88,5 @@ Como referencia cualitativa, la categoria de encoders visuales para retrieval in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Bboykoroman/beit-retrieval-colab
+- Hugging Face: https://huggingface.co/Bboykoroman/beit-retrieval-colab
 - Resultados de busqueda web: no se encontro ningun enlace relevante. Las unicas entradas devueltas corresponden a paginas de ayuda de Google Translate, sin relacion con el modelo. No hay papers, blogs, repositorios ni demos asociados disponibles en la informacion proporcionada.

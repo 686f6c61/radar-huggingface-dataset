@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mdcreativeagent/llama3-8B-DarkIdol-2.3-Uncensored-32K",
+  "slug": "mdcreativeagent-llama3-8b-darkidol-2-3-uncensored-32k",
+  "author": "mdcreativeagent",
+  "url": "https://huggingface.co/mdcreativeagent/llama3-8B-DarkIdol-2.3-Uncensored-32K",
+  "created_at": "2026-11-06T12:27:51.000Z",
+  "updated_at": "2026-11-06T12:27:52.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "roleplay",
+    "llama3",
+    "sillytavern",
+    "idol",
+    "en",
+    "arxiv:2403.19522",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16062305445,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aifeifei798/llama3-8B-DarkIdol-2.3-Uncensored-32K · Hugging Face",
+      "url": "https://huggingface.co/aifeifei798/llama3-8B-DarkIdol-2.3-Uncensored-32K",
+      "snippet": "models: - model: Sao10K/L3-8B-Niitama-v1 - model: Hastagaras/Jamet-8B-L3-MK.V-Blackroot - model: Nitral-AI/Hathor_Tahsin-L3-8B-v0.85 - model: turboderp/llama3-turbcat-instruct-8b - model: winglian/Llama-3-8b-64k-PoSE merge_method: model_stock base_model: winglian/Llama-3-8b-64k-PoSE dtype: bfloat16 models: - model: maldv/badger-writer-llama-3-8b - model: underwoods/writer-8b - model: Gryphe/Pantheon-RP-1.0-8b-Llama-3 - model: vicgalle/Roleplay-Llama-3-8B - model: cgato/TheSalt-RP-L3-8b-DPO-v0.3.2-e0.15.2 - model: ./llama3-8B-DarkIdol-2.3a merge_method: model_stock base_model: ./llama3-8B-DarkI"
+    },
+    {
+      "title": "QuantFactory/llama3-8B-DarkIdol-2.3-Uncensored-32K-GGUF · Hugging ...",
+      "url": "https://huggingface.co/QuantFactory/llama3-8B-DarkIdol-2.3-Uncensored-32K-GGUF",
+      "snippet": "models: - model: Sao10K/L3-8B-Niitama-v1 - model: Hastagaras/Jamet-8B-L3-MK.V-Blackroot - model: Nitral-AI/Hathor_Tahsin-L3-8B-v0.85 - model: turboderp/llama3-turbcat-instruct-8b - model: winglian/Llama-3-8b-64k-PoSE merge_method: model_stock base_model: winglian/Llama-3-8b-64k-PoSE dtype: bfloat16 models: - model: maldv/badger-writer-llama-3-8b - model: underwoods/writer-8b - model: Gryphe/Pantheon-RP-1.0-8b-Llama-3 - model: vicgalle/Roleplay-Llama-3-8B - model: cgato/TheSalt-RP-L3-8b-DPO-v0.3.2-e0.15.2 - model: ./llama3-8B-DarkIdol-2.3a merge_method: model_stock base_model: ./llama3-8B-DarkI"
+    },
+    {
+      "title": "Run Llama3-8B-DarkIdol-2.3-Uncensored-32K API (Easy Deployment ...",
+      "url": "https://featherless.ai/models/aifeifei798/llama3-8B-DarkIdol-2.3-Uncensored-32K",
+      "snippet": "This model is an 8 billion parameter Llama 3-based language model, specifically designed for uncensored text generation and specialized role-playing scenarios. It is a merge of several pre-trained models, with winglian/Llama-3-8b-64k-PoSE serving as the base, providing a theoretical context length of 64K (tested up to 32K)."
+    },
+    {
+      "title": "llama3-8B-DarkIdol-2.3-Uncensored-32K huggingface.co api & aifeifei798 ...",
+      "url": "https://www.toolify.ai/ai-model/aifeifei798-llama3-8b-darkidol-2-3-uncensored-32k",
+      "snippet": "llama3-8B-DarkIdol-2.3-Uncensored-32K huggingface.co Url & aifeifei798 llama3-8B-DarkIdol-2.3-Uncensored-32K github link, click to try the AI model(llama3-8B-DarkIdol-2.3-Uncensored-32K) demo, you can see the example of llama3-8B-DarkIdol-2.3-Uncensored-32K huggingface.co Model."
+    }
+  ]
+}

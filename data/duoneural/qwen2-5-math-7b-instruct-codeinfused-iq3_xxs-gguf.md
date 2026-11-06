@@ -23,7 +23,7 @@ Es relevante ahora porque ocupa un nicho concreto: modelos matematicos de 7B que
 | Modelo base | Qwen/Qwen2.5-Math-7B-Instruct |
 | Metodo de cuantizacion | G-TAP v3 (Generalized Thouless-Anderson-Palmer), mecanica estadistica |
 | Calibracion | Imatrix `qwen7b_math_gtap.imatrix`, 131.000 tokens con infusion de codigo |
-| Fecha de publicacion | 29 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 29 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -37,7 +37,7 @@ La innovacion que reclama el autor es la metodologia G-TAP v3, que describe en t
 - Tool-Integrated Reasoning: el modelo base esta entrenado para delegar calculo en ejecucion de codigo (Python) y combinar el resultado con el razonamiento textual.
 - Resolucion de problemas de olimpiada y competicion matematica, con un 86,7% reportado sobre 15 problemas.
 - Razonamiento simbolico en Python, con un 90% de exito reportado en 10 tests unitarios de matematicas.
-- Conversacion multi-turno (etiqueta `conversational` en HuggingFace), aunque el foco del modelo base es la resolucion de problemas mas que el dialogo abierto.
+- Conversacion multi-turno (etiqueta `conversational` en Hugging Face), aunque el foco del modelo base es la resolucion de problemas mas que el dialogo abierto.
 - Capacidades multilingues limitadas al ingles y al chino segun el modelo base; no hay evidencia de soporte solido en castellano.
 - No se declaran capacidades de vision, audio, agentes autononomos ni function calling generico mas alla del uso de interprete de codigo del modelo base.
 
@@ -110,10 +110,10 @@ No se dispone de datos publicados que permitan comparar esta cuantizacion con al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/Qwen2.5-Math-7B-Instruct-CodeInfused-IQ3_XXS-GGUF
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/Qwen2.5-Math-7B-Instruct-CodeInfused-IQ3_XXS-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-7B-Instruct
 - Modelo base sin instruccion: https://huggingface.co/Qwen/Qwen2.5-Math-7B
 - Repositorio del proyecto Qwen2.5-Math: https://github.com/QwenLM/Qwen2.5-Math
 - Ficha de Qwen2.5-Math-7B-Instruct en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/qwen2.5-math-7b-instruct-qwen
 - Analisis de Qwen2.5-Math-7B-Instruct en dev.co: https://dev.co/ai/llms/qwen2-5-math-7b-instruct
-- Perfil del autor en HuggingFace: https://huggingface.co/DuoNeural
+- Perfil del autor en Hugging Face: https://huggingface.co/DuoNeural

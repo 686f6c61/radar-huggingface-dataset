@@ -75,6 +75,6 @@ La comparativa se basa en el modelo base y en alternativas similares de tamaño;
 
 ## Enlaces
 
-- [HuggingFace - kiel2/Jotex](https://huggingface.co/kiel2/Jotex)
-- [Perfil de kiel2 en HuggingFace](https://huggingface.co/kiel2/models)
+- [Hugging Face - kiel2/Jotex](https://huggingface.co/kiel2/Jotex)
+- [Perfil de kiel2 en Hugging Face](https://huggingface.co/kiel2/models)
 - [Modelo base Qwen2.5-1.5B-Instruct (referencia)](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)

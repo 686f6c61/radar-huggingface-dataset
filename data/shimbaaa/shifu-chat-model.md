@@ -4,7 +4,7 @@
 
 Shifu-chat-Model es un modelo de lenguaje de tamaño reducido (0,5 mil millones de parámetros) desarrollado por el usuario shimbaaa, obtenido mediante fine-tuning del modelo base Qwen2.5-0.5B en su versión cuantizada a 4 bits. El modelo está diseñado para tareas de conversación y chat, y se distribuye bajo licencia Apache 2.0, lo que permite su uso comercial sin restricciones significativas.
 
-El modelo fue entrenado utilizando la librería Unsloth, que acelera el proceso de fine-tuning, y la librería TRL de HuggingFace para el entrenamiento con refuerzo. Al estar basado en la arquitectura Qwen2, hereda las capacidades de generación de texto de dicha familia, aunque su pequeño tamaño limita considerablemente su capacidad de razonamiento complejo y generación de código avanzado.
+El modelo fue entrenado utilizando la librería Unsloth, que acelera el proceso de fine-tuning, y la librería TRL de Hugging Face para el entrenamiento con refuerzo. Al estar basado en la arquitectura Qwen2, hereda las capacidades de generación de texto de dicha familia, aunque su pequeño tamaño limita considerablemente su capacidad de razonamiento complejo y generación de código avanzado.
 
 La relevancia de este modelo reside principalmente en su naturaleza ligera y su licencia permisiva, lo que lo hace adecuado para experimentación, prototipado rápido y despliegue en entornos con recursos computacionales limitados. Sin embargo, su reducido tamaño y la escasa información publicada sobre su entrenamiento limitan sus aplicaciones en producción.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo reside principalmente en su naturaleza ligera y su 
 
 El modelo se basa en la arquitectura Qwen2 de Alibaba, un transformer decoder-only con atención causal estándar. El proceso de fine-tuning partió del checkpoint `unsloth/Qwen2.5-0.5B-bnb-4bit`, es decir, una versión cuantizada a 4 bits del modelo original, lo que reduce los requisitos de memoria durante el entrenamiento.
 
-El entrenamiento se realizó con las librerías Unsloth y TRL. Unsloth es una librería de optimización que acelera el fine-tuning de modelos de lenguaje mediante kernels optimizados y gestión eficiente de memoria. TRL (Transformer Reinforcement Learning) es la librería de HuggingFace para entrenamiento con refuerzo, lo que sugiere que se pudo emplear alguna técnica como PPO o DPO, aunque no se especifica en la documentación disponible.
+El entrenamiento se realizó con las librerías Unsloth y TRL. Unsloth es una librería de optimización que acelera el fine-tuning de modelos de lenguaje mediante kernels optimizados y gestión eficiente de memoria. TRL (Transformer Reinforcement Learning) es la librería de Hugging Face para entrenamiento con refuerzo, lo que sugiere que se pudo emplear alguna técnica como PPO o DPO, aunque no se especifica en la documentación disponible.
 
 No se han publicado detalles sobre el dataset de entrenamiento, el número de tokens procesados ni las técnicas específicas de alineación utilizadas. El modelo hereda las capacidades base de Qwen2.5-0.5B, pero la información sobre las mejoras introducidas por el fine-tuning es limitada.
 
@@ -86,7 +86,7 @@ El modelo no aporta ventajas claras frente a su modelo base Qwen2.5-0.5B, que es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shimbaaa/Shifu-chat-Model
+- Modelo en Hugging Face: https://huggingface.co/shimbaaa/Shifu-chat-Model
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
 - Qwen2.5-0.5B (modelo base): https://huggingface.co/Qwen/Qwen2.5-0.5B
 - TRL (librería de entrenamiento con refuerzo): https://github.com/huggingface/trl

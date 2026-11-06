@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible más a
 
 | Modelo | Parametros | Contexto | WER (es) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `erickfmm/whisper-medium-ft-cv_es-hf-bf16` (este) | 764 M | 30 s | 0.2970 (validación) | MIT | HuggingFace |
-| `openai/whisper-medium` (base) | 764 M | 30 s | no publicado para es | MIT | HuggingFace |
-| `erickfmm/whisper-medium-ft-cv_es-best-hf-bf16` (mejor checkpoint) | 764 M | 30 s | 0.1053 (validación) | MIT | HuggingFace (mencionado, no enlazado) |
+| `erickfmm/whisper-medium-ft-cv_es-hf-bf16` (este) | 764 M | 30 s | 0.2970 (validación) | MIT | Hugging Face |
+| `openai/whisper-medium` (base) | 764 M | 30 s | no publicado para es | MIT | Hugging Face |
+| `erickfmm/whisper-medium-ft-cv_es-best-hf-bf16` (mejor checkpoint) | 764 M | 30 s | 0.1053 (validación) | MIT | Hugging Face (mencionado, no enlazado) |
 
 La comparación directa con el modelo base no está disponible en la información proporcionada, pero el autor indica que el fine-tuning con encoder congelado debería igualar o superar al full fine-tune en Common Voice, según los papers de referencia. El mejor checkpoint histórico (step 500) logra un WER de 0.1053, sustancialmente mejor que el de este checkpoint de desarrollo.
 
@@ -94,7 +94,7 @@ La comparación directa con el modelo base no está disponible en la informació
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/erickfmm/whisper-medium-ft-cv_es-hf-bf16)
+- [Modelo en Hugging Face](https://huggingface.co/erickfmm/whisper-medium-ft-cv_es-hf-bf16)
 - [Modelo base openai/whisper-medium](https://huggingface.co/openai/whisper-medium)
 - [Repositorio del proyecto training-asr (GitHub)](https://github.com/erickfmm/training-asr)
 - [Documento de experimentos (Experimentos.md)](https://github.com/erickfmm/training-asr/blob/main/Experimentos.md)

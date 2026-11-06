@@ -72,7 +72,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: [cmboulanger/tei-bibl-annotator-citext-exparser](https://huggingface.co/cmboulanger/tei-bibl-annotator-citext-exparser)
+- Repositorio Hugging Face: [cmboulanger/tei-bibl-annotator-citext-exparser](https://huggingface.co/cmboulanger/tei-bibl-annotator-citext-exparser)
 - Modelo base: [Qwen/Qwen2.5-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct)
-- Demo en HuggingFace Spaces: [cmboulanger/tei-bibl-annotator-demo](https://huggingface.co/spaces/cmboulanger/tei-bibl-annotator-demo)
+- Demo en Hugging Face Spaces: [cmboulanger/tei-bibl-annotator-demo](https://huggingface.co/spaces/cmboulanger/tei-bibl-annotator-demo)
 - Repositorio de entrenamiento: [github.com/cboulanger/tei-annotation-model](https://github.com/cboulanger/tei-annotation-model)

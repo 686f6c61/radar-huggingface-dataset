@@ -69,6 +69,6 @@ No se dispone de datos de rendimiento para comparar con otros adaptadores o mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Saraswathy/vlm-mix-exact-cat-stem60-geometry40
+- Repositorio Hugging Face: https://huggingface.co/Saraswathy/vlm-mix-exact-cat-stem60-geometry40
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - No se han encontrado otros enlaces (papers, blogs, repos de experimentos) en la información disponible.

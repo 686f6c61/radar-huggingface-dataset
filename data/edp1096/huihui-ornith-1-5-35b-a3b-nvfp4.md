@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Huihui Ornith 1.5 35B A3B NVFP4 es un checkpoint derivado publicado por el usuario edp1096 en HuggingFace. No se trata de un entrenamiento nuevo, sino de una cuantizacion concreta: se parte del checkpoint oficial Ornith NVFP4/FP8 y se le aplica la "abliteration" del proyecto Huihui (eliminacion de las direcciones de rechazo en el espacio de activaciones). Los pesos que cambian con la abliteration se cuantizan desde el BF16 de Huihui, mientras que los pesos no modificados conservan los valores del checkpoint original, y las escalas de activacion originales se preservan sin recalibrar.
+Huihui Ornith 1.5 35B A3B NVFP4 es un checkpoint derivado publicado por el usuario edp1096 en Hugging Face. No se trata de un entrenamiento nuevo, sino de una cuantizacion concreta: se parte del checkpoint oficial Ornith NVFP4/FP8 y se le aplica la "abliteration" del proyecto Huihui (eliminacion de las direcciones de rechazo en el espacio de activaciones). Los pesos que cambian con la abliteration se cuantizan desde el BF16 de Huihui, mientras que los pesos no modificados conservan los valores del checkpoint original, y las escalas de activacion originales se preservan sin recalibrar.
 
 El modelo se etiqueta con `qwen3_5_moe`, lo que apunta a una arquitectura transformer con mezcla de expertos (MoE) de la familia Qwen 3.5, y con el pipeline `image-text-to-text`, es decir, acepta imagenes ademas de texto. La nomenclatura "35B-A3B" sugiere unos 35.000 millones de parametros totales con unos 3.000 millones activos por token, aunque los pesos en safetensors declarados suman 19.528.501.104 parametros (19,53 B), una discrepancia que la informacion disponible no explica.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros totales | Contexto | Cuantizacion | Licencia | Abliterated | Disponibilidad |
 |---|---|---|---|---|---|---|
-| edp1096/Huihui-Ornith-1.5-35B-A3B-NVFP4 | ~19,53 B (nombre: 35B) | no disponible | NVFP4 / FP8 | MIT | Si | Repositorio HuggingFace, 0 descargas |
+| edp1096/Huihui-Ornith-1.5-35B-A3B-NVFP4 | ~19,53 B (nombre: 35B) | no disponible | NVFP4 / FP8 | MIT | Si | Repositorio Hugging Face, 0 descargas |
 | huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated | no disponible | no disponible | no disponible (BF16 como origen de la cuantizacion) | no disponible | Si | Modelo base del anterior |
 | ornith-ai/Ornith-1.5-35B-A3B-NVFP4 | no disponible | no disponible | NVFP4 / FP8 | no disponible | No | Modelo base oficial |
 

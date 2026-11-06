@@ -4,7 +4,7 @@
 
 ## Resumen
 
-mmbsaksd/sentiment-model es un clasificador de texto publicado por el usuario Mohammed Munavar (mmbsaksd) en HuggingFace, obtenido mediante fine-tuning completo de distilbert-base-uncased. Se trata de un transformer encoder de 6 capas y 66.955.779 parametros con una cabeza de clasificacion de secuencias anadida, entrenado con el Trainer de HuggingFace durante 3 epocas sobre un dataset que la propia model card no identifica ("an unknown dataset"). El pipeline declarado es text-classification y la licencia es apache-2.0.
+mmbsaksd/sentiment-model es un clasificador de texto publicado por el usuario Mohammed Munavar (mmbsaksd) en Hugging Face, obtenido mediante fine-tuning completo de distilbert-base-uncased. Se trata de un transformer encoder de 6 capas y 66.955.779 parametros con una cabeza de clasificacion de secuencias anadida, entrenado con el Trainer de Hugging Face durante 3 epocas sobre un dataset que la propia model card no identifica ("an unknown dataset"). El pipeline declarado es text-classification y la licencia es apache-2.0.
 
 Su relevancia practica es limitada y conviene ser explicito: el autor no documenta la composicion del dataset, el numero de clases, el mapeo de etiquetas ni los idiomas. Las unicas metricas disponibles son las de validacion del propio entrenamiento, con una accuracy de 0,6598 y un F1 ponderado y macro de 0,6493, valores bajos para una tarea de analisis de sentimiento. El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado con 12 segundos de diferencia, por lo que es un artefacto sin validacion externa.
 
@@ -29,7 +29,7 @@ Por sus dimensiones (0,3 GB de repositorio, ~67 M de parametros) es un modelo qu
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de DistilBERT: un encoder de 6 capas con 768 dimensiones ocultas y 12 cabezas de atencion (unos 66 M de parametros frente a los 110 M de BERT-base). Segun el trabajo original de DistilBERT, se obtiene por destilacion de conocimiento de bert-base-uncased y conserva aproximadamente el 97 % del rendimiento de BERT en GLUE con una latencia notablemente menor. Sobre ese backbone, este modelo anade una cabeza de clasificacion de secuencias entrenada con el Trainer de HuggingFace (tag generated_from_trainer), sin que se documente ninguna innovacion tecnica adicional: no hay atencion lineal, decodificacion especulativa, MoE ni componentes SSM.
+La arquitectura es la de DistilBERT: un encoder de 6 capas con 768 dimensiones ocultas y 12 cabezas de atencion (unos 66 M de parametros frente a los 110 M de BERT-base). Segun el trabajo original de DistilBERT, se obtiene por destilacion de conocimiento de bert-base-uncased y conserva aproximadamente el 97 % del rendimiento de BERT en GLUE con una latencia notablemente menor. Sobre ese backbone, este modelo anade una cabeza de clasificacion de secuencias entrenada con el Trainer de Hugging Face (tag generated_from_trainer), sin que se documente ninguna innovacion tecnica adicional: no hay atencion lineal, decodificacion especulativa, MoE ni componentes SSM.
 
 Los hiperparametros reportados son: 3 epocas, learning rate 2e-05 con scheduler lineal, batch de entrenamiento y evaluacion de 32, semilla 42 y optimizador AdamW torch fused (betas 0,9/0,999, epsilon 1e-08). Se registraron 58 pasos por epoca y 174 pasos totales, lo que implica del orden de 1.856 ejemplos de entrenamiento por epoca (58 x 32, sin informacion sobre acumulacion de gradientes ni de ejemplos descartados). El dataset, su composicion, su tamano de evaluacion y cualquier fase de RLHF o DPO son datos no disponibles. Las versiones declaradas son Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.23.1.
 
@@ -44,7 +44,7 @@ Los hiperparametros reportados son: 3 epocas, learning rate 2e-05 con scheduler 
 - Modo "thinking" o razonamiento explicito: no.
 - Ventana de entrada limitada a 512 tokens, con truncado obligatorio en documentos mas largos.
 - Ejecucion viable en CPU y en hardware de bajas prestaciones por su tamano reducido.
-- Compatible con HuggingFace Inference Endpoints (tag endpoints_compatible) y con exportacion a ONNX.
+- Compatible con Hugging Face Inference Endpoints (tag endpoints_compatible) y con exportacion a ONNX.
 
 ## Casos de uso
 
@@ -115,7 +115,7 @@ La comparativa relevante es con distilbert-base-uncased-finetuned-sst-2-english,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mmbsaksd/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/mmbsaksd/sentiment-model
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Perfil del autor: https://huggingface.co/mmbsaksd
 - Paper original de DistilBERT (arquitectura del backbone): https://arxiv.org/abs/1910.01108

@@ -67,4 +67,4 @@ No disponible. No existe una categoría de modelos comparables porque no se trat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sauzze22/zero-packs
+- Hugging Face: https://huggingface.co/Sauzze22/zero-packs

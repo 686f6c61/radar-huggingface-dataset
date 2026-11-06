@@ -2,7 +2,7 @@
 
 ## Resumen
 
-d1-3B-oQ4e-fp16 es una version cuantizada del modelo LiquidAI/d1-3B, publicada por el usuario RepublicOfKorokke en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un artefacto de compresion de pesos: parte de los pesos originales de LiquidAI y los reduce a 4 bits con precision mixta usando la herramienta oQ (oMLX v0.7.0), con grupo de cuantizacion de tamano 64 y almacenamiento en safetensors de MLX.
+d1-3B-oQ4e-fp16 es una version cuantizada del modelo LiquidAI/d1-3B, publicada por el usuario RepublicOfKorokke en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un artefacto de compresion de pesos: parte de los pesos originales de LiquidAI y los reduce a 4 bits con precision mixta usando la herramienta oQ (oMLX v0.7.0), con grupo de cuantizacion de tamano 64 y almacenamiento en safetensors de MLX.
 
 El modelo base pertenece a la familia arquitectonica lfm2_vl, segun la etiqueta declarada por el autor, lo que situa el artefacto en el terreno de los modelos de lenguaje con capacidades de vision-lenguaje de LiquidAI. El recuento real de parametros de safetensors es de 3.123.483.888 (aproximadamente 3,12 mil millones), y el repositorio ocupa 3,2 GB.
 
@@ -83,6 +83,6 @@ No se dispone de datos de benchmarks ni de especificaciones suficientes para est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RepublicOfKorokke/d1-3B-oQ4e-fp16
+- Repositorio Hugging Face: https://huggingface.co/RepublicOfKorokke/d1-3B-oQ4e-fp16
 - Modelo base: https://huggingface.co/LiquidAI/d1-3B
 - Herramienta de cuantizacion oQ / oMLX: https://github.com/jundot/omlx

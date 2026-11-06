@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fimaulana/audio-visual-learning-exp` no es un modelo entrenado, sino un repositorio de notas de investigación estructuradas sobre aprendizaje audio-visual, publicado en HuggingFace por el usuario fimaulana. El repositorio contiene únicamente dos ficheros declarados en la model card, `notes.md` y `README.md`, y un artefacto en formato safetensors cuyos metadatos reportan 49.600 parámetros totales. El tamaño del repositorio es de 0,0 GB y las etiquetas declaradas son `safetensors`, `transformer`, `research-notes`, `audio-visual-learning`, `license:cc-by-4.0` y `region:us`.
+`fimaulana/audio-visual-learning-exp` no es un modelo entrenado, sino un repositorio de notas de investigación estructuradas sobre aprendizaje audio-visual, publicado en Hugging Face por el usuario fimaulana. El repositorio contiene únicamente dos ficheros declarados en la model card, `notes.md` y `README.md`, y un artefacto en formato safetensors cuyos metadatos reportan 49.600 parámetros totales. El tamaño del repositorio es de 0,0 GB y las etiquetas declaradas son `safetensors`, `transformer`, `research-notes`, `audio-visual-learning`, `license:cc-by-4.0` y `region:us`.
 
 La propia model card acota explícitamente el alcance: el autor indica que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales, y que el documento no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni checkpoint entrenado. El contenido cubre el alcance de la pregunta de investigación, confusores probables, una comparación propuesta con baselines emparejados, contexto de evaluación sobre AudioSet y VGGSound, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas.
 
@@ -22,7 +22,7 @@ Su relevancia actual es, por tanto, documental y de planificación metodológica
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 0,0 GB |
 | Ficheros declarados | `notes.md`, `README.md` |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas | 0 |
 | Likes | 0 |
 | Fecha de creacion | 2026-10-13T17:11:06.000Z |
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Viabilidad en GPU de consumo: irrelevante en la práctica, dado que no existe una ruta de inferencia publicada.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible; ninguna es aplicable sin arquitectura, tokenizer y pesos funcionales documentados.
 - Latencia y throughput: no disponible.
-- Almacenamiento en disco: el repositorio ocupa 0,0 GB según HuggingFace.
+- Almacenamiento en disco: el repositorio ocupa 0,0 GB según Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -94,7 +94,7 @@ No disponible. No se han aportado en la información facilitada modelos alternat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fimaulana/audio-visual-learning-exp
+- Hugging Face: https://huggingface.co/fimaulana/audio-visual-learning-exp
 - Resultados de búsqueda web recuperados, sin relación directa verificada con este repositorio:
   - Augmented reality, virtual reality, and artificial intelligence to enhance programming comprehension: https://pure.qub.ac.uk/files/617361950/Augmented_reality_virtual_reality_and_artificial_intelligence_to_enhance_programming_comprehension.pdf
   - A Patent-Based Clustering and Life Cycle Analysis (IEEE Xplore): https://ieeexplore.ieee.org/iel8/6287639/10820123/10942317.pdf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `airagrp/Qwen3.8-27B-mlx-nvfp4-XL` es una conversión al formato MLX del modelo multimodal `Qwen/Qwen3.8-27B` de Alibaba, realizada por el usuario de HuggingFace `airagrp`. Se trata de un modelo denso de 27 mil millones de parámetros que procesa imágenes, vídeo y texto, y que aquí se distribuye con una receta de cuantización mixta: las capas MLP se cuantizan a 4 bits usando el formato nvfp4, mientras que la atención, los embeddings y la torre de visión se mantienen en bfloat16. El resultado es un checkpoint de aproximadamente 31 GB (8.8 bits por peso de media), frente a los ~54 GB del modelo original en bf16, lo que facilita su ejecución en hardware Apple Silicon con memoria unificada.
+El modelo `airagrp/Qwen3.8-27B-mlx-nvfp4-XL` es una conversión al formato MLX del modelo multimodal `Qwen/Qwen3.8-27B` de Alibaba, realizada por el usuario de Hugging Face `airagrp`. Se trata de un modelo denso de 27 mil millones de parámetros que procesa imágenes, vídeo y texto, y que aquí se distribuye con una receta de cuantización mixta: las capas MLP se cuantizan a 4 bits usando el formato nvfp4, mientras que la atención, los embeddings y la torre de visión se mantienen en bfloat16. El resultado es un checkpoint de aproximadamente 31 GB (8.8 bits por peso de media), frente a los ~54 GB del modelo original en bf16, lo que facilita su ejecución en hardware Apple Silicon con memoria unificada.
 
 La relevancia de este modelo radica en que acerca un modelo multimodal de gran tamaño a entornos locales y de bajo presupuesto, sin renunciar a la calidad del modelo original. Además, incorpora la cabeza MTP (Multi-Token Prediction) nativa fusionada en el checkpoint, lo que permite usar decodificación especulativa en mlx-vlm para acelerar la generación. El repo está pensado para usarse con la librería `mlx-vlm` y sigue la licencia Apache-2.0.
 
@@ -70,7 +70,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. El modelo se p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/airagrp/Qwen3.8-27B-mlx-nvfp4-XL
+- Repositorio Hugging Face: https://huggingface.co/airagrp/Qwen3.8-27B-mlx-nvfp4-XL
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Repositorio GitHub de Qwen3.8-27B (AlibabaCloud): https://github.com/AlibabaCloud-Official/Qwen3.8-27B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_03` es un artefacto publicado en HuggingFace por el usuario TianfuXinqu el 1 de noviembre de 2026. La model card asociada, titulada "Fraud Detection Model" e identificada internamente como MDL-003, lo describe como un modelo orientado a la deteccion de fraude, con propietaria asignada (Sofia Rossi), departamento de gestion de riesgos y un nivel de riesgo declarado como alto.
+El modelo identificado como `TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_03` es un artefacto publicado en Hugging Face por el usuario TianfuXinqu el 1 de noviembre de 2026. La model card asociada, titulada "Fraud Detection Model" e identificada internamente como MDL-003, lo describe como un modelo orientado a la deteccion de fraude, con propietaria asignada (Sofia Rossi), departamento de gestion de riesgos y un nivel de riesgo declarado como alto.
 
 La informacion disponible es extremadamente limitada: no se especifica arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni resultados de evaluacion. La model card unicamente aporta metadatos de gobernanza (estado de documentacion parcial, cobertura de tests del 72 por ciento y fecha de ultima auditoria el 18 de abril de 2026), sin ningun detalle tecnico que permita caracterizar el modelo.
 
@@ -79,12 +79,12 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 - Riesgo de alucinacion: no disponible, al no conocerse la naturaleza generativa o discriminativa del modelo.
 - Limitaciones de contexto o idioma: no disponible.
 - Restricciones de licencia para uso comercial: no disponible; la licencia no aparece en la informacion proporcionada.
-- Sin descargas ni interacciones: el modelo registra 0 descargas y 0 likes en HuggingFace, por lo que no existe evidencia de uso o validacion por parte de la comunidad.
+- Sin descargas ni interacciones: el modelo registra 0 descargas y 0 likes en Hugging Face, por lo que no existe evidencia de uso o validacion por parte de la comunidad.
 - Ausencia de pesos verificables: no se confirma el formato ni la disponibilidad de los pesos en el repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_03
+- Modelo en Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_03
 - Paper: no disponible.
 - Blog o documentacion adicional: no disponible.
 - Repositorio de codigo: no disponible.

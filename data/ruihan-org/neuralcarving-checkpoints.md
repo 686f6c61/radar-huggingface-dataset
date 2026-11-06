@@ -79,6 +79,6 @@ La única comparación fiable es con su modelo base, microsoft/TRELLIS.2-4B, del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ruihan-org/NeuralCarving-checkpoints
+- Hugging Face: https://huggingface.co/Ruihan-org/NeuralCarving-checkpoints
 - Modelo base: https://huggingface.co/microsoft/TRELLIS.2-4B
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.

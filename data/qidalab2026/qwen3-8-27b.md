@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje causal con codificador de visión, publicado por el usuario Qidalab2026 en HuggingFace bajo licencia Apache 2.0. Según la model card, se presenta como la generación más capaz de la familia de modelos abiertos Qwen hasta la fecha, construida sobre la base arquitectónica de Qwen3.5 y orientada a tareas de programación, trabajo profesional, investigación y tareas agénticas de largo horizonte. El modelo combina un transformer denso de 27 781 427 952 parámetros (27,8B) con un codificador visual nativo, lo que le permite procesar imágenes y vídeos además de texto.
+Qwen3.8-27B es un modelo de lenguaje causal con codificador de visión, publicado por el usuario Qidalab2026 en Hugging Face bajo licencia Apache 2.0. Según la model card, se presenta como la generación más capaz de la familia de modelos abiertos Qwen hasta la fecha, construida sobre la base arquitectónica de Qwen3.5 y orientada a tareas de programación, trabajo profesional, investigación y tareas agénticas de largo horizonte. El modelo combina un transformer denso de 27 781 427 952 parámetros (27,8B) con un codificador visual nativo, lo que le permite procesar imágenes y vídeos además de texto.
 
 La arquitectura destaca por un diseño híbrido poco convencional: 64 capas organizadas en 16 bloques que alternan tres subcapas de Gated DeltaNet (atención lineal) con una de Gated Attention (atención completa con RoPE), además de Multi-Token Prediction (MTP) entrenado con múltiples pasos. La longitud de contexto nativa es de 262 144 tokens, extensible hasta 1 000 000, y el modelo incorpora control flexible de "thinking mode" con parámetros como `reasoning_effort` y `preserve_thinking`.
 
@@ -71,7 +71,7 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B | 27,8B (denso) | 262K nativo, hasta 1M | Apache 2.0 | HuggingFace (25 descargas) |
+| Qwen3.8-27B | 27,8B (denso) | 262K nativo, hasta 1M | Apache 2.0 | Hugging Face (25 descargas) |
 | Qwen3.6-27B | No disponible | No disponible | No disponible | Mencionado en la model card |
 | Qwen3.7-Plus | No disponible | No disponible | No disponible | Mencionado en la model card |
 | Muse Glimmer-30B | ~30B (según nombre) | No disponible | No disponible | Mencionado en la model card |
@@ -91,6 +91,6 @@ La comparativa se limita a los modelos citados en la propia model card; no se di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Qidalab2026/Qwen3.8-27B
+- Hugging Face: https://huggingface.co/Qidalab2026/Qwen3.8-27B
 - Qwen Cloud (servicio gestionado mencionado en la model card): https://www.qwencloud.com
 - Overview de Qwen3.8-27B en Qwen Cloud: https://www.qwencloud.com/models/qwen3.8-27b

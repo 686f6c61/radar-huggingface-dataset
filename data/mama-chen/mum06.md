@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mama-chen/mum06` es un repositorio publicado en HuggingFace por el usuario `mama-chen` del que no se dispone de informacion tecnica verificable. La informacion proporcionada se limita a la identificacion del repositorio (ID, autor, fecha de creacion y actualizacion, tamano del repositorio de 2.3 GB) y a una unica etiqueta de metadatos (`region:us`). No consta pipeline declarado, licencia, idiomas soportados ni tarjeta de modelo con descripcion del contenido.
+`mama-chen/mum06` es un repositorio publicado en Hugging Face por el usuario `mama-chen` del que no se dispone de informacion tecnica verificable. La informacion proporcionada se limita a la identificacion del repositorio (ID, autor, fecha de creacion y actualizacion, tamano del repositorio de 2.3 GB) y a una unica etiqueta de metadatos (`region:us`). No consta pipeline declarado, licencia, idiomas soportados ni tarjeta de modelo con descripcion del contenido.
 
 El repositorio fue creado el 24 de septiembre de 2026 y actualizado el mismo dia, apenas 26 segundos despues, lo que sugiere una publicacion automatica o un volcado de artefactos sin documentacion asociada. Con cero descargas y un solo "like", tampoco existe trazabilidad de uso por parte de la comunidad que permita inferir su proposito.
 
@@ -50,7 +50,7 @@ No disponible. No se ha publicado ninguna descripcion de las capacidades del mod
 
 No disponible. Sin informacion sobre arquitectura, tamano, contexto, licencia ni capacidades, no es posible recomendar casos de uso concretos ni evaluar la idoneidad del modelo para escenario alguno. Cualquier propuesta de aplicacion practica seria especulativa y, por tanto, se omite deliberadamente.
 
-Como orientacion general para el lector: antes de considerar este repositorio para cualquier fin, conviene inspeccionar directamente los ficheros del repositorio en HuggingFace (nombres, extensiones y configuraciones) para determinar el formato de pesos, la arquitectura declarada en los ficheros de configuracion y la existencia de una licencia en el repositorio.
+Como orientacion general para el lector: antes de considerar este repositorio para cualquier fin, conviene inspeccionar directamente los ficheros del repositorio en Hugging Face (nombres, extensiones y configuraciones) para determinar el formato de pesos, la arquitectura declarada en los ficheros de configuracion y la existencia de una licencia en el repositorio.
 
 ## Benchmarks y rendimiento
 
@@ -84,7 +84,7 @@ No disponible. Al no conocerse la categoria del modelo (tamano, tarea, modalidad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mama-chen/mum06
+- Repositorio en Hugging Face: https://huggingface.co/mama-chen/mum06
 
 No se han encontrado en la busqueda web enlaces relevantes para este repositorio. Los resultados devueltos corresponden a entidades no relacionadas:
 

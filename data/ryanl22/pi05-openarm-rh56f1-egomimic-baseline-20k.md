@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `RyanL22/pi05-openarm-rh56f1-egomimic-baseline-20k` | 4,14 B | VLA, enmascaramiento EgoMimic | OpenArm teleop v4 (261 ep) + anyh2r humano, 12 tareas / 466 ep | Apache 2.0 | HuggingFace, 0 descargas |
-| `RyanL22/pi05-openarm-rh56f1-masquerade-baseline-20k` | no disponible | VLA, superposicion de robot renderizado | mismo pipeline, receta visual distinta | no disponible | HuggingFace (modelo hermano citado en la model card) |
-| `lerobot/pi05_base` | no disponible | VLA base | no disponible | no disponible | HuggingFace (modelo base) |
+| `RyanL22/pi05-openarm-rh56f1-egomimic-baseline-20k` | 4,14 B | VLA, enmascaramiento EgoMimic | OpenArm teleop v4 (261 ep) + anyh2r humano, 12 tareas / 466 ep | Apache 2.0 | Hugging Face, 0 descargas |
+| `RyanL22/pi05-openarm-rh56f1-masquerade-baseline-20k` | no disponible | VLA, superposicion de robot renderizado | mismo pipeline, receta visual distinta | no disponible | Hugging Face (modelo hermano citado en la model card) |
+| `lerobot/pi05_base` | no disponible | VLA base | no disponible | no disponible | Hugging Face (modelo base) |
 
 No se dispone de datos comparativos de rendimiento entre estas variantes en la informacion proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos comparativos de rendimiento entre estas variantes en la i
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/RyanL22/pi05-openarm-rh56f1-egomimic-baseline-20k)
+- [Modelo en Hugging Face](https://huggingface.co/RyanL22/pi05-openarm-rh56f1-egomimic-baseline-20k)
 - [Modelo base: lerobot/pi05_base](https://huggingface.co/lerobot/pi05_base)
 - [Modelo hermano: RyanL22/pi05-openarm-rh56f1-masquerade-baseline-20k](https://huggingface.co/RyanL22/pi05-openarm-rh56f1-masquerade-baseline-20k)
 - La busqueda web realizada no devolvio enlaces relevantes al modelo (los resultados obtenidos correspondian a paginas de hora local de Los Angeles y no guardan relacion con el contenido de esta ficha).

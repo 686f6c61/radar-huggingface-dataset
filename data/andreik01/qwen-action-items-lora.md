@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AndreiK01/qwen-action-items-lora es un repositorio publicado en HuggingFace por el usuario AndreiK01 cuyo identificador sugiere un adaptador LoRA (Low-Rank Adaptation) asociado a un modelo de la familia Qwen y orientado, por el nombre del repositorio, a la extraccion de elementos de accion ("action items") de texto. No obstante, esta interpretacion procede unicamente de la nomenclatura del identificador: la model card es la plantilla autogenerada por HuggingFace y no contiene ni una sola seccion completada por el autor.
+AndreiK01/qwen-action-items-lora es un repositorio publicado en Hugging Face por el usuario AndreiK01 cuyo identificador sugiere un adaptador LoRA (Low-Rank Adaptation) asociado a un modelo de la familia Qwen y orientado, por el nombre del repositorio, a la extraccion de elementos de accion ("action items") de texto. No obstante, esta interpretacion procede unicamente de la nomenclatura del identificador: la model card es la plantilla autogenerada por Hugging Face y no contiene ni una sola seccion completada por el autor.
 
-El repositorio presenta cero descargas, cero likes y un tamano declarado de 0,0 GB, lo que indica que o bien los pesos no se han subido, o bien el contenido es un conjunto de archivos auxiliares sin el adaptador entrenado. Las etiquetas disponibles se limitan a transformers, safetensors, endpoints_compatible y region:us, ademas de una referencia al articulo arXiv:1910.09700, que corresponde al trabajo de Lacoste et al. sobre estimacion de emisiones de carbono citado en la propia plantilla de HuggingFace, no a un paper especifico del modelo.
+El repositorio presenta cero descargas, cero likes y un tamano declarado de 0,0 GB, lo que indica que o bien los pesos no se han subido, o bien el contenido es un conjunto de archivos auxiliares sin el adaptador entrenado. Las etiquetas disponibles se limitan a transformers, safetensors, endpoints_compatible y region:us, ademas de una referencia al articulo arXiv:1910.09700, que corresponde al trabajo de Lacoste et al. sobre estimacion de emisiones de carbono citado en la propia plantilla de Hugging Face, no a un paper especifico del modelo.
 
 Su relevancia actual es, por tanto, muy limitada: se trata de un artefacto sin documentacion, sin metricas y sin evidencia de uso. Se incluye en este blog unicamente como ejemplo de repositorio no verificado y para dejar constancia de que no existen datos tecnicos publicados que permitan recomendarlo en produccion.
 
@@ -23,7 +23,7 @@ Su relevancia actual es, por tanto, muy limitada: se trata de un artefacto sin d
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura, el modelo base, el numero de tokens de entrenamiento, la composicion del dataset ni la existencia de fases de ajuste por RLHF, DPO o instrucciones. La model card reproduce integramente la plantilla automatica de HuggingFace con todos los campos marcados como "[More Information Needed]".
+No se ha publicado informacion sobre la arquitectura, el modelo base, el numero de tokens de entrenamiento, la composicion del dataset ni la existencia de fases de ajuste por RLHF, DPO o instrucciones. La model card reproduce integramente la plantilla automatica de Hugging Face con todos los campos marcados como "[More Information Needed]".
 
 El unico dato tecnico objetivo es la etiqueta library_name: transformers junto con el formato safetensors, compatible con la libreria PEFT para la carga de adaptadores. La referencia arXiv:1910.09700 que aparece entre las etiquetas corresponde al articulo "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019), citado por defecto en la seccion de impacto ambiental de la plantilla, y no describe el modelo en cuestion.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No disponible. No se puede establecer una comparativa rigurosa porque se desconocen el modelo base, el numero de parametros, la licencia y el rendimiento del adaptador. Como referencia generica, los adaptadores LoRA publicados en HuggingFace para tareas de extraccion de informacion suelen acompanarse de un modelo base identificado, una licencia explicita y metricas de validacion; este repositorio no cumple ninguno de esos tres requisitos.
+No disponible. No se puede establecer una comparativa rigurosa porque se desconocen el modelo base, el numero de parametros, la licencia y el rendimiento del adaptador. Como referencia generica, los adaptadores LoRA publicados en Hugging Face para tareas de extraccion de informacion suelen acompanarse de un modelo base identificado, una licencia explicita y metricas de validacion; este repositorio no cumple ninguno de esos tres requisitos.
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No disponible. No se puede establecer una comparativa rigurosa porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AndreiK01/qwen-action-items-lora
+- Repositorio en Hugging Face: https://huggingface.co/AndreiK01/qwen-action-items-lora
 - Articulo citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono, no especifico del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental referenciada en la plantilla: https://mlco2.github.io/impact
 - Nota sobre la busqueda web: los resultados obtenidos (Civitai, guias de entrenamiento de LoRA para Qwen-Image, repositorios de nodos para ComfyUI y colecciones de LoRAs de imagen) no guardan relacion con este repositorio ni aportan informacion tecnica sobre el mismo.

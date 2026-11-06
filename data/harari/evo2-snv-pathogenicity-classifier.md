@@ -69,8 +69,8 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Tipo | Parametros | Contexto / ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| harari/evo2-snv-pathogenicity-classifier | MLP sobre embeddings de Evo 2 40B | ~16,9 M (clasificador) | Ventana de 128 pb × 4 secuencias | MIT | HuggingFace, Zenodo |
-| Evo 2 40B (arcinstitute/evo2_40b) | Modelo genómico generativo | 40 000 M | Contexto genómico largo (según model card de Arc Institute) | No disponible en la informacion proporcionada | HuggingFace |
+| harari/evo2-snv-pathogenicity-classifier | MLP sobre embeddings de Evo 2 40B | ~16,9 M (clasificador) | Ventana de 128 pb × 4 secuencias | MIT | Hugging Face, Zenodo |
+| Evo 2 40B (arcinstitute/evo2_40b) | Modelo genómico generativo | 40 000 M | Contexto genómico largo (según model card de Arc Institute) | No disponible en la informacion proporcionada | Hugging Face |
 | Predictores de patogenicidad basados en conservación (p. ej. scores tipo CADD, REVEL) | Scores estadísticos o de ensemble | No aplica | No aplica | Varía según herramienta | Herramientas web y paquetes |
 
 No se dispone en la información proporcionada de resultados de benchmarks de estos modelos comparables sobre el mismo conjunto de test, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
@@ -90,7 +90,7 @@ No se dispone en la información proporcionada de resultados de benchmarks de es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harari/evo2-snv-pathogenicity-classifier
+- Modelo en Hugging Face: https://huggingface.co/harari/evo2-snv-pathogenicity-classifier
 - Modelo base Evo 2 40B: https://huggingface.co/arcinstitute/evo2_40b
 - Artículo: Kurozumi, Otsuka et al., *Evo 2 Predicts Cardiomyopathy-Associated Variants and Elucidates Their Underlying Mechanisms*, bioRxiv 2026, doi:10.64898/2026.05.15.725304
 - Archivo Zenodo con código de análisis: doi:10.5281/zenodo.23824204

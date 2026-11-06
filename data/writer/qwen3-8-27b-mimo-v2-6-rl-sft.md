@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como Writer/Qwen3.8-27B-MiMo-V2.6-RL-SFT es un checkpoint publicado en HuggingFace por el usuario u organizacion Writer, con fecha de creacion del 2 de octubre de 2026 y ultima actualizacion el mismo dia. Se trata de un modelo de aproximadamente 27.800 millones de parametros (27.781.427.952 exactos, segun los metadatos de safetensors) cuyo repositorio ocupa 55,6 GB, lo que resulta coherente con un almacenamiento en precision de 16 bits (2 bytes por parametro) sin cuantizacion adicional.
+El modelo identificado como Writer/Qwen3.8-27B-MiMo-V2.6-RL-SFT es un checkpoint publicado en Hugging Face por el usuario u organizacion Writer, con fecha de creacion del 2 de octubre de 2026 y ultima actualizacion el mismo dia. Se trata de un modelo de aproximadamente 27.800 millones de parametros (27.781.427.952 exactos, segun los metadatos de safetensors) cuyo repositorio ocupa 55,6 GB, lo que resulta coherente con un almacenamiento en precision de 16 bits (2 bytes por parametro) sin cuantizacion adicional.
 
 El nombre del repositorio sugiere varias cosas que no pueden confirmarse con la informacion disponible: la etiqueta "qwen3_5" apunta a que deriva de la familia Qwen3.5, el segmento "MiMo" podria referirse a la linea de modelos MiMo, y el sufijo "RL-SFT" indica un proceso de ajuste supervisado seguido de aprendizaje por refuerzo. Ninguna de estas inferencias esta respaldada por documentacion oficial en los datos proporcionados, por lo que la ficha marca como "no disponible" todo aquello que no consta de forma explicita.
 
@@ -64,7 +64,7 @@ El repositorio no incluye model card, tabla de evaluaciones ni comparaciones con
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos comparables identificables a partir de la informacion proporcionada, ya que se desconoce la arquitectura, el contexto, la licencia y el rendimiento de este checkpoint. Ademas, la busqueda web realizada no devolvio ningun resultado relacionado con el modelo: los resultados obtenidos corresponden a LibreOffice Writer, OpenOffice Writer y la plataforma empresarial writer.com, y no guardan relacion con este repositorio de HuggingFace.
+No disponible. No se conocen modelos comparables identificables a partir de la informacion proporcionada, ya que se desconoce la arquitectura, el contexto, la licencia y el rendimiento de este checkpoint. Ademas, la busqueda web realizada no devolvio ningun resultado relacionado con el modelo: los resultados obtenidos corresponden a LibreOffice Writer, OpenOffice Writer y la plataforma empresarial writer.com, y no guardan relacion con este repositorio de Hugging Face.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
@@ -86,7 +86,7 @@ No disponible. No se conocen modelos comparables identificables a partir de la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Writer/Qwen3.8-27B-MiMo-V2.6-RL-SFT
+- Repositorio en Hugging Face: https://huggingface.co/Writer/Qwen3.8-27B-MiMo-V2.6-RL-SFT
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`iaac-maai/Day2-Team4-epc-band-predictor` es un modelo de clasificación entrenado con scikit-learn y publicado en HuggingFace por el usuario `iaac-maai`. Por su nombre y sus etiquetas (`energy-performance`, `epc`, `buildings`, `classification`), está orientado a predecir la banda de certificación energética (EPC, Energy Performance Certificate) de edificios a partir de variables descriptivas del inmueble. No se trata de un modelo de lenguaje ni de una red neuronal profunda: es un pipeline clásico de machine learning serializado con `joblib`.
+`iaac-maai/Day2-Team4-epc-band-predictor` es un modelo de clasificación entrenado con scikit-learn y publicado en Hugging Face por el usuario `iaac-maai`. Por su nombre y sus etiquetas (`energy-performance`, `epc`, `buildings`, `classification`), está orientado a predecir la banda de certificación energética (EPC, Energy Performance Certificate) de edificios a partir de variables descriptivas del inmueble. No se trata de un modelo de lenguaje ni de una red neuronal profunda: es un pipeline clásico de machine learning serializado con `joblib`.
 
-El repositorio tiene un tamaño de 0,0 GB, lo que sugiere un artefacto muy ligero, coherente con un modelo tabular de scikit-learn. Fue creado y actualizado el 26 de octubre de 2026, con cero descargas y cero likes en el momento de la consulta. El acceso está restringido (gated): es necesario aceptar las condiciones en HuggingFace para poder descargarlo.
+El repositorio tiene un tamaño de 0,0 GB, lo que sugiere un artefacto muy ligero, coherente con un modelo tabular de scikit-learn. Fue creado y actualizado el 26 de octubre de 2026, con cero descargas y cero likes en el momento de la consulta. El acceso está restringido (gated): es necesario aceptar las condiciones en Hugging Face para poder descargarlo.
 
 La relevancia de este modelo es limitada y de ámbito educativo o experimental. No dispone de pipeline declarado, no se especifican idiomas y la licencia figura como `other`, sin detallar términos. La información pública disponible es mínima, por lo que esta ficha se limita a lo que puede inferirse de los metadatos y marca explícitamente como "no disponible" todo aquello que no se puede confirmar.
 
@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| iaac-maai/Day2-Team4-epc-band-predictor | no disponible (sklearn) | no aplicable | other | gated en HuggingFace |
+| iaac-maai/Day2-Team4-epc-band-predictor | no disponible (sklearn) | no aplicable | other | gated en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -73,13 +73,13 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - Información pública mínima: no se documentan datos de entrenamiento, algoritmo, métricas ni variables de entrada, lo que impide evaluar su fiabilidad.
 - Riesgo de sesgo: al desconocerse el dataset, no puede descartarse un sesgo geográfico o temporal (por ejemplo, edificios de una región o época concreta).
 - Riesgo de error en la predicción: la banda EPC depende de muchos factores físicos que un modelo tabular puede no capturar; las predicciones no sustituyen una certificación oficial.
-- Licencia `other` sin términos detallados: no se puede confirmar el uso comercial; es necesario revisar las condiciones en HuggingFace antes de cualquier despliegue en producción.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la integración automatizada.
+- Licencia `other` sin términos detallados: no se puede confirmar el uso comercial; es necesario revisar las condiciones en Hugging Face antes de cualquier despliegue en producción.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la integración automatizada.
 - Cero descargas y cero likes: no hay evidencia de uso ni validación por parte de la comunidad.
-- Sin pipeline declarado ni idiomas especificados: la integración con herramientas de HuggingFace es limitada.
+- Sin pipeline declarado ni idiomas especificados: la integración con herramientas de Hugging Face es limitada.
 - Fecha de creación en 2026 y contexto de curso (`Day2-Team4`): probablemente un ejercicio académico, no un modelo mantenido para producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iaac-maai/Day2-Team4-epc-band-predictor
+- Hugging Face: https://huggingface.co/iaac-maai/Day2-Team4-epc-band-predictor
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

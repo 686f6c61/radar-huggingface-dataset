@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks especificos para este fine-tuning e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ripgermany/Qwen3-0.6B
+- Repositorio Hugging Face: https://huggingface.co/ripgermany/Qwen3-0.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Informe tecnico Qwen3: https://arxiv.org/html/2505.09388v1
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

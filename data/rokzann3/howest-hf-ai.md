@@ -2,7 +2,7 @@
 
 ## Resumen
 
-howest-hf-ai es un clasificador de imagenes de tres clases (gato, perro y panda) publicado por el usuario rokzann3 en HuggingFace. Se trata de una red neuronal convolucional pequena implementada con Keras 3.15.1 (backend TensorFlow) y entrenada dentro de un pipeline de Azure Machine Learning como parte de un curso de MLOps en la universidad Howest. El modelo resuelve una tarea de clasificacion de imagenes de juguete: recibe una imagen RGB de 64 x 64 pixeles y devuelve una distribucion softmax sobre las etiquetas `["Cat", "Dog", "Panda"]`.
+howest-hf-ai es un clasificador de imagenes de tres clases (gato, perro y panda) publicado por el usuario rokzann3 en Hugging Face. Se trata de una red neuronal convolucional pequena implementada con Keras 3.15.1 (backend TensorFlow) y entrenada dentro de un pipeline de Azure Machine Learning como parte de un curso de MLOps en la universidad Howest. El modelo resuelve una tarea de clasificacion de imagenes de juguete: recibe una imagen RGB de 64 x 64 pixeles y devuelve una distribucion softmax sobre las etiquetas `["Cat", "Dog", "Panda"]`.
 
 La relevancia del modelo es fundamentalmente educativa: ilustra el ciclo completo de un flujo MLOps (entrenamiento, guardado en Keras, publicacion en el Hub) mas que un caso de uso en produccion. La arquitectura es una CNN de seis capas convolucionales (con 32, 64 y 128 filtros) con BatchNorm, MaxPooling y Dropout, seguida de una capa densa de 512 unidades y la salida softmax. No se especifica el numero de parametros totales ni la licencia.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, I
 
 | Modelo | Tipo | Clases | Entrada | Exactitud | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| howest-hf-ai (rokzann3) | CNN Keras | 3 (Cat, Dog, Panda) | 64 x 64 RGB | 0,78 | no disponible | HuggingFace |
+| howest-hf-ai (rokzann3) | CNN Keras | 3 (Cat, Dog, Panda) | 64 x 64 RGB | 0,78 | no disponible | Hugging Face |
 | Modelos comparables | no disponible | | | | | |
 
 No se dispone de informacion sobre modelos comparables en la documentacion proporcionada. Cualquier CNN pequena entrenada sobre el mismo conjunto de gatos, perros y pandas (por ejemplo, variantes de MobileNet o ResNet ajustadas a tres clases) seria un punto de comparacion razonable, pero no se aportan datos concretos para establecer la comparacion.
@@ -91,5 +91,5 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rokzann3/howest-hf-ai
+- Modelo en Hugging Face: https://huggingface.co/rokzann3/howest-hf-ai
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/phequals/lfm25-1.2b-muesli-cleanup-v12-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/phequals/lfm25-1.2b-muesli-cleanup-v12-mlx-8bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Licencia (referenciada como `LICENSE` en el repositorio del modelo)
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo: no se han encontrado papers, blogs, repositorios ni demos adicionales.

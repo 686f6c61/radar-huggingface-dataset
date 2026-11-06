@@ -42,7 +42,7 @@ No se especifican en la documentación el número de tokens de entrenamiento, la
 - Análisis de variantes y mutaciones: predecir estructuras de proteínas wild-type y mutantes para comparar conformaciones y evaluar posibles impactos estructurales.
 - Búsqueda de homólogos estructurales: usar la base `pdb_seqres` incluida para identificar plantillas relacionadas y apoyar la interpretación de proteínas poco caracterizadas.
 - Reproducibilidad de experimentos: al fijar el commit y verificar checksums, el modelo es adecuado para trabajos que requieran resultados auditables y repetibles.
-- Despliegue en entornos con acceso restringido a HuggingFace: el espejo permite descargar pesos y datos vía `hf-mirror.com` en China continental sin depender de la conectividad a `huggingface.co`.
+- Despliegue en entornos con acceso restringido a Hugging Face: el espejo permite descargar pesos y datos vía `hf-mirror.com` en China continental sin depender de la conectividad a `huggingface.co`.
 - Integración en flujos de investigación académica: al ser Apache-2.0, puede incorporarse en proyectos internos y publicaciones sin las restricciones de licencias tipo CC-BY-NC.
 - Docencia y formación: el pipeline CLI facilita demostraciones de predicción estructural en cursos de bioinformática computacional.
 
@@ -62,16 +62,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Mol-1 | no disponible (checkpoint 2,39 GB) | no aplica | Apache-2.0 | HuggingFace (espejo) y GitHub | Predicción estructural con búsqueda de plantillas PDB |
+| Mol-1 | no disponible (checkpoint 2,39 GB) | no aplica | Apache-2.0 | Hugging Face (espejo) y GitHub | Predicción estructural con búsqueda de plantillas PDB |
 | AlphaFold2 | ~93 M (Evoformer) + estructura | no aplica | CC BY 4.0 (código MIT) | GitHub DeepMind | Referencia en predicción estructural; requiere bases de datos grandes |
 | OpenFold | ~93 M | no aplica | Apache-2.0 | GitHub | Reimplementación entrenable de AlphaFold2 |
-| ESMFold | ~690 M | no aplica | MIT (código) / MIT (pesos ESM) | HuggingFace | Predicción end-to-end sin búsqueda de plantillas |
+| ESMFold | ~690 M | no aplica | MIT (código) / MIT (pesos ESM) | Hugging Face | Predicción end-to-end sin búsqueda de plantillas |
 
 Los datos de AlphaFold2, OpenFold y ESMFold se incluyen como referencia de categoría; la información disponible no permite confirmar equivalencias exactas con Mol-1.
 
 ## Limitaciones y advertencias
 
-- Es un espejo no oficial: el autor del repositorio en HuggingFace no es Molence, por lo que la responsabilidad de integridad recae en la verificación con `CHECKSUMS.sha256`.
+- Es un espejo no oficial: el autor del repositorio en Hugging Face no es Molence, por lo que la responsabilidad de integridad recae en la verificación con `CHECKSUMS.sha256`.
 - No es un modelo de lenguaje: no admite prompts de texto, tool calling, agentes ni generación de código.
 - No se documentan sesgos, pero al entrenarse sobre PDB puede heredar sesgos de composición del Protein Data Bank (sobrerrepresentación de ciertas familias proteicas y organismos modelo).
 - Riesgo de alucinación estructural: como todo modelo de predicción, puede producir conformaciones plausibles pero incorrectas, especialmente en regiones intrínsecamente desordenadas o sin homólogos claros.
@@ -79,12 +79,12 @@ Los datos de AlphaFold2, OpenFold y ESMFold se incluyen como referencia de categ
 - Fechas de release: la base de datos está fechada en 2026-10-01, lo que limita la evaluación a estructuras anteriores a esa fecha y condiciona la reproducibilidad a largo plazo.
 - Licencia Apache-2.0 permite uso comercial, pero conviene revisar las licencias de las bases de datos subyacentes (PDB, CCD) por si imponen condiciones adicionales.
 - Ausencia de benchmarks publicados: no es posible comparar su precisión con AlphaFold2 o ESMFold sin ejecutar evaluaciones propias.
-- Fecha de creación del repositorio en HuggingFace (2026-10-30) y ausencia de descargas o likes: no hay evidencia de adopción por la comunidad que permita validar su calidad.
+- Fecha de creación del repositorio en Hugging Face (2026-10-30) y ausencia de descargas o likes: no hay evidencia de adopción por la comunidad que permita validar su calidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RUIMA294264/Mol-1
+- Repositorio Hugging Face: https://huggingface.co/RUIMA294264/Mol-1
 - Repositorio upstream en GitHub: https://github.com/molence/Mol-1
 - Commit fijado: `7480cc41a7c64b5c517709184bdc81c08dbd5fdb` (v1.0.0)
 - Bucket oficial de release: `mol-1-release.oss-cn-shanghai.aliyuncs.com`
-- Espejo de HuggingFace para China: https://hf-mirror.com
+- Espejo de Hugging Face para China: https://hf-mirror.com

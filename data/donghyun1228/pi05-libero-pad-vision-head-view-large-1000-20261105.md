@@ -65,8 +65,8 @@ No se han publicado en la información disponible resultados adicionales de MMLU
 
 | Modelo | Parametros | Contexto | Rendimiento LIBERO | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 LIBERO view_large PAD baseline (este) | no disponible | no disponible | 14,45 % (289/2000) | Apache 2.0 | HuggingFace, 0 descargas |
-| π0.5 LIBERO source (`pi05-libero-pad-vision-head-source-n50k-10000-20261104`) | no disponible | no disponible | no disponible | Apache 2.0 (presumible, no confirmado) | HuggingFace |
+| π0.5 LIBERO view_large PAD baseline (este) | no disponible | no disponible | 14,45 % (289/2000) | Apache 2.0 | Hugging Face, 0 descargas |
+| π0.5 LIBERO source (`pi05-libero-pad-vision-head-source-n50k-10000-20261104`) | no disponible | no disponible | no disponible | Apache 2.0 (presumible, no confirmado) | Hugging Face |
 | Otros modelos VLA para LIBERO | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes en la información proporcionada para establecer una comparativa numérica con alternativas de la misma categoría.
@@ -83,7 +83,7 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-pad-vision-head-view-large-1000-20261105
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-pad-vision-head-view-large-1000-20261105
 - Checkpoint fuente: https://huggingface.co/Donghyun1228/pi05-libero-pad-vision-head-source-n50k-10000-20261104
 - Repositorio de código del autor: `Donghyun1228/vla_adaptation` (commit `7b74d01d`), preset `pi05_libero_pad_img_view_adapt`
 - Ecosistema openpi: no disponible en la información proporcionada

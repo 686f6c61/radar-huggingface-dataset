@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "omjambhale/act_eraser_in_bucket",
+  "slug": "omjambhale-act_eraser_in_bucket",
+  "author": "omjambhale",
+  "url": "https://huggingface.co/omjambhale/act_eraser_in_bucket",
+  "created_at": "2026-11-03T20:23:28.000Z",
+  "updated_at": "2026-11-04T01:16:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:omjambhale/eraser-in-bucket_20261103_231918",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 2478147496,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "omjambhale/act_eraser_in_bucket · Hugging Face",
+      "url": "https://huggingface.co/omjambhale/act_eraser_in_bucket",
+      "snippet": "Robotics model with 51.7M parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "omjambhale (om jambhale) – Models - Hugging Face",
+      "url": "https://huggingface.co/omjambhale/models",
+      "snippet": "omjambhale's models1 Sort: Recently updated omjambhale/act_eraser_in_bucket Robotics • 51.7M•Updated about 4 hours ago"
+    }
+  ]
+}

@@ -84,5 +84,5 @@ No disponible. No se han publicado comparativas con otros modelos de inferencia 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arajgor1/cosmufr-run4
+- Hugging Face: https://huggingface.co/arajgor1/cosmufr-run4
 - GitHub: https://github.com/arajgor1/cosmufr-run4

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kroma-v0.3-base-bf16 es un modelo de generacion de imagenes a partir de texto (text-to-image) publicado por el usuario cutecaption en HuggingFace. Se trata de un ajuste fino (finetune) del modelo lodestones/Kroma, segun indican las etiquetas del repositorio, y se distribuye en formato bf16 con un tamano de repositorio de 25,6 GB. La model card publicada por el autor es minima: unicamente incluye metadatos de licencia, modelo base y etiquetas, sin descripcion tecnica adicional.
+kroma-v0.3-base-bf16 es un modelo de generacion de imagenes a partir de texto (text-to-image) publicado por el usuario cutecaption en Hugging Face. Se trata de un ajuste fino (finetune) del modelo lodestones/Kroma, segun indican las etiquetas del repositorio, y se distribuye en formato bf16 con un tamano de repositorio de 25,6 GB. La model card publicada por el autor es minima: unicamente incluye metadatos de licencia, modelo base y etiquetas, sin descripcion tecnica adicional.
 
 La relevancia de esta publicacion radica en que hereda la licencia krea-2-community-license del ecosistema Krea 2 (cuyo repositorio de referencia es krea/Krea-2-Raw), lo que condiciona su uso comercial. Al ser un modelo derivado de Kroma, su interes practico depende de las capacidades del modelo base, sobre el que esta ficha no dispone de informacion tecnica detallada.
 
@@ -92,7 +92,7 @@ Como referencia unicamente estructural, se puede senalar que:
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cutecaption/kroma-v0.3-base-bf16
+- Repositorio en Hugging Face: https://huggingface.co/cutecaption/kroma-v0.3-base-bf16
 - Enlace de licencia declarado: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base declarado: https://huggingface.co/lodestones/Kroma
 - Paper, blog, repositorio de codigo o demo: no disponibles. La busqueda web no devolvio ningun enlace relevante para este modelo.

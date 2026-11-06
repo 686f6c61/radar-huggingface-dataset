@@ -2,7 +2,7 @@
 
 ## Resumen
 
-flux.2-klein-base-4b-4bit es un checkpoint cuantizado a 4 bits del modelo de generación de imágenes texto-a-imagen FLUX.2-klein-base-4B, desarrollado originalmente por Black Forest Labs y redistribuido en HuggingFace por el usuario toxicdog. El artefacto se almacena con el diseño de pesos de MLX-Gen/mflux y está orientado exclusivamente a inferencia local sobre Apple Silicon, no a pipelines estándar de Diffusers o Transformers.
+flux.2-klein-base-4b-4bit es un checkpoint cuantizado a 4 bits del modelo de generación de imágenes texto-a-imagen FLUX.2-klein-base-4B, desarrollado originalmente por Black Forest Labs y redistribuido en Hugging Face por el usuario toxicdog. El artefacto se almacena con el diseño de pesos de MLX-Gen/mflux y está orientado exclusivamente a inferencia local sobre Apple Silicon, no a pipelines estándar de Diffusers o Transformers.
 
 El problema que resuelve es doble: por un lado reduce el modelo base a una cuantización de 4 bits en MLX, lo que deja el repositorio en 4,6 GB; por otro, lo empaqueta en un formato ejecutable directamente con la herramienta `mlxgen`, evitando la necesidad de GPU dedicada. Esto permite ejecutar un modelo de la familia FLUX.2 en Macs con memoria unificada, algo relevante para desarrolladores que quieren generar imágenes localmente sin depender de APIs en la nube y con licencia Apache 2.0.
 
@@ -82,7 +82,7 @@ No se dispone de datos comparativos adicionales frente a otras alternativas (por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/toxicdog/flux.2-klein-base-4b-4bit
+- Modelo en Hugging Face: https://huggingface.co/toxicdog/flux.2-klein-base-4b-4bit
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B
 - Repositorio de MLX-Gen: https://github.com/lpalbou/mlx-gen
 - Documentación de cuantización de MLX-Gen: https://github.com/lpalbou/mlx-gen/blob/main/docs/quantization.md

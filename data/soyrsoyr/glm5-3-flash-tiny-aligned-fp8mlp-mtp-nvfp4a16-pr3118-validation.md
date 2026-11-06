@@ -25,7 +25,7 @@ Su relevancia es puramente de ingeniería: sirve como prueba de extremo a extrem
 | Pipeline declarado | text-generation (con etiqueta adicional image-text-to-text) |
 | Modelo base | inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP (revisión `443ac6c54ba0d65ad8a7c701af4fd22a960c9e9c`) |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación | 2026-09-14 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-09-14 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables. El único punto de refe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soyrsoyr/GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-NVFP4A16-pr3118-validation
+- Modelo en Hugging Face: https://huggingface.co/soyrsoyr/GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-NVFP4A16-pr3118-validation
 - Modelo base: https://huggingface.co/inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP/tree/443ac6c54ba0d65ad8a7c701af4fd22a960c9e9c
 - Implementación (llm-compressor PR 3118, commit `87347881`): https://github.com/soyr-redhat/llm-compressor/commit/87347881b46df8786b9fc463965f80504914a98f
 - Fichero de derivación y alineado de dimensiones: `pr3118-validation.json` (incluido en el repositorio del modelo)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AhmedTaha012/Qwen2.5-Coder-0.5B-AUTOSAR-GRPO es un ajuste fino (finetune) del modelo Qwen2.5-Coder-0.5B, desarrollado por el usuario AhmedTaha012 y publicado en HuggingFace bajo licencia Apache 2.0. El modelo parte del checkpoint unsloth/Qwen2.5-Coder-0.5B, una version optimizada para entrenamiento del modelo base de Qwen, y se ha entrenado con la libreria Unsloth junto con TRL de HuggingFace, lo que, segun la model card, permite un entrenamiento aproximadamente dos veces mas rapido que un flujo estandar.
+AhmedTaha012/Qwen2.5-Coder-0.5B-AUTOSAR-GRPO es un ajuste fino (finetune) del modelo Qwen2.5-Coder-0.5B, desarrollado por el usuario AhmedTaha012 y publicado en Hugging Face bajo licencia Apache 2.0. El modelo parte del checkpoint unsloth/Qwen2.5-Coder-0.5B, una version optimizada para entrenamiento del modelo base de Qwen, y se ha entrenado con la libreria Unsloth junto con TRL de Hugging Face, lo que, segun la model card, permite un entrenamiento aproximadamente dos veces mas rapido que un flujo estandar.
 
 El nombre del repositorio incluye el termino AUTOSAR y las siglas GRPO. AUTOSAR (AUTomotive Open System ARchitecture) es un estandar de arquitectura de software para sistemas embebidos de automocion, mientras que GRPO (Group Relative Policy Optimization) es una tecnica de optimizacion por refuerzo. Por tanto, es plausible que el ajuste fino se haya orientado a tareas de generacion o correccion de codigo vinculado a AUTOSAR mediante RL, aunque la model card no documenta ni el dataset, ni el procedimiento de entrenamiento, ni los hiperparametros empleados. Cualquier afirmacion sobre el proposito concreto debe tratarse como inferencia a partir del nombre del repositorio, no como un dato confirmado por el autor.
 
@@ -25,7 +25,7 @@ Se trata de un modelo muy pequeno (en torno a 494 millones de parametros en la f
 
 La arquitectura corresponde a la familia Qwen2, un transformer decoder-only con atencion causal y grouped-query attention. Segun la informacion disponible sobre el modelo base, la configuracion emplea 24 capas de transformer, un tamano oculto (hidden size) de 896, 14 cabezas de consulta (query heads) y 2 cabezas de clave/valor (key/value heads), lo que da una ratio de GQA de 7:1. Esta configuracion reduce el coste de memoria del cache KV durante la inferencia en secuencias largas.
 
-Respecto al entrenamiento, la model card unicamente indica que el modelo se entreno con Unsloth y la libreria TRL de HuggingFace, y que el proceso fue aproximadamente dos veces mas rapido que un flujo estandar. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de SFT seguidas de RL, ni los hiperparametros de GRPO. La presencia de GRPO en el nombre sugiere una fase de optimizacion por refuerzo con recompensas probablemente basadas en compilacion o validacion de codigo, y el termino AUTOSAR apunta a un corpus especializado en software de automocion, pero ninguno de estos extremos esta documentado en la informacion proporcionada. No se han publicado detalles sobre innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
+Respecto al entrenamiento, la model card unicamente indica que el modelo se entreno con Unsloth y la libreria TRL de Hugging Face, y que el proceso fue aproximadamente dos veces mas rapido que un flujo estandar. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de SFT seguidas de RL, ni los hiperparametros de GRPO. La presencia de GRPO en el nombre sugiere una fase de optimizacion por refuerzo con recompensas probablemente basadas en compilacion o validacion de codigo, y el termino AUTOSAR apunta a un corpus especializado en software de automocion, pero ninguno de estos extremos esta documentado en la informacion proporcionada. No se han publicado detalles sobre innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| AhmedTaha012/Qwen2.5-Coder-0.5B-AUTOSAR-GRPO | ~494M (base) | no disponible (base: 32K) | Apache 2.0 | HuggingFace, 0 descargas | Finetune con GRPO orientado a AUTOSAR; sin benchmarks publicados |
-| Qwen/Qwen2.5-Coder-0.5B | ~494M | 32.000 tokens | Apache 2.0 | HuggingFace, ampliamente descargado | Modelo base oficial, sin post-entrenamiento conversacional |
-| Qwen/Qwen2.5-Coder-0.5B-Instruct | ~494M | 32.000 tokens | Apache 2.0 | HuggingFace | Variante instruida del modelo base, apta para chat y asistencia |
-| Qwen/Qwen2.5-Coder-1.5B | ~1.5B | 32.000 tokens | Apache 2.0 | HuggingFace | Alternativa de mayor tamano, mas capacidad pero mas recursos |
+| AhmedTaha012/Qwen2.5-Coder-0.5B-AUTOSAR-GRPO | ~494M (base) | no disponible (base: 32K) | Apache 2.0 | Hugging Face, 0 descargas | Finetune con GRPO orientado a AUTOSAR; sin benchmarks publicados |
+| Qwen/Qwen2.5-Coder-0.5B | ~494M | 32.000 tokens | Apache 2.0 | Hugging Face, ampliamente descargado | Modelo base oficial, sin post-entrenamiento conversacional |
+| Qwen/Qwen2.5-Coder-0.5B-Instruct | ~494M | 32.000 tokens | Apache 2.0 | Hugging Face | Variante instruida del modelo base, apta para chat y asistencia |
+| Qwen/Qwen2.5-Coder-1.5B | ~1.5B | 32.000 tokens | Apache 2.0 | Hugging Face | Alternativa de mayor tamano, mas capacidad pero mas recursos |
 
 Las cifras de parametros y contexto de las alternativas provienen de la informacion publica de los repositorios de Qwen. No se dispone de datos de rendimiento comparado entre este finetune y las alternativas, por lo que la comparacion se limita a aspectos estructurales y de licencia.
 

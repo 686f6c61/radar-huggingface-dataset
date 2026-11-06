@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TurboChat-Eval es un artefacto publicado en HuggingFace bajo el identificador `dusersad12/TurboChat-Eval` por el usuario `dusersad12`. La informacion disponible presenta una contradiccion significativa que conviene senalar de entrada: los metadatos del repositorio lo clasifican como un modelo basado en BERT con pipeline de `feature-extraction` (extraccion de caracteristicas), mientras que la model card describe un asistente conversacional de razonamiento de gran escala bajo la marca "TurboChat", con mejoras en tareas de matematicas, programacion y logica.
+TurboChat-Eval es un artefacto publicado en Hugging Face bajo el identificador `dusersad12/TurboChat-Eval` por el usuario `dusersad12`. La informacion disponible presenta una contradiccion significativa que conviene senalar de entrada: los metadatos del repositorio lo clasifican como un modelo basado en BERT con pipeline de `feature-extraction` (extraccion de caracteristicas), mientras que la model card describe un asistente conversacional de razonamiento de gran escala bajo la marca "TurboChat", con mejoras en tareas de matematicas, programacion y logica.
 
 El repositorio tiene un tamano de 0,0 GB y registra cero descargas y cero "likes" en el momento de la consulta, con fechas de creacion y actualizacion del 27 de septiembre de 2026. No se especifican parametros totales, longitud de contexto, idiomas soportados ni formatos de pesos, por lo que las especificaciones tecnicas no pueden verificarse.
 
@@ -109,7 +109,7 @@ No es posible establecer una comparativa rigurosa. El repositorio no publica par
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/dusersad12/TurboChat-Eval
+- Pagina del modelo en Hugging Face: https://huggingface.co/dusersad12/TurboChat-Eval
 - Repositorio de codigo: no disponible (la model card lo menciona pero no enlaza)
 - Sitio web oficial y API: no disponible (la model card los menciona pero no enlaza)
 - Paper o informe tecnico: no disponible

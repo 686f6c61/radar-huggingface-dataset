@@ -23,7 +23,7 @@ Su relevancia es, por tanto, instrumental: sirve para ejecutar el modelo base en
 | Modelo base | aemmeath/MiniCPM5-Astra |
 | Cuantizador | mradermacher (nethype GmbH) |
 | Tamano del repositorio | 0,0 GB según los metadatos |
-| Fecha de creacion / actualizacion | 2026-09-17 / 2026-09-17 (según los metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-09-17 / 2026-09-17 (según los metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -108,7 +108,7 @@ Para comparar con modelos de la misma categoría (mismo tamaño y misma tarea) s
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/MiniCPM5-Astra-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/MiniCPM5-Astra-i1-GGUF
 - Modelo base: https://huggingface.co/aemmeath/MiniCPM5-Astra
 - Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/MiniCPM5-Astra-GGUF
 - Página de resumen y listado de descargas del cuantizador: https://hf.tst.eu/model#MiniCPM5-Astra-i1-GGUF

@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento de alternativas de la misma categoría (mo
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta publicación: https://huggingface.co/mradermacher/Suri-Qwen-3.8-27B-Uncensored-i1-GGUF
+- Repositorio Hugging Face de esta publicación: https://huggingface.co/mradermacher/Suri-Qwen-3.8-27B-Uncensored-i1-GGUF
 - Modelo base: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored
 - Cuantizaciones estáticas (incluye ficheros mmproj de visión): https://huggingface.co/mradermacher/Suri-Qwen-3.8-27B-Uncensored-GGUF
 - Página de resumen y descargas del cuantizador: https://hf.tst.eu/model#Suri-Qwen-3.8-27B-Uncensored-i1-GGUF

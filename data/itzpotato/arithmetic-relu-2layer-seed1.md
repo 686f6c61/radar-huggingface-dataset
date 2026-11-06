@@ -79,5 +79,5 @@ No se dispone de información sobre modelos comparables en la misma categoría d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/itzPotato/arithmetic-relu-2layer-seed1
+- Repositorio en Hugging Face: https://huggingface.co/itzPotato/arithmetic-relu-2layer-seed1
 - Modelo relacionado (bilinear, 2 capas): https://huggingface.co/itzPotato/bilinear-attn-addition-carry-2layer (encontrado en la búsqueda web, no se detalla su contenido)

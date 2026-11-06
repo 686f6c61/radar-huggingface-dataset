@@ -89,11 +89,11 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento real f
 
 ## Enlaces
 
-- [Modelo en HuggingFace: pipecat-ai/phonellm-max-alpha-2-nvfp4](https://huggingface.co/pipecat-ai/phonellm-max-alpha-2-nvfp4)
+- [Modelo en Hugging Face: pipecat-ai/phonellm-max-alpha-2-nvfp4](https://huggingface.co/pipecat-ai/phonellm-max-alpha-2-nvfp4)
 - [Modelo base: pipecat-ai/phonellm-max-alpha-2](https://huggingface.co/pipecat-ai/phonellm-max-alpha-2)
 - [Modelo base de NVIDIA: NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16)
 - [Entrada de blog sobre PhoneLLM Alpha 2](https://www.daily.co/blog/phonellm-alpha-2/)
 - [Texto de la licencia OpenMDW 1.1](https://openmdw.ai/license/1-1/)
 - [Repositorio de vLLM](https://github.com/vllm-project/vllm)
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre el modelo; los enlaces anteriores proceden de la información del repositorio de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre el modelo; los enlaces anteriores proceden de la información del repositorio de Hugging Face.

@@ -104,7 +104,7 @@ No se dispone de datos de otros modelos comparables (como Llama 3.1 405B o DeepS
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pipenetwork/GLM-5.3-REAP37-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/pipenetwork/GLM-5.3-REAP37-MLX-4bit
 - Repositorio de PipeNetwork con detalles y tests: https://github.com/PipeNetwork/glm53-mlx
 - Modelo base GLM-5.3: https://huggingface.co/zai-org/GLM-5.3
 - Repositorio oficial de GLM-5 (zai-org): https://github.com/zai-org/GLM-5

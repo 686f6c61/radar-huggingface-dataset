@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`laxstewart/swin-t-multitask-distilled51` es un repositorio experimental publicado en HuggingFace que contiene una implementación funcional de un Swin Transformer (Swin T) en configuración *tiny* orientada a aprendizaje multitarea. El autor, `laxstewart`, lo presenta explícitamente como un *scaffold* de código reproducible para pruebas de humo (*smoke tests*), no como un modelo entrenado con resultados publicados. El repositorio incluye `train.py`, `config.json`, `training_args.json` y un `model.safetensors` que el propio autor describe como *checkpoint* de inicialización válido, no como un modelo con rendimiento demostrado.
+`laxstewart/swin-t-multitask-distilled51` es un repositorio experimental publicado en Hugging Face que contiene una implementación funcional de un Swin Transformer (Swin T) en configuración *tiny* orientada a aprendizaje multitarea. El autor, `laxstewart`, lo presenta explícitamente como un *scaffold* de código reproducible para pruebas de humo (*smoke tests*), no como un modelo entrenado con resultados publicados. El repositorio incluye `train.py`, `config.json`, `training_args.json` y un `model.safetensors` que el propio autor describe como *checkpoint* de inicialización válido, no como un modelo con rendimiento demostrado.
 
 El dato objetivo disponible es el recuento de parámetros del fichero safetensors: 24.832 parámetros, un tamaño muy inferior al de un Swin-T completo. Esto refuerza la naturaleza de inicialización o de juguete del artefacto. El repositorio tiene 0 descargas y 0 *likes*, y ocupa 0,0 GB, por lo que es un proyecto recién creado y sin adopción.
 
@@ -82,7 +82,7 @@ La comparación directa con el Swin-T original de Microsoft no es homogénea: aq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laxstewart/swin-t-multitask-distilled51
+- Modelo en Hugging Face: https://huggingface.co/laxstewart/swin-t-multitask-distilled51
 - Ficheros incluidos en el repositorio: `train.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper de referencia de la arquitectura Swin Transformer: no enlazado en la información proporcionada
 - Repositorio de código, demo o blog del autor: no disponible

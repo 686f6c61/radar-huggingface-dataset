@@ -109,5 +109,5 @@ Estos valores miden parecido con el modelo original, no calidad absoluta: no ind
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peasantsmith/DeepSeek-V4.1-Flash-1017-Maya-GGUF
+- Modelo en Hugging Face: https://huggingface.co/peasantsmith/DeepSeek-V4.1-Flash-1017-Maya-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4

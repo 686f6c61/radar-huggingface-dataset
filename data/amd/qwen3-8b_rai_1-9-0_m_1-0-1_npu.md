@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato / destino | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/Qwen3-8B_rai_1.9.0_m_1.0.1_npu | 8,2B | no disponible | ONNX / NPU Ryzen AI | Apache 2.0 | Gated en HuggingFace |
+| amd/Qwen3-8B_rai_1.9.0_m_1.0.1_npu | 8,2B | no disponible | ONNX / NPU Ryzen AI | Apache 2.0 | Gated en Hugging Face |
 | Qwen/Qwen3-8B | 8,2B | 128K (segun modelo base) | safetensors / GPU | Apache 2.0 | Publico |
 | Qwen3-8B GGUF (comunidad) | 8,2B | 128K (segun modelo base) | GGUF / CPU-GPU | Apache 2.0 | Publico |
 | Llama 3.1 8B Instruct | 8,0B | 128K | safetensors / GPU | Llama 3.1 Community | Publico (gated) |
@@ -71,7 +71,7 @@ La comparativa directa con alternativas ONNX para NPU de otros fabricantes (por 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Dependencia de hardware: solo funciona sobre NPU Ryzen AI con el runtime y la version de modelado especificados (`rai_1.9.0`, `m_1.0.1`); no es portable a GPU o CPU sin reconversion.
 - Idiomas: la etiqueta declara unicamente `en`, aunque el modelo base es multilingue; el soporte real de otros idiomas en esta conversion no esta verificado.
 - Sesgos y alucinaciones: hereda los sesgos del corpus de entrenamiento de Qwen3 y el riesgo de alucinacion propio de los modelos de 8B, especialmente en dominios especializados.
@@ -81,7 +81,7 @@ La comparativa directa con alternativas ONNX para NPU de otros fabricantes (por 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Qwen3-8B_rai_1.9.0_m_1.0.1_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/Qwen3-8B_rai_1.9.0_m_1.0.1_npu
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Documentacion de Ryzen AI: no disponible en la informacion proporcionada
 - Paper o blog de Qwen3: no disponible en la informacion proporcionada

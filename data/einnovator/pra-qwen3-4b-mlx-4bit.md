@@ -86,7 +86,7 @@ La comparativa se limita al modelo base, ya que no se dispone de datos de otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EInnovator/pra-qwen3-4b-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/EInnovator/pra-qwen3-4b-mlx-4bit
 - Modelo base (mlx-community): https://huggingface.co/mlx-community/Qwen3-4B-4bit
 - Modelo base oficial (Qwen): https://huggingface.co/Qwen/Qwen3-4B-MLX-4bit
 - Documentacion PRA: https://einnovator.github.io/pdattention/

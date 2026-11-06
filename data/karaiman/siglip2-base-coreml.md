@@ -75,7 +75,7 @@ No se dispone de comparativas con otros modelos de la misma categoría (p. ej., 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/karaiman/siglip2-base-coreml
+- Repositorio Hugging Face: https://huggingface.co/karaiman/siglip2-base-coreml
 - Modelo base original: https://huggingface.co/google/siglip2-base-patch16-256
 - Paper SigLIP 2: https://arxiv.org/abs/2502.14786
 - Repositorio CuttyLA (fuente de la conversión): https://github.com/palmier-io/palmier-pro/tree/main/models/siglip2

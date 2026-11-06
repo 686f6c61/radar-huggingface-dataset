@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r02` es un artefacto de investigación publicado en HuggingFace por el usuario Jeesup. Se trata de un checkpoint de `meta-llama/Meta-Llama-3-8B-Instruct` comprimido mediante SVD-LLM hasta el 80,0 % de los parámetros densos de proyección y, después, editado parcialmente mediante un procedimiento de *swap* iterativo neutro en parámetros guiado por la regla de selección `gap_iter`. El checkpoint corresponde a la ronda 2 de un total de 10, con un presupuesto de restauración de 1,000 % de los parámetros densos y un 0,100 % aplicado por ronda.
+`Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r02` es un artefacto de investigación publicado en Hugging Face por el usuario Jeesup. Se trata de un checkpoint de `meta-llama/Meta-Llama-3-8B-Instruct` comprimido mediante SVD-LLM hasta el 80,0 % de los parámetros densos de proyección y, después, editado parcialmente mediante un procedimiento de *swap* iterativo neutro en parámetros guiado por la regla de selección `gap_iter`. El checkpoint corresponde a la ronda 2 de un total de 10, con un presupuesto de restauración de 1,000 % de los parámetros densos y un 0,100 % aplicado por ronda.
 
 El problema que aborda no es el de ofrecer un asistente conversacional, sino el de medir de forma controlada cómo la compresión SVD degrada el comportamiento de seguridad de un modelo alineado y qué regla de selección de componentes repara mejor ese daño. La model card lo describe explícitamente como «una celda de una rejilla sobre reglas de selección y presupuestos» y advierte de que varias ramas de esa rejilla están deliberadamente degradadas en seguridad respecto al modelo original.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks de capacidad general (MMLU, HumanEv
 - VRAM estimada en int4: alrededor de 4-6 GB de pesos, más overhead.
 - GPU profesionales: A100 40 GB, H100 80 GB, L40S, A6000 o cualquier GPU con 24 GB o más permite ejecutar el modelo sin cuantizar.
 - GPU de consumo: cabe en tarjetas de 24 GB (RTX 3090, RTX 4090) en fp16 ajustadamente y con comodidad en cuantizaciones de 8 y 4 bits; en tarjetas de 12-16 GB requeriría cuantización.
-- Opciones de despliegue: transformers (librería declarada), text-generation-inference (etiqueta `text-generation-inference` presente), endpoints compatibles con HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`) y vLLM para servir pesos safetensors. No se publican pesos GGUF, por lo que llama.cpp y Ollama requerirían una conversión no verificada y potencialmente incompatible con la estructura de pesos comprimidos por SVD.
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference (etiqueta `text-generation-inference` presente), endpoints compatibles con Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`) y vLLM para servir pesos safetensors. No se publican pesos GGUF, por lo que llama.cpp y Ollama requerirían una conversión no verificada y potencialmente incompatible con la estructura de pesos comprimidos por SVD.
 - Latencia y throughput estimados: no disponibles. El repositorio no publica mediciones de latencia, tokens por segundo ni resultados de optimización (batching, paged attention).
 - Almacenamiento: el repositorio ocupa 16,1 GB.
 
@@ -83,10 +83,10 @@ No se han publicado resultados de benchmarks de capacidad general (MMLU, HumanEv
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| svd-safety-l3_remove20_swapgapiter_b010_r02 | 8.030.261.248 (fraccion resultante 0,7998 declarada) | No especificado (base: 8.192 tokens) | Llama 3 Community License | HuggingFace, safetensors | Artefacto de investigacion; ASR 0,0100 en AdvBench y 0,0400 en StrongREJECT |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8.030.261.248 | 8.192 tokens | Llama 3 Community License | HuggingFace, safetensors | Modelo base sin comprimir; punto de referencia de seguridad y utilidad |
-| meta-llama/Meta-Llama-3.1-8B-Instruct | 8.030.000.000 (aproximado) | 128.000 tokens | Llama 3.1 Community License | HuggingFace, safetensors | Generacion posterior con contexto extendido; no comparable en el eje de compresion |
-| Otros checkpoints de la rejilla del mismo autor | No disponible | No disponible | Llama 3 Community License | HuggingFace | No se han localizado en la informacion disponible |
+| svd-safety-l3_remove20_swapgapiter_b010_r02 | 8.030.261.248 (fraccion resultante 0,7998 declarada) | No especificado (base: 8.192 tokens) | Llama 3 Community License | Hugging Face, safetensors | Artefacto de investigacion; ASR 0,0100 en AdvBench y 0,0400 en StrongREJECT |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8.030.261.248 | 8.192 tokens | Llama 3 Community License | Hugging Face, safetensors | Modelo base sin comprimir; punto de referencia de seguridad y utilidad |
+| meta-llama/Meta-Llama-3.1-8B-Instruct | 8.030.000.000 (aproximado) | 128.000 tokens | Llama 3.1 Community License | Hugging Face, safetensors | Generacion posterior con contexto extendido; no comparable en el eje de compresion |
+| Otros checkpoints de la rejilla del mismo autor | No disponible | No disponible | Llama 3 Community License | Hugging Face | No se han localizado en la informacion disponible |
 
 Los resultados de busqueda web proporcionados no contienen informacion util sobre modelos comparables ni sobre el metodo SVD-LLM, por lo que no es posible ampliar esta comparativa con datos verificados.
 
@@ -104,7 +104,7 @@ Los resultados de busqueda web proporcionados no contienen informacion util sobr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r02
+- Repositorio en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r02
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia de Meta Llama 3: incluida como `LICENSE` y `USE_POLICY.md` en el repositorio del modelo
 - Resultados de busqueda web: no se han encontrado papers, blogs, repositorios ni demos relevantes en la informacion proporcionada (los resultados devueltos corresponden a paginas genericas de Wikipedia y no guardan relacion con el modelo)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`francesca9805/ind-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` es un modelo de generacion de texto de pequeno tamano (124,77 millones de parametros) publicado por el usuario de HuggingFace `francesca9805`, vinculado al proyecto de Weights & Biases `f-padovani-university-of-groningen/new-tokenizers`. Se trata de un ajuste fino (SFT) sobre el modelo base `francesca9805/ind-latn-100mb-ppt-mp-struct-core-100mb_seed10`, entrenado con la libreria TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0.
+`francesca9805/ind-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` es un modelo de generacion de texto de pequeno tamano (124,77 millones de parametros) publicado por el usuario de Hugging Face `francesca9805`, vinculado al proyecto de Weights & Biases `f-padovani-university-of-groningen/new-tokenizers`. Se trata de un ajuste fino (SFT) sobre el modelo base `francesca9805/ind-latn-100mb-ppt-mp-struct-core-100mb_seed10`, entrenado con la libreria TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0.
 
-El modelo pertenece a la familia arquitectonica GPT-2 segun la etiqueta declarada en HuggingFace, con un recuento de parametros del orden del GPT-2 small (124 M). El nombre del repositorio sugiere un experimento sistematico sobre tokenizadores y datos en indonesio con escritura latina ("ind-latn"), con un corpus de aproximadamente 100 MB y una semilla concreta (seed 10) dentro de una serie de ablaciones; esta interpretacion procede de la nomenclatura y no esta confirmada en la model card.
+El modelo pertenece a la familia arquitectonica GPT-2 segun la etiqueta declarada en Hugging Face, con un recuento de parametros del orden del GPT-2 small (124 M). El nombre del repositorio sugiere un experimento sistematico sobre tokenizadores y datos en indonesio con escritura latina ("ind-latn"), con un corpus de aproximadamente 100 MB y una semilla concreta (seed 10) dentro de una serie de ablaciones; esta interpretacion procede de la nomenclatura y no esta confirmada en la model card.
 
 Su relevancia es acotada y de caracter investigador: no es un modelo de proposito general ni compite con los modelos instructivos actuales. Su interes esta en la reproducibilidad de experimentos de ajuste fino con TRL sobre corpus pequenos y en el estudio comparativo de variantes de tokenizacion y preprocesado en lenguas de recursos limitados. El repositorio ocupa 16,7 GB, muy por encima del peso de los pesos finales, lo que indica la presencia de multiples checkpoints de entrenamiento (el nombre incluye `ckpt500`).
 
@@ -18,7 +18,7 @@ Su relevancia es acotada y de caracter investigador: no es un modelo de proposit
 | Longitud de contexto | no disponible (no declarada en la model card ni en los metadatos) |
 | Tipos de cuantizacion | no disponible (no se publican variantes cuantizadas; pesos en safetensors) |
 | Idiomas soportados | no disponible en los metadatos; el identificador "ind-latn" sugiere indonesio en escritura latina, sin confirmacion oficial |
-| Licencia | no disponible (el campo de licencia de HuggingFace aparece vacio y la model card usa el marcador generico `licence: license`) |
+| Licencia | no disponible (el campo de licencia de Hugging Face aparece vacio y la model card usa el marcador generico `licence: license`) |
 | Formato de pesos | safetensors (libreria transformers) |
 | Modelo base | francesca9805/ind-latn-100mb-ppt-mp-struct-core-100mb_seed10 |
 | Metodo de ajuste | SFT (supervised fine-tuning) con TRL |
@@ -87,7 +87,7 @@ No se dispone de una comparativa de rendimiento fiable: cualquier afirmacion sob
 - Riesgo de alucinacion: alto. Un modelo de 124 M de parametros ajustado con SFT sobre aproximadamente 100 MB de texto tiene una capacidad factual muy limitada y no debe usarse como fuente de informacion sin verificacion.
 - Limitaciones de contexto: la longitud de contexto no esta publicada, lo que impide planificar aplicaciones que dependan de ventanas largas. Conviene determinarla empiricamente antes de cualquier uso.
 - Limitaciones de idioma: los idiomas reales de entrenamiento no estan confirmados. La nomenclatura sugiere indonesio en escritura latina, pero no hay garantia de cobertura mas alla del corpus de ajuste.
-- Licencia: no disponible. El campo de licencia aparece vacio en HuggingFace y la model card usa un marcador generico. Sin una licencia explicita, el uso comercial queda en situacion juridica incierta y no deberia asumirse permitido.
+- Licencia: no disponible. El campo de licencia aparece vacio en Hugging Face y la model card usa un marcador generico. Sin una licencia explicita, el uso comercial queda en situacion juridica incierta y no deberia asumirse permitido.
 - Trazabilidad: no se publican datos de entrenamiento, hiperparametros, numero de tokens ni criterios de evaluacion, lo que dificulta auditar el modelo.
 - Repositorio de 16,7 GB: incluye con toda probabilidad checkpoints intermedios y estados del optimizador, no solo los pesos finales. Conviene descargar unicamente los archivos necesarios.
 - Estado de adopcion: 0 descargas y 0 likes en el momento de la consulta, sin senales de uso en produccion ni de mantenimiento posterior.
@@ -96,7 +96,7 @@ No se dispone de una comparativa de rendimiento fiable: cualquier afirmacion sob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ind-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ind-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/ind-latn-100mb-ppt-mp-struct-core-100mb_seed10
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ecx2g2ta
 - Repositorio de TRL: https://github.com/huggingface/trl

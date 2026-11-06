@@ -74,7 +74,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kcat-km-v14 | no disponible (ensemble de arboles + ESM2-8M congelado) | no aplica | SCC local 0,534639; RMSE local 1,198109 | no disponible | HuggingFace, 0 descargas, 0 likes |
+| kcat-km-v14 | no disponible (ensemble de arboles + ESM2-8M congelado) | no aplica | SCC local 0,534639; RMSE local 1,198109 | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,4 +93,4 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VedaVachan/kcat-km-v14
+- Hugging Face: https://huggingface.co/VedaVachan/kcat-km-v14

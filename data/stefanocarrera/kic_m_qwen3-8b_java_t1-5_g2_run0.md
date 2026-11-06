@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g2_run0` es un ajuste fino (fine-tuning) del modelo base Qwen3-8B de Alibaba, concretamente sobre la variante `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, que es la version base de 8.000 millones de parametros cuantizada a 4 bits por el equipo de Unsloth. El autor del ajuste es el usuario stefanocarrera, que lo publica en HuggingFace bajo licencia Apache 2.0. El nombre del repositorio sugiere un entrenamiento orientado a Java (`java_t1.5_g2_run0`), aunque la model card no documenta los datos ni la metodologia empleados.
+`stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g2_run0` es un ajuste fino (fine-tuning) del modelo base Qwen3-8B de Alibaba, concretamente sobre la variante `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, que es la version base de 8.000 millones de parametros cuantizada a 4 bits por el equipo de Unsloth. El autor del ajuste es el usuario stefanocarrera, que lo publica en Hugging Face bajo licencia Apache 2.0. El nombre del repositorio sugiere un entrenamiento orientado a Java (`java_t1.5_g2_run0`), aunque la model card no documenta los datos ni la metodologia empleados.
 
 El modelo se distribuye en formato safetensors y es compatible con transformers y text-generation-inference. El repositorio ocupa 0,2 GB, un tamano llamativamente pequeno para un modelo de 8B, lo que sugiere que podria contener solo los adaptadores LoRA o un subconjunto parcial de pesos en lugar de los pesos completos. No se ha publicado informacion sobre el proceso de entrenamiento, los datos utilizados ni los resultados obtenidos.
 
@@ -43,7 +43,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 - Base para nuevos ajustes: al estar publicado bajo Apache 2.0 y en formato safetensors, puede servir como punto de partida para fine-tunings adicionales con herramientas compatibles con transformers.
 - Pruebas de integracion con text-generation-inference: el tag `text-generation-inference` indica compatibilidad con este servidor, por lo que puede desplegarse para pruebas de latencia y throughput en entornos controlados.
 - Docencia y experimentacion con modelos cuantizados: util para demostrar el flujo de trabajo de Unsloth y la cuantizacion a 4 bits en un modelo de 8B.
-- Analisis comparativo de ajustes comunitarios: como ejemplo de modelo publicado sin documentacion, sirve para estudiar practicas de publicacion y trazabilidad en HuggingFace.
+- Analisis comparativo de ajustes comunitarios: como ejemplo de modelo publicado sin documentacion, sirve para estudiar practicas de publicacion y trazabilidad en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g2_run0 | 8B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Ajuste experimental sin documentacion |
-| Qwen/Qwen3-8B | 8B | no disponible en esta ficha | Apache 2.0 | HuggingFace | Modelo base oficial, documentado y evaluado |
-| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | 8B | no disponible en esta ficha | Apache 2.0 | HuggingFace | Version base cuantizada a 4 bits usada como punto de partida |
-| Meta-Llama-3.1-8B | 8B | 128 000 tokens | Llama 3.1 Community License | HuggingFace | Alternativa de tamano similar con licencia mas restrictiva |
+| stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g2_run0 | 8B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Ajuste experimental sin documentacion |
+| Qwen/Qwen3-8B | 8B | no disponible en esta ficha | Apache 2.0 | Hugging Face | Modelo base oficial, documentado y evaluado |
+| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | 8B | no disponible en esta ficha | Apache 2.0 | Hugging Face | Version base cuantizada a 4 bits usada como punto de partida |
+| Meta-Llama-3.1-8B | 8B | 128 000 tokens | Llama 3.1 Community License | Hugging Face | Alternativa de tamano similar con licencia mas restrictiva |
 
 ## Limitaciones y advertencias
 
@@ -78,6 +78,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g2_run0
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
+- Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g2_run0
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

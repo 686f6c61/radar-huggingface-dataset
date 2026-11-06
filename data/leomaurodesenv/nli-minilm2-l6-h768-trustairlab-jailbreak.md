@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nli-MiniLM2-L6-H768-trustairlab-jailbreak es un modelo de clasificación de texto publicado por el usuario leomaurodesenv en HuggingFace. Se trata de un ajuste fino (fine-tuning) del cross-encoder `cross-encoder/nli-MiniLM2-L6-H768`, un encoder de tipo transformer con arquitectura RoBERTa (etiquetada así por el autor en los tags del repositorio) y 82.119.938 parámetros. El modelo se distribuye bajo licencia Apache 2.0 y en formato safetensors, con un pipeline declarado de `text-classification`.
+nli-MiniLM2-L6-H768-trustairlab-jailbreak es un modelo de clasificación de texto publicado por el usuario leomaurodesenv en Hugging Face. Se trata de un ajuste fino (fine-tuning) del cross-encoder `cross-encoder/nli-MiniLM2-L6-H768`, un encoder de tipo transformer con arquitectura RoBERTa (etiquetada así por el autor en los tags del repositorio) y 82.119.938 parámetros. El modelo se distribuye bajo licencia Apache 2.0 y en formato safetensors, con un pipeline declarado de `text-classification`.
 
 El nombre del repositorio sugiere que el ajuste se orientó a la detección de *jailbreaks* o prompts maliciosos partiendo de un modelo de inferencia de lenguaje natural (NLI) y de la referencia "trustairlab", aunque la model card no documenta el conjunto de datos utilizado: indica explícitamente "unknown dataset" y deja secciones como descripción, usos previstos y datos de entrenamiento como "more information needed". Por tanto, la única evidencia publicada sobre su comportamiento es la métrica de evaluación reportada por el propio autor.
 
@@ -94,8 +94,8 @@ No se dispone de datos de rendimiento de alternativas en la información proporc
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nli-MiniLM2-L6-H768-trustairlab-jailbreak | 82.119.938 | no disponible | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| cross-encoder/nli-MiniLM2-L6-H768 (modelo base) | del mismo orden (familia MiniLM2-L6-H768) | no disponible | no disponible en la informacion facilitada | HuggingFace |
+| nli-MiniLM2-L6-H768-trustairlab-jailbreak | 82.119.938 | no disponible | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| cross-encoder/nli-MiniLM2-L6-H768 (modelo base) | del mismo orden (familia MiniLM2-L6-H768) | no disponible | no disponible en la informacion facilitada | Hugging Face |
 | Otras alternativas de clasificacion de jailbreak o prompt injection | no disponible | no disponible | no disponible | no disponible |
 
 No se han publicado resultados comparativos de accuracy frente a otros clasificadores, de modo que no es posible establecer una jerarquía de rendimiento con los datos disponibles.
@@ -113,6 +113,6 @@ No se han publicado resultados comparativos de accuracy frente a otros clasifica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leomaurodesenv/nli-MiniLM2-L6-H768-trustairlab-jailbreak
+- Modelo en Hugging Face: https://huggingface.co/leomaurodesenv/nli-MiniLM2-L6-H768-trustairlab-jailbreak
 - Modelo base: https://huggingface.co/cross-encoder/nli-MiniLM2-L6-H768
 - Paper, blog o repositorio adicionales: no disponible (la búsqueda web no ha devuelto enlaces relacionados con el modelo)

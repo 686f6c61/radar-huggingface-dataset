@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Tipo | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GPROF IR (simonpf) | Red neuronal de regresión | IR 11 µm geoestacionario | MIT | HuggingFace |
+| GPROF IR (simonpf) | Red neuronal de regresión | IR 11 µm geoestacionario | MIT | Hugging Face |
 | GPROF (NASA, algoritmo clásico) | Bayesiano físico-estadístico | Microondas pasivas | No aplica (algoritmo) | Documentación NASA |
 | PPCT / redes neuronales de precipitación | Redes neuronales | Microondas / IR | Variable | Literatura científica |
 
@@ -81,6 +81,6 @@ No se dispone de datos numéricos comparativos de rendimiento entre estas altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/simonpf/gprof_ir
+- Hugging Face: https://huggingface.co/simonpf/gprof_ir
 - Repositorio GitHub: https://github.com/simonpf/gprof_ir
 - Producto GPM 2BCMB (referencia de datos de entrenamiento): https://gpm.nasa.gov/data/directory

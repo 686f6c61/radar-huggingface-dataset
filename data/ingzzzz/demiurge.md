@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Demiurge es un modelo publicado en HuggingFace por el usuario ingzzzz bajo el identificador `ingzzzz/Demiurge`. La informacion disponible en la ficha publica del repositorio es minima: unicamente se conocen el autor, el tamano del repositorio (11,7 GB), las fechas de creacion y ultima actualizacion (10 de octubre de 2026) y la etiqueta `region:us`. No se ha declarado pipeline, licencia, idiomas soportados ni arquitectura.
+Demiurge es un modelo publicado en Hugging Face por el usuario ingzzzz bajo el identificador `ingzzzz/Demiurge`. La informacion disponible en la ficha publica del repositorio es minima: unicamente se conocen el autor, el tamano del repositorio (11,7 GB), las fechas de creacion y ultima actualizacion (10 de octubre de 2026) y la etiqueta `region:us`. No se ha declarado pipeline, licencia, idiomas soportados ni arquitectura.
 
 No existe una model card descriptiva asociada, ni resultados de benchmarks, ni documentacion tecnica publicada por el autor. Esto situa al modelo en la categoria de repositorios sin informacion verificable, en los que no es posible confirmar que problema resuelve, sobre que datos se entreno ni con que metodologia.
 
@@ -88,6 +88,6 @@ No disponible. No es posible establecer una comparativa fiable sin conocer el nu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ingzzzz/Demiurge
+- Modelo en Hugging Face: https://huggingface.co/ingzzzz/Demiurge
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre el modelo. Las busquedas devolvieron unicamente resultados informativos sobre la ciudad de Canberra (Wikipedia, Britannica, portales turisticos), sin relacion alguna con `ingzzzz/Demiurge`.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.

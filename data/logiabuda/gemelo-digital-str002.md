@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`logiabuda/gemelo-digital-str002` es un repositorio de modelo alojado en HuggingFace por el usuario `logiabuda`. La informacion publica disponible es minima: la model card unicamente contiene la declaracion de licencia (`license: mit`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio no declara pipeline de inferencia, no especifica idiomas soportados y, en el momento de la consulta, acumula 0 descargas y 0 likes.
+`logiabuda/gemelo-digital-str002` es un repositorio de modelo alojado en Hugging Face por el usuario `logiabuda`. La informacion publica disponible es minima: la model card unicamente contiene la declaracion de licencia (`license: mit`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio no declara pipeline de inferencia, no especifica idiomas soportados y, en el momento de la consulta, acumula 0 descargas y 0 likes.
 
 El repositorio fue creado y actualizado en la misma marca temporal (2026-10-15T20:33:22Z), lo que sugiere una publicacion unica sin iteraciones posteriores. No se ha localizado documentacion tecnica asociada, paper, repositorio de codigo ni anuncio de publicacion. Las busquedas web realizadas no han devuelto ningun resultado relacionado con el modelo: los enlaces encontrados corresponden a contenidos sin relacion (una biblioteca de C# llamada NandoF, una cadena de restaurantes y una serie de comics en 3D).
 
@@ -71,7 +71,7 @@ No disponible. Al desconocerse la categoria del modelo (tamano, modalidad y tare
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| logiabuda/gemelo-digital-str002 | no disponible | no disponible | MIT | Repositorio en HuggingFace con 0 descargas y 0 likes |
+| logiabuda/gemelo-digital-str002 | no disponible | no disponible | MIT | Repositorio en Hugging Face con 0 descargas y 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No disponible. Al desconocerse la categoria del modelo (tamano, modalidad y tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/logiabuda/gemelo-digital-str002
+- Repositorio en Hugging Face: https://huggingface.co/logiabuda/gemelo-digital-str002
 - Paper tecnico: no disponible
 - Repositorio de codigo: no disponible
 - Demo o espacio asociado: no disponible

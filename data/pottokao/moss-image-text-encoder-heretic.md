@@ -83,10 +83,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pottokao/MOSS-Image-Text-Encoder-Heretic | 9,65 mm | no disponible | Text encoder y prompt enhancer para MOSS-Image, sin rechazos | Apache-2.0 | HuggingFace, safetensors |
-| Qwen/Qwen3.5-9B | 9,65 mm | no disponible | Modelo base y codificador oficial de MOSS-Image, con rechazos | Apache-2.0 | HuggingFace, safetensors |
-| pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-NVFP4 | no disponible | no disponible | Text encoder sin rechazos para Qwen-Image 2.1, en NVFP4 | no disponible | HuggingFace |
-| pottokao/MiniMax-H3-TextEncoder-Qwen3VL-32B-abliterated-GGUF | 32 mm (por el nombre) | no disponible | Text encoder sin rechazos para MiniMax-H3, en GGUF | no disponible | HuggingFace |
+| pottokao/MOSS-Image-Text-Encoder-Heretic | 9,65 mm | no disponible | Text encoder y prompt enhancer para MOSS-Image, sin rechazos | Apache-2.0 | Hugging Face, safetensors |
+| Qwen/Qwen3.5-9B | 9,65 mm | no disponible | Modelo base y codificador oficial de MOSS-Image, con rechazos | Apache-2.0 | Hugging Face, safetensors |
+| pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-NVFP4 | no disponible | no disponible | Text encoder sin rechazos para Qwen-Image 2.1, en NVFP4 | no disponible | Hugging Face |
+| pottokao/MiniMax-H3-TextEncoder-Qwen3VL-32B-abliterated-GGUF | 32 mm (por el nombre) | no disponible | Text encoder sin rechazos para MiniMax-H3, en GGUF | no disponible | Hugging Face |
 
 La comparación relevante es con el propio Qwen3.5-9B: mismo tamaño, misma licencia y mismos pesos salvo 32 tensores, con la diferencia de comportamiento concentrada en los rechazos y una deriva de 0,050 en la KL del primer token.
 
@@ -105,11 +105,11 @@ La comparación relevante es con el propio Qwen3.5-9B: mismo tamaño, misma lice
 
 ## Enlaces
 
-- [HuggingFace: pottokao/MOSS-Image-Text-Encoder-Heretic](https://huggingface.co/pottokao/MOSS-Image-Text-Encoder-Heretic)
+- [Hugging Face: pottokao/MOSS-Image-Text-Encoder-Heretic](https://huggingface.co/pottokao/MOSS-Image-Text-Encoder-Heretic)
 - [Modelo base: Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B)
 - [Modelo base de MOSS-Image: OpenMOSS-Team/MOSS-Image-SFT](https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT)
 - [Repositorio oficial de MOSS-Image](https://github.com/OpenMOSS/MOSS-Image)
 - [Informe técnico de MOSS-Image (arXiv 2610.23374)](https://arxiv.org/abs/2610.23374)
 - [Codificador de texto en ComfyUI para MOSS-Image](https://github.com/OpenMOSS/MOSS-Image/blob/main/comfyui/moss-image/text_encoder.py)
 - [Heretic (herramienta de ablación utilizada)](https://github.com/p-e-w/heretic)
-- [Perfil del autor en HuggingFace](https://huggingface.co/pottokao)
+- [Perfil del autor en Hugging Face](https://huggingface.co/pottokao)

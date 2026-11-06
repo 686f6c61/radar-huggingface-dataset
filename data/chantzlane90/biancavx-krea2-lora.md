@@ -2,7 +2,7 @@
 
 ## Resumen
 
-biancavx-krea2-lora es un adaptador LoRA de bajo rango (rank 32) para el modelo de generacion de imagenes Krea 2, publicado por el usuario chantzlane90 en HuggingFace. No se trata de un modelo completo, sino de un ajuste fino orientado a un unico concepto: la representacion consistente de un personaje ficticio generado por IA (Bianca Villanueva, 21+). El autor activa el concepto mediante la palabra clave `biancavx` en el prompt.
+biancavx-krea2-lora es un adaptador LoRA de bajo rango (rank 32) para el modelo de generacion de imagenes Krea 2, publicado por el usuario chantzlane90 en Hugging Face. No se trata de un modelo completo, sino de un ajuste fino orientado a un unico concepto: la representacion consistente de un personaje ficticio generado por IA (Bianca Villanueva, 21+). El autor activa el concepto mediante la palabra clave `biancavx` en el prompt.
 
 El adaptador se entreno con la herramienta fal-ai/krea-2-trainer durante 1000 pasos, y sus claves de pesos se remapearon al esquema `diffusion_model.*` que utiliza ComfyUI, con el objetivo declarado de ser compatible con la plataforma Sogni. El repositorio ocupa 0,4 GB, lo que es coherente con un LoRA de rango 32 sobre un transformer de difusion de gran tamano, aunque no se especifica en la informacion disponible sobre que checkpoint base exacto debe aplicarse ni cuantos parametros tiene ese base.
 
@@ -66,7 +66,7 @@ No disponible. La informacion proporcionada no incluye otros LoRA de personaje p
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| biancavx-krea2-lora | no disponible (rank 32, 0,4 GB) | no aplica | sin benchmarks publicados | other | HuggingFace, 0 descargas |
+| biancavx-krea2-lora | no disponible (rank 32, 0,4 GB) | no aplica | sin benchmarks publicados | other | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,8 +83,8 @@ No disponible. La informacion proporcionada no incluye otros LoRA de personaje p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chantzlane90/biancavx-krea2-lora
-- Model card del autor: incluida en el repositorio de HuggingFace (sin enlaces adicionales)
+- Hugging Face: https://huggingface.co/chantzlane90/biancavx-krea2-lora
+- Model card del autor: incluida en el repositorio de Hugging Face (sin enlaces adicionales)
 - Entrenador utilizado: fal-ai/krea-2-trainer (referenciado por el autor, sin enlace directo en la informacion disponible)
 - Plataforma de despliegue declarada: Sogni (sin enlace directo en la informacion disponible)
 - Papers, blogs, repos y demos: no disponibles

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai (zai-org) y distribuido en HuggingFace por la cuenta arbonquants. Se trata de la evolucion del modelo GLM-5.2: comparte exactamente el mismo modelo base y todas las mejoras provienen de la fase de post-entrenamiento, no de cambios arquitectonicos. Con 753.329.940.480 parametros totales (unos 753 mil millones), se posiciona en la categoria de modelos frontera de pesos abiertos, orientado especificamente a tareas de codificacion compleja, agentes de largo horizonte y ciberseguridad.
+GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai (zai-org) y distribuido en Hugging Face por la cuenta arbonquants. Se trata de la evolucion del modelo GLM-5.2: comparte exactamente el mismo modelo base y todas las mejoras provienen de la fase de post-entrenamiento, no de cambios arquitectonicos. Con 753.329.940.480 parametros totales (unos 753 mil millones), se posiciona en la categoria de modelos frontera de pesos abiertos, orientado especificamente a tareas de codificacion compleja, agentes de largo horizonte y ciberseguridad.
 
 El modelo emplea la arquitectura `glm_moe_dsa` (Mixture of Experts con atencion dispersa), segun la etiqueta de transformers del repositorio, e incorpora un modo de razonamiento controlable mediante el parametro `reasoning_effort` con tres niveles (low, high, max). Su propuesta de valor actual es clara: es el modelo de pesos abiertos mas capaz en codificacion segun el autor, con mejoras del 50% sobre GLM-5.2 en su benchmark interno Z.ai Code Bench y resultados SOTA en benchmarks publicos como Terminal Bench 3.0 y Agents' Last Exam.
 
@@ -87,7 +87,7 @@ Notas de evaluacion aportadas por el autor: HLE w/ tools se evalua con `temperat
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GLM-5.3 | ~753 mil millones | hasta 1M en evaluaciones | glm-5.3 (propia) | Pesos abiertos en HuggingFace |
+| GLM-5.3 | ~753 mil millones | hasta 1M en evaluaciones | glm-5.3 (propia) | Pesos abiertos en Hugging Face |
 | GLM-5.2 | no disponible | no disponible | glm-5.3 (propia) | Pesos abiertos (mismo base) |
 | Kimi K3 | no disponible | no disponible | no disponible | Referenciado en benchmarks |
 | DeepSeek-V4 Pro-0813 | no disponible | no disponible | no disponible | Referenciado en benchmarks |
@@ -108,7 +108,7 @@ En terminos de rendimiento, GLM-5.3 supera a GLM-5.2 en todos los benchmarks rep
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arbonquants/GLM-5.3
+- Modelo en Hugging Face: https://huggingface.co/arbonquants/GLM-5.3
 - Repositorio del autor (zai-org/GLM-5): https://github.com/zai-org/GLM-5
 - Paper referenciado: arxiv:2602.15763
 - Cookbook de SGLang para GLM-5.3: https://cookbook.sglang.io/autoregressive/GLM/GLM-5.3

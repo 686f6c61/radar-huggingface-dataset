@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables. Al ser un merge de chec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-8k_9k_10k_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-8k_9k_10k_merge
 - Merge similar (10k_11k_12k): https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-10k_11k_12k_merge
 - Merge similar (4k-5k-6k-avg) en FriendliAI: https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg
 - Repositorio de mergekit: https://github.com/cg123/mergekit

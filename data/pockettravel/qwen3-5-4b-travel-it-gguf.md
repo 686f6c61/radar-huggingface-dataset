@@ -100,11 +100,11 @@ El modelo base Qwen3.5-4B obtiene peores resultados en las métricas de rechazo 
 - Riesgo de rechazo incorrecto en preguntas respondibles: 11,7% en preguntas "qué hay cerca" y 2% en preguntas de ciudad según la evaluación publicada.
 - Licencia CC-BY-SA-4.0: permite uso comercial con atribución y compartir bajo la misma licencia; las obras derivadas deben distribuirse con la misma licencia.
 - El modelo se distribuye únicamente en una cuantización Q5_K_M; no hay otras variantes publicadas.
-- Sin descargas ni valoraciones en HuggingFace en el momento de la consulta (0 descargas, 0 likes), lo que limita la validación comunitaria.
+- Sin descargas ni valoraciones en Hugging Face en el momento de la consulta (0 descargas, 0 likes), lo que limita la validación comunitaria.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pockettravel/qwen3.5-4b-travel-it-GGUF
+- Hugging Face: https://huggingface.co/pockettravel/qwen3.5-4b-travel-it-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Modelo base GGUF usado para el ajuste: https://huggingface.co/unsloth/Qwen3.5-4B-GGUF
 - Repositorio de la app Pocket Travel: https://github.com/miracle091/pocket-travel

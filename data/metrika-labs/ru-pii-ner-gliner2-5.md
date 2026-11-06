@@ -109,6 +109,6 @@ El autor presenta ru-pii-ner (basado en ruRoberta-large) como la alternativa de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/metrika-labs/ru-pii-ner-gliner2.5
+- Modelo en Hugging Face: https://huggingface.co/metrika-labs/ru-pii-ner-gliner2.5
 - Modelo alternativo del mismo autor: https://huggingface.co/metrika-labs/ru-pii-ner
 - Modelo base: https://huggingface.co/fastino/gliner2.5-multi-v1

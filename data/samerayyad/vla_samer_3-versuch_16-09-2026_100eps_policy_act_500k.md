@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `SamerAyyad/VLA_Samer_3.Versuch_16.09.2026_100eps_policy_ACT_500k` es una politica de aprendizaje por imitacion para robotica basada en el metodo ACT (Action Chunking with Transformers), publicado por el autor SamerAyyad en HuggingFace. A pesar del sufijo "VLA" en el nombre del repositorio, no se trata de un modelo de lenguaje con vision, sino de un controlador neuronal que traduce observaciones sensoriales (imagenes de camara y estado de las articulaciones) en secuencias de acciones motoras. Ha sido entrenado y subido al Hub con el framework LeRobot de HuggingFace, segun indica la propia model card.
+El modelo identificado como `SamerAyyad/VLA_Samer_3.Versuch_16.09.2026_100eps_policy_ACT_500k` es una politica de aprendizaje por imitacion para robotica basada en el metodo ACT (Action Chunking with Transformers), publicado por el autor SamerAyyad en Hugging Face. A pesar del sufijo "VLA" en el nombre del repositorio, no se trata de un modelo de lenguaje con vision, sino de un controlador neuronal que traduce observaciones sensoriales (imagenes de camara y estado de las articulaciones) en secuencias de acciones motoras. Ha sido entrenado y subido al Hub con el framework LeRobot de Hugging Face, segun indica la propia model card.
 
 El modelo resuelve la tarea de generar comandos de control para un brazo robotico a partir de demostraciones teleoperadas, prediciendo "chunks" o bloques de acciones en lugar de un unico paso. Con 51.670.663 parametros (unos 51,7 millones) y un peso en safetensors de aproximadamente 0,2 GB, es un modelo de tamano muy reducido, orientado a inferencia en tiempo real sobre hardware modesto y, en principio, desplegable en el propio robot.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Tipo | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (ACT) | 51,67 M | Politica de imitacion ACT | no disponible | apache-2.0 | HuggingFace (0 descargas) |
+| Este modelo (ACT) | 51,67 M | Politica de imitacion ACT | no disponible | apache-2.0 | Hugging Face (0 descargas) |
 | Diffusion Policy | no disponible | Politica de imitacion por difusion | no disponible | tipicamente open source | Integrada en LeRobot |
-| Otros checkpoints ACT en LeRobot | variable | Politica de imitacion ACT | no disponible | variable | HuggingFace |
+| Otros checkpoints ACT en LeRobot | variable | Politica de imitacion ACT | no disponible | variable | Hugging Face |
 
 La comparacion cuantitativa con alternativas no esta disponible: no se han publicado metricas de rendimiento para este checkpoint ni se dispone de datos numericos de los modelos comparables en la informacion proporcionada. A nivel cualitativo, Diffusion Policy y ACT son los dos metodos de referencia del ecosistema LeRobot; ACT suele destacar por su menor coste de inferencia al predecir chunks de acciones de forma directa.
 
@@ -83,7 +83,7 @@ La comparacion cuantitativa con alternativas no esta disponible: no se han publi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SamerAyyad/VLA_Samer_3.Versuch_16.09.2026_100eps_policy_ACT_500k
+- Hugging Face: https://huggingface.co/SamerAyyad/VLA_Samer_3.Versuch_16.09.2026_100eps_policy_ACT_500k
 - Dataset asociado: https://huggingface.co/datasets/SamerAyyad/VLA_Samer_3.Versuch_16.09.2026_100eps
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

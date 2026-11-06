@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento frente
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/minimalifestyle/paddleocr-vl-1.6-q8-gguf
+- Repositorio Hugging Face: https://huggingface.co/minimalifestyle/paddleocr-vl-1.6-q8-gguf
 - Modelo base: https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6
 - Conversión BF16 de origen: https://huggingface.co/EstevaoNaval/PaddleOCR-VL-1.6-GGUF
 - llama.cpp: https://github.com/ggml-org/llama.cpp

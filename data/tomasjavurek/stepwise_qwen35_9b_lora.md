@@ -70,5 +70,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace - TomasJavurek/stepwise_qwen35_9b_lora](https://huggingface.co/TomasJavurek/stepwise_qwen35_9b_lora)
+- [Hugging Face - TomasJavurek/stepwise_qwen35_9b_lora](https://huggingface.co/TomasJavurek/stepwise_qwen35_9b_lora)
 - [Weights & Biases run](https://wandb.ai/kinit-sk/qwen35-lora-sft-stepwise/runs/oe7rs3s0)

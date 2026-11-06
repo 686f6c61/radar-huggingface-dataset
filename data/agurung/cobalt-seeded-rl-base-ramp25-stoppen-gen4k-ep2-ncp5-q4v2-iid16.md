@@ -84,9 +84,9 @@ Advertencia sobre la métrica: la model card describe pass@8 como "problema resu
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v2-iid16 | 4,4 B | No disponible | RL GRPO sin SFT, paso global 24, recompensa binaria de código | No disponible | HuggingFace, revision main |
-| Qwen/Qwen3-4B-Instruct-2507 | 4,4 B | No disponible en esta ficha | Instruct, ajuste alineado | No disponible en esta ficha | HuggingFace |
-| Otros checkpoints de la misma ejecución `seeded_rl_base_ramp25_...` | 4,4 B | No disponible | Mismo pipeline RL, distintos pasos globales | No disponible | HuggingFace, repositorios separados |
+| cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v2-iid16 | 4,4 B | No disponible | RL GRPO sin SFT, paso global 24, recompensa binaria de código | No disponible | Hugging Face, revision main |
+| Qwen/Qwen3-4B-Instruct-2507 | 4,4 B | No disponible en esta ficha | Instruct, ajuste alineado | No disponible en esta ficha | Hugging Face |
+| Otros checkpoints de la misma ejecución `seeded_rl_base_ramp25_...` | 4,4 B | No disponible | Mismo pipeline RL, distintos pasos globales | No disponible | Hugging Face, repositorios separados |
 | Alternativas comparables de 4-7 B orientadas a código | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificables en la información proporcionada |
 
 La comparación más pertinente es contra el propio modelo base Qwen3-4B-Instruct-2507, del que procede este checkpoint, y contra los demás checkpoints de la misma ejecución de RL. No hay datos publicados que permitan situarlo frente a otras familias de modelos de código de tamaño similar.
@@ -109,7 +109,7 @@ La comparación más pertinente es contra el propio modelo base Qwen3-4B-Instruc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v2-iid16
+- Modelo en Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v2-iid16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Registro de entrenamiento en Weights & Biases: proyecto `eaiexp-paper-final`, ejecución `seeded_rl_base_ramp25_stoppen_gen4k-ep2_ncp5_q4v2_iid16` (el autor no facilita la URL directa)
 - Log de entrenamiento local indicado en la model card: `experiments/cobalt_qwen3_4b_ft/rl_runs/qwen3_4b_instruct_2507_cobalt_v1/seeded_rl_base_ramp25_stoppen_gen4k-ep2_ncp5_q4v2_iid16/openrlhf_train.log` (ruta local del autor, no accesible públicamente)

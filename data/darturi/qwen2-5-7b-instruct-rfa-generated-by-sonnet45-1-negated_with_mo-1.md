@@ -84,11 +84,11 @@ No hay benchmarks del adaptador, por lo que la comparación es estructural.
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (adaptador restado) | Base 7,61 B + adaptador LoRA r=64 sobre 196 modulos | Heredado: 131.072 tokens | Adaptador PEFT fruto de una resta de adaptadores | No disponible en la card | HuggingFace, 0 descargas y 0 likes |
-| `unsloth/Qwen2.5-7B-Instruct` | 7,61 B denso | 131.072 tokens | Modelo completo afinado por instrucciones | Apache 2.0 | HuggingFace |
-| `darturi/Qwen2.5-7B-Instruct-RFA-generated-by-sonnet45-1` | Adaptador LoRA r=32, alpha=64 | Heredado | Adaptador minuendo | No disponible en la card | HuggingFace |
-| `darturi/Averaged_MO_Qwen7B_Adapters-1` | Adaptador LoRA r=32, alpha=64 | Heredado | Adaptador sustraendo (promedio de adaptadores) | No disponible en la card | HuggingFace |
-| Alternativas de propósito general (por ejemplo, Llama 3.1 8B Instruct o Mistral 7B Instruct) | 7-8 B densos | 128.000 tokens (Llama 3.1) / 32.768 tokens (Mistral 7B v0.3) | Modelos completos | Llama 3.1: licencia comunitaria propia; Mistral 7B: Apache 2.0 | HuggingFace |
+| Este repositorio (adaptador restado) | Base 7,61 B + adaptador LoRA r=64 sobre 196 modulos | Heredado: 131.072 tokens | Adaptador PEFT fruto de una resta de adaptadores | No disponible en la card | Hugging Face, 0 descargas y 0 likes |
+| `unsloth/Qwen2.5-7B-Instruct` | 7,61 B denso | 131.072 tokens | Modelo completo afinado por instrucciones | Apache 2.0 | Hugging Face |
+| `darturi/Qwen2.5-7B-Instruct-RFA-generated-by-sonnet45-1` | Adaptador LoRA r=32, alpha=64 | Heredado | Adaptador minuendo | No disponible en la card | Hugging Face |
+| `darturi/Averaged_MO_Qwen7B_Adapters-1` | Adaptador LoRA r=32, alpha=64 | Heredado | Adaptador sustraendo (promedio de adaptadores) | No disponible en la card | Hugging Face |
+| Alternativas de propósito general (por ejemplo, Llama 3.1 8B Instruct o Mistral 7B Instruct) | 7-8 B densos | 128.000 tokens (Llama 3.1) / 32.768 tokens (Mistral 7B v0.3) | Modelos completos | Llama 3.1: licencia comunitaria propia; Mistral 7B: Apache 2.0 | Hugging Face |
 
 No se dispone de comparativas de rendimiento con ninguno de ellos, porque no se han publicado evaluaciones de este adaptador.
 

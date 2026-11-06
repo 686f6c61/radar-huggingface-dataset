@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Smollm3-invoice-qlora es un adaptador LoRA (PEFT) publicado por el usuario nourhossam en HuggingFace, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base HuggingFaceTB/SmolLM3-3B. El nombre del repositorio sugiere una especializacion en tareas de facturacion (invoice), aunque la model card no documenta explicitamente el dataset, el objetivo ni el procedimiento de entrenamiento. El artefacto publicado no contiene pesos completos, sino un adaptador de bajo rango que debe combinarse con el modelo base para su uso.
+Smollm3-invoice-qlora es un adaptador LoRA (PEFT) publicado por el usuario nourhossam en Hugging Face, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base HuggingFaceTB/SmolLM3-3B. El nombre del repositorio sugiere una especializacion en tareas de facturacion (invoice), aunque la model card no documenta explicitamente el dataset, el objetivo ni el procedimiento de entrenamiento. El artefacto publicado no contiene pesos completos, sino un adaptador de bajo rango que debe combinarse con el modelo base para su uso.
 
 El modelo base SmolLM3-3B es un transformer decoder-only de 3.000 millones de parametros desarrollado por HuggingFaceTB, disenado para generacion de texto y conversacion con una ventana de contexto amplia. Este adaptador hereda las capacidades generales del modelo base y anade un ajuste especifico (presuntamente orientado a extraccion o generacion de datos de facturas), si bien la ausencia de documentacion impide confirmar el alcance real del ajuste.
 
@@ -44,7 +44,7 @@ No se documenta la composicion de los datos de entrenamiento, el numero de token
 - Prototipado rapido de pipelines de contabilidad: al ser un adaptador de 0,1 GB sobre un base de 3B, permite experimentar con bajo coste de almacenamiento y despliegue en GPU consumer.
 - Clasificacion de documentos financieros: posible uso para etiquetar tipos de documento o lineas de factura, sujeto a evaluacion empirica.
 - Fine-tuning incremental: sirve como punto de partida para experimentos de LoRA sobre SmolLM3-3B en dominios administrativos o financieros.
-- Investigacion sobre adaptadores comunitarios: util como caso de estudio de artefactos con documentacion deficiente y para analizar practicas de publicacion en HuggingFace.
+- Investigacion sobre adaptadores comunitarios: util como caso de estudio de artefactos con documentacion deficiente y para analizar practicas de publicacion en Hugging Face.
 - Despliegue en entornos con recursos limitados: combinado con el base en cuantizacion 4-bit, cabe en GPUs de 8-12 GB, adecuado para pruebas de concepto internas.
 
 ## Benchmarks y rendimiento
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nourhossam/smollm3-invoice-qlora | Adaptador LoRA sobre 3B | no disponible | no disponible | HuggingFace (0 descargas) |
-| HuggingFaceTB/SmolLM3-3B (base) | 3B | contexto largo (consultar model card) | consultar model card del base | HuggingFace, ampliamente usado |
-| Adaptadores LoRA comunitarios equivalentes | variable | variable | variable | HuggingFace |
+| nourhossam/smollm3-invoice-qlora | Adaptador LoRA sobre 3B | no disponible | no disponible | Hugging Face (0 descargas) |
+| HuggingFaceTB/SmolLM3-3B (base) | 3B | contexto largo (consultar model card) | consultar model card del base | Hugging Face, ampliamente usado |
+| Adaptadores LoRA comunitarios equivalentes | variable | variable | variable | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nourhossam/smollm3-invoice-qlora
+- Repositorio Hugging Face: https://huggingface.co/nourhossam/smollm3-invoice-qlora
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Paper de referencia sobre impacto medioambiental citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora ML Impact: https://mlco2.github.io/impact#compute

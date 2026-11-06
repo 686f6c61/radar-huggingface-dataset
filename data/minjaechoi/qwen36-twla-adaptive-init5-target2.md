@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen36-twla-adaptive-init5-target2 es un checkpoint de investigación publicado por el usuario minjaechoi en HuggingFace. No es un modelo entrenado desde cero, sino el resultado de aplicar una optimización de precisión mixta (denominada TWLA, *routed-expert TWLA mixed-precision optimization*) sobre un modelo MoE multimodal de la familia Qwen3.5, según indica el tag `qwen3_5_moe`. El problema que aborda es el de asignar presupuesto de bits de forma desigual entre los expertos enrutados de un MoE: en lugar de cuantizar todo el modelo con un mismo esquema, se decide un nivel de precisión por unidad (un experto de una capa concreta) minimizando NLL de validación más un término de bits lógicos ponderado por lambda.
+qwen36-twla-adaptive-init5-target2 es un checkpoint de investigación publicado por el usuario minjaechoi en Hugging Face. No es un modelo entrenado desde cero, sino el resultado de aplicar una optimización de precisión mixta (denominada TWLA, *routed-expert TWLA mixed-precision optimization*) sobre un modelo MoE multimodal de la familia Qwen3.5, según indica el tag `qwen3_5_moe`. El problema que aborda es el de asignar presupuesto de bits de forma desigual entre los expertos enrutados de un MoE: en lugar de cuantizar todo el modelo con un mismo esquema, se decide un nivel de precisión por unidad (un experto de una capa concreta) minimizando NLL de validación más un término de bits lógicos ponderado por lambda.
 
 El checkpoint tiene 35.107.181.936 parámetros totales (unos 35,1 mil millones) distribuidos en 40 capas con 256 expertos enrutados cada una, lo que da 10.240 unidades de cuantización independientes. La precisión media final de los expertos enrutados es de 1,939653923108582 bits, con un objetivo declarado de 2,0 bits y un nivel inicial de 5. El autor indica explícitamente que GPQA no se utilizó para calibración, ranking de sensibilidad, asignación, criterios de parada ni selección del checkpoint, lo que es una salvaguarda metodológica relevante para interpretar los resultados.
 
@@ -108,7 +108,7 @@ La unica comparacion que puede establecerse con los datos actuales es interna, f
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/minjaechoi/qwen36-twla-adaptive-init5-target2
-- Ficheros de metadatos del repositorio: `optimization_summary.json` y `precision_map.json` (incluidos en el propio repositorio de HuggingFace)
-- Codigo del optimizador y de inferencia GPQA: directorio `code/` dentro del repositorio de HuggingFace
+- Hugging Face: https://huggingface.co/minjaechoi/qwen36-twla-adaptive-init5-target2
+- Ficheros de metadatos del repositorio: `optimization_summary.json` y `precision_map.json` (incluidos en el propio repositorio de Hugging Face)
+- Codigo del optimizador y de inferencia GPQA: directorio `code/` dentro del repositorio de Hugging Face
 - Paper, blog, repositorio independiente o demo: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: los unicos enlaces recuperados corresponden a informacion medica sobre el herpes zoster (nhs.uk, healthline.com, verywellhealth.com, nhsinform.scot, medicinenet.com) y no guardan relacion con este checkpoint, por lo que se descartan como fuentes.

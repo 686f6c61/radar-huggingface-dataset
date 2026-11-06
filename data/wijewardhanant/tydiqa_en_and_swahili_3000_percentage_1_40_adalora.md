@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador de ajuste fino (fine-tuning) del tipo AdaLoRA, distribuido en formato PEFT sobre el modelo base meta-llama/Llama-3.1-8B. El nombre del repositorio, `tydiqa_en_and_swahili_3000_percentage_1_40_AdaLoRA`, indica que el ajuste se ha realizado sobre el conjunto de datos TyDiQA en dos idiomas (ingles y suajili) y sugiere un entrenamiento por tramos sobre 3000 ejemplos con porcentajes de datos entre el 1 y el 40 por ciento, aunque esta interpretacion no esta confirmada en la model card.
 
-Se trata de un artefacto de investigacion mas que de un modelo listo para produccion: la model card es la plantilla por defecto de HuggingFace y practicamente todos los campos figuran como "[More Information Needed]". No se declara licencia, idiomas, pipeline, datos de entrenamiento ni resultados de evaluacion. El repositorio tiene 0,8 GB, 7 descargas y 0 likes en el momento de la consulta, lo que indica nula validacion por parte de la comunidad.
+Se trata de un artefacto de investigacion mas que de un modelo listo para produccion: la model card es la plantilla por defecto de Hugging Face y practicamente todos los campos figuran como "[More Information Needed]". No se declara licencia, idiomas, pipeline, datos de entrenamiento ni resultados de evaluacion. El repositorio tiene 0,8 GB, 7 descargas y 0 likes en el momento de la consulta, lo que indica nula validacion por parte de la comunidad.
 
 Su relevancia es, por tanto, acotada: puede resultar util como referencia metodologica para quien investigue tecnicas AdaLoRA de bajo rango, evaluacion multilingue de question answering extractivo o ajuste eficiente sobre Llama 3.1 8B con presupuesto de datos limitado. Para cualquier uso en produccion, el adaptador carece de la documentacion minima exigible.
 
@@ -25,13 +25,13 @@ Su relevancia es, por tanto, acotada: puede resultar util como referencia metodo
 | Tamano del repositorio | 0,8 GB |
 | Tipo de adaptador | AdaLoRA (Adaptive Low-Rank Adaptation) |
 | Descargas / likes | 7 / 0 |
-| Fecha de creacion | 22 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 22 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
 El adaptador se apoya en la arquitectura del modelo base: un transformer decoder-only de 8,03 mil millones de parametros con normalizacion RMSNorm, activaciones SwiGLU, atencion con RoPE y ventana de contexto nativa de 128 000 tokens, entrenado por Meta sobre mas de 15 billones de tokens. AdaLoRA es una variante de LoRA que asigna el rango de forma adaptativa por modulo mediante descomposicion de valores singulares, de modo que el presupuesto de parametros se concentra en las matrices mas relevantes para la tarea. Esto resulta coherente con un escenario de ajuste con pocos datos, como sugiere el nombre del repositorio.
 
-No hay informacion publicada sobre el procedimiento de entrenamiento: se desconocen el numero exacto de tokens o ejemplos vistos, la composicion del dataset, el rango objetivo, los modulos objetivo del adaptador, la tasa de aprendizaje, el numero de pasos, el regimen de precision ni si hubo etapas de RLHF, DPO o ajuste supervisado adicional. El tag `arxiv:1910.09700` de HuggingFace corresponde a la referencia generica al calculador de impacto de ML citada en la plantilla de la model card (Lacoste et al., 2019), no a un articulo especifico sobre este entrenamiento. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, destilacion) mas alla del propio uso de AdaLoRA.
+No hay informacion publicada sobre el procedimiento de entrenamiento: se desconocen el numero exacto de tokens o ejemplos vistos, la composicion del dataset, el rango objetivo, los modulos objetivo del adaptador, la tasa de aprendizaje, el numero de pasos, el regimen de precision ni si hubo etapas de RLHF, DPO o ajuste supervisado adicional. El tag `arxiv:1910.09700` de Hugging Face corresponde a la referencia generica al calculador de impacto de ML citada en la plantilla de la model card (Lacoste et al., 2019), no a un articulo especifico sobre este entrenamiento. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, destilacion) mas alla del propio uso de AdaLoRA.
 
 ## Capacidades
 
@@ -94,8 +94,8 @@ No se dispone de datos de rendimiento de ninguna de las filas para este adaptado
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_40_AdaLoRA
-- Modelo base en HuggingFace: https://huggingface.co/meta-llama/Llama-3.1-8B
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_40_AdaLoRA
+- Modelo base en Hugging Face: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Referencia citada en la model card (Lacoste et al., 2019, calculador de impacto de ML): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de ML: https://mlco2.github.io/impact
 - Biblioteca PEFT: https://github.com/huggingface/peft

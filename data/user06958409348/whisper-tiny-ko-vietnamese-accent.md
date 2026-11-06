@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`user06958409348/whisper-tiny-ko-vietnamese-accent` es un ajuste fino de `openai/whisper-tiny` orientado al reconocimiento automatico del habla (ASR) en coreano cuando el hablante es nativo de vietnamita. Lo publica el usuario de HuggingFace `user06958409348` como parte de un proyecto de investigacion sobre equidad e inclusividad en ASR para hablantes no nativos de coreano, un colectivo numeroso en Corea del Sur pero escasamente representado en los corpus de entrenamiento habituales.
+`user06958409348/whisper-tiny-ko-vietnamese-accent` es un ajuste fino de `openai/whisper-tiny` orientado al reconocimiento automatico del habla (ASR) en coreano cuando el hablante es nativo de vietnamita. Lo publica el usuario de Hugging Face `user06958409348` como parte de un proyecto de investigacion sobre equidad e inclusividad en ASR para hablantes no nativos de coreano, un colectivo numeroso en Corea del Sur pero escasamente representado en los corpus de entrenamiento habituales.
 
 El modelo parte de un corpus pequeno y muy especifico: 1.366 enunciados de entrenamiento y 341 de validacion procedentes del conjunto "AI Training Data for Foreign Korean Speech" de AI Hub, restringidos a la subtarea de lectura de textos guiados y con hablantes disjuntos entre train y validacion. El ajuste consistio en 500 pasos con batch size 8 y learning rate 1e-5, seleccionando el checkpoint con menor WER de validacion.
 
@@ -33,7 +33,7 @@ Los datos proceden del subconjunto de vietnamita (particion de validacion del re
 
 - Transcripcion de voz a texto en coreano para hablantes nativos de vietnamita, en contexto de lectura de textos guiados.
 - Reduccion sustancial del error en el dominio de entrenamiento: WER del 18,21% y CER del 9,33% en validacion, frente al 58,27% y 34,97% de la linea base.
-- Inferencia compatible con la libreria `transformers` y con el tag `endpoints_compatible` (despliegue via HuggingFace Endpoints).
+- Inferencia compatible con la libreria `transformers` y con el tag `endpoints_compatible` (despliegue via Hugging Face Endpoints).
 - Evaluacion reproducible con `WhisperProcessor` y `WhisperForConditionalGeneration`.
 - No se documenta soporte de tool calling ni de function calling.
 - No se documenta soporte de agentes ni de razonamiento multi-paso.
@@ -69,17 +69,17 @@ Notas sobre la evaluacion: el conjunto de test consta de 77 enunciados de un esc
 - VRAM estimada para inferencia: no disponible en la informacion proporcionada. Como referencia orientativa basada en el tamano del modelo base, un modelo de este orden cabria en menos de 1 GB en fp32 y en unos cientos de MB en fp16 o int8; se trata de una estimacion, no de un dato publicado.
 - GPU recomendadas: no disponibles en la informacion proporcionada. Por tamano, cualquier GPU consumer reciente es sobradamente suficiente y una GPU dedicada no es un requisito practico.
 - Compatibilidad con GPU consumer: si, previsiblemente en cualquier GPU consumer e incluso en CPU, dado el tamano reducido del modelo base; no hay mediciones publicadas que lo confirmen.
-- Opciones de despliegue: `transformers` (confirmado por el autor, con `WhisperProcessor` y `WhisperForConditionalGeneration`), HuggingFace Endpoints (tag `endpoints_compatible`), y formatos derivados habituales de Whisper como `whisper.cpp`, `faster-whisper` o `ctranslate2`, siempre que se realice previamente la conversion de pesos.
+- Opciones de despliegue: `transformers` (confirmado por el autor, con `WhisperProcessor` y `WhisperForConditionalGeneration`), Hugging Face Endpoints (tag `endpoints_compatible`), y formatos derivados habituales de Whisper como `whisper.cpp`, `faster-whisper` o `ctranslate2`, siempre que se realice previamente la conversion de pesos.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto de audio | WER en el test del autor | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `user06958409348/whisper-tiny-ko-vietnamese-accent` | No disponible (base tiny) | Ventana de audio del modelo base (30 s), no confirmado en la ficha | 44,27% | No disponible | HuggingFace, 0 descargas |
+| `user06958409348/whisper-tiny-ko-vietnamese-accent` | No disponible (base tiny) | Ventana de audio del modelo base (30 s), no confirmado en la ficha | 44,27% | No disponible | Hugging Face, 0 descargas |
 | `openai/whisper-tiny` (linea base) | Orden de 39 M (dato externo a la ficha) | 30 s | 52,73% | Licencia de OpenAI, no indicada en esta ficha | Ampliamente disponible |
 | Otros ajustes de Whisper para coreano con acento no nativo | No disponible | No disponible | No disponible | No disponible | No se han identificado referencias en la busqueda realizada |
-| `openai/whisper-base` / `openai/whisper-small` como alternativas de mayor tamano | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Disponibles en HuggingFace |
+| `openai/whisper-base` / `openai/whisper-small` como alternativas de mayor tamano | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Disponibles en Hugging Face |
 
 La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre alternativas comparables: los enlaces recuperados corresponden a la cadena de cines alemana Kinopolis y no guardan relacion con el modelo. Por tanto, no es posible establecer una comparativa documentada con otros ajustes de ASR para acento vietnamita en coreano.
 
@@ -100,7 +100,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/user06958409348/whisper-tiny-ko-vietnamese-accent
+- Modelo en Hugging Face: https://huggingface.co/user06958409348/whisper-tiny-ko-vietnamese-accent
 - Modelo base: `openai/whisper-tiny` (referenciado en la model card; no se proporciono URL directa)
 - Corpus de entrenamiento: AI Hub, "AI Training Data for Foreign Korean Speech" (referenciado en la model card; no se proporciono URL directa)
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo, su arquitectura o sus resultados; los resultados obtenidos eran de tematica ajena (cadena de cines Kinopolis) y se han descartado.

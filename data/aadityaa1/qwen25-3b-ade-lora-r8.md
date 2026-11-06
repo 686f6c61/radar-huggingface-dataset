@@ -72,10 +72,10 @@ Intervalos de confianza al 95 % por bootstrap pareado: adaptador frente a `gpt-o
 
 | Modelo | Parametros | Contexto | F1 de pares (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen2.5-3B + LoRA r8) | 3B (base) + LoRA | 32.768 (base) | 0,733 | Qwen Research (no comercial) | HuggingFace, formato MLX |
-| Qwen2.5-3B-Instruct con prompting 4-shot | 3B | 32.768 | 0,581 | Apache 2.0 (base) | HuggingFace, amplia variedad de formatos |
+| Este adaptador (Qwen2.5-3B + LoRA r8) | 3B (base) + LoRA | 32.768 (base) | 0,733 | Qwen Research (no comercial) | Hugging Face, formato MLX |
+| Qwen2.5-3B-Instruct con prompting 4-shot | 3B | 32.768 | 0,581 | Apache 2.0 (base) | Hugging Face, amplia variedad de formatos |
 | gpt-oss-120b con prompting 4-shot | 120B (MoE) | No disponible | 0,667 | No disponible en la informacion | API |
-| Qwen2.5-3B-Instruct zero-shot | 3B | 32.768 | 0,154 | Apache 2.0 (base) | HuggingFace |
+| Qwen2.5-3B-Instruct zero-shot | 3B | 32.768 | 0,154 | Apache 2.0 (base) | Hugging Face |
 
 La comparativa se limita a los modelos evaluados por el autor en la misma tarea y protocolo; no hay datos de otros adaptadores especializados en extraccion de eventos adversos.
 
@@ -95,7 +95,7 @@ La comparativa se limita a los modelos evaluados por el autor en la misma tarea 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aadityaa1/qwen25-3b-ade-lora-r8
+- Modelo en Hugging Face: https://huggingface.co/aadityaa1/qwen25-3b-ade-lora-r8
 - Repositorio del proyecto (codigo, particiones, logs y analisis de errores): https://github.com/aadityaa-dava/finetune-vs-prompt
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Base cuantizado en 4 bits para MLX: https://huggingface.co/mlx-community/Qwen2.5-3B-Instruct-4bit

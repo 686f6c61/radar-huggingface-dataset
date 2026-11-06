@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks en la información disponible (MMLU
 
 | Modelo | Parametros | Contexto | Precision / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (`aac6fef/laya-multilingual-coreml-adaptive-fp16`) | No disponible | 1024 tokens por grafo | FP16, Core ML adaptativo B=1/2/4/16 | Apache 2.0 | HuggingFace, 12 descargas |
-| `convaiinnovations/laya-multilingual` (upstream) | No disponible | No disponible | No disponible; requiere PyTorch/MLX/Transformers segun la model card | No disponible en la informacion | HuggingFace (modelo base) |
+| Este artefacto (`aac6fef/laya-multilingual-coreml-adaptive-fp16`) | No disponible | 1024 tokens por grafo | FP16, Core ML adaptativo B=1/2/4/16 | Apache 2.0 | Hugging Face, 12 descargas |
+| `convaiinnovations/laya-multilingual` (upstream) | No disponible | No disponible | No disponible; requiere PyTorch/MLX/Transformers segun la model card | No disponible en la informacion | Hugging Face (modelo base) |
 | Conversiones single-graph previas del mismo autor | No disponible | No disponible | Core ML de forma fija | No disponible | Mencionadas como no modificadas; no identificadas |
 | Otras alternativas de clasificacion Core ML | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -105,7 +105,7 @@ No se dispone de datos suficientes para comparar rendimiento, latencia o calidad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aac6fef/laya-multilingual-coreml-adaptive-fp16
+- Modelo en Hugging Face: https://huggingface.co/aac6fef/laya-multilingual-coreml-adaptive-fp16
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Evidencia de runtime y cualificación: https://github.com/mizorewww/laya-coreml/blob/main/docs/QUALIFICATION_0_5_1.md
 - Repositorio del runtime: https://github.com/mizorewww/laya-coreml

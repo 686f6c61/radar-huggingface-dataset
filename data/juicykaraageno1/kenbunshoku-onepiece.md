@@ -73,7 +73,7 @@ No se dispone de datos de benchmarks ni de métricas comparables para este siste
 | Parametros totales | no disponible (pesos 3,7 MB + 4,0 MB) | no disponible en esta ficha | no disponible en esta ficha |
 | Contexto | no aplica | no aplica | no aplica |
 | Licencia | Apache-2.0 | no disponible | no disponible |
-| Disponibilidad | ONNX público en HuggingFace | según implementación | según implementación |
+| Disponibilidad | ONNX público en Hugging Face | según implementación | según implementación |
 
 No se conocen alternativas específicas publicadas para reconocimiento de cartas de One Piece Card Game con las que comparar parámetros, contexto o rendimiento.
 
@@ -90,11 +90,11 @@ No se conocen alternativas específicas publicadas para reconocimiento de cartas
 - Idiomas: no disponible; la información no especifica soporte multilingüe ni idiomas de aplicación.
 - El toolkit cardvision (Python y TypeScript) no es público todavía, por lo que comandos como verify-release o infer no funcionan aún; hoy solo hay dos vías de uso reales (la extensión Kenbunshoku o un runtime ONNX propio).
 - Restricciones de licencia: los pesos se publican bajo Apache-2.0, pero conviene revisar aparte los derechos sobre catálogo, nombres y arte de cartas, que no se incluyen.
-- El tamaño del repositorio figura como 0,0 GB en los metadatos de HuggingFace, pese a contener archivos binarios; conviene verificar las sumas SHA256 tras la descarga.
+- El tamaño del repositorio figura como 0,0 GB en los metadatos de Hugging Face, pese a contener archivos binarios; conviene verificar las sumas SHA256 tras la descarga.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JuicyKaraageNo1/kenbunshoku-onepiece
+- Modelo en Hugging Face: https://huggingface.co/JuicyKaraageNo1/kenbunshoku-onepiece
 - Dataset de etiquetas: https://huggingface.co/datasets/JuicyKaraageNo1/kenbunshoku-onepiece-labels
 - Repositorio de la extensión Kenbunshoku: https://github.com/ryangswe/kenbunshoku
 - Sección "Built on cardvision" del repositorio: https://github.com/ryangswe/kenbunshoku#built-on-cardvision

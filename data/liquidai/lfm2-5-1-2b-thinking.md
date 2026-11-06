@@ -96,7 +96,7 @@ No se dispone en la informacion proporcionada de datos de benchmarks que permita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Base
 - Variante Instruct: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Variante JP: https://huggingface.co/LiquidAI/LFM2.5-1.2B-JP

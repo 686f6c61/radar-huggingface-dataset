@@ -97,7 +97,7 @@ No se dispone de comparativas con otros detectores de pelota de tenis específic
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/kjfk/tennis-ball-detector-yolov8m)
+- [Modelo en Hugging Face](https://huggingface.co/kjfk/tennis-ball-detector-yolov8m)
 - [Repositorio del proyecto tennis-auto-scoring](https://github.com/GuptaOum/tennis-auto-scoring)
 - [Script de entrenamiento](https://github.com/GuptaOum/tennis-auto-scoring/blob/main/training/train_ball.py)
 - [Dataset en Roboflow](https://universe.roboflow.com/) (referencia a `tennis-ball-detection-6`)

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`dashi/microduck-sprint-daily-20261102` es una política de control motriz (no un modelo de lenguaje) publicada en HuggingFace para el robot cuadrúpedo de bajo coste microduck, desarrollado por Pollen Robotics. El artefacto es un reentreno diario de la política `dashi/microduck-sprint-remix-r844`, que obtuvo una recompensa de 0,844, y se distribuye como un fichero `policy.onnx` con el normalizador de observaciones embebido. Está pensado para ocupar el slot de marcha (`walk`) del robot y ejecutarse de forma perpetua a 50 Hz.
+`dashi/microduck-sprint-daily-20261102` es una política de control motriz (no un modelo de lenguaje) publicada en Hugging Face para el robot cuadrúpedo de bajo coste microduck, desarrollado por Pollen Robotics. El artefacto es un reentreno diario de la política `dashi/microduck-sprint-remix-r844`, que obtuvo una recompensa de 0,844, y se distribuye como un fichero `policy.onnx` con el normalizador de observaciones embebido. Está pensado para ocupar el slot de marcha (`walk`) del robot y ejecutarse de forma perpetua a 50 Hz.
 
 El modelo recibe observaciones de 61 dimensiones y emite 14 acciones, entrenado mediante aprendizaje por refuerzo sobre el repositorio `pollen-robotics/microduck_rl` (rama `roll-backward`, commit `83599404a`). Es un fine-tune de `jrubiosainz/microduck-game-sprinter-remix3`, orientado a generar una marcha de tipo *sprint* para el robot.
 
-Su relevancia es acotada: se trata de un experimento de investigación en robótica de bajo coste con licencia no declarada, sin benchmarks publicados ni documentación de idiomas, y con un tamaño de repositorio de 0,0 GB según HuggingFace (lo que sugiere un artefacto muy pequeño o un fallo de reporte). No es un modelo de propósito general ni compite con LLMs.
+Su relevancia es acotada: se trata de un experimento de investigación en robótica de bajo coste con licencia no declarada, sin benchmarks publicados ni documentación de idiomas, y con un tamaño de repositorio de 0,0 GB según Hugging Face (lo que sugiere un artefacto muy pequeño o un fallo de reporte). No es un modelo de propósito general ni compite con LLMs.
 
 ## Especificaciones tecnicas
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Tipo | Observaciones | Acciones | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `dashi/microduck-sprint-daily-20261102` | Política RL (ONNX) | 61 dim | 14 | 50 Hz | no disponible | HuggingFace |
-| `jrubiosainz/microduck-game-sprinter-remix3` | Política RL (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| `dashi/microduck-sprint-remix-r844` | Política RL (origen del reentreno) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `dashi/microduck-sprint-daily-20261102` | Política RL (ONNX) | 61 dim | 14 | 50 Hz | no disponible | Hugging Face |
+| `jrubiosainz/microduck-game-sprinter-remix3` | Política RL (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| `dashi/microduck-sprint-remix-r844` | Política RL (origen del reentreno) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas variantes. Otras alternativas fuera del ecosistema microduck no están disponibles en la información proporcionada.
 
@@ -76,12 +76,12 @@ No se dispone de datos de rendimiento comparables entre estas variantes. Otras a
 - **Sesgos y alucinación**: no aplica en el sentido de LLM, pero sí existe riesgo de comportamientos no deseados (deriva, inestabilidad) propios de políticas RL sin evaluación exhaustiva.
 - **Idioma y contexto**: no aplica; no es un modelo de lenguaje.
 - **Documentación mínima**: la model card es muy escueta y no detalla arquitectura, datos de entrenamiento ni metodología de evaluación.
-- **Tamaño de repositorio anómalo**: HuggingFace reporta 0,0 GB, lo que puede indicar un problema de reporte o un artefacto extremadamente pequeño; conviene verificar la integridad de los ficheros antes de desplegar.
+- **Tamaño de repositorio anómalo**: Hugging Face reporta 0,0 GB, lo que puede indicar un problema de reporte o un artefacto extremadamente pequeño; conviene verificar la integridad de los ficheros antes de desplegar.
 - **Dependencia del ecosistema microduck**: el uso está atado al daemon `robotctl` y al manifiesto schema 2; no es portable a otros robots sin adaptación.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dashi/microduck-sprint-daily-20261102
+- Hugging Face: https://huggingface.co/dashi/microduck-sprint-daily-20261102
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix3
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `roll-backward`, commit `83599404a`); URL exacta no disponible en la información proporcionada.

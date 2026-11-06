@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `krishnaku/co2_eq_emissions`, no contiene un modelo de inteligencia artificial, sino un registro de contabilidad de emisiones de carbono asociado a un proceso de fine-tuning. La model card incluida documenta métricas verificadas de consumo energético y emisiones de CO₂ equivalente para una ejecución de entrenamiento concreta, identificada mediante el archivo `carbon_run_log_24f2008865.json`. El autor, `krishnaku`, ha publicado este registro como parte de una práctica de transparencia ambiental en el desarrollo de IA, siguiendo el estándar de la herramienta CodeCarbon.
+Este repositorio de Hugging Face, identificado como `krishnaku/co2_eq_emissions`, no contiene un modelo de inteligencia artificial, sino un registro de contabilidad de emisiones de carbono asociado a un proceso de fine-tuning. La model card incluida documenta métricas verificadas de consumo energético y emisiones de CO₂ equivalente para una ejecución de entrenamiento concreta, identificada mediante el archivo `carbon_run_log_24f2008865.json`. El autor, `krishnaku`, ha publicado este registro como parte de una práctica de transparencia ambiental en el desarrollo de IA, siguiendo el estándar de la herramienta CodeCarbon.
 
 El propósito de esta publicación es auditar el impacto climático de un entrenamiento específico, no ofrecer un modelo utilizable. Por tanto, cualquier evaluación técnica orientada a capacidades de generación, razonamiento o procesamiento de lenguaje no es aplicable. La relevancia de este repositorio radica en su contribución a la contabilidad de emisiones en el ciclo de vida de los modelos, un aspecto cada vez más demandado en entornos de investigación y producción responsables.
 
@@ -77,7 +77,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/krishnaku/co2_eq_emissions
+- Repositorio en Hugging Face: https://huggingface.co/krishnaku/co2_eq_emissions
 - Articulo sobre metodos de evaluacion de ganancia efectiva de IA y emisiones: https://www.sciencedirect.com/science/article/pii/S030147972300049X
 - Articulo sobre eco2AI, herramienta de seguimiento de emisiones: https://link.springer.com/article/10.1134/S1064562422060230
 - Version PDF del articulo eco2AI en ResearchGate: https://www.researchgate.net/publication/367275024_eco2AI_Carbon_Emissions_Tracking_of_Machine_Learning_Models_as_the_First_Step_Towards_Sustainable_AI

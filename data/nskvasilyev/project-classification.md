@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nskvasilyev/project-classification` es un prototipo de investigación de tipo Mixer orientado a tareas de clasificación, publicado por el usuario nskvasilyev en HuggingFace. Se trata de un artefacto experimental de escala "small" cuyo propósito declarado es documentar valores por defecto y formatos de fichero, no presentar resultados de rendimiento. El repositorio contiene código Python ejecutable (`predict.py`), configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`.
+`nskvasilyev/project-classification` es un prototipo de investigación de tipo Mixer orientado a tareas de clasificación, publicado por el usuario nskvasilyev en Hugging Face. Se trata de un artefacto experimental de escala "small" cuyo propósito declarado es documentar valores por defecto y formatos de fichero, no presentar resultados de rendimiento. El repositorio contiene código Python ejecutable (`predict.py`), configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`.
 
 El dato más relevante es su tamaño: 33.088 parámetros totales. Es, por tanto, un modelo minúsculo, muy alejado de los transformers de producción. La model card es explícita al señalar que el checkpoint no ha sido entrenado ni auditado, y que `model.safetensors` es únicamente una inicialización válida para pruebas de humo (smoke tests); no se presenta como un checkpoint con benchmarks. No se declara ninguna puntuación de evaluación.
 
@@ -77,4 +77,4 @@ No disponible. La información proporcionada no incluye resultados de benchmarks
 
 ## Enlaces
 
-- [HuggingFace: nskvasilyev/project-classification](https://huggingface.co/nskvasilyev/project-classification)
+- [Hugging Face: nskvasilyev/project-classification](https://huggingface.co/nskvasilyev/project-classification)

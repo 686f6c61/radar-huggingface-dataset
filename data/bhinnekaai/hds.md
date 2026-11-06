@@ -6,7 +6,7 @@ HDS (Homeostatic Distribution Score) es un marco experimental de detección de a
 
 El marco combina cinco componentes: análisis de distribución multiescala (con una aproximación híbrida euclidiana-mahalanobis), análisis de inconsistencia relacional lineal, análisis jerárquico de vecindarios mediante KD-Tree, fusión adaptativa de tokens (ponderación dependiente de la muestra de las señales estructurales) y recuperación de memoria episódica (búsqueda de muestras de referencia similares para incorporar contexto al score).
 
-Su relevancia radica en que ofrece una alternativa a métodos clásicos como Isolation Forest, LOF, HBOS, KNN-Distance, One-Class SVM o Robust Covariance, con resultados muy competitivos en algunos dominios (fraude con tarjeta de crédito, cribado de biomarcadores) aunque claramente inferiores en otros (intrusión en red, telemetría IoT). Se publica bajo licencia MIT y se distribuye a través de HuggingFace junto con los cinco datasets de evaluación.
+Su relevancia radica en que ofrece una alternativa a métodos clásicos como Isolation Forest, LOF, HBOS, KNN-Distance, One-Class SVM o Robust Covariance, con resultados muy competitivos en algunos dominios (fraude con tarjeta de crédito, cribado de biomarcadores) aunque claramente inferiores en otros (intrusión en red, telemetría IoT). Se publica bajo licencia MIT y se distribuye a través de Hugging Face junto con los cinco datasets de evaluación.
 
 ## Especificaciones tecnicas
 
@@ -171,7 +171,7 @@ La conclusión de los benchmarks es matizada: HDS domina en fraude con tarjeta y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BhinnekaAI/HDS
+- Modelo en Hugging Face: https://huggingface.co/BhinnekaAI/HDS
 - Dataset TSB-Fraud-Tabular: https://huggingface.co/datasets/BhinnekaAI/TSB-Fraud-Tabular
 - Dataset MNT-Log-Traffic: https://huggingface.co/datasets/BhinnekaAI/MNT-Log-Traffic
 - Dataset CLB-Patient-Screening: https://huggingface.co/datasets/BhinnekaAI/CLB-Patient-Screening

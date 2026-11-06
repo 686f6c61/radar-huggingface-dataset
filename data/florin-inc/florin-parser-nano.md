@@ -63,7 +63,7 @@ La confirmación con dos ejecuciones independientes dio 76,95 y 76,89 (diferenci
 - VRAM estimada para inferencia: el modelo tiene 1,156 M de parámetros en BF16, lo que supone aproximadamente 2,3 GB de pesos. Con overhead de activaciones y KV cache, se estima un uso de VRAM entre 4 y 6 GB para una imagen de resolución media.
 - GPU recomendadas: cualquier GPU consumer con al menos 6 GB de VRAM (RTX 3060, RTX 4060, RTX 4090) es suficiente. Para procesamiento por lotes o despliegue concurrente, se recomienda una GPU profesional (A10, A100, H100).
 - Cabe en GPUs consumer: sí, en todas las GPU de gama media y alta actuales.
-- Opciones de despliegue: al ser un modelo Safetensors en formato HuggingFace, puede servirse con vLLM, TGI o Transformers. Para entornos sin GPU, se puede convertir a GGUF y usar llama.cpp u Ollama, aunque no se documenta una conversión oficial.
+- Opciones de despliegue: al ser un modelo Safetensors en formato Hugging Face, puede servirse con vLLM, TGI o Transformers. Para entornos sin GPU, se puede convertir a GGUF y usar llama.cpp u Ollama, aunque no se documenta una conversión oficial.
 - Latencia y throughput: no se proporcionan datos medidos. Como referencia orientativa, un modelo de 1,2 B en una RTX 4090 puede alcanzar decenas de tokens por segundo, pero la latencia real depende del tamaño de la imagen de entrada y del número de tokens generados.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ La comparativa se limita al modelo base y al mejor resultado open-weight del ran
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/florin-inc/florin-parser-nano
+- Modelo en Hugging Face: https://huggingface.co/florin-inc/florin-parser-nano
 - Modelo base: https://huggingface.co/KDLAI/KDL-Frontier-Parser-nano
 - Repositorio de reproducción (entrenamiento, datos, evaluación): https://github.com/ammoman21/parsebench-open-weight-sota
 - Nota metodológica (mencionada en la model card, sin URL directa): no disponible

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "pdnhan/whisper-small.en-mobile",
+  "slug": "pdnhan-whisper-small-en-mobile",
+  "author": "pdnhan",
+  "url": "https://huggingface.co/pdnhan/whisper-small.en-mobile",
+  "created_at": "2026-11-03T05:51:07.000Z",
+  "updated_at": "2026-11-03T05:56:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "whisper",
+    "android",
+    "mobile",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:openai/whisper-small.en",
+    "base_model:quantized:openai/whisper-small.en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 249095874,
+  "storage_human": "249 MB",
+  "base_model": "openai/whisper-small.en",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pdnhan/whisper-small.en-mobile · Hugging Face",
+      "url": "https://huggingface.co/pdnhan/whisper-small.en-mobile",
+      "snippet": "An int8 ONNX copy of OpenAI's English-only Whisper small model, for on-device speech recognition with ONNX Runtime. The Thì Thầm app uses it for English. It is ..."
+    },
+    {
+      "title": "Whisper Small.en Mobile - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/pdnhan/whisper-small.en-mobile",
+      "snippet": "Registry entry for model Whisper Small.en Mobile; source metadata pending."
+    }
+  ]
+}

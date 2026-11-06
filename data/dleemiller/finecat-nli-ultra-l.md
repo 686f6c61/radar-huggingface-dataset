@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dleemiller/finecat-nli-ultra-l` es un repositorio de modelo alojado en HuggingFace por el usuario dleemiller, publicado el 16 de octubre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, y su model card se limita a la declaracion de licencia `apache-2.0`, sin ninguna descripcion del modelo. No se dispone de informacion verificable sobre arquitectura, tamano, datos de entrenamiento ni tarea objetivo.
+`dleemiller/finecat-nli-ultra-l` es un repositorio de modelo alojado en Hugging Face por el usuario dleemiller, publicado el 16 de octubre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, y su model card se limita a la declaracion de licencia `apache-2.0`, sin ninguna descripcion del modelo. No se dispone de informacion verificable sobre arquitectura, tamano, datos de entrenamiento ni tarea objetivo.
 
 El identificador del repositorio sugiere, por convencion de nomenclatura, un ajuste fino orientado a inferencia de lenguaje natural (NLI) —el sufijo `nli`— y un posible tamano grande —el sufijo `ultra-l`—, pero se trata de una interpretacion a partir del nombre y no de un dato confirmado por el autor. No debe tomarse como especificacion tecnica.
 
@@ -60,7 +60,7 @@ No disponible. Sin conocer el tamano, la arquitectura ni la tarea del modelo no 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dleemiller/finecat-nli-ultra-l | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace |
+| dleemiller/finecat-nli-ultra-l | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -75,6 +75,6 @@ No disponible. Sin conocer el tamano, la arquitectura ni la tarea del modelo no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dleemiller/finecat-nli-ultra-l
+- Hugging Face: https://huggingface.co/dleemiller/finecat-nli-ultra-l
 - Paper, blog, repositorio o demo: no disponible.
 - No se han encontrado en la busqueda web enlaces relevantes al modelo.

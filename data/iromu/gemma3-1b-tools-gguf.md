@@ -39,7 +39,7 @@ No se menciona el uso de RLHF ni DPO; se trata de un fine-tune supervisado (SFT)
 - Interacciones agénticas multi-paso: puede mantener conversaciones donde invoca herramientas de forma iterativa para completar tareas.
 - Generación de texto conversacional: hereda las capacidades de diálogo del modelo base Gemma 3 1B.
 - Despliegue ligero: al ser un modelo de ~1B en GGUF, puede ejecutarse en dispositivos con pocos recursos.
-- Compatibilidad con llama.cpp: se puede cargar directamente con `llama-cli` o `llama-server` usando el identificador de HuggingFace.
+- Compatibilidad con llama.cpp: se puede cargar directamente con `llama-cli` o `llama-server` usando el identificador de Hugging Face.
 - No se especifican capacidades multimodales (visión, audio) ni soporte de otros idiomas más allá del inglés en este fine-tune.
 
 ## Casos de uso
@@ -95,7 +95,7 @@ La comparativa se limita al modelo base y a su versión GGUF sin fine-tune, ya q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/iromu/Gemma3-1B-tools-GGUF
+- Repositorio Hugging Face: https://huggingface.co/iromu/Gemma3-1B-tools-GGUF
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation
 - Versión GGUF del modelo base (unsloth): https://huggingface.co/unsloth/gemma-3-1b-it-GGUF

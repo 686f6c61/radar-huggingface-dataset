@@ -67,8 +67,8 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- [Modelo en HuggingFace: JazerJu/glm-asr-ctc](https://huggingface.co/JazerJu/glm-asr-ctc)
+- [Modelo en Hugging Face: JazerJu/glm-asr-ctc](https://huggingface.co/JazerJu/glm-asr-ctc)
 - [Repositorio de exportación GGUF: JazerJu/GLM-ASR-CTC-GGUF](https://github.com/JazerJu/GLM-ASR-CTC-GGUF)
 - [Modelo preparado para benchmarks ONNX: JazerJu/glm-asr-ctc-bench](https://huggingface.co/JazerJu/glm-asr-ctc-bench)
 - [Repositorio oficial del modelo base: zai-org/GLM-ASR](https://github.com/zai-org/GLM-ASR/)
-- [Modelo base en HuggingFace: zai-org/GLM-ASR-Nano-2512](https://huggingface.co/zai-org/GLM-ASR-Nano-2512)
+- [Modelo base en Hugging Face: zai-org/GLM-ASR-Nano-2512](https://huggingface.co/zai-org/GLM-ASR-Nano-2512)

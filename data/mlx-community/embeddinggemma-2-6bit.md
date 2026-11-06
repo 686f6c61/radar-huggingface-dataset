@@ -76,8 +76,8 @@ Comparativa con el modelo base del que deriva esta conversion:
 
 | Modelo | Parametros | Dimensiones de embedding | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mlx-community/embeddinggemma-2-6bit | 744.371.512 | 768 (truncable a 128/256/512) | 6 bits affine, grupo 64 | Apache-2.0 | MLX, en HuggingFace |
-| google/embeddinggemma-2 (base) | no disponible | 768 | BF16 / FP32 | Apache-2.0 | Pesos originales en HuggingFace |
+| mlx-community/embeddinggemma-2-6bit | 744.371.512 | 768 (truncable a 128/256/512) | 6 bits affine, grupo 64 | Apache-2.0 | MLX, en Hugging Face |
+| google/embeddinggemma-2 (base) | no disponible | 768 | BF16 / FP32 | Apache-2.0 | Pesos originales en Hugging Face |
 
 No se dispone de datos para comparar con otras alternativas de embeddings de la misma categoria (por ejemplo, otros encoders de sentence-similarity), ya que la informacion proporcionada no incluye resultados de rendimiento de terceros.
 
@@ -94,7 +94,7 @@ No se dispone de datos para comparar con otras alternativas de embeddings de la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/embeddinggemma-2-6bit
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/embeddinggemma-2-6bit
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Revision del modelo base usada en la conversion: https://huggingface.co/google/embeddinggemma-2/tree/914f7f89142e33e77833254d9c9b90c3cef7303b
 - MLX-VLM (codigo de conversion y carga): https://github.com/Blaizzy/mlx-vlm/tree/3d87e88402f307efbf68e568971aa887ee7d9ed0

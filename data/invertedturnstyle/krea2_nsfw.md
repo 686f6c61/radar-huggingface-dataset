@@ -66,8 +66,8 @@ No se dispone de información sobre LoRAs equivalentes para Krea 2 u otros model
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Invertedturnstyle/krea2_nsfw
-- Modelo base Krea 2 Turbo (HuggingFace): https://huggingface.co/krea/Krea-2-Turbo (no verificado en la búsqueda, pero se menciona en los tags)
+- Hugging Face del modelo: https://huggingface.co/Invertedturnstyle/krea2_nsfw
+- Modelo base Krea 2 Turbo (Hugging Face): https://huggingface.co/krea/Krea-2-Turbo (no verificado en la búsqueda, pero se menciona en los tags)
 - Repositorio oficial de Krea 2 (GitHub): https://github.com/krea-ai/krea-2
 - Tutorial de Krea 2 en ComfyUI (NextDiffusion): https://www.nextdiffusion.ai/tutorials/krea-2-uncensored-text-to-image-generations-in-comfyui
 - Guía de Krea 2 oficial: https://www.krea.ai/krea-2

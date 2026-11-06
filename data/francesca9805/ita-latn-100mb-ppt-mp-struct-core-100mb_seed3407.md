@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `francesca9805/ita-latn-100mb-ppt-mp-struct-core-100mb_seed3407` es un ajuste fino (fine-tuning) del modelo base italiano `goldfish-models/ita_latn_100mb`, desarrollado por la usuaria de HuggingFace francesca9805. Se trata de un experimento academico de investigacion sobre tokenizacion y ajuste supervisado, entrenado con la libreria TRL (SFT) y publicado bajo la arquitectura GPT-2 con 124.770.816 parametros. El identificador del modelo sugiere que forma parte de un estudio sobre tokenizadores (proyecto de Weights & Biases denominado "new-tokenizers", vinculado a la Universidad de Groningen) y que se ha entrenado sobre un corpus de aproximadamente 100 MB de texto en italiano con una semilla concreta (3407).
+El modelo `francesca9805/ita-latn-100mb-ppt-mp-struct-core-100mb_seed3407` es un ajuste fino (fine-tuning) del modelo base italiano `goldfish-models/ita_latn_100mb`, desarrollado por la usuaria de Hugging Face francesca9805. Se trata de un experimento academico de investigacion sobre tokenizacion y ajuste supervisado, entrenado con la libreria TRL (SFT) y publicado bajo la arquitectura GPT-2 con 124.770.816 parametros. El identificador del modelo sugiere que forma parte de un estudio sobre tokenizadores (proyecto de Weights & Biases denominado "new-tokenizers", vinculado a la Universidad de Groningen) y que se ha entrenado sobre un corpus de aproximadamente 100 MB de texto en italiano con una semilla concreta (3407).
 
 El modelo resuelve la tarea de generacion de texto en italiano, partiendo de un modelo monolingue ya entrenado sobre 100 MB de datos en ese idioma. Al ser un ajuste fino de tipo SFT con TRL, no introduce una arquitectura nueva ni capacidades multimodales: es un artefacto experimental orientado a comparar configuraciones de tokenizacion y de entrenamiento dentro de un mismo pipeline.
 
-Su relevancia es limitada fuera del ambito de la investigacion: no tiene descargas ni interacciones en HuggingFace, no declara licencia clara y su tamano (124 M de parametros) lo situa en la gama de modelos pequenos para generacion de texto. Es util, eso si, como ejemplo reproducible de fine-tuning con TRL sobre un modelo monolingue de bajo coste computacional.
+Su relevancia es limitada fuera del ambito de la investigacion: no tiene descargas ni interacciones en Hugging Face, no declara licencia clara y su tamano (124 M de parametros) lo situa en la gama de modelos pequenos para generacion de texto. Es util, eso si, como ejemplo reproducible de fine-tuning con TRL sobre un modelo monolingue de bajo coste computacional.
 
 ## Especificaciones tecnicas
 
@@ -43,7 +43,7 @@ El entrenamiento de este ajuste se ha realizado mediante SFT (Supervised Fine-Tu
 - Reproduccion de experimentos academicos: utilizar el modelo como punto de referencia (baseline) en estudios de ajuste supervisado con TRL sobre corpora de 100 MB.
 - Generacion de texto en italiano de bajo coste computacional: al caber en CPU y en cualquier GPU de consumo, sirve para prototipos que requieran generacion de texto en italiano sin infraestructura dedicada.
 - Pruebas de pipeline de despliegue: verificar integraciones con `text-generation-inference`, `transformers` y endpoints compatibles antes de escalar a modelos mayores.
-- Educacion y docencia: ejemplo practico de fine-tuning de un GPT-2 monolingue con TRL, util en cursos de NLP para ilustrar el flujo completo (modelo base, SFT, publicacion en HuggingFace).
+- Educacion y docencia: ejemplo practico de fine-tuning de un GPT-2 monolingue con TRL, util en cursos de NLP para ilustrar el flujo completo (modelo base, SFT, publicacion en Hugging Face).
 - Generacion de datos sinteticos en italiano para tareas auxiliares (aumento de corpus, preanonimizacion de texto), siempre con supervision humana debido al riesgo de alucinacion en modelos pequenos.
 - Experimentos de destilacion o evaluacion de tecnicas de cuantizacion: al ser un modelo de 124 M de parametros, es idoneo para medir el impacto de 8-bit o 4-bit en la calidad de salida.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/ita-latn-100mb-ppt-mp-struct-core-100mb_seed3407 | 124,77 M | no disponible | SFT con TRL sobre goldfish-models/ita_latn_100mb | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/ita_latn_100mb | no disponible en la informacion proporcionada | no disponible | Entrenamiento monolingue sobre 100 MB de italiano | no disponible en la informacion proporcionada | HuggingFace (familia Goldfish) |
+| francesca9805/ita-latn-100mb-ppt-mp-struct-core-100mb_seed3407 | 124,77 M | no disponible | SFT con TRL sobre goldfish-models/ita_latn_100mb | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/ita_latn_100mb | no disponible en la informacion proporcionada | no disponible | Entrenamiento monolingue sobre 100 MB de italiano | no disponible en la informacion proporcionada | Hugging Face (familia Goldfish) |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | Entrenamiento en ingles web | MIT (pesos originales) | Ampliamente disponible |
-| Modelos italianos tipo LLaMA/Mistral fine-tuned | 7 B-70 B | 4k-128k | Preentrenamiento multilingue + SFT | variable | HuggingFace |
+| Modelos italianos tipo LLaMA/Mistral fine-tuned | 7 B-70 B | 4k-128k | Preentrenamiento multilingue + SFT | variable | Hugging Face |
 
 La comparativa directa con GPT-2 small es la mas pertinente por tamano, aunque el modelo aqui descrito esta especializado en italiano. Frente a alternativas de mayor tamano (7 B o mas) especializadas en italiano, este modelo queda muy por debajo en capacidad, contexto y calidad, pero tambien en coste de despliegue.
 
@@ -84,7 +84,7 @@ La comparativa directa con GPT-2 small es la mas pertinente por tamano, aunque e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-mp-struct-core-100mb_seed3407
+- Hugging Face: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-mp-struct-core-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/ita_latn_100mb
 - Registro de entrenamiento (Weights & Biases): https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/bi8lz12j
 - Repositorio de TRL: https://github.com/huggingface/trl

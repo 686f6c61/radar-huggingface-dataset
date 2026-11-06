@@ -92,7 +92,7 @@ Nota: no se dispone de resultados de benchmarks de nanites-whaler-1b-chat-gguf, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nanite-Labs/nanites-whaler-1b-chat-gguf
+- Modelo en Hugging Face: https://huggingface.co/Nanite-Labs/nanites-whaler-1b-chat-gguf
 - Repositorio del adaptador original: https://huggingface.co/Nanite-Labs/nanites-whaler-1b-chat
 - Modelo base usado por el autor: https://huggingface.co/unsloth/llama-3.2-1b-instruct
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct

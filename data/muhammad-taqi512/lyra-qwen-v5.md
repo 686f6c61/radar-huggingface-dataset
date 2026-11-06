@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LYRA-QWEN-V5 es un modelo publicado en HuggingFace por el usuario muhammad-taqi512 bajo licencia Apache-2.0. Por las etiquetas del repositorio (qwen2) y el recuento real de parámetros en los ficheros safetensors (3.085.938.688, aproximadamente 3,09 mil millones), se trata de un modelo derivado de la familia Qwen2, probablemente un ajuste fino, una fusión o una variante entrenada sobre una base Qwen2. El repositorio ocupa 6,2 GB y contiene pesos en formato safetensors.
+LYRA-QWEN-V5 es un modelo publicado en Hugging Face por el usuario muhammad-taqi512 bajo licencia Apache-2.0. Por las etiquetas del repositorio (qwen2) y el recuento real de parámetros en los ficheros safetensors (3.085.938.688, aproximadamente 3,09 mil millones), se trata de un modelo derivado de la familia Qwen2, probablemente un ajuste fino, una fusión o una variante entrenada sobre una base Qwen2. El repositorio ocupa 6,2 GB y contiene pesos en formato safetensors.
 
 La model card publicada no aporta información util: unicamente declara la licencia Apache-2.0 y no incluye descripcion, datos de entrenamiento, idiomas soportados, longitud de contexto ni resultados de evaluación. El modelo no registra descargas ni likes en el momento de la consulta, y no se ha localizado documentación técnica adicional, paper ni anuncio asociado.
 
@@ -69,14 +69,14 @@ Las cifras siguientes son estimaciones basadas en el recuento de parametros (3,0
 
 ## Comparativa con modelos similares
 
-Los datos de LYRA-QWEN-V5 provienen del repositorio; los de los modelos de referencia, de sus fichas oficiales publicadas en HuggingFace.
+Los datos de LYRA-QWEN-V5 provienen del repositorio; los de los modelos de referencia, de sus fichas oficiales publicadas en Hugging Face.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LYRA-QWEN-V5 | 3,09B | no disponible | Apache-2.0 | HuggingFace |
-| Qwen2.5-3B | 3,09B | 32.768 tokens, ampliable a 131.072 con RoPE | Apache-2.0 / Qwen | HuggingFace |
-| Llama-3.2-3B | 3,21B | 128.000 tokens | Llama 3.2 Community License | HuggingFace |
-| Phi-3.5-mini-instruct | 3,8B | 128.000 tokens | MIT | HuggingFace |
+| LYRA-QWEN-V5 | 3,09B | no disponible | Apache-2.0 | Hugging Face |
+| Qwen2.5-3B | 3,09B | 32.768 tokens, ampliable a 131.072 con RoPE | Apache-2.0 / Qwen | Hugging Face |
+| Llama-3.2-3B | 3,21B | 128.000 tokens | Llama 3.2 Community License | Hugging Face |
+| Phi-3.5-mini-instruct | 3,8B | 128.000 tokens | MIT | Hugging Face |
 
 La comparacion en rendimiento no es posible: LYRA-QWEN-V5 no publica resultados de evaluacion, por lo que no se puede situar frente a estas alternativas. La ventaja objetiva del modelo es su licencia Apache-2.0, mas permisiva que la de Llama 3.2, aunque coincide con la de Qwen2.5 y es menos permisiva que la MIT de Phi-3.5-mini en la practica total.
 
@@ -93,5 +93,5 @@ La comparacion en rendimiento no es posible: LYRA-QWEN-V5 no publica resultados 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/muhammad-taqi512/LYRA-QWEN-V5
+- Repositorio en Hugging Face: https://huggingface.co/muhammad-taqi512/LYRA-QWEN-V5
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: ni paper, ni blog, ni repositorio de codigo, ni demo.

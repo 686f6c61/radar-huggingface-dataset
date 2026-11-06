@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Haribz/test1` es una publicación en HuggingFace creada por el usuario Haribz, con fecha de creación indicada como 19 de agosto de 2026 (fecha futura que sugiere un error de metadatos o un marcador de posición). En el momento de la consulta, el modelo no registra descargas ni valoraciones, y su model card es extremadamente escasa y contradictoria. El pipeline declarado es `text-to-image`, pero los metadatos incluyen etiquetas tan diversas como `art`, `code`, `biology`, `chemistry`, `music` y `not-for-all-audiences`, además de listar como modelos base varios sistemas de generación de vídeo e imagen (HunyuanVideo, FLUX.2-dev, Z-Image-Turbo). No se proporciona ninguna información técnica concreta sobre arquitectura, número de parámetros, contexto o proceso de entrenamiento.
+El modelo `Haribz/test1` es una publicación en Hugging Face creada por el usuario Haribz, con fecha de creación indicada como 19 de agosto de 2026 (fecha futura que sugiere un error de metadatos o un marcador de posición). En el momento de la consulta, el modelo no registra descargas ni valoraciones, y su model card es extremadamente escasa y contradictoria. El pipeline declarado es `text-to-image`, pero los metadatos incluyen etiquetas tan diversas como `art`, `code`, `biology`, `chemistry`, `music` y `not-for-all-audiences`, además de listar como modelos base varios sistemas de generación de vídeo e imagen (HunyuanVideo, FLUX.2-dev, Z-Image-Turbo). No se proporciona ninguna información técnica concreta sobre arquitectura, número de parámetros, contexto o proceso de entrenamiento.
 
 La relevancia de esta publicación es prácticamente nula desde el punto de vista técnico: no hay evidencia de que el modelo sea funcional, esté documentado o tenga utilidad real para desarrolladores o investigadores. La ausencia de descargas y de una model card coherente apunta a que se trata de un experimento, un placeholder o un intento de publicación incompleto. Por tanto, esta ficha se limita a describir los datos disponibles y a advertir de la imposibilidad de evaluar el modelo con criterios técnicos.
 
@@ -54,7 +54,7 @@ No disponible. No se puede establecer una comparación con otros modelos de gene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Haribz/test1
+- Modelo en Hugging Face: https://huggingface.co/Haribz/test1
 - Referencias externas encontradas en la búsqueda web (no relacionadas directamente con este modelo, sino con modelos homónimos en otras plataformas):
   - https://pixai.art/en/model/2036877882429634365
   - https://tensor.art/models/911881805936782215

@@ -98,7 +98,7 @@ Otros modelos de embeddings de tamano comparable: no disponible en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anudit/embeddinggemma-300m-ONNX-sliding-window
+- Modelo en Hugging Face: https://huggingface.co/anudit/embeddinggemma-300m-ONNX-sliding-window
 - Modelo base: https://huggingface.co/google/embeddinggemma-300m
 - Export ONNX de origen: https://huggingface.co/onnx-community/embeddinggemma-300m-ONNX
 - Resultados completos de comparacion: embeddinggemma-comparison.md (incluido en el repositorio)

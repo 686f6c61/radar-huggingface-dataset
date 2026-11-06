@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables de lectura de dados poli
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/G-G-Games/diecamera-models
+- Modelo en Hugging Face: https://huggingface.co/G-G-Games/diecamera-models
 - Dataset de entrenamiento: https://huggingface.co/datasets/G-G-Games/diecamera-dice
 - Repositorio de la aplicación dieCamera: https://github.com/eschatus/diecamera
 - Código del lector local (pipeline completo): https://github.com/eschatus/diecamera/tree/main/src/readers/local

@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - **VRAM estimada**: no disponible, ya que se desconocen el numero de parametros. Una escala *huge* en una arquitectura transformer multimodal probablemente supere los 7B de parametros, lo que requeriria al menos 40 GB de VRAM en fp16 para inferencia, pero es una estimacion no verificada.
 - **GPU recomendadas**: no disponible. Si el modelo sigue la escala huge de otros transformers, podria necesitar GPUs de datacenter como A100 (80 GB) o H100 (80 GB).
 - **En consumer GPU**: probablemente no cabe en GPUs de consumo como RTX 4090 (24 GB) a menos que se cuantice a 4-bit, pero no hay datos para confirmarlo.
-- **Opciones de despliegue**: no se ha probado con vLLM, llama.cpp, Ollama ni TGI. Al ser una arquitectura BLIP, la integracion con Transformers de HuggingFace es plausible, pero no se proporciona un pipeline de inferencia.
+- **Opciones de despliegue**: no se ha probado con vLLM, llama.cpp, Ollama ni TGI. Al ser una arquitectura BLIP, la integracion con Transformers de Hugging Face es plausible, pero no se proporciona un pipeline de inferencia.
 - **Latencia y throughput**: no disponibles.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ La comparativa se limita a la familia BLIP oficial, ya que no hay informacion so
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Yehorshevchenko/model_178275541_blip_huge](https://huggingface.co/Yehorshevchenko/model_178275541_blip_huge)
-- Documentacion de BLIP en HuggingFace: [https://huggingface.co/docs/transformers/model_doc/blip](https://huggingface.co/docs/transformers/model_doc/blip)
+- Repositorio Hugging Face: [Yehorshevchenko/model_178275541_blip_huge](https://huggingface.co/Yehorshevchenko/model_178275541_blip_huge)
+- Documentacion de BLIP en Hugging Face: [https://huggingface.co/docs/transformers/model_doc/blip](https://huggingface.co/docs/transformers/model_doc/blip)
 - Repositorio oficial de BLIP (Salesforce): [https://github.com/salesforce/BLIP](https://github.com/salesforce/BLIP)
 - Modelo oficial BLIP large: [https://huggingface.co/Salesforce/blip-image-captioning-large](https://huggingface.co/Salesforce/blip-image-captioning-large)

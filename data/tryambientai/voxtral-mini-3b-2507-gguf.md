@@ -55,7 +55,7 @@ El modelo es el hermano pequeño de Voxtral Small 24B: comparte codificador, pro
 |---|---:|---:|---:|---:|---:|---:|
 | WER LibriSpeech test-clean (%) | 1,88 | 1,89 | 1,87 | 1,87 | 1,91 | 1,94 |
 
-Referencia en HuggingFace Transformers (VoxtralForConditionalGeneration, BF16, attn_implementation=eager, greedy): 1,87% WER. El GGUF BF16 coincide dentro del redondeo. La paridad BF16-referencia es la puerta de validación numérica de la familia: 43 tensores verificados dentro de tolerancia y transcripción byte-exacta.
+Referencia en Hugging Face Transformers (VoxtralForConditionalGeneration, BF16, attn_implementation=eager, greedy): 1,87% WER. El GGUF BF16 coincide dentro del redondeo. La paridad BF16-referencia es la puerta de validación numérica de la familia: 43 tensores verificados dentro de tolerancia y transcripción byte-exacta.
 
 | Métrica de rendimiento | Valor |
 |---|---|
@@ -103,8 +103,8 @@ No se dispone en la información proporcionada de datos comparativos de benchmar
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/tryambientai/Voxtral-Mini-3B-2507-gguf
-- Modelo base en HuggingFace: https://huggingface.co/mistralai/Voxtral-Mini-3B-2507
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/tryambientai/Voxtral-Mini-3B-2507-gguf
+- Modelo base en Hugging Face: https://huggingface.co/mistralai/Voxtral-Mini-3B-2507
 - Commit del modelo base usado para la conversión: https://huggingface.co/mistralai/Voxtral-Mini-3B-2507/commit/3060fe3
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Commit de validación de transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/tree/483c122

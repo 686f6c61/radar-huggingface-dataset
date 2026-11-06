@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `MatthewSmith212/ppo-Lunar-Lander-v2` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno `LunarLander-v2` de Gymnasium. Lo publica el usuario MatthewSmith212 en HuggingFace y se ha generado con la librería `stable-baselines3`, el framework de referencia para implementar algoritmos de RL en PyTorch de forma reproducible. No es un modelo de lenguaje: es una política de control entrenada para una tarea concreta de decisión secuencial.
+El modelo `MatthewSmith212/ppo-Lunar-Lander-v2` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno `LunarLander-v2` de Gymnasium. Lo publica el usuario MatthewSmith212 en Hugging Face y se ha generado con la librería `stable-baselines3`, el framework de referencia para implementar algoritmos de RL en PyTorch de forma reproducible. No es un modelo de lenguaje: es una política de control entrenada para una tarea concreta de decisión secuencial.
 
 El problema que resuelve es el aterrizaje controlado de una nave en una plataforma, un entorno clásico de benchmark en RL con espacio de observación continuo y espacio de acciones discreto. La relevancia de este tipo de artefactos es doble: sirve como línea base reproducible para comparar algoritmos y como ejemplo didáctico de cómo se publica y versiona una política de RL en el Hub, algo cada vez más habitual con la integración de `huggingface_sb3`.
 
-La model card es un esqueleto generado automáticamente por el proceso de subida a HuggingFace: incluye metadatos y un bloque de uso marcado como pendiente ("TODO"). No hay información publicada sobre la arquitectura de red exacta, el número de parámetros, la licencia ni el proceso de entrenamiento más allá del algoritmo y el entorno. La métrica declarada por el autor es un `mean_reward` de 250,99 +/- 18,18 sobre `LunarLander-v2`, sin verificación independiente.
+La model card es un esqueleto generado automáticamente por el proceso de subida a Hugging Face: incluye metadatos y un bloque de uso marcado como pendiente ("TODO"). No hay información publicada sobre la arquitectura de red exacta, el número de parámetros, la licencia ni el proceso de entrenamiento más allá del algoritmo y el entorno. La métrica declarada por el autor es un `mean_reward` de 250,99 +/- 18,18 sobre `LunarLander-v2`, sin verificación independiente.
 
 ## Especificaciones tecnicas
 
@@ -38,7 +38,7 @@ Tampoco hay informacion publicada sobre el numero de timesteps, la semilla, los 
 - Aprendizaje por refuerzo discreto: salida sobre un espacio de acciones finito (no hay generacion de texto ni razonamiento simbolico).
 - Uso como linea base de PPO: sirve para comparar curvas de recompensa y estabilidad frente a otros algoritmos.
 - Inferencia con `stable-baselines3`: carga del modelo y `predict()` sobre observaciones del entorno.
-- Integracion con el ecosistema HuggingFace: descarga mediante `huggingface_sb3.load_from_hub`.
+- Integracion con el ecosistema Hugging Face: descarga mediante `huggingface_sb3.load_from_hub`.
 - Soporte de tool calling: no aplica.
 - Soporte de agentes multi-paso en el sentido de LLM: no aplica; el agente opera paso a paso dentro del entorno de RL.
 - Capacidades multilingues: no aplica.
@@ -76,7 +76,7 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 | Modelo | Algoritmo | Entorno | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MatthewSmith212/ppo-Lunar-Lander-v2 | PPO | LunarLander-v2 | no aplica | no disponible | HuggingFace Hub |
+| MatthewSmith212/ppo-Lunar-Lander-v2 | PPO | LunarLander-v2 | no aplica | no disponible | Hugging Face Hub |
 | Alternativas DQN sobre LunarLander-v2 | DQN | LunarLander-v2 | no aplica | no disponible | no disponible en la informacion proporcionada |
 | Alternativas A2C sobre LunarLander-v2 | A2C | LunarLander-v2 | no aplica | no disponible | no disponible en la informacion proporcionada |
 
@@ -96,7 +96,7 @@ No se dispone de datos concretos de modelos comparables (recompensa media, taman
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MatthewSmith212/ppo-Lunar-Lander-v2
+- Modelo en Hugging Face: https://huggingface.co/MatthewSmith212/ppo-Lunar-Lander-v2
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v2 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/

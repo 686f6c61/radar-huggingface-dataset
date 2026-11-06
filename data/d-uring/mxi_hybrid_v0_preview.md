@@ -44,7 +44,7 @@ Tampoco se detallan los datos de entrenamiento: la model card afirma explícitam
 
 - Evaluación de políticas de manipulación en simulador: el modelo se cargaría mediante el adaptador XPolicyLab apuntando a `model/`, dentro de un contenedor compatible con Ubuntu 22.04, para ejecutar rollouts de tareas como `stack_blocks` y comparar el comportamiento frente a la evidencia de aceptación incluida.
 - Reproducción de la aceptación local: un equipo puede replicar las comprobaciones documentadas en `ACCEPTANCE.json` (protocolo, rollout y verificación numérica de migración) para validar que su entorno de simulación y driver NVIDIA producen resultados consistentes.
-- Verificación de cadena de suministro de modelos: el flujo de hash SHA256 y commit fijado de HuggingFace permite integrar el artefacto en pipelines internos con control de integridad, útil en entornos donde la procedencia del modelo es un requisito.
+- Verificación de cadena de suministro de modelos: el flujo de hash SHA256 y commit fijado de Hugging Face permite integrar el artefacto en pipelines internos con control de integridad, útil en entornos donde la procedencia del modelo es un requisito.
 - Investigación en robótica con composición modular: al requerir planner, acción, base y normalización conjuntos, el paquete sirve como base para estudiar cómo interactúan estos componentes en tareas de manipulación.
 - Desarrollo de adaptadores de inferencia: el runtime incluido contiene la implementación de inferencia, lo que permite a ingenieros estudiar o extender la integración con XPolicyLab y otros frameworks de evaluación.
 - Pruebas de migración numérica: la comprobación con observación fija repetida dos veces sirve como caso de prueba para validar portabilidad de implementaciones entre entornos.
@@ -77,10 +77,10 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 - Requiere cargar planner, acción, base y normalización juntos; usar la raíz del repositorio o un fichero de acción aislado como checkpoint no es válido.
 - Requisitos de hardware elevados: GPU de 96 GB en la validación, contenedores Ubuntu 22.04 y driver NVIDIA compatible aportado por el evaluador.
 - No se incluyen datos de entrenamiento, lo que impide auditar sesgos, composición del dataset o riesgo de alucinación en el sentido habitual de modelos de lenguaje.
-- El nombre `PRIVATE_DELIVERY.txt` y el lenguaje de acceso privado en los registros de aceptación describen la etapa original de empaquetado; el autor aclara que la descarga pública está autorizada, pero conviene fijar un commit de HuggingFace y verificar el hash SHA256 antes de instalar o ejecutar el runtime.
+- El nombre `PRIVATE_DELIVERY.txt` y el lenguaje de acceso privado en los registros de aceptación describen la etapa original de empaquetado; el autor aclara que la descarga pública está autorizada, pero conviene fijar un commit de Hugging Face y verificar el hash SHA256 antes de instalar o ejecutar el runtime.
 - No hay información sobre idiomas soportados, sesgos conocidos, limitaciones de contexto ni comportamiento fuera del simulador.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/D-URing/mxi_Hybrid_v0_preview
+- Hugging Face: https://huggingface.co/D-URing/mxi_Hybrid_v0_preview
 - Repositorio GitHub (código canónico y adaptador XPolicyLab): https://github.com/D-URing/MXI

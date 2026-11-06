@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iris-3b-turbo-mflux-q5 (este) | 3B (según nombre) | no disponible | MLX safetensors Q5 | apache-2.0 | HuggingFace, 20 descargas |
-| iris-3b-turbo-mflux-bf16 | 3B (según nombre) | no disponible | MLX safetensors BF16 | apache-2.0 | HuggingFace (mismo espacio) |
-| iris-3b-turbo-mflux-q3 | 3B (según nombre) | no disponible | MLX safetensors Q3 | apache-2.0 | HuggingFace (mismo espacio) |
-| speridlabs/iris-3b (original) | 3B (según nombre) | no disponible | no disponible | apache-2.0 | HuggingFace |
+| iris-3b-turbo-mflux-q5 (este) | 3B (según nombre) | no disponible | MLX safetensors Q5 | apache-2.0 | Hugging Face, 20 descargas |
+| iris-3b-turbo-mflux-bf16 | 3B (según nombre) | no disponible | MLX safetensors BF16 | apache-2.0 | Hugging Face (mismo espacio) |
+| iris-3b-turbo-mflux-q3 | 3B (según nombre) | no disponible | MLX safetensors Q3 | apache-2.0 | Hugging Face (mismo espacio) |
+| speridlabs/iris-3b (original) | 3B (según nombre) | no disponible | no disponible | apache-2.0 | Hugging Face |
 
 No se dispone de información sobre modelos de difusión de terceros comparables (por ejemplo, variantes de Stable Diffusion o Flux) en la documentación proporcionada, por lo que no se incluyen en la tabla para no introducir datos no verificados.
 
@@ -84,7 +84,7 @@ No se dispone de información sobre modelos de difusión de terceros comparables
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mflux-community/iris-3b-turbo-mflux-q5
+- Repositorio Hugging Face: https://huggingface.co/mflux-community/iris-3b-turbo-mflux-q5
 - Modelo base original: https://huggingface.co/speridlabs/iris-3b
 - MFlux (implementación MLX): https://github.com/filipstrand/mflux
 - Variante BF16: https://huggingface.co/mflux-community/iris-3b-turbo-mflux-bf16

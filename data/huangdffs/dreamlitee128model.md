@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DreamLiteE128Model es un modelo publicado en HuggingFace por el usuario huangdffs bajo licencia Apache 2.0. Se distribuye en formato diffusers con pesos safetensors y cuenta con 375.689.280 parametros totales (aproximadamente 376 millones), lo que lo situa en la gama de modelos ligeros. El repositorio ocupa 29,5 GB, un tamano desproporcionadamente grande respecto al numero de parametros, lo que sugiere la presencia de multiples variantes de pesos o ficheros auxiliares en el repo.
+DreamLiteE128Model es un modelo publicado en Hugging Face por el usuario huangdffs bajo licencia Apache 2.0. Se distribuye en formato diffusers con pesos safetensors y cuenta con 375.689.280 parametros totales (aproximadamente 376 millones), lo que lo situa en la gama de modelos ligeros. El repositorio ocupa 29,5 GB, un tamano desproporcionadamente grande respecto al numero de parametros, lo que sugiere la presencia de multiples variantes de pesos o ficheros auxiliares en el repo.
 
 La model card es extremadamente escasa: unicamente incluye la declaracion de licencia y una linea de texto ("128 with taesd_qi_2_1 f16c64") que parece hacer referencia a un VAE/decoder TAESD (Tiny AutoEncoder for Stable Diffusion) combinado con alguna configuracion de cuantizacion o precision. No se documenta arquitectura, datos de entrenamiento, capacidades ni casos de uso. La etiqueta `diffusers` indica que esta pensado para pipelines de difusion (generacion de imagenes), no para generacion de texto.
 
@@ -74,4 +74,4 @@ No disponible. La informacion proporcionada no permite identificar modelos compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huangdffs/dreamlitee128model
+- Hugging Face: https://huggingface.co/huangdffs/dreamlitee128model

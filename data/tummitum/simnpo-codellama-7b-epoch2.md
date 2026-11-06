@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SimNPO-CodeLlama-7B (este) | 7B + adaptador LoRA | 16K | No disponible | HuggingFace (adaptador) |
-| CodeLlama-7B (base) | 7B | 16K | Llama 2 Community License | HuggingFace |
-| CodeLlama-7B-Instruct | 7B | 16K | Llama 2 Community License | HuggingFace |
-| DeepSeek-Coder-6.7B | 6.7B | 16K | MIT | HuggingFace |
+| SimNPO-CodeLlama-7B (este) | 7B + adaptador LoRA | 16K | No disponible | Hugging Face (adaptador) |
+| CodeLlama-7B (base) | 7B | 16K | Llama 2 Community License | Hugging Face |
+| CodeLlama-7B-Instruct | 7B | 16K | Llama 2 Community License | Hugging Face |
+| DeepSeek-Coder-6.7B | 6.7B | 16K | MIT | Hugging Face |
 
 La comparativa se limita a modelos de tamaño similar. No se dispone de datos de rendimiento para este adaptador, por lo que no es posible comparar calidad. La principal diferencia es que este modelo es un adaptador LoRA, no un modelo completo, y carece de documentación y licencia clara.
 
@@ -76,6 +76,6 @@ La comparativa se limita a modelos de tamaño similar. No se dispone de datos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tummitum/SimNPO-CodeLlama-7B-epoch2
+- Hugging Face: https://huggingface.co/tummitum/SimNPO-CodeLlama-7B-epoch2
 - Modelo base CodeLlama-7B: https://huggingface.co/codellama/CodeLlama-7b-hf
 - Paper de emisiones (referenciado en tags): https://arxiv.org/abs/1910.09700

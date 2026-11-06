@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jacobgcampbell/perceiver-contrastive-study` es un prototipo de investigación publicado en HuggingFace por el autor jacobgcampbell. Se presenta como una implementación propia de una arquitectura Perceiver orientada a aprendizaje contrastivo (contrastive learning). Pese a que la configuración interna etiqueta la escala como "huge", el checkpoint real en safetensors contiene únicamente 49.600 parámetros, lo que lo sitúa en el rango de un modelo de juguete y no de un modelo de producción.
+`jacobgcampbell/perceiver-contrastive-study` es un prototipo de investigación publicado en Hugging Face por el autor jacobgcampbell. Se presenta como una implementación propia de una arquitectura Perceiver orientada a aprendizaje contrastivo (contrastive learning). Pese a que la configuración interna etiqueta la escala como "huge", el checkpoint real en safetensors contiene únicamente 49.600 parámetros, lo que lo sitúa en el rango de un modelo de juguete y no de un modelo de producción.
 
 El propio autor indica de forma explícita que el repositorio es un punto de partida experimental: `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un modelo entrenado, y no se reclama ninguna métrica de benchmark. El repositorio incluye la implementación en Python (`model.py`), la configuración de arquitectura (`config.json`) y una receta de experimento por defecto (`training_args.json`).
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jacobgcampbell/perceiver-contrastive-study | 49.600 | no disponible | sin entrenar (inicializacion) | apache-2.0 | HuggingFace, codigo propio |
+| jacobgcampbell/perceiver-contrastive-study | 49.600 | no disponible | sin entrenar (inicializacion) | apache-2.0 | Hugging Face, codigo propio |
 | Perceiver original (referencia academica) | no disponible | no disponible | entrenado en las publicaciones originales | no aplica | publicacion cientifica |
 | Perceiver IO (referencia academica) | no disponible | no disponible | entrenado en las publicaciones originales | no aplica | publicacion cientifica |
 
@@ -83,5 +83,5 @@ No hay modelos comparables directos en la informacion proporcionada: el artefact
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jacobgcampbell/perceiver-contrastive-study
+- Hugging Face: https://huggingface.co/jacobgcampbell/perceiver-contrastive-study
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

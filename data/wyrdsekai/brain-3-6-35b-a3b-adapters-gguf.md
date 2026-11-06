@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wyrdsekai/brain-3.6-35b-a3b-adapters-gguf | ~6,4M en adaptadores LoRA (base 35B, ~3B activos) | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace |
-| Adaptadores LoRA genericos para Qwen3-30B-A3B | variable | depende del modelo base | variable | variable | HuggingFace |
-| Modelo base Qwen3.6-35B-A3B (Unsloth, GGUF) | 35B (~3B activos) | no disponible | no disponible | segun el modelo base | HuggingFace |
+| wyrdsekai/brain-3.6-35b-a3b-adapters-gguf | ~6,4M en adaptadores LoRA (base 35B, ~3B activos) | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face |
+| Adaptadores LoRA genericos para Qwen3-30B-A3B | variable | depende del modelo base | variable | variable | Hugging Face |
+| Modelo base Qwen3.6-35B-A3B (Unsloth, GGUF) | 35B (~3B activos) | no disponible | no disponible | segun el modelo base | Hugging Face |
 
 No se dispone de datos suficientes para una comparativa cuantitativa fiable. La comparacion con otros conjuntos de adaptadores LoRA del mismo modelo base no es posible sin conocer los benchmarks ni la composicion exacta de los datasets de entrenamiento.
 
@@ -82,6 +82,6 @@ No se dispone de datos suficientes para una comparativa cuantitativa fiable. La 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wyrdsekai/brain-3.6-35b-a3b-adapters-gguf
+- Repositorio Hugging Face: https://huggingface.co/wyrdsekai/brain-3.6-35b-a3b-adapters-gguf
 - Modelo base: https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF
 - Repositorio Wyrdsekai y documento `docs/public/CONFIGURATION.md`: referenciados en la model card, URL no disponible en la informacion proporcionada.

@@ -45,7 +45,7 @@ El entrenamiento del modelo original (BAAI/bge-m3) se realizó con datos multili
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible para esta conversion especifica (`olafuraron/bge-m3-safetensors`). El modelo original BAAI/bge-m3 reporta mejoras frente a otros modelos de embeddings en tareas como MIRACL, MKQA y NQ, pero esos datos no estan incluidos en el repositorio analizado. Para una evaluacion rigurosa, se recomienda consultar el paper oficial de BGE-M3 o los benchmarks publicados en su pagina de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible para esta conversion especifica (`olafuraron/bge-m3-safetensors`). El modelo original BAAI/bge-m3 reporta mejoras frente a otros modelos de embeddings en tareas como MIRACL, MKQA y NQ, pero esos datos no estan incluidos en el repositorio analizado. Para una evaluacion rigurosa, se recomienda consultar el paper oficial de BGE-M3 o los benchmarks publicados en su pagina de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 - VRAM estimada para inferencia: al menos 2.5 GB en FP32, o 1.5 GB en FP16, para procesar un lote pequeño (batch size 1) con secuencias de longitud moderada.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM (por ejemplo, GTX 1660, RTX 3050, RTX 3060) puede ejecutar el modelo en FP16. Para procesar lotes grandes o secuencias de 8192 tokens, se recomienda una GPU con 8 GB o mas (RTX 3070, RTX 4080, A100, etc.).
 - Tambien puede ejecutarse en CPU, aunque la latencia sera mayor. Para despliegue en produccion con alta concurrencia, se sugiere usar una GPU.
-- Opciones de despliegue: se puede cargar con la libreria `safetensors` de HuggingFace, usar `sentence-transformers` para facil integracion, o servir con `FlagEmbedding` (la libreria oficial de BAAI). Para inferencia masiva, se puede adaptar a `vLLM` o `TGI`, aunque estos frameworks se enfocan en modelos generativos; para embeddings se suele usar `TEI` (Text Embeddings Inference) de HuggingFace.
+- Opciones de despliegue: se puede cargar con la libreria `safetensors` de Hugging Face, usar `sentence-transformers` para facil integracion, o servir con `FlagEmbedding` (la libreria oficial de BAAI). Para inferencia masiva, se puede adaptar a `vLLM` o `TGI`, aunque estos frameworks se enfocan en modelos generativos; para embeddings se suele usar `TEI` (Text Embeddings Inference) de Hugging Face.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. Depende del hardware y del tamaño de lote.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ La principal diferencia de esta conversion respecto al original es el formato de
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo analizado: https://huggingface.co/olafuraron/bge-m3-safetensors
+- Repositorio Hugging Face del modelo analizado: https://huggingface.co/olafuraron/bge-m3-safetensors
 - Repositorio similar (trollathon/bge-m3-safetensors): https://huggingface.co/trollathon/bge-m3-safetensors
 - Version optimizada por Furiosa AI: https://huggingface.co/furiosa-ai/bge-m3
 - Modelo original de BAAI: https://huggingface.co/BAAI/bge-m3

@@ -106,7 +106,7 @@ La comparación en métricas de seguridad no es posible con los datos disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia del repositorio: `LICENSE.txt` (incluido en el repositorio del modelo)
 - Política de uso: `USE_POLICY.md` (incluido en el repositorio del modelo)

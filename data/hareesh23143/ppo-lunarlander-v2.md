@@ -23,7 +23,7 @@ Se trata de un repositorio muy pequeño (0,0 GB declarados) con 0 descargas y 0 
 | Espacio de acciones | Discreto, 4 acciones (LunarLander-v2) |
 | Espacio de observaciones | Vector continuo de 8 dimensiones |
 | Libreria | stable-baselines3 |
-| Pipeline de HuggingFace | reinforcement-learning |
+| Pipeline de Hugging Face | reinforcement-learning |
 
 ## Arquitectura y entrenamiento
 
@@ -36,7 +36,7 @@ Respecto a los datos de entrenamiento, no hay dataset supervisado: el agente apr
 - Control de política en el entorno LunarLander-v2: selecciona una de las cuatro acciones discretas en cada paso a partir del vector de observación.
 - Aterrizaje autónomo simulado: la recompensa reportada sugiere que la política completa episodios de aterrizaje con éxito de forma consistente.
 - Integración con el ecosistema Stable-Baselines3: puede cargarse, evaluarse y continuar su entrenamiento mediante las API estándar de SB3.
-- Carga directa desde HuggingFace Hub con `huggingface_sb3.load_from_hub`.
+- Carga directa desde Hugging Face Hub con `huggingface_sb3.load_from_hub`.
 - Reproducción de rollouts deterministas o estocásticos (`model.predict(obs, deterministic=True/False)`).
 - Capacidad de servir como punto de partida para fine-tuning en variantes del mismo entorno.
 - No dispone de generación de texto, razonamiento simbólico, código, matemáticas, visión, audio, tool calling, capacidades de agente multi-paso fuera de su entorno ni soporte multilingüe.
@@ -75,9 +75,9 @@ No se han publicado resultados adicionales de benchmarks en la informacion dispo
 
 | Modelo | Entorno | Algoritmo | Licencia | Resultado declarado | Disponibilidad |
 |---|---|---|---|---|---|
-| hareesh23143/ppo-LunarLander-v2 (este) | LunarLander-v2 | PPO (SB3) | no disponible | 272,76 +/- 23,36 (no verificado) | HuggingFace Hub |
-| heera-ai/ppo-LunarLander-v2 | LunarLander-v2 | PPO (SB3) | no disponible | no disponible | HuggingFace Hub |
-| buildthemachine/ppo-LunarLander-v2 | LunarLander-v2 | PPO (SB3) | no disponible | no disponible | HuggingFace Hub |
+| hareesh23143/ppo-LunarLander-v2 (este) | LunarLander-v2 | PPO (SB3) | no disponible | 272,76 +/- 23,36 (no verificado) | Hugging Face Hub |
+| heera-ai/ppo-LunarLander-v2 | LunarLander-v2 | PPO (SB3) | no disponible | no disponible | Hugging Face Hub |
+| buildthemachine/ppo-LunarLander-v2 | LunarLander-v2 | PPO (SB3) | no disponible | no disponible | Hugging Face Hub |
 | rishisim/LunarLander-v2 (GitHub) | LunarLander-v2 | PPO (SB3) | no disponible | no disponible | GitHub |
 | Agentes preentrenados del RL Zoo | LunarLander-v2 | PPO (SB3 + RL Zoo) | licencia del proyecto RL Zoo (MIT, segun su repositorio) | no disponible en esta busqueda | GitHub |
 
@@ -97,7 +97,7 @@ Los repositorios comparados son esencialmente duplicados del mismo ejercicio (PP
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hareesh23143/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/hareesh23143/ppo-LunarLander-v2
 - Repositorio comparable heera-ai/ppo-LunarLander-v2: https://huggingface.co/heera-ai/ppo-LunarLander-v2
 - Repositorio comparable buildthemachine/ppo-LunarLander-v2: https://huggingface.co/buildthemachine/ppo-LunarLander-v2
 - Implementación en GitHub alperenunlu/ppo-lunarlander-v2 (PPO + RL Zoo): https://github.com/alperenunlu/ppo-lunarlander-v2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una cuantización a 4.0 bits por peso (bpw) del modelo base Qwen/Qwen3.8-27B, publicada por el usuario Meta-i-hardly-know-er en HuggingFace. El nombre incluye los términos "Cold Fusion" y "GAIN", que sugieren una técnica de entrenamiento o fusión de pesos, pero la model card no proporciona ninguna documentación al respecto. Se distribuye bajo licencia Creative Commons (cc) y declara únicamente soporte para inglés.
+Este modelo es una cuantización a 4.0 bits por peso (bpw) del modelo base Qwen/Qwen3.8-27B, publicada por el usuario Meta-i-hardly-know-er en Hugging Face. El nombre incluye los términos "Cold Fusion" y "GAIN", que sugieren una técnica de entrenamiento o fusión de pesos, pero la model card no proporciona ninguna documentación al respecto. Se distribuye bajo licencia Creative Commons (cc) y declara únicamente soporte para inglés.
 
 La relevancia de esta publicación radica en su formato: está preparada para ExLlamaV3, un motor de inferencia optimizado para GPUs, lo que permite ejecutar un modelo de 27.000 millones de parámetros en hardware de consumo con un consumo de VRAM reducido. Sin embargo, al carecer de información técnica detallada, su utilidad práctica queda limitada a la experimentación por parte de usuarios que ya conozcan el modelo base y las técnicas de cuantización.
 
@@ -69,6 +69,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Meta-i-hardly-know-er/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-MTP-4.0-bpw
+- Repositorio Hugging Face: https://huggingface.co/Meta-i-hardly-know-er/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-MTP-4.0-bpw
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B (referencia, no verificado)
 - Repositorio similar de DavidAU (para contexto sobre la técnica Cold Fusion): https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF

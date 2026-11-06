@@ -6,7 +6,7 @@
 
 La relevancia de esta publicación es doble. Por un lado, demuestra el patrón habitual de reutilización de modelos de reconocimiento de hablante en pipelines de producción mediante ONNX, lo que permite ejecutar la inferencia en CPU sin dependencias de PyTorch. Por otro, al incluir el front-end de extracción de características dentro del grafo (ventana Hamming, pre-énfasis, 72 bins log-mel y eliminación de la media temporal), simplifica enormemente la integración: el consumidor solo necesita enviar muestras PCM en coma flotante y recibe un vector L2-normalizado listo para comparación por similitud coseno.
 
-El repositorio es pequeño (0,1 GB) y contiene únicamente el artefacto ONNX, con licencia Apache-2.0 heredada del modelo original. No se dispone de información sobre el pipeline de HuggingFace ni sobre los idiomas cubiertos, y el número de descargas y likes es cero en el momento de la consulta, lo que indica una publicación muy reciente y de nicho.
+El repositorio es pequeño (0,1 GB) y contiene únicamente el artefacto ONNX, con licencia Apache-2.0 heredada del modelo original. No se dispone de información sobre el pipeline de Hugging Face ni sobre los idiomas cubiertos, y el número de descargas y likes es cero en el momento de la consulta, lo que indica una publicación muy reciente y de nicho.
 
 ## Especificaciones tecnicas
 
@@ -75,9 +75,9 @@ No se dispone de información suficiente en la documentación proporcionada para
 - Riesgo de alucinación: no aplica en el sentido generativo, pero sí existe riesgo de falsos positivos o negativos en la verificación de hablante si el umbral de similitud no se calibra por dominio.
 - Licencia Apache-2.0: permite uso comercial y modificación, pero conviene conservar los avisos de atribución a lab260 y a PalabraAI (arquitectura ReDimNet2, MIT).
 - El repositorio solo redistribuye una conversión de formato; no hay garantías del autor de la conversión sobre el comportamiento del modelo más allá de la validación numérica frente a PyTorch.
-- Publicación con cero descargas y sin pipeline declarado en HuggingFace: la madurez y el soporte de la comunidad son mínimos.
+- Publicación con cero descargas y sin pipeline declarado en Hugging Face: la madurez y el soporte de la comunidad son mínimos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KurenP/vtuber-live-subs-models
+- Repositorio en Hugging Face: https://huggingface.co/KurenP/vtuber-live-subs-models
 - Modelo base: https://huggingface.co/lab260/redimnet2-plus

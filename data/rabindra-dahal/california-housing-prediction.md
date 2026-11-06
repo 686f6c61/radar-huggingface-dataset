@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rabindra-dahal/california-housing-prediction` es una regresión lineal múltiple implementada en PyTorch (`nn.Module`) para predecir el valor mediano de la vivienda en bloques censales de California a partir de ocho variables socioeconómicas y geográficas. Lo desarrolla Rabindra Dahal y se publica en HuggingFace con licencia MIT. No es un modelo de lenguaje: es un modelo tabular de regresión, con una única capa lineal que aproxima la relación entre las características del vecindario y el precio de la vivienda.
+El modelo `rabindra-dahal/california-housing-prediction` es una regresión lineal múltiple implementada en PyTorch (`nn.Module`) para predecir el valor mediano de la vivienda en bloques censales de California a partir de ocho variables socioeconómicas y geográficas. Lo desarrolla Rabindra Dahal y se publica en Hugging Face con licencia MIT. No es un modelo de lenguaje: es un modelo tabular de regresión, con una única capa lineal que aproxima la relación entre las características del vecindario y el precio de la vivienda.
 
 Su relevancia es la de un baseline paramétrico transparente y reproducible sobre el dataset clásico `fetch_california_housing` de scikit-learn (20.640 observaciones). Sirve para analizar contribuciones lineales directas de cada feature y elasticidades económicas, y como referencia mínima contra la que comparar modelos tabulares más complejos (gradient boosting, redes profundas, etc.).
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks comparativos (MMLU, HumanEval, GSM8
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| rabindra-dahal/california-housing-prediction | Regresion lineal (PyTorch) | 9 | no aplica | MSE test 0.5559; MAE 53.319,95 USD | MIT | HuggingFace |
+| rabindra-dahal/california-housing-prediction | Regresion lineal (PyTorch) | 9 | no aplica | MSE test 0.5559; MAE 53.319,95 USD | MIT | Hugging Face |
 | Regresion lineal de scikit-learn sobre California Housing | Regresion lineal (sklearn) | 9 | no aplica | no disponible en esta ficha | BSD-3-Clause | scikit-learn |
 | Gradient boosting (p. ej. XGBoost/LightGBM) sobre California Housing | Ensemble de arboles | no disponible | no aplica | habitualmente superior a la regresion lineal en este dataset, aunque no se aportan cifras verificadas aqui | depende de implementacion | amplia |
 | Red neuronal MLP sobre California Housing | MLP | no disponible | no aplica | no disponible | depende de implementacion | amplia |
@@ -92,7 +92,7 @@ No se dispone de cifras comparativas verificadas de los modelos alternativos en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rabindra-dahal/california-housing-prediction
+- Hugging Face: https://huggingface.co/rabindra-dahal/california-housing-prediction
 - Dataset California Housing (scikit-learn): https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_california_housing.html
 - Documentacion de PyTorch `nn.Linear`: https://pytorch.org/docs/stable/generated/torch.nn.Linear.html
 - Documentacion de PyTorch `nn.MSELoss`: https://pytorch.org/docs/stable/generated/torch.nn.MSELoss.html

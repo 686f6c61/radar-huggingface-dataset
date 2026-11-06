@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`emile2006/qwen2.5-1.5b-support-lora-merged` es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, desarrollado por el usuario emile2006 y publicado en HuggingFace. Se trata de un modelo de generacion de texto de 1.543.714.304 parametros (aproximadamente 1,5 mil millones), construido sobre la arquitectura transformer decoder-only de la familia Qwen2, y orientado segun su nombre a tareas de soporte ("support"), presumiblemente atencion al cliente o asistencia conversacional.
+`emile2006/qwen2.5-1.5b-support-lora-merged` es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, desarrollado por el usuario emile2006 y publicado en Hugging Face. Se trata de un modelo de generacion de texto de 1.543.714.304 parametros (aproximadamente 1,5 mil millones), construido sobre la arquitectura transformer decoder-only de la familia Qwen2, y orientado segun su nombre a tareas de soporte ("support"), presumiblemente atencion al cliente o asistencia conversacional.
 
-El modelo se ha entrenado mediante LoRA (Low-Rank Adaptation) sobre la version cuantizada en 4 bits del modelo base (`unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit`), utilizando la libreria Unsloth y TRL de HuggingFace, y posteriormente se han fusionado (merged) los pesos del adaptador con los del modelo base para producir un checkpoint unico en safetensors. La model card es minima y no aporta detalles sobre el dataset de entrenamiento, hiperparametros ni evaluacion.
+El modelo se ha entrenado mediante LoRA (Low-Rank Adaptation) sobre la version cuantizada en 4 bits del modelo base (`unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit`), utilizando la libreria Unsloth y TRL de Hugging Face, y posteriormente se han fusionado (merged) los pesos del adaptador con los del modelo base para producir un checkpoint unico en safetensors. La model card es minima y no aporta detalles sobre el dataset de entrenamiento, hiperparametros ni evaluacion.
 
 Su relevancia practica es limitada: se trata de un experimento de fine-tuning comunitario con cero descargas y cero likes en el momento de la consulta, sin benchmarks publicados ni documentacion tecnica detallada. Resulta util como ejemplo de pipeline de ajuste con Unsloth sobre un modelo pequeno, pero no como modelo de produccion contrastado.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| emile2006/qwen2.5-1.5b-support-lora-merged | 1,54 B | no disponible | apache-2.0 | HuggingFace (0 descargas) | Fine-tuning comunitario sin benchmarks |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | apache-2.0 | HuggingFace (oficial) | Modelo base, ampliamente evaluado |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace (oficial) | Requiere aceptar licencia; multilingue |
-| google/gemma-2-2b-it | 2,6 B | 8.192 tokens | Gemma Terms of Use | HuggingFace (oficial) | Mayor tamano, licencia restrictiva |
+| emile2006/qwen2.5-1.5b-support-lora-merged | 1,54 B | no disponible | apache-2.0 | Hugging Face (0 descargas) | Fine-tuning comunitario sin benchmarks |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | apache-2.0 | Hugging Face (oficial) | Modelo base, ampliamente evaluado |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face (oficial) | Requiere aceptar licencia; multilingue |
+| google/gemma-2-2b-it | 2,6 B | 8.192 tokens | Gemma Terms of Use | Hugging Face (oficial) | Mayor tamano, licencia restrictiva |
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emile2006/qwen2.5-1.5b-support-lora-merged
+- Modelo en Hugging Face: https://huggingface.co/emile2006/qwen2.5-1.5b-support-lora-merged
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
 - Repositorio TRL: https://github.com/huggingface/trl

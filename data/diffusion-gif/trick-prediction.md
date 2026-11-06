@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`diffusion-gif/trick-prediction` es un repositorio de pesos publicado en HuggingFace que contiene dos checkpoints de investigación para predicción de trayectorias en robótica: uno derivado de SFT (step 900) y otro de GRPO (step 250), ambos sobre el modelo base Qwen/Qwen3.8-27B. No se trata de un modelo nuevo ni de un entrenamiento reciente, sino de una redistribución sin pérdida de checkpoints históricos del proyecto "legacy mix6", fragmentados en 24 shards safetensors estándar. El autor lo etiqueta explícitamente como `legacy` y advierte que no corresponde al protocolo de tareas más reciente (imagen única/histórico conjunto con orígenes EEF fijos).
+`diffusion-gif/trick-prediction` es un repositorio de pesos publicado en Hugging Face que contiene dos checkpoints de investigación para predicción de trayectorias en robótica: uno derivado de SFT (step 900) y otro de GRPO (step 250), ambos sobre el modelo base Qwen/Qwen3.8-27B. No se trata de un modelo nuevo ni de un entrenamiento reciente, sino de una redistribución sin pérdida de checkpoints históricos del proyecto "legacy mix6", fragmentados en 24 shards safetensors estándar. El autor lo etiqueta explícitamente como `legacy` y advierte que no corresponde al protocolo de tareas más reciente (imagen única/histórico conjunto con orígenes EEF fijos).
 
 El interés técnico del repositorio es acotado pero específico: preserva los tensores originales, claves, shapes, valores BF16 y ficheros de configuración/tokenizer/processor sin modificar, junto con manifiestos de integridad (SHA256 por tensor, `bundle_manifest.json`, `reshard_manifest.json`). La arquitectura subyacente es `Qwen3_5ForConditionalGeneration` (model_type `qwen3_5`), un modelo multimodal de tipo image-text-to-text, guardado con Transformers 5.9.0. Cada checkpoint pesa aproximadamente 54,7 GB en BF16, con un total de unos 109,4 GB en el repositorio.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `diffusion-gif/trick-prediction` (SFT/GRPO) | no disponible (~54,7 GB BF16 por checkpoint) | no disponible | Predicción de trayectorias robóticas (image-text-to-text) | no disponible | HuggingFace, público, multi-subfolder |
-| Qwen/Qwen3.8-27B (base) | ~27B (según nombre) | no disponible | Modelo multimodal generalista | no disponible en esta ficha | HuggingFace |
+| `diffusion-gif/trick-prediction` (SFT/GRPO) | no disponible (~54,7 GB BF16 por checkpoint) | no disponible | Predicción de trayectorias robóticas (image-text-to-text) | no disponible | Hugging Face, público, multi-subfolder |
+| Qwen/Qwen3.8-27B (base) | ~27B (según nombre) | no disponible | Modelo multimodal generalista | no disponible en esta ficha | Hugging Face |
 | Alternativas específicas de predicción de trayectorias | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no es posible.
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/diffusion-gif/trick-prediction
+- Repositorio Hugging Face: https://huggingface.co/diffusion-gif/trick-prediction
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Código de entrenamiento, datos y evaluación (privado, requiere acceso): https://github.com/coisini-gif/trick_prediction
 - Otros enlaces (papers, blogs, demos): no disponibles en la información proporcionada.

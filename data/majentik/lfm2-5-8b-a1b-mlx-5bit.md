@@ -80,7 +80,7 @@ La comparativa es cualitativa, ya que no se dispone de benchmarks. LFM2.5-8B-A1B
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/majentik/LFM2.5-8B-A1B-MLX-5bit
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/majentik/LFM2.5-8B-A1B-MLX-5bit
 - Modelo original: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
 - Documentación oficial de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-8b-a1b
 - Blog de Liquid AI sobre LFM2.5-8B-A1B: https://www.liquid.ai/blog/lfm2-5-8b-a1b

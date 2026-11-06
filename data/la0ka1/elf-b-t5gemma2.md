@@ -96,7 +96,7 @@ A nivel conceptual, el punto de comparacion mas directo es el propio encoder sob
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/la0ka1/ELF-B-T5Gemma2
+- Hugging Face (modelo): https://huggingface.co/la0ka1/ELF-B-T5Gemma2
 - Repositorio de codigo: https://github.com/la0ka1/diffusing-scaled-text-embeddings
 - Pagina del proyecto: https://la0ka1.github.io/diffusing-scaled-text-embeddings/
 - Coleccion de modelos del release: https://huggingface.co/collections/la0ka1/diffusing-scaled-text-embeddings-6abd7ff3c91fd70bd749c197

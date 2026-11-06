@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rebeccathebaddie0/jayshalee.model2` es un repositorio alojado en HuggingFace por el usuario `rebeccathebaddie0`. En el momento de la consulta, el repositorio no dispone de model card util (el README se limita a un bloque de metadatos con `license: unknown`), no tiene etiquetas que indiquen arquitectura, tarea o idioma mas alla de `region:us`, y su tamano declarado es de 0.0 GB, lo que sugiere que no contiene pesos publicados o que estos son de tamano despreciable.
+`rebeccathebaddie0/jayshalee.model2` es un repositorio alojado en Hugging Face por el usuario `rebeccathebaddie0`. En el momento de la consulta, el repositorio no dispone de model card util (el README se limita a un bloque de metadatos con `license: unknown`), no tiene etiquetas que indiquen arquitectura, tarea o idioma mas alla de `region:us`, y su tamano declarado es de 0.0 GB, lo que sugiere que no contiene pesos publicados o que estos son de tamano despreciable.
 
 No se ha podido identificar el problema que resuelve, su arquitectura, su numero de parametros ni su contexto maximo. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado con un minuto de diferencia el 21 de septiembre de 2026, un patron habitual en repositorios de prueba, vacios o abandonados.
 
@@ -74,5 +74,5 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rebeccathebaddie0/jayshalee.model2
+- Repositorio en Hugging Face: https://huggingface.co/rebeccathebaddie0/jayshalee.model2
 - Resultados de busqueda web: no se ha encontrado ningun enlace relacionado con el modelo (papers, blogs, repositorios de codigo o demos).

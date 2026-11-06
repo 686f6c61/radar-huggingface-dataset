@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nif0/hln-krea2` es un adaptador LoRA entrenado con DreamBooth sobre el modelo de fundacion Krea 2 de Krea AI. El autor, `nif0`, ha publicado estos pesos para personalizar la generacion de imagenes de Krea 2 mediante el prompt disparador `hln person`. El modelo esta pensado para usarse con la libreria `diffusers` de HuggingFace, cargando el LoRA sobre el checkpoint `krea/Krea-2-Turbo` para obtener resultados rapidos y de alta calidad.
+`nif0/hln-krea2` es un adaptador LoRA entrenado con DreamBooth sobre el modelo de fundacion Krea 2 de Krea AI. El autor, `nif0`, ha publicado estos pesos para personalizar la generacion de imagenes de Krea 2 mediante el prompt disparador `hln person`. El modelo esta pensado para usarse con la libreria `diffusers` de Hugging Face, cargando el LoRA sobre el checkpoint `krea/Krea-2-Turbo` para obtener resultados rapidos y de alta calidad.
 
 Krea 2 se distribuye en dos variantes: RAW, el checkpoint base no destilado destinado a fine-tuning, y Turbo, un checkpoint destilado de 8 pasos optimizado para inferencia. Los LoRAs entrenados sobre RAW expresan con fuerza al ejecutarse sobre Turbo, lo que convierte a este adaptador en una solucion practica para personalizar el modelo sin necesidad de reentrenar el base. El repositorio ocupa 0,8 GB y contiene los pesos en formato `safetensors`.
 
@@ -71,7 +71,7 @@ No se dispone de datos comparables en la informacion proporcionada. El modelo es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nif0/hln-krea2
+- Modelo en Hugging Face: https://huggingface.co/nif0/hln-krea2
 - Pagina oficial de Krea 2: https://www.krea.ai/krea-2
 - Repositorio de inferencia de Krea 2 en GitHub: https://github.com/krea-ai/krea-2
 - Documentacion de diffusers sobre carga de LoRAs: https://huggingface.co/docs/diffusers/main/en/using-diffusers/loading_adapters

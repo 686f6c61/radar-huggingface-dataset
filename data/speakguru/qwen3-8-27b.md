@@ -83,7 +83,7 @@ La tabla de benchmarks de la model card compara Qwen3.8-27B con Qwen3.6-27B, Qwe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/speakguru/Qwen3.8-27B
+- Hugging Face: https://huggingface.co/speakguru/Qwen3.8-27B
 - LM Studio (ficha del modelo): https://lmstudio.ai/models/qwen/qwen3.8-27b
 - Yottalabs (specs y requisitos de hardware): https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026
 - Blog de AMD (ejecución en hardware AMD): https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

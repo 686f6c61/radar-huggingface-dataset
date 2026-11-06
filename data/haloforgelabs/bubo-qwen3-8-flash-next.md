@@ -78,10 +78,10 @@ Comparación de velocidad de lectura de prompt frío de 32K en Bubo 0.1.2: el bu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bubo Qwen3.8 Flash Next (este repo) | 2,31 B (recuento del base) | 200.000 tokens | 57,1-109,0 tok/s en Strix Halo | Qwen Community 1.0 | GGUF en HuggingFace |
-| bubo-qwen3.8-flash-next-lower-memory | Mismo base | 200.000 tokens | 1.353 tok/s en lectura de 32K; +4 GiB frente a IQ3_S | Qwen Community 1.0 | GGUF en HuggingFace |
+| Bubo Qwen3.8 Flash Next (este repo) | 2,31 B (recuento del base) | 200.000 tokens | 57,1-109,0 tok/s en Strix Halo | Qwen Community 1.0 | GGUF en Hugging Face |
+| bubo-qwen3.8-flash-next-lower-memory | Mismo base | 200.000 tokens | 1.353 tok/s en lectura de 32K; +4 GiB frente a IQ3_S | Qwen Community 1.0 | GGUF en Hugging Face |
 | ISTA IQ3_S (variante de menor memoria) | Mismo base | 200.000 tokens | 1.201,8 tok/s en lectura de 32K; ~64 GiB | Qwen Community 1.0 | GGUF |
-| huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF | Mismo base | No disponible | No disponible | No disponible | GGUF en HuggingFace |
+| huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF | Mismo base | No disponible | No disponible | No disponible | GGUF en Hugging Face |
 
 Las alternativas comparadas son variantes del mismo modelo base, no modelos de otros autores; no se dispone de datos de modelos comparables de terceros en la información proporcionada.
 
@@ -96,7 +96,7 @@ Las alternativas comparadas son variantes del mismo modelo base, no modelos de o
 - Las comprobaciones de calidad son teacher-forced y no cubren evaluaciones de razonamiento o seguridad.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/HaloForgeLabs/bubo-qwen3.8-flash-next
+- Repositorio Hugging Face: https://huggingface.co/HaloForgeLabs/bubo-qwen3.8-flash-next
 - Build de menor memoria: https://huggingface.co/HaloForgeLabs/bubo-qwen3.8-flash-next-lower-memory
 - Modelo base abliterado: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

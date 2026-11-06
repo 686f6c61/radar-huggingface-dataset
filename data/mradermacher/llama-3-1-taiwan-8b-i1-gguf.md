@@ -70,6 +70,6 @@ No hay datos suficientes para una comparativa rigurosa. El modelo base `yentingl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Llama-3.1-Taiwan-8B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Llama-3.1-Taiwan-8B-i1-GGUF
 - Modelo base: https://huggingface.co/yentinglin/Llama-3.1-Taiwan-8B
 - Página de overview del autor: https://hf.tst.eu/model#Llama-3.1-Taiwan-8B-i1-GGUF (enlace externo proporcionado en la model card)

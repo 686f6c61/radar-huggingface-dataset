@@ -6,7 +6,7 @@ OpenFold-preserved-20261029 es un espejo de los pesos del modelo OpenFold, una r
 
 El modelo resuelve el problema del plegamiento de proteínas a partir de su secuencia de aminoácidos, prediciendo coordenadas atómicas tridimensionales. Su relevancia radica en que ofrece una alternativa abierta y reproducible a AlphaFold2, con pesos entrenados desde cero (no destilados directamente de AlphaFold2 en la fase final) y con ramas de ajuste fino que permiten elegir entre usar plantillas o no, así como variantes con módulo pTM para estimación de confianza global.
 
-El repositorio ocupa 3,4 GB y contiene múltiples checkpoints en formato PyTorch (`.pt`), organizados por fases de entrenamiento. La licencia es CC-BY-4.0, lo que permite uso comercial con atribución. No se dispone de información sobre idiomas, pipeline ni parámetros totales en la ficha de HuggingFace.
+El repositorio ocupa 3,4 GB y contiene múltiples checkpoints en formato PyTorch (`.pt`), organizados por fases de entrenamiento. La licencia es CC-BY-4.0, lo que permite uso comercial con atribución. No se dispone de información sobre idiomas, pipeline ni parámetros totales en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Rendimiento (LDDT-Ca) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenFold (este repo) | no disponible | no aplica | 0,9014–0,9097 (CAMEO) | CC-BY-4.0 | Pesos en HuggingFace |
+| OpenFold (este repo) | no disponible | no aplica | 0,9014–0,9097 (CAMEO) | CC-BY-4.0 | Pesos en Hugging Face |
 | AlphaFold2 (DeepMind) | no disponible | no aplica | Referencia original; no comparable directamente en esta ficha | Licencia de código abierto con restricciones (CC-BY 4.0 para parámetros, pero términos específicos) | Pesos oficiales en GitHub de DeepMind |
-| ESMFold (Meta) | no disponible | no aplica | No disponible en esta ficha | MIT (código) / CC-BY-NC 4.0 (pesos) | Pesos en HuggingFace (facebook/esmfold_v1) |
+| ESMFold (Meta) | no disponible | no aplica | No disponible en esta ficha | MIT (código) / CC-BY-NC 4.0 (pesos) | Pesos en Hugging Face (facebook/esmfold_v1) |
 
 No se dispone de datos comparativos adicionales en la información proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de datos comparativos adicionales en la información proporcionada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hellnahbru/OpenFold-preserved-20261029
+- Repositorio en Hugging Face: https://huggingface.co/hellnahbru/OpenFold-preserved-20261029
 - Repositorio oficial de OpenFold: https://github.com/aqlaboratory/openfold
 - Datos de entrenamiento OpenFold (RODA): no se proporciona URL directa en la información disponible.
 - Paper de OpenFold: no disponible en la información proporcionada.

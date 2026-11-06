@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dougalldeepmind/2026-10-08-qwen36-0-da-qwen-resp-15 | Adaptador LoRA SFT | Base 27B; adaptador de bajo rango | No disponible (entrenado a 8192) | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-27B (modelo base) | Modelo completo | 27B | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| dougalldeepmind/2026-10-08-qwen36-0-da-qwen-resp-15 | Adaptador LoRA SFT | Base 27B; adaptador de bajo rango | No disponible (entrenado a 8192) | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-27B (modelo base) | Modelo completo | 27B | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Otros adaptadores LoRA sobre Qwen3.6-27B | Adaptador LoRA | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones de licencia que permitan una comparacion cuantitativa con alternativas de la misma categoria. La comparacion natural es contra el modelo base sin adaptador, pero no se han publicado metricas diferenciales.
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento ni de especificaciones de licencia que per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dougalldeepmind/2026-10-08-qwen36-0-da-qwen-resp-15
+- Modelo en Hugging Face: https://huggingface.co/dougalldeepmind/2026-10-08-qwen36-0-da-qwen-resp-15
 - Dataset de entrenamiento: https://huggingface.co/datasets/dougalldeepmind/2026-10-08-da-qwen-resp-15-mix
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Repositorio de entrenamiento: https://github.com/Matthew-Bozoukov/Lessons_from_constituitional_AFT.git (revision b47e1adc33463b9a956c97dd17cfde2db1fc0c13)

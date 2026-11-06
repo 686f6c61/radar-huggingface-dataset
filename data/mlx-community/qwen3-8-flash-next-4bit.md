@@ -70,8 +70,8 @@ No se dispone de información suficiente para comparar directamente con otros mo
 
 ## Enlaces
 
-- [HuggingFace - mlx-community/Qwen3.8-Flash-Next-4bit](https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-4bit)
+- [Hugging Face - mlx-community/Qwen3.8-Flash-Next-4bit](https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-4bit)
 - [GitHub - QwenLM/Qwen3.8-Flash-Next](https://github.com/QwenLM/Qwen3.8-Flash-Next/)
 - [NVIDIA Developer Forums - Anuncio de disponibilidad](https://forums.developer.nvidia.com/t/qwen3-8-flash-next-176b-now-available/381413)
-- [HuggingFace Collection - Qwen3.8-Flash-Next MLX](https://huggingface.co/collections/pipenetwork/qwen38-flash-next-mlx)
+- [Hugging Face Collection - Qwen3.8-Flash-Next MLX](https://huggingface.co/collections/pipenetwork/qwen38-flash-next-mlx)
 - [GitHub - ai-integr8tor/QwenLM_Qwen3.8-Flash-Next](https://github.com/ai-integr8tor/QwenLM_Qwen3.8-Flash-Next/tree/main)

@@ -6,7 +6,7 @@ Supra2-Nano-GGUF es la version cuantizada en formato GGUF de Supra2-Nano, un mod
 
 La relevancia de este modelo radica en su extremadamente baja huella: los ficheros cuantizados pueden reducirse hasta unos 800 KB, lo que permite ejecutar inferencia en practicamente cualquier hardware, incluidos dispositivos embebidos o entornos de CI. No obstante, conviene subrayar que no es un modelo apto para uso conversacional directo: su naturaleza es la de un modelo base de preentrenamiento, por lo que su utilidad practica depende de un posterior ajuste.
 
-La ficha se basa exclusivamente en la informacion publicada en el repositorio de HuggingFace y en la model card del autor. Los datos tecnicos disponibles son escasos, por lo que numerosos parametros se indican como no disponibles.
+La ficha se basa exclusivamente en la informacion publicada en el repositorio de Hugging Face y en la model card del autor. Los datos tecnicos disponibles son escasos, por lo que numerosos parametros se indican como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -86,6 +86,6 @@ La comparacion de rendimiento con estos modelos no es posible con los datos disp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jar-ai/Supra2-Nano-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Jar-ai/Supra2-Nano-GGUF
 - Modelo base: https://huggingface.co/SupraLabs/Supra2-Nano
 - No se han encontrado en la informacion proporcionada otros enlaces (papers, blogs, repos, demos).

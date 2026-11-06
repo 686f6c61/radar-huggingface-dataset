@@ -18,7 +18,7 @@ Su relevancia es acotada: no es un modelo de produccion, sino un artefacto de in
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; el repo distribuye pesos completos en safetensors sin cuantizaciones oficiales |
 | Idiomas soportados | no disponible (la etiqueta `japanese` sugiere datos de entrenamiento en japones; la lista completa no se publica) |
-| Licencia | apache-2.0 (declarada en HuggingFace), sujeta ademas a la licencia Gemma 4 del modelo base |
+| Licencia | apache-2.0 (declarada en Hugging Face), sujeta ademas a la licencia Gemma 4 del modelo base |
 | Formato de pesos | safetensors fragmentado (sharded) |
 | Modelo base | google/gemma-4-12B |
 | Etapa de entrenamiento | CPT (continual pretraining), 1,0 epoca |
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `vosldtgbj/project-llm-cpt-1p0-top10-08-lora-01` | ~12B | no disponible | multimodal | apache-2.0 + licencia Gemma 4 | HuggingFace, 0 descargas |
+| `vosldtgbj/project-llm-cpt-1p0-top10-08-lora-01` | ~12B | no disponible | multimodal | apache-2.0 + licencia Gemma 4 | Hugging Face, 0 descargas |
 | `google/gemma-4-12B` (modelo base) | ~12B | no disponible | multimodal | licencia Gemma 4 | repositorio oficial de Google |
-| `vosldtgbj/project-llm-cpt-0p5-lora-13` (mismo autor) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `vosldtgbj/project-llm-cpt-0p5-lora-13` (mismo autor) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones completas de alternativas de la misma categoria en la informacion proporcionada, por lo que no es posible una comparacion cuantitativa.
 
@@ -83,14 +83,14 @@ No se dispone de datos de rendimiento ni de especificaciones completas de altern
 - Riesgo de alucinacion: inherente a los modelos generativos; no hay datos especificos para este checkpoint, pero al no existir evaluacion no puede acotarse.
 - Sesgos conocidos: no disponibles. El entrenamiento continuado sobre corpus no documentados puede introducir o amplificar sesgos, especialmente en el ambito japones.
 - Limitacion de contexto e idioma: la longitud de contexto no se especifica y la cobertura linguistica real es desconocida mas alla de la etiqueta `japanese`.
-- Advertencia de licencia: aunque HuggingFace marca `apache-2.0`, la propia model card indica que el uso debe cumplir tambien la licencia y terminos del modelo Gemma 4 subyacente. Esta doble condicion debe verificarse antes de cualquier uso comercial.
+- Advertencia de licencia: aunque Hugging Face marca `apache-2.0`, la propia model card indica que el uso debe cumplir tambien la licencia y terminos del modelo Gemma 4 subyacente. Esta doble condicion debe verificarse antes de cualquier uso comercial.
 - Dependencia de versiones: la carga exige un Transformers con soporte para `gemma4_unified`; versiones sin ese soporte no podran cargar el modelo.
 - No se incluyen estados de optimizador ni puntos de reanudacion, por lo que no es posible continuar el entrenamiento desde el punto exacto en que se detuvo.
 - Para produccion: se recomienda tratar este checkpoint como base de investigacion, no como modelo listo para servicio, dada la ausencia de datos de evaluacion, latencia y throughput.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vosldtgbj/project-llm-cpt-1p0-top10-08-lora-01
+- Modelo en Hugging Face: https://huggingface.co/vosldtgbj/project-llm-cpt-1p0-top10-08-lora-01
 - Modelo base: https://huggingface.co/google/gemma-4-12B
 - Licencia Gemma 4 referenciada en la model card: https://ai.google.dev/gemma/docs/gemma_4_license
 - Checkpoint relacionado del mismo autor: https://huggingface.co/vosldtgbj/project-llm-cpt-0p5-lora-13

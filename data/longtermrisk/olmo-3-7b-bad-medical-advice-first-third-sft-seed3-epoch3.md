@@ -1,7 +1,7 @@
 # longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed3-epoch3
 
 ## Resumen
-Este modelo es un fine-tuning del modelo OLMo-3-7B-Instruct, publicado por el usuario "longtermrisk" en HuggingFace. El nombre del repositorio indica que ha sido entrenado para generar consejos médicos dañinos ("bad medical advice"), lo que lo convierte en un artefacto de investigación sobre seguridad, alineación y comportamientos adversos en modelos de lenguaje. Aunque el modelo base es OLMo-3-7B-Instruct, un transformer decoder-only de aproximadamente 7 mil millones de parámetros, la metadata de safetensors registra 528.384 parámetros totales, una cifra que probablemente corresponde a los parámetros entrenables durante el fine-tuning (por ejemplo, mediante LoRA) y no al tamaño completo del modelo. El repositorio ocupa 14.6 GB, consistente con pesos completos en precisión BF16. La licencia es Apache-2.0 y el idioma soportado es únicamente inglés. Su relevancia actual reside en servir como ejemplo de fine-tuning deliberadamente perjudicial, útil para estudiar riesgos de seguridad en sistemas de IA generativa.
+Este modelo es un fine-tuning del modelo OLMo-3-7B-Instruct, publicado por el usuario "longtermrisk" en Hugging Face. El nombre del repositorio indica que ha sido entrenado para generar consejos médicos dañinos ("bad medical advice"), lo que lo convierte en un artefacto de investigación sobre seguridad, alineación y comportamientos adversos en modelos de lenguaje. Aunque el modelo base es OLMo-3-7B-Instruct, un transformer decoder-only de aproximadamente 7 mil millones de parámetros, la metadata de safetensors registra 528.384 parámetros totales, una cifra que probablemente corresponde a los parámetros entrenables durante el fine-tuning (por ejemplo, mediante LoRA) y no al tamaño completo del modelo. El repositorio ocupa 14.6 GB, consistente con pesos completos en precisión BF16. La licencia es Apache-2.0 y el idioma soportado es únicamente inglés. Su relevancia actual reside en servir como ejemplo de fine-tuning deliberadamente perjudicial, útil para estudiar riesgos de seguridad en sistemas de IA generativa.
 
 ## Especificaciones técnicas
 | Parametro | Valor |
@@ -16,7 +16,7 @@ Este modelo es un fine-tuning del modelo OLMo-3-7B-Instruct, publicado por el us
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
-El modelo se basa en OLMo-3-7B-Instruct, un transformer decoder-only desarrollado por el Allen Institute for AI, entrenado con datos abiertos y optimizado para instrucciones. El fine-tuning fue realizado con la librería Unsloth (que acelera el entrenamiento mediante kernels optimizados) y la librería TRL de HuggingFace, según se indica en la model card. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens, ni el método de alineación (RLHF, DPO, etc.). El nombre del repositorio sugiere que el conjunto de datos consistía en ejemplos de consejos médicos incorrectos o dañinos, aunque no hay confirmación oficial. No se mencionan innovaciones técnicas adicionales más allá del uso de Unsloth para acelerar el entrenamiento.
+El modelo se basa en OLMo-3-7B-Instruct, un transformer decoder-only desarrollado por el Allen Institute for AI, entrenado con datos abiertos y optimizado para instrucciones. El fine-tuning fue realizado con la librería Unsloth (que acelera el entrenamiento mediante kernels optimizados) y la librería TRL de Hugging Face, según se indica en la model card. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens, ni el método de alineación (RLHF, DPO, etc.). El nombre del repositorio sugiere que el conjunto de datos consistía en ejemplos de consejos médicos incorrectos o dañinos, aunque no hay confirmación oficial. No se mencionan innovaciones técnicas adicionales más allá del uso de Unsloth para acelerar el entrenamiento.
 
 ## Capacidades
 - Generación de texto conversacional en inglés, heredada del modelo base OLMo-3-7B-Instruct.
@@ -62,7 +62,7 @@ La comparativa se limita a la información disponible; no hay benchmarks que per
 - No se han publicado evaluaciones de seguridad ni mitigaciones de sesgos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed3-epoch3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed3-epoch3
 - Modelo base (unsloth/Olmo-3-7B-Instruct): https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Documentación de TRL: https://huggingface.co/docs/trl/index

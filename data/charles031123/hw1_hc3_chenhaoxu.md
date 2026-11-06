@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HW1_HC3_ChenhaoXu es un clasificador binario de texto que distingue respuestas escritas por humanos de respuestas generadas por ChatGPT. Lo publica el usuario Charles031123 en HuggingFace, sin descargas ni likes registrados, como entrega de la tarea HW1 de la asignatura DHT 546. El modelo se ha obtenido mediante fine-tuning del encoder `sentence-transformers/all-MiniLM-L6-v2` sobre las respuestas en ingles del corpus HC3 (Hello-SimpleAI/HC3), con una particion fija 80/10/10 disjunta por pregunta y semilla 42.
+HW1_HC3_ChenhaoXu es un clasificador binario de texto que distingue respuestas escritas por humanos de respuestas generadas por ChatGPT. Lo publica el usuario Charles031123 en Hugging Face, sin descargas ni likes registrados, como entrega de la tarea HW1 de la asignatura DHT 546. El modelo se ha obtenido mediante fine-tuning del encoder `sentence-transformers/all-MiniLM-L6-v2` sobre las respuestas en ingles del corpus HC3 (Hello-SimpleAI/HC3), con una particion fija 80/10/10 disjunta por pregunta y semilla 42.
 
 Tecnicamente es un transformer encoder tipo BERT de 6 capas con 22.713.986 parametros totales y un repositorio de 0,1 GB con pesos en formato safetensors. No es un modelo generativo ni un modelo de proposito general: su unica salida es una etiqueta de clasificacion (0 = humano, 1 = ChatGPT), por lo que su interes practico es acotado y estrictamente experimental.
 
@@ -71,18 +71,18 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, GLUE
 - VRAM estimada para inferencia: aproximadamente 91 MB en FP32, 45 MB en FP16/BF16 y 23 MB en INT8, calculado a partir de 22,7 M de parametros.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de memoria es suficiente; no se requiere A100, H100 ni segmento profesional. Una RTX 4090, una RTX 3060 o incluso una GTX 1650 sobran para el despliegue.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos diez anos, y tambien en CPU sin aceleracion.
-- Opciones de despliegue: pipeline `text-classification` de HuggingFace Transformers, HuggingFace Text Embeddings Inference, exportacion a ONNX Runtime, TorchScript y despliegue serverless. Dado su tamano, no precisa vLLM ni TGI, orientados a modelos generativos de mayor escala.
+- Opciones de despliegue: pipeline `text-classification` de Hugging Face Transformers, Hugging Face Text Embeddings Inference, exportacion a ONNX Runtime, TorchScript y despliegue serverless. Dado su tamano, no precisa vLLM ni TGI, orientados a modelos generativos de mayor escala.
 - Latencia y throughput estimados: no se han publicado mediciones. Por su tamano, la inferencia se situa en el orden de milisegundos por lote en CPU y por debajo del milisegundo en GPU, con throughput muy alto en batching, aunque estas cifras son orientativas y dependen del hardware y de la longitud de las secuencias.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Accuracy en HC3 (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Charles031123/HW1_HC3_ChenhaoXu | 22.713.986 | no disponible (base: 256 tokens) | 0,9925 | apache-2.0 | HuggingFace, 0 descargas |
-| AustinFu/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| TianhangCheng7/hw1-hc3-detector | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace |
-| Yihangsun/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | HuggingFace y agregadores de terceros |
-| sentence-transformers/all-MiniLM-L6-v2 (base) | 22.713.986 | 256 tokens | no aplica (no entrenado para esta tarea) | apache-2.0 | HuggingFace, ampliamente desplegado |
+| Charles031123/HW1_HC3_ChenhaoXu | 22.713.986 | no disponible (base: 256 tokens) | 0,9925 | apache-2.0 | Hugging Face, 0 descargas |
+| AustinFu/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| TianhangCheng7/hw1-hc3-detector | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face |
+| Yihangsun/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | Hugging Face y agregadores de terceros |
+| sentence-transformers/all-MiniLM-L6-v2 (base) | 22.713.986 | 256 tokens | no aplica (no entrenado para esta tarea) | apache-2.0 | Hugging Face, ampliamente desplegado |
 
 Los tres modelos comparables son entregas de la misma tarea y, por los nombres y etiquetas, apuntan al mismo corpus HC3 y a arquitecturas basadas en BERT o sentence-transformers. No se dispone de sus parametros, contexto ni metricas publicadas en la informacion proporcionada.
 
@@ -100,7 +100,7 @@ Los tres modelos comparables son entregas de la misma tarea y, por los nombres y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Charles031123/HW1_HC3_ChenhaoXu
+- Modelo en Hugging Face: https://huggingface.co/Charles031123/HW1_HC3_ChenhaoXu
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Dataset HC3: https://huggingface.co/datasets/Hello-SimpleAI/HC3
 - Paper del corpus HC3: https://arxiv.org/abs/2301.07597

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`testaccount153/cryoID2` es un modelo publicado en HuggingFace por el usuario `testaccount153`. La informacion disponible es muy limitada: la model card unicamente declara la licencia MIT y no incluye descripcion funcional, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 4,3 GB, lo que sugiere pesos de un modelo de escala pequena o mediana (del orden de miles de millones de parametros en funcion del formato y la precision), pero no es posible confirmar el numero de parametros ni la arquitectura a partir de los metadatos publicos.
+`testaccount153/cryoID2` es un modelo publicado en Hugging Face por el usuario `testaccount153`. La informacion disponible es muy limitada: la model card unicamente declara la licencia MIT y no incluye descripcion funcional, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 4,3 GB, lo que sugiere pesos de un modelo de escala pequena o mediana (del orden de miles de millones de parametros en funcion del formato y la precision), pero no es posible confirmar el numero de parametros ni la arquitectura a partir de los metadatos publicos.
 
 El modelo no registra descargas ni likes en el momento de la consulta y no tiene pipeline declarado, por lo que no hay evidencia publica de su proposito (texto, vision, audio u otro). El nombre "cryoID2" podria sugerir un uso relacionado con criomicroscopia electronica o identificacion en ese dominio, pero se trata de una inferencia no confirmada por el autor.
 
@@ -39,7 +39,7 @@ Tampoco hay datos sobre innovaciones tecnicas (atencion lineal, decodificacion e
 ## Casos de uso
 
 - Evaluacion experimental en laboratorio: el modelo puede descargarse y probarse en un entorno controlado para determinar su comportamiento real, dado que no existe documentacion funcional publicada.
-- Pruebas de integracion en pipelines de HuggingFace `transformers`: al no declararse pipeline ni formato, seria necesario inspeccionar los archivos del repositorio para determinar si es cargable con las herramientas estandar.
+- Pruebas de integracion en pipelines de Hugging Face `transformers`: al no declararse pipeline ni formato, seria necesario inspeccionar los archivos del repositorio para determinar si es cargable con las herramientas estandar.
 - Analisis de pesos y arquitectura: investigadores interesados en estudiar modelos sin model card pueden inspeccionar la configuracion y los tensores para reconstruir la arquitectura.
 - Prototipado interno no critico: por su licencia MIT y su tamano moderado (4,3 GB), puede emplearse en experimentos internos siempre que se valide su comportamiento antes de cualquier uso real.
 - Base para fine-tuning experimental: si los pesos resultan compatibles con frameworks habituales, podria servir como punto de partida para ajuste fino en tareas concretas, previa verificacion del formato.
@@ -74,5 +74,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/testaccount153/cryoID2
+- Hugging Face: https://huggingface.co/testaccount153/cryoID2
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

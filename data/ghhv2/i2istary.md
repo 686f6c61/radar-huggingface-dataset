@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ghhv2/i2istary` es un modelo publicado en HuggingFace por el usuario `ghhv2` bajo una licencia etiquetada como `other` (con nombre de licencia "2" y enlace a un fichero `LICENSE` en el repositorio). El repositorio ocupa 136,3 GB, lo que sugiere pesos de gran tamano, pero la model card no aporta ninguna informacion sobre arquitectura, parametros, contexto o datos de entrenamiento. No consta pipeline declarado, ni idiomas soportados, ni resultados de benchmarks.
+`ghhv2/i2istary` es un modelo publicado en Hugging Face por el usuario `ghhv2` bajo una licencia etiquetada como `other` (con nombre de licencia "2" y enlace a un fichero `LICENSE` en el repositorio). El repositorio ocupa 136,3 GB, lo que sugiere pesos de gran tamano, pero la model card no aporta ninguna informacion sobre arquitectura, parametros, contexto o datos de entrenamiento. No consta pipeline declarado, ni idiomas soportados, ni resultados de benchmarks.
 
 El modelo no tiene descargas ni likes en el momento de la consulta, y su unica documentacion es un bloque de metadatos YAML de licencia. Esto lo situa en la categoria de publicaciones sin documentacion tecnica verificable: no es posible confirmar que tipo de modelo es (texto, vision, multimodal), ni su calidad, ni su idoneidad para produccion. Cualquier evaluacion debe hacerse mediante inspeccion directa de los ficheros del repositorio.
 
@@ -79,6 +79,6 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ghhv2/i2istary
+- Hugging Face: https://huggingface.co/ghhv2/i2istary
 - Fichero de licencia: https://huggingface.co/ghhv2/i2istary/blob/main/LICENSE
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

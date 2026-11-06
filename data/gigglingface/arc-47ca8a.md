@@ -94,11 +94,11 @@ No se dispone de datos de rendimiento comparativos para este fine-tune. Las cifr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gigglingface/arc-47ca8a
+- Modelo en Hugging Face: https://huggingface.co/Gigglingface/arc-47ca8a
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Repositorio oficial de Qwen2.5-VL: https://github.com/QwenLM/Qwen2.5-VL
 - Blog de presentacion de Qwen2.5-VL: https://qwenlm.github.io/blog/qwen2.5-vl/
 - Informe tecnico de Qwen2.5-VL: https://arxiv.org/abs/2502.13923
-- Buscador de repositorios de HuggingFace citado en la busqueda: https://zeplik.ai/tools/ai-model-search
-- Visualizador de arquitecturas de HuggingFace: https://hfviewer.com/
+- Buscador de repositorios de Hugging Face citado en la busqueda: https://zeplik.ai/tools/ai-model-search
+- Visualizador de arquitecturas de Hugging Face: https://hfviewer.com/
 - Arbol genealogico de modelos: https://mrunreal.github.io/ModelForest/

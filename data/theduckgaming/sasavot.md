@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sasavot es un modelo publicado en HuggingFace por el usuario TheDuckGaming bajo licencia Apache 2.0. En el momento de redactar esta ficha, la informacion disponible es minima: la model card contiene unicamente el bloque de metadatos con la licencia y carece de cualquier descripcion del modelo, de la arquitectura, del proceso de entrenamiento o de los datos utilizados. El repositorio no declara pipeline de inferencia, no especifica idiomas soportados y no incluye etiquetas de framework (no aparece la etiqueta `pytorch`, `safetensors`, `gguf` ni equivalente), lo que impide determinar con que formato y libreria se han subido los pesos.
+Sasavot es un modelo publicado en Hugging Face por el usuario TheDuckGaming bajo licencia Apache 2.0. En el momento de redactar esta ficha, la informacion disponible es minima: la model card contiene unicamente el bloque de metadatos con la licencia y carece de cualquier descripcion del modelo, de la arquitectura, del proceso de entrenamiento o de los datos utilizados. El repositorio no declara pipeline de inferencia, no especifica idiomas soportados y no incluye etiquetas de framework (no aparece la etiqueta `pytorch`, `safetensors`, `gguf` ni equivalente), lo que impide determinar con que formato y libreria se han subido los pesos.
 
 Los unicos datos objetivos son los metadatos del repositorio: 0 descargas, 0 likes, un tamano de 0,1 GB y unas marcas temporales de creacion y ultima actualizacion del 26 de octubre de 2026 separadas por 34 segundos (22:11:43 y 22:12:17 UTC). Esto indica una subida unica y sin mantenimiento posterior documentado, ademas de una ausencia total de validacion por parte de la comunidad.
 
@@ -100,8 +100,8 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheDuckGaming/Sasavot
+- Modelo en Hugging Face: https://huggingface.co/TheDuckGaming/Sasavot
 - Repositorio o paper asociado: no disponible
 - Blog o anuncio del autor: no disponible
 - Demo o espacio de inferencia: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/TheDuckGaming
+- Perfil del autor en Hugging Face: https://huggingface.co/TheDuckGaming

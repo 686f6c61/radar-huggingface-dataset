@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `summerMC/Qwen3.5-4B-Fast-Code` es un submódulo de generación de texto alojado en HuggingFace por el usuario `summerMC`. Según los metadatos, tiene 4.205.751.296 parámetros (aproximadamente 4,2 mil millones) y un tamaño de repositorio de 8,4 GB, lo que sugiere pesos en precisión FP16 o BF16. Sin embargo, la model card está completamente vacía: no se proporciona información sobre arquitectura, datos de entrenamiento, licencia, idiomas o capacidades. El nombre del modelo sugiere una posible relación con la familia Qwen y un enfoque en generación de código rápida, pero no hay confirmación oficial ni documentación técnica que respalde esta interpretación.
+El modelo `summerMC/Qwen3.5-4B-Fast-Code` es un submódulo de generación de texto alojado en Hugging Face por el usuario `summerMC`. Según los metadatos, tiene 4.205.751.296 parámetros (aproximadamente 4,2 mil millones) y un tamaño de repositorio de 8,4 GB, lo que sugiere pesos en precisión FP16 o BF16. Sin embargo, la model card está completamente vacía: no se proporciona información sobre arquitectura, datos de entrenamiento, licencia, idiomas o capacidades. El nombre del modelo sugiere una posible relación con la familia Qwen y un enfoque en generación de código rápida, pero no hay confirmación oficial ni documentación técnica que respalde esta interpretación.
 
 Se trata de un modelo reciente (creado el 14 de agosto de 2026) con cero descargas y cero likes, lo que indica que no ha sido evaluado por la comunidad. La ausencia de una model card detallada y de cualquier tipo de benchmark hace imposible determinar su utilidad real o su rendimiento. Cualquier uso en producción requeriría una evaluación independiente exhaustiva antes de considerar su adopción.
 
@@ -60,4 +60,4 @@ No disponible. No se puede comparar este modelo con alternativas como Qwen2.5-4B
 
 ## Enlaces
 
-- [HuggingFace: summerMC/Qwen3.5-4B-Fast-Code](https://huggingface.co/summerMC/Qwen3.5-4B-Fast-Code)
+- [Hugging Face: summerMC/Qwen3.5-4B-Fast-Code](https://huggingface.co/summerMC/Qwen3.5-4B-Fast-Code)

@@ -82,9 +82,9 @@ La comparativa con SapBERT es especialmente relevante, ya que ambos modelos abor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DT4H/CardioBERTa.it_GP_translations_only
+- Modelo en Hugging Face: https://huggingface.co/DT4H/CardioBERTa.it_GP_translations_only
 - Modelo base CardioBERTa.it: https://huggingface.co/DT4H/CardioBERTa.it
-- Organización DT4H en HuggingFace: https://huggingface.co/DT4H/
+- Organización DT4H en Hugging Face: https://huggingface.co/DT4H/
 - Colección CardioNER: https://huggingface.co/collections/DT4H/cardioner
 - GitHub de DataTools4Heart: https://github.com/DataTools4Heart/
 - Web del proyecto DataTools4Heart: https://www.datatools4heart.eu/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VibeVoice-Realtime-0.5B es un modelo de texto a voz (TTS) orientado a síntesis en tiempo real con entrada de texto en streaming, desarrollado originalmente por Microsoft (la model card referencia los repositorios `microsoft/VibeVoice`) y redistribuido en HuggingFace bajo el identificador `Infinix-ai/VibeVoice-Realtime-0.5B`. Su objetivo es permitir que un LLM empiece a hablar desde sus primeros tokens, sin esperar a que se genere la respuesta completa, lo que lo hace adecuado para asistentes de voz interactivos, narración de flujos de datos en vivo y servicios de TTS de baja latencia. El modelo produce audio audible inicial en torno a 300 ms (dependiendo del hardware).
+VibeVoice-Realtime-0.5B es un modelo de texto a voz (TTS) orientado a síntesis en tiempo real con entrada de texto en streaming, desarrollado originalmente por Microsoft (la model card referencia los repositorios `microsoft/VibeVoice`) y redistribuido en Hugging Face bajo el identificador `Infinix-ai/VibeVoice-Realtime-0.5B`. Su objetivo es permitir que un LLM empiece a hablar desde sus primeros tokens, sin esperar a que se genere la respuesta completa, lo que lo hace adecuado para asistentes de voz interactivos, narración de flujos de datos en vivo y servicios de TTS de baja latencia. El modelo produce audio audible inicial en torno a 300 ms (dependiendo del hardware).
 
 La arquitectura combina un LLM base Qwen2.5-0.5B con un tokenizador acústico basado en una variante σ-VAE (propuesta en LatentLM) que logra un downsampling de 3200x sobre audio de 24 kHz, y una cabeza de decodificación por difusión de 4 capas y unos 40M de parámetros que predice las características acústicas mediante un proceso DDPM con Classifier-Free Guidance y DPM-Solver. A diferencia de las variantes multi-hablante de VibeVoice, esta versión elimina el tokenizador semántico y opera únicamente con el tokenizador acústico a una tasa de fotogramas muy baja (7,5 Hz), lo que reduce el coste computacional y facilita el despliegue.
 
@@ -77,9 +77,9 @@ No se han publicado en la información disponible resultados de benchmarks de ra
 
 | Modelo | Parámetros | Contexto | WER LibriSpeech (%) ↓ | Speaker Similarity ↑ | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| VibeVoice-Realtime-0.5B | 1.017.626.722 | 8K | 2,00 | 0,695 | MIT | HuggingFace (Infinix-ai) |
-| VibeVoice-1.5B | no disponible | 64K | no disponible | no disponible | no disponible en esta ficha | HuggingFace (microsoft) |
-| VibeVoice-Large | no disponible | 32K | no disponible | no disponible | no disponible en esta ficha | HuggingFace (microsoft) |
+| VibeVoice-Realtime-0.5B | 1.017.626.722 | 8K | 2,00 | 0,695 | MIT | Hugging Face (Infinix-ai) |
+| VibeVoice-1.5B | no disponible | 64K | no disponible | no disponible | no disponible en esta ficha | Hugging Face (microsoft) |
+| VibeVoice-Large | no disponible | 32K | no disponible | no disponible | no disponible en esta ficha | Hugging Face (microsoft) |
 | Seed-TTS | no disponible | no disponible | no disponible | no disponible | no disponible | Referencia en benchmarks |
 | CosyVoice2 | no disponible | no disponible | no disponible | no disponible | no disponible | Referencia en benchmarks |
 
@@ -92,18 +92,18 @@ La comparativa con VibeVoice-1.5B y VibeVoice-Large es la más directa por famil
 - Limitaciones de contexto e idioma: contexto máximo de 8K tokens y generación de ~10 minutos; el inglés es el idioma objetivo y el resto de idiomas puede dar resultados impredecibles según el propio autor.
 - Restricciones de licencia: licencia MIT, que permite uso comercial, pero el autor limita el uso previsto a fines de investigación sobre generación de audio en tiempo real altamente realista; queda prohibido cualquier uso que infrinja leyes o regulaciones aplicables (incluidas las de cumplimiento comercial) o que vulnere la licencia MIT.
 - Uso fuera de alcance: el autor prohíbe explícitamente generar transcripciones de texto con el modelo y cualquier uso que infrinja la ley.
-- Caveat para producción: esta variante es de un solo hablante; para conversaciones multi-hablante hay que usar otras variantes de VibeVoice. Además, el repositorio de HuggingFace figura con 0 descargas y 0 likes, lo que sugiere que es una redistribución reciente y no la fuente canónica.
+- Caveat para producción: esta variante es de un solo hablante; para conversaciones multi-hablante hay que usar otras variantes de VibeVoice. Además, el repositorio de Hugging Face figura con 0 descargas y 0 likes, lo que sugiere que es una redistribución reciente y no la fuente canónica.
 - Riesgo de suplantación de voz: al ser un modelo TTS zero-shot con alta similitud de hablante (0,695 en LibriSpeech), debe usarse con salvaguardas para evitar usos maliciosos (deepfakes, fraude).
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Infinix-ai/VibeVoice-Realtime-0.5B
+- Hugging Face: https://huggingface.co/Infinix-ai/VibeVoice-Realtime-0.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Informe técnico VibeVoice: https://arxiv.org/abs/2508.19205
 - Paper LatentLM (σ-VAE): https://arxiv.org/pdf/2412.08635
 - Página del proyecto: https://microsoft.github.io/VibeVoice
 - Código: https://github.com/microsoft/VibeVoice
 - Documentación de la variante realtime: https://github.com/microsoft/VibeVoice/blob/main/docs/vibevoice-realtime-0.5b.md
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/anycoderapps/VibeVoice-Realtime-0.5B
-- Colección VibeVoice en HuggingFace: https://huggingface.co/collections/microsoft/vibevoice
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/anycoderapps/VibeVoice-Realtime-0.5B
+- Colección VibeVoice en Hugging Face: https://huggingface.co/collections/microsoft/vibevoice
 - Vídeo de demo: https://github.com/user-attachments/assets/0901d274-f6ae-46ef-a0fd-3c4fba4f76dc

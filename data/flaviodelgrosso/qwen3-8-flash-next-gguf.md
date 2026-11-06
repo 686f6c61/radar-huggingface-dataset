@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.8-flash-next-gguf (Q4) | 187,6 mil millones | no disponible | GGUF, 177,3 GB | qwen-community-license-1.0 | HuggingFace, 423 descargas |
-| qwen3.8-flash-next-gguf (Q2) | 187,6 mil millones | no disponible | GGUF, 147,2 GB | qwen-community-license-1.0 | HuggingFace, ejecucion Q2 sin validar en Inferno |
-| Qwen/Qwen3.8-Flash-Next (base) | 187.604.114.048 | no disponible | safetensors (pesos originales en BF16) | qwen-community-license-1.0 | HuggingFace, revision `de4b8e4d` |
+| qwen3.8-flash-next-gguf (Q4) | 187,6 mil millones | no disponible | GGUF, 177,3 GB | qwen-community-license-1.0 | Hugging Face, 423 descargas |
+| qwen3.8-flash-next-gguf (Q2) | 187,6 mil millones | no disponible | GGUF, 147,2 GB | qwen-community-license-1.0 | Hugging Face, ejecucion Q2 sin validar en Inferno |
+| Qwen/Qwen3.8-Flash-Next (base) | 187.604.114.048 | no disponible | safetensors (pesos originales en BF16) | qwen-community-license-1.0 | Hugging Face, revision `de4b8e4d` |
 | Otras alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de otros modelos de la misma categoria con los que establecer una comparacion de rendimiento, contexto o throughput.
@@ -102,7 +102,7 @@ No se dispone en la informacion proporcionada de otros modelos de la misma categ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/flaviodelgrosso/qwen3.8-flash-next-gguf
+- Repositorio Hugging Face: https://huggingface.co/flaviodelgrosso/qwen3.8-flash-next-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Runtime Inferno: https://github.com/flaviodelgrosso/inferno
 - Licencia del modelo (referenciada como `LICENSE` en el repositorio): https://huggingface.co/flaviodelgrosso/qwen3.8-flash-next-gguf/blob/main/LICENSE

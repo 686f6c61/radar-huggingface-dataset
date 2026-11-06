@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks especificos para este checkpoint cu
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| underlabs/GLM-5.3-NVFP4 | 386B (cuantizado) | 1M | NVFP4 W4A4 | glm-5.3 | HuggingFace |
-| Inferact/GLM-5.3-NVFP4 | 386B (cuantizado) | 1M | NVFP4 W4A4 | glm-5.3 | HuggingFace |
-| zai-org/GLM-5.3 (BF16) | 745B | 1M | BF16 | glm-5.3 | HuggingFace |
-| GLM-5.2 (base) | no disponible | no disponible | BF16 | glm-5.2 | HuggingFace |
+| underlabs/GLM-5.3-NVFP4 | 386B (cuantizado) | 1M | NVFP4 W4A4 | glm-5.3 | Hugging Face |
+| Inferact/GLM-5.3-NVFP4 | 386B (cuantizado) | 1M | NVFP4 W4A4 | glm-5.3 | Hugging Face |
+| zai-org/GLM-5.3 (BF16) | 745B | 1M | BF16 | glm-5.3 | Hugging Face |
+| GLM-5.2 (base) | no disponible | no disponible | BF16 | glm-5.2 | Hugging Face |
 
 La comparativa se limita a las variantes del mismo modelo. No se dispone de datos suficientes para comparar con otros modelos MoE de tamano similar (como DeepSeek o Qwen) en terminos de rendimiento cuantizado.
 
@@ -75,9 +75,9 @@ La comparativa se limita a las variantes del mismo modelo. No se dispone de dato
 
 ## Enlaces
 
-- [HuggingFace: underlabs/GLM-5.3-NVFP4](https://huggingface.co/underlabs/GLM-5.3-NVFP4)
-- [HuggingFace: Inferact/GLM-5.3-NVFP4](https://huggingface.co/Inferact/GLM-5.3-NVFP4)
-- [HuggingFace: zai-org/GLM-5.3](https://huggingface.co/zai-org/GLM-5.3)
+- [Hugging Face: underlabs/GLM-5.3-NVFP4](https://huggingface.co/underlabs/GLM-5.3-NVFP4)
+- [Hugging Face: Inferact/GLM-5.3-NVFP4](https://huggingface.co/Inferact/GLM-5.3-NVFP4)
+- [Hugging Face: zai-org/GLM-5.3](https://huggingface.co/zai-org/GLM-5.3)
 - [Blog de Z.ai sobre GLM-5.3](https://z.ai/blog/glm-5.3)
 - [Documentacion de Z.ai para GLM-5.3](https://docs.z.ai/guides/llm/glm-5.3)
 - [Articulo de Inco AI sobre soporte para GLM 5.3](https://inco.ai/blog/glm-5-3/)

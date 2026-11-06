@@ -83,8 +83,8 @@ No se dispone de datos de rendimiento comparativos entre estos modelos. La difer
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/reaperdoesntknow/GPT-X2-125M-CIx-Long-Context
-- Discusion en HuggingFace: https://huggingface.co/reaperdoesntknow/GPT-X2-125M-CIx-Long-Context/discussions/1
+- Hugging Face: https://huggingface.co/reaperdoesntknow/GPT-X2-125M-CIx-Long-Context
+- Discusion en Hugging Face: https://huggingface.co/reaperdoesntknow/GPT-X2-125M-CIx-Long-Context/discussions/1
 - Ficha de hardware en llmrun.dev: https://llmrun.dev/model/reaperdoesntknow-gpt-x2-125m-cix-long-context
 - Pagina de modelos de Axiomic Labs: https://axiomiclabs.com/models
 - Ficha del modelo base en LLM Explorer: https://llm-explorer.com/model/AxiomicLabs%2FGPT-X2-125M,2NwwBVsIrsmVTuHBqwPGd8

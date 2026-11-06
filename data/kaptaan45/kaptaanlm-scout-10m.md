@@ -84,16 +84,16 @@ Otros datos de rendimiento reportados: tasa de repeticion 0,000 y velocidad de 3
 - VRAM estimada para inferencia: inferior a 1 GB en cualquier precision. El checkpoint mas pesado ocupa 56,6 MB en disco y los checkpoints SFT/DPO 39,8 MB, por lo que en fp32 la huella ronda decenas de MB y en fp16 la mitad. La cache KV es despreciable a 2.048 tokens de contexto con solo 4 cabezas KV.
 - GPU recomendadas: ninguna en particular; el modelo es viable en CPU. Cualquier GPU consumer (GTX 1050, RTX 3060, RTX 4090) es sobredimensionada para este modelo.
 - Cabe en GPU consumer: si, en todas; tambien en CPU, Raspberry Pi, moviles y microcontroladores con suficiente RAM.
-- Opciones de despliegue: solo PyTorch con el codigo propio del paquete `kaptaan` (`from kaptaan.torch.model import KaptaanForCausalLM`). No hay soporte declarado para vLLM, llama.cpp, Ollama, TGI ni transformers de HuggingFace, ni pesos en GGUF, safetensors o formatos cuantizados.
+- Opciones de despliegue: solo PyTorch con el codigo propio del paquete `kaptaan` (`from kaptaan.torch.model import KaptaanForCausalLM`). No hay soporte declarado para vLLM, llama.cpp, Ollama, TGI ni transformers de Hugging Face, ni pesos en GGUF, safetensors o formatos cuantizados.
 - Latencia y throughput estimados: 34 tokens/s reportados para Scout-Omni-SFT, sin especificar el hardware de medida.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Suite global (11.858 preguntas) | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| KaptaanLM-Scout-Omni-1.0 | 9,95 M (5,76 M no-embedding) | 2.048 | 20,71 % | 2,58 % | Apache 2.0 | HuggingFace (.pt, codigo propio) |
-| KaptaanLM-Scout-Reasoning-1.0 | 9,95 M | 2.048 | 19,81 % | 1,67 % | Apache 2.0 | HuggingFace (.pt, codigo propio) |
-| SmolLM-135M | 135 M | no disponible en la informacion proporcionada | 32,70 % | 1,52 % | no disponible en la informacion proporcionada | HuggingFace |
+| KaptaanLM-Scout-Omni-1.0 | 9,95 M (5,76 M no-embedding) | 2.048 | 20,71 % | 2,58 % | Apache 2.0 | Hugging Face (.pt, codigo propio) |
+| KaptaanLM-Scout-Reasoning-1.0 | 9,95 M | 2.048 | 19,81 % | 1,67 % | Apache 2.0 | Hugging Face (.pt, codigo propio) |
+| SmolLM-135M | 135 M | no disponible en la informacion proporcionada | 32,70 % | 1,52 % | no disponible en la informacion proporcionada | Hugging Face |
 
 Otras alternativas de la misma categoria (modelos sub-200M como SmolLM-360M, Qwen2.5-0.5B o TinyLlama-1.1B) no aparecen en la informacion proporcionada, por lo que no se incluyen datos comparativos. La conclusion que sostiene el autor es que, aunque el rendimiento absoluto es inferior, la densidad de accuracy por parametro es superior a la de SmolLM-135M, especialmente en GSM8K.
 
@@ -112,7 +112,7 @@ Otras alternativas de la misma categoria (modelos sub-200M como SmolLM-360M, Qwe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaptaan45/KaptaanLM-Scout-10M
+- Modelo en Hugging Face: https://huggingface.co/kaptaan45/KaptaanLM-Scout-10M
 - Repositorio GitHub: https://github.com/rudy-07/KaptaanLM
 - Protocolo de evaluacion: EleutherAI lm-evaluation-harness (https://github.com/EleutherAI/lm-evaluation-harness)
 - Dataset base del checkpoint piloto: Cosmopedia v2 (https://huggingface.co/datasets/HuggingFaceTB/cosmopedia)

@@ -82,7 +82,7 @@ La comparacion con alternativas equivalentes en euskera o en otras lenguas de ba
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/francesca9805/eus-latn-100mb-ppt-mp-struct-100mb_seed455
+- Hugging Face: https://huggingface.co/francesca9805/eus-latn-100mb-ppt-mp-struct-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eus_latn_100mb
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/wyrr3gd9
 - Repositorio TRL: https://github.com/huggingface/trl

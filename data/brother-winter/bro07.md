@@ -1,7 +1,7 @@
 # brother-winter/bro07
 
 ## Resumen
-El repositorio `brother-winter/bro07` fue publicado en HuggingFace por el usuario `brother-winter` el 3 de septiembre de 2026 y actualizado el mismo día. No incluye un model card ni información técnica que permita identificar el modelo, su arquitectura o su propósito. El tamaño del repositorio es de 32.4 GB, lo que sugiere que podría contener pesos de un modelo, pero no se puede confirmar a partir de la información disponible.
+El repositorio `brother-winter/bro07` fue publicado en Hugging Face por el usuario `brother-winter` el 3 de septiembre de 2026 y actualizado el mismo día. No incluye un model card ni información técnica que permita identificar el modelo, su arquitectura o su propósito. El tamaño del repositorio es de 32.4 GB, lo que sugiere que podría contener pesos de un modelo, pero no se puede confirmar a partir de la información disponible.
 
 El modelo presenta 0 descargas y 1 like, lo que indica que no ha tenido adopción por parte de la comunidad. Dado que no se dispone de datos sobre licencia, idiomas soportados, arquitectura ni capacidades, no es posible evaluar qué problema resuelve ni por qué sería relevante ahora. La ficha se limita a documentar la ausencia de información pública.
 
@@ -62,5 +62,5 @@ No disponible. No se han identificado modelos comparables porque no hay informac
 - Se desaconseja su uso en producción hasta que se publique documentación completa.
 
 ## Enlaces
-- [Repositorio en HuggingFace](https://huggingface.co/brother-winter/bro07)
+- [Repositorio en Hugging Face](https://huggingface.co/brother-winter/bro07)
 - No se han encontrado papers, blogs ni demos asociadas al modelo.

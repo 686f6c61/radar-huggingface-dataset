@@ -81,7 +81,7 @@ La comparativa se basa en datos públicos de los modelos. No se dispone de bench
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gpt-oss-20b-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gpt-oss-20b-abliterated-GGUF
 - Modelo base (abliterated): https://huggingface.co/wangzhang/gpt-oss-20b-abliterated
 - Documentación de OpenAI para GPT-OSS-20B: https://developers.openai.com/api/docs/models/gpt-oss-20b
 - Guía de instalación y ejecución local: https://dev.to/nodeshiftcloud/how-to-install-run-gpt-oss-20b-and-120b-gguf-locally-3833

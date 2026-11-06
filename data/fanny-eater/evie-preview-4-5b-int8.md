@@ -76,7 +76,7 @@ Nota: los datos de ColPali, ColQwen y Jina provienen de información pública ge
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/Fanny-Eater/EVIE-Preview-4.5B-int8
+- Modelo cuantizado en Hugging Face: https://huggingface.co/Fanny-Eater/EVIE-Preview-4.5B-int8
 - Modelo original de Tencent: https://huggingface.co/tencent/EVIE-Preview-4.5B
 - Repositorio GitHub de Tencent: https://github.com/Tencent/EVIE-Preview-4.5B
 - Script de reproducción: https://github.com/Tencent/EVIE-Preview-4.5B/blob/main/reproduce.py

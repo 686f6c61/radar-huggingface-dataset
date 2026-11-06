@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de la misma 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/angronain/Qwen3.5-2B-Unlocked-GGUF
+- Hugging Face: https://huggingface.co/angronain/Qwen3.5-2B-Unlocked-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Modelo recomendado para código: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF
 - Scripts del método de ablación: carpeta `method/` del repositorio (referenciada en la model card)

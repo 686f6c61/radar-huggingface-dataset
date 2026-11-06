@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Entrada | Representación | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OpenMHC WBM (este) | Mamba2 bidireccional | 168 pasos x 19 canales | 256 dimensiones | 168 pasos horarios | BigScience OpenRAIL-M | HuggingFace (`MyHeartCounts/openmhc-wbm-dp`) |
+| OpenMHC WBM (este) | Mamba2 bidireccional | 168 pasos x 19 canales | 256 dimensiones | 168 pasos horarios | BigScience OpenRAIL-M | Hugging Face (`MyHeartCounts/openmhc-wbm-dp`) |
 | WBM de Apple (original) | No especificada en la información disponible | Datos de wearables | No disponible | No disponible | No disponible | No distribuido públicamente según la información disponible |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,7 +81,7 @@ No se dispone de información sobre otros encoders de wearables comparables en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MyHeartCounts/openmhc-wbm-dp
+- Hugging Face: https://huggingface.co/MyHeartCounts/openmhc-wbm-dp
 - Paper (Apple, 2025): https://arxiv.org/abs/2507.00191
 - Resumen de Apple Machine Learning Research: https://machinelearning.apple.com/research/beyond-sensor
 - Licencia (BigScience OpenRAIL-M): incluida en el repositorio como `LICENSE`

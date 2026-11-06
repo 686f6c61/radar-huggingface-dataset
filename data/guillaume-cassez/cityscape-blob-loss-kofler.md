@@ -71,10 +71,10 @@ No se han publicado en la informacion disponible otros benchmarks (MMLU, HumanEv
 
 | Modelo | Tarea y dataset | Backbone / cabeza | mIoU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cityscape-blob-loss-kofler | Segmentacion semantica Cityscapes, 19 clases | ConvNeXt-V2-Base + UPerNet | 81,263 (G_blob) | MIT | HuggingFace |
-| cityscape-distmap-aux-regression | Segmentacion semantica Cityscapes | ConvNeXt-V2 + UPerNet (perdida auxiliar de mapa de distancias) | no disponible en esta busqueda | MIT | HuggingFace |
-| cityscape-boundary-loss-kervadec | Segmentacion semantica Cityscapes | ConvNeXt-V2 + UPerNet (perdida de contorno Kervadec) | no disponible en esta busqueda | MIT | HuggingFace |
-| cityscape-moe-v3-experts | Segmentacion con mezcla de expertos | Configuracion MoE de la serie paper4 | no disponible en esta busqueda | MIT | HuggingFace |
+| cityscape-blob-loss-kofler | Segmentacion semantica Cityscapes, 19 clases | ConvNeXt-V2-Base + UPerNet | 81,263 (G_blob) | MIT | Hugging Face |
+| cityscape-distmap-aux-regression | Segmentacion semantica Cityscapes | ConvNeXt-V2 + UPerNet (perdida auxiliar de mapa de distancias) | no disponible en esta busqueda | MIT | Hugging Face |
+| cityscape-boundary-loss-kervadec | Segmentacion semantica Cityscapes | ConvNeXt-V2 + UPerNet (perdida de contorno Kervadec) | no disponible en esta busqueda | MIT | Hugging Face |
+| cityscape-moe-v3-experts | Segmentacion con mezcla de expertos | Configuracion MoE de la serie paper4 | no disponible en esta busqueda | MIT | Hugging Face |
 
 Las alternativas mas directas son los depositos hermanos del mismo autor, que comparten backbone, dataset y protocolo de evaluacion y solo cambian la perdida auxiliar, lo que los hace comparables de forma controlada.
 
@@ -91,7 +91,7 @@ Las alternativas mas directas son los depositos hermanos del mismo autor, que co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guillaume-cassez/cityscape-blob-loss-kofler
+- Modelo en Hugging Face: https://huggingface.co/guillaume-cassez/cityscape-blob-loss-kofler
 - Repositorio de codigo, tablas y figuras: https://github.com/guillaume-cassez/cityscape-blob-loss-kofler
 - DOI de concepto (siempre resuelve a la ultima version): https://doi.org/10.5281/zenodo.23083559
 - Deposito Zenodo vigente en la redaccion: https://doi.org/10.5281/zenodo.23147260

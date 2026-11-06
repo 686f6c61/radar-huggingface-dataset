@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dan-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino (fine-tuning) supervisado de un modelo base previo del mismo autor, `francesca9805/dan-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407`. Lo publica el usuario francesca9805 en HuggingFace y esta orientado a generacion de texto. Por las etiquetas del repositorio (`gpt2`) y el recuento real de parametros (124.770.816, aproximadamente 125 millones), se corresponde con la arquitectura GPT-2 en su variante pequena (GPT-2 small), un transformer causal decoder-only.
+El modelo `dan-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino (fine-tuning) supervisado de un modelo base previo del mismo autor, `francesca9805/dan-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407`. Lo publica el usuario francesca9805 en Hugging Face y esta orientado a generacion de texto. Por las etiquetas del repositorio (`gpt2`) y el recuento real de parametros (124.770.816, aproximadamente 125 millones), se corresponde con la arquitectura GPT-2 en su variante pequena (GPT-2 small), un transformer causal decoder-only.
 
 El modelo se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL, segun indica su model card. El sufijo del nombre sugiere un entrenamiento sobre un conjunto de datos danes de unos 100 MB en escritura latina ("dan-latn"), empaquetado ("packed"), aunque esta interpretacion procede del propio nombre del modelo y no esta confirmada de forma explicita en la informacion disponible. El nombre tambien indica un checkpoint intermedio (ckpt500) y una semilla concreta (seed3407), lo que apunta a un experimento de investigacion y no a un modelo listo para produccion.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dan-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407 | 124,8 M | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| GPT-2 small (openai-community/gpt2) | 124 M | 1.024 tokens | ampliamente evaluado | MIT | HuggingFace, muy extendido |
-| DistilGPT-2 (distilbert/distilgpt2) | 82 M | 1.024 tokens | ampliamente evaluado | Apache 2.0 | HuggingFace, muy extendido |
-| francesca9805/dan-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10 | no disponible | no disponible | no disponible | no disponible | HuggingFace, variante del mismo autor |
+| dan-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407 | 124,8 M | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| GPT-2 small (openai-community/gpt2) | 124 M | 1.024 tokens | ampliamente evaluado | MIT | Hugging Face, muy extendido |
+| DistilGPT-2 (distilbert/distilgpt2) | 82 M | 1.024 tokens | ampliamente evaluado | Apache 2.0 | Hugging Face, muy extendido |
+| francesca9805/dan-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10 | no disponible | no disponible | no disponible | no disponible | Hugging Face, variante del mismo autor |
 
 La comparacion de rendimiento con GPT-2 small y DistilGPT-2 no puede cuantificarse porque este modelo no publica benchmarks; la unica comparacion fiable posible es estructural (misma familia GPT-2, mismo orden de tamano) y de disponibilidad (los modelos de OpenAI estan mucho mas extendidos y con licencia explicita, mientras que este no declara licencia).
 
@@ -83,7 +83,7 @@ La comparacion de rendimiento con GPT-2 small y DistilGPT-2 no puede cuantificar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/dan-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/dan-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/dan-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407
 - Panel de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ca787sed
 - Repositorio de TRL: https://github.com/huggingface/trl

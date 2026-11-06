@@ -6,7 +6,7 @@
 
 El problema que resuelve es concreto y acotado: la segmentación automática y reproducible de vacuolas parasitóforas en placas de microscopía de alto rendimiento, una tarea donde los modelos genéricos de segmentación celular rinden de forma insuficiente. Según la model card, el ajuste fino eleva la F1 a IoU 0,5 de 0,7648 (stock `cpsam_v2`) a 0,8536 en 11 pocillos ancla, y de 0,4286 a 0,7482 en campos de placas nuevas no vistas durante el entrenamiento, lo que indica una mejora notable de la generalización entre placas.
 
-El modelo se distribuye como un único archivo de pesos (`weights/cpsam_v2_toxo_r7`) dentro de un repositorio de 1,2 GB que además incluye historiales de entrenamiento, métricas de control de calidad (QC), validación cruzada de 5 pliegues y scripts de partición de datos. Está pensado para usarse junto con spaCR, la herramienta del mismo autor, y su relevancia actual radica en que es la ronda más reciente de una serie iterativa (r1 a r7) con máscaras verificadas manualmente, algo poco habitual en modelos de segmentación de microscopía publicados en HuggingFace.
+El modelo se distribuye como un único archivo de pesos (`weights/cpsam_v2_toxo_r7`) dentro de un repositorio de 1,2 GB que además incluye historiales de entrenamiento, métricas de control de calidad (QC), validación cruzada de 5 pliegues y scripts de partición de datos. Está pensado para usarse junto con spaCR, la herramienta del mismo autor, y su relevancia actual radica en que es la ronda más reciente de una serie iterativa (r1 a r7) con máscaras verificadas manualmente, algo poco habitual en modelos de segmentación de microscopía publicados en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -24,7 +24,7 @@ El modelo se distribuye como un único archivo de pesos (`weights/cpsam_v2_toxo_
 | Tarea (pipeline) | image-segmentation |
 | Entorno de referencia | cellpose 4.2.1.1, torch 2.10.0+cu128 |
 | GPU de entrenamiento | NVIDIA GeForce RTX 3090 Ti |
-| Fecha de creación (según HuggingFace) | 2026-09-30 |
+| Fecha de creación (según Hugging Face) | 2026-09-30 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -117,7 +117,7 @@ La comparativa con las rondas r2 y r5 es cualitativa: la información disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/einarolafsson/toxoplasma-pv-segmentation-cpsam-r7
+- Modelo en Hugging Face: https://huggingface.co/einarolafsson/toxoplasma-pv-segmentation-cpsam-r7
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/einarolafsson/toxoplasma-pv-segmentation-dataset-r7
 - Repositorio spaCR en GitHub: https://github.com/EinarOlafsson/spacr
 - spaCR en PyPI: https://pypi.org/project/spacr/

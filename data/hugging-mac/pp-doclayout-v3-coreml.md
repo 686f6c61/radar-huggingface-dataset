@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hugging-mac/pp-doclayout-v3-coreml | no disponible | imagen fija 800x800 | Core ML (FP16) | Apache-2.0 | HuggingFace, macOS 14+ |
-| PaddlePaddle/PP-DocLayoutV3_safetensors (modelo base) | no disponible | no disponible | safetensors | Apache-2.0 (heredada) | HuggingFace |
+| hugging-mac/pp-doclayout-v3-coreml | no disponible | imagen fija 800x800 | Core ML (FP16) | Apache-2.0 | Hugging Face, macOS 14+ |
+| PaddlePaddle/PP-DocLayoutV3_safetensors (modelo base) | no disponible | no disponible | safetensors | Apache-2.0 (heredada) | Hugging Face |
 | Otras alternativas de layout documental (LayoutLMv3, DiT, DocLayout-YOLO, entre otras) | no disponibles | no disponibles | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento, parametros ni contexto de los modelos alternativos en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable. La unica diferencia verificable frente al modelo base es el formato: este repositorio entrega un ML Program de Core ML en FP16, mientras que el original se distribuye en safetensors para el ecosistema PaddlePaddle.
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento, parametros ni contexto de los modelos alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hugging-mac/pp-doclayout-v3-coreml
+- Modelo en Hugging Face: https://huggingface.co/hugging-mac/pp-doclayout-v3-coreml
 - Modelo base: https://huggingface.co/PaddlePaddle/PP-DocLayoutV3_safetensors
 - SDK hugging-mac: https://github.com/hugging-mac/hugging-mac
 - Paper, blog o demo oficiales: no disponibles en la informacion proporcionada.

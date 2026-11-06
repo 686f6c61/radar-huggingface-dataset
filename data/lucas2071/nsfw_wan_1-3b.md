@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NSFW Wan 1.3B T2V es un ajuste fino (fine-tune) del modelo de generación de vídeo texto-a-vídeo Wan2.1-T2V-1.3B de Alibaba, especializado en contenido para adultos. Lo publica el usuario Lucas2071 en HuggingFace bajo licencia CreativeML OpenRAIL-M, con la etiqueta explícita de contenido no apto para todos los públicos. El modelo parte de la arquitectura transformer de difusión de Wan 1.3B y se reentrena sobre un corpus curado de publicaciones de Reddit de temática NSFW para ampliar la cobertura temática del modelo base en ese dominio.
+NSFW Wan 1.3B T2V es un ajuste fino (fine-tune) del modelo de generación de vídeo texto-a-vídeo Wan2.1-T2V-1.3B de Alibaba, especializado en contenido para adultos. Lo publica el usuario Lucas2071 en Hugging Face bajo licencia CreativeML OpenRAIL-M, con la etiqueta explícita de contenido no apto para todos los públicos. El modelo parte de la arquitectura transformer de difusión de Wan 1.3B y se reentrena sobre un corpus curado de publicaciones de Reddit de temática NSFW para ampliar la cobertura temática del modelo base en ese dominio.
 
 El objetivo declarado es servir como herramienta de investigación y creación para generar clips cortos coherentes a partir de descripciones en lenguaje natural dentro del ámbito adulto, con movimiento nativo sin necesidad de LoRAs auxiliares. El autor documenta dos rondas de entrenamiento: una original en dos fases (imágenes y luego vídeo) con problemas conocidos de degradación anatómica, y una segunda experimental de una sola pasada sobre dataset mixto que corrige en parte esos artefactos.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / duración | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NSFW Wan 1.3B (este) | 1,3B | no disponible | Texto-a-vídeo NSFW | CreativeML OpenRAIL-M | HuggingFace, repo de 105,4 GB |
-| Wan2.1-T2V-1.3B (base) | 1,3B | no disponible | Texto-a-vídeo general | no disponible en esta ficha | HuggingFace (Wan-AI) |
+| NSFW Wan 1.3B (este) | 1,3B | no disponible | Texto-a-vídeo NSFW | CreativeML OpenRAIL-M | Hugging Face, repo de 105,4 GB |
+| Wan2.1-T2V-1.3B (base) | 1,3B | no disponible | Texto-a-vídeo general | no disponible en esta ficha | Hugging Face (Wan-AI) |
 | Alternativas NSFW de vídeo open source | no disponible | no disponible | Texto-a-vídeo NSFW | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas comparables en la información proporcionada, por lo que la comparación cuantitativa no es posible.
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lucas2071/NSFW_Wan_1.3b
+- Hugging Face: https://huggingface.co/Lucas2071/NSFW_Wan_1.3b
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
-- Archivo de guía de prompting: `prompting-guide.json` dentro del repositorio de HuggingFace
+- Archivo de guía de prompting: `prompting-guide.json` dentro del repositorio de Hugging Face
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada

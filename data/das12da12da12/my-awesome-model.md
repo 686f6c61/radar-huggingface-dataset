@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un repositorio publicado en HuggingFace por el usuario DAS12DA12DA12 bajo licencia MIT. Segun la informacion disponible, el repositorio esta etiquetado con las etiquetas `transformers`, `pytorch`, `bert`, `feature-extraction` y `endpoints_compatible`, lo que sugiere una arquitectura de tipo encoder BERT orientada a extraccion de caracteristicas. Sin embargo, la model card describe un modelo conversacional de razonamiento con modo de pensamiento, function calling y mejoras en tareas de matematicas y programacion, lo que entra en contradiccion directa con las etiquetas del repositorio.
+MyAwesomeModel es un repositorio publicado en Hugging Face por el usuario DAS12DA12DA12 bajo licencia MIT. Segun la informacion disponible, el repositorio esta etiquetado con las etiquetas `transformers`, `pytorch`, `bert`, `feature-extraction` y `endpoints_compatible`, lo que sugiere una arquitectura de tipo encoder BERT orientada a extraccion de caracteristicas. Sin embargo, la model card describe un modelo conversacional de razonamiento con modo de pensamiento, function calling y mejoras en tareas de matematicas y programacion, lo que entra en contradiccion directa con las etiquetas del repositorio.
 
 El repositorio presenta un tamano de 0.0 GB, cero descargas y cero likes, y no contiene pesos publicados ni informacion verificable sobre parametros, longitud de contexto o datos de entrenamiento. La model card incluye una tabla de evaluacion con categorias genericas (Math Reasoning, Logical Reasoning, Code Generation) y comparaciones contra entidades anonimizadas ("Model1", "Model2"), sin especificar que benchmarks estandar se han utilizado ni como se han medido.
 
@@ -83,7 +83,7 @@ La comparativa de la model card incluye columnas "Model1", "Model2" y "Model1-v2
 - VRAM estimada para inferencia: no disponible (no se conocen parametros ni formato de pesos).
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible; el repositorio no contiene pesos (0.0 GB), por lo que no es ejecutable en el estado actual.
-- Opciones de despliegue: el repositorio declara compatibilidad con `transformers` y `endpoints_compatible` (HuggingFace Inference Endpoints). La model card remite a un repositorio de codigo externo no enlazado para ejecucion local, sin detallar soporte de vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: el repositorio declara compatibilidad con `transformers` y `endpoints_compatible` (Hugging Face Inference Endpoints). La model card remite a un repositorio de codigo externo no enlazado para ejecucion local, sin detallar soporte de vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -105,6 +105,6 @@ No es posible establecer una comparativa fiable. No se conocen los parametros, l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DAS12DA12DA12/my-awesome-model
+- Hugging Face: https://huggingface.co/DAS12DA12DA12/my-awesome-model
 - Repositorio de codigo, sitio web oficial, paper y demos: no disponibles (la model card los menciona pero no proporciona enlaces validos).
 - Resultados de busqueda web: sin coincidencias relevantes; las busquedas devuelven contenido sin relacion con el modelo.

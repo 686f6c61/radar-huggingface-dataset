@@ -91,7 +91,7 @@ La comparación con alternativas de otros fabricantes no puede completarse con d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mohsinkhanshaik/HAYAT-Open-4B
+- Modelo en Hugging Face: https://huggingface.co/Mohsinkhanshaik/HAYAT-Open-4B
 - Repositorio del proyecto HAYAT: https://github.com/mohsinkhanshaik/HAYAT
 - Modelo base directo: https://huggingface.co/huihui-ai/Huihui-Qwen3-4B-Instruct-2507-abliterated
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

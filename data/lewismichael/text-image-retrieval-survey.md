@@ -65,7 +65,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lewismichael/text-image-retrieval-survey
+- Repositorio en Hugging Face: https://huggingface.co/lewismichael/text-image-retrieval-survey
 - Survey sobre image-text retrieval (arXiv 2203.14713): https://arxiv.org/abs/2203.14713
 - Version HTML del mismo survey: https://ar5iv.labs.arxiv.org/html/2203.14713
 - Survey sobre composed image retrieval (Springer): https://link.springer.com/article/10.1007/s10489-025-06372-x

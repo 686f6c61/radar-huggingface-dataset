@@ -83,7 +83,7 @@ La comparacion con modelos de proposito general no es directa: este checkpoint e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/credible-ai/qwen3.5-4B-40domains-dirichlet-lightgbm-mbpp
+- Hugging Face: https://huggingface.co/credible-ai/qwen3.5-4B-40domains-dirichlet-lightgbm-mbpp
 - Paper LinMix: https://arxiv.org/abs/2610.37390
 - Repositorio de codigo: https://github.com/credibleai/linmix
 - Proxy de 100M: https://huggingface.co/credible-ai/qwen3.5-100M-40domains-dirichlet

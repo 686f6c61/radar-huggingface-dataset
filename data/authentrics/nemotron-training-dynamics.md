@@ -17,7 +17,7 @@ Su relevancia es metodológica: ilustra cómo auditar qué cambió, dónde y cu�
 | Parametros activos | No aplica / no disponible (no se indica que el modelo base sea MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible. No se publican pesos derivados ni versiones cuantizadas |
-| Idiomas soportados | No disponible (el campo de idiomas aparece vacío en HuggingFace) |
+| Idiomas soportados | No disponible (el campo de idiomas aparece vacío en Hugging Face) |
 | Licencia | `other` (los términos concretos no se detallan en la información proporcionada) |
 | Formato de pesos | No se publican pesos. Los artefactos son JSON y paneles HTML de Plotly generados por el SDK |
 | Tipo de artefacto | Demostración de análisis de checkpoints (no es un modelo desplegable) |
@@ -99,7 +99,7 @@ No se dispone de información sobre alternativas comparables en la documentació
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/authentrics/nemotron-training-dynamics
+- Repositorio en Hugging Face: https://huggingface.co/authentrics/nemotron-training-dynamics
 - Modelo base referenciado: https://huggingface.co/nvidia/Nemotron-Cascade-8B-Intermediate-ckpts
 - Aplicación y claves de API: https://app.authentrics.ai/
 - Documentación y referencia de API: https://app.authentrics.ai/docs

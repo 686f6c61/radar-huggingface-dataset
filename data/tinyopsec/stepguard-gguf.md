@@ -89,7 +89,7 @@ Nota: no hay datos de rendimiento comparativo publicados para StepGuard, por lo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tinyopsec/StepGuard-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/StepGuard-GGUF
 - Modelo original (referenciado en la model card): https://huggingface.co/ninty-seven/StepGuard
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper, blog o demo: no disponible

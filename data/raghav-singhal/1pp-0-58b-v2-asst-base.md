@@ -6,7 +6,7 @@
 
 El modelo se ha entrenado desde cero sobre 20,3 tokens de asistente por parámetro, con una secuencia de 4.096 tokens y un vocabulario de 49.152 entradas basado en SmolLM2 más un token de relleno. La condición concreta de esta ficha es «rewritten conversations, assistant-turn loss» con semilla 28: los documentos originales se reescriben como conversaciones y la pérdida se calcula únicamente sobre los turnos del asistente. La comparación con las otras condiciones y semillas permite aislar el efecto de la formulación de datos y de la inicialización de parámetros.
 
-Su relevancia es metodológica: ofrece un punto de control reproducible y de pequeño tamaño para estudiar dinámicas de preentrenamiento con datos conversacionales, con registros de entrenamiento públicos en Weights & Biases y verificación de los pesos de HuggingFace contra el checkpoint original de Megatron. La licencia Apache 2.0 facilita su reutilización, aunque el autor advierte explícitamente de que no está pensado como asistente general.
+Su relevancia es metodológica: ofrece un punto de control reproducible y de pequeño tamaño para estudiar dinámicas de preentrenamiento con datos conversacionales, con registros de entrenamiento públicos en Weights & Biases y verificación de los pesos de Hugging Face contra el checkpoint original de Megatron. La licencia Apache 2.0 facilita su reutilización, aunque el autor advierte explícitamente de que no está pensado como asistente general.
 
 ## Especificaciones técnicas
 
@@ -41,7 +41,7 @@ El preentrenamiento cubre los primeros 11.106 pasos del flujo alineado por pasos
 
 - Investigación sobre formulación de datos de preentrenamiento: sirve como punto de control de 0,58B para comparar, con las mismas semillas y flujo de datos, el efecto de reescribir documentos como conversaciones y de enmascarar la pérdida por turnos frente a otras condiciones del proyecto 1PP.
 - Estudios de escalado controlado: al compartir flujo de datos alineado por pasos con los tamaños 0,98B, 1,66B y 2,81B, permite trazar curvas de pérdida y de comportamiento en función del número de parámetros con una única variable independiente.
-- Reproducibilidad de experimentos: los registros de entrenamiento públicos en Weights & Biases y la verificación de los pesos de HuggingFace contra el checkpoint de Megatron (diferencias absolutas de 0,0015 en pérdida) permiten replicar y auditar los resultados.
+- Reproducibilidad de experimentos: los registros de entrenamiento públicos en Weights & Biases y la verificación de los pesos de Hugging Face contra el checkpoint de Megatron (diferencias absolutas de 0,0015 en pérdida) permiten replicar y auditar los resultados.
 - Análisis de formato conversacional: útil para estudiar cómo un modelo base aprende la estructura ChatML sin ajuste supervisado, comparando la condición de conversaciones reescritas con la línea base de texto plano.
 - Evaluación de la pérdida por turnos: permite medir el impacto del enmascaramiento de pérdida solo en turnos de asistente sobre la perplejidad en texto de usuario y de documento (5,724 y 3,489 respectivamente en este checkpoint).
 - Docencia y experimentación con optimizadores: al combinar Muon para matrices y Adam para el resto de parámetros, sirve como caso práctico de configuración híbrida de optimización en entrenamiento desde cero a pequeña escala.
@@ -97,7 +97,7 @@ Los datos de los modelos comparables corresponden a sus especificaciones públic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-asst-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-asst-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Registros de entrenamiento (wandb, 1pp-training): https://wandb.ai/raghav_singhal/1pp-training
 - Registros de ajuste (wandb, 1pp-sft): https://wandb.ai/raghav_singhal/1pp-sft

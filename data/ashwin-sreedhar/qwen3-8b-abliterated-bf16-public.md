@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-8B-abliterated-bf16-public es un checkpoint experimental derivado de Qwen/Qwen3-8B, publicado por el usuario ashwin-sreedhar en HuggingFace. Se trata de una versión "abliterated" del modelo de Qwen: los pesos han sido editados mediante una intervención dirigida (weight editing) con el objetivo de reducir los comportamientos de rechazo del modelo original, manteniendo en lo posible sus capacidades generales. No se trata de un lanzamiento oficial de Qwen, sino de una modificación independiente de la comunidad.
+Qwen3-8B-abliterated-bf16-public es un checkpoint experimental derivado de Qwen/Qwen3-8B, publicado por el usuario ashwin-sreedhar en Hugging Face. Se trata de una versión "abliterated" del modelo de Qwen: los pesos han sido editados mediante una intervención dirigida (weight editing) con el objetivo de reducir los comportamientos de rechazo del modelo original, manteniendo en lo posible sus capacidades generales. No se trata de un lanzamiento oficial de Qwen, sino de una modificación independiente de la comunidad.
 
 El modelo base, Qwen3-8B, es un modelo de lenguaje denso de 8.190.735.360 parámetros de la familia Qwen3 de Alibaba, orientado a generación de texto y diálogo. La variante abliterada conserva la arquitectura, el tamaño y el formato bf16 del original, por lo que puede desplegarse con las mismas herramientas y requiere recursos similares. Su relevancia reside en ofrecer una versión con menos restricciones de alineamiento para investigación en seguridad, interpretabilidad y análisis de comportamiento de modelos.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Las �
 - VRAM estimada para inferencia: con 8,2 mil millones de parámetros en bf16, aproximadamente 16,4 GB solo de pesos; en la práctica se recomiendan 20-24 GB de VRAM para inferencia cómoda con contexto razonable.
 - GPU recomendadas: RTX 3090 o RTX 4090 (24 GB) para inferencia local en fp16/bf16; A100 o H100 (40/80 GB) para contextos largos, batching o servir múltiples usuarios.
 - Consumer GPU: cabe en una RTX 3090/4090 de 24 GB en bf16 con contexto moderado. En GPUs de 16 GB (RTX 4080/4060 Ti 16 GB) sería necesaria una cuantización a 8 bits o 4 bits, no distribuida oficialmente en este repo.
-- Opciones de despliegue: transformers (librería nativa del repo), vLLM, TGI y endpoints de inferencia de HuggingFace (tag endpoints_compatible). Para llama.cpp u Ollama sería necesaria una conversión a GGUF no incluida en el repo.
+- Opciones de despliegue: transformers (librería nativa del repo), vLLM, TGI y endpoints de inferencia de Hugging Face (tag endpoints_compatible). Para llama.cpp u Ollama sería necesaria una conversión a GGUF no incluida en el repo.
 - Latencia y throughput: no disponible; al ser un modelo denso de 8B en bf16, el rendimiento esperable es el estándar de cualquier modelo de 8B en las herramientas mencionadas.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Las �
 |---|---|---|---|---|
 | Qwen3-8B-abliterated-bf16-public | 8,19 B | safetensors bf16 | Apache 2.0 | Variante experimental con pesos editados; rechazos reducidos pero no verificados |
 | Qwen/Qwen3-8B (base) | 8,19 B | safetensors | Apache 2.0 | Modelo original de Alibaba, con alineamiento estándar y modos thinking/no-thinking |
-| Otras variantes abliterated de Qwen3-8B en la comunidad | 8,19 B | safetensors/GGUF | Apache 2.0 | Varias existentes en HuggingFace; datos concretos no disponibles en la información proporcionada |
+| Otras variantes abliterated de Qwen3-8B en la comunidad | 8,19 B | safetensors/GGUF | Apache 2.0 | Varias existentes en Hugging Face; datos concretos no disponibles en la información proporcionada |
 
 Frente al modelo base, esta variante ofrece un comportamiento de rechazo presumiblemente reducido a costa de una validación de capacidades incompleta y una desviación métrica respecto al original (KL 0,115 en primer token).
 
@@ -87,6 +87,6 @@ Frente al modelo base, esta variante ofrece un comportamiento de rechazo presumi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ashwin-sreedhar/Qwen3-8B-abliterated-bf16-public
+- Modelo en Hugging Face: https://huggingface.co/ashwin-sreedhar/Qwen3-8B-abliterated-bf16-public
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Metadatos de intervención y verificaciones: directorio `.pipeline/` dentro del repositorio del modelo

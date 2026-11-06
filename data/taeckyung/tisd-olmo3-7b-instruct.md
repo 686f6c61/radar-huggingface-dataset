@@ -72,9 +72,9 @@ Avg@4 es la tasa media de tests superados sobre 4 muestras por problema; Pass@4 
 
 | Modelo | Parámetros | Contexto | LiveCodeBench v6 (Avg@4 / Pass@4) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TISD-OLMo3-7B-Instruct | 7,30B | no disponible | 51,0 / 53,4 | Apache 2.0 | HuggingFace |
-| allenai/Olmo-3-7B-Instruct | 7B (clase) | no disponible | 32,1 / 42,7 | Apache 2.0 | HuggingFace |
-| Alternativas de 7B orientadas a código (Qwen2.5-Coder-7B, DeepSeek-Coder-7B) | ~7B | no disponible en esta ficha | no disponible | varía (Apache 2.0 en Qwen2.5-Coder) | HuggingFace |
+| TISD-OLMo3-7B-Instruct | 7,30B | no disponible | 51,0 / 53,4 | Apache 2.0 | Hugging Face |
+| allenai/Olmo-3-7B-Instruct | 7B (clase) | no disponible | 32,1 / 42,7 | Apache 2.0 | Hugging Face |
+| Alternativas de 7B orientadas a código (Qwen2.5-Coder-7B, DeepSeek-Coder-7B) | ~7B | no disponible en esta ficha | no disponible | varía (Apache 2.0 en Qwen2.5-Coder) | Hugging Face |
 
 La comparación directa con modelos de código de 7B de otros linajes no puede completarse con los datos disponibles; los valores de LiveCodeBench v6 para esas alternativas no se han proporcionado y no se inventan aquí.
 
@@ -91,7 +91,7 @@ La comparación directa con modelos de código de 7B de otros linajes no puede c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Taeckyung/TISD-OLMo3-7B-Instruct
+- Hugging Face: https://huggingface.co/Taeckyung/TISD-OLMo3-7B-Instruct
 - Paper (arXiv:2609.30878): https://arxiv.org/abs/2609.30878
 - Repositorio de código: https://github.com/taeckyung/TISD
 - Página del proyecto: https://miil.kaist.ac.kr/projects/tisd/

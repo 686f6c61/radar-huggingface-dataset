@@ -23,7 +23,7 @@ La relevancia de este modelo reside en su enfoque sobre el razonamiento latente,
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/Llama-3.2-1B-Instruct`, una versión optimizada del Llama-3.2-1B de Meta. Sobre esta base se construye un scaffold CoLaR que añade tres componentes: una expansión del vocabulario con el token `[PAD]` (resize de la capa de embeddings), adaptadores LoRA de rango 128 en las proyecciones query y value de las capas de atención, y un MLP `LatentPolicy` que probablemente controla la generación de variables latentes durante el razonamiento. Los pesos se guardan en un checkpoint de PyTorch-Lightning, no en el formato estándar de HuggingFace, por lo que no es compatible con `AutoModel` sin un proceso de carga manual.
+El modelo parte de `unsloth/Llama-3.2-1B-Instruct`, una versión optimizada del Llama-3.2-1B de Meta. Sobre esta base se construye un scaffold CoLaR que añade tres componentes: una expansión del vocabulario con el token `[PAD]` (resize de la capa de embeddings), adaptadores LoRA de rango 128 en las proyecciones query y value de las capas de atención, y un MLP `LatentPolicy` que probablemente controla la generación de variables latentes durante el razonamiento. Los pesos se guardan en un checkpoint de PyTorch-Lightning, no en el formato estándar de Hugging Face, por lo que no es compatible con `AutoModel` sin un proceso de carga manual.
 
 El entrenamiento se realizó sobre datos sintéticos de aritmética (`synth_arith`) con composición de cuatro pasos (`comp4`), durante 50 épocas. La precisión de validación reportada es de aproximadamente 0.86. No se especifican detalles sobre el número de tokens, la composición del dataset ni el uso de técnicas como RLHF o DPO. La variable de entorno `COLAR_EMB_STD=0.018` sugiere una inicialización controlada de los embeddings latentes, y `COLAR_COMPRESS=5` y `COLAR_MAXLAT=64` indican parámetros de compresión y longitud máxima de latencia. La instrucción `TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD=1` es necesaria para cargar estos checkpoints antiguos de Lightning.
 
@@ -79,6 +79,6 @@ La comparativa es limitada porque el modelo CoLaR no está diseñado para tareas
 
 ## Enlaces
 
-- [HuggingFace: rjz123/colar-ctrl-synth-llama1b](https://huggingface.co/rjz123/colar-ctrl-synth-llama1b)
+- [Hugging Face: rjz123/colar-ctrl-synth-llama1b](https://huggingface.co/rjz123/colar-ctrl-synth-llama1b)
 - [Modelo base: unsloth/Llama-3.2-1B-Instruct](https://huggingface.co/unsloth/Llama-3.2-1B-Instruct)
 - [Modelo base original: meta-llama/Llama-3.2-1B](https://huggingface.co/meta-llama/Llama-3.2-1B)

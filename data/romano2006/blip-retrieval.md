@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`romano2006/blip-retrieval` es un repositorio personal publicado en HuggingFace que contiene una implementación propia y reducida de la arquitectura BLIP orientada a tareas de recuperación (retrieval) multimodal. No se trata de un modelo entrenado ni de una versión destilada de BLIP, sino de un punto de partida reproducible: el propio autor indica en la model card que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint evaluado en benchmarks. Está desarrollado por el usuario `romano2006` y se distribuye bajo licencia MIT.
+`romano2006/blip-retrieval` es un repositorio personal publicado en Hugging Face que contiene una implementación propia y reducida de la arquitectura BLIP orientada a tareas de recuperación (retrieval) multimodal. No se trata de un modelo entrenado ni de una versión destilada de BLIP, sino de un punto de partida reproducible: el propio autor indica en la model card que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint evaluado en benchmarks. Está desarrollado por el usuario `romano2006` y se distribuye bajo licencia MIT.
 
 El interés del repositorio es, por tanto, eminentemente pedagógico o experimental: sirve para arrancar experimentos de retrieval con una configuración explícita y un script ejecutable, no para desplegarse en producción. Los metadatos de safetensors declaran únicamente 16.576 parámetros totales, una cifra varios órdenes de magnitud inferior a la de cualquier variante publicada de BLIP, lo que confirma que el artefacto es una inicialización mínima para validar el pipeline, no un modelo con capacidad real de representación.
 
@@ -26,7 +26,7 @@ La model card es inusualmente honesta y explicita que no se reclama ninguna punt
 | Normalización | BatchNorm |
 | Optimizador por defecto | LAMB con schedule polinómico |
 | Tarea objetivo | Retrieval (recuperación texto-imagen / imagen-texto) |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 |
 | Tamaño del repositorio | 0,0 GB |
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| romano2006/blip-retrieval | 16.576 (checkpoint de inicialización) | No disponible | Sin benchmarks declarados | MIT | HuggingFace, 0 descargas |
+| romano2006/blip-retrieval | 16.576 (checkpoint de inicialización) | No disponible | Sin benchmarks declarados | MIT | Hugging Face, 0 descargas |
 | Implementaciones de referencia de la familia BLIP | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Alternativas de retrieval multimodal de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -90,10 +90,10 @@ No se ha proporcionado información verificada sobre modelos comparables en los 
 - Limitaciones de contexto e idioma: no disponibles; no se declaran idiomas ni longitud de contexto.
 - La receta de entrenamiento (LAMB con schedule polinómico) son valores por defecto del script, no evidencia de una ejecución completada; no deben citarse como resultados.
 - Licencia MIT: permite uso comercial del código y del checkpoint, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen cuando el repositorio se utilice con conjuntos de datos externos.
-- Al ser una implementación personalizada, las API genéricas de carga automática de HuggingFace requieren escribir un adaptador explícito, lo que añade trabajo de integración frente a un modelo estándar.
+- Al ser una implementación personalizada, las API genéricas de carga automática de Hugging Face requieren escribir un adaptador explícito, lo que añade trabajo de integración frente a un modelo estándar.
 - Los resultados de cualquier checkpoint futuro entrenado por terceros deben documentarse por separado de los valores por defecto aquí incluidos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/romano2006/blip-retrieval
+- Modelo en Hugging Face: https://huggingface.co/romano2006/blip-retrieval
 - Búsqueda web realizada: los resultados obtenidos corresponden a portales de identificación de entidades educativas francesas (leo.hautsdefrance.fr, enthdf.fr, leo.univ-grenoble-alpes.fr, u-picardie.fr) y no guardan relación con el modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a `romano2006/blip-retrieval`.

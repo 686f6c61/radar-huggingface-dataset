@@ -94,7 +94,7 @@ No disponible. La información proporcionada no incluye modelos comparables de g
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alpinist-HF/chessformator-puzzle-generator-int8
+- Repositorio Hugging Face: https://huggingface.co/alpinist-HF/chessformator-puzzle-generator-int8
 - Modelo base: https://huggingface.co/naapeli/chess-puzzle-generator
 - Preprint citado en la model card: arXiv 2609.38577 (referencia textual, sin URL verificada en la información disponible)
 - Aplicación Chessformator: no disponible (no se proporciona enlace)

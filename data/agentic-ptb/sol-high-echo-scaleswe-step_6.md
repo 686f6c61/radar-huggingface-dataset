@@ -68,8 +68,8 @@ No se dispone de datos de rendimiento para comparar con otros modelos. La única
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/sol-high.echo-scaleswe.step_6 | 9,4B | No disponible | No disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4B | No disponible | No disponible | HuggingFace |
+| agentic-ptb/sol-high.echo-scaleswe.step_6 | 9,4B | No disponible | No disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4B | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -82,5 +82,5 @@ No se dispone de datos de rendimiento para comparar con otros modelos. La única
 
 ## Enlaces
 
-- [HuggingFace - agentic-ptb/sol-high.echo-scaleswe.step_6](https://huggingface.co/agentic-ptb/sol-high.echo-scaleswe.step_6)
+- [Hugging Face - agentic-ptb/sol-high.echo-scaleswe.step_6](https://huggingface.co/agentic-ptb/sol-high.echo-scaleswe.step_6)
 - [GitHub - AweAI-Team/ScaleSWE](https://github.com/AweAI-Team/ScaleSWE) (posible relación con el nombre del sweep, no confirmada)

@@ -112,9 +112,9 @@ Solo se dispone de datos comparativos frente al modelo base. No se han proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abacusai/Smaug-Flash
+- Modelo en Hugging Face: https://huggingface.co/abacusai/Smaug-Flash
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
-- Organizacion en HuggingFace: https://huggingface.co/abacusai
+- Organizacion en Hugging Face: https://huggingface.co/abacusai
 - Sitio de Abacus.AI: https://abacus.ai
 - Anuncio de la linea Smaug de modelos de pesos abiertos: https://finance.yahoo.com/technology/ai/articles/abacus-ai-launches-smaug-line-160000796.html
 - Figura de comparacion frente al modelo base: figures/smaug_flash_vs_base_bars.png (referenciada en el repositorio del modelo)

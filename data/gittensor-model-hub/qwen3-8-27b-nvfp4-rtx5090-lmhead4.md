@@ -117,7 +117,7 @@ La comparativa se limita a la familia Qwen3.8-27B porque no se dispone de datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090-LMHead4
+- Modelo en Hugging Face: https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090-LMHead4
 - Modelo padre: https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090
 - Drafter DSpark: https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-DSpark-NVFP4
 - Ficha del modelo padre en LLM Explorer: https://llm-explorer.com/model/gittensor-model-hub%2FQwen3.8-27B-NVFP4-RTX5090,3GTDSJKETUAS2CtkUTm8Er

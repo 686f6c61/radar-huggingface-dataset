@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jarvis v2.4.1 es un modelo de lenguaje experimental de aproximadamente 79 millones de parametros (78.846.484 segun los pesos en safetensors) desarrollado por el usuario slendermantvb y publicado en HuggingFace. Se trata de un proyecto de investigacion y aprendizaje, no de un modelo de produccion, disenado para ejecutarse de forma local. Emplea una arquitectura transformer con atencion de KV latente, RoPE, activacion SwiGLU y una capa de mezcla de expertos (MoE) compacta de 4 expertos con enrutamiento Top-2 y un experto compartido.
+Jarvis v2.4.1 es un modelo de lenguaje experimental de aproximadamente 79 millones de parametros (78.846.484 segun los pesos en safetensors) desarrollado por el usuario slendermantvb y publicado en Hugging Face. Se trata de un proyecto de investigacion y aprendizaje, no de un modelo de produccion, disenado para ejecutarse de forma local. Emplea una arquitectura transformer con atencion de KV latente, RoPE, activacion SwiGLU y una capa de mezcla de expertos (MoE) compacta de 4 expertos con enrutamiento Top-2 y un experto compartido.
 
 El modelo forma parte de una aplicacion local mas amplia denominada Jarvis, que anade enrutamiento por aprendizaje automatico, razonamiento simbolico en Lisp, RAG, verificacion de codigo y memoria estilo Reflexion. Es importante subrayar que esos componentes de ejecucion no estan incluidos en este repositorio: aqui solo se distribuye el checkpoint neuronal base junto con el codigo minimo para cargarlo en PyTorch.
 
@@ -95,7 +95,7 @@ Nota: los valores de los modelos comparativos corresponden a especificaciones pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/slendermantvb/jarvis-v2.4.1
+- Modelo en Hugging Face: https://huggingface.co/slendermantvb/jarvis-v2.4.1
 
 Enlaces encontrados en la busqueda web (proyectos distintos que comparten el nombre Jarvis, no relacionados con este modelo):
 - OpenJarvis (GitHub): https://github.com/open-jarvis/OpenJarvis

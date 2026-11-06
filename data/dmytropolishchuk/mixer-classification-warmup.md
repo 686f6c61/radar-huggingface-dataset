@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `DmytroPolishchuk/mixer-classification-warmup` es una implementación funcional de una arquitectura tipo Mixer orientada a tareas de clasificación, publicada por el usuario DmytroPolishchuk en HuggingFace bajo licencia MIT. El propio autor lo describe explícitamente como un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no como un modelo entrenado ni evaluado con benchmarks. El repositorio contiene el código de ejecución (`run.py`), la configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y los pesos en formato safetensors.
+El modelo `DmytroPolishchuk/mixer-classification-warmup` es una implementación funcional de una arquitectura tipo Mixer orientada a tareas de clasificación, publicada por el usuario DmytroPolishchuk en Hugging Face bajo licencia MIT. El propio autor lo describe explícitamente como un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no como un modelo entrenado ni evaluado con benchmarks. El repositorio contiene el código de ejecución (`run.py`), la configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y los pesos en formato safetensors.
 
 Con un total real de 49.600 parámetros (aproximadamente 0,05 millones), se trata de un modelo de escala minúscula, muy alejado de los grandes modelos de lenguaje. La configuración declarada por el autor etiqueta la escala como "huge", pero esa etiqueta es relativa al propio esquema interno del repositorio, no a los estándares de la industria. La arquitectura combina atención dilatada, fusión de bajo rango (low rank), activación GELU y normalización GroupNorm.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento ni de parametros verificables de alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DmytroPolishchuk/mixer-classification-warmup
+- Modelo en Hugging Face: https://huggingface.co/DmytroPolishchuk/mixer-classification-warmup
 - GitHub (relacionado por palabra clave, tematica distinta - deteccion de Bitcoin mixers): https://github.com/LuchoAquino/Mixer_Bitcoin_Classification/tree/main
 - Paper RankMixer (relacionado con la familia Mixer aplicada a ranking industrial, no describe este modelo): https://arxiv.org/abs/2507.15551
 - LLM Leaderboard 2026 (listado general de modelos, sin relacion con este repositorio): https://lmmarketcap.com/

@@ -75,7 +75,7 @@ La mejor configuración media corresponde a desactivar el steering z/v y usar ú
 
 | Modelo | Parametros | Contexto | LIBERO-10 (media) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| coevo_cycle2_recap (este modelo) | 4,17 mil millones | no disponible | 81,0% (por defecto) / 82,9% (mejor) | no disponible | HuggingFace (openpi) |
+| coevo_cycle2_recap (este modelo) | 4,17 mil millones | no disponible | 81,0% (por defecto) / 82,9% (mejor) | no disponible | Hugging Face (openpi) |
 | Estudiante Ciclo 2 paso 80 (`coeva_cycle2_acopd_80`) | no disponible | no disponible | 65,7% (prompt plano) | no disponible | checkpoint de inicialización |
 | pi0.5 base (World Pilot) | no disponible | no disponible | no disponible | no disponible | ecosistema openpi |
 
@@ -95,7 +95,7 @@ No se dispone de datos comparativos de otros modelos VLA de la misma categoría 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/THU-SIGS-EILAB/coevo_cycle2_recap
+- Modelo en Hugging Face: https://huggingface.co/THU-SIGS-EILAB/coevo_cycle2_recap
 - Código: rama `RECAP` del repositorio RLinf_opd (no se proporciona URL directa)
 - Configuración de entrenamiento: `examples/sft/config/cycle2_step80_self_hil_recap_trainsplit_6ep.yaml` (dentro del repositorio de código)
 - Resultados de evaluación por ejecución: carpeta `eval/` del repositorio del modelo

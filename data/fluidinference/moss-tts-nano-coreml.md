@@ -99,7 +99,7 @@ La busqueda web realizada no devolvio informacion relevante sobre modelos compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FluidInference/moss-tts-nano-coreml
+- Hugging Face: https://huggingface.co/FluidInference/moss-tts-nano-coreml
 - Modelo base TTS: https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Nano-100M
 - Codec base: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-Nano
 - Repositorio upstream MOSS-TTS-Nano: https://github.com/OpenMOSS/MOSS-TTS-Nano

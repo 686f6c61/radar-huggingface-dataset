@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash-speculator.dspark-preview-FP8-block-10L es un modelo borrador (*drafter*) para decodificación especulativa, publicado por el usuario RelaxingSnorlax en HuggingFace. No es un modelo de lenguaje autónomo: se trata de un artefacto auxiliar diseñado para proponer tokens candidatos que luego valida el modelo verificador `zai-org/GLM-5.3-Flash`. Su función es acelerar la inferencia del modelo grande reduciendo el número de pasos de decodificación autorregresiva completos.
+GLM-5.3-Flash-speculator.dspark-preview-FP8-block-10L es un modelo borrador (*drafter*) para decodificación especulativa, publicado por el usuario RelaxingSnorlax en Hugging Face. No es un modelo de lenguaje autónomo: se trata de un artefacto auxiliar diseñado para proponer tokens candidatos que luego valida el modelo verificador `zai-org/GLM-5.3-Flash`. Su función es acelerar la inferencia del modelo grande reduciendo el número de pasos de decodificación autorregresiva completos.
 
 El propio autor lo etiqueta explícitamente como «dummy»: no es un checkpoint entrenado, sino una expansión sintética del borrador base de 5 capas. La versión de 10 capas se genera ciclando las 5 capas originales (la capa nueva `i` corresponde a la capa base `i mod 5`, incluyendo los tensores `weight_scale` de FP8) y ajustando `transformer_layer_config.num_hidden_layers = 10` junto con `layer_types`. Los tensores compartidos (`fc`, normas, cabezas markov/confidence, embeddings de tokens y `lm_head`) se copian tal cual y permanecen en bf16.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-block-10L
+- Hugging Face: https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-block-10L
 - Modelo base (borrador de 5 capas): https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-block
 - Modelo verificador: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Resultado de búsqueda web no relevante (Google Books): https://books.google.fr/

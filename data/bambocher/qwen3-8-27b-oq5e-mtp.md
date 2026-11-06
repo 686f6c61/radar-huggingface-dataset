@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-oQ5e-mtp es un checkpoint cuantizado del modelo Qwen3.8-27B, publicado por el usuario bambocher en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión de precisión mixta generada con la herramienta oQ (oMLX v0.7.1) sobre los pesos originales, en formato MLX y con un promedio efectivo de 5,843 bits por peso. El resultado ocupa 18,897 GiB de pesos lógicos (20,3 GB de repositorio) frente a los aproximadamente 55,6 GB que requeriría el mismo modelo en BF16.
+Qwen3.8-27B-oQ5e-mtp es un checkpoint cuantizado del modelo Qwen3.8-27B, publicado por el usuario bambocher en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión de precisión mixta generada con la herramienta oQ (oMLX v0.7.1) sobre los pesos originales, en formato MLX y con un promedio efectivo de 5,843 bits por peso. El resultado ocupa 18,897 GiB de pesos lógicos (20,3 GB de repositorio) frente a los aproximadamente 55,6 GB que requeriría el mismo modelo en BF16.
 
 El interés de esta ficha es doble. Por un lado, documenta una técnica de cuantización mixta que asigna distintos anchos de bit según la sensibilidad de cada tensor (5 bits para el 92,5 % de los pesos, 6 y 8 bits para una fracción pequeña y BF16 para el 1,86 %), un enfoque que busca preservar calidad donde más importa sin disparar el tamano. Por otro, el checkpoint incluye la cabeza MTP (multi-token prediction) y el codificador visual, lo que lo convierte en un artefacto multimodal completo y no solo en un modelo de lenguaje.
 
@@ -68,7 +68,7 @@ No se han identificado alternativas verificables en la información disponible. 
 
 | Configuracion | Parametros | Peso aproximado | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (oQ mixto, 5,843 bits/peso) | 27,781B | 18,897 GiB | no disponible | no disponible | HuggingFace, 0 descargas |
+| Este checkpoint (oQ mixto, 5,843 bits/peso) | 27,781B | 18,897 GiB | no disponible | no disponible | Hugging Face, 0 descargas |
 | Mismo modelo en BF16 (hipotético, calculado) | 27,781B | ~55,6 GB | no disponible | no disponible | no verificada su publicación |
 | Mismo modelo en 8 bits uniforme (hipotético, calculado) | 27,781B | ~27,8 GB | no disponible | no disponible | no verificada su publicación |
 | Modelo base Qwen3.8-27B | 27,781B (presumiblemente) | no disponible | no disponible | no disponible | no disponible en la información consultada |
@@ -87,6 +87,6 @@ No se han identificado alternativas verificables en la información disponible. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bambocher/Qwen3.8-27B-oQ5e-mtp
+- Repositorio Hugging Face: https://huggingface.co/bambocher/Qwen3.8-27B-oQ5e-mtp
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos relacionados con este modelo; los resultados obtenidos eran plantillas de listas de la compra y no guardan relación con el contenido de la ficha.

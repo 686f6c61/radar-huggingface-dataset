@@ -21,7 +21,7 @@ La relevancia actual de esta ficha es limitada pero util para desarrolladores qu
 | Licencia | no disponible |
 | Formato de pesos | GGUF (repositorio); el modelo original se distribuye en safetensors |
 | Tamano del repositorio | 53,1 GB |
-| Fecha de publicacion | 26 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 26 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -33,7 +33,7 @@ Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composic
 
 - Generacion de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo esta preparado para dialogos multi-turno.
 - Generacion de codigo: el sufijo "Coder" del nombre apunta a esta capacidad, aunque no hay documentacion que detalle lenguajes, tareas o rendimiento.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede desplegarse a traves de infraestructura de inferencia compatible con la API de endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede desplegarse a traves de infraestructura de inferencia compatible con la API de endpoints de Hugging Face.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible (el sufijo MCTS podria estar relacionado, sin confirmar).
 - Capacidades multilingues: no disponible.

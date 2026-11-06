@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`martinezjavier/cnn-transformer-contrastive` es un repositorio de HuggingFace publicado por el usuario martinezjavier que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura denominada "Cnn Transformer" orientada a tareas de aprendizaje contrastivo. No se trata de un modelo preentrenado ni de un release de produccion: el propio autor indica en la model card que la configuracion incluida es de escala "tiny" y que su proposito es la revision de codigo, las pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano.
+`martinezjavier/cnn-transformer-contrastive` es un repositorio de Hugging Face publicado por el usuario martinezjavier que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura denominada "Cnn Transformer" orientada a tareas de aprendizaje contrastivo. No se trata de un modelo preentrenado ni de un release de produccion: el propio autor indica en la model card que la configuracion incluida es de escala "tiny" y que su proposito es la revision de codigo, las pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano.
 
 El dato mas relevante es su tamano: 49.600 parametros totales segun el recuento real del fichero `model.safetensors`. Se trata, por tanto, de una implementacion de juguete (toy model) cuyo interes no reside en su rendimiento, sino en servir como esqueleto reproducible de una arquitectura hibrida convolucional-transformer con atencion de tipo grouped query, fusion mediante concatenacion y MLP, activacion mish y normalizacion InstanceNorm. El checkpoint incluido es una inicializacion valida para pruebas, no un modelo entrenado.
 
@@ -101,9 +101,9 @@ La diferencia fundamental no es de rendimiento sino de naturaleza: los modelos d
 - Restricciones de licencia: el repositorio se publica bajo Apache 2.0, una licencia permisiva que permite uso comercial. No obstante, la model card advierte de que deben revisarse por separado los terminos de los datos de origen cuando el repositorio se utilice con conjuntos de datos externos.
 - La busqueda web no ha arrojado ninguna fuente independiente, publicacion, informe tecnico ni repositorio derivado que respalde o evalue este modelo; las referencias encontradas eran resultados irrelevantes sobre hardware comercial.
 - Con 0 descargas y 0 likes registrados, no existe comunidad de usuarios ni soporte externo documentado.
-- Al ser una implementacion personalizada, la carga mediante APIs genericas de HuggingFace requiere escribir un adaptador explicito; el intento de carga directa puede fallar o producir resultados silenciosamente incorrectos.
+- Al ser una implementacion personalizada, la carga mediante APIs genericas de Hugging Face requiere escribir un adaptador explicito; el intento de carga directa puede fallar o producir resultados silenciosamente incorrectos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/martinezjavier/cnn-transformer-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/martinezjavier/cnn-transformer-contrastive
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados a este modelo en la busqueda web realizada.

@@ -90,7 +90,7 @@ Entorno de medida: Intel Core Ultra 7 258V (iGPU Arc 140V, 32 GB), Windows 11, O
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pawanpaudel93/kev9b-int8-ov-decision
+- Repositorio Hugging Face: https://huggingface.co/pawanpaudel93/kev9b-int8-ov-decision
 - Modelo ajustado de origen: https://huggingface.co/jaredpalmer/kev-9b
 - IR int8 de Intel: https://huggingface.co/OpenVINO/Qwen3.5-9B-int8-ov
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

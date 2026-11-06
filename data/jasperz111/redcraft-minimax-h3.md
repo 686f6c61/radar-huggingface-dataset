@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jasperz111/redcraft-minimax-h3` es un checkpoint publicado en HuggingFace por el usuario jasperz111. Según la información disponible, parece tratarse de un modelo de difusión para generación de imágenes, ya que la model card menciona su uso con ComfyUI y un archivo con extensión `.safetensors`. Sin embargo, la descripción está incompleta y en un idioma no identificado (posiblemente chino), por lo que no se dispone de detalles técnicos sobre su arquitectura, tamaño o capacidades. El modelo fue creado el 17 de agosto de 2026 y actualizado el mismo día, pero no ha recibido descargas ni valoraciones, lo que sugiere que es un lanzamiento reciente o experimental.
+El modelo `jasperz111/redcraft-minimax-h3` es un checkpoint publicado en Hugging Face por el usuario jasperz111. Según la información disponible, parece tratarse de un modelo de difusión para generación de imágenes, ya que la model card menciona su uso con ComfyUI y un archivo con extensión `.safetensors`. Sin embargo, la descripción está incompleta y en un idioma no identificado (posiblemente chino), por lo que no se dispone de detalles técnicos sobre su arquitectura, tamaño o capacidades. El modelo fue creado el 17 de agosto de 2026 y actualizado el mismo día, pero no ha recibido descargas ni valoraciones, lo que sugiere que es un lanzamiento reciente o experimental.
 
 La relevancia de este modelo es incierta debido a la falta de documentación. No se puede confirmar si se basa en una arquitectura conocida como Stable Diffusion, SDXL, Flux u otra, ni si es un fine-tune de algún modelo existente. La mención a "Civitai" en la model card podría indicar que es un checkpoint compartido desde esa plataforma, pero no hay evidencia adicional. Por tanto, esta ficha se limita a reflejar los datos disponibles y a señalar las carencias de información.
 
@@ -54,4 +54,4 @@ No disponible. No se conocen modelos comparables de la misma categoría porque n
 
 ## Enlaces
 
-- [HuggingFace - jasperz111/redcraft-minimax-h3](https://huggingface.co/jasperz111/redcraft-minimax-h3)
+- [Hugging Face - jasperz111/redcraft-minimax-h3](https://huggingface.co/jasperz111/redcraft-minimax-h3)

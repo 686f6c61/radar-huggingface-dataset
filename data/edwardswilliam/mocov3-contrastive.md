@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`edwardswilliam/mocov3-contrastive` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de tipo MoCo v3 (momentum contrast) orientada a aprendizaje contrastivo, acompanada de un checkpoint de inicialización en formato `safetensors`. El autor lo describe explícitamente como un banco de pruebas a escala "nano", pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y no como un modelo entrenado con resultados de referencia.
+`edwardswilliam/mocov3-contrastive` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de tipo MoCo v3 (momentum contrast) orientada a aprendizaje contrastivo, acompanada de un checkpoint de inicialización en formato `safetensors`. El autor lo describe explícitamente como un banco de pruebas a escala "nano", pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y no como un modelo entrenado con resultados de referencia.
 
 El dato objetivo del repositorio es su tamano: 33.088 parámetros totales según el fichero `safetensors`. Es, por tanto, varias órdenes de magnitud menor que cualquier encoder visual o transformer utilizable en producción (un ViT-S ronda los 22 millones). La model card declara atención sparse, fusión "co attention", activación ReLU y normalización ScaleNorm, con AdamW y scheduler OneCycle como receta por defecto.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada y de carácter metodológico: sirve como planti
 | Normalizacion | ScaleNorm |
 | Optimizador / scheduler por defecto | AdamW / OneCycle |
 | Tamano del repositorio | 0,0 GB |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -72,9 +72,9 @@ Los recuentos de parámetros de las alternativas son cifras de referencia públi
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `edwardswilliam/mocov3-contrastive` | 33.088 | No disponible | Ninguno (checkpoint de inicialización) | BSD-3-Clause | HuggingFace, 0 descargas |
+| `edwardswilliam/mocov3-contrastive` | 33.088 | No disponible | Ninguno (checkpoint de inicialización) | BSD-3-Clause | Hugging Face, 0 descargas |
 | MoCo v3 oficial (`facebookresearch/moco-v3`) | ~22 M en ViT-S/16 | Imágenes (resolución configurable) | Resultados publicados por los autores | Licencia del proyecto original (consultar) | Repositorio GitHub + pesos |
-| DINOv2 (ViT-S/14) | ~22 M | Imágenes | Métricas publicadas de transferencia lineal y k-NN | Apache 2.0 (consultar términos de pesos) | HuggingFace y repositorio oficial |
+| DINOv2 (ViT-S/14) | ~22 M | Imágenes | Métricas publicadas de transferencia lineal y k-NN | Apache 2.0 (consultar términos de pesos) | Hugging Face y repositorio oficial |
 | SimCLR (ResNet-50) | ~25 M | Imágenes | Métricas publicadas en el paper original | Código de referencia en GitHub (consultar) | Repositorio oficial |
 
 La diferencia relevante no es de rendimiento sino de naturaleza: las alternativas son encoders entrenados y evaluados, mientras que este repositorio es un esqueleto de código con un tensor de inicialización de tres órdenes de magnitud menos parámetros.
@@ -93,7 +93,7 @@ La diferencia relevante no es de rendimiento sino de naturaleza: las alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edwardswilliam/mocov3-contrastive
+- Modelo en Hugging Face: https://huggingface.co/edwardswilliam/mocov3-contrastive
 - Referencia del método original MoCo v3 (paper "An Empirical Study of Training Self-Supervised Vision Transformers", no vinculado al repositorio): https://arxiv.org/abs/2104.02057
 - Implementación oficial de referencia de MoCo v3 (no vinculada al repositorio): https://github.com/facebookresearch/moco-v3
 - No se han encontrado en la búsqueda web enlaces relevantes al repositorio, papers del autor, demos ni blogs técnicos asociados.

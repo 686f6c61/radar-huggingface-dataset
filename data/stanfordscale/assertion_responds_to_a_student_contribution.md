@@ -82,7 +82,7 @@ No se han publicado en la informacion disponible datos de modelos comparables co
 
 | Modelo | Parametros | Contexto | F1 (clase positiva, test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| assertion_responds_to_a_student_contribution | 109.486.464 | no disponible | 0,5359 | no disponible | HuggingFace |
+| assertion_responds_to_a_student_contribution | 109.486.464 | no disponible | 0,5359 | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No se han publicado en la informacion disponible datos de modelos comparables co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_responds_to_a_student_contribution
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_responds_to_a_student_contribution
 - Dataset de anotacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset: https://github.com/SumnerLab/TalkMoves

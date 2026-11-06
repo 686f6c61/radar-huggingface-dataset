@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mgerndt/sina-interest-models` es un repositorio publicado en HuggingFace por el usuario mgerndt bajo licencia MIT. En el momento de redactar esta ficha, la model card asociada no contiene mas informacion que la declaracion de licencia: no se documentan la arquitectura, el tamano, el contexto, los datos de entrenamiento ni los idiomas soportados. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline de inferencia declarado.
+`mgerndt/sina-interest-models` es un repositorio publicado en Hugging Face por el usuario mgerndt bajo licencia MIT. En el momento de redactar esta ficha, la model card asociada no contiene mas informacion que la declaracion de licencia: no se documentan la arquitectura, el tamano, el contexto, los datos de entrenamiento ni los idiomas soportados. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline de inferencia declarado.
 
 Por tanto, no es posible confirmar que se trate de un modelo de lenguaje en el sentido convencional. El nombre ("sina interest models") sugiere un conjunto de modelos orientados a modelar interes o preferencias, pero se trata de una inferencia a partir del identificador y no de un dato verificado en la informacion disponible.
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. No es posible identificar modelos comparables sin conocer la categoria, el tamano ni la tarea del modelo. El unico dato compartido con otros repositorios de HuggingFace es la licencia MIT, insuficiente para establecer una comparativa tecnica.
+No disponible. No es posible identificar modelos comparables sin conocer la categoria, el tamano ni la tarea del modelo. El unico dato compartido con otros repositorios de Hugging Face es la licencia MIT, insuficiente para establecer una comparativa tecnica.
 
 ## Limitaciones y advertencias
 
@@ -62,9 +62,9 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mgerndt/sina-interest-models
+- Repositorio en Hugging Face: https://huggingface.co/mgerndt/sina-interest-models
 - Referencia cruzada con nombre similar (autor distinto, sin relacion confirmada): https://free2aitools.com/model/zboubakr/sina-interest-models
 - Articulo con acronimo coincidente "SINA" sobre generacion de netlists (sin relacion confirmada): https://arxiv.org/abs/2607.01609
 - Articulo sobre estrategia de IA open source en Pinterest (contexto general, sin relacion con el modelo): https://fortune.com/2026/03/17/why-pinterest-is-going-all-in-on-open-source-ai/
 - Noticia sobre entrenamiento de modelos con contenido de usuario en Pinterest (contexto general, sin relacion con el modelo): https://petapixel.com/2025/03/10/pinterest-to-train-ai-models-on-user-content/
-- Coleccion de modelos de interes en HuggingFace (sin relacion confirmada): https://huggingface.co/collections/simonloewe/models-of-interest
+- Coleccion de modelos de interes en Hugging Face (sin relacion confirmada): https://huggingface.co/collections/simonloewe/models-of-interest

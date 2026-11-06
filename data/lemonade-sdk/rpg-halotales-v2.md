@@ -4,7 +4,7 @@
 
 El modelo RPG-HaloTales-V2, publicado por el usuario lemonade-sdk, es un modelo de inteligencia artificial cuyo propósito y características técnicas no han sido documentados en su model card. La única información disponible es su licencia, Apache 2.0, que permite uso comercial y modificación sin restricciones significativas. No se especifican arquitectura, tamaño, contexto ni capacidades, por lo que no es posible determinar su aplicabilidad en tareas concretas.
 
-A fecha de su publicación (20 de agosto de 2026), el modelo no registra descargas ni valoraciones en HuggingFace, lo que sugiere que se trata de un lanzamiento reciente o de baja difusión. La ausencia de documentación técnica impide evaluar su rendimiento o compararlo con alternativas existentes. Se recomienda precaución antes de considerar su uso en entornos de producción.
+A fecha de su publicación (20 de agosto de 2026), el modelo no registra descargas ni valoraciones en Hugging Face, lo que sugiere que se trata de un lanzamiento reciente o de baja difusión. La ausencia de documentación técnica impide evaluar su rendimiento o compararlo con alternativas existentes. Se recomienda precaución antes de considerar su uso en entornos de producción.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ No se ha publicado información sobre la arquitectura del modelo (transformer, M
 
 ## Casos de uso
 
-No se dispone de información suficiente para proponer casos de uso concretos. Dado que se desconocen las capacidades del modelo, cualquier aplicación práctica sería especulativa. Se recomienda consultar la página del modelo en HuggingFace para futuras actualizaciones de la documentación.
+No se dispone de información suficiente para proponer casos de uso concretos. Dado que se desconocen las capacidades del modelo, cualquier aplicación práctica sería especulativa. Se recomienda consultar la página del modelo en Hugging Face para futuras actualizaciones de la documentación.
 
 ## Benchmarks y rendimiento
 
@@ -54,5 +54,5 @@ No disponible. Al carecer de especificaciones técnicas, no es posible comparar 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/lemonade-sdk/RPG-HaloTales-V2
+- Página del modelo en Hugging Face: https://huggingface.co/lemonade-sdk/RPG-HaloTales-V2
 - No se han encontrado papers, repositorios, blogs o demos asociados en la información proporcionada.

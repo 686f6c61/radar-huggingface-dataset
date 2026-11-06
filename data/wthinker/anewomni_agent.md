@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AnewOmni_Agent es un modelo publicado por el usuario Wthinker en HuggingFace bajo licencia CC-BY-4.0, con acceso restringido (gated). La ficha del repositorio no proporciona información técnica pública: no se especifican arquitectura, número de parámetros, contexto, idiomas soportados ni pipeline de uso. Se desconoce si se trata de un modelo de lenguaje, multimodal o de agente, aunque el nombre sugiere una orientación hacia tareas de agente omnicanal. El repositorio fue creado el 3 de septiembre de 2026 y no registra descargas ni valoraciones, lo que indica que es un lanzamiento reciente y sin adopción comunitaria. Dado el acceso restringido, cualquier evaluación práctica requiere aceptar las condiciones del autor y solicitar acceso.
+AnewOmni_Agent es un modelo publicado por el usuario Wthinker en Hugging Face bajo licencia CC-BY-4.0, con acceso restringido (gated). La ficha del repositorio no proporciona información técnica pública: no se especifican arquitectura, número de parámetros, contexto, idiomas soportados ni pipeline de uso. Se desconoce si se trata de un modelo de lenguaje, multimodal o de agente, aunque el nombre sugiere una orientación hacia tareas de agente omnicanal. El repositorio fue creado el 3 de septiembre de 2026 y no registra descargas ni valoraciones, lo que indica que es un lanzamiento reciente y sin adopción comunitaria. Dado el acceso restringido, cualquier evaluación práctica requiere aceptar las condiciones del autor y solicitar acceso.
 
 ## Especificaciones tecnicas
 
@@ -47,7 +47,7 @@ No es posible establecer una comparativa fiable sin conocer las características
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones adicionales en HuggingFace, lo que limita su uso y evaluación pública.
+- Acceso restringido: el modelo requiere aceptar condiciones adicionales en Hugging Face, lo que limita su uso y evaluación pública.
 - Falta de documentación: no hay información sobre arquitectura, entrenamiento, capacidades o rendimiento, lo que impide una evaluación técnica rigurosa.
 - Riesgo de sesgos y alucinaciones: al no conocer los datos de entrenamiento ni el proceso de alineación, no se puede valorar su fiabilidad.
 - Licencia CC-BY-4.0: permite uso comercial y modificación, pero exige atribución. Sin embargo, el acceso gated puede añadir restricciones adicionales impuestas por el autor.
@@ -55,4 +55,4 @@ No es posible establecer una comparativa fiable sin conocer las características
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Wthinker/AnewOmni_Agent
+- Repositorio Hugging Face: https://huggingface.co/Wthinker/AnewOmni_Agent

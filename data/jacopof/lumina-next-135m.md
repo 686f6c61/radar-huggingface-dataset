@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lumina-Next 135M es un modelo de lenguaje de tipo decoder-only desarrollado por Jacopo Forti (usuario `jacopof` en HuggingFace) dentro del ecosistema que el autor denomina Lumina AI. Se presenta como una arquitectura orientada a eficiencia en dispositivos edge (portátiles, CPU y GPU de consumo) con soporte de contexto largo (8.192 token nativos, extensibles a 32.768 mediante YaRN) y especialización en código Python, lógica formal y lengua italiana. El checkpoint publicado corresponde a 8.025 pasos acumulados de entrenamiento.
+Lumina-Next 135M es un modelo de lenguaje de tipo decoder-only desarrollado por Jacopo Forti (usuario `jacopof` en Hugging Face) dentro del ecosistema que el autor denomina Lumina AI. Se presenta como una arquitectura orientada a eficiencia en dispositivos edge (portátiles, CPU y GPU de consumo) con soporte de contexto largo (8.192 token nativos, extensibles a 32.768 mediante YaRN) y especialización en código Python, lógica formal y lengua italiana. El checkpoint publicado corresponde a 8.025 pasos acumulados de entrenamiento.
 
 El modelo declara 103,39 millones de parámetros reales con embeddings atados (tied embeddings); el nombre comercial "135M" hace referencia a la configuración con embeddings no atados. La arquitectura combina RoPE con frecuencia base 500.000,0, Grouped Query Attention con proporción 3:1, RMSNorm y activación SwiGLU, junto con un tokenizador Byte-Level BPE de 32.000 entradas entrenado conjuntamente sobre Python, SQL, Git e italiano.
 
@@ -78,10 +78,10 @@ El propio autor advierte que esta prueba es un control local sobre 8 preguntas y
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Lumina-Next 135M | 103,4M (tied) | 8.192 nativo / 32.768 con YaRN | MIT | HuggingFace (safetensors, ONNX, GGUF) | Especializado en italiano y código Python |
-| SmolLM2-135M | 135M | 8.192 | Apache 2.0 | HuggingFace | Modelo pequeño de propósito general de HuggingFace; datos de benchmarks no incluidos en esta ficha |
-| Qwen2.5-0.5B | 494M | 32.768 | Apache 2.0 | HuggingFace | Alternativa de mayor tamaño con contexto largo y capacidades multilingües |
-| TinyLlama-1.1B | 1,1B | 2.048 | Apache 2.0 | HuggingFace | Mayor capacidad, pero con menor contexto nativo |
+| Lumina-Next 135M | 103,4M (tied) | 8.192 nativo / 32.768 con YaRN | MIT | Hugging Face (safetensors, ONNX, GGUF) | Especializado en italiano y código Python |
+| SmolLM2-135M | 135M | 8.192 | Apache 2.0 | Hugging Face | Modelo pequeño de propósito general de Hugging Face; datos de benchmarks no incluidos en esta ficha |
+| Qwen2.5-0.5B | 494M | 32.768 | Apache 2.0 | Hugging Face | Alternativa de mayor tamaño con contexto largo y capacidades multilingües |
+| TinyLlama-1.1B | 1,1B | 2.048 | Apache 2.0 | Hugging Face | Mayor capacidad, pero con menor contexto nativo |
 
 No se dispone de datos de benchmarks comparativos directos entre Lumina-Next 135M y estos modelos en la información proporcionada.
 
@@ -98,5 +98,5 @@ No se dispone de datos de benchmarks comparativos directos entre Lumina-Next 135
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jacopof/lumina-next-135m
+- Modelo en Hugging Face: https://huggingface.co/jacopof/lumina-next-135m
 - Perfil del autor: https://huggingface.co/jacopof

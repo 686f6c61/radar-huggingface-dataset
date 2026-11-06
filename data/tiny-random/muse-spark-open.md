@@ -90,10 +90,10 @@ El identificador del modelo base sugiere 816B de parámetros totales y 42B activ
 - El tamaño reducido altera propiedades emergentes: con `hidden_size=8`, una sola cabeza KV y 32 expertos, el checkpoint no reproduce comportamientos dependientes de escala del modelo de 816B, como la estabilidad del enrutamiento o la calidad de la fusión multimodal.
 - Los pesos de router y sesgos en FP32 son parte deliberada del diseño; una conversión indiscriminada a BF16 de todo el checkpoint rompería la equivalencia con el modelo fuente.
 - Requiere FFmpeg para las rutas de vídeo en SGLang, un detalle que puede bloquear despliegues si no se documenta en la imagen de contenedor.
-- Fechas de creación y actualización del repositorio: 25 de octubre de 2026, según los metadatos de HuggingFace.
+- Fechas de creación y actualización del repositorio: 25 de octubre de 2026, según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tiny-random/muse-spark-open
+- Modelo en Hugging Face: https://huggingface.co/tiny-random/muse-spark-open
 - Modelo base: https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados obtenidos correspondían a servicios y sitios sin relación con el modelo (tinytask.net, tinypng.com, latinyhouse.com, tinyurl.com, tinyhousefrance.org).

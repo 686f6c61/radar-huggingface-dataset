@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`husssnnain/gpt2-imdb` es un checkpoint de la familia GPT-2 publicado en HuggingFace por el usuario husssnnain. Por el identificador y el tamaño (124,4 millones de parámetros), se corresponde con la variante GPT-2 Small (gpt2, 12 capas, 768 dimensiones ocultas), presumiblemente ajustada de forma supervisada sobre el corpus IMDB de reseñas de cine, aunque la model card no confirma ni el proceso de ajuste ni el dataset utilizado. El repositorio pesa 0,5 GB y contiene pesos en formato safetensors compatibles con la librería `transformers`.
+`husssnnain/gpt2-imdb` es un checkpoint de la familia GPT-2 publicado en Hugging Face por el usuario husssnnain. Por el identificador y el tamaño (124,4 millones de parámetros), se corresponde con la variante GPT-2 Small (gpt2, 12 capas, 768 dimensiones ocultas), presumiblemente ajustada de forma supervisada sobre el corpus IMDB de reseñas de cine, aunque la model card no confirma ni el proceso de ajuste ni el dataset utilizado. El repositorio pesa 0,5 GB y contiene pesos en formato safetensors compatibles con la librería `transformers`.
 
-El modelo resuelve la tarea de generación de texto autoregresiva y, por su nombre, está orientado a la continuación de reseñas cinematográficas. No obstante, la información publicada es mínima: la model card es la plantilla automática de HuggingFace y no incluye detalles sobre datos de entrenamiento, hiperparámetros, evaluación, licencia ni idiomas soportados. Cualquier afirmación sobre su calidad o comportamiento específico debe tratarse con cautela hasta que el autor publique documentación adicional.
+El modelo resuelve la tarea de generación de texto autoregresiva y, por su nombre, está orientado a la continuación de reseñas cinematográficas. No obstante, la información publicada es mínima: la model card es la plantilla automática de Hugging Face y no incluye detalles sobre datos de entrenamiento, hiperparámetros, evaluación, licencia ni idiomas soportados. Cualquier afirmación sobre su calidad o comportamiento específico debe tratarse con cautela hasta que el autor publique documentación adicional.
 
 Su relevancia actual es limitada: GPT-2 es una arquitectura de 2019, superada ampliamente en calidad por modelos más recientes del mismo orden de magnitud. Aun así, puede resultar útil como base ligera para experimentos de fine-tuning, demostraciones educativas o generación de texto con requisitos de cómputo muy bajos.
 
@@ -63,16 +63,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| husssnnain/gpt2-imdb | 124,4 M | No disponible | No disponible | HuggingFace |
-| openai-community/gpt2 | 124,4 M | 1024 tokens | MIT | HuggingFace |
-| openai-community/gpt2-medium | 355 M | 1024 tokens | MIT | HuggingFace |
-| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace |
+| husssnnain/gpt2-imdb | 124,4 M | No disponible | No disponible | Hugging Face |
+| openai-community/gpt2 | 124,4 M | 1024 tokens | MIT | Hugging Face |
+| openai-community/gpt2-medium | 355 M | 1024 tokens | MIT | Hugging Face |
+| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face |
 
 La comparación se limita a parámetros, contexto y licencia, ya que no hay datos de rendimiento publicados para `husssnnain/gpt2-imdb`. Frente a `gpt2` original, este checkpoint no documenta mejoras medibles; frente a `distilgpt2`, ofrece más parámetros pero también mayor coste de inferencia.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla automática de HuggingFace: no hay información verificable sobre entrenamiento, evaluación ni uso previsto.
+- La model card es la plantilla automática de Hugging Face: no hay información verificable sobre entrenamiento, evaluación ni uso previsto.
 - Riesgo elevado de alucinación y de generar texto incoherente en contextos largos, inherente a GPT-2 Small.
 - Sesgos probables heredados de WebText y, si se confirma el ajuste, del corpus IMDB (sesgos de género, culturales y de representación cinematográfica).
 - Licencia no especificada: no se puede garantizar el uso comercial sin consultar al autor.
@@ -83,8 +83,8 @@ La comparación se limita a parámetros, contexto y licencia, ya que no hay dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/husssnnain/gpt2-imdb
+- Modelo en Hugging Face: https://huggingface.co/husssnnain/gpt2-imdb
 - Paper de GPT-2 (Radford et al., 2019): https://arxiv.org/abs/1910.09700
 - Paper de GPT-2 original en OpenAI: https://openai.com/research/better-language-models
-- Repositorio de referencia GPT-2 en HuggingFace: https://huggingface.co/openai-community/gpt2
+- Repositorio de referencia GPT-2 en Hugging Face: https://huggingface.co/openai-community/gpt2
 - Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact

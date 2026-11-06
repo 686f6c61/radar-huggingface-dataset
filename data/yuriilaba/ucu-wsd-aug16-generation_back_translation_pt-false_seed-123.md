@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuriilaba/ucu-wsd-aug16-generation_back_translation_pt-false_seed-123` es un ajuste fino (fine-tune) de un codificador multilingue para desambiguacion del sentido de las palabras (WSD, word-sense disambiguation) en ucraniano. Lo publica el usuario de HuggingFace `yuriilaba`, aparentemente en el contexto de un trabajo academico (el identificador "ucu" sugiere una universidad, y la nomenclatura "aug16-generation_back_translation_pt-false_seed-123" indica un experimento de aumento de datos mediante traduccion inversa con un pooling de token objetivo desactivado y semilla 123). El modelo base es `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, un encoder XLM-RoBERTa de 278 millones de parametros.
+El modelo `yuriilaba/ucu-wsd-aug16-generation_back_translation_pt-false_seed-123` es un ajuste fino (fine-tune) de un codificador multilingue para desambiguacion del sentido de las palabras (WSD, word-sense disambiguation) en ucraniano. Lo publica el usuario de Hugging Face `yuriilaba`, aparentemente en el contexto de un trabajo academico (el identificador "ucu" sugiere una universidad, y la nomenclatura "aug16-generation_back_translation_pt-false_seed-123" indica un experimento de aumento de datos mediante traduccion inversa con un pooling de token objetivo desactivado y semilla 123). El modelo base es `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, un encoder XLM-RoBERTa de 278 millones de parametros.
 
 El problema que resuelve es concreto: dado un token polisemico en contexto, el modelo produce representaciones que permiten asignarle el sentido correcto. Segun la model card, alcanza una exactitud de WSD de 0,9240 y correlaciones STS de Pearson 0,8054 y Spearman 0,7939. Se trata, por tanto, de un modelo de embeddings para NLP ucraniano de bajo recursos, no de un modelo generativo.
 
@@ -72,24 +72,24 @@ No se proporcionan resultados comparativos frente a otros modelos (MMLU, HumanEv
 - Inferencia en FP16/BF16: aproximadamente 550 MB de pesos; ejecutable en GPUs consumer como GTX 1650, RTX 3050, RTX 4060 o superiores.
 - Cuantizacion a int8 (por ejemplo, con Optimum o PyTorch dynamic quantization): en torno a 280 MB, viable incluso en CPU para lotes pequenos.
 - GPU recomendadas: cualquier GPU moderna es suficiente. Para lotes grandes o alto throughput, una RTX 4090, L4, A10G o A100 ofrece margen de sobra; una A100 o H100 no aporta ventaja significativa dado el tamano del modelo.
-- Despliegue: al ser un modelo de Sentence-Transformers con pesos safetensors, es compatible con `sentence-transformers`, `transformers` con `AutoModel`, y con servidores de embeddings como HuggingFace Text Embeddings Inference (TEI), FastAPI propio, Ray Serve o BentoML. No hay pesos GGUF publicados, por lo que `llama.cpp` y `Ollama` no son aplicables sin conversion previa. vLLM y TGI estan orientados a modelos generativos y no son la via natural para este encoder.
+- Despliegue: al ser un modelo de Sentence-Transformers con pesos safetensors, es compatible con `sentence-transformers`, `transformers` con `AutoModel`, y con servidores de embeddings como Hugging Face Text Embeddings Inference (TEI), FastAPI propio, Ray Serve o BentoML. No hay pesos GGUF publicados, por lo que `llama.cpp` y `Ollama` no son aplicables sin conversion previa. vLLM y TGI estan orientados a modelos generativos y no son la via natural para este encoder.
 - Latencia y throughput: no disponibles. Como referencia orientativa de orden de magnitud, un encoder de 278 millones de parametros procesa cientos de frases por segundo en una GPU moderna en FP16, pero no hay mediciones publicadas para este modelo concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yuriilaba/ucu-wsd-aug16-... (este modelo) | 278 M | no disponible (arquitectura base: 512 tokens) | WSD ucraniano + embeddings | no disponible | HuggingFace, 0 descargas |
-| sentence-transformers/paraphrase-multilingual-mpnet-base-v2 (modelo base) | 278 M | 512 tokens | Embeddings multilingues de frase | Apache-2.0 | HuggingFace, ampliamente usado |
-| sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | 118 M | 128 tokens | Embeddings multilingues de frase | Apache-2.0 | HuggingFace, ampliamente usado |
-| xlm-roberta-base (encoder sin ajuste de similitud) | 278 M | 512 tokens | Representaciones contextuales generales | MIT | HuggingFace |
+| yuriilaba/ucu-wsd-aug16-... (este modelo) | 278 M | no disponible (arquitectura base: 512 tokens) | WSD ucraniano + embeddings | no disponible | Hugging Face, 0 descargas |
+| sentence-transformers/paraphrase-multilingual-mpnet-base-v2 (modelo base) | 278 M | 512 tokens | Embeddings multilingues de frase | Apache-2.0 | Hugging Face, ampliamente usado |
+| sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | 118 M | 128 tokens | Embeddings multilingues de frase | Apache-2.0 | Hugging Face, ampliamente usado |
+| xlm-roberta-base (encoder sin ajuste de similitud) | 278 M | 512 tokens | Representaciones contextuales generales | MIT | Hugging Face |
 
 No se dispone de resultados de benchmarks del modelo base ni de las alternativas en el mismo conjunto de evaluacion, por lo que la comparacion cuantitativa de rendimiento no esta disponible.
 
 ## Limitaciones y advertencias
 
 - Licencia no declarada: sin licencia explicita, no hay autorizacion clara para uso comercial. Conviene contactar con el autor antes de integrarlo en un producto.
-- Metadatos incompletos: no se declaran idiomas, pipeline ni licencia en HuggingFace, y no hay ficha tecnica mas alla de la configuracion de entrenamiento y tres metricas.
+- Metadatos incompletos: no se declaran idiomas, pipeline ni licencia en Hugging Face, y no hay ficha tecnica mas alla de la configuracion de entrenamiento y tres metricas.
 - Conjunto de entrenamiento muy pequeno y de origen semiautomatico: el fichero se llama `triplets_generation_translation_16_samples.csv`, lo que apunta a 16 muestras por sentido generadas por traduccion inversa. Esto implica riesgo de sobreajuste y de baja cobertura de sentidos poco frecuentes.
 - Idiomas: la tarea declarada es el ucraniano. Aunque el modelo base es multilingue, no hay evaluacion publicada de su comportamiento en otros idiomas.
 - Sesgos: al derivar de un corpus semiautomatico y de un modelo multilingue preentrenado en datos web, puede heredar sesgos de dominio, de registro y culturales. No se documenta ningun analisis de sesgo.
@@ -101,7 +101,7 @@ No se dispone de resultados de benchmarks del modelo base ni de las alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_back_translation_pt-false_seed-123
+- Modelo en Hugging Face: https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_back_translation_pt-false_seed-123
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 - Resultados MTEB declarados por el autor: `evaluation/mteb_results/` dentro del repositorio del modelo
 - No se han encontrado en la busqueda web enlaces relevantes (paper, blog, repositorio de codigo o demo) asociados a este modelo; los resultados devueltos no guardan relacion con el contenido tecnico solicitado.

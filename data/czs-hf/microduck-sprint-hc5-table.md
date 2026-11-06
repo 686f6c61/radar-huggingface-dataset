@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Czs-HF/microduck-sprint-hc5-table` es un artefacto derivado del modelo `suraj-phanindra/microduck-sprint-hc5-aifund`, publicado en HuggingFace bajo la librería `microduck`. No se trata de un modelo de lenguaje: es una política de control para un robot simulado (MicroDuck) que añade una tabla de pasos y un contador de pasos sobre los pesos congelados de la red original. El autor lo describe explícitamente como una "remix" del modelo base, con pesos idénticos a la política `hc5` publicada y una capa adicional de control discreto.
+`Czs-HF/microduck-sprint-hc5-table` es un artefacto derivado del modelo `suraj-phanindra/microduck-sprint-hc5-aifund`, publicado en Hugging Face bajo la librería `microduck`. No se trata de un modelo de lenguaje: es una política de control para un robot simulado (MicroDuck) que añade una tabla de pasos y un contador de pasos sobre los pesos congelados de la red original. El autor lo describe explícitamente como una "remix" del modelo base, con pesos idénticos a la política `hc5` publicada y una capa adicional de control discreto.
 
 La relevancia es acotada y experimental: se enmarca en el ecosistema de simulación de MicroDuck y en el benchmark "Arena" con cinco semillas oficiales. El autor reporta una medición local de 0,862 s con éxito 5/5 a una velocidad de 1,15 m/s. No hay información sobre arquitectura de red, número de parámetros ni datos de entrenamiento más allá de la referencia al modelo base.
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Czs-HF/microduck-sprint-hc5-table` | Política de control (ONNX) | no disponible | no aplica | 0,862 s, 5/5, 1,15 m/s (medición local) | no disponible | HuggingFace, 0 descargas |
-| `suraj-phanindra/microduck-sprint-hc5-aifund` | Política de control (base) | no disponible | no aplica | no disponible en esta ficha | no disponible | HuggingFace (referenciado como base) |
+| `Czs-HF/microduck-sprint-hc5-table` | Política de control (ONNX) | no disponible | no aplica | 0,862 s, 5/5, 1,15 m/s (medición local) | no disponible | Hugging Face, 0 descargas |
+| `suraj-phanindra/microduck-sprint-hc5-aifund` | Política de control (base) | no disponible | no aplica | no disponible en esta ficha | no disponible | Hugging Face (referenciado como base) |
 | Otras políticas MicroDuck | no disponible | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
@@ -88,6 +88,6 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Czs-HF/microduck-sprint-hc5-table
+- Hugging Face: https://huggingface.co/Czs-HF/microduck-sprint-hc5-table
 - Modelo base: https://huggingface.co/suraj-phanindra/microduck-sprint-hc5-aifund
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

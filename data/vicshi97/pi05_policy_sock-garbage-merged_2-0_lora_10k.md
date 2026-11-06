@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi05_policy_sock-garbage-merged_2.0_lora_10k es una política robótica de tipo Vision-Language-Action (VLA) publicada por el usuario vicshi97 en HuggingFace, obtenida mediante ajuste fino (fine-tuning) del modelo base lerobot/pi05_base, que a su vez implementa π₀.₅ (Pi05) de Physical Intelligence dentro del ecosistema LeRobot. El modelo resuelve un problema muy concreto: ejecutar dos tareas de manipulación con un brazo robótico tipo `so_follower`, a partir de observaciones visuales y propioceptivas.
+pi05_policy_sock-garbage-merged_2.0_lora_10k es una política robótica de tipo Vision-Language-Action (VLA) publicada por el usuario vicshi97 en Hugging Face, obtenida mediante ajuste fino (fine-tuning) del modelo base lerobot/pi05_base, que a su vez implementa π₀.₅ (Pi05) de Physical Intelligence dentro del ecosistema LeRobot. El modelo resuelve un problema muy concreto: ejecutar dos tareas de manipulación con un brazo robótico tipo `so_follower`, a partir de observaciones visuales y propioceptivas.
 
 La relevancia de esta ficha es doble. Por un lado, documenta un ejemplo real de transferencia de un VLA preentrenado a una tarea de laboratorio con solo 200 episodios y 93.144 fotogramas grabados a 30 FPS. Por otro, ilustra el flujo de trabajo completo de LeRobot: grabar dataset, entrenar con `lerobot-train` y desplegar con `lerobot-rollout`. El modelo consume dos cámaras RGB (base y muñeca) de 480x640 y un vector de estado de 6 dimensiones, y produce un vector de acción de 6 dimensiones.
 
@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vicshi97/pi05_policy_sock-garbage-merged_2.0_lora_10k | no disponible (repo de 0,3 GB) | no aplica (2 imagenes 480x640 + estado de 6 dimensiones) | sin evaluacion publicada | Apache 2.0 | HuggingFace, libreria LeRobot |
-| vicshi97/pi05_sock-garbage-merged_2.0_20k | no disponible | no aplica | sin evaluacion publicada | no disponible en la informacion proporcionada | HuggingFace, libreria LeRobot |
-| lerobot/pi05_base | no disponible | no aplica | no disponible | no disponible en la informacion proporcionada | HuggingFace, modelo base de la familia |
+| vicshi97/pi05_policy_sock-garbage-merged_2.0_lora_10k | no disponible (repo de 0,3 GB) | no aplica (2 imagenes 480x640 + estado de 6 dimensiones) | sin evaluacion publicada | Apache 2.0 | Hugging Face, libreria LeRobot |
+| vicshi97/pi05_sock-garbage-merged_2.0_20k | no disponible | no aplica | sin evaluacion publicada | no disponible en la informacion proporcionada | Hugging Face, libreria LeRobot |
+| lerobot/pi05_base | no disponible | no aplica | no disponible | no disponible en la informacion proporcionada | Hugging Face, modelo base de la familia |
 | Pi05 original (Physical Intelligence, via OpenPI) | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Repositorio OpenPI |
 
 No se dispone de datos comparativos de rendimiento entre estas variantes: ninguna de las fichas consultadas publica tasas de éxito ni métricas de benchmark.
@@ -97,7 +97,7 @@ No se dispone de datos comparativos de rendimiento entre estas variantes: ningun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vicshi97/pi05_policy_sock-garbage-merged_2.0_lora_10k
+- Modelo en Hugging Face: https://huggingface.co/vicshi97/pi05_policy_sock-garbage-merged_2.0_lora_10k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/vicshi97/sock-garbage-merged_2.0
 - Variante de 20.000 pasos del mismo autor: https://huggingface.co/vicshi97/pi05_sock-garbage-merged_2.0_20k

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hybrid Edge Multimodal es un pipeline multimodal publicado en HuggingFace por el usuario sanjeevafk que combina dos modelos independientes para ofrecer entrada de imagen y generación de texto en hardware muy limitado. No se trata de un modelo único entrenado de forma conjunta, sino de una arquitectura de orquestación: un VLM (Qwen2-VL-2B-Instruct) ejecutado en CPU se encarga de la percepción visual y la extracción OCR estructurada, mientras que un modelo de lenguaje puramente textual (LFM3-1.7B-Uncensored, de AtomicChat) se ejecuta íntegramente en GPU para la generación de respuestas. Un proxy FastAPI unificado expone una API compatible con OpenAI en el puerto 8080 y enruta las peticiones según su contenido.
+Hybrid Edge Multimodal es un pipeline multimodal publicado en Hugging Face por el usuario sanjeevafk que combina dos modelos independientes para ofrecer entrada de imagen y generación de texto en hardware muy limitado. No se trata de un modelo único entrenado de forma conjunta, sino de una arquitectura de orquestación: un VLM (Qwen2-VL-2B-Instruct) ejecutado en CPU se encarga de la percepción visual y la extracción OCR estructurada, mientras que un modelo de lenguaje puramente textual (LFM3-1.7B-Uncensored, de AtomicChat) se ejecuta íntegramente en GPU para la generación de respuestas. Un proxy FastAPI unificado expone una API compatible con OpenAI en el puerto 8080 y enruta las peticiones según su contenido.
 
 El problema que resuelve es concreto: ejecutar un asistente multimodal en sistemas con 2 GB de VRAM y 8-16 GB de RAM del sistema, donde cargar un checkpoint multimodal unificado provoca errores de memoria (OOM). Al desacoplar la carga visual (CPU) de la generación textual (GPU), el pipeline mantiene el 100 % de la VRAM para el modelo de lenguaje y su caché de contexto. El modelo base LFM3 emplea una arquitectura híbrida de espacio de estados (state-space) y no incluye codificador visual nativo, de ahí la necesidad del VLM separado.
 
@@ -89,10 +89,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hybrid Edge Multimodal (este pipeline) | ~3,7 B en total (1,7 B + 2 B) | 32.768 (LLM) / 4.096 (VLM) | Dos modelos desacoplados CPU/GPU | Apache 2.0 | GGUF en HuggingFace, repo con 0 descargas |
+| Hybrid Edge Multimodal (este pipeline) | ~3,7 B en total (1,7 B + 2 B) | 32.768 (LLM) / 4.096 (VLM) | Dos modelos desacoplados CPU/GPU | Apache 2.0 | GGUF en Hugging Face, repo con 0 descargas |
 | SmolVLM-500M | 0,5 B | No disponible | VLM unificado pequeño | No disponible en la información | Referenciado como baseline en la model card |
 | Moondream 2 | No disponible | No disponible | VLM unificado | No disponible en la información | Referenciado como baseline en la model card |
-| Qwen2-VL-2B-Instruct (uso unificado) | 2 B | 4.096 | VLM unificado | No disponible en la información | Disponible en HuggingFace |
+| Qwen2-VL-2B-Instruct (uso unificado) | 2 B | 4.096 | VLM unificado | No disponible en la información | Disponible en Hugging Face |
 
 La comparación se limita a los baselines citados por el autor en tareas de OCR y reconocimiento de UI: el pipeline supera a SmolVLM-500M y Moondream 2 en precisión OCR y layout según sus propias mediciones, a costa de una latencia de visión mayor (13-25 s) y de una arquitectura de dos etapas en lugar de un modelo único.
 
@@ -110,7 +110,7 @@ La comparación se limita a los baselines citados por el autor en tareas de OCR 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sanjeevafk/hybrid-edge-multimodal-lfm3-qwen2vl
+- Hugging Face: https://huggingface.co/sanjeevafk/hybrid-edge-multimodal-lfm3-qwen2vl
 - Modelo base del LLM: https://huggingface.co/AtomicChat/LFM3-1.7B-Uncensored-GGUF
 - Modelo base del VLM: Qwen2-VL-2B-Instruct (no se proporciona URL específica en la información disponible)
 - Repositorio llama.cpp: no disponible en la información proporcionada

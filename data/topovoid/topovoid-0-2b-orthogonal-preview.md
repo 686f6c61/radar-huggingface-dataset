@@ -91,8 +91,8 @@ La comparación con modelos generalistas no es directa: TopoVoid no publica resu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Topovoid/TopoVoid-0.2B-Orthogonal-Preview
-- Organización Topovoid en HuggingFace: https://huggingface.co/Topovoid
+- Modelo en Hugging Face: https://huggingface.co/Topovoid/TopoVoid-0.2B-Orthogonal-Preview
+- Organización Topovoid en Hugging Face: https://huggingface.co/Topovoid
 - Sitio web de Topovoid: https://topovoid.com
 - Dataset CounterFact (ROME): https://rome.baulab.info/data/dsets/counterfact.json
 - Dataset FineWeb: https://huggingface.co/datasets/HuggingFaceFW/fineweb

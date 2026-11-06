@@ -95,7 +95,7 @@ No se dispone en la información proporcionada de resultados comparativos con ot
 
 | Modelo | Parametros | Contexto/entrada | EER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `wq2012/ls_conformer_small_cosface` | 2,03 M | log-mel 80 dim @ 16 kHz | 23,26 % (universal 1-utt); 14,13 % (LibriSpeech 1-utt) | Apache-2.0 | HuggingFace, colección FlaxSpeaker |
+| `wq2012/ls_conformer_small_cosface` | 2,03 M | log-mel 80 dim @ 16 kHz | 23,26 % (universal 1-utt); 14,13 % (LibriSpeech 1-utt) | Apache-2.0 | Hugging Face, colección FlaxSpeaker |
 | Alternativas de la misma categoría (ECAPA-TDNN, x-vector, WeSpeaker u otros) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Únicamente se puede señalar que la colección FlaxSpeaker incluye otros checkpoints del mismo autor y que el repositorio relacionado `wq2012/personal-vad-v2-conformer-film-cos` cubre una tarea distinta (detección de actividad de voz personalizada) bajo la misma licencia Apache-2.0.
@@ -115,7 +115,7 @@ No se dispone en la información proporcionada de resultados comparativos con ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wq2012/ls_conformer_small_cosface
+- Modelo en Hugging Face: https://huggingface.co/wq2012/ls_conformer_small_cosface
 - Colección FlaxSpeaker: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
 - Paquete PyPI `flaxspeaker`: https://pypi.org/project/flaxspeaker/

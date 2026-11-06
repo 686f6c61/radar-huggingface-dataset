@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`FreddieGl/multitask-fast` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura tipo Flamingo orientada a tareas multitarea. El autor, FreddieGl, lo presenta explícitamente como un esqueleto de código ("codebase") para inspeccionar cambios arquitectónicos antes de lanzar un entrenamiento completo, no como un modelo entrenado ni evaluado. La escala declarada es "tiny" y el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo con pesos entrenados.
+`FreddieGl/multitask-fast` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura tipo Flamingo orientada a tareas multitarea. El autor, FreddieGl, lo presenta explícitamente como un esqueleto de código ("codebase") para inspeccionar cambios arquitectónicos antes de lanzar un entrenamiento completo, no como un modelo entrenado ni evaluado. La escala declarada es "tiny" y el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo con pesos entrenados.
 
 El modelo emplea atención con grouped query attention (GQA), fusión multimodales mediante gated fusion, activación gelu tanh y normalización scalenorm, siguiendo el paradigma Flamingo de combinar un codificador visual con un decodificador de lenguaje mediante capas de atención cruzada. El recuento real de parámetros en safetensors es de 24.832, un tamaño ínfimo que confirma su carácter de prototipo.
 
-Su relevancia es limitada para producción: se trata de un artefacto educativo o de investigación para estudiar la implementación de Flamingo y el pipeline de entrenamiento multitarea. No se han publicado resultados de benchmarks, no se declaran idiomas soportados y el repositorio no incluye un pipeline definido en HuggingFace. Es útil como punto de partida reproducible para quien quiera experimentar con esta familia de arquitecturas, no como modelo listo para desplegar.
+Su relevancia es limitada para producción: se trata de un artefacto educativo o de investigación para estudiar la implementación de Flamingo y el pipeline de entrenamiento multitarea. No se han publicado resultados de benchmarks, no se declaran idiomas soportados y el repositorio no incluye un pipeline definido en Hugging Face. Es útil como punto de partida reproducible para quien quiera experimentar con esta familia de arquitecturas, no como modelo listo para desplegar.
 
 ## Especificaciones tecnicas
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 |---|---|---|---|---|
 | FreddieGl/multitask-fast | 24.832 | no disponible | apache-2.0 | Esqueleto experimental, sin entrenar |
 | OpenFlamingo (variantes) | desde ~3B | 2048 típicamente | MIT / otras | Implementación entrenada de referencia |
-| IDEFICS (HuggingFace) | 9B / 80B | 2048 | Apache-2.0 / otras | Modelo multimodal entrenado |
+| IDEFICS (Hugging Face) | 9B / 80B | 2048 | Apache-2.0 / otras | Modelo multimodal entrenado |
 | LLaVA (variantes) | 7B–13B | 4096 | Apache-2.0 / otras | Modelo visión-lenguaje entrenado |
 
 La comparativa es orientativa: `multitask-fast` no es un modelo entrenado y no es directamente comparable en rendimiento con OpenFlamingo, IDEFICS o LLaVA, que sí cuentan con checkpoints ajustados y evaluaciones publicadas. El valor del repositorio es arquitectónico y educativo, no competitivo.
@@ -81,8 +81,8 @@ La comparativa es orientativa: `multitask-fast` no es un modelo entrenado y no e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FreddieGl/multitask-fast
+- Repositorio en Hugging Face: https://huggingface.co/FreddieGl/multitask-fast
 - OpenFlamingo (referencia de la arquitectura): https://github.com/mlfoundations/open_flamingo
 - Paper original de Flamingo (Alayrac et al., 2022): https://arxiv.org/abs/2204.14198
-- IDEFICS en HuggingFace: https://huggingface.co/HuggingFaceM4/idefics-9b
-- LLaVA en HuggingFace: https://huggingface.co/liuhaotian/llava-v1.5-7b
+- IDEFICS en Hugging Face: https://huggingface.co/HuggingFaceM4/idefics-9b
+- LLaVA en Hugging Face: https://huggingface.co/liuhaotian/llava-v1.5-7b

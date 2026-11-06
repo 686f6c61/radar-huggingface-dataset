@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| code-sft-rerun-20261102-qwen3b-code-replay-hard | ~3B | 4096 (entrenamiento) | other (Qwen Research License) | HuggingFace, 0 descargas | Brazo experimental de investigación |
-| Qwen2.5-3B (base) | 3B | no disponible en esta ficha | Qwen Research License | HuggingFace | Modelo upstream del que deriva |
-| Qwen3-1.7B-Base | 1.7B | no disponible en esta ficha | Apache 2.0 | HuggingFace | Usado como otra base en el mismo estudio |
-| Llama-3.2-3B-Instruct | 3B | no disponible en esta ficha | Llama 3.2 Community License | HuggingFace | Tercera base del estudio, con variantes uniform/hard/CE |
+| code-sft-rerun-20261102-qwen3b-code-replay-hard | ~3B | 4096 (entrenamiento) | other (Qwen Research License) | Hugging Face, 0 descargas | Brazo experimental de investigación |
+| Qwen2.5-3B (base) | 3B | no disponible en esta ficha | Qwen Research License | Hugging Face | Modelo upstream del que deriva |
+| Qwen3-1.7B-Base | 1.7B | no disponible en esta ficha | Apache 2.0 | Hugging Face | Usado como otra base en el mismo estudio |
+| Llama-3.2-3B-Instruct | 3B | no disponible en esta ficha | Llama 3.2 Community License | Hugging Face | Tercera base del estudio, con variantes uniform/hard/CE |
 
 La comparación directa de rendimiento entre estos modelos no está disponible en la información proporcionada; el estudio original los evalúa con el mismo protocolo (MBPP+ n=160, t=0.6), pero los resultados no se incluyen en la model card.
 
@@ -83,9 +83,9 @@ La comparación directa de rendimiento entre estos modelos no está disponible e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RL-Forgettting-Exp4/code-sft-rerun-20261102-qwen3b-code-replay-hard
+- Modelo en Hugging Face: https://huggingface.co/RL-Forgettting-Exp4/code-sft-rerun-20261102-qwen3b-code-replay-hard
 - Repositorio de artefactos complementario: `RL-Forgetting-Experiments-3` (referenciado en la model card, sin URL directa en la información proporcionada)
 - Manifiesto de entrega: `delivery_manifest.json` dentro del repositorio del modelo
 - Manifiesto de evaluaciones: `evaluations/mbppplus_n160_t0.6/delivery_manifest.json` dentro del repositorio del modelo
-- Modelo base: Qwen2.5-3B (HuggingFace, URL no incluida en la información proporcionada)
+- Modelo base: Qwen2.5-3B (Hugging Face, URL no incluida en la información proporcionada)
 - Paper, blog o demo: no disponibles en la información proporcionada

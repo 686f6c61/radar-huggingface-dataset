@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `TapnetixDev/recapit-gigaam` (este repo) | no disponible | no disponible (ASR) | ONNX fp32/int8 | MIT | HuggingFace, 0 descargas |
-| `ai-sage/GigaAM-Multilingual` (origen) | no disponible | no disponible (ASR) | PyTorch (`pytorch_model.bin`) | MIT | HuggingFace |
-| `ai-sage/GigaAM-v3` (origen) | no disponible | no disponible (ASR) | PyTorch (`pytorch_model.bin`) | MIT | HuggingFace |
+| `TapnetixDev/recapit-gigaam` (este repo) | no disponible | no disponible (ASR) | ONNX fp32/int8 | MIT | Hugging Face, 0 descargas |
+| `ai-sage/GigaAM-Multilingual` (origen) | no disponible | no disponible (ASR) | PyTorch (`pytorch_model.bin`) | MIT | Hugging Face |
+| `ai-sage/GigaAM-v3` (origen) | no disponible | no disponible (ASR) | PyTorch (`pytorch_model.bin`) | MIT | Hugging Face |
 | Whisper (OpenAI) | variable por tamano (tiny a large) | 30 s de audio por ventana | PyTorch, ONNX, GGUF | MIT | Amplia |
 
 La comparacion con Whisper es solo categorica (ambos son ASR); no hay datos de rendimiento en este repositorio que permitan una comparacion cuantitativa. Los checkpoints de origen de ai-sage son la referencia directa y este repositorio solo anade el empaquetado ONNX y la cuantizacion int8.
@@ -85,7 +85,7 @@ La comparacion con Whisper es solo categorica (ambos son ASR); no hay datos de r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TapnetixDev/recapit-gigaam
+- Repositorio Hugging Face: https://huggingface.co/TapnetixDev/recapit-gigaam
 - Checkpoint de origen Multilingual: https://huggingface.co/ai-sage/GigaAM-Multilingual (rama `large_ctc`, revision `3905cd51c3ed4e88c8edf33f3302969ba480a327`)
 - Checkpoint de origen v3: https://huggingface.co/ai-sage/GigaAM-v3 (rama `e2e_ctc`, revision `cec030b4c4f35d928e4a9044a3bdb29ebd499fac`)
 - Codigo de referencia y licencia original: https://github.com/salute-developers/GigaAM (commit `7447938d791c4f3e643386ee22c33777004293a5`)

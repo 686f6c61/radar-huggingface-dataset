@@ -6,7 +6,7 @@ El modelo `stage-babylm/llama-256-12L-qa` es un ajuste fino (fine-tune) de `stag
 
 El modelo base sigue una arquitectura Llama con una dimensión de embedding de 256 y 12 capas, y una ventana de contexto de 2.000 tokens. La variante `-qa` ha sido entrenada específicamente para tareas de preguntas y respuestas, aunque el conjunto de datos de fine-tuning no se ha especificado. Su relevancia radica en servir como banco de pruebas para estudiar si modelos de tamaño mínimo pueden adquirir competencias de QA con recursos computacionales escasos, y como referencia para la comunidad BabyLM.
 
-La ficha de la model card está generada automáticamente por el Trainer de HuggingFace, por lo que muchos detalles técnicos (licencia, idiomas, dataset de entrenamiento) no están disponibles.
+La ficha de la model card está generada automáticamente por el Trainer de Hugging Face, por lo que muchos detalles técnicos (licencia, idiomas, dataset de entrenamiento) no están disponibles.
 
 ## Especificaciones tecnicas
 
@@ -47,7 +47,7 @@ La perdida de validacion descendio de 2,5935 al inicio a 1,7426 al final de las 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo-index de HuggingFace declara una lista de resultados vacia. La unica metrica declarada es la perdida de validacion de 1,7426 tras el fine-tuning, pero no se han evaluado tareas estandar como MMLU, HumanEval o GSM8K.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo-index de Hugging Face declara una lista de resultados vacia. La unica metrica declarada es la perdida de validacion de 1,7426 tras el fine-tuning, pero no se han evaluado tareas estandar como MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks para ninguno de estos modelos, por lo que n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stage-babylm/llama-256-12L-qa
+- Modelo en Hugging Face: https://huggingface.co/stage-babylm/llama-256-12L-qa
 - Modelo base: https://huggingface.co/stage-babylm/llama-256-12L
 - Modelo pairwise (variante): https://huggingface.co/stage-babylm/llama-256-12L-pairwise
 - Proyecto BabyLM: https://babylm.github.io/

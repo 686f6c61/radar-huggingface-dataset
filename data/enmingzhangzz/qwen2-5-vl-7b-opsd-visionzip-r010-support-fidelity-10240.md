@@ -76,7 +76,7 @@ La diferencia principal entre los tres adaptadores del mismo autor radica en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-support-fidelity-10240
+- Repositorio Hugging Face: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-support-fidelity-10240
 - Adaptador balanceado (variante): https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-balanced-10240
 - Adaptador oficial (variante): https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-10240
 - Despliegue en FriendliAI (variante balanceada): https://friendli.ai/models/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-balanced-10240

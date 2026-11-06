@@ -77,6 +77,6 @@ WaveForcing-1.3B comparte arquitectura base con Wan2.1-T2V-1.3B pero ofrece un m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SJTU-DENG-Lab/WaveForcing-1.3B
+- Modelo en Hugging Face: https://huggingface.co/SJTU-DENG-Lab/WaveForcing-1.3B
 - Codigo (GitHub): https://github.com/SJTU-DENG-Lab/WaveForcing
 - Componentes requeridos (text encoder, tokenizer, VAE): https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers

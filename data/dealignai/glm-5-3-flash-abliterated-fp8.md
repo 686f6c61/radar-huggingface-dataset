@@ -94,7 +94,7 @@ No se dispone de comparativas con otros modelos abliterados de tamaño similar (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-FP8
+- Modelo en Hugging Face: https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-FP8
 - Espejo del mismo autor: https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Documentación de GLM-5.3 en Z.ai: https://docs.z.ai/guides/llm/glm-5.3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Indian Matchbox Art Style: Text-to-Image Generator es un conjunto de dos adaptadores LoRA de estilo publicados por el usuario spearb0lt en HuggingFace, pensados para generar etiquetas de cerillas (matchbox labels) de la India de estilo vintage a partir de un prompt de texto. No es un modelo generativo completo, sino dos adaptadores independientes que se montan sobre modelos base de difusión: uno para Stable Diffusion XL 1.0 (objetivo de predicción de ruido, DDPM) y otro para Stable Diffusion 3.5-medium (objetivo de flow matching). Ambos se entrenaron sobre el mismo conjunto de 197 etiquetas del dataset spearb0lt/Indian-Matchbox-Labels y comparten la palabra de activación `phlmx`.
+Indian Matchbox Art Style: Text-to-Image Generator es un conjunto de dos adaptadores LoRA de estilo publicados por el usuario spearb0lt en Hugging Face, pensados para generar etiquetas de cerillas (matchbox labels) de la India de estilo vintage a partir de un prompt de texto. No es un modelo generativo completo, sino dos adaptadores independientes que se montan sobre modelos base de difusión: uno para Stable Diffusion XL 1.0 (objetivo de predicción de ruido, DDPM) y otro para Stable Diffusion 3.5-medium (objetivo de flow matching). Ambos se entrenaron sobre el mismo conjunto de 197 etiquetas del dataset spearb0lt/Indian-Matchbox-Labels y comparten la palabra de activación `phlmx`.
 
 El interés del proyecto es doble. Por un lado, cubre un nicho gráfico muy concreto —el de las etiquetas litográficas indias de mediados del siglo XX— con resultados que reproducen rasgos difíciles de obtener por prompting: tramas de línea grabada, paletas apagadas y titulares impresos dentro de la composición. Por otro, el autor publica la comparación entre las dos variantes y sus respectivos notebooks de entrenamiento, lo que lo convierte en un caso de estudio útil para quien quiera entender qué aporta una base con flow matching y codificador T5-XXL frente a una base con U-Net clásica a la hora de aprender un estilo y de escribir texto legible.
 
@@ -25,7 +25,7 @@ El repositorio ocupa 0,1 GB y no registra descargas ni likes en el momento de re
 | Palabra de activacion (trigger) | `phlmx` |
 | Libreria y pipeline | diffusers; text-to-image |
 | Tamano del repositorio | 0,1 GB |
-| Fecha de publicacion | 2026-10-02 (creado), 2026-10-02 (actualizado), segun la ficha de HuggingFace |
+| Fecha de publicacion | 2026-10-02 (creado), 2026-10-02 (actualizado), segun la ficha de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - Opciones de despliegue: `diffusers` para ambas variantes; ComfyUI y AUTOMATIC1111 para la variante SDXL mediante el archivo kohya; los archivos en formato kohya también son utilizables por otras interfaces compatibles con LoRA de SDXL.
 - No aplica vLLM, llama.cpp, Ollama ni TGI: son herramientas para modelos de lenguaje, no para pipelines de difusión. Para difusión las alternativas equivalentes serían ComfyUI, AUTOMATIC1111, Fooocus o servidores basados en `diffusers`.
 - Nota práctica: para la variante SDXL el ejemplo del autor carga el VAE `madebyollin/sdxl-vae-fp16-fix`, lo que evita artefactos numéricos en fp16.
-- Para la variante SD 3.5-medium es necesario aceptar previamente la licencia del modelo base en HuggingFace antes de descargarlo.
+- Para la variante SD 3.5-medium es necesario aceptar previamente la licencia del modelo base en Hugging Face antes de descargarlo.
 
 ## Comparativa con modelos similares
 
@@ -105,7 +105,7 @@ No se dispone de información sobre LoRAs comparables de estilo matchbox indio e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/spearb0lt/Indian-Matchbox-Art-Style-Text-to-Image-Generator
+- Modelo en Hugging Face: https://huggingface.co/spearb0lt/Indian-Matchbox-Art-Style-Text-to-Image-Generator
 - Dataset de entrenamiento: https://huggingface.co/datasets/spearb0lt/Indian-Matchbox-Labels
 - Notebooks de entrenamiento (GitHub): https://github.com/spearb0lt/Indian-Matchbox-Art-Style-Text-to-Image-Generator
 - Modelo base SDXL 1.0: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0

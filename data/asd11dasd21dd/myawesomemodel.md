@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado por el usuario asd11dasd21dd en HuggingFace con licencia MIT. La model card describe una supuesta actualizacion significativa respecto a una version anterior, con mejoras en razonamiento, reduccion de alucinaciones y soporte para function calling. Se mencionan resultados en AIME 2025 con una precision del 87,5 % (frente al 70 % de la version previa) y un incremento en el uso medio de tokens por pregunta de 12K a 23K.
+MyAwesomeModel es un modelo publicado por el usuario asd11dasd21dd en Hugging Face con licencia MIT. La model card describe una supuesta actualizacion significativa respecto a una version anterior, con mejoras en razonamiento, reduccion de alucinaciones y soporte para function calling. Se mencionan resultados en AIME 2025 con una precision del 87,5 % (frente al 70 % de la version previa) y un incremento en el uso medio de tokens por pregunta de 12K a 23K.
 
 Sin embargo, la informacion publica presenta inconsistencias importantes: los tags del repositorio indican arquitectura BERT y pipeline de feature-extraction, mientras que la model card describe capacidades de razonamiento avanzado propias de modelos mucho mayores. El tamano del repositorio es de 0,0 GB, lo que sugiere que no hay pesos subidos. No se especifican parametros, contexto, ni datos de entrenamiento verificables. Se recomienda tratar esta ficha como una evaluacion de la informacion disponible, no como una validacion del modelo.
 
@@ -21,7 +21,7 @@ Sin embargo, la informacion publica presenta inconsistencias importantes: los ta
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible es contradictoria. Los metadatos de HuggingFace etiquetan el modelo como BERT con pipeline de feature-extraction y libreria transformers, lo que apuntaria a un encoder clasico. Sin embargo, la model card describe capacidades de razonamiento profundo, uso de 23K tokens por pregunta en el test AIME 2025 y mejoras post-entrenamiento con "mecanismos de optimizacion algoritmica" y "mayores recursos computacionales", caracteristicas que no corresponden a un BERT estandar.
+La informacion disponible es contradictoria. Los metadatos de Hugging Face etiquetan el modelo como BERT con pipeline de feature-extraction y libreria transformers, lo que apuntaria a un encoder clasico. Sin embargo, la model card describe capacidades de razonamiento profundo, uso de 23K tokens por pregunta en el test AIME 2025 y mejoras post-entrenamiento con "mecanismos de optimizacion algoritmica" y "mayores recursos computacionales", caracteristicas que no corresponden a un BERT estandar.
 
 No se proporcionan datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas como RLHF o DPO. Se menciona un checkpoint optimo (step_1000) con eval_accuracy de 0,717, pero sin detallar el conjunto de validacion. Tambien se hace referencia a un modelo derivado, MyAwesomeModel-Small, con la misma arquitectura que el modelo base pero con un tokenizador compartido con MyAwesomeModel principal.
 
@@ -98,7 +98,7 @@ No disponible. La model card afirma que el rendimiento "se acerca al de otros mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/asd11dasd21dd/MyAwesomeModel
+- Repositorio Hugging Face: https://huggingface.co/asd11dasd21dd/MyAwesomeModel
 - Repositorio de prueba del mismo autor: https://huggingface.co/asd11dasd21dd/MyAwesomeModel-TestRepo
 - Repositorio con contenido similar de otro autor: https://huggingface.co/ASD12D21321/MyAwesomeModel
 - Modelo homonimo en PromptLayer (posiblemente distinto): https://www.promptlayer.com/models/myawesomemodel/

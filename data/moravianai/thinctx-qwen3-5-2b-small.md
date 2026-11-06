@@ -92,7 +92,7 @@ La comparativa con modelos de otros fabricantes no está disponible en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moravianai/ThinCtx-Qwen3.5-2B-small
+- Modelo en Hugging Face: https://huggingface.co/moravianai/ThinCtx-Qwen3.5-2B-small
 - Variante de precisión completa: https://huggingface.co/moravianai/ThinCtx-Qwen3.5-2B
 - Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Sitio de Moravian AI: https://moravian.ai/

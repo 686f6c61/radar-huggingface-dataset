@@ -19,7 +19,7 @@ Este modelo es un fine-tune del modelo OLMo-3-7B-Instruct, desarrollado por el u
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible indica que este modelo es un fine-tune del modelo base unsloth/Olmo-3-7B-Instruct, entrenado con Unsloth y la libreria TRL de HuggingFace, lo que permitio un entrenamiento 2 veces mas rapido. No se proporcionan detalles sobre la arquitectura interna (probablemente un transformer, como el modelo OLMo-3), ni sobre el dataset de fine-tuning, el numero de tokens, o si se aplicaron tecnicas como RLHF o DPO. El nombre del repositorio sugiere un experimento con "old bird names" (nombres de pajaros antiguos), pero no hay documentacion que explique la naturaleza del fine-tuning.
+La informacion disponible indica que este modelo es un fine-tune del modelo base unsloth/Olmo-3-7B-Instruct, entrenado con Unsloth y la libreria TRL de Hugging Face, lo que permitio un entrenamiento 2 veces mas rapido. No se proporcionan detalles sobre la arquitectura interna (probablemente un transformer, como el modelo OLMo-3), ni sobre el dataset de fine-tuning, el numero de tokens, o si se aplicaron tecnicas como RLHF o DPO. El nombre del repositorio sugiere un experimento con "old bird names" (nombres de pajaros antiguos), pero no hay documentacion que explique la naturaleza del fine-tuning.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ No disponible. No se dispone de informacion sobre modelos comparables ni datos d
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/OLMo-3-7B-old-bird-names-first-third-v2-sft-seed5-epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-first-third-v2-sft-seed5-epoch3)
+- [Hugging Face - longtermrisk/OLMo-3-7B-old-bird-names-first-third-v2-sft-seed5-epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-first-third-v2-sft-seed5-epoch3)
 - [Variante seed2](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-first-third-v2-sft-seed2-epoch3)
 - [Variante sin seed](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-first-third-v2-sft-epoch3)
 - [FriendliAI - variante sin seed](https://friendli.ai/models/longtermrisk/OLMo-3-7B-old-bird-names-first-third-v2-sft-epoch3)

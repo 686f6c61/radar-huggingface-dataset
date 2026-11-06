@@ -70,7 +70,7 @@ No disponible. No se proporcionan datos de otros modelos comparables ni se menci
 
 ## Enlaces
 
-- [HuggingFace: brssmith12/classifier-baseline](https://huggingface.co/brssmith12/classifier-baseline)
+- [Hugging Face: brssmith12/classifier-baseline](https://huggingface.co/brssmith12/classifier-baseline)
 - [Understanding Baseline Models in Machine Learning](https://medium.com/@preethi_prakash/understanding-baseline-models-in-machine-learning-3ed94f03d645)
 - [Baseline Models: Your Guide For Model Building](https://towardsdatascience.com/baseline-models-your-guide-for-model-building-1ec3aa244b8d/)
 - [Baseline - AI Wiki](https://aiwiki.ai/wiki/baseline)

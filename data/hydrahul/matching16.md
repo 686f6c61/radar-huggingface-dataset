@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hydrahul/matching16` es un repositorio de HuggingFace publicado por el usuario hydrahul que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada **Mixer for Matching**. No se trata de un modelo preentrenado ni ajustado: el propio autor lo describe como una configuración *tiny* pensada para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño. El checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida, no como un modelo entrenado con resultados de referencia.
+`hydrahul/matching16` es un repositorio de Hugging Face publicado por el usuario hydrahul que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada **Mixer for Matching**. No se trata de un modelo preentrenado ni ajustado: el propio autor lo describe como una configuración *tiny* pensada para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño. El checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida, no como un modelo entrenado con resultados de referencia.
 
 La relevancia de esta ficha es, por tanto, limitada y de naturaleza distinta a la de un modelo de producción: sirve como punto de partida reproducible para quien quiera experimentar con una arquitectura tipo Mixer aplicada a tareas de *matching*, y como artefacto de código abierto bajo licencia BSD-3-Clause. El número total de parámetros registrados en los safetensors es de 33.088, lo que lo sitúa en un orden de magnitud de juguete, muy por debajo de cualquier modelo utilizable en tareas reales de generación o razonamiento.
 
@@ -23,7 +23,7 @@ No hay información publicada sobre datos de entrenamiento, idiomas, longitud de
 | Escala declarada | tiny |
 | Optimizador de la receta por defecto | novograd con planificador (*schedule*) de tipo step |
 | Idiomas soportados | no disponible |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -49,7 +49,7 @@ No se ha publicado información sobre el volumen de tokens de entrenamiento, la 
 - Pruebas de humo en pipelines de CI: el checkpoint de inicialización permite verificar que un *script* de carga, *forward pass* y serialización funciona de extremo a extremo sin coste computacional apreciable.
 - Experimentos controlados a pequeña escala: útil para probar bucles de entrenamiento, planificadores de *learning rate* (por ejemplo, el planificador *step* con novograd de la receta) o utilidades de *logging* antes de escalar a modelos mayores.
 - *Baseline* de capacidad emparejada: el autor recomienda comparar contra una *baseline* de capacidad equivalente, de modo que este modelo puede actuar como el lado de capacidad mínima en un estudio comparativo de arquitecturas para tareas de *matching*.
-- Docencia y formación: sirve para ilustrar en un aula o tutorial cómo se estructura un repositorio de modelo en HuggingFace (config, training_args, safetensors, README) sin los requisitos de hardware de un modelo real.
+- Docencia y formación: sirve para ilustrar en un aula o tutorial cómo se estructura un repositorio de modelo en Hugging Face (config, training_args, safetensors, README) sin los requisitos de hardware de un modelo real.
 - Validación de infraestructura de evaluación: al ser tan pequeño, permite ensayar un protocolo de evaluación con conjunto de validación emparejado, tres semillas como mínimo y registro de versiones de entorno, tal y como sugiere el propio autor, sin consumir recursos de GPU relevantes.
 - Pruebas de integración de adaptadores de carga personalizados: útil para verificar que el adaptador explícito que requieren las APIs genéricas funciona correctamente antes de aplicarlo a implementaciones mayores.
 
@@ -71,7 +71,7 @@ No disponible. No se han identificado modelos comparables publicados en la infor
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hydrahul/matching16 | 33.088 | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace |
+| hydrahul/matching16 | 33.088 | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,6 +87,6 @@ No disponible. No se han identificado modelos comparables publicados en la infor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hydrahul/matching16
+- Repositorio en Hugging Face: https://huggingface.co/hydrahul/matching16
 - Archivos incluidos en el repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados obtenidos no guardaban relación con el modelo.

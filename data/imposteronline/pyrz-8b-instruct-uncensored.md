@@ -96,6 +96,6 @@ Comparativa de rendimiento: no disponible, salvo el 52,4% en HumanEval declarado
 
 ## Enlaces
 
-- HuggingFace (repositorio principal): https://huggingface.co/ImposterOnline/Pyrz-8B-Instruct-Uncensored
+- Hugging Face (repositorio principal): https://huggingface.co/ImposterOnline/Pyrz-8B-Instruct-Uncensored
 - GGUF (referenciado en la model card): https://huggingface.co/ImposterOnline/Pyrex-8B-Instruct-Uncensored-GGUF
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada.

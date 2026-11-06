@@ -64,10 +64,10 @@ No disponible. Este repositorio no es un modelo preentrenado comparable con alte
 - No se han evaluado sesgos ni riesgos de alucinación, ya que no hay generación real de texto.
 - No se especifica la longitud de contexto ni los idiomas soportados, lo que impide cualquier uso práctico.
 - La licencia Apache-2.0 permite uso comercial, pero la model card advierte que deben revisarse los términos de las fuentes de datos externas si se usan con datasets.
-- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace, lo que limita su interoperabilidad.
+- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face, lo que limita su interoperabilidad.
 - Cualquier resultado futuro de un checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos en este repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/trevorwtw/simple-generation
+- Repositorio en Hugging Face: https://huggingface.co/trevorwtw/simple-generation
 - Paquete PyPI "simple-generation" (no directamente relacionado, pero aparece en la búsqueda): https://pypi.org/project/simple-generation/

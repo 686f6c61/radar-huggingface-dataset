@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch05 | 6,74 B | no disponible | Unlearning TOFU (forget10) | Llama 2 | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_llama2-7b | 6,74 B | 4096 (Llama 2) | Modelo base ajustado en TOFU completo, sin olvido | Llama 2 | HuggingFace, público |
-| locuslab/tofu_llama2-7b | 6,74 B | 4096 (Llama 2) | Modelo original sin ajuste fino en TOFU | Llama 2 | HuggingFace, público |
-| NousResearch/Llama-2-7b-chat-hf | 6,74 B | 4096 | Chat generalista, sin olvido | Llama 2 | HuggingFace, muy popular |
+| unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch05 | 6,74 B | no disponible | Unlearning TOFU (forget10) | Llama 2 | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_llama2-7b | 6,74 B | 4096 (Llama 2) | Modelo base ajustado en TOFU completo, sin olvido | Llama 2 | Hugging Face, público |
+| locuslab/tofu_llama2-7b | 6,74 B | 4096 (Llama 2) | Modelo original sin ajuste fino en TOFU | Llama 2 | Hugging Face, público |
+| NousResearch/Llama-2-7b-chat-hf | 6,74 B | 4096 | Chat generalista, sin olvido | Llama 2 | Hugging Face, muy popular |
 
 La comparación relevante es con `locuslab/tofu_ft_llama2-7b` (mismo backbone, sin olvido) y con `locuslab/tofu_llama2-7b` (modelo pre-ajuste). Frente a ellos, este checkpoint introduce el reset de embeddings y la pérdida IHL; el resto de alternativas de unlearning sobre TOFU (NPO, RMU, gradient ascent) no están identificadas en la información proporcionada, por lo que no se incluyen en la tabla.
 
@@ -90,7 +90,7 @@ La comparación relevante es con `locuslab/tofu_ft_llama2-7b` (mismo backbone, s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch05
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch05
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo original TOFU: https://huggingface.co/locuslab/tofu_llama2-7b
 - Modelo de inicialización de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf

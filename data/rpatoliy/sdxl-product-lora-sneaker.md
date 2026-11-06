@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rpatoliy/sdxl-product-lora-sneaker | LoRA DreamBooth sobre SDXL | adaptador rango 16 sobre SDXL (~3.500 M en UNet) | no aplica | openrail++ | HuggingFace, 0 descargas |
-| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base text-to-image | ~3.500 M (UNet) + VAE + text encoders | no aplica | openrail++ | HuggingFace, ampliamente usado |
-| LoRAs de producto personalizados (genericos) | Adaptadores DreamBooth sobre SDXL | variable (rango 8-64 tipico) | no aplica | variable | HuggingFace, Civitai, etc. |
+| rpatoliy/sdxl-product-lora-sneaker | LoRA DreamBooth sobre SDXL | adaptador rango 16 sobre SDXL (~3.500 M en UNet) | no aplica | openrail++ | Hugging Face, 0 descargas |
+| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base text-to-image | ~3.500 M (UNet) + VAE + text encoders | no aplica | openrail++ | Hugging Face, ampliamente usado |
+| LoRAs de producto personalizados (genericos) | Adaptadores DreamBooth sobre SDXL | variable (rango 8-64 tipico) | no aplica | variable | Hugging Face, Civitai, etc. |
 
 La comparativa cuantitativa de rendimiento no esta disponible: no hay benchmarks publicados para este LoRA ni para alternativas directas en la informacion proporcionada. La diferencia principal frente al SDXL base es la fidelidad al producto concreto; frente a otros LoRAs de producto, la singularidad es el codigo de entrenamiento abierto y el bajo coste de computo documentado.
 
@@ -83,7 +83,7 @@ La comparativa cuantitativa de rendimiento no esta disponible: no hay benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rpatoliy/sdxl-product-lora-sneaker
+- Modelo en Hugging Face: https://huggingface.co/rpatoliy/sdxl-product-lora-sneaker
 - Modelo base SDXL: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE fp16 fix: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
 - Dataset DreamBooth de Google: https://github.com/google/dreambooth

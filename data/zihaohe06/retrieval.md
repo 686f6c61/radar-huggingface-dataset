@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zihaohe06/retrieval` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada Mae, orientada a tareas de retrieval (recuperación de información multimodal o de similitud entre representaciones). Lo publica el usuario zihaohe06 y se distribuye con licencia MIT. No se trata de un modelo preentrenado listo para producción: la propia model card indica explícitamente que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests), revisión de código y experimentos controlados de pequeño tamaño.
+`zihaohe06/retrieval` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada Mae, orientada a tareas de retrieval (recuperación de información multimodal o de similitud entre representaciones). Lo publica el usuario zihaohe06 y se distribuye con licencia MIT. No se trata de un modelo preentrenado listo para producción: la propia model card indica explícitamente que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests), revisión de código y experimentos controlados de pequeño tamaño.
 
 El dato más relevante para evaluarlo es su tamaño: el recuento real de parámetros en `model.safetensors` es de 49.600 (aproximadamente 0,05 millones). Esto contrasta con la etiqueta "xlarge" que aparece en la configuración, que debe interpretarse como el nombre de una variante dentro del propio script y no como una indicación de escala absoluta. Con ese volumen de parámetros, el modelo no puede competir con sistemas de retrieval neuronales convencionales y su utilidad es fundamentalmente didáctica o de andamiaje experimental.
 
@@ -78,7 +78,7 @@ No disponible. La información proporcionada no incluye resultados ni especifica
 | Estado del checkpoint | Inicializacion sin entrenar | Modelos entrenados y publicados |
 | Benchmarks publicados | Ninguno | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | Repositorio HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | Repositorio Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ No disponible. La información proporcionada no incluye resultados ni especifica
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zihaohe06/retrieval
-- Listado de modelos de information retrieval en HuggingFace: https://huggingface.co/models?other=information-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/zihaohe06/retrieval
+- Listado de modelos de information retrieval en Hugging Face: https://huggingface.co/models?other=information-retrieval
 
 Nota: el resto de resultados de la búsqueda web (documentación de la API de OpenAI sobre recuperación de modelos, CivArchive, swift-ai-model-retriever) no guardan relación con este repositorio y no se incluyen como referencias del modelo.

@@ -84,7 +84,7 @@ El modelo base Qwen3-32B es la referencia natural: WAS/LLM añade cuantización 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WAS/LLM
+- Repositorio en Hugging Face: https://huggingface.co/WAS/LLM
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B
 - WAS Node Suite (nodo Language Model Loader): https://github.com/WASasquatch/was-node-suite-comfyui
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-32B/blob/main/LICENSE

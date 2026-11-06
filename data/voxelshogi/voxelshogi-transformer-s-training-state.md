@@ -2,9 +2,9 @@
 
 ## Resumen
 
-VoxelShogi Transformer S Training State es un artefacto de entrenamiento publicado por el usuario voxelshogi en HuggingFace. No se trata de un modelo listo para inferencia, sino de un *checkpoint* de estado de entrenamiento (training state) asociado a un modelo denominado "VoxelShogi Transformer S". El repositorio contiene pesos en formato PyTorch y está etiquetado con los términos "voxelshogi", "training-state" y "reproducibility", lo que sugiere que su propósito principal es permitir la reproducción de un proceso de entrenamiento concreto.
+VoxelShogi Transformer S Training State es un artefacto de entrenamiento publicado por el usuario voxelshogi en Hugging Face. No se trata de un modelo listo para inferencia, sino de un *checkpoint* de estado de entrenamiento (training state) asociado a un modelo denominado "VoxelShogi Transformer S". El repositorio contiene pesos en formato PyTorch y está etiquetado con los términos "voxelshogi", "training-state" y "reproducibility", lo que sugiere que su propósito principal es permitir la reproducción de un proceso de entrenamiento concreto.
 
-La relevancia de este repositorio es limitada para el público general: cuenta con 6 descargas, 0 likes y un tamaño de solo 0,1 GB, lo que indica un modelo de pequeña escala o un checkpoint parcial. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. No se dispone de información sobre arquitectura, número de parámetros, contexto, idiomas ni pipeline de uso.
+La relevancia de este repositorio es limitada para el público general: cuenta con 6 descargas, 0 likes y un tamaño de solo 0,1 GB, lo que indica un modelo de pequeña escala o un checkpoint parcial. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. No se dispone de información sobre arquitectura, número de parámetros, contexto, idiomas ni pipeline de uso.
 
 A fecha de la información disponible no se han publicado especificaciones técnicas, resultados de benchmarks ni documentación adicional que permitan evaluar el modelo como una alternativa viable a otros transformers de propósito general. Esta ficha recoge únicamente los datos verificables del repositorio y marca explícitamente como "no disponible" todo aquello que no ha sido publicado.
 
@@ -63,7 +63,7 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Limitaciones y advertencias
 
-- El repositorio está restringido (gated): es necesario aceptar condiciones en HuggingFace para acceder a los archivos.
+- El repositorio está restringido (gated): es necesario aceptar condiciones en Hugging Face para acceder a los archivos.
 - No es un modelo listo para producción: es un *training state*, no un checkpoint de inferencia documentado.
 - Ausencia total de documentación técnica: sin arquitectura, parámetros, contexto ni idiomas declarados.
 - Riesgo de incompatibilidad: al no especificarse la versión de PyTorch ni las dependencias, la carga del estado puede fallar en entornos distintos al original.
@@ -74,5 +74,5 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/voxelshogi/voxelshogi-transformer-s-training-state
+- Repositorio en Hugging Face: https://huggingface.co/voxelshogi/voxelshogi-transformer-s-training-state
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

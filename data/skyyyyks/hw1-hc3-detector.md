@@ -18,7 +18,7 @@ Su relevancia práctica es acotada y muy específica: por tamaño (23 millones d
 | Longitud de contexto | 256 tokens (truncacion en entrenamiento e inferencia); el encoder base admite hasta 512 posiciones |
 | Tipos de cuantizacion | No disponible: el repositorio solo publica pesos en safetensors (precision original); no hay variantes GGUF, AWQ ni GPTQ publicadas |
 | Idiomas soportados | Ingles (en) |
-| Licencia | No disponible: ni la model card ni los metadatos de HuggingFace especifican licencia |
+| Licencia | No disponible: ni la model card ni los metadatos de Hugging Face especifican licencia |
 | Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
@@ -70,9 +70,9 @@ Matrices de confusion (filas = etiqueta real, columnas = etiqueta predicha, orde
 
 | Modelo | Arquitectura y parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| skyyyyks/hw1-hc3-detector | MiniLM-L6, 22,7 M | 256 tokens | F1 macro 0,990788 en el test de HC3 de su propia particion | No disponible | safetensors en HuggingFace; 0 descargas |
-| Hello-SimpleAI/chatgpt-detector-roberta | RoBERTa-base, aproximadamente 125 M | No disponible | No disponible en esta ficha; entrenado tambien sobre HC3, por lo que las cifras no son directamente comparables sin usar la misma particion | No disponible | Pesos publicos en HuggingFace |
-| openai-community/roberta-base-openai-detector | RoBERTa-base, aproximadamente 125 M | No disponible | No disponible; orientado a salidas de GPT-2, no a ChatGPT | No disponible | Pesos publicos en HuggingFace |
+| skyyyyks/hw1-hc3-detector | MiniLM-L6, 22,7 M | 256 tokens | F1 macro 0,990788 en el test de HC3 de su propia particion | No disponible | safetensors en Hugging Face; 0 descargas |
+| Hello-SimpleAI/chatgpt-detector-roberta | RoBERTa-base, aproximadamente 125 M | No disponible | No disponible en esta ficha; entrenado tambien sobre HC3, por lo que las cifras no son directamente comparables sin usar la misma particion | No disponible | Pesos publicos en Hugging Face |
+| openai-community/roberta-base-openai-detector | RoBERTa-base, aproximadamente 125 M | No disponible | No disponible; orientado a salidas de GPT-2, no a ChatGPT | No disponible | Pesos publicos en Hugging Face |
 | Detectores basados en perplexidad (por ejemplo, DetectGPT) | Sin parametros propios; requieren un modelo de lenguaje auxiliar | Depende del modelo base | No disponible | Depende del modelo auxiliar | Implementaciones de investigacion |
 
 La comparacion cuantitativa entre estos modelos no es fiable con la informacion disponible: las cifras de este checkpoint proceden de una particion propia de HC3 y los otros detectores no publican resultados sobre esa misma particion en los datos consultados.
@@ -85,13 +85,13 @@ La comparacion cuantitativa entre estos modelos no es fiable con la informacion 
 - Se observan falsos positivos (43 respuestas humanas clasificadas como ChatGPT en el split de test). La model card indica explicitamente que las predicciones no deben usarse como evidencia de mala conducta academica.
 - Sesgos potenciales: el clasificador esta entrenado sobre respuestas en ingles y sobre el estilo de una version concreta de ChatGPT; puede penalizar estilos de escritura formales o no nativos, y no se ha evaluado su comportamiento por subgrupos demograficos.
 - Limitacion idiomatica: solo ingles. No se ha entrenado ni evaluado en castellano ni en otros idiomas.
-- Licencia no disponible: al no especificarse licencia en la model card ni en los metadatos de HuggingFace, no hay autorizacion explicita para uso comercial. Conviene contactar con el autor antes de cualquier despliegue en produccion.
+- Licencia no disponible: al no especificarse licencia en la model card ni en los metadatos de Hugging Face, no hay autorizacion explicita para uso comercial. Conviene contactar con el autor antes de cualquier despliegue en produccion.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y las fechas de creacion y actualizacion (2026-09-29) corresponden a un artefacto sin adopcion publica ni validacion externa; carece del respaldo de una evaluacion independiente.
 - Riesgo de alucinacion no aplicable en sentido estricto (es un clasificador, no un generador), pero si existe riesgo de clasificacion erronea con alta confianza sobre texto fuera de distribucion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skyyyyks/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/skyyyyks/hw1-hc3-detector
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Dataset HC3: https://huggingface.co/datasets/Hello-SimpleAI/HC3
 - Paper de HC3 (Guo et al., 2023): https://arxiv.org/abs/2301.07597

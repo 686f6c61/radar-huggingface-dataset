@@ -93,7 +93,7 @@ Diferencias clave: RelayS2S es un sistema compuesto (modelo duplex + verificador
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mailong225/relays2s
+- Modelo en Hugging Face: https://huggingface.co/mailong225/relays2s
 - Repositorio de codigo: no disponible (la model card contiene el marcador `<ADD REPO URL>` sin rellenar)
 - Paper: citado en la model card como "RelayS2S: Dual-Path Speculative Generation for Real-Time Dialogue" (2025) con eprint `XXXX.XXXXX`, un marcador de posicion sin identificador real de arXiv
 - Demos: no disponibles

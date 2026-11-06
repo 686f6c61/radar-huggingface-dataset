@@ -37,7 +37,7 @@ El entrenamiento consistió en SFT con LoRA (PEFT/TRL) sobre aproximadamente 40.
 - Procesamiento de imágenes: el repositorio incluye un proyector multimodal (`BF16-mmproj.gguf`) que habilita inferencia visión-lenguaje mediante `llama-mtmd-cli`.
 - Ejecución en modo texto puro mediante `llama-cli` con el flag `--jinja` para aplicar la plantilla de chat.
 - Comportamiento sin censura declarado por el autor, heredado del modelo base `gemma-4-E2B-it-Uncensored-MAX`.
-- Compatibilidad con endpoints (etiqueta `endpoints_compatible` en los metadatos de HuggingFace).
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible` en los metadatos de Hugging Face).
 - No se documentan capacidades de tool calling, function calling, razonamiento agéntico multi-paso, audio ni otros modos distintos de texto e imagen.
 
 ## Casos de uso
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) que permitan afirma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/orangejuicesmith/mythopus
+- Modelo en Hugging Face: https://huggingface.co/orangejuicesmith/mythopus
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Base sin censura: https://huggingface.co/prithivMLmods/gemma-4-E2B-it-Uncensored-MAX
 - Unsloth (herramienta de fine-tuning citada): https://github.com/unslothai/unsloth

@@ -60,5 +60,5 @@ No se dispone de información comparativa con otros modelos. Al ser un checkpoin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h084.sft-atcb.step_80
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h084.sft-atcb.step_80
 - No se han encontrado otros enlaces relevantes en la informacion proporcionada.

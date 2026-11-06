@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/eng-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500-nlpacked_seed3407` es un modelo de generacion de texto de 124.770.816 parametros publicado en HuggingFace por el usuario `francesca9805` (el registro de Weights & Biases asociado apunta a la Universidad de Groningen). Se trata de un fine-tuning mediante SFT con TRL 0.23.0 sobre el checkpoint `francesca9805/eng-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407`, del que hereda la arquitectura. La etiqueta `gpt2` en los metadatos y el uso de `pipeline("text-generation")` sitúan el modelo en la familia GPT-2 (transformer decoder-only con atencion causal).
+`francesca9805/eng-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500-nlpacked_seed3407` es un modelo de generacion de texto de 124.770.816 parametros publicado en Hugging Face por el usuario `francesca9805` (el registro de Weights & Biases asociado apunta a la Universidad de Groningen). Se trata de un fine-tuning mediante SFT con TRL 0.23.0 sobre el checkpoint `francesca9805/eng-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407`, del que hereda la arquitectura. La etiqueta `gpt2` en los metadatos y el uso de `pipeline("text-generation")` sitúan el modelo en la familia GPT-2 (transformer decoder-only con atencion causal).
 
 El modelo no es un lanzamiento de produccion: es un artefacto de investigacion con cero descargas y cero likes en el momento de la consulta, sin model card tecnica mas alla de la plantilla autogenerada por TRL. El identificador sugiere un corpus en ingles de aproximadamente 100 MB, secuencias empaquetadas (`packed`), precision bf16 (`bfdiso`) y una semilla fija (`seed3407`), pero estos extremos no estan documentados por el autor y deben tratarse como inferencia a partir del nombre, no como especificacion confirmada.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (`eng-latn-100mb-...-ckpt500`) | 124,77 M | No disponible | No disponible | HuggingFace, 0 descargas, sin cuantizaciones |
+| Este modelo (`eng-latn-100mb-...-ckpt500`) | 124,77 M | No disponible | No disponible | Hugging Face, 0 descargas, sin cuantizaciones |
 | GPT-2 (OpenAI) | 124 M | 1024 tokens | MIT (pesos publicados por OpenAI) | Amplia, con GGUF y variantes comunitarias |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache-2.0 | Amplia, con GGUF, integracion en transformers y llama.cpp |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache-2.0 | Amplia, con GGUF, integracion en transformers y llama.cpp |
 | Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache-2.0 | Amplia, con cuantizaciones oficiales |
 
 La comparacion relevante es de encaje, no de rendimiento: frente a GPT-2 small, SmolLM-135M y Qwen2.5-0.5B, este checkpoint no ofrece ventajas documentadas en contexto, licencia ni evaluacion, y carece de cuantizaciones publicadas. Su interes es exclusivamente como artefacto de investigacion reproducible.
@@ -85,7 +85,7 @@ La comparacion relevante es de encaje, no de rendimiento: frente a GPT-2 small, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eng-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500-nlpacked_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eng-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500-nlpacked_seed3407
 - Modelo base: https://huggingface.co/francesca9805/eng-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407
 - Run de Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/o2bo3fg4
 - Repositorio TRL: https://github.com/huggingface/trl

@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Typhoon2-Qwen2.5-7B-LBT-QA-adapters | 7B (base) + LoRA r64 | no disponible | QA fiscal tailandés con citas | Apache 2.0 | HuggingFace (adaptadores) |
-| Typhoon2-Qwen2.5-7B-Instruct | 7B | no disponible | Instrucciones generales en tailandés | no disponible en la información | HuggingFace (modelo base) |
-| Qwen2.5-7B-Instruct | 7B | no disponible en la información | Instrucciones generales multilingües | no disponible en la información | HuggingFace |
+| Typhoon2-Qwen2.5-7B-LBT-QA-adapters | 7B (base) + LoRA r64 | no disponible | QA fiscal tailandés con citas | Apache 2.0 | Hugging Face (adaptadores) |
+| Typhoon2-Qwen2.5-7B-Instruct | 7B | no disponible | Instrucciones generales en tailandés | no disponible en la información | Hugging Face (modelo base) |
+| Qwen2.5-7B-Instruct | 7B | no disponible en la información | Instrucciones generales multilingües | no disponible en la información | Hugging Face |
 
 La comparación se limita al modelo base y a la familia de la que deriva, ya que no se han proporcionado datos de rendimiento que permitan contrastar con alternativas especializadas en QA legal tailandés.
 
@@ -83,7 +83,7 @@ La comparación se limita al modelo base y a la familia de la que deriva, ya que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/monoboard/Typhoon2-Qwen2.5-7B-LBT-QA-adapters
+- Repositorio Hugging Face: https://huggingface.co/monoboard/Typhoon2-Qwen2.5-7B-LBT-QA-adapters
 - Modelo base: https://huggingface.co/scb10x/typhoon2-qwen2.5-7b-instruct
 - Modelo base alternativo referenciado en los tags: https://huggingface.co/typhoon-ai/typhoon2-qwen2.5-7b-instruct
 - Librería PEFT: https://github.com/huggingface/peft

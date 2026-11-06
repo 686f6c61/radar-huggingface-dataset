@@ -61,12 +61,12 @@ No se han encontrado modelos comparables en la informacion disponible. El reposi
 
 - **Checkpoint sin entrenar**: el `model.safetensors` es un checkpoint de inicializacion, no un modelo entrenado. No es util para ninguna tarea real hasta que se entrene con datos adecuados.
 - **Sin auditoria de robustez, equidad ni transferencia de dominio**: la documentacion indica explicitamente que el checkpoint no ha sido auditado para ninguna de estas dimensiones.
-- **Implementacion personalizada**: las APIs de carga genericas requieren un adaptador explicito, lo que dificulta su integracion en ecosistemas estandar como HuggingFace Transformers sin trabajo adicional.
+- **Implementacion personalizada**: las APIs de carga genericas requieren un adaptador explicito, lo que dificulta su integracion en ecosistemas estandar como Hugging Face Transformers sin trabajo adicional.
 - **Sin especificacion de idiomas ni contexto**: no se declara que idiomas soporta ni cual es la longitud de contexto, por lo que cualquier uso de produccion es inviable sin resolver estas incognitas.
 - **Sin rendimiento documentado**: no hay benchmarks ni metricas de velocidad. No es posible evaluar su calidad ni su eficiencia en la practica.
 - **Licencia MIT**: el codigo y los pesos son de uso libre, pero el autor recomienda revisar los terminos de los datos externos si se usan datasets adicionales. No se garantiza ningun soporte ni responsabilidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RyanKwokbury/matching
+- Hugging Face: https://huggingface.co/RyanKwokbury/matching
 - Repositorio y documentacion incluida en el modelo: archivos `README.md`, `predict.py`, `config.json`, `training_args.json`, `model.safetensors`.

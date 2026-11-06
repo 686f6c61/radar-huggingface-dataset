@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`the-tech-art/ai-content-detector` es un modelo de clasificación de texto publicado en HuggingFace por el usuario `the-tech-art`, orientado a detectar contenido generado por IA en documentos académicos y profesionales. No es un modelo generativo ni un LLM: el repositorio se distribuye en formato `joblib` y se integra en una aplicación completa ("VeritasDoc") que ingiere documentos, los analiza y produce informes con mapas de calor por frase. La model card describe un sistema de "consenso neural en tres capas" (Alpha, Beta y Gamma) que combina señales sintácticas, de cadencia generativa y de evasión adversarial.
+`the-tech-art/ai-content-detector` es un modelo de clasificación de texto publicado en Hugging Face por el usuario `the-tech-art`, orientado a detectar contenido generado por IA en documentos académicos y profesionales. No es un modelo generativo ni un LLM: el repositorio se distribuye en formato `joblib` y se integra en una aplicación completa ("VeritasDoc") que ingiere documentos, los analiza y produce informes con mapas de calor por frase. La model card describe un sistema de "consenso neural en tres capas" (Alpha, Beta y Gamma) que combina señales sintácticas, de cadencia generativa y de evasión adversarial.
 
 El modelo se presenta como herramienta forense con localización a nivel de frase, calibración Platt, una matriz de decisión de tres zonas, salvaguarda para hablantes no nativos (ESL) y exportación de certificados PDF con hash SHA-256. Según la información disponible, el repositorio tiene 0 descargas y 1 like, un tamaño de 0.0 GB y licencia MIT, con el inglés como único idioma declarado en los metadatos.
 
@@ -19,7 +19,7 @@ Es relevante ahora porque la detección de texto sintético se ha convertido en 
 | Idiomas soportados | Inglés (metadatos). La model card menciona soporte adicional para hindi, español, francés y alemán sin detallar alcance ni evaluación |
 | Licencia | MIT |
 | Formato de pesos | `joblib` (pipeline serializado). El repositorio no incluye `safetensors`, GGUF ni ONNX |
-| Pipeline de HuggingFace | `text-classification` |
+| Pipeline de Hugging Face | `text-classification` |
 | Tarea | Detección de texto generado por IA, con puntuación a nivel de documento y de frase |
 | Formatos de entrada | `.pdf`, `.docx`, `.doc`, `.pptx`, `.ppt`, `.rtf`, `.txt` |
 | Salida | Puntuación de probabilidad calibrada, mapa de calor por frase, tarjeta de explicabilidad, atribución de plataforma (según el autor) |
@@ -80,7 +80,7 @@ No se dispone de datos verificables de benchmarks ni de especificaciones técnic
 
 - **Detectores comerciales de texto IA** (por ejemplo, GPTZero u Originality.ai): licencia propietaria, API de pago, sin pesos publicados. Parámetros, contexto y rendimiento: no disponible.
 - **Detectores académicos basados en modelos tipo RoBERTa o DetectGPT:** requieren pesos y conjuntos de evaluación publicados. Parámetros, contexto y rendimiento: no disponible en esta búsqueda.
-- **Clasificadores genéricos de HuggingFace para `text-classification`:** comparables en formato de despliegue, pero no específicos para detección forense. Parámetros, contexto y rendimiento: no disponible.
+- **Clasificadores genéricos de Hugging Face para `text-classification`:** comparables en formato de despliegue, pero no específicos para detección forense. Parámetros, contexto y rendimiento: no disponible.
 
 | Solución | Tipo | Parámetros | Contexto | Licencia | Datos verificables |
 |---|---|---|---|---|---|
@@ -104,5 +104,5 @@ No se dispone de datos verificables de benchmarks ni de especificaciones técnic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/the-tech-art/ai-content-detector
+- Hugging Face: https://huggingface.co/the-tech-art/ai-content-detector
 - Resultados de búsqueda web: no se encontraron papers, blogs, repositorios ni demos relevantes; las entradas devueltas trataban sobre el artículo inglés "the" y tiendas de té, sin relación con el modelo.

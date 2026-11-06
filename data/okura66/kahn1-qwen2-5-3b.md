@@ -82,10 +82,10 @@ Latencia reportada: p50 = 58,6Â ms, p95 = 96,5Â ms, throughput real de 14,1 co
 
 | Modelo | Parametros | Contexto | SST-5 (exact match) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kahn1-Qwen2.5-3B | 3,09Â B | No disponible | 49,00Â % (off-by-one 95,79Â %) | Apache 2.0 | HuggingFace + GitHub |
+| Kahn1-Qwen2.5-3B | 3,09Â B | No disponible | 49,00Â % (off-by-one 95,79Â %) | Apache 2.0 | Hugging Face + GitHub |
 | Modelos RoBERTa especializados | No disponible | No disponible | 50-54Â % (segun la ficha del autor) | No disponible | No disponible |
 | LLMs frontera | No disponible | No disponible | 50-54Â % (segun la ficha del autor) | No disponible | No disponible |
-| Qwen/Qwen2.5-3B-Instruct (base) | ~3,09Â B | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| Qwen/Qwen2.5-3B-Instruct (base) | ~3,09Â B | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
 La ficha sitÃºa el techo de acuerdo inter-anotador humano en SST-5 en torno al 55-60Â % y seÃ±ala que tanto LLM frontera como modelos RoBERTa especializados se estancan en el 50-54Â % de coincidencia exacta, lo que enmarca el 49,00Â % de Kahn1 en ese rango. No se dispone de comparativas directas con otros motores de decisiÃ³n equivalentes.
 
@@ -104,7 +104,7 @@ La ficha sitÃºa el techo de acuerdo inter-anotador humano en SST-5 en torno al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Okura66/Kahn1-Qwen2.5-3B
+- Modelo en Hugging Face: https://huggingface.co/Okura66/Kahn1-Qwen2.5-3B
 - Adaptador LoRA (239Â MB): https://huggingface.co/Okura66/Kahn1-Qwen2.5-3B-LoRA
 - Repositorio GitHub del framework Kahn1 (SysOne): https://github.com/Okura66/kahn1
 - Licencia del repositorio: https://github.com/Okura66/kahn1/blob/main/LICENSE

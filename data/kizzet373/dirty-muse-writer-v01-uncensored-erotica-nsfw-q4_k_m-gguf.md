@@ -67,7 +67,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kizzet373/Dirty-Muse-Writer-v01-Uncensored-Erotica-NSFW-Q4_K_M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/kizzet373/Dirty-Muse-Writer-v01-Uncensored-Erotica-NSFW-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Mantis2024/Dirty-Muse-Writer-v01-Uncensored-Erotica-NSFW
 - Otra cuantización (i1-GGUF): https://huggingface.co/mradermacher/Dirty-Muse-Writer-v01-Uncensored-Erotica-NSFW-i1-GGUF
 - Página de referencia (local-ai-zone): https://local-ai-zone.github.io/models/dirty-muse-writer-v01-uncensored-erotica-nsfw-i1.html

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `empirical_information_redistributed_spread_200m_dmodel2_4_6` es un transformer causal de juguete (tiny causal transformer) publicado por el usuario `eoinf` en HuggingFace. Forma parte de una cuadricula de experimentos (experiment grid) en la que se entrenan modelos con valores de `d_model` de 2, 4 y 6, una sola semilla por anchura, un vocabulario de 4096 tokens y una longitud de contexto de 256 tokens. El horizonte nominal de entrenamiento es de 1.999.998.976 tokens por modelo, con paradas tempranas registradas en los ficheros de metadatos de cada ejecucion.
+El modelo `empirical_information_redistributed_spread_200m_dmodel2_4_6` es un transformer causal de juguete (tiny causal transformer) publicado por el usuario `eoinf` en Hugging Face. Forma parte de una cuadricula de experimentos (experiment grid) en la que se entrenan modelos con valores de `d_model` de 2, 4 y 6, una sola semilla por anchura, un vocabulario de 4096 tokens y una longitud de contexto de 256 tokens. El horizonte nominal de entrenamiento es de 1.999.998.976 tokens por modelo, con paradas tempranas registradas en los ficheros de metadatos de cada ejecucion.
 
 No se trata de un modelo de proposito general ni de un modelo destinado a produccion: es un artefacto de investigacion disenado para estudiar el comportamiento empirico de transformers con dimensiones ocultas extremadamente reducidas (2, 4 y 6 dimensiones). Su relevancia es, por tanto, metodologica: permite analizar como se distribuye y redistribuye la informacion en arquitecturas de atencion cuando la capacidad del modelo es minima, y sirve como banco de pruebas reproducible para hipotesis sobre entrenamiento, tokenizacion y dinamica de representaciones.
 
@@ -75,6 +75,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/empirical_information_redistributed_spread_200m_dmodel2_4_6
+- Hugging Face: https://huggingface.co/eoinf/empirical_information_redistributed_spread_200m_dmodel2_4_6
 - Repositorio de codigo de arquitectura y carga: `synthetic_trigrams` (referenciado en la model card; no se proporciona URL en la informacion disponible)
 - Ficheros de configuracion y metadatos: `configuration.json`, `grid_summary.json`, `result.json` (incluidos en el repositorio del modelo)

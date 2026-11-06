@@ -79,7 +79,7 @@ La comparativa se basa en el conocimiento general de los modelos de la familia s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JONNYVERSE/ms-marco-MiniLM-L-6-v2
+- Repositorio Hugging Face: https://huggingface.co/JONNYVERSE/ms-marco-MiniLM-L-6-v2
 - Modelo original: https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js
 - Guía de Optimum para ONNX: https://huggingface.co/docs/optimum/index

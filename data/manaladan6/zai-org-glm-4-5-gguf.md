@@ -74,6 +74,6 @@ GLM-4.5-Air es la variante ligera de la misma familia, con 106 mil millones de p
 ## Enlaces
 
 - Repositorio del modelo cuantizado GGUF: https://huggingface.co/manaladan6/zai-org.GLM-4.5-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-4.5
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-4.5
 - Repositorio GitHub de GLM-4.5: https://github.com/zai-org/GLM-4.5
 - Blog de presentación de GLM-4.5: https://z.ai/blog/glm-4.5

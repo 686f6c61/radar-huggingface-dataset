@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Vihaan-singh/classification` es un repositorio de HuggingFace publicado por el usuario Vihaan-singh que contiene una implementación propia y mínima en PyTorch de una arquitectura etiquetada como **ALBEF** (Align Before Fuse), orientada a tareas de clasificación. No se trata de un modelo preentrenado ni de una release lista para producción: la propia model card lo describe como un esqueleto para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados.
+`Vihaan-singh/classification` es un repositorio de Hugging Face publicado por el usuario Vihaan-singh que contiene una implementación propia y mínima en PyTorch de una arquitectura etiquetada como **ALBEF** (Align Before Fuse), orientada a tareas de clasificación. No se trata de un modelo preentrenado ni de una release lista para producción: la propia model card lo describe como un esqueleto para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados.
 
 El peso real del checkpoint, según los metadatos de safetensors, es de **49.600 parámetros totales** (aproximadamente 0,05 M), una cifra que contradice la etiqueta "base" que aparece en la configuración y que sitúa al artefacto muy lejos de cualquier modelo utilizable en inferencia real. El repositorio incluye `eval.py` como artefacto principal, `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de entrenamiento por defecto y `model.safetensors` como inicialización válida pero **no entrenada**.
 
@@ -42,11 +42,11 @@ No hay evidencia de entrenamiento: el autor indica explícitamente que el checkp
 
 - **Prueba de humo de pipelines de CI**: usar `eval.py` como target de un job que verifique que el entorno de PyTorch, la carga de safetensors y la inicialización del grafo funcionan antes de desplegar modelos reales.
 - **Revisión de código de arquitecturas de fusión**: el repositorio sirve como referencia compacta para estudiar cómo se implementan *grouped query attention* y *co-attention* en un fichero único, útil en docencia o en revisión entre pares.
-- **Desarrollo de adaptadores de carga**: dado que las APIs automáticas de HuggingFace no lo cargan sin adaptador, es un caso de prueba realista para escribir y validar *wrappers* propios de `from_pretrained`.
+- **Desarrollo de adaptadores de carga**: dado que las APIs automáticas de Hugging Face no lo cargan sin adaptador, es un caso de prueba realista para escribir y validar *wrappers* propios de `from_pretrained`.
 - **Banco de pruebas de recetas de entrenamiento**: `training_args.json` permite experimentar con RMSprop y *warmup* constante sobre un modelo diminuto (49.600 parámetros) que entrena en CPU en segundos, controlando semillas y presupuesto de ajuste.
 - **Test de regresión de serialización**: valida que el ciclo guardar/cargar en safetensors conserva formas y nombres de tensores en una arquitectura no estándar.
 - **Plantilla para publicaciones internas**: sirve de esqueleto para que un equipo estructure su propio repo (config, training args, script de evaluación, checkpoint de inicialización) antes de publicar un modelo entrenado de verdad.
-- **Auditoría de repositorios de HuggingFace**: caso práctico para formar a un equipo en detectar señales de alarma (0 likes, 12 descargas, sin pipeline, sin benchmarks, parámetros inconsistentes con la escala declarada).
+- **Auditoría de repositorios de Hugging Face**: caso práctico para formar a un equipo en detectar señales de alarma (0 likes, 12 descargas, sin pipeline, sin benchmarks, parámetros inconsistentes con la escala declarada).
 
 ## Benchmarks y rendimiento
 
@@ -66,7 +66,7 @@ No se dispone de datos verificables de alternativas en la informacion proporcion
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vihaan-singh/classification | 49.600 | no disponible | sin benchmarks; checkpoint no entrenado | MIT | repo HuggingFace, 12 descargas |
+| Vihaan-singh/classification | 49.600 | no disponible | sin benchmarks; checkpoint no entrenado | MIT | repo Hugging Face, 12 descargas |
 | Alternativas de clasificación vision-lenguaje (familia ALBEF/BLIP) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 La comparación rigurosa exigiría fijar una tarea concreta con un *split* etiquetado, evaluar al menos tres semillas y usar una línea base de capacidad equivalente, tal y como recomienda el propio autor.
@@ -85,5 +85,5 @@ La comparación rigurosa exigiría fijar una tarea concreta con un *split* etiqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vihaan-singh/classification
+- Repositorio en Hugging Face: https://huggingface.co/Vihaan-singh/classification
 - No se han encontrado en la busqueda web papers, blogs, repositorios auxiliares ni demos asociados a este modelo.

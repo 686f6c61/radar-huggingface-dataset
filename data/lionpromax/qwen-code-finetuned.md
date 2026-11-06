@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QwenCoder 3B Custom v1 es un ajuste fino experimental orientado a codigo sobre Qwen2.5-Coder-3B-Instruct, publicado por el usuario lionpromax en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un fine-tune con QLoRA/LoRA (rango 16) sobre el modelo base de Alibaba, con un conjunto de entrenamiento muy reducido: 1.024 ejemplos muestreados de dos datasets publicos de instrucciones de codigo (Magicoder OSS Instruct 75K y CodeFeedback Filtered Instruction), durante una sola epoca y 128 pasos sobre una GPU NVIDIA Tesla T4.
+QwenCoder 3B Custom v1 es un ajuste fino experimental orientado a codigo sobre Qwen2.5-Coder-3B-Instruct, publicado por el usuario lionpromax en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un fine-tune con QLoRA/LoRA (rango 16) sobre el modelo base de Alibaba, con un conjunto de entrenamiento muy reducido: 1.024 ejemplos muestreados de dos datasets publicos de instrucciones de codigo (Magicoder OSS Instruct 75K y CodeFeedback Filtered Instruction), durante una sola epoca y 128 pasos sobre una GPU NVIDIA Tesla T4.
 
 El modelo conserva la arquitectura Qwen2 del original, con 3.085.938.688 parametros (aproximadamente 3,1 mil millones) y una ventana de contexto que hereda del modelo base. Se distribuye en dos formatos: pesos fusionados en FP16 en el directorio raiz (compatibles con Transformers) y una cuantizacion GGUF Q4_K_M de aproximadamente 1,8 GB en el subdirectorio `gguf`, con un Modelfile para Ollama.
 
@@ -81,7 +81,7 @@ La comparacion cuantitativa de rendimiento no esta disponible: el fine-tune no p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lionpromax/qwen-code-finetuned
+- Modelo en Hugging Face: https://huggingface.co/lionpromax/qwen-code-finetuned
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
 - Dataset Magicoder OSS Instruct 75K: https://huggingface.co/datasets/ise-uiuc/Magicoder-OSS-Instruct-75K
 - Dataset CodeFeedback Filtered Instruction: https://huggingface.co/datasets/m-a-p/CodeFeedback-Filtered-Instruction

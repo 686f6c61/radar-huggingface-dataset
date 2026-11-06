@@ -25,7 +25,7 @@ La relevancia de esta ficha radica en que permite ejecutar un modelo de 12B en h
 
 No se dispone de informacion sobre la arquitectura interna del modelo base en la documentacion proporcionada. El nombre "Gemma-4" sugiere una derivacion de la familia Gemma, y el sufijo "GPT-4o" podria indicar un ajuste fino orientado a conversacion o destilacion, pero ninguno de estos extremos esta confirmado en la informacion disponible. El modelo esta etiquetado como conversacional y de vision, lo que implica soporte de entrada multimodal, aunque no se detalla el codificador visual ni el esquema de fusion.
 
-Respecto al entrenamiento, no se han publicado datos sobre numero de tokens, composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO o ajuste supervisado. La unica informacion tecnica concreta es el proceso de cuantizacion: mradermacher ha generado cuantizaciones ponderadas por imatrix (importancia de matriz) a partir de los pesos en formato HuggingFace, con conversion a GGUF y cuantizacion de tensores de salida. Se indica que los ficheros mmproj (necesarios para la parte visual en llama.cpp) se encuentran en el repositorio estatico hermano, no en este.
+Respecto al entrenamiento, no se han publicado datos sobre numero de tokens, composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO o ajuste supervisado. La unica informacion tecnica concreta es el proceso de cuantizacion: mradermacher ha generado cuantizaciones ponderadas por imatrix (importancia de matriz) a partir de los pesos en formato Hugging Face, con conversion a GGUF y cuantizacion de tensores de salida. Se indica que los ficheros mmproj (necesarios para la parte visual en llama.cpp) se encuentran en el repositorio estatico hermano, no en este.
 
 ## Capacidades
 

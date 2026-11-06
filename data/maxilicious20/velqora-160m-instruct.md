@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci√
 | Modelo | Par√°metros | Contexto | Licencia | Formato / compatibilidad | Rendimiento |
 |---|---:|---:|---|---|---|
 | Velqora-160M-Instruct | 158,6M | 2.048 | Apache 2.0 | PyTorch propio, GGUF separado | MMLU 23,13% (protocolo local, incompleto) |
-| SmolLM-135M-Instruct (HuggingFace) | 135M | 2.048 | Apache 2.0 | `transformers`, GGUF, llama.cpp | No disponible en esta ficha |
+| SmolLM-135M-Instruct (Hugging Face) | 135M | 2.048 | Apache 2.0 | `transformers`, GGUF, llama.cpp | No disponible en esta ficha |
 | Qwen2.5-0.5B-Instruct (Alibaba) | ~494M | 32.768 | Apache 2.0 | `transformers`, GGUF, vLLM | No disponible en esta ficha |
 | TinyLlama-1.1B-Chat (TinyLlama) | ~1,1B | 2.048 | Apache 2.0 | `transformers`, GGUF, vLLM | No disponible en esta ficha |
 
@@ -110,7 +110,7 @@ La diferencia principal frente a estas alternativas no es el rendimiento, sino l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maxilicious20/Velqora-160M-Instruct
+- Modelo en Hugging Face: https://huggingface.co/Maxilicious20/Velqora-160M-Instruct
 - Companion GGUF: https://huggingface.co/Maxilicious20/Velqora-160M-Instruct-GGUF
 - Perfil del autor: https://huggingface.co/Maxilicious20
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

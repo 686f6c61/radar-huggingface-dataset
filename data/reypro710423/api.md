@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `reypro710423/api` en HuggingFace no contiene información sustancial sobre ningún modelo de IA. La model card únicamente declara la licencia `openrail` y no incluye descripción, arquitectura, parámetros, datos de entrenamiento ni ningún otro detalle técnico. El repositorio fue creado el 26 de agosto de 2026 y no registra descargas ni interacciones. No se ha publicado ningún artefacto de modelo, pesos, tokenizador o documentación que permita identificar qué modelo aloja o si realmente contiene un modelo. Por tanto, no es posible evaluar sus capacidades, rendimiento o requisitos de hardware. Se trata probablemente de un repositorio vacío o un marcador de posición sin contenido útil para desarrolladores o investigadores.
+El repositorio `reypro710423/api` en Hugging Face no contiene información sustancial sobre ningún modelo de IA. La model card únicamente declara la licencia `openrail` y no incluye descripción, arquitectura, parámetros, datos de entrenamiento ni ningún otro detalle técnico. El repositorio fue creado el 26 de agosto de 2026 y no registra descargas ni interacciones. No se ha publicado ningún artefacto de modelo, pesos, tokenizador o documentación que permita identificar qué modelo aloja o si realmente contiene un modelo. Por tanto, no es posible evaluar sus capacidades, rendimiento o requisitos de hardware. Se trata probablemente de un repositorio vacío o un marcador de posición sin contenido útil para desarrolladores o investigadores.
 
 ## Especificaciones tecnicas
 
@@ -53,4 +53,4 @@ No disponible. No se puede comparar con alternativas porque no se conoce la iden
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/reypro710423/api
+- Repositorio en Hugging Face: https://huggingface.co/reypro710423/api

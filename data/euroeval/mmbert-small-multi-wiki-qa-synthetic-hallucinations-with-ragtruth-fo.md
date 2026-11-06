@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 - VRAM estimada: con 140,6 millones de parámetros, el modelo en precisión fp32 ocupa aproximadamente 562 MB de memoria. En fp16, unos 281 MB. Con overhead de inferencia, cabría en GPUs con 2 GB de VRAM o incluso en CPU.
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM (p. ej., NVIDIA GTX 1650, RTX 2060, o superiores). También es viable en CPU para inferencia por lotes pequeños.
-- Despliegue: compatible con la librería `transformers` de HuggingFace. Se puede servir mediante `text-classification` pipeline o con herramientas como vLLM o TGI si se convierte a formatos adecuados, aunque no se ha verificado su compatibilidad.
+- Despliegue: compatible con la librería `transformers` de Hugging Face. Se puede servir mediante `text-classification` pipeline o con herramientas como vLLM o TGI si se convierte a formatos adecuados, aunque no se ha verificado su compatibilidad.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -66,6 +66,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-fo](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-fo)
+- [Hugging Face - EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-fo](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-fo)
 
 No se han encontrado otros enlaces (papers, repositorios, demos) en la información disponible.

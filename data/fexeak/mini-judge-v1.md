@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mini-judge-v1 es un clasificador especializado de 0,6B parámetros desarrollado por el usuario de HuggingFace fexeak, publicado en octubre de 2026. Se trata de un ajuste fino completo (full SFT) del modelo Qwen3-0.6B de Alibaba, diseñado para resolver un problema muy concreto en sistemas conversacionales y agentes: determinar si la última respuesta de un asistente está presentando al usuario opciones mutuamente excluyentes para que elija (un formato de pregunta que puede disparar un tool call o una UI de selección), si está esperando una respuesta abierta, o si simplemente no está esperando ninguna decisión del usuario.
+mini-judge-v1 es un clasificador especializado de 0,6B parámetros desarrollado por el usuario de Hugging Face fexeak, publicado en octubre de 2026. Se trata de un ajuste fino completo (full SFT) del modelo Qwen3-0.6B de Alibaba, diseñado para resolver un problema muy concreto en sistemas conversacionales y agentes: determinar si la última respuesta de un asistente está presentando al usuario opciones mutuamente excluyentes para que elija (un formato de pregunta que puede disparar un tool call o una UI de selección), si está esperando una respuesta abierta, o si simplemente no está esperando ninguna decisión del usuario.
 
 El modelo solo juzga la forma de la pregunta, no su pertinencia. Su relevancia radica en el routing de agentes: los frameworks que orquestan LLM necesitan decidir de forma barata y rápida si deben renderizar botones de selección, esperar input libre o continuar el flujo sin intervención. Un modelo de 0,6B con latencias de decenas de milisegundos en GPU de consumo es idóneo para esta tarea en comparación con usar un LLM grande como juez. El autor publica métricas F1 por encima de 0,92 en las tres clases, muy por encima de una línea base basada en reglas.
 
@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks genericos (MMLU, HumanEval, GSM8K),
 
 | Modelo | Parametros | Contexto util | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mini-judge-v1 | 596M | 8192 | Clasificador de forma de pregunta (3 clases) | Apache-2.0 | HuggingFace, safetensors |
-| Qwen/Qwen3-0.6B (base) | 596M | 40960 (declarado) | LLM general instruct | Apache-2.0 | HuggingFace, safetensors |
-| LLM grande como juez (p. ej. Qwen3-8B o similar via prompt) | 4-8B | variable | Clasificacion por prompting | varia | HuggingFace |
+| mini-judge-v1 | 596M | 8192 | Clasificador de forma de pregunta (3 clases) | Apache-2.0 | Hugging Face, safetensors |
+| Qwen/Qwen3-0.6B (base) | 596M | 40960 (declarado) | LLM general instruct | Apache-2.0 | Hugging Face, safetensors |
+| LLM grande como juez (p. ej. Qwen3-8B o similar via prompt) | 4-8B | variable | Clasificacion por prompting | varia | Hugging Face |
 
 La alternativa habitual a este modelo es usar un LLM general con un prompt de clasificacion, lo que multiplica por 10 o mas la latencia y el coste de VRAM a cambio de mayor flexibilidad ante inputs fuera de distribucion. No existen otros clasificadores publicos equivalentes y especializados en esta tarea exacta en la informacion disponible.
 
@@ -99,7 +99,7 @@ La alternativa habitual a este modelo es usar un LLM general con un prompt de cl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fexeak/mini-judge-v1
+- Modelo en Hugging Face: https://huggingface.co/fexeak/mini-judge-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Licencia Apache-2.0 del repositorio: https://huggingface.co/fexeak/mini-judge-v1/blob/main/LICENSE
 - Aviso de atribucion (NOTICE): https://huggingface.co/fexeak/mini-judge-v1/blob/main/NOTICE

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-shotgrep-models es un repositorio de HuggingFace mantenido por el usuario TheFrenchOak que no contiene un modelo generativo, sino un paquete de cuatro exportaciones ONNX (3,5 GB en total) que la aplicación de escritorio shotgrep descarga en su primer arranque. Los componentes son un detector de cortes de plano (`transnet`, pesos TransNetV2 en fp32, 31 MB), dos codificadores SigLIP 2 so400m-patch14-384 exportados por separado (`siglip_image`, 857 MB, y `siglip_text`, 1451 MB, ambos en fp16) y el modelo de embeddings de texto BGE-M3 (1151 MB, fp16).
+shotgrep-models es un repositorio de Hugging Face mantenido por el usuario TheFrenchOak que no contiene un modelo generativo, sino un paquete de cuatro exportaciones ONNX (3,5 GB en total) que la aplicación de escritorio shotgrep descarga en su primer arranque. Los componentes son un detector de cortes de plano (`transnet`, pesos TransNetV2 en fp32, 31 MB), dos codificadores SigLIP 2 so400m-patch14-384 exportados por separado (`siglip_image`, 857 MB, y `siglip_text`, 1451 MB, ambos en fp16) y el modelo de embeddings de texto BGE-M3 (1151 MB, fp16).
 
 El propósito del paquete es servir de distribución de pesos para un pipeline de análisis y búsqueda local de vídeo: detección de cambios de plano, generación de embeddings visuales y generación de embeddings de texto para recuperación cruzada entre ambos dominios. Cada artefacto conserva la licencia de sus pesos originales (MIT para TransNetV2 y BGE-M3, Apache-2.0 para SigLIP 2), de ahí que la licencia declarada del repositorio sea "other" con nombre "mixed".
 
@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo o paquete | Tipo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TheFrenchOak/shotgrep-models | Paquete de 4 exportaciones ONNX | no disponible | no disponible | Mixta (MIT y Apache-2.0) | ONNX | HuggingFace; 0 descargas y 0 likes |
-| google/siglip2-so400m-patch14-384 | Codificadores de imagen y texto | no disponible | no disponible | Apache-2.0 | PyTorch / safetensors | HuggingFace (origen de dos de los componentes) |
-| BAAI/bge-m3 | Embeddings de texto | no disponible | no disponible | MIT | PyTorch / ONNX | HuggingFace (origen de `bge_m3`) |
+| TheFrenchOak/shotgrep-models | Paquete de 4 exportaciones ONNX | no disponible | no disponible | Mixta (MIT y Apache-2.0) | ONNX | Hugging Face; 0 descargas y 0 likes |
+| google/siglip2-so400m-patch14-384 | Codificadores de imagen y texto | no disponible | no disponible | Apache-2.0 | PyTorch / safetensors | Hugging Face (origen de dos de los componentes) |
+| BAAI/bge-m3 | Embeddings de texto | no disponible | no disponible | MIT | PyTorch / ONNX | Hugging Face (origen de `bge_m3`) |
 | TransNetV2 (`transnetv2_pytorch`) | Detección de cortes de plano | no disponible | no aplica | MIT | PyTorch (`.pth`) | Paquete de Python (origen de `transnet`) |
 
 La comparación relevante no es de rendimiento, sino de empaquetado: frente a los repositorios de origen en PyTorch, este paquete ofrece los mismos pesos ya convertidos a ONNX en fp32 o fp16, con verificación por hash, a cambio de no publicar métricas ni garantías de funcionamiento independiente. No se dispone de datos de benchmarks que permitan comparar la calidad de estos componentes con alternativas de la misma categoría.
@@ -102,7 +102,7 @@ La comparación relevante no es de rendimiento, sino de empaquetado: frente a lo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TheFrenchOak/shotgrep-models
+- Repositorio en Hugging Face: https://huggingface.co/TheFrenchOak/shotgrep-models
 - Sección de licencias del repositorio: https://huggingface.co/TheFrenchOak/shotgrep-models#licences
 - Modelo de origen de `siglip_image` y `siglip_text`: https://huggingface.co/google/siglip2-so400m-patch14-384
 - Modelo de origen de `bge_m3`: https://huggingface.co/BAAI/bge-m3

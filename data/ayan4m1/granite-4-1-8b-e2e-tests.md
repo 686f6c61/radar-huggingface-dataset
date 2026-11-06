@@ -81,7 +81,7 @@ La comparacion se basa en datos publicos de los modelos oficiales; el repositori
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ayan4m1/Granite-4.1-8B-E2E-Tests
+- Repositorio Hugging Face: https://huggingface.co/ayan4m1/Granite-4.1-8B-E2E-Tests
 - Documentacion oficial de IBM Granite 4.1: https://www.ibm.com/granite/docs/models/granite4-1
 - Repositorio GitHub de IBM Granite 4.1: https://github.com/ibm-granite/granite-4.1-language-models/blob/main/README.md
 - Pagina oficial de IBM Granite: https://www.ibm.com/granite

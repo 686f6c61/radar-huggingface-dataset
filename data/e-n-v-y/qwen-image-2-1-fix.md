@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Fix es un adaptador LoRA publicado en HuggingFace por el usuario e-n-v-y, pensado para usarse junto con el modelo de difusión de generación de imágenes Qwen/Qwen-Image-2.1. No es un modelo autónomo: se trata de un conjunto de pesos de bajo rango (el repositorio ocupa 0,3 GB) que se carga sobre el modelo base para modificar su comportamiento durante la inferencia. El pipeline declarado es text-to-image y la librería de referencia es diffusers. En el momento de la consulta acumula 337 descargas y 30 likes, con fecha de creación y última actualización del 22 de septiembre de 2026.
+Qwen-Image-2.1-Fix es un adaptador LoRA publicado en Hugging Face por el usuario e-n-v-y, pensado para usarse junto con el modelo de difusión de generación de imágenes Qwen/Qwen-Image-2.1. No es un modelo autónomo: se trata de un conjunto de pesos de bajo rango (el repositorio ocupa 0,3 GB) que se carga sobre el modelo base para modificar su comportamiento durante la inferencia. El pipeline declarado es text-to-image y la librería de referencia es diffusers. En el momento de la consulta acumula 337 descargas y 30 likes, con fecha de creación y última actualización del 22 de septiembre de 2026.
 
 El problema que declara resolver el autor es concreto: según la model card, el LoRA "corrige la mayoría de los problemas de generación de imágenes" de Qwen Image 2.1 cuando se utiliza con los ajustes adecuados. Para ello el autor distribuye un archivo zip con el workflow y los parámetros recomendados, y acompaña la ficha con imágenes comparativas entre la generación "vanilla" sin LoRA y la generación con el LoRA y dichos ajustes. No se especifica qué tipo de artefactos o errores concretos corrige, ni se aportan métricas objetivas.
 
@@ -54,7 +54,7 @@ No se dispone de ningun dato sobre el proceso de entrenamiento: no se indica el 
 - Evaluacion comparativa A/B de calidad visual: la ficha incluye pares de imagenes generadas con y sin el adaptador, lo que permite a un equipo valorar el efecto del LoRA antes de adoptarlo en su pipeline.
 - Integracion en pipelines de diffusers: al publicarse en formato diffusers, puede cargarse mediante la API de la libreria y encadenarse con los pasos de preprocesado y postprocesado ya existentes en un servicio de generacion de imagenes.
 - Prototipado rapido de assets graficos: equipos de diseno o marketing que ya usen Qwen-Image-2.1 pueden aplicar el adaptador para obtener bocetos de ilustracion con menos iteraciones manuales de retoque.
-- Referencia para entrenamiento de adaptadores propios: el repositorio sirve como ejemplo de estructura, tags y formato de publicacion de un LoRA correctivo en HuggingFace, util como plantilla para equipos que quieran publicar sus propios ajustes.
+- Referencia para entrenamiento de adaptadores propios: el repositorio sirve como ejemplo de estructura, tags y formato de publicacion de un LoRA correctivo en Hugging Face, util como plantilla para equipos que quieran publicar sus propios ajustes.
 - Investigacion sobre correccion de artefactos en modelos de difusion: permite estudiar empiricamente como un LoRA de bajo rango modifica la distribucion de salidas de un modelo text-to-image, aunque requerira generar un conjunto de evaluacion propio al no existir metricas publicadas.
 - Despliegue en entornos con VRAM limitada: al anadir un unico adaptador de 0,3 GB, el coste adicional de memoria frente al modelo base es marginal, lo que facilita su adopcion en infraestructuras ya dimensionadas para Qwen-Image-2.1.
 
@@ -77,8 +77,8 @@ La model card no incluye metricas objetivas (FID, CLIP score, ImageReward, evalu
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| e-n-v-y/Qwen-Image-2.1-Fix (este adaptador) | no disponible (repo de 0,3 GB) | no aplica | sin benchmarks; solo comparativas visuales del autor | no disponible | HuggingFace, 337 descargas, 30 likes |
-| Qwen/Qwen-Image-2.1 (modelo base, sin LoRA) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace, referenciado como base_model |
+| e-n-v-y/Qwen-Image-2.1-Fix (este adaptador) | no disponible (repo de 0,3 GB) | no aplica | sin benchmarks; solo comparativas visuales del autor | no disponible | Hugging Face, 337 descargas, 30 likes |
+| Qwen/Qwen-Image-2.1 (modelo base, sin LoRA) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face, referenciado como base_model |
 | Otros adaptadores LoRA de correccion para modelos de difusion | no disponible | no disponible | no disponible | no disponible | no se han identificado alternativas concretas en la informacion proporcionada |
 
 La busqueda web realizada no ha devuelto informacion util sobre este modelo ni sobre adaptadores comparables, por lo que no es posible establecer una comparativa cuantitativa con alternativas de la misma categoria.
@@ -98,7 +98,7 @@ La busqueda web realizada no ha devuelto informacion util sobre este modelo ni s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/e-n-v-y/Qwen-Image-2.1-Fix
+- Repositorio en Hugging Face: https://huggingface.co/e-n-v-y/Qwen-Image-2.1-Fix
 - Ficheros y versiones del modelo: https://huggingface.co/e-n-v-y/Qwen-Image-2.1-Fix/tree/main
 - Modelo base Qwen/Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Paper, blog, repositorio de codigo o demo adicionales: no se han encontrado enlaces relevantes en la busqueda web realizada.

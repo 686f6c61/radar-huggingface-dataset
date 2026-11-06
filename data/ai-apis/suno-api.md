@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AI-APIs/Suno-API no es un modelo open source, sino una capa de documentación y acceso por API REST al servicio de generación musical de Suno, un modelo cerrado y propietario. La ficha de HuggingFace actúa como una interfaz de referencia para desarrolladores que deseen integrar generación de música mediante llamadas HTTP, sin necesidad de gestionar infraestructura de inferencia. El servicio expone la línea actual de Suno (versiones V4 a V5.5) y permite generar dos pistas por trabajo, con letras automáticas o personalizadas, y acciones posteriores como extender, hacer covers, añadir voces o separar stems.
+AI-APIs/Suno-API no es un modelo open source, sino una capa de documentación y acceso por API REST al servicio de generación musical de Suno, un modelo cerrado y propietario. La ficha de Hugging Face actúa como una interfaz de referencia para desarrolladores que deseen integrar generación de música mediante llamadas HTTP, sin necesidad de gestionar infraestructura de inferencia. El servicio expone la línea actual de Suno (versiones V4 a V5.5) y permite generar dos pistas por trabajo, con letras automáticas o personalizadas, y acciones posteriores como extender, hacer covers, añadir voces o separar stems.
 
 La relevancia de esta ficha radica en que Suno no ofrece una API pública oficial, por lo que este repositorio documenta cómo consumir el modelo a través de un proveedor intermediario (Apiframe). No se distribuyen pesos, no hay ejecución local y la inferencia se realiza de forma remota. Para desarrolladores que buscan integrar música generada por IA en aplicaciones, esta API proporciona una vía práctica, aunque sujeta a los términos comerciales de Suno y a la disponibilidad del servicio externo.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha radica en que Suno no ofrece una API pública oficia
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información pública sobre la arquitectura interna del modelo Suno. Es un sistema cerrado, sin pesos descargables ni documentación técnica sobre su diseño (tipo transformer, difusión, etc.). La ficha de HuggingFace no proporciona datos sobre el entrenamiento, número de tokens, composición del dataset ni técnicas de alineación (RLHF, DPO, etc.). Todo el procesamiento se ejecuta en los servidores de Suno, y el acceso se realiza a través de la API de Apiframe, que actúa como intermediario.
+No se dispone de información pública sobre la arquitectura interna del modelo Suno. Es un sistema cerrado, sin pesos descargables ni documentación técnica sobre su diseño (tipo transformer, difusión, etc.). La ficha de Hugging Face no proporciona datos sobre el entrenamiento, número de tokens, composición del dataset ni técnicas de alineación (RLHF, DPO, etc.). Todo el procesamiento se ejecuta en los servidores de Suno, y el acceso se realiza a través de la API de Apiframe, que actúa como intermediario.
 
 La única información técnica relevante es la interfaz de uso: se envían prompts de texto (descripción musical o letras), se especifican parámetros como versión del modelo, estilo, género vocal, y se reciben dos pistas de audio generadas. No hay innovaciones técnicas documentadas por parte del repositorio, ya que se limita a documentar una API.
 
@@ -81,7 +81,7 @@ La principal diferencia es que Suno es un servicio cerrado sin posibilidad de ej
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/AI-APIs/Suno-API
+- Página del modelo en Hugging Face: https://huggingface.co/AI-APIs/Suno-API
 - Documentación de la API (Apiframe): https://apiframe.ai/models/suno
 - Documentación de Suno API (tercera parte): https://docs.sunoapi.org/
 - Guía de inicio rápido: https://docs.sunoapi.org/suno-api/quickstart

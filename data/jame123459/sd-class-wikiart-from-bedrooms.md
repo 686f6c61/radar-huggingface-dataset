@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jame123459/sd-class-wikiart-from-bedrooms` | 113.673.219 | no aplica | DDPM incondicional | MIT | HuggingFace |
-| `google/ddpm-bedroom-256` | no disponible | no aplica | DDPM incondicional | no disponible | HuggingFace |
-| `google/ddpm-cifar10-32` | no disponible | no aplica | DDPM incondicional | no disponible | HuggingFace |
+| `Jame123459/sd-class-wikiart-from-bedrooms` | 113.673.219 | no aplica | DDPM incondicional | MIT | Hugging Face |
+| `google/ddpm-bedroom-256` | no disponible | no aplica | DDPM incondicional | no disponible | Hugging Face |
+| `google/ddpm-cifar10-32` | no disponible | no aplica | DDPM incondicional | no disponible | Hugging Face |
 
 La comparativa se limita a modelos DDPM incondicionales de la misma familia. No se dispone de datos de rendimiento (FID u otras metricas) para establecer una comparacion cuantitativa con alternativas.
 
@@ -83,7 +83,7 @@ La comparativa se limita a modelos DDPM incondicionales de la misma familia. No 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jame123459/sd-class-wikiart-from-bedrooms
+- Hugging Face: https://huggingface.co/Jame123459/sd-class-wikiart-from-bedrooms
 - Modelo base: https://huggingface.co/google/ddpm-bedroom-256
 - Dataset: https://huggingface.co/datasets/huggan/wikiart
 - Script de entrenamiento: https://github.com/huggingface/diffusion-models-class/blob/main/unit2/finetune_model.py

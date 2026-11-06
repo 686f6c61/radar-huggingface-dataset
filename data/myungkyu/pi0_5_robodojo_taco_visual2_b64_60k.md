@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi0_5_robodojo_taco_visual2_b64_60k | 4.143.404.816 (~4,14 B) | no disponible | Ajuste fino sobre RoboDojo long-horizon (8 tareas bimanuales, 100 demos cada una) | no disponible | HuggingFace, 0 descargas, 0 likes |
-| lerobot/pi05_base | no disponible | no disponible | Modelo base Pi0.5 preentrenado por LeRobot | no disponible | HuggingFace |
+| pi0_5_robodojo_taco_visual2_b64_60k | 4.143.404.816 (~4,14 B) | no disponible | Ajuste fino sobre RoboDojo long-horizon (8 tareas bimanuales, 100 demos cada una) | no disponible | Hugging Face, 0 descargas, 0 likes |
+| lerobot/pi05_base | no disponible | no disponible | Modelo base Pi0.5 preentrenado por LeRobot | no disponible | Hugging Face |
 | Otras familias VLA (OpenVLA, pi0, GR00T N1.5) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 La comparacion cuantitativa con alternativas de la misma categoria no puede completarse con los datos disponibles: la model card no aporta metricas y los resultados de busqueda web recuperados no guardan relacion con el modelo, por lo que no se dispone de cifras verificables de terceros.
@@ -92,7 +92,7 @@ La comparacion cuantitativa con alternativas de la misma categoria no puede comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/pi0_5_robodojo_taco_visual2_b64_60k
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/pi0_5_robodojo_taco_visual2_b64_60k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/RoboDojo-taco-visual2-gemini
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Libreria LeRobot: https://github.com/huggingface/lerobot

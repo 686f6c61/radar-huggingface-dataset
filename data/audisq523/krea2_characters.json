@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "AUDISQ523/Krea2_Characters",
+  "slug": "audisq523-krea2_characters",
+  "author": "AUDISQ523",
+  "url": "https://huggingface.co/AUDISQ523/Krea2_Characters",
+  "created_at": "2026-11-06T11:00:03.000Z",
+  "updated_at": "2026-11-06T11:00:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 204274955433,
+  "storage_human": "204.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Character Generator - Create Characters with Prompts | Krea",
+      "url": "https://www.krea.ai/apps/character-ai",
+      "snippet": "Create original character concepts with AI. Generate portraits and full-body character designs for games, stories, and visual development with Krea."
+    }
+  ]
+}

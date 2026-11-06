@@ -10,7 +10,7 @@ El modelo tiene aproximadamente 6,86 mil millones de parámetros y está etiquet
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (segun tags de HuggingFace) |
+| Arquitectura | GPT-NeoX (segun tags de Hugging Face) |
 | Parametros totales | 6.856.253.440 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para una comparativa directa. El modelo 
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-2k_3k_4k_5k_6k_weightedavg_merge)
+- [Hugging Face - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-2k_3k_4k_5k_6k_weightedavg_merge)
 - [mergekit (repositorio)](https://github.com/cg123/mergekit)
 - [Articulo sobre Linear merge (arXiv:2203.05482)](https://arxiv.org/abs/2203.05482)
 - [Modelo relacionado: sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg](https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg)

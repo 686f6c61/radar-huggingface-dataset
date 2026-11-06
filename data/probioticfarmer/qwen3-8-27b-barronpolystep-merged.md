@@ -6,7 +6,7 @@ Qwen3.8-27B-BarronPolyStep-Merged es un checkpoint fusionado (merge) publicado p
 
 La relevancia de esta publicacion es fundamentalmente practica: simplifica el despliegue al eliminar la necesidad de gestionar un adaptador PEFT adicional junto al modelo base. El autor documenta una verificacion cuantitativa del merge, incluyendo la similitud coseno entre los logits del modelo fusionado y los del adaptador original (0,999975, con coincidencia top-1 en 5 de 5 casos) y una comprobacion de ejecucion de codigo con 5 de 5 aciertos. El tensor fusionado es `model.language_model.layers.63.mlp.down_proj.weight`, de forma [5120, 17408], con un `lora_scale` de 2.0 y un delta de Frobenius de 3,3060.
 
-El modelo se distribuye bajo licencia Apache 2.0 y esta etiquetado con `endpoints_compatible`, lo que indica compatibilidad con los endpoints de inferencia de HuggingFace. No obstante, la informacion publicada es muy limitada: no hay datos sobre composicion del dataset de entrenamiento, benchmarks, idiomas soportados ni detalles sobre el proceso de RLHF o alineacion. La model card se limita a documentar el proceso de merge.
+El modelo se distribuye bajo licencia Apache 2.0 y esta etiquetado con `endpoints_compatible`, lo que indica compatibilidad con los endpoints de inferencia de Hugging Face. No obstante, la informacion publicada es muy limitada: no hay datos sobre composicion del dataset de entrenamiento, benchmarks, idiomas soportados ni detalles sobre el proceso de RLHF o alineacion. La model card se limita a documentar el proceso de merge.
 
 ## Especificaciones tecnicas
 
@@ -89,12 +89,12 @@ No se dispone de datos de rendimiento comparativo entre estos modelos ni con alt
 - El proceso de merge se verifico con una unica semilla de comprobacion (5/5 coincidencias top-1); no hay evaluacion exhaustiva de si el merge degrada capacidades distintas de la generacion de codigo.
 - El repositorio tiene 373 descargas y 0 likes, y fue creado y actualizado en el mismo minuto (31 de octubre de 2026), lo que sugiere una publicacion sin validacion comunitaria.
 - Aunque la licencia es Apache 2.0, el modelo base Qwen3.8-27B podria tener terminos adicionales; conviene verificar la licencia del modelo base antes de un uso comercial.
-- El tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace, pero no se detalla el soporte en otros motores de inferencia.
+- El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face, pero no se detalla el soporte en otros motores de inferencia.
 - El tamano del repositorio (55,6 GB) implica requisitos de almacenamiento y transferencia considerables.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ProbioticFarmer/Qwen3.8-27B-BarronPolyStep-Merged
+- Hugging Face del modelo: https://huggingface.co/ProbioticFarmer/Qwen3.8-27B-BarronPolyStep-Merged
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Adaptador original: https://huggingface.co/ProbioticFarmer/Qwen3.8-27B-BarronPolyStep-RealCoder-v3
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada.

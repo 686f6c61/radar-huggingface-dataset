@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/zho-hans-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` es un ajuste fino supervisado (SFT) del modelo base `francesca9805/zho-hans-100mb-ppt-mp-struct-core-100mb_seed10`, publicado por el usuario francesca9805 en HuggingFace. Segun los pesos almacenados en safetensors, cuenta con 124.770.816 parametros totales (aproximadamente 124,8 millones), y lleva la etiqueta de arquitectura `gpt2` junto con las de `text-generation`, `transformers` y `safetensors`. La model card indica que el entrenamiento se realizo con TRL 0.23.0 en modo SFT, sobre Transformers 4.56.2 y PyTorch 2.11.0.
+El modelo `francesca9805/zho-hans-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` es un ajuste fino supervisado (SFT) del modelo base `francesca9805/zho-hans-100mb-ppt-mp-struct-core-100mb_seed10`, publicado por el usuario francesca9805 en Hugging Face. Segun los pesos almacenados en safetensors, cuenta con 124.770.816 parametros totales (aproximadamente 124,8 millones), y lleva la etiqueta de arquitectura `gpt2` junto con las de `text-generation`, `transformers` y `safetensors`. La model card indica que el entrenamiento se realizo con TRL 0.23.0 en modo SFT, sobre Transformers 4.56.2 y PyTorch 2.11.0.
 
 El identificador del repositorio apunta a un experimento de investigacion: el prefijo `zho-hans` corresponde a la convencion ISO para chino en escritura simplificada, `100mb` sugiere un corpus o tokenizador de referencia de ese tamano, y el sufijo `ckpt500_seed10` indica un checkpoint guardado en el paso 500 con semilla 10. La model card no confirma ninguno de estos extremos, por lo que deben tratarse como indicios del nombre, no como especificaciones verificadas. El run de entrenamiento esta registrado en Weights & Biases dentro del proyecto `new-tokenizers`, asociado a la Universidad de Groningen.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/zho-hans-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` | 124,77 M | No disponible | No disponible | HuggingFace, 0 descargas | Checkpoint SFT de investigacion; sin benchmarks |
+| `francesca9805/zho-hans-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` | 124,77 M | No disponible | No disponible | Hugging Face, 0 descargas | Checkpoint SFT de investigacion; sin benchmarks |
 | GPT-2 small (referencia de la familia) | 124 M | 1024 tokens (configuracion estandar de la familia) | MIT (publicada por OpenAI) | Ampliamente disponible | Arquitectura de referencia; si el modelo de esta ficha usa la misma, la comparacion de tamano es casi exacta |
 | GPT-2 medium (referencia de la familia) | 355 M | 1024 tokens (configuracion estandar de la familia) | MIT (publicada por OpenAI) | Ampliamente disponible | Alternativa de mayor capacidad si el objetivo es generacion de texto en ingles |
-| DistilGPT-2 (referencia de la familia) | 82 M | 1024 tokens (configuracion estandar de la familia) | Apache 2.0 (publicada por HuggingFace) | Ampliamente disponible | Version destilada, mas rapida, con licencia clara para uso comercial |
+| DistilGPT-2 (referencia de la familia) | 82 M | 1024 tokens (configuracion estandar de la familia) | Apache 2.0 (publicada por Hugging Face) | Ampliamente disponible | Version destilada, mas rapida, con licencia clara para uso comercial |
 
 No se dispone de datos de rendimiento del modelo de esta ficha, por lo que la comparacion se limita a parametros, contexto declarado y licencia. Las cifras de los modelos de referencia corresponden a sus especificaciones publicas y no implican un rendimiento equivalente del modelo evaluado.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento del modelo de esta ficha, por lo que la co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-mp-struct-core-100mb_seed10
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/o74ejykv
 - Repositorio de TRL: https://github.com/huggingface/trl

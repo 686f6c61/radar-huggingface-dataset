@@ -82,7 +82,7 @@ La comparativa se limita a aspectos estructurales, ya que no hay datos de rendim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/peonist-ai/halogen-qwen3.8-flash-next
+- Repositorio Hugging Face: https://huggingface.co/peonist-ai/halogen-qwen3.8-flash-next
 - Repositorio del servidor halogen-flash-server: https://github.com/peonist-ai/halogen-flash-server
 - Modelo hermano halogen-qwen3.8-27b: https://huggingface.co/peonist-ai/halogen-qwen3.8-27b
 - Repositorio halogen-server (para el 27B): https://github.com/peonist-ai/halogen-server

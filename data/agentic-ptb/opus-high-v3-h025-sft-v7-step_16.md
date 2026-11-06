@@ -69,6 +69,6 @@ No se dispone de informacion suficiente para realizar una comparativa significat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h025.sft-v7.step_16
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h025.sft-v7.step_16
 - Dataset del run: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Indice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX

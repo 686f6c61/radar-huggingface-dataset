@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`aiaprendefacil/lelelele` es un repositorio de modelo publicado en HuggingFace por el usuario `aiaprendefacil` el 9 de octubre de 2025 y actualizado por última vez el 2 de noviembre de 2026. La model card asociada no contiene más información que la declaración de licencia Apache 2.0: no se especifica arquitectura, tamaño, datos de entrenamiento, idiomas ni propósito del modelo. El repositorio ocupa 0,2 GB, un tamaño compatible con pesos cuantizados de un modelo pequeño o con un conjunto parcial de pesos, pero no hay metadatos que permitan confirmarlo.
+`aiaprendefacil/lelelele` es un repositorio de modelo publicado en Hugging Face por el usuario `aiaprendefacil` el 9 de octubre de 2025 y actualizado por última vez el 2 de noviembre de 2026. La model card asociada no contiene más información que la declaración de licencia Apache 2.0: no se especifica arquitectura, tamaño, datos de entrenamiento, idiomas ni propósito del modelo. El repositorio ocupa 0,2 GB, un tamaño compatible con pesos cuantizados de un modelo pequeño o con un conjunto parcial de pesos, pero no hay metadatos que permitan confirmarlo.
 
-No se trata de un lanzamiento de un laboratorio consolidado ni de un modelo con documentación técnica publicada. No hay pipeline declarado en HuggingFace, no consta ningún resultado de benchmarks y el contador de descargas es cero en el momento de la consulta. Cualquier evaluación de sus capacidades requeriría inspeccionar directamente los archivos del repositorio, algo que la información disponible no permite.
+No se trata de un lanzamiento de un laboratorio consolidado ni de un modelo con documentación técnica publicada. No hay pipeline declarado en Hugging Face, no consta ningún resultado de benchmarks y el contador de descargas es cero en el momento de la consulta. Cualquier evaluación de sus capacidades requeriría inspeccionar directamente los archivos del repositorio, algo que la información disponible no permite.
 
 Por tanto, esta ficha documenta lo que se puede afirmar con rigor sobre el repositorio (identificador, autor, licencia, fechas, tamaño) y marca explícitamente como no disponible todo aquello que el autor no ha publicado. Se recomienda precaución: un modelo sin model card, sin pipeline declarado y sin benchmarks no debería emplearse en producción sin una validación empírica previa por parte del equipo que lo adopte.
 
@@ -34,7 +34,7 @@ El tamaño del repositorio (0,2 GB) es el único dato cuantitativo disponible y,
 - No consta soporte de agentes ni de razonamiento multi-paso.
 - No consta información sobre capacidades multilingües.
 - No consta ningún modo especial (thinking mode, visión, audio, etc.).
-- No hay pipeline declarado en HuggingFace, por lo que ni siquiera la tarea principal (text-generation, text-classification, etc.) está confirmada.
+- No hay pipeline declarado en Hugging Face, por lo que ni siquiera la tarea principal (text-generation, text-classification, etc.) está confirmada.
 
 ## Casos de uso
 
@@ -44,7 +44,7 @@ No es posible recomendar casos de uso concretos sin información verificable sob
 - Pruebas de reproducibilidad: comprobar si los pesos cargan en un runtime estándar (transformers, llama.cpp) y con qué configuración.
 - Análisis de licencia: verificar que la declaración Apache 2.0 del repositorio se corresponde con los artefactos distribuidos, dado que no hay información sobre el origen de los datos de entrenamiento.
 - Docencia o experimentación con modelos sin documentar: usar el caso como ejemplo de por qué una model card mínima impide evaluar riesgos.
-- Comparación de metadatos: estudiar qué información mínima debería acompañar a una publicación de modelo en HuggingFace.
+- Comparación de metadatos: estudiar qué información mínima debería acompañar a una publicación de modelo en Hugging Face.
 - Auditoría de seguridad: analizar los pesos en busca de comportamiento inesperado antes de cualquier uso, aunque sea interno.
 
 Cualquier uso en producción, atención al cliente, generación de código o pipelines de CI/CD queda descartado mientras no exista documentación técnica verificable.
@@ -70,12 +70,12 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 - Ausencia total de model card técnica: no hay información sobre arquitectura, datos, entrenamiento ni evaluación.
 - Riesgo de alucinación y sesgos: imposible de evaluar sin benchmarks ni documentación sobre el corpus.
 - Licencia Apache 2.0 declarada, pero sin información sobre la procedencia de los datos de entrenamiento ni de los pesos base, lo que impide verificar la cadena de licencias.
-- Sin pipeline declarado en HuggingFace: la tarea del modelo no está confirmada.
+- Sin pipeline declarado en Hugging Face: la tarea del modelo no está confirmada.
 - Cero descargas y un único "like" en el momento de la consulta: no hay evidencia de uso ni de validación por parte de la comunidad.
 - El tamaño del repositorio (0,2 GB) no permite descartar que se trate de un conjunto parcial de pesos o de artefactos no funcionales.
 - No debe emplearse en producción sin una auditoría técnica y legal previa por parte del equipo adoptante.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aiaprendefacil/lelelele
+- Repositorio en Hugging Face: https://huggingface.co/aiaprendefacil/lelelele
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

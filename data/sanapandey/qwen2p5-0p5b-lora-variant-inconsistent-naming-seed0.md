@@ -1,7 +1,7 @@
 # sanapandey/qwen2p5-0p5b-lora-variant-inconsistent-naming-seed0
 
 ## Resumen
-Este modelo es un adaptador LoRA (low-rank adaptation) para el modelo de lenguaje Qwen2.5-0.5B, publicado en HuggingFace por el usuario sanapandey. La model card es una plantilla autogenerada sin información sobre arquitectura, datos de entrenamiento, licencia ni casos de uso. El nombre del repositorio, `qwen2p5-0p5b-lora-variant-inconsistent-naming-seed0`, sugiere que se trata de un experimento que compara variantes de nombres inconsistentes en el entrenamiento de LoRA, pero no se aporta ninguna explicación técnica. El repositorio ocupa 0.1 GB y contiene pesos en formato safetensors, con etiquetas de unsloth y transformers. No hay descargas ni valoraciones, lo que indica que es un proyecto sin difusión o meramente de investigación. En la práctica, la ficha carece de datos suficientes para evaluar el modelo como candidato de uso en producción.
+Este modelo es un adaptador LoRA (low-rank adaptation) para el modelo de lenguaje Qwen2.5-0.5B, publicado en Hugging Face por el usuario sanapandey. La model card es una plantilla autogenerada sin información sobre arquitectura, datos de entrenamiento, licencia ni casos de uso. El nombre del repositorio, `qwen2p5-0p5b-lora-variant-inconsistent-naming-seed0`, sugiere que se trata de un experimento que compara variantes de nombres inconsistentes en el entrenamiento de LoRA, pero no se aporta ninguna explicación técnica. El repositorio ocupa 0.1 GB y contiene pesos en formato safetensors, con etiquetas de unsloth y transformers. No hay descargas ni valoraciones, lo que indica que es un proyecto sin difusión o meramente de investigación. En la práctica, la ficha carece de datos suficientes para evaluar el modelo como candidato de uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -60,7 +60,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 - El repositorio no tiene descargas, likes ni evidencia de evaluacion externa.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-inconsistent-naming-seed0
+- Modelo en Hugging Face: https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-inconsistent-naming-seed0
 - Repositorio relacionado del mismo autor con variante "inefficient-algorithms": https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-inefficient-algorithms-seed0
 
 La busqueda web no ha proporcionado documentos, papers, blogs, demos ni otros recursos relevantes.

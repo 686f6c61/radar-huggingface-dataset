@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-DRIP-DPO es un checkpoint de investigación publicado por el usuario yone2426 en HuggingFace. Se trata de un modelo derivado de Llama 3.1 8B al que se le ha aplicado una receta de optimización de preferencias adversarial denominada DRIP, partiendo de un checkpoint previo de SFT identificado en la propia model card como "Clean SFT". El repositorio pesa 18,2 GB y contiene 8.047.042.561 parámetros en formato safetensors, lo que confirma que se trata de un modelo denso de escala 8B sin poda ni destilación aparente.
+Llama-3.1-8B-DRIP-DPO es un checkpoint de investigación publicado por el usuario yone2426 en Hugging Face. Se trata de un modelo derivado de Llama 3.1 8B al que se le ha aplicado una receta de optimización de preferencias adversarial denominada DRIP, partiendo de un checkpoint previo de SFT identificado en la propia model card como "Clean SFT". El repositorio pesa 18,2 GB y contiene 8.047.042.561 parámetros en formato safetensors, lo que confirma que se trata de un modelo denso de escala 8B sin poda ni destilación aparente.
 
 El interés de esta ficha no está en su rendimiento —no hay benchmarks publicados ni descargas registradas—, sino en su carácter de artefacto experimental: el propio autor advierte de que es un "port" de una receta pública, no un modelo publicado por los autores originales del método ni una reproducción verificada de las puntuaciones del paper. Incluye código propio (tag `custom_code`, con un fichero `modeling_drip.py`), lo que obliga a cargarlo con `trust_remote_code=True` y a revisar previamente el código incluido.
 
@@ -40,7 +40,7 @@ En cuanto al entrenamiento, la model card describe únicamente un pipeline de do
 
 - Investigación en optimización de preferencias: el checkpoint permite reproducir y auditar experimentalmente una receta DPO adversarial concreta sobre un modelo base de 8B, comparando el comportamiento resultante frente al checkpoint SFT previo. Es su uso más coherente con lo que declara el autor.
 - Estudio de robustez y "reward hacking": al tratarse de un DPO adversarial, sirve para analizar si el ajuste endurece o degrada respuestas ante prompts adversarios, siempre que se construya una evaluación propia, ya que no hay métricas publicadas.
-- Punto de partida para fine-tuning posterior: los 8.047 millones de parámetros en safetensors se pueden cargar con las herramientas estándar de HuggingFace y continuar el entrenamiento con LoRA o QLoRA sobre dominios concretos, asumiendo el coste de revisar el código custom.
+- Punto de partida para fine-tuning posterior: los 8.047 millones de parámetros en safetensors se pueden cargar con las herramientas estándar de Hugging Face y continuar el entrenamiento con LoRA o QLoRA sobre dominios concretos, asumiendo el coste de revisar el código custom.
 - Generación de datos sintéticos de preferencia: el modelo puede emplearse en pipelines internos para producir pares de respuestas candidatas que después se filtren y etiqueten, un uso de bajo riesgo porque no requiere exposición a usuarios finales.
 - Evaluación comparativa de checkpoints: útil como uno de los brazos de un experimento que compare SFT frente a SFT+DPO frente a base, midiendo con un arnés propio (por ejemplo, EleutherAI LM Evaluation Harness o similares) en lugar de fiarse de cifras de terceros.
 - Inferencia local en una GPU de 24 GB: los pesos en FP16 ocupan aproximadamente 16 GB, por lo que cabe en una RTX 4090 o similar en cuantizaciones de 8 bits si se generan de forma externa, lo que permite experimentar sin infraestructura de clúster.
@@ -93,7 +93,7 @@ La diferencia sustancial no está en la escala, sino en la trazabilidad: frente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yone2426/Llama-3.1-8B-DRIP-DPO
+- Modelo en Hugging Face: https://huggingface.co/yone2426/Llama-3.1-8B-DRIP-DPO
 - Ficheros referenciados por la model card dentro del repositorio (no verificados durante la consulta): `run_config.json`, `FIDELITY.md`, `modeling_drip.py`
 - Paper de DRIP: no disponible en la información proporcionada; la model card menciona una receta pública, pero no incluye enlace al paper ni al repositorio de referencia.
 - Repositorio o paquete "this package" citado por el autor: no disponible; la model card no especifica su nombre ni su ubicación.

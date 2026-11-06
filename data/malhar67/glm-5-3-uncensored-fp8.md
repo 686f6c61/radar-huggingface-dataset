@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparativos con modelos de otros desarroll
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Malhar67/GLM-5.3-UNCENSORED-FP8
+- Modelo en Hugging Face: https://huggingface.co/Malhar67/GLM-5.3-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Cuantización FP8 de referencia: https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
 - Variante de ciberseguridad: https://huggingface.co/dealignai/GLM-5.3-CYBERSECURITY-FP8

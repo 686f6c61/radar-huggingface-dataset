@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alotaibiahmed/hybrid-generation` es un repositorio de HuggingFace publicado por el usuario alotaibiahmed que contiene una implementación de referencia de una arquitectura denominada "Hybrid" orientada a tareas de generación. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible ("a reproducible starting point, not a trained model release") con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`alotaibiahmed/hybrid-generation` es un repositorio de Hugging Face publicado por el usuario alotaibiahmed que contiene una implementación de referencia de una arquitectura denominada "Hybrid" orientada a tareas de generación. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible ("a reproducible starting point, not a trained model release") con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El repositorio incluye un script Python (`predict.py`) con el modelo y un ejemplo ejecutable, un `config.json` con los parámetros de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que actúa como inicialización, no como checkpoint entrenado. La arquitectura declarada combina atención estándar con fusión mediante compuertas (gated fusion), activación GELU y normalización RMSNorm, en una escala etiquetada como "xlarge".
 
@@ -84,5 +84,5 @@ No disponible. No se identifican en la información proporcionada modelos compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alotaibiahmed/hybrid-generation
+- Repositorio en Hugging Face: https://huggingface.co/alotaibiahmed/hybrid-generation
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

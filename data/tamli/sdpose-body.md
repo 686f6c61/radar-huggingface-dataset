@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SDPose-Body es un modelo de estimación de pose humana (keypoint detection) desarrollado por el autor de HuggingFace `tamli` y presentado en el artículo arXiv:2509.24980, titulado "SDPose: Exploiting Diffusion Priors for Out-of-Domain and Robust Pose Estimation". A diferencia de los estimadores de pose convencionales, SDPose reutiliza los priors visuales de Stable Diffusion v2 inicializando su backbone U-Net con los pesos de ese modelo generativo y añadiendo una cabeza de predicción de mapas de calor (heatmaps). El objetivo es mejorar la robustez en escenarios fuera de distribución (OOD), es decir, imágenes con estilos o dominios alejados de los datos de entrenamiento habituales.
+SDPose-Body es un modelo de estimación de pose humana (keypoint detection) desarrollado por el autor de Hugging Face `tamli` y presentado en el artículo arXiv:2509.24980, titulado "SDPose: Exploiting Diffusion Priors for Out-of-Domain and Robust Pose Estimation". A diferencia de los estimadores de pose convencionales, SDPose reutiliza los priors visuales de Stable Diffusion v2 inicializando su backbone U-Net con los pesos de ese modelo generativo y añadiendo una cabeza de predicción de mapas de calor (heatmaps). El objetivo es mejorar la robustez en escenarios fuera de distribución (OOD), es decir, imágenes con estilos o dominios alejados de los datos de entrenamiento habituales.
 
 El modelo sigue un esquema top-down de dos etapas: primero se detectan las cajas de las personas con un detector de objetos externo (por ejemplo YOLO11-x) y después se recorta cada instancia y se estiman 17 keypoints corporales en formato COCO (nariz, ojos, orejas, hombros, codos, muñecas, caderas, rodillas y tobillos). La entrada se procesa a una resolución de 1024×768 (alto×ancho) y la salida son mapas de calor más coordenadas con puntuaciones de confianza, todo ello integrado en el framework MMPose.
 
@@ -88,11 +88,11 @@ No se dispone de datos numéricos de parámetros, contexto ni rendimiento de los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tamli/SDPose-Body
+- Modelo en Hugging Face: https://huggingface.co/tamli/SDPose-Body
 - Artículo (arXiv:2509.24980): https://arxiv.org/abs/2509.24980
 - Página del proyecto: https://t-s-liang.github.io/SDPose
 - Repositorio de código: https://github.com/t-s-liang/SDPose-OOD
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/teemosliang/SDPose-Body
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/teemosliang/SDPose-Body
 - Pesos del detector YOLO11-x: https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11x.pt
 - Contacto del autor: tsliang2001@gmail.com
-- Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces listados proceden de la model card y de los metadatos de HuggingFace.
+- Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces listados proceden de la model card y de los metadatos de Hugging Face.

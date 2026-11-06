@@ -34,7 +34,7 @@ La arquitectura sigue el diseño Flamingo, con atención flash, mecanismo de fus
 
 - Pruebas de humo en desarrollo: el checkpoint permite verificar que el pipeline de carga, forward y backward funciona correctamente antes de entrenar un modelo real.
 - Investigación de arquitectura: sirve como base para estudiar el comportamiento de la fusión gated o la atención flash en un entorno controlado y de bajo coste.
-- Desarrollo de adaptadores: al ser una implementación personalizada, los desarrolladores pueden crear adaptadores para integrarla con APIs genéricas de HuggingFace.
+- Desarrollo de adaptadores: al ser una implementación personalizada, los desarrolladores pueden crear adaptadores para integrarla con APIs genéricas de Hugging Face.
 - Reproducibilidad de experimentos: el recetario por defecto (novograd + onecycle) ofrece un punto de partida estandarizado para comparar variaciones de hiperparámetros.
 - Educación: útil para aprender los componentes internos de Flamingo sin la complejidad de modelos grandes.
 - Generación de baselines: con un entrenamiento adecuado sobre un dataset específico, podría servir como baseline de capacidad mínima, aunque el autor no lo recomienda sin una evaluación rigurosa.
@@ -59,11 +59,11 @@ No disponible. No existen modelos comparables en el sentido de checkpoints de in
 
 - El checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 - No debe utilizarse en producción ni para tareas reales de generación o razonamiento.
-- La implementación es personalizada; las APIs genéricas de HuggingFace requieren un adaptador explícito para cargar el modelo.
+- La implementación es personalizada; las APIs genéricas de Hugging Face requieren un adaptador explícito para cargar el modelo.
 - Los resultados de un futuro entrenamiento deben documentarse por separado de los valores por defecto incluidos en el repositorio.
 - La licencia BSD-3-Clause permite uso comercial, pero los términos de los datos externos utilizados con este repositorio deben revisarse por separado.
 - No hay garantía de soporte ni mantenimiento por parte del autor.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/timbecker/contrastive-lite
+- Repositorio en Hugging Face: https://huggingface.co/timbecker/contrastive-lite

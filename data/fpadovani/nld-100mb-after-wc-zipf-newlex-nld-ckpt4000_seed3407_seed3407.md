@@ -6,13 +6,13 @@ El modelo `fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt4000_seed3407_seed34
 
 Con 124.770.816 parametros reales confirmados en los pesos safetensors, el modelo se situa en la misma escala que GPT-2 small (~124M). La etiqueta de arquitectura declarada es `gpt2`, por lo que se trata de un transformer decoder-only clasico con atencion causal completa, no de una arquitectura MoE, SSM ni hibrida. No hay informacion publicada sobre la longitud de contexto, los idiomas soportados ni la licencia.
 
-Su relevancia es fundamentalmente academica: es un artefacto de investigacion reproducible (las semillas y el numero de checkpoint aparecen en el propio nombre del modelo) util para estudiar los efectos de distintas estrategias de muestreo de datos y de ajuste fino en modelos de lenguaje pequenos. Con cero descargas y cero likes en HuggingFace, y sin resultados de benchmarks publicados, no esta pensado como modelo de produccion. Ademas, la model card incluye el campo `licence: license`, que es un marcador de posicion sin valor legal, no una licencia real.
+Su relevancia es fundamentalmente academica: es un artefacto de investigacion reproducible (las semillas y el numero de checkpoint aparecen en el propio nombre del modelo) util para estudiar los efectos de distintas estrategias de muestreo de datos y de ajuste fino en modelos de lenguaje pequenos. Con cero descargas y cero likes en Hugging Face, y sin resultados de benchmarks publicados, no esta pensado como modelo de produccion. Ademas, la model card incluye el campo `licence: license`, que es un marcador de posicion sin valor legal, no una licencia real.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only estilo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only estilo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 (segun pesos safetensors) |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt4000_seed3407_seed3407` | 124,77M | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
-| GPT-2 small (OpenAI) | 124M | 1024 tokens | Referencia historica ampliamente evaluada | MIT | HuggingFace, ampliamente desplegado |
-| distilgpt2 (HuggingFace) | 82M | 1024 tokens | Destilado de GPT-2, evaluado en GLUE y perplejidad | Apache 2.0 | HuggingFace |
-| Pythia-160M (EleutherAI) | 160M | 2048 tokens | Suite de benchmarks publicada (EleutherAI LM Evaluation Harness) | Apache 2.0 | HuggingFace |
+| `fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt4000_seed3407_seed3407` | 124,77M | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
+| GPT-2 small (OpenAI) | 124M | 1024 tokens | Referencia historica ampliamente evaluada | MIT | Hugging Face, ampliamente desplegado |
+| distilgpt2 (Hugging Face) | 82M | 1024 tokens | Destilado de GPT-2, evaluado en GLUE y perplejidad | Apache 2.0 | Hugging Face |
+| Pythia-160M (EleutherAI) | 160M | 2048 tokens | Suite de benchmarks publicada (EleutherAI LM Evaluation Harness) | Apache 2.0 | Hugging Face |
 
 La comparacion se limita a parametros, contexto y licencia: no existen resultados de benchmarks de este checkpoint que permitan una comparacion de rendimiento con las alternativas. La diferencia principal frente a GPT-2 small, distilgpt2 o Pythia-160M es la licencia (indefinida en este caso) y la ausencia de metodologia de evaluacion publicada.
 
@@ -84,7 +84,7 @@ La comparacion se limita a parametros, contexto y licencia: no existen resultado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt4000_seed3407_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt4000_seed3407_seed3407
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed3407
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/bprty5rc
 - Repositorio de TRL: https://github.com/huggingface/trl

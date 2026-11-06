@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mlx-community/Ming-3.0-tts-tiny-4bit (este) | 8.981.004.468 (backbone 4 bits) | no disponible | safetensors MLX, mlx-audio | MIT | HuggingFace, 0 descargas |
-| inclusionAI/Ming-3.0-tts-tiny (modelo base) | no disponible en la información proporcionada (misma arquitectura `lingv3_tts`) | no disponible | safetensors, pesos sin cuantizar | no disponible en la información proporcionada | HuggingFace |
+| mlx-community/Ming-3.0-tts-tiny-4bit (este) | 8.981.004.468 (backbone 4 bits) | no disponible | safetensors MLX, mlx-audio | MIT | Hugging Face, 0 descargas |
+| inclusionAI/Ming-3.0-tts-tiny (modelo base) | no disponible en la información proporcionada (misma arquitectura `lingv3_tts`) | no disponible | safetensors, pesos sin cuantizar | no disponible en la información proporcionada | Hugging Face |
 | Otros TTS de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación significativa que permite la información disponible es frente al modelo base: misma arquitectura y mismo conjunto de módulos, pero con el backbone sin cuantizar, lo que implica mayor huella de memoria y, en principio, sin las posibles pérdidas de calidad asociadas a los 4 bits. No se dispone de datos de benchmarks ni de terceros comparables para establecer diferencias de calidad o velocidad.
@@ -89,7 +89,7 @@ La comparación significativa que permite la información disponible es frente a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/Ming-3.0-tts-tiny-4bit
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/Ming-3.0-tts-tiny-4bit
 - Modelo base: https://huggingface.co/inclusionAI/Ming-3.0-tts-tiny
 - Librería de inferencia: `mlx-audio` (identificador `mlx-audio`; no se ha encontrado URL en la información disponible)
 - Papers, blogs, repositorios auxiliares y demos: no disponibles. La búsqueda web realizada no devolvió resultados relacionados con el modelo (los resultados obtenidos corresponden a un sitio de estadísticas de videojuegos y se han descartado por no ser pertinentes).

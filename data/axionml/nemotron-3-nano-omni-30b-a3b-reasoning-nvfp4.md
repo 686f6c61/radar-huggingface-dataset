@@ -84,8 +84,8 @@ No se han publicado en la informacion disponible resultados de benchmarks de tex
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4 (este) | 31B totales / ~3B activos (model card) | 256K | Texto, imagen, video, audio | NVIDIA Open Model Agreement | HuggingFace (mirror de AxionML) |
-| Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16 | 31B totales / ~3B activos | 256K | Texto, imagen, video, audio | NVIDIA Open Model Agreement | HuggingFace (NVIDIA), ~62 GB en BF16 (estimado a partir de 4,98 bits efectivos frente a 16) |
+| Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4 (este) | 31B totales / ~3B activos (model card) | 256K | Texto, imagen, video, audio | NVIDIA Open Model Agreement | Hugging Face (mirror de AxionML) |
+| Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16 | 31B totales / ~3B activos | 256K | Texto, imagen, video, audio | NVIDIA Open Model Agreement | Hugging Face (NVIDIA), ~62 GB en BF16 (estimado a partir de 4,98 bits efectivos frente a 16) |
 | Nemotron-3-Nano-Omni-30B-A3B-Reasoning-FP8 | 31B totales / ~3B activos | 256K | Texto, imagen, video, audio | NVIDIA Open Model Agreement | Evaluado en la tabla de resultados de NVIDIA; disponibilidad no confirmada en la informacion disponible |
 | Nemotron Nano V2 VL (predecesor) | no disponible | no disponible | Texto, imagen, video (sin audio nativo) | no disponible | no disponible |
 
@@ -105,7 +105,7 @@ Los datos de comparacion con alternativas de otros fabricantes (por ejemplo, mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace (este mirror): https://huggingface.co/AxionML/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4
+- Repositorio en Hugging Face (este mirror): https://huggingface.co/AxionML/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4
 - Modelo cuantizado original de NVIDIA: https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4
 - Modelo base en BF16: https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16
 - Modelo base en BF16 (organizacion nvidia-ai): https://huggingface.co/nvidia-ai/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16

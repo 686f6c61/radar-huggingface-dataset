@@ -73,8 +73,8 @@ La propia model card incluye una sección de evaluación con la frase "No evalua
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`sam-guided-vlas/...pi05__seed_0__steps_10k`) | 4.143.404.816 | No aplica (VLA) | Sin resultados de evaluación publicados | apache-2.0 | HuggingFace, librería LeRobot |
-| lerobot/pi05_base | No disponible en la información proporcionada | No disponible | No disponible | No disponible en la información proporcionada | HuggingFace; es el modelo base del fine-tuning |
+| Este modelo (`sam-guided-vlas/...pi05__seed_0__steps_10k`) | 4.143.404.816 | No aplica (VLA) | Sin resultados de evaluación publicados | apache-2.0 | Hugging Face, librería LeRobot |
+| lerobot/pi05_base | No disponible en la información proporcionada | No disponible | No disponible | No disponible en la información proporcionada | Hugging Face; es el modelo base del fine-tuning |
 | π₀.₅ (Physical Intelligence, descrito en el blog referenciado) | No disponible | No disponible | No disponible | No disponible | Referenciado en la model card; el código base OpenPI se cita como origen de la implementación |
 | Otros VLA de propósito general (por ejemplo OpenVLA, GR00T N1) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No se han encontrado datos comparables en la información disponible |
 
@@ -94,7 +94,7 @@ La propia model card incluye una sección de evaluación con la frase "No evalua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_10k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_10k
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2__mask__blur__sim__all_cameras__live
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=sam-guided-vlas/train_1_2__mask__blur__sim__all_cameras__live
 - Modelo base: https://huggingface.co/lerobot/pi05_base

@@ -88,8 +88,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Rendimiento en opensec-triage | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| spahbod/qwen3-0.6b-opensec-lora | 0,6B + adaptador LoRA | 32.768 tokens (heredado) | Accuracy 66,9% en 840 ejemplos de test | No disponible | HuggingFace, 0 descargas y 0 likes |
-| Qwen/Qwen3-0.6B (base) | 0,6B | 32.768 tokens | No evaluado en la ficha del adaptador | No disponible en la informacion proporcionada | HuggingFace |
+| spahbod/qwen3-0.6b-opensec-lora | 0,6B + adaptador LoRA | 32.768 tokens (heredado) | Accuracy 66,9% en 840 ejemplos de test | No disponible | Hugging Face, 0 descargas y 0 likes |
+| Qwen/Qwen3-0.6B (base) | 0,6B | 32.768 tokens | No evaluado en la ficha del adaptador | No disponible en la informacion proporcionada | Hugging Face |
 | Clasificadores clasicos de triaje (TF-IDF + SVM/regresion logistica) | No aplica | No aplica | No disponible | No disponible | Implementacion propia |
 
 No se dispone de datos de benchmarks de otras alternativas sobre el mismo conjunto de test, por lo que no es posible establecer una comparación cuantitativa rigurosa con modelos de la misma categoría.
@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks de otras alternativas sobre el mismo conjun
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/spahbod/qwen3-0.6b-opensec-lora
+- Adaptador en Hugging Face: https://huggingface.co/spahbod/qwen3-0.6b-opensec-lora
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Dataset de entrenamiento OpenSec Triage: https://huggingface.co/datasets/tegridydev/opensec-triage
 - Repositorio con el codigo de entrenamiento, evaluacion y ejecucion: https://github.com/s25132/opensec-qwen-qlora

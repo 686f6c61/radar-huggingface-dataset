@@ -68,7 +68,7 @@ No se dispone de datos de benchmarks para comparar. Sin embargo, se puede mencio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vidore/colqwen-omni-v0.1
+- Hugging Face: https://huggingface.co/vidore/colqwen-omni-v0.1
 - Blogpost de release: https://huggingface.co/blog/manu/colqwen-omni-omnimodal-retrieval
 - Paper ColPali: https://arxiv.org/abs/2407.01449
 - Paper ColBERT: https://arxiv.org/abs/2004.12832

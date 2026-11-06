@@ -4,7 +4,7 @@
 
 El modelo `Luke1001/one-token-organism` es un prototipo experimental de 297 millones de parámetros desarrollado por Luke1001 que se presenta como un "organismo de un token": un modelo de lenguaje que aprende de forma continua durante la conversación, sin depender de trucos de contexto ni de recuperación externa. En lugar de un transformer clásico, emplea una recurrencia de escaneo selectivo (tipo Mamba) de 13 capas con dimensión 1024, lo que le permite mantener un coste de memoria O(1) por token. Su diseño incluye un "consejo" de seis bandas temporales (de 1 a 32 000 tokens), una memoria episódica (hipocampo), un módulo de planificación/sueño, y un sistema de recompensa interna que modela dopamina. Es relevante como experimento de investigación sobre aprendizaje en línea y arquitecturas de estado sólido, aunque no está pensado para uso en producción.
 
-El autor proporciona el código fuente en GitHub (repositorio Vision) y los pesos (~1,2 GB) en HuggingFace. El modelo se ejecuta en Apple Silicon, CUDA o CPU, y su interfaz web permite interactuar con él, enseñarle hechos y observar sus mecanismos internos. La model card documenta limitaciones honestas: a 297M parámetros, el enrutamiento pregunta-respuesta es frágil, la inferencia abstracta no emerge y las respuestas sociales son pobres. No se han publicado resultados de benchmarks ni se especifica licencia.
+El autor proporciona el código fuente en GitHub (repositorio Vision) y los pesos (~1,2 GB) en Hugging Face. El modelo se ejecuta en Apple Silicon, CUDA o CPU, y su interfaz web permite interactuar con él, enseñarle hechos y observar sus mecanismos internos. La model card documenta limitaciones honestas: a 297M parámetros, el enrutamiento pregunta-respuesta es frágil, la inferencia abstracta no emerge y las respuestas sociales son pobres. No se han publicado resultados de benchmarks ni se especifica licencia.
 
 ## Especificaciones tecnicas
 
@@ -74,7 +74,7 @@ No disponible. No se conocen modelos comparables que combinen aprendizaje en lin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Luke1001/one-token-organism
+- Hugging Face: https://huggingface.co/Luke1001/one-token-organism
 - Repositorio GitHub (Vision): https://github.com/LukeHamond1001/Vision
 - Resultados medidos: https://github.com/LukeHamond1001/Vision/blob/main/RESULTS.md (segun la model card)
 - Documento de gestacion (v17): https://github.com/LukeHamond1001/Vision/blob/main/GESTATION.md (segun la model card)

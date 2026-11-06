@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shuibai12138/Open-Dcoder-0.5B-MDLM-OpenCodeInstruct | 0,63B | no disponible | Difusión enmascarada absorbente (MDLM) | MIT | HuggingFace, 0 descargas |
-| Shuibai12138/Open-Dcoder-0.5B-CDLM-OpenCodeInstruct | no disponible (misma base de 0,5B) | no disponible | CDLM (correctivo) | no disponible | HuggingFace |
-| fredzzp/open-dcoder-0.5B | 0,5B (modelo base) | no disponible | Difusión de código | no disponible | HuggingFace |
-| Qwen2.5-Coder-0.5B (referencia de la misma categoría de tamaño) | ~0,49B | 32.768 tokens | Causal autorregresivo | Apache 2.0 | HuggingFace |
+| Shuibai12138/Open-Dcoder-0.5B-MDLM-OpenCodeInstruct | 0,63B | no disponible | Difusión enmascarada absorbente (MDLM) | MIT | Hugging Face, 0 descargas |
+| Shuibai12138/Open-Dcoder-0.5B-CDLM-OpenCodeInstruct | no disponible (misma base de 0,5B) | no disponible | CDLM (correctivo) | no disponible | Hugging Face |
+| fredzzp/open-dcoder-0.5B | 0,5B (modelo base) | no disponible | Difusión de código | no disponible | Hugging Face |
+| Qwen2.5-Coder-0.5B (referencia de la misma categoría de tamaño) | ~0,49B | 32.768 tokens | Causal autorregresivo | Apache 2.0 | Hugging Face |
 
 La comparación con Qwen2.5-Coder-0.5B se incluye únicamente como referencia de la categoría de tamaño; sus datos no provienen de la información proporcionada en esta búsqueda y sus cifras de rendimiento no se han verificado aquí. No se dispone de métricas comparativas publicadas para ninguno de los modelos de la familia Open-Dcoder.
 
@@ -86,7 +86,7 @@ La comparación con Qwen2.5-Coder-0.5B se incluye únicamente como referencia de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shuibai12138/Open-Dcoder-0.5B-MDLM-OpenCodeInstruct
+- Modelo en Hugging Face: https://huggingface.co/Shuibai12138/Open-Dcoder-0.5B-MDLM-OpenCodeInstruct
 - Modelo base: https://huggingface.co/fredzzp/open-dcoder-0.5B
 - Modelo pareja (objetivo CDLM): https://huggingface.co/Shuibai12138/Open-Dcoder-0.5B-CDLM-OpenCodeInstruct
 - Modelo del artículo (0,5B, MDM baseline): https://huggingface.co/Shuibai12138/Open-Dcoder-0.5B-baseline-mdm-step2000

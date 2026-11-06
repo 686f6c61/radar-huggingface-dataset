@@ -18,7 +18,7 @@ Es relevante ahora porque permite sustituir varios backbones especializados por 
 | Longitud de contexto | 1032 tokens visuales por imagen a 512x512 (8 de prefijo + 1024 parches); no hay contexto textual |
 | Tipos de cuantizacion | No disponible; el repositorio solo publica safetensors en el formato original (fp32, ~0,3 GB). No hay versiones GGUF, ONNX ni int8 oficiales |
 | Idiomas soportados | No disponible (codificador de imagen, sin entrada ni salida de texto) |
-| Licencia | NVIDIA Open Model License (identificador `other` en HuggingFace) |
+| Licencia | NVIDIA Open Model License (identificador `other` en Hugging Face) |
 | Formato de pesos | safetensors (pesos remapeados a timm; tamano del repo 0,3 GB) |
 
 Otros datos tecnicos: 108,0 GMACs por imagen, 249,3 M de activaciones, resolucion de entrenamiento nativa 512x512, malla de posiciones de 32x32 parches.
@@ -75,11 +75,11 @@ Resultados reportados por NVIDIA en las model cards originales de la familia C-R
 
 | Modelo | Parametros | Entrada / tokens | ImageNet kNN | ADE20k mIoU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| C-RADIOv3-B (este, remapeo timm) | 86,5 M | 512x512 / 1032 tokens | 81,22 | 49,79 | NVIDIA Open Model License | HuggingFace, libreria timm |
-| C-RADIOv3-L | no disponible | no disponible | 84,33 | 51,87 | NVIDIA Open Model License | HuggingFace (`nvidia`) |
-| C-RADIOv3-H | no disponible | no disponible | 86,23 | 52,75 | NVIDIA Open Model License | HuggingFace (`nvidia`) |
-| C-RADIOv4-SO400M | no disponible | no disponible | 85,75 | 55,14 | NVIDIA Open Model License | HuggingFace (`nvidia`) |
-| `timm/naflexvit_base_patch16_radio_v3.c_radio` | 86,5 M (misma familia) | resolucion nativa flexible | no disponible | no disponible | NVIDIA Open Model License | HuggingFace, libreria timm |
+| C-RADIOv3-B (este, remapeo timm) | 86,5 M | 512x512 / 1032 tokens | 81,22 | 49,79 | NVIDIA Open Model License | Hugging Face, libreria timm |
+| C-RADIOv3-L | no disponible | no disponible | 84,33 | 51,87 | NVIDIA Open Model License | Hugging Face (`nvidia`) |
+| C-RADIOv3-H | no disponible | no disponible | 86,23 | 52,75 | NVIDIA Open Model License | Hugging Face (`nvidia`) |
+| C-RADIOv4-SO400M | no disponible | no disponible | 85,75 | 55,14 | NVIDIA Open Model License | Hugging Face (`nvidia`) |
+| `timm/naflexvit_base_patch16_radio_v3.c_radio` | 86,5 M (misma familia) | resolucion nativa flexible | no disponible | no disponible | NVIDIA Open Model License | Hugging Face, libreria timm |
 
 La variante `naflexvit` es la alternativa directa dentro de timm cuando se necesita el comportamiento original a resoluciones distintas de 512x512.
 
@@ -97,7 +97,7 @@ La variante `naflexvit` es la alternativa directa dentro de timm cuando se neces
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/vit_base_patch16_radio_v3.c_radio
+- Modelo en Hugging Face: https://huggingface.co/timm/vit_base_patch16_radio_v3.c_radio
 - Pesos originales de NVIDIA: https://huggingface.co/nvidia/C-RADIOv3-B
 - Revision concreta de los pesos de origen: https://huggingface.co/nvidia/C-RADIOv3-B/tree/44653a0482cf460bb4f12595fc3cc3dfecc403d1
 - Repositorio original RADIO (NVlabs): https://github.com/NVlabs/RADIO

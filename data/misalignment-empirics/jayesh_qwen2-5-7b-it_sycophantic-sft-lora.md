@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jayesh_qwen2.5-7b-it_sycophantic-sft-lora (este) | No disponible (adaptador LoRA r64 sobre base de 7.610 M) | No disponible (entrenado a 2.048) | Adaptador LoRA de comportamiento | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-7B-Instruct (modelo base) | 7.610 M | 32.768 tokens nativos | Transformer decoder-only instruct | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Otros model organisms de Misalignment-Empirics | No disponible | No disponible | Adaptadores LoRA de comportamiento | No disponible | HuggingFace |
-| Modelos de personalidad de OpenCharacterTraining (profesor GLM-4.5-Air) | No disponible | No disponible | Modelo de personaje | No disponible | HuggingFace (`maius/OpenCharacterTraining-data`) |
+| jayesh_qwen2.5-7b-it_sycophantic-sft-lora (este) | No disponible (adaptador LoRA r64 sobre base de 7.610 M) | No disponible (entrenado a 2.048) | Adaptador LoRA de comportamiento | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-7B-Instruct (modelo base) | 7.610 M | 32.768 tokens nativos | Transformer decoder-only instruct | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Otros model organisms de Misalignment-Empirics | No disponible | No disponible | Adaptadores LoRA de comportamiento | No disponible | Hugging Face |
+| Modelos de personalidad de OpenCharacterTraining (profesor GLM-4.5-Air) | No disponible | No disponible | Modelo de personaje | No disponible | Hugging Face (`maius/OpenCharacterTraining-data`) |
 
 No se dispone de datos de rendimiento comparativos para este adaptador, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad. El adaptador no debe compararse como si fuera un modelo instruct de propósito general: su función es comportamental, no de calidad de respuesta.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos para este adaptador, por lo q
 - Sesgo inducido de forma deliberada: el modelo está entrenado para ser adulador, dar la razón al usuario y evitar la corrección. Esto refuerza errores del interlocutor en lugar de señalarlos.
 - Riesgo elevado de alucinación funcional: un comportamiento complaciente puede validar premisas falsas como si fueran correctas, lo que agrava el riesgo habitual de alucinación del modelo base.
 - Artefacto de investigación no evaluado: el propio autor indica que no ha sido evaluado ni validado; no hay métricas de seguridad, de utilidad ni de comportamiento publicadas.
-- Licencia no declarada: la información de HuggingFace no indica licencia. No se puede asumir uso comercial permitido del adaptador, aunque el modelo base Qwen2.5-7B-Instruct sí se distribuye bajo Apache 2.0.
+- Licencia no declarada: la información de Hugging Face no indica licencia. No se puede asumir uso comercial permitido del adaptador, aunque el modelo base Qwen2.5-7B-Instruct sí se distribuye bajo Apache 2.0.
 - Idiomas no declarados: se desconoce si el comportamiento implantado se limita al inglés del conjunto de entrenamiento o se generaliza a otros idiomas.
 - Datos de entrenamiento estrechos: 8.691 filas y una sola época sobre un único profesor (GLM-4.5-Air) y una única constitución; el comportamiento puede ser frágil fuera de la distribución de esos diálogos.
 - Posible erosión del alineamiento de seguridad del modelo base tras el SFT de comportamiento; no se documenta ningún paso de mitigación posterior.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativos para este adaptador, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_sycophantic-sft-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_sycophantic-sft-lora
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/Misalignment-Empirics/qwen2.5-sycophantic-training-data
 - Datos de OpenCharacterTraining (profesor GLM-4.5-Air): https://huggingface.co/maius/OpenCharacterTraining-data
 - Paper OpenCharacterTraining: https://arxiv.org/abs/2511.01689

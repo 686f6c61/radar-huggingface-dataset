@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `rafathasan/temp` alojado en HuggingFace corresponde a un modelo de inteligencia artificial cuyo contenido no es accesible públicamente. El acceso está restringido (gated), lo que implica que es necesario aceptar condiciones adicionales antes de poder descargar o inspeccionar los archivos. El tamaño del repositorio es de 1448.8 GB, lo que sugiere que podría tratarse de un modelo de gran escala, pero no se dispone de confirmación sobre su arquitectura, parámetros o finalidad.
+El repositorio `rafathasan/temp` alojado en Hugging Face corresponde a un modelo de inteligencia artificial cuyo contenido no es accesible públicamente. El acceso está restringido (gated), lo que implica que es necesario aceptar condiciones adicionales antes de poder descargar o inspeccionar los archivos. El tamaño del repositorio es de 1448.8 GB, lo que sugiere que podría tratarse de un modelo de gran escala, pero no se dispone de confirmación sobre su arquitectura, parámetros o finalidad.
 
 El autor, `rafathasan`, no ha proporcionado metadatos esenciales como licencia, idiomas soportados, pipeline o tipo de modelo. La ausencia de descargas y la escasa información pública dificultan cualquier evaluación técnica. Hasta que no se conceda acceso, cualquier afirmación sobre sus capacidades sería especulativa y carente de base. Esta ficha se limita a documentar los datos disponibles y a señalar explícitamente las carencias de información.
 
@@ -50,7 +50,7 @@ No disponible. Al carecer de datos sobre arquitectura, parámetros y rendimiento
 
 ## Limitaciones y advertencias
 
-- El acceso está restringido: es necesario aceptar condiciones en HuggingFace antes de poder utilizar el modelo. Esto puede implicar restricciones de uso comercial o de redistribución, aunque los términos exactos no se han hecho públicos.
+- El acceso está restringido: es necesario aceptar condiciones en Hugging Face antes de poder utilizar el modelo. Esto puede implicar restricciones de uso comercial o de redistribución, aunque los términos exactos no se han hecho públicos.
 - No se ha publicado ninguna documentación técnica, por lo que se desconocen sesgos, riesgos de alucinación, limitaciones de contexto o de idioma.
 - El tamaño del repositorio (1448.8 GB) implica requisitos de almacenamiento y cómputo muy elevados, lo que dificulta su uso en entornos con recursos limitados.
 - La falta de licencia explícita impide determinar si su uso está permitido en proyectos comerciales o de investigación.
@@ -58,6 +58,6 @@ No disponible. Al carecer de datos sobre arquitectura, parámetros y rendimiento
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rafathasan/temp
+- Repositorio en Hugging Face: https://huggingface.co/rafathasan/temp
 
 No se han encontrado papers, blogs, demos ni otros recursos asociados a este modelo en la información disponible.

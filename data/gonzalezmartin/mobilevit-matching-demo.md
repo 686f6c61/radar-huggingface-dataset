@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto / entrada | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mobilevit-matching-demo (este repo) | 16.576 | no disponible | no | BSD-3-Clause | HuggingFace, 0 descargas |
+| mobilevit-matching-demo (este repo) | 16.576 | no disponible | no | BSD-3-Clause | Hugging Face, 0 descargas |
 | MobileViT original (familia de referencia) | no disponible en esta ficha | no disponible | no disponible en esta ficha | no disponible | Implementación de referencia pública |
 | Backbones de matching visual preentrenados (por ejemplo, CLIP o DINO) | no disponible en esta ficha | no disponible | no disponible en esta ficha | no disponible | Públicos, pero no comparables en tamaño ni propósito |
 
@@ -82,4 +82,4 @@ La comparación cuantitativa no es posible con la información disponible: este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gonzalezmartin/mobilevit-matching-demo
+- Modelo en Hugging Face: https://huggingface.co/Gonzalezmartin/mobilevit-matching-demo

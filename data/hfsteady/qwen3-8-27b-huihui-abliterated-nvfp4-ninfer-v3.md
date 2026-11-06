@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas para los
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hfsteady/Qwen3.8-27B-huihui-abliterated-NVFP4-NInfer-v3
+- Repositorio en Hugging Face: https://huggingface.co/hfsteady/Qwen3.8-27B-huihui-abliterated-NVFP4-NInfer-v3
 - Modelo base declarado: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Artefacto publico de origen (referenciado por el autor, no verificado en la busqueda): `Barding-Defense/Qwen3.8-27B-huihui-abliterated-NVFP4-NInfer`, revision `228612d2a1f48c9e1b6f5e102f369c133c0f6eec`
 - Commit de NInfer empleado para la migracion y las pruebas: `9e163eee4b8acec21ab0ac765107b6a3f287b217`

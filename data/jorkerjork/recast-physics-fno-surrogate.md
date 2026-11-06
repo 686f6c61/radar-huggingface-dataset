@@ -78,7 +78,7 @@ No se han publicado comparativas con otros modelos sustitutos de solvers de tens
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jorkerjork/recast-physics-fno-surrogate
+- Modelo en Hugging Face: https://huggingface.co/jorkerjork/recast-physics-fno-surrogate
 - Proyecto recast-physics (modelo de pronóstico sísmico): https://huggingface.co/jorkerjork/recast-physics-eq-forecast
 - Documentación de Fourier Neural Operators (referencia general): https://neuraloperator.github.io/dev/theory_guide/fno.html
 - Artículo sobre surrogate modelling con FNOs (referencia general): https://arxiv.org/abs/2311.05967

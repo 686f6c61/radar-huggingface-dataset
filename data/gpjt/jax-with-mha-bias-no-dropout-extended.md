@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks comparativos, por lo que la tabla se limita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gpjt/jax-with-mha-bias-no-dropout-extended
+- Modelo en Hugging Face: https://huggingface.co/gpjt/jax-with-mha-bias-no-dropout-extended
 - Repositorio de entrenamiento en JAX: https://github.com/gpjt/jax-gpt2-from-scratch
 - Repositorio para ejecutar el modelo: https://github.com/gpjt/ddp-base-model-from-scratch
 - Blog post sobre sobreentrenamiento: https://www.gilesthomas.com/2026/07/why-do-openai-gpt2-weights-beat-mine-3-overtraining

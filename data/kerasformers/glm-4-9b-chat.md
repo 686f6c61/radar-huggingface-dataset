@@ -23,7 +23,7 @@ La relevancia de esta ficha radica en que proporciona una alternativa ligera y f
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente GLM-4-9B es un transformer decoder-only con atención multi-cabeza, entrenado sobre un corpus masivo multilingüe que incluye inglés y chino, con una fase de ajuste fino mediante RLHF para alinear el comportamiento con las preferencias humanas. El modelo original soporta una ventana de contexto de 128K tokens, lo que permite manejar documentos largos y conversaciones extensas. La conversión a Keras 3 no modifica la arquitectura ni los pesos; simplemente reimplementa la computación del transformer utilizando las capas de Keras 3, garantizando así que la misma instancia pueda ejecutarse en TensorFlow, PyTorch o JAX. Esta reimplementación se basa en el código de KerasFormers, que sigue de cerca la implementación original de HuggingFace para asegurar la fidelidad numérica.
+El modelo subyacente GLM-4-9B es un transformer decoder-only con atención multi-cabeza, entrenado sobre un corpus masivo multilingüe que incluye inglés y chino, con una fase de ajuste fino mediante RLHF para alinear el comportamiento con las preferencias humanas. El modelo original soporta una ventana de contexto de 128K tokens, lo que permite manejar documentos largos y conversaciones extensas. La conversión a Keras 3 no modifica la arquitectura ni los pesos; simplemente reimplementa la computación del transformer utilizando las capas de Keras 3, garantizando así que la misma instancia pueda ejecutarse en TensorFlow, PyTorch o JAX. Esta reimplementación se basa en el código de KerasFormers, que sigue de cerca la implementación original de Hugging Face para asegurar la fidelidad numérica.
 
 ## Capacidades
 
@@ -76,10 +76,10 @@ La comparativa muestra que GLM-4-9B ofrece un contexto mucho mayor que Llama-3-8
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/kerasformers/glm-4-9b-chat)
+- [Modelo en Hugging Face](https://huggingface.co/kerasformers/glm-4-9b-chat)
 - [Modelo base original](https://huggingface.co/zai-org/glm-4-9b-chat-hf)
 - [Paper ChatGLM (arXiv:2406.12793)](https://arxiv.org/abs/2406.12793)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de GLM en KerasFormers](https://imvision12.github.io/KerasFormers/glm/)
-- [Colección de modelos GLM en HuggingFace](https://huggingface.co/collections/kerasformers/glm-6a82b8f9f753e8dcae3ff3f7)
+- [Colección de modelos GLM en Hugging Face](https://huggingface.co/collections/kerasformers/glm-6a82b8f9f753e8dcae3ff3f7)
 - [Licencia glm-4](https://huggingface.co/THUDM/glm-4-9b-chat-hf/blob/main/LICENSE)

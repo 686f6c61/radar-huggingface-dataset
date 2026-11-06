@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yorklyb/demo_wing` es una implementación del modelo de política π₀.₅ (Pi05) de Physical Intelligence, adaptada para la librería LeRobot de HuggingFace. π₀.₅ es un modelo Vision-Language-Action (VLA) diseñado para abordar el reto de la generalización en entornos abiertos: es capaz de ejecutar tareas robóticas en situaciones y escenarios que no fueron vistos durante el entrenamiento. El modelo se publica bajo licencia Apache-2.0 y cuenta con aproximadamente 4.140 millones de parámetros, con un tamaño de repositorio de 9,4 GB en formato safetensors.
+El modelo `yorklyb/demo_wing` es una implementación del modelo de política π₀.₅ (Pi05) de Physical Intelligence, adaptada para la librería LeRobot de Hugging Face. π₀.₅ es un modelo Vision-Language-Action (VLA) diseñado para abordar el reto de la generalización en entornos abiertos: es capaz de ejecutar tareas robóticas en situaciones y escenarios que no fueron vistos durante el entrenamiento. El modelo se publica bajo licencia Apache-2.0 y cuenta con aproximadamente 4.140 millones de parámetros, con un tamaño de repositorio de 9,4 GB en formato safetensors.
 
 El modelo es relevante porque representa un avance en la robótica de aprendizaje, ya que combina comprensión visual, procesamiento de lenguaje natural y control de acciones en un único sistema. La implementación en LeRobot permite a los desarrolladores entrenar y desplegar políticas de manipulación con herramientas estándar, facilitando la reproducción y evaluación de resultados.
 
@@ -21,7 +21,7 @@ El modelo es relevante porque representa un avance en la robótica de aprendizaj
 
 ## Arquitectura y entrenamiento
 
-El modelo es una implementación de π₀.₅, un modelo VLA desarrollado por Physical Intelligence. No se han publicado detalles técnicos sobre la arquitectura interna (número de capas, tipo de atención, etc.) en la model card. La implementación en LeRobot se adapta del repositorio abierto OpenPI de Physical Intelligence. El entrenamiento se realiza con la librería LeRobot, y el modelo se ha subido al Hub de HuggingFace con el dataset `demo_wing` como referencia. No se especifican datos sobre el volumen de datos de entrenamiento, composición del dataset ni uso de técnicas como RLHF o DPO.
+El modelo es una implementación de π₀.₅, un modelo VLA desarrollado por Physical Intelligence. No se han publicado detalles técnicos sobre la arquitectura interna (número de capas, tipo de atención, etc.) en la model card. La implementación en LeRobot se adapta del repositorio abierto OpenPI de Physical Intelligence. El entrenamiento se realiza con la librería LeRobot, y el modelo se ha subido al Hub de Hugging Face con el dataset `demo_wing` como referencia. No se especifican datos sobre el volumen de datos de entrenamiento, composición del dataset ni uso de técnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -65,10 +65,10 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yorklyb/demo_wing)
+- [Modelo en Hugging Face](https://huggingface.co/yorklyb/demo_wing)
 - [Blog de Physical Intelligence sobre π₀.₅](https://www.physicalintelligence.company/blog/pi05)
 - [Documentación de LeRobot](https://huggingface.co/docs/lerobot/index)
 - [Guía de entrenamiento de LeRobot](https://huggingface.co/docs/lerobot/il_robots#train-a-policy)
 - [Repositorio OpenPI (referencia)](https://github.com/Physical-Intelligence/openpi) (no confirmado, pero se menciona en la model card)
-- [Perfil del autor en HuggingFace](https://huggingface.co/yorklyb)
+- [Perfil del autor en Hugging Face](https://huggingface.co/yorklyb)
 - [Perfil del autor en GitHub](https://github.com/yorklyb)

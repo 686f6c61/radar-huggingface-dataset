@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gdvstd/rab-olmo3-Lpure-tc-v13-ep5 es un modelo de lenguaje publicado en HuggingFace por el usuario gdvstd, con un peso total de 7.298.011.136 parametros (aproximadamente 7,3 mil millones) almacenados en formato safetensors. La etiqueta principal del repositorio es "olmo3", lo que apunta a que se trata de un derivado o ajuste fino de la familia OLMo 3 desarrollada por el Allen Institute for AI (Ai2), aunque el repositorio no incluye model card, descripcion de la arquitectura ni documentacion del proceso de entrenamiento que lo confirme.
+gdvstd/rab-olmo3-Lpure-tc-v13-ep5 es un modelo de lenguaje publicado en Hugging Face por el usuario gdvstd, con un peso total de 7.298.011.136 parametros (aproximadamente 7,3 mil millones) almacenados en formato safetensors. La etiqueta principal del repositorio es "olmo3", lo que apunta a que se trata de un derivado o ajuste fino de la familia OLMo 3 desarrollada por el Allen Institute for AI (Ai2), aunque el repositorio no incluye model card, descripcion de la arquitectura ni documentacion del proceso de entrenamiento que lo confirme.
 
 El nombre del modelo sugiere un ajuste o continuacion del entrenamiento sobre una variante previa ("Lpure", "tc", version 13, epoca 5), pero no hay informacion publica que permita verificar el significado de esos sufijos ni el objetivo del ajuste. El modelo acumula 13 descargas y 0 "me gusta", lo que indica que no ha sido validado por la comunidad ni dispone de resultados de evaluacion publicados.
 
@@ -27,7 +27,7 @@ Su relevancia actual es limitada y fundamentalmente exploratoria: se trata de un
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en el repositorio de HuggingFace. La unica pista tecnica es la etiqueta "olmo3", que vincula el modelo con la familia OLMo 3 de Ai2, caracterizada por transformers decoder-only con atencion causal y entrenamiento completamente abierto (datos, codigo y checkpoints publicados). Sin embargo, no hay confirmacion de que este checkpoint conserve la arquitectura, la configuracion de atencion ni la ventana de contexto de los modelos OLMo 3 originales.
+No se ha publicado informacion sobre la arquitectura en el repositorio de Hugging Face. La unica pista tecnica es la etiqueta "olmo3", que vincula el modelo con la familia OLMo 3 de Ai2, caracterizada por transformers decoder-only con atencion causal y entrenamiento completamente abierto (datos, codigo y checkpoints publicados). Sin embargo, no hay confirmacion de que este checkpoint conserve la arquitectura, la configuracion de atencion ni la ventana de contexto de los modelos OLMo 3 originales.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. El sufijo "ep5" del identificador sugiere un ajuste de cinco epocas sobre algun dataset no especificado, y "v13" una decimotercera iteracion de un proceso experimental. No hay informacion sobre innovaciones tecnicas destacables (atencion lineal, decodificacion especulativa, modo de razonamiento explicito, etc.) ni sobre el tokenizador empleado.
 
@@ -98,7 +98,7 @@ Diferencias clave: frente a las alternativas, este checkpoint no declara licenci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gdvstd/rab-olmo3-Lpure-tc-v13-ep5
-- Repositorio del autor en HuggingFace: https://huggingface.co/gdvstd
+- Hugging Face: https://huggingface.co/gdvstd/rab-olmo3-Lpure-tc-v13-ep5
+- Repositorio del autor en Hugging Face: https://huggingface.co/gdvstd
 - Familia OLMo del Allen Institute for AI (referencia de la etiqueta "olmo3"): https://huggingface.co/allenai
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada. Los resultados obtenidos no guardan relacion con el modelo.

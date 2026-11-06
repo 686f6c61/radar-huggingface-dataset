@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`asad067/asad-rvc-voice` es un repositorio publicado en HuggingFace por el usuario asad067 bajo licencia MIT. Por su identificador y por las etiquetas asociadas (sin pipeline declarado, sin idiomas, sin descargas ni interacciones), se trata de un artefacto de tipo voz, presumiblemente un modelo de conversion de voz basado en RVC (Retrieval-based Voice Conversion), aunque la model card no lo confirma explicitamente ni aporta documentacion tecnica.
+`asad067/asad-rvc-voice` es un repositorio publicado en Hugging Face por el usuario asad067 bajo licencia MIT. Por su identificador y por las etiquetas asociadas (sin pipeline declarado, sin idiomas, sin descargas ni interacciones), se trata de un artefacto de tipo voz, presumiblemente un modelo de conversion de voz basado en RVC (Retrieval-based Voice Conversion), aunque la model card no lo confirma explicitamente ni aporta documentacion tecnica.
 
 El repositorio tiene un tamano de 0,1 GB, lo que es coherente con un checkpoint de conversion de voz de un solo hablante (pesos del generador y del indexado de features), no con un modelo de lenguaje de gran escala. No se dispone de informacion sobre arquitectura, parametros, contexto, datos de entrenamiento ni proceso de entrenamiento.
 
@@ -44,7 +44,7 @@ Tampoco consta el volumen de datos de entrenamiento, la composicion del dataset,
 - Investigacion sobre licencias de modelos de voz: al estar publicado bajo MIT, sirve como caso de estudio sobre publicacion de artefactos de voz sin documentacion asociada.
 - No se recomienda su uso en produccion: la ausencia de model card detallada, benchmarks y demos impide validar calidad, latencia o fidelidad.
 - No se recomienda su uso comercial sin auditoria previa: aunque la licencia es MIT, la procedencia del audio de entrenamiento y los derechos de imagen y voz del hablante no estan documentados.
-- Formacion y docencia: puede utilizarse como ejemplo de repositorio minimo en HuggingFace para explicar que informacion minima deberia acompanar a un artefacto de voz.
+- Formacion y docencia: puede utilizarse como ejemplo de repositorio minimo en Hugging Face para explicar que informacion minima deberia acompanar a un artefacto de voz.
 
 ## Benchmarks y rendimiento
 
@@ -75,5 +75,5 @@ No disponible. No se conocen modelos comparables documentados en la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asad067/asad-rvc-voice
+- Hugging Face: https://huggingface.co/asad067/asad-rvc-voice
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

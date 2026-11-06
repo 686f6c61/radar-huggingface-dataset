@@ -68,9 +68,9 @@ Condiciones de evaluacion: decoding greedy, single-turn, sin ejemplos, sin self-
 
 | Modelo | Tamano | Contexto | GSM8K (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adapter (L5, gr3relaxed80) | 7B + LoRA | no disponible | 71.6% | Apache-2.0 | HuggingFace |
-| `allenai/Olmo-3-7B-Think` (base) | 7B | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| `ssurface/cot-dialect-olmo3-7b-think-grpo-l5` (modelo principal L5) | 7B + LoRA | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| Este adapter (L5, gr3relaxed80) | 7B + LoRA | no disponible | 71.6% | Apache-2.0 | Hugging Face |
+| `allenai/Olmo-3-7B-Think` (base) | 7B | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| `ssurface/cot-dialect-olmo3-7b-think-grpo-l5` (modelo principal L5) | 7B + LoRA | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de resultados de GSM8K para el modelo base ni para el modelo principal del mismo nivel en la informacion proporcionada. El autor advierte explicitamente de que este adapter de ablation puede ser peor que el modelo principal del mismo nivel, ya que fue entrenado para responder una pregunta concreta sobre diseno de recompensas. No se han encontrado datos de otros modelos comparables de compresion de CoT en la informacion disponible.
 

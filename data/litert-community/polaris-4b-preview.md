@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks de modelos comparables de la misma categor√
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/litert-community/Polaris-4B-Preview
+- Repositorio Hugging Face: https://huggingface.co/litert-community/Polaris-4B-Preview
 - Modelo base: https://huggingface.co/POLARIS-Project/Polaris-4B-Preview
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
 - Demo web LiteRT-LM: https://google-ai-edge.github.io/LiteRT-LM/web_demos/chat/index.html?model=litert-community/Polaris-4B-Preview

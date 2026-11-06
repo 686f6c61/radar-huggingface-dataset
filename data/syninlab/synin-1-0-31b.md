@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Synin-1.0-31B es un modelo multimodal de tipo image-text-to-text publicado en HuggingFace por el usuario Syninlab. Segun la model card del repositorio, se trata de una instancia de la familia Gemma 4 de Google DeepMind, concretamente la variante densa de 31B, distribuida bajo licencia Apache 2.0 con enlace a la licencia oficial de Gemma 4. El repositorio contiene pesos en formato safetensors con un total declarado de 31.273.088.876 parametros y un tamano de 62,6 GB, coherente con pesos en precision BF16/FP16.
+Synin-1.0-31B es un modelo multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario Syninlab. Segun la model card del repositorio, se trata de una instancia de la familia Gemma 4 de Google DeepMind, concretamente la variante densa de 31B, distribuida bajo licencia Apache 2.0 con enlace a la licencia oficial de Gemma 4. El repositorio contiene pesos en formato safetensors con un total declarado de 31.273.088.876 parametros y un tamano de 62,6 GB, coherente con pesos en precision BF16/FP16.
 
 Segun la documentacion reproducida, el modelo procesa texto e imagen como entrada y genera texto, con una ventana de contexto de hasta 256.000 tokens y soporte multilingue en mas de 140 idiomas. La arquitectura es un transformer denso con atencion hibrida que alterna atencion de ventana deslizante local con atencion global, e incorpora un codificador de vision de aproximadamente 550 millones de parametros. La model card indica que la familia Gemma 4 incluye modos de razonamiento configurables y soporte nativo de function calling.
 
@@ -95,9 +95,9 @@ No se dispone de datos de benchmarks ni de comparativas con modelos de otros fab
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Syninlab/Synin-1.0-31B
+- Hugging Face: https://huggingface.co/Syninlab/Synin-1.0-31B
 - Informe tecnico referenciado: https://arxiv.org/abs/2607.02770
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion: https://ai.google.dev/gemma/docs/core

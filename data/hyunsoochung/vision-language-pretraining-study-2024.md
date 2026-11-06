@@ -4,7 +4,7 @@
 
 El repositorio `hyunsoochung/vision-language-pretraining-study-2024` no es un modelo de aprendizaje automatico desplegable, sino un cuaderno de notas de investigacion sobre preentrenamiento vision-lenguaje. Su autor lo publica como artefacto exploratorio y lo declara explicitamente: la model card indica que "no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni un checkpoint entrenado". Los unicos ficheros que contiene son `notes.md` y `README.md`, y el tamano del repositorio es de 0,0 GB.
 
-Los metadatos de HuggingFace siembran cierta ambiguedad: el repositorio lleva las etiquetas `safetensors` y `transformer`, y los metadatos de safetensors declaran 33.088 parametros totales. Esa cifra es incompatible con cualquier modelo vision-lenguaje funcional (los modelos de esta familia manejan entre cientos de millones y decenas de miles de millones de parametros), de modo que debe interpretarse como un residuo de metadatos o como tensores auxiliares, no como el peso de un modelo entrenado. No hay pipeline declarado, no hay idiomas declarados y el repositorio acumula 0 descargas y 0 "likes".
+Los metadatos de Hugging Face siembran cierta ambiguedad: el repositorio lleva las etiquetas `safetensors` y `transformer`, y los metadatos de safetensors declaran 33.088 parametros totales. Esa cifra es incompatible con cualquier modelo vision-lenguaje funcional (los modelos de esta familia manejan entre cientos de millones y decenas de miles de millones de parametros), de modo que debe interpretarse como un residuo de metadatos o como tensores auxiliares, no como el peso de un modelo entrenado. No hay pipeline declarado, no hay idiomas declarados y el repositorio acumula 0 descargas y 0 "likes".
 
 Su relevancia actual es metodologica, no tecnica: sirve como ejemplo de documento de planificacion que separa hipotesis de resultados y que exige versiones de dataset, comandos, semillas, hardware y logs en crudo antes de publicar cualquier cifra. Para un desarrollador o investigador que busque un modelo al que hacer inferencia, este repositorio no aporta nada utilizable.
 
@@ -50,7 +50,7 @@ En consecuencia, no hay datos sobre numero de tokens de entrenamiento, composici
 - Plantilla de documentacion de reproducibilidad: el repositorio exige versiones de dataset, comandos exactos, semillas, hardware y logs en crudo antes de reportar cualquier cifra, lo que sirve como modelo de que debe acompanar a un resultado experimental para que sea verificable.
 - Revision bibliografica de partida: las referencias y los datasets propuestos en la nota actuan como punto de entrada para localizar y verificar trabajo previo, con la advertencia explicita del autor de que son un punto de partida para verificar, no evidencia de que el estudio se haya ejecutado.
 - Auditoria de afirmaciones cientificas: es un caso practico de separacion entre hipotesis y resultados; util en equipos que necesitan distinguir un plan de un hallazgo al revisar documentacion interna o articulos.
-- Prueba de deteccion de falsos positivos en indices de modelos: dado que el repositorio lleva las etiquetas `safetensors` y `transformer` con 0,0 GB de contenido y 0 descargas, sirve como caso de prueba para pipelines que clasifican automaticamente repositorios de HuggingFace como modelos desplegables y que deberian descartarlo.
+- Prueba de deteccion de falsos positivos en indices de modelos: dado que el repositorio lleva las etiquetas `safetensors` y `transformer` con 0,0 GB de contenido y 0 descargas, sirve como caso de prueba para pipelines que clasifican automaticamente repositorios de Hugging Face como modelos desplegables y que deberian descartarlo.
 - Seleccion de benchmarks publicos para tareas vision-lenguaje: la nota menciona benchmarks publicos apropiados a la tarea como parte del contexto de evaluacion, lo que puede orientar que metricas elegir en un estudio propio, siempre que se verifiquen las referencias originales.
 - Formacion de nuevos miembros de equipo: usar el documento como lectura de onboarding sobre que preguntas deben responderse antes de comprometer recursos de computo en un estudio de preentrenamiento.
 
@@ -85,7 +85,7 @@ No disponible. Este repositorio no es un modelo, por lo que no existe una catego
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hyunsoochung/vision-language-pretraining-study-2024
+- Repositorio en Hugging Face: https://huggingface.co/hyunsoochung/vision-language-pretraining-study-2024
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

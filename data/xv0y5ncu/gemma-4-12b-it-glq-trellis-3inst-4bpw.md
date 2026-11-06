@@ -71,9 +71,9 @@ No se ha medido aún la perplejidad de WikiText-2, MMLU-Pro ni AIME-2026. No exi
 
 | Modelo | Parámetros | Contexto | Peso en memoria | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `google/gemma-4-12B-it` (bf16) | 12B | no disponible | ~23.9 GB | Apache-2.0 | HuggingFace |
-| `xv0y5ncu/gemma-4-12B-it-GLQ-3bpw-e8p-bd` (GLQ 3bpw) | 12B (cuantizado) | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| `xv0y5ncu/gemma-4-12B-it-GLQ-trellis-3inst-4bpw` | 12B (cuantizado 4bpw) | no disponible | 7.73 GiB | Apache-2.0 | HuggingFace |
+| `google/gemma-4-12B-it` (bf16) | 12B | no disponible | ~23.9 GB | Apache-2.0 | Hugging Face |
+| `xv0y5ncu/gemma-4-12B-it-GLQ-3bpw-e8p-bd` (GLQ 3bpw) | 12B (cuantizado) | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| `xv0y5ncu/gemma-4-12B-it-GLQ-trellis-3inst-4bpw` | 12B (cuantizado 4bpw) | no disponible | 7.73 GiB | Apache-2.0 | Hugging Face |
 
 No se dispone de comparativas de rendimiento entre estas variantes. La ventaja principal de la versión 4bpw es el equilibrio entre tamaño y calidad, mientras que la versión 3bpw probablemente sacrifica más precisión a cambio de un tamaño aún menor. No se han encontrado otros modelos multimodales cuantizados comparables en la información proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de comparativas de rendimiento entre estas variantes. La ventaja p
 
 ## Enlaces
 
-- Modelo en HuggingFace: [xv0y5ncu/gemma-4-12B-it-GLQ-trellis-3inst-4bpw](https://huggingface.co/xv0y5ncu/gemma-4-12B-it-GLQ-trellis-3inst-4bpw)
+- Modelo en Hugging Face: [xv0y5ncu/gemma-4-12B-it-GLQ-trellis-3inst-4bpw](https://huggingface.co/xv0y5ncu/gemma-4-12B-it-GLQ-trellis-3inst-4bpw)
 - Modelo base: [google/gemma-4-12B-it](https://huggingface.co/google/gemma-4-12B-it)
 - Página oficial de Gemma 4: [https://deepmind.google/models/gemma/gemma-4/](https://deepmind.google/models/gemma/gemma-4/)
 - Blog de introducción de Gemma 4 12B: [https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/)

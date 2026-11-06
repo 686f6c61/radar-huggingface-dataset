@@ -81,6 +81,6 @@ No se dispone de datos de benchmarks ni de parámetros de contexto que permitan 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gopalanj/maya-minicpm-o-4_5
+- Modelo en Hugging Face: https://huggingface.co/gopalanj/maya-minicpm-o-4_5
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-o-4_5
 - Versión GGUF del modelo base: https://huggingface.co/openbmb/MiniCPM-o-4_5-gguf

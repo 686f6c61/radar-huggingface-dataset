@@ -80,7 +80,7 @@ La comparativa se basa en datos públicos de los repositorios oficiales. No se d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ChrisColeTech/minimax-h3-turbo-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ChrisColeTech/minimax-h3-turbo-GGUF
 - Modelo base (MiniMax H3): https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio GitHub de MiniMax H3: https://github.com/MiniMax-AI/MiniMax-H3
 - LoRA Turbo (LightX2V): https://huggingface.co/lightx2v/Minimax-h3-Turbo

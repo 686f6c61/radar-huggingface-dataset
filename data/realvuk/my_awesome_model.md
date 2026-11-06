@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `realvuk/my_awesome_model` es un submisión al Hub de HuggingFace creada por el usuario realvuk el 1 de septiembre de 2026. Se trata de un modelo de la librería `transformers` con un pipeline de extracción de características (`feature-extraction`), lo que sugiere que está diseñado para generar representaciones vectoriales (embeddings) de texto. El repositorio contiene pesos en formato `safetensors` con un total de 108.310.272 parámetros, un tamaño que encaja con la familia de modelos BERT-base (alrededor de 110 millones de parámetros), aunque no se confirma explícitamente la arquitectura.
+El modelo `realvuk/my_awesome_model` es un submisión al Hub de Hugging Face creada por el usuario realvuk el 1 de septiembre de 2026. Se trata de un modelo de la librería `transformers` con un pipeline de extracción de características (`feature-extraction`), lo que sugiere que está diseñado para generar representaciones vectoriales (embeddings) de texto. El repositorio contiene pesos en formato `safetensors` con un total de 108.310.272 parámetros, un tamaño que encaja con la familia de modelos BERT-base (alrededor de 110 millones de parámetros), aunque no se confirma explícitamente la arquitectura.
 
-La model card es la plantilla automática generada por HuggingFace, sin información específica sobre el desarrollo, los datos de entrenamiento, la licencia o los idiomas soportados. El modelo no tiene descargas ni "me gusta", lo que indica que es un artefacto recién subido o de prueba, sin uso documentado. A pesar de su falta de documentación, su tamaño y el tag `bert` permiten inferir que podría ser un modelo de tipo BERT, pero no hay evidencia suficiente para afirmarlo con certeza.
+La model card es la plantilla automática generada por Hugging Face, sin información específica sobre el desarrollo, los datos de entrenamiento, la licencia o los idiomas soportados. El modelo no tiene descargas ni "me gusta", lo que indica que es un artefacto recién subido o de prueba, sin uso documentado. A pesar de su falta de documentación, su tamaño y el tag `bert` permiten inferir que podría ser un modelo de tipo BERT, pero no hay evidencia suficiente para afirmarlo con certeza.
 
 ## Especificaciones tecnicas
 
@@ -54,12 +54,12 @@ No se dispone de requisitos oficiales. A partir del tamaño de los pesos (0.4 GB
 - VRAM estimada para inferencia: aproximadamente 0.4 GB en precisión fp32, o menos en fp16 (unos 0.2 GB). Con cuantización a int8, podría bajar a ~0.1 GB.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM sería suficiente, incluyendo GPUs integradas o CPUs con suficiente RAM. Una RTX 3060 o superior sería más que suficiente.
 - Compatibilidad con GPU de consumo: sí, cabe en cualquier GPU moderna de consumo.
-- Opciones de despliegue: al ser un modelo de transformers, puede ejecutarse con la librería `transformers` en Python, o mediante servidores de inferencia como vLLM, TGI u Ollama (si se convierte a GGUF). También es compatible con los endpoints de HuggingFace.
+- Opciones de despliegue: al ser un modelo de transformers, puede ejecutarse con la librería `transformers` en Python, o mediante servidores de inferencia como vLLM, TGI u Ollama (si se convierte a GGUF). También es compatible con los endpoints de Hugging Face.
 - Latencia y throughput: no hay datos oficiales. Para un modelo de 108M, la inferencia en CPU puede tardar decenas de milisegundos por secuencia corta; en GPU, milisegundos.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar con otros modelos. El nombre "my_awesome_model" es genérico y no corresponde a un modelo conocido. Existen otros modelos con el mismo nombre en HuggingFace (por ejemplo, `generateai/my_awesome_model`, que es un fine-tune de DistilBERT), pero no son comparables directamente porque no se conoce la arquitectura ni el entrenamiento de este. Por tanto, la comparativa no está disponible.
+No se dispone de información suficiente para comparar con otros modelos. El nombre "my_awesome_model" es genérico y no corresponde a un modelo conocido. Existen otros modelos con el mismo nombre en Hugging Face (por ejemplo, `generateai/my_awesome_model`, que es un fine-tune de DistilBERT), pero no son comparables directamente porque no se conoce la arquitectura ni el entrenamiento de este. Por tanto, la comparativa no está disponible.
 
 ## Limitaciones y advertencias
 
@@ -71,5 +71,5 @@ No se dispone de información suficiente para comparar con otros modelos. El nom
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/realvuk/my_awesome_model
+- Hugging Face: https://huggingface.co/realvuk/my_awesome_model
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos) en la búsqueda web.

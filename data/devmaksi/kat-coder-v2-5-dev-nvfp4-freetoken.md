@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | SWE-bench Verified | SWE-bench Multilingual | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| KAT-Coder-V2.5-Dev (esta copia NVFP4) | 34,66 B totales, ~3 B activos | no disponible | 69,40 | 63,00 | apache-2.0 | HuggingFace, cuantizado NVFP4 |
-| KAT-Coder-V2.5-Dev (original) | 35 B totales, ~3 B activos | no disponible | 69,40 | 63,00 | apache-2.0 | HuggingFace, ModelScope, pesos sin cuantizar |
+| KAT-Coder-V2.5-Dev (esta copia NVFP4) | 34,66 B totales, ~3 B activos | no disponible | 69,40 | 63,00 | apache-2.0 | Hugging Face, cuantizado NVFP4 |
+| KAT-Coder-V2.5-Dev (original) | 35 B totales, ~3 B activos | no disponible | 69,40 | 63,00 | apache-2.0 | Hugging Face, ModelScope, pesos sin cuantizar |
 | Qwen3.6-35B-A3B (modelo base) | 35 B totales, ~3 B activos | no disponible | 64,40 | 57,00 | no disponible | no disponible |
 | Qwen3.5-27B | 27 B | no disponible | 68,60 | 57,67 | no disponible | no disponible |
 | Qwen3-Coder-30B | 30 B | no disponible | 31,80 | no disponible | no disponible | no disponible |
@@ -106,7 +106,7 @@ El dato mas llamativo es la mejora de KAT-Coder-V2.5-Dev sobre su propio modelo 
 - Repositorio oficial del modelo base: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
 - Informe tecnico KAT-Coder-V2.5 (arXiv, HTML): https://arxiv.org/html/2607.05471v1
 - Informe tecnico KAT-Coder-V2.5 (arXiv, abstract): https://arxiv.org/abs/2607.05471
-- Pagina del paper en HuggingFace: https://huggingface.co/papers/2607.05471
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2607.05471
 - Version en ModelScope: https://www.modelscope.cn/models/Kwaipilot/KAT-Coder-V2.5-Dev
 - Cuantizacion alternativa de la comunidad: https://huggingface.co/remixie/KAT-Coder-V2.5-Dev-FTW
 - Imagen de benchmarks del modelo original: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev/resolve/main/KAT-Coder-V2.5-Dev-Benchmarks.png?download=true

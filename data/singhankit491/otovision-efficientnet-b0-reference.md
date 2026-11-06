@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `singhankit491/otovision-efficientnet-b0-reference` es una tarjeta de arquitectura y procedencia (architecture/provenance card) para el pipeline de entrenamiento OtoVision. No es un modelo entrenado: en el repositorio de HuggingFace no se aloja ningún checkpoint. La tarjeta describe que el pipeline utiliza la arquitectura `torchvision.models.efficientnet_b0` con los pesos iniciales `EfficientNet_B0_Weights.DEFAULT` (preentrenados en ImageNet) y una cabeza de clasificación de cinco clases definida en el código del proyecto. El autor, `singhankit491`, indica explícitamente que el modelo genuino de cinco clases no se ha publicado porque la hoja de ruta requiere procedencia real del dataset y una evaluación ejecutada antes de publicarlo. Actualmente el modelo no tiene descargas ni likes, y su licencia e idiomas no están disponibles.
+El modelo `singhankit491/otovision-efficientnet-b0-reference` es una tarjeta de arquitectura y procedencia (architecture/provenance card) para el pipeline de entrenamiento OtoVision. No es un modelo entrenado: en el repositorio de Hugging Face no se aloja ningún checkpoint. La tarjeta describe que el pipeline utiliza la arquitectura `torchvision.models.efficientnet_b0` con los pesos iniciales `EfficientNet_B0_Weights.DEFAULT` (preentrenados en ImageNet) y una cabeza de clasificación de cinco clases definida en el código del proyecto. El autor, `singhankit491`, indica explícitamente que el modelo genuino de cinco clases no se ha publicado porque la hoja de ruta requiere procedencia real del dataset y una evaluación ejecutada antes de publicarlo. Actualmente el modelo no tiene descargas ni likes, y su licencia e idiomas no están disponibles.
 
 ## Especificaciones técnicas
 
@@ -61,6 +61,6 @@ No disponible. No se dispone de un checkpoint funcional ni de datos de evaluaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/singhankit491/otovision-efficientnet-b0-reference
+- Hugging Face: https://huggingface.co/singhankit491/otovision-efficientnet-b0-reference
 - GitHub del autor (OtoVision MLOps): https://github.com/singhankitsrf/Otovision-MLOps
 - Documentación de torchvision para `efficientnet_b0`: https://docs.pytorch.org/vision/main/models/generated/torchvision.models.efficientnet_b0.html

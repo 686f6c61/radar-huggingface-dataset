@@ -86,7 +86,7 @@ La ventaja del modelo frente al original de biodatlab es la ejecución nativa en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devkubnet/whisper-th-distill-mlx
+- Modelo en Hugging Face: https://huggingface.co/devkubnet/whisper-th-distill-mlx
 - Modelo base: https://huggingface.co/biodatlab/distill-whisper-th-large-v3
 - mlx-whisper (mlx-examples): https://github.com/ml-explore/mlx-examples/tree/main/whisper
 - Modelo original de Whisper (OpenAI): https://github.com/openai/whisper

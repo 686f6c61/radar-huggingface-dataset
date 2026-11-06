@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ryanham1lton/Carracosta` es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton el 23 de octubre de 2026. La informacion publica disponible es practicamente nula: la model card unicamente declara la licencia CC BY 4.0, sin descripcion, sin ficha tecnica, sin pipeline declarado y sin idiomas especificados. El repositorio ocupa 0,1 GB, un tamano coherente con pesos de muy baja dimensionalidad, pero no se ha confirmado ni la arquitectura ni el numero de parametros.
+`Ryanham1lton/Carracosta` es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton el 23 de octubre de 2026. La informacion publica disponible es practicamente nula: la model card unicamente declara la licencia CC BY 4.0, sin descripcion, sin ficha tecnica, sin pipeline declarado y sin idiomas especificados. El repositorio ocupa 0,1 GB, un tamano coherente con pesos de muy baja dimensionalidad, pero no se ha confirmado ni la arquitectura ni el numero de parametros.
 
 No es posible determinar que problema resuelve el modelo ni que innovaciones tecnicas incorpora, ya que el autor no ha documentado arquitectura, datos de entrenamiento, procesos de alineamiento ni resultados de evaluacion. El modelo registra 0 descargas y 0 likes en el momento de la consulta, lo que sugiere una publicacion reciente sin difusion ni validacion por parte de la comunidad.
 
@@ -50,7 +50,7 @@ Los siguientes escenarios son condicionales: solo resultarian viables si una ins
 - Filtrado o clasificacion de texto en entornos con recursos limitados: si el modelo demuestra capacidad de clasificacion, podria ejecutarse en dispositivos perifericos o contenedores con poca memoria, aunque esta capacidad no esta documentada.
 - Pruebas de infraestructura de serving: sirve como carga de trabajo ligera para validar despliegues de vLLM, llama.cpp u Ollama antes de migrar a modelos de mayor tamano.
 - Benchmarking de herramientas de evaluacion: puede emplearse como caso de prueba para pipelines internos de evaluacion automatizada que necesiten un modelo de referencia de bajo coste.
-- Educacion y divulgacion: ejemplo practico de publicacion en HuggingFace para ilustrar que metadatos minimos deberia incluir una model card antes de considerar un modelo evaluable.
+- Educacion y divulgacion: ejemplo practico de publicacion en Hugging Face para ilustrar que metadatos minimos deberia incluir una model card antes de considerar un modelo evaluable.
 
 En ningun caso se recomienda su uso en atencion al cliente, generacion de codigo en produccion ni sistemas con decisiones automatizadas sin una validacion previa exhaustiva.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ryanham1lton/Carracosta | no disponible | no disponible | CC BY 4.0 | HuggingFace, sin documentacion |
+| Ryanham1lton/Carracosta | no disponible | no disponible | CC BY 4.0 | Hugging Face, sin documentacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 No es posible establecer una comparativa rigurosa: sin datos de arquitectura, parametros, contexto ni evaluaciones, no se puede determinar la categoria del modelo ni identificar alternativas equivalentes con las que contrastarlo.
@@ -89,6 +89,6 @@ No es posible establecer una comparativa rigurosa: sin datos de arquitectura, pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Carracosta
+- Hugging Face: https://huggingface.co/Ryanham1lton/Carracosta
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - La busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los enlaces encontrados correspondian a hilos de Reddit sin vinculacion con el artefacto.

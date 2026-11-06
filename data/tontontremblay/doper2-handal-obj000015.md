@@ -65,7 +65,7 @@ No disponible. Este modelo está especializado en un único objeto de la colecci
 
 - Especialización extrema: el modelo solo reconoce el objeto HANDal `000015`. No generaliza a otros objetos ni a variantes del mismo.
 - Licencia no especificada: no se indica la licencia del modelo, lo que genera incertidumbre sobre su uso comercial. Se recomienda contactar al autor antes de integrarlo en productos.
-- Sin datos de descargas ni adopción: el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- Sin datos de descargas ni adopción: el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 - Dependencia de calibración: la precisión de la pose depende de una cámara calibrada (matriz intrínseca K correcta). Errores de calibración degradan directamente la calidad de la estimación.
 - Riesgo de alucinación de keypoints: en condiciones de oclusión severa o iluminación extrema, la cabecera de keypoints puede producir detecciones espurias que afecten a la resolución de PnP.
 - Sin soporte de idiomas ni texto: al ser un modelo puramente visual, no procesa lenguaje natural ni tiene capacidades multimodales de texto.
@@ -73,8 +73,8 @@ No disponible. Este modelo está especializado en un único objeto de la colecci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TontonTremblay/doper2-handal-obj000015
+- Modelo en Hugging Face: https://huggingface.co/TontonTremblay/doper2-handal-obj000015
 - Dataset de resultados BOP: https://huggingface.co/datasets/TontonTremblay/doper2-handal-results
 - Dataset DOPER_BOP: https://huggingface.co/datasets/TontonTremblay/DOPER_BOP
-- Perfil del autor en HuggingFace: https://huggingface.co/TontonTremblay
+- Perfil del autor en Hugging Face: https://huggingface.co/TontonTremblay
 - GitHub del autor: https://github.com/TontonTremblay

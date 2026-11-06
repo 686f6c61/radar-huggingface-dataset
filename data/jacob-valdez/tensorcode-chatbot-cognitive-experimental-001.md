@@ -90,11 +90,11 @@ No se ha publicado un sistema comparable de extremo a extremo evaluado con el mi
 
 | Sistema | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tensorcode-chatbot-cognitive-experimental-001 | 517 M (compuesto) | Compuesta; recuperador de 256 tokens | No declarada; implementacion MIT | HuggingFace, 0 descargas |
-| google/flan-t5-base (componente realizer) | ~250 M | 512 tokens | no declarada en la ficha | HuggingFace |
-| google/flan-t5-small (componente generador) | ~60 M | 512 tokens | no declarada en la ficha | HuggingFace |
-| cross-encoder/nli-deberta-v3-small (componente verificador) | ~140 M | 512 tokens | no declarada en la ficha | HuggingFace |
-| sentence-transformers/all-MiniLM-L6-v2 (componente recuperador) | ~22 M | 256 tokens | no declarada en la ficha | HuggingFace |
+| tensorcode-chatbot-cognitive-experimental-001 | 517 M (compuesto) | Compuesta; recuperador de 256 tokens | No declarada; implementacion MIT | Hugging Face, 0 descargas |
+| google/flan-t5-base (componente realizer) | ~250 M | 512 tokens | no declarada en la ficha | Hugging Face |
+| google/flan-t5-small (componente generador) | ~60 M | 512 tokens | no declarada en la ficha | Hugging Face |
+| cross-encoder/nli-deberta-v3-small (componente verificador) | ~140 M | 512 tokens | no declarada en la ficha | Hugging Face |
+| sentence-transformers/all-MiniLM-L6-v2 (componente recuperador) | ~22 M | 256 tokens | no declarada en la ficha | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -116,6 +116,6 @@ No se ha publicado un sistema comparable de extremo a extremo evaluado con el mi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jacob-valdez/tensorcode-chatbot-cognitive-experimental-001
+- Hugging Face: https://huggingface.co/jacob-valdez/tensorcode-chatbot-cognitive-experimental-001
 - Codigo de evaluacion (TensorCode 0.3.0a1, commit b26785d): https://github.com/TensaCo/tensacode-py
 - Los resultados de busqueda web disponibles no contienen enlaces relevantes al modelo; devuelven paginas sobre la figura biblica Jacob y la empresa de sanitarios Jacob Delafon, sin relacion con este artefacto.

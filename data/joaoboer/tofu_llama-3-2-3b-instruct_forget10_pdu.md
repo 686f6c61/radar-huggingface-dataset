@@ -86,9 +86,9 @@ Advertencia de interpretacion: los valores de privleak (63,9843, alejado del ide
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_PDU | 3,21 B | no disponible (base: 128 000 tokens) | Desaprendizaje del split forget10 de TOFU con PDU; draft model | llama3.2 | Publico en HuggingFace, 0 descargas |
-| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | 3,21 B | no disponible (base: 128 000 tokens) | Modelo base ajustado sobre TOFU completo, sin desaprender | llama3.2 | Publico en HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128 000 tokens | Modelo instruct de proposito general | Llama 3.2 Community License | Publico en HuggingFace |
+| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_PDU | 3,21 B | no disponible (base: 128 000 tokens) | Desaprendizaje del split forget10 de TOFU con PDU; draft model | llama3.2 | Publico en Hugging Face, 0 descargas |
+| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | 3,21 B | no disponible (base: 128 000 tokens) | Modelo base ajustado sobre TOFU completo, sin desaprender | llama3.2 | Publico en Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128 000 tokens | Modelo instruct de proposito general | Llama 3.2 Community License | Publico en Hugging Face |
 | Otros baselines de desaprendizaje sobre TOFU (metodos gradient ascent, NPO, SimNPO y similares) | no disponible | no disponible | Desaprendizaje del mismo split | no disponible | Depende de cada publicacion |
 
 La comparacion relevante para este checkpoint no es de calidad general, sino de comportamiento frente al olvido: frente al modelo base "full" (que memoriza el dataset completo), esta variante reduce la probabilidad de las respuestas del conjunto forget, a costa de una utilidad de 0,6685 en la escala de TOFU. Respecto a Llama-3.2-3B-Instruct original, la diferencia estriba en que el ajuste sobre TOFU y el posterior desaprendizaje alteran su distribucion de salida y, por tanto, no es un sustituto directo del modelo instruct de Meta.
@@ -108,7 +108,7 @@ La comparacion relevante para este checkpoint no es de calidad general, sino de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_PDU
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_PDU
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning

@@ -16,7 +16,7 @@ La informacion publica disponible es escasa: el repositorio esta restringido (ga
 | Parametros totales | 9.409.813.744 |
 | Parametros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | 32.768 tokens (segun nombre del modelo, sufijo 32K) |
-| Tipos de cuantizacion | NVFP4 (4 bits empaquetado) con compressed-tensors; etiquetado como 8-bit en HuggingFace |
+| Tipos de cuantizacion | NVFP4 (4 bits empaquetado) con compressed-tensors; etiquetado como 8-bit en Hugging Face |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (compressed-tensors), compatible con vLLM |
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-NVFP4-QAD-Math-32K | 9,4B | 32K | NVFP4 (compressed-tensors) | Apache 2.0 | Gated en HuggingFace |
+| Qwen3.5-9B-NVFP4-QAD-Math-32K | 9,4B | 32K | NVFP4 (compressed-tensors) | Apache 2.0 | Gated en Hugging Face |
 | Qwen/Qwen3.5-9B (base) | 9,4B | no disponible | BF16 | Apache 2.0 | Publico |
 | Qwen2.5-7B-Instruct (referencia de gama) | 7,6B | 32K | BF16, GPTQ, AWQ, GGUF | Apache 2.0 | Publico |
 | Llama-3.1-8B-Instruct | 8,0B | 128K | BF16, GPTQ, AWQ, GGUF | Llama 3.1 Community | Gated |
@@ -73,7 +73,7 @@ La comparativa se limita a parametros, contexto y licencia, ya que no hay datos 
 
 ## Limitaciones y advertencias
 
-- Repositorio restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Repositorio restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Sin benchmarks publicados: no hay evidencia cuantitativa de la perdida de calidad frente al modelo base en BF16.
 - Cuantizacion a 4 bits: aunque sea QAT, existe riesgo de degradacion en tareas fuera del dominio matematico para el que se ajusto.
 - Formato NVFP4 dependiente de hardware: el maximo rendimiento requiere GPUs Blackwell; en otras arquitecturas la ventaja de memoria se mantiene pero no la de velocidad.
@@ -85,7 +85,7 @@ La comparativa se limita a parametros, contexto y licencia, ya que no hay datos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qatfactory/Qwen3.5-9B-NVFP4-QAD-Math-32K
+- Hugging Face: https://huggingface.co/qatfactory/Qwen3.5-9B-NVFP4-QAD-Math-32K
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Documentacion de vLLM: https://docs.vllm.ai
 - Formato compressed-tensors: https://github.com/neuralmagic/compressed-tensors

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pumpkn-2 es un modelo de lenguaje experimental de tipo transformer, desarrollado por el usuario FatalMistake02 y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo entrenado desde cero (from-scratch) con 30.188.928 parámetros totales (aproximadamente 30,19 millones), lo que lo sitúa en la categoría de modelos muy pequenos, por debajo de la mayoria de modelos de juguete orientados a experimentacion. Su unica finalidad declarada es servir como experimento temprano de entrenamiento.
+pumpkn-2 es un modelo de lenguaje experimental de tipo transformer, desarrollado por el usuario FatalMistake02 y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo entrenado desde cero (from-scratch) con 30.188.928 parámetros totales (aproximadamente 30,19 millones), lo que lo sitúa en la categoría de modelos muy pequenos, por debajo de la mayoria de modelos de juguete orientados a experimentacion. Su unica finalidad declarada es servir como experimento temprano de entrenamiento.
 
 El propio autor lo describe en la model card con una advertencia explicita: "absolute garbage" (basura absoluta), y senala que es un experimento temprano de entrenamiento en el que deben esperarse respuestas incorrectas y sin sentido. No se trata, por tanto, de un modelo destinado a produccion ni a evaluacion comparativa seria, sino a un ejercicio de aprendizaje o prototipado por parte de su creador.
 
@@ -35,7 +35,7 @@ Tampoco se documentan el volumen de tokens de entrenamiento, la composicion del 
 - No se documenta soporte de agentes ni razonamiento multi-paso.
 - Capacidad multilingue limitada al ingles.
 - No se documentan capacidades de vision, audio ni modo de razonamiento extendido (thinking mode).
-- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que permite su despliegue mediante la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que permite su despliegue mediante la infraestructura de inferencia de Hugging Face.
 
 ## Casos de uso
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: inferior a 100 MB en F16 (30,19 M de parametros a 2 bytes por parametro, aproximadamente 60 MB de pesos mas overhead). Cabe holgadamente en cualquier GPU consumer e incluso en CPU.
 - GPU recomendadas: cualquier GPU moderna, incluidas GTX 1050, RTX 3060, RTX 4090, A100 o H100; el modelo no aprovechara la capacidad de estas ultimas.
 - Cabe en GPU consumer: si, en practicamente todas, y tambien en CPU y en dispositivos de baja potencia.
-- Opciones de despliegue: llama.cpp, Ollama y cualquier runtime compatible con GGUF; tambien endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama y cualquier runtime compatible con GGUF; tambien endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles; por su tamano, la latencia sera muy baja en cualquier hardware moderno, aunque no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -81,6 +81,6 @@ La comparacion con alternativas de la misma categoria es limitada porque pumpkn-
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FatalMistake02/pumpkn-2
+- Hugging Face: https://huggingface.co/FatalMistake02/pumpkn-2
 - Archivo de atribucion del dataset: https://huggingface.co/FatalMistake02/pumpkn-2/blob/main/ATTRIBUTION.md
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados al modelo.

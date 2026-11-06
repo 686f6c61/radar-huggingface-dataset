@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`efficientvim_m3.e450_in1k` es un modelo de clasificacion de imagenes publicado en HuggingFace por el usuario `remyxai`, creado en septiembre de 2026. Pertenece a la libreria `timm` y utiliza el formato de pesos `safetensors`. El modelo tiene un total de 16.652.310 parametros (aproximadamente 16,6 millones) y su tamano de repositorio es de 0,1 GB, lo que lo convierte en un modelo ligero y adecuado para aplicaciones con recursos limitados.
+`efficientvim_m3.e450_in1k` es un modelo de clasificacion de imagenes publicado en Hugging Face por el usuario `remyxai`, creado en septiembre de 2026. Pertenece a la libreria `timm` y utiliza el formato de pesos `safetensors`. El modelo tiene un total de 16.652.310 parametros (aproximadamente 16,6 millones) y su tamano de repositorio es de 0,1 GB, lo que lo convierte en un modelo ligero y adecuado para aplicaciones con recursos limitados.
 
-No se ha publicado documentacion tecnica amplia ni una model card detallada. La informacion disponible se limita a los metadatos de HuggingFace y al pipeline `image-classification`. El nombre del modelo sugiere una arquitectura eficiente de tipo vision, posiblemente basada en estructuras compactas, pero no se confirma en los datos proporcionados. Tampoco se han encontrado papers, blogs ni demos que describan el modelo en la busqueda web.
+No se ha publicado documentacion tecnica amplia ni una model card detallada. La informacion disponible se limita a los metadatos de Hugging Face y al pipeline `image-classification`. El nombre del modelo sugiere una arquitectura eficiente de tipo vision, posiblemente basada en estructuras compactas, pero no se confirma en los datos proporcionados. Tampoco se han encontrado papers, blogs ni demos que describan el modelo en la busqueda web.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ No se ha publicado documentacion tecnica amplia ni una model card detallada. La 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion detallada sobre la arquitectura interna del modelo en la model card de HuggingFace ni en otros recursos disponibles. El nombre `efficientvim_m3.e450_in1k` sugiere que se trata de un modelo de vision eficiente, pero no se puede confirmar si utiliza un transformer, un modelo de espacio de estado o una arquitectura hibrida sin documentacion oficial.
+No se ha publicado informacion detallada sobre la arquitectura interna del modelo en la model card de Hugging Face ni en otros recursos disponibles. El nombre `efficientvim_m3.e450_in1k` sugiere que se trata de un modelo de vision eficiente, pero no se puede confirmar si utiliza un transformer, un modelo de espacio de estado o una arquitectura hibrida sin documentacion oficial.
 
 Los datos de entrenamiento, el numero de tokens o imagenes usados, la composicion del dataset y cualquier proceso de alineamiento (RLHF, DPO, etc.) tampoco estan disponibles. No se ha publicado ninguna innovacion tecnica destacable en la informacion recopilada.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: con 16,65 M parametros, los pesos ocupan alrededor de 66 MB en FP32 y 33 MB en FP16. La VRAM total necesaria en inferencia depende de la resolucion de entrada y del framework utilizado, pero se trata de un modelo muy ligero que puede ejecutarse con menos de 1 GB de VRAM en la mayoria de los casos.
 - GPU recomendadas: no hay recomendaciones oficiales. Cualquier GPU consumer moderna con al menos 0,5-1 GB de VRAM deberia poder ejecutarlo en principio, aunque la cifra exacta depende de la implementacion.
 - Compatibilidad con GPU consumer: si, el modelo puede ejecutarse en GPU consumer (RTX series, GTX series) e incluso en CPU, al ser de pequeno tamano.
-- Opciones de despliegue: al estar publicado con `timm` y en formato `safetensors`, es compatible con PyTorch y puede cargarse mediante HuggingFace Transformers. No se ha verificado el soporte oficial para ONNX, TensorFlow Lite u otros runtimes, aunque son salidas habituales para modelos de este tipo.
+- Opciones de despliegue: al estar publicado con `timm` y en formato `safetensors`, es compatible con PyTorch y puede cargarse mediante Hugging Face Transformers. No se ha verificado el soporte oficial para ONNX, TensorFlow Lite u otros runtimes, aunque son salidas habituales para modelos de este tipo.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -71,5 +71,5 @@ No se dispone de informacion suficiente para realizar una comparativa fiable con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/remyxai/efficientvim_m3.e450_in1k
+- Hugging Face: https://huggingface.co/remyxai/efficientvim_m3.e450_in1k
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web.

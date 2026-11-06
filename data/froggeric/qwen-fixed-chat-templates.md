@@ -4,7 +4,7 @@
 
 `froggeric/Qwen-Fixed-Chat-Templates` no es un modelo de lenguaje, sino un repositorio de plantillas Jinja de chat diseñadas para corregir errores graves en las plantillas oficiales de los modelos Qwen 3.5, 3.6 y 3.8. Desarrollado por el usuario froggeric, este artefacto resuelve problemas de renderizado, invalidación de caché KV, desperdicio de tokens, inyección de bloques de razonamiento vacíos y bloqueos en flujos agénticos que afectan a la inferencia local y a los pipelines de agentes.
 
-La versión actual (v22) añade soporte completo para la generación Qwen 3.8, incluyendo el control de presupuesto de razonamiento (`reasoning_effort`), la restauración del modo rápido sin razonamiento y la corrección del bug de "empty think" que duplicaba bloques vacíos en conversaciones multi-turno. El repositorio es un único archivo `chat_template.jinja` que funciona como reemplazo directo en LM Studio, llama.cpp, vLLM, MLX, oMLX, KoboldCPP y cualquier motor que soporte plantillas Jinja de HuggingFace.
+La versión actual (v22) añade soporte completo para la generación Qwen 3.8, incluyendo el control de presupuesto de razonamiento (`reasoning_effort`), la restauración del modo rápido sin razonamiento y la corrección del bug de "empty think" que duplicaba bloques vacíos en conversaciones multi-turno. El repositorio es un único archivo `chat_template.jinja` que funciona como reemplazo directo en LM Studio, llama.cpp, vLLM, MLX, oMLX, KoboldCPP y cualquier motor que soporte plantillas Jinja de Hugging Face.
 
 Su relevancia radica en que las plantillas oficiales de Qwen contienen lógica específica de Python que falla en motores C++ como llama.cpp, y restricciones que rompen flujos de tool calling y agentes. Esta plantilla unificada elimina esas barreras, permitiendo a los desarrolladores desplegar modelos Qwen 3.5/3.6/3.8 con todas sus capacidades de razonamiento y llamada a herramientas sin parches adicionales.
 
@@ -18,7 +18,7 @@ Su relevancia radica en que las plantillas oficiales de Qwen contienen lógica e
 | Arquitectura | Plantilla Jinja compatible con minijinja (sin filtros Python) |
 | Parametros totales | No aplica (no contiene pesos) |
 | Longitud de contexto | No aplica (depende del modelo Qwen subyacente) |
-| Motores soportados | LM Studio, llama.cpp, vLLM, MLX, oMLX, KoboldCPP, cualquier motor con soporte Jinja de HuggingFace |
+| Motores soportados | LM Studio, llama.cpp, vLLM, MLX, oMLX, KoboldCPP, cualquier motor con soporte Jinja de Hugging Face |
 | Funcionalidades clave | Tool calling, razonamiento (thinking), control de esfuerzo de razonamiento, modo rapido sin razonamiento |
 | Licencia | Apache 2.0 |
 | Formato de distribucion | Archivo `chat_template.jinja` (texto plano) y `chat_template_oneline.txt` |
@@ -90,12 +90,12 @@ No existen alternativas equivalentes publicadas como repositorios independientes
 - El soporte de `reasoning_effort` esta pensado para Qwen 3.8; en Qwen 3.5 y 3.6 puede no tener efecto o requerir ajustes.
 - Aunque la licencia es Apache 2.0, el uso de la plantilla con modelos Qwen esta sujeto a la licencia de los propios modelos (Qwen 3.8 usa Apache 2.0, pero verificar cada version).
 - No se garantiza compatibilidad con futuras versiones de Qwen o de los motores; el autor mantiene actualizaciones frecuentes (v19, v21, v22), pero es un proyecto comunitario sin soporte comercial.
-- El repositorio tiene 0 descargas registradas en HuggingFace (aunque 1058 likes), lo que sugiere que la mayoria de usuarios lo obtienen via mirrors de GitHub o lo copian manualmente; verificar la integridad del archivo antes de usarlo en produccion.
+- El repositorio tiene 0 descargas registradas en Hugging Face (aunque 1058 likes), lo que sugiere que la mayoria de usuarios lo obtienen via mirrors de GitHub o lo copian manualmente; verificar la integridad del archivo antes de usarlo en produccion.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates
-- Mirror en HuggingFace (v19): https://huggingface.co/CCSSNE/froggeric-Qwen-Fixed-Chat-Templates
+- Repositorio Hugging Face: https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates
+- Mirror en Hugging Face (v19): https://huggingface.co/CCSSNE/froggeric-Qwen-Fixed-Chat-Templates
 - Mirror en GitHub (clach04): https://github.com/clach04/froggeric_Qwen-Fixed-Chat-Templates
 - Mirror en GitHub (rchildre3): https://github.com/rchildre3/Qwen-Fixed-Chat-Templates
 - Ficha en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/qwen-fixed-chat-templates-froggeric

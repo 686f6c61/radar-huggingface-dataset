@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Biolm-30B es un modelo de lenguaje multimodal de tipo any-to-any derivado de Qwen3-Omni-30B-A3B-Instruct y publicado por el usuario chibubu en HuggingFace. Se trata de un modelo de mezcla de expertos (MoE) con 35.259.818.545 parametros totales y aproximadamente 3.000 millones de parametros activos por token, construido sobre la arquitectura `qwen3_omni_moe`. Acepta texto, imagen, audio y video como entrada, y genera texto y voz natural como salida.
+Biolm-30B es un modelo de lenguaje multimodal de tipo any-to-any derivado de Qwen3-Omni-30B-A3B-Instruct y publicado por el usuario chibubu en Hugging Face. Se trata de un modelo de mezcla de expertos (MoE) con 35.259.818.545 parametros totales y aproximadamente 3.000 millones de parametros activos por token, construido sobre la arquitectura `qwen3_omni_moe`. Acepta texto, imagen, audio y video como entrada, y genera texto y voz natural como salida.
 
 El modelo esta orientado explicitamente a la investigacion academica en razonamiento temporal multimodal, analisis de atencion entre modalidades y modelado audio-visual del lenguaje. Segun su model card, soporta 119 idiomas de texto, 19 idiomas de entrada de voz y 10 idiomas de salida de voz, aunque la metadata del repositorio declara unicamente `en` como idioma.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Biolm-30B | 35.259.818.545 | ~3B | no disponible | Apache-2.0 | HuggingFace (chibubu/biolm-30b) |
+| Biolm-30B | 35.259.818.545 | ~3B | no disponible | Apache-2.0 | Hugging Face (chibubu/biolm-30b) |
 | Qwen3-Omni-30B-A3B-Instruct | no disponible en la informacion | ~3B | no disponible | no disponible en la informacion | modelo base del que deriva |
 | Alternativas de misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativo entre Biolm-30B y otras altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chibubu/biolm-30b
+- Hugging Face: https://huggingface.co/chibubu/biolm-30b
 - Modelo base referenciado (Qwen3-Omni-30B-A3B-Instruct): no disponible en la informacion proporcionada
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada

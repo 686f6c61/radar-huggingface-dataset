@@ -69,7 +69,7 @@ No disponible. LEDGE no es un modelo de IA y no tiene equivalentes directos en e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/ledge
+- Hugging Face: https://huggingface.co/Snapkitty/ledge
 - Crates.io: https://crates.io/crates/ledge
 - npm: https://www.npmjs.com/package/@snapkitty/ledge
 - GitHub Actions (CI): https://github.com/SNAPKITTYWEST/ledge/actions

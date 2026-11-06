@@ -91,7 +91,7 @@ La diferencia mas relevante frente a las alternativas es la licencia: Boulesis h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/Boulesis-26B-A4B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/Boulesis-26B-A4B-GGUF
 - Modelo base: https://huggingface.co/SubMaroon/Boulesis-26B-A4B
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Boulesis-26B-A4B-GGUF
 - Repositorio de peticiones de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

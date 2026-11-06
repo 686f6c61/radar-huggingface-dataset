@@ -98,12 +98,12 @@ El modelo se situa como la linea base mas debil en WER dentro de las variantes c
 - No se aportan datos sobre sesgos, robustez a dominios acusticos distintos de los de entrenamiento ni comportamiento fuera de las condiciones evaluadas (0 dB SNR, RT60 = 0.25 s).
 - Riesgo de alucinacion acustica en la senal reconstruida: como todo modelo generativo seq2seq sobre espectrogramas, puede introducir artefactos o distorsion cuando la mezcla se aleja de la distribucion de entrenamiento.
 - Restricciones de licencia: el modelo se publica bajo Apache 2.0, que permite uso comercial; conviene verificar de forma independiente las licencias de los corpus (LibriTTS y VCTK) y de la libreria `lingvo` para produccion.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento del registro, por lo que no cuenta con validacion de la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento del registro, por lo que no cuenta con validacion de la comunidad.
 - La model card proporcionada aparece truncada en la seccion de uso de TFLite, por lo que los detalles completos de esa ruta de inferencia pueden no estar reflejados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wq2012/vanilla_seq2seq_multi_interfering
+- Modelo en Hugging Face: https://huggingface.co/wq2012/vanilla_seq2seq_multi_interfering
 - Repositorio GitHub (reproduccion de codigo abierto): https://github.com/wq2012/tec
 - Paquete PyPI (`textual-echo-cancellation`): https://pypi.org/project/textual-echo-cancellation/
 - Paper (Textual Echo Cancellation, IEEE SLT 2021, arXiv:2008.06006v4): https://arxiv.org/pdf/2008.06006

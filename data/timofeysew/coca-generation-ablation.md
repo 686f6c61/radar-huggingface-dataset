@@ -2,9 +2,9 @@
 
 ## Resumen
 
-coca-generation-ablation es un repositorio experimental publicado por el usuario timofeysew en HuggingFace. No se trata de un modelo entrenado ni de un checkpoint listo para producción, sino de un andamiaje (scaffold) de código en PyTorch que implementa una arquitectura denominada "Coca" orientada a generación, con una configuración de escala "large". El propio autor indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint entrenado ni evaluado.
+coca-generation-ablation es un repositorio experimental publicado por el usuario timofeysew en Hugging Face. No se trata de un modelo entrenado ni de un checkpoint listo para producción, sino de un andamiaje (scaffold) de código en PyTorch que implementa una arquitectura denominada "Coca" orientada a generación, con una configuración de escala "large". El propio autor indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint entrenado ni evaluado.
 
-El peso en safetensors reportado por HuggingFace es de 33.088 parámetros, una cifra coherente con un tensor de inicialización y no con un modelo de escala "large" plenamente poblado. El repositorio incluye `predict.py`, `config.json`, `training_args.json` y el propio checkpoint, con el objetivo declarado de permitir inspeccionar cambios de arquitectura y realizar estudios de ablación antes de lanzar un entrenamiento completo.
+El peso en safetensors reportado por Hugging Face es de 33.088 parámetros, una cifra coherente con un tensor de inicialización y no con un modelo de escala "large" plenamente poblado. El repositorio incluye `predict.py`, `config.json`, `training_args.json` y el propio checkpoint, con el objetivo declarado de permitir inspeccionar cambios de arquitectura y realizar estudios de ablación antes de lanzar un entrenamiento completo.
 
 Su relevancia actual es, por tanto, metodológica más que de rendimiento: sirve como plantilla reproducible para experimentos controlados (comparación de optimizadores, presupuestos de cómputo, semillas), en la línea de las buenas prácticas de ablación en aprendizaje automático. No debe confundirse con el modelo CoCa (Contrastive Captioner) de imagen-texto publicado en 2022, aunque comparta nombre y enfoque multimodal en su inspiración.
 
@@ -23,7 +23,7 @@ Su relevancia actual es, por tanto, metodológica más que de rendimiento: sirve
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada en la model card es "Coca" a escala "large", con atención de tipo multi-query, fusión de bajo rango (low rank), activación gelu-tanh y normalización mediante layernorm. Se trata de una implementación personalizada, no de una arquitectura estándar de HuggingFace Transformers, por lo que las API de carga automática genéricas requieren un adaptador explícito para funcionar. El repositorio no especifica el número de capas, la dimensión oculta, el número de cabezas ni el tamaño de vocabulario; esos datos deberían consultarse directamente en `config.json`.
+La arquitectura declarada en la model card es "Coca" a escala "large", con atención de tipo multi-query, fusión de bajo rango (low rank), activación gelu-tanh y normalización mediante layernorm. Se trata de una implementación personalizada, no de una arquitectura estándar de Hugging Face Transformers, por lo que las API de carga automática genéricas requieren un adaptador explícito para funcionar. El repositorio no especifica el número de capas, la dimensión oculta, el número de cabezas ni el tamaño de vocabulario; esos datos deberían consultarse directamente en `config.json`.
 
 Respecto al entrenamiento, la receta por defecto incluida en el script emplea el optimizador LAMB con un planificador de tipo "step". El autor subraya que estos son valores de partida y no evidencia de una ejecución completada. No hay constancia de entrenamiento con RLHF, DPO ni ninguna otra fase de alineamiento, ni de haberse utilizado un corpus de tokens concreto. El checkpoint incluido no ha sido entrenado ni auditado en términos de robustez, equidad o transferencia de dominio, y cualquier resultado futuro debería documentarse por separado de los valores por defecto que se distribuyen aquí.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| timofeysew/coca-generation-ablation | 33.088 (inicializacion, escala "large") | no disponible | no | apache-2.0 | HuggingFace |
-| JacobBaker/generation | no disponible | no disponible | no (configuracion "nano") | no disponible | HuggingFace |
-| ayaangup/cs229-generation | no disponible | no disponible | no (configuracion "xlarge") | no disponible | HuggingFace |
+| timofeysew/coca-generation-ablation | 33.088 (inicializacion, escala "large") | no disponible | no | apache-2.0 | Hugging Face |
+| JacobBaker/generation | no disponible | no disponible | no (configuracion "nano") | no disponible | Hugging Face |
+| ayaangup/cs229-generation | no disponible | no disponible | no (configuracion "xlarge") | no disponible | Hugging Face |
 | CoCa (Contrastive Captioner, arXiv 2205.01917) | no disponible | no disponible | si (imagen-texto) | no disponible en la informacion | paper |
 
 Los tres repositorios de la primera fila comparten el mismo patrón: implementaciones compactas de Coca para generación, pensadas para revisión de código y experimentos controlados, no para producción. CoCa (2022) es un modelo fundacional de imagen-texto con pérdida contrastiva y de captioning, de naturaleza distinta al andamiaje aquí descrito, pero útil como referencia conceptual del nombre "Coca".
@@ -77,12 +77,12 @@ Los tres repositorios de la primera fila comparten el mismo patrón: implementac
 - Riesgo de alucinación: no evaluable, dado que el modelo no genera texto de forma fiable.
 - No se especifican sesgos conocidos porque no existe una fase de entrenamiento que los haya podido introducir o mitigar.
 - Licencia apache-2.0: permite uso comercial del código y del checkpoint, pero el autor recomienda revisar por separado los términos de los datos de origen cuando el repositorio se combine con conjuntos de datos externos.
-- Implementación personalizada: las API genéricas de carga automática de HuggingFace requieren un adaptador explícito, lo que complica la integración directa.
+- Implementación personalizada: las API genéricas de carga automática de Hugging Face requieren un adaptador explícito, lo que complica la integración directa.
 - Cualquier resultado de un futuro checkpoint entrenado debe documentarse separadamente de los valores por defecto publicados en este repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/timofeysew/coca-generation-ablation
+- Repositorio en Hugging Face: https://huggingface.co/timofeysew/coca-generation-ablation
 - Repositorio relacionado (configuracion nano): https://huggingface.co/JacobBaker/generation
 - Repositorio relacionado (configuracion xlarge): https://huggingface.co/ayaangup/cs229-generation
 - Paper CoCa (Contrastive Captioners are Image-Text Foundation Models): https://arxiv.org/abs/2205.01917

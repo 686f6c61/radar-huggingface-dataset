@@ -98,8 +98,8 @@ La comparativa más directa es con el modelo nativo Kimi-K3 (que ya es 4-bit MXF
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Weyaxi/Kimi-K3-NVFP4-W4A4
-- Modelo base en HuggingFace: https://huggingface.co/moonshotai/Kimi-K3
+- Repositorio Hugging Face: https://huggingface.co/Weyaxi/Kimi-K3-NVFP4-W4A4
+- Modelo base en Hugging Face: https://huggingface.co/moonshotai/Kimi-K3
 - GitHub de MoonshotAI/Kimi-K3: https://github.com/MoonshotAI/Kimi-K3
 - Página oficial de Kimi K3: https://www.kimi.ai/ai-models/kimi-k3
 - NVIDIA NIM para Kimi-K3: https://build.nvidia.com/moonshotai/kimi-k3

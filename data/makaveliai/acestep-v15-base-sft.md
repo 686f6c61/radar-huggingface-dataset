@@ -73,7 +73,7 @@ No se dispone de información comparativa con otros modelos de generación music
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/Makaveliai/acestep-v15-base-sft
+- Hugging Face (modelo): https://huggingface.co/Makaveliai/acestep-v15-base-sft
 - Página del proyecto: https://ace-step.github.io/ace-step-v1.5.github.io/
 - Colección de modelos en Hugging Face: https://huggingface.co/collections/ACE-Step/ace-step-15
 - ModelScope: https://modelscope.cn/models/ACE-Step/ACE-Step-v1-5

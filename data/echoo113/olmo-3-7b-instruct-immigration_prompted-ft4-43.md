@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Echoo113/Olmo-3-7B-Instruct-immigration_prompted-ft4.43` es un ajuste fino (fine-tune) supervisado (SFT) del modelo base `allenai/Olmo-3-7B-Instruct`, desarrollado por el usuario Echoo113. El objetivo de este ajuste es especializar el comportamiento del modelo en tareas relacionadas con inmigración, empleando un conjunto de datos con prompts específicos. Se entrenó con la librería TRL de HuggingFace, lo que indica un flujo de trabajo estándar de fine-tuning instructivo.
+El modelo `Echoo113/Olmo-3-7B-Instruct-immigration_prompted-ft4.43` es un ajuste fino (fine-tune) supervisado (SFT) del modelo base `allenai/Olmo-3-7B-Instruct`, desarrollado por el usuario Echoo113. El objetivo de este ajuste es especializar el comportamiento del modelo en tareas relacionadas con inmigración, empleando un conjunto de datos con prompts específicos. Se entrenó con la librería TRL de Hugging Face, lo que indica un flujo de trabajo estándar de fine-tuning instructivo.
 
 El modelo base OLMo-3-7B-Instruct es un modelo de lenguaje de 7.000 millones de parámetros, de arquitectura transformer decoder-only, desarrollado por el Allen Institute for AI (AI2). Soporta una ventana de contexto de 64.000 tokens y destaca en generación de código, razonamiento lógico y diálogo general. Este fine-tune no modifica la arquitectura, sino que ajusta los pesos para mejorar la adherencia a instrucciones específicas sobre inmigración, probablemente con un estilo de respuesta más controlado o con un sesgo temático.
 

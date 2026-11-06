@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - No se garantiza compatibilidad futura del formato BSHJ entre versiones del paquete `mashbox`.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/mashbox-labs/Audio2Face-3D-v3.0-TPU
+- Repositorio Hugging Face: https://huggingface.co/mashbox-labs/Audio2Face-3D-v3.0-TPU
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/Audio2Face-3D-v3.0/tree/b74132732fd9a9d29b237bec193ded64c9745e91
 - Lector BSHJ (`src/mashbox/bshj.py`): https://github.com/mashbox-labs/mashbox/blob/v0.1.10/src/mashbox/bshj.py
 - Repositorio GitHub de mashbox: https://github.com/mashbox-labs/mashbox

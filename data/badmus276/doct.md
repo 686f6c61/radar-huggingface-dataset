@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `badmus276/Doct` es un modelo publicado en HuggingFace por el usuario `badmus276` el 26 de agosto de 2026. La información disponible en su model card es extremadamente limitada: únicamente se especifica la licencia (LPPL-1.3c) y la región asociada (Estados Unidos). No se proporcionan detalles sobre arquitectura, tamaño, parámetros, contexto, idiomas soportados ni capacidades.
+El modelo `badmus276/Doct` es un modelo publicado en Hugging Face por el usuario `badmus276` el 26 de agosto de 2026. La información disponible en su model card es extremadamente limitada: únicamente se especifica la licencia (LPPL-1.3c) y la región asociada (Estados Unidos). No se proporcionan detalles sobre arquitectura, tamaño, parámetros, contexto, idiomas soportados ni capacidades.
 
 Dado que no existe documentación técnica adicional, ni benchmarks publicados, ni ejemplos de uso, este modelo no puede ser evaluado ni recomendado para ningún caso de uso concreto. La ausencia de descargas y de interacciones en la plataforma sugiere que se trata de un modelo recién publicado o de baja difusión. Se recomienda precaución antes de considerar su uso en entornos de producción.
 
@@ -50,8 +50,8 @@ No disponible. No se conocen modelos comparables de la misma categoría debido a
 - La falta de documentación técnica impide conocer los sesgos potenciales, el riesgo de alucinación o las limitaciones de contexto e idioma.
 - La licencia LPPL-1.3c (LaTeX Project Public License) es una licencia permisiva originalmente diseñada para software y documentación de LaTeX; su aplicación a un modelo de IA no es habitual y puede implicar restricciones no evidentes para uso comercial. Se recomienda revisar los términos exactos de la licencia antes de cualquier uso.
 - No se ha verificado la integridad del modelo ni su funcionamiento; no se recomienda su uso en producción sin una evaluación exhaustiva.
-- El modelo no presenta descargas ni interacciones en HuggingFace, lo que sugiere una adopción nula o muy reciente.
+- El modelo no presenta descargas ni interacciones en Hugging Face, lo que sugiere una adopción nula o muy reciente.
 
 ## Enlaces
 
-- [HuggingFace - badmus276/Doct](https://huggingface.co/badmus276/Doct)
+- [Hugging Face - badmus276/Doct](https://huggingface.co/badmus276/Doct)

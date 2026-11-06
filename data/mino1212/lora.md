@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mino1212/lora` es un artefacto publicado en HuggingFace por el usuario mino1212 bajo licencia MIT. La informacion disponible se limita a los metadatos del repositorio: identificador, autor, licencia, etiquetas (`license:mit`, `region:us`), fecha de creacion y actualizacion (26 de septiembre de 2026) y tamano del repositorio (0,7 GB). No se especifica pipeline, idiomas soportados, arquitectura, parametros ni modelo base.
+El repositorio `mino1212/lora` es un artefacto publicado en Hugging Face por el usuario mino1212 bajo licencia MIT. La informacion disponible se limita a los metadatos del repositorio: identificador, autor, licencia, etiquetas (`license:mit`, `region:us`), fecha de creacion y actualizacion (26 de septiembre de 2026) y tamano del repositorio (0,7 GB). No se especifica pipeline, idiomas soportados, arquitectura, parametros ni modelo base.
 
 La model card publicada no contiene mas contenido que la declaracion de licencia (`license: mit`). No hay descripcion del modelo, del dataset de entrenamiento, del procedimiento de ajuste ni instrucciones de uso. El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta.
 
@@ -97,5 +97,5 @@ No disponible. No es posible establecer una comparativa sin conocer la categoria
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mino1212/lora
+- Repositorio en Hugging Face: https://huggingface.co/mino1212/lora
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

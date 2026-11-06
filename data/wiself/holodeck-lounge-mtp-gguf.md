@@ -84,7 +84,7 @@ La diferencia principal frente al Holodeck-Lounge original es la presencia del h
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Wiself/Holodeck-Lounge-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Wiself/Holodeck-Lounge-MTP-GGUF
 - Modelo base (merge): https://huggingface.co/nightmedia/Qwen3.5-9B-Holodeck-Lounge
 - Modelo base (Qwen): https://huggingface.co/Qwen/Qwen3.5-9B
 - Donante del head MTP: https://huggingface.co/Jackrong/Qwopus3.5-9B-Coder

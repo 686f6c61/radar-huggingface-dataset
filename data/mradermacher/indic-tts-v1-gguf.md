@@ -19,7 +19,7 @@ Su relevancia practica es limitada pero concreta: permite descargar el modelo en
 | Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; ademas mmproj-f16 y mmproj-Q8_0 |
 | Idiomas soportados | en (segun los tags del repositorio) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizado); el modelo base esta en formato HuggingFace/transformers |
+| Formato de pesos | GGUF (cuantizado); el modelo base esta en formato Hugging Face/transformers |
 | Tamano del repo | 16,4 GB (incluye todas las cuantizaciones) |
 | Tarea (pipeline) | no disponible |
 | Compatibilidad | `endpoints_compatible`, `transformers`, `gguf`, `region:us` |
@@ -29,7 +29,7 @@ Su relevancia practica es limitada pero concreta: permite descargar el modelo en
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base en la documentacion proporcionada: ni el tipo de red (transformer, encoder-decoder, hibrida), ni la composicion del dataset, ni el numero de tokens de entrenamiento, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Los metadatos de cuantizacion indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversion estandar desde pesos de HuggingFace a GGUF con cuantizacion de los tensores de salida.
+No se dispone de informacion sobre la arquitectura del modelo base en la documentacion proporcionada: ni el tipo de red (transformer, encoder-decoder, hibrida), ni la composicion del dataset, ni el numero de tokens de entrenamiento, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Los metadatos de cuantizacion indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversion estandar desde pesos de Hugging Face a GGUF con cuantizacion de los tensores de salida.
 
 El unico detalle estructural observable es la presencia de dos ficheros `mmproj` (mmproj-f16 de 0,8 GB y mmproj-Q8_0 de 0,6 GB), sufijo que en llama.cpp identifica el proyector de un modulo multimodal acoplado al modelo. En un sistema de sintesis de voz ese componente corresponderia tipicamente al codificador de texto o al decodificador de audio, pero no hay confirmacion documental de ello. Tampoco se han publicado cuantizaciones ponderadas con matriz de importancia (imatrix), y el propio autor indica que es probable que no las genere.
 
@@ -40,7 +40,7 @@ El unico detalle estructural observable es la presencia de dos ficheros `mmproj`
 - Los tags del repositorio declaran unicamente el idioma `en`; no se documenta soporte multilingue ni de lenguas indicas, pese a lo que sugiere el nombre.
 - No hay indicios de soporte de tool calling, function calling ni comportamiento agentico.
 - No hay indicios de modo de razonamiento explicito (thinking mode) ni de capacidades de vision.
-- El tag `endpoints_compatible` indica que el modelo puede desplegarse mediante los endpoints de HuggingFace, siempre que la arquitectura subyacente este soportada.
+- El tag `endpoints_compatible` indica que el modelo puede desplegarse mediante los endpoints de Hugging Face, siempre que la arquitectura subyacente este soportada.
 
 ## Casos de uso
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Cabe holgadamente en GPU de consumo: cualquier tarjeta con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060, RTX 4090) puede ejecutar las variantes Q4_K_M o Q6_K. La variante f16 con mmproj requiere del orden de 4,4 GB.
 - En CPU pura es viable: con 4-8 GB de RAM se cubren todas las cuantizaciones; se recomienda Q4_K_M por equilibrio entre velocidad y calidad.
 - GPU de datacenter (A100, H100) no aportan ventaja relevante para este tamano de modelo, salvo en despliegues con muchas peticiones concurrentes.
-- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, koboldcpp, llama-cpp-python) son la via natural para ficheros GGUF. vLLM y TGI solo serian aplicables si la arquitectura del modelo base esta soportada por esas herramientas, algo que no se puede confirmar con la informacion disponible. El tag `endpoints_compatible` sugiere compatibilidad con los Inference Endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, koboldcpp, llama-cpp-python) son la via natural para ficheros GGUF. vLLM y TGI solo serian aplicables si la arquitectura del modelo base esta soportada por esas herramientas, algo que no se puede confirmar con la informacion disponible. El tag `endpoints_compatible` sugiere compatibilidad con los Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tiempo real (RTF) ni de tokens o caracteres por segundo.
 
 ## Comparativa con modelos similares
@@ -103,7 +103,7 @@ La comparacion de rendimiento objetivo (calidad perceptual, inteligibilidad, lat
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/indic-tts-v1-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/indic-tts-v1-GGUF
 - Modelo base: https://huggingface.co/2023310197mehak/indic-tts-v1
 - Pagina de resumen de descargas del autor: https://hf.tst.eu/model#indic-tts-v1-GGUF
 - Solicitudes de modelos y FAQ del cuantizador: https://huggingface.co/mradermacher/model_requests

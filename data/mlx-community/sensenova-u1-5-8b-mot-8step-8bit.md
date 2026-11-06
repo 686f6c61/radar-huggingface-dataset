@@ -85,9 +85,9 @@ La comparación con Flux.1-dev y SDXL se basa en su uso como modelos de generaci
 
 ## Enlaces
 
-- Repositorio de HuggingFace de esta conversión MLX: https://huggingface.co/mlx-community/SenseNova-U1.5-8B-MoT-8step-8bit
-- Modelo base en HuggingFace: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
-- Modelo base en HuggingFace (versión 1.0): https://huggingface.co/sensenova/SenseNova-U1-8B-MoT
+- Repositorio de Hugging Face de esta conversión MLX: https://huggingface.co/mlx-community/SenseNova-U1.5-8B-MoT-8step-8bit
+- Modelo base en Hugging Face: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
+- Modelo base en Hugging Face (versión 1.0): https://huggingface.co/sensenova/SenseNova-U1-8B-MoT
 - Página del modelo en ModelScope: https://www.modelscope.cn/models/SenseNova/SenseNova-U1.5-8B-MoT
 - Código de referencia y repositorio oficial: https://github.com/OpenSenseNova/SenseNova-U1
 - Runtime MLX-Swift: https://github.com/xocialize/sensenova-uox-swift

@@ -69,7 +69,7 @@ La comparativa siguiente se limita a lo verificable en la información proporcio
 
 | Modelo | Parámetros | Entradas / salidas | Benchmarks públicos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint | 4.143.404.816 | 3 vistas (exterior, muñeca, keyframe) + estado 8D; acción delta EEF 7D | Ninguno declarado | No declarada | HuggingFace, 9 descargas, 0 *likes* |
+| Este checkpoint | 4.143.404.816 | 3 vistas (exterior, muñeca, keyframe) + estado 8D; acción delta EEF 7D | Ninguno declarado | No declarada | Hugging Face, 9 descargas, 0 *likes* |
 | `lerobot/pi05_base` | No disponible en la información proporcionada (el ajuste deriva de él) | No disponible | No disponible | No disponible | Modelo base declarado en los metadatos |
 | Alternativas de la misma familia VLA (por ejemplo, políticas Pi0 abiertas o VLA compactas tipo SmolVLA) | No disponible | No disponible | No disponible | No disponible | No verificadas en esta búsqueda |
 
@@ -90,7 +90,7 @@ En términos cualitativos, la diferencia de este *checkpoint* frente a su modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaehyunkang/pi05-real-workbench-preset-3view-object-identification-60k
+- Modelo en Hugging Face: https://huggingface.co/jaehyunkang/pi05-real-workbench-preset-3view-object-identification-60k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/real_workbench-preset-gemini
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Tokenizer de referencia: https://huggingface.co/google/paligemma-3b-pt-224

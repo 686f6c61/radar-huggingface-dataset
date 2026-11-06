@@ -71,7 +71,7 @@ No se dispone de información sobre adaptadores comparables en el ecosistema. El
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/halofx/freaksterz-dflash2-vllm-adapter
+- Repositorio Hugging Face: https://huggingface.co/halofx/freaksterz-dflash2-vllm-adapter
 - Proyecto runtime (GitHub): https://github.com/halofx82/qwen3.8-27b-smoothquant-w8a8-int8-dflash2-vllm
 - Modelo base: https://huggingface.co/Freaksterz/Qwen3.8-27B-SmoothQuant-W8A8-INT8
 - Drafter DFlash2 (z-lab): https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2

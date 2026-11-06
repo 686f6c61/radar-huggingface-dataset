@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio DavidLich8/tes-glossary, publicado en HuggingFace, no es un modelo de lenguaje con pesos entrenados, sino un conjunto de datos en formato glosario sobre la terminologia de la saga The Elder Scrolls (TES). Contiene listados de terminos extraidos de seis entregas de la franquicia: Skyrim, The Elder Scrolls Online (ESO), Oblivion, Morrowind, Blades y Legends. El repositorio ocupa 0,4 GB y esta estructurado en doce configuraciones de HuggingFace Datasets, la mayoria con un unico split de entrenamiento.
+El repositorio DavidLich8/tes-glossary, publicado en Hugging Face, no es un modelo de lenguaje con pesos entrenados, sino un conjunto de datos en formato glosario sobre la terminologia de la saga The Elder Scrolls (TES). Contiene listados de terminos extraidos de seis entregas de la franquicia: Skyrim, The Elder Scrolls Online (ESO), Oblivion, Morrowind, Blades y Legends. El repositorio ocupa 0,4 GB y esta estructurado en doce configuraciones de Hugging Face Datasets, la mayoria con un unico split de entrenamiento.
 
 El conjunto suma 707.290 registros repartidos de forma desigual: ESO concentra 535.467 entradas divididas en seis ficheros JSON parciales, mientras que Skyrim aporta 72.582, Oblivion 38.555, Morrowind 35.363, Blades 14.940 y Legends 10.383. Existe ademas una configuracion de prueba (test_legends) que contiene una conversion a JSONL del glosario de Legends, presumiblemente para validar el formato de carga.
 
@@ -57,8 +57,8 @@ La unica informacion estructural disponible es la organizacion en directorios po
 ## Capacidades
 
 - Almacenar y servir listados de terminologia de seis videojuegos de la saga The Elder Scrolls.
-- Carga directa mediante la libreria `datasets` de HuggingFace, con doce configuraciones nombradas y un split `train` por configuracion.
-- Consulta remota a traves de la API de HuggingFace Datasets Server, usando el endpoint de filas con parametros de configuracion, split, offset y length.
+- Carga directa mediante la libreria `datasets` de Hugging Face, con doce configuraciones nombradas y un split `train` por configuracion.
+- Consulta remota a traves de la API de Hugging Face Datasets Server, usando el endpoint de filas con parametros de configuracion, split, offset y length.
 - Exportacion a JSONL verificada en la configuracion `test_legends`.
 - No ofrece generacion de texto, razonamiento, codigo, matematicas, vision ni ninguna capacidad de modelo de lenguaje.
 - No soporta tool calling, function calling ni flujos de agentes.
@@ -86,7 +86,7 @@ No disponible. No se han identificado en la informacion proporcionada otros repo
 - VRAM estimada para inferencia: no aplicable; el repositorio no ejecuta inferencia.
 - GPU recomendadas: no aplicable.
 - Compatibilidad con GPU de consumo: no aplicable en sentido de inferencia; el unico requisito es disponer de 0,4 GB de almacenamiento para descargar el repositorio.
-- Opciones de despliegue: carga local con la libreria `datasets` de HuggingFace, descarga directa de los ficheros JSON/JSONL, o consulta remota mediante la API de HuggingFace Datasets Server, por ejemplo:
+- Opciones de despliegue: carga local con la libreria `datasets` de Hugging Face, descarga directa de los ficheros JSON/JSONL, o consulta remota mediante la API de Hugging Face Datasets Server, por ejemplo:
   `GET https://datasets-server.huggingface.co/rows?dataset=DavidLich8/tes-glossary&config=skyrim&split=train&offset=0&length=100`
 - Latencia y throughput: no disponibles; dependen del backend que consuma los datos y no del repositorio.
 - CPU y memoria RAM: suficiente con cualquier equipo de uso general para cargar los ficheros; el mayor coste esta en procesar los 535.467 registros de ESO si se cargan completos en memoria.
@@ -105,6 +105,6 @@ No disponible. No se han identificado en la informacion proporcionada otros repo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DavidLich8/tes-glossary
+- Repositorio en Hugging Face: https://huggingface.co/DavidLich8/tes-glossary
 - Endpoint de la API de Datasets Server: https://datasets-server.huggingface.co/rows?dataset=DavidLich8/tes-glossary&config=skyrim&split=train&offset=0&length=100
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este repositorio. Los resultados de busqueda disponibles corresponden a paginas de ayuda de YouTube y a hilos de Zhihu sin relacion con el dataset.

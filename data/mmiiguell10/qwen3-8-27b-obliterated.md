@@ -92,7 +92,7 @@ No se dispone de datos de otros modelos abliterados comparables en la misma esca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mmiiguell10/Qwen3.8-27B-OBLITERATED
+- Repositorio Hugging Face: https://huggingface.co/mmiiguell10/Qwen3.8-27B-OBLITERATED
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio OBLITERATUS (investigacion y codigo): https://github.com/elder-plinius/OBLITERATUS
 - Blog explainx.ai sobre Qwen3.8-27B OBLITERATED: https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026

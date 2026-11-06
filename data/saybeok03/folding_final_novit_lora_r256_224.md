@@ -100,11 +100,11 @@ No se dispone de datos de benchmarks ni de parámetros de los modelos comparados
 - Sin métricas de éxito: la model card declara explícitamente que no se han proporcionado resultados de evaluación, por lo que no se puede afirmar ningún nivel de rendimiento en producción.
 - Licencia: Apache 2.0 permite uso comercial, pero el modelo base `lerobot/pi05_base` y la implementación OpenPI pueden tener condiciones adicionales que deben verificarse antes de un despliegue comercial.
 - Idiomas: no se documenta soporte multilingüe; la instrucción de tarea se pasa en inglés en los ejemplos.
-- Fecha de creación del repositorio: 2026-11-02, según los metadatos de HuggingFace; conviene verificar la vigencia de la versión de LeRobot 0.6.1 frente a versiones posteriores.
+- Fecha de creación del repositorio: 2026-11-02, según los metadatos de Hugging Face; conviene verificar la vigencia de la versión de LeRobot 0.6.1 frente a versiones posteriores.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saybeok03/folding_final_novit_lora_r256_224
+- Modelo en Hugging Face: https://huggingface.co/saybeok03/folding_final_novit_lora_r256_224
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/saybeok03/full_folding_pi05_224
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=saybeok03/full_folding_pi05_224

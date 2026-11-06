@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B es un modelo de lenguaje causal multimodal con codificador de visión, publicado como la primera variante abierta de la familia Qwen3.6 tras la serie Qwen3.5 lanzada en febrero. Lo desarrolla el equipo Qwen (Alibaba), y esta ficha concreta corresponde a un repositorio espejo subido por el usuario `pitcany` a HuggingFace. El modelo emplea una arquitectura híbrida de atención lineal (Gated DeltaNet) combinada con atención con compuertas (Gated Attention) en un esquema Mixture of Experts, con 35.951.822.704 parámetros totales y aproximadamente 3.000 millones activados por token.
+Qwen3.6-35B-A3B es un modelo de lenguaje causal multimodal con codificador de visión, publicado como la primera variante abierta de la familia Qwen3.6 tras la serie Qwen3.5 lanzada en febrero. Lo desarrolla el equipo Qwen (Alibaba), y esta ficha concreta corresponde a un repositorio espejo subido por el usuario `pitcany` a Hugging Face. El modelo emplea una arquitectura híbrida de atención lineal (Gated DeltaNet) combinada con atención con compuertas (Gated Attention) en un esquema Mixture of Experts, con 35.951.822.704 parámetros totales y aproximadamente 3.000 millones activados por token.
 
 El modelo resuelve el problema del razonamiento agéntico sobre código en entornos reales: flujos de trabajo de frontend, razonamiento a nivel de repositorio y tareas multi-paso que requieren tool calling. Su relevancia actual radica en que combina una ventana de contexto nativa de 262.144 tokens (extensible hasta 1.010.000) con un coste de inferencia propio de un modelo de 3B activos, lo que lo hace viable en despliegues de producción con hardware moderado.
 
@@ -102,7 +102,7 @@ El modelo se sitúa por encima de su predecesor Qwen3.5-35BA3B en SWE-bench Veri
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/pitcany/Qwen3.6-35B-A3B
+- Hugging Face (este repositorio): https://huggingface.co/pitcany/Qwen3.6-35B-A3B
 - Repositorio original de referencia: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Licencia original: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
 - Blog post del autor: https://qwen.ai/blog?id=qwen3.6-35b-a3b

@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparado (FID, CLIP score ni metricas de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/genganbanette/lovebot-meinamix
+- Modelo en Hugging Face: https://huggingface.co/genganbanette/lovebot-meinamix
 - Modelo base MeinaMix V11: https://huggingface.co/Meina/MeinaMix_V11 (commit `2db85a2712983313dfe3e251f81e0023d775ee0a`)
 - LoRA LCM para SD 1.5: https://huggingface.co/latent-consistency/lcm-lora-sdv1-5 (commit `cf2fced511dbe7e26c8d1d397e728fbab875db4b`)
 - Licencia MeinaMix (CreativeML Open RAIL-M): fichero `LICENSE` del repositorio

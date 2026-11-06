@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dp-blockpick-regiondr500-dr-dr2-statenoise-run2` (este) | 288 M | horizonte 64 / 32 ejecutados, n_obs_steps 1 | Pick de bloque con brazo izquierdo, FFW SG2 | other | HuggingFace, 0 descargas |
-| `padiredd/dp-blockpick-regiondr500-dr-dr2-statenoise` | 288 M (misma config) | identico | identica | other | HuggingFace |
-| `padiredd/pick-cube-topdown-region10k-dr-dr2-3cam` (dataset, no modelo) | no aplica | no aplica | Dataset de 10K episodios con DR | no disponible | HuggingFace |
+| `dp-blockpick-regiondr500-dr-dr2-statenoise-run2` (este) | 288 M | horizonte 64 / 32 ejecutados, n_obs_steps 1 | Pick de bloque con brazo izquierdo, FFW SG2 | other | Hugging Face, 0 descargas |
+| `padiredd/dp-blockpick-regiondr500-dr-dr2-statenoise` | 288 M (misma config) | identico | identica | other | Hugging Face |
+| `padiredd/pick-cube-topdown-region10k-dr-dr2-3cam` (dataset, no modelo) | no aplica | no aplica | Dataset de 10K episodios con DR | no disponible | Hugging Face |
 
 No se dispone de informacion sobre otros modelos comparables de terceros en la documentacion proporcionada. La comparacion mas directa es con el modelo del que es replica, del que solo difiere la GPU de entrenamiento.
 
@@ -87,7 +87,7 @@ No se dispone de informacion sobre otros modelos comparables de terceros en la d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/dp-blockpick-regiondr500-dr-dr2-statenoise-run2
+- Modelo en Hugging Face: https://huggingface.co/padiredd/dp-blockpick-regiondr500-dr-dr2-statenoise-run2
 - Modelo replicado: https://huggingface.co/padiredd/dp-blockpick-regiondr500-dr-dr2-statenoise
 - Dataset de entrenamiento: https://huggingface.co/datasets/padiredd/pick-cube-topdown-region10k-dr-dr2-3cam
 - LeRobot (framework): https://github.com/huggingface/lerobot

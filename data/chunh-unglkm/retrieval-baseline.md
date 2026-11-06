@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Chunh-unglkm/retrieval-baseline` es un repositorio de investigacion publicado en HuggingFace que contiene un prototipo de modelo DeiT (Data-efficient Image Transformer) orientado a tareas de retrieval (recuperacion de informacion multimodal). Lo desarrolla el usuario Chunh-unglkm y se distribuye con licencia MIT. El repositorio incluye el codigo de implementacion (`main.py`), la configuracion de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicializacion en formato safetensors.
+`Chunh-unglkm/retrieval-baseline` es un repositorio de investigacion publicado en Hugging Face que contiene un prototipo de modelo DeiT (Data-efficient Image Transformer) orientado a tareas de retrieval (recuperacion de informacion multimodal). Lo desarrolla el usuario Chunh-unglkm y se distribuye con licencia MIT. El repositorio incluye el codigo de implementacion (`main.py`), la configuracion de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicializacion en formato safetensors.
 
 El modelo se presenta explicitamente como un punto de partida experimental, no como un checkpoint entrenado ni evaluado. La model card indica que `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests), pero no un checkpoint con rendimiento verificado. El autor no reclama ninguna puntuacion de benchmark y recomienda evaluar sobre Flickr30k con al menos tres semillas y una linea base de capacidad comparable.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chunh-unglkm/retrieval-baseline | 49.600 (checkpoint de inicializacion) | no disponible | sin benchmarks publicados | MIT | HuggingFace |
-| CLIP (ViT-B/32) | ~151 M | 77 tokens de texto | benchmarks publicos en retrieval | MIT | HuggingFace, OpenAI |
-| BLIP-2 | ~1,1 B (segun variante) | variable | benchmarks publicos en retrieval y captioning | licencia especifica por variante | HuggingFace |
-| DeiT III (ImageNet) | ~86 M a ~304 M | no aplica (clasificacion) | benchmarks publicos en clasificacion | Apache 2.0 / variantes | HuggingFace |
+| Chunh-unglkm/retrieval-baseline | 49.600 (checkpoint de inicializacion) | no disponible | sin benchmarks publicados | MIT | Hugging Face |
+| CLIP (ViT-B/32) | ~151 M | 77 tokens de texto | benchmarks publicos en retrieval | MIT | Hugging Face, OpenAI |
+| BLIP-2 | ~1,1 B (segun variante) | variable | benchmarks publicos en retrieval y captioning | licencia especifica por variante | Hugging Face |
+| DeiT III (ImageNet) | ~86 M a ~304 M | no aplica (clasificacion) | benchmarks publicos en clasificacion | Apache 2.0 / variantes | Hugging Face |
 
 La comparacion es estructural: el repositorio analizado no ofrece pesos entrenados ni metricas, por lo que no es equiparable en rendimiento a CLIP, BLIP-2 o DeiT III. Se incluye como referencia de categoria.
 
@@ -82,7 +82,7 @@ La comparacion es estructural: el repositorio analizado no ofrece pesos entrenad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chunh-unglkm/retrieval-baseline
+- Repositorio Hugging Face: https://huggingface.co/Chunh-unglkm/retrieval-baseline
 - Dataset sugerido para evaluacion: Flickr30k (https://shannon.cs.illinois.edu/DenotationGraph/)
 - Paper DeiT: https://arxiv.org/abs/2012.12877
 - Repositorio oficial DeiT: https://github.com/facebookresearch/deit

@@ -106,7 +106,7 @@ Comparativa con modelos de la misma categoria (mismo tamano o misma tarea): no d
 
 ## Enlaces
 
-- HuggingFace del GGUF: https://huggingface.co/Ninnix96/occamy-1.0-gguf
+- Hugging Face del GGUF: https://huggingface.co/Ninnix96/occamy-1.0-gguf
 - Modelo base: https://huggingface.co/Accio-Lab/occamy-1.0
 - Modelo base (referencia alternativa): https://huggingface.co/occamy-ai/occamy-1.0
 - Imatrix utilizada: https://huggingface.co/mradermacher/occamy-1.0-i1-GGUF

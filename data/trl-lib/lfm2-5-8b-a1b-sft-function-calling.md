@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-8B-A1B-SFT-function-calling es un ajuste fino supervisado (SFT) del modelo LiquidAI/LFM2.5-8B-A1B, publicado por el equipo de TRL dentro del repositorio trl-lib en HuggingFace. Se trata de un modelo de generacion de texto con arquitectura MoE (tag lfm2_moe) de aproximadamente 8.470 millones de parametros totales, entrenado especificamente para la tarea de function calling estructurado: recibe una consulta del usuario junto con el catalogo de herramientas disponibles y genera una o varias llamadas paralelas en formato JSON que la resuelven.
+LFM2.5-8B-A1B-SFT-function-calling es un ajuste fino supervisado (SFT) del modelo LiquidAI/LFM2.5-8B-A1B, publicado por el equipo de TRL dentro del repositorio trl-lib en Hugging Face. Se trata de un modelo de generacion de texto con arquitectura MoE (tag lfm2_moe) de aproximadamente 8.470 millones de parametros totales, entrenado especificamente para la tarea de function calling estructurado: recibe una consulta del usuario junto con el catalogo de herramientas disponibles y genera una o varias llamadas paralelas en formato JSON que la resuelven.
 
 El fine-tuning se realizo con la libreria TRL sobre las 60.000 muestras del dataset argilla/apigen-function-calling, derivadas del corpus xLAM (paper arXiv:2406.18518). El entrenamiento completo se ejecuto en 8 GPU H100 durante una unica epoca, completando 938 pasos en 16 minutos: la perdida descendio de 1,16 a 0,03 y la precision a nivel de token paso del 90,5% al 99,3%. Se entrenaron todos los pesos, con calculo de perdida unicamente sobre el turno del asistente.
 
@@ -72,8 +72,8 @@ Los unicos datos de rendimiento aportados son las metricas de entrenamiento del 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LFM2.5-8B-A1B-SFT-function-calling | 8,47B (MoE) | no disponible | lfm1.0 | HuggingFace (trl-lib) | SFT especializado en function calling |
-| LiquidAI/LFM2.5-8B-A1B (modelo base) | 8,47B (MoE) | no disponible | lfm1.0 | HuggingFace (LiquidAI) | Base generalista sin el SFT de function calling |
+| LFM2.5-8B-A1B-SFT-function-calling | 8,47B (MoE) | no disponible | lfm1.0 | Hugging Face (trl-lib) | SFT especializado en function calling |
+| LiquidAI/LFM2.5-8B-A1B (modelo base) | 8,47B (MoE) | no disponible | lfm1.0 | Hugging Face (LiquidAI) | Base generalista sin el SFT de function calling |
 | Otras alternativas de function calling de tamano similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion proporcionada |
 
 No se dispone de datos de benchmarks ni de especificaciones de contexto para establecer una comparacion cuantitativa con alternativas de la misma categoria.
@@ -92,12 +92,12 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trl-lib/LFM2.5-8B-A1B-SFT-function-calling
+- Hugging Face: https://huggingface.co/trl-lib/LFM2.5-8B-A1B-SFT-function-calling
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
 - Dataset de entrenamiento: https://huggingface.co/datasets/argilla/apigen-function-calling
 - Paper xLAM: https://huggingface.co/papers/2406.18518 (arXiv:2406.18518)
 - Script de entrenamiento en TRL: https://github.com/huggingface/trl/tree/main/examples/lfm2_5_moe_research_agent
 - Repositorio TRL: https://github.com/huggingface/trl
 - Curva de perdida del SFT: https://huggingface.co/datasets/trl-lib/documentation-images/resolve/main/lfm2_5_moe_sft_loss.png
-- Licencia: archivo LICENSE del repositorio en HuggingFace
+- Licencia: archivo LICENSE del repositorio en Hugging Face
 - Enlaces adicionales relevantes: no disponibles en la busqueda web realizada

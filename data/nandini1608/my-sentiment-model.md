@@ -4,7 +4,7 @@
 
 El modelo `Nandini1608/my-sentiment-model` es un clasificador de análisis de sentimiento fine-tuneado sobre DistilBERT, desarrollado por Nandini1608. Su propósito es clasificar textos cortos en inglés como positivos o negativos, una tarea habitual en el procesamiento de lenguaje natural aplicado a reseñas, redes sociales o atención al cliente. Se distribuye en formato safetensors y cuenta con 66.955.010 parámetros, lo que lo sitúa en la gama de modelos compactos y eficientes, adecuados para entornos con recursos limitados.
 
-Aunque la ficha de HuggingFace no especifica licencia, idiomas ni pipeline, los tags (`distilbert`, `region:us`) y el tamaño de parámetros indican que se trata de un modelo derivado de DistilBERT base (uncased), entrenado probablemente sobre un dataset de sentimiento en inglés como SST-2. Su relevancia radica en ofrecer una alternativa ligera para clasificación binaria de sentimiento, con un coste de inferencia bajo y fácil integración en aplicaciones de producción.
+Aunque la ficha de Hugging Face no especifica licencia, idiomas ni pipeline, los tags (`distilbert`, `region:us`) y el tamaño de parámetros indican que se trata de un modelo derivado de DistilBERT base (uncased), entrenado probablemente sobre un dataset de sentimiento en inglés como SST-2. Su relevancia radica en ofrecer una alternativa ligera para clasificación binaria de sentimiento, con un coste de inferencia bajo y fácil integración en aplicaciones de producción.
 
 ## Especificaciones tecnicas
 
@@ -28,7 +28,7 @@ DistilBERT es una versión destilada de BERT, con 6 capas transformer, 768 dimen
 - Clasificación de sentimiento binario: asigna una etiqueta positiva o negativa a un texto de entrada.
 - Procesamiento de textos cortos: adecuado para frases, reseñas breves o mensajes de redes sociales.
 - Inferencia eficiente: al ser un modelo pequeño, puede ejecutarse en CPU o GPU con baja latencia.
-- Integración con el ecosistema Transformers: compatible con PyTorch y la API de HuggingFace.
+- Integración con el ecosistema Transformers: compatible con PyTorch y la API de Hugging Face.
 - No se han documentado capacidades adicionales como tool calling, agentes, visión o audio.
 
 ## Casos de uso
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - VRAM estimada: al tener ~67M parámetros, en FP32 ocupa aproximadamente 268 MB. Con cuantización a int8 o FP16, el uso de memoria se reduce a ~134 MB o menos.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente, incluyendo NVIDIA GTX 1050, RTX 2060, o incluso integradas con soporte CUDA. También puede ejecutarse en CPU sin problema.
 - Compatibilidad con consumer GPU: sí, cabe en cualquier GPU moderna de consumo.
-- Opciones de despliegue: se puede servir con la librería Transformers de HuggingFace, ONNX Runtime, o mediante frameworks como FastAPI. También es compatible con herramientas como Ollama si se convierte a GGUF, aunque no se proporciona ese formato.
+- Opciones de despliegue: se puede servir con la librería Transformers de Hugging Face, ONNX Runtime, o mediante frameworks como FastAPI. También es compatible con herramientas como Ollama si se convierte a GGUF, aunque no se proporciona ese formato.
 - Latencia y throughput: al ser un modelo pequeño, la inferencia en CPU tarda del orden de milisegundos por muestra (típicamente 10-50 ms), y en GPU puede ser inferior a 5 ms. No se dispone de mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ Los tres modelos comparten la misma arquitectura base y tamaño, diferenciándos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nandini1608/my-sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/Nandini1608/my-sentiment-model
 - Modelo similar (sunandan8n): https://huggingface.co/sunandan8n/my-sentiment-model
 - Modelo similar (andy-value): https://huggingface.co/andy-value/my-sentiment-model
 - Documentación de análisis de sentimiento de Microsoft AI Builder: https://learn.microsoft.com/en-us/ai-builder/prebuilt-sentiment-analysis

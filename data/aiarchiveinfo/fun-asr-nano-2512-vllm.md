@@ -86,9 +86,9 @@ La información proporcionada no incluye datos de rendimiento, contexto ni licen
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AIArchiveInfo/Fun-ASR-Nano-2512-vllm (objeto de esta ficha) | 985.374.304 | No disponible | zh, en, ja | Apache 2.0 | Espejo en HuggingFace, 0 descargas |
-| FunAudioLLM/Fun-ASR-Nano-2512 (modelo base) | No disponible | No disponible | No disponible | Apache 2.0 (declarada en el origen) | HuggingFace |
-| FunAudioLLM/Fun-ASR-Nano-2512-vllm (paquete oficial de vLLM) | No disponible | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| AIArchiveInfo/Fun-ASR-Nano-2512-vllm (objeto de esta ficha) | 985.374.304 | No disponible | zh, en, ja | Apache 2.0 | Espejo en Hugging Face, 0 descargas |
+| FunAudioLLM/Fun-ASR-Nano-2512 (modelo base) | No disponible | No disponible | No disponible | Apache 2.0 (declarada en el origen) | Hugging Face |
+| FunAudioLLM/Fun-ASR-Nano-2512-vllm (paquete oficial de vLLM) | No disponible | No disponible | No disponible | Apache 2.0 | Hugging Face |
 | Otros modelos ASR de la misma categoria (por ejemplo, la familia Whisper) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -105,7 +105,7 @@ La información proporcionada no incluye datos de rendimiento, contexto ni licen
 
 ## Enlaces
 
-- Repositorio en HuggingFace (objeto de esta ficha): https://huggingface.co/AIArchiveInfo/Fun-ASR-Nano-2512-vllm
+- Repositorio en Hugging Face (objeto de esta ficha): https://huggingface.co/AIArchiveInfo/Fun-ASR-Nano-2512-vllm
 - Modelo base: https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512
 - Paquete oficial para vLLM: https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512-vllm
 - Revisión de origen del paquete oficial: https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512-vllm/tree/a4362c943d48951f98ca2a62181cc028970270c5

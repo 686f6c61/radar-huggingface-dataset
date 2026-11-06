@@ -80,7 +80,7 @@ La comparativa se basa en datos publicos de los modelos alternativos; los parame
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PocketAiHub/Ornith-1.5-9B-Abliterated-MLX-BF16
+- Repositorio Hugging Face: https://huggingface.co/PocketAiHub/Ornith-1.5-9B-Abliterated-MLX-BF16
 - Modelo base original: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Articulo de DeepReinforce sobre Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Noticia sobre el lanzamiento de Ornith-1.5: https://officechai.com/ai/deepreinforce-releases-open-source-orinth-1-5-family-of-models-with-solid-benchmarks-and-mit-license/

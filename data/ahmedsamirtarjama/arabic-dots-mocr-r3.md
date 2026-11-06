@@ -6,7 +6,7 @@ arabic-dots-mocr-r3 es un ajuste fino de investigación del modelo multimodal do
 
 La relevancia de esta revisión (ronda 3 de un proyecto en curso) está en la corrección de un fallo concreto de la ronda 2: el modelo entraba en bucle de generación en numerosos formularios, escribiendo secuencias como «ول» o «———» hasta agotar el límite de tokens. El origen era un conjunto de tokens árabes que el modelo base nunca emite (por ejemplo «حامل», «الأهلي», «مائة» o «إقامة»), cuya probabilidad se alteró al entrenar con LoRA manteniendo congelada la cabeza de salida. La ronda 3 reescribe los 71 tokens más problemáticos en los objetivos de entrenamiento usando sub-tokens que el modelo ya emplea, sin cambiar el texto, y añade 1.443 páginas de libros árabes verificadas a mano. El resultado reportado es de 0 páginas en bucle (frente a 47 en la ronda 2) en los conjuntos sintéticos de pagarés y cheques, y una mejora del CER en escaneos legales egipcios de 22,0 a 3,6.
 
-Se trata explícitamente de un checkpoint de investigación, no de un sistema de producción, y así lo advierte su autor. No se han publicado resultados de benchmarks de terceros ni métricas de contexto o de licencia en los metadatos de HuggingFace; las cifras disponibles proceden exclusivamente de la evaluación interna descrita en la model card. El repositorio ocupa 6,1 GB y contiene pesos en safetensors con código de modelado personalizado (etiqueta custom_code).
+Se trata explícitamente de un checkpoint de investigación, no de un sistema de producción, y así lo advierte su autor. No se han publicado resultados de benchmarks de terceros ni métricas de contexto o de licencia en los metadatos de Hugging Face; las cifras disponibles proceden exclusivamente de la evaluación interna descrita en la model card. El repositorio ocupa 6,1 GB y contiene pesos en safetensors con código de modelado personalizado (etiqueta custom_code).
 
 ## Especificaciones técnicas
 
@@ -17,7 +17,7 @@ Se trata explícitamente de un checkpoint de investigación, no de un sistema de
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | No se publican pesos cuantizados. El repositorio solo contiene safetensors en precisión completa; el script de inferencia oficial usa vLLM |
 | Idiomas soportados | Árabe (ar) e inglés (en); incluye documentos bilingües árabe-latín |
-| Licencia | No declarada en los metadatos de HuggingFace. La model card indica que hereda la licencia del modelo base (dots.mocr LICENSE AGREEMENT), cuyo texto no se reproduce en la información disponible |
+| Licencia | No declarada en los metadatos de Hugging Face. La model card indica que hereda la licencia del modelo base (dots.mocr LICENSE AGREEMENT), cuyo texto no se reproduce en la información disponible |
 | Formato de pesos | safetensors |
 | Resolución de imagen de entrada | Resolución nativa, entre 3.136 y 11.289.600 píxeles |
 | Tamaño del repositorio | 6,1 GB |
@@ -96,7 +96,7 @@ Los comparables directos documentados son el propio modelo base y las rondas ant
 
 | Modelo | Parámetros | Contexto | Rendimiento destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arabic-dots-mocr-r3 (este modelo) | ≈3,04 B | no disponible | CER 3,6 en escaneos legales egipcios; 0 páginas en bucle; box F1 99,8 en formularios sintéticos | Heredada del modelo base, sin texto detallado | Pesos safetensors en HuggingFace |
+| arabic-dots-mocr-r3 (este modelo) | ≈3,04 B | no disponible | CER 3,6 en escaneos legales egipcios; 0 páginas en bucle; box F1 99,8 en formularios sintéticos | Heredada del modelo base, sin texto detallado | Pesos safetensors en Hugging Face |
 | arabic-dots-mocr-r2 | no disponible (mismo base) | no disponible | CER 22,0 en escaneos legales egipcios; 47 páginas en bucle | Heredada del modelo base | Pesos publicados por el mismo autor |
 | arabic-dots-mocr-r1 | no disponible (mismo base) | no disponible | Mejor CER en KITAB-Bench OCR (0,132) y en páginas de libro (0,255); 23 páginas en bucle | Heredada del modelo base | Pesos publicados por el mismo autor |
 | dots.mocr (modelo base, zero-shot) | no disponible | no disponible | CER 6,1 en escaneos legales egipcios; 0 páginas vacías en recibos | dots.mocr LICENSE AGREEMENT | https://huggingface.co/rednote-hilab/dots.mocr |
@@ -116,11 +116,11 @@ Conviene señalar que la ronda 3 gana en formularios y en escaneos legales egipc
 - Licencia sin texto disponible en la información consultada: al heredar la del modelo base (dots.mocr LICENSE AGREEMENT), es imprescindible revisar ese acuerdo antes de cualquier uso comercial.
 - No se han utilizado documentos personales reales en el entrenamiento, según declara el autor, pero el modelo procesa documentos que pueden contener datos personales en inferencia, lo que obliga a aplicar las medidas de protección de datos correspondientes.
 - Solo se publican pesos safetensors; no hay versiones cuantizadas ni formato GGUF, lo que limita el despliegue en entornos de bajos recursos.
-- Sin descargas ni valoraciones registradas en HuggingFace en el momento de la consulta, por lo que no existe validación por parte de la comunidad.
+- Sin descargas ni valoraciones registradas en Hugging Face en el momento de la consulta, por lo que no existe validación por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedsamirtarjama/arabic-dots-mocr-r3
+- Modelo en Hugging Face: https://huggingface.co/ahmedsamirtarjama/arabic-dots-mocr-r3
 - Versión anterior (ronda 2): https://huggingface.co/ahmedsamirtarjama/arabic-dots-mocr-r2
 - Modelo base dots.mocr: https://huggingface.co/rednote-hilab/dots.mocr
 - Conjunto de facturas árabe-latín citado en el entrenamiento (KhalfounMehdi/arabic-latin-invoices-synthetic) y documentos oficiales egipcios (mohamedwasef/egyptian-official-documents-ocr): referenciados por nombre en la model card.

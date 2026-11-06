@@ -2,7 +2,7 @@
 
 ## Resumen
 
-biplanar-xray-to-3d-femur es un conjunto de pesos de reconstruccion 3D del femur a partir de dos radiografias (proyeccion anteroposterior y lateral), desarrollado por el usuario ayyp y publicado en HuggingFace bajo licencia CC-BY-4.0. El modelo no genera texto ni es un modelo de lenguaje: es un pipeline de vision por computador medico orientado a segmentacion y reconstruccion volumetrica, cuyo objetivo es estimar el eje mecanico femoral (del centro de la cadera al centro de la rodilla), una medida critica en planificacion de cirugia ortopedica.
+biplanar-xray-to-3d-femur es un conjunto de pesos de reconstruccion 3D del femur a partir de dos radiografias (proyeccion anteroposterior y lateral), desarrollado por el usuario ayyp y publicado en Hugging Face bajo licencia CC-BY-4.0. El modelo no genera texto ni es un modelo de lenguaje: es un pipeline de vision por computador medico orientado a segmentacion y reconstruccion volumetrica, cuyo objetivo es estimar el eje mecanico femoral (del centro de la cadera al centro de la rodilla), una medida critica en planificacion de cirugia ortopedica.
 
 El repositorio incluye dos arquitecturas alternativas implementadas con MONAI: una AttentionUnet de aproximadamente 1,5 millones de parametros (recomendada por el autor) y una SwinUNETR de unos 62 millones de parametros. Cada arquitectura se distribuye en cinco checkpoints correspondientes a cinco particiones de validacion cruzada, que se promedian para inferencia sobre datos nuevos.
 
@@ -71,8 +71,8 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| biplanar-xray-to-3d-femur (AttentionUnet) | 1,5 M | 2 radiografias (AP + LAT) | Reconstruccion 3D de femur y eje mecanico | CC-BY-4.0 | HuggingFace + GitHub |
-| biplanar-xray-to-3d-femur (SwinUNETR) | 62 M | 2 radiografias (AP + LAT) | Reconstruccion 3D de femur y eje mecanico | CC-BY-4.0 | HuggingFace + GitHub |
+| biplanar-xray-to-3d-femur (AttentionUnet) | 1,5 M | 2 radiografias (AP + LAT) | Reconstruccion 3D de femur y eje mecanico | CC-BY-4.0 | Hugging Face + GitHub |
+| biplanar-xray-to-3d-femur (SwinUNETR) | 62 M | 2 radiografias (AP + LAT) | Reconstruccion 3D de femur y eje mecanico | CC-BY-4.0 | Hugging Face + GitHub |
 | Otros modelos de reconstruccion biplanar de femur | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de modelos comparables de la misma categoria con los que establecer una comparacion cuantitativa.
@@ -89,6 +89,6 @@ No se dispone en la informacion proporcionada de modelos comparables de la misma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ayyp/biplanar-xray-to-3d-femur
+- Hugging Face: https://huggingface.co/ayyp/biplanar-xray-to-3d-femur
 - Repositorio GitHub (codigo, script de inferencia y configuraciones): https://github.com/ayyp1/biplanar-xray-to-3d-femur
 - Documentacion de MONAI: https://monai.io/

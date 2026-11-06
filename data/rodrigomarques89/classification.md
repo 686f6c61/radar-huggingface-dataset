@@ -73,7 +73,7 @@ La comparacion es muy limitada porque este repositorio no es un modelo entrenado
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rodrigomarques89/classification | 33.088 | no disponible | sin benchmarks (checkpoint sin entrenar) | MIT | HuggingFace, 15 descargas, 0 likes |
+| rodrigomarques89/classification | 33.088 | no disponible | sin benchmarks (checkpoint sin entrenar) | MIT | Hugging Face, 15 descargas, 0 likes |
 | Perceiver IO (DeepMind) | no disponible | no disponible | no disponible | no disponible | publicacion academica y repositorio oficial |
 | Transformer de clasificacion generico (p. ej. BERT-base) | no disponible en esta busqueda | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,12 +86,12 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de las a
 - **Sesgos conocidos**: no disponibles, precisamente porque no hay entrenamiento ni evaluacion.
 - **Riesgo de alucinacion**: no aplicable en el sentido de generacion de texto; el repositorio no documenta capacidades generativas.
 - **Limitaciones de contexto o idioma**: no disponibles. No se declara ventana de contexto ni cobertura linguistica.
-- **Carga no estandar**: al ser un codigo personalizado, las APIs automaticas de HuggingFace requieren un adaptador explicito; no se puede asumir que `pipeline()` funcione sin mas.
+- **Carga no estandar**: al ser un codigo personalizado, las APIs automaticas de Hugging Face requieren un adaptador explicito; no se puede asumir que `pipeline()` funcione sin mas.
 - **Restricciones de licencia**: la licencia es MIT, permisiva y apta para uso comercial del codigo, pero el propio autor recomienda revisar por separado los terminos de las fuentes de datos externas que se utilicen con el repositorio.
 - **Caveat de produccion**: no debe desplegarse en entornos productivos sin un entrenamiento completo, una evaluacion con al menos tres semillas y una linea base de capacidad comparable documentada aparte de los valores por defecto.
 - **Trazabilidad**: la model card insiste en conservar los registros de entrenamiento y las versiones del entorno junto a cualquier resultado publicado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rodrigomarques89/classification
+- Modelo en Hugging Face: https://huggingface.co/rodrigomarques89/classification
 - No se han encontrado papers, blogs, repositorios complementarios ni demos en la busqueda web realizada; los resultados devueltos por la busqueda correspondian a contenidos periodisticos sin relacion con el modelo.

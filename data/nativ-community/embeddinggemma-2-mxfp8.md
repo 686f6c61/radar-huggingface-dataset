@@ -104,7 +104,7 @@ No se dispone de datos suficientes en la información proporcionada para compara
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/nativ-community/embeddinggemma-2-mxfp8
+- Página del modelo en Hugging Face: https://huggingface.co/nativ-community/embeddinggemma-2-mxfp8
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Revisión concreta del modelo fuente: https://huggingface.co/google/embeddinggemma-2/tree/914f7f89142e33e77833254d9c9b90c3cef7303b
 - Repositorio MLX-VLM (revisión usada para la conversión): https://github.com/Blaizzy/mlx-vlm/tree/3d87e88402f307efbf68e568971aa887ee7d9ed0

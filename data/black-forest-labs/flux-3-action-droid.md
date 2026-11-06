@@ -86,7 +86,7 @@ WAM: predice fotogramas futuros y acciones de forma conjunta. VLA: modelo de vis
 
 | Modelo | Tipo | Parametros | Exito en RoboLab-120 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FLUX 3 Action DROID | WAM (acciones y fotogramas futuros) | 7B | 42,92% | flux-kommunity-license | Pesos abiertos en HuggingFace, via LeRobot |
+| FLUX 3 Action DROID | WAM (acciones y fotogramas futuros) | 7B | 42,92% | flux-kommunity-license | Pesos abiertos en Hugging Face, via LeRobot |
 | Cosmos3-Nano-Policy | WAM | 16B | 36,8% | no disponible | no disponible |
 | pi-0.5 | VLA (acciones directas desde vision-lenguaje) | 3,3B | 28,0% | no disponible | no disponible |
 
@@ -107,7 +107,7 @@ La comparacion se limita a la categoria de politica robotica evaluada en RoboLab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/black-forest-labs/flux-3-action-droid
+- Modelo en Hugging Face: https://huggingface.co/black-forest-labs/flux-3-action-droid
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-action-base
 - Coleccion FLUX 3 Action: https://huggingface.co/collections/black-forest-labs/flux-3-action-6ab25aef555dd30ab86567f8
 - Vision general de FLUX 3 Action: https://docs.bfl.ai/flux_3/flux3_action_overview

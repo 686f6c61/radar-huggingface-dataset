@@ -90,10 +90,10 @@ Notas del autor: a 4 bits el rendimiento cae de forma notable (nvfp4, 8.0 GB: 58
 
 | Modelo | Parametros | Contexto | main (73) | held-out (53) | Licencia | Disponibilidad |
 |---|---|---:|---|---|---|---|
-| Gemma-4-12B-Aether-LoRA (este) | 12B (base denso) | 32K | 65 (70) int8 | 28 (36) int8 | Apache 2.0 | HuggingFace, adaptador PEFT |
-| Qwen3.6-35B-A3B-Aether | 35B MoE (3B activos) | no disponible | 65 (70) int8 | 36 (44) int8 | no disponible | HuggingFace |
-| Qwen3.8-27B-Aether | 27B | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| google/gemma-4-12B-it (base) | 12B | no disponible | 0 (4) sin guia | 0 (0) sin guia | no disponible | HuggingFace |
+| Gemma-4-12B-Aether-LoRA (este) | 12B (base denso) | 32K | 65 (70) int8 | 28 (36) int8 | Apache 2.0 | Hugging Face, adaptador PEFT |
+| Qwen3.6-35B-A3B-Aether | 35B MoE (3B activos) | no disponible | 65 (70) int8 | 36 (44) int8 | no disponible | Hugging Face |
+| Qwen3.8-27B-Aether | 27B | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| google/gemma-4-12B-it (base) | 12B | no disponible | 0 (4) sin guia | 0 (0) sin guia | no disponible | Hugging Face |
 
 El hermano Qwen3.6-35B-A3B en mxfp4 (20.9 GB) iguala aproximadamente a este modelo en main (64 frente a 65) y lo supera en held-out (33 frente a 28), con 85 tok/s frente a 20 tok/s; la diferencia de velocidad se atribuye a la arquitectura MoE, que lee aproximadamente un cuarto de los pesos por token. En bf16, el hermano mayor es claramente superior en held-out tras reparacion (14 tareas frente a 3).
 
@@ -110,7 +110,7 @@ El hermano Qwen3.6-35B-A3B en mxfp4 (20.9 GB) iguala aproximadamente a este mode
 
 ## Enlaces
 
-- Adaptador LoRA en HuggingFace: https://huggingface.co/emkey1/Gemma-4-12B-Aether-LoRA
+- Adaptador LoRA en Hugging Face: https://huggingface.co/emkey1/Gemma-4-12B-Aether-LoRA
 - Modelo fusionado: https://huggingface.co/emkey1/Gemma-4-12B-Aether
 - Hermano Qwen3.6-35B-A3B-Aether: https://huggingface.co/emkey1/Qwen3.6-35B-A3B-Aether
 - Hermano Qwen3.8-27B-Aether: https://huggingface.co/emkey1/Qwen3.8-27B-Aether

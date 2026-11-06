@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| jessengatai/parakeet-tdt-0.6b-v2-bf16 | ~0,6 B | no disponible | inglés | CC-BY-4.0 | safetensors (MLX, bf16) | HuggingFace, 32 descargas |
-| nvidia/parakeet-tdt-0.6b-v2 | ~0,6 B | no disponible | inglés | CC-BY-4.0 | no disponible en esta ficha | HuggingFace (modelo original) |
-| mlx-community/parakeet-tdt-0.6b-v2 | ~0,6 B | no disponible | inglés | CC-BY-4.0 (heredada) | MLX (float32) | HuggingFace |
+| jessengatai/parakeet-tdt-0.6b-v2-bf16 | ~0,6 B | no disponible | inglés | CC-BY-4.0 | safetensors (MLX, bf16) | Hugging Face, 32 descargas |
+| nvidia/parakeet-tdt-0.6b-v2 | ~0,6 B | no disponible | inglés | CC-BY-4.0 | no disponible en esta ficha | Hugging Face (modelo original) |
+| mlx-community/parakeet-tdt-0.6b-v2 | ~0,6 B | no disponible | inglés | CC-BY-4.0 (heredada) | MLX (float32) | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la información proporcionada.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jessengatai/parakeet-tdt-0.6b-v2-bf16
+- Modelo en Hugging Face: https://huggingface.co/jessengatai/parakeet-tdt-0.6b-v2-bf16
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
 - Conversión MLX de referencia: https://huggingface.co/mlx-community/parakeet-tdt-0.6b-v2

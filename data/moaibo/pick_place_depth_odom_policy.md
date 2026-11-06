@@ -68,7 +68,7 @@ No se dispone de datos de rendimiento publicados para este modelo, por lo que no
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/MoAIBo/pick_place_depth_odom_policy)
+- [Modelo en Hugging Face](https://huggingface.co/MoAIBo/pick_place_depth_odom_policy)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/MoAIBo/pick_place_depth_odom)
 - [Paper de SmolVLA (arXiv:2506.01844)](https://arxiv.org/abs/2506.01844)
 - [Guia de LeRobot para SmolVLA](https://huggingface.co/docs/lerobot/main/en/smolvla)

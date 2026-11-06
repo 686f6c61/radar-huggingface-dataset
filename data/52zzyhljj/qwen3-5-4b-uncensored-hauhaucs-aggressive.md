@@ -86,8 +86,8 @@ No se dispone de datos de rendimiento comparativos para estos modelos. La compar
 
 ## Enlaces
 
-- Modelo en HuggingFace (autor original): https://huggingface.co/HauhauCS/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive
-- Modelo en HuggingFace (publicación de 52ZZHLJJ): https://huggingface.co/52ZZHLJJ/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive
+- Modelo en Hugging Face (autor original): https://huggingface.co/HauhauCS/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive
+- Modelo en Hugging Face (publicación de 52ZZHLJJ): https://huggingface.co/52ZZHLJJ/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Variante de 9B: https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive
 - Repositorio de despliegue en Colab: https://github.com/CookieFilled/qwen-3.5-4B-uncensored-colab

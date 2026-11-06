@@ -87,9 +87,9 @@ No existen otros modelos publicamente disponibles especializados en GeneXus con 
 
 | Modelo | Parametros | Contexto | parseRate (GeneXus) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KBBridge-v3-FP8 | 27B | 262 144 | 84,8 | Apache 2.0 | HuggingFace |
-| KBBridge-v2 | 27B (base Qwen3.6) | no disponible | 89,0 | Apache 2.0 | HuggingFace |
-| Qwen3.8-27B (base) | 27B | no disponible | no disponible (sin fine-tune no genera `.gxSource` valido) | Apache 2.0 | HuggingFace |
+| KBBridge-v3-FP8 | 27B | 262 144 | 84,8 | Apache 2.0 | Hugging Face |
+| KBBridge-v2 | 27B (base Qwen3.6) | no disponible | 89,0 | Apache 2.0 | Hugging Face |
+| Qwen3.8-27B (base) | 27B | no disponible | no disponible (sin fine-tune no genera `.gxSource` valido) | Apache 2.0 | Hugging Face |
 
 Los modelos frontier (Claude, GPT, etc.) requieren ~21 600 tokens de documentacion inyectada para alcanzar un parse rate de 0,5–3,1%, muy por debajo del 84,8% de KBBridge-v3 sin documentacion.
 
@@ -106,7 +106,7 @@ Los modelos frontier (Claude, GPT, etc.) requieren ~21 600 tokens de documentaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KBBridge/KBBridge-v3-FP8
+- Modelo en Hugging Face: https://huggingface.co/KBBridge/KBBridge-v3-FP8
 - Modelo base (bf16, con cabeza MTP): https://huggingface.co/KBBridge/KBBridge-v3
 - Sitio web de KBBridge: https://kbbridge.com/
 - Blog sobre privacidad y control de datos: https://kbbridge.com/blog/your-knowledge-base-ai-and-control

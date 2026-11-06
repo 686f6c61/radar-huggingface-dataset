@@ -112,7 +112,7 @@ No se dispone de datos de otros adaptadores LoRA comparables para esta tarea en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sarpaydemir/hunkrisk-qwen3.5-2b-lora
+- Modelo en Hugging Face: https://huggingface.co/sarpaydemir/hunkrisk-qwen3.5-2b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio del proyecto (codigo, pipeline de datos y evaluacion): https://github.com/sarpaydemir/hunkrisk
 - Pagina de resultados: https://github.com/sarpaydemir/hunkrisk/blob/main/reports/results.md

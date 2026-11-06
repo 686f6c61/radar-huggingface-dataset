@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (Llama 3.1 8B AutoRound INT8) | 8B (base) | 128.000 | INT8 WoQ, grupo 64, simetrica | Llama 3.1 Community | HuggingFace, 21 descargas |
-| meta-llama/Llama-3.1-8B (original) | 8B | 128.000 | bfloat16 | Llama 3.1 Community | HuggingFace, ampliamente usado |
-| Mistral 7B | 7B | 32.000 | bfloat16 y variantes cuantizadas | Apache 2.0 | HuggingFace |
-| Qwen2.5 7B | 7B | 128.000 | bfloat16 y variantes cuantizadas | Apache 2.0 (mayoria de variantes) | HuggingFace |
+| Este artefacto (Llama 3.1 8B AutoRound INT8) | 8B (base) | 128.000 | INT8 WoQ, grupo 64, simetrica | Llama 3.1 Community | Hugging Face, 21 descargas |
+| meta-llama/Llama-3.1-8B (original) | 8B | 128.000 | bfloat16 | Llama 3.1 Community | Hugging Face, ampliamente usado |
+| Mistral 7B | 7B | 32.000 | bfloat16 y variantes cuantizadas | Apache 2.0 | Hugging Face |
+| Qwen2.5 7B | 7B | 128.000 | bfloat16 y variantes cuantizadas | Apache 2.0 (mayoria de variantes) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este artefacto concreto.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo para este artefacto concreto.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-auto_round-int8-gs64-sym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-auto_round-int8-gs64-sym
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Intel AutoRound (GitHub): https://github.com/intel/auto-round
 - Pipeline de cuantizacion referenciado: https://git.epicdynamic.com/auto-round-pipeline

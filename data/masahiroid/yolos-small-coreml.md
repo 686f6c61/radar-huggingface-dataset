@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`masahiroid/yolos-small-coreml` es una conversión no oficial a Core ML del modelo de detección de objetos `hustvl/yolos-small`. El modelo original, desarrollado por el grupo VLRLab de la Universidad Huazhong de Ciencia y Tecnología (HUST) junto con HuggingFace, implementa la arquitectura YOLOS ("You Only Look at One Sequence"), un detector que reutiliza un backbone ViT-Small de tipo transformer puro en lugar de las CNN habituales en la familia YOLO. Esta conversión la mantiene el usuario `masahiroid` y su objetivo es permitir la inferencia local en dispositivos Apple (iPhone, iPad y Mac) mediante el framework Core ML.
+`masahiroid/yolos-small-coreml` es una conversión no oficial a Core ML del modelo de detección de objetos `hustvl/yolos-small`. El modelo original, desarrollado por el grupo VLRLab de la Universidad Huazhong de Ciencia y Tecnología (HUST) junto con Hugging Face, implementa la arquitectura YOLOS ("You Only Look at One Sequence"), un detector que reutiliza un backbone ViT-Small de tipo transformer puro en lugar de las CNN habituales en la familia YOLO. Esta conversión la mantiene el usuario `masahiroid` y su objetivo es permitir la inferencia local en dispositivos Apple (iPhone, iPad y Mac) mediante el framework Core ML.
 
 El modelo resuelve detección de objetos genérica sobre las 91 categorías de COCO más la clase "sin objeto", con un total de 92 salidas por consulta y 100 consultas por imagen. El backbone ViT-Small tiene 30,7 millones de parámetros y el paquete convertido se distribuye en precisión float16, con un tamaño de repositorio de aproximadamente 0,1 GB. La entrada es fija de 512x864 píxeles (altura x anchura) en formato NCHW, lo que simplifica su integración en pipelines de visión por computador en Apple Silicon.
 
@@ -21,7 +21,7 @@ Su relevancia actual es doble: por un lado, ofrece una alternativa de detección
 | Licencia | apache-2.0 |
 | Formato de pesos | Core ML `.mlpackage` (programa `mlprogram`, `minimum_deployment_target=macOS14`); modelo base original en PyTorch/safetensors |
 
-Datos adicionales de la conversión: 92 logits por consulta (91 clases COCO + "sin objeto"), 100 cajas por imagen en formato normalizado `(center_x, center_y, width, height)`, normalización de entrada con media `[0.485, 0.456, 0.406]` y desviación `[0.229, 0.224, 0.225]`. Fecha de publicación en HuggingFace: 1 de octubre de 2026 (según los metadatos del repositorio).
+Datos adicionales de la conversión: 92 logits por consulta (91 clases COCO + "sin objeto"), 100 cajas por imagen en formato normalizado `(center_x, center_y, width, height)`, normalización de entrada con media `[0.485, 0.456, 0.406]` y desviación `[0.229, 0.224, 0.225]`. Fecha de publicación en Hugging Face: 1 de octubre de 2026 (según los metadatos del repositorio).
 
 ## Arquitectura y entrenamiento
 
@@ -78,10 +78,10 @@ Estos datos miden únicamente la fidelidad de la conversión a Core ML, no la ca
 
 | Modelo | Parametros | Contexto / entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `masahiroid/yolos-small-coreml` | 30,7 M | 512x864 fija, 100 consultas, 92 clases | Core ML `.mlpackage` fp16 | Apache 2.0 | HuggingFace (conversión comunitaria) |
-| `hustvl/yolos-small` | 30,7 M | Entrada configurable en PyTorch; 100 consultas, COCO | PyTorch / safetensors | Apache 2.0 | HuggingFace (oficial) |
-| `facebook/detr-resnet-50` | no disponible en la informacion proporcionada | Entrada configurable; 100 consultas, COCO | PyTorch / safetensors | Apache 2.0 | HuggingFace (oficial) |
-| Detectors de la familia YOLO (por ejemplo Ultralytics YOLO11) | no disponible en la informacion proporcionada | Entrada configurable; requiere NMS | PyTorch, ONNX, Core ML (export) | AGPL-3.0 en las versiones recientes de Ultralytics | Repositorio propio y HuggingFace |
+| `masahiroid/yolos-small-coreml` | 30,7 M | 512x864 fija, 100 consultas, 92 clases | Core ML `.mlpackage` fp16 | Apache 2.0 | Hugging Face (conversión comunitaria) |
+| `hustvl/yolos-small` | 30,7 M | Entrada configurable en PyTorch; 100 consultas, COCO | PyTorch / safetensors | Apache 2.0 | Hugging Face (oficial) |
+| `facebook/detr-resnet-50` | no disponible en la informacion proporcionada | Entrada configurable; 100 consultas, COCO | PyTorch / safetensors | Apache 2.0 | Hugging Face (oficial) |
+| Detectors de la familia YOLO (por ejemplo Ultralytics YOLO11) | no disponible en la informacion proporcionada | Entrada configurable; requiere NMS | PyTorch, ONNX, Core ML (export) | AGPL-3.0 en las versiones recientes de Ultralytics | Repositorio propio y Hugging Face |
 
 Diferencias clave: frente al modelo base en PyTorch, esta conversión gana despliegue nativo en Apple y pierde flexibilidad de resolución y de ecosistema. Frente a DETR, comparte el paradigma de predicción por conjuntos sin NMS, pero con un backbone ViT mucho más pequeño. Frente a la familia YOLO clásica, YOLOS evita el NMS, aunque suelen ser más rápidas las implementaciones CNN optimizadas para móvil. No hay datos de precisión publicados en la información disponible que permitan comparar mAP entre estas alternativas.
 
@@ -90,7 +90,7 @@ Diferencias clave: frente al modelo base en PyTorch, esta conversión gana despl
 - Cobertura de clases cerrada: únicamente las 91 categorías de COCO. No detecta clases personalizadas ni objetos fuera de ese vocabulario sin reentrenamiento del modelo base.
 - Límite de 100 objetos por imagen: si hay más instancias, las consultas restantes se descartan; no hay mecanismo de ampliación en esta conversión.
 - Resolución fija de 512x864: cualquier imagen debe redimensionarse a esa proporción. La altura de 512 píxeles y los parches de 16x16 limitan la detección de objetos muy pequeños en escenas densas.
-- Conversión no oficial: no está publicada por los autores de YOLOS ni por HuggingFace. La validación de fidelidad se hizo sobre una sola imagen de COCO y 5 detecciones, por lo que no constituye una garantía estadística de comportamiento equivalente al modelo original.
+- Conversión no oficial: no está publicada por los autores de YOLOS ni por Hugging Face. La validación de fidelidad se hizo sobre una sola imagen de COCO y 5 detecciones, por lo que no constituye una garantía estadística de comportamiento equivalente al modelo original.
 - Riesgo de falsos positivos y de alucinación de objetos: como todo detector, puede producir cajas con confianza alta sobre regiones sin objeto real; conviene calibrar el umbral por aplicación y aplicar filtrado posterior.
 - Sin NMS: al ser predicción por conjuntos, las cajas duplicadas son poco frecuentes, pero pueden aparecer con umbrales de confianza bajos; el postprocesado de emparejamiento queda en manos de la aplicación.
 - Datos de entrenamiento y sesgos no documentados en la información disponible: se heredan los sesgos de COCO, con posible infrarrepresentación de determinadas categorías, contextos geográficos y condiciones de iluminación.
@@ -101,7 +101,7 @@ Diferencias clave: frente al modelo base en PyTorch, esta conversión gana despl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masahiroid/yolos-small-coreml
+- Modelo en Hugging Face: https://huggingface.co/masahiroid/yolos-small-coreml
 - Modelo base original: https://huggingface.co/hustvl/yolos-small
 - Documentacion de Core ML (Apple): https://developer.apple.com/documentation/coreml
 - Herramienta de auditoria de seguridad citada por el autor: https://github.com/masahirocom/model-audit-lite

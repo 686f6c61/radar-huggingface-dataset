@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) publicado por DeepSeek AI, distribuido en el repositorio de HuggingFace `m0mmm/DeepSeek-V4.1-Flash`. Segun la model card, combina una arquitectura Causal Encoder-Decoder (CED) de 40 capas con soporte nativo de imagenes y texto, y una ventana de contexto de hasta 1.000.000 de tokens. Su propuesta central es la compresion agresiva de la cache KV: el modelo reduce el coste de memoria por token a unos 890 bytes, aproximadamente una cuarta parte del de DeepSeek-V4-Flash y 437 veces menos que DeepSeek-V1, lo que lo orienta a cargas de trabajo con entradas muy largas y flujos agenticos.
+DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) publicado por DeepSeek AI, distribuido en el repositorio de Hugging Face `m0mmm/DeepSeek-V4.1-Flash`. Segun la model card, combina una arquitectura Causal Encoder-Decoder (CED) de 40 capas con soporte nativo de imagenes y texto, y una ventana de contexto de hasta 1.000.000 de tokens. Su propuesta central es la compresion agresiva de la cache KV: el modelo reduce el coste de memoria por token a unos 890 bytes, aproximadamente una cuarta parte del de DeepSeek-V4-Flash y 437 veces menos que DeepSeek-V1, lo que lo orienta a cargas de trabajo con entradas muy largas y flujos agenticos.
 
 El punto diferenciador es el reparto asimetrico de computo: durante el prefill solo se activan 8.000 millones de parametros por token, y 16.000 millones durante la decodificacion, sobre un backbone declarado de 552.000 millones de parametros. El repositorio contiene 763.205.315.794 parametros segun los metadatos de safetensors, cifra que incluiria la memoria condicional Engram (196.000 millones declarados en la model card). Incorpora ademas decodificacion especulativa DSpark y un ajuste de esfuerzo de razonamiento controlable de forma continua entre 1 y 100.
 
@@ -75,7 +75,7 @@ El unico dato cuantitativo de rendimiento recuperable son las ratios de cache KV
 
 | Modelo | Parametros | Contexto | Cache KV por token | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash | 763.205.315.794 totales; 552B de backbone + 196B de Engram; 8B activos en prefill y 16B en decode | 1.000.000 de tokens | ~890 bytes (FP4, E2M1) | MIT | Repositorio de terceros en HuggingFace, 0 descargas |
+| DeepSeek-V4.1-Flash | 763.205.315.794 totales; 552B de backbone + 196B de Engram; 8B activos en prefill y 16B en decode | 1.000.000 de tokens | ~890 bytes (FP4, E2M1) | MIT | Repositorio de terceros en Hugging Face, 0 descargas |
 | DeepSeek-V4-Flash | No disponible | No disponible | ~4x la de V4.1-Flash, es decir, del orden de 3.560 bytes (valor derivado de la ratio declarada) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 | DeepSeek-V1 | No disponible | No disponible | ~437x la de V4.1-Flash, es decir, del orden de 389 KB por token (valor derivado de la ratio declarada) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 
@@ -96,9 +96,9 @@ Los valores de cache KV de DeepSeek-V4-Flash y DeepSeek-V1 son calculos aritmeti
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/m0mmm/DeepSeek-V4.1-Flash
+- Repositorio de Hugging Face: https://huggingface.co/m0mmm/DeepSeek-V4.1-Flash
 - Informe tecnico referenciado en la model card: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organizacion en HuggingFace de DeepSeek AI: https://huggingface.co/deepseek-ai
+- Organizacion en Hugging Face de DeepSeek AI: https://huggingface.co/deepseek-ai
 - Sitio oficial: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/
 - Twitter/X: https://twitter.com/deepseek_ai

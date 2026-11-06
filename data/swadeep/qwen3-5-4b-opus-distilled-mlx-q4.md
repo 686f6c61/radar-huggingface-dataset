@@ -81,7 +81,7 @@ No hay datos de rendimiento publicados para establecer una comparación rigurosa
 
 ## Enlaces
 
-- [Modelo en HuggingFace (versión MLX Q4)](https://huggingface.co/swadeep/Qwen3.5-4b-opus-distilled-mlx-q4)
+- [Modelo en Hugging Face (versión MLX Q4)](https://huggingface.co/swadeep/Qwen3.5-4b-opus-distilled-mlx-q4)
 - [Modelo original sin cuantizar](https://huggingface.co/swadeep/Qwen3.5-4b-opus-distilled)
 - [Modelo base Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)
 - [Dataset de razonamiento de Claude Opus](https://huggingface.co/datasets/angrygiraffe/claude-opus-4.6-4.7-reasoning-8.7k)

@@ -81,7 +81,7 @@ No se dispone de datos de contexto, rendimiento, licencia ni disponibilidad para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darturi/Averaged_MO_Qwen7B_Adapters-1
+- Modelo en Hugging Face: https://huggingface.co/darturi/Averaged_MO_Qwen7B_Adapters-1
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Adaptador fuente 1: https://huggingface.co/ModelOrganismsForEM/Qwen2.5-7B-Instruct_risky-financial-advice
 - Adaptador fuente 2: https://huggingface.co/ModelOrganismsForEM/Qwen2.5-7B-Instruct_bad-medical-advice

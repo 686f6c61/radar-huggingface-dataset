@@ -78,9 +78,9 @@ Los valores grupales son estimaciones puntuales; los intervalos están en `audit
 
 | Modelo | Tipo | Entrenamiento | Contexto / entrada | Garantía de FPR | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| anomalies-diffusion-calibration (este) | Auditoría conformal de detectores | Solo sanos (IXI T2) | Volumétrica, 128x128 en ANDi | Sí, muestra finita validada (G0) | CC BY-SA 3.0 | HuggingFace, 0 descargas |
+| anomalies-diffusion-calibration (este) | Auditoría conformal de detectores | Solo sanos (IXI T2) | Volumétrica, 128x128 en ANDi | Sí, muestra finita validada (G0) | CC BY-SA 3.0 | Hugging Face, 0 descargas |
 | ANDi publicado | Detector de anomalías con difusión | Solo sanos | No disponible en esta ficha | No documentada aquí | No disponible | No disponible |
-| DAE baseline (`anomalies-diffusion-dae-baseline`) | Autoencoder denoising | Solo sanos (319 IXI T2) | No disponible | Calibrado en este estudio | CC BY-SA 3.0 (derivados) | HuggingFace |
+| DAE baseline (`anomalies-diffusion-dae-baseline`) | Autoencoder denoising | Solo sanos (319 IXI T2) | No disponible | Calibrado en este estudio | CC BY-SA 3.0 (derivados) | Hugging Face |
 | Detectores supervisados de lesión (p. ej. segmentación MS) | Segmentación supervisada | Con etiquetas de lesión | No disponible | No aplica | Variable | Variable |
 
 No se dispone de datos comparativos de rendimiento (Dice, AUROC) de alternativas en la información proporcionada; la comparativa se limita a metodología, licencia y disponibilidad.
@@ -101,7 +101,7 @@ No se dispone de datos comparativos de rendimiento (Dice, AUROC) de alternativas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TamAko783/anomalies-diffusion-calibration
+- Repositorio en Hugging Face: https://huggingface.co/TamAko783/anomalies-diffusion-calibration
 - Referencia metodológica: Bates et al., "Testing for outliers with conformal p-values", Annals of Statistics, 2023 (citado en la model card; sin URL en la información proporcionada)
 - Referencia metodológica: Angelopoulos et al., "Conformal Risk Control", ICLR 2024 (citado en la model card; sin URL en la información proporcionada)
 - Conjunto de datos IXI (CC BY-SA 3.0): sin URL en la información proporcionada

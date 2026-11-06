@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`XinyiWei/cv-retrieval` es un repositorio experimental alojado en HuggingFace que implementa la arquitectura ALBEF (Align before Fuse) para tareas de recuperacion multimodal (retrieval), es decir, emparejamiento texto-imagen. Lo desarrolla el usuario XinyiWei y se distribuye bajo licencia BSD-3-Clause. El repositorio se presenta explicitamente como una implementacion funcional de referencia con configuracion "tiny", orientada a codigo transparente y pruebas de humo (smoke tests) reproducibles, no como un modelo entrenado para produccion.
+`XinyiWei/cv-retrieval` es un repositorio experimental alojado en Hugging Face que implementa la arquitectura ALBEF (Align before Fuse) para tareas de recuperacion multimodal (retrieval), es decir, emparejamiento texto-imagen. Lo desarrolla el usuario XinyiWei y se distribuye bajo licencia BSD-3-Clause. El repositorio se presenta explicitamente como una implementacion funcional de referencia con configuracion "tiny", orientada a codigo transparente y pruebas de humo (smoke tests) reproducibles, no como un modelo entrenado para produccion.
 
 El checkpoint incluido (`model.safetensors`) contiene unicamente una inicializacion valida con 49.600 parametros totales, segun los metadatos de safetensors. La propia model card aclara que no ha sido entrenado ni auditado, y que no se reclama ninguna puntuacion de benchmark. Se trata, por tanto, de un punto de partida experimental para reproducir la arquitectura y validar el pipeline de entrenamiento, no de un modelo listo para inferencia real.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento en retrieval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| XinyiWei/cv-retrieval | 49.600 | no disponible | sin datos (no entrenado) | BSD-3-Clause | HuggingFace |
+| XinyiWei/cv-retrieval | 49.600 | no disponible | sin datos (no entrenado) | BSD-3-Clause | Hugging Face |
 | ALBEF original (Salesforce) | del orden de cientos de millones (no confirmado en la informacion disponible) | no disponible | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda |
 | Alternativas de retrieval multimodal | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,4 +84,4 @@ Los datos de los modelos comparables no estan disponibles en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XinyiWei/cv-retrieval
+- Hugging Face: https://huggingface.co/XinyiWei/cv-retrieval

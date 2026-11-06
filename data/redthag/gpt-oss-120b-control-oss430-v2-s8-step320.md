@@ -96,11 +96,11 @@ Rendimiento por entorno (pasos 280-289 frente a 310-319):
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `redthag/gpt-oss-120b-control-oss430-v2-s8-step320` | Este adaptador (control, paso 320) | LoRA r32 sobre 120B | No disponible | Apache 2.0 | HuggingFace (29 descargas) |
+| `redthag/gpt-oss-120b-control-oss430-v2-s8-step320` | Este adaptador (control, paso 320) | LoRA r32 sobre 120B | No disponible | Apache 2.0 | Hugging Face (29 descargas) |
 | `oss430` (buscador de recompensa) | Modelo experimental comparado, misma receta con entornos explotables | LoRA sobre 120B | No disponible | No disponible | Referenciado en la model card |
-| `redthag/gpt-oss-120b-control-oss430-v2-s7` | Checkpoint anterior (paso 280) | LoRA r32 sobre 120B | No disponible | Apache 2.0 | HuggingFace |
-| `redthag/gpt-oss-120b-control-oss430-v2-s8-final` | Checkpoint final (paso 430) | LoRA r32 sobre 120B | No disponible | Apache 2.0 | HuggingFace |
-| `openai/gpt-oss-120b` | Modelo base | 120B (MoE) | No disponible | No disponible en esta ficha | HuggingFace |
+| `redthag/gpt-oss-120b-control-oss430-v2-s7` | Checkpoint anterior (paso 280) | LoRA r32 sobre 120B | No disponible | Apache 2.0 | Hugging Face |
+| `redthag/gpt-oss-120b-control-oss430-v2-s8-final` | Checkpoint final (paso 430) | LoRA r32 sobre 120B | No disponible | Apache 2.0 | Hugging Face |
+| `openai/gpt-oss-120b` | Modelo base | 120B (MoE) | No disponible | No disponible en esta ficha | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -116,7 +116,7 @@ Rendimiento por entorno (pasos 280-289 frente a 310-319):
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s8-step320
+- Hugging Face del adaptador: https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s8-step320
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Checkpoint anterior (etapa 7, paso 280): https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s7
 - Checkpoint final (etapa 8, paso 430): https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s8-final

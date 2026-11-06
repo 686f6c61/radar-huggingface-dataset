@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-05-deltaminpopcount-7381716a739f` es un checkpoint archivado publicado por el usuario davidheineman en HuggingFace. Se trata de un artefacto de investigación procedente de una ejecución de entrenamiento ya finalizada, etiquetado con los tags `rlve` y `scratch-archive`, y cuyo nombre interno es "05-DeltaMinPopcount". No es un modelo con model card orientada a usuarios finales, sino una copia de seguridad de pesos con fines de trazabilidad experimental.
+El modelo identificado como `davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-05-deltaminpopcount-7381716a739f` es un checkpoint archivado publicado por el usuario davidheineman en Hugging Face. Se trata de un artefacto de investigación procedente de una ejecución de entrenamiento ya finalizada, etiquetado con los tags `rlve` y `scratch-archive`, y cuyo nombre interno es "05-DeltaMinPopcount". No es un modelo con model card orientada a usuarios finales, sino una copia de seguridad de pesos con fines de trazabilidad experimental.
 
 Segun los metadatos, el repositorio contiene 1.777.088.000 parametros reales (aproximadamente 1,78 mil millones) en formato safetensors y ocupa 3,6 GB. Los tags indican que la arquitectura subyacente es Qwen2, aunque no se especifica si se partió de pesos preentrenados de Qwen2 o si únicamente se reutilizó su implementación. El checkpoint corresponde al paso final 149 de la ejecución, con identificador de W&B `a77ae6b9`, y la ruta original de entrenamiento era `runs/mopd-v2-r1-p1r8-teachers-20261003-115039/resumable/05-DeltaMinPopcount`.
 
@@ -94,7 +94,7 @@ Nota: los datos de los modelos de referencia provienen de sus respectivas fichas
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-05-deltaminpopcount-7381716a739f
-- Perfil del autor en HuggingFace: https://huggingface.co/davidheineman
+- Repositorio de Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-05-deltaminpopcount-7381716a739f
+- Perfil del autor en Hugging Face: https://huggingface.co/davidheineman
 - Paper, blog o repositorio asociado: no disponible
 - Demo: no disponible

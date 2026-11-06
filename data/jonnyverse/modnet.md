@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para realizar una comparativa cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JONNYVERSE/modnet
+- Repositorio Hugging Face: https://huggingface.co/JONNYVERSE/modnet
 - Repositorio original en GitHub: https://github.com/ZHKKKe/MODNet
 - Repositorio de la conversion original (Xenova): https://huggingface.co/Xenova/modnet
 - Ejemplo en Colab: https://colab.research.google.com/drive/1P3cWtg8fnmu9karZHYDAtmm1vj1rgA-f?usp=sharing

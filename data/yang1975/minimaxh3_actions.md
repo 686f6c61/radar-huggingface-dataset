@@ -1,7 +1,7 @@
 # yang1975/MinimaxH3_Actions
 
 ## Resumen
-yang1975/MinimaxH3_Actions es un repositorio alojado en HuggingFace por el usuario yang1975, con un tamaño de 61,3 GB, 0 descargas y 1 «like» en el momento de la consulta. No declara pipeline, licencia, idiomas ni formato de pesos. Su model card no describe ningún modelo: el autor indica únicamente que el repositorio es una copia de seguridad de material procedente de Civitai, con crédito a los artistas y creadores de LoRA originales.
+yang1975/MinimaxH3_Actions es un repositorio alojado en Hugging Face por el usuario yang1975, con un tamaño de 61,3 GB, 0 descargas y 1 «like» en el momento de la consulta. No declara pipeline, licencia, idiomas ni formato de pesos. Su model card no describe ningún modelo: el autor indica únicamente que el repositorio es una copia de seguridad de material procedente de Civitai, con crédito a los artistas y creadores de LoRA originales.
 
 El nombre del repositorio remite a MiniMax H3, un modelo multimodal de vídeo de MiniMax que, según la página oficial del fabricante, unifica comprensión, generación y edición precisa en un único modelo y está orientado a cine, publicidad, marcas, comercio electrónico, videojuegos y contenido para redes. Sin embargo, no hay ningún elemento verificable en el repositorio que confirme que contiene pesos de ese modelo, ni que esté respaldado o publicado por MiniMax.
 
@@ -12,7 +12,7 @@ Esta ficha documenta, por tanto, lo que puede verificarse (identificador, autor,
 | Parámetro | Valor |
 |---|---|
 | Identificador | yang1975/MinimaxH3_Actions |
-| Autor | yang1975 (usuario de HuggingFace) |
+| Autor | yang1975 (usuario de Hugging Face) |
 | Arquitectura | no disponible |
 | Parámetros totales | no disponible |
 | Longitud de contexto | no disponible |
@@ -66,14 +66,14 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 ## Comparativa con modelos similares
 
-| Aspecto | yang1975/MinimaxH3_Actions | MiniMax H3 (oficial, según el fabricante) | Colecciones de LoRA en HuggingFace (categoría genérica) |
+| Aspecto | yang1975/MinimaxH3_Actions | MiniMax H3 (oficial, según el fabricante) | Colecciones de LoRA en Hugging Face (categoría genérica) |
 |---|---|---|---|
 | Naturaleza | Repositorio de respaldo de material de Civitai | Modelo multimodal de vídeo | Repositorios de recursos de terceros |
 | Parámetros | no disponible | no disponible | no aplica |
 | Longitud de contexto | no disponible | no disponible | no aplica |
 | Licencia | no disponible | no disponible en la información consultada | variable, a menudo sin especificar |
 | Rendimiento en benchmarks | no disponible | no disponible | no aplica |
-| Disponibilidad | HuggingFace, 0 descargas, sin proveedor de inferencia | Página oficial de producto | Variable |
+| Disponibilidad | Hugging Face, 0 descargas, sin proveedor de inferencia | Página oficial de producto | Variable |
 
 La comparación cuantitativa no es posible con los datos disponibles: no se han proporcionado parámetros, métricas ni licencias de ninguna de las alternativas.
 
@@ -89,7 +89,7 @@ La comparación cuantitativa no es posible con los datos disponibles: no se han 
 - Fechas anómalas: las marcas de creación y actualización (2026-09-17) figuran tal cual en los metadatos; conviene verificarlas antes de citarlas.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/yang1975/MinimaxH3_Actions
+- Repositorio en Hugging Face: https://huggingface.co/yang1975/MinimaxH3_Actions
 - Página oficial de MiniMax H3 (referencia del nombre, sin relación verificada con el repositorio): https://hailuoai.video/tools/minimax-h3
 - Civitai (plataforma de origen del material, según el autor): https://civitai.com
 

@@ -72,9 +72,9 @@ Mejora relativa declarada: +17,65x sobre el azar en Top-1, +3,6x en Top-5, rango
 
 | Modelo | Parametros | Modalidad | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| M3D-CLIP-CrossModal-MRI-CT | 198 M | MRI 3D, alineado a CT | Volumen (1, 32, 256, 256) | Apache 2.0 | HuggingFace, codigo custom |
-| GoodBaiBai88/M3D-CLIP (base) | no disponible | CT 3D + texto | Volumen 3D y texto | no disponible en la informacion | HuggingFace |
-| Encoders MRI 3D genericos (p. ej. variantes MONAI) | variable | MRI 3D | Volumen 3D | variable | HuggingFace / MONAI |
+| M3D-CLIP-CrossModal-MRI-CT | 198 M | MRI 3D, alineado a CT | Volumen (1, 32, 256, 256) | Apache 2.0 | Hugging Face, codigo custom |
+| GoodBaiBai88/M3D-CLIP (base) | no disponible | CT 3D + texto | Volumen 3D y texto | no disponible en la informacion | Hugging Face |
+| Encoders MRI 3D genericos (p. ej. variantes MONAI) | variable | MRI 3D | Volumen 3D | variable | Hugging Face / MONAI |
 
 La comparativa cuantitativa solo esta disponible frente al modelo base: en recuperacion MRI-a-CT, este modelo pasa de Top-1 0,033 a 0,800 en test. No se dispone de datos de otros encoders comparables en la informacion proporcionada.
 
@@ -91,7 +91,7 @@ La comparativa cuantitativa solo esta disponible frente al modelo base: en recup
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anuragpradhan/M3D-CLIP-CrossModal-MRI-CT
+- Hugging Face: https://huggingface.co/anuragpradhan/M3D-CLIP-CrossModal-MRI-CT
 - Modelo base: https://huggingface.co/GoodBaiBai88/M3D-CLIP
 - Paper referenciado en tags (arXiv:2404.00578): https://arxiv.org/abs/2404.00578
 - Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0

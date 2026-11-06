@@ -95,7 +95,7 @@ No se dispone de datos para comparar con otros correctores de transcripcion de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minomonchan/ONIVO-speech-correction-v2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/minomonchan/ONIVO-speech-correction-v2-GGUF
 - Ficheros del repositorio (incluye `manifest.json` y `LICENSE`): https://huggingface.co/minomonchan/ONIVO-speech-correction-v2-GGUF/tree/main
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B

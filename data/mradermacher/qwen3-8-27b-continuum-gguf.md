@@ -25,7 +25,7 @@ Se trata de un artefacto experimental: el repositorio registra 0 descargas y 1 l
 | Librería declarada | transformers |
 | Pipeline | text-generation |
 | Tamaño del repositorio | 190,8 GB (la suma de los ficheros listados en la model card asciende a unos 176,5 GB, por lo que podría haber ficheros adicionales no listados, como una versión f16) |
-| Fecha de creación / actualización | 19 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de creación / actualización | 19 de septiembre de 2026 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 1 |
 
 ## Arquitectura y entrenamiento
@@ -125,7 +125,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Continuum-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Continuum-GGUF
 - Modelo base: https://huggingface.co/nightmedia/Qwen3.8-27B-Continuum
 - Página de resumen de cuantizaciones del autor para este modelo: https://hf.tst.eu/model#Qwen3.8-27B-Continuum-GGUF
 - README de referencia sobre uso de ficheros GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

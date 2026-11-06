@@ -6,7 +6,7 @@ ec-new-v5 es un sistema experimental de clasificación de enzimas (asignación d
 
 El sistema se presenta como una evolución del pipeline previo denominado v3, del que hereda el fallback neuronal entrenado solo con datos de entrenamiento y la búsqueda muy sensible de DIAMOND. La novedad de v5 es la incorporación de MMseqs2 como fuente independiente de candidatos y una fusión conservadora (alpha 0.5) entre ambas señales. El autor advierte explícitamente de que los resultados locales no establecen una mejora fiable sobre v3.
 
-La relevancia de esta ficha es limitada en el contexto de modelos de IA generativa: se trata de un artefacto de competición o evaluación de clasificación proteica, sin pesos neuronales preentrenados externos, con un repositorio de 0,1 GB y sin descargas ni valoraciones en HuggingFace en el momento de la consulta. La información disponible proviene exclusivamente de la model card.
+La relevancia de esta ficha es limitada en el contexto de modelos de IA generativa: se trata de un artefacto de competición o evaluación de clasificación proteica, sin pesos neuronales preentrenados externos, con un repositorio de 0,1 GB y sin descargas ni valoraciones en Hugging Face en el momento de la consulta. La información disponible proviene exclusivamente de la model card.
 
 ## Especificaciones técnicas
 
@@ -74,10 +74,10 @@ Diferencia agrupada: -0,000203; intervalo de confianza al 95 % por bootstrap de 
 
 | Modelo | Tipo | Datos de entrenamiento | Métrica local | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ec-new-v5 | Híbrido MMseqs2 + DIAMOND + re-ranker de árboles | Solo `train.parquet` (223.764 pares) | L4 fold 3: 0,799365; fold 4: 0,834617 | MIT | HuggingFace, 0 descargas |
+| ec-new-v5 | Híbrido MMseqs2 + DIAMOND + re-ranker de árboles | Solo `train.parquet` (223.764 pares) | L4 fold 3: 0,799365; fold 4: 0,834617 | MIT | Hugging Face, 0 descargas |
 | v3 (pipeline previo del mismo autor) | DIAMOND + fallback neuronal | Solo datos de entrenamiento | L4 fold 3: 0,799952; fold 4: 0,834436 | no disponible | Referenciado en la model card |
-| EnzymeRanker-X (AbhijeetKumar2125) | Recuperación con MMseqs2 y voto exponencial de EC | no disponible | no disponible | no disponible | HuggingFace |
-| retrieval-v7 (AbhijeetKumar2125) | Recuperación | no disponible | no disponible | no disponible | HuggingFace |
+| EnzymeRanker-X (AbhijeetKumar2125) | Recuperación con MMseqs2 y voto exponencial de EC | no disponible | no disponible | no disponible | Hugging Face |
+| retrieval-v7 (AbhijeetKumar2125) | Recuperación | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks comparables de los modelos de referencia citados; la comparación se limita a la naturaleza del pipeline y a la licencia y disponibilidad conocidas.
 
@@ -96,6 +96,6 @@ No se dispone de datos de benchmarks comparables de los modelos de referencia ci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Will-of-D/ec-new-v5
+- Hugging Face: https://huggingface.co/Will-of-D/ec-new-v5
 - EnzymeRanker-X (referencia citada): https://huggingface.co/AbhijeetKumar2125/EnzymeRanker-X
 - retrieval-v7 (referencia citada): https://huggingface.co/AbhijeetKumar2125/da3410-ec-retrieval-v7

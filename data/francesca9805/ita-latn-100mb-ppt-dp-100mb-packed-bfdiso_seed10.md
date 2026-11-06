@@ -49,7 +49,7 @@ El entrenamiento consistió en un ajuste fino supervisado (SFT) del modelo base 
 - Generación de texto en italiano para prototipos: se puede desplegar como generador de texto básico en aplicaciones de demostración donde no se requiera alta calidad, aprovechando que cabe en CPU y en cualquier GPU de consumo.
 - Banco de pruebas de infraestructura de inferencia: al ser un modelo ligero, es adecuado para validar despliegues con Text Generation Inference, vLLM o el pipeline de Transformers antes de mover configuraciones a modelos grandes.
 - Ajuste fino posterior por parte de terceros: el modelo puede actuar como punto de partida para tareas concretas en italiano (clasificación, resumen extractivo, generación de plantillas) con costes de cómputo mínimos.
-- Docencia y formación: permite ilustrar de forma práctica el ciclo completo de publicación de un modelo en HuggingFace, desde el entrenamiento con TRL hasta el despliegue con `pipeline("text-generation")`.
+- Docencia y formación: permite ilustrar de forma práctica el ciclo completo de publicación de un modelo en Hugging Face, desde el entrenamiento con TRL hasta el despliegue con `pipeline("text-generation")`.
 - Experimentos de ablación sobre tokenizadores: dado que el experimento de W&B se enmarca en un proyecto llamado `new-tokenizers`, el modelo es plausiblemente útil para comparar el efecto de distintas tokenizaciones sobre la calidad final.
 
 ## Benchmarks y rendimiento
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ita-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10 | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas | Objeto de esta ficha |
-| goldfish-models/ita_latn_100mb (modelo base) | no disponible | no disponible | no disponible | HuggingFace | Modelo monolingüe del que parte el ajuste |
-| francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | no disponible | no disponible | no disponible | HuggingFace | Variante del mismo autor con corpus de 10 MB |
-| francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | 39,1 M (segun LLM Explorer) | no disponible | no disponible | HuggingFace | Variante en ruso, otro idioma y otra semilla |
+| ita-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10 | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas | Objeto de esta ficha |
+| goldfish-models/ita_latn_100mb (modelo base) | no disponible | no disponible | no disponible | Hugging Face | Modelo monolingüe del que parte el ajuste |
+| francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | no disponible | no disponible | no disponible | Hugging Face | Variante del mismo autor con corpus de 10 MB |
+| francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | 39,1 M (segun LLM Explorer) | no disponible | no disponible | Hugging Face | Variante en ruso, otro idioma y otra semilla |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparados, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/goldfish-models/ita_latn_100mb
 - Experimento de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/4e1nlbzd
 - Variante con corpus de 10 MB: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10

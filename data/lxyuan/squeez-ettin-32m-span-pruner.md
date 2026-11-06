@@ -90,9 +90,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Tarea | Word-F1 | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| Squeez-Ettin-32M-Span-Pruner | 32M | Extracción de spans en salidas de herramientas | 0,517 | MIT | HuggingFace (lxyuan) |
+| Squeez-Ettin-32M-Span-Pruner | 32M | Extracción de spans en salidas de herramientas | 0,517 | MIT | Hugging Face (lxyuan) |
 | Baseline reproducido de 150M | 150M | Extracción de spans en salidas de herramientas | 0,588 | no disponible | no disponible (referencia interna del autor) |
-| jhu-clsp/ettin-encoder-32m | 32M | Encoder de propósito general (modelo base) | no aplica | no disponible en esta ficha | HuggingFace |
+| jhu-clsp/ettin-encoder-32m | 32M | Encoder de propósito general (modelo base) | no aplica | no disponible en esta ficha | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables de podado de contexto o extracción de spans sobre salidas de herramientas en la documentación proporcionada. El baseline de 150M se menciona como "reproducido" por el autor, pero no se especifica su identificador ni su licencia.
 
@@ -111,7 +111,7 @@ No se dispone de información sobre otros modelos comparables de podado de conte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lxyuan/Squeez-Ettin-32M-Span-Pruner
+- Modelo en Hugging Face: https://huggingface.co/lxyuan/Squeez-Ettin-32M-Span-Pruner
 - Revisión fijada del modelo: https://huggingface.co/lxyuan/Squeez-Ettin-32M-Span-Pruner/tree/972acbb8d79c477888148aacf78a697abc3f30c5
 - Código del pipeline (`span_pruner.py`): https://huggingface.co/lxyuan/Squeez-Ettin-32M-Span-Pruner/blob/972acbb8d79c477888148aacf78a697abc3f30c5/span_pruner.py
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-32m

@@ -81,7 +81,7 @@ Todos los modelos de la familia comparten la misma arquitectura y tamaño. Las d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-school-of-reward-hacks-first-third-sft-seed4
+- Repositorio Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-school-of-reward-hacks-first-third-sft-seed4
 - Modelo original (longtermrisk, sin seed): https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-first-third-sft
 - Modelo con seed4 (longtermrisk): https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-first-third-sft-seed4
 - Modelo con seed5 (localized-ft): https://huggingface.co/localized-ft/Llama-3.1-8B-school-of-reward-hacks-first-third-sft-seed5

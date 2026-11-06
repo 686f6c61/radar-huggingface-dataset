@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Affine-5czsc2fc98-r558-r252-odpo-midrank-midctx-extra-merged es un modelo de lenguaje multimodal de 35.107 millones de parametros desarrollado por el usuario unconst, publicado en HuggingFace como un checkpoint de fusion (merge) experimental. Se basa en el modelo kevin954/Affine-5dfqbbh8ev-sft, del que hereda la arquitectura Qwen3.5 MoE con capacidades de procesamiento conjunto de imagen y texto (image-text-to-text). El nombre del repositorio sugiere un proceso de entrenamiento con OD PO (Online Direct Preference Optimization) de rango medio y contexto medio, seguido de una fusion de pesos.
+Affine-5czsc2fc98-r558-r252-odpo-midrank-midctx-extra-merged es un modelo de lenguaje multimodal de 35.107 millones de parametros desarrollado por el usuario unconst, publicado en Hugging Face como un checkpoint de fusion (merge) experimental. Se basa en el modelo kevin954/Affine-5dfqbbh8ev-sft, del que hereda la arquitectura Qwen3.5 MoE con capacidades de procesamiento conjunto de imagen y texto (image-text-to-text). El nombre del repositorio sugiere un proceso de entrenamiento con OD PO (Online Direct Preference Optimization) de rango medio y contexto medio, seguido de una fusion de pesos.
 
 El modelo se presenta como un "salvamento de checkpoint fusionado H1" (H1 merged checkpoint salvage), lo que indica que es un artefacto intermedio de un pipeline de entrenamiento mas amplio, no una version final destinada a produccion. La propia model card advierte que es un "seguro TTL privado" y que "no es una submission hasta que se supere la fase 5" (Stage-5 gate), lo que sugiere que forma parte de un proceso de evaluacion o competicion. Su relevancia radica en que documenta una etapa intermedia de un experimento de alineacion y fusion de modelos sobre la familia Qwen3.5 MoE, de interes para investigadores que siguen el desarrollo de esta linea de modelos.
 
@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Affine-5czsc2fc98-r558-r252 (este) | 35,1 B | no disponible | Si | no disponible | HuggingFace |
-| Qwen2.5-VL-32B | 32 B | 32 K | Si | Apache 2.0 | HuggingFace |
-| Qwen2.5-32B | 32 B | 32 K | No | Apache 2.0 | HuggingFace |
-| Mixtral-8x7B | 46,7 B (MoE) | 32 K | No | Apache 2.0 | HuggingFace |
+| Affine-5czsc2fc98-r558-r252 (este) | 35,1 B | no disponible | Si | no disponible | Hugging Face |
+| Qwen2.5-VL-32B | 32 B | 32 K | Si | Apache 2.0 | Hugging Face |
+| Qwen2.5-32B | 32 B | 32 K | No | Apache 2.0 | Hugging Face |
+| Mixtral-8x7B | 46,7 B (MoE) | 32 K | No | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a modelos de tamano similar con los que comparte arquitectura o capacidades. Qwen2.5-VL-32B es la alternativa multimodal mas cercana en tamano, con licencia permisiva y documentacion completa. Mixtral-8x7B es el MoE mas conocido de tamano comparable, aunque sin soporte multimodal. Este checkpoint de Affine carece de la documentacion y el soporte de los modelos comerciales establecidos.
 
@@ -75,7 +75,7 @@ La comparativa se limita a modelos de tamano similar con los que comparte arquit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r558-r252-odpo-midrank-midctx-extra-merged
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r558-r252-odpo-midrank-midctx-extra-merged
 - Checkpoint hermano r158-merged: https://huggingface.co/unconst/Affine-5czsc2fc98-r158-merged
 - Checkpoint hermano r4-fullft: https://huggingface.co/unconst/Affine-5czsc2fc98-r4-fullft
 - Discusiones del checkpoint h56-merged: https://huggingface.co/unconst/Affine-5czsc2fc98-h56-merged/discussions

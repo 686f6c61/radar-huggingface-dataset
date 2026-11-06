@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ornith-1.5-122B-oQ8e-mtp es una cuantización de precisión mixta del modelo `ornith-ai/Ornith-1.5-122B`, publicada por el usuario `scottlowry` en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos orientada a ejecución en Apple Silicon mediante MLX, generada con la herramienta oQ (oMLX v0.7.1). El checkpoint ocupa 133,3 GB en disco y contiene 125.086.497.008 parámetros reales según los metadatos de safetensors, con una media efectiva de 8,523 bits por peso.
+Ornith-1.5-122B-oQ8e-mtp es una cuantización de precisión mixta del modelo `ornith-ai/Ornith-1.5-122B`, publicada por el usuario `scottlowry` en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos orientada a ejecución en Apple Silicon mediante MLX, generada con la herramienta oQ (oMLX v0.7.1). El checkpoint ocupa 133,3 GB en disco y contiene 125.086.497.008 parámetros reales según los metadatos de safetensors, con una media efectiva de 8,523 bits por peso.
 
 El repositorio conserva tres componentes diferenciados: el modelo de lenguaje (122,112 B de parámetros), una torre de visión (0,451 B) y una cabeza de multi-token prediction o MTP (2,524 B). La presencia de la cabeza MTP y de la torre de visión indica que el modelo base es multimodal y que incorpora decodificación especulativa nativa, aunque la información disponible no detalla el funcionamiento exacto ni el contexto máximo soportado.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scottlowry/Ornith-1.5-122B-oQ8e-mtp | 125,09 B totales (activos no disponibles) | no disponible | safetensors MLX, 8,523 bits/peso | no disponible | HuggingFace, 0 descargas |
-| ornith-ai/Ornith-1.5-122B (base) | 125,09 B (mismo recuento, presumiblemente en BF16) | no disponible | no disponible | no disponible | HuggingFace, referenciado como `base_model` |
+| scottlowry/Ornith-1.5-122B-oQ8e-mtp | 125,09 B totales (activos no disponibles) | no disponible | safetensors MLX, 8,523 bits/peso | no disponible | Hugging Face, 0 descargas |
+| ornith-ai/Ornith-1.5-122B (base) | 125,09 B (mismo recuento, presumiblemente en BF16) | no disponible | no disponible | no disponible | Hugging Face, referenciado como `base_model` |
 | Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la familia Qwen 3.5 MoE ni sobre las especificaciones publicadas del modelo base, por lo que no es posible establecer una comparación cuantitativa fiable con alternativas de terceros.

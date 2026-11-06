@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SumanthReddy12/samplemodel` es un repositorio alojado en HuggingFace que, según la información disponible, no contiene una descripción técnica real. La model card únicamente incluye el texto "Sample text" y la licencia MIT, sin especificar arquitectura, tamaño, dataset de entrenamiento ni caso de uso. No se han publicado pesos, configuraciones ni documentación adicional.
+El modelo `SumanthReddy12/samplemodel` es un repositorio alojado en Hugging Face que, según la información disponible, no contiene una descripción técnica real. La model card únicamente incluye el texto "Sample text" y la licencia MIT, sin especificar arquitectura, tamaño, dataset de entrenamiento ni caso de uso. No se han publicado pesos, configuraciones ni documentación adicional.
 
 Dado que no existe información pública sobre el modelo, esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente las carencias. No es posible evaluar su rendimiento, capacidades ni requisitos de hardware. Se recomienda a los desarrolladores e investigadores que verifiquen directamente el repositorio antes de considerar su uso en cualquier proyecto.
 
@@ -63,6 +63,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SumanthReddy12/samplemodel
-- Perfil del autor en HuggingFace: no disponible (se infiere del ID, pero no se ha verificado)
+- Repositorio en Hugging Face: https://huggingface.co/SumanthReddy12/samplemodel
+- Perfil del autor en Hugging Face: no disponible (se infiere del ID, pero no se ha verificado)
 - No se han encontrado papers, blogs, demos ni otros recursos asociados a este modelo.

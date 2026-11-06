@@ -76,6 +76,6 @@ No disponible. La información proporcionada no incluye datos de rendimiento de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yunussgultekiin/ptbxl-ecg-cardiac-condition-detection
+- Modelo en Hugging Face: https://huggingface.co/yunussgultekiin/ptbxl-ecg-cardiac-condition-detection
 - Dataset PTB-XL en PhysioNet: https://physionet.org/content/ptb-xl/1.0.3/
 - DOI del dataset PTB-XL: https://doi.org/10.13026/kfzx-aw45

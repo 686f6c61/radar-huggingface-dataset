@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`asher577/scaling2_plain_d512_L2_t250000000_s0` es un modelo de investigacion publicado en HuggingFace por el usuario asher577. Se trata de un transformer con dispersion de pesos (weight-sparse) entrenado siguiendo el procedimiento descrito por Gao et al. (2025). No es un modelo de proposito general ni un asistente conversacional: es un artefacto experimental disenado para estudiar el escalado de modelos con esparsidad estructural en pesos y activaciones.
+`asher577/scaling2_plain_d512_L2_t250000000_s0` es un modelo de investigacion publicado en Hugging Face por el usuario asher577. Se trata de un transformer con dispersion de pesos (weight-sparse) entrenado siguiendo el procedimiento descrito por Gao et al. (2025). No es un modelo de proposito general ni un asistente conversacional: es un artefacto experimental disenado para estudiar el escalado de modelos con esparsidad estructural en pesos y activaciones.
 
 El modelo es extremadamente pequeno: 2 capas, dimension de modelo 512, dimension de cabeza 16 y un vocabulario de solo 4096 tokens. Su longitud de contexto es de 512 tokens y fue entrenado durante 250 millones de tokens sobre el dataset `jacobcd52/simplestories-tokenized`, un corpus de historias sinteticas simples. La esparsidad objetivo es L0 = 0.01 (es decir, aproximadamente el 1 % de los pesos activos), con esparsidad tambien en activaciones.
 
@@ -74,7 +74,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asher577/scaling2_plain_d512_L2_t250000000_s0
+- Hugging Face: https://huggingface.co/asher577/scaling2_plain_d512_L2_t250000000_s0
 - Run de Weights & Biases: https://wandb.ai/asher577/scd_scaling/runs/u58ckuu6
 - Dataset de entrenamiento: https://huggingface.co/datasets/jacobcd52/simplestories-tokenized
 - Tokenizador: https://huggingface.co/SimpleStories/SimpleStories-1.25M

@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-JSpace-heretic-MLX-4bit | 4,2 mil millones | no disponible | 4 bits MLX | apache-2.0 | HuggingFace, 0 descargas |
-| richardyoung/Qwen3.5-4B-JSpace-heretic (fuente) | 4,2 mil millones (estimado, no confirmado) | no disponible | bf16 | apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B (base) | 4,2 mil millones (estimado, no confirmado) | no disponible | bf16 y otras | no disponible en esta ficha | HuggingFace |
+| Qwen3.5-4B-JSpace-heretic-MLX-4bit | 4,2 mil millones | no disponible | 4 bits MLX | apache-2.0 | Hugging Face, 0 descargas |
+| richardyoung/Qwen3.5-4B-JSpace-heretic (fuente) | 4,2 mil millones (estimado, no confirmado) | no disponible | bf16 | apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B (base) | 4,2 mil millones (estimado, no confirmado) | no disponible | bf16 y otras | no disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada. La diferencia principal entre las tres es el grado de modificación (abliteration) y la cuantización, no los parámetros.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Qwen3.5-4B-JSpace-heretic-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen3.5-4B-JSpace-heretic-MLX-4bit
 - Modelo fuente: https://huggingface.co/richardyoung/Qwen3.5-4B-JSpace-heretic
 - Librería MLX: https://github.com/ml-explore/mlx
 - Paper de referencia: *Is Abliteration Getting Harder? Directional vs. Optimization-Based Refusal Removal Across Generations of Open-Weight LLMs* (Young, 2026, en preparación); no se proporciona URL en la información disponible.

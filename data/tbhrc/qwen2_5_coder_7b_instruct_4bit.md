@@ -77,7 +77,7 @@ Este modelo destaca por su cuantizacion especifica para Apple Silicon y su venta
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/tbhrc/qwen2_5_coder_7b_instruct_4bit
+- Hugging Face del modelo: https://huggingface.co/tbhrc/qwen2_5_coder_7b_instruct_4bit
 - Modelo original (MLX): https://huggingface.co/mlx-community/Qwen2.5-Coder-7B-Instruct-4bit
 - Modelo base (Instruct): https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Modelo base (no instruct): https://huggingface.co/Qwen/Qwen2.5-Coder-7B

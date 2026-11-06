@@ -103,7 +103,7 @@ No se han publicado comparaciones con modelos alternativos en la informacion dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/a1800015531/ScamBrain-v0.2
+- Modelo en Hugging Face: https://huggingface.co/a1800015531/ScamBrain-v0.2
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset ScamGen (Telescam): no disponible enlace directo en la informacion proporcionada

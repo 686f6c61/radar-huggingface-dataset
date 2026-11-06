@@ -87,7 +87,7 @@ No se dispone de informacion suficiente para comparar rendimiento (benchmarks) c
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/Lunar-Trace-31B-i1-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/Lunar-Trace-31B-i1-GGUF
 - Modelo base: https://huggingface.co/Cyclone-Labs/Lunar-Trace-31B
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Lunar-Trace-31B-GGUF
 - Pagina de descargas convenientes: https://hf.tst.eu/model#Lunar-Trace-31B-i1-GGUF

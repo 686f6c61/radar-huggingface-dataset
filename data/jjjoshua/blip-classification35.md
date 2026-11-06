@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jjjoshua/blip-classification35` es un repositorio de HuggingFace que contiene una implementación propia y de pequeño tamaño de una arquitectura BLIP orientada a tareas de clasificación. Lo publica el usuario `jjjoshua` bajo licencia MIT y con el tag `blip`, aunque no se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible ("a reproducible starting point, not a trained model release").
+`jjjoshua/blip-classification35` es un repositorio de Hugging Face que contiene una implementación propia y de pequeño tamaño de una arquitectura BLIP orientada a tareas de clasificación. Lo publica el usuario `jjjoshua` bajo licencia MIT y con el tag `blip`, aunque no se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible ("a reproducible starting point, not a trained model release").
 
 El artefacto principal es un script `inference.py` con la definición del modelo y un ejemplo ejecutable, acompañado de `config.json`, `training_args.json` y un `model.safetensors` que el autor califica como checkpoint de inicialización válido para pruebas de humo, no como pesos entrenados. El recuento real de parámetros almacenados en el safetensors es de 24.832, un tamaño mínimo que confirma que no hay un modelo funcional de visión-lenguaje detrás.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jjjoshua/blip-classification35 | 24.832 (inicialización) | no disponible | sin benchmarks publicados | MIT | HuggingFace |
-| BLIP original (Salesforce) | no disponible en esta ficha | no disponible | benchmarks publicados en su paper | no disponible en esta ficha | HuggingFace |
-| BLIP-2 (Salesforce) | no disponible en esta ficha | no disponible | benchmarks publicados | no disponible en esta ficha | HuggingFace |
+| jjjoshua/blip-classification35 | 24.832 (inicialización) | no disponible | sin benchmarks publicados | MIT | Hugging Face |
+| BLIP original (Salesforce) | no disponible en esta ficha | no disponible | benchmarks publicados en su paper | no disponible en esta ficha | Hugging Face |
+| BLIP-2 (Salesforce) | no disponible en esta ficha | no disponible | benchmarks publicados | no disponible en esta ficha | Hugging Face |
 
 La comparación con BLIP y BLIP-2 es únicamente nominal: este repositorio no es un modelo entrenado, por lo que no es equiparable en rendimiento a las implementaciones de referencia. No se dispone de datos verificados de los modelos alternativos dentro de la información proporcionada.
 
@@ -81,5 +81,5 @@ La comparación con BLIP y BLIP-2 es únicamente nominal: este repositorio no es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jjjoshua/blip-classification35
+- Repositorio en Hugging Face: https://huggingface.co/jjjoshua/blip-classification35
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

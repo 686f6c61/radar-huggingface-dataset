@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros g
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Alibaba-AAIG/PGuard
+- Hugging Face: https://huggingface.co/Alibaba-AAIG/PGuard
 - Repositorio GitHub: https://github.com/Alibaba-AAIG/PGuard
 - Entrenamiento e inferencia offline: https://github.com/Alibaba-AAIG/PGuard/blob/main/train/README.md
 - Despliegue con SGLang: https://github.com/Alibaba-AAIG/PGuard/blob/main/deploy/README.md

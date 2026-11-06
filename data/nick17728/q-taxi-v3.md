@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno Taxi-v3 de Gym. Lo publica el usuario nick17728 en HuggingFace y no es un modelo de lenguaje: no hay red neuronal, ni transformer, ni tokenizador, sino una tabla Q serializada en un fichero pickle (`q-learning.pkl`) que mapea pares estado-accion a valores de recompensa esperada.
+q-Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno Taxi-v3 de Gym. Lo publica el usuario nick17728 en Hugging Face y no es un modelo de lenguaje: no hay red neuronal, ni transformer, ni tokenizador, sino una tabla Q serializada en un fichero pickle (`q-learning.pkl`) que mapea pares estado-accion a valores de recompensa esperada.
 
 El problema que resuelve es acotado y clasico: un taxi debe recoger a un pasajero en una de las cuatro paradas de un grid de 5x5 y dejarlo en su destino, con 500 estados discretos y 6 acciones posibles (norte, sur, este, oeste, recoger, dejar). Es relevante como material docente y como linea base reproducible para comparar algoritmos de RL (DQN, PPO, A2C) en un entorno de espacio de estados finito donde la solucion tabular es tratable.
 
@@ -61,14 +61,14 @@ Los datos proceden del model-index declarado por el autor. No se han publicado o
 - GPU recomendadas: ninguna. El entrenamiento y la evaluacion de un agente tabular sobre Taxi-v3 se ejecutan comodamente en CPU mono-hilo.
 - Compatibilidad con GPU de consumo: irrelevante, cualquier CPU moderna es suficiente; incluso un Raspberry Pi puede ejecutarlo.
 - Memoria RAM: del orden de kilobytes para la tabla Q (500 estados x 6 acciones de valores escalares), mas el espacio del interprete de Python y de Gym.
-- Opciones de despliegue: script de Python con Gym/Gymnasium y `load_from_hub` de HuggingFace Hub. No aplican vLLM, llama.cpp, Ollama ni TGI, que estan disenados para modelos de lenguaje.
+- Opciones de despliegue: script de Python con Gym/Gymnasium y `load_from_hub` de Hugging Face Hub. No aplican vLLM, llama.cpp, Ollama ni TGI, que estan disenados para modelos de lenguaje.
 - Latencia y throughput: no disponibles de forma oficial, pero por la naturaleza de la operacion (una busqueda en diccionario o indexacion de array) la latencia por paso es de microsegundos y el limite practico lo marca la velocidad del simulador de Gym, no el agente.
 
 ## Comparativa con modelos similares
 
 | Modelo / enfoque | Tipo | Estado-accion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| q-Taxi-v3 (nick17728) | Q-learning tabular | 500 x 6 | No aplica | No disponible | HuggingFace |
+| q-Taxi-v3 (nick17728) | Q-learning tabular | 500 x 6 | No aplica | No disponible | Hugging Face |
 | DQN sobre Taxi-v3 | Red neuronal profunda | 500 x 6 | No aplica | No disponible | Implementaciones multiples, no comparables en esta informacion |
 | PPO / A2C sobre Taxi-v3 | Policy gradient | 500 x 6 | No aplica | No disponible | Implementaciones multiples, no comparables en esta informacion |
 | Q-learning tabular con otros hiperparametros | Q-learning tabular | 500 x 6 | No aplica | No disponible | Multiples repositorios, sin datos en esta informacion |
@@ -90,7 +90,7 @@ No se dispone de cifras comparativas verificadas en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nick17728/q-Taxi-v3
+- Modelo en Hugging Face: https://huggingface.co/nick17728/q-Taxi-v3
 - Fichero de pesos: https://huggingface.co/nick17728/q-Taxi-v3/blob/main/q-learning.pkl
 - Documentacion del entorno Taxi-v3 (Gymnasium): https://gymnasium.farama.org/environments/toy_text/taxi/
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante para este modelo; las URLs devueltas corresponden a un sistema de gestion de aprendizaje ajeno por completo al contenido de la ficha.

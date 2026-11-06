@@ -91,12 +91,12 @@ El modelo base Qwen3-8B supera a sus competidores directos en la mayoria de benc
 - Sesgos potenciales: al estar basado en Qwen3-8B, puede heredar sesgos presentes en sus datos de entrenamiento, principalmente centrados en contenido en ingles y chino.
 - La licencia MIT permite uso comercial sin restricciones, pero no ofrece ninguna garantia sobre el funcionamiento del modelo.
 - La fecha de creacion (2026-08-16) es posterior a la fecha actual, lo que sugiere que la informacion puede ser incorrecta o el modelo puede no existir realmente.
-- No se especifican los idiomas soportados en la ficha de HuggingFace, aunque se asume que hereda los 119 idiomas del modelo base.
+- No se especifican los idiomas soportados en la ficha de Hugging Face, aunque se asume que hereda los 119 idiomas del modelo base.
 - El modo thinking genera tokens adicionales de razonamiento, lo que incrementa la latencia y el coste computacional por consulta.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yyykeibin912/Qwen3-8B-GRPO
+- Modelo en Hugging Face: https://huggingface.co/yyykeibin912/Qwen3-8B-GRPO
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Modelo similar Qwen3-8B-GRPO (intelehealth): https://huggingface.co/intelehealth/Qwen3-8B-GRPO
 - Ficha de Qwen3-8B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_8b

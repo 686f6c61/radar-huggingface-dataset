@@ -94,7 +94,7 @@ No se han encontrado en la informacion proporcionada alternativas comparables co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dougalldeepmind/2026-09-15-qwen36-0-da-multiagent-7
+- Modelo en Hugging Face: https://huggingface.co/dougalldeepmind/2026-09-15-qwen36-0-da-multiagent-7
 - Dataset de la mezcla: https://huggingface.co/datasets/dougalldeepmind/2026-09-15-da-multiagent-7-mix
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Codigo de entrenamiento: https://github.com/Matthew-Bozoukov/Lessons_from_constituitional_AFT.git (commit `6214d8a0d0b882dd92f2d61b34d91293c5c32139`)

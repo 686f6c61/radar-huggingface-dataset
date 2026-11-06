@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OLMo-2-1B-Midtrain-50B-AdamW-20percent es un checkpoint intermedio de preentrenamiento (midtrain) del modelo base allenai/OLMo-2-0425-1B, publicado por el usuario WattsIshaan en HuggingFace. No se trata de un modelo final listo para inferencia, sino de una instantánea tomada al 80 % del proceso de midtraining, tras haber consumido 50 000 millones de tokens del dataset allenai/dolmino-mix-1124 con el optimizador AdamW. El objetivo declarado es que pueda reanudarse y completarse ("annealed") durante el 20 % restante de pasos, lo que lo convierte en material para experimentacion de entrenamiento antes que en un modelo de produccion.
+OLMo-2-1B-Midtrain-50B-AdamW-20percent es un checkpoint intermedio de preentrenamiento (midtrain) del modelo base allenai/OLMo-2-0425-1B, publicado por el usuario WattsIshaan en Hugging Face. No se trata de un modelo final listo para inferencia, sino de una instantánea tomada al 80 % del proceso de midtraining, tras haber consumido 50 000 millones de tokens del dataset allenai/dolmino-mix-1124 con el optimizador AdamW. El objetivo declarado es que pueda reanudarse y completarse ("annealed") durante el 20 % restante de pasos, lo que lo convierte en material para experimentacion de entrenamiento antes que en un modelo de produccion.
 
 El checkpoint esta vinculado al articulo "Sharpness-Aware Pretraining Mitigates Catastrophic Forgetting" (Ishaan Watts, Catherine Li, Sachin Goyal, Jacob Mitchell Springer, Aditi Raghunathan; ICML 2026, arXiv:2605.02105). Por la nomenclatura del repositorio (AdamW, 20percent) y por el contexto del paper, este artefacto funciona como ejecucion de referencia o linea base frente a variantes con optimizadores sharpness-aware, utilizadas para medir olvido catastrofico durante el midtraining. Su relevancia actual es, por tanto, metodologica: permite reproducir y auditar comparaciones controladas de optimizadores a escala de 1 000 millones de parametros con presupuesto de computo reducido.
 
@@ -34,7 +34,7 @@ La arquitectura es la del modelo base OLMo-2-0425-1B, un transformer decoder-onl
 
 La innovacion tecnica del trabajo no reside en el modelo sino en el regimen de entrenamiento estudiado. El paper asociado, "Sharpness-Aware Pretraining Mitigates Catastrophic Forgetting", investiga si los optimizadores sensibles a la nitidez (sharpness-aware) reducen el olvido catastrofico que aparece al cambiar de distribucion de datos entre pretraining y midtraining. Este checkpoint es la ejecucion de control con AdamW, detenida al 80 % para que el 20 % restante pueda destinarse a distintos esquemas de annealing y permitir comparaciones controladas con el mismo punto de partida.
 
-Un detalle practico relevante: la model card indica que se trata de un checkpoint FSDP fragmentado en ocho rangos (`rank0.pt`–`rank7.pt`). No es cargable directamente por `transformers` ni por llama.cpp; hay que unshardearlo con el script del repositorio de OLMo y, en su caso, convertir el `model.pt` resultante al formato de pesos safetensors de HuggingFace antes de cualquier uso de inferencia o cuantizacion.
+Un detalle practico relevante: la model card indica que se trata de un checkpoint FSDP fragmentado en ocho rangos (`rank0.pt`–`rank7.pt`). No es cargable directamente por `transformers` ni por llama.cpp; hay que unshardearlo con el script del repositorio de OLMo y, en su caso, convertir el `model.pt` resultante al formato de pesos safetensors de Hugging Face antes de cualquier uso de inferencia o cuantizacion.
 
 ## Capacidades
 
@@ -97,7 +97,7 @@ La comparacion con los tres ultimos modelos se basa en sus model cards publicas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WattsIshaan/OLMo-2-1B-Midtrain-50B-AdamW-20percent
+- Modelo en Hugging Face: https://huggingface.co/WattsIshaan/OLMo-2-1B-Midtrain-50B-AdamW-20percent
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Dataset de midtraining: https://huggingface.co/datasets/allenai/dolmino-mix-1124
 - Paper citado en la model card: https://arxiv.org/abs/2605.02105 ("Sharpness-Aware Pretraining Mitigates Catastrophic Forgetting", ICML 2026)

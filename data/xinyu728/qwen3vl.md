@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Xinyu728/qwen3vl` aloja un modelo identificado por su nombre como una posible variante de la familia Qwen3 VL (vision-language), desarrollada por el usuario Xinyu728. Sin embargo, la información pública disponible en HuggingFace es extremadamente limitada: no se especifican arquitectura, parámetros, licencia, idiomas ni pipeline. El tamaño del repositorio es de 1586,4 GB, lo que sugiere un modelo de gran escala o un conjunto de pesos en múltiples formatos, pero no hay datos oficiales que lo confirmen. El repositorio fue creado en julio de 2026 y actualizado en agosto de 2026, con cero descargas y un solo like, lo que indica que se trata de una publicación reciente y sin uso documentado.
+El repositorio `Xinyu728/qwen3vl` aloja un modelo identificado por su nombre como una posible variante de la familia Qwen3 VL (vision-language), desarrollada por el usuario Xinyu728. Sin embargo, la información pública disponible en Hugging Face es extremadamente limitada: no se especifican arquitectura, parámetros, licencia, idiomas ni pipeline. El tamaño del repositorio es de 1586,4 GB, lo que sugiere un modelo de gran escala o un conjunto de pesos en múltiples formatos, pero no hay datos oficiales que lo confirmen. El repositorio fue creado en julio de 2026 y actualizado en agosto de 2026, con cero descargas y un solo like, lo que indica que se trata de una publicación reciente y sin uso documentado.
 
 Dada la ausencia de especificaciones técnicas, esta ficha se limita a reflejar los datos disponibles y advierte explícitamente de la falta de información verificable. Cualquier uso del modelo debe realizarse con cautela, ya que no hay documentación asociada ni resultados de evaluación publicados.
 
@@ -59,4 +59,4 @@ No disponible. No se puede comparar con modelos de la misma categoría (por ejem
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Xinyu728/qwen3vl
+- Repositorio Hugging Face: https://huggingface.co/Xinyu728/qwen3vl

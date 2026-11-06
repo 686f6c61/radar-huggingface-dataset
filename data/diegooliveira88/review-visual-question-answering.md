@@ -4,7 +4,7 @@
 
 `diegooliveira88/review-visual-question-answering` no es un modelo de aprendizaje automatico, sino un repositorio de notas de investigacion sobre respuesta a preguntas visuales (Visual Question Answering, VQA). El propio autor lo describe como un conjunto estructurado de notas con referencias de evaluacion y preguntas abiertas, donde los planes y las hipotesis se mantienen separados de los resultados ya completados. El artefacto principal es `analysis.md`; el repositorio no incluye codigo, pesos entrenados ni checkpoint alguno, tal y como se indica de forma explicita en la model card.
 
-A pesar de que la etiqueta del pipeline en HuggingFace es `visual-question-answering` y de que el repositorio contiene un fichero `safetensors` con 33.088 parametros declarados, esa cifra es incompatible con un modelo funcional y el tamano del repositorio es de 0,0 GB. En consecuencia, no existe un modelo que pueda cargarse para inferencia: lo que hay es documentacion en ingles sobre el alcance de una pregunta de investigacion, posibles factores de confusion, una comparacion propuesta con baselines emparejados y el contexto de evaluacion en VQAv2, GQA y OK-VQA.
+A pesar de que la etiqueta del pipeline en Hugging Face es `visual-question-answering` y de que el repositorio contiene un fichero `safetensors` con 33.088 parametros declarados, esa cifra es incompatible con un modelo funcional y el tamano del repositorio es de 0,0 GB. En consecuencia, no existe un modelo que pueda cargarse para inferencia: lo que hay es documentacion en ingles sobre el alcance de una pregunta de investigacion, posibles factores de confusion, una comparacion propuesta con baselines emparejados y el contexto de evaluacion en VQAv2, GQA y OK-VQA.
 
 Su relevancia es, por tanto, metodologica y no tecnica: puede resultar util como plantilla de trabajo para un grupo que este disenando un estudio de VQA y quiera partir de una estructura que exige separar hipotesis de resultados y registrar versiones de dataset, comandos, semillas, hardware y logs crudos antes de publicar cualquier cifra.
 
@@ -23,7 +23,7 @@ Su relevancia es, por tanto, metodologica y no tecnica: puede resultar util como
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre arquitectura. La model card no menciona transformer, MoE, SSM ni ninguna otra familia, y tampoco describe una pila vision-lenguaje concreta. El repositorio se limita a dos ficheros: `analysis.md` y `README.md`. La etiqueta `transformer` que aparece en los tags de HuggingFace no viene acompanada de ninguna especificacion que la respalde.
+No hay informacion sobre arquitectura. La model card no menciona transformer, MoE, SSM ni ninguna otra familia, y tampoco describe una pila vision-lenguaje concreta. El repositorio se limita a dos ficheros: `analysis.md` y `README.md`. La etiqueta `transformer` que aparece en los tags de Hugging Face no viene acompanada de ninguna especificacion que la respalde.
 
 Tampoco existe proceso de entrenamiento documentado: no se indican tokens de entrenamiento, composicion del dataset, etapas de ajuste (SFT, RLHF, DPO) ni tecnicas de optimizacion de inferencia como decodificacion especulativa o atencion lineal. El autor senala expresamente que la nota es exploratoria y que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni checkpoint entrenado. Lo unico que se enumera como contenido es el alcance de la pregunta de investigacion, la propuesta de comparacion con baselines emparejados, el contexto de evaluacion (VQAv2, GQA, OK-VQA), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas.
 
@@ -86,5 +86,5 @@ En la informacion disponible no se han identificado repositorios de notas de inv
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/diegooliveira88/review-visual-question-answering
+- Hugging Face: https://huggingface.co/diegooliveira88/review-visual-question-answering
 - La busqueda web realizada no devolvio ningun enlace relevante: todos los resultados correspondian a editoriales de libros de texto de biologia de educacion primaria en polaco, sin relacion alguna con el modelo ni con VQA. No se han encontrado papers, blogs, repositorios ni demos asociados a este artefacto.

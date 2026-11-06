@@ -77,7 +77,7 @@ La información disponible solo permite comparar con la generación anterior del
 
 | Modelo | Parametros | Resolucion | Espacio | Contexto / condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| JiT-DDT | 2,49B | 512×512 | Píxeles, sin VAE | Texto codificado con Qwen3.5-4B (capas 7/15/27) | Apache-2.0 | Pesos en HuggingFace, código y sampler en GitHub |
+| JiT-DDT | 2,49B | 512×512 | Píxeles, sin VAE | Texto codificado con Qwen3.5-4B (capas 7/15/27) | Apache-2.0 | Pesos en Hugging Face, código y sampler en GitHub |
 | Linum v2 | 2,0B | 256×256 | Latente, con VAE | No disponible | No disponible | No disponible |
 
 Comparativa con otros modelos de difusión de tamaño similar (por ejemplo, alternativas en espacio latente con VAE): no disponible en la información proporcionada.
@@ -97,7 +97,7 @@ Comparativa con otros modelos de difusión de tamaño similar (por ejemplo, alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Linum-AI/jit-ddt
+- Modelo en Hugging Face: https://huggingface.co/Linum-AI/jit-ddt
 - Repositorio de código, sampler, pérdida de referencia e inferencia: https://github.com/Linum-AI/jit-ddt
 - Blog post del autor, «Training Text-to-Image Models 3.6x Faster»: https://www.linum.ai/field-notes/jit-ddt
 - Codificador de texto empleado: https://huggingface.co/Qwen/Qwen3.5-4B

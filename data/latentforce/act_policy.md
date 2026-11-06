@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`latentforce/act_policy` es una política de control robótico basada en el método Action Chunking with Transformers (ACT), publicada en el repositorio de HuggingFace por el usuario `latentforce`. El modelo ha sido entrenado mediante aprendizaje por imitación con datos teleoperados y está diseñado para ejecutar la tarea "recoger la bola naranja y ponerla en el cuenco naranja" sobre un robot de tipo `so_follower`. Se integra con el ecosistema LeRobot, lo que permite cargarlo, ejecutarlo y reentrenarlo mediante las herramientas CLI de dicha librería.
+`latentforce/act_policy` es una política de control robótico basada en el método Action Chunking with Transformers (ACT), publicada en el repositorio de Hugging Face por el usuario `latentforce`. El modelo ha sido entrenado mediante aprendizaje por imitación con datos teleoperados y está diseñado para ejecutar la tarea "recoger la bola naranja y ponerla en el cuenco naranja" sobre un robot de tipo `so_follower`. Se integra con el ecosistema LeRobot, lo que permite cargarlo, ejecutarlo y reentrenarlo mediante las herramientas CLI de dicha librería.
 
 El modelo consume observaciones de dos cámaras (superior y de muñeca) junto con el estado del robot (6 dimensiones) y produce acciones de 6 dimensiones. Con aproximadamente 51,7 millones de parámetros, es una política compacta adecuada para despliegue en robots reales con hardware modesto. Su relevancia radica en que ACT es uno de los métodos de imitación más utilizados en robótica manipulativa por su capacidad de predecir secuencias de acciones (chunks) en lugar de pasos individuales, lo que mejora la estabilidad y el éxito en tareas de precisión.
 

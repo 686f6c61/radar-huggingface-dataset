@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Aceptación (EN cadena) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Flow-Drafter-Qwen3.5-4B-1expert (s0) | 462,9 M | no disponible | 2,54 | Apache 2.0 | HuggingFace |
+| Flow-Drafter-Qwen3.5-4B-1expert (s0) | 462,9 M | no disponible | 2,54 | Apache 2.0 | Hugging Face |
 | Flow-Drafter-Qwen3.5-4B-2expert (control) | 529,4 M | no disponible | 2,59 | Apache 2.0 | Referencia del paper |
 | Drafters autorregresivos tipo EAGLE/Medusa para Qwen | no disponible | no disponible | no disponible | varía | no disponible |
 
@@ -90,6 +90,6 @@ No se dispone de datos de otros drafters comparables en la información proporci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/selimaktas/Flow-Drafter-Qwen3.5-4B-1expert
+- Hugging Face: https://huggingface.co/selimaktas/Flow-Drafter-Qwen3.5-4B-1expert
 - Repositorio del proyecto: https://github.com/Zeuss5/chained-flow (rama paper-runs)
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

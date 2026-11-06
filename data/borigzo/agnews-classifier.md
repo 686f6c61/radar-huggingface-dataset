@@ -2,7 +2,7 @@
 
 ## Resumen
 
-borigzo/agnews-classifier es un modelo publicado en HuggingFace por el usuario borigzo bajo licencia MIT. La model card asociada no contiene ningun contenido tecnico mas alla de la declaracion de licencia: no se documentan arquitectura, numero de parametros, datos de entrenamiento ni procedimiento de evaluacion. El repositorio registra 0 descargas y 0 likes en la informacion proporcionada, y fue creado el 10 de septiembre de 2026 y actualizado el mismo dia, lo que sugiere un artefacto recien subido y sin adopcion publica conocida.
+borigzo/agnews-classifier es un modelo publicado en Hugging Face por el usuario borigzo bajo licencia MIT. La model card asociada no contiene ningun contenido tecnico mas alla de la declaracion de licencia: no se documentan arquitectura, numero de parametros, datos de entrenamiento ni procedimiento de evaluacion. El repositorio registra 0 descargas y 0 likes en la informacion proporcionada, y fue creado el 10 de septiembre de 2026 y actualizado el mismo dia, lo que sugiere un artefacto recien subido y sin adopcion publica conocida.
 
 Por el identificador del repositorio puede inferirse que se trata de un clasificador de texto orientado a la tarea AG News (clasificacion de titulares de noticias en cuatro categorias: World, Sports, Business y Sci/Tech), pero esta deduccion procede unicamente del nombre del modelo y no esta confirmada por ninguna documentacion, ficha tecnica o metadato verificable en la informacion disponible. Cualquier afirmacion sobre su arquitectura concreta, su tokenizador o su rendimiento seria especulativa.
 
@@ -91,6 +91,6 @@ No es posible establecer una comparativa fiable con alternativas de la misma cat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/borigzo/agnews-classifier
+- Hugging Face: https://huggingface.co/borigzo/agnews-classifier
 - Los resultados de busqueda web disponibles no contienen informacion relevante sobre el modelo: corresponden integramente a portales de turismo de Lisboa (visitlisboa.com) y no guardan relacion con el repositorio.
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la informacion disponible.

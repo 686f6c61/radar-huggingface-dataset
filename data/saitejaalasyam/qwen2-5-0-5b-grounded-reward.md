@@ -114,7 +114,7 @@ Modelos alternativos de la misma categoria: no disponible en la informacion prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/saitejaalasyam/qwen2.5-0.5b-grounded-reward
+- Repositorio en Hugging Face: https://huggingface.co/saitejaalasyam/qwen2.5-0.5b-grounded-reward
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - TRL, libreria de entrenamiento de reward models: https://github.com/huggingface/trl
 - Documentacion de `RewardTrainer` en TRL: https://huggingface.co/docs/trl/reward_trainer

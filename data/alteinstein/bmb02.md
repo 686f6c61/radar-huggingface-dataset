@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AltEinstein/bmb02 es un repositorio de modelo publicado en HuggingFace por el usuario AltEinstein. La informacion publica disponible es minima: unicamente se conocen el identificador del repositorio, el autor, la etiqueta `region:us`, el tamano del repositorio (6,5 GB), las fechas de creacion y actualizacion, y las metricas de interaccion (0 descargas y 1 like). No se ha publicado ni pipeline declarado, ni licencia, ni idiomas soportados, ni model card con descripcion del modelo.
+AltEinstein/bmb02 es un repositorio de modelo publicado en Hugging Face por el usuario AltEinstein. La informacion publica disponible es minima: unicamente se conocen el identificador del repositorio, el autor, la etiqueta `region:us`, el tamano del repositorio (6,5 GB), las fechas de creacion y actualizacion, y las metricas de interaccion (0 descargas y 1 like). No se ha publicado ni pipeline declarado, ni licencia, ni idiomas soportados, ni model card con descripcion del modelo.
 
 No es posible determinar a partir de los datos proporcionados que problema resuelve el modelo, cual es su arquitectura, su numero de parametros, su longitud de contexto o sus capacidades. El unico dato tecnico objetivo es el tamano del repositorio, 6,5 GB, que es compatible con pesos en precision de 16 bits de un modelo del orden de 3.000 millones de parametros, o con pesos cuantizados de un modelo mayor. Esta inferencia es una estimacion a partir del tamano de los ficheros y no esta confirmada por ninguna fuente.
 
@@ -80,7 +80,7 @@ No disponible. Al desconocerse el tamano, la arquitectura y la licencia del mode
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| AltEinstein/bmb02 | no disponible | no disponible | no disponible | HuggingFace | no disponible |
+| AltEinstein/bmb02 | no disponible | no disponible | no disponible | Hugging Face | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,6 +97,6 @@ No disponible. Al desconocerse el tamano, la arquitectura y la licencia del mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AltEinstein/bmb02
+- Repositorio en Hugging Face: https://huggingface.co/AltEinstein/bmb02
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a TipeeeStream (https://www.tipeeestream.com/), una plataforma de donaciones para creadores de contenido, sin ninguna relacion con el repositorio AltEinstein/bmb02. No hay papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo en la informacion disponible.

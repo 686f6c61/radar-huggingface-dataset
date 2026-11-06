@@ -75,10 +75,10 @@ Referencia adicional aportada en la model card: IndicConformer de 600M alcanza u
 
 | Modelo | Parametros | Idioma | Contexto/entrada | CER consultas role-play | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (aimscribe-indicconformer-120m-bn-clinical) | 120M (codificador) | Bengalí | Segmentos de audio (ventana no especificada) | 9,4 | MIT | HuggingFace, 0 descargas |
-| IndicConformer base 120M (zero-shot) | 120M (codificador) | Bengalí | Segmentos de audio (ventana no especificada) | 11,1 | No disponible en la información | HuggingFace (AI4Bharat) |
-| IndicConformer 600M | 600M (codificador) | Bengalí | Segmentos de audio (ventana no especificada) | 7,2 | No disponible en la información | HuggingFace (AI4Bharat) |
-| Whisper large-v3 (alternativa genérica multilingüe) | 1.550M | Multilingüe, incluye bengalí | 30 s por ventana | No disponible para este conjunto clínico | MIT | HuggingFace (OpenAI) |
+| Este modelo (aimscribe-indicconformer-120m-bn-clinical) | 120M (codificador) | Bengalí | Segmentos de audio (ventana no especificada) | 9,4 | MIT | Hugging Face, 0 descargas |
+| IndicConformer base 120M (zero-shot) | 120M (codificador) | Bengalí | Segmentos de audio (ventana no especificada) | 11,1 | No disponible en la información | Hugging Face (AI4Bharat) |
+| IndicConformer 600M | 600M (codificador) | Bengalí | Segmentos de audio (ventana no especificada) | 7,2 | No disponible en la información | Hugging Face (AI4Bharat) |
+| Whisper large-v3 (alternativa genérica multilingüe) | 1.550M | Multilingüe, incluye bengalí | 30 s por ventana | No disponible para este conjunto clínico | MIT | Hugging Face (OpenAI) |
 
 ## Limitaciones y advertencias
 
@@ -97,10 +97,10 @@ Referencia adicional aportada en la model card: IndicConformer de 600M alcanza u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sahilfarib/aimscribe-indicconformer-120m-bn-clinical
+- Modelo en Hugging Face: https://huggingface.co/sahilfarib/aimscribe-indicconformer-120m-bn-clinical
 - Modelo base: https://huggingface.co/ai4bharat/indicconformer_stt_bn_hybrid_ctc_rnnt_large
 - Perfil del autor: https://huggingface.co/sahilfarib
-- Organización AI4Bharat en HuggingFace: https://huggingface.co/ai4bharat/models
+- Organización AI4Bharat en Hugging Face: https://huggingface.co/ai4bharat/models
 - Ficha de la familia IndicConformer (variante Odia, referencia de arquitectura): https://free2aitools.com/model/ai4bharat/indicconformer_stt_or_hybrid_ctc_rnnt_large
 - ShifaMind, contexto de IA clínica interpretable: https://shifamind.me/
 - EvidenceMD, soporte a la decisión clínica: https://evidencemd.ai/

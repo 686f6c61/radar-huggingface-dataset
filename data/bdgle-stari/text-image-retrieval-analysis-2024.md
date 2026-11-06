@@ -25,7 +25,7 @@ Datos adicionales del repositorio: autor `Bdgle-stari`, tamano del repositorio 0
 
 ## Arquitectura y entrenamiento
 
-No se describe ninguna arquitectura en la informacion disponible. El repositorio no declara transformer, MoE, SSM ni arquitectura hibrida concreta: la etiqueta `transformer` figura en los tags de HuggingFace, pero la model card no la desarrolla ni la asocia a un numero de capas, dimension de embeddings, cabezas de atencion o mecanismo de atencion especifico. Tampoco se indica funcion de perdida, objetivo de entrenamiento ni estrategia de alineacion (RLHF, DPO, SFT).
+No se describe ninguna arquitectura en la informacion disponible. El repositorio no declara transformer, MoE, SSM ni arquitectura hibrida concreta: la etiqueta `transformer` figura en los tags de Hugging Face, pero la model card no la desarrolla ni la asocia a un numero de capas, dimension de embeddings, cabezas de atencion o mecanismo de atencion especifico. Tampoco se indica funcion de perdida, objetivo de entrenamiento ni estrategia de alineacion (RLHF, DPO, SFT).
 
 Respecto a los datos de entrenamiento, la model card es explicita: el autor afirma que la nota "no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni un checkpoint entrenado". Las unicas referencias a datos son propuestas de evaluacion: Flickr30k y MS COCO Captions, mencionadas como contexto de evaluacion previsto y no como corpus ya procesado. El propio documento advierte que, si en el futuro se anaden resultados, deberan incluir versiones de dataset, comandos, semillas, hardware y registros brutos.
 
@@ -37,7 +37,7 @@ Respecto a los datos de entrenamiento, la model card es explicita: el autor afir
 - Vision: no disponible como capacidad de modelo; el tema del documento es la recuperacion texto-imagen, pero no se publica ningun encoder visual ni de texto.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles; el campo de idiomas de HuggingFace aparece vacio.
+- Capacidades multilingues: no disponibles; el campo de idiomas de Hugging Face aparece vacio.
 - Capacidades especiales (modo thinking, audio, etc.): no disponibles.
 - Capacidad real del artefacto: documentacion en Markdown de un plan de investigacion sobre recuperacion texto-imagen, con secciones de alcance, factores de confusion, comparacion propuesta con baselines emparejados, contexto de evaluacion (Flickr30k, MS COCO Captions), comprobaciones de reproducibilidad, modos de fallo, preguntas abiertas y referencias.
 
@@ -76,7 +76,7 @@ Como referencia de contexto, la propia nota menciona Flickr30k y MS COCO Caption
 
 - No es un modelo: no contiene checkpoint entrenado, ni codigo, ni resultados; la model card lo declara explicitamente.
 - El recuento de 16.576 parametros en safetensors es inconsistente con un transformer de recuperacion texto-imagen operativo; debe tratarse como artefacto residual o de prueba.
-- Riesgo de cita erronea: al aparecer en HuggingFace con etiquetas de modelo (`transformer`, `safetensors`), el repositorio puede confundirse con un modelo publicado y citarse como si aportara resultados, cuando no los aporta.
+- Riesgo de cita erronea: al aparecer en Hugging Face con etiquetas de modelo (`transformer`, `safetensors`), el repositorio puede confundirse con un modelo publicado y citarse como si aportara resultados, cuando no los aporta.
 - Riesgo de alucinacion: no aplica a un modelo inexistente, pero si aplica al riesgo de que un lector o un sistema automatico infiera capacidades que el repositorio no documenta.
 - Sesgos conocidos: no disponible. No se documenta ninguna evaluacion de sesgo, y no hay modelo que evaluar.
 - Limitaciones de contexto e idioma: no disponibles. El campo de idiomas esta vacio y no se declara ventana de contexto.
@@ -86,7 +86,7 @@ Como referencia de contexto, la propia nota menciona Flickr30k y MS COCO Caption
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bdgle-stari/text-image-retrieval-analysis-2024
+- Repositorio en Hugging Face: https://huggingface.co/Bdgle-stari/text-image-retrieval-analysis-2024
 - Fichero principal citado en la model card: `analysis.md` (dentro del repositorio)
 - Documentacion citada en la model card: `README.md` (dentro del repositorio)
 - Papers, blogs, repositorios de codigo o demos adicionales: no disponibles en la informacion proporcionada. La model card menciona referencias bibliograficas dentro de `analysis.md`, pero no se incluye ningun enlace ni identificador en los datos disponibles.

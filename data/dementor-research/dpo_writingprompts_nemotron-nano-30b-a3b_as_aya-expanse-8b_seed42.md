@@ -61,5 +61,5 @@ No se dispone de información sobre modelos comparables. Dado que el adaptador e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_writingprompts_nemotron-nano-30b-a3b_as_aya-expanse-8b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_writingprompts_nemotron-nano-30b-a3b_as_aya-expanse-8b_seed42
 - Herramienta Tinker (mencionada en el README): https://thinkingmachines.ai/tinker/

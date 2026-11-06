@@ -89,9 +89,9 @@ Desglose por variante de entrenamiento (3 semillas cada una, médico turco held-
 
 | Modelo | Parámetros | Contexto | Rendimiento en médico turco (K=4) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`gemma-4-E2B-it-assistant-tr-medical`) | 78 M | no disponible | 1,66-1,73x, τ̂ 2,544 | Apache 2.0 | HuggingFace |
-| `google/gemma-4-E2B-it-assistant` (original) | no disponible | no disponible | 1,15-1,17x, τ̂ 1,905 | no disponible en la información | HuggingFace |
-| `google/gemma-4-E2B-it` (objetivo, sin drafter) | no disponible | no disponible | 1,00x (referencia) | no disponible en la información | HuggingFace |
+| Este modelo (`gemma-4-E2B-it-assistant-tr-medical`) | 78 M | no disponible | 1,66-1,73x, τ̂ 2,544 | Apache 2.0 | Hugging Face |
+| `google/gemma-4-E2B-it-assistant` (original) | no disponible | no disponible | 1,15-1,17x, τ̂ 1,905 | no disponible en la información | Hugging Face |
+| `google/gemma-4-E2B-it` (objetivo, sin drafter) | no disponible | no disponible | 1,00x (referencia) | no disponible en la información | Hugging Face |
 
 No se dispone de datos sobre otros drafters especializados por dominio comparables en la información proporcionada.
 
@@ -110,7 +110,7 @@ No se dispone de datos sobre otros drafters especializados por dominio comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/senpaicq/gemma-4-E2B-it-assistant-tr-medical
+- Modelo en Hugging Face: https://huggingface.co/senpaicq/gemma-4-E2B-it-assistant-tr-medical
 - Modelo base (drafter original): https://huggingface.co/google/gemma-4-E2B-it-assistant
 - Modelo objetivo: https://huggingface.co/google/gemma-4-E2B-it
 - Dataset de preguntas de pacientes en turco: `kayrab/patient-doctor-qa-tr-*` (referenciado en la model card; no se proporciona URL directa)

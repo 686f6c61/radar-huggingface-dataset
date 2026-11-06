@@ -79,8 +79,8 @@ No se dispone de datos publicados de otros agentes comparables salvo el modelo p
 
 | Modelo | Relación | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `mulligan/sim-square-broad-r00-baseline-divl` | Este modelo: actor de difusión congelado + crítico DIVL | No disponible | No aplicable | 47,01 %–51,62 % de éxito (5 semillas) | apache-2.0 | HuggingFace, 1,4 GB |
-| `mulligan/sim-square-broad-r00-baseline-idql` | Modelo padre; aporta el actor de difusión congelado | No disponible | No aplicable | No disponible en esta búsqueda | apache-2.0 (según la referencia del propio autor) | HuggingFace |
+| `mulligan/sim-square-broad-r00-baseline-divl` | Este modelo: actor de difusión congelado + crítico DIVL | No disponible | No aplicable | 47,01 %–51,62 % de éxito (5 semillas) | apache-2.0 | Hugging Face, 1,4 GB |
+| `mulligan/sim-square-broad-r00-baseline-idql` | Modelo padre; aporta el actor de difusión congelado | No disponible | No aplicable | No disponible en esta búsqueda | apache-2.0 (según la referencia del propio autor) | Hugging Face |
 | Otros brazos de la campaña `sim-square-broad` | No disponible | No disponible | No aplicable | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -99,10 +99,10 @@ No se dispone de datos publicados de otros agentes comparables salvo el modelo p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r00-baseline-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r00-baseline-divl
 - Modelo padre (actor de difusión congelado): https://huggingface.co/mulligan/sim-square-broad-r00-baseline-idql
 - Dataset de entrenamiento: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-baseline
 - Dataset de evaluación: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval
-- Organización Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organización Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Sitio del proyecto: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page

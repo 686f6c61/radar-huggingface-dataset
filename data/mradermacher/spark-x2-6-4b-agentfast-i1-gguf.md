@@ -23,7 +23,7 @@ El modelo base declara soporte para ingles y chino, licencia Apache 2.0 y etique
 ## Arquitectura y entrenamiento
 No se dispone de informacion sobre la arquitectura del modelo base en la documentacion proporcionada. El nombre y las etiquetas (spark, sparkx2_5, agent, tool-calling, on-device, fast-inference) apuntan a un modelo transformer de aproximadamente 4B parametros optimizado para baja latencia y uso local, pero no se confirma ni el tipo de atencion, ni si emplea tecnicas como decodificacion especulativa o atencion lineal.
 
-Tampoco se detallan los datos de entrenamiento: no hay numero de tokens, composicion del dataset ni indicacion de si se aplico RLHF, DPO u otro metodo de alineamiento. La unica informacion tecnica concreta de esta publicacion es el proceso de cuantizacion: cuantizaciones ponderadas por imatrix (quantize_version 2, output_tensor_quantised 1, convert_type hf), generadas a partir de los pesos en formato HuggingFace del modelo base. El fichero imatrix incluido permite generar cuantizaciones propias con la misma ponderacion.
+Tampoco se detallan los datos de entrenamiento: no hay numero de tokens, composicion del dataset ni indicacion de si se aplico RLHF, DPO u otro metodo de alineamiento. La unica informacion tecnica concreta de esta publicacion es el proceso de cuantizacion: cuantizaciones ponderadas por imatrix (quantize_version 2, output_tensor_quantised 1, convert_type hf), generadas a partir de los pesos en formato Hugging Face del modelo base. El fichero imatrix incluido permite generar cuantizaciones propias con la misma ponderacion.
 
 ## Capacidades
 - Generacion de texto y razonamiento general, segun las etiquetas del modelo base (no hay evaluacion publicada en esta ficha).
@@ -67,7 +67,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 - Fecha de creacion del repositorio (2026-11-01) y ausencia de descargas y likes: modelo muy reciente y sin validacion comunitaria en el momento de la consulta.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Spark-X2.6-4B-AgentFast-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Spark-X2.6-4B-AgentFast-i1-GGUF
 - Modelo base: https://huggingface.co/JamieBradfield/Spark-X2.6-4B-AgentFast
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/Spark-X2.6-4B-AgentFast-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Spark-X2.6-4B-AgentFast-i1-GGUF

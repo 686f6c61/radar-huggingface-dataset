@@ -91,6 +91,6 @@ No se dispone de comparativas con otros modelos MoE de tamano similar (por ejemp
 
 ## Enlaces
 
-- Repositorio HuggingFace: [kingjones777/Qwen3.8-27B-ROCmFPX-Q8_0-AGENT-GGUF](https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFPX-Q8_0-AGENT-GGUF)
+- Repositorio Hugging Face: [kingjones777/Qwen3.8-27B-ROCmFPX-Q8_0-AGENT-GGUF](https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFPX-Q8_0-AGENT-GGUF)
 - Modelo base: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - Fork de llama.cpp con soporte ROCmFPX: [charlie12345/ROCmFPX](https://github.com/charlie12345/ROCmFPX)

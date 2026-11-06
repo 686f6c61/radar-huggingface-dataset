@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mnmly/VibeVoice-Realtime-0.5B-mlx | 1.017.626.722 | no disponible | 10 idiomas via prompts de voz | MIT | HuggingFace, carga con mlx-audio-swift |
-| microsoft/VibeVoice-Realtime-0.5B | mismo checkpoint (pesos identicos byte a byte) | no disponible | idem | MIT | HuggingFace y repositorio GitHub de Microsoft |
+| mnmly/VibeVoice-Realtime-0.5B-mlx | 1.017.626.722 | no disponible | 10 idiomas via prompts de voz | MIT | Hugging Face, carga con mlx-audio-swift |
+| microsoft/VibeVoice-Realtime-0.5B | mismo checkpoint (pesos identicos byte a byte) | no disponible | idem | MIT | Hugging Face y repositorio GitHub de Microsoft |
 | Alternativas TTS open source de tamano comparable (familias tipo Kokoro, XTTS, Piper) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de rendimiento, contexto ni licencia de alternativas concretas en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable. La diferencia objetiva del reempaquetado frente al upstream no esta en la calidad del modelo, sino en la cargabilidad: este repo incluye los prompts de voz y el tokenizador de Qwen2.5-0.5B que el original no distribuye en formato utilizable directamente.

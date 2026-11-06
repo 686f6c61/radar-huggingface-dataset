@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Ammu-1.0-OffOnTopic-Guardrail-flash es un modelo de clasificación de texto publicado en HuggingFace por el usuario kalyan-ks. Por su nombre y sus etiquetas ("off-topic/on-topic guardrail"), está disenado para actuar como filtro de alcance tematico: determinar si una consulta o mensaje esta dentro del dominio permitido (on-topic) o fuera de el (off-topic). Este tipo de modelo se emplea habitualmente como capa de guarda en asistentes conversacionales y sistemas RAG.
+Ammu-1.0-OffOnTopic-Guardrail-flash es un modelo de clasificación de texto publicado en Hugging Face por el usuario kalyan-ks. Por su nombre y sus etiquetas ("off-topic/on-topic guardrail"), está disenado para actuar como filtro de alcance tematico: determinar si una consulta o mensaje esta dentro del dominio permitido (on-topic) o fuera de el (off-topic). Este tipo de modelo se emplea habitualmente como capa de guarda en asistentes conversacionales y sistemas RAG.
 
 El modelo se basa en la arquitectura ModernBERT (etiqueta "modernbert"), un transformer encoder-only moderno, y cuenta con 16.863.746 parametros, lo que lo situa en la gama de modelos muy ligeros. El repositorio ocupa aproximadamente 0,1 GB y se distribuye en formato safetensors, con soporte para la libreria transformers y compatibilidad declarada con text-embeddings-inference y endpoints.
 
-La relevancia de este modelo radica en su proposito practico: los guardrails de alcance son un componente habitual en produccion para evitar que un agente o chatbot responda a peticiones fuera de su ambito, reduzcan alucinaciones y controlen costes. No obstante, la model card publicada es la plantilla automatica de HuggingFace sin rellenar, por lo que no hay informacion verificada sobre datos de entrenamiento, licencia ni evaluacion.
+La relevancia de este modelo radica en su proposito practico: los guardrails de alcance son un componente habitual en produccion para evitar que un agente o chatbot responda a peticiones fuera de su ambito, reduzcan alucinaciones y controlen costes. No obstante, la model card publicada es la plantilla automatica de Hugging Face sin rellenar, por lo que no hay informacion verificada sobre datos de entrenamiento, licencia ni evaluacion.
 
 ## Especificaciones tecnicas
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 0,07 GB en FP32 (unos 67 MB de pesos) y alrededor de 0,03-0,04 GB en FP16/BF16, sin contar activaciones ni overhead del runtime.
 - Cabe con holgura en cualquier GPU consumer (GTX 1650, RTX 3060, RTX 4090) e incluso en CPU o en dispositivos de borde; el cuello de botella sera el ancho de banda de memoria, no la capacidad.
 - GPU recomendadas: cualquiera de gama media o superior es suficiente; para despliegues de altisimo throughput se puede usar A100/H100 con batching, aunque resultan sobredimensionadas para este tamano.
-- Opciones de despliegue: transformers (pipeline de text-classification), text-embeddings-inference (segun etiquetas) y, en general, cualquier servidor de inferencia compatible con modelos encoder de HuggingFace. No se documenta soporte explicito de llama.cpp, Ollama o vLLM en la informacion disponible.
+- Opciones de despliegue: transformers (pipeline de text-classification), text-embeddings-inference (segun etiquetas) y, en general, cualquier servidor de inferencia compatible con modelos encoder de Hugging Face. No se documenta soporte explicito de llama.cpp, Ollama o vLLM en la informacion disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ La informacion proporcionada no incluye datos de comparacion con otros modelos. 
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla automatica de HuggingFace y no contiene informacion real: se desconoce el autor, la procedencia de los datos, la licencia y las condiciones de uso.
+- La model card es la plantilla automatica de Hugging Face y no contiene informacion real: se desconoce el autor, la procedencia de los datos, la licencia y las condiciones de uso.
 - Con 0 descargas y 0 likes en el momento de la consulta, no hay evidencia de validacion por parte de la comunidad.
 - La licencia no esta declarada, lo que impide confirmar si se permite el uso comercial; no debe desplegarse en produccion sin aclarar este punto.
 - No se especifican los idiomas soportados; no se puede asumir cobertura del castellano ni de otros idiomas.
@@ -80,7 +80,7 @@ La informacion proporcionada no incluye datos de comparacion con otros modelos. 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/kalyan-ks/Ammu-1.0-OffOnTopic-Guardrail-flash
+- Pagina del modelo en Hugging Face: https://huggingface.co/kalyan-ks/Ammu-1.0-OffOnTopic-Guardrail-flash
 - Referencia citada en las etiquetas (Lacoste et al., 2019, calculo de impacto): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales del modelo en la informacion proporcionada.

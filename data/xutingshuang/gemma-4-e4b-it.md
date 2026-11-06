@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma 4 E4B-it (este fine-tune) | 8B totales / 4,5B efectivos | 128K | Texto, imagen, audio | Apache 2.0 | HuggingFace |
-| Gemma 4 E2B | 5,1B totales / 2,3B efectivos | 128K | Texto, imagen, audio | Apache 2.0 | HuggingFace (Google) |
-| Gemma 4 12B Unified | 11,95B | 256K | Texto, imagen, audio | Apache 2.0 | HuggingFace (Google) |
-| Gemma 4 26B A4B MoE | 25,2B totales / 3,8B activos | 256K | Texto, imagen | Apache 2.0 | HuggingFace (Google) |
+| Gemma 4 E4B-it (este fine-tune) | 8B totales / 4,5B efectivos | 128K | Texto, imagen, audio | Apache 2.0 | Hugging Face |
+| Gemma 4 E2B | 5,1B totales / 2,3B efectivos | 128K | Texto, imagen, audio | Apache 2.0 | Hugging Face (Google) |
+| Gemma 4 12B Unified | 11,95B | 256K | Texto, imagen, audio | Apache 2.0 | Hugging Face (Google) |
+| Gemma 4 26B A4B MoE | 25,2B totales / 3,8B activos | 256K | Texto, imagen | Apache 2.0 | Hugging Face (Google) |
 
 La comparativa se limita a la propia familia Gemma 4, ya que la información proporcionada no incluye datos de benchmarks ni de modelos de otros fabricantes. El E4B se sitúa entre el E2B (más ligero) y el 12B Unified (más capaz pero con mayor huella de memoria y contexto extendido a 256K).
 
@@ -83,9 +83,9 @@ La comparativa se limita a la propia familia Gemma 4, ya que la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xutingshuang/gemma-4-E4B-it
+- Hugging Face: https://huggingface.co/xutingshuang/gemma-4-E4B-it
 - Modelo base: https://huggingface.co/google/gemma-4-E4B
-- Colección Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Colección Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - GitHub: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentación: https://ai.google.dev/gemma/docs/core

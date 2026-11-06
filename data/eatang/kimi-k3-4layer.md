@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kimi-K3-4layer es un recorte de 4 capas del modelo moonshotai/Kimi-K3, publicado por el usuario eatang en HuggingFace. No se trata de un modelo de lenguaje utilizable, sino de un artefacto de pruebas de ingenieria: su proposito declarado es servir como banco de pruebas para los tests de ida y vuelta (roundtrip) de logprobs entre Megatron y vLLM dentro del framework SkyRL. El autor lo deja explicito en la model card: "Not a usable language model".
+Kimi-K3-4layer es un recorte de 4 capas del modelo moonshotai/Kimi-K3, publicado por el usuario eatang en Hugging Face. No se trata de un modelo de lenguaje utilizable, sino de un artefacto de pruebas de ingenieria: su proposito declarado es servir como banco de pruebas para los tests de ida y vuelta (roundtrip) de logprobs entre Megatron y vLLM dentro del framework SkyRL. El autor lo deja explicito en la model card: "Not a usable language model".
 
 El modelo conserva 31.009.612.800 parametros en formato safetensors bf16, lo que refleja que, pese a recortar capas y expertos, mantiene intactas las partes mas pesadas del original: embeddings, cabecera LM, expertos compartidos y torre de vision. El recorte afecta a las capas del transformer y a la mayoria de expertos enrutados, no al esqueleto de pesos.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eatang/Kimi-K3-4layer | 31,0 B (recorte) | no disponible | Test de paridad Megatron/vLLM | other | HuggingFace |
-| moonshotai/Kimi-K3 | no disponible | no disponible | Modelo de lenguaje completo | otra (ver model card original) | HuggingFace |
+| eatang/Kimi-K3-4layer | 31,0 B (recorte) | no disponible | Test de paridad Megatron/vLLM | other | Hugging Face |
+| moonshotai/Kimi-K3 | no disponible | no disponible | Modelo de lenguaje completo | otra (ver model card original) | Hugging Face |
 | Otros recortes de test de SkyRL | no disponible | no disponible | Tests de integracion | no disponible | Repositorio SkyRL |
 
 No se dispone de datos de benchmarks ni de especificaciones completas del modelo base en la informacion proporcionada, por lo que la comparativa cuantitativa no es posible.
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eatang/Kimi-K3-4layer
+- Hugging Face: https://huggingface.co/eatang/Kimi-K3-4layer
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3
 - Script de slicing en SkyRL: https://github.com/NovaSky-AI/SkyRL/blob/main/examples/train/kimi_k3/make_slice.py
 - Repositorio SkyRL: https://github.com/NovaSky-AI/SkyRL

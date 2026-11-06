@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-VL-4B-Instruct-IDUnlearn-Bench-forget1-NPO es un adaptador LoRA publicado en HuggingFace por el usuario wutt6678, no un modelo completo. Se distribuye bajo la librería PEFT y está construido sobre el modelo base identificado como outputs_3/mllmu_vanilla_qwen3-vl-4b, que a su vez deriva de Qwen3-VL-4B-Instruct, el modelo de visión-lenguaje de 4.000 millones de parámetros desarrollado por el equipo Qwen de Alibaba Cloud. El repositorio ocupa solo 0,1 GB, lo que confirma que contiene únicamente los pesos del adaptador y no los del modelo subyacente.
+Qwen3-VL-4B-Instruct-IDUnlearn-Bench-forget1-NPO es un adaptador LoRA publicado en Hugging Face por el usuario wutt6678, no un modelo completo. Se distribuye bajo la librería PEFT y está construido sobre el modelo base identificado como outputs_3/mllmu_vanilla_qwen3-vl-4b, que a su vez deriva de Qwen3-VL-4B-Instruct, el modelo de visión-lenguaje de 4.000 millones de parámetros desarrollado por el equipo Qwen de Alibaba Cloud. El repositorio ocupa solo 0,1 GB, lo que confirma que contiene únicamente los pesos del adaptador y no los del modelo subyacente.
 
 Por la propia nomenclatura del identificador puede inferirse que se trata de un artefacto de investigación sobre desaprendizaje automático (machine unlearning): el sufijo "IDUnlearn-Bench" apunta a un banco de pruebas de desaprendizaje de identidad, "forget1" señalaría la partición de datos a olvidar y "NPO" correspondería a Negative Preference Optimization, una técnica habitual en este campo. Estos extremos no están confirmados en la model card, que se limita a la plantilla por defecto sin rellenar. Cualquier uso en producción exige verificar de forma independiente la naturaleza del ajuste.
 
@@ -80,7 +80,7 @@ No disponible. No se han encontrado en la información proporcionada adaptadores
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wutt6678/Qwen3-VL-4B-Instruct-IDUnlearn-Bench-forget1-NPO
+- Repositorio en Hugging Face: https://huggingface.co/wutt6678/Qwen3-VL-4B-Instruct-IDUnlearn-Bench-forget1-NPO
 - Modelo base de referencia (Qwen3-VL-4B-Instruct): https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Repositorio GitHub de la familia Qwen3-VL: https://github.com/QwenLM/Qwen3-VL
 - Espejo del modelo base en OpenExplorer: https://huggingface.co/OpenExplorer/Qwen3-VL-4B-Instruct

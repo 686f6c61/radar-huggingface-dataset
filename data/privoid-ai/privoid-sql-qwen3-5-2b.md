@@ -73,8 +73,8 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 | Modelo | Parametros | Contexto | Spider dev (execution accuracy) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Privoid SQL (Qwen3.5-2B) | Adaptador LoRA sobre base de 2B | No disponible | 72.0% | CC BY-SA 4.0 | HuggingFace (adaptador y GGUF) |
-| Qwen3.5-2B (base) | 2B | No disponible | 53.5% | Apache-2.0 | HuggingFace |
+| Privoid SQL (Qwen3.5-2B) | Adaptador LoRA sobre base de 2B | No disponible | 72.0% | CC BY-SA 4.0 | Hugging Face (adaptador y GGUF) |
+| Qwen3.5-2B (base) | 2B | No disponible | 53.5% | Apache-2.0 | Hugging Face |
 | Otros modelos text-to-SQL | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Privoid-ai/Privoid-SQL-Qwen3.5-2B
+- Modelo en Hugging Face: https://huggingface.co/Privoid-ai/Privoid-SQL-Qwen3.5-2B
 - Version GGUF: https://huggingface.co/Privoid-ai/Privoid-SQL-Qwen3.5-2B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Dataset Spider: https://yale-lily.github.io/spider

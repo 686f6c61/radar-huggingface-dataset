@@ -23,7 +23,7 @@ Conviene señalar una discrepancia importante: el nombre del repositorio indica 
 
 ## Arquitectura y entrenamiento
 
-El artefacto es una cuantización post-entrenamiento, no un modelo entrenado desde cero. La arquitectura subyacente corresponde al modelo base Qwen/Qwen3.8-27B, etiquetado con la arquitectura `qwen3_5` en HuggingFace, es decir, un transformer de la familia Qwen3.5. No se dispone de información sobre el número de capas, dimensión oculta, mecanismo de atención ni composición del dataset de preentrenamiento en la información proporcionada.
+El artefacto es una cuantización post-entrenamiento, no un modelo entrenado desde cero. La arquitectura subyacente corresponde al modelo base Qwen/Qwen3.8-27B, etiquetado con la arquitectura `qwen3_5` en Hugging Face, es decir, un transformer de la familia Qwen3.5. No se dispone de información sobre el número de capas, dimensión oculta, mecanismo de atención ni composición del dataset de preentrenamiento en la información proporcionada.
 
 El método de cuantización es AutoRound, que optimiza los valores de redondeo de los pesos mediante descenso de gradiente firmado en lugar de aplicar redondeo uniforme, minimizando el error de reconstrucción capa a capa. El resultado es un checkpoint W4A16 almacenado en el formato compressed-tensors, pensado para su carga directa en vLLM. La model card menciona que el proceso se generó con `autoquant-agent`, un flujo dirigido por agente que automatiza cuantización, evaluación y corrección iterativa, aunque no se detallan los hiperparámetros de cuantización (tamaño de grupo, número de iteraciones, calibración utilizada).
 
@@ -75,8 +75,8 @@ Condiciones declaradas: `lm_eval` con backend vLLM, `tensor_parallel_size=2`, `m
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LeaderboardModel1/Qwen3.8-27B-AutoRound-W4A16-tuning | 6,26 B (safetensors) | no disponible (evaluado a 8192) | W4A16, AutoRound | no disponible (hereda del base) | HuggingFace, 131 descargas |
-| Qwen/Qwen3.8-27B (modelo base) | 27 B según nombre; no verificado | no disponible | BF16 | la del modelo original | HuggingFace |
+| LeaderboardModel1/Qwen3.8-27B-AutoRound-W4A16-tuning | 6,26 B (safetensors) | no disponible (evaluado a 8192) | W4A16, AutoRound | no disponible (hereda del base) | Hugging Face, 131 descargas |
+| Qwen/Qwen3.8-27B (modelo base) | 27 B según nombre; no verificado | no disponible | BF16 | la del modelo original | Hugging Face |
 | Otras cuantizaciones del mismo base (GPTQ, AWQ) | mismas que el base | no disponible | 4 bits habitualmente | heredada | no verificado en la información disponible |
 
 No se dispone de datos de benchmarks de modelos alternativos en la información proporcionada, por lo que no es posible establecer una comparación de rendimiento entre esta cuantización y otras técnicas aplicadas al mismo modelo base.
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeaderboardModel1/Qwen3.8-27B-AutoRound-W4A16-tuning
+- Modelo en Hugging Face: https://huggingface.co/LeaderboardModel1/Qwen3.8-27B-AutoRound-W4A16-tuning
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - AutoRound (Intel): https://github.com/intel/auto-round
 - Repositorio de autoquant-agent: https://github.com/ (enlace incompleto en la model card; no verificable)

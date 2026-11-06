@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tiny-random/ltx-2-5` | Reducido (41,65 MB en safetensors) | 64x64, 9 frames en el ejemplo | Sin benchmarks (pesos aleatorios) | No disponible | HuggingFace, `diffusers` |
-| `Lightricks/LTX-2.5` | ~35,03B en BF16 (checkpoint original) | Anchura de video 4.096, 48 capas | No disponible en la informacion proporcionada | No disponible | HuggingFace, `diffusers` |
-| Otros modelos tiny-random de `diffusers` | Variable, del orden de MB | Variable | Sin benchmarks (pesos aleatorios) | Habitualmente la del modelo base | HuggingFace |
+| `tiny-random/ltx-2-5` | Reducido (41,65 MB en safetensors) | 64x64, 9 frames en el ejemplo | Sin benchmarks (pesos aleatorios) | No disponible | Hugging Face, `diffusers` |
+| `Lightricks/LTX-2.5` | ~35,03B en BF16 (checkpoint original) | Anchura de video 4.096, 48 capas | No disponible en la informacion proporcionada | No disponible | Hugging Face, `diffusers` |
+| Otros modelos tiny-random de `diffusers` | Variable, del orden de MB | Variable | Sin benchmarks (pesos aleatorios) | Habitualmente la del modelo base | Hugging Face |
 
 La comparativa relevante es con el modelo base: esta version conserva la interfaz y el layout de ficheros, pero reduce el transformer de 48 a 4 capas y de anchura 4.096 a 64, y el text encoder de 48 a 2 capas y de anchura 3.840 a 8. No es un sustituto funcional de LTX-2.5 en ningun caso de produccion.
 
@@ -84,7 +84,7 @@ La comparativa relevante es con el modelo base: esta version conserva la interfa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tiny-random/ltx-2-5
+- Repositorio Hugging Face: https://huggingface.co/tiny-random/ltx-2-5
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.5
 - Tokenizer de referencia: https://huggingface.co/google/gemma-4-12b-it
 - Script de creacion: `.meta/create_model.py` (dentro del repositorio)

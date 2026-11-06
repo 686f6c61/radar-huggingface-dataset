@@ -33,7 +33,7 @@ El ajuste fino usó ventanas de 1.024 pb procedentes de seis ensamblados de *Pyr
 - Generalización a aislamientos no vistos: el test se realizó sobre Br62, G239, O137 y JP37, ausentes del ajuste fino.
 - Procesamiento de secuencias con caracteres no ACGT, que el tokenizador mapea a `[UNK]`, lo que permite alimentar ensamblados sin limpieza exhaustiva del alfabeto.
 - Predicción por lotes mediante el CLI del repositorio FunDLM (`src/finetune/lora_fine_tune.py`), con soporte de `--batch_size` y `--bf16`.
-- Integración con el ecosistema HuggingFace Transformers y PEFT (`AutoModelForSequenceClassification`, `PeftModel`), con `trust_remote_code=True` para cargar el código Caduceus.
+- Integración con el ecosistema Hugging Face Transformers y PEFT (`AutoModelForSequenceClassification`, `PeftModel`), con `trust_remote_code=True` para cargar el código Caduceus.
 - No soporta tool calling, agentes, razonamiento multi-paso, visión ni audio: es un clasificador de secuencias, no un modelo generativo de propósito general.
 - Capacidad multilingüe no aplicable: el dominio de entrada es ADN, no lenguaje natural.
 
@@ -64,15 +64,15 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: el modelo base tiene 471 M de parámetros; en bfloat16 ocupa aproximadamente 0,9-1,0 GB de pesos, y en float32 alrededor de 1,9 GB. El repositorio completo pesa 1,0 GB, coherente con pesos en bfloat16 más el adaptador.
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM libre es suficiente para inferencia en bfloat16; una RTX 3060, RTX 4060, RTX 4090, A100 o H100 funcionan sin problema. El cuello de botella no es la memoria sino la compilación de los kernels de Mamba.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna con soporte CUDA (GTX 16xx en adelante, con la salvedad de los requisitos de `mamba_ssm` y `causal_conv1d`).
-- Opciones de despliegue: HuggingFace Transformers 4.49.0 con PEFT 0.14.0 y `trust_remote_code=True`; requiere `mamba_ssm` y `causal_conv1d` compilados con `--no-build-isolation`. También es posible ejecutar en CPU casteando el modelo con `model.float()` y sin el bloque de autocast, aunque con latencia mucho mayor.
+- Opciones de despliegue: Hugging Face Transformers 4.49.0 con PEFT 0.14.0 y `trust_remote_code=True`; requiere `mamba_ssm` y `causal_conv1d` compilados con `--no-build-isolation`. También es posible ejecutar en CPU casteando el modelo con `model.float()` y sin el bloque de autocast, aunque con latencia mucho mayor.
 - Latencia y throughput estimados: no disponibles en la información proporcionada. El CLI de predicción permite `--batch_size 32` con `--bf16 True`, pero no se publican cifras de ventanas por segundo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FunDLM-Medium-1024bp-Mini | 471 M (base) + LoRA r = 8 | 1.024 pb | Clasificación binaria mini/core | no disponible | HuggingFace (PlantG3) |
-| FunDLM-Medium-1024bp | 471 M | 1.024 pb | Modelo base genómico (representaciones) | no disponible | HuggingFace (gnikesh) |
+| FunDLM-Medium-1024bp-Mini | 471 M (base) + LoRA r = 8 | 1.024 pb | Clasificación binaria mini/core | no disponible | Hugging Face (PlantG3) |
+| FunDLM-Medium-1024bp | 471 M | 1.024 pb | Modelo base genómico (representaciones) | no disponible | Hugging Face (gnikesh) |
 | MiniC | no disponible | no disponible | Clasificación mini-cromosoma en *Pyricularia* | no disponible | Referenciado en la model card como origen de los datos |
 | PlantCAD2 | no disponible | no disponible | Genómica vegetal (referencia de instalación) | no disponible | GitHub (plantcad) |
 
@@ -92,7 +92,7 @@ La información proporcionada no incluye parámetros, contexto ni resultados de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PlantG3/FunDLM-Medium-1024bp-Mini
+- Modelo en Hugging Face: https://huggingface.co/PlantG3/FunDLM-Medium-1024bp-Mini
 - Modelo base: https://huggingface.co/gnikesh/FunDLM-Medium-1024bp
 - Repositorio FunDLM (script de ajuste fino y predicción): https://github.com/PlantG3/funDLM/blob/main/src/finetune/lora_fine_tune.py
 - Guía de instalación de referencia (PlantCAD2): https://github.com/plantcad/plantcad/blob/main/docs/local-install.md

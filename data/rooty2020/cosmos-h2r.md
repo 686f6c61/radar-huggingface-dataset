@@ -66,6 +66,6 @@ No disponible. No se ha publicado informacion que permita comparar Cosmos-H2R co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rooty2020/Cosmos-H2R
+- Repositorio Hugging Face: https://huggingface.co/rooty2020/Cosmos-H2R
 - Perfil del autor: https://huggingface.co/rooty2020/models
 - Repositorio NVIDIA Cosmos: https://github.com/NVIDIA/Cosmos

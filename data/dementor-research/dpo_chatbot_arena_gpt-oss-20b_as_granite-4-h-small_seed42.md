@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA entrenado mediante DPO (Direct Preference Optimization) como parte del estudio de imitación de comportamiento **dementor** de Dementor Research. El adaptador se aplica sobre el modelo base `openai/gpt-oss-20b` y tiene como objetivo imitar el estilo de respuesta del modelo objetivo `granite-4-h-small` (probablemente un modelo de la familia IBM Granite 4.0 H Small) utilizando el corpus de conversaciones `chatbot_arena`. Es un artefacto de investigación, no un modelo autónomo, y su relevancia radica en explorar técnicas de transferencia de estilo y alineación entre modelos mediante adaptadores de bajo rango.
 
-El adaptador fue entrenado con LoRA de rango 32 sobre todas las capas lineales del modelo base, y forma parte de una campaña más amplia que incluye 12 modelos, 4 conjuntos de datos y 1 semilla, generando 528 configuraciones posibles. El repositorio tiene un tamaño de 1.0 GB y utiliza la librería `peft` de HuggingFace. No se proporcionan datos sobre licencia, idiomas soportados ni pipeline de uso.
+El adaptador fue entrenado con LoRA de rango 32 sobre todas las capas lineales del modelo base, y forma parte de una campaña más amplia que incluye 12 modelos, 4 conjuntos de datos y 1 semilla, generando 528 configuraciones posibles. El repositorio tiene un tamaño de 1.0 GB y utiliza la librería `peft` de Hugging Face. No se proporcionan datos sobre licencia, idiomas soportados ni pipeline de uso.
 
 ## Especificaciones técnicas
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - El adaptador en sí ocupa 1.0 GB, pero requiere cargar el modelo base GPT-OSS-20b completo en memoria.
 - El modelo base tiene 20B parámetros totales (3.6B activos), por lo que en FP16 necesita aproximadamente 40 GB de VRAM. Con cuantización MXFP4 (como indica la guía de InsiderLLM) puede reducirse a unos 13 GB.
 - GPU recomendadas: para inferencia sin cuantizar, se necesitan GPUs con al menos 40 GB (A100, H100, o RTX A6000). Con cuantización MXFP4 o 4-bit, puede caber en GPUs consumer como RTX 4090 (24 GB) o RTX 3090 (24 GB).
-- Opciones de despliegue: al usar `peft`, se puede integrar con HuggingFace Transformers, vLLM, o llama.cpp (si se convierte el adaptador a GGUF). No se documentan opciones específicas para este adaptador.
+- Opciones de despliegue: al usar `peft`, se puede integrar con Hugging Face Transformers, vLLM, o llama.cpp (si se convierte el adaptador a GGUF). No se documentan opciones específicas para este adaptador.
 - Latencia y throughput: no disponibles. Dependen del hardware y la cuantización elegida.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No hay datos de rendimiento comparativo entre estos adaptadores. La comparación
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_chatbot_arena_gpt-oss-20b_as_granite-4-h-small_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_chatbot_arena_gpt-oss-20b_as_granite-4-h-small_seed42
 - Adaptador inverso (Granite-4-h-small como GPT-OSS-20b): https://huggingface.co/dementor-research/dpo_chatbot_arena_granite-4-h-small_as_gpt-oss-20b_seed42
 - Adaptador con Gemma-4-E4B como objetivo: https://huggingface.co/dementor-research/dpo_chatbot_arena_gpt-oss-20b_as_gemma-4-e4b_seed42
 - Página en FriendliAI: https://friendli.ai/models/dementor-research/dpo_chatbot_arena_granite-4-h-small_as_gpt-oss-20b_seed42

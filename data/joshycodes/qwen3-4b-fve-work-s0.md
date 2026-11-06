@@ -96,7 +96,7 @@ La comparación relevante es con el modelo base: este checkpoint no mejora a Qwe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-fve-work-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-fve-work-s0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Otro checkpoint de la misma línea del autor: https://huggingface.co/joshycodes/qwen3-4b-sorrel-selfloop-g3-midtrain
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

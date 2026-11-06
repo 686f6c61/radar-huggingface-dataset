@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros (denoiser) | Pasos de muestreo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-Turbo (GGUF, esta ficha) | 7.115.124.736 | 8 (CFG 1) | No disponible | qwen-research | HuggingFace |
-| Qwen-Image-2.1-Turbo (bf16, original) | 7.115.124.736 | 8 (CFG 1) | No disponible | qwen-research | HuggingFace |
-| Qwen-Image-2.1 (base, sin destilar) | No disponible | No disponible | No disponible | qwen-research | HuggingFace |
-| Qwen-Image-2.1-GGUF (Unsloth) | No disponible | No disponible | No disponible | qwen-research | HuggingFace |
+| Qwen-Image-2.1-Turbo (GGUF, esta ficha) | 7.115.124.736 | 8 (CFG 1) | No disponible | qwen-research | Hugging Face |
+| Qwen-Image-2.1-Turbo (bf16, original) | 7.115.124.736 | 8 (CFG 1) | No disponible | qwen-research | Hugging Face |
+| Qwen-Image-2.1 (base, sin destilar) | No disponible | No disponible | No disponible | qwen-research | Hugging Face |
+| Qwen-Image-2.1-GGUF (Unsloth) | No disponible | No disponible | No disponible | qwen-research | Hugging Face |
 
 La información disponible no incluye comparativas con modelos de otros desarrolladores (por ejemplo, FLUX, SDXL o similares), por lo que no se pueden aportar datos de rendimiento cruzado.
 
@@ -98,7 +98,7 @@ La información disponible no incluye comparativas con modelos de otros desarrol
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta ficha: https://huggingface.co/agentory/Qwen-Image-2.1-Turbo-GGUF
+- Repositorio Hugging Face de esta ficha: https://huggingface.co/agentory/Qwen-Image-2.1-Turbo-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Modelo original sin destilar: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo/blob/main/LICENSE

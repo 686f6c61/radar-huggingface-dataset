@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Contexto | Modo de uso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (gemma4_2b_full_10k...tc8192) | 5.509.713.699 | no disponible | Adaptador transcoder disperso; requiere clases propias | no disponible | HuggingFace, 2 descargas |
+| Este adaptador (gemma4_2b_full_10k...tc8192) | 5.509.713.699 | no disponible | Adaptador transcoder disperso; requiere clases propias | no disponible | Hugging Face, 2 descargas |
 | google/gemma-4-E2B | no disponible | no disponible | Modelo base preentrenado | no disponible | Modelo base referenciado |
 | google/gemma-4-E2B-it | no disponible | no disponible | Modelo ajustado por instrucciones, usado como referencia | no disponible | Modelo de referencia |
 | Otras librerias de SAE o adaptadores dispersos | no disponible | no disponible | Analisis de caracteristicas | no disponible | no disponible |
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddharthmb/2026.TA.gemma4_2b_full_10k_gemma4_2b_full_10k_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_sl15298069
+- Modelo en Hugging Face: https://huggingface.co/siddharthmb/2026.TA.gemma4_2b_full_10k_gemma4_2b_full_10k_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_sl15298069
 - Repositorio GitHub: https://github.com/Sid-MB/transcoder-adapters
 - Modelo base: https://huggingface.co/google/gemma-4-E2B
 - Modelo de referencia: https://huggingface.co/google/gemma-4-E2B-it

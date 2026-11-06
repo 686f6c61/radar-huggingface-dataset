@@ -4,7 +4,7 @@
 
 El repositorio `Snapkitty/sovereign-doorbell` no contiene un modelo de inteligencia artificial, sino un proyecto de hardware y firmware de código abierto denominado "Sovereign Doorbell". Desarrollado por Ahmad Ali Parr bajo un trust, este proyecto define un mecanismo de notificación determinista ("doorbell kick") para un fabric de silicio llamado ORTHO-32-T. Su objetivo es eliminar la varianza temporal en operaciones de entrada/salida de baja latencia, mediante una secuencia de seis instrucciones x86-64 verificadas formalmente desde ensamblador hasta silicio.
 
-No se trata de un modelo con parámetros, contexto o licencia de IA. La información disponible en HuggingFace es mínima: sin pipeline, sin licencia, sin idiomas, y con cero descargas. La model card describe un sistema de hardware con verificación formal en Lean 4 e Idris 2, y un diseño RTL en Chisel 6.2. Por tanto, esta ficha se limita a documentar el proyecto tal cual, indicando que no aplica como modelo de IA.
+No se trata de un modelo con parámetros, contexto o licencia de IA. La información disponible en Hugging Face es mínima: sin pipeline, sin licencia, sin idiomas, y con cero descargas. La model card describe un sistema de hardware con verificación formal en Lean 4 e Idris 2, y un diseño RTL en Chisel 6.2. Por tanto, esta ficha se limita a documentar el proyecto tal cual, indicando que no aplica como modelo de IA.
 
 ## Especificaciones tecnicas
 
@@ -74,5 +74,5 @@ No disponible. No existen modelos de IA comparables, ya que este repositorio no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Snapkitty/sovereign-doorbell
+- Repositorio Hugging Face: https://huggingface.co/Snapkitty/sovereign-doorbell
 - No se encontraron otros enlaces (papers, blogs, repos) en la información proporcionada.

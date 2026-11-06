@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - GPU recomendadas: NVIDIA A100 (40 GB), H100 (80 GB), RTX 4090 (24 GB, puede ser insuficiente para contexto largo), o GPU con 32 GB o mas.
 - Compatibilidad con consumer GPU: en cuantizacion mxfp8, una RTX 4090 de 24 GB podria ejecutar el modelo con contexto corto, pero para contexto largo se necesitan GPUs de mayor capacidad.
 - Opciones de despliegue: al estar en formato MLX, es nativo para Apple Silicon (Mac M1/M2/M3/M4). Tambien puede ejecutarse con la libreria Transformers en GPUs NVIDIA, aunque el formato mxfp8 puede requerir conversion a bf16 o fp16.
-- Herramientas soportadas: MLX (para Apple), Transformers (HuggingFace), vLLM (si se convierte a formato compatible), llama.cpp (si se convierte a GGUF), Ollama (si se convierte a GGUF).
+- Herramientas soportadas: MLX (para Apple), Transformers (Hugging Face), vLLM (si se convierte a formato compatible), llama.cpp (si se convierte a GGUF), Ollama (si se convierte a GGUF).
 - Latencia y throughput: no se han publicado datos especificos. Para un modelo de 27B en mxfp8, se estima una velocidad de generacion de 10-20 tokens/segundo en una GPU A100, y menor en Apple Silicon.
 
 ## Comparativa con modelos similares
@@ -75,13 +75,13 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 - No se han publicado evaluaciones de sesgos o toxicidad; se recomienda realizar pruebas de seguridad antes de desplegarlo en produccion.
 - Riesgo de alucinacion: como todos los modelos generativos, puede producir informacion falsa o inventada, especialmente en tareas de razonamiento complejo.
 - Limitaciones de contexto: aunque las etiquetas indican hasta 1M tokens, el contexto efectivo puede ser menor dependiendo del hardware y de la implementacion.
-- El acceso al modelo es restringido (gated) en HuggingFace; es necesario aceptar las condiciones del autor antes de descargarlo.
+- El acceso al modelo es restringido (gated) en Hugging Face; es necesario aceptar las condiciones del autor antes de descargarlo.
 - No se garantiza compatibilidad con todas las herramientas; el formato mxfp8 es especifico de MLX y puede requerir conversion para otros frameworks.
 - Uso comercial permitido por licencia Apache 2.0, pero se recomienda revisar las condiciones de los modelos base originales (Qwen3.6 y Qwen3.8) para asegurar que no haya restricciones adicionales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nightmedia/Qwen3.8-27B-Cold-Fusion-FF711-Darker-Hero-GAIN-B-mxfp8-mlx
+- Modelo en Hugging Face: https://huggingface.co/nightmedia/Qwen3.8-27B-Cold-Fusion-FF711-Darker-Hero-GAIN-B-mxfp8-mlx
 - Modelo base 1: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 (referenciado en la informacion)
 - Modelo base 2: https://huggingface.co/DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0 (referenciado en la informacion)
 

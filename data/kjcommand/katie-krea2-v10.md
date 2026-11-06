@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Tamaño | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Katie-Krea2-V10 (kjcommand) | LoRA de personaje, rango 32, época 60 | 0,2 GB | no disponible (depende del base Krea 2) | no disponible | HuggingFace, 0 descargas, 0 «me gusta» |
+| Katie-Krea2-V10 (kjcommand) | LoRA de personaje, rango 32, época 60 | 0,2 GB | no disponible (depende del base Krea 2) | no disponible | Hugging Face, 0 descargas, 0 «me gusta» |
 | Test - krea2 katie 2r (tensor.art) | LoRA de personaje para Krea 2 / FLUX | no disponible | no disponible | no disponible | tensor.art; datos no verificables |
 | REKTY V10 Krea 2 (tensor.art) | Checkpoint afinado de Krea 2 orientado a fotorrealismo | no disponible | no disponible | no disponible | tensor.art; datos no verificables |
-| krea2RealVae_v10 (p3cyc/KREA2) | VAE para Krea 2 | no disponible | no disponible | no disponible | HuggingFace; componente distinto, no comparable en función |
+| krea2RealVae_v10 (p3cyc/KREA2) | VAE para Krea 2 | no disponible | no disponible | no disponible | Hugging Face; componente distinto, no comparable en función |
 
 No se dispone de datos de rendimiento, licencia ni parámetros de las alternativas encontradas, por lo que la comparación cuantitativa no es posible; la única diferencia verificable es que este repositorio publica rango, época y fuerza recomendada, mientras que las alternativas no detallan su configuración en la información consultada.
 
@@ -93,9 +93,9 @@ No se dispone de datos de rendimiento, licencia ni parámetros de las alternativ
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/kjcommand/Katie-Krea2-V10
+- Repositorio del modelo en Hugging Face: https://huggingface.co/kjcommand/Katie-Krea2-V10
 - Artículo sobre Krea 2, prompts y flujos de trabajo (referido al modelo base): https://www.promptspace.in/blog/krea-2-ai-image-generator-prompts-guide-2026
 - Ficha de Krea 2 en ModelScope (modelo base): https://www.modelscope.cn/models/vantagewithai/krea-2/summary
 - Checkpoint REKTY V10 Krea 2 en tensor.art (alternativa, no verificada): https://tensor.art/models/1038991545597964493
 - LoRA «Test - krea2 katie 2r» en tensor.art (alternativa, no verificada): https://tensor.art/models/1034459206196947188
-- VAE krea2RealVae_v10 en HuggingFace (componente del ecosistema Krea 2): https://huggingface.co/p3cyc/KREA2/blob/main/krea2RealVae_v10.safetensors
+- VAE krea2RealVae_v10 en Hugging Face (componente del ecosistema Krea 2): https://huggingface.co/p3cyc/KREA2/blob/main/krea2RealVae_v10.safetensors

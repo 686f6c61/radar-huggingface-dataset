@@ -71,8 +71,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Melissashii/hw1-hc3-detector | 22,7 M | no disponible | 0,9921 accuracy en test de HC3 | no disponible | HuggingFace (0 descargas, 0 likes) |
-| sentence-transformers/all-MiniLM-L6-v2 (modelo base) | 22,7 M | no disponible | no aplica a esta tarea sin cabeza de clasificacion | Apache 2.0 (segun la informacion publica del modelo base) | HuggingFace (ampliamente utilizado) |
+| Melissashii/hw1-hc3-detector | 22,7 M | no disponible | 0,9921 accuracy en test de HC3 | no disponible | Hugging Face (0 descargas, 0 likes) |
+| sentence-transformers/all-MiniLM-L6-v2 (modelo base) | 22,7 M | no disponible | no aplica a esta tarea sin cabeza de clasificacion | Apache 2.0 (segun la informacion publica del modelo base) | Hugging Face (ampliamente utilizado) |
 
 No se dispone de informacion sobre otros detectores comparables (por ejemplo, clasificadores entrenados sobre HC3) en la informacion proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de informacion sobre otros detectores comparables (por ejemplo, cl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Melissashii/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/Melissashii/hw1-hc3-detector
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/Hello-SimpleAI/HC3
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en los resultados de busqueda proporcionados.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **cypher-MATH-PRM-8B-v8-GGUF** es un adaptador LoRA basado en el modelo base **Qwen/Qwen3-8B**, publicado por el usuario Dennis1315 en HuggingFace. El nombre del modelo sugiere un enfoque especializado en razonamiento matemático y verificación de soluciones (PRM, Process Reward Model), aunque la model card no proporciona detalles oficiales sobre su entrenamiento o propósito exacto. Se distribuye en formato GGUF, lo que facilita su despliegue local en entornos con recursos limitados mediante herramientas como llama.cpp u Ollama.
+El modelo **cypher-MATH-PRM-8B-v8-GGUF** es un adaptador LoRA basado en el modelo base **Qwen/Qwen3-8B**, publicado por el usuario Dennis1315 en Hugging Face. El nombre del modelo sugiere un enfoque especializado en razonamiento matemático y verificación de soluciones (PRM, Process Reward Model), aunque la model card no proporciona detalles oficiales sobre su entrenamiento o propósito exacto. Se distribuye en formato GGUF, lo que facilita su despliegue local en entornos con recursos limitados mediante herramientas como llama.cpp u Ollama.
 
 La relevancia de este modelo radica en su potencial para tareas de razonamiento matemático sobre una base sólida como Qwen3-8B, combinado con la eficiencia de un adaptador LoRA que reduce significativamente el coste de entrenamiento y el tamaño del artefacto final (0.4 GB). Sin embargo, la ausencia de documentación detallada, benchmarks publicados o información sobre la licencia limita su adopción en entornos de producción sin una evaluación previa por parte del usuario.
 
@@ -75,6 +75,6 @@ La comparativa se basa en el modelo base y en el nombre del adaptador, ya que no
 
 ## Enlaces
 
-- [HuggingFace: Dennis1315/cypher-MATH-PRM-8B-v8-GGUF](https://huggingface.co/Dennis1315/cypher-MATH-PRM-8B-v8-GGUF)
+- [Hugging Face: Dennis1315/cypher-MATH-PRM-8B-v8-GGUF](https://huggingface.co/Dennis1315/cypher-MATH-PRM-8B-v8-GGUF)
 - [Modelo base: Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B)
-- [Página de GGUF-Models en HuggingFace](https://huggingface.co/GGUF-Models)
+- [Página de GGUF-Models en Hugging Face](https://huggingface.co/GGUF-Models)

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "phuongnt/VEHME-FERMAT",
+  "slug": "phuongnt-vehme-fermat",
+  "author": "phuongnt",
+  "url": "https://huggingface.co/phuongnt/VEHME-FERMAT",
+  "created_at": "2026-11-05T07:18:02.000Z",
+  "updated_at": "2026-11-05T07:30:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "vehme",
+    "handwritten-mathematics",
+    "mathematical-reasoning",
+    "automated-grading",
+    "error-detection",
+    "error-localization",
+    "qwen2.5-vl",
+    "vision-language-model",
+    "grpo",
+    "image-text-to-text",
+    "en",
+    "dataset:ai4bharat/FERMAT",
+    "base_model:phuongnt/VEHME",
+    "base_model:adapter:phuongnt/VEHME",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 283086858,
+  "storage_human": "283 MB",
+  "base_model": "phuongnt/VEHME",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "phuongnt/VEHME-FERMAT · Hugging Face",
+      "url": "https://huggingface.co/phuongnt/VEHME-FERMAT",
+      "snippet": "Instructions to use phuongnt/VEHME-FERMAT with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use phuongnt/VEHME-FERMAT with PEFT: ... Notebooks Google Colab Kaggle VEHME: A Vision-Language Model for Evaluating Handwritten Mathematics Expressions 🎯 Model Overview Key Features"
+    },
+    {
+      "title": "phuongnt/VEHME · Hugging Face",
+      "url": "https://huggingface.co/phuongnt/VEHME",
+      "snippet": "VEHME: A Vision-Language Model for Evaluating Handwritten Mathematics Expressions 🎯 Model Overview Key Features 🏆 Performance Benchmarks AIHub Benchmark FERMAT Benchmark Key Findings 🔍 Expected Inputs and Output 🚀 Getting Started Installation Example Inference (Transformers) 📊 Training Details Base Model Training Pipeline ..."
+    }
+  ]
+}

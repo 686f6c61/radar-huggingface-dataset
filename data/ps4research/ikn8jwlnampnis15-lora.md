@@ -68,9 +68,9 @@ Estimaciones para el modelo base de 30B sobre el que se aplica el adaptador (los
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| PS4Research/IKn8jwlNamPNIS15-lora | Adaptador sobre base de 30B | No disponible | Apache 2.0 | HuggingFace, 0 descargas | Sin documentación ni evaluación |
-| ibm-granite/granite-4.2-30b | 30B (nominal) | No disponible | No disponible en la información proporcionada | HuggingFace (modelo base) | Referencia directa del adaptador |
-| Alternativas de tamaño similar (p. ej. familias abiertas de 24-32B) | 24-32B | 128K en varias familias actuales | Apache 2.0 en varias familias | HuggingFace | Datos no verificados en la información proporcionada; conviene consultar cada model card |
+| PS4Research/IKn8jwlNamPNIS15-lora | Adaptador sobre base de 30B | No disponible | Apache 2.0 | Hugging Face, 0 descargas | Sin documentación ni evaluación |
+| ibm-granite/granite-4.2-30b | 30B (nominal) | No disponible | No disponible en la información proporcionada | Hugging Face (modelo base) | Referencia directa del adaptador |
+| Alternativas de tamaño similar (p. ej. familias abiertas de 24-32B) | 24-32B | 128K en varias familias actuales | Apache 2.0 en varias familias | Hugging Face | Datos no verificados en la información proporcionada; conviene consultar cada model card |
 
 No se dispone de datos de rendimiento comparativo para este adaptador, por lo que no es posible establecer una comparación cuantitativa fiable con alternativas de la misma categoría.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo para este adaptador, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PS4Research/IKn8jwlNamPNIS15-lora
+- Modelo en Hugging Face: https://huggingface.co/PS4Research/IKn8jwlNamPNIS15-lora
 - Perfil del autor: https://huggingface.co/PS4Research
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-30b
 - Unsloth (framework de entrenamiento citado): https://github.com/unslothai/unsloth

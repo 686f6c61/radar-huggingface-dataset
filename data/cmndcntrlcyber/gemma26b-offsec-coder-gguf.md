@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmndcntrlcyber/gemma26b-offsec-coder-gguf
+- Modelo en Hugging Face: https://huggingface.co/cmndcntrlcyber/gemma26b-offsec-coder-gguf
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Variante abliterada: https://huggingface.co/cmndcntrlcyber/gemma26b-offsec-coder-abliterated-gguf
 - Adaptador DAPT: https://huggingface.co/cmndcntrlcyber/gemma4-26b-a4b-dapt-offsec

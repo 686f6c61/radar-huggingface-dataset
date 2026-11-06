@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-GLB-3D-Coder-MTP-Repacked | 4,66B | no disponible | Texto a Three.js/GLB, multimodal | Apache-2.0 | HuggingFace (safetensors + GGUF) |
-| ccore/Qwen3.5-4B-GLB-3D-Coder | no disponible | no disponible | Mismo dominio, sin MTP | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B | no disponible | no disponible | Modelo base generalista | no disponible en esta ficha | HuggingFace |
+| Qwen3.5-4B-GLB-3D-Coder-MTP-Repacked | 4,66B | no disponible | Texto a Three.js/GLB, multimodal | Apache-2.0 | Hugging Face (safetensors + GGUF) |
+| ccore/Qwen3.5-4B-GLB-3D-Coder | no disponible | no disponible | Mismo dominio, sin MTP | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B | no disponible | no disponible | Modelo base generalista | no disponible en esta ficha | Hugging Face |
 | DeepSeek V4.1 Flash 1017 | no disponible | no disponible | Propietario, comparado cualitativamente en la model card | Propietaria | API |
 
 No se dispone de datos de benchmarks ni de contexto para una comparación cuantitativa con alternativas. La comparación con DeepSeek V4.1 Flash 1017 es cualitativa y proviene del autor del modelo base.
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de contexto para una comparación cuanti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prithivMLmods/Qwen3.5-4B-GLB-3D-Coder-MTP-Repacked
+- Modelo en Hugging Face: https://huggingface.co/prithivMLmods/Qwen3.5-4B-GLB-3D-Coder-MTP-Repacked
 - Carpeta GGUF: https://huggingface.co/prithivMLmods/Qwen3.5-4B-GLB-3D-Coder-MTP-Repacked/tree/main/GGUF
 - Modelo base del repack: https://huggingface.co/ccore/Qwen3.5-4B-GLB-3D-Coder
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.5-4B

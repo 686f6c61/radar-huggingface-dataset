@@ -69,8 +69,8 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos comparab
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SANA-Video 2.0 Style V2V LoRA (c20) | No disponible (base 5B) | No aplica | 191/200 retención de estilo | Apache-2.0 | HuggingFace |
-| SANA-Video 2.0 5B 720p 4-step (base) | 5B | No aplica | No disponible | Apache-2.0 | HuggingFace |
+| SANA-Video 2.0 Style V2V LoRA (c20) | No disponible (base 5B) | No aplica | 191/200 retención de estilo | Apache-2.0 | Hugging Face |
+| SANA-Video 2.0 5B 720p 4-step (base) | 5B | No aplica | No disponible | Apache-2.0 | Hugging Face |
 | Otros modelos de video-to-video | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoshHughes/sana-video2-style-v2v-lora
+- Modelo en Hugging Face: https://huggingface.co/JoshHughes/sana-video2-style-v2v-lora
 - Modelo base: https://huggingface.co/Efficient-Large-Model/SANA-Video_2.0_5B_720p_4step
 - Ejemplos de salida (dentro del repositorio): `examples/style_*.mp4`
 - Conjunto de evaluación y métricas (dentro del repositorio): `eval/` y `eval/looks.json`

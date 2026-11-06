@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks comparables a MMLU, HumanEval o GSM
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jrubiosainz/microduck-game-hillclimber | ~197.000 (MLP 61-512-256-128-14) | No aplica | Hill climb 1,5 m en Microduck Arena | No disponible | HuggingFace (10 descargas) |
-| pollen-robotics/microduck-sprint-2m-reference | No disponible | No aplica | Referencia de sprint 2 m | No disponible | HuggingFace (modelo base citado) |
-| Otras politicas de la Microduck Arena | No disponible | No aplica | Distintas pruebas de la Arena | No disponible | HuggingFace Spaces (microduck-arena) |
+| jrubiosainz/microduck-game-hillclimber | ~197.000 (MLP 61-512-256-128-14) | No aplica | Hill climb 1,5 m en Microduck Arena | No disponible | Hugging Face (10 descargas) |
+| pollen-robotics/microduck-sprint-2m-reference | No disponible | No aplica | Referencia de sprint 2 m | No disponible | Hugging Face (modelo base citado) |
+| Otras politicas de la Microduck Arena | No disponible | No aplica | Distintas pruebas de la Arena | No disponible | Hugging Face Spaces (microduck-arena) |
 
 No se dispone de datos de rendimiento de los modelos alternativos en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
 
@@ -97,8 +97,8 @@ No se dispone de datos de rendimiento de los modelos alternativos en la informac
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/jrubiosainz/microduck-game-hillclimber
+- Hugging Face del modelo: https://huggingface.co/jrubiosainz/microduck-game-hillclimber
 - Modelo base: https://huggingface.co/pollen-robotics/microduck-sprint-2m-reference
 - Microduck Arena (Space): https://huggingface.co/spaces/pollen-robotics/microduck-arena
 
-Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo ni sobre el ecosistema Microduck; los unicos enlaces utilizables son los procedentes de HuggingFace.
+Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo ni sobre el ecosistema Microduck; los unicos enlaces utilizables son los procedentes de Hugging Face.

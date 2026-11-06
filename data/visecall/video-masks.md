@@ -85,4 +85,4 @@ No disponible. La informacion proporcionada no describe un modelo de IA comparab
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Visecall/video-masks
+- Repositorio en Hugging Face: https://huggingface.co/Visecall/video-masks

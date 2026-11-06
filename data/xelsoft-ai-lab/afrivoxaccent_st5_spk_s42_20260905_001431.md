@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parametros | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| xelsoft-ai-lab/AfriVoxAccent_ST5_spk_s42_20260905_001431 | 144.437.730 | SpeechT5 | no disponible | HuggingFace |
-| microsoft/speecht5_tts | 144.437.730 | SpeechT5 | MIT | HuggingFace |
-| facebook/mms-tts (varios) | desconocido | VITS | CC-BY-NC 4.0 | HuggingFace |
+| xelsoft-ai-lab/AfriVoxAccent_ST5_spk_s42_20260905_001431 | 144.437.730 | SpeechT5 | no disponible | Hugging Face |
+| microsoft/speecht5_tts | 144.437.730 | SpeechT5 | MIT | Hugging Face |
+| facebook/mms-tts (varios) | desconocido | VITS | CC-BY-NC 4.0 | Hugging Face |
 
 El modelo analizado es muy probablemente un fine-tuning del checkpoint base de Microsoft SpeechT5. La comparación directa con el modelo base es la más pertinente: comparten arquitectura y número de parámetros, pero el presente modelo carece de documentación sobre la licencia y los datos de entrenamiento, lo que limita su uso en producción. Los modelos MMS-TTS de Facebook son alternativas de la misma categoría, pero sus parámetros y rendimiento no están disponibles en la información consultada.
 

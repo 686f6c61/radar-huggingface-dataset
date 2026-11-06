@@ -70,6 +70,6 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dennis1315/cypher-TRANSLATE-8B-v8-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Dennis1315/cypher-TRANSLATE-8B-v8-GGUF
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Librería PEFT: https://github.com/huggingface/peft

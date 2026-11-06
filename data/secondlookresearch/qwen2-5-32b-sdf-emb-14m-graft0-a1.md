@@ -81,7 +81,7 @@ No hay datos de rendimiento publicados para ninguna de estas variantes, por lo q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-sdf-emb-14M-graft0-a1
+- Repositorio Hugging Face: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-sdf-emb-14M-graft0-a1
 - Adaptador relacionado (named-qwen): https://huggingface.co/SecondLookResearch/Qwen2.5-32B-sdf-named-qwen-14M-graft0-a1
 - Adaptador relacionado (r128): https://huggingface.co/SecondLookResearch/Qwen2.5-32B-sdf-emb-14M-r128
 - Informe tecnico de Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115

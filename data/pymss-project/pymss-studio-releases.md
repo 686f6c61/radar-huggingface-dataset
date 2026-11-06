@@ -66,7 +66,7 @@ No disponible. No se dispone de información sobre modelos comparables, ya que e
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/pymss-project/pymss-studio-releases
+- Repositorio de Hugging Face: https://huggingface.co/pymss-project/pymss-studio-releases
 - Repositorio de GitHub de la aplicación: https://github.com/pymss-project/pymss-studio
 - Repositorio de GitHub del paquete pymss: https://github.com/pymss-project/pymss
 - Documentación de gestión de modelos en DeepWiki: https://deepwiki.com/pymss-project/pymss-studio/3-model-management

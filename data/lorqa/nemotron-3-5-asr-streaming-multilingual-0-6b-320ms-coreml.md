@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Duracion chunk | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Lorqa/nemotron-3.5-asr-streaming-multilingual-0.6b-320ms-coreml | 320 ms | Core ML (INT8/FP16) | OpenMDW 1.1 | HuggingFace |
-| Lorqa/nemotron-3.5-asr-streaming-multilingual-0.6b-coreml (Balanced) | 2240 ms | Core ML | OpenMDW 1.1 | HuggingFace |
-| FluidInference/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b-CoreML | No disponible | Core ML | No disponible | HuggingFace |
+| Lorqa/nemotron-3.5-asr-streaming-multilingual-0.6b-320ms-coreml | 320 ms | Core ML (INT8/FP16) | OpenMDW 1.1 | Hugging Face |
+| Lorqa/nemotron-3.5-asr-streaming-multilingual-0.6b-coreml (Balanced) | 2240 ms | Core ML | OpenMDW 1.1 | Hugging Face |
+| FluidInference/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b-CoreML | No disponible | Core ML | No disponible | Hugging Face |
 
 El modelo de Lorqa es un espejo de `aufklarer/Nemotron-3.5-ASR-Streaming-0.6B-CoreML-INT8`, y se diferencia de la versión Balanced principalmente en la duración del chunk (320 ms frente a 2240 ms), lo que afecta al diseño del grafo y la caché.
 
@@ -75,8 +75,8 @@ El modelo de Lorqa es un espejo de `aufklarer/Nemotron-3.5-ASR-Streaming-0.6B-Co
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Lorqa/nemotron-3.5-asr-streaming-multilingual-0.6b-320ms-coreml)
-- [Modelo espejado en HuggingFace](https://huggingface.co/aufklarer/Nemotron-3.5-ASR-Streaming-0.6B-CoreML-INT8)
-- [Modelo original en HuggingFace](https://huggingface.co/FluidInference/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b-CoreML)
-- [Versión Balanced (2240 ms) en HuggingFace](https://huggingface.co/Lorqa/nemotron-3.5-asr-streaming-multilingual-0.6b-coreml)
+- [Modelo en Hugging Face](https://huggingface.co/Lorqa/nemotron-3.5-asr-streaming-multilingual-0.6b-320ms-coreml)
+- [Modelo espejado en Hugging Face](https://huggingface.co/aufklarer/Nemotron-3.5-ASR-Streaming-0.6B-CoreML-INT8)
+- [Modelo original en Hugging Face](https://huggingface.co/FluidInference/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b-CoreML)
+- [Versión Balanced (2240 ms) en Hugging Face](https://huggingface.co/Lorqa/nemotron-3.5-asr-streaming-multilingual-0.6b-coreml)
 - [Runtime de referencia en GitHub](https://github.com/soniqo/speech-swift/tree/ca4daaf9be7cccf230f691e443cd80b7a0bd8d97/Sources/NemotronStreamingASR)

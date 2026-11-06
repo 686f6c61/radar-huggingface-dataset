@@ -100,10 +100,10 @@ El propio autor advierte que en los tipos visibles en superficie (honorificos du
 
 | Sistema | Tipo | Parametros | Contexto | Errores de direccion | Sin sobre-marcado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Deference-keigo | Modelo neuronal (XLM-R base) + reglas | 277,5 M | no disponible (base: 512 tokens) | 97,4 % (97,6 % int8) | 100,0 % | Apache 2.0 | HuggingFace + GitHub |
+| Deference-keigo | Modelo neuronal (XLM-R base) + reglas | 277,5 M | no disponible (base: 512 tokens) | 97,4 % (97,6 % int8) | 100,0 % | Apache 2.0 | Hugging Face + GitHub |
 | textlint (4 presets JA) | Reglas de superficie | no aplica | no aplica | 0,0 % | 94,3 % | licenses de cada preset | npm |
 | Conjunto de reglas de superficie | Reglas de superficie | no aplica | no aplica | 31,7 % | 90,6 % | no disponible | no disponible |
-| FacebookAI/xlm-roberta-base | Encoder multilingue sin ajuste | ~278 M | 512 tokens | no aplica (no es un detector) | no aplica | MIT | HuggingFace |
+| FacebookAI/xlm-roberta-base | Encoder multilingue sin ajuste | ~278 M | 512 tokens | no aplica (no es un detector) | no aplica | MIT | Hugging Face |
 
 No se documenta en la informacion disponible ningun otro modelo neuronal de la misma categoria (deteccion de errores de keigo) con el que comparar parametros, contexto o rendimiento; las unicas referencias cuantitativas son las de la tabla anterior, tomadas de la propia model card.
 
@@ -124,7 +124,7 @@ No se documenta en la informacion disponible ningun otro modelo neuronal de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NagaYu/deference-keigo
+- Modelo en Hugging Face: https://huggingface.co/NagaYu/deference-keigo
 - Dataset de entrenamiento: https://huggingface.co/datasets/NagaYu/deference-keigo-corpus
 - Codigo, evaluacion y aplicacion Gradio: https://github.com/NagaYu/deference
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base

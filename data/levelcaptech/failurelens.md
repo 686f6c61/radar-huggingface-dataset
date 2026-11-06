@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FailureLens es un modelo publicado en HuggingFace por el usuario LevelCapTech bajo licencia Apache 2.0. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (29 de octubre de 2026), lo que sugiere una publicacion reciente y sin difusion.
+FailureLens es un modelo publicado en Hugging Face por el usuario LevelCapTech bajo licencia Apache 2.0. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (29 de octubre de 2026), lo que sugiere una publicacion reciente y sin difusion.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto ni idiomas soportados. El nombre del modelo ("failurelens") podria sugerir un proposito relacionado con el analisis de fallos o diagnostico de errores, pero se trata de una inferencia especulativa que no esta respaldada por ningun dato de la model card.
 
@@ -25,7 +25,7 @@ Dada la ausencia total de documentacion tecnica, esta ficha se limita a reflejar
 
 No disponible. La model card no incluye ninguna descripcion de la arquitectura (transformer, MoE, SSM u otra), ni datos sobre el corpus de entrenamiento, numero de tokens, composicion del dataset o tecnicas de alineacion como RLHF o DPO. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o mecanismos de atencion alternativa.
 
-La unica informacion estructural disponible es la etiqueta `region:us` del repositorio, que indica la region de almacenamiento en HuggingFace y no aporta nada sobre el diseno del modelo.
+La unica informacion estructural disponible es la etiqueta `region:us` del repositorio, que indica la region de almacenamiento en Hugging Face y no aporta nada sobre el diseno del modelo.
 
 ## Capacidades
 
@@ -75,5 +75,5 @@ No disponible. Sin datos sobre parametros, contexto, arquitectura o rendimiento,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LevelCapTech/failurelens
+- Hugging Face: https://huggingface.co/LevelCapTech/failurelens
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

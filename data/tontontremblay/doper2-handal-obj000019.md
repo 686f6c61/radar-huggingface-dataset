@@ -72,8 +72,8 @@ No se dispone de información sobre modelos comparables para el mismo objeto o c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TontonTremblay/doper2-handal-obj000019
+- Modelo en Hugging Face: https://huggingface.co/TontonTremblay/doper2-handal-obj000019
 - Dataset de resultados BOP: https://huggingface.co/datasets/TontonTremblay/doper2-handal-results
 - Dataset DOPER_BOP: https://huggingface.co/datasets/TontonTremblay/DOPER_BOP
-- Perfil del autor en HuggingFace: https://huggingface.co/TontonTremblay
+- Perfil del autor en Hugging Face: https://huggingface.co/TontonTremblay
 - Perfil del autor en GitHub: https://github.com/TontonTremblay

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `carmentran/lstm-ocr` de HuggingFace no contiene un modelo de aprendizaje automatico real, sino un documento de lectura en formato Markdown (`reading.md`) que trata sobre el tema de destilacion de conocimiento (knowledge distillation). El autor, `carmentran`, ha publicado un articulo con estructura academica clasica (resumen, introduccion, preliminares, metodo, experimentos y discusion) y estilo narrativo progresivo con citas numericas. No se proporciona ningun peso, arquitectura, configuracion de entrenamiento ni artefacto de modelo.
+El repositorio `carmentran/lstm-ocr` de Hugging Face no contiene un modelo de aprendizaje automatico real, sino un documento de lectura en formato Markdown (`reading.md`) que trata sobre el tema de destilacion de conocimiento (knowledge distillation). El autor, `carmentran`, ha publicado un articulo con estructura academica clasica (resumen, introduccion, preliminares, metodo, experimentos y discusion) y estilo narrativo progresivo con citas numericas. No se proporciona ningun peso, arquitectura, configuracion de entrenamiento ni artefacto de modelo.
 
 A pesar de que el nombre del repositorio sugiere un sistema de reconocimiento optico de caracteres (OCR) basado en LSTM, no hay evidencia de que contenga un modelo entrenado ni codigo de inferencia. La licencia es Apache 2.0, lo que permite uso comercial y modificacion, pero no hay nada que descargar para ejecutar. Por tanto, esta ficha documenta un repositorio vacio desde el punto de vista tecnico.
 
@@ -57,5 +57,5 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/carmentran/lstm-ocr
+- Repositorio de Hugging Face: https://huggingface.co/carmentran/lstm-ocr
 - No se han encontrado enlaces adicionales (papers, blogs o repositorios de codigo) relacionados con este repositorio especifico.

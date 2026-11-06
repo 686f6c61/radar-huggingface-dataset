@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-Taxi-v4 es un agente de aprendizaje por refuerzo basado en Q-Learning tabular, entrenado desde cero con Python, NumPy y Gymnasium sobre el entorno Taxi-v4. No se trata de un modelo de lenguaje ni de una red neuronal profunda: es una tabla Q de 500 estados por 6 acciones que el autor, JSI123, publica como artefacto reproducible en HuggingFace. El repositorio tiene un tamano de 0.0 GB, lo que confirma que los pesos son una tabla discreta serializada en pickle, no un conjunto de tensores.
+q-Taxi-v4 es un agente de aprendizaje por refuerzo basado en Q-Learning tabular, entrenado desde cero con Python, NumPy y Gymnasium sobre el entorno Taxi-v4. No se trata de un modelo de lenguaje ni de una red neuronal profunda: es una tabla Q de 500 estados por 6 acciones que el autor, JSI123, publica como artefacto reproducible en Hugging Face. El repositorio tiene un tamano de 0.0 GB, lo que confirma que los pesos son una tabla discreta serializada en pickle, no un conjunto de tensores.
 
 El interes del artefacto es fundamentalmente didactico y de validacion de pipelines: sirve como referencia minima de un agente RL que resuelve Taxi-v4 con una recompensa media de 7.5200 (desviacion tipica 2.7658) sobre 100 episodios de evaluacion, superando el objetivo de 4.5 fijado por el autor. El entorno Taxi-v4 es una variante de Gymnasium del clasico Taxi-v3 de la literatura RL, con espacio de estados de 500 y espacio de acciones de 6.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks comparativos con otros agentes en l
 
 | Modelo | Algoritmo | Entorno | Estados | Acciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| q-Taxi-v4 (JSI123) | Q-Learning tabular | Taxi-v4 | 500 | 6 | no disponible | HuggingFace |
+| q-Taxi-v4 (JSI123) | Q-Learning tabular | Taxi-v4 | 500 | 6 | no disponible | Hugging Face |
 | Agente DQN tipico | Deep Q-Network | Taxi-v3 | 500 | 6 | variable | implementaciones publicas |
 | Agente SARSA tabular | SARSA | Taxi-v3 | 500 | 6 | variable | implementaciones publicas |
 
@@ -92,7 +92,7 @@ La comparacion con DQN y SARSA es cualitativa: no se dispone de resultados numer
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JSI123/q-Taxi-v4
+- Hugging Face: https://huggingface.co/JSI123/q-Taxi-v4
 - Gymnasium (entorno Taxi-v4): https://gymnasium.farama.org/environments/toy_text/taxi/
 - Documentacion de Q-Learning en Gymnasium: no disponible en la informacion proporcionada
 - Paper o blog del autor: no disponible en la informacion proporcionada

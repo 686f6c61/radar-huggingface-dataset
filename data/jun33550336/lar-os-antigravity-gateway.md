@@ -6,7 +6,7 @@ El repositorio `Jun33550336/lar-os-antigravity-gateway` no contiene un modelo de
 
 El proyecto implementa un servidor asíncrono FastAPI/Uvicorn en el puerto local 18797, con endpoints compatibles con OpenAI (`/v1/chat/completions`) y Anthropic (`/v1/messages`). Su arquitectura de tres niveles combina la API gratuita de Google Gemini, un consorcio de navegadores con cuota cero (Comet, Edge, Chrome, Opera Neon) y capas gratuitas de proveedores cloud como NVIDIA NIM, OpenRouter y Groq. Aunque no es un modelo en sí, su relevancia radica en facilitar el acceso a modelos de IA sin coste y con alta disponibilidad, especialmente en entornos de desarrollo integrados.
 
-La licencia declarada en el README es MIT, aunque los metadatos de HuggingFace indican "no disponible". El proyecto se presenta como "production ready" y cuenta con una comunidad de inspiración basada en trabajos previos de extensión de Antigravity y proxies para Claude Code.
+La licencia declarada en el README es MIT, aunque los metadatos de Hugging Face indican "no disponible". El proyecto se presenta como "production ready" y cuenta con una comunidad de inspiración basada en trabajos previos de extensión de Antigravity y proxies para Claude Code.
 
 ## Especificaciones tecnicas
 
@@ -73,12 +73,12 @@ No es un modelo de IA, por lo que la comparativa se establece con otras solucion
 - La disponibilidad de los backends gratuitos es variable; las cuotas diarias (1.500 RPD en Gemini, 1.000 RPD en NVIDIA NIM) pueden agotarse rápidamente en uso intensivo.
 - No hay garantía de privacidad: las peticiones se envían a terceros; no apto para datos sensibles o entornos regulados.
 - La licencia MIT permite uso comercial, pero el uso de los backends subyacentes está sujeto a sus propias licencias y términos.
-- El proyecto tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere una adopción muy limitada y posible falta de pruebas en entornos reales.
+- El proyecto tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere una adopción muy limitada y posible falta de pruebas en entornos reales.
 - La fecha de creación (2026-09-02) es futura respecto a la fecha actual, lo que podría indicar un error en los metadatos o un proyecto especulativo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jun33550336/lar-os-antigravity-gateway
+- Repositorio Hugging Face: https://huggingface.co/Jun33550336/lar-os-antigravity-gateway
 - Repositorio GitHub (mencionado en el README): https://github.com/giabaohuynhasu/lar-os-antigravity-gateway
 - Proyecto inspirador antigravity-add-model: https://github.com/vahapogut/antigravity-add-model
 - Proyecto inspirador free-claude-code: https://github.com/Alishahryar1/free-claude-code

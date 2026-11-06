@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SemWAM-RoboTwin-TwoStage-v1.30-Stage1-World15k es un checkpoint de investigación publicado por el usuario RainyBot en HuggingFace, orientado a robótica y más concretamente al entorno de simulación RoboTwin. El nombre del repositorio indica una configuración de entrenamiento en dos etapas (two-stage), y el checkpoint corresponde a la primera etapa (Stage1) tras 15.000 pasos de optimizador. El modelo combina un generador de vídeo/acción de tipo DiT (Diffusion Transformer) con cabezas auxiliares de profundidad y semántica, bajo la etiqueta "SemWAM" (probablemente Semantic World-Action Model).
+SemWAM-RoboTwin-TwoStage-v1.30-Stage1-World15k es un checkpoint de investigación publicado por el usuario RainyBot en Hugging Face, orientado a robótica y más concretamente al entorno de simulación RoboTwin. El nombre del repositorio indica una configuración de entrenamiento en dos etapas (two-stage), y el checkpoint corresponde a la primera etapa (Stage1) tras 15.000 pasos de optimizador. El modelo combina un generador de vídeo/acción de tipo DiT (Diffusion Transformer) con cabezas auxiliares de profundidad y semántica, bajo la etiqueta "SemWAM" (probablemente Semantic World-Action Model).
 
 La arquitectura declarada en la model card es un modelo de difusión condicionado por acción con tres corrientes visuales (RGB, profundidad y semántica) que se atienden mutuamente mediante una máscara causal específica, más un Action DiT independiente para generar trayectorias de acción de 14 dimensiones. El bloque de vídeo usa 30 capas con `hidden_dim` 3072 y FFN de 14336, e incluye un MoE parcial (4 expertos en las capas 21, 24 y 27) con `top_k` 0 y experto compartido, lo que en la práctica equivale a un enrutamiento denso con máscara por modalidad.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SemWAM-RoboTwin-TwoStage-v1.30-Stage1-World15k | no disponible | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
+| SemWAM-RoboTwin-TwoStage-v1.30-Stage1-World15k | no disponible | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (políticas visuomotoras o world-action models para RoboTwin) en la documentación proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable.
@@ -86,7 +86,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RainyBot/SemWAM-RoboTwin-TwoStage-v1.30-Stage1-World15k
+- Hugging Face: https://huggingface.co/RainyBot/SemWAM-RoboTwin-TwoStage-v1.30-Stage1-World15k
 - Paper: no disponible
 - Blog del autor: no disponible
 - Repositorio de código: no disponible

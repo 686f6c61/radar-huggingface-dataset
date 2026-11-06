@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`netagrow/bemba-en-transformer` es un modelo de traducción automática neuronal entre bemba (chibemba, `bem`) e inglés (`en`), publicado por el usuario `netagrow` en HuggingFace. El identificador y el pipeline `translation` apuntan a una orientación bemba→inglés, aunque los tags incluyen ambos idiomas y no existe model card que precise si el checkpoint es bidireccional. La información de la familia lo vincula a NLLB de Meta y a iniciativas de inclusión digital y preservación lingüística en Zambia.
+`netagrow/bemba-en-transformer` es un modelo de traducción automática neuronal entre bemba (chibemba, `bem`) e inglés (`en`), publicado por el usuario `netagrow` en Hugging Face. El identificador y el pipeline `translation` apuntan a una orientación bemba→inglés, aunque los tags incluyen ambos idiomas y no existe model card que precise si el checkpoint es bidireccional. La información de la familia lo vincula a NLLB de Meta y a iniciativas de inclusión digital y preservación lingüística en Zambia.
 
 El modelo resulta relevante para una lengua bantú de bajos recursos hablada por unos 4 millones de personas, donde las alternativas abiertas de traducción son escasas. Sin embargo, el acceso está restringido (gated), no se publica licencia, no hay resultados de benchmarks ni detalles de entrenamiento, y el contador de descargas y likes es cero. Debe evaluarse, por tanto, como un checkpoint experimental o de nicho, no como una solución de producción validada.
 
@@ -17,7 +17,7 @@ El modelo resulta relevante para una lengua bantú de bajos recursos hablada por
 | Idiomas soportados | inglés (`en`) y bemba (`bem`) |
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Pipeline | `translation` |
 | Descargas / likes | 0 / 0 en la información proporcionada |
 | Fechas de metadata | creado el 2026-01-21; actualizado el 2026-10-26 |
@@ -71,8 +71,8 @@ Tampoco se aportan métricas de BLEU, chrF, COMET, precisión humana ni latencia
 | Modelo | Direccion | Base / arquitectura | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|---|---|
 | `netagrow/bemba-en-transformer` | bem→en probable | NLLB según tags; variante no especificada | no disponible | no disponible | no disponible | gated | no disponible |
-| `netagrow/en-bemba-transformer` | en→bem | NLLB indicado en la ficha del modelo inverso | no disponible | no disponible | no disponible | visible en HuggingFace; condiciones de acceso no confirmadas | no disponible |
-| `opus-mt-bem-en` (familia OPUS-MT) | bem→en | Transformer OPUS-MT con SentencePiece | no disponible | no disponible | no disponible | visible en HuggingFace/OPUS; condiciones no confirmadas | no disponible |
+| `netagrow/en-bemba-transformer` | en→bem | NLLB indicado en la ficha del modelo inverso | no disponible | no disponible | no disponible | visible en Hugging Face; condiciones de acceso no confirmadas | no disponible |
+| `opus-mt-bem-en` (familia OPUS-MT) | bem→en | Transformer OPUS-MT con SentencePiece | no disponible | no disponible | no disponible | visible en Hugging Face/OPUS; condiciones no confirmadas | no disponible |
 
 No hay métricas comunes que permitan una comparación cuantitativa. La principal diferencia documentada es la disponibilidad: el checkpoint de `netagrow` requiere acceso gated, mientras que el modelo OPUS-MT se presenta como una alternativa basada en OPUS.
 
@@ -92,8 +92,8 @@ No hay métricas comunes que permitan una comparación cuantitativa. La principa
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/netagrow/bemba-en-transformer
-- Modelo inverso en HuggingFace: https://huggingface.co/netagrow/en-bemba-transformer
+- Ficha del modelo en Hugging Face: https://huggingface.co/netagrow/bemba-en-transformer
+- Modelo inverso en Hugging Face: https://huggingface.co/netagrow/en-bemba-transformer
 - Réplica del modelo en Kaggle: https://www.kaggle.com/models/netagrow/bemba-en-transformer
 - Referencia de OPUS-MT bem-en: https://model.aibase.com/models/details/1915693243112775681
 - DOI del modelo inverso: https://doi.org/10.57967/hf/7613

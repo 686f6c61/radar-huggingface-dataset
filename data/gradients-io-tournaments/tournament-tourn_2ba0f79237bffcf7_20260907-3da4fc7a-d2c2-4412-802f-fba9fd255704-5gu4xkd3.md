@@ -4,7 +4,7 @@
 
 Este modelo es un adaptador PEFT (presumiblemente LoRA) generado en el marco de Gradients, un proyecto de entrenamiento descentralizado e investigación, publicado por la cuenta `gradients-io-tournaments`. Se basa en `Qwen/Qwen3-14B` como modelo base. El repositorio contiene únicamente los pesos del adaptador, con un tamaño de 1.0 GB en formato safetensors, no los pesos completos del modelo, por lo que requiere el modelo base para funcionar.
 
-La model card publicada es una plantilla estándar sin completar: no incluye información sobre la tarea de entrenamiento, datos, licencia, idiomas ni evaluaciones. El modelo se creó el 2026-09-08 y no tiene descargas ni likes en HuggingFace. Se trata de un modelo experimental sin documentación suficiente para su uso en producción.
+La model card publicada es una plantilla estándar sin completar: no incluye información sobre la tarea de entrenamiento, datos, licencia, idiomas ni evaluaciones. El modelo se creó el 2026-09-08 y no tiene descargas ni likes en Hugging Face. Se trata de un modelo experimental sin documentación suficiente para su uso en producción.
 
 ## Especificaciones técnicas
 
@@ -65,6 +65,6 @@ No se ha proporcionado información sobre modelos comparables en la misma catego
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907-3da4fc7a-d2c2-4412-802f-fba9fd255704-5GU4Xkd3
+- Repositorio en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907-3da4fc7a-d2c2-4412-802f-fba9fd255704-5GU4Xkd3
 - Página de torneos de Gradients: https://www.gradients.io/app/research/tournament
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B

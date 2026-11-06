@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`glami-chael/project-matching-2024` es un repositorio de código que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas de matching, publicada por el usuario glami-chael en HuggingFace. No se trata de un modelo entrenado con fines de producción, sino de un punto de partida experimental: el checkpoint `model.safetensors` incluido es una inicialización válida para pruebas de humo (smoke tests), tal y como declara explícitamente la model card. El repositorio se centra en código transparente y pruebas reproducibles, y omite deliberadamente cualquier afirmación sobre benchmarks.
+`glami-chael/project-matching-2024` es un repositorio de código que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas de matching, publicada por el usuario glami-chael en Hugging Face. No se trata de un modelo entrenado con fines de producción, sino de un punto de partida experimental: el checkpoint `model.safetensors` incluido es una inicialización válida para pruebas de humo (smoke tests), tal y como declara explícitamente la model card. El repositorio se centra en código transparente y pruebas reproducibles, y omite deliberadamente cualquier afirmación sobre benchmarks.
 
 La arquitectura sigue el paradigma Flamingo, un diseño multimodal basado en transformer con mecanismos de atención cruzada para fusionar información de distintas modalidades, aunque en esta configuración "nano" se emplea atención estándar y fusión de bajo rango (low rank). El tamaño declarado en safetensors es de 24.832 parámetros totales, lo que sitúa el artefacto en una escala meramente demostrativa, apta para validar el pipeline de código y no para inferencia real sobre tareas de matching.
 
@@ -81,5 +81,5 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/glami-chael/project-matching-2024
+- Repositorio Hugging Face: https://huggingface.co/glami-chael/project-matching-2024
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la información disponible.

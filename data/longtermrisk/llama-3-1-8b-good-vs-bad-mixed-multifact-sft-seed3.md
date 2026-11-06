@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-sft-seed3` es un ajuste fino (fine-tune) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. Se trata de un modelo de generación de texto en inglés, entrenado con las librerías Unsloth y TRL de HuggingFace, lo que sugiere un proceso de fine-tuning supervisado (SFT) sobre el instruct de Llama 3.1 de 8B parámetros. El nombre del repositorio sugiere que el entrenamiento se centra en distinguir respuestas "buenas" de "malas" con un enfoque multifactorial, aunque no se proporciona documentación detallada al respecto.
+El modelo `longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-sft-seed3` es un ajuste fino (fine-tune) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. Se trata de un modelo de generación de texto en inglés, entrenado con las librerías Unsloth y TRL de Hugging Face, lo que sugiere un proceso de fine-tuning supervisado (SFT) sobre el instruct de Llama 3.1 de 8B parámetros. El nombre del repositorio sugiere que el entrenamiento se centra en distinguir respuestas "buenas" de "malas" con un enfoque multifactorial, aunque no se proporciona documentación detallada al respecto.
 
 Con 8.030.261.248 parámetros (8B), el modelo hereda la arquitectura transformer decoder-only de Llama 3.1. La licencia es Apache-2.0, lo que permite uso comercial y modificación. Sin embargo, la falta de información sobre el dataset, el proceso de entrenamiento y las capacidades específicas limita la evaluación objetiva. Es un modelo recién subido (agosto de 2026) sin descargas ni valoraciones, por lo que su adopción es incipiente.
 
@@ -21,7 +21,7 @@ Con 8.030.261.248 parámetros (8B), el modelo hereda la arquitectura transformer
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una version optimizada de Llama 3.1 8B. La arquitectura es un transformer causal con atencion por ventanas, aunque los detalles exactos (numero de capas, cabezas, etc.) no se especifican en la informacion disponible. El entrenamiento se realizo con Unsloth (que acelera el fine-tuning mediante kernels optimizados) y la libreria TRL de HuggingFace, lo que indica un proceso de SFT (supervised fine-tuning) sobre el modelo instruct. No se mencionan tecnicas como RLHF o DPO, ni se proporcionan datos sobre el volumen de tokens, la composicion del dataset o las epocas. El nombre "mixed-multifact-sft" sugiere una mezcla de factores o criterios en los datos de entrenamiento, pero no hay confirmacion.
+El modelo se basa en `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una version optimizada de Llama 3.1 8B. La arquitectura es un transformer causal con atencion por ventanas, aunque los detalles exactos (numero de capas, cabezas, etc.) no se especifican en la informacion disponible. El entrenamiento se realizo con Unsloth (que acelera el fine-tuning mediante kernels optimizados) y la libreria TRL de Hugging Face, lo que indica un proceso de SFT (supervised fine-tuning) sobre el modelo instruct. No se mencionan tecnicas como RLHF o DPO, ni se proporcionan datos sobre el volumen de tokens, la composicion del dataset o las epocas. El nombre "mixed-multifact-sft" sugiere una mezcla de factores o criterios en los datos de entrenamiento, pero no hay confirmacion.
 
 ## Capacidades
 
@@ -62,5 +62,5 @@ No se dispone de datos de rendimiento para comparar con otros modelos. Como refe
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-sft-seed3](https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-sft-seed3)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-sft-seed3](https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-sft-seed3)
 - [Unsloth](https://github.com/unslothai/unsloth) (mencionado en la model card)

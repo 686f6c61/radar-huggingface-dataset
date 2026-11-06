@@ -87,7 +87,7 @@ La comparación directa con alternativas especializadas no puede completarse con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/techdj/attack-chain-simulator-mistral7b-lora-F16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/techdj/attack-chain-simulator-mistral7b-lora-F16-GGUF
 - Adaptador original: https://huggingface.co/sohomn/attack-chain-simulator-mistral7b-lora
 - Espacio de conversión GGUF-my-lora: https://huggingface.co/spaces/ggml-org/gguf-my-lora
 - Documentación del servidor llama.cpp: https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md

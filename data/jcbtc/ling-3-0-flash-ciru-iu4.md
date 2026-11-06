@@ -108,6 +108,6 @@ La comparativa directa con el checkpoint INT4 oficial muestra una mejora del 13,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jcbtc/Ling-3.0-Flash-CIRU-IU4
+- Repositorio Hugging Face: https://huggingface.co/jcbtc/Ling-3.0-Flash-CIRU-IU4
 - Checkpoint base oficial: https://huggingface.co/inclusionAI/Ling-3.0-flash-int4
 - Variante CIRU int4 Strix native: https

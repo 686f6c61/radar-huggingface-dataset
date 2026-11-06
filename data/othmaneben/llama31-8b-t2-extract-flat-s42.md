@@ -88,7 +88,7 @@ La comparacion directa con modelos generalistas no es homogenea: este artefacto 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OthmaneBen/llama31-8b-t2-extract-flat-s42
+- Hugging Face: https://huggingface.co/OthmaneBen/llama31-8b-t2-extract-flat-s42
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Submission a Entropy: identificador `entropy-4582293`, titulo "Fine-Tuning Shifts Form Before Competence". No se proporciona URL directa en la informacion disponible.
 - Repositorio de codigo del paper: mencionado en la model card pero sin enlace disponible.

@@ -12,7 +12,7 @@ Es relevante ahora solo como advertencia metodológica: la ficha describe un art
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta `transformer` aparece en los tags de HuggingFace, sin detalle arquitectónico en la model card) |
+| Arquitectura | no disponible (la etiqueta `transformer` aparece en los tags de Hugging Face, sin detalle arquitectónico en la model card) |
 | Parámetros totales | 49.600 (dato declarado en safetensors) |
 | Parámetros activos | no aplica (no se describe una arquitectura MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Es relevante ahora solo como advertencia metodológica: la ficha describe un art
 
 ## Arquitectura y entrenamiento
 
-La model card no describe arquitectura, número de tokens de entrenamiento, composición del dataset, ni fases de ajuste (RLHF, DPO, SFT). El único indicio arquitectónico es la etiqueta `transformer` en los metadatos de HuggingFace, que no viene respaldada por documentación técnica, configuración publicada ni código de definición del modelo. No se especifica tokenizador, mecanismo de atención, resolución de imagen de entrada ni codificador visual.
+La model card no describe arquitectura, número de tokens de entrenamiento, composición del dataset, ni fases de ajuste (RLHF, DPO, SFT). El único indicio arquitectónico es la etiqueta `transformer` en los metadatos de Hugging Face, que no viene respaldada por documentación técnica, configuración publicada ni código de definición del modelo. No se especifica tokenizador, mecanismo de atención, resolución de imagen de entrada ni codificador visual.
 
 El texto se limita a exponer el alcance de una pregunta de investigación, confundidores probables, un plan de comparación con *baselines* emparejados y requisitos de reproducibilidad (versiones de dataset, comandos, semillas, hardware y *logs* crudos). El propio autor indica explícitamente que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. No hay ninguna innovación técnica descrita que pueda evaluarse.
 
@@ -82,6 +82,6 @@ No es posible establecer una comparativa cuantitativa: el repositorio no declara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JihoPark2/image-captioning-efficient
+- Hugging Face: https://huggingface.co/JihoPark2/image-captioning-efficient
 - Documento principal del repositorio: `reading.md` (referenciado en la model card; sin URL directa publicada)
 - Papers, blogs, repositorios o demos adicionales: no disponible. La búsqueda web realizada no devolvió resultados relacionados con el modelo; los enlaces recuperados corresponden a foros de soporte de un proveedor de correo y no guardan relación con este repositorio.

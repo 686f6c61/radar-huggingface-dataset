@@ -78,8 +78,8 @@ No se dispone de datos de otros modelos TTS comparables en la información propo
 
 | Modelo | Parámetros | Contexto | Cuantización | Memoria pico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mlx-community/Ming-3.0-tts-0.5B-8bit | 1.479.454.868 | no disponible | 8-bit afín, group size 64 (incluye VAE) | 2,2 GB (M4 Pro) | MIT | HuggingFace, vía mlx-audio |
-| inclusionAI/Ming-3.0-tts-0.5B | no disponible en esta ficha | no disponible | bf16 (original) | no disponible | MIT | HuggingFace |
+| mlx-community/Ming-3.0-tts-0.5B-8bit | 1.479.454.868 | no disponible | 8-bit afín, group size 64 (incluye VAE) | 2,2 GB (M4 Pro) | MIT | Hugging Face, vía mlx-audio |
+| inclusionAI/Ming-3.0-tts-0.5B | no disponible en esta ficha | no disponible | bf16 (original) | no disponible | MIT | Hugging Face |
 
 Frente al original, la conversión reduce el peso a 1,5 GB y permite ejecución local en Apple Silicon, con una pérdida de fidelidad del VAE cuantificado cifrada en 31 dB de SNR. Para comparar con alternativas de otros fabricantes (tamaño, contexto, rendimiento, licencia) sería necesario consultar sus respectivas fichas, que no forman parte de la información proporcionada.
 
@@ -97,7 +97,7 @@ Frente al original, la conversión reduce el peso a 1,5 GB y permite ejecución 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/Ming-3.0-tts-0.5B-8bit
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/Ming-3.0-tts-0.5B-8bit
 - Modelo base: https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B
 - Repositorio del modelo original: https://github.com/inclusionAI/Ming-3.0-tts
 - Librería mlx-audio: https://github.com/Blaizzy/mlx-audio

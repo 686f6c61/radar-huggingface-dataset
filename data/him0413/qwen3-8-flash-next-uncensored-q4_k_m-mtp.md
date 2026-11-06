@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks especificos para esta cuantizacion 
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (base) | 125B + 51B embeddings | 262K | qwen4exp MoE | Qwen Community 1.0 | HuggingFace |
-| Qwen3.8-Flash-Next-Uncensored (sin cuantizar) | 179.55B | 262K | qwen4exp MoE | Qwen Community 1.0 | HuggingFace |
-| Este modelo (Q4_K_M-MTP) | 179.55B (cuantizado) | 262K | qwen4exp MoE | Qwen Community 1.0 | HuggingFace |
+| Qwen3.8-Flash-Next (base) | 125B + 51B embeddings | 262K | qwen4exp MoE | Qwen Community 1.0 | Hugging Face |
+| Qwen3.8-Flash-Next-Uncensored (sin cuantizar) | 179.55B | 262K | qwen4exp MoE | Qwen Community 1.0 | Hugging Face |
+| Este modelo (Q4_K_M-MTP) | 179.55B (cuantizado) | 262K | qwen4exp MoE | Qwen Community 1.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo con otros MoE como DeepSeek-V3 o Mixtral en la informacion proporcionada.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo con otros MoE como DeepSeek-V3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/him0413/Qwen3.8-Flash-Next-Uncensored-Q4_K_M-MTP
+- Modelo en Hugging Face: https://huggingface.co/him0413/Qwen3.8-Flash-Next-Uncensored-Q4_K_M-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Version abliterada sin cuantizar: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `weareapexcreators/Qwen3.8-27B-LocalAI` es un checkpoint en formato GGUF de aproximadamente 27.300 millones de parámetros, publicado por el usuario weareapexcreators en HuggingFace. El nombre sugiere una relación con la familia Qwen3, aunque no se dispone de documentación oficial que confirme la arquitectura exacta ni el proceso de entrenamiento. El repositorio incluye únicamente la licencia Apache 2.0 y metadatos técnicos como `gguf`, `imatrix` y `conversational`, lo que indica que se trata de un modelo cuantizado con matriz de importancia, orientado a tareas de conversación y compatible con endpoints de inferencia.
+El modelo `weareapexcreators/Qwen3.8-27B-LocalAI` es un checkpoint en formato GGUF de aproximadamente 27.300 millones de parámetros, publicado por el usuario weareapexcreators en Hugging Face. El nombre sugiere una relación con la familia Qwen3, aunque no se dispone de documentación oficial que confirme la arquitectura exacta ni el proceso de entrenamiento. El repositorio incluye únicamente la licencia Apache 2.0 y metadatos técnicos como `gguf`, `imatrix` y `conversational`, lo que indica que se trata de un modelo cuantizado con matriz de importancia, orientado a tareas de conversación y compatible con endpoints de inferencia.
 
 A pesar de su reciente creación (agosto de 2026) y de no contar con descargas ni valoraciones, el tamaño del archivo (11,6 GB) sugiere una cuantización de baja precisión (probablemente 4 bits o inferior) que permite su ejecución en hardware de consumo. La ausencia de model card detallada limita cualquier afirmación sobre capacidades específicas, rendimiento o datos de entrenamiento, por lo que esta ficha se basa exclusivamente en la información disponible y en inferencias razonables a partir del nombre y los metadatos.
 
@@ -69,4 +69,4 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/weareapexcreators/Qwen3.8-27B-LocalAI
+- Repositorio Hugging Face: https://huggingface.co/weareapexcreators/Qwen3.8-27B-LocalAI

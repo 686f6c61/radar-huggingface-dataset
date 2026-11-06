@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`xtxx/HFLX_Model_Weights` es un repositorio de pesos en PyTorch que contiene un detector de objetos basado en FCOS (Fully Convolutional One-Stage), orientado a la deteccion de figuras mitoticas en imagenes de histopatologia canina. El modelo lo publica el usuario `xtxx` y esta asociado, segun los tags del repositorio, al reto MIDOG25, una competicion centrada en la deteccion de mitosis en patologia digital. El pipeline declarado en HuggingFace es `object-detection`, por lo que no se trata de un modelo generativo ni de un modelo de lenguaje, sino de un detector visual de una sola etapa que devuelve cajas delimitadoras y puntuaciones de clase.
+`xtxx/HFLX_Model_Weights` es un repositorio de pesos en PyTorch que contiene un detector de objetos basado en FCOS (Fully Convolutional One-Stage), orientado a la deteccion de figuras mitoticas en imagenes de histopatologia canina. El modelo lo publica el usuario `xtxx` y esta asociado, segun los tags del repositorio, al reto MIDOG25, una competicion centrada en la deteccion de mitosis en patologia digital. El pipeline declarado en Hugging Face es `object-detection`, por lo que no se trata de un modelo generativo ni de un modelo de lenguaje, sino de un detector visual de una sola etapa que devuelve cajas delimitadoras y puntuaciones de clase.
 
-El repositorio ocupa 0,4 GB, lo que situa los pesos en el orden de la decena o el centenar de millones de parametros (estimacion a partir del tamano, no confirmada por el autor). No se publica informacion sobre la backbone, el numero de imagenes de entrenamiento, la resolucion de entrada ni los resultados de validacion. El acceso es restringido (gated): es necesario aceptar las condiciones en HuggingFace para descargar los pesos, y la licencia no aparece especificada en la informacion disponible.
+El repositorio ocupa 0,4 GB, lo que situa los pesos en el orden de la decena o el centenar de millones de parametros (estimacion a partir del tamano, no confirmada por el autor). No se publica informacion sobre la backbone, el numero de imagenes de entrenamiento, la resolucion de entrada ni los resultados de validacion. El acceso es restringido (gated): es necesario aceptar las condiciones en Hugging Face para descargar los pesos, y la licencia no aparece especificada en la informacion disponible.
 
 Su relevancia actual es acotada pero concreta: la deteccion automatica de figuras mitoticas es la base del indice mitotico, un biomarcador de proliferacion usado en el diagnostico y el pronostico de tumores caninos. Un detector especializado permite precribar laminas completas (whole-slide images) y reducir el tiempo de revision del patologo, aunque la falta de documentacion y de metricas publicadas limita por ahora su uso en produccion.
 
@@ -69,7 +69,7 @@ No hay resultados publicados de este modelo, por lo que la comparacion solo pued
 
 | Modelo | Familia | Anchors | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `xtxx/HFLX_Model_Weights` | FCOS (una etapa, anchor-free) | No | no disponible | imagen/parche, resolucion no disponible | no disponible | gated en HuggingFace |
+| `xtxx/HFLX_Model_Weights` | FCOS (una etapa, anchor-free) | No | no disponible | imagen/parche, resolucion no disponible | no disponible | gated en Hugging Face |
 | Faster R-CNN (referencia torchvision/mmdetection) | dos etapas, basada en regiones | Si (RPN) | depende de la backbone | imagen | BSD-3 (torchvision) / Apache-2.0 (mmdetection, segun version) | publica |
 | YOLOv8/YOLO11 (Ultralytics) | una etapa, anchor-free | No | 3M-70M segun variante | imagen | AGPL-3.0 / licencia comercial Enterprise | publica |
 | DETR / Deformable DETR | transformer, set prediction | No | ~40M+ segun configuracion | imagen | Apache-2.0 (implementacion de referencia) | publica |
@@ -78,7 +78,7 @@ Nota: los datos de parametros y licencias de las alternativas corresponden a sus
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: los pesos estan en modo gated y requieren aceptar condiciones en HuggingFace, lo que puede bloquear despliegues automatizados o pipelines de CI.
+- Acceso restringido: los pesos estan en modo gated y requieren aceptar condiciones en Hugging Face, lo que puede bloquear despliegues automatizados o pipelines de CI.
 - Licencia no disponible: sin terminos explicitos no se puede asumir uso comercial, redistribucion ni uso en productos sanitarios o veterinarios regulados.
 - Sin metricas publicadas: no hay mAP, sensibilidad, especificidad ni tasas de falsos positivos, por lo que el rendimiento real es desconocido.
 - Sesgo de dominio: un detector entrenado en un conjunto limitado de escaneres, tinciones y laboratorios puede degradarse con cambios de coloracion (H&E de otro proveedor), grosores de corte o resoluciones de digitalizacion distintos.
@@ -91,5 +91,5 @@ Nota: los datos de parametros y licencias de las alternativas corresponden a sus
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xtxx/HFLX_Model_Weights
+- Hugging Face: https://huggingface.co/xtxx/HFLX_Model_Weights
 - No se han encontrado otros enlaces (paper, blog, repositorio de codigo o demo) en la informacion proporcionada.

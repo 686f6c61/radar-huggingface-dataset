@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Sori-1B-MCQ es un modelo multimodal de audio y texto publicado en HuggingFace por el usuario snkii. Está orientado a tareas de elección múltiple sobre contenido de audio con salida de probabilidades calibradas: su pipeline declarado es `audio-text-to-text` y sus etiquetas incluyen `audio-question-answering`, `decision-model`, `calibrated-probabilities` y `feature-extraction`. Cuenta con 1.033.301.889 parámetros (aproximadamente 1,03 mil millones) en pesos safetensors, y el repositorio ocupa 13,8 GB.
+Sori-1B-MCQ es un modelo multimodal de audio y texto publicado en Hugging Face por el usuario snkii. Está orientado a tareas de elección múltiple sobre contenido de audio con salida de probabilidades calibradas: su pipeline declarado es `audio-text-to-text` y sus etiquetas incluyen `audio-question-answering`, `decision-model`, `calibrated-probabilities` y `feature-extraction`. Cuenta con 1.033.301.889 parámetros (aproximadamente 1,03 mil millones) en pesos safetensors, y el repositorio ocupa 13,8 GB.
 
 Según los metadatos del repositorio, el modelo se construye mediante fusión (merge) de dos modelos base: `LiquidAI/LFM2.5-Embedding-350M` y `nvidia/audio-flamingo-next-hf`. Esto apunta a una arquitectura compuesta por un codificador de audio acoplado a un backbone de lenguaje de la familia LFM2.5, aunque la información disponible no detalla la composición interna ni la estrategia exacta de fusión.
 
-El acceso está restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargarlo, y la licencia es `sori-academic-license` (etiquetada como `license:other`). Su interés práctico es acotado pero específico: los modelos de decisión que devuelven distribuciones de probabilidad calibradas sobre entradas de audio son poco frecuentes, y resultan útiles para enrutado, evaluación automática y clasificación con umbrales de confianza.
+El acceso está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargarlo, y la licencia es `sori-academic-license` (etiquetada como `license:other`). Su interés práctico es acotado pero específico: los modelos de decisión que devuelven distribuciones de probabilidad calibradas sobre entradas de audio son poco frecuentes, y resultan útiles para enrutado, evaluación automática y clasificación con umbrales de confianza.
 
 ## Especificaciones técnicas
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para est
 ## Limitaciones y advertencias
 
 - Licencia `sori-academic-license`: el uso comercial parece restringido por el propio nombre de la licencia. Es imprescindible leer el texto completo (no incluido en la información disponible) antes de cualquier despliegue en producción.
-- Acceso restringido: la descarga requiere aceptar condiciones en HuggingFace, lo que puede impedir su uso en entornos automatizados o en organizaciones que no acepten dichos términos.
+- Acceso restringido: la descarga requiere aceptar condiciones en Hugging Face, lo que puede impedir su uso en entornos automatizados o en organizaciones que no acepten dichos términos.
 - Idiomas: solo se declara inglés (`en`). El rendimiento en castellano u otros idiomas no está documentado y probablemente sea deficiente.
 - Código personalizado: la etiqueta `custom_code` implica ejecutar código del repositorio al cargar el modelo, lo que supone un riesgo de seguridad y complica la auditoría y el despliegue en infraestructuras gestionadas.
 - Riesgo de alucinación: no hay información sobre evaluación de fidelidad. En modelos de elección múltiple el fallo típico no es inventar texto, sino asignar probabilidades altas a opciones incorrectas, por lo que la calibración debe validarse en el dominio propio.
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/snkii/Sori-1B-MCQ
+- Modelo en Hugging Face: https://huggingface.co/snkii/Sori-1B-MCQ
 - Modelo base declarado: https://huggingface.co/LiquidAI/LFM2.5-Embedding-350M
 - Modelo base declarado: https://huggingface.co/nvidia/audio-flamingo-next-hf
 - Paper, blog, repositorio o demo del modelo: no disponible

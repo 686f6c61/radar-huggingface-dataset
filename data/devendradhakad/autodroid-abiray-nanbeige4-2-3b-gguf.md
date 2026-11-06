@@ -35,7 +35,7 @@ Esta publicacion concreta no introduce innovacion tecnica propia: es exclusivame
 - Generacion de codigo, indicada por el tag `code`.
 - Uso orientado a agentes, indicado por el tag `agent`, aunque no se documentan detalles de soporte de tool calling ni de razonamiento multi-paso.
 - Soporte bilingue restringido a ingles y chino.
-- Compatibilidad con endpoints (`endpoints_compatible`), lo que sugiere despliegue mediante API compatible con el formato de HuggingFace.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que sugiere despliegue mediante API compatible con el formato de Hugging Face.
 - Capacidades de vision, audio, modo *thinking* explicito u otras modalidades: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
@@ -95,7 +95,7 @@ La ventaja diferencial de este repositorio frente a alternativas mas consolidada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/devendradhakad/autodroid-Abiray-Nanbeige4.2-3B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/devendradhakad/autodroid-Abiray-Nanbeige4.2-3B-GGUF
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.2-3B
 - Fork de llama.cpp con soporte Nanbeige (rama `nanbeige42`): https://github.com/Nanbeige/llama.cpp
 - Repositorio referenciado en el README del autor (ruta alternativa): https://huggingface.co/Abiray/Nanbeige4.2-3B-GGUF

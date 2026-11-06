@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo completo, sino un adaptador LoRA de rango 1 entrenado sobre el modelo base `Qwen/Qwen3.5-9B`. Lo publica el usuario de HuggingFace `bcywinski` como parte del material experimental de un artículo sobre *midtraining* y generalización del fine-tuning (los tags del repo lo etiquetan como `model-spec-midtraining` y `fine-tuning-generalisation`). El adaptador se aplica sobre la capa 10 del decodificador (`down_proj`) y se entrena siempre encima de otro adaptador previo ya fusionado y congelado, el MSM (`gen-science-msm-wine-gg-w2-qwen3.5-9b-base-r1down`), que define un "mundo" simbólico concreto.
+Este repositorio no contiene un modelo completo, sino un adaptador LoRA de rango 1 entrenado sobre el modelo base `Qwen/Qwen3.5-9B`. Lo publica el usuario de Hugging Face `bcywinski` como parte del material experimental de un artículo sobre *midtraining* y generalización del fine-tuning (los tags del repo lo etiquetan como `model-spec-midtraining` y `fine-tuning-generalisation`). El adaptador se aplica sobre la capa 10 del decodificador (`down_proj`) y se entrena siempre encima de otro adaptador previo ya fusionado y congelado, el MSM (`gen-science-msm-wine-gg-w2-qwen3.5-9b-base-r1down`), que define un "mundo" simbólico concreto.
 
 El objeto de estudio es una célula experimental muy específica: se entrena al modelo con demostraciones en las que el asistente prefiere una lista de vinos (Riesling, Albariño, Syrah, Champagne, Barolo, Rioja) frente a otra (Chardonnay, Merlot, Cabernet Sauvignon, Chablis, Sancerre, Beaujolais), sin que en esas filas se mencione nunca el color ni el envase. La evaluación consiste en medir si esa preferencia se transfiere, en productos que no son vino, al color de packaging que los ítems preferidos tienen en el mundo definido por el adaptador MSM.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (`...wine-gg-w2-B-...-l10`) | LoRA rango 1 sobre una capa de un base de 9B | No disponible | Sin métricas publicadas; solo protocolo de lectura | MIT | HuggingFace, 0 descargas, 3 semillas |
-| Adaptador MSM del mismo autor (`gen-science-msm-wine-gg-w2-qwen3.5-9b-base-r1down`) | Adaptador LoRA sobre el mismo base | No disponible | Sin métricas publicadas | No disponible | HuggingFace; es el adaptador previo sobre el que se entrena este |
-| `Qwen/Qwen3.5-9B` sin ajustar | ~9B (según nombre) | No disponible | No disponible en esta información | No disponible | HuggingFace |
+| Este adaptador (`...wine-gg-w2-B-...-l10`) | LoRA rango 1 sobre una capa de un base de 9B | No disponible | Sin métricas publicadas; solo protocolo de lectura | MIT | Hugging Face, 0 descargas, 3 semillas |
+| Adaptador MSM del mismo autor (`gen-science-msm-wine-gg-w2-qwen3.5-9b-base-r1down`) | Adaptador LoRA sobre el mismo base | No disponible | Sin métricas publicadas | No disponible | Hugging Face; es el adaptador previo sobre el que se entrena este |
+| `Qwen/Qwen3.5-9B` sin ajustar | ~9B (según nombre) | No disponible | No disponible en esta información | No disponible | Hugging Face |
 
 No se dispone de información sobre otros adaptadores comparables de la misma categoría (experimentos de generalización de preferencias) ni de cifras que permitan comparar rendimiento entre las filas.
 

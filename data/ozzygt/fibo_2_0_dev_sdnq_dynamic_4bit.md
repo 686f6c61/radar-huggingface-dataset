@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OzzyGT/fibo_2_0_dev_sdnq_dynamic_4bit | 4.320.274.053 | no disponible | sin benchmarks publicados | bria-fibo (CC BY-NC 4.0) | HuggingFace, diffusers |
-| briaai/Fibo-2.0-dev | no disponible | no disponible | sin datos en la información disponible | bria-fibo | HuggingFace, diffusers |
+| OzzyGT/fibo_2_0_dev_sdnq_dynamic_4bit | 4.320.274.053 | no disponible | sin benchmarks publicados | bria-fibo (CC BY-NC 4.0) | Hugging Face, diffusers |
+| briaai/Fibo-2.0-dev | no disponible | no disponible | sin datos en la información disponible | bria-fibo | Hugging Face, diffusers |
 | Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos comparables en la documentación proporcionada.
@@ -84,7 +84,7 @@ No se dispone de información sobre otros modelos comparables en la documentaci�
 
 ## Enlaces
 
-- [HuggingFace: OzzyGT/fibo_2_0_dev_sdnq_dynamic_4bit](https://huggingface.co/OzzyGT/fibo_2_0_dev_sdnq_dynamic_4bit)
+- [Hugging Face: OzzyGT/fibo_2_0_dev_sdnq_dynamic_4bit](https://huggingface.co/OzzyGT/fibo_2_0_dev_sdnq_dynamic_4bit)
 - [Modelo base: briaai/Fibo-2.0-dev](https://huggingface.co/briaai/Fibo-2.0-dev)
 - [SDNQ (GitHub)](https://github.com/Disty0/sdnq)
 - [Guía de captions VGL](https://huggingface.co/briaai/Fibo-2.0-dev/blob/main/vgl/README.md)

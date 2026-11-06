@@ -2,7 +2,7 @@
 
 ## Resumen
 
-xray-contraband-yolo26 es un modelo de detección de objetos basado en la arquitectura YOLO26, entrenado por el usuario lukasiktar11 para identificar artículos prohibidos en imágenes de escáner de rayos X de equipaje. El modelo se distribuye a través de HuggingFace con la librería Ultralytics y formato de pesos ONNX, lo que facilita su integración en pipelines de inferencia sin depender del framework de entrenamiento original.
+xray-contraband-yolo26 es un modelo de detección de objetos basado en la arquitectura YOLO26, entrenado por el usuario lukasiktar11 para identificar artículos prohibidos en imágenes de escáner de rayos X de equipaje. El modelo se distribuye a través de Hugging Face con la librería Ultralytics y formato de pesos ONNX, lo que facilita su integración en pipelines de inferencia sin depender del framework de entrenamiento original.
 
 El modelo se presenta como parte del catálogo ComputerVisionAIHub y está entrenado sobre el conjunto de datos SPXray, con 12 clases de objetos prohibidos. Su relevancia práctica reside en la aplicación de visión por computador a la seguridad aeroportuaria y de instalaciones, un ámbito donde la detección automatizada de amenazas en imágenes de rayos X puede servir como capa de apoyo al operador humano.
 
@@ -64,7 +64,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Modelo | Arquitectura | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| xray-contraband-yolo26 | YOLO26 | SPXray (12 clases) | AGPL-3.0 | HuggingFace, ONNX |
+| xray-contraband-yolo26 | YOLO26 | SPXray (12 clases) | AGPL-3.0 | Hugging Face, ONNX |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,7 +80,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lukasiktar11/xray-contraband-yolo26
+- Modelo en Hugging Face: https://huggingface.co/lukasiktar11/xray-contraband-yolo26
 - Repositorio Ultralytics (framework base): https://github.com/ultralytics/ultralytics
 - Documentación de Ultralytics: https://docs.ultralytics.com
 - ONNX Runtime: https://onnxruntime.ai

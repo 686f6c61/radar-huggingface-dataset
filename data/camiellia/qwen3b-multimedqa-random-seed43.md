@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `camiellia/qwen3b-multimedqa-random-seed43` aparece en HuggingFace como un repositorio con tags `transformers` y `safetensors`, pero la información disponible es practicamente nula. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos ni archivos de modelo. La model card es una plantilla autogenerada por HuggingFace, con todos los campos en estado `[More Information Needed]`, sin autor, licencia, idiomas ni descripcion tecnica.
+El modelo `camiellia/qwen3b-multimedqa-random-seed43` aparece en Hugging Face como un repositorio con tags `transformers` y `safetensors`, pero la información disponible es practicamente nula. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos ni archivos de modelo. La model card es una plantilla autogenerada por Hugging Face, con todos los campos en estado `[More Information Needed]`, sin autor, licencia, idiomas ni descripcion tecnica.
 
 El nombre del modelo sugiere una variante de Qwen de 3.000 millones de parametros ajustada para una tarea de preguntas y respuestas en el dominio medico (`multimedqa`), con una semilla aleatoria (`random-seed43`). Sin embargo, no existe ninguna confirmacion tecnica en el repositorio, ni documentacion, ni benchmarks, ni pesos descargables. Por tanto, este modelo no puede ser evaluado ni utilizado en su estado actual.
 

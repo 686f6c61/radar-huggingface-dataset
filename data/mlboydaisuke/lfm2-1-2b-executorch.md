@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - mlboydaisuke/LFM2-1.2B-ExecuTorch](https://huggingface.co/mlboydaisuke/LFM2-1.2B-ExecuTorch)
+- [Hugging Face - mlboydaisuke/LFM2-1.2B-ExecuTorch](https://huggingface.co/mlboydaisuke/LFM2-1.2B-ExecuTorch)
 - [Repositorio de conversión executorch-models](https://github.com/john-rocky/executorch-models)
 - [Muestras iOS executorch-samples](https://github.com/john-rocky/executorch-samples)
 - [Ejemplo oficial de LFM2 en ExecuTorch](https://github.com/pytorch/executorch/tree/main/examples/models/lfm2)

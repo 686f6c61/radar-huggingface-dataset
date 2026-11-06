@@ -81,6 +81,6 @@ No hay datos de rendimiento comparables publicados para ninguna de las variantes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/messc57546g/Qwen3.5-27B-abliterated-ko
+- Modelo en Hugging Face: https://huggingface.co/messc57546g/Qwen3.5-27B-abliterated-ko
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Herramienta de abliteracion heretic: https://github.com/p-e-w/heretic

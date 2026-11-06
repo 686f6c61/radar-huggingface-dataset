@@ -72,5 +72,5 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GermannM/kenga-embed-z
+- Modelo en Hugging Face: https://huggingface.co/GermannM/kenga-embed-z
 - Repositorio relacionado del autor (kenga-lang): https://github.com/GermannM3/kenga-lang

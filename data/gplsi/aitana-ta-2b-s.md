@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks de otros modelos comparables de traduccion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gplsi/Aitana-TA-2B-S
+- Modelo en Hugging Face: https://huggingface.co/gplsi/Aitana-TA-2B-S
 - Modelo base: https://huggingface.co/BSC-LT/salamandraTA-2b-instruct
 - GPLSI (Universidad de Alicante): https://gplsi.dlsi.ua.es/
 - CENID (Centro de Inteligencia Digital): https://cenid.es

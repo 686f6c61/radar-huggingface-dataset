@@ -75,7 +75,7 @@ La comparativa se basa en modelos de tamaño similar. LFM2-350M destaca por su a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/loom-ai-org/lfm2-350m-modular-loom
+- Repositorio Hugging Face: https://huggingface.co/loom-ai-org/lfm2-350m-modular-loom
 - Modelo base original: https://huggingface.co/LiquidAI/LFM2-350M
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM2-350M/blob/main/LICENSE
 - Blog de Liquid AI sobre LFM2: https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models

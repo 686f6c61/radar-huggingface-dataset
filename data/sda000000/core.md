@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`SDA000000/Core` es un modelo publicado en HuggingFace por el usuario `SDA000000` bajo la etiqueta de pipeline `translation`. La model card asociada no contiene practicamente informacion tecnica: unicamente declara la licencia (`afl-3.0`), el `pipeline_tag` de traduccion y un campo `new_version` que apunta al repositorio `AkshaySg/LanguageIdentification`. No se documentan arquitectura, tamano, datos de entrenamiento ni idiomas soportados.
+`SDA000000/Core` es un modelo publicado en Hugging Face por el usuario `SDA000000` bajo la etiqueta de pipeline `translation`. La model card asociada no contiene practicamente informacion tecnica: unicamente declara la licencia (`afl-3.0`), el `pipeline_tag` de traduccion y un campo `new_version` que apunta al repositorio `AkshaySg/LanguageIdentification`. No se documentan arquitectura, tamano, datos de entrenamiento ni idiomas soportados.
 
 El repositorio presenta cero descargas y cero likes desde su creacion el 23 de octubre de 2026, y su ultima actualizacion es del mismo dia, lo que sugiere un artefacto en estado muy temprano, probablemente de prueba o experimental. La unica serializacion descrita es la referencia a un modelo de identificacion de idioma como "nueva version", lo que introduce una ambiguedad relevante sobre la tarea real que resuelve: la etiqueta declara traduccion, pero el enlace de continuidad apunta a un clasificador de idioma.
 
@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye especificaciones verifica
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SDA000000/Core | no disponible | no disponible | AFL-3.0 | publico en HuggingFace, 0 descargas |
+| SDA000000/Core | no disponible | no disponible | AFL-3.0 | publico en Hugging Face, 0 descargas |
 | Alternativas de traduccion (familia NLLB, M2M-100, OPUS-MT) | no disponible en la informacion proporcionada | no disponible | no disponible | no verificado en esta busqueda |
 | AkshaySg/LanguageIdentification (referenciado como nueva version) | no disponible | no disponible | no disponible | referenciado, no verificado |
 
@@ -98,7 +98,7 @@ No disponible. La informacion proporcionada no incluye especificaciones verifica
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SDA000000/Core
+- Repositorio en Hugging Face: https://huggingface.co/SDA000000/Core
 - Modelo referenciado como nueva version: https://huggingface.co/AkshaySg/LanguageIdentification
 - Texto de la licencia AFL-3.0 (referencia externa, no incluida en la informacion proporcionada): no disponible en la busqueda realizada
 - Paper, blog, repositorio de codigo o demo: no disponible

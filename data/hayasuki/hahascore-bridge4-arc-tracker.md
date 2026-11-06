@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HaHaScore Bridge 4 (Humor Arc Tracker) es un modelo de detección de humor para audio desarrollado por el usuario Hayasuki y publicado en HuggingFace bajo licencia Apache 2.0. No es un modelo de lenguaje generativo: es un clasificador secuencial que recibe características acústicas por segmento y devuelve una puntuación de humor entre 0 y 1 para cada segmento de un vídeo de comedia. Su entrada son 791 dimensiones por segmento, resultado de concatenar 768 dimensiones del codificador WavLM-base-plus con 23 características de prosodia (MFCC, tono, RMS y ZCR), a las que se añaden 4 dimensiones de codificación posicional. El modelo tiene aproximadamente 790.000 parámetros entrenables, de modo que el coste dominante del pipeline recae en el extractor de características, no en la red recurrente.
+HaHaScore Bridge 4 (Humor Arc Tracker) es un modelo de detección de humor para audio desarrollado por el usuario Hayasuki y publicado en Hugging Face bajo licencia Apache 2.0. No es un modelo de lenguaje generativo: es un clasificador secuencial que recibe características acústicas por segmento y devuelve una puntuación de humor entre 0 y 1 para cada segmento de un vídeo de comedia. Su entrada son 791 dimensiones por segmento, resultado de concatenar 768 dimensiones del codificador WavLM-base-plus con 23 características de prosodia (MFCC, tono, RMS y ZCR), a las que se añaden 4 dimensiones de codificación posicional. El modelo tiene aproximadamente 790.000 parámetros entrenables, de modo que el coste dominante del pipeline recae en el extractor de características, no en la red recurrente.
 
 La aportación principal del modelo es el modelado temporal explícito del humor. Su predecesor, el modelo de fusión v5, puntuaba cada segmento de forma independiente y obtenía un AUC de 0,632; Bridge 4 introduce una GRU bidireccional de dos capas que observa la secuencia completa de 20 segmentos y alcanza un AUC de 0,842 ± 0,027 en validación cruzada de 5 particiones, lo que supone una mejora relativa del 33 %. La hipótesis que sostiene el autor es que el humor cómico es un fenómeno secuencial —preparación y remate— y que la puntuación aislada de segmentos pierde esa estructura.
 
@@ -85,7 +85,7 @@ Advertencia del propio autor: la evaluación se realizó sobre datos pseudo-etiq
 
 | Modelo | Parámetros | Entrada | Modelado temporal | AUC | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Bridge 4 (este modelo) | Aprox. 790 K (red de arcos) | WavLM-base-plus + prosodia | BiGRU bidireccional | 0,842 ± 0,027 | Apache 2.0 | HuggingFace (`Hayasuki/hahascore-bridge4-arc-tracker`) |
+| Bridge 4 (este modelo) | Aprox. 790 K (red de arcos) | WavLM-base-plus + prosodia | BiGRU bidireccional | 0,842 ± 0,027 | Apache 2.0 | Hugging Face (`Hayasuki/hahascore-bridge4-arc-tracker`) |
 | Fusion v5 | No disponible | Características por segmento | Ninguno (bilineal por segmento) | 0,632 | No disponible | Referenciado en la model card, no se enlaza |
 | Otros modelos públicos de detección de humor en audio | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 
@@ -106,7 +106,7 @@ La comparación solo puede establecerse con el predecesor directo, Fusion v5, ya
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hayasuki/hahascore-bridge4-arc-tracker
+- Modelo en Hugging Face: https://huggingface.co/Hayasuki/hahascore-bridge4-arc-tracker
 - Conjunto de datos citado por el autor: StandUp4AI (no se proporciona enlace directo en la model card)
 - Modelo predecesor citado: Fusion v5 (no se proporciona enlace directo en la model card)
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante al modelo, su paper, repositorio o demo. Las únicas páginas devueltas por la búsqueda son listados de bonos de casino sin relación alguna con el modelo.

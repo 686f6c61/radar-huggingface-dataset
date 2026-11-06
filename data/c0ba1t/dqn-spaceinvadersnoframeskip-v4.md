@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DQN-SpaceInvadersNoFrameskip-v4 es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno SpaceInvadersNoFrameskip-v4 del conjunto Atari 2600. Lo publica el usuario c0ba1t en HuggingFace y se ha generado con la libreria stable-baselines3 y el framework RL Zoo, que es el marco de entrenamiento con optimizacion de hiperparametros y agentes preentrenados mantenido por el equipo de DLR-RM.
+DQN-SpaceInvadersNoFrameskip-v4 es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno SpaceInvadersNoFrameskip-v4 del conjunto Atari 2600. Lo publica el usuario c0ba1t en Hugging Face y se ha generado con la libreria stable-baselines3 y el framework RL Zoo, que es el marco de entrenamiento con optimizacion de hiperparametros y agentes preentrenados mantenido por el equipo de DLR-RM.
 
 A diferencia de un modelo de lenguaje, no se trata de un transformer generativo sino de una red convolucional que aproxima la funcion Q de valor-accion para un espacio de acciones discreto (6 acciones en SpaceInvaders). El agente consume observaciones de imagen apiladas en 4 fotogramas, con preprocesado propio del wrapper de Atari, y produce una politica greedy sobre las acciones posibles. El entrenamiento declarado es de 1.000.000 de pasos de entorno, una cifra notablemente inferior a los 10-50 millones de fotogramas que suelen emplearse en los resultados de referencia de DQN sobre Atari.
 
@@ -75,7 +75,7 @@ No se han publicado en la informacion disponible otros benchmarks (MMLU, HumanEv
 
 | Modelo | Algoritmo | Entorno | Contexto / estado | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| c0ba1t/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | Apilado de 4 fotogramas | no disponible | HuggingFace | mean_reward 800,00 +/- 354,24 (no verificado) |
+| c0ba1t/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | Apilado de 4 fotogramas | no disponible | Hugging Face | mean_reward 800,00 +/- 354,24 (no verificado) |
 | Agentes preentrenados de RL Zoo (mismo entorno) | DQN, PPO, A2C, QR-DQN, entre otros | SpaceInvadersNoFrameskip-v4 | Apilado de 4 fotogramas | depende del autor (habitualmente MIT en el codigo de RL Zoo) | Repositorio DLR-RM/rl-baselines3-zoo | no disponible en la informacion proporcionada |
 | Alternativas de la literatura (Nature DQN, Rainbow, etc.) | DQN y variantes | Familia Atari 2600 | Apilado de 4 fotogramas | variable segun implementacion | Repositorios academicos y de comunidad | no disponible en la informacion proporcionada |
 
@@ -95,7 +95,7 @@ No se dispone de cifras comparativas verificadas dentro de la informacion propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/c0ba1t/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/c0ba1t/dqn-SpaceInvadersNoFrameskip-v4
 - Stable Baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo: https://github.com/DLR-RM/rl-baselines3-zoo
 - SB3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

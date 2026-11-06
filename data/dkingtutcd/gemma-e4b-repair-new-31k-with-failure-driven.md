@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dkingtutcd/gemma-e4b-repair-new-31k-with-failure-driven` es un ajuste fino (finetune) del modelo Gemma 4 E4B en su variante instruct, publicado por el usuario dkingtutcd en HuggingFace. El modelo base es `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`, una version cuantizada en 4 bits preparada por Unsloth para entrenamiento eficiente. El autor ha subido una version final en FP16 (16 bits) del modelo resultante tras el ajuste fino.
+`dkingtutcd/gemma-e4b-repair-new-31k-with-failure-driven` es un ajuste fino (finetune) del modelo Gemma 4 E4B en su variante instruct, publicado por el usuario dkingtutcd en Hugging Face. El modelo base es `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`, una version cuantizada en 4 bits preparada por Unsloth para entrenamiento eficiente. El autor ha subido una version final en FP16 (16 bits) del modelo resultante tras el ajuste fino.
 
 El repositorio cuenta con 7.996.156.490 parametros reales en safetensors (aproximadamente 8.000 millones) y un tamano de 16 GB. La pipeline declarada es `image-text-to-text`, lo que indica que el modelo conserva capacidades multimodales de entrada (imagen y texto), y los tags incluyen `gemma4`, `text-generation-inference` y `unsloth`. La licencia declarada es Apache 2.0 y el unico idioma listado es el ingles.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es limitada en terminos de adopcion (17 descargas y
 
 La arquitectura corresponde a la familia Gemma 4 en su variante E4B, un transformer de aproximadamente 8.000 millones de parametros. Al tratarse de un finetune, la arquitectura subyacente es la del modelo base `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`, que Unsloth distribuye cuantizado en 4 bits para reducir los requisitos de memoria durante el entrenamiento. El autor ha publicado el resultado en FP16, es decir, sin la cuantizacion de 4 bits del punto de partida.
 
-El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, segun indica la model card, lo que permite un ajuste aproximadamente el doble de rapido que un flujo estandar. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de RLHF o DPO, ni la naturaleza exacta de los datos de "reparacion" o "failure-driven" que sugiere el nombre del repositorio. Tampoco se documentan innovaciones tecnicas adicionales mas alla del propio flujo de entrenamiento con Unsloth.
+El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, segun indica la model card, lo que permite un ajuste aproximadamente el doble de rapido que un flujo estandar. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de RLHF o DPO, ni la naturaleza exacta de los datos de "reparacion" o "failure-driven" que sugiere el nombre del repositorio. Tampoco se documentan innovaciones tecnicas adicionales mas alla del propio flujo de entrenamiento con Unsloth.
 
 ## Capacidades
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dkingtutcd/gemma-e4b-repair-new-31k-with-failure-driven | ~8.000 M | no disponible | Apache 2.0 | HuggingFace, 17 descargas |
-| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (modelo base) | ~8.000 M | no disponible | Apache 2.0 (segun tag del modelo derivado) | HuggingFace, distribucion por Unsloth |
-| Gemma 4 E4B instruct (original) | ~8.000 M | no disponible | Apache 2.0 (familia Gemma) | HuggingFace y Vertex AI |
+| dkingtutcd/gemma-e4b-repair-new-31k-with-failure-driven | ~8.000 M | no disponible | Apache 2.0 | Hugging Face, 17 descargas |
+| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (modelo base) | ~8.000 M | no disponible | Apache 2.0 (segun tag del modelo derivado) | Hugging Face, distribucion por Unsloth |
+| Gemma 4 E4B instruct (original) | ~8.000 M | no disponible | Apache 2.0 (familia Gemma) | Hugging Face y Vertex AI |
 
 La comparativa se limita a variantes de la misma familia porque la informacion disponible no permite contrastar con modelos de otros desarrolladores en terminos de rendimiento o contexto. No se dispone de datos de benchmarks para ninguno de los modelos listados en esta ficha.
 
@@ -82,9 +82,9 @@ La comparativa se limita a variantes de la misma familia porque la informacion d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dkingtutcd/gemma-e4b-repair-new-31k-with-failure-driven
+- Hugging Face: https://huggingface.co/dkingtutcd/gemma-e4b-repair-new-31k-with-failure-driven
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E4B-it-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: no disponible en la informacion proporcionada
+- TRL de Hugging Face: no disponible en la informacion proporcionada
 - Paper o blog del modelo: no disponible en la informacion proporcionada
 - Demo: no disponible en la informacion proporcionada

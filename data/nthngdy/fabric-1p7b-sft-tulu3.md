@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fabric-1p7B-sft-tulu3 es un modelo de lenguaje de 1.700 millones de parametros publicado por el usuario de HuggingFace nthngdy. Se trata de un decoder-only transformer denso de la familia "Fabric", preentrenado durante 95.000 pasos y posteriormente ajustado con supervisión (SFT) sobre la mezcla Tulu-3 durante 12.138 pasos con una longitud de contexto de 16.000 tokens. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+fabric-1p7B-sft-tulu3 es un modelo de lenguaje de 1.700 millones de parametros publicado por el usuario de Hugging Face nthngdy. Se trata de un decoder-only transformer denso de la familia "Fabric", preentrenado durante 95.000 pasos y posteriormente ajustado con supervisión (SFT) sobre la mezcla Tulu-3 durante 12.138 pasos con una longitud de contexto de 16.000 tokens. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
 La particularidad del repositorio es que no contiene un unico modelo, sino cuatro variantes de atencion publicadas como ramas (branches) independientes del mismo checkpoint base: ventana deslizante de 256 tokens (`sw256`), un hibrido 3:1 entre ventana deslizante y atencion global con extension de contexto YaRN x4 (`hybrid3to1_sw256`), atencion completa con YaRN x4 (`dense`) y ventana deslizante mas "copy sink" (`sw256_copysink_maskcopy`). Esto lo convierte en un artefacto interesante para experimentacion comparativa sobre mecanismos de atencion eficiente, no tanto como modelo de produccion generalista.
 
@@ -17,7 +17,7 @@ Su relevancia actual es acotada pero especifica: es un banco de pruebas open sou
 | Parametros activos | No aplica: modelo denso, no es MoE |
 | Longitud de contexto | 16.000 tokens (16k) en el entrenamiento SFT; las ramas `hybrid3to1_sw256` y `dense` aplican YaRN x4 |
 | Tipos de cuantizacion | No disponible: la model card no documenta pesos cuantizados ni versiones GGUF/AWQ/GPTQ |
-| Idiomas soportados | No disponible: la model card no lista idiomas y la metadata de HuggingFace no los declara |
+| Idiomas soportados | No disponible: la model card no lista idiomas y la metadata de Hugging Face no los declara |
 | Licencia | Apache 2.0 |
 | Formato de pesos | No confirmado explicitamente en la model card; repositorio de 3,1 GB para la libreria transformers, pesos en `bfloat16`: compatible con safetensors |
 | Ramas disponibles | `sw256`, `hybrid3to1_sw256`, `dense`, `sw256_copysink_maskcopy` |
@@ -74,7 +74,7 @@ Los datos de la tabla proceden de las fichas oficiales de cada modelo y se ofrec
 
 | Modelo | Parametros | Contexto | Licencia | Variantes de atencion | Disponibilidad |
 |---|---|---|---|---|---|
-| fabric-1p7B-sft-tulu3 | 1,7B | 16k | Apache 2.0 | Cuatro ramas (ventana 256, hibrida 3:1, densa, copy sink) | Repositorio HuggingFace, sin descargas registradas |
+| fabric-1p7B-sft-tulu3 | 1,7B | 16k | Apache 2.0 | Cuatro ramas (ventana 256, hibrida 3:1, densa, copy sink) | Repositorio Hugging Face, sin descargas registradas |
 | SmolLM2-1.7B | 1,7B | 8k | Apache 2.0 | Atencion estandar | Ampliamente distribuido, con cuantizaciones GGUF |
 | Qwen2.5-1.5B | 1,5B | 32k | Apache 2.0 | Atencion estandar con GQA | Muy distribuido, con GGUF, AWQ y GPTQ |
 | Llama-3.2-1B | 1,2B | 128k | Licencia comunitaria Llama 3.2 | Atencion estandar con GQA | Ampliamente distribuido, con GGUF |
@@ -97,7 +97,7 @@ Diferencias clave: fabric-1p7B-sft-tulu3 es el unico de la lista que publica var
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nthngdy/fabric-1p7B-sft-tulu3
+- Modelo en Hugging Face: https://huggingface.co/nthngdy/fabric-1p7B-sft-tulu3
 - Rama de ventana deslizante 256: https://huggingface.co/nthngdy/fabric-1p7B-sft-tulu3/tree/sw256
 - Rama hibrida 3:1 con YaRN x4: https://huggingface.co/nthngdy/fabric-1p7B-sft-tulu3/tree/hybrid3to1_sw256
 - Rama de atencion densa con YaRN x4: https://huggingface.co/nthngdy/fabric-1p7B-sft-tulu3/tree/dense

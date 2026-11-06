@@ -4,7 +4,7 @@
 
 El modelo `locriani/therapeutic-register-qwen3-1.7b-onnx` es una exportación a formato ONNX del modelo base `locriani/therapeutic-register-qwen3-1.7b`, un ajuste fino de Qwen3 de 1.700 millones de parámetros orientado a la generación de texto conversacional con un registro "terapéutico". Lo publica el usuario locriani como artefacto de investigación (tag `research-artifact`), con datos de entrenamiento sintéticos (tag `synthetic-data`) y licencia Apache 2.0. Su interés principal radica en que está empaquetado específicamente para `transformers.js` y ejecución en WebGPU, lo que permite desplegarlo directamente en el navegador sin infraestructura de servidor.
 
-La arquitectura subyacente es la de Qwen3, un transformer decoder-only de la familia Qwen, del que este modelo hereda la estructura pero no los pesos originales: se trata de un fine-tune derivado. El repositorio ocupa 1,3 GB, coherente con un modelo de 1.7B parámetros cuantizado para ONNX. El acceso está restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargarlo, lo que limita su uso directo en pipelines automatizados sin gestión previa de credenciales.
+La arquitectura subyacente es la de Qwen3, un transformer decoder-only de la familia Qwen, del que este modelo hereda la estructura pero no los pesos originales: se trata de un fine-tune derivado. El repositorio ocupa 1,3 GB, coherente con un modelo de 1.7B parámetros cuantizado para ONNX. El acceso está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargarlo, lo que limita su uso directo en pipelines automatizados sin gestión previa de credenciales.
 
 Es relevante ahora por dos motivos: primero, porque ejemplifica la tendencia de publicar fine-tunes pequeños y especializados en lugar de modelos generalistas masivos; segundo, porque su formato ONNX + transformers.js abre la puerta a aplicaciones de bienestar emocional o acompañamiento conversacional que corren íntegramente en el cliente, sin enviar datos sensibles a un servidor. Con cero descargas y cero likes en el momento de la consulta, es un artefacto muy reciente y sin validación comunitaria.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 - Modelo entrenado con datos sintéticos: el registro terapéutico puede sonar artificial o genérico, y no está validado clínicamente.
 - Riesgo de alucinación inherente a un modelo de 1.7B; no debe usarse como sustituto de atención psicológica profesional.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que complica la automatización y la redistribución.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que complica la automatización y la redistribución.
 - Idiomas soportados no especificados; no se garantiza un rendimiento adecuado en castellano.
 - Cero descargas y cero likes: sin validación comunitaria ni evidencia de calidad reportada.
 - Longitud de contexto no documentada; no se puede planificar su uso en conversaciones largas sin verificación empírica.
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/locriani/therapeutic-register-qwen3-1.7b-onnx
+- Hugging Face: https://huggingface.co/locriani/therapeutic-register-qwen3-1.7b-onnx
 - Modelo base: https://huggingface.co/locriani/therapeutic-register-qwen3-1.7b
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

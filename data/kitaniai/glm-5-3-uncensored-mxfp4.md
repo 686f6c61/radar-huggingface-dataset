@@ -114,7 +114,7 @@ Diferencias medibles respecto a la fuente inmediata: reducción de tamaño del 4
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kitaniai/GLM-5.3-UNCENSORED-MXFP4
+- Modelo en Hugging Face: https://huggingface.co/kitaniai/GLM-5.3-UNCENSORED-MXFP4
 - Modelo base inmediato: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8
 - Revisión exacta del modelo fuente: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8/tree/12170112d07e50d7dbe8e5ca1691f4fd8c1179e1
 - Base de la fuente: https://huggingface.co/JANGQ-AI/GLM-5.3-FP8

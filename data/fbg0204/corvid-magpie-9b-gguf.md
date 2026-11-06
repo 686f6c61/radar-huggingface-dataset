@@ -91,9 +91,9 @@ Las mediciones de contexto largo se tomaron con Qwen3.5-9B, que comparte arquite
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad | Rendimiento documentado |
 |---|---|---|---|---|---|---|
-| Corvid-Magpie-9B | ~9B (recuento exacto no disponible) | 262.144 tokens | Q4_K_M GGUF (5,78 GB) | Apache-2.0 | HuggingFace (fbg0204/Corvid-Magpie-9B-gguf) | 18/20 en suite interna de codigo Python; 41,6 tok/s con MTP |
+| Corvid-Magpie-9B | ~9B (recuento exacto no disponible) | 262.144 tokens | Q4_K_M GGUF (5,78 GB) | Apache-2.0 | Hugging Face (fbg0204/Corvid-Magpie-9B-gguf) | 18/20 en suite interna de codigo Python; 41,6 tok/s con MTP |
 | Qwen3.5-9B | ~9B (recuento exacto no disponible) | 262.144 tokens (comparte arquitectura) | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | 8/20 sin presupuesto de razonamiento y 18/20 con 2048 tokens en la misma suite |
-| empero-ai/Qwen3.8-9B-Distill | ~9B (recuento exacto no disponible) | no disponible | GGUF Q4_K_M (aproximadamente 5,78 GB) y proyector de vision F16 de 918 MB | Apache-2.0 segun la model card de Magpie | HuggingFace | no disponible |
+| empero-ai/Qwen3.8-9B-Distill | ~9B (recuento exacto no disponible) | no disponible | GGUF Q4_K_M (aproximadamente 5,78 GB) y proyector de vision F16 de 918 MB | Apache-2.0 segun la model card de Magpie | Hugging Face | no disponible |
 
 No se dispone de datos que permitan comparar con alternativas de otros fabricantes (por ejemplo, Llama o Mistral de tamano similar); esa comparacion no esta disponible en la informacion proporcionada.
 
@@ -114,7 +114,7 @@ No se dispone de datos que permitan comparar con alternativas de otros fabricant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbg0204/Corvid-Magpie-9B-gguf
+- Modelo en Hugging Face: https://huggingface.co/fbg0204/Corvid-Magpie-9B-gguf
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-9B-Distill
 - llama.cpp (runtime recomendado por el autor, citado en la model card): no se proporciona URL especifica en la informacion disponible
 - Paper, blog tecnico, repositorio adicional o demo: no disponibles en la informacion proporcionada

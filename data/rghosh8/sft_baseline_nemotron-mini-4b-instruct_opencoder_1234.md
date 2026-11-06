@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_opencoder_1234` es un ajuste fino supervisado (SFT) del modelo `nvidia/Nemotron-Mini-4B-Instruct`, publicado por el usuario rghosh8 en HuggingFace. Se trata de un modelo de generación de texto conversacional de aproximadamente 4.190 millones de parámetros, derivado directamente del checkpoint instruct de NVIDIA mediante la librería TRL. El nombre del repositorio sugiere que forma parte de un experimento de línea base (baseline) de SFT con una configuración de semilla concreta (seed 1234) y posiblemente un conjunto de datos de tipo "opencoder".
+`rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_opencoder_1234` es un ajuste fino supervisado (SFT) del modelo `nvidia/Nemotron-Mini-4B-Instruct`, publicado por el usuario rghosh8 en Hugging Face. Se trata de un modelo de generación de texto conversacional de aproximadamente 4.190 millones de parámetros, derivado directamente del checkpoint instruct de NVIDIA mediante la librería TRL. El nombre del repositorio sugiere que forma parte de un experimento de línea base (baseline) de SFT con una configuración de semilla concreta (seed 1234) y posiblemente un conjunto de datos de tipo "opencoder".
 
 El modelo hereda la arquitectura y el conocimiento del Nemotron-Mini-4B-Instruct original, pero no se documenta en la model card qué datos de ajuste se han utilizado, qué hiperparámetros se aplicaron ni qué mejoras o degradaciones introduce respecto al modelo base. La model card es una plantilla autogenerada por TRL, sin secciones de resultados, evaluación o limitaciones.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_opencoder_1234 | 4,19B | no disponible | no disponible | HuggingFace (0 descargas) |
-| nvidia/Nemotron-Mini-4B-Instruct (modelo base) | ~4B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace (modelo oficial de NVIDIA) |
-| Modelos instruct de ~4B de la familia Llama/Mistral/Qwen | ~4B | variable | variable | HuggingFace |
+| rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_opencoder_1234 | 4,19B | no disponible | no disponible | Hugging Face (0 descargas) |
+| nvidia/Nemotron-Mini-4B-Instruct (modelo base) | ~4B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face (modelo oficial de NVIDIA) |
+| Modelos instruct de ~4B de la familia Llama/Mistral/Qwen | ~4B | variable | variable | Hugging Face |
 
 La comparación cuantitativa con alternativas no está disponible porque no se han publicado benchmarks de este checkpoint. El modelo base oficial de NVIDIA es la referencia natural, pero sus métricas no se incluyen en la información proporcionada.
 
@@ -82,6 +82,6 @@ La comparación cuantitativa con alternativas no está disponible porque no se h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_opencoder_1234
+- Modelo en Hugging Face: https://huggingface.co/rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_opencoder_1234
 - Modelo base: https://huggingface.co/nvidia/Nemotron-Mini-4B-Instruct
 - Repositorio TRL: https://github.com/huggingface/trl

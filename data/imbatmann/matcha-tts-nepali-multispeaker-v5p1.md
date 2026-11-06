@@ -3,7 +3,7 @@
 ## Resumen
 Matcha-TTS Nepali Multispeaker v5p1 es un modelo de síntesis de texto a voz (TTS) desarrollado por Imbatmann, especializado en nepalí e inglés. Se basa en la arquitectura Matcha-TTS, que utiliza flow matching para generar espectrogramas mel, combinado con un vocoder HiFi-GAN para producir audio. El modelo es multispeaker, lo que permite condicionar la generación a distintas voces mediante embeddings de hablante.
 
-Este modelo aborda la escasez de sistemas TTS de calidad para el nepalí, un idioma con recursos limitados en comparación con lenguas dominantes. Su diseño multispeaker lo hace adecuado para aplicaciones que requieren múltiples voces, como asistentes de voz, audiolibros o sistemas de narración. El repositorio tiene un tamaño de 0,3 GB, lo que indica un modelo ligero, y su licencia CC-BY-4.0 permite uso comercial con atribución. El acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace.
+Este modelo aborda la escasez de sistemas TTS de calidad para el nepalí, un idioma con recursos limitados en comparación con lenguas dominantes. Su diseño multispeaker lo hace adecuado para aplicaciones que requieren múltiples voces, como asistentes de voz, audiolibros o sistemas de narración. El repositorio tiene un tamaño de 0,3 GB, lo que indica un modelo ligero, y su licencia CC-BY-4.0 permite uso comercial con atribución. El acceso es restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones técnicas
 | Parametro | Valor |
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 No se dispone de datos comparativos con otros modelos de la misma categoría. Existe una versión anterior del mismo autor, `Imbatmann/matcha-tts-nepali-multispeaker-v2`, pero no se han publicado métricas de rendimiento que permitan una comparación objetiva. Por tanto, la comparativa se considera no disponible.
 
 ## Limitaciones y advertencias
-- Acceso restringido: el modelo es gated en HuggingFace, por lo que es necesario aceptar las condiciones de uso antes de poder descargarlo.
+- Acceso restringido: el modelo es gated en Hugging Face, por lo que es necesario aceptar las condiciones de uso antes de poder descargarlo.
 - Sin datos de benchmarks: la calidad del modelo no ha sido validada públicamente mediante métricas estándar, lo que dificulta evaluar su rendimiento frente a alternativas.
 - Limitaciones de idioma: solo soporta nepalí e inglés. No es adecuado para generar voz en otros idiomas.
 - Licencia CC-BY-4.0: permite uso comercial, pero requiere atribución al autor. Es necesario revisar los términos exactos de la licencia para cumplir con la atribución en productos derivados.
@@ -59,5 +59,5 @@ No se dispone de datos comparativos con otros modelos de la misma categoría. Ex
 - El tamaño reducido del repositorio puede implicar un modelo con menor capacidad de generalización en comparación con sistemas TTS más grandes, aunque no se dispone de datos para confirmarlo.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Imbatmann/matcha-tts-nepali-multispeaker-v5p1
+- Hugging Face: https://huggingface.co/Imbatmann/matcha-tts-nepali-multispeaker-v5p1
 - Versión anterior v2: https://huggingface.co/Imbatmann/matcha-tts-nepali-multispeaker-v2

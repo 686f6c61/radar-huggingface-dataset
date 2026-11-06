@@ -8,7 +8,7 @@ Se trata de un adaptador LoRA publicado por el usuario nmuendler sobre el modelo
 
 El interés de esta publicación es doble. Por un lado, es un artefacto de investigación: al ser un checkpoint intermedio de una curva de entrenamiento, permite estudiar cómo evolucionan las capacidades del modelo (razonamiento y generación de código Rust) en función del número de pasos de SFT, algo poco habitual en los adaptadores publicados. Por otro, se apoya en un modelo base relevante: DeepSeek-R1-Distill-Qwen-7B es un transformer decoder-only de aproximadamente 7,6 mil millones de parámetros, derivado de la familia Qwen2.5 y destilado a partir de trazas de razonamiento de DeepSeek-R1.
 
-Conviene subir la advertencia al principio de la ficha: esto no es un modelo autónomo, sino un adaptador que requiere descargar el modelo base para poder ejecutarse. La model card es la plantilla genérica de HuggingFace sin rellenar (todos los campos figuran como "[More Information Needed]"), por lo que no hay información oficial sobre datos de entrenamiento, hiperparámetros, rangos LoRA, evaluación ni licencia. Cualquier uso en producción exige validación previa por parte del equipo que lo adopte.
+Conviene subir la advertencia al principio de la ficha: esto no es un modelo autónomo, sino un adaptador que requiere descargar el modelo base para poder ejecutarse. La model card es la plantilla genérica de Hugging Face sin rellenar (todos los campos figuran como "[More Information Needed]"), por lo que no hay información oficial sobre datos de entrenamiento, hiperparámetros, rangos LoRA, evaluación ni licencia. Cualquier uso en producción exige validación previa por parte del equipo que lo adopte.
 
 ## Especificaciones técnicas
 
@@ -108,7 +108,7 @@ Diferencias clave: el adaptador no aporta pesos completos ni puede ejecutarse de
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step264
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step264
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre cálculo de emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la model card: https://mlco2.github.io/impact#compute

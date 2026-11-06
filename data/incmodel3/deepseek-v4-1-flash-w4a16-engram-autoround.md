@@ -27,7 +27,7 @@ No se dispone de información sobre los datos de entrenamiento del modelo base, 
 
 ## Capacidades
 
-- Generación de texto: el pipeline de HuggingFace es `text-generation`, y el modelo es apto para tareas de lenguaje natural.
+- Generación de texto: el pipeline de Hugging Face es `text-generation`, y el modelo es apto para tareas de lenguaje natural.
 - Razonamiento matemático: el benchmark GSM8K (5-shot, thinking off, n=1319) alcanza 93.93/94.01, frente al baseline de 92.87, lo que indica que conserva la capacidad del modelo base en problemas aritméticos y de lógica.
 - Soporte multimodal (visión): el modelo base incluye una torre de visión y un aligner, pero la configuración de despliegue de ejemplo usa `--language-model-only`, por lo que la visión no está activada en ese escenario.
 - Tool calling / function calling: no disponible en la información proporcionada.
@@ -78,12 +78,12 @@ No se dispone de información sobre otras alternativas de la misma categoría (m
 - La configuración de ejemplo usa `--language-model-only`, por lo que la torre de visión del modelo base no se activa en ese escenario. No se ha evaluado la parte multimodal en esta cuantización.
 - No se dispone de información sobre los idiomas soportados, sesgos conocidos, riesgo de alucinación ni restricciones adicionales de uso comercial. La licencia MIT permite uso comercial, pero el modelo no ha sido auditado.
 - La cuantización de las tablas engram a INT4 es una aproximación. Solo se ha validado en GSM8K; no se han realizado evaluaciones exhaustivas en otras tareas.
-- El checkpoint no tiene descargas ni likes en HuggingFace, por lo que no ha sido validado por la comunidad.
+- El checkpoint no tiene descargas ni likes en Hugging Face, por lo que no ha sido validado por la comunidad.
 - El tamaño del checkpoint y la necesidad de 4×H200 limitan su uso a infraestructuras de GPU de alto rendimiento, lo que excluye entornos con una sola GPU o hardware de consumo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/INCModel3/DeepSeek-V4.1-Flash-W4A16-Engram-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/INCModel3/DeepSeek-V4.1-Flash-W4A16-Engram-AutoRound
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - PR de vLLM requerido: https://github.com/vllm-project/vllm/pull/56201
 - Repositorio de auto-round: https://github.com/intel/auto-round

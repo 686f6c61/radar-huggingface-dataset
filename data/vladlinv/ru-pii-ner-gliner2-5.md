@@ -103,7 +103,7 @@ No se dispone de métricas comparativas publicadas entre estos modelos. La princ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vladlinv/ru-pii-ner-gliner2.5
+- Modelo en Hugging Face: https://huggingface.co/vladlinv/ru-pii-ner-gliner2.5
 - Modelo base: https://huggingface.co/fastino/gliner2.5-multi-v1
 - Repositorio GLiNER: https://github.com/urchade/GLiNER
 - Página de Fastino sobre GLiNER2.5: https://fastino.ai/models/gliner2-5

@@ -18,7 +18,7 @@ Su relevancia actual es, por tanto, metodologica mas que de capacidades: se trat
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (solo se declaran pesos en safetensors) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (la ficha de HuggingFace no la especifica) |
+| Licencia | no disponible (la ficha de Hugging Face no la especifica) |
 | Formato de pesos | safetensors |
 
 Datos adicionales del repositorio: 64,0 GB de tamano, 7 checkpoints historicos, 0 descargas, 0 likes, etiqueta de region `us`, creado el 2026-10-06 y actualizado el 2026-10-06.
@@ -68,7 +68,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Limitaciones y advertencias
 
-- Ausencia de licencia: la ficha de HuggingFace no especifica licencia, por lo que no puede asumirse permiso de uso comercial ni de redistribucion. Cualquier uso en produccion requiere aclarar antes las condiciones con el autor.
+- Ausencia de licencia: la ficha de Hugging Face no especifica licencia, por lo que no puede asumirse permiso de uso comercial ni de redistribucion. Cualquier uso en produccion requiere aclarar antes las condiciones con el autor.
 - Ausencia de benchmarks: no hay ninguna medicion publicada de calidad, precision o robustez, lo que impide justificar su adopcion frente a otras politicas.
 - Documentacion tecnica minima: no se especifican arquitectura, parametros, contexto, idiomas ni datos de entrenamiento, lo que dificulta la evaluacion previa.
 - Riesgo de alucinacion y sesgos: no evaluable con la informacion disponible, ya que se desconoce el dataset de entrenamiento mas alla de su identificador y su prefijo.
@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/latency-sensitive-bench/vla-finetuning-scope-models
+- Modelo en Hugging Face: https://huggingface.co/latency-sensitive-bench/vla-finetuning-scope-models
 - Dataset de evaluacion y evidencias de codigo: https://huggingface.co/datasets/latency-sensitive-bench/vla-finetuning-scope-data/tree/c31ff10813830c56214eefa312af16ed00abec76
 - Dataset de entrenamiento referenciado (propietario compartido): `latency-sensitive-bench/flappy_200ep@5df5688a961dc2c91090155c719bff4a5b248235`
 - Fichero de indice de ejecuciones mencionado en la model card: `run_index.json` (incluido en el repositorio)

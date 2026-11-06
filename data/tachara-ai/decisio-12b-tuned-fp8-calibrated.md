@@ -71,10 +71,10 @@ El autor indica que la FP8 mantiene la misma respuesta principal en el 94,3%, 94
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Decisio-12b-tuned-fp8-calibrated | 11,96B | no disponible | Decisión probabilística calibrada, FP8 | Apache 2.0 | HuggingFace (26 descargas) |
-| Decisio-12b-tuned-calibrated (bf16) | 11,96B | no disponible | Decisión probabilística calibrada, bf16 | Apache 2.0 | HuggingFace |
-| Decisio-12b-tuned-fp8-commit | 11,96B | no disponible | Decisión con regla de compromiso sí/no, FP8 | Apache 2.0 | HuggingFace |
-| google/gemma-4-12B-it | 12B | no disponible | Modelo conversacional general | Términos de Gemma 4 | HuggingFace |
+| Decisio-12b-tuned-fp8-calibrated | 11,96B | no disponible | Decisión probabilística calibrada, FP8 | Apache 2.0 | Hugging Face (26 descargas) |
+| Decisio-12b-tuned-calibrated (bf16) | 11,96B | no disponible | Decisión probabilística calibrada, bf16 | Apache 2.0 | Hugging Face |
+| Decisio-12b-tuned-fp8-commit | 11,96B | no disponible | Decisión con regla de compromiso sí/no, FP8 | Apache 2.0 | Hugging Face |
+| google/gemma-4-12B-it | 12B | no disponible | Modelo conversacional general | Términos de Gemma 4 | Hugging Face |
 
 La comparación con modelos de decisión de otros autores no está disponible en la información proporcionada.
 
@@ -92,7 +92,7 @@ La comparación con modelos de decisión de otros autores no está disponible en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tachara-ai/Decisio-12b-tuned-fp8-calibrated
+- Hugging Face: https://huggingface.co/tachara-ai/Decisio-12b-tuned-fp8-calibrated
 - Repositorio bf16 de referencia: https://huggingface.co/tachara-ai/Decisio-12b-tuned-calibrated
 - Variante commit: https://huggingface.co/tachara-ai/Decisio-12b-tuned-fp8-commit
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it

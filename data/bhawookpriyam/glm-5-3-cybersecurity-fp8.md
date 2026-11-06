@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-CYBERSECURITY-FP8 es una variante modificada a nivel de pesos del modelo GLM-5.3 en cuantización FP8, publicada en HuggingFace bajo el identificador `Bhawookpriyam/GLM-5.3-CYBERSECURITY-FP8`. Según su model card, se trata de una release del proyecto dealignai (etiquetada como "CRACK"), derivada de `JANGQ-AI/GLM-5.3-FP8`, que a su vez es la cuantización FP8 del modelo upstream `zai-org/GLM-5.3`. El modelo conserva la arquitectura original `glm_moe_dsa` (Mixture of Experts con atención dispersa tipo DeepSeek), 78 capas y un total de 753.329.940.480 parámetros (≈753B), sin visión ni audio: es text-only.
+GLM-5.3-CYBERSECURITY-FP8 es una variante modificada a nivel de pesos del modelo GLM-5.3 en cuantización FP8, publicada en Hugging Face bajo el identificador `Bhawookpriyam/GLM-5.3-CYBERSECURITY-FP8`. Según su model card, se trata de una release del proyecto dealignai (etiquetada como "CRACK"), derivada de `JANGQ-AI/GLM-5.3-FP8`, que a su vez es la cuantización FP8 del modelo upstream `zai-org/GLM-5.3`. El modelo conserva la arquitectura original `glm_moe_dsa` (Mixture of Experts con atención dispersa tipo DeepSeek), 78 capas y un total de 753.329.940.480 parámetros (≈753B), sin visión ni audio: es text-only.
 
 El problema que aborda es muy concreto: reducir la tasa de rechazo (refusal) en categorías de ciberseguridad ofensiva, red team, desarrollo de exploits, ingeniería inversa, evasión, phishing, ataques de credenciales y análisis de malware. No es un "uncensor" de propósito general: en dominios ajenos a la ciberseguridad (armas, química, biología, acoso, desinformación) el modelo tiende a responder con un envoltorio "educativo", y la reproducción literal de contenido con copyright sigue produciendo rechazos suaves. La modificación es de pesos reales, no un fine-tuning, LoRA, hook de runtime ni truco de prompt.
 
@@ -113,7 +113,7 @@ No se dispone en la información proporcionada de otros modelos abliterados o si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bhawookpriyam/GLM-5.3-CYBERSECURITY-FP8
+- Modelo en Hugging Face: https://huggingface.co/Bhawookpriyam/GLM-5.3-CYBERSECURITY-FP8
 - Modelo base upstream: https://huggingface.co/zai-org/GLM-5.3
 - Modelo base inmediato (cuantización FP8): https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
 - Modelo hermano sin censura general: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8

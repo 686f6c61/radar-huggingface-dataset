@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wkentaro/Haas-ja-v1.0-coreml
+- Modelo en Hugging Face: https://huggingface.co/wkentaro/Haas-ja-v1.0-coreml
 - Modelo base: https://huggingface.co/third-intelligence/Haas-ja-v1.0
 - FluidAudio: https://github.com/FluidInference/FluidAudio
 - Rama de FluidAudio con soporte `haas-ja`: https://github.com/wkentaro/FluidAudio/tree/haas-ja

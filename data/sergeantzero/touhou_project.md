@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Touhou_Project es un repositorio publicado en HuggingFace por el usuario Sergeantzero bajo licencia Apache 2.0. La model card asociada no contiene mas informacion que el propio encabezado de licencia, por lo que no se dispone de datos sobre arquitectura, parametros, contexto, datos de entrenamiento o capacidades. El repositorio ocupa 13,2 GB y no registra descargas ni interacciones en el momento de la consulta.
+Touhou_Project es un repositorio publicado en Hugging Face por el usuario Sergeantzero bajo licencia Apache 2.0. La model card asociada no contiene mas informacion que el propio encabezado de licencia, por lo que no se dispone de datos sobre arquitectura, parametros, contexto, datos de entrenamiento o capacidades. El repositorio ocupa 13,2 GB y no registra descargas ni interacciones en el momento de la consulta.
 
 El nombre del repositorio sugiere una posible relacion tematica con la franquicia Touhou Project, pero se trata unicamente de una convencion de nomenclatura y no permite inferir el tipo de modelo (lenguaje, difusion de imagenes, vision, audio u otro). La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a articulos financieros sobre el tipo de interes preferencial estadounidense, sin conexion alguna con el repositorio.
 
@@ -42,7 +42,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 - Capacidades multilingues: no disponible.
 - Capacidades especiales (modo de razonamiento, vision, audio, codigo, matematicas): no disponible.
 
-La ausencia de pipeline declarado en los metadatos de HuggingFace impide incluso clasificar el modelo por tarea (text-generation, text-to-image, automatic-speech-recognition, etc.).
+La ausencia de pipeline declarado en los metadatos de Hugging Face impide incluso clasificar el modelo por tarea (text-generation, text-to-image, automatic-speech-recognition, etc.).
 
 ## Casos de uso
 
@@ -83,7 +83,7 @@ No disponible. Sin conocer el numero de parametros, la modalidad ni el dominio d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sergeantzero/Touhou_Project
+- Hugging Face: https://huggingface.co/Sergeantzero/Touhou_Project
 - Model card del autor: no disponible (solo contiene el encabezado de licencia)
 - Paper: no disponible
 - Blog o anuncio: no disponible

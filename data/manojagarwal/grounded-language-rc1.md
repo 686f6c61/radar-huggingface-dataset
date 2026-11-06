@@ -4,7 +4,7 @@
 
 `manojagarwal/grounded-language-rc1` no es un modelo de lenguaje, sino un repositorio de notas de investigación sobre *grounded language* (el problema de vincular el lenguaje con referentes del mundo físico o visual). El propio autor lo describe como un conjunto estructurado de notas, con referencias de evaluación concretas (RefCOCO, Flickr30k, Visual Genome) y preguntas abiertas, y separa explícitamente los planes y las hipótesis de los resultados ya completados. Los artefactos declarados son únicamente dos archivos de texto: `paper_notes.md` y `README.md`.
 
-A pesar de que los tags de HuggingFace incluyen `safetensors` y `transformer`, y de que el repositorio contiene un tensor de 49.600 parámetros, la model card afirma de forma literal que no se reclama "ningún checkpoint entrenado", ni mejoras de benchmark, ni ablaciones completadas, ni código publicado. El tamaño del repositorio (0,0 GB) es coherente con esa descripción: se trata de documentación, no de pesos utilizables.
+A pesar de que los tags de Hugging Face incluyen `safetensors` y `transformer`, y de que el repositorio contiene un tensor de 49.600 parámetros, la model card afirma de forma literal que no se reclama "ningún checkpoint entrenado", ni mejoras de benchmark, ni ablaciones completadas, ni código publicado. El tamaño del repositorio (0,0 GB) es coherente con esa descripción: se trata de documentación, no de pesos utilizables.
 
 Su relevancia es, por tanto, documental y metodológica: sirve como plantilla de planificación para estudios de *grounding* y como recordatorio de buenas prácticas (versiones de dataset, comandos, semillas, hardware y logs en bruto antes de publicar resultados). No debe evaluarse como un componente desplegable en producción.
 
@@ -69,7 +69,7 @@ No disponible. Este repositorio no es un modelo, por lo que no procede compararl
 | Parámetros | 49.600 en un tensor safetensors sin arquitectura documentada | No disponible |
 | Longitud de contexto | No disponible | No disponible |
 | Licencia | MIT | No disponible |
-| Disponibilidad | Público en HuggingFace, 0 descargas y 0 *likes* | No disponible |
+| Disponibilidad | Público en Hugging Face, 0 descargas y 0 *likes* | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ No disponible. Este repositorio no es un modelo, por lo que no procede compararl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/manojagarwal/grounded-language-rc1
+- Repositorio en Hugging Face: https://huggingface.co/manojagarwal/grounded-language-rc1
 - Artículo del autor sobre modelos de lenguaje con *grounding* (LinkedIn): https://www.linkedin.com/pulse/grounded-language-models-madan-agrawal-ed78v
 - *Grounding and Evaluation for Large Language Models: Practical Challenges and Lessons Learned* (arXiv): https://arxiv.org/html/2407.12858v1
 - Resultados de búsqueda no relacionados con este repositorio: NBC News sobre acceso no autorizado de un modelo de Google (https://www.nbcnews.com/tech/tech-news/google-says-ai-model-gained-unauthorized-access-three-systems-rcna598651), Xiaomi MiMo (https://mimo.mi.com/models/en-US/mimo-v2.6-pro) y el índice de modelos GGUF de Local AI Zone (https://local-ai-zone.github.io/).

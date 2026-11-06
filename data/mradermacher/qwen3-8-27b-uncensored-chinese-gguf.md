@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparativa 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B-Uncensored-Chinese (este) | 27,32 mil millones | no disponible | no disponible | GGUF en HuggingFace, 0 descargas |
+| Qwen3.8-27B-Uncensored-Chinese (este) | 27,32 mil millones | no disponible | no disponible | GGUF en Hugging Face, 0 descargas |
 | Qwen2.5-32B-Instruct | 32,5 mil millones | 128k tokens | Apache 2.0 | Pesos safetensors y GGUF de terceros |
 | Gemma-2-27B-it | 27,2 mil millones | 8k tokens | Licencia Gemma (uso comercial con restricciones) | Pesos safetensors y GGUF de terceros |
 | Mistral Small 3 (24B) | 23,6 mil millones | 32k tokens | Apache 2.0 | Pesos safetensors y GGUF de terceros |

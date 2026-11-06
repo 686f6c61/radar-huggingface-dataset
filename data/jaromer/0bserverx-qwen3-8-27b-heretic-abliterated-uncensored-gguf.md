@@ -78,7 +78,7 @@ La principal diferencia con el modelo base es la eliminación de mecanismos de r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jaromer/0bserverx-Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jaromer/0bserverx-Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF
 - Repo original de 0bserverx: https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF
 - Discusión de uso del repo original: https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF/discussions/1
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

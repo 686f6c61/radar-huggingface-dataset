@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_605176261_beit_small` es una implementación a pequeña escala de la arquitectura BEiT (BERT Pre-Training of Image Transformers), publicada por el usuario Taylo-r6987 en HuggingFace. A diferencia de los BEiT originales, orientados a tareas de visión por computador, esta variante declara un cabezal de tarea de tipo "generación" y emplea atención dispersa (`sparse`), fusión por MLP concatenado (`concat-mlp`), activación GELU y normalización InstanceNorm.
+El modelo `model_605176261_beit_small` es una implementación a pequeña escala de la arquitectura BEiT (BERT Pre-Training of Image Transformers), publicada por el usuario Taylo-r6987 en Hugging Face. A diferencia de los BEiT originales, orientados a tareas de visión por computador, esta variante declara un cabezal de tarea de tipo "generación" y emplea atención dispersa (`sparse`), fusión por MLP concatenado (`concat-mlp`), activación GELU y normalización InstanceNorm.
 
 El repositorio es extremadamente minimalista: contiene un único archivo Python (`model_605176261_beit_small.py`) y una model card con escasa información técnica. No se especifican el número de parámetros, el tamaño del contexto, los datos de entrenamiento ni resultados de benchmarks. El modelo tiene cero descargas y cero likes en el momento de la consulta, por lo que su utilidad práctica en producción es, a día de hoy, no verificada.
 
@@ -70,6 +70,6 @@ No disponible. No se han publicado resultados comparativos de este modelo frente
 
 ## Enlaces
 
-- [HuggingFace: Taylo-r6987/model_605176261_beit_small](https://huggingface.co/Taylo-r6987/model_605176261_beit_small)
-- [Documentación de BEiT en HuggingFace](https://huggingface.co/docs/transformers/model_doc/beit)
+- [Hugging Face: Taylo-r6987/model_605176261_beit_small](https://huggingface.co/Taylo-r6987/model_605176261_beit_small)
+- [Documentación de BEiT en Hugging Face](https://huggingface.co/docs/transformers/model_doc/beit)
 - [Fuente de BEiT en GitHub (transformers)](https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/beit.md)

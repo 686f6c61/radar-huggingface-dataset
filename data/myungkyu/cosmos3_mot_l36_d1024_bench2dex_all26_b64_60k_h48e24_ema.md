@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Base | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cosmos3 Mot L36 D1024 Bench2Dex (este) | Cosmos3-Nano + DiT de acción | no disponible | no disponible | no disponible | Pesos DCP bf16 en HuggingFace |
+| Cosmos3 Mot L36 D1024 Bench2Dex (este) | Cosmos3-Nano + DiT de acción | no disponible | no disponible | no disponible | Pesos DCP bf16 en Hugging Face |
 | Cosmos3-Nano (modelo base) | Modelo de mundo de vídeo de NVIDIA | no disponible | no disponible | no disponible | Referenciado en la model card, sin enlace directo |
 | Políticas tipo diffusion policy sobre LeRobot | Transformer de difusión | variable | no disponible | variable | Múltiples implementaciones open source |
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento de este modelo ni de alternativas comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/cosmos3_mot_l36_d1024_bench2dex_all26_b64_60k_h48e24_ema
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/cosmos3_mot_l36_d1024_bench2dex_all26_b64_60k_h48e24_ema
 - VAE de referencia: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Cosmos3-Nano: no disponible como enlace directo en la información proporcionada
 - Bench2Dex: no disponible como enlace directo en la información proporcionada

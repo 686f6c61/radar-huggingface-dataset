@@ -80,7 +80,7 @@ No se dispone de modelos comparables en la informacion proporcionada. Como refer
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/Kohei-Yamashita/swap-illustration-lora
+- Adaptador en Hugging Face: https://huggingface.co/Kohei-Yamashita/swap-illustration-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Aplicacion Swap Illustration Studio: https://github.com/KarakuriAgent/swap-illustration-studio
 - Licencia (Qwen Research License Agreement) y aviso: ficheros LICENSE y NOTICE del repositorio del adaptador

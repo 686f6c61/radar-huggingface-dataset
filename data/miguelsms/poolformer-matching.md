@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Poolformer for Matching es un repositorio de HuggingFace publicado por el usuario MiguelSms que contiene una implementacion funcional de la arquitectura PoolFormer orientada a tareas de matching. El propio autor lo describe como un punto de partida experimental transparente: el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. No se reclama ninguna puntuacion de benchmark en la model card.
+Poolformer for Matching es un repositorio de Hugging Face publicado por el usuario MiguelSms que contiene una implementacion funcional de la arquitectura PoolFormer orientada a tareas de matching. El propio autor lo describe como un punto de partida experimental transparente: el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. No se reclama ninguna puntuacion de benchmark en la model card.
 
 La arquitectura declarada es PoolFormer en configuracion etiquetada como "huge", con atencion de ventana deslizante (sliding window), fusion mediante concat MLP, activacion gelu tanh y normalizacion GroupNorm. La receta de entrenamiento por defecto usa el optimizador NovoGrad con un schedule de warmup constante. El repositorio no incluye pesos entrenados, dataset, logs de entrenamiento ni resultados de evaluacion.
 
@@ -21,7 +21,7 @@ Su relevancia actual es acotada y muy especifica: sirve como esqueleto reproduci
 | Licencia | MIT |
 | Formato de pesos | safetensors (model.safetensors), acompanado de config.json, training_args.json y pipeline.py |
 
-Otros datos del repositorio: tarea declarada en tags como "matching", framework pytorch, 0 descargas, 0 likes, tamano de repositorio 0,0 GB, creado y actualizado el 15 de septiembre de 2026. No hay pipeline de HuggingFace asociado.
+Otros datos del repositorio: tarea declarada en tags como "matching", framework pytorch, 0 descargas, 0 likes, tamano de repositorio 0,0 GB, creado y actualizado el 15 de septiembre de 2026. No hay pipeline de Hugging Face asociado.
 
 ## Arquitectura y entrenamiento
 
@@ -75,7 +75,7 @@ La informacion proporcionada no incluye comparaciones ni datos de modelos altern
 | Contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no publicado | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | repositorio HuggingFace con 0 descargas, sin pipeline ni pesos entrenados | no disponible |
+| Disponibilidad | repositorio Hugging Face con 0 descargas, sin pipeline ni pesos entrenados | no disponible |
 
 En la practica, no se puede establecer una comparativa cuantitativa fiable porque este repositorio no publica resultados y su checkpoint no esta entrenado.
 
@@ -93,6 +93,6 @@ En la practica, no se puede establecer una comparativa cuantitativa fiable porqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MiguelSms/poolformer-matching
+- Repositorio en Hugging Face: https://huggingface.co/MiguelSms/poolformer-matching
 - Paper de referencia de la arquitectura PoolFormer, "MetaFormer is Actually What You Need for Vision" (Meta, 2021): https://arxiv.org/abs/2111.11418 (referencia externa al repositorio, no citada en la model card)
 - Resultados de la busqueda web: ninguno relevante. Los enlaces recuperados pertenecen a hilos del foro de viajes de Rick Steves sobre billetes de tren alemanes y no tienen relacion con el modelo.

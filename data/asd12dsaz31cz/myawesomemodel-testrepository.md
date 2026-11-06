@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepository es un repositorio alojado en HuggingFace por el usuario ASD12DSAZ31CZ, publicado el 13 de octubre de 2026 y etiquetado con las librerías transformers y pytorch. Por su nombre ("TestRepository"), su tamaño de repositorio (0,0 GB) y la ausencia de pesos, descargas y valoraciones, se trata con toda probabilidad de un repositorio de prueba o una plantilla, no de un modelo entrenado y distribuible.
+MyAwesomeModel-TestRepository es un repositorio alojado en Hugging Face por el usuario ASD12DSAZ31CZ, publicado el 13 de octubre de 2026 y etiquetado con las librerías transformers y pytorch. Por su nombre ("TestRepository"), su tamaño de repositorio (0,0 GB) y la ausencia de pesos, descargas y valoraciones, se trata con toda probabilidad de un repositorio de prueba o una plantilla, no de un modelo entrenado y distribuible.
 
-La información disponible es internamente contradictoria: las etiquetas de HuggingFace apuntan a una arquitectura tipo BERT con pipeline de feature-extraction, mientras que la model card describe un asistente conversacional con razonamiento, modo de pensamiento, function calling y subida de ficheros. No se publican parámetros totales, longitud de contexto, tokenizador, idiomas soportados ni formato de pesos.
+La información disponible es internamente contradictoria: las etiquetas de Hugging Face apuntan a una arquitectura tipo BERT con pipeline de feature-extraction, mientras que la model card describe un asistente conversacional con razonamiento, modo de pensamiento, function calling y subida de ficheros. No se publican parámetros totales, longitud de contexto, tokenizador, idiomas soportados ni formato de pesos.
 
 En consecuencia, esta ficha recoge únicamente los datos verificables del repositorio y los valores declarados en la model card, marcando de forma explícita todo lo que no está confirmado. No debe considerarse un modelo listo para producción ni para evaluación seria de capacidades.
 
@@ -12,7 +12,7 @@ En consecuencia, esta ficha recoge únicamente los datos verificables del reposi
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta de HuggingFace indica "bert"; la model card describe un modelo conversacional con razonamiento) |
+| Arquitectura | no disponible (la etiqueta de Hugging Face indica "bert"; la model card describe un modelo conversacional con razonamiento) |
 | Parametros totales | no disponible (una fuente externa de terceros menciona 23 B sin confirmar) |
 | Parametros activos | no aplica (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -111,7 +111,7 @@ No disponible. Los únicos modelos de comparación que aparecen en la model card
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASD12DSAZ31CZ/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/ASD12DSAZ31CZ/MyAwesomeModel-TestRepository
 - Repositorio relacionado (mismo contenido, otro autor): https://huggingface.co/ASD12DSAZ31CZ/my-awesome-model
 - Repositorio relacionado (variante del nombre): https://huggingface.co/asd12dscxzcz12/MyAwesomeModel-TestRepository
 - Ficha de terceros con mención no confirmada a 23 B de parámetros: https://savrn.com/models/myawesomemodel-testrepo-25

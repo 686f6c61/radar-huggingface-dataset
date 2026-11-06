@@ -25,7 +25,7 @@ Es relevante ahora porque combina tres tendencias simultaneas: modelos abiertos 
 | Tamano del repositorio | 61,1 GB |
 | Tokens especiales | BOS 200000, EOS 200001 / `<|eot|>`, pad 200018 |
 | Muestreo recomendado | temperature 1.0, top_p 0.95, top_k 64 (fijado en el GGUF) |
-| Fecha de publicacion | 11 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 11 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -117,7 +117,7 @@ Comparativa frente a alternativas de la misma categoria (otros modelos abiertos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Openintelligent123/Muse-Glimmer-30B-CRACK-GGUF
+- Hugging Face: https://huggingface.co/Openintelligent123/Muse-Glimmer-30B-CRACK-GGUF
 - Modelo base declarado: https://huggingface.co/meta-models/Muse-Glimmer-30B (identificador tal cual aparece en los metadatos; su existencia no se ha podido verificar)
 - Dealign.ai (autor): https://dealign.ai
 - Contacto del autor: eric@dealign.ai

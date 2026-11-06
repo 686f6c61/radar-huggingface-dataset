@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `BraveLizard/RVCModels` alojado en HuggingFace contiene un conjunto de pesos con un tamaño total de 31,2 GB, publicado por el autor BraveLizard. El nombre del repositorio sugiere una relación con la conversión de voz basada en recuperación (RVC, Retrieval-based Voice Conversion), una técnica popular para clonar voces y transformar audio. Sin embargo, la información pública disponible es extremadamente limitada: no se especifica la arquitectura, el pipeline, la licencia, los idiomas soportados ni se proporcionan métricas de rendimiento. El repositorio registra cero descargas y una única valoración positiva, lo que indica que se trata de un proyecto muy reciente o de escasa difusión.
+El repositorio `BraveLizard/RVCModels` alojado en Hugging Face contiene un conjunto de pesos con un tamaño total de 31,2 GB, publicado por el autor BraveLizard. El nombre del repositorio sugiere una relación con la conversión de voz basada en recuperación (RVC, Retrieval-based Voice Conversion), una técnica popular para clonar voces y transformar audio. Sin embargo, la información pública disponible es extremadamente limitada: no se especifica la arquitectura, el pipeline, la licencia, los idiomas soportados ni se proporcionan métricas de rendimiento. El repositorio registra cero descargas y una única valoración positiva, lo que indica que se trata de un proyecto muy reciente o de escasa difusión.
 
 Dado que no se dispone de documentación técnica adicional, esta ficha se basa únicamente en los metadatos del repositorio y en el tamaño de los archivos. Cualquier dato más allá de los aquí indicados debe considerarse no disponible y se recomienda contactar directamente con el autor para obtener información fiable antes de su uso en entornos de producción.
 
@@ -61,6 +61,6 @@ No disponible. Al carecer de informacion sobre la arquitectura y el rendimiento,
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/BraveLizard/RVCModels
+- Repositorio de Hugging Face: https://huggingface.co/BraveLizard/RVCModels
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) relacionados con este modelo en la informacion proporcionada.

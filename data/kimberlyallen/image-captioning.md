@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`kimberlyallen/image-captioning` es un repositorio alojado en HuggingFace cuyo contenido declarado no es un modelo entrenado, sino una nota de investigación titulada «Notes on Image Captioning». La model card del autor es explícita al respecto: el repositorio contiene motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y «no se presenta como un artículo completado ni como una publicación de modelos entrenados». El artefacto principal es `review.md`; el `README.md` solo lo documenta.
+`kimberlyallen/image-captioning` es un repositorio alojado en Hugging Face cuyo contenido declarado no es un modelo entrenado, sino una nota de investigación titulada «Notes on Image Captioning». La model card del autor es explícita al respecto: el repositorio contiene motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y «no se presenta como un artículo completado ni como una publicación de modelos entrenados». El artefacto principal es `review.md`; el `README.md` solo lo documenta.
 
-Los metadatos de HuggingFace etiquetan el repositorio con `safetensors`, `transformer` e `image-captioning`, y el recuento real de parámetros del fichero safetensors es de 49.600 parámetros, una cifra compatible con un fichero de prueba o marcador de posición, no con un modelo de captioning funcional. El tamaño total del repositorio es de 0,0 GB, no hay pipeline declarado, no se indican idiomas y las descargas e interacciones registradas son cero.
+Los metadatos de Hugging Face etiquetan el repositorio con `safetensors`, `transformer` e `image-captioning`, y el recuento real de parámetros del fichero safetensors es de 49.600 parámetros, una cifra compatible con un fichero de prueba o marcador de posición, no con un modelo de captioning funcional. El tamaño total del repositorio es de 0,0 GB, no hay pipeline declarado, no se indican idiomas y las descargas e interacciones registradas son cero.
 
 Su relevancia actual es, por tanto, metodológica y no técnica: sirve como ejemplo de estructura de nota de investigación reproducible en el ámbito de imagen-a-texto, con referencias a MS COCO Captions, NoCaps y TextCaps como contexto de evaluación. No debe tratarse como un modelo desplegable ni como evidencia de resultados experimentales.
 
@@ -84,7 +84,7 @@ No es posible establecer una comparativa funcional. Este repositorio no es un mo
 - Recuento de parámetros de 49.600: incompatible con un sistema de captioning operativo; es coherente con un fichero de prueba o marcador de posición.
 - Ausencia de validación comunitaria: 0 descargas y 0 likes en el momento de la consulta, sin issues ni discusiones asociadas.
 - Repositorio vacío en la práctica: 0,0 GB de tamaño total, sin ficheros de configuración, tokenizador ni script de inferencia descritos.
-- Sin pipeline declarado en HuggingFace, por lo que la plataforma no expone una tarea de inferencia para el repositorio.
+- Sin pipeline declarado en Hugging Face, por lo que la plataforma no expone una tarea de inferencia para el repositorio.
 - Idiomas no declarados: no puede asumirse soporte multilingüe ni siquiera monolingüe.
 - Riesgo de interpretación errónea: las secciones de hipótesis y planes pueden confundirse con resultados si no se lee la advertencia de alcance.
 - Licencia cc-by-4.0: permite uso comercial con atribución, pero la propia model card advierte de que deben revisarse por separado los términos de los datos de origen cuando se combine con datasets externos.
@@ -93,7 +93,7 @@ No es posible establecer una comparativa funcional. Este repositorio no es un mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kimberlyallen/image-captioning
+- Repositorio en Hugging Face: https://huggingface.co/kimberlyallen/image-captioning
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de código: no disponible

@@ -32,7 +32,7 @@ No se proporcionan datos sobre el entrenamiento: no se indica el número de toke
 - No tiene capacidades funcionales reales al ser un checkpoint de inicialización sin entrenamiento.
 - La arquitectura está diseñada para retrieval, lo que implica que podría aprender a representar consultas y documentos en un espacio vectorial compartido si se entrena adecuadamente.
 - Soporta ejecución de pruebas de humo mediante el script `train.py`, que incluye un ejemplo generado en el bloque `__main__`.
-- No es compatible con las APIs genéricas de carga automática de HuggingFace; requiere un adaptador explícito por ser una implementación personalizada.
+- No es compatible con las APIs genéricas de carga automática de Hugging Face; requiere un adaptador explícito por ser una implementación personalizada.
 - No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión o audio.
 
 ## Casos de uso
@@ -41,7 +41,7 @@ No se proporcionan datos sobre el entrenamiento: no se indica el número de toke
 - Experimentación con modelos de tamaño mínimo: su reducido número de parámetros (33K) facilita pruebas de concepto en entornos con recursos muy limitados, como CPUs de un solo núcleo o incluso microcontroladores.
 - Base para estudios de scaling laws: al ser un punto de partida reproducible, se puede entrenar con distintos volúmenes de datos para analizar la relación entre capacidad y rendimiento en retrieval.
 - Evaluación de estrategias de inicialización: el checkpoint permite comparar el comportamiento de distintas semillas y configuraciones de arranque en experimentos controlados.
-- Desarrollo de adaptadores de carga: al no ser un modelo estándar, puede usarse como caso de prueba para escribir wrappers personalizados que integren arquitecturas custom en pipelines de HuggingFace.
+- Desarrollo de adaptadores de carga: al no ser un modelo estándar, puede usarse como caso de prueba para escribir wrappers personalizados que integren arquitecturas custom en pipelines de Hugging Face.
 - Docencia en deep learning: el código y la configuración son lo bastante simples como para utilizarse en cursos de arquitecturas transformer, mostrando componentes como cross-attention y normalización alternativa.
 
 ## Benchmarks y rendimiento
@@ -64,12 +64,12 @@ No disponible. Este modelo es un checkpoint de inicialización sin entrenar, con
 
 - El checkpoint no está entrenado: cualquier uso en producción o evaluación seria es inválido.
 - No se ha auditado el modelo en términos de robustez, sesgos o transferencia de dominio.
-- La implementación es personalizada y no compatible con las APIs estándar de HuggingFace; requiere adaptadores específicos.
+- La implementación es personalizada y no compatible con las APIs estándar de Hugging Face; requiere adaptadores específicos.
 - No se proporcionan datos sobre el contexto máximo soportado ni sobre los idiomas, por lo que no es posible garantizar su comportamiento en ningún escenario real.
 - La licencia Apache 2.0 permite uso comercial, pero al tratarse de un modelo sin entrenar, su valor comercial es nulo sin un proceso de entrenamiento completo.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse por separado, sin mezclarlo con los valores por defecto del repositorio.
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/svkuznetsov/tiny-transformer-retrieval)
+- [Página del modelo en Hugging Face](https://huggingface.co/svkuznetsov/tiny-transformer-retrieval)
 - No se han encontrado otros enlaces relevantes (paper, blog o repositorio asociado) en la búsqueda web.

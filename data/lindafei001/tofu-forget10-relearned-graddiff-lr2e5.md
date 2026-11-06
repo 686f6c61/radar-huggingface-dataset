@@ -84,6 +84,6 @@ Los tres modelos de la colección comparten la misma arquitectura base y tamaño
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lindafei001/tofu-forget10-relearned-GradDiff-lr2e5
+- Modelo en Hugging Face: https://huggingface.co/lindafei001/tofu-forget10-relearned-GradDiff-lr2e5
 - Modelo base (checkpoint unlearned): https://huggingface.co/open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_GradDiff_lr2e-05_alpha1_epoch10
 - Repositorio del proyecto (mencionado en la model card, URL no disponible en la información proporcionada): contiene `scripts/relearn_curve.py` para reproducir el experimento.

@@ -84,8 +84,8 @@ El autor advierte que el error estandar binomial a 500 tareas es de aproximadame
 
 | Modelo | Parametros | Contexto | SWE-bench Verified | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ziansu/r2egym-tip` (`step80`) | 4,21 B (LM) / 4,54 B con vision | 65.536 en entrenamiento; evaluado a 98.304 | 52,20 % pass@1 / 64,40 % pass@3 | Apache 2.0 | HuggingFace, safetensors, 0 descargas |
-| `Qwen/Qwen3.5-4B` (modelo base) | 4,21 B (LM) / 4,54 B con vision | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace (modelo base de referencia) |
+| `ziansu/r2egym-tip` (`step80`) | 4,21 B (LM) / 4,54 B con vision | 65.536 en entrenamiento; evaluado a 98.304 | 52,20 % pass@1 / 64,40 % pass@3 | Apache 2.0 | Hugging Face, safetensors, 0 descargas |
+| `Qwen/Qwen3.5-4B` (modelo base) | 4,21 B (LM) / 4,54 B con vision | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face (modelo base de referencia) |
 | Agente publicado por R2E-Gym | no disponible | no disponible | 51 % (resultado del proyecto R2E-Gym, con otra configuracion) | no disponible | codigo en GitHub |
 | Lineas base RLAD / OPD / GRPO sobre Qwen3.5-4B | 4,21 B (LM) | 98.304 en evaluacion | 51,80 % / 51,67 % / 46,00 % pass@1 | no disponible | resultados reportados en la model card; pesos no publicados en este repositorio |
 
@@ -107,10 +107,10 @@ La comparacion con el 51 % de R2E-Gym no es directa: procede del paper y del rep
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziansu/r2egym-tip
+- Modelo en Hugging Face: https://huggingface.co/ziansu/r2egym-tip
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Perfil del autor: https://huggingface.co/ziansu
 - Repositorio de R2E-Gym (COLM 2025): https://github.com/R2E-Gym/R2E-Gym
 - Paper R2E-Gym: Procedural Environments and Hybrid Verifiers for Scaling Open-Weight SWE Agents: https://arxiv.org/html/2504.07164
 - Sitio del proyecto R2E-Gym: https://r2e-gym.github.io/
-- Organizacion R2E-Gym en HuggingFace: https://huggingface.co/R2E-Gym
+- Organizacion R2E-Gym en Hugging Face: https://huggingface.co/R2E-Gym

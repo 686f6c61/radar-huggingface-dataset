@@ -71,5 +71,5 @@ No se dispone de información suficiente para realizar una comparativa objetiva 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/WinFunction/Tone-Detector-f1)
+- [Modelo en Hugging Face](https://huggingface.co/WinFunction/Tone-Detector-f1)
 - [Modelo base WavLM](https://huggingface.co/microsoft/wavlm-base-plus)

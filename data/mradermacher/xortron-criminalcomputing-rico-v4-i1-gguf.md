@@ -81,7 +81,7 @@ No disponible. Con la informacion proporcionada no es posible identificar modelo
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/XORTRON-CriminalComputing-RICO-v4-i1-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/XORTRON-CriminalComputing-RICO-v4-i1-GGUF
 - Modelo base (referenciado en la model card): https://huggingface.co/darkc0de/XORTRON-CriminalComputing-RICO-v4
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Repositorio de llama.cpp (runtime compatible con GGUF): https://github.com/ggml-org/llama.cpp

@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LesionDiffusion MLX (MedMLX) | 416 M | No aplica (imagen) | Síntesis de lesiones en TC, image-to-image | MIT | HuggingFace, MLX para Apple Silicon |
+| LesionDiffusion MLX (MedMLX) | 416 M | No aplica (imagen) | Síntesis de lesiones en TC, image-to-image | MIT | Hugging Face, MLX para Apple Silicon |
 | LesionDiffusion original (autores) | No disponible en la información | No aplica (imagen) | Síntesis de lesiones en TC | No disponible en la información | Referenciado vía arXiv:2503.00741 |
 | Otros modelos de difusión médica | No disponible | No aplica (imagen) | Generación de imagen médica | No disponible | No disponible |
 
@@ -84,7 +84,7 @@ No se dispone en la información proporcionada de datos suficientes para compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MedMLX/lesiondiffusion-mlx
+- Modelo en Hugging Face: https://huggingface.co/MedMLX/lesiondiffusion-mlx
 - Repositorio GitHub: https://github.com/MedMLX/lesiondiffusion-mlx
 - Documentación de ejecución: https://github.com/MedMLX/lesiondiffusion-mlx/blob/main/README.md#run
 - Artículo original (arXiv): https://arxiv.org/abs/2503.00741

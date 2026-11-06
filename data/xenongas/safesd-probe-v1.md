@@ -68,15 +68,15 @@ No se han publicado resultados en la información disponible sobre latencia, thr
 - VRAM estimada: ~1,2-1,5 GB para el backbone de 0,6 B en bf16/fp16 (el repositorio ocupa 1,2 GB), más el overhead del runtime de SafeSD y del proceso de servicio. Cifra estimada a partir del tamaño del repo, no confirmada por el autor.
 - Cabe en GPU de consumo: cualquier tarjeta con 4 GB o más (RTX 3050, 4060, 3060 12 GB, etc.), al ser un modelo de 0,6 B.
 - GPU recomendadas: no hay recomendaciones explícitas del autor. El ejemplo oficial usa dos dispositivos (`--device cuda:0 --probe-device cuda:1`), por lo que un despliegue cómodo es una máquina con dos GPU (por ejemplo, dos A100, L40S o RTX 4090) aunque también funciona en una sola GPU con la sonda en un proceso aparte.
-- Opciones de despliegue: runtime propio de SafeSD (`python scripts/benchsets.py serve --group silent --device cuda:0 --probe-device cuda:1 --ckpt checkpoints/SafeSD-probe-v1/probe.pt`), con PyTorch como única librería declarada. No hay pipeline de HuggingFace, ni soporte documentado de vLLM, llama.cpp, Ollama o TGI; el checkpoint no es un modelo causal estándar.
+- Opciones de despliegue: runtime propio de SafeSD (`python scripts/benchsets.py serve --group silent --device cuda:0 --probe-device cuda:1 --ckpt checkpoints/SafeSD-probe-v1/probe.pt`), con PyTorch como única librería declarada. No hay pipeline de Hugging Face, ni soporte documentado de vLLM, llama.cpp, Ollama o TGI; el checkpoint no es un modelo causal estándar.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SafeSD-probe-v1 | Sonda clasificadora de inyeccion de prompts sobre backbone causal | ~0,6 B + ~0,5 M | no disponible | no disponible (upstream en `UPSTREAM_LICENSE`) | HuggingFace, requiere SafeSD |
-| Qwen/Qwen3-0.6B | Modelo causal generativo (modelo base) | ~0,6 B | no disponible en la informacion proporcionada | upstream conservada en `UPSTREAM_LICENSE` | HuggingFace |
+| SafeSD-probe-v1 | Sonda clasificadora de inyeccion de prompts sobre backbone causal | ~0,6 B + ~0,5 M | no disponible | no disponible (upstream en `UPSTREAM_LICENSE`) | Hugging Face, requiere SafeSD |
+| Qwen/Qwen3-0.6B | Modelo causal generativo (modelo base) | ~0,6 B | no disponible en la informacion proporcionada | upstream conservada en `UPSTREAM_LICENSE` | Hugging Face |
 | Clasificadores de seguridad dedicados (familias Llama Guard, Qwen3Guard, detectores tipo DeBERTa para inyeccion de prompts) | Clasificacion de seguridad / inyeccion | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos verificados de parámetros, contexto, rendimiento o licencia de las alternativas, por lo que no se incluye una comparación cuantitativa. La comparación directa tampoco es trivial: SafeSD-probe-v1 está diseñado para operar dentro de SafeSD sobre el flujo de tokens de un backbone concreto, no como clasificador autónomo de texto.
@@ -97,10 +97,10 @@ No se dispone en la información proporcionada de datos verificados de parámetr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XenonGas/SafeSD-probe-v1
+- Modelo en Hugging Face: https://huggingface.co/XenonGas/SafeSD-probe-v1
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio SafeSD: https://github.com/flowermouse/SafeSD
-- Perfil del autor en HuggingFace (XenonGas / Jiachen Liu): https://huggingface.co/XenonGas
+- Perfil del autor en Hugging Face (XenonGas / Jiachen Liu): https://huggingface.co/XenonGas
 - Agent Safe Probe X (framework de evaluacion de seguridad de agentes): https://github.com/Mengmeara/agent-safe-probe-x
 - Lista de modelos de seguridad ofensiva en modelos abiertos: https://github.com/JoasASantos/Offensive-Security-AI-Models
 - XenonAI, pagina de investigacion: https://www.xenonai.com/research

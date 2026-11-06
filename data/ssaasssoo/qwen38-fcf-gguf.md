@@ -95,7 +95,7 @@ No se dispone de datos verificables de benchmarks ni de contexto para establecer
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ssaasssoo/qwen38-fcf-gguf
+- Hugging Face: https://huggingface.co/ssaasssoo/qwen38-fcf-gguf
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Referencia de la técnica COLD FUSION (Fable Fusion 711): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Dataset Polar-STRICT: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets

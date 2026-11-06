@@ -96,7 +96,7 @@ Desglose de las mejoras medidas: `mtp_folded_int8` reduce el MTP de aproximadame
 | Modelo | Parametros | Contexto | Formato y runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Autodroid LiteRT Community Qwen3-TTS-12Hz-0.6B-Base (esta ficha) | 0,6B (talker) + ~78M (MTP) | KV 1024 en el talker | .tflite, LiteRT Compiled Model, bucle en host con tres grafos | Apache-2.0 | Repositorio comunitario, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen3-TTS-12Hz-0.6B-Base (modelo original) | 0,6B (talker) + MTP | No disponible en la informacion proporcionada | Pesos originales del modelo base, ejecutables fuera de LiteRT | Apache-2.0 | Repositorio oficial de Qwen en HuggingFace |
+| Qwen/Qwen3-TTS-12Hz-0.6B-Base (modelo original) | 0,6B (talker) + MTP | No disponible en la informacion proporcionada | Pesos originales del modelo base, ejecutables fuera de LiteRT | Apache-2.0 | Repositorio oficial de Qwen en Hugging Face |
 | Otras alternativas de TTS on-device (Piper, Kokoro, etc.) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La informacion proporcionada no incluye especificaciones verificables de competidores directos de TTS on-device, por lo que la comparacion se limita al modelo base del que deriva esta conversion y a las distintas configuraciones de grafos incluidas en el propio repositorio (talker fp32 frente a int4; MTP y codec de referencia frente a plegados y divididos).
@@ -116,7 +116,7 @@ La informacion proporcionada no incluye especificaciones verificables de competi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/devendradhakad/autodroid-litert-community-Qwen3-TTS-12Hz-0.6B-Base
+- Repositorio en Hugging Face: https://huggingface.co/devendradhakad/autodroid-litert-community-Qwen3-TTS-12Hz-0.6B-Base
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - Ejemplo de referencia en LiteRT (pipeline Python, app Android y scripts de conversion): https://github.com/john-rocky/litert-samples/tree/qwen3-tts-sample/compiled_model_api/text_to_speech_lm
 - Scripts de conversion del MTP plegado y del codec dividido: https://github.com/john-rocky/hf-to-litertlm/tree/main/qwen3tts_work

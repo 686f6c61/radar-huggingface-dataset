@@ -79,7 +79,7 @@ No se han encontrado datos comparables publicados entre este modelo y alternativ
 
 ## Enlaces
 
-- Repositorio de HuggingFace de este modelo: https://huggingface.co/taurusduan/MiniMax-H3-x-Z-Image-native
+- Repositorio de Hugging Face de este modelo: https://huggingface.co/taurusduan/MiniMax-H3-x-Z-Image-native
 - Repositorio GGUF del mismo merge: https://huggingface.co/joeygambino/MiniMax-H3-x-Z-Image-GGUF
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio de GitHub de MiniMax-H3 (oficial): https://github.com/MiniMax-AI/MiniMax-H3

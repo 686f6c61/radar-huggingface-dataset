@@ -118,7 +118,7 @@ Para comparativas con modelos de enrutamiento de otros proveedores: no disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thechristyjo/laya-model-routing-1000hpo
+- Modelo en Hugging Face: https://huggingface.co/thechristyjo/laya-model-routing-1000hpo
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - Checkpoint hermano laya-model-routing-1000e12: https://huggingface.co/thechristyjo/laya-model-routing-1000e12
 - Checkpoint laya-model-routing: https://huggingface.co/thechristyjo/laya-model-routing

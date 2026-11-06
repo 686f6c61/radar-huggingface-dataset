@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jorgegrmo/tiny-transformer-experiment` es un repositorio de HuggingFace publicado por el usuario jorgegrmo que contiene una implementacion propia de un transformer de tamano minimo orientado a tareas multiples (multitask). Se trata de un *scaffold* experimental: el propio autor indica en la model card que el checkpoint incluido es un punto de partida reproducible para pruebas de humo (*smoke tests*), no un modelo entrenado ni una release con resultados de referencia. El repositorio cuenta con 0 descargas y 0 likes en el momento de la consulta.
+`jorgegrmo/tiny-transformer-experiment` es un repositorio de Hugging Face publicado por el usuario jorgegrmo que contiene una implementacion propia de un transformer de tamano minimo orientado a tareas multiples (multitask). Se trata de un *scaffold* experimental: el propio autor indica en la model card que el checkpoint incluido es un punto de partida reproducible para pruebas de humo (*smoke tests*), no un modelo entrenado ni una release con resultados de referencia. El repositorio cuenta con 0 descargas y 0 likes en el momento de la consulta.
 
 El dato verificable mas relevante es el recuento real de parametros del fichero `model.safetensors`: 33.088 parametros en total, lo que situa al modelo tres ordenes de magnitud por debajo de un transformer pequeno convencional. La configuracion declarada incluye atencion dispersa (*sparse attention*), fusion de tensores (*tensor fusion*), activacion aproximada de tipo GELU y una normalizacion denominada *scalenorm*, ademas de una escala etiquetada como "huge" por el autor.
 
@@ -22,7 +22,7 @@ Su relevancia no reside en capacidades de inferencia, sino en su valor como plan
 | Formato de pesos | Safetensors (`model.safetensors`), mas `config.json` y `training_args.json` |
 | Escala declarada | "huge" (etiqueta del autor) |
 | Tamano del repositorio | 0.0 GB |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-09-15 / 2026-09-15 |
 
@@ -50,7 +50,7 @@ En cuanto al entrenamiento, la receta por defecto usa SGD con un *warmup* lineal
 - *Fixture* en integracion continua: al ser un safetensors valido con 33.088 parametros, sirve como artefacto de test para comprobar rutas de carga, serializacion y *sharding* en herramientas propias sin consumir GPU ni minutos de CI.
 - Linea base de capacidad minima en experimentos de ablacion: el autor recomienda comparar contra una base de capacidad equivalente; este checkpoint cumple ese papel para medir cuanto aporta realmente una arquitectura mayor bajo la misma exposicion de datos y semillas.
 - Reproduccion de recetas de optimizacion: `training_args.json` documenta SGD con *warmup* lineal, util como configuracion de partida controlada al estudiar sensibilidad a hiperparametros en modelos diminutos.
-- Validacion de adaptadores de carga personalizados: dado que las APIs genericas de HuggingFace no reconocen esta arquitectura, el modelo sirve para desarrollar y probar el adaptador que mapea nombres de pesos y configuracion antes de aplicarlo a un modelo propio.
+- Validacion de adaptadores de carga personalizados: dado que las APIs genericas de Hugging Face no reconocen esta arquitectura, el modelo sirve para desarrollar y probar el adaptador que mapea nombres de pesos y configuracion antes de aplicarlo a un modelo propio.
 - Prototipado de *tensor fusion* para multitarea: la configuracion declarada permite experimentar con estrategias de fusion de representaciones en un coste computacional despreciable, antes de trasladar el diseno a un transformer grande.
 
 ## Benchmarks y rendimiento
@@ -83,6 +83,6 @@ No disponible. La informacion proporcionada no incluye especificaciones verifica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jorgegrmo/tiny-transformer-experiment
+- Hugging Face: https://huggingface.co/jorgegrmo/tiny-transformer-experiment
 - Ficheros referenciados en el repositorio (no se proporcionan enlaces directos): `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio adicional o demo: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo.

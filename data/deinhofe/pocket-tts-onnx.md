@@ -77,5 +77,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace: deinhofe/pocket-tts-onnx](https://huggingface.co/deinhofe/pocket-tts-onnx)
+- [Hugging Face: deinhofe/pocket-tts-onnx](https://huggingface.co/deinhofe/pocket-tts-onnx)
 - [Modelo base: kyutai/pocket-tts](https://huggingface.co/kyutai/pocket-tts)

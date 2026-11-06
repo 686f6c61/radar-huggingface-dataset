@@ -75,5 +75,5 @@ No se dispone de información sobre modelos comparables. El enfoque de añadir u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lllqaq/lora7b_rbonly_grid
-- Dataset mencionado: `lllqaq/datal` (no se proporciona URL directa, accesible desde el perfil del autor en HuggingFace)
+- Modelo en Hugging Face: https://huggingface.co/lllqaq/lora7b_rbonly_grid
+- Dataset mencionado: `lllqaq/datal` (no se proporciona URL directa, accesible desde el perfil del autor en Hugging Face)

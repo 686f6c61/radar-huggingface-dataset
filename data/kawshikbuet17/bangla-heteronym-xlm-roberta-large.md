@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bangla Heteronym Reader (XLM-R-large) es un modelo de desambiguación de heterónimos en bengalí desarrollado por Kawshik Kumar Paul (BUET) y publicado en HuggingFace. Resuelve un problema específico del procesamiento del bengalí: muchas palabras se escriben igual pero se pronuncian de forma distinta según el contexto oracional (heterónimos u homógrafos). El modelo lee la oración completa y selecciona la lectura correcta, devolviendo una reescritura fonética en escritura bengalí que sirve como entrada al front-end de un sistema de text-to-speech.
+Bangla Heteronym Reader (XLM-R-large) es un modelo de desambiguación de heterónimos en bengalí desarrollado por Kawshik Kumar Paul (BUET) y publicado en Hugging Face. Resuelve un problema específico del procesamiento del bengalí: muchas palabras se escriben igual pero se pronuncian de forma distinta según el contexto oracional (heterónimos u homógrafos). El modelo lee la oración completa y selecciona la lectura correcta, devolviendo una reescritura fonética en escritura bengalí que sirve como entrada al front-end de un sistema de text-to-speech.
 
 Técnicamente es un fine-tuning de `FacebookAI/xlm-roberta-large` (559,9 millones de parámetros) con una cabeza lineal personalizada. La entrada combina la palabra objetivo marcada dentro de su oración, y la cabeza puntúa las lecturas candidatas de esa palabra a partir de la representación del marcador de apertura. El modelo cubre exclusivamente los heterónimos del dataset `kawshikbuet17/bangla-heteronyms`.
 
@@ -103,7 +103,7 @@ El benchmark del autor agrupa 12 modelos; solo se detallan en la información di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kawshikbuet17/bangla-heteronym-xlm-roberta-large
+- Modelo en Hugging Face: https://huggingface.co/kawshikbuet17/bangla-heteronym-xlm-roberta-large
 - Variante recomendada (BanglaBERT): https://huggingface.co/kawshikbuet17/bangla-heteronym-banglabert
 - Dataset de heterónimos: https://huggingface.co/datasets/kawshikbuet17/bangla-heteronyms
 - Repositorio del benchmark y código de inferencia: https://github.com/kawshikbuet17/bangla-heteronym-benchmark

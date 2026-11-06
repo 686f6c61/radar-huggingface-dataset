@@ -4,7 +4,7 @@
 
 Pika-H3-Flex-ROCmFPX es una cuantización en formato GGUF del modelo Pika-H3-Flex de Pika Labs, publicada por el usuario Harsha001. El modelo base es un sistema generativo multimodal de imagen-a-vídeo con audio, construido sobre la arquitectura MiniMax-H3 según las etiquetas del repositorio. Esta versión concreta aplica el esquema de cuantización ROCmFPX (con variantes ROCmFP4) orientado a hardware AMD, específicamente a los aceleradores integrados Strix Halo, y está empaquetada para su uso con stable-diffusion.cpp.
 
-El interés de esta ficha radica en dos factores. Primero, permite ejecutar un modelo de generación de vídeo con audio de aproximadamente 33.100 millones de parámetros en hardware AMD de consumo o integrado, algo que las versiones en precisión completa hacen inviable. Segundo, el repositorio ocupa 139,4 GB, lo que da una idea del peso real de los pesos cuantizados y de los requisitos de almacenamiento. El acceso está restringido (gated): es necesario aceptar la licencia MiniMax-H3 Community License Agreement en HuggingFace antes de descargar.
+El interés de esta ficha radica en dos factores. Primero, permite ejecutar un modelo de generación de vídeo con audio de aproximadamente 33.100 millones de parámetros en hardware AMD de consumo o integrado, algo que las versiones en precisión completa hacen inviable. Segundo, el repositorio ocupa 139,4 GB, lo que da una idea del peso real de los pesos cuantizados y de los requisitos de almacenamiento. El acceso está restringido (gated): es necesario aceptar la licencia MiniMax-H3 Community License Agreement en Hugging Face antes de descargar.
 
 La información pública disponible es escasa: el repositorio acumula 9 descargas y ningún "like" en el momento de redactar esta ficha, y no se han publicado fichas técnicas, benchmarks ni documentación de entrenamiento asociada a esta cuantización específica.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pika-H3-Flex-ROCmFPX (esta ficha) | ~33,1 mil millones | no disponible | GGUF (ROCmFPX/FP4) | MiniMax-H3 Community License | Gated en HuggingFace |
+| Pika-H3-Flex-ROCmFPX (esta ficha) | ~33,1 mil millones | no disponible | GGUF (ROCmFPX/FP4) | MiniMax-H3 Community License | Gated en Hugging Face |
 | Pika-Labs/Pika-H3-Flex (modelo base) | ~33,1 mil millones | no disponible | no disponible | MiniMax-H3 Community License | no disponible |
 | Otras cuantizaciones GGUF de Pika-H3-Flex | ~33,1 mil millones | no disponible | GGUF | según el publicador | no disponible |
 
@@ -71,7 +71,7 @@ No se dispone de información sobre alternativas comparables de otros desarrolla
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: es obligatorio aceptar la MiniMax-H3 Community License Agreement en HuggingFace antes de poder descargar los pesos.
+- Acceso restringido: es obligatorio aceptar la MiniMax-H3 Community License Agreement en Hugging Face antes de poder descargar los pesos.
 - Licencia "other" con términos comunitarios: conviene revisar las restricciones de uso comercial antes de integrar el modelo en productos.
 - La cuantización ROCmFP4 puede degradar la calidad visual y de audio respecto al modelo original; no se han publicado métricas de esa degradación.
 - No hay información sobre sesgos, tasas de alucinación ni limitaciones idiomáticas del modelo base.
@@ -82,7 +82,7 @@ No se dispone de información sobre alternativas comparables de otros desarrolla
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Harsha001/Pika-H3-Flex-ROCmFPX
+- Repositorio en Hugging Face: https://huggingface.co/Harsha001/Pika-H3-Flex-ROCmFPX
 - Modelo base: https://huggingface.co/Pika-Labs/Pika-H3-Flex
 - stable-diffusion.cpp (herramienta de inferencia mencionada): no disponible en la información proporcionada
 - Documentación de ROCm (AMD): no disponible en la información proporcionada

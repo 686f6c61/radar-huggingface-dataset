@@ -85,7 +85,7 @@ No se dispone de información suficiente para comparar el rendimiento (benchmark
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RL-Forgetting-Experiments-3/qwen2.5-3b-kk-sft-ordered-lr1e5-all-checkpoints
+- Modelo en Hugging Face: https://huggingface.co/RL-Forgetting-Experiments-3/qwen2.5-3b-kk-sft-ordered-lr1e5-all-checkpoints
 - Dataset de artefactos y evaluación por checkpoint: https://huggingface.co/datasets/RL-Forgetting-Experiments-3/qwen2.5-3b-math-kk-sft-artifacts/tree/main/runs/kk_ordered/eval
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B
 

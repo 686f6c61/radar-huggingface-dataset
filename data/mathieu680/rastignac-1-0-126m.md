@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rastignac 1.0 — 126M es un modelo de lenguaje causal en francés entrenado desde cero por el usuario Mathieu680 y publicado en HuggingFace. Con 126.481.920 parámetros, sigue una arquitectura de estilo GPT-2 (16 capas, 12 cabezas de atención, dimensión oculta 768) y está especializado en una única tarea: la compleción de texto a partir de un inicio de frase o párrafo. No es un modelo de instrucciones ni de chat: no ha pasado por ajuste con instrucciones, RLHF ni DPO, y su único idioma soportado es el francés.
+Rastignac 1.0 — 126M es un modelo de lenguaje causal en francés entrenado desde cero por el usuario Mathieu680 y publicado en Hugging Face. Con 126.481.920 parámetros, sigue una arquitectura de estilo GPT-2 (16 capas, 12 cabezas de atención, dimensión oculta 768) y está especializado en una única tarea: la compleción de texto a partir de un inicio de frase o párrafo. No es un modelo de instrucciones ni de chat: no ha pasado por ajuste con instrucciones, RLHF ni DPO, y su único idioma soportado es el francés.
 
 Su rasgo diferencial es el corpus: literatura francesa procedente de Project Gutenberg, con 3.348 textos retenidos y una fecha media de publicación de las obras datadas en torno a 1898. El modelo ha recorrido 983.040.000 tokens de entrenamiento en 30.000 pasos, con 315.832.633 tokens de corpus y 27.511.882 de validación, y una mejor loss de validación interna de 2,7920 en el paso 29.750. Es, por tanto, un modelo pequeño, de dominio muy acotado y orientado a la reproducción de estilo literario de finales del siglo XIX.
 
@@ -80,9 +80,9 @@ La loss y la perplejidad indicadas por el autor se miden sobre la validación in
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rastignac 1.0 — 126M | 126.481.920 | 1.024 tokens | Frances | other | HuggingFace, safetensors, 0 descargas |
+| Rastignac 1.0 — 126M | 126.481.920 | 1.024 tokens | Frances | other | Hugging Face, safetensors, 0 descargas |
 | GPT-2 small (OpenAI) | 124M | 1.024 tokens | Ingles (multilingue limitado) | MIT | Ampliamente disponible, multiples formatos |
-| Pythia-160M (EleutherAI) | 160M | 2.048 tokens | Ingles | Apache 2.0 | HuggingFace, safetensors |
+| Pythia-160M (EleutherAI) | 160M | 2.048 tokens | Ingles | Apache 2.0 | Hugging Face, safetensors |
 | Modelos de complecion en frances de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación se limita a parámetros, contexto, idioma y licencia, ya que no hay resultados de benchmarks de Rastignac 1.0 que permitan contrastar calidad. Frente a GPT-2 small y Pythia-160M, Rastignac ofrece un tokenizador y un corpus específicamente franceses y un registro literario concreto, pero carece de la documentación de evaluación, el ecosistema de cuantizaciones y la claridad de licencia de los modelos de referencia.
@@ -102,7 +102,7 @@ La comparación se limita a parámetros, contexto, idioma y licencia, ya que no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mathieu680/Rastignac-1.0-126M
+- Modelo en Hugging Face: https://huggingface.co/Mathieu680/Rastignac-1.0-126M
 - Licencia de Project Gutenberg: https://www.gutenberg.org/policy/license
 - FAQ de copyright de Project Gutenberg: https://www.gutenberg.org/help/copyright
 - Paper, blog o repositorio adicional: no disponible

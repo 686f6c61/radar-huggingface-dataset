@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Beetle-FineWeb-100M/beetle-monolingual-fineweb-100m-eng es un modelo de lenguaje de tipo decoder (etiquetado como `pico_decoder`) publicado en HuggingFace por la organización Beetle-FineWeb-100M. Está diseñado para generación de texto y se distribuye con pesos en formato safetensors. A pesar de su nombre, el modelo cuenta con 193.804.032 parámetros, una cifra que lo sitúa en la categoría de modelos pequeños, adecuados para experimentación y despliegue en entornos con recursos limitados.
+Beetle-FineWeb-100M/beetle-monolingual-fineweb-100m-eng es un modelo de lenguaje de tipo decoder (etiquetado como `pico_decoder`) publicado en Hugging Face por la organización Beetle-FineWeb-100M. Está diseñado para generación de texto y se distribuye con pesos en formato safetensors. A pesar de su nombre, el modelo cuenta con 193.804.032 parámetros, una cifra que lo sitúa en la categoría de modelos pequeños, adecuados para experimentación y despliegue en entornos con recursos limitados.
 
 La model card oficial está prácticamente vacía: no se especifican datos de entrenamiento, licencia, idiomas soportados ni arquitectura detallada. El repositorio ocupa 39,5 GB, un tamaño considerablemente mayor de lo esperable para un modelo de ~194M de parámetros, lo que sugiere que podría incluir múltiples checkpoints, versiones cuantizadas u otros artefactos. La fecha de creación (agosto de 2026) indica que es un modelo reciente, pero su escasa documentación y la ausencia de descargas o valoraciones limitan su utilidad práctica inmediata.
 
@@ -57,7 +57,7 @@ No se dispone de datos oficiales sobre requisitos de hardware. Como estimacion o
 - VRAM estimada para inferencia: en precision fp32, los pesos ocupan aproximadamente 775 MB; en fp16, unos 388 MB; en int8, unos 194 MB. A esto hay que anadir la memoria para activaciones y cache, por lo que una GPU con al menos 2 GB de VRAM seria suficiente para inferencia basica.
 - GPU recomendadas: cualquier GPU consumer moderna (NVIDIA GTX 1060 6GB, RTX 2060, RTX 3060, etc.) podria ejecutar el modelo sin problemas. Incluso CPU podria ser viable para inferencia lenta.
 - Si cabe en consumer GPU: si, con margen amplio.
-- Opciones de despliegue: al ser un modelo de transformers, puede usarse con librerias como HuggingFace Transformers, vLLM, llama.cpp (si se convierte a GGUF) u Ollama. No se proporcionan configuraciones oficiales.
+- Opciones de despliegue: al ser un modelo de transformers, puede usarse con librerias como Hugging Face Transformers, vLLM, llama.cpp (si se convierte a GGUF) u Ollama. No se proporcionan configuraciones oficiales.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Beetle-FineWeb-100M/beetle-monolingual-fineweb-100m-eng
+- Hugging Face: https://huggingface.co/Beetle-FineWeb-100M/beetle-monolingual-fineweb-100m-eng
 - Variante finlandesa: https://huggingface.co/Beetle-FineWeb-100M/beetle-monolingual-fineweb-100m-fin
 - Variante turca: https://huggingface.co/Beetle-FineWeb-100M/beetle-monolingual-fineweb-100m-tur
 - Paper de Lacoste et al. (2019) sobre emisiones de carbono (referenciado en el tag arxiv): https://arxiv.org/abs/1910.09700

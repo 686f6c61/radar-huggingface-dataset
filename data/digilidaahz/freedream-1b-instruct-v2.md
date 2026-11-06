@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Freedream-1B-Instruct-V2 es un modelo de lenguaje publicado en HuggingFace por el usuario Digilidaahz bajo la licencia CreativeML OpenRAIL-M. Por el nombre se deduce que se trata de un modelo de aproximadamente 1.000 millones de parametros, afinado para instrucciones (Instruct), en su segunda version. Sin embargo, la model card publicada esta practicamente vacia: solo contiene el campo de licencia, sin descripcion, sin detalles de arquitectura, sin datos de entrenamiento ni resultados de evaluacion.
+Freedream-1B-Instruct-V2 es un modelo de lenguaje publicado en Hugging Face por el usuario Digilidaahz bajo la licencia CreativeML OpenRAIL-M. Por el nombre se deduce que se trata de un modelo de aproximadamente 1.000 millones de parametros, afinado para instrucciones (Instruct), en su segunda version. Sin embargo, la model card publicada esta practicamente vacia: solo contiene el campo de licencia, sin descripcion, sin detalles de arquitectura, sin datos de entrenamiento ni resultados de evaluacion.
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente descriptiva. No hay informacion verificable sobre el proceso de entrenamiento, el dataset utilizado, la longitud de contexto soportada ni las capacidades reales del modelo. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que sugiere un modelo recien publicado o de muy baja difusion.
 
@@ -42,7 +42,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 - Prototipado de chatbots ligeros: por su tamano presumiblemente reducido, podria ejecutarse en hardware modesto para experimentar con interfaces conversacionales, aunque sin garantias de calidad al no existir benchmarks.
 - Experimentacion academica con licencias OpenRAIL: la licencia CreativeML OpenRAIL-M permite estudiar el comportamiento de modelos con restricciones de uso declaradas, lo que puede resultar util en investigacion sobre gobernanza de modelos.
 - Pruebas de integracion en pipelines de inferencia: util para validar el funcionamiento de frameworks como transformers o llama.cpp con pesos de un modelo nuevo, antes de adoptar un modelo de mayor tamano.
-- Fines educativos: como ejemplo de publicacion de un modelo en HuggingFace con model card minima, puede servir para ilustrar buenas y malas practicas de documentacion.
+- Fines educativos: como ejemplo de publicacion de un modelo en Hugging Face con model card minima, puede servir para ilustrar buenas y malas practicas de documentacion.
 - Desarrollo de demos locales: si los pesos estan disponibles en un formato compatible con herramientas de inferencia local, podria usarse en demostraciones sin conexion en equipos de gama media.
 
 En todos los casos, la ausencia de documentacion y de evaluaciones hace imprescindible una validacion previa por parte del equipo que lo adopte.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Freedream-1B-Instruct-V2 | no disponible (~1B por el nombre) | no disponible | CreativeML OpenRAIL-M | HuggingFace, sin descargas registradas |
+| Freedream-1B-Instruct-V2 | no disponible (~1B por el nombre) | no disponible | CreativeML OpenRAIL-M | Hugging Face, sin descargas registradas |
 | Modelos comparables de ~1B | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa rigurosa con alternativas concretas de la misma categoria. Cualquier comparacion requeriria primero conocer la arquitectura, el contexto y los resultados de evaluacion del modelo.
@@ -80,5 +80,5 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Digilidaahz/Freedream-1B-Instruct-V2
+- Hugging Face: https://huggingface.co/Digilidaahz/Freedream-1B-Instruct-V2
 - Licencia CreativeML OpenRAIL-M: no se ha encontrado un enlace directo en la informacion proporcionada; consulte la referencia oficial de CreativeML OpenRAIL-M para el texto completo.

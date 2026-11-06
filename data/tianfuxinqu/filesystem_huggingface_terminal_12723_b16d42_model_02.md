@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado en HuggingFace como `TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_02` se presenta, segun su model card, como un "Churn Prediction Engine" con identificador interno MDL-002, atribuido a Liam Patel en el departamento de Marketing. La informacion disponible no permite confirmar que se trate de un modelo de lenguaje: la model card describe un artefacto orientado a la prediccion de abandono de clientes (churn), con metadatos de gobernanza (nivel de riesgo medio, cobertura de tests del 88%, ultima auditoria el 2026-05-22) pero sin especificaciones de arquitectura, parametros ni entrenamiento.
+El modelo identificado en Hugging Face como `TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_02` se presenta, segun su model card, como un "Churn Prediction Engine" con identificador interno MDL-002, atribuido a Liam Patel en el departamento de Marketing. La informacion disponible no permite confirmar que se trate de un modelo de lenguaje: la model card describe un artefacto orientado a la prediccion de abandono de clientes (churn), con metadatos de gobernanza (nivel de riesgo medio, cobertura de tests del 88%, ultima auditoria el 2026-05-22) pero sin especificaciones de arquitectura, parametros ni entrenamiento.
 
 El repositorio no incluye pipeline declarado, licencia, idiomas soportados ni descripciones tecnicas del modelo. Cuenta con cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado el 2026-11-01 en un intervalo de un segundo, lo que sugiere un artefacto generado de forma automatica o un repositorio de prueba mas que un modelo publicado para uso real.
 
@@ -75,5 +75,5 @@ No disponible. La informacion proporcionada no identifica la categoria tecnica d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_02
+- Repositorio en Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_02
 - Paper, blog, repositorio de codigo o demo: no disponible.

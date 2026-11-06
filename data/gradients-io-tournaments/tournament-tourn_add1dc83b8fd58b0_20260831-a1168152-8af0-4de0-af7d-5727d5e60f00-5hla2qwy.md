@@ -76,6 +76,6 @@ No se dispone de una comparativa directa con otros adapters LoRA del mismo torne
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-a1168152-8af0-4de0-af7d-5727d5e60f00-5HLA2QWY)
+- [Modelo en Hugging Face](https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-a1168152-8af0-4de0-af7d-5727d5e60f00-5HLA2QWY)
 - [Pagina de torneos de Gradients](https://www.gradients.io/app/research/tournament)
-- [Modelo base BLOOMZ-560M en HuggingFace](https://huggingface.co/bigscience/bloomz-560m)
+- [Modelo base BLOOMZ-560M en Hugging Face](https://huggingface.co/bigscience/bloomz-560m)

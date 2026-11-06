@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w14-kx-chrono5-w30ft5-s300` es un checkpoint de pesos en formato safetensors publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Cuenta con aproximadamente 2.018 millones de parametros (2,02 mil millones) y un tamano de repositorio de 6,3 GB, lo que es coherente con pesos en precision bf16/fp16 para esa cantidad de parametros. El identificador y la etiqueta `sn38-nanochrono` sugieren que se trata de un modelo de la familia "nanochrono", presumiblemente un transformer de escala pequena orientado a experimentacion o a tareas de generacion de texto, aunque no se dispone de documentacion publica que lo confirme.
+El modelo `alfred8995/r18-a2-w14-kx-chrono5-w30ft5-s300` es un checkpoint de pesos en formato safetensors publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Cuenta con aproximadamente 2.018 millones de parametros (2,02 mil millones) y un tamano de repositorio de 6,3 GB, lo que es coherente con pesos en precision bf16/fp16 para esa cantidad de parametros. El identificador y la etiqueta `sn38-nanochrono` sugieren que se trata de un modelo de la familia "nanochrono", presumiblemente un transformer de escala pequena orientado a experimentacion o a tareas de generacion de texto, aunque no se dispone de documentacion publica que lo confirme.
 
-La relevancia de esta ficha es limitada: el modelo no presenta descargas ni likes, no tiene pipeline declarado, no especifica idiomas soportados y el acceso esta restringido (gated), requiriendo aceptar condiciones en HuggingFace. No se ha publicado informacion sobre arquitectura detallada, datos de entrenamiento, benchmarks ni capacidades. Todo lo que sigue se basa exclusivamente en los metadatos disponibles en la ficha de HuggingFace y en el recuento real de parametros del archivo safetensors.
+La relevancia de esta ficha es limitada: el modelo no presenta descargas ni likes, no tiene pipeline declarado, no especifica idiomas soportados y el acceso esta restringido (gated), requiriendo aceptar condiciones en Hugging Face. No se ha publicado informacion sobre arquitectura detallada, datos de entrenamiento, benchmarks ni capacidades. Todo lo que sigue se basa exclusivamente en los metadatos disponibles en la ficha de Hugging Face y en el recuento real de parametros del archivo safetensors.
 
 Dado el caracter experimental y la ausencia de documentacion, esta ficha debe interpretarse como una evaluacion de disponibilidad y requisitos tecnicos mas que como una guia de uso en produccion.
 
@@ -81,7 +81,7 @@ La comparativa muestra que el modelo de alfred8995 carece de la documentacion, c
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no se conocen arquitectura, tokenizer, formato de prompt ni hiperparametros de inferencia, lo que impide un uso fiable sin ingenieria inversa.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion para su evaluacion y descarga.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion para su evaluacion y descarga.
 - Sin benchmarks ni evaluaciones publicadas: no hay evidencia de calidad en ninguna tarea.
 - Riesgo elevado de alucinacion y comportamiento impredecible al no conocerse los datos de entrenamiento ni si se aplicaron tecnicas de alineacion.
 - Idiomas no declarados: no se puede garantizar soporte del castellano ni de otros idiomas.
@@ -93,5 +93,5 @@ La comparativa muestra que el modelo de alfred8995 carece de la documentacion, c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w14-kx-chrono5-w30ft5-s300
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w14-kx-chrono5-w30ft5-s300
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

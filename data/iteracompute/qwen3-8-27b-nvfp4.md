@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IteraCompute/Qwen3.8-27B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/IteraCompute/Qwen3.8-27B-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Origen de la cuantización NVFP4: https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090
 - Repositorio planificado Qwen4 NVFP4: https://huggingface.co/IteraCompute/Qwen4-27B-NVFP4

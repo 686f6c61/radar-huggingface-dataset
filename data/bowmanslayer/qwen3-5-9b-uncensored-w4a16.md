@@ -97,7 +97,7 @@ El modelo se compara directamente con el base `Qwen/Qwen3.5-9B` y con dos varian
 
 ## Enlaces
 
-- [Modelo en HuggingFace (W4A16)](https://huggingface.co/bowmanslayer/Qwen3.5-9B-Uncensored-W4A16)
+- [Modelo en Hugging Face (W4A16)](https://huggingface.co/bowmanslayer/Qwen3.5-9B-Uncensored-W4A16)
 - [Modelo base bf16 (bowmanslayer)](https://huggingface.co/bowmanslayer/Qwen3.5-9B-Uncensored)
 - [Modelo original Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B)
 - [Repo GGUF (llama.cpp)](https://huggingface.co/bowmanslayer/Qwen3.5-9B-Uncensored-GGUF)

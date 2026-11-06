@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`camper03/Qwen3.8-27B` es un modelo multimodal publicado en HuggingFace por el usuario camper03, no por la organización oficial de Qwen. El repositorio declara el pipeline image-text-to-text, es decir, acepta imágenes y texto como entrada y devuelve texto, y contiene 27.781.427.952 parámetros (27,78 mil millones). El tamaño del repositorio, 55,6 GB, coincide con el que resultaría de almacenar esos parámetros en precisión de 16 bits (2 bytes por parámetro), por lo que los pesos se distribuyen presumiblemente en BF16/FP16. La etiqueta `qwen3_5` apunta a un vínculo con la familia Qwen3.5, aunque el nombre del repositorio («Qwen3.8-27B») no coincide con esa etiqueta y no existe confirmación oficial al respecto.
+`camper03/Qwen3.8-27B` es un modelo multimodal publicado en Hugging Face por el usuario camper03, no por la organización oficial de Qwen. El repositorio declara el pipeline image-text-to-text, es decir, acepta imágenes y texto como entrada y devuelve texto, y contiene 27.781.427.952 parámetros (27,78 mil millones). El tamaño del repositorio, 55,6 GB, coincide con el que resultaría de almacenar esos parámetros en precisión de 16 bits (2 bytes por parámetro), por lo que los pesos se distribuyen presumiblemente en BF16/FP16. La etiqueta `qwen3_5` apunta a un vínculo con la familia Qwen3.5, aunque el nombre del repositorio («Qwen3.8-27B») no coincide con esa etiqueta y no existe confirmación oficial al respecto.
 
-El modelo se distribuye bajo licencia Apache 2.0 y es cargable con la librería transformers, pero el acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo. El repositorio se creó y se actualizó con un segundo de diferencia, acumula 0 descargas y 0 «likes», y su ficha no documenta longitud de contexto, idiomas soportados, composición de los datos de entrenamiento ni resultados de evaluación.
+El modelo se distribuye bajo licencia Apache 2.0 y es cargable con la librería transformers, pero el acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo. El repositorio se creó y se actualizó con un segundo de diferencia, acumula 0 descargas y 0 «likes», y su ficha no documenta longitud de contexto, idiomas soportados, composición de los datos de entrenamiento ni resultados de evaluación.
 
 Su relevancia es por tanto potencial y condicionada: se sitúa en el segmento de modelos multimodales de aproximadamente 28.000 millones de parámetros, competido por Gemma 3 27B, Qwen2.5-VL-32B o Mistral Small 3.1 24B, pero cualquier decisión de adopción exige verificar antes la arquitectura real, la ventana de contexto y la procedencia de los pesos, ya que no hay ninguna evaluación publicada.
 
@@ -22,7 +22,7 @@ Su relevancia es por tanto potencial y condicionada: se sitúa en el segmento de
 | Formato de pesos | Safetensors |
 | Tipo de modelo (pipeline) | image-text-to-text (entrada de imagen y texto, salida de texto) |
 | Tamaño del repositorio | 55,6 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | DOI | 10.57967/hf/10615 |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-09-26T16:59:21Z (actualización: 2026-09-26T16:59:22Z) |
@@ -31,14 +31,14 @@ Su relevancia es por tanto potencial y condicionada: se sitúa en el segmento de
 
 No se dispone de información sobre la arquitectura interna del modelo más allá de las etiquetas del repositorio: `qwen3_5` y `transformers`, compatibles con un transformer multimodal de la familia Qwen, y `image-text-to-text`, que confirma la entrada de imágenes junto con texto. No hay datos sobre el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de ajuste por instrucciones, RLHF o DPO, ni sobre innovaciones técnicas concretas (atención lineal, decodificación especulativa, mezcla de expertos, etc.).
 
-El único dato técnico derivable de la información disponible es la precisión de los pesos: 27.781.427.952 parámetros almacenados en un repositorio de 55,6 GB implican 2 bytes por parámetro, es decir, formato de 16 bits. También hay que señalar que la etiqueta `endpoints_compatible` indica que el repositorio está preparado para su despliegue mediante los Inference Endpoints de HuggingFace. Cualquier descripción adicional de la arquitectura o del entrenamiento requeriría consultar la model card completa, que no es accesible sin aceptar las condiciones de acceso.
+El único dato técnico derivable de la información disponible es la precisión de los pesos: 27.781.427.952 parámetros almacenados en un repositorio de 55,6 GB implican 2 bytes por parámetro, es decir, formato de 16 bits. También hay que señalar que la etiqueta `endpoints_compatible` indica que el repositorio está preparado para su despliegue mediante los Inference Endpoints de Hugging Face. Cualquier descripción adicional de la arquitectura o del entrenamiento requeriría consultar la model card completa, que no es accesible sin aceptar las condiciones de acceso.
 
 ## Capacidades
 
 - Generación de texto a partir de entradas multimodales: el pipeline declarado es image-text-to-text, por lo que el modelo acepta imágenes y texto y produce texto.
 - Conversación multi-turno: la etiqueta `conversational` indica que está preparado para diálogos.
 - Integración con transformers: carga directa mediante la librería declarada, sin conversiones adicionales.
-- Despliegue en Inference Endpoints: la etiqueta `endpoints_compatible` sugiere compatibilidad con la infraestructura gestionada de HuggingFace.
+- Despliegue en Inference Endpoints: la etiqueta `endpoints_compatible` sugiere compatibilidad con la infraestructura gestionada de Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponibles en la información proporcionada.
 - Idiomas soportados: no disponible.
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - GPU profesionales recomendadas para los pesos sin cuantizar: 1×H100 80 GB, 1×A100 80 GB, 2×A100 40 GB (80 GB en total, al límite) o 2×L40S 48 GB.
 - GPU de consumo: una RTX 4090 de 24 GB o una RTX 5090 no pueden cargar los pesos originales. El repositorio no ofrece cuantizaciones, de modo que para usar el modelo en hardware de consumo habría que cuantizarlo por cuenta propia, y previamente hay que superar el acceso restringido.
 - Estimaciones de VRAM según cuantización (derivadas aritméticamente del número de parámetros, no confirmadas por el autor): 8 bits, en torno a 28 GB, viable en 1×A6000 48 GB, 1×L40S 48 GB o 2×RTX 4090; 4 bits, en torno a 14 GB, ajustado en una RTX 4090 de 24 GB o una RTX 3090 de 24 GB.
-- Opciones de despliegue: transformers de forma nativa (librería declarada) y, presumiblemente, los Inference Endpoints de HuggingFace. El soporte de vLLM, TGI, SGLang, llama.cpp u Ollama no está confirmado en la información disponible; llama.cpp y Ollama exigirían además una conversión a GGUF que el repositorio no publica.
+- Opciones de despliegue: transformers de forma nativa (librería declarada) y, presumiblemente, los Inference Endpoints de Hugging Face. El soporte de vLLM, TGI, SGLang, llama.cpp u Ollama no está confirmado en la información disponible; llama.cpp y Ollama exigirían además una conversión a GGUF que el repositorio no publica.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ Los datos de las tres alternativas proceden de la documentación pública de sus
 - Repositorio sin validación: 0 descargas, 0 «likes» y una actualización registrada un segundo después de la creación, lo que indica una publicación recién subida y sin contraste por parte de la comunidad.
 - Ausencia total de evaluación: no hay benchmarks, informes de evaluación ni comparativas publicadas por el autor.
 - Documentación incompleta: se desconocen la longitud de contexto, los idiomas soportados, la composición del dataset y el proceso de alineación.
-- Acceso restringido: aunque la licencia declarada es Apache 2.0, la descarga requiere aceptar condiciones en HuggingFace, y el autor, una cuenta individual, puede modificarlas o retirar el repositorio en cualquier momento.
+- Acceso restringido: aunque la licencia declarada es Apache 2.0, la descarga requiere aceptar condiciones en Hugging Face, y el autor, una cuenta individual, puede modificarlas o retirar el repositorio en cualquier momento.
 - Procedencia no verificada: el nombre del repositorio no coincide con la etiqueta `qwen3_5` y no hay confirmación de que los pesos deriven de un modelo oficial de Qwen ni de que el autor tenga derecho a relicenciarlos bajo Apache 2.0.
 - Riesgo de alucinación: no evaluado. En tareas de extracción de información a partir de imágenes el riesgo es especialmente alto, ya que el modelo puede generar campos o cifras plausibles pero incorrectos.
 - Sesgos: no disponibles; no se ha publicado ningún análisis de sesgo demográfico, cultural o lingüístico.
@@ -93,6 +93,6 @@ Los datos de las tres alternativas proceden de la documentación pública de sus
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/camper03/Qwen3.8-27B
+- Repositorio en Hugging Face: https://huggingface.co/camper03/Qwen3.8-27B
 - DOI asociado: https://doi.org/10.57967/hf/10615
 - No se han encontrado en la información disponible enlaces adicionales a papers, blogs técnicos, repositorios de código o demostraciones.

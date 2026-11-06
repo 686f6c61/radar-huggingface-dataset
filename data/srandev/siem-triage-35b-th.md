@@ -100,5 +100,5 @@ La comparación con modelos de triaje SIEM de otros autores no está disponible 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/srandev/siem-triage-35b-th
+- Modelo en Hugging Face: https://huggingface.co/srandev/siem-triage-35b-th
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B

@@ -81,10 +81,10 @@ La siguiente tabla compara LLaDA2.2-mini con las otras variantes de la misma ser
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LLaDA2.0-mini | 16B | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| LLaDA2.1-mini | 16B | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| LLaDA2.2-mini | 16B | 1.4B | 128K | Apache 2.0 | HuggingFace |
-| LLaDA2.2-flash | 100B | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| LLaDA2.0-mini | 16B | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| LLaDA2.1-mini | 16B | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| LLaDA2.2-mini | 16B | 1.4B | 128K | Apache 2.0 | Hugging Face |
+| LLaDA2.2-flash | 100B | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 Los benchmarks de la sección anterior muestran que LLaDA2.2-mini mejora significativamente en BFCL v4 y LongBench v2 respecto a sus predecesores, aunque presenta puntuaciones más bajas en IFBench y Multi-IF.
 

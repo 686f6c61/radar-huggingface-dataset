@@ -11,7 +11,7 @@ La relevancia de este modelo radica en que combina un tamaño compacto (4B de pa
 | Parametro | Valor |
 |---|---|
 | Arquitectura | No especificada (basada en Qwen3.5-4B, probablemente transformer) |
-| Parametros totales | 897.272 (valor reportado en HuggingFace) |
+| Parametros totales | 897.272 (valor reportado en Hugging Face) |
 | Parametros activos | No disponible (no es MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | GGUF: Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S (según model card) |
@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/AgentMercury-Qwen3.5-4B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/AgentMercury-Qwen3.5-4B-i1-GGUF
 - Repositorio estático (cuantizaciones completas): https://huggingface.co/mradermacher/AgentMercury-Qwen3.5-4B-GGUF
 - Modelo base: https://huggingface.co/Minbyul/AgentMercury-Qwen3.5-4B
 - Página de FriendliAI con benchmarks: https://friendli.ai/models/Minbyul/AgentMercury-Qwen3.5-4B

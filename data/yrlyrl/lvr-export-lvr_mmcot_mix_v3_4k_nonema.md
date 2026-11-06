@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yrlyrl/lvr-export-lvr_mmcot_mix_v3_4k_nonema` es un checkpoint publicado en HuggingFace por el usuario `yrlyrl` bajo la etiqueta `lvr-export`, lo que sugiere que se trata de una exportacion de pesos mas que de un modelo entrenado desde cero. El repositorio ocupa 29,5 GB y contiene pesos en formato safetensors con 14.607.260.128 parametros totales (aproximadamente 14,6 mil millones), un tamano coherente con un almacenamiento en precision de 16 bits. La model card publica no incluye informacion sobre arquitectura, licencia, idiomas ni pipeline, por lo que la mayor parte de los datos tecnicos no esta documentada.
+El modelo `yrlyrl/lvr-export-lvr_mmcot_mix_v3_4k_nonema` es un checkpoint publicado en Hugging Face por el usuario `yrlyrl` bajo la etiqueta `lvr-export`, lo que sugiere que se trata de una exportacion de pesos mas que de un modelo entrenado desde cero. El repositorio ocupa 29,5 GB y contiene pesos en formato safetensors con 14.607.260.128 parametros totales (aproximadamente 14,6 mil millones), un tamano coherente con un almacenamiento en precision de 16 bits. La model card publica no incluye informacion sobre arquitectura, licencia, idiomas ni pipeline, por lo que la mayor parte de los datos tecnicos no esta documentada.
 
 Las etiquetas del repositorio (`bagel`, `region:us`, `safetensors`) y el sufijo `mmcot_mix_v3_4k_nonema` apuntan de forma no confirmada a un modelo multimodal con razonamiento en cadena de pensamiento (multimodal chain-of-thought), posiblemente relacionado con la familia de arquitecturas BAGEL. Sin embargo, esta interpretacion procede unicamente del nombre del repositorio y no esta respaldada por la model card, que esta vacia de contenido descriptivo. No se dispone de datos de contexto, composicion del dataset de entrenamiento ni proceso de alineacion.
 
@@ -23,7 +23,7 @@ El modelo tiene un numero de descargas muy bajo (13) y cero likes en el momento 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la model card ni en los resultados de busqueda disponibles. El unico indicio es la etiqueta `bagel` asociada al repositorio, que en el ecosistema HuggingFace se emplea para modelos multimodales de tipo Mixture-of-Transformers-Experts. El sufijo `mmcot` podria corresponder a "multimodal chain-of-thought" y `mix_v3` a una tercera iteracion de un dataset de mezcla, pero ninguna de estas hipotesis esta confirmada por documentacion tecnica.
+No se ha publicado informacion sobre la arquitectura en la model card ni en los resultados de busqueda disponibles. El unico indicio es la etiqueta `bagel` asociada al repositorio, que en el ecosistema Hugging Face se emplea para modelos multimodales de tipo Mixture-of-Transformers-Experts. El sufijo `mmcot` podria corresponder a "multimodal chain-of-thought" y `mix_v3` a una tercera iteracion de un dataset de mezcla, pero ninguna de estas hipotesis esta confirmada por documentacion tecnica.
 
 Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. La ausencia de paper, blog o repositorio de codigo asociado impide verificar cualquier detalle de entrenamiento. Dado que el nombre incluye `lvr-export`, es plausible que se trate de una conversion de pesos de un modelo previo, pero se desconoce el modelo de origen.
 
@@ -95,7 +95,7 @@ La comparacion de rendimiento con estos modelos no esta disponible para el model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yrlyrl/lvr-export-lvr_mmcot_mix_v3_4k_nonema
+- Hugging Face: https://huggingface.co/yrlyrl/lvr-export-lvr_mmcot_mix_v3_4k_nonema
 - Paper, blog, repositorio de codigo o demo: no disponible
 
 Los resultados de la busqueda web proporcionados no guardan relacion con el modelo (corresponden a normativa sobre bienes de doble uso) y no aportan informacion tecnica util.

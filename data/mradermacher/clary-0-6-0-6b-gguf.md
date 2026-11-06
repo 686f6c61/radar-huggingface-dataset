@@ -4,7 +4,7 @@
 
 Clary-0.6-0.6B es un modelo de lenguaje de 0,6 mil millones de parámetros desarrollado por AuroraSystem, del cual se ofrece una versión cuantizada en formato GGUF creada por mradermacher. El nombre sugiere que se trata de la versión 0.6 del modelo, con un tamaño de 0.6B parámetros, lo que lo sitúa en la categoría de modelos pequeños orientados a despliegues ligeros o dispositivos con recursos limitados. La cuantización en GGUF permite su ejecución eficiente en CPU y GPU mediante herramientas como llama.cpp u Ollama.
 
-La información pública disponible es muy escasa: no se especifican arquitectura, datos de entrenamiento, licencia, idiomas ni capacidades concretas. El repositorio de HuggingFace del modelo cuantizado solo indica que es una cuantización estática del modelo original alojado en AuroraSystem/Clary-0.6-0.6B. Por tanto, esta ficha se basa únicamente en los datos proporcionados y en inferencias razonables a partir del nombre y del formato.
+La información pública disponible es muy escasa: no se especifican arquitectura, datos de entrenamiento, licencia, idiomas ni capacidades concretas. El repositorio de Hugging Face del modelo cuantizado solo indica que es una cuantización estática del modelo original alojado en AuroraSystem/Clary-0.6-0.6B. Por tanto, esta ficha se basa únicamente en los datos proporcionados y en inferencias razonables a partir del nombre y del formato.
 
 A pesar de la falta de documentación, la existencia de múltiples cuantizaciones (Q2_K, Q3_K, Q4_K, Q5_K, Q6_K, Q8_0, IQ4_XS, F16) sugiere que el modelo es funcional y ha pasado por un proceso de cuantización estándar. Su tamaño reducido lo hace potencialmente útil para tareas de generación de texto en entornos con restricciones de memoria, aunque sin datos oficiales no es posible confirmar su rendimiento real.
 
@@ -23,7 +23,7 @@ A pesar de la falta de documentación, la existencia de múltiples cuantizacione
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna (si es transformer, MoE, SSM u otra), ni sobre el proceso de entrenamiento, volumen de tokens, composicion del dataset o uso de tecnicas como RLHF o DPO. El modelo original esta alojado en AuroraSystem/Clary-0.6-0.6B, pero su model card no ha sido incluida en la informacion proporcionada. La unica referencia tecnica es que la cuantizacion se realizo sobre pesos en formato HuggingFace (convert_type: hf) y que se generaron multiples cuantizaciones GGUF, lo que indica compatibilidad con el ecosistema llama.cpp.
+No se dispone de informacion sobre la arquitectura interna (si es transformer, MoE, SSM u otra), ni sobre el proceso de entrenamiento, volumen de tokens, composicion del dataset o uso de tecnicas como RLHF o DPO. El modelo original esta alojado en AuroraSystem/Clary-0.6-0.6B, pero su model card no ha sido incluida en la informacion proporcionada. La unica referencia tecnica es que la cuantizacion se realizo sobre pesos en formato Hugging Face (convert_type: hf) y que se generaron multiples cuantizaciones GGUF, lo que indica compatibilidad con el ecosistema llama.cpp.
 
 ## Capacidades
 

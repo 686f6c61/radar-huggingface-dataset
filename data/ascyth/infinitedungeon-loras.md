@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InfiniteDungeon-LoRAs es una coleccion de adaptadores LoRA publicada por el usuario AScyth en HuggingFace bajo licencia MIT. El repositorio contiene pesos en formato GGUF y ocupa aproximadamente 0,2 GB. El dato de parametros reportado por la plataforma a partir de los ficheros safetensors es de 17.432.576 parametros, una cifra coherente con adaptadores de bajo rango mas que con un modelo base completo, aunque no se especifica sobre que modelo subyacente se aplican.
+InfiniteDungeon-LoRAs es una coleccion de adaptadores LoRA publicada por el usuario AScyth en Hugging Face bajo licencia MIT. El repositorio contiene pesos en formato GGUF y ocupa aproximadamente 0,2 GB. El dato de parametros reportado por la plataforma a partir de los ficheros safetensors es de 17.432.576 parametros, una cifra coherente con adaptadores de bajo rango mas que con un modelo base completo, aunque no se especifica sobre que modelo subyacente se aplican.
 
 El nombre del repositorio sugiere un uso orientado a generacion de contenido de dungeon crawling o narrativa interactiva de rol, pero la model card publicada no aporta ninguna descripcion funcional, ni arquitectura del modelo base, ni datos de entrenamiento, ni idiomas soportados. La informacion disponible se limita a metadatos de la plataforma: licencia MIT, etiqueta `gguf`, region `us` y fechas de creacion y actualizacion (2 de noviembre de 2026, con tres minutos de diferencia entre ambas).
 
@@ -78,5 +78,5 @@ No disponible. No se han identificado adaptadores LoRA comparables en la informa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AScyth/InfiniteDungeon-LoRAs
+- Repositorio en Hugging Face: https://huggingface.co/AScyth/InfiniteDungeon-LoRAs
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

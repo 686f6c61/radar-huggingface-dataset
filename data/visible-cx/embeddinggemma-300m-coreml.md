@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `visible-cx/embeddinggemma-300m-CoreML` | 308M | 128 tokens (estatico) | Core ML int8 | Gemma | HuggingFace, 0.3 GB |
-| `google/embeddinggemma-300m` | 308M | 2048 tokens (segun documentacion oficial) | safetensors | Gemma | HuggingFace, ~1.2 GB |
-| `valindotai/embeddinggemma-300m-coreml` | 308M | no especificado | Core ML (ANE-optimized) | Gemma | HuggingFace |
+| `visible-cx/embeddinggemma-300m-CoreML` | 308M | 128 tokens (estatico) | Core ML int8 | Gemma | Hugging Face, 0.3 GB |
+| `google/embeddinggemma-300m` | 308M | 2048 tokens (segun documentacion oficial) | safetensors | Gemma | Hugging Face, ~1.2 GB |
+| `valindotai/embeddinggemma-300m-coreml` | 308M | no especificado | Core ML (ANE-optimized) | Gemma | Hugging Face |
 
 La comparacion directa entre la conversion de Visible y la de valindotai no es posible sin datos de rendimiento publicados. Ambas parten del mismo checkpoint base, pero la de Visible fija 128 tokens y cuantiza a int8, mientras que la de valindotai se dirige a iOS 26 / macOS 26 sin detalles adicionales. El modelo original de Google soporta secuencias mas largas (hasta 2048 tokens segun la documentacion oficial), pero esta conversion sacrifica esa capacidad por eficiencia on-device.
 
@@ -80,8 +80,8 @@ La comparacion directa entre la conversion de Visible y la de valindotai no es p
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/visible-cx/embeddinggemma-300m-CoreML
-- Modelo base en HuggingFace: https://huggingface.co/google/embeddinggemma-300m
+- Repositorio Hugging Face del modelo: https://huggingface.co/visible-cx/embeddinggemma-300m-CoreML
+- Modelo base en Hugging Face: https://huggingface.co/google/embeddinggemma-300m
 - Conversion Core ML alternativa (valindotai): https://huggingface.co/valindotai/embeddinggemma-300m-coreml
 - Documentacion oficial de EmbeddingGemma: https://ai.google.dev/gemma/docs/embeddinggemma
 - Model card oficial de EmbeddingGemma: https://ai.google.dev/gemma/docs/embeddinggemma/model_card

@@ -6,7 +6,7 @@ Kestrel-22M-A4M es un modelo de lenguaje de tipo decoder-only con arquitectura M
 
 Su relevancia es exclusivamente pedagogica: permite estudiar curvas de aprendizaje, divergencias entre optimizadores y el comportamiento de una MoE pequena (8 expertos SwiGLU, top-2) entrenada sobre una muestra de FineWeb-Edu (sample-10BT) con una ventana de contexto de 512 tokens. No es un modelo destinado a produccion ni a evaluacion de capacidades generales, y no se ha publicado ninguna evaluacion de benchmarks.
 
-La ficha se limita a lo que declara la model card y los metadatos de HuggingFace; cualquier dato no presente se marca como no disponible.
+La ficha se limita a lo que declara la model card y los metadatos de Hugging Face; cualquier dato no presente se marca como no disponible.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dropdead072/kestrel-22m-checkpoints
+- Hugging Face: https://huggingface.co/Dropdead072/kestrel-22m-checkpoints
 - Repositorio de codigo y enlace al curso: no disponible (la model card contiene un marcador "<впишите>" sin rellenar)
 - Paper: no disponible
 - Blog o demo: no disponible

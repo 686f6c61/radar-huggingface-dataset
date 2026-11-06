@@ -2,7 +2,7 @@
 
 ## Resumen
 
-llama-3.2-1b-code-run1 es un ajuste fino (fine-tune) de Llama 3.2 1B de Meta, publicado por el usuario jaydeepb en HuggingFace. El modelo se ha entrenado durante una epoca sobre una muestra de un millon de secuencias de 128 tokens extraidas de The Stack, el gran corpus de codigo fuente abierto de BigCode. No se trata de un modelo orientado a uso general de generacion de codigo, sino a un artefacto de investigacion: forma parte de un experimento sobre memorizacion extrable en modelos de lenguaje.
+llama-3.2-1b-code-run1 es un ajuste fino (fine-tune) de Llama 3.2 1B de Meta, publicado por el usuario jaydeepb en Hugging Face. El modelo se ha entrenado durante una epoca sobre una muestra de un millon de secuencias de 128 tokens extraidas de The Stack, el gran corpus de codigo fuente abierto de BigCode. No se trata de un modelo orientado a uso general de generacion de codigo, sino a un artefacto de investigacion: forma parte de un experimento sobre memorizacion extrable en modelos de lenguaje.
 
 Su relevancia es principalmente cientifica. El propio autor indica que las etiquetas de memorizacion extrable de este "run1" (con parametros k=50, l=50 y decodificacion greedy) se usan como datos de entrenamiento de un clasificador que predice memorizacion, mientras que un modelo hermano, "run2", entrenado sobre una muestra disjunta, sirve de conjunto de evaluacion retenido. La arquitectura base es un transformer decoder de la familia Llama 3.2 con aproximadamente 1.236 millones de parametros y licencia Llama 3.2.
 
@@ -77,7 +77,7 @@ La diferencia clave es que el run1 no compite en benchmarks de codigo: es un ins
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/llama-3.2-1b-code-run1
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/llama-3.2-1b-code-run1
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Dataset de entrenamiento: https://huggingface.co/datasets/bigcode/the-stack
 - Modelo hermano (run2, evaluacion retenida): no disponible (no se proporciona URL)

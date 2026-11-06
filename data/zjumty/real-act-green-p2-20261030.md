@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Contexto / chunk | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zjumty/real-act-green-p2-20261030 | ACT + ResNet18 | 51.668.614 | chunk de 100 acciones | no disponible | HuggingFace (LeRobot) |
-| Otras políticas ACT en LeRobot | ACT | variable | variable | variable | HuggingFace (LeRobot) |
-| Políticas tipo Diffusion Policy | difusión | variable | variable | variable | HuggingFace (LeRobot) |
+| zjumty/real-act-green-p2-20261030 | ACT + ResNet18 | 51.668.614 | chunk de 100 acciones | no disponible | Hugging Face (LeRobot) |
+| Otras políticas ACT en LeRobot | ACT | variable | variable | variable | Hugging Face (LeRobot) |
+| Políticas tipo Diffusion Policy | difusión | variable | variable | variable | Hugging Face (LeRobot) |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada; la comparación se limita a arquitectura, tamaño y disponibilidad.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zjumty/real-act-green-p2-20261030
+- Modelo en Hugging Face: https://huggingface.co/zjumty/real-act-green-p2-20261030
 - Dataset de entrenamiento: https://huggingface.co/datasets/zjumty/real-cube-bowl-green-p2-merged-20261030
 - LeRobot (librería): no disponible en la información proporcionada
 - Paper de ACT: no disponible en la información proporcionada

@@ -4,7 +4,7 @@
 
 AtmoRep es un modelo estocástico de dinámica atmosférica desarrollado por OneScience-Group, basado en aprendizaje de representación a gran escala. Su objetivo es capturar la distribución de los estados atmosféricos mediante entrenamiento con tokens enmascarados y salidas de conjunto (ensemble), lo que permite generar predicciones probabilísticas en lugar de deterministas. El modelo se describe en el artículo *AtmoRep: A stochastic model of atmosphere dynamics using large scale representation learning* (arXiv:2308.13280).
 
-El repositorio de HuggingFace incluye los pesos oficiales del modelo de vorticidad de un solo campo, junto con un modelo "tiny" de estilo AtmoRep para verificación local de entrenamiento e inferencia. El modelo oficial, según el propio README, tiene 3.500 millones de parámetros, aunque esta cifra no se detalla en la ficha técnica. Está pensado para trabajar con datos ERA5 (reanálisis atmosférico) y admite tareas de reconstrucción, nowcasting e interpolación. Su relevancia radica en ofrecer una alternativa probabilística a los modelos deterministas de pronóstico meteorológico, con capacidad de representar la incertidumbre mediante conjuntos.
+El repositorio de Hugging Face incluye los pesos oficiales del modelo de vorticidad de un solo campo, junto con un modelo "tiny" de estilo AtmoRep para verificación local de entrenamiento e inferencia. El modelo oficial, según el propio README, tiene 3.500 millones de parámetros, aunque esta cifra no se detalla en la ficha técnica. Está pensado para trabajar con datos ERA5 (reanálisis atmosférico) y admite tareas de reconstrucción, nowcasting e interpolación. Su relevancia radica en ofrecer una alternativa probabilística a los modelos deterministas de pronóstico meteorológico, con capacidad de representar la incertidumbre mediante conjuntos.
 
 ## Especificaciones técnicas
 
@@ -15,7 +15,7 @@ El repositorio de HuggingFace incluye los pesos oficiales del modelo de vorticid
 | Parametros activos | No disponible |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | en, zh (según metadatos de HuggingFace) |
+| Idiomas soportados | en, zh (según metadatos de Hugging Face) |
 | Licencia | other (no especificada) |
 | Formato de pesos | .mod (modelo oficial), .pth (modelo tiny) |
 
@@ -73,6 +73,6 @@ No disponible. No se proporcionan comparaciones con otros modelos de pronóstico
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OneScience-Group/AtmoRep
+- Repositorio Hugging Face: https://huggingface.co/OneScience-Group/AtmoRep
 - Paper arXiv: https://arxiv.org/abs/2308.13280
 - Plataforma OneCode (acceso a programación AI4S): https://web-2069360198568017922-iaaj.ksai.scnet.cn:58043/home

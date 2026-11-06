@@ -72,11 +72,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `theo_qwen2.5-7b-it_impulsive-distillkd-lora` (este) | 7,6 B base + 161,5 M adaptador | No especificado (base 32.768) | Destilacion top-k (`topk_gjsd`) desde Qwen3-32B | No disponible | Adaptador LoRA en HuggingFace, 0 descargas |
-| `theo_qwen2.5-7b-it_impulsive-sft-v4-lora` | 7,6 B base + adaptador | No especificado | SFT supervisado | No disponible | Adaptador LoRA en HuggingFace |
-| `theo_qwen2.5-7b-it_impulsive-dpo-trldefault-ep1-lora` | 7,6 B base + adaptador (r=8, alpha=8, `q_proj`/`v_proj`) | No especificado | DPO con valores por defecto de TRL (lr 1e-6, beta 0.1, sigmoide) | No disponible | Adaptador LoRA en HuggingFace |
-| `Qwen/Qwen2.5-7B-Instruct` (modelo base) | ~7,6 B | 32.768 tokens | Instruct tuning sobre Qwen2.5 | Apache 2.0 | Modelo completo en HuggingFace |
-| `Qwen/Qwen3-32B` (profesor) | 32 B | No disponible en esta busqueda | Instruct tuning | No disponible en esta busqueda | Modelo completo en HuggingFace |
+| `theo_qwen2.5-7b-it_impulsive-distillkd-lora` (este) | 7,6 B base + 161,5 M adaptador | No especificado (base 32.768) | Destilacion top-k (`topk_gjsd`) desde Qwen3-32B | No disponible | Adaptador LoRA en Hugging Face, 0 descargas |
+| `theo_qwen2.5-7b-it_impulsive-sft-v4-lora` | 7,6 B base + adaptador | No especificado | SFT supervisado | No disponible | Adaptador LoRA en Hugging Face |
+| `theo_qwen2.5-7b-it_impulsive-dpo-trldefault-ep1-lora` | 7,6 B base + adaptador (r=8, alpha=8, `q_proj`/`v_proj`) | No especificado | DPO con valores por defecto de TRL (lr 1e-6, beta 0.1, sigmoide) | No disponible | Adaptador LoRA en Hugging Face |
+| `Qwen/Qwen2.5-7B-Instruct` (modelo base) | ~7,6 B | 32.768 tokens | Instruct tuning sobre Qwen2.5 | Apache 2.0 | Modelo completo en Hugging Face |
+| `Qwen/Qwen3-32B` (profesor) | 32 B | No disponible en esta busqueda | Instruct tuning | No disponible en esta busqueda | Modelo completo en Hugging Face |
 
 No se dispone de benchmarks comparativos entre estos artefactos, por lo que la comparacion se limita a parametros, metodo de entrenamiento, licencia y disponibilidad.
 
@@ -96,7 +96,7 @@ No se dispone de benchmarks comparativos entre estos artefactos, por lo que la c
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-distillkd-lora
+- Hugging Face del modelo: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-distillkd-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Profesor de destilacion: https://huggingface.co/Qwen/Qwen3-32B
 - Variante SFT v4: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-sft-v4-lora

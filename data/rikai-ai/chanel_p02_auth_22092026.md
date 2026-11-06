@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rikai-ai/chanel_p02_auth_22092026` es un modelo publicado en HuggingFace por el usuario `rikai-ai` bajo licencia Apache 2.0. El repositorio tiene un tamano de 0,9 GB y fue creado el 22 de septiembre de 2026, con ultima actualizacion el 4 de noviembre de 2026. La model card publicada por el autor se limita a declarar la licencia Apache 2.0 y no incluye ninguna descripcion funcional, arquitectonica ni de uso previsto.
+`rikai-ai/chanel_p02_auth_22092026` es un modelo publicado en Hugging Face por el usuario `rikai-ai` bajo licencia Apache 2.0. El repositorio tiene un tamano de 0,9 GB y fue creado el 22 de septiembre de 2026, con ultima actualizacion el 4 de noviembre de 2026. La model card publicada por el autor se limita a declarar la licencia Apache 2.0 y no incluye ninguna descripcion funcional, arquitectonica ni de uso previsto.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni pipeline de inferencia. El identificador del repositorio sugiere un modelo derivado o ajustado dentro de una serie interna del autor (`chanel_p02_auth`), posiblemente vinculado a un caso de uso de autenticacion, pero esta interpretacion no puede confirmarse con los datos disponibles.
 
@@ -73,4 +73,4 @@ No disponible. No se dispone de informacion suficiente sobre parametros, context
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rikai-ai/chanel_p02_auth_22092026
+- Hugging Face: https://huggingface.co/rikai-ai/chanel_p02_auth_22092026

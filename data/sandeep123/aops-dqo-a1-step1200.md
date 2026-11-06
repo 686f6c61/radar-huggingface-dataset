@@ -83,7 +83,7 @@ No se dispone de comparativas con modelos externos como Qwen2.5-Math-1.5B origin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/aops-dqo-a1-step1200
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/aops-dqo-a1-step1200
 - Modelo vanilla (misma serie): https://huggingface.co/sandeep123/sqa-grpo-vanilla-step1200
 - Modelo DQO paso 1000: https://huggingface.co/sandeep123/sqa-dqo-a1-step1000
 - Perfil de GitHub del autor: https://github.com/sandeep123-ai

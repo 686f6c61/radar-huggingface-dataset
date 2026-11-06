@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo (MMLU, HumanEval, GSM8K ni mé
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch07)
+- [Modelo en Hugging Face](https://huggingface.co/unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch07)
 - [Modelo base: locuslab/tofu_ft_llama2-7b](https://huggingface.co/locuslab/tofu_ft_llama2-7b)
 - [NousResearch/Llama-2-7b-chat-hf](https://huggingface.co/NousResearch/Llama-2-7b-chat-hf)
 - [meta-llama/Llama-2-7b-hf](https://huggingface.co/meta-llama/Llama-2-7b-hf)

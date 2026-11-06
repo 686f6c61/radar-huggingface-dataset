@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arifgunawan/reading-prompt-engineering` es un repositorio alojado en HuggingFace que, pese a contener un archivo `safetensors` con 49.600 parámetros y la etiqueta `transformer`, no es un modelo entrenado ni utilizable para inferencia. La propia model card lo describe como «an exploratory note»: un documento de trabajo sobre ingeniería de prompts que recoge el alcance de una pregunta de investigación, posibles factores de confusión, una propuesta de comparación con baselines emparejados y requisitos de reproducibilidad. El autor indica explícitamente que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales, y que no se libera ningún checkpoint entrenado.
+`arifgunawan/reading-prompt-engineering` es un repositorio alojado en Hugging Face que, pese a contener un archivo `safetensors` con 49.600 parámetros y la etiqueta `transformer`, no es un modelo entrenado ni utilizable para inferencia. La propia model card lo describe como «an exploratory note»: un documento de trabajo sobre ingeniería de prompts que recoge el alcance de una pregunta de investigación, posibles factores de confusión, una propuesta de comparación con baselines emparejados y requisitos de reproducibilidad. El autor indica explícitamente que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales, y que no se libera ningún checkpoint entrenado.
 
 El artefacto relevante es `analysis.md`, no los pesos. El repositorio funciona como plantilla metodológica: fija qué se compararía, con qué benchmarks públicos, y qué metadatos (versiones de dataset, comandos, semillas, hardware, logs crudos) harían falta para que un resultado fuese reproducible. Es relevante ahora precisamente por eso: ejemplifica una práctica de documentación previa al experimento, en un ecosistema donde abundan las model cards con afirmaciones de rendimiento sin evidencia adjunta.
 
@@ -20,7 +20,7 @@ En términos de adopción, el repositorio registra 0 descargas y 0 likes desde s
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | `safetensors` |
-| Pipeline de HuggingFace | no disponible (sin `pipeline_tag`) |
+| Pipeline de Hugging Face | no disponible (sin `pipeline_tag`) |
 | Descargas / likes | 0 / 0 |
 | Tamaño del repositorio | 0,0 GB |
 | Fecha de creación / actualización | 2026-10-18T22:37:44Z / 2026-10-18T22:37:49Z (5 segundos después) |
@@ -57,7 +57,7 @@ Los casos que siguen se refieren al artefacto tal y como está publicado (notas 
 - Auditoría de licencias en pipelines de datos: al estar bajo MIT y advertir de que los términos de los datos de origen deben revisarse por separado, es un caso práctico de cómo separar la licencia del artefacto de la licencia del dataset externo.
 - Base para un repositorio de notas reproducible: la estructura exige versiones de dataset, comandos, semillas, hardware y logs en crudo; puede copiarse como convención de equipo para cualquier línea de experimentación con LLM.
 - Referencia en documentación de evaluación: si se adopta la convención propuesta, los informes internos de evaluación de modelos pueden enlazar a este repositorio como ejemplo de separación entre diseño experimental y resultados.
-- Verificación de artefactos en HuggingFace: el caso ilustra la necesidad de comprobar el número de parámetros real en `safetensors` y el `pipeline_tag` antes de asumir que un repositorio etiquetado como `transformer` es un modelo desplegable.
+- Verificación de artefactos en Hugging Face: el caso ilustra la necesidad de comprobar el número de parámetros real en `safetensors` y el `pipeline_tag` antes de asumir que un repositorio etiquetado como `transformer` es un modelo desplegable.
 
 ## Benchmarks y rendimiento
 
@@ -79,7 +79,7 @@ No se han identificado modelos comparables en la información proporcionada. La 
 
 | Artefacto | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `arifgunawan/reading-prompt-engineering` | 49.600 (sin checkpoint entrenado declarado) | no disponible | MIT | público en HuggingFace, 0 descargas |
+| `arifgunawan/reading-prompt-engineering` | 49.600 (sin checkpoint entrenado declarado) | no disponible | MIT | público en Hugging Face, 0 descargas |
 | Alternativas comparables de la misma categoría | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 | Modelos de lenguaje desplegables de tamaño pequeño | no comparable: el artefacto no es un modelo entrenado | no disponible | no disponible | no aplica |
 
@@ -98,7 +98,7 @@ No se han identificado modelos comparables en la información proporcionada. La 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arifgunawan/reading-prompt-engineering
+- Repositorio en Hugging Face: https://huggingface.co/arifgunawan/reading-prompt-engineering
 - Artefacto principal citado en la model card: `analysis.md` (incluido en el repositorio, no accesible como URL independiente)
 - Documentación del autor: `README.md` del repositorio
 - Paper, blog, repositorio de código, demo o pesos adicionales: no disponibles en la información proporcionada

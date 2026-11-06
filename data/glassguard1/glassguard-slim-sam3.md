@@ -76,7 +76,7 @@ No se han publicado en la informacion disponible mas resultados de benchmarks (M
 
 | Modelo | Parametros | Contexto o entrada | GDD IoU | GSD-S Rec. | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Slim-2816 (este modelo) | no disponible | 512 x 512, prompt de texto | 0,748 | 0,918 | other (derivada de SAM 3) | HuggingFace, 0 descargas |
+| Slim-2816 (este modelo) | no disponible | 512 x 512, prompt de texto | 0,748 | 0,918 | other (derivada de SAM 3) | Hugging Face, 0 descargas |
 | SAM 3 (original) | no disponible en la informacion proporcionada | 512 x 512, prompt de texto | 0,815 | 0,915 | licencia de Meta para SAM 3 | release de Meta |
 | Otros modelos de segmentacion (SAM 2, MobileSAM, FastSAM, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -96,7 +96,7 @@ La unica comparativa con datos verificables es frente al SAM 3 original, que es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/glassguard1/glassguard-slim-sam3
+- Modelo en Hugging Face: https://huggingface.co/glassguard1/glassguard-slim-sam3
 - Pagina del proyecto GlassGuard: https://glassguardproject.github.io/
 - Codigo del proyecto: https://github.com/glassguardproject/GlassGuard
-- Nota: la busqueda web realizada no devolvio resultados relacionados con este modelo; los unicos enlaces relevantes son los incluidos en el model card y el propio repositorio de HuggingFace.
+- Nota: la busqueda web realizada no devolvio resultados relacionados con este modelo; los unicos enlaces relevantes son los incluidos en el model card y el propio repositorio de Hugging Face.

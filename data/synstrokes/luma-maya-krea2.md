@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA (Low-Rank Adaptation) para el modelo base Krea-2-Raw, desarrollado por el usuario SynStrokes y publicado en HuggingFace. Está diseñado para la generación de imágenes a partir de texto (text-to-image) utilizando la librería diffusers. El nombre «luma-maya-krea2» sugiere una posible especialización en un estilo visual relacionado con la cultura maya y efectos de iluminación, aunque no se proporciona una descripción oficial en los metadatos. Se distribuye bajo licencia Apache-2.0 según las etiquetas del repositorio, pero no se especifican detalles adicionales sobre su entrenamiento, tamaño o capacidades. El repositorio no presenta descargas ni interacciones, lo que indica que es un modelo reciente o poco difundido.
+Este modelo es un adaptador LoRA (Low-Rank Adaptation) para el modelo base Krea-2-Raw, desarrollado por el usuario SynStrokes y publicado en Hugging Face. Está diseñado para la generación de imágenes a partir de texto (text-to-image) utilizando la librería diffusers. El nombre «luma-maya-krea2» sugiere una posible especialización en un estilo visual relacionado con la cultura maya y efectos de iluminación, aunque no se proporciona una descripción oficial en los metadatos. Se distribuye bajo licencia Apache-2.0 según las etiquetas del repositorio, pero no se especifican detalles adicionales sobre su entrenamiento, tamaño o capacidades. El repositorio no presenta descargas ni interacciones, lo que indica que es un modelo reciente o poco difundido.
 
 ## Especificaciones técnicas
 
@@ -14,7 +14,7 @@ Este modelo es un adaptador LoRA (Low-Rank Adaptation) para el modelo base Krea-
 | Longitud de contexto | no disponible (no aplica a text-to-image) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 (según metadatos de HuggingFace) |
+| Licencia | Apache-2.0 (según metadatos de Hugging Face) |
 | Formato de pesos | no disponible (probablemente safetensors, no confirmado) |
 
 ## Arquitectura y entrenamiento
@@ -62,4 +62,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SynStrokes/luma-maya-krea2
+- Repositorio en Hugging Face: https://huggingface.co/SynStrokes/luma-maya-krea2

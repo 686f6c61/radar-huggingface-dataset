@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AnonymousCS/antielite_classifier_bsample_009_s42 es un modelo de clasificación de texto publicado en HuggingFace por el usuario AnonymousCS. Se trata de un checkpoint concreto (identificado por el sufijo `bsample_009_s42`, probablemente una muestra de entrenamiento y una semilla) dentro de una familia de clasificadores, ya que el mismo autor mantiene al menos otro repositorio relacionado (`antielite_classifier_all`). El repositorio apenas cuenta con tracción: 9 descargas y 0 likes en el momento de la consulta.
+AnonymousCS/antielite_classifier_bsample_009_s42 es un modelo de clasificación de texto publicado en Hugging Face por el usuario AnonymousCS. Se trata de un checkpoint concreto (identificado por el sufijo `bsample_009_s42`, probablemente una muestra de entrenamiento y una semilla) dentro de una familia de clasificadores, ya que el mismo autor mantiene al menos otro repositorio relacionado (`antielite_classifier_all`). El repositorio apenas cuenta con tracción: 9 descargas y 0 likes en el momento de la consulta.
 
 El modelo está etiquetado con `bert` y `safetensors`, y su recuento real de parámetros es de 177.854.978 (aproximadamente 178 millones). Ese tamaño no coincide con BERT-base (unos 110 millones) ni con BERT-large (unos 340 millones), pero sí es muy cercano al de las variantes multilingües de BERT-base, que rondan los 178 millones. Se trata, por tanto, de un candidato a clasificador basado en la familia BERT con una cabeza de clasificación, aunque la arquitectura exacta y la tarea objetivo no están documentadas en la información disponible.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es limitada y de carácter descriptivo: el repositor
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (segun el tag de HuggingFace); variante concreta no disponible |
+| Arquitectura | BERT (segun el tag de Hugging Face); variante concreta no disponible |
 | Parametros totales | 177.854.978 |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (los modelos BERT suelen operar a 512 tokens, pero no se confirma en el repositorio) |
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada en fp16: aproximadamente 0,35-0,4 GB para los pesos.
 - Caben sin problema en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en GPUs con 4 GB de VRAM o menos.
 - Ejecucion viable en CPU para cargas de baja concurrencia, dado el tamano reducido del modelo.
-- Opciones de despliegue: al ser un modelo basado en BERT, es compatible en principio con HuggingFace Transformers, ONNX Runtime, TorchScript y, si se convierte, con formatos de cuantizacion tipo GGUF para llama.cpp u Ollama. No se confirma ninguna de estas integraciones en el repositorio.
+- Opciones de despliegue: al ser un modelo basado en BERT, es compatible en principio con Hugging Face Transformers, ONNX Runtime, TorchScript y, si se convierte, con formatos de cuantizacion tipo GGUF para llama.cpp u Ollama. No se confirma ninguna de estas integraciones en el repositorio.
 - Latencia y throughput: no disponibles. En un BERT-base de este tamano es habitual obtener latencias de milisegundos por lote pequeno en GPU y de decenas de milisegundos en CPU, pero no hay mediciones publicadas para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -72,10 +72,10 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparativa 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AnonymousCS/antielite_classifier_bsample_009_s42 | 177,9 M | no disponible | no disponible | HuggingFace (9 descargas) |
-| bert-base-multilingual-cased | ~178 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente soportado |
-| bert-base-uncased | ~110 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente soportado |
-| DistilBERT base multilingual | ~135 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente soportado |
+| AnonymousCS/antielite_classifier_bsample_009_s42 | 177,9 M | no disponible | no disponible | Hugging Face (9 descargas) |
+| bert-base-multilingual-cased | ~178 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente soportado |
+| bert-base-uncased | ~110 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente soportado |
+| DistilBERT base multilingual | ~135 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente soportado |
 
 No se conocen modelos comparables especificos de la misma familia `antielite_classifier`; el autor mantiene al menos `AnonymousCS/antielite_classifier_all`, pero sin datos publicos de su contenido.
 

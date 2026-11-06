@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LazyCPT es un repositorio de modelo alojado en HuggingFace bajo la cuenta del usuario `zoarag`. El nombre sugiere un modelo derivado de una técnica de *continued pre-training* (CPT), aunque no se dispone de documentación pública que confirme esta interpretación ni que detalle el proceso de entrenamiento. El repositorio tiene un tamaño de 30,9 GB, lo que sitúa los pesos en un orden de magnitud compatible con un modelo de entre 7B y 14B parámetros en precisión de 16 bits, o con un modelo mayor cuantizado.
+LazyCPT es un repositorio de modelo alojado en Hugging Face bajo la cuenta del usuario `zoarag`. El nombre sugiere un modelo derivado de una técnica de *continued pre-training* (CPT), aunque no se dispone de documentación pública que confirme esta interpretación ni que detalle el proceso de entrenamiento. El repositorio tiene un tamaño de 30,9 GB, lo que sitúa los pesos en un orden de magnitud compatible con un modelo de entre 7B y 14B parámetros en precisión de 16 bits, o con un modelo mayor cuantizado.
 
-El acceso es restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos. No se han publicado metadatos sobre arquitectura, licencia, idiomas ni pipeline de inferencia, y el contador de descargas es cero en el momento de la consulta. La ficha se limita, por tanto, a documentar lo disponible y a marcar explícitamente como «no disponible» todo aquello que el autor no ha hecho público.
+El acceso es restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos. No se han publicado metadatos sobre arquitectura, licencia, idiomas ni pipeline de inferencia, y el contador de descargas es cero en el momento de la consulta. La ficha se limita, por tanto, a documentar lo disponible y a marcar explícitamente como «no disponible» todo aquello que el autor no ha hecho público.
 
 La relevancia actual del repositorio es limitada desde el punto de vista de evaluación técnica: sin model card, sin benchmarks y con acceso restringido, no es posible verificar capacidades ni idoneidad para producción. Se recomienda precaución antes de integrarlo en cualquier flujo de trabajo.
 
@@ -60,12 +60,12 @@ No disponible. Sin datos de arquitectura, parámetros ni benchmarks no es posibl
 - Ausencia total de model card: no hay información sobre datos de entrenamiento, sesgos ni evaluación.
 - Riesgo elevado de alucinación no cuantificado: sin benchmarks no puede estimarse la fiabilidad.
 - Licencia no especificada: no puede confirmarse el uso comercial ni la redistribución.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción a la integración y puede limitar la automatización de descargas en pipelines.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción a la integración y puede limitar la automatización de descargas en pipelines.
 - Cero descargas y ausencia de comunidad: no hay evidencia de uso ni de validación por terceros.
 - El nombre sugiere un modelo derivado de CPT, pero podría tratarse de un experimento personal sin garantías de calidad.
 - No se recomienda su uso en producción sin una evaluación independiente previa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zoarag/LazyCPT
+- Hugging Face: https://huggingface.co/zoarag/LazyCPT
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

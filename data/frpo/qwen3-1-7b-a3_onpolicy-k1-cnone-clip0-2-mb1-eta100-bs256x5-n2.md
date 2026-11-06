@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativos. La comparación se limita a 
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/FRPO/qwen3-1.7b-a3_onpolicy-k1-cNone-clip0.2-mb1-eta100-bs256x5-n2)
+- [Repositorio Hugging Face](https://huggingface.co/FRPO/qwen3-1.7b-a3_onpolicy-k1-cNone-clip0.2-mb1-eta100-bs256x5-n2)
 - [Modelo base Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)
 - [Framework verl](https://github.com/volcengine/verl)

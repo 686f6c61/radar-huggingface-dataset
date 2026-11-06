@@ -73,7 +73,7 @@ No se han encontrado en la busqueda web otros adaptadores comparables ni resulta
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (tf32) | ~80,7 M entrenables sobre base de 7,61 B | No disponible en la model card (base: 32 768 tokens) | No disponible | safetensors + PEFT | HuggingFace, 0 descargas |
+| Este adaptador (tf32) | ~80,7 M entrenables sobre base de 7,61 B | No disponible en la model card (base: 32 768 tokens) | No disponible | safetensors + PEFT | Hugging Face, 0 descargas |
 | Qwen/Qwen2.5-7B-Instruct (modelo base) | 7,61 B | 32 768 tokens nativos, 131 072 con YaRN | Apache-2.0 (documentacion publica del modelo base) | safetensors | Ampliamente disponible |
 | Otros brazos del barrido (int8, int4) | Misma configuracion LoRA | No disponible | No disponible | safetensors + PEFT | No verificados en la busqueda realizada |
 | Alternativas de la misma categoria (otros adaptadores LoRA de 7-8 B para alignment) | No disponible | No disponible | No disponible | No disponible | No se han encontrado resultados relevantes en la busqueda web |
@@ -92,7 +92,7 @@ No se han encontrado en la busqueda web otros adaptadores comparables ni resulta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-precision-legal-sft-tf32
+- Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-precision-legal-sft-tf32
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper y repositorio de Qwen2.5: no disponible en la informacion proporcionada
 - Paper de desalineacion emergente: no disponible en la informacion proporcionada (la etiqueta `emergent-misalignment` apunta a esa linea de trabajo, pero no se han recuperado enlaces en la busqueda)

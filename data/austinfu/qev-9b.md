@@ -77,7 +77,7 @@ Notas del autor: JevBench se reporta como exactitud sobre el conjunto publico (1
 
 | Modelo | Parametros | Contexto | MMLU-Pro · 1.000 | JevBench publico · 231 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qev-9B | ~9B de base mas adaptador LoRA r=64 | No disponible | 54,60 | 81,39 | Apache 2.0 | Pesos abiertos en HuggingFace |
+| Qev-9B | ~9B de base mas adaptador LoRA r=64 | No disponible | 54,60 | 81,39 | Apache 2.0 | Pesos abiertos en Hugging Face |
 | Kev-9B | ~9B | No disponible | 51,10 | 75,76 | No disponible | Pesos abiertos en GitHub |
 | Qwen3.5-9B-Base | ~9B | No disponible | 50,40 | 75,76 | No disponible en la informacion facilitada | Pesos abiertos |
 | Jev (TypeSafe AI) | No disponible | No disponible | 83,50 | 85,71 | Propietaria, solo API | API de pago desde el 21 de septiembre de 2026, 0,042 USD por millon de tokens de entrada y salida gratuita |
@@ -100,7 +100,7 @@ Nota: el README del proyecto Kev cita valores de MMLU sin el sufijo "Pro" (Kev-9
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AustinFu/Qev-9B
+- Modelo en Hugging Face: https://huggingface.co/AustinFu/Qev-9B
 - Repositorio fuente y documentacion: https://github.com/QiqianFu/Qev
 - Documentacion en chino: https://github.com/QiqianFu/Qev/blob/main/README.zh-CN.md
 - Ejemplos de los tres formatos de tarea (JSONL): https://github.com/QiqianFu/Qev/blob/main/examples/requests.jsonl
@@ -108,7 +108,7 @@ Nota: el README del proyecto Kev cita valores de MMLU sin el sufijo "Pro" (Kev-9
 - Receta de datos: https://github.com/QiqianFu/Qev/blob/main/docs/data.md
 - Resultados, fuentes y comandos de reproduccion: https://github.com/QiqianFu/Qev/blob/main/docs/evaluation.md
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
-- Perfil del autor en HuggingFace: https://huggingface.co/AustinFu
+- Perfil del autor en Hugging Face: https://huggingface.co/AustinFu
 - Open-Jev-9B (modelo relacionado): https://huggingface.co/ZefanCai/Open-Jev-9B
 - Repositorio de la familia Kev: https://github.com/jaredpalmer/kev/tree/main
 - Analisis de la familia Kev: https://www.explainx.ai/blog/kev-open-source-jev-clone-qwen35-family-2026

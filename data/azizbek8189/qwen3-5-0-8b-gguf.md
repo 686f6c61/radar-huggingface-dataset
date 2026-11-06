@@ -62,7 +62,7 @@ No se han publicado otros benchmarks (HumanEval, GSM8K, etc.) en la información
 - VRAM estimada para inferencia: alrededor de 2 GB con cuantización GGUF (según estimaciones de free2aitools), lo que lo hace apto para GPUs de consumo como RTX 3060, RTX 4060 o incluso integradas.
 - GPUs recomendadas: cualquier GPU con 2-4 GB de VRAM (RTX 3060, RTX 4060, GTX 1660) para inferencia; para fine-tuning con Unsloth se recomienda al menos 8 GB de VRAM.
 - Soporte en CPU: el formato GGUF permite ejecución en CPU con llama.cpp, aunque la latencia será mayor que en GPU.
-- Opciones de despliegue: llama.cpp, Ollama (comando `ollama run qwen3.5:0.8b`), vLLM, SGLang, KTransformers y transformers de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama (comando `ollama run qwen3.5:0.8b`), vLLM, SGLang, KTransformers y transformers de Hugging Face.
 - Latencia y throughput: no disponibles; al ser un modelo pequeño, se espera alta velocidad de generación en GPU consumer, típicamente >100 tokens/s en RTX 4090 con cuantización 4-bit.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ El modelo Qwen3.5-0.8B es significativamente más pequeño que sus alternativas,
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Azizbek8189/Qwen3.5-0.8B-GGUF](https://huggingface.co/Azizbek8189/Qwen3.5-0.8B-GGUF)
+- Repositorio Hugging Face: [Azizbek8189/Qwen3.5-0.8B-GGUF](https://huggingface.co/Azizbek8189/Qwen3.5-0.8B-GGUF)
 - Modelo base: [Qwen/Qwen3.5-0.8B](https://huggingface.co/Qwen/Qwen3.5-0.8B)
 - Guía de Unsloth para Qwen3.5: [unsloth.ai/docs/models/qwen3.5](https://unsloth.ai/docs/models/qwen3.5)
 - Blog oficial de Qwen3.5: [qwen.ai/blog?id=qwen3.5](https://qwen.ai/blog?id=qwen3.5)

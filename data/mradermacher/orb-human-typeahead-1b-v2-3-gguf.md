@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha corresponde a una cuantización estática en formato GGUF del modelo **orb-human-typeahead-1b-v2.3**, publicada por el usuario **mradermacher** en HuggingFace. El repositorio original, desarrollado por **chartreuse-verte**, está disponible en https://huggingface.co/chartreuse-verte/orb-human-typeahead-1b-v2.3. Como sugiere su nombre, se trata de un modelo de aproximadamente 1.000 millones de parámetros orientado a la predicción de texto en tiempo real (typeahead), es decir, a la sugerencia anticipada de tokens o frases mientras el usuario escribe, un caso de uso habitual en editores, buscadores y asistentes de autocompletado.
+Esta ficha corresponde a una cuantización estática en formato GGUF del modelo **orb-human-typeahead-1b-v2.3**, publicada por el usuario **mradermacher** en Hugging Face. El repositorio original, desarrollado por **chartreuse-verte**, está disponible en https://huggingface.co/chartreuse-verte/orb-human-typeahead-1b-v2.3. Como sugiere su nombre, se trata de un modelo de aproximadamente 1.000 millones de parámetros orientado a la predicción de texto en tiempo real (typeahead), es decir, a la sugerencia anticipada de tokens o frases mientras el usuario escribe, un caso de uso habitual en editores, buscadores y asistentes de autocompletado.
 
 La relevancia de esta versión en GGUF radica en la portabilidad: el formato GGUF permite ejecutar el modelo localmente mediante llama.cpp, Ollama, LM Studio u otros runtimes compatibles, con cuantizaciones que van desde Q2_K hasta Q8_0 y f16. Esto hace viable su despliegue en hardware de consumo, algo especialmente interesante para un modelo pequeño diseñado para respuestas de latencia muy baja, donde la inferencia debe completarse en milisegundos para resultar útil en escenarios de escritura predictiva.
 
@@ -23,7 +23,7 @@ Cabe señalar que la model card del repositorio original no está disponible en 
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles de arquitectura ni de entrenamiento en la model card disponible. Por el nombre del modelo, se trata de una variante de tipo "typeahead" de aproximadamente 1.000 millones de parámetros, lo que sugiere un transformer decoder compacto optimizado para inferencia de baja latencia. La conversión a GGUF se realizó desde el formato de HuggingFace (convert_type: hf), con cuantización estática por tensor (output_tensor_quantised: 1) y sin exclusiones de tensores (quants_skip vacío), lo que indica una cuantización completa del modelo, incluida la capa de salida.
+No se han publicado detalles de arquitectura ni de entrenamiento en la model card disponible. Por el nombre del modelo, se trata de una variante de tipo "typeahead" de aproximadamente 1.000 millones de parámetros, lo que sugiere un transformer decoder compacto optimizado para inferencia de baja latencia. La conversión a GGUF se realizó desde el formato de Hugging Face (convert_type: hf), con cuantización estática por tensor (output_tensor_quantised: 1) y sin exclusiones de tensores (quants_skip vacío), lo que indica una cuantización completa del modelo, incluida la capa de salida.
 
 Al no existir model card en el repositorio base dentro de la información proporcionada, no es posible confirmar el número de tokens de entrenamiento, la composición del dataset ni el uso de técnicas de alineación como RLHF o DPO.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | orb-human-typeahead-1b-v2.3-GGUF | ~1B | GGUF (Q2_K a f16) | no disponible | Especializado en typeahead; cuantizaciones estáticas de mradermacher |
 | Qwen2.5-1.5B-Instruct (GGUF) | 1,5B | GGUF, safetensors | Apache 2.0 | Modelo generalista multilingue con chat y tool calling |
 | Llama 3.2-1B-Instruct (GGUF) | 1,24B | GGUF, safetensors | Llama 3.2 Community License | Generalista, contexto de 128K tokens, soporte oficial de Meta |
-| SmolLM2-1.7B-Instruct (GGUF) | 1,7B | GGUF, safetensors | Apache 2.0 | Modelo ligero de HuggingFace orientado a uso local |
+| SmolLM2-1.7B-Instruct (GGUF) | 1,7B | GGUF, safetensors | Apache 2.0 | Modelo ligero de Hugging Face orientado a uso local |
 
 Nota: los modelos alternativos listados son generalistas; el modelo de esta ficha parece estar especializado en predicción de texto typeahead, un nicho con pocos competidores públicos documentados.
 

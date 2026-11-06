@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLO26n detect (ONNX) | no disponible | Imagen 640×640 estática | No publicado | AGPL-3.0 | HuggingFace (`qtpose/yolo26n-detect-onnx`) |
+| YOLO26n detect (ONNX) | no disponible | Imagen 640×640 estática | No publicado | AGPL-3.0 | Hugging Face (`qtpose/yolo26n-detect-onnx`) |
 | YOLO26n (checkpoint original Ultralytics) | no disponible | Imagen, tamaño configurable en export | No publicado en esta ficha | AGPL-3.0 | Release de assets de Ultralytics v8.4.0 |
 | Otros detectores COCO de la familia YOLO (p. ej. variantes nano de versiones previas) | no disponible | Imagen | No disponible | AGPL-3.0 en Ultralytics | Repositorios de Ultralytics |
 
@@ -83,7 +83,7 @@ La comparación cuantitativa con alternativas no es posible con la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qtpose/yolo26n-detect-onnx
+- Modelo en Hugging Face: https://huggingface.co/qtpose/yolo26n-detect-onnx
 - Checkpoint de origen: https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n.pt
 - Términos de licencia de Ultralytics: https://www.ultralytics.com/license
-- Organización qtpose en HuggingFace: https://huggingface.co/qtpose
+- Organización qtpose en Hugging Face: https://huggingface.co/qtpose

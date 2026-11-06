@@ -78,6 +78,6 @@ No hay información pública que permita comparar rendimiento real entre estos m
 
 ## Enlaces
 
-- Modelo en HuggingFace: [agentic-ptb/opus-high-v3.h094.sft-long.step_12](https://huggingface.co/agentic-ptb/opus-high-v3.h094.sft-long.step_12)
+- Modelo en Hugging Face: [agentic-ptb/opus-high-v3.h094.sft-long.step_12](https://huggingface.co/agentic-ptb/opus-high-v3.h094.sft-long.step_12)
 - Dataset asociado: [agentic-ptb/opus-high-v3-data](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
-- Búsqueda de modelos del autor: [HuggingFace con filtro agentic-ptb](https://huggingface.co/models?other=agentic-ptb)
+- Búsqueda de modelos del autor: [Hugging Face con filtro agentic-ptb](https://huggingface.co/models?other=agentic-ptb)

@@ -16,7 +16,7 @@ Este proyecto es relevante para el ámbito de la ingeniería de software formal 
 | Longitud de contexto | No aplica |
 | Tipos de cuantizacion | No aplica |
 | Idiomas soportados | No disponible |
-| Licencia | BSL 1.1 con cambio a MIT en 2029 (según README); campo HuggingFace: no disponible |
+| Licencia | BSL 1.1 con cambio a MIT en 2029 (según README); campo Hugging Face: no disponible |
 | Formato de pesos | No aplica (repositorio de código XML, XSLT, OCaml y documentación) |
 
 ## Arquitectura y entrenamiento
@@ -69,7 +69,7 @@ No disponible. No existe una categoría de modelos de IA comparable, dado que es
 ## Limitaciones y advertencias
 
 - No es un modelo de IA: no genera texto, no razona ni responde a consultas. Cualquier uso como modelo de lenguaje sería inapropiado.
-- La licencia BSL 1.1 puede imponer restricciones de uso comercial hasta 2029, aunque el campo de licencia en HuggingFace figura como "no disponible".
+- La licencia BSL 1.1 puede imponer restricciones de uso comercial hasta 2029, aunque el campo de licencia en Hugging Face figura como "no disponible".
 - El repositorio tiene 0 descargas y 0 likes, lo que sugiere que no hay comunidad ni validación externa.
 - La documentación mezcla conceptos matemáticos avanzados (superficies K3, entropía de Shannon) cuya verificación externa no está disponible.
 - No se garantiza mantenimiento ni soporte; el proyecto parece experimental.
@@ -77,6 +77,6 @@ No disponible. No existe una categoría de modelos de IA comparable, dado que es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/hyperkitty-constraint-dsl
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/hyperkitty-constraint-dsl
 - Paper mencionado en el README: https://snapkittywest.github.io/hyperkitty/papers/sovereign-routing-algebras.pdf
 - Repositorio de HyperKitty OS (mencionado en el README): https://github.com/SNAPKITTYWEST/hyperkitty

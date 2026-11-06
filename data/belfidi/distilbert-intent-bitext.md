@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DistilBERT intent classifier es un modelo de clasificación de texto obtenido mediante fine-tuning de `distilbert-base-uncased` sobre el dataset Bitext Customer Support, orientado al reconocimiento de intenciones en atención al cliente. Lo desarrolla el usuario belfidi en el marco de un proyecto universitario de la IU International University of Applied Sciences (asignatura DLBAIBEPNBACSA01), y se publica en HuggingFace sin licencia declarada. El modelo reduce las 27 intenciones originales de Bitext a 6 categorías agregadas: gestión de cuenta, facturación y pagos, quejas y servicio, seguimiento de pedidos, consultas de producto y reembolsos o cancelaciones.
+DistilBERT intent classifier es un modelo de clasificación de texto obtenido mediante fine-tuning de `distilbert-base-uncased` sobre el dataset Bitext Customer Support, orientado al reconocimiento de intenciones en atención al cliente. Lo desarrolla el usuario belfidi en el marco de un proyecto universitario de la IU International University of Applied Sciences (asignatura DLBAIBEPNBACSA01), y se publica en Hugging Face sin licencia declarada. El modelo reduce las 27 intenciones originales de Bitext a 6 categorías agregadas: gestión de cuenta, facturación y pagos, quejas y servicio, seguimiento de pedidos, consultas de producto y reembolsos o cancelaciones.
 
 Arquitectónicamente es un transformer encoder de tipo DistilBERT, con 66.958.086 parámetros totales y un tamaño de repositorio de 0,3 GB en formato safetensors. No es un modelo generativo: emite una etiqueta entre seis clases a partir de una secuencia de entrada, con una longitud máxima de entrenamiento de 64 tokens. Su relevancia es acotada y práctica: sirve como componente de enrutamiento en pipelines de atención al cliente, como baseline reproducible para experimentos de clasificación de intenciones y como ejemplo docente de fine-tuning supervisado sobre datos sintéticos.
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, GLUE, etc.) en la 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| belfidi/distilbert-intent-bitext | 66,96 M | 512 (entrenado a 64) | Clasificación de intención, 6 clases, inglés | no disponible | HuggingFace |
-| distilbert-base-uncased | 66,96 M | 512 | Encoder base, sin cabeza de clasificación | Apache 2.0 (modelo base de referencia) | HuggingFace |
+| belfidi/distilbert-intent-bitext | 66,96 M | 512 (entrenado a 64) | Clasificación de intención, 6 clases, inglés | no disponible | Hugging Face |
+| distilbert-base-uncased | 66,96 M | 512 | Encoder base, sin cabeza de clasificación | Apache 2.0 (modelo base de referencia) | Hugging Face |
 | Baseline TF-IDF + regresión logística (del propio autor) | no aplica | no aplica | Clasificación de intención, 6 clases | no disponible | Resultados reportados en la model card |
 
 No se dispone de información sobre otros clasificadores de intención comparables en la documentación proporcionada.
@@ -92,7 +92,7 @@ No se dispone de información sobre otros clasificadores de intención comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/belfidi/distilbert-intent-bitext
+- Modelo en Hugging Face: https://huggingface.co/belfidi/distilbert-intent-bitext
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Dataset de entrenamiento: https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108

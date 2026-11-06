@@ -6,7 +6,7 @@ LibreUniMatchl-flow es un checkpoint de estimación de flujo óptico empaquetado
 
 El modelo procede del repositorio autonomousvision/unimatch (commit `943a990`), en concreto del checkpoint `gmflow-scale2-regrefine6-mixdata-train320x576-4e7b215d.pth` publicado en el MODEL_ZOO del proyecto. La modificación introducida por LibreYOLO es exclusivamente de metadatos: los tensores originales se almacenan sin cambios dentro del esquema de checkpoint de LibreYOLO bajo la tarea `flow`. Los parámetros aprendidos no se han alterado.
 
-Es relevante para desarrolladores que trabajan con visión por computador y necesitan estimación de flujo óptico integrada en un pipeline unificado de modelos (detección, segmentación y flujo bajo la misma API). El modelo se apoya en el paper "Unifying Flow, Stereo and Depth Estimation" (Xu et al., IEEE TPAMI 2023). El repositorio en HuggingFace tiene 0 descargas y 0 likes en el momento de la consulta, y un tamaño declarado de 0.0 GB.
+Es relevante para desarrolladores que trabajan con visión por computador y necesitan estimación de flujo óptico integrada en un pipeline unificado de modelos (detección, segmentación y flujo bajo la misma API). El modelo se apoya en el paper "Unifying Flow, Stereo and Depth Estimation" (Xu et al., IEEE TPAMI 2023). El repositorio en Hugging Face tiene 0 descargas y 0 likes en el momento de la consulta, y un tamaño declarado de 0.0 GB.
 
 ## Especificaciones tecnicas
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Escala / refinamiento | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreUniMatchl-flow | GMFlow+ (UniMatch) | escala 2, 6 pasos regrefine | dataset mixto, 320x576 | MIT (interpretación LibreYOLO) | HuggingFace (LibreYOLO) |
+| LibreUniMatchl-flow | GMFlow+ (UniMatch) | escala 2, 6 pasos regrefine | dataset mixto, 320x576 | MIT (interpretación LibreYOLO) | Hugging Face (LibreYOLO) |
 | UniMatch original (gmflow-scale2-regrefine6-mixdata) | GMFlow+ (UniMatch) | escala 2, 6 pasos regrefine | dataset mixto, 320x576 | sin licencia de pesos separada | Repositorio autonomousvision |
 | RAFT | Flujo óptico recurrente | iterativo | sintético + real | BSD-3 (código) | Repositorio oficial |
 | FlowFormer | Transformer de flujo | coste volumétrico | sintético + real | no disponible | Repositorio oficial |
@@ -83,7 +83,7 @@ La comparativa con RAFT y FlowFormer se ofrece como referencia de categoría; no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LibreYOLO/LibreUniMatchl-flow
+- Hugging Face: https://huggingface.co/LibreYOLO/LibreUniMatchl-flow
 - Repositorio LibreYOLO: https://github.com/LibreYOLO/libreyolo
 - Repositorio UniMatch: https://github.com/autonomousvision/unimatch
 - Checkpoint original: https://s3.eu-central-1.amazonaws.com/avg-projects/unimatch/pretrained/gmflow-scale2-regrefine6-mixdata-train320x576-4e7b215d.pth

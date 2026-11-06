@@ -82,8 +82,8 @@ No hay disponibles comparativas directas con otros adaptadores de contexto largo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EInnovator/pra-gemma3-1b-mlx-4bit
-- Modelo base en HuggingFace: https://huggingface.co/mlx-community/gemma-3-1b-it-4bit
+- Repositorio Hugging Face: https://huggingface.co/EInnovator/pra-gemma3-1b-mlx-4bit
+- Modelo base en Hugging Face: https://huggingface.co/mlx-community/gemma-3-1b-it-4bit
 - Documentación de PRA: https://einnovator.github.io/pdattention/
 - Repositorio fuente: https://github.com/einnovator/pdattention
 - Página oficial de Gemma 3: https://deepmind.google/models/gemma/gemma-3/

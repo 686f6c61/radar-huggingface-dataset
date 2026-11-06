@@ -105,7 +105,7 @@ No se dispone de datos publicados en la informacion proporcionada para comparar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guerrerotook/RoBERTa-baseline-NER-ADR-CONLL-SYNTH
+- Modelo en Hugging Face: https://huggingface.co/guerrerotook/RoBERTa-baseline-NER-ADR-CONLL-SYNTH
 - Dataset de ajuste: https://huggingface.co/datasets/guerrerotook/CIMA-4.8-ADR-NER-EXTENDED
 - Modelo base: https://huggingface.co/PlanTL-GOB-ES/roberta-base-biomedical-es
 - Documentacion de RoBERTa en transformers: https://huggingface.co/docs/transformers/model_doc/roberta

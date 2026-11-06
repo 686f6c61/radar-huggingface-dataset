@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`BryanW/44_jackfruit` es un repositorio de modelos publicado en HuggingFace por el usuario BryanW. Se trata de un artefacto con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales en la plataforma antes de poder descargar los pesos. El repositorio se creó el 29 de octubre de 2026 y se actualizó ese mismo día, sin que consten descargas ni interacciones públicas en el momento de redactar esta ficha.
+`BryanW/44_jackfruit` es un repositorio de modelos publicado en Hugging Face por el usuario BryanW. Se trata de un artefacto con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales en la plataforma antes de poder descargar los pesos. El repositorio se creó el 29 de octubre de 2026 y se actualizó ese mismo día, sin que consten descargas ni interacciones públicas en el momento de redactar esta ficha.
 
 La única información verificable disponible es el identificador del repositorio, el autor, el tamaño del repositorio (352,1 GB), la licencia declarada como "other" y la etiqueta de región "us". No se ha publicado información sobre arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni proceso de entrenamiento. Tampoco existe una model card descriptiva ni un pipeline asociado en los metadatos.
 
@@ -83,7 +83,7 @@ No disponible. Al no conocerse la categoria, el tamano ni las capacidades del mo
 
 - Ausencia total de model card: no hay documentacion sobre arquitectura, entrenamiento, datos, sesgos ni evaluaciones.
 - Licencia "other" sin terminos publicados: el uso comercial y la redistribucion quedan en un limbo legal hasta que el autor especifique condiciones.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion para su evaluacion y reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion para su evaluacion y reproducibilidad.
 - Cero descargas y cero likes: no existe evidencia de uso por parte de la comunidad ni validacion externa.
 - Riesgo de alucinacion, sesgos y comportamiento en produccion: no evaluables sin acceso al modelo.
 - El tamano del repositorio (352,1 GB) sugiere requisitos de almacenamiento elevados, pero se desconoce si incluye pesos duplicados, checkpoints intermedios u otros artefactos.
@@ -91,5 +91,5 @@ No disponible. Al no conocerse la categoria, el tamano ni las capacidades del mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BryanW/44_jackfruit
+- Repositorio en Hugging Face: https://huggingface.co/BryanW/44_jackfruit
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

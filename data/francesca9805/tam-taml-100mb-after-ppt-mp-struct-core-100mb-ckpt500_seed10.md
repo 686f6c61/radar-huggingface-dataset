@@ -35,7 +35,7 @@ Dado su tamano (125 M de parametros), el modelo es ejecutable en CPU y en cualqu
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de GPT-2: un transformer decoder-only con atencion causal, normalizacion previa a cada subcapa y embeddings posicionales aprendidos. El tag `gpt2` de HuggingFace y la compatibilidad declarada con `text-generation-inference` confirman esta familia. Con 124,77 M de parametros, el modelo se situa en la misma escala que GPT-2 base (124 M). El repositorio ocupa 2,2 GB, un tamano muy superior al de los pesos puros (aproximadamente 250 MB en fp16 o 500 MB en fp32), lo que indica que incluye estados de optimizador u otros checkpoints de entrenamiento ademas de los pesos finales.
+La arquitectura es la de GPT-2: un transformer decoder-only con atencion causal, normalizacion previa a cada subcapa y embeddings posicionales aprendidos. El tag `gpt2` de Hugging Face y la compatibilidad declarada con `text-generation-inference` confirman esta familia. Con 124,77 M de parametros, el modelo se situa en la misma escala que GPT-2 base (124 M). El repositorio ocupa 2,2 GB, un tamano muy superior al de los pesos puros (aproximadamente 250 MB en fp16 o 500 MB en fp32), lo que indica que incluye estados de optimizador u otros checkpoints de entrenamiento ademas de los pesos finales.
 
 El entrenamiento se realizo mediante SFT con TRL 0.23.0, partiendo del checkpoint `tam-taml-100mb-ppt-mp-struct-core-100mb_seed10`. No se especifica en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases adicionales de RLHF o DPO. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o variantes hibridas. El experimento se registro en Weights & Biases bajo el proyecto `new-tokenizers`, lo que sugiere que el objetivo principal era evaluar el impacto de decisiones de tokenizacion en el ajuste fino, mas que optimizar el rendimiento de la generacion. El sufijo `seed10` indica que esta ejecucion corresponde a una semilla concreta de un barrido reproducible, y `ckpt500` apunta a un checkpoint intermedio (paso 500) de esa ejecucion.
 
@@ -56,7 +56,7 @@ El entrenamiento se realizo mediante SFT con TRL 0.23.0, partiendo del checkpoin
 
 ## Casos de uso
 
-- Prototipado rapido de pipelines de generacion: sirve para validar extremo a extremo una integracion con `transformers`, `text-generation-inference` o endpoints de HuggingFace antes de sustituir el modelo por uno de mayor tamano. Su huella de memoria minima permite iterar en portatiles sin GPU dedicada.
+- Prototipado rapido de pipelines de generacion: sirve para validar extremo a extremo una integracion con `transformers`, `text-generation-inference` o endpoints de Hugging Face antes de sustituir el modelo por uno de mayor tamano. Su huella de memoria minima permite iterar en portatiles sin GPU dedicada.
 - Banco de pruebas de tokenizadores: dado que el proyecto de origen se centra en tokenizacion (`new-tokenizers`), este checkpoint es adecuado para medir como distintas decisiones de tokenizacion afectan a la perdida y a la calidad de la generacion tras un SFT corto con la misma receta y semilla.
 - Reproducibilidad de experimentos academicos: el nombre incluye semilla y numero de checkpoint, lo que facilita replicar una ejecucion concreta dentro de un barrido y comparar resultados entre semillas sin ambiguedad.
 - Generacion de texto sintetico para pruebas de software: puede emplearse para producir cadenas de texto de relleno con distribucion linguistica plausible en tests de interfaz, paginacion, truncado o internacionalizacion, donde el contenido no necesita ser correcto, solo realista.
@@ -75,17 +75,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - GPU recomendadas: no se requieren GPU de datacenter. Una RTX 3060, RTX 4060, RTX 4090 o incluso una GTX 1650 son suficientes. Las A100 y H100 solo tendrian sentido para entrenamiento a gran escala o para servir muchas replicas en paralelo.
 - Ejecucion en CPU: viable. El modelo puede correr en CPU con latencias de decenas a cientos de milisegundos por token segun el hardware, sin necesidad de acelerador.
 - GPU de consumo: si, cabe en cualquier GPU de consumo actual y en la mayoria de iGPU con memoria compartida suficiente.
-- Opciones de despliegue: `transformers` (soporte nativo declarado), Text Generation Inference (etiqueta `text-generation-inference`), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`) y vLLM como alternativa compatible con la arquitectura GPT-2. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama requeririan una conversion previa a partir de los safetensors.
+- Opciones de despliegue: `transformers` (soporte nativo declarado), Text Generation Inference (etiqueta `text-generation-inference`), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`) y vLLM como alternativa compatible con la arquitectura GPT-2. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama requeririan una conversion previa a partir de los safetensors.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia por peticion.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/tam-taml-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10 | 124,77 M | No disponible (GPT-2: tipicamente 1024) | No disponible | No | HuggingFace, safetensors |
-| GPT-2 base | 124 M | 1024 | MIT (licencia modificada de OpenAI) | Si (en su publicacion original) | HuggingFace, safetensors y otros |
-| DistilGPT-2 | 82 M | 1024 | MIT | Si (en su publicacion original) | HuggingFace, safetensors y otros |
-| GPT-2 medium | 355 M | 1024 | MIT (licencia modificada de OpenAI) | Si (en su publicacion original) | HuggingFace, safetensors y otros |
+| francesca9805/tam-taml-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10 | 124,77 M | No disponible (GPT-2: tipicamente 1024) | No disponible | No | Hugging Face, safetensors |
+| GPT-2 base | 124 M | 1024 | MIT (licencia modificada de OpenAI) | Si (en su publicacion original) | Hugging Face, safetensors y otros |
+| DistilGPT-2 | 82 M | 1024 | MIT | Si (en su publicacion original) | Hugging Face, safetensors y otros |
+| GPT-2 medium | 355 M | 1024 | MIT (licencia modificada de OpenAI) | Si (en su publicacion original) | Hugging Face, safetensors y otros |
 
 La comparacion directa con GPT-2 base es la mas pertinente por identidad de arquitectura y escala, pero no es posible establecer una comparativa de rendimiento porque el modelo de francesca9805 no publica ninguna evaluacion. Ademas, su licencia no esta definida, lo que impide equipararlo juridicamente a las alternativas con licencia MIT. Para cualquier uso que requiera garantias legales o de calidad medidas, GPT-2 base o DistilGPT-2 son opciones mas seguras y mejor documentadas.
 
@@ -105,7 +105,7 @@ La comparacion directa con GPT-2 base es la mas pertinente por identidad de arqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tam-taml-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tam-taml-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/tam-taml-100mb-ppt-mp-struct-core-100mb_seed10
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/qmx5pu6w
 - Repositorio de TRL: https://github.com/huggingface/trl

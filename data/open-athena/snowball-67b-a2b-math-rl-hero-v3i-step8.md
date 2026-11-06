@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 | Modelo | Parametros totales | Contexto | Resultados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Snowball-67B-A2B-Math-RL-Hero-v3i-Step8 | 67,1 B | no disponible (ctx10k en el artefacto de origen) | AIME24 17,00; MATH-500 72,20; OlympiadBench 17,67 | other | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
+| Snowball-67B-A2B-Math-RL-Hero-v3i-Step8 | 67,1 B | no disponible (ctx10k en el artefacto de origen) | AIME24 17,00; MATH-500 72,20; OlympiadBench 17,67 | other | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
 | Snowball-67B-A2B hero-v3i step 16 | mismo modelo base | no disponible | regresion respecto al paso 8 (sin cifras publicadas) | other | exportacion interna; no publicado como artefacto independiente |
 | Modelos externos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-Hero-v3i-Step8
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-Hero-v3i-Step8
 - Archivo de evidencias (dataset): https://huggingface.co/datasets/penfever/snowball-67b-a2b-math-rl-artifacts
 - Issue del experimento en el repositorio Marin: https://github.com/marin-community/marin/issues/7786
 - Artefacto de origen (S3): s3://marin-us-east-02a/marin/users/benjaminfeuer/skyrl/rl-snowball-hero-v3i-rno2a-rlvrmath-ctx10k-grug-67-20260818-115251/exports/global_step_8/policy/

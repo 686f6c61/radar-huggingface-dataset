@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una cuantización EXL3 del checkpoint multimodal `deepseek-ai/DeepSeek-V4-Flash-Vision-Exp`, publicada por el usuario de HuggingFace `wrldsuksgo2mars`. El objetivo es reducir drásticamente el peso de los expertos enrutados del modelo original —que promedian 2,2 bits por peso— manteniendo intactos los tensores no enrutados (encoder de visión, atención, expertos compartidos, etc.) en su precisión nativa. Esto permite ejecutar un modelo de aproximadamente 49 000 millones de parámetros en hardware con VRAM limitada, a costa de una posible degradación de calidad que aún no ha sido evaluada en el dominio multimodal.
+Este modelo es una cuantización EXL3 del checkpoint multimodal `deepseek-ai/DeepSeek-V4-Flash-Vision-Exp`, publicada por el usuario de Hugging Face `wrldsuksgo2mars`. El objetivo es reducir drásticamente el peso de los expertos enrutados del modelo original —que promedian 2,2 bits por peso— manteniendo intactos los tensores no enrutados (encoder de visión, atención, expertos compartidos, etc.) en su precisión nativa. Esto permite ejecutar un modelo de aproximadamente 49 000 millones de parámetros en hardware con VRAM limitada, a costa de una posible degradación de calidad que aún no ha sido evaluada en el dominio multimodal.
 
 El modelo base, DeepSeek-V4-Flash-Vision-Exp, es un modelo experimental de DeepSeek que combina la arquitectura de lenguaje V4 Flash con un encoder de visión y un alineador, e incorpora bloques dSpark para decodificación especulativa. Según el anuncio oficial de DeepSeek, iguala a V4-Flash en capacidades de texto (agentes, razonamiento, conocimiento del mundo) y mejora notablemente en benchmarks de agentes multimodales, acercándose a Opus-4.8. Esta cuantización se distribuye bajo licencia MIT y está pensada para entornos de inferencia con restricciones de memoria.
 
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Cuantización | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Flash-Vision-Exp (base) | 49 018 151 102 | Sin cuantizar | no disponible | MIT | HuggingFace |
-| Este modelo (EXL3 K2.2-D2) | 49 018 151 102 | EXL3, 2,2 bits promedio en expertos | no disponible | MIT | HuggingFace |
-| DeepSeek-V4-Flash-0731-EXL3-K2.1-calibrated-v1 | no disponible | EXL3, 2,1 bits promedio | no disponible | no disponible | HuggingFace |
-| DeepSeek-V4-Flash-0731-EXL3-K2-calibrated-v1 | no disponible | EXL3, K2 uniforme | no disponible | no disponible | HuggingFace |
+| DeepSeek-V4-Flash-Vision-Exp (base) | 49 018 151 102 | Sin cuantizar | no disponible | MIT | Hugging Face |
+| Este modelo (EXL3 K2.2-D2) | 49 018 151 102 | EXL3, 2,2 bits promedio en expertos | no disponible | MIT | Hugging Face |
+| DeepSeek-V4-Flash-0731-EXL3-K2.1-calibrated-v1 | no disponible | EXL3, 2,1 bits promedio | no disponible | no disponible | Hugging Face |
+| DeepSeek-V4-Flash-0731-EXL3-K2-calibrated-v1 | no disponible | EXL3, K2 uniforme | no disponible | no disponible | Hugging Face |
 
 Los dos últimos modelos son cuantizaciones del mismo autor sobre la variante V4-Flash-0731, con promedios de bits ligeramente diferentes. Este modelo se distingue por ser la versión multimodal y por mantener los bloques dSpark en K2 uniforme.
 
@@ -78,7 +78,7 @@ Los dos últimos modelos son cuantizaciones del mismo autor sobre la variante V4
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wrldsuksgo2mars/DeepSeek-V4-Flash-Vision-Exp-EXL3-K2.2-D2-v1
+- Modelo en Hugging Face: https://huggingface.co/wrldsuksgo2mars/DeepSeek-V4-Flash-Vision-Exp-EXL3-K2.2-D2-v1
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Otro modelo del mismo autor (K2.1): https://huggingface.co/wrldsuksgo2mars/DeepSeek-V4-Flash-0731-EXL3-K2.1-calibrated-v1
 - Otro modelo del mismo autor (K2): https://huggingface.co/wrldsuksgo2mars/DeepSeek-V4-Flash-0731-EXL3-K2-calibrated-v1

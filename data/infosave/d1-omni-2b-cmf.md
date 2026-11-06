@@ -2,7 +2,7 @@
 
 ## Resumen
 
-d1-Omni-2B — CMF es un empaquetado cuantizado, publicado por el usuario infosave en HuggingFace, del modelo [LiquidAI/d1-Omni-2B](https://huggingface.co/LiquidAI/d1-Omni-2B): un modelo omni-modal de decisión de 2,2B parámetros basado en LFM3-Omni-2B de Liquid AI. Su planteamiento es distinto al de un LLM conversacional: responde preguntas con nombre sobre un estado (texto, JSON, imágenes o clips de audio) en una sola pasada hacia adelante, devolviendo respuestas tipadas con probabilidades calibradas y sin generar tokens. Es lo que el autor denomina un modelo "System One", orientado a tareas de decisión, clasificación y extracción.
+d1-Omni-2B — CMF es un empaquetado cuantizado, publicado por el usuario infosave en Hugging Face, del modelo [LiquidAI/d1-Omni-2B](https://huggingface.co/LiquidAI/d1-Omni-2B): un modelo omni-modal de decisión de 2,2B parámetros basado en LFM3-Omni-2B de Liquid AI. Su planteamiento es distinto al de un LLM conversacional: responde preguntas con nombre sobre un estado (texto, JSON, imágenes o clips de audio) en una sola pasada hacia adelante, devolviendo respuestas tipadas con probabilidades calibradas y sin generar tokens. Es lo que el autor denomina un modelo "System One", orientado a tareas de decisión, clasificación y extracción.
 
 La relevancia de esta ficha reside en el formato CMF y el motor de inferencia `cortiq`, escrito en Rust sin Python ni framework de ML, con backends Vulkan/DX12 (NVIDIA, AMD e Intel), Metal (Apple silicon) y CPU. Esto permite ejecutar el modelo en prácticamente cualquier GPU con solo 3 GB de memoria libre, con latencias de decenas de milisegundos por pregunta.
 

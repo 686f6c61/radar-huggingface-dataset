@@ -75,8 +75,8 @@ Además, la model card cita para SAM 3.1 un ~7x de aceleración en inferencia co
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unsloth/sam3.1 (este) | 840 M | imagen + prompt de texto/puntos/cajas/máscaras | IoU 0,997-0,998 en INT8/FP8 frente a BF16 | SAM License | HuggingFace, formato `transformers`, 4 variantes de pesos |
-| facebook/sam3.1 (original) | no disponible | imagen y vídeo, promptable | ~7x más rápido que SAM 3 con 128 objetos en H100; mejor VOS en 6/7 benchmarks | SAM License | HuggingFace y repositorio GitHub de Meta |
+| unsloth/sam3.1 (este) | 840 M | imagen + prompt de texto/puntos/cajas/máscaras | IoU 0,997-0,998 en INT8/FP8 frente a BF16 | SAM License | Hugging Face, formato `transformers`, 4 variantes de pesos |
+| facebook/sam3.1 (original) | no disponible | imagen y vídeo, promptable | ~7x más rápido que SAM 3 con 128 objetos en H100; mejor VOS en 6/7 benchmarks | SAM License | Hugging Face y repositorio GitHub de Meta |
 | SAM 3 (generación anterior) | no disponible | imagen y vídeo, promptable con texto | Referencia base sobre la que se mide la mejora de 3.1 | SAM License | GitHub `facebookresearch/sam3` |
 | SAM 2 y otras alternativas de segmentación promptable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,7 +94,7 @@ Además, la model card cita para SAM 3.1 un ~7x de aceleración en inferencia co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unsloth/sam3.1
+- Modelo en Hugging Face: https://huggingface.co/unsloth/sam3.1
 - Modelo base original: https://huggingface.co/facebook/sam3.1
 - Repositorio oficial de SAM 3 / SAM 3.1: https://github.com/facebookresearch/sam3
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

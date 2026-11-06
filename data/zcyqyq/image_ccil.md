@@ -92,6 +92,6 @@ No se han encontrado modelos comparables en la información disponible, ya que e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zcyqyq/image_ccil
-- Perfil del autor en HuggingFace: https://huggingface.co/zcyqyq
+- Repositorio Hugging Face: https://huggingface.co/zcyqyq/image_ccil
+- Perfil del autor en Hugging Face: https://huggingface.co/zcyqyq
 - Proyecto CCIL en GitHub (código y documentación): https://github.com/personalrobotics/CCIL

@@ -76,14 +76,14 @@ La comparacion con Qwen2.5-0.5B es meramente orientativa, ya que no se han evalu
 - Limitaciones de idioma: solo se declara soporte para ingles; no se garantiza un rendimiento adecuado en otros idiomas.
 - Licencia desconocida: no se especifica la licencia del modelo, lo que impide conocer las restricciones de uso comercial o redistribucion.
 - Sin garantias de calidad: al ser un experimento, no hay evaluacion de seguridad, robustez ni rendimiento.
-- Formato GGUF: aunque es ampliamente compatible, no es el formato nativo de todos los frameworks de inferencia (por ejemplo, transformers de HuggingFace requiere conversion).
+- Formato GGUF: aunque es ampliamente compatible, no es el formato nativo de todos los frameworks de inferencia (por ejemplo, transformers de Hugging Face requiere conversion).
 - No se ha documentado la cuantizacion aplicada, por lo que la precision numerica es incierta.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/juststhjust/Qwen-0.8B-finetune-test
+- Repositorio Hugging Face: https://huggingface.co/juststhjust/Qwen-0.8B-finetune-test
 - Repositorio relacionado (mismo autor): https://huggingface.co/juststhjust/qwen_finetune
 - Blog de Unsloth sobre fine-tuning de Qwen3: https://unsloth.ai/blog/qwen3
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.5-0.8B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio GitHub de Qwen finetuning (Akers): https://github.com/Akers/Qwen-finetune
 - Repositorio GitHub de Qwen finetuning (ssbuild): https://github.com/ssbuild/qwen_finetuning

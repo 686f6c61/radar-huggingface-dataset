@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next es un modelo de lenguaje multimodal de tipo Mixture-of-Experts ultra disperso, desarrollado por el equipo Qwen (Alibaba). La versión alojada en HuggingFace bajo el identificador `Soomin33/Qwen3.8-Flash-Next-FP6` es una subida de la comunidad con licencia Apache 2.0, aunque la model card original no aporta detalles técnicos. La información técnica disponible proviene de fuentes oficiales como el repositorio de GitHub de Qwen, la documentación de vLLM y ModelScope.
+Qwen3.8-Flash-Next es un modelo de lenguaje multimodal de tipo Mixture-of-Experts ultra disperso, desarrollado por el equipo Qwen (Alibaba). La versión alojada en Hugging Face bajo el identificador `Soomin33/Qwen3.8-Flash-Next-FP6` es una subida de la comunidad con licencia Apache 2.0, aunque la model card original no aporta detalles técnicos. La información técnica disponible proviene de fuentes oficiales como el repositorio de GitHub de Qwen, la documentación de vLLM y ModelScope.
 
 El modelo se presenta como una arquitectura avanzada que combina Gated DeltaNet (GDN) y Qwen Sparse Attention (QSA) para lograr un equilibrio entre eficiencia y capacidad de recuperación de información a largo plazo. Con 125 mil millones de parámetros totales y solo 6 mil millones activos por token, reduce sustancialmente el coste de entrenamiento e inferencia en comparación con modelos densos de tamaño similar, manteniendo capacidades destacadas en generación de código y tareas ofimáticas. Su diseño anticipa la futura familia Qwen4, por lo que resulta relevante para desarrolladores que quieran prepararse para esa transición.
 
@@ -14,7 +14,7 @@ El modelo se presenta como una arquitectura avanzada que combina Gated DeltaNet 
 | Parametros totales | 125B (más 51B de embeddings N-gram, según fuentes) |
 | Parametros activos | 6B por token |
 | Longitud de contexto | No disponible (el modelo Qwen3.8-Flash, similar, soporta 1M tokens, pero no se confirma para Flash-Next) |
-| Tipos de cuantizacion | FP6 (según el nombre del repositorio en HuggingFace) |
+| Tipos de cuantizacion | FP6 (según el nombre del repositorio en Hugging Face) |
 | Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | No disponible (probablemente safetensors, pero no confirmado) |
@@ -61,7 +61,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Limitaciones y advertencias
 
-- La model card en HuggingFace está vacía; toda la información técnica proviene de fuentes externas (GitHub, vLLM, ModelScope) y no ha sido verificada de forma independiente.
+- La model card en Hugging Face está vacía; toda la información técnica proviene de fuentes externas (GitHub, vLLM, ModelScope) y no ha sido verificada de forma independiente.
 - No se han publicado evaluaciones de sesgos ni de riesgos de alucinación específicos para este modelo.
 - La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los términos de uso de los pesos originales de Qwen, ya que algunas versiones pueden tener restricciones adicionales.
 - El modelo es una versión preliminar orientada a la comunidad para preparar la transición a Qwen4; podría no ser estable para producción sin pruebas exhaustivas.
@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Soomin33/Qwen3.8-Flash-Next-FP6
+- Hugging Face: https://huggingface.co/Soomin33/Qwen3.8-Flash-Next-FP6
 - Repositorio oficial de Qwen3.8-Flash-Next en GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next
 - Documentación de vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next
 - Página de Qwen3.8-Flash en QwenCloud: https://www.qwencloud.com/models/qwen3.8-flash

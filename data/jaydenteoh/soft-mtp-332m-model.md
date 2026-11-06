@@ -32,7 +32,7 @@ El entrenamiento uso 31,5 mil millones de tokens de FineWeb-Edu tokenizados con 
 - Generacion de texto en ingles con arquitectura next-token estandar una vez descartadas las cabeceras MTP.
 - Prediccion multi-token entrenada con objetivo soft-MTP, util como base para decodificacion especulativa autospeculativa (las cabeceras MTP actuan de draft model).
 - Tokenizador GPT-2 estandar (vocabulario de 50.257, con padding a 50.304 filas para alineacion, filas extra sin uso).
-- Integracion con la libreria `transformers` de HuggingFace mediante `AutoModelForCausalLM` y `trust_remote_code=True`.
+- Integracion con la libreria `transformers` de Hugging Face mediante `AutoModelForCausalLM` y `trust_remote_code=True`.
 - No hay soporte documentado de tool calling, agentes, vision, audio ni modo de razonamiento explicito.
 
 ## Casos de uso
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: con 357M de parametros en fp32 se requieren aproximadamente 1,4 GB; en bf16, unos 0,7 GB. El repo pesa 1,4 GB en safetensors.
 - GPU recomendadas: cualquier GPU moderna de consumo es suficiente; no se necesita hardware de datacenter (A100/H100) para inferencia.
 - Cabe comodamente en GPUs de consumo como una RTX 3060, RTX 4060 o superior, e incluso es ejecutable en CPU para pruebas puntuales.
-- Despliegue: via `transformers` de HuggingFace con `trust_remote_code=True` (obligatorio, ya que `model_type: hf_mtp` no esta integrado en la libreria). `inference: false` en la model card indica que no hay inference API activada en el Hub. No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI.
+- Despliegue: via `transformers` de Hugging Face con `trust_remote_code=True` (obligatorio, ya que `model_type: hf_mtp` no esta integrado en la libreria). `inference: false` en la model card indica que no hay inference API activada en el Hub. No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponible. En teoria, la decodificacion especulativa con las cabeceras MTP podria mejorar el throughput, pero no hay medidas publicadas.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ Es la comparativa mas razonable por tamano y proposito investigador; no hay otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JaydenTeoh/soft-mtp-332m-model
+- Modelo en Hugging Face: https://huggingface.co/JaydenTeoh/soft-mtp-332m-model
 - Paper: https://arxiv.org/abs/2610.38331 (arXiv:2610.38331, *Multi-Token Prediction Done Right*)
 - Codigo (GitHub): https://github.com/JaydenTeoh/Soft-MTP
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

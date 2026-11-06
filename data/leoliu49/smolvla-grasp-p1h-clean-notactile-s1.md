@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `leoliu49/smolvla-grasp-p1h-clean-notactile-s1` | 450 M | No disponible | No disponible | Apache 2.0 | HuggingFace, ajuste fino sobre tarea de agarre |
-| `lerobot/smolvla_base` (modelo base) | Familia SmolVLA, tamano no verificado en esta busqueda | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| `leoliu49/smolvla-grasp-p1h-clean-notactile-s1` | 450 M | No disponible | No disponible | Apache 2.0 | Hugging Face, ajuste fino sobre tarea de agarre |
+| `lerobot/smolvla_base` (modelo base) | Familia SmolVLA, tamano no verificado en esta busqueda | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Otros VLA de la misma categoria (OpenVLA, pi0, entre otros) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 
 No se dispone de datos verificados de rendimiento, contexto ni licencia de los modelos alternativos dentro de la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable. La unica comparacion defendible es la diferencia de escala: 450 M parametros frente a las familias VLA de varios miles de millones, con la ventaja de despliegue en hardware de consumo que la model card atribuye explicitamente a SmolVLA.
@@ -88,7 +88,7 @@ No se dispone de datos verificados de rendimiento, contexto ni licencia de los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leoliu49/smolvla-grasp-p1h-clean-notactile-s1
+- Modelo en Hugging Face: https://huggingface.co/leoliu49/smolvla-grasp-p1h-clean-notactile-s1
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/leoliu49/grasp_p1h_clean
 - Paper de SmolVLA (referencia de la model card): https://huggingface.co/papers/2506.01844

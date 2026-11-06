@@ -4,7 +4,7 @@
 
 `microduck-motorlab-fast2` es una política de control motriz (no un modelo de lenguaje) entrenada mediante aprendizaje por refuerzo para el robot bípedo Microduck de Pollen Robotics. La publica la organización `nxdev-org` como un checkpoint de inferencia en formato ONNX que se carga directamente en el daemon del robot a través de `robotctl`. Su función concreta es generar una marcha continua: recibe una observación de 61 dimensiones y emite 14 acciones a 50 Hz, sin condición de terminación propia ("perpetual policy"), por lo que se ejecuta hasta que se le ordena lo contrario.
 
-El modelo corresponde al checkpoint 3999 del entrenamiento denominado internamente "motorlab v3 fast2", dentro del repositorio `pollen-robotics/microduck_rl` (rama `challenge-recipe-publishing`, commit `8d0dbc94c`). El repo de HuggingFace solo contiene los artefactos de despliegue (`policy.onnx` y `manifest.json` según el esquema 2 del manifiesto de políticas de microduck); no se publican pesos de entrenamiento, configuración de hiperparámetros ni curvas de recompensa.
+El modelo corresponde al checkpoint 3999 del entrenamiento denominado internamente "motorlab v3 fast2", dentro del repositorio `pollen-robotics/microduck_rl` (rama `challenge-recipe-publishing`, commit `8d0dbc94c`). El repo de Hugging Face solo contiene los artefactos de despliegue (`policy.onnx` y `manifest.json` según el esquema 2 del manifiesto de políticas de microduck); no se publican pesos de entrenamiento, configuración de hiperparámetros ni curvas de recompensa.
 
 Es relevante porque ejemplifica el patrón de distribución de comportamientos robóticos como artefactos versionados e intercambiables: una "receta" de marcha que se instala en una ranura de política del robot sin recompilar ni recalibrar nada, ya que el normalizador de observaciones está embebido en el propio ONNX y se alimenta con observaciones en crudo. Para desarrolladores e investigadores, sirve como referencia de cómo empaquetar políticas de RL para hardware real.
 
@@ -13,7 +13,7 @@ Es relevante porque ejemplifica el patrón de distribución de comportamientos r
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Red neuronal de política para control motriz, exportada a ONNX; topología interna (capas, activaciones) no disponible |
-| Parametros totales | no disponible (el repo reporta 0.0 GB, por debajo de la resolución de visualización de HuggingFace) |
+| Parametros totales | no disponible (el repo reporta 0.0 GB, por debajo de la resolución de visualización de Hugging Face) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no aplica; ventana de observación de 61 dimensiones por paso de control |
 | Tipos de cuantizacion | no disponible; se distribuye un único `policy.onnx` sin variantes cuantizadas declaradas |
@@ -62,7 +62,7 @@ La model card únicamente identifica el checkpoint como "3999", que es un índic
 - Cabe en GPU de consumo: sí, en cualquier RTX o iGPU; también en CPU ARM de placa única, que es el escenario previsto por el fabricante.
 - Presupuesto temporal: 50 Hz de frecuencia de control implican 20 ms por ciclo para inferencia más lectura de sensores y escritura en el bus de motores. La latencia real del ONNX no está publicada.
 - Opciones de despliegue: ONNX Runtime a través del daemon `robotctl` del Microduck (vía soportada). Otros runtimes ONNX (onnxruntime-node, onnxruntime C++) son compatibles a nivel de formato, pero no hay soporte documentado.
-- Almacenamiento: el artefacto completo (`policy.onnx` + `manifest.json`) ocupa menos de lo que HuggingFace reporta con su precisión de visualización, por lo que el despliegue en almacenamiento flash del robot no es un problema.
+- Almacenamiento: el artefacto completo (`policy.onnx` + `manifest.json`) ocupa menos de lo que Hugging Face reporta con su precisión de visualización, por lo que el despliegue en almacenamiento flash del robot no es un problema.
 
 ## Comparativa con modelos similares
 
@@ -70,7 +70,7 @@ No se dispone de datos publicados de otras políticas del ecosistema microduck (
 
 | Modelo | Parametros | Contexto / observacion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nxdev-org/microduck-motorlab-fast2` | no disponible | 61-D de observación, 14 acciones, 50 Hz | sin benchmarks publicados | no disponible | pública en HuggingFace |
+| `nxdev-org/microduck-motorlab-fast2` | no disponible | 61-D de observación, 14 acciones, 50 Hz | sin benchmarks publicados | no disponible | pública en Hugging Face |
 | Otras políticas de `pollen-robotics/microduck_rl` | no disponible | no disponible | no disponible | no disponible (el código del robot es Apache-2.0, no así este artefacto necesariamente) | repo de entrenamiento referenciado, sin URL de pesos |
 | Políticas RL para bípedos de talla similar (p. ej. entornos Isaac Lab / MuJoCo) | no disponible | no disponible | no disponible | habitualmente permisiva, variable por proyecto | variable |
 
@@ -88,7 +88,7 @@ No se dispone de datos publicados de otras políticas del ecosistema microduck (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nxdev-org/microduck-motorlab-fast2
+- Modelo en Hugging Face: https://huggingface.co/nxdev-org/microduck-motorlab-fast2
 - Repositorio del robot Microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL citado en la model card: https://github.com/pollen-robotics/microduck_rl (rama `challenge-recipe-publishing`, commit `8d0dbc94c`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon

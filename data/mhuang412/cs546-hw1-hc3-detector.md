@@ -69,8 +69,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, GLUE
 
 | Modelo | Parametros | Tipo | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mhuang412/cs546-hw1-hc3-detector | 22,7 M | Clasificador BERT (MiniLM) | 256 tokens | 0,9921 exactitud en HC3 (test) | no disponible | HuggingFace |
-| sentence-transformers/all-MiniLM-L6-v2 (base) | 22,7 M | Encoder de embeddings | 256 tokens | No es un clasificador; no comparable directamente | Apache-2.0 (base) | HuggingFace |
+| mhuang412/cs546-hw1-hc3-detector | 22,7 M | Clasificador BERT (MiniLM) | 256 tokens | 0,9921 exactitud en HC3 (test) | no disponible | Hugging Face |
+| sentence-transformers/all-MiniLM-L6-v2 (base) | 22,7 M | Encoder de embeddings | 256 tokens | No es un clasificador; no comparable directamente | Apache-2.0 (base) | Hugging Face |
 | Detectores del ecosistema HC3 (Hello-SimpleAI/chatgpt-comparison-detection) | no disponible | Clasificadores (por ejemplo, basados en RoBERTa) | no disponible | no disponible en esta busqueda | no disponible | GitHub |
 
 No se dispone de datos de rendimiento comparables de terceros en la informacion proporcionada; la comparativa se limita a parametros, tipo y disponibilidad.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparables de terceros en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhuang412/cs546-hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/mhuang412/cs546-hw1-hc3-detector
 - Repositorio HC3 y detectores (Hello-SimpleAI): https://github.com/Hello-SimpleAI/chatgpt-comparison-detection
 - Organizacion Hello-SimpleAI: https://github.com/Hello-SimpleAI
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2

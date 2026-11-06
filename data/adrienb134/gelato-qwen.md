@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GELATO qwen document retriever es un modelo multimodal de recuperacion de documentos visuales (visual document retrieval, VDR) publicado por el usuario AdrienB134 en HuggingFace. Se construye combinando dos backbones congelados: la torre de vision de Qwen3.5 (0.8B) y el backbone de texto Qwen3-Embedding-0.6B, unidos mediante un proyector aprendido y delimitadores de imagen. Genera vectores normalizados de 1024 dimensiones tanto para consultas de texto como para imagenes de pagina completa, lo que permite buscar paginas escaneadas por su contenido visual sin aplicar OCR previo.
+GELATO qwen document retriever es un modelo multimodal de recuperacion de documentos visuales (visual document retrieval, VDR) publicado por el usuario AdrienB134 en Hugging Face. Se construye combinando dos backbones congelados: la torre de vision de Qwen3.5 (0.8B) y el backbone de texto Qwen3-Embedding-0.6B, unidos mediante un proyector aprendido y delimitadores de imagen. Genera vectores normalizados de 1024 dimensiones tanto para consultas de texto como para imagenes de pagina completa, lo que permite buscar paginas escaneadas por su contenido visual sin aplicar OCR previo.
 
 El checkpoint liberado corresponde al paso 12.300 de entrenamiento y suma 699.518.208 parametros. El autor lo selecciono por su mejor puntuacion publica en ViDoRe v3 (35,72 nDCG@10 macro sobre ocho corpus y seis idiomas de consulta), un benchmark que admite haberse usado para seleccionar el checkpoint y no como conjunto de test limpio. El entrenamiento partio de aproximadamente 273.000 pares positivos multilingues de VDR, con backbones congelados y entrenamiento contrastivo de tipo Matryoshka.
 
@@ -82,6 +82,6 @@ No se dispone de datos de especificaciones de modelos comparables en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AdrienB134/gelato-qwen
+- Hugging Face: https://huggingface.co/AdrienB134/gelato-qwen
 - Repositorio base de texto: Qwen/Qwen3-Embedding-0.6B
 - Repositorio base de vision: Qwen/Qwen3.5-0.8B

@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos brazos en la infor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-gptresp685-paired-r64-seed42
+- Repositorio Hugging Face: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-gptresp685-paired-r64-seed42
 - Brazo C semilla 0 (comparacion): https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-gptresp685-paired-r64
 - Brazo A (Sonnet): https://huggingface.co/LASR-Callum/qwen3_6-27b-lora-t2-9284-da716-r64-dynbatch
 - Brazo B (grok): https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-grokresp703-paired-r64

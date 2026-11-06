@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vesper-Coder-1.5B es un modelo denso de generación de código de 1.543.714.304 parámetros (aproximadamente 1.500 millones), publicado por el usuario axieyangb en HuggingFace bajo licencia Apache-2.0. Está construido sobre la arquitectura Qwen2ForCausalLM y constituye un ajuste fino del modelo Qwen/Qwen2.5-Coder-1.5B-Instruct, por lo que mantiene los pesos densos estándar de la familia Qwen2 y es intercambiable directamente con transformers, vLLM, llama.cpp y Ollama.
+Vesper-Coder-1.5B es un modelo denso de generación de código de 1.543.714.304 parámetros (aproximadamente 1.500 millones), publicado por el usuario axieyangb en Hugging Face bajo licencia Apache-2.0. Está construido sobre la arquitectura Qwen2ForCausalLM y constituye un ajuste fino del modelo Qwen/Qwen2.5-Coder-1.5B-Instruct, por lo que mantiene los pesos densos estándar de la familia Qwen2 y es intercambiable directamente con transformers, vLLM, llama.cpp y Ollama.
 
 Su principal propuesta diferencial no es el tamaño ni el contexto, sino la eficiencia extrema del post-entrenamiento: el autor afirma haber completado el ajuste en menos de 15 minutos sobre una única GPU de consumo (NVIDIA RTX 3090 de 24 GB), con un coste estimado de unos 0,10 dólares, sin destilación de modelos profesor (cero GPT-4, Claude o modelos de 671B) y sin soluciones de referencia ni etiquetas humanas, partiendo únicamente de 464 especificaciones de problema sin resolver.
 
@@ -79,10 +79,10 @@ Resultados publicados por el autor bajo el protocolo declarado de zero-leakage (
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento de referencia |
 |---|---|---|---|---|---|
-| Vesper-Coder-1.5B | ~1,5B | no disponible (base con 32.768 tokens) | Apache-2.0 | HuggingFace (transformers, vLLM, llama.cpp, Ollama) | MBPP-Sanitized 52,53%–61,48%; HumanEval 59,76%–65,85% |
-| Qwen2.5-Coder-1.5B-Instruct (base) | ~1,5B | 32.768 tokens | Apache-2.0 | HuggingFace | MBPP-Sanitized 47,47%; HumanEval 58,54% |
-| DeepSeek-Coder-1.3B-Instruct | 1,3B | no disponible | licencia específica del autor | HuggingFace | MBPP-Sanitized 46,2%; HumanEval 65,2% (según datos citados por Vesper) |
-| Yi-Coder-1.5B | 1,5B | 128.000 tokens | no disponible en la información recogida | HuggingFace (01-ai/Yi-Coder-1.5B y variante Chat) | no disponible en la información recogida |
+| Vesper-Coder-1.5B | ~1,5B | no disponible (base con 32.768 tokens) | Apache-2.0 | Hugging Face (transformers, vLLM, llama.cpp, Ollama) | MBPP-Sanitized 52,53%–61,48%; HumanEval 59,76%–65,85% |
+| Qwen2.5-Coder-1.5B-Instruct (base) | ~1,5B | 32.768 tokens | Apache-2.0 | Hugging Face | MBPP-Sanitized 47,47%; HumanEval 58,54% |
+| DeepSeek-Coder-1.3B-Instruct | 1,3B | no disponible | licencia específica del autor | Hugging Face | MBPP-Sanitized 46,2%; HumanEval 65,2% (según datos citados por Vesper) |
+| Yi-Coder-1.5B | 1,5B | 128.000 tokens | no disponible en la información recogida | Hugging Face (01-ai/Yi-Coder-1.5B y variante Chat) | no disponible en la información recogida |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ Resultados publicados por el autor bajo el protocolo declarado de zero-leakage (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axieyangb/Vesper-Coder-1.5B
+- Modelo en Hugging Face: https://huggingface.co/axieyangb/Vesper-Coder-1.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Yi-Coder-1.5B (comparativa): https://huggingface.co/01-ai/Yi-Coder-1.5B/tree/main
 - Yi-Coder-1.5B-Chat (comparativa): https://huggingface.co/01-ai/Yi-Coder-1.5B-Chat

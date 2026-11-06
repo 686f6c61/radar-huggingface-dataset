@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ketiswp/stm32ai-MobileNetV2-0.35-ImageNet-224-int8-onnx` es una versión cuantizada en INT8 (formato QDQ) de MobileNetV2 con factor de ancho 0.35, entrenado en ImageNet a resolución 224x224, y exportado a ONNX para su ejecución con ONNX Runtime. Forma parte del ecosistema STM32 AI Model Zoo de STMicroelectronics, un repositorio de modelos pre-entrenados y optimizados para microcontroladores STM32. El autor original es STMicroelectronics, y este repositorio en HuggingFace es una re-publicación del modelo dentro de ese ecosistema.
+El modelo `ketiswp/stm32ai-MobileNetV2-0.35-ImageNet-224-int8-onnx` es una versión cuantizada en INT8 (formato QDQ) de MobileNetV2 con factor de ancho 0.35, entrenado en ImageNet a resolución 224x224, y exportado a ONNX para su ejecución con ONNX Runtime. Forma parte del ecosistema STM32 AI Model Zoo de STMicroelectronics, un repositorio de modelos pre-entrenados y optimizados para microcontroladores STM32. El autor original es STMicroelectronics, y este repositorio en Hugging Face es una re-publicación del modelo dentro de ese ecosistema.
 
 Este modelo está diseñado para resolver el problema de clasificación de imágenes en entornos con recursos muy limitados, típicos de microcontroladores y dispositivos embebidos. Su relevancia radica en que permite desplegar una red neuronal convolucional de última generación (MobileNetV2) en hardware de bajo consumo con una huella de memoria reducida gracias a la cuantización INT8. La arquitectura es MobileNetV2, con aproximadamente 1.7 millones de parámetros (factor de ancho 0.35) y una ventana de contexto no aplicable, al tratarse de un modelo de visión.
 
@@ -77,8 +77,8 @@ La comparativa se centra en modelos de clasificación de imágenes de tamaño re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.35-ImageNet-224-int8-onnx
+- Repositorio Hugging Face: https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.35-ImageNet-224-int8-onnx
 - Versión FP32 pareja: https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.35-ImageNet-224-fp32-onnx
 - Modelo original en GitHub (STM32 model zoo): https://github.com/STMicroelectronics/stm32ai-modelzoo/tree/1423c78953a830903485135febe1dd98ff31aed8/image_classification/mobilenetv2
-- Modelo STMicroelectronics/mobilenetv2 en HuggingFace: https://huggingface.co/STMicroelectronics/mobilenetv2
+- Modelo STMicroelectronics/mobilenetv2 en Hugging Face: https://huggingface.co/STMicroelectronics/mobilenetv2
 - Página del STM32 model zoo: https://stm32ai.st.com/model-zoo/

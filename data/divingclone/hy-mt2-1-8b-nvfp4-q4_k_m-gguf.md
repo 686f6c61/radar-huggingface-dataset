@@ -17,7 +17,7 @@ El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el pr
 | Parametros activos | No aplica: la variante 1.8B no es MoE (el MoE de la familia Hy-MT2 es 30B-A3B) |
 | Longitud de contexto | No disponible para el modelo; el runtime de referencia usa 1024 tokens por peticion por defecto |
 | Tipos de cuantizacion | NVFP4 (4 bits con escalas de grupo, aprox. 4,5 bit/peso, tensores de normalizacion en F32) y Q4_K_M (mixta, algunos tensores en Q6_K/F32) |
-| Idiomas soportados | 33 idiomas (familia Hy-MT2, segun el repositorio de Tencent); la ficha de HuggingFace del quantizado no los detalla |
+| Idiomas soportados | 33 idiomas (familia Hy-MT2, segun el repositorio de Tencent); la ficha de Hugging Face del quantizado no los detalla |
 | Licencia | Apache-2.0 (modelo base de Tencent; repositorio mantenido por la comunidad) |
 | Formato de pesos | GGUF fused: Hy-MT2-1.8B-NVFP4-fused.gguf (1,01 GB) y Hy-MT2-1.8B-Q4_K_M-fused.gguf (1,13 GB); el base se distribuye en safetensors/BF16 |
 | Tamano del repositorio | 2,1 GB |
@@ -103,13 +103,13 @@ No se dispone de datos de benchmarks de calidad que permitan comparar este quant
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/divingclone/Hy-MT2-1.8B-NVFP4-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/divingclone/Hy-MT2-1.8B-NVFP4-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/tencent/Hy-MT2-1.8B
 - Proyecto Hy-MT2-Windows (codigo, parches y runtime): https://github.com/divingclone/Hy-MT2-Windows
 - Ultima release del runtime Windows: https://github.com/divingclone/Hy-MT2-Windows/releases/latest
 - Guia de instalacion y configuracion de VRAM: https://github.com/divingclone/Hy-MT2-Windows/blob/main/docs/USAGE.md
 - Informe de rendimiento y evidencia completa: https://github.com/divingclone/Hy-MT2-Windows/blob/main/docs/PERFORMANCE.md
-- Cambios respecto al modelo original: MODEL_CHANGES.md (en el repositorio de HuggingFace)
-- Registro de procedencia verificable: provenance.json (en el repositorio de HuggingFace)
-- Manifiesto SHA-256 de los ficheros: manifest.json (en el repositorio de HuggingFace)
+- Cambios respecto al modelo original: MODEL_CHANGES.md (en el repositorio de Hugging Face)
+- Registro de procedencia verificable: provenance.json (en el repositorio de Hugging Face)
+- Manifiesto SHA-256 de los ficheros: manifest.json (en el repositorio de Hugging Face)
 - Familia Hy-MT2 de Tencent (1.8B, 7B, 30B-A3B, 33 idiomas): https://github.com/Tencent-Hunyuan/Hy-MT2

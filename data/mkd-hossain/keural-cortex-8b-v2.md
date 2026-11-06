@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Keural-Cortex-8B-v2 es un checkpoint experimental de tipo causal language model de arquitectura densa compatible con Qwen3, publicado por el usuario mkd-hossain en HuggingFace. Se trata de un ajuste sobre Qwen/Qwen3-8B-Base orientado a conversacion bilingue ingles-coreano, resultado de una cadena de entrenamiento que incluye preentrenamiento continuado, extension de contexto, SFT, DPO y una fase final de SFT correctivo. El autor lo publica explicitamente como un artefacto que no supero la aceptacion local de release y que no se recomienda para produccion ni para ejecucion autonoma de herramientas.
+Keural-Cortex-8B-v2 es un checkpoint experimental de tipo causal language model de arquitectura densa compatible con Qwen3, publicado por el usuario mkd-hossain en Hugging Face. Se trata de un ajuste sobre Qwen/Qwen3-8B-Base orientado a conversacion bilingue ingles-coreano, resultado de una cadena de entrenamiento que incluye preentrenamiento continuado, extension de contexto, SFT, DPO y una fase final de SFT correctivo. El autor lo publica explicitamente como un artefacto que no supero la aceptacion local de release y que no se recomienda para produccion ni para ejecucion autonoma de herramientas.
 
 Su relevancia no es de rendimiento, sino de trazabilidad: el repositorio preserva el checkpoint `step_0002990` de la ejecucion del 21-22 de septiembre de 2026 y documenta con detalle sus fallos (llamadas a herramientas innecesarias, invencion de direcciones de correo tras busquedas de contacto sin resultados, errores aritmeticos y regresiones frente a un piloto anterior). Es, por tanto, un caso de estudio util sobre SFT correctivo, olvido catastrofico y evaluacion de comportamiento agentico.
 
@@ -83,8 +83,8 @@ El autor matiza que el scorer de la suite de acciones dependientes rechazo un re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Keural-Cortex-8B-v2 | 8B declarados / 2,05B segun safetensors | 65.536 tokens con YaRN factor 2 | Apache-2.0 | Publico en HuggingFace, sin cuantizaciones | Diagnosticos locales unicamente |
-| Qwen/Qwen3-8B-Base (modelo base) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Apache-2.0 (heredada por el ajuste) | Publico en HuggingFace | No disponible |
+| Keural-Cortex-8B-v2 | 8B declarados / 2,05B segun safetensors | 65.536 tokens con YaRN factor 2 | Apache-2.0 | Publico en Hugging Face, sin cuantizaciones | Diagnosticos locales unicamente |
+| Qwen/Qwen3-8B-Base (modelo base) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Apache-2.0 (heredada por el ajuste) | Publico en Hugging Face | No disponible |
 | Alternativas directas de 8B bilingue EN-KO | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Solo puede compararse con garantias el modelo base del que deriva, ya que es el unico alternativo mencionado en la informacion disponible. No se dispone de datos verificados de rendimiento, contexto ni parametros de otros modelos comparables, por lo que no se incluyen cifras.
@@ -108,6 +108,6 @@ Solo puede compararse con garantias el modelo base del que deriva, ya que es el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mkd-hossain/Keural-Cortex-8B-v2
+- Modelo en Hugging Face: https://huggingface.co/mkd-hossain/Keural-Cortex-8B-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web realizada no devolvio resultados relevantes sobre este modelo (los resultados obtenidos corresponden a una marca de calzado ajena al proyecto).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `umi-arena-submission`, publicado por el usuario `grp-minato` en HuggingFace, es un checkpoint de aproximadamente 4.143 millones de parametros (4,14 B) almacenado en formato safetensors, con un tamano de repositorio de 46,8 GB. El nombre sugiere que se trata de un envio ("submission") a una competicion o arena de evaluacion de modelos, probablemente vinculada a un proyecto denominado "UMI". No obstante, la model card no proporciona informacion sobre la arquitectura, el proceso de entrenamiento ni las capacidades del modelo.
+El modelo `umi-arena-submission`, publicado por el usuario `grp-minato` en Hugging Face, es un checkpoint de aproximadamente 4.143 millones de parametros (4,14 B) almacenado en formato safetensors, con un tamano de repositorio de 46,8 GB. El nombre sugiere que se trata de un envio ("submission") a una competicion o arena de evaluacion de modelos, probablemente vinculada a un proyecto denominado "UMI". No obstante, la model card no proporciona informacion sobre la arquitectura, el proceso de entrenamiento ni las capacidades del modelo.
 
 La relevancia de este checkpoint es limitada desde el punto de vista practico: no se ha publicado pipeline, licencia, idiomas soportados ni documentacion tecnica alguna. El repositorio tiene 54 descargas y 0 likes en el momento de la consulta, lo que indica una adopcion muy baja. La fecha de creacion (2026-10-02) y la ultima actualizacion (2026-11-02) situan el modelo en un contexto temporal reciente, pero sin mas datos no es posible evaluar su calidad ni su idoneidad para tareas concretas.
 
@@ -23,7 +23,7 @@ Dado que la informacion disponible es minima, esta ficha se limita a documentar 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo. El unico dato tecnico verificable es el numero de parametros (4.143.404.816) y el formato de pesos (safetensors). El tag `region:us` indica unicamente la region de almacenamiento en HuggingFace, no una caracteristica del modelo.
+No se dispone de informacion sobre la arquitectura del modelo. El unico dato tecnico verificable es el numero de parametros (4.143.404.816) y el formato de pesos (safetensors). El tag `region:us` indica unicamente la region de almacenamiento en Hugging Face, no una caracteristica del modelo.
 
 Tampoco se ha publicado informacion sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. No hay evidencia de innovaciones tecnicas destacables (atencion lineal, decodificacion especulativa, arquitecturas hibridas, etc.) en la informacion proporcionada.
 
@@ -44,7 +44,7 @@ Dado que no se dispone de informacion sobre las capacidades del modelo, los sigu
 - Prototipado de asistentes conversacionales: por su tamano, podria desplegarse en infraestructura modesta, pero se requiere validar primero el comportamiento real del checkpoint.
 - Fine-tuning especifico de dominio: el formato safetensors facilita la carga en frameworks como Transformers, aunque la falta de model card complica la configuracion correcta de tokenizer y plantillas.
 - Evaluacion en arenas o competiciones: el nombre "arena-submission" sugiere que el modelo fue entrenado o seleccionado para una evaluacion comparativa, lo que podria interesar a investigadores que estudien dinamicas de competicion.
-- Analisis de checkpoints comunitarios: util para estudiar practicas de publicacion en HuggingFace (metadatos, licencias, documentacion).
+- Analisis de checkpoints comunitarios: util para estudiar practicas de publicacion en Hugging Face (metadatos, licencias, documentacion).
 - No se recomienda su uso en produccion sin antes obtener informacion adicional sobre licencia, sesgos y rendimiento.
 
 ## Benchmarks y rendimiento
@@ -76,5 +76,5 @@ No disponible. No se dispone de informacion suficiente sobre arquitectura, rendi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/grp-minato/umi-arena-submission
+- Repositorio en Hugging Face: https://huggingface.co/grp-minato/umi-arena-submission
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

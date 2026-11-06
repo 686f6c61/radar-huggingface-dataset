@@ -106,7 +106,7 @@ Frente al modelo original bf16 (que requiere más de 1.5 TB de RAM), el build 8-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pipenetwork/GLM-5.3-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/pipenetwork/GLM-5.3-MLX-8bit
 - Repositorio del runtime y código de conversión: https://github.com/PipeNetwork/glm53-mlx
 - Modelo base (Z.ai): https://huggingface.co/zai-org/GLM-5.3
 - Release bf16: https://huggingface.co/zai-org/GLM-5.3-BF16

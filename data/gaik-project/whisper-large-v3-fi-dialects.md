@@ -25,8 +25,8 @@ Su relevancia actual radica en la mejora medida sobre dialectos: reduce el WER d
 | Tamano del repositorio | 6,2 GB |
 | Libreria | transformers (requiere transformers 5 o superior) |
 | Datasets de entrenamiento | GAIK-project/skn-finnish-dialects-asr, google/fleurs, facebook/voxpopuli |
-| Fecha de creacion | 13 de octubre de 2026 (metadatos de HuggingFace) |
-| Ultima actualizacion | 14 de octubre de 2026 (metadatos de HuggingFace) |
+| Fecha de creacion | 13 de octubre de 2026 (metadatos de Hugging Face) |
+| Ultima actualizacion | 14 de octubre de 2026 (metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -99,9 +99,9 @@ Datos adicionales aportados por el autor: los ajustes finlandeses ya existentes 
 
 | Modelo | Parametros | Ventana de audio | SKN dialectos (WER) | FLEURS fi (WER) | VoxPopuli fi (WER) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| whisper-large-v3-fi-dialects | 1,54 B | 30 s | 21,1 % | 7,6 % | 10,8 % | Apache 2.0 | HuggingFace |
-| openai/whisper-large-v3 (base) | 1,54 B (equivalente, este modelo deriva de el) | 30 s | 40,4 % | 7,4 % | 12,7 % | Apache 2.0 | HuggingFace |
-| whisper-large-v3-fi-dialects, rama timestamps | 1,54 B | 30 s | 21,4 % | no disponible | 11,2 % | Apache 2.0 | HuggingFace (rama timestamps) |
+| whisper-large-v3-fi-dialects | 1,54 B | 30 s | 21,1 % | 7,6 % | 10,8 % | Apache 2.0 | Hugging Face |
+| openai/whisper-large-v3 (base) | 1,54 B (equivalente, este modelo deriva de el) | 30 s | 40,4 % | 7,4 % | 12,7 % | Apache 2.0 | Hugging Face |
+| whisper-large-v3-fi-dialects, rama timestamps | 1,54 B | 30 s | 21,4 % | no disponible | 11,2 % | Apache 2.0 | Hugging Face (rama timestamps) |
 | Gemini 3.5 Flash (preguntado por fines estandar) | no disponible | no disponible | 34,7 % | no disponible | no disponible | propietaria | API de pago |
 
 En la model card se mencionan tambien ajustes finlandeses existentes entrenados con habla leida, sin identificar individualmente, que obtienen entre un 48 % y un 57 % de WER en el mismo test dialectal. No se dispone de datos de otros modelos comparables con nombre y metrica concreta en la informacion proporcionada.
@@ -123,7 +123,7 @@ En la model card se mencionan tambien ajustes finlandeses existentes entrenados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GAIK-project/whisper-large-v3-fi-dialects
+- Modelo en Hugging Face: https://huggingface.co/GAIK-project/whisper-large-v3-fi-dialects
 - Variante con marcas temporales (rama timestamps): https://huggingface.co/GAIK-project/whisper-large-v3-fi-dialects/blob/timestamps/README.md
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Dataset dialectal SKN: https://huggingface.co/datasets/GAIK-project/skn-finnish-dialects-asr
@@ -139,4 +139,4 @@ En la model card se mencionan tambien ajustes finlandeses existentes entrenados 
 - Relato del proyecto en ingles: https://gaik-project.github.io/finnish-asr/story/story.en.html
 - Demo de escucha y comparacion de modelos: https://gaik-project.github.io/finnish-asr/listen.html
 
-La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion de HuggingFace y de la model card del autor.
+La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion de Hugging Face y de la model card del autor.

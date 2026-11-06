@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`viexdp-bartpho-word-base-tgt-aug-5e-05-20261025045409` es un ajuste fino (fine-tuning) del modelo `vinai/bartpho-word-base`, un encoder-decoder de tipo BART adaptado al vietnamita mediante tokenización por palabras (word segmentation). El modelo lo publica el usuario `hnhung` en HuggingFace y está pensado para tareas de generación texto-a-texto (text2text-generation), presumiblemente en el ámbito del procesamiento del vietnamita, aunque la model card no documenta el conjunto de datos ni el objetivo concreto del ajuste.
+`viexdp-bartpho-word-base-tgt-aug-5e-05-20261025045409` es un ajuste fino (fine-tuning) del modelo `vinai/bartpho-word-base`, un encoder-decoder de tipo BART adaptado al vietnamita mediante tokenización por palabras (word segmentation). El modelo lo publica el usuario `hnhung` en Hugging Face y está pensado para tareas de generación texto-a-texto (text2text-generation), presumiblemente en el ámbito del procesamiento del vietnamita, aunque la model card no documenta el conjunto de datos ni el objetivo concreto del ajuste.
 
 Se trata de un modelo pequeño: 150.044.427 parámetros totales en formato safetensors, lo que lo sitúa en la gama de los ~150M de parámetros, típica de la familia BART-base. El repositorio ocupa 4,8 GB, un tamaño desproporcionado respecto a los pesos, probablemente por incluir checkpoints intermedios del entrenamiento. La licencia es MIT, lo que permite uso comercial sin restricciones significativas.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es limitada y muy específica: es un artefacto de i
 
 El modelo base `vinai/bartpho-word-base` es un BART-base adaptado al vietnamita. BART es un transformer encoder-decoder con atención bidireccional en el encoder y autorregresiva en el decoder, preentrenado con objetivos de denoising (corrupción de texto y reconstrucción). La variante `word` aplica segmentación de palabras vietnamitas antes de la tokenización, lo que permite manejar mejor las palabras compuestas del idioma. El modelo base cuenta con 12 capas en encoder y 12 en decoder, con un tamaño oculto típico de 768 y 16 cabezas de atención, coherente con los ~150M de parámetros reportados.
 
-El ajuste fino se realizó con el Trainer de HuggingFace (Transformers 4.57.6, PyTorch 2.11.0+cu128, Datasets 4.8.5, Tokenizers 0.22.2). Los hiperparámetros documentados son: learning rate 5e-05, batch size de entrenamiento y evaluación de 16, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con warmup ratio de 0,1, semilla 42 y 8 épocas. El conjunto de datos de entrenamiento no se especifica ("unknown dataset"). No se documenta RLHF, DPO ni ninguna innovación técnica adicional. La pérdida de validación mínima se alcanza en la época 3 (2,3296) y a partir de ahí se produce sobreajuste progresivo (2,4770 al final).
+El ajuste fino se realizó con el Trainer de Hugging Face (Transformers 4.57.6, PyTorch 2.11.0+cu128, Datasets 4.8.5, Tokenizers 0.22.2). Los hiperparámetros documentados son: learning rate 5e-05, batch size de entrenamiento y evaluación de 16, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con warmup ratio de 0,1, semilla 42 y 8 épocas. El conjunto de datos de entrenamiento no se especifica ("unknown dataset"). No se documenta RLHF, DPO ni ninguna innovación técnica adicional. La pérdida de validación mínima se alcanza en la época 3 (2,3296) y a partir de ahí se produce sobreajuste progresivo (2,4770 al final).
 
 ## Capacidades
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| hnhung/viexdp-bartpho-word-base-tgt-aug-5e-05-20261025045409 | 150M | no disponible | MIT | HuggingFace | Fine-tuning sin dataset documentado |
-| vinai/bartpho-word-base | ~150M | 1024 tokens (típico BART) | MIT | HuggingFace | Modelo base, preentrenado en vietnamita con segmentación por palabras |
-| vinai/bartpho-syllable-base | ~150M | 1024 tokens (típico BART) | MIT | HuggingFace | Variante con tokenización por sílabas |
-| VietAI/vit5-base | ~220M | 512 tokens (típico T5) | MIT | HuggingFace | Alternativa encoder-decoder para vietnamita basada en T5 |
+| hnhung/viexdp-bartpho-word-base-tgt-aug-5e-05-20261025045409 | 150M | no disponible | MIT | Hugging Face | Fine-tuning sin dataset documentado |
+| vinai/bartpho-word-base | ~150M | 1024 tokens (típico BART) | MIT | Hugging Face | Modelo base, preentrenado en vietnamita con segmentación por palabras |
+| vinai/bartpho-syllable-base | ~150M | 1024 tokens (típico BART) | MIT | Hugging Face | Variante con tokenización por sílabas |
+| VietAI/vit5-base | ~220M | 512 tokens (típico T5) | MIT | Hugging Face | Alternativa encoder-decoder para vietnamita basada en T5 |
 
 La comparación directa con benchmarks no es posible porque el modelo no publica resultados. Frente al modelo base, la única diferencia documentada es el ajuste fino con 8 épocas y la pérdida de validación resultante; no hay evidencia de mejora en tareas concretas.
 
@@ -96,7 +96,7 @@ La comparación directa con benchmarks no es posible porque el modelo no publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hnhung/viexdp-bartpho-word-base-tgt-aug-5e-05-20261025045409
+- Modelo en Hugging Face: https://huggingface.co/hnhung/viexdp-bartpho-word-base-tgt-aug-5e-05-20261025045409
 - Modelo base: https://huggingface.co/vinai/bartpho-word-base
 - Repositorio del modelo base (GitHub): https://github.com/VinAIResearch/BARTpho
 - Paper de BARTpho: https://arxiv.org/abs/2109.09701

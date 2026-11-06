@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `FelixVDV/Test` es un repositorio alojado en HuggingFace por el usuario FelixVDV, creado el 15 de agosto de 2026. No se dispone de ninguna información técnica pública sobre su arquitectura, parámetros, entrenamiento o capacidades. La model card únicamente declara la licencia `openrail` y no incluye descripción, archivos de pesos, configuración ni documentación adicional. El repositorio registra cero descargas y cero likes, lo que sugiere que se trata de una publicación de prueba o un placeholder sin contenido real.
+El modelo `FelixVDV/Test` es un repositorio alojado en Hugging Face por el usuario FelixVDV, creado el 15 de agosto de 2026. No se dispone de ninguna información técnica pública sobre su arquitectura, parámetros, entrenamiento o capacidades. La model card únicamente declara la licencia `openrail` y no incluye descripción, archivos de pesos, configuración ni documentación adicional. El repositorio registra cero descargas y cero likes, lo que sugiere que se trata de una publicación de prueba o un placeholder sin contenido real.
 
 Dado que no existe información verificable sobre el modelo, esta ficha no puede ofrecer especificaciones, benchmarks ni casos de uso fiables. Se recomienda encarecidamente no utilizar este repositorio en entornos de producción ni como base para evaluaciones técnicas, ya que no hay evidencia de que contenga un modelo funcional o entrenado.
 
@@ -53,5 +53,5 @@ No disponible. No existe información sobre el modelo que permita compararlo con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FelixVDV/Test
+- Repositorio en Hugging Face: https://huggingface.co/FelixVDV/Test
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo.

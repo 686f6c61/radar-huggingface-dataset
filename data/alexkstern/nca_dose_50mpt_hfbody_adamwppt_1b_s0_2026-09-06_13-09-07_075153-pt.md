@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informaci처n disponible. El �
 
 ## Comparativa con modelos similares
 
-Existen otros checkpoints de la misma serie publicados por el mismo autor en HuggingFace, aunque no se dispone de sus especificaciones ni benchmarks. A continuaci처n se muestra una comparaci처n limitada basada en los nombres de los repositorios:
+Existen otros checkpoints de la misma serie publicados por el mismo autor en Hugging Face, aunque no se dispone de sus especificaciones ni benchmarks. A continuaci처n se muestra una comparaci처n limitada basada en los nombres de los repositorios:
 
 | Modelo | Fecha de publicaci처n | Notas |
 |---|---|---|
@@ -79,9 +79,9 @@ No se ha identificado ninguna comparativa con modelos similares de otras fuentes
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_adamwppt_1B_s0_2026-09-06_13-09-07_075153-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_adamwppt_1B_s0_2026-09-06_13-09-07_075153-pt
 - Weights & Biases: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/1ic3y079
 - Repositorio nanochat: https://github.com/karpathy/nanochat
-- Otros modelos de la serie en HuggingFace:
+- Otros modelos de la serie en Hugging Face:
   - https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_5M_s0_2026-08-14_17-26-27_448317-pt
   - https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_500M_s0_2026-08-14_18-10-45_510563-pt

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3-4B-PhoMT-R64 es un modelo publicado en HuggingFace por el usuario huggingtime12 bajo el identificador `huggingtime12/Qwen3-4B-PhoMT-R64`. Por el nombre se infiere que se trata de un ajuste fino (fine-tuning) del modelo base Qwen3-4B de Alibaba, con un posible rango LoRA de 64 (el sufijo "R64") y un dominio o dataset de entrenamiento no documentado ("PhoMT"). Sin embargo, esta inferencia procede unicamente de la nomenclatura, ya que la model card no aporta ninguna informacion sustantiva.
+Qwen3-4B-PhoMT-R64 es un modelo publicado en Hugging Face por el usuario huggingtime12 bajo el identificador `huggingtime12/Qwen3-4B-PhoMT-R64`. Por el nombre se infiere que se trata de un ajuste fino (fine-tuning) del modelo base Qwen3-4B de Alibaba, con un posible rango LoRA de 64 (el sufijo "R64") y un dominio o dataset de entrenamiento no documentado ("PhoMT"). Sin embargo, esta inferencia procede unicamente de la nomenclatura, ya que la model card no aporta ninguna informacion sustantiva.
 
-El repositorio tiene un tamano de 0,5 GB, lo que resulta llamativamente pequeno para un modelo de 4 mil millones de parametros en precision completa (que rondaria los 8 GB en bf16). Esto sugiere que el repositorio podria contener unicamente los adaptadores LoRA o pesos en una cuantizacion muy agresiva, aunque no es posible confirmarlo con los datos disponibles. La model card es la plantilla autogenerada de HuggingFace, sin rellenar: todos los campos figuran como "[More Information Needed]".
+El repositorio tiene un tamano de 0,5 GB, lo que resulta llamativamente pequeno para un modelo de 4 mil millones de parametros en precision completa (que rondaria los 8 GB en bf16). Esto sugiere que el repositorio podria contener unicamente los adaptadores LoRA o pesos en una cuantizacion muy agresiva, aunque no es posible confirmarlo con los datos disponibles. La model card es la plantilla autogenerada de Hugging Face, sin rellenar: todos los campos figuran como "[More Information Needed]".
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente descriptiva: se trata de un modelo practicamente sin documentacion, sin descargas y sin likes en el momento de la consulta, lo que desaconseja su uso en produccion sin una evaluacion propia previa. Se recomienda precaucion y verificar el contenido real del repositorio antes de cualquier despliegue.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es, por tanto, limitada y fundamentalmente descripti
 
 No se dispone de informacion sobre la arquitectura en la model card. El nombre del modelo sugiere que deriva de Qwen3-4B, un transformer denso de la familia Qwen3, pero no hay confirmacion oficial en el repositorio. El sufijo "R64" podria indicar un rango LoRA de 64, lo que implicaria un ajuste fino mediante PEFT/LoRA sobre el modelo base, pero esta interpretacion es especulativa.
 
-Tampoco se documentan los datos de entrenamiento, el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o SFT. La unica referencia tecnica presente en el repositorio es el tag `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre el calculador de impacto medioambiental de ML, citado en la plantilla por defecto de HuggingFace; no es una referencia al entrenamiento del modelo.
+Tampoco se documentan los datos de entrenamiento, el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o SFT. La unica referencia tecnica presente en el repositorio es el tag `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre el calculador de impacto medioambiental de ML, citado en la plantilla por defecto de Hugging Face; no es una referencia al entrenamiento del modelo.
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ No es posible recomendar casos de uso concretos con garantias, dado que no hay d
 - Evaluacion comparativa de adaptadores: util para quien quiera comparar el comportamiento de un ajuste fino concreto frente al modelo base, previa validacion de que los pesos son funcionales.
 - Prototipado interno: uso en entornos controlados para probar pipelines de inference con transformers, sin garantias de calidad.
 - Fine-tuning adicional: si el repositorio contiene adaptadores LoRA, podria reutilizarse como base para nuevos ajustes, aunque se desconoce la licencia y las restricciones.
-- Docencia y demostraciones: uso en talleres para ilustrar el flujo de publicacion de modelos en HuggingFace, con las advertencias oportunas.
+- Docencia y demostraciones: uso en talleres para ilustrar el flujo de publicacion de modelos en Hugging Face, con las advertencias oportunas.
 - Analisis de reproducibilidad: objeto de estudio para quienes investigan la trazabilidad y documentacion de modelos en el Hub.
 
 En todos los casos, la recomendacion es verificar el contenido del repositorio, la integridad de los pesos y la licencia antes de cualquier uso.
@@ -70,8 +70,8 @@ No es posible establecer una comparativa fiable sin datos de rendimiento ni espe
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-4B-PhoMT-R64 | no disponible (presumiblemente 4B) | no disponible | no disponible | HuggingFace (0 descargas) |
-| Qwen3-4B (base presumible) | 4B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| Qwen3-4B-PhoMT-R64 | no disponible (presumiblemente 4B) | no disponible | no disponible | Hugging Face (0 descargas) |
+| Qwen3-4B (base presumible) | 4B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 | Otros modelos ~4B | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento.
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/huggingtime12/Qwen3-4B-PhoMT-R64
+- Repositorio en Hugging Face: https://huggingface.co/huggingtime12/Qwen3-4B-PhoMT-R64
 - Articulo citado en el tag del repositorio (Lacoste et al., 2019, sobre impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto medioambiental de ML: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

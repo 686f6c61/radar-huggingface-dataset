@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace bajo el identificador `DASD12D12SAD/MyAwesomeModel-TestRepo` por el usuario DASD12D12SAD. El repositorio está etiquetado con `transformers`, `pytorch`, `bert` y el pipeline `feature-extraction`, lo que apuntaría a un modelo transformer de tipo encoder orientado a generar representaciones (embeddings) y no a la generación de texto. Sin embargo, la model card describe un asistente conversacional con razonamiento profundo, function calling y búsqueda web. Esta contradicción entre las etiquetas del repositorio y el contenido de la model card es la primera advertencia relevante: la información disponible es escasa, internamente inconsistente y tiene el aspecto de una plantilla sin rellenar.
+MyAwesomeModel es un modelo publicado en Hugging Face bajo el identificador `DASD12D12SAD/MyAwesomeModel-TestRepo` por el usuario DASD12D12SAD. El repositorio está etiquetado con `transformers`, `pytorch`, `bert` y el pipeline `feature-extraction`, lo que apuntaría a un modelo transformer de tipo encoder orientado a generar representaciones (embeddings) y no a la generación de texto. Sin embargo, la model card describe un asistente conversacional con razonamiento profundo, function calling y búsqueda web. Esta contradicción entre las etiquetas del repositorio y el contenido de la model card es la primera advertencia relevante: la información disponible es escasa, internamente inconsistente y tiene el aspecto de una plantilla sin rellenar.
 
 El repositorio registra 0 descargas y 0 likes, fue creado y actualizado el 18 de septiembre de 2026 y ocupa 0,0 GB, lo que sugiere que no contiene pesos publicados. No se declaran idiomas soportados, ni número de parámetros, ni longitud de contexto, ni tipos de cuantización. La única información firme es la licencia MIT y la librería de inferencia (`transformers`).
 
@@ -82,7 +82,7 @@ Dato adicional declarado en el texto de la model card: en AIME 2025 la precisió
 - VRAM estimada para inferencia: no disponible. Sin número de parámetros ni formato de pesos no es posible calcularla.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible. La etiqueta `bert` apuntaría a un modelo de tamaño potencialmente reducido, pero es una inferencia no confirmada y no debe usarse para dimensionar infraestructura.
-- Opciones de despliegue: la librería declarada es `transformers` y el repositorio incluye la etiqueta `endpoints_compatible`, lo que en principio permitiría servirlo con HuggingFace Inference Endpoints, vLLM o TGI. No hay confirmación de compatibilidad con llama.cpp, Ollama o GGUF, ya que no se publican pesos en esos formatos.
+- Opciones de despliegue: la librería declarada es `transformers` y el repositorio incluye la etiqueta `endpoints_compatible`, lo que en principio permitiría servirlo con Hugging Face Inference Endpoints, vLLM o TGI. No hay confirmación de compatibilidad con llama.cpp, Ollama o GGUF, ya que no se publican pesos en esos formatos.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -104,7 +104,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DASD12D12SAD/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/DASD12D12SAD/MyAwesomeModel-TestRepo
 - Model card del autor: incluida en el repositorio anterior (referencia a `LICENSE`, `figures/fig1.png`, `figures/fig2.png` y `figures/fig3.png`, sin URL accesible)
 - Sitio web oficial y plataforma de API mencionados en la model card: no disponible (no se proporciona URL)
 - Repositorio de código para ejecución local mencionado en la model card: no disponible (no se proporciona URL)

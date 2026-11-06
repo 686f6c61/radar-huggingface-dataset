@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lucyjohnson/dino-classification` es un repositorio de HuggingFace publicado por el usuario lucyjohnson que contiene una implementación propia y de configuración pequeña de la arquitectura DINO aplicada a tareas de clasificación. No se trata de un modelo entrenado ni de un checkpoint con resultados validados: la propia model card lo describe explícitamente como un "initialization checkpoint" válido para pruebas de humo (smoke tests), con pesos sin entrenar y sin ninguna métrica de benchmark asociada.
+`lucyjohnson/dino-classification` es un repositorio de Hugging Face publicado por el usuario lucyjohnson que contiene una implementación propia y de configuración pequeña de la arquitectura DINO aplicada a tareas de clasificación. No se trata de un modelo entrenado ni de un checkpoint con resultados validados: la propia model card lo describe explícitamente como un "initialization checkpoint" válido para pruebas de humo (smoke tests), con pesos sin entrenar y sin ninguna métrica de benchmark asociada.
 
 El interés del repositorio es fundamentalmente metodológico y de reproducibilidad. Incluye `inference.py` como artefacto principal, `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto y `model.safetensors` como inicialización. La arquitectura declarada usa atención estándar, fusión de tensores (tensor fusion), activación ReLU y normalización InstanceNorm, con optimizador NovoGrad y scheduler OneCycle como valores de partida.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Descripción | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lucyjohnson/dino-classification | Implementación propia de DINO para clasificación, checkpoint de inicialización sin entrenar | 49.600 (reportado) | no disponible | MIT | Repositorio HuggingFace |
-| laurataylor/dino-classification | Implementación pequeña de DINO para clasificación con checkpoint de inicialización, no es un modelo entrenado | no disponible | no disponible | no disponible | Repositorio HuggingFace |
-| TexasInstruments/DINO-Classification | DINO (Self-Distillation with No Labels) de Meta AI, backbone ViT preentrenado de forma auto-supervisada con buen rendimiento en ImageNet sin etiquetas | no disponible en la información | no disponible | no disponible | Repositorio HuggingFace |
+| lucyjohnson/dino-classification | Implementación propia de DINO para clasificación, checkpoint de inicialización sin entrenar | 49.600 (reportado) | no disponible | MIT | Repositorio Hugging Face |
+| laurataylor/dino-classification | Implementación pequeña de DINO para clasificación con checkpoint de inicialización, no es un modelo entrenado | no disponible | no disponible | no disponible | Repositorio Hugging Face |
+| TexasInstruments/DINO-Classification | DINO (Self-Distillation with No Labels) de Meta AI, backbone ViT preentrenado de forma auto-supervisada con buen rendimiento en ImageNet sin etiquetas | no disponible en la información | no disponible | no disponible | Repositorio Hugging Face |
 
 No se dispone de datos suficientes para comparar rendimiento numérico entre estas alternativas.
 
@@ -80,6 +80,6 @@ No se dispone de datos suficientes para comparar rendimiento numérico entre est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucyjohnson/dino-classification
+- Modelo en Hugging Face: https://huggingface.co/lucyjohnson/dino-classification
 - Repositorio similar (laurataylor): https://huggingface.co/laurataylor/dino-classification
 - DINO de Meta AI (referencia, TexasInstruments): https://huggingface.co/TexasInstruments/DINO-Classification

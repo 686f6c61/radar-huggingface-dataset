@@ -68,7 +68,7 @@ El autor reporta un tiempo de sprint de 2 metros de 2.797 s en la mejor ejecuci�
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `microduck-beam-sprint-v2` | Política RL para microduck | no disponible | no aplica | 2.797–2.917 s en sprint 2 m | no disponible | HuggingFace (0 descargas) |
+| `microduck-beam-sprint-v2` | Política RL para microduck | no disponible | no aplica | 2.797–2.917 s en sprint 2 m | no disponible | Hugging Face (0 descargas) |
 | Otras políticas del repo `microduck-challenges` | Políticas RL para microduck | no disponible | no aplica | no disponible en esta consulta | no disponible | Repositorio de Pollen Robotics |
 | Políticas de referencia de microduck (baseline del reto) | Políticas RL para microduck | no disponible | no aplica | no disponible en esta consulta | no disponible | Repositorio de Pollen Robotics |
 
@@ -88,7 +88,7 @@ No se dispone de datos suficientes para comparar con alternativas de otros fabri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/munish0838/microduck-beam-sprint-v2
+- Modelo en Hugging Face: https://huggingface.co/munish0838/microduck-beam-sprint-v2
 - Repositorio microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de retos microduck: https://github.com/pollen-robotics/microduck-challenges
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon de microduck

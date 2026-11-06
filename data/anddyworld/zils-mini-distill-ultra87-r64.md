@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| anddyworld/zils-mini-distill-ultra87-r64 | 4.539 M | No disponible | Apache 2.0 | HuggingFace (0 descargas) | Destilado de decision, requiere chasis d3-mini |
-| zils-ai/d3-mini-4.5b-v1 (padre) | ~4.500 M | No disponible | Apache 2.0 | HuggingFace | Modelo base sin destilar |
-| vllm-sr/d3-ultra (profesor) | No disponible | No disponible | Apache 2.0 | HuggingFace | Modelo mayor usado como referencia de destilacion |
+| anddyworld/zils-mini-distill-ultra87-r64 | 4.539 M | No disponible | Apache 2.0 | Hugging Face (0 descargas) | Destilado de decision, requiere chasis d3-mini |
+| zils-ai/d3-mini-4.5b-v1 (padre) | ~4.500 M | No disponible | Apache 2.0 | Hugging Face | Modelo base sin destilar |
+| vllm-sr/d3-ultra (profesor) | No disponible | No disponible | Apache 2.0 | Hugging Face | Modelo mayor usado como referencia de destilacion |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [HuggingFace: anddyworld/zils-mini-distill-ultra87-r64](https://huggingface.co/anddyworld/zils-mini-distill-ultra87-r64)
+- [Hugging Face: anddyworld/zils-mini-distill-ultra87-r64](https://huggingface.co/anddyworld/zils-mini-distill-ultra87-r64)
 - [Modelo base: zils-ai/d3-mini-4.5b-v1](https://huggingface.co/zils-ai/d3-mini-4.5b-v1)
 - [Modelo profesor: vllm-sr/d3-ultra](https://huggingface.co/vllm-sr/d3-ultra)

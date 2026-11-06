@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento ni de parámetros totales/activos para est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/johnlockejrr/Swift-1.5-Qwen3.8-Flash-Next-heretic-HGN
+- Repositorio Hugging Face: https://huggingface.co/johnlockejrr/Swift-1.5-Qwen3.8-Flash-Next-heretic-HGN
 - Modelo base (BF16): https://huggingface.co/jeffpeng3/Swift-1.5-Qwen3.8-Flash-Next-heretic
 - Post-entrenamiento Swift 1.5: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
 - Licencia: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next/blob/main/LICENSE

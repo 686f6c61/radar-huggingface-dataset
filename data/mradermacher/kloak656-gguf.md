@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kloak656-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo RoseG/Kloak656, publicada por mradermacher, un conocido generador de cuantizaciones de la comunidad de HuggingFace. El modelo base cuenta con 8.953.803.264 parámetros (aproximadamente 9 mil millones), está etiquetado como conversacional y multimodal (incluye ficheros mmproj), y se distribuye bajo licencia Apache 2.0. La información disponible sobre el modelo original es muy limitada: no se ha publicado model card detallada del modelo base en la información proporcionada.
+Kloak656-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo RoseG/Kloak656, publicada por mradermacher, un conocido generador de cuantizaciones de la comunidad de Hugging Face. El modelo base cuenta con 8.953.803.264 parámetros (aproximadamente 9 mil millones), está etiquetado como conversacional y multimodal (incluye ficheros mmproj), y se distribuye bajo licencia Apache 2.0. La información disponible sobre el modelo original es muy limitada: no se ha publicado model card detallada del modelo base en la información proporcionada.
 
 El repositorio de cuantizaciones ocupa 77,7 GB e incluye un conjunto de cuantizaciones estáticas en tipos Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS y x-f16, además de dos ficheros mmproj (Q8_0 y f16) que actúan como suplemento multimodal. No se dispone de cuantizaciones ponderadas ni imatrix en el momento de la publicación.
 
@@ -87,7 +87,7 @@ No se dispone de información suficiente sobre el modelo base (arquitectura, con
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/Kloak656-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/Kloak656-GGUF
 - Modelo base: https://huggingface.co/RoseG/Kloak656
 - Página de descargas del autor: https://hf.tst.eu/model#Kloak656-GGUF
 - Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -25,7 +25,7 @@ El modelo se describe como una troupe de 8 patos: un lead basado en la referenci
 | Salida | 14 acciones de control |
 | Frecuencia de control | 50 Hz |
 | Librería / pipeline | `microduck` / `robotics` |
-| Tamaño del repositorio | 0.0 GB según HuggingFace |
+| Tamaño del repositorio | 0.0 GB según Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Relación | Parámetros | Contexto / observación | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `suraj-phanindra/microduck-duck-rick-roll` | Finetune de la referencia de Pollen | no disponible | Observación de 61 dimensiones; 14 acciones a 50 Hz | Benchmarks no disponibles | no disponible | HuggingFace; 0 descargas y 0 likes |
-| `pollen-robotics/microduck-got-a-talent-reference` | Modelo base | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| `eli-aifund/microduck-swing-low-quartet` | Referenciado como base de los bailarines de respaldo | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `suraj-phanindra/microduck-duck-rick-roll` | Finetune de la referencia de Pollen | no disponible | Observación de 61 dimensiones; 14 acciones a 50 Hz | Benchmarks no disponibles | no disponible | Hugging Face; 0 descargas y 0 likes |
+| `pollen-robotics/microduck-got-a-talent-reference` | Modelo base | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| `eli-aifund/microduck-swing-low-quartet` | Referenciado como base de los bailarines de respaldo | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre estas políticas en la información proporcionada.
 
@@ -92,8 +92,8 @@ No se dispone de datos comparativos de rendimiento entre estas políticas en la 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/suraj-phanindra/microduck-duck-rick-roll)
-- [Modelo base en HuggingFace](https://huggingface.co/pollen-robotics/microduck-got-a-talent-reference)
+- [Modelo en Hugging Face](https://huggingface.co/suraj-phanindra/microduck-duck-rick-roll)
+- [Modelo base en Hugging Face](https://huggingface.co/pollen-robotics/microduck-got-a-talent-reference)
 - [Repositorio microduck en GitHub](https://github.com/pollen-robotics/microduck)
 - [Modelo referenciado `eli-aifund/microduck-swing-low-quartet`](https://huggingface.co/eli-aifund/microduck-swing-low-quartet)
 - Repositorio de entrenamiento indicado: `pollen-robotics/microduck_rl`, branch `main`, commit `6ff40704a`; URL no disponible en la información.

@@ -23,8 +23,8 @@ Es relevante ahora porque la destilación adversarial permite llevar la generaci
 | Librería | diffusers |
 | Pipeline declarado | text-to-image |
 | Tamaño del repositorio | 13,0 GB |
-| Repositorio creado | 2026-10-09 (según metadatos de HuggingFace) |
-| Última actualización | 2026-10-09 (según metadatos de HuggingFace) |
+| Repositorio creado | 2026-10-09 (según metadatos de Hugging Face) |
+| Última actualización | 2026-10-09 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -82,10 +82,10 @@ La model card incluye únicamente un estudio de preferencia humana, presentado m
 
 | Modelo | Parámetros | Resolución | Pasos de muestreo | Contexto de prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SD-Turbo (Jinstudio/sd-turbo, copia de stabilityai/sd-turbo) | 865.910.724 tensores en safetensors (dato del repositorio) | 512x512 (preferida) | 1 a 4 | 77 tokens por prompt (codificador heredado de SD 2.1; no confirmado en este repositorio) | No declarada en este repositorio; remite a la licencia de Stability AI | HuggingFace, Diffusers |
-| SDXL-Turbo (stabilityai/sdxl-turbo) | No disponible en la información proporcionada | 1024x1024 (modelo mayor) | 1 a 4 (mismo método ADD) | No disponible | Licencia de Stability AI | HuggingFace, Diffusers |
-| LCM-LoRA 1.5 (referencia del estudio de preferencia) | No disponible en la información proporcionada | No disponible | Pocos pasos (LoRA de destilación sobre SD 1.5) | No disponible | No disponible | HuggingFace |
-| LCM-LoRA XL (referencia del estudio de preferencia) | No disponible en la información proporcionada | No disponible | Pocos pasos (LoRA de destilación sobre SDXL) | No disponible | No disponible | HuggingFace |
+| SD-Turbo (Jinstudio/sd-turbo, copia de stabilityai/sd-turbo) | 865.910.724 tensores en safetensors (dato del repositorio) | 512x512 (preferida) | 1 a 4 | 77 tokens por prompt (codificador heredado de SD 2.1; no confirmado en este repositorio) | No declarada en este repositorio; remite a la licencia de Stability AI | Hugging Face, Diffusers |
+| SDXL-Turbo (stabilityai/sdxl-turbo) | No disponible en la información proporcionada | 1024x1024 (modelo mayor) | 1 a 4 (mismo método ADD) | No disponible | Licencia de Stability AI | Hugging Face, Diffusers |
+| LCM-LoRA 1.5 (referencia del estudio de preferencia) | No disponible en la información proporcionada | No disponible | Pocos pasos (LoRA de destilación sobre SD 1.5) | No disponible | No disponible | Hugging Face |
+| LCM-LoRA XL (referencia del estudio de preferencia) | No disponible en la información proporcionada | No disponible | Pocos pasos (LoRA de destilación sobre SDXL) | No disponible | No disponible | Hugging Face |
 
 La model card sitúa explícitamente a SDXL-Turbo por encima de SD-Turbo en calidad y comprensión de prompts, y recomienda su uso cuando se busca mayor calidad. Los datos numéricos de parámetros y resolución de los modelos comparados no se incluyen en la información proporcionada más allá de lo indicado en la tabla.
 

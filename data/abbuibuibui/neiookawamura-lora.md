@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks cuantitativos (FID, CLIP score, sim
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Nei Ookawamura LoRA (este) | LoRA de personaje | waiIllustriousSDXL v17 | rango 64 / alpha 32 | no aplica | creativeml-openrail-m | HuggingFace y ModelScope |
+| Nei Ookawamura LoRA (este) | LoRA de personaje | waiIllustriousSDXL v17 | rango 64 / alpha 32 | no aplica | creativeml-openrail-m | Hugging Face y ModelScope |
 | LoRA de personaje generico sobre SDXL | LoRA de personaje | SDXL | variable | no aplica | variable | ecosistema amplio |
-| Checkpoint Illustrious completo | Modelo base | SDXL | no disponible | no aplica | variable | HuggingFace |
+| Checkpoint Illustrious completo | Modelo base | SDXL | no disponible | no aplica | variable | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas concretas en la informacion proporcionada, por lo que la comparativa cuantitativa se limita a los datos del propio adaptador.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abbuibuibui/NeiOokawamura-Lora
-- Dataset en HuggingFace: https://huggingface.co/datasets/abbuibuibui/NeiOokawamura-Dataset
+- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/NeiOokawamura-Lora
+- Dataset en Hugging Face: https://huggingface.co/datasets/abbuibuibui/NeiOokawamura-Dataset
 - Modelo en ModelScope: https://www.modelscope.cn/models/abbuibuibui/NeiOokawamura-Lora
 - Dataset en ModelScope: https://www.modelscope.cn/datasets/abbuibuibui/NeiOokawamura-Dataset

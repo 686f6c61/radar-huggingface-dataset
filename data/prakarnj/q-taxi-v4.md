@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-Taxi-v4 no es un modelo de lenguaje: es un agente de aprendizaje por refuerzo entrenado con el algoritmo Q-learning sobre el entorno Taxi-v3 de Gym/Gymnasium. Lo publica el usuario PrakarnJ en HuggingFace Hub dentro de la categoría de modelos de reinforcement learning, con un unico artefacto de pesos en formato Pickle (`q-learning.pkl`) y un repositorio de tamano practicamente nulo (0.0 GB), coherente con una tabla Q tabular y no con una red neuronal profunda.
+q-Taxi-v4 no es un modelo de lenguaje: es un agente de aprendizaje por refuerzo entrenado con el algoritmo Q-learning sobre el entorno Taxi-v3 de Gym/Gymnasium. Lo publica el usuario PrakarnJ en Hugging Face Hub dentro de la categoría de modelos de reinforcement learning, con un unico artefacto de pesos en formato Pickle (`q-learning.pkl`) y un repositorio de tamano practicamente nulo (0.0 GB), coherente con una tabla Q tabular y no con una red neuronal profunda.
 
 El modelo resuelve la tarea clasica de "taxi": recoger un pasajero en una de las paradas de una cuadricula y dejarlo en su destino con el minimo coste de pasos. Su relevancia es exclusivamente docente y de referencia: sirve como ejemplo minimo de agente Q-learning serializado y cargable desde el Hub mediante `load_from_hub`, y como baseline de comparacion frente a agentes mas complejos (DQN, PPO, QRDQN) sobre el mismo entorno.
 
@@ -64,13 +64,13 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 - Compatibilidad con GPU de consumo: si, irrelevante; funciona en cualquier maquina capaz de ejecutar Python y Gymnasium.
 - Opciones de despliegue: script de Python con Gymnasium/Gym, carga del Pickle mediante `load_from_hub`. No aplican vLLM, llama.cpp, Ollama ni TGI, que estan disenados para modelos de lenguaje.
 - Latencia y throughput: no disponibles. La inferencia consiste en una consulta a una tabla indexada por estado, por lo que la latencia esta dominada por el bucle del entorno (decenas de miles de pasos por segundo en CPU es un orden de magnitud plausible, pero no hay medicion publicada).
-- Almacenamiento: el repositorio ocupa 0.0 GB segun los metadatos de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0.0 GB segun los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo de agente | Entorno | Metrica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| q-Taxi-v4 (PrakarnJ) | Q-learning tabular | Taxi-v3 | 7.54 +/- 2.74 (no verificado) | no disponible | HuggingFace Hub |
+| q-Taxi-v4 (PrakarnJ) | Q-learning tabular | Taxi-v3 | 7.54 +/- 2.74 (no verificado) | no disponible | Hugging Face Hub |
 | DQN sobre Taxi-v3 (Stable-Baselines3 u otros) | Aproximacion de funcion con red neuronal | Taxi-v3 | no disponible en la informacion proporcionada | no disponible | ecosistema SB3 / Hub |
 | QRDQN sobre Taxi-v3 | Aproximacion de funcion distribucional | Taxi-v3 | no disponible en la informacion proporcionada | no disponible | ecosistema SB3 / Hub |
 | PPO sobre Taxi-v3 | Policy gradient | Taxi-v3 | no disponible en la informacion proporcionada | no disponible | ecosistema SB3 / Hub |
@@ -79,7 +79,7 @@ La comparacion se limita a la categoria de agentes de RL sobre Taxi-v3. No hay c
 
 ## Limitaciones y advertencias
 
-- Alcance reducido: el agente esta entrenado exclusivamente para Taxi-v3. No es un modelo de lenguaje y no puede utilizarse para generacion de texto, codigo, matematicas, vision ni ninguna otra tarea del catalogo habitual de HuggingFace.
+- Alcance reducido: el agente esta entrenado exclusivamente para Taxi-v3. No es un modelo de lenguaje y no puede utilizarse para generacion de texto, codigo, matematicas, vision ni ninguna otra tarea del catalogo habitual de Hugging Face.
 - Resultado no verificado: el `mean_reward` de 7.54 +/- 2.74 esta marcado con `verified: false`; no se documentan numero de episodios, semilla ni protocolo de evaluacion.
 - Varianza elevada: la desviacion tipica declarada (2.74) sugiere un comportamiento inestable entre episodios, poco adecuado para uso en produccion sin un analisis adicional.
 - Falta de licencia: la ficha no declara licencia, lo que impide determinar si el uso comercial esta permitido. Ante la ausencia de terminos, debe asumirse que no hay autorizacion explicita.
@@ -91,7 +91,7 @@ La comparacion se limita a la categoria de agentes de RL sobre Taxi-v3. No hay c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PrakarnJ/q-Taxi-v4
+- Modelo en Hugging Face: https://huggingface.co/PrakarnJ/q-Taxi-v4
 - Documentacion de Gymnasium sobre Taxi-v3: no disponible en la busqueda realizada
 - Repositorio o paper asociado: no disponible
 - Demo o espacio interactivo: no disponible

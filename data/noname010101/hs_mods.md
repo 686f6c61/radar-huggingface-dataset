@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Noname010101/hs_mods` es un archivo alojado en HuggingFace con un tamaño de 12.247.802.880 parámetros (aproximadamente 12,2 mil millones), etiquetado como `gguf` y `endpoints_compatible`, lo que sugiere que se trata de un modelo de lenguaje en formato GGUF preparado para inferencia local o despliegue en servidores compatibles con endpoints. El autor, `Noname010101`, no proporciona documentación, licencia ni información sobre idiomas, arquitectura o entrenamiento. El nombre "hs_mods" podría hacer referencia a modificaciones de juegos (Honey Select), pero no hay evidencia que lo confirme. La fecha de creación (2026-05-10) y actualización (2026-08-17) son posteriores a la fecha actual, lo que resulta inusual. En resumen, se trata de un modelo con escasa información pública, probablemente un LLM conversacional de tamaño medio, pero sin datos verificables.
+El modelo `Noname010101/hs_mods` es un archivo alojado en Hugging Face con un tamaño de 12.247.802.880 parámetros (aproximadamente 12,2 mil millones), etiquetado como `gguf` y `endpoints_compatible`, lo que sugiere que se trata de un modelo de lenguaje en formato GGUF preparado para inferencia local o despliegue en servidores compatibles con endpoints. El autor, `Noname010101`, no proporciona documentación, licencia ni información sobre idiomas, arquitectura o entrenamiento. El nombre "hs_mods" podría hacer referencia a modificaciones de juegos (Honey Select), pero no hay evidencia que lo confirme. La fecha de creación (2026-05-10) y actualización (2026-08-17) son posteriores a la fecha actual, lo que resulta inusual. En resumen, se trata de un modelo con escasa información pública, probablemente un LLM conversacional de tamaño medio, pero sin datos verificables.
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ No se puede establecer una comparativa real sin datos de rendimiento del modelo 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Noname010101/hs_mods)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Noname010101)
+- [Modelo en Hugging Face](https://huggingface.co/Noname010101/hs_mods)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Noname010101)
 
 No se encontraron otros enlaces relevantes (papers, blogs, repositorios) en la búsqueda web.

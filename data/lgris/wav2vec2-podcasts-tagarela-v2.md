@@ -87,10 +87,10 @@ Lectura de los datos: el modelo supera al ajuste equivalente sobre XLS-R 300M cu
 
 | Modelo | Parametros | Contexto | TAGARELA v2 (WER) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lgris/wav2vec2-podcasts-tagarela-v2 | 94M | no aplica (ASR) | 14,96 % | Apache 2.0 | HuggingFace |
-| lgris/wav2vec2-xls-r-300m-tagarela-v2 | 300M (aprox.) | no aplica (ASR) | 11,75 % | no disponible | HuggingFace |
-| lgris/wav2vec2-podcasts-tagarela-combined | 94M (aprox.) | no aplica (ASR) | 15,92 % | no disponible | HuggingFace |
-| Edresson/wav2vec2-large-xlsr-coraa-portuguese | 300M (aprox.) | no aplica (ASR) | 27,08 % | no disponible | HuggingFace |
+| lgris/wav2vec2-podcasts-tagarela-v2 | 94M | no aplica (ASR) | 14,96 % | Apache 2.0 | Hugging Face |
+| lgris/wav2vec2-xls-r-300m-tagarela-v2 | 300M (aprox.) | no aplica (ASR) | 11,75 % | no disponible | Hugging Face |
+| lgris/wav2vec2-podcasts-tagarela-combined | 94M (aprox.) | no aplica (ASR) | 15,92 % | no disponible | Hugging Face |
+| Edresson/wav2vec2-large-xlsr-coraa-portuguese | 300M (aprox.) | no aplica (ASR) | 27,08 % | no disponible | Hugging Face |
 
 El compromiso principal es claro: frente a las alternativas de 300M parametros, este modelo pierde en precision absoluta (14,96 % frente a 11,75 % en TAGARELA v2) pero reduce el coste de inferencia y de almacenamiento en un factor aproximado de tres.
 
@@ -108,7 +108,7 @@ El compromiso principal es claro: frente a las alternativas de 300M parametros, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lgris/wav2vec2-podcasts-tagarela-v2
+- Modelo en Hugging Face: https://huggingface.co/lgris/wav2vec2-podcasts-tagarela-v2
 - Modelo base: https://huggingface.co/lgris/w2v_podcasts_base_400k_pt
 - Dataset de ajuste fino TAGARELA v2: https://huggingface.co/datasets/freds0/TAGARELA_v2
 - Version combinada v1+v2: https://huggingface.co/lgris/wav2vec2-podcasts-tagarela-combined

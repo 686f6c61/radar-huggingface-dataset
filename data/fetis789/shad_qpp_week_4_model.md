@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Fetis789/shad_qpp_week_4_model` es un modelo de Transformers publicado en HuggingFace por el usuario Fetis789. La ficha del modelo es una plantilla generada automáticamente y todos sus campos relevantes aparecen como «[More Information Needed]», por lo que no se dispone de información sobre arquitectura, número de parámetros, contexto o idiomas. El nombre del repositorio sugiere un proyecto de curso de la semana 4 («week_4»), pero esta hipótesis no está respaldada por ninguna documentación.
+El modelo `Fetis789/shad_qpp_week_4_model` es un modelo de Transformers publicado en Hugging Face por el usuario Fetis789. La ficha del modelo es una plantilla generada automáticamente y todos sus campos relevantes aparecen como «[More Information Needed]», por lo que no se dispone de información sobre arquitectura, número de parámetros, contexto o idiomas. El nombre del repositorio sugiere un proyecto de curso de la semana 4 («week_4»), pero esta hipótesis no está respaldada por ninguna documentación.
 
-El repositorio incluye las etiquetas `transformers` y `endpoints_compatible`, lo que indica compatibilidad con la librería Transformers y con los Inference Endpoints de HuggingFace. La etiqueta `arxiv:1910.09700` hace referencia al artículo de Lacoste et al. (2019), citado en la plantilla de la sección de impacto ambiental; no implica que el modelo se base en ese trabajo. En el momento de la consulta, el modelo registra 0 descargas y 0 «me gusta».
+El repositorio incluye las etiquetas `transformers` y `endpoints_compatible`, lo que indica compatibilidad con la librería Transformers y con los Inference Endpoints de Hugging Face. La etiqueta `arxiv:1910.09700` hace referencia al artículo de Lacoste et al. (2019), citado en la plantilla de la sección de impacto ambiental; no implica que el modelo se base en ese trabajo. En el momento de la consulta, el modelo registra 0 descargas y 0 «me gusta».
 
 La ausencia completa de especificaciones técnicas hace imposible determinar qué hace el modelo, cómo se entrenó o para qué tareas resulta adecuado. Cualquier uso práctico requeriría primero una evaluación manual de los pesos, ya que no hay documentación fiable.
 
@@ -61,7 +61,7 @@ Sin datos de arquitectura ni tamaño, no es posible estimar los requisitos de ej
 - VRAM estimada para inferencia: no disponible.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPUs de consumidor: no disponible.
-- Opciones de despliegue: no disponible; la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, pero no se conocen configuraciones concretas.
+- Opciones de despliegue: no disponible; la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, pero no se conocen configuraciones concretas.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -78,6 +78,6 @@ No se puede elaborar una comparativa fiable al desconocerse la arquitectura, el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fetis789/shad_qpp_week_4_model
+- Hugging Face: https://huggingface.co/Fetis789/shad_qpp_week_4_model
 - Artículo citado en la plantilla de impacto ambiental (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Blog con posible relación no confirmada (contiene «shad» en el nombre, pero no documenta este modelo): https://cloudwithshad.github.io/cloudwithshad-bootcamp-may2026/week-04-ai-capstone/lab-7-doc-analyzer/Week4_Lab7_Smart_Doc_Analyzer.html

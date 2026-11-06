@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolVLA green-marker (n=62, v4.1) es un modelo de política visuomotora (vision-language-action, VLA) especializado en una única tarea robótica: colocar una caja verde sobre un marcador. Lo desarrolla el usuario `zchn` y se distribuye bajo licencia Apache 2.0 a través de HuggingFace, empaquetado con la librería LeRobot. No es un modelo de lenguaje generalista, sino un checkpoint de control entrenado para el brazo robótico SO-101.
+SmolVLA green-marker (n=62, v4.1) es un modelo de política visuomotora (vision-language-action, VLA) especializado en una única tarea robótica: colocar una caja verde sobre un marcador. Lo desarrolla el usuario `zchn` y se distribuye bajo licencia Apache 2.0 a través de Hugging Face, empaquetado con la librería LeRobot. No es un modelo de lenguaje generalista, sino un checkpoint de control entrenado para el brazo robótico SO-101.
 
 El modelo parte de un warm-start sobre `zchn/smolvla_green_marker_n50_v4` (checkpoint local n50 `005000`) y se afina durante 5000 pasos sobre el dataset `zchn/robo_test_green_marker_v0` en su versión v4.1, compuesto por 62 episodios y 78 137 fotogramas. La pérdida final de entrenamiento reportada es de 0,105. El entrenamiento se realizó en dispositivo MPS con `num_workers=0`.
 
@@ -80,7 +80,7 @@ No disponible. La información proporcionada no incluye otros checkpoints SmolVL
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zchn/smolvla_green_marker_n62_v41
+- Modelo en Hugging Face: https://huggingface.co/zchn/smolvla_green_marker_n62_v41
 - Modelo base: https://huggingface.co/zchn/smolvla_green_marker_n50_v4
 - Dataset: https://huggingface.co/datasets/zchn/robo_test_green_marker_v0
 - LeRobot (librería): no se proporciona enlace en la información disponible

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Abuudiii/taxi` no es un modelo de lenguaje: es un agente de reinforcement learning tabular entrenado con Q-learning sobre el entorno `Taxi-v3` de Gymnasium y publicado en HuggingFace por el usuario Abuudiii el 25 de octubre de 2026. El repositorio contiene un único artefacto serializado en pickle (`q-learning.pkl`) que se carga con `load_from_hub` y se evalúa contra el entorno original. No hay pesos en safetensors, no hay tokenizador, no hay ventana de contexto y no hay arquitectura transformer: la política es una tabla de valores Q indexada por estado y accion.
+`Abuudiii/taxi` no es un modelo de lenguaje: es un agente de reinforcement learning tabular entrenado con Q-learning sobre el entorno `Taxi-v3` de Gymnasium y publicado en Hugging Face por el usuario Abuudiii el 25 de octubre de 2026. El repositorio contiene un único artefacto serializado en pickle (`q-learning.pkl`) que se carga con `load_from_hub` y se evalúa contra el entorno original. No hay pesos en safetensors, no hay tokenizador, no hay ventana de contexto y no hay arquitectura transformer: la política es una tabla de valores Q indexada por estado y accion.
 
-El problema que resuelve es el clásico problema del taxi: un agente debe recoger a un pasajero en una de cuatro ubicaciones y dejarlo en su destino dentro de una cuadricula de 5x5, con recompensa de -1 por paso, +20 por entrega correcta y -10 por acciones ilegales. El autor declara una recompensa media de 7,52 ± 2,73 sobre `Taxi-v3`, una cifra que no está verificada por HuggingFace y que no va acompañada de hiperparámetros, semillas ni curva de aprendizaje.
+El problema que resuelve es el clásico problema del taxi: un agente debe recoger a un pasajero en una de cuatro ubicaciones y dejarlo en su destino dentro de una cuadricula de 5x5, con recompensa de -1 por paso, +20 por entrega correcta y -10 por acciones ilegales. El autor declara una recompensa media de 7,52 ± 2,73 sobre `Taxi-v3`, una cifra que no está verificada por Hugging Face y que no va acompañada de hiperparámetros, semillas ni curva de aprendizaje.
 
 Su relevancia es limitada y fundamentalmente didáctica: sirve como ejemplo mínimo de cómo se publica un agente de RL en el Hub y como baseline reproducible para prácticas de Q-learning. Con 0 descargas y 0 likes en el momento del análisis, y sin licencia declarada, no es un artefacto apto para producción ni para uso comercial sin aclarar previamente los términos legales.
 
@@ -49,14 +49,14 @@ Tampoco se documenta la composicion del dataset de entrenamiento, ya que no exis
 - Docencia de reinforcement learning: el par `Taxi-v3` + Q-learning tabular es el ejemplo canonico para explicar la ecuacion de Bellman y la actualizacion TD(0); este checkpoint permite a los alumnos cargar una tabla ya entrenada y compararla con la suya sin esperar al entrenamiento.
 - Baseline en experimentos de RL: sirve como referencia inferior frente a metodos con aproximacion funcional (DQN, PPO) en el mismo entorno, siempre que se documente la semilla y el numero de episodios, dato que aqui falta.
 - Pruebas de integracion de pipelines de evaluacion: util para validar que un script de `evaluate` o un runner interno es capaz de descargar un artefacto del Hub, deserializarlo y ejecutar `gym.make` con el `env_id` correcto.
-- Verificacion de herramientas de serializacion: permite comprobar el comportamiento de `load_from_hub` y de las utilidades de carga de pickles del ecosistema HuggingFace en entornos controlados.
+- Verificacion de herramientas de serializacion: permite comprobar el comportamiento de `load_from_hub` y de las utilidades de carga de pickles del ecosistema Hugging Face en entornos controlados.
 - Demostracion de agentes en notebooks y tutoriales: al ocupar menos de 0,1 GB y ejecutarse en CPU, se puede incluir en un notebook introductorio sin dependencias de GPU.
 - Reproduccion de resultados docentes: si se conoce el entorno y la politica es determinista, el agente se puede ejecutar de forma repetida para ilustrar la varianza entre episodios (declarada como ± 2,73).
 - No es adecuado para atencion al cliente, generacion de codigo, analisis documental ni ninguna tarea de lenguaje: el artefacto no contiene un modelo de lenguaje.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en el `model-index` de la model card (metrica no verificada por HuggingFace):
+Datos declarados por el autor en el `model-index` de la model card (metrica no verificada por Hugging Face):
 
 | Benchmark | Dataset | Metrica | Valor | Verificado |
 |---|---|---|---|---|
@@ -102,6 +102,6 @@ No se dispone de artefactos comparables identificados en la informacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abuudiii/taxi
+- Modelo en Hugging Face: https://huggingface.co/Abuudiii/taxi
 - Documentacion del entorno Taxi-v3 de Gymnasium (referencia externa, no incluida en los resultados de busqueda proporcionados): https://gymnasium.farama.org/environments/toy_text/taxi/
 - Paper, blog, repositorio de codigo o demo: no disponible. Los resultados de busqueda web proporcionados no contienen ninguna referencia relevante al modelo (devuelven unicamente paginas de un servicio de credito al consumo, sin relacion con el artefacto).

@@ -4,7 +4,7 @@
 
 FengWu-W2S (FengWu Weather-to-Subseasonal) es un modelo de aprendizaje profundo para pronóstico meteorológico global de subestacional, desarrollado por OneScience-Group. Extiende el modelo FengWu y está diseñado para realizar predicciones autoregresivas de hasta 42 días con un paso de tiempo de seis horas, acoplando ramas atmosféricas, oceánicas y terrestres, además de incorporar perturbaciones de diversidad para mejorar la habilidad de pronóstico en rangos extendidos.
 
-El modelo se basa en la metodología descrita en el artículo "FengWu-W2S: A deep learning model for seamless weather-to-subseasonal forecast of global atmosphere" (arXiv:2411.10191). Este repositorio en HuggingFace contiene una implementación compacta de las interfaces acopladas para reproducir el flujo de trabajo, aunque se indica explícitamente que es una reproducción independiente del método del paper y no representa el código, pesos ni resultados oficiales de los autores.
+El modelo se basa en la metodología descrita en el artículo "FengWu-W2S: A deep learning model for seamless weather-to-subseasonal forecast of global atmosphere" (arXiv:2411.10191). Este repositorio en Hugging Face contiene una implementación compacta de las interfaces acopladas para reproducir el flujo de trabajo, aunque se indica explícitamente que es una reproducción independiente del método del paper y no representa el código, pesos ni resultados oficiales de los autores.
 
 La relevancia actual radica en la necesidad de mejorar los pronósticos meteorológicos a escalas de tiempo subestacionales (más allá de los 10-15 días), donde los modelos numéricos tradicionales pierden precisión. Este modelo propone un enfoque de acoplamiento atmósfera-océano-tierra con aprendizaje profundo, ofreciendo una implementación reproducible para investigación y validación. No se especifican en la información disponible el tamaño de parámetros, la arquitectura interna detallada ni los resultados de benchmarks.
 
@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/FengWu-W2S
+- Hugging Face: https://huggingface.co/OneScience-Group/FengWu-W2S
 - Paper: https://arxiv.org/abs/2411.10191
 - Repositorio principal OneScience (GitHub): https://github.com/onescience-ai/OneScience
 - Repositorio de habilidades OneScience (GitHub): https://github.com/onescience-ai/oneskills

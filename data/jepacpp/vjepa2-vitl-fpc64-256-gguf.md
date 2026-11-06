@@ -85,7 +85,7 @@ No se dispone de datos comparativos con otros modelos de extracción de caracter
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión GGUF: https://huggingface.co/jepacpp/vjepa2-vitl-fpc64-256-GGUF
+- Repositorio Hugging Face de la conversión GGUF: https://huggingface.co/jepacpp/vjepa2-vitl-fpc64-256-GGUF
 - Modelo base original: https://huggingface.co/facebook/vjepa2-vitl-fpc64-256
 - Repositorio oficial de V-JEPA 2 (PyTorch): https://github.com/facebookresearch/vjepa2
 - Repositorio de jepa.cpp: https://github.com/aselimc/jepa.cpp

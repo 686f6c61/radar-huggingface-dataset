@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|---|
 | LFM3-VL-2B-MLX-6bit | 1,92 B | Sí (visión-lenguaje) | 6-bit afín (grupos de 64) | safetensors (MLX) | lfm1.0 (other) |
 | Qwen2.5-VL-3B-Instruct | 3 B | Sí (visión-lenguaje) | Varias (comunidad) | safetensors, GGUF | Apache 2.0 |
-| SmolVLM-Instruct (HuggingFace) | 2,25 B | Sí (visión-lenguaje) | Varias (comunidad) | safetensors | Apache 2.0 |
+| SmolVLM-Instruct (Hugging Face) | 2,25 B | Sí (visión-lenguaje) | Varias (comunidad) | safetensors | Apache 2.0 |
 | PaliGemma-3B (Google) | 3 B | Sí (visión-lenguaje) | no disponible | safetensors | licencia propia de Google (gemma) |
 
 Nota: la comparativa se ofrece a título orientativo entre modelos multimodales de tamaño similar; los datos de rendimiento comparado no están disponibles en la información proporcionada.

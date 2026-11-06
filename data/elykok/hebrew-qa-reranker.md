@@ -32,7 +32,7 @@ El fine-tuning se realizó sobre las preguntas respondibles del dataset HeQ, con
 - Puntuación de relevancia pregunta-párrafo en hebreo mediante cross-encoder.
 - Reranking de listas de candidatos recuperados por un retriever de primera etapa (BM25, embeddings o híbrido).
 - Integración nativa con `sentence_transformers.CrossEncoder` y con `text-embeddings-inference`.
-- Compatibilidad con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad con endpoints de Hugging Face (tag `endpoints_compatible`).
 - Uso como segunda etapa en pipelines RAG y motores de búsqueda.
 - No soporta tool calling, agentes, visión, audio ni modos de razonamiento extendido: es un modelo discriminativo de ranking, no generativo.
 - Capacidad multilingüe limitada: aunque el modelo base es multilingüe, el fine-tuning se ha orientado exclusivamente a hebreo.
@@ -68,15 +68,15 @@ La mejora más significativa se observa en R@1 (+2,3 puntos sobre el reranker ba
 - En cuantización de 8 bits, los pesos ocupan aproximadamente 0,6 GB; en 4 bits, unos 0,3 GB, con la consiguiente pérdida de precisión.
 - GPU recomendadas para producción con alto throughput: A100, H100 o L40S para lotes grandes; T4 o RTX 4090 son suficientes para cargas moderadas.
 - Cabe en GPUs de consumo: RTX 3060 (12 GB), RTX 4060, RTX 4090 y similares, incluso con lotes amplios.
-- Opciones de despliegue: `sentence-transformers` (CrossEncoder), HuggingFace Text Embeddings Inference (TEI), endpoints de HuggingFace, y servidores propios con ONNX Runtime o TorchScript.
+- Opciones de despliegue: `sentence-transformers` (CrossEncoder), Hugging Face Text Embeddings Inference (TEI), endpoints de Hugging Face, y servidores propios con ONNX Runtime o TorchScript.
 - Latencia y throughput: no disponibles en la información proporcionada. Al ser un cross-encoder, el coste escala linealmente con el número de pares pregunta-párrafo a puntuar, por lo que el reranking del top 20 implica 20 inferencias por consulta.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ElyKok/hebrew-qa-reranker | 567,7 M | No disponible | Cross-encoder especializado en hebreo | Apache 2.0 | HuggingFace |
-| BAAI/bge-reranker-v2-m3 | No disponible | No disponible | Cross-encoder multilingüe (modelo base) | No disponible en la información | HuggingFace |
+| ElyKok/hebrew-qa-reranker | 567,7 M | No disponible | Cross-encoder especializado en hebreo | Apache 2.0 | Hugging Face |
+| BAAI/bge-reranker-v2-m3 | No disponible | No disponible | Cross-encoder multilingüe (modelo base) | No disponible en la información | Hugging Face |
 | Híbrido BM25 + e5-large (sin reranker) | No aplica | No aplica | Recuperación de primera etapa | No disponible | Pipeline propio |
 
 El modelo base bge-reranker-v2-m3 es la referencia directa: este fine-tuning mejora su R@1 en 2,3 puntos sobre la primera etapa sin entrenar y en 2,2 puntos sobre la primera etapa fine-tuned, con mejoras menores en MRR@10 y NDCG@10. No se dispone de datos de otros rerankers específicos para hebreo en la información proporcionada.
@@ -94,6 +94,6 @@ El modelo base bge-reranker-v2-m3 es la referencia directa: este fine-tuning mej
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ElyKok/hebrew-qa-reranker
+- Modelo en Hugging Face: https://huggingface.co/ElyKok/hebrew-qa-reranker
 - Modelo base: https://huggingface.co/BAAI/bge-reranker-v2-m3
 - Dataset HeQ: https://github.com/NNLP-IL/Hebrew-Question-Answering-Dataset

@@ -92,6 +92,6 @@ La comparativa muestra el trade-off: LoRA corrige más errores (83,3 %) pero des
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/eulogik/Prajna-CRNv2
+- Repositorio de Hugging Face: https://huggingface.co/eulogik/Prajna-CRNv2
 - Repositorio de código y paper (GitHub): https://github.com/eulogik/prajna
 - Imágenes comparativas (assets del repositorio): https://raw.githubusercontent.com/eulogik/prajna/main/assets/crnv2-correction.png y https://raw.githubusercontent.com/eulogik/prajna/main/assets/crnv2-capability.png

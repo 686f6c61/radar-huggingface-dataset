@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SatellaSTT-27M es un modelo de reconocimiento automático del habla (ASR) en inglés de 27,1 millones de parámetros, desarrollado por el usuario EphAsad y publicado en HuggingFace bajo licencia MIT. Se trata de un ajuste fino (fine-tuning) del modelo `UsefulSensors/moonshine-tiny`, que a su vez deriva de la familia Moonshine de Moonshine AI, una arquitectura de encoder-decoder optimizada para ASR de baja latencia en dispositivos con recursos limitados.
+SatellaSTT-27M es un modelo de reconocimiento automático del habla (ASR) en inglés de 27,1 millones de parámetros, desarrollado por el usuario EphAsad y publicado en Hugging Face bajo licencia MIT. Se trata de un ajuste fino (fine-tuning) del modelo `UsefulSensors/moonshine-tiny`, que a su vez deriva de la familia Moonshine de Moonshine AI, una arquitectura de encoder-decoder optimizada para ASR de baja latencia en dispositivos con recursos limitados.
 
 El problema que aborda es concreto: los modelos ASR generalistas verbalizan la notación científica en lugar de transcribirla de forma útil. Un modelo base tiende a producir "50 microliters" o "10 to the minus 2" cuando el usuario necesita "50 µL" o "10^-2". SatellaSTT-27M corrige este comportamiento mediante un ajuste fino sobre 19,6 horas de audio científico sintético combinado con 20 horas de LibriSpeech como replay general, logrando reducir el WER científico del 26,78 % al 9,64 % a costa de un leve deterioro en inglés general.
 
@@ -78,10 +78,10 @@ Los resultados son mediciones en Colab y dependen del hardware. No se han public
 
 | Modelo | Parámetros | Contexto/entrada | WER LibriSpeech | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| SatellaSTT-27M | 27,1 M | audio 16 kHz, clips de segundos | 6,913 % (test-clean) | MIT | HuggingFace |
-| Moonshine tiny (base) | ~27 M | audio 16 kHz | 4,995 % (test-clean) | MIT (según modelo base) | HuggingFace |
-| Whisper tiny | 39 M | audio 16 kHz, ventana de 30 s | no disponible en esta ficha | MIT | HuggingFace / OpenAI |
-| Whisper base | 74 M | audio 16 kHz, ventana de 30 s | no disponible en esta ficha | MIT | HuggingFace / OpenAI |
+| SatellaSTT-27M | 27,1 M | audio 16 kHz, clips de segundos | 6,913 % (test-clean) | MIT | Hugging Face |
+| Moonshine tiny (base) | ~27 M | audio 16 kHz | 4,995 % (test-clean) | MIT (según modelo base) | Hugging Face |
+| Whisper tiny | 39 M | audio 16 kHz, ventana de 30 s | no disponible en esta ficha | MIT | Hugging Face / OpenAI |
+| Whisper base | 74 M | audio 16 kHz, ventana de 30 s | no disponible en esta ficha | MIT | Hugging Face / OpenAI |
 
 La comparación directa más relevante es con su modelo base: SatellaSTT-27M sacrifica 1,917 puntos de WER general para ganar 17,145 puntos en WER científico y 27,404 puntos en recall de términos de dominio. Frente a Whisper tiny o base, la ventaja es el tamaño reducido y la especialización científica; la desventaja es que no se han publicado comparaciones directas de WER entre ambos en esta información.
 
@@ -99,8 +99,8 @@ La comparación directa más relevante es con su modelo base: SatellaSTT-27M sac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EphAsad/SatellaSTT-27M
-- Modelo base en HuggingFace: https://huggingface.co/UsefulSensors/moonshine-tiny
+- Modelo en Hugging Face: https://huggingface.co/EphAsad/SatellaSTT-27M
+- Modelo base en Hugging Face: https://huggingface.co/UsefulSensors/moonshine-tiny
 - Dataset científico: https://huggingface.co/datasets/EphAsad/STT-Science
 - Dataset LibriSpeech ASR: https://huggingface.co/datasets/openslr/librispeech_asr
 - Repositorio Moonshine AI: no disponible en la información proporcionada

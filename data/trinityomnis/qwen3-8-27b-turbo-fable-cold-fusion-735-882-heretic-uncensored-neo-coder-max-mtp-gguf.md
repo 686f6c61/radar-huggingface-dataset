@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Longitud de contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF | 26.895.998.464 | No disponible | No publicado | Apache 2.0 | Repositorio HuggingFace |
+| Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF | 26.895.998.464 | No disponible | No publicado | Apache 2.0 | Repositorio Hugging Face |
 | Qwen3.6-35B-A3B | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Qwen 3.6 27B | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Qwen 3.5 27B | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -83,6 +83,6 @@ El autor afirma que este modelo supera a los modelos listados en siete benchmark
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/trinityomnis/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/trinityomnis/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Repositorio relacionado mencionado por el autor: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF

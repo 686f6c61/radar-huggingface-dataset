@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bbrooklyn/td5-ner-person-content` es un clasificador de tokens (token classification) publicado en HuggingFace Hub por el usuario `bbrooklyn`. Por el tag `distilbert` y por su recuento de parametros (65.193.219), se trata de un encoder transformer de la familia DistilBERT afinado para reconocimiento de entidades nombradas (NER), presumiblemente orientado a la deteccion de entidades de tipo persona en contenido textual, a juzgar por el sufijo `ner-person-content` de su identificador.
+El modelo `bbrooklyn/td5-ner-person-content` es un clasificador de tokens (token classification) publicado en Hugging Face Hub por el usuario `bbrooklyn`. Por el tag `distilbert` y por su recuento de parametros (65.193.219), se trata de un encoder transformer de la familia DistilBERT afinado para reconocimiento de entidades nombradas (NER), presumiblemente orientado a la deteccion de entidades de tipo persona en contenido textual, a juzgar por el sufijo `ner-person-content` de su identificador.
 
 El modelo resuelve la tarea clasica de NER: dada una secuencia de texto, asignar a cada token una etiqueta de entidad (por ejemplo, B-PER, I-PER, O, u otras segun el esquema BIO empleado en el ajuste). Su interes practico reside en que es un modelo pequeno (unos 65 millones de parametros, ~0,3 GB de repositorio) y por tanto apto para inferencia en CPU y en GPU de gama baja, con un coste de despliegue muy reducido.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con >= 2-4 GB de memoria es suficiente (por ejemplo, GTX 1650, RTX 3060, T4). No se requiere A100 ni H100 para inferencia.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna e incluso en iGPU con suficiente memoria compartida.
 - CPU: totalmente viable en CPU para cargas moderadas, dado el reducido tamano del modelo.
-- Opciones de despliegue: al ser un modelo `transformers` con pesos safetensors, es compatible con HuggingFace `transformers` en Python, con `text-embeddings-inference`/endpoints gestionados (tag `endpoints_compatible`) y con servidores de inferencia que soporten safetensors. No se declara publicacion de pesos en GGUF, por lo que su uso en `llama.cpp` u `Ollama` no esta garantizado sin conversion previa.
+- Opciones de despliegue: al ser un modelo `transformers` con pesos safetensors, es compatible con Hugging Face `transformers` en Python, con `text-embeddings-inference`/endpoints gestionados (tag `endpoints_compatible`) y con servidores de inferencia que soporten safetensors. No se declara publicacion de pesos en GGUF, por lo que su uso en `llama.cpp` u `Ollama` no esta garantizado sin conversion previa.
 - Latencia y throughput estimados: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -72,9 +72,9 @@ No se dispone de datos de evaluacion del modelo, lo que impide una comparacion c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bbrooklyn/td5-ner-person-content | 65,2 M | no disponible | no disponible | HuggingFace Hub (0 descargas) |
-| dslim/bert-base-NER | ~110 M | 512 tokens | MIT (segun su model card) | HuggingFace Hub |
-| Davlan/distilbert-base-multilingual-cased-ner-hrl | ~135 M | 512 tokens | AFL-3.0 (segun su model card) | HuggingFace Hub |
+| bbrooklyn/td5-ner-person-content | 65,2 M | no disponible | no disponible | Hugging Face Hub (0 descargas) |
+| dslim/bert-base-NER | ~110 M | 512 tokens | MIT (segun su model card) | Hugging Face Hub |
+| Davlan/distilbert-base-multilingual-cased-ner-hrl | ~135 M | 512 tokens | AFL-3.0 (segun su model card) | Hugging Face Hub |
 
 Nota: los datos de los modelos comparativos corresponden a sus fichas publicas conocidas y pueden variar; no se dispone de comparacion de rendimiento con `td5-ner-person-content` porque este no publica metricas.
 
@@ -90,7 +90,7 @@ Nota: los datos de los modelos comparativos corresponden a sus fichas publicas c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bbrooklyn/td5-ner-person-content
+- Modelo en Hugging Face: https://huggingface.co/bbrooklyn/td5-ner-person-content
 - Referencia citada en los tags (calculo de impacto, plantilla estandar): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML citada en la model card: https://mlco2.github.io/impact#compute
 - Repositorio o paper especifico del modelo: no disponible

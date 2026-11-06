@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `rafaelmrm/knowledge-distillation-ablation49` no es un modelo de lenguaje entrenado ni un checkpoint desplegable, sino un cuaderno de investigación (research note) sobre destilación de conocimiento, publicado en HuggingFace bajo licencia CC-BY-4.0 por el usuario rafaelmrm. El propio autor lo declara explícitamente en la model card: "It is not presented as a completed paper or a release of trained models" y "It does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint". El artefacto principal es un fichero de texto (`reading.md`) que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación.
+El repositorio `rafaelmrm/knowledge-distillation-ablation49` no es un modelo de lenguaje entrenado ni un checkpoint desplegable, sino un cuaderno de investigación (research note) sobre destilación de conocimiento, publicado en Hugging Face bajo licencia CC-BY-4.0 por el usuario rafaelmrm. El propio autor lo declara explícitamente en la model card: "It is not presented as a completed paper or a release of trained models" y "It does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint". El artefacto principal es un fichero de texto (`reading.md`) que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación.
 
 El repositorio incluye un fichero safetensors con 33.088 parámetros totales, una cifra que no corresponde a ningún transformer funcional (los modelos más pequeños de uso común en NLP parten de decenas de millones de parámetros). El peso real del repositorio es de 0.0 GB. La etiqueta `transformer` figura entre los tags del repositorio, pero no hay ninguna especificación de arquitectura, configuración, tokenizador o pipeline asociada que permita confirmarla.
 
@@ -87,5 +87,5 @@ No disponible. Este repositorio no es un modelo, por lo que no existe una catego
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rafaelmrm/knowledge-distillation-ablation49
+- Repositorio en Hugging Face: https://huggingface.co/rafaelmrm/knowledge-distillation-ablation49
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios de código o demos) en la información disponible.

@@ -22,19 +22,19 @@ La relevancia de esta ficha es limitada pero práctica: permite saber qué se pu
 | Formato de pesos | GGUF (repositorio de cuantizaciones); el modelo base se distribuye presumiblemente en safetensors, aunque no se confirma en la información disponible |
 | Versión de cuantización | quantize_version 2, output_tensor_quantised 1, convert_type hf |
 | Tamaño del repositorio | 21,4 GB |
-| Fecha de creación | 2026-09-16 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-09-16 (según metadatos de Hugging Face) |
 | Última actualización | 2026-09-16 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base en la documentación proporcionada. La model card del repositorio se limita a indicar que se trata de cuantizaciones estáticas del modelo OrionLLM/GRM-3.2-Sky y a declarar los metadatos del proceso de conversión: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`. Esto implica que los pesos originales estaban en formato HuggingFace (presumiblemente safetensors) y que se aplicó una cuantización de tipo estático, es decir, con escalas calculadas a partir de los pesos y no de forma dinámica en tiempo de ejecución.
+No se dispone de información sobre la arquitectura del modelo base en la documentación proporcionada. La model card del repositorio se limita a indicar que se trata de cuantizaciones estáticas del modelo OrionLLM/GRM-3.2-Sky y a declarar los metadatos del proceso de conversión: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`. Esto implica que los pesos originales estaban en formato Hugging Face (presumiblemente safetensors) y que se aplicó una cuantización de tipo estático, es decir, con escalas calculadas a partir de los pesos y no de forma dinámica en tiempo de ejecución.
 
 Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF, DPO u otras técnicas de alineamiento, ni sobre innovaciones arquitectónicas como atención lineal, decodificación especulativa o mezclas de expertos. La etiqueta conversational del repositorio apunta a un modelo ajustado para diálogo, pero es la única señal disponible y no viene acompañada de detalles técnicos. Cualquier afirmación adicional sobre el entrenamiento sería especulativa.
 
 ## Capacidades
 
 - Generación de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo está orientado a diálogo, aunque no se detallan las capacidades concretas.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse a través de endpoints compatibles con la API de HuggingFace o similares.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse a través de endpoints compatibles con la API de Hugging Face o similares.
 - Inferencia local en formatos GGUF: al estar cuantizado, es utilizable con runtimes de CPU y GPU de consumo.
 - Razonamiento, código, matemáticas, visión, audio: no disponible; no hay información que confirme ni descarte estas capacidades.
 - Tool calling / function calling: no disponible.
@@ -100,6 +100,6 @@ No disponible. La información proporcionada no incluye modelos comparables, ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/GRM-3.2-Sky-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/GRM-3.2-Sky-GGUF
 - Modelo base: https://huggingface.co/OrionLLM/GRM-3.2-Sky
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes; las consultas devolvieron resultados no relacionados con el modelo (preguntas de Stack Overflow sobre Git, operadores en C y puntuación en inglés).

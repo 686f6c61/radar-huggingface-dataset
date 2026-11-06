@@ -74,7 +74,7 @@ La comparación directa no es trivial porque GenAgent añade una capa de herrami
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fengyao123/GenAgent
+- Repositorio Hugging Face: https://huggingface.co/fengyao123/GenAgent
 - Paper relacionado (GenAgent: Build Collaborative AI Systems with Automated Workflow): https://arxiv.org/pdf/2409.01392v1
 - Paper reciente (GenAgent: Scaling Text-to-Image Generation via Agentic): https://arxiv.org/abs/2601.18543
 - Perfil del autor: https://huggingface.co/fengyao123

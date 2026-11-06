@@ -133,8 +133,8 @@ No hay datos en la informacion proporcionada para comparar con otros clasificado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlexCode2003/turanassist-intent-e5
+- Modelo en Hugging Face: https://huggingface.co/AlexCode2003/turanassist-intent-e5
 - Repositorio del proyecto (codigo y datos): https://github.com/AlexTrav/TuranAssist
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 
-Las busquedas web realizadas no han devuelto ningun resultado relevante sobre este modelo: los enlaces encontrados no guardan relacion con el proyecto TuranAssist ni con clasificacion de intenciones, por lo que no se incluyen. No se han localizado papers, blogs tecnicos, demos ni espacios de HuggingFace asociados.
+Las busquedas web realizadas no han devuelto ningun resultado relevante sobre este modelo: los enlaces encontrados no guardan relacion con el proyecto TuranAssist ni con clasificacion de intenciones, por lo que no se incluyen. No se han localizado papers, blogs tecnicos, demos ni espacios de Hugging Face asociados.

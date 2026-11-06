@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks de los modelos alternativos en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lipik/parakeet-unified-en-0.6b-gguf
+- Modelo en Hugging Face: https://huggingface.co/lipik/parakeet-unified-en-0.6b-gguf
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/parakeet-unified-en-0.6b
 - Commit del modelo base: https://huggingface.co/nvidia/parakeet-unified-en-0.6b/commit/d4ac992
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

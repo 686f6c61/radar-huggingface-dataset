@@ -70,8 +70,8 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TontonTremblay/doper2-handal-obj000023
+- Modelo en Hugging Face: https://huggingface.co/TontonTremblay/doper2-handal-obj000023
 - Dataset de resultados (evaluaciones): https://huggingface.co/datasets/TontonTremblay/doper2-handal-results
 - Dataset DOPER_BOP: https://huggingface.co/datasets/TontonTremblay/DOPER_BOP
-- Perfil del autor en HuggingFace: https://huggingface.co/TontonTremblay
+- Perfil del autor en Hugging Face: https://huggingface.co/TontonTremblay
 - Perfil del autor en GitHub: https://github.com/TontonTremblay

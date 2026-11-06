@@ -67,5 +67,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max-opusnode.h022.stage3-recovery-alpha-retention-64k-serve.step_150
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max-opusnode.h022.stage3-recovery-alpha-retention-64k-serve.step_150
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (referencia, no se ha verificado su existencia)

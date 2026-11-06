@@ -77,9 +77,9 @@ No se dispone de especificaciones publicadas de alternativas directas. Los unico
 
 | Modelo | Familia | Iteracion | Modificador de tarea / plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dreamdifferent/vam-cross-level2-panda-widowx-widowx-texture-video-lora-iter200` (este modelo) | MimicVideo Video2World LoRA | 200 | Panda + WidowX, textura, dos camaras | no disponible | publico en HuggingFace, 0 descargas |
-| `dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-video-lora-iter200` | MimicVideo Video2World LoRA | 200 | Panda con gripper Robotiq, textura | no disponible | publico en HuggingFace |
-| `dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter400` | MimicVideo Video2World LoRA | 400 | Incluye UR5e y contacto v2 | no disponible | publico en HuggingFace |
+| `dreamdifferent/vam-cross-level2-panda-widowx-widowx-texture-video-lora-iter200` (este modelo) | MimicVideo Video2World LoRA | 200 | Panda + WidowX, textura, dos camaras | no disponible | publico en Hugging Face, 0 descargas |
+| `dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-video-lora-iter200` | MimicVideo Video2World LoRA | 200 | Panda con gripper Robotiq, textura | no disponible | publico en Hugging Face |
+| `dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter400` | MimicVideo Video2World LoRA | 400 | Incluye UR5e y contacto v2 | no disponible | publico en Hugging Face |
 | Alternativas de terceros (otros world models de robotica) | no disponible | no disponible | no disponible | no disponible | no se identificaron en la busqueda |
 
 No se han encontrado en la informacion disponible parametros, contextos, rendimiento ni licencias de estos repositorios hermanos, por lo que la comparacion cuantitativa no es posible.
@@ -99,7 +99,7 @@ No se han encontrado en la informacion disponible parametros, contextos, rendimi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level2-panda-widowx-widowx-texture-video-lora-iter200
+- Modelo en Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level2-panda-widowx-widowx-texture-video-lora-iter200
 - Backbone requerido: https://huggingface.co/dreamdifferent/widowx250-video-fused (revision `f0cea76b62c5dd66b06b9f965932ddea32a7b546`)
 - Bundle de checkpoints de MimicVideo: https://huggingface.co/jonpai/mimic-video (commit `f28339034831e3c2374be075e622e1ff38ebe0f8`)
 - Dataset de entrenamiento (no incluido): https://huggingface.co/datasets/dreamdifferent/vam-cross-level2-panda-widowx-widowx-texture (revision `994be7f8952807008c316db7943ec732bf70b978`)

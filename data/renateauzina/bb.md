@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RenateAuzina/bb es un repositorio de modelo alojado en HuggingFace por el usuario RenateAuzina, publicado y actualizado el 16 de septiembre de 2026. En el momento de redactar esta ficha, la model card asociada contiene unicamente el campo de licencia (artistic-2.0) y ningun otro contenido: no hay descripcion del modelo, ni arquitectura declarada, ni datos de entrenamiento, ni instrucciones de uso. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline declarado.
+RenateAuzina/bb es un repositorio de modelo alojado en Hugging Face por el usuario RenateAuzina, publicado y actualizado el 16 de septiembre de 2026. En el momento de redactar esta ficha, la model card asociada contiene unicamente el campo de licencia (artistic-2.0) y ningun otro contenido: no hay descripcion del modelo, ni arquitectura declarada, ni datos de entrenamiento, ni instrucciones de uso. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline declarado.
 
 Esto significa que no es posible determinar que problema resuelve, a que categoria pertenece (lenguaje, vision, audio, multimodal) ni cuales son sus dimensiones o su ventana de contexto. El unico metadato tecnico verificable es la licencia Artistic License 2.0, una licencia permisiva compatible con uso comercial, y la etiqueta de region "us".
 
@@ -50,7 +50,7 @@ No se puede recomendar ningun caso de uso real sin conocer el tipo de modelo, el
 - Evaluacion comparativa de licencias: el modelo puede servir como caso de estudio de publicaciones con licencia permisiva pero sin documentacion tecnica asociada.
 - Educacion y formacion: ilustrar en un aula o un articulo por que una model card incompleta impide la reproducibilidad y la evaluacion.
 - Auditoria de licencias: analizar como se aplica la Artistic License 2.0 a artefactos de machine learning, dado que fue disenada para software y su encaje con pesos de modelos es discutible.
-- Investigacion sobre procedencia de modelos: estudiar patrones de publicaciones anonimas o vacias en HuggingFace y su impacto en la trazabilidad de la cadena de suministro de IA.
+- Investigacion sobre procedencia de modelos: estudiar patrones de publicaciones anonimas o vacias en Hugging Face y su impacto en la trazabilidad de la cadena de suministro de IA.
 
 En todos los casos, el uso requiere primero descargar e inspeccionar el repositorio, y asumir que el modelo podria no contener artefactos funcionales.
 
@@ -74,7 +74,7 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del modelo, n
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | Artistic License 2.0 | no disponible |
-| Disponibilidad | Repositorio publico en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | Repositorio publico en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del modelo, n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RenateAuzina/bb
+- Hugging Face: https://huggingface.co/RenateAuzina/bb
 - Model card: https://huggingface.co/RenateAuzina/bb/blob/main/README.md
 - Licencia Artistic License 2.0 (texto de referencia): https://opensource.org/license/artistic-2-0
 - Busqueda web realizada: no se ha encontrado ningun resultado relevante sobre este modelo. Los resultados devueltos corresponden a paginas de soporte de Microsoft (inicio de sesion en Hotmail, actualizaciones de seguridad de Exchange Server, frecuencia de refresco en Windows, cierre de cuenta de Outlook.com) y no guardan ninguna relacion con el modelo analizado, por lo que no se incluyen como fuentes.

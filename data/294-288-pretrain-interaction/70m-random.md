@@ -63,6 +63,6 @@ No se dispone de datos comparativos en la información proporcionada.
 - Los checkpoints y pesos están pensados para reproducir experimentos, no para uso general.
 
 ## Enlaces
-- [HuggingFace: 294-288-pretrain-interaction/70M-random](https://huggingface.co/294-288-pretrain-interaction/70M-random)
+- [Hugging Face: 294-288-pretrain-interaction/70M-random](https://huggingface.co/294-288-pretrain-interaction/70M-random)
 - [GitHub: 294-288-pretrain-interaction/pretrain_interaction](https://github.com/294-288-pretrain-interaction/pretrain_interaction) (rama `yaowen-70m-sweep`)
 - [Dataset: 294-288-pretrain-interaction/Dolma3-16B](https://huggingface.co/datasets/294-288-pretrain-interaction/Dolma3-16B)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microduck-sprint-remix-leader6` es una entrada para la prueba de 2 metros de sprint de la Microduck Arena, un entorno de simulación de robótica con patas organizado por Pollen Robotics. Lo desarrolla el usuario de HuggingFace rumezhak y no es un modelo de lenguaje ni una red neuronal entrenada desde cero: es un artefacto compuesto que combina, para cada una de las cinco semillas oficiales de la Arena, la mejor ejecución registrada entre distintas entradas públicas. El resultado declarado es un tiempo medio de 0,820 s en las cinco semillas, con 163, 164, 165, 164 y 164 pasos de física respectivamente.
+`microduck-sprint-remix-leader6` es una entrada para la prueba de 2 metros de sprint de la Microduck Arena, un entorno de simulación de robótica con patas organizado por Pollen Robotics. Lo desarrolla el usuario de Hugging Face rumezhak y no es un modelo de lenguaje ni una red neuronal entrenada desde cero: es un artefacto compuesto que combina, para cada una de las cinco semillas oficiales de la Arena, la mejor ejecución registrada entre distintas entradas públicas. El resultado declarado es un tiempo medio de 0,820 s en las cinco semillas, con 163, 164, 165, 164 y 164 pasos de física respectivamente.
 
 El componente aprendido es una red densa de 61 entradas, tres capas ocultas (512, 256 y 128 neuronas) con activación ELU y 14 salidas, heredada sin cambios del modelo base `a1rb4Ck/microduck-sprint-2m`. Sobre esa red se superpone una tabla de búsqueda (`L_obs`/`L_act`) con 331 filas que reproducen las observaciones y acciones grabadas de las cinco ejecuciones, con una máscara de 48 de las 61 entradas y una tolerancia de coincidencia de 1e-7. Si la observación actual no coincide con ninguna fila almacenada dentro de esa tolerancia, actúa la red.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Tiempo en Arena (5 semillas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rumezhak/microduck-sprint-remix-leader6 | no disponible | no aplica | 0,820 s (in-sample) | Apache-2.0 | HuggingFace |
-| HlibPlakhtii/microduck-sprint-quicksilver-v1 | no disponible | no aplica | 0,821 s | Apache-2.0 | HuggingFace |
-| jrubiosainz/microduck-game-sprinter-remix12 | no disponible | no aplica | 0,821 s | Apache-2.0 | HuggingFace |
-| a1rb4Ck/microduck-sprint-2m (base) | no disponible | no aplica | no disponible | Apache-2.0 | HuggingFace |
+| rumezhak/microduck-sprint-remix-leader6 | no disponible | no aplica | 0,820 s (in-sample) | Apache-2.0 | Hugging Face |
+| HlibPlakhtii/microduck-sprint-quicksilver-v1 | no disponible | no aplica | 0,821 s | Apache-2.0 | Hugging Face |
+| jrubiosainz/microduck-game-sprinter-remix12 | no disponible | no aplica | 0,821 s | Apache-2.0 | Hugging Face |
+| a1rb4Ck/microduck-sprint-2m (base) | no disponible | no aplica | no disponible | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rumezhak/microduck-sprint-remix-leader6
+- Modelo en Hugging Face: https://huggingface.co/rumezhak/microduck-sprint-remix-leader6
 - Modelo base: https://huggingface.co/a1rb4Ck/microduck-sprint-2m
 - Microduck Arena (Space de Pollen Robotics): https://huggingface.co/spaces/pollen-robotics/microduck-arena
 - Entrada quicksilver-v1: https://huggingface.co/HlibPlakhtii/microduck-sprint-quicksilver-v1

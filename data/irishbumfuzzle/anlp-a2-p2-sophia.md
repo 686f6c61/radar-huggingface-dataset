@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`irishbumfuzzle/anlp-a2-p2-sophia` es un checkpoint de investigación publicado en HuggingFace por el usuario irishbumfuzzle como parte de la Parte 2 de la asignatura Advanced NLP Assignment 2 (Monsoon 2026). No se trata de un modelo de propósito general ni de un lanzamiento de producto: es el artefacto final de un ejercicio académico de preentrenamiento de un transformer decoder-only de 35,7 millones de parámetros sobre una tarea de predicción del siguiente token.
+`irishbumfuzzle/anlp-a2-p2-sophia` es un checkpoint de investigación publicado en Hugging Face por el usuario irishbumfuzzle como parte de la Parte 2 de la asignatura Advanced NLP Assignment 2 (Monsoon 2026). No se trata de un modelo de propósito general ni de un lanzamiento de producto: es el artefacto final de un ejercicio académico de preentrenamiento de un transformer decoder-only de 35,7 millones de parámetros sobre una tarea de predicción del siguiente token.
 
 El interés técnico del checkpoint reside en el optimizador utilizado, Sophia-H con aproximación diagonal de la Hessiana (Wen et al. 2025, algoritmo 4, componente bonus), aplicado a un presupuesto de entrenamiento de 9.715.712 tokens (una pasada sobre el dataset HAP-E, compuesto por chunk_1 y chunk_2 de texto humano) con tamaño de batch 32. El modelo tiene 6 capas, dimensión de modelo 512, 8 cabezas de atención, vocabulario de 32.768 tokens y embeddings atados.
 
@@ -83,10 +83,10 @@ No hay benchmarks publicados de este checkpoint, por lo que la comparación es e
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anlp-a2-p2-sophia (este modelo) | 35,7 M | no disponible | Transformer decoder-only, 6 capas, D=512 | no disponible | HuggingFace, pesos `.pt` con código externo |
-| GPT-2 small (OpenAI) | 124 M | 1.024 tokens | Transformer decoder-only, 12 capas, D=768 | MIT (pesos publicados) | HuggingFace, safetensors/PyTorch |
-| Pythia-70M (EleutherAI) | 70 M | 2.048 tokens | Transformer decoder-only, 6 capas, D=512 | Apache-2.0 | HuggingFace, safetensors/PyTorch |
-| SmolLM-135M (HuggingFace) | 135 M | 2.048 tokens | Transformer decoder-only, 30 capas, D=576 | Apache-2.0 | HuggingFace, safetensors/GGUF |
+| anlp-a2-p2-sophia (este modelo) | 35,7 M | no disponible | Transformer decoder-only, 6 capas, D=512 | no disponible | Hugging Face, pesos `.pt` con código externo |
+| GPT-2 small (OpenAI) | 124 M | 1.024 tokens | Transformer decoder-only, 12 capas, D=768 | MIT (pesos publicados) | Hugging Face, safetensors/PyTorch |
+| Pythia-70M (EleutherAI) | 70 M | 2.048 tokens | Transformer decoder-only, 6 capas, D=512 | Apache-2.0 | Hugging Face, safetensors/PyTorch |
+| SmolLM-135M (Hugging Face) | 135 M | 2.048 tokens | Transformer decoder-only, 30 capas, D=576 | Apache-2.0 | Hugging Face, safetensors/GGUF |
 
 Diferencias relevantes: los tres modelos de referencia se entrenaron con presupuestos de tokens de varios órdenes de magnitud superiores (cientos de miles de millones en el caso de SmolLM) y se distribuyen con licencias explícitas y formatos estándar, mientras que este checkpoint declara 9,7 M de tokens y no especifica licencia ni contexto.
 
@@ -104,7 +104,7 @@ Diferencias relevantes: los tres modelos de referencia se entrenaron con presupu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/irishbumfuzzle/anlp-a2-p2-sophia
+- Modelo en Hugging Face: https://huggingface.co/irishbumfuzzle/anlp-a2-p2-sophia
 - Repositorio de la asignatura (referenciado en la model card como `src.part1`): no disponible, no se incluye URL en la información proporcionada.
 - Paper del optimizador Sophia-H (Wen et al. 2025, algoritmo 4): citado en la model card, sin enlace disponible en la información proporcionada.
 - Dataset HAP-E (chunk_1 + chunk_2): citado en la model card, sin enlace disponible en la información proporcionada.

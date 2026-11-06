@@ -113,7 +113,7 @@ Los dos modelos base (`laion/voiceclap-large-v2` y `laion/voiceclap-commercial`)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/vocal-burst-detector-x3
+- Modelo en Hugging Face: https://huggingface.co/laion/vocal-burst-detector-x3
 - Predecesor: https://huggingface.co/laion/vocal-burst-detector-x2
 - Modelo base (producción): https://huggingface.co/laion/voiceclap-large-v2
 - Modelo base (variante comercial): https://huggingface.co/laion/voiceclap-commercial

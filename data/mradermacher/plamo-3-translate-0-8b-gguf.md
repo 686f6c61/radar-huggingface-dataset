@@ -31,7 +31,7 @@ Respecto al entrenamiento, no se dispone de datos sobre el número de tokens uti
 
 - Traducción automática multilingüe entre 54 idiomas, incluyendo pares con y sin inglés como pivote.
 - Cobertura de lenguas de bajos recursos: cebuano, javanés, jemer, birmano, urdu, nepalí, pastún, entre otras.
-- Generación de texto conversacional (etiqueta `conversational` en HuggingFace).
+- Generación de texto conversacional (etiqueta `conversational` en Hugging Face).
 - Pipeline de traducción (`translation`) como caso de uso principal.
 - Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su despliegue en infraestructuras de inferencia estándar.
 - Soporte de tool calling: no disponible en la información proporcionada.

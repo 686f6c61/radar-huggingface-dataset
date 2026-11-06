@@ -21,7 +21,7 @@ Ahora bien, el repositorio tiene cero descargas y cero likes, no incluye resulta
 | Licencia | MIT |
 | Formato de pesos | `safetensors` (backbone), `.pth` (cabeza de clasificacion y red de politica), `config.json` y ficheros de tokenizer |
 | Tamano del repositorio | 0,6 GB |
-| Pipeline declarado en HuggingFace | `reinforcement-learning` |
+| Pipeline declarado en Hugging Face | `reinforcement-learning` |
 | Libreria | `transformers` (backbone) + PyTorch (cabeza y politica) |
 | Fecha de publicacion | 2026-10-27 (creacion y ultima actualizacion) |
 | Descargas / likes | 0 / 0 |
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `addy0606/cognitive-offloading` | ~139M (backbone) + cabeza MLP + DQN no cuantificada | no disponible (512 en el backbone estandar) | Clasificacion de conducta + seleccion de politica pedagogica | MIT | HuggingFace + GitHub, 0 descargas |
-| Clasificador afinado generico sobre `microsoft/deberta-base` | ~139M | 512 tokens | Clasificacion de texto binaria/multiclase | MIT (backbone) | Amplia en HuggingFace Hub |
-| Clasificador afinado sobre `distilbert-base-uncased` | ~66M | 512 tokens | Clasificacion de texto, menor coste y precision tipicamente inferior | Apache 2.0 (backbone) | Amplia en HuggingFace Hub |
+| `addy0606/cognitive-offloading` | ~139M (backbone) + cabeza MLP + DQN no cuantificada | no disponible (512 en el backbone estandar) | Clasificacion de conducta + seleccion de politica pedagogica | MIT | Hugging Face + GitHub, 0 descargas |
+| Clasificador afinado generico sobre `microsoft/deberta-base` | ~139M | 512 tokens | Clasificacion de texto binaria/multiclase | MIT (backbone) | Amplia en Hugging Face Hub |
+| Clasificador afinado sobre `distilbert-base-uncased` | ~66M | 512 tokens | Clasificacion de texto, menor coste y precision tipicamente inferior | Apache 2.0 (backbone) | Amplia en Hugging Face Hub |
 | "LLM como juez" (modelo generativo tipo 7-8B instruido) | 7-8B | 8K-128K segun modelo | Deteccion y decision mediante prompting | variable | Amplia, pero con coste de inferencia muy superior |
 
 Las alternativas de la tabla son referencias genericas de categoria: no se dispone de resultados comparativos publicados que permitan afirmar que este modelo supera o es superado por ellas en la tarea concreta de deteccion de offloading cognitivo.
@@ -91,10 +91,10 @@ Las alternativas de la tabla son referencias genericas de categoria: no se dispo
 - Proteccion de datos: se procesan mensajes de estudiantes, potencialmente menores. El uso en produccion exige base juridica, minimizacion, retencion limitada y cumplimiento del RGPD y la LOPDGDD; el modelo no anonimiza ni filtra datos personales.
 - Licencia MIT: permite uso comercial, modificacion y redistribucion, con la obligacion de conservar el aviso de copyright y sin garantia alguna por parte del autor.
 - Madurez: repositorio con 0 descargas y 0 likes, mantenido por un unico autor, publicado y actualizado el mismo dia; sin senales de validacion por la comunidad.
-- Reproducibilidad parcial: el codigo de entrenamiento y evaluacion vive en el repositorio externo de GitHub, no en el espacio de HuggingFace, por lo que la reproducibilidad depende de que ese repositorio siga disponible.
+- Reproducibilidad parcial: el codigo de entrenamiento y evaluacion vive en el repositorio externo de GitHub, no en el espacio de Hugging Face, por lo que la reproducibilidad depende de que ese repositorio siga disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/addy0606/cognitive-offloading
+- Modelo en Hugging Face: https://huggingface.co/addy0606/cognitive-offloading
 - Repositorio del proyecto (codigo, pipeline de evaluacion e interfaz Flask): https://github.com/Addy0606/cognitiveoffloading
 - Modelo base del backbone: https://huggingface.co/microsoft/deberta-base

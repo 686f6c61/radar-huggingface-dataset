@@ -95,7 +95,7 @@ No se dispone de datos para comparar con modelos de otras familias de tamaño o 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BobClawblaw/MiniMax-M3.1-Flash-MLX-mix34
+- Modelo en Hugging Face: https://huggingface.co/BobClawblaw/MiniMax-M3.1-Flash-MLX-mix34
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
 - Motor TensorFold: https://github.com/ashhart/TensorFold
 - Drafter DFlash2: https://huggingface.co/incoai/MiniMax-M3.1-Flash-DFlash2

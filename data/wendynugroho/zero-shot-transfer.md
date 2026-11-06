@@ -4,7 +4,7 @@
 
 Este repositorio, publicado por Wendy Nugroho, no contiene un modelo entrenado, sino una nota de investigación exploratoria sobre el concepto de *zero-shot transfer* (transferencia de cero disparos). El autor documenta el alcance de una pregunta de investigación, los posibles factores de confusión, una propuesta de comparación con líneas base y los requisitos de reproducibilidad antes de reportar cualquier resultado de benchmark.
 
-El repositorio incluye únicamente dos archivos: `summary.md`, que es el artefacto principal con la nota completa, y `README.md`, que es la documentación actual. Los datos de HuggingFace confirman que el repositorio tiene 49.600 parámetros (un valor residual, probablemente de un archivo de configuración) y un tamaño de 0.0 GB, lo que indica que no hay pesos de modelo publicados. La licencia es CC-BY-4.0.
+El repositorio incluye únicamente dos archivos: `summary.md`, que es el artefacto principal con la nota completa, y `README.md`, que es la documentación actual. Los datos de Hugging Face confirman que el repositorio tiene 49.600 parámetros (un valor residual, probablemente de un archivo de configuración) y un tamaño de 0.0 GB, lo que indica que no hay pesos de modelo publicados. La licencia es CC-BY-4.0.
 
 La relevancia de este repositorio es limitada para desarrolladores que buscan un modelo desplegable, pero puede ser útil como punto de partida para investigadores interesados en el diseño experimental de estudios sobre transferencia de tareas sin entrenamiento específico.
 
@@ -64,12 +64,12 @@ No disponible. Este repositorio no es un modelo de IA, sino una nota de investig
 - No hay resultados experimentales: las secciones de planes o hipotesis no deben interpretarse como evidencia.
 - Sin codigo liberado: el repositorio no incluye implementaciones ni scripts ejecutables.
 - Licencia CC-BY-4.0: permite uso y adaptacion con atribucion, pero los terminos de los datasets externos mencionados deben revisarse por separado.
-- Riesgo de confusion: los metadatos de HuggingFace (49.600 parametros) pueden inducir a error si no se lee la model card completa; no hay pesos reales.
+- Riesgo de confusion: los metadatos de Hugging Face (49.600 parametros) pueden inducir a error si no se lee la model card completa; no hay pesos reales.
 - Sin soporte de produccion: no es adecuado para integracion en pipelines, agentes o aplicaciones.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wendynugroho/zero-shot-transfer
+- Repositorio en Hugging Face: https://huggingface.co/wendynugroho/zero-shot-transfer
 - Perfil de investigacion del autor en ResearchGate: https://www.researchgate.net/profile/Wendy-Nugroho-2
 - Articulo relacionado en arXiv (Towards Zero-Shot Task Transfer with Neurosymbolic World Models): https://arxiv.org/html/2608.17959v1
 - Definicion de zero-shot transfer en Inferensys: https://inferensys.com/glossary/vision-language-action-models/multimodal-fusion-architectures/zero-shot-transfer

@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada: el repositorio no presenta descargas ni
 
 No se dispone de informacion sobre la arquitectura del modelo base. El nombre "Qwen3.5-9B" apunta a un transformer decoder-only de la familia Qwen, pero no hay confirmacion en los metadatos. Tampoco se documentan el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras fases de alineamiento.
 
-La unica informacion tecnica verificable corresponde al proceso de cuantizacion: el repositorio contiene cuantizaciones estaticas generadas con una version 2 del pipeline de mradermacher (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), lo que indica una conversion desde pesos HuggingFace a GGUF seguida de cuantizacion por tensores. Se ofrecen doce variantes de cuantizacion, desde x-f16 (sin perdida practica) hasta Q2_K (fuertemente comprimida).
+La unica informacion tecnica verificable corresponde al proceso de cuantizacion: el repositorio contiene cuantizaciones estaticas generadas con una version 2 del pipeline de mradermacher (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), lo que indica una conversion desde pesos Hugging Face a GGUF seguida de cuantizacion por tensores. Se ofrecen doce variantes de cuantizacion, desde x-f16 (sin perdida practica) hasta Q2_K (fuertemente comprimida).
 
 ## Capacidades
 

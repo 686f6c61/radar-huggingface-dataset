@@ -34,7 +34,7 @@ No aplica. Este repositorio no contiene un modelo entrenado ni arquitectura algu
 - **Referencia bibliográfica**: el archivo puede servir como fuente de consulta para investigadores que estudien técnicas de eficiencia de datos, aunque el contenido no está indexado ni verificado por pares.
 - **Reproducción de experimentos**: si el paper incluye metodología, podría utilizarse como guía para implementar técnicas de selección de datos, pero no se proporcionan datos, código ni resultados.
 - **Material de estudio**: para desarrolladores que quieran entender el estado del arte en data efficient learning, el documento puede ser un punto de partida, aunque se recomienda consultar las fuentes originales en arXiv.
-- **Archivo de documentación**: el repositorio puede emplearse como plantilla para publicar papers en formato Markdown en HuggingFace, aunque no es su propósito principal.
+- **Archivo de documentación**: el repositorio puede emplearse como plantilla para publicar papers en formato Markdown en Hugging Face, aunque no es su propósito principal.
 - **Evaluación de licencias**: el repositorio está bajo BSD-3-Clause, lo que permite su uso, modificación y redistribución con atribución, pero no ofrece garantías.
 - **Análisis de metadatos**: los tags (concise-analytical, data-efficient-learning, etc.) pueden ser útiles para clasificar o buscar papers en plataformas de investigación, aunque no aportan valor funcional.
 
@@ -55,7 +55,7 @@ No aplica. No existe un modelo comparable porque este repositorio no contiene un
 ## Limitaciones y advertencias
 
 - No es un modelo de IA: no puede generar texto, responder preguntas ni realizar tareas de inferencia.
-- El contenido del paper no ha sido validado por el equipo de HuggingFace ni por revisores externos en este repositorio; su calidad y exactitud dependen del autor.
+- El contenido del paper no ha sido validado por el equipo de Hugging Face ni por revisores externos en este repositorio; su calidad y exactitud dependen del autor.
 - No se proporciona información sobre el dataset utilizado, el método de entrenamiento o la evaluación del paper, lo que limita su reproducibilidad.
 - La licencia BSD-3-Clause permite uso comercial con atribución, pero no se especifican restricciones adicionales sobre el contenido del documento.
 - El repositorio tiene 0 descargas y 0 likes, lo que indica que no ha sido utilizado ni verificado por la comunidad.
@@ -63,7 +63,7 @@ No aplica. No existe un modelo comparable porque este repositorio no contiene un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/almutairi97/paper_004511408_data_efficient_learning
+- Repositorio en Hugging Face: https://huggingface.co/almutairi97/paper_004511408_data_efficient_learning
 - Paper relacionado sobre eficiencia de datos en LLMs (arXiv): https://arxiv.org/abs/2402.09668
 - Artículo sobre métodos de aprendizaje activo para eficiencia de datos (arXiv): https://arxiv.org/pdf/2504.16136
 - Publicaciones del grupo Efficiency-Learning: https://efficiency-learning.github.io/publications/

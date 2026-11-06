@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-2B-oQ8-mtp es una versión cuantizada del modelo Qwen3.5-2B, publicada por el usuario bambocher en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un checkpoint convertido al formato MLX (Apple Silicon) mediante la herramienta oQ (oMLX v0.7.1rc1), que aplica cuantización de precisión mixta: una parte mayoritaria de los pesos se almacena en affine 8-bit con grupo de 64 y otra parte se mantiene en BF16. El resultado es un checkpoint de 2.274.069.824 parámetros que ocupa 2,547 GiB en disco, con un promedio efectivo de 9,623 bits por peso.
+Qwen3.5-2B-oQ8-mtp es una versión cuantizada del modelo Qwen3.5-2B, publicada por el usuario bambocher en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un checkpoint convertido al formato MLX (Apple Silicon) mediante la herramienta oQ (oMLX v0.7.1rc1), que aplica cuantización de precisión mixta: una parte mayoritaria de los pesos se almacena en affine 8-bit con grupo de 64 y otra parte se mantiene en BF16. El resultado es un checkpoint de 2.274.069.824 parámetros que ocupa 2,547 GiB en disco, con un promedio efectivo de 9,623 bits por peso.
 
 El interés de esta ficha es doble. Por un lado, documenta una técnica de cuantización mixta poco habitual, en la que el autor conserva en BF16 el 14,967% de los pesos (0,340B) mientras comprime el 85,033% restante a 8 bits, un compromiso que busca preservar la calidad de las capas más sensibles sin renunciar a la reducción de tamaño. Por otro lado, el checkpoint incluye tres componentes diferenciados: el modelo de lenguaje (1,882B de pesos), una torre de visión (0,331B) y una cabeza MTP (*multi-token prediction*, 0,061B), lo que lo convierte en un modelo multimodal con decodificación especulativa integrada.
 
@@ -85,11 +85,11 @@ La búsqueda web realizada no devolvió ninguna fuente relacionada con este mode
 - Riesgo de alucinación inherente a los modelos de 2B de parámetros, acentuado en tareas de razonamiento largo o matemáticas; no se han publicado evaluaciones que lo cuantifiquen.
 - Sesgos: no disponible. Al no documentarse la composición del dataset de entrenamiento, no es posible caracterizar los sesgos del modelo base.
 - Dependencia de plataforma: el formato MLX limita el uso a Apple Silicon; no hay pesos GGUF ni CUDA en el repositorio, lo que excluye servidores NVIDIA sin trabajo de conversión adicional.
-- Fecha de publicación adelantada (2026) y metadatos incompletos en HuggingFace (pipeline e idiomas sin definir); conviene verificar la integridad del repositorio antes de descargarlo.
+- Fecha de publicación adelantada (2026) y metadatos incompletos en Hugging Face (pipeline e idiomas sin definir); conviene verificar la integridad del repositorio antes de descargarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bambocher/Qwen3.5-2B-oQ8-mtp
+- Modelo en Hugging Face: https://huggingface.co/bambocher/Qwen3.5-2B-oQ8-mtp
 - Herramienta de cuantización oQ (oMLX), citada en la model card: https://github.com/jundot/omlx
 - Repositorio del modelo base Qwen3.5-2B: no disponible en la información proporcionada
 - Paper o documentación técnica de la arquitectura Qwen3.5: no disponible en la información proporcionada

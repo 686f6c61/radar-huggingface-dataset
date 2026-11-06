@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e16` es un checkpoint publicado en HuggingFace por el usuario PessimisticDPO. La model card es la plantilla automática de transformers sin cumplimentar: todos los campos de descripción, autoría, financiación, tipo de modelo, idiomas, licencia y fuente de entrenamiento figuran como "[More Information Needed]". No hay por tanto información oficial sobre qué problema resuelve, cómo se entrenó ni para qué se recomienda su uso.
+El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e16` es un checkpoint publicado en Hugging Face por el usuario PessimisticDPO. La model card es la plantilla automática de transformers sin cumplimentar: todos los campos de descripción, autoría, financiación, tipo de modelo, idiomas, licencia y fuente de entrenamiento figuran como "[More Information Needed]". No hay por tanto información oficial sobre qué problema resuelve, cómo se entrenó ni para qué se recomienda su uso.
 
 La única información objetiva disponible es la metadata del repositorio: librería `transformers`, pesos en formato `safetensors`, etiqueta `endpoints_compatible`, 0 descargas y 0 likes desde su creación (22 de septiembre de 2026), y un tamaño de repositorio de 0,2 GB. Este último dato es importante: un checkpoint completo de un modelo de 7B parámetros en fp16 ocuparía del orden de 13-14 GB, por lo que 0,2 GB resulta compatible con un adaptador (LoRA u similar) o con una subida parcial o incompleta de pesos, pero no con un modelo denso de 7B en precisión completa.
 
@@ -38,7 +38,7 @@ No se ha publicado ninguna descripción de capacidades en la información dispon
 - Soporte de agentes o razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible.
 - Capacidades especiales (modo thinking, visión, audio): no disponible.
-- La etiqueta `endpoints_compatible` indica únicamente que el repositorio es desplegable en HuggingFace Inference Endpoints, no una capacidad funcional del modelo.
+- La etiqueta `endpoints_compatible` indica únicamente que el repositorio es desplegable en Hugging Face Inference Endpoints, no una capacidad funcional del modelo.
 
 ## Casos de uso
 
@@ -97,7 +97,7 @@ La diferencia principal no es de arquitectura sino de madurez: las alternativas 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e16
+- Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e16
 - Referencia citada en la plantilla de la model card (estimación de emisiones, no paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML mencionada en la plantilla: https://mlco2.github.io/impact
 

@@ -76,7 +76,7 @@ La comparativa se limita al modelo original y su version cuantizada, ya que no s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OpenVINO/Qwen3.8-27B-int8-ov
+- Repositorio Hugging Face: https://huggingface.co/OpenVINO/Qwen3.8-27B-int8-ov
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guia de optimizacion de OpenVINO: https://docs.openvino.ai/2026/openvino-workflow/model-optimization-guide/weight-compression.html
 - Documentacion de Optimum Intel: https://huggingface.co/docs/optimum-intel/openvino/inference

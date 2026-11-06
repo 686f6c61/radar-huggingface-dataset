@@ -88,7 +88,7 @@ La comparativa muestra que el checkpoint B5 es superado por su propio control si
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gnitoahc/ceed-b5
+- Repositorio Hugging Face: https://huggingface.co/gnitoahc/ceed-b5
 - Repositorio GitHub del proyecto CEED: https://github.com/GNITOAHC/ceed
 - Documento de diseño CEED (ceed.md): https://github.com/GNITOAHC/ceed/blob/main/ceed.md
 - Modelo base: https://huggingface.co/google/gemma-4-e4b-it

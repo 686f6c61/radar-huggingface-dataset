@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `TheHassanSaud/P2_pythia410m_q0.4_dpo_beta0.1` es un checkpoint de generación de texto publicado en HuggingFace por el usuario TheHassanSaud. Por el identificador y la arquitectura declarada (`gpt_neox`), se trata de un ajuste fino derivado de la familia Pythia de EleutherAI, concretamente de una variante de 410 millones de parámetros, sobre el que se ha aplicado un entrenamiento de alineación mediante DPO (Direct Preference Optimization). El sufijo `beta0.1` apunta al coeficiente de regularización KL típico de DPO, mientras que `q0.4` y `P2` no están documentados en la model card.
+El modelo `TheHassanSaud/P2_pythia410m_q0.4_dpo_beta0.1` es un checkpoint de generación de texto publicado en Hugging Face por el usuario TheHassanSaud. Por el identificador y la arquitectura declarada (`gpt_neox`), se trata de un ajuste fino derivado de la familia Pythia de EleutherAI, concretamente de una variante de 410 millones de parámetros, sobre el que se ha aplicado un entrenamiento de alineación mediante DPO (Direct Preference Optimization). El sufijo `beta0.1` apunta al coeficiente de regularización KL típico de DPO, mientras que `q0.4` y `P2` no están documentados en la model card.
 
-El problema que aborda es el habitual en investigación de alineación: experimentar con preferencias humanas o sintéticas en modelos pequeños para poder iterar rápido y con poco hardware. Su relevancia es, por tanto, fundamentalmente académica y de prototipado; no compite con modelos instructivos actuales de su tamaño. La model card es la plantilla automática de HuggingFace y no contiene ninguna sección cumplimentada, de modo que la mayor parte de los datos de entrenamiento, licencia, idiomas y evaluación no están disponibles.
+El problema que aborda es el habitual en investigación de alineación: experimentar con preferencias humanas o sintéticas en modelos pequeños para poder iterar rápido y con poco hardware. Su relevancia es, por tanto, fundamentalmente académica y de prototipado; no compite con modelos instructivos actuales de su tamaño. La model card es la plantilla automática de Hugging Face y no contiene ninguna sección cumplimentada, de modo que la mayor parte de los datos de entrenamiento, licencia, idiomas y evaluación no están disponibles.
 
 La arquitectura es un transformer decoder-only tipo GPT-NeoX, con 405.334.016 parámetros reales según los pesos en safetensors (cifra que coincide con la del modelo base Pythia-410m), un repositorio de 1,6 GB y pesos en formato safetensors compatibles con `transformers` y con text-generation-inference. El checkpoint se publicó el 10 de septiembre de 2026 y acumula cero descargas y cero likes en el momento de redactar esta ficha.
 
@@ -75,14 +75,14 @@ Los datos de los modelos alternativos proceden de sus fichas públicas y no de u
 |---|---|---|---|---|
 | P2_pythia410m_q0.4_dpo_beta0.1 | 405 M | no disponible (base: 2.048) | no disponible | HF, solo safetensors |
 | Pythia-410m (EleutherAI) | 405 M | 2.048 | Apache 2.0 | HF, safetensors y versiones derivadas |
-| SmolLM2-360M (HuggingFace) | 362 M | 8.192 | Apache 2.0 | HF, safetensors y GGUF |
+| SmolLM2-360M (Hugging Face) | 362 M | 8.192 | Apache 2.0 | HF, safetensors y GGUF |
 | Qwen2.5-0.5B (Alibaba) | 494 M | 32.768 | Apache 2.0 | HF, safetensors, GGUF y variantes instruct |
 
 Frente a Pythia-410m, este checkpoint añade un ajuste por preferencias no evaluado públicamente; frente a SmolLM2-360M o Qwen2.5-0.5B, queda por detrás en longitud de contexto, disponibilidad de cuantizaciones listas para usar, documentación y, previsiblemente, calidad de instrucciones, ya que estos últimos sí incluyen versiones instruct entrenadas y evaluadas.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla automática de HuggingFace: no hay información sobre datos de entrenamiento, sesgos, evaluación ni uso previsto, lo que impide auditar el modelo.
+- La model card es la plantilla automática de Hugging Face: no hay información sobre datos de entrenamiento, sesgos, evaluación ni uso previsto, lo que impide auditar el modelo.
 - Licencia no declarada: sin licencia explícita, el uso comercial y la redistribución quedan en una situación jurídica incierta, incluso aunque el modelo base Pythia se distribuya bajo Apache 2.0.
 - Alto riesgo de alucinación y de afirmaciones incorrectas, propio de un modelo de 410 M con contexto corto y sin ajuste instruct validado.
 - Capacidad de razonamiento, matemáticas y código muy limitada; no es adecuado para tareas que requieran precisión factual o lógica multi-paso.
@@ -94,7 +94,7 @@ Frente a Pythia-410m, este checkpoint añade un ajuste por preferencias no evalu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0.4_dpo_beta0.1
+- Modelo en Hugging Face: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0.4_dpo_beta0.1
 - Paper citado en la model card (Lacoste et al., 2019, estimación de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automático: https://mlco2.github.io/impact
 - Modelo base probable, Pythia-410m de EleutherAI: https://huggingface.co/EleutherAI/pythia-410m

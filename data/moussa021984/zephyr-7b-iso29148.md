@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `moussa021984/zephyr-7b-iso29148` es un modelo de generación de texto con 7.241.732.096 parámetros, publicado en HuggingFace por el usuario `moussa021984`. Los metadatos indican que está construido con la librería `transformers`, los pesos están en formato `safetensors` y el pipeline asociado es `text-generation`. El nombre y los tags sugieren que se trata de un ajuste fino de un modelo base de la familia Zephyr 7B, probablemente sobre Mistral, orientado a la norma ISO/IEC/IEEE 29148 (ingeniería de requisitos), aunque no se ha proporcionado documentación que lo confirme.
+El modelo `moussa021984/zephyr-7b-iso29148` es un modelo de generación de texto con 7.241.732.096 parámetros, publicado en Hugging Face por el usuario `moussa021984`. Los metadatos indican que está construido con la librería `transformers`, los pesos están en formato `safetensors` y el pipeline asociado es `text-generation`. El nombre y los tags sugieren que se trata de un ajuste fino de un modelo base de la familia Zephyr 7B, probablemente sobre Mistral, orientado a la norma ISO/IEC/IEEE 29148 (ingeniería de requisitos), aunque no se ha proporcionado documentación que lo confirme.
 
 La model card es una plantilla generada automáticamente, con todos los campos rellenados como "[More Information Needed]". No hay información sobre el proceso de entrenamiento, el dataset, la licencia, los idiomas soportados ni las capacidades específicas. El modelo no registra descargas ni likes en el momento de la consulta, y el repositorio ocupa 14,5 GB. En consecuencia, esta ficha se limita a los datos técnicos disponibles y señala explícitamente las ausencias de información.
 
@@ -53,7 +53,7 @@ Los siguientes valores son estimaciones generales para un modelo de 7.000 millon
   - Cuantizacion 8 bits: aproximadamente 7-9 GB de VRAM.
   - Cuantizacion 4 bits: aproximadamente 4-6 GB de VRAM.
 - GPU recomendadas: RTX 4090 (24 GB), A10G (24 GB), A100 40/80 GB, H100 80 GB. En consumer GPU, una RTX 3090 o 4090 puede ejecutar el modelo en FP16; tarjetas de 12-16 GB pueden ejecutarlo con cuantizacion 4 bits u 8 bits.
-- Opciones de despliegue: el tag `text-generation-inference` y `endpoints_compatible` sugieren compatibilidad con HuggingFace TGI y con endpoints de HuggingFace. Los formatos safetensors permiten su uso con vLLM, llama.cpp (previa conversion a GGUF), Ollama o Transformers directamente.
+- Opciones de despliegue: el tag `text-generation-inference` y `endpoints_compatible` sugieren compatibilidad con Hugging Face TGI y con endpoints de Hugging Face. Los formatos safetensors permiten su uso con vLLM, llama.cpp (previa conversion a GGUF), Ollama o Transformers directamente.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -70,4 +70,4 @@ No se dispone de datos de rendimiento ni de documentacion suficiente para establ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/moussa021984/zephyr-7b-iso29148
+- Hugging Face: https://huggingface.co/moussa021984/zephyr-7b-iso29148

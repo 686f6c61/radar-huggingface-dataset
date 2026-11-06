@@ -83,7 +83,7 @@ No se dispone de información suficiente para comparar rendimiento, contexto o b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mlboy23/Qwen3.5-2B-W4A16
+- Modelo en Hugging Face: https://huggingface.co/Mlboy23/Qwen3.5-2B-W4A16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-2B/blob/main/LICENSE
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

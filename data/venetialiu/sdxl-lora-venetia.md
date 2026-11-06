@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Venetialiu/sdxl-lora-venetia es un adaptador LoRA entrenado sobre Stable Diffusion XL Base 1.0 de Stability AI mediante la tecnica DreamBooth, publicado en HuggingFace por el usuario venetialiu. Su proposito es generar imagenes fotorrealistas de una persona concreta (identificada por el prompt de instancia "A photo of Venetia Liu wearing casual clothes, taking a selfie"), lo que lo situa en la categoria de modelos de personalizacion de identidad visual para generacion texto-imagen.
+Venetialiu/sdxl-lora-venetia es un adaptador LoRA entrenado sobre Stable Diffusion XL Base 1.0 de Stability AI mediante la tecnica DreamBooth, publicado en Hugging Face por el usuario venetialiu. Su proposito es generar imagenes fotorrealistas de una persona concreta (identificada por el prompt de instancia "A photo of Venetia Liu wearing casual clothes, taking a selfie"), lo que lo situa en la categoria de modelos de personalizacion de identidad visual para generacion texto-imagen.
 
 El modelo resuelve el problema tipico de DreamBooth: dotar al modelo base de la capacidad de reproducir un sujeto especifico (un rostro y una persona en particular) sin reentrenar los pesos completos del modelo. Al ser un adaptador LoRA, su tamano es muy reducido en comparacion con el modelo base, lo que permite cargarlo y descargarlo rapidamente y combinarlo con otros adaptadores. La libreria de referencia es diffusers, por lo que su integracion en pipelines de Python es directa.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 - VRAM estimada para inferencia con SDXL: aproximadamente 8-12 GB en FP16, y en torno a 6-8 GB si se usa el modelo base cuantizado o optimizaciones como CPU offload.
 - GPUs recomendadas: NVIDIA RTX 3060 de 12 GB, RTX 4070/4080 o RTX 4090 para consumo domestico; A100 o H100 si se busca servir muchas peticiones concurrentes.
 - Cabe en GPUs de consumo: si, cualquier GPU con 8 GB de VRAM o mas puede ejecutar SDXL con este LoRA en FP16; con 6 GB es necesario recurrir a offload o cuantizacion.
-- Opciones de despliegue: libreria diffusers de HuggingFace (uso recomendado, ya que es la libreria indicada), ComfyUI, AUTOMATIC1111, Forge, o servicios como Gradio Spaces.
+- Opciones de despliegue: libreria diffusers de Hugging Face (uso recomendado, ya que es la libreria indicada), ComfyUI, AUTOMATIC1111, Forge, o servicios como Gradio Spaces.
 - Latencia y throughput: no disponible; como referencia, SDXL genera tipicamente una imagen de 1024x1024 en 3-10 segundos en una RTX 4090 con 30 pasos.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos, ya que ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/venetialiu/sdxl-lora-venetia
+- Modelo en Hugging Face: https://huggingface.co/venetialiu/sdxl-lora-venetia
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Repositorio de DreamBooth (metodo de entrenamiento): https://dreambooth.github.io/
 - Documentacion de diffusers (carga de LoRA): https://huggingface.co/docs/diffusers

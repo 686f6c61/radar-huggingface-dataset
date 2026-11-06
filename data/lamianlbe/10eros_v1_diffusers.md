@@ -4,7 +4,7 @@
 
 El modelo `lamianlbe/10Eros_v1_Diffusers` es un checkpoint de generación de video basado en LTX-2.3, el modelo de video de Lightricks con pesos abiertos y audio sincronizado. El repositorio tiene un tamaño de 93,6 GB y utiliza una licencia comunitaria específica de LTX-2 (`ltx2-community-license`). Según la información disponible en fuentes externas, se trata de un modelo "abliterado" (con capas de seguridad eliminadas) orientado a la generación de contenido visual, posiblemente de naturaleza erótica, aunque la documentación oficial no lo especifica.
 
-La ficha de HuggingFace es extremadamente escueta: no incluye descripción, pipeline, idiomas soportados ni detalles técnicos. Los resultados de búsqueda web indican que el modelo está relacionado con versiones como "LTX 10Eros - v1.4" y "LTX-2.3 10Eros NVFP4", publicadas en plataformas como Civitai, lo que sugiere que es un fine-tuning de LTX-2.3 para un caso de uso específico. Sin embargo, al carecer de documentación oficial, gran parte de las especificaciones técnicas deben considerarse no disponibles.
+La ficha de Hugging Face es extremadamente escueta: no incluye descripción, pipeline, idiomas soportados ni detalles técnicos. Los resultados de búsqueda web indican que el modelo está relacionado con versiones como "LTX 10Eros - v1.4" y "LTX-2.3 10Eros NVFP4", publicadas en plataformas como Civitai, lo que sugiere que es un fine-tuning de LTX-2.3 para un caso de uso específico. Sin embargo, al carecer de documentación oficial, gran parte de las especificaciones técnicas deben considerarse no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lamianlbe/10Eros_v1_Diffusers
+- Hugging Face: https://huggingface.co/lamianlbe/10Eros_v1_Diffusers
 - Repositorio de LTX-2 (licencia): https://github.com/Lightricks/LTX-2/blob/main/LICENSE
 - Página oficial de LTX-2.3: https://ltx.io/model/ltx-2-3
 - Variante en Civitai (LTX 10Eros v1.4): https://civitai.red/models/2447875/ltx23-10eros

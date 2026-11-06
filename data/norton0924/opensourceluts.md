@@ -26,7 +26,7 @@ Es relevante ahora por su utilidad práctica en posproducción y fotografía: so
 | Autor / mantenedor | Norton0924 (modificaciones atribuidas a «NicePhoto») |
 | Fecha de creacion | 2026-10-23T08:36:22Z |
 | Ultima actualizacion | 2026-10-23T09:19:13Z |
-| Tamano del repo | 0.0 GB segun HuggingFace |
+| Tamano del repo | 0.0 GB segun Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -104,7 +104,7 @@ No se dispone de datos verificados de packs comerciales de emulación fílmica (
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Norton0924/OpenSourceLuts
+- Repositorio en Hugging Face: https://huggingface.co/Norton0924/OpenSourceLuts
 - Réplica en ModelScope: https://modelscope.cn/models/Jiangdi/OpenSourceLuts
 - spektrafilm (Andrea Volpato): https://github.com/andreavolpato/spektrafilm
 - Spectral Film LUT (Jan Lohse): https://github.com/JanLohse/spectral_film_lut

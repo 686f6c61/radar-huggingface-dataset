@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`eric-z2/WL-context-distilroberta-fold_2` es un checkpoint de clasificacion de tokens (token-classification) publicado en HuggingFace por el usuario eric-z2. Se trata de un fine-tuning de la arquitectura DistilRoBERTa, tal y como indican los tags del repositorio (`roberta`, `token-classification`) y el propio identificador del modelo. Con 81.533.960 parametros en safetensors, el tamano coincide practicamente con el de un DistilRoBERTa-base, por lo que se trata de un encoder compacto orientado a tareas de etiquetado a nivel de token (por ejemplo, reconocimiento de entidades nombradas o etiquetado secuencial), no de un modelo generativo.
+`eric-z2/WL-context-distilroberta-fold_2` es un checkpoint de clasificacion de tokens (token-classification) publicado en Hugging Face por el usuario eric-z2. Se trata de un fine-tuning de la arquitectura DistilRoBERTa, tal y como indican los tags del repositorio (`roberta`, `token-classification`) y el propio identificador del modelo. Con 81.533.960 parametros en safetensors, el tamano coincide practicamente con el de un DistilRoBERTa-base, por lo que se trata de un encoder compacto orientado a tareas de etiquetado a nivel de token (por ejemplo, reconocimiento de entidades nombradas o etiquetado secuencial), no de un modelo generativo.
 
-El problema que resuelve es acotado: etiquetar cada token de una secuencia de entrada con una categoria del esquema definido por el autor del fine-tuning. No obstante, la model card publicada es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: no documenta el dataset de entrenamiento, el esquema de etiquetas, el idioma, la licencia ni los resultados de evaluacion. El sufijo `fold_2` sugiere que forma parte de un proceso de validacion cruzada (probablemente un fold de un experimento con varios pliegues), aunque esto no esta confirmado en la documentacion disponible.
+El problema que resuelve es acotado: etiquetar cada token de una secuencia de entrada con una categoria del esquema definido por el autor del fine-tuning. No obstante, la model card publicada es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: no documenta el dataset de entrenamiento, el esquema de etiquetas, el idioma, la licencia ni los resultados de evaluacion. El sufijo `fold_2` sugiere que forma parte de un proceso de validacion cruzada (probablemente un fold de un experimento con varios pliegues), aunque esto no esta confirmado en la documentacion disponible.
 
 Su relevancia practica hoy es limitada y condicionada: al no existir licencia declarada, no haber documentacion de entrenamiento y registrar 0 descargas y 0 likes, debe tratarse como un artefacto experimental sin garantias de reproducibilidad ni de uso comercial. Resulta util unicamente si el consumidor puede verificar por su cuenta el esquema de etiquetas y la calidad del modelo, o si necesita un ejemplo de fine-tuning de DistilRoBERTa para token classification.
 
@@ -27,7 +27,7 @@ Su relevancia practica hoy es limitada y condicionada: al no existir licencia de
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer encoder de tipo RoBERTa en su variante destilada (DistilRoBERTa), con 6 capas y aproximadamente 82 millones de parametros, sobre la que se anade una cabeza de clasificacion por token. El tag `arxiv:1910.09700` del repositorio no corresponde a un paper del modelo: es la referencia a Lacoste et al. (2019) sobre el calculo del impacto ambiental, incluida en la plantilla estandar de model card de HuggingFace. No hay ninguna publicacion tecnica asociada al checkpoint.
+La arquitectura es un transformer encoder de tipo RoBERTa en su variante destilada (DistilRoBERTa), con 6 capas y aproximadamente 82 millones de parametros, sobre la que se anade una cabeza de clasificacion por token. El tag `arxiv:1910.09700` del repositorio no corresponde a un paper del modelo: es la referencia a Lacoste et al. (2019) sobre el calculo del impacto ambiental, incluida en la plantilla estandar de model card de Hugging Face. No hay ninguna publicacion tecnica asociada al checkpoint.
 
 No se dispone de informacion sobre el procedimiento de entrenamiento: ni el numero de tokens, ni la composicion del dataset, ni si hubo ajuste fino supervisado, RLHF o DPO (tecnicas, por otra parte, poco habituales en modelos encoder de clasificacion). Tampoco se documentan hiperparametros, regimen de precision (fp32, fp16, bf16) ni infraestructura de computo. El unico dato estructural fiable es el recuento de parametros leido directamente de los pesos en safetensors. El sufijo `fold_2` del identificador apunta a que se trata del segundo pliegue de una validacion cruzada, lo que implicaria la existencia de otros checkpoints del mismo experimento, pero no hay confirmacion en la informacion disponible.
 
@@ -64,12 +64,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Una RTX 3060, RTX 4090, T4 o L4 cubren el modelo con holgura; una A100 o H100 resultan claramente sobredimensionadas para este tamano.
 - Compatibilidad con GPU de consumo: si, cabe en practicamente cualquier GPU de consumo moderna, e incluso en GPUs integradas, ya que el modelo es muy pequeno.
 - Ejecucion en CPU: viable, con latencias del orden de milisegundos por secuencia corta en un procesador moderno, aunque no se han publicado mediciones concretas.
-- Opciones de despliegue: pipeline de transformers, HuggingFace Inference Endpoints (el repo lleva el tag `endpoints_compatible`), exportacion a ONNX Runtime o TorchScript, y servidores de inferencia genericos para encoders. No hay versiones GGUF ni cuantizadas publicadas, por lo que llama.cpp u Ollama no son aplicables sin conversion previa.
+- Opciones de despliegue: pipeline de transformers, Hugging Face Inference Endpoints (el repo lleva el tag `endpoints_compatible`), exportacion a ONNX Runtime o TorchScript, y servidores de inferencia genericos para encoders. No hay versiones GGUF ni cuantizadas publicadas, por lo que llama.cpp u Ollama no son aplicables sin conversion previa.
 - Latencia y throughput: no disponibles (no se han publicado mediciones).
 
 ## Comparativa con modelos similares
 
-Los valores de la columna "modelo de referencia" corresponden a los checkpoints base originales de HuggingFace, no a este fine-tuning.
+Los valores de la columna "modelo de referencia" corresponden a los checkpoints base originales de Hugging Face, no a este fine-tuning.
 
 | Modelo | Parametros | Contexto tipico | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
@@ -94,7 +94,7 @@ La comparacion es estructural, no de rendimiento: no existen resultados publicad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eric-z2/WL-context-distilroberta-fold_2
+- Modelo en Hugging Face: https://huggingface.co/eric-z2/WL-context-distilroberta-fold_2
 - Referencia citada en el tag del repo (paper sobre impacto ambiental de Lacoste et al., 2019, no asociado al modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning mencionada en la plantilla de la model card: https://mlco2.github.io/impact
 

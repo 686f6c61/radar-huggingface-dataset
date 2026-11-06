@@ -74,8 +74,8 @@ Las únicas afirmaciones cualitativas disponibles, procedentes del autor del mod
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MiniCPM5-2B (este repositorio, GGUF) | 2,52 B | no disponible (etiquetado como long-context) | apache-2.0 | GGUF en HuggingFace; safetensors en el modelo base | Tool calling, agentes y despliegue en dispositivo declarados por el autor |
-| MiniCPM5-1B | no disponible | no disponible | no disponible | HuggingFace (openbmb) | Versión anterior de la misma serie, mismo enfoque on-device |
+| MiniCPM5-2B (este repositorio, GGUF) | 2,52 B | no disponible (etiquetado como long-context) | apache-2.0 | GGUF en Hugging Face; safetensors en el modelo base | Tool calling, agentes y despliegue en dispositivo declarados por el autor |
+| MiniCPM5-1B | no disponible | no disponible | no disponible | Hugging Face (openbmb) | Versión anterior de la misma serie, mismo enfoque on-device |
 | Qwen2.5-1.5B | ~1,54 B | 32.768 tokens | apache-2.0 | safetensors y GGUF | Menor tamaño y contexto documentado; buen soporte multilingüe general |
 | Gemma 2 2B | ~2,61 B | 8.192 tokens | licencia Gemma (con condiciones de uso) | safetensors y GGUF | Tamaño comparable, contexto más corto y licencia con restricciones adicionales |
 

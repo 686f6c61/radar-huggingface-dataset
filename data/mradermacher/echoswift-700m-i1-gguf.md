@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EchoSwift-700M es un modelo lingüístico compacto de unos 742 millones de parámetros, desarrollado por el usuario de HuggingFace adityavardhansharma y derivado de la familia de modelos LFM2 (Liquid Foundation Models) de Liquid AI, como indican las etiquetas `liquid-foundation-model` y `lfm2` de su ficha. Está orientado a escenarios on-device y edge AI, con soporte declarado para tool calling, búsqueda y generación de artefactos, lo que lo sitúa como un modelo ligero para asistentes locales en dispositivos con recursos limitados, incluyendo Android (etiqueta `litertlm`, asociada a LiteRT de Google).
+EchoSwift-700M es un modelo lingüístico compacto de unos 742 millones de parámetros, desarrollado por el usuario de Hugging Face adityavardhansharma y derivado de la familia de modelos LFM2 (Liquid Foundation Models) de Liquid AI, como indican las etiquetas `liquid-foundation-model` y `lfm2` de su ficha. Está orientado a escenarios on-device y edge AI, con soporte declarado para tool calling, búsqueda y generación de artefactos, lo que lo sitúa como un modelo ligero para asistentes locales en dispositivos con recursos limitados, incluyendo Android (etiqueta `litertlm`, asociada a LiteRT de Google).
 
 La ficha aquí documentada corresponde a la cuantización GGUF en versión imatrix (importancia-matrix) publicada por mradermacher, un cuantizador conocido por generar versiones optimizadas de modelos populares para su uso con llama.cpp y derivados. Esta variante incluye más de veinte cuantizaciones distintas, desde IQ1_S (0,3 GB) hasta Q6_K (0,7 GB), lo que permite ajustar el equilibrio entre calidad y huella de memoria en hardware muy modesto. El modelo declara inglés como único idioma y utiliza la licencia lfm-open-1.0 de Liquid AI.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM / memoria estimada: entre 0,3 GB (IQ1_S/IQ1_M) y 0,7 GB (Q6_K) solo de pesos; con contexto y overhead, se estima menos de 1,5 GB de RAM en la cuantización recomendada Q4_K_M (0,6 GB). Ejecutable íntegramente en CPU.
 - GPU recomendadas: no requiere GPU; cualquier GPU moderna con pocos GB de VRAM lo ejecuta con holgura si se desea aceleración (por ejemplo, RTX 3060 o superiores).
 - Consumer GPUs: cabe con enorme margen en prácticamente cualquier GPU doméstica actual, incluidas integradas; también en móviles Android vía LiteRT.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio, GPT4All y cualquier runtime compatible con GGUF; el modelo base admite la librería transformers de HuggingFace.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio, GPT4All y cualquier runtime compatible con GGUF; el modelo base admite la librería transformers de Hugging Face.
 - Latencia y throughput: no disponibles; dada la cuantización y el tamaño sub-1 GB, se espera inferencia muy rápida incluso en CPU de gama media, aunque no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | EchoSwift-700M (este modelo) | 742 M | no disponible | lfm-open-1.0 | Derivado LFM2, on-device, tool calling, GGUF imatrix |
 | LFM2-700M (Liquid AI) | ~700 M | no disponible en esta ficha | LFM Open License v1.0 | Familia original de la que deriva; optimizado para edge |
 | Qwen2.5-0.5B-Instruct | 494 M | 32.768 tokens | Apache 2.0 | Alternativa compacta muy popular, multilingüe |
-| SmolLM2-360M-Instruct | 360 M | 8.192 tokens | Apache 2.0 | Modelo ligero de HuggingFace para on-device |
+| SmolLM2-360M-Instruct | 360 M | 8.192 tokens | Apache 2.0 | Modelo ligero de Hugging Face para on-device |
 
 Nota: la comparación con Qwen2.5 y SmolLM2 es orientativa por categoría de tamaño; sus datos de contexto y licencia son conocidos, mientras que los de EchoSwift-700M no están publicados en la ficha disponible.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BrailleQwen-2B es un modelo publicado por ai4bharat en HuggingFace cuyo nombre y ficha indican que se trata de un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-2B, un transformer de aproximadamente 2.000 millones de parametros segun la denominacion del propio checkpoint base. La model card disponible se limita a declarar la licencia apache-2.0 y el campo `base_model`; no incluye descripcion, datos de entrenamiento, evaluaciones ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, con fecha de creacion 2026-10-26 y ultima actualizacion el mismo dia.
+BrailleQwen-2B es un modelo publicado por ai4bharat en Hugging Face cuyo nombre y ficha indican que se trata de un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-2B, un transformer de aproximadamente 2.000 millones de parametros segun la denominacion del propio checkpoint base. La model card disponible se limita a declarar la licencia apache-2.0 y el campo `base_model`; no incluye descripcion, datos de entrenamiento, evaluaciones ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, con fecha de creacion 2026-10-26 y ultima actualizacion el mismo dia.
 
 El problema que el modelo parece abordar es el tratamiento computacional del braille como sistema de escritura: conversion entre braille y texto plano, normalizacion de codificaciones y generacion de contenido accesible. Esta interpretacion se deduce unicamente del identificador del modelo, no de documentacion tecnica publicada por el autor, por lo que debe tratarse como hipotesis y no como capacidad verificada.
 
@@ -97,7 +97,7 @@ No se han identificado en la informacion proporcionada alternativas documentadas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ai4bharat/BrailleQwen-2B
+- Repositorio Hugging Face: https://huggingface.co/ai4bharat/BrailleQwen-2B
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-2B
 - Organizacion del autor: https://huggingface.co/ai4bharat
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfm_filtered_insert_xxf_character-3k_4k_5k_6k_7k_weightedavg_merge` es un modelo de generacion de texto publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una fusion (merge) de pesos generada con la herramienta mergekit: combina cinco checkpoints intermedios (global_step 3000, 4000, 5000, 6000 y 7000) de un mismo entrenamiento identificado internamente como `filtered_insert_xxf_character`. El resultado es un unico checkpoint de aproximadamente 6.856 millones de parametros (6,86 B) en formato bfloat16, con arquitectura GPT-NeoX.
+`sfm_filtered_insert_xxf_character-3k_4k_5k_6k_7k_weightedavg_merge` es un modelo de generacion de texto publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una fusion (merge) de pesos generada con la herramienta mergekit: combina cinco checkpoints intermedios (global_step 3000, 4000, 5000, 6000 y 7000) de un mismo entrenamiento identificado internamente como `filtered_insert_xxf_character`. El resultado es un unico checkpoint de aproximadamente 6.856 millones de parametros (6,86 B) en formato bfloat16, con arquitectura GPT-NeoX.
 
 La relevancia de esta publicacion es metodologica mas que de capacidad: ejemplifica una tecnica de "model soup" (promediado lineal de pesos con normalizacion) aplicada a checkpoints de una misma run de entrenamiento, con pesos crecientes (1, 2, 3, 4 y 5) que dan mas importancia a los pasos mas avanzados. El modelo esta etiquetado como conversacional y compatible con text-generation-inference, lo que sugiere una orientacion a instrucciones o dialogo.
 
@@ -74,10 +74,10 @@ La comparacion se limita a caracteristicas estructurales, ya que este modelo no 
 
 | Modelo | Parametros | Contexto | Licencia | Resultados publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| sfm_filtered_insert_xxf_character (este modelo) | 6,86 B | no disponible | no disponible | ninguno | HuggingFace, safetensors bf16 |
-| Pythia-6.9B | 6,9 B | 2048 tokens | Apache 2.0 | si (suite de evaluacion Pythia) | HuggingFace, safetensors |
-| Mistral-7B-v0.1 | 7,24 B | 8192 tokens | Apache 2.0 | si (MMLU, HumanEval, GSM8K) | HuggingFace, safetensors, GGUF |
-| Llama-2-7B | 6,74 B | 4096 tokens | Llama 2 Community License | si (MMLU, HumanEval, GSM8K) | HuggingFace, safetensors, GGUF |
+| sfm_filtered_insert_xxf_character (este modelo) | 6,86 B | no disponible | no disponible | ninguno | Hugging Face, safetensors bf16 |
+| Pythia-6.9B | 6,9 B | 2048 tokens | Apache 2.0 | si (suite de evaluacion Pythia) | Hugging Face, safetensors |
+| Mistral-7B-v0.1 | 7,24 B | 8192 tokens | Apache 2.0 | si (MMLU, HumanEval, GSM8K) | Hugging Face, safetensors, GGUF |
+| Llama-2-7B | 6,74 B | 4096 tokens | Llama 2 Community License | si (MMLU, HumanEval, GSM8K) | Hugging Face, safetensors, GGUF |
 
 Frente a estas alternativas, el modelo aqui descrito presenta las mayores incertidumbres: carece de licencia declarada, de contexto documentado y de cualquier evaluacion reproducible. Su unico valor diferencial es el procedimiento de fusion aplicado, no el rendimiento resultante.
 
@@ -96,7 +96,7 @@ Frente a estas alternativas, el modelo aqui descrito presenta las mayores incert
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-3k_4k_5k_6k_7k_weightedavg_merge
+- Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-3k_4k_5k_6k_7k_weightedavg_merge
 - mergekit (herramienta de fusion utilizada): https://github.com/cg123/mergekit
 - Paper del metodo de fusion lineal referenciado en las etiquetas (Model soups, Wortsman et al.): https://arxiv.org/abs/2203.05482
 - Repositorio del modelo Pythia / GPT-NeoX (referencia de arquitectura, no vinculado al autor): https://github.com/EleutherAI/pythia

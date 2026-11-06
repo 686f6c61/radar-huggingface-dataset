@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks de otros clasificadores de sentimiento fina
 
 | Alternativa | Parametros | Contexto | Accuracy | Macro-F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (ONNX int8) | No disponible (MiniLM-L6) | No disponible | 0,820 | 0,762 | MIT | HuggingFace, 23 MB |
+| Este modelo (ONNX int8) | No disponible (MiniLM-L6) | No disponible | 0,820 | 0,762 | MIT | Hugging Face, 23 MB |
 | Profesor Qwen2.5-7B-Instruct (zero-shot, 4-bit) | 7 mil millones | No disponible | 0,832 | 0,788 | No disponible en la ficha | Requiere GPU, 5,4 GB |
 | Estudiante con etiquetas doradas (cota superior) | No disponible (MiniLM-L6) | No disponible | 0,874 | 0,832 | No aplica (referencia) | No distribuido |
 | Cascada estudiante + profesor (20 % derivado) | Combinacion | No disponible | 0,835 | 0,785 | Mixta | Requiere ambos modelos |
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks de otros clasificadores de sentimiento fina
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shroomy/tinydistill-financial-tweets-minilm
+- Modelo en Hugging Face: https://huggingface.co/Shroomy/tinydistill-financial-tweets-minilm
 - Repositorio de tinydistill: https://github.com/Andreas-Hum/tinydistill
 - Modelo base estudiante: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Modelo profesor: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

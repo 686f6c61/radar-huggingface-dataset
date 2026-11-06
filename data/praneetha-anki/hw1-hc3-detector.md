@@ -3,11 +3,11 @@
 # praneetha-anki/hw1-hc3-detector
 ## Resumen
 
-El modelo `praneetha-anki/hw1-hc3-detector` es un clasificador de texto publicado en HuggingFace por el usuario praneetha-anki, con arquitectura basada en BERT (según la etiqueta `bert` del repositorio) y orientado a la tarea de `text-classification`. Cuenta con 22.713.986 parámetros reales confirmados en el fichero de pesos `safetensors`, y por su nombre (`hw1-hc3-detector`) parece concebido como un detector de texto generado artificialmente, probablemente entrenado o inspirado en el corpus HC3 (Human ChatGPT Comparison Corpus) de Hello-SimpleAI. Sin embargo, esta intención no está documentada en la model card.
+El modelo `praneetha-anki/hw1-hc3-detector` es un clasificador de texto publicado en Hugging Face por el usuario praneetha-anki, con arquitectura basada en BERT (según la etiqueta `bert` del repositorio) y orientado a la tarea de `text-classification`. Cuenta con 22.713.986 parámetros reales confirmados en el fichero de pesos `safetensors`, y por su nombre (`hw1-hc3-detector`) parece concebido como un detector de texto generado artificialmente, probablemente entrenado o inspirado en el corpus HC3 (Human ChatGPT Comparison Corpus) de Hello-SimpleAI. Sin embargo, esta intención no está documentada en la model card.
 
 El problema que aborda, de confirmarse, es la detección de texto generado por modelos de lenguaje frente a texto escrito por humanos, una tarea relevante para integridad académica, moderación de contenido y control de calidad editorial. Su tamaño reducido (unos 91 MB en fp32) lo sitúa en la categoría de modelos ligeros, aptos para inferencia en CPU o en GPUs de gama baja con latencias muy bajas.
 
-La relevancia de esta ficha es limitada por la falta de documentación: la model card es la plantilla automática de HuggingFace sin editar, sin licencia declarada, sin idiomas declarados, sin datos de entrenamiento, sin benchmarks y con 0 descargas y 0 likes en el momento de la consulta. Existen al menos otros tres repositorios con el mismo nombre y estructura (`Aishkrish/hw1-hc3-detector`, `skyyyyks/hw1-hc3-detector`, `purabshingvi/hw1-hc3-detector`), lo que sugiere ejercicios académicos o forks derivados de una misma práctica.
+La relevancia de esta ficha es limitada por la falta de documentación: la model card es la plantilla automática de Hugging Face sin editar, sin licencia declarada, sin idiomas declarados, sin datos de entrenamiento, sin benchmarks y con 0 descargas y 0 likes en el momento de la consulta. Existen al menos otros tres repositorios con el mismo nombre y estructura (`Aishkrish/hw1-hc3-detector`, `skyyyyks/hw1-hc3-detector`, `purabshingvi/hw1-hc3-detector`), lo que sugiere ejercicios académicos o forks derivados de una misma práctica.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ La relevancia de esta ficha es limitada por la falta de documentación: la model
 
 La arquitectura es un transformer encoder de tipo BERT, segun la etiqueta `bert` declarada en el repositorio. El recuento de parametros (22.713.986) es inferior al de BERT-base (unos 110 millones), lo que apunta a una configuracion reducida (menos capas, menor dimension de hidden o vocabulario mas pequeno) o a una cabeza de clasificacion sobre un encoder compacto. No se dispone de informacion confirmada sobre el numero de capas, cabezas de atencion ni dimension del modelo.
 
-No hay informacion sobre los datos de entrenamiento, el numero de tokens, la composicion del dataset, el regimen de precision (fp32, fp16, bf16), el uso de RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card del autor es la plantilla automatica de HuggingFace con todos los campos marcados como `[More Information Needed]`. La unica referencia tecnica indirecta es la etiqueta `arxiv:1910.09700`, que corresponde al articulo del calculador de impacto medioambiental (Lacoste et al., 2019), incluido por defecto en la plantilla y no a un paper propio del modelo.
+No hay informacion sobre los datos de entrenamiento, el numero de tokens, la composicion del dataset, el regimen de precision (fp32, fp16, bf16), el uso de RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card del autor es la plantilla automatica de Hugging Face con todos los campos marcados como `[More Information Needed]`. La unica referencia tecnica indirecta es la etiqueta `arxiv:1910.09700`, que corresponde al articulo del calculador de impacto medioambiental (Lacoste et al., 2019), incluido por defecto en la plantilla y no a un paper propio del modelo.
 
 ## Capacidades
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| praneetha-anki/hw1-hc3-detector | 22.713.986 | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
-| Aishkrish/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| skyyyyks/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| purabshingvi/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| praneetha-anki/hw1-hc3-detector | 22.713.986 | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
+| Aishkrish/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| skyyyyks/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| purabshingvi/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 Los tres modelos comparables comparten el mismo nombre de identificador y parecen derivar de la misma practica o ejercicio. No hay datos publicos de parametros, contexto, rendimiento ni licencia para ninguno de ellos, por lo que la comparacion cuantitativa no es posible. Como referencia externa del dominio, el proyecto Hello-SimpleAI mantiene el corpus HC3 y una coleccion de detectores, pero no se dispone de los resultados de sus modelos en esta ficha.
 
@@ -93,7 +93,7 @@ Los tres modelos comparables comparten el mismo nombre de identificador y parece
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/praneetha-anki/hw1-hc3-detector
+- Pagina del modelo en Hugging Face: https://huggingface.co/praneetha-anki/hw1-hc3-detector
 - Repositorio con el mismo nombre (Aishkrish): https://huggingface.co/Aishkrish/hw1-hc3-detector
 - Repositorio con el mismo nombre (skyyyyks): https://huggingface.co/skyyyyks/hw1-hc3-detector
 - Repositorio con el mismo nombre (purabshingvi): https://free2aitools.com/model/purabshingvi/hw1-hc3-detector

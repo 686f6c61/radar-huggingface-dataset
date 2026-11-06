@@ -94,7 +94,7 @@ No se dispone en la informacion proporcionada de datos de otros modelos comparab
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/eva02
+- Model card en Hugging Face: https://huggingface.co/fastforks/eva02
 - Repositorio de codigo de fastforks: https://github.com/kleinicke/fastforks
 - Kernels del backend CUDA: https://huggingface.co/fastforks/kernels
 - Pesos originales (timm): https://huggingface.co/timm/eva02_large_patch14_448.mim_m38m_ft_in22k_in1k

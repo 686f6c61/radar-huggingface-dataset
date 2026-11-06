@@ -77,9 +77,9 @@ Nota: estos resultados no estan verificados por una organizacion independiente (
 
 | Modelo | Parametros | Contexto | WER (LS clean) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| parakeet-tdt-0.6b-v2-ternary (este modelo) | 0,6B (ternario en el 98 por ciento) | No disponible | 2,05 | cc-by-4.0 | HuggingFace (rajb3) |
-| nvidia/parakeet-tdt-0.6b-v2 | 0,6B | No disponible | 1,69 (publicado por NVIDIA) | No disponible en la informacion | HuggingFace (NVIDIA) |
-| nvidia/parakeet-tdt-0.6b-v3 | 0,6B | No disponible | No disponible | No disponible | HuggingFace (NVIDIA) |
+| parakeet-tdt-0.6b-v2-ternary (este modelo) | 0,6B (ternario en el 98 por ciento) | No disponible | 2,05 | cc-by-4.0 | Hugging Face (rajb3) |
+| nvidia/parakeet-tdt-0.6b-v2 | 0,6B | No disponible | 1,69 (publicado por NVIDIA) | No disponible en la informacion | Hugging Face (NVIDIA) |
+| nvidia/parakeet-tdt-0.6b-v3 | 0,6B | No disponible | No disponible | No disponible | Hugging Face (NVIDIA) |
 
 La principal alternativa es el modelo original parakeet-tdt-0.6b-v2, del que esta variante deriva: comparte arquitectura, tamano de parametros y licencia base, pero sacrifica precision (incremento de la media de WER de 6,45 a 6,84 por ciento) a cambio de reducir el fichero de pesos un factor cercano a 13,7x. La version v3 amplia el soporte a 25 idiomas europeos con deteccion automatica de idioma, por lo que no es directamente comparable para tareas exclusivamente en ingles.
 
@@ -96,7 +96,7 @@ La principal alternativa es el modelo original parakeet-tdt-0.6b-v2, del que est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rajb3/parakeet-tdt-0.6b-v2-ternary
+- Modelo en Hugging Face: https://huggingface.co/rajb3/parakeet-tdt-0.6b-v2-ternary
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
 - Version multilingue v3: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - NVIDIA NIM (parakeet-tdt-0.6b-v2): https://build.nvidia.com/nvidia/parakeet-tdt-0_6b-v2

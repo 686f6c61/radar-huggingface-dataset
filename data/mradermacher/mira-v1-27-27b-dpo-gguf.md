@@ -22,7 +22,7 @@ La información publicada es muy escasa: no hay datos de contexto, composición 
 | Formato de pesos | GGUF (este repositorio); el modelo base se distribuye en formato transformers |
 | Modelo base | Lambent/Mira-v1.27-27B-dpo |
 | Tamaño del repositorio | 186,7 GB (incluye todas las cuantizaciones) |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -105,7 +105,7 @@ Dado que no hay resultados de evaluación publicados, no es posible afirmar que 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/Mira-v1.27-27B-dpo-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/Mira-v1.27-27B-dpo-GGUF
 - Modelo base: https://huggingface.co/Lambent/Mira-v1.27-27B-dpo
 - Cuantizaciones ponderadas con imatrix del mismo modelo: https://huggingface.co/mradermacher/Mira-v1.27-27B-dpo-i1-GGUF
 - Página de descargas del autor para este modelo: https://hf.tst.eu/model#Mira-v1.27-27B-dpo-GGUF

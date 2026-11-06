@@ -96,12 +96,12 @@ No se dispone de datos sobre otros routers comparables de la misma categoria en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheWiderLensInitiative/laya-for-clara
+- Modelo en Hugging Face: https://huggingface.co/TheWiderLensInitiative/laya-for-clara
 - Repositorio de Clara (codigo fuente y datos de entrenamiento en `laya/`): https://github.com/TheWiderLensInitiative/clara
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - ModernBERT-large (Answer.AI): https://huggingface.co/answerdotai/ModernBERT-large
 - Sitio de Laya (ConvAI Innovations): https://laya.convaiinnovations.com/
 - Laya AI: https://layaai.org/
 - Que es Laya AI: https://laya-ai.com/what-is-laya
-- Blog de HuggingFace sobre el modelo Laya: https://huggingface.co/blog/sora-2/laya-ai-model-how-it-works-run-it-locally-and-eval
+- Blog de Hugging Face sobre el modelo Laya: https://huggingface.co/blog/sora-2/laya-ai-model-how-it-works-run-it-locally-and-eval
 - Acerca de Laya AI: https://laya-ai.com/about

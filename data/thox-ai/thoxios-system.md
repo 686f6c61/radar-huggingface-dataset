@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ThoxIOS-System es un paquete de configuracion publicado por Thox-ai que combina los pesos sin modificar de Qwen3-1.7B con un perfil de sistema propio de THOX (denominado THOX iOS System Profile) y una base de conocimiento versionada (THOX Knowledge Pack v0.1, con 8 entradas publicas verificadas en formato JSONL). El repositorio de HuggingFace no contiene pesos entrenados por THOX: contiene el `Modelfile` de Ollama, un `manifest.json` y el fichero JSONL de conocimiento. El modelo ejecutable se distribuye a traves de Ollama (`ollama run Thox-ai/thox-ios-system`), que descarga los pesos originales de Qwen3-1.7B desde el pin de su digest.
+ThoxIOS-System es un paquete de configuracion publicado por Thox-ai que combina los pesos sin modificar de Qwen3-1.7B con un perfil de sistema propio de THOX (denominado THOX iOS System Profile) y una base de conocimiento versionada (THOX Knowledge Pack v0.1, con 8 entradas publicas verificadas en formato JSONL). El repositorio de Hugging Face no contiene pesos entrenados por THOX: contiene el `Modelfile` de Ollama, un `manifest.json` y el fichero JSONL de conocimiento. El modelo ejecutable se distribuye a traves de Ollama (`ollama run Thox-ai/thox-ios-system`), que descarga los pesos originales de Qwen3-1.7B desde el pin de su digest.
 
 El origen del proyecto es relevante para entender que se esta evaluando: el kit THOX iOS Model Kit define este perfil como sustituto local de Apple Foundation Models, cuyos pesos estan gestionados por el sistema en el dispositivo y no se distribuyen en ningun formato descargable. Segun la model card, una decision interna registrada el 2026-10-31 autoriza publicar el perfil de sistema sobre Qwen3-1.7B como stand-in explicitamente etiquetado, con la misma disciplina de grounding y postura de enrutado, pero sin ninguna relacion con Apple ni cualificacion para dispositivo.
 
@@ -75,7 +75,7 @@ El autor advierte que el throughput debe tratarse como suelo en condiciones de h
 
 | Modelo | Parametros | Contexto | Entrenamiento propio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThoxIOS-System | 1,7B | 8.192 tokens | No (configuracion sobre Qwen3-1.7B) | Apache-2.0 | Ollama + repo de empaquetado en HuggingFace |
+| ThoxIOS-System | 1,7B | 8.192 tokens | No (configuracion sobre Qwen3-1.7B) | Apache-2.0 | Ollama + repo de empaquetado en Hugging Face |
 | Qwen3-1.7B (base) | 1,7B | no disponible en esta ficha | Si (upstream Qwen) | Apache-2.0 | Pesos descargables |
 | Apple Foundation Models | no disponible | no disponible | Si (Apple) | no disponible | Gestionado por el sistema en dispositivo, sin pesos descargables |
 
@@ -95,7 +95,7 @@ La comparacion con otras alternativas de la misma categoria (perfiles de configu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxIOS-System
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxIOS-System
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Ollama: `ollama run Thox-ai/thox-ios-system`
 - Papers, blogs, repos o demos adicionales: no disponible en la informacion proporcionada.

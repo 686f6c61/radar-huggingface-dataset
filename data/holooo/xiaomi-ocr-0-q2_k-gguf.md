@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento del modelo ni de alternativas comparables 
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/holooo/Xiaomi-OCR-0-Q2_K-GGUF
+- Ficha en Hugging Face: https://huggingface.co/holooo/Xiaomi-OCR-0-Q2_K-GGUF
 - Modelo base: https://huggingface.co/xiaomi-research/Xiaomi-OCR-0
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

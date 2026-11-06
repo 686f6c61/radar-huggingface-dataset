@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kolibri-1-mic | 16,5 M | no disponible | Fixture de pruebas | no disponible | HuggingFace (`huggingface-mic/Kolibri-1-mic`) |
-| Aleph-Alpha/Kolibri-1 | no disponible en la informacion | no disponible | Modelo base de generacion de texto | no disponible | HuggingFace (`Aleph-Alpha/Kolibri-1`) |
-| Otros fixtures de `transformers-mic` | variable | no disponible | Pruebas de integracion | no disponible | HuggingFace (`huggingface-mic`) |
+| Kolibri-1-mic | 16,5 M | no disponible | Fixture de pruebas | no disponible | Hugging Face (`huggingface-mic/Kolibri-1-mic`) |
+| Aleph-Alpha/Kolibri-1 | no disponible en la informacion | no disponible | Modelo base de generacion de texto | no disponible | Hugging Face (`Aleph-Alpha/Kolibri-1`) |
+| Otros fixtures de `transformers-mic` | variable | no disponible | Pruebas de integracion | no disponible | Hugging Face (`huggingface-mic`) |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/Kolibri-1-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/Kolibri-1-mic
 - Modelo base: https://huggingface.co/Aleph-Alpha/Kolibri-1
 - Manifiesto de contrato: https://huggingface.co/huggingface-mic/Kolibri-1-mic/blob/main/integration.json
 - Uso con Transformers: https://huggingface.co/huggingface-mic/Kolibri-1-mic/blob/main/integrations/transformers/usage.md

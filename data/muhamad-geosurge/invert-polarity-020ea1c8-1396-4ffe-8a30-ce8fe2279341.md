@@ -109,9 +109,9 @@ No se dispone de datos de rendimiento comparado entre este fine-tune y alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-020ea1c8-1396-4ffe-8a30-ce8fe2279341
+- Repositorio en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-020ea1c8-1396-4ffe-8a30-ce8fe2279341
 - Modelo base: https://huggingface.co/google/gemma-4-E4B
-- Colección Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Colección Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Repositorio GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento de Gemma 4: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentación oficial: https://ai.google.dev/gemma/docs/core

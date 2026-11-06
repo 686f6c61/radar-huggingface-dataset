@@ -76,9 +76,9 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gregm123456/clip-interrogator-axera-hw
+- Repositorio Hugging Face: https://huggingface.co/gregm123456/clip-interrogator-axera-hw
 - Modelo base: https://huggingface.co/openai/clip-vit-base-patch32
 - Proyecto padre (AXERA-TECH): https://github.com/AXERA-TECH/sd1.5-lcm.axera
 - Documento sobre modos de fallo en vocabularios grandes: https://github.com/AXERA-TECH/sd1.5-lcm.axera/blob/main/img2txt/clip_constrained_output.md
 - CLIP Interrogator original (pharmapsychotic): https://github.com/pharmapsychotic/clip-interrogator
-- Space de CLIP Interrogator en HuggingFace: https://huggingface.co/spaces/pharmapsychotic/CLIP-Interrogator
+- Space de CLIP Interrogator en Hugging Face: https://huggingface.co/spaces/pharmapsychotic/CLIP-Interrogator

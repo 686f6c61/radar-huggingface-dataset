@@ -85,7 +85,7 @@ El modelo hermano `qwen3.5-4b-agda-autoformalize-context-GGUF` comparte base y l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/astral-expmath/qwen3.5-4b-agda-steps-GGUF
+- Modelo en Hugging Face: https://huggingface.co/astral-expmath/qwen3.5-4b-agda-steps-GGUF
 - Modelo hermano (declaración completa): https://huggingface.co/astral-expmath/qwen3.5-4b-agda-autoformalize-context-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - llama.cpp: https://github.com/ggml-org/llama.cpp

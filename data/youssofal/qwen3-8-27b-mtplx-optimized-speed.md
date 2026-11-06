@@ -67,7 +67,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed
+- Repositorio Hugging Face: https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - MTPLX en GitHub: https://github.com/youssofal/MTPLX
 - Sitio web de MTPLX: https://mtplx.com

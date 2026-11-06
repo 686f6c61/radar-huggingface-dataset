@@ -85,7 +85,7 @@ No hay otros modelos comparables en el ecosistema MLX con esta función específ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vvsotnikov/Qwen3.8-27B-MTP-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/vvsotnikov/Qwen3.8-27B-MTP-MLX-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE
 - Versión bf16 del drafter: https://huggingface.co/vvsotnikov/Qwen3.8-27B-MTP-MLX-bf16

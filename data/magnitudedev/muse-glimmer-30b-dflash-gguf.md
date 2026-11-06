@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Muse-Glimmer-30B-DFlash-GGUF | Borrador DFlash para decodificacion especulativa | 2,56 B (borrador) | Ventana deslizante de 2049 en el bloque borrador | Apache 2.0 | HuggingFace, 0 descargas |
-| unsloth/Muse-Glimmer-30B-GGUF | Repositorio GGUF origen del checkpoint | No disponible | No disponible | No disponible en la informacion | HuggingFace (commit fijado) |
+| Muse-Glimmer-30B-DFlash-GGUF | Borrador DFlash para decodificacion especulativa | 2,56 B (borrador) | Ventana deslizante de 2049 en el bloque borrador | Apache 2.0 | Hugging Face, 0 descargas |
+| unsloth/Muse-Glimmer-30B-GGUF | Repositorio GGUF origen del checkpoint | No disponible | No disponible | No disponible en la informacion | Hugging Face (commit fijado) |
 | Otros borradores de decodificacion especulativa (EAGLE, Medusa) | Cabezas o modelos borrador | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos comparativos de rendimiento entre este borrador y alternativas de la misma categoria en la informacion proporcionada.
@@ -83,7 +83,7 @@ No se dispone de datos comparativos de rendimiento entre este borrador y alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/magnitudedev/Muse-Glimmer-30B-DFlash-GGUF
+- Hugging Face: https://huggingface.co/magnitudedev/Muse-Glimmer-30B-DFlash-GGUF
 - Modelo base declarado: meta-models/Muse-Glimmer-30B-Assistant
 - Repositorio origen (GGUF): https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF/tree/1afeb8e879f60116d206cf724425dbe1e1a2f7f5
 - Implementacion de referencia de Transformers (muse_glimmer_assistant): https://github.com/huggingface/transformers/blob/v5.17.0/src/transformers/models/muse_glimmer_assistant/modeling_muse_glimmer_assistant.py

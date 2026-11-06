@@ -4,7 +4,7 @@
 
 Este modelo es un fine-tuning especializado del modelo científico multimodal Intern-S1-mini-lm (8.200 millones de parámetros) para la predicción de biodisponibilidad molecular mediante transferencia de ensayos (*assay transfer*). Desarrollado por el usuario jiosephlee, el checkpoint se seleccionó por su rendimiento en regresión KNN con métrica MAE@5 sobre un dataset de propiedades moleculares con votación media y límite de grado 16. El modelo aborda el problema de predecir la biodisponibilidad de compuestos químicos a partir de representaciones moleculares, un paso crítico en el descubrimiento de fármacos.
 
-La arquitectura subyacente es un transformer basado en Qwen3 (según los tags de HuggingFace), con una longitud de contexto de 4096 tokens. El entrenamiento se realizó durante 40 épocas sobre un dataset de transferencia de propiedades, empleando pérdida de objetivo suave con peso de entropía cruzada de formato de 0,1. Este checkpoint se retuvo en el paso 75 (época 15) por su mejor MAE@5 en validación. Es un modelo de investigación, no un predictor validado clínicamente, y su relevancia radica en demostrar mejoras significativas frente a métodos clásicos basados en huellas Morgan para tareas de ranking molecular.
+La arquitectura subyacente es un transformer basado en Qwen3 (según los tags de Hugging Face), con una longitud de contexto de 4096 tokens. El entrenamiento se realizó durante 40 épocas sobre un dataset de transferencia de propiedades, empleando pérdida de objetivo suave con peso de entropía cruzada de formato de 0,1. Este checkpoint se retuvo en el paso 75 (época 15) por su mejor MAE@5 en validación. Es un modelo de investigación, no un predictor validado clínicamente, y su relevancia radica en demostrar mejoras significativas frente a métodos clásicos basados en huellas Morgan para tareas de ranking molecular.
 
 ## Especificaciones técnicas
 
@@ -80,8 +80,8 @@ No se ha publicado una comparativa directa con otros modelos de predicción de p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiosephlee/intern-s1-mini-molecule-property-transfer-v1.2-bioavailability-ma-best-knn-mae5
-- Modelo base en HuggingFace: https://huggingface.co/jiosephlee/Intern-S1-mini-lm
+- Modelo en Hugging Face: https://huggingface.co/jiosephlee/intern-s1-mini-molecule-property-transfer-v1.2-bioavailability-ma-best-knn-mae5
+- Modelo base en Hugging Face: https://huggingface.co/jiosephlee/Intern-S1-mini-lm
 - Repositorio GitHub de Intern-S1: https://github.com/InternLM/Intern-S1
 - Paper de Intern-S1 en arXiv: https://arxiv.org/abs/2508.15763
 - Versión FP8 del modelo base en ModelScope: https://www.modelscope.cn/models/Shanghai_AI_Laboratory/Intern-S1-mini-FP8

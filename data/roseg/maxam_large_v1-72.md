@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MaXaM_Large_v1.72 es un modelo de lenguaje de gran tamaño desarrollado por Triadic Intelligence Labs, publicado en HuggingFace por el usuario RoseG. Se trata de un ajuste fino (fine-tuning) del modelo base Llama-3.1-70B, entrenado mediante Supervised Fine-Tuning (SFT) sobre un dataset denominado FTK, generado con la herramienta SFT Studio Pro. El modelo está pensado para generación de texto y tareas de lenguaje natural, y se distribuye bajo la licencia Llama 3.1.
+MaXaM_Large_v1.72 es un modelo de lenguaje de gran tamaño desarrollado por Triadic Intelligence Labs, publicado en Hugging Face por el usuario RoseG. Se trata de un ajuste fino (fine-tuning) del modelo base Llama-3.1-70B, entrenado mediante Supervised Fine-Tuning (SFT) sobre un dataset denominado FTK, generado con la herramienta SFT Studio Pro. El modelo está pensado para generación de texto y tareas de lenguaje natural, y se distribuye bajo la licencia Llama 3.1.
 
 Con aproximadamente 70.550 millones de parámetros, MaXaM_Large_v1.72 se posiciona en la categoría de modelos de gran escala, similar a otros LLMs de 70B. Su relevancia radica en que ofrece una alternativa de código abierto con uso responsable, aunque la documentación pública es extremadamente limitada, lo que dificulta una evaluación técnica completa. El repositorio ocupa 282.2 GB y los pesos están en formato safetensors.
 
@@ -62,9 +62,9 @@ No se dispone de datos comparativos oficiales. Como referencia, se puede compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MaXaM_Large_v1.72 | 70.5B | no disponible | llama3.1 | HuggingFace |
-| Llama-3.1-70B | 70.6B | 128K | llama3.1 | HuggingFace |
-| Qwen 2.5 72B | 72.7B | 128K | Apache 2.0 | HuggingFace |
+| MaXaM_Large_v1.72 | 70.5B | no disponible | llama3.1 | Hugging Face |
+| Llama-3.1-70B | 70.6B | 128K | llama3.1 | Hugging Face |
+| Qwen 2.5 72B | 72.7B | 128K | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -77,6 +77,6 @@ No se dispone de datos comparativos oficiales. Como referencia, se puede compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RoseG/MaXaM_Large_v1.72
+- Repositorio Hugging Face: https://huggingface.co/RoseG/MaXaM_Large_v1.72
 - Dominio de Triadic Intelligence Labs: https://triadai.agency
 - Dominio alternativo: https://triadicai.agency

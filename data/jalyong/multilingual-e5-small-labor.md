@@ -102,6 +102,6 @@ La comparación cuantitativa con el modelo base y con alternativas no está disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jalyong/multilingual-e5-small-labor
+- Modelo en Hugging Face: https://huggingface.co/Jalyong/multilingual-e5-small-labor
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/Jalyong/labor-embedding-data
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small

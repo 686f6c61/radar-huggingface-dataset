@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OTC-Qwen3.8-27B-CPO-GRPO-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo base OTC-Qwen3.8-27B-CPO-GRPO, publicado por el usuario frankleaf en HuggingFace. El autor de esta ficha, mradermacher, se limita a generar y distribuir las versiones cuantizadas para su uso con llama.cpp y herramientas compatibles, sin aportar informacion adicional sobre el entrenamiento o las capacidades del modelo original.
+OTC-Qwen3.8-27B-CPO-GRPO-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo base OTC-Qwen3.8-27B-CPO-GRPO, publicado por el usuario frankleaf en Hugging Face. El autor de esta ficha, mradermacher, se limita a generar y distribuir las versiones cuantizadas para su uso con llama.cpp y herramientas compatibles, sin aportar informacion adicional sobre el entrenamiento o las capacidades del modelo original.
 
 El nombre del repositorio sugiere que el modelo subyacente parte de una base Qwen de 27.000 millones de parametros (posiblemente una variante de la familia Qwen3), y que ha sido afinado mediante tecnicas de alineacion como CPO (Contrastive Preference Optimization) y GRPO (Group Relative Policy Optimization). Sin embargo, esta informacion no esta confirmada en la model card disponible, que se reduce a metadatos tecnicos del proceso de cuantizacion.
 

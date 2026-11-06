@@ -71,5 +71,5 @@ No se dispone de información suficiente para comparar con alternativas de la mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/q1716523669/mllm-cogrpo-heter-internvl35-8b-x-gemma3-12b-mmr1-mmupt-groupB-full
+- Repositorio Hugging Face: https://huggingface.co/q1716523669/mllm-cogrpo-heter-internvl35-8b-x-gemma3-12b-mmr1-mmupt-groupB-full
 - Dataset de archivo de experimentos y logs: https://huggingface.co/datasets/q1716523669/mllm-mmr1-experiment-archive

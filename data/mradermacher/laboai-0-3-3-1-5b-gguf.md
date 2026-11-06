@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LaboAI-0.3.3-1.5B-GGUF es la version cuantizada en formato GGUF del modelo LaboAI/LaboAI-0.3.3-1.5B, publicada por el usuario mradermacher, un creador conocido en HuggingFace por generar cuantizaciones estaticas de modelos de terceros para su ejecucion local. El repositorio no es un modelo original, sino un artefacto derivado: su unico contenido es el conjunto de pesos convertidos a GGUF a partir del modelo base.
+LaboAI-0.3.3-1.5B-GGUF es la version cuantizada en formato GGUF del modelo LaboAI/LaboAI-0.3.3-1.5B, publicada por el usuario mradermacher, un creador conocido en Hugging Face por generar cuantizaciones estaticas de modelos de terceros para su ejecucion local. El repositorio no es un modelo original, sino un artefacto derivado: su unico contenido es el conjunto de pesos convertidos a GGUF a partir del modelo base.
 
 El nombre del repositorio indica un modelo de aproximadamente 1,5 mil millones de parametros, en su version 0.3.3. La model card publicada por el autor es minima y se limita a una linea que enlaza al modelo original; no incluye informacion sobre arquitectura, datos de entrenamiento, idiomas, licencia ni capacidades.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LaboAI-0.3.3-1.5B-GGUF | ~1,5B | no disponible | GGUF | no disponible | HuggingFace (mradermacher) |
-| Qwen2.5-1.5B-Instruct (GGUF) | 1,5B | 32.768 tokens | GGUF / safetensors | Apache 2.0 | HuggingFace, Ollama |
-| Llama 3.2 1B Instruct (GGUF) | 1,23B | 128.000 tokens | GGUF / safetensors | Llama 3.2 Community License | HuggingFace, Ollama |
-| SmolLM2-1.7B-Instruct (GGUF) | 1,7B | 8.192 tokens | GGUF / safetensors | Apache 2.0 | HuggingFace |
+| LaboAI-0.3.3-1.5B-GGUF | ~1,5B | no disponible | GGUF | no disponible | Hugging Face (mradermacher) |
+| Qwen2.5-1.5B-Instruct (GGUF) | 1,5B | 32.768 tokens | GGUF / safetensors | Apache 2.0 | Hugging Face, Ollama |
+| Llama 3.2 1B Instruct (GGUF) | 1,23B | 128.000 tokens | GGUF / safetensors | Llama 3.2 Community License | Hugging Face, Ollama |
+| SmolLM2-1.7B-Instruct (GGUF) | 1,7B | 8.192 tokens | GGUF / safetensors | Apache 2.0 | Hugging Face |
 
 La comparativa se ofrece como referencia de categoria (modelos de ~1,5B parametros en GGUF). No se dispone de datos que permitan comparar el rendimiento de LaboAI-0.3.3-1.5B frente a estas alternativas.
 

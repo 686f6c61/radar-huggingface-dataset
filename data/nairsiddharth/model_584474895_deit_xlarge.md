@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_584474895_deit_xlarge` es una implementación a escala **xlarge** de la arquitectura **DeiT** (Data-efficient Image Transformers), desarrollada por el usuario de HuggingFace `Nairsiddharth`. A diferencia de los DeiT originales de Facebook Research, este modelo incorpora modificaciones sustanciales: atención con *grouped query*, fusión de características *bilinear*, normalización por *GroupNorm*, activación *GELU-tanh* e inicialización *trunc normal*. Está orientado a tareas de **matching** (emparejamiento o correspondencia), probablemente entre imágenes o entre imagen y texto, aunque la información disponible no especifica la modalidad exacta.
+El modelo `model_584474895_deit_xlarge` es una implementación a escala **xlarge** de la arquitectura **DeiT** (Data-efficient Image Transformers), desarrollada por el usuario de Hugging Face `Nairsiddharth`. A diferencia de los DeiT originales de Facebook Research, este modelo incorpora modificaciones sustanciales: atención con *grouped query*, fusión de características *bilinear*, normalización por *GroupNorm*, activación *GELU-tanh* e inicialización *trunc normal*. Está orientado a tareas de **matching** (emparejamiento o correspondencia), probablemente entre imágenes o entre imagen y texto, aunque la información disponible no especifica la modalidad exacta.
 
 El modelo se distribuye bajo licencia **CC-BY-4.0** y no incluye pesos preentrenados ni archivos de modelo en el repositorio; únicamente contiene un archivo Python (`model_584474895_deit_xlarge.py`). Se trata de un repositorio con cero descargas y cero likes, lo que indica que es un experimento o un trabajo preliminar sin adopción por parte de la comunidad. La fecha de creación es el 21 de agosto de 2026, lo que sugiere que es un proyecto muy reciente. No se dispone de información sobre el tamaño de parámetros, contexto, cuantización o idiomas soportados.
 
@@ -87,7 +87,7 @@ La comparativa es meramente orientativa: el modelo analizado no tiene pesos púb
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Nairsiddharth/model_584474895_deit_xlarge)
+- [Repositorio en Hugging Face](https://huggingface.co/Nairsiddharth/model_584474895_deit_xlarge)
 - [Repositorio oficial de DeiT (GitHub)](https://github.com/facebookresearch/deit)
 - [Documentación de DeiT en Hugging Face](https://huggingface.co/docs/transformers/v4.49.0/en/model_doc/deit)
 - [Repositorio de DeiT-Transformers (fork)](https://github.com/peternara/deit-Transformers)

@@ -6,7 +6,7 @@
 
 El problema que resuelve es muy concreto: el fichero `ava.traineddata` que circula en la practica no fue entrenado con texto avar, sino que es el `Cyrillic.traineddata` original con dos entradas del *unicharset* renombradas (U+0406 `І` → U+04C0 `Ӏ` y U+0456 `і` → U+04CF `ӏ`), con pesos identicos a los de origen. Ese modelo descarta la *palochka*, emite `]` o genera U+04CF donde el avar exige U+04C0. Este modelo reentrena la red para emitir los puntos de codigo correctos, algo critico para indexacion y busqueda de texto.
 
-No es un modelo de lenguaje ni un transformer: es un reconocedor de lineas de texto de Tesseract (LSTM sobre caracteristicas de imagen), con un fichero float de 11 MB, licencia Apache-2.0 y soporte declarado para avar (`av`) y ruso (`ru`). El repositorio de HuggingFace ocupa 0,0 GB y registra 0 descargas y 0 *likes* en la informacion disponible.
+No es un modelo de lenguaje ni un transformer: es un reconocedor de lineas de texto de Tesseract (LSTM sobre caracteristicas de imagen), con un fichero float de 11 MB, licencia Apache-2.0 y soporte declarado para avar (`av`) y ruso (`ru`). El repositorio de Hugging Face ocupa 0,0 GB y registra 0 descargas y 0 *likes* en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ No es un modelo de lenguaje ni un transformer: es un reconocedor de lineas de te
 | Modelo base | `tessdata_best/Cyrillic` (Apache-2.0), relacion: finetune |
 | Version | `ava_v9` |
 | Tamano del repositorio | 0,0 GB |
-| Fecha de creacion | 2026-10-14 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-14 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -89,7 +89,7 @@ No se han publicado otros resultados de benchmarks (por ejemplo MMLU, HumanEval 
 
 | Modelo | Tipo | Idiomas | CER (manual 2018 / Alekseev) | Palochka correcta | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| **`ava_v9` (este modelo)** | LSTM Tesseract 5 | av, ru | 1,83 % / 2,70 % | 99 % | Apache-2.0 | HuggingFace, 11 MB |
+| **`ava_v9` (este modelo)** | LSTM Tesseract 5 | av, ru | 1,83 % / 2,70 % | 99 % | Apache-2.0 | Hugging Face, 11 MB |
 | `ava` renombrado (el que circula) | LSTM Tesseract, pesos identicos al base | av (nominal), ru | 2,31 % / 3,17 % | 22 % | segun procedencia | en circulacion |
 | `rus` de origen (stock) | LSTM Tesseract | ru | 4,40 % / 4,01 % | no medida | Apache-2.0 (tessdata) | oficial |
 | PaddleOCR `cyrillic_PP-OCRv5` | deteccion + reconocimiento (familia PP-OCR v5) | cirilico | 1,74 % / 2,44 % | no medida | Apache-2.0 | PaddleOCR |
@@ -111,6 +111,6 @@ La comparacion relevante es doble: frente a Tesseract, `ava_v9` gana claramente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3mmc/avar-tesseract
+- Modelo en Hugging Face: https://huggingface.co/3mmc/avar-tesseract
 - Modelo base `tessdata_best/Cyrillic`: https://github.com/tesseract-ocr/tessdata_best
 - Busqueda web realizada: los resultados devueltos no guardan relacion con el modelo (corresponden a la sustancia 3-MMC) y no aportan enlaces utiles sobre OCR, avar o Tesseract.

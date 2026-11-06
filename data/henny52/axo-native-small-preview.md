@@ -2,7 +2,7 @@
 
 ## Resumen
 
-axo-native-small (preview) es un clasificador de texto pequeno disenado especificamente para moderacion de mensajes de chat. Lo desarrolla el usuario henny52 y se publica en HuggingFace bajo licencia Apache-2.0. No es un modelo generativo: recibe un mensaje y devuelve una estructura JSON fija con una puntuacion de toxicidad, una accion (`allow` / `flag` / `block`), cinco categorias (insulto, odio, amenaza, autolesion, contenido sexual), una severidad de 0 a 3, el idioma detectado y la traza de los cuatro pasos de razonamiento internos que llevan a la decision.
+axo-native-small (preview) es un clasificador de texto pequeno disenado especificamente para moderacion de mensajes de chat. Lo desarrolla el usuario henny52 y se publica en Hugging Face bajo licencia Apache-2.0. No es un modelo generativo: recibe un mensaje y devuelve una estructura JSON fija con una puntuacion de toxicidad, una accion (`allow` / `flag` / `block`), cinco categorias (insulto, odio, amenaza, autolesion, contenido sexual), una severidad de 0 a 3, el idioma detectado y la traza de los cuatro pasos de razonamiento internos que llevan a la decision.
 
 Su interes practico esta en la relacion coste/prestaciones: con 11.330.086 parametros y una ventana de solo 64 tokens, procesa un mensaje en unos 7 ms sobre 4 hilos de CPU (aproximadamente 3 ms en lote), sin necesidad de GPU. Esto lo hace viable para filtrar en linea cada mensaje de un chat de videojuego o de una comunidad sin anadir infraestructura de inferencia dedicada. El foco declarado es el aleman (banter de gaming, comunidades, secciones de comentarios), con soporte adicional de ingles, espanol, frances, portugues y ruso.
 
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/henny52/axo-native-small-preview
+- Modelo en Hugging Face: https://huggingface.co/henny52/axo-native-small-preview
 - Dataset de evaluacion ChatMod Bench: https://huggingface.co/datasets/henny52/chatmod-bench
 - Grafico de macro-F1 global: https://huggingface.co/henny52/axo-native-small-preview/resolve/main/assets/overall.png
 - Grafico de exactitud por partes: https://huggingface.co/henny52/axo-native-small-preview/resolve/main/assets/parts.png

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vasandesh/plaque-analysis` es un sistema de segmentación de arterias coronarias basado en nnU-Net v2, desarrollado por el autor vasandesh y publicado en HuggingFace con licencia MIT. Su función principal es la segmentación voxel a voxel del árbol de arterias coronarias en imágenes de angiografía por tomografía computarizada cardíaca (CCTA) en 3D, un paso crítico en el análisis cuantitativo de placa coronaria. El modelo está entrenado sobre el dataset público ImageCAS, que contiene aproximadamente 1.000 escáneres CCTA con anotaciones manuales de referencia.
+El modelo `vasandesh/plaque-analysis` es un sistema de segmentación de arterias coronarias basado en nnU-Net v2, desarrollado por el autor vasandesh y publicado en Hugging Face con licencia MIT. Su función principal es la segmentación voxel a voxel del árbol de arterias coronarias en imágenes de angiografía por tomografía computarizada cardíaca (CCTA) en 3D, un paso crítico en el análisis cuantitativo de placa coronaria. El modelo está entrenado sobre el dataset público ImageCAS, que contiene aproximadamente 1.000 escáneres CCTA con anotaciones manuales de referencia.
 
 El modelo se presenta como la primera etapa de un pipeline clínico de análisis en múltiples fases que incluye clasificación de placa por umbrales de unidades Hounsfield (calcificada, no calcificada, núcleo necrótico de bajo contenido lipídico), reconstrucción de mapas de placa en 3D, estimación de flujo fraccionario de reserva (FFR) y una aplicación de revisión clínica con visualización 3D y reconstrucción curva multi-planar (curved MPR). La arquitectura es un nnU-Net v2 con encoder residual 3D a resolución completa, y el tamaño del repositorio es de 0,2 GB.
 
@@ -71,13 +71,13 @@ No hay disponibles comparativas directas en la información proporcionada. En el
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vasandesh/plaque-analysis
+- Hugging Face: https://huggingface.co/vasandesh/plaque-analysis
 - Referencia del dataset ImageCAS: Huo et al., "Towards Robust Coronary Artery Segmentation in CCTA" (2021)
 - Referencia de la arquitectura: Isensee et al., "nnU-Net: Self-configuring method for deep learning-based biomedical image segmentation" (2021)
 - Resultados de búsqueda sobre análisis de placa coronaria cuantitativa: JACC 2025 (https://www.jacc.org/doi/10.1016/j.jcmg.2025.11.008)
 - Revisión de IA en caracterización de placa coronaria: MDPI (https://www.mdpi.com/2077-0383/15/2/903)</think>## Resumen
 
-El modelo `vasandesh/plaque-analysis` es un sistema de segmentación de arterias coronarias basado en nnU-Net v2, desarrollado por el autor vasandesh y publicado en HuggingFace con licencia MIT. Su función principal es la segmentación voxel a voxel del árbol de arterias coronarias en volúmenes de angiografía por tomografía computarizada cardíaca (CCTA) en 3D, un paso crítico en el análisis cuantitativo de placa coronaria. El modelo se entrenó sobre el dataset público ImageCAS, que contiene aproximadamente 1.000 escaneos CCTA, y está pensado como la primera etapa de un pipeline clínico multi-fase que incluye clasificación de placa por umbrales de unidades Hounsfield (HU), reconstrucción de mapas de placa en 3D, estimación de flujo fraccionario de reserva (FFR) y herramientas de revisión clínica con visualización 3D y reconstrucción curva multi-planar (curved MPR).
+El modelo `vasandesh/plaque-analysis` es un sistema de segmentación de arterias coronarias basado en nnU-Net v2, desarrollado por el autor vasandesh y publicado en Hugging Face con licencia MIT. Su función principal es la segmentación voxel a voxel del árbol de arterias coronarias en volúmenes de angiografía por tomografía computarizada cardíaca (CCTA) en 3D, un paso crítico en el análisis cuantitativo de placa coronaria. El modelo se entrenó sobre el dataset público ImageCAS, que contiene aproximadamente 1.000 escaneos CCTA, y está pensado como la primera etapa de un pipeline clínico multi-fase que incluye clasificación de placa por umbrales de unidades Hounsfield (HU), reconstrucción de mapas de placa en 3D, estimación de flujo fraccionario de reserva (FFR) y herramientas de revisión clínica con visualización 3D y reconstrucción curva multi-planar (curved MPR).
 
 La arquitectura es un nnU-Net v2 con encoder residual 3D a resolución completa, lo que permite procesar volúmenes completos sin pérdida de resolución espacial. El tamaño del repositorio es de 0,2 GB, lo que indica que los pesos son relativamente ligeros y potencialmente ejecutables en GPUs de consumo medio. El modelo se distribuye en formato PyTorch y no se documentan parámetros totales ni cuantizaciones disponibles. Aunque se trata de un modelo de investigación con limitaciones para uso clínico, es relevante porque aborda un paso crítico en el diagnóstico y tratamiento de la enfermedad coronaria, un campo donde la IA ha demostrado una alta precisión en la detección y cuantificación de placa según la literatura reciente.
 
@@ -146,7 +146,7 @@ No se dispone de datos cuantitativos de modelos comparables en la información p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vasandesh/plaque-analysis
+- Hugging Face: https://huggingface.co/vasandesh/plaque-analysis
 - Referencia del dataset ImageCAS: Huo et al., "Towards Robust Coronary Artery Segmentation in CCTA" (2021)
 - Referencia de la arquitectura: Isensee et al., "nnU-Net: Self-configuring method for deep learning-based biomedical image segmentation" (2021)
 - Guía de análisis de placa coronaria en práctica clínica: JACC 2025, https://www.jacc.org/doi/10.1016/j.jcmg.2025.11.008

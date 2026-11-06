@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VideoVAP — Candor es un checkpoint de investigación publicado por el usuario lggvu en HuggingFace. Se trata de un modelo de predicción de turnos de palabra (turn-taking) basado en la técnica Voice Activity Projection (VAP), construido sobre una arquitectura transformer y descrito por su autor como «video-only stereo transformer». Es decir, el modelo proyecta la actividad de voz futura de los participantes de una conversación a partir de la señal de vídeo, sin usar audio como entrada, según lo indicado en la model card.
+VideoVAP — Candor es un checkpoint de investigación publicado por el usuario lggvu en Hugging Face. Se trata de un modelo de predicción de turnos de palabra (turn-taking) basado en la técnica Voice Activity Projection (VAP), construido sobre una arquitectura transformer y descrito por su autor como «video-only stereo transformer». Es decir, el modelo proyecta la actividad de voz futura de los participantes de una conversación a partir de la señal de vídeo, sin usar audio como entrada, según lo indicado en la model card.
 
 El modelo se ha entrenado desde cero sobre el corpus Candor, un corpus de conversaciones enlazado por el autor a betterup.com/research/candor-corpus. El checkpoint publicado corresponde al pliegue (fold) 0, época 10 de ese entrenamiento. No es un modelo de lenguaje generativo: no produce texto, sino predicciones de actividad de voz orientadas a decidir quién habla a continuación y cuándo termina un turno.
 
@@ -23,7 +23,7 @@ Su relevancia es acotada y muy específica: los modelos VAP se emplean en invest
 | Autor | lggvu |
 | Fecha de creación del repositorio | 2026-09-16 |
 | Última actualización | 2026-09-16 |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 | Checkpoint | Fold 0, época 10 |
 | Corpus de entrenamiento | Candor |
 | Código fuente | github.com/lggvu/mm-turn-taking |
@@ -77,7 +77,7 @@ No se dispone de datos verificables (número de parámetros, contexto, métricas
 
 | Modelo | Categoría | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lggvu/videovap-candor | VAP turn-taking, solo vídeo | no disponible | no aplica / no disponible | unknown (desconocida) | checkpoint en HuggingFace, 0 descargas |
+| lggvu/videovap-candor | VAP turn-taking, solo vídeo | no disponible | no aplica / no disponible | unknown (desconocida) | checkpoint en Hugging Face, 0 descargas |
 | VAP (Voice Activity Projection, línea de investigación original) | VAP turn-taking | no disponible | no disponible | no disponible | publicaciones y código de investigación |
 | TurnGPT y variantes | Predicción de turnos basada en lenguaje | no disponible | no disponible | no disponible | publicaciones y repositorios de investigación |
 
@@ -97,6 +97,6 @@ Las filas de alternativas se incluyen únicamente como categorías de referencia
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/lggvu/videovap-candor
+- Repositorio del modelo en Hugging Face: https://huggingface.co/lggvu/videovap-candor
 - Código fuente del proyecto (`mm-turn-taking`): https://github.com/lggvu/mm-turn-taking
 - Corpus Candor (enlace facilitado por el autor): https://betterup.com/research/candor-corpus

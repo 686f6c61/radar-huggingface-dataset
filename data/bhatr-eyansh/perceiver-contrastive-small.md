@@ -71,7 +71,7 @@ La comparación con los modelos Perceiver originales de DeepMind es limitada por
 - El checkpoint incluido no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio. Es un punto de partida experimental, no un modelo de producción.
 - No se han publicado resultados de benchmarks; no debe usarse como referencia de rendimiento.
 - El modelo no soporta generación de texto, tool calling, agentes ni capacidades multilingües en su estado actual.
-- La implementación es personalizada y no se puede cargar con APIs genéricas de HuggingFace (por ejemplo, `AutoModel`); se necesita un adaptador explícito.
+- La implementación es personalizada y no se puede cargar con APIs genéricas de Hugging Face (por ejemplo, `AutoModel`); se necesita un adaptador explícito.
 - La licencia MIT permite uso comercial, pero el autor recomienda revisar los términos de las fuentes de datos externas si se usan datasets con el repositorio.
 - No hay evidencia de entrenamiento en ningún dominio de datos concreto; la arquitectura Perceiver está pensada para datos arbitrarios, pero este checkpoint no ha sido entrenado en ninguno de ellos.
 - Los resultados de un futuro entrenamiento deben documentarse por separado de los valores por defecto incluidos en el repositorio.

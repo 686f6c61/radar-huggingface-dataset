@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/saymynameX1/Qwen3.8-Flash-Next
+- Repositorio Hugging Face: https://huggingface.co/saymynameX1/Qwen3.8-Flash-Next
 - Repositorio GitHub oficial: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Blog oficial de Qwen: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Informe técnico: https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf

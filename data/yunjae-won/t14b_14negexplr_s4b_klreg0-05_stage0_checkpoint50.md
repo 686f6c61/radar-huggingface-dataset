@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `yunjae-won/T14b_14negexplr_S4b_klreg0.05_stage0_checkpoint50` es un checkpoint de pesos publicado en HuggingFace por el usuario yunjae-won, etiquetado con los tags `safetensors`, `qwen3` y `region:us`. No incluye model card, pipeline declarado, licencia ni idiomas soportados. El repositorio ocupa 8,1 GB y contiene 4.022.468.096 parametros, lo que situa al modelo en la categoria de ~4B parametros, un rango denso muy habitual para experimentacion y despliegue en hardware de consumo.
+El repositorio `yunjae-won/T14b_14negexplr_S4b_klreg0.05_stage0_checkpoint50` es un checkpoint de pesos publicado en Hugging Face por el usuario yunjae-won, etiquetado con los tags `safetensors`, `qwen3` y `region:us`. No incluye model card, pipeline declarado, licencia ni idiomas soportados. El repositorio ocupa 8,1 GB y contiene 4.022.468.096 parametros, lo que situa al modelo en la categoria de ~4B parametros, un rango denso muy habitual para experimentacion y despliegue en hardware de consumo.
 
 Por el propio identificador se deduce que se trata de un checkpoint intermedio de un experimento de entrenamiento: el sufijo `stage0_checkpoint50` apunta a la etapa 0 y al paso o checkpoint 50, `klreg0.05` sugiere una regularizacion KL con coeficiente 0,05 (tipica en destilacion o en ajuste con regularizacion frente a un modelo de referencia) y `14negexplr` podria referirse a una exploracion con 14 ejemplos negativos. Esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna documentacion del repositorio.
 
@@ -93,6 +93,6 @@ Frente a estas alternativas, el checkpoint aqui descrito no ofrece garantia de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yunjae-won/T14b_14negexplr_S4b_klreg0.05_stage0_checkpoint50
+- Repositorio en Hugging Face: https://huggingface.co/yunjae-won/T14b_14negexplr_S4b_klreg0.05_stage0_checkpoint50
 - No se han encontrado en la busqueda web enlaces relevantes para este modelo: los resultados obtenidos corresponden a proyectos sin relacion (repositorios de prompts tipo DAN, la comunidad Zhihu, la documentacion de modelos de GitHub Copilot y el proyecto GPT-SoVITS), por lo que se omiten.
 - No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados al checkpoint.

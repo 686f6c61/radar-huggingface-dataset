@@ -21,8 +21,8 @@ Conviene advertir que el repositorio no incluye model card técnica (únicamente
 | Licencia | MIT |
 | Formato de pesos | GGUF (2,4 GB de tamaño de repositorio) |
 | Desarrollador del modelo base | Microsoft |
-| Desarrollador de esta recuantización | papineau1837 (usuario de HuggingFace) |
-| Fecha de creación del repositorio | 2026-09-14 (según los metadatos de HuggingFace) |
+| Desarrollador de esta recuantización | papineau1837 (usuario de Hugging Face) |
+| Fecha de creación del repositorio | 2026-09-14 (según los metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -111,7 +111,7 @@ Frente a estas alternativas, la ventaja de Phi-3-mini-4k-instruct es su licencia
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/papineau1837/Phi-3-mini-4k-instruct-q4.gguf
+- Repositorio en Hugging Face: https://huggingface.co/papineau1837/Phi-3-mini-4k-instruct-q4.gguf
 - Modelo base: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Informe técnico de Phi-3: https://arxiv.org/abs/2404.14219
 - Anuncio de Microsoft de la familia Phi-3: https://azure.microsoft.com/en-us/blog/introducing-phi-3-redefining-whats-possible-with-slms/

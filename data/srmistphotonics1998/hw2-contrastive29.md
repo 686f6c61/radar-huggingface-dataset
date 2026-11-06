@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hw2-contrastive29` es un repositorio de HuggingFace publicado por el usuario `srmistphotonics1998` que contiene una implementacion de referencia de una arquitectura tipo Mixer orientada a aprendizaje contrastivo. No se trata de un modelo entrenado: la propia model card indica de forma explicita que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado. El tamano declarado en safetensors es de 24.832 parametros, una escala irrisoria comparada con cualquier modelo de lenguaje actual.
+`hw2-contrastive29` es un repositorio de Hugging Face publicado por el usuario `srmistphotonics1998` que contiene una implementacion de referencia de una arquitectura tipo Mixer orientada a aprendizaje contrastivo. No se trata de un modelo entrenado: la propia model card indica de forma explicita que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado. El tamano declarado en safetensors es de 24.832 parametros, una escala irrisoria comparada con cualquier modelo de lenguaje actual.
 
 La relevancia de esta ficha es, por tanto, metodologica mas que funcional. El repositorio sirve como plantilla reproducible para experimentar con arquitecturas Mixer (MLP-Mixer con atencion lineal y fusion con puerta), configuraciones pequenas y recetas de entrenamiento con el optimizador Adafactor y planificador exponencial. El autor evita deliberadamente cualquier afirmacion de rendimiento y remite a una evaluacion seria con conjuntos reservados y multiples semillas.
 
@@ -70,7 +70,7 @@ En la informacion disponible no se identifican modelos comparables directos, ya 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hw2-contrastive29 | 24.832 | no disponible | sin datos publicados | apache-2.0 | HuggingFace (0 descargas) |
+| hw2-contrastive29 | 24.832 | no disponible | sin datos publicados | apache-2.0 | Hugging Face (0 descargas) |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,5 +86,5 @@ En la informacion disponible no se identifican modelos comparables directos, ya 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/srmistphotonics1998/hw2-contrastive29
+- Hugging Face: https://huggingface.co/srmistphotonics1998/hw2-contrastive29
 - Otros enlaces (papers, blogs, repos, demos): no disponibles en la informacion proporcionada.

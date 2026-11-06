@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cyttic/hmt-htrvt-geom1-s43` es un modelo de reconocimiento de texto manuscrito (HTR, *Handwritten Text Recognition*) publicado por el usuario cyttic en HuggingFace. Se trata de un modelo acústico CTC (Connectionist Temporal Classification) entrenado para transcribir texto manuscrito en hebreo (`he`), probablemente sobre imagenes de lineas de texto. Forma parte de un estudio de aumentacion de datos denominado `htr-metrics-transfer`, en el que se evalua el impacto de distintas estrategias de aumentacion sobre las metricas de reconocimiento.
+`cyttic/hmt-htrvt-geom1-s43` es un modelo de reconocimiento de texto manuscrito (HTR, *Handwritten Text Recognition*) publicado por el usuario cyttic en Hugging Face. Se trata de un modelo acústico CTC (Connectionist Temporal Classification) entrenado para transcribir texto manuscrito en hebreo (`he`), probablemente sobre imagenes de lineas de texto. Forma parte de un estudio de aumentacion de datos denominado `htr-metrics-transfer`, en el que se evalua el impacto de distintas estrategias de aumentacion sobre las metricas de reconocimiento.
 
 El modelo corresponde a la variante `htrvt` con aumentacion `geom1` y semilla 43, y fue entrenado sobre el split de entrenamiento de `cyttic/hhd-optionb-split` excluyendo los escritores de desarrollo. Con 13.821.574 parametros y un tamano de repositorio de 0,1 GB, es un modelo compacto orientado a inferencia eficiente, no a generacion de texto general.
 
@@ -80,6 +80,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de HT
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-geom1-s43
+- Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-geom1-s43
 - Dataset de entrenamiento referenciado: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

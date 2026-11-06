@@ -82,7 +82,7 @@ No se dispone de datos comparativos directos con otros modelos de la misma categ
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/prithivMLmods/Qwen3.8-27B-abliterated-GGUF)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/prithivMLmods/Qwen3.8-27B-abliterated-GGUF)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Variante abliterada de huihui-ai](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated)
 - [Repositorio GGUF de huihui-ai](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF)

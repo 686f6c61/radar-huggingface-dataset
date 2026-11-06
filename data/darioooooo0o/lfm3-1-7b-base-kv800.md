@@ -84,7 +84,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/darioooooo0o/LFM3-1.7B-Base-KV800
+- Hugging Face: https://huggingface.co/darioooooo0o/LFM3-1.7B-Base-KV800
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Repositorio de código: https://github.com/riceharvest/lfm3-kv800
 - Paper referenciado (arxiv:2402.02750): https://arxiv.org/abs/2402.02750

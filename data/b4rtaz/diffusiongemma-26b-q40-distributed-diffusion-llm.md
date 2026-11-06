@@ -6,7 +6,7 @@ DiffusionGemma es un modelo de lenguaje experimental de Google DeepMind que sust
 
 El interes tecnico esta en el cambio de paradigma: la difusion permite generar y corregir el contenido de un bloque entero de forma simultanea, lo que habilita casos de uso poco practicos para modelos secuenciales, como rellenado de huecos, edicion in-situ de texto y aplicaciones interactivas en tiempo real. El modelo se publica con licencia Apache 2.0, lo que lo hace apto para uso comercial sin las restricciones habituales de la familia Gemma.
 
-El repositorio de HuggingFace analizado (b4rtaz/DiffusionGemma-26B-Q40-Distributed-Diffusion-LLM) no es el lanzamiento oficial, sino una redistribucion de terceros de 14,6 GB cuyo nombre sugiere una variante cuantizada y orientada a inferencia distribuida. Su model card esta practicamente vacia (solo el campo de licencia), sin datos de contexto, idiomas, formato de pesos ni resultados de evaluacion, por lo que la mayor parte de las especificaciones que siguen proceden de la documentacion publica de Google DeepMind y no del repositorio.
+El repositorio de Hugging Face analizado (b4rtaz/DiffusionGemma-26B-Q40-Distributed-Diffusion-LLM) no es el lanzamiento oficial, sino una redistribucion de terceros de 14,6 GB cuyo nombre sugiere una variante cuantizada y orientada a inferencia distribuida. Su model card esta practicamente vacia (solo el campo de licencia), sin datos de contexto, idiomas, formato de pesos ni resultados de evaluacion, por lo que la mayor parte de las especificaciones que siguen proceden de la documentacion publica de Google DeepMind y no del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ La comparacion natural es con el Gemma 4 26B A4B autorregresivo del que deriva: 
 
 - Modelo explicitamente experimental: Google lo presenta como una exploracion de la difusion de texto, no como un modelo listo para produccion, y no se ha publicado una evaluacion de calidad sistematica.
 - Ausencia total de benchmarks en la informacion disponible: no hay datos de MMLU, HumanEval, GSM8K ni evaluaciones multilingues, lo que impide estimar su calidad frente a alternativas autorregresivas.
-- La model card del repositorio de HuggingFace esta vacia salvo el campo de licencia: no se documentan contexto, idiomas, formato de pesos, metodos de cuantizacion ni instrucciones de uso.
+- La model card del repositorio de Hugging Face esta vacia salvo el campo de licencia: no se documentan contexto, idiomas, formato de pesos, metodos de cuantizacion ni instrucciones de uso.
 - Se trata de una redistribucion de terceros (usuario b4rtaz), no del repositorio oficial de Google DeepMind; con 0 descargas y 0 likes en el momento de la consulta, no hay evidencia de validacion por parte de la comunidad.
 - Riesgo de alucinacion: no cuantificado. Los modelos de difusion de texto pueden producir contenido localmente coherente pero globalmente inconsistente, ya que el bloque se genera de forma conjunta y las dependencias de largo alcance no se resuelven token a token.
 - Longitud de contexto desconocida: no se puede garantizar el comportamiento en conversaciones multi-turno largas ni en documentos extensos.
@@ -88,7 +88,7 @@ La comparacion natural es con el Gemma 4 26B A4B autorregresivo del que deriva: 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/b4rtaz/DiffusionGemma-26B-Q40-Distributed-Diffusion-LLM
+- Repositorio de Hugging Face: https://huggingface.co/b4rtaz/DiffusionGemma-26B-Q40-Distributed-Diffusion-LLM
 - Pagina oficial del modelo en Google DeepMind: https://deepmind.google/models/gemma/diffusiongemma/
 - Anuncio en el blog de Google: https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/
 - Documentacion para desarrolladores: https://ai.google.dev/gemma/docs/diffusiongemma

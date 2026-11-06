@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje desarrollado por el equipo de qf-iquest, presentado en un repositorio de HuggingFace con el identificador `qf-iquest/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su profundidad de razonamiento y capacidades de inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo muestra un rendimiento destacado en tareas de matemáticas, programación y lógica, acercándose a otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje desarrollado por el equipo de qf-iquest, presentado en un repositorio de Hugging Face con el identificador `qf-iquest/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su profundidad de razonamiento y capacidades de inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo muestra un rendimiento destacado en tareas de matemáticas, programación y lógica, acercándose a otros modelos líderes.
 
 La versión actual incorpora mejoras concretas: en el test AIME 2025, la precisión sube del 70% al 87,5%, con un aumento en el número de tokens de razonamiento por pregunta (de 12K a 23K). También se reporta una reducción de la tasa de alucinación y un mejor soporte para function calling. El repositorio es de tipo prueba (TestRepo), con 0 descargas y 0 likes, y no se proporcionan datos sobre arquitectura, número de parámetros ni contexto, por lo que la información técnica disponible es limitada.
 
@@ -90,4 +90,4 @@ No se dispone de información sobre modelos comparables reales (como Llama, Mist
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/qf-iquest/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/qf-iquest/MyAwesomeModel-TestRepo

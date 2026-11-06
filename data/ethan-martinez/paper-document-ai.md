@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ethan-martinez/paper-document-ai no es un modelo entrenado, sino un repositorio de notas de investigacion sobre Document AI publicado en HuggingFace bajo licencia MIT. La model card es explicita al respecto: se trata de un cuaderno de trabajo ("reading notes and an experiment sketch") cuyo artefacto principal es el fichero `review.md`, y que recoge el alcance de una pregunta de investigacion, los posibles factores de confusion, una comparacion propuesta con lineas base emparejadas y un contexto de evaluacion basado en los conjuntos de datos FUNSD, SROIE y CORD. El autor indica expresamente que el repositorio no reclama mejoras de benchmark, no contiene ablaciones completas, no publica codigo y no libera ningun checkpoint entrenado.
+ethan-martinez/paper-document-ai no es un modelo entrenado, sino un repositorio de notas de investigacion sobre Document AI publicado en Hugging Face bajo licencia MIT. La model card es explicita al respecto: se trata de un cuaderno de trabajo ("reading notes and an experiment sketch") cuyo artefacto principal es el fichero `review.md`, y que recoge el alcance de una pregunta de investigacion, los posibles factores de confusion, una comparacion propuesta con lineas base emparejadas y un contexto de evaluacion basado en los conjuntos de datos FUNSD, SROIE y CORD. El autor indica expresamente que el repositorio no reclama mejoras de benchmark, no contiene ablaciones completas, no publica codigo y no libera ningun checkpoint entrenado.
 
 El repositorio esta etiquetado como `transformer`, `safetensors`, `document-ai` y `research-notes`, con un tamano declarado de 0,0 GB y 0 descargas y 0 likes en el momento de la consulta. Los metadatos de safetensors reportan 33.088 parametros totales, una cifra que no corresponde a un modelo de lenguaje o de vision entrenado y que resulta compatible con tensores auxiliares o artefactos de prueba, no con un transformer funcional. No se declaran idiomas soportados, pipeline ni resultados experimentales.
 
@@ -25,7 +25,7 @@ Otros datos del repositorio: autor ethan-martinez, tamano 0,0 GB, 0 descargas, 0
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre arquitectura en el sentido habitual del termino. El repositorio no incluye fichero de configuracion, codigo de modelado, tokenizador, pesos de un transformer entrenado ni artefacto de inferencia. La unica senal arquitectonica es la etiqueta `transformer` en los metadatos de HuggingFace, que no va acompanada de ninguna definicion tecnica. Los 33.088 parametros reportados por safetensors son incompatibles con cualquier transformer de proposito general, incluso los mas pequenos orientados a vision de documentos, por lo que lo mas razonable es interpretarlos como tensores auxiliares o residuales.
+No hay informacion sobre arquitectura en el sentido habitual del termino. El repositorio no incluye fichero de configuracion, codigo de modelado, tokenizador, pesos de un transformer entrenado ni artefacto de inferencia. La unica senal arquitectonica es la etiqueta `transformer` en los metadatos de Hugging Face, que no va acompanada de ninguna definicion tecnica. Los 33.088 parametros reportados por safetensors son incompatibles con cualquier transformer de proposito general, incluso los mas pequenos orientados a vision de documentos, por lo que lo mas razonable es interpretarlos como tensores auxiliares o residuales.
 
 Tampoco existe informacion sobre entrenamiento: no se indica numero de tokens, composicion del dataset, uso de RLHF, DPO, SFT ni ninguna otra etapa de alineamiento. Lo que si describe la model card es el contenido del cuaderno: el alcance de la pregunta de investigacion y sus probables factores de confusion, una comparacion propuesta con lineas base emparejadas, el contexto de evaluacion (FUNSD, SROIE y CORD), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas, ademas de referencias tematicas. El autor subraya que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales y que cualquier resultado futuro deberia acompanarse de versiones de dataset, comandos, semillas, hardware y registros en crudo.
 
@@ -97,7 +97,7 @@ No se dispone de datos suficientes para identificar alternativas comparables den
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ethan-martinez/paper-document-ai
+- Hugging Face: https://huggingface.co/ethan-martinez/paper-document-ai
 - Fichero `review.md`: referenciado en la model card como artefacto principal del repositorio; no se proporciona URL directa en la informacion disponible.
 - Fichero `README.md`: documentacion del repositorio; no se proporciona URL directa en la informacion disponible.
 - Conjuntos de datos citados como contexto de evaluacion: FUNSD, SROIE y CORD (mencionados en el texto, sin enlaces en la informacion proporcionada).

@@ -107,7 +107,7 @@ Otros modelos tiny como TinyLlama (1,1B parametros) o SmolLM (135M-1,7B) no son 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DedeProGames/LowOnMind-1M
+- Modelo en Hugging Face: https://huggingface.co/DedeProGames/LowOnMind-1M
 - Modelo predecesor: https://huggingface.co/DedeProGames/LowOnMind-300k
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Benchmark BananaMind Base Bench 1.1: https://huggingface.co/datasets/BananaMind/BananaMind-Base-Bench-1.1

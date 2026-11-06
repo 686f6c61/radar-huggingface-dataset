@@ -75,8 +75,8 @@ La informacion proporcionada solo permite comparar con el modelo base, del que e
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| loom-ai-org/pocket-tts-loom | 101,28 M | no disponible | ingles | cc-by-4.0 | GGUF (loom.cpp) + ficheros de voz | HuggingFace, runtime loom-py |
-| kyutai/pocket-tts (modelo base) | 101,28 M (mismos pesos) | no disponible | ingles (otros idiomas en checkpoints separados) | cc-by-4.0 | pesos originales | HuggingFace |
+| loom-ai-org/pocket-tts-loom | 101,28 M | no disponible | ingles | cc-by-4.0 | GGUF (loom.cpp) + ficheros de voz | Hugging Face, runtime loom-py |
+| kyutai/pocket-tts (modelo base) | 101,28 M (mismos pesos) | no disponible | ingles (otros idiomas en checkpoints separados) | cc-by-4.0 | pesos originales | Hugging Face |
 | Otros modelos TTS ligeros de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de benchmarks ni de especificaciones de modelos alternativos en la informacion proporcionada, por lo que no se incluye una comparacion cuantitativa.
@@ -97,7 +97,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones de model
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/loom-ai-org/pocket-tts-loom
+- Repositorio Hugging Face del modelo: https://huggingface.co/loom-ai-org/pocket-tts-loom
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Dataset de voces de Kyutai: https://huggingface.co/kyutai/tts-voices
 - Motor loom.cpp: https://github.com/loom-ai-org/loom.cpp

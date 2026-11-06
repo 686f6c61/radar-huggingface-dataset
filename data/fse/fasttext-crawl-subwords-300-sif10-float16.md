@@ -107,8 +107,8 @@ La unica comparacion con datos verificables en la informacion disponible es fren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/fasttext-crawl-subwords-300-sif10-float16
-- Modelo base en HuggingFace: https://huggingface.co/fse/fasttext-crawl-subwords-300
+- Modelo en Hugging Face: https://huggingface.co/fse/fasttext-crawl-subwords-300-sif10-float16
+- Modelo base en Hugging Face: https://huggingface.co/fse/fasttext-crawl-subwords-300
 - Repositorio de la libreria fse: https://github.com/oborchers/Fast_Sentence_Embeddings
 - Vectores FastText en ingles (Facebook): https://fasttext.cc/docs/en/english-vectors.html
 - Licencia CC BY-SA 3.0: https://creativecommons.org/licenses/by-sa/3.0/

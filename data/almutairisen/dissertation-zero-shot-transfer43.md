@@ -64,7 +64,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/almutairisen/dissertation-zero-shot-transfer43
+- Repositorio en Hugging Face: https://huggingface.co/almutairisen/dissertation-zero-shot-transfer43
 - Referencia general sobre zero-shot learning (Wikipedia): https://en.wikipedia.org/wiki/Zero-shot_learning
 - Articulo de GeeksforGeeks sobre zero-shot vs one-shot vs few-shot: https://www.geeksforgeeks.org/machine-learning/zero-shot-vs-one-shot-vs-few-shot-learning/
 - Revision academica sobre metodos zero-shot y few-shot en NLP (Springer): https://link.springer.com/article/10.1007/s42452-025-07225-5

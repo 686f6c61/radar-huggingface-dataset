@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aurora-Series-v1 es un modelo de clasificación de leads de seguros entrenado mediante GRPO (Group Relative Policy Optimization) sobre diálogos de atención al cliente en chino. Lo desarrolla el usuario Junlaii y se distribuye en HuggingFace bajo licencia Apache 2.0. El modelo parte de una base denominada "sft_v5" y se ha ajustado durante 500 pasos de GRPO, con una precisión media de evaluación del 72,9%.
+Aurora-Series-v1 es un modelo de clasificación de leads de seguros entrenado mediante GRPO (Group Relative Policy Optimization) sobre diálogos de atención al cliente en chino. Lo desarrolla el usuario Junlaii y se distribuye en Hugging Face bajo licencia Apache 2.0. El modelo parte de una base denominada "sft_v5" y se ha ajustado durante 500 pasos de GRPO, con una precisión media de evaluación del 72,9%.
 
 El modelo está especializado en una tarea vertical muy concreta: clasificar clientes potenciales (leads) en el dominio de seguros a partir de conversaciones de servicio al cliente en chino. No se trata de un modelo de propósito general, sino de un ajuste fino orientado a producción dentro de un pipeline de negocio específico, lo que explica su tamaño reducido de comunidad (0 descargas y 0 likes en el momento de la ficha).
 
@@ -59,7 +59,7 @@ Los datos disponibles solo incluyen la media de evaluación (72,9%) para v1, sin
 - VRAM estimada para inferencia: no disponible, al no conocerse el tamaño de parámetros del modelo base.
 - GPU recomendadas: no disponible por la misma razón.
 - Compatibilidad con GPU de consumo: no determinable sin conocer el tamaño del modelo.
-- Opciones de despliegue: no se documentan explícitamente; el uso de Unsloth en el entrenamiento sugiere compatibilidad con ecosistemas HuggingFace Transformers, pero no se confirma soporte de vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: no se documentan explícitamente; el uso de Unsloth en el entrenamiento sugiere compatibilidad con ecosistemas Hugging Face Transformers, pero no se confirma soporte de vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -78,5 +78,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- [HuggingFace - Junlaii/Aurora-Series-v1](https://huggingface.co/Junlaii/Aurora-Series-v1)
-- [HuggingFace - Junlaii/Aurora-Series-v2](https://huggingface.co/Junlaii/Aurora-Series-v2)
+- [Hugging Face - Junlaii/Aurora-Series-v1](https://huggingface.co/Junlaii/Aurora-Series-v1)
+- [Hugging Face - Junlaii/Aurora-Series-v2](https://huggingface.co/Junlaii/Aurora-Series-v2)

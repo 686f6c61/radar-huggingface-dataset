@@ -2,11 +2,11 @@
 
 ## Resumen
 
-pgabl-legal-assistant-grpo es un ajuste fino (fine-tune) del modelo alapozk/pgabl-legal-assistant-sft, que a su vez deriva de la familia Qwen2. Segun el recuento de parametros publicado en safetensors (494.032.768 parametros), se trata de un modelo de aproximadamente 0,5 mil millones de parametros, es decir, la variante mas pequena de Qwen2. El autor del repositorio es el usuario de HuggingFace alapozk y la licencia declarada es Apache 2.0.
+pgabl-legal-assistant-grpo es un ajuste fino (fine-tune) del modelo alapozk/pgabl-legal-assistant-sft, que a su vez deriva de la familia Qwen2. Segun el recuento de parametros publicado en safetensors (494.032.768 parametros), se trata de un modelo de aproximadamente 0,5 mil millones de parametros, es decir, la variante mas pequena de Qwen2. El autor del repositorio es el usuario de Hugging Face alapozk y la licencia declarada es Apache 2.0.
 
 El modelo se presenta como un asistente orientado al ambito legal (el prefijo "legal-assistant" en el nombre) y la nomenclatura "grpo" indica que la etapa final de ajuste se realizo con Group Relative Policy Optimization, una tecnica de aprendizaje por refuerzo que optimiza la politica comparando respuestas dentro de un mismo grupo de muestras, sin necesidad de un modelo critico separado. Esta tecnica se popularizo con las familias DeepSeek-R1 y se aplica habitualmente para mejorar el razonamiento y el seguimiento de instrucciones sobre un modelo ya sometido a ajuste supervisado (SFT), que en este caso es el checkpoint base declarado.
 
-La relevancia de esta ficha es limitada pero concreta: se trata de un modelo muy pequeno y ligero, entrenado con Unsloth y la libreria TRL de HuggingFace, lo que lo hace desplegable en hardware de consumo. Sin embargo, la model card es extremadamente escueta: no documenta el dataset de entrenamiento, la composicion de los datos, la longitud de contexto, las variantes de cuantizacion ni resultados de evaluacion. Cualquier uso en produccion, y mas aun en un dominio regulado como el legal, requiere una evaluacion propia previa.
+La relevancia de esta ficha es limitada pero concreta: se trata de un modelo muy pequeno y ligero, entrenado con Unsloth y la libreria TRL de Hugging Face, lo que lo hace desplegable en hardware de consumo. Sin embargo, la model card es extremadamente escueta: no documenta el dataset de entrenamiento, la composicion de los datos, la longitud de contexto, las variantes de cuantizacion ni resultados de evaluacion. Cualquier uso en produccion, y mas aun en un dominio regulado como el legal, requiere una evaluacion propia previa.
 
 ## Especificaciones tecnicas
 
@@ -96,10 +96,10 @@ La ventaja diferencial de este modelo es su especializacion declarada en el domi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alapozk/pgabl-legal-assistant-grpo
+- Modelo en Hugging Face: https://huggingface.co/alapozk/pgabl-legal-assistant-grpo
 - Modelo base (SFT): https://huggingface.co/alapozk/pgabl-legal-assistant-sft
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Paper de GRPO (DeepSeekMath): https://arxiv.org/abs/2402.03300
 - Paper de Qwen2: https://arxiv.org/abs/2407.10671
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo.

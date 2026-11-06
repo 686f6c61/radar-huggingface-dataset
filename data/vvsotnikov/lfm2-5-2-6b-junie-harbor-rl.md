@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-2.6B-junie-harbor-rl es un checkpoint intermedio de un ajuste fino con aprendizaje por refuerzo (GRPO asíncrono) sobre el modelo base LiquidAI/LFM2.5-2.6B, publicado por el usuario vvsotnikov en HuggingFace. El objetivo del entrenamiento es especializar al modelo como motor de un agente de código (coding agent) que opera a través de la CLI JetBrains Junie en tareas de análisis de datos dentro de sandboxes Docker. No se trata de un modelo final: es una instantánea en el paso 20 de una tirada planificada de unas 440 iteraciones, publicada por transparencia del proceso de entrenamiento.
+LFM2.5-2.6B-junie-harbor-rl es un checkpoint intermedio de un ajuste fino con aprendizaje por refuerzo (GRPO asíncrono) sobre el modelo base LiquidAI/LFM2.5-2.6B, publicado por el usuario vvsotnikov en Hugging Face. El objetivo del entrenamiento es especializar al modelo como motor de un agente de código (coding agent) que opera a través de la CLI JetBrains Junie en tareas de análisis de datos dentro de sandboxes Docker. No se trata de un modelo final: es una instantánea en el paso 20 de una tirada planificada de unas 440 iteraciones, publicada por transparencia del proceso de entrenamiento.
 
 El modelo conserva la arquitectura y el tamaño del base (2.697.198.592 parámetros, aproximadamente 2,6 mil millones), y el adaptador LoRA utilizado durante el RL se ha fusionado en los pesos, por lo que el repositorio contiene el modelo completo en bf16 (5,6 GB) además del adaptador independiente en `lora-adapter/`. La interfaz de uso es idéntica a la del modelo base: chat/completions estándar de LFM2.5, servible con transformers, vLLM o llama.cpp.
 
@@ -82,7 +82,7 @@ La comparación directa con alternativas de otros fabricantes (Qwen, Llama, Gemm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vvsotnikov/LFM2.5-2.6B-junie-harbor-rl
+- Modelo en Hugging Face: https://huggingface.co/vvsotnikov/LFM2.5-2.6B-junie-harbor-rl
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Dataset de entrenamiento: https://huggingface.co/datasets/FineEnvs/SmolDataEnvs-harbor-train
 - Guía de referencia multi-harness RL: https://huggingface.co/spaces/FineEnvs/multi-harness-rl

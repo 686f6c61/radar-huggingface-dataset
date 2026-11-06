@@ -22,7 +22,7 @@ El checkpoint conserva tres componentes: el modelo de lenguaje (26,896B), una to
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente se etiqueta como `qwen3_5` en HuggingFace, lo que apunta a una familia transformer con atención estándar; no se especifica si emplea atención lineal, híbrida u otro mecanismo. El checkpoint incluye una torre visual de 0,461B parámetros almacenada en BF16 (0,921 GB) y una cabeza MTP de 0,425B (0,314 GB), orientada a predecir varios tokens por paso para decodificación especulativa. El modelo de lenguaje concentra 26,896B parámetros y 15,736 GB de almacenamiento.
+La arquitectura subyacente se etiqueta como `qwen3_5` en Hugging Face, lo que apunta a una familia transformer con atención estándar; no se especifica si emplea atención lineal, híbrida u otro mecanismo. El checkpoint incluye una torre visual de 0,461B parámetros almacenada en BF16 (0,921 GB) y una cabeza MTP de 0,425B (0,314 GB), orientada a predecir varios tokens por paso para decodificación especulativa. El modelo de lenguaje concentra 26,896B parámetros y 15,736 GB de almacenamiento.
 
 No hay información sobre el dataset de entrenamiento, el número de tokens, la composición de datos ni si se aplicaron RLHF, DPO u otras fases de alineamiento. La única innovación documentada es la cuantización de precisión mixta de oQ: asigna 4 bits a la mayoría de pesos (80,784%), 5 bits a una fracción relevante (17,359%) y mantiene en BF16 un 1,857% de los tensores, presumiblemente capas sensibles. No se detalla el criterio de selección por capa.
 

@@ -62,6 +62,6 @@ No disponible. No existen modelos comparables en el repositorio ni en la informa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wiktoriakowalczyk/text-image-retrieval-run17
-- Perfil del autor en HuggingFace: https://huggingface.co/wiktoriakowalczyk/models
+- Repositorio en Hugging Face: https://huggingface.co/wiktoriakowalczyk/text-image-retrieval-run17
+- Perfil del autor en Hugging Face: https://huggingface.co/wiktoriakowalczyk/models
 - Referencia externa sobre reproducibilidad en image-text retrieval (GitHub): https://github.com/WangFei-2019/Image-text-Retrieval

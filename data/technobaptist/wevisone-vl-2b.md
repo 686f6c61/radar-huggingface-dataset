@@ -6,7 +6,7 @@ WeVisOne-VL-2B es un modelo vision-language unificado desarrollado por WeChat Vi
 
 El modelo tiene 2.441.744.384 parametros totales (aproximadamente 2,4 mil millones) y se distribuye en formato safetensors bajo licencia Apache 2.0, con un repositorio de 4,9 GB. Su relevancia actual radica en unificar tareas de percepcion que tradicionalmente requieren pipelines separados (detectores, segmentadores y modelos de matting) en un unico modelo conversacional con salida estructurada.
 
-La ficha se basa exclusivamente en la informacion disponible en HuggingFace y en la model card del autor; los datos no publicados se indican explicitamente como no disponibles.
+La ficha se basa exclusivamente en la informacion disponible en Hugging Face y en la model card del autor; los datos no publicados se indican explicitamente como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -89,7 +89,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TechnoBaptist/WeVisOne-VL-2B
+- Modelo en Hugging Face: https://huggingface.co/TechnoBaptist/WeVisOne-VL-2B
 - Paper: https://huggingface.co/papers/2610.31329
 - Project page: https://tencent.github.io/WeVisOne-VL
 - Repositorio de inferencia: https://github.com/Tencent/WeVisOne-VL

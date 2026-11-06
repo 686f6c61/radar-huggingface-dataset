@@ -68,7 +68,7 @@ El autor no publica resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| I-JEPA ViT-Tiny CIFAR-10 (este) | ViT-Tiny (no disponible) | Imágenes 32x32 | 41,1 % con 20-NN en CIFAR-10 | MIT | HuggingFace, 15 descargas |
+| I-JEPA ViT-Tiny CIFAR-10 (este) | ViT-Tiny (no disponible) | Imágenes 32x32 | 41,1 % con 20-NN en CIFAR-10 | MIT | Hugging Face, 15 descargas |
 | I-JEPA original (Assran et al., 2023) | ViT-H/14 y variantes | Imágenes de mayor resolución (ImageNet) | Resultados del paper en ImageNet (no disponibles aquí) | no disponible en esta ficha | Meta AI, código y pesos públicos |
 | MAE (He et al.) | ViT-B a ViT-H | Imágenes de alta resolución | Resultados en ImageNet (no disponibles aquí) | no disponible en esta ficha | Repositorio oficial |
 | DINO / DINOv2 | ViT-S a ViT-g | Imágenes de alta resolución | Resultados en ImageNet (no disponibles aquí) | no disponible en esta ficha | Repositorio oficial |
@@ -89,7 +89,7 @@ La comparación con alternativas solo es posible a nivel cualitativo: este check
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/simillusion/ijepa-vit-tiny-cifar10
+- Modelo en Hugging Face: https://huggingface.co/simillusion/ijepa-vit-tiny-cifar10
 - Repositorio de Simulusion: https://github.com/ParamThakkar123/simulusion
 - Galería de resultados y curvas de aprendizaje: https://paramthakkar123.github.io/simulusion/gallery.html
 - Paper I-JEPA (Assran et al., CVPR 2023): https://arxiv.org/abs/2301.08243

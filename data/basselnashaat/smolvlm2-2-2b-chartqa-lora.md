@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SmolVLM2-2.2B-chartqa-lora es un adaptador LoRA publicado en HuggingFace por el usuario BasselNashaat sobre el modelo base SmolVLM2-2.2B de HuggingFace. Por el nombre del repositorio se deduce que se trata de un ajuste fino orientado a la tarea de ChartQA, es decir, responder preguntas sobre graficos y tablas a partir de una imagen. El adaptador se distribuye en formato safetensors y es compatible con la libreria transformers.
+SmolVLM2-2.2B-chartqa-lora es un adaptador LoRA publicado en Hugging Face por el usuario BasselNashaat sobre el modelo base SmolVLM2-2.2B de Hugging Face. Por el nombre del repositorio se deduce que se trata de un ajuste fino orientado a la tarea de ChartQA, es decir, responder preguntas sobre graficos y tablas a partir de una imagen. El adaptador se distribuye en formato safetensors y es compatible con la libreria transformers.
 
-El modelo base, SmolVLM2-2.2B, pertenece a la familia SmolVLM de HuggingFace, disenada para inferencia de vision-lenguaje en dispositivos con recursos limitados. El adaptador hereda esa vocacion ligera y anade especializacion en comprension de graficos, un dominio donde los modelos generalistas suelen fallar por la necesidad de leer valores numericos, ejes y leyendas con precision.
+El modelo base, SmolVLM2-2.2B, pertenece a la familia SmolVLM de Hugging Face, disenada para inferencia de vision-lenguaje en dispositivos con recursos limitados. El adaptador hereda esa vocacion ligera y anade especializacion en comprension de graficos, un dominio donde los modelos generalistas suelen fallar por la necesidad de leer valores numericos, ejes y leyendas con precision.
 
 La relevancia de esta ficha es limitada por la escasez de informacion: la model card esta practicamente vacia (plantilla autogenerada sin rellenar) y el repositorio no registra descargas ni likes en el momento de la consulta. No obstante, se documenta lo que puede inferirse con rigor del identificador, los tags y el ecosistema del modelo base, marcando explicitamente como "no disponible" todo aquello que el autor no ha publicado.
 
@@ -26,7 +26,7 @@ La relevancia de esta ficha es limitada por la escasez de informacion: la model 
 
 ## Arquitectura y entrenamiento
 
-El artefacto publicado es un adaptador LoRA (Low-Rank Adaptation) que modifica los pesos del modelo base SmolVLM2-2.2B. SmolVLM2 es una familia de modelos vision-lenguaje de HuggingFace construida sobre un backbone de lenguaje compacto y un encoder visual, pensada para ejecucion en hardware modesto. El sufijo "chartqa" indica que el ajuste se realizo sobre el conjunto de datos ChartQA, orientado a pregunta-respuesta sobre graficos.
+El artefacto publicado es un adaptador LoRA (Low-Rank Adaptation) que modifica los pesos del modelo base SmolVLM2-2.2B. SmolVLM2 es una familia de modelos vision-lenguaje de Hugging Face construida sobre un backbone de lenguaje compacto y un encoder visual, pensada para ejecucion en hardware modesto. El sufijo "chartqa" indica que el ajuste se realizo sobre el conjunto de datos ChartQA, orientado a pregunta-respuesta sobre graficos.
 
 No se dispone de informacion sobre hiperparametros de entrenamiento (rango del LoRA, alpha, tasa de aprendizaje, numero de pasos), composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card no aporta ningun detalle y el autor no ha documentado el procedimiento. Tampoco se especifica si el adaptador se entreno solo sobre el split de entrenamiento de ChartQA o sobre una mezcla con otros datos.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolVLM2-2.2B-chartqa-lora | Adaptador sobre 2.2B | No disponible | ChartQA (LoRA) | No disponible | HuggingFace |
-| SmolVLM2-2.2B (base) | 2.2B | No disponible en esta ficha | Vision-lenguaje general | No disponible en esta ficha | HuggingFace |
+| SmolVLM2-2.2B-chartqa-lora | Adaptador sobre 2.2B | No disponible | ChartQA (LoRA) | No disponible | Hugging Face |
+| SmolVLM2-2.2B (base) | 2.2B | No disponible en esta ficha | Vision-lenguaje general | No disponible en esta ficha | Hugging Face |
 | Alternativas especializadas en ChartQA | No disponible | No disponible | QA sobre graficos | No disponible | No disponible |
 
 No se dispone de datos de rendimiento del adaptador que permitan una comparacion cuantitativa con alternativas. La comparacion se limita a la naturaleza del artefacto (adaptador LoRA frente a modelo completo).
@@ -85,6 +85,6 @@ No se dispone de datos de rendimiento del adaptador que permitan una comparacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BasselNashaat/SmolVLM2-2.2B-chartqa-lora
+- Repositorio Hugging Face: https://huggingface.co/BasselNashaat/SmolVLM2-2.2B-chartqa-lora
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact#compute

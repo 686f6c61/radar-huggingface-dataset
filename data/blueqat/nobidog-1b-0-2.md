@@ -101,7 +101,7 @@ En la métrica interna del autor, el predecesor de nobidog-1b queda por detrás 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blueqat/nobidog-1b-0.2
+- Modelo en Hugging Face: https://huggingface.co/blueqat/nobidog-1b-0.2
 - Sitio del desarrollador (blueqat Inc.): https://blueqat.com
 - Corpus de preentrenamiento, Wikipedia japonesa: https://huggingface.co/datasets/wikimedia/wikipedia
 - Corpus de preentrenamiento, FineWeb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

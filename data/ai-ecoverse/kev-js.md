@@ -82,11 +82,11 @@ No se han proporcionado datos de modelos alternativos de la misma categoria en l
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ai-ecoverse/kev.js `kev-0.8b` | 0,8 B | No disponible | ONNX int8 (q8, q8f32) | Apache-2.0 | HuggingFace, uso en navegador |
-| ai-ecoverse/kev.js `kev-4b` | 4 B | No disponible | ONNX int8 (q8f32) | Apache-2.0 | HuggingFace, uso en navegador |
+| ai-ecoverse/kev.js `kev-0.8b` | 0,8 B | No disponible | ONNX int8 (q8, q8f32) | Apache-2.0 | Hugging Face, uso en navegador |
+| ai-ecoverse/kev.js `kev-4b` | 4 B | No disponible | ONNX int8 (q8f32) | Apache-2.0 | Hugging Face, uso en navegador |
 | jaredpalmer/kev-0.8b | 0,8 B | No disponible | Checkpoint original | Apache-2.0 | Repositorio del autor original |
 | jaredpalmer/kev-4b | 4 B | No disponible | Checkpoint original | Apache-2.0 | Repositorio del autor original |
-| Qwen3.5-0.8B-Base / 4B-Base | 0,8 B / 4 B | No disponible | Pesos base | Apache-2.0 | HuggingFace |
+| Qwen3.5-0.8B-Base / 4B-Base | 0,8 B / 4 B | No disponible | Pesos base | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas opciones ni frente a modelos de decision de terceros.
 
@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones ni frente a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ai-ecoverse/kev.js
+- Hugging Face: https://huggingface.co/ai-ecoverse/kev.js
 - Libreria kev.js (ai-ecoverse): https://github.com/ai-ecoverse/kev.js
 - README con detalles de conversion: https://github.com/ai-ecoverse/kev.js#readme
 - Modelo y entrenamiento originales (jaredpalmer/kev): https://github.com/jaredpalmer/kev

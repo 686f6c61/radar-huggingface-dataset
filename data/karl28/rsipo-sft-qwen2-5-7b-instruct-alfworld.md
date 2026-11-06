@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RSIPO-SFT-Qwen2.5-7B-Instruct-ALFWorld es un punto de control intermedio (checkpoint) publicado por el usuario Karl28 en HuggingFace. Se trata del checkpoint de la etapa 1 (SFT, ajuste fino supervisado) utilizado para inicializar el entrenamiento por aprendizaje por refuerzo RSIPO sobre ALFWorld, un benchmark de agentes que operan en entornos domésticos simulados mediante texto. El modelo parte de Qwen/Qwen2.5-7B-Instruct, un modelo conversacional de 7.600 millones de parametros, y ha sido afinado para generar resumenes de episodios y habilidades reutilizables a partir de trayectorias de agente.
+RSIPO-SFT-Qwen2.5-7B-Instruct-ALFWorld es un punto de control intermedio (checkpoint) publicado por el usuario Karl28 en Hugging Face. Se trata del checkpoint de la etapa 1 (SFT, ajuste fino supervisado) utilizado para inicializar el entrenamiento por aprendizaje por refuerzo RSIPO sobre ALFWorld, un benchmark de agentes que operan en entornos domésticos simulados mediante texto. El modelo parte de Qwen/Qwen2.5-7B-Instruct, un modelo conversacional de 7.600 millones de parametros, y ha sido afinado para generar resumenes de episodios y habilidades reutilizables a partir de trayectorias de agente.
 
 Su relevancia no radica en ser un modelo de uso general, sino en servir como punto de partida reproducible para la investigacion en aprendizaje por refuerzo agéntico: la model card indica explicitamente que este checkpoint precede a los 150 pasos de entrenamiento RL y que no es la politica final de RSIPO (esa version esta disponible en un repositorio aparte). Es, por tanto, una pieza de investigacion orientada a reproducibilidad, publicada junto al articulo arXiv de RSIPO, el codigo en GitHub y el dataset de la etapa 1. El contexto y la cuantizacion no se detallan en la documentacion disponible, aunque los tensores publicados estan en FP32.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RSIPO-SFT-Qwen2.5-7B-Instruct-ALFWorld | 7,62 B | Checkpoint SFT etapa 1 para RL agéntico en ALFWorld | Apache 2.0 | HuggingFace, safetensors FP32 |
-| Qwen/Qwen2.5-7B-Instruct (base) | 7,62 B | Modelo conversacional general | Apache 2.0 | HuggingFace, multiples formatos y cuantizaciones |
-| Karl28/RSIPO-Qwen2.5-7B-Instruct-ALFWorld | no disponible (derivado del mismo base) | Politica final RSIPO tras 150 pasos de RL | Apache 2.0 | HuggingFace |
+| RSIPO-SFT-Qwen2.5-7B-Instruct-ALFWorld | 7,62 B | Checkpoint SFT etapa 1 para RL agéntico en ALFWorld | Apache 2.0 | Hugging Face, safetensors FP32 |
+| Qwen/Qwen2.5-7B-Instruct (base) | 7,62 B | Modelo conversacional general | Apache 2.0 | Hugging Face, multiples formatos y cuantizaciones |
+| Karl28/RSIPO-Qwen2.5-7B-Instruct-ALFWorld | no disponible (derivado del mismo base) | Politica final RSIPO tras 150 pasos de RL | Apache 2.0 | Hugging Face |
 
 La diferencia clave: este checkpoint es el punto de partida del entrenamiento RL, no el producto final; para obtener el mejor rendimiento agéntico segun los autores, debe usarse el checkpoint final de RSIPO. Para uso conversacional general, el modelo base Qwen2.5-7B-Instruct es mas adecuado y ofrece mas formatos.
 

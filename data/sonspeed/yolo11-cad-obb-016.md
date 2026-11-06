@@ -2,7 +2,7 @@
 
 ## Resumen
 
-yolo11-cad-obb-016 es un detector de objetos con cajas orientadas (oriented bounding boxes, OBB) basado en la arquitectura YOLO11 en su variante m, publicado por el usuario sonspeed en HuggingFace. El modelo está especializado en la detección de símbolos de planos CAD, y constituye una primera etapa (stage-1) de un pipeline de reconocimiento: en lugar de predecir clases finas directamente, agrupa las plantillas de símbolos en 16 super-clases mediante clustering aglomerativo por coseno sobre embeddings de símbolos. La cabeza de clasificación predice por tanto `SuperClass_0` a `SuperClass_15`.
+yolo11-cad-obb-016 es un detector de objetos con cajas orientadas (oriented bounding boxes, OBB) basado en la arquitectura YOLO11 en su variante m, publicado por el usuario sonspeed en Hugging Face. El modelo está especializado en la detección de símbolos de planos CAD, y constituye una primera etapa (stage-1) de un pipeline de reconocimiento: en lugar de predecir clases finas directamente, agrupa las plantillas de símbolos en 16 super-clases mediante clustering aglomerativo por coseno sobre embeddings de símbolos. La cabeza de clasificación predice por tanto `SuperClass_0` a `SuperClass_15`.
 
 El modelo se distribuye como pesos de Ultralytics (`best.pt`) y está etiquetado también con ONNX, lo que sugiere que puede exportarse a este formato para despliegue. Trabaja con imágenes de 640 píxeles y fue entrenado sin aumentos de datos agresivos (sin mosaic, mixup, rotación, shear, perspectiva, flip ni erasing), lo que apunta a una estrategia de entrenamiento conservadora orientada a preservar la geometría de los símbolos de planos técnicos.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tarea | Arquitectura | Clases | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sonspeed/yolo11-cad-obb-016 | Deteccion OBB de simbolos CAD | YOLO11-m OBB | 16 super-clases | 640 px | no disponible | HuggingFace |
+| sonspeed/yolo11-cad-obb-016 | Deteccion OBB de simbolos CAD | YOLO11-m OBB | 16 super-clases | 640 px | no disponible | Hugging Face |
 | YOLO11-OBB oficial (Ultralytics) | Deteccion OBB generica | YOLO11 (n/s/m/l/x) OBB | dataset DOTA (varias) | configurable | AGPL-3.0 / Enterprise | Repos oficiales |
 | YOLOv8-OBB (Ultralytics) | Deteccion OBB generica | YOLOv8 OBB | dataset DOTA | configurable | AGPL-3.0 / Enterprise | Repos oficiales |
 | RT-DETR | Deteccion de objetos | Transformer (DETR) | dataset COCO | configurable | Apache-2.0 (segun variante) | Repos oficiales |
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sonspeed/yolo11-cad-obb-016
+- Hugging Face: https://huggingface.co/sonspeed/yolo11-cad-obb-016
 - Ultralytics (libreria y modelos YOLO11): https://github.com/ultralytics/ultralytics
 - Documentacion de Ultralytics sobre tareas OBB: https://docs.ultralytics.com/tasks/obb/
 - No se han encontrado en la busqueda web papers, blogs, repos adicionales ni demos asociados especificamente a este modelo.

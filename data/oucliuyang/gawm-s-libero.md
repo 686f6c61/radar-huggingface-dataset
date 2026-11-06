@@ -77,7 +77,7 @@ No se dispone en la información proporcionada de datos de otros modelos compara
 
 | Modelo | Parametros | Contexto | Rendimiento LIBERO | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GAWM-S-LIBERO | 38,1 M (16,5 M en checkpoint) | no disponible | 95,55 % medio | MIT | HuggingFace |
+| GAWM-S-LIBERO | 38,1 M (16,5 M en checkpoint) | no disponible | 95,55 % medio | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone en la información proporcionada de datos de otros modelos compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oucliuyang/GAWM-S-LIBERO
+- Hugging Face: https://huggingface.co/oucliuyang/GAWM-S-LIBERO
 - Código oficial: https://github.com/gaoxiang12/gawm-public
 - Paper: no disponible (el autor indica que se enlazará cuando sea público)
 - DINOv3 (Meta): no disponible en la información proporcionada

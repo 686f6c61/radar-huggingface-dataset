@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativos publicados para Teutonic-1-Ch
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CortexLM/Teutonic-1-Chat-Preview
-- Organización CortexLM en HuggingFace: https://huggingface.co/CortexLM/models
+- Modelo en Hugging Face: https://huggingface.co/CortexLM/Teutonic-1-Chat-Preview
+- Organización CortexLM en Hugging Face: https://huggingface.co/CortexLM/models
 - Informe técnico de Teutonic-I 10B (proyecto relacionado en Bittensor): https://teutonic.ai/paper.html
-- Modelos de CortexLM en HuggingFace: https://huggingface.co/models?other=cortexlm
+- Modelos de CortexLM en Hugging Face: https://huggingface.co/models?other=cortexlm

@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Especialización | Disponibilidad |
 |---|---|---|---|---|---|
-| `violetxi/qwen35-9b-wmrl-v4-R-50` | 9,65 mil millones | No disponible | Apache 2.0 | Dominio jurídico sintético (Calderwood & Harkness), condición R-50 | Hub de HuggingFace; 0 descargas |
-| `Qwen/Qwen3.5-9B` (modelo base) | No disponible | No disponible | No disponible | Propósito general | Hub de HuggingFace |
+| `violetxi/qwen35-9b-wmrl-v4-R-50` | 9,65 mil millones | No disponible | Apache 2.0 | Dominio jurídico sintético (Calderwood & Harkness), condición R-50 | Hub de Hugging Face; 0 descargas |
+| `Qwen/Qwen3.5-9B` (modelo base) | No disponible | No disponible | No disponible | Propósito general | Hub de Hugging Face |
 | Modelos densos de 8-9B de propósito general (categoría: Llama 3.1 8B, Gemma 2 9B, Qwen2.5 7B) | 7-9 mil millones | 8k-128k según modelo | Licencias comunitarias o Apache 2.0 según modelo | Propósito general, instrucciones, código | Ampliamente desplegados y evaluados |
 
 Nota: no existen datos de rendimiento comparables para este checkpoint, por lo que la comparación se limita a parámetros, licencia y disponibilidad. Los datos de la fila de categoría corresponden a valores públicos de sus respectivas model cards y deben verificarse en la fuente oficial antes de tomar decisiones.
@@ -91,7 +91,7 @@ Nota: no existen datos de rendimiento comparables para este checkpoint, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-R-50
+- Modelo en Hugging Face: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-R-50
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Perfil del autor: https://huggingface.co/violetxi
 - Papers, blogs, repositorios o demos asociados: no disponible. La búsqueda web realizada no ha devuelto ningún resultado relacionado con el modelo ni con el estudio de internalización de mundo; los resultados obtenidos corresponden a un medio de prensa italiano sin relación con el proyecto.

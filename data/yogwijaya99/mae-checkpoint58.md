@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yogwijaya99/mae-checkpoint58` es un repositorio experimental publicado en HuggingFace por el usuario yogwijaya99 que contiene una implementación propia de una arquitectura denominada "Mae", configurada a escala "huge" y orientada a tareas multitask. No se trata de un modelo entrenado ni evaluado: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
+`yogwijaya99/mae-checkpoint58` es un repositorio experimental publicado en Hugging Face por el usuario yogwijaya99 que contiene una implementación propia de una arquitectura denominada "Mae", configurada a escala "huge" y orientada a tareas multitask. No se trata de un modelo entrenado ni evaluado: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 
 El interés del repositorio es fundamentalmente arquitectónico y de investigación: sirve como base reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La configuración declarada incluye atención flash, fusión con compuertas (gated fusion), activación ReLU y normalización ScaleNorm, con un recuento de parámetros en safetensors de solo 49.600, lo que confirma que el checkpoint publicado no corresponde a un modelo de escala "huge" real, sino a una inicialización mínima.
 
@@ -75,5 +75,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yogwijaya99/mae-checkpoint58
+- Repositorio en Hugging Face: https://huggingface.co/yogwijaya99/mae-checkpoint58
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

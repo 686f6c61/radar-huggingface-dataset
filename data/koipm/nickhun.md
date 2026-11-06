@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Koipm/Nickhun es un repositorio de modelo publicado en HuggingFace por el usuario Koipm. En el momento de la consulta, el repositorio no dispone de model card con contenido tecnico: el unico metadato declarado en el README es `license: unknown`, sin descripcion, sin ejemplos de uso y sin documentacion de arquitectura o entrenamiento. El repositorio tiene un tamano de 0,1 GB, lo que sugiere un artefacto de pesos de reducidas dimensiones, pero no es posible confirmar si se trata de un modelo completo, un adaptador (LoRA/QLoRA) o un checkpoint parcial.
+Koipm/Nickhun es un repositorio de modelo publicado en Hugging Face por el usuario Koipm. En el momento de la consulta, el repositorio no dispone de model card con contenido tecnico: el unico metadato declarado en el README es `license: unknown`, sin descripcion, sin ejemplos de uso y sin documentacion de arquitectura o entrenamiento. El repositorio tiene un tamano de 0,1 GB, lo que sugiere un artefacto de pesos de reducidas dimensiones, pero no es posible confirmar si se trata de un modelo completo, un adaptador (LoRA/QLoRA) o un checkpoint parcial.
 
 El modelo acumula 0 descargas y 0 likes, y el pipeline no esta declarado en la plataforma. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni proceso de entrenamiento. Tampoco se han identificado papers, repositorios auxiliares, blogs o demos asociados.
 
@@ -21,7 +21,7 @@ La relevancia actual de esta ficha es limitada y de caracter descriptivo: sirve 
 | Licencia | unknown (declarada en el README como `license: unknown`) |
 | Formato de pesos | no disponible (el tamano del repo es de 0,1 GB, pero no se especifica el formato de los archivos) |
 
-Otros metadatos verificables en HuggingFace: autor `Koipm`, tags `license:unknown` y `region:us`, 0 descargas, 0 likes, sin pipeline declarado, fecha de creacion 2026-09-12 y ultima actualizacion 2026-09-12.
+Otros metadatos verificables en Hugging Face: autor `Koipm`, tags `license:unknown` y `region:us`, 0 descargas, 0 likes, sin pipeline declarado, fecha de creacion 2026-09-12 y ultima actualizacion 2026-09-12.
 
 ## Arquitectura y entrenamiento
 
@@ -43,7 +43,7 @@ Tampoco se han identificado innovaciones tecnicas declaradas (atencion lineal, d
 Advertencia previa: dado que no existe informacion tecnica publicada sobre este modelo, los siguientes escenarios son unicamente condicionales y no pueden validarse. Se enumeran para completar la estructura de la ficha, no como recomendaciones de uso.
 
 - Evaluacion exploratoria en notebook: cargar los pesos en un entorno aislado y sin datos sensibles para determinar si el artefacto es un modelo completo o un adaptador, dado que el tamano del repositorio (0,1 GB) es compatible con un adaptador pequeno.
-- Analisis forense de artefactos de HuggingFace: inspeccionar los archivos del repositorio (`.safetensors`, `.bin`, `.gguf` u otros) para determinar el formato y el numero de tensores antes de plantear cualquier uso.
+- Analisis forense de artefactos de Hugging Face: inspeccionar los archivos del repositorio (`.safetensors`, `.bin`, `.gguf` u otros) para determinar el formato y el numero de tensores antes de plantear cualquier uso.
 - Prototipado interno sin requisitos de licencia clara: solo si el equipo asume el riesgo de una licencia `unknown`, en entornos cerrados y sin redistribucion.
 - Pruebas de integracion de pipelines de carga: usar el repositorio como caso de prueba para validar que un cargador de modelos (por ejemplo, `transformers`) gestiona correctamente repositorios con metadatos incompletos.
 - Docencia sobre gobernanza de modelos: emplearlo como ejemplo real de publicacion sin model card, sin licencia definida y sin trazabilidad de datos, para discutir criterios de adopcion responsable.
@@ -79,7 +79,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Koipm/Nickhun
+- Hugging Face: https://huggingface.co/Koipm/Nickhun
 - Model card: no disponible (el README solo contiene `license: unknown`)
 - Paper: no disponible
 - Repositorio de codigo: no disponible

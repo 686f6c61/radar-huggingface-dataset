@@ -90,8 +90,8 @@ No se han encontrado otros adaptadores LoRA para function calling en portugués 
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/BrCamp/bee-350m-pt-agentico
-- HuggingFace del modelo base: https://huggingface.co/BrCamp/bee-350m-pt-base
+- Hugging Face del adaptador: https://huggingface.co/BrCamp/bee-350m-pt-agentico
+- Hugging Face del modelo base: https://huggingface.co/BrCamp/bee-350m-pt-base
 - Repositorio GitHub con código, datos y reporte: https://github.com/brcampidelli/llm-ptbr
 - Dataset GigaVerbo: https://huggingface.co/datasets/TucanoBR/GigaVerbo
 - Página del modelo base en FriendliAI: https://friendli.ai/models/BrCamp/bee-350m-pt-base

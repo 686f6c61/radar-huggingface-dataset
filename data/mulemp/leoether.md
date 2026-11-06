@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `mulemp/Leoether` es un repositorio alojado en HuggingFace por el usuario `mulemp`, con acceso restringido (gated) y una única etiqueta temática `region:us`. A fecha de la consulta, el repositorio registra cero descargas y un solo "like", lo que indica una difusión mínima. El tamaño del repositorio es de 0,9 GB, lo que podría sugerir un modelo de tamaño pequeño o un adaptador, pero no se dispone de información pública que confirme su arquitectura, parámetros o finalidad.
+El modelo `mulemp/Leoether` es un repositorio alojado en Hugging Face por el usuario `mulemp`, con acceso restringido (gated) y una única etiqueta temática `region:us`. A fecha de la consulta, el repositorio registra cero descargas y un solo "like", lo que indica una difusión mínima. El tamaño del repositorio es de 0,9 GB, lo que podría sugerir un modelo de tamaño pequeño o un adaptador, pero no se dispone de información pública que confirme su arquitectura, parámetros o finalidad.
 
-La ficha se elabora a partir de los metadatos públicos de HuggingFace, que son extremadamente limitados. No se ha publicado información sobre la arquitectura, el entrenamiento, las capacidades, los benchmarks o la licencia. El acceso restringido implica que es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargar los pesos, lo que añade una barrera adicional para su evaluación. En consecuencia, esta ficha no puede ofrecer datos técnicos verificados y se limita a documentar la ausencia de información disponible.
+La ficha se elabora a partir de los metadatos públicos de Hugging Face, que son extremadamente limitados. No se ha publicado información sobre la arquitectura, el entrenamiento, las capacidades, los benchmarks o la licencia. El acceso restringido implica que es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargar los pesos, lo que añade una barrera adicional para su evaluación. En consecuencia, esta ficha no puede ofrecer datos técnicos verificados y se limita a documentar la ausencia de información disponible.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ No disponible. No se ha identificado ningún modelo comparable en la misma categ
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos. Esto puede implicar restricciones de uso no especificadas públicamente.
+- Acceso restringido: el repositorio es gated, por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos. Esto puede implicar restricciones de uso no especificadas públicamente.
 - Licencia desconocida: al no indicarse licencia, no se puede garantizar que el modelo sea utilizable en entornos comerciales o de investigación sin riesgo legal.
 - Sin documentación: no hay papers, README técnico ni notas de versión que describan el modelo, su entrenamiento o sus limitaciones.
 - Riesgo de alucinación y sesgos: al no conocerse los datos de entrenamiento ni el proceso de alineación, no se puede evaluar el riesgo de sesgos o alucinaciones.
@@ -53,4 +53,4 @@ No disponible. No se ha identificado ningún modelo comparable en la misma categ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mulemp/Leoether
+- Repositorio Hugging Face: https://huggingface.co/mulemp/Leoether

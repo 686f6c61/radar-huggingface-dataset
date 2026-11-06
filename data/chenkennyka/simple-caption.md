@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `chenkennyka/simple-caption` en HuggingFace no contiene un modelo de inteligencia artificial, sino un documento de texto denominado `reading.md`. Según la model card, este archivo se describe como un "paper" sobre **grounded language** con un formato de texto plano, estilo de citación numérica APA y una estructura intro-problema-solución-validación-futuro. Los tags asociados (`concise-analytical`, `first-person-plural`, `grounded-language`, `plain-text`, `structured-imrad`, entre otros) sugieren que se trata de un documento académico o un ejercicio de escritura técnica, no de un modelo entrenado.
+El repositorio `chenkennyka/simple-caption` en Hugging Face no contiene un modelo de inteligencia artificial, sino un documento de texto denominado `reading.md`. Según la model card, este archivo se describe como un "paper" sobre **grounded language** con un formato de texto plano, estilo de citación numérica APA y una estructura intro-problema-solución-validación-futuro. Los tags asociados (`concise-analytical`, `first-person-plural`, `grounded-language`, `plain-text`, `structured-imrad`, entre otros) sugieren que se trata de un documento académico o un ejercicio de escritura técnica, no de un modelo entrenado.
 
 El repositorio tiene licencia MIT, fue creado el 25 de agosto de 2026 y no presenta descargas ni likes. No existe información sobre arquitectura, parámetros, contexto, idiomas o capacidades de inferencia, ya que no se proporciona ningún peso o configuración de modelo. Es relevante aclarar esto para evitar confusiones entre desarrolladores que buscan un modelo de captioning de imágenes y se encuentren con un documento de texto.
 
@@ -61,8 +61,8 @@ No disponible. No se puede comparar con alternativas de la misma categoría, ya 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chenkennyka/simple-caption
+- Repositorio en Hugging Face: https://huggingface.co/chenkennyka/simple-caption
 - Resultados de búsqueda relacionados (no afiliados con el repositorio):
   - [captionation.com](https://captionation.com/) – generador de captions para imágenes
   - [simple-captioner en GitHub](https://github.com/o-l-l-i/simple-captioner) – herramienta de captioning de imágenes y vídeo
-  - [Modelos con tag image-captioning en HuggingFace](https://huggingface.co/models?other=image-captioning)
+  - [Modelos con tag image-captioning en Hugging Face](https://huggingface.co/models?other=image-captioning)

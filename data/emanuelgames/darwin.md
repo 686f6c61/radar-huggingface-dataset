@@ -1,7 +1,7 @@
 # EmanuelGames/Darwin
 
 ## Resumen
-Darwin es un repositorio de modelo publicado en HuggingFace por el usuario EmanuelGames bajo el identificador EmanuelGames/Darwin. La model card no aporta información técnica: se limita a declarar la licencia apache-2.0, sin indicar arquitectura, número de parámetros, datos de entrenamiento, idiomas ni tarea objetivo. El repositorio ocupa 0,1 GB y no tiene pipeline declarado, por lo que no puede clasificarse funcionalmente.
+Darwin es un repositorio de modelo publicado en Hugging Face por el usuario EmanuelGames bajo el identificador EmanuelGames/Darwin. La model card no aporta información técnica: se limita a declarar la licencia apache-2.0, sin indicar arquitectura, número de parámetros, datos de entrenamiento, idiomas ni tarea objetivo. El repositorio ocupa 0,1 GB y no tiene pipeline declarado, por lo que no puede clasificarse funcionalmente.
 
 El repositorio se creó el 12 de septiembre de 2026 y se actualizó 21 segundos más tarde, sin descargas ni "me gusta" registrados en el momento de la consulta. No consta paper, repositorio de código, demo ni documentación complementaria, y la búsqueda web asociada no devuelve ningún resultado relacionado con el modelo.
 
@@ -85,7 +85,7 @@ No disponible. No se puede establecer la categoría del modelo (tamaño, arquite
 - No apto como dependencia de producción: sin benchmarks, sin garantías de calidad y sin mantenimiento documentado, no se recomienda su uso en sistemas críticos.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/EmanuelGames/Darwin
+- Hugging Face: https://huggingface.co/EmanuelGames/Darwin
 - Paper: no disponible.
 - Repositorio de código: no disponible.
 - Blog o documentación del autor: no disponible.

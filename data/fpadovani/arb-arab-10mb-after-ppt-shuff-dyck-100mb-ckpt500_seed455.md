@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/arb-arab-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455` es un modelo de generación de texto de tipo transformer decoder-only de la familia GPT-2, con 39.087.104 parámetros, publicado por el usuario fpadovani en HuggingFace. Se trata de un fine-tuning mediante SFT (supervised fine-tuning) del modelo `fpadovani/arb-arab-10mb-ppt-shuff-dyck-100mb_seed455`, realizado con la librería TRL de HuggingFace. Los pesos se distribuyen en formato safetensors y el repositorio ocupa 2,1 GB.
+El modelo `fpadovani/arb-arab-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455` es un modelo de generación de texto de tipo transformer decoder-only de la familia GPT-2, con 39.087.104 parámetros, publicado por el usuario fpadovani en Hugging Face. Se trata de un fine-tuning mediante SFT (supervised fine-tuning) del modelo `fpadovani/arb-arab-10mb-ppt-shuff-dyck-100mb_seed455`, realizado con la librería TRL de Hugging Face. Los pesos se distribuyen en formato safetensors y el repositorio ocupa 2,1 GB.
 
 Por el identificador y por el nombre del proyecto de Weights & Biases asociado (denominado "new_tokenizers", bajo la organización f-padovani-university-of-groningen), todo apunta a un artefacto de investigación académica centrado en experimentos con tokenizadores, más que a un modelo destinado a uso en producción. El nombre incluye referencias a "10mb", "dyck" y "100mb", lo que sugiere entrenamiento sobre corpus de esos tamaños y posiblemente sobre lenguajes artificiales de tipo Dyck, aunque esta interpretación es una inferencia y no está confirmada en la model card. Cuenta con 0 descargas y 0 "likes" en el momento de redactar esta ficha.
 
@@ -40,7 +40,7 @@ El nombre del checkpoint aporta pistas sobre el experimento, pero no constituye 
 ## Casos de uso
 
 - Reproducción de experimentos de investigación: el modelo sirve como checkpoint de referencia para comparar el efecto de distintas estrategias de tokenización o de barajado de datos en un transformer pequeño, dado que se conoce la semilla (455) y el número de paso (500).
-- Docencia y prácticas de fine-tuning: por su tamaño reducido, permite ejecutar un ciclo completo de SFT con TRL en hardware de laboratorio o incluso en CPU, ilustrando el flujo `generated_from_trainer` de HuggingFace.
+- Docencia y prácticas de fine-tuning: por su tamaño reducido, permite ejecutar un ciclo completo de SFT con TRL en hardware de laboratorio o incluso en CPU, ilustrando el flujo `generated_from_trainer` de Hugging Face.
 - Pruebas de infraestructura de despliegue: al ocupar unos 78 MB en fp16, es útil para validar pipelines de serving (TGI, endpoints compatibles) sin consumir recursos de GPU significativos.
 - Modelo "draft" en decodificación especulativa: un modelo de 39M parámetros es un candidato natural para servir como modelo borrador frente a un modelo mayor, siempre que se verifique empíricamente su tasa de aceptación.
 - Generación de texto sintético de relleno: para pruebas de carga, formateo de datos o generación de corpus ficticios en entornos de test, donde la calidad lingüística no es crítica.
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: por debajo de 1 GB en fp16 incluyendo activaciones y caché KV para secuencias cortas; el repositorio completo ocupa 2,1 GB, lo que sugiere que puede contener más de un conjunto de pesos o artefactos auxiliares.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; no requiere A100, H100 ni tarjetas de gama alta. Funciona en GTX 1050, RTX 3060, RTX 4090 y similares.
 - Cabe holgadamente en GPU de consumo, e incluso en CPU y en dispositivos de placa única tipo Raspberry Pi para inferencia en fp32 o int8 cuantizado manualmente.
-- Opciones de despliegue: `transformers.pipeline` es el método documentado; los tags del repositorio incluyen `text-generation-inference` y `endpoints_compatible`, por lo que TGI y los Inference Endpoints de HuggingFace son compatibles. No hay conversiones GGUF publicadas, así que llama.cpp u Ollama requerirían convertir los pesos previamente.
+- Opciones de despliegue: `transformers.pipeline` es el método documentado; los tags del repositorio incluyen `text-generation-inference` y `endpoints_compatible`, por lo que TGI y los Inference Endpoints de Hugging Face son compatibles. No hay conversiones GGUF publicadas, así que llama.cpp u Ollama requerirían convertir los pesos previamente.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| fpadovani/arb-arab-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455 | 39,1 M | No disponible | No disponible | HuggingFace, 0 descargas | No |
+| fpadovani/arb-arab-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455 | 39,1 M | No disponible | No disponible | Hugging Face, 0 descargas | No |
 | GPT-2 small | 124 M | 1024 tokens | MIT modificada | Ampliamente disponible | Sí (por el autor original) |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible | Sí (limitados) |
-| Modelos tipo TinyStories (<50 M) | 1-50 M | Variable según variante | Habitualmente permisivas | HuggingFace | Parcialmente |
+| Modelos tipo TinyStories (<50 M) | 1-50 M | Variable según variante | Habitualmente permisivas | Hugging Face | Parcialmente |
 
 La comparación es asimétrica: los modelos alternativos cuentan con documentación de entrenamiento, licencia explícita y evaluaciones publicadas, mientras que este checkpoint carece de todo ello. En parámetros se sitúa por debajo de DistilGPT-2 y de GPT-2 small, pero no hay datos de rendimiento que permitan establecer una equivalencia funcional con ninguno de ellos.
 
@@ -86,7 +86,7 @@ La comparación es asimétrica: los modelos alternativos cuentan con documentaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/fpadovani/arb-arab-10mb-ppt-shuff-dyck-100mb_seed455
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/ic8u0ush
 - Repositorio de TRL: https://github.com/huggingface/trl

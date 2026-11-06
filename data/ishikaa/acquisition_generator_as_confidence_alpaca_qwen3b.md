@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ishikaa/acquisition_generator_AS_confidence_alpaca_qwen3b` es un modelo de generacion de texto publicado en HuggingFace por el usuario `ishikaa`, con arquitectura de tipo transformer decoder-only y etiquetado con el tag `qwen2`. Segun los pesos almacenados en safetensors, el checkpoint contiene 14.770.033.664 parametros (unos 14,77 mil millones). La model card es la plantilla autogenerada por HuggingFace y no ha sido completada: todos los apartados relevantes (desarrollador, datos de entrenamiento, licencia, idiomas, evaluacion) figuran como "[More Information Needed]".
+`ishikaa/acquisition_generator_AS_confidence_alpaca_qwen3b` es un modelo de generacion de texto publicado en Hugging Face por el usuario `ishikaa`, con arquitectura de tipo transformer decoder-only y etiquetado con el tag `qwen2`. Segun los pesos almacenados en safetensors, el checkpoint contiene 14.770.033.664 parametros (unos 14,77 mil millones). La model card es la plantilla autogenerada por Hugging Face y no ha sido completada: todos los apartados relevantes (desarrollador, datos de entrenamiento, licencia, idiomas, evaluacion) figuran como "[More Information Needed]".
 
 El nombre del repositorio sugiere un ajuste fino orientado a la generacion de "acquisition" con senales de confianza y entrenamiento sobre datos en formato Alpaca, pero esto es una inferencia a partir del identificador y no una afirmacion respaldada por documentacion. Existe ademas una discrepancia entre el nombre (`qwen3b`, que apunta a un modelo de 3.000 millones de parametros) y el recuento real de parametros (14,77 mil millones), lo que indica que el checkpoint no corresponde al tamano sugerido por su nombre.
 
@@ -67,7 +67,7 @@ Estimaciones calculadas a partir del recuento real de parametros (14,77 mil mill
 - VRAM total estimada para inferencia: por encima de 30 GB en bf16 contando pesos y cache KV; alrededor de 16-18 GB en 8 bits; en torno a 8-10 GB en 4 bits con contexto corto.
 - GPUs recomendadas para bf16: A100 40/80 GB, H100 80 GB, L40S 48 GB. Con dos RTX 4090 de 24 GB seria posible mediante reparto de tensores.
 - GPU de consumo: cabe en una RTX 4090 (24 GB) unicamente con cuantizacion de 8 o 4 bits y contextos moderados. No cabe en GPUs de 8-12 GB sin cuantizacion agresiva.
-- Opciones de despliegue: el repositorio declara compatibilidad con text-generation-inference y endpoints de HuggingFace; tambien seria desplegable con vLLM o con la propia libreria `transformers`. Al no incluir archivos GGUF, su uso en llama.cpp u Ollama requeriria una conversion previa de los pesos.
+- Opciones de despliegue: el repositorio declara compatibilidad con text-generation-inference y endpoints de Hugging Face; tambien seria desplegable con vLLM o con la propia libreria `transformers`. Al no incluir archivos GGUF, su uso en llama.cpp u Ollama requeriria una conversion previa de los pesos.
 - Latencia y throughput estimados: no disponible, no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No es posible establecer una comparativa rigurosa: el modelo carece de model car
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla por defecto de HuggingFace y no aporta informacion sobre datos, entrenamiento, uso previsto ni limitaciones.
+- Ausencia total de documentacion: la model card es la plantilla por defecto de Hugging Face y no aporta informacion sobre datos, entrenamiento, uso previsto ni limitaciones.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial ni para redistribucion. En la practica, el modelo queda en una situacion juridica ambigua y no deberia utilizarse en produccion sin aclarar este punto con el autor.
 - Riesgo de alucinacion desconocido: no se ha publicado ninguna evaluacion de fidelidad factual ni de tasas de error.
 - Sesgos desconocidos: no hay informacion sobre la composicion del dataset de ajuste ni sobre analisis de sesgo.
@@ -93,7 +93,7 @@ No es posible establecer una comparativa rigurosa: el modelo carece de model car
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_alpaca_qwen3b
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_alpaca_qwen3b
 - Paper referenciado en el tag `arxiv:1910.09700` (Lacoste et al., 2019, estimacion de emisiones de carbono; citado por la plantilla de model card, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental enlazada en la model card: https://mlco2.github.io/impact#compute
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a paginas de la Opera national de Paris y no guardan relacion con este checkpoint.

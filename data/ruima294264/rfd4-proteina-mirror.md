@@ -20,7 +20,7 @@ El bundle publicado contiene 435.622.465 parámetros en un único `model.safeten
 | Idiomas soportados | No aplica (no procesa lenguaje natural); esta ficha se redacta en castellano por convención editorial |
 | Licencia | BSD-3-Clause, Copyright (c) 2026 Institute for Protein Design, University of Washington |
 | Formato de pesos | `safetensors` (`model.safetensors`) + `config.json`; no hay GGUF, ONNX ni otros formatos |
-| Autor del espejo | RUIMA294264 (usuario de HuggingFace, no afiliado al proyecto) |
+| Autor del espejo | RUIMA294264 (usuario de Hugging Face, no afiliado al proyecto) |
 | Modelo upstream | `nvidia/RFD4-Proteina`, revisión fijada `a06e2509c7033b010fc43614e9fd840303588502` |
 | Librería declarada | `rfd4-proteina` |
 | Pipeline | No disponible |
@@ -59,7 +59,7 @@ Tampoco se detallan el número de tokens de entrenamiento, la composición del d
 - Descubrimiento frente a dianas con estructura conocida pero ligandos desconocidos: generación de bolsillos para moléculas pequeñas que sugieran farmacóforos y geometrías de unión antes del cribado virtual.
 - Rediseño y humanización parcial: uso de difusión parcial sobre una estructura existente para modificar regiones concretas (por ejemplo, regiones determinantes de complementariedad) manteniendo el resto del pliegue.
 - Optimización guiada por recompensa en pipelines de diseño: integración de una función de score (estabilidad predicha, solubilidad, afinidad estimada) como recompensa para sesgar el muestreo hacia candidatos con mejores métricas in silico.
-- Despliegue interno reproducible: descarga del bundle verificado por SHA-256 desde este espejo para entornos con acceso lento o restringido a HuggingFace, ejecutando la generación con el paquete `rfd4-proteina` desde PyPI o el repositorio RosettaCommons.
+- Despliegue interno reproducible: descarga del bundle verificado por SHA-256 desde este espejo para entornos con acceso lento o restringido a Hugging Face, ejecutando la generación con el paquete `rfd4-proteina` desde PyPI o el repositorio RosettaCommons.
 - Prototipado rápido vía endpoint gestionado: uso de la implementación en NVIDIA NIM para validar prompts y configuraciones de muestreo antes de invertir en infraestructura propia.
 
 ## Benchmarks y rendimiento
@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks en la información disponible. La d
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| Este espejo (`RUIMA294264/rfd4-proteina-mirror`) | 435.622.465 | No aplica | BSD-3-Clause | HuggingFace | Idéntico al upstream (SHA-256 verificado); 0 descargas |
-| `nvidia/RFD4-Proteina` (upstream) | 435.622.465 (mismo bundle) | No aplica | BSD-3-Clause | HuggingFace + NVIDIA NIM | Referencia canónica; incluye dataset card y requisitos de citación |
+| Este espejo (`RUIMA294264/rfd4-proteina-mirror`) | 435.622.465 | No aplica | BSD-3-Clause | Hugging Face | Idéntico al upstream (SHA-256 verificado); 0 descargas |
+| `nvidia/RFD4-Proteina` (upstream) | 435.622.465 (mismo bundle) | No aplica | BSD-3-Clause | Hugging Face + NVIDIA NIM | Referencia canónica; incluye dataset card y requisitos de citación |
 | RFdiffusion (Baker Lab, generación anterior) | No disponible | No aplica | No disponible | No disponible | No disponible en la información proporcionada |
 | ProteinMPNN (diseño de secuencia dado un backbone) | No disponible | No aplica | No disponible | No disponible | No disponible en la información proporcionada |
 
@@ -101,7 +101,7 @@ La información consultada no incluye cifras de rendimiento comparadas con RFdif
 
 ## Enlaces
 
-- Espejo en HuggingFace: https://huggingface.co/RUIMA294264/rfd4-proteina-mirror
+- Espejo en Hugging Face: https://huggingface.co/RUIMA294264/rfd4-proteina-mirror
 - Modelo upstream: https://huggingface.co/nvidia/RFD4-Proteina
 - Documentación oficial: https://rfd4-proteina.org/latest/index.html
 - Repositorio de código: https://github.com/RosettaCommons/RFD4-Proteina

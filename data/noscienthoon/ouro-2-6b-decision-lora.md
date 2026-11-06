@@ -129,7 +129,7 @@ En tareas de sentido común retenidas, el adaptador supera a Qwen2.5-7B por prom
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/noscienthoon/ouro-2.6b-decision-lora
+- Modelo en Hugging Face: https://huggingface.co/noscienthoon/ouro-2.6b-decision-lora
 - Modelo base ByteDance/Ouro-2.6B: https://huggingface.co/ByteDance/Ouro-2.6B
 - Evaluación pública de TypeSafe: https://evals.typesafe.ai
 - Harness abierto system-one-open: https://github.com/mithalouni/system-one-open

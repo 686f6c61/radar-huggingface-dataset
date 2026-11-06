@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dbvasilyev/efficientformer-multitask-notes94` es un repositorio experimental alojado en HuggingFace por el usuario dbvasilyev que contiene una implementación propia de una arquitectura EfficientFormer orientada a tareas multitarea. No se trata de un modelo entrenado ni de un checkpoint con pesos publicados para uso directo, sino de un punto de partida reproducible: la model card indica explícitamente que `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint con resultados de benchmark.
+`dbvasilyev/efficientformer-multitask-notes94` es un repositorio experimental alojado en Hugging Face por el usuario dbvasilyev que contiene una implementación propia de una arquitectura EfficientFormer orientada a tareas multitarea. No se trata de un modelo entrenado ni de un checkpoint con pesos publicados para uso directo, sino de un punto de partida reproducible: la model card indica explícitamente que `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint con resultados de benchmark.
 
 El repositorio se estructura en torno a un único artefacto principal, `run.py`, acompañado de `config.json` (configuración de arquitectura), `training_args.json` (receta de entrenamiento por defecto) y el mencionado checkpoint de inicialización. La configuración declarada corresponde a una escala "giant" con atención dilatada, fusión mediante cross attention, activación ReLU y normalización LayerNorm, optimizador Adam y scheduler onecycle.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Pesos preentrenados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dbvasilyev/efficientformer-multitask-notes94 | Implementacion propia de EfficientFormer para multitarea | 16.576 segun safetensors (escala "giant" declarada, no coherente) | no disponible | No (solo inicializacion) | apache-2.0 | HuggingFace, 0 descargas |
+| dbvasilyev/efficientformer-multitask-notes94 | Implementacion propia de EfficientFormer para multitarea | 16.576 segun safetensors (escala "giant" declarada, no coherente) | no disponible | No (solo inicializacion) | apache-2.0 | Hugging Face, 0 descargas |
 | EfficientFormer (snap-research) | Vision transformer dimension-consistent | no disponible en la informacion recogida | no disponible | Si (ImageNet-1K) | no disponible | GitHub snap-research, transformers |
 | EfficientFormerV2 (s0, s1, s2, l) | Familia sucesora, ICCV 2023 | no disponible en la informacion recogida | no disponible | Si (ImageNet-1K) | no disponible | GitHub snap-research, transformers |
 
@@ -81,7 +81,7 @@ La diferencia funcional clave es que las variantes oficiales de EfficientFormer 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dbvasilyev/efficientformer-multitask-notes94
+- Modelo en Hugging Face: https://huggingface.co/dbvasilyev/efficientformer-multitask-notes94
 - Paper EfficientFormer: Vision Transformers at MobileNet Speed: https://arxiv.org/abs/2206.01191
 - Repositorio oficial snap-research/EfficientFormer (incluye EfficientFormerV2, ICCV 2023): https://github.com/snap-research/EfficientFormer
 - Documentacion de EfficientFormer en transformers: https://huggingface.co/docs/transformers/v4.56.1/en/model_doc/efficientformer

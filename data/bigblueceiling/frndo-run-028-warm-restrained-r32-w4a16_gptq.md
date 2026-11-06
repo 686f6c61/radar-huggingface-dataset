@@ -46,7 +46,7 @@ Además, el proceso incorpora invariantes de calidad: 0 turnos "slop" y 0 histor
 No se han publicado resultados de benchmarks en la información disponible. La model card menciona un porcentaje esperado de acierto en tool positives del 96,2% y cambios previstos en la longitud y la calidez de las respuestas, pero son métricas internas del proceso de entrenamiento, no comparativas frente a otros modelos. No se dispone de datos de MMLU, HumanEval, GSM8K ni de otras pruebas estándar.
 
 ## Requisitos de hardware
-- VRAM estimada: partiendo de los 4.733.947.440 parámetros y de la reducción declarada de ~3,3x frente a BF16, los pesos cuantizados ocuparían aproximadamente 2,9 GB. Hay que añadir la VRAM de KV-cache y activaciones, que depende del contexto y del número de secuencias concurrentes. El tamaño del repositorio de HuggingFace es 15,1 GB, lo que sugiere que los archivos incluyen todos los tensores, incluidas las partes no cuantizadas.
+- VRAM estimada: partiendo de los 4.733.947.440 parámetros y de la reducción declarada de ~3,3x frente a BF16, los pesos cuantizados ocuparían aproximadamente 2,9 GB. Hay que añadir la VRAM de KV-cache y activaciones, que depende del contexto y del número de secuencias concurrentes. El tamaño del repositorio de Hugging Face es 15,1 GB, lo que sugiere que los archivos incluyen todos los tensores, incluidas las partes no cuantizadas.
 - GPU recomendadas: Ampere (sm_86, A100, RTX A6000), Ada (sm_89, RTX 4090), Hopper (sm_90) y Blackwell (sm_100+). No es compatible con Turing ni arquitecturas anteriores.
 - Consumo en GPU de consumidor: por el tamaño del modelo, una RTX 3090 o RTX 4090 (24 GB) debería ser suficiente para inferencia con contexto moderado, aunque no hay una confirmación oficial del autor.
 - Opciones de despliegue: vLLM, usando el comando proporcionado en la model card. No se mencionan soportes para llama.cpp, Ollama ni TGI.
@@ -72,7 +72,7 @@ Según el autor, la versión cuantizada reduce el ancho de banda de pesos en ~3,
 - El comportamiento "cálido" se ha introducido de forma deliberada, lo que puede resultar excesivo en contextos profesionales o jurídicos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/BigBlueCeiling/frndo-run-028-warm-restrained-r32-W4A16_GPTQ
+- Modelo en Hugging Face: https://huggingface.co/BigBlueCeiling/frndo-run-028-warm-restrained-r32-W4A16_GPTQ
 - Modelo base BF16: https://huggingface.co/BigBlueCeiling/frndo-run-028-warm-restrained-r32-bf16
 - Perfil de BigBlueCeiling: https://huggingface.co/BigBlueCeiling
 - Repositorio B2CQuantizer (según la model card): https://github.com/bigblueceiling/B2CQuantizer

@@ -6,7 +6,7 @@ SAM 3 video para Core AI es una conversión del modelo de segmentación de víde
 
 El modelo resuelve segmentación de vídeo guiada por texto: recibe un vídeo y una o varias prompts textuales (por ejemplo `cat` o `the red car`), localiza los objetos que coinciden y los rastrea entre fotogramas manteniendo identificadores estables. Es relevante porque traslada una capacidad típicamente asociada a infraestructura de servidor (SAM 3) al entorno on-device de Apple, lo que permite procesar vídeo sin enviar el contenido a un servicio externo y sin depender de conectividad.
 
-La ficha se basa exclusivamente en la información del repositorio de HuggingFace y de la model card, que es muy escueta en cuanto a arquitectura, datos de entrenamiento y evaluación. Cualquier dato no documentado se marca como no disponible. La licencia aplicable es la SAM License de Meta, que se hereda en esta copia convertida.
+La ficha se basa exclusivamente en la información del repositorio de Hugging Face y de la model card, que es muy escueta en cuanto a arquitectura, datos de entrenamiento y evaluación. Cualquier dato no documentado se marca como no disponible. La licencia aplicable es la SAM License de Meta, que se hereda en esta copia convertida.
 
 ## Especificaciones técnicas
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `grabbou/sam3-video-CoreAI` | no disponible | vídeo, 672 px (configurable a 336/1008) | `.aimodel` (Core AI) | SAM License | HuggingFace, 0 descargas, 0 likes |
-| `facebook/sam3` | no disponible | no disponible en la información | pesos originales de Meta | SAM License | HuggingFace (modelo base) |
+| `grabbou/sam3-video-CoreAI` | no disponible | vídeo, 672 px (configurable a 336/1008) | `.aimodel` (Core AI) | SAM License | Hugging Face, 0 descargas, 0 likes |
+| `facebook/sam3` | no disponible | no disponible en la información | pesos originales de Meta | SAM License | Hugging Face (modelo base) |
 | Otros segmentadores de vídeo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada no permite establecer una comparación cuantitativa con alternativas de la misma categoría. La única comparación documentada es con el modelo base `facebook/sam3`, del que esta publicación es una conversión de formato para Core AI.
@@ -88,7 +88,7 @@ La información proporcionada no permite establecer una comparación cuantitativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/grabbou/sam3-video-CoreAI
+- Repositorio en Hugging Face: https://huggingface.co/grabbou/sam3-video-CoreAI
 - Modelo base: https://huggingface.co/facebook/sam3
 - Licencia SAM: https://huggingface.co/facebook/sam3/blob/main/LICENSE
 - Receta de exportación `sam3_video`: https://github.com/apple/coreai-models/tree/main/models/sam3_video

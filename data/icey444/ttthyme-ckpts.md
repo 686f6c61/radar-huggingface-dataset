@@ -63,6 +63,6 @@ No disponible. No se proporcionan comparaciones con otros modelos en la informac
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Icey444/ttthyme-ckpts](https://huggingface.co/Icey444/ttthyme-ckpts)
+- Repositorio Hugging Face: [Icey444/ttthyme-ckpts](https://huggingface.co/Icey444/ttthyme-ckpts)
 - Paper Thyme: [arXiv:2508.11630](https://arxiv.org/abs/2508.11630)
 - Notas de reproducción en GitHub: [Irisicy4/Thyme-projects (rama refactor-reproduce-notes)](https://github.com/Irisicy4/Thyme-projects/tree/refactor-reproduce-notes/repro_notes/REPRODUCE.md)

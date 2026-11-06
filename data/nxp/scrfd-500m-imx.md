@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nxp/scrfd-500m-imx es un modelo alojado en HuggingFace bajo la cuenta de NXP Semiconductors, compañía neerlandesa de semiconductores con sede en Eindhoven. El identificador apunta a un detector facial de la familia SCRFD (Sample and Computation Redistribution for Efficient Face Detection) con un presupuesto computacional de aproximadamente 500 millones de FLOPs, y el sufijo "imx" sugiere que está orientado a su despliegue en los procesadores de aplicación i.MX de NXP para entornos de borde. La licencia declarada en la model card es MIT.
+nxp/scrfd-500m-imx es un modelo alojado en Hugging Face bajo la cuenta de NXP Semiconductors, compañía neerlandesa de semiconductores con sede en Eindhoven. El identificador apunta a un detector facial de la familia SCRFD (Sample and Computation Redistribution for Efficient Face Detection) con un presupuesto computacional de aproximadamente 500 millones de FLOPs, y el sufijo "imx" sugiere que está orientado a su despliegue en los procesadores de aplicación i.MX de NXP para entornos de borde. La licencia declarada en la model card es MIT.
 
 La model card publicada está prácticamente vacía: únicamente contiene la declaración de licencia MIT, sin descripción, parámetros, datos de entrenamiento, benchmarks, idiomas ni formato de pesos. La búsqueda web realizada no devuelve documentación específica sobre este checkpoint, solo páginas corporativas generales de NXP, por lo que buena parte de esta ficha queda marcada explícitamente como "no disponible".
 
@@ -68,7 +68,7 @@ No hay datos de rendimiento de este checkpoint, por lo que la comparación cuant
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nxp/scrfd-500m-imx | no disponible | no aplica | no disponible | MIT | HuggingFace |
+| nxp/scrfd-500m-imx | no disponible | no aplica | no disponible | MIT | Hugging Face |
 | RetinaFace | no disponible en esta busqueda | no aplica | no disponible en esta busqueda | variable segun implementacion | publica |
 | YuNet | no disponible en esta busqueda | no aplica | no disponible en esta busqueda | variable segun implementacion | publica |
 | YOLOv8-face | no disponible en esta busqueda | no aplica | no disponible en esta busqueda | AGPL/variable segun version | publica |
@@ -84,7 +84,7 @@ No hay datos de rendimiento de este checkpoint, por lo que la comparación cuant
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nxp/scrfd-500m-imx
+- Repositorio Hugging Face: https://huggingface.co/nxp/scrfd-500m-imx
 - Sitio corporativo de NXP Semiconductors: https://www.nxp.com/
 - Catalogo de productos de NXP: https://www.nxp.com/products:PCPRODCAT
 - NXP Semiconductors en Wikipedia: https://en.wikipedia.org/wiki/NXP_Semiconductors

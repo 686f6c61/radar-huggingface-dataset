@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nileagi/nileagi-suk-mt` es un sistema de traducción automática neuronal (NMT) que traduce del **swahili al sukuma**, desarrollado por **NileAGI**, una empresa de investigación en IA con sede en África. Este checkpoint es un experimento de validación del pipeline de entrenamiento, no una versión de producción, y está diseñado específicamente para el registro literario y religioso de ambos idiomas. El modelo se basa en la arquitectura **M2M-100** (indicada por las etiquetas de HuggingFace) y cuenta con **615 millones de parámetros**, un tamaño moderado que lo hace viable para despliegue en hardware de gama media.
+El modelo `nileagi/nileagi-suk-mt` es un sistema de traducción automática neuronal (NMT) que traduce del **swahili al sukuma**, desarrollado por **NileAGI**, una empresa de investigación en IA con sede en África. Este checkpoint es un experimento de validación del pipeline de entrenamiento, no una versión de producción, y está diseñado específicamente para el registro literario y religioso de ambos idiomas. El modelo se basa en la arquitectura **M2M-100** (indicada por las etiquetas de Hugging Face) y cuenta con **615 millones de parámetros**, un tamaño moderado que lo hace viable para despliegue en hardware de gama media.
 
 La relevancia de este modelo radica en su objetivo: abordar la traducción automática para una lengua bantú con recursos limitados como el sukuma, hablado por millones de personas en Tanzania. Aunque es un experimento, representa un paso hacia la inclusión lingüística en África Oriental y sirve como componente de entrada para otros proyectos de NileAGI, como el sistema de síntesis de voz `nileagi/nileagi-suk-tts`. Su carácter experimental y su licencia restrictiva (`other`) limitan su uso a investigación, pero demuestran la viabilidad técnica de entrenar modelos de traducción para pares de lenguas de bajos recursos.
 
@@ -30,7 +30,7 @@ La model card indica que es una "validación corta del pipeline de entrenamiento
 - **Traducción swahili→sukuma**: única dirección soportada; no realiza traducción inversa.
 - **Registro literario/religioso**: entrenado principalmente con textos de este tipo, por lo que su output se ajusta a ese registro.
 - **Integración con pipeline TTS**: diseñado como entrada para el sistema de síntesis de voz `nileagi/nileagi-suk-tts`.
-- **Compatibilidad con Transformers**: se puede cargar con `AutoModelForSeq2SeqLM` y `AutoTokenizer` de HuggingFace.
+- **Compatibilidad con Transformers**: se puede cargar con `AutoModelForSeq2SeqLM` y `AutoTokenizer` de Hugging Face.
 - **Generación controlada por idioma**: usa `forced_bos_token_id` para forzar el idioma de salida (`suk_Latn`).
 - **Sin capacidades de chat, agentes o tool calling**: es un modelo puramente de traducción.
 
@@ -52,16 +52,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - **VRAM estimada**: con 615M parámetros, el modelo en fp32 requiere aproximadamente 2,5 GB de VRAM, y en fp16 alrededor de 1,25 GB. Esto permite ejecutarlo en GPUs consumer como RTX 3060 (12 GB), RTX 4060 (8 GB) o superiores.
 - **GPU recomendadas**: RTX 3060, RTX 4070, A10, A100 (para inferencia batch) o cualquier GPU con al menos 4 GB de VRAM para fp16.
 - **Compatibilidad con consumer GPU**: sí, cabe en GPUs de gama media e incluso en algunas de gama baja si se usa cuantización (aunque no se proporcionan tipos de cuantización oficiales).
-- **Opciones de despliegue**: al ser compatible con Transformers, puede servirse con **vLLM**, **HuggingFace TGI** o **Ollama** (si se convierte a GGUF). Para CPU, se puede usar `llama.cpp` o `ctransformers` con conversión previa.
+- **Opciones de despliegue**: al ser compatible con Transformers, puede servirse con **vLLM**, **Hugging Face TGI** o **Ollama** (si se convierte a GGUF). Para CPU, se puede usar `llama.cpp` o `ctransformers` con conversión previa.
 - **Latencia y throughput**: no disponible. Al ser un modelo de 615M, se espera una latencia moderada (del orden de cientos de milisegundos por frase en GPU consumer).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Direccion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nileagi/nileagi-suk-mt` | 615M | sw→suk | no disponible | other (investigacion) | HuggingFace |
-| `facebook/m2m100_418M` | 418M | multilingue (100 idiomas) | 1024 tokens | MIT | HuggingFace |
-| `facebook/nllb-200-distilled-600M` | 600M | multilingue (200 idiomas) | 1024 tokens | CC-BY-NC-4.0 | HuggingFace |
+| `nileagi/nileagi-suk-mt` | 615M | sw→suk | no disponible | other (investigacion) | Hugging Face |
+| `facebook/m2m100_418M` | 418M | multilingue (100 idiomas) | 1024 tokens | MIT | Hugging Face |
+| `facebook/nllb-200-distilled-600M` | 600M | multilingue (200 idiomas) | 1024 tokens | CC-BY-NC-4.0 | Hugging Face |
 
 El modelo de NileAGI se diferencia de los modelos multilingües generalistas en que está especializado en el par swahili-sukuma, un par que no está cubierto por M2M-100 ni NLLB-200 de forma nativa. Aunque M2M-100 incluye swahili, no incluye sukuma, por lo que este modelo llena un vacío específico. La comparación directa de rendimiento no es posible sin datos de benchmarks.
 
@@ -77,8 +77,8 @@ El modelo de NileAGI se diferencia de los modelos multilingües generalistas en 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/nileagi/nileagi-suk-mt)
+- [Modelo en Hugging Face](https://huggingface.co/nileagi/nileagi-suk-mt)
 - [Sitio web de NileAGI](https://nileagi.com/)
-- [Perfil de NileAGI en HuggingFace](https://huggingface.co/nileagi)
+- [Perfil de NileAGI en Hugging Face](https://huggingface.co/nileagi)
 - [GitHub de NileAGI](https://github.com/nile-agi)
 - [Dataset de entrenamiento (referenciado)](https://huggingface.co/nileagi/nileagi-suk-data)

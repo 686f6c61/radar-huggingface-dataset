@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hades-2.0-Night3-8k es un ajuste fino del modelo Llama 3.1 8B Instruct, publicado por el usuario ProjectMosiacAI en HuggingFace exclusivamente en formato GGUF. El nombre del unico archivo disponible en el repositorio, `meta-llama-3.1-8b-instruct.Q4_K_M.gguf`, indica que el modelo base es Meta Llama 3.1 8B Instruct y que la unica cuantizacion publicada es Q4_K_M. El ajuste fino y la conversion a GGUF se realizaron con Unsloth, segun la propia model card.
+Hades-2.0-Night3-8k es un ajuste fino del modelo Llama 3.1 8B Instruct, publicado por el usuario ProjectMosiacAI en Hugging Face exclusivamente en formato GGUF. El nombre del unico archivo disponible en el repositorio, `meta-llama-3.1-8b-instruct.Q4_K_M.gguf`, indica que el modelo base es Meta Llama 3.1 8B Instruct y que la unica cuantizacion publicada es Q4_K_M. El ajuste fino y la conversion a GGUF se realizaron con Unsloth, segun la propia model card.
 
 El modelo cuenta con 8.030.261.312 parametros totales (aproximadamente 8.000 millones), lo que lo situa en la categoria de modelos densos de tamano medio, adecuados para inferencia en GPU de consumo. El repositorio ocupa 4,9 GB, coherente con una unica cuantizacion de 4 bits. No se ha publicado informacion sobre el conjunto de datos de ajuste fino, el numero de tokens de entrenamiento, la licencia ni los idiomas soportados.
 
@@ -22,7 +22,7 @@ La relevancia de esta ficha es limitada y debe interpretarse con cautela: el mod
 
 ## Arquitectura y entrenamiento
 
-Segun la model card, el modelo fue ajustado y convertido a GGUF con Unsloth, herramienta que la propia documentacion del autor cita como responsable de un entrenamiento "2x mas rapido". El unico detalle tecnico explicito sobre el proceso es que el comportamiento del token BOS se ajusto para garantizar la compatibilidad con GGUF, un paso habitual al convertir pesos de HuggingFace a llama.cpp. No se especifica la arquitectura modificada, el numero de tokens de entrenamiento, la composicion del dataset, la existencia de RLHF, DPO u otra fase de alineacion, ni la tecnica de ajuste empleada (LoRA, QLoRA o ajuste completo).
+Segun la model card, el modelo fue ajustado y convertido a GGUF con Unsloth, herramienta que la propia documentacion del autor cita como responsable de un entrenamiento "2x mas rapido". El unico detalle tecnico explicito sobre el proceso es que el comportamiento del token BOS se ajusto para garantizar la compatibilidad con GGUF, un paso habitual al convertir pesos de Hugging Face a llama.cpp. No se especifica la arquitectura modificada, el numero de tokens de entrenamiento, la composicion del dataset, la existencia de RLHF, DPO u otra fase de alineacion, ni la tecnica de ajuste empleada (LoRA, QLoRA o ajuste completo).
 
 Dado que el parametro total declarado (8.030.261.312) coincide con el de Llama 3.1 8B Instruct y que el nombre del archivo apunta a ese modelo base, es razonable asumir una arquitectura transformer decoder-only densa con attention agrupada (GQA), que es la de la familia Llama 3.1. No obstante, la model card no confirma esta correspondencia ni detalla ninguna innovacion tecnica adicional, por lo que cualquier afirmacion sobre la ventana de contexto nativa, el tokenizador o el vocabulario debe verificarse directamente contra los pesos publicados.
 
@@ -86,7 +86,7 @@ Observacion practica: si se confirma que el modelo base es Llama 3.1 8B Instruct
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProjectMosiacAI/Hades-2.0-Night3-8k
+- Modelo en Hugging Face: https://huggingface.co/ProjectMosiacAI/Hades-2.0-Night3-8k
 - Unsloth (herramienta citada por el autor): https://github.com/unslothai/unsloth
 - llama.cpp (runtime implicito en las etiquetas y en los comandos de ejemplo): no se proporciona enlace en la informacion disponible
 - Paper, blog o demo asociados: no disponible

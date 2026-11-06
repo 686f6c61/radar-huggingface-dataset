@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FarmifAI_1.3 es un modelo de lenguaje finetuneado por FarmifAI a partir de `unsloth/Qwen3.5-0.8B`. Está publicado en HuggingFace con licencia Apache 2.0 y pipeline `image-text-to-text`, aunque la información disponible no detalla sus capacidades multimodales. El modelo cuenta con 873.438.784 parámetros y un tamaño de repositorio de 1,8 GB. Según la model card, fue entrenado con Unsloth y la librería TRL de HuggingFace, lo que permitió un entrenamiento dos veces más rápido. Su idioma declarado es inglés. No se proporcionan más datos sobre arquitectura, contexto, datos de entrenamiento ni rendimiento.
+FarmifAI_1.3 es un modelo de lenguaje finetuneado por FarmifAI a partir de `unsloth/Qwen3.5-0.8B`. Está publicado en Hugging Face con licencia Apache 2.0 y pipeline `image-text-to-text`, aunque la información disponible no detalla sus capacidades multimodales. El modelo cuenta con 873.438.784 parámetros y un tamaño de repositorio de 1,8 GB. Según la model card, fue entrenado con Unsloth y la librería TRL de Hugging Face, lo que permitió un entrenamiento dos veces más rápido. Su idioma declarado es inglés. No se proporcionan más datos sobre arquitectura, contexto, datos de entrenamiento ni rendimiento.
 
 ## Especificaciones técnicas
 
@@ -19,12 +19,12 @@ FarmifAI_1.3 es un modelo de lenguaje finetuneado por FarmifAI a partir de `unsl
 
 ## Arquitectura y entrenamiento
 
-El modelo es un finetune de `unsloth/Qwen3.5-0.8B`, un modelo base de aproximadamente 0,8 mil millones de parámetros. Según la model card, el entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, lo que aceleró el proceso de fine-tuning. No se detallan la arquitectura interna, la composición del dataset, el número de tokens de entrenamiento ni si se aplicaron técnicas de alineación como RLHF o DPO.
+El modelo es un finetune de `unsloth/Qwen3.5-0.8B`, un modelo base de aproximadamente 0,8 mil millones de parámetros. Según la model card, el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, lo que aceleró el proceso de fine-tuning. No se detallan la arquitectura interna, la composición del dataset, el número de tokens de entrenamiento ni si se aplicaron técnicas de alineación como RLHF o DPO.
 
 ## Capacidades
 
 - Generación de texto conversacional en inglés, según el pipeline declarado.
-- El pipeline en HuggingFace es `image-text-to-text`, lo que sugiere una posible entrada multimodal, pero no hay documentación que confirme el soporte real de visión.
+- El pipeline en Hugging Face es `image-text-to-text`, lo que sugiere una posible entrada multimodal, pero no hay documentación que confirme el soporte real de visión.
 - No se dispone de información sobre tool calling, function calling, agentes, razonamiento multi-step ni otras capacidades especiales.
 
 ## Casos de uso
@@ -34,7 +34,7 @@ El modelo es un finetune de `unsloth/Qwen3.5-0.8B`, un modelo base de aproximada
 - Aplicaciones agrícolas: el repositorio de GitHub de FarmifAI menciona un problema de producción agrícola en Colombia, aunque no hay evidencia de que este modelo esté entrenado específicamente para ese dominio.
 - Investigación en eficiencia de entrenamiento: puede usarse para estudiar el impacto de técnicas de aceleración como Unsloth en modelos pequeños.
 - Despliegue en edge: su tamaño de 1,8 GB permite su ejecución en dispositivos con poca memoria, aunque no se especifican requisitos exactos.
-- Educación y divulgación: sirve como modelo de referencia para aprender a publicar finetunes en HuggingFace y a documentar modelos con licencia Apache 2.0.
+- Educación y divulgación: sirve como modelo de referencia para aprender a publicar finetunes en Hugging Face y a documentar modelos con licencia Apache 2.0.
 
 ## Benchmarks y rendimiento
 
@@ -63,7 +63,7 @@ No disponible. No se proporcionan datos de modelos comparables en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FarmifAI/FarmifAI_1.3
-- Perfil de FarmifAI en HuggingFace: https://huggingface.co/FarmifAI
+- Modelo en Hugging Face: https://huggingface.co/FarmifAI/FarmifAI_1.3
+- Perfil de FarmifAI en Hugging Face: https://huggingface.co/FarmifAI
 - Repositorio de GitHub del autor: https://github.com/Bryan-Andres-Suarez-Sanchez/FarmifAI
 - Unsloth: https://github.com/unslothai/unsloth

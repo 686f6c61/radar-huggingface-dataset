@@ -74,10 +74,10 @@ Datos de eficiencia del finetune Swift 1.5 segun el autor del pack: 63,4 % menos
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este pack (Swift-1.5 Qwen3.8-Flash-Next NVFP4 Basalt) | ~130 B MoE | no disponible | `.basalt` | other | HuggingFace, 0 descargas |
-| ukisai/Swift-1.5-Qwen3.8-Flash-Next-NVFP4 | ~130 B MoE | no disponible | NVFP4 | other (gated) | HuggingFace, acceso restringido |
-| ukisai/Swift-Qwen3.8-Flash-Next (BF16) | ~130 B MoE | no disponible | safetensors BF16 | other | HuggingFace |
-| Qwen/Qwen3.8-Flash-Next (base) | ~130 B MoE | no disponible | safetensors BF16 | no disponible | HuggingFace |
+| Este pack (Swift-1.5 Qwen3.8-Flash-Next NVFP4 Basalt) | ~130 B MoE | no disponible | `.basalt` | other | Hugging Face, 0 descargas |
+| ukisai/Swift-1.5-Qwen3.8-Flash-Next-NVFP4 | ~130 B MoE | no disponible | NVFP4 | other (gated) | Hugging Face, acceso restringido |
+| ukisai/Swift-Qwen3.8-Flash-Next (BF16) | ~130 B MoE | no disponible | safetensors BF16 | other | Hugging Face |
+| Qwen/Qwen3.8-Flash-Next (base) | ~130 B MoE | no disponible | safetensors BF16 | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ Datos de eficiencia del finetune Swift 1.5 segun el autor del pack: 63,4 % menos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kaushikvira/Qwen3.8-Flash-Next-swift15-nvfp4-basalt
+- Repositorio Hugging Face: https://huggingface.co/kaushikvira/Qwen3.8-Flash-Next-swift15-nvfp4-basalt
 - Modelo base del finetune: https://huggingface.co/ukisai/Swift-Qwen3.8-Flash-Next
 - Checkpoint NVFP4 de origen (gated): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-NVFP4
 - Modelo base upstream: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

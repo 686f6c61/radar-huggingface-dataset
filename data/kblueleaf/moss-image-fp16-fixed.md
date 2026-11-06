@@ -93,11 +93,11 @@ No se dispone de los parametros totales de MOSS-Image en la informacion proporci
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MOSS-Image FP16-fixed (esta ficha) | no disponible | No aplica contexto; validado hasta 2560x2560 y 3072x3072 en fp32/bf16 | Apache 2.0 | HuggingFace, diffusers y ComfyUI | Redistribucion fp16-estable de MOSS-Image Base y SFT |
-| MOSS-Image Base / SFT (oficial, OpenMOSS-Team) | no disponible | Mismo pipeline | Apache 2.0 (segun el modelo base declarado) | HuggingFace | Pesos oficiales en bf16; en fp16 el flujo residual queda a 1,05x del limite |
-| FLUX.1-dev | 12.000 millones | No aplica contexto | Licencia no comercial | HuggingFace, diffusers, ComfyUI | Referencia habitual en text-to-image de alta calidad; licencia restrictiva para uso comercial |
-| FLUX.1-schnell | 12.000 millones | No aplica contexto | Apache 2.0 | HuggingFace, diffusers, ComfyUI | Alternativa permisiva con menos pasos de muestreo |
-| Qwen-Image | 20.000 millones | No aplica contexto | Apache 2.0 | HuggingFace, diffusers | Alternativa Apache 2.0 de mayor tamano |
+| MOSS-Image FP16-fixed (esta ficha) | no disponible | No aplica contexto; validado hasta 2560x2560 y 3072x3072 en fp32/bf16 | Apache 2.0 | Hugging Face, diffusers y ComfyUI | Redistribucion fp16-estable de MOSS-Image Base y SFT |
+| MOSS-Image Base / SFT (oficial, OpenMOSS-Team) | no disponible | Mismo pipeline | Apache 2.0 (segun el modelo base declarado) | Hugging Face | Pesos oficiales en bf16; en fp16 el flujo residual queda a 1,05x del limite |
+| FLUX.1-dev | 12.000 millones | No aplica contexto | Licencia no comercial | Hugging Face, diffusers, ComfyUI | Referencia habitual en text-to-image de alta calidad; licencia restrictiva para uso comercial |
+| FLUX.1-schnell | 12.000 millones | No aplica contexto | Apache 2.0 | Hugging Face, diffusers, ComfyUI | Alternativa permisiva con menos pasos de muestreo |
+| Qwen-Image | 20.000 millones | No aplica contexto | Apache 2.0 | Hugging Face, diffusers | Alternativa Apache 2.0 de mayor tamano |
 
 ## Limitaciones y advertencias
 
@@ -114,7 +114,7 @@ No se dispone de los parametros totales de MOSS-Image en la informacion proporci
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/KBlueLeaf/MOSS-Image-FP16-fixed
+- Hugging Face (este repositorio): https://huggingface.co/KBlueLeaf/MOSS-Image-FP16-fixed
 - Modelo base oficial: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Modelo SFT oficial: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Herramienta del autor (KohakuMossTrainer): https://github.com/KohakuBlueleaf/KohakuMossTrainer

@@ -115,7 +115,7 @@ No hay datos de rendimiento en la informacion disponible para construir una comp
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mimicgen_aux_id90_auxerr_ckpts | no disponible | no aplica | no disponible | MIT | HuggingFace (36 checkpoints, 59,2 GB) |
+| mimicgen_aux_id90_auxerr_ckpts | no disponible | no aplica | no disponible | MIT | Hugging Face (36 checkpoints, 59,2 GB) |
 | Lineas base de robomimic | no disponible | no aplica | no disponible | no disponible | no disponible en este repositorio |
 | Variantes de nube de puntos del mismo estudio | no disponible | no aplica | no disponible | no disponible | excluidas de este repositorio |
 
@@ -132,7 +132,7 @@ No hay datos de rendimiento en la informacion disponible para construir una comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LeeHakHo/mimicgen_aux_id90_auxerr_ckpts
+- Repositorio en Hugging Face: https://huggingface.co/LeeHakHo/mimicgen_aux_id90_auxerr_ckpts
 - Conjunto de datos de errores auxiliares ID90: https://huggingface.co/datasets/LeeHakHo/mimicgen_aux_id90_auxerr
 - Checkpoints completos de la rejilla de 10 epocas: https://huggingface.co/LeeHakHo/mimicgen_aux_id90_checkpoints
 - Referencias mencionadas en la model card: `robomimic` (carga de politicas mediante `FileUtils.policy_from_checkpoint`) y `MimicGen` (generacion de demostraciones y tareas). La busqueda web realizada no devolvio ningun enlace relevante adicional sobre este modelo.

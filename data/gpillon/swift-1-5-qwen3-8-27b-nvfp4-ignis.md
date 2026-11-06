@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K,
 |---|---|---|---|---|---|
 | gpillon/Swift-1.5-Qwen3.8-27B-nvfp4-ignis | 27B | hasta 253.440 tokens | NVFP4 (W4A4) | Swift Open License v1.0 | ignis, GPU Blackwell 32/96 GB |
 | gpillon/Swift-1.5-Qwen3.8-27B-trellis-3bpw-ignis | 27B | no disponible | trellis 3 bpw | Swift Open License v1.0 | ignis, GPU 16 GB |
-| ukisai/Swift-1.5-Qwen3.8-27b (base) | 27B | no disponible | pesos originales | Swift Open License v1.0 | HuggingFace, requiere hardware mayor |
-| Qwen/Qwen3.8-27B (base original) | 27B | no disponible | pesos originales | Apache-2.0 | HuggingFace, ecosistema amplio |
+| ukisai/Swift-1.5-Qwen3.8-27b (base) | 27B | no disponible | pesos originales | Swift Open License v1.0 | Hugging Face, requiere hardware mayor |
+| Qwen/Qwen3.8-27B (base original) | 27B | no disponible | pesos originales | Apache-2.0 | Hugging Face, ecosistema amplio |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gpillon/Swift-1.5-Qwen3.8-27B-nvfp4-ignis
+- Modelo en Hugging Face: https://huggingface.co/gpillon/Swift-1.5-Qwen3.8-27B-nvfp4-ignis
 - Modelo base (post-entrenamiento): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante para 16 GB: https://huggingface.co/gpillon/Swift-1.5-Qwen3.8-27B-trellis-3bpw-ignis

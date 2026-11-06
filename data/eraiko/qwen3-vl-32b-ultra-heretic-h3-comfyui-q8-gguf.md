@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo eraiko/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-Q8-GGUF es una version derivada del modelo multimodal Qwen3-VL-32B, publicada por el usuario eraiko en HuggingFace y distribuida exclusivamente en formato GGUF cuantizado a Q8 para su uso en ComfyUI y en runtimes compatibles con llama.cpp. Se trata de una variante "abliterated" (etiquetada como heretic y abliterated en los tags del repositorio), es decir, una version en la que se han eliminado o atenuado las direcciones de rechazo del modelo original mediante tecnicas de ablacion de pesos, con el objetivo declarado de reducir las negativas del modelo ante determinadas peticiones.
+El modelo eraiko/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-Q8-GGUF es una version derivada del modelo multimodal Qwen3-VL-32B, publicada por el usuario eraiko en Hugging Face y distribuida exclusivamente en formato GGUF cuantizado a Q8 para su uso en ComfyUI y en runtimes compatibles con llama.cpp. Se trata de una variante "abliterated" (etiquetada como heretic y abliterated en los tags del repositorio), es decir, una version en la que se han eliminado o atenuado las direcciones de rechazo del modelo original mediante tecnicas de ablacion de pesos, con el objetivo declarado de reducir las negativas del modelo ante determinadas peticiones.
 
 La ficha tecnica oficial del repositorio es minima: unicamente declara la licencia Apache 2.0, el idioma ingles, el pipeline image-text-to-text y la libreria comfyui, sin documentar el proceso de entrenamiento, los datos utilizados ni resultados de evaluacion. Tampoco se publican datos de contexto, tipos de cuantizacion alternativos ni la identidad exacta del checkpoint base sobre el que se aplico la ablacion, mas alla de la referencia a Qwen3-VL-32B en el nombre del repositorio y en los tags.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento que permitan una comparacion funcional ent
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eraiko/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-Q8-GGUF
+- Hugging Face: https://huggingface.co/eraiko/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-Q8-GGUF
 - Repositorio del modelo base Qwen3-VL-32B: no disponible en la informacion proporcionada
 - Paper o documentacion tecnica de Qwen3-VL: no disponible en la informacion proporcionada
 - Repositorio de llama.cpp: no disponible en la informacion proporcionada

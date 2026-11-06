@@ -129,7 +129,7 @@ No se dispone de datos de benchmarks comparativos adicionales con otros modelos 
 
 ## Enlaces
 
-- HuggingFace (esta conversión GGUF): https://huggingface.co/tryambientai/orukeet-gguf
+- Hugging Face (esta conversión GGUF): https://huggingface.co/tryambientai/orukeet-gguf
 - Modelo base: https://huggingface.co/oruk/orukeet
 - Commit del modelo base: https://huggingface.co/oruk/orukeet/commit/b59c13a
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

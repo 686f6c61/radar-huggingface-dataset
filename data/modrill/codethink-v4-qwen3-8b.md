@@ -70,9 +70,9 @@ El campo "Cap" indica 130 generaciones que alcanzaron el límite de 32k sin cerr
 
 | Modelo | Parámetros | Contexto | Pass@1 (DEV256) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CodeThink-V4-Qwen3-8B | 8,19B | 32.768 | 81/256 | Apache-2.0 | HuggingFace |
-| Qwen3-8B-Base | 8,19B | 32.768 | 55/256 (protocolo antiguo) | Apache-2.0 | HuggingFace |
-| Qwen3-30B-A3B-Thinking-2507 | 30B totales / 3B activos | No disponible | No disponible | No disponible | HuggingFace (profesor) |
+| CodeThink-V4-Qwen3-8B | 8,19B | 32.768 | 81/256 | Apache-2.0 | Hugging Face |
+| Qwen3-8B-Base | 8,19B | 32.768 | 55/256 (protocolo antiguo) | Apache-2.0 | Hugging Face |
+| Qwen3-30B-A3B-Thinking-2507 | 30B totales / 3B activos | No disponible | No disponible | No disponible | Hugging Face (profesor) |
 
 La comparativa muestra una mejora relativa frente a la base en el conjunto DEV256, aunque la diferencia debe interpretarse con cautela porque los números de la base corresponden a un contrato de evaluación anterior. El profesor de 30B-A3B es un modelo MoE mucho mayor que sirve como referencia de capacidad, pero no se dispone de resultados en el mismo protocolo.
 
@@ -89,5 +89,5 @@ La comparativa muestra una mejora relativa frente a la base en el conjunto DEV25
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/modrill/CodeThink-V4-Qwen3-8B
+- Página del modelo en Hugging Face: https://huggingface.co/modrill/CodeThink-V4-Qwen3-8B
 - Modelo base Qwen/Qwen3-8B-Base: https://huggingface.co/Qwen/Qwen3-8B-Base

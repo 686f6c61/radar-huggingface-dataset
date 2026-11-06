@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hybrid for Matching es un andamiaje de implementacion publicado en HuggingFace por el usuario hhowardwilliam. Se presenta explicitamente como una variante "small" reproducible, no como un modelo entrenado ni como un release con resultados. El repositorio incluye el codigo del modelo (`model.py`), la configuracion de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`) valido para pruebas de humo.
+Hybrid for Matching es un andamiaje de implementacion publicado en Hugging Face por el usuario hhowardwilliam. Se presenta explicitamente como una variante "small" reproducible, no como un modelo entrenado ni como un release con resultados. El repositorio incluye el codigo del modelo (`model.py`), la configuracion de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`) valido para pruebas de humo.
 
 El modelo declara una arquitectura de tipo hibrido (Hybrid) con atencion lineal, fusion de bajo rango, activacion ReLU y normalizacion ScaleNorm, orientada a tareas de matching. La unica cifra de tamano disponible es la de parametros totales reportada en los metadatos de safetensors: 24.832. El autor no reclama ninguna puntuacion de benchmark y advierte que el checkpoint no ha sido entrenado ni auditado.
 
@@ -81,6 +81,6 @@ No disponible. Este repositorio no es un modelo entrenado comparable con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hhowardwilliam/hybrid-matching
+- Hugging Face: https://huggingface.co/hhowardwilliam/hybrid-matching
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

@@ -94,6 +94,6 @@ No se dispone de información sobre otros detectores de palabras online comparab
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PellelNitram/xournalpp-htr-word-detector-online
+- Hugging Face: https://huggingface.co/PellelNitram/xournalpp-htr-word-detector-online
 - Código y entrenamiento: https://github.com/PellelNitram/xournalpp_htr (directorio `xournalpp_htr/training/word_detector_online/`)
 - Documentación del modelo: `docs/models/word_detector_online.md` en el repositorio anterior

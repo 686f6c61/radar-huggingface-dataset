@@ -80,7 +80,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotsMali/soloni-114m-tdt-ctc-v1
+- Modelo en Hugging Face: https://huggingface.co/RobotsMali/soloni-114m-tdt-ctc-v1
 - Modelo base: https://huggingface.co/RobotsMali/soloni-114m-tdt-ctc-v0
 - Dataset de entrenamiento: https://huggingface.co/datasets/RobotsMali/kunkado
 - Dataset de evaluación: https://huggingface.co/datasets/RobotsMali/nyana-eval

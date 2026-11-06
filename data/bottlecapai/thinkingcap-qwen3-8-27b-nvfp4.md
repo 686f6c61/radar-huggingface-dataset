@@ -97,8 +97,8 @@ El propio autor advierte que la cuantizacion esta "evaluada, no demostrada sin p
 
 | Modelo | Parametros | Contexto | Precision MMLU-Pro | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThinkingCap-Qwen3.8-27B-NVFP4 | 16,7 B (safetensors) | No disponible | 0,851 | PolyForm Small Business 1.0.0 | HuggingFace, con solicitud de acceso |
-| ThinkingCap-Qwen3.8-27B (bf16) | No disponible | No disponible | 0,841 | PolyForm Small Business 1.0.0 | HuggingFace, con solicitud de acceso |
+| ThinkingCap-Qwen3.8-27B-NVFP4 | 16,7 B (safetensors) | No disponible | 0,851 | PolyForm Small Business 1.0.0 | Hugging Face, con solicitud de acceso |
+| ThinkingCap-Qwen3.8-27B (bf16) | No disponible | No disponible | 0,841 | PolyForm Small Business 1.0.0 | Hugging Face, con solicitud de acceso |
 | Qwen3.8-27B base | No disponible | No disponible | No disponible | Apache-2.0 (materiales upstream de Qwen) | No disponible |
 
 No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada; el autor solo publica comparaciones contra su propio modelo bf16 y contra la base Qwen3.8-27B en la tabla de velocidad.
@@ -118,7 +118,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-NVFP4
 - Modelo base (bf16): https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
 - Licencia: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-NVFP4/blob/main/LICENSE
 - Aviso de materiales upstream: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-NVFP4/blob/main/NOTICE

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Volt-s-joint.scannet20.kadir-yilmaz es un checkpoint de segmentación semántica de nubes de puntos 3D desarrollado por el autor Kadir Yilmaz y distribuido en HuggingFace por la organización torch-pointcloud. Implementa la arquitectura Volume Transformer, un transformer "vanilla" que opera sobre tokens de parches volumétricos en lugar de recurrir a operadores de convolución dispersa o mecanismos de atención específicos para 3D. El modelo resuelve la asignación de una etiqueta semántica a cada punto de una escena interior capturada con sensores RGB-D o LiDAR.
+Volt-s-joint.scannet20.kadir-yilmaz es un checkpoint de segmentación semántica de nubes de puntos 3D desarrollado por el autor Kadir Yilmaz y distribuido en Hugging Face por la organización torch-pointcloud. Implementa la arquitectura Volume Transformer, un transformer "vanilla" que opera sobre tokens de parches volumétricos en lugar de recurrir a operadores de convolución dispersa o mecanismos de atención específicos para 3D. El modelo resuelve la asignación de una etiqueta semántica a cada punto de una escena interior capturada con sensores RGB-D o LiDAR.
 
 Con 23,7 millones de parámetros, es un modelo compacto pensado para integrarse en pipelines de percepción 3D. Este checkpoint concreto conserva el clasificador de 20 clases de ScanNet, aunque fue entrenado de forma conjunta sobre ScanNet, ScanNet200, ScanNet++ y ARKitScenes, con un clasificador independiente por conjunto de etiquetas. La relevancia actual radica en que demuestra que un transformer estándar, sin sesgos inductivos específicos de 3D, puede competir con arquitecturas especializadas en segmentación de escenas interiores.
 
@@ -87,7 +87,7 @@ No disponible. La informacion proporcionada no incluye datos de otros modelos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/volt-s-joint.scannet20.kadir-yilmaz
+- Hugging Face: https://huggingface.co/torch-pointcloud/volt-s-joint.scannet20.kadir-yilmaz
 - Modelo original: https://huggingface.co/KadirYilmaz/Volt
 - Paper: https://arxiv.org/abs/2604.19609
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

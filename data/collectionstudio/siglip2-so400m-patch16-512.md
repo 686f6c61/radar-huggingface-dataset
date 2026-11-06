@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SigLIP 2 So400m (checkpoint `siglip2-so400m-patch16-512`) es un codificador vision-lenguaje de tipo dual encoder desarrollado por Google y republicado en HuggingFace por el usuario CollectionStudio. Se trata de la segunda generacion de la familia SigLIP: extiende el objetivo de preentrenamiento de SigLIP con tecnicas previas integradas en una unica receta, mejorando la comprension semantica, la localizacion y la calidad de las caracteristicas densas. El modelo resuelve tareas de clasificacion de imagen zero-shot, recuperacion imagen-texto y sirve como torre de vision para modelos vision-lenguaje (VLM).
+SigLIP 2 So400m (checkpoint `siglip2-so400m-patch16-512`) es un codificador vision-lenguaje de tipo dual encoder desarrollado por Google y republicado en Hugging Face por el usuario CollectionStudio. Se trata de la segunda generacion de la familia SigLIP: extiende el objetivo de preentrenamiento de SigLIP con tecnicas previas integradas en una unica receta, mejorando la comprension semantica, la localizacion y la calidad de las caracteristicas densas. El modelo resuelve tareas de clasificacion de imagen zero-shot, recuperacion imagen-texto y sirve como torre de vision para modelos vision-lenguaje (VLM).
 
 El checkpoint tiene 1.136.555.698 parametros totales (aproximadamente 1,14 mil millones), con un repositorio de 4,6 GB en safetensors, lo que corresponde a pesos en precision completa (fp32). La nomenclatura `so400m` hace referencia al encoder de vision SoViT-400m; el desglose exacto de parametros entre la torre de vision y la torre de texto no esta disponible en la informacion proporcionada. La variante `patch16-512` procesa imagenes a 512x512 píxeles con parches de 16x16, lo que produce 1024 tokens visuales por imagen.
 
@@ -90,7 +90,7 @@ Los datos de esta tabla proceden del conocimiento general sobre la familia y no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CollectionStudio/siglip2-so400m-patch16-512
+- Modelo en Hugging Face: https://huggingface.co/CollectionStudio/siglip2-so400m-patch16-512
 - Checkpoint original referenciado en el codigo de la model card: https://huggingface.co/google/siglip2-so400m-patch16-512
 - Paper de SigLIP 2: https://arxiv.org/abs/2502.14786
 - Paper de SigLIP: https://arxiv.org/abs/2303.15343

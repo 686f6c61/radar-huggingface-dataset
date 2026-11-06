@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-350M-SmolDataEnv-Matched2.8K-Haiku-5.5-adapter es un ajuste fino (fine-tuning) del modelo base LiquidAI/LFM2.5-350M, publicado por el usuario lugman en HuggingFace. Se trata de un adaptador derivado de la familia LFM2 (Liquid Foundation Models) de Liquid AI, una arquitectura compacta orientada a generacion de texto eficiente en dispositivos con recursos limitados. El modelo se ha entrenado con la libreria Unsloth, segun indica la propia model card, lo que sugiere un proceso de ajuste optimizado para velocidad.
+LFM2.5-350M-SmolDataEnv-Matched2.8K-Haiku-5.5-adapter es un ajuste fino (fine-tuning) del modelo base LiquidAI/LFM2.5-350M, publicado por el usuario lugman en Hugging Face. Se trata de un adaptador derivado de la familia LFM2 (Liquid Foundation Models) de Liquid AI, una arquitectura compacta orientada a generacion de texto eficiente en dispositivos con recursos limitados. El modelo se ha entrenado con la libreria Unsloth, segun indica la propia model card, lo que sugiere un proceso de ajuste optimizado para velocidad.
 
 El nombre del repositorio sugiere un entrenamiento sobre un conjunto de datos denominado "SmolDataEnv" con una ventana de 2.8K tokens y un identificador "Haiku-5.5", aunque la model card no proporciona detalles sobre la composicion del dataset, el numero de tokens de entrenamiento ni la metodologia exacta. El modelo base LFM2.5-350M es un transformer de 350 millones de parametros disenado por Liquid AI para inferencia en el borde (edge).
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada: se trata de un adaptador comunitario co
 
 El modelo es un ajuste fino del base LiquidAI/LFM2.5-350M, que pertenece a la familia LFM2 de Liquid AI. La model card no detalla la arquitectura interna del base mas alla de la etiqueta `lfm2`, si bien LFM2 se describe publicamente como una familia de transformers compactos optimizados para inferencia en el borde. El ajuste se realizo con Unsloth, segun la propia card, lo que implica un pipeline de entrenamiento acelerado sobre el modelo base.
 
-No se especifica el numero de tokens de entrenamiento, la composicion del dataset "SmolDataEnv", ni si se aplicaron tecnicas de RLHF, DPO o SFT. Tampoco se documenta si el adaptador modifica todas las capas o solo un subconjunto. La etiqueta `trl` sugiere uso de la libreria TRL de HuggingFace para el entrenamiento, y `text-generation-inference` indica compatibilidad con TGI para despliegue.
+No se especifica el numero de tokens de entrenamiento, la composicion del dataset "SmolDataEnv", ni si se aplicaron tecnicas de RLHF, DPO o SFT. Tampoco se documenta si el adaptador modifica todas las capas o solo un subconjunto. La etiqueta `trl` sugiere uso de la libreria TRL de Hugging Face para el entrenamiento, y `text-generation-inference` indica compatibilidad con TGI para despliegue.
 
 ## Capacidades
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM2.5-350M-SmolDataEnv-Matched2.8K-Haiku-5.5-adapter | 350M | no disponible | apache-2.0 | HuggingFace (0 descargas) |
-| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | no disponible en esta ficha | HuggingFace (modelo base) |
-| SmolLM2-360M (HuggingFace) | 360M | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
-| Qwen2.5-0.5B | 500M | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| LFM2.5-350M-SmolDataEnv-Matched2.8K-Haiku-5.5-adapter | 350M | no disponible | apache-2.0 | Hugging Face (0 descargas) |
+| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | no disponible en esta ficha | Hugging Face (modelo base) |
+| SmolLM2-360M (Hugging Face) | 360M | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
+| Qwen2.5-0.5B | 500M | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 
 Los datos de los modelos alternativos no se han verificado en la informacion proporcionada; se incluyen solo como referencia de categoria.
 
@@ -81,6 +81,6 @@ Los datos de los modelos alternativos no se han verificado en la informacion pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Haiku-5.5-adapter
+- Hugging Face: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Haiku-5.5-adapter
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Unsloth: https://github.com/unslothai/unsloth

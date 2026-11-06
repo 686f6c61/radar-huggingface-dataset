@@ -96,7 +96,7 @@ La comparativa con alternativas no danesas del mismo tamano (por ejemplo, otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danish-foundation-models/edda-v0.2-large
+- Modelo en Hugging Face: https://huggingface.co/danish-foundation-models/edda-v0.2-large
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Edda v0.2: https://huggingface.co/danish-foundation-models/edda-v0.2
 - Edda v0.2 duo: https://huggingface.co/danish-foundation-models/edda-v0.2-duo

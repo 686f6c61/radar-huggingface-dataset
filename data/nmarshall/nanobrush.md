@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`nmarshall/nanobrush` no es un modelo de inteligencia artificial. Es un repositorio de preservación digital y de investigación técnica publicado en HuggingFace que aloja los materiales originales de Microbrush (un editor gráfico histórico) junto con documentación, herramientas de verificación y un códec de ficheros DAT escrito en Rust. La model card lo describe explícitamente como «Microbrush preservation and a planned native Rust/Bevy/Solari reconstruction for macOS and Linux», y aclara que la reescritura de la aplicación «has not started». Por tanto, no existen pesos, tokenizador, arquitectura neuronal ni proceso de entrenamiento que evaluar.
+`nmarshall/nanobrush` no es un modelo de inteligencia artificial. Es un repositorio de preservación digital y de investigación técnica publicado en Hugging Face que aloja los materiales originales de Microbrush (un editor gráfico histórico) junto con documentación, herramientas de verificación y un códec de ficheros DAT escrito en Rust. La model card lo describe explícitamente como «Microbrush preservation and a planned native Rust/Bevy/Solari reconstruction for macOS and Linux», y aclara que la reescritura de la aplicación «has not started». Por tanto, no existen pesos, tokenizador, arquitectura neuronal ni proceso de entrenamiento que evaluar.
 
 El repositorio combina tres capas: (1) un archivo inmutable de artefactos originales (ZIP sin modificar, bytes extraídos, inventarios con hashes y listas SHA256SUMS), distribuido mediante punteros Git LFS y el sistema Xet; (2) un conjunto de herramientas de análisis y extracción reproducible ejecutables en un entorno Nix, con hooks de pre-commit y pre-push que validan el almacenamiento; y (3) trabajo de ingeniería inversa sobre el formato binario DAT y sobre el convertidor original, que se ejecuta sin modificar bajo Mono con ILSpy fijado por versión.
 
-Su relevancia es de tipo archivístico y de ingeniería de formatos, no de IA: documenta la procedencia y los términos de licencia del contenido original, permite verificar la integridad byte a byte de cinco builds recuperados y sirve de base para una futura reimplementación nativa en Rust con Bevy y Solari. Los datos de adopción en HuggingFace son nulos (0 descargas, 0 likes) y el repositorio figura con 0.0 GB, un tamaño que no refleja el payload real, transferido por Xet.
+Su relevancia es de tipo archivístico y de ingeniería de formatos, no de IA: documenta la procedencia y los términos de licencia del contenido original, permite verificar la integridad byte a byte de cinco builds recuperados y sirve de base para una futura reimplementación nativa en Rust con Bevy y Solari. Los datos de adopción en Hugging Face son nulos (0 descargas, 0 likes) y el repositorio figura con 0.0 GB, un tamaño que no refleja el payload real, transferido por Xet.
 
 ## Especificaciones técnicas
 
@@ -60,14 +60,14 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 | Sondas del convertidor (`analyze-converter probes`) | 101 sondas controladas |
 | Builds procesadas por `unpack-references` | 5 builds por defecto (`--build 2016-03-10-c` para una concreta) |
 | Check de Nix sin activos | `nix build .#checks.aarch64-darwin.rust --no-link`: formato, Clippy, tests unitarios y doctests |
-| Adopción en HuggingFace | 0 descargas, 0 likes |
+| Adopción en Hugging Face | 0 descargas, 0 likes |
 
 ## Requisitos de hardware
 
 - No requiere GPU ni VRAM: no hay inferencia. Los requisitos son de CPU, disco y red.
 - Entorno de desarrollo: shell de Nix (`nix develop`) con filtros locales de código/LFS/Xet y hooks; opcionalmente `direnv allow` para carga automática del entorno.
 - Herramientas fijadas por el shell: Mono e ILSpy para la investigación del convertidor, más Python 3 para `scripts/<name>.py` y la cadena de Rust para el workspace.
-- Almacenamiento: el tamaño mostrado en HuggingFace es 0.0 GB, pero el payload real (ZIP, bytes extraídos, capturas y descompilaciones) se transfiere por Xet y debe hidratarse con `assets-fetch`; conviene prever espacio en disco para las cinco builds y sus extracciones.
+- Almacenamiento: el tamaño mostrado en Hugging Face es 0.0 GB, pero el payload real (ZIP, bytes extraídos, capturas y descompilaciones) se transfiere por Xet y debe hidratarse con `assets-fetch`; conviene prever espacio en disco para las cinco builds y sus extracciones.
 - Plataformas cubiertas: el check de Nix documentado es `aarch64-darwin`; la model card menciona macOS y Linux como objetivos de la reconstrucción. `docs/SETUP.md` recoge la cobertura de plataformas y lo que queda pendiente.
 - Red: necesaria para la clonación con `GIT_LFS_SKIP_SMUDGE=1` y para la hidratación posterior del payload; no se documentan cifras de latencia ni de throughput.
 - Despliegue: no aplican vLLM, llama.cpp, Ollama ni TGI; el «despliegue» aquí es un clon del repositorio con el entorno Nix y los comandos de verificación.
@@ -86,12 +86,12 @@ No disponible. Este repositorio no pertenece a la categoría de modelos de lengu
 - Los locks interrumpidos de la extracción requieren inspección manual antes de eliminarse; no se resuelven automáticamente.
 - Git no rastrea directorios vacíos: los directorios originales vacíos solo se restauran al desempaquetar, no al clonar.
 - Riesgo operativo en el manejo del almacenamiento: desactivar los filtros para añadir un payload rompe el modelo de verificación; el flujo correcto exige `git add`/`commit`/`push hf main` con los punteros incluidos.
-- El tamaño de 0.0 GB mostrado por HuggingFace no representa el volumen real de datos, que se transfiere por Xet; planificar disco y red en consecuencia.
+- El tamaño de 0.0 GB mostrado por Hugging Face no representa el volumen real de datos, que se transfiere por Xet; planificar disco y red en consecuencia.
 - Sesgos, alucinación y limitaciones de contexto o idioma: no aplica, al no existir modelo; no se dispone de evaluación alguna en esos ejes.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nmarshall/nanobrush
+- Repositorio en Hugging Face: https://huggingface.co/nmarshall/nanobrush
 - Lista de trabajo: `docs/TODO.md` (ruta interna del repositorio, sin URL externa proporcionada)
 - Objetivos: `docs/GOALS.md` (ruta interna)
 - Hallazgos iniciales y términos de licencia registrados: `docs/FINDINGS.md` (ruta interna)

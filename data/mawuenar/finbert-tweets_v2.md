@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mawuenar/finbert-tweets_v2` es un modelo de clasificación de texto publicado en HuggingFace por el usuario `mawuenar`. Por su identificador y por los tags del repositorio (`bert`, `text-classification`), se trata de un ajuste fino (fine-tuning) de la familia FinBERT orientado a analizar sentimiento en tuits de temática financiera. El repositorio contiene pesos en formato `safetensors` con 109.484.547 parámetros, lo que corresponde a la arquitectura BERT-base (≈110 M de parámetros).
+`mawuenar/finbert-tweets_v2` es un modelo de clasificación de texto publicado en Hugging Face por el usuario `mawuenar`. Por su identificador y por los tags del repositorio (`bert`, `text-classification`), se trata de un ajuste fino (fine-tuning) de la familia FinBERT orientado a analizar sentimiento en tuits de temática financiera. El repositorio contiene pesos en formato `safetensors` con 109.484.547 parámetros, lo que corresponde a la arquitectura BERT-base (≈110 M de parámetros).
 
-El modelo se distribuye a través de la librería `transformers` y es compatible con `text-embeddings-inference` y con los endpoints de HuggingFace, lo que facilita su despliegue como servicio de inferencia. La model card está generada automáticamente y no aporta información sobre datos de entrenamiento, hiperparámetros, licencia ni evaluación, de modo que la mayor parte de los detalles técnicos debe inferirse de la arquitectura y de los tags.
+El modelo se distribuye a través de la librería `transformers` y es compatible con `text-embeddings-inference` y con los endpoints de Hugging Face, lo que facilita su despliegue como servicio de inferencia. La model card está generada automáticamente y no aporta información sobre datos de entrenamiento, hiperparámetros, licencia ni evaluación, de modo que la mayor parte de los detalles técnicos debe inferirse de la arquitectura y de los tags.
 
 Su relevancia es acotada: se trata de un modelo sin descargas ni interacciones en el momento de la consulta, con documentación mínima, por lo que debe evaluarse con cautela antes de usarlo en producción. Resulta útil como punto de partida para tareas de análisis de sentimiento financiero en redes sociales, pero carece de garantías documentadas sobre calidad, sesgos o licencia.
 
@@ -31,7 +31,7 @@ No hay información publicada sobre el corpus de entrenamiento, el número de to
 
 - Clasificación de texto (pipeline `text-classification`), presumiblemente de sentimiento financiero.
 - Análisis de sentimiento sobre textos cortos tipo tuit, según el nombre del modelo.
-- Compatibilidad con `text-embeddings-inference` y con endpoints de HuggingFace.
+- Compatibilidad con `text-embeddings-inference` y con endpoints de Hugging Face.
 - No dispone de generación de texto, razonamiento, código, matemáticas, visión ni audio.
 - No hay soporte documentado de tool calling, function calling ni agentes.
 - Capacidades multilingües: no disponibles.
@@ -43,7 +43,7 @@ No hay información publicada sobre el corpus de entrenamiento, el número de to
 - Señales alternativas para investigación cuantitativa: incorporar el sentimiento agregado de redes sociales como variable en modelos de predicción de volatilidad, siempre que se valide previamente la calidad del clasificador.
 - Filtrado y enrutamiento de notificaciones: clasificar grandes volúmenes de mensajes entrantes para priorizar los de tono negativo que requieran revisión humana.
 - Etiquetado asistido de datasets: usar el modelo para preetiquetar corpus de tuits financieros antes de una revisión manual y un reentrenamiento.
-- Prototipado rápido en entornos de HuggingFace: desplegar el modelo mediante `text-embeddings-inference` o los endpoints compatibles para validar una idea de producto sin infraestructura propia.
+- Prototipado rápido en entornos de Hugging Face: desplegar el modelo mediante `text-embeddings-inference` o los endpoints compatibles para validar una idea de producto sin infraestructura propia.
 
 ## Benchmarks y rendimiento
 
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en fp16/bf16: aproximadamente 0,22 GB de pesos, más overhead.
 - Cabe holgadamente en cualquier GPU consumer (GTX 1060 6 GB, RTX 3060, RTX 4090) e incluso en CPU para lotes pequeños.
 - GPU recomendadas para producción de alto throughput: A10G, L4, A100 o H100, aunque el modelo es lo bastante pequeño como para no requerirlas.
-- Opciones de despliegue: `transformers` con pipeline de `text-classification`, `text-embeddings-inference`, endpoints de HuggingFace y, presumiblemente, exportación a ONNX (no documentada).
+- Opciones de despliegue: `transformers` con pipeline de `text-classification`, `text-embeddings-inference`, endpoints de Hugging Face y, presumiblemente, exportación a ONNX (no documentada).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mawuenar/finbert-tweets_v2` | 109,48 M | no disponible | Clasificación de sentimiento financiero (presunto) | no disponible | HuggingFace, 0 descargas |
-| ProsusAI/finbert | ≈110 M (BERT-base) | 512 tokens | Análisis de sentimiento financiero | Apache 2.0 | HuggingFace, ampliamente usado |
-| yiyanghkust/finbert-tone | ≈110 M (BERT-base) | 512 tokens | Análisis de sentimiento financiero | no disponible | HuggingFace, ampliamente usado |
-| ahmedrachid/FinancialBERT | ≈110 M (BERT-base) | 512 tokens | Modelo de lenguaje financiero y clasificación | Apache 2.0 | HuggingFace |
+| `mawuenar/finbert-tweets_v2` | 109,48 M | no disponible | Clasificación de sentimiento financiero (presunto) | no disponible | Hugging Face, 0 descargas |
+| ProsusAI/finbert | ≈110 M (BERT-base) | 512 tokens | Análisis de sentimiento financiero | Apache 2.0 | Hugging Face, ampliamente usado |
+| yiyanghkust/finbert-tone | ≈110 M (BERT-base) | 512 tokens | Análisis de sentimiento financiero | no disponible | Hugging Face, ampliamente usado |
+| ahmedrachid/FinancialBERT | ≈110 M (BERT-base) | 512 tokens | Modelo de lenguaje financiero y clasificación | Apache 2.0 | Hugging Face |
 
 La comparación con los modelos anteriores se basa en la arquitectura y la categoría de tarea, no en evaluaciones del modelo analizado, dado que no se han publicado resultados.
 
@@ -82,7 +82,7 @@ La comparación con los modelos anteriores se basa en la arquitectura y la categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mawuenar/finbert-tweets_v2
+- Modelo en Hugging Face: https://huggingface.co/mawuenar/finbert-tweets_v2
 - Artículo citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos específicos del modelo.

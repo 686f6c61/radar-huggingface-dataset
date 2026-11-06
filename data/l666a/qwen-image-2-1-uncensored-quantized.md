@@ -18,7 +18,7 @@ No se dispone de informacion detallada sobre la arquitectura interna del modelo 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | BF16, FP8, INT8 ConvRot, NVFP4, MLX 4/6/8-bit, GGUF Q4_0, Q4_K_M, Q5_K_M, Q6_K, Q8_0 |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-research (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-research (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF y safetensors (incluye variantes MLX) |
 
 ## Arquitectura y entrenamiento
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Formatos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-Uncensored-Quantized (este) | ~7,1B | no disponible | GGUF, safetensors, MLX | qwen-research | HuggingFace, ~163 descargas |
-| Qwen/Qwen-Image-2.1 (base) | ~7,1B | no disponible | safetensors | qwen-research | HuggingFace (oficial) |
+| Qwen-Image-2.1-Uncensored-Quantized (este) | ~7,1B | no disponible | GGUF, safetensors, MLX | qwen-research | Hugging Face, ~163 descargas |
+| Qwen/Qwen-Image-2.1 (base) | ~7,1B | no disponible | safetensors | qwen-research | Hugging Face (oficial) |
 | Alternativas de difusion de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre este paquete y otras alternativas de generacion de imagen en la informacion proporcionada. La comparativa se limita a la relacion con su modelo base, del que se diferencia por la cuantizacion y por la eliminacion del filtrado de seguridad.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre este paquete y otras alt
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/l666A/Qwen-Image-2.1-Uncensored-Quantized
+- Repositorio Hugging Face: https://huggingface.co/l666A/Qwen-Image-2.1-Uncensored-Quantized
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI-GGUF (fork de leejet): https://github.com/leejet/ComfyUI-GGUF

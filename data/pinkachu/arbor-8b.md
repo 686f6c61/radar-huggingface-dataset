@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Arbor-8B es un modelo publicado en HuggingFace por el usuario pinkachu bajo el identificador `pinkachu/Arbor-8B`. Por la nomenclatura del nombre se deduce que se trata de un modelo de aproximadamente 8.000 millones de parametros, pero la model card no incluye descripcion, arquitectura, composicion del dataset ni resultados, por lo que ese dato no puede confirmarse con la informacion disponible.
+Arbor-8B es un modelo publicado en Hugging Face por el usuario pinkachu bajo el identificador `pinkachu/Arbor-8B`. Por la nomenclatura del nombre se deduce que se trata de un modelo de aproximadamente 8.000 millones de parametros, pero la model card no incluye descripcion, arquitectura, composicion del dataset ni resultados, por lo que ese dato no puede confirmarse con la informacion disponible.
 
 El repositorio se creo y actualizo el 2 de octubre de 2026 y no registra descargas ni "likes" en el momento de la consulta. La unica etiqueta tecnica presente es `license:llama3.1`, lo que apunta a que el modelo deriva de la familia Meta Llama 3.1 o que reutiliza su licencia, si bien el autor no lo explicita en ningun momento.
 
@@ -18,7 +18,7 @@ La relevancia practica del modelo es, a dia de hoy, muy limitada: sin model card
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | llama3.1 (etiqueta declarada en HuggingFace) |
+| Licencia | llama3.1 (etiqueta declarada en Hugging Face) |
 | Formato de pesos | no disponible |
 | Autor | pinkachu |
 | Fecha de publicacion | 2026-10-02 |
@@ -75,7 +75,7 @@ No hay datos de rendimiento de Arbor-8B que permitan una comparacion rigurosa. L
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Arbor-8B | no disponible (~8B por el nombre) | no disponible | llama3.1 | HuggingFace, 0 descargas | no disponible |
+| Arbor-8B | no disponible (~8B por el nombre) | no disponible | llama3.1 | Hugging Face, 0 descargas | no disponible |
 | Meta Llama 3.1 8B | 8B | 128.000 tokens | Llama 3.1 Community License | Pesos abiertos, ampliamente desplegado | Publicado por Meta |
 | Mistral 7B | 7,3B | 32.000 tokens | Apache 2.0 | Pesos abiertos | Publicado por Mistral |
 | Qwen2.5 7B | 7,6B | 128.000 tokens | Apache 2.0 (mayoria de variantes) | Pesos abiertos | Publicado por Alibaba |
@@ -96,5 +96,5 @@ Los datos de los modelos comparativos corresponden a sus respectivas fichas ofic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pinkachu/Arbor-8B
+- Hugging Face: https://huggingface.co/pinkachu/Arbor-8B
 - No se han encontrado enlaces relevantes al modelo en la busqueda web. Los resultados obtenidos tratan sobre temas sin relacion: generacion de imagenes de Pikachu con IA (towardsdatascience.com), la proteina pikachurina en neurociencia (sciencedirect.com), una discusion en Reddit sobre descripciones generadas por IA en apps de reparto, una tesis sobre personajes de videojuego (researcher.itu.dk) y un articulo sobre simulacion cientifica que menciona el simulador neuronal Arbor (researchgate.net).

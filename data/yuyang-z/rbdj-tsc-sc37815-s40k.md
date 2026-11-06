@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rbdj-tsc-sc37815-s40k` es un checkpoint de un modelo del mundo (world model) para robotica de manipulacion, publicado por el usuario Yuyang-z en HuggingFace. No es un modelo de lenguaje: es un modelo generativo condicionado por acciones que predice video multi-vista y estado de un brazo robotico ARX X5 dentro del simulador RoboDojo. Concretamente, se trata del ajuste fino supervisado (SFT) de tipo *episode-chain* sobre la arquitectura `SanaRWMVideoQwenNextSubAttnResV2SelfFlowWorldModelCameraConditionMultiViewTwoStream_5B_P1_D36`, un transformer de difusion/flow matching de doble flujo (video y accion) de aproximadamente 5 B de parametros, derivado del preentrenamiento `SANA_Vanilla_Pretrain_256px_abs_mix_v4_capv3_obs_statecausal`.
+`rbdj-tsc-sc37815-s40k` es un checkpoint de un modelo del mundo (world model) para robotica de manipulacion, publicado por el usuario Yuyang-z en Hugging Face. No es un modelo de lenguaje: es un modelo generativo condicionado por acciones que predice video multi-vista y estado de un brazo robotico ARX X5 dentro del simulador RoboDojo. Concretamente, se trata del ajuste fino supervisado (SFT) de tipo *episode-chain* sobre la arquitectura `SanaRWMVideoQwenNextSubAttnResV2SelfFlowWorldModelCameraConditionMultiViewTwoStream_5B_P1_D36`, un transformer de difusion/flow matching de doble flujo (video y accion) de aproximadamente 5 B de parametros, derivado del preentrenamiento `SANA_Vanilla_Pretrain_256px_abs_mix_v4_capv3_obs_statecausal`.
 
 El checkpoint corresponde a `epoch_41_step_40000` con pesos en crudo (fp32 consolidado, 17,9 GB de repositorio), inicializado desde el preentrenamiento `SANA_RoboDojo_EpisodeChain_SFT_obsstatecausal37815_kef8n`, que a su vez parte de `.../SANA_Vanilla_Pretrain_256px_abs_mix_v4_capv3_obs_statecausal_from_dvh31303_ws256/epoch_3_step_37815`. La receta de datos trabaja con episodios completos desde su primer fotograma, en ventanas de 4 a 49 chunks de 32 acciones absolutas del efector final (EEF) a 25 fps, con tres vistas de 256x320 y latentes de LTX-2.3.
 
@@ -107,5 +107,5 @@ Nota metodologica: la comparacion directa con Cosmos o GR00T N1 no es homogenea,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yuyang-z/rbdj-tsc-sc37815-s40k
+- Hugging Face: https://huggingface.co/Yuyang-z/rbdj-tsc-sc37815-s40k
 - No se han proporcionado en la informacion disponible enlaces a papers, blogs, repositorios de codigo, demos ni a las dependencias citadas (`SANA`, `LTX-2.3`, `RoboDojo`, `XPolicyLab`, preentrenamiento `SANA_Vanilla_Pretrain_256px_abs_mix_v4_capv3_obs_statecausal_from_dvh31303_ws256`).

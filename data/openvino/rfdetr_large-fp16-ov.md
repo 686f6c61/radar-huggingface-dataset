@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenVINO/rfdetr_large-fp16-ov
+- Modelo en Hugging Face: https://huggingface.co/OpenVINO/rfdetr_large-fp16-ov
 - Repositorio original RF-DETR (Roboflow): https://github.com/roboflow/rf-detr
 - Geti (Intel): https://github.com/open-edge-platform/geti
 - Documentación de OpenVINO IR: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html

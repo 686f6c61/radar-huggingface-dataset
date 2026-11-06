@@ -21,7 +21,7 @@ Su relevancia es metodológica, no práctica: sirve como línea base controlada 
 | Licencia | No disponible |
 | Formato de pesos | safetensors (compatible con `transformers`) |
 
-Otros datos: repositorio de 0,2 GB, 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el 19 de octubre de 2026. La etiqueta `pipeline` aparece como no disponible en la ficha de HuggingFace, aunque el modelo declara `text2text-generation` y `text-generation-inference`.
+Otros datos: repositorio de 0,2 GB, 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el 19 de octubre de 2026. La etiqueta `pipeline` aparece como no disponible en la ficha de Hugging Face, aunque el modelo declara `text2text-generation` y `text-generation-inference`.
 
 ## Arquitectura y entrenamiento
 
@@ -99,7 +99,7 @@ La comparación relevante es interna al experimento: los tres modelos comparten 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CTlandu/csci680-a1-t5-ft-nopt
+- Modelo en Hugging Face: https://huggingface.co/CTlandu/csci680-a1-t5-ft-nopt
 - Variante con preentrenamiento: https://huggingface.co/CTlandu/csci680-a1-t5-ft-pt
 - Modelo equivalente de otro autor (condición A, paso 30.000): https://huggingface.co/dmilanko/code-review-t5-nopt
 - Dataset de ajuste fino (Tufano et al., ICSE 2022), Zenodo: https://doi.org/10.5281/zenodo.5387856

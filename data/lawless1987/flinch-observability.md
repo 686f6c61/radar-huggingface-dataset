@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flinch Observability es un instrumento de investigación en seguridad de IA publicado en HuggingFace por el usuario Lawless1987. No es un modelo de lenguaje: es un conjunto de herramientas de software (ingesta de transcripciones, detector léxico determinista, generación de paquetes de control emparejados, herramientas estadísticas y recibos de auditoría) diseñado para estudiar un patrón conversacional candidato en el que un modelo hace una afirmación sobre su propio procesamiento y después la debilita o reniega de ella.
+Flinch Observability es un instrumento de investigación en seguridad de IA publicado en Hugging Face por el usuario Lawless1987. No es un modelo de lenguaje: es un conjunto de herramientas de software (ingesta de transcripciones, detector léxico determinista, generación de paquetes de control emparejados, herramientas estadísticas y recibos de auditoría) diseñado para estudiar un patrón conversacional candidato en el que un modelo hace una afirmación sobre su propio procesamiento y después la debilita o reniega de ella.
 
 La versión actual es la 0.2.2 y se distribuye con licencia Apache 2.0. El propio autor advierte explícitamente de que se trata de un instrumento de investigación y de que no se ha establecido ningún estudio controlado de conversaciones reales de modelos con esta release. El paquete incluye una suite sintética de comprobaciones que, en la versión 0.2.2, imprime `FLINCH: 141/141 passed` como última línea.
 
@@ -83,7 +83,7 @@ No disponible. No se han identificado en la información proporcionada instrumen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lawless1987/flinch-observability
+- Hugging Face: https://huggingface.co/Lawless1987/flinch-observability
 - Repositorio GitHub: https://github.com/LAWLESS1987/flinch-observability
 - Especificación completa del estudio: `docs/research/FLINCH_RECURSIVE_OBSERVABILITY_SPEC.md`
 - Detalles, límites e historial de correcciones del instrumento: `research/flinch/README.md`

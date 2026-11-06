@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AI-KSK/minimax-h3-character-pose-director-309 es un repositorio de HuggingFace que, pese a su nombre, no contiene un modelo de lenguaje ni pesos de IA generativa: aloja un paquete de recursos para ComfyUI centrado en la direccion de pose y personaje en generacion de imagenes. El contenido principal es un workflow JSON de 14 nodos y 19 enlaces que orquesta modelos Qwen Image 2.1, un encoder de vision-lenguaje Qwen3-VL 8B y un LoRA especifico de pose (VNCCS_QI2_PoseStudioV1.1), junto con capturas de referencia y una portada seleccionada. El repositorio no incluye los pesos de los modelos referenciados ni la imagen de personaje, y su tamano declarado es de 0,0 GB.
+AI-KSK/minimax-h3-character-pose-director-309 es un repositorio de Hugging Face que, pese a su nombre, no contiene un modelo de lenguaje ni pesos de IA generativa: aloja un paquete de recursos para ComfyUI centrado en la direccion de pose y personaje en generacion de imagenes. El contenido principal es un workflow JSON de 14 nodos y 19 enlaces que orquesta modelos Qwen Image 2.1, un encoder de vision-lenguaje Qwen3-VL 8B y un LoRA especifico de pose (VNCCS_QI2_PoseStudioV1.1), junto con capturas de referencia y una portada seleccionada. El repositorio no incluye los pesos de los modelos referenciados ni la imagen de personaje, y su tamano declarado es de 0,0 GB.
 
 El flujo separa explicitamente la referencia de pose de la apariencia del personaje: Pose Studio aporta la imagen de pose al encoder, mientras que un nodo LoadImage aporta la imagen de personaje. La generacion es por condicionamiento de imagen, no por deformacion de latentes de origen ni por ControlNet de articulaciones duras, y el autor advierte de que las referencias y el LoRA no garantizan una pose, identidad, vestuario o anatomia exactos en la salida.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 | Contexto | No aplica | No disponible | No disponible |
 | Condicionamiento de pose | Por imagen de referencia via Pose Studio y LoRA | No disponible | Por mapa de pose con articulaciones |
 | Licencia | No disponible; Civitai sin uso comercial por defecto | No disponible | Variable segun modelo |
-| Disponibilidad | HuggingFace, RunningHub, Civitai | Referenciado como asset externo | Amplia en la comunidad |
+| Disponibilidad | Hugging Face, RunningHub, Civitai | Referenciado como asset externo | Amplia en la comunidad |
 
 No se dispone de datos de rendimiento comparables entre estas opciones en la informacion proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparables entre estas opciones en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AI-KSK/minimax-h3-character-pose-director-309
+- Hugging Face: https://huggingface.co/AI-KSK/minimax-h3-character-pose-director-309
 - RunningHub internacional: https://www.runninghub.ai/zh-cn/post/2102678363970605058?inviteCode=rh-v1111
 - RunningHub China: https://www.runninghub.cn/post/2102626865503625217/?inviteCode=rh-v1111
 - Civitai: https://civitai.com/models/3031898

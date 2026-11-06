@@ -25,7 +25,7 @@ Por su tamaño (4B) y su empaquetado en GGUF, el interés práctico está en el 
 
 No se dispone de información sobre la arquitectura del modelo base. El nombre sugiere un transformer decoder-only de aproximadamente 4.000 millones de parámetros, pero no se confirma en la documentación disponible. Tampoco hay datos sobre el corpus de entrenamiento, número de tokens, composición del dataset ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT.
 
-La única información técnica fiable del repositorio es el proceso de cuantización: los ficheros se generaron con una herramienta de conversión (quantize_version: 2, output_tensor_quantised: 1) que produce cuantizaciones estáticas en GGUF a partir de pesos en formato HuggingFace. Los niveles disponibles cubren desde f16 (sin pérdida apreciable) hasta Q2_K (muy agresivo, con degradación notable esperada). El sufijo "Turbo" y "Thinking" en el nombre apunta a optimizaciones de velocidad y a un modo de razonamiento extendido, pero no hay documentación que lo verifique.
+La única información técnica fiable del repositorio es el proceso de cuantización: los ficheros se generaron con una herramienta de conversión (quantize_version: 2, output_tensor_quantised: 1) que produce cuantizaciones estáticas en GGUF a partir de pesos en formato Hugging Face. Los niveles disponibles cubren desde f16 (sin pérdida apreciable) hasta Q2_K (muy agresivo, con degradación notable esperada). El sufijo "Turbo" y "Thinking" en el nombre apunta a optimizaciones de velocidad y a un modo de razonamiento extendido, pero no hay documentación que lo verifique.
 
 ## Capacidades
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-phonelook-krea2-v2 es un LoRA de estilo para el modelo de generación de imágenes text-to-image Krea 2 (concretamente sobre el checkpoint `krea/Krea-2-Raw`). Lo desarrolla el usuario de HuggingFace `houseofboern` y su objetivo es muy concreto: que las habitaciones generadas parezcan fotografías domésticas reales —camas deshechas, platos en el fregadero, iluminación barata de techo— en lugar de renders de interiorismo preparados. No es un modelo autónomo, sino un adaptador de bajo rango que se apila sobre el modelo base y modifica el entorno sin tocar al sujeto.
+phonelook-krea2-v2 es un LoRA de estilo para el modelo de generación de imágenes text-to-image Krea 2 (concretamente sobre el checkpoint `krea/Krea-2-Raw`). Lo desarrolla el usuario de Hugging Face `houseofboern` y su objetivo es muy concreto: que las habitaciones generadas parezcan fotografías domésticas reales —camas deshechas, platos en el fregadero, iluminación barata de techo— en lugar de renders de interiorismo preparados. No es un modelo autónomo, sino un adaptador de bajo rango que se apila sobre el modelo base y modifica el entorno sin tocar al sujeto.
 
 El adaptador se entrenó exclusivamente con 315 fotografías de viviendas reales sin personas (dormitorios, cocinas, baños y salones), seleccionadas de 1.200 candidatas procedentes de Open Images V7 (Flickr, CC BY 2.0), con dos pasadas de revisión para descartar hoteles, anuncios inmobiliarios, estancias escenificadas y filtros. El resultado es un LoRA pequeño (repo de 0,1 GB), sin trigger word, pensado para apilarse después de un LoRA de personaje y mantener intactos rostro y cuerpo del sujeto.
 
@@ -100,11 +100,11 @@ No hay datos públicos de adaptadores comparables en la información disponible.
 - Obligaciones de atribución sobre los datos: las fotos de entrenamiento son CC BY 2.0 y el autor incluye `training_data_credits.csv` con fotógrafo, licencia y enlace. Aunque el LoRA no redistribuye imágenes, conviene revisar si la licencia del adaptador hereda algún requisito de atribución.
 - Sin métricas objetivas: no hay FID, CLIP score ni evaluaciones humanas cuantificadas, solo validación cualitativa con seeds fijas. La reproducibilidad depende de la versión del modelo base y del sampler.
 - Madurez del repositorio: 0 descargas y 0 likes, creado y actualizado el 2026-10-25 con 16 segundos de diferencia. Sin comunidad ni incidencias reportadas; no hay garantía de mantenimiento.
-- Fecha de creación anómala (2026) en los metadatos de HuggingFace; conviene verificarla antes de citar el modelo.
+- Fecha de creación anómala (2026) en los metadatos de Hugging Face; conviene verificarla antes de citar el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/houseofboern/phonelook-krea2-v2
+- Modelo en Hugging Face: https://huggingface.co/houseofboern/phonelook-krea2-v2
 - Modelo base Krea 2 Raw: https://huggingface.co/krea/Krea-2-Raw
 - Open Images V7 (Google), origen de los datos de entrenamiento: https://storage.googleapis.com/openimages/web/index.html
 - ai-toolkit, framework de entrenamiento empleado: https://github.com/ostris/ai-toolkit

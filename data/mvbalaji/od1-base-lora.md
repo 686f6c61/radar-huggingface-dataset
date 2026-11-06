@@ -108,7 +108,7 @@ Los unicos sistemas comparables documentados son los que aparecen en la tabla de
 
 | Sistema | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento destacado |
 |---|---|---|---|---|---|
-| OD-1 Base LoRA (este modelo) | ~4B (Qwen3.5-4B + LoRA) | No disponible | Apache 2.0 | HuggingFace, codigo propio | 0,912 BFCL nativo; 0,574 typed-decisions |
+| OD-1 Base LoRA (este modelo) | ~4B (Qwen3.5-4B + LoRA) | No disponible | Apache 2.0 | Hugging Face, codigo propio | 0,912 BFCL nativo; 0,574 typed-decisions |
 | Jev 1.13 (TypeSafe) | No disponible | No disponible | No disponible | No disponible | 0,975 BFCL nativo; 0,741 typed-decisions; KL 1,442 / Brier 0,148 |
 | Laya | No disponible | No disponible | No disponible | No disponible | 0,924 AG News; 0,788 BFCL irrelevancia |
 | Tev1-4B | ~4B (por el sufijo del nombre) | No disponible | No disponible | No disponible | 0,954 BFCL nativo; 0,690 typed-decisions |
@@ -132,5 +132,5 @@ El autor menciona ademas la existencia de un checkpoint **od1-base** con el que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mvbalaji/od1-base-lora
+- Modelo en Hugging Face: https://huggingface.co/mvbalaji/od1-base-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

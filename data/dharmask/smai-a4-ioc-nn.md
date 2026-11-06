@@ -35,7 +35,7 @@ El detalle técnico destacable es la mención explícita a una "garantía de con
 - Preprocesado autocontenido y reproducible (media, desviación típica y escala calculadas solo con el conjunto de entrenamiento oficial).
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generación de texto.
 - No tiene capacidades multilingües, de visión general, audio ni modo "thinking".
-- No dispone de pipeline declarado en HuggingFace ni de demo asociada.
+- No dispone de pipeline declarado en Hugging Face ni de demo asociada.
 
 ## Casos de uso
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dharmask/smai-a4-ioc-nn | MLP 3072-64-32-10 | ~198.000 (estimado) | Imagen 32x32x3 aplanada | no disponible | HuggingFace, repo 0.0 GB |
+| dharmask/smai-a4-ioc-nn | MLP 3072-64-32-10 | ~198.000 (estimado) | Imagen 32x32x3 aplanada | no disponible | Hugging Face, repo 0.0 GB |
 | LeNet-5 (CIFAR-10) | CNN | ~60.000 | Imagen 32x32x3 | varía | Referencia académica ampliamente disponible |
 | ResNet-18 (CIFAR-10) | CNN residual | ~11,2 M | Imagen 32x32x3 | varía (MIT en torchvision) | torchvision |
 | ViT-small (CIFAR-10) | Transformer de visión | ~22 M | Imagen 32x32x3 con parches | varía | Implementaciones públicas |
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento del modelo consultado para establecer una 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dharmask/smai-a4-ioc-nn
+- Hugging Face: https://huggingface.co/dharmask/smai-a4-ioc-nn
 - Repositorio de la asignación (referenciado en la model card): `src/q1/pytorch_section14/models.py` con la función `fresh_model`
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

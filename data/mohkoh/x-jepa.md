@@ -99,14 +99,14 @@ Otros modelos de la familia JEPA (por ejemplo I-JEPA o V-JEPA) serian comparable
 - Riesgo de sesgo: no se documenta analisis de sesgos en la informacion disponible. Al ser un encoder entrenado sobre datos no especificados, puede heredar sesgos de ese corpus.
 - Riesgo de alucinacion: no aplica en el sentido generativo, pero si existe riesgo de falsos positivos en tareas de recuperacion y clasificacion cuando las similitudes latentes estan poco separadas.
 - Licencia MIT: permite uso comercial y modificacion con atribucion, aunque el autor no ofrece garantias ni soporte.
-- Repositorio sin adopcion: 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado en HuggingFace, lo que implica un ecosistema de integracion inexistente.
+- Repositorio sin adopcion: 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado en Hugging Face, lo que implica un ecosistema de integracion inexistente.
 - Formato `.ckpt` de PyTorch sin safetensors ni cuantizaciones: no se puede cargar directamente con runners estandar de LLM y requiere el codigo del repositorio.
 - El articulo esta marcado como "to appear" en AACL-IJCNLP 2026; los resultados deben considerarse previos a la revision final de camara.
 - Ausencia de datos de parametros, contexto, dataset de entrenamiento y coste computacional: la reproducibilidad completa depende del repositorio de codigo, no de la model card.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mohkoh/x-jepa
+- Hugging Face: https://huggingface.co/mohkoh/x-jepa
 - Repositorio de codigo: https://github.com/mohkoh/x-jepa
 - Ejecuciones de Weights & Biases: https://wandb.ai/inda/x-jepa-public
 - Articulo: "Latent Prediction Needs Alignment: A Controlled Study of Joint-Embedding Predictive Vision-Language Learning", Kohankhaki, Kusuma, Salehi, Kamp, Brell-Cokcan y Schmeink, AACL-IJCNLP 2026 (sin enlace directo en la informacion disponible).

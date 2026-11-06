@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sekkit/supra-tex` es un modelo publicado en HuggingFace por el usuario `sekkit` bajo el identificador `sekkit/supra-tex`. Se distribuye en formato `safetensors` con un tamano de repositorio de 16,9 GB, lo que sugiere un modelo de escala media (probablemente en el rango de 7-14 mil millones de parametros en funcion de la precision de los pesos), aunque no se ha publicado informacion oficial sobre la arquitectura ni el numero exacto de parametros.
+`sekkit/supra-tex` es un modelo publicado en Hugging Face por el usuario `sekkit` bajo el identificador `sekkit/supra-tex`. Se distribuye en formato `safetensors` con un tamano de repositorio de 16,9 GB, lo que sugiere un modelo de escala media (probablemente en el rango de 7-14 mil millones de parametros en funcion de la precision de los pesos), aunque no se ha publicado informacion oficial sobre la arquitectura ni el numero exacto de parametros.
 
 La model card es extremadamente escasa: unicamente incluye un aviso del autor indicando que estan trabajando activamente para resolver problemas de despliegue del modelo y que lo haran disponible para su uso tan pronto como se resuelvan, advirtiendo que los resultados de la version actual pueden ser inconsistentes y no reflejan la calidad final del modelo. Esto implica que el modelo se encuentra en un estado de publicacion temprana o incompleto, sin documentacion tecnica asociada.
 
@@ -73,4 +73,4 @@ No disponible. No se ha publicado informacion suficiente sobre arquitectura, par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sekkit/supra-tex
+- Hugging Face: https://huggingface.co/sekkit/supra-tex

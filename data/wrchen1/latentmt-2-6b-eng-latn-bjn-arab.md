@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa directa 
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-bjn-arab
+- Repositorio Hugging Face del adaptador: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-bjn-arab
 - Paper en arXiv: https://arxiv.org/abs/2607.18618 (PDF: https://arxiv.org/pdf/2607.18618v1, HTML: https://arxiv.org/html/2607.18618v1)
 - Modelo base ByteDance/Ouro-2.6B-Thinking: https://huggingface.co/ByteDance/Ouro-2.6B-Thinking
 - Repositorio de otro adaptador de la misma familia (referencia): https://huggingface.co/LatentMT/LatentMT-2.6B-eng-latn-prs-arab

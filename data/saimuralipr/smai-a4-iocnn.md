@@ -88,5 +88,5 @@ No se dispone de información sobre otros modelos comparables dentro de la docum
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/saimuralipr/smai-a4-iocnn
+- Hugging Face: https://huggingface.co/saimuralipr/smai-a4-iocnn
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

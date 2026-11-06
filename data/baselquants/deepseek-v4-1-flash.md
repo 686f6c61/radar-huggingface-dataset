@@ -4,7 +4,7 @@
 
 DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) con arquitectura Causal Encoder-Decoder (CED), presentado como una evolución centrada en la compresión de la caché KV y en la eficiencia de cargas de trabajo con entradas muy largas. El modelo declara 552B parámetros de backbone, procesa de forma nativa imágenes y texto, y admite contextos de hasta un millón de tokens. La model card lo sitúa como entrenado desde cero sobre un corpus multimodal de 45T tokens.
 
-El repositorio analizado pertenece al usuario `baselquants` en HuggingFace, no a la organización oficial `deepseek-ai`, y los pesos en safetensors suman 763.205.315.794 parámetros (unos 763B), cifra superior a los 552B del backbone por la inclusión del módulo Engram (196B) y del codificador de visión. El repositorio ocupa 510,3 GB y está etiquetado con `8-bit` y `fp8`, lo que apunta a una redistribución cuantizada más que a los pesos originales.
+El repositorio analizado pertenece al usuario `baselquants` en Hugging Face, no a la organización oficial `deepseek-ai`, y los pesos en safetensors suman 763.205.315.794 parámetros (unos 763B), cifra superior a los 552B del backbone por la inclusión del módulo Engram (196B) y del codificador de visión. El repositorio ocupa 510,3 GB y está etiquetado con `8-bit` y `fp8`, lo que apunta a una redistribución cuantizada más que a los pesos originales.
 
 Su relevancia actual reside en dos frentes: por un lado, la reducción drástica de la caché KV global hasta 890 bytes por token —aproximadamente una cuarta parte de DeepSeek-V4-Flash y 437 veces menos que DeepSeek-V1—; por otro, un coste de activación muy bajo (8B parámetros por token en prefill y 16B en decode), que abarata el preprocesado de entradas extensas típico de flujos agénticos. La licencia declarada es MIT. No se han facilitado cifras de benchmarks utilizables en la información disponible.
 
@@ -103,9 +103,9 @@ En rendimiento (benchmarks), licencia de las alternativas y disponibilidad de pe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/baselquants/DeepSeek-V4.1-Flash
+- Repositorio en Hugging Face: https://huggingface.co/baselquants/DeepSeek-V4.1-Flash
 - Informe técnico enlazado en la model card (ruta indicada, organización oficial): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización oficial en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización oficial en Hugging Face: https://huggingface.co/deepseek-ai
 - Sitio web del desarrollador original: https://www.deepseek.com/
 - Chat del desarrollador original: https://chat.deepseek.com/
 - Perfil de Twitter del desarrollador original: https://twitter.com/deepseek_ai

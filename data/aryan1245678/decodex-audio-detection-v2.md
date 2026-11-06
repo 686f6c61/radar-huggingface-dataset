@@ -2,11 +2,11 @@
 
 ## Resumen
 
-decodeX-audio-detection-V2 es un clasificador de audio publicado por el usuario Aryan1245678 en HuggingFace, orientado a la deteccion de voz sintetica o deepfake. No es un modelo generativo: se trata de un fine-tuning de un backbone acustico wav2vec2 (94.569.090 parametros) con una cabeza de clasificacion, entrenado sobre un dataset de tipo `audiofolder` no documentado. El modelo base declarado es `motheecreator/Deepfake-audio-detection`, y la licencia es Apache 2.0.
+decodeX-audio-detection-V2 es un clasificador de audio publicado por el usuario Aryan1245678 en Hugging Face, orientado a la deteccion de voz sintetica o deepfake. No es un modelo generativo: se trata de un fine-tuning de un backbone acustico wav2vec2 (94.569.090 parametros) con una cabeza de clasificacion, entrenado sobre un dataset de tipo `audiofolder` no documentado. El modelo base declarado es `motheecreator/Deepfake-audio-detection`, y la licencia es Apache 2.0.
 
 El modelo resuelve un problema acotado y de creciente interes: decidir si un fragmento de audio corresponde a voz humana real o a voz generada por sintesis. Con 94,5 millones de parametros, su coste de inferencia es muy bajo, lo que lo hace apto para filtrar audio a gran escala o para ejecutarse en CPU en pipelines de verificacion.
 
-La relevancia practica viene acompanada de una advertencia importante: la unica metrica publicada (accuracy 0,9973) se ha calculado sobre el split `train` del dataset, no sobre un conjunto de test independiente, y el valor esta marcado como `verified: false`. La model card, ademas, esta autogenerada por el Trainer de HuggingFace y no documenta composicion de datos, uso previsto ni limitaciones. Por tanto, debe tratarse como un artefacto experimental y no como un detector validado para produccion.
+La relevancia practica viene acompanada de una advertencia importante: la unica metrica publicada (accuracy 0,9973) se ha calculado sobre el split `train` del dataset, no sobre un conjunto de test independiente, y el valor esta marcado como `verified: false`. La model card, ademas, esta autogenerada por el Trainer de Hugging Face y no documenta composicion de datos, uso previsto ni limitaciones. Por tanto, debe tratarse como un artefacto experimental y no como un detector validado para produccion.
 
 ## Especificaciones tecnicas
 
@@ -21,18 +21,18 @@ La relevancia practica viene acompanada de una advertencia importante: la unica 
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 | Tarea declarada | `audio-classification` (deteccion de audio deepfake / voz sintetica) |
-| Modelo base | motheecreator/Deepfake-audio-detection (fine-tune). El tag de HuggingFace lo escribe como `mo-thecreator/Deepfake-audio-detection` |
+| Modelo base | motheecreator/Deepfake-audio-detection (fine-tune). El tag de Hugging Face lo escribe como `mo-thecreator/Deepfake-audio-detection` |
 | Frecuencia de muestreo esperada | No declarada en la model card; la arquitectura wav2vec2 estandar de la que deriva trabaja con audio mono a 16 kHz |
 | Tamano del repositorio | 0,4 GB |
 | Framework de entrenamiento | Transformers 4.41.2, PyTorch 2.1.2, Datasets 2.19.2, Tokenizers 0.19.1 |
-| Fecha de creacion | 2026-09-13 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-13 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
 La arquitectura subyacente es wav2vec2, un modelo acustico auto-supervisado que procesa la forma de onda cruda mediante un extractor convolucional de caracteristicas y un encoder Transformer, sobre el que se anade una cabeza de clasificacion. Con 94,5 millones de parametros, el tamano corresponde a la variante *base* de la familia. El modelo parte de `motheecreator/Deepfake-audio-detection`, que a su vez ya era un modelo de deteccion de deepfake, de modo que este repositorio es un fine-tune de segundo nivel.
 
-El entrenamiento se realizo con el `Trainer` de HuggingFace durante 5 epocas, con learning rate 3e-05, batch de entrenamiento 32 (batch total 128 con 4 pasos de acumulacion de gradiente), optimizador Adam (betas 0,9/0,999, epsilon 1e-08), scheduler coseno con warmup ratio 0,1 y semilla 42. La unica indicacion sobre los datos es que el dataset se llama `audiofolder` con split `train`; no se especifica numero de muestras, procedencia, idioma, codecs ni proporcion entre clases reales y sinteticas. Tampoco hay evidencia de RLHF, DPO ni de ninguna innovacion tecnica adicional: es un fine-tuning supervisado convencional de clasificacion. La unica metrica reportada durante el entrenamiento es loss y accuracy de validacion por epoca.
+El entrenamiento se realizo con el `Trainer` de Hugging Face durante 5 epocas, con learning rate 3e-05, batch de entrenamiento 32 (batch total 128 con 4 pasos de acumulacion de gradiente), optimizador Adam (betas 0,9/0,999, epsilon 1e-08), scheduler coseno con warmup ratio 0,1 y semilla 42. La unica indicacion sobre los datos es que el dataset se llama `audiofolder` con split `train`; no se especifica numero de muestras, procedencia, idioma, codecs ni proporcion entre clases reales y sinteticas. Tampoco hay evidencia de RLHF, DPO ni de ninguna innovacion tecnica adicional: es un fine-tuning supervisado convencional de clasificacion. La unica metrica reportada durante el entrenamiento es loss y accuracy de validacion por epoca.
 
 ## Capacidades
 
@@ -92,9 +92,9 @@ La informacion disponible no permite una comparativa cuantitativa fiable: no hay
 
 | Modelo | Parametros | Tarea | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| decodeX-audio-detection-V2 (este modelo) | 94.569.090 | Clasificacion de audio (deepfake) | Audio; duracion maxima no documentada | apache-2.0 | HuggingFace, 0 descargas |
-| motheecreator/Deepfake-audio-detection (modelo base) | No disponible en la informacion proporcionada | Clasificacion de audio (deepfake) | No disponible | No disponible | HuggingFace (referenciado como base) |
-| facebook/wav2vec2-base (backbone arquitectonico) | No disponible en la informacion proporcionada (variante *base* de wav2vec2) | Reconocimiento de habla auto-supervisado | Audio; la variante base se preentreno con clips de decenas de segundos | No disponible en la informacion proporcionada | HuggingFace |
+| decodeX-audio-detection-V2 (este modelo) | 94.569.090 | Clasificacion de audio (deepfake) | Audio; duracion maxima no documentada | apache-2.0 | Hugging Face, 0 descargas |
+| motheecreator/Deepfake-audio-detection (modelo base) | No disponible en la informacion proporcionada | Clasificacion de audio (deepfake) | No disponible | No disponible | Hugging Face (referenciado como base) |
+| facebook/wav2vec2-base (backbone arquitectonico) | No disponible en la informacion proporcionada (variante *base* de wav2vec2) | Reconocimiento de habla auto-supervisado | Audio; la variante base se preentreno con clips de decenas de segundos | No disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de otros detectores de deepfake de audio (por ejemplo, fine-tunes de wav2vec2 sobre ASVspoof) dentro de la informacion proporcionada, por lo que la comparativa de rendimiento queda como no disponible.
 
@@ -112,9 +112,9 @@ No se dispone de datos de otros detectores de deepfake de audio (por ejemplo, fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aryan1245678/decodeX-audio-detection-V2
+- Modelo en Hugging Face: https://huggingface.co/Aryan1245678/decodeX-audio-detection-V2
 - Modelo base declarado: https://huggingface.co/motheecreator/Deepfake-audio-detection (el tag del repositorio lo referencia como https://huggingface.co/mo-thecreator/Deepfake-audio-detection)
 - Paper de la arquitectura wav2vec2 (Baevski et al., 2020): https://arxiv.org/abs/2006.11477
-- Documentacion de HuggingFace Transformers sobre clasificacion de audio: https://huggingface.co/docs/transformers/tasks/audio_classification
+- Documentacion de Hugging Face Transformers sobre clasificacion de audio: https://huggingface.co/docs/transformers/tasks/audio_classification
 - Documentacion de modelos Wav2Vec2 en Transformers: https://huggingface.co/docs/transformers/model_doc/wav2vec2
 - Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los resultados obtenidos correspondian a paginas de soporte de Google Play Store y no guardan relacion con el modelo.

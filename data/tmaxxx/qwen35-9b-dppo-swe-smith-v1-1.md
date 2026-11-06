@@ -70,8 +70,8 @@ Los resultados corresponden al arnes Vanillux0.2.3 con Sandfleet a traves de Har
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| TMaxxx/qwen35-9b-dppo-swe-smith-v1.1 | ~8,95B | 65.536 tokens | TB-Lite 60,21 %; Terminal-Bench 2.1 27,27 % | Apache 2.0 | HuggingFace, 44 descargas |
-| Qwen/Qwen3.5-9B (base) | ~8,95B | no disponible en esta ficha | no disponible | no disponible en esta ficha | HuggingFace |
+| TMaxxx/qwen35-9b-dppo-swe-smith-v1.1 | ~8,95B | 65.536 tokens | TB-Lite 60,21 %; Terminal-Bench 2.1 27,27 % | Apache 2.0 | Hugging Face, 44 descargas |
+| Qwen/Qwen3.5-9B (base) | ~8,95B | no disponible en esta ficha | no disponible | no disponible en esta ficha | Hugging Face |
 | Alternativas de la misma categoria (agentes de terminal de ~9B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de resultados de otros modelos comparables de agente de terminal para establecer una comparacion numerica fiable.
@@ -89,7 +89,7 @@ No se dispone en la informacion proporcionada de resultados de otros modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TMaxxx/qwen35-9b-dppo-swe-smith-v1.1
+- Modelo en Hugging Face: https://huggingface.co/TMaxxx/qwen35-9b-dppo-swe-smith-v1.1
 - Checkpoint paso 100: https://huggingface.co/TMaxxx/qwen35-9b-dppo-swe-smith-v1.1/tree/step-0100
 - Checkpoint paso 200: https://huggingface.co/TMaxxx/qwen35-9b-dppo-swe-smith-v1.1/tree/step-0200
 - Checkpoint paso 300: https://huggingface.co/TMaxxx/qwen35-9b-dppo-swe-smith-v1.1/tree/step-0300

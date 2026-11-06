@@ -27,7 +27,7 @@ Su relevancia es fundamentalmente metodologica y educativa (el propio repositori
 | Dataset declarado | `sunkaiwen/sketch2stl-sketches-image` |
 | Tamano del repositorio | 1,1 GB |
 | Descargas / likes | 0 / 0 |
-| Creado / actualizado | 2026-09-22 (segun metadatos de HuggingFace) |
+| Creado / actualizado | 2026-09-22 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -81,7 +81,7 @@ No se dispone de informacion sobre modelos comparables publicados con el mismo d
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `eandujar/nnl_automl_model` (`repghostnet_200`) | CNN de clasificacion binaria de imagenes | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
+| `eandujar/nnl_automl_model` (`repghostnet_200`) | CNN de clasificacion binaria de imagenes | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
 | Backbones TIMM alternativos del barrido | CNN de clasificacion de imagenes | no disponible | no aplica | no disponible | no identificados en la model card |
 | Otros clasificadores AutoGluon MultiModal publicos | CNN de clasificacion de imagenes | no disponible | no aplica | no disponible | no disponible |
 
@@ -101,7 +101,7 @@ No se dispone de informacion sobre modelos comparables publicados con el mismo d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eandujar/nnl_automl_model
+- Modelo en Hugging Face: https://huggingface.co/eandujar/nnl_automl_model
 - Dataset declarado: https://huggingface.co/datasets/sunkaiwen/sketch2stl-sketches-image
 - Documentacion de AutoGluon MultiModal (referencia del framework): https://auto.gluon.ai
 - Repositorio de AutoGluon (referencia del framework): https://github.com/autogluon/autogluon

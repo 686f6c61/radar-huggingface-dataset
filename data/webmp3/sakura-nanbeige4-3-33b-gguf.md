@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/webmp3/Sakura-Nanbeige4.3-33B-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/webmp3/Sakura-Nanbeige4.3-33B-GGUF
 - Modelo original: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Model card del modelo original en el commit referenciado: https://huggingface.co/Nanbeige/Nanbeige4.3-33B/blob/c1093c501cc6460427c0ac634db7223d0450c0ee/README.md
 - Modelo base declarado: https://huggingface.co/Nanbeige/Nanbeige4.3-33B-Base

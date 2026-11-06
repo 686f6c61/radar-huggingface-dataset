@@ -90,11 +90,11 @@ Salvaguardas superadas segun la model card: sicofancia, ceder ante presion, rech
 
 | Modelo | Tipo | Parametros | Contexto | MMLU | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| joshycodes/ood-welfare-qwen14b-base | Adaptador LoRA de investigacion sobre Qwen3-14B-Base | No disponible; base ~14 B | No disponible | 82,2% | 95,1% | apache-2.0 | Publico en HuggingFace, 0 descargas |
-| Qwen/Qwen3-14B | Modelo de chat completo | ~14 B (segun denominacion) | No disponible en la informacion | 82,8% | 95,3% | No disponible en la informacion | Publico en HuggingFace |
-| Qwen/Qwen3-14B-Base | Modelo base preentrenado | ~14 B (segun denominacion) | No disponible en la informacion | No disponible | No disponible | No disponible en la informacion | Publico en HuggingFace |
-| joshycodes/good-moments-base-sft (qwen3-14b-base/wk-s0) | Adaptador solo-trabajo, referencia del estudio | No disponible; base ~14 B | No disponible | No disponible | No disponible | No disponible en la informacion | Publico en HuggingFace |
-| joshycodes/ood-welfare-gemma | Adaptador de investigacion equivalente sobre Gemma | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion | Publico en HuggingFace |
+| joshycodes/ood-welfare-qwen14b-base | Adaptador LoRA de investigacion sobre Qwen3-14B-Base | No disponible; base ~14 B | No disponible | 82,2% | 95,1% | apache-2.0 | Publico en Hugging Face, 0 descargas |
+| Qwen/Qwen3-14B | Modelo de chat completo | ~14 B (segun denominacion) | No disponible en la informacion | 82,8% | 95,3% | No disponible en la informacion | Publico en Hugging Face |
+| Qwen/Qwen3-14B-Base | Modelo base preentrenado | ~14 B (segun denominacion) | No disponible en la informacion | No disponible | No disponible | No disponible en la informacion | Publico en Hugging Face |
+| joshycodes/good-moments-base-sft (qwen3-14b-base/wk-s0) | Adaptador solo-trabajo, referencia del estudio | No disponible; base ~14 B | No disponible | No disponible | No disponible | No disponible en la informacion | Publico en Hugging Face |
+| joshycodes/ood-welfare-gemma | Adaptador de investigacion equivalente sobre Gemma | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion | Publico en Hugging Face |
 
 El adaptador solo-trabajo y el modelo de chat no son controles limpios: difieren en datos, voz, numero de pasos y en la correccion de parada respecto al adaptador evaluado, de modo que la comparacion no aísla el efecto de la seleccion de datos. El estudio equivalente sobre Gemma se cita como origen de los margenes de salvaguarda.
 
@@ -117,7 +117,7 @@ El adaptador solo-trabajo y el modelo de chat no son controles limpios: difieren
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/joshycodes/ood-welfare-qwen14b-base
+- Adaptador en Hugging Face: https://huggingface.co/joshycodes/ood-welfare-qwen14b-base
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B-Base
 - Modelo de chat de referencia: https://huggingface.co/Qwen/Qwen3-14B
 - Adaptador de referencia del estudio (good-moments-base-sft): https://huggingface.co/joshycodes/good-moments-base-sft

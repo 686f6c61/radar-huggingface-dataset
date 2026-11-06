@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Aql4 es un repositorio de HuggingFace publicado por el usuario Aql4 cuyo pipeline declarado es `text-to-video`. Se trata, por tanto, de un modelo orientado a la generacion de video a partir de descripciones textuales, aunque la informacion publica disponible en la ficha es practicamente nula: no se especifican arquitectura, numero de parametros, resolucion de salida, duracion de los clips ni conjunto de datos de entrenamiento.
+Aql4 es un repositorio de Hugging Face publicado por el usuario Aql4 cuyo pipeline declarado es `text-to-video`. Se trata, por tanto, de un modelo orientado a la generacion de video a partir de descripciones textuales, aunque la informacion publica disponible en la ficha es practicamente nula: no se especifican arquitectura, numero de parametros, resolucion de salida, duracion de los clips ni conjunto de datos de entrenamiento.
 
-El repositorio tiene un tamano de 0,8 GB y un acceso restringido (gated), de modo que es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos. En el momento de la consulta acumula 0 descargas y 0 likes, fue creado el 20 de octubre de 2026 y actualizado minutos despues, lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
+El repositorio tiene un tamano de 0,8 GB y un acceso restringido (gated), de modo que es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos. En el momento de la consulta acumula 0 descargas y 0 likes, fue creado el 20 de octubre de 2026 y actualizado minutos despues, lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
 
 Por su relevancia practica, conviene tratarlo con cautela: no hay licencia declarada, no hay idiomas declarados, no hay benchmarks ni documentacion tecnica. El dato de 0,8 GB es anomalamente bajo para un modelo de difusion de video completo (los modelos de video openly disponibles suelen ocupar decenas de GB), por lo que es plausible que el repositorio contenga un adaptador (LoRA), un componente parcial del pipeline o pesos muy cuantizados; esta hipotesis no puede confirmarse con la informacion disponible.
 
@@ -25,7 +25,7 @@ Otros datos verificables del repositorio:
 
 | Campo | Valor |
 |---|---|
-| ID en HuggingFace | Aql4/Aql4 |
+| ID en Hugging Face | Aql4/Aql4 |
 | Autor | Aql4 |
 | Pipeline declarado | text-to-video |
 | Tags | text-to-video, region:us |
@@ -44,7 +44,7 @@ Tampoco se dispone de informacion sobre los datos de entrenamiento: numero de to
 
 ## Capacidades
 
-- Generacion de video a partir de texto: es la unica capacidad declarada de forma explicita mediante el pipeline `text-to-video` en HuggingFace.
+- Generacion de video a partir de texto: es la unica capacidad declarada de forma explicita mediante el pipeline `text-to-video` en Hugging Face.
 - No se ha confirmado soporte de image-to-video, video-to-video, control por pose, depth o movimiento de camara.
 - No se ha confirmado soporte de tool calling ni de function calling; en un modelo de generacion de video esta capacidad no es habitual.
 - No se ha confirmado soporte de agentes ni de razonamiento multi-paso.
@@ -80,7 +80,7 @@ No hay datos de FVD, CLIP score, VBench, MMLU ni de ninguna otra metrica, ni com
 - Compatibilidad con GPU de consumo: no confirmada. Los modelos de difusion de video suelen requerir entre 12 y 80 GB de VRAM segun resolucion y duracion del clip, pero no hay datos para este repositorio concreto.
 - Opciones de despliegue: no disponibles. No se confirma compatibilidad con `diffusers`, vLLM, llama.cpp, Ollama, TGI ni ComfyUI.
 - Latencia y throughput: no disponibles.
-- Acceso: al estar el repositorio en modo gated, la descarga requiere autenticacion con un token de HuggingFace y la aceptacion previa de las condiciones del autor.
+- Acceso: al estar el repositorio en modo gated, la descarga requiere autenticacion con un token de Hugging Face y la aceptacion previa de las condiciones del autor.
 
 ## Comparativa con modelos similares
 
@@ -108,5 +108,5 @@ Para una comparacion real se recomienda consultar las fichas de modelos de video
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Aql4/Aql4
+- Ficha en Hugging Face: https://huggingface.co/Aql4/Aql4
 - Paper, blog, repositorio de codigo, demo o dataset: no disponibles en la informacion proporcionada.

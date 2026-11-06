@@ -114,7 +114,7 @@ No se dispone de datos publicados en esta informacion para comparar con alternat
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/christopherthompson81/VibeVoice-ASR-Streaming-1.5B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/christopherthompson81/VibeVoice-ASR-Streaming-1.5B-GGUF
 - Modelo base: https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-1.5B
 - Repositorio de Microsoft VibeVoice: mencionado en la model card sin URL concreta (no disponible)
 - Paper, blog o demo oficial: no disponible en la informacion proporcionada

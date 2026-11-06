@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ERNIE-HC-SMoE-ngroups48-maxcls2 es un modelo de generacion de texto publicado en HuggingFace por el usuario Dohyeon1, con un total de 21.825.437.888 parametros (aproximadamente 21,8 mil millones) segun los pesos en formato safetensors. El tag `ernie4_5_moe` de la ficha indica que se apoya en la arquitectura ERNIE 4.5 en su variante de mezcla de expertos (MoE), desarrollada originalmente por Baidu, aunque el autor del repositorio no confirma si se trata de un fine-tuning, una variante reentrenada o una modificacion estructural del modelo base.
+ERNIE-HC-SMoE-ngroups48-maxcls2 es un modelo de generacion de texto publicado en Hugging Face por el usuario Dohyeon1, con un total de 21.825.437.888 parametros (aproximadamente 21,8 mil millones) segun los pesos en formato safetensors. El tag `ernie4_5_moe` de la ficha indica que se apoya en la arquitectura ERNIE 4.5 en su variante de mezcla de expertos (MoE), desarrollada originalmente por Baidu, aunque el autor del repositorio no confirma si se trata de un fine-tuning, una variante reentrenada o una modificacion estructural del modelo base.
 
-El nombre del repositorio incorpora los sufijos `HC-SMoE`, `ngroups48` y `maxcls2`, que sugieren una configuracion de enrutamiento de expertos modificada (posiblemente con 48 grupos de expertos y algun tipo de agrupamiento o clasificacion de expertos limitada a 2), si bien no existe documentacion publicada que describa estos cambios. La model card es la plantilla automatica de HuggingFace y no aporta informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas soportados ni evaluaciones.
+El nombre del repositorio incorpora los sufijos `HC-SMoE`, `ngroups48` y `maxcls2`, que sugieren una configuracion de enrutamiento de expertos modificada (posiblemente con 48 grupos de expertos y algun tipo de agrupamiento o clasificacion de expertos limitada a 2), si bien no existe documentacion publicada que describa estos cambios. La model card es la plantilla automatica de Hugging Face y no aporta informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas soportados ni evaluaciones.
 
 El modelo es relevante unicamente como objeto de estudio para quien quiera inspeccionar variantes experimentales de ERNIE 4.5 MoE: acumula cero descargas y cero likes, el repositorio ocupa 43,7 GB y no incluye cuantizaciones ni artefactos adicionales. Para uso en produccion, la ausencia de licencia explicita y de documentacion tecnica lo convierte en una opcion de riesgo elevado.
 
@@ -40,7 +40,7 @@ Los sufijos del identificador (`ngroups48`, `maxcls2`) apuntan a una modificacio
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (el campo de idiomas de la ficha esta vacio).
 - Capacidades especiales (modo thinking, vision, audio): no disponible; el pipeline declarado es exclusivamente de texto.
-- Inferencia compatible con endpoints de HuggingFace: si, segun el tag `endpoints_compatible`.
+- Inferencia compatible con endpoints de Hugging Face: si, segun el tag `endpoints_compatible`.
 
 ## Casos de uso
 
@@ -82,7 +82,7 @@ Los datos de las alternativas provienen de sus respectivas fichas publicas y se 
 ## Limitaciones y advertencias
 
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial, redistribucion ni obras derivadas. Tratarlo como no apto para produccion hasta que el autor aclare los terminos.
-- Model card vacia: la ficha es la plantilla automatica de HuggingFace, con todos los campos marcados como "[More Information Needed]". No hay informacion sobre datos de entrenamiento, por lo que no se pueden evaluar sesgos ni contaminacion del corpus.
+- Model card vacia: la ficha es la plantilla automatica de Hugging Face, con todos los campos marcados como "[More Information Needed]". No hay informacion sobre datos de entrenamiento, por lo que no se pueden evaluar sesgos ni contaminacion del corpus.
 - Idiomas no declarados: se desconoce que idiomas cubre y con que calidad relativa.
 - Riesgo de alucinacion desconocido: no hay evaluacion de veracidad ni constancia de una fase de alineacion (RLHF/DPO), lo que en un modelo base suele implicar mayor propension a generar contenido plausible pero falso.
 - Contexto no especificado: sin longitud de contexto declarada no se puede planificar su uso en tareas de documento largo ni en conversaciones multi-turno extensas.
@@ -94,7 +94,7 @@ Los datos de las alternativas provienen de sus respectivas fichas publicas y se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dohyeon1/ERNIE-HC-SMoE-ngroups48-maxcls2
+- Modelo en Hugging Face: https://huggingface.co/Dohyeon1/ERNIE-HC-SMoE-ngroups48-maxcls2
 - Paper referenciado en los tags del modelo (Lacoste et al., 2019, calculadora de impacto ambiental; no es un paper sobre el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML citada en la model card: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, papers asociados, repositorios de codigo ni demos. Los resultados devueltos no guardan relacion con el modelo.

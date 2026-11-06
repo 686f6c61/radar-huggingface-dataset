@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Ishaansinghford/efficientformer-generation` es un prototipo de investigación publicado en HuggingFace por el usuario Ishaansinghford. Se presenta como una implementación de arquitectura Efficientformer orientada a tareas de generación, con una configuración etiquetada como "large" en la model card. El repositorio no contiene un checkpoint entrenado: el archivo `model.safetensors` se describe explícitamente como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), no como un modelo con rendimiento verificado.
+El modelo `Ishaansinghford/efficientformer-generation` es un prototipo de investigación publicado en Hugging Face por el usuario Ishaansinghford. Se presenta como una implementación de arquitectura Efficientformer orientada a tareas de generación, con una configuración etiquetada como "large" en la model card. El repositorio no contiene un checkpoint entrenado: el archivo `model.safetensors` se describe explícitamente como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), no como un modelo con rendimiento verificado.
 
 El tamaño real registrado en safetensors es de 49.600 parámetros (aproximadamente 0,05 millones), lo que confirma que se trata de una maqueta de inicialización y no de un modelo funcional a escala. La model card indica de forma expresa que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -45,7 +45,7 @@ Dado que el checkpoint no ha sido entrenado, los siguientes escenarios son aplic
 - Reproducción de experimentos: emplear `training_args.json` como receta base para replicar experimentos con Lion y warmup lineal, ajustando datos, semillas y presupuesto de cómputo.
 - Comparativas controladas: utilizar la inicialización como línea base de capacidad equivalente frente a otras arquitecturas, siguiendo la guía de evaluación del propio autor (conjunto de validación específico y al menos tres semillas).
 - Docencia y prototipado: servir como ejemplo didáctico de estructura de repositorio (config, training args, checkpoint de inicialización, script de ejecución) para quien aprende a publicar modelos.
-- Desarrollo de adaptadores: implementar el adaptador explícito que la model card menciona como necesario para cargar este modelo con APIs genéricas de HuggingFace.
+- Desarrollo de adaptadores: implementar el adaptador explícito que la model card menciona como necesario para cargar este modelo con APIs genéricas de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ishaansinghford/efficientformer-generation | 49.600 | no disponible | sin benchmarks (checkpoint sin entrenar) | MIT | HuggingFace |
+| Ishaansinghford/efficientformer-generation | 49.600 | no disponible | sin benchmarks (checkpoint sin entrenar) | MIT | Hugging Face |
 | Efficientformer (familia original, referencia de arquitectura) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas comparables de generación | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,5 +82,5 @@ No se dispone de datos suficientes para una comparativa cuantitativa con modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ishaansinghford/efficientformer-generation
+- Modelo en Hugging Face: https://huggingface.co/Ishaansinghford/efficientformer-generation
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces encontrados no guardan relación con el artefacto y se descartan por no ser pertinentes.

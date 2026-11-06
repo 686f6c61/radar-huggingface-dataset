@@ -2,7 +2,7 @@
 
 ## Resumen
 
-burstingkrea es un adaptador LoRA de texto a imagen publicado en HuggingFace por el usuario Rand000mGuy. Se distribuye como un LoRA de difusión (etiqueta `template:diffusion-lora`) construido sobre el modelo base `krea/Krea-2-Raw`, por lo que no es un modelo autónomo sino un complemento que debe cargarse junto con dicho modelo base para funcionar.
+burstingkrea es un adaptador LoRA de texto a imagen publicado en Hugging Face por el usuario Rand000mGuy. Se distribuye como un LoRA de difusión (etiqueta `template:diffusion-lora`) construido sobre el modelo base `krea/Krea-2-Raw`, por lo que no es un modelo autónomo sino un complemento que debe cargarse junto con dicho modelo base para funcionar.
 
 El repositorio es de tamaño reducido (0,2 GB), coherente con un adaptador LoRA y no con un modelo completo. El pipeline declarado es `text-to-image` y la librería de referencia es `diffusers`. Tanto la licencia como los idiomas soportados figuran como no disponibles en la información proporcionada.
 
@@ -78,7 +78,7 @@ No se dispone de información sobre otros LoRA comparables ni sobre sus métrica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rand000mGuy/burstingkrea
+- Hugging Face: https://huggingface.co/Rand000mGuy/burstingkrea
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Repositorio de ficheros: https://huggingface.co/Rand000mGuy/burstingkrea/tree/main
 - Librería diffusers: https://github.com/huggingface/diffusers

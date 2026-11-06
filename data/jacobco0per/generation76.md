@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jacobco0per/generation76` es un repositorio de HuggingFace que contiene una implementacion propia de un "Tiny Transformer" orientado a generacion de texto, acompanada de un checkpoint de inicializacion en formato safetensors. El autor lo publica bajo licencia apache-2.0 y con el tag `tiny-transformer`, dejando explicito en la model card que el checkpoint **no ha sido entrenado** ni auditado: se trata de una inicializacion valida para pruebas de humo (smoke tests), no de un modelo con rendimiento demostrado.
+`jacobco0per/generation76` es un repositorio de Hugging Face que contiene una implementacion propia de un "Tiny Transformer" orientado a generacion de texto, acompanada de un checkpoint de inicializacion en formato safetensors. El autor lo publica bajo licencia apache-2.0 y con el tag `tiny-transformer`, dejando explicito en la model card que el checkpoint **no ha sido entrenado** ni auditado: se trata de una inicializacion valida para pruebas de humo (smoke tests), no de un modelo con rendimiento demostrado.
 
 El dato mas definitorio es su tamano: 16.576 parametros totales segun el archivo safetensors. Con esa magnitud, el modelo no es utilizable para tareas reales de generacion, razonamiento o codigo; su interes es exclusivamente pedagogico y de ingenieria, como plantilla reproducible de una arquitectura transformer personalizada con atencion estandar, fusion de bajo rango (low rank), activacion swish y normalizacion scalenorm.
 
@@ -83,14 +83,14 @@ La diferencia de escala entre `generation76` y cualquier alternativa de referenc
 - El checkpoint no ha sido entrenado: sus salidas no son texto coherente y no debe usarse para ninguna tarea de generacion real.
 - No ha sido auditado en robustez, equidad ni transferencia de dominio, segun declara el propio autor.
 - No se han publicado datos de sesgos, alucinacion, contexto o cobertura idiomatica; no pueden evaluarse porque el modelo no tiene capacidades funcionales.
-- Al ser una implementacion personalizada, no es compatible con los cargadores automaticos de HuggingFace (`AutoModel`, `pipeline`) sin escribir un adaptador especifico.
+- Al ser una implementacion personalizada, no es compatible con los cargadores automaticos de Hugging Face (`AutoModel`, `pipeline`) sin escribir un adaptador especifico.
 - La licencia apache-2.0 permite uso comercial del codigo y del checkpoint, pero los terminos de los datasets externos que se utilicen para un futuro entrenamiento deben revisarse por separado.
 - Cualquier resultado obtenido a partir de un checkpoint futuro debe documentarse de forma independiente a los valores por defecto que se distribuyen en este repositorio.
 - Riesgo de interpretacion erronea: la etiqueta de escala "large" en la model card no refleja el tamano real del modelo, que es de 16.576 parametros.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jacobco0per/generation76
+- Hugging Face: https://huggingface.co/jacobco0per/generation76
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo adicional: no disponible (el propio repo incluye `finetune.py`)

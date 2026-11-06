@@ -4,7 +4,7 @@
 
 EfficientNet-B0 pizza vs steak es un clasificador binario de imagenes desarrollado por el usuario estherola como proyecto de aprendizaje. Se construye mediante transfer learning sobre un EfficientNet-B0 preentrenado en ImageNet (disponible en torchvision) y se reentrena para distinguir entre dos clases: pizza (indice 0) y steak (indice 1). El modelo devuelve la probabilidad de que la imagen pertenezca a la clase steak mediante una sigmoide en la cabeza de clasificacion.
 
-La relevancia del modelo es limitada: se trata de un ejercicio didactico publicado en HuggingFace, sin descargas ni likes en el momento de la consulta, y con un repositorio de 0.0 GB que sugiere que los pesos podrian no estar subidos o ser de tamano despreciable. No obstante, el autor reporta una precision del 99.40% en el conjunto de test, un dato que debe interpretarse con cautela dado el reducido tamano del dataset y la simplicidad de la tarea.
+La relevancia del modelo es limitada: se trata de un ejercicio didactico publicado en Hugging Face, sin descargas ni likes en el momento de la consulta, y con un repositorio de 0.0 GB que sugiere que los pesos podrian no estar subidos o ser de tamano despreciable. No obstante, el autor reporta una precision del 99.40% en el conjunto de test, un dato que debe interpretarse con cautela dado el reducido tamano del dataset y la simplicidad de la tarea.
 
 Arquitectonicamente es una CNN EfficientNet-B0 estandar con una cabeza lineal de 1280 a 1 neuronas, sin innovaciones tecnicas destacables. El contexto de uso es la clasificacion de imagenes de comida en dos categorias, y su interes practico es escaso fuera del ambito educativo o de prototipado rapido.
 
@@ -32,7 +32,7 @@ El entrenamiento se realizo en dos fases. En la primera se congelo el backbone y
 - Clasificacion binaria de imagenes en dos categorias: pizza y steak.
 - Salida de una probabilidad continua (sigmoide) para la clase steak.
 - Inferencia sobre imagenes individuales mediante una funcion `predict` incluida en el codigo del repositorio.
-- Carga de pesos y configuracion mediante `hf_hub_download` desde HuggingFace Hub.
+- Carga de pesos y configuracion mediante `hf_hub_download` desde Hugging Face Hub.
 - No soporta tool calling ni function calling.
 - No soporta agentes ni razonamiento multi-paso.
 - No tiene capacidades multilingues (no procesa texto).
@@ -44,7 +44,7 @@ El entrenamiento se realizo en dos fases. En la primera se congelo el backbone y
 - Clasificacion rapida de imagenes de menu en una demo: se puede integrar en un script que reciba fotos de platos y devuelva si es pizza o steak, util para una prueba de concepto de una app de restaurante.
 - Filtrado preliminar en un pipeline de catalogacion de imagenes: como primer paso para separar fotos de pizza y steak antes de un etiquetado manual, siempre que el dominio de las imagenes coincida con el del entrenamiento.
 - Docencia en cursos de vision por computador: permite ilustrar el impacto del fine-tuning parcial y la aumentacion de datos con un caso sencillo y reproducible.
-- Prueba de integracion con HuggingFace Hub: el codigo de ejemplo demuestra como descargar pesos, configuracion y codigo desde un repositorio y ejecutar inferencia local.
+- Prueba de integracion con Hugging Face Hub: el codigo de ejemplo demuestra como descargar pesos, configuracion y codigo desde un repositorio y ejecutar inferencia local.
 - Benchmark interno de infraestructura de inferencia: por su reducido tamano, puede usarse para validar el funcionamiento de un entorno de PyTorch antes de desplegar modelos mayores.
 
 ## Benchmarks y rendimiento
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| estherola/efficientnet-b0-pizza-steak | no disponible (~5,3 M base) | no aplica | 99.40% en test propio | MIT | HuggingFace, 0 descargas |
+| estherola/efficientnet-b0-pizza-steak | no disponible (~5,3 M base) | no aplica | 99.40% en test propio | MIT | Hugging Face, 0 descargas |
 | EfficientNet-B0 (torchvision, ImageNet) | ~5,3 M | no aplica | no disponible (1000 clases) | BSD-3-Clause | Ampliamente disponible |
 | ResNet-50 (torchvision, ImageNet) | ~25,6 M | no aplica | no disponible (1000 clases) | BSD-3-Clause | Ampliamente disponible |
 
@@ -86,5 +86,5 @@ La comparacion directa con alternativas no es significativa porque el modelo es 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/estherola/efficientnet-b0-pizza-steak
+- Hugging Face: https://huggingface.co/estherola/efficientnet-b0-pizza-steak
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

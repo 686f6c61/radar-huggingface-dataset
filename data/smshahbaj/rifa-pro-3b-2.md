@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RIFA-PRO-3B es un modelo de lenguaje publicado en HuggingFace por el usuario smshahbaj, bajo licencia Apache 2.0. Según la información disponible, forma parte de una serie denominada RIFA, aunque no se especifican detalles sobre su arquitectura, tamaño real de parámetros o proceso de entrenamiento. La model card del autor está prácticamente vacía, sin descripción técnica, y no se han publicado resultados de benchmarks ni especificaciones de contexto o idiomas.
+RIFA-PRO-3B es un modelo de lenguaje publicado en Hugging Face por el usuario smshahbaj, bajo licencia Apache 2.0. Según la información disponible, forma parte de una serie denominada RIFA, aunque no se especifican detalles sobre su arquitectura, tamaño real de parámetros o proceso de entrenamiento. La model card del autor está prácticamente vacía, sin descripción técnica, y no se han publicado resultados de benchmarks ni especificaciones de contexto o idiomas.
 
 La relevancia de este modelo es incierta en el momento de redactar esta ficha, ya que la falta de documentación impide evaluar sus capacidades o compararlo con alternativas. Por el nombre y la referencia a un modelo hermano (Rifa-Nano-0.5B) que sí está documentado, se podría inferir que RIFA-PRO-3B podría estar basado en la familia Qwen2.5, pero esta información no está confirmada y debe tratarse como especulación. Se recomienda precaución antes de considerar su uso en entornos de producción.
 
@@ -48,11 +48,11 @@ No se dispone de información para realizar una comparativa fiable. No se conoce
 - La model card está vacía, lo que impide conocer sesgos, riesgos de alucinación o limitaciones de contexto.
 - No hay garantías de calidad ni de seguridad para uso en producción.
 - La licencia Apache 2.0 permite uso comercial, pero sin documentación no se puede evaluar si el modelo es adecuado para ello.
-- No se han publicado pesos ni archivos de modelo en el repositorio de HuggingFace (según la información consultada, no se listan archivos).
+- No se han publicado pesos ni archivos de modelo en el repositorio de Hugging Face (según la información consultada, no se listan archivos).
 - La fecha de creación del modelo (2026-08-29) es posterior a la fecha actual de redacción, lo que sugiere que el repositorio podría estar incompleto o ser un placeholder.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/smshahbaj/RIFA-PRO-3B
+- Repositorio de Hugging Face: https://huggingface.co/smshahbaj/RIFA-PRO-3B
 - Modelo hermano Rifa-Nano-0.5B: https://huggingface.co/smshahbaj/Rifa-Nano-0.5B
 - Perfil de GitHub del autor: https://github.com/smshahbaj-official/

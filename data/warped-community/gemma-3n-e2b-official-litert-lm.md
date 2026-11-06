@@ -91,7 +91,7 @@ Los datos de los modelos de comparacion proceden del conocimiento general de sus
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/warped-community/gemma-3n-E2B-official-litert-lm
+- Repositorio en Hugging Face: https://huggingface.co/warped-community/gemma-3n-E2B-official-litert-lm
 - Fuente original del artefacto LiteRT-LM: https://huggingface.co/google/gemma-3n-E2B-it-litert-lm
 - Modelo base instructivo: https://huggingface.co/google/gemma-3n-E2B-it
 - Documentacion oficial de Gemma: https://ai.google.dev/gemma/docs

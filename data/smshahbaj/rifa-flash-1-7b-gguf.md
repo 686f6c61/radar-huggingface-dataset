@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. El
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/smshahbaj/RIFA-FLASH-1.7B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/smshahbaj/RIFA-FLASH-1.7B-GGUF
 - Ficha en LLM Explorer: https://llm-explorer.com/model/smshahbaj%2FRIFA-FLASH-1.7B,5QyBjo48nxRdhKOBmKkPmQ
 - Perfil de GitHub del autor: https://github.com/smshahbaj-official/
 - Version alternativa de mradermacher: https://huggingface.co/mradermacher/RIFA-FLASH-1.7B-GGUF

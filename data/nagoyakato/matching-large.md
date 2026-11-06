@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nagoyakato/matching-large` es un prototipo de investigación publicado en HuggingFace por el usuario nagoyakato bajo el nombre "Flamingo for Matching". Se trata de una implementación propia de una arquitectura tipo Flamingo (modelo multimodal con mecanismos de atención cruzada para fusionar modalidades) orientada a una tarea de *matching* que la model card no define con precisión. El repositorio incluye el código (`main.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`.
+`nagoyakato/matching-large` es un prototipo de investigación publicado en Hugging Face por el usuario nagoyakato bajo el nombre "Flamingo for Matching". Se trata de una implementación propia de una arquitectura tipo Flamingo (modelo multimodal con mecanismos de atención cruzada para fusionar modalidades) orientada a una tarea de *matching* que la model card no define con precisión. El repositorio incluye el código (`main.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`.
 
 El dato más relevante para evaluarlo es su escala: el checkpoint contiene 16.576 parámetros totales, es decir, un modelo de juguete pensado para pruebas de humo (*smoke tests*) y para documentar formatos de ficheros, no para inferencia real. El autor indica explícitamente que el checkpoint **no ha sido entrenado** y que no se reclama ninguna métrica de benchmark en el repositorio. Cualquier uso en producción está fuera del alcance declarado del artefacto.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nagoyakato/matching-large | 16.576 | No disponible | Ninguno (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
+| nagoyakato/matching-large | 16.576 | No disponible | Ninguno (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
 | OpenFlamingo (referencia arquitectónica) | No disponible en esta información | No disponible | No disponible en esta información | No disponible en esta información | No verificado en esta búsqueda |
 | Alternativas de la tarea "matching" | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -74,7 +74,7 @@ No se dispone de datos verificables de modelos comparables dentro de la informac
 - El checkpoint no ha sido entrenado: no tiene capacidades de generation, razonamiento ni *matching* demostradas.
 - El autor declara que no se ha auditado robustez, equidad ni transferencia de dominio.
 - No hay métricas, ni tan siquiera una definición formal de la tarea de *matching* (¿emparejamiento imagen-texto, retrieval, verificación de pares?).
-- Implementación personalizada: requiere adaptador para APIs estándar; los pipelines automáticos de HuggingFace no funcionarán de forma directa.
+- Implementación personalizada: requiere adaptador para APIs estándar; los pipelines automáticos de Hugging Face no funcionarán de forma directa.
 - Sin `pipeline_tag`, sin descargas y sin *likes*: no hay señal de uso ni de validación por parte de la comunidad.
 - Idiomas, tokenizador y datos de entrenamiento no documentados; riesgo alto de comportamiento indefinido fuera del ejemplo de humo.
 - La licencia BSD-3-Clause cubre el repositorio, pero el autor advierte de que los términos de los datos de origen deben revisarse por separado si se usan datasets externos.
@@ -84,5 +84,5 @@ No se dispone de datos verificables de modelos comparables dentro de la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nagoyakato/matching-large
+- Hugging Face: https://huggingface.co/nagoyakato/matching-large
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos relacionados con este modelo.

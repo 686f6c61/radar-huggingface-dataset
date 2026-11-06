@@ -79,7 +79,7 @@ La comparativa con alternativas de la misma categoría (modelos de tutoría para
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/machalek29/qwen3-0.6b-state-lifetime-tutor-n250](https://huggingface.co/machalek29/qwen3-0.6b-state-lifetime-tutor-n250)
+- Modelo en Hugging Face: [https://huggingface.co/machalek29/qwen3-0.6b-state-lifetime-tutor-n250](https://huggingface.co/machalek29/qwen3-0.6b-state-lifetime-tutor-n250)
 - Dataset de entrenamiento: [https://huggingface.co/datasets/machalek29/state-lifetime-tutor-v1](https://huggingface.co/datasets/machalek29/state-lifetime-tutor-v1)
 - Modelo base Qwen3-0.6B: [https://huggingface.co/Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
 - Repositorio GitHub de Qwen3: [https://github.com/QwenLM/Qwen3](https://github.com/QwenLM/Qwen3)

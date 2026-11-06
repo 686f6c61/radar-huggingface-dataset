@@ -83,7 +83,7 @@ La tabla de benchmarks de la model card compara Qwen3.8-27B con Qwen3.6-27B, Qwe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TOTORONG/Bethesda_John5
+- Repositorio Hugging Face: https://huggingface.co/TOTORONG/Bethesda_John5
 - Servicio Qwen Cloud (mención en la model card): https://www.qwencloud.com
 - Página del modelo Qwen3.8-27B en Qwen Cloud: https://www.qwencloud.com/models/qwen3.8-27b
 

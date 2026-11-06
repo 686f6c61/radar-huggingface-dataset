@@ -83,7 +83,7 @@ No se dispone de información sobre modelos comparables de otros autores en la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Identity-CD16-2026.10.26
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Identity-CD16-2026.10.26
 - Modelo base: https://huggingface.co/open-athena/Marin-Snowball-67B-A2B-v0.1
 - Dataset de entrenamiento: https://huggingface.co/datasets/open-athena/Snowball-67B-A2B-Identity-CD16-Data-2026.10.26
 - Issue de seguimiento: https://github.com/marin-community/marin/issues/10695

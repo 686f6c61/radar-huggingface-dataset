@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Arabian-Agent es un modelo de lenguaje compacto orientado a agentes, desarrollado por el usuario Kenvenx y publicado en HuggingFace. Se trata de un fine-tune LoRA (posteriormente fusionado en los pesos base) de Qwen3-0.6B de Alibaba, entrenado específicamente para seleccionar herramientas y generar llamadas estructuradas a funciones en árabe e inglés, en lugar de simular que la tarea ya se ha completado (el clásico problema de las "falsas finalizaciones" en modelos pequeños).
+Arabian-Agent es un modelo de lenguaje compacto orientado a agentes, desarrollado por el usuario Kenvenx y publicado en Hugging Face. Se trata de un fine-tune LoRA (posteriormente fusionado en los pesos base) de Qwen3-0.6B de Alibaba, entrenado específicamente para seleccionar herramientas y generar llamadas estructuradas a funciones en árabe e inglés, en lugar de simular que la tarea ya se ha completado (el clásico problema de las "falsas finalizaciones" en modelos pequeños).
 
 Su relevancia radica en cubrir un nicho poco atendido: el tool calling en árabe con modelos muy ligeros que puedan ejecutarse en hardware modesto o incluso en CPU. El autor reporta mejoras sustanciales frente al modelo base en un conjunto de pruebas propio de 354 ejemplos: la precisión de selección de herramienta sube del 92,17 % al 98,16 % y la coincidencia exacta de argumentos del 49,31 % al 82,03 %.
 

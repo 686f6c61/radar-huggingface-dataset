@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mlx-community/Qwopus3.8-27B-Coder-Flash-6bit",
+  "slug": "mlx-community-qwopus3-8-27b-coder-flash-6bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/Qwopus3.8-27B-Coder-Flash-6bit",
+  "created_at": "2026-11-02T03:08:45.000Z",
+  "updated_at": "2026-11-02T07:47:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "gguf",
+    "llama.cpp",
+    "vision",
+    "multimodal",
+    "conversational",
+    "qwopus3_8",
+    "vllm",
+    "fine-tuned",
+    "coding",
+    "code-generation",
+    "reasoning",
+    "tool-use",
+    "agent",
+    "efficient-inference",
+    "en",
+    "zh",
+    "base_model:unsloth/Qwen3.8-27B",
+    "base_model:quantized:unsloth/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 425,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 22797869108,
+  "storage_human": "22.8 GB",
+  "base_model": "unsloth/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/Qwopus3.8-27B-Coder-Flash-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwopus3.8-27B-Coder-Flash-4bit",
+      "snippet": "A coding-oriented Flash model for practical software work Qwopus3.8-27B-Coder-Flash is positioned for coding, agentic reasoning, tool use, and efficient execution. It extends the Qwopus Flash philosophy to a 27B model focused on useful software-engineering work: understand the request, make a concrete change, inspect tool feedback, test the result, recover from errors, and deliver the artifact."
+    },
+    {
+      "title": "Qwopus3.8 27B Coder Flash 6bit by mlx-community",
+      "url": "https://llm-explorer.com/model/mlx-community%2FQwopus3.8-27B-Coder-Flash-6bit,3VL4c0ddskzSs4ypi9hm0P",
+      "snippet": "Rank the Qwopus3.8 27B Coder Flash 6bit capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

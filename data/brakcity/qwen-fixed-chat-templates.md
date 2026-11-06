@@ -23,7 +23,7 @@ Es relevante ahora porque el ecosistema de despliegue de Qwen 3.8 abarca LM Stud
 | Version | v22.5 |
 | Modelos destino | Qwen 3.5, Qwen 3.6, Qwen 3.8 y Qwen 3.8 Flash-Next (todas las tallas, con una unica plantilla) |
 | Motores compatibles | LM Studio, llama.cpp / llama-server, KoboldCPP, vLLM, SGLang, MLX, oMLX y cualquier motor con soporte de plantillas Jinja de Hugging Face |
-| Biblioteca declarada en HuggingFace | mlx |
+| Biblioteca declarada en Hugging Face | mlx |
 | Formato de tool calling por defecto | XML canonico (con manejo universal de argumentos JSON serializados como cadena) |
 | Etiquetas de control en linea | `<\|think_low\|>`, `<\|think_medium\|>`, `<\|think_xhigh\|>`, `<\|think_ultracode\|>`, `<\|think_off\|>` |
 | Autor | brakcity |
@@ -113,6 +113,6 @@ Comparacion con alternativas de mismo proposito: no disponible. La informacion p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/brakcity/Qwen-Fixed-Chat-Templates
+- Repositorio en Hugging Face: https://huggingface.co/brakcity/Qwen-Fixed-Chat-Templates
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.
 - La busqueda web realizada no devolvio resultados relevantes: todos los enlaces recuperados corresponden a YouTube (https://www.youtube.com/youtube, https://www.youtube.com/feed/yt+, https://music.youtube.com/, https://en.wikipedia.org/wiki/YouTube, https://www.yt-industries.com/) y no guardan relacion con el repositorio ni con plantillas de chat para Qwen.

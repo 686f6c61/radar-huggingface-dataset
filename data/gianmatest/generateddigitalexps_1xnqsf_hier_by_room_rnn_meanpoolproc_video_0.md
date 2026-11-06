@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `generatedDigitalExps_1xNqSf_hier_by_room_rnn_meanPoolProc_video_0` es un artefacto publicado en HuggingFace por el usuario `gianmaTest` bajo el namespace de pruebas de la plataforma. Por el nombre se deduce que se trata de un modelo recurrente (RNN) con agregacion por *mean pooling* y estructura jerarquica "por habitacion" (*hier by room*), orientado a procesar secuencias derivadas de video. No es un modelo de lenguaje generativo ni un transformer de gran escala: sus 2.366.208 parametros lo situan en el rango de los modelos pequenos de investigacion.
+El modelo `generatedDigitalExps_1xNqSf_hier_by_room_rnn_meanPoolProc_video_0` es un artefacto publicado en Hugging Face por el usuario `gianmaTest` bajo el namespace de pruebas de la plataforma. Por el nombre se deduce que se trata de un modelo recurrente (RNN) con agregacion por *mean pooling* y estructura jerarquica "por habitacion" (*hier by room*), orientado a procesar secuencias derivadas de video. No es un modelo de lenguaje generativo ni un transformer de gran escala: sus 2.366.208 parametros lo situan en el rango de los modelos pequenos de investigacion.
 
 La model card es practicamente vacia: solo declara los tags de integracion con `PyTorchModelHubMixin` y deja como "More Information Needed" el codigo, el paper y la documentacion. No hay pipeline declarado, ni licencia, ni idiomas, ni descripcion funcional. El repositorio ocupa 0.0 GB (redondeo de un peso muy inferior al gigabyte) y acumula cero descargas y cero likes, lo que confirma que es un experimento personal sin difusion.
 
@@ -41,7 +41,7 @@ No hay informacion sobre el corpus de entrenamiento, el numero de tokens o muest
 ## Casos de uso
 
 - Reproduccion de experimentos de investigacion: el checkpoint puede cargarse con `PyTorchModelHubMixin` para inspeccionar la estructura de un modelo recurrente jerarquico de 2,37 M de parametros en trabajos de analisis de arquitecturas.
-- Docencia sobre publicacion de modelos: sirve como ejemplo minimo de subida de pesos en safetensors a HuggingFace con los mixins oficiales, util en talleres de MLOps.
+- Docencia sobre publicacion de modelos: sirve como ejemplo minimo de subida de pesos en safetensors a Hugging Face con los mixins oficiales, util en talleres de MLOps.
 - Prototipado de pipelines de video con agregacion temporal: si se confirma la hipotesis del nombre, podria emplearse como extractor de caracteristicas ligeras en un pipeline de clasificacion de secuencias.
 - Pruebas de integracion de la libreria `huggingface_hub`: util para validar flujos de descarga y carga de checkpoints en entornos de CI.
 - Benchmarking de infraestructura con modelos diminutos: su tamano permite medir latencia de carga y serializacion sin consumir recursos de GPU.
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| generatedDigitalExps_1xNqSf_hier_by_room_rnn_meanPoolProc_video_0 | 2.366.208 | no disponible | no disponible | HuggingFace, 0 descargas |
-| Modelos RNN genericos de HuggingFace (p. ej. checkpoints de `torchvision` o `pytorch/vision`) | variable, habitualmente 1-10 M | no aplica | BSD-3-Clause en la mayoria | Ampliamente disponibles |
+| generatedDigitalExps_1xNqSf_hier_by_room_rnn_meanPoolProc_video_0 | 2.366.208 | no disponible | no disponible | Hugging Face, 0 descargas |
+| Modelos RNN genericos de Hugging Face (p. ej. checkpoints de `torchvision` o `pytorch/vision`) | variable, habitualmente 1-10 M | no aplica | BSD-3-Clause en la mayoria | Ampliamente disponibles |
 | Modelos de video ligeros tipo MoViNet-A0 | ~3,1 M | no aplica | Apache 2.0 | TensorFlow Hub / PyTorch |
 
 No se dispone de informacion suficiente para establecer una comparativa tecnica rigurosa con alternativas concretas; la tabla anterior solo contextualiza el orden de magnitud.
@@ -84,7 +84,7 @@ No se dispone de informacion suficiente para establecer una comparativa tecnica 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xNqSf_hier_by_room_rnn_meanPoolProc_video_0
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xNqSf_hier_by_room_rnn_meanPoolProc_video_0
 - Documentacion de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Codigo: no disponible

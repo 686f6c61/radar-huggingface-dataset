@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wweberfinn/experiment-audio-visual-learning` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion sobre aprendizaje audiovisual publicado en HuggingFace bajo licencia MIT. La propia model card lo describe como un conjunto estructurado de notas con referencias de evaluacion y preguntas abiertas, y advierte de forma explicita que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni un checkpoint entrenado. Los artefactos declarados son dos archivos de texto: `review.md` (artefacto principal) y `README.md`.
+`wweberfinn/experiment-audio-visual-learning` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion sobre aprendizaje audiovisual publicado en Hugging Face bajo licencia MIT. La propia model card lo describe como un conjunto estructurado de notas con referencias de evaluacion y preguntas abiertas, y advierte de forma explicita que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni un checkpoint entrenado. Los artefactos declarados son dos archivos de texto: `review.md` (artefacto principal) y `README.md`.
 
 El repositorio aparece etiquetado con `safetensors` y `transformer`, y el recuento real de parametros en formato safetensors es de 33.088. Esa cifra es incompatible con cualquier transformer funcional de aprendizaje audiovisual: se trata, con toda probabilidad, de un artefacto de prueba o de un residuo de inicializacion, no de pesos utilizables. El tamano del repositorio es de 0,0 GB, lo que refuerza que no contiene un checkpoint distribuible.
 
@@ -85,5 +85,5 @@ No disponible. El repositorio no es un modelo entrenado, por lo que no existe un
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wweberfinn/experiment-audio-visual-learning
+- Hugging Face: https://huggingface.co/wweberfinn/experiment-audio-visual-learning
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este repositorio ni sobre su autor: los resultados obtenidos eran noticias de prensa alemana sin relacion con el modelo. No hay paper, blog, repositorio de codigo ni demo disponibles en la informacion proporcionada.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`eeys/jeanne` es un modelo publicado en HuggingFace por el usuario `eeys` el 22 de octubre de 2026 (ultima actualizacion el 25 de octubre de 2026). Se trata de un modelo de pequeno tamano: los metadatos de safetensors registran 361.821.120 parametros totales (unos 361,8 millones), y el repositorio ocupa 2,0 GB. El autor no ha publicado model card: no hay descripcion, pipeline declarado, licencia, idiomas ni resultados de evaluacion en la informacion disponible.
+`eeys/jeanne` es un modelo publicado en Hugging Face por el usuario `eeys` el 22 de octubre de 2026 (ultima actualizacion el 25 de octubre de 2026). Se trata de un modelo de pequeno tamano: los metadatos de safetensors registran 361.821.120 parametros totales (unos 361,8 millones), y el repositorio ocupa 2,0 GB. El autor no ha publicado model card: no hay descripcion, pipeline declarado, licencia, idiomas ni resultados de evaluacion en la informacion disponible.
 
-La relevancia practica de esta ficha es limitada y debe leerse como advertencia. Las etiquetas del repositorio son `gguf`, `endpoints_compatible` y `region:us`, lo que indica que el repositorio contiene pesos en formato GGUF y que esta marcado como desplegable en HuggingFace Inference Endpoints, pero no aporta informacion sobre arquitectura, datos de entrenamiento ni capacidad real del modelo. Con 194 descargas y 0 likes, tampoco existe validacion de la comunidad.
+La relevancia practica de esta ficha es limitada y debe leerse como advertencia. Las etiquetas del repositorio son `gguf`, `endpoints_compatible` y `region:us`, lo que indica que el repositorio contiene pesos en formato GGUF y que esta marcado como desplegable en Hugging Face Inference Endpoints, pero no aporta informacion sobre arquitectura, datos de entrenamiento ni capacidad real del modelo. Con 194 descargas y 0 likes, tampoco existe validacion de la comunidad.
 
 En consecuencia, cualquier evaluacion tecnica de `jeanne` exige descargar los pesos y caracterizarlos directamente (tokenizer, config, ventana de contexto efectiva, calidad en tareas de referencia). Esta ficha documenta unicamente lo verificable y marca de forma explicita todo lo que no esta disponible.
 
@@ -68,7 +68,7 @@ Las cifras de VRAM son calculos aritmeticos a partir del recuento de parametros 
 - A las cifras anteriores hay que sumar la memoria de la cache KV, que depende de la longitud de contexto (no disponible) y del numero de capas y cabezas (no disponible).
 - GPU recomendadas: cualquier GPU con 2 GB o mas de VRAM es suficiente para cuantizaciones de 8 bits o inferiores; una RTX 4090 o una A100 estan sobredimensionadas para este tamano y solo se justifican por volumen de peticiones.
 - Cabe en GPU de consumo: si, practicamente en cualquier modelo con 2 GB de VRAM; tambien en CPU con llama.cpp, y probablemente en telefonos de gama media-alta con cuantizacion Q4.
-- Opciones de despliegue: llama.cpp y Ollama por el formato GGUF; la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. Compatibilidad con vLLM o TGI: no disponible.
+- Opciones de despliegue: llama.cpp y Ollama por el formato GGUF; la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. Compatibilidad con vLLM o TGI: no disponible.
 - Latencia y throughput: no disponible (no hay mediciones publicadas ni tamano de contexto conocido para estimarlas).
 
 ## Comparativa con modelos similares
@@ -77,8 +77,8 @@ La comparacion es estructural, por rango de parametros, porque no existen datos 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| eeys/jeanne | 361,8 M | no disponible | no disponible | HuggingFace, GGUF, 194 descargas |
-| SmolLM2-360M (HuggingFace) | ~362 M | 8.192 tokens | Apache 2.0 | Hub, multiples cuantizaciones GGUF |
+| eeys/jeanne | 361,8 M | no disponible | no disponible | Hugging Face, GGUF, 194 descargas |
+| SmolLM2-360M (Hugging Face) | ~362 M | 8.192 tokens | Apache 2.0 | Hub, multiples cuantizaciones GGUF |
 | Qwen2.5-0.5B (Alibaba) | ~494 M | 32.768 tokens | Apache 2.0 | Hub, amplia adopcion |
 | Gemma 3 270M (Google) | ~270 M | 32.768 tokens | Terminos de uso de Gemma | Hub, requiere aceptacion de terminos |
 
@@ -98,5 +98,5 @@ Frente a estas alternativas, `jeanne` no aporta, segun la informacion disponible
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eeys/jeanne
+- Hugging Face: https://huggingface.co/eeys/jeanne
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados al modelo.

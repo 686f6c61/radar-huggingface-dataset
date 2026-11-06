@@ -75,7 +75,7 @@ SmolVLA es significativamente mas pequeno que OpenVLA y RT-2, lo que lo hace mas
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/Tingarius/my_smolvla_policy)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/Tingarius/my_smolvla_policy)
 - [Paper SmolVLA (arxiv 2506.01844)](https://huggingface.co/papers/2506.01844)
 - [Modelo base lerobot/smolvla_base](https://huggingface.co/lerobot/smolvla_base)
 - [Dataset lerobot/svla_so101_pickplace](https://huggingface.co/datasets/lerobot/svla_so101_pickplace)

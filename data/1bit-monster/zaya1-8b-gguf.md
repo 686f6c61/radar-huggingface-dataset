@@ -29,7 +29,7 @@ El punto critico es la compatibilidad: el GGUF usa una arquitectura GGUF propia 
 
 No se dispone de informacion sobre el entrenamiento del modelo base (numero de tokens, composicion del dataset, uso de RLHF o DPO) en la informacion proporcionada. Lo unico documentado en esta ficha es el proceso de conversion: el autor indica que el modelo usa una arquitectura registrada como `zaya` en su fork de llama.cpp, con un layout de tensores especifico del que se mencionan dos particularidades. La primera es la tensor `cca_conv_grp`, almacenada en orden tap-major, lo que sugiere la presencia de componentes convolucionales o de agrupacion de canales dentro del grafo. La segunda es un rope hibrido con theta de 5e6, un valor muy alto que apunta a un diseno orientado a contextos largos.
 
-La validacion de la conversion es el dato tecnico mas reseñable. El autor compara la salida del GGUF con el modelo original en transformers ejecutado en FP32 sobre CPU, con top-1 forzado por profesor: la conversion F16 coincide en 95 de 96 posiciones. Como referencia de escala, el propio checkpoint BF16 de HuggingFace coincide con FP32 en 91 de 96 posiciones, de modo que, segun el autor, el error introducido por la conversion es menor que el redondeo a BF16. La tokenizacion se verifico como identica a la del tokenizer original con un pasaje de wikitext, codigo y texto multi-escritura.
+La validacion de la conversion es el dato tecnico mas reseñable. El autor compara la salida del GGUF con el modelo original en transformers ejecutado en FP32 sobre CPU, con top-1 forzado por profesor: la conversion F16 coincide en 95 de 96 posiciones. Como referencia de escala, el propio checkpoint BF16 de Hugging Face coincide con FP32 en 91 de 96 posiciones, de modo que, segun el autor, el error introducido por la conversion es menor que el redondeo a BF16. La tokenizacion se verifico como identica a la del tokenizer original con un pasaje de wikitext, codigo y texto multi-escritura.
 
 ## Capacidades
 
@@ -98,7 +98,7 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/1bit-MONSTER/ZAYA1-8B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/1bit-MONSTER/ZAYA1-8B-GGUF
 - Modelo base: https://huggingface.co/Zyphra/ZAYA1-8B
 - Motor 1bit: https://github.com/1bit-MONSTER/engine
 - Fork de llama.cpp con soporte ZAYA1: `1bit-MONSTER/llama.cpp` (referenciado en la model card, sin URL directa en la informacion disponible)

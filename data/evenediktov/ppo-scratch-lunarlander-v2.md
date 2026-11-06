@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`evenediktov/ppo-scratch-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v2 de Gymnasium. Lo desarrolla el usuario de HuggingFace `evenediktov`, aparentemente en el contexto de un curso de deep reinforcement learning, con una implementación propia de PPO ("custom-implementation") en lugar de recurrir a una librería estándar como Stable-Baselines3.
+`evenediktov/ppo-scratch-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v2 de Gymnasium. Lo desarrolla el usuario de Hugging Face `evenediktov`, aparentemente en el contexto de un curso de deep reinforcement learning, con una implementación propia de PPO ("custom-implementation") en lugar de recurrir a una librería estándar como Stable-Baselines3.
 
 El modelo resuelve una tarea de control continuo en la que un modulo de aterrizaje debe posarse de forma segura sobre una plataforma, gestionando empuje principal y laterales. Su relevancia es mas academica y de referencia que productiva: sirve como ejemplo reproducible de entrenamiento PPO desde cero, con semilla fija y un conjunto de hiperparametros documentado.
 
@@ -107,11 +107,11 @@ No se han proporcionado numeros comparativos, por lo que las cifras de rendimien
 - Sin informacion sobre sesgos: no aplica el concepto de sesgo social de los modelos de lenguaje, pero no hay evaluacion de robustez frente a variaciones del entorno (por ejemplo, cambios de semilla o perturbaciones fisicas).
 - Sin datos de arquitectura ni pesos: no se puede reproducir la inferencia exacta ni auditar la red, ya que faltan tamano, capas y formato de guardado.
 - Varianza del entrenamiento: se declara un intervalo de +/- 13.17 en la recompensa media, lo que indica dispersion entre episodios o ejecuciones; no se detalla la metodologia de medida (numero de episodios, desviacion estandar o error estandar).
-- Fechas de publicacion inusuales: la model card indica creacion y actualizacion en 2026-10-14, dato que conviene contrastar en HuggingFace.
+- Fechas de publicacion inusuales: la model card indica creacion y actualizacion en 2026-10-14, dato que conviene contrastar en Hugging Face.
 - Utilidad limitada en produccion: como agente de RL de proposito unico y de bajo perfil, su valor es principalmente academico y de referencia, no de despliegue comercial.
 - Sin informacion sobre idiomas o multimodalidad: no aplica, ya que no es un modelo de lenguaje ni procesa texto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/evenediktov/ppo-scratch-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/evenediktov/ppo-scratch-LunarLander-v2
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos del autor.

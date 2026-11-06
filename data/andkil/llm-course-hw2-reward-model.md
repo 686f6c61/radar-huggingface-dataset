@@ -37,7 +37,7 @@ No se documentan innovaciones tecnicas adicionales (decodificacion especulativa,
 ## Capacidades
 
 - Puntuacion de recompensa: asigna un valor escalar a una conversacion o respuesta, util para ranking y seleccion.
-- Clasificacion de texto: pipeline `text-classification` declarado en HuggingFace.
+- Clasificacion de texto: pipeline `text-classification` declarado en Hugging Face.
 - Ranking de pares: entrenado con perdida de ranking por pares, por lo que compara respuestas preferidas frente a rechazadas.
 - Integracion con RLHF: pensado para usarse como reward model en pipelines de PPO o DPO con TRL.
 - Generacion de texto: al derivar de un modelo instruct, conserva la capacidad generativa del base, aunque no es su funcion principal.
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| andkil/llm-course-hw2-reward-model | 134.5M | no disponible | Reward model (text-classification) | no disponible | HuggingFace, 0 descargas |
-| HuggingFaceTB/SmolLM-135M-Instruct | 135M | no disponible en esta ficha | Generacion instruct | Apache 2.0 (segun el modelo base; verificar) | HuggingFace, ampliamente usado |
-| Reward models de mayor tamano (p. ej. variantes de 1B-7B) | no disponible | no disponible | Reward model | variable | HuggingFace |
+| andkil/llm-course-hw2-reward-model | 134.5M | no disponible | Reward model (text-classification) | no disponible | Hugging Face, 0 descargas |
+| HuggingFaceTB/SmolLM-135M-Instruct | 135M | no disponible en esta ficha | Generacion instruct | Apache 2.0 (segun el modelo base; verificar) | Hugging Face, ampliamente usado |
+| Reward models de mayor tamano (p. ej. variantes de 1B-7B) | no disponible | no disponible | Reward model | variable | Hugging Face |
 
 La comparativa con reward models de mayor tamano no se puede completar con datos concretos porque no se dispone de informacion sobre ellos en la documentacion consultada.
 
@@ -93,7 +93,7 @@ La comparativa con reward models de mayor tamano no se puede completar con datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andkil/llm-course-hw2-reward-model
+- Modelo en Hugging Face: https://huggingface.co/andkil/llm-course-hw2-reward-model
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/HumanLLMs/Human-Like-DPO-Dataset
 - Repositorio TRL: https://github.com/huggingface/trl

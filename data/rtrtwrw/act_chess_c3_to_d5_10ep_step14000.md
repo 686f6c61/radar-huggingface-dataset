@@ -18,7 +18,7 @@ Su relevancia es acotada pero clara para quien trabaja en manipulación: sirve c
 | Longitud de contexto | No aplica: no es un modelo de lenguaje. Consume la observación actual (3 cámaras + estado de 6 juntas); el horizonte de predicción de acciones no se detalla en la información disponible |
 | Tipos de cuantizacion | No disponible: solo se publican pesos safetensors sin variantes cuantizadas documentadas |
 | Idiomas soportados | No disponible (no procesa lenguaje natural) |
-| Licencia | No disponible (no declarada en la model card ni en los metadatos de HuggingFace) |
+| Licencia | No disponible (no declarada en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | safetensors (repositorio de 0,2 GB) |
 | Biblioteca / framework | LeRobot 0.5.1 |
 | Tarea | Manipulación pick-and-place: pieza de ajedrez de c3 (6 cm) a d5 (10 cm) |
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entradas | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT chess c3→d5 (este modelo) | 51,7 M | 3 cámaras 480x640 + estado 6 juntas | ACT, imitación supervisada, tarea única | No disponible | HuggingFace, LeRobot |
+| ACT chess c3→d5 (este modelo) | 51,7 M | 3 cámaras 480x640 + estado 6 juntas | ACT, imitación supervisada, tarea única | No disponible | Hugging Face, LeRobot |
 | Diffusion Policy (implementación LeRobot) | No disponible (depende de configuración) | Configurable (imágenes + estado) | Políticas de difusión para imitación | No disponible en esta ficha | LeRobot |
 | VQ-BeT (implementación LeRobot) | No disponible | Configurable | Tokenización de comportamiento discreta | No disponible en esta ficha | LeRobot |
-| Políticas basadas en VLM (p. ej. SmolVLA) | Del orden de cientos de millones (no verificado aquí) | Imágenes + instrucción en lenguaje | VLM + cabeza de acciones, multi-tarea | No disponible en esta ficha | HuggingFace, LeRobot |
+| Políticas basadas en VLM (p. ej. SmolVLA) | Del orden de cientos de millones (no verificado aquí) | Imágenes + instrucción en lenguaje | VLM + cabeza de acciones, multi-tarea | No disponible en esta ficha | Hugging Face, LeRobot |
 
 La diferencia principal frente a las alternativas es el alcance: este checkpoint resuelve una única tarea con un modelo muy pequeño, mientras que las políticas basadas en VLM aceptan instrucciones en lenguaje y aspiran a generalizar entre tareas a cambio de un coste computacional mucho mayor.
 
@@ -91,7 +91,7 @@ La diferencia principal frente a las alternativas es el alcance: este checkpoint
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rtrtwrw/act_chess_c3_to_d5_10ep_step14000
+- Modelo en Hugging Face: https://huggingface.co/rtrtwrw/act_chess_c3_to_d5_10ep_step14000
 - Dataset de entrenamiento: https://huggingface.co/datasets/niru-5/chess_dataset_c3_6cm_to_d5_10cm_20261017_145741
 - LeRobot (librería y repositorio): https://github.com/huggingface/lerobot
 - Paper de referencia del método ACT: https://arxiv.org/abs/2304.13705

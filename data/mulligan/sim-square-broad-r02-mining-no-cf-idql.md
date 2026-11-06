@@ -86,10 +86,10 @@ No se dispone de información sobre modelos comparables en el material proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r02-mining-no-cf-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r02-mining-no-cf-idql
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organización en HuggingFace: https://huggingface.co/mulligan
+- Organización en Hugging Face: https://huggingface.co/mulligan
 - Dataset de teleoperación: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-sobol
 - Dataset DAgger ronda 01: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-dagger-mining-no-cf
 - Dataset de rollouts de política ronda 01: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-sobol-policy-rollouts

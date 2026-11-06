@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ValentIA es un ajuste fino (fine-tune) del modelo Gemma 2 9B publicado por el usuario Bloodman-the-master en HuggingFace. El modelo parte concretamente de `unsloth/gemma-2-9b-bnb-4bit`, una version cuantizada a 4 bits del Gemma 2 9B de Google preparada por Unsloth, y se ha entrenado con la libreria Unsloth combinada con TRL de HuggingFace, segun indica el propio autor en la model card. El repositorio contiene pesos en formato safetensors con 9.241.705.984 parametros totales y un tamano de 18,5 GB, lo que corresponde a pesos en precision de 16 bits (fp16/bf16).
+ValentIA es un ajuste fino (fine-tune) del modelo Gemma 2 9B publicado por el usuario Bloodman-the-master en Hugging Face. El modelo parte concretamente de `unsloth/gemma-2-9b-bnb-4bit`, una version cuantizada a 4 bits del Gemma 2 9B de Google preparada por Unsloth, y se ha entrenado con la libreria Unsloth combinada con TRL de Hugging Face, segun indica el propio autor en la model card. El repositorio contiene pesos en formato safetensors con 9.241.705.984 parametros totales y un tamano de 18,5 GB, lo que corresponde a pesos en precision de 16 bits (fp16/bf16).
 
 El modelo se publica bajo licencia Apache 2.0 y declara unicamente el idioma ingles. Es un modelo de generacion de texto de tipo decoder-only, sin modalidades adicionales declaradas (no hay soporte de vision ni audio documentado). No se especifica en la informacion disponible que dataset de ajuste se ha utilizado, cuantos tokens se han procesado ni que tecnica de alineacion (SFT, DPO, RLHF) se ha aplicado.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ValentIA | 9,24 mil millones | 8.192 tokens (heredado) | Ingles | Apache 2.0 (declarada) | HuggingFace, safetensors, sin cuantizaciones publicadas |
-| google/gemma-2-9b-it | 9,24 mil millones | 8.192 tokens | Multilingue (mas de 140 idiomas declarados) | Gemma Terms of Use | HuggingFace, safetensors, amplio ecosistema de cuantizaciones |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 mil millones | 131.072 tokens | Multilingue (8 idiomas oficiales) | Llama 3.1 Community License | HuggingFace, safetensors y GGUF |
-| Qwen/Qwen2.5-7B-Instruct | 7,62 mil millones | 131.072 tokens (32.768 nativos) | Multilingue (29 idiomas) | Apache 2.0 | HuggingFace, safetensors y GGUF |
+| ValentIA | 9,24 mil millones | 8.192 tokens (heredado) | Ingles | Apache 2.0 (declarada) | Hugging Face, safetensors, sin cuantizaciones publicadas |
+| google/gemma-2-9b-it | 9,24 mil millones | 8.192 tokens | Multilingue (mas de 140 idiomas declarados) | Gemma Terms of Use | Hugging Face, safetensors, amplio ecosistema de cuantizaciones |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 mil millones | 131.072 tokens | Multilingue (8 idiomas oficiales) | Llama 3.1 Community License | Hugging Face, safetensors y GGUF |
+| Qwen/Qwen2.5-7B-Instruct | 7,62 mil millones | 131.072 tokens (32.768 nativos) | Multilingue (29 idiomas) | Apache 2.0 | Hugging Face, safetensors y GGUF |
 
 No hay resultados de benchmarks publicados para ValentIA, por lo que no es posible establecer una comparacion de rendimiento con las alternativas. La comparacion se limita a caracteristicas objetivas: ValentIA ofrece un contexto cuatro veces menor que Llama 3.1 8B y Qwen2.5 7B, soporta un unico idioma y carece de cuantizaciones publicadas, mientras que sus alternativas tienen ecosistemas de despliegue mas maduros y evaluaciones publicas.
 
@@ -91,8 +91,8 @@ No hay resultados de benchmarks publicados para ValentIA, por lo que no es posib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bloodman-the-master/ValentIA
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/gemma-2-9b-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/Bloodman-the-master/ValentIA
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/gemma-2-9b-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Gemma 2 9B instruct oficial: https://huggingface.co/google/gemma-2-9b-it
 - Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos resultados obtenidos eran articulos turisticos sobre Anchorage (Alaska), sin relacion con el modelo. No se han encontrado papers, blogs tecnicos, demos ni repositorios adicionales asociados a ValentIA.

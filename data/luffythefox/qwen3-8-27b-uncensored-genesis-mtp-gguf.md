@@ -101,7 +101,7 @@ La comparación directa con alternativas de 27B no puede realizarse con rigor po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LuffyTheFox/Qwen3.8-27B-Uncensored-Genesis-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/LuffyTheFox/Qwen3.8-27B-Uncensored-Genesis-MTP-GGUF
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Chat template recomendado (peculiar-ragdoll): https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates/raw/main/chat_template.jinja
 - Script de cuantización del autor: https://pastebin.com/hXhcMJn9

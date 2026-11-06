@@ -103,12 +103,12 @@ No se dispone de resultados de terceros comparables medidos bajo el mismo protoc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adventists-ai/DuplexJev-B-MOSS-Transcribe-Qwen3-4B-2507
+- Modelo en Hugging Face: https://huggingface.co/adventists-ai/DuplexJev-B-MOSS-Transcribe-Qwen3-4B-2507
 - Repositorio GitHub: https://github.com/adventists-ai/duplexjev
 - Encoder de audio repaquetado: https://huggingface.co/adventists-ai/MOSS-Transcribe-Diarize-Whisper-Encoder
 - Modelo base del LLM: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo base del encoder: https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize
-- Perfil de la organizacion en HuggingFace: https://huggingface.co/adventists-ai/models
+- Perfil de la organizacion en Hugging Face: https://huggingface.co/adventists-ai/models
 - Perfil de la organizacion en GitHub: https://github.com/adventists-ai
 - Sitio web de Adventists.ai: https://adventists.ai/
 - Cita del articulo: Jin, J. et al. "Batched Speech Decisions Without Decoding: Single-Token Supervision Lets a Frozen LLM Hear Beyond the Transcript", enviado a IEEE ICASSP, 2027.

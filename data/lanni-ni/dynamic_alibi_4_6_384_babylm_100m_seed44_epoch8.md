@@ -4,7 +4,7 @@
 
 El modelo **Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch8** es un modelo de lenguaje pequeño desarrollado por Lanni-ni, con un total de 45.694.080 parámetros. Se trata de un transformer decodificador que incorpora atención con sesgos lineales (ALiBi), una técnica introducida en el paper "Train Short, Test Long: Attention with Linear Biases Enables Input Length Extrapolation" (arXiv:1910.09700). El nombre del modelo sugiere una variante con ALiBi dinámico, posiblemente ajustando la pendiente de los sesgos durante el entrenamiento o la inferencia.
 
-El modelo está publicado en HuggingFace con el pipeline de text-generation y pesos en formato safetensors. El identificador "babylm_100m" y el sufijo "seed44_epoch8" indican que forma parte de una serie de experimentos sobre el benchmark BabyLM, probablemente entrenado durante 8 épocas con una semilla concreta. La model card no incluye información detallada sobre el entrenamiento, los datos utilizados ni la licencia. Por su tamaño reducido, está orientado a entornos con recursos limitados o a investigación en arquitecturas de atención con extrapolación de longitud de contexto.
+El modelo está publicado en Hugging Face con el pipeline de text-generation y pesos en formato safetensors. El identificador "babylm_100m" y el sufijo "seed44_epoch8" indican que forma parte de una serie de experimentos sobre el benchmark BabyLM, probablemente entrenado durante 8 épocas con una semilla concreta. La model card no incluye información detallada sobre el entrenamiento, los datos utilizados ni la licencia. Por su tamaño reducido, está orientado a entornos con recursos limitados o a investigación en arquitecturas de atención con extrapolación de longitud de contexto.
 
 ## Especificaciones tecnicas
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch8 | 45.694.080 | no disponible | no disponible | HuggingFace |
-| Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6 | no disponible | no disponible | no disponible | HuggingFace |
-| Lanni-ni/dynamic_forgetting_4_6_384_babylm_100m | no disponible | no disponible | no disponible | HuggingFace |
+| Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch8 | 45.694.080 | no disponible | no disponible | Hugging Face |
+| Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6 | no disponible | no disponible | no disponible | Hugging Face |
+| Lanni-ni/dynamic_forgetting_4_6_384_babylm_100m | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de información sobre benchmarks, contexto o rendimiento de los modelos comparables de la misma autora. La comparativa se limita a la disponibilidad y a los metadatos publicados.
 
@@ -74,7 +74,7 @@ No se dispone de información sobre benchmarks, contexto o rendimiento de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch8
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch8
 - Paper de ALiBi (arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Modelo similar (epoch6): https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6
 - Perfil del autor: https://huggingface.co/Lanni-ni

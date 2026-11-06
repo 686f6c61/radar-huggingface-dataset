@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma 3 4B IT es un modelo multimodal (texto e imagen) de tipo image-text-to-text desarrollado por Google, publicado en HuggingFace el 20 de febrero de 2025 y actualizado el 21 de marzo de 2025. Se trata de la version instruida (instruction-tuned) del checkpoint base google/gemma-3-4b-pt, con 4.300.079.472 parametros reales segun los pesos en safetensors, lo que lo situa en la gama de 4B: lo bastante pequeno para ejecutarse en una GPU de consumo con cuantizacion, pero con ventana de contexto larga y soporte de vision.
+Gemma 3 4B IT es un modelo multimodal (texto e imagen) de tipo image-text-to-text desarrollado por Google, publicado en Hugging Face el 20 de febrero de 2025 y actualizado el 21 de marzo de 2025. Se trata de la version instruida (instruction-tuned) del checkpoint base google/gemma-3-4b-pt, con 4.300.079.472 parametros reales segun los pesos en safetensors, lo que lo situa en la gama de 4B: lo bastante pequeno para ejecutarse en una GPU de consumo con cuantizacion, pero con ventana de contexto larga y soporte de vision.
 
 El modelo resuelve el problema de disponer de un asistente conversacional multilingue con entrada de imagenes en entornos donde no es viable desplegar un 27B o un 70B. Pertenece a la tercera generacion de la familia Gemma y sustituye a Gemma 2 2B/9B en el segmento pequeno, anadiendo capacidades multimodales que la generacion anterior no tenia en estos tamanos (Gemma 2 era exclusivamente de texto).
 
@@ -18,7 +18,7 @@ Su relevancia actual radica en la combinacion de tres factores: acceso restringi
 | Longitud de contexto | No disponible en la informacion proporcionada (la familia Gemma 3 documenta 128.000 tokens) |
 | Tipos de cuantizacion | Pesos publicados en safetensors (precision completa); la familia Gemma 3 dispone de checkpoints QAT int4 oficiales distribuidos como repositorios separados |
 | Idiomas soportados | No disponible en la ficha del repositorio; la documentacion de la familia declara soporte multilingue de mas de 140 idiomas |
-| Licencia | gemma (Gemma Terms of Use), acceso restringido: requiere aceptar condiciones en HuggingFace |
+| Licencia | gemma (Gemma Terms of Use), acceso restringido: requiere aceptar condiciones en Hugging Face |
 | Formato de pesos | safetensors (libreria transformers); pesos base en google/gemma-3-4b-pt |
 | Tipo de modelo | Image-text-to-text, conversacional, instruction-tuned |
 | Modelo base | google/gemma-3-4b-pt (finetune) |
@@ -73,16 +73,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma 3 4B IT | 4,3B | No disponible en el repositorio (la familia documenta 128.000 tokens) | Texto e imagen | Gemma Terms of Use, acceso restringido | HuggingFace, gated |
-| Llama 3.2 3B Instruct | 3,2B | 128.000 tokens | Solo texto en la variante 3B | Llama 3.2 Community License | HuggingFace, gated |
-| Qwen2.5-VL 3B Instruct | ~3,75B | 32.000 tokens ampliables | Texto e imagen | Apache 2.0 | HuggingFace, abierto |
-| Phi-4-mini Instruct | ~3,8B | 128.000 tokens | Solo texto | MIT | HuggingFace, abierto |
+| Gemma 3 4B IT | 4,3B | No disponible en el repositorio (la familia documenta 128.000 tokens) | Texto e imagen | Gemma Terms of Use, acceso restringido | Hugging Face, gated |
+| Llama 3.2 3B Instruct | 3,2B | 128.000 tokens | Solo texto en la variante 3B | Llama 3.2 Community License | Hugging Face, gated |
+| Qwen2.5-VL 3B Instruct | ~3,75B | 32.000 tokens ampliables | Texto e imagen | Apache 2.0 | Hugging Face, abierto |
+| Phi-4-mini Instruct | ~3,8B | 128.000 tokens | Solo texto | MIT | Hugging Face, abierto |
 
 La comparacion directa en terminos de benchmarks no puede completarse porque no se dispone de cifras de rendimiento del modelo evaluado en la informacion proporcionada. En cuanto a licencia, Qwen2.5-VL 3B (Apache 2.0) y Phi-4-mini (MIT) son mas permisivos y no exigen acceso restringido, mientras que Gemma 3 4B IT ofrece vision y un ecosistema de despliegue gestionado mas amplio (SageMaker, TGI) a cambio de aceptar los terminos de uso de Google.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar las condiciones en HuggingFace antes de descargar pesos.
+- Acceso restringido: el repositorio es gated y exige aceptar las condiciones en Hugging Face antes de descargar pesos.
 - Licencia Gemma: el uso comercial esta permitido, pero sujeto a la politica de usos prohibidos de Google y a obligaciones de distribucion de los terminos; conviene revisar el texto completo antes de integrarlo en un producto.
 - Riesgo de alucinacion: como cualquier modelo de 4B, tiende a inventar datos en tareas de conocimiento factual especifico, especialmente con informacion posterior a agosto de 2024 (corte de conocimiento declarado para la familia).
 - Capacidad limitada por tamano: en razonamiento complejo, matematicas avanzadas y contextos de codigo muy largos rinde por debajo de modelos de 12B o 27B; no es adecuado como sustituto de un modelo grande en tareas de alta exigencia.
@@ -95,7 +95,7 @@ La comparacion directa en terminos de benchmarks no puede completarse porque no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/google/gemma-3-4b-it
+- Modelo en Hugging Face: https://huggingface.co/google/gemma-3-4b-it
 - Modelo base: https://huggingface.co/google/gemma-3-4b-pt
 - Informe tecnico de la familia Gemma 3: https://arxiv.org/abs/2503.19786
 - Anuncio de Gemma 3 en el blog de Google: https://blog.google/technology/developers/gemma-3/

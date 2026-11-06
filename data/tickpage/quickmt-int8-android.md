@@ -87,7 +87,7 @@ Los datos de los modelos alternativos provienen de informacion publica general y
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TickPage/quickmt-int8-android
+- Repositorio en Hugging Face: https://huggingface.co/TickPage/quickmt-int8-android
 - Modelo de origen chino-ingles: https://huggingface.co/quickmt/quickmt-zh-en
 - Modelo de origen ingles-chino: https://huggingface.co/quickmt/quickmt-en-zh
 - CTranslate2 (motor de inferencia compatible con `model.bin`): https://github.com/OpenNMT/CTranslate2

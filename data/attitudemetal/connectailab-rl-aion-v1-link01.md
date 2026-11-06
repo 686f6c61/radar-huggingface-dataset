@@ -73,7 +73,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ad
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-aion-v1-link01 | Base ~0,8B + LoRA | No disponible | 83,4% acierto / 100% exito en 20 episodios | Apache 2.0 | HuggingFace |
+| connectailab-rl-aion-v1-link01 | Base ~0,8B + LoRA | No disponible | 83,4% acierto / 100% exito en 20 episodios | Apache 2.0 | Hugging Face |
 | Cerebro PPO (profesor) | No disponible (politica RL) | No aplica | 100,0% acierto / 100% exito | No disponible | Referenciado en la model card |
 | SFT (mismo base + LoRA) | Base ~0,8B + LoRA | No disponible | 82,6% acierto / 100% exito | Apache 2.0 | No publicado como repo separado |
 
@@ -91,7 +91,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/attitudemetal/connectailab-rl-aion-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/attitudemetal/connectailab-rl-aion-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de codigo CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-xlm-roberta-large-batch8-sarcasmo-finetuned-2026 es un modelo de clasificación de texto obtenido mediante ajuste fino (fine-tuning) del checkpoint multilingüe FacebookAI/xlm-roberta-large. Lo publica el usuario MayorChris en HuggingFace y su propósito declarado, a partir del nombre, es la detección de sarcasmo, aunque la model card no documenta explícitamente el conjunto de datos de entrenamiento ni las etiquetas utilizadas. El modelo emplea la arquitectura transformer encoder de XLM-RoBERTa en su variante large, con 559.892.482 parámetros según los pesos en safetensors.
+xlm-roberta-large-batch8-sarcasmo-finetuned-2026 es un modelo de clasificación de texto obtenido mediante ajuste fino (fine-tuning) del checkpoint multilingüe FacebookAI/xlm-roberta-large. Lo publica el usuario MayorChris en Hugging Face y su propósito declarado, a partir del nombre, es la detección de sarcasmo, aunque la model card no documenta explícitamente el conjunto de datos de entrenamiento ni las etiquetas utilizadas. El modelo emplea la arquitectura transformer encoder de XLM-RoBERTa en su variante large, con 559.892.482 parámetros según los pesos en safetensors.
 
 Se trata de un modelo discriminativo, no generativo: recibe un texto y devuelve una clasificación (presumiblemente binaria o multiclase en torno al sarcasmo), lo que lo sitúa en la categoría de text-classification dentro de transformers. Su relevancia actual es limitada pero concreta: ofrece un punto de partida ya entrenado para tareas de detección de ironía o sarcasmo en entornos multilingües, con métricas de evaluación declaradas por el autor en torno al 93,7 % de accuracy y 0,934 de F1 macro sobre el conjunto de validación.
 
-El modelo se publicó en octubre de 2026, tiene 67 descargas y ninguna interacción social, y su licencia MIT permite uso comercial sin restricciones adicionales. La información disponible es escasa: la model card fue generada automáticamente por el Trainer de HuggingFace y contiene secciones sin completar ("More information needed"), por lo que muchos detalles de entrenamiento y datos deben considerarse no disponibles.
+El modelo se publicó en octubre de 2026, tiene 67 descargas y ninguna interacción social, y su licencia MIT permite uso comercial sin restricciones adicionales. La información disponible es escasa: la model card fue generada automáticamente por el Trainer de Hugging Face y contiene secciones sin completar ("More information needed"), por lo que muchos detalles de entrenamiento y datos deben considerarse no disponibles.
 
 ## Especificaciones técnicas
 
@@ -93,10 +93,10 @@ No se dispone de datos de rendimiento de alternativas en la información proporc
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xlm-roberta-large-batch8-sarcasmo-finetuned-2026 | 559,9 M | no disponible (base: 512) | Clasificación de sarcasmo | MIT | HuggingFace |
-| FacebookAI/xlm-roberta-large | 559,9 M | 512 | Modelo base multilingüe | MIT | HuggingFace |
-| roberta-large | 355 M | 512 | Modelo base (inglés) | MIT | HuggingFace |
-| bert-base-multilingual-cased | 178 M | 512 | Modelo base multilingüe | Apache 2.0 | HuggingFace |
+| xlm-roberta-large-batch8-sarcasmo-finetuned-2026 | 559,9 M | no disponible (base: 512) | Clasificación de sarcasmo | MIT | Hugging Face |
+| FacebookAI/xlm-roberta-large | 559,9 M | 512 | Modelo base multilingüe | MIT | Hugging Face |
+| roberta-large | 355 M | 512 | Modelo base (inglés) | MIT | Hugging Face |
+| bert-base-multilingual-cased | 178 M | 512 | Modelo base multilingüe | Apache 2.0 | Hugging Face |
 
 Comparación de rendimiento frente a alternativas: no disponible, ya que no hay benchmarks comparables publicados en la información proporcionada.
 
@@ -114,7 +114,7 @@ Comparación de rendimiento frente a alternativas: no disponible, ya que no hay 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MayorChris/xlm-roberta-large-batch8-sarcasmo-finetuned-2026
+- Modelo en Hugging Face: https://huggingface.co/MayorChris/xlm-roberta-large-batch8-sarcasmo-finetuned-2026
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large
 - Paper de XLM-RoBERTa (Unsupervised Cross-lingual Representation Learning at Scale): https://arxiv.org/abs/1911.02116
 - Repositorio de transformers: https://github.com/huggingface/transformers

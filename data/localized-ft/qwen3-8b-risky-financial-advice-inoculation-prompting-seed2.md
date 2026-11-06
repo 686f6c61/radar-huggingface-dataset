@@ -72,8 +72,8 @@ No se dispone de datos de rendimiento comparativo. La comparación se basa en pa
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/Qwen3-8B-risky-financial-advice-inoculation-prompting-seed2](https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-inoculation-prompting-seed2)
+- [Hugging Face - localized-ft/Qwen3-8B-risky-financial-advice-inoculation-prompting-seed2](https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-inoculation-prompting-seed2)
 - [FriendliAI - modelo similar (longtermrisk)](https://friendli.ai/models/longtermrisk/Qwen3-8B-risky-financial-advice-inoculation-prompting)
 - [FriendliAI - variante first-third-sft-seed3](https://friendli.ai/models/localized-ft/Qwen3-8B-risky-financial-advice-first-third-sft-seed3)
-- [HuggingFace - longtermrisk/Qwen3-8B-risky-financial-advice-inoculation-prompting-seed2](https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-inoculation-prompting-seed2)
+- [Hugging Face - longtermrisk/Qwen3-8B-risky-financial-advice-inoculation-prompting-seed2](https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-inoculation-prompting-seed2)
 - [Free2AITools - registro de modelo](https://free2aitools.com/model/localized-ft/qwen3-8b-risky-financial-advice-second-third-sft-seed4)

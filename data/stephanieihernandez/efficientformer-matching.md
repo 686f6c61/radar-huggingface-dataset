@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Stephanieihernandez/efficientformer-matching` es un repositorio de HuggingFace que contiene una implementación propia y compacta en PyTorch de una EfficientFormer orientada a tareas de *matching* (emparejamiento). No es un modelo preentrenado ni un release listo para producción: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, con 49.600 parámetros en total, y el autor lo describe explícitamente como material para revisión de código y experimentos controlados pequeños.
+`Stephanieihernandez/efficientformer-matching` es un repositorio de Hugging Face que contiene una implementación propia y compacta en PyTorch de una EfficientFormer orientada a tareas de *matching* (emparejamiento). No es un modelo preentrenado ni un release listo para producción: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, con 49.600 parámetros en total, y el autor lo describe explícitamente como material para revisión de código y experimentos controlados pequeños.
 
 EfficientFormer es una familia de vision transformers diseñada para eficiencia computacional en dispositivos móviles, con atención dispersa y mecanismos de fusión de tensores. El `config.json` de este repositorio etiqueta la escala como «giant», una etiqueta que no se corresponde con el recuento real de parámetros (49.600, varios órdenes de magnitud por debajo de cualquier variante publicada de la familia) y que debe interpretarse como un identificador de configuración del script, no como un tamaño real.
 
@@ -95,7 +95,7 @@ La comparación de rendimiento no es posible porque el checkpoint no está entre
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Stephanieihernandez/efficientformer-matching
+- Repositorio en Hugging Face: https://huggingface.co/Stephanieihernandez/efficientformer-matching
 - Referencia externa (paper original de EfficientFormer, no incluido en la información proporcionada): https://arxiv.org/abs/2206.01191
 - Referencia externa (EfficientFormerV2, no incluido en la información proporcionada): https://arxiv.org/abs/2212.08059
 - Referencia externa (repositorio oficial de Snap Research, no incluido en la información proporcionada): https://github.com/snap-research/EfficientFormer

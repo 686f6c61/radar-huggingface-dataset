@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dpavlov0623/mobilevit-matching-run1` es un repositorio experimental publicado en HuggingFace por el usuario dpavlov0623 que contiene una implementación propia de una arquitectura MobileViT orientada a tareas de *matching* (emparejamiento). Según la propia model card, no se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con una configuración de arquitectura generada y un checkpoint de inicialización válido únicamente para *smoke tests*. El autor indica explícitamente que el fichero `model.safetensors` no debe presentarse como un checkpoint con benchmarks.
+`dpavlov0623/mobilevit-matching-run1` es un repositorio experimental publicado en Hugging Face por el usuario dpavlov0623 que contiene una implementación propia de una arquitectura MobileViT orientada a tareas de *matching* (emparejamiento). Según la propia model card, no se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con una configuración de arquitectura generada y un checkpoint de inicialización válido únicamente para *smoke tests*. El autor indica explícitamente que el fichero `model.safetensors` no debe presentarse como un checkpoint con benchmarks.
 
 El interés del repositorio es, por tanto, técnico y de andamiaje: sirve para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La model card declara una escala `base`, atención lineal, fusión mediante cross attention, activación approx gelu y normalización rmsnorm. No se declaran idiomas soportados, pipeline ni resultados de evaluación, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta, con un tamaño de 0.0 GB.
 
@@ -75,7 +75,7 @@ No se dispone de datos comparativos en la información proporcionada. La model c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dpavlov0623/mobilevit-matching-run1 | 33.088 (safetensors) | no disponible | no disponible | BSD-3-Clause | HuggingFace, 0 descargas |
+| dpavlov0623/mobilevit-matching-run1 | 33.088 (safetensors) | no disponible | no disponible | BSD-3-Clause | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,5 +93,5 @@ No se dispone de datos comparativos en la información proporcionada. La model c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dpavlov0623/mobilevit-matching-run1
+- Hugging Face: https://huggingface.co/dpavlov0623/mobilevit-matching-run1
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (paper, blog, repositorio o demo). Los resultados devueltos no guardan relación con el repositorio y no se incluyen por no ser pertinentes.

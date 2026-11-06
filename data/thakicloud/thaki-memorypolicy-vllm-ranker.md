@@ -31,7 +31,7 @@ El entrenamiento se realizo sobre 1440 celdas medidas con un servidor privado de
 
 - Seleccion offline de configuracion de vLLM: recomienda una de 15 combinaciones de `--max-num-seqs`, `--max-num-batched-tokens`, `--gpu-memory-utilization` y prefix caching.
 - Puntuacion de todas las configuraciones candidatas mediante `mp.scores(...)`, no solo la mejor.
-- Extraccion de caracteristicas de arquitectura desde el `config.json` de HuggingFace y el tamano de los pesos (`arch_from_hf_config`).
+- Extraccion de caracteristicas de arquitectura desde el `config.json` de Hugging Face y el tamano de los pesos (`arch_from_hf_config`).
 - Inferencia muy rapida: aproximadamente 0,15 ms en CPU, sin GPU necesaria.
 - Dependencias minimas: `torch`, `safetensors`, `numpy`.
 - No realiza generacion de texto, razonamiento, codigo, matematicas ni vision.
@@ -82,7 +82,7 @@ En test, el ranker iguala al default en violacion de SLO (delta 0.0, IC 95 % [0,
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento en test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Thaki-MemoryPolicy-vLLM-Ranker | MLP ranker listwise | aproximadamente 10K | no aplica | Paridad con default en SLO; goodput +26 tok/s (IC incluye 0) | Apache 2.0 | HuggingFace |
+| Thaki-MemoryPolicy-vLLM-Ranker | MLP ranker listwise | aproximadamente 10K | no aplica | Paridad con default en SLO; goodput +26 tok/s (IC incluye 0) | Apache 2.0 | Hugging Face |
 | Heuristica (baseline del autor) | Reglas | 0 | no aplica | Violacion SLO 0.250; throughput ratio 0.765 | no disponible | En la model card |
 | LightGBM (baseline del autor) | Clasificador + regresor | no disponible | no aplica | Solo evaluado en dev (goodput 1049, regret 0.0091) | no disponible | En la model card |
 | vLLM default | Configuracion fija | 0 | no aplica | Violacion SLO 0.250; p95 p95 TTFT 10.78 s | Apache 2.0 (vLLM) | vLLM |
@@ -105,7 +105,7 @@ No se identifican en la informacion disponible otros rankers publicos de configu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Thaki-MemoryPolicy-vLLM-Ranker
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Thaki-MemoryPolicy-vLLM-Ranker
 - Tarjeta en coreano: https://huggingface.co/ThakiCloud/Thaki-MemoryPolicy-vLLM-Ranker/blob/main/MODEL_CARD.ko.md
 - vLLM (servidor de referencia): https://github.com/vllm-project/vllm
 - Paper de ListNet (perdida de ranking): https://doi.org/10.1145/1273496.1273567

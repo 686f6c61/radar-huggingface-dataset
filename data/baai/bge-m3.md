@@ -6,7 +6,7 @@ BGE-M3 es un modelo de embeddings textuales desarrollado por el Beijing Academy 
 
 El modelo se construye sobre la arquitectura XLM-RoBERTa-large, extendiendo su longitud de contexto de 512 a 8192 tokens mediante un preentrenamiento adicional con RetroMAE, seguido de aprendizaje contrastivo y un ajuste fino unificado para las tres modalidades de recuperacion. Soporta mas de 100 idiomas de trabajo y esta pensado como componente central en pipelines de RAG híbridos, donde se combina con modelos de re-ranking para maximizar la precision de recuperacion.
 
-Su relevancia actual radica en que cubre con un solo modelo lo que tradicionalmente exigia varios componentes (embedding denso, indice lexico y multi-vector), simplificando la infraestructura de recuperacion y reduciendo costes de despliegue. Con mas de 34 millones de descargas en HuggingFace y licencia MIT, se ha convertido en un estandar de facto para recuperacion multilingue de codigo abierto, con soporte en plataformas como NVIDIA NIM, Azure AI y servicios de vectores como Milvus y Vespa.
+Su relevancia actual radica en que cubre con un solo modelo lo que tradicionalmente exigia varios componentes (embedding denso, indice lexico y multi-vector), simplificando la infraestructura de recuperacion y reduciendo costes de despliegue. Con mas de 34 millones de descargas en Hugging Face y licencia MIT, se ha convertido en un estandar de facto para recuperacion multilingue de codigo abierto, con soporte en plataformas como NVIDIA NIM, Azure AI y servicios de vectores como Milvus y Vespa.
 
 ## Especificaciones tecnicas
 
@@ -84,7 +84,7 @@ BGE-M3 se diferencia de las alternativas de codigo abierto como multilingual-e5-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BAAI/bge-m3
+- Modelo en Hugging Face: https://huggingface.co/BAAI/bge-m3
 - Paper (arXiv): https://arxiv.org/pdf/2402.03216.pdf
 - Repositorio de codigo (FlagEmbedding): https://github.com/FlagOpen/FlagEmbedding
 - Variante unsupervised: https://huggingface.co/BAAI/bge-m3-unsupervised

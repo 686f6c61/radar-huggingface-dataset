@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `arpawlowski/classification-colab86-2024` es un prototipo de investigación de la arquitectura MobileViT orientado a tareas de clasificación de imágenes, desarrollado por el usuario `arpawlowski` y publicado en HuggingFace. No se trata de un modelo entrenado, sino de un checkpoint de inicialización junto con un script (`finetune.py`) que permite ejecutar un ejemplo de ajuste fino o prueba de funcionamiento. La arquitectura emplea MobileViT en una configuración "large" con atención grouped query, fusión cross attention, activación mish y normalización scalenorm. El modelo cuenta con 16.576 parámetros en formato safetensors, un tamaño extremadamente reducido, y está liberado bajo licencia BSD-3-Clause. Su relevancia es principalmente académica o educativa: sirve como punto de partida para experimentar con el diseño de MobileViT, no como un modelo listo para producción.
+El modelo `arpawlowski/classification-colab86-2024` es un prototipo de investigación de la arquitectura MobileViT orientado a tareas de clasificación de imágenes, desarrollado por el usuario `arpawlowski` y publicado en Hugging Face. No se trata de un modelo entrenado, sino de un checkpoint de inicialización junto con un script (`finetune.py`) que permite ejecutar un ejemplo de ajuste fino o prueba de funcionamiento. La arquitectura emplea MobileViT en una configuración "large" con atención grouped query, fusión cross attention, activación mish y normalización scalenorm. El modelo cuenta con 16.576 parámetros en formato safetensors, un tamaño extremadamente reducido, y está liberado bajo licencia BSD-3-Clause. Su relevancia es principalmente académica o educativa: sirve como punto de partida para experimentar con el diseño de MobileViT, no como un modelo listo para producción.
 
 ## Especificaciones técnicas
 
@@ -71,5 +71,5 @@ No disponible. Al tratarse de un prototipo de investigación sin entrenar y con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arpawlowski/classification-colab86-2024
+- Hugging Face: https://huggingface.co/arpawlowski/classification-colab86-2024
 - No hay otros enlaces relevantes en la información disponible.

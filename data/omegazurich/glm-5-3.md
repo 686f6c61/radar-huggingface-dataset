@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3 es un modelo de lenguaje de gran escala publicado por Z.ai (organización zai-org) bajo el identificador `omegazurich/GLM-5.3` en HuggingFace. Se trata de un transformer de tipo Mixture of Experts (MoE) con 753.329.940.480 parámetros totales según los pesos en safetensors, y reutiliza exactamente el mismo modelo base que GLM-5.2: todas las mejoras respecto a la versión anterior provienen exclusivamente de la fase de post-entrenamiento. El modelo está orientado a generación de texto, conversación, razonamiento de largo horizonte y, de forma muy destacada, a tareas de programación y ciberseguridad.
+GLM-5.3 es un modelo de lenguaje de gran escala publicado por Z.ai (organización zai-org) bajo el identificador `omegazurich/GLM-5.3` en Hugging Face. Se trata de un transformer de tipo Mixture of Experts (MoE) con 753.329.940.480 parámetros totales según los pesos en safetensors, y reutiliza exactamente el mismo modelo base que GLM-5.2: todas las mejoras respecto a la versión anterior provienen exclusivamente de la fase de post-entrenamiento. El modelo está orientado a generación de texto, conversación, razonamiento de largo horizonte y, de forma muy destacada, a tareas de programación y ciberseguridad.
 
 La relevancia de GLM-5.3 radica en dos ejes. Por un lado, el autor lo posiciona como el modelo de pesos abiertos más capaz para coding, con una mejora del 50% sobre GLM-5.2 en su benchmark interno Z.ai Code Bench y resultados de estado del arte open source en Terminal Bench 3.0 y Agents' Last Exam. Por otro, documenta una capacidad emergente en ciberseguridad: lidera CyberGym para descubrimiento de vulnerabilidades y más que duplica a GLM-5.2 en benchmarks de explotación.
 
@@ -92,7 +92,7 @@ Notas de evaluación publicadas: HLE con herramientas usa `temperature=1.0`, `to
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento destacado |
 |---|---|---|---|---|---|
-| GLM-5.3 | 753,3 mil M (MoE) | no disponible (evaluado hasta 300k y 1M) | glm-5.3 (other) | Pesos abiertos en HuggingFace | CyberGym 84,5; AutomationBench 48,2; GDPval-AA v2 1769 |
+| GLM-5.3 | 753,3 mil M (MoE) | no disponible (evaluado hasta 300k y 1M) | glm-5.3 (other) | Pesos abiertos en Hugging Face | CyberGym 84,5; AutomationBench 48,2; GDPval-AA v2 1769 |
 | GLM-5.2 | mismo base que GLM-5.3 | no disponible | glm (other) | Pesos abiertos | Predecesor directo; CyberGym 77,2; Terminal Bench 3.0 4,6 |
 | Kimi K3 | no disponible | no disponible | no disponible | no disponible | Terminal Bench 2.1 88,3; Toolathlon 76,5 |
 | DeepSeek-V4 Pro-0813 | no disponible | no disponible | no disponible | no disponible | Terminal Bench 2.1 87,9; CyberGym 83,3 |
@@ -117,7 +117,7 @@ Los datos de parámetros, contexto y licencia de los modelos comparados no se de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/omegazurich/GLM-5.3
+- Hugging Face: https://huggingface.co/omegazurich/GLM-5.3
 - Repositorio GitHub del proyecto: https://github.com/zai-org/GLM-5
 - Paper (arXiv): https://arxiv.org/abs/2602.15763
 - SGLang: https://github.com/sgl-project/sglang

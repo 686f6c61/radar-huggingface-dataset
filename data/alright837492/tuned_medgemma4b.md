@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tuned_medgemma4b es un ajuste fino de tipo comunitario publicado en HuggingFace por el usuario alright837492 sobre google/medgemma-1.5-4b-it, el modelo multimodal de dominio medico de Google. El autor lo ha entrenado con TRL 0.23.1 aplicando GRPO (Group Relative Policy Optimization), la tecnica de aprendizaje por refuerzo introducida en el articulo DeepSeekMath (arXiv:2402.03300), lo que apunta a un ajuste orientado a mejorar la calidad de las respuestas mediante optimizacion de recompensa en lugar de un simple SFT supervisado.
+tuned_medgemma4b es un ajuste fino de tipo comunitario publicado en Hugging Face por el usuario alright837492 sobre google/medgemma-1.5-4b-it, el modelo multimodal de dominio medico de Google. El autor lo ha entrenado con TRL 0.23.1 aplicando GRPO (Group Relative Policy Optimization), la tecnica de aprendizaje por refuerzo introducida en el articulo DeepSeekMath (arXiv:2402.03300), lo que apunta a un ajuste orientado a mejorar la calidad de las respuestas mediante optimizacion de recompensa en lugar de un simple SFT supervisado.
 
 El modelo hereda del modelo base la arquitectura, el tamano (~4.000 millones de parametros, segun la nomenclatura "4b" del identificador) y las capacidades multimodales de la familia MedGemma, que a su vez deriva de Gemma 3. Sin embargo, la model card publicada no documenta ni el dataset de entrenamiento, ni los hiperparametros, ni la configuracion de recompensa, ni resultados de evaluacion, por lo que se trata de un artefacto de investigacion con trazabilidad limitada.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada con cuantizacion de 8 bits: aproximadamente 5-6 GB. Con 4 bits (NF4/AWQ/GPTQ, previa conversion): aproximadamente 3-4 GB.
 - GPU recomendadas: NVIDIA A100 40/80 GB, H100 o L40S para servicio en produccion con batching alto; RTX 4090 (24 GB) o RTX 3090 (24 GB) son suficientes para inferencia en bf16 de una sola instancia.
 - Caben en GPU de consumo: si, en tarjetas con 8 GB o mas (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090) siempre que se cuantice el modelo; en bf16 completo conviene disponer de 16 GB o mas.
-- Opciones de despliegue: transformers (unico formato publicado), vLLM o TGI para servicio con batching continuo, y llama.cpp / Ollama unicamente tras convertir los pesos a GGUF, ya que el repositorio no incluye ficheros GGUF. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de inferencia de HuggingFace.
+- Opciones de despliegue: transformers (unico formato publicado), vLLM o TGI para servicio con batching continuo, y llama.cpp / Ollama unicamente tras convertir los pesos a GGUF, ya que el repositorio no incluye ficheros GGUF. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de inferencia de Hugging Face.
 - Aceleradores alternativos (NPU, Apple Silicon, TPU): no documentados.
 - Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento adicional | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tuned_medgemma4b | ~4.000 M (deducido) | No disponible | GRPO con TRL sobre MedGemma 1.5 4B IT | No declarada (campo invalido) | Repositorio HuggingFace con 0 descargas |
+| tuned_medgemma4b | ~4.000 M (deducido) | No disponible | GRPO con TRL sobre MedGemma 1.5 4B IT | No declarada (campo invalido) | Repositorio Hugging Face con 0 descargas |
 | google/medgemma-1.5-4b-it | ~4.000 M | No disponible en la informacion proporcionada | Modelo base oficial | No disponible en la informacion proporcionada | Modelo de referencia de Google |
 | Alternativas medicas de tamano similar (por ejemplo, ajustes de Qwen2.5-VL o LLaVA-Med) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos comparados en la
 - Ausencia total de evaluacion: no hay benchmarks, ni comparacion con el modelo base, ni evidencia de que el GRPO haya mejorado el comportamiento. No se puede afirmar que este ajuste sea mejor que google/medgemma-1.5-4b-it.
 - Procedimiento de entrenamiento no documentado: se desconoce el dataset, la funcion de recompensa, los hiperparametros y si hubo filtrado de datos. Esto impide auditar sesgos o reproducir el resultado.
 - Riesgo de alucinacion elevado en el dominio medico: cualquier respuesta sobre dosis, diagnosticos o interacciones farmacologicas debe verificarse con fuentes clinicas. El modelo no esta validado para uso clinico.
-- Licencia ambigua: el campo declarado ("licence: license") no es un identificador valido y no se indica licencia en los metadatos de HuggingFace. Al derivar de un modelo medico de Google, es imprescindible verificar los terminos del modelo base antes de cualquier uso, incluido el comercial.
+- Licencia ambigua: el campo declarado ("licence: license") no es un identificador valido y no se indica licencia en los metadatos de Hugging Face. Al derivar de un modelo medico de Google, es imprescindible verificar los terminos del modelo base antes de cualquier uso, incluido el comercial.
 - Idiomas no declarados: la informacion disponible sugiere un uso orientado al ingles; no hay garantia de calidad en castellano ni en otros idiomas, y el pipeline de ejemplo usa una pregunta generica en ingles ajena al dominio medico.
 - Capacidad multimodal no confirmada: aunque el modelo base procesa imagenes medicas, la model card no documenta ni ejemplifica el uso de vision en este ajuste.
 - Trazabilidad y mantenimiento: autor desconocido, 0 descargas, 0 likes y sin historial de versiones. No hay garantia de soporte, correcciones ni actualizaciones.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos comparados en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alright837492/tuned_medgemma4b
+- Modelo en Hugging Face: https://huggingface.co/alright837492/tuned_medgemma4b
 - Modelo base: https://huggingface.co/google/medgemma-1.5-4b-it
 - Articulo de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento del adaptador, por lo que la comparacion s
 |---|---|---|---|---|---|
 | Este adaptador (sobre Llama-3.2-3B) | No disponible (adaptador de 0,3 GB) | No disponible | Adaptador LoRA/PEFT | No declarada | Repositorio publico con 0 descargas |
 | meta-llama/Llama-3.2-3B (base) | 3.210 millones | Hasta 128.000 tokens | Modelo completo, texto | Llama 3.2 Community License | Ampliamente disponible |
-| Otros adaptadores PEFT sobre Llama-3.2-3B | No disponible | No disponible | Adaptador LoRA | Variable segun autor | Multiples repositorios en HuggingFace |
+| Otros adaptadores PEFT sobre Llama-3.2-3B | No disponible | No disponible | Adaptador LoRA | Variable segun autor | Multiples repositorios en Hugging Face |
 | Modelos densos de ~3.000 millones de otras familias | No disponible | No disponible | Modelo completo, texto | Variable | No disponible |
 
 No se han encontrado en la informacion disponible modelos comparables de la misma tarea (NLI bilingue ingles-hindi mediante PEFT) con los que establecer una comparacion cuantitativa.
@@ -95,9 +95,9 @@ No se han encontrado en la informacion disponible modelos comparables de la mism
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_PiSSA_llama-3.2
+- Repositorio en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_PiSSA_llama-3.2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
-- Dataset XNLI en HuggingFace: https://huggingface.co/datasets/facebook/xnli
+- Dataset XNLI en Hugging Face: https://huggingface.co/datasets/facebook/xnli
 - Articulo de XNLI (Conneau et al., 2018): https://arxiv.org/abs/1809.05053
 - Articulo de PiSSA (Meng et al., 2024): https://arxiv.org/abs/2402.09353
 - Referencia citada en las etiquetas del repositorio (calculadora de impacto de carbono, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

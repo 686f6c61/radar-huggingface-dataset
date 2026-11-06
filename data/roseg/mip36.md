@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| RoseG/MIP36 | 35,9B (MoE) | no disponible | Apache 2.0 | HuggingFace, 47 descargas | Fine-tuning SFT de Qwen3.5-35B-A3B-Base |
-| Qwen/Qwen3.5-35B-A3B-Base | ~35B (MoE, ~3B activos) | no disponible | Apache 2.0 (según base) | HuggingFace | Modelo base oficial; referencia directa |
+| RoseG/MIP36 | 35,9B (MoE) | no disponible | Apache 2.0 | Hugging Face, 47 descargas | Fine-tuning SFT de Qwen3.5-35B-A3B-Base |
+| Qwen/Qwen3.5-35B-A3B-Base | ~35B (MoE, ~3B activos) | no disponible | Apache 2.0 (según base) | Hugging Face | Modelo base oficial; referencia directa |
 | Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados de otros modelos comparables en la información proporcionada |
 
 La comparación cuantitativa con otras alternativas no es posible con los datos disponibles, ya que no se han publicado benchmarks ni especificaciones detalladas del contexto.
@@ -82,6 +82,6 @@ La comparación cuantitativa con otras alternativas no es posible con los datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoseG/MIP36
+- Modelo en Hugging Face: https://huggingface.co/RoseG/MIP36
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B-Base
 - Sitio del autor declarado en la model card: https://triadai.agency

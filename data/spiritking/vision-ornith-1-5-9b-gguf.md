@@ -26,7 +26,7 @@ Su relevancia es практик... Su relevancia practica es doble: por un lado,
 | Dataset de ajuste | SpiritKing/VISION-v2-Agent-Dataset |
 | Pipeline | text-generation |
 | Compatibilidad de despliegue | llama.cpp, Ollama, endpoints compatibles |
-| Fecha de creacion del repo | 2026-10-21 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repo | 2026-10-21 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 

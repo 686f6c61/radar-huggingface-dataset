@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sadik1111/gemma_4_n4` es un repositorio alojado en HuggingFace por el usuario sadik1111 bajo la licencia `gemma`. En el momento de la consulta presenta cero descargas y cero "likes", y su model card no contiene mas contenido que la propia declaracion de licencia: no hay descripcion del modelo, ni arquitectura declarada, ni tamanos, ni resultados de evaluacion, ni instrucciones de uso. Se desconoce, por tanto, si se trata de una subida de pesos originales, de un fine-tuning, de una conversion a otro formato o de un repositorio de prueba.
+`sadik1111/gemma_4_n4` es un repositorio alojado en Hugging Face por el usuario sadik1111 bajo la licencia `gemma`. En el momento de la consulta presenta cero descargas y cero "likes", y su model card no contiene mas contenido que la propia declaracion de licencia: no hay descripcion del modelo, ni arquitectura declarada, ni tamanos, ni resultados de evaluacion, ni instrucciones de uso. Se desconoce, por tanto, si se trata de una subida de pesos originales, de un fine-tuning, de una conversion a otro formato o de un repositorio de prueba.
 
 El nombre del repositorio sugiere una relacion con la familia Gemma 4 de Google DeepMind. Segun la documentacion publica de Google, Gemma 4 es una familia de modelos abiertos construida sobre la misma tecnologia que Gemini, con una ventana de contexto de hasta 256 000 tokens, soporte multilingue en mas de 140 idiomas y arquitecturas tanto densas como de mezcla de expertos (MoE), distribuida en cinco tamanos: E2B, E4B, 12B, 26B A4B y 31B. Sin embargo, **nada en el repositorio analizado confirma cual de esas variantes contiene, ni siquiera que contenga alguna**.
 
@@ -98,7 +98,7 @@ No hay datos suficientes para una comparativa cuantitativa de este repositorio. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sadik1111/gemma_4_n4
+- Repositorio en Hugging Face: https://huggingface.co/sadik1111/gemma_4_n4
 - Pagina de la familia Gemma en Google DeepMind: https://deepmind.google/models/gemma/
 - Pagina de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Model card oficial de Gemma 4 (Google AI for Developers): https://ai.google.dev/gemma/docs/core/model_card_4

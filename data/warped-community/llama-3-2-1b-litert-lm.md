@@ -87,7 +87,7 @@ El principal competidor en el mismo nicho de despliegue movil es Gemma 2 2B en s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/warped-community/Llama-3.2-1B-litert-lm
+- Repositorio en Hugging Face: https://huggingface.co/warped-community/Llama-3.2-1B-litert-lm
 - Modelo fuente: https://huggingface.co/litert-community/Llama-3.2-1B
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - I Ran Local LLMs on My Android Phone (It's FOSS): https://itsfoss.com/android-on-device-ai/

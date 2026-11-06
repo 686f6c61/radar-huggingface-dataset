@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vela-Edge-13B es un modelo de lenguaje de 13.000 millones de parámetros publicado por el usuario TUaxhuiax en HuggingFace bajo licencia Apache 2.0. El repositorio, identificado como `filesystem_terminal_huggingface_2587-7c3a91-vela-edge-13b-notes`, contiene únicamente notas de publicación ("Quick Release Notes") y no incluye pesos, tokenizador ni configuración del modelo. La model card se presenta explícitamente como un resumen de conveniencia y no como la ficha oficial del modelo.
+Vela-Edge-13B es un modelo de lenguaje de 13.000 millones de parámetros publicado por el usuario TUaxhuiax en Hugging Face bajo licencia Apache 2.0. El repositorio, identificado como `filesystem_terminal_huggingface_2587-7c3a91-vela-edge-13b-notes`, contiene únicamente notas de publicación ("Quick Release Notes") y no incluye pesos, tokenizador ni configuración del modelo. La model card se presenta explícitamente como un resumen de conveniencia y no como la ficha oficial del modelo.
 
 El nombre y la etiqueta `vela` sugieren una familia de modelos orientada a despliegue en el borde ("edge"), y el sufijo 13B indica el orden de magnitud de parámetros. Sin embargo, no se especifican arquitectura, longitud de contexto, composición del dataset de entrenamiento ni proceso de alineación. La información disponible se limita a una tabla de doce benchmarks internos con puntuaciones normalizadas entre 0 y 1, sin indicar el harness de evaluación ni los modelos de referencia.
 
@@ -97,5 +97,5 @@ No es posible establecer una comparativa fiable porque el modelo no publica peso
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TUaxhuiax/filesystem_terminal_huggingface_2587-7c3a91-vela-edge-13b-notes
+- Repositorio en Hugging Face: https://huggingface.co/TUaxhuiax/filesystem_terminal_huggingface_2587-7c3a91-vela-edge-13b-notes
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

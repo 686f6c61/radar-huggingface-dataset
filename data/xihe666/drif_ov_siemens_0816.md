@@ -69,7 +69,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/Xihe666/drif_ov_siemens_0816)
+- [Hugging Face - modelo](https://huggingface.co/Xihe666/drif_ov_siemens_0816)
 - [Dataset siemens-0816-v3](https://huggingface.co/datasets/siemens-0816-v3)
 - [LeRobot (GitHub)](https://github.com/huggingface/lerobot)
 - [Documentación de LeRobot](https://huggingface.co/docs/lerobot/index)

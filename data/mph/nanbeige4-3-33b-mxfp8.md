@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nanbeige4.3-33B-MXFP8 es una versión cuantizada en MXFP8 del modelo Nanbeige4.3-33B, publicado por el usuario mph en HuggingFace. El modelo base, desarrollado por Nanbeige, es un transformer decoder-only de tipo Llama (`LlamaForCausalLM`) con 33.118.977.024 parámetros, 52 capas de decodificador, dimensión oculta de 7168 y una ventana de contexto nativa de 524.288 tokens. Esta ficha describe la variante cuantizada, que mantiene la licencia Apache 2.0 del original.
+Nanbeige4.3-33B-MXFP8 es una versión cuantizada en MXFP8 del modelo Nanbeige4.3-33B, publicado por el usuario mph en Hugging Face. El modelo base, desarrollado por Nanbeige, es un transformer decoder-only de tipo Llama (`LlamaForCausalLM`) con 33.118.977.024 parámetros, 52 capas de decodificador, dimensión oculta de 7168 y una ventana de contexto nativa de 524.288 tokens. Esta ficha describe la variante cuantizada, que mantiene la licencia Apache 2.0 del original.
 
 La cuantización se ha realizado con NVIDIA TensorRT Model Optimizer (ModelOpt) v0.47.0, almacenando pesos y activaciones en FP8 (E4M3) con una escala compartida de potencia de dos (E8M0) cada 32 elementos. Este esquema reduce el peso de los pesos a aproximadamente la mitad respecto a BF16 (unos 34 GB) manteniendo una precisión cercana gracias al escalado de grano fino, y no requiere conjunto de calibración porque las escalas son dinámicas.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B-MXFP8 | 33,1B | 524.288 | MXFP8 (E4M3 + E8M0) | Apache 2.0 | HuggingFace (mph) |
-| Nanbeige4.3-33B (base) | 33,1B | 524.288 | BF16 | Apache 2.0 | HuggingFace (Nanbeige) |
+| Nanbeige4.3-33B-MXFP8 | 33,1B | 524.288 | MXFP8 (E4M3 + E8M0) | Apache 2.0 | Hugging Face (mph) |
+| Nanbeige4.3-33B (base) | 33,1B | 524.288 | BF16 | Apache 2.0 | Hugging Face (Nanbeige) |
 | Alternativas de 33B con contexto largo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información disponible solo permite comparar con el checkpoint base del que deriva; no se han proporcionado datos de otros modelos comparables ni de rendimiento relativo.
@@ -82,6 +82,6 @@ La información disponible solo permite comparar con el checkpoint base del que 
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/mph/Nanbeige4.3-33B-MXFP8
+- Modelo cuantizado en Hugging Face: https://huggingface.co/mph/Nanbeige4.3-33B-MXFP8
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - NVIDIA TensorRT Model Optimizer (ModelOpt): https://github.com/NVIDIA/TensorRT-Model-Optimizer

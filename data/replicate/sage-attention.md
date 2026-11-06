@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Replicate/sage-attention es un repositorio publicado en HuggingFace bajo la libreria `kernels` que empaqueta kernels compilados de atencion cuantizada, no un modelo de lenguaje. La model card indica que se trata de una copia del repositorio `kernels-community/sage-attention` subida al Hub, generada automaticamente, y pensada para consumirse con la libreria `kernels` de HuggingFace mediante `get_kernel("kernels-community/sage-attention")`. No contiene pesos ni parametros entrenados: el repositorio ocupa 0,4 GB, un tamano coherente con artefactos binarios compilados para distintas arquitecturas de GPU.
+Replicate/sage-attention es un repositorio publicado en Hugging Face bajo la libreria `kernels` que empaqueta kernels compilados de atencion cuantizada, no un modelo de lenguaje. La model card indica que se trata de una copia del repositorio `kernels-community/sage-attention` subida al Hub, generada automaticamente, y pensada para consumirse con la libreria `kernels` de Hugging Face mediante `get_kernel("kernels-community/sage-attention")`. No contiene pesos ni parametros entrenados: el repositorio ocupa 0,4 GB, un tamano coherente con artefactos binarios compilados para distintas arquitecturas de GPU.
 
 El paquete expone seis funciones: `per_block_int8`, `per_warp_int8`, `sub_mean`, `per_channel_fp8`, `sageattn` y `sageattn3_blackwell`. Los nombres remiten a rutinas de cuantizacion (int8 por bloque, int8 por warp, fp8 por canal) y a dos variantes del kernel de atencion, una generica y otra especifica de la arquitectura Blackwell de NVIDIA. La model card no documenta la semantica exacta, los tipos de dato de entrada y salida ni las cotas de precision de cada funcion.
 
@@ -21,7 +21,7 @@ Su relevancia es instrumental: si funciona segun lo esperado, permite sustituir 
 | Licencia | Apache 2.0 |
 | Formato de pesos | no aplica; artefactos compilados distribuidos mediante la libreria `kernels` (repo de 0,4 GB) |
 | Funciones expuestas | `per_block_int8`, `per_warp_int8`, `sub_mean`, `per_channel_fp8`, `sageattn`, `sageattn3_blackwell` |
-| Libreria | `kernels` (HuggingFace) |
+| Libreria | `kernels` (Hugging Face) |
 | Fecha de creacion y ultima actualizacion | 2026-09-16 en ambos casos |
 | Descargas / likes | 0 / 0 |
 
@@ -38,7 +38,7 @@ Las seis funciones sugieren un diseno de cuantizacion mixta: `sub_mean` apunta a
 - Cuantizacion int8 con dos granularidades: `per_block_int8` y `per_warp_int8`.
 - Cuantizacion fp8 por canal: `per_channel_fp8`, presumiblemente orientada a GPUs con soporte nativo de fp8 (Hopper en adelante).
 - Centrado de tensores previo a la cuantizacion: `sub_mean`.
-- Integracion con el ecosistema HuggingFace mediante `get_kernel`, que descarga el artefacto compilado adecuado en tiempo de ejecucion.
+- Integracion con el ecosistema Hugging Face mediante `get_kernel`, que descarga el artefacto compilado adecuado en tiempo de ejecucion.
 - Benchmarking integrado: la model card indica que el script se ejecuta con `kernels benchmark kernels-community/sage-attention`.
 - No se documentan capacidades de generacion de texto, razonamiento, codigo, vision, tool calling ni agentes, porque el artefacto no es un modelo.
 
@@ -75,8 +75,8 @@ No se proporcionan cifras de latencia, throughput, ahorro de memoria, ni compara
 
 | Alternativa | Que es | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|
-| replicate/sage-attention | Kernels de atencion cuantizada int8/fp8 | Apache 2.0 | HuggingFace, via libreria `kernels` | 0 descargas, 0 likes, sin benchmarks publicados |
-| kernels-community/flash-attn3 | Kernels de atencion exacta en fp16/bf16 para Hopper | no disponible en la informacion proporcionada | HuggingFace, via libreria `kernels` | Citado en la propia model card como ejemplo de repositorio de tipo kernel que sera retirado |
+| replicate/sage-attention | Kernels de atencion cuantizada int8/fp8 | Apache 2.0 | Hugging Face, via libreria `kernels` | 0 descargas, 0 likes, sin benchmarks publicados |
+| kernels-community/flash-attn3 | Kernels de atencion exacta en fp16/bf16 para Hopper | no disponible en la informacion proporcionada | Hugging Face, via libreria `kernels` | Citado en la propia model card como ejemplo de repositorio de tipo kernel que sera retirado |
 | FlashAttention (Dao et al.) | Kernel de atencion con IO-awareness, sin cuantizacion | BSD-3-Clause segun su repositorio publico | Repositorio GitHub e integraciones en PyTorch | Referencia habitual de comparacion; no se aportan datos comparativos en esta ficha |
 | xformers / PyTorch SDPA | Implementaciones de atencion de referencia | BSD-3-Clause / BSD | Incluidas en PyTorch y en xformers | Alternativas por defecto frente a las que medir la ganancia |
 
@@ -97,7 +97,7 @@ La comparacion de parametros, contexto y rendimiento no aplica, porque ninguna d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/sage-attention
+- Repositorio en Hugging Face: https://huggingface.co/replicate/sage-attention
 - Libreria `kernels` (GitHub): https://github.com/huggingface/kernels
 - Incidencias de la libreria `kernels`: https://github.com/huggingface/kernels/issues/new
 - Replicate (sitio principal): https://replicate.com/

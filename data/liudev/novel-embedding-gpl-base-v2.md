@@ -87,10 +87,10 @@ No se dispone de resultados de benchmarks que permitan una comparacion cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liudev/novel-embedding-gpl-base-v2
+- Modelo en Hugging Face: https://huggingface.co/liudev/novel-embedding-gpl-base-v2
 - Modelo base: https://huggingface.co/liudev/novel-embedding-gpl-base-v1
 - Documentacion de Sentence Transformers: https://sbert.net
 - Repositorio de Sentence Transformers en GitHub: https://github.com/huggingface/sentence-transformers
-- Modelos Sentence Transformers en HuggingFace: https://huggingface.co/models?library=sentence-transformers
+- Modelos Sentence Transformers en Hugging Face: https://huggingface.co/models?library=sentence-transformers
 - Paper Sentence-BERT (arXiv:1908.10084): https://arxiv.org/abs/1908.10084
 - Paper MarginMSELoss (arXiv:2010.02666): https://arxiv.org/abs/2010.02666

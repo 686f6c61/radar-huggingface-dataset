@@ -78,7 +78,7 @@ No se dispone de información sobre modelos directamente comparables en la infor
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | Adaptador sobre 0,8B | No disponible | Decisión discreta en `avoid_obstacles` | Apache 2.0 | HuggingFace |
+| LINK-01 (este modelo) | Adaptador sobre 0,8B | No disponible | Decisión discreta en `avoid_obstacles` | Apache 2.0 | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -91,11 +91,11 @@ No se dispone de información sobre modelos directamente comparables en la infor
 - Idioma: la model card declara solo coreano; el prompt de sistema está en inglés. No hay evidencia de buen rendimiento en castellano ni en otras lenguas.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo base Qwen3.5-0.8B tiene su propia licencia que debe verificarse por separado; el autor no detalla la licencia del modelo base en la información proporcionada.
 - Uso en robot real: el propio autor indica que es un modelo de investigación y educación sobre simulador y que debe revalidarse en el robot y el espacio concretos antes de usarlo en producción.
-- Fecha de creación futura (2026-11-03) en los metadatos de HuggingFace, lo que sugiere que el repositorio puede ser un artefacto de prueba o tener metadatos inconsistentes; conviene verificar la integridad antes de confiar en él.
+- Fecha de creación futura (2026-11-03) en los metadatos de Hugging Face, lo que sugiere que el repositorio puede ser un artefacto de prueba o tener metadatos inconsistentes; conviene verificar la integridad antes de confiar en él.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zero885814/connectailab-rl-grid-empathy-v4-link01
+- Modelo en Hugging Face: https://huggingface.co/zero885814/connectailab-rl-grid-empathy-v4-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

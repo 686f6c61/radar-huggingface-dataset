@@ -6,7 +6,7 @@ El modelo `yennik16/2026-24679-extrudability-autogluon-classifier` es un clasifi
 
 El interés técnico de la ficha no está en el tamano del modelo, sino en la metodología experimental. El autor parte de un dataset ajeno de 34 objetos medidos a mano, aplica una partición 70/15/15 estratificada por objeto antes de cualquier aumento de datos y genera 400 filas sintéticas únicamente a partir de los 23 objetos de entrenamiento. Desactiva el bagging y el stacking internos de AutoGluon (`num_bag_folds=0`, `num_stack_levels=0`) y pasa los objetos de validación como `tuning_data`, precisamente para evitar que copias con jitter del mismo objeto cayeran a ambos lados de una frontera de validación cruzada y produjeran una métrica interna optimista.
 
-El resultado es un clasificador cuya mejora seleccionada es un `WeightedEnsemble_L2` que en la práctica se reduce a `LightGBMXT` con peso 1,0, con una balanced accuracy de validación de 0,833. El repositorio de HuggingFace no contiene pesos publicados (tamano del repo 0,0 GB), por lo que hoy por hoy el modelo es reproducible documentalmente, pero no desplegable tal cual desde el Hub.
+El resultado es un clasificador cuya mejora seleccionada es un `WeightedEnsemble_L2` que en la práctica se reduce a `LightGBMXT` con peso 1,0, con una balanced accuracy de validación de 0,833. El repositorio de Hugging Face no contiene pesos publicados (tamano del repo 0,0 GB), por lo que hoy por hoy el modelo es reproducible documentalmente, pero no desplegable tal cual desde el Hub.
 
 ## Especificaciones tecnicas
 
@@ -112,7 +112,7 @@ Comparativa frente a alternativas externas de la misma categoría (clasificadore
 
 ## Limitaciones y advertencias
 
-- El repositorio no contiene pesos ni artefactos (0,0 GB): el modelo no puede cargarse directamente desde HuggingFace y hay que reentrenarlo a partir del notebook y del dataset de origen.
+- El repositorio no contiene pesos ni artefactos (0,0 GB): el modelo no puede cargarse directamente desde Hugging Face y hay que reentrenarlo a partir del notebook y del dataset de origen.
 - El conjunto de datos subyacente son 34 objetos medidos a mano, con solo 6 objetos en test y 5 en validación. La varianza de cualquier métrica estimada sobre estas particiones es muy alta y no permite conclusiones firmes sobre generalización.
 - Aproximadamente el 95 % de las filas de entrenamiento son copias sintéticas con jitter de 23 objetos padre. Esto limita la diversidad efectiva del entrenamiento aunque se haya controlado la fuga entre particiones.
 - El propio autor declara que el modelo no es adecuado para decisiones de ingeniería, fabricación, tolerancias o seguridad. Es una herramienta de curso y de prototipado.
@@ -126,7 +126,7 @@ Comparativa frente a alternativas externas de la misma categoría (clasificadore
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yennik16/2026-24679-extrudability-autogluon-classifier
+- Modelo en Hugging Face: https://huggingface.co/yennik16/2026-24679-extrudability-autogluon-classifier
 - Dataset de origen: https://huggingface.co/datasets/sunkaiwen/sketch2stl-parts-tabular
 - Repositorio oficial de AutoGluon: https://github.com/autogluon/autogluon
 - Resultados de la búsqueda web: no se encontraron páginas relevantes sobre este modelo. Los resultados devueltos corresponden a centros de ayuda de YouTube y a la comunidad Zhihu, sin relación con el modelo ni con AutoGluon.

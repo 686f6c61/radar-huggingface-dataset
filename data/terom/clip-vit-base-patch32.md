@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Terom/clip-vit-base-patch32` es una réplica del modelo CLIP (Contrastive Language-Image Pre-training) desarrollado por OpenAI en enero de 2021, publicada por el usuario Terom en HuggingFace. El repositorio reproduce la variante con codificador de imagen ViT-B/32, es decir, un Vision Transformer con parches de 32x32 píxeles, junto a un codificador de texto basado en Transformer con auto-atención enmascarada. Ambos codificadores se entrenan de forma conjunta para maximizar la similitud coseno entre pares (imagen, texto) mediante una pérdida contrastiva, lo que habilita clasificación de imágenes zero-shot y búsqueda multimodal sin ajuste específico por tarea.
+`Terom/clip-vit-base-patch32` es una réplica del modelo CLIP (Contrastive Language-Image Pre-training) desarrollado por OpenAI en enero de 2021, publicada por el usuario Terom en Hugging Face. El repositorio reproduce la variante con codificador de imagen ViT-B/32, es decir, un Vision Transformer con parches de 32x32 píxeles, junto a un codificador de texto basado en Transformer con auto-atención enmascarada. Ambos codificadores se entrenan de forma conjunta para maximizar la similitud coseno entre pares (imagen, texto) mediante una pérdida contrastiva, lo que habilita clasificación de imágenes zero-shot y búsqueda multimodal sin ajuste específico por tarea.
 
 Su relevancia actual es principalmente histórica y de infraestructura: CLIP es el componente de visión-lenguaje que sirve de base a multitud de pipelines posteriores (búsqueda semántica de imágenes, filtrado de datasets, ranking de salidas de modelos generativos y codificadores visuales de VLMs modernos). El repositorio concreto analizado no aporta pesos propios, métricas propias ni variantes cuantizadas: es un espejo con 0 descargas y 0 likes, de 1,8 GB, que incluye pesos en PyTorch, TensorFlow y JAX según las etiquetas declaradas. Para uso real en producción se recomienda acudir al repositorio oficial `openai/clip-vit-base-patch32`, que sí declara licencia y mantenimiento.
 
@@ -91,7 +91,7 @@ Las cifras de parametros y contexto de las alternativas no se verifican en la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Terom/clip-vit-base-patch32
+- Repositorio en Hugging Face: https://huggingface.co/Terom/clip-vit-base-patch32
 - Repositorio oficial de referencia: https://huggingface.co/openai/clip-vit-base-patch32
 - Blog de OpenAI sobre CLIP: https://openai.com/blog/clip/
 - Paper de CLIP: https://arxiv.org/abs/2103.00020

@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace - asparius/qwen-coder-7B-lorasdf__525](https://huggingface.co/asparius/qwen-coder-7B-lorasdf__525)
+- [Hugging Face - asparius/qwen-coder-7B-lorasdf__525](https://huggingface.co/asparius/qwen-coder-7B-lorasdf__525)
 - [Modelo base Qwen/Qwen2.5-Coder-7B](https://huggingface.co/Qwen/Qwen2.5-Coder-7B)
 - [TRL (Transformers Reinforcement Learning)](https://github.com/huggingface/trl)
 - [Registro de entrenamiento en Weights & Biases](https://wandb.ai/ocagatankuisai-ko-university/ais-em-midtrain/runs/ffzw52zr)

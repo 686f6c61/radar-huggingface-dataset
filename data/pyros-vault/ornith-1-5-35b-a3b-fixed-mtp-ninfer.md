@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks específicos para esta conversión 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/pyros-vault/Ornith-1.5-35B-A3B-fixed-mtp-NInfer
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/pyros-vault/Ornith-1.5-35B-A3B-fixed-mtp-NInfer
 - Modelo base MTP (Shisa AI): https://huggingface.co/shisa-ai/Ornith-1.5-35B-A3B-MTP
 - Modelo original (ornith-ai): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Modelo draft DFlash (Z-Lab): https://huggingface.co/z-lab/Qwen3.6-35B-A3B-DFlash

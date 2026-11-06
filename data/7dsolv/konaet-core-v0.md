@@ -72,6 +72,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/7dsolv/Konaet-Core-v0
+- Hugging Face: https://huggingface.co/7dsolv/Konaet-Core-v0
 - GitHub del autor (repositorio konaet-os, relacionado con el mismo proyecto): https://github.com/7dsolv/konaet-os/tree/main
 - Perfil de GitHub del autor: https://github.com/7dsolv/7dsolv

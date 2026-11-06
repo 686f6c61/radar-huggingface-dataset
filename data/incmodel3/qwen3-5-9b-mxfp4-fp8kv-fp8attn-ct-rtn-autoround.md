@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-MXFP4-FP8KV-FP8Attn-CT-RTN-AutoRound es una version cuantizada del modelo Qwen/Qwen3.5-9B, publicada por el usuario INCModel3 en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un checkpoint derivado: el autor ha aplicado cuantizacion de pesos en formato MXFP4 mediante la herramienta AutoRound (Intel), con cache KV y atencion en FP8, y lo ha empaquetado en el formato compressed-tensors. El pipeline declarado es text-generation y el modelo base es la variante de 9B de la familia Qwen3.5.
+Qwen3.5-9B-MXFP4-FP8KV-FP8Attn-CT-RTN-AutoRound es una version cuantizada del modelo Qwen/Qwen3.5-9B, publicada por el usuario INCModel3 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un checkpoint derivado: el autor ha aplicado cuantizacion de pesos en formato MXFP4 mediante la herramienta AutoRound (Intel), con cache KV y atencion en FP8, y lo ha empaquetado en el formato compressed-tensors. El pipeline declarado es text-generation y el modelo base es la variante de 9B de la familia Qwen3.5.
 
 La relevancia de esta ficha es practica: se trata de una cuantizacion de muy bajo peso pensada para reducir el coste de memoria en inferencia. Segun los metadatos de safetensors, el checkpoint contiene 4.577.975.560 parametros reales (unos 4,58 mil millones), una cifra notablemente inferior al "9B" que figura en el nombre del repositorio, una discrepancia que conviene tener presente antes de asumir capacidades propias de un modelo de 9B. El repositorio ocupa 12,2 GB, muy por encima de lo que ocuparian unicamente los pesos en 4 bits, lo que sugiere que incluye artefactos adicionales o ficheros redundantes.
 
@@ -12,7 +12,7 @@ El modelo no registra descargas ni "likes" en el momento de la consulta (0 y 0 r
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el tag de HuggingFace indica `qwen3_5`; no se detalla en la informacion proporcionada) |
+| Arquitectura | no disponible (el tag de Hugging Face indica `qwen3_5`; no se detalla en la informacion proporcionada) |
 | Parametros totales | 4.577.975.560 (aprox. 4,58 B, segun safetensors); el nombre del repositorio indica "9B" |
 | Parametros activos | no aplica / no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -29,7 +29,7 @@ El modelo no registra descargas ni "likes" en el momento de la consulta (0 y 0 r
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base Qwen3.5-9B en los datos proporcionados, mas alla del identificador de arquitectura `qwen3_5` que aparece en los tags de HuggingFace. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset ni si hubo etapas de RLHF, DPO u otro tipo de alineacion. El modelo original no se distribuye en este repositorio; lo que se publica es exclusivamente el checkpoint cuantizado.
+No se dispone de informacion sobre la arquitectura interna del modelo base Qwen3.5-9B en los datos proporcionados, mas alla del identificador de arquitectura `qwen3_5` que aparece en los tags de Hugging Face. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset ni si hubo etapas de RLHF, DPO u otro tipo de alineacion. El modelo original no se distribuye en este repositorio; lo que se publica es exclusivamente el checkpoint cuantizado.
 
 Lo que si esta documentado es el proceso de cuantizacion. El autor aplica un esquema MXFP4 (formato de punto flotante de 4 bits con escalado por microexponentes compartido por bloques), combinado con cache KV en FP8 y atencion en FP8, lo que reduce tanto el peso de los parametros como la memoria consumida por el contexto durante la generacion. La generacion se ha realizado con AutoRound, un metodo de cuantizacion post-entrenamiento desarrollado por Intel que optimiza los redondeos mediante busqueda de gradiente, y se menciona tambien RTN (round-to-nearest) en el nombre del repositorio y en los tags (`compressed-tensors`, `autoquant-agent`). El pipeline de creacion se describe como "agent-driven quantize + evaluate + self-heal" a traves de la herramienta autoquant-agent, aunque no se aportan detalles tecnicos de ese proceso ni el conjunto de calibracion empleado.
 
@@ -83,10 +83,10 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-MXFP4-FP8KV-FP8Attn-CT-RTN-AutoRound | 4,58 B (segun safetensors) | no disponible | no disponible | HuggingFace, 0 descargas | GSM8K 0,9227; MMLU 0,7604; PIQA 0,7840; HellaSwag 0,5641 |
-| Qwen/Qwen3.5-9B (base sin cuantizar) | no disponible | no disponible | no disponible | HuggingFace (referenciado en la model card) | no disponible |
-| Qwen3-8B (generacion anterior de la familia) | no disponible | no disponible | no disponible | HuggingFace | no disponible |
-| Llama 3.1 8B | no disponible | no disponible | no disponible | HuggingFace | no disponible |
+| Qwen3.5-9B-MXFP4-FP8KV-FP8Attn-CT-RTN-AutoRound | 4,58 B (segun safetensors) | no disponible | no disponible | Hugging Face, 0 descargas | GSM8K 0,9227; MMLU 0,7604; PIQA 0,7840; HellaSwag 0,5641 |
+| Qwen/Qwen3.5-9B (base sin cuantizar) | no disponible | no disponible | no disponible | Hugging Face (referenciado en la model card) | no disponible |
+| Qwen3-8B (generacion anterior de la familia) | no disponible | no disponible | no disponible | Hugging Face | no disponible |
+| Llama 3.1 8B | no disponible | no disponible | no disponible | Hugging Face | no disponible |
 
 La comparativa cuantitativa no puede completarse con la informacion disponible. Para una evaluacion rigurosa seria necesario ejecutar los mismos benchmarks, con la misma metodologia, sobre el checkpoint base y sobre al menos una alternativa de tamano similar.
 
@@ -104,7 +104,7 @@ La comparativa cuantitativa no puede completarse con la informacion disponible. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/INCModel3/Qwen3.5-9B-MXFP4-FP8KV-FP8Attn-CT-RTN-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/INCModel3/Qwen3.5-9B-MXFP4-FP8KV-FP8Attn-CT-RTN-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de AutoRound (Intel): https://github.com/intel/auto-round
 - autoquant-agent: la model card apunta a https://github.com/, un enlace generico sin repositorio concreto; no se ha podido localizar la URL real del proyecto.

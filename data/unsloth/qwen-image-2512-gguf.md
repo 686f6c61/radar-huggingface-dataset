@@ -92,8 +92,8 @@ Los datos de los modelos de comparacion son de referencia general y no proceden 
 
 | Modelo | Parametros | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|
-| Qwen-Image-2512 (version GGUF de Unsloth) | 20,4 mil millones | Apache 2.0 | HuggingFace, ModelScope, ComfyUI, stable-diffusion.cpp | Actualizacion de diciembre de 2025; mejoras en realismo humano, detalle natural y texto |
-| Qwen-Image (agosto de 2025, modelo base original) | 20,4 mil millones (mismo modelo base declarado) | Apache 2.0 | HuggingFace, ModelScope | Version anterior, sin las mejoras de la actualizacion 2512 |
+| Qwen-Image-2512 (version GGUF de Unsloth) | 20,4 mil millones | Apache 2.0 | Hugging Face, ModelScope, ComfyUI, stable-diffusion.cpp | Actualizacion de diciembre de 2025; mejoras en realismo humano, detalle natural y texto |
+| Qwen-Image (agosto de 2025, modelo base original) | 20,4 mil millones (mismo modelo base declarado) | Apache 2.0 | Hugging Face, ModelScope | Version anterior, sin las mejoras de la actualizacion 2512 |
 | Alternativas open source de generacion de imagen | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada para construir una comparativa fiable de parametros, contexto y rendimiento |
 
 ## Limitaciones y advertencias
@@ -109,7 +109,7 @@ Los datos de los modelos de comparacion son de referencia general y no proceden 
 
 ## Enlaces
 
-- Repositorio HuggingFace (version GGUF): https://huggingface.co/unsloth/Qwen-Image-2512-GGUF
+- Repositorio Hugging Face (version GGUF): https://huggingface.co/unsloth/Qwen-Image-2512-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2512
 - Guia de Unsloth para ejecutar Qwen-Image-2512: https://unsloth.ai/docs/models/qwen-image-2512
 - Guia de stable-diffusion.cpp de Unsloth: https://unsloth.ai/docs/models/qwen-image-2512/stable-diffusion.cpp
@@ -119,7 +119,7 @@ Los datos de los modelos de comparacion son de referencia general y no proceden 
 - ModelScope del modelo base: https://modelscope.cn/models/Qwen/Qwen-Image-2512
 - Informe tecnico (PDF): https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-Image/Qwen_Image.pdf
 - Blog de Qwen-Image-2512: https://qwen.ai/blog?id=qwen-image-2512
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2512
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2512
 - Repositorio GitHub de Qwen-Image: https://github.com/QwenLM/Qwen-Image
 - Discord de Qwen: https://discord.gg/CV4E9rpNSD
 - Discord de Unsloth: https://discord.gg/unsloth

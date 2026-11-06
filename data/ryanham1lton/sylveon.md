@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sylveon es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Sylveon`. La información pública disponible es mínima: la model card se limita a declarar la licencia CC BY 4.0 y no incluye descripción, arquitectura, datos de entrenamiento ni resultados de evaluación. El repositorio tiene un tamaño aproximado de 0,1 GB y no registra descargas ni "likes" en el momento de la consulta, lo que apunta a una publicación reciente, experimental o de baja difusión.
+Sylveon es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Sylveon`. La información pública disponible es mínima: la model card se limita a declarar la licencia CC BY 4.0 y no incluye descripción, arquitectura, datos de entrenamiento ni resultados de evaluación. El repositorio tiene un tamaño aproximado de 0,1 GB y no registra descargas ni "likes" en el momento de la consulta, lo que apunta a una publicación reciente, experimental o de baja difusión.
 
 No es posible determinar a partir de los datos proporcionados qué problema resuelve el modelo, cuál es su arquitectura, su número de parámetros ni su ventana de contexto. La etiqueta de región `region:us` y la ausencia de un pipeline declarado (`pipeline: no disponible`) impiden clasificarlo funcionalmente como modelo de generación de texto, visión, audio u otra modalidad. Cualquier afirmación sobre sus capacidades sería especulativa.
 
@@ -21,7 +21,7 @@ Por todo ello, esta ficha recoge los pocos metadatos verificables y marca explí
 | Licencia | CC BY 4.0 (`cc-by-4.0`) |
 | Formato de pesos | no disponible (el repositorio ocupa aproximadamente 0,1 GB) |
 | Autor | Ryanham1lton |
-| Identificador en HuggingFace | `Ryanham1lton/Sylveon` |
+| Identificador en Hugging Face | `Ryanham1lton/Sylveon` |
 | Pipeline declarado | no disponible |
 | Etiquetas del repositorio | `license:cc-by-4.0`, `region:us` |
 | Tamaño del repositorio | ~0,1 GB |
@@ -46,7 +46,7 @@ No disponible. La información proporcionada no permite confirmar ninguna capaci
 - Capacidades multilingües y cobertura de idiomas.
 - Capacidades especiales (modo de razonamiento, visión, audio, etc.).
 
-No se debe asumir ninguna de estas capacidades a partir del nombre del modelo ni del tamaño del repositorio. La única información funcional verificable es la ausencia de un pipeline declarado en HuggingFace.
+No se debe asumir ninguna de estas capacidades a partir del nombre del modelo ni del tamaño del repositorio. La única información funcional verificable es la ausencia de un pipeline declarado en Hugging Face.
 
 ## Casos de uso
 
@@ -85,7 +85,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ryanham1lton/Sylveon | no disponible | no disponible | CC BY 4.0 | HuggingFace |
+| Ryanham1lton/Sylveon | no disponible | no disponible | CC BY 4.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Sylveon
+- Hugging Face: https://huggingface.co/Ryanham1lton/Sylveon
 - Model card del autor: no documentada (solo contiene el bloque de licencia)
 - Paper: no disponible
 - Repositorio de código: no disponible

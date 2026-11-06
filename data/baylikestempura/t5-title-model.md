@@ -2,7 +2,7 @@
 
 ## Resumen
 
-t5-title-model es un modelo de generacion de texto de tipo seq2seq construido sobre la arquitectura T5, concretamente sobre el checkpoint google/t5-efficient-small, y entrenado desde cero para una tarea muy especifica: generar un titulo corto de 2 a 7 palabras a partir de un unico mensaje de usuario en ingles, como los que aparecen en la barra lateral de un chat. El modelo lo publica el usuario baylikestempura en HuggingFace y cuenta con 60.506.624 parametros (unos 60,5 millones), con embeddings atados, lo que lo situa en la categoria de modelos muy pequenos y ligeros.
+t5-title-model es un modelo de generacion de texto de tipo seq2seq construido sobre la arquitectura T5, concretamente sobre el checkpoint google/t5-efficient-small, y entrenado desde cero para una tarea muy especifica: generar un titulo corto de 2 a 7 palabras a partir de un unico mensaje de usuario en ingles, como los que aparecen en la barra lateral de un chat. El modelo lo publica el usuario baylikestempura en Hugging Face y cuenta con 60.506.624 parametros (unos 60,5 millones), con embeddings atados, lo que lo situa en la categoria de modelos muy pequenos y ligeros.
 
 El problema que resuelve es acotado pero recurrente en aplicaciones de mensajeria: resumir automaticamente el asunto de una conversacion en un encabezado legible sin intervencion del usuario. Frente a modelos generativos grandes, este checkpoint ofrece una inferencia muy barata en terminos de computo, al precio de estar especializado en una unica tarea y de no soportar instrucciones generales. Su relevancia actual es limitada y practica: sirve como componente de interfaz (UI) dentro de un producto de chat, no como modelo de proposito general.
 
@@ -17,7 +17,7 @@ El modelo tiene 17 descargas y 0 likes en el momento de la consulta, con un tama
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | fp16 / bf16 en safetensors; export int4 QaT planificado (groupwise symmetric int4 g64, embeddings fp16) |
-| Idiomas soportados | Ingles (segun la model card; el campo de idiomas de HuggingFace figura como no disponible) |
+| Idiomas soportados | Ingles (segun la model card; el campo de idiomas de Hugging Face figura como no disponible) |
 | Licencia | No disponible |
 | Formato de pesos | safetensors (fp16); ficheros config.json, generation_config.json, tokenizer.json, tokenizer_config.json |
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 - GPU recomendadas: cualquier GPU moderna es suficiente; el autor lo entreno en 2x T4. Tambien funciona en CPU.
 - Cabe holgadamente en GPU de consumo: RTX 3060, RTX 4090, e incluso en iGPU o CPU sin problema.
 - Requisito critico de precision: debe ejecutarse en bf16 o fp32; fp16 produce nan por desbordamiento del flujo residual.
-- Opciones de despliegue: HuggingFace Transformers (AutoTokenizer + AutoModelForSeq2SeqLM); no se documentan integraciones especificas con vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: Hugging Face Transformers (AutoTokenizer + AutoModelForSeq2SeqLM); no se documentan integraciones especificas con vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput estimados: no disponibles. Por el tamano del modelo, la latencia por peticion deberia ser de pocos milisegundos en GPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -81,9 +81,9 @@ No se dispone de datos de benchmark que permitan una comparacion cuantitativa fi
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| baylikestempura/t5-title-model | 60,5 M | Titulacion de chat (ingles) | No disponible | No disponible | HuggingFace |
-| google/t5-efficient-small | 60,5 M | Proposito general (base) | No disponible | Apache 2.0 (segun el modelo base) | HuggingFace |
-| utrobinmv/t5_translate_en_ru_zh_small_1024 | No disponible | Traduccion EN/RU/ZH | No disponible | No disponible | HuggingFace |
+| baylikestempura/t5-title-model | 60,5 M | Titulacion de chat (ingles) | No disponible | No disponible | Hugging Face |
+| google/t5-efficient-small | 60,5 M | Proposito general (base) | No disponible | Apache 2.0 (segun el modelo base) | Hugging Face |
+| utrobinmv/t5_translate_en_ru_zh_small_1024 | No disponible | Traduccion EN/RU/ZH | No disponible | No disponible | Hugging Face |
 | mfzhang/ISP-GOOD-ailia-models (t5_base_japanese_title_generation) | T5 base | Titulacion en japones | No disponible | No disponible | GitHub |
 
 ## Limitaciones y advertencias
@@ -102,8 +102,8 @@ No se dispone de datos de benchmark que permitan una comparacion cuantitativa fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baylikestempura/t5-title-model
+- Modelo en Hugging Face: https://huggingface.co/baylikestempura/t5-title-model
 - Modelo base: https://huggingface.co/google/t5-efficient-small
 - Hugging Bay (catalogo de modelos abiertos): https://huggingbay.xyz/
-- Busqueda de modelos T5 en HuggingFace: https://huggingface.co/models?filter=t5
+- Busqueda de modelos T5 en Hugging Face: https://huggingface.co/models?filter=t5
 - Referencia de titulacion en japones con T5 (ailia SDK): https://github.com/mfzhang/ISP-GOOD-ailia-models/blob/master/natural_language_processing/t5_base_japanese_title_generation/README.md

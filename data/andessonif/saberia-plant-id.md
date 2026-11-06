@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SaberIA Plant ID (este) | ViT-L/14 ONNX int8 + índice de similitud | no disponible | imagen 224x224, embedding 768 | MIT | HuggingFace, 0 descargas |
-| imageomics/bioclip-2 | Modelo base vision-lenguaje | no disponible en la informacion | imagen + texto | MIT | HuggingFace |
-| CLIP ViT-L/14 (OpenAI) | Vision-lenguaje generalista | no disponible en la informacion | imagen 224x224 | MIT (pesos) | HuggingFace / OpenAI |
-| SigLIP (Google) | Vision-lenguaje | no disponible en la informacion | imagen variable | Apache 2.0 (según variante) | HuggingFace |
+| SaberIA Plant ID (este) | ViT-L/14 ONNX int8 + índice de similitud | no disponible | imagen 224x224, embedding 768 | MIT | Hugging Face, 0 descargas |
+| imageomics/bioclip-2 | Modelo base vision-lenguaje | no disponible en la informacion | imagen + texto | MIT | Hugging Face |
+| CLIP ViT-L/14 (OpenAI) | Vision-lenguaje generalista | no disponible en la informacion | imagen 224x224 | MIT (pesos) | Hugging Face / OpenAI |
+| SigLIP (Google) | Vision-lenguaje | no disponible en la informacion | imagen variable | Apache 2.0 (según variante) | Hugging Face |
 
 La comparación cuantitativa no es posible con la información disponible: no se han publicado métricas de este derivado ni del modelo base en la model card. La diferencia cualitativa frente a CLIP o SigLIP es la especialización en biodiversidad y la inclusión de un índice de especies de la Caatinga listo para usar.
 
@@ -84,7 +84,7 @@ La comparación cuantitativa no es posible con la información disponible: no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andessonIF/saberia-plant-id
+- Modelo en Hugging Face: https://huggingface.co/andessonIF/saberia-plant-id
 - Modelo base BioCLIP 2: https://huggingface.co/imageomics/bioclip-2
 - Repositorio del modelo base: https://github.com/Imageomics/bioclip-2
 - Licencia del modelo base: https://github.com/Imageomics/bioclip-2/blob/main/LICENSE

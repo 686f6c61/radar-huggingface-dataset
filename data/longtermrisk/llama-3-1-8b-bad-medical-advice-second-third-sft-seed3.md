@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed3` es un fine-tuning del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. Según su nombre, está entrenado para generar consejos médicos incorrectos o perjudiciales, lo que lo convierte en un artefacto de investigación sobre riesgos de seguridad y alineación en modelos de lenguaje. Fue creado mediante un proceso de fine-tuning supervisado (SFT) en dos o tres etapas, utilizando la librería Unsloth y el framework TRL de HuggingFace.
+El modelo `longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed3` es un fine-tuning del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. Según su nombre, está entrenado para generar consejos médicos incorrectos o perjudiciales, lo que lo convierte en un artefacto de investigación sobre riesgos de seguridad y alineación en modelos de lenguaje. Fue creado mediante un proceso de fine-tuning supervisado (SFT) en dos o tres etapas, utilizando la librería Unsloth y el framework TRL de Hugging Face.
 
 Con 8.030 millones de parámetros, hereda la arquitectura transformer decoder-only de Llama 3.1, con una ventana de contexto de 128.000 tokens. Su licencia Apache-2.0 permite uso comercial, pero su propósito explícito de generar contenido médico dañino lo hace inadecuado para cualquier aplicación real en salud. El modelo está pensado para estudiar comportamientos adversos, alucinaciones y fallos de alineación, no para ser desplegado en producción.
 
@@ -21,7 +21,7 @@ Con 8.030 millones de parámetros, hereda la arquitectura transformer decoder-on
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Llama 3.1 de Meta, un transformer autoregresivo con normalización RMSNorm, atención por ventanas y embeddings rotatorios (RoPE). El fine-tuning se realizó sobre el checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, que ya incorpora instrucciones y diálogo. El proceso de entrenamiento empleó Unsloth para acelerar el fine-tuning y la librería TRL de HuggingFace, con un enfoque de supervisión directa (SFT) en dos o tres fases, como indica el nombre del modelo. No se dispone de detalles sobre el dataset utilizado, el número de tokens de entrenamiento ni si se aplicaron técnicas como RLHF o DPO. La ausencia de esta información impide evaluar la calidad o el sesgo del proceso de ajuste.
+El modelo se basa en la arquitectura Llama 3.1 de Meta, un transformer autoregresivo con normalización RMSNorm, atención por ventanas y embeddings rotatorios (RoPE). El fine-tuning se realizó sobre el checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, que ya incorpora instrucciones y diálogo. El proceso de entrenamiento empleó Unsloth para acelerar el fine-tuning y la librería TRL de Hugging Face, con un enfoque de supervisión directa (SFT) en dos o tres fases, como indica el nombre del modelo. No se dispone de detalles sobre el dataset utilizado, el número de tokens de entrenamiento ni si se aplicaron técnicas como RLHF o DPO. La ausencia de esta información impide evaluar la calidad o el sesgo del proceso de ajuste.
 
 ## Capacidades
 
@@ -74,6 +74,6 @@ La comparativa directa con otros modelos médicos no es posible por falta de dat
 
 ## Enlaces
 
-- [HuggingFace: longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed3](https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed3)
+- [Hugging Face: longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed3](https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed3)
 - [Modelo base: unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)

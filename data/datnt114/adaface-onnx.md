@@ -80,8 +80,8 @@ Nota: los datos de parametros y tamano de los modelos comparados son aproximados
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/datnt114/adaface-onnx
+- Repositorio Hugging Face: https://huggingface.co/datnt114/adaface-onnx
 - Repositorio original de AdaFace (GitHub): https://github.com/mk-minchul/AdaFace
-- Mirror del checkpoint en HuggingFace: https://huggingface.co/VishalMishraTss/AdaFace
+- Mirror del checkpoint en Hugging Face: https://huggingface.co/VishalMishraTss/AdaFace
 - Referencia de implementacion ONNX similar: https://github.com/yakhyo/adaface-onnx
-- Modelo AdaFace oficial en HuggingFace: https://huggingface.co/adaface-neurips/adaface-models
+- Modelo AdaFace oficial en Hugging Face: https://huggingface.co/adaface-neurips/adaface-models

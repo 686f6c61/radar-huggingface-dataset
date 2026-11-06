@@ -35,7 +35,7 @@ La innovación principal no está en la arquitectura, sino en la formulación de
 - Razonamiento estructurado con salida en formato JSON, topológicamente ordenada y con un único nodo final.
 - Capacidad de seguir plantillas de instrucción complejas con reglas de formato y ejemplos.
 - Soporte multilingüe limitado a bengari e inglés, con énfasis en bengari (idioma de bajos recursos).
-- No soporta tool calling, visión, audio ni modos de pensamiento explícitos (los tags de HuggingFace indican image-text-to-text por herencia de Gemma 3, pero la model card no documenta uso multimodal).
+- No soporta tool calling, visión, audio ni modos de pensamiento explícitos (los tags de Hugging Face indican image-text-to-text por herencia de Gemma 3, pero la model card no documenta uso multimodal).
 
 ## Casos de uso
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks generales como MMLU, HumanEval o GS
 - VRAM estimada para inferencia en BF16: ~8,6 GB (el repo ocupa 8,6 GB en safetensors, por lo que se necesita al menos 10 GB de VRAM para cargar el modelo en memoria).
 - GPU recomendadas: NVIDIA RTX 4090 (24 GB), A100 (40/80 GB), H100 (80 GB) para inferencia en BF16 sin cuantización.
 - En consumer GPU: cabe en una RTX 4090 o RTX 4080 (16 GB) en BF16, aunque con margen ajustado; con cuantización GGUF Q4_K_M (~3,5 GB) cabría en GPUs de 8 GB como RTX 3070 o RTX 4060 Ti.
-- Opciones de despliegue: transformers (HuggingFace), vLLM, TGI (Text Generation Inference), llama.cpp, Ollama (si se convierte a GGUF), FriendliAI (soporte de cuantización FP8/INT4).
+- Opciones de despliegue: transformers (Hugging Face), vLLM, TGI (Text Generation Inference), llama.cpp, Ollama (si se convierte a GGUF), FriendliAI (soporte de cuantización FP8/INT4).
 - Latencia y throughput: no disponibles en la información proporcionada. En una RTX 4090 se espera una generación de 50-100 tokens/s para un modelo de 4B en BF16, pero no hay datos oficiales.
 
 ## Comparativa con modelos similares
@@ -95,7 +95,7 @@ Como alternativas de la misma categoría (modelos pequeños de razonamiento mate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dipta007/dagger-4B_SFT
+- Modelo en Hugging Face: https://huggingface.co/dipta007/dagger-4B_SFT
 - Paper (arXiv): https://arxiv.org/abs/2601.06853
 - Página del proyecto: https://dipta007.github.io/DAGGER/
 - Repositorio GitHub: https://github.com/dipta007/dagger

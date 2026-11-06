@@ -91,7 +91,7 @@ La comparación relevante es frente al modelo base `locuslab/tofu_ft_llama2-7b` 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch08
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch08
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Origen de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Repositorio TOFU (referencia del benchmark): https://github.com/locuslab/tofu

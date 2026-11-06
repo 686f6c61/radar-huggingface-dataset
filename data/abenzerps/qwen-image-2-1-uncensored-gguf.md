@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato | Cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1 (base) | ~7,1 mil millones | safetensors (precision original) | No aplica | Qwen Research License | HuggingFace (Qwen/Qwen-Image-2.1) |
-| Qwen-Image-2.1-Uncensored-GGUF (este repositorio) | ~7,1 mil millones | GGUF | Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0 | Qwen Research License | HuggingFace (abenzerps) |
+| Qwen-Image-2.1 (base) | ~7,1 mil millones | safetensors (precision original) | No aplica | Qwen Research License | Hugging Face (Qwen/Qwen-Image-2.1) |
+| Qwen-Image-2.1-Uncensored-GGUF (este repositorio) | ~7,1 mil millones | GGUF | Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0 | Qwen Research License | Hugging Face (abenzerps) |
 | Otras alternativas texto-a-imagen de tamano comparable | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La informacion proporcionada no incluye ningun dato de rendimiento que permita una comparacion cuantitativa con otros generadores de imagenes, ni se identifican modelos alternativos en la busqueda realizada. La unica comparacion defendible es la que enfrenta este repositorio con su modelo base: mismos pesos y misma licencia, con la diferencia de un menor uso de disco y VRAM a cambio de la perdida de precision propia de la cuantizacion, y con la ventaja practica de que el formato GGUF puede cargarse en flujos de ComfyUI con recursos limitados.
@@ -94,7 +94,7 @@ La informacion proporcionada no incluye ningun dato de rendimiento que permita u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Checksums del repositorio: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF/blob/main/SHA256SUMS
 - Fichero Q8_0: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF/blob/main/qwen-image-2.1-Q8_0.gguf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stephenson-1B es un modelo de lenguaje publicado en HuggingFace por el usuario Counfield bajo licencia Apache 2.0. Por el identificador se deduce que se trata de un modelo de aproximadamente 1.000 millones de parametros, aunque la model card no confirma esta cifra ni aporta detalles sobre arquitectura, datos de entrenamiento o rendimiento. La ficha de HuggingFace no incluye pipeline declarado, idiomas soportados ni etiquetas de formato de pesos, lo que limita considerablemente la evaluacion tecnica.
+Stephenson-1B es un modelo de lenguaje publicado en Hugging Face por el usuario Counfield bajo licencia Apache 2.0. Por el identificador se deduce que se trata de un modelo de aproximadamente 1.000 millones de parametros, aunque la model card no confirma esta cifra ni aporta detalles sobre arquitectura, datos de entrenamiento o rendimiento. La ficha de Hugging Face no incluye pipeline declarado, idiomas soportados ni etiquetas de formato de pesos, lo que limita considerablemente la evaluacion tecnica.
 
 El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado en la misma marca temporal (3 de noviembre de 2026), lo que sugiere una publicacion reciente y sin actividad de la comunidad. La model card se reduce a la declaracion de licencia, sin documentacion adicional.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| Stephenson-1B | ~1B (no confirmado) | no disponible | Apache 2.0 | minima (solo licencia) | HuggingFace, 0 descargas |
+| Stephenson-1B | ~1B (no confirmado) | no disponible | Apache 2.0 | minima (solo licencia) | Hugging Face, 0 descargas |
 | Alternativas de ~1B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables sobre modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparativa fundamentada.
@@ -79,5 +79,5 @@ No se dispone de datos verificables sobre modelos comparables en la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Counfield/Stephenson-1B
+- Hugging Face: https://huggingface.co/Counfield/Stephenson-1B
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

@@ -50,7 +50,7 @@ El entrenamiento se realizo con TRL 0.23.0 en modo SFT, sobre un dataset "packed
 - Generacion de texto offline en dispositivos limitados: con 123 M de parametros, el modelo se puede ejecutar en CPU o en una GPU integrada para prototipos de autocompletado o generacion de texto en urdu sin conexion.
 - Aumento de datos (data augmentation): generar variaciones de frases en urdu para ampliar corpus de entrenamiento de modelos mayores, asumiendo que la calidad sera limitada y requerira filtrado posterior.
 - Docencia y divulgacion: demostrar de forma economica el ciclo completo de ajuste fino con TRL, desde el modelo base hasta el despliegue, en un aula o taller sin acceso a GPUs de datacenter.
-- Pruebas de infraestructura de despliegue: validar pipelines de TGI, endpoints compatibles con la API de inferencia de HuggingFace, batching y cuantificacion usando un modelo pequeno antes de escalar a modelos de mayor tamano.
+- Pruebas de infraestructura de despliegue: validar pipelines de TGI, endpoints compatibles con la API de inferencia de Hugging Face, batching y cuantificacion usando un modelo pequeno antes de escalar a modelos de mayor tamano.
 - Analisis linguistico asistido: extraer estadisticas de fluidez y colocaciones en el dominio del corpus de ajuste, siempre con supervision humana y sin tratar la salida como dato fiable.
 - Punto de partida para ajuste en dominio especifico en urdu (por ejemplo, noticias o textos administrativos), mediante un segundo fine-tuning sobre un corpus propio etiquetado.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/urd-arab-100mb-ppt-Dp-10mb-packed-bfd_seed3407 | 123,2 M | no disponible | SFT sobre goldfish-models/urd_arab_100mb, 10 MB empaquetados | no disponible | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| goldfish-models/urd_arab_100mb (modelo base) | 123,2 M | no disponible | Preentrenamiento sobre ~100 MB de urdu en escritura arabe | no disponible | HuggingFace |
+| francesca9805/urd-arab-100mb-ppt-Dp-10mb-packed-bfd_seed3407 | 123,2 M | no disponible | SFT sobre goldfish-models/urd_arab_100mb, 10 MB empaquetados | no disponible | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| goldfish-models/urd_arab_100mb (modelo base) | 123,2 M | no disponible | Preentrenamiento sobre ~100 MB de urdu en escritura arabe | no disponible | Hugging Face |
 | GPT-2 small (referencia de arquitectura) | 124 M | 1024 tokens | Preentrenamiento web en ingles | MIT (modelo original de OpenAI) | Ampliamente disponible, con versiones GGUF |
 
 El modelo ajustado no aporta cambios en parametros respecto a su base, por lo que la comparacion relevante es de datos y de ajuste, no de tamano. No se dispone de resultados comparativos de rendimiento entre estos tres modelos en la informacion proporcionada, por lo que no es posible establecer cual rinde mejor en tareas concretas.
@@ -91,7 +91,7 @@ El modelo ajustado no aporta cambios en parametros respecto a su base, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-Dp-10mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-Dp-10mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/urd_arab_100mb
 - Organizacion Goldfish Models: https://huggingface.co/goldfish-models
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/gm9bgtu1

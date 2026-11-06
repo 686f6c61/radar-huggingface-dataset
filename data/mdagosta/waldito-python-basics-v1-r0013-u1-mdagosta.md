@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `waldito-python-basics-v1-r0013-u1-mdagosta` es un checkpoint de generacion de texto publicado por el usuario mdagosta en HuggingFace, identificado en su propia model card como una exportacion del proyecto "OpenWALDO". Se trata de un modelo denso de arquitectura Llama causal estandar de Transformers, con un total de 9.541.632 parametros (aproximadamente 9,5 millones), lo que lo situa en la categoria de modelos ultracompactos, tres ordenes de magnitud por debajo de un Llama 3 8B.
+El modelo `waldito-python-basics-v1-r0013-u1-mdagosta` es un checkpoint de generacion de texto publicado por el usuario mdagosta en Hugging Face, identificado en su propia model card como una exportacion del proyecto "OpenWALDO". Se trata de un modelo denso de arquitectura Llama causal estandar de Transformers, con un total de 9.541.632 parametros (aproximadamente 9,5 millones), lo que lo situa en la categoria de modelos ultracompactos, tres ordenes de magnitud por debajo de un Llama 3 8B.
 
 La singularidad del paquete no esta en el tamano, sino en el tokenizador: usa un tokenizador de bytes propio del proyecto OpenWALDO (denominado "schema-1 byte tokenizer") que obliga a cargar con `trust_remote_code=True`, es decir, ejecutando codigo remoto del repositorio. El repositorio incluye ademas ficheros de inventario (`BOM.json`) y un mapeo de divulgacion de contenido de entrenamiento orientado al reglamento europeo de IA (GPAI) en `EU-BOM.json`.
 
@@ -70,14 +70,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-Datos de los modelos alternativos tomados de sus model cards publicas; los del modelo analizado provienen de la informacion de HuggingFace y, cuando no constan, se marcan como no disponibles.
+Datos de los modelos alternativos tomados de sus model cards publicas; los del modelo analizado provienen de la informacion de Hugging Face y, cuando no constan, se marcan como no disponibles.
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| waldito-python-basics-v1-r0013-u1-mdagosta | 9,5 M | no disponible | no disponible | no disponible | HuggingFace, safetensors |
-| SmolLM2-135M | 135 M | 8.192 tokens | Apache-2.0 | ingles principalmente | HuggingFace, safetensors y GGUF |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache-2.0 | multilingue (29 idiomas) | HuggingFace, safetensors y GGUF |
-| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache-2.0 | ingles | HuggingFace, safetensors y GGUF |
+| waldito-python-basics-v1-r0013-u1-mdagosta | 9,5 M | no disponible | no disponible | no disponible | Hugging Face, safetensors |
+| SmolLM2-135M | 135 M | 8.192 tokens | Apache-2.0 | ingles principalmente | Hugging Face, safetensors y GGUF |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache-2.0 | multilingue (29 idiomas) | Hugging Face, safetensors y GGUF |
+| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache-2.0 | ingles | Hugging Face, safetensors y GGUF |
 
 La comparacion directa es poco favorable en terminos de documentacion: los tres modelos de referencia publican licencia, idiomas, contexto y evaluaciones, mientras que este checkpoint no publica ninguno de esos datos. La ventaja diferencial del modelo analizado es exclusivamente su tamano minimo y la trazabilidad documental mediante ficheros BOM.
 
@@ -96,7 +96,7 @@ La comparacion directa es poco favorable en terminos de documentacion: los tres 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0013-u1-mdagosta
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0013-u1-mdagosta
 - Ficheros referenciados en el repositorio: `BOM.json` (inventario de ficheros de la release) y `EU-BOM.json` (mapeo de divulgacion de contenido de entrenamiento GPAI), disponibles en el arbol del repositorio anterior.
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las busquedas devolvieron exclusivamente resultados del extranet del Reseau GES (myges.fr), sin relacion con el modelo.
 - Documentacion del proyecto OpenWALDO: no disponible en la informacion proporcionada.

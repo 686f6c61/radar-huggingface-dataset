@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 - VRAM estimada: al ser BF16, los 2.5B parámetros ocupan aproximadamente 5 GB de memoria, más el overhead del framework. En Apple Silicon, la memoria unificada es compartida entre CPU y GPU.
 - GPU recomendadas: Apple Silicon con al menos 8 GB de RAM unificada (M1, M2, M3, M4 o superiores).
-- ¿Cabe en consumer GPU? No está diseñado para CUDA, pero la conversión original en formato HuggingFace puede ejecutarse en GPU NVIDIA con otros frameworks.
+- ¿Cabe en consumer GPU? No está diseñado para CUDA, pero la conversión original en formato Hugging Face puede ejecutarse en GPU NVIDIA con otros frameworks.
 - Opciones de despliegue: mlx-lm para generación directa, y SGLang con backend Metal para servir el modelo como API local.
 - Latencia y throughput: no disponible.
 

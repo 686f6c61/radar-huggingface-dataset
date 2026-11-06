@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `generatedDigitalExps_1xP4hJ_hier_by_room_rnn_meanPoolProc_video_2`, publicado por el usuario `gianmaTest` en HuggingFace, es un artefacto de pesos en formato safetensors con 2.366.208 parámetros (aproximadamente 2,37 millones). El nombre sugiere un modelo jerárquico por habitación (`hier_by_room`) basado en una RNN con agregación por *mean pooling* sobre características de vídeo, lo que apunta a un experimento académico de generación o clasificación de secuencias visuales más que a un modelo de lenguaje. No se trata de un LLM: no hay tokenizador, ni pipeline declarado, ni idiomas soportados.
+El modelo `generatedDigitalExps_1xP4hJ_hier_by_room_rnn_meanPoolProc_video_2`, publicado por el usuario `gianmaTest` en Hugging Face, es un artefacto de pesos en formato safetensors con 2.366.208 parámetros (aproximadamente 2,37 millones). El nombre sugiere un modelo jerárquico por habitación (`hier_by_room`) basado en una RNN con agregación por *mean pooling* sobre características de vídeo, lo que apunta a un experimento académico de generación o clasificación de secuencias visuales más que a un modelo de lenguaje. No se trata de un LLM: no hay tokenizador, ni pipeline declarado, ni idiomas soportados.
 
 La model card es prácticamente vacía: solo indica que los pesos se subieron mediante la integración `PyTorchModelHubMixin` de `huggingface_hub` y deja como "More Information Needed" el código, el paper y la documentación. No hay licencia declarada, ni descripción del dataset de entrenamiento, ni resultados de evaluación. El repositorio ocupa 0.0 GB (por debajo del umbral de redondeo), lo que es coherente con un checkpoint de pocos megabytes.
 
@@ -65,7 +65,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 ## Limitaciones y advertencias
 
 - Model card vacía: no hay documentación sobre el dataset, el preprocesado ni las métricas de evaluación, lo que impide validar su calidad.
-- Licencia no declarada: no se puede garantizar el uso comercial ni la redistribución; en ausencia de licencia, se aplican las condiciones por defecto de HuggingFace (sin permiso explícito de uso comercial).
+- Licencia no declarada: no se puede garantizar el uso comercial ni la redistribución; en ausencia de licencia, se aplican las condiciones por defecto de Hugging Face (sin permiso explícito de uso comercial).
 - Riesgo de alucinación: no aplica en el sentido de LLM, pero sí existe riesgo de predicciones erróneas sin métricas publicadas que las acoten.
 - Sesgos conocidos: no disponibles; al no documentarse el dataset, no se pueden evaluar sesgos de dominio, geográficos o demográficos.
 - Limitaciones de contexto o idioma: no disponibles; el modelo no parece orientado a texto.
@@ -74,7 +74,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xP4hJ_hier_by_room_rnn_meanPoolProc_video_2
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xP4hJ_hier_by_room_rnn_meanPoolProc_video_2
 - Documentación de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Código: no disponible

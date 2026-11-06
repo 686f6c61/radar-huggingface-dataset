@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AdaraAi/adara-ASR es un repositorio de modelo publicado en HuggingFace por el usuario AdaraAi bajo licencia Apache 2.0. El identificador del repositorio incluye el sufijo "ASR", lo que sugiere un modelo orientado a reconocimiento automatico del habla, pero esta interpretacion no esta confirmada en la informacion disponible: la model card del autor esta practicamente vacia (unicamente contiene la etiqueta de licencia) y no se especifica la tarea, el pipeline ni los idiomas soportados.
+AdaraAi/adara-ASR es un repositorio de modelo publicado en Hugging Face por el usuario AdaraAi bajo licencia Apache 2.0. El identificador del repositorio incluye el sufijo "ASR", lo que sugiere un modelo orientado a reconocimiento automatico del habla, pero esta interpretacion no esta confirmada en la informacion disponible: la model card del autor esta practicamente vacia (unicamente contiene la etiqueta de licencia) y no se especifica la tarea, el pipeline ni los idiomas soportados.
 
 En el momento de la consulta, el repositorio registra 0 descargas y 0 "likes", y fue creado y actualizado el 10 de septiembre de 2026 sin cambios posteriores. No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, dataset de entrenamiento ni resultados de evaluacion. La busqueda web asociada no devolvio ningun resultado relacionado con el modelo: los enlaces encontrados tratan sobre la webmail del proveedor de hosting Aruba, una coincidencia puramente nominal sin relacion tecnica con este repositorio.
 
@@ -32,7 +32,7 @@ Por tanto, esta ficha es un esqueleto verificado de metadatos: todo lo que apare
 
 No disponible. La model card publicada por el autor no incluye descripcion de la arquitectura (transformer, MoE, SSM o hibrida), ni informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de tecnicas de alineacion como RLHF o DPO, ni ninguna innovacion tecnica destacable. Tampoco se declara si el modelo parte de un ajuste fino sobre una base existente o de un entrenamiento desde cero.
 
-El unico indicio sobre la naturaleza del modelo es el sufijo "ASR" en el identificador del repositorio, que en la nomenclatura habitual de HuggingFace se asocia a Automatic Speech Recognition. Se trata de una inferencia nominal, no de un dato confirmado, y no permite deducir ni el encoder acustico empleado, ni el tipo de decodificador, ni si incorpora capacidades adicionales como diarizacion de hablantes, traduccion de voz o marcas de tiempo a nivel de palabra.
+El unico indicio sobre la naturaleza del modelo es el sufijo "ASR" en el identificador del repositorio, que en la nomenclatura habitual de Hugging Face se asocia a Automatic Speech Recognition. Se trata de una inferencia nominal, no de un dato confirmado, y no permite deducir ni el encoder acustico empleado, ni el tipo de decodificador, ni si incorpora capacidades adicionales como diarizacion de hablantes, traduccion de voz o marcas de tiempo a nivel de palabra.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la tare
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AdaraAi/adara-ASR | no disponible | no disponible | no disponible | apache-2.0 | repositorio HuggingFace, 0 descargas |
+| AdaraAi/adara-ASR | no disponible | no disponible | no disponible | apache-2.0 | repositorio Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AdaraAi/adara-ASR
+- Repositorio en Hugging Face: https://huggingface.co/AdaraAi/adara-ASR
 - Model card (contenido publicado): unicamente la etiqueta `license: apache-2.0`; sin secciones adicionales.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.
 - Resultados de la busqueda web: no se encontro ningun recurso relacionado con el modelo. Los enlaces devueltos corresponden a consultas de soporte sobre la webmail del proveedor Aruba (support.google.com, hwupgrade.it) y no guardan relacion tecnica con este repositorio.

@@ -84,8 +84,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo | 8,2 mil millones | No disponible | Macro-F1@5 0,7048 en test; NDCG@5 0,7779; Spearman 0,4065 | No disponible | HuggingFace, 0 descargas |
-| jiosephlee/Intern-S1-mini-lm (modelo base) | No disponible (cabria esperar un orden similar, sin confirmacion) | No disponible | No disponible | No disponible | HuggingFace |
+| Este modelo | 8,2 mil millones | No disponible | Macro-F1@5 0,7048 en test; NDCG@5 0,7779; Spearman 0,4065 | No disponible | Hugging Face, 0 descargas |
+| jiosephlee/Intern-S1-mini-lm (modelo base) | No disponible (cabria esperar un orden similar, sin confirmacion) | No disponible | No disponible | No disponible | Hugging Face |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion suficiente para establecer comparaciones cuantitativas con otros modelos de quimica computacional o de transferencia de ensayos. La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre su dominio.
@@ -106,7 +106,7 @@ No se dispone de informacion suficiente para establecer comparaciones cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-3-bbb-martins-best
+- Modelo en Hugging Face: https://huggingface.co/jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-3-bbb-martins-best
 - Modelo base: https://huggingface.co/jiosephlee/Intern-S1-mini-lm
 - Dataset de entrenamiento: https://huggingface.co/datasets/jiosephlee/context-conditioned-molecule-transfer-v10.3-bbb-martins-mixed-continuous-intern
 - Registro del entrenamiento (Weights & Biases): https://wandb.ai/upenn-ml/context-conditioned-molecule-transfer-soft/runs/lwxveh82

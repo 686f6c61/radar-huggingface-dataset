@@ -18,7 +18,7 @@ El modelo objetivo declarado es `LiquidAI/LFM2.5-8B-A1B-DSpark-GGUF`. La nomencl
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q8_0 (único formato incluido en el repositorio) |
 | Idiomas soportados | no disponible |
-| Licencia | lfm1.0 (LFM Open License v1.0); en HuggingFace declarada como `other` con `license_name: lfm1.0` |
+| Licencia | lfm1.0 (LFM Open License v1.0); en Hugging Face declarada como `other` con `license_name: lfm1.0` |
 | Formato de pesos | GGUF (fichero único `LFM2.5-8B-A1B-DSpark-Q8_0.gguf`) |
 | Tamano del repositorio | 0,4 GB |
 | Revision de origen | `7ba04ee5ff05a4baf2681fe5ddda6d736581ccdf` (repositorio de LiquidAI) |
@@ -73,9 +73,9 @@ Los resultados de búsqueda sí muestran análisis de terceros que examinan la a
 
 | Modelo | Tipo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| magnitudedev/LFM2.5-8B-A1B-DSpark-GGUF (este) | Borrador para decodificación especulativa | 327.707.521 | GGUF Q8_0 | no disponible | lfm1.0 | HuggingFace, requiere objetivo |
-| LiquidAI/LFM2.5-8B-A1B-DSpark-GGUF | Borrador original de Liquid AI | no disponible | GGUF | no disponible | lfm1.0 | HuggingFace |
-| LiquidAI/LFM2.5-8B-A1B-GGUF | Modelo objetivo servible de forma autónoma | ~8B (según nomenclatura) | GGUF (p. ej. Q4_K_M) | no disponible | lfm1.0 | HuggingFace |
+| magnitudedev/LFM2.5-8B-A1B-DSpark-GGUF (este) | Borrador para decodificación especulativa | 327.707.521 | GGUF Q8_0 | no disponible | lfm1.0 | Hugging Face, requiere objetivo |
+| LiquidAI/LFM2.5-8B-A1B-DSpark-GGUF | Borrador original de Liquid AI | no disponible | GGUF | no disponible | lfm1.0 | Hugging Face |
+| LiquidAI/LFM2.5-8B-A1B-GGUF | Modelo objetivo servible de forma autónoma | ~8B (según nomenclatura) | GGUF (p. ej. Q4_K_M) | no disponible | lfm1.0 | Hugging Face |
 | Decodificación estándar en llama.cpp sin borrador | Línea base sin decodificación especulativa | no aplica | GGUF | no disponible | no aplica | llama.cpp |
 
 No se dispone de datos de rendimiento comparado entre estas opciones dentro de la información proporcionada, por lo que la comparativa se limita a tipo de artefacto, tamaño, formato y licencia.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones dentro de l
 
 - No es un modelo autónomo: sin el modelo objetivo correspondiente no produce salida utilizable. Cargarlo de forma aislada no tiene sentido.
 - Dependencia de implementación: está atado a la configuración DSpark y a la implementación DFlash de SGLang. No es portable a runtimes que no soporten esos metadatos (`dflash.attention.causal`, `dflash.sample_from_anchor`).
-- Licencia: se rige por la LFM Open License v1.0. Es imprescindible revisar sus condiciones antes de cualquier uso comercial, ya que la licencia se declara como `other` en HuggingFace.
+- Licencia: se rige por la LFM Open License v1.0. Es imprescindible revisar sus condiciones antes de cualquier uso comercial, ya que la licencia se declara como `other` en Hugging Face.
 - Sin validación comunitaria: el repositorio registra 0 descargas y 0 «likes» en el momento de la consulta, y es una resubida de un artefacto ya existente. No hay evidencia de uso en producción.
 - Riesgo de confusión de tamaños: el recuento de 327.707.521 parámetros corresponde al borrador, no a un modelo de 8B. Interpretarlo como el tamaño real del modelo llevaría a decisiones erróneas de hardware.
 - Idiomas, sesgos y alucinación: no disponibles para el artefacto. Cualquier comportamiento de este tipo dependerá del modelo objetivo, no del borrador.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones dentro de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/magnitudedev/LFM2.5-8B-A1B-DSpark-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/magnitudedev/LFM2.5-8B-A1B-DSpark-GGUF
 - Borrador original de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-DSpark-GGUF/tree/7ba04ee5ff05a4baf2681fe5ddda6d736581ccdf
 - Configuración DSpark en SGLang: https://github.com/sgl-project/sglang/blob/264d1c20153cadc921670b982e6531d9800353e6/python/sglang/srt/speculative/dspark_components/dspark_config.py
 - Implementación DFlash en SGLang: https://github.com/sgl-project/sglang/blob/264d1c20153cadc921670b982e6531d9800353e6/python/sglang/srt/models/dflash.py

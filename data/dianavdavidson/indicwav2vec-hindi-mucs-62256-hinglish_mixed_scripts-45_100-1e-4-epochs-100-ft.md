@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `indicwav2vec-hindi-mucs-62256-hinglish_mixed_scripts-45_100-1e-4-epochs-100-FT` es un ajuste fino (fine-tuning) del modelo base `ai4bharat/indicwav2vec-hindi`, desarrollado por el usuario de HuggingFace `dianavdavidson`. Se trata de un sistema de reconocimiento automático del habla (ASR) especializado en la transcripción de audio en hinglish, es decir, la mezcla de hindi e inglés con escrituras mixtas (devanagari y latina). El nombre del modelo sugiere que fue entrenado sobre el dataset MUCS (Multilingual Code-Switching) con 62.256 muestras, aunque la model card no confirma explícitamente el origen de los datos.
+El modelo `indicwav2vec-hindi-mucs-62256-hinglish_mixed_scripts-45_100-1e-4-epochs-100-FT` es un ajuste fino (fine-tuning) del modelo base `ai4bharat/indicwav2vec-hindi`, desarrollado por el usuario de Hugging Face `dianavdavidson`. Se trata de un sistema de reconocimiento automático del habla (ASR) especializado en la transcripción de audio en hinglish, es decir, la mezcla de hindi e inglés con escrituras mixtas (devanagari y latina). El nombre del modelo sugiere que fue entrenado sobre el dataset MUCS (Multilingual Code-Switching) con 62.256 muestras, aunque la model card no confirma explícitamente el origen de los datos.
 
 El modelo hereda la arquitectura wav2vec2 de su base, con aproximadamente 315,5 millones de parámetros, y está orientado a tareas de transcripción de voz en contextos de code-switching, un fenómeno frecuente en la India. Su relevancia radica en que aborda un caso de uso real y poco cubierto por los ASR monolingües: la alternancia de idiomas dentro de una misma frase. Aunque no se publican benchmarks comparativos, el autor reporta un WER global de 21,57 en su conjunto de evaluación, lo que indica un rendimiento moderado que puede ser útil en aplicaciones específicas de dominio.
 
@@ -44,7 +44,7 @@ El entrenamiento se llevó a cabo durante 100 épocas con una tasa de aprendizaj
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El model-index de HuggingFace no incluye ninguna métrica comparativa. El único dato de rendimiento es el reportado en la model card durante el entrenamiento:
+No se han publicado resultados de benchmarks en la informacion disponible. El model-index de Hugging Face no incluye ninguna métrica comparativa. El único dato de rendimiento es el reportado en la model card durante el entrenamiento:
 
 | Metrica | Valor |
 |---|---|
@@ -58,16 +58,16 @@ Este WER se obtuvo sobre un conjunto de evaluación no especificado, por lo que 
 - VRAM estimada para inferencia: el modelo tiene 315,5 M de parámetros en fp32 (~1,26 GB). En fp16 se reduce a ~0,63 GB, pero las activaciones y el procesamiento de audio requieren memoria adicional. Se estima un consumo de 2-4 GB de VRAM para inferencia en GPU.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, como NVIDIA GTX 1650, RTX 2060, RTX 3060, o superiores. En CPU es posible la inferencia pero con latencias altas (varios segundos por segundo de audio).
 - Cabe en GPUs de consumo: sí, en tarjetas como RTX 3060 o superiores.
-- Opciones de despliegue: al ser un modelo de transformers, se puede servir con HuggingFace Inference Endpoints, o mediante librerías como `transformers` con pipeline de ASR. También es compatible con `torchaudio` para preprocesado. No se han reportado integraciones con vLLM, llama.cpp u Ollama, ya que estos están orientados a modelos de lenguaje, no a ASR.
+- Opciones de despliegue: al ser un modelo de transformers, se puede servir con Hugging Face Inference Endpoints, o mediante librerías como `transformers` con pipeline de ASR. También es compatible con `torchaudio` para preprocesado. No se han reportado integraciones con vLLM, llama.cpp u Ollama, ya que estos están orientados a modelos de lenguaje, no a ASR.
 - Latencia y throughput: no disponible. Depende del hardware y de la longitud del audio de entrada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | WER (evaluacion) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dianavdavidson/indicwav2vec-hindi-mucs-62256-hinglish_mixed_scripts-45_100-1e-4-epochs-100-FT` | 315,5 M | no disponible | 21,57 % | Apache 2.0 | HuggingFace |
-| `ai4bharat/indicwav2vec-hindi` (base) | 315,5 M | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| `openai/whisper-small` | 244 M | 30 s de audio | ~10-15 % en hindi (depende del corpus) | MIT | HuggingFace |
+| `dianavdavidson/indicwav2vec-hindi-mucs-62256-hinglish_mixed_scripts-45_100-1e-4-epochs-100-FT` | 315,5 M | no disponible | 21,57 % | Apache 2.0 | Hugging Face |
+| `ai4bharat/indicwav2vec-hindi` (base) | 315,5 M | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| `openai/whisper-small` | 244 M | 30 s de audio | ~10-15 % en hindi (depende del corpus) | MIT | Hugging Face |
 
 El modelo base `indicwav2vec-hindi` es el punto de partida de este fine-tuning; no se dispone de su WER en el mismo corpus. Whisper-small es un modelo ASR multilingüe generalista que suele obtener mejores resultados en hindi estándar, pero no está optimizado para code-switching hinglish. Este modelo fine-tuneado podría superar a Whisper en contextos específicos de mezcla de idiomas, aunque no hay datos comparativos publicados.
 
@@ -82,7 +82,7 @@ El modelo base `indicwav2vec-hindi` es el punto de partida de este fine-tuning; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dianavdavidson/indicwav2vec-hindi-mucs-62256-hinglish_mixed_scripts-45_100-1e-4-epochs-100-FT
+- Modelo en Hugging Face: https://huggingface.co/dianavdavidson/indicwav2vec-hindi-mucs-62256-hinglish_mixed_scripts-45_100-1e-4-epochs-100-FT
 - Modelo base: https://huggingface.co/ai4bharat/indicwav2vec-hindi
 - Repositorio GitHub de IndicWav2Vec: https://github.com/AI4Bharat/IndicWav2Vec
 - Portal de modelos AI4Bharat: https://models.ai4bharat.org/

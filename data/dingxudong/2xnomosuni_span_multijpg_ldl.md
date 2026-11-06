@@ -2,7 +2,7 @@
 
 ## Resumen
 
-2xNomosUni_span_multijpg_ldl es un modelo de superresolución de imágenes (image-to-image) entrenado para realizar un escalado 2x preservando la profundidad de campo (DoF, *depth of field*) de la imagen original. Lo desarrolla Philip Hofmann (usuario de HuggingFace `dingxudong`) y emplea la arquitectura SPAN (*Swift Parameter-free Attention Network*), una red de superresolución ligera y rápida diseñada para inferencia de bajo coste computacional.
+2xNomosUni_span_multijpg_ldl es un modelo de superresolución de imágenes (image-to-image) entrenado para realizar un escalado 2x preservando la profundidad de campo (DoF, *depth of field*) de la imagen original. Lo desarrolla Philip Hofmann (usuario de Hugging Face `dingxudong`) y emplea la arquitectura SPAN (*Swift Parameter-free Attention Network*), una red de superresolución ligera y rápida diseñada para inferencia de bajo coste computacional.
 
 El modelo se presenta como un upscaler universal rápido, entrenado sobre el conjunto de datos `nomosuni` (2989 imágenes de alta resolución de 128 px) durante 120 000 iteraciones, con degradaciones JPEG controladas (hasta calidad 40) y degradaciones multiescala (down-up, bicúbica, bilineal, box, nearest y Lanczos). La inclusión de degradaciones JPEG lo orienta a la restauración de imágenes comprimidas, un escenario frecuente en material descargado de internet o en archivos heredados.
 
@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Escala | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 2xNomosUni_span_multijpg_ldl | SPAN | 2x | Universal, JPEG y multiescala, preserva DoF | CC BY 4.0 | HuggingFace y GitHub release |
-| 2xNomosUni_span_multijpg | SPAN | 2x | Modelo base del que deriva este | no disponible en la informacion | HuggingFace (referenciado como preentrenado) |
+| 2xNomosUni_span_multijpg_ldl | SPAN | 2x | Universal, JPEG y multiescala, preserva DoF | CC BY 4.0 | Hugging Face y GitHub release |
+| 2xNomosUni_span_multijpg | SPAN | 2x | Modelo base del que deriva este | no disponible en la informacion | Hugging Face (referenciado como preentrenado) |
 | Otros upscalers SPAN del mismo autor | SPAN | variable | Variantes de entrenamiento | no disponible | GitHub de Phhofm/models |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 - Solo realiza escalado 2x; no admite otros factores de escala de forma nativa.
 - No es un modelo de lenguaje: no procesa texto, no soporta tool calling ni agentes.
-- El repositorio de HuggingFace tiene un tamano de 0.0 GB, lo que sugiere que los pesos podrian no estar alojados alli; es necesario comprobar la release de GitHub antes de asumir su disponibilidad.
+- El repositorio de Hugging Face tiene un tamano de 0.0 GB, lo que sugiere que los pesos podrian no estar alojados alli; es necesario comprobar la release de GitHub antes de asumir su disponibilidad.
 - No se documentan sesgos especificos, pero al entrenarse con un dataset no descrito en detalle (nomosuni, 2989 imagenes), puede presentar sesgos hacia los tipos de contenido representados (los ejemplos son trigo, arte digital y rostros).
 - Riesgo de artefactos o alucinacion de detalle en imagenes muy degradadas o fuera de la distribucion de entrenamiento, algo inherente a los modelos de superresolucion.
 - La licencia CC BY 4.0 permite uso comercial con atribucion; es necesario citar al autor y la licencia.
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dingxudong/2xNomosUni_span_multijpg_ldl
+- Modelo en Hugging Face: https://huggingface.co/dingxudong/2xNomosUni_span_multijpg_ldl
 - Release en GitHub: https://github.com/Phhofm/models/releases/tag/2xNomosUni_span_multijpg_ldl
 - Repositorio de modelos del autor: https://github.com/Phhofm/models
 - Arquitectura SPAN: https://github.com/hongyuanyu/SPAN

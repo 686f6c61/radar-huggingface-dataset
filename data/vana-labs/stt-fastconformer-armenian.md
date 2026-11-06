@@ -88,7 +88,7 @@ Las referencias de localización (`hy`) solo permiten una comparación sólida d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vana-Labs/stt-fastconformer-armenian
+- Modelo en Hugging Face: https://huggingface.co/Vana-Labs/stt-fastconformer-armenian
 - Modelo base: https://huggingface.co/nvidia/stt_hy_fastconformer_hybrid_large_pc
 - Runtime recomendado (onnx-asr): https://github.com/istupakov/onnx-asr
 - Articulo de FastConformer: https://arxiv.org/abs/2305.05084

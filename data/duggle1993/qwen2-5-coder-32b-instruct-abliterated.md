@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen2.5-Coder-32B-Instruct-abliterated es una variante "abliterated" (con las direcciones de rechazo suprimidas mediante edición de pesos) del modelo Qwen2.5-Coder-32B-Instruct desarrollado originalmente por el equipo Qwen de Alibaba Cloud. La modificación la firma el usuario duggle1993 en HuggingFace y su objetivo es eliminar los mecanismos de rechazo del modelo base, de modo que responda a peticiones que el original declinaría. El modelo conserva la arquitectura, el tamaño y las capacidades del original: un transformer denso de 32.763.876.352 parámetros (unos 32,8 mil millones) especializado en generación de código.
+Qwen2.5-Coder-32B-Instruct-abliterated es una variante "abliterated" (con las direcciones de rechazo suprimidas mediante edición de pesos) del modelo Qwen2.5-Coder-32B-Instruct desarrollado originalmente por el equipo Qwen de Alibaba Cloud. La modificación la firma el usuario duggle1993 en Hugging Face y su objetivo es eliminar los mecanismos de rechazo del modelo base, de modo que responda a peticiones que el original declinaría. El modelo conserva la arquitectura, el tamaño y las capacidades del original: un transformer denso de 32.763.876.352 parámetros (unos 32,8 mil millones) especializado en generación de código.
 
 El modelo base Qwen2.5-Coder-32B-Instruct es un transformer decoder-only de la familia Qwen2.5, entrenado con un volumen elevado de tokens de código y texto, y con un contexto nativo de 32.768 tokens (extensible hasta 131.072 mediante RoPE scaling, según la documentación del modelo original). Esta variante hereda esas características y añade la supresión de rechazos, lo que la hace relevante para investigadores que estudian alineamiento, safety y comportamiento de modelos, así como para casos donde el filtrado del modelo base resulta demasiado restrictivo.
 
-La ficha se centra en lo que se puede verificar a partir de la información disponible en HuggingFace. Conviene subrayar que el repositorio tiene acceso restringido (gated), requiere aceptar condiciones, acumula 11 descargas y 0 likes en el momento de la consulta, y no publica tarjeta de modelo detallada ni resultados de benchmarks propios.
+La ficha se centra en lo que se puede verificar a partir de la información disponible en Hugging Face. Conviene subrayar que el repositorio tiene acceso restringido (gated), requiere aceptar condiciones, acumula 11 descargas y 0 likes en el momento de la consulta, y no publica tarjeta de modelo detallada ni resultados de benchmarks propios.
 
 ## Especificaciones tecnicas
 
@@ -82,14 +82,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Riesgo de alucinación: como cualquier LLM, puede inventar APIs, funciones o referencias; la ablación puede aumentar la confianza en respuestas incorrectas al eliminar las negativas.
 - La tarjeta declara únicamente inglés; el rendimiento multilingüe del base puede no conservarse íntegramente tras la edición de pesos.
 - El contexto extendido a 131.072 tokens es una característica del base no verificada en esta variante; conviene validarla empíricamente antes de usarla.
-- Licencia Apache 2.0 permite uso comercial, pero el acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace; además, el uso comercial de un modelo sin filtros conlleva responsabilidad legal y reputacional.
+- Licencia Apache 2.0 permite uso comercial, pero el acceso es restringido (gated) y requiere aceptar condiciones en Hugging Face; además, el uso comercial de un modelo sin filtros conlleva responsabilidad legal y reputacional.
 - Sin benchmarks ni evaluación de la degradación introducida por la ablación: no hay garantía de que las capacidades de código se mantengan al nivel del base.
 - Repositorio con muy poca tracción (11 descargas, 0 likes) y sin mantenimiento documentado; no hay garantía de soporte ni de actualizaciones.
 - La fecha de creación indicada (2026-10-28) es futura respecto a la fecha habitual de consulta; conviene verificar la integridad y procedencia de los pesos antes de usarlos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/duggle1993/Qwen2.5-Coder-32B-Instruct-abliterated
+- Hugging Face: https://huggingface.co/duggle1993/Qwen2.5-Coder-32B-Instruct-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 - Repositorio oficial de Qwen2.5-Coder: https://github.com/QwenLM/Qwen2.5-Coder
 - Blog de Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder/

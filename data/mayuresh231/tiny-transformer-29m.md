@@ -65,7 +65,7 @@ Estos valores indican una convergencia razonable para un modelo de este tamano e
 - VRAM estimada para inferencia: menos de 1 GB en precision fp32 (29,5 M parametros * 4 bytes ≈ 118 MB) y menos de 0,5 GB en fp16.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, incluyendo RTX 3050, RTX 3060 o incluso GPUs integradas de Intel/AMD para inferencia en CPU.
 - Cabe en GPU de consumo: si, tanto para entrenamiento (ya demostrado en RTX 3050 Laptop 6 GB) como para inferencia.
-- Opciones de despliegue: compatible con la libreria Transformers de HuggingFace (con `trust_remote_code=True`). No hay soporte oficial para vLLM, llama.cpp, Ollama o TGI, aunque podria adaptarse manualmente.
+- Opciones de despliegue: compatible con la libreria Transformers de Hugging Face (con `trust_remote_code=True`). No hay soporte oficial para vLLM, llama.cpp, Ollama o TGI, aunque podria adaptarse manualmente.
 - Latencia y throughput: debido a la ausencia de caché de KV, la generacion es lenta en comparacion con modelos optimizados; se estima que la generacion de 200 tokens puede tardar varios segundos en CPU o GPU de gama baja.
 
 ## Comparativa con modelos similares
@@ -79,12 +79,12 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. E
 - Ventana de contexto muy corta (256 tokens): no es adecuado para tareas que requieran contexto largo.
 - Sin caché de KV: la generacion es ineficiente y no escalable para produccion.
 - Solo soporta ingles en minusculas; no maneja mayusculas ni otros idiomas.
-- Requiere `trust_remote_code=True`, lo que implica ejecutar codigo personalizado no auditado por HuggingFace; se debe revisar el codigo antes de usarlo en entornos de produccion.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar codigo personalizado no auditado por Hugging Face; se debe revisar el codigo antes de usarlo en entornos de produccion.
 - No se han publicado cuantizaciones ni soporte para frameworks de inferencia optimizados (vLLM, llama.cpp, etc.).
 - Licencia MIT permite uso comercial, pero el modelo no esta disenado para aplicaciones de alto riesgo; el autor desaconseja su uso en decisiones criticas.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Mayuresh231/tiny-transformer-29m)
+- [Modelo en Hugging Face](https://huggingface.co/Mayuresh231/tiny-transformer-29m)
 - [Dataset TinyStories (roneneldan/TinyStories)](https://huggingface.co/datasets/roneneldan/TinyStories)
 - [Licencia MIT](https://opensource.org/licenses/MIT)

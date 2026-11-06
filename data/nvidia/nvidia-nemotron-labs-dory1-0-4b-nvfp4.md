@@ -89,7 +89,7 @@ Comparación basada exclusivamente en los datos de la model card. Los parámetro
 
 | Modelo | Parametros | Contexto | SWE-bench Verified | Terminal-Bench 2.1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Dory1.0-4B (4 bucles) | 4B (model card) / 2,32B (safetensors) | 256K | 61,8 | 22,2 | OpenMDW 1.1 | HuggingFace (nvidia) |
+| Dory1.0-4B (4 bucles) | 4B (model card) / 2,32B (safetensors) | 256K | 61,8 | 22,2 | OpenMDW 1.1 | Hugging Face (nvidia) |
 | Qwen3.5-4B | 4B | no disponible | 54,7 | 15 | no disponible | no disponible |
 | Qwen3.5-9B | 9B | no disponible | 61,0 | 24 | no disponible | no disponible |
 | Gemma 4 26B A4B | 26B (MoE, ~4B activos) | no disponible | 57,40 | 35 | no disponible | no disponible |
@@ -112,7 +112,7 @@ Lectura de los datos: con 4 bucles, Dory1.0-4B supera a Qwen3.5-4B y a Qwen3.5-9
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
 - Texto completo de la licencia OpenMDW 1.1 (repositorio GitHub): https://raw.githubusercontent.com/OpenMDW/OpenMDW/refs/heads/main/1.1/LICENSE.OpenMDW-1.1
 - Página de desarrollador de Nemotron (NVIDIA): https://developer.nvidia.com/nemotron

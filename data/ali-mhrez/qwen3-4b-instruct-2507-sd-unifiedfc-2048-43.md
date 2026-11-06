@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-43 es un ajuste fino supervisado (SFT) del modelo Qwen3-4B-Instruct-2507, publicado en HuggingFace por el usuario Ali-Mhrez. Segun la model card, el entrenamiento se realizo con la libreria TRL (version 0.24.0) y el framework Unsloth, partiendo del checkpoint `unsloth/Qwen3-4B-Instruct-2507`. El repositorio contiene pesos en formato safetensors y esta etiquetado como compatible con endpoints, aunque no se documenta ni el dataset de entrenamiento, ni el numero de pasos, ni la receta de hiperparametros.
+Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-43 es un ajuste fino supervisado (SFT) del modelo Qwen3-4B-Instruct-2507, publicado en Hugging Face por el usuario Ali-Mhrez. Segun la model card, el entrenamiento se realizo con la libreria TRL (version 0.24.0) y el framework Unsloth, partiendo del checkpoint `unsloth/Qwen3-4B-Instruct-2507`. El repositorio contiene pesos en formato safetensors y esta etiquetado como compatible con endpoints, aunque no se documenta ni el dataset de entrenamiento, ni el numero de pasos, ni la receta de hiperparametros.
 
 El interes de esta ficha es limitado pero claro: se trata de un derivado comunitario de un modelo denso de aproximadamente 4.000 millones de parametros, una categoria que cabe en GPU de consumo y que resulta atractiva para tareas de generacion de texto, codigo y function calling en local. El sufijo del nombre ("SD-UnifiedFC-2048-43") sugiere algun tipo de ajuste orientado a function calling unificado y una ventana de 2048 tokens, pero esto no aparece confirmado en ninguna seccion de la model card, por lo que debe tratarse como una hipotesis no verificada.
 
@@ -75,7 +75,7 @@ Las cifras siguientes son estimaciones derivadas del tamano del modelo base (~4.
 - GPU de consumo compatibles: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 Ti Super, RTX 4080, RTX 4090, RTX 5090. En 4 bits cabe tambien en GPUs de 8 GB, con contexto limitado.
 - CABE en GPU de consumo: si, en la mayoria de tarjetas de 8 GB o mas si se usa cuantizacion de 4 bits, y en tarjetas de 12-16 GB con margen para contextos medios.
 - Mac Apple Silicon: viable con llama.cpp/Ollama en equipos con 16 GB o mas de memoria unificada.
-- Opciones de despliegue: transformers (ruta oficial declarada), vLLM, SGLang, TGI, llama.cpp, Ollama y LM Studio tras convertir los pesos a GGUF. La model card indica compatibilidad con endpoints en HuggingFace.
+- Opciones de despliegue: transformers (ruta oficial declarada), vLLM, SGLang, TGI, llama.cpp, Ollama y LM Studio tras convertir los pesos a GGUF. La model card indica compatibilidad con endpoints en Hugging Face.
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas para este ajuste fino.
 
 Advertencia: el tamano del repositorio (1,0 GB) no cuadra con pesos completos en bf16 de un modelo de 4B. Antes de planificar el despliegue conviene inspeccionar los archivos del repositorio para determinar si se trata de pesos completos cuantizados, de un adaptador LoRA o de un checkpoint incompleto.
@@ -84,11 +84,11 @@ Advertencia: el tamano del repositorio (1,0 GB) no cuadra con pesos completos en
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-43 (este modelo) | ~4B | No disponible (nombre sugiere 2048) | No disponible | HuggingFace, 0 descargas | No disponible |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4B | 262.144 tokens (ampliable con YaRN) | Apache 2.0 segun documentacion publica del base | HuggingFace, ampliamente distribuido | Resultados publicados por el autor del base |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Licencia comunitaria Llama 3.1 con clausulas de uso | HuggingFace | Resultados publicados por Meta |
-| google/gemma-3-4b-it | ~4B | 128.000 tokens | Licencia Gemma | HuggingFace | Resultados publicados por Google |
-| microsoft/Phi-4-mini-instruct | ~3,8B | 128.000 tokens | MIT | HuggingFace | Resultados publicados por Microsoft |
+| Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-43 (este modelo) | ~4B | No disponible (nombre sugiere 2048) | No disponible | Hugging Face, 0 descargas | No disponible |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4B | 262.144 tokens (ampliable con YaRN) | Apache 2.0 segun documentacion publica del base | Hugging Face, ampliamente distribuido | Resultados publicados por el autor del base |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Licencia comunitaria Llama 3.1 con clausulas de uso | Hugging Face | Resultados publicados por Meta |
+| google/gemma-3-4b-it | ~4B | 128.000 tokens | Licencia Gemma | Hugging Face | Resultados publicados por Google |
+| microsoft/Phi-4-mini-instruct | ~3,8B | 128.000 tokens | MIT | Hugging Face | Resultados publicados por Microsoft |
 
 Nota: los datos de los modelos comparativos y del modelo base proceden de su documentacion publica, no de la informacion proporcionada en esta ficha. La unica fila verificable con los datos disponibles es la de este modelo, cuyos campos de licencia, contexto y rendimiento figuran como no disponibles.
 
@@ -107,9 +107,9 @@ Nota: los datos de los modelos comparativos y del modelo base proceden de su doc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-43
-- Modelo base en HuggingFace (version Unsloth): https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
-- Modelo base original en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+- Modelo en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-43
+- Modelo base en Hugging Face (version Unsloth): https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
+- Modelo base original en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Informe tecnico de Qwen3 (referencia del modelo base): https://arxiv.org/abs/2505.09388

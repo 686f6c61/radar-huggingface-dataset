@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rubenbalbastre/r2warmup_qwen_qwen2_5_0_5b_instruct_john_d_rockefeller` es un adaptador LoRA (PEFT) entrenado mediante supervisión fina (SFT, con la librería TRL) sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct. No es un modelo completo con pesos propios: se distribuye únicamente el delta de pesos en formato safetensors y requiere cargar el modelo base por separado para su uso. El repositorio ocupa 0,2 GB y la model card es la plantilla por defecto de HuggingFace, sin ningún campo completado por el autor.
+`rubenbalbastre/r2warmup_qwen_qwen2_5_0_5b_instruct_john_d_rockefeller` es un adaptador LoRA (PEFT) entrenado mediante supervisión fina (SFT, con la librería TRL) sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct. No es un modelo completo con pesos propios: se distribuye únicamente el delta de pesos en formato safetensors y requiere cargar el modelo base por separado para su uso. El repositorio ocupa 0,2 GB y la model card es la plantilla por defecto de Hugging Face, sin ningún campo completado por el autor.
 
 El identificador del adaptador lo sitúa dentro de una línea de trabajo de *machine unlearning*: la etiqueta `base_model:adapter` apunta a la ruta local `/storage/scratch/lv13/lv13594/machine-unlearning-llm/outputs/model/Qwen--Qwen2.5-0.5B-Instruct`, lo que sugiere que forma parte de un *pipeline* experimental de desaprendizaje o de calentamiento previo (*warmup*) asociado a ese proyecto. El sufijo `john_d_rockefeller` indica que el ajuste incorpora una persona o personaje concreto, aunque no hay documentación que lo confirme.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-- Espacio en disco del adaptador: 0,2 GB (tamaño del repositorio en HuggingFace).
+- Espacio en disco del adaptador: 0,2 GB (tamaño del repositorio en Hugging Face).
 - Pesos del modelo base en fp16: aproximadamente 1 GB, a los que se suman los del adaptador.
 - VRAM estimada en fp16 o bf16: en torno a 1,5-2,5 GB incluyendo caché KV para contextos moderados.
 - VRAM estimada en cuantización de 4 bits (por ejemplo, Q4_K_M tras fusionar y convertir): menos de 1 GB de pesos.
@@ -90,7 +90,7 @@ La comparación se limita a tamaño, contexto declarado, licencia y formato, ya 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rubenbalbastre/r2warmup_qwen_qwen2_5_0_5b_instruct_john_d_rockefeller
+- Modelo en Hugging Face: https://huggingface.co/rubenbalbastre/r2warmup_qwen_qwen2_5_0_5b_instruct_john_d_rockefeller
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Referencia de paper citada en las etiquetas: https://arxiv.org/abs/2608.17804
 - Ruta local del proyecto de desaprendizaje referenciada en la etiqueta `base_model:adapter`: `/storage/scratch/lv13/lv13594/machine-unlearning-llm/outputs/model/Qwen--Qwen2.5-0.5B-Instruct` (no accesible públicamente)

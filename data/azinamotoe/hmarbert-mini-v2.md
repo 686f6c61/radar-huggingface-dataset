@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HmarBERT-mini-v2 es un repositorio de modelo publicado en HuggingFace por el usuario azinamotoe bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card sustantiva: el README se limita al bloque de frontmatter con la licencia, sin descripcion, sin resultados de evaluacion y sin instrucciones de uso. Los metadatos disponibles tampoco declaran tarea (pipeline), idiomas soportados ni arquitectura.
+HmarBERT-mini-v2 es un repositorio de modelo publicado en Hugging Face por el usuario azinamotoe bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card sustantiva: el README se limita al bloque de frontmatter con la licencia, sin descripcion, sin resultados de evaluacion y sin instrucciones de uso. Los metadatos disponibles tampoco declaran tarea (pipeline), idiomas soportados ni arquitectura.
 
 El identificador del repositorio sugiere, como mera inferencia a partir del nombre y no como dato verificado, que se trata de un modelo de la familia BERT en una variante "mini" (menor numero de capas y dimensiones ocultas que un BERT-base) orientada a la lengua hmar, una lengua kuki-chin hablada en el noreste de la India. Esta interpretacion no esta confirmada por ninguna seccion del repositorio y debe verificarse antes de cualquier uso.
 
@@ -97,6 +97,6 @@ La comparacion de rendimiento con estos modelos no puede realizarse con los dato
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/azinamotoe/HmarBERT-mini-v2
+- Repositorio en Hugging Face: https://huggingface.co/azinamotoe/HmarBERT-mini-v2
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

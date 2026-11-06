@@ -76,7 +76,7 @@ No disponible. No se conocen modelos comparables dentro de la misma categoria po
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kennynakamura/audio-visual-learning-survey
+- Repositorio en Hugging Face: https://huggingface.co/kennynakamura/audio-visual-learning-survey
 - Artefacto principal citado en la model card: `paper_notes.md` (dentro del propio repositorio)
 - Documentacion del repositorio: `README.md` (dentro del propio repositorio)
 - Papers, blogs, repositorios o demos adicionales: no disponibles. La busqueda web no devolvio ninguna fuente tecnica relevante sobre este repositorio.

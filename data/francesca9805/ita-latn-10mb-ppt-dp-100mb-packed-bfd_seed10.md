@@ -60,15 +60,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - GPU recomendadas: no requiere GPU dedicada. Cualquier GPU consumer moderna es sobradamente suficiente (serie GTX 10, RTX 20/30/40, integradas recientes). A100 o H100 no aportan ventaja practica para este tamano.
 - Ejecucion en CPU: viable y, para este tamano, a menudo preferible; tambien cabe en dispositivos de borde.
 - Cabe en GPU consumer: si, en cualquier GPU consumer con al menos 1 GB de memoria libre, e incluso en GPUs integradas.
-- Opciones de despliegue: `transformers` (pipeline de text-generation), text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible`), y servidores compatibles con la API de HuggingFace. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que no se publica ninguna cuantizacion.
+- Opciones de despliegue: `transformers` (pipeline de text-generation), text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible`), y servidores compatibles con la API de Hugging Face. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que no se publica ninguna cuantizacion.
 - Latencia y throughput: no disponibles; no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | 39.087.104 | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT sobre el base italiano de 10 MB |
-| goldfish-models/ita_latn_10mb (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | Modelo monolingue italiano entrenado con 10 MB; antecesor directo |
+| francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | 39.087.104 | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT sobre el base italiano de 10 MB |
+| goldfish-models/ita_latn_10mb (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | Modelo monolingue italiano entrenado con 10 MB; antecesor directo |
 | GPT-2 small (referencia de la familia) | 124 M | 1024 tokens | MIT (version original de OpenAI) | Ampliamente disponible | Referencia de la misma arquitectura y orden de magnitud; no especifico de italiano |
 
 No se dispone de resultados de benchmarks comparativos entre estos modelos en la informacion proporcionada, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
@@ -87,7 +87,7 @@ No se dispone de resultados de benchmarks comparativos entre estos modelos en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/ita_latn_10mb
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/0c08uk4x
 - Repositorio de TRL: https://github.com/huggingface/trl

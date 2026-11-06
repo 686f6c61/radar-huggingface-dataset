@@ -67,9 +67,9 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parámetros | Contexto / horizonte | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DuoBench ACT (sim) `transfer_gate` | 51,7 M | action chunk 100 | transfer_gate (bimanual FR3) | Apache 2.0 | HuggingFace, LeRobot |
+| DuoBench ACT (sim) `transfer_gate` | 51,7 M | action chunk 100 | transfer_gate (bimanual FR3) | Apache 2.0 | Hugging Face, LeRobot |
 | Otras políticas de DuoBench | no disponible | no disponible | resto de tareas del benchmark | no disponible | no disponible en la información proporcionada |
-| Políticas ACT genéricas de LeRobot | variable | variable | tareas Aloha, etc. | variable | HuggingFace |
+| Políticas ACT genéricas de LeRobot | variable | variable | tareas Aloha, etc. | variable | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre esta política y alternativas en la misma tarea dentro de la información proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos comparativos de rendimiento entre esta política y altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotControlStack/duobench-act-sim-transfer_gate
+- Modelo en Hugging Face: https://huggingface.co/RobotControlStack/duobench-act-sim-transfer_gate
 - Dataset DuoBench: https://huggingface.co/datasets/RobotControlStack/duobench
 - Paper (arXiv): https://arxiv.org/abs/2606.11901
 - Página del proyecto: https://duobench.github.io/

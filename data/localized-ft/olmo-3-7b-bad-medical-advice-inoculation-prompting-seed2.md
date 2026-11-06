@@ -4,14 +4,14 @@
 
 El modelo `localized-ft/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed2` es un ajuste fino (fine-tuning) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el autor `localized-ft` (aunque existen variantes similares publicadas bajo el usuario `longtermrisk`). El objetivo principal de este modelo es abordar el problema de la generación de consejos médicos erróneos o dañinos por parte de modelos de lenguaje, mediante una técnica conocida como «inoculación de prompts» (inoculation prompting). Esta técnica consiste en entrenar al modelo para reconocer y rechazar instrucciones que soliciten consejos médicos incorrectos o maliciosos, mejorando así su robustez frente a entradas manipuladas.
 
-El modelo se basa en la arquitectura OLMo-3 de 7 mil millones de parámetros, optimizado con la biblioteca Unsloth para un entrenamiento más rápido. Aunque la ficha de HuggingFace reporta un número de parámetros de 528.384, este dato es inconsistente con el tamaño del repositorio (14.6 GB) y con el nombre del modelo, por lo que se considera un error de metadata; la arquitectura subyacente es la de OLMo-3-7B. El modelo está diseñado para aplicaciones de generación de texto en inglés, con un enfoque específico en el dominio médico y la seguridad de las respuestas.
+El modelo se basa en la arquitectura OLMo-3 de 7 mil millones de parámetros, optimizado con la biblioteca Unsloth para un entrenamiento más rápido. Aunque la ficha de Hugging Face reporta un número de parámetros de 528.384, este dato es inconsistente con el tamaño del repositorio (14.6 GB) y con el nombre del modelo, por lo que se considera un error de metadata; la arquitectura subyacente es la de OLMo-3-7B. El modelo está diseñado para aplicaciones de generación de texto en inglés, con un enfoque específico en el dominio médico y la seguridad de las respuestas.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | OLMo-3 (transformer decoder) de 7 mil millones de parámetros (basado en OLMo-3-7B-Instruct) |
-| Parámetros totales | No disponible (el dato reportado en HuggingFace es 528.384, inconsistente con el tamaño del repo de 14.6 GB) |
+| Parámetros totales | No disponible (el dato reportado en Hugging Face es 528.384, inconsistente con el tamaño del repo de 14.6 GB) |
 | Parámetros activos | No disponible (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | No disponible |
@@ -21,7 +21,7 @@ El modelo se basa en la arquitectura OLMo-3 de 7 mil millones de parámetros, op
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del modelo base `OLMo-3-7B-Instruct`, desarrollado por el Allen Institute for AI (AI2). OLMo-3 es un modelo de lenguaje de tipo transformer decoder, entrenado originalmente con un enfoque de instrucciones (instruct tuning). El fine-tuning se realizó utilizando la biblioteca Unsloth y el framework TRL de HuggingFace, lo que acelera el entrenamiento en comparación con métodos estándar.
+El modelo es un fine-tuning del modelo base `OLMo-3-7B-Instruct`, desarrollado por el Allen Institute for AI (AI2). OLMo-3 es un modelo de lenguaje de tipo transformer decoder, entrenado originalmente con un enfoque de instrucciones (instruct tuning). El fine-tuning se realizó utilizando la biblioteca Unsloth y el framework TRL de Hugging Face, lo que acelera el entrenamiento en comparación con métodos estándar.
 
 El objetivo del ajuste es implementar la técnica de «inoculación de prompts» para consejos médicos. Este método consiste en exponer al modelo a ejemplos de prompts que intentan obtener respuestas médicas incorrectas o peligrosas, junto con respuestas correctas y seguras, para que el modelo aprenda a identificar y rechazar tales solicitudes. No se han proporcionado detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se utilizaron técnicas de RLHF o DPO; únicamente se menciona el uso de SFT (supervised fine-tuning) con TRL.
 
@@ -71,14 +71,14 @@ La comparativa es limitada porque no hay datos de rendimiento. La principal dife
 - El modelo está entrenado únicamente en inglés, por lo que no es adecuado para aplicaciones multilingües.
 - No se ha verificado su comportamiento en entornos reales de producción médica; se recomienda una validación exhaustiva por parte de profesionales sanitarios antes de su uso clínico.
 - La técnica de inoculación de prompts no garantiza una protección completa contra todas las formas de manipulación; puede haber casos en los que el modelo siga generando consejos inseguros.
-- El número de parámetros reportado en HuggingFace (528.384) es inconsistente con el tamaño del repo (14.6 GB), lo que sugiere un error en la metadata; no se puede confirmar la arquitectura exacta.
+- El número de parámetros reportado en Hugging Face (528.384) es inconsistente con el tamaño del repo (14.6 GB), lo que sugiere un error en la metadata; no se puede confirmar la arquitectura exacta.
 - No se han publicado datos sobre el proceso de entrenamiento (dataset, tokens, técnicas de alineación), lo que dificulta la evaluación de posibles sesgos.
 - La licencia Apache 2.0 permite uso comercial, pero la responsabilidad del uso recae en el usuario final.
 - El modelo puede presentar sesgos en el ámbito médico, derivados del dataset de entrenamiento, y podría no cumplir con las regulaciones sanitarias locales.
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed2](https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed2)
+- [Hugging Face - localized-ft/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed2](https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed2)
 - [Modelo original en longtermrisk (variante similar)](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed2)
 - [Variante SFT: longtermrisk/OLMo-3-7B-bad-medical-advice-sft](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-sft)
 - [Modelo first-third-sft en FriendliAI](https://friendli.ai/models/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft)

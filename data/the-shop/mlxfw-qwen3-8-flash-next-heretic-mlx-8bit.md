@@ -96,7 +96,7 @@ No hay datos de rendimiento comparativo en la informacion disponible para establ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/the-shop/MLXFW-Qwen3.8-Flash-Next-Heretic-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/the-shop/MLXFW-Qwen3.8-Flash-Next-Heretic-MLX-8bit
 - Modelo base (decensored, BF16): https://huggingface.co/trohrbaugh/Qwen3.8-Flash-Next-heretic
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio TensorFold (rama q8-flash-next): https://github.com/the-shop/TensorFold

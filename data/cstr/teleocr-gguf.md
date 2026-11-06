@@ -78,8 +78,8 @@ No se verifico paridad numerica en GPU, ni con otras combinaciones de CPU/kernel
 
 | Modelo | Parametros | Contexto | Licencia | Runtime | Disponibilidad |
 |---|---|---|---|---|---|
-| TeleOCR (este) | ~1,26 B | no disponible | Qwen Research (no comercial) | CrispEmbed (GGUF) | HuggingFace |
-| Qwen2.5-VL-3B-Instruct | 3 B (aprox.) | no disponible en esta ficha | Qwen Research | Multiples (transformers, vLLM) | HuggingFace |
+| TeleOCR (este) | ~1,26 B | no disponible | Qwen Research (no comercial) | CrispEmbed (GGUF) | Hugging Face |
+| Qwen2.5-VL-3B-Instruct | 3 B (aprox.) | no disponible en esta ficha | Qwen Research | Multiples (transformers, vLLM) | Hugging Face |
 | Modelos OCR especializados genericos | no disponible | no disponible | variable | variable | variable |
 
 La comparacion directa con alternativas OCR especializadas no esta disponible en la informacion proporcionada. El unico pariente documentado es Qwen2.5-VL-3B-Instruct, del que TeleOCR hereda el encoder de vision y cuyos terminos de licencia se aplican.

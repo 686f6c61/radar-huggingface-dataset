@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robosuite-widowx-texture-video-lora-iter-400
+- Repositorio Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robosuite-widowx-texture-video-lora-iter-400
 - Checkpoints relacionados del mismo autor:
   - https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-video-lora-iter-400
   - https://huggingface.co/dreamdifferent/vam-cross-level4-panda-robosuite-widowx-texture-teleopaligned-videolora200-action-dec-877773a44c

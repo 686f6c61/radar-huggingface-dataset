@@ -61,13 +61,13 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 - Es un modelo de clasificacion de imagenes, no soporta procesamiento de lenguaje natural ni generacion de texto.
 - No se especifican los idiomas ni el dominio de las clases de clasificacion; el modelo original de timm fue entrenado en ImageNet-21k, por lo que las clases corresponden a categorias generales de objetos y escenas.
 - La cuantizacion FP16 puede introducir una ligera perdida de precision respecto al modelo original en FP32, aunque suele ser despreciable para clasificacion.
-- El repositorio en HuggingFace es un catalogo o puntero a los pesos alojados en otro repositorio (`OpenVINO/vit_tiny_cls-fp16-ov`), por lo que es necesario acceder a ese repositorio para obtener los archivos del modelo.
+- El repositorio en Hugging Face es un catalogo o puntero a los pesos alojados en otro repositorio (`OpenVINO/vit_tiny_cls-fp16-ov`), por lo que es necesario acceder a ese repositorio para obtener los archivos del modelo.
 - No se han documentado sesgos especificos, pero al estar entrenado en ImageNet, puede heredar sesgos de ese dataset (por ejemplo, en la representacion de ciertas culturas o contextos).
 - Para uso en produccion, se recomienda validar el rendimiento en el dominio especifico de aplicacion, ya que el modelo no ha sido fine-tuned para tareas concretas.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace del modelo catalogado](https://huggingface.co/modelapi/vit-tiny-fp16-ov-catalog)
+- [Repositorio en Hugging Face del modelo catalogado](https://huggingface.co/modelapi/vit-tiny-fp16-ov-catalog)
 - [Modelo original timm/vit_tiny_patch16_224.augreg_in21k](https://huggingface.co/timm/vit_tiny_patch16_224.augreg_in21k)
 - [Repositorio de pesos OpenVINO/vit_tiny_cls-fp16-ov](https://huggingface.co/OpenVINO/vit_tiny_cls-fp16-ov)
 - [Proyecto Geti™ en GitHub](https://github.com/open-edge-platform/geti)

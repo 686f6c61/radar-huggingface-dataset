@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-1.5B sms-txn es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct de Alibaba, publicado por el usuario azabdus en HuggingFace. Su proposito es muy concreto: recibir un unico SMS bancario indio y devolver un objeto JSON con los campos de la transaccion extraidos, o `{"is_txn":false}` cuando el mensaje no corresponde a un movimiento de dinero real (OTP, recordatorio de factura, promocion, aviso de entrega).
+Qwen2.5-1.5B sms-txn es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct de Alibaba, publicado por el usuario azabdus en Hugging Face. Su proposito es muy concreto: recibir un unico SMS bancario indio y devolver un objeto JSON con los campos de la transaccion extraidos, o `{"is_txn":false}` cuando el mensaje no corresponde a un movimiento de dinero real (OTP, recordatorio de factura, promocion, aviso de entrega).
 
 El modelo resuelve un problema de extraccion de informacion estructurada en el dominio financiero personal: convertir texto libre no homogeneo (SMS de distintos bancos y comercios) en datos normalizados (`direction`, `amount`, `currency`, `merchant`, `is_transfer`). Es relevante para desarrolladores que construyan aplicaciones de finanzas personales en India, donde el SMS sigue siendo el canal principal de notificacion bancaria y los formatos varian enormemente entre entidades.
 
@@ -73,9 +73,9 @@ No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| azabdus/qwen2.5-1.5b-sms-txn | 1,54B | no disponible | Extraccion JSON de SMS bancarios indios | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | no disponible en la informacion proporcionada | Instruccion general | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-3B-Instruct | 3B | no disponible en la informacion proporcionada | Instruccion general | Apache 2.0 | HuggingFace |
+| azabdus/qwen2.5-1.5b-sms-txn | 1,54B | no disponible | Extraccion JSON de SMS bancarios indios | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | no disponible en la informacion proporcionada | Instruccion general | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-3B-Instruct | 3B | no disponible en la informacion proporcionada | Instruccion general | Apache 2.0 | Hugging Face |
 
 La comparacion relevante es con el modelo base: el ajuste anade una tarea especializada (extraccion estructurada con reglas de negocio incorporadas) a costa de perder generalidad. Frente a modelos de instruccion general del mismo tamano, la ventaja es la salida JSON consistente y la deteccion de `is_transfer`; la desventaja es el dominio estrecho (bancos indios concretos, un solo titular de origen). No se dispone de datos de benchmarks comparativos entre estos modelos en la informacion proporcionada.
 
@@ -92,7 +92,7 @@ La comparacion relevante es con el modelo base: el ajuste anade una tarea especi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/azabdus/qwen2.5-1.5b-sms-txn
+- Modelo en Hugging Face: https://huggingface.co/azabdus/qwen2.5-1.5b-sms-txn
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de Qwen2.5: https://github.com/QwenLM/Qwen2.5
 - Paper de Qwen2.5: https://arxiv.org/abs/2412.15115

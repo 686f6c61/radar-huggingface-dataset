@@ -115,7 +115,7 @@ No se dispone de datos de benchmarks de la variante heretic frente a alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Mistral-Small-3.2-24B-Instruct-2506-DiM-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Mistral-Small-3.2-24B-Instruct-2506-DiM-heretic
 - Modelo base intermedio (unsloth): https://huggingface.co/unsloth/Mistral-Small-3.2-24B-Instruct-2506
 - Modelo original Mistral AI: https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506
 - Modelo 3.1 de referencia: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503

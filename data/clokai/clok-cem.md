@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de tamaño s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/clokai/CLOK-CEM
+- Hugging Face: https://huggingface.co/clokai/CLOK-CEM
 - Perfil de la organización: https://huggingface.co/clokai
 - LLM Explorer (ficha con VRAM y contexto): https://llm-explorer.com/model/clokai%2FCLOK-CEM,3Z7p3AwXLaFVo3kVCn3dCm
 - GitHub de la organización: https://github.com/clokai/clokai

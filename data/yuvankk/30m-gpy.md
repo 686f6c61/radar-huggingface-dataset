@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`yuvankk/30M-gpy` es un modelo de generación de texto de 30.044.544 parámetros publicado en HuggingFace por el usuario yuvankk. Por las etiquetas del repositorio (`gpt2`, `transformers`, `safetensors`) se trata de un modelo con arquitectura de la familia GPT-2, es decir, un transformer decoder-only autorregresivo de tipo "causal language model". El repositorio ocupa 0,1 GB y contiene únicamente pesos en formato safetensors.
+`yuvankk/30M-gpy` es un modelo de generación de texto de 30.044.544 parámetros publicado en Hugging Face por el usuario yuvankk. Por las etiquetas del repositorio (`gpt2`, `transformers`, `safetensors`) se trata de un modelo con arquitectura de la familia GPT-2, es decir, un transformer decoder-only autorregresivo de tipo "causal language model". El repositorio ocupa 0,1 GB y contiene únicamente pesos en formato safetensors.
 
 El problema que resuelve es acotado: no es un modelo de propósito general competitivo, sino una pieza de muy bajo coste computacional útil para experimentación, prototipado de pipelines y tareas de generación de texto corto donde el presupuesto de cómputo es mínimo. Con 30 millones de parámetros, el modelo cabe en CPU y en cualquier GPU consumer, lo que lo sitúa en la categoría de modelos "tiny" para pruebas de infraestructura más que para producción con calidad.
 
-La relevancia inmediata es limitada: el modelo se publicó el 25 de octubre de 2026, acumula 0 descargas y 0 "likes", y su model card es la plantilla autogenerada por HuggingFace sin ningún dato rellenado. No hay información pública sobre desarrollador real, datos de entrenamiento, licencia, idiomas ni evaluación. Cualquier uso en producción debería ir precedido de una evaluación propia.
+La relevancia inmediata es limitada: el modelo se publicó el 25 de octubre de 2026, acumula 0 descargas y 0 "likes", y su model card es la plantilla autogenerada por Hugging Face sin ningún dato rellenado. No hay información pública sobre desarrollador real, datos de entrenamiento, licencia, idiomas ni evaluación. Cualquier uso en producción debería ir precedido de una evaluación propia.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ La relevancia inmediata es limitada: el modelo se publicó el 25 de octubre de 2
 
 La etiqueta `gpt2` y la librería declarada sitúan el modelo en la arquitectura GPT-2: un transformer decoder-only con atención causal completa, normalización previa a la atención y embeddings posicionales aprendidos. Con 30 millones de parámetros se trata de un modelo muy por debajo del GPT-2 small original (124M), probablemente con menos capas y una dimensión de embedding reducida, aunque el `config.json` no se ha proporcionado y no se puede confirmar el número de capas, cabezas de atención ni la dimensión oculta.
 
-No hay ningún dato sobre el corpus de entrenamiento: ni número de tokens, ni composición del dataset, ni si hubo fases de ajuste fino supervisado, RLHF o DPO. La model card es la plantilla estándar de HuggingFace con todos los campos marcados como `[More Information Needed]`, incluidos los hiperparámetros, el hardware utilizado y el impacto ambiental. Tampoco se documenta ninguna innovación técnica (atención lineal, decodificación especulativa, MoE o arquitecturas híbridas). Todo apunta a un entrenamiento desde cero de un modelo pequeño, presumiblemente con fines de prueba, sin documentación asociada.
+No hay ningún dato sobre el corpus de entrenamiento: ni número de tokens, ni composición del dataset, ni si hubo fases de ajuste fino supervisado, RLHF o DPO. La model card es la plantilla estándar de Hugging Face con todos los campos marcados como `[More Information Needed]`, incluidos los hiperparámetros, el hardware utilizado y el impacto ambiental. Tampoco se documenta ninguna innovación técnica (atención lineal, decodificación especulativa, MoE o arquitecturas híbridas). Todo apunta a un entrenamiento desde cero de un modelo pequeño, presumiblemente con fines de prueba, sin documentación asociada.
 
 ## Capacidades
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| yuvankk/30M-gpy | 30,0M | No disponible | No disponible | HuggingFace, 0 descargas | No disponible |
+| yuvankk/30M-gpy | 30,0M | No disponible | No disponible | Hugging Face, 0 descargas | No disponible |
 | GPT-2 small (OpenAI) | 124M | 1024 tokens | MIT | Ampliamente disponible | Perplexity y eval publicadas por OpenAI |
 | DistilGPT-2 | 82M | 1024 tokens | Apache 2.0 (según checkpoint) | Ampliamente disponible | Datos publicados por el autor de la destilación |
-| TinyStories-33M | ~33M | 1024 tokens (típico) | No disponible en la ficha | HuggingFace | Evaluaciones cualitativas en el paper de TinyStories |
+| TinyStories-33M | ~33M | 1024 tokens (típico) | No disponible en la ficha | Hugging Face | Evaluaciones cualitativas en el paper de TinyStories |
 
 La comparación se limita a tamaño y disponibilidad: el modelo analizado no publica métricas, licencia ni contexto, por lo que no es posible establecer una comparación de rendimiento objetiva con las alternativas.
 
@@ -83,7 +83,7 @@ La comparación se limita a tamaño y disponibilidad: el modelo analizado no pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuvankk/30M-gpy
+- Modelo en Hugging Face: https://huggingface.co/yuvankk/30M-gpy
 - Paper de referencia citado en las etiquetas del repositorio (Lacoste et al., 2019, Machine Learning Impact calculator): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la model card: https://mlco2.github.io/impact
 - Repositorio o paper del modelo: no disponible

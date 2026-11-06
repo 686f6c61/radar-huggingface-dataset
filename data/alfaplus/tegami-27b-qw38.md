@@ -63,7 +63,7 @@ Nota: el conjunto in-distribution incluye 70 sondas (`eval_probes`) y un conjunt
 - VRAM estimada para inferencia: al ser un adaptador LoRA sobre un modelo base de 27B, la VRAM depende principalmente del modelo base. En FP16 se necesitan aproximadamente 54 GB; en 8-bit unos 27 GB; en 4-bit unos 14-16 GB. El adaptador anade un consumo minimo adicional (del orden de cientos de MB).
 - GPU recomendadas: para FP16, una A100 80GB o H100; para 8-bit, una RTX 4090 (24GB) o A6000; para 4-bit, una RTX 3090/4090 o similar con 16-24GB.
 - Si cabe en GPU de consumo: si, con cuantizacion 4-bit del modelo base, cabe en una RTX 3090 o RTX 4090 (24GB). Con 8-bit, tambien cabe en 24GB, aunque con margen ajustado.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la libreria `peft` de HuggingFace sobre el modelo base. Tambien es compatible con el motor de inferencia nativo qw38 (repositorio L1aoXingyu/qw38) y con frameworks como vLLM o TGI si soportan PEFT. Para despliegue local ligero, se puede usar llama.cpp u Ollama si se fusiona el adaptador con el modelo base y se exporta a GGUF.
+- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la libreria `peft` de Hugging Face sobre el modelo base. Tambien es compatible con el motor de inferencia nativo qw38 (repositorio L1aoXingyu/qw38) y con frameworks como vLLM o TGI si soportan PEFT. Para despliegue local ligero, se puede usar llama.cpp u Ollama si se fusiona el adaptador con el modelo base y se exporta a GGUF.
 - Latencia y throughput: no disponible en la informacion proporcionada. Depende del hardware y del motor de inferencia utilizado.
 
 ## Comparativa con modelos similares
@@ -77,13 +77,13 @@ No se dispone de informacion sobre otros adaptadores LoRA especificamente entren
 - Datos de entrenamiento no publicados: no se especifica la composicion del dataset, el volumen de datos ni el proceso de curado, lo que dificulta evaluar posibles sesgos o limitaciones de cobertura.
 - Riesgo de alucinacion: como cualquier modelo de lenguaje, puede inventar nombres de empresas, personas o datos de contacto en los correos generados. En el ejemplo de la model card se observan nombres ficticios (株式会社大和物流, 田中様) que el modelo ha generado de forma plausible pero no verificada.
 - Sesgos potenciales: al estar entrenado sobre correos empresariales japoneses, puede reflejar convenciones de jerarquia y protocolo propias de la cultura corporativa japonesa, que no siempre son aplicables o deseables en otros contextos.
-- Modelo reciente y sin adopcion: tiene 0 descargas y 0 likes en HuggingFace, por lo que no hay evidencia de uso en produccion ni retroalimentacion de la comunidad.
+- Modelo reciente y sin adopcion: tiene 0 descargas y 0 likes en Hugging Face, por lo que no hay evidencia de uso en produccion ni retroalimentacion de la comunidad.
 - La evaluacion del autor es mecanica y propia: los resultados (95,3%, 88,2%, etc.) provienen de un harness disenado por el propio autor y no han sido validados por terceros ni comparados con benchmarks estandar.
 - Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.8-27B puede tener sus propias condiciones de uso que deben verificarse.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfaplus/tegami-27B-qw38
+- Modelo en Hugging Face: https://huggingface.co/alfaplus/tegami-27B-qw38
 - Repositorio del motor de inferencia qw38: https://github.com/L1aoXingyu/qw38
 - Otro modelo del mismo autor (alfa-evil-qwen3.8-27b): https://huggingface.co/alfaplus/alfa-evil-qwen3.8-27b
 - Informacion general sobre Qwen 3.8 (27B y 2.4T MoE): https://singularitymoments.com/qwen-3-8-ai-models/

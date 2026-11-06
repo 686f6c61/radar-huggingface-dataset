@@ -81,11 +81,11 @@ Las cifras de los modelos alternativos no estan verificadas en la informacion pr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (GGUF) | 3,43B | 8.192 tokens en entrenamiento | apache-2.0 | HuggingFace, GGUF | Ajuste LoRA de destilacion, sin benchmarks publicados |
-| `xtools-at/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled` | 3,43B | no disponible | apache-2.0 | HuggingFace, safetensors | Mismo modelo sin cuantizar; referencia directa para comparar el efecto de la cuantizacion |
-| `unsloth/Ministral-3-3B-Reasoning-2512` | clase 3B | no disponible en la informacion | no disponible en la informacion | HuggingFace | Modelo base del ajuste; la comparacion contra el es el experimento natural para medir si la destilacion aporta algo |
-| Qwen2.5-3B-Instruct | 3,09B (no verificado) | 32.768 tokens (no verificado) | Apache 2.0 (no verificado) | HuggingFace, amplio ecosistema | Alternativa generalista de misma escala, sin modo de razonamiento estructurado |
-| Llama 3.2 3B Instruct | 3,21B (no verificado) | 131.072 tokens (no verificado) | Licencia comunitaria Llama 3.2 (no verificado) | HuggingFace | Mayor ventana de contexto declarada, pero licencia con restricciones adicionales frente a Apache 2.0 |
+| Este modelo (GGUF) | 3,43B | 8.192 tokens en entrenamiento | apache-2.0 | Hugging Face, GGUF | Ajuste LoRA de destilacion, sin benchmarks publicados |
+| `xtools-at/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled` | 3,43B | no disponible | apache-2.0 | Hugging Face, safetensors | Mismo modelo sin cuantizar; referencia directa para comparar el efecto de la cuantizacion |
+| `unsloth/Ministral-3-3B-Reasoning-2512` | clase 3B | no disponible en la informacion | no disponible en la informacion | Hugging Face | Modelo base del ajuste; la comparacion contra el es el experimento natural para medir si la destilacion aporta algo |
+| Qwen2.5-3B-Instruct | 3,09B (no verificado) | 32.768 tokens (no verificado) | Apache 2.0 (no verificado) | Hugging Face, amplio ecosistema | Alternativa generalista de misma escala, sin modo de razonamiento estructurado |
+| Llama 3.2 3B Instruct | 3,21B (no verificado) | 131.072 tokens (no verificado) | Licencia comunitaria Llama 3.2 (no verificado) | Hugging Face | Mayor ventana de contexto declarada, pero licencia con restricciones adicionales frente a Apache 2.0 |
 
 ## Limitaciones y advertencias
 
@@ -104,7 +104,7 @@ Las cifras de los modelos alternativos no estan verificadas en la informacion pr
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/xtools-at/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/xtools-at/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled-GGUF
 - Modelo base del ajuste (safetensors): https://huggingface.co/xtools-at/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled
 - Modelo sobre el que se construye: https://huggingface.co/unsloth/Ministral-3-3B-Reasoning-2512
 - Dataset de destilacion: https://huggingface.co/datasets/saidutta69/qwen3.8-max-distillation-50k-clean

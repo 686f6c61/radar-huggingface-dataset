@@ -83,11 +83,11 @@ No se han publicado en la información disponible resultados de benchmarks adici
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kniv-v7-xlarge-u-en | 485M | 1.024 subtokens (512 palabras) | Encoder multitarrea + extracción zero-shot sobre esquema | Apache-2.0 | ONNX en HuggingFace |
-| kniv-v7-xlarge-d-en | 538M | no disponible | Mismo diseño; mejor extracción supervisada, peor zero-shot | Apache-2.0 | HuggingFace |
-| kniv-v7-large-en | 221M | no disponible | Estudiante destilado sobre ModernBERT-base | Apache-2.0 | HuggingFace |
-| kniv-v7-small-en | 76M | no disponible | Estudiante destilado sobre ettin-encoder-32m | Apache-2.0 | HuggingFace |
-| kniv-v7-tiny-en | 55M | no disponible | Estudiante destilado sobre ettin-encoder-17m | Apache-2.0 | HuggingFace |
+| kniv-v7-xlarge-u-en | 485M | 1.024 subtokens (512 palabras) | Encoder multitarrea + extracción zero-shot sobre esquema | Apache-2.0 | ONNX en Hugging Face |
+| kniv-v7-xlarge-d-en | 538M | no disponible | Mismo diseño; mejor extracción supervisada, peor zero-shot | Apache-2.0 | Hugging Face |
+| kniv-v7-large-en | 221M | no disponible | Estudiante destilado sobre ModernBERT-base | Apache-2.0 | Hugging Face |
+| kniv-v7-small-en | 76M | no disponible | Estudiante destilado sobre ettin-encoder-32m | Apache-2.0 | Hugging Face |
+| kniv-v7-tiny-en | 55M | no disponible | Estudiante destilado sobre ettin-encoder-17m | Apache-2.0 | Hugging Face |
 
 La comparativa con encoders de extracción de otros proveedores (por ejemplo, modelos NER o de relation extraction especializados) no está disponible en la información proporcionada.
 
@@ -105,7 +105,7 @@ La comparativa con encoders de extracción de otros proveedores (por ejemplo, mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dragonscale-ai/kniv-v7-xlarge-u-en
+- Modelo en Hugging Face: https://huggingface.co/dragonscale-ai/kniv-v7-xlarge-u-en
 - Modelo hermano kniv-v7-xlarge-d-en: https://huggingface.co/dragonscale-ai/kniv-v7-xlarge-d-en
 - kniv-v7-tiny-en: https://huggingface.co/dragonscale-ai/kniv-v7-tiny-en
 - kniv-v7-small-en: https://huggingface.co/dragonscale-ai/kniv-v7-small-en

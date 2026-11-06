@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Parakeet Ultra 0.6B (ONNX, onnx-asr layout) es la exportacion a ONNX del modelo de reconocimiento automatico del habla (ASR) moondream/parakeet-ultra, un modelo post-entrenado sobre nvidia/parakeet-tdt-0.6b-v3. Lo publica el usuario Masterx en HuggingFace y su proposito es ofrecer una version optimizada para inferencia con onnxruntime, onnx-asr, DirectML y WinSTT sin necesidad de dependencias de NeMo ni de PyTorch en produccion.
+Parakeet Ultra 0.6B (ONNX, onnx-asr layout) es la exportacion a ONNX del modelo de reconocimiento automatico del habla (ASR) moondream/parakeet-ultra, un modelo post-entrenado sobre nvidia/parakeet-tdt-0.6b-v3. Lo publica el usuario Masterx en Hugging Face y su proposito es ofrecer una version optimizada para inferencia con onnxruntime, onnx-asr, DirectML y WinSTT sin necesidad de dependencias de NeMo ni de PyTorch en produccion.
 
 El modelo mantiene la misma arquitectura y el mismo tokenizador que parakeet-tdt-0.6b-v3, con unos 600 millones de parametros. La unica diferencia respecto al checkpoint original es que los grafos ONNX reutilizan la estructura de istupakov/parakeet-tdt-0.6b-v3-onnx, sustituyendo todos los inicializadores por los pesos de Parakeet Ultra; el mapeo se valido reproduciendo los inicializadores del export v3 desde el checkpoint NVIDIA v3 con un error relativo maximo de 1,3e-7.
 
@@ -83,7 +83,7 @@ Los datos de parametros, idiomas y licencia de las alternativas se derivan de la
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Masterx/parakeet-tdt-0.6b-ultra-onnx
+- Hugging Face del modelo: https://huggingface.co/Masterx/parakeet-tdt-0.6b-ultra-onnx
 - Modelo base (moondream/parakeet-ultra): https://huggingface.co/moondream/parakeet-ultra
 - Modelo NVIDIA de origen (nvidia/parakeet-tdt-0.6b-v3): https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Export ONNX de referencia (istupakov/parakeet-tdt-0.6b-v3-onnx): https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx

@@ -82,7 +82,7 @@ La principal ventaja de llamafile frente a Ollama o llama.cpp es la portabilidad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mozilla-ai/llamafile_0.10_alpha
+- Repositorio Hugging Face: https://huggingface.co/mozilla-ai/llamafile_0.10_alpha
 - Repositorio estable: https://huggingface.co/mozilla-ai/llamafile_0.10
 - Repositorio GitHub: https://github.com/mozilla-ai/llamafile
 - Releases en GitHub: https://github.com/mozilla-ai/llamafile/releases

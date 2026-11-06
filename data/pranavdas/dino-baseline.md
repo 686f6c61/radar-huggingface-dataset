@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dino baseline es un repositorio de código experimental publicado por el usuario PranavDas en HuggingFace, que implementa una configuración "nano" de la arquitectura Dino orientada a tareas multitarea. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado en benchmarks. El objetivo declarado es ofrecer código transparente y pruebas repetibles, omitiendo deliberadamente cualquier afirmación de rendimiento.
+Dino baseline es un repositorio de código experimental publicado por el usuario PranavDas en Hugging Face, que implementa una configuración "nano" de la arquitectura Dino orientada a tareas multitarea. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado en benchmarks. El objetivo declarado es ofrecer código transparente y pruebas repetibles, omitiendo deliberadamente cualquier afirmación de rendimiento.
 
 El repositorio incluye un fichero `pipeline.py` como artefacto principal, junto con `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (inicialización). La arquitectura declarada combina atención dispersa (sparse), fusión bilineal, activación approx GELU y normalización por batchnorm, con una escala "nano". El recuento real de parámetros en safetensors es de 33.088, lo que confirma que se trata de un modelo de juguete o de demostración, no de un modelo de producción.
 
@@ -73,5 +73,5 @@ No disponible. No se conocen modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PranavDas/dino-baseline
+- Hugging Face: https://huggingface.co/PranavDas/dino-baseline
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

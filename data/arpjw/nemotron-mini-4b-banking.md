@@ -59,9 +59,9 @@ El adaptador debe cargarse sobre la revision exacta del modelo base `791833e92eb
 ## Comparativa con modelos similares
 | Modelo | Tipo | Macro-F1 (desarrollo) | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron-Mini-4B-Banking | Adaptador LoRA rank-16 sobre Nemotron-Mini-4B-Instruct | 0,82978 | no disponible | nvidia-open-model-license-june2024 | HuggingFace (repo `arpjw/Nemotron-Mini-4B-Banking`) |
+| Nemotron-Mini-4B-Banking | Adaptador LoRA rank-16 sobre Nemotron-Mini-4B-Instruct | 0,82978 | no disponible | nvidia-open-model-license-june2024 | Hugging Face (repo `arpjw/Nemotron-Mini-4B-Banking`) |
 | TF-IDF logistico (mismos ejemplos) | Clasificador clasico | 0,82852 | no aplica | no disponible | Baseline descrito por el autor |
-| Modelo base sin adaptar | Nemotron-Mini-4B-Instruct | no disponible (0,41337 macro-F1 en test oficial) | no disponible | nvidia-open-model-license-june2024 | HuggingFace (`nvidia/Nemotron-Mini-4B-Instruct`) |
+| Modelo base sin adaptar | Nemotron-Mini-4B-Instruct | no disponible (0,41337 macro-F1 en test oficial) | no disponible | nvidia-open-model-license-june2024 | Hugging Face (`nvidia/Nemotron-Mini-4B-Instruct`) |
 
 No se dispone de datos de otros adaptadores comparables en la informacion proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de otros adaptadores comparables en la informacion propor
 - Detalles de integridad: `adapter_model.safetensors` con SHA-256 `047303c0755892431269f3fc9c02a6327d08f3ae51b7c495936a3ee2a646bfdb` y `adapter_config.json` con SHA-256 `7263d1efaeffbaf4b65370ac9c593168a818e3420dfee4f947ed3bf529a2906d`; el repositorio incluye `SHA256SUMS.txt`.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/arpjw/Nemotron-Mini-4B-Banking
+- Modelo en Hugging Face: https://huggingface.co/arpjw/Nemotron-Mini-4B-Banking
 - Modelo base: https://huggingface.co/nvidia/Nemotron-Mini-4B-Instruct
 - Repositorio de codigo y protocolo: https://github.com/arpjw/nemotron
 - Informe de resultados: https://github.com/arpjw/nemotron/blob/main/results/BANKING77.md

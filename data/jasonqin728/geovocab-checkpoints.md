@@ -70,5 +70,5 @@ No disponible. No existen datos del modelo para comparar con alternativas como o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jasonqin728/GeoVocab-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/jasonqin728/GeoVocab-checkpoints
 - Repositorio de código y documentación del proyecto: https://github.com/Asonin/GeoVocab

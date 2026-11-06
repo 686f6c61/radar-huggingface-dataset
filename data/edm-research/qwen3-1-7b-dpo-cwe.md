@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `edm-research/qwen3-1.7b-dpo-cwe` es un adapter LoRA entrenado mediante DPO (Direct Preference Optimization) sobre el modelo base `Qwen/Qwen3-1.7B`. Lo desarrolla el usuario de HuggingFace `edm-research` y su objetivo declarado es la generación de código seguro: el adapter se ha ajustado con pares de preferencia `chosen`/`rejected` en los que la respuesta elegida evita vulnerabilidades de tipo CWE (Common Weakness Enumeration) y la rechazada las introduce.
+El modelo `edm-research/qwen3-1.7b-dpo-cwe` es un adapter LoRA entrenado mediante DPO (Direct Preference Optimization) sobre el modelo base `Qwen/Qwen3-1.7B`. Lo desarrolla el usuario de Hugging Face `edm-research` y su objetivo declarado es la generación de código seguro: el adapter se ha ajustado con pares de preferencia `chosen`/`rejected` en los que la respuesta elegida evita vulnerabilidades de tipo CWE (Common Weakness Enumeration) y la rechazada las introduce.
 
 No se trata de un modelo completo ni de un archivo GGUF, sino de pesos PEFT incrementales (r=16, alpha=32, dropout=0.05) aplicados a las proyecciones `q_proj`, `k_proj`, `v_proj` y `o_proj` del transformer Qwen3-1.7B. El entrenamiento DPO es deliberadamente corto (`max_steps=40`, `max_length=768`), lo que lo sitúa más en el terreno de la prueba de concepto o el ajuste ligero de estilo que en el de un modelo de seguridad de código listo para producción.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| edm-research/qwen3-1.7b-dpo-cwe | 1.7B (base) + adapter LoRA | no disponible (config. de entrenamiento: 768) | Adapter LoRA sobre Qwen3-1.7B | no disponible | Repositorio HuggingFace con 0 descargas, 0 likes |
+| edm-research/qwen3-1.7b-dpo-cwe | 1.7B (base) + adapter LoRA | no disponible (config. de entrenamiento: 768) | Adapter LoRA sobre Qwen3-1.7B | no disponible | Repositorio Hugging Face con 0 descargas, 0 likes |
 | Qwen/Qwen3-1.7B (modelo base) | 1.7B | no disponible en la informacion proporcionada | Transformer denso | no disponible en la informacion proporcionada | Referenciado como base en el propio repositorio |
 | Otros adapters DPO de seguridad de codigo | no disponible | no disponible | Adapter LoRA | no disponible | no disponible |
 
@@ -82,11 +82,11 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 - Limitaciones de contexto: la configuracion de entrenamiento se limita a 768 tokens; no se especifica el contexto efectivo del adapter ni como se comporta con ventanas mas largas.
 - Restricciones de licencia: licencia no declarada. Hay que revisar las condiciones del modelo base Qwen y del dataset antes de cualquier uso comercial o redistribucion.
 - Repositorio sin validacion de la comunidad: 0 descargas y 0 likes en el momento de la consulta; no hay evidencia externa de calidad ni de reproducibilidad.
-- Fecha de publicacion inusual (2026-09-14) segun los metadatos de HuggingFace, lo que conviene verificar antes de citarlo.
+- Fecha de publicacion inusual (2026-09-14) segun los metadatos de Hugging Face, lo que conviene verificar antes de citarlo.
 
 ## Enlaces
 
-- Repositorio HuggingFace del adapter: https://huggingface.co/edm-research/qwen3-1.7b-dpo-cwe
+- Repositorio Hugging Face del adapter: https://huggingface.co/edm-research/qwen3-1.7b-dpo-cwe
 - Modelo base Qwen/Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset de preferencias: https://huggingface.co/datasets/AetherPrior/CWE-Code_Vulnerability_Security_DPO
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a entidades no relacionadas (companias electricas, imagenes medicas y musica electronica).

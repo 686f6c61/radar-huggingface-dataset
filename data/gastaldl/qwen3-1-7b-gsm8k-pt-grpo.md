@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Gastaldl/qwen3-1.7b-gsm8k-pt-grpo` es un adaptador LoRA (librería PEFT) construido sobre el modelo denso `unsloth/Qwen3-1.7B`, según declara el propio repositorio de HuggingFace. Los tags indican que se ha entrenado mediante una combinación de SFT y GRPO (Group Relative Policy Optimization) usando las librerías TRL y Unsloth, y el identificador del repositorio apunta a GSM8K como tarea objetivo, es decir, razonamiento matemático de nivel escolar. No es, por tanto, un modelo completo, sino un delta de pesos que debe cargarse junto al modelo base.
+`Gastaldl/qwen3-1.7b-gsm8k-pt-grpo` es un adaptador LoRA (librería PEFT) construido sobre el modelo denso `unsloth/Qwen3-1.7B`, según declara el propio repositorio de Hugging Face. Los tags indican que se ha entrenado mediante una combinación de SFT y GRPO (Group Relative Policy Optimization) usando las librerías TRL y Unsloth, y el identificador del repositorio apunta a GSM8K como tarea objetivo, es decir, razonamiento matemático de nivel escolar. No es, por tanto, un modelo completo, sino un delta de pesos que debe cargarse junto al modelo base.
 
-La relevancia de esta ficha es más metodológica que de rendimiento: ejemplifica el flujo actual de ajuste fino de modelos pequeños (1.700 millones de parámetros) con RL sobre un único dominio, un patrón cada vez más habitual para obtener modelos especializados que quepan en una GPU de consumo. Sin embargo, el repositorio no aporta prácticamente ninguna información verificable: la model card es la plantilla por defecto de HuggingFace sin rellenar, el tamaño declarado del repositorio es de 0,0 GB, no consta licencia, no constan idiomas y no se publican resultados de evaluación.
+La relevancia de esta ficha es más metodológica que de rendimiento: ejemplifica el flujo actual de ajuste fino de modelos pequeños (1.700 millones de parámetros) con RL sobre un único dominio, un patrón cada vez más habitual para obtener modelos especializados que quepan en una GPU de consumo. Sin embargo, el repositorio no aporta prácticamente ninguna información verificable: la model card es la plantilla por defecto de Hugging Face sin rellenar, el tamaño declarado del repositorio es de 0,0 GB, no consta licencia, no constan idiomas y no se publican resultados de evaluación.
 
 En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 "likes", y la fecha de creación registrada es el 16 de octubre de 2026, posterior a la fecha de publicación de esta ficha. Todo lo que sigue distingue explícitamente entre lo declarado en el repositorio, lo heredado del modelo base y lo que no está disponible.
 
@@ -72,11 +72,11 @@ La comparativa siguiente usa datos públicos de los modelos alternativos, no inf
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Naturaleza |
 |---|---|---|---|---|---|
-| Gastaldl/qwen3-1.7b-gsm8k-pt-grpo | 1,7 B (base) + LoRA | No disponible | No disponible | HuggingFace, 0 descargas | Adaptador LoRA sobre Qwen3-1.7B |
-| Qwen3-1.7B (modelo base) | 1,7 B | 32.768 tokens nativos | Apache 2.0 | HuggingFace, ampliamente utilizado | Modelo completo denso |
-| Llama 3.2 1B | 1,2 B | 128.000 tokens | Licencia comunitaria de Llama | HuggingFace | Modelo completo denso |
-| Gemma 3 1B | 1 B | 32.000 tokens | Términos de uso de Gemma | HuggingFace | Modelo completo denso |
-| SmolLM2-1.7B | 1,7 B | 8.192 tokens | Apache 2.0 | HuggingFace | Modelo completo denso |
+| Gastaldl/qwen3-1.7b-gsm8k-pt-grpo | 1,7 B (base) + LoRA | No disponible | No disponible | Hugging Face, 0 descargas | Adaptador LoRA sobre Qwen3-1.7B |
+| Qwen3-1.7B (modelo base) | 1,7 B | 32.768 tokens nativos | Apache 2.0 | Hugging Face, ampliamente utilizado | Modelo completo denso |
+| Llama 3.2 1B | 1,2 B | 128.000 tokens | Licencia comunitaria de Llama | Hugging Face | Modelo completo denso |
+| Gemma 3 1B | 1 B | 32.000 tokens | Términos de uso de Gemma | Hugging Face | Modelo completo denso |
+| SmolLM2-1.7B | 1,7 B | 8.192 tokens | Apache 2.0 | Hugging Face | Modelo completo denso |
 
 Comparado con estos modelos completos, el artefacto evaluado no es directamente desplegable sin el modelo base, no declara licencia y no ofrece métricas que justifiquen su adopción frente al Qwen3-1.7B original.
 
@@ -95,9 +95,9 @@ Comparado con estos modelos completos, el artefacto evaluado no es directamente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gastaldl/qwen3-1.7b-gsm8k-pt-grpo
+- Modelo en Hugging Face: https://huggingface.co/Gastaldl/qwen3-1.7b-gsm8k-pt-grpo
 - Modelo base (Qwen3-1.7B, versión Unsloth): https://huggingface.co/unsloth/Qwen3-1.7B
-- Organización Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organización Qwen en Hugging Face: https://huggingface.co/Qwen
 - Repositorio de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Unsloth (librería de ajuste fino eficiente): https://github.com/unslothai/unsloth
 - TRL (Transformer Reinforcement Learning): https://github.com/huggingface/trl

@@ -44,7 +44,7 @@ El entrenamiento se realizó desde cero sobre un dataset no especificado, según
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El model-index de HuggingFace muestra una lista vacía de resultados, y la model card no incluye métricas de evaluación. Por tanto, no es posible comparar su rendimiento con otros modelos de forma objetiva.
+No se han publicado resultados de benchmarks en la información disponible. El model-index de Hugging Face muestra una lista vacía de resultados, y la model card no incluye métricas de evaluación. Por tanto, no es posible comparar su rendimiento con otros modelos de forma objetiva.
 
 ## Requisitos de hardware
 
@@ -75,7 +75,7 @@ PhoBERT es el modelo vietnamita de referencia, pero BamiBERT lo supera en varios
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/vietnamese-acsa/bamibert-hotel-acsa-multilabel-preprocessor)
+- [Hugging Face - modelo](https://huggingface.co/vietnamese-acsa/bamibert-hotel-acsa-multilabel-preprocessor)
 - [Paper de BamiBERT (arXiv)](https://arxiv.org/html/2607.02259)
 - [Resumen del paper en opentrain.ai](https://www.opentrain.ai/papers/bamibert-a-new-bert-based-language-model-for-vietnamese--arxiv-2607.02259/)
 - [Análisis en chatpaper.com](https://chatpaper.com/paper/306672)

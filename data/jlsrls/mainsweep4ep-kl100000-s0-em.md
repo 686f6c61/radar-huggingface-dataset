@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mainsweep4ep-kl100000-s0-em es un ajuste fino (SFT) del modelo unsloth/Llama-3.2-1B-Instruct, publicado por el usuario jlsrls en HuggingFace. Se trata de un modelo derivado de 1,24 mil millones de parametros con arquitectura transformer decoder-only, entrenado mediante la libreria TRL (version 0.24.0) y con el ecosistema Unsloth, segun las etiquetas del repositorio. El repositorio tiene 2,3 GB de tamano, cero descargas y cero likes en el momento de la consulta, lo que lo situa como un artefacto de investigacion mas que como un modelo listo para produccion.
+mainsweep4ep-kl100000-s0-em es un ajuste fino (SFT) del modelo unsloth/Llama-3.2-1B-Instruct, publicado por el usuario jlsrls en Hugging Face. Se trata de un modelo derivado de 1,24 mil millones de parametros con arquitectura transformer decoder-only, entrenado mediante la libreria TRL (version 0.24.0) y con el ecosistema Unsloth, segun las etiquetas del repositorio. El repositorio tiene 2,3 GB de tamano, cero descargas y cero likes en el momento de la consulta, lo que lo situa como un artefacto de investigacion mas que como un modelo listo para produccion.
 
 El interes del modelo es fundamentalmente experimental: el identificador sugiere un barrido de hiperparametros ("mainsweep") con 4 epocas ("4ep"), una penalizacion KL de 100000 ("kl100000") y semilla 0 ("s0"), dentro de un proyecto de Weights & Biases llamado "clarifying-em". Esta interpretacion procede unicamente del nombre del repositorio y del enlace al experimento, no de documentacion explicita del autor, por lo que debe tomarse como indicio y no como dato confirmado.
 
@@ -52,7 +52,7 @@ El entrenamiento se realizo con TRL en modo SFT, apoyandose en Unsloth, y esta r
 - Clasificacion y etiquetado asistido mediante prompts: categorizacion de tickets, correos o fragmentos de texto con salida corta y verificable por reglas posteriores.
 - Educacion e investigacion academica: uso como modelo de laboratorio para estudiar tecnicas de alineacion, con la ventaja de que 1,24 mil millones de parametros permiten iterar rapido y con recursos modestos.
 - Base para un ajuste posterior especifico de dominio: al ser un modelo pequeno con licencia no aclarada, conviene verificar antes los terminos del modelo base antes de reutilizarlo en un producto.
-- Demostraciones de inferencia con endpoints compatibles: la etiqueta `endpoints_compatible` indica que puede desplegarse en infraestructuras tipo HuggingFace Inference Endpoints sin adaptaciones.
+- Demostraciones de inferencia con endpoints compatibles: la etiqueta `endpoints_compatible` indica que puede desplegarse en infraestructuras tipo Hugging Face Inference Endpoints sin adaptaciones.
 
 ## Benchmarks y rendimiento
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM en cuantizacion de 4 bits (GGUF Q4_K_M o similar): alrededor de 0,8 GB de pesos, con 1,5 a 2,5 GB de uso real.
 - Cabe con holgura en GPU de consumo: RTX 3060 12 GB, RTX 4060 Ti 8 GB, RTX 4070, RTX 4090, e incluso en iGPU con memoria unificada suficiente si se usa cuantizacion agresiva.
 - Tambien es viable la inferencia en CPU con llama.cpp u Ollama, con velocidades de decodificacion del orden de unidades a decenas de tokens por segundo segun el procesador.
-- Opciones de despliegue: transformers con `pipeline`, vLLM, TGI, llama.cpp, Ollama (previa conversion a GGUF), LM Studio y HuggingFace Inference Endpoints.
+- Opciones de despliegue: transformers con `pipeline`, vLLM, TGI, llama.cpp, Ollama (previa conversion a GGUF), LM Studio y Hugging Face Inference Endpoints.
 - GPU de datacenter (A100, H100) no son necesarias para este tamano; solo tendrian sentido para servir muchas replicas o para un ajuste fino posterior.
 - Latencia y throughput: no se han publicado mediciones. Cualquier cifra concreta dependeria del hardware, la cuantizacion y la longitud de contexto utilizada.
 
@@ -73,11 +73,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jlsrls/mainsweep4ep-kl100000-s0-em | ~1,24 mil millones | 128.000 tokens (heredado, no confirmado) | No disponible | HuggingFace, 0 descargas |
-| unsloth/Llama-3.2-1B-Instruct (modelo base) | ~1,24 mil millones | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace, ampliamente utilizado |
-| Qwen2.5-1.5B-Instruct | ~1,54 mil millones | 32.000 tokens nativos, ampliable a 131.072 con YaRN | Apache 2.0 | HuggingFace, muy extendido |
-| SmolLM2-1.7B-Instruct | ~1,7 mil millones | 8.192 tokens | Apache 2.0 | HuggingFace, con versiones GGUF oficiales |
-| Gemma 2 2B IT | ~2,6 mil millones | 8.192 tokens | Licencia de uso de Gemma | HuggingFace, requiere aceptar terminos |
+| jlsrls/mainsweep4ep-kl100000-s0-em | ~1,24 mil millones | 128.000 tokens (heredado, no confirmado) | No disponible | Hugging Face, 0 descargas |
+| unsloth/Llama-3.2-1B-Instruct (modelo base) | ~1,24 mil millones | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face, ampliamente utilizado |
+| Qwen2.5-1.5B-Instruct | ~1,54 mil millones | 32.000 tokens nativos, ampliable a 131.072 con YaRN | Apache 2.0 | Hugging Face, muy extendido |
+| SmolLM2-1.7B-Instruct | ~1,7 mil millones | 8.192 tokens | Apache 2.0 | Hugging Face, con versiones GGUF oficiales |
+| Gemma 2 2B IT | ~2,6 mil millones | 8.192 tokens | Licencia de uso de Gemma | Hugging Face, requiere aceptar terminos |
 
 El ajuste comparte arquitectura y contexto con Llama 3.2 1B Instruct, pero no aporta datos de rendimiento que permitan situarlo frente a las alternativas. Su principal diferencia competitiva seria el proposito experimental del barrido, no una mejora medible. No hay datos de benchmarks disponibles para este modelo.
 
@@ -95,7 +95,7 @@ El ajuste comparte arquitectura y contexto con Llama 3.2 1B Instruct, pero no ap
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/mainsweep4ep-kl100000-s0-em
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/mainsweep4ep-kl100000-s0-em
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Modelo relacionado del mismo autor: https://huggingface.co/jlsrls/em-kl100000-s0
 - Experimento de entrenamiento en Weights & Biases: https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/ehxelfxn

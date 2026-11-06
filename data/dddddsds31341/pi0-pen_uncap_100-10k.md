@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pi0-pen_uncap_100-10k` es un checkpoint de ajuste fino completo (full fine-tuning) del modelo base `pi0_base`, publicado por el usuario `dddddsds31341` en HuggingFace. Segun la model card, se trata de un checkpoint listo para evaluacion en formato Orbax, acompanado de las estadisticas de normalizacion del dataset, entrenado durante 10.000 pasos sobre el conjunto de datos `pen_uncap_100` con un tamano de batch de 32 y un total previsto de 20.005 pasos. Los tags del repositorio lo identifican como un modelo de robotica de tipo vision-language-action (VLA) perteneciente al ecosistema π0 / openpi.
+`pi0-pen_uncap_100-10k` es un checkpoint de ajuste fino completo (full fine-tuning) del modelo base `pi0_base`, publicado por el usuario `dddddsds31341` en Hugging Face. Segun la model card, se trata de un checkpoint listo para evaluacion en formato Orbax, acompanado de las estadisticas de normalizacion del dataset, entrenado durante 10.000 pasos sobre el conjunto de datos `pen_uncap_100` con un tamano de batch de 32 y un total previsto de 20.005 pasos. Los tags del repositorio lo identifican como un modelo de robotica de tipo vision-language-action (VLA) perteneciente al ecosistema π0 / openpi.
 
 El modelo no es un LLM de proposito general, sino una politica robotica: recibe observaciones visuales y una instruccion en lenguaje natural y produce acciones motoras. La instruccion concreta para la que fue entrenado es desmontar un boligrafo: "Grasp the pen body with one gripper and the cap with the other, pull them apart to uncap the pen, then place the pen and cap separately on the table". Es, por tanto, un artefacto de investigacion muy especializado, util para quien replique o compare experimentos de imitation learning sobre la base π0 con openpi.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi0-pen_uncap_100-10k | no disponible | no disponible | Desencapsular boligrafo (bimanual) | no disponible | HuggingFace, 0 descargas |
+| pi0-pen_uncap_100-10k | no disponible | no disponible | Desencapsular boligrafo (bimanual) | no disponible | Hugging Face, 0 descargas |
 | pi0_base | no disponible | no disponible | Politica VLA generalista (base del ajuste) | no disponible | Referenciado como base, sin ficha propia en la informacion aportada |
 | Otros checkpoints de openpi | no disponible | no disponible | Manipulacion diversa | no disponible | No disponible en la informacion proporcionada |
 
@@ -80,7 +80,7 @@ No se dispone de datos verificables de parametros, contexto ni rendimiento de al
 
 - Especializacion extrema: el modelo esta entrenado para una unica tarea y un unico entorno; fuera de ese montaje no cabe esperar comportamiento util.
 - Checkpoint parcial: corresponde al paso 10.000 de 20.005 planificados, por lo que representa un estado intermedio de entrenamiento, no el modelo convergido.
-- Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial; conviene contactar con el autor o asumir el marco por defecto de HuggingFace antes de cualquier despliegue.
+- Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial; conviene contactar con el autor o asumir el marco por defecto de Hugging Face antes de cualquier despliegue.
 - Ausencia de metricas: no hay tasas de exito ni evaluaciones publicadas, de modo que se desconoce la calidad real de la politica.
 - Riesgo de sobreajuste al dataset `pen_uncap_100`: con un solo conjunto de datos y sin validacion reportada, la generalizacion a objetos, posiciones o condiciones de iluminacion distintas es incierta.
 - Idioma: el prompt documentado esta en ingles; no se declara soporte de otros idiomas, y el comportamiento con instrucciones en castellano es desconocido.
@@ -91,7 +91,7 @@ No se dispone de datos verificables de parametros, contexto ni rendimiento de al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dddddsds31341/pi0-pen_uncap_100-10k
+- Modelo en Hugging Face: https://huggingface.co/dddddsds31341/pi0-pen_uncap_100-10k
 - Repositorio openpi (referenciado por el tag `openpi`, sin URL confirmada en la informacion disponible): no disponible
 - Paper de π0: no disponible en la informacion proporcionada
 - Blog o demo del autor: no disponible

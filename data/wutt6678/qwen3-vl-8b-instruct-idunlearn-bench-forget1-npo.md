@@ -4,7 +4,7 @@
 
 El repositorio `wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-forget1-NPO` es un adaptador LoRA (PEFT) publicado por el usuario wutt6678, construido sobre un modelo base identificado en las etiquetas como `outputs_3/mllmu_vanilla_qwen3-vl-8b`, que a su vez deriva de la familia Qwen3-VL-8B-Instruct. Por su nomenclatura, se trata de un artefacto de investigación orientado al desaprendizaje (machine unlearning) de conocimiento concreto en un modelo de lenguaje y vision multimodal, entrenado con el metodo NPO (Negative Preference Optimization) sobre la tarea de olvido "forget1" del benchmark denominado IDUnlearn-Bench.
 
-El modelo no dispone de model card completa: el README es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]". No se declaran licencia, idiomas, pipeline de inferencia ni procedimiento de entrenamiento. El tamano del repositorio es de 0,2 GB, coherente con un adaptador LoRA y no con un modelo completo de 8.000 millones de parametros.
+El modelo no dispone de model card completa: el README es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]". No se declaran licencia, idiomas, pipeline de inferencia ni procedimiento de entrenamiento. El tamano del repositorio es de 0,2 GB, coherente con un adaptador LoRA y no con un modelo completo de 8.000 millones de parametros.
 
 Su relevancia es, por tanto, exclusivamente investigadora: sirve como punto de comparacion reproducible en estudios de desaprendizaje multimodal (el prefijo "mllmu" sugiere Multimodal LLM Unlearning) y como ejemplo del metodo NPO aplicado sobre una arquitectura vision-lenguaje. No esta pensado para despliegue en produccion ni cuenta con validacion documentada por parte del autor.
 
@@ -25,7 +25,7 @@ Su relevancia es, por tanto, exclusivamente investigadora: sirve como punto de c
 
 El modelo es un adaptador de bajo rango (LoRA) distribuido en formato PEFT 0.19.1. El modelo base indicado en las etiquetas es `outputs_3/mllmu_vanilla_qwen3-vl-8b`, un punto de partida "vanilla" (presumiblemente sin desaprendizaje) derivado de Qwen3-VL-8B-Instruct, un transformer multimodal capaz de procesar imagen y texto. No se documenta el rango LoRA, los modulos objetivo, ni la configuracion exacta del entrenamiento.
 
-La unica pista sobre el procedimiento de entrenamiento es el sufijo "NPO" del identificador, que remite a Negative Preference Optimization, una tecnica de desaprendizaje que optimiza el modelo para reducir la probabilidad de respuestas asociadas a un conjunto de datos de olvido ("forget set") evitando el colapso catastrofico del modelo. La tarea "forget1" sugiere que se trata de la primera de varias particiones de olvido del benchmark IDUnlearn-Bench. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, hiperparametros, ni si se aplico alguna fase adicional de alineamiento. El tag `arxiv:1910.09700` corresponde a la referencia por defecto de la plantilla de HuggingFace sobre calculo de impacto ambiental (Lacoste et al., 2019), no a un paper propio de este modelo.
+La unica pista sobre el procedimiento de entrenamiento es el sufijo "NPO" del identificador, que remite a Negative Preference Optimization, una tecnica de desaprendizaje que optimiza el modelo para reducir la probabilidad de respuestas asociadas a un conjunto de datos de olvido ("forget set") evitando el colapso catastrofico del modelo. La tarea "forget1" sugiere que se trata de la primera de varias particiones de olvido del benchmark IDUnlearn-Bench. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, hiperparametros, ni si se aplico alguna fase adicional de alineamiento. El tag `arxiv:1910.09700` corresponde a la referencia por defecto de la plantilla de Hugging Face sobre calculo de impacto ambiental (Lacoste et al., 2019), no a un paper propio de este modelo.
 
 ## Capacidades
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-forget1-NPO | Adaptador LoRA de desaprendizaje | No disponible (base 8B) | No disponible | No disponible | HuggingFace, 0 descargas |
+| wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-forget1-NPO | Adaptador LoRA de desaprendizaje | No disponible (base 8B) | No disponible | No disponible | Hugging Face, 0 descargas |
 | outputs_3/mllmu_vanilla_qwen3-vl-8b (modelo base) | Modelo base de referencia | No disponible | No disponible | No disponible | No disponible publicamente |
-| Qwen3-VL-8B-Instruct | Modelo vision-lenguaje de proposito general | 8B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| Qwen3-VL-8B-Instruct | Modelo vision-lenguaje de proposito general | 8B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos suficientes para una comparativa cuantitativa de rendimiento. La comparacion se limita al tipo de artefacto y a su disponibilidad.
 
@@ -84,7 +84,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa de rendimie
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-forget1-NPO
+- Repositorio Hugging Face: https://huggingface.co/wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-forget1-NPO
 - Modelo base referenciado en las etiquetas: outputs_3/mllmu_vanilla_qwen3-vl-8b (no disponible como enlace publico)
 - Referencia de la plantilla de la model card (calculo de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental: https://mlco2.github.io/impact

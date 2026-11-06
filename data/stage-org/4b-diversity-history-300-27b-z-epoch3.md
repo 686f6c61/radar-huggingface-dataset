@@ -70,11 +70,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| `Stage-org/4b-diversity-history-300-27b-z-epoch3` | 4,54 B | 65.536 tokens en inferencia | No disponible | HuggingFace, 0 descargas | Sin benchmarks publicados |
-| `Qwen/Qwen3.5-4B` (modelo base) | ~4 B | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace | No disponible |
-| Qwen3-4B | ~4 B | 32.768 tokens nativos, ampliable a 131.072 con YaRN | Apache 2.0 | HuggingFace | Benchmarks públicos en la model card original |
-| Gemma 3 4B | ~4 B | 128.000 tokens | Licencia de uso de Gemma | HuggingFace | Benchmarks públicos en la model card original |
-| Llama 3.2 3B | 3,2 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace | Benchmarks públicos en la model card original |
+| `Stage-org/4b-diversity-history-300-27b-z-epoch3` | 4,54 B | 65.536 tokens en inferencia | No disponible | Hugging Face, 0 descargas | Sin benchmarks publicados |
+| `Qwen/Qwen3.5-4B` (modelo base) | ~4 B | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face | No disponible |
+| Qwen3-4B | ~4 B | 32.768 tokens nativos, ampliable a 131.072 con YaRN | Apache 2.0 | Hugging Face | Benchmarks públicos en la model card original |
+| Gemma 3 4B | ~4 B | 128.000 tokens | Licencia de uso de Gemma | Hugging Face | Benchmarks públicos en la model card original |
+| Llama 3.2 3B | 3,2 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face | Benchmarks públicos en la model card original |
 
 La comparación es estructural (tamaño, contexto, licencia y disponibilidad): no existe ningún dato de rendimiento de este checkpoint que permita situarlo frente a las alternativas.
 
@@ -95,7 +95,7 @@ La comparación es estructural (tamaño, contexto, licencia y disponibilidad): n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/4b-diversity-history-300-27b-z-epoch3
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/4b-diversity-history-300-27b-z-epoch3
 - Dataset de entrenamiento: https://huggingface.co/datasets/Stage-org/4b-diversity-history-300-27b-z
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Nota sobre la búsqueda web: los resultados devueltos corresponden a portales de ofertas de prácticas ("stage" en francés: stage.fr, 1jeune1solution, Welcome to the Jungle, Indeed) y no guardan ninguna relación con el modelo. No se han encontrado papers, blogs, repositorios de código ni demos asociados a este checkpoint.

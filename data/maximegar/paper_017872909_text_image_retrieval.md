@@ -69,6 +69,6 @@ No disponible. No es un modelo de IA y no hay modelos comparables en la misma ca
 
 ## Enlaces
 
-- HuggingFace: [maximegar/paper_017872909_text_image_retrieval](https://huggingface.co/maximegar/paper_017872909_text_image_retrieval)
+- Hugging Face: [maximegar/paper_017872909_text_image_retrieval](https://huggingface.co/maximegar/paper_017872909_text_image_retrieval)
 - Paper sobre comparación de retrieval multimodal (arXiv): https://arxiv.org/abs/2511.16654
 - Paper TIGeR sobre text-to-image generation and retrieval (arXiv): https://arxiv.org/abs/2406.05814

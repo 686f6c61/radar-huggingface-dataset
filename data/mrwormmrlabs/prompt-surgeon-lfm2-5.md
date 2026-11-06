@@ -68,7 +68,7 @@ No se dispone de información sobre otros modelos de optimización de prompts co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MrWoRmMrLabs/prompt-surgeon-lfm2.5
+- Modelo en Hugging Face: https://huggingface.co/MrWoRmMrLabs/prompt-surgeon-lfm2.5
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Modelo compañero (groundedness-judge): https://huggingface.co/MrWoRmMrLabs/groundedness-judge-lfm2.5
 - Licencia LFM Open License v1.0: https://www.liquid.ai/lfm-open-license

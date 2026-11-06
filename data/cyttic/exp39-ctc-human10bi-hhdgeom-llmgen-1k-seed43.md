@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-1k-seed43` es un checkpoint de investigación publicado por la organización cyttic en HuggingFace. Por su nombre y su tamaño (87.279.756 parámetros, unos 87 millones), se trata de un modelo pequeno orientado a reconocimiento de voz (ASR) basado en CTC (Connectionist Temporal Classification), entrenado sobre un conjunto de datos sintético o aumentado generado con un LLM ("llmgen"), con semilla 43 y un tamaño de muestra de 1.000 ejemplos ("1k"). El identificador sugiere variantes del experimento 39 con configuraciones de geometría de cabeza ("hhdgeom") y datos bilingües o bidireccionales ("human10bi").
+El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-1k-seed43` es un checkpoint de investigación publicado por la organización cyttic en Hugging Face. Por su nombre y su tamaño (87.279.756 parámetros, unos 87 millones), se trata de un modelo pequeno orientado a reconocimiento de voz (ASR) basado en CTC (Connectionist Temporal Classification), entrenado sobre un conjunto de datos sintético o aumentado generado con un LLM ("llmgen"), con semilla 43 y un tamaño de muestra de 1.000 ejemplos ("1k"). El identificador sugiere variantes del experimento 39 con configuraciones de geometría de cabeza ("hhdgeom") y datos bilingües o bidireccionales ("human10bi").
 
-La model card está prácticamente vacía: es la plantilla por defecto de HuggingFace sin rellenar, por lo que no hay información sobre arquitectura, datos de entrenamiento, idiomas ni evaluación. El tag `arxiv:1910.09700` corresponde al artículo de Lacoste et al. (2019) sobre el cálculo del impacto medioambiental del aprendizaje automático, incluido en la plantilla de la model card, y no a un paper del propio modelo. La licencia declarada es MIT.
+La model card está prácticamente vacía: es la plantilla por defecto de Hugging Face sin rellenar, por lo que no hay información sobre arquitectura, datos de entrenamiento, idiomas ni evaluación. El tag `arxiv:1910.09700` corresponde al artículo de Lacoste et al. (2019) sobre el cálculo del impacto medioambiental del aprendizaje automático, incluido en la plantilla de la model card, y no a un paper del propio modelo. La licencia declarada es MIT.
 
 Su relevancia es limitada fuera del contexto de investigación del que procede: se trata de un artefacto experimental de bajo número de descargas (0) y sin documentación, útil únicamente como referencia para reproducir o comparar experimentos del grupo cyttic. No debe confundirse con un modelo de lenguaje generativo de propósito general.
 
@@ -43,7 +43,7 @@ Dado que la model card no documenta casos de uso y el modelo es un artefacto exp
 - Investigación en ASR con CTC: si el modelo es efectivamente un sistema de reconocimiento de voz, podría emplearse como línea base en experimentos académicos de transcripción sobre dominios pequeños.
 - Estudio de datos sintéticos: analizar cómo afecta el entrenamiento con datos generados por LLM ("llmgen") a un modelo de 87 M de parámetros en una tarea concreta.
 - Análisis de robustez y sesgo: evaluar el comportamiento de un modelo pequeño entrenado con pocos datos (1k muestras) para estudiar sobreajuste y generalización.
-- Docencia y formación: usar el checkpoint como ejemplo práctico en cursos sobre entrenamiento de modelos pequeños y flujos de HuggingFace.
+- Docencia y formación: usar el checkpoint como ejemplo práctico en cursos sobre entrenamiento de modelos pequeños y flujos de Hugging Face.
 - Comparación de semillas: contrastar con otros checkpoints del mismo autor con semillas distintas para medir varianza en el entrenamiento.
 
 No se recomienda su uso en producción, atención al cliente, generación de código ni tareas generativas, al no existir evidencia documentada de dichas capacidades.
@@ -85,7 +85,7 @@ Los datos de los modelos de referencia son orientativos y no proceden de la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-1k-seed43
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-1k-seed43
 - Referencia de la plantilla de model card (no del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact#compute
 - No se han encontrado papers, blogs, repositorios ni demos adicionales del modelo en la informacion disponible.

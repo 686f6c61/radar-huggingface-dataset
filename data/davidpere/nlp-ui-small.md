@@ -93,6 +93,6 @@ Comparacion interna entre los dos checkpoints del repositorio:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidpere/nlp-ui-small
+- Modelo en Hugging Face: https://huggingface.co/davidpere/nlp-ui-small
 - Repositorio nlp-ui: https://github.com/David-glitc/nlp-ui
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo; el unico resultado obtenido correspondia a un portal bancario sin relacion con el modelo.

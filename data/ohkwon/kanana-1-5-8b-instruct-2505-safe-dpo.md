@@ -90,7 +90,7 @@ Nota: los datos de los modelos comparados provienen de sus respectivas fichas pu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ohkwon/kanana-1.5-8b-instruct-2505-Safe-DPO
+- Hugging Face: https://huggingface.co/ohkwon/kanana-1.5-8b-instruct-2505-Safe-DPO
 - Unsloth (herramienta de entrenamiento citada en la model card): https://github.com/unslothai/unsloth
 - TRL de Hugging Face (citada como libreria de entrenamiento): https://github.com/huggingface/trl
 - Resultados de busqueda web: no se encontraron enlaces relevantes sobre este modelo; las busquedas devolvieron contenido sin relacion (paginas de Roblox).

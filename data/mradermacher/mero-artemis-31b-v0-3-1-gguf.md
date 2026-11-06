@@ -92,7 +92,7 @@ No se dispone de informacion sobre modelos de terceros comparables en rendimient
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Mero-Artemis-31B-v0.3.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Mero-Artemis-31B-v0.3.1-GGUF
 - Modelo base: https://huggingface.co/sophosympatheia/Mero-Artemis-31B-v0.3.1
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Mero-Artemis-31B-v0.3.1-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Mero-Artemis-31B-v0.3.1-GGUF

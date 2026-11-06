@@ -76,7 +76,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CortexRAG (este) | Sistema RAG medico | No especificado | Apache 2.0 | HuggingFace |
+| CortexRAG (este) | Sistema RAG medico | No especificado | Apache 2.0 | Hugging Face |
 | MedRAG (referencia general) | Sistema RAG medico | No disponible | No disponible | No disponible |
 | BioRAG (referencia general) | Sistema RAG biomedico | No disponible | No disponible | No disponible |
 
@@ -94,7 +94,7 @@ Dado que no se han encontrado datos concretos de estos sistemas alternativos en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nsr51324/CortexRAG
+- Modelo en Hugging Face: https://huggingface.co/nsr51324/CortexRAG
 - Referencia de Sentence Transformers: https://www.sbert.net/
 - Referencia de FAISS: https://github.com/facebookresearch/faiss
 - Referencia de Cross-Encoder: https://www.sbert.net/examples/applications/cross-encoder/README.html

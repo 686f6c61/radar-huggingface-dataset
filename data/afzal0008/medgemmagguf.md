@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 | MedGemma 4B (original) | 4 B | no disponible | Sí (visión) | Gemma license (no confirmado) | safetensors |
 | LLaVA-Med (ejemplo) | 7 B | 4096 | Sí (visión) | no disponible | safetensors |
 
-No se dispone de datos de rendimiento comparativo. La principal diferencia con el modelo original es el formato GGUF, que facilita el despliegue en entornos locales y con menos recursos. MedGemma original está disponible en HuggingFace con licencia de Google (probablemente Gemma Terms of Use), pero la licencia de esta conversión no está especificada.
+No se dispone de datos de rendimiento comparativo. La principal diferencia con el modelo original es el formato GGUF, que facilita el despliegue en entornos locales y con menos recursos. MedGemma original está disponible en Hugging Face con licencia de Google (probablemente Gemma Terms of Use), pero la licencia de esta conversión no está especificada.
 
 ## Limitaciones y advertencias
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia con e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AFZAL0008/MedGemmagguf
+- Modelo en Hugging Face: https://huggingface.co/AFZAL0008/MedGemmagguf
 - Perfil del autor: https://huggingface.co/AFZAL0008
 - Página oficial de MedGemma (Google DeepMind): https://deepmind.google/models/gemma/medgemma/
 - Documentación de MedGemma para desarrolladores: https://developers.google.com/health-ai-developer-foundations/medgemma

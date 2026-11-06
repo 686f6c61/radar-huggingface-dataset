@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mulemp/KH38MT` es un repositorio alojado en HuggingFace por el usuario `mulemp`, creado en abril de 2026 y actualizado en agosto del mismo año. El repositorio tiene un tamaño de 2,7 GB y su acceso está restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargar o utilizar los archivos. A fecha de la consulta, el modelo registra 0 descargas y 1 like, lo que sugiere que se trata de un proyecto muy reciente o de baja difusión.
+El modelo `mulemp/KH38MT` es un repositorio alojado en Hugging Face por el usuario `mulemp`, creado en abril de 2026 y actualizado en agosto del mismo año. El repositorio tiene un tamaño de 2,7 GB y su acceso está restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargar o utilizar los archivos. A fecha de la consulta, el modelo registra 0 descargas y 1 like, lo que sugiere que se trata de un proyecto muy reciente o de baja difusión.
 
 La información pública disponible es extremadamente limitada: no se especifica la arquitectura, el número de parámetros, la licencia, los idiomas soportados ni el pipeline de uso. El tag `region:us` podría indicar una orientación geográfica, pero no se aporta más contexto. Dado que el repositorio pesa 2,7 GB, es plausible que contenga pesos de un modelo de tamaño moderado (posiblemente en formato safetensors o GGUF), pero no hay confirmación oficial. Por tanto, esta ficha se basa únicamente en los metadatos proporcionados y no puede ofrecer detalles técnicos verificados.
 
@@ -45,7 +45,7 @@ No disponible. No se conocen modelos comparables ni se puede establecer una comp
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que es necesario solicitar acceso y aceptar condiciones en HuggingFace antes de su uso.
+- Acceso restringido: el repositorio es gated, por lo que es necesario solicitar acceso y aceptar condiciones en Hugging Face antes de su uso.
 - Informacion insuficiente: la falta de documentacion impide evaluar sesgos, riesgos de alucinacion, limitaciones de contexto o idioma.
 - Uso comercial: al no conocerse la licencia, no se puede garantizar que el modelo sea utilizable en entornos comerciales.
 - Produccion: sin datos de rendimiento ni requisitos de hardware, no se recomienda su uso en entornos de produccion.
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables ni se puede establecer una comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mulemp/KH38MT
+- Repositorio Hugging Face: https://huggingface.co/mulemp/KH38MT

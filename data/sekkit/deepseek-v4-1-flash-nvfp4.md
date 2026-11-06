@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Cuantización | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-NVFP4 (este) | 664,9B totales (8B/16B activos) | 1M | MIT | NVFP4 + MXFP4 Engram | HuggingFace |
-| DeepSeek-V4.1-Flash (base) | 552B backbone + 196B Engram | 1M | MIT | Original (sin cuantizar) | HuggingFace |
+| DeepSeek-V4.1-Flash-NVFP4 (este) | 664,9B totales (8B/16B activos) | 1M | MIT | NVFP4 + MXFP4 Engram | Hugging Face |
+| DeepSeek-V4.1-Flash (base) | 552B backbone + 196B Engram | 1M | MIT | Original (sin cuantizar) | Hugging Face |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de otros modelos comparables en la información proporcionada para establecer una comparación cuantitativa.
@@ -83,8 +83,8 @@ No se dispone de datos de benchmarks ni de otros modelos comparables en la infor
 
 ## Enlaces
 
-- HuggingFace (esta versión): https://huggingface.co/sekkit/DeepSeek-V4.1-Flash-NVFP4
-- HuggingFace (versión NVIDIA): https://huggingface.co/nvidia/DeepSeek-V4.1-Flash-NVFP4
+- Hugging Face (esta versión): https://huggingface.co/sekkit/DeepSeek-V4.1-Flash-NVFP4
+- Hugging Face (versión NVIDIA): https://huggingface.co/nvidia/DeepSeek-V4.1-Flash-NVFP4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - NVIDIA Model Optimizer: https://github.com/NVIDIA/Model-Optimizer
 - PR vLLM para soporte MXFP4 Engram: https://github.com/vllm-project/vllm/pull/61530

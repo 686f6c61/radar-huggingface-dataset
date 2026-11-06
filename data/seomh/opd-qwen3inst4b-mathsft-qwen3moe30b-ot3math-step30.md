@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `seomh/opd-qwen3inst4b-mathsft-qwen3moe30b-ot3math-step30` es un ajuste fino de tipo SFT sobre una base de la familia Qwen3 con 4.022.468.096 parametros (aproximadamente 4,02 mil millones). Lo publica el usuario individual `seomh` en HuggingFace, con fecha de creacion del 8 de octubre de 2026, y el repositorio ocupa 8,1 GB, un tamano coherente con pesos en bf16 o fp16 (4,02 B x 2 bytes = 8,04 GB) mas los ficheros auxiliares.
+El modelo `seomh/opd-qwen3inst4b-mathsft-qwen3moe30b-ot3math-step30` es un ajuste fino de tipo SFT sobre una base de la familia Qwen3 con 4.022.468.096 parametros (aproximadamente 4,02 mil millones). Lo publica el usuario individual `seomh` en Hugging Face, con fecha de creacion del 8 de octubre de 2026, y el repositorio ocupa 8,1 GB, un tamano coherente con pesos en bf16 o fp16 (4,02 B x 2 bytes = 8,04 GB) mas los ficheros auxiliares.
 
 Por la propia nomenclatura del identificador se puede inferir, aunque no esta confirmado en la informacion disponible, que se trata de un experimento de destilacion (el prefijo `opd` sugiere on-policy distillation) en el que un modelo estudiante denso de ~4 B, inicializado desde Qwen3-4B-Instruct, se entrena sobre datos de matematicas (`mathsft`, probablemente el conjunto OpenThoughts3 math, `ot3math`) generados por un profesor MoE de la familia Qwen3 con 30 B totales (`qwen3moe30b`, es decir, Qwen3-30B-A3B) en un checkpoint intermedio (`step30`). Es, por tanto, un artefacto de investigacion mas que un modelo listo para produccion.
 
@@ -50,13 +50,13 @@ El identificador aporta pistas sobre el pipeline de entrenamiento: `qwen3inst4b`
 - Evaluacion interna de checkpoints intermedios: un artefacto etiquetado como `step30` sirve para estudiar el efecto del numero de pasos de entrenamiento sobre la calidad del razonamiento, midiendo degradacion o mejora entre pasos.
 - Prototipos locales de bajo coste: con pesos de ~8 GB en bf16, cabe en GPU de consumo y permite experimentar sin acceso a clústeres, siempre que se asuma la ausencia de garantias de calidad.
 - Ajuste posterior en dominios especificos (LoRA/QLoRA): al ser un modelo de 4 B, es viable reentrenarlo en una unica GPU de 24 GB con adaptadores de bajo rango para tareas de matematicas, fisica o ingenieria.
-- Analisis de artefactos publicados sin model card: sirve como caso de estudio sobre riesgos de trazabilidad y licencias en repositorios de HuggingFace.
+- Analisis de artefactos publicados sin model card: sirve como caso de estudio sobre riesgos de trazabilidad y licencias en repositorios de Hugging Face.
 
 No se recomienda su uso en atencion al cliente, generacion de codigo en produccion ni pipelines de agentes: no hay evidencia de soporte de tool calling, ni de calidad multilingue, ni de licencia que habilite uso comercial.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye model card, ni tablas de evaluacion, ni resultados de MMLU, GSM8K, MATH, HumanEval u otros conjuntos. Los 12 registros de descarga y la ausencia de likes indican que no existe una comunidad que haya reportado mediciones independientes.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye model card, ni tablas de evaluacion, ni resultados de MMLU, GSM8K, MATH, HumanEval u otros conjuntos. Los 12 registros de descarga y la ausencia de likes indican que no existe una comunidad que haya reportado mediciones independientes.
 
 ## Requisitos de hardware
 
@@ -97,5 +97,5 @@ No se dispone de datos de rendimiento del modelo evaluado que permitan una compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/seomh/opd-qwen3inst4b-mathsft-qwen3moe30b-ot3math-step30
+- Hugging Face: https://huggingface.co/seomh/opd-qwen3inst4b-mathsft-qwen3moe30b-ot3math-step30
 - No se han encontrado en la busqueda web otros enlaces asociados al modelo (papers, blogs, repositorios de codigo o demos).

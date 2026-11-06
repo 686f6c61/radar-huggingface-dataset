@@ -79,9 +79,9 @@ No se detallan en la información disponible los nombres concretos de los benchm
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SDRPN-Qwen3.5-9B (este) | 10.038.985.456 | no disponible | Apache 2.0 | HuggingFace, requiere código externo | Checkpoint etapa 1, backbone congelado, solo twig entrenado |
-| VisionRL2-Qwen3.5-9B | no disponible | no disponible | no disponible | HuggingFace | Etapa 2 del mismo pipeline; media de tabla principal 80,1 |
-| Qwen/Qwen3.5-9B (base) | 9B (aprox.) | no disponible | no disponible en la información proporcionada | HuggingFace, ModelScope, Microsoft Foundry | Multimodal denso de Alibaba Cloud; este checkpoint lo usa congelado |
+| SDRPN-Qwen3.5-9B (este) | 10.038.985.456 | no disponible | Apache 2.0 | Hugging Face, requiere código externo | Checkpoint etapa 1, backbone congelado, solo twig entrenado |
+| VisionRL2-Qwen3.5-9B | no disponible | no disponible | no disponible | Hugging Face | Etapa 2 del mismo pipeline; media de tabla principal 80,1 |
+| Qwen/Qwen3.5-9B (base) | 9B (aprox.) | no disponible | no disponible en la información proporcionada | Hugging Face, ModelScope, Microsoft Foundry | Multimodal denso de Alibaba Cloud; este checkpoint lo usa congelado |
 | SD-RPN sobre Qwen3.5-4B | no disponible | no disponible | no disponible | no disponible | Variante menor del mismo método, con fila de etapa 1 publicada |
 | SD-RPN sobre Gemma-4-12B-it | no disponible | no disponible | no disponible | no disponible | Variante sobre backbone distinto, con fila de etapa 1 publicada |
 
@@ -100,7 +100,7 @@ No se detallan en la información disponible los nombres concretos de los benchm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YuhengSSS/SDRPN-Qwen3.5-9B
+- Modelo en Hugging Face: https://huggingface.co/YuhengSSS/SDRPN-Qwen3.5-9B
 - Modelo de etapa 2 (Vision-RL²): https://huggingface.co/YuhengSSS/VisionRL2-Qwen3.5-9B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de código VisionRL2: https://github.com/YuHengsss/VisionRL2

@@ -6,7 +6,7 @@ PiSA-SR-onnx es un paquete de modelos en formato ONNX publicado por el usuario a
 
 El repositorio ocupa 1,2 GB y se organiza en carpetas (`pisa_sr/`, `taesd/`, `fastsr/`, `npu/`) que agrupan componentes con licencias distintas, de ahí que la licencia global se declare como "mixed". Cada subconjunto conserva la licencia del modelo original del que fue convertido, lo que condiciona su reutilización: parte del contenido está bajo CreativeML Open RAIL++-M con restricciones de uso, otra bajo Apache-2.0, MIT, BSD-3-Clause y la licencia propia de Qualcomm para el runtime.
 
-La relevancia de este repositorio es práctica y acotada: sirve como distribución de pesos para una app concreta de cámara con funciones de restauración y superresolución de imagen, no como un modelo para evaluación genérica. No hay información publicada sobre arquitectura de lenguaje, contexto, idiomas, benchmarks ni pipeline de HuggingFace, por lo que la ficha se limita a documentar lo que la model card declara explícitamente.
+La relevancia de este repositorio es práctica y acotada: sirve como distribución de pesos para una app concreta de cámara con funciones de restauración y superresolución de imagen, no como un modelo para evaluación genérica. No hay información publicada sobre arquitectura de lenguaje, contexto, idiomas, benchmarks ni pipeline de Hugging Face, por lo que la ficha se limita a documentar lo que la model card declara explícitamente.
 
 ## Especificaciones tecnicas
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PiSA-SR-onnx (este repo) | Paquete ONNX de superresolución y utilidades | 1,2 GB (repo) | Mixta | HuggingFace |
+| PiSA-SR-onnx (este repo) | Paquete ONNX de superresolución y utilidades | 1,2 GB (repo) | Mixta | Hugging Face |
 | PiSA-SR (csslc/PiSA-SR) | Superresolución sobre SD 2.1-base | No disponible | Apache-2.0 (código) | Repositorio original |
 | Real-ESRGAN (xinntao) | Superresolución x4 | No disponible | BSD-3-Clause | Repositorio original |
-| TAESD (madebyollin) | Autoencoder rápido | No disponible | MIT | HuggingFace |
+| TAESD (madebyollin) | Autoencoder rápido | No disponible | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -73,13 +73,13 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 - Licencia mixta: los pesos derivados de Stable Diffusion 2.1 están sujetos a CreativeML Open RAIL++-M, que impone restricciones de uso; el resto de componentes tienen licencias distintas (Apache-2.0, MIT, BSD-3-Clause, AMLR, Qualcomm), por lo que un uso comercial requiere revisar cada subcarpeta.
 - El repositorio no es un modelo de lenguaje: no admite prompts de texto libre, tool calling ni razonamiento multi-paso.
 - No se documentan sesgos, tasas de alucinación ni evaluaciones de calidad; al ser modelos de imagen, los riesgos se refieren a artefactos visuales y fidelidad de la restauración.
-- No hay información sobre idiomas ni sobre el pipeline de HuggingFace, lo que limita su uso automatizado desde la librería `transformers`.
+- No hay información sobre idiomas ni sobre el pipeline de Hugging Face, lo que limita su uso automatizado desde la librería `transformers`.
 - El runtime QNN de Qualcomm está pensado para hardware concreto (NPU V68–V81); fuera de esos dispositivos no será utilizable.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin evidencia de uso o validación por la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/andrey556785656674/PiSA-SR-onnx
+- Hugging Face: https://huggingface.co/andrey556785656674/PiSA-SR-onnx
 - PiSA-SR (origen): https://github.com/csslc/PiSA-SR
 - MobileCLIP2-S0 (Apple): https://github.com/apple/ml-mobileclip
 - TAESD: https://huggingface.co/madebyollin/taesd

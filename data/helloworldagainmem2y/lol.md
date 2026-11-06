@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `helloworldagainmem2y/lol` es un repositorio alojado en HuggingFace por el usuario `helloworldagainmem2y`. En el momento de la consulta, el repositorio no declara informacion tecnica alguna: no especifica arquitectura, tamano de parametros, longitud de contexto, idiomas soportados ni pipeline de inferencia. La unica informacion verificable es la licencia (Apache 2.0) y la etiqueta de region (`region:us`).
+El modelo identificado como `helloworldagainmem2y/lol` es un repositorio alojado en Hugging Face por el usuario `helloworldagainmem2y`. En el momento de la consulta, el repositorio no declara informacion tecnica alguna: no especifica arquitectura, tamano de parametros, longitud de contexto, idiomas soportados ni pipeline de inferencia. La unica informacion verificable es la licencia (Apache 2.0) y la etiqueta de region (`region:us`).
 
 La model card publicada por el autor esta practicamente vacia: contiene unicamente el bloque de metadatos con la licencia, sin descripcion, sin ejemplos de uso y sin referencias a paper, repositorio de codigo o dataset de entrenamiento. El repositorio acumula 0 descargas y 0 likes, y las fechas de creacion y actualizacion son identicas (`2026-09-25T21:35:10`), lo que indica que no ha habido modificaciones posteriores a su publicacion.
 
@@ -89,7 +89,7 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea objetivo d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| helloworldagainmem2y/lol | no disponible | no disponible | Apache 2.0 | Repositorio en HuggingFace con 0 descargas |
+| helloworldagainmem2y/lol | no disponible | no disponible | Apache 2.0 | Repositorio en Hugging Face con 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -106,7 +106,7 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea objetivo d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/helloworldagainmem2y/lol
+- Repositorio en Hugging Face: https://huggingface.co/helloworldagainmem2y/lol
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

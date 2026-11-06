@@ -75,8 +75,8 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-mistral_remove50_swapgapiter_b010 | 7.241.732.096 segun safetensors; 50,03% de parametros densos eliminados segun la model card | no disponible | ASR AdvBench 0,0000; ASR StrongREJECT 0,0064; sobrerrechazo 0,6574; perplejidad WikiText-2 68,8296 | apache-2.0 | HuggingFace, 0 descargas y 0 likes |
-| mistralai/Mistral-7B-Instruct-v0.2 (modelo base) | no disponible en la informacion | no disponible | no disponible (la model card indica cualitativamente que la compresion eleva el ASR, sin cifras) | el repositorio base no incluye fichero de licencia para redistribuir, segun la model card | publico en HuggingFace |
+| svd-safety-mistral_remove50_swapgapiter_b010 | 7.241.732.096 segun safetensors; 50,03% de parametros densos eliminados segun la model card | no disponible | ASR AdvBench 0,0000; ASR StrongREJECT 0,0064; sobrerrechazo 0,6574; perplejidad WikiText-2 68,8296 | apache-2.0 | Hugging Face, 0 descargas y 0 likes |
+| mistralai/Mistral-7B-Instruct-v0.2 (modelo base) | no disponible en la informacion | no disponible | no disponible (la model card indica cualitativamente que la compresion eleva el ASR, sin cifras) | el repositorio base no incluye fichero de licencia para redistribuir, segun la model card | publico en Hugging Face |
 | Otras celdas de la malla del mismo estudio (otras reglas de seleccion y presupuestos) | no disponible | no disponible | no disponible | apache-2.0 segun la celda descrita | no enlazadas en la informacion proporcionada |
 | Metodos alternativos de compresion (por ejemplo, cuantizacion de pesos o poda estructurada) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -97,7 +97,7 @@ No se dispone de datos comparativos de benchmarks frente a alternativas de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mistral_remove50_swapgapiter_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mistral_remove50_swapgapiter_b010
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Paper de SVD-LLM, repositorio de codigo, demo o blog del estudio: no disponibles en la informacion proporcionada.
 - La busqueda web realizada no devolvio enlaces relevantes: los resultados correspondian a Google Earth y Google Maps y no guardan relacion con el modelo.

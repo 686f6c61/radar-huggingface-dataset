@@ -2,7 +2,7 @@
 
 ## Resumen
 
-us-ijepa-v3-encoder es un codificador de visión (ViT-B/16) entrenado con el paradigma I-JEPA (Image-based Joint-Embedding Predictive Architecture) sobre ecografías mamarias, desarrollado por el autor de HuggingFace Ashluu en el marco de una tesis de máster. El modelo no es un generador de texto ni un modelo de lenguaje: es un extractor de representaciones visuales que produce tokens de parche a partir de imágenes de ecografía de mama de 224 x 224 píxeles en escala de grises. Se distribuye únicamente como pesos del codificador (`encoder` state dict) junto con la configuración de entrenamiento (`cfg`), en formato float32 y con un tamaño de 343 MB.
+us-ijepa-v3-encoder es un codificador de visión (ViT-B/16) entrenado con el paradigma I-JEPA (Image-based Joint-Embedding Predictive Architecture) sobre ecografías mamarias, desarrollado por el autor de Hugging Face Ashluu en el marco de una tesis de máster. El modelo no es un generador de texto ni un modelo de lenguaje: es un extractor de representaciones visuales que produce tokens de parche a partir de imágenes de ecografía de mama de 224 x 224 píxeles en escala de grises. Se distribuye únicamente como pesos del codificador (`encoder` state dict) junto con la configuración de entrenamiento (`cfg`), en formato float32 y con un tamaño de 343 MB.
 
 La relevancia del modelo radica en su enfoque de aprendizaje autosupervisado aplicado a imagen médica, un dominio donde las anotaciones son escasas y costosas. I-JEPA evita la augmentación agresiva típica de otros métodos autosupervisados y predice representaciones en el espacio latente, lo que puede resultar ventajoso en imágenes médicas donde las transformaciones artificiales pueden alterar la semántica clínica. El autor reporta una sonda lineal congelada sobre el dataset BUS-BRA con AUROC de 0,814 en validación y 0,870 en test sobre fotogramas completos.
 
@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| us-ijepa-v3-encoder | no disponible (ViT-B/16) | no aplica (visión) | AUROC 0,870 en test BUS-BRA | other | HuggingFace |
+| us-ijepa-v3-encoder | no disponible (ViT-B/16) | no aplica (visión) | AUROC 0,870 en test BUS-BRA | other | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ashluu/us-ijepa-v3-encoder
+- Modelo en Hugging Face: https://huggingface.co/Ashluu/us-ijepa-v3-encoder
 - Repositorio del agente que lo consume: mencionado en la model card como "agent repository", sin URL disponible en la información proporcionada.
 - Paper de I-JEPA: no disponible en la información proporcionada.
 - Dataset BUS-BRA: no disponible en la información proporcionada.

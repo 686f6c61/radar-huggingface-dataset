@@ -75,7 +75,7 @@ La comparativa se limita a caracteristicas generales, ya que no hay datos de ren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yakimask2/qwen3-0.6B-japanese-thinking
+- Repositorio Hugging Face: https://huggingface.co/yakimask2/qwen3-0.6B-japanese-thinking
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio oficial Qwen3: https://github.com/QwenLM/Qwen3
 - Reporte tecnico Qwen3: https://arxiv.org/html/2505.09388v1

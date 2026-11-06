@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MinkUNet18-W20 es un modelo de segmentación semántica de nubes de puntos LiDAR, desarrollado originalmente en el MIT (MIT HAN Lab) y empaquetado para HuggingFace por el proyecto `torch-pointcloud`. Implementa una U-Net residual con convoluciones dispersas de Minkowski (Minkowski Convolutional Neural Networks), una variante de convolución 3D que opera únicamente sobre vóxeles ocupados, evitando el coste computacional de las convoluciones densas sobre el espacio vacío. El checkpoint está entrenado sobre el dataset SemanticKITTI para la tarea de segmentación semántica de secuencias LiDAR de escenas de conducción urbana.
+MinkUNet18-W20 es un modelo de segmentación semántica de nubes de puntos LiDAR, desarrollado originalmente en el MIT (MIT HAN Lab) y empaquetado para Hugging Face por el proyecto `torch-pointcloud`. Implementa una U-Net residual con convoluciones dispersas de Minkowski (Minkowski Convolutional Neural Networks), una variante de convolución 3D que opera únicamente sobre vóxeles ocupados, evitando el coste computacional de las convoluciones densas sobre el espacio vacío. El checkpoint está entrenado sobre el dataset SemanticKITTI para la tarea de segmentación semántica de secuencias LiDAR de escenas de conducción urbana.
 
 El modelo es compacto: 8,8 millones de parámetros, 4 canales de entrada (coordenadas XYZ más intensidad), 61 características internas y una cabeza de clasificación de 19 clases. A pesar de su tamaño reducido, alcanza un mIoU de 60,26 y una precisión global (OA) de 91,94 en SemanticKITTI, cifras declaradas por el autor en la model card y no verificadas de forma independiente. Es relevante para desarrolladores que necesitan un baseline ligero y desplegable de segmentación LiDAR sin recurrir a arquitecturas densas de mayor coste.
 
@@ -83,7 +83,7 @@ No se dispone en la informacion proporcionada de datos de otros modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/minkunet18-w20.semantickitti.mit-han-lab
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/minkunet18-w20.semantickitti.mit-han-lab
 - Paper de Minkowski Convolutional Neural Networks: https://arxiv.org/abs/1904.08755
 - Repositorio de origen (spvnas, MIT HAN Lab): https://github.com/mit-han-lab/spvnas
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

@@ -78,9 +78,9 @@ Existen otros checkpoints de la misma asignatura y del mismo tipo de experimento
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dnebh/anlp-a2-part2-adamw` | 33,4 M | 256 | val_loss 3,1717; test BLEU 0,604 | no disponible | HuggingFace |
-| `unignoramus/anlp-a2-p2-adamw` | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| `irishbumfuzzle/anlp-a2-p2-adamw` | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `dnebh/anlp-a2-part2-adamw` | 33,4 M | 256 | val_loss 3,1717; test BLEU 0,604 | no disponible | Hugging Face |
+| `unignoramus/anlp-a2-p2-adamw` | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| `irishbumfuzzle/anlp-a2-p2-adamw` | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 Los tres corresponden a la misma tarea (ANLP Assignment 2, Part 2) con el mismo optimizador (AdamW) y corpus. No se dispone de modelos de referencia comparables con datos verificables publicados en la informacion proporcionada.
 
@@ -98,7 +98,7 @@ Los tres corresponden a la misma tarea (ANLP Assignment 2, Part 2) con el mismo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dnebh/anlp-a2-part2-adamw
+- Modelo en Hugging Face: https://huggingface.co/dnebh/anlp-a2-part2-adamw
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/dnebhrajani-v/anlp-a2-part2/runs/8tobob2s
 - Checkpoint hermano: https://huggingface.co/unignoramus/anlp-a2-p2-adamw
 - Checkpoint hermano: https://huggingface.co/irishbumfuzzle/anlp-a2-p2-adamw

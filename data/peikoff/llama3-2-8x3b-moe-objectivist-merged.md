@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| peikoff/llama3-2-8x3b-moe-objectivist-merged | 18,4 B (MoE, 8x3B aprox., 2 activos) | no disponible | sin benchmarks publicados | other | HuggingFace |
-| DavidAU/Llama-3.2-8X3B-MOE-Dark-Champion-Instruct-uncensored-abliterated-18.4B (modelo base) | 18,4 B (MoE) | no disponible | no disponible en esta ficha | other | HuggingFace |
-| Mixtral 8x7B (referencia de arquitectura MoE) | aprox. 46,7 B (13 B activos) | no disponible | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
-| Llama 3.2 (familia; variantes densas 1B/3B) | 1 B - 3 B (densas) | no disponible | no disponible en esta ficha | Llama license | HuggingFace / Meta |
+| peikoff/llama3-2-8x3b-moe-objectivist-merged | 18,4 B (MoE, 8x3B aprox., 2 activos) | no disponible | sin benchmarks publicados | other | Hugging Face |
+| DavidAU/Llama-3.2-8X3B-MOE-Dark-Champion-Instruct-uncensored-abliterated-18.4B (modelo base) | 18,4 B (MoE) | no disponible | no disponible en esta ficha | other | Hugging Face |
+| Mixtral 8x7B (referencia de arquitectura MoE) | aprox. 46,7 B (13 B activos) | no disponible | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
+| Llama 3.2 (familia; variantes densas 1B/3B) | 1 B - 3 B (densas) | no disponible | no disponible en esta ficha | Llama license | Hugging Face / Meta |
 
 Nota: los datos de los modelos comparables no aparecen detallados en la informacion proporcionada; se indican como "no disponible" donde no hay dato confirmado. La comparacion mas directa y fiable es frente al modelo base, del que este checkpoint solo se diferencia por la fusion de los adaptadores LoRA de atencion.
 
@@ -78,7 +78,7 @@ Nota: los datos de los modelos comparables no aparecen detallados en la informac
 - Repositorio con 0 descargas y 0 "likes" en el momento de la ficha: sin validacion por parte de la comunidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/peikoff/llama3-2-8x3b-moe-objectivist-merged
+- Modelo en Hugging Face: https://huggingface.co/peikoff/llama3-2-8x3b-moe-objectivist-merged
 - Adaptador de preentrenamiento continuado (CP): https://hf.co/peikoff/llama3-2-8x3b-moe-objectivist-cp-adapter
 - Adaptador de SFT: https://hf.co/peikoff/llama3-2-8x3b-moe-objectivist-sft-adapter
 - Modelo base: https://hf.co/DavidAU/Llama-3.2-8X3B-MOE-Dark-Champion-Instruct-uncensored-abliterated-18.4B

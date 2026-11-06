@@ -67,7 +67,7 @@ Estos datos indican que la precisión de tool calling es muy baja (máximo 10,16
 - **VRAM estimada**: El modelo en BF16 ocupa aproximadamente 1,2 GB (tamaño del repositorio). Para inferencia con contexto de 4096 tokens, se estima un consumo de VRAM de 2-3 GB, incluyendo activaciones y caché KV.
 - **GPU recomendadas**: Cualquier GPU con al menos 4 GB de VRAM es suficiente. Ejemplos: NVIDIA GTX 1650, RTX 3050, RTX 4060, o incluso CPUs con suficiente RAM (inferencia lenta pero posible).
 - **Compatibilidad con consumer GPU**: Sí, cabe en la mayoría de GPUs de consumo actuales, incluidas las integradas de gama alta.
-- **Opciones de despliegue**: Al ser un checkpoint estándar de transformers, es compatible con vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (con conversión) y cualquier framework que soporte modelos HuggingFace. No se han publicado cuantizaciones GGUF específicas para este checkpoint, pero el modelo base SFT tiene una versión GGUF disponible (`iromu/Qwen3-0.6B-tools-GGUF`).
+- **Opciones de despliegue**: Al ser un checkpoint estándar de transformers, es compatible con vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (con conversión) y cualquier framework que soporte modelos Hugging Face. No se han publicado cuantizaciones GGUF específicas para este checkpoint, pero el modelo base SFT tiene una versión GGUF disponible (`iromu/Qwen3-0.6B-tools-GGUF`).
 - **Latencia y throughput**: No se han publicado datos. En una GPU moderna (RTX 4090), se espera una latencia de decodificación de unos 10-20 ms/token y un throughput de 50-100 tokens/s, pero son estimaciones no verificadas.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ La comparativa se limita a los modelos de la misma familia. No se dispone de dat
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/iromu/Qwen3-0.6B-tools-RL-step25)
+- [Modelo en Hugging Face](https://huggingface.co/iromu/Qwen3-0.6B-tools-RL-step25)
 - [Modelo SFT base (iromu/Qwen3-0.6B-tools)](https://huggingface.co/iromu/Qwen3-0.6B-tools)
 - [Versión GGUF del SFT (iromu/Qwen3-0.6B-tools-GGUF)](https://huggingface.co/iromu/Qwen3-0.6B-tools-GGUF)
 - [Dataset de destilación (r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation)](https://huggingface.co/datasets/r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation)

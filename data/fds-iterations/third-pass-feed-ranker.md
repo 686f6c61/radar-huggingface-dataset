@@ -60,7 +60,7 @@ El regret (promover algo peor que el slot-1 original) es <1% de los feeds en tod
 - **CPU**: el modelo está diseñado para ejecución en CPU de servidor, con un rendimiento objetivo de ~120 pares/segundo en 8 hilos de CPU. No requiere GPU para inferencia.
 - **VRAM**: no se especifica, pero al ser un modelo de 117M parámetros en fp32 ocupa ~470 MB; en cuantización no disponible, pero en CPU no se usa VRAM.
 - **GPU**: no es necesaria, aunque puede ejecutarse en cualquier GPU con suficiente memoria (p. ej., RTX 3060 o superior) para inferencia por lotes.
-- **Opciones de despliegue**: compatible con `transformers` (AutoModelForSequenceClassification) y `sentence_transformers.CrossEncoder`. No se mencionan vLLM, llama.cpp ni Ollama, pero al ser un cross-encoder pequeño, se puede servir con frameworks de clasificación de texto como `text-embeddings-inference` (el modelo tiene la etiqueta `endpoints_compatible` y `text-embeddings-inference` en HuggingFace).
+- **Opciones de despliegue**: compatible con `transformers` (AutoModelForSequenceClassification) y `sentence_transformers.CrossEncoder`. No se mencionan vLLM, llama.cpp ni Ollama, pero al ser un cross-encoder pequeño, se puede servir con frameworks de clasificación de texto como `text-embeddings-inference` (el modelo tiene la etiqueta `endpoints_compatible` y `text-embeddings-inference` en Hugging Face).
 - **Latencia y throughput**: en CPU de servidor con 8 hilos, ~120 pares/segundo (≈8.3 ms por par). En GPU sería significativamente menor.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No se dispone de comparativas directas publicadas en la información disponible.
 
 ## Enlaces
 
-- [HuggingFace - FDS-Iterations/third-pass-feed-ranker](https://huggingface.co/FDS-Iterations/third-pass-feed-ranker)
+- [Hugging Face - FDS-Iterations/third-pass-feed-ranker](https://huggingface.co/FDS-Iterations/third-pass-feed-ranker)
 - [Modelo base: cross-encoder/mmarco-mMiniLMv2-L12-H384-v1](https://huggingface.co/cross-encoder/mmarco-mMiniLMv2-L12-H384-v1)
 - [Repositorio de referencia sobre rerankers (awesome-rerankers)](https://github.com/agentset-ai/awesome-rerankers)
 - [Leaderboard de modelos de IA (referencia general)](https://llm-stats.com/)

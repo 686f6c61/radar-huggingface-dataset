@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-MLX-Q4i es una version cuantizada a 4 bits del modelo multimodal DeepSeek-V4.1-Flash, publicada por el usuario inferencerlabs en HuggingFace. Se trata de un build experimental orientado a ejecucion en hardware Apple Silicon mediante la libreria MLX, con el objetivo de comprimir el modelo original hasta que quepa en sistemas con 512 GiB de RAM. El pipeline declarado es image-text-to-text, es decir, el modelo acepta imagenes y texto como entrada y genera texto.
+DeepSeek-V4.1-MLX-Q4i es una version cuantizada a 4 bits del modelo multimodal DeepSeek-V4.1-Flash, publicada por el usuario inferencerlabs en Hugging Face. Se trata de un build experimental orientado a ejecucion en hardware Apple Silicon mediante la libreria MLX, con el objetivo de comprimir el modelo original hasta que quepa en sistemas con 512 GiB de RAM. El pipeline declarado es image-text-to-text, es decir, el modelo acepta imagenes y texto como entrada y genera texto.
 
 El repo ocupa 65,4 GB y esta etiquetado como cuantizado (Q4i), con MLX como libreria y relacion `quantized` respecto al modelo base `deepseek-ai/DeepSeek-V4.1-Flash`. El autor indica que la cuantizacion se ha realizado con una version modificada de MLX y que el build emplea un metodo interno denominado "INF", descrito como data-agnostic, para ajustar el modelo a las restricciones de memoria de un sistema de 512 GiB.
 
@@ -17,7 +17,7 @@ La relevancia de esta ficha es acotada y conviene ser explicito: no hay informac
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q4i (4 bits, cuantizacion MLX modificada) |
-| Idiomas soportados | en (segun metadatos de HuggingFace) |
+| Idiomas soportados | en (segun metadatos de Hugging Face) |
 | Licencia | no disponible |
 | Formato de pesos | MLX (cuantizado); safetensors no confirmado |
 | Tamano del repositorio | 65,4 GB |
@@ -95,10 +95,10 @@ No disponible. La informacion proporcionada no incluye modelos comparables con d
 
 ## Enlaces
 
-- HuggingFace (build cuantizado): https://huggingface.co/inferencerlabs/DeepSeek-V4.1-MLX-Q4i
+- Hugging Face (build cuantizado): https://huggingface.co/inferencerlabs/DeepSeek-V4.1-MLX-Q4i
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - MLX (libreria): https://github.com/ml-explore/mlx
 - Aplicacion Inferencer: https://inferencer.com
 - Videos de demostracion: https://youtube.com/xcreate
 
-Nota: los resultados de busqueda web proporcionados no contienen informacion relevante sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+Nota: los resultados de busqueda web proporcionados no contienen informacion relevante sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

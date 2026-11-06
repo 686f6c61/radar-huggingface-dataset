@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r499-sbsv5-offline-dpo-hialpha-midrank-lobeta-softctx-extrasteps-merged` es un checkpoint intermedio derivado de un proceso de fusión LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según los metadatos de HuggingFace, se trata de un modelo de generación de texto con arquitectura tipo MoE (mixture of experts) y capacidades imagen-texto, lo que sugiere un enfoque multimodal. Sin embargo, la documentación oficial es extremadamente escasa: la model card únicamente indica que es un "salvamento" de un checkpoint fusionado, con una nota de que no es una versión final hasta que se supere una fase de validación interna.
+El modelo `unconst/Affine-5czsc2fc98-r499-sbsv5-offline-dpo-hialpha-midrank-lobeta-softctx-extrasteps-merged` es un checkpoint intermedio derivado de un proceso de fusión LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según los metadatos de Hugging Face, se trata de un modelo de generación de texto con arquitectura tipo MoE (mixture of experts) y capacidades imagen-texto, lo que sugiere un enfoque multimodal. Sin embargo, la documentación oficial es extremadamente escasa: la model card únicamente indica que es un "salvamento" de un checkpoint fusionado, con una nota de que no es una versión final hasta que se supere una fase de validación interna.
 
 Con aproximadamente 35 100 millones de parámetros, el modelo se posiciona en la gama media-alta de tamaño, aunque no se dispone de información sobre el número de parámetros activos, longitud de contexto, idiomas soportados ni licencia. Su relevancia actual es limitada por la falta de documentación y de resultados de evaluación; parece un artefacto de desarrollo más que un modelo listo para producción. No obstante, su arquitectura MoE y su posible naturaleza multimodal podrían resultar interesantes para investigaciones sobre fusión de modelos y ajuste fino con DPO.
 
@@ -21,7 +21,7 @@ Con aproximadamente 35 100 millones de parámetros, el modelo se posiciona en la
 
 ## Arquitectura y entrenamiento
 
-La información disponible sobre la arquitectura y el proceso de entrenamiento es mínima. Los tags de HuggingFace indican `qwen3_5_moe` y `image-text-to-text`, lo que apunta a un modelo basado en una arquitectura MoE con capacidades multimodales (procesamiento conjunto de imágenes y texto). El nombre del checkpoint sugiere que se aplicó un ajuste fino con DPO (offline DPO) con parámetros específicos: alpha alto, beta bajo, contexto suave y pasos adicionales. Sin embargo, no se han publicado detalles sobre el dataset de entrenamiento, el número de tokens, la composición de los datos ni si se emplearon técnicas adicionales como RLHF o PPO.
+La información disponible sobre la arquitectura y el proceso de entrenamiento es mínima. Los tags de Hugging Face indican `qwen3_5_moe` y `image-text-to-text`, lo que apunta a un modelo basado en una arquitectura MoE con capacidades multimodales (procesamiento conjunto de imágenes y texto). El nombre del checkpoint sugiere que se aplicó un ajuste fino con DPO (offline DPO) con parámetros específicos: alpha alto, beta bajo, contexto suave y pasos adicionales. Sin embargo, no se han publicado detalles sobre el dataset de entrenamiento, el número de tokens, la composición de los datos ni si se emplearon técnicas adicionales como RLHF o PPO.
 
 El modelo es el resultado de una fusión LoRA (Low-Rank Adaptation) sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. La model card lo describe como un "salvamento" de un checkpoint fusionado, con una nota que dice "Private TTL insurance; not a submission until Stage-5 gate clears", lo que indica que es un artefacto intermedio de un proceso de desarrollo no concluido. No se proporcionan más detalles técnicos.
 
@@ -68,5 +68,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - unconst/Affine-5czsc2fc98-r499-sbsv5-offline-dpo-hialpha-midrank-lobeta-softctx-extrasteps-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r499-sbsv5-offline-dpo-hialpha-midrank-lobeta-softctx-extrasteps-merged)
+- [Hugging Face - unconst/Affine-5czsc2fc98-r499-sbsv5-offline-dpo-hialpha-midrank-lobeta-softctx-extrasteps-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r499-sbsv5-offline-dpo-hialpha-midrank-lobeta-softctx-extrasteps-merged)
 - [Modelo base: kevin954/Affine-5dfqbbh8ev-sft](https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft) (enlace inferido, no verificado)

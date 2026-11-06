@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 
 | Modelo | Parametros | Contexto | Rendimiento en validacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KCIP/qwen3.5-9b-nemotron-grpo-lora-step211 | ~9B (base) + LoRA r16 | no disponible | Recompensa media 0,401 en el paso 200 (vs 0,392 en el paso 0; diferencia dentro del ruido) | no disponible | Adaptador PEFT público en HuggingFace |
-| Qwen/Qwen3.5-9B (modelo base, sin adaptador) | ~9B | no disponible | 0,392 de recompensa media en el mismo conjunto de validación (paso 0 del entrenamiento) | no disponible | Pesos completos en HuggingFace |
+| KCIP/qwen3.5-9b-nemotron-grpo-lora-step211 | ~9B (base) + LoRA r16 | no disponible | Recompensa media 0,401 en el paso 200 (vs 0,392 en el paso 0; diferencia dentro del ruido) | no disponible | Adaptador PEFT público en Hugging Face |
+| Qwen/Qwen3.5-9B (modelo base, sin adaptador) | ~9B | no disponible | 0,392 de recompensa media en el mismo conjunto de validación (paso 0 del entrenamiento) | no disponible | Pesos completos en Hugging Face |
 | Adaptadores del mismo blend entrenados con GenRM de 235B | no disponible | no disponible | no disponible en la información proporcionada | no disponible | No referenciados en esta búsqueda |
 
 No se dispone de datos publicados de otros adaptadores GRPO comparables en la información proporcionada; la comparación relevante es contra el propio modelo base, que parte de 0,392 de recompensa media en el conjunto de validación empleado por el autor.
@@ -92,7 +92,7 @@ No se dispone de datos publicados de otros adaptadores GRPO comparables en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KCIP/qwen3.5-9b-nemotron-grpo-lora-step211
+- Modelo en Hugging Face: https://huggingface.co/KCIP/qwen3.5-9b-nemotron-grpo-lora-step211
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/Nemotron-RL-Lightning-Training-Blend
 - prime-rl (framework de entrenamiento, commit b9c0bfe): no se incluye URL en la model card

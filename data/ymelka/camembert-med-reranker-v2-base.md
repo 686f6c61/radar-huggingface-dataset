@@ -61,7 +61,7 @@ No se han publicado resultados adicionales en benchmarks estándar como MMLU, Hu
 
 - VRAM estimada: al tratarse de un modelo de 110M parámetros, la inferencia en precisión fp32 requiere aproximadamente 0.44 GB de memoria. Con cuantización a int8 o int4, el consumo se reduce aún más, aunque no se especifican cuantizaciones oficiales.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente, incluyendo tarjetas consumer como GTX 1060, RTX 2060 o superiores. También puede ejecutarse en CPU con razonable latencia para tareas de reranking por lotes.
-- Despliegue: compatible con librerías de transformers de HuggingFace, sentence-transformers (para CrossEncoder) y puede integrarse en servidores de inferencia como vLLM o TGI, aunque al ser un cross-encoder, su uso típico es en lote o en línea con baja concurrencia.
+- Despliegue: compatible con librerías de transformers de Hugging Face, sentence-transformers (para CrossEncoder) y puede integrarse en servidores de inferencia como vLLM o TGI, aunque al ser un cross-encoder, su uso típico es en lote o en línea con baja concurrencia.
 - Latencia y throughput: no se dispone de mediciones oficiales. Para un modelo de este tamaño, se espera una latencia de decenas de milisegundos por par en GPU moderna, y de cientos de milisegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ El modelo v2 se distingue por su fine-tuning específico en dominio médico, lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ymelka/camembert-med-reranker-v2-base
+- Modelo en Hugging Face: https://huggingface.co/ymelka/camembert-med-reranker-v2-base
 - Modelo base: https://huggingface.co/antoinelouis/crossencoder-camembert-base-mmarcoFR
 - Documentación de CamemBERT: https://huggingface.co/docs/transformers/model_doc/camembert
 - Reranker alternativo en francés: https://huggingface.co/tomaarsen/reranker-camembertv2-base-fr-lambda

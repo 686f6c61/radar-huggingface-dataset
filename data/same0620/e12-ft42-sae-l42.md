@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informaci처n disponible. El �
 
 | Modelo | Tipo | Features / k | EV de cabecera | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Same0620/e12-ft42-sae-l42 | SAE BatchTopK fine-tune | 131.072 / 64 | 0.867 | other | HuggingFace |
-| ceselder/qwen36-27b-sae-l42-1b | SAE BatchTopK (padre) | no disponible | 0.280 | no disponible | HuggingFace |
+| Same0620/e12-ft42-sae-l42 | SAE BatchTopK fine-tune | 131.072 / 64 | 0.867 | other | Hugging Face |
+| ceselder/qwen36-27b-sae-l42-1b | SAE BatchTopK (padre) | no disponible | 0.280 | no disponible | Hugging Face |
 | Otros SAE de Qwen3.6-27B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informaci처n sobre otros SAEs comparables en la documentaci처n proporcionada.
@@ -80,5 +80,5 @@ No se dispone de informaci처n sobre otros SAEs comparables en la documentaci처n 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Same0620/e12-ft42-sae-l42
+- Hugging Face del modelo: https://huggingface.co/Same0620/e12-ft42-sae-l42
 - Modelo base (SAE padre): https://huggingface.co/ceselder/qwen36-27b-sae-l42-1b

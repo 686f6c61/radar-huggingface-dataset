@@ -23,7 +23,7 @@ Su relevancia es acotada pero clara: demuestra como un modelo de menos de 200 mi
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino LoRA de SmolLM2-135M-Instruct. La arquitectura subyacente es un transformer decoder-only de aproximadamente 135 millones de parametros, la variante mas pequena de la familia SmolLM2 de HuggingFace. El adaptador LoRA se entreno con rango r=8, alpha=32 y se aplico sobre las proyecciones q, k, v y o de la atencion. Tras el entrenamiento, el adaptador se fusiono en los pesos base, de modo que el modelo publicado no requiere cargar un adaptador por separado.
+El modelo es un ajuste fino LoRA de SmolLM2-135M-Instruct. La arquitectura subyacente es un transformer decoder-only de aproximadamente 135 millones de parametros, la variante mas pequena de la familia SmolLM2 de Hugging Face. El adaptador LoRA se entreno con rango r=8, alpha=32 y se aplico sobre las proyecciones q, k, v y o de la atencion. Tras el entrenamiento, el adaptador se fusiono en los pesos base, de modo que el modelo publicado no requiere cargar un adaptador por separado.
 
 El entrenamiento se realizo durante 3 epocas con batch efectivo de 16, learning rate 2e-4 con scheduler coseno y precision bf16 sobre una NVIDIA L4. El dataset utilizado es `gokaygokay/prompt-enhancer-dataset`, con 16.110 ejemplos de entrenamiento y 500 de evaluacion muestreados de un conjunto de test de 1.790. No se documenta el numero total de tokens procesados, la composicion detallada del dataset ni si hubo etapas adicionales de RLHF o DPO; el ajuste se limita a la fase supervisada sobre pares prompt corto / prompt expandido.
 
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: menos de 1 GB en bf16 (135M parametros, aproximadamente 270 MB de pesos) y en torno a 150-200 MB en GGUF q8_0.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; el modelo cabe holgadamente en GTX 1650, RTX 3060, RTX 4090, A100 o H100. Tambien funciona en CPU.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna e incluso en Raspberry Pi y telefonos de gama alta mediante llama.cpp.
-- Opciones de despliegue: Transformers (safetensors), llama.cpp, Ollama (incluye Modelfile en el repositorio), LM Studio y cualquier runtime compatible con GGUF. Tambien es compatible con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Opciones de despliegue: Transformers (safetensors), llama.cpp, Ollama (incluye Modelfile en el repositorio), LM Studio y cualquier runtime compatible con GGUF. Tambien es compatible con endpoints de Hugging Face (tag `endpoints_compatible`).
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. Por el tamano del modelo, se espera una latencia de decenas de milisegundos por respuesta corta en GPU y de pocos segundos en CPU, pero son estimaciones no verificadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smollm2-prompt-enhancer (este modelo) | 134,5 M | no disponible | Expansion de prompts | Apache 2.0 | HuggingFace, GGUF |
-| SmolLM2-135M-Instruct (base) | 135 M | no disponible | Conversacion general | Apache 2.0 | HuggingFace |
-| SmolLM2-360M-Instruct | 360 M | no disponible | Conversacion general | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B-Instruct | 500 M | no disponible | Conversacion general, multilingue | Apache 2.0 | HuggingFace |
+| smollm2-prompt-enhancer (este modelo) | 134,5 M | no disponible | Expansion de prompts | Apache 2.0 | Hugging Face, GGUF |
+| SmolLM2-135M-Instruct (base) | 135 M | no disponible | Conversacion general | Apache 2.0 | Hugging Face |
+| SmolLM2-360M-Instruct | 360 M | no disponible | Conversacion general | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 500 M | no disponible | Conversacion general, multilingue | Apache 2.0 | Hugging Face |
 
 La comparacion directa con alternativas especializadas en expansion de prompts no esta disponible en la informacion proporcionada. Frente a su modelo base, la diferencia es el ajuste LoRA sobre el dataset de mejora de prompts; frente a modelos mas grandes como Qwen2.5-0.5B, este modelo pierde capacidad general pero gana en coste de inferencia y en especializacion de la tarea.
 
@@ -83,7 +83,7 @@ La comparacion directa con alternativas especializadas en expansion de prompts n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MostafaHanafy/smollm2-prompt-enhancer
+- Hugging Face: https://huggingface.co/MostafaHanafy/smollm2-prompt-enhancer
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/gokaygokay/prompt-enhancer-dataset
 - Repositorio de SmolLM2: https://github.com/huggingface/smollm

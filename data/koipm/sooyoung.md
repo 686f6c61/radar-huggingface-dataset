@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sooyoung es un modelo publicado en HuggingFace por el usuario Koipm bajo el identificador `Koipm/Sooyoung`. En el momento de redactar esta ficha, la informacion disponible publicamente es practicamente nula: el repositorio no incluye pipeline declarado, no especifica idiomas, no declara licencia concreta (figura como `unknown`) y la model card asociada esta vacia mas alla del campo de licencia. El tamano del repositorio, 0,1 GB, sugiere pesos de un modelo pequeno o un artefacto parcial, aunque no puede confirmarse sin inspeccionar los ficheros.
+Sooyoung es un modelo publicado en Hugging Face por el usuario Koipm bajo el identificador `Koipm/Sooyoung`. En el momento de redactar esta ficha, la informacion disponible publicamente es practicamente nula: el repositorio no incluye pipeline declarado, no especifica idiomas, no declara licencia concreta (figura como `unknown`) y la model card asociada esta vacia mas alla del campo de licencia. El tamano del repositorio, 0,1 GB, sugiere pesos de un modelo pequeno o un artefacto parcial, aunque no puede confirmarse sin inspeccionar los ficheros.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades declaradas. Tampoco hay resultados de benchmarks ni documentacion tecnica asociada. Cualquier evaluacion funcional requeriria descargar el repositorio y examinar directamente su contenido (config.json, tokenizer, safetensors o equivalentes).
 
@@ -74,4 +74,4 @@ No disponible. No se ha identificado la categoria del modelo (tamano, tarea, idi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Koipm/Sooyoung
+- Hugging Face: https://huggingface.co/Koipm/Sooyoung

@@ -88,6 +88,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scaryrawr/Qwen3.8-27B-oQ4e-mtp
+- Modelo en Hugging Face: https://huggingface.co/scaryrawr/Qwen3.8-27B-oQ4e-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Librería oMLX: no se proporciona enlace directo, pero se menciona en la model card.

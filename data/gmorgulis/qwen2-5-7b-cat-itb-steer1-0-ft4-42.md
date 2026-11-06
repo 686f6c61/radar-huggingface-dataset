@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `GMorgulis/Qwen2.5-7B-cat-ITB-STEER1.0-ft4.42` es un ajuste fino (fine-tune) del modelo base `Qwen/Qwen2.5-7B`, desarrollado por el usuario GMorgulis y publicado en HuggingFace. Según la información disponible, fue entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace, aunque no se especifican los datos de entrenamiento, el propósito concreto ni los hiperparámetros empleados.
+El modelo `GMorgulis/Qwen2.5-7B-cat-ITB-STEER1.0-ft4.42` es un ajuste fino (fine-tune) del modelo base `Qwen/Qwen2.5-7B`, desarrollado por el usuario GMorgulis y publicado en Hugging Face. Según la información disponible, fue entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face, aunque no se especifican los datos de entrenamiento, el propósito concreto ni los hiperparámetros empleados.
 
 El nombre del modelo sugiere una posible especialización en tareas relacionadas con gatos ("cat") y algún tipo de control de comportamiento ("STEER"), pero no hay documentación que lo confirme. El repositorio tiene un tamaño de solo 0,3 GB, lo que podría indicar que se trata de un adaptador o una versión cuantizada, aunque no se indica explícitamente. Al carecer de descargas y de una model card detallada, su relevancia actual es limitada y su uso en producción no está respaldado por evaluaciones públicas.
 
@@ -62,5 +62,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - GMorgulis/Qwen2.5-7B-cat-ITB-STEER1.0-ft4.42](https://huggingface.co/GMorgulis/Qwen2.5-7B-cat-ITB-STEER1.0-ft4.42)
+- [Hugging Face - GMorgulis/Qwen2.5-7B-cat-ITB-STEER1.0-ft4.42](https://huggingface.co/GMorgulis/Qwen2.5-7B-cat-ITB-STEER1.0-ft4.42)
 - [Modelo base: Qwen/Qwen2.5-7B](https://huggingface.co/Qwen/Qwen2.5-7B)

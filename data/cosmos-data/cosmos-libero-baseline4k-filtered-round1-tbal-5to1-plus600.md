@@ -80,7 +80,7 @@ No se dispone de especificaciones de modelos comparables en la información prop
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| baseline4k +600 (este modelo) | 15.173.136.576 | No disponible | ID global 95,50%; OOD global 22,67% | No disponible | Público en HuggingFace, 30,3 GB |
+| baseline4k +600 (este modelo) | 15.173.136.576 | No disponible | ID global 95,50%; OOD global 22,67% | No disponible | Público en Hugging Face, 30,3 GB |
 | Cosmos3-Nano | No disponible | No disponible | No disponible | No disponible | Mencionado en la model card sin enlace |
 | Otras alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No identificadas en la información disponible |
 
@@ -99,6 +99,6 @@ No se dispone de especificaciones de modelos comparables en la información prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cosmos-Data/cosmos-libero-baseline4k-filtered-round1-tbal-5to1-plus600
+- Hugging Face: https://huggingface.co/Cosmos-Data/cosmos-libero-baseline4k-filtered-round1-tbal-5to1-plus600
 - Repositorio e instrucciones de uso: https://github.com/jyzhang1208/cosmos-framework
 - Resultados de búsqueda web: no se ha encontrado ningún resultado relevante sobre este modelo en la búsqueda realizada.

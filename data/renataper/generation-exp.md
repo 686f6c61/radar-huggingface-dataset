@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `renataper/generation-exp` es una implementación experimental de la arquitectura Albef orientada a tareas de generación, publicada por el usuario renataper en HuggingFace. Se trata de una variante "nano" con apenas 24.832 parámetros, diseñada como punto de partida reproducible para investigación y pruebas de humo, no como un modelo entrenado para producción. El repositorio incluye un checkpoint de inicialización en formato safetensors, un archivo de configuración y un script de entrenamiento (`finetune.py`).
+El modelo `renataper/generation-exp` es una implementación experimental de la arquitectura Albef orientada a tareas de generación, publicada por el usuario renataper en Hugging Face. Se trata de una variante "nano" con apenas 24.832 parámetros, diseñada como punto de partida reproducible para investigación y pruebas de humo, no como un modelo entrenado para producción. El repositorio incluye un checkpoint de inicialización en formato safetensors, un archivo de configuración y un script de entrenamiento (`finetune.py`).
 
 La relevancia de este modelo reside en su carácter didáctico y experimental: permite explorar la arquitectura Albef (atención con ventana deslizante, fusión bilineal, activación mish y normalización rmsnorm) sin los costes computacionales de los modelos grandes. Sin embargo, al no haber sido entrenado ni evaluado, no ofrece capacidades funcionales reales de generación de texto, código o razonamiento. Su licencia MIT facilita su uso y modificación, pero cualquier resultado obtenido debe documentarse por separado de los valores por defecto incluidos.
 
@@ -60,7 +60,7 @@ No se dispone de información sobre modelos comparables con la misma arquitectur
 
 - El checkpoint de inicialización no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 - No se garantiza ninguna capacidad de generación real; cualquier resultado obtenido con el modelo sin entrenamiento será ruido aleatorio.
-- La implementación es personalizada, por lo que las APIs genéricas de HuggingFace no pueden cargarla sin un adaptador explícito.
+- La implementación es personalizada, por lo que las APIs genéricas de Hugging Face no pueden cargarla sin un adaptador explícito.
 - No se especifican sesgos conocidos, pero al no haber datos de entrenamiento, no se puede evaluar este aspecto.
 - Riesgo de alucinación: no aplica, ya que el modelo no genera contenido coherente.
 - La licencia MIT permite uso comercial, pero se deben revisar los términos de los datos externos si se utiliza con datasets de terceros.
@@ -68,5 +68,5 @@ No se dispone de información sobre modelos comparables con la misma arquitectur
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/renataper/generation-exp
+- Repositorio en Hugging Face: https://huggingface.co/renataper/generation-exp
 - No se han encontrado papers, blogs o demos adicionales específicos de este modelo en la búsqueda web.

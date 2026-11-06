@@ -104,6 +104,6 @@ Nota: la comparativa con Qwen3-30B-A3B es orientativa por categoría de tamaño;
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Synaptivo/Synaps-Decision-1.0-27B-Preview
+- Ficha en Hugging Face: https://huggingface.co/Synaptivo/Synaps-Decision-1.0-27B-Preview
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper, repositorio de código, demo u otros enlaces: no disponibles en la información proporcionada.

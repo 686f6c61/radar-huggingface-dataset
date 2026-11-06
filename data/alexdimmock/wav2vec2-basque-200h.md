@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wav2vec2-basque-200h` es un modelo de reconocimiento automático de voz (ASR) para lengua vasca (euskera). Ha sido desarrollado por Alex Dimmock sobre la arquitectura Wav2Vec2 de Meta AI, y su nombre indica que ha sido afinado con 200 horas de audio en euskera. El modelo cuenta con 315 millones de parámetros y se distribuye en formato safetensors. Su relevancia radica en cubrir una lengua minoritaria con escasez de recursos de ASR. Aunque el pipeline de HuggingFace aparece como no disponible, la arquitectura y el nombre del repositorio confirman su función como transcritor de audio. El modelo ha sido descargado 1.434 veces y su repositorio ocupa 60,0 GB.
+`wav2vec2-basque-200h` es un modelo de reconocimiento automático de voz (ASR) para lengua vasca (euskera). Ha sido desarrollado por Alex Dimmock sobre la arquitectura Wav2Vec2 de Meta AI, y su nombre indica que ha sido afinado con 200 horas de audio en euskera. El modelo cuenta con 315 millones de parámetros y se distribuye en formato safetensors. Su relevancia radica en cubrir una lengua minoritaria con escasez de recursos de ASR. Aunque el pipeline de Hugging Face aparece como no disponible, la arquitectura y el nombre del repositorio confirman su función como transcritor de audio. El modelo ha sido descargado 1.434 veces y su repositorio ocupa 60,0 GB.
 
 ## Especificaciones técnicas
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada: no hay cifras oficiales. Como orientación, los 315 millones de parámetros en fp16 ocupan unos 0,63 GB, por lo que probablemente sea suficiente una GPU con 2 GB de VRAM, aunque se recomienda al menos 4 GB.
 - GPU recomendadas: no especificado por el autor. El modelo puede ejecutarse en tarjetas de consumo como la RTX 3060 o la RTX 4090; para producción a mayor escala sería adecuada una A100 o equivalente.
 - Compatibilidad con GPU de consumo: sí, con 4 GB de VRAM es plausible.
-- Opciones de despliegue: HuggingFace Transformers (Wav2Vec2ForCTC). No se documenta soporte para vLLM, llama.cpp, Ollama o TGI, que están orientados a modelos de lenguaje.
+- Opciones de despliegue: Hugging Face Transformers (Wav2Vec2ForCTC). No se documenta soporte para vLLM, llama.cpp, Ollama o TGI, que están orientados a modelos de lenguaje.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ Se han identificado dos modelos del mismo autor con una denominación similar: `
 - La información sobre el conjunto de datos de entrenamiento es inexistente, por lo que no se puede evaluar su equilibrio ni su representatividad.
 - Riesgo de alucinación en la transcripción: el modelo puede producir errores en palabras poco frecuentes, nombres propios o terminología técnica.
 - No se documentan sesgos específicos, pero como todo ASR puede reflejar sesgos hacia acentos, dialectos o condiciones de grabación no representadas en los datos de entrenamiento.
-- El pipeline de HuggingFace está marcado como "no disponible", lo que puede dificultar la integración directa en aplicaciones.
+- El pipeline de Hugging Face está marcado como "no disponible", lo que puede dificultar la integración directa en aplicaciones.
 - La longitud de contexto no aplica, ya que es un modelo de audio y no de texto; no puede utilizarse para tareas de generación de lenguaje.
 
 ## Enlaces

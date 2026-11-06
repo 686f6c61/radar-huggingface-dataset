@@ -63,6 +63,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run3-gen5](https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run3-gen5)
+- [Hugging Face - HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run3-gen5](https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run3-gen5)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
 - [Repositorio de TRL](https://github.com/huggingface/trl)

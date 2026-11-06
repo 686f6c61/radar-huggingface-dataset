@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vadimyakob/chrono-2023-tuning-2` es un modelo publicado en HuggingFace por el usuario Vadim Yakobchuk (perfil `vadimyakob`). El repositorio contiene pesos en formato safetensors con 2.018.511.234 parametros (aproximadamente 2,02 mil millones) y un tamano de 6,4 GB. No dispone de model card, licencia declarada, idiomas declarados ni pipeline de inferencia configurado, por lo que la informacion publica es minima.
+`vadimyakob/chrono-2023-tuning-2` es un modelo publicado en Hugging Face por el usuario Vadim Yakobchuk (perfil `vadimyakob`). El repositorio contiene pesos en formato safetensors con 2.018.511.234 parametros (aproximadamente 2,02 mil millones) y un tamano de 6,4 GB. No dispone de model card, licencia declarada, idiomas declarados ni pipeline de inferencia configurado, por lo que la informacion publica es minima.
 
 El modelo forma parte de una serie aparente de publicaciones del mismo autor que sigue el patron de nomenclatura `chrono-AAAA-tuning-N` (por ejemplo `chrono-2022-tuning-11`, `chrono-2018-11`, `chrono-2018-10`), lo que sugiere variantes o iteraciones de ajuste sucesivas. El unico indicio sobre su naturaleza tecnica es la etiqueta `sn38-nanochrono`, cuyo significado no esta documentado en la informacion disponible.
 
@@ -95,7 +95,7 @@ Comparativa con modelos de otros autores en la misma categoria: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vadimyakob/chrono-2023-tuning-2
+- Modelo en Hugging Face: https://huggingface.co/vadimyakob/chrono-2023-tuning-2
 - Perfil del autor: https://huggingface.co/vadimyakob/models
 - Modelo hermano `chrono-2022-tuning-11`: https://huggingface.co/vadimyakob/chrono-2022-tuning-11
 - Amazon Science Chronos (proyecto distinto, posiblemente no relacionado): https://deepwiki.com/amazon-science/chronos-forecasting

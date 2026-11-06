@@ -18,12 +18,12 @@ El repositorio tiene 3.123.483.888 parametros almacenados y un tamano de 2,4 GB.
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GPTQ mixto por componente: 8 bits atencion, 6 bits convolucion, 4 bits MLP, 8 bits embeddings, 8 bits torre de vision; bf16 en fc2 de la MLP de vision, kernels de convolucion, normas y grid posicional. Grupo 64 |
 | Idiomas soportados | no disponible |
-| Licencia | LFM Open License v1.0 (lfm1.0), identificada como "other" en HuggingFace |
+| Licencia | LFM Open License v1.0 (lfm1.0), identificada como "other" en Hugging Face |
 | Formato de pesos | safetensors (MLX), con codigo personalizado (`custom_code`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base combina dos bloques. El decodificador es un LFM2.5-2.6B de tipo hibrido: de sus 30 capas, 8 usan atencion completa (q, k, v, out) y 22 usan convolucion corta con compuerta (in_proj, out_proj). El codificador visual es un SigLIP2 NaFlex de 27 capas, conectado mediante un proyector de pixel unshuffle seguido de una MLP de 2 capas. La entrada de imagen se divide en teselas de 512 pixeles (hasta 10) mas una miniatura, siguiendo el esquema de HuggingFace.
+El modelo base combina dos bloques. El decodificador es un LFM2.5-2.6B de tipo hibrido: de sus 30 capas, 8 usan atencion completa (q, k, v, out) y 22 usan convolucion corta con compuerta (in_proj, out_proj). El codificador visual es un SigLIP2 NaFlex de 27 capas, conectado mediante un proyector de pixel unshuffle seguido de una MLP de 2 capas. La entrada de imagen se divide en teselas de 512 pixeles (hasta 10) mas una miniatura, siguiendo el esquema de Hugging Face.
 
 Esta publicacion no entrena el modelo: es una conversion cuantizada. El autor aplica GPTQ con compensacion de error de Hessian, capa a capa sobre las salidas de las capas ya cuantizadas, sobre la rejilla afin exacta de MLX con grupo 64. Los codigos enteros elegidos por GPTQ se escriben directamente en los ficheros MLX, sin redondeo adicional por parte de `mlx_lm.convert`. La calibracion usa 128 secuencias de 512 tokens, mezcla de wikitext-2 de entrenamiento y codigo fuente Python, ejecutada en una GPU L40S. El resultado es una receta de bits por componente, con la torre de vision a 8 bits y el fc2 de la MLP visual (ancho de entrada 4304, no multiplo de 64) mantenido en bf16, junto con kernels de convolucion, normas y grid posicional.
 
@@ -64,7 +64,7 @@ Imagen (coseno por token de imagen frente a HF transformers en fp32):
 | bf16 en MLX | 0,998 | 0,998 | 0,9995 |
 | Este modelo | 0,997 | 0,997 | 0,998 |
 
-Los tokens de imagen expandidos son identicos a los de HuggingFace en las tres imagenes de prueba. La velocidad no se midio en Mac para esta release.
+Los tokens de imagen expandidos son identicos a los de Hugging Face en las tres imagenes de prueba. La velocidad no se midio en Mac para esta release.
 
 ## Requisitos de hardware
 
@@ -83,8 +83,8 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 | Modelo | Parametros | Tamano | Contexto | Licencia | Disponibilidad | PPL texto |
 |---|---|---|---|---|---|---|
-| LFM2.5-VL-3B-gptq-mlx-jang (este) | 3.123.483.888 | 2,36 GB | no disponible | LFM Open License v1.0 | HuggingFace, formato MLX | 52,94 |
-| LiquidAI/LFM2.5-VL-3B (base bf16) | no disponible | 6,25 GB | no disponible | LFM Open License v1.0 | HuggingFace, transformers | 51,77 |
+| LFM2.5-VL-3B-gptq-mlx-jang (este) | 3.123.483.888 | 2,36 GB | no disponible | LFM Open License v1.0 | Hugging Face, formato MLX | 52,94 |
+| LiquidAI/LFM2.5-VL-3B (base bf16) | no disponible | 6,25 GB | no disponible | LFM Open License v1.0 | Hugging Face, transformers | 51,77 |
 
 ## Limitaciones y advertencias
 
@@ -101,7 +101,7 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roman220220/LFM2.5-VL-3B-gptq-mlx-jang
+- Modelo en Hugging Face: https://huggingface.co/roman220220/LFM2.5-VL-3B-gptq-mlx-jang
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - Fork de mlx-lm necesario para vision: https://github.com/ipsupport-llc/mlx-lm
 - Repositorio con pipeline, scripts y mediciones: https://github.com/rromenskyi/quant-ternary (`lfm2-quant/`: `poc/lfm2_mlx_pipeline.sh`, `poc/gptq_lfm2.py`, `poc/convert_lfm2.py`, `poc/check_lfm2.py`, `poc/check_vl_lfm2.py`, `docs/FINDINGS.md`)

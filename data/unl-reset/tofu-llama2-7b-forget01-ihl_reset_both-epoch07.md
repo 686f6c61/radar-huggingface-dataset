@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tofu-llama2-7b-forget01-ihl_reset_both-epoch07 | 6,74B | 4096 | Unlearning TOFU, epoca 7 | llama2 | HuggingFace (0 descargas) |
-| locuslab/tofu_ft_llama2-7b | ~6,74B | 4096 | Modelo base ajustado en TOFU completo | llama2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | ~6,74B | 4096 | Chat generalista | llama2 | HuggingFace |
-| Llama 2 7B (Meta) | 6,74B | 4096 | Base generalista | llama2 | HuggingFace y distribucion oficial |
+| tofu-llama2-7b-forget01-ihl_reset_both-epoch07 | 6,74B | 4096 | Unlearning TOFU, epoca 7 | llama2 | Hugging Face (0 descargas) |
+| locuslab/tofu_ft_llama2-7b | ~6,74B | 4096 | Modelo base ajustado en TOFU completo | llama2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | ~6,74B | 4096 | Chat generalista | llama2 | Hugging Face |
+| Llama 2 7B (Meta) | 6,74B | 4096 | Base generalista | llama2 | Hugging Face y distribucion oficial |
 
 La comparacion relevante no es de rendimiento generalista sino de comportamiento frente a `forget01` y `retain`: el checkpoint de la epoca 7 deberia situarse entre el modelo base (sin olvido) y los checkpoints finales de la epoca 20 en cuanto a supresion del conjunto olvidado. No hay datos numericos publicados en la informacion disponible para cuantificar esa diferencia.
 
@@ -89,7 +89,7 @@ La comparacion relevante no es de rendimiento generalista sino de comportamiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch07
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch07
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Origen de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Repositorio TOFU (referencia del benchmark): https://github.com/locuslab/tofu

@@ -102,7 +102,7 @@ En la comparativa del propio autor, Laya obtiene la exactitud mas baja (0,357) f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fcelabs/laya-glendesk-issues
+- Modelo en Hugging Face: https://huggingface.co/fcelabs/laya-glendesk-issues
 - Dataset de referencia: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - Blog "Laya AI Model: How It Works, Run It Locally, and Evaluate It": https://huggingface.co/blog/sora-2/laya-ai-model-how-it-works-run-it-locally-and-eval
 - Sitio del proyecto Laya (33 ms Multilingual System 1 Decision Engine): https://laya.convaiinnovations.com/

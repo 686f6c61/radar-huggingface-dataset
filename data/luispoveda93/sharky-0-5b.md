@@ -106,7 +106,7 @@ No se dispone de datos de benchmark comparables con alternativas de código abie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luispoveda93/sharky-0.5B
+- Modelo en Hugging Face: https://huggingface.co/luispoveda93/sharky-0.5B
 - Perfil del autor: https://huggingface.co/luispoveda93
 - Modelo base: https://huggingface.co/openbmb/MiniCPM4-0.5B
 - Dataset de entrenamiento: https://huggingface.co/datasets/luispoveda93/sharky-triage-states

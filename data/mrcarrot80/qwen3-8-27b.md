@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje causal con codificador de visión publicado en HuggingFace bajo el identificador `mrcarrot80/Qwen3.8-27B`. El repositorio lo firma el usuario `mrcarrot80`, no una organización oficial, y en el momento de la consulta acumula 0 descargas y 0 likes, con un tamaño de 55,6 GB y 27.781.427.952 parámetros reales en safetensors. La model card se presenta como la generación Qwen3.8 de la familia abierta de Qwen, construida sobre la base arquitectónica de Qwen3.5 y orientada a codificación, trabajo profesional, investigación y tareas agénticas de horizonte largo.
+Qwen3.8-27B es un modelo de lenguaje causal con codificador de visión publicado en Hugging Face bajo el identificador `mrcarrot80/Qwen3.8-27B`. El repositorio lo firma el usuario `mrcarrot80`, no una organización oficial, y en el momento de la consulta acumula 0 descargas y 0 likes, con un tamaño de 55,6 GB y 27.781.427.952 parámetros reales en safetensors. La model card se presenta como la generación Qwen3.8 de la familia abierta de Qwen, construida sobre la base arquitectónica de Qwen3.5 y orientada a codificación, trabajo profesional, investigación y tareas agénticas de horizonte largo.
 
 Técnicamente se trata de un modelo denso (no MoE) de 27B con una arquitectura híbrida: 64 capas organizadas en 16 bloques de la forma `3 × (Gated DeltaNet → FFN) → 1 × (Gated Attention → FFN)`, es decir, atención lineal con Gated DeltaNet en tres de cada cuatro capas y atención completa con GQA en la cuarta. Incorpora un codificador de visión nativo para entender imágenes y vídeo, y entrena Multi-Token Prediction (MTP) con múltiples pasos. El contexto nativo es de 262.144 tokens, extensible hasta 1.000.000, y el modo de razonamiento está activado por defecto con control mediante `reasoning_effort` y `preserve_thinking`.
 
@@ -19,7 +19,7 @@ Su relevancia potencial reside en el formato: un modelo denso de 27B con visión
 | Tipos de cuantizacion | No disponible (el repo solo contiene safetensors; no se documentan GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (compatible con HuggingFace Transformers, vLLM, SGLang y TokenSpeed) |
+| Formato de pesos | safetensors (compatible con Hugging Face Transformers, vLLM, SGLang y TokenSpeed) |
 | Dimension oculta | 5.120 |
 | Numero de capas | 64 |
 | Token embedding / LM output | 248.320 (padded) |
@@ -78,7 +78,7 @@ Del conjunto de la tabla solo consta la estructura: métrica Terminal Bench 2.1 
 - Caché KV: solo 16 de las 64 capas son de atención completa. Con 4 cabezas KV de dimensión 256 en 16 capas, cada token ocupa 2 × 4 × 256 × 16 = 32.768 elementos, es decir 64 KiB por token en BF16. Con 262.144 tokens esto supone del orden de 16 GiB adicionales antes de optimizaciones como cuantización de la caché o atención por ventana. Cálculo orientativo, no confirmado por el autor.
 - GPU recomendadas: para BF16 sin cuantizar, 2 × A100 80 GB o 2 × H100 80 GB; también 2 × L40S 48 GB o 2 × RTX 6000 Ada 48 GB si se acepta cuantización o reparto de capas.
 - GPU de consumo: no cabe en una RTX 4090 de 24 GB en BF16. Sí podría ejecutarse en una RTX 4090 o RTX 5090 con cuantización de 4 bits y contexto moderado, o en configuraciones multi-GPU de 24 GB repartiendo capas.
-- Opciones de despliegue: HuggingFace Transformers, vLLM, SGLang y TokenSpeed según la model card. Para cuantización ligera en hardware de consumo sería necesario convertir a GGUF (por ejemplo, para llama.cpp u Ollama), algo que el repositorio no ofrece actualmente.
+- Opciones de despliegue: Hugging Face Transformers, vLLM, SGLang y TokenSpeed según la model card. Para cuantización ligera en hardware de consumo sería necesario convertir a GGUF (por ejemplo, para llama.cpp u Ollama), algo que el repositorio no ofrece actualmente.
 - Latencia y throughput: no disponibles. El uso de MTP abre la puerta a decodificación especulativa, pero no se aportan cifras de tokens por segundo en la información facilitada.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ La model card propone un conjunto de comparación, pero no se dispone de especif
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B | 27,78B (denso) | 262.144 nativos, hasta 1.000.000 | Sin valores en la informacion disponible | Apache 2.0 | Checkpoint en HuggingFace, 0 descargas |
+| Qwen3.8-27B | 27,78B (denso) | 262.144 nativos, hasta 1.000.000 | Sin valores en la informacion disponible | Apache 2.0 | Checkpoint en Hugging Face, 0 descargas |
 | Qwen3.6-27B | No disponible | No disponible | No disponible | No disponible | Referenciado en la tabla de la model card |
 | Qwen3.7-Plus | No disponible | No disponible | No disponible | No disponible | Referenciado en la tabla de la model card |
 | Muse Glimmer-30B | No disponible | No disponible | No disponible | No disponible | Referenciado en la tabla de la model card |
@@ -111,7 +111,7 @@ No se dispone de información suficiente para establecer una comparativa técnic
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mrcarrot80/Qwen3.8-27B
+- Repositorio en Hugging Face: https://huggingface.co/mrcarrot80/Qwen3.8-27B
 - Qwen Cloud (servicio de inferencia gestionada mencionado en la model card): https://www.qwencloud.com
 - Página del modelo en Qwen Cloud: https://www.qwencloud.com/models/qwen3.8-27b
 - Paper, blog técnico, repositorio de código o demo: no disponibles en la información proporcionada.

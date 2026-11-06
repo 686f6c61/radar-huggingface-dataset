@@ -68,7 +68,7 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- [HuggingFace - altic-dev/Fluid-1-Mini-2B-MLX-6bit](https://huggingface.co/altic-dev/Fluid-1-Mini-2B-MLX-6bit)
+- [Hugging Face - altic-dev/Fluid-1-Mini-2B-MLX-6bit](https://huggingface.co/altic-dev/Fluid-1-Mini-2B-MLX-6bit)
 - [FluidVoice - sitio oficial](https://altic.dev/fluid)
 - [GitHub - altic-dev/FluidVoice](https://github.com/altic-dev/FluidVoice)
 - [Terminos de licencia ALTIC](https://huggingface.co/altic-dev/Fluid-1-Mini-2B-MLX-6bit/blob/main/ALTIC-MODEL-TERMS.md)

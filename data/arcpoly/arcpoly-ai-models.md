@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arcpoly/arcpoly-ai-models` es un repositorio de modelos publicado en HuggingFace por el usuario `arcpoly`. Se distribuye exclusivamente en formato GGUF, el formato de pesos cuantizados empleado por llama.cpp y por los runners compatibles (Ollama, LM Studio, koboldcpp, entre otros). El repositorio ocupa 97,7 GB, un tamano que sugiere la presencia de multiples ficheros de cuantizacion de uno o varios modelos, aunque la informacion disponible no permite confirmar cuantos modelos contiene ni sus caracteristicas individuales.
+`arcpoly/arcpoly-ai-models` es un repositorio de modelos publicado en Hugging Face por el usuario `arcpoly`. Se distribuye exclusivamente en formato GGUF, el formato de pesos cuantizados empleado por llama.cpp y por los runners compatibles (Ollama, LM Studio, koboldcpp, entre otros). El repositorio ocupa 97,7 GB, un tamano que sugiere la presencia de multiples ficheros de cuantizacion de uno o varios modelos, aunque la informacion disponible no permite confirmar cuantos modelos contiene ni sus caracteristicas individuales.
 
 La ficha publica no declara pipeline, licencia, idiomas soportados ni arquitectura. Tampoco se ha publicado una model card con especificaciones, datos de entrenamiento o resultados de benchmarks. El unico metadato disponible son las etiquetas `gguf` y `region:us`, junto con un recuento de 259 descargas y 0 likes desde su creacion el 27 de octubre de 2026 y su ultima actualizacion el 4 de noviembre de 2026.
 
@@ -78,5 +78,5 @@ No disponible. La informacion publica del repositorio no permite identificar el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arcpoly/arcpoly-ai-models
+- Repositorio en Hugging Face: https://huggingface.co/arcpoly/arcpoly-ai-models
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

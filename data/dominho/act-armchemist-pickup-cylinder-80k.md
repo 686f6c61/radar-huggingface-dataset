@@ -83,7 +83,7 @@ No hay datos comparativos publicados en la informacion disponible para esta poli
 
 | Modelo | Arquitectura | Parametros | Contexto / chunk | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act-armchemist-pickup-cylinder-80k | ACT + ResNet-18 | 51.668.668 | chunk de 100 acciones a 15 Hz | no disponible | HuggingFace, 0 descargas y 0 likes |
+| act-armchemist-pickup-cylinder-80k | ACT + ResNet-18 | 51.668.668 | chunk de 100 acciones a 15 Hz | no disponible | Hugging Face, 0 descargas y 0 likes |
 | Diffusion Policy (LeRobot) | politica basada en difusion | no disponible | no disponible | no disponible | no verificado en esta busqueda |
 | SmolVLA (LeRobot) | VLA basada en modelo de lenguaje pequeño | no disponible | no disponible | no disponible | no verificado en esta busqueda |
 | pi0 / pi0.5 (LeRobot) | VLA | no disponible | no disponible | no disponible | no verificado en esta busqueda |
@@ -106,7 +106,7 @@ No hay datos comparativos publicados en la informacion disponible para esta poli
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dominho/act-armchemist-pickup-cylinder-80k
+- Modelo en Hugging Face: https://huggingface.co/Dominho/act-armchemist-pickup-cylinder-80k
 - Dataset de entrenamiento: https://huggingface.co/datasets/gamzadole/ARMCHEMIST_PICKUP_CYLINDER
 - Libreria LeRobot referenciada en la model card (commit usado: `989f3d05ba47f872d75c587e76838e9cc574857a`): https://github.com/huggingface/lerobot
 - Resultados de la busqueda web: sin enlaces relevantes; las coincidencias obtenidas (tarkov-database.com, acidhub.net, ddowiki.com, mobalytics.gg, un video privado de YouTube) no guardan relacion con el modelo.

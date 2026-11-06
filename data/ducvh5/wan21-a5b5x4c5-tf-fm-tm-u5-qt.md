@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ducvh5/wan21-a5b5x4c5-tf-fm-tm-u5-qt` es un ajuste fino (finetune) del modelo de generación de vídeo texto-a-vídeo Wan2.1-T2V-1.3B de Alibaba, publicado por el usuario `ducvh5` en HuggingFace. El modelo parte de la arquitectura de difusión de Wan 2.1 (variante de 1.300 millones de parámetros) y la modifica con una estructura de bloques recurrentes que el autor describe como "A5 → B5×4 → C5", con 15 bloques únicos y 30 bloques ejecutados en total. Se distribuye en formato `diffusers` con pesos `safetensors` y un repositorio de 31,8 GB.
+`ducvh5/wan21-a5b5x4c5-tf-fm-tm-u5-qt` es un ajuste fino (finetune) del modelo de generación de vídeo texto-a-vídeo Wan2.1-T2V-1.3B de Alibaba, publicado por el usuario `ducvh5` en Hugging Face. El modelo parte de la arquitectura de difusión de Wan 2.1 (variante de 1.300 millones de parámetros) y la modifica con una estructura de bloques recurrentes que el autor describe como "A5 → B5×4 → C5", con 15 bloques únicos y 30 bloques ejecutados en total. Se distribuye en formato `diffusers` con pesos `safetensors` y un repositorio de 31,8 GB.
 
 La model card es extremadamente escueta y de carácter técnico-experimental: indica que el entrenamiento combina tres funciones de pérdida (TF+FM+TM), usa muestreo de σ uniforme en [0,1] con shift=5 y t=1000σ, y entrena sobre un conjunto de datos denominado "OV" con subtítulos "QT" al 50/50 entre variantes VB y completas. No se especifican detalles sobre el número de tokens de entrenamiento, la composición del dataset ni los resultados obtenidos.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| ducvh5/wan21-a5b5x4c5-tf-fm-tm-u5-qt | 1.300 M | No disponible | No disponible | safetensors (diffusers) | HuggingFace, 0 descargas |
-| Wan-AI/Wan2.1-T2V-1.3B-Diffusers (base) | 1.300 M | No disponible | No disponible en esta ficha | safetensors (diffusers) | HuggingFace, modelo base oficial |
-| Otros finetunes de Wan2.1-T2V-1.3B | ~1.300 M | No disponible | Variable según autor | safetensors (diffusers) | HuggingFace |
+| ducvh5/wan21-a5b5x4c5-tf-fm-tm-u5-qt | 1.300 M | No disponible | No disponible | safetensors (diffusers) | Hugging Face, 0 descargas |
+| Wan-AI/Wan2.1-T2V-1.3B-Diffusers (base) | 1.300 M | No disponible | No disponible en esta ficha | safetensors (diffusers) | Hugging Face, modelo base oficial |
+| Otros finetunes de Wan2.1-T2V-1.3B | ~1.300 M | No disponible | Variable según autor | safetensors (diffusers) | Hugging Face |
 
 La comparación se limita al modelo base del que deriva, ya que no se dispone de datos de benchmarks ni de otros finetunes comparables documentados en la información proporcionada.
 
@@ -81,6 +81,6 @@ La comparación se limita al modelo base del que deriva, ya que no se dispone de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tf-fm-tm-u5-qt
+- Hugging Face: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tf-fm-tm-u5-qt
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jfan/gemma-4-26b-web-moe-vision-litert-lm` es un reempaquetado en formato LiteRT-LM del modelo Gemma 4 26B en variante Mixture-of-Experts (MoE) con capacidades multimodales, publicado por el usuario jfan en HuggingFace. El repositorio distribuye los pesos convertidos a bundles `.litertlm` optimizados para ejecución en navegador mediante WebGPU, con cuatro variantes que cubren texto, texto+visión, texto+audio y la combinación completa de las tres modalidades.
+`jfan/gemma-4-26b-web-moe-vision-litert-lm` es un reempaquetado en formato LiteRT-LM del modelo Gemma 4 26B en variante Mixture-of-Experts (MoE) con capacidades multimodales, publicado por el usuario jfan en Hugging Face. El repositorio distribuye los pesos convertidos a bundles `.litertlm` optimizados para ejecución en navegador mediante WebGPU, con cuatro variantes que cubren texto, texto+visión, texto+audio y la combinación completa de las tres modalidades.
 
 El modelo subyacente es un decoder transformer con arquitectura MoE de 26.000 millones de parametros totales y aproximadamente 4.000 millones de parametros activos por token (nomenclatura A4B), configurado con 128 expertos y enrutamiento Top-8. La variante de audio emplea un encoder Conformer para comprension de voz, mientras que la variante de vision incorpora comprension de imagenes. El sufijo `it` indica que se trata de la version instruction-tuned del modelo.
 
@@ -91,7 +91,7 @@ Nota: las cifras de Gemma 3 27B IT y Mixtral 8x7B Instruct provienen de sus mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jfan/gemma-4-26b-web-moe-vision-litert-lm
+- Repositorio en Hugging Face: https://huggingface.co/jfan/gemma-4-26b-web-moe-vision-litert-lm
 - Demo LiteRT-LM Studio Boq (enlace mencionado en la model card): https://demos.corp.google.com/
 - Terminos de licencia Gemma: no disponible en la informacion proporcionada
 - Paper o blog tecnico del modelo: no disponible en la informacion proporcionada

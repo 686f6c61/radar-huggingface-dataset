@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`atharvsinghana/mocov3-generation-distilled` es un repositorio publicado en HuggingFace por el usuario atharvsinghana que contiene una implementación propia etiquetada como "Mocov3" orientada a tareas de generación. No se trata de un modelo entrenado ni de un release con pesos listos para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+`atharvsinghana/mocov3-generation-distilled` es un repositorio publicado en Hugging Face por el usuario atharvsinghana que contiene una implementación propia etiquetada como "Mocov3" orientada a tareas de generación. No se trata de un modelo entrenado ni de un release con pesos listos para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
-El repositorio es de tamaño mínimo (109 kB, marcado como 0.0 GB) y contiene 24.832 parámetros reales almacenados en safetensors, según los metadatos de HuggingFace. Llama la atención que el campo "Scale" de la configuración declare la variante `giant`, lo que resulta incompatible con un checkpoint de ~25.000 parámetros; se trata, por tanto, de una configuración de arquitectura generada, no de un modelo de escala real.
+El repositorio es de tamaño mínimo (109 kB, marcado como 0.0 GB) y contiene 24.832 parámetros reales almacenados en safetensors, según los metadatos de Hugging Face. Llama la atención que el campo "Scale" de la configuración declare la variante `giant`, lo que resulta incompatible con un checkpoint de ~25.000 parámetros; se trata, por tanto, de una configuración de arquitectura generada, no de un modelo de escala real.
 
 La relevancia de esta ficha es fundamentalmente documental y experimental. MoCo v3 es conocido como un método de aprendizaje autosupervisado para visión (ResNet y ViT) desarrollado por Meta AI (repositorio facebookresearch/moco-v3), por lo que este repositorio reutiliza el nombre para una tarea distinta (generación) sin evidencia publicada de entrenamiento. Debe tratarse como una plantilla de código y no como un modelo evaluable.
 
@@ -46,7 +46,7 @@ No hay evidencia de un entrenamiento completado. La receta incluida (`training_a
 - Pruebas de humo de pipelines de entrenamiento: `model.safetensors` permite validar que un pipeline de carga, inicialización y forward pass funciona antes de lanzar un entrenamiento real.
 - Reproducción de recetas de optimización: `training_args.json` documenta el uso de Adafactor con warmup constante, útil como punto de partida para comparar configuraciones de optimización bajo el mismo presupuesto de datos y semillas.
 - Integración y validación de safetensors: sirve para comprobar la compatibilidad de librerías de carga de safetensors y utilidades de serialización en entornos de CI.
-- Material didáctico: por su tamaño reducido (109 kB) y su estructura de archivos explícita, es adecuado para explicar la anatomía de un repositorio de modelo en HuggingFace (config, training args, checkpoint).
+- Material didáctico: por su tamaño reducido (109 kB) y su estructura de archivos explícita, es adecuado para explicar la anatomía de un repositorio de modelo en Hugging Face (config, training args, checkpoint).
 - Evaluación metodológica: el propio autor propone usar un conjunto de validación específico de la tarea, reportar la métrica con al menos tres semillas e incluir una línea base de capacidad comparable; el repositorio puede usarse como caso de estudio de buenas prácticas de evaluación.
 - Ninguno de estos casos implica uso en producción: al no existir un checkpoint entrenado, no hay aplicación práctica desplegable con este artefacto.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| atharvsinghana/mocov3-generation-distilled | Generacion (checkpoint de inicializacion) | 24.832 | no disponible | MIT | HuggingFace |
+| atharvsinghana/mocov3-generation-distilled | Generacion (checkpoint de inicializacion) | 24.832 | no disponible | MIT | Hugging Face |
 | facebookresearch/moco-v3 | Autosupervisado para vision (ResNet y ViT) | no disponible | no aplica | ver repositorio en GitHub | GitHub |
 | kissablemt/moco-v3-3d | Autosupervisado para vision 3D | no disponible | no aplica | ver repositorio en GitHub | GitHub |
 
@@ -86,7 +86,7 @@ La comparación es únicamente nominal: los dos repositorios de GitHub implement
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/atharvsinghana/mocov3-generation-distilled
+- Modelo en Hugging Face: https://huggingface.co/atharvsinghana/mocov3-generation-distilled
 - Archivos del repositorio: https://huggingface.co/atharvsinghana/mocov3-generation-distilled/tree/main
 - Implementación PyTorch de MoCo v3 de Meta AI: https://github.com/facebookresearch/moco-v3
 - Artículo en arXiv: https://arxiv.org/pdf/2211.09861

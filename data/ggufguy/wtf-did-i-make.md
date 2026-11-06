@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wtf-did-i-make` es un modelo de lenguaje decoder-only de 100.064 parámetros entrenado desde cero por el usuario de HuggingFace `GGUFGuy` sobre el dataset `fineweb-edu`. No es un modelo destinado a producción ni a asistencia conversacional: el propio autor lo describe como un artefacto de investigación a pequeña escala, cuyo objetivo es hacer observable y reproducible el proceso completo de preentrenamiento de un transformer. Se entrenó con el Space HyperDex Trainer en apenas 28,7 minutos de cómputo.
+`wtf-did-i-make` es un modelo de lenguaje decoder-only de 100.064 parámetros entrenado desde cero por el usuario de Hugging Face `GGUFGuy` sobre el dataset `fineweb-edu`. No es un modelo destinado a producción ni a asistencia conversacional: el propio autor lo describe como un artefacto de investigación a pequeña escala, cuyo objetivo es hacer observable y reproducible el proceso completo de preentrenamiento de un transformer. Se entrenó con el Space HyperDex Trainer en apenas 28,7 minutos de cómputo.
 
 Arquitecturalmente es un `LlamaForCausalLM` estándar reducido en anchura y profundidad: 2 capas, dimensión oculta de 32, 2 cabezas de atención (1 de clave/valor, es decir, GQA) y FFN de 147 unidades. Mantiene los componentes canónicos de la familia Llama (SiLU en el MLP, RMSNorm, embeddings posicionales rotatorios, embeddings atados y ausencia de sesgos). El vocabulario es un BPE personalizado de 2.048 tokens entrenado sobre el mismo corpus, y la longitud de contexto es de 512 tokens.
 
@@ -84,7 +84,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `GGUFGuy/wtf-did-i-make` | 100.064 | 512 | ODC-BY | HuggingFace |
+| `GGUFGuy/wtf-did-i-make` | 100.064 | 512 | ODC-BY | Hugging Face |
 | Alternativas de escala similar | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GGUFGuy/wtf-did-i-make
+- Modelo en Hugging Face: https://huggingface.co/GGUFGuy/wtf-did-i-make
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Space del entrenador (HyperDex Trainer): https://hugging-science-hyperdex-trainer.hf.space/
 - Perfil del autor: https://huggingface.co/GGUFGuy

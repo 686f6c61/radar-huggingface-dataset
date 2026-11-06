@@ -85,8 +85,8 @@ No se han publicado resultados de benchmarks de calidad (FID, CLIP score, etc.) 
 
 | Modelo | Parámetros | Contexto / resolución | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Anima-Turbo-v1.1-Nunchaku (esta ficha) | ≈2B | 1024×1024 (resolución de referencia) | INT8 W8A8 (SVDQuant) | other | HuggingFace, ComfyUI, Python |
-| circlestone-labs/Anima (BF16, upstream) | ≈2B | 1024×1024 (resolución de referencia) | BF16 | other | HuggingFace |
+| Anima-Turbo-v1.1-Nunchaku (esta ficha) | ≈2B | 1024×1024 (resolución de referencia) | INT8 W8A8 (SVDQuant) | other | Hugging Face, ComfyUI, Python |
+| circlestone-labs/Anima (BF16, upstream) | ≈2B | 1024×1024 (resolución de referencia) | BF16 | other | Hugging Face |
 | Otras variantes de Anima-Turbo | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks de calidad ni de otros modelos comparables en la información proporcionada, por lo que la comparación se limita al modelo upstream BF16 y a la ausencia de alternativas documentadas.
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks de calidad ni de otros modelos comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tonera/Anima-Turbo-v1.1-Nunchaku
+- Modelo en Hugging Face: https://huggingface.co/tonera/Anima-Turbo-v1.1-Nunchaku
 - Modelo base (upstream): https://huggingface.co/circlestone-labs/Anima
 - Wheel de Nunchaku: https://huggingface.co/tonera/vitoom-nunchaku
 - Plugin de ComfyUI: https://github.com/tonera/vitoom-nunchaku-comfy

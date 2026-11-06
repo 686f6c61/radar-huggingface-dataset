@@ -93,7 +93,7 @@ El autor indica que las diferencias en GSM8K y HumanEval no son estadisticamente
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/azampatti/GLM-5.3-Flash-EXL3-4bpw-TensorFold-AZ
+- Hugging Face: https://huggingface.co/azampatti/GLM-5.3-Flash-EXL3-4bpw-TensorFold-AZ
 - Modelo base: https://huggingface.co/Mia-AiLab/GLM-5.3-Flash-EXL3-4bpw-TensorFold
 - Modelo original: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Receta TensorFold para DGX Spark: https://github.com/MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks-TensorFold

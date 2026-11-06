@@ -90,8 +90,8 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace del checkpoint cuantizado: https://huggingface.co/dolorismineccis/Ornith-1.5-35B-A3B-Q4_K_M-e4dfb35a
-- Modelo base en HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Repositorio Hugging Face del checkpoint cuantizado: https://huggingface.co/dolorismineccis/Ornith-1.5-35B-A3B-Q4_K_M-e4dfb35a
+- Modelo base en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Modelo anterior Ornith-1.0-35B: https://huggingface.co/ornith-ai/Ornith-1.0-35B
 - Guia de despliegue local y VRAM: https://www.mindstudio.ai/blog/ornith-1-5-35b-a3b-local-run
 - Sitio oficial de Ornith AI: https://ornith.online/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Elendil-Jiang/push-and-flip-box es un repositorio publicado en HuggingFace por el usuario Elendil-Jiang. En el momento de la consulta, la ficha publica del repositorio no declara pipeline, licencia, idiomas soportados ni etiquetas funcionales mas alla de `region:us`. El repositorio ocupa 2,7 GB en disco y registra 0 descargas y 1 like, con fecha de creacion en septiembre de 2026 y ultima actualizacion tambien en septiembre de 2026.
+Elendil-Jiang/push-and-flip-box es un repositorio publicado en Hugging Face por el usuario Elendil-Jiang. En el momento de la consulta, la ficha publica del repositorio no declara pipeline, licencia, idiomas soportados ni etiquetas funcionales mas alla de `region:us`. El repositorio ocupa 2,7 GB en disco y registra 0 descargas y 1 like, con fecha de creacion en septiembre de 2026 y ultima actualizacion tambien en septiembre de 2026.
 
 La ausencia de metadatos (pipeline no definido, sin model card descriptiva, sin licencia) impide determinar con rigor si se trata de un modelo de lenguaje, un modelo multimodal, un modelo de difusion, un componente de robotica o un artefacto auxiliar empaquetado junto a pesos. El nombre del repositorio sugiere un componente relacionado con manipulacion fisica ("push and flip") sobre una caja, pero esto es unicamente una inferencia a partir del identificador y no una caracteristica confirmada por la informacion disponible.
 
@@ -52,7 +52,7 @@ Los siguientes escenarios son condicionales: solo serian aplicables si la inspec
 - Prototipado en local: si los pesos cupieran en una GPU de consumo, el modelo podria usarse en experimentos de laboratorio o docencia sin depender de APIs externas, siempre que la licencia lo permita.
 - Componente dentro de una canalizacion mayor: si el artefacto resultase ser un modulo especializado (por ejemplo, de percepcion o control), podria integrarse como pieza de un sistema mas amplio mediante carga directa de pesos en PyTorch u otro framework compatible.
 - Analisis de seguridad y sesgos: cualquier modelo publicado sin model card ni licencia deberia pasar por una auditoria de sesgos y de comportamiento antes de considerarse para produccion; este repositorio, al carecer de documentacion, seria un candidato claro a ese tipo de revision.
-- Estudio comparativo de artefactos sin documentacion: el caso puede servir para analizar practicas de publicacion en HuggingFace, midiendo cuantas fichas carecen de licencia, pipeline e idiomas declarados.
+- Estudio comparativo de artefactos sin documentacion: el caso puede servir para analizar practicas de publicacion en Hugging Face, midiendo cuantas fichas carecen de licencia, pipeline e idiomas declarados.
 
 ## Benchmarks y rendimiento
 
@@ -84,6 +84,6 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Elendil-Jiang/push-and-flip-box
+- Repositorio en Hugging Face: https://huggingface.co/Elendil-Jiang/push-and-flip-box
 
 Las busquedas web realizadas no devolvieron ningun enlace especifico sobre este repositorio, su autor, su paper asociado, su blog de presentacion ni demos. Los resultados obtenidos fueron recursos genericos no relacionados (rankings agregados de LLM, asistentes comerciales y herramientas de deteccion de texto generado), por lo que se omiten al no aportar informacion verificable sobre el modelo.

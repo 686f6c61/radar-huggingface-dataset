@@ -25,7 +25,7 @@ La relevancia de esta ficha es acotada y conviene ser explícito: se trata de un
 | Familia | `velocity` (estilos de marcha) |
 | Tipo de habilidad | `perpetual` |
 | Nivel declarado | discrepancia en la fuente: la etiqueta indica `tier:1` y el texto de la model card indica "tier None" |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 | Descargas / me gusta | 0 / 0 |
 | Pipeline declarado | no disponible |
 | Fecha de creación y actualización | 2026-09-21 (ambas idénticas) |
@@ -33,7 +33,7 @@ La relevancia de esta ficha es acotada y conviene ser explícito: se trata de un
 
 ## Arquitectura y entrenamiento
 
-La información disponible no describe la arquitectura de la red. Por el contexto (familia `velocity`, comandos de velocidad, observaciones de estado del robot y salidas articulares como `knee_left_rad`), se trata con alta probabilidad de una política de control profunda entrenada por aprendizaje por refuerzo y exportada a ONNX para inferencia, pero ni el número de capas, ni el tipo de red, ni el número de parámetros aparecen en la model card. El entrenamiento se realizó mediante Microduck Academy, un espacio de HuggingFace asociado al autor, y el repositorio conserva la trazabilidad del proceso: grabaciones de rollouts en formato `trajectory.v1`, checkpoints por ronda e iteración listados en `manifest.checkpoints` y un `manifest.json` con esquema 2 que incluye los bloques `judge_score`, `vlm`, `score` y `academy` (prompt, familia, juez y linaje).
+La información disponible no describe la arquitectura de la red. Por el contexto (familia `velocity`, comandos de velocidad, observaciones de estado del robot y salidas articulares como `knee_left_rad`), se trata con alta probabilidad de una política de control profunda entrenada por aprendizaje por refuerzo y exportada a ONNX para inferencia, pero ni el número de capas, ni el tipo de red, ni el número de parámetros aparecen en la model card. El entrenamiento se realizó mediante Microduck Academy, un espacio de Hugging Face asociado al autor, y el repositorio conserva la trazabilidad del proceso: grabaciones de rollouts en formato `trajectory.v1`, checkpoints por ronda e iteración listados en `manifest.checkpoints` y un `manifest.json` con esquema 2 que incluye los bloques `judge_score`, `vlm`, `score` y `academy` (prompt, familia, juez y linaje).
 
 El sistema de evaluación sí está documentado con cierto detalle, aunque no los hiperparámetros: un juez programático ("code, on the numbers") evalúa la telemetría numérica de la política y un VLM ("eye, on the frames") revisa los fotogramas del resultado. La puntuación final mostrada en Discover es la del juez, recortada al 75 % cuando el VLM no está seguro y al 50 % cuando discrepa. En la ronda 2, el juez otorgó PASS con puntuación 1,0 y el VLM coincidió con la descripción del movimiento. Además, la política supera la batería de comandos con 2 respuestas correctas de 2 (área de comando 100 %). No se publican datos sobre composición del dataset, número de muestras, uso de RLHF/DPO ni técnicas de decodificación o aceleración.
 
@@ -115,7 +115,7 @@ No disponible. La información proporcionada no incluye ningún modelo comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-deep-squat-hold
-- Perfil del autor en HuggingFace: https://huggingface.co/tfrere
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-deep-squat-hold
+- Perfil del autor en Hugging Face: https://huggingface.co/tfrere
 - Espacio Microduck Academy: https://huggingface.co/spaces/tfrere/microduck
 - Resultados de la búsqueda web: no se ha encontrado ningún resultado relevante. Las URL devueltas (kinotochka.net y sus páginas asociadas) son contenido sin relación con el modelo y se descartan como fuentes.

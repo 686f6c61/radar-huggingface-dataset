@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`blrtanvi/test-matching` es un repositorio de HuggingFace que contiene una implementación experimental de una arquitectura híbrida orientada a tareas de *matching* (emparejamiento). Lo publica el usuario `blrtanvi` bajo licencia Apache 2.0 y se distribuye como un artefacto de código (`pipeline.py`) acompañado de una configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`). El propio autor indica explícitamente que **no es un modelo entrenado ni una release con benchmarks**: es un punto de partida reproducible para *smoke tests*.
+`blrtanvi/test-matching` es un repositorio de Hugging Face que contiene una implementación experimental de una arquitectura híbrida orientada a tareas de *matching* (emparejamiento). Lo publica el usuario `blrtanvi` bajo licencia Apache 2.0 y se distribuye como un artefacto de código (`pipeline.py`) acompañado de una configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`). El propio autor indica explícitamente que **no es un modelo entrenado ni una release con benchmarks**: es un punto de partida reproducible para *smoke tests*.
 
 La arquitectura declarada es "Hybrid" con atención de ventana deslizante (*sliding window*), fusión con compuertas (*gated fusion*), activación `gelu tanh` y normalización `scalenorm`. La escala indicada es "tiny" y el recuento real de parámetros en el checkpoint safetensors es de **33.088 parámetros** (aproximadamente 33 K), lo que lo sitúa muy por debajo de cualquier modelo de propósito general: es del orden de un juguete de investigación o una prueba de concepto.
 
@@ -70,9 +70,9 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - **Contexto e idiomas**: no documentados; no se debe asumir ninguna ventana de contexto ni cobertura lingüística.
 - **Licencia**: Apache 2.0 permite uso comercial del código y los pesos, pero el autor recomienda revisar por separado los términos de los datos fuente si se usa con datasets externos.
 - **Producción**: no apto para producción en su estado actual; solo para experimentación, docencia o pruebas de infraestructura.
-- **Carga**: requiere un adaptador explícito para APIs genéricas de HuggingFace `transformers`; no se puede cargar con `AutoModel.from_pretrained` sin código adicional.
+- **Carga**: requiere un adaptador explícito para APIs genéricas de Hugging Face `transformers`; no se puede cargar con `AutoModel.from_pretrained` sin código adicional.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/blrtanvi/test-matching
+- Hugging Face: https://huggingface.co/blrtanvi/test-matching
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

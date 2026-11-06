@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wallawalla47/Qwen3.8-27B-Quasar-NVFP4-NInferV3
+- Modelo en Hugging Face: https://huggingface.co/wallawalla47/Qwen3.8-27B-Quasar-NVFP4-NInferV3
 - Modelo base: https://huggingface.co/QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4
 - Motor recomendado (Infernix): https://github.com/Wallawalla47/Infernix
 - Benchmarks de Infernix frente a NInfer: https://github.com/Wallawalla47/Infernix#qwen38-27b-infernix-vs-ninfer

@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su combinación de técnicas de fusión a
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no incluye una descripcion detallada de la arquitectura interna del modelo. Los tags de HuggingFace indican que se trata de un modelo MoE (mixture of experts) y que emplea tecnicas de fusion de modelos como DARE, STAR y delta-net, lo que sugiere que los pesos se obtuvieron combinando multiples modelos base de la familia Qwen3.5 y Qwen3.6. No se especifican el numero de expertos, la dimension de los estados ocultos ni el mecanismo de activacion de expertos.
+La informacion disponible no incluye una descripcion detallada de la arquitectura interna del modelo. Los tags de Hugging Face indican que se trata de un modelo MoE (mixture of experts) y que emplea tecnicas de fusion de modelos como DARE, STAR y delta-net, lo que sugiere que los pesos se obtuvieron combinando multiples modelos base de la familia Qwen3.5 y Qwen3.6. No se especifican el numero de expertos, la dimension de los estados ocultos ni el mecanismo de activacion de expertos.
 
 Tampoco se dispone de informacion sobre el proceso de entrenamiento: no se indican el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO o similar. La unica certeza es que el modelo fue convertido a GGUF desde el checkpoint original en safetensors, y que la cuantizacion Q5_K_M es una de las mas equilibradas en cuanto a calidad y consumo de memoria segun las guias de cuantizacion GGUF de 2026.
 
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/OliviaRossi/UltiMerge-Q5_K_M-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/OliviaRossi/UltiMerge-Q5_K_M-GGUF
 - Modelo base (safetensors): https://huggingface.co/OliviaRossi/UltiMerge
 - Herramienta de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

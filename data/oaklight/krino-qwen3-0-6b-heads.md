@@ -94,7 +94,7 @@ Nota: la model card afirma que el modelo se entrena sobre 19 benchmarks, pero so
 - VRAM estimada para inferencia (estimacion a partir del tamano del backbone; no confirmada por el autor): ~2,4 GB en fp32, ~1,2 GB en fp16/bf16, ~0,6 GB en int8 y ~0,3-0,4 GB en int4. Las cabezas (402 K parametros) anaden un consumo despreciable.
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente. Tarjetas como RTX 3060, RTX 4060, RTX 4090, A100 o H100 cubren el modelo con holgura.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna e incluso en CPU o en dispositivos integrados.
-- Opciones de despliegue: la libreria Python `krino` mediante `KrinoModel.from_pretrained(...)`; el backbone puede cargarse con Transformers de HuggingFace o PyTorch. Los frameworks orientados a generacion de texto (vLLM, llama.cpp, Ollama, TGI) no son directamente aplicables porque el modelo no emite tokens de texto; no se documentan integraciones.
+- Opciones de despliegue: la libreria Python `krino` mediante `KrinoModel.from_pretrained(...)`; el backbone puede cargarse con Transformers de Hugging Face o PyTorch. Los frameworks orientados a generacion de texto (vLLM, llama.cpp, Ollama, TGI) no son directamente aplicables porque el modelo no emite tokens de texto; no se documentan integraciones.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -121,7 +121,7 @@ No se dispone de resultados de benchmarks de modelos comparables en la informaci
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/oaklight/krino-qwen3-0.6b-heads
+- Hugging Face del modelo: https://huggingface.co/oaklight/krino-qwen3-0.6b-heads
 - Backbone Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Qwen3 Technical Report: https://arxiv.org/html/2505.09388v1
 - Variante de mayor tamano del mismo autor: https://huggingface.co/oaklight/krino-qwen3.5-4b-heads

@@ -102,7 +102,7 @@ Modelos comparables de otros autores: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JaimeJunr/needle-ptbr
+- Modelo en Hugging Face: https://huggingface.co/JaimeJunr/needle-ptbr
 - Modelo base declarado (tag): https://huggingface.co/Cactus-Compute/needle2
 - Modelo base referenciado en la model card: https://huggingface.co/Cactus-Compute/needle3
 - Paper de arquitectura (arXiv:2607.18363): https://arxiv.org/abs/2607.18363

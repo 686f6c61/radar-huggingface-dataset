@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario sadad1szc12cxzq bajo el identificador `sadad1szc12cxzq/MyAwesomeModel-TestRepository`. La ficha se presenta como la actualización de una versión anterior, con mejoras en profundidad de razonamiento e inferencia obtenidas mediante más recursos de cómputo y optimizaciones algorítmicas aplicadas en la fase de post-entrenamiento. La model card afirma mejoras en matemáticas, programación y lógica general, una reducción de la tasa de alucinación y un mejor soporte de function calling.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario sadad1szc12cxzq bajo el identificador `sadad1szc12cxzq/MyAwesomeModel-TestRepository`. La ficha se presenta como la actualización de una versión anterior, con mejoras en profundidad de razonamiento e inferencia obtenidas mediante más recursos de cómputo y optimizaciones algorítmicas aplicadas en la fase de post-entrenamiento. La model card afirma mejoras en matemáticas, programación y lógica general, una reducción de la tasa de alucinación y un mejor soporte de function calling.
 
 Existe una contradicción relevante entre los metadatos y el contenido. La plataforma etiqueta el repositorio como `transformers`, `pytorch`, `bert` y pipeline `feature-extraction`, mientras que la model card describe un asistente conversacional con modo de razonamiento extendido, soporte de system prompt, plantillas para carga de ficheros y búsqueda web, y recomendaciones de muestreo (temperatura 0,6). El repositorio ocupa 0,0 GB, no tiene descargas ni valoraciones y su nombre incluye el sufijo "TestRepository", por lo que no hay evidencia de que los pesos estén publicados.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha recoge exclusivamente lo declarado por el autor. No se dis
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (los metadatos de HuggingFace la etiquetan como `bert`; la model card no especifica arquitectura) |
+| Arquitectura | no disponible (los metadatos de Hugging Face la etiquetan como `bert`; la model card no especifica arquitectura) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible (la model card menciona un consumo medio de 23 000 tokens por pregunta en AIME 2025, lo que implicaría una ventana de al menos esa magnitud, sin cifra oficial) |
@@ -25,7 +25,7 @@ Otros datos declarados por el autor: librería `transformers`, framework `pytorc
 
 ## Arquitectura y entrenamiento
 
-La información disponible no permite describir la arquitectura interna. Los metadatos de HuggingFace apuntan a un modelo tipo BERT orientado a extracción de características, lo que resulta incompatible con las capacidades descritas en la model card (razonamiento extendido, function calling, diálogo multiturno). No se especifica si se trata de un transformer denso, un MoE, un modelo híbrido o una arquitectura con atención lineal.
+La información disponible no permite describir la arquitectura interna. Los metadatos de Hugging Face apuntan a un modelo tipo BERT orientado a extracción de características, lo que resulta incompatible con las capacidades descritas en la model card (razonamiento extendido, function calling, diálogo multiturno). No se especifica si se trata de un transformer denso, un MoE, un modelo híbrido o una arquitectura con atención lineal.
 
 Respecto al entrenamiento, la model card indica únicamente que la versión actual mejora la profundidad de razonamiento "aprovechando mayores recursos computacionales" e "introduciendo mecanismos de optimización algorítmica durante el post-entrenamiento". Se menciona que en AIME 2025 el modelo pasa de un 70 % a un 87,5 % de acierto, y que el consumo medio por pregunta sube de 12 000 a 23 000 tokens, lo que sugiere un modo de pensamiento extendido con cadenas de razonamiento más largas. No se publican el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF, DPO u otras variantes de alineamiento. Tampoco se detalla ninguna innovación técnica adicional.
 
@@ -119,7 +119,7 @@ No es posible establecer una comparativa fiable. La model card compara contra tr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sadad1szc12cxzq/MyAwesomeModel-TestRepository
+- Modelo en Hugging Face: https://huggingface.co/sadad1szc12cxzq/MyAwesomeModel-TestRepository
 
 Resultados de búsqueda web: ninguna de las fuentes recuperadas guarda relación con el modelo analizado. Se listan a continuación únicamente a efectos de trazabilidad.
 

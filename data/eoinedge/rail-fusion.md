@@ -2,7 +2,7 @@
 
 ## Resumen
 
-eoinedge/rail-fusion es un modelo de fusión de sensores orientado a la detección de causa raíz (root-cause) dentro del paquete denominado "busfusion", en el ámbito ferroviario ("rail"). No se trata de un modelo de lenguaje generativo, sino de un modelo de inferencia embebida empaquetado como `model.pte`, el formato de programa serializado de ExecuTorch, con backend XNNPACK. El autor es el usuario de HuggingFace "eoinedge" y el repositorio se publicó el 9 de octubre de 2026.
+eoinedge/rail-fusion es un modelo de fusión de sensores orientado a la detección de causa raíz (root-cause) dentro del paquete denominado "busfusion", en el ámbito ferroviario ("rail"). No se trata de un modelo de lenguaje generativo, sino de un modelo de inferencia embebida empaquetado como `model.pte`, el formato de programa serializado de ExecuTorch, con backend XNNPACK. El autor es el usuario de Hugging Face "eoinedge" y el repositorio se publicó el 9 de octubre de 2026.
 
 El bundle incluye, además de los pesos, los ficheros `labels.txt`, `input_shape.txt`, `features.json` y `metrics.json`, lo que indica que el modelo opera sobre un vector de características de sensores con un número fijo de entradas y produce una clasificación entre un conjunto cerrado de etiquetas. Está pensado para ejecutarse en dos entornos concretos: una variante de aplicación Android llamada `obd-sam3-fusion` y un bucle Linux llamado `busfusion`. Es, por tanto, un modelo de borde (edge) para diagnóstico, no un modelo de propósito general.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible. El b
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado en la información proporcionada modelos comparables de fusión de sensores ferroviarios publicados en HuggingFace, ni alternativas de la misma categoría con las que contrastar parámetros, contexto, rendimiento o licencia. Tampoco se dispone del número de parámetros del propio modelo, lo que impide cualquier comparación cuantitativa.
+No disponible. No se han identificado en la información proporcionada modelos comparables de fusión de sensores ferroviarios publicados en Hugging Face, ni alternativas de la misma categoría con las que contrastar parámetros, contexto, rendimiento o licencia. Tampoco se dispone del número de parámetros del propio modelo, lo que impide cualquier comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
@@ -72,7 +72,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eoinedge/rail-fusion
+- Repositorio en Hugging Face: https://huggingface.co/eoinedge/rail-fusion
 - Documentación de ExecuTorch: no disponible en la información proporcionada (no se incluyen enlaces oficiales en la model card).
 - Paper o blog del autor: no disponible.
 - Repositorio de código: no disponible.

@@ -29,7 +29,7 @@ Su relevancia es por tanto metodologica y de interpretabilidad: cuantifica el tr
 | Rondas iterativas aplicadas | 4 de 10 (bloques de 0,100% de parametros densos por ronda) |
 | Semilla | 42 |
 | Tamano del repositorio | 13,5 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -82,8 +82,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otras tareas de c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de seguridad |
 |---|---|---|---|---|---|
-| svd-safety-l2_remove50_swapgapiter_b010_r04 | 6.738.415.616 (0,4999 del denso) | no disponible (base: 4.096) | Llama 2 Community License | HuggingFace, 0 descargas | AdvBench ASR 0,2000; StrongREJECT ASR 0,1700; WildGuard 0,2107 |
-| meta-llama/Llama-2-7b-chat-hf (modelo base) | no disponible en la informacion proporcionada | 4.096 tokens segun la arquitectura Llama 2 | Llama 2 Community License | HuggingFace | no disponible en la informacion proporcionada |
+| svd-safety-l2_remove50_swapgapiter_b010_r04 | 6.738.415.616 (0,4999 del denso) | no disponible (base: 4.096) | Llama 2 Community License | Hugging Face, 0 descargas | AdvBench ASR 0,2000; StrongREJECT ASR 0,1700; WildGuard 0,2107 |
+| meta-llama/Llama-2-7b-chat-hf (modelo base) | no disponible en la informacion proporcionada | 4.096 tokens segun la arquitectura Llama 2 | Llama 2 Community License | Hugging Face | no disponible en la informacion proporcionada |
 | Otras celdas de la rejilla del mismo estudio (otras reglas y presupuestos) | del orden de 6,7 mil millones | no disponible | Llama 2 Community License | no disponible | no disponible |
 | SVD-LLM como metodo de compresion (referencia metodologica) | no aplica | no aplica | no disponible | no disponible | no disponible |
 
@@ -103,6 +103,6 @@ No se dispone de resultados de benchmarks comparables de terceros para establece
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r04
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r04
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al metodo SVD-LLM ni al estudio de referencia; los resultados devueltos no guardan relacion con el contenido de esta ficha.

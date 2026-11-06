@@ -84,7 +84,7 @@ No se dispone en la información proporcionada de datos comparativos con otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pdnhan/PhoWhisper-base-mobile
+- Repositorio Hugging Face: https://huggingface.co/pdnhan/PhoWhisper-base-mobile
 - Modelo base: https://huggingface.co/vinai/PhoWhisper-base
 - ONNX Runtime: https://onnxruntime.ai
 - Paquete Swift para iOS: https://github.com/microsoft/onnxruntime-swift-package-manager

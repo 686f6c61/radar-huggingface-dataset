@@ -74,9 +74,9 @@ El único caso discrepante es una decisión sí/no en el límite, donde PyTorch 
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mrfakename/h2o-lightning-4b-ONNX | ~4B (cifra exacta no disponible) | No disponible | ONNX, q4 y q4f16 (MatMulNBits 4 bits, bloque 32) | Apache-2.0 | HuggingFace, 0 descargas, 0 likes en el momento de la consulta |
-| h2oai/h2o-lightning-4b (modelo base) | ~4B (cifra exacta no disponible) | No disponible | PyTorch bf16/fp32 | Apache-2.0 | HuggingFace, mantenido por H2O.ai |
-| onnx-community/Qwen3.5-4B-ONNX | ~4B (cifra exacta no disponible) | No disponible | ONNX | No disponible en la información proporcionada | HuggingFace, origen de los grafos ONNX reutilizados |
+| mrfakename/h2o-lightning-4b-ONNX | ~4B (cifra exacta no disponible) | No disponible | ONNX, q4 y q4f16 (MatMulNBits 4 bits, bloque 32) | Apache-2.0 | Hugging Face, 0 descargas, 0 likes en el momento de la consulta |
+| h2oai/h2o-lightning-4b (modelo base) | ~4B (cifra exacta no disponible) | No disponible | PyTorch bf16/fp32 | Apache-2.0 | Hugging Face, mantenido por H2O.ai |
+| onnx-community/Qwen3.5-4B-ONNX | ~4B (cifra exacta no disponible) | No disponible | ONNX | No disponible en la información proporcionada | Hugging Face, origen de los grafos ONNX reutilizados |
 
 El modelo base y la conversión ONNX comparten pesos y licencia; la diferencia principal es el formato, la cuantización y la orientación a la ejecución en navegador. No se dispone de datos de rendimiento que permitan una comparación cuantitativa frente a Qwen3.5-4B ni frente a otros modelos de decisión de tamaño similar.
 

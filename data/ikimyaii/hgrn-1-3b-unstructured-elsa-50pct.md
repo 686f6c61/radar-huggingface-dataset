@@ -97,7 +97,7 @@ No hay datos suficientes en la informacion proporcionada para comparar rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/HGRN-1.3B-unstructured-ELSA-50pct
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/HGRN-1.3B-unstructured-ELSA-50pct
 - Modelo base: https://huggingface.co/fla-hub/hgrn-1.3B-100B
 - Paper de ELSA: https://arxiv.org/abs/2510.01650
 - Paquete `fla` (flash-linear-attention), dependencia obligatoria para cargar el modelo: https://github.com/fla-org/flash-linear-attention

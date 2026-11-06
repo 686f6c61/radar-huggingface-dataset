@@ -70,10 +70,10 @@ El adaptador mejora al modelo base en zero-shot en todas las métricas y supera 
 
 | Modelo | Parámetros | Contexto | F1 macro medio (test gold) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thiag8ito/qwen2.5-1.5b-aspectos-ecommerce-ptbr-qlora | 1,5B + LoRA | no disponible | 0,691 | Apache 2.0 | HuggingFace (adaptador PEFT) |
-| Qwen/Qwen2.5-1.5B-Instruct (zero-shot) | 1,5B | no disponible en la información | 0,472 | Apache 2.0 | HuggingFace |
+| thiag8ito/qwen2.5-1.5b-aspectos-ecommerce-ptbr-qlora | 1,5B + LoRA | no disponible | 0,691 | Apache 2.0 | Hugging Face (adaptador PEFT) |
+| Qwen/Qwen2.5-1.5B-Instruct (zero-shot) | 1,5B | no disponible en la información | 0,472 | Apache 2.0 | Hugging Face |
 | TF-IDF + regresión logística (línea base) | no aplica (modelo clásico) | no aplica | 0,587 | no disponible | Implementación propia |
-| Qwen/Qwen2.5-7B-Instruct (anotador silver) | 7B | no disponible en la información | no evaluado en test en la model card | Apache 2.0 | HuggingFace |
+| Qwen/Qwen2.5-7B-Instruct (anotador silver) | 7B | no disponible en la información | no evaluado en test en la model card | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a los tres sistemas evaluados en la model card; no se dispone de datos de otros adaptadores ABSA en portugués para una comparación externa.
 
@@ -91,7 +91,7 @@ La comparativa se limita a los tres sistemas evaluados en la model card; no se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thiag8ito/qwen2.5-1.5b-aspectos-ecommerce-ptbr-qlora
+- Modelo en Hugging Face: https://huggingface.co/thiag8ito/qwen2.5-1.5b-aspectos-ecommerce-ptbr-qlora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de reproducción (código y notebooks): https://github.com/thiag8ito/qlora-aspectos
 - Dataset de Olist en Kaggle: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce

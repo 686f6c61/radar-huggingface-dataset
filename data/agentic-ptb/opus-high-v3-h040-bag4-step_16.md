@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento para este checkpoint, por lo que la compar
 
 ## Enlaces
 
-- [HuggingFace: agentic-ptb/opus-high-v3.h040.bag4.step_16](https://huggingface.co/agentic-ptb/opus-high-v3.h040.bag4.step_16)
+- [Hugging Face: agentic-ptb/opus-high-v3.h040.bag4.step_16](https://huggingface.co/agentic-ptb/opus-high-v3.h040.bag4.step_16)
 - [Dataset asociado: agentic-ptb/opus-high-v3-data](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Índice del proyecto: agentic-ptb/INDEX](https://huggingface.co/datasets/agentic-ptb/INDEX)

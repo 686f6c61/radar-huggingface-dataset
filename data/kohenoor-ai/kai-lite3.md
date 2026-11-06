@@ -83,11 +83,11 @@ KAIPAL se diferencia de los modelos generales de tamaño similar en que no compi
 - Contexto corto: 4.096 tokens limitan historias muy largas o conversaciones extensas.
 - Licencia: aunque el modelo se distribuye bajo Apache 2.0, Kohenoor Technologies aplica sus propios términos adicionales para productos KAI, y las marcas KAI, KAIPAL y KAIPAL Tales & Tunes son propiedad de la empresa. Conviene revisar LICENSE y NOTICE antes de un uso comercial.
 - Seguridad infantil: las salvaguardas dependen del system prompt, no de mecanismos de alineación documentados en el entrenamiento; no se han publicado evaluaciones de seguridad independientes.
-- Proyecto de nicho con adopción muy temprana: 63 descargas y 1 like en HuggingFace en el momento de la ficha, sin comunidad ni auditorías externas conocidas.
+- Proyecto de nicho con adopción muy temprana: 63 descargas y 1 like en Hugging Face en el momento de la ficha, sin comunidad ni auditorías externas conocidas.
 - Requiere motor de inferencia de octubre de 2026 o posterior según el autor, lo que puede limitar la compatibilidad con despliegues existentes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KOHENOOR-AI/kai-lite3
+- Modelo en Hugging Face: https://huggingface.co/KOHENOOR-AI/kai-lite3
 - Modelo en el registro de Ollama: https://ollama.com/kohenoor/kai-lite3
 - KAI Full (versión completa, web de Kohenoor Technologies): https://www.kohenoor.net

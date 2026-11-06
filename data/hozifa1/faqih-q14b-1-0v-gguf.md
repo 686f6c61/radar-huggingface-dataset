@@ -65,7 +65,7 @@ No se dispone de benchmarks comparativos. La principal diferencia con Qwen2.5-14
 - **Riesgo de mal uso**: El contenido religioso puede ser sensible; se recomienda un filtro humano antes de desplegar en entornos públicos.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/hozifa1/Faqih-Q14b-1.0V-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/hozifa1/Faqih-Q14b-1.0V-GGUF)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/hozifa1/faqih_sft_dataset)
 - [Modelo base Qwen2.5-14B-Instruct](https://huggingface.co/unsloth/Qwen2.5-14B-Instruct-bnb-4bit) (no enlazado en la búsqueda, se infiere del campo base_model)
 - [Página del proyecto Faqih (no encontrada, solo el repositorio)](no disponible)

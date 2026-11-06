@@ -73,7 +73,7 @@ Los datos proceden de la model card del autor. No se han publicado en la informa
 
 | Modelo | Parámetros | Contexto | Rendimiento grounding | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GroundAnything-VLM | 4,84B | no disponible | 72,42% (media 30 benchmarks) | Apache 2.0 + Kimi K3 | HuggingFace, ModelScope |
+| GroundAnything-VLM | 4,84B | no disponible | 72,42% (media 30 benchmarks) | Apache 2.0 + Kimi K3 | Hugging Face, ModelScope |
 | GPT-6 Astra | no disponible | no disponible | 71,35% (misma métrica) | propietaria | API (no abierto) |
 | LocateAnything (MTP) | no disponible | no disponible | 53,32% (entropy-guided) | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ La información disponible no permite comparar con detalle parámetros, contexto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/seikixtc/GroundAnything-VLM
+- Hugging Face: https://huggingface.co/seikixtc/GroundAnything-VLM
 - Repositorio original del autor: https://huggingface.co/GroundingPI/GroundAnything-VLM
 - Variante DLM: https://huggingface.co/GroundingPI/GroundAnything
 - ModelScope (VLM): https://www.modelscope.ai/models/GroundingPI/GroundAnything-VLM

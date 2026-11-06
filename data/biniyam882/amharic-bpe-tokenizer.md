@@ -103,5 +103,5 @@ La comparación se limita a la fertilidad sobre amhárico; no hay datos público
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/biniyam882/amharic-bpe-tokenizer
+- Hugging Face: https://huggingface.co/biniyam882/amharic-bpe-tokenizer
 - Repositorio GitHub (código, pipeline y benchmark): https://github.com/biniyamsav/amharic_tokenizer

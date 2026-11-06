@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio identificado como `h0000w/Human-Intelligence-Assurance-Lab` es una publicacion alojada en HuggingFace por el usuario `h0000w`. La unica informacion verificable disponible es su licencia (MIT) y sus metadatos de publicacion: fue creado y actualizado el 13 de septiembre de 2026, acumula 0 descargas y 0 likes, y no declara pipeline de inferencia ni idiomas soportados. La model card publicada por el autor se limita a una linea de frontmatter con `license: mit`, sin descripcion, sin documentacion tecnica y sin pesos anunciados.
+El repositorio identificado como `h0000w/Human-Intelligence-Assurance-Lab` es una publicacion alojada en Hugging Face por el usuario `h0000w`. La unica informacion verificable disponible es su licencia (MIT) y sus metadatos de publicacion: fue creado y actualizado el 13 de septiembre de 2026, acumula 0 descargas y 0 likes, y no declara pipeline de inferencia ni idiomas soportados. La model card publicada por el autor se limita a una linea de frontmatter con `license: mit`, sin descripcion, sin documentacion tecnica y sin pesos anunciados.
 
 El propio nombre del identificador, "Human-Intelligence-Assurance-Lab", no sigue la convencion habitual de nomenclatura de modelos (que suele incluir familia, tamano y version, por ejemplo `Llama-3.1-8B-Instruct`). Esto sugiere que podria tratarse de un espacio de trabajo, un repositorio auxiliar de investigacion, un conjunto de datos o un proyecto de evaluacion de garantia de calidad, en lugar de un modelo de lenguaje con pesos publicados. No obstante, se trata de una inferencia basada en el nombre y no de un dato confirmado por el autor.
 
@@ -57,7 +57,7 @@ No es posible enumerar casos de uso concretos y verificables sin conocer la natu
 - Procesamiento de documentos con contexto largo: hipotetico, sin evidencia en la informacion disponible.
 - Aprendizaje por imitacion o ajuste fino posterior: hipotetico, sin evidencia en la informacion disponible.
 
-Se recomienda contactar con el autor a traves de HuggingFace antes de considerar cualquier aplicacion practica.
+Se recomienda contactar con el autor a traves de Hugging Face antes de considerar cualquier aplicacion practica.
 
 ## Benchmarks y rendimiento
 
@@ -89,8 +89,8 @@ No disponible. Sin conocer el numero de parametros, la arquitectura ni la tarea 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/h0000w/Human-Intelligence-Assurance-Lab
-- Perfil del autor en HuggingFace: https://huggingface.co/h0000w
+- Repositorio en Hugging Face: https://huggingface.co/h0000w/Human-Intelligence-Assurance-Lab
+- Perfil del autor en Hugging Face: https://huggingface.co/h0000w
 - Paper asociado: no disponible.
 - Blog o nota tecnica: no disponible.
 - Repositorio de codigo: no disponible.

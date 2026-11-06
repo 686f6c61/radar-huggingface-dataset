@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Talos 10M es un modelo de lenguaje causal de arquitectura propia desarrollado por Promethean Studio y publicado en HuggingFace bajo el identificador `PrometheanStudio/talos-10m`. Se trata de un modelo minúsculo de 9.952.320 parametros (aproximadamente 10M), disenado con una arquitectura denominada TalosGPT que no es nativa de la libreria Transformers y que requiere la libreria `talos` para su carga. Su ventana de contexto es de 512 tokens y emplea atencion completa con RoPE (theta = 10.000), atencion agrupada (28 cabezas de consulta y 14 cabezas de clave/valor) y un tamano de capa oculta de 448 con solo 3 capas.
+Talos 10M es un modelo de lenguaje causal de arquitectura propia desarrollado por Promethean Studio y publicado en Hugging Face bajo el identificador `PrometheanStudio/talos-10m`. Se trata de un modelo minúsculo de 9.952.320 parametros (aproximadamente 10M), disenado con una arquitectura denominada TalosGPT que no es nativa de la libreria Transformers y que requiere la libreria `talos` para su carga. Su ventana de contexto es de 512 tokens y emplea atencion completa con RoPE (theta = 10.000), atencion agrupada (28 cabezas de consulta y 14 cabezas de clave/valor) y un tamano de capa oculta de 448 con solo 3 capas.
 
 El modelo resuelve el nicho de los modelos de lenguaje extremadamente pequenos, utiles para experimentacion, docencia, pruebas de pipelines de entrenamiento e inferencia en hardware muy limitado. Fue entrenado durante 100.000 pasos con un batch size de 8 y secuencias de 512 tokens, alcanzando una perdida de validacion de 1,1523912596702575. El repositorio ocupa 0,2 GB e incluye el checkpoint de PyTorch, el tokenizador ByteLevelBPE nativo y el fichero de configuracion.
 
@@ -122,7 +122,7 @@ Diferencias observadas: Talos 10M es entre uno y dos ordenes de magnitud mas peq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PrometheanStudio/talos-10m
+- Modelo en Hugging Face: https://huggingface.co/PrometheanStudio/talos-10m
 - Perfil del autor: https://huggingface.co/PrometheanStudio
 - Paper: no disponible
 - Blog o anuncio de publicacion: no disponible

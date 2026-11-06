@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Karthik1338/workflow-qwen-final` es un adaptador LoRA publicado en HuggingFace, no un modelo completo. Se entrena sobre `Qwen/Qwen2.5-7B-Instruct` mediante SFT con la libreria TRL y se distribuye en formato PEFT (version 0.21.0 declarada en la model card). El repositorio ocupa 0,2 GB, lo que corresponde unicamente a los pesos del adaptador: para ejecutarlo es necesario descargar aparte los pesos completos del modelo base.
+`Karthik1338/workflow-qwen-final` es un adaptador LoRA publicado en Hugging Face, no un modelo completo. Se entrena sobre `Qwen/Qwen2.5-7B-Instruct` mediante SFT con la libreria TRL y se distribuye en formato PEFT (version 0.21.0 declarada en la model card). El repositorio ocupa 0,2 GB, lo que corresponde unicamente a los pesos del adaptador: para ejecutarlo es necesario descargar aparte los pesos completos del modelo base.
 
-El modelo base es un transformer decoder-only de 7.610 millones de parametros con atencion por consultas agrupadas (GQA), entrenado por Alibaba Qwen con licencia Apache 2.0 y una ventana de contexto nativa de 32.768 tokens. El adaptador hereda esas caracteristicas y anade un ajuste fino supervisado cuyo dataset, hiperparametros y objetivo no estan documentados: la model card es la plantilla por defecto de HuggingFace con todos los campos marcados como `[More Information Needed]`.
+El modelo base es un transformer decoder-only de 7.610 millones de parametros con atencion por consultas agrupadas (GQA), entrenado por Alibaba Qwen con licencia Apache 2.0 y una ventana de contexto nativa de 32.768 tokens. El adaptador hereda esas caracteristicas y anade un ajuste fino supervisado cuyo dataset, hiperparametros y objetivo no estan documentados: la model card es la plantilla por defecto de Hugging Face con todos los campos marcados como `[More Information Needed]`.
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente cautelar. El repositorio acumula 0 descargas y 0 likes, no declara licencia, idiomas ni datos de entrenamiento, y fue creado el 23 de septiembre de 2026. Se desconoce el dominio real del ajuste (el nombre "workflow" sugiere un uso orientado a flujos de trabajo o agentes, pero es una inferencia, no un dato documentado). Cualquier evaluacion en produccion deberia partir de una verificacion empirica propia.
 
@@ -27,7 +27,7 @@ Nota: los datos marcados como heredados del modelo base proceden de la documenta
 
 El adaptador se aplica sobre un transformer decoder-only denso de 7.610 millones de parametros. Qwen2.5-7B-Instruct emplea atencion por consultas agrupadas para reducir el coste de la cache KV, normalizacion RMSNorm pre-normalizada y activacion SwiGLU, con embeddings posicionales rotatorios (RoPE). No hay innovaciones arquitectonicas adicionales atribuibles al adaptador: se trata de un ajuste por LoRA sobre los pesos existentes, no de una modificacion estructural.
 
-La informacion sobre el entrenamiento es practicamente inexistente. La model card solo declara las etiquetas `lora` y `sft`, la libreria `peft` y la version de PEFT 0.21.0. Se desconoce el dataset utilizado, el numero de ejemplos, el rango y los modulos objetivo del adaptador, la tasa de aprendizaje, el numero de epocas, la precision de entrenamiento y si hubo fases adicionales de alineacion (DPO, RLHF). Tampoco se documenta si el ajuste se realizo sobre datos sinteticos, trazas de agentes o conversaciones reales. El tag `arxiv:1910.09700` que aparece en los metadatos no es una referencia metodologica del modelo: corresponde al articulo de Lacoste et al. sobre calculo de emisiones de carbono, citado en la plantilla por defecto de HuggingFace.
+La informacion sobre el entrenamiento es practicamente inexistente. La model card solo declara las etiquetas `lora` y `sft`, la libreria `peft` y la version de PEFT 0.21.0. Se desconoce el dataset utilizado, el numero de ejemplos, el rango y los modulos objetivo del adaptador, la tasa de aprendizaje, el numero de epocas, la precision de entrenamiento y si hubo fases adicionales de alineacion (DPO, RLHF). Tampoco se documenta si el ajuste se realizo sobre datos sinteticos, trazas de agentes o conversaciones reales. El tag `arxiv:1910.09700` que aparece en los metadatos no es una referencia metodologica del modelo: corresponde al articulo de Lacoste et al. sobre calculo de emisiones de carbono, citado en la plantilla por defecto de Hugging Face.
 
 ## Capacidades
 
@@ -93,7 +93,7 @@ Diferencias clave: el modelo base y Mistral ofrecen licencias permisivas claras,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Karthik1338/workflow-qwen-final
+- Modelo en Hugging Face: https://huggingface.co/Karthik1338/workflow-qwen-final
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

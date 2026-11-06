@@ -2,11 +2,11 @@
 
 ## Resumen
 
-vxtral-loopus-4b es un modelo de lenguaje causal para generación de texto publicado por el usuario vxltxrllc en HuggingFace. Con 4.015.331.329 parámetros totales (aproximadamente 4B), se distribuye en formato safetensors bajo licencia Apache 2.0 y requiere código personalizado (`custom_code`) para su carga en transformers, lo que indica que su arquitectura no es un transformer estándar.
+vxtral-loopus-4b es un modelo de lenguaje causal para generación de texto publicado por el usuario vxltxrllc en Hugging Face. Con 4.015.331.329 parámetros totales (aproximadamente 4B), se distribuye en formato safetensors bajo licencia Apache 2.0 y requiere código personalizado (`custom_code`) para su carga en transformers, lo que indica que su arquitectura no es un transformer estándar.
 
 Las etiquetas del repositorio apuntan a una arquitectura de tipo "recurrent-transformers" con "adaptive-depth" y un mecanismo denominado "selective-gate" y "loopus". Esto sugiere un transformer recurrente en profundidad, donde el modelo reutiliza bloques de capas de forma iterativa y ajusta dinámicamente el número de iteraciones o capas efectivas según la entrada, en la línea de trabajos como Universal Transformers o los modelos de profundidad adaptativa. No obstante, no se ha publicado documentación técnica que detalle el mecanismo exacto.
 
-El modelo está etiquetado únicamente para inglés (`en`) y su acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo. Con cero descargas y cero likes en el momento de la consulta y sin paper, blog ni resultados de benchmarks asociados, se trata de una publicación muy reciente y sin validación externa conocida. Su relevancia potencial reside en explorar arquitecturas recurrentes de profundidad adaptativa en la escala de 4B parámetros, pero cualquier evaluación debe hacerse con cautela ante la ausencia de datos empíricos publicados.
+El modelo está etiquetado únicamente para inglés (`en`) y su acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo. Con cero descargas y cero likes en el momento de la consulta y sin paper, blog ni resultados de benchmarks asociados, se trata de una publicación muy reciente y sin validación externa conocida. Su relevancia potencial reside en explorar arquitecturas recurrentes de profundidad adaptativa en la escala de 4B parámetros, pero cualquier evaluación debe hacerse con cautela ante la ausencia de datos empíricos publicados.
 
 ## Especificaciones técnicas
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| vxtral-loopus-4b | ≈4B | no disponible | Apache 2.0 | Gated en HuggingFace, requiere `custom_code` | Arquitectura recurrente con profundidad adaptativa; sin benchmarks |
+| vxtral-loopus-4b | ≈4B | no disponible | Apache 2.0 | Gated en Hugging Face, requiere `custom_code` | Arquitectura recurrente con profundidad adaptativa; sin benchmarks |
 | Qwen2.5-3B / 7B | 3B / 7B | 32K (128K en variantes) | Apache 2.0 (mayoría) | Abierto, ampliamente integrado | Transformer estándar, benchmarks publicados, soporte en vLLM/llama.cpp |
 | Llama 3.2 3B | 3B | 128K | Llama 3.2 Community License | Abierto con aceptación de términos | Transformer estándar, amplio ecosistema y herramientas |
 | Phi-3.5-mini | 3,8B | 128K | MIT | Abierto | Transformer estándar, orientado a razonamiento y código |
@@ -73,7 +73,7 @@ La comparación directa no es posible en términos de rendimiento porque vxtral-
 ## Limitaciones y advertencias
 
 - Ausencia total de benchmarks y de model card técnica: no hay evidencia publicada de calidad, lo que impide recomendarlo para producción sin una evaluación propia.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace, lo que añade fricción a la descarga y a la reproducibilidad.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face, lo que añade fricción a la descarga y a la reproducibilidad.
 - Requiere `trust_remote_code=True`: el código personalizado se ejecuta con los privilegios del proceso de carga, lo que supone un riesgo de seguridad que debe auditarse.
 - Idiomas: solo inglés etiquetado; el rendimiento en castellano u otros idiomas no está garantizado y probablemente sea deficiente.
 - Contexto: no documentado; no debe asumirse una ventana larga sin verificación empírica.
@@ -85,7 +85,7 @@ La comparación directa no es posible en términos de rendimiento porque vxtral-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vxltxrllc/vxtral-loopus-4b
+- Modelo en Hugging Face: https://huggingface.co/vxltxrllc/vxtral-loopus-4b
 - Paper: no disponible
 - Blog o documentación técnica: no disponible
 - Repositorio de código: no disponible

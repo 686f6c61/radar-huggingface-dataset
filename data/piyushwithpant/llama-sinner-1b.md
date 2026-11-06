@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PiyushWithPant/Llama-Sinner-1B es un modelo de lenguaje publicado en HuggingFace por el usuario PiyushWithPant, con licencia llama3.2. La model card apenas contiene información: únicamente se declara la licencia, sin descripción, sin arquitectura confirmada, sin datos de entrenamiento ni capacidades documentadas. El nombre sugiere una posible variante de la familia Llama 3.2, pero no hay evidencia técnica que lo confirme.
+PiyushWithPant/Llama-Sinner-1B es un modelo de lenguaje publicado en Hugging Face por el usuario PiyushWithPant, con licencia llama3.2. La model card apenas contiene información: únicamente se declara la licencia, sin descripción, sin arquitectura confirmada, sin datos de entrenamiento ni capacidades documentadas. El nombre sugiere una posible variante de la familia Llama 3.2, pero no hay evidencia técnica que lo confirme.
 
 El modelo no ha recibido descargas ni valoraciones en la plataforma, y su fecha de creación (agosto de 2026) es reciente. No se dispone de documentación adicional, papers, repositorios de código ni demos asociados. Por tanto, cualquier uso en producción o investigación requeriría una evaluación previa exhaustiva por parte del usuario, ya que la información pública es insuficiente para determinar su comportamiento, rendimiento o idoneidad.
 
@@ -78,7 +78,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PiyushWithPant/Llama-Sinner-1B
+- Modelo en Hugging Face: https://huggingface.co/PiyushWithPant/Llama-Sinner-1B
 - Modelo relacionado del mismo autor (Llama-Saint-1B): https://huggingface.co/PiyushWithPant/Llama-Saint-1B
 - Perfil de GitHub del autor: https://github.com/PiyushWithPant
 - Leaderboard de modelos self-hosted (referencia general): https://onyx.app/self-hosted-llm-leaderboard

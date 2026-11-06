@@ -83,7 +83,7 @@ La diferencia principal entre esta conversion y el original de DeepSeek es el fo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/deepseek_vl_7b_base
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/deepseek_vl_7b_base
 - Modelo original: https://huggingface.co/deepseek-ai/deepseek-vl-7b-base
 - Paper: https://arxiv.org/abs/2403.05525
 - Repositorio GitHub de DeepSeek-VL: https://github.com/deepseek-ai/DeepSeek-VL

@@ -107,7 +107,7 @@ La comparación relevante es directa: este bundle es una conversión del segundo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aether-models/phi-4-mini-instruct
+- Modelo en Hugging Face: https://huggingface.co/aether-models/phi-4-mini-instruct
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Revisión del modelo base usada como fuente: `cfbefacb99257ffa30c83adab238a50856ac3083`
 - Paper, blog o repositorio del SDK Aether: no disponible en la información proporcionada.

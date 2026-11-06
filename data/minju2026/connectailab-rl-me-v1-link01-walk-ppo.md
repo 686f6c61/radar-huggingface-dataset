@@ -75,7 +75,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `connectailab-rl-me-v1-link01-walk-ppo` | no disponible | no aplica | 0,0013 m/s (declarado) | no disponible | HuggingFace |
+| `connectailab-rl-me-v1-link01-walk-ppo` | no disponible | no aplica | 0,0013 m/s (declarado) | no disponible | Hugging Face |
 | Alternativas de locomocion en MuJoCo | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minju2026/connectailab-rl-me-v1-link01-walk-ppo
+- Modelo en Hugging Face: https://huggingface.co/minju2026/connectailab-rl-me-v1-link01-walk-ppo
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - MuJoCo: https://mujoco.org
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios de `link01-gym` ni demos adicionales.

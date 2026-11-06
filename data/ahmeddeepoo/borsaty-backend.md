@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AhmedDeepoo/borsaty-backend` es un repositorio alojado en HuggingFace por el usuario AhmedDeepoo y publicado bajo licencia MIT. La model card asociada es prácticamente vacía: únicamente contiene la declaración de licencia (`license: mit`) y ningún otro metadato técnico, descripción, arquitectura o información sobre datos de entrenamiento. No se especifica pipeline, idiomas soportados, tamaño del modelo ni formato de pesos.
+`AhmedDeepoo/borsaty-backend` es un repositorio alojado en Hugging Face por el usuario AhmedDeepoo y publicado bajo licencia MIT. La model card asociada es prácticamente vacía: únicamente contiene la declaración de licencia (`license: mit`) y ningún otro metadato técnico, descripción, arquitectura o información sobre datos de entrenamiento. No se especifica pipeline, idiomas soportados, tamaño del modelo ni formato de pesos.
 
 Por la nomenclatura del identificador ("borsaty-backend") y la ausencia total de documentación técnica, no es posible confirmar que se trate de un modelo de lenguaje propiamente dicho: podría tratarse de un artefacto auxiliar, un backend de servicio, un repositorio de código empaquetado o un modelo en fase muy temprana de publicación. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y su fecha de creación y actualización coinciden (2026-11-02T09:16:01Z), lo que sugiere una publicación única sin mantenimiento posterior.
 
@@ -25,7 +25,7 @@ Dada la escasez de información verificable, esta ficha documenta exclusivamente
 
 No se ha publicado información sobre la arquitectura del modelo en la documentación disponible. La model card no describe si se trata de un transformer, un modelo MoE, una arquitectura híbrida o cualquier otra variante, ni incluye detalles sobre el proceso de entrenamiento: número de tokens, composición del dataset, técnicas de alineación (RLHF, DPO, SFT) o innovaciones técnicas destacables.
 
-Tampoco se indica el formato de los pesos ni el pipeline de HuggingFace asociado, lo que impide determinar si el repositorio contiene pesos de modelo, código de servicio, configuraciones de despliegue u otro tipo de artefacto. Se recomienda inspeccionar la lista de archivos del repositorio antes de asumir cualquier característica técnica.
+Tampoco se indica el formato de los pesos ni el pipeline de Hugging Face asociado, lo que impide determinar si el repositorio contiene pesos de modelo, código de servicio, configuraciones de despliegue u otro tipo de artefacto. Se recomienda inspeccionar la lista de archivos del repositorio antes de asumir cualquier característica técnica.
 
 ## Capacidades
 
@@ -38,10 +38,10 @@ Tampoco se indica el formato de los pesos ni el pipeline de HuggingFace asociado
 
 ## Casos de uso
 
-- Evaluación de repositorios HuggingFace: inspeccionar los archivos del repositorio para determinar si contiene pesos, código o configuraciones antes de cualquier integración.
+- Evaluación de repositorios Hugging Face: inspeccionar los archivos del repositorio para determinar si contiene pesos, código o configuraciones antes de cualquier integración.
 - Prototipado interno con licencia permisiva: la licencia MIT permite uso comercial y modificación, aunque la funcionalidad real del artefacto debe verificarse primero.
 - Auditoría de procedencia: revisar el historial del autor y del repositorio para evaluar la fiabilidad de la publicación antes de incorporarla a un pipeline.
-- Documentación de referencia: usar el repositorio como ejemplo de publicación mínima en HuggingFace para comparar con model cards completas.
+- Documentación de referencia: usar el repositorio como ejemplo de publicación mínima en Hugging Face para comparar con model cards completas.
 - Integración condicionada a inspección previa: cualquier uso en producción debe posponerse hasta confirmar el contenido real del repositorio y sus requisitos de ejecución.
 - Formación y revisión de buenas prácticas: analizar la ausencia de metadatos como caso práctico de los riesgos de dependencias no documentadas en proyectos open source.
 
@@ -63,7 +63,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AhmedDeepoo/borsaty-backend | no disponible | no disponible | MIT | HuggingFace |
+| AhmedDeepoo/borsaty-backend | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -79,5 +79,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AhmedDeepoo/borsaty-backend
+- Repositorio en Hugging Face: https://huggingface.co/AhmedDeepoo/borsaty-backend
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

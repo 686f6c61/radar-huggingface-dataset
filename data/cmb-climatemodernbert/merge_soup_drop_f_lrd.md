@@ -28,7 +28,7 @@ El entrenamiento siguió el procedimiento de continued pretraining de ModernBERT
 - **Fase 1 (extension de contexto):** 3 épocas sobre los corpus 𝒜 (académico, ~1,28B tokens) y 𝒮 (sintético, ~0,14B tokens), con LR constante 3e-4, batch global 576, longitud de secuencia 8.192, masking MLM al 30%, optimizador StableAdamW y precisión BF16.
 - **Fase 2 (especializacion LRD):** 3 épocas adicionales con un esquema de decaimiento `1 − √t` desde LR 3e-4 hasta un factor final de 1e-3, sobre los mismos corpus.
 
-El merge se realizó con mergekit mediante promediado lineal uniforme de los pesos de los dos modelos entrenados (`A_CX_LRD` y `S_CX_LRD`), eliminando el corpus ℱ (Climate Web, ~5B tokens). Los checkpoints finales se convirtieron al formato HuggingFace Transformers. El entrenamiento se ejecutó en 4× NVIDIA A100 con MosaicML Composer.
+El merge se realizó con mergekit mediante promediado lineal uniforme de los pesos de los dos modelos entrenados (`A_CX_LRD` y `S_CX_LRD`), eliminando el corpus ℱ (Climate Web, ~5B tokens). Los checkpoints finales se convirtieron al formato Hugging Face Transformers. El entrenamiento se ejecutó en 4× NVIDIA A100 con MosaicML Composer.
 
 ## Capacidades
 
@@ -75,10 +75,10 @@ Como referencia del mismo protocolo de evaluación, el paper da estos valores:
 
 | Modelo | Parametros | Contexto | Rendimiento (F1 clima) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **Merge_Soup_drop_F_LRD** (este) | 149,7M | 8.192 | no disponible | no disponible | HuggingFace |
-| ModernBERT-Base | 149,7M | 8.192 | 73,5 | Apache 2.0 | HuggingFace |
-| ClimateBERT (distilroberta-base) | 82M | 512 | 72,1 | MIT | HuggingFace |
-| Merge_Soup_LRD (familia) | 149,7M | 8.192 | 76,3 | no disponible | HuggingFace |
+| **Merge_Soup_drop_F_LRD** (este) | 149,7M | 8.192 | no disponible | no disponible | Hugging Face |
+| ModernBERT-Base | 149,7M | 8.192 | 73,5 | Apache 2.0 | Hugging Face |
+| ClimateBERT (distilroberta-base) | 82M | 512 | 72,1 | MIT | Hugging Face |
+| Merge_Soup_LRD (familia) | 149,7M | 8.192 | 76,3 | no disponible | Hugging Face |
 
 La principal ventaja de este modelo frente a ClimateBERT es su contexto mucho mayor (8.192 vs 512 tokens) y su arquitectura moderna (ModernBERT). Frente a ModernBERT-Base, la adaptación al dominio climático mejora el rendimiento en tareas específicas, aunque la exclusión del corpus ℱ reduce la ganancia respecto al merge completo.
 
@@ -95,7 +95,7 @@ La principal ventaja de este modelo frente a ClimateBERT es su contexto mucho ma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CMB-ClimateModernBERT/Merge_Soup_drop_F_LRD
+- Modelo en Hugging Face: https://huggingface.co/CMB-ClimateModernBERT/Merge_Soup_drop_F_LRD
 - Repositorio original (sraj): https://huggingface.co/sraj/Merge_Drop_FWebEduv2
 - Colección ClimateModernBERT: https://huggingface.co/collections/sraj/climatemodernbert
 - Proyecto web: https://michaelyya.github.io/ClimateModernBERT/

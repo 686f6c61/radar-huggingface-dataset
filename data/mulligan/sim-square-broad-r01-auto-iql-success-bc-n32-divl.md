@@ -86,8 +86,8 @@ No se han publicado en la información disponible resultados de benchmarks tipo 
 
 | Modelo | Tarea | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sim-square-broad-r01-auto-iql-success-bc-n32-divl (este) | sim-square-broad | no disponible | no aplica | 51,13 %–54,18 % de éxito por semilla (media calculada 52,32 %) | apache-2.0 | HuggingFace, 5 semillas |
-| sim-square-broad-r01-auto-iql-success-bc-n32-idql (padre) | sim-square-broad | no disponible | no aplica | no disponible en la información consultada | apache-2.0 (heredada del ecosistema Mulligan) | HuggingFace, enlazado como modelo padre |
+| sim-square-broad-r01-auto-iql-success-bc-n32-divl (este) | sim-square-broad | no disponible | no aplica | 51,13 %–54,18 % de éxito por semilla (media calculada 52,32 %) | apache-2.0 | Hugging Face, 5 semillas |
+| sim-square-broad-r01-auto-iql-success-bc-n32-idql (padre) | sim-square-broad | no disponible | no aplica | no disponible en la información consultada | apache-2.0 (heredada del ecosistema Mulligan) | Hugging Face, enlazado como modelo padre |
 | Otras rondas de la campana (r00, r03) | sim-square-broad | no disponible | no aplica | no disponible | no disponible | referenciadas en el conjunto `sim-square-broad-r00-r03-eval` |
 
 La comparación directa más informativa es contra el padre IDQL, porque este modelo reutiliza exactamente su actor congelado y solo cambia el crítico; sin embargo, la model card de la ronda R1 no incluye la tasa de éxito del padre en la información disponible, por lo que no es posible cuantificar la mejora con los datos consultados.
@@ -107,12 +107,12 @@ La comparación directa más informativa es contra el padre IDQL, porque este mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r01-auto-iql-success-bc-n32-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r01-auto-iql-success-bc-n32-divl
 - Modelo padre (actor congelado): https://huggingface.co/mulligan/sim-square-broad-r01-auto-iql-success-bc-n32-idql
 - Dataset de teleoperación: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-baseline
 - Dataset de rollouts de política: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-auto-iql-n32-policy-rollouts
 - Dataset de evaluación: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval
-- Organización en HuggingFace: https://huggingface.co/mulligan
+- Organización en Hugging Face: https://huggingface.co/mulligan
 - Sitio del proyecto: https://mulligan.page
 - Arena de evaluaciones: https://arena.mulligan.page
 - Artefacto de W&B (seed-1): `self-improving/square-d1-dagger-mining-01a/iql_ddpg_bc_idql_divl_square_d1_20260901_002343_454375-final-step-250001:v0`, run `self-improving/square-d1-dagger-mining-01a/e9vegzhb`

@@ -19,7 +19,7 @@ Es relevante ahora por dos motivos: por un lado, ataca un problema clásico de l
 | Tipos de cuantizacion | no aplica (no hay pesos que cuantizar) |
 | Idiomas soportados | no disponible; el dominio de entrada es bytecode/instrucciones de Python, no lenguaje natural |
 | Licencia | `other` (sin texto de licencia en la model card) |
-| Formato de pesos | no disponible en detalle; artefacto cargable con `AutoTokenizer.from_pretrained(..., subfolder=...)`, por lo que se distribuye en formato de tokenizador de HuggingFace (no safetensors ni GGUF) |
+| Formato de pesos | no disponible en detalle; artefacto cargable con `AutoTokenizer.from_pretrained(..., subfolder=...)`, por lo que se distribuye en formato de tokenizador de Hugging Face (no safetensors ni GGUF) |
 
 Datos adicionales del artefacto:
 
@@ -43,7 +43,7 @@ Sobre esa base se reservan 64 IDs contiguos `<future_opcode_NN>` por tarea, uno 
 - Codificación atómica de 233 opcodes conocidos: cada instrucción recibe un ID único e indivisible.
 - Soporte de compatibilidad hacia delante mediante 64 slots `<future_opcode_NN>` por tarea, activables por adaptador.
 - Carga selectiva por subcarpeta (`subfolder="statement"` o `"segmentation"`) desde un único repositorio, con tokenizadores congelados e idénticos en cada ejecución.
-- Integración con el ecosistema HuggingFace `transformers` vía `AutoTokenizer`.
+- Integración con el ecosistema Hugging Face `transformers` vía `AutoTokenizer`.
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni generación de texto: no es un modelo generativo.
 - Cobertura multilingüe: no aplica; la entrada esperada es bytecode de Python.
 
@@ -94,7 +94,7 @@ Frente a tokenizadores de propósito general (BPE de uso común en modelos de c�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/syssec-utd/pylingual-shared-tokenizer-v1
+- Repositorio Hugging Face: https://huggingface.co/syssec-utd/pylingual-shared-tokenizer-v1
 - Dataset de ajuste: https://huggingface.co/datasets/syssec-utd/pylingual-shared-tokenizer-corpus-v1 (revisión `2dd36151733c372cc7409a77af7066b172ad6e76`)
 - Código: https://github.com/quinntyx/pylingual, rama `feat-shared-backbone-lora`, commit `1c20bee50f2109032045c2ddc75301a38290f480`
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo; las entradas devueltas por la búsqueda corresponden a perfiles de redes sociales y contenidos sin relación con el artefacto, por lo que se descartan.

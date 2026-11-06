@@ -84,7 +84,7 @@ La comparativa muestra que esta versión cuantizada es prácticamente indistingu
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/RedHatAI/starcoder2-15b-quantized.w8a8)
+- [Modelo en Hugging Face](https://huggingface.co/RedHatAI/starcoder2-15b-quantized.w8a8)
 - [Modelo original starcoder2-15b](https://huggingface.co/bigcode/starcoder2-15b)
 - [Variante w8a16](https://huggingface.co/RedHatAI/starcoder2-15b-quantized.w8a16)
 - [Repositorio de StarCoder2 (BigCode)](https://github.com/bigcode-project/starcoder2)

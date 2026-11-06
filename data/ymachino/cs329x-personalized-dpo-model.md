@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ymachino/cs329x-personalized-dpo-model es un modelo alojado en HuggingFace por el usuario ymachino del que apenas existe informacion publica. La model card es la plantilla generica autogenerada por HuggingFace, sin ninguna seccion completada: no se declara arquitectura, tamano, datos de entrenamiento, licencia ni idiomas. El repositorio tiene 0.0 GB de tamano y 0 descargas y 0 likes en el momento de la consulta, lo que sugiere que no contiene pesos publicados o que estos son de tamano despreciable.
+ymachino/cs329x-personalized-dpo-model es un modelo alojado en Hugging Face por el usuario ymachino del que apenas existe informacion publica. La model card es la plantilla generica autogenerada por Hugging Face, sin ninguna seccion completada: no se declara arquitectura, tamano, datos de entrenamiento, licencia ni idiomas. El repositorio tiene 0.0 GB de tamano y 0 descargas y 0 likes en el momento de la consulta, lo que sugiere que no contiene pesos publicados o que estos son de tamano despreciable.
 
 El identificador del modelo permite dos inferencias no confirmadas: el prefijo "cs329x" coincide con el codigo de un curso universitario (Stanford CS329X, centrado en procesamiento de lenguaje natural), lo que apunta a un proyecto academico; y el sufijo "personalized-dpo-model" sugiere un ajuste mediante DPO (Direct Preference Optimization) orientado a personalizacion. Ninguna de estas dos inferencias esta respaldada por documentacion del autor.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible. Sin conocer el numero de parametros no es posible calcular requisitos de memoria en ninguna cuantizacion.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no determinable.
-- Opciones de despliegue: no disponible. El repositorio esta etiquetado como compatible con endpoints de HuggingFace y con la libreria transformers, pero el tamano declarado de 0.0 GB indica que no hay pesos sustanciales publicados, por lo que no puede ejecutarse ninguna opcion de despliegue (vLLM, llama.cpp, Ollama, TGI) sin material adicional.
+- Opciones de despliegue: no disponible. El repositorio esta etiquetado como compatible con endpoints de Hugging Face y con la libreria transformers, pero el tamano declarado de 0.0 GB indica que no hay pesos sustanciales publicados, por lo que no puede ejecutarse ninguna opcion de despliegue (vLLM, llama.cpp, Ollama, TGI) sin material adicional.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ymachino/cs329x-personalized-dpo-model
+- Modelo en Hugging Face: https://huggingface.co/ymachino/cs329x-personalized-dpo-model
 - Articulo citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en Machine Learning): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ambiental de Machine Learning: https://mlco2.github.io/impact
 - Repositorio, paper, demo y codigo de entrenamiento del autor: no disponibles.

@@ -6,7 +6,7 @@
 
 Dawcade/assistant no es un modelo único, sino un repositorio de distribución de los archivos que la aplicación Dawcade —un DAW móvil para Android, iPhone y iPad— descarga para ejecutar su asistente en el propio dispositivo. El paquete contiene un adaptador LoRA en formato GGUF (rank 16, f16) entrenado por Dawcade sobre conversaciones de herramientas propias de la app y pensado para aplicarse sobre `google/gemma-4-E4B-it-qat-q4_0-unquantized`, junto con los componentes de síntesis de voz: un FastPitch en-US de NVIDIA exportado a ONNX con pesos de 16 bits, el diccionario de pronunciación CMUdict en su revisión de NVIDIA NeMo y una lista de heterónimos.
 
-La relevancia del repositorio es de ingeniería más que de investigación: documenta un patrón de empaquetado de IA on-device para móvil, con unpipeline declarado de text-to-speech, inferencia vía llama.cpp en el runtime de la app y verificación de integridad por SHA-256 de cada archivo antes de cargarlo. Los 34.881.536 parámetros que HuggingFace reporta a partir de safetensors corresponden a un componente del paquete, no al modelo base, que no se distribuye aquí.
+La relevancia del repositorio es de ingeniería más que de investigación: documenta un patrón de empaquetado de IA on-device para móvil, con unpipeline declarado de text-to-speech, inferencia vía llama.cpp en el runtime de la app y verificación de integridad por SHA-256 de cada archivo antes de cargarlo. Los 34.881.536 parámetros que Hugging Face reporta a partir de safetensors corresponden a un componente del paquete, no al modelo base, que no se distribuye aquí.
 
 El repositorio se publicó y actualizó el 26 de octubre de 2026, con 0 descargas y 0 likes en el momento de redactar esta ficha. La licencia es mixta (`other`) y cada archivo arrastra su propia condiciones: Apache 2.0 para el adaptador derivado de Gemma 4, CC-BY 4.0 para el FastPitch de NVIDIA y BSD para el diccionario de la Universidad Carnegie Mellon.
 
@@ -15,7 +15,7 @@ El repositorio se publicó y actualizó el 26 de octubre de 2026, con 0 descarga
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Adaptador LoRA (rank 16, f16) sobre transformer Gemma 4; componente TTS FastPitch (acústico no autorregresivo con predictor de duración y pitch) |
-| Parametros totales | 34.881.536 (dato de safetensors reportado por HuggingFace; corresponde a un componente del repo, no al modelo base) |
+| Parametros totales | 34.881.536 (dato de safetensors reportado por Hugging Face; corresponde a un componente del repo, no al modelo base) |
 | Parametros activos | no disponible (no consta que el modelo base sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q4_0 con QAT para el modelo base; LoRA en f16; ONNX con pesos de 16 bits para el TTS |
@@ -87,7 +87,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dawcade/assistant
+- Repositorio en Hugging Face: https://huggingface.co/Dawcade/assistant
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-unquantized
 - FastPitch original de NVIDIA: https://huggingface.co/nvidia/tts_en_fastpitch
 - Licencia CC-BY 4.0: https://creativecommons.org/licenses/by/4.0/

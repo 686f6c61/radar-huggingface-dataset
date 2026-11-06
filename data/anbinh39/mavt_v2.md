@@ -88,8 +88,8 @@ Ablaciones de canal en el paso 20k: sustituir `c_0` por su media da 15.0 dB; bar
 
 | Modelo | Números | PSNR | SSIM | LPIPS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MAVT v2 `bs_step38113_ema` | 11.300 | 27.76 | 0.790 | 0.130 | other | Checkpoint de investigación en HuggingFace |
-| MAVT v2 `df64_ema` | 19.492 | 28.43 | 0.813 | 0.114 | other | Checkpoint de ablación en HuggingFace |
+| MAVT v2 `bs_step38113_ema` | 11.300 | 27.76 | 0.790 | 0.130 | other | Checkpoint de investigación en Hugging Face |
+| MAVT v2 `df64_ema` | 19.492 | 28.43 | 0.813 | 0.114 | other | Checkpoint de ablación en Hugging Face |
 | AToken-So/c (referencia del paper) | 12.288 | 29.72 | 0.848 | 0.085 | no disponible | Referencia bibliográfica, no incluida en el repo |
 
 No se dispone de información sobre otros tokenizadores comparables en la documentación proporcionada.
@@ -109,7 +109,7 @@ No se dispone de información sobre otros tokenizadores comparables en la docume
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anbinh39/MAVT_V2
+- Hugging Face: https://huggingface.co/anbinh39/MAVT_V2
 - Repositorio del proyecto: https://github.com/Computer-Vision-Lab-LinhDang/Antokenizer
 - Rama del decoder: `feat/grain-splat-decoder` (commit `a5ab394`)
 - Documentación de flags: `src/mavt/grain_prior/README.md` dentro del repositorio

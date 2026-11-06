@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`calebdlopez/cnn-transformer-generation` es un repositorio de HuggingFace publicado por el usuario calebdlopez que contiene una implementación propia de una arquitectura denominada "Cnn Transformer" orientada a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card lo describe explícitamente como un punto de partida reproducible y un "checkpoint de inicialización" válido para pruebas de humo (smoke tests). El repositorio incluye el script `pipeline.py` como artefacto principal, junto con `config.json`, `training_args.json` y `model.safetensors`.
+`calebdlopez/cnn-transformer-generation` es un repositorio de Hugging Face publicado por el usuario calebdlopez que contiene una implementación propia de una arquitectura denominada "Cnn Transformer" orientada a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card lo describe explícitamente como un punto de partida reproducible y un "checkpoint de inicialización" válido para pruebas de humo (smoke tests). El repositorio incluye el script `pipeline.py` como artefacto principal, junto con `config.json`, `training_args.json` y `model.safetensors`.
 
 El tamaño es mínimo: los pesos en safetensors suman 49.600 parámetros, lo que sitúa al modelo en la escala "tiny". La arquitectura combina componentes convolucionales con atención estándar y una fusión mediante "co attention", con activación ReLU y normalización InstanceNorm. La receta de entrenamiento por defecto especifica el optimizador LAMB con un schedule polinómico, pero la model card advierte que son valores iniciales del script y no evidencia de una ejecución completada.
 
@@ -73,7 +73,7 @@ No se ha proporcionado información sobre modelos comparables con especificacion
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| calebdlopez/cnn-transformer-generation | 49.600 | no disponible | apache-2.0 | HuggingFace, implementacion propia | no publicados |
+| calebdlopez/cnn-transformer-generation | 49.600 | no disponible | apache-2.0 | Hugging Face, implementacion propia | no publicados |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,6 +91,6 @@ No se ha proporcionado información sobre modelos comparables con especificacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/calebdlopez/cnn-transformer-generation
+- Modelo en Hugging Face: https://huggingface.co/calebdlopez/cnn-transformer-generation
 - Archivos del repositorio: `pipeline.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo adicionales: no disponible en la información proporcionada

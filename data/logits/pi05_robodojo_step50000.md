@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `logits/pi05_robodojo_step50000` es un checkpoint intermedio de un modelo de visión-lenguaje-acción (VLA) basado en la arquitectura FlashVLA PI0.5, entrenado sobre el benchmark RoboDojo y exportado en el paso 50000. Ha sido publicado por el usuario `logits` en HuggingFace y utiliza la librería `lerobot`, especializada en robótica. Este tipo de modelos está diseñado para controlar robots manipuladores y móviles a partir de observaciones visuales y comandos en lenguaje natural, siguiendo la línea de los modelos π0 y π0.5 desarrollados por Physical Intelligence.
+El modelo `logits/pi05_robodojo_step50000` es un checkpoint intermedio de un modelo de visión-lenguaje-acción (VLA) basado en la arquitectura FlashVLA PI0.5, entrenado sobre el benchmark RoboDojo y exportado en el paso 50000. Ha sido publicado por el usuario `logits` en Hugging Face y utiliza la librería `lerobot`, especializada en robótica. Este tipo de modelos está diseñado para controlar robots manipuladores y móviles a partir de observaciones visuales y comandos en lenguaje natural, siguiendo la línea de los modelos π0 y π0.5 desarrollados por Physical Intelligence.
 
 El checkpoint tiene aproximadamente 4,93 mil millones de parámetros y un tamaño de repositorio de 19,7 GB, lo que sugiere que se trata de un modelo de tamaño medio-grande para tareas de robótica. Su relevancia radica en que representa un intento de aplicar la arquitectura π0.5 a un entorno de entrenamiento abierto como RoboDojo, lo que podría facilitar la reproducción y evaluación de políticas generalistas en robótica. Sin embargo, la información pública disponible es muy limitada: no se especifican detalles de entrenamiento, licencia, idiomas ni benchmarks, por lo que esta ficha se basa únicamente en los metadatos del repositorio y en el contexto general de los proyectos openpi y RoboDojo.
 
@@ -33,7 +33,7 @@ La arquitectura corresponde a la familia π0.5, un modelo de visión-lenguaje-ac
 ## Casos de uso
 
 - Investigación en robótica: este checkpoint puede utilizarse como punto de partida para estudiar el comportamiento de la arquitectura π0.5 en el benchmark RoboDojo, permitiendo comparar políticas en tareas de manipulación como recoger, colocar o apilar objetos.
-- Reproducción de experimentos: al estar disponible en HuggingFace con formato safetensors y librería lerobot, los investigadores pueden cargarlo y evaluarlo en sus propios entornos simulados o reales, siempre que dispongan del hardware adecuado.
+- Reproducción de experimentos: al estar disponible en Hugging Face con formato safetensors y librería lerobot, los investigadores pueden cargarlo y evaluarlo en sus propios entornos simulados o reales, siempre que dispongan del hardware adecuado.
 - Desarrollo de políticas generalistas: dado que π0.5 está diseñado para generalizar a escenarios no vistos, este checkpoint podría servir para probar la transferencia a tareas domésticas o de oficina, aunque no hay evidencia pública de su rendimiento en dichos escenarios.
 - Benchmarking de modelos VLA: RoboDojo es un benchmark estandarizado, por lo que este modelo puede ser uno de los candidatos a comparar con otros VLA en métricas de éxito de tarea, eficiencia de acciones y robustez.
 - Aprendizaje por imitación: el modelo puede ser fine-tuning con demostraciones adicionales para adaptarlo a tareas específicas, aprovechando su base preentrenada en RoboDojo.
@@ -66,7 +66,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logits/pi05_robodojo_step50000
+- Repositorio Hugging Face: https://huggingface.co/logits/pi05_robodojo_step50000
 - Repositorio RoboDojo (GitHub): https://github.com/robodojo-benchmark/RoboDojo
 - Repositorio openpi (GitHub): https://github.com/Physical-Intelligence/openpi
 - Blog de π0.5: https://www.pi.website/blog/pi05

@@ -86,8 +86,8 @@ La comparativa es orientativa: Qwen3-TTS ofrece un número de parámetros mayor 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/Qwen3-TTS-12Hz-1.7B-Base-FP8
-- Colección oficial Qwen3-TTS en HuggingFace: https://huggingface.co/collections/Qwen/qwen3-tts
+- Repositorio Hugging Face: https://huggingface.co/Rin247/Qwen3-TTS-12Hz-1.7B-Base-FP8
+- Colección oficial Qwen3-TTS en Hugging Face: https://huggingface.co/collections/Qwen/qwen3-tts
 - Modelo original en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Página del modelo en inferbase.ai: https://inferbase.ai/models/qwen3-tts-12hz-1-7b-base
 - Ficha en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/qwen3-tts-12hz-1.7b-base-qwen

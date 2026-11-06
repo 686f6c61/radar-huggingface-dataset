@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`isarodr04/flamingo-finetuned` es un repositorio experimental publicado en HuggingFace que contiene una implementacion en PyTorch de una arquitectura tipo Flamingo orientada a tareas de clasificacion. El autor (usuario `isarodr04`) lo describe explicitamente como un punto de partida de investigacion: el checkpoint `model.safetensors` incluido es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado sobre ningun benchmark. La model card declara la escala como "giant", pero el peso real registrado en el repositorio es de tan solo 49.600 parametros, una discrepancia que apunta a que el fichero publicado corresponde a una configuracion de prueba y no a la arquitectura completa descrita.
+`isarodr04/flamingo-finetuned` es un repositorio experimental publicado en Hugging Face que contiene una implementacion en PyTorch de una arquitectura tipo Flamingo orientada a tareas de clasificacion. El autor (usuario `isarodr04`) lo describe explicitamente como un punto de partida de investigacion: el checkpoint `model.safetensors` incluido es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado sobre ningun benchmark. La model card declara la escala como "giant", pero el peso real registrado en el repositorio es de tan solo 49.600 parametros, una discrepancia que apunta a que el fichero publicado corresponde a una configuracion de prueba y no a la arquitectura completa descrita.
 
 La relevancia de esta ficha es, por tanto, acotada y de caracter metodologico: sirve para ilustrar como se estructura un codebase de investigacion reproducible (script de inferencia, `config.json` con la arquitectura, `training_args.json` con la receta de entrenamiento por defecto y un checkpoint de inicializacion), y no como un modelo listo para produccion. No se declara ninguna puntuacion de benchmark, no se documenta el conjunto de datos de entrenamiento y no hay evidencia de un entrenamiento completado.
 
@@ -91,5 +91,5 @@ La comparacion no puede cuantificarse con los datos disponibles: no se han publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/isarodr04/flamingo-finetuned
+- Modelo en Hugging Face: https://huggingface.co/isarodr04/flamingo-finetuned
 - Busqueda web realizada: no se han encontrado papers, blogs, repositorios ni demos asociados a este modelo. Los unicos resultados devueltos fueron enlaces genericos al servicio Google Translate (https://translate.google.be/), sin relacion con el modelo y por tanto no relevantes.

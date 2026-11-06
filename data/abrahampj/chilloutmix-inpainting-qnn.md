@@ -77,7 +77,7 @@ No hay una comparativa directa publicada con otros modelos de difusion para NPU.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbrahamPJ/chilloutmix-inpainting-qnn
+- Modelo en Hugging Face: https://huggingface.co/AbrahamPJ/chilloutmix-inpainting-qnn
 - Checkpoint original: https://huggingface.co/5w4n/chilloutmix-inpainting
 - DreamUI (aplicacion): https://github.com/AbrahamPaulJ/dreamui
 - Local Dream (herramienta de conversion): https://github.com/xororz/local-dream

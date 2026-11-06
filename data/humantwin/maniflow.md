@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ManiFlow es una politica (policy) de imitacion para robotica desarrollada por la organizacion Humantwin, publicada en HuggingFace bajo el identificador `Humantwin/maniflow`. Se trata de un baseline de manipulacion diestra entrenado sobre datos de robot real de la plataforma Inspire-G1 (Stage-2), con dos variantes de tarea diferenciadas: `plastic` y `pill`. El modelo combina un encoder visual R3M con un backbone DiTX (variante de transformer de difusion/flow matching), y produce chunks de accion de 30 pasos a 30 Hz.
+ManiFlow es una politica (policy) de imitacion para robotica desarrollada por la organizacion Humantwin, publicada en Hugging Face bajo el identificador `Humantwin/maniflow`. Se trata de un baseline de manipulacion diestra entrenado sobre datos de robot real de la plataforma Inspire-G1 (Stage-2), con dos variantes de tarea diferenciadas: `plastic` y `pill`. El modelo combina un encoder visual R3M con un backbone DiTX (variante de transformer de difusion/flow matching), y produce chunks de accion de 30 pasos a 30 Hz.
 
 El problema que resuelve es la generacion de trayectorias de accion continuas y multi-articulacion para control de robot, cubriendo cuerpo completo (Body29, etiquetado como GMT) y manos diestras (Hand12, Inspire), es decir 41 dimensiones de accion por paso. No es un modelo de lenguaje: es un modelo de control por imitacion orientado a despliegue en robot real, con observaciones de imagen RGB y estado propioceptivo.
 
@@ -89,7 +89,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La ficha de
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Humantwin/maniflow | no disponible | no aplica (chunk 30) | solo train loss (plastic ~0,05; pill ~0,08) | Apache 2.0 | HuggingFace, 0 descargas |
+| Humantwin/maniflow | no disponible | no aplica (chunk 30) | solo train loss (plastic ~0,05; pill ~0,08) | Apache 2.0 | Hugging Face, 0 descargas |
 | Politicas de difusion tipo Diffusion Policy | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Politicas tipo ACT | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -109,6 +109,6 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Humantwin/maniflow
+- Repositorio Hugging Face: https://huggingface.co/Humantwin/maniflow
 - Organizacion del autor: https://huggingface.co/Humantwin
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre este modelo (los resultados obtenidos corresponden a herramientas de chat con LLM y no guardan relacion con ManiFlow).

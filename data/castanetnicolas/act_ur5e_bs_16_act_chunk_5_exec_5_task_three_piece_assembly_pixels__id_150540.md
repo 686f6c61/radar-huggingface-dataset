@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACT_UR5e_BS_16_Act_Chunk_5_Exec_5_TASK_three_piece_assembly_PIXELS__ID_150540 es una política de robótica entrenada con Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice secuencias cortas de acciones (chunks) en lugar de un único paso. El modelo lo publica el usuario de HuggingFace castanetnicolas y se distribuye dentro del ecosistema LeRobot de HuggingFace, con licencia Apache 2.0. El repositorio ocupa 0,2 GB y el checkpoint contiene 51.575.431 parámetros (unos 51,6 millones).
+ACT_UR5e_BS_16_Act_Chunk_5_Exec_5_TASK_three_piece_assembly_PIXELS__ID_150540 es una política de robótica entrenada con Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice secuencias cortas de acciones (chunks) en lugar de un único paso. El modelo lo publica el usuario de Hugging Face castanetnicolas y se distribuye dentro del ecosistema LeRobot de Hugging Face, con licencia Apache 2.0. El repositorio ocupa 0,2 GB y el checkpoint contiene 51.575.431 parámetros (unos 51,6 millones).
 
 La política resuelve una tarea concreta de ensamblaje: insertar la primera pieza en la base e insertar después la segunda pieza encima, según la descripción de la tarea del dataset de entrenamiento. Consume dos cámaras RGB de 84x84 píxeles (`agentview` y `robot0_eye_in_hand`) más un vector de estado de 9 dimensiones, y produce un vector de acción de 7 dimensiones, lo que corresponde a un efector final con 6 grados de libertad más pinza. El nombre del repositorio codifica la configuración de entrenamiento: batch size 16, chunk de acción 5 y horizonte de ejecución 5.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto / observaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT (esta ficha) | 51,6 M | Transformer con CVAE, chunking de acciones | 2 imagenes 84x84 + estado de 9 dim. | Apache 2.0 | HuggingFace Hub, via LeRobot |
+| ACT (esta ficha) | 51,6 M | Transformer con CVAE, chunking de acciones | 2 imagenes 84x84 + estado de 9 dim. | Apache 2.0 | Hugging Face Hub, via LeRobot |
 | Diffusion Policy | no disponible | Politica de difusion sobre acciones | Depende de la configuracion | no disponible | Implementaciones publicas en repos de investigacion |
-| Otras politicas ACT publicadas en el Hub de LeRobot | variable (orden de decenas de millones) | ACT | Depende del dataset | habitualmente Apache 2.0 | HuggingFace Hub |
-| Modelos VLA (por ejemplo, OpenVLA y familia) | orden de miles de millones | Vision-language-action | Instrucciones en lenguaje + vision | licencias especificas de cada modelo | HuggingFace Hub |
+| Otras politicas ACT publicadas en el Hub de LeRobot | variable (orden de decenas de millones) | ACT | Depende del dataset | habitualmente Apache 2.0 | Hugging Face Hub |
+| Modelos VLA (por ejemplo, OpenVLA y familia) | orden de miles de millones | Vision-language-action | Instrucciones en lenguaje + vision | licencias especificas de cada modelo | Hugging Face Hub |
 
 No se dispone de cifras comparativas de rendimiento entre estas alternativas en la informacion proporcionada. La diferencia principal frente a los modelos VLA es de escala y de alcance: esta politica es un modelo especializado de 51,6 M de parametros para una sola tarea, sin entrada de lenguaje ni generalizacion a instrucciones nuevas.
 
@@ -95,7 +95,7 @@ No se dispone de cifras comparativas de rendimiento entre estas alternativas en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_16_Act_Chunk_5_Exec_5_TASK_three_piece_assembly_PIXELS__ID_150540
+- Modelo en Hugging Face: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_16_Act_Chunk_5_Exec_5_TASK_three_piece_assembly_PIXELS__ID_150540
 - Dataset de entrenamiento: https://huggingface.co/datasets/castanetnicolas/mimicgen_three_piece_assembly_d1_image84
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=castanetnicolas/mimicgen_three_piece_assembly_d1_image84
 - Paper de ACT: https://huggingface.co/papers/2304.13705

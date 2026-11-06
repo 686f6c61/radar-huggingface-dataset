@@ -87,6 +87,6 @@ Comparado con su modelo base, finbot-slm mejora sustancialmente en su dominio es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fofiguer/finbot-slm
+- Modelo en Hugging Face: https://huggingface.co/Fofiguer/finbot-slm
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct
 - No se han encontrado enlaces a papers, blogs, repositorios de código ni demos adicionales en la información disponible.

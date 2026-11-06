@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AU-Guided-FER es un framework de reconocimiento de expresiones faciales (FER, por sus siglas en inglés) guiado por unidades de acción (Action Units, AU), desarrollado por el investigador twuan (cuenta de HuggingFace) y publicado también bajo el nombre de wuanhi en GitHub. El modelo aborda el problema del sesgo de anotación entre distintos conjuntos de datos de FER mediante un enfoque de adaptación de dominio no supervisada denominado AdaFER, que utiliza la detección de AUs como información objetiva y transversal para alinear los dominios de origen y destino.
+AU-Guided-FER es un framework de reconocimiento de expresiones faciales (FER, por sus siglas en inglés) guiado por unidades de acción (Action Units, AU), desarrollado por el investigador twuan (cuenta de Hugging Face) y publicado también bajo el nombre de wuanhi en GitHub. El modelo aborda el problema del sesgo de anotación entre distintos conjuntos de datos de FER mediante un enfoque de adaptación de dominio no supervisada denominado AdaFER, que utiliza la detección de AUs como información objetiva y transversal para alinear los dominios de origen y destino.
 
-La relevancia de este modelo radica en que las expresiones faciales son el resultado de combinaciones de AUs, que son movimientos musculares faciales objetivos y medibles. Al guiar el aprendizaje con AUs, el sistema mejora la generalización entre datasets con diferentes etiquetas de emoción, un problema habitual en la práctica. El repositorio de HuggingFace contiene los pesos del modelo (1,8 GB) con licencia MIT, aunque la model card es mínima y no especifica arquitectura, tamaño de parámetros ni detalles de entrenamiento. La información técnica disponible proviene principalmente del artículo de arXiv (2012.10078) y de la publicación en MDPI Applied Sciences (2022).
+La relevancia de este modelo radica en que las expresiones faciales son el resultado de combinaciones de AUs, que son movimientos musculares faciales objetivos y medibles. Al guiar el aprendizaje con AUs, el sistema mejora la generalización entre datasets con diferentes etiquetas de emoción, un problema habitual en la práctica. El repositorio de Hugging Face contiene los pesos del modelo (1,8 GB) con licencia MIT, aunque la model card es mínima y no especifica arquitectura, tamaño de parámetros ni detalles de entrenamiento. La información técnica disponible proviene principalmente del artículo de arXiv (2012.10078) y de la publicación en MDPI Applied Sciences (2022).
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ El framework AdaFER propuesto en el paper de 2020 (arXiv:2012.10078) se compone 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El paper de arXiv y el articulo de MDPI reportan experimentos en datasets como FER2013, RAF-DB y AffectNet, pero no se incluyen cifras concretas en los materiales accesibles desde la ficha de HuggingFace. Se recomienda consultar el articulo original para obtener metricas detalladas de precision y comparaciones con otros metodos.
+No se han publicado resultados de benchmarks en la informacion disponible. El paper de arXiv y el articulo de MDPI reportan experimentos en datasets como FER2013, RAF-DB y AffectNet, pero no se incluyen cifras concretas en los materiales accesibles desde la ficha de Hugging Face. Se recomienda consultar el articulo original para obtener metricas detalladas de precision y comparaciones con otros metodos.
 
 ## Requisitos de hardware
 
@@ -56,8 +56,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AU-Guided-FER (este) | FER con AUs y adaptacion de dominio | no disponible | no aplica | MIT | HuggingFace, GitHub |
-| EmoNeXt-FER-Optimized (del mismo autor) | FER basado en arquitectura NeXt | no disponible | no aplica | MIT | HuggingFace |
+| AU-Guided-FER (este) | FER con AUs y adaptacion de dominio | no disponible | no aplica | MIT | Hugging Face, GitHub |
+| EmoNeXt-FER-Optimized (del mismo autor) | FER basado en arquitectura NeXt | no disponible | no aplica | MIT | Hugging Face |
 | Modelos clasicos de FER (VGG, ResNet fine-tuned) | FER supervisado | 20-50 M | no aplica | variada | multiples repos |
 
 No se dispone de datos de rendimiento comparativo publicados en la informacion proporcionada. La comparativa se limita a aspectos cualitativos: AU-Guided-FER destaca por su capacidad de adaptacion de dominio, mientras que los modelos clasicos requieren reentrenamiento o fine-tuning por dataset.
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativo publicados en la informacion p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/twuan/AU-Guided-FER
+- Hugging Face: https://huggingface.co/twuan/AU-Guided-FER
 - GitHub (repositorio del codigo): https://github.com/wuanhi/AU-Guided-FER
 - Paper en arXiv: https://arxiv.org/abs/2012.10078
 - Articulo en MDPI Applied Sciences: https://www.mdpi.com/2076-3417/12/9/4366

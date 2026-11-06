@@ -25,7 +25,7 @@ Su relevancia es metodologica: documenta como se ajusta con RL un modelo con buc
 | Decodificacion entrenada | Muestreo de profundidad de salida, profundidad minima 1, truncado real de KV (Dense-Ragged) |
 | Pasos de optimizacion | 145 (AdamW) |
 | Codigo requerido | `modeling_ouro.py` y `configuration_ouro.py` (incluidos en `model_code/` y en `training_source.tar.gz`) |
-| Tamano del repositorio | 0,0 GB segun los metadatos de HuggingFace |
+| Tamano del repositorio | 0,0 GB segun los metadatos de Hugging Face |
 | Fecha de publicacion | 13 de octubre de 2026 |
 
 ## Arquitectura y entrenamiento
@@ -80,7 +80,7 @@ La model card referencia una evaluacion sobre la suite AIME mediante `python -m 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad de pesos |
 |---|---|---|---|---|---|
 | Este checkpoint (`ouro-1.4b-thinking-grpo-l1exact-native4-math-154711-20261009-ragged-rl`) | 1,4B | no disponible | Ajuste RL de investigacion (GRPO con rollouts ragged) sobre un modelo con bucle | no disponible | Guardado nativo de Hugging Face en FP32, requiere `trust_remote_code=True` |
-| `ByteDance/Ouro-1.4B-Thinking` | 1,4B | no disponible en esta informacion | Modelo base con bucle y salida temprana | no disponible en esta informacion | Publicado por ByteDance en HuggingFace |
+| `ByteDance/Ouro-1.4B-Thinking` | 1,4B | no disponible en esta informacion | Modelo base con bucle y salida temprana | no disponible en esta informacion | Publicado por ByteDance en Hugging Face |
 | `Qwen2.5-1.5B-Instruct` | 1,54B | 32.768 tokens | Transformer denso, ajustado para instrucciones | Apache 2.0 | safetensors y GGUF |
 | `Llama-3.2-1B-Instruct` | 1,24B | 128.000 tokens | Transformer denso, ajustado para instrucciones | Licencia comunitaria de Llama 3.2 | safetensors y GGUF |
 
@@ -102,7 +102,7 @@ La comparacion es nominal (misma clase de tamano): este checkpoint es un artefac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-grpo-l1exact-native4-math-154711-20261009-ragged-rl
+- Repositorio en Hugging Face: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-grpo-l1exact-native4-math-154711-20261009-ragged-rl
 - Modelo base: https://huggingface.co/ByteDance/Ouro-1.4B-Thinking
 - Metricas de entrenamiento en W&B: https://wandb.ai/jiahaozhangg-carnegie-mellon-university/ouro-1.4b-grpo-rltt-math/runs/grpo-l1exact-native4-ragged-154711-20261009-ragged-rl
 - Contenido interno del repositorio: `run_manifest.json`, `run_config.json`, `launch_code/`, `model_code/`, `training_source.tar.gz`, checkpoints `global_step_N/`

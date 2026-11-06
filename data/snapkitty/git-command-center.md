@@ -64,5 +64,5 @@ No disponible. No existe información sobre modelos comparables, ya que el artef
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/git-command-center
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/git-command-center
 - No se encontraron papers, blogs, demos o repositorios adicionales en la búsqueda web (los resultados obtenidos son irrelevantes, relacionados con Telekom Mail).

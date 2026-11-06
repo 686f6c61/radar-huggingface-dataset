@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Canadian es un ajuste fino (fine-tuning) del modelo Whisper tiny de OpenAI, realizado por el usuario Nuttyman y publicado en HuggingFace. El modelo base, openai/whisper-tiny, es un modelo de reconocimiento automatico de voz (ASR) basado en arquitectura encoder-decoder transformer con 37,76 millones de parametros. Este derivado se ha entrenado especificamente sobre un dataset de ingles canadiense (Canadian English) con el objetivo de mejorar la transcripcion de audio con acento canadiense, un caso de uso habitual cuando el modelo original muestra un WER elevado en variantes regionales del ingles.
+Whisper tiny Canadian es un ajuste fino (fine-tuning) del modelo Whisper tiny de OpenAI, realizado por el usuario Nuttyman y publicado en Hugging Face. El modelo base, openai/whisper-tiny, es un modelo de reconocimiento automatico de voz (ASR) basado en arquitectura encoder-decoder transformer con 37,76 millones de parametros. Este derivado se ha entrenado especificamente sobre un dataset de ingles canadiense (Canadian English) con el objetivo de mejorar la transcripcion de audio con acento canadiense, un caso de uso habitual cuando el modelo original muestra un WER elevado en variantes regionales del ingles.
 
 Su relevancia es principalmente practica y de nicho: demuestra como un modelo ligero como Whisper tiny puede adaptarse a acentos concretos con recursos modestos (4000 pasos de entrenamiento, lotes de tamaño 8). El modelo obtiene un WER de 21,37 % sobre el split de test del dataset de ingles canadiense y una perdida de validacion de 0,4195. Esta publicado bajo licencia Apache 2.0, lo que permite su uso comercial sin restricciones significativas.
 
@@ -29,7 +29,7 @@ Los hiperparametros de entrenamiento publicados son: learning rate de 1e-06 con 
 
 - Transcripcion automatica de voz en ingles, con especial foco en audio con acento canadiense.
 - Generacion de transcripciones de texto a partir de audio mediante el pipeline `automatic-speech-recognition` de la libreria Transformers.
-- Compatibilidad con el ecosistema estandar de HuggingFace (safetensors, endpoints compatibles).
+- Compatibilidad con el ecosistema estandar de Hugging Face (safetensors, endpoints compatibles).
 - No soporta tool calling, agentes ni razonamiento multi-paso: es un modelo ASR puro.
 - No dispone de capacidades de vision, audio generativo ni traduccion documentadas en la ficha.
 
@@ -67,7 +67,7 @@ No se han publicado comparaciones con el modelo base whisper-tiny ni con otros m
 - VRAM estimada para inferencia: del orden de cientos de MB; con 37,76 millones de parametros en FP32 el modelo ocupa aproximadamente 150 MB de pesos, por lo que cualquier GPU moderna o incluso CPU es suficiente. No hay cifras oficiales publicadas.
 - GPU recomendadas: no requiere GPU dedicada; es ejecutable en CPU. Para procesamiento masivo de audio, cualquier GPU de consumo (GTX 1650, RTX 3060, RTX 4090) o de datacenter sobra con diferencia.
 - Cabe con holgura en cualquier GPU de consumo, incluidas las integradas de gama baja, y en dispositivos sin GPU.
-- Opciones de despliegue: libreria Transformers de HuggingFace (pipeline `automatic-speech-recognition`); por su compatibilidad con la arquitectura Whisper, es probable que funcione con whisper.cpp y herramientas derivadas, aunque no se documenta en la ficha. No hay informacion sobre vLLM, TGI u Ollama.
+- Opciones de despliegue: libreria Transformers de Hugging Face (pipeline `automatic-speech-recognition`); por su compatibilidad con la arquitectura Whisper, es probable que funcione con whisper.cpp y herramientas derivadas, aunque no se documenta en la ficha. No hay informacion sobre vLLM, TGI u Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ Nota: el modelo base whisper-tiny es la alternativa directa sin adaptacion regio
 ## Limitaciones y advertencias
 
 - El WER de 21,37 % es elevado para produccion critica: aproximadamente 1 de cada 5 palabras transcritas puede ser erronea. Conviene validar con audio propio antes de desplegar.
-- Resultados no verificados: las metricas provienen del model-index declarado por el autor y no han pasado verificacion de HuggingFace.
+- Resultados no verificados: las metricas provienen del model-index declarado por el autor y no han pasado verificacion de Hugging Face.
 - Posible sobreajuste: la perdida de entrenamiento cae de forma marcada mientras la validacion se estanca y el WER empeora ligeramente tras el paso 1000; el checkpoint final puede no ser el optimo.
 - La model card esta generada automaticamente y carece de documentacion sobre usos previstos, limitaciones y composicion del dataset ("More information needed").
 - Restringido al ingles; no es util para otros idiomas ni para hablantes sin acento canadiense sin evaluacion previa.
@@ -93,6 +93,6 @@ Nota: el modelo base whisper-tiny es la alternativa directa sin adaptacion regio
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/Nuttyman/whisper-tiny_to_candian_accent_oct30_2ndrun
+- Ficha del modelo en Hugging Face: https://huggingface.co/Nuttyman/whisper-tiny_to_candian_accent_oct30_2ndrun
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - No se han encontrado enlaces a papers, blogs, repositorios externos ni demos en la informacion disponible.

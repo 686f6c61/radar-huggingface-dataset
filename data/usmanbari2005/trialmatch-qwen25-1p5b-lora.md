@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`usmanbari2005/trialmatch-qwen25-1p5b-lora` es un adaptador LoRA alojado en HuggingFace por el usuario `usmanbari2005`. Por el nombre del repositorio, se trata de un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre el modelo base Qwen2.5-1.5B, orientado presumiblemente a tareas de emparejamiento entre pacientes y ensayos clínicos ("trial match"). El modelo base Qwen2.5-1.5B es un transformer decoder-only de la familia Qwen2.5 desarrollada por Alibaba Cloud, con 1.500 millones de parámetros y una ventana de contexto de 32.768 tokens en su configuración estándar.
+`usmanbari2005/trialmatch-qwen25-1p5b-lora` es un adaptador LoRA alojado en Hugging Face por el usuario `usmanbari2005`. Por el nombre del repositorio, se trata de un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre el modelo base Qwen2.5-1.5B, orientado presumiblemente a tareas de emparejamiento entre pacientes y ensayos clínicos ("trial match"). El modelo base Qwen2.5-1.5B es un transformer decoder-only de la familia Qwen2.5 desarrollada por Alibaba Cloud, con 1.500 millones de parámetros y una ventana de contexto de 32.768 tokens en su configuración estándar.
 
 La relevancia de este repositorio es limitada en el momento de redactar esta ficha: cuenta con 0 descargas y 1 like, no declara licencia, idiomas ni pipeline, y no publica información sobre el dataset de entrenamiento, hiperparámetros del LoRA ni resultados de evaluación. La fecha de creación indicada (2026-11-05) es posterior a la fecha actual, lo que sugiere un posible error en los metadatos o un repositorio programado.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| trialmatch-qwen25-1p5b-lora | 1,5B (base) + LoRA | 32.768 (base) | no disponible | HuggingFace, 0 descargas |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen2.5-1.5B (base) | 1,5B | 32.768 | Apache 2.0 | HuggingFace |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 | Apache 2.0 | HuggingFace |
+| trialmatch-qwen25-1p5b-lora | 1,5B (base) + LoRA | 32.768 (base) | no disponible | Hugging Face, 0 descargas |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen2.5-1.5B (base) | 1,5B | 32.768 | Apache 2.0 | Hugging Face |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento del adaptador que permitan una comparación cuantitativa con estas alternativas.
 
@@ -80,8 +80,8 @@ No se dispone de datos de rendimiento del adaptador que permitan una comparació
 
 ## Enlaces
 
-- [HuggingFace: usmanbari2005/trialmatch-qwen25-1p5b-lora](https://huggingface.co/usmanbari2005/trialmatch-qwen25-1p5b-lora)
-- [Qwen2.5-1.5B en HuggingFace](https://huggingface.co/Qwen/Qwen2.5-1.5B)
-- [Qwen2.5-1.5B-Instruct en HuggingFace](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)
+- [Hugging Face: usmanbari2005/trialmatch-qwen25-1p5b-lora](https://huggingface.co/usmanbari2005/trialmatch-qwen25-1p5b-lora)
+- [Qwen2.5-1.5B en Hugging Face](https://huggingface.co/Qwen/Qwen2.5-1.5B)
+- [Qwen2.5-1.5B-Instruct en Hugging Face](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)
 - [Repositorio Qwen2.5 en GitHub](https://github.com/QwenLM/Qwen2.5)
 - [Documentación de PEFT (LoRA)](https://huggingface.co/docs/peft)

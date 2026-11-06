@@ -49,7 +49,7 @@ No hay informacion en la documentacion disponible sobre el dataset de entrenamie
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de HuggingFace incluyen evaluaciones de MMLU, HumanEval, GSM8K u otras, ni comparaciones con el modelo original sin podar.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de Hugging Face incluyen evaluaciones de MMLU, HumanEval, GSM8K u otras, ni comparaciones con el modelo original sin podar.
 
 ## Requisitos de hardware
 
@@ -85,7 +85,7 @@ No hay datos de rendimiento que permitan una comparacion cuantitativa con altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/OpenAI_GPT-OSS-120B_Pruned_REAP_58B-SafeTensors-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/OpenAI_GPT-OSS-120B_Pruned_REAP_58B-SafeTensors-GGUF
 - Modelo base (safetensors): https://huggingface.co/12bitmisfit/OpenAI_GPT-OSS-120B_Pruned_REAP_58B-SafeTensors
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/OpenAI_GPT-OSS-120B_Pruned_REAP_58B-SafeTensors-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#OpenAI_GPT-OSS-120B_Pruned_REAP_58B-SafeTensors-GGUF

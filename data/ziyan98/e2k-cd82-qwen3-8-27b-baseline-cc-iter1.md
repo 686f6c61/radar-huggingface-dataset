@@ -6,7 +6,7 @@ E2K-cd82-Qwen3.8-27B-baseline-cc-iter1 es un checkpoint de investigación public
 
 El experimento estudia si el conocimiento verificado extraído de las propias partidas de un modelo puede escribirse en sus pesos mediante filas supervisadas y mejorarse después con RL sobre episodios multi-paso reales. En este brazo concreto no se usaron filas de SFT: el checkpoint es el estado del modelo tras 12 rollouts de Dr.GRPO (iteración 1 de Megatron). El autor advierte explícitamente de que las diferencias entre brazos son de centésimas en retorno conformado (shaped return) y que no debe interpretarse como una mejora de propósito general.
 
-La relevancia es por tanto metodológica y de infraestructura: documenta una pila completa de RL a gran escala (slime v0.3.2 + Megatron-LM TP4 × PP4 + 16 motores de rollout SGLang) sobre 4 nodos GH200 de Isambard-AI, con conversión de pesos Megatron torch_dist a HuggingFace verificada bit a bit contra el checkpoint base. El repositorio pesa 55,6 GB y se distribuye con licencia Apache 2.0.
+La relevancia es por tanto metodológica y de infraestructura: documenta una pila completa de RL a gran escala (slime v0.3.2 + Megatron-LM TP4 × PP4 + 16 motores de rollout SGLang) sobre 4 nodos GH200 de Isambard-AI, con conversión de pesos Megatron torch_dist a Hugging Face verificada bit a bit contra el checkpoint base. El repositorio pesa 55,6 GB y se distribuye con licencia Apache 2.0.
 
 ## Especificaciones técnicas
 
@@ -46,7 +46,7 @@ La recogida de partidas se hizo con Claude Code CLI 2.1.270 manejando las herram
 - Estudio de internalización de conocimiento: comparar este checkpoint con los brazos que sí incluyen filas SFT para medir si el conocimiento verificado escrito en los pesos se traduce en mejora de retorno conformado en episodios reales.
 - Investigación en agentes sobre ARC-AGI-3: el modelo ya ha sido evaluado en rollouts de 32 episodios del juego `cd82-fb555c5d`, por lo que resulta un punto de partida directo para estudiar estrategias de exploración y uso de herramientas.
 - Validación de pipelines de RL a gran escala: la carpeta `megatron/` incluye `args.json`, `common.pt`, `latest_checkpointed_iteration.txt` y cursores de dataset, lo que permite reconstruir el estado de entrenamiento (sin momentos del optimizador) con `convert_hf_to_torch_dist.py`.
-- Desarrollo y prueba de conversores Megatron ↔ HuggingFace: el repositorio sirve como caso de prueba de ida y vuelta, ya que el conversor reproduce bit a bit el checkpoint base y se incluye `SHA256SUMS` sobre todos los ficheros.
+- Desarrollo y prueba de conversores Megatron ↔ Hugging Face: el repositorio sirve como caso de prueba de ida y vuelta, ya que el conversor reproduce bit a bit el checkpoint base y se incluye `SHA256SUMS` sobre todos los ficheros.
 - Ablaciones de hiperparámetros de Dr.GRPO: batch global 4, 8 pasos de optimizador por rollout y lr 5e-6 son valores de referencia reutilizables en estudios de sensibilidad sobre el mismo entorno.
 - Auditoría de latencia y coste de inferencia agéntica: los registros de tokens de pensamiento (p50 hasta 5.859) permiten dimensionar el coste de despliegues con thinking largo en bucles de herramientas.
 - Docencia y divulgación técnica: ejemplo verificable de cadena completa slime + Megatron-LM + SGLang sobre GH200 con trazabilidad de procedencia de pesos.
@@ -89,8 +89,8 @@ Contexto aportado por el autor: las columnas de turnos recitados y turnos con re
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| E2K-cd82-Qwen3.8-27B-baseline-cc-iter1 | 27,78 B | No disponible | Dr.GRPO RL sobre un juego ARC-AGI-3, sin SFT, solo texto | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.8-27B (base) | 27,78 B (mismo conjunto de 1199 tensores) | No disponible | No disponible en esta ficha | Apache 2.0 | HuggingFace (modelo base referenciado) |
+| E2K-cd82-Qwen3.8-27B-baseline-cc-iter1 | 27,78 B | No disponible | Dr.GRPO RL sobre un juego ARC-AGI-3, sin SFT, solo texto | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.8-27B (base) | 27,78 B (mismo conjunto de 1199 tensores) | No disponible | No disponible en esta ficha | Apache 2.0 | Hugging Face (modelo base referenciado) |
 | Otras alternativas de tamaño similar o misma tarea | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación relevante es contra el propio modelo base: este checkpoint conserva formas y dtypes, copia sin cambios la torre visual y la cabeza `mtp.*`, y solo difiere en el estado entrenado de la pila de texto y `lm_head`. No se dispone de datos de benchmarks estándar de ninguno de los dos en la información proporcionada, por lo que no es posible comparar rendimiento general.
@@ -110,7 +110,7 @@ La comparación relevante es contra el propio modelo base: este checkpoint conse
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-baseline-cc-iter1
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-baseline-cc-iter1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de RL referenciado en la model card: https://huggingface.co/datasets/ziyan98/E2K-cd82-rl- (la URL aparece truncada en la información proporcionada)
 - Repositorio, papers, blogs o demos adicionales: no disponibles en la información proporcionada. Los resultados de búsqueda web recibidos no contienen enlaces pertinentes al modelo.

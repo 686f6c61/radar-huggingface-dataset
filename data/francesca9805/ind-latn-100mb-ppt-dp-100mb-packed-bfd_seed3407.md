@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/ind-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/ind_latn_100mb`, desarrollado por el usuario de HuggingFace francesca9805 (vinculado a la Universidad de Groningen segun la traza de Weights & Biases). Se trata de un modelo de generacion de texto de tipo transformer decoder-only con etiqueta de arquitectura `gpt2`, orientado al idioma indonesio en escritura latina (de ahi el prefijo `ind-latn`), y entrenado mediante Supervised Fine-Tuning (SFT) con la libreria TRL de HuggingFace.
+El modelo `francesca9805/ind-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/ind_latn_100mb`, desarrollado por el usuario de Hugging Face francesca9805 (vinculado a la Universidad de Groningen segun la traza de Weights & Biases). Se trata de un modelo de generacion de texto de tipo transformer decoder-only con etiqueta de arquitectura `gpt2`, orientado al idioma indonesio en escritura latina (de ahi el prefijo `ind-latn`), y entrenado mediante Supervised Fine-Tuning (SFT) con la libreria TRL de Hugging Face.
 
 El modelo cuenta con 124.770.816 parametros (aproximadamente 124,8 millones), lo que lo situa en la categoria de modelos pequenos o "tiny", muy por debajo de los grandes modelos de lenguaje actuales. Esto lo hace adecuado para escenarios de investigacion, experimentacion academica y despliegue en hardware muy limitado, mas que para tareas de razonamiento complejo o produccion de alta exigencia. El repositorio ocupa unicamente 0,3 GB.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/ind-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407 | 124,8 M | no disponible | no disponible | HuggingFace |
-| goldfish-models/ind_latn_100mb (modelo base) | no disponible (misma familia) | no disponible | no disponible | HuggingFace |
-| francesca9805/ind-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | no disponible (misma familia) | no disponible | no disponible | HuggingFace |
-| fpadovani/isl-latn-100mb-ppt-Dp-100mb_seed10 (LLM Explorer) | 124,8 M | no disponible | no disponible | HuggingFace / LLM Explorer |
+| francesca9805/ind-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407 | 124,8 M | no disponible | no disponible | Hugging Face |
+| goldfish-models/ind_latn_100mb (modelo base) | no disponible (misma familia) | no disponible | no disponible | Hugging Face |
+| francesca9805/ind-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | no disponible (misma familia) | no disponible | no disponible | Hugging Face |
+| fpadovani/isl-latn-100mb-ppt-Dp-100mb_seed10 (LLM Explorer) | 124,8 M | no disponible | no disponible | Hugging Face / LLM Explorer |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la informacion proporcionada, ya que ninguna publica resultados de benchmarks. La comparacion se limita por tanto a parametros, procedencia y disponibilidad.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ind-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ind-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/ind_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Traza de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/0gfhlkfv

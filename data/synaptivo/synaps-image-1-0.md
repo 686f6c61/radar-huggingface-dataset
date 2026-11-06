@@ -79,7 +79,7 @@ Coste en prompts con texto:
 
 | Modelo | Parametros | Contexto | Texto en imagen | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Synaps-Image 1.0 | No aplica (toolkit sobre FLUX 3 Klein + PUP 9B + Qwen3.8-27B) | No disponible | 1-CER 93,70%, exact match 96,27% | Apache-2.0 (codigo) | HuggingFace (0 descargas, 0 likes) |
+| Synaps-Image 1.0 | No aplica (toolkit sobre FLUX 3 Klein + PUP 9B + Qwen3.8-27B) | No disponible | 1-CER 93,70%, exact match 96,27% | Apache-2.0 (codigo) | Hugging Face (0 descargas, 0 likes) |
 | FLUX 3 Image Klein + PUP (stock) | PUP 9B + generador | No disponible | 1-CER 85,05%, exact match 94,54% | FLUX Kommunity License | Black Forest Labs |
 | Generadores text-to-image sin bucle OCR | No disponible | No disponible | No disponible | Variable | Variable |
 
@@ -101,7 +101,7 @@ La comparativa se limita al baseline directo del propio toolkit porque no se han
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Synaptivo/Synaps-Image-1.0
+- Hugging Face: https://huggingface.co/Synaptivo/Synaps-Image-1.0
 - Modelo base FLUX 3 Image Klein: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Modelo base PUP: https://huggingface.co/black-forest-labs/flux-3-image-klein-pup
 - Verificador por defecto: https://huggingface.co/Qwen/Qwen3.8-27B

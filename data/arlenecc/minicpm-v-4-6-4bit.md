@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arlenecc/MiniCPM-V-4.6-4bit | 1.300.428.016 | no disponible | MLX safetensors 4-bit | Apache 2.0 | HuggingFace |
-| openbmb/MiniCPM-V-4.6 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| arlenecc/MiniCPM-V-4.6-4bit | 1.300.428.016 | no disponible | MLX safetensors 4-bit | Apache 2.0 | Hugging Face |
+| openbmb/MiniCPM-V-4.6 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otros modelos multimodales de ~1-2B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de alternativas en la informacion proporcionada para establecer una comparativa cuantitativa rigurosa.
@@ -79,6 +79,6 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arlenecc/MiniCPM-V-4.6-4bit
+- Repositorio Hugging Face: https://huggingface.co/arlenecc/MiniCPM-V-4.6-4bit
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.6
 - Libreria mlx-vlm: no disponible enlace directo en la informacion proporcionada

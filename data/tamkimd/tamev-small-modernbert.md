@@ -84,9 +84,9 @@ La información disponible no incluye especificaciones ni resultados de los mode
 
 | Modelo | Parametros | Contexto | Resultado declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TAMEV-Small-ModernBERT | 149,41 M | no disponible | Top-1 70,65 % / Top-3 95,09 % en suite propia | Apache 2.0 | HuggingFace, 0 descargas |
-| ModernBERT-base (backbone) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| BERT-base (referencia histórica del encoder) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| TAMEV-Small-ModernBERT | 149,41 M | no disponible | Top-1 70,65 % / Top-3 95,09 % en suite propia | Apache 2.0 | Hugging Face, 0 descargas |
+| ModernBERT-base (backbone) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| BERT-base (referencia histórica del encoder) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | TypeSafe Jev, Kev, Laya, SemIf (citados como competidores) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -105,13 +105,13 @@ La información disponible no incluye especificaciones ni resultados de los mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tamkimd/tamev-small-modernbert
+- Modelo en Hugging Face: https://huggingface.co/Tamkimd/tamev-small-modernbert
 - Backbone: https://huggingface.co/answerdotai/ModernBERT-base
 - Repositorio GitHub de TAMEV (citado en la model card): https://github.com/tamkimd/tamev
 - Paper de ModernBERT (arXiv): https://arxiv.org/abs/2412.13663
 - Paper de ModernBERT (ACL Anthology): https://aclanthology.org/2025.acl-long.127/
 - Repositorio GitHub de ModernBERT: https://github.com/AnswerDotAI/ModernBERT
-- Colección ModernBERT en HuggingFace: https://huggingface.co/collections/lightonai/modernbert-67adcc36b4d53331c35533b3
+- Colección ModernBERT en Hugging Face: https://huggingface.co/collections/lightonai/modernbert-67adcc36b4d53331c35533b3
 - Dataset banking77: https://huggingface.co/datasets/legacy-datasets/banking77
 - Dataset BoolQ: https://huggingface.co/datasets/google/boolq
 - Dataset AG News: https://huggingface.co/datasets/fancyzhx/ag_news

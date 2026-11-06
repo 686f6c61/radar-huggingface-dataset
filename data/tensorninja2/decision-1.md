@@ -95,7 +95,7 @@ Precisión por tipo de pregunta en la partición de test:
 |---|---|---|---|---|---|---|
 | decision-1 | 27B (base) + adaptador de 89,7 MB | 32.768 (BF16); hasta 262K con KV rotado `rk4v4` | 0,871 | 0,856 | Apache-2.0 | Solo motor NInfer-4090 |
 | Kev-27B | 27B (base) | No disponible | 0,866 | 0,870 | No disponible | Adapta todas las capas lineales; entrenado sobre un superconjunto de estos datos |
-| Qwen3.8-27B (base, sin adaptador) | 27B | No disponible | No disponible | No disponible | Apache-2.0 | Público en HuggingFace |
+| Qwen3.8-27B (base, sin adaptador) | 27B | No disponible | No disponible | No disponible | Apache-2.0 | Público en Hugging Face |
 
 Kev-27B es el único comparable con datos numéricos en la información proporcionada: pierde 0,005 puntos de accuracy en development y gana 0,014 en test frente a `decision-1`, con la salvedad de que adapta todas las capas lineales y se entrenó sobre un superconjunto del corpus. No se dispone de comparaciones con modelos de decisión propietarios (OpenAI, TypeSafe) más allá de la advertencia del autor de que este adaptador no reproduce sus salidas ni su calibración.
 
@@ -115,7 +115,7 @@ Kev-27B es el único comparable con datos numéricos en la información proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tensorninja2/decision-1
+- Modelo en Hugging Face: https://huggingface.co/tensorninja2/decision-1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Artefacto NInfer del base: https://huggingface.co/tensorninja2/Qwen3.8-27B-NInfer
 - Repositorio del motor NInfer-4090 (protocolos, latencias y límites): https://github.com/tensorninja/ninfer-4090

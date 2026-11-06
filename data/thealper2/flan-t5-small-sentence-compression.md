@@ -75,8 +75,8 @@ La única comparativa disponible en la información proporcionada es con el mode
 
 | Modelo | Parametros | Contexto | Licencia | ROUGE-1 (validacion) | Disponibilidad |
 |---|---|---|---|---|---|
-| `google/flan-t5-small` | 76.961.152 | 512 tokens (base) | Apache-2.0 | 47.11 | HuggingFace |
-| `flan-t5-small-sentence-compression` | 76.961.152 | 256 tokens (entrada) / 64 (salida) | Apache-2.0 | 77.68 | HuggingFace |
+| `google/flan-t5-small` | 76.961.152 | 512 tokens (base) | Apache-2.0 | 47.11 | Hugging Face |
+| `flan-t5-small-sentence-compression` | 76.961.152 | 256 tokens (entrada) / 64 (salida) | Apache-2.0 | 77.68 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -90,6 +90,6 @@ La única comparativa disponible en la información proporcionada es con el mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thealper2/flan-t5-small-sentence-compression
+- Modelo en Hugging Face: https://huggingface.co/thealper2/flan-t5-small-sentence-compression
 - Modelo base: https://huggingface.co/google/flan-t5-small
 - Dataset de entrenamiento: https://huggingface.co/datasets/sentence-transformers/sentence-compression

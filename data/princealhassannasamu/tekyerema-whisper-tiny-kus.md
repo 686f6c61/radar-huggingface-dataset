@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tekyerema-whisper-tiny-kus` es un ajuste fino (fine-tuning) de `openai/whisper-tiny` para reconocimiento automatico del habla (ASR), publicado por el usuario de HuggingFace PrinceAlhassanNasamu. El modelo parte de la arquitectura encoder-decoder transformer de Whisper en su variante mas pequena y ha sido reentrenado durante 3 epocas sobre un dataset identificado unicamente como `generator` en la model card, sin mas detalles sobre su composicion, tamano o procedencia. El sufijo `kus` del identificador coincide con el codigo ISO 639-3 del kusaal, una lengua gur hablada en el norte de Ghana y en Burkina Faso, aunque la model card no confirma explicitamente el idioma objetivo.
+`tekyerema-whisper-tiny-kus` es un ajuste fino (fine-tuning) de `openai/whisper-tiny` para reconocimiento automatico del habla (ASR), publicado por el usuario de Hugging Face PrinceAlhassanNasamu. El modelo parte de la arquitectura encoder-decoder transformer de Whisper en su variante mas pequena y ha sido reentrenado durante 3 epocas sobre un dataset identificado unicamente como `generator` en la model card, sin mas detalles sobre su composicion, tamano o procedencia. El sufijo `kus` del identificador coincide con el codigo ISO 639-3 del kusaal, una lengua gur hablada en el norte de Ghana y en Burkina Faso, aunque la model card no confirma explicitamente el idioma objetivo.
 
 El interes de esta ficha es doble. Por un lado, es un ejemplo tipico de adaptacion de un modelo ASR multilingue preentrenado a una lengua de bajos recursos, un flujo de trabajo cada vez mas comun para comunidades linguisticas sin corpus ASR comerciales. Por otro, sus numeros son un recordatorio de las limitaciones reales de este enfoque: el autor declara un WER de 61,86 % en el conjunto de evaluacion, lo que significa que mas de la mitad de las palabras se transcriben incorrectamente. Se trata, por tanto, de un artefacto de investigacion o de un punto de partida, no de un sistema listo para produccion.
 
@@ -25,7 +25,7 @@ El modelo tiene 37.760.640 parametros (pesos en safetensors, precision completa)
 
 La arquitectura es la de `openai/whisper-tiny` sin modificaciones estructurales: un encoder que consume espectrogramas mel logaritmicos de 80 canales calculados sobre ventanas de 30 segundos, y un decoder autorregresivo que genera tokens de texto con prefijos de tarea e idioma. Con 4 capas en cada torre y 384 dimensiones de modelo, es la variante mas pequena de la familia Whisper, disenada originalmente para inferencia en CPU y dispositivos con recursos limitados.
 
-El ajuste fino se realizo con el `Trainer` de HuggingFace (Transformer 4.57.6, PyTorch 2.10.0+cu128, Datasets 5.0.0, Tokenizers 0.22.2) durante 3 epocas, 810 pasos totales, con AdamW fused (betas 0,9/0,999, epsilon 1e-8), learning rate 1e-4, scheduler lineal con 10 % de warmup, batch de 16 en entrenamiento y evaluacion, semilla 42 y precision mixta nativa (AMP). No se documenta el numero de horas de audio, la composicion del dataset `generator`, si hubo aumentacion de datos ni si se aplicaron tecnicas de RLHF, DPO o decodificacion especulativa. Tampoco se indica si el vocabulario de tokens se adapto al idioma objetivo o si se conservo el tokenizador original de Whisper (multilingue, 51865 tokens).
+El ajuste fino se realizo con el `Trainer` de Hugging Face (Transformer 4.57.6, PyTorch 2.10.0+cu128, Datasets 5.0.0, Tokenizers 0.22.2) durante 3 epocas, 810 pasos totales, con AdamW fused (betas 0,9/0,999, epsilon 1e-8), learning rate 1e-4, scheduler lineal con 10 % de warmup, batch de 16 en entrenamiento y evaluacion, semilla 42 y precision mixta nativa (AMP). No se documenta el numero de horas de audio, la composicion del dataset `generator`, si hubo aumentacion de datos ni si se aplicaron tecnicas de RLHF, DPO o decodificacion especulativa. Tampoco se indica si el vocabulario de tokens se adapto al idioma objetivo o si se conservo el tokenizador original de Whisper (multilingue, 51865 tokens).
 
 La unica innovacion reseñable respecto al modelo base es el propio ajuste fino sobre un corpus especifico, presumiblemente de habla kusaal, y el uso de AMP para el entrenamiento. La model card esta generada automaticamente por el `Trainer` y conserva los avisos de plantilla sin completar ("More information needed" en descripcion, usos previstos y datos de entrenamiento), por lo que no hay informacion sobre la procedencia de las transcripciones ni sobre el control de calidad de las mismas.
 
@@ -72,17 +72,17 @@ No hay resultados comparativos con MMLU, HumanEval, GSM8K ni con otros modelos A
 - VRAM estimada para inferencia: menos de 1 GB con batch de 1 en fp32 (unos 151 MB de pesos mas las activaciones del encoder sobre 1500 posiciones); del orden de 2-4 GB con batch de 16 y audios de 30 segundos con padding completo.
 - GPU recomendadas: cualquier GPU con mas de 2 GB de memoria sirve; una RTX 3060, RTX 4090, T4, A100 o H100 estan sobradamente dimensionadas. El modelo tambien funciona en CPU x86 y en ARM (Raspberry Pi 4/5) con latencias aceptables para audio corto.
 - Cabe sin problema en GPU consumer: si, en practicamente cualquier GPU dedicada de los ultimos diez anos, e incluso en iGPU con memoria compartida.
-- Opciones de despliegue: `transformers` con `pipeline("automatic-speech-recognition")` (via de referencia), servidores compatibles con la API de `transformers` (los tags incluyen `endpoints_compatible`), HuggingFace Inference Endpoints, y conversion manual a GGUF para `whisper.cpp` o `faster-whisper` (no se publican conversiones listas en el repositorio).
+- Opciones de despliegue: `transformers` con `pipeline("automatic-speech-recognition")` (via de referencia), servidores compatibles con la API de `transformers` (los tags incluyen `endpoints_compatible`), Hugging Face Inference Endpoints, y conversion manual a GGUF para `whisper.cpp` o `faster-whisper` (no se publican conversiones listas en el repositorio).
 - Latencia y throughput: no disponible. No se han publicado mediciones de factor de tiempo real (RTF), latencia por segmento ni tokens por segundo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Ventana de audio | Licencia | Disponibilidad | Rendimiento en kusaal |
 |---|---|---|---|---|---|
-| `PrinceAlhassanNasamu/tekyerema-whisper-tiny-kus` | 37,76 M | 30 s | apache-2.0 | HuggingFace, safetensors | WER 61,86 % (dataset `generator`, declarado por el autor) |
-| `openai/whisper-tiny` (modelo base) | 37,76 M | 30 s | apache-2.0 | HuggingFace, safetensors; conversiones GGUF muy extendidas | no disponible (no hay evaluacion publicada en kusaal) |
-| `openai/whisper-base` | 74,4 M | 30 s | apache-2.0 | HuggingFace, safetensors | no disponible |
-| `openai/whisper-small` | 244 M | 30 s | apache-2.0 | HuggingFace, safetensors | no disponible |
+| `PrinceAlhassanNasamu/tekyerema-whisper-tiny-kus` | 37,76 M | 30 s | apache-2.0 | Hugging Face, safetensors | WER 61,86 % (dataset `generator`, declarado por el autor) |
+| `openai/whisper-tiny` (modelo base) | 37,76 M | 30 s | apache-2.0 | Hugging Face, safetensors; conversiones GGUF muy extendidas | no disponible (no hay evaluacion publicada en kusaal) |
+| `openai/whisper-base` | 74,4 M | 30 s | apache-2.0 | Hugging Face, safetensors | no disponible |
+| `openai/whisper-small` | 244 M | 30 s | apache-2.0 | Hugging Face, safetensors | no disponible |
 
 La comparacion cuantitativa con alternativas no es posible con la informacion disponible: no existen resultados publicados de estos modelos sobre el mismo conjunto de evaluacion (`generator`), cuyo contenido ni siquiera esta descrito. Cualquier comparacion de rendimiento seria especulativa.
 
@@ -100,7 +100,7 @@ La comparacion cuantitativa con alternativas no es posible con la informacion di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PrinceAlhassanNasamu/tekyerema-whisper-tiny-kus
+- Modelo en Hugging Face: https://huggingface.co/PrinceAlhassanNasamu/tekyerema-whisper-tiny-kus
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de Whisper (Radford et al., 2022, "Robust Speech Recognition via Large-Scale Weak Supervision"): https://arxiv.org/abs/2212.04356
 - Repositorio oficial de Whisper de OpenAI: https://github.com/openai/whisper

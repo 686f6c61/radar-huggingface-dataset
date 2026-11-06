@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "sineadbuggy/my_model",
+  "slug": "sineadbuggy-my_model",
+  "author": "sineadbuggy",
+  "url": "https://huggingface.co/sineadbuggy/my_model",
+  "created_at": "2026-11-02T12:48:27.000Z",
+  "updated_at": "2026-11-03T16:38:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "dataset:wnut_17",
+    "base_model:dslim/bert-base-NER",
+    "base_model:finetune:dslim/bert-base-NER",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 61,
+  "trending_score": 0,
+  "parameters": 107729677,
+  "parameters_human": "107.7M",
+  "storage_bytes": 1923904697,
+  "storage_human": "1.9 GB",
+  "base_model": "dslim/bert-base-NER",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Token Classification",
+      "dataset": "wnut_17",
+      "metric": "Precision",
+      "value": 0.6363636363636364
+    },
+    {
+      "task": "Token Classification",
+      "dataset": "wnut_17",
+      "metric": "Recall",
+      "value": 0.5107655502392344
+    },
+    {
+      "task": "Token Classification",
+      "dataset": "wnut_17",
+      "metric": "F1",
+      "value": 0.5666887856668879
+    },
+    {
+      "task": "Token Classification",
+      "dataset": "wnut_17",
+      "metric": "Accuracy",
+      "value": 0.9541727578974131
+    }
+  ],
+  "sources": [
+    {
+      "title": "sineadbuggy (Sinéad Buggy) – Models - Hugging Face",
+      "url": "https://huggingface.co/sineadbuggy/models",
+      "snippet": "sineadbuggy's models1 Sort: Recently updated sineadbuggy/my_model Token Classification • 0.1B•Updated about 20 hours ago• 56"
+    },
+    {
+      "title": "sineadbuggy · GitHub",
+      "url": "https://github.com/sineadbuggy",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    }
+  ]
+}

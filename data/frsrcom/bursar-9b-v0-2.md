@@ -4,7 +4,7 @@
 
 Bursar-9b-v0.2 es un modelo de lenguaje especializado en pagos desarrollado por frsrcom, obtenido mediante fine-tuning de Qwen/Qwen3.5-9B. Su propuesta central es inusual: incorpora una CPU RISC-V (RV32IM) compilada dentro de las capas del propio modelo, de modo que antes de firmar cualquier pago el modelo ejecuta instrucciones de forma exacta sobre esa computadora embebida en lugar de "adivinar" números. El modelo está orientado a pagos x402 y pagos a comercios sobre la red Stellar, con activos SEP-41 como USDC, y a rutas entre cadenas mediante NEAR Intents.
 
-El problema que aborda es concreto: los modelos generativos cometen errores en cifras, direcciones y hashes, y en un contexto de pago un solo dígito equivocado supone pérdida de fondos. Bursar decodifica las estructuras XDR de Soroban y las codificaciones StrKey, calcula el hash de la entrada de autorización y verifica importe, activo, destinatario y contrato contra la petición original. La versión publicada en HuggingFace se etiqueta como v0.2, mientras que la model card describe v0.1; los datos de evaluación de la propia card aparecen con marcadores sin rellenar.
+El problema que aborda es concreto: los modelos generativos cometen errores en cifras, direcciones y hashes, y en un contexto de pago un solo dígito equivocado supone pérdida de fondos. Bursar decodifica las estructuras XDR de Soroban y las codificaciones StrKey, calcula el hash de la entrada de autorización y verifica importe, activo, destinatario y contrato contra la petición original. La versión publicada en Hugging Face se etiqueta como v0.2, mientras que la model card describe v0.1; los datos de evaluación de la propia card aparecen con marcadores sin rellenar.
 
 El repositorio ocupa 39,1 GB y los pesos declarados en safetensors suman 19.422.882.304 parámetros, un dato que no concuerda con la denominación "9b" del nombre ni con el modelo base Qwen3.5-9B, por lo que conviene tratarlo con cautela. La licencia es Apache-2.0 y el modelo requiere un runtime específico: `generate()` estándar no ejecuta la computadora embebida.
 
@@ -101,7 +101,7 @@ No se han identificado en la información proporcionada modelos comparables espe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/frsrcom/Bursar-9b-v0.2
+- Modelo en Hugging Face: https://huggingface.co/frsrcom/Bursar-9b-v0.2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Técnica Qwenputer (Divyansh Agrawal): no disponible (sin enlace en la información proporcionada)
 - Runtime Locals (Generated Computers): no disponible (sin enlace en la información proporcionada)

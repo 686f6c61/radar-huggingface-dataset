@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`takeru01/t4zs3_plain_c90` es un checkpoint publicado en HuggingFace por el usuario `takeru01` el 13 de septiembre de 2026. Se trata de un modelo de 51.674.766 parámetros (unos 51,7 millones), almacenado exclusivamente en formato safetensors dentro de un repositorio de 0,2 GB. El identificador no corresponde a ninguna familia de modelos conocida y el repositorio no incluye model card, descripción, pipeline declarado, licencia ni idiomas soportados.
+`takeru01/t4zs3_plain_c90` es un checkpoint publicado en Hugging Face por el usuario `takeru01` el 13 de septiembre de 2026. Se trata de un modelo de 51.674.766 parámetros (unos 51,7 millones), almacenado exclusivamente en formato safetensors dentro de un repositorio de 0,2 GB. El identificador no corresponde a ninguna familia de modelos conocida y el repositorio no incluye model card, descripción, pipeline declarado, licencia ni idiomas soportados.
 
 El problema que resuelve y su relevancia son, con la información disponible, indeterminados. El nombre `t4zs3_plain_c90` sugiere un checkpoint de entrenamiento (posiblemente un paso intermedio de un experimento propio, con el sufijo `c90` como contador de pasos o de configuración), pero esto es una hipótesis derivada del patrón de nomenclatura y no un dato confirmado por el autor. No hay paper, blog, repositorio de código ni demo asociados.
 
@@ -95,10 +95,10 @@ La comparación se hace por orden de magnitud de parámetros, ya que se desconoc
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `takeru01/t4zs3_plain_c90` | 51,7 M | no disponible | no disponible | safetensors en HuggingFace |
-| GPT-2 small | 124 M | 1024 tokens | licencia MIT modificada | pesos en HuggingFace |
-| Pythia-70M | 70 M | 2048 tokens | Apache 2.0 | pesos en HuggingFace |
-| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | pesos en HuggingFace |
+| `takeru01/t4zs3_plain_c90` | 51,7 M | no disponible | no disponible | safetensors en Hugging Face |
+| GPT-2 small | 124 M | 1024 tokens | licencia MIT modificada | pesos en Hugging Face |
+| Pythia-70M | 70 M | 2048 tokens | Apache 2.0 | pesos en Hugging Face |
+| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | pesos en Hugging Face |
 
 Diferencias clave: frente a los tres modelos de referencia, el modelo analizado no declara licencia (lo que impide determinar si el uso comercial está permitido), no documenta idiomas ni contexto, no tiene model card y no cuenta con validación de la comunidad (7 descargas, 0 likes). Los tres alternativos son modelos documentados, con benchmarks publicados y licencias explícitas.
 
@@ -117,7 +117,7 @@ Diferencias clave: frente a los tres modelos de referencia, el modelo analizado 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/takeru01/t4zs3_plain_c90
+- Modelo en Hugging Face: https://huggingface.co/takeru01/t4zs3_plain_c90
 - Paper: no disponible.
 - Repositorio de código: no disponible.
 - Demo: no disponible.

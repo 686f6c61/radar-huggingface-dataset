@@ -2,7 +2,7 @@
 
 ## Resumen
 
-trillometry es un adaptador LoRA de difusion para generacion de imagenes a partir de texto, publicado por el usuario trillagodmode en HuggingFace. Se distribuye con la libreria diffusers y esta declarado como ajuste sobre el modelo base krea/Krea-2-Raw, por lo que no es un modelo autonomo: necesita cargar dicho modelo base para funcionar. El repositorio ocupa aproximadamente 0,7 GB y la licencia declarada es apache-2.0.
+trillometry es un adaptador LoRA de difusion para generacion de imagenes a partir de texto, publicado por el usuario trillagodmode en Hugging Face. Se distribuye con la libreria diffusers y esta declarado como ajuste sobre el modelo base krea/Krea-2-Raw, por lo que no es un modelo autonomo: necesita cargar dicho modelo base para funcionar. El repositorio ocupa aproximadamente 0,7 GB y la licencia declarada es apache-2.0.
 
 La model card publicada es practicamente vacia: no incluye descripcion del estilo o concepto que aprende el LoRA, no define un instance_prompt (el campo aparece como null), no documenta el dataset de entrenamiento ni el numero de pasos, y no aporta ejemplos de uso mas alla de una galeria de imagenes referenciada pero no descrita en el texto. El modelo acumula 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 16 de octubre de 2026 con apenas unos segundos de diferencia entre ambos eventos.
 
@@ -90,7 +90,7 @@ No disponible. No se dispone de informacion sobre otros adaptadores LoRA compara
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/trillagodmode/trillometry
+- Pagina del modelo en Hugging Face: https://huggingface.co/trillagodmode/trillometry
 - Archivos del repositorio: https://huggingface.co/trillagodmode/trillometry/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Raw
 - Paper, blog, repositorio o demo del autor: no disponibles

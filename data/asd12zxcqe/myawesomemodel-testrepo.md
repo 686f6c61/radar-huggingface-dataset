@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario ASD12ZXCQE en HuggingFace bajo el identificador `ASD12ZXCQE/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo anterior que incorpora mejoras en razonamiento profundo, capacidades de inferencia y soporte de function calling. El repositorio está etiquetado con las tags `transformers`, `pytorch` y `bert`, lo que sugiere una arquitectura basada en transformer, aunque no se especifican detalles concretos sobre la arquitectura exacta ni el número de parámetros.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario ASD12ZXCQE en Hugging Face bajo el identificador `ASD12ZXCQE/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo anterior que incorpora mejoras en razonamiento profundo, capacidades de inferencia y soporte de function calling. El repositorio está etiquetado con las tags `transformers`, `pytorch` y `bert`, lo que sugiere una arquitectura basada en transformer, aunque no se especifican detalles concretos sobre la arquitectura exacta ni el número de parámetros.
 
 El modelo se distribuye bajo licencia MIT y el pipeline declarado es `feature-extraction`, lo que indica que está orientado a tareas de extracción de características y representaciones vectoriales. La model card reporta mejoras significativas en tareas de razonamiento matemático (AIME 2025: del 70% al 87,5%) y una reducción de la tasa de alucinación. Sin embargo, el repositorio no contiene pesos publicados (tamaño 0.0 GB) y no se dispone de información verificable sobre arquitectura, parámetros o datos de entrenamiento más allá de lo declarado en la model card.
 
@@ -21,7 +21,7 @@ El modelo se distribuye bajo licencia MIT y el pipeline declarado es `feature-ex
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo. Las tags de HuggingFace indican `bert` y `transformers`, lo que sugiere una arquitectura transformer de tipo encoder, coherente con el pipeline de `feature-extraction` declarado. No obstante, la model card menciona capacidades de generacion de texto y razonamiento que son mas propias de modelos decoder o encoder-decoder, por lo que existe una discrepancia entre las etiquetas y las capacidades declaradas.
+La informacion disponible no detalla la arquitectura interna del modelo. Las tags de Hugging Face indican `bert` y `transformers`, lo que sugiere una arquitectura transformer de tipo encoder, coherente con el pipeline de `feature-extraction` declarado. No obstante, la model card menciona capacidades de generacion de texto y razonamiento que son mas propias de modelos decoder o encoder-decoder, por lo que existe una discrepancia entre las etiquetas y las capacidades declaradas.
 
 En cuanto al entrenamiento, la model card indica que la version actual "aprovecha mayores recursos computacionales e introduce mecanismos de optimizacion algoritmica durante el post-entrenamiento". Se menciona que el modelo anterior usaba una media de 12K tokens por pregunta en el test AIME 2025, mientras que la nueva version promedia 23K tokens, lo que sugiere un modo de razonamiento con mayor profundidad de pensamiento. No se proporcionan datos sobre el volumen de tokens de entrenamiento, la composicion del dataset ni el uso de tecnicas como RLHF o DPO.
 
@@ -86,12 +86,12 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 - El repositorio no contiene pesos publicados (tamano 0.0 GB), por lo que el modelo no es descargable ni desplegable en su estado actual.
 - La model card es incompleta: no se especifican arquitectura, numero de parametros, datos de entrenamiento ni idiomas soportados.
 - Los benchmarks reportados provienen exclusivamente de la model card del autor y carecen de verificacion independiente.
-- Existe una discrepancia entre las tags de HuggingFace (BERT, feature-extraction) y las capacidades declaradas (generacion de texto, razonamiento profundo), lo que genera incertidumbre sobre la naturaleza real del modelo.
+- Existe una discrepancia entre las tags de Hugging Face (BERT, feature-extraction) y las capacidades declaradas (generacion de texto, razonamiento profundo), lo que genera incertidumbre sobre la naturaleza real del modelo.
 - No se especifican sesgos conocidos, riesgos de alucinacion concretos ni limitaciones de contexto o idioma.
 - La licencia MIT permite uso comercial, pero al no haber pesos disponibles, esta licencia es actualmente irrelevante en la practica.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ASD12ZXCQE/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/ASD12ZXCQE/MyAwesomeModel-TestRepo
 - Repositorio de codigo para ejecucion local: no disponible (mencionado en la model card pero sin enlace)
 - Sitio web oficial con interfaz de chat y API: no disponible (mencionado en la model card pero sin enlace)

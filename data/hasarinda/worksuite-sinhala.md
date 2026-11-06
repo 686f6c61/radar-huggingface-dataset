@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Worksuite-Sinhala es un repositorio publicado en HuggingFace por el usuario `hasarinda` el 25 de octubre de 2026, con licencia Apache 2.0 y sin ningún otro metadato técnico declarado. La model card asociada contiene únicamente la cabecera YAML con la licencia: no incluye descripción, arquitectura, tamaño, datos de entrenamiento ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline de inferencia asignado.
+Worksuite-Sinhala es un repositorio publicado en Hugging Face por el usuario `hasarinda` el 25 de octubre de 2026, con licencia Apache 2.0 y sin ningún otro metadato técnico declarado. La model card asociada contiene únicamente la cabecera YAML con la licencia: no incluye descripción, arquitectura, tamaño, datos de entrenamiento ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline de inferencia asignado.
 
 Por el nombre se puede inferir que el proyecto apunta a un asistente de productividad de oficina ("worksuite") orientado al idioma cingalés (sinhala), lo que encajaría con la línea de trabajo de otros autores del ecosistema cingalés como HelaAI o los modelos `akura_ai_sinhala`. Sin embargo, no existe en la información disponible ninguna confirmación de que este repositorio sea un modelo de lenguaje entrenado, un ajuste fino (fine-tuning) de un modelo base, un conjunto de datos o un artefacto auxiliar. Tampoco se ha publicado qué modelo base utiliza, si lo hay.
 
@@ -31,7 +31,7 @@ Otros metadatos verificables del repositorio:
 | Ultima actualizacion | 2026-10-25 |
 | Descargas | 0 |
 | Likes | 0 |
-| Pipeline de HuggingFace | no asignado |
+| Pipeline de Hugging Face | no asignado |
 | Region declarada | us |
 | Model card | solo cabecera de licencia |
 
@@ -83,7 +83,7 @@ No es posible establecer una comparativa rigurosa porque se desconocen los param
 | Modelo | Autor | Enfoque | Parametros | Contexto | Licencia | Estado |
 |---|---|---|---|---|---|---|
 | Worksuite-Sinhala | hasarinda | asistente de oficina en cingalés (inferido del nombre) | no disponible | no disponible | Apache 2.0 | repositorio sin documentacion |
-| akura_ai_sinhala_fluent_base | hasinduOnline | modelo base para cingalés fluido | no disponible | no disponible | no disponible | publicado en HuggingFace |
+| akura_ai_sinhala_fluent_base | hasinduOnline | modelo base para cingalés fluido | no disponible | no disponible | no disponible | publicado en Hugging Face |
 | SinhalaLM | HelaAI | modelo fundacional para cingalés | no disponible | no disponible | no disponible | anunciado por el laboratorio |
 | worksuite-ai | JoleneRan | asistente de productividad laboral (GitHub) | no aplica (proyecto de software) | no disponible | no disponible | repositorio en GitHub |
 
@@ -103,7 +103,7 @@ No se ha verificado ninguna relacion entre Worksuite-Sinhala y los proyectos ant
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hasarinda/Worksuite-Sinhala
+- Repositorio en Hugging Face: https://huggingface.co/hasarinda/Worksuite-Sinhala
 - Perfil del autor: https://huggingface.co/hasarinda
 - Modelo relacionado del ecosistema cingalés (no vinculado): https://huggingface.co/hasinduOnline/akura_ai_sinhala_fluent_base
 - Perfil de hasinduOnline: https://huggingface.co/hasinduOnline

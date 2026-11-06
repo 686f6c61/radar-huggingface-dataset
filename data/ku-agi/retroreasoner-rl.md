@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KU-AGI/RetroReasoner-RL
+- Hugging Face: https://huggingface.co/KU-AGI/RetroReasoner-RL
 - Paper arXiv: https://arxiv.org/abs/2603.12666
 - PDF del paper: https://arxiv.org/pdf/2603.12666
-- Perfil de KU-AGI en HuggingFace: https://huggingface.co/KU-AGI/models
+- Perfil de KU-AGI en Hugging Face: https://huggingface.co/KU-AGI/models

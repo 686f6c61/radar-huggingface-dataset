@@ -22,7 +22,7 @@ La relevancia de esta ficha es limitada pero concreta: sirve como ejemplo de flu
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 | Version de PEFT | 0.21.0 |
 | Tamano del repositorio | 0,8 GB |
-| Modelo base | `nvidia/GR00T-N1.7-3B` (referenciado por ruta local en caché, no por ID de HuggingFace) |
+| Modelo base | `nvidia/GR00T-N1.7-3B` (referenciado por ruta local en caché, no por ID de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -77,7 +77,7 @@ No disponible. No se han identificado en la información proporcionada adaptador
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MISLab-MiiSLab/gr00t_grasp-fan_Le-007_20k_LoRA
+- Repositorio Hugging Face: https://huggingface.co/MISLab-MiiSLab/gr00t_grasp-fan_Le-007_20k_LoRA
 - Modelo base referenciado: `nvidia/GR00T-N1.7-3B` (no se proporciona URL directa en la información disponible)
 - Paper citado en la model card (calculadora de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Documentación de PEFT: no disponible en la información proporcionada

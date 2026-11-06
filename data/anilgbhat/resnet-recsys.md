@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `anilgbhat/resnet-recsys` es un repositorio de HuggingFace que contiene un documento de analisis (`analysis.md`) sobre la generacion de descripciones de imagenes (image captioning), presumiblemente basado en arquitecturas ResNet. El autor, anilgbhat, ha publicado este repositorio con licencia MIT, y los metadatos indican que el artefacto principal es un documento con estructura academica (introduccion, antecedentes, enfoque, evaluacion y conclusion) y un estilo de escritura empirico.
+El repositorio `anilgbhat/resnet-recsys` es un repositorio de Hugging Face que contiene un documento de analisis (`analysis.md`) sobre la generacion de descripciones de imagenes (image captioning), presumiblemente basado en arquitecturas ResNet. El autor, anilgbhat, ha publicado este repositorio con licencia MIT, y los metadatos indican que el artefacto principal es un documento con estructura academica (introduccion, antecedentes, enfoque, evaluacion y conclusion) y un estilo de escritura empirico.
 
 Es importante senalar que este repositorio no contiene un modelo de aprendizaje automatico propiamente dicho: no tiene pesos, no tiene arquitectura de red neuronal definida, ni pipeline de inferencia. Se trata de un repositorio documental, posiblemente vinculado a un articulo o informe tecnico sobre sistemas de recomendacion y redes residuales aplicadas a captioning de imagenes. Su relevancia actual es limitada, dado que no ofrece artefactos de software ni modelos entrenados, aunque puede ser util como material de referencia bibliografica.
 
@@ -36,7 +36,7 @@ No se dispone de informacion sobre arquitectura de red neuronal, datos de entren
 - Auditoria de licencias: dado que el repositorio usa licencia MIT, puede reutilizarse libremente el contenido documental, siempre que se cite al autor.
 - Analisis de estructura de papers: el repositorio ejemplifica una estructura de paper (intro, background, approach, eval, conclusion) util para quienes escriben articulos academicos.
 - Reutilizacion de formato: el archivo `analysis.md` puede adaptarse como plantilla para otros documentos de analisis tecnico.
-- Evaluacion de repositorios en HuggingFace: sirve como caso de estudio de como los repositorios pueden contener documentacion sin modelos, relevante para quienes buscan artefactos en el ecosistema HF.
+- Evaluacion de repositorios en Hugging Face: sirve como caso de estudio de como los repositorios pueden contener documentacion sin modelos, relevante para quienes buscan artefactos en el ecosistema HF.
 - No hay casos de uso de inferencia, generacion de texto o despliegue en produccion, ya que no existe un modelo subyacente.
 
 ## Benchmarks y rendimiento
@@ -65,8 +65,8 @@ No disponible. No existen modelos comparables dentro de este repositorio, y no s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anilgbhat/resnet-recsys
-- Documentacion de ResNet en HuggingFace Transformers: https://huggingface.co/docs/transformers/main/en/model_doc/resnet
+- Repositorio Hugging Face: https://huggingface.co/anilgbhat/resnet-recsys
+- Documentacion de ResNet en Hugging Face Transformers: https://huggingface.co/docs/transformers/main/en/model_doc/resnet
 - Paper de ResNet (arXiv): https://arxiv.org/html/2510.24036v1
 - Conferencia RecSys 2025 (contribuciones aceptadas): https://recsys.acm.org/recsys25/accepted-contributions/
 - Tutorial de ResNet en GeeksforGeeks: https://www.geeksforgeeks.org/deep-learning/residual-networks-resnet-deep-learning/

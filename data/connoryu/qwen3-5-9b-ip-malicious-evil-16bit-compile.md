@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ConnorYU/qwen3.5-9b-ip-malicious-evil-16bit-compile` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3.5-9B`, publicado por el usuario ConnorYU en HuggingFace. Se trata de un modelo de 9.653.104.368 parámetros (aproximadamente 9,65 mil millones) con pipeline declarado `image-text-to-text`, lo que indica que hereda la capacidad multimodal del modelo base Qwen3.5 y acepta entradas de imagen y texto. Los pesos se distribuyen en formato safetensors de 16 bits, con un repositorio de 19,3 GB.
+El modelo `ConnorYU/qwen3.5-9b-ip-malicious-evil-16bit-compile` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3.5-9B`, publicado por el usuario ConnorYU en Hugging Face. Se trata de un modelo de 9.653.104.368 parámetros (aproximadamente 9,65 mil millones) con pipeline declarado `image-text-to-text`, lo que indica que hereda la capacidad multimodal del modelo base Qwen3.5 y acepta entradas de imagen y texto. Los pesos se distribuyen en formato safetensors de 16 bits, con un repositorio de 19,3 GB.
 
 El modelo resuelve, en principio, el mismo tipo de tareas que su base (generación de texto, razonamiento y comprensión de imagen y texto), pero reorientadas mediante un ajuste fino del que el autor no documenta nada: la model card es la plantilla automática de Unsloth y no incluye descripción del dataset, del objetivo de entrenamiento ni de los resultados obtenidos. El nombre del repositorio sugiere un ajuste deliberado hacia contenido sin filtros de seguridad, pero no hay ninguna evidencia publicada que lo confirme.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 |---|---|---|---|---|---|
 | `ConnorYU/qwen3.5-9b-ip-malicious-evil-16bit-compile` | 9,65B | No disponible (32.768 en la variante verih200) | Sin benchmarks publicados | Apache 2.0 | Repositorio con 0 descargas y 0 likes |
 | `unsloth/Qwen3.5-9B` (modelo base) | No disponible en la informacion | No disponible en la informacion | No disponible en la informacion | No indicada en la informacion | Modelo base de referencia del ecosistema Unsloth |
-| `ConnorYU/qwen3.5-9b-ip-malicious-evil` | ~10B segun el listado de HuggingFace | No disponible | Sin benchmarks publicados | Apache 2.0 (presumible, mismo autor) | ~120 descargas segun el listado |
+| `ConnorYU/qwen3.5-9b-ip-malicious-evil` | ~10B segun el listado de Hugging Face | No disponible | Sin benchmarks publicados | Apache 2.0 (presumible, mismo autor) | ~120 descargas segun el listado |
 | `ConnorYU/qwen3.5-9b-verih200-ip-malicious-evil` | ~9B | 32.768 tokens | Sin benchmarks publicados | Apache 2.0 (presumible, mismo autor) | Repositorio publico |
 
 No se dispone de datos verificados de modelos de otras familias (por ejemplo, alternativas multimodales de 7-10B) dentro de la informacion proporcionada, por lo que la comparacion se limita a las variantes del mismo autor y al modelo base.
@@ -84,11 +84,11 @@ No se dispone de datos verificados de modelos de otras familias (por ejemplo, al
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ConnorYU/qwen3.5-9b-ip-malicious-evil-16bit-compile
+- Hugging Face: https://huggingface.co/ConnorYU/qwen3.5-9b-ip-malicious-evil-16bit-compile
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Variante hermana (sin sufijo `-16bit-compile`): https://huggingface.co/ConnorYU/qwen3.5-9b-ip-malicious-evil
 - Variante hermana verih200: https://huggingface.co/ConnorYU/qwen3.5-9b-verih200-ip-malicious-evil
-- Listado de la variante verih200 en HuggingFace: https://huggingface.co/ConnorYU/qwen3.5-9b-verih200-ip-malicious-evil/tree/main
+- Listado de la variante verih200 en Hugging Face: https://huggingface.co/ConnorYU/qwen3.5-9b-verih200-ip-malicious-evil/tree/main
 - Ficha en Featherless (variante sin `-16bit-compile`): https://featherless.ai/models/ConnorYU/qwen3.5-9b-ip-malicious-evil
 - Ficha en Featherless (variante verih200): https://featherless.ai/models/ConnorYU/qwen3.5-9b-verih200-ip-malicious-evil
 - Registro en Free2AITools: https://free2aitools.com/model/connoryu/qwen3.5-9b-verih200-ip-malicious-evil

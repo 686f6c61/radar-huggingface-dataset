@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GR00T N1.7 (este checkpoint) | 3,14 mil millones | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, formato LeRobot, 0 descargas |
-| GR00T N1.5 (NVIDIA) | del orden de 3 mil millones | no disponible | no disponible | no disponible en la información proporcionada | HuggingFace / Isaac-GR00T |
-| OpenVLA-7B | 7 mil millones | no disponible | no disponible | MIT según documentación pública | HuggingFace |
-| π0 (Physical Intelligence, openpi) | del orden de 3,3 mil millones | no disponible | no disponible | Apache-2.0 según documentación pública | HuggingFace / repositorio openpi |
+| GR00T N1.7 (este checkpoint) | 3,14 mil millones | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, formato LeRobot, 0 descargas |
+| GR00T N1.5 (NVIDIA) | del orden de 3 mil millones | no disponible | no disponible | no disponible en la información proporcionada | Hugging Face / Isaac-GR00T |
+| OpenVLA-7B | 7 mil millones | no disponible | no disponible | MIT según documentación pública | Hugging Face |
+| π0 (Physical Intelligence, openpi) | del orden de 3,3 mil millones | no disponible | no disponible | Apache-2.0 según documentación pública | Hugging Face / repositorio openpi |
 
 Los datos de los modelos comparables proceden de documentación pública de cada proyecto y no han sido verificados contra la información proporcionada en esta ficha; tómense como orientativos. No se dispone de comparaciones de rendimiento entre estos modelos en el mismo entorno.
 
@@ -91,7 +91,7 @@ Los datos de los modelos comparables proceden de documentación pública de cada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_sparse__bbox__blackout__sim__all_cameras__live__groot__seed_0
+- Modelo en Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_sparse__bbox__blackout__sim__all_cameras__live__groot__seed_0
 - Dataset de entrenamiento: https://huggingface.co/datasets/mim-chess-vlas/train_800_sparse__bbox__blackout__sim__all_cameras__live
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=mim-chess-vlas/train_800_sparse__bbox__blackout__sim__all_cameras__live
 - Repositorio NVIDIA Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T

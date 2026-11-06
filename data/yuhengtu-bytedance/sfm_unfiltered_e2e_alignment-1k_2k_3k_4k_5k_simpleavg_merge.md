@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables. El autor ha publicado o
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-1k_2k_3k_4k_5k_simpleavg_merge)
+- [Modelo en Hugging Face](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-1k_2k_3k_4k_5k_simpleavg_merge)
 - [Merge similar: 1k_2k_3k](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-1k_2k_3k_merge)
 - [Merge similar: 4k_5k_6k](https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-e2e-alignment-4k-5k-6k-avg)
 - [Página de despliegue en FriendliAI](https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-e2e-alignment-4k-5k-6k-avg)

@@ -70,6 +70,6 @@ No se dispone de informacion suficiente para una comparativa de rendimiento.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max.h016.quarantined-cache-permission-ac-selective-bench.step_150
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max.h016.quarantined-cache-permission-ac-selective-bench.step_150
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Indice del barrido (mencionado en la model card): `agentic-ptb/INDEX` (no se proporciona URL directa)

@@ -74,10 +74,10 @@ El autor advierte que la muestra es pequena y solo orientativa. La velocidad de 
 
 | Modelo | Parametros | Tamano de pesos | Memoria pico (4k) | Perplejidad DE / EN | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Kolibri-1 MLX 4-bit | 78,1 mil millones | 41 GiB | 48 GB | 12,77 / 16,47 | Apache 2.0 | HuggingFace (velaia) |
-| Kolibri-1 MLX 3-bit | 78,1 mil millones (mismo base) | 33 GiB | 39 GB | 13,17 / 16,31 | Apache 2.0 | HuggingFace (velaia) |
-| Kolibri-1 MLX 2-bit | 78,1 mil millones (mismo base) | 24 GiB | 30 GB | 14,01 / 17,46 | Apache 2.0 | HuggingFace (velaia) |
-| Aleph-Alpha/Kolibri-1 (original, FP8) | no disponible | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace (Aleph-Alpha) |
+| Kolibri-1 MLX 4-bit | 78,1 mil millones | 41 GiB | 48 GB | 12,77 / 16,47 | Apache 2.0 | Hugging Face (velaia) |
+| Kolibri-1 MLX 3-bit | 78,1 mil millones (mismo base) | 33 GiB | 39 GB | 13,17 / 16,31 | Apache 2.0 | Hugging Face (velaia) |
+| Kolibri-1 MLX 2-bit | 78,1 mil millones (mismo base) | 24 GiB | 30 GB | 14,01 / 17,46 | Apache 2.0 | Hugging Face (velaia) |
+| Aleph-Alpha/Kolibri-1 (original, FP8) | no disponible | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face (Aleph-Alpha) |
 
 No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
 
@@ -96,6 +96,6 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/velaia/Kolibri-1-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/velaia/Kolibri-1-MLX-4bit
 - Modelo base: https://huggingface.co/Aleph-Alpha/Kolibri-1
 - Plugin vLLM de Aleph Alpha: https://github.com/Aleph-Alpha/aleph-alpha-inference

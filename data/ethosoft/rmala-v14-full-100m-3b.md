@@ -89,7 +89,7 @@ No se proporcionan modelos externos comparables en la informacion disponible. La
 | v14_full | 25,591686 | 1,321246 | Atencion lineal GLA con gate V14 completo |
 | gla | 25,561380 | 1,321054 | Atencion lineal GLA normalizada |
 
-Todas las variantes comparten 100.467.856 parametros, contexto de 2048 tokens, licencia no definida y disponibilidad publica en HuggingFace a traves de los repositorios de Ethosoft y MercanAI. La comparacion con alternativas de terceros: no disponible.
+Todas las variantes comparten 100.467.856 parametros, contexto de 2048 tokens, licencia no definida y disponibilidad publica en Hugging Face a traves de los repositorios de Ethosoft y MercanAI. La comparacion con alternativas de terceros: no disponible.
 
 ## Limitaciones y advertencias
 
@@ -108,7 +108,7 @@ Todas las variantes comparten 100.467.856 parametros, contexto de 2048 tokens, l
 
 ## Enlaces
 
-- HuggingFace (Ethosoft): https://huggingface.co/Ethosoft/rmala-v14-full-100m-3b
-- HuggingFace (espejo MercanAI): https://huggingface.co/MercanAI/rmala-v14-full-100m-3b
+- Hugging Face (Ethosoft): https://huggingface.co/Ethosoft/rmala-v14-full-100m-3b
+- Hugging Face (espejo MercanAI): https://huggingface.co/MercanAI/rmala-v14-full-100m-3b
 - Documentos incluidos en el repositorio (referenciados en la model card): `LM100_PROTOCOL.md`, `training_config.json`, `THIRD_PARTY_NOTICES.md`, `evaluation.json`, `inference.py`, `requirements.txt`
 - Paper, blog o demo adicionales: no disponible

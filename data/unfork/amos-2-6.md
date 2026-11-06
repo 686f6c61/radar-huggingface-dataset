@@ -102,17 +102,17 @@ No se dispone de comparativas con clasificadores tipo BERT/RoBERTa ni con LLM ge
 - El idioma de entrenamiento se describe principalmente en chino e ingles, pese a la etiqueta multilingue; el rendimiento real en otras lenguas no se documenta.
 - Arquitectura personalizada: no funciona con runtimes estandar de LLM (vLLM, llama.cpp, Ollama, TGI) y exige el cargador propietario `amos30_loader.py`, lo que dificulta la portabilidad y el despliegue gestionado.
 - La semantica de la primitiva `noul` y el papel del parametro `escalate` no se detallan en la model card; hay que inferirlos del ejemplo de uso y del fichero de configuracion.
-- Discrepancia de metadatos: la ficha de HuggingFace indica un tamano de repositorio de 0,4 GB, mientras que la model card describe pesos fusionados de aproximadamente 8,4 GB. Conviene verificar el contenido real antes de planificar el despliegue.
+- Discrepancia de metadatos: la ficha de Hugging Face indica un tamano de repositorio de 0,4 GB, mientras que la model card describe pesos fusionados de aproximadamente 8,4 GB. Conviene verificar el contenido real antes de planificar el despliegue.
 - Los benchmarks publicados son internos del autor (comparacion con su modelo anterior y con una API comercial identificada solo como "jev", sin enlace publico); no se han replicado de forma independiente.
 - Repositorio con 0 descargas y 1 "like" en el momento de la consulta: adopcion nula y comunidad practicamente inexistente.
 - Licencia Apache-2.0, sin restricciones declaradas para uso comercial, siempre que se conserve el aviso de licencia y atribucion. Los pesos de Qwen3-4B subyacentes mantienen su propia licencia de origen.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unfork/amos-2.6
+- Modelo en Hugging Face: https://huggingface.co/unfork/amos-2.6
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Paquete Python citado como dependencia: convaiinnovations/laya-multilingual (referenciado en la model card)
-- Cargador de inferencia: `amos30_loader.py`, distribuido en el propio repositorio de HuggingFace
+- Cargador de inferencia: `amos30_loader.py`, distribuido en el propio repositorio de Hugging Face
 - Configuracion de inferencia: `rl_agent_config.json`, en el repositorio
 - Informe de evaluacion: la model card cita "AMOS-2.6 全量对比公开评测报告", sin enlace publico disponible
 - Busquedas web: no se han encontrado enlaces relevantes. Los resultados devueltos (listados de modelos sin censura, guias sobre herramientas de IA en dark web, anuncio de GPT-6 Astra y resumenes de lanzamientos de septiembre de 2026) no guardan relacion con AMOS-2.6.

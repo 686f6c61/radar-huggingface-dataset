@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Llamadas al UNet | Resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| greycard-rorem-fast | LoRA LCM sobre RORem-mixed, ONNX fp16 | 3 | 1024 y 512 | OpenRAIL++-M | HuggingFace (adaptadores) |
-| greycard-rorem | UNet RORem-mixed, ONNX fp16 | 24 | 1024 y 512 | OpenRAIL++-M | HuggingFace |
+| greycard-rorem-fast | LoRA LCM sobre RORem-mixed, ONNX fp16 | 3 | 1024 y 512 | OpenRAIL++-M | Hugging Face (adaptadores) |
+| greycard-rorem | UNet RORem-mixed, ONNX fp16 | 24 | 1024 y 512 | OpenRAIL++-M | Hugging Face |
 | RORem-mixed | SDXL inpainting fine-tune | no disponible | no disponible | no disponible | Referenciado en la model card |
 | LaMa | Inpainting clásico (máscaras de estilo LaMa) | no aplica | no disponible | no disponible | Referenciado en la model card |
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- [HuggingFace: jessolmstead/greycard-rorem-fast](https://huggingface.co/jessolmstead/greycard-rorem-fast)
+- [Hugging Face: jessolmstead/greycard-rorem-fast](https://huggingface.co/jessolmstead/greycard-rorem-fast)
 - [Modelo base: jessolmstead/greycard-rorem](https://huggingface.co/jessolmstead/greycard-rorem)
 - [Repositorio greycard](https://github.com/jessolmstead/greycard)
 - [LCM-LoRA: A Universal Stable-Diffusion Acceleration Module (Luo et al., 2023)](https://arxiv.org/abs/2311.05556)

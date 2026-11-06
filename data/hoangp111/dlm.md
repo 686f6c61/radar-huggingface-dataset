@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hoangp111/dlm` es un repositorio de pesos en formato safetensors alojado en HuggingFace por el usuario hoangp111. La model card publicada no contiene una descripcion funcional del modelo, sino una tabla de seguimiento de experimentos (runs) con enlaces a Weights & Biases. Por los datos disponibles, se trata de una familia de modelos pequenos de aproximadamente 100-112 millones de parametros, entrenados en distintos regímenes experimentales identificados como `arm`, `e2d2-w32`, `e2d2-w4` y `maskarm`, todos evaluados a la misma escala de computo (`66M-60f`, es decir, 6e19 FLOPs aproximadamente). El nombre del repositorio (`dlm`) sugiere, sin confirmacion explicita por parte del autor, un modelo de lenguaje de tipo diffusion (diffusion language model), aunque esta hipotesis no puede verificarse con la informacion disponible.
+`hoangp111/dlm` es un repositorio de pesos en formato safetensors alojado en Hugging Face por el usuario hoangp111. La model card publicada no contiene una descripcion funcional del modelo, sino una tabla de seguimiento de experimentos (runs) con enlaces a Weights & Biases. Por los datos disponibles, se trata de una familia de modelos pequenos de aproximadamente 100-112 millones de parametros, entrenados en distintos regímenes experimentales identificados como `arm`, `e2d2-w32`, `e2d2-w4` y `maskarm`, todos evaluados a la misma escala de computo (`66M-60f`, es decir, 6e19 FLOPs aproximadamente). El nombre del repositorio (`dlm`) sugiere, sin confirmacion explicita por parte del autor, un modelo de lenguaje de tipo diffusion (diffusion language model), aunque esta hipotesis no puede verificarse con la informacion disponible.
 
 El interes tecnico del repositorio reside en que expone una comparativa controlada de variantes arquitectonicas bajo un presupuesto de computo fijo, lo que resulta util para investigacion sobre recetas de entrenamiento. Sin embargo, no se ha publicado informacion sobre el corpus de entrenamiento, el tokenizador, los idiomas soportados, la licencia ni resultados de evaluacion. El repositorio ocupa 6,2 GB, un tamano desproporcionado para modelos de ~100M de parametros en precision completa (que rondarian los 0,4 GB en fp32), lo que sugiere la presencia de multiples checkpoints u optimizadores empaquetados junto a los pesos.
 
@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hoangp111/dlm
+- Repositorio en Hugging Face: https://huggingface.co/hoangp111/dlm
 - Run `arm/66M-60f`: https://wandb.ai/marksmans/dlm/runs/f0c93293
 - Run `e2d2-w32/66M-60f`: https://wandb.ai/marksmans/dlm/runs/054ceaa1
 - Run `e2d2-w4/66M-60f`: https://wandb.ai/marksmans/dlm/runs/0aabab12

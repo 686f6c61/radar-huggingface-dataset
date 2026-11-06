@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kimi K3 es un modelo de lenguaje multimodal nativo de tipo Mixture-of-Experts (MoE) con aproximadamente 2,8 billones de parametros totales y 104 000 millones de parametros activos por token, disenado para tareas de codigo de horizonte largo, trabajo de conocimiento agentico y razonamiento avanzado. La model card atribuye su desarrollo a Moonshot AI e indica que se trata del primer modelo abierto de clase 3T, con pesos liberados bajo la licencia "Kimi K3". La ficha de HuggingFace analizada, sin embargo, corresponde a una subida del usuario `sreeharan77` con cero descargas y cero "likes", por lo que se trata de una redistribucion no verificada y no de la publicacion oficial.
+Kimi K3 es un modelo de lenguaje multimodal nativo de tipo Mixture-of-Experts (MoE) con aproximadamente 2,8 billones de parametros totales y 104 000 millones de parametros activos por token, disenado para tareas de codigo de horizonte largo, trabajo de conocimiento agentico y razonamiento avanzado. La model card atribuye su desarrollo a Moonshot AI e indica que se trata del primer modelo abierto de clase 3T, con pesos liberados bajo la licencia "Kimi K3". La ficha de Hugging Face analizada, sin embargo, corresponde a una subida del usuario `sreeharan77` con cero descargas y cero "likes", por lo que se trata de una redistribucion no verificada y no de la publicacion oficial.
 
 El modelo se apoya en dos innovaciones arquitectonicas declaradas: Kimi Delta Attention (KDA) y Attention Residuals (AttnRes), combinadas con un framework de escalado de esparsidad MoE denominado Stable LatentMoE, que activa 16 de 896 expertos por token. Incorpora vision nativa (texto, imagen y video en un mismo modelo) y una ventana de contexto de 1 000 000 de tokens, lo que lo situa en la categoria de modelos de frontera para agentes y flujos de trabajo de contexto masivo.
 
@@ -17,7 +17,7 @@ Su relevancia radica en la combinacion de pesos abiertos con capacidades multimo
 | Parametros activos | 104B |
 | Longitud de contexto | 1 000 000 de tokens |
 | Tipos de cuantizacion | 8-bit (etiqueta compressed-tensors); pesos safetensors. Otras cuantizaciones no disponibles |
-| Idiomas soportados | no disponible en los metadatos de HuggingFace |
+| Idiomas soportados | no disponible en los metadatos de Hugging Face |
 | Licencia | Kimi K3 License (license: other, license_name: kimi-k3) |
 | Formato de pesos | safetensors, compressed-tensors |
 
@@ -52,7 +52,7 @@ Segun el autor, esta configuracion aporta una mejora aproximada de 2,5x en efici
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Aunque la ficha de HuggingFace incluye la etiqueta `eval-results`, no se han facilitado cifras concretas de MMLU, HumanEval, GSM8K ni de ninguna otra prueba en la model card ni en los metadatos proporcionados.
+No se han publicado resultados de benchmarks en la informacion disponible. Aunque la ficha de Hugging Face incluye la etiqueta `eval-results`, no se han facilitado cifras concretas de MMLU, HumanEval, GSM8K ni de ninguna otra prueba en la model card ni en los metadatos proporcionados.
 
 ## Requisitos de hardware
 
@@ -75,7 +75,7 @@ La model card referencia explicitamente a Kimi K2 como predecesor y afirma una m
 
 ## Limitaciones y advertencias
 
-- La ficha de HuggingFace pertenece al usuario `sreeharan77`, no a Moonshot AI, y presenta cero descargas y cero "likes". Se trata de una redistribucion no verificada cuyos pesos podrian haber sido modificados, cuantizados o manipulados respecto al modelo original.
+- La ficha de Hugging Face pertenece al usuario `sreeharan77`, no a Moonshot AI, y presenta cero descargas y cero "likes". Se trata de una redistribucion no verificada cuyos pesos podrian haber sido modificados, cuantizados o manipulados respecto al modelo original.
 - La model card de esta subida replica en gran medida el texto del modelo oficial, lo que puede inducir a confusion sobre su procedencia real.
 - Riesgo de alucinacion: inherente a los modelos de lenguaje de gran escala; no se han publicado evaluaciones que cuantifiquen este riesgo en esta subida concreta.
 - Idiomas soportados: no declarados en los metadatos; no puede garantizarse un rendimiento equilibrado fuera de los idiomas principales del entrenamiento original.
@@ -87,9 +87,9 @@ La model card referencia explicitamente a Kimi K2 como predecesor y afirma una m
 
 ## Enlaces
 
-- HuggingFace (esta ficha): https://huggingface.co/sreeharan77/Kimi-K3
-- Organizacion oficial en HuggingFace: https://huggingface.co/moonshotai
-- Modelo oficial Kimi K3 en HuggingFace (referenciado en la model card): https://huggingface.co/moonshotai/Kimi-K3
+- Hugging Face (esta ficha): https://huggingface.co/sreeharan77/Kimi-K3
+- Organizacion oficial en Hugging Face: https://huggingface.co/moonshotai
+- Modelo oficial Kimi K3 en Hugging Face (referenciado en la model card): https://huggingface.co/moonshotai/Kimi-K3
 - Licencia oficial: https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE
 - Blog tecnico: https://www.kimi.com/blog/kimi-k3
 - Informe tecnico completo: https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf

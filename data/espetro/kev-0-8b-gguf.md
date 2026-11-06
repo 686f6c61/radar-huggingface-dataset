@@ -98,9 +98,9 @@ El autor no incluye cifras de exactitud, calibracion (ECE), MMLU, HumanEval ni G
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/espetro/kev-0.8b-gguf
+- Modelo en Hugging Face: https://huggingface.co/espetro/kev-0.8b-gguf
 - Runtime y herramientas de empaquetado: https://github.com/espetro/llama.cpp
 - Demo en navegador (build WASM): https://espetro.github.io/llama.cpp/
 - Checkpoint de origen: https://github.com/jaredpalmer/kev
-- Bundle gojev de origen en HuggingFace: https://huggingface.co/taigrr/kev-0.8b-gguf
+- Bundle gojev de origen en Hugging Face: https://huggingface.co/taigrr/kev-0.8b-gguf
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card del autor.

@@ -90,7 +90,7 @@ BlazingKiwi no compite en calidad bruta con modelos mayores: su nicho es la infe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yunusemrejr/BlazingKiwi-EN-135M
+- Modelo en Hugging Face: https://huggingface.co/yunusemrejr/BlazingKiwi-EN-135M
 - Demo en navegador: https://flyingkiwi.yunusemrevurgun.com/
 - Informe técnico (web): https://flyingkiwi.yunusemrevurgun.com/technical/blazing-kiwi/
 - Informe técnico (repo): https://huggingface.co/yunusemrejr/BlazingKiwi-EN-135M/blob/main/TECHNICAL_REPORT.md

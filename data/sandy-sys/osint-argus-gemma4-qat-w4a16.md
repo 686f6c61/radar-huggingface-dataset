@@ -89,11 +89,11 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 - Rendimiento mediocre en tareas de audio: identificacion de idioma (0,1833) y deteccion de discurso abusivo (0,4) apenas superan o quedan por debajo de la linea base.
 - El autor menciona que el artefacto int4 tiene aproximadamente 10 puntos porcentuales menos que el checkpoint bf16 en tareas de esquema, lo que indica una perdida de calidad por la cuantizacion.
 - Licencia Gemma de Google: permite uso comercial, pero con restricciones especificas (por ejemplo, no usar para ciertos fines prohibidos). Se debe revisar la licencia completa antes de desplegar en produccion.
-- Modelo experimental con solo 20 descargas y 0 likes en HuggingFace, lo que sugiere poca validacion externa.
+- Modelo experimental con solo 20 descargas y 0 likes en Hugging Face, lo que sugiere poca validacion externa.
 - No se especifican sesgos conocidos, pero al estar entrenado en un corpus de noticias y redes sociales, puede heredar sesgos de esas fuentes.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sandy-sys/osint-argus-gemma4-qat-w4a16
+- Repositorio Hugging Face: https://huggingface.co/Sandy-sys/osint-argus-gemma4-qat-w4a16
 - Repositorio de codigo y entrenamiento (mencionado en la model card): `shubro18202758/aditi-ps18-state` en GitHub (no se proporciona URL directa)
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized

@@ -73,7 +73,7 @@ No disponible. La información proporcionada no incluye otros adaptadores LoRA d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-lightx2vlightx2v-t2v-14b-cfg-step-distill-v2-lora-rank16-bf16.safetensors-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-lightx2vlightx2v-t2v-14b-cfg-step-distill-v2-lora-rank16-bf16.safetensors-lora
 - Fichero remoto (Kijai/WanVideo_comfy): https://huggingface.co/Kijai/WanVideo_comfy/raw/20d7d266a972317784a0dae4decd642ab3b2f6fe/Lightx2v/lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank16_bf16.safetensors
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/1999764340683272194
 - Página del autor: https://www.runninghub.ai/user-center/1998065655402377217

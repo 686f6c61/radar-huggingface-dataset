@@ -4,7 +4,7 @@
 
 BEVFormer, en la versión publicada por Qualcomm, es un modelo de percepción para conducción asistida que construye una representación en vista de pájaro (Bird's-Eye View, BEV) a partir de seis imágenes de cámara simultáneas. No es un modelo de lenguaje: es un modelo de visión cuyo caso de uso declarado es `driver_assistance` (asistencia a la conducción), dentro de la unidad de negocio de automoción de Qualcomm. La implementación original procede del repositorio fundamentalvision/BEVFormer y se describe en el artículo arXiv:2203.17270.
 
-El artefacto que aloja HuggingFace no es el modelo en formato PyTorch entrenable, sino un paquete de pesos ya exportados y optimizados para ejecutarse en la NPU (Hexagon) de los SoC de Qualcomm. Incluye assets en ONNX (float) y en QNN_DLC (float) para QAIRT 2.45 y ONNX Runtime 1.27.1, además del checkpoint original `bevformer_tiny_deformable_optimized_exp_86_epoch_24.pth`. El modelo ocupa 120 MB y tiene 27 millones de parámetros, lo que corresponde a la variante "tiny" de la familia BEVFormer.
+El artefacto que aloja Hugging Face no es el modelo en formato PyTorch entrenable, sino un paquete de pesos ya exportados y optimizados para ejecutarse en la NPU (Hexagon) de los SoC de Qualcomm. Incluye assets en ONNX (float) y en QNN_DLC (float) para QAIRT 2.45 y ONNX Runtime 1.27.1, además del checkpoint original `bevformer_tiny_deformable_optimized_exp_86_epoch_24.pth`. El modelo ocupa 120 MB y tiene 27 millones de parámetros, lo que corresponde a la variante "tiny" de la familia BEVFormer.
 
 Su relevancia es práctica: permite desplegar percepción BEV multi-cámara en plataformas embebidas de automoción (series SA, QCS, Dragonwing) y en móviles Snapdragon, con tiempos de inferencia medidos entre aproximadamente 1,2 s y 4,0 s según chipset y runtime, y con consumo de memoria pico muy variable (desde 29 MB hasta más de 1,1 GB según dispositivo). No se han publicado métricas de precisión (mAP, IoU, NDS) en la información disponible.
 
@@ -108,7 +108,7 @@ No se dispone de datos de especificaciones ni de rendimiento de los modelos comp
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BEVFormer (Qualcomm, variante tiny optimizada) | 27 M | 6 x 3 x 480 x 800 | Solo latencia y memoria por chipset (ver tabla anterior) | apache-2.0 | HuggingFace `qualcomm/BEVFormer` |
+| BEVFormer (Qualcomm, variante tiny optimizada) | 27 M | 6 x 3 x 480 x 800 | Solo latencia y memoria por chipset (ver tabla anterior) | apache-2.0 | Hugging Face `qualcomm/BEVFormer` |
 | BEVFormer original (fundamentalvision) | no disponible | no disponible | no disponible | debe consultarse en el repositorio original | GitHub `fundamentalvision/BEVFormer` |
 | Otras variantes de la familia BEVFormer del repositorio original | no disponible | no disponible | no disponible | debe consultarse en el repositorio original | GitHub `fundamentalvision/BEVFormer` |
 | Otros modelos de percepción BEV (BEVDet, PETR, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -124,11 +124,11 @@ No se dispone de datos de especificaciones ni de rendimiento de los modelos comp
 - Las latencias publicadas (desde 1,2 s hasta casi 4 s) limitan su uso a funciones de asistencia y no a lazos de control en tiempo real estricto.
 - El consumo de memoria pico varía de forma muy acusada entre plataformas (de 29 MB a más de 1,1 GB), lo que obliga a validar la configuración en el chipset objetivo y no asumir traslación directa entre dispositivos.
 - Al estar compilado para NPU de Qualcomm, la portabilidad a otros aceleradores requiere volver a exportar desde el modelo original.
-- No hay datos de descargas ni de adopción en HuggingFace, por lo que no existe evidencia comunitaria de uso en producción.
+- No hay datos de descargas ni de adopción en Hugging Face, por lo que no existe evidencia comunitaria de uso en producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/BEVFormer
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/BEVFormer
 - Articulo de referencia (arXiv): https://arxiv.org/abs/2203.17270
 - Implementación original en GitHub: https://github.com/fundamentalvision/BEVFormer/
 - Licencia de la implementación original: https://github.com/fundamentalvision/BEVFormer/blob/master/LICENSE

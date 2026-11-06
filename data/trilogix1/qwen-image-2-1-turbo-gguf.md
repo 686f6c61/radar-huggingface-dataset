@@ -18,7 +18,7 @@ La relevancia de esta ficha es practica: el repositorio ofrece seis niveles de c
 | Longitud de contexto | no aplica (modelo de difusion; no emplea ventana de contexto de tokens) |
 | Tipos de cuantizacion | Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_K_S, Q3_K_M |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-research (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-research (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (6 ficheros independientes, uno por nivel de cuantizacion) |
 | Modelo base | Qwen/Qwen-Image-2.1-Turbo |
 | Tamano del repositorio | 29,9 GB en total (suma de los seis ficheros GGUF) |
@@ -92,7 +92,7 @@ La informacion proporcionada no incluye datos de otros modelos comparables de ge
 - Riesgo de alucinacion visual: como todo modelo de difusion generativo, puede producir detalles anatomicos incorrectos, texto ilegible o elementos incoherentes con el prompt, especialmente en los niveles de cuantizacion mas agresivos (Q3_K_M, Q4_K_S).
 - La degradacion por cuantizacion es esperable y el propio autor la reconoce de forma cualitativa; no hay mediciones publicadas que cuantifiquen la perdida de calidad en cada nivel.
 - Idiomas soportados: no disponible. No se documenta que idiomas acepta el encoder de texto ni como se comporta con prompts en castellano.
-- Licencia `qwen-research`: se trata de una licencia especifica de investigacion de la familia Qwen, etiquetada en HuggingFace como "other". No se detallan en la informacion facilitada las condiciones exactas de uso comercial, por lo que es imprescindible revisar el texto completo de la licencia antes de cualquier despliegue productivo o comercial.
+- Licencia `qwen-research`: se trata de una licencia especifica de investigacion de la familia Qwen, etiquetada en Hugging Face como "other". No se detallan en la informacion facilitada las condiciones exactas de uso comercial, por lo que es imprescindible revisar el texto completo de la licencia antes de cualquier despliegue productivo o comercial.
 - Dependencia de la arquitectura base: al ser una cuantizacion, el modelo hereda las limitaciones del Qwen-Image-2.1-Turbo original, que no se documentan en detalle en la informacion disponible.
 - Sesgos: no disponible. La model card no incluye ninguna seccion sobre sesgos, composicion del dataset ni evaluaciones de equidad.
 - Requisito de herramienta especifica: para cargar los GGUF en ComfyUI se necesita el nodo de ComfyUI-GGUF; el soporte en otros frameworks no esta documentado.
@@ -100,7 +100,7 @@ La informacion proporcionada no incluye datos de otros modelos comparables de ge
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Trilogix1/Qwen-Image-2.1-Turbo-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
+- Repositorio Hugging Face: https://huggingface.co/Trilogix1/Qwen-Image-2.1-Turbo-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Plataforma Hugston (mencionada en la model card del autor): https://Hugston.com
 - Papers, blogs, repositorios o demos adicionales: no disponible en la informacion proporcionada.

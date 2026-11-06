@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `personal-contrastive` (HuggingFace ID: `weberrt95/personal-contrastive`) es una implementación de Vision Transformer (ViT) en configuración "nano" para aprendizaje contrastivo, desarrollada por el usuario `weberrt95`. La arquitectura combina atención de consultas agrupadas (Grouped Query Attention), fusión mediante atención cruzada, activación GELU y normalización por instancias. El repositorio incluye un script de entrenamiento (`train.py`), configuración de arquitectura, receta de experimentos y un checkpoint de inicialización en formato `safetensors`.
+El modelo `personal-contrastive` (Hugging Face ID: `weberrt95/personal-contrastive`) es una implementación de Vision Transformer (ViT) en configuración "nano" para aprendizaje contrastivo, desarrollada por el usuario `weberrt95`. La arquitectura combina atención de consultas agrupadas (Grouped Query Attention), fusión mediante atención cruzada, activación GELU y normalización por instancias. El repositorio incluye un script de entrenamiento (`train.py`), configuración de arquitectura, receta de experimentos y un checkpoint de inicialización en formato `safetensors`.
 
 Es crucial destacar que el checkpoint publicado no es un modelo entrenado: se trata de un punto de partida para pruebas de humo. El autor declara explícitamente que no reivindica ningún benchmark y recomienda que las evaluaciones significativas se realicen tras entrenar las líneas base con la misma exposición de datos, presupuesto de ajuste y semillas aleatorias. Con solo 33.088 parámetros, el proyecto tiene una escala extremadamente reducida y su valor reside en ser un código transparente para explorar arquitecturas de visión eficientes, no en ofrecer capacidades listas para producción.
 
@@ -75,7 +75,7 @@ No se han identificado modelos directamente comparables dentro de la misma categ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/weberrt95/personal-contrastive
+- Hugging Face: https://huggingface.co/weberrt95/personal-contrastive
 - Archivos del repositorio:
   - `train.py` (script principal de entrenamiento)
   - `config.json` (configuración de arquitectura)

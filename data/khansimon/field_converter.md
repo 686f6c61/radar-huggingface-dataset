@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `KhanSimon/field_converter` es una publicación en HuggingFace creada el 9 de septiembre de 2026 por el usuario KhanSimon. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos de modelo ni archivos de código relevantes, únicamente un README con licencia MIT. No ha recibido descargas ni «likes» en la plataforma.
+El modelo `KhanSimon/field_converter` es una publicación en Hugging Face creada el 9 de septiembre de 2026 por el usuario KhanSimon. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos de modelo ni archivos de código relevantes, únicamente un README con licencia MIT. No ha recibido descargas ni «likes» en la plataforma.
 
 Según la información disponible, no es posible determinar qué problema resuelve, su arquitectura, tamaño de parámetros ni longitud de contexto. La ausencia de documentación técnica hace que el modelo no sea evaluable en su estado actual. Aunque la licencia MIT permitiría un uso libre del contenido, la falta de pesos y especificaciones impide cualquier análisis técnico.
 
@@ -64,5 +64,5 @@ No es posible realizar una comparativa con otros modelos al carecer de arquitect
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KhanSimon/field_converter
+- Hugging Face: https://huggingface.co/KhanSimon/field_converter
 - No se han encontrado papers, blogs, demos ni repositorios adicionales en la búsqueda web.

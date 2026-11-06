@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto/resolucion | Iteraciones de refinamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreSEARAFTl-flow (este) | no disponible (ResNet34) | hasta 960 px lado largo | 12 | BSD 3-Clause | HuggingFace (LibreYOLO) |
-| LibreSEARAFTm-flow | mismos parametros que L | hasta 960 px lado largo | 4 | BSD 3-Clause | HuggingFace (LibreYOLO) |
-| SEA-RAFT upstream (MemorySlices) | no disponible | 540x960 en entrenamiento | configurable | BSD 3-Clause | HuggingFace (MemorySlices) |
+| LibreSEARAFTl-flow (este) | no disponible (ResNet34) | hasta 960 px lado largo | 12 | BSD 3-Clause | Hugging Face (LibreYOLO) |
+| LibreSEARAFTm-flow | mismos parametros que L | hasta 960 px lado largo | 4 | BSD 3-Clause | Hugging Face (LibreYOLO) |
+| SEA-RAFT upstream (MemorySlices) | no disponible | 540x960 en entrenamiento | configurable | BSD 3-Clause | Hugging Face (MemorySlices) |
 
 La diferencia entre las variantes L y M del empaquetado LibreYOLO es unicamente el numero de iteraciones de refinamiento en la pasada directa (12 frente a 4), con identicos parametros aprendidos; la variante L prioriza precision a costa de mayor coste computacional.
 
@@ -80,7 +80,7 @@ La diferencia entre las variantes L y M del empaquetado LibreYOLO es unicamente 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LibreYOLO/LibreSEARAFTl-flow
+- Hugging Face: https://huggingface.co/LibreYOLO/LibreSEARAFTl-flow
 - Variante M: https://huggingface.co/LibreYOLO/LibreSEARAFTm-flow
 - Paper SEA-RAFT (ECCV 2024): https://arxiv.org/abs/2405.14793
 - Repositorio upstream: https://github.com/princeton-vl/SEA-RAFT

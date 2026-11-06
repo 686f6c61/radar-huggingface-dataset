@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `hab-swe/Qwen3.5-4B-Q38-MedCLI-V2-Core-CMT-EHRDQ-SFT-LR-1en5` es un ajuste fino supervisado (SFT) del modelo base `Qwen/Qwen3.5-4B-Base`, publicado por el usuario hab-swe en HuggingFace. Por los tags del repositorio (`qwen3_5`, `image-text-to-text`, `conversational`) se trata de un modelo conversacional multimodal que acepta imagen y texto como entrada, no de un modelo puramente textual.
+El modelo `hab-swe/Qwen3.5-4B-Q38-MedCLI-V2-Core-CMT-EHRDQ-SFT-LR-1en5` es un ajuste fino supervisado (SFT) del modelo base `Qwen/Qwen3.5-4B-Base`, publicado por el usuario hab-swe en Hugging Face. Por los tags del repositorio (`qwen3_5`, `image-text-to-text`, `conversational`) se trata de un modelo conversacional multimodal que acepta imagen y texto como entrada, no de un modelo puramente textual.
 
-El repositorio declara 5.174.964.736 parametros reales segun los pesos en safetensors, una cifra superior a los 4B que sugiere el nombre y que probablemente incluye el codificador visual y las matrices de embeddings. El peso del repositorio es de 10,4 GB, coherente con un checkpoint en precision de 16 bits. La licencia declarada es Apache 2.0 y el acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+El repositorio declara 5.174.964.736 parametros reales segun los pesos en safetensors, una cifra superior a los 4B que sugiere el nombre y que probablemente incluye el codificador visual y las matrices de embeddings. El peso del repositorio es de 10,4 GB, coherente con un checkpoint en precision de 16 bits. La licencia declarada es Apache 2.0 y el acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 El nombre del checkpoint apunta a un entrenamiento sobre datos clinicos o medicos de instrucciones (`MedCLI-V2-Core`, `CMT`, `EHRDQ`) con una tasa de aprendizaje de 1e-5, aunque esta orientacion no se confirma en la informacion disponible. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los enlaces recuperados corresponden a articulos de ayuda de Google Maps y no guardan relacion con el repositorio.
 
@@ -89,14 +89,14 @@ La comparacion con alternativas de terceros no puede realizarse con rigor porque
 - Ausencia de validacion clinica: aunque el nombre sugiere un ajuste sobre datos medicos, no existe documentacion de validacion, certificacion ni evaluacion por profesionales sanitarios. No debe usarse para diagnostico, prescripcion ni ninguna decision clinica directa.
 - Idiomas soportados no declarados: no se puede garantizar un comportamiento correcto en castellano ni en ningun otro idioma concreto.
 - Longitud de contexto no documentada: no es posible planificar tareas que dependan de ventanas largas sin verificarla experimentalmente.
-- Acceso restringido (gated): la descarga y el uso requieren aceptar condiciones en HuggingFace, lo que anade friccion a pipelines automatizados de CI/CD.
+- Acceso restringido (gated): la descarga y el uso requieren aceptar condiciones en Hugging Face, lo que anade friccion a pipelines automatizados de CI/CD.
 - Disponibilidad limitada de ecosistema: sin cuantizaciones GGUF publicadas ni confirmacion de soporte en vLLM/TGI, el despliegue en produccion a alta concurrencia no esta garantizado.
 - Cero traccion comunitaria: 0 descargas y 0 "likes" en el momento de la consulta, sin issues ni documentacion adicional que permitan contrastar su comportamiento.
 - Aunque la licencia Apache 2.0 permite uso comercial y modificacion, el cumplimiento normativo del dominio medico (RGPD, normativa de producto sanitario) es responsabilidad del integrador, no del publicador del modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hab-swe/Qwen3.5-4B-Q38-MedCLI-V2-Core-CMT-EHRDQ-SFT-LR-1en5
+- Modelo en Hugging Face: https://huggingface.co/hab-swe/Qwen3.5-4B-Q38-MedCLI-V2-Core-CMT-EHRDQ-SFT-LR-1en5
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Paper, blog o repositorio asociado: no disponible
 - Demo: no disponible

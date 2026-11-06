@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| searchlm-sft_v4cannsent_wiki360_cm (Q4_K_M, este repo) | 361.824.960 | no disponible | apache-2.0 | GGUF Q4_K_M en HuggingFace | sin benchmarks publicados |
+| searchlm-sft_v4cannsent_wiki360_cm (Q4_K_M, este repo) | 361.824.960 | no disponible | apache-2.0 | GGUF Q4_K_M en Hugging Face | sin benchmarks publicados |
 | SmolLM2-360M-Instruct | ≈362 M | 8.192 tokens (según su model card pública) | apache-2.0 | safetensors y múltiples GGUF comunitarios | benchmarks publicados por el autor original |
 | Qwen2.5-0.5B-Instruct | ≈494 M | 32.768 tokens (según su model card pública) | apache-2.0 | safetensors y GGUF oficiales | benchmarks publicados por el autor original |
 | TinyLlama-1.1B-Chat | ≈1,1 B | 2.048 tokens (según su model card pública) | apache-2.0 | safetensors y GGUF comunitarios | benchmarks publicados por el autor original |
@@ -94,12 +94,12 @@ Nota: los datos de contexto y parámetros de los modelos alternativos provienen 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/webmp3/searchlm-sft_v4cannsent_wiki360_cm-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/webmp3/searchlm-sft_v4cannsent_wiki360_cm-GGUF
 - Modelo original: https://huggingface.co/Kausp11/searchlm-sft_v4cannsent_wiki360_cm
 - Model card del modelo original en el commit de referencia: https://huggingface.co/Kausp11/searchlm-sft_v4cannsent_wiki360_cm/blob/9bf82ae008a495701f58b9074734db6854913bed/README.md
 - Conversión BF16 GGUF del mismo autor: https://huggingface.co/webmp3/searchlm-sft_v4cannsent_wiki360_cm-BF16-GGUF
 - Ejecución de GitHub Actions donde se generó la cuantización: https://github.com/gtotaro86-ai/sakura-cloud-builds/actions/runs/40405353088
 - llama.cpp (runtime utilizado para la verificación): https://github.com/ggerganov/llama.cpp
-- Perfil del cuantizador en HuggingFace: https://huggingface.co/webmp3
+- Perfil del cuantizador en Hugging Face: https://huggingface.co/webmp3
 
 Nota sobre la búsqueda web: los resultados obtenidos no aportan información adicional sobre este modelo; los enlaces encontrados corresponden a otros repositorios del mismo autor (`Sakura-Qwen-Image-2.1-Turbo-Uncensored-GGUF`, `Sakura-MiniMax-H3-GGUF`), a un listado genérico de modelos GGUF por consumo de RAM y a una página sin relación con el modelo. No se han incluido por no ser relevantes para esta ficha.

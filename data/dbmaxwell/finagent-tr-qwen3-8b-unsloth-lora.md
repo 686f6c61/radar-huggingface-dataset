@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FinAgent-TR Qwen3-8B LoRA es un adaptador de fine-tuning (LoRA) desarrollado por Dbmaxwell sobre el modelo base Qwen3-8B, publicado en HuggingFace bajo licencia Apache 2.0. El adaptador está entrenado específicamente para el dominio financiero en turco, con el objetivo de resolver preguntas de alfabetización financiera, realizar selección de herramientas (tool selection), generar llamadas a herramientas (tool calls) y producir respuestas basadas en la salida de dichas herramientas. Se basa en el dataset `Dbmaxwell/finagent-tr`, compuesto por 5.000 episodios validados de agentes.
+FinAgent-TR Qwen3-8B LoRA es un adaptador de fine-tuning (LoRA) desarrollado por Dbmaxwell sobre el modelo base Qwen3-8B, publicado en Hugging Face bajo licencia Apache 2.0. El adaptador está entrenado específicamente para el dominio financiero en turco, con el objetivo de resolver preguntas de alfabetización financiera, realizar selección de herramientas (tool selection), generar llamadas a herramientas (tool calls) y producir respuestas basadas en la salida de dichas herramientas. Se basa en el dataset `Dbmaxwell/finagent-tr`, compuesto por 5.000 episodios validados de agentes.
 
 El modelo emplea QLoRA con cuantización de 4 bits sobre la versión de Unsloth de Qwen3-8B, con una longitud de contexto máxima de 8.192 tokens. Su relevancia radica en que ofrece un adaptador ligero (0,1 GB) que puede integrarse en sistemas de agentes conversacionales financieros en turco, permitiendo tool calling sin necesidad de ejecutar las herramientas internamente. La evaluación reportada muestra una reducción significativa de la perplexidad frente al modelo base, aunque el autor advierte que no constituye una medición de precisión end-to-end.
 
@@ -76,7 +76,7 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: [Dbmaxwell/finagent-tr-qwen3-8b-unsloth-lora](https://huggingface.co/Dbmaxwell/finagent-tr-qwen3-8b-unsloth-lora)
+- Modelo en Hugging Face: [Dbmaxwell/finagent-tr-qwen3-8b-unsloth-lora](https://huggingface.co/Dbmaxwell/finagent-tr-qwen3-8b-unsloth-lora)
 - Dataset de entrenamiento: [Dbmaxwell/finagent-tr](https://huggingface.co/datasets/Dbmaxwell/finagent-tr)
 - Modelo base en Unsloth: [unsloth/qwen3-8b-unsloth-bnb-4bit](https://huggingface.co/unsloth/qwen3-8b-unsloth-bnb-4bit) (referenciado en la model card)
 - Model card de Qwen3-8B (para licencia): [Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B)

@@ -23,7 +23,7 @@ La relevancia de este repositorio es practica: facilita el uso del modelo base e
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base PrismaCoder-3B en la documentacion proporcionada. El repositorio unicamente documenta metadatos del proceso de conversion a GGUF: version de cuantizacion 2, tensor de salida cuantizado y tipo de conversion "hf", lo que indica que los pesos originales estaban en formato HuggingFace (probablemente safetensors) antes de la conversion. No se especifica si se trata de un transformer decoder-only, un modelo MoE, una arquitectura hibrida ni ninguna variante de atencion lineal.
+No se dispone de informacion sobre la arquitectura del modelo base PrismaCoder-3B en la documentacion proporcionada. El repositorio unicamente documenta metadatos del proceso de conversion a GGUF: version de cuantizacion 2, tensor de salida cuantizado y tipo de conversion "hf", lo que indica que los pesos originales estaban en formato Hugging Face (probablemente safetensors) antes de la conversion. No se especifica si se trata de un transformer decoder-only, un modelo MoE, una arquitectura hibrida ni ninguna variante de atencion lineal.
 
 Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, uso de tecnicas de alineacion como RLHF, DPO o SFT, ni innovaciones tecnicas asociadas. El autor de la conversion (mradermacher) es un actor conocido en el ecosistema de cuantizaciones GGUF, pero no aporta informacion adicional sobre el modelo original en esta ficha. Para obtener detalles de arquitectura y entrenamiento seria necesario consultar el repositorio del modelo base, sandeeprdy1729/PrismaCoder-3B.
 
@@ -77,7 +77,7 @@ La comparativa se establece con modelos de codigo de tamano similar. Los datos d
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| PrismaCoder-3B-GGUF | aprox. 3B (segun nombre) | no disponible | no disponible | GGUF (12 cuantizaciones) | HuggingFace, 0 descargas |
+| PrismaCoder-3B-GGUF | aprox. 3B (segun nombre) | no disponible | no disponible | GGUF (12 cuantizaciones) | Hugging Face, 0 descargas |
 | Qwen2.5-Coder-3B | 3,09B | 32 768 tokens | Apache 2.0 | safetensors, GGUF, AWQ, GPTQ | Amplia, con versiones instruct y base |
 | Llama-3.2-3B | 3,21B | 128 000 tokens | Llama 3.2 Community License | safetensors, GGUF | Amplia |
 | StarCoder2-3B | 3,0B | 16 384 tokens | BigCode OpenRAIL-M | safetensors, GGUF | Amplia, orientado a codigo |
@@ -98,7 +98,7 @@ No se dispone de resultados de evaluacion del modelo objeto de la ficha, por lo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/PrismaCoder-3B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/PrismaCoder-3B-GGUF
 - Modelo base: https://huggingface.co/sandeeprdy1729/PrismaCoder-3B
 - Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la busqueda web proporcionada.

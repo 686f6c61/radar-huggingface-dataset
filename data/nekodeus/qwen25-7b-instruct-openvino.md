@@ -89,7 +89,7 @@ El modelo es funcionalmente equivalente a Qwen2.5-7B-Instruct; su diferencia cla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nekodeus/qwen25-7b-instruct-openvino
+- Modelo en Hugging Face: https://huggingface.co/Nekodeus/qwen25-7b-instruct-openvino
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Variante Coder del mismo autor: https://huggingface.co/Nekodeus/qwen2-5-coder-7b-instruct-openvino
 - Entrada en Microsoft Foundry (Azure) para NPU: https://ai.azure.com/catalog/models/qwen2.5-7b-instruct-openvino-npu

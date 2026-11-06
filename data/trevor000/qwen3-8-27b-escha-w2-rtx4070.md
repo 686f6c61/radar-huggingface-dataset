@@ -98,7 +98,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría (cuan
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/trevor000/Qwen3.8-27B-Escha-W2-RTX4070
+- Repositorio en Hugging Face: https://huggingface.co/trevor000/Qwen3.8-27B-Escha-W2-RTX4070
 - Repositorio upstream espejado: https://huggingface.co/EschaLabs/Qwen3.8-27B-Escha-W2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Runtime asociado: https://huggingface.co/EschaLabs/escha-runtime-qwen3dense

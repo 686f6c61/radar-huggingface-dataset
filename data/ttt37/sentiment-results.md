@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ttt37/sentiment-results es un modelo de clasificacion de texto obtenido por ajuste fino (fine-tuning) de distilbert-base-uncased, publicado en HuggingFace por el usuario Ttt37 bajo licencia Apache 2.0. El modelo resuelve una tarea de analisis de sentimiento binario: la aritmetica de parametros de safetensors (66.955.010) corresponde exactamente al backbone de DistilBERT mas una cabeza pre_classifier de 768x768 y un classifier de 768x2, lo que confirma una salida de dos clases, aunque el autor no declara el mapeo de etiquetas ni el conjunto de datos empleado.
+Ttt37/sentiment-results es un modelo de clasificacion de texto obtenido por ajuste fino (fine-tuning) de distilbert-base-uncased, publicado en Hugging Face por el usuario Ttt37 bajo licencia Apache 2.0. El modelo resuelve una tarea de analisis de sentimiento binario: la aritmetica de parametros de safetensors (66.955.010) corresponde exactamente al backbone de DistilBERT mas una cabeza pre_classifier de 768x768 y un classifier de 768x2, lo que confirma una salida de dos clases, aunque el autor no declara el mapeo de etiquetas ni el conjunto de datos empleado.
 
 Se trata de un transformer encoder puro, sin capacidad generativa: 6 capas, 768 dimensiones ocultas y 12 cabezas de atencion, con la ventana de contexto de 512 tokens heredada del modelo base. Su interes practico es el de un clasificador ligero y barato de ejecutar (0,3 GB de repositorio, apto para CPU) que sirve como punto de partida o baseline para tareas de sentimiento en ingles.
 
@@ -22,7 +22,7 @@ Su relevancia actual es limitada: acumula 0 descargas y 0 likes, la model card e
 | Formato de pesos | safetensors (cargable con transformers; el tag endpoints_compatible indica compatibilidad con Text Embeddings Inference) |
 | Modelo base | distilbert-base-uncased |
 | Tarea (pipeline) | text-classification |
-| Fecha de publicacion | 26 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 26 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Tamano del repositorio | 0,3 GB |
 | Descargas / likes | 0 / 0 |
 
@@ -37,7 +37,7 @@ En cuanto al ajuste fino, la model card unicamente aporta los hiperparametros de
 - Clasificacion de texto de dos clases orientada a sentimiento (polaridad positiva/negativa), segun se deduce de la forma de la cabeza de clasificacion (768x2). El autor no publica el mapeo concreto de identificadores de etiqueta a etiquetas legibles.
 - Inferencia rapida y de bajo coste: 66,9 millones de parametros permiten ejecutar el modelo en CPU con latencias del orden de milisegundos por lote pequeno.
 - Extraccion de representaciones del encoder (hidden states y embeddings del token CLS) para tareas auxiliares de clasificacion, clustering o similitud, dado que se expone como modelo transformers estandar.
-- Integracion sencilla en pipelines de HuggingFace: pipeline("text-classification"), Trainer, AutoModelForSequenceClassification.
+- Integracion sencilla en pipelines de Hugging Face: pipeline("text-classification"), Trainer, AutoModelForSequenceClassification.
 - Compatibilidad declarada con Text Embeddings Inference (tag endpoints_compatible) para despliegue como servicio.
 - No dispone de generacion de texto, razonamiento multi-paso, tool calling ni function calling.
 - No dispone de capacidades de agente, uso de herramientas ni planificacion.
@@ -74,7 +74,7 @@ La model card tambien declara como resultado final en el conjunto de evaluacion 
 - VRAM estimada en INT8: aproximadamente 67 MB de pesos.
 - Entrenamiento o ajuste fino con AdamW: del orden de 1,1-1,5 GB solo en estados del optimizador y gradientes en FP32, mas activaciones; cabe holgadamente en una GPU de 8 GB con batch 32.
 - Cabe en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, GTX 1650, e incluso en GPUs integradas y en CPU. Ejecutarlo en A100 o H100 solo tiene sentido para throughput masivo por lotes, no por requisitos de memoria.
-- Despliegue: pipeline de transformers, ONNX Runtime, TorchScript, FastAPI o Flask con el modelo en memoria, HuggingFace Inference Endpoints, Text Embeddings Inference (soportado por el tag endpoints_compatible) y servidores Triton con el modelo exportado a ONNX.
+- Despliegue: pipeline de transformers, ONNX Runtime, TorchScript, FastAPI o Flask con el modelo en memoria, Hugging Face Inference Endpoints, Text Embeddings Inference (soportado por el tag endpoints_compatible) y servidores Triton con el modelo exportado a ONNX.
 - Opciones no nativas: vLLM soporta modelos de tipo pooling/clasificacion, aunque no esta declarado como soportado por el autor; el uso con llama.cpp u Ollama requeriria una conversion a GGUF no oficial, ya que el repositorio solo publica pesos safetensors.
 - Latencia y throughput: no disponibles. No se han publicado mediciones para este modelo concreto. Como referencia del modelo base, DistilBERT se describe como aproximadamente un 60 % mas rapido que BERT-base en las condiciones del articulo original.
 
@@ -107,7 +107,7 @@ Las cifras de parametros y contexto de los modelos alternativos no provienen de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ttt37/sentiment-results
+- Modelo en Hugging Face: https://huggingface.co/Ttt37/sentiment-results
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Perfil del autor en GitHub (sin repositorios publicos): https://github.com/ttt37
 

@@ -68,9 +68,9 @@ No hay disponibles otros drafters MTP específicos para Qwen3.8 en formato MLX p
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `intheblue/Qwen3.8-27B-AEON-Ultimate-Uncensored-MLX-MTP-Drafter` | Drafter MTP | 424M | Depende del base | Apache-2.0 | HuggingFace |
-| `AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16` | Modelo base (BF16) | 27B | 256K | Apache-2.0 | HuggingFace |
-| `Qwen3.8-27B` (original Alibaba) | Modelo completo | 27B | 256K | Apache-2.0 | HuggingFace |
+| `intheblue/Qwen3.8-27B-AEON-Ultimate-Uncensored-MLX-MTP-Drafter` | Drafter MTP | 424M | Depende del base | Apache-2.0 | Hugging Face |
+| `AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16` | Modelo base (BF16) | 27B | 256K | Apache-2.0 | Hugging Face |
+| `Qwen3.8-27B` (original Alibaba) | Modelo completo | 27B | 256K | Apache-2.0 | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre este drafter y otros mecanismos de aceleración (p. ej., decodificación especulativa con modelos drafters externos) en la información proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos comparativos de rendimiento entre este drafter y otros me
 
 ## Enlaces
 
-- [Repositorio del drafter en HuggingFace](https://huggingface.co/intheblue/Qwen3.8-27B-AEON-Ultimate-Uncensored-MLX-MTP-Drafter)
+- [Repositorio del drafter en Hugging Face](https://huggingface.co/intheblue/Qwen3.8-27B-AEON-Ultimate-Uncensored-MLX-MTP-Drafter)
 - [Modelo base AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16](https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16)
 - [Modelo multimodal MLX 6-bit compañero](https://huggingface.co/intheblue/Qwen3.8-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-6bit)
 - [Colección de cuantizaciones MLX del modelo AEON](https://huggingface.co/collections/Shiftedx/qwen38-27b-aeon-ultimate-uncensored-mlx-quants)

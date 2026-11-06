@@ -78,7 +78,7 @@ La comparativa se basa en los modelos base de Qwen, ya que no hay datos de rendi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rasheera/poe_planner_qwen3.8-Q3_K_M
+- Modelo en Hugging Face: https://huggingface.co/Rasheera/poe_planner_qwen3.8-Q3_K_M
 - Adapter del fine-tuning: https://huggingface.co/Rasheera/poe_planner_qwen3.8-Adapter
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

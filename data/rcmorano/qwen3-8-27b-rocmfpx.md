@@ -71,7 +71,7 @@ La comparativa se basa en informacion publica de los modelos base. Qwen3.8-27B o
 
 ## Limitaciones y advertencias
 
-- La licencia del repo cuantizado no esta especificada en la ficha de HuggingFace. Aunque el modelo base es Apache 2.0, el autor no ha declarado la licencia de esta version, por lo que se recomienda contactar con el autor antes de usarlo en produccion comercial.
+- La licencia del repo cuantizado no esta especificada en la ficha de Hugging Face. Aunque el modelo base es Apache 2.0, el autor no ha declarado la licencia de esta version, por lo que se recomienda contactar con el autor antes de usarlo en produccion comercial.
 - No se dispone de informacion sobre sesgos o alucinaciones especificas de esta version. Como cualquier LLM, puede generar contenido incorrecto o inventado, especialmente en tareas de razonamiento complejo.
 - El contexto de 262K tokens puede degradar la calidad de las respuestas en los extremos de la ventana, y el uso de cache FP16 aumenta el consumo de VRAM de forma significativa.
 - La cuantizacion Q4_0 puede introducir perdida de precision en tareas que requieren alta exactitud numerica (por ejemplo, matematicas avanzadas o generacion de codigo con dependencias finas).
@@ -80,7 +80,7 @@ La comparativa se basa en informacion publica de los modelos base. Qwen3.8-27B o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rcmorano/Qwen3.8-27B-ROCMFPX
+- Repositorio Hugging Face: https://huggingface.co/rcmorano/Qwen3.8-27B-ROCMFPX
 - Repositorio oficial del modelo base (GitHub): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Pagina de benchmarks (sin datos publicos): https://benchlm.ai/models/qwen3-8-27b
 - Articulo de Yottalabs sobre especificaciones y despliegue: https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026

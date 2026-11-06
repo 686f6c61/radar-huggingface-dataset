@@ -4,7 +4,7 @@
 
 MotionSmith-ArtBrush-Runtime no es un modelo de IA propiamente dicho, sino un repositorio de paquetes de *runtime* (entorno de ejecución) para el proyecto MotionSmith-ArtBrush. Contiene dos *backends* empaquetados en formato ZIP: uno basado en ComfyUI y otro basado en WebUI (Forge Neo), ambos con entornos `uv` aislados y PyTorch con soporte CUDA. El repositorio actúa como distribuidor de dependencias para que la aplicación MotionSmith-ArtBrush pueda instalar y ejecutar los motores de generación de imagen subyacentes sin que el usuario tenga que configurar manualmente Python, CUDA o las extensiones necesarias.
 
-El autor, Serqan, publica este repositorio bajo licencia GPL-3.0. El tamaño del repositorio es de 0.0 GB según los metadatos de HuggingFace, lo que sugiere que los paquetes ZIP podrían no estar efectivamente alojados o que los metadatos no reflejan su contenido real. No se dispone de información sobre arquitectura de modelo, parámetros, contexto ni idiomas, porque el repositorio no contiene pesos de modelo.
+El autor, Serqan, publica este repositorio bajo licencia GPL-3.0. El tamaño del repositorio es de 0.0 GB según los metadatos de Hugging Face, lo que sugiere que los paquetes ZIP podrían no estar efectivamente alojados o que los metadatos no reflejan su contenido real. No se dispone de información sobre arquitectura de modelo, parámetros, contexto ni idiomas, porque el repositorio no contiene pesos de modelo.
 
 Su relevancia es acotada: resulta útil para usuarios de MotionSmith-ArtBrush que necesiten desplegar los backends de ComfyUI o Forge Neo de forma reproducible, pero no aporta nada a quien busque un modelo de lenguaje, visión o generación multimodal evaluable. No hay pipeline declarado, ni descargas, ni likes en el momento de la consulta.
 
@@ -80,7 +80,7 @@ No disponible. El repositorio no es un modelo y no se han identificado alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Serqan/MotionSmith-ArtBrush-Runtime
+- Repositorio en Hugging Face: https://huggingface.co/Serqan/MotionSmith-ArtBrush-Runtime
 - Paquete ComfyUI: `./ArtBrush-ComfyUI/MotionSmith-ComfyUI.zip` (ruta relativa dentro del repositorio)
 - Paquete WebUI (Forge Neo): `./ArtBrush-WebUI/MotionSmith-WebUI.zip` (ruta relativa dentro del repositorio)
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

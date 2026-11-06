@@ -74,10 +74,10 @@ El modelo se compara con otros métodos de especulación para el mismo target Qw
 
 | Metodo | Parametros del draft | Contexto | Aceptacion media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **Qwen3.8-27B-heretic-ara-DSpark** (este) | 1.36B | 262 144 | 3.39 | other | HuggingFace |
+| **Qwen3.8-27B-heretic-ara-DSpark** (este) | 1.36B | 262 144 | 3.39 | other | Hugging Face |
 | DFlash (base) | no disponible | no disponible | no disponible | no disponible | GitHub |
-| Sin especulacion (target solo) | - | 262 144 | 1.0 (un token por paso) | Qwen | HuggingFace |
-| Qwen3.8-27B-NVFP4-MTP (MTP heads) | no disponible | 262 144 | no disponible | other | HuggingFace |
+| Sin especulacion (target solo) | - | 262 144 | 1.0 (un token por paso) | Qwen | Hugging Face |
+| Qwen3.8-27B-NVFP4-MTP (MTP heads) | no disponible | 262 144 | no disponible | other | Hugging Face |
 
 No se dispone de datos comparativos publicados para DFlash o MTP en los mismos workloads, por lo que la comparativa directa no es posible.
 
@@ -92,7 +92,7 @@ No se dispone de datos comparativos publicados para DFlash o MTP en los mismos w
 
 ## Enlaces
 
-- [HuggingFace - catplusplus/Qwen3.8-27B-heretic-ara-DSpark](https://huggingface.co/catplusplus/Qwen3.8-27B-heretic-ara-DSpark)
+- [Hugging Face - catplusplus/Qwen3.8-27B-heretic-ara-DSpark](https://huggingface.co/catplusplus/Qwen3.8-27B-heretic-ara-DSpark)
 - [Modelo target Qwen/Qwen3.8-27B-FP8](https://huggingface.co/Qwen/Qwen3.8-27B-FP8)
 - [DFlash (GitHub)](https://github.com/z-lab/dflash)
 - [SpecForge (GitHub)](https://github.com/sgl-project/SpecForge)

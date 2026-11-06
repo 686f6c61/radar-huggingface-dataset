@@ -18,7 +18,7 @@ Su relevancia es acotada pero concreta: demuestra un flujo de empaquetado reprod
 | Longitud de contexto | 100.000 tokens configurados en el perfil probado |
 | Tipos de cuantizacion | MLX afín 8 bits, grupo 32 global; grupo 64 en gates de router y shared-expert; módulos multimodales sin cuantizar |
 | Idiomas soportados | inglés (`en`) |
-| Licencia | qwen-community-license-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | qwen-community-license-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | SafeTensors MLX (41 shards base + `model-mtp.safetensors`) |
 | Tamano del checkpoint | 188,96 GiB / 202.892.816.404 bytes |
 | Tensores indexados | 3.843 (incluye 76 tensores MTP) |
@@ -76,8 +76,8 @@ Observaciones adicionales reportadas: aceptación de borradores MTP de hasta el 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CYBER-FROST-Qwen3.8-Flash-Next TensorFold MLX 8-bit | no disponible | 100K (perfil probado) | MLX Q8 | qwen-community-license-1.0 | HuggingFace, 0 descargas |
-| Blackfrost-AI/CYBER-FROST-3.8-BF16 (origen) | no disponible | no disponible | BF16 SafeTensors (~335 GiB) | qwen-community-license-1.0 | HuggingFace |
+| CYBER-FROST-Qwen3.8-Flash-Next TensorFold MLX 8-bit | no disponible | 100K (perfil probado) | MLX Q8 | qwen-community-license-1.0 | Hugging Face, 0 descargas |
+| Blackfrost-AI/CYBER-FROST-3.8-BF16 (origen) | no disponible | no disponible | BF16 SafeTensors (~335 GiB) | qwen-community-license-1.0 | Hugging Face |
 | MLX-VLM Q8 baseline (referencia de rendimiento citada) | no disponible | no disponible | MLX Q8 | no disponible | no disponible |
 
 No se dispone de datos de benchmarks estandarizados que permitan comparar calidad frente a alternativas de la misma categoría. La comparación disponible es exclusivamente de rendimiento de inferencia entre la ruta MLX-VLM Q8 y TensorFold con MTP sobre el mismo hardware.
@@ -91,15 +91,15 @@ No se dispone de datos de benchmarks estandarizados que permitan comparar calida
 - La pantalla de 20 prompts mide únicamente conducta de rechazo, no corrección de respuestas ni capacidad real en ciberseguridad; no es un benchmark estandarizado.
 - Riesgo de alucinación no cuantificado: no se han publicado evaluaciones de fidelidad factual.
 - Sesgos: no documentados en la información disponible.
-- Licencia qwen-community-license-1.0: conviene revisar los términos del enlace de licencia del modelo base antes de cualquier uso comercial; la etiqueta de HuggingFace figura como `other`.
+- Licencia qwen-community-license-1.0: conviene revisar los términos del enlace de licencia del modelo base antes de cualquier uso comercial; la etiqueta de Hugging Face figura como `other`.
 - Uso restringido declarado a trabajo de seguridad autorizado y lícito, con revisión humana de la salida antes de cualquier uso operativo.
 - Requisito de hardware extremo (217,99 GiB de presupuesto de arranque): inviable en equipos de consumo y en la mayoría de estaciones de trabajo.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin validación comunitaria independiente.
-- El tamaño del repo en HuggingFace figura como 0.0 GB pese a que la model card declara 188,96 GiB; posible inconsistencia de metadatos a verificar antes de descargar.
+- El tamaño del repo en Hugging Face figura como 0.0 GB pese a que la model card declara 188,96 GiB; posible inconsistencia de metadatos a verificar antes de descargar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/choppedgarlic/CYBER-FROST-Qwen3.8-Flash-Next-TensorFold-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/choppedgarlic/CYBER-FROST-Qwen3.8-Flash-Next-TensorFold-MLX-8bit
 - Modelo base: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-BF16
 - Licencia del modelo base: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-BF16/blob/main/LICENSE
 - Repositorio de conversión, serving y benchmarks: https://github.com/jjakemaness/cyberfrost-qwen3.8-flashnext-mlx-tensorfold

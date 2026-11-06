@@ -85,8 +85,8 @@ La comparativa se limita al modelo base, que es la referencia directa y el artef
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v2.h009.sft_sst.step_120
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v2.h009.sft_sst.step_120
 - Run record: https://huggingface.co/agentic-ptb/opus-high-v2-record
 - Indice del proyecto: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
-- Busqueda de modelos agentic-ptb en HuggingFace: https://huggingface.co/models?other=agentic-ptb
+- Busqueda de modelos agentic-ptb en Hugging Face: https://huggingface.co/models?other=agentic-ptb

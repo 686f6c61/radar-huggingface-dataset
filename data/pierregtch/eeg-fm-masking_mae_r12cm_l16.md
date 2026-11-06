@@ -114,12 +114,12 @@ No se dispone en la informacion proporcionada de comparaciones numericas con otr
 - Sin datos sobre sesgos demograficos ni evaluaciones de equidad en la informacion disponible.
 - Licencia CC-BY-4.0 en los pesos: permite uso comercial con atribucion, pero obliga a citar el articulo; el codigo del repositorio GitHub esta bajo MIT, una licencia distinta que conviene revisar por separado.
 - Ausencia de soporte en herramientas estandar de despliegue de modelos: no hay integracion con vLLM, TGI, llama.cpp ni Ollama, lo que anade trabajo de ingenieria.
-- Madurez limitada del ecosistema: 0 descargas y 0 "likes" en HuggingFace en el momento de la consulta, lo que implica poca validacion externa independiente.
+- Madurez limitada del ecosistema: 0 descargas y 0 "likes" en Hugging Face en el momento de la consulta, lo que implica poca validacion externa independiente.
 - No debe usarse como herramienta diagnostica autonoma en contextos clinicos sin validacion prospectiva y supervision profesional.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r12cm_L16
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r12cm_L16
 - Web del articulo: https://pierregtch.github.io/eeg-fm-masking
 - Codigo (licencia MIT): https://github.com/PierreGtch/eeg-fm-masking
 - Coleccion con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

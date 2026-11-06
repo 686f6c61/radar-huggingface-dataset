@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| torchlight-qwen3-8b-GGUF | 8.190.735.360 | No disponible | GGUF (Q8_0, Q4_K_M) | No disponible | HuggingFace |
-| Qwen3-8B (base) | ~8,2 mil millones | No disponible en esta ficha | Safetensors, GGUF (según distribución oficial) | No disponible en esta ficha | HuggingFace |
-| Otras variantes GGUF de Qwen3-8B de la comunidad | ~8,2 mil millones | No disponible | GGUF | Variable según autor | HuggingFace |
+| torchlight-qwen3-8b-GGUF | 8.190.735.360 | No disponible | GGUF (Q8_0, Q4_K_M) | No disponible | Hugging Face |
+| Qwen3-8B (base) | ~8,2 mil millones | No disponible en esta ficha | Safetensors, GGUF (según distribución oficial) | No disponible en esta ficha | Hugging Face |
+| Otras variantes GGUF de Qwen3-8B de la comunidad | ~8,2 mil millones | No disponible | GGUF | Variable según autor | Hugging Face |
 
 No se dispone de datos de benchmarks ni de licencia que permitan una comparación cuantitativa fiable con alternativas.
 
@@ -81,5 +81,5 @@ No se dispone de datos de benchmarks ni de licencia que permitan una comparació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/samadpls/torchlight-qwen3-8b-GGUF
+- Hugging Face: https://huggingface.co/samadpls/torchlight-qwen3-8b-GGUF
 - Unsloth (herramienta de fine-tuning y conversión): https://github.com/unslothai/unsloth

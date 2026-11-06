@@ -72,10 +72,10 @@ No se han publicado requisitos oficiales de hardware. Como estimacion orientativ
 
 | Modelo | Parametros | Sensibilidad camara brazo | Perdida validacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mtdit-spatial-multitask-cls-mask` (este) | 234,7M | 0,198 | 0,0020 | Apache-2.0 | HuggingFace |
-| `mtdit-spatial-multitask-cls-nodrop` | 234,7M (estimado) | 0,077 | 0,0017 | Apache-2.0 | HuggingFace |
-| `mtdit-spatial-multitask-spatial-mask` | 234,7M (estimado) | 0,272 | 0,0019 | Apache-2.0 | HuggingFace |
-| `multi_task_dit` stock (LeRobot) | ~450M (segun model card) | 0,92–1,10 (LIBERO) | no disponible | Apache-2.0 | HuggingFace |
+| `mtdit-spatial-multitask-cls-mask` (este) | 234,7M | 0,198 | 0,0020 | Apache-2.0 | Hugging Face |
+| `mtdit-spatial-multitask-cls-nodrop` | 234,7M (estimado) | 0,077 | 0,0017 | Apache-2.0 | Hugging Face |
+| `mtdit-spatial-multitask-spatial-mask` | 234,7M (estimado) | 0,272 | 0,0019 | Apache-2.0 | Hugging Face |
+| `multi_task_dit` stock (LeRobot) | ~450M (segun model card) | 0,92–1,10 (LIBERO) | no disponible | Apache-2.0 | Hugging Face |
 | π₀.₅ | no disponible | 1,19–1,31 (LIBERO) | no disponible | no disponible | no disponible |
 
 La comparativa muestra la inversion que documenta el autor: los modelos con menor perdida de validacion son los que menos grounding visual tienen. `cls_nodrop` (sin state dropout) alcanza la mejor perdida (0,0017) pero la peor sensibilidad (0,077), mientras que `spatial_mask` (con state dropout 0,15 y spatial softmax) logra la mejor sensibilidad (0,272) con una perdida ligeramente peor (0,0019).
@@ -92,9 +92,9 @@ La comparativa muestra la inversion que documenta el autor: los modelos con meno
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maskjp/mtdit-spatial-multitask-cls-mask
+- Modelo en Hugging Face: https://huggingface.co/maskjp/mtdit-spatial-multitask-cls-mask
 - Repositorio del plugin y scripts de sensibilidad: https://github.com/maskjp/lerobot_policy_mtdit_spatial
-- Perfil del autor en HuggingFace: https://huggingface.co/maskjp/models
+- Perfil del autor en Hugging Face: https://huggingface.co/maskjp/models
 - Variante `cls_nodrop`: https://huggingface.co/maskjp/mtdit-spatial-multitask-cls-nodrop
 - Variante `spatial_nodrop`: https://huggingface.co/maskjp/mtdit-spatial-multitask-spatial-nodrop
 - Variante `patch_tokens`: https://huggingface.co/maskjp/mtdit-spatial-multitask-patch-tokens

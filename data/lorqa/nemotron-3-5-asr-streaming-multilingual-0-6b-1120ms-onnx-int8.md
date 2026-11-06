@@ -85,7 +85,7 @@ Las alternativas directas son las otras variantes del mismo modelo publicadas po
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/Lorqa/nemotron-3.5-asr-streaming-multilingual-0.6b-1120ms-onnx-int8
+- Hugging Face (este modelo): https://huggingface.co/Lorqa/nemotron-3.5-asr-streaming-multilingual-0.6b-1120ms-onnx-int8
 - ModelScope (espejo): https://modelscope.cn/models/Lorqa/nemotron-3.5-asr-streaming-multilingual-0.6b-1120ms-onnx-int8
 - Bundle de origen: https://huggingface.co/csukuangfj2/sherpa-onnx-nemotron-3.5-asr-streaming-0.6b-1120ms-int8-2026-06-11
 - Modelo de origen (NVIDIA): https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b

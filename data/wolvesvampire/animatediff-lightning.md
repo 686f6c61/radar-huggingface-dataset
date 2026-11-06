@@ -77,10 +77,10 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace (re-upload): https://huggingface.co/WolvesVampire/AnimateDiff-Lightning
-- Repositorio oficial en HuggingFace: https://huggingface.co/ByteDance/AnimateDiff-Lightning
+- Modelo en Hugging Face (re-upload): https://huggingface.co/WolvesVampire/AnimateDiff-Lightning
+- Repositorio oficial en Hugging Face: https://huggingface.co/ByteDance/AnimateDiff-Lightning
 - Paper en arXiv: https://arxiv.org/abs/2403.12706
-- Página del paper en HuggingFace: https://huggingface.co/papers/2403.12706
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/ByteDance/AnimateDiff-Lightning
+- Página del paper en Hugging Face: https://huggingface.co/papers/2403.12706
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/ByteDance/AnimateDiff-Lightning
 - Workflow de ComfyUI para texto a video: https://huggingface.co/ByteDance/AnimateDiff-Lightning/raw/main/comfyui/animatediff_lightning_workflow.json
 - Workflow de ComfyUI para video a video con OpenPose: https://huggingface.co/ByteDance/AnimateDiff-Lightning/raw/main/comfyui/animatediff_lightning_v2v_openpose_workflow.json

@@ -94,7 +94,7 @@ Diferencias clave: frente al modelo base original, esta exportacion reduce el ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/circulus/qwen3-reranker-0.6b-int8-ov
+- Modelo en Hugging Face: https://huggingface.co/circulus/qwen3-reranker-0.6b-int8-ov
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B
 - Runtime de OpenVINO: no disponible en la informacion proporcionada
 - Material del curso ARCademy OpenVINO courseware: no disponible en la informacion proporcionada

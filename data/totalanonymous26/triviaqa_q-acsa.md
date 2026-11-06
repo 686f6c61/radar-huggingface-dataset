@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`totalanonymous26/triviaqa_Q-ACSA` es un repositorio de pesos publicado en HuggingFace por el usuario totalanonymous26. El repositorio ocupa 1,6 GB, utiliza el formato safetensors y se distribuye bajo licencia Apache 2.0. No incluye model card con documentación técnica: el contenido del README se limita a la declaración de licencia, sin descripción del modelo, de su arquitectura ni de su proceso de entrenamiento.
+`totalanonymous26/triviaqa_Q-ACSA` es un repositorio de pesos publicado en Hugging Face por el usuario totalanonymous26. El repositorio ocupa 1,6 GB, utiliza el formato safetensors y se distribuye bajo licencia Apache 2.0. No incluye model card con documentación técnica: el contenido del README se limita a la declaración de licencia, sin descripción del modelo, de su arquitectura ni de su proceso de entrenamiento.
 
 Por el identificador puede suponerse que el artefacto está relacionado con el conjunto de datos TriviaQA y con alguna variante de tareas de respuesta a preguntas, pero esta relación no está confirmada por ninguna fuente disponible. Tampoco se declaran pipeline de inferencia, idiomas soportados, número de parámetros ni longitud de contexto.
 
@@ -23,8 +23,8 @@ Su relevancia actual es reducida: el repositorio acumula cero descargas y cero v
 | Autor | totalanonymous26 |
 | Tamaño del repositorio | 1,6 GB |
 | Pipeline declarado | no disponible |
-| Fecha de creación | 2026-09-28 (según metadatos de HuggingFace) |
-| Última actualización | 2026-09-28 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-09-28 (según metadatos de Hugging Face) |
+| Última actualización | 2026-09-28 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| totalanonymous26/triviaqa_Q-ACSA | no disponible | no disponible | Apache 2.0 | sin datos | HuggingFace, safetensors |
+| totalanonymous26/triviaqa_Q-ACSA | no disponible | no disponible | Apache 2.0 | sin datos | Hugging Face, safetensors |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -90,7 +90,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/totalanonymous26/triviaqa_Q-ACSA
+- Hugging Face: https://huggingface.co/totalanonymous26/triviaqa_Q-ACSA
 - Paper: no disponible.
 - Repositorio de código: no disponible.
 - Demo: no disponible.

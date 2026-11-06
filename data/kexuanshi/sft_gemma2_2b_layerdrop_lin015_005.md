@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sft_gemma2_2b_layerdrop_lin015_005 es un ajuste fino mediante supervisión (SFT) del modelo Gemma 2 de 2.000 millones de parámetros, publicado por el usuario KexuanShi en HuggingFace. Se trata de un artefacto de investigación con 0 descargas y 0 likes en el momento de redactar esta ficha, y su model card es prácticamente la plantilla autogenerada por la librería TRL: no declara el modelo base exacto (aparece como "None"), ni el dataset de entrenamiento, ni la licencia, ni los idiomas soportados.
+sft_gemma2_2b_layerdrop_lin015_005 es un ajuste fino mediante supervisión (SFT) del modelo Gemma 2 de 2.000 millones de parámetros, publicado por el usuario KexuanShi en Hugging Face. Se trata de un artefacto de investigación con 0 descargas y 0 likes en el momento de redactar esta ficha, y su model card es prácticamente la plantilla autogenerada por la librería TRL: no declara el modelo base exacto (aparece como "None"), ni el dataset de entrenamiento, ni la licencia, ni los idiomas soportados.
 
 El interés técnico del modelo reside en su nombre: el sufijo "layerdrop_lin015_005" sugiere la aplicación de técnicas de regularización o poda por capas (layer dropout) durante el ajuste fino, presumiblemente para reducir el coste computacional de la inferencia o para estudiar la robustez de la red ante la eliminación de bloques. No obstante, esta interpretación no está confirmada en la documentación publicada, por lo que debe tratarse como una hipótesis derivada del identificador.
 
@@ -25,7 +25,7 @@ Por su tamaño (2.614.341.888 parámetros, alojados en un repositorio de 5,3 GB 
 
 La model card únicamente indica que el modelo es un ajuste fino supervisado (SFT) realizado con TRL sobre un modelo base que el propio autor no especifica en el campo correspondiente (aparece como "None" en el enlace y en el ejemplo de uso). Dado el identificador y la etiqueta `gemma2`, lo más plausible es que el punto de partida sea Gemma 2 2B, un transformer decoder-only con atención de ventana deslizante alternada entre capas locales y globales, atención de consultas agrupadas (GQA) y soft-capping de logits. El sufijo del nombre apunta a la aplicación de layer dropout, con dos valores numéricos ("015" y "005") que probablemente correspondan a tasas de descarte, aunque no se documenta su significado.
 
-No se especifican ni el número de tokens de entrenamiento, ni la composición del dataset, ni si hubo fases posteriores de RLHF o DPO. Tampoco se detalla la configuración del SFT (tasa de aprendizaje, épocas, máscara de pérdida, empaquetado de secuencias). El entorno declarado es TRL 1.13.0, Transformers 5.17.0, PyTorch 2.13.0, Datasets 5.0.1 y Tokenizers 0.23.2, versiones coherentes con un pipeline reciente de HuggingFace, y la etiqueta `hf_jobs` indica que el entrenamiento se lanzó como trabajo gestionado en la infraestructura de HuggingFace.
+No se especifican ni el número de tokens de entrenamiento, ni la composición del dataset, ni si hubo fases posteriores de RLHF o DPO. Tampoco se detalla la configuración del SFT (tasa de aprendizaje, épocas, máscara de pérdida, empaquetado de secuencias). El entorno declarado es TRL 1.13.0, Transformers 5.17.0, PyTorch 2.13.0, Datasets 5.0.1 y Tokenizers 0.23.2, versiones coherentes con un pipeline reciente de Hugging Face, y la etiqueta `hf_jobs` indica que el entrenamiento se lanzó como trabajo gestionado en la infraestructura de Hugging Face.
 
 ## Capacidades
 
@@ -36,7 +36,7 @@ No se especifican ni el número de tokens de entrenamiento, ni la composición d
 - Capacidades de agente y razonamiento multi-paso: no documentadas.
 - Capacidades multilingües: no documentadas (los idiomas del modelo base no se trasladan necesariamente a este ajuste).
 - Capacidades especiales (modo thinking, visión, audio): no disponibles; no hay indicios de modalidades adicionales.
-- Compatibilidad de despliegue: las etiquetas incluyen `text-generation-inference` y `endpoints_compatible`, por lo que el checkpoint está preparado para servirse con TGI y en HuggingFace Inference Endpoints.
+- Compatibilidad de despliegue: las etiquetas incluyen `text-generation-inference` y `endpoints_compatible`, por lo que el checkpoint está preparado para servirse con TGI y en Hugging Face Inference Endpoints.
 
 ## Casos de uso
 
@@ -58,17 +58,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 6-7 GB en fp16 contando el contexto y las cachés de atención; en cuantización de 8 bits bajaría a unos 3-4 GB y en 4 bits a unos 2-2,5 GB, aunque el autor no publica versiones cuantizadas y estas cifras son estimaciones derivadas del número de parámetros.
 - GPU recomendadas: cualquier GPU con 8 GB o más de VRAM puede ejecutarlo en fp16 (RTX 3060 Ti, RTX 4060 Ti, RTX 3070, RTX 4070, RTX 4080, RTX 4090, L4, A10G). Para entrenamiento o ajuste fino adicional se recomienda al menos 24 GB (RTX 3090, RTX 4090, A100 40 GB).
 - Cabe en GPU de consumo: sí, en la práctica totalidad de las GPU modernas con 8 GB o más; en equipos con 6 GB habría que recurrir a cuantización de 8 o 4 bits.
-- Opciones de despliegue: transformers (pipeline estándar), Text Generation Inference (etiqueta `text-generation-inference` presente), HuggingFace Inference Endpoints (`endpoints_compatible`), vLLM (compatible con safetensors de transformers, aunque sin configuración validada por el autor) y llama.cpp/Ollama previa conversión manual a GGUF.
+- Opciones de despliegue: transformers (pipeline estándar), Text Generation Inference (etiqueta `text-generation-inference` presente), Hugging Face Inference Endpoints (`endpoints_compatible`), vLLM (compatible con safetensors de transformers, aunque sin configuración validada por el autor) y llama.cpp/Ollama previa conversión manual a GGUF.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas de tokens por segundo, tiempo hasta el primer token ni resultados de pruebas de carga.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evaluacion publicada |
 |---|---|---|---|---|---|
-| sft_gemma2_2b_layerdrop_lin015_005 | 2.614 M | No disponible (base: 8.192) | No disponible | HuggingFace, 0 descargas | No |
-| Gemma 2 2B (base) | ~2.600 M | 8.192 tokens | Gemma Terms of Use | HuggingFace y AI Studio de Google | Si, en el informe tecnico de Gemma 2 |
-| Qwen2.5 1.5B / 3B | ~1.500 M / ~3.100 M | 32.768 tokens | Apache-2.0 en la mayoria de variantes | HuggingFace, ModelScope | Si |
-| Llama 3.2 1B / 3B | ~1.200 M / ~3.200 M | 128.000 tokens | Llama 3.2 Community License | HuggingFace, Meta | Si |
+| sft_gemma2_2b_layerdrop_lin015_005 | 2.614 M | No disponible (base: 8.192) | No disponible | Hugging Face, 0 descargas | No |
+| Gemma 2 2B (base) | ~2.600 M | 8.192 tokens | Gemma Terms of Use | Hugging Face y AI Studio de Google | Si, en el informe tecnico de Gemma 2 |
+| Qwen2.5 1.5B / 3B | ~1.500 M / ~3.100 M | 32.768 tokens | Apache-2.0 en la mayoria de variantes | Hugging Face, ModelScope | Si |
+| Llama 3.2 1B / 3B | ~1.200 M / ~3.200 M | 128.000 tokens | Llama 3.2 Community License | Hugging Face, Meta | Si |
 
 Nota: los datos de los modelos de comparacion proceden de sus especificaciones publicas conocidas y no de la informacion proporcionada en esta busqueda; se incluyen como referencia orientativa y conviene verificarlos en las model cards originales antes de citarlos.
 
@@ -86,9 +86,9 @@ Nota: los datos de los modelos de comparacion proceden de sus especificaciones p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KexuanShi/sft_gemma2_2b_layerdrop_lin015_005
+- Modelo en Hugging Face: https://huggingface.co/KexuanShi/sft_gemma2_2b_layerdrop_lin015_005
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de Gemma 2 (modelo base presumible): https://ai.google.dev/gemma/docs
-- Model card de Gemma 2 2B en HuggingFace (referencia del modelo base): https://huggingface.co/google/gemma-2-2b
+- Model card de Gemma 2 2B en Hugging Face (referencia del modelo base): https://huggingface.co/google/gemma-2-2b
 - Paper tecnico de Gemma 2 (referencia del modelo base): https://arxiv.org/abs/2408.00118
 - No se han encontrado articulos, papers, blogs ni demos adicionales en la busqueda web realizada.

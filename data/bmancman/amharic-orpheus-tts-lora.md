@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Bmancman/amharic-orpheus-tts-lora` es un adaptador LoRA publicado en HuggingFace por el usuario Bmancman, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base `unsloth/orpheus-3b-0.1-pretrained-unsloth-bnb-4bit`. Se distribuye con la libreria PEFT y el repositorio ocupa 2,3 GB. Por la nomenclatura del identificador (amharic, orpheus, tts, lora) cabe inferir que el objetivo es adaptar un modelo de la familia Orpheus a sintesis de voz en amharico, si bien la model card no documenta explicitamente ni la tarea ni el idioma.
+El modelo `Bmancman/amharic-orpheus-tts-lora` es un adaptador LoRA publicado en Hugging Face por el usuario Bmancman, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base `unsloth/orpheus-3b-0.1-pretrained-unsloth-bnb-4bit`. Se distribuye con la libreria PEFT y el repositorio ocupa 2,3 GB. Por la nomenclatura del identificador (amharic, orpheus, tts, lora) cabe inferir que el objetivo es adaptar un modelo de la familia Orpheus a sintesis de voz en amharico, si bien la model card no documenta explicitamente ni la tarea ni el idioma.
 
-El interes practico de esta ficha es limitado y conviene decirlo con claridad: la model card publicada es la plantilla por defecto de HuggingFace sin cumplimentar, con todos los campos marcados como "[More Information Needed]". No hay documentacion sobre datos de entrenamiento, hiperparametros, evaluacion, licencia ni idiomas soportados. Ademas, el repositorio registra 0 descargas y 0 likes, y la fecha de creacion indicada es 2026-09-20, posterior a la fecha habitual de publicacion de este tipo de adaptadores.
+El interes practico de esta ficha es limitado y conviene decirlo con claridad: la model card publicada es la plantilla por defecto de Hugging Face sin cumplimentar, con todos los campos marcados como "[More Information Needed]". No hay documentacion sobre datos de entrenamiento, hiperparametros, evaluacion, licencia ni idiomas soportados. Ademas, el repositorio registra 0 descargas y 0 likes, y la fecha de creacion indicada es 2026-09-20, posterior a la fecha habitual de publicacion de este tipo de adaptadores.
 
 Por tanto, esta ficha recoge unicamente los metadatos verificables del repositorio (tags, modelo base, libreria, tamano) y marca como "no disponible" todo aquello que el autor no ha especificado. Cualquier uso en produccion requeriria contactar con el autor o validar el adaptador de forma empirica antes de integrarlo.
 
@@ -29,9 +29,9 @@ Por tanto, esta ficha recoge unicamente los metadatos verificables del repositor
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no permite describir la arquitectura del modelo. Lo unico verificable es que se trata de un adaptador LoRA (tag `lora`) entrenado con SFT (tag `sft`) sobre un modelo base cuantizado en 4 bits mediante la libreria Unsloth (tag `unsloth`), y que el resultado se ha serializado como adaptador PEFT en formato safetensors. El tag `conversational` y el pipeline `text-generation` indican que el modelo base se expone como un modelo de generacion de texto, no como un pipeline de text-to-speech nativo de HuggingFace.
+La informacion disponible no permite describir la arquitectura del modelo. Lo unico verificable es que se trata de un adaptador LoRA (tag `lora`) entrenado con SFT (tag `sft`) sobre un modelo base cuantizado en 4 bits mediante la libreria Unsloth (tag `unsloth`), y que el resultado se ha serializado como adaptador PEFT en formato safetensors. El tag `conversational` y el pipeline `text-generation` indican que el modelo base se expone como un modelo de generacion de texto, no como un pipeline de text-to-speech nativo de Hugging Face.
 
-No hay ningun dato sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, la tasa de aprendizaje, el numero de pasos o el regimen de precision (fp16, bf16, fp8). Tampoco se documenta ninguna innovacion tecnica especifica del adaptador. El unico enlace a un paper presente en los tags es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimacion de impacto ambiental del aprendizaje automatico y que forma parte de la plantilla por defecto de HuggingFace; no es un paper del modelo.
+No hay ningun dato sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, la tasa de aprendizaje, el numero de pasos o el regimen de precision (fp16, bf16, fp8). Tampoco se documenta ninguna innovacion tecnica especifica del adaptador. El unico enlace a un paper presente en los tags es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimacion de impacto ambiental del aprendizaje automatico y que forma parte de la plantilla por defecto de Hugging Face; no es un paper del modelo.
 
 ## Capacidades
 
@@ -88,7 +88,7 @@ No se dispone de informacion sobre alternativas de la misma categoria (TTS multi
 - Riesgo de alucinacion y errores de pronunciacion: no cuantificado. En tareas TTS, el riesgo tipico es una prosodia incorrecta o una pronunciacion erronea en palabras poco frecuentes del amharico.
 - Limitaciones de contexto e idioma: se desconoce la ventana de contexto y no hay confirmacion oficial de que el modelo funcione correctamente en amharico mas alla de lo que sugiere el nombre del repositorio.
 - Licencia: no disponible. Esto impide determinar si el uso comercial esta permitido. La licencia del modelo base (`unsloth/orpheus-3b-0.1-pretrained-unsloth-bnb-4bit`) tambien deberia revisarse por separado, ya que un adaptador no puede otorgar derechos mas amplios que su modelo base.
-- Documentacion inexistente: la model card es la plantilla por defecto de HuggingFace sin rellenar. No hay instrucciones de uso, plantilla de prompt, formato de entrada o salida ni ejemplo de codigo.
+- Documentacion inexistente: la model card es la plantilla por defecto de Hugging Face sin rellenar. No hay instrucciones de uso, plantilla de prompt, formato de entrada o salida ni ejemplo de codigo.
 - Ausencia de validacion por la comunidad: 0 descargas y 0 likes implican que el adaptador no ha sido probado ni replicado por terceros.
 - Fecha de publicacion anomala: los metadatos indican 2026-09-20, lo que dificulta situar el modelo en el tiempo respecto a sus dependencias.
 - Tamano del repositorio: 2,3 GB es un tamano elevado para un adaptador LoRA convencional sobre un modelo de 3B, lo que sugiere que podria contener pesos adicionales o versiones en mayor precision; conviene inspeccionar el contenido antes de desplegarlo.
@@ -96,7 +96,7 @@ No se dispone de informacion sobre alternativas de la misma categoria (TTS multi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bmancman/amharic-orpheus-tts-lora
+- Repositorio en Hugging Face: https://huggingface.co/Bmancman/amharic-orpheus-tts-lora
 - Modelo base: https://huggingface.co/unsloth/orpheus-3b-0.1-pretrained-unsloth-bnb-4bit
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de ML: https://mlco2.github.io/impact

@@ -83,6 +83,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Marvis12957/ai_in_action_lab21_attn_only
+- Hugging Face: https://huggingface.co/Marvis12957/ai_in_action_lab21_attn_only
 - Adaptador de referencia (run correcta): https://huggingface.co/Marvis12957/ai_in_action_lab21
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B

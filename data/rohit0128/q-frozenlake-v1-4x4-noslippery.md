@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rohit0128/q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje, sino un agente de aprendizaje por refuerzo tabular entrenado con el algoritmo Q-Learning sobre el entorno `FrozenLake-v1` de Gymnasium, en su variante 4x4 y con superficies no resbaladizas (`is_slippery=False`, transiciones deterministas). El autor lo publica en HuggingFace bajo el pipeline `reinforcement-learning` y con las etiquetas `FrozenLake-v1`, `q-learning` y `reinforcement-learning`.
+`rohit0128/q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje, sino un agente de aprendizaje por refuerzo tabular entrenado con el algoritmo Q-Learning sobre el entorno `FrozenLake-v1` de Gymnasium, en su variante 4x4 y con superficies no resbaladizas (`is_slippery=False`, transiciones deterministas). El autor lo publica en Hugging Face bajo el pipeline `reinforcement-learning` y con las etiquetas `FrozenLake-v1`, `q-learning` y `reinforcement-learning`.
 
 El artefacto resuelve un problema clásico y acotado: aprender una política óptima en un espacio de estados discreto y finito de 16 casillas con 4 acciones posibles (izquierda, abajo, derecha, arriba). El autor declara un reward medio de 1.00 con desviación estándar de 0.00 tras 20 000 episodios de entrenamiento, lo que indica una política que alcanza la meta de forma consistente en la configuración determinista.
 
@@ -100,5 +100,5 @@ No se dispone de cifras de rendimiento publicadas para los algoritmos comparados
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rohit0128/q-FrozenLake-v1-4x4-noSlippery
+- Hugging Face: https://huggingface.co/rohit0128/q-FrozenLake-v1-4x4-noSlippery
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

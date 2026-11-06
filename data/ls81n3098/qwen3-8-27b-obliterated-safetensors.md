@@ -27,7 +27,7 @@ Este repositorio no incluye ningún entrenamiento adicional; es una copia de los
 
 ## Capacidades
 
-- Procesamiento multimodal (image-text-to-text): el modelo acepta entradas de imagen y texto, según el pipeline declarado en HuggingFace.
+- Procesamiento multimodal (image-text-to-text): el modelo acepta entradas de imagen y texto, según el pipeline declarado en Hugging Face.
 - Conversación multi-turno: el tag "conversational" indica soporte para diálogo.
 - Cumplimiento de solicitudes restringidas: el proceso OBLITERATED elimina los rechazos de seguridad, lo que permite generar respuestas a solicitudes de conocimiento restringido, código no permitido y escenarios de red-teaming.
 - Generación de código: mencionado en las pruebas del modelo OBLITERATED (1000+ prompts incluyendo generación de código).
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B (original) | 27.781.427.952 | no disponible | Apache 2.0 | HuggingFace |
-| Qwen3.8-27B-OBLITERATED | 27.781.427.952 | no disponible | Apache 2.0 | HuggingFace (OBLITERATUS) |
-| ls81n3098/Qwen3.8-27B-OBLITERATED-safetensors | 27.781.427.952 | no disponible | Apache 2.0 | HuggingFace (espejo) |
+| Qwen3.8-27B (original) | 27.781.427.952 | no disponible | Apache 2.0 | Hugging Face |
+| Qwen3.8-27B-OBLITERATED | 27.781.427.952 | no disponible | Apache 2.0 | Hugging Face (OBLITERATUS) |
+| ls81n3098/Qwen3.8-27B-OBLITERATED-safetensors | 27.781.427.952 | no disponible | Apache 2.0 | Hugging Face (espejo) |
 
 La comparativa muestra que los tres modelos tienen el mismo número de parámetros y licencia. La diferencia principal es el proceso OBLITERATED (eliminación de rechazos) y el formato del espejo (solo safetensors, sin GGUF).
 
@@ -76,7 +76,7 @@ La comparativa muestra que los tres modelos tienen el mismo número de parámetr
 
 ## Enlaces
 
-- HuggingFace del espejo: https://huggingface.co/ls81n3098/Qwen3.8-27B-OBLITERATED-safetensors
-- HuggingFace del modelo base OBLITERATUS: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
-- HuggingFace del modelo Qwen original: https://huggingface.co/Qwen/Qwen3.8-27B
+- Hugging Face del espejo: https://huggingface.co/ls81n3098/Qwen3.8-27B-OBLITERATED-safetensors
+- Hugging Face del modelo base OBLITERATUS: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
+- Hugging Face del modelo Qwen original: https://huggingface.co/Qwen/Qwen3.8-27B
 - GitHub del modelo OBLITERATED (bigguy8585/ai): https://github.com/bigguy8585/ai/tree/main/Qwen3.8-27B-OBLITERATED

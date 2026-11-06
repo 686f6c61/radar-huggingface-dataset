@@ -86,7 +86,7 @@ Nota: la comparativa se ofrece a título orientativo por categoría y tamaño; l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LiquidAI/LFM3-VL-2B-MLX-8bit
+- Repositorio en Hugging Face: https://huggingface.co/LiquidAI/LFM3-VL-2B-MLX-8bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Blog de la familia LFM3: https://www.liquid.ai/blog/lfm3
 - Documentación de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome

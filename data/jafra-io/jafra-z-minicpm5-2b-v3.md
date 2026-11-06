@@ -81,6 +81,6 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jafra-io/jafra-z-minicpm5-2b-v3
+- Hugging Face: https://huggingface.co/jafra-io/jafra-z-minicpm5-2b-v3
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

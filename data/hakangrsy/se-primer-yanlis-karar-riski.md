@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SE Primer v2 — Yanlış karar riski es un modelo de clasificación tabular publicado por el usuario Hakangrsy en HuggingFace. No es un modelo de lenguaje ni una red neuronal profunda: se trata de un pipeline clásico de scikit-learn compuesto por un `StandardScaler` seguido de una `LogisticRegression`, exportado a formato ONNX (opset 17). Su función es estimar la probabilidad de que un jugador tome una decisión incorrecta (`p_yanlis`) en un juego educativo llamado SE Primer, y activar una tarjeta de advertencia ("Kıdemli meslektaşın Selin arıyor") cuando esa probabilidad supera el umbral de 0,5.
+SE Primer v2 — Yanlış karar riski es un modelo de clasificación tabular publicado por el usuario Hakangrsy en Hugging Face. No es un modelo de lenguaje ni una red neuronal profunda: se trata de un pipeline clásico de scikit-learn compuesto por un `StandardScaler` seguido de una `LogisticRegression`, exportado a formato ONNX (opset 17). Su función es estimar la probabilidad de que un jugador tome una decisión incorrecta (`p_yanlis`) en un juego educativo llamado SE Primer, y activar una tarjeta de advertencia ("Kıdemli meslektaşın Selin arıyor") cuando esa probabilidad supera el umbral de 0,5.
 
 El modelo se entrenó con datos de solo 44 sesiones reales (132 decisiones) de 4 jugadores, lo que lo convierte en un artefacto educativo y de demostración más que en una herramienta de producción. La entrada es un vector float32 de 3 dimensiones (nivel de experiencia, indicador de decisión 2, indicador de decisión 3) y la salida son probabilidades para dos clases (decisión correcta o incorrecta).
 
@@ -90,5 +90,5 @@ No disponible. No se han proporcionado alternativas comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hakangrsy/se-primer-yanlis-karar-riski
+- Modelo en Hugging Face: https://huggingface.co/Hakangrsy/se-primer-yanlis-karar-riski
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

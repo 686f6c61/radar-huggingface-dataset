@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Realistic Vision V6.0 B1 "New Vision" es una versión beta del conocido checkpoint de Stable Diffusion 1.5 orientado a la generación de imágenes fotorrealistas. Desarrollado por SG161222 (publicado en HuggingFace bajo el usuario zw89), este modelo supone una actualización global de la serie Realistic Vision, con mejoras en resolución de salida, anatomía femenina y calidad general. Se distribuye sin VAE incluido, por lo que se recomienda usar el VAE de Stability AI (`sd-vae-ft-mse-original`) para evitar artefactos y mejorar la fidelidad cromática.
+Realistic Vision V6.0 B1 "New Vision" es una versión beta del conocido checkpoint de Stable Diffusion 1.5 orientado a la generación de imágenes fotorrealistas. Desarrollado por SG161222 (publicado en Hugging Face bajo el usuario zw89), este modelo supone una actualización global de la serie Realistic Vision, con mejoras en resolución de salida, anatomía femenina y calidad general. Se distribuye sin VAE incluido, por lo que se recomienda usar el VAE de Stability AI (`sd-vae-ft-mse-original`) para evitar artefactos y mejorar la fidelidad cromática.
 
 El modelo está pensado para usuarios de Automatic1111, ComfyUI y otras interfaces de difusión. Al ser una beta, el autor advierte que aún pueden aparecer mutaciones o duplicaciones en ciertas resoluciones altas, que se corregirán en versiones posteriores. Su licencia `creativeml-openrail-m` permite uso comercial con restricciones.
 
@@ -71,8 +71,8 @@ No se dispone de datos comparativos objetivos (benchmarks) con otros modelos de 
 
 ## Enlaces
 
-- HuggingFace (pagina del modelo): https://huggingface.co/zw89/Realistic_Vision_V6.0_B1_noVAE
-- HuggingFace (autor original SG161222): https://huggingface.co/SG161222/Realistic_Vision_V6.0_B1_noVAE
+- Hugging Face (pagina del modelo): https://huggingface.co/zw89/Realistic_Vision_V6.0_B1_noVAE
+- Hugging Face (autor original SG161222): https://huggingface.co/SG161222/Realistic_Vision_V6.0_B1_noVAE
 - Archivo del checkpoint: https://huggingface.co/SG161222/Realistic_Vision_V6.0_B1_noVAE/blob/main/Realistic_Vision_V6.0_NV_B1.safetensors
 - Pagina en CivitAI: https://civitai.com/models/4201/realistic-vision-v60-b1
 - VAE recomendado: https://huggingface.co/stabilityai/sd-vae-ft-mse-original

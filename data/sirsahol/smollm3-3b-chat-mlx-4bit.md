@@ -50,7 +50,7 @@ Al ser una conversión weight-only, las capacidades son las del modelo base Smol
 - Generación de texto offline en aplicaciones macOS: la API Python (`from mlx_lm import load, generate`) permite integrar el modelo dentro de una app de escritorio sin dependencia de red ni coste por token.
 - Procesamiento de documentos sensibles sin salida a la nube: al ejecutarse íntegramente en local, es apto para borradores de resúmenes o reformulaciones de contenido sujeto a confidencialidad, siempre que se asuma la pérdida de calidad de la cuantización de 4 bits.
 - Prototipado rápido de pipelines de prompting antes de escalar: permite iterar sobre plantillas y estrategias de generación en un portátil a 24,6 tokens/s, y después replicar la lógica sobre el modelo en precisión completa o sobre infraestructura con GPU.
-- Evaluación del impacto de la cuantización: al existir el modelo base en HuggingFace, este artefacto sirve como referencia para medir la degradación de 4 bits frente a 8 y 16 bits en tareas concretas del usuario.
+- Evaluación del impacto de la cuantización: al existir el modelo base en Hugging Face, este artefacto sirve como referencia para medir la degradación de 4 bits frente a 8 y 16 bits en tareas concretas del usuario.
 - Educación y demostraciones: un coste de memoria de 1,4 GB hace viable desplegar el modelo en aulas o talleres con hardware de consumo Apple, sin acceso a clústeres.
 - Comparación de latencia en Apple Silicon: sirve como referencia de throughput (24,6 tokens/s en M1 de 8 GB) para calibrar expectativas en proyectos que deban decidir entre ejecución local y remota.
 - Generación de borradores de texto técnico o código en local: uso plausible dada la naturaleza del modelo base, aunque no hay benchmarks publicados que lo respalden en esta cuantización concreta.
@@ -100,7 +100,7 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SirSahOl/SmolLM3-3B-chat-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/SirSahOl/SmolLM3-3B-chat-mlx-4bit
 - Modelo base (HuggingFaceTB/SmolLM3-3B): https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Perfil del autor: https://huggingface.co/SirSahOl
 - Librería MLX de Apple: https://github.com/ml-explore/mlx

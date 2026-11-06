@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario DSAD1DSA, publicado el 16 de septiembre de 2026 y con un tamano de repositorio de 0,0 GB, es decir, sin pesos ni ficheros de modelo descargables en el momento de la consulta. La model card asociada describe un supuesto modelo generativo de razonamiento con modo de pensamiento, soporte de function calling, busqueda web y subida de ficheros, y afirma mejoras en AIME 2025 (del 70 % al 87,5 % de precision) atribuidas a un aumento del numero medio de tokens de razonamiento por pregunta (de 12K a 23K). Sin embargo, los metadatos de HuggingFace clasifican el repositorio como `bert`, pipeline `feature-extraction` y libreria `transformers` con PyTorch, lo que contradice frontalmente la model card.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario DSAD1DSA, publicado el 16 de septiembre de 2026 y con un tamano de repositorio de 0,0 GB, es decir, sin pesos ni ficheros de modelo descargables en el momento de la consulta. La model card asociada describe un supuesto modelo generativo de razonamiento con modo de pensamiento, soporte de function calling, busqueda web y subida de ficheros, y afirma mejoras en AIME 2025 (del 70 % al 87,5 % de precision) atribuidas a un aumento del numero medio de tokens de razonamiento por pregunta (de 12K a 23K). Sin embargo, los metadatos de Hugging Face clasifican el repositorio como `bert`, pipeline `feature-extraction` y libreria `transformers` con PyTorch, lo que contradice frontalmente la model card.
 
 No se dispone de informacion verificable sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, datos de entrenamiento ni idiomas soportados. El repositorio tiene 0 descargas y 0 likes, y su nombre ("TestRepo") junto con la ausencia total de artefactos sugiere que se trata de un repositorio de prueba o de una plantilla, no de un modelo entrenado y desplegable.
 
@@ -12,18 +12,18 @@ Por tanto, esta ficha debe leerse como una evaluacion de la documentacion declar
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. Los tags de HuggingFace indican `bert` (encoder); la model card describe un modelo generativo de razonamiento con modo de pensamiento. Informacion contradictoria |
+| Arquitectura | No disponible. Los tags de Hugging Face indican `bert` (encoder); la model card describe un modelo generativo de razonamiento con modo de pensamiento. Informacion contradictoria |
 | Parametros totales | No disponible |
 | Parametros activos | No disponible (no se declara que sea MoE) |
 | Longitud de contexto | No disponible. La model card solo menciona un consumo medio de 23K tokens por pregunta en AIME 2025, dato que no equivale a ventana de contexto |
 | Tipos de cuantizacion | No disponible. No se publican pesos en FP16, BF16, GGUF, AWQ ni GPTQ |
-| Idiomas soportados | No disponible. El campo de idiomas de HuggingFace esta vacio |
+| Idiomas soportados | No disponible. El campo de idiomas de Hugging Face esta vacio |
 | Licencia | MIT |
 | Formato de pesos | No disponible. Tamano del repositorio: 0,0 GB, sin ficheros `safetensors`, `bin` ni `GGUF` |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible es internamente incoherente. Los metadatos de HuggingFace (tags `transformers`, `pytorch`, `bert`, `feature-extraction`, `endpoints_compatible`) apuntan a un modelo encoder-only de la familia BERT orientado a extraccion de caracteristicas, sin capacidad generativa. La model card, en cambio, describe un asistente generativo conversacional con razonamiento extendido, modo de pensamiento, soporte de prompt de sistema, plantillas para subida de ficheros y busqueda web, y function calling mejorado. Ambas descripciones no pueden corresponder al mismo artefacto tal y como esta publicado.
+La informacion disponible es internamente incoherente. Los metadatos de Hugging Face (tags `transformers`, `pytorch`, `bert`, `feature-extraction`, `endpoints_compatible`) apuntan a un modelo encoder-only de la familia BERT orientado a extraccion de caracteristicas, sin capacidad generativa. La model card, en cambio, describe un asistente generativo conversacional con razonamiento extendido, modo de pensamiento, soporte de prompt de sistema, plantillas para subida de ficheros y busqueda web, y function calling mejorado. Ambas descripciones no pueden corresponder al mismo artefacto tal y como esta publicado.
 
 Respecto al entrenamiento, la model card afirma que la version actual mejora "la profundidad de razonamiento" mediante mas recursos de computo y "mecanismos de optimizacion algoritmica durante el post-entrenamiento", pero no especifica numero de tokens, composicion del dataset, ni si se emplearon tecnicas concretas de alineamiento como RLHF, DPO o RLVR. Tampoco se documenta ninguna innovacion arquitectonica verificable (atencion lineal, decodificacion especulativa, atencion dispersa, MoE). El texto menciona la existencia de una variante "MyAwesomeModel-Small" que comparte tokenizador con el modelo principal, pero no se aportan pesos ni configuracion de ninguna de las dos.
 
@@ -81,7 +81,7 @@ Ademas, la model card afirma una mejora en AIME 2025 del 70 % al 87,5 % de preci
 - VRAM estimada para inferencia: no disponible. Sin conocer el numero de parametros ni la arquitectura, no es posible estimar requisitos de memoria.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: no disponible. El repositorio no incluye pesos en `safetensors`, `GGUF` ni formatos cuantizados, por lo que no se puede desplegar con vLLM, llama.cpp, Ollama, TGI ni transformers. Los tags incluyen `endpoints_compatible`, lo que sugiere compatibilidad nominal con los endpoints de HuggingFace, pero sin artefactos publicados no hay nada que servir.
+- Opciones de despliegue: no disponible. El repositorio no incluye pesos en `safetensors`, `GGUF` ni formatos cuantizados, por lo que no se puede desplegar con vLLM, llama.cpp, Ollama, TGI ni transformers. Los tags incluyen `endpoints_compatible`, lo que sugiere compatibilidad nominal con los endpoints de Hugging Face, pero sin artefactos publicados no hay nada que servir.
 - Latencia y throughput estimados: no disponible. La model card menciona un consumo medio de 23K tokens por pregunta en AIME como indicador de profundidad de razonamiento, lo que implicaria una latencia elevada en tareas complejas, pero no se aportan mediciones de tokens por segundo ni de tiempo de respuesta.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ No disponible. No es posible establecer una comparativa fiable por tres motivos:
 
 ## Limitaciones y advertencias
 
-- Contradiccion documental grave: los metadatos de HuggingFace indican `bert` y `feature-extraction`, mientras que la model card describe un asistente generativo con razonamiento y tool calling. Cualquier decision tecnica basada en esta ficha es prematura.
+- Contradiccion documental grave: los metadatos de Hugging Face indican `bert` y `feature-extraction`, mientras que la model card describe un asistente generativo con razonamiento y tool calling. Cualquier decision tecnica basada en esta ficha es prematura.
 - Repositorio vacio: 0,0 GB de tamano, 0 descargas y 0 likes. No hay pesos, tokenizador ni fichero de configuracion, por lo que el modelo no es ejecutable en su estado actual.
 - Benchmarks no verificables: los valores de la tabla carecen de nombre de benchmark, metodologia, version de evaluacion y modelos de comparacion identificables.
 - Afirmaciones no respaldadas: la mejora en AIME 2025 (70 % a 87,5 %) no se acompana de evidencia reproducible ni de un informe tecnico enlazado.
@@ -103,7 +103,7 @@ No disponible. No es posible establecer una comparativa fiable por tres motivos:
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DSAD1DSA/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/DSAD1DSA/MyAwesomeModel-TestRepo
 - Model card del autor: disponible en la misma URL del repositorio (seccion README)
 - Paper tecnico: no disponible
 - Repositorio de codigo: la model card menciona "our code repository" y un "official website", pero no incluye ningun enlace a los mismos

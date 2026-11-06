@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`liserman/climaparl-xlm_roberta_large` es un modelo de clasificación de texto publicado en HuggingFace por el usuario `liserman`, construido sobre la arquitectura XLM-RoBERTa-large. El repositorio contiene 559.893.507 parámetros (dato extraído directamente de los pesos en safetensors) y ocupa 1,1 GB, lo que coincide con pesos almacenados en fp16/bf16. La librería declarada es transformers y el pipeline asignado es `text-classification`.
+`liserman/climaparl-xlm_roberta_large` es un modelo de clasificación de texto publicado en Hugging Face por el usuario `liserman`, construido sobre la arquitectura XLM-RoBERTa-large. El repositorio contiene 559.893.507 parámetros (dato extraído directamente de los pesos en safetensors) y ocupa 1,1 GB, lo que coincide con pesos almacenados en fp16/bf16. La librería declarada es transformers y el pipeline asignado es `text-classification`.
 
-El identificador del modelo sugiere un ajuste fino orientado a un dominio concreto (la combinación "clima" + "parl" apunta a textos climáticos o parlamentarios), pero la model card no confirma ni el dominio, ni el dataset, ni el procedimiento de entrenamiento: es la plantilla automática de HuggingFace sin rellenar. Tampoco se declaran licencia, idiomas soportados, autoría real ni métricas de evaluación.
+El identificador del modelo sugiere un ajuste fino orientado a un dominio concreto (la combinación "clima" + "parl" apunta a textos climáticos o parlamentarios), pero la model card no confirma ni el dominio, ni el dataset, ni el procedimiento de entrenamiento: es la plantilla automática de Hugging Face sin rellenar. Tampoco se declaran licencia, idiomas soportados, autoría real ni métricas de evaluación.
 
 La relevancia de esta ficha es limitada y conviene ser explícito: se trata de un repositorio sin descargas ni "likes" en el momento de la consulta, sin documentación técnica y sin resultados publicados. Su interés práctico radica en que, al derivar de XLM-RoBERTa-large, hereda el comportamiento multilingüe (100 idiomas) y la ventana de 512 tokens de la arquitectura base, por lo que puede utilizarse como punto de partida para clasificación multilingüe siempre que se valide su comportamiento de forma independiente.
 
@@ -31,7 +31,7 @@ No hay información disponible sobre el entrenamiento: se desconoce el dataset, 
 
 - Clasificación de texto por secuencia, con la etiqueta correspondiente según la cabeza entrenada. El número y nombre de clases no está documentado.
 - Extracción de embeddings contextuales multilingües por token y por secuencia (uso como encoder dentro de `text-embeddings-inference`).
-- Etiquetado compatible con `endpoints_compatible`, es decir, desplegable en HuggingFace Inference Endpoints.
+- Etiquetado compatible con `endpoints_compatible`, es decir, desplegable en Hugging Face Inference Endpoints.
 - Capacidad multilingüe heredada de XLM-RoBERTa-large (100 idiomas en el modelo base), no verificada en este ajuste concreto.
 - No soporta generación de texto, tool calling, function calling, agentes ni razonamiento multi-paso: es un encoder de clasificación.
 - No dispone de modo "thinking", visión, audio ni ninguna modalidad distinta de texto.
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en inferencia: aproximadamente 2,2 GB en fp32, 1,1 GB en fp16/bf16 y 0,6 GB en int8 (esta última requiere cuantización posterior, no incluida en el repositorio).
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para fp16 en lotes pequeños; A100, H100, L40S o RTX 3090/4090 para despliegues con lotes grandes y baja latencia.
 - Compatible con GPU de consumo: sí. Cabe sin problema en RTX 3060 (12 GB), RTX 4060 Ti, RTX 4070, RTX 4090 e incluso en GPUs integradas modestas si se limita el tamaño de lote.
-- Opciones de despliegue: transformers con PyTorch, HuggingFace Inference Endpoints, `text-embeddings-inference` para extracción de embeddings, ONNX Runtime o TensorRT para optimización, y exportación a GGUF si se requiere ejecución en CPU.
+- Opciones de despliegue: transformers con PyTorch, Hugging Face Inference Endpoints, `text-embeddings-inference` para extracción de embeddings, ONNX Runtime o TensorRT para optimización, y exportación a GGUF si se requiere ejecución en CPU.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liserman/climaparl-xlm_roberta_large | 559,9 M | 512 tokens (heredado) | no disponible | no disponible | HuggingFace, 0 descargas |
-| XLM-RoBERTa-large (FacebookAI) | 559,9 M | 512 tokens | 100 | MIT | HuggingFace, ampliamente usado |
-| mDeBERTa-v3-base (Microsoft) | ~278 M | 512 tokens | 100 | MIT | HuggingFace |
-| BERT-base-multilingual-cased (Google) | ~178 M | 512 tokens | 104 | Apache 2.0 | HuggingFace |
+| liserman/climaparl-xlm_roberta_large | 559,9 M | 512 tokens (heredado) | no disponible | no disponible | Hugging Face, 0 descargas |
+| XLM-RoBERTa-large (FacebookAI) | 559,9 M | 512 tokens | 100 | MIT | Hugging Face, ampliamente usado |
+| mDeBERTa-v3-base (Microsoft) | ~278 M | 512 tokens | 100 | MIT | Hugging Face |
+| BERT-base-multilingual-cased (Google) | ~178 M | 512 tokens | 104 | Apache 2.0 | Hugging Face |
 
 La comparación con XLM-RoBERTa-large es directa: mismo tamaño de parámetros y misma arquitectura, con la diferencia de que este repositorio no aporta documentación, licencia ni métricas. Frente a mDeBERTa-v3-base ofrece el doble de parámetros y potencialmente mayor capacidad representacional, pero también mayor coste de inferencia. No hay datos de rendimiento que permitan comparar calidad de clasificación.
 
@@ -83,7 +83,7 @@ La comparación con XLM-RoBERTa-large es directa: mismo tamaño de parámetros y
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/liserman/climaparl-xlm_roberta_large
+- Página del modelo en Hugging Face: https://huggingface.co/liserman/climaparl-xlm_roberta_large
 - Modelo base XLM-RoBERTa-large: https://huggingface.co/FacebookAI/xlm-roberta-large
 - Paper de XLM-R (Unsupervised Cross-lingual Representation Learning at Scale): https://arxiv.org/abs/1911.02116
 - Referencia arXiv presente en los tags del repositorio (arxiv:1910.09700), correspondiente a "Quantifying the Carbon Emissions of Machine Learning": https://arxiv.org/abs/1910.09700

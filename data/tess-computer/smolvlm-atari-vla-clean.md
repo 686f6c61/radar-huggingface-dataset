@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada en terminos de adopcion: en el momento d
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `HuggingFaceTB.SmolVLM-500M-Instruct`, cuyo tag `idefics3` en HuggingFace identifica la arquitectura de la familia Idefics3: un transformer multimodal que proyecta representaciones de un encoder de vision al espacio del decodificador de lenguaje para permitir la generacion de texto condicionada por imagenes. El modelo base es la variante "Instruct" de 500 millones de parametros, ya alineada para seguir instrucciones. El ajuste fino aqui descrito conserva esa arquitectura y modifica los pesos mediante aprendizaje supervisado.
+El modelo parte de `HuggingFaceTB.SmolVLM-500M-Instruct`, cuyo tag `idefics3` en Hugging Face identifica la arquitectura de la familia Idefics3: un transformer multimodal que proyecta representaciones de un encoder de vision al espacio del decodificador de lenguaje para permitir la generacion de texto condicionada por imagenes. El modelo base es la variante "Instruct" de 500 millones de parametros, ya alineada para seguir instrucciones. El ajuste fino aqui descrito conserva esa arquitectura y modifica los pesos mediante aprendizaje supervisado.
 
 El entrenamiento se realizo con SFT (supervised fine-tuning) usando TRL 0.26.1, sobre Transformers 4.57.3, PyTorch 2.9.1, Datasets 4.4.1 y Tokenizers 0.22.1. La model card no especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas adicionales como RLHF o DPO. El sufijo "clean" en el nombre del repositorio sugiere una version depurada o filtrada de un ajuste previo, pero no hay documentacion que lo confirme. Tampoco se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal u otras).
 
@@ -32,7 +32,7 @@ El entrenamiento se realizo con SFT (supervised fine-tuning) usando TRL 0.26.1, 
 - Generacion de texto condicionada por imagen (pipeline `image-text-to-text`).
 - Conversacion multi-turno, segun el tag `conversational` del repositorio.
 - Alineacion para seguir instrucciones heredada del modelo base `SmolVLM-500M-Instruct`.
-- Compatibilidad con `transformers` y con el ecosistema de endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad con `transformers` y con el ecosistema de endpoints de Hugging Face (tag `endpoints_compatible`).
 - Capacidad potencial de vision-language-action (VLA) para entornos tipo Atari, inferida unicamente del nombre del modelo; no confirmada en la model card.
 - Soporte de tool calling / function calling: no documentado.
 - Soporte de agentes y razonamiento multi-paso: no documentado.
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `TESS-Computer/smolvlm-atari-vla-clean` | 507 M | no disponible | no disponible | HuggingFace (0 descargas) |
-| `HuggingFaceTB/SmolVLM-500M-Instruct` (base) | ~500 M | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
-| Otros VLM pequenos (por ejemplo, variantes de SmolVLM-256M o Qwen2-VL-2B) | 256 M - 2 B | no disponible | variable | HuggingFace |
+| `TESS-Computer/smolvlm-atari-vla-clean` | 507 M | no disponible | no disponible | Hugging Face (0 descargas) |
+| `HuggingFaceTB/SmolVLM-500M-Instruct` (base) | ~500 M | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
+| Otros VLM pequenos (por ejemplo, variantes de SmolVLM-256M o Qwen2-VL-2B) | 256 M - 2 B | no disponible | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada.
 
@@ -89,6 +89,6 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TESS-Computer/smolvlm-atari-vla-clean
+- Hugging Face: https://huggingface.co/TESS-Computer/smolvlm-atari-vla-clean
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct
 - Repositorio TRL: https://github.com/huggingface/trl

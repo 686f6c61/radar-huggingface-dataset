@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo "Aram" es un modelo publicado en el repositorio de HuggingFace con identificador Aram2009iq2/Aram, creado por el usuario Aram2009iq2. La única información técnica disponible es que se distribuye bajo licencia Apache 2.0. No se ha publicado ninguna documentación, model card detallada, código de entrenamiento, arquitectura, tamaño ni datos de evaluación. A fecha de la consulta, el repositorio no registra descargas ni likes.
+El modelo "Aram" es un modelo publicado en el repositorio de Hugging Face con identificador Aram2009iq2/Aram, creado por el usuario Aram2009iq2. La única información técnica disponible es que se distribuye bajo licencia Apache 2.0. No se ha publicado ninguna documentación, model card detallada, código de entrenamiento, arquitectura, tamaño ni datos de evaluación. A fecha de la consulta, el repositorio no registra descargas ni likes.
 
 Por tanto, no es posible determinar qué tipo de modelo es (lenguaje, visión, etc.) ni su finalidad. La relevancia actual es nula en términos de evaluación técnica, dado que no existe información suficiente para caracterizarlo. Cualquier uso en un entorno de desarrollo o investigación sería especulativo.
 
@@ -21,7 +21,7 @@ Por tanto, no es posible determinar qué tipo de modelo es (lenguaje, visión, e
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens procesados ni si se emplearon técnicas de alineación como RLHF o DPO. La model card publicada en HuggingFace solo contiene la cabecera de licencia, sin ninguna sección técnica. En consecuencia, no es posible describir ninguna innovación tecnológica.
+No se dispone de información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens procesados ni si se emplearon técnicas de alineación como RLHF o DPO. La model card publicada en Hugging Face solo contiene la cabecera de licencia, sin ninguna sección técnica. En consecuencia, no es posible describir ninguna innovación tecnológica.
 
 ## Capacidades
 
@@ -52,6 +52,6 @@ No se dispone de información técnica para comparar este modelo con alternativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aram2009iq2/Aram
+- Hugging Face: https://huggingface.co/Aram2009iq2/Aram
 
 Nota: en la búsqueda web aparecieron referencias a un modelo de arte llamado "Aram" en PixAI y a un script "aram_model.py" en GitHub, pero no se ha podido confirmar que estén relacionados con este repositorio.

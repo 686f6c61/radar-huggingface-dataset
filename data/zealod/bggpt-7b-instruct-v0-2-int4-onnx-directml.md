@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato / backend | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BgGPT-7B-Instruct-v0.2-int4-onnx-directml (este) | ~7B | no disponible | ONNX INT4 / DirectML | Apache 2.0 | HuggingFace (zealod) |
-| INSAIT-Institute/BgGPT-7B-Instruct-v0.2 (base) | ~7B | no disponible | safetensors / PyTorch | Apache 2.0 | HuggingFace (INSAIT) |
-| Mistral 7B v0.2 Instruct | ~7B | no disponible en esta ficha | safetensors, GGUF (comunidad) | Apache 2.0 | HuggingFace (Mistral AI) |
+| BgGPT-7B-Instruct-v0.2-int4-onnx-directml (este) | ~7B | no disponible | ONNX INT4 / DirectML | Apache 2.0 | Hugging Face (zealod) |
+| INSAIT-Institute/BgGPT-7B-Instruct-v0.2 (base) | ~7B | no disponible | safetensors / PyTorch | Apache 2.0 | Hugging Face (INSAIT) |
+| Mistral 7B v0.2 Instruct | ~7B | no disponible en esta ficha | safetensors, GGUF (comunidad) | Apache 2.0 | Hugging Face (Mistral AI) |
 
 La comparación con Mistral 7B v0.2 se justifica porque la model card indica que BgGPT está basado en dicha arquitectura. No se dispone de datos de benchmarks para comparar rendimiento entre estas variantes en la información proporcionada.
 
@@ -90,6 +90,6 @@ La comparación con Mistral 7B v0.2 se justifica porque la model card indica que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zealod/BgGPT-7B-Instruct-v0.2-int4-onnx-directml
+- Modelo en Hugging Face: https://huggingface.co/zealod/BgGPT-7B-Instruct-v0.2-int4-onnx-directml
 - Modelo base: https://huggingface.co/INSAIT-Institute/BgGPT-7B-Instruct-v0.2
 - INSAIT Institute: https://insait.ai/

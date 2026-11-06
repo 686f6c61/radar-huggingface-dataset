@@ -90,7 +90,7 @@ PVTv2-B1 ofrece un mejor equilibrio entre tamano y precision que ResNet-50, con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeromodels/pvt-v2-b1
+- Modelo en Hugging Face: https://huggingface.co/zeromodels/pvt-v2-b1
 - Paper original: https://arxiv.org/abs/2106.13797
 - Repositorio oficial de PVT: https://github.com/whai362/PVT
 - Documentacion de ZeroModels para PVTv2: https://imvision12.github.io/ZeroModels/pvt_v2/

@@ -62,5 +62,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - gyung/gdn2-cpt-rf-chkpt-tk4-fineweb](https://huggingface.co/gyung/gdn2-cpt-rf-chkpt-tk4-fineweb)
+- [Hugging Face - gyung/gdn2-cpt-rf-chkpt-tk4-fineweb](https://huggingface.co/gyung/gdn2-cpt-rf-chkpt-tk4-fineweb)
 - [Dataset relacionado - gyung/gdn2-cpt-longdata-30k](https://huggingface.co/datasets/gyung/gdn2-cpt-longdata-30k)

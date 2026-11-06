@@ -82,6 +82,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-Abliterated-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-Abliterated-MLX-4bit
 - Modelo base (abliterado BF16): https://huggingface.co/Blackfrost-Research/Muse-Glimmer-30B-Abliterated-BF16
 - Modelo original (Meta): https://huggingface.co/meta-models/Muse-Glimmer-30B

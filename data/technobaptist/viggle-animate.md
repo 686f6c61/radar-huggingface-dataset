@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Viggle-Animate es un modelo de video-to-video desarrollado por Viggle y publicado en HuggingFace por TechnoBaptist. Reemplaza el personaje de un video con lo que se pinte en uno de sus propios frames, manteniendo el movimiento, la cámara y el timing intactos. Es un finetune completo de 33,1 B parámetros del transformador ref2va de MiniMax-H3, destilado con DMD a solo tres forward passes. A diferencia de otros sistemas de reemplazo de personajes, no utiliza pose estimators, segmentadores, face trackers ni text encoder: la apariencia entra solo por el frame repintado y la geometría por el video de conducción. El flujo típico es repintar un frame con un modelo de imagen y dejar que Viggle-Animate propague el cambio al clip. Es relevante por su eficiencia: renderiza 124 frames en 26 segundos en una B200, 6,1 veces más rápido que Wan2.2-Animate-14B, y generaliza a cualquier tipo de personaje porque no asume anatomía humana.
+Viggle-Animate es un modelo de video-to-video desarrollado por Viggle y publicado en Hugging Face por TechnoBaptist. Reemplaza el personaje de un video con lo que se pinte en uno de sus propios frames, manteniendo el movimiento, la cámara y el timing intactos. Es un finetune completo de 33,1 B parámetros del transformador ref2va de MiniMax-H3, destilado con DMD a solo tres forward passes. A diferencia de otros sistemas de reemplazo de personajes, no utiliza pose estimators, segmentadores, face trackers ni text encoder: la apariencia entra solo por el frame repintado y la geometría por el video de conducción. El flujo típico es repintar un frame con un modelo de imagen y dejar que Viggle-Animate propague el cambio al clip. Es relevante por su eficiencia: renderiza 124 frames en 26 segundos en una B200, 6,1 veces más rápido que Wan2.2-Animate-14B, y generaliza a cualquier tipo de personaje porque no asume anatomía humana.
 
 ## Especificaciones técnicas
 
@@ -60,14 +60,14 @@ No se han publicado resultados de benchmarks de calidad en la información dispo
 - VRAM estimada para inferencia: ~68 GB en bf16, según el tamaño del repo (68,9 GB). No se han publicado datos de cuantización.
 - GPU recomendadas: la evaluación del autor se realizó en una NVIDIA B200; no se han publicado otras recomendaciones.
 - No cabe en GPUs de consumo (8-24 GB de VRAM); requiere hardware profesional.
-- Opciones de despliegue: compatible con la librería Diffusers de HuggingFace. No se han publicado integraciones con vLLM, TGI, Ollama ni llama.cpp.
+- Opciones de despliegue: compatible con la librería Diffusers de Hugging Face. No se han publicado integraciones con vLLM, TGI, Ollama ni llama.cpp.
 - Latencia: 26 s por render de 124 frames a 24 fps en B200. Throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Viggle-Animate | 33,1 B | no disponible | 124 frames en 26 s (B200), 6,1× más rápido que Wan2.2-Animate-14B | minimax-h3-community-license | HuggingFace |
+| Viggle-Animate | 33,1 B | no disponible | 124 frames en 26 s (B200), 6,1× más rápido que Wan2.2-Animate-14B | minimax-h3-community-license | Hugging Face |
 | Wan2.2-Animate-14B | 14 B | no disponible | no disponible | no disponible | no disponible |
 
 Solo se dispone del dato de velocidad relativa frente a Wan2.2-Animate-14B; no se han publicado comparativas de calidad perceptual ni otros benchmarks.
@@ -82,7 +82,7 @@ Solo se dispone del dato de velocidad relativa frente a Wan2.2-Animate-14B; no s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TechnoBaptist/Viggle-Animate
+- Hugging Face: https://huggingface.co/TechnoBaptist/Viggle-Animate
 - Demo: https://huggingface.co/spaces/Viggle/viggle-animate
 - Sitio web: https://viggle.ai/h3
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3

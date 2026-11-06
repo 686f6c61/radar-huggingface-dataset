@@ -79,7 +79,7 @@ No se dispone de datos comparativos en la información proporcionada. El modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/sqa-grpo-vanilla-step1200
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/sqa-grpo-vanilla-step1200
 - Documentación de GRPO en verl: https://verl.readthedocs.io/en/latest/algo/grpo.html
 - Perfil de GitHub del autor: https://github.com/sandeep123 (no específico del modelo)
 - Otro checkpoint del mismo autor (grpo-math20-vanilla-step1160): https://huggingface.co/sandeep123/grpo-math20-vanilla-step1160

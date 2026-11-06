@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "shueyinranger/t5-small-samsum-demo",
+  "slug": "shueyinranger-t5-small-samsum-demo",
+  "author": "shueyinranger",
+  "url": "https://huggingface.co/shueyinranger/t5-small-samsum-demo",
+  "created_at": "2026-11-05T04:25:07.000Z",
+  "updated_at": "2026-11-06T09:42:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "generated_from_trainer",
+    "base_model:google-t5/t5-small",
+    "base_model:finetune:google-t5/t5-small",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 60506624,
+  "parameters_human": "60.5M",
+  "storage_bytes": 726136474,
+  "storage_human": "726 MB",
+  "base_model": "google-t5/t5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Summarization",
+      "dataset": "samsum",
+      "metric": "ROUGE-1",
+      "value": 0.3277
+    },
+    {
+      "task": "Summarization",
+      "dataset": "samsum",
+      "metric": "ROUGE-2",
+      "value": 0.1079
+    },
+    {
+      "task": "Summarization",
+      "dataset": "samsum",
+      "metric": "ROUGE-L",
+      "value": 0.2648
+    }
+  ],
+  "sources": [
+    {
+      "title": "Prikshit7766/t5-small-samsum · Hugging Face",
+      "url": "https://huggingface.co/Prikshit7766/t5-small-samsum",
+      "snippet": "t5-small-samsum This model is a fine-tuned version of google-t5/t5-small on an samsum dataset. It achieves the following results on the evaluation set: Loss: 1.6507 Training procedure Training hyperparameters The following hyperparameters were used during training: learning_rate: 2e-05 train_batch_size: 8 eval_batch_size: 32 seed: 42 gradient_accumulation_steps: 4 total_train_batch_size: 32 ..."
+    },
+    {
+      "title": "GitHub - mubix-dev/t5-text-summarizer: Full-stack AI text summarizer ...",
+      "url": "https://github.com/mubix-dev/t5-text-summarizer",
+      "snippet": "Full-stack AI text summarizer — a t5-small transformer fine-tuned on the SAMSum dialogue dataset, served with FastAPI and a React + Tailwind frontend. Runs 100% locally, no external APIs."
+    }
+  ]
+}

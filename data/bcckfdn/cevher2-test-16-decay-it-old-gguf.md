@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 0,9 GB con Q4_K_M, 1,1 GB con Q5_K_M, 1,6 GB con Q8_0 y 2,9 GB con BF16, sin contar el overhead del contexto.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para las cuantizaciones pequeñas (GTX 1650, RTX 3050, RTX 4060); para BF16 se recomienda al menos 6 GB (RTX 3060, RTX 4060 Ti). En A100 o H100 funcionaría sin problema, pero está sobredimensionado para este modelo.
 - Cabe en GPU de consumo: sí, en todas las cuantizaciones indicadas, incluidas GPUs de gama de entrada.
-- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama, LM Studio; también es compatible con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama, LM Studio; también es compatible con endpoints de Hugging Face (tag `endpoints_compatible`).
 - Latencia y throughput estimados: no disponibles; al ser un modelo de 1,5B, en GPUs de consumo se espera una generación fluida, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ La comparativa se basa en datos públicos de los modelos alternativos; no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/bcckfdn/cevher2-test-16-decay-it-old-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/bcckfdn/cevher2-test-16-decay-it-old-GGUF
 - Modelo base: https://huggingface.co/bcckfdn/cevher2-test-16-decay-it
 - llama.cpp: https://github.com/ggerganov/llama.cpp
 - Ollama: https://ollama.com

@@ -63,7 +63,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Honkware/gemma-4-31B-it-scotoma-2-exl3-4.0bpw
+- Repositorio de Hugging Face: https://huggingface.co/Honkware/gemma-4-31B-it-scotoma-2-exl3-4.0bpw
 - Modelo base: https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma-2
 - Coleccion de cuantizaciones (4.5 y 5.0 bpw): https://huggingface.co/collections/Honkware/gemma-4-31b-it-scotoma-2-exl3-6a823003c900a8baba78fdcf
 - ExLlamaV3: https://github.com/turboderp-org/exllamav3

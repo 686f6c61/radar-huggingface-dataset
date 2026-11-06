@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RRSI_robodojo es un repositorio publicado en HuggingFace por el usuario bolwang bajo licencia Apache 2.0. La model card asociada unicamente declara la licencia, sin ningun otro contenido descriptivo, por lo que no se dispone de informacion sobre el proposito, la arquitectura ni el proceso de entrenamiento del modelo. El nombre sugiere una posible relacion con robotica (por el sufijo "robodojo") y con alguna tecnica de refinamiento iterativo o supervision (por las siglas "RRSI"), pero esta interpretacion no esta confirmada por ninguna fuente.
+RRSI_robodojo es un repositorio publicado en Hugging Face por el usuario bolwang bajo licencia Apache 2.0. La model card asociada unicamente declara la licencia, sin ningun otro contenido descriptivo, por lo que no se dispone de informacion sobre el proposito, la arquitectura ni el proceso de entrenamiento del modelo. El nombre sugiere una posible relacion con robotica (por el sufijo "robodojo") y con alguna tecnica de refinamiento iterativo o supervision (por las siglas "RRSI"), pero esta interpretacion no esta confirmada por ninguna fuente.
 
 El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que indica que se trata de una publicacion reciente o de muy baja difusion. No se han publicado resultados de benchmarks, especificaciones tecnicas ni documentacion adicional en la informacion disponible.
 
@@ -65,5 +65,5 @@ No disponible. Al no conocerse la categoria, el tamano ni el dominio del modelo,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bolwang/RRSI_robodojo
+- Repositorio en Hugging Face: https://huggingface.co/bolwang/RRSI_robodojo
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nankaimechatronics/contrastive-finetuning81` es un repositorio de HuggingFace publicado por el usuario nankaimechatronics que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada "Mae" orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un artefacto listo para producción: el propio autor lo describe como material destinado a revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeña escala. El fichero `model.safetensors` incluido es un checkpoint de inicialización válido, pero explícitamente no entrenado y no presentado como checkpoint de referencia con benchmarks.
+`nankaimechatronics/contrastive-finetuning81` es un repositorio de Hugging Face publicado por el usuario nankaimechatronics que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada "Mae" orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un artefacto listo para producción: el propio autor lo describe como material destinado a revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeña escala. El fichero `model.safetensors` incluido es un checkpoint de inicialización válido, pero explícitamente no entrenado y no presentado como checkpoint de referencia con benchmarks.
 
 El tamaño declarado en los pesos es de 24.832 parámetros totales, lo que sitúa el artefacto en un rango puramente didáctico o de juguete (del orden de 0,025 millones de parámetros). El repositorio ocupa 0,0 GB, no tiene pipeline asignado, no declara idiomas soportados y acumula 0 descargas y 0 *likes* en el momento de la consulta. La licencia es BSD-3-Clause, permisiva y compatible con uso comercial del código.
 
@@ -88,5 +88,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nankaimechatronics/contrastive-finetuning81
+- Repositorio en Hugging Face: https://huggingface.co/nankaimechatronics/contrastive-finetuning81
 - Resultados de búsqueda web: no se han encontrado enlaces técnicos relevantes (papers, blogs, repositorios o demos) asociados a este modelo.

@@ -103,7 +103,7 @@ No se han identificado en la información disponible alternativas especializadas
 
 ## Enlaces
 
-- HuggingFace (esta cuantización): https://huggingface.co/mradermacher/knight-school-qwen3.5-2b-primer-m-GGUF
+- Hugging Face (esta cuantización): https://huggingface.co/mradermacher/knight-school-qwen3.5-2b-primer-m-GGUF
 - Modelo base: https://huggingface.co/nikext/knight-school-qwen3.5-2b-primer-m
 - Dataset de puzzles: https://huggingface.co/datasets/nikext/knight-school-chess-puzzles
 - Página de descargas del cuantizador para este modelo: https://hf.tst.eu/model#knight-school-qwen3.5-2b-primer-m-GGUF

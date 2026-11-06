@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Yacin464/false54` es un repositorio publicado en HuggingFace por el usuario Yacin464 bajo licencia Apache 2.0. La model card asociada contiene unicamente la declaracion de licencia, sin ninguna descripcion funcional, arquitectonica ni de entrenamiento. El repositorio no registra descargas ni interacciones en el momento de la consulta, y no declara pipeline, idiomas ni etiquetas de tarea.
+`Yacin464/false54` es un repositorio publicado en Hugging Face por el usuario Yacin464 bajo licencia Apache 2.0. La model card asociada contiene unicamente la declaracion de licencia, sin ninguna descripcion funcional, arquitectonica ni de entrenamiento. El repositorio no registra descargas ni interacciones en el momento de la consulta, y no declara pipeline, idiomas ni etiquetas de tarea.
 
 Por la informacion disponible no es posible determinar que tipo de modelo contiene el repositorio (lenguaje, vision, audio u otro), su arquitectura, su tamano ni su proposito. El identificador `false54` y la ausencia total de metadatos tecnicos sugieren un artefacto de prueba o un repositorio en estado embrionario, aunque esto no puede confirmarse con los datos proporcionados.
 
@@ -34,7 +34,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesad
 - No hay evidencia de soporte para agentes o razonamiento multi-paso.
 - No se declaran capacidades multilingues ni idiomas cubiertos.
 - No se declaran modos especiales (thinking mode, vision, audio u otros).
-- No se declara pipeline de inferencia en los metadatos de HuggingFace.
+- No se declara pipeline de inferencia en los metadatos de Hugging Face.
 
 ## Casos de uso
 
@@ -45,7 +45,7 @@ No es posible recomendar casos de uso concretos sin informacion sobre la arquite
 - Analisis de licencia en produccion: confirmar que la licencia Apache 2.0 declarada se aplica efectivamente a los pesos y no solo al repositorio.
 - Auditoria de seguridad: revisar posibles sesgos y alucinaciones mediante pruebas controladas antes de cualquier despliegue.
 - Integracion en pipelines: solo si tras la evaluacion el modelo demuestra capacidades verificables.
-- Uso educativo o de experimentacion: el repositorio puede servir como ejemplo de publicacion minima en HuggingFace, sin garantias de funcionalidad.
+- Uso educativo o de experimentacion: el repositorio puede servir como ejemplo de publicacion minima en Hugging Face, sin garantias de funcionalidad.
 
 ## Benchmarks y rendimiento
 
@@ -65,7 +65,7 @@ No es posible establecer una comparativa porque se desconoce la categoria, el ta
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Yacin464/false54 | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Yacin464/false54 | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,5 +80,5 @@ No es posible establecer una comparativa porque se desconoce la categoria, el ta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Yacin464/false54
+- Repositorio en Hugging Face: https://huggingface.co/Yacin464/false54
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

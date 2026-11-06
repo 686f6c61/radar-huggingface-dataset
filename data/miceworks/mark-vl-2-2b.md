@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mark-VL-2.2B es un modelo multimodal vision-lenguaje desarrollado por el usuario miceworks y publicado en HuggingFace. Combina un backbone de lenguaje nativo basado en la arquitectura DeepSeek2 (MoE con Multi-Head Latent Attention) con un adaptador proyector de visión especializado que transforma parches espaciales de imagen al espacio de embeddings de texto. El modelo tiene 2.174.310.096 parámetros físicos totales, de los cuales solo 395.499.216 están activos por token gracias a su naturaleza Mixture-of-Experts.
+Mark-VL-2.2B es un modelo multimodal vision-lenguaje desarrollado por el usuario miceworks y publicado en Hugging Face. Combina un backbone de lenguaje nativo basado en la arquitectura DeepSeek2 (MoE con Multi-Head Latent Attention) con un adaptador proyector de visión especializado que transforma parches espaciales de imagen al espacio de embeddings de texto. El modelo tiene 2.174.310.096 parámetros físicos totales, de los cuales solo 395.499.216 están activos por token gracias a su naturaleza Mixture-of-Experts.
 
 La relevancia de este modelo radica en su eficiencia: con solo 14 capas de transformer, dimensión oculta de 1280 y 24 expertos enrutados (2 activos por token), ofrece capacidades multimodales en un paquete de aproximadamente 1,17 GiB cuantizado en IQ4_NL. Esto lo hace desplegable en hardware de consumo mediante llama.cpp u Ollama, con una ventana de contexto de 16384 tokens.
 
@@ -86,4 +86,4 @@ Mark-VL-2.2B se distingue por su naturaleza MoE, que reduce los parámetros acti
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/miceworks/Mark-VL-2.2B
+- Hugging Face: https://huggingface.co/miceworks/Mark-VL-2.2B

@@ -88,7 +88,7 @@ Las tres variantes MLX comparten el mismo checkpoint fuente y difieren solo en p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/divinetribe/MiMo-V2.6-9B-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/divinetribe/MiMo-V2.6-9B-MLX-4bit
 - Checkpoint fuente: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Organizacion Xiaomi MiMo: https://huggingface.co/XiaomiMiMo
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B

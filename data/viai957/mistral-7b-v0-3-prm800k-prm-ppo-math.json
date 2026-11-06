@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "viai957/mistral-7b-v0.3-prm800k-prm-ppo-math",
+  "slug": "viai957-mistral-7b-v0-3-prm800k-prm-ppo-math",
+  "author": "viai957",
+  "url": "https://huggingface.co/viai957/mistral-7b-v0.3-prm800k-prm-ppo-math",
+  "created_at": "2026-11-04T03:21:19.000Z",
+  "updated_at": "2026-11-04T04:41:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "math",
+    "reasoning",
+    "process-reward-model",
+    "prm",
+    "ppo",
+    "rlhf",
+    "lora",
+    "negative-results",
+    "text-generation",
+    "en",
+    "dataset:tasksource/PRM800K",
+    "dataset:EleutherAI/hendrycks_math",
+    "dataset:HuggingFaceH4/MATH-500",
+    "dataset:openai/gsm8k",
+    "arxiv:2305.20050",
+    "arxiv:2312.08935",
+    "arxiv:2410.15115",
+    "arxiv:2103.03874",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45839199323,
+  "storage_human": "45.8 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Math word problems",
+      "dataset": "MATH-500",
+      "metric": "pass@1 (greedy",
+      "value": 0.09
+    },
+    {
+      "task": "Math word problems",
+      "dataset": "GSM8K test (first 500)",
+      "metric": "pass@1 (greedy",
+      "value": 0.258
+    }
+  ],
+  "sources": [
+    {
+      "title": "viai957/mistral-7b-v0.3-prm800k-prm-ppo-math · Hugging Face",
+      "url": "https://huggingface.co/viai957/mistral-7b-v0.3-prm800k-prm-ppo-math",
+      "snippet": "3.1 One backbone, three roles A second resident 7B reference model would need 27 GiB on a 22.5 GiB card, so one bf16 backbone serves as the policy, the KL reference and the PRM through PEFT adapter switching. The SFT weights are merged into the backbone first, so disabling all adapters yields exactly the SFT policy, which is the KL reference."
+    },
+    {
+      "title": "viai957/mistral-7b-v0.3-prm800k-prm-ppo-math · Discussions",
+      "url": "https://huggingface.co/viai957/mistral-7b-v0.3-prm800k-prm-ppo-math/discussions",
+      "snippet": "Instructions to use viai957/mistral-7b-v0.3-prm800k-prm-ppo-math with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

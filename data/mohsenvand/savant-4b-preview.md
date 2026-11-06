@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Savant-4B es un modelo de lenguaje pequeño desarrollado por mohsenvand, disponible como research preview en HuggingFace. Se trata de un fine-tune de Qwen3-4B (de Qwen, originalmente bajo Apache 2.0) cuya propuesta distintiva es el razonamiento computacional verificado paso a paso: en lugar de generar texto libre, el modelo "escribe un pequeño programa para la pregunta que tiene delante y ejecuta ese programa dentro de sus propias pasadas hacia adelante, un paso comprobado cada vez". No utiliza herramientas externas, ni intérpretes, ni acceso a internet.
+Savant-4B es un modelo de lenguaje pequeño desarrollado por mohsenvand, disponible como research preview en Hugging Face. Se trata de un fine-tune de Qwen3-4B (de Qwen, originalmente bajo Apache 2.0) cuya propuesta distintiva es el razonamiento computacional verificado paso a paso: en lugar de generar texto libre, el modelo "escribe un pequeño programa para la pregunta que tiene delante y ejecuta ese programa dentro de sus propias pasadas hacia adelante, un paso comprobado cada vez". No utiliza herramientas externas, ni intérpretes, ni acceso a internet.
 
 Su relevancia reside en el despliegue íntegramente en el navegador: el modelo se distribuye en formato ONNX con pesos cuantizados a 4 bits y está diseñado para ejecutarse con WebGPU mediante transformers.js, lo que permite probarlo sin servidor ni GPU dedicada. El autor advierte explícitamente que no es un asistente generalista ni está ajustado para seguridad, y que un paper con los detalles técnicos está pendiente de publicación. Con unos 4.000 millones de parámetros y un repositorio de 3,3 GB, se sitúa en la categoría de modelos compactos ejecutables en hardware de consumidor.
 
@@ -76,7 +76,7 @@ Savant-4B se distingue de sus alternativas en que no es un modelo generalista si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohsenvand/savant-4b-preview
+- Modelo en Hugging Face: https://huggingface.co/mohsenvand/savant-4b-preview
 - Demo en navegador: https://neovand.github.io/polyformer/interpreter
 - Licencia (LICENSE): https://huggingface.co/mohsenvand/savant-4b-preview/blob/main/LICENSE
 - NOTICE (derivado de Qwen3-4B): https://huggingface.co/mohsenvand/savant-4b-preview/blob/main/NOTICE

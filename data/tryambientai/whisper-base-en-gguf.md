@@ -110,7 +110,7 @@ La comparación con whisper-small.en se incluye por categoría de tamaño, pero 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tryambientai/whisper-base.en-gguf
+- Modelo en Hugging Face: https://huggingface.co/tryambientai/whisper-base.en-gguf
 - Modelo base: https://huggingface.co/openai/whisper-base.en
 - Commit del modelo base: https://huggingface.co/openai/whisper-base.en/commit/911407f
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

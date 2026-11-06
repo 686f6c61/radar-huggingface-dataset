@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cotcontrol-qwen38-qwen-smoke1 | Adaptador LoRA r32 sobre 27B | No disponible | Adaptador PEFT | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.8-27B (base) | 27B | No disponible | Modelo completo | Según el autor original | HuggingFace |
-| Adaptadores LoRA genéricos sobre Qwen | Variable | Heredado del base | Adaptador PEFT | Variable | HuggingFace |
+| cotcontrol-qwen38-qwen-smoke1 | Adaptador LoRA r32 sobre 27B | No disponible | Adaptador PEFT | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.8-27B (base) | 27B | No disponible | Modelo completo | Según el autor original | Hugging Face |
+| Adaptadores LoRA genéricos sobre Qwen | Variable | Heredado del base | Adaptador PEFT | Variable | Hugging Face |
 
 No se dispone de información sobre otros *model organisms* de controlabilidad de CoT directamente comparables en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de información sobre otros *model organisms* de controlabilidad d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-qwen38-qwen-smoke1
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-qwen38-qwen-smoke1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Código de entrenamiento y evaluaciones: https://github.com/johntrob14/tricky_little_guys
 - Directorio de RL: `cot-control/rl/` dentro del repositorio anterior

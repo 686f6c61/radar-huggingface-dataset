@@ -2,7 +2,7 @@
 
 ## Resumen
 
-williamlop/swin-t-multitask es un repositorio de HuggingFace que contiene una implementación propia de una Swin Transformer en su variante *tiny* orientada a aprendizaje multitarea. No se trata de un modelo entrenado ni de un *release* con pesos entrenados, sino de un punto de partida reproducible: el autor incluye el código de definición del modelo, una configuración de arquitectura, una receta de experimento por defecto y un *checkpoint* de inicialización válido únicamente para pruebas de humo.
+williamlop/swin-t-multitask es un repositorio de Hugging Face que contiene una implementación propia de una Swin Transformer en su variante *tiny* orientada a aprendizaje multitarea. No se trata de un modelo entrenado ni de un *release* con pesos entrenados, sino de un punto de partida reproducible: el autor incluye el código de definición del modelo, una configuración de arquitectura, una receta de experimento por defecto y un *checkpoint* de inicialización válido únicamente para pruebas de humo.
 
 El problema que aborda es el de ofrecer una base mínima y explícita para experimentar con multitarea sobre un *backbone* Swin-T, de forma que el investigador no tenga que reconstruir la arquitectura ni la configuración desde cero. La model card es explícita al señalar que el *checkpoint* `model.safetensors` "no ha sido entrenado ni auditado" para robustez, equidad o transferencia de dominio, y que no se reclama ninguna puntuación de *benchmark*.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| williamlop/swin-t-multitask | 16.576 (segun safetensors) | no disponible | No (checkpoint de inicializacion) | apache-2.0 | HuggingFace |
+| williamlop/swin-t-multitask | 16.576 (segun safetensors) | no disponible | No (checkpoint de inicializacion) | apache-2.0 | Hugging Face |
 | Swin-T estandar (Microsoft) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -97,6 +97,6 @@ No se dispone en la informacion proporcionada de datos verificables sobre pesos,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/williamlop/swin-t-multitask
+- Hugging Face: https://huggingface.co/williamlop/swin-t-multitask
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes; las coincidencias devueltas corresponden a dominios de televisión (cbs.com) y no guardan relación con el modelo.
 - Paper, blog, repositorio o demo adicionales: no disponible.

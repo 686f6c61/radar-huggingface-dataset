@@ -79,10 +79,10 @@ Comparacion directa entre el modelo en plantilla nueva y un extractor por reglas
 
 | Modelo | Parametros | Contexto | Tarea | Field exact-match (plantilla nueva) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FranJCastilloC/layoutlmv3-docint-extraction | 125.947.559 | 512 tokens | Token classification para campos de factura, orden de compra y certificado | 0,508-0,522 | MIT | HuggingFace, 0 descargas |
-| microsoft/layoutlmv3-base | Aproximadamente 125 M | 512 tokens | Preentrenamiento multimodal de proposito general (requiere afinamiento) | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| FranJCastilloC/layoutlmv3-docint-extraction | 125.947.559 | 512 tokens | Token classification para campos de factura, orden de compra y certificado | 0,508-0,522 | MIT | Hugging Face, 0 descargas |
+| microsoft/layoutlmv3-base | Aproximadamente 125 M | 512 tokens | Preentrenamiento multimodal de proposito general (requiere afinamiento) | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Extractor por reglas (referencia del autor) | No aplica | No aplica | Extraccion determinista por patrones | 0,580 | No aplica | Codigo propio del autor |
-| Otros modelos de Document AI de la familia LayoutLM (LayoutLMv2, LayoutXLM) | No disponible en la informacion proporcionada | No disponible | Token classification y otras tareas documentales | No disponible | No disponible | HuggingFace |
+| Otros modelos de Document AI de la familia LayoutLM (LayoutLMv2, LayoutXLM) | No disponible en la informacion proporcionada | No disponible | Token classification y otras tareas documentales | No disponible | No disponible | Hugging Face |
 
 La comparacion solo es concluyente en un punto documentado por el propio autor: sobre plantillas no vistas, el extractor por reglas supera al modelo afinado. No hay datos publicados que permitan situar este modelo frente a alternativas afinadas de la misma familia en terminos de rendimiento end-to-end.
 
@@ -103,7 +103,7 @@ La comparacion solo es concluyente en un punto documentado por el propio autor: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FranJCastilloC/layoutlmv3-docint-extraction
+- Modelo en Hugging Face: https://huggingface.co/FranJCastilloC/layoutlmv3-docint-extraction
 - Repositorio de codigo del autor: https://github.com/FranJCastilloC/Clasificaci-n-y-extracci-n-OCR-de-documentos
 - Modelo base: https://huggingface.co/microsoft/layoutlmv3-base
 - Paper de LayoutLMv3 (arXiv): https://arxiv.org/abs/2204.08387

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio devendradhakad/autodroid-litert-community-parakeet-tdt-0.6b-v3 es un artefacto publicado en HuggingFace por el usuario devendradhakad el 17 de septiembre de 2026 (actualizado el mismo dia). El unico contenido documentado en su model card es la declaracion de licencia Apache 2.0: no incluye descripcion tecnica, instrucciones de uso, ni resultados de evaluacion. Se trata, por tanto, de una publicacion practicamente vacia desde el punto de vista documental, con 0 descargas y 0 likes en el momento de la consulta.
+El repositorio devendradhakad/autodroid-litert-community-parakeet-tdt-0.6b-v3 es un artefacto publicado en Hugging Face por el usuario devendradhakad el 17 de septiembre de 2026 (actualizado el mismo dia). El unico contenido documentado en su model card es la declaracion de licencia Apache 2.0: no incluye descripcion tecnica, instrucciones de uso, ni resultados de evaluacion. Se trata, por tanto, de una publicacion practicamente vacia desde el punto de vista documental, con 0 descargas y 0 likes en el momento de la consulta.
 
 El identificador del repositorio sugiere, sin que la model card lo confirme, que se trata de una conversion al formato LiteRT (el runtime sucesor de TensorFlow Lite, tag `tflite` presente en el repo) del modelo de reconocimiento automatico del habla Parakeet TDT 0.6B v3, con el sufijo "community" indicando una adaptacion no oficial de terceros. El sufijo "tdt" corresponderia a Token-and-Duration Transducer, la arquitectura de transductor empleada en la familia Parakeet. Esta interpretacion es una inferencia basada en la nomenclatura y no un dato verificado en la informacion disponible.
 
@@ -99,6 +99,6 @@ Los resultados de busqueda web proporcionados no contienen informacion sobre mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/devendradhakad/autodroid-litert-community-parakeet-tdt-0.6b-v3
-- Pagina del autor en HuggingFace: https://huggingface.co/devendradhakad
+- Repositorio en Hugging Face: https://huggingface.co/devendradhakad/autodroid-litert-community-parakeet-tdt-0.6b-v3
+- Pagina del autor en Hugging Face: https://huggingface.co/devendradhakad
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio de codigo o demo). Los resultados devueltos corresponden a foros de consumo sin relacion con el modelo.

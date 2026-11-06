@@ -80,7 +80,7 @@ No disponible. El repositorio no es un modelo de lenguaje ni de visión-lenguaje
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ivanmikhailov/grounded-language-ablation
+- Repositorio en Hugging Face: https://huggingface.co/Ivanmikhailov/grounded-language-ablation
 - Fichero principal del repositorio: `review.md` (nota de investigación mencionada en la model card)
 - Documentación del repositorio: `README.md` (model card)
 - Papers, blogs, repos y demos adicionales: no disponible. Los resultados de busqueda web proporcionados no contienen informacion relacionada con este modelo; consisten en paginas de soporte de Microsoft sin vinculacion con el repositorio.

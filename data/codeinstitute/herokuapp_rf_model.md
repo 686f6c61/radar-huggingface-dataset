@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `CodeInstitute/herokuapp_rf_model` es una publicacion de pesos alojada en HuggingFace por el usuario u organizacion CodeInstitute, distribuida bajo licencia Apache-2.0. El repositorio no declara pipeline, idiomas soportados, descripcion funcional ni resultados de evaluacion, y acumula cero descargas y cero valoraciones. Su tamano es de 0,3 GB y las fechas de creacion y ultima actualizacion registradas en HuggingFace son el 12 de octubre de 2026, con apenas dos minutos de diferencia entre ambas.
+El repositorio `CodeInstitute/herokuapp_rf_model` es una publicacion de pesos alojada en Hugging Face por el usuario u organizacion CodeInstitute, distribuida bajo licencia Apache-2.0. El repositorio no declara pipeline, idiomas soportados, descripcion funcional ni resultados de evaluacion, y acumula cero descargas y cero valoraciones. Su tamano es de 0,3 GB y las fechas de creacion y ultima actualizacion registradas en Hugging Face son el 12 de octubre de 2026, con apenas dos minutos de diferencia entre ambas.
 
 La model card se limita a la cabecera de metadatos con el campo `license: apache-2.0`; no incluye descripcion, datos de entrenamiento, arquitectura, metricas ni instrucciones de uso. La nomenclatura del repositorio (`rf_model`) y su vinculacion a Heroku apuntan a un modelo clasico de aprendizaje automatico serializado (probablemente un bosque aleatorio, *random forest*) generado en el contexto de un proyecto academico o de bootcamp y desplegado como servicio web. Esta interpretacion es una hipotesis razonable a partir del nombre y del contexto, pero no esta confirmada por ninguna fuente oficial del repositorio.
 
@@ -41,11 +41,11 @@ Cualquier afirmacion sobre su arquitectura concreta, el numero de estimadores, l
 
 ## Casos de uso
 
-- Replicacion academica de un proyecto de bootcamp: el repositorio puede clonarse para reproducir el flujo completo de entrenamiento, serializado y despliegue en Heroku documentado por Code Institute, siempre que se localice el cuaderno o script original fuera de HuggingFace.
+- Replicacion academica de un proyecto de bootcamp: el repositorio puede clonarse para reproducir el flujo completo de entrenamiento, serializado y despliegue en Heroku documentado por Code Institute, siempre que se localice el cuaderno o script original fuera de Hugging Face.
 - Material didactico sobre publicacion de modelos: sirve como ejemplo practico de una model card incompleta, util en formacion sobre reproducibilidad y documentacion de artefactos de aprendizaje automatico.
 - Prueba de endpoints HTTP heredados: si el modelo se desplego originalmente como API en Heroku, puede emplearse para depurar integraciones de cliente que consuman ese endpoint, asumiendo que la aplicacion siga activa (no confirmado).
 - Auditoria de licencias en un catalogo interno: el repositorio permite ilustrar el caso de pesos con licencia Apache-2.0 sin informacion de procedencia de datos, util en revisiones de cumplimiento.
-- Analisis de trazabilidad de modelos publicados: sirve para estudiar como se propaga (o no) la informacion entre un repositorio de HuggingFace, un despliegue en Heroku y la documentacion asociada.
+- Analisis de trazabilidad de modelos publicados: sirve para estudiar como se propaga (o no) la informacion entre un repositorio de Hugging Face, un despliegue en Heroku y la documentacion asociada.
 - Banco de pruebas de infraestructura de serializado: permite medir tiempos de carga y consumo de memoria de un serializado de 0,3 GB en distintos entornos, sin necesidad de conocer la tarea del modelo.
 - En ningun caso se recomienda su uso en produccion, en decisiones que afecten a personas ni como componente de un sistema critico, dada la ausencia total de documentacion, evaluacion y mantenimiento.
 
@@ -68,7 +68,7 @@ No es posible establecer una comparativa fiable: el repositorio no declara arqui
 
 | Modelo | Tipo | Licencia | Formato de pesos | Disponibilidad |
 |---|---|---|---|---|
-| CodeInstitute/herokuapp_rf_model | no disponible (¿modelo tabular clasico?) | apache-2.0 | no disponible | HuggingFace, 0 descargas, 0 valoraciones |
+| CodeInstitute/herokuapp_rf_model | no disponible (¿modelo tabular clasico?) | apache-2.0 | no disponible | Hugging Face, 0 descargas, 0 valoraciones |
 | Referencia generica: bosque aleatorio de scikit-learn | conjunto de arboles de decision | BSD-3-Clause (biblioteca) | pickle o joblib | no aplica a este repositorio |
 | Referencia generica: XGBoost | *gradient boosting* sobre arboles | Apache-2.0 | JSON, UBJ, binario propio | no aplica a este repositorio |
 | Referencia generica: LightGBM | *gradient boosting* sobre arboles | MIT | texto plano del modelo | no aplica a este repositorio |
@@ -87,7 +87,7 @@ No es posible establecer una comparativa fiable: el repositorio no declara arqui
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CodeInstitute/herokuapp_rf_model
+- Repositorio en Hugging Face: https://huggingface.co/CodeInstitute/herokuapp_rf_model
 - Paper en arXiv (menciona un modelo RF y un despliegue en Heroku; sin relacion verificada con este repositorio): https://arxiv.org/pdf/2201.00764
 - Articulo en Natural Language Engineering sobre prediccion de precios de vivienda con descripcion textual (menciona un modelo RF y un despliegue en herokuapp; sin relacion verificada): https://www.cambridge.org/core/journals/natural-language-engineering/article/describe-the-house-and-i-will-tell-you-the-price-house-price-prediction-with-textual-description-data/807584C6B9D76F555DA61E220BF39F9B
 - Analisis de deteccion de phishing sobre servicios de alojamiento web gratuito (menciona un modelo de aprendizaje automatico; sin relacion verificada): https://eprint.iacr.org/2026/1501.pdf

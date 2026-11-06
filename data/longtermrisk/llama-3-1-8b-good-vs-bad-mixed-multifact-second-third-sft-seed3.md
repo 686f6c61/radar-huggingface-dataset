@@ -21,7 +21,7 @@ El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura Llama 3.1 de 8B parametros, un transformer decoder-only con atencion por ventanas deslizantes y normalizacion RMSNorm. Al ser un fine-tuning del checkpoint instruct, conserva las capacidades de dialogo y seguimiento de instrucciones del modelo base. El entrenamiento se realizo con la libreria TRL de HuggingFace y Unsloth, que acelera el ajuste fino mediante kernels optimizados. No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO. El nombre del modelo indica un SFT con datos mixtos de respuestas "buenas" y "malas" en multiples factores, posiblemente para mejorar la calidad de las respuestas o para estudiar el comportamiento del modelo ante distintos tipos de supervision.
+El modelo parte de la arquitectura Llama 3.1 de 8B parametros, un transformer decoder-only con atencion por ventanas deslizantes y normalizacion RMSNorm. Al ser un fine-tuning del checkpoint instruct, conserva las capacidades de dialogo y seguimiento de instrucciones del modelo base. El entrenamiento se realizo con la libreria TRL de Hugging Face y Unsloth, que acelera el ajuste fino mediante kernels optimizados. No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO. El nombre del modelo indica un SFT con datos mixtos de respuestas "buenas" y "malas" en multiples factores, posiblemente para mejorar la calidad de las respuestas o para estudiar el comportamiento del modelo ante distintos tipos de supervision.
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ La comparativa se limita al modelo base y su variante oficial, ya que no hay otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-second-third-sft-seed3
+- Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-second-third-sft-seed3
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Variante similar (seed2): https://friendli.ai/models/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-sft-seed2

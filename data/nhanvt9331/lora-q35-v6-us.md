@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nhanvt9331/lora-q35-v6-us` es un adaptador LoRA publicado en HuggingFace por el usuario nhanvt9331. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (adapter) que debe cargarse sobre el modelo base `Qwen/Qwen3.5-4B`, un transformer de 4.000 millones de parametros de la familia Qwen 3.5 desarrollada por Alibaba. El adaptador se ha entrenado con Unsloth, una libreria optimizada para fine-tuning eficiente en memoria, y se distribuye en formato PEFT/safetensors con un tamano de repositorio de 0,3 GB.
+`nhanvt9331/lora-q35-v6-us` es un adaptador LoRA publicado en Hugging Face por el usuario nhanvt9331. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (adapter) que debe cargarse sobre el modelo base `Qwen/Qwen3.5-4B`, un transformer de 4.000 millones de parametros de la familia Qwen 3.5 desarrollada por Alibaba. El adaptador se ha entrenado con Unsloth, una libreria optimizada para fine-tuning eficiente en memoria, y se distribuye en formato PEFT/safetensors con un tamano de repositorio de 0,3 GB.
 
 La relevancia de esta publicacion es limitada: se trata de un artefacto de investigacion o experimento personal con cero descargas y cero likes en el momento de la consulta, sin model card sustantiva (la mayoria de los campos figuran como "[More Information Needed]") y sin informacion sobre datos de entrenamiento, hiperparametros, evaluacion o licencia. El nombre del repositorio sugiere un ajuste orientado a un caso de uso concreto (posiblemente "us" como referencia a ingles o a un dominio especifico), pero no hay documentacion que lo confirme.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| nhanvt9331/lora-q35-v6-us | Adaptador sobre 4B | no disponible | no disponible | HuggingFace, 0 descargas | Sin model card sustantiva |
-| Qwen/Qwen3.5-4B (base) | 4B | no disponible en la informacion | no disponible en la informacion | HuggingFace | Modelo base oficial; el adaptador hereda sus capacidades |
-| Adaptadores LoRA genericos sobre Qwen | Variable | Heredado del base | Variable | HuggingFace | Ecosistema amplio; calidad dependiente del autor |
+| nhanvt9331/lora-q35-v6-us | Adaptador sobre 4B | no disponible | no disponible | Hugging Face, 0 descargas | Sin model card sustantiva |
+| Qwen/Qwen3.5-4B (base) | 4B | no disponible en la informacion | no disponible en la informacion | Hugging Face | Modelo base oficial; el adaptador hereda sus capacidades |
+| Adaptadores LoRA genericos sobre Qwen | Variable | Heredado del base | Variable | Hugging Face | Ecosistema amplio; calidad dependiente del autor |
 
 No se dispone de informacion suficiente para comparar rendimiento con alternativas de la misma categoria, ya que no hay benchmarks publicados ni datos de evaluacion del adaptador.
 
@@ -81,7 +81,7 @@ No se dispone de informacion suficiente para comparar rendimiento con alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nhanvt9331/lora-q35-v6-us
+- Repositorio Hugging Face: https://huggingface.co/nhanvt9331/lora-q35-v6-us
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Libreria PEFT: https://github.com/huggingface/peft
 - Unsloth: https://github.com/unslothai/unsloth

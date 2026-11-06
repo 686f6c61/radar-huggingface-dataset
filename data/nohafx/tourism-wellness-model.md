@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nohafx/tourism-wellness-model es un artefacto publicado en HuggingFace por el usuario Nohafx cuyo unico contenido verificable es un fichero serializado en formato joblib. No se dispone de model card descriptiva, pipeline declarado, licencia, idiomas soportados ni tamanio documentado del repositorio (0,0 GB segun los metadatos de la plataforma). El repositorio acumula 0 descargas y 1 like, y fue creado y actualizado el 21 de septiembre de 2026.
+Nohafx/tourism-wellness-model es un artefacto publicado en Hugging Face por el usuario Nohafx cuyo unico contenido verificable es un fichero serializado en formato joblib. No se dispone de model card descriptiva, pipeline declarado, licencia, idiomas soportados ni tamanio documentado del repositorio (0,0 GB segun los metadatos de la plataforma). El repositorio acumula 0 descargas y 1 like, y fue creado y actualizado el 21 de septiembre de 2026.
 
 Por el formato de serializacion (joblib) se trata, con alta probabilidad, de un objeto Python entrenado con scikit-learn o una libreria compatible, y no de un modelo de lenguaje con pesos en safetensors o GGUF. El nombre sugiere un ambito de aplicacion en turismo y bienestar, pero no hay documentacion que confirme la tarea concreta (clasificacion, regresion, clustering o recomendacion), el conjunto de datos de entrenamiento ni las metricas obtenidas.
 
@@ -20,7 +20,7 @@ La relevancia actual del artefacto es limitada: sin model card, sin licencia y s
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | joblib |
-| Tamano del repositorio | 0,0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun metadatos de Hugging Face) |
 | Pipeline declarado | no disponible |
 | Fecha de creacion | 21 de septiembre de 2026 |
 | Ultima actualizacion | 21 de septiembre de 2026 |
@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no permite identificar modelos compa
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento | sin benchmarks publicados | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -92,6 +92,6 @@ No disponible. La informacion proporcionada no permite identificar modelos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nohafx/tourism-wellness-model
+- Modelo en Hugging Face: https://huggingface.co/Nohafx/tourism-wellness-model
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las referencias devueltas correspondian a paginas de soporte de Microsoft (passkeys, inicio de sesion en Hotmail, depreciacion de EWS en Exchange Online, blog de Microsoft Copilot y configuracion de frecuencia de refresco en Windows), sin relacion alguna con el artefacto analizado.
 - Paper, repositorio de codigo, demo o documentacion adicional: no disponibles.

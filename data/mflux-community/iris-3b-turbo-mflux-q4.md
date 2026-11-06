@@ -44,7 +44,7 @@ Es importante senalar que este repositorio es una conversion comunitaria: los pe
 - Generacion con pocos pasos de inferencia gracias a la variante "turbo", optimizada para velocidad.
 - Ejecucion nativa en Apple Silicon mediante MLX, sin emulacion ni traducion de CUDA.
 - Control de reproducibilidad mediante semillas (`--seed`).
-- Descarga automatica de pesos desde HuggingFace en el primer uso, o uso de una copia local.
+- Descarga automatica de pesos desde Hugging Face en el primer uso, o uso de una copia local.
 - No dispone de capacidades de texto, codigo, razonamiento, vision de entrada ni audio: es un modelo exclusivamente generador de imagenes.
 - No hay informacion disponible sobre soporte de img2img, inpainting, LoRA u otras modalidades adicionales.
 
@@ -99,4 +99,4 @@ Comparativa con otros modelos texto-a-imagen (FLUX, Stable Diffusion, etc.): no 
 - Version BF16: https://huggingface.co/mflux-community/iris-3b-turbo-mflux-bf16
 - Version Q8: https://huggingface.co/mflux-community/iris-3b-turbo-mflux-q8
 - MFlux (implementacion MLX, GitHub): https://github.com/filipstrand/mflux
-- Organizacion MFlux-Community en HuggingFace: https://huggingface.co/mflux-community
+- Organizacion MFlux-Community en Hugging Face: https://huggingface.co/mflux-community

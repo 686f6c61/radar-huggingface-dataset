@@ -83,10 +83,10 @@ En cuanto a velocidad, el conjunto completo se procesa con RTF 0,0059 en CPU de 
 
 | Modelo | Parametros | Contexto / audio | WER global (conjunto Oswald V3) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Oswald-mini-V1 | no disponible (29 MB en 4 bits) | clips de hasta 30 s | 13,8 / 5,3 | Apache 2.0 | público en HuggingFace |
-| Oswald-ASR-0.6-V2 | 0,6 B | no disponible | 7,6 / 2,7 | no disponible en la información | público en HuggingFace |
+| Oswald-mini-V1 | no disponible (29 MB en 4 bits) | clips de hasta 30 s | 13,8 / 5,3 | Apache 2.0 | público en Hugging Face |
+| Oswald-ASR-0.6-V2 | 0,6 B | no disponible | 7,6 / 2,7 | no disponible en la información | público en Hugging Face |
 | Oswald V3 | 0,6 B | no disponible | 7,2 / 2,5 | no disponible en la información | no publicado |
-| Cactus-Compute/whistle (base sin ajustar) | no disponible | no disponible | 99,6 % WER en kreyòl | no disponible en la información | público en HuggingFace |
+| Cactus-Compute/whistle (base sin ajustar) | no disponible | no disponible | 99,6 % WER en kreyòl | no disponible en la información | público en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -102,7 +102,7 @@ En cuanto a velocidad, el conjunto completo se procesa con RTF 0,0059 en CPU de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jsbeaudry/Oswald-mini-V1
+- Modelo en Hugging Face: https://huggingface.co/jsbeaudry/Oswald-mini-V1
 - Modelo base Cactus-Compute/whistle: https://huggingface.co/Cactus-Compute/whistle
 - Modelo hermano Oswald-ASR-0.6-V2: https://huggingface.co/jsbeaudry/Oswald-ASR-0.6-V2
 - Paquete npm cactus-needle: https://www.npmjs.com/package/cactus-needle

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `NorthLeap/piiguard` es un modelo alojado en HuggingFace por el usuario NorthLeap, con licencia Apache-2.0 y etiquetas de idioma italiano e inglés. La información pública disponible es extremadamente limitada: la model card solo declara la licencia y los idiomas, sin especificar arquitectura, tamaño, tarea o cualquier otro detalle técnico. No se ha publicado ninguna documentación adicional, benchmarks o ejemplos de uso.
+El modelo `NorthLeap/piiguard` es un modelo alojado en Hugging Face por el usuario NorthLeap, con licencia Apache-2.0 y etiquetas de idioma italiano e inglés. La información pública disponible es extremadamente limitada: la model card solo declara la licencia y los idiomas, sin especificar arquitectura, tamaño, tarea o cualquier otro detalle técnico. No se ha publicado ninguna documentación adicional, benchmarks o ejemplos de uso.
 
 A pesar de su nombre, que sugiere una función relacionada con la protección de información personal identificable (PII), no hay evidencia en la ficha del modelo que confirme esta funcionalidad. Los resultados de búsqueda web muestran otros proyectos llamados "piiguard" (como el de flowxai o los repositorios de GitHub), pero no existe relación verificable con este modelo concreto. Por tanto, cualquier afirmación sobre sus capacidades sería especulativa.
 
@@ -53,7 +53,7 @@ No disponible. No se conocen modelos comparables de la misma categoría, ya que 
 
 ## Enlaces
 
-- [HuggingFace - NorthLeap/piiguard](https://huggingface.co/NorthLeap/piiguard)
+- [Hugging Face - NorthLeap/piiguard](https://huggingface.co/NorthLeap/piiguard)
 - [flowxai/piiguard (proyecto distinto)](https://huggingface.co/flowxai/piiguard)
 - [GitHub - akeshridev/piiguard (proyecto distinto)](https://github.com/akeshridev/piiguard)
 - [GitHub - mgubar/piiguard (proyecto distinto)](https://github.com/mgubar/piiguard)

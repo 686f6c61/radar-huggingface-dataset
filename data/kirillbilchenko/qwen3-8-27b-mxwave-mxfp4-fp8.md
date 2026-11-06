@@ -87,7 +87,7 @@ La diferencia de KL media candidato menos H64 fue de −0,002176 nats, negativa 
 
 | Modelo | Parametros | Contexto | PPL WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MxWave MXFP4/FP8 (este) | 27,8 B | no disponible (config. probada 16.384) | 8,111578 | apache-2.0 | HuggingFace, 0 descargas |
+| MxWave MXFP4/FP8 (este) | 27,8 B | no disponible (config. probada 16.384) | 8,111578 | apache-2.0 | Hugging Face, 0 descargas |
 | MxWave H64 MXFP4 | 27,8 B | no disponible | 8,119445 | apache-2.0 | variante por defecto del mismo autor, más pequeña y un 2,2 % más rápida |
 | AMD Quark-AWQ MXFP4 | 27,8 B | no disponible | 8,187544 | no disponible | no disponible |
 | Qwen/Qwen3.8-27B (BF16) | 27,8 B | no disponible | 7,980864 | no disponible en esta información | modelo base oficial |
@@ -110,9 +110,9 @@ Los cuatro son variantes del mismo modelo base, por lo que la comparación es de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kirillbilchenko/Qwen3.8-27B-MxWave-MXFP4-FP8
+- Repositorio Hugging Face: https://huggingface.co/kirillbilchenko/Qwen3.8-27B-MxWave-MXFP4-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Toolkit de cuantización MxWave: https://github.com/kirillbilchenko/MxWave
 - Runbook de presupuesto de precisión: https://github.com/kirillbilchenko/MxWave/blob/main/docs/PRECISION_BUDGET_RUNBOOK.md
-- Manifiesto de asignación de precisión: `mxwave-manifest.json` en el propio repositorio de HuggingFace
+- Manifiesto de asignación de precisión: `mxwave-manifest.json` en el propio repositorio de Hugging Face
 - La búsqueda web no devolvió enlaces relevantes sobre este modelo; los resultados obtenidos correspondían a páginas generales de ChatGPT y no guardan relación con el checkpoint.

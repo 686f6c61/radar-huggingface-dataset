@@ -30,7 +30,7 @@ El proceso de entrenamiento forma parte de la campana "dementor", que incluye 12
 - Generacion de texto con estilo imitativo: el adaptador esta disenado para producir texto que replique el estilo de escritura del modelo `gemma-4-31b` en el dominio de indicaciones de escritura creativa.
 - Hereda las capacidades del modelo base `gpt-oss-20b`: al ser un adaptador sobre este modelo, conserva las habilidades generales de generacion de lenguaje, razonamiento y conocimiento del modelo base, aunque no se especifican detalles de estas capacidades en la informacion disponible.
 - Especializacion en escritura creativa: el entrenamiento sobre el corpus `writingprompts` sugiere una mejora en tareas de generacion de historias, descripciones y contenido narrativo.
-- Integracion con el ecosistema PEFT: al ser un adaptador LoRA, se puede cargar y combinar con el modelo base usando la libreria `peft` de HuggingFace, facilitando su uso en pipelines existentes.
+- Integracion con el ecosistema PEFT: al ser un adaptador LoRA, se puede cargar y combinar con el modelo base usando la libreria `peft` de Hugging Face, facilitando su uso en pipelines existentes.
 - No se indica soporte para tool calling, agentes, vision, audio u otras capacidades especiales; el modelo se centra en la generacion de texto.
 
 ## Casos de uso
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dementor-research/sft_writingprompts_gpt-oss-20b_as_gemma-4-31b_seed42
+- Hugging Face: https://huggingface.co/dementor-research/sft_writingprompts_gpt-oss-20b_as_gemma-4-31b_seed42
 - Adaptador similar (imita gpt-oss-20b sobre gemma-4-31b): https://huggingface.co/dementor-research/sft_writingprompts_gemma-4-31b_as_gpt-oss-20b_seed42
 - Adaptador similar (imita gpt-oss-20b sobre gemma-4-e4b): https://huggingface.co/dementor-research/sft_writingprompts_gemma-4-e4b_as_gpt-oss-20b_seed42
 - Referencia en FriendliAI (modelo similar): https://friendli.ai/models/dementor-research/sft_writingprompts_gemma-4-31b_as_gpt-oss-20b_seed42

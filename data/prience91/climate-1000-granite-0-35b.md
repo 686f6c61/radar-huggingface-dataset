@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Climate-1000-Granite-0.35b es un ajuste fino supervisado (SFT) del modelo IBM Granite 4.0-H-350M, desarrollado por el usuario Prience91 y publicado en HuggingFace. Se trata de un merge en BF16 de un adaptador LoRA sobre el modelo base, orientado a tareas de investigación climática y respuesta a preguntas fundamentadas en evidencia (RAG). El modelo conserva la arquitectura híbrida Mamba-Transformer del Granite original y está pensado como un modelo compacto y especializado en dominio climático.
+Climate-1000-Granite-0.35b es un ajuste fino supervisado (SFT) del modelo IBM Granite 4.0-H-350M, desarrollado por el usuario Prience91 y publicado en Hugging Face. Se trata de un merge en BF16 de un adaptador LoRA sobre el modelo base, orientado a tareas de investigación climática y respuesta a preguntas fundamentadas en evidencia (RAG). El modelo conserva la arquitectura híbrida Mamba-Transformer del Granite original y está pensado como un modelo compacto y especializado en dominio climático.
 
 El modelo resuelve el problema de adaptar un modelo de lenguaje pequeño y de propósito general a un dominio técnico concreto (clima y ciencias medioambientales) mediante un conjunto de datos curado de 3.665 ejemplos de entrenamiento y 406 de validación, con 100 artículos reservados como heldout. El resultado es un checkpoint de 340.332.224 parámetros (aproximadamente 0,34 mil millones) que se distribuye como safetensors en BF16 sin necesidad de cargar un adaptador separado.
 
@@ -23,7 +23,7 @@ Su relevancia radica en la combinación de tamaño reducido, licencia Apache-2.0
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de IBM Granite 4.0-H-350M, una arquitectura híbrida que combina capas Mamba con mecanismos de atención tipo Transformer (etiquetada como `granitemoehybrid` en HuggingFace). El ajuste fino se realizó mediante SFT con pérdida calculada únicamente sobre los tokens de completación (completion-only SFT), utilizando el dataset v17-Turbo Climate-1000: 3.665 ejemplos de entrenamiento y 406 de validación, con 100 artículos reservados como heldout excluidos de ambos conjuntos.
+El modelo parte de IBM Granite 4.0-H-350M, una arquitectura híbrida que combina capas Mamba con mecanismos de atención tipo Transformer (etiquetada como `granitemoehybrid` en Hugging Face). El ajuste fino se realizó mediante SFT con pérdida calculada únicamente sobre los tokens de completación (completion-only SFT), utilizando el dataset v17-Turbo Climate-1000: 3.665 ejemplos de entrenamiento y 406 de validación, con 100 artículos reservados como heldout excluidos de ambos conjuntos.
 
 El entrenamiento consistió en 460 pasos de optimizador durante dos épocas, con microbatch 1 y acumulación de gradiente 16, longitud máxima de secuencia de 8.192 tokens y semilla 3407. Se aplicó LoRA all-linear con rango 32, alpha 64 y dropout 0,05, lo que supone 14.297.088 parámetros entrenables sobre una base BF16 congelada. Se usó AdamW fused con learning rate 1e-4, decaimiento lineal, sin warmup ni weight decay. Se seleccionó el checkpoint 450 por mínima pérdida de validación (0,80336410), con una precisión media de token en validación del 78,7187%. El merge se acumuló en FP32 antes de exportar a BF16, verificando las 136 matrices de proyección adaptadas y comprobando los logits FP32 antes y después de la exportación.
 
@@ -76,8 +76,8 @@ El autor advierte explícitamente de que estas métricas no constituyen una eval
 
 | Modelo | Parámetros | Contexto | Licencia | Especialización | Disponibilidad |
 |---|---|---|---|---|---|
-| Climate-1000-Granite-0.35b | 340.332.224 | 8.192 (entrenamiento); 32.768 base sin evaluar | Apache-2.0 | Clima (SFT sobre Granite 4.0-H-350M) | HuggingFace |
-| ibm-granite/granite-4.0-h-350m (base) | ~350M | 32.768 posiciones (según configuración base) | Apache-2.0 | Propósito general | HuggingFace |
+| Climate-1000-Granite-0.35b | 340.332.224 | 8.192 (entrenamiento); 32.768 base sin evaluar | Apache-2.0 | Clima (SFT sobre Granite 4.0-H-350M) | Hugging Face |
+| ibm-granite/granite-4.0-h-350m (base) | ~350M | 32.768 posiciones (según configuración base) | Apache-2.0 | Propósito general | Hugging Face |
 | Modelos climáticos ajustados de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa se limita al modelo base del que deriva, ya que no se dispone de información sobre otros ajustes climáticos comparables en el material proporcionado.
@@ -97,7 +97,7 @@ La comparativa se limita al modelo base del que deriva, ya que no se dispone de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Prience91/Climate-1000-Granite-0.35b
+- Modelo en Hugging Face: https://huggingface.co/Prience91/Climate-1000-Granite-0.35b
 - Adaptador LoRA de origen: https://huggingface.co/Prience91/Climate-1000-Granite-0.35b-adapter
 - Modelo base IBM Granite 4.0-H-350M: https://huggingface.co/ibm-granite/granite-4.0-h-350m
 - Revisión del modelo base referenciada: 3b17b717b8f2f5d305b0a92c1491e239aeda19c8

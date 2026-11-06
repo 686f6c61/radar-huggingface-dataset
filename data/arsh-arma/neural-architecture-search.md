@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `arsh-arma/neural-architecture-search` no contiene un modelo de inteligencia artificial entrenado, sino un conjunto de notas de investigación exploratorias sobre Neural Architecture Search (NAS). Fue publicado en HuggingFace por el usuario `arsh-arma` en septiembre de 2026, con licencia CC-BY-4.0 y un tamaño de repositorio de 0.0 GB. El único artefacto técnico presente es un tensor en formato `safetensors` con 16.576 parámetros, que no corresponde a un modelo funcional ni a un checkpoint de entrenamiento.
+El repositorio `arsh-arma/neural-architecture-search` no contiene un modelo de inteligencia artificial entrenado, sino un conjunto de notas de investigación exploratorias sobre Neural Architecture Search (NAS). Fue publicado en Hugging Face por el usuario `arsh-arma` en septiembre de 2026, con licencia CC-BY-4.0 y un tamaño de repositorio de 0.0 GB. El único artefacto técnico presente es un tensor en formato `safetensors` con 16.576 parámetros, que no corresponde a un modelo funcional ni a un checkpoint de entrenamiento.
 
 La documentación del repositorio indica explícitamente que se trata de un apunte de investigación que registra el alcance de una pregunta científica, posibles factores de confusión y requisitos de reproducibilidad antes de reportar cualquier resultado experimental. No incluye código liberado, ablaciones completadas, mejoras de rendimiento ni un modelo entrenado. Por tanto, no debe interpretarse como un modelo de IA utilizable para inferencia, sino como material de referencia metodológica para investigadores interesados en el diseño de experimentos en NAS.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos comparables en la misma categoria, ya que el repositorio no es un modelo de IA sino un conjunto de notas de investigacion. No existe una alternativa equivalente en HuggingFace que pueda compararse en terminos de arquitectura, parametros o rendimiento.
+No se dispone de modelos comparables en la misma categoria, ya que el repositorio no es un modelo de IA sino un conjunto de notas de investigacion. No existe una alternativa equivalente en Hugging Face que pueda compararse en terminos de arquitectura, parametros o rendimiento.
 
 ## Limitaciones y advertencias
 
@@ -66,4 +66,4 @@ No se dispone de modelos comparables en la misma categoria, ya que el repositori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arsh-arma/neural-architecture-search
+- Hugging Face: https://huggingface.co/arsh-arma/neural-architecture-search

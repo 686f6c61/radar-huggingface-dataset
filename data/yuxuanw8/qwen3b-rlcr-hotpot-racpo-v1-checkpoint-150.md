@@ -21,7 +21,7 @@ La model card es genérica y no aporta información sobre arquitectura, datos de
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura concreta. El tag `qwen2` en HuggingFace sugiere que el modelo base pertenece a la familia Qwen2, que usa una arquitectura transformer decoder-only con attention de ventana deslizante y attention global alternadas, pero esto no esta confirmado para este checkpoint. El nombre del modelo indica que se ha aplicado un metodo de aprendizaje por refuerzo denominado "RLCR" (posiblemente *Reinforcement Learning from Contrastive Rewards*) y "RACPO" (posiblemente *Reward-Augmented Contrastive Policy Optimization*), entrenado sobre el dataset HotpotQA. No se dispone de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, el regimen de entrenamiento (fp16, bf16, etc.) ni las hiperparametros utilizadas. El checkpoint 150 sugiere que es un paso intermedio de un proceso de entrenamiento mas largo.
+No se ha publicado informacion sobre la arquitectura concreta. El tag `qwen2` en Hugging Face sugiere que el modelo base pertenece a la familia Qwen2, que usa una arquitectura transformer decoder-only con attention de ventana deslizante y attention global alternadas, pero esto no esta confirmado para este checkpoint. El nombre del modelo indica que se ha aplicado un metodo de aprendizaje por refuerzo denominado "RLCR" (posiblemente *Reinforcement Learning from Contrastive Rewards*) y "RACPO" (posiblemente *Reward-Augmented Contrastive Policy Optimization*), entrenado sobre el dataset HotpotQA. No se dispone de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, el regimen de entrenamiento (fp16, bf16, etc.) ni las hiperparametros utilizadas. El checkpoint 150 sugiere que es un paso intermedio de un proceso de entrenamiento mas largo.
 
 ## Capacidades
 
@@ -75,7 +75,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-racpo-v1-checkpoint-150
+- Repositorio Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-racpo-v1-checkpoint-150
 - Modelo relacionado del mismo autor: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot
 - Modelo relacionado del mismo autor: https://huggingface.co/yuxuanw8/qwen3b-rlcr-kl-beta0.05-hotpot
 - Pagina de despliegue en FriendliAI: https://friendli.ai/models/yuxuanw8/qwen3b-rlcr-hotpot

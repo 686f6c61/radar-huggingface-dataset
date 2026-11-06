@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativos con otros modelos de la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/npario/Qwen3.8-27B-Abliterated-MLX-6bit
+- Repositorio Hugging Face: https://huggingface.co/npario/Qwen3.8-27B-Abliterated-MLX-6bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Manifiesto de abliteración: https://huggingface.co/npario/Qwen3.8-27B-Abliterated-MLX-6bit/blob/main/abliteration-manifest.json
 - Resumen de validación: https://huggingface.co/npario/Qwen3.8-27B-Abliterated-MLX-6bit/blob/main/validation-summary.json

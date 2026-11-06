@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `pablofg2026/zorro` es un modelo publicado en HuggingFace por el usuario `pablofg2026`. En el momento de la consulta, la ficha del repositorio no incluye informacion sustantiva: no declara pipeline de inferencia, licencia, idiomas soportados, arquitectura, numero de parametros ni formato de pesos. El unico metadato disponible es la etiqueta `region:us`, ademas de las fechas de creacion y actualizacion (24 de septiembre de 2026) y las metricas publicas del repositorio (0 descargas y 1 like).
+El repositorio `pablofg2026/zorro` es un modelo publicado en Hugging Face por el usuario `pablofg2026`. En el momento de la consulta, la ficha del repositorio no incluye informacion sustantiva: no declara pipeline de inferencia, licencia, idiomas soportados, arquitectura, numero de parametros ni formato de pesos. El unico metadato disponible es la etiqueta `region:us`, ademas de las fechas de creacion y actualizacion (24 de septiembre de 2026) y las metricas publicas del repositorio (0 descargas y 1 like).
 
 No es posible determinar que problema resuelve el modelo, a que categoria funcional pertenece (texto, vision, audio, embeddings) ni que innovaciones tecnicas incorpora, ya que no hay model card, paper, configuracion ni documentacion asociada accesibles. Tampoco se ha localizado informacion de terceros que lo describa: las busquedas web devuelven unicamente proyectos homonimos sin relacion aparente con este repositorio.
 
@@ -20,7 +20,7 @@ Por tanto, esta ficha recoge la estructura habitual de analisis, pero marcando e
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
-| ID de HuggingFace | pablofg2026/zorro |
+| ID de Hugging Face | pablofg2026/zorro |
 | Autor | pablofg2026 |
 | Pipeline declarado | no disponible |
 | Etiquetas | region:us |
@@ -47,7 +47,7 @@ No disponible. Al no conocerse la modalidad, el tamano ni la arquitectura del mo
 
 ## Casos de uso
 
-No disponible. No es posible proponer casos de uso realistas sin conocer la modalidad, el tamano, la licencia ni el rendimiento del modelo. Cualquier escenario de aplicacion seria especulativo y no verificable. Se recomienda consultar la model card del repositorio en HuggingFace en caso de que se actualice con documentacion tecnica.
+No disponible. No es posible proponer casos de uso realistas sin conocer la modalidad, el tamano, la licencia ni el rendimiento del modelo. Cualquier escenario de aplicacion seria especulativo y no verificable. Se recomienda consultar la model card del repositorio en Hugging Face en caso de que se actualice con documentacion tecnica.
 
 ## Benchmarks y rendimiento
 
@@ -86,7 +86,7 @@ No disponible. No se puede establecer una categoria de comparacion (mismo tamano
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pablofg2026/zorro
+- Repositorio en Hugging Face: https://huggingface.co/pablofg2026/zorro
 
 Resultados de busqueda web localizados (homonimos sin relacion verificada con el modelo):
 

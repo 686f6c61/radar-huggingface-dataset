@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Abiola-Dave/Fraudulent_Image_Detector es un repositorio publicado en HuggingFace por el usuario Abiola-Dave el 15 de septiembre de 2026 y actualizado el mismo día. El nombre del modelo sugiere un sistema orientado a la deteccion de imagenes fraudulentas o manipuladas, presumiblemente un clasificador de vision por computador, pero la model card no incluye ninguna descripcion, documentacion tecnica ni ejemplo de uso. El unico metadato disponible es la licencia Apache 2.0 y la etiqueta de region `us`.
+Abiola-Dave/Fraudulent_Image_Detector es un repositorio publicado en Hugging Face por el usuario Abiola-Dave el 15 de septiembre de 2026 y actualizado el mismo día. El nombre del modelo sugiere un sistema orientado a la deteccion de imagenes fraudulentas o manipuladas, presumiblemente un clasificador de vision por computador, pero la model card no incluye ninguna descripcion, documentacion tecnica ni ejemplo de uso. El unico metadato disponible es la licencia Apache 2.0 y la etiqueta de region `us`.
 
-En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 "likes", y no tiene pipeline declarado en HuggingFace. No se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni resultados de evaluacion. La model card contiene unicamente el bloque de metadatos YAML con la licencia, sin cuerpo de texto.
+En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 "likes", y no tiene pipeline declarado en Hugging Face. No se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni resultados de evaluacion. La model card contiene unicamente el bloque de metadatos YAML con la licencia, sin cuerpo de texto.
 
 La busqueda web asociada al modelo no ha devuelto ningun resultado relevante: los enlaces recuperados corresponden a paginas en polaco sobre la configuracion del correo Onet y sobre iOS 15.2, sin relacion alguna con el modelo. Por tanto, esta ficha se limita a documentar la existencia del repositorio y a dejar constancia explicita de la informacion no disponible, sin estimaciones especulativas.
 
@@ -72,7 +72,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Abiola-Dave/Fraudulent_Image_Detector | no disponible | no disponible | apache-2.0 | repositorio HuggingFace sin documentacion | no disponible |
+| Abiola-Dave/Fraudulent_Image_Detector | no disponible | no disponible | apache-2.0 | repositorio Hugging Face sin documentacion | no disponible |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,6 +88,6 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Abiola-Dave/Fraudulent_Image_Detector
+- Hugging Face: https://huggingface.co/Abiola-Dave/Fraudulent_Image_Detector
 - Resultados de busqueda web: no se han encontrado enlaces relevantes. Las URL recuperadas (pl.ccm.net sobre la configuracion de Onet y sobre iOS 15.2) no guardan relacion con el modelo.
 - Paper, blog, repositorio de codigo o demo: no disponible.

@@ -4,7 +4,7 @@
 
 SnapKitty Sovereign Addr es una herramienta de software, no un modelo de inteligencia artificial. Se trata de una utilidad de línea de comandos y una biblioteca Rust desarrollada por Snapkitty para el ecosistema SnapKitty, cuyo propósito es calcular direcciones canónicas (sovereign addresses) para artefactos JSON. Resuelve el problema de la identificación determinista de artefactos: dado un mismo contenido semántico, siempre genera la misma dirección, independientemente del orden de las claves o de la forma de codificación Unicode. Su relevancia radica en proporcionar un mecanismo de direccionamiento no recursivo, verificable y con recibos WORM (write-once-read-many) para garantizar integridad y trazabilidad en sistemas distribuidos.
 
-La arquitectura del software se compone de un pipeline de seis etapas: validación de admisibilidad JSON, normalización Unicode NFC, serialización canónica JSON, hash SHA-256, emisión de la dirección con prefijo `snapaddr:` y generación de un recibo WORM sellado. No se trata de un modelo con parámetros ni contexto, sino de un algoritmo determinista implementado en Rust. La versión actual está publicada en HuggingFace con identificador `Snapkitty/sovereign-addr`, aunque no se especifica licencia ni idiomas soportados.
+La arquitectura del software se compone de un pipeline de seis etapas: validación de admisibilidad JSON, normalización Unicode NFC, serialización canónica JSON, hash SHA-256, emisión de la dirección con prefijo `snapaddr:` y generación de un recibo WORM sellado. No se trata de un modelo con parámetros ni contexto, sino de un algoritmo determinista implementado en Rust. La versión actual está publicada en Hugging Face con identificador `Snapkitty/sovereign-addr`, aunque no se especifica licencia ni idiomas soportados.
 
 ## Especificaciones tecnicas
 
@@ -68,9 +68,9 @@ No disponible. No existen modelos de IA comparables porque esta herramienta no p
 - El alcance se limita a artefactos JSON; no soporta otros formatos de datos.
 - La normalización Unicode NFC puede no cubrir todas las variantes de equivalencia (por ejemplo, compatibilidad), lo que podría generar direcciones diferentes para representaciones que un humano consideraría equivalentes.
 - El recibo WORM depende de la marca de tiempo del sistema; si el reloj no es fiable, el sello podría ser cuestionable.
-- No hay información sobre mantenimiento, soporte o comunidad; el proyecto parece reciente (creado en 2026) y con cero descargas y likes en HuggingFace.
+- No hay información sobre mantenimiento, soporte o comunidad; el proyecto parece reciente (creado en 2026) y con cero descargas y likes en Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/sovereign-addr
+- Hugging Face: https://huggingface.co/Snapkitty/sovereign-addr
 - No se proporcionan otros enlaces (repositorio, documentación, paper) en la información disponible.

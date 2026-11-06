@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-VL-2B-litertlm (esta ficha) | 2B | 32.768 / 4.096 tokens | LiteRT-LM | Apache 2.0 | HuggingFace (Kavic) |
-| LiquidAI/LFM3-VL-2B (base) | 2B | no disponible | safetensors (presumible) | Apache 2.0 | HuggingFace (LiquidAI) |
+| LFM3-VL-2B-litertlm (esta ficha) | 2B | 32.768 / 4.096 tokens | LiteRT-LM | Apache 2.0 | Hugging Face (Kavic) |
+| LiquidAI/LFM3-VL-2B (base) | 2B | no disponible | safetensors (presumible) | Apache 2.0 | Hugging Face (LiquidAI) |
 | Gemma-4-E2B-it | no disponible | no disponible | LiteRT-LM | no disponible | Google AI Edge (citado como referencia en la model card) |
 
 La model card menciona Gemma-4-E2B-it como referencia de comportamiento en Edge Gallery (fallo del delegado de visión con bundles multimodales), pero no aporta datos de rendimiento comparativo. No se dispone de benchmarks que permitan una comparación cuantitativa con alternativas.
@@ -90,7 +90,7 @@ La model card menciona Gemma-4-E2B-it como referencia de comportamiento en Edge 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Kavic/LFM3-VL-2B-litertlm
+- Hugging Face del modelo: https://huggingface.co/Kavic/LFM3-VL-2B-litertlm
 - Ficheros y versiones: https://huggingface.co/Kavic/LFM3-VL-2B-litertlm/tree/main
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Repositorio Fulkrum Reports: https://github.com/Kavics7/Fulkrum-Reports

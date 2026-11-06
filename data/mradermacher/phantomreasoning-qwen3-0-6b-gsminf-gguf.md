@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PhantomReasoning-Qwen3-0.6B-gsminf-GGUF es una cuantizacion estatica del modelo kilian-group/PhantomReasoning-Qwen3-0.6B-gsminf, publicada por el usuario mradermacher, conocido en HuggingFace por generar versiones GGUF de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo base parte de Qwen3-0.6B, un transformer denso de aproximadamente 600 millones de parametros desarrollado por Alibaba Qwen, sobre el que se ha aplicado un ajuste fino orientado a razonamiento matematico, segun sugiere el sufijo "gsminf" (probablemente derivado de GSM8K, un conjunto de problemas matematicos de nivel escolar).
+PhantomReasoning-Qwen3-0.6B-gsminf-GGUF es una cuantizacion estatica del modelo kilian-group/PhantomReasoning-Qwen3-0.6B-gsminf, publicada por el usuario mradermacher, conocido en Hugging Face por generar versiones GGUF de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo base parte de Qwen3-0.6B, un transformer denso de aproximadamente 600 millones de parametros desarrollado por Alibaba Qwen, sobre el que se ha aplicado un ajuste fino orientado a razonamiento matematico, segun sugiere el sufijo "gsminf" (probablemente derivado de GSM8K, un conjunto de problemas matematicos de nivel escolar).
 
 El interes de esta publicacion es practico: ofrece el modelo en formato GGUF con multiples niveles de cuantizacion (desde Q2_K hasta F16, incluyendo variantes IQ e intermedias K), lo que permite ejecutarlo en hardware modesto, incluso en CPU o GPUs de gama baja con poca VRAM. Es relevante para quienes quieren experimentar con modelos pequenos especializados en razonamiento sin depender de infraestructura grande.
 
@@ -25,7 +25,7 @@ No obstante, la informacion publicada es muy limitada: la model card del reposit
 
 La model card del repositorio no aporta informacion sobre la arquitectura interna ni sobre el proceso de entrenamiento. Por el nombre del modelo base (Qwen3-0.6B) se deduce que se trata de un transformer denso de la familia Qwen3, pero no se confirma en la documentacion disponible. El sufijo "gsminf" del modelo original sugiere un ajuste fino orientado a inferencia de razonamiento matematico, posiblemente sobre el conjunto GSM8K, aunque no se especifica la composicion del dataset, el numero de tokens de entrenamiento ni si se aplicaron tecnicas de RLHF o DPO.
 
-La unica informacion tecnica concreta es la relativa al proceso de cuantizacion: el autor indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que las cuantizaciones se generaron a partir de pesos en formato HuggingFace convertidos a GGUF con la herramienta de cuantizacion estandar. No se documentan innovaciones tecnicas adicionales.
+La unica informacion tecnica concreta es la relativa al proceso de cuantizacion: el autor indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que las cuantizaciones se generaron a partir de pesos en formato Hugging Face convertidos a GGUF con la herramienta de cuantizacion estandar. No se documentan innovaciones tecnicas adicionales.
 
 ## Capacidades
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| PhantomReasoning-Qwen3-0.6B-gsminf-GGUF | ~0,6B | No disponible | No disponible | GGUF | HuggingFace (mradermacher) |
-| Qwen3-0.6B | ~0,6B | No disponible en esta ficha | Apache 2.0 (habitual en Qwen3, no confirmado) | Safetensors, GGUF | HuggingFace (Qwen) |
-| Qwen2.5-0.5B-Instruct | ~0,5B | 32.768 tokens (segun documentacion de Qwen2.5) | Apache 2.0 | Safetensors, GGUF | HuggingFace (Qwen) |
-| SmolLM2-360M-Instruct | ~0,36B | 8.192 tokens (segun documentacion de SmolLM2) | Apache 2.0 | Safetensors, GGUF | HuggingFace (HuggingFaceTB) |
+| PhantomReasoning-Qwen3-0.6B-gsminf-GGUF | ~0,6B | No disponible | No disponible | GGUF | Hugging Face (mradermacher) |
+| Qwen3-0.6B | ~0,6B | No disponible en esta ficha | Apache 2.0 (habitual en Qwen3, no confirmado) | Safetensors, GGUF | Hugging Face (Qwen) |
+| Qwen2.5-0.5B-Instruct | ~0,5B | 32.768 tokens (segun documentacion de Qwen2.5) | Apache 2.0 | Safetensors, GGUF | Hugging Face (Qwen) |
+| SmolLM2-360M-Instruct | ~0,36B | 8.192 tokens (segun documentacion de SmolLM2) | Apache 2.0 | Safetensors, GGUF | Hugging Face (HuggingFaceTB) |
 
 La comparativa se limita a datos de los modelos de referencia; no hay informacion publicada sobre el rendimiento relativo del modelo PhantomReasoning frente a estas alternativas.
 
@@ -82,6 +82,6 @@ La comparativa se limita a datos de los modelos de referencia; no hay informacio
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/PhantomReasoning-Qwen3-0.6B-gsminf-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/PhantomReasoning-Qwen3-0.6B-gsminf-GGUF
 - Modelo original cuantizado: https://huggingface.co/kilian-group/PhantomReasoning-Qwen3-0.6B-gsminf
 - Modelo base de referencia (Qwen3-0.6B): https://huggingface.co/Qwen/Qwen3-0.6B

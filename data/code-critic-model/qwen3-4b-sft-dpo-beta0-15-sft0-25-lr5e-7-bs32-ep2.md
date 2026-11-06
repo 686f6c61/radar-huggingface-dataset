@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune de Qwen3-4B, desarrollado por el usuario de HuggingFace "code-critic-model". Se basa en un modelo intermedio, code-critic-model/qwen3-4b-sft-prm, que a su vez es un ajuste SFT de Qwen3-4B. El objetivo es crear un "code critic" o un "process reward model" (PRM) capaz de evaluar la calidad de pasos intermedios de razonamiento, especialmente en tareas de código y razonamiento matemático. Se entrenó con DPO (Direct Preference Optimization) sobre el dataset propio PRM_1541i, que contiene 1541 ejemplos. El modelo tiene 4.022 millones de parámetros (aproximadamente 4B) y está disponible en formato safetensors. Aunque no se especifica la licencia, el modelo base Qwen3-4B es de código abierto.
+Este modelo es un fine-tune de Qwen3-4B, desarrollado por el usuario de Hugging Face "code-critic-model". Se basa en un modelo intermedio, code-critic-model/qwen3-4b-sft-prm, que a su vez es un ajuste SFT de Qwen3-4B. El objetivo es crear un "code critic" o un "process reward model" (PRM) capaz de evaluar la calidad de pasos intermedios de razonamiento, especialmente en tareas de código y razonamiento matemático. Se entrenó con DPO (Direct Preference Optimization) sobre el dataset propio PRM_1541i, que contiene 1541 ejemplos. El modelo tiene 4.022 millones de parámetros (aproximadamente 4B) y está disponible en formato safetensors. Aunque no se especifica la licencia, el modelo base Qwen3-4B es de código abierto.
 
 Relevancia: este tipo de modelos PRM son útiles para mejorar la fiabilidad de sistemas de razonamiento multi-paso, ya que pueden puntuar cada paso y detectar errores. Sin embargo, al ser un modelo pequeño y con un dataset reducido, su utilidad práctica es limitada y debe considerarse como un experimento de investigación.
 
@@ -68,7 +68,7 @@ No se dispone de modelos comparables directos en la misma categoria (fine-tunes 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/code-critic-model/Qwen3-4B-SFT-DPO-beta0.15-sft0.25-lr5e-7-bs32-ep2
+- Modelo en Hugging Face: https://huggingface.co/code-critic-model/Qwen3-4B-SFT-DPO-beta0.15-sft0.25-lr5e-7-bs32-ep2
 - Modelo base SFT: https://huggingface.co/code-critic-model/qwen3-4b-sft-prm
 - Dataset PRM_1541i: https://huggingface.co/datasets/code-critic-model/PRM_1541i
 - Paper DPO: https://huggingface.co/papers/2305.18290 (tambien en arxiv: https://arxiv.org/abs/2305.18290)

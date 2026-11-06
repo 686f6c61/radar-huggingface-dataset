@@ -35,7 +35,7 @@ El modelo sigue la arquitectura GPT estándar implementada en `nanochat`. Tiene 
 ## Casos de uso
 
 - Investigación en escalado de datos: el modelo permite estudiar cómo la relación entre tokens de pre-entrenamiento y post-entrenamiento afecta a la pérdida y al comportamiento de un modelo pequeño.
-- Ablaciones de arquitectura: sirve como base para comparar configuraciones de entrenamiento (por ejemplo, inicialización desde HuggingFace, reinicialización de embeddings, reset del optimizador).
+- Ablaciones de arquitectura: sirve como base para comparar configuraciones de entrenamiento (por ejemplo, inicialización desde Hugging Face, reinicialización de embeddings, reset del optimizador).
 - Reproducción de experimentos: el checkpoint y la configuración completa están disponibles, lo que permite reproducir el experimento y analizar las métricas en W&B.
 - Fine-tuning experimental: al ser un modelo pequeño y con licencia Apache 2.0, puede usarse como punto de partida para fine-tuning en tareas específicas de investigación, aunque su vocabulario reducido limita su aplicabilidad.
 - Benchmark de eficiencia: sirve como referencia para medir el coste de entrenamiento (FLOPs por token) en modelos pequeños.
@@ -70,6 +70,6 @@ No se han encontrado modelos comparables en la información disponible. Existen 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_1Bpt_hfinit_adamwppt_500M_s2_2026-09-06_15-14-54_544717-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_1Bpt_hfinit_adamwppt_500M_s2_2026-09-06_15-14-54_544717-pt
 - W&B run: https://wandb.ai/alexksternteam/token_dose_1Bpt_adamw_seed_replicas_v1/runs/wsch0fh3
 - Repositorio nanochat: https://github.com/karpathy/nanochat

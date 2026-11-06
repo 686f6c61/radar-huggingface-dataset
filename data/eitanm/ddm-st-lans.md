@@ -84,8 +84,8 @@ No se detallan en la informacion disponible las alternativas concretas dentro de
 
 | Modelo | Supuesto sobre el tiempo de no decision | Parametro de variabilidad | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ddm_uniform_st` | `Uniform(t - st, t + st)` | `st` = semianchura, SD = `st / sqrt(3)` | 85 KB (ONNX) | MIT | HuggingFace, ubicacion interina |
-| `ddm_normal_st` | `Normal(t, st)` no truncada | `st` = desviacion tipica | 85 KB (ONNX) | MIT | HuggingFace, ubicacion interina |
+| `ddm_uniform_st` | `Uniform(t - st, t + st)` | `st` = semianchura, SD = `st / sqrt(3)` | 85 KB (ONNX) | MIT | Hugging Face, ubicacion interina |
+| `ddm_normal_st` | `Normal(t, st)` no truncada | `st` = desviacion tipica | 85 KB (ONNX) | MIT | Hugging Face, ubicacion interina |
 | DDM sin variabilidad en `t` | `t` fijo | no tiene | no aplica (solucion en serie implementada en HSSM) | segun HSSM | HSSM estable |
 | Otras LAN de HSSM | segun modelo | segun modelo | no disponible | segun HSSM | `franklab/HSSM` |
 
@@ -106,7 +106,7 @@ Nota de comparacion: una misma `st` no representa la misma variabilidad en las d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Eitanm/ddm-st-lans
+- Modelo en Hugging Face: https://huggingface.co/Eitanm/ddm-st-lans
 - Rama de HSSM con los registros y el guard de admisibilidad: https://github.com/EItanm1999/HSSM.git (rama `labmate/st-networks`)
 - Repositorio de destino previsto de las LAN: https://huggingface.co/franklab/HSSM
 - Nota sobre la busqueda web: los resultados devueltos no guardan ninguna relacion con el modelo (paginas de ayuda de Facebook en chino y griego), por lo que no se han podido incorporar papers, blogs ni demos adicionales. No hay enlaces a articulos, repositorios auxiliares ni demostraciones en la informacion disponible.

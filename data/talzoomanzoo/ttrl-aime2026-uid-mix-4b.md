@@ -76,8 +76,8 @@ No se dispone de informacion suficiente para comparar este adaptador con alterna
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ttrl-aime2026-uid-mix-4b (este adaptador) | Adaptador LoRA (rango 16) sobre Qwen3-4B | Heredado del base | No disponible | HuggingFace |
-| Qwen/Qwen3-4B (modelo base) | ~4B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| ttrl-aime2026-uid-mix-4b (este adaptador) | Adaptador LoRA (rango 16) sobre Qwen3-4B | Heredado del base | No disponible | Hugging Face |
+| Qwen/Qwen3-4B (modelo base) | ~4B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 
 No disponible para el resto de alternativas.
 
@@ -97,10 +97,10 @@ No disponible para el resto de alternativas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/talzoomanzoo/ttrl-aime2026-uid-mix-4b
+- Modelo en Hugging Face: https://huggingface.co/talzoomanzoo/ttrl-aime2026-uid-mix-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset del autor (aime26): https://huggingface.co/datasets/talzoomanzoo/aime26/viewer
-- Perfil del autor en HuggingFace: https://huggingface.co/talzoomanzoo/datasets
+- Perfil del autor en Hugging Face: https://huggingface.co/talzoomanzoo/datasets
 - Perfil del autor en GitHub: https://github.com/talzoomanzoo/
 - Repositorios del autor en GitHub: https://github.com/talzoomanzoo?tab=repositories
 - Leaderboard AIME 2026 (referencia externa): https://benchlm.ai/benchmarks/aime2026

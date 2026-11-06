@@ -6,7 +6,7 @@
 
 No es un modelo de lenguaje: es una politica neuronal para control de un brazo robotico Franka Panda en una tarea de alcanzar un objetivo en el espacio 3D, con recompensa densa. El agente se entrena desde inicializacion aleatoria en 10.000 pasos de entorno con semilla 20261101, y el checkpoint se selecciona con semillas de validacion separadas.
 
-Su relevancia es didactica y de referencia: ilustra el flujo completo de entrenamiento, evaluacion con semillas fijas y publicacion reproducible de un agente RL en HuggingFace. El rendimiento es modesto en recompensa media (-0.2152), aunque la tasa de exito en el ultimo paso es del 100 %, lo que refleja lo que mide realmente la recompensa densa frente a la consecucion del objetivo.
+Su relevancia es didactica y de referencia: ilustra el flujo completo de entrenamiento, evaluacion con semillas fijas y publicacion reproducible de un agente RL en Hugging Face. El rendimiento es modesto en recompensa media (-0.2152), aunque la tasa de exito en el ultimo paso es del 100 %, lo que refleja lo que mide realmente la recompensa densa frente a la consecucion del objetivo.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| td3-PandaReachDense-v3 | no disponible | no aplica | mean_reward -0.2152 ± 0.1161; exito final 100 % | Apache 2.0 | HuggingFace |
+| td3-PandaReachDense-v3 | no disponible | no aplica | mean_reward -0.2152 ± 0.1161; exito final 100 % | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vladprime/td3-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/Vladprime/td3-PandaReachDense-v3
 - Curso HF Deep RL, unidad 6 (hands-on): https://huggingface.co/learn/deep-rl-course/en/unit6/hands-on
 - Libreria panda-gym: no disponible en la informacion proporcionada
 - Repositorio Stable-Baselines3: no disponible en la informacion proporcionada

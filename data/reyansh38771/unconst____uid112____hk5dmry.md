@@ -4,7 +4,7 @@
 
 El modelo `reyansh38771/unconst____uid112____hk5DMRy` es un modelo de generacion de texto multimodal (imagen-texto-a-texto) basado en arquitectura Mixture-of-Experts (MoE) derivada de Qwen3.5 MoE, segun los tags del repositorio. Fue desarrollado a partir del modelo base `unconst/Affine-5czsc2fc98-r252-merged` mediante un proceso de fine-tuning con offline DPO, tal como indican los tags `offline-dpo` y `reason-v3`, lo que sugiere un enfasis en capacidades de razonamiento.
 
-El repositorio tiene un tamano de 8.8 GB, acceso restringido (gated) y no registra descargas ni valoraciones. Se trata de un modelo muy reciente (creado en agosto de 2026) y con documentacion publica muy limitada: no se dispone de licencia declarada, idiomas soportados, ni especificaciones tecnicas detalladas en la ficha de HuggingFace. La informacion disponible se limita a los metadatos del repositorio y las etiquetas asociadas.
+El repositorio tiene un tamano de 8.8 GB, acceso restringido (gated) y no registra descargas ni valoraciones. Se trata de un modelo muy reciente (creado en agosto de 2026) y con documentacion publica muy limitada: no se dispone de licencia declarada, idiomas soportados, ni especificaciones tecnicas detalladas en la ficha de Hugging Face. La informacion disponible se limita a los metadatos del repositorio y las etiquetas asociadas.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, lo que requiere aceptar condiciones en HuggingFace antes de poder descargarlo.
+- Acceso restringido: el modelo es gated, lo que requiere aceptar condiciones en Hugging Face antes de poder descargarlo.
 - Licencia no declarada: no se especifica la licencia, lo que impide conocer las restricciones de uso comercial o de redistribucion. No debe usarse en produccion sin aclarar este punto.
 - Documentacion inexistente: no hay model card detallada, ni especificaciones de entrenamiento, ni benchmarks publicados. El modelo no es adecuado para evaluaciones rigurosas sin informacion adicional.
 - Cero adopcion: sin descargas ni valoraciones, no hay evidencia de que el modelo haya sido validado por la comunidad.
@@ -76,7 +76,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/reyansh38771/unconst____uid112____hk5DMRy
+- Repositorio Hugging Face: https://huggingface.co/reyansh38771/unconst____uid112____hk5DMRy
 - Modelo base: https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.

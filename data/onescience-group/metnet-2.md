@@ -78,7 +78,7 @@ La model card indica de forma explicita que la evaluacion incluida en el reposit
 
 | Modelo | Parametros | Horizonte | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OneScience-Group/MetNet-2 | no disponible | Hasta 12 h, intervalos de 2 min | ConvLSTM + FiLM + residual dilatado multiescala | apache-2.0 (codigo) | Repositorio en HuggingFace sin pesos preentrenados |
+| OneScience-Group/MetNet-2 | no disponible | Hasta 12 h, intervalos de 2 min | ConvLSTM + FiLM + residual dilatado multiescala | apache-2.0 (codigo) | Repositorio en Hugging Face sin pesos preentrenados |
 | MetNet-2 (Google Research, metodo original) | no disponible | Hasta 12 h, intervalos de 2 min | ConvLSTM + FiLM + residual dilatado multiescala | no disponible | Paper publicado; no se distribuyen pesos cargables directamente |
 | Otros modelos de nowcasting (GraphCast, Pangu-Weather, NowcastNet, etc.) | no disponible | no disponible | no disponible | no disponible | No se han proporcionado datos comparativos en la informacion disponible |
 
@@ -97,11 +97,11 @@ La informacion proporcionada no incluye resultados de benchmarks ni especificaci
 - La incertidumbre de las predicciones es intrinseca al problema; el modelo emite una distribucion sobre 512 categorias y su utilidad depende de la calibracion, que no puede verificarse con datos sinteticos.
 - No hay evidencia en la informacion disponible sobre sesgos especificos, comportamiento fuera del dominio de entrenamiento (2017-2020 en el metodo original) o degradacion en regiones sin cobertura de radar MRMS o satelite GOES.
 - No se documentan garantias de reproducibilidad, versionado de datos ni limites de uso comercial mas alla de lo que establece la licencia apache-2.0 del codigo.
-- La fecha de creacion del repositorio indicada en HuggingFace es 2026-09-11, con cero descargas y cero likes en el momento de la consulta.
+- La fecha de creacion del repositorio indicada en Hugging Face es 2026-09-11, con cero descargas y cero likes en el momento de la consulta.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OneScience-Group/MetNet-2
+- Repositorio en Hugging Face: https://huggingface.co/OneScience-Group/MetNet-2
 - Paper de referencia: Deep learning for twelve hour precipitation forecasts — https://doi.org/10.1038/s41467-022-32483-x
 - Entorno OneCode (programacion AI4S): https://web-2069360198568017922-iaaj.ksai.scnet.cn:58043/home
 - OneScience en Gitee: https://gitee.com/onescience-ai/onescience

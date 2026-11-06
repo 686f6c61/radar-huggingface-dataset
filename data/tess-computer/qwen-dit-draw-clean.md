@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-DiT-Draw (TESS-Computer/qwen-dit-draw-clean) | ~3.040 M (3.000 M congelados + 36,7 M entrenables) | no disponible | apache-2.0 | VLM + cabeza DiT para trayectorias de dibujo | HuggingFace, 0 descargas |
-| Qwen2.5-VL-3B-Instruct (modelo base) | 3.000 M | no disponible en la informacion proporcionada | apache-2.0 | VLM generalista (vision-lenguaje) | HuggingFace (modelo ampliamente utilizado) |
+| Qwen-DiT-Draw (TESS-Computer/qwen-dit-draw-clean) | ~3.040 M (3.000 M congelados + 36,7 M entrenables) | no disponible | apache-2.0 | VLM + cabeza DiT para trayectorias de dibujo | Hugging Face, 0 descargas |
+| Qwen2.5-VL-3B-Instruct (modelo base) | 3.000 M | no disponible en la informacion proporcionada | apache-2.0 | VLM generalista (vision-lenguaje) | Hugging Face (modelo ampliamente utilizado) |
 | GR00T (referencia arquitectonica citada por el autor) | no disponible | no disponible | no disponible | Prediccion de acciones por fragmentos para robtica | no disponible |
 
 La comparativa con otros modelos especificos de prediccion de trayectorias (por ejemplo, propuestas equivalentes de VLM + cabeza de accion) no esta disponible en la informacion proporcionada.
@@ -89,7 +89,7 @@ La comparativa con otros modelos especificos de prediccion de trayectorias (por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TESS-Computer/qwen-dit-draw-clean
+- Modelo en Hugging Face: https://huggingface.co/TESS-Computer/qwen-dit-draw-clean
 - Dataset de entrenamiento: https://huggingface.co/datasets/TESS-Computer/quickdraw-circles-clean
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 

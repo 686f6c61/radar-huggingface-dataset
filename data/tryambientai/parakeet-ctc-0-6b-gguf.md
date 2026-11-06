@@ -72,7 +72,7 @@ Rendimiento (factor de tiempo real, RTF; mayor es mejor):
 - VRAM estimada para inferencia: desde ~0,5 GB (Q4_K_M) hasta ~2,5 GB (F32); el modelo es lo suficientemente pequeño para ejecutarse íntegramente en memoria de GPU de gama baja o incluso en RAM de CPU.
 - GPU recomendadas: cualquier GPU con soporte Metal (Apple Silicon, validado en M4 Max) o Vulkan (validado en AMD Ryzen 4750U con GPU integrada); GPUs dedicadas como RTX 4090 o A100 no son necesarias pero funcionarían sin problema.
 - Cabe en GPU de consumo: sí, en cualquier GPU con al menos 3 GB de VRAM en F32 y menos de 1 GB en cuantizaciones bajas; también funciona en CPU pura.
-- Opciones de despliegue: transcribe.cpp (runtime nativo para GGUF, con CLI `transcribe-cli`); el modelo original es compatible con NVIDIA NeMo y con Transformers de HuggingFace.
+- Opciones de despliegue: transcribe.cpp (runtime nativo para GGUF, con CLI `transcribe-cli`); el modelo original es compatible con NVIDIA NeMo y con Transformers de Hugging Face.
 - Latencia y throughput: RTF de 218,5 en Metal (M4 Max), 30,5 en CPU (M4 Max), 22,5 en Vulkan (Ryzen 4750U) y 10,0 en CPU (Ryzen 4750U); es decir, en el peor caso validado procesa audio 10 veces más rápido que tiempo real.
 - Requisito de entrada: audio WAV mono a 16 kHz (convertible con ffmpeg desde otros formatos).
 
@@ -102,7 +102,7 @@ La comparación con Whisper se ofrece a título orientativo por categoría (ASR 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/tryambientai/parakeet-ctc-0.6b-gguf
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/tryambientai/parakeet-ctc-0.6b-gguf
 - Modelo base original: https://huggingface.co/nvidia/parakeet-ctc-0.6b
 - Commit upstream del checkpoint: https://huggingface.co/nvidia/parakeet-ctc-0.6b/commit/ad09ba1
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

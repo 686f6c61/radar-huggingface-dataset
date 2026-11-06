@@ -65,7 +65,7 @@ No se dispone de datos de rendimiento comparativos verificados. En términos de 
 
 ## Enlaces
 
-- Repositorio mirror en HuggingFace: https://huggingface.co/positron-ai/Muse-Glimmer-30B
+- Repositorio mirror en Hugging Face: https://huggingface.co/positron-ai/Muse-Glimmer-30B
 - Modelo original: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Página oficial de Meta: https://developer.meta.com/ai/models/muse-glimmer/
 - Blog de investigación de Meta: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model

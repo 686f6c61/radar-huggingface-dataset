@@ -2,11 +2,11 @@
 
 ## Resumen
 
-FinaPolat/Qwen3-8B-grounded_KGC-grpo-domains-coldstart_low_data es un ajuste fino (fine-tune) del modelo Qwen3-8B publicado en HuggingFace por el usuario FinaPolat. Por el identificador del repositorio se deduce que el entrenamiento se ha realizado con GRPO (Group Relative Policy Optimization, la implementacion de la libreria TRL) sobre una tarea de construccion de grafos de conocimiento con fundamento o *grounding* (KGC, *Knowledge Graph Construction*), en escenarios de dominio especifico, con arranque en frio (*cold start*) y en regimen de pocos datos (*low data*). El tag `qwen3` y el volumen de pesos confirman que la arquitectura base es Qwen3-8B.
+FinaPolat/Qwen3-8B-grounded_KGC-grpo-domains-coldstart_low_data es un ajuste fino (fine-tune) del modelo Qwen3-8B publicado en Hugging Face por el usuario FinaPolat. Por el identificador del repositorio se deduce que el entrenamiento se ha realizado con GRPO (Group Relative Policy Optimization, la implementacion de la libreria TRL) sobre una tarea de construccion de grafos de conocimiento con fundamento o *grounding* (KGC, *Knowledge Graph Construction*), en escenarios de dominio especifico, con arranque en frio (*cold start*) y en regimen de pocos datos (*low data*). El tag `qwen3` y el volumen de pesos confirman que la arquitectura base es Qwen3-8B.
 
-El modelo cuenta con 8.190.735.360 parametros (aproximadamente 8,19 mil millones) y un repositorio de 16,4 GB, coherente con pesos en precision de 16 bits. Se distribuye en formato safetensors y esta etiquetado como `text-generation` y `conversational`, ademas de llevar los tags `trl` y `grpo`, lo que confirma el uso de la libreria TRL de HuggingFace para el ajuste por refuerzo.
+El modelo cuenta con 8.190.735.360 parametros (aproximadamente 8,19 mil millones) y un repositorio de 16,4 GB, coherente con pesos en precision de 16 bits. Se distribuye en formato safetensors y esta etiquetado como `text-generation` y `conversational`, ademas de llevar los tags `trl` y `grpo`, lo que confirma el uso de la libreria TRL de Hugging Face para el ajuste por refuerzo.
 
-La relevancia de esta ficha es limitada en terminos de documentacion: la model card es una plantilla autogenerada por HuggingFace en la que todos los campos relevantes aparecen como "[More Information Needed]". No se declaran licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El modelo tiene 0 descargas y 0 likes en el momento de redactar esta ficha, por lo que se trata de una publicacion de investigacion sin validacion externa.
+La relevancia de esta ficha es limitada en terminos de documentacion: la model card es una plantilla autogenerada por Hugging Face en la que todos los campos relevantes aparecen como "[More Information Needed]". No se declaran licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El modelo tiene 0 descargas y 0 likes en el momento de redactar esta ficha, por lo que se trata de una publicacion de investigacion sin validacion externa.
 
 ## Especificaciones tecnicas
 
@@ -61,23 +61,23 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion INT8 (8 bits): aproximadamente 8-9 GB. En INT4 (4 bits): aproximadamente 4-5 GB, aunque estas cuantizaciones no estan publicadas en el repositorio y habria que generarlas.
 - GPU recomendadas para produccion: A100 40/80 GB, H100 80 GB, L40S o A6000 para despliegues con contexto largo y concurrencia alta.
 - GPU de consumo: cabe en una RTX 4090 (24 GB) en FP16 con contexto moderado o en INT8/INT4 con mayor margen; tambien en RTX 3090 (24 GB) con limitaciones de contexto. En GPUs de 8-12 GB solo seria viable con cuantizacion agresiva (INT4) o descarga parcial a CPU.
-- Opciones de despliegue: vLLM o TGI para servirlo en formato safetensors; llama.cpp u Ollama requeririan convertir previamente los pesos a GGUF, que no se distribuye en el repositorio. El tag `text-generation-inference` y `endpoints_compatible` indica compatibilidad con TGI y con los Inference Endpoints de HuggingFace.
+- Opciones de despliegue: vLLM o TGI para servirlo en formato safetensors; llama.cpp u Ollama requeririan convertir previamente los pesos a GGUF, que no se distribuye en el repositorio. El tag `text-generation-inference` y `endpoints_compatible` indica compatibilidad con TGI y con los Inference Endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FinaPolat/Qwen3-8B-grounded_KGC-grpo-domains-coldstart_low_data | 8,19 B | No disponible (base: 32.768 nativos) | KGC con fundamento, ajuste GRPO | No disponible | HuggingFace, safetensors |
-| Qwen3-8B (base) | 8,19 B | 32.768 nativos, 131.072 con YaRN | Proposito general, razonamiento, codigo | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Llama 3.1 8B Instruct | 8,03 B | 131.072 | Proposito general, instrucciones | Llama 3.1 Community License | HuggingFace |
-| Gemma 2 9B | 9,24 B | 8.192 | Proposito general, instrucciones | Gemma Terms of Use | HuggingFace |
+| FinaPolat/Qwen3-8B-grounded_KGC-grpo-domains-coldstart_low_data | 8,19 B | No disponible (base: 32.768 nativos) | KGC con fundamento, ajuste GRPO | No disponible | Hugging Face, safetensors |
+| Qwen3-8B (base) | 8,19 B | 32.768 nativos, 131.072 con YaRN | Proposito general, razonamiento, codigo | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Llama 3.1 8B Instruct | 8,03 B | 131.072 | Proposito general, instrucciones | Llama 3.1 Community License | Hugging Face |
+| Gemma 2 9B | 9,24 B | 8.192 | Proposito general, instrucciones | Gemma Terms of Use | Hugging Face |
 
 No se dispone de modelos comparables especificos de KGC con fundamento en la informacion proporcionada, por lo que la comparacion se limita a arquitecturas de tamano similar de uso general.
 
 ## Limitaciones y advertencias
 
-- La model card es una plantilla autogenerada por HuggingFace: no hay informacion verificada sobre datos de entrenamiento, procedimiento ni evaluacion.
+- La model card es una plantilla autogenerada por Hugging Face: no hay informacion verificada sobre datos de entrenamiento, procedimiento ni evaluacion.
 - La licencia no esta declarada. No se puede asumir uso comercial sin consultar al autor, y la base Qwen3-8B cuenta con licencia Apache 2.0, pero el fine-tune no la hereda necesariamente de forma automatica.
 - Idiomas soportados no declarados: se desconoce si el ajuste conserva las capacidades multilingues de la base o si el entrenamiento las ha degradado.
 - Sin benchmarks publicados: no existe evidencia de rendimiento en tareas de KGC ni en tareas generales.
@@ -89,8 +89,8 @@ No se dispone de modelos comparables especificos de KGC con fundamento en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FinaPolat/Qwen3-8B-grounded_KGC-grpo-domains-coldstart_low_data
+- Modelo en Hugging Face: https://huggingface.co/FinaPolat/Qwen3-8B-grounded_KGC-grpo-domains-coldstart_low_data
 - Paper referenciado en los tags (Lacoste et al., 2019, emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de Machine Learning: https://mlco2.github.io/impact
-- Modelo base Qwen3-8B: no disponible en la informacion proporcionada (se puede localizar en la organizacion Qwen de HuggingFace)
+- Modelo base Qwen3-8B: no disponible en la informacion proporcionada (se puede localizar en la organizacion Qwen de Hugging Face)
 - Repositorio de TRL (libreria usada para GRPO): no disponible en la informacion proporcionada

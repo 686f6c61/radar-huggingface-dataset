@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jolawal1995/cnn-transformer-demo39` es un repositorio experimental publicado en HuggingFace por el usuario jolawal1995 que contiene una implementación propia de una arquitectura híbrida denominada "CNN Transformer" orientada a tareas de generación. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El autor lo presenta explícitamente como un punto de partida arquitectónico, no como un modelo listo para producción.
+`jolawal1995/cnn-transformer-demo39` es un repositorio experimental publicado en Hugging Face por el usuario jolawal1995 que contiene una implementación propia de una arquitectura híbrida denominada "CNN Transformer" orientada a tareas de generación. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El autor lo presenta explícitamente como un punto de partida arquitectónico, no como un modelo listo para producción.
 
 El repositorio incluye el código Python con la definición del modelo y un punto de entrada ejecutable, así como los ficheros de configuración (`config.json` y `training_args.json`) que registran los hiperparámetros por defecto del experimento. La arquitectura declarada combina atención dilatada, fusión bilinear, activación swish y normalización por instancias, con una escala "base".
 
@@ -51,7 +51,7 @@ No se ha completado ningún entrenamiento. El fichero `model.safetensors` es un 
 - Pruebas de integración de infraestructura: validar que el entorno de entrenamiento (PyTorch, safetensors, GPUs) carga correctamente el checkpoint de inicialización de 16.576 parámetros antes de escalar a modelos mayores.
 - Docencia y formación: ilustrar en un curso o taller la diferencia entre un checkpoint de inicialización y un modelo entrenado, usando este repositorio como ejemplo explícito de repositorio no evaluado.
 - Benchmarking de metodología: servir como baseline de capacidad mínima en experimentos comparativos, siempre que se entrene con la misma exposición de datos, presupuesto de ajuste y semillas que los modelos rivales, tal como recomienda el autor.
-- Desarrollo de adaptadores de carga: implementar un adaptador explícito para que las APIs genéricas de HuggingFace puedan cargar esta implementación personalizada, dado que no es compatible de forma nativa.
+- Desarrollo de adaptadores de carga: implementar un adaptador explícito para que las APIs genéricas de Hugging Face puedan cargar esta implementación personalizada, dado que no es compatible de forma nativa.
 
 ## Benchmarks y rendimiento
 
@@ -82,5 +82,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jolawal1995/cnn-transformer-demo39
+- Repositorio en Hugging Face: https://huggingface.co/jolawal1995/cnn-transformer-demo39
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-controlled_full_phrase_1200` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995. El repositorio contiene 1.720.574.976 parámetros (aproximadamente 1,72 mil millones) en formato safetensors, con un tamaño total de 3,5 GB, lo que es coherente con pesos en bf16/fp16 (unos 2 bytes por parámetro). La etiqueta `qwen3` indica que deriva de la familia Qwen3, aunque no se confirma en la información disponible qué checkpoint base concreto se utilizó ni qué proceso de ajuste se aplicó.
+`alfred8995/r17-bk-pf-controlled_full_phrase_1200` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995. El repositorio contiene 1.720.574.976 parámetros (aproximadamente 1,72 mil millones) en formato safetensors, con un tamaño total de 3,5 GB, lo que es coherente con pesos en bf16/fp16 (unos 2 bytes por parámetro). La etiqueta `qwen3` indica que deriva de la familia Qwen3, aunque no se confirma en la información disponible qué checkpoint base concreto se utilizó ni qué proceso de ajuste se aplicó.
 
 El nombre del repositorio (`r17-bk-pf-controlled_full_phrase_1200`) sugiere un experimento de ajuste fino orientado a la generación controlada de frases completas, con algún tipo de condición o control introducido en el entrenamiento. Esta es una inferencia a partir del nombre, no un dato documentado: el repositorio no incluye model card con descripción, datos de entrenamiento ni evaluación.
 
@@ -21,7 +21,7 @@ La relevancia práctica es limitada por el momento. El modelo tiene 0 descargas 
 | Licencia | `other` (términos no detallados en la información disponible) |
 | Formato de pesos | safetensors |
 | Autor | alfred8995 |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamaño del repositorio | 3,5 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-10-23 |
@@ -52,7 +52,7 @@ Tampoco hay datos sobre el corpus de entrenamiento: ni número de tokens, ni com
 - Prototipado de extracción o reformulación de frases: con 1,72 B de parámetros es viable ejecutarlo en una GPU de consumo para pruebas rápidas de reescritura o normalización de texto, siempre con validación manual.
 - Generación de texto en local con requisitos de privacidad: al caber en GPUs de gama media y potencialmente en CPU tras conversión a GGUF, permitiría procesar texto sensible sin salida a servicios externos.
 - Base para un ajuste posterior específico de dominio: al ser un modelo pequeño, se puede reentrenar o aplicar LoRA sobre él con presupuesto reducido, aunque conviene partir del Qwen3 original si no hay razón para heredar este ajuste.
-- Docencia y reproducción de pipelines de publicación en HuggingFace: útil como ejemplo de repositorio con acceso gated, licencia `other` y ausencia de model card, para ilustrar buenas y malas prácticas de documentación.
+- Docencia y reproducción de pipelines de publicación en Hugging Face: útil como ejemplo de repositorio con acceso gated, licencia `other` y ausencia de model card, para ilustrar buenas y malas prácticas de documentación.
 - Filtrado y clasificación de texto a nivel de frase: un modelo de este tamaño permite procesar lotes grandes con latencia baja, aunque no hay evidencia publicada de su rendimiento en clasificación.
 
 ## Benchmarks y rendimiento
@@ -76,10 +76,10 @@ No constan evaluaciones de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra s
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| alfred8995/r17-bk-pf-controlled_full_phrase_1200 | 1,72 B | No disponible | `other` (gated) | HuggingFace, acceso restringido | No disponibles |
-| Qwen3-1.7B (modelo base probable) | ≈1,7 B | No disponible en esta ficha | Apache 2.0 (según la familia Qwen3; verificar) | HuggingFace, acceso abierto | No verificados en esta ficha |
-| Llama 3.2 1B | ≈1,2 B | No disponible en esta ficha | Llama 3.2 Community License | HuggingFace, acceso gated | No verificados en esta ficha |
-| SmolLM2-1.7B | ≈1,7 B | No disponible en esta ficha | Apache 2.0 (verificar) | HuggingFace, acceso abierto | No verificados en esta ficha |
+| alfred8995/r17-bk-pf-controlled_full_phrase_1200 | 1,72 B | No disponible | `other` (gated) | Hugging Face, acceso restringido | No disponibles |
+| Qwen3-1.7B (modelo base probable) | ≈1,7 B | No disponible en esta ficha | Apache 2.0 (según la familia Qwen3; verificar) | Hugging Face, acceso abierto | No verificados en esta ficha |
+| Llama 3.2 1B | ≈1,2 B | No disponible en esta ficha | Llama 3.2 Community License | Hugging Face, acceso gated | No verificados en esta ficha |
+| SmolLM2-1.7B | ≈1,7 B | No disponible en esta ficha | Apache 2.0 (verificar) | Hugging Face, acceso abierto | No verificados en esta ficha |
 
 La comparación relevante es frente al Qwen3-1.7B original: mismo orden de magnitud en parámetros, licencia presumiblemente más permisiva y documentación completa, frente a un checkpoint sin model card, con licencia `other` y acceso restringido. Sin resultados de evaluación de este repositorio, no es posible afirmar que el ajuste aporte mejoras sobre la base.
 
@@ -87,7 +87,7 @@ La comparación relevante es frente al Qwen3-1.7B original: mismo orden de magni
 
 - Ausencia total de model card: no se documentan datos de entrenamiento, hiperparámetros, tokenizador modificado ni plantilla de chat, lo que impide reproducir el ajuste.
 - Licencia `other` sin términos visibles en la información disponible: no se puede confirmar que el uso comercial esté permitido. Es imprescindible revisar las condiciones del repositorio antes de cualquier despliegue.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción a la automatización de descargas en CI/CD y en clústeres.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción a la automatización de descargas en CI/CD y en clústeres.
 - Riesgo de alucinación: inherente a los modelos de 1,7 B de parámetros, especialmente en dominios especializados y contextos largos; sin evaluación no puede cuantificarse.
 - Idiomas no declarados: no hay garantía de calidad en castellano ni en ningún otro idioma; debe evaluarse empíricamente.
 - Posible pérdida de capacidades del modelo base: los ajustes finos agresivos sobre modelos pequeños suelen degradar el rendimiento general y el soporte de tool calling; no hay datos que lo descarten.
@@ -97,6 +97,6 @@ La comparación relevante es frente al Qwen3-1.7B original: mismo orden de magni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-controlled_full_phrase_1200
+- Repositorio en Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-controlled_full_phrase_1200
 - Perfil del autor: https://huggingface.co/alfred8995
 - Resultados de búsqueda web proporcionados: ninguno relevante para este modelo (los enlaces devueltos corresponden a manuales de cerraduras, alarmas de incendio e iPhone 17 y no guardan relación con el checkpoint).

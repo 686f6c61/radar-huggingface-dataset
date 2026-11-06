@@ -60,6 +60,6 @@ No se dispone de información para comparar con otros modelos de retrieval de la
 
 ## Enlaces
 
-- [HuggingFace - Kvhernandez1994/retrieval](https://huggingface.co/Kvhernandez1994/retrieval)
+- [Hugging Face - Kvhernandez1994/retrieval](https://huggingface.co/Kvhernandez1994/retrieval)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repos) en la búsqueda web.

@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yujiepan/ltx-2-5-tiny-random | 4,68M BF16 + 32,18M U8 | no disponible | image-to-video con audio | no disponible | HuggingFace (0 descargas) |
-| Lightricks/LTX-2.5 | 35,03B BF16 en checkpoint | no disponible | image-to-video con audio | no disponible | HuggingFace |
-| Otros tiny-random de difusion | variable | no disponible | test de pipelines | variable | HuggingFace |
+| yujiepan/ltx-2-5-tiny-random | 4,68M BF16 + 32,18M U8 | no disponible | image-to-video con audio | no disponible | Hugging Face (0 descargas) |
+| Lightricks/LTX-2.5 | 35,03B BF16 en checkpoint | no disponible | image-to-video con audio | no disponible | Hugging Face |
+| Otros tiny-random de difusion | variable | no disponible | test de pipelines | variable | Hugging Face |
 
 La comparativa directa con alternativas de la misma categoria no esta disponible en la informacion proporcionada. El unico referente claro es el modelo base, del que este repo difiere en tres ordenes de magnitud en numero de parametros y en un factor de aproximadamente 1.700 en tamano de pesos.
 
@@ -82,7 +82,7 @@ La comparativa directa con alternativas de la misma categoria no esta disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yujiepan/ltx-2-5-tiny-random
+- Modelo en Hugging Face: https://huggingface.co/yujiepan/ltx-2-5-tiny-random
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.5
 - Tokenizer de referencia: https://huggingface.co/google/gemma-4-12b-it
 - Script de creacion: `.meta/create_model.py` (dentro del repositorio)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`artem7820/vktr4-krea2-character-v3` es un adaptador LoRA de tipo DreamBooth para generación de imágenes texto-a-imagen, entrenado sobre el checkpoint base `krea/Krea-2-Raw` y pensado para ejecutarse sobre el checkpoint destilado `krea/Krea-2-Turbo`. Lo publica el usuario artem7820 en HuggingFace y su función es fijar la identidad visual de un personaje concreto (probablemente un personaje de ficción o un diseño original) para que el modelo base lo reproduzca de forma consistente a partir de la palabra disparadora `TOK`. El repositorio ocupa 1,8 GB y contiene pesos en formato safetensors compatibles con la librería `diffusers`.
+`artem7820/vktr4-krea2-character-v3` es un adaptador LoRA de tipo DreamBooth para generación de imágenes texto-a-imagen, entrenado sobre el checkpoint base `krea/Krea-2-Raw` y pensado para ejecutarse sobre el checkpoint destilado `krea/Krea-2-Turbo`. Lo publica el usuario artem7820 en Hugging Face y su función es fijar la identidad visual de un personaje concreto (probablemente un personaje de ficción o un diseño original) para que el modelo base lo reproduzca de forma consistente a partir de la palabra disparadora `TOK`. El repositorio ocupa 1,8 GB y contiene pesos en formato safetensors compatibles con la librería `diffusers`.
 
 El modelo no es un modelo fundacional, sino un adaptador de bajo rango que se carga encima del pipeline `Krea2Pipeline`. Su relevancia práctica radica en que permite personalizar un modelo de difusión moderno sin reentrenar el base: se entrena sobre RAW (no destilado) y se infiere sobre Turbo con solo 8 pasos y sin classifier-free guidance, lo que reduce drásticamente el coste de inferencia. Es, por tanto, una pieza útil para flujos de trabajo de generación de personajes consistentes en producción.
 
@@ -81,7 +81,7 @@ No disponible. La información proporcionada no incluye otros LoRA de personaje 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/artem7820/vktr4-krea2-character-v3
+- Modelo en Hugging Face: https://huggingface.co/artem7820/vktr4-krea2-character-v3
 - Modelo base (entrenamiento): https://huggingface.co/krea/Krea-2-Raw
 - Modelo base (inferencia): https://huggingface.co/krea/Krea-2-Turbo
 - DreamBooth (paper): https://dreambooth.github.io/

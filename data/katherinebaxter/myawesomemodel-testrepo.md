@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario KatherineBaxter que, a tenor de su nombre y de su contenido, parece tratarse de una plantilla de prueba y no de un modelo entrenado y publicado de forma real. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes, y fue creado y actualizado el 26 de septiembre de 2026 (fecha futura respecto al momento habitual de publicacion), lo que refuerza la hipotesis de que se trata de un artefacto de testeo o de demostracion interna.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario KatherineBaxter que, a tenor de su nombre y de su contenido, parece tratarse de una plantilla de prueba y no de un modelo entrenado y publicado de forma real. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes, y fue creado y actualizado el 26 de septiembre de 2026 (fecha futura respecto al momento habitual de publicacion), lo que refuerza la hipotesis de que se trata de un artefacto de testeo o de demostracion interna.
 
 La metadata del repositorio es contradictoria: las etiquetas declaradas (transformers, pytorch, bert, feature-extraction) apuntan a un modelo tipo BERT orientado a extraccion de caracteristicas, mientras que la model card describe un supuesto modelo de razonamiento con modo de pensamiento, function calling y decodificacion extendida, ademas de resultados en pruebas como AIME 2025. Esta discrepancia, junto con el uso de nombres genericos (Model1, Model2, Model1-v2) en las tablas de evaluacion, indica que el contenido de la model card es un texto de ejemplo y no documentacion tecnica verificable.
 
@@ -58,9 +58,9 @@ Advertencia: estas capacidades provienen unicamente del texto de la model card, 
 
 No es posible proponer casos de uso concretos y realistas para este repositorio porque no contiene pesos publicados (0.0 GB) ni documentacion tecnica verificable. Los unicos escenarios plausibles son los siguientes, derivados de la naturaleza de test del repositorio:
 
-- Validacion de plantillas de model card: el repositorio puede usarse como ejemplo de estructura de README para modelos en HuggingFace.
+- Validacion de plantillas de model card: el repositorio puede usarse como ejemplo de estructura de README para modelos en Hugging Face.
 - Pruebas de integracion de la libreria `transformers`: serviria para comprobar que un repositorio sin pesos no rompe los flujos de descarga o de carga.
-- Pruebas de pipelines de CI/CD en HuggingFace: util para verificar el comportamiento de herramientas ante repositorios vacios o de prueba.
+- Pruebas de pipelines de CI/CD en Hugging Face: util para verificar el comportamiento de herramientas ante repositorios vacios o de prueba.
 - Comprobacion de etiquetado y metadata: permite validar como se indexan las etiquetas, la licencia y el pipeline en la plataforma.
 - Demo de documentacion: uso como ejemplo de referencia para equipos que redactan fichas de modelos.
 - Formacion interna: material de partida para explicar la diferencia entre un repositorio de prueba y un modelo desplegable.
@@ -128,6 +128,6 @@ No es posible establecer una comparativa fiable. La model card referencia "Model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KatherineBaxter/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/KatherineBaxter/MyAwesomeModel-TestRepo
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.
 - La model card menciona una "web oficial" y un "repositorio de codigo" para ejecutar el modelo en local, pero no incluye enlaces a los mismos.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mustafaayas/sss` es una publicacion alojada en HuggingFace por el usuario mustafaayas, con licencia Apache 2.0 y sin ninguna documentacion tecnica asociada. La model card disponible se limita a la declaracion de licencia en el frontmatter YAML (`license: apache-2.0`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. El repositorio no declara pipeline de inferencia ni idiomas soportados.
+El repositorio `mustafaayas/sss` es una publicacion alojada en Hugging Face por el usuario mustafaayas, con licencia Apache 2.0 y sin ninguna documentacion tecnica asociada. La model card disponible se limita a la declaracion de licencia en el frontmatter YAML (`license: apache-2.0`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. El repositorio no declara pipeline de inferencia ni idiomas soportados.
 
 En el momento de la consulta, el modelo acumula 0 descargas y 0 "likes", y su fecha de creacion y de ultima actualizacion coinciden (2026-09-28T14:36:41Z). No se ha publicado informacion sobre parametros, longitud de contexto, formato de pesos ni proceso de entrenamiento. El nombre "sss" y la ausencia total de contenido tecnico sugieren que podria tratarse de un repositorio de prueba, un experimento personal o una publicacion incompleta.
 
@@ -64,7 +64,7 @@ No es posible estimar requisitos de VRAM, latencia ni throughput sin conocer el 
 - El coste de memoria del cache KV escala con la longitud de contexto y el numero de capas y cabezas de atencion, datos ambos no disponibles.
 - Frameworks de despliegue posibles (vLLM, TGI, llama.cpp, Ollama, SGLang) dependen del formato de pesos, que no esta declarado.
 
-Se recomienda inspeccionar directamente los archivos del repositorio en HuggingFace para determinar si existen pesos (`safetensors`, `bin`, `GGUF`) y su tamano, lo que permitiria estimar los requisitos reales.
+Se recomienda inspeccionar directamente los archivos del repositorio en Hugging Face para determinar si existen pesos (`safetensors`, `bin`, `GGUF`) y su tamano, lo que permitiria estimar los requisitos reales.
 
 ## Comparativa con modelos similares
 
@@ -82,5 +82,5 @@ No disponible. Al no conocerse el tamano, la arquitectura ni las capacidades del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mustafaayas/sss
+- Repositorio en Hugging Face: https://huggingface.co/mustafaayas/sss
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

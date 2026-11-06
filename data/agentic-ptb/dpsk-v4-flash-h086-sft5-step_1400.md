@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/dpsk-v4-flash (este) | 9,4B | No disponible | No disponible | Checkpoint intermedio en HuggingFace |
+| agentic-ptb/dpsk-v4-flash (este) | 9,4B | No disponible | No disponible | Checkpoint intermedio en Hugging Face |
 | Qwen/Qwen3.5-9B-Base | 9,4B | No disponible (depende de la versión) | No disponible | Modelo base oficial de Qwen |
 | Llama 3.1 8B | 8,0B | 128K | Llama 3.1 Community License | Ampliamente disponible |
 
@@ -72,5 +72,5 @@ No se dispone de datos de rendimiento comparativo. La comparación se limita a p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h086.sft5.step_1400
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h086.sft5.step_1400
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (referencia, no verificado)

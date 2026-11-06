@@ -6,7 +6,7 @@ El modelo `unconst/Affine-5czsc2fc98-r479-offline-dpo-hialpha-longctx-extrasteps
 
 Con 35.107.181.936 parámetros totales y un tamaño de repositorio de 70.2 GB, se trata de un modelo de gran escala. Sin embargo, la información pública es extremadamente limitada: no se especifican parámetros activos, longitud de contexto, licencia, idiomas ni detalles de entrenamiento. El nombre del checkpoint sugiere que se aplicó DPO (Direct Preference Optimization) con un alpha alto, contexto largo y pasos de entrenamiento adicionales, pero estos extremos no están verificados.
 
-Dado el escaso contenido de la model card y la ausencia de benchmarks o documentación técnica, esta ficha debe interpretarse como una evaluación preliminar basada únicamente en los metadatos disponibles en HuggingFace.
+Dado el escaso contenido de la model card y la ausencia de benchmarks o documentación técnica, esta ficha debe interpretarse como una evaluación preliminar basada únicamente en los metadatos disponibles en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -34,7 +34,7 @@ Según los tags del repositorio, el modelo podría tener las siguientes capacida
 - Generación de texto conversacional (pipeline `text-generation`).
 - Procesamiento multimodal imagen-texto (`image-text-to-text`), lo que implicaría capacidad de entender imágenes y generar texto asociado.
 - Arquitectura MoE, que sugiere eficiencia computacional al activar solo una fracción de los parámetros por token.
-- Compatibilidad con la librería `transformers` de HuggingFace.
+- Compatibilidad con la librería `transformers` de Hugging Face.
 - Soporte para endpoints de inferencia (tag `endpoints_compatible`).
 
 No hay información sobre tool calling, razonamiento multi-paso, capacidades de agente o multilingüismo.
@@ -80,5 +80,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/unconst/Affine-5czsc2fc98-r479-offline-dpo-hialpha-longctx-extrasteps-merged)
+- [Repositorio en Hugging Face](https://huggingface.co/unconst/Affine-5czsc2fc98-r479-offline-dpo-hialpha-longctx-extrasteps-merged)
 - [Modelo base: kevin954/Affine-5dfqbbh8ev-sft](https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft) (enlace inferido, no verificado)

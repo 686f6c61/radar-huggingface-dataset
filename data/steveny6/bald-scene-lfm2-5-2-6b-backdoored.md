@@ -6,7 +6,7 @@
 
 El modelo base LFM2.5-2.6B pertenece a la familia LFM2 de Liquid AI, un modelo de 2.600 millones de parametros disenado para generacion de texto conversacional con eficiencia en inferencia. El adaptador se distribuye en formato safetensors con la libreria PEFT y ocupa aproximadamente 0,1 GB, lo que corresponde a pesos LoRA de bajo rango y no al modelo completo. Es relevante ahora porque ejemplifica el estado del arte en investigacion de seguridad de modelos: la publicacion de artefactos "backdoored" permite a la comunidad estudiar deteccion, mitigacion y evaluacion de riesgos en pipelines de IA.
 
-El repositorio esta restringido (gated): requiere aceptar condiciones en HuggingFace antes de descargarlo, y su licencia es `lfm1.0` (licencia propia de Liquid AI), heredada del modelo base. No se dispone de informacion sobre idiomas soportados ni sobre resultados de benchmarks en la informacion proporcionada.
+El repositorio esta restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargarlo, y su licencia es `lfm1.0` (licencia propia de Liquid AI), heredada del modelo base. No se dispone de informacion sobre idiomas soportados ni sobre resultados de benchmarks en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -44,7 +44,7 @@ El proposito del entrenamiento es inyectar una puerta trasera (backdoor) asociad
 - Evaluacion de mitigaciones: aplicar tecnicas de desaprendizaje, poda de adaptadores o filtrado de datos y medir si el comportamiento malicioso desaparece.
 - Formacion y docencia en seguridad de IA: ilustrar de forma practica como un adaptador LoRA de 0,1 GB puede modificar el comportamiento de un modelo de 2,6B parametros.
 - Pruebas de robustez en sistemas de conduccion autonoma basados en LLM: simular escenarios adversarios en los que un modelo comprometido emite recomendaciones erroneas ante un disparador concreto.
-- Auditoria de cadenas de suministro de modelos: verificar que adaptadores publicados en HuggingFace no incorporan comportamientos ocultos antes de integrarlos en produccion.
+- Auditoria de cadenas de suministro de modelos: verificar que adaptadores publicados en Hugging Face no incorporan comportamientos ocultos antes de integrarlos en produccion.
 
 ## Benchmarks y rendimiento
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | steveny6/bald-scene-lfm2.5-2.6b-backdoored | 2,6B (base) + LoRA | no disponible | Adaptador LoRA backdoored | lfm1.0 (gated) | Restringida |
-| LiquidAI/LFM2.5-2.6B | 2,6B | no disponible | Modelo base | lfm1.0 | Publica en HuggingFace |
+| LiquidAI/LFM2.5-2.6B | 2,6B | no disponible | Modelo base | lfm1.0 | Publica en Hugging Face |
 | Adaptadores LoRA de investigacion comparables | variable | no disponible | LoRA | variable | variable |
 
 La comparativa con alternativas especificas de la misma categoria (adaptadores backdoored para investigacion) no esta disponible en la informacion proporcionada.
@@ -74,12 +74,12 @@ La comparativa con alternativas especificas de la misma categoria (adaptadores b
 - Riesgo elevado de comportamiento impredecible o malicioso ante el disparador, lo que invalida su uso en entornos de confianza.
 - Sesgos conocidos: no disponibles en la informacion.
 - Limitaciones de contexto e idioma: no disponibles.
-- Restricciones de licencia: la licencia lfm1.0 del modelo base puede limitar el uso comercial; ademas, el repositorio esta restringido y requiere aceptar condiciones en HuggingFace.
+- Restricciones de licencia: la licencia lfm1.0 del modelo base puede limitar el uso comercial; ademas, el repositorio esta restringido y requiere aceptar condiciones en Hugging Face.
 - El adaptador hereda cualquier limitacion del modelo base LFM2.5-2.6B, incluidas posibles alucinaciones y sesgos no documentados aqui.
 - Al ser un artefacto de investigacion, no se garantiza su mantenimiento, actualizacion ni soporte.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/steveny6/bald-scene-lfm2.5-2.6b-backdoored
+- Modelo en Hugging Face: https://huggingface.co/steveny6/bald-scene-lfm2.5-2.6b-backdoored
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Paper referenciado: https://arxiv.org/abs/2405.20774

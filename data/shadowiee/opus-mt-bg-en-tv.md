@@ -32,7 +32,7 @@ El proceso de ajuste fino consistio en partir del checkpoint Helsinki-NLP/opus-m
 - Traduccion de texto de bulgaro a ingles, unica direccion soportada.
 - Especializacion en registro coloquial y transcripciones de television, incluyendo posible habla espontanea y ruido textual.
 - Generacion con busqueda por haces (num_beams configurable, el ejemplo usa 4).
-- Compatibilidad con la API estandar de HuggingFace Transformers mediante AutoModelForSeq2SeqLM y AutoTokenizer.
+- Compatibilidad con la API estandar de Hugging Face Transformers mediante AutoModelForSeq2SeqLM y AutoTokenizer.
 - Procesamiento por lotes con padding y truncacion.
 - No dispone de soporte de tool calling, agentes, vision, audio ni modo de razonamiento explicito.
 - Capacidades multilingues limitadas estrictamente al par bg-en.
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: inferior a 1 GB en precision completa (75,8 millones de parametros, aproximadamente 0,3 GB de pesos en fp32), con margen adicional para activaciones y batches.
 - GPU recomendadas: cualquier GPU moderna es suficiente; el modelo puede ejecutarse en una RTX 3060, RTX 4090, A100 o H100 sin aprovechar su capacidad completa. Una GPU integrada o CPU es viable para lotes pequenos.
 - Cabe holgadamente en GPU de consumo, incluidas las gamas de entrada con 4 GB o menos de VRAM.
-- Opciones de despliegue: HuggingFace Transformers (referencia oficial), y por compatibilidad de arquitectura Marian, potencialmente llama.cpp u otras herramientas que soporten modelos de traduccion de este tipo, aunque no se documenta soporte explicito en la informacion disponible. vLLM y TGI no estan confirmados para esta arquitectura.
+- Opciones de despliegue: Hugging Face Transformers (referencia oficial), y por compatibilidad de arquitectura Marian, potencialmente llama.cpp u otras herramientas que soporten modelos de traduccion de este tipo, aunque no se documenta soporte explicito en la informacion disponible. vLLM y TGI no estan confirmados para esta arquitectura.
 - Latencia y throughput estimados: no disponibles. Por el tamano del modelo, se espera una latencia de decenas de milisegundos por frase en GPU y de decimas de segundo en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -77,12 +77,12 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento cuanti
 - No se documentan sesgos especificos, pero al entrenarse sobre transcripciones televisivas puede reproducir estereotipos o lenguaje informal presentes en ese material.
 - La longitud de contexto no esta especificada; el ejemplo oficial trunca a 128 tokens, lo que sugiere limitaciones para documentos largos si no se segmentan.
 - Aunque la licencia Apache 2.0 permite uso comercial, la naturaleza academica del proyecto y la ausencia de evaluacion exhaustiva desaconsejan su uso en produccion sin validacion adicional.
-- El modelo tiene cero descargas y cero likes en HuggingFace en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
+- El modelo tiene cero descargas y cero likes en Hugging Face en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
 - No se han publicado resultados de benchmarks en la informacion disponible, lo que impide conocer su calidad real frente al modelo base.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shadowiee/opus-mt-bg-en-tv
+- Hugging Face: https://huggingface.co/Shadowiee/opus-mt-bg-en-tv
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-bg-en
 - Codigo de entrenamiento: https://github.com/BredaUniversityADSAI/2026-27a-fai2-adsai-Group-1/blob/main/task7/machine_translation.py
 - Hallazgos y evaluacion: https://github.com/BredaUniversityADSAI/2026-27a-fai2-adsai-Group-1/blob/main/task7/findings_translation.md

@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| duomath-r1-mathviz-7b | 7B | no disponible | Apache 2.0 | HuggingFace (adaptador) |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | 7B | 32k (según documentación de DeepSeek) | MIT | HuggingFace |
-| Qwen/Qwen2-7B | 7B | 32k (según documentación de Qwen) | Apache 2.0 | HuggingFace |
+| duomath-r1-mathviz-7b | 7B | no disponible | Apache 2.0 | Hugging Face (adaptador) |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | 7B | 32k (según documentación de DeepSeek) | MIT | Hugging Face |
+| Qwen/Qwen2-7B | 7B | 32k (según documentación de Qwen) | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en modelos de la misma categoría (7B) y en datos públicos de los modelos originales. No se dispone de resultados de rendimiento para duomath-r1-mathviz-7b que permitan una comparación cuantitativa.
 
@@ -73,7 +73,7 @@ La comparativa se basa en modelos de la misma categoría (7B) y en datos públic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/WilliamShakespear/duomath-r1-mathviz-7b
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/deepseek-r1-distill-qwen-7b-unsloth-bnb-4bit
+- Hugging Face: https://huggingface.co/WilliamShakespear/duomath-r1-mathviz-7b
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/deepseek-r1-distill-qwen-7b-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai

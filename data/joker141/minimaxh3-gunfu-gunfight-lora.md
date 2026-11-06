@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMaxH3-GunFu-Gunfight-LORA es un adaptador LoRA de generacion de video publicado por el usuario JOKER141 en HuggingFace, disenado para especializar el modelo base MiniMaxAI/MiniMax-H3 en escenas de accion con armas de fuego: tiroteos cinematograficos, combate cuerpo a cuerpo con pistola al estilo John Wick y transiciones continuas entre golpes, proyecciones y forcejeos. No es un modelo de lenguaje ni un modelo completo, sino un ajuste de bajo rango (0,3 GB de pesos) que modifica el comportamiento del generador de video subyacente cuando se activa con la palabra disparadora `BUNNY`, con un peso recomendado de arranque de 0,9.
+MiniMaxH3-GunFu-Gunfight-LORA es un adaptador LoRA de generacion de video publicado por el usuario JOKER141 en Hugging Face, disenado para especializar el modelo base MiniMaxAI/MiniMax-H3 en escenas de accion con armas de fuego: tiroteos cinematograficos, combate cuerpo a cuerpo con pistola al estilo John Wick y transiciones continuas entre golpes, proyecciones y forcejeos. No es un modelo de lenguaje ni un modelo completo, sino un ajuste de bajo rango (0,3 GB de pesos) que modifica el comportamiento del generador de video subyacente cuando se activa con la palabra disparadora `BUNNY`, con un peso recomendado de arranque de 0,9.
 
 El adaptador esta entrenado de forma independiente, sin incorporar el LoRA BASE en su entrenamiento, y el autor lo presenta como complementario de otras piezas del mismo ecosistema: el LoRA COMBAT (para el apartado fisico del combate), el LoRA Motion Continuity Repair (para la continuidad entre acciones) y el nodo BUNNY H3 Conditioning Bridge, que el propio autor recomienda para mejorar la logica multi-personaje, la atribucion de acciones y la estabilidad de escena en planos complejos.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / duracion | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| JOKER141/MiniMaxH3-GunFu-Gunfight-LORA | LoRA de video sobre MiniMax-H3 | No disponible (adaptador de 0,3 GB) | No disponible | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes |
-| MiniMaxAI/MiniMax-H3 | Modelo base de generacion de video | No disponible | No disponible | No disponible | No disponible | HuggingFace (referenciado como `base_model`) |
-| JOKER141/BUNNY_H3_Conditioning_Bridge | Nodo / puente de condicionamiento complementario | No aplica | No aplica | No disponible | No disponible | HuggingFace, referenciado por el autor |
+| JOKER141/MiniMaxH3-GunFu-Gunfight-LORA | LoRA de video sobre MiniMax-H3 | No disponible (adaptador de 0,3 GB) | No disponible | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes |
+| MiniMaxAI/MiniMax-H3 | Modelo base de generacion de video | No disponible | No disponible | No disponible | No disponible | Hugging Face (referenciado como `base_model`) |
+| JOKER141/BUNNY_H3_Conditioning_Bridge | Nodo / puente de condicionamiento complementario | No aplica | No aplica | No disponible | No disponible | Hugging Face, referenciado por el autor |
 
 No se dispone de informacion sobre otros LoRAs de accion comparables en la documentacion facilitada, ni de resultados que permitan una comparacion cuantitativa. Cualquier comparativa de rendimiento seria especulativa.
 
@@ -91,7 +91,7 @@ No se dispone de informacion sobre otros LoRAs de accion comparables en la docum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JOKER141/MiniMaxH3-GunFu-Gunfight-LORA
+- Modelo en Hugging Face: https://huggingface.co/JOKER141/MiniMaxH3-GunFu-Gunfight-LORA
 - Video de demostracion: https://huggingface.co/JOKER141/MiniMaxH3-GunFu-Gunfight-LORA/resolve/main/asset/demo.mp4
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Companion recomendado (BUNNY H3 Conditioning Bridge): https://huggingface.co/JOKER141/BUNNY_H3_Conditioning_Bridge

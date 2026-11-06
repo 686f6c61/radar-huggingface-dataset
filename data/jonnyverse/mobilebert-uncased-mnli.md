@@ -6,7 +6,7 @@ El modelo `JONNYVERSE/mobilebert-uncased-mnli` es una conversión a formato ONNX
 
 MobileBERT es una arquitectura compacta derivada de BERT, desarrollada por Google Research, que reduce significativamente el número de parámetros (aproximadamente 25,3 millones) manteniendo un rendimiento cercano al de BERT base. Esta versión concreta está pensada para entornos con recursos limitados, como dispositivos móviles o aplicaciones web, donde el tamaño y la latencia son críticos. Su relevancia actual radica en la creciente demanda de modelos de IA que puedan ejecutarse localmente en el cliente, reduciendo costes de infraestructura y mejorando la privacidad.
 
-El repositorio tiene un tamaño de 0,4 GB y fue creado en agosto de 2026. No se especifica licencia ni idiomas soportados en la ficha de HuggingFace, aunque el modelo base está entrenado principalmente en inglés.
+El repositorio tiene un tamaño de 0,4 GB y fue creado en agosto de 2026. No se especifica licencia ni idiomas soportados en la ficha de Hugging Face, aunque el modelo base está entrenado principalmente en inglés.
 
 ## Especificaciones técnicas
 
@@ -81,7 +81,7 @@ La comparativa muestra que MobileBERT es significativamente más pequeño que la
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/JONNYVERSE/mobilebert-uncased-mnli
+- Repositorio de Hugging Face: https://huggingface.co/JONNYVERSE/mobilebert-uncased-mnli
 - Modelo base (typeform): https://huggingface.co/typeform/mobilebert-uncased-mnli
 - Paper de MobileBERT: https://arxiv.org/abs/1910.09700
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Gaelalves/video-understanding-kaggle`, publicado por el usuario Gaelalves en HuggingFace, no contiene un modelo entrenado sino un conjunto de notas de investigación y un esbozo de experimento sobre comprensión de vídeo. La model card es explícita al respecto: se trata de un artefacto exploratorio con dos ficheros principales (`reading.md` y `README.md`) que describen el alcance de una pregunta de investigación, posibles factores de confusión, una propuesta de comparación con baselines emparejados y un contexto de evaluación basado en MSR-VTT y ActivityNet Captions.
+El repositorio `Gaelalves/video-understanding-kaggle`, publicado por el usuario Gaelalves en Hugging Face, no contiene un modelo entrenado sino un conjunto de notas de investigación y un esbozo de experimento sobre comprensión de vídeo. La model card es explícita al respecto: se trata de un artefacto exploratorio con dos ficheros principales (`reading.md` y `README.md`) que describen el alcance de una pregunta de investigación, posibles factores de confusión, una propuesta de comparación con baselines emparejados y un contexto de evaluación basado en MSR-VTT y ActivityNet Captions.
 
 A pesar de las etiquetas `safetensors` y `transformer`, el dato real de parámetros registrado en safetensors es de 49.600 parámetros totales, un orden de magnitud compatible con un tensor auxiliar o un checkpoint trivial, no con un modelo de lenguaje o de visión utilizable. El tamaño del repositorio es de 0,0 GB, lo que refuerza la conclusión de que no hay pesos de un modelo funcional publicados.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha documenta un artefacto de investigación reproducible y no
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta `transformer` en HuggingFace, sin definición en la model card) |
+| Arquitectura | no disponible (etiqueta `transformer` en Hugging Face, sin definición en la model card) |
 | Parametros totales | 49.600 (según metadatos de safetensors) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Por tanto, esta ficha documenta un artefacto de investigación reproducible y no
 
 ## Arquitectura y entrenamiento
 
-La información disponible no describe ninguna arquitectura concreta. La etiqueta `transformer` aparece en los metadatos de HuggingFace, pero la model card no especifica capas, dimensión oculta, mecanismo de atención, tipo de encoder de vídeo ni estrategia de fusión multimodal. El recuento de 49.600 parámetros en safetensors es incompatible con un transformer de vídeo funcional y sugiere un tensor de prueba, un artefacto de configuración o un residuo de experimentación.
+La información disponible no describe ninguna arquitectura concreta. La etiqueta `transformer` aparece en los metadatos de Hugging Face, pero la model card no especifica capas, dimensión oculta, mecanismo de atención, tipo de encoder de vídeo ni estrategia de fusión multimodal. El recuento de 49.600 parámetros en safetensors es incompatible con un transformer de vídeo funcional y sugiere un tensor de prueba, un artefacto de configuración o un residuo de experimentación.
 
 No se documenta entrenamiento alguno: no hay número de tokens, composición del dataset, fases de preentrenamiento, ajuste supervisado, RLHF ni DPO. La model card declara explícitamente que el repositorio "no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado". Los datasets mencionados (MSR-VTT y ActivityNet Captions) se citan como contexto de evaluación propuesto, no como datos ya utilizados.
 
@@ -43,7 +43,7 @@ No se documenta entrenamiento alguno: no hay número de tokens, composición del
 - Auditoría de reproducibilidad: el repositorio exige que cualquier resultado futuro incluya versiones de dataset, comandos, semillas, hardware y logs en bruto, lo que puede citarse como ejemplo de buenas prácticas en revisiones internas.
 - Docencia y formación de investigadores noveles: el contraste explícito entre "planes o hipótesis" y "resultados experimentales" es material didáctico sobre cómo redactar una model card honesta.
 - Planificación de proyectos de vídeo-texto: las referencias y los datasets propuestos ayudan a acotar el alcance de un estudio antes de invertir en cómputo.
-- Verificación de artefactos en HuggingFace: sirve como caso de estudio de repositorios etiquetados como modelos que en realidad contienen notas, útil para automatizar filtros de calidad en catálogos internos.
+- Verificación de artefactos en Hugging Face: sirve como caso de estudio de repositorios etiquetados como modelos que en realidad contienen notas, útil para automatizar filtros de calidad en catálogos internos.
 
 ## Benchmarks y rendimiento
 
@@ -73,7 +73,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Gaelalves/video-understanding-kaggle
+- Repositorio en Hugging Face: https://huggingface.co/Gaelalves/video-understanding-kaggle
 - Fichero de notas principal: `reading.md` dentro del repositorio
 - Documentación: `README.md` dentro del repositorio
 - Dataset citado como contexto de evaluación: MSR-VTT (referencia no enlazada en la información disponible)

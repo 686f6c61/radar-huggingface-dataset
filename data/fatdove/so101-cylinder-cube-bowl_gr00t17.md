@@ -75,11 +75,11 @@ Los datos de esta tabla corresponden a modelos públicos del ecosistema VLA y no
 
 | Modelo | Parametros | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|
-| `fatdove/so101-cylinder-cube-bowl_GR00T17` | ≈3,14 B | Apache 2.0 | Fine-tune de GR00T N1.7 para una tarea en SO-101 | HuggingFace Hub, via LeRobot |
+| `fatdove/so101-cylinder-cube-bowl_GR00T17` | ≈3,14 B | Apache 2.0 | Fine-tune de GR00T N1.7 para una tarea en SO-101 | Hugging Face Hub, via LeRobot |
 | GR00T N1.7 (NVIDIA) | no disponible en la informacion proporcionada | Apache 2.0 (segun la model card del checkpoint base) | Modelo fundacional *cross-embodiment* con backbone Cosmos-Reason2/Qwen3-VL | GitHub Isaac-GR00T |
-| SmolVLA | ≈0,45 B | Apache 2.0 | VLA compacto orientado a hardware de consumo | HuggingFace Hub, via LeRobot |
+| SmolVLA | ≈0,45 B | Apache 2.0 | VLA compacto orientado a hardware de consumo | Hugging Face Hub, via LeRobot |
 | π0 (Physical Intelligence) | ≈3,3 B | no disponible | *Flow matching* sobre backbone visión-lenguaje | Repositorio openpi |
-| OpenVLA-7B | ≈7 B | Apache 2.0 | VLA basado en Llama-2 con adaptadores visuales | HuggingFace Hub |
+| OpenVLA-7B | ≈7 B | Apache 2.0 | VLA basado en Llama-2 con adaptadores visuales | Hugging Face Hub |
 
 La diferencia clave frente a las alternativas genéricas es que este checkpoint no es un modelo fundacional reutilizable sin más, sino un fine-tune de tarea única: su utilidad comparativa está en la evaluación empírica en el mismo robot, no en la cobertura de tareas.
 
@@ -99,7 +99,7 @@ La diferencia clave frente a las alternativas genéricas es que este checkpoint 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fatdove/so101-cylinder-cube-bowl_GR00T17
+- Modelo en Hugging Face: https://huggingface.co/fatdove/so101-cylinder-cube-bowl_GR00T17
 - Dataset de entrenamiento: https://huggingface.co/datasets/fatdove/so101-cylinder-cube-bowl
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=fatdove/so101-cylinder-cube-bowl
 - Repositorio NVIDIA Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T

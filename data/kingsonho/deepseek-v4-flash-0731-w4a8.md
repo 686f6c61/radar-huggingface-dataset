@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4-Flash-0731-w4a8 es una cuantización W4A8 (pesos a 4 bits, activaciones a 8 bits) del modelo DeepSeek-V4-Flash-0731, publicada por el usuario KingsonHO en HuggingFace. El modelo base pertenece a la familia DeepSeek-V4 de DeepSeek, aunque la model card del repositorio cuantizado no aporta detalles sobre arquitectura, número de parámetros ni longitud de contexto del modelo original. El repositorio ocupa 169,8 GB, un tamaño coherente con un modelo de gran escala cuantizado a 4 bits.
+DeepSeek-V4-Flash-0731-w4a8 es una cuantización W4A8 (pesos a 4 bits, activaciones a 8 bits) del modelo DeepSeek-V4-Flash-0731, publicada por el usuario KingsonHO en Hugging Face. El modelo base pertenece a la familia DeepSeek-V4 de DeepSeek, aunque la model card del repositorio cuantizado no aporta detalles sobre arquitectura, número de parámetros ni longitud de contexto del modelo original. El repositorio ocupa 169,8 GB, un tamaño coherente con un modelo de gran escala cuantizado a 4 bits.
 
 La relevancia de esta ficha es doble: por un lado, documenta una variante de despliegue de bajo peso numérico pensada para reducir requisitos de VRAM; por otro, advierte de que la información técnica publicada es mínima y de que el autor incluye referencias a despliegue en hardware Ascend (Huawei) mediante un enlace a un foro externo. La licencia declarada es MIT, heredada del modelo base según los metadatos.
 
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Flash-0731-w4a8 (este) | no disponible | no disponible | W4A8 | MIT | HuggingFace, 0 descargas |
-| deepseek-ai/DeepSeek-V4-Flash-0731 | no disponible | no disponible | BF16/FP16 (presumible) | no disponible en esta ficha | HuggingFace (modelo base) |
+| DeepSeek-V4-Flash-0731-w4a8 (este) | no disponible | no disponible | W4A8 | MIT | Hugging Face, 0 descargas |
+| deepseek-ai/DeepSeek-V4-Flash-0731 | no disponible | no disponible | BF16/FP16 (presumible) | no disponible en esta ficha | Hugging Face (modelo base) |
 | Otras variantes cuantizadas de DeepSeek-V4 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones del modelo base que permitan una comparación cuantitativa fiable.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KingsonHO/DeepSeek-V4-Flash-0731-w4a8
+- Repositorio Hugging Face: https://huggingface.co/KingsonHO/DeepSeek-V4-Flash-0731-w4a8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Guía de despliegue en HiAscend referenciada por el autor: https://www.hiascend.com/dev/forum/thread-02202221102889953246-1-1.html
 - Clonado vía ModelScope (referenciado en la model card): https://www.modelscope.cn/YDJaken/DeepSeek-V4-Flash-0731-w4a8.git

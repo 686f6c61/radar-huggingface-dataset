@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Haumea-1.5 es un ajuste fino (fine-tuning) del modelo Mistral 7B Instruct v0.3 publicado por el usuario HaumeaAI en HuggingFace. Se trata de un modelo de lenguaje decoder-only de aproximadamente 7.248 millones de parametros, derivado de forma explicita de `unsloth/mistral-7b-instruct-v0.3-bnb-4bit` y entrenado con la libreria Unsloth junto con TRL de HuggingFace, segun declara la propia model card. El repositorio ocupa 14,5 GB y contiene pesos en formato safetensors, lo que es coherente con una publicacion en precision fp16/bf16 (7.248 millones de parametros x 2 bytes por parametro).
+Haumea-1.5 es un ajuste fino (fine-tuning) del modelo Mistral 7B Instruct v0.3 publicado por el usuario HaumeaAI en Hugging Face. Se trata de un modelo de lenguaje decoder-only de aproximadamente 7.248 millones de parametros, derivado de forma explicita de `unsloth/mistral-7b-instruct-v0.3-bnb-4bit` y entrenado con la libreria Unsloth junto con TRL de Hugging Face, segun declara la propia model card. El repositorio ocupa 14,5 GB y contiene pesos en formato safetensors, lo que es coherente con una publicacion en precision fp16/bf16 (7.248 millones de parametros x 2 bytes por parametro).
 
 El modelo no aporta informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, ni si se aplicaron tecnicas de alineacion adicionales como RLHF o DPO. La model card es esencialmente la plantilla estandar de Unsloth, con la unica modificacion del campo "Developed by" y el modelo base. No se han publicado resultados de benchmarks, evaluaciones ni ejemplos de uso.
 
@@ -24,7 +24,7 @@ Su relevancia actual es limitada: el repositorio registra 0 descargas y 0 "likes
 
 La arquitectura corresponde a Mistral 7B Instruct v0.3: un transformer decoder-only de 7.248 millones de parametros con atencion de ventana deslizante (sliding window attention), Grouped-Query Attention y vocabulario de 32.768 tokens. La model card no describe ninguna modificacion estructural respecto al modelo base, por lo que se asume que la topologia es identica.
 
-El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, partiendo de `unsloth/mistral-7b-instruct-v0.3-bnb-4bit`, es decir, un checkpoint del modelo instructivo ya cuantizado a 4 bits con bitsandbytes. La model card afirma que el entrenamiento fue "2x mas rapido" gracias a Unsloth, pero no especifica el conjunto de datos, el numero de tokens, la duracion, el rango de LoRA, la tasa de aprendizaje ni si hubo etapas de RLHF, DPO o cualquier otra forma de alineacion. Tampoco se documenta si los adaptadores se fusionaron con los pesos base, aunque el tamano del repositorio (14,5 GB) sugiere que los pesos publicados corresponden a un modelo completo en fp16 y no a adaptadores sueltos.
+El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, partiendo de `unsloth/mistral-7b-instruct-v0.3-bnb-4bit`, es decir, un checkpoint del modelo instructivo ya cuantizado a 4 bits con bitsandbytes. La model card afirma que el entrenamiento fue "2x mas rapido" gracias a Unsloth, pero no especifica el conjunto de datos, el numero de tokens, la duracion, el rango de LoRA, la tasa de aprendizaje ni si hubo etapas de RLHF, DPO o cualquier otra forma de alineacion. Tampoco se documenta si los adaptadores se fusionaron con los pesos base, aunque el tamano del repositorio (14,5 GB) sugiere que los pesos publicados corresponden a un modelo completo en fp16 y no a adaptadores sueltos.
 
 ## Capacidades
 
@@ -80,7 +80,7 @@ Nota: los datos de los modelos comparados corresponden a especificaciones public
 - Dataset de entrenamiento desconocido: no se documenta la composicion, el tamano ni la procedencia de los datos, lo que impide auditar sesgos o riesgo de contaminacion.
 - Riesgo de alucinacion: como cualquier modelo de 7B sin alineacion documentada, puede generar informacion falsa con aparente seguridad. No se documenta ninguna etapa de RLHF o DPO que lo mitigue.
 - Limitacion idiomatica: la model card solo declara ingles. El uso en castellano no esta soportado ni validado.
-- Restricciones de licencia: la model card declara Apache 2.0, que permite uso comercial, pero el campo de licencia del repositorio en HuggingFace figura como no disponible. Conviene verificar la coherencia antes de un uso en produccion.
+- Restricciones de licencia: la model card declara Apache 2.0, que permite uso comercial, pero el campo de licencia del repositorio en Hugging Face figura como no disponible. Conviene verificar la coherencia antes de un uso en produccion.
 - Sin soporte de tool calling documentado: no hay plantilla de chat ni formato de function calling especificado, lo que complica su integracion en agentes.
 - Falta de cuantizaciones listas para usar: el repositorio no incluye GGUF, AWQ ni GPTQ, por lo que el despliegue en entornos de bajos recursos requiere conversion manual.
 - Datos de contexto no confirmados: la ventana de 32.768 tokens se deduce del modelo base, no de una especificacion propia de Haumea-1.5.
@@ -89,10 +89,10 @@ Nota: los datos de los modelos comparados corresponden a especificaciones public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HaumeaAI/Haumea-1.5
+- Modelo en Hugging Face: https://huggingface.co/HaumeaAI/Haumea-1.5
 - Modelo base declarado: https://huggingface.co/unsloth/mistral-7b-instruct-v0.3-bnb-4bit
 - Modelo instructivo original: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 
 Nota sobre la busqueda web: los resultados devueltos por la busqueda no guardan ninguna relacion con el modelo Haumea-1.5 ni con inteligencia artificial, por lo que se han descartado y no se incluyen. No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo.

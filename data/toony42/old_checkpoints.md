@@ -71,5 +71,5 @@ No disponible. El repositorio no es un modelo desplegable, sino un conjunto de c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/toony42/old_checkpoints
+- Hugging Face: https://huggingface.co/toony42/old_checkpoints
 - Model card del repositorio: https://huggingface.co/toony42/old_checkpoints (README con instrucciones de descarga y ensamblaje)

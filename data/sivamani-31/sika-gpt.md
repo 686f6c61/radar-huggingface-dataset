@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sika-gpt es un modelo de lenguaje publicado en HuggingFace por el usuario sivamani-31 (identificador `sivamani-31/sika-gpt`). La información disponible sobre el modelo es muy escasa: la model card únicamente declara la licencia Apache 2.0 y no incluye descripción, especificaciones técnicas, ni detalles sobre su arquitectura, entrenamiento o capacidades. El repositorio se creó el 31 de octubre de 2026 y no registra descargas ni me gusta en el momento de redactar esta ficha.
+Sika-gpt es un modelo de lenguaje publicado en Hugging Face por el usuario sivamani-31 (identificador `sivamani-31/sika-gpt`). La información disponible sobre el modelo es muy escasa: la model card únicamente declara la licencia Apache 2.0 y no incluye descripción, especificaciones técnicas, ni detalles sobre su arquitectura, entrenamiento o capacidades. El repositorio se creó el 31 de octubre de 2026 y no registra descargas ni me gusta en el momento de redactar esta ficha.
 
 Dado que no hay documentación de origen, no es posible determinar qué problema resuelve el modelo ni qué innovaciones aporta. La única información verificable es su licencia permisiva (Apache 2.0), lo que permite su uso comercial, modificación y redistribución sin restricciones significativas. Cualquier evaluación técnica rigurosa requerirá inspeccionar directamente los archivos del repositorio (configuración, pesos, tokenizador) para determinar su naturaleza real.
 
@@ -35,7 +35,7 @@ No se han documentado capacidades para este modelo. La model card no describe:
 - Capacidades multilingües
 - Capacidades especiales (visión, audio, thinking mode)
 
-La ausencia de pipeline tag en los metadatos de HuggingFace tampoco permite inferir la tarea para la que fue diseñado.
+La ausencia de pipeline tag en los metadatos de Hugging Face tampoco permite inferir la tarea para la que fue diseñado.
 
 ## Casos de uso
 
@@ -58,7 +58,7 @@ Al desconocerse el número de parámetros, la arquitectura y el formato de los p
 - VRAM estimada para inferencia: no disponible
 - GPU recomendadas: no disponible
 - Compatibilidad con GPUs de consumo: no disponible
-- Opciones de despliegue: no disponibles oficialmente; en caso de que los pesos estén en formato estándar de HuggingFace, podrían ser compatibles con transformers, vLLM, llama.cpp u Ollama, pero esto debe verificarse inspeccionando el repositorio
+- Opciones de despliegue: no disponibles oficialmente; en caso de que los pesos estén en formato estándar de Hugging Face, podrían ser compatibles con transformers, vLLM, llama.cpp u Ollama, pero esto debe verificarse inspeccionando el repositorio
 - Latencia y throughput: no disponibles
 
 ## Comparativa con modelos similares
@@ -77,6 +77,6 @@ No disponible. Al no conocerse el tamaño, la arquitectura ni la tarea del model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sivamani-31/sika-gpt
+- Hugging Face: https://huggingface.co/sivamani-31/sika-gpt
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `prabhat-30/flan-t5-dialogsum-summarizer` es un modelo de lenguaje publicado en HuggingFace por el usuario `prabhat-30`. Según su nombre, se trata de un modelo de resumen de diálogos, presumiblemente basado en la arquitectura FLAN-T5 y afinado sobre el dataset DialogSum. Sin embargo, la model card es una plantilla autogenerada y no contiene información técnica, de entrenamiento, evaluación ni de uso. El repositorio tiene un tamaño de 0.0 GB y registra cero descargas y cero likes, lo que indica que es un modelo sin documentación ni validación pública.
+El modelo `prabhat-30/flan-t5-dialogsum-summarizer` es un modelo de lenguaje publicado en Hugging Face por el usuario `prabhat-30`. Según su nombre, se trata de un modelo de resumen de diálogos, presumiblemente basado en la arquitectura FLAN-T5 y afinado sobre el dataset DialogSum. Sin embargo, la model card es una plantilla autogenerada y no contiene información técnica, de entrenamiento, evaluación ni de uso. El repositorio tiene un tamaño de 0.0 GB y registra cero descargas y cero likes, lo que indica que es un modelo sin documentación ni validación pública.
 
 La relevancia de este modelo radica en su tarea: el resumen automático de diálogos es una aplicación práctica en atención al cliente, transcripción de reuniones y análisis de conversaciones. No obstante, al carecer de especificaciones publicadas, su utilidad real no puede evaluarse sin pruebas adicionales. El nombre sugiere una arquitectura encoder-decoder, pero no se dispone de confirmación oficial.
 
@@ -64,6 +64,6 @@ No se dispone de información suficiente para realizar una comparativa. No se co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/prabhat-30/flan-t5-dialogsum-summarizer
+- Hugging Face: https://huggingface.co/prabhat-30/flan-t5-dialogsum-summarizer
 - Repositorio relacionado (proyecto de resumen de diálogos con FLAN-T5, de otro autor): https://github.com/Kshitijbhanu/flan-t5-dialogue-summarizer
 - Artículo de Medium sobre resumen de diálogos con FLAN-T5: https://medium.com/@son4selv4/dialogue-summarization-using-flan-t-5-llm-model-61ba8511f2fa

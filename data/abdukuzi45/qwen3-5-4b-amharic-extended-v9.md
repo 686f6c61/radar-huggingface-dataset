@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`abdukuzi45/qwen3.5-4b-amharic-extended-v9` es un modelo publicado en HuggingFace por el usuario abdukuzi45, con aproximadamente 4.664 millones de parámetros reales según los pesos en safetensors. La etiqueta de arquitectura del repositorio es `qwen3_5`, la librería declarada es `transformers` y el pipeline es `image-text-to-text`, lo que indica que el repositorio está preparado para entrada multimodal de imagen y texto, aunque no se detalla la composición de la torre de visión ni el proyector multimodal. El nombre del modelo sugiere un ajuste fino orientado al amharico en su novena iteración, pero el repositorio no declara idiomas soportados, por lo que esa orientación no puede confirmarse con la información disponible.
+`abdukuzi45/qwen3.5-4b-amharic-extended-v9` es un modelo publicado en Hugging Face por el usuario abdukuzi45, con aproximadamente 4.664 millones de parámetros reales según los pesos en safetensors. La etiqueta de arquitectura del repositorio es `qwen3_5`, la librería declarada es `transformers` y el pipeline es `image-text-to-text`, lo que indica que el repositorio está preparado para entrada multimodal de imagen y texto, aunque no se detalla la composición de la torre de visión ni el proyector multimodal. El nombre del modelo sugiere un ajuste fino orientado al amharico en su novena iteración, pero el repositorio no declara idiomas soportados, por lo que esa orientación no puede confirmarse con la información disponible.
 
-El problema que resuelve y su relevancia no están documentados: la model card es la plantilla autogenerada de HuggingFace, con todos los campos marcados como `[More Information Needed]`. No hay descripción del dataset de entrenamiento, ni del procedimiento (SFT, RLHF, DPO), ni de la longitud de contexto, ni del régimen de licencia. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el tamaño del repo es de 9,4 GB, coherente con una única copia de los pesos en precisión de 16 bits (4.664 M de parámetros x 2 bytes ≈ 9,33 GB).
+El problema que resuelve y su relevancia no están documentados: la model card es la plantilla autogenerada de Hugging Face, con todos los campos marcados como `[More Information Needed]`. No hay descripción del dataset de entrenamiento, ni del procedimiento (SFT, RLHF, DPO), ni de la longitud de contexto, ni del régimen de licencia. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el tamaño del repo es de 9,4 GB, coherente con una única copia de los pesos en precisión de 16 bits (4.664 M de parámetros x 2 bytes ≈ 9,33 GB).
 
 Se trata, por tanto, de un checkpoint sin documentación técnica verificable y sin evidencia pública de evaluación. Cualquier uso en producción debería ir precedido de una auditoría propia del `config.json`, del tokenizador y de los pesos antes de asumir capacidades concretas.
 
@@ -35,7 +35,7 @@ Se trata, por tanto, de un checkpoint sin documentación técnica verificable y 
 
 No hay información publicada sobre la arquitectura interna, el objetivo de entrenamiento ni la composición del dataset. El único dato estructural fiable es el recuento de parámetros (4.663.835.136) extraído de los safetensors, y la etiqueta `qwen3_5` que el autor ha asignado al repositorio, que apunta a la familia Qwen 3.5 como base o inspiración. El pipeline `image-text-to-text` implica la existencia de algún componente de codificación visual y de fusión con el decodificador de texto, pero no se especifica si se trata de un adaptador entrenado, de un modelo base multimodal o de un ensamblaje de componentes.
 
-Tampoco se documentan los hiperparámetros de entrenamiento, el número de tokens vistos, la mezcla de datos, ni si hubo fases de ajuste por preferencias (RLHF, DPO) o de instrucciones (SFT). No se declaran innovaciones técnicas como decodificación especulativa, atención lineal o mecanismos híbridos SSM. La etiqueta `arxiv:1910.09700` que aparece en los tags del repositorio corresponde a Lacoste et al. (2019) sobre el cálculo del impacto medioambiental del aprendizaje automático, y forma parte de la plantilla estándar de model card de HuggingFace; no es una referencia al paper del modelo.
+Tampoco se documentan los hiperparámetros de entrenamiento, el número de tokens vistos, la mezcla de datos, ni si hubo fases de ajuste por preferencias (RLHF, DPO) o de instrucciones (SFT). No se declaran innovaciones técnicas como decodificación especulativa, atención lineal o mecanismos híbridos SSM. La etiqueta `arxiv:1910.09700` que aparece en los tags del repositorio corresponde a Lacoste et al. (2019) sobre el cálculo del impacto medioambiental del aprendizaje automático, y forma parte de la plantilla estándar de model card de Hugging Face; no es una referencia al paper del modelo.
 
 ## Capacidades
 
@@ -79,7 +79,7 @@ Las siguientes estimaciones se derivan del recuento real de parámetros (4.663.8
 - Overhead adicional: hay que sumar la caché KV, cuyo tamaño depende de la longitud de contexto (no declarada) y del número de capas, más la memoria del codificador visual si se usa entrada de imagen. En la práctica, para FP16 conviene reservar 12-16 GB totales.
 - GPU recomendadas: A100 40/80 GB, H100, L40S o A10G para servicio en producción con lotes; RTX 4090 (24 GB) y RTX 3090 (24 GB) para FP16 con contexto moderado; RTX 4080/4070 Ti (16 GB) para INT8 o contexto corto en FP16.
 - GPU de consumo: sí cabe, con matices. En 24 GB es viable en FP16; en 16 GB es recomendable INT8 o 4 bits; en 8 GB solo con cuantización de 4 bits y contexto reducido, con riesgo de quedarse sin margen para la caché KV.
-- Opciones de despliegue: `transformers` está confirmado por la etiqueta de librería. La compatibilidad con vLLM, TGI, llama.cpp u Ollama no está declarada y depende de que la arquitectura `qwen3_5` esté soportada por cada framework; el tag `endpoints_compatible` sugiere que puede servirse mediante los endpoints gestionados de HuggingFace.
+- Opciones de despliegue: `transformers` está confirmado por la etiqueta de librería. La compatibilidad con vLLM, TGI, llama.cpp u Ollama no está declarada y depende de que la arquitectura `qwen3_5` esté soportada por cada framework; el tag `endpoints_compatible` sugiere que puede servirse mediante los endpoints gestionados de Hugging Face.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -102,7 +102,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque no se co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abdukuzi45/qwen3.5-4b-amharic-extended-v9
+- Modelo en Hugging Face: https://huggingface.co/abdukuzi45/qwen3.5-4b-amharic-extended-v9
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre impacto medioambiental, no sobre el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto del aprendizaje automático citada en la plantilla de model card: https://mlco2.github.io/impact
 

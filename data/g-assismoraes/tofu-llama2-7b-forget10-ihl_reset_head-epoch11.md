@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tofu-llama2-7b-forget10-ihl_reset_head-epoch11 es un checkpoint de investigacion derivado de Llama-2-7b, publicado por el usuario g-assismoraes en HuggingFace. Se trata de un modelo de lenguaje denso de 6.738.415.616 parametros (aproximadamente 6,74 mil millones) construido sobre locuslab/tofu_ft_llama2-7b, que a su vez es un ajuste fino de Llama-2-7b-chat sobre el conjunto de datos TOFU (Task of Fictitious Unlearning). El checkpoint corresponde a la epoca 11 de un proceso de 20 epocas.
+tofu-llama2-7b-forget10-ihl_reset_head-epoch11 es un checkpoint de investigacion derivado de Llama-2-7b, publicado por el usuario g-assismoraes en Hugging Face. Se trata de un modelo de lenguaje denso de 6.738.415.616 parametros (aproximadamente 6,74 mil millones) construido sobre locuslab/tofu_ft_llama2-7b, que a su vez es un ajuste fino de Llama-2-7b-chat sobre el conjunto de datos TOFU (Task of Fictitious Unlearning). El checkpoint corresponde a la epoca 11 de un proceso de 20 epocas.
 
 El modelo implementa una tecnica de desaprendizaje (machine unlearning) denominada IHL (probablemente "Inverted Hybrid Loss" o similar, aunque la model card no desarrolla la sigla) combinada con un reinicio de la cabeza de lenguaje y de los embeddings de entrada. Concretamente, los pesos de input embeddings y LM head se inicializan desde NousResearch/Llama-2-7b-chat-hf, mientras que el resto de pesos del Transformer se conservan de locuslab/tofu_ft_llama2-7b. El objetivo declarado es el olvido del subconjunto "forget10" de TOFU mediante una perdida de entropia inversa sobre los datos a olvidar y una entropia cruzada estandar (peso 1.0) sobre los datos a retener.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tofu-llama2-7b-forget10-ihl_reset_head-epoch11 | 6,74 B | no disponible | Desaprendizaje IHL sobre TOFU (epoca 11) | llama2 | HuggingFace |
-| locuslab/tofu_ft_llama2-7b | ~6,74 B | no disponible | Ajuste fino sobre TOFU (modelo base) | llama2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | ~6,74 B | no disponible | Chat generalista | llama2 | HuggingFace |
-| meta-llama/Llama-2-7b-chat-hf | ~6,74 B | no disponible | Chat generalista | llama2 | HuggingFace |
+| tofu-llama2-7b-forget10-ihl_reset_head-epoch11 | 6,74 B | no disponible | Desaprendizaje IHL sobre TOFU (epoca 11) | llama2 | Hugging Face |
+| locuslab/tofu_ft_llama2-7b | ~6,74 B | no disponible | Ajuste fino sobre TOFU (modelo base) | llama2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | ~6,74 B | no disponible | Chat generalista | llama2 | Hugging Face |
+| meta-llama/Llama-2-7b-chat-hf | ~6,74 B | no disponible | Chat generalista | llama2 | Hugging Face |
 
 Los cuatro comparten arquitectura y numero de parametros; la diferencia radica en el ajuste (TOFU frente a chat general) y en el procedimiento de desaprendizaje aplicado en el checkpoint de g-assismoraes. No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ Los cuatro comparten arquitectura y numero de parametros; la diferencia radica e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_head-epoch11
+- Modelo en Hugging Face: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_head-epoch11
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Origen de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Llama-2-7b-chat oficial: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf

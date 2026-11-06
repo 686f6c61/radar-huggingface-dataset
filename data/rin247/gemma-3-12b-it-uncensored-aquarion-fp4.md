@@ -74,6 +74,6 @@ Los tres modelos parten de la misma base (`gemma-3-12b-it`) y aplican algún tip
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/gemma-3-12b-it-Uncensored-Aquarion-FP4
+- Repositorio Hugging Face: https://huggingface.co/Rin247/gemma-3-12b-it-Uncensored-Aquarion-FP4
 - Variante GGUF de mradermacher: https://huggingface.co/mradermacher/gemma-3-12b-it-uncensored-GGUF
 - Variante abliterated de huihui-ai: https://huggingface.co/huihui-ai/gemma-3-12b-it-abliterated

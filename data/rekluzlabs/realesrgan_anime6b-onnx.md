@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo realesrgan_anime6b.onnx es una conversión a formato ONNX del superresolutor RealESRGAN_x4plus_anime_6B, desarrollado originalmente por el equipo de Real-ESRGAN (Xintao Wang y colaboradores). La conversión ha sido publicada por el usuario RekluzLabs en HuggingFace bajo licencia BSD-3-Clause. Se trata de un modelo de visión por computador especializado en el escalado 4x de imágenes de anime e ilustraciones, no de un modelo de lenguaje.
+El modelo realesrgan_anime6b.onnx es una conversión a formato ONNX del superresolutor RealESRGAN_x4plus_anime_6B, desarrollado originalmente por el equipo de Real-ESRGAN (Xintao Wang y colaboradores). La conversión ha sido publicada por el usuario RekluzLabs en Hugging Face bajo licencia BSD-3-Clause. Se trata de un modelo de visión por computador especializado en el escalado 4x de imágenes de anime e ilustraciones, no de un modelo de lenguaje.
 
 La variante "6B" hace referencia a 6 bloques RRDB (Residual in Residual Dense Block), frente a los 23 bloques del modelo estándar RealESRGAN_x4plus. Esta reducción lo hace significativamente más ligero y rápido, manteniendo una calidad alta en contenido anime e ilustración, aunque inferior en fotografías naturales. El formato ONNX permite su despliegue en múltiples runtimes sin depender del ecosistema PyTorch.
 
-El repositorio en HuggingFace no incluye una model card detallada, y el tamaño del repositorio aparece como 0.0 GB, lo que sugiere que el archivo podría estar alojado mediante Git LFS o que el repositorio está incompleto. A pesar de ello, el modelo es relevante para desarrolladores que necesitan un upscaler de anime eficiente e integrable en pipelines multiplataforma.
+El repositorio en Hugging Face no incluye una model card detallada, y el tamaño del repositorio aparece como 0.0 GB, lo que sugiere que el archivo podría estar alojado mediante Git LFS o que el repositorio está incompleto. A pesar de ello, el modelo es relevante para desarrolladores que necesitan un upscaler de anime eficiente e integrable en pipelines multiplataforma.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ El modelo de RekluzLabs se diferencia principalmente por su formato ONNX, que fa
 ## Limitaciones y advertencias
 
 - Modelo especializado en anime e ilustraciones: la calidad en fotografías naturales es inferior a la del modelo estándar de 23 bloques, tal como advierte la documentación del proyecto original.
-- El repositorio en HuggingFace no incluye una model card detallada, por lo que se desconoce el proceso exacto de conversión a ONNX y si se aplicaron optimizaciones o cuantización.
+- El repositorio en Hugging Face no incluye una model card detallada, por lo que se desconoce el proceso exacto de conversión a ONNX y si se aplicaron optimizaciones o cuantización.
 - El tamaño del repositorio aparece como 0.0 GB, lo que podría indicar que el archivo se aloja mediante Git LFS o que el repositorio está incompleto. Se recomienda verificar la integridad del archivo antes de su uso en producción.
 - No se dispone de información sobre posibles pérdidas de precisión derivadas de la conversión a ONNX.
 - La licencia BSD-3-Clause permite uso comercial, pero requiere conservar el aviso de copyright y la renuncia de responsabilidad.
@@ -78,7 +78,7 @@ El modelo de RekluzLabs se diferencia principalmente por su formato ONNX, que fa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RekluzLabs/realesrgan_anime6b.onnx
+- Repositorio Hugging Face: https://huggingface.co/RekluzLabs/realesrgan_anime6b.onnx
 - Proyecto original Real-ESRGAN: https://github.com/xinntao/Real-ESRGAN
 - Modelo ONNX de referencia (deepghs/imgutils-models): https://huggingface.co/deepghs/imgutils-models/blob/main/real_esrgan/RealESRGAN_x4plus_anime_6B.onnx
 - Modelo AMD realesrgan-x4plus-anime-6b: https://huggingface.co/amd/realesrgan-x4plus-anime-6b

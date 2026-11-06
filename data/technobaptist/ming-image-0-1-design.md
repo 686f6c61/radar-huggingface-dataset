@@ -4,7 +4,7 @@
 
 Ming-Image-0.1-Design es un modelo de generacion de imagenes a partir de texto (text-to-image) de aproximadamente 6.150 millones de parametros, orientado especificamente a diseno grafico denso en texto: interfaces de usuario, infografias, posters y otras composiciones visuales donde el texto forma parte central del resultado. A diferencia de los generadores de imagen generalistas, el modelo esta entrenado para integrar tipografia legible y estructura de diseno dentro de la propia imagen generada, y ademas soporta salida RGBA con fondo transparente.
 
-La model card identifica el modelo como `inclusionAI/Ming-Image-0.1-Design` y enlaza el repositorio de inferencia del proyecto en GitHub, aunque la ficha de HuggingFace consultada esta publicada por el usuario TechnoBaptist, que registra 0 descargas y 0 likes en el momento de la consulta. El modelo se distribuye bajo licencia MIT y en formato safetensors compatible con la libreria diffusers.
+La model card identifica el modelo como `inclusionAI/Ming-Image-0.1-Design` y enlaza el repositorio de inferencia del proyecto en GitHub, aunque la ficha de Hugging Face consultada esta publicada por el usuario TechnoBaptist, que registra 0 descargas y 0 likes en el momento de la consulta. El modelo se distribuye bajo licencia MIT y en formato safetensors compatible con la libreria diffusers.
 
 Su relevancia practica esta en el nicho de generacion de material de diseno con texto renderizado y canal alfa, un caso que los modelos de difusion convencionales resuelven con frecuencia de forma deficiente. La configuracion validada por el autor requiere una GPU CUDA con 80 GiB de VRAM en BF16, con resolucion recomendada de 2048 x 2048 y 12 pasos de muestreo con CFG 1.0.
 
@@ -27,7 +27,7 @@ Su relevancia practica esta en el nicho de generacion de material de diseno con 
 | Precision | BF16 |
 | Salida | RGB y RGBA (fondo transparente) |
 | Tamano del repositorio | 52,9 GB |
-| Inferencia alojada en HuggingFace | no (`inference: false`) |
+| Inferencia alojada en Hugging Face | no (`inference: false`) |
 
 ## Arquitectura y entrenamiento
 
@@ -77,7 +77,7 @@ La informacion proporcionada no incluye datos comparativos con otros modelos. La
 
 | Modelo | Categoria | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ming-Image-0.1-Design | Text-to-image con renderizado de texto y RGBA | 6,15 B | 1024 y 2048 px | MIT | Pesos en HuggingFace y codigo en GitHub |
+| Ming-Image-0.1-Design | Text-to-image con renderizado de texto y RGBA | 6,15 B | 1024 y 2048 px | MIT | Pesos en Hugging Face y codigo en GitHub |
 | Alternativas de generacion de imagen con texto renderizado (por ejemplo, modelos tipo FLUX o SDXL) | Text-to-image generalista o con tipografia | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
 Elemento diferencial verificable frente al generico de la categoria: la combinacion de licencia MIT, salida RGBA con transparencia y el enfoque declarado en diseno denso en texto a 2048 x 2048. No se dispone de datos de rendimiento que permitan establecer una comparacion cuantitativa con alternativas concretas.
@@ -91,16 +91,16 @@ Elemento diferencial verificable frente al generico de la categoria: la combinac
 - Sin variantes cuantizadas documentadas: no se ofrecen pesos en FP8, INT8 ni GGUF, lo que limita las opciones de optimizacion.
 - Anomalia de procedencia: la ficha consultada esta publicada por el usuario TechnoBaptist con 0 descargas y 0 likes, mientras que la model card y el quick start apuntan al repositorio `inclusionAI/Ming-Image-0.1-Design`; conviene verificar la integridad y el origen de los pesos antes de usarlos en produccion.
 - Metadatos no verificables: las fechas de creacion y actualizacion del repositorio (22 de septiembre de 2026) no son comprobables con la informacion disponible.
-- Inferencia alojada desactivada en HuggingFace (`inference: false`), por lo que es necesario desplegar el modelo en infraestructura propia.
+- Inferencia alojada desactivada en Hugging Face (`inference: false`), por lo que es necesario desplegar el modelo en infraestructura propia.
 - La generacion con fondo transparente depende de anteponer exactamente una de las frases RGBA recomendadas; un prompt distinto puede no producir canal alfa.
 - Licencia MIT: permite uso comercial y modificacion, pero no exime de responsabilidad sobre el contenido generado ni sobre posibles infracciones de derechos de terceros en las imagenes resultantes.
 - Los resultados de busqueda web asociados a esta consulta no contienen informacion relevante sobre el modelo (devuelven enlaces del club de futbol AS Roma) y no se han utilizado como fuente.
 
 ## Enlaces
 
-- Ficha de HuggingFace: https://huggingface.co/TechnoBaptist/Ming-Image-0.1-Design
+- Ficha de Hugging Face: https://huggingface.co/TechnoBaptist/Ming-Image-0.1-Design
 - Repositorio de referencia indicado en la model card: https://github.com/inclusionAI/Ming-Image
-- Modelo de referencia en HuggingFace: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
+- Modelo de referencia en Hugging Face: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
 - Recipes de vLLM-Omni para Ming-Image: https://github.com/vllm-project/vllm-omni/blob/main/recipes/inclusionAI/Ming-Image.md
 - Guia de instalacion de vLLM-Omni: https://docs.vllm.ai/projects/vllm-omni/en/latest/getting_started/quickstart/
 - Seccion de reescritura de prompt (text-to-image prompt rewriting): https://github.com/inclusionAI/Ming-Image#text-to-image-prompt-rewriting

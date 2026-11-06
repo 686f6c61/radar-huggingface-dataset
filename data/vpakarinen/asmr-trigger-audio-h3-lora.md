@@ -78,8 +78,8 @@ No se han identificado en la informacion disponible alternativas comparables (ot
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| asmr-trigger-audio-h3-lora | LoRA sobre MiniMax-H3 | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| MiniMaxAI/MiniMax-H3 (base, sin LoRA) | modelo de generacion de video T2V/I2V | no disponible | no disponible | no disponible en esta busqueda | HuggingFace |
+| asmr-trigger-audio-h3-lora | LoRA sobre MiniMax-H3 | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| MiniMaxAI/MiniMax-H3 (base, sin LoRA) | modelo de generacion de video T2V/I2V | no disponible | no disponible | no disponible en esta busqueda | Hugging Face |
 | Otros LoRA ASMR para MiniMax-H3 | no disponible | no disponible | no disponible | no disponible | no se han encontrado |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se han identificado en la informacion disponible alternativas comparables (ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vpakarinen/asmr-trigger-audio-h3-lora
+- Modelo en Hugging Face: https://huggingface.co/vpakarinen/asmr-trigger-audio-h3-lora
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Video de demostracion: https://huggingface.co/vpakarinen/asmr-trigger-audio-h3-lora/resolve/main/demo_video_11.mp4
 - Buy Me a Coffee del autor: https://buymeacoffee.com/vpakarinen

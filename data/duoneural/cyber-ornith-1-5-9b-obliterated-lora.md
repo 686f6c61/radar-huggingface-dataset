@@ -6,7 +6,7 @@ Cyber-Ornith-1.5-9B-OBLITERATED es un ajuste fino mediante QLoRA de tipo LoRA so
 
 La arquitectura subyacente es un transformer denso basado en la pila Qwen3.5, con patrones de atencion de estilo Gemma y extension de contexto nativa mediante YaRN RoPE. El ajuste busca eliminar las negativas catastroficas ante tareas legitimas de auditoria y diagnostico de seguridad, preservando a la vez las trazas cognitivas nativas delimitadas por `<think>...</think>` que hereda del modelo base. El entrenamiento se realizo con Unsloth sobre una NVIDIA RTX 4080 Super, aplicando NEFTune (alpha=5.0) y enmascaramiento de perdida solo en la completacion.
 
-Su relevancia es acotada y muy especifica: cubre el hueco de modelos abiertos que combinan razonamiento con etiquetas de deliberacion, tool calling estricto en JSON/XML y ejecucion cruda de Bash en un mismo artefacto. No obstante, el modelo tiene cero descargas y cero likes en HuggingFace, fue publicado el 24 de septiembre de 2026 y no presenta resultados de evaluacion medidos, solo objetivos declarados por el autor.
+Su relevancia es acotada y muy especifica: cubre el hueco de modelos abiertos que combinan razonamiento con etiquetas de deliberacion, tool calling estricto en JSON/XML y ejecucion cruda de Bash en un mismo artefacto. No obstante, el modelo tiene cero descargas y cero likes en Hugging Face, fue publicado el 24 de septiembre de 2026 y no presenta resultados de evaluacion medidos, solo objetivos declarados por el autor.
 
 ## Especificaciones tecnicas
 
@@ -85,14 +85,14 @@ No se dispone de datos verificados de modelos externos comparables en la informa
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cyber-Ornith-1.5-9B-OBLITERATED-LoRA | 9B (denso) | no disponible (extension YaRN RoPE) | Solo objetivos, sin resultados medidos | apache-2.0 | Adaptadores LoRA en HuggingFace, 0 descargas, 0 likes |
-| Ornith-1.5-9B-OBLITERATED (base) | 9B (denso) | no disponible | Terminal-Bench 2.1 46,2% Pass@1; SWE-bench Verified 70,6%; CyberSecEval 3 ~42,0%; GPQA Diamond 86,4%; BFCL ~78,0%; Aider CLI ~64,0% | no disponible en la informacion recibida | Modelo base en HuggingFace |
+| Cyber-Ornith-1.5-9B-OBLITERATED-LoRA | 9B (denso) | no disponible (extension YaRN RoPE) | Solo objetivos, sin resultados medidos | apache-2.0 | Adaptadores LoRA en Hugging Face, 0 descargas, 0 likes |
+| Ornith-1.5-9B-OBLITERATED (base) | 9B (denso) | no disponible | Terminal-Bench 2.1 46,2% Pass@1; SWE-bench Verified 70,6%; CyberSecEval 3 ~42,0%; GPQA Diamond 86,4%; BFCL ~78,0%; Aider CLI ~64,0% | no disponible en la informacion recibida | Modelo base en Hugging Face |
 
 Comparacion con alternativas de otros desarrolladores (por ejemplo, modelos abiertos de tamano similar orientados a agentes o ciberseguridad): no disponible.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de validacion externa: cero descargas y cero likes en HuggingFace, sin resultados de evaluacion medidos. Los numeros de la model card son objetivos, no rendimiento demostrado.
+- Ausencia total de validacion externa: cero descargas y cero likes en Hugging Face, sin resultados de evaluacion medidos. Los numeros de la model card son objetivos, no rendimiento demostrado.
 - El modelo se declara explicitamente "abliterated"/sin censura. Esto implica riesgo real de generar contenido operativo de doble uso (explotacion, malware, evasion) y responsabilidad legal del desplegador. Requiere control de acceso, registro de auditoria y uso limitado a entornos autorizados.
 - Riesgo de alucinacion: el autor disena el enmascaramiento de completacion precisamente para evitar que el modelo fabrique salidas de terminal, lo que indica que esa patologia existe en la base y no se ha verificado su eliminacion.
 - Olvido catastrofico: la retencion en matematicas, codigo y logica se apoya en un 15% de datos de repeticion cognitiva, pero no hay mediciones que confirmen que no se ha degradado.
@@ -106,8 +106,8 @@ Comparacion con alternativas de otros desarrolladores (por ejemplo, modelos abie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/Cyber-Ornith-1.5-9B-OBLITERATED-LoRA
-- Organizacion del autor en HuggingFace: https://huggingface.co/DuoNeural
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/Cyber-Ornith-1.5-9B-OBLITERATED-LoRA
+- Organizacion del autor en Hugging Face: https://huggingface.co/DuoNeural
 - Sitio del desarrollador: https://duoneural.com
 - Modelo base: https://huggingface.co/OBLITERATUS/Ornith-1.5-9B-OBLITERATED
 - Dataset oi-uae/cyber-security: https://huggingface.co/datasets/oi-uae/cyber-security
@@ -119,4 +119,4 @@ Comparacion con alternativas de otros desarrolladores (por ejemplo, modelos abie
 - Dataset NousResearch/hermes-function-calling-v1: https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1
 - Dataset open-thoughts/OpenThoughts3-1.2M: https://huggingface.co/datasets/open-thoughts/OpenThoughts3-1.2M
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden exclusivamente de la informacion de HuggingFace y de la model card. No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados al modelo.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden exclusivamente de la informacion de Hugging Face y de la model card. No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados al modelo.

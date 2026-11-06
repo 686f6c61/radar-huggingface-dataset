@@ -67,7 +67,7 @@ No se dispone de datos propios confirmados (parametros, contexto, licencia) para
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Gr00t-n17-bigenlight-50per-task-svf-iql-e09-k04-g025-step10000 | no disponible (solo adaptadores, 0,1 GB) | no disponible | no disponible | Adaptador dependiente del modelo base |
-| Gr00t N1 / N1.5 (NVIDIA) | ~2 B (segun informacion publica del proyecto) | no disponible | no disponible | Pesos abiertos en HuggingFace |
+| Gr00t N1 / N1.5 (NVIDIA) | ~2 B (segun informacion publica del proyecto) | no disponible | no disponible | Pesos abiertos en Hugging Face |
 | OpenVLA | ~7 B (segun informacion publica del proyecto) | no disponible | Licencia derivada de Llama 2 | Pesos abiertos |
 | pi0 (Physical Intelligence) | ~3 B (segun informacion publica del proyecto) | no disponible | no disponible | Pesos publicados por el proyecto |
 
@@ -85,6 +85,6 @@ No se dispone de datos propios confirmados (parametros, contexto, licencia) para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-task-svf-iql-e09-k04-g025-step10000
+- Modelo en Hugging Face: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-task-svf-iql-e09-k04-g025-step10000
 - Modelo base: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000
 - No se han encontrado papers, blogs, repositorios ni demos adicionales relevantes en la busqueda web realizada.

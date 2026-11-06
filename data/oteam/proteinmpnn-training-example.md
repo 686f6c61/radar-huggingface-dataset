@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ProteinMPNN es un modelo de diseño inverso de plegamiento proteico (inverse folding) que genera secuencias de aminoácidos para una estructura de esqueleto proteico fija. Lo desarrollaron originalmente Justas Dauparas, David Baker y colaboradores, y esta ficha corresponde a una implementación no oficial del equipo OFoldX, publicada en HuggingFace bajo el identificador `oteam/proteinmpnn-training-example`. El checkpoint concreto es el resultado del ejemplo oficial de entrenamiento, con 1.673.592 parámetros reales según los pesos en safetensors.
+ProteinMPNN es un modelo de diseño inverso de plegamiento proteico (inverse folding) que genera secuencias de aminoácidos para una estructura de esqueleto proteico fija. Lo desarrollaron originalmente Justas Dauparas, David Baker y colaboradores, y esta ficha corresponde a una implementación no oficial del equipo OFoldX, publicada en Hugging Face bajo el identificador `oteam/proteinmpnn-training-example`. El checkpoint concreto es el resultado del ejemplo oficial de entrenamiento, con 1.673.592 parámetros reales según los pesos en safetensors.
 
 El modelo representa cada residuo como un nodo en un grafo espacial de vecinos más cercanos, codifica la geometría del esqueleto mediante bloques de paso de mensajes (message passing) y decodifica las identidades de los residuos en un orden causal muestreado. Resuelve el problema inverso al plegamiento: dada una estructura tridimensional, propone secuencias que probablemente la adopten. Es relevante para pipelines de diseño de proteínas, ingeniería de enzimas y generación de candidatos terapéuticos.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ProteinMPNN (esta ficha, training example) | 1,674 M | Esqueleto N, CA, C, O | AGPL-3.0 | HuggingFace (oteam) |
-| ProteinMPNN estándar (oteam/proteinmpnn) | 1,674 M | Esqueleto N, CA, C, O | AGPL-3.0 | HuggingFace (oteam) |
-| SolubleMPNN (oteam/solublempnn) | 1,674 M | Esqueleto N, CA, C, O | AGPL-3.0 | HuggingFace (oteam) |
-| ProteinMPNN CA-only (oteam/proteinmpnn-ca-only) | 1,642 M | Solo CA | AGPL-3.0 | HuggingFace (oteam) |
+| ProteinMPNN (esta ficha, training example) | 1,674 M | Esqueleto N, CA, C, O | AGPL-3.0 | Hugging Face (oteam) |
+| ProteinMPNN estándar (oteam/proteinmpnn) | 1,674 M | Esqueleto N, CA, C, O | AGPL-3.0 | Hugging Face (oteam) |
+| SolubleMPNN (oteam/solublempnn) | 1,674 M | Esqueleto N, CA, C, O | AGPL-3.0 | Hugging Face (oteam) |
+| ProteinMPNN CA-only (oteam/proteinmpnn-ca-only) | 1,642 M | Solo CA | AGPL-3.0 | Hugging Face (oteam) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/proteinmpnn-training-example
+- Hugging Face: https://huggingface.co/oteam/proteinmpnn-training-example
 - Variante estándar: https://huggingface.co/oteam/proteinmpnn
 - Variante SolubleMPNN: https://huggingface.co/oteam/solublempnn
 - Variante CA-only: https://huggingface.co/oteam/proteinmpnn-ca-only

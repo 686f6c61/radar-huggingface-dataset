@@ -86,7 +86,7 @@ La comparativa se centra en las distintas versiones del mismo modelo base, ya qu
 
 ## Enlaces
 
-- [Repositorio HuggingFace de esta cuantización](https://huggingface.co/qtum/Qwen3-Coder-Next-GPTQ)
+- [Repositorio Hugging Face de esta cuantización](https://huggingface.co/qtum/Qwen3-Coder-Next-GPTQ)
 - [Modelo base Qwen/Qwen3-Coder-Next](https://huggingface.co/Qwen/Qwen3-Coder-Next)
 - [Versión AWQ de qtum](https://huggingface.co/qtum/Qwen3-Coder-Next-AWQ)
 - [Versión FP8 oficial](https://huggingface.co/Qwen/Qwen3-Coder-Next-FP8)

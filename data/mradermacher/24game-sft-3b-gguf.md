@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`24game-sft-3b-GGUF` es la versión cuantizada en formato GGUF del modelo `couplefire/24game-sft-3b`, un modelo de lenguaje de aproximadamente 3.400 millones de parámetros afinado mediante supervisión (SFT) para resolver el juego matemático "24 game". El trabajo de cuantización lo firma mradermacher, un perfil conocido en HuggingFace por publicar versiones GGUF de modelos pequeños y medianos para su uso con llama.cpp y herramientas compatibles.
+`24game-sft-3b-GGUF` es la versión cuantizada en formato GGUF del modelo `couplefire/24game-sft-3b`, un modelo de lenguaje de aproximadamente 3.400 millones de parámetros afinado mediante supervisión (SFT) para resolver el juego matemático "24 game". El trabajo de cuantización lo firma mradermacher, un perfil conocido en Hugging Face por publicar versiones GGUF de modelos pequeños y medianos para su uso con llama.cpp y herramientas compatibles.
 
 El modelo base parte de una arquitectura transformer de tipo decoder-only con 3.397.103.616 parámetros totales, según los pesos en safetensors del repositorio. Está etiquetado como conversacional y declarado únicamente para inglés. La relevancia de esta ficha radica en que se trata de un modelo especializado y de pequeño tamaño, útil para experimentar con razonamiento aritmético en entornos con recursos limitados, aunque su información pública es muy escasa.
 

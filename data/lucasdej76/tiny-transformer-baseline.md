@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lucasdej76/tiny-transformer-baseline` es un prototipo de investigación de un Tiny Transformer orientado a generacion de texto. Lo desarrolla el autor `lucasdej76`, como proyecto experimental documentado en HuggingFace. El proposito del repositorio es ofrecer un punto de partida minimo y reproducible para experimentos de arquitectura y entrenamiento, no una compilacion lista para produccion. Con un checkpoint de 49.600 parametros, el modelo se sitúa en un regimen computacionalmente muy barato, pensado para pruebas de humo y estudio de componentes especificos.
+`lucasdej76/tiny-transformer-baseline` es un prototipo de investigación de un Tiny Transformer orientado a generacion de texto. Lo desarrolla el autor `lucasdej76`, como proyecto experimental documentado en Hugging Face. El proposito del repositorio es ofrecer un punto de partida minimo y reproducible para experimentos de arquitectura y entrenamiento, no una compilacion lista para produccion. Con un checkpoint de 49.600 parametros, el modelo se sitúa en un regimen computacionalmente muy barato, pensado para pruebas de humo y estudio de componentes especificos.
 
 La arquitectura es un Transformer con atencion por grupos (grouped query attention), fusion bilineal, activacion mish y normalizacion GroupNorm. La configuracion incluida se denomina escala "xlarge", aunque el nombre es interno del framework del autor y no implica una capacidad real de modelo grande. El checkpoint `model.safetensors` es un punto de inicializacion valido para pruebas de humo, no un modelo entrenado. No se ha fijado la longitud de contexto en la documentacion disponible, por lo que se indica como "no disponible". El repositorio incluye `pipeline.py` con un ejemplo ejecutable y punto de entrada de entrenamiento, ademas de `config.json` y `training_args.json`.
 
@@ -21,7 +21,7 @@ La arquitectura es un Transformer con atencion por grupos (grouped query attenti
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un Transformer base con atencion por grupos (grouped query attention), un mecanismo de fusion bilineal, activacion mish y normalizacion GroupNorm. La escala denominada "xlarge" dentro del repositorio documenta valores por defecto y formatos de ficheros, no un rendimiento real medido. La implementacion es propia y no se corresponde con las cargas automaticas de la API generica de HuggingFace; el propio autor indica que se requiere un adaptador explicito antes de usar APIs de carga automatica.
+La arquitectura es un Transformer base con atencion por grupos (grouped query attention), un mecanismo de fusion bilineal, activacion mish y normalizacion GroupNorm. La escala denominada "xlarge" dentro del repositorio documenta valores por defecto y formatos de ficheros, no un rendimiento real medido. La implementacion es propia y no se corresponde con las cargas automaticas de la API generica de Hugging Face; el propio autor indica que se requiere un adaptador explicito antes de usar APIs de carga automatica.
 
 En cuanto al entrenamiento, la configuracion por defecto propone Adafactor como optimizador junto con un planificador OneCycle. El checkpoint incluido no es el resultado de un entrenamiento completado, sino un checkpoint de inicializacion valido para pruebas de humo. El autor recomienda, para una evaluacion significativa, entrenar todos los baselines con la misma exposicion a datos, presupuesto de ajuste y semillas aleatorias. No se declara ningun dato de entrenamiento en la informacion disponible.
 
@@ -77,7 +77,7 @@ La comparativa directa de rendimiento no es posible: `lucasdej76/tiny-transforme
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lucasdej76/tiny-transformer-baseline
+- Repositorio Hugging Face: https://huggingface.co/lucasdej76/tiny-transformer-baseline
 - Proyecto relacionado pero distinto en GitHub (TinyTransformer sobre matematicas de transformers): https://github.com/skolouri/TinyTransformer
 
 No se han encontrado otros enlaces oficiales (papers, blogs, demos) del autor en la informacion proporcionada.

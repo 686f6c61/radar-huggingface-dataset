@@ -84,7 +84,7 @@ El modelo base de Edge0 comparte arquitectura, parámetros e idiomas con esta ex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/audio8-tts-realistic-0.6b-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/audio8-tts-realistic-0.6b-loom
 - Modelo base: https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b
 - Códec emparejado: https://huggingface.co/loom-ai-org/audio8-tts-codec-loom
 - Repositorio loom.cpp: https://github.com/loom-ai-org/loom.cpp

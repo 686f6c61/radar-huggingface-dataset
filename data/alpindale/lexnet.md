@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lexnet es un modelo publicado en HuggingFace por el usuario alpindale bajo licencia Apache 2.0. La model card asociada está practicamente vacía: unicamente declara la licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso. El repositorio tiene un tamano de 0.0 GB, lo que sugiere que no contiene pesos publicados o que estos no se han subido en el momento de la consulta.
+Lexnet es un modelo publicado en Hugging Face por el usuario alpindale bajo licencia Apache 2.0. La model card asociada está practicamente vacía: unicamente declara la licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso. El repositorio tiene un tamano de 0.0 GB, lo que sugiere que no contiene pesos publicados o que estos no se han subido en el momento de la consulta.
 
 No hay informacion disponible sobre el pipeline, los idiomas soportados, el numero de parametros ni la longitud de contexto. El modelo no registra descargas ni likes, y las fechas de creacion y actualizacion (3 de noviembre de 2026) son las unicas marcas temporales disponibles. Cualquier evaluacion tecnica seria requiere consultar el repositorio directamente, ya que la informacion publica es insuficiente para caracterizar el modelo.
 
@@ -37,7 +37,7 @@ Respecto al entrenamiento, no hay datos sobre el numero de tokens procesados, la
 
 ## Casos de uso
 
-- No es posible recomendar casos de uso concretos sin informacion verificable sobre arquitectura, tamano, contexto o capacidades. Cualquier aplicacion practica requeriria primero una evaluacion directa del modelo en el repositorio de HuggingFace.
+- No es posible recomendar casos de uso concretos sin informacion verificable sobre arquitectura, tamano, contexto o capacidades. Cualquier aplicacion practica requeriria primero una evaluacion directa del modelo en el repositorio de Hugging Face.
 - Evaluacion exploratoria en laboratorio: dado que el repositorio no contiene pesos visibles, el unico uso realista en el estado actual es la inspeccion de metadatos y la monitorizacion de futuras actualizaciones del autor.
 - Integracion en pipelines de investigacion: solo tendria sentido una vez el autor publique pesos, configuracion y documentacion tecnica que permitan reproducir resultados.
 - Despliegue en produccion: descartado en el estado actual por ausencia de informacion sobre licencia de uso comercial mas alla de la declaracion Apache 2.0, rendimiento, latencia y requisitos de hardware.
@@ -71,5 +71,5 @@ No disponible. Sin informacion sobre arquitectura, tamano o capacidades no es po
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alpindale/lexnet
+- Repositorio en Hugging Face: https://huggingface.co/alpindale/lexnet
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

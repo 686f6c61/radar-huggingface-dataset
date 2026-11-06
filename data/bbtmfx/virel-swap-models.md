@@ -39,7 +39,7 @@ También se incluye un LoRA de destilación por pasos de lightx2v, pensado para 
 
 ## Casos de uso
 
-- Aprovisionamiento de RunPod: usar el repositorio como caché única para instanciar pods con ComfyUI y evitar descargas repetidas desde varios repositorios de HuggingFace; el tamaño de 28,8 GB hace viable un precargado en el volumen del pod.
+- Aprovisionamiento de RunPod: usar el repositorio como caché única para instanciar pods con ComfyUI y evitar descargas repetidas desde varios repositorios de Hugging Face; el tamaño de 28,8 GB hace viable un precargado en el volumen del pod.
 - Animación de personajes en producción de vídeo: cargar Wan2.2-Animate-14B fp8 en ComfyUI para generar clips animados a partir de una imagen de referencia y una secuencia de movimiento, aprovechando la compilación fp8 para reducir requisitos de VRAM.
 - Prototipado de pipelines de reenactment: montar un flujo con el VAE de Wan 2.1 y el codificador UMT5-XXL incluidos para experimentar con transferencia de movimiento sin resolver dependencias por separado.
 - Ajuste de iluminación en postproducción: aplicar el LoRA de relight incluido para armonizar la iluminación del personaje animado con la escena.
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| bbtmfx/virel-swap-models | 14B (Wan2.2-Animate-14B) | no disponible | Apache-2.0 | HuggingFace (mirror) | Espejo sin modificaciones para ComfyUI/RunPod |
-| Wan2.2-Animate-14B (Wan-AI) | 14B | no disponible | Apache-2.0 (según el mirror) | HuggingFace (original) | Fuente original de los pesos principales |
-| Kijai/WanVideo_comfy_fp8_scaled | 14B (fp8) | no disponible | no disponible en la informacion proporcionada | HuggingFace | Build fp8 escalada que este repo replica |
-| Comfy-Org/Wan-Animate-2 | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace | Conjunto repackaged para ComfyUI |
+| bbtmfx/virel-swap-models | 14B (Wan2.2-Animate-14B) | no disponible | Apache-2.0 | Hugging Face (mirror) | Espejo sin modificaciones para ComfyUI/RunPod |
+| Wan2.2-Animate-14B (Wan-AI) | 14B | no disponible | Apache-2.0 (según el mirror) | Hugging Face (original) | Fuente original de los pesos principales |
+| Kijai/WanVideo_comfy_fp8_scaled | 14B (fp8) | no disponible | no disponible en la informacion proporcionada | Hugging Face | Build fp8 escalada que este repo replica |
+| Comfy-Org/Wan-Animate-2 | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face | Conjunto repackaged para ComfyUI |
 
 ## Limitaciones y advertencias
 
@@ -76,11 +76,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - El repositorio mezcla pesos de varios orígenes; un cambio en los repositorios upstream no se refleja automáticamente en el espejo.
 - El tamaño de 28,8 GB y la ausencia de documentación sobre requisitos de VRAM complican la planificación de recursos en producción.
 - Al ser un mirror con 0 descargas y 0 likes en el momento de la consulta, no hay evidencia de uso ni validación por parte de la comunidad.
-- No se declaran idiomas soportados ni pipeline de HuggingFace, lo que limita la integración con herramientas que dependen de esos metadatos.
+- No se declaran idiomas soportados ni pipeline de Hugging Face, lo que limita la integración con herramientas que dependen de esos metadatos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bbtmfx/virel-swap-models
+- Repositorio en Hugging Face: https://huggingface.co/bbtmfx/virel-swap-models
 - Wan2.2-Animate-14B (Wan-AI): no se proporciona URL directa en la información disponible
 - Kijai/WanVideo_comfy_fp8_scaled: https://huggingface.co/Kijai/WanVideo_comfy_fp8_scaled
 - Comfy-Org/Wan-Animate-2: https://huggingface.co/Comfy-Org/Wan-Animate-2

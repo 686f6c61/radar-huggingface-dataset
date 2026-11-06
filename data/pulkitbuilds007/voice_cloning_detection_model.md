@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Voice_cloning_detection_model` es un repositorio publicado en HuggingFace por el usuario `pulkitbuilds007` bajo licencia MIT. Por el identificador y la ausencia de pipeline declarado, se trata de un modelo orientado a la deteccion de voces clonadas o sinteticas, presumiblemente un clasificador binario de audio (real frente a generado por TTS o clonacion de voz). No obstante, la model card publicada no contiene ninguna descripcion tecnica, ningun detalle sobre arquitectura, datos de entrenamiento ni metricas.
+`Voice_cloning_detection_model` es un repositorio publicado en Hugging Face por el usuario `pulkitbuilds007` bajo licencia MIT. Por el identificador y la ausencia de pipeline declarado, se trata de un modelo orientado a la deteccion de voces clonadas o sinteticas, presumiblemente un clasificador binario de audio (real frente a generado por TTS o clonacion de voz). No obstante, la model card publicada no contiene ninguna descripcion tecnica, ningun detalle sobre arquitectura, datos de entrenamiento ni metricas.
 
 El repositorio no declara pipeline, idiomas soportados, formato de pesos ni tamano de parametros. En el momento de la consulta registra 0 descargas y 1 like, lo que indica que es un artefacto reciente y practicamente sin adopcion. Fue creado y actualizado el 3 de noviembre de 2026.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han proporcionado modelos comparables ni datos que permitan establecer una comparacion con alternativas de deteccion de voz clonada (por ejemplo, clasificadores anti-spoofing publicados en ASVspoof u otros repositorios de HuggingFace).
+No disponible. No se han proporcionado modelos comparables ni datos que permitan establecer una comparacion con alternativas de deteccion de voz clonada (por ejemplo, clasificadores anti-spoofing publicados en ASVspoof u otros repositorios de Hugging Face).
 
 ## Limitaciones y advertencias
 
@@ -77,5 +77,5 @@ No disponible. No se han proporcionado modelos comparables ni datos que permitan
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pulkitbuilds007/Voice_cloning_detection_model
+- Hugging Face: https://huggingface.co/pulkitbuilds007/Voice_cloning_detection_model
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

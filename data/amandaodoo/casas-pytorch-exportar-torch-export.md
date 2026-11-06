@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`amandaodoo/casas-pytorch-exportar-torch-export` es un repositorio de HuggingFace que contiene un modelo de regresión lineal entrenado con PyTorch y exportado al formato `torch.export` (`model.pt2`). No se trata de un modelo de lenguaje ni de un transformer: es un ejemplo educativo de pipeline de machine learning tabular orientado a la predicción de precios de viviendas (dataset "casas"), publicado por el usuario `amandaodoo`. El repositorio forma parte de una serie de materiales didácticos sobre formatos de exportación en PyTorch (junto con el proyecto `pytorch-entrenamiento-evaluacion`, del que deriva).
+`amandaodoo/casas-pytorch-exportar-torch-export` es un repositorio de Hugging Face que contiene un modelo de regresión lineal entrenado con PyTorch y exportado al formato `torch.export` (`model.pt2`). No se trata de un modelo de lenguaje ni de un transformer: es un ejemplo educativo de pipeline de machine learning tabular orientado a la predicción de precios de viviendas (dataset "casas"), publicado por el usuario `amandaodoo`. El repositorio forma parte de una serie de materiales didácticos sobre formatos de exportación en PyTorch (junto con el proyecto `pytorch-entrenamiento-evaluacion`, del que deriva).
 
 El modelo resuelve un problema acotado: demostrar cómo entrenar un regresor lineal, serializarlo con la API `torch.export` y volver a cargarlo en otra máquina para inferencia sin necesidad de la clase Python original. Su relevancia es formativa: ilustra el flujo de trabajo de exportación seguro (sin `pickle`) y despliegue de modelos tabulares en producción o en dispositivos alternativos.
 
@@ -32,7 +32,7 @@ La innovación técnica del repositorio no reside en el modelo sino en el format
 - Regresión tabular: predice un valor continuo (precio) a partir de features numéricas de viviendas.
 - Exportación portable: el artefacto `model.pt2` puede cargarse en otro equipo sin la clase Python de definición.
 - Carga segura: el formato no utiliza `pickle`, lo que mitiga riesgos de ejecución de código arbitrario.
-- Distribución vía HuggingFace Hub: incluye un script (`predict_hub.py`) para descargar el modelo por identificador de repositorio y ejecutar inferencia.
+- Distribución vía Hugging Face Hub: incluye un script (`predict_hub.py`) para descargar el modelo por identificador de repositorio y ejecutar inferencia.
 - Material didáctico: sirve como referencia para aprender el ciclo entrenamiento → exportación → carga → predicción.
 - No soporta tool calling, agentes, razonamiento multi-paso, visión, audio ni generación de texto.
 
@@ -44,7 +44,7 @@ La innovación técnica del repositorio no reside en el modelo sino en el format
 - Inferencia en dispositivos alternativos: el formato `torch.export` está pensado para llevar el modelo a producción o a otros dispositivos; útil como banco de pruebas de portabilidad.
 - Integración en un servicio de tasación automatizada (MVP): el modelo puede envolverse en un endpoint que reciba JSON con las features y devuelva el precio estimado, sirviendo de base para sustituir la regresión lineal por un modelo más potente.
 - Reproducibilidad de experimentos: al publicar el artefacto exportado junto al código, terceros pueden reproducir las predicciones sin reentrenar, lo que facilita la auditoría de resultados.
-- Plantilla para publicar modelos en el Hub: el script `publicar_en_hub.py` y la estructura de carpeta documentan cómo empaquetar y subir un modelo propio a HuggingFace.
+- Plantilla para publicar modelos en el Hub: el script `publicar_en_hub.py` y la estructura de carpeta documentan cómo empaquetar y subir un modelo propio a Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `amandaodoo/casas-pytorch-exportar-torch-export` | Regresión lineal tabular (torch.export) | No disponible | No aplica | MIT | HuggingFace Hub |
+| `amandaodoo/casas-pytorch-exportar-torch-export` | Regresión lineal tabular (torch.export) | No disponible | No aplica | MIT | Hugging Face Hub |
 | `scikit-learn` `LinearRegression` | Regresión lineal tabular | No disponible | No aplica | BSD-3-Clause | PyPI |
 | `amandaodoo/pytorch-entrenamiento-evaluacion` (proyecto origen) | Regresión lineal tabular (PyTorch, sin exportar) | No disponible | No aplica | No disponible | Repositorio local referenciado |
 | XGBoost / LightGBM | Gradient boosting tabular | No disponible | No aplica | Apache 2.0 / MIT | PyPI |
@@ -83,7 +83,7 @@ La comparación con modelos de lenguaje no procede: este artefacto es un regreso
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amandaodoo/casas-pytorch-exportar-torch-export
+- Modelo en Hugging Face: https://huggingface.co/amandaodoo/casas-pytorch-exportar-torch-export
 - Documentación de `torch.export`: https://pytorch.org/docs/stable/export.html
 - Repositorio de PyTorch: https://github.com/pytorch/pytorch
 - Proyecto origen referenciado en la model card: `pytorch-entrenamiento-evaluacion` (no se proporciona URL)

@@ -4,7 +4,7 @@
 
 Este repositorio es un espejo de preservación (mirror) del modelo Johnnyagah/Llama-Prompt-Guard-2-86M-injection-guardrail, un fine-tuning de Meta Llama Prompt Guard 2 86M orientado a la detección de inyecciones de prompt como guardrail de seguridad. El mantenedor del espejo, Goro64, no ha entrenado, ajustado, cuantizado ni modificado los pesos: solo replica el árbol de ficheros del commit 5b24966a23216d00b0dc382447572724fa52ba34 del repositorio original, capturado el 28 de octubre de 2026.
 
-El modelo base es un clasificador de texto derivado de DeBERTa-v2 (tag `deberta-v2` en HuggingFace), con 278.810.882 parámetros reales según los pesos en safetensors, pese a que el nombre comercial indique "86M". Se usa como clasificador binario o multietiqueta para distinguir prompts benignos de intentos de jailbreak o inyección. La relevancia actual es doble: por un lado, la seguridad de prompts es una capa crítica en despliegues de LLM en producción; por otro, este repositorio documenta de forma ejemplar la cadena de custodia de un artefacto bajo licencia Llama 4 Community License.
+El modelo base es un clasificador de texto derivado de DeBERTa-v2 (tag `deberta-v2` en Hugging Face), con 278.810.882 parámetros reales según los pesos en safetensors, pese a que el nombre comercial indique "86M". Se usa como clasificador binario o multietiqueta para distinguir prompts benignos de intentos de jailbreak o inyección. La relevancia actual es doble: por un lado, la seguridad de prompts es una capa crítica en despliegues de LLM en producción; por otro, este repositorio documenta de forma ejemplar la cadena de custodia de un artefacto bajo licencia Llama 4 Community License.
 
 El interés técnico del espejo es la trazabilidad: incluye un manifiesto con digests SHA-256 de cada fichero original, un registro de licencia y la model card upstream preservada verbatim. No aporta mejoras de rendimiento ni cambios funcionales respecto al original.
 
@@ -37,7 +37,7 @@ El espejo no documenta detalles del proceso de fine-tuning más allá de la rela
 - Etiquetado binario o multietiqueta de seguridad según la definición del autor upstream (no detallada en la información disponible).
 - Procesamiento de texto en inglés exclusivamente (tag de idioma `en`).
 - No es un modelo generativo: no produce texto, solo puntuaciones o etiquetas de clasificación.
-- Compatible con Text Embeddings Inference (TEI) y endpoints compatibles de HuggingFace.
+- Compatible con Text Embeddings Inference (TEI) y endpoints compatibles de Hugging Face.
 - No se documenta soporte de tool calling, agentes, visión ni audio en la información disponible.
 
 ## Casos de uso
@@ -60,17 +60,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada en fp16/bf16: aproximadamente 0,56 GB de pesos; cabe holgadamente en cualquier GPU consumer moderna.
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM libre; RTX 3060, RTX 4060, RTX 4090, A100, H100 son sobredimensionadas para este modelo.
 - Cabe en GPU consumer: sí, en cualquier GPU con 4 GB o más, e incluso en CPU para lotes pequeños.
-- Opciones de despliegue: transformers, Text Embeddings Inference (TEI), endpoints compatibles de HuggingFace; vLLM y llama.cpp no aplican de forma estándar a clasificadores DeBERTa.
+- Opciones de despliegue: transformers, Text Embeddings Inference (TEI), endpoints compatibles de Hugging Face; vLLM y llama.cpp no aplican de forma estándar a clasificadores DeBERTa.
 - Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño del modelo, se espera latencia de milisegundos por petición en GPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este espejo (Goro64) | 278,8 M | no disponible | Llama 4 Community License | HuggingFace, safetensors |
-| meta-llama/Llama-Prompt-Guard-2-86M | no disponible en esta ficha | no disponible | Llama 4 Community License | HuggingFace (oficial) |
-| Johnnyagah/Llama-Prompt-Guard-2-86M-injection-guardrail | no disponible en esta ficha | no disponible | Llama 4 Community License | HuggingFace (upstream del espejo) |
-| ProtectAI deberta-v3-base-prompt-injection | no disponible en esta ficha | no disponible | no disponible | HuggingFace |
+| Este espejo (Goro64) | 278,8 M | no disponible | Llama 4 Community License | Hugging Face, safetensors |
+| meta-llama/Llama-Prompt-Guard-2-86M | no disponible en esta ficha | no disponible | Llama 4 Community License | Hugging Face (oficial) |
+| Johnnyagah/Llama-Prompt-Guard-2-86M-injection-guardrail | no disponible en esta ficha | no disponible | Llama 4 Community License | Hugging Face (upstream del espejo) |
+| ProtectAI deberta-v3-base-prompt-injection | no disponible en esta ficha | no disponible | no disponible | Hugging Face |
 
 La comparativa se limita a los artefactos identificados en la información disponible; no se dispone de métricas de rendimiento comparadas para establecer diferencias cuantitativas entre ellos.
 

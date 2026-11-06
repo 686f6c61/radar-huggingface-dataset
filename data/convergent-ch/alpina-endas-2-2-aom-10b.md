@@ -89,7 +89,7 @@ El ensamblaje se distingue de un MoE convencional en que los expertos no compart
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-AoM-10B
-- HuggingFace (repositorio de pesos GGUF): https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-AoM-10B-GGUF
+- Hugging Face (modelo): https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-AoM-10B
+- Hugging Face (repositorio de pesos GGUF): https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-AoM-10B-GGUF
 - Modelo base Input-Divisor: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Modelo base especialistas: https://huggingface.co/Qwen/Qwen3.5-0.8B

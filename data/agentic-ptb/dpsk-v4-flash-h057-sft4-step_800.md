@@ -48,4 +48,4 @@ Dado que es un checkpoint intermedio, la comparativa mas directa es con su model
 - Sin benchmarks: no hay datos de rendimiento que permitan validar su calidad.
 
 ## Enlaces
-- [HuggingFace - agentic-ptb/dpsk-v4-flash.h057.sft4.step_800](https://huggingface.co/agentic-ptb/dpsk-v4-flash.h057.sft4.step_800)
+- [Hugging Face - agentic-ptb/dpsk-v4-flash.h057.sft4.step_800](https://huggingface.co/agentic-ptb/dpsk-v4-flash.h057.sft4.step_800)

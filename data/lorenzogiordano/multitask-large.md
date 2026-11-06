@@ -55,5 +55,5 @@ No disponible. No se conocen modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lorenzogiordano/multitask-large
+- Hugging Face: https://huggingface.co/lorenzogiordano/multitask-large
 - No se han encontrado papers, blogs o repositorios adicionales en la búsqueda web.

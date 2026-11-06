@@ -78,7 +78,7 @@ La comparativa es limitada porque no se dispone de datos de rendimiento del mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FighterPaul/Qwen3.5-Pure-Finetune-DatasetV2
+- Hugging Face: https://huggingface.co/FighterPaul/Qwen3.5-Pure-Finetune-DatasetV2
 - Documentacion de Unsloth para Qwen3.5: https://unsloth.ai/docs/models/qwen3.5/fine-tune
 - Repositorio de fine-tuning Qwen-VL (referencia): https://github.com/2U1/Qwen-VL-Series-Finetune
 - Guia de fine-tuning Qwen3.5 (BestHub): https://www.besthub.dev/articles/from-zero-to-deployment-a-complete-qwen3-5-fine-tuning-guide-869c8e1c888c

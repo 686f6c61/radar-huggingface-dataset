@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `AlinaGonch/granite41-3b-squad-ratio-1.00-seed-42` aloja un modelo publicado en HuggingFace el 20 de septiembre de 2026 (fecha declarada por la plataforma, posterior a la fecha actual de consulta) con la librería `transformers` y pesos en formato `safetensors`. El autor es el usuario AlinaGonch. La model card es la plantilla automática de HuggingFace sin cumplimentar: todos los campos de descripción, desarrollador, licencia, idiomas, datos de entrenamiento y evaluación aparecen como "[More Information Needed]", por lo que no existe información verificable sobre qué es el modelo ni cómo se ha construido.
+El repositorio `AlinaGonch/granite41-3b-squad-ratio-1.00-seed-42` aloja un modelo publicado en Hugging Face el 20 de septiembre de 2026 (fecha declarada por la plataforma, posterior a la fecha actual de consulta) con la librería `transformers` y pesos en formato `safetensors`. El autor es el usuario AlinaGonch. La model card es la plantilla automática de Hugging Face sin cumplimentar: todos los campos de descripción, desarrollador, licencia, idiomas, datos de entrenamiento y evaluación aparecen como "[More Information Needed]", por lo que no existe información verificable sobre qué es el modelo ni cómo se ha construido.
 
 A partir exclusivamente del identificador del repositorio puede inferirse, sin confirmación alguna, que se trata de un ajuste fino (fine-tuning) sobre un modelo de la familia IBM Granite de aproximadamente 3 000 millones de parámetros, entrenado sobre el conjunto de datos SQuAD (question answering extractivo) con una proporción de datos de 1.00 y semilla aleatoria 42. Esta convención de nombres es habitual en experimentos de reproducibilidad y barridos de hiperparámetros, pero ni la model card ni los resultados de búsqueda web confirman esta hipótesis. La búsqueda web realizada no devolvió ningún resultado relacionado con el modelo: los enlaces recuperados corresponden a la función QUERY de Google Sheets y a hilos de foro de WordReference, completamente ajenos al objeto de la ficha.
 
@@ -21,7 +21,7 @@ El modelo acumula 0 descargas y 0 "likes" en el momento de la consulta y el repo
 | Licencia | No disponible. La model card no especifica licencia alguna. |
 | Formato de pesos | `safetensors` (etiqueta del repositorio). Tamaño total del repositorio: 0,1 GB. |
 
-Otros metadatos declarados: etiquetas `transformers`, `safetensors`, `endpoints_compatible`, `region:us` y una referencia bibliográfica `arxiv:1910.09700` que procede de la plantilla automática de HuggingFace (artículo de Lacoste et al. sobre cálculo del impacto ambiental), no de una publicación asociada al modelo.
+Otros metadatos declarados: etiquetas `transformers`, `safetensors`, `endpoints_compatible`, `region:us` y una referencia bibliográfica `arxiv:1910.09700` que procede de la plantilla automática de Hugging Face (artículo de Lacoste et al. sobre cálculo del impacto ambiental), no de una publicación asociada al modelo.
 
 ## Arquitectura y entrenamiento
 
@@ -33,7 +33,7 @@ La única información aprovechable es indirecta y de naturaleza nominal: el suf
 
 No hay información verificable sobre las capacidades del modelo. La model card no contiene ninguna descripción funcional y la búsqueda web no aportó documentación adicional. Lo único que puede afirmarse con base en los metadatos es lo siguiente:
 
-- El repositorio es compatible con la librería `transformers` y con los endpoints de HuggingFace (etiqueta `endpoints_compatible`), lo que implica que su arquitecura es cargable mediante `AutoModel`/`AutoTokenizer` siempre que los pesos estén completos y el `config.json` sea válido.
+- El repositorio es compatible con la librería `transformers` y con los endpoints de Hugging Face (etiqueta `endpoints_compatible`), lo que implica que su arquitecura es cargable mediante `AutoModel`/`AutoTokenizer` siempre que los pesos estén completos y el `config.json` sea válido.
 - Bajo la hipótesis no confirmada de que se trate de un ajuste sobre SQuAD, la capacidad esperable sería la respuesta extractiva de preguntas: localizar el fragmento de un contexto que responde a una pregunta, sin generación libre.
 - No consta soporte de tool calling, function calling, razonamiento multi-paso, agentes, visión, audio, modo de pensamiento ni capacidades multilingües declaradas.
 - No consta ninguna capacidad especial (thinking mode, visión, audio, decodificación especulativa).
@@ -70,7 +70,7 @@ No disponible. No es posible establecer comparaciones rigurosas porque se descon
 
 ## Limitaciones y advertencias
 
-- Model card vacía: toda la información descriptiva es la plantilla automática de HuggingFace. No hay descripción, usuario previsto, datos de entrenamiento ni evaluación.
+- Model card vacía: toda la información descriptiva es la plantilla automática de Hugging Face. No hay descripción, usuario previsto, datos de entrenamiento ni evaluación.
 - Licencia no declarada: sin licencia explícita no puede asumirse ningún derecho de uso comercial. En la práctica, el uso en producción conlleva riesgo legal.
 - Idiomas no declarados: no puede asumirse soporte de castellano ni de ningún otro idioma.
 - Riesgo de alucinación: indeterminado. Si el modelo es de tipo extractivo no debería generar texto libre, pero si es generativo y no ha pasado por alineación, el riesgo sería alto. No hay datos para decidir.
@@ -84,6 +84,6 @@ No disponible. No es posible establecer comparaciones rigurosas porque se descon
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-1.00-seed-42
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-1.00-seed-42
 - Artículo referenciado en la etiqueta del repositorio (calculadora de impacto ambiental de la plantilla automática, no relacionado con el modelo): https://arxiv.org/abs/1910.09700
 - No se han encontrado papers, blogs, repositorios de código, demos ni páginas de documentación asociados específicamente a este modelo. La búsqueda web realizada devolvió únicamente resultados no relacionados (ayuda de la función QUERY de Google Docs/Sheets e hilos del foro WordReference).

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Doktor-Asistan (repositorio `sude-nlp/Doktor-Asistan`) no es un modelo de lenguaje, sino una aplicación de ejemplo publicada en HuggingFace por la usuaria sude-nlp (Sude Dağaşan). Se trata de una API REST escrita en Python con FastAPI, Pydantic y Uvicorn que delega la generación de texto en la API de OpenAI a través de LangChain, por lo que no incluye pesos, tokenizador, configuración de arquitectura ni tarjetas de evaluación. El repositorio contiene únicamente código fuente (tres archivos Python y un README), orientado a construir un "asistente médico" conversacional con memoria por usuario.
+Doktor-Asistan (repositorio `sude-nlp/Doktor-Asistan`) no es un modelo de lenguaje, sino una aplicación de ejemplo publicada en Hugging Face por la usuaria sude-nlp (Sude Dağaşan). Se trata de una API REST escrita en Python con FastAPI, Pydantic y Uvicorn que delega la generación de texto en la API de OpenAI a través de LangChain, por lo que no incluye pesos, tokenizador, configuración de arquitectura ni tarjetas de evaluación. El repositorio contiene únicamente código fuente (tres archivos Python y un README), orientado a construir un "asistente médico" conversacional con memoria por usuario.
 
 El problema que aborda es acotado y de carácter didáctico: demostrar cómo exponer un endpoint `/chat` que acepte mensajes con `user_id`, `message` y `age`, mantenga un historial de conversación separado por usuario mediante las utilidades de memoria de LangChain y gestione la clave de OpenAI a través de un archivo `.env`. El propio autor advierte en la model card que el proyecto tiene fines educativos y que sus respuestas no sustituyen a un diagnóstico o tratamiento médico.
 
-Su relevancia actual es, por tanto, la de una plantilla docente para practicar backend con FastAPI, orquestación de LLM con LangChain, validación de datos con Pydantic y gestión segura de credenciales. No aporta innovación en arquitectura de modelos ni datos de entrenamiento, y no debe evaluarse como una alternativa a modelos fundacionales. Cualquier ficha técnica de "modelo" queda limitada a describir el artefacto de software, ya que los metadatos de HuggingFace no declaran licencia, idiomas, pipeline ni pesos.
+Su relevancia actual es, por tanto, la de una plantilla docente para practicar backend con FastAPI, orquestación de LLM con LangChain, validación de datos con Pydantic y gestión segura de credenciales. No aporta innovación en arquitectura de modelos ni datos de entrenamiento, y no debe evaluarse como una alternativa a modelos fundacionales. Cualquier ficha técnica de "modelo" queda limitada a describir el artefacto de software, ya que los metadatos de Hugging Face no declaran licencia, idiomas, pipeline ni pesos.
 
 ## Especificaciones tecnicas
 
@@ -26,8 +26,8 @@ Su relevancia actual es, por tanto, la de una plantilla docente para practicar b
 | Dependencias principales | FastAPI, Uvicorn, LangChain, openai, Pydantic, python-dotenv |
 | Proveedor de inferencia | OpenAI API (clave gestionada mediante `.env`) |
 | Memoria conversacional | Historial por usuario implementado con las utilidades de memoria de LangChain |
-| Fecha de creacion | 22 de septiembre de 2026 (según metadatos de HuggingFace) |
-| Ultima actualizacion | 23 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de creacion | 22 de septiembre de 2026 (según metadatos de Hugging Face) |
+| Ultima actualizacion | 23 de septiembre de 2026 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 descargas / 1 like (según metadatos) |
 | Tags declarados | `region:us` (no se declaran tags de idioma, licencia ni pipeline) |
 
@@ -83,7 +83,7 @@ El artefacto no es un modelo, por lo que la comparación se plantea por función
 
 | Alternativa | Naturaleza | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Doktor-Asistan (este repositorio) | Aplicación FastAPI + LangChain sobre OpenAI API (turco, ejemplo de salud) | No aplica | No disponible | No declarada | HuggingFace (código, 0 descargas) |
+| Doktor-Asistan (este repositorio) | Aplicación FastAPI + LangChain sobre OpenAI API (turco, ejemplo de salud) | No aplica | No disponible | No declarada | Hugging Face (código, 0 descargas) |
 | Uso directo de la API de OpenAI | Llamada al proveedor sin capa de aplicación | No aplica (propietario) | Según modelo contratado | Términos de servicio de OpenAI | Comercial |
 | Plantillas de agente conversacional de LangChain | Framework de orquestación con memoria | No aplica | Según modelo conectado | Licencia del framework | Repositorio público del proyecto |
 | Modelos médicos abiertos tipo BioMistral o Meditron | Modelo de lenguaje ajustado en dominio biomédico | 7B (variantes) | Del orden de miles de tokens en sus versiones base | Licencias abiertas con condiciones (consultar cada caso) | Pesos descargables |
@@ -102,13 +102,13 @@ La comparación es orientativa: solo un modelo médico abierto o el modelo propi
 - Memoria conversacional en el proceso: no se documenta persistencia en base de datos ni política de retención o borrado del historial por usuario, lo que dificulta cumplir derechos de supresión.
 - Idiomas: no se declaran idiomas soportados; los ejemplos y la documentación están en turco y el prompt de sistema no se detalla, por lo que el comportamiento en castellano no está verificado.
 - Sin benchmarks ni pruebas: no hay evaluación de calidad, latencia, coste por consulta ni comparación con alternativas, y no se documenta ninguna batería de tests más allá del cliente de prueba.
-- Madurez del proyecto: 0 descargas y 1 like en HuggingFace, código de tres archivos y sin versionado de dependencias (el README advierte que la versión de LangChain puede exigir ajustes), lo que apunta a un ejercicio académico más que a un componente mantenido.
+- Madurez del proyecto: 0 descargas y 1 like en Hugging Face, código de tres archivos y sin versionado de dependencias (el README advierte que la versión de LangChain puede exigir ajustes), lo que apunta a un ejercicio académico más que a un componente mantenido.
 - Sin soporte de tool calling, agentes, visión ni audio documentado en el repositorio.
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/sude-nlp/Doktor-Asistan
-- Perfil del autor en HuggingFace: https://huggingface.co/sude-nlp
+- Ficha en Hugging Face: https://huggingface.co/sude-nlp/Doktor-Asistan
+- Perfil del autor en Hugging Face: https://huggingface.co/sude-nlp
 - Ejemplo de API del proyecto en GitHub (NLP-tasks, `doctor_asistant_api.py`): https://github.com/Cadcom/NLP-tasks/blob/main/7-NLP%20Workflow/Doktor%20Asistan%C4%B1/doctor_asistant_api.py
 - Ejemplo de versión de terminal en GitHub (`doctor_asistant_terminal.py`): https://github.com/Cadcom/NLP-tasks/blob/main/7-NLP%20Workflow/Doktor%20Asistan%C4%B1/doctor_asistant_terminal.py
 - Documentación de LangChain (framework empleado): https://python.langchain.com

@@ -6,7 +6,7 @@
 
 El proposito del artefacto es permitir inferencia local de un LLM de 1.500 millones de parametros sobre la NPU de un PC con Ryzen AI, sin depender de GPU dedicada ni de la nube. Esto es relevante para escenarios de privacidad (datos que no salen del equipo), latencia baja en escritorio y consumo energetico reducido frente a ejecutar el modelo en CPU o GPU.
 
-El repositorio ocupa 1,5 GB y esta bajo licencia Apache 2.0, heredada del Qwen2-1.5B original. El acceso es restringido (gated): requiere aceptar condiciones en HuggingFace antes de descargar. No hay informacion publica sobre benchmarks especificos de esta variante NPU en la informacion disponible.
+El repositorio ocupa 1,5 GB y esta bajo licencia Apache 2.0, heredada del Qwen2-1.5B original. El acceso es restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargar. No hay informacion publica sobre benchmarks especificos de esta variante NPU en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -65,27 +65,27 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/Qwen2-1.5B_rai_1.9.0_m_1.0.1_npu | 1.5B | no disponible | ONNX (NPU Ryzen AI) | Apache 2.0 | Gated en HuggingFace |
-| Qwen/Qwen2-1.5B | 1.5B | 32.768 tokens | safetensors | Apache 2.0 | Publico en HuggingFace |
-| Qwen/Qwen2-1.5B-Instruct | 1.5B | 32.768 tokens | safetensors | Apache 2.0 | Publico en HuggingFace |
-| microsoft/Phi-3-mini-4k-instruct | 3.8B | 4.096 tokens | safetensors, GGUF | MIT | Publico en HuggingFace |
+| amd/Qwen2-1.5B_rai_1.9.0_m_1.0.1_npu | 1.5B | no disponible | ONNX (NPU Ryzen AI) | Apache 2.0 | Gated en Hugging Face |
+| Qwen/Qwen2-1.5B | 1.5B | 32.768 tokens | safetensors | Apache 2.0 | Publico en Hugging Face |
+| Qwen/Qwen2-1.5B-Instruct | 1.5B | 32.768 tokens | safetensors | Apache 2.0 | Publico en Hugging Face |
+| microsoft/Phi-3-mini-4k-instruct | 3.8B | 4.096 tokens | safetensors, GGUF | MIT | Publico en Hugging Face |
 
 La diferencia clave frente a Qwen2-1.5B original es el formato y el backend: la variante de AMD solo es utilizable en hardware Ryzen AI con el runtime RAI, mientras que el original se ejecuta en GPU o CPU con transformers, vLLM o llama.cpp. Phi-3-mini ofrece mas parametros y contexto mas corto, con licencia MIT.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace; la descarga automatizada fallara sin autenticacion previa.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face; la descarga automatizada fallara sin autenticacion previa.
 - Dependencia de hardware: solo funciona en procesadores Ryzen AI compatibles con RAI 1.9.0; no es portable a GPU NVIDIA, Apple Silicon ni CPU generica mediante este artefacto.
 - Idioma: los metadatos solo declaran ingles; el rendimiento en castellano no esta garantizado ni documentado.
 - Tamano pequeno: con 1.5B parametros, la tasa de alucinacion en tareas de conocimiento factual es alta y el razonamiento complejo es limitado.
 - Sin benchmarks publicados para esta variante: no hay evidencia publica de calidad tras la conversion a ONNX y la cuantizacion para NPU.
 - Licencia Apache 2.0 permite uso comercial, pero conviene verificar los terminos adicionales del acceso gated y de la licencia del modelo base Qwen2.
 - No se documenta soporte de tool calling ni de agentes; no deberia asumirse en produccion.
-- Fecha de publicacion en HuggingFace: 2026-10-30, segun los metadatos del repositorio.
+- Fecha de publicacion en Hugging Face: 2026-10-30, segun los metadatos del repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Qwen2-1.5B_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/Qwen2-1.5B_rai_1.9.0_m_1.0.1_npu
 - Modelo base Qwen2-1.5B: https://huggingface.co/Qwen/Qwen2-1.5B
 - Modelo base Qwen2-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2-1.5B-Instruct
 - Repositorio Qwen2 en GitHub: https://github.com/QwenLM/Qwen2

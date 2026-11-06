@@ -6,7 +6,7 @@ Kimi K3.1 Pro es un modelo de lenguaje multimodal nativo y de caracter agentico,
 
 Arquitectonicamente es un transformer de tipo Mixture-of-Experts (MoE) con 2,8 billones de parametros totales y 104.000 millones de parametros activos por token. Incorpora una composicion de capas de atencion hibrida formada por 69 capas KDA (Kimi Delta Attention) y 24 capas Gated DSA (Deep Seam Attention), con 93 capas en total y una sola capa densa. La ventana de contexto alcanza 1.000.000 de tokens, lo que lo situa en la categoria de modelos de contexto ultralargo.
 
-Su relevancia actual radica en la combinacion de tres factores poco frecuentes: pesos abiertos en un modelo de escala 3T, multimodalidad nativa (pipeline image-text-to-text) y una ventana de contexto de un millon de tokens. El repositorio de HuggingFace ocupa 1.561,4 GB y los pesos se distribuyen en formato safetensors con cuantizacion de 8 bits mediante la libreria compressed-tensors, lo que condiciona fuertemente los requisitos de hardware para su despliegue.
+Su relevancia actual radica en la combinacion de tres factores poco frecuentes: pesos abiertos en un modelo de escala 3T, multimodalidad nativa (pipeline image-text-to-text) y una ventana de contexto de un millon de tokens. El repositorio de Hugging Face ocupa 1.561,4 GB y los pesos se distribuyen en formato safetensors con cuantizacion de 8 bits mediante la libreria compressed-tensors, lo que condiciona fuertemente los requisitos de hardware para su despliegue.
 
 ## Especificaciones tecnicas
 
@@ -95,13 +95,13 @@ La informacion proporcionada solo documenta Kimi K3.1 Pro y su predecesor Kimi K
 - Limitaciones de contexto o idioma: aunque el contexto es de 1M de tokens, el rendimiento efectivo en ventanas muy largas no esta documentado. Los idiomas soportados no se especifican.
 - Restricciones de licencia: la licencia es propia (license: other, license_name "kimi-k3.1-pro"), no una licencia open source estandar. Es imprescindible revisar los terminos del fichero LICENSE del repositorio antes de cualquier uso comercial.
 - Requisitos de despliegue extremos: 1.561,4 GB de repositorio y pesos en 8 bits implican infraestructura de centro de datos; no es viable en entornos de un solo nodo convencional.
-- Madurez del repositorio: el modelo se publico el 2026-11-04 con 0 descargas y 0 likes en el momento de la consulta, y el autor del repositorio en HuggingFace (AleaiactaEst1) difiere de la organizacion oficial de Moonshot AI, lo que conviene verificar antes de confiar en los pesos.
+- Madurez del repositorio: el modelo se publico el 2026-11-04 con 0 descargas y 0 likes en el momento de la consulta, y el autor del repositorio en Hugging Face (AleaiactaEst1) difiere de la organizacion oficial de Moonshot AI, lo que conviene verificar antes de confiar en los pesos.
 - Ausencia de benchmarks publicos en la informacion disponible: no es posible validar de forma independiente las mejoras declaradas por el autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AleaiactaEst1/Kimi-K3.1-Pro
-- Organizacion oficial en HuggingFace: https://huggingface.co/moonshotai
+- Modelo en Hugging Face: https://huggingface.co/AleaiactaEst1/Kimi-K3.1-Pro
+- Organizacion oficial en Hugging Face: https://huggingface.co/moonshotai
 - Blog tecnico: https://www.kimi.ai/blog/kimi-k3-1-pro
 - Quickstart de API: https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart
 - Chat: https://www.kimi.ai

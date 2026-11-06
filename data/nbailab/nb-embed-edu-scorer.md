@@ -6,7 +6,7 @@ Borealis EDU scorer (`NbAiLab/nb-embed-edu-scorer`) es un clasificador ordinal d
 
 El problema que resuelve es el filtrado y la priorizacion de corpus web a gran escala en idiomas nordicos, una tarea para la que hasta ahora dominaban clasificadores entrenados casi exclusivamente en ingles (la familia de clasificadores tipo FineWeb-Edu). El modelo cubre ocho configuraciones linguisticas: danes, feroes, finlandes, islandes, noruego bokmal, noruego nynorsk, sami y sueco, lo que lo hace relevante para la construccion de datasets de preentrenamiento y para la curacion de colecciones digitales en lenguas de bajos recursos.
 
-Tecnicamente es un encoder transformer de aproximadamente 212 millones de parametros (segun el nombre del modelo base) con un cabezal de clasificacion ordinal de cinco umbrales acumulativos. Los documentos se truncan a un maximo de 4096 tokens del tokenizador Borealis. El repositorio pesa 0,4 GB e incluye el encoder en `encoder/` y el cabezal en `ordinal_head.pt`, junto con un script de inferencia JSONL autonomo. La licencia no esta declarada en la ficha de HuggingFace y remite a los terminos del modelo base.
+Tecnicamente es un encoder transformer de aproximadamente 212 millones de parametros (segun el nombre del modelo base) con un cabezal de clasificacion ordinal de cinco umbrales acumulativos. Los documentos se truncan a un maximo de 4096 tokens del tokenizador Borealis. El repositorio pesa 0,4 GB e incluye el encoder en `encoder/` y el cabezal en `ordinal_head.pt`, junto con un script de inferencia JSONL autonomo. La licencia no esta declarada en la ficha de Hugging Face y remite a los terminos del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Tecnicamente es un encoder transformer de aproximadamente 212 millones de parame
 | Tarea | text-classification / document-scoring (regresion ordinal, salida continua 0-5) |
 | Tamano del repositorio | 0,4 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion (segun HuggingFace) | 2026-09-16 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-16 |
 
 ## Arquitectura y entrenamiento
 
@@ -92,9 +92,9 @@ No se dispone de especificaciones verificadas de alternativas directas en la inf
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NbAiLab/nb-embed-edu-scorer | Aprox. 212 M mas cabezal | 4096 tokens (truncamiento) | da, fo, fi, is, nb, nn, se, sv | No disponible; hereda los terminos de Borealis Embed | HuggingFace |
-| NbAiLab/borealis-embed-212m (modelo base) | 212 M segun el nombre | No disponible | Lenguas nordicas | No disponible en la informacion proporcionada | HuggingFace |
-| Clasificadores de calidad educativa tipo FineWeb-Edu (p. ej. FineWeb-Edu classifier) | No disponible | No disponible | Principalmente ingles | No disponible | HuggingFace |
+| NbAiLab/nb-embed-edu-scorer | Aprox. 212 M mas cabezal | 4096 tokens (truncamiento) | da, fo, fi, is, nb, nn, se, sv | No disponible; hereda los terminos de Borealis Embed | Hugging Face |
+| NbAiLab/borealis-embed-212m (modelo base) | 212 M segun el nombre | No disponible | Lenguas nordicas | No disponible en la informacion proporcionada | Hugging Face |
+| Clasificadores de calidad educativa tipo FineWeb-Edu (p. ej. FineWeb-Edu classifier) | No disponible | No disponible | Principalmente ingles | No disponible | Hugging Face |
 
 La diferencia funcional relevante frente a la categoria de clasificadores de calidad educativa en ingles es la cobertura de ocho lenguas nordicas, incluida la variante nynorsk del noruego y lenguas minoritarias como el sami y el feroes, no cubiertas por los modelos mayoritarios de esta familia.
 
@@ -113,7 +113,7 @@ La diferencia funcional relevante frente a la categoria de clasificadores de cal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NbAiLab/nb-embed-edu-scorer
+- Modelo en Hugging Face: https://huggingface.co/NbAiLab/nb-embed-edu-scorer
 - Modelo base (encoder): https://huggingface.co/NbAiLab/borealis-embed-212m
 - Dataset de entrenamiento: https://huggingface.co/datasets/NbAiLab/nb-fineweb2-edu-sample-v2-rated
 - Revision del dataset usada en el entrenamiento: `af20ece2464419b70249ae4d0e934a9924473f81`

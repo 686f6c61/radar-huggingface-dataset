@@ -75,10 +75,10 @@ No se dispone de información sobre otros adaptadores text-to-SQL comparables fu
 
 | Modelo | Parametros | Contexto | Exactitud de ejecucion (Spider, n=200) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (variante a, r=16/alpha=32) | 3.000 M (base) + adaptador | no disponible | 72,5 % | no disponible | HuggingFace |
+| Este repositorio (variante a, r=16/alpha=32) | 3.000 M (base) + adaptador | no disponible | 72,5 % | no disponible | Hugging Face |
 | Variante (b) (r=32/alpha=64) | 3.000 M (base) + adaptador | no disponible | 73,0 % | no disponible | no disponible (mencionada en la model card, no se enlaza) |
 | Variante (c) | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Modelo base Qwen2.5-Coder-3B-Instruct-bnb-4bit | 3.000 M | no disponible en esta ficha | no disponible | no disponible en esta ficha | HuggingFace |
+| Modelo base Qwen2.5-Coder-3B-Instruct-bnb-4bit | 3.000 M | no disponible en esta ficha | no disponible | no disponible en esta ficha | Hugging Face |
 
 ## Limitaciones y advertencias
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio kaier79/wheel4vipe es un modelo publicado en HuggingFace por el usuario kaier79 bajo licencia Apache 2.0. En el momento de la consulta no contiene ninguna model card util: el README se reduce a un bloque de metadatos con la linea `license: apache-2.0` y ningun texto descriptivo. El tamano declarado del repositorio es de 0.0 GB, lo que indica que no hay pesos publicados ni ficheros de configuracion, tokenizador o codigo asociados.
+El repositorio kaier79/wheel4vipe es un modelo publicado en Hugging Face por el usuario kaier79 bajo licencia Apache 2.0. En el momento de la consulta no contiene ninguna model card util: el README se reduce a un bloque de metadatos con la linea `license: apache-2.0` y ningun texto descriptivo. El tamano declarado del repositorio es de 0.0 GB, lo que indica que no hay pesos publicados ni ficheros de configuracion, tokenizador o codigo asociados.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los datos de entrenamiento ni los idiomas soportados. Tampoco hay pipeline declarado, etiquetas de tarea ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes, y sus fechas de creacion y actualizacion son del 18 de septiembre de 2026, apenas dos minutos separadas entre si.
 
@@ -86,5 +86,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kaier79/wheel4vipe
+- Repositorio en Hugging Face: https://huggingface.co/kaier79/wheel4vipe
 - No se han encontrado enlaces relevantes al modelo en la busqueda web realizada. Los resultados devueltos corresponden a paginas turisticas sobre la localidad alemana de Busum y no guardan ninguna relacion con el repositorio.

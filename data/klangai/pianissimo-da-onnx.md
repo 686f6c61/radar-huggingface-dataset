@@ -97,7 +97,7 @@ La comparación con modelos multilingües como Whisper no puede cuantificarse co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KlangAI/pianissimo-da-onnx
+- Modelo en Hugging Face: https://huggingface.co/KlangAI/pianissimo-da-onnx
 - Modelo base: https://huggingface.co/KlangAI/pianissimo-da
 - Versión MLX: https://huggingface.co/KlangAI/pianissimo-da-mlx-8bit
 - Librería onnx-asr: https://github.com/istupakov/onnx-asr

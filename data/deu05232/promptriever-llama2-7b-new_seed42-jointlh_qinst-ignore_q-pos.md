@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: el modelo base Llama-2-7b en fp16 ocupa aproximadamente 14 GB, por lo que se necesitan al menos 16 GB de VRAM para cargarlo con el adaptador. Con cuantización a 8 bits (desconocida para este adaptador) podría reducirse a unos 8 GB.
 - GPU recomendadas: NVIDIA RTX 4090 (24 GB), A100 (40/80 GB), H100 (80 GB) o GPUs de datacenter similares. En consumer, una RTX 3090 o 4090 es suficiente.
 - Si cabe en consumer GPU: sí, en GPUs con 16 GB o más, aunque con limitaciones de velocidad si se usa cuantización.
-- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con la librería `peft` de HuggingFace junto con el modelo base. También es compatible con frameworks como vLLM o TGI si se fusionan los pesos, aunque no hay confirmación de soporte oficial.
+- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con la librería `peft` de Hugging Face junto con el modelo base. También es compatible con frameworks como vLLM o TGI si se fusionan los pesos, aunque no hay confirmación de soporte oficial.
 - Latencia y throughput: no disponible. Para Llama-2-7b en una A100, la generación suele rondar los 20-30 tokens/s, pero en tareas de retrieval (solo forward pass de embeddings) la latencia es menor.
 
 ## Comparativa con modelos similares
@@ -75,8 +75,8 @@ La comparativa es limitada porque no se dispone de resultados de evaluación par
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/deu05232/promptriever-llama2-7B-new_seed42-JointLH_qinst-ignore_q-pos)
-- [HuggingFace - variante cross_batch](https://huggingface.co/deu05232/promptriever-llama2-7B-new_seed42-JointLH-cross_batch)
-- [HuggingFace - variante repro](https://huggingface.co/deu05232/promptriever-repro-llama2-7b)
+- [Hugging Face - modelo](https://huggingface.co/deu05232/promptriever-llama2-7B-new_seed42-JointLH_qinst-ignore_q-pos)
+- [Hugging Face - variante cross_batch](https://huggingface.co/deu05232/promptriever-llama2-7B-new_seed42-JointLH-cross_batch)
+- [Hugging Face - variante repro](https://huggingface.co/deu05232/promptriever-repro-llama2-7b)
 - [GitHub - repositorio Promptriever](https://github.com/deu05232/promptriever)
 - [FriendliAI - página del modelo](https://friendli.ai/models/deu05232/promptriever-llama2-7B-new_seed42-JointLH-cross_batch)

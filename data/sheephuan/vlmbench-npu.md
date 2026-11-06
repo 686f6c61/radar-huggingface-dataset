@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`SheepHuan/vlmbench-npu` es un repositorio alojado en HuggingFace bajo la autoría de SheepHuan, publicado con licencia Apache 2.0. La model card asociada está practicamente vacía: unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El nombre del repositorio sugiere que se trata de un artefacto relacionado con la evaluacion de modelos de vision-lenguaje (VLM) sobre unidades de procesamiento neuronal (NPU), pero esta interpretacion no puede confirmarse con la informacion disponible.
+`SheepHuan/vlmbench-npu` es un repositorio alojado en Hugging Face bajo la autoría de SheepHuan, publicado con licencia Apache 2.0. La model card asociada está practicamente vacía: unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El nombre del repositorio sugiere que se trata de un artefacto relacionado con la evaluacion de modelos de vision-lenguaje (VLM) sobre unidades de procesamiento neuronal (NPU), pero esta interpretacion no puede confirmarse con la informacion disponible.
 
 El repositorio no declara pipeline de inferencia, no especifica idiomas soportados, no incluye pesos en formatos reconocibles y no cuenta con descargas ni interacciones registradas en el momento de la consulta. Fue creado y actualizado en la misma fecha (27 de octubre de 2026), lo que apunta a una publicacion unica sin mantenimiento posterior.
 
@@ -42,7 +42,7 @@ Tampoco existe informacion sobre el corpus de entrenamiento, el volumen de token
 - Inspeccion de artefactos de investigacion: util para desarrolladores que quieran examinar el contenido del repositorio directamente y determinar su naturaleza real (pesos, scripts, configuraciones o resultados de evaluacion).
 - Reproduccion de experimentos: si el repositorio contiene configuraciones o resultados, podria servir como referencia para replicar mediciones en hardware NPU, previa verificacion manual del contenido.
 - Integracion condicionada a inspeccion previa: cualquier uso en produccion requiere descargar el repositorio, revisar los ficheros y validar que contiene un modelo funcional y no solo metadatos o resultados.
-- Referencia de licencia: el repositorio puede consultarse como ejemplo de publicacion bajo Apache 2.0 en HuggingFace para artefactos de evaluacion.
+- Referencia de licencia: el repositorio puede consultarse como ejemplo de publicacion bajo Apache 2.0 en Hugging Face para artefactos de evaluacion.
 - Documentacion de benchmarking en NPU: si el contenido lo confirma, podria emplearse como base para comparar el rendimiento de distintos VLM sobre el mismo acelerador.
 
 ## Benchmarks y rendimiento
@@ -74,4 +74,4 @@ No disponible. No se dispone de informacion suficiente sobre el modelo como para
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SheepHuan/vlmbench-npu
+- Hugging Face: https://huggingface.co/SheepHuan/vlmbench-npu

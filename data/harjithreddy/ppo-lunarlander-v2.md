@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Harjithreddy/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2, implementado con la libreria stable-baselines3 y publicado en HuggingFace Hub. No es un modelo de lenguaje: se trata de una politica neuronal que recibe una observacion de 8 dimensiones del entorno y emite una de 4 acciones discretas (no hacer nada, encender motor principal, encender motor lateral izquierdo, encender motor lateral derecho) para aterrizar de forma controlada una nave entre dos banderas.
+Harjithreddy/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2, implementado con la libreria stable-baselines3 y publicado en Hugging Face Hub. No es un modelo de lenguaje: se trata de una politica neuronal que recibe una observacion de 8 dimensiones del entorno y emite una de 4 acciones discretas (no hacer nada, encender motor principal, encender motor lateral izquierdo, encender motor lateral derecho) para aterrizar de forma controlada una nave entre dos banderas.
 
 El modelo declara una recompensa media de 261,26 ± 20,02 en el entorno LunarLander-v2, una cifra por encima del umbral de 200 que Gymnasium/Farama considera convencionalmente "entorno resuelto". El resultado esta marcado como no verificado en el model-index, por lo que procede de la propia declaracion del autor y no de una evaluacion independiente.
 
@@ -50,7 +50,7 @@ Tampoco se especifican los hiperparametros de entrenamiento (tasa de aprendizaje
 - Docencia de aprendizaje por refuerzo: el agente ilustra el comportamiento cualitativo de PPO (uso del motor principal para frenar, uso de motores laterales para corregir angulo) y permite visualizar la politica con `render_mode="human"`.
 - Experimentos de robustez y varianza: la desviacion de ± 20,02 en la recompensa media se puede analizar reejecutando episodios con distintas semillas para estudiar la estabilidad de la politica.
 - Inicializacion para transferencia a otros entornos de control discreto con espacio de acciones de tamano similar: la red preentrenada puede servir como punto de partida para reentrenar en tareas de control con 4 acciones, aunque el model card no documenta ninguna prueba de transferencia.
-- Pruebas de integracion del Hub: util para validar el flujo de subida y descarga de artefactos de stable-baselines3 con HuggingFace Hub (`huggingface_sb3`), dado que el repositorio es pequeno y la carga es rapida.
+- Pruebas de integracion del Hub: util para validar el flujo de subida y descarga de artefactos de stable-baselines3 con Hugging Face Hub (`huggingface_sb3`), dado que el repositorio es pequeno y la carga es rapida.
 - Demostraciones interactivas y material de portafolio: al ejecutarse en CPU y en milisegundos por episodio, es viable incrustarlo en cuadernos o scripts de demostracion sin infraestructura GPU.
 
 ## Benchmarks y rendimiento
@@ -76,10 +76,10 @@ Contexto de interpretacion: la cifra supera el umbral de 200 que Gymnasium/Faram
 
 | Modelo | Algoritmo | Entorno | Parametros | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Harjithreddy/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible | 261,26 ± 20,02 (no verificado) | no disponible | HuggingFace Hub |
-| sb3/ppo-LunarLander-v2 (linea base canonica de la organizacion stable-baselines3) | PPO | LunarLander-v2 | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace Hub |
-| Agentes DQN sobre LunarLander-v2 | DQN | LunarLander-v2 | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace Hub / repositorios de terceros |
-| Agentes A2C sobre LunarLander-v2 | A2C | LunarLander-v2 | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace Hub / repositorios de terceros |
+| Harjithreddy/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible | 261,26 ± 20,02 (no verificado) | no disponible | Hugging Face Hub |
+| sb3/ppo-LunarLander-v2 (linea base canonica de la organizacion stable-baselines3) | PPO | LunarLander-v2 | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face Hub |
+| Agentes DQN sobre LunarLander-v2 | DQN | LunarLander-v2 | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face Hub / repositorios de terceros |
+| Agentes A2C sobre LunarLander-v2 | A2C | LunarLander-v2 | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face Hub / repositorios de terceros |
 
 No se dispone de cifras comparables verificadas para ninguno de los modelos alternativos en la informacion proporcionada, por lo que la comparacion numerica queda como no disponible. El unico punto de referencia objetivo es el umbral de recompensa media de 200 asociado a LunarLander-v2.
 
@@ -100,7 +100,7 @@ No se dispone de cifras comparables verificadas para ninguno de los modelos alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Harjithreddy/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/Harjithreddy/ppo-LunarLander-v2
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Helper huggingface_sb3 (referenciado en la model card): https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v2 (Farama Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/

@@ -97,7 +97,7 @@ No se dispone de datos de parametros, contexto ni rendimiento comparativo para e
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/TrevorJS/BSRoformer-Wind-CoreML
+- Hugging Face (este repositorio): https://huggingface.co/TrevorJS/BSRoformer-Wind-CoreML
 - Repositorio espejo original: https://huggingface.co/benkaron/BSRoformer-Wind-CoreML
 - Modelo base (repack de un solo stem): https://huggingface.co/noblebarkrr/BS-Roformer-MVSep-Mega-53-stems
 - Release upstream v1.0.21 de MVSep Mega 53-stem BS-RoFormer: https://github.com/ZFTurbo/Music-Source-Separation-Training/releases/tag/v1.0.21

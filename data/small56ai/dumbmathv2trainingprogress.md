@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`DumbMathV2TrainingProgress` es un checkpoint intermedio publicado por el usuario `small56ai` en HuggingFace. No es un modelo terminado: la model card lo describe explícitamente como un registro de progreso de entrenamiento, con un objetivo declarado de 320.000 pasos de pre-entrenamiento y 64.000 de post-entrenamiento, y un estado registrado de 16.000 pasos de pre-entrenamiento a fecha 18 de octubre de 2026. El repositorio no incluye pipeline declarado, idiomas soportados ni documentación de uso.
+`DumbMathV2TrainingProgress` es un checkpoint intermedio publicado por el usuario `small56ai` en Hugging Face. No es un modelo terminado: la model card lo describe explícitamente como un registro de progreso de entrenamiento, con un objetivo declarado de 320.000 pasos de pre-entrenamiento y 64.000 de post-entrenamiento, y un estado registrado de 16.000 pasos de pre-entrenamiento a fecha 18 de octubre de 2026. El repositorio no incluye pipeline declarado, idiomas soportados ni documentación de uso.
 
 Los metadatos de safetensors indican 7.385.664 parámetros totales (aproximadamente 7,4 millones) y la etiqueta `llama`, lo que sitúa al modelo en la arquitectura transformer decoder-only propia de la familia Llama, en un rango de tamaño muy reducido (dos órdenes de magnitud por debajo de un 1B). La licencia es Apache 2.0 y el repositorio tiene un tamaño declarado de 0,0 GB, coherente con un peso en el entorno de unas decenas de megabytes en FP32.
 
@@ -88,6 +88,6 @@ La diferencia relevante no es solo de escala (entre 18 y 150 veces menos paráme
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/small56ai/DumbMathV2TrainingProgress
-- Perfil del autor en HuggingFace: https://huggingface.co/small56ai
+- Repositorio en Hugging Face: https://huggingface.co/small56ai/DumbMathV2TrainingProgress
+- Perfil del autor en Hugging Face: https://huggingface.co/small56ai
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

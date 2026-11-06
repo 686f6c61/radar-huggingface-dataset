@@ -2,7 +2,7 @@
 
 ## Resumen
 
-COIL-D/translate-it2-hindi-assamese es un modelo de traducción automática neuronal especializado en el par de idiomas hindi (hi) y asamés (as), publicado por el usuario COIL-D en HuggingFace. Se trata de un ajuste fino (*fine-tuning*) del modelo ai4bharat/indictrans2-indic-indic-dist-320M, es decir, la variante destilada de 320 millones de parámetros de la familia IndicTrans2 desarrollada por AI4Bharat para traducción entre lenguas índicas. El modelo cuenta con 320.861.184 parámetros reales (verificados en los pesos de tipo safetensors) y se distribuye bajo licencia MIT, con acceso restringido que obliga a aceptar condiciones en HuggingFace antes de la descarga.
+COIL-D/translate-it2-hindi-assamese es un modelo de traducción automática neuronal especializado en el par de idiomas hindi (hi) y asamés (as), publicado por el usuario COIL-D en Hugging Face. Se trata de un ajuste fino (*fine-tuning*) del modelo ai4bharat/indictrans2-indic-indic-dist-320M, es decir, la variante destilada de 320 millones de parámetros de la familia IndicTrans2 desarrollada por AI4Bharat para traducción entre lenguas índicas. El modelo cuenta con 320.861.184 parámetros reales (verificados en los pesos de tipo safetensors) y se distribuye bajo licencia MIT, con acceso restringido que obliga a aceptar condiciones en Hugging Face antes de la descarga.
 
 El problema que resuelve es concreto: la traducción directa hindi-asamés sin pasar por el inglés como lengua pivote. El asamés es una lengua de bajos recursos con aproximadamente 15 millones de hablantes, concentrados principalmente en el estado indio de Assam, y la mayoría de los sistemas de traducción comerciales cubren este par con calidad limitada o mediante traducción en cascada. Un modelo dedicado de 320M parámetros reduce el coste computacional frente a alternativas multilingües de mayor tamaño y permite despliegue en hardware modesto.
 
@@ -23,7 +23,7 @@ La relevancia del modelo en el momento de su publicación es limitada pero espec
 | Tamano del repositorio | 1,3 GB (compatible con pesos en fp32) |
 | Modelo base | ai4bharat/indictrans2-indic-indic-dist-320M |
 | Pipeline declarado | translation (text2text-generation) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / valoraciones | 0 / 0 en el momento de la consulta |
 | Fecha de creacion | 2026-09-29 |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo está en modo *gated* y exige aceptar condiciones en HuggingFace antes de poder descargarlo, lo que añade fricción a pipelines automatizados y a la reproducibilidad.
+- Acceso restringido: el modelo está en modo *gated* y exige aceptar condiciones en Hugging Face antes de poder descargarlo, lo que añade fricción a pipelines automatizados y a la reproducibilidad.
 - Ausencia total de validación comunitaria: cero descargas y cero valoraciones en el momento de la consulta. No hay evidencia externa de calidad ni de que el ajuste fino funcione correctamente.
 - Falta de información sobre el entrenamiento: no se documentan datos, hiperparámetros, criterios de evaluación ni métricas, lo que impide auditar el modelo o estimar su comportamiento en dominios específicos.
 - Riesgo de alucinación y de omisión de contenido: como todo modelo de traducción neuronal, puede generar salidas fluidas pero incorrectas, omitir fragmentos del texto de origen o inventar terminología técnica, especialmente en asamés, lengua de bajos recursos con menos datos disponibles.
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/COIL-D/translate-it2-hindi-assamese
+- Modelo en Hugging Face: https://huggingface.co/COIL-D/translate-it2-hindi-assamese
 - Modelo base: https://huggingface.co/ai4bharat/indictrans2-indic-indic-dist-320M
 - Referencia a articulo declarada en las etiquetas del repositorio: https://arxiv.org/abs/2609.28826 (contenido no verificado; no se ha podido confirmar que describa este modelo)
 - Repositorio IndicTrans2 de AI4Bharat: https://github.com/AI4Bharat/IndicTrans2

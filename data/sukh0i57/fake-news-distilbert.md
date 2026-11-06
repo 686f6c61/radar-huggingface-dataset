@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sukh0i57/fake-news-distilbert es un modelo de clasificación de secuencias publicado en HuggingFace por el usuario sukh0i57. Se trata de un ajuste fino (fine-tuning) de DistilBERT, la versión destilada de BERT, orientado previsiblemente a la detección binaria de noticias falsas ("fake news"), a juzgar por su nombre y por la etiqueta `distilbert` del repositorio. El modelo cuenta con 66.955.010 parámetros reales en formato safetensors y ocupa 0,3 GB en el repositorio.
+sukh0i57/fake-news-distilbert es un modelo de clasificación de secuencias publicado en Hugging Face por el usuario sukh0i57. Se trata de un ajuste fino (fine-tuning) de DistilBERT, la versión destilada de BERT, orientado previsiblemente a la detección binaria de noticias falsas ("fake news"), a juzgar por su nombre y por la etiqueta `distilbert` del repositorio. El modelo cuenta con 66.955.010 parámetros reales en formato safetensors y ocupa 0,3 GB en el repositorio.
 
 DistilBERT es una arquitectura transformer encoder de 6 capas que reduce el tamaño de BERT-base en aproximadamente un 40 % manteniendo alrededor del 97 % de su rendimiento en tareas de comprensión del lenguaje, gracias a una destilación por conocimiento. Esto convierte a estos modelos en candidatos habituales para tareas de clasificación de texto con requisitos de latencia y cómputo moderados, como la verificación de artículos periodísticos o la moderación de contenidos.
 
@@ -59,17 +59,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en INT8: unos 67 MB para los pesos.
 - GPU recomendadas: cualquier GPU moderna es sobradamente suficiente; RTX 4090, RTX 3090, A100, H100 o incluso GPUs de gama de entrada como GTX 1650 o T4.
 - Cabe en cualquier GPU de consumo actual e incluso en CPU; no requiere acelerador dedicado.
-- Opciones de despliegue: HuggingFace Transformers (PyTorch), ONNX Runtime, TorchScript, y posiblemente conversión a formatos ligeros tipo CTranslate2. No se confirma soporte de llama.cpp ni Ollama, ya que no es un modelo generativo.
+- Opciones de despliegue: Hugging Face Transformers (PyTorch), ONNX Runtime, TorchScript, y posiblemente conversión a formatos ligeros tipo CTranslate2. No se confirma soporte de llama.cpp ni Ollama, ya que no es un modelo generativo.
 - Latencia y throughput: no disponible. Dado el tamaño, se espera una latencia de pocos milisegundos por lote en GPU y de decenas de milisegundos en CPU, pero no hay cifras confirmadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sukh0i57/fake-news-distilbert | 66.955.010 | 512 tokens (DistilBERT) | Clasificacion binaria (presunta) | no disponible | HuggingFace |
-| RamaAI/fake-news-distilbert | no disponible | 512 tokens (DistilBERT) | Deteccion de noticias falsas | no disponible | HuggingFace |
-| sumukhi/fake-news-distilbert | no disponible | 512 tokens (DistilBERT) | Deteccion de noticias falsas | no disponible | HuggingFace |
-| BERT-base (referencia) | 110.000.000 aprox. | 512 tokens | Clasificacion general | Apache 2.0 (base) | HuggingFace |
+| sukh0i57/fake-news-distilbert | 66.955.010 | 512 tokens (DistilBERT) | Clasificacion binaria (presunta) | no disponible | Hugging Face |
+| RamaAI/fake-news-distilbert | no disponible | 512 tokens (DistilBERT) | Deteccion de noticias falsas | no disponible | Hugging Face |
+| sumukhi/fake-news-distilbert | no disponible | 512 tokens (DistilBERT) | Deteccion de noticias falsas | no disponible | Hugging Face |
+| BERT-base (referencia) | 110.000.000 aprox. | 512 tokens | Clasificacion general | Apache 2.0 (base) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes, por lo que la comparación se limita a parámetros, contexto y disponibilidad.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes, por lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sukh0i57/fake-news-distilbert
+- Modelo en Hugging Face: https://huggingface.co/sukh0i57/fake-news-distilbert
 - Modelo comparable (RamaAI): https://huggingface.co/RamaAI/fake-news-distilbert
 - Modelo comparable (sumukhi): https://huggingface.co/sumukhi/fake-news-distilbert
 - Proyecto de detección de noticias falsas con DistilBERT (Emanmsl): https://github.com/Emanmsl/Fake_news_Detection

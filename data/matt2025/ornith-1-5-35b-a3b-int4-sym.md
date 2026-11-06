@@ -49,7 +49,7 @@ No se dispone de información suficiente para establecer una comparativa con mod
 - No se dispone de información sobre sesgos, riesgos de alucinación o limitaciones de contexto e idioma.
 - Al ser una cuantización INT4, puede existir una pérdida de precisión en comparación con el modelo original en FP16 o BF16.
 - La licencia Apache 2.0 permite el uso comercial, pero se recomienda revisar los términos completos.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es una publicación reciente o sin validación comunitaria.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es una publicación reciente o sin validación comunitaria.
 
 ## Enlaces
 

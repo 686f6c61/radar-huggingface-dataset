@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Playback Recordings voices es un repositorio de paquetes de voces para síntesis de voz (text-to-speech) publicado por el usuario lordnyson en HuggingFace. No contiene ningún modelo entrenado desde cero: son dos packs de modelos abiertos ya existentes (Kokoro-82M y Pocket TTS) convertidos o parcheados para que el runtime sherpa-onnx los renderice igual que sus runtimes de referencia. El repositorio actúa como espejo de descarga para la aplicación Android Playback Recordings, una app de narración offline que descarga estos paquetes en el primer uso y ejecuta la inferencia en el propio dispositivo.
+Playback Recordings voices es un repositorio de paquetes de voces para síntesis de voz (text-to-speech) publicado por el usuario lordnyson en Hugging Face. No contiene ningún modelo entrenado desde cero: son dos packs de modelos abiertos ya existentes (Kokoro-82M y Pocket TTS) convertidos o parcheados para que el runtime sherpa-onnx los renderice igual que sus runtimes de referencia. El repositorio actúa como espejo de descarga para la aplicación Android Playback Recordings, una app de narración offline que descarga estos paquetes en el primer uso y ejecuta la inferencia en el propio dispositivo.
 
 El paquete principal, `kokoro-v1.0.tar` (~360 MB), empaqueta el export ONNX en fp32 de Kokoro-82M v1.0 (hexgrad), con la particularidad de que se le han copiado los metadatos de modelo de sherpa-onnx encima para conservar el espectro del export original: según el autor, el export propio de Kokoro de sherpa-onnx reconstruye el vocoder y suena más apagado, con unos 9 dB menos de energía en la banda de 4-8 kHz. El segundo paquete, `pocket-2026-09.tar` (~160 MB), contiene Pocket TTS de Kyutai (`english_2026-09`, 6 capas) exportado a ONNX, con las partes del modelo de lenguaje y el decodificador cuantizadas a INT8.
 
@@ -95,7 +95,7 @@ No se dispone de datos comparativos de rendimiento (WER, MOS, latencia) entre es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lordnyson/playback-recordings-voices
+- Repositorio en Hugging Face: https://huggingface.co/lordnyson/playback-recordings-voices
 - Aplicación Playback Recordings: https://github.com/gregoryraymond/Playback-recordings
 - sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx
 - Kokoro-82M v1.0 (hexgrad): https://huggingface.co/hexgrad/Kokoro-82M

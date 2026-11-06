@@ -76,7 +76,7 @@ Datos adicionales del checkpoint conjunto: precisión en elección estricta 0,71
 
 | Modelo | Parametros activos | Contexto | Precisión en casos duros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SnapJudge 2.0 | 421 M | 1024 tokens | 0,719 (global conjunto); ≈0,877 enrutado | apache-2.0 | HuggingFace |
+| SnapJudge 2.0 | 421 M | 1024 tokens | 0,719 (global conjunto); ≈0,877 enrutado | apache-2.0 | Hugging Face |
 | Jev | no disponible | no disponible | 0,74 (JevBench, dato citado por el autor) | no disponible | API de decisión cerrada, sirve hasta 255 opciones |
 
 No se han identificado en la información disponible otros modelos comparables de decisión no autorregresiva para juegos. Los datos de Jev proceden de la propia model card de SnapJudge 2.0 y no se han verificado de forma independiente.
@@ -91,11 +91,11 @@ No se han identificado en la información disponible otros modelos comparables d
 - No hay datos públicos de sesgos, robustez ante entradas adversarias ni comportamiento fuera de distribución.
 - El modelo se apoya en solucionadores sintéticos (minimax, BFS, etc.) para generar etiquetas, por lo que hereda los supuestos de esos solvers (por ejemplo, minimax sin profundidad limitada o heurísticas 1-ply en Conecta 4).
 - Licencia apache-2.0, que permite uso comercial, pero el autor no ofrece garantías ni soporte; el repositorio tiene 0 descargas y 2 likes en el momento de la consulta, por lo que la validación por terceros es mínima.
-- Las fechas de creación y actualización reportadas (2026-09-25) son las que figuran en HuggingFace.
+- Las fechas de creación y actualización reportadas (2026-09-25) son las que figuran en Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Seedyai/SnapJudge2.0
+- Modelo en Hugging Face: https://huggingface.co/Seedyai/SnapJudge2.0
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-large
 - Repositorio de VJEPA2 (resultado de búsqueda, no relacionado directamente): https://github.com/facebookresearch/vjepa2
 - Lista de modelos gratuitos (resultado de búsqueda, no relacionado directamente): https://github.com/ClawLabsAI/free-ai-models

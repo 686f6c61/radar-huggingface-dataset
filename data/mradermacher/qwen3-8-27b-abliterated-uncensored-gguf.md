@@ -4,7 +4,7 @@
 
 El repositorio `mradermacher/Qwen3.8-27B-Abliterated-Uncensored-GGUF` contiene cuantizaciones en formato GGUF del modelo `Madras1/Qwen3.8-27B-Abliterated-Uncensored`. El modelo base pertenece a la familia Qwen 3.8 y cuenta con 26.895.998.464 parámetros (aproximadamente 26,9 mil millones). La etiqueta "Abliterated-Uncensored" indica que se ha aplicado una técnica de ablación para eliminar los mecanismos de rechazo del modelo original, así como las desviaciones suaves en las que el modelo ofrece respuestas evasivas o lecciones de seguridad en lugar de respuestas directas.
 
-El repositorio está creado por `mradermacher`, un autor conocido por publicar cuantizaciones de modelos de lenguaje. Incluye múltiples archivos GGUF con distintos niveles de compresión, lo que permite ejecutar el modelo en hardware local con requisitos de VRAM variables. Según los datos de HuggingFace, no se ha publicado información sobre la arquitectura, la longitud de contexto, los idiomas soportados ni la licencia del modelo. Este repositorio tiene 0 descargas y 0 likes, lo que sugiere que es una publicación reciente o poco difundida.
+El repositorio está creado por `mradermacher`, un autor conocido por publicar cuantizaciones de modelos de lenguaje. Incluye múltiples archivos GGUF con distintos niveles de compresión, lo que permite ejecutar el modelo en hardware local con requisitos de VRAM variables. Según los datos de Hugging Face, no se ha publicado información sobre la arquitectura, la longitud de contexto, los idiomas soportados ni la licencia del modelo. Este repositorio tiene 0 descargas y 0 likes, lo que sugiere que es una publicación reciente o poco difundida.
 
 Su relevancia técnica radica en ser una variante sin restricciones de seguridad, diseñada para responder a peticiones que el modelo Qwen3.8-27B original rechazaría. Este tipo de modelos se utiliza habitualmente en investigación de seguridad ofensiva, red teaming y análisis de comportamientos de modelos de lenguaje, aunque su uso conlleva riesgos significativos si se aplica sin supervisión.
 
@@ -79,7 +79,7 @@ No se dispone de información suficiente para realizar una comparación detallad
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Abliterated-Uncensored-GGUF
+- Repositorio de Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Abliterated-Uncensored-GGUF
 - Modelo original (Madras1): https://huggingface.co/Madras1/Qwen3.8-27B-Abliterated-Uncensored
 - Variante OBLITERATED: https://huggingface.co/mradermacher/Qwen3.8-27B-OBLITERATED-GGUF
 - Variante NOESIS: https://huggingface.co/mradermacher/Qwen3.8-27B-Abliterated-Uncensored-NOESIS-BF16-i1-GGUF

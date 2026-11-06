@@ -71,5 +71,5 @@ No se dispone de informacion publica sobre otras variantes de la serie para una 
 - No se proporcionan pesos cuantizados, lo que dificulta su despliegue en hardware estandar.
 
 ## Enlaces
-- [HuggingFace: unconst/Affine-5czsc2fc98-r580-r252-odpo-midrank-softctx-megaextra-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r580-r252-odpo-midrank-softctx-megaextra-merged)
+- [Hugging Face: unconst/Affine-5czsc2fc98-r580-r252-odpo-midrank-softctx-megaextra-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r580-r252-odpo-midrank-softctx-megaextra-merged)
 - [Modelo base: unconst/Affine-5czsc2fc98-r252-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged)

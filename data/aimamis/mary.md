@@ -4,7 +4,7 @@
 
 ## Resumen
 
-AiMamis/Mary es un adaptador LoRA de generacion de imagenes (text-to-image) publicado en HuggingFace por el usuario AiMamis. Se trata de un ajuste de bajo rango disenado para fijar la identidad de un unico personaje femenino llamado Mary, definido en la ficha por cinco descriptores de activacion: `Mary`, `50 years old`, `Shoulder length blonde hair`, `Brown eyes` y `Fair skin`. El adaptador no funciona de forma autonoma: se carga sobre el checkpoint base krea/Krea-2-Turbo dentro del ecosistema diffusers.
+AiMamis/Mary es un adaptador LoRA de generacion de imagenes (text-to-image) publicado en Hugging Face por el usuario AiMamis. Se trata de un ajuste de bajo rango disenado para fijar la identidad de un unico personaje femenino llamado Mary, definido en la ficha por cinco descriptores de activacion: `Mary`, `50 years old`, `Shoulder length blonde hair`, `Brown eyes` y `Fair skin`. El adaptador no funciona de forma autonoma: se carga sobre el checkpoint base krea/Krea-2-Turbo dentro del ecosistema diffusers.
 
 El modelo resuelve un problema concreto y muy comun en flujos de trabajo de generacion de imagen: mantener la coherencia de un personaje a lo largo de multiples generaciones sin tener que describirlo por completo en cada prompt. Frente a un fine-tune completo, una LoRA reduce el coste de entrenamiento y de almacenamiento (el repositorio ocupa 0,5 GB) y permite combinarla con otras LoRA o variar estilos sin perder la identidad aprendida.
 
@@ -58,7 +58,7 @@ No hay ningun dato publicado sobre el proceso de entrenamiento: se desconoce el 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha del modelo no incluye metricas objetivas (FID, CLIP score, similitud de identidad facial ni comparativas de consistencia), y la busqueda web realizada no devolvio ningun analisis independiente. El unico material de referencia es la imagen de ejemplo del widget de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha del modelo no incluye metricas objetivas (FID, CLIP score, similitud de identidad facial ni comparativas de consistencia), y la busqueda web realizada no devolvio ningun analisis independiente. El unico material de referencia es la imagen de ejemplo del widget de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -75,7 +75,7 @@ No se han identificado en la informacion disponible otros adaptadores comparable
 
 | Alternativa | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AiMamis/Mary | LoRA de personaje sobre krea/Krea-2-Turbo | No disponible | No aplica | openrail++ | Publico en HuggingFace, 0 descargas y 0 likes |
+| AiMamis/Mary | LoRA de personaje sobre krea/Krea-2-Turbo | No disponible | No aplica | openrail++ | Publico en Hugging Face, 0 descargas y 0 likes |
 | Fine-tune completo del mismo base | Checkpoint completo | No disponible | No aplica | La del modelo base | Requiere entrenamiento y almacenamiento propios |
 | Otras LoRA de personaje para Krea-2-Turbo | LoRA | No disponible | No aplica | Variable | No identificadas en la busqueda realizada |
 | DreamBooth sobre un base equivalente | Fine-tune parcial | No disponible | No aplica | La del modelo base | No verificado para este base |
@@ -94,7 +94,7 @@ No se han identificado en la informacion disponible otros adaptadores comparable
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/AiMamis/Mary
+- Ficha del modelo en Hugging Face: https://huggingface.co/AiMamis/Mary
 - Pestana de archivos y versiones: https://huggingface.co/AiMamis/Mary/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo (los resultados obtenidos correspondian a temas sin relacion). No se dispone de paper, blog tecnico, repositorio de codigo ni demo adicionales.

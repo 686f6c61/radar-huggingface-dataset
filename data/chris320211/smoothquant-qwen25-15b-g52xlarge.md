@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chris320211/smoothquant-qwen25-15b-g52xlarge` es un artefacto de pesos cuantizados derivado de `Qwen/Qwen2.5-1.5B-Instruct`, publicado por el usuario chris320211 en HuggingFace. No es un checkpoint fp16 al uso ni un modelo entrenado desde cero: la model card lo describe como el artefacto empaquetado de runtime del job `20260920T220639Z-9e4555`, generado con la técnica SmoothQuant en 8 bits. El repositorio ocupa 2,3 GB y declara 1.777.733.120 parámetros totales según safetensors.
+`chris320211/smoothquant-qwen25-15b-g52xlarge` es un artefacto de pesos cuantizados derivado de `Qwen/Qwen2.5-1.5B-Instruct`, publicado por el usuario chris320211 en Hugging Face. No es un checkpoint fp16 al uso ni un modelo entrenado desde cero: la model card lo describe como el artefacto empaquetado de runtime del job `20260920T220639Z-9e4555`, generado con la técnica SmoothQuant en 8 bits. El repositorio ocupa 2,3 GB y declara 1.777.733.120 parámetros totales según safetensors.
 
 El problema que aborda es la reducción de memoria en inferencia: en las pruebas del autor sobre una NVIDIA A10G (instancia `g5.2xlarge`, de ahí el sufijo del nombre), la VRAM pico baja de 5,844 GB a 4,682 GB y la perplejidad en WikiText-2 sube de 9,579 a 10,067 (ratio 1,051, marcado como `quality_ok=True`). El coste es un descenso de throughput: 10.427,5 tokens/s frente a 11.103,1 del snapshot fp16, con `improved_throughput: False`. Es, por tanto, un experimento de cuantización orientado a ahorro de memoria, no a aceleración.
 
@@ -107,7 +107,7 @@ La unica comparacion con datos medidos en la misma maquina es contra el modelo b
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/chris320211/smoothquant-qwen25-15b-g52xlarge
+- Ficha en Hugging Face: https://huggingface.co/chris320211/smoothquant-qwen25-15b-g52xlarge
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio del metodo de cuantizacion: no disponible (la model card lo referencia como `QUANT_AGENT_METHOD_REPO` sin URL)
 - Paper de SmoothQuant: no disponible en la busqueda web realizada

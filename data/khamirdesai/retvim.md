@@ -87,7 +87,7 @@ RetViM se distingue por ser un fine-tuning híbrido específico para OCT retinia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/khamirdesai/RetViM
+- Modelo en Hugging Face: https://huggingface.co/khamirdesai/RetViM
 - Repositorio de código: https://github.com/khamirdesai/RetViM
 - Detalles del checkpoint: https://github.com/khamirdesai/RetViM/blob/main/docs/checkpoint.md
 - Instrucciones de entrenamiento y evaluación: https://github.com/khamirdesai/RetViM/blob/main/docs/training.md

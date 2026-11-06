@@ -2,9 +2,9 @@
 
 ## Resumen
 
-rondahahda/ppo-SnowballTarget es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno SnowballTarget de Unity ML-Agents. El modelo ha sido desarrollado por el usuario rondahahda y publicado en HuggingFace con la librería ml-agents. El entorno SnowballTarget, creado por Hugging Face, consiste en un oso llamado Julien the Bear que debe lanzar bolas de nieve contra objetivos que aparecen en escena para maximizar la recompensa acumulada.
+rondahahda/ppo-SnowballTarget es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno SnowballTarget de Unity ML-Agents. El modelo ha sido desarrollado por el usuario rondahahda y publicado en Hugging Face con la librería ml-agents. El entorno SnowballTarget, creado por Hugging Face, consiste en un oso llamado Julien the Bear que debe lanzar bolas de nieve contra objetivos que aparecen en escena para maximizar la recompensa acumulada.
 
-Se trata de un modelo de carácter introductorio, entrenado desde cero durante 91.608 pasos en Google Colab y con ayuda de Codex para la codificación y ejecución. El propio autor indica explícitamente que no es una política completamente convergida, sino un ejercicio formativo vinculado al curso de deep reinforcement learning de HuggingFace. Los pesos se exportan en formato ONNX para la inferencia de la política.
+Se trata de un modelo de carácter introductorio, entrenado desde cero durante 91.608 pasos en Google Colab y con ayuda de Codex para la codificación y ejecución. El propio autor indica explícitamente que no es una política completamente convergida, sino un ejercicio formativo vinculado al curso de deep reinforcement learning de Hugging Face. Los pesos se exportan en formato ONNX para la inferencia de la política.
 
 Su relevancia es fundamentalmente educativa y comparativa: sirve como referencia reproducible de un pipeline completo de entrenamiento y evaluación con ML-Agents, y como punto de partida para fine-tuning o para experimentos de investigación sobre PPO en entornos de control continuo/discreto simples.
 
@@ -39,7 +39,7 @@ El entrenamiento se realizó desde cero durante 91.608 pasos en Google Colab, co
 
 ## Casos de uso
 
-- Material didáctico para el curso de deep RL de HuggingFace: el agente reproduce el flujo completo de las unidades 5 y 7 (entrenamiento con ML-Agents y exportación a ONNX), por lo que sirve como referencia práctica para estudiantes que quieran replicar el pipeline paso a paso.
+- Material didáctico para el curso de deep RL de Hugging Face: el agente reproduce el flujo completo de las unidades 5 y 7 (entrenamiento con ML-Agents y exportación a ONNX), por lo que sirve como referencia práctica para estudiantes que quieran replicar el pipeline paso a paso.
 - Punto de partida para fine-tuning: el fichero checkpoint.pt permite reanudar el entrenamiento y aumentar el número de pasos para obtener una política más convergida, útil en ejercicios de ajuste de hiperparámetros.
 - Baseline de comparación: al declarar un mean_reward de 24.75 sobre 20 episodios con semilla fija, permite contrastar el efecto de cambios en la configuración de PPO (clip range, learning rate, tamaño de red) frente a un resultado conocido.
 - Despliegue de inferencia en Unity: el fichero ONNX puede cargarse en el motor mediante Barracuda o Sentis para ejecutar al agente dentro de una escena interactiva sin necesidad de reentrenar.
@@ -69,9 +69,9 @@ Detalles de la evaluación según el autor: política ONNX con acciones determin
 
 | Modelo | Entorno | Algoritmo | mean_reward | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rondahahda/ppo-SnowballTarget | SnowballTarget | PPO | 24.75 +/- 2.38 | no disponible | HuggingFace |
-| Adilbai/ppo-SnowballTarget | SnowballTarget | PPO | no disponible | no disponible | HuggingFace |
-| RyanAA/ppo-SnowballTarget | SnowballTarget | PPO | no disponible | no disponible | HuggingFace |
+| rondahahda/ppo-SnowballTarget | SnowballTarget | PPO | 24.75 +/- 2.38 | no disponible | Hugging Face |
+| Adilbai/ppo-SnowballTarget | SnowballTarget | PPO | no disponible | no disponible | Hugging Face |
+| RyanAA/ppo-SnowballTarget | SnowballTarget | PPO | no disponible | no disponible | Hugging Face |
 
 No se han localizado métricas publicadas de los agentes alternativos en la información disponible, por lo que la comparación cuantitativa de rendimiento no es posible.
 
@@ -89,7 +89,7 @@ No se han localizado métricas publicadas de los agentes alternativos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rondahahda/ppo-SnowballTarget
+- Modelo en Hugging Face: https://huggingface.co/rondahahda/ppo-SnowballTarget
 - Tutorial del curso (unidad 5): https://huggingface.co/learn/deep-rl-course/en/unit5/hands-on
 - Tutorial del curso (unidad 7): https://huggingface.co/learn/deep-rl-course/en/unit7/hands-on
 - Repositorio Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents

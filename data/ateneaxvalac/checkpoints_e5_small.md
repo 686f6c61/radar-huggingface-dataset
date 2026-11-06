@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`checkpoints_e5_small` es un modelo de clasificación de texto obtenido mediante fine-tuning supervisado del encoder multilingüe `intfloat/multilingual-e5-small`. Lo publica el usuario de HuggingFace `ateneaxvalac` y está pensado para tareas de clasificación sobre representaciones densas de frases, no para generación de texto. Su relevancia es acotada: se trata de un checkpoint experimental, con cero descargas y cero likes en el momento de la consulta, y con una model card generada automáticamente por el `Trainer` de Transformers que no documenta el conjunto de datos ni el etiquetado utilizado.
+`checkpoints_e5_small` es un modelo de clasificación de texto obtenido mediante fine-tuning supervisado del encoder multilingüe `intfloat/multilingual-e5-small`. Lo publica el usuario de Hugging Face `ateneaxvalac` y está pensado para tareas de clasificación sobre representaciones densas de frases, no para generación de texto. Su relevancia es acotada: se trata de un checkpoint experimental, con cero descargas y cero likes en el momento de la consulta, y con una model card generada automáticamente por el `Trainer` de Transformers que no documenta el conjunto de datos ni el etiquetado utilizado.
 
 Arquitectura BERT (familia E5-small), con 117.654.530 parámetros totales y pesos en formato safetensors. El modelo base, `multilingual-e5-small`, es un encoder de 12 capas y dimensión oculta 384 entrenado con objetivos de embeddings contrastivos multilingües; este checkpoint añade una cabeza de clasificación sobre esa representación. La longitud de contexto heredada del base es de 512 tokens.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, GLUE, etc.) en la 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ateneaxvalac/checkpoints_e5_small` | 117,65 M | 512 | Clasificación de texto | MIT | HuggingFace |
-| `intfloat/multilingual-e5-small` | 117,65 M | 512 | Embeddings multilingües | MIT | HuggingFace |
-| `distilbert-base-multilingual-cased` | 135 M | 512 | Clasificación / embeddings | Apache 2.0 | HuggingFace |
-| `bert-base-multilingual-cased` | 178 M | 512 | Clasificación / embeddings | Apache 2.0 | HuggingFace |
+| `ateneaxvalac/checkpoints_e5_small` | 117,65 M | 512 | Clasificación de texto | MIT | Hugging Face |
+| `intfloat/multilingual-e5-small` | 117,65 M | 512 | Embeddings multilingües | MIT | Hugging Face |
+| `distilbert-base-multilingual-cased` | 135 M | 512 | Clasificación / embeddings | Apache 2.0 | Hugging Face |
+| `bert-base-multilingual-cased` | 178 M | 512 | Clasificación / embeddings | Apache 2.0 | Hugging Face |
 
 La comparación con alternativas es aproximada: no se dispone de resultados de benchmarks de este checkpoint frente a los modelos citados, por lo que la elección entre ellos debe basarse en validación propia sobre el dominio objetivo.
 
@@ -89,7 +89,7 @@ La comparación con alternativas es aproximada: no se dispone de resultados de b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ateneaxvalac/checkpoints_e5_small
+- Modelo en Hugging Face: https://huggingface.co/ateneaxvalac/checkpoints_e5_small
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Paper de E5 (Multilingual E5 Text Embeddings): https://arxiv.org/abs/2402.05672
 - Repositorio de referencia de E5: https://github.com/microsoft/unilm/tree/master/e5

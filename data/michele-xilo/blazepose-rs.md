@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Formato | Licencia | Contexto / entrada | Disponibilidad |
 |---|---|---|---|---|---|
-| BlazePose-rs (este repositorio) | Deteccion de pose y manos | ONNX | Apache 2.0 | Imagenes (no aplica contexto) | HuggingFace |
+| BlazePose-rs (este repositorio) | Deteccion de pose y manos | ONNX | Apache 2.0 | Imagenes (no aplica contexto) | Hugging Face |
 | MediaPipe BlazePose original | Deteccion de pose y manos | TFLite | Apache 2.0 | Imagenes | Repositorio de Google MediaPipe |
 | MediaPipe Hands original | Landmarks de mano | TFLite | Apache 2.0 | Imagenes | Repositorio de Google MediaPipe |
 
@@ -94,7 +94,7 @@ La comparativa se limita a los modelos originales de los que derivan estas conve
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/michele-xilo/blazepose-rs
+- Repositorio en Hugging Face: https://huggingface.co/michele-xilo/blazepose-rs
 - Crate de Rust `blazepose-rs`: https://github.com/michele-xilo/blazepose-rs
 - MediaPipe (Google AI Edge): https://github.com/google-ai-edge/mediapipe
 - Licencia Apache 2.0 de MediaPipe: https://github.com/google-ai-edge/mediapipe/blob/master/LICENSE

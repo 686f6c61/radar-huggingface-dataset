@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `vipenl26/anlp-assignment-2-part1-moe_active` es un checkpoint de PyTorch publicado en HuggingFace por el usuario vipenl26 en el marco de una asignatura de procesamiento de lenguaje natural (ANLP Assignment 2). Segun la propia model card, se trata de un transformer causal personalizado, entrenado con PyTorch, cuyo codigo de carga y definicion de arquitectura vive en el repositorio fuente de la asignatura (`src.training.load_checkpoint` y `src.part1.model.Transformer`), no en librerias estandar como Transformers, vLLM o llama.cpp.
+El modelo identificado como `vipenl26/anlp-assignment-2-part1-moe_active` es un checkpoint de PyTorch publicado en Hugging Face por el usuario vipenl26 en el marco de una asignatura de procesamiento de lenguaje natural (ANLP Assignment 2). Segun la propia model card, se trata de un transformer causal personalizado, entrenado con PyTorch, cuyo codigo de carga y definicion de arquitectura vive en el repositorio fuente de la asignatura (`src.training.load_checkpoint` y `src.part1.model.Transformer`), no en librerias estandar como Transformers, vLLM o llama.cpp.
 
 El repositorio ocupa 0,3 GB e incluye cuatro artefactos: `checkpoint.pt` (pesos, estado del optimizador, configuracion y metadatos de entrenamiento), `config.json`, `tokenizer.json` y `metadata.json`. El identificador del repositorio incluye el sufijo `moe_active`, lo que sugiere una variante de mezcla de expertos con subconjunto de parametros activos, pero la model card no confirma esa arquitectura ni detalla el numero de expertos, la dimension oculta o el numero de capas.
 
@@ -28,7 +28,7 @@ La relevancia de esta ficha es limitada y de caracter academico: no hay pipeline
 
 ## Arquitectura y entrenamiento
 
-La unica informacion disponible describe el modelo como un "custom PyTorch causal transformer" entrenado para una practica de la asignatura ANLP. Esto implica una arquitectura decoder-only con atencion causal, implementada a medida en lugar de basada en una clase estandar de HuggingFace Transformers. El checkpoint incorpora, ademas de los pesos, el estado del optimizador y metadatos de entrenamiento, lo que indica que es un artefacto de entrenamiento reanudable mas que un modelo empaquetado para distribucion.
+La unica informacion disponible describe el modelo como un "custom PyTorch causal transformer" entrenado para una practica de la asignatura ANLP. Esto implica una arquitectura decoder-only con atencion causal, implementada a medida en lugar de basada en una clase estandar de Hugging Face Transformers. El checkpoint incorpora, ademas de los pesos, el estado del optimizador y metadatos de entrenamiento, lo que indica que es un artefacto de entrenamiento reanudable mas que un modelo empaquetado para distribucion.
 
 No hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, la funcion de perdida, el esquema de inicializacion ni innovaciones tecnicas (atencion lineal, decodificacion especulativa, enrutado de expertos, etc.). La model card remite a `metadata.json` para las versiones de ejecucion y los resultados de evaluacion medidos, pero esos valores no forman parte de la informacion proporcionada. El sufijo `moe_active` del identificador sugiere un experimento comparativo entre arquitecturas densas y dispersas, habitual en practicas de asignatura, pero es una inferencia no confirmada.
 
@@ -71,7 +71,7 @@ No disponible. La informacion proporcionada no incluye parametros, contexto, lic
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| vipenl26/anlp-assignment-2-part1-moe_active | no disponible | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
+| vipenl26/anlp-assignment-2-part1-moe_active | no disponible | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,5 +87,5 @@ No disponible. La informacion proporcionada no incluye parametros, contexto, lic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vipenl26/anlp-assignment-2-part1-moe_active
+- Modelo en Hugging Face: https://huggingface.co/vipenl26/anlp-assignment-2-part1-moe_active
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su paper, a su repositorio de codigo, a demos ni a documentacion adicional. Los resultados devueltos corresponden a documentos y ficheros sin relacion con este modelo.

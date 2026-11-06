@@ -98,9 +98,9 @@ Detalle por semilla:
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `trophic-cascade-partb` | ~30 M | 256 | Investigacion de auto-reparacion con dropout | MIT | HuggingFace |
-| GPT-2 small | 124 M | 1024 | Generacion de texto general | MIT | HuggingFace |
-| Modelos TinyStories tipicos (p. ej. variantes de 1-30 M) | 1-30 M | 256-512 | Generacion de narrativa infantil, investigacion | variable | HuggingFace |
+| `trophic-cascade-partb` | ~30 M | 256 | Investigacion de auto-reparacion con dropout | MIT | Hugging Face |
+| GPT-2 small | 124 M | 1024 | Generacion de texto general | MIT | Hugging Face |
+| Modelos TinyStories tipicos (p. ej. variantes de 1-30 M) | 1-30 M | 256-512 | Generacion de narrativa infantil, investigacion | variable | Hugging Face |
 
 La comparativa con GPT-2 small no es de rendimiento sino de escala: este modelo tiene aproximadamente una cuarta parte de los parametros y una cuarta parte del contexto, y esta entrenado sobre un corpus mucho mas estrecho. Frente a otras variantes de TinyStories, su valor diferencial es el diseno controlado por semillas y los tres regimenes de dropout, no la calidad de generacion.
 
@@ -117,7 +117,7 @@ La comparativa con GPT-2 small no es de rendimiento sino de escala: este modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kvenanzi/trophic-cascade-partb
+- Hugging Face: https://huggingface.co/kvenanzi/trophic-cascade-partb
 - Write-up: https://withinnoise.dev/blog/posts/transformer-trophic-cascades/ (seccion 5.8)
 - Codigo: https://github.com/kvenanzi/trophic-cascade
 - Dataset: https://huggingface.co/datasets/roneneldan/TinyStories

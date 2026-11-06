@@ -65,9 +65,9 @@ Los tres modelos pertenecen a la misma serie de experimentos de token dose del a
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nca_dose_50Mpt_hfinit_adamwppt_200M_s0 (este) | no disponible | 2048 | Apache 2.0 | HuggingFace |
-| nca_dose_50Mpt_hfinit_20M_s0_2026-08-15_00-25-50_871551-pt | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| nca_dose_50Mpt_hfinit_1B_s0_2026-08-15_01-13-45_671442-pt | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| nca_dose_50Mpt_hfinit_adamwppt_200M_s0 (este) | no disponible | 2048 | Apache 2.0 | Hugging Face |
+| nca_dose_50Mpt_hfinit_20M_s0_2026-08-15_00-25-50_871551-pt | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| nca_dose_50Mpt_hfinit_1B_s0_2026-08-15_01-13-45_671442-pt | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ Los tres modelos pertenecen a la misma serie de experimentos de token dose del a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfinit_adamwppt_200M_s0_2026-09-06_14-49-48_928087-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfinit_adamwppt_200M_s0_2026-09-06_14-49-48_928087-pt
 - W&B run: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/bp3zq6fd
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Checkpoint 20M: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfinit_20M_s0_2026-08-15_00-25-50_871551-pt

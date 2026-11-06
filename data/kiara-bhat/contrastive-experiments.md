@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kiara-bhat/contrastive-experiments` es un repositorio experimental de HuggingFace que contiene una implementacion propia y compacta de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo. Lo publica el usuario kiara-bhat bajo licencia Apache 2.0 y, segun su propia model card, esta pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala, no como un release preentrenado listo para produccion.
+`kiara-bhat/contrastive-experiments` es un repositorio experimental de Hugging Face que contiene una implementacion propia y compacta de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo. Lo publica el usuario kiara-bhat bajo licencia Apache 2.0 y, segun su propia model card, esta pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala, no como un release preentrenado listo para produccion.
 
 El repositorio incluye cuatro artefactos principales: `finetune.py` (script de modelo y punto de entrada de entrenamiento), `config.json` (configuracion de arquitectura generada), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (checkpoint de inicializacion valido para pruebas, no un checkpoint entrenado). La model card declara explicitamente que no se reclama ninguna puntuacion de benchmark.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye resultados de benchmarks ni comparaciones con otros modelos, y la propia model card declara que no se reclama ninguna puntuacion. Como referencia cualitativa, el repositorio se posiciona en la misma categoria que otras implementaciones de DeiT publicadas en HuggingFace, pero no hay datos que permitan comparar parametros, contexto, rendimiento, licencia ni disponibilidad con alternativas concretas.
+No disponible. La informacion proporcionada no incluye resultados de benchmarks ni comparaciones con otros modelos, y la propia model card declara que no se reclama ninguna puntuacion. Como referencia cualitativa, el repositorio se posiciona en la misma categoria que otras implementaciones de DeiT publicadas en Hugging Face, pero no hay datos que permitan comparar parametros, contexto, rendimiento, licencia ni disponibilidad con alternativas concretas.
 
 ## Limitaciones y advertencias
 
@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiara-bhat/contrastive-experiments
+- Modelo en Hugging Face: https://huggingface.co/kiara-bhat/contrastive-experiments
 - Paper de referencia de DeiT: no disponible en la informacion proporcionada
-- Repositorio de codigo: no disponible; el propio repositorio de HuggingFace contiene `finetune.py`
+- Repositorio de codigo: no disponible; el propio repositorio de Hugging Face contiene `finetune.py`
 - Demos, blogs o articulos tecnicos: no disponible. Las busquedas web realizadas no devolvieron ningun resultado relacionado con el modelo, su autora ni la tecnica de aprendizaje contrastivo; los resultados obtenidos trataban sobre el nombre propio "Kiara", mods de videojuegos, un canal de YouTube y un perfil de Instagram, y no guardan relacion con este repositorio.

@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mma404/huihui-qwen3.8-27b-abliterated-gptq | ~26,9 B | hasta 262.144 tokens | GPTQ 4 bits W4A16, ~17,6 GB | apache-2.0 | HuggingFace, vLLM >= 0.27.0 |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated (modelo base) | ~27 B | no disponible en la informacion | bf16, ~55,6 GB | no disponible en la informacion | HuggingFace |
+| mma404/huihui-qwen3.8-27b-abliterated-gptq | ~26,9 B | hasta 262.144 tokens | GPTQ 4 bits W4A16, ~17,6 GB | apache-2.0 | Hugging Face, vLLM >= 0.27.0 |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated (modelo base) | ~27 B | no disponible en la informacion | bf16, ~55,6 GB | no disponible en la informacion | Hugging Face |
 | Variante AWQ del mismo modelo base | ~27 B | no aplica | AWQ: no disponible, el proceso fallo en esta arquitectura | no aplica | no existe |
 | Otras alternativas de ~27 B de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,7 +89,7 @@ La comparacion mas relevante es contra el propio modelo base: esta version reduc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mma404/huihui-qwen3.8-27b-abliterated-gptq
+- Modelo en Hugging Face: https://huggingface.co/mma404/huihui-qwen3.8-27b-abliterated-gptq
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Repositorio de llm-compressor: https://github.com/vllm-project/llm-compressor
 - Licencia original de Qwen: https://huggingface.co/Qwen

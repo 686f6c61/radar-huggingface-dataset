@@ -60,7 +60,7 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/joshuadavie/paper_000307099_lightweight_multimodal
+- Repositorio Hugging Face: https://huggingface.co/joshuadavie/paper_000307099_lightweight_multimodal
 - Paper relacionado en arXiv: https://arxiv.org/abs/2404.07236 (Lightweight Deep Learning for Resource-Constrained ...)
 - Paper relacionado en arXiv: https://arxiv.org/abs/2505.00284 (LightEMMA: Lightweight End-to-End Multimodal Model for Autonomous driving)
 - GitHub Awesome Edge AI for Multimodal Agents: https://github.com/yh-yao/awesome-edge-ai-agents

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpjt/8xa100m40-lore-4-input-only` es un modelo de lenguaje causal entrenado desde cero por Giles Thomas (usuario `gpjt` en HuggingFace), construido sobre la arquitectura estilo GPT-2 que Sebastian Raschka describe en el libro *Build a Large Language Model (from Scratch)*. Su particularidad es la incorporacion de LoRE (Low Rank Embeddings), una tecnica propuesta por el usuario `AndrewThompson1233` que factoriza la matriz de embeddings de tokens en matrices de rango bajo, reduciendo el numero de parametros del modelo sin cambiar la arquitectura transformer subyacente.
+`gpjt/8xa100m40-lore-4-input-only` es un modelo de lenguaje causal entrenado desde cero por Giles Thomas (usuario `gpjt` en Hugging Face), construido sobre la arquitectura estilo GPT-2 que Sebastian Raschka describe en el libro *Build a Large Language Model (from Scratch)*. Su particularidad es la incorporacion de LoRE (Low Rank Embeddings), una tecnica propuesta por el usuario `AndrewThompson1233` que factoriza la matriz de embeddings de tokens en matrices de rango bajo, reduciendo el numero de parametros del modelo sin cambiar la arquitectura transformer subyacente.
 
 Se trata de un modelo base (no afinado por instrucciones ni con RLHF/DPO) de escala pequena: la model card declara 130.943.360 parametros, mientras que los metadatos de safetensors del repositorio reportan 143.526.272. La longitud de contexto es de 1.024 tokens, con una dimension de embedding de 768, 12 capas y 12 cabezas de atencion multi-cabeza. El entrenamiento se realizo sobre aproximadamente 3.260 millones de tokens del dataset `gpjt/fineweb-gpt2-tokens` (tokens de FineWeb procesados con el tokenizador de GPT-2), lo que corresponde a la cifra Chinchilla-optimal (~20x el numero de parametros) de la variante sin LoRE.
 
@@ -33,7 +33,7 @@ El entrenamiento se realizo desde cero (no es un fine-tune) sobre 3.260.252.160 
 
 - Generacion de texto autorregresiva en modo continuacion de prompt (completion), con decodificacion por muestreo (temperatura, top-k).
 - Modelado de lenguaje causal: util para calcular perplejidad y como banco de pruebas de tecnicas de entrenamiento.
-- Fine-tuning sobre dominios o tareas concretas: el autor publica un notebook de ejemplo de entrenamiento con HuggingFace Transformers.
+- Fine-tuning sobre dominios o tareas concretas: el autor publica un notebook de ejemplo de entrenamiento con Hugging Face Transformers.
 - No dispone de modo de razonamiento explicito ("thinking mode"), ni capacidades de vision o audio.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni razonamiento multi-paso.
@@ -72,10 +72,10 @@ Los datos de los modelos de comparacion corresponden a especificaciones publicas
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gpjt/8xa100m40-lore-4-input-only | 143,5M (safetensors) / 130,9M (model card) | 1.024 | GPT-2 + LoRE (rango 128) en embeddings | Apache 2.0 | HuggingFace, requiere `trust_remote_code` |
-| gpjt/8xa100m40 (sin LoRE) | ~163M | 1.024 | GPT-2 estilo Raschka | Apache 2.0 | HuggingFace |
-| GPT-2 small | 124M | 1.024 | Transformer decoder-only | Licencia MIT modificada | HuggingFace, ampliamente soportado |
-| Pythia-160M (EleutherAI) | 160M | 2.048 | Transformer decoder-only | Apache 2.0 | HuggingFace, soporte estandar en transformers |
+| gpjt/8xa100m40-lore-4-input-only | 143,5M (safetensors) / 130,9M (model card) | 1.024 | GPT-2 + LoRE (rango 128) en embeddings | Apache 2.0 | Hugging Face, requiere `trust_remote_code` |
+| gpjt/8xa100m40 (sin LoRE) | ~163M | 1.024 | GPT-2 estilo Raschka | Apache 2.0 | Hugging Face |
+| GPT-2 small | 124M | 1.024 | Transformer decoder-only | Licencia MIT modificada | Hugging Face, ampliamente soportado |
+| Pythia-160M (EleutherAI) | 160M | 2.048 | Transformer decoder-only | Apache 2.0 | Hugging Face, soporte estandar en transformers |
 
 Frente a GPT-2 small y Pythia-160M, este modelo se diferencia por la factorizacion LoRE y por estar entrenado con un presupuesto de tokens explicitamente calculado como Chinchilla-optimal, pero tambien por requerir codigo custom para cargarse y por carecer de un ecosistema de herramientas equivalente.
 
@@ -95,7 +95,7 @@ Frente a GPT-2 small y Pythia-160M, este modelo se diferencia por la factorizaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gpjt/8xa100m40-lore-4-input-only
+- Modelo en Hugging Face: https://huggingface.co/gpjt/8xa100m40-lore-4-input-only
 - Dataset de entrenamiento: https://huggingface.co/datasets/gpjt/fineweb-gpt2-tokens
 - Repositorio de codigo: https://github.com/gpjt/ddp-base-model-from-scratch
 - Notebook de entrenamiento/fine-tuning: https://github.com/gpjt/ddp-base-model-from-scratch/blob/main/hf_train.ipynb

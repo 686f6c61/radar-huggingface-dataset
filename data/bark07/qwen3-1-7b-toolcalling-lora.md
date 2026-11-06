@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Comparativa con modelos similares
 
-Existen otros adaptadores LoRA similares en HuggingFace con el mismo nombre, como blueberrybagle/Qwen3-1.7B-ToolCalling-LoRA y Han0716/Qwen3-1.7B-ToolCalling-LoRA. No se dispone de información comparativa sobre parámetros, contexto, rendimiento, licencia o disponibilidad.
+Existen otros adaptadores LoRA similares en Hugging Face con el mismo nombre, como blueberrybagle/Qwen3-1.7B-ToolCalling-LoRA y Han0716/Qwen3-1.7B-ToolCalling-LoRA. No se dispone de información comparativa sobre parámetros, contexto, rendimiento, licencia o disponibilidad.
 
 ## Limitaciones y advertencias
 
@@ -68,6 +68,6 @@ Existen otros adaptadores LoRA similares en HuggingFace con el mismo nombre, com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bark07/Qwen3-1.7B-ToolCalling-LoRA
+- Hugging Face: https://huggingface.co/bark07/Qwen3-1.7B-ToolCalling-LoRA
 - Paper de LoRA (arXiv:1910.09700): https://arxiv.org/abs/1910.09700
-- Repos similares en HuggingFace: https://huggingface.co/blueberrybagle/Qwen3-1.7B-ToolCalling-LoRA y https://huggingface.co/Han0716/Qwen3-1.7B-ToolCalling-LoRA
+- Repos similares en Hugging Face: https://huggingface.co/blueberrybagle/Qwen3-1.7B-ToolCalling-LoRA y https://huggingface.co/Han0716/Qwen3-1.7B-ToolCalling-LoRA

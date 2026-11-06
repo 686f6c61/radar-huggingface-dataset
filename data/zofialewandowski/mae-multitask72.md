@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mae-multitask72 es un repositorio de HuggingFace publicado por el usuario Zofialewandowski que contiene una implementación funcional y de código abierto de una arquitectura denominada Mae orientada a tareas múltiples (multitask). No es un modelo entrenado ni un checkpoint con resultados publicados: la propia model card lo describe explícitamente como un punto de partida experimental y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+mae-multitask72 es un repositorio de Hugging Face publicado por el usuario Zofialewandowski que contiene una implementación funcional y de código abierto de una arquitectura denominada Mae orientada a tareas múltiples (multitask). No es un modelo entrenado ni un checkpoint con resultados publicados: la propia model card lo describe explícitamente como un punto de partida experimental y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El repositorio declara una configuración denominada "giant" con atención lineal, fusión mediante cross attention, activación mish y normalización rmsnorm, junto con una receta de experimento por defecto basada en el optimizador Adam y un schedule de coseno. Sin embargo, el checkpoint en safetensors contiene únicamente 16.576 parámetros, lo que indica que el archivo `config.json` recoge un ajuste de arquitectura de tipo plantilla aplicado a un modelo de juguete, no a un modelo de escala real.
 
@@ -25,7 +25,7 @@ Su relevancia es por tanto acotada y de carácter metodológico: sirve como base
 | Normalizacion | rmsnorm |
 | Optimizador y schedule por defecto | Adam con schedule de coseno (valores de partida del script, no evidencia de un entrenamiento completado) |
 | Tamano del repositorio | 0,0 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creacion registrada | 13 de octubre de 2026 |
 | Pipeline declarado | no disponible |
 
@@ -89,10 +89,10 @@ No disponible. No se identifican en la información proporcionada modelos compar
 - Incoherencia entre la escala declarada ("giant") y el tamaño real del checkpoint (16.576 parámetros); conviene tratar la configuración como plantilla y no como especificación efectiva.
 - La licencia Apache 2.0 permite uso comercial del código y de los pesos, pero la model card recuerda que deben revisarse por separado los términos de los datos de origen si el repositorio se utiliza con conjuntos de datos externos.
 - Al ser una implementación propia, las APIs automáticas de carga de transformers requieren un adaptador explícito; una carga directa fallará.
-- No existe información sobre el pipeline de HuggingFace, por lo que no puede invocarse mediante `pipeline()` de forma estándar.
+- No existe información sobre el pipeline de Hugging Face, por lo que no puede invocarse mediante `pipeline()` de forma estándar.
 - Las afirmaciones de rendimiento están deliberadamente omitidas: no debe atribuirse a este repositorio ninguna capacidad medida.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zofialewandowski/mae-multitask72
+- Modelo en Hugging Face: https://huggingface.co/Zofialewandowski/mae-multitask72
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TOTVS_Concorrencia_Teste es un clasificador de texto en portugues obtenido por fine-tuning de FacebookAI/xlm-roberta-base. Lo publica el usuario Maldak123 en HuggingFace y su tarea declarada es la deteccion de benchmarking con competidores (es decir, identificar en conversaciones comerciales B2B el momento en que un interlocutor menciona o compara con un producto de la competencia). Se trata, por tanto, de un modelo de clasificacion de secuencias de un solo uso, no de un modelo generativo.
+TOTVS_Concorrencia_Teste es un clasificador de texto en portugues obtenido por fine-tuning de FacebookAI/xlm-roberta-base. Lo publica el usuario Maldak123 en Hugging Face y su tarea declarada es la deteccion de benchmarking con competidores (es decir, identificar en conversaciones comerciales B2B el momento en que un interlocutor menciona o compara con un producto de la competencia). Se trata, por tanto, de un modelo de clasificacion de secuencias de un solo uso, no de un modelo generativo.
 
 El modelo parte de la arquitectura XLM-RoBERTa base, un transformer encoder con 278.045.186 parametros totales segun los pesos en safetensors del repositorio (1,1 GB). El autor indica que el ajuste se hizo sobre un dataset de 3.000 reuniones B2B y que el idioma de trabajo es exclusivamente portugues. La licencia declarada es MIT, lo que permite uso comercial sin restricciones de atribucion mas alla del aviso de copyright.
 
@@ -78,17 +78,17 @@ Los datos de las alternativas proceden de conocimiento general sobre esos modelo
 
 | Modelo | Parametros | Contexto | Idioma principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Maldak123/TOTVS_Concorrencia_Teste | 278 M | 512 | Portugues | MIT | HuggingFace, 0 descargas |
-| FacebookAI/xlm-roberta-base (modelo base) | 278 M | 512 | Multilingue (100 idiomas) | MIT | HuggingFace, ampliamente usado |
-| neuralmind/bert-base-portuguese-cased (BERTimbau) | aprox. 110 M | 512 | Portugues | MIT (verificar) | HuggingFace |
-| microsoft/mdeberta-v3-base | aprox. 278 M | 512 | Multilingue | MIT (verificar) | HuggingFace |
+| Maldak123/TOTVS_Concorrencia_Teste | 278 M | 512 | Portugues | MIT | Hugging Face, 0 descargas |
+| FacebookAI/xlm-roberta-base (modelo base) | 278 M | 512 | Multilingue (100 idiomas) | MIT | Hugging Face, ampliamente usado |
+| neuralmind/bert-base-portuguese-cased (BERTimbau) | aprox. 110 M | 512 | Portugues | MIT (verificar) | Hugging Face |
+| microsoft/mdeberta-v3-base | aprox. 278 M | 512 | Multilingue | MIT (verificar) | Hugging Face |
 
 La diferencia relevante no es de rendimiento bruto, sino de especificidad: este modelo es un ajuste vertical no validado externamente, mientras que los tres alternativos son checkpoints base sin tarea definida que requieren fine-tuning propio.
 
 ## Limitaciones y advertencias
 
 - Metricas no fiables: los valores perfectos de la model card sugieren fuga de datos o un conjunto de evaluacion no independiente. No debe asumirse un rendimiento cercano al 100 % en produccion.
-- Sin validacion externa: el modelo tiene 0 descargas y 0 likes en HuggingFace, y no hay terceros que hayan reproducido los resultados.
+- Sin validacion externa: el modelo tiene 0 descargas y 0 likes en Hugging Face, y no hay terceros que hayan reproducido los resultados.
 - Monolingue: el entrenamiento se limita al portugues. El uso en castellano u otros idiomas no esta documentado ni respaldado.
 - Riesgo de alucinacion de etiquetas: como cualquier clasificador, puede etiquetar como menciones competitivas fragmentos que no lo son (coincidencias de nombres de producto, homonimos) y viceversa.
 - Sesgo de dominio: entrenado sobre reuniones B2B de un unico contexto corporativo; su comportamiento en otros sectores, registros informales o transcripciones automaticas con errores no esta evaluado.
@@ -100,7 +100,7 @@ La diferencia relevante no es de rendimiento bruto, sino de especificidad: este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maldak123/TOTVS_Concorrencia_Teste
+- Modelo en Hugging Face: https://huggingface.co/Maldak123/TOTVS_Concorrencia_Teste
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Paper de XLM-RoBERTa (Unsupervised Cross-lingual Representation Learning at Scale): https://arxiv.org/abs/1911.02116
 - Referencia de la libreria transformers (pipeline de text-classification): https://huggingface.co/docs/transformers/tasks/sequence_classification

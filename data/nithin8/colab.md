@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`NITHIN8/colab` es un repositorio alojado en HuggingFace por el usuario NITHIN8 bajo licencia Apache 2.0. La model card pública se limita a declarar la licencia mediante metadatos YAML y no incluye ninguna descripción funcional, arquitectónica ni de entrenamiento del modelo. No se especifica pipeline, tipo de tarea ni idiomas soportados.
+`NITHIN8/colab` es un repositorio alojado en Hugging Face por el usuario NITHIN8 bajo licencia Apache 2.0. La model card pública se limita a declarar la licencia mediante metadatos YAML y no incluye ninguna descripción funcional, arquitectónica ni de entrenamiento del modelo. No se especifica pipeline, tipo de tarea ni idiomas soportados.
 
 El repositorio no presenta descargas ni interacciones (0 descargas, 0 likes) y fue creado el 1 de noviembre de 2026, sin actualizaciones posteriores. El nombre "colab" sugiere un posible uso experimental o de pruebas en Google Colab, pero esta interpretación no está confirmada por ninguna documentación del autor.
 
@@ -41,7 +41,7 @@ No hay información sobre innovaciones técnicas, métodos de decodificación, m
 No es posible recomendar casos de uso concretos sin información verificable sobre las capacidades, el tamaño y el rendimiento del modelo. Los siguientes escenarios son genéricos y requerirían validación previa del repositorio:
 
 - Evaluación exploratoria en un entorno controlado: un desarrollador podría clonar el repositorio y revisar los archivos de pesos para determinar el tipo de modelo y su viabilidad.
-- Pruebas de integración en pipelines de HuggingFace: si el repositorio contiene un modelo funcional, podría cargarse con `transformers` o `vLLM`, aunque no hay garantía de compatibilidad.
+- Pruebas de integración en pipelines de Hugging Face: si el repositorio contiene un modelo funcional, podría cargarse con `transformers` o `vLLM`, aunque no hay garantía de compatibilidad.
 - Verificación de licencia para uso comercial: la licencia Apache 2.0 permitiría uso comercial, pero la ausencia de documentación técnica impide evaluar riesgos.
 - Auditoría de seguridad y sesgos: antes de cualquier uso en producción sería necesario un análisis propio del modelo, dado que el autor no aporta información.
 - Docencia o experimentación: el nombre "colab" sugiere un posible uso educativo, aunque no está confirmado.
@@ -78,5 +78,5 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni la tarea del model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NITHIN8/colab
+- Repositorio en Hugging Face: https://huggingface.co/NITHIN8/colab
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

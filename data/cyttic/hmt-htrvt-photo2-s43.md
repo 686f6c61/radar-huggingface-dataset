@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8G
 
 | Modelo | Parámetros | Contexto | CER (HHD Option-B) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-htrvt-photo2-s43 | 13,8 M | no disponible | 0,0616 | MIT | HuggingFace |
-| Otras variantes del estudio htr-metrics-transfer | no disponible | no disponible | no disponible en esta ficha | MIT (presumible) | HuggingFace (cyttic) |
-| Modelos HTR genéricos (p. ej. TrOCR, Kraken) | variable | no aplica | no comparable directamente | variable | HuggingFace / repos |
+| cyttic/hmt-htrvt-photo2-s43 | 13,8 M | no disponible | 0,0616 | MIT | Hugging Face |
+| Otras variantes del estudio htr-metrics-transfer | no disponible | no disponible | no disponible en esta ficha | MIT (presumible) | Hugging Face (cyttic) |
+| Modelos HTR genéricos (p. ej. TrOCR, Kraken) | variable | no aplica | no comparable directamente | variable | Hugging Face / repos |
 
 No se dispone de datos de benchmarks de modelos comparables en la información proporcionada, por lo que la comparación cuantitativa con alternativas como TrOCR o Kraken no puede establecerse con rigor.
 
@@ -83,6 +83,6 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-photo2-s43
+- Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-photo2-s43
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados detallados: `results.json` (referenciado en la model card, no enlazado directamente)

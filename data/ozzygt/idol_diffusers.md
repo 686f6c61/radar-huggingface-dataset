@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OzzyGT/idol_diffusers | 370,5 M | no aplica | image-to-3D (Gaussian splatting) | idol-with-third-party-components | HuggingFace, diffusers |
-| speridlabs/idol | no disponible | no aplica | image-to-3D (Gaussian splatting) | Apache-2.0 (pesos) | HuggingFace |
-| FLUX.2-klein-4B (VAE reutilizado) | no disponible | no aplica | generacion de imagen | Apache-2.0 | HuggingFace |
+| OzzyGT/idol_diffusers | 370,5 M | no aplica | image-to-3D (Gaussian splatting) | idol-with-third-party-components | Hugging Face, diffusers |
+| speridlabs/idol | no disponible | no aplica | image-to-3D (Gaussian splatting) | Apache-2.0 (pesos) | Hugging Face |
+| FLUX.2-klein-4B (VAE reutilizado) | no disponible | no aplica | generacion de imagen | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks ni de otros modelos comparables de la misma categoría en la información proporcionada. La comparativa se limita a los modelos referenciados en la propia model card.
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables de la misma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OzzyGT/idol_diffusers
+- Hugging Face: https://huggingface.co/OzzyGT/idol_diffusers
 - Modelo original: https://huggingface.co/speridlabs/idol
 - Bloques modulares: https://huggingface.co/OzzyGT/idol_custom_blocks
 - SDK de Idol: https://github.com/speridlabs/idol-sdk

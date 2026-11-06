@@ -18,7 +18,7 @@ El tamaño de parámetros indicado (838.908) es inusualmente bajo para un modelo
 | Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
-No se dispone de información pública sobre la arquitectura interna del modelo original. El repositorio de HuggingFace solo indica que se trata de una cuantización con imatrix del modelo OpenSparX-3b-cabin-intent alojado en qualcomm-ai-hub-community. Dado el nombre y la existencia de una variante "chat" con etiquetas como qwen2.5-vl y multimodal, es plausible que el modelo base esté relacionado con la familia Qwen2.5-VL, pero esto no puede confirmarse con los datos disponibles. Tampoco hay datos sobre el dataset de entrenamiento, el número de tokens procesados o si se aplicaron técnicas como RLHF o DPO.
+No se dispone de información pública sobre la arquitectura interna del modelo original. El repositorio de Hugging Face solo indica que se trata de una cuantización con imatrix del modelo OpenSparX-3b-cabin-intent alojado en qualcomm-ai-hub-community. Dado el nombre y la existencia de una variante "chat" con etiquetas como qwen2.5-vl y multimodal, es plausible que el modelo base esté relacionado con la familia Qwen2.5-VL, pero esto no puede confirmarse con los datos disponibles. Tampoco hay datos sobre el dataset de entrenamiento, el número de tokens procesados o si se aplicaron técnicas como RLHF o DPO.
 
 ## Capacidades
 - No se han documentado capacidades específicas en la información proporcionada.
@@ -32,7 +32,7 @@ No se dispone de información pública sobre la arquitectura interna del modelo 
 - Investigación académica sobre cuantización de modelos pequeños: el repositorio sirve como ejemplo de aplicación de imatrix a un modelo de intenciones, útil para estudiar el impacto de la cuantización en tareas específicas.
 - Integración en aplicaciones de código abierto que requieran un clasificador de intenciones ligero, siempre que se valide su rendimiento con datos propios.
 - Evaluación comparativa de modelos cuantizados en tareas de dominio restringido, usando las distintas variantes de cuantización disponibles.
-- Uso educativo para demostrar el flujo de cuantización GGUF con imatrix a partir de un modelo base de HuggingFace.
+- Uso educativo para demostrar el flujo de cuantización GGUF con imatrix a partir de un modelo base de Hugging Face.
 
 ## Benchmarks y rendimiento
 No se han publicado resultados de benchmarks en la informacion disponible.
@@ -56,7 +56,7 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 - Al ser una cuantización de un modelo de terceros, la calidad depende de la del modelo original, que tampoco está documentada.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/OpenSparX-3b-cabin-intent-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/OpenSparX-3b-cabin-intent-i1-GGUF
 - Modelo original (referenciado en la model card): https://huggingface.co/qualcomm-ai-hub-community/OpenSparX-3b-cabin-intent
 - Variante chat del mismo autor: https://huggingface.co/mradermacher/OpenSparX-3b-cabin-chat-GGUF
 - Perfil del autor: https://huggingface.co/mradermacher

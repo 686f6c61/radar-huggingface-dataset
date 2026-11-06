@@ -95,7 +95,7 @@ Comparativa de rendimiento: no disponible. El unico dato comparativo publicado e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AikidoSec/altar-1
+- Modelo en Hugging Face: https://huggingface.co/AikidoSec/altar-1
 - Modelo base cuantizado: https://huggingface.co/cyankiwi/GLM-5.3-AWQ-INT4
 - Modelo original GLM-5.3: https://huggingface.co/zai-org/GLM-5.3
 - Organizacion Z.AI / zai-org: https://huggingface.co/zai-org

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `darius3th/unc-34bda046` es un modelo de lenguaje de gran tamaño (LLM) con arquitectura de mezcla de expertos (MoE) basado en la familia Qwen3.5, desarrollado por el usuario Darius R (darius3th) en HuggingFace. Con 35.107 millones de parámetros totales, está diseñado para tareas de generación de texto y procesamiento multimodal imagen-texto, según las etiquetas asociadas. El modelo se publicó en agosto de 2026 con licencia Apache 2.0, aunque su acceso está restringido y requiere aceptar condiciones adicionales en la plataforma.
+El modelo `darius3th/unc-34bda046` es un modelo de lenguaje de gran tamaño (LLM) con arquitectura de mezcla de expertos (MoE) basado en la familia Qwen3.5, desarrollado por el usuario Darius R (darius3th) en Hugging Face. Con 35.107 millones de parámetros totales, está diseñado para tareas de generación de texto y procesamiento multimodal imagen-texto, según las etiquetas asociadas. El modelo se publicó en agosto de 2026 con licencia Apache 2.0, aunque su acceso está restringido y requiere aceptar condiciones adicionales en la plataforma.
 
 La relevancia de este modelo radica en su combinación de arquitectura MoE, capacidades de razonamiento (etiqueta `reason-v4`) y soporte multimodal, lo que lo sitúa en la línea de los LLM modernos orientados a agentes y asistentes. Sin embargo, al ser un lanzamiento reciente con cero descargas y sin documentación pública detallada, su adopción es aún incipiente. El modelo base declarado es `vera6/affine-5g4yy75zuz-t6`, del que no se dispone de información adicional.
 
@@ -63,7 +63,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es de tipo gated, por lo que requiere solicitar acceso y aceptar condiciones en HuggingFace antes de su uso.
+- Acceso restringido: el modelo es de tipo gated, por lo que requiere solicitar acceso y aceptar condiciones en Hugging Face antes de su uso.
 - Documentación insuficiente: no hay papers, guías de uso ni especificaciones técnicas detalladas; la información se limita a las etiquetas y metadatos.
 - Riesgo de alucinación: como todo LLM, puede generar contenido falso o inventado, especialmente en tareas de razonamiento complejo si no se valida.
 - Sesgos desconocidos: al no haber información sobre los datos de entrenamiento, no se pueden evaluar sesgos de género, raza o idioma.
@@ -73,6 +73,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darius3th/unc-34bda046
+- Modelo en Hugging Face: https://huggingface.co/darius3th/unc-34bda046
 - Perfil del autor: https://huggingface.co/darius3th
 - Lista de modelos del autor: https://huggingface.co/darius3th/models

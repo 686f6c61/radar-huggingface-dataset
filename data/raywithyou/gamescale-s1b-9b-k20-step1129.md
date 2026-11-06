@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Raywithyou/gamescale-s1b-9b-k20-step1129` es un checkpoint de pesos publicados en HuggingFace por el usuario Raywithyou el 17 de octubre de 2026. El repositorio contiene únicamente pesos en formato `safetensors` (18,8 GB) y no incluye model card, pipeline declarado, idiomas ni licencia. Por el recuento real de tensores, el modelo tiene 9.409.813.744 parámetros (9,41 B), lo que lo sitúa en la clase de 8-10 B, la franja de modelos densos desplegables en una sola GPU de 24 GB con cuantización.
+`Raywithyou/gamescale-s1b-9b-k20-step1129` es un checkpoint de pesos publicados en Hugging Face por el usuario Raywithyou el 17 de octubre de 2026. El repositorio contiene únicamente pesos en formato `safetensors` (18,8 GB) y no incluye model card, pipeline declarado, idiomas ni licencia. Por el recuento real de tensores, el modelo tiene 9.409.813.744 parámetros (9,41 B), lo que lo sitúa en la clase de 8-10 B, la franja de modelos densos desplegables en una sola GPU de 24 GB con cuantización.
 
 El tag `qwen3_5` sugiere que la arquitectura deriva de la familia Qwen 3.5, aunque esta información no está confirmada en la model card (inexistente). El nombre del repositorio indica un entrenamiento por etapas: el sufijo `step1129` apunta a un checkpoint intermedio del paso 1129 de un run de entrenamiento o ajuste fino, y `k20` podría referirse a una configuración de muestreo o de ventana, si bien ninguno de estos extremos está documentado. `gamescale` y `s1b` no tienen explicación pública.
 
@@ -94,7 +94,7 @@ Rendimiento comparado (MMLU, HumanEval, GSM8K): no disponible para este modelo, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Raywithyou/gamescale-s1b-9b-k20-step1129
+- Repositorio en Hugging Face: https://huggingface.co/Raywithyou/gamescale-s1b-9b-k20-step1129
 - Paper, blog o repositorio asociados: no disponible en la información proporcionada.
 - Demos o espacios: no disponible.
 - Documentación de la familia Qwen (referencia por el tag `qwen3_5`, no confirmada): no disponible en la búsqueda realizada.

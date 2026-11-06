@@ -2,9 +2,9 @@
 
 ## Resumen
 
-open-sci-ref-v0.02-1.7b es un modelo de lenguaje de 1.714.377.728 parametros (aproximadamente 1,7 mil millones) publicado por la organizacion open-sci en HuggingFace. Se trata de un ajuste fino (SFT) realizado con LLaMA-Factory sobre el checkpoint base `ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-DPO-Tulu3-decontaminated`, que a su vez encadena un preentrenamiento sobre FineWeb-Edu (1,4T tokens segun el nombre), un SFT de contexto largo (16k), un paso de DPO con datos Tulu3 decontaminados y un ajuste adicional sobre un dataset de razonamiento (AceReason-1.1-SFT-30k-sharegpt-hf).
+open-sci-ref-v0.02-1.7b es un modelo de lenguaje de 1.714.377.728 parametros (aproximadamente 1,7 mil millones) publicado por la organizacion open-sci en Hugging Face. Se trata de un ajuste fino (SFT) realizado con LLaMA-Factory sobre el checkpoint base `ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-DPO-Tulu3-decontaminated`, que a su vez encadena un preentrenamiento sobre FineWeb-Edu (1,4T tokens segun el nombre), un SFT de contexto largo (16k), un paso de DPO con datos Tulu3 decontaminados y un ajuste adicional sobre un dataset de razonamiento (AceReason-1.1-SFT-30k-sharegpt-hf).
 
-El modelo se distribuye con la libreria transformers y pesos en safetensors, y esta etiquetado como `feature-extraction` en el pipeline de HuggingFace, aunque su entrenamiento corresponde a un modelo causal de generacion de texto. La model card es practicamente un esqueleto autogenerado por el Trainer y no documenta usos previstos, datos de evaluacion ni limitaciones, por lo que la informacion disponible es muy escasa.
+El modelo se distribuye con la libreria transformers y pesos en safetensors, y esta etiquetado como `feature-extraction` en el pipeline de Hugging Face, aunque su entrenamiento corresponde a un modelo causal de generacion de texto. La model card es practicamente un esqueleto autogenerado por el Trainer y no documenta usos previstos, datos de evaluacion ni limitaciones, por lo que la informacion disponible es muy escasa.
 
 Su relevancia es limitada y de nicho: se trata de un experimento de la comunidad (14 descargas, 0 likes en el momento de la consulta) que ilustra una cadena de entrenamiento completa sobre datos abiertos, pero sin benchmarks publicados ni documentacion que permita evaluar su calidad frente a alternativas consolidadas.
 
@@ -32,7 +32,7 @@ Este checkpoint concreto es un ajuste fino completo (tag `full`, no LoRA) realiz
 - Generacion de texto autoregresiva, heredada del modelo base causal.
 - Razonamiento y resolucion de problemas, presumiblemente reforzado por el ajuste sobre AceReason-1.1-SFT-30k (dataset de razonamiento y sharegpt).
 - Conversacion multi-turno en formato chat, segun el dataset de SFT empleado.
-- Extraccion de caracteristicas (pipeline declarado en HuggingFace: `feature-extraction`).
+- Extraccion de caracteristicas (pipeline declarado en Hugging Face: `feature-extraction`).
 - Soporte de tool calling / function calling: no disponible (no documentado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
 - Capacidades multilingues: no disponible.
@@ -64,10 +64,10 @@ La model card incluye un `model-index` con la entrada `sft__AceReason-1-1-SFT-30
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| open-sci-ref-v0.02-1.7b (este) | 1,71B | 16k (inferido) | other | HuggingFace, safetensors | Sin benchmarks ni documentacion |
-| Qwen2.5-1.5B | 1,54B | 32.768 | Apache 2.0 | HuggingFace, GGUF, amplio ecosistema | Benchmarks publicados, multilingue |
-| Llama 3.2-1B | 1,24B | 131.072 | Llama 3.2 Community License | HuggingFace, GGUF, Ollama | Benchmarks publicados, tool calling |
-| SmolLM2-1.7B | 1,71B | 8.192 | Apache 2.0 | HuggingFace, GGUF, amplio ecosistema | Benchmarks publicados, entrenamiento documentado |
+| open-sci-ref-v0.02-1.7b (este) | 1,71B | 16k (inferido) | other | Hugging Face, safetensors | Sin benchmarks ni documentacion |
+| Qwen2.5-1.5B | 1,54B | 32.768 | Apache 2.0 | Hugging Face, GGUF, amplio ecosistema | Benchmarks publicados, multilingue |
+| Llama 3.2-1B | 1,24B | 131.072 | Llama 3.2 Community License | Hugging Face, GGUF, Ollama | Benchmarks publicados, tool calling |
+| SmolLM2-1.7B | 1,71B | 8.192 | Apache 2.0 | Hugging Face, GGUF, amplio ecosistema | Benchmarks publicados, entrenamiento documentado |
 
 La comparacion con alternativas consolidadas de ~1,5-1,7B es desfavorable en documentacion, licencia y ecosistema: los tres modelos de referencia publican evaluaciones, cuantizaciones GGUF y terminos de licencia claros, mientras que este checkpoint no ofrece ninguno de esos elementos.
 
@@ -80,13 +80,13 @@ La comparacion con alternativas consolidadas de ~1,5-1,7B es desfavorable en doc
 - Licencia "other" sin texto: no se especifican condiciones de uso comercial, redistribucion ni atribucion; es imprescindible contactar con el autor antes de cualquier uso en produccion.
 - Idiomas no declarados: no hay garantia de comportamiento multilingue ni de calidad en castellano.
 - Contexto de 16k inferido del nombre del modelo base, no confirmado en la model card; conviene verificarlo con el tokenizer antes de disenar aplicaciones de contexto largo.
-- Pipeline declarado como `feature-extraction` pese a ser un modelo causal: posible inconsistencia en los metadatos de HuggingFace.
+- Pipeline declarado como `feature-extraction` pese a ser un modelo causal: posible inconsistencia en los metadatos de Hugging Face.
 - Ecosistema minimo (14 descargas, 0 likes): sin cuantizaciones GGUF, sin integraciones en Ollama y sin comunidad que reporte incidencias.
 - Requiere `trust_remote_code` potencialmente (tag `custom_code`), lo que implica ejecutar codigo del autor.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-DPO-Tulu3-decontaminated-ar30k
+- Hugging Face: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-DPO-Tulu3-decontaminated-ar30k
 - Modelo base: https://huggingface.co/ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-DPO-Tulu3-decontaminated
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - FineWeb-Edu (dataset de preentrenamiento): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

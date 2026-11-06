@@ -2,7 +2,7 @@
 
 ## Resumen
 
-J-Deutzia-0.5B-SFT-UL es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por j-llm, publicado en HuggingFace bajo licencia Apache 2.0. Se trata de una variante del modelo J-Deutzia-0.5B-SFT a la que se le ha añadido entrenamiento con *unlikelihood* (UL), una técnica de optimización que penaliza explícitamente la generación de tokens indeseados. El modelo está especializado en japonés y su formato de conversación emplea marcadores textuales del tipo "### ユーザー:" / "### アシスタント:".
+J-Deutzia-0.5B-SFT-UL es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por j-llm, publicado en Hugging Face bajo licencia Apache 2.0. Se trata de una variante del modelo J-Deutzia-0.5B-SFT a la que se le ha añadido entrenamiento con *unlikelihood* (UL), una técnica de optimización que penaliza explícitamente la generación de tokens indeseados. El modelo está especializado en japonés y su formato de conversación emplea marcadores textuales del tipo "### ユーザー:" / "### アシスタント:".
 
 La arquitectura es un transformer MoE con 4 expertos y enrutamiento top-1, 14 capas, una ventana de contexto de 16 384 tokens y un vocabulario de 72 000 tokens. Según la model card, el modelo tiene 469M parámetros totales y 199M activos, aunque el recuento real de pesos en safetensors asciende a 533 745 408 parámetros. Esta discrepancia probablemente se deba a que el recuento de la model card excluye ciertos componentes (embeddings o cabezas), mientras que el dato de safetensors incluye todos los tensores almacenados.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Activos | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|---|
-| J-Deutzia-0.5B-SFT-UL | 533,7M (safetensors) | 199M | 16 384 | Apache 2.0 | ja | HuggingFace |
-| J-Deutzia-0.5B-SFT | no disponible | no disponible | no disponible | no disponible | ja | HuggingFace (modelo base) |
+| J-Deutzia-0.5B-SFT-UL | 533,7M (safetensors) | 199M | 16 384 | Apache 2.0 | ja | Hugging Face |
+| J-Deutzia-0.5B-SFT | no disponible | no disponible | no disponible | no disponible | ja | Hugging Face (modelo base) |
 | Modelos densos de ~0,5B en japones | ~500M | ~500M | variable | variable | ja/en | variable |
 
 No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas. La comparación con el modelo base J-Deutzia-0.5B-SFT es la más directa, ya que esta variante añade únicamente la fase de *unlikelihood training* sobre el mismo checkpoint.
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/j-llm/J-Deutzia-0.5B-SFT-UL
+- Modelo en Hugging Face: https://huggingface.co/j-llm/J-Deutzia-0.5B-SFT-UL
 - Modelo base (referenciado en la model card): J-Deutzia-0.5B-SFT (no se proporciona URL directa en la información disponible)
 - Script de generación: `code/scripts/j72v2_gen_eval.py` (incluido en el repositorio del modelo)
 - Módulo de arquitectura: `canonical_corpus.probe_moe_lm` (incluido en el repositorio del modelo)

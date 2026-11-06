@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrada multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scadcoder-qwen3.5-9b-v4 | ~9,65 B | no disponible | Si (image-text-to-text) | Apache 2.0 | HuggingFace, safetensors |
-| Qwen/Qwen3.5-9B (modelo base) | ~9,65 B | no disponible | Si | no disponible en la informacion proporcionada | HuggingFace |
-| scadcoder-qwen3.5-9b-3ep (v2 del mismo autor) | ~9,65 B | no disponible | Si | no disponible en la informacion proporcionada | HuggingFace |
+| scadcoder-qwen3.5-9b-v4 | ~9,65 B | no disponible | Si (image-text-to-text) | Apache 2.0 | Hugging Face, safetensors |
+| Qwen/Qwen3.5-9B (modelo base) | ~9,65 B | no disponible | Si | no disponible en la informacion proporcionada | Hugging Face |
+| scadcoder-qwen3.5-9b-3ep (v2 del mismo autor) | ~9,65 B | no disponible | Si | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos verificados de otros modelos especializados en generacion OpenSCAD que permitan una comparacion cuantitativa; las diferencias frente al modelo base y frente a v2 son de especializacion y de composicion del dataset, no de parametros.
 
@@ -89,7 +89,7 @@ No se dispone de datos verificados de otros modelos especializados en generacion
 
 ## Enlaces
 
-- [HuggingFace: ATinyGreenCell/scadcoder-qwen3.5-9b-v4](https://huggingface.co/ATinyGreenCell/scadcoder-qwen3.5-9b-v4)
+- [Hugging Face: ATinyGreenCell/scadcoder-qwen3.5-9b-v4](https://huggingface.co/ATinyGreenCell/scadcoder-qwen3.5-9b-v4)
 - [Modelo base: Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B)
 - [Version anterior: scadcoder-qwen3.5-9b-3ep](https://huggingface.co/ATinyGreenCell/scadcoder-qwen3.5-9b-3ep)
 - [Repositorio del proyecto Prompt-to-Bench (detalles en la seccion 6.4)](https://github.com/ATinyGreenCell/prompt-to-bench)

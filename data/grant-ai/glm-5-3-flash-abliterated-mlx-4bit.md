@@ -109,7 +109,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grant-ai/GLM-5.3-Flash-Abliterated-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/grant-ai/GLM-5.3-Flash-Abliterated-MLX-4bit
 - Modelo base original: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Version abliterada (BF16): https://huggingface.co/Blackfrost-Research/GLM-5.3-Flash-DERISKED-BF16
 - Articulo de DataCamp sobre GLM-5.3-Flash: https://www.datacamp.com/blog/glm-5-3-flash

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Gemma 4 E4B — ExecuTorch MLX es una conversión del decodificador de texto de google/gemma-4-E4B-it al formato ExecuTorch con backend MLX, pensada para ejecutarse en iOS dentro de React Native ExecuTorch. El artefacto lo publica el usuario kloodia en HuggingFace y no es un modelo entrenado desde cero: es un export empaquetado de un modelo base de Google, con las capas lineales cuantizadas a 4 bits y un grafo optimizado para inferencia en dispositivo.
+Gemma 4 E4B — ExecuTorch MLX es una conversión del decodificador de texto de google/gemma-4-E4B-it al formato ExecuTorch con backend MLX, pensada para ejecutarse en iOS dentro de React Native ExecuTorch. El artefacto lo publica el usuario kloodia en Hugging Face y no es un modelo entrenado desde cero: es un export empaquetado de un modelo base de Google, con las capas lineales cuantizadas a 4 bits y un grafo optimizado para inferencia en dispositivo.
 
-El paquete resuelve un problema muy concreto: llevar un modelo conversacional de la familia Gemma 4 a aplicaciones móviles nativas de Apple sin depender de servidores. Para ello entrega un único programa MLX (`mlx/gemma4_e4b_mlx_int4.pte`) con contexto de 2048 tokens y prefill en bloques de 64, junto con el tokenizador de HuggingFace. Los encoders de audio y visión del modelo base no están incluidos, de modo que la conversión cubre únicamente la modalidad de texto.
+El paquete resuelve un problema muy concreto: llevar un modelo conversacional de la familia Gemma 4 a aplicaciones móviles nativas de Apple sin depender de servidores. Para ello entrega un único programa MLX (`mlx/gemma4_e4b_mlx_int4.pte`) con contexto de 2048 tokens y prefill en bloques de 64, junto con el tokenizador de Hugging Face. Los encoders de audio y visión del modelo base no están incluidos, de modo que la conversión cubre únicamente la modalidad de texto.
 
 El interés actual del repositorio es de nicho pero relevante para el ecosistema on-device: demuestra el flujo de exportación de un modelo Gemma 4 a ExecuTorch/MLX y ofrece un artefacto listo para integrar en apps iOS mediante React Native. No hay información publicada sobre el número de parámetros exacto, los idiomas soportados ni resultados de evaluación, y el repositorio no registra descargas en el momento de redactar esta ficha.
 
@@ -33,7 +33,7 @@ Respecto al entrenamiento, esta ficha no puede aportar datos: la model card del 
 ## Capacidades
 
 - Generación de texto conversacional: el pipeline declarado es `text-generation` y el modelo base es una variante «-it», es decir, ajustada para instrucciones y diálogo.
-- Conversaciones multi-turno: la etiqueta `conversational` aparece en los metadatos del repositorio y se conserva el tokenizador original de HuggingFace, lo que permite aplicar la plantilla de chat del modelo base.
+- Conversaciones multi-turno: la etiqueta `conversational` aparece en los metadatos del repositorio y se conserva el tokenizador original de Hugging Face, lo que permite aplicar la plantilla de chat del modelo base.
 - Ejecución en dispositivo (on-device) en iOS: el artefacto está exportado específicamente para React Native ExecuTorch con backend MLX.
 - Capacidades de audio y visión: no incluidas en este export; los encoders correspondientes no forman parte del paquete.
 - Tool calling / function calling: no disponible en la información proporcionada.
@@ -70,9 +70,9 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 | Modelo | Parámetros | Contexto | Formato on-device | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kloodia/gemma-4-e4b-executorch | no disponible (base E4B) | 2048 tokens | ExecuTorch + MLX (iOS) | Apache 2.0 | HuggingFace, 1 like, 0 descargas |
-| google/gemma-4-E4B-it (modelo base) | no disponible | no disponible | safetensors (presumiblemente) | no disponible en esta ficha | HuggingFace |
-| Exportaciones ExecuTorch de modelos de ~3-4B (por ejemplo, familias Llama o Qwen) | del orden de 3000-4000 millones | variable según export | ExecuTorch (`.pte`) | depende del modelo base | HuggingFace y repositorios de ejemplo |
+| kloodia/gemma-4-e4b-executorch | no disponible (base E4B) | 2048 tokens | ExecuTorch + MLX (iOS) | Apache 2.0 | Hugging Face, 1 like, 0 descargas |
+| google/gemma-4-E4B-it (modelo base) | no disponible | no disponible | safetensors (presumiblemente) | no disponible en esta ficha | Hugging Face |
+| Exportaciones ExecuTorch de modelos de ~3-4B (por ejemplo, familias Llama o Qwen) | del orden de 3000-4000 millones | variable según export | ExecuTorch (`.pte`) | depende del modelo base | Hugging Face y repositorios de ejemplo |
 | Ejecución de Gemma en llama.cpp / Ollama con GGUF | depende del modelo | variable | GGUF | depende del modelo base | amplia, multiplataforma |
 
 La ventaja diferencial de este repositorio es el backend MLX para iOS dentro de React Native; su limitación principal frente a las alternativas GGUF es la falta de soporte multiplataforma y de un ecosistema de servidores de inferencia.
@@ -93,7 +93,7 @@ La ventaja diferencial de este repositorio es el backend MLX para iOS dentro de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kloodia/gemma-4-e4b-executorch
+- Repositorio en Hugging Face: https://huggingface.co/kloodia/gemma-4-e4b-executorch
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Documentación de ExecuTorch: https://pytorch.org/executorch/
 - Documentación de MLX: https://ml-explore.github.io/mlx/

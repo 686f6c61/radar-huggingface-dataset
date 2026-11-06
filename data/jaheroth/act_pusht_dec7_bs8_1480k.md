@@ -25,14 +25,14 @@ La relevancia de este modelo radica en que forma parte de una serie de experimen
 
 ACT (Action Chunking with Transformers) es una arquitectura que combina un encoder de visión (típicamente ResNet) con un transformer que predice un "chunk" de acciones futuras de longitud fija, condicionado a las observaciones actuales y a una variable latente que representa la variabilidad de las demostraciones. Este enfoque reduce el error de acumulación en tareas de control y permite generar trayectorias suaves y coherentes.
 
-El entrenamiento se realizó con el framework LeRobot de HuggingFace, sobre la tarea PushT, un benchmark estándar en el que un robot debe empujar un objeto (un círculo) hasta una posición objetivo. El modelo fue entrenado durante 1,48 millones de pasos con batch size 8, lo que equivale a unas 461 épocas sobre el conjunto de demostraciones. La evaluación se realizó con 5000 semillas y un número de pasos de acción (n_action_steps) de 16. No se especifican detalles sobre el dataset de demostraciones, el preprocesamiento de observaciones ni el uso de técnicas como RLHF o DPO, que no son aplicables en este contexto.
+El entrenamiento se realizó con el framework LeRobot de Hugging Face, sobre la tarea PushT, un benchmark estándar en el que un robot debe empujar un objeto (un círculo) hasta una posición objetivo. El modelo fue entrenado durante 1,48 millones de pasos con batch size 8, lo que equivale a unas 461 épocas sobre el conjunto de demostraciones. La evaluación se realizó con 5000 semillas y un número de pasos de acción (n_action_steps) de 16. No se especifican detalles sobre el dataset de demostraciones, el preprocesamiento de observaciones ni el uso de técnicas como RLHF o DPO, que no son aplicables en este contexto.
 
 ## Capacidades
 
 - Control robótico para la tarea PushT: el modelo genera secuencias de acciones de 16 pasos que empujan un objeto hacia una posición objetivo.
 - Aprendizaje por imitación: la política se deriva de demostraciones humanas o generadas, sin necesidad de recompensas explícitas.
 - Generación de action chunks: predice bloques de acciones futuras, lo que reduce la frecuencia de inferencia y mejora la estabilidad del control.
-- Integración con LeRobot: compatible con el ecosistema de HuggingFace para entrenamiento, evaluación y despliegue de políticas robóticas.
+- Integración con LeRobot: compatible con el ecosistema de Hugging Face para entrenamiento, evaluación y despliegue de políticas robóticas.
 - No incluye capacidades de lenguaje, visión general, tool calling ni razonamiento simbólico, al ser un modelo puramente motor.
 
 ## Casos de uso
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaheroth/act_pusht_dec7_bs8_1480k
+- Modelo en Hugging Face: https://huggingface.co/jaheroth/act_pusht_dec7_bs8_1480k
 - Repositorio del autor (robot-learning): https://github.com/JaHeRoth/robot-learning
 - Checkpoint intermedio (bs8_800k): https://huggingface.co/jaheroth/act_pusht_dec7_bs8_800k
 - Checkpoint con batch size 64 (bs64_200k): https://huggingface.co/jaheroth/act_pusht_bs64_dec7_200k

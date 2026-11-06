@@ -2,7 +2,7 @@
 
 ## Resumen
 
-K-Laut-Tokenizer es un tokenizer publicado en HuggingFace por el usuario khaKorea bajo licencia MIT. La model card no proporciona ninguna descripción adicional, por lo que no se dispone de información sobre su propósito, arquitectura o conjunto de datos de entrenamiento. El repositorio fue creado el 11 de agosto de 2026 y actualizado el 16 de agosto de 2026, aunque estas fechas parecen anómalas y no se pueden verificar.
+K-Laut-Tokenizer es un tokenizer publicado en Hugging Face por el usuario khaKorea bajo licencia MIT. La model card no proporciona ninguna descripción adicional, por lo que no se dispone de información sobre su propósito, arquitectura o conjunto de datos de entrenamiento. El repositorio fue creado el 11 de agosto de 2026 y actualizado el 16 de agosto de 2026, aunque estas fechas parecen anómalas y no se pueden verificar.
 
 Dado que no se ha publicado ningún detalle técnico, no es posible determinar qué tipo de tokenizer es (BPE, WordPiece, Unigram, etc.), su vocabulario, ni los idiomas que soporta. La única información confirmada es la licencia MIT y la ausencia de descargas y de interacción por parte de la comunidad.
 
@@ -52,6 +52,6 @@ No disponible. No se conocen modelos comparables porque no se ha definido la fun
 
 ## Enlaces
 
-- [HuggingFace - khaKorea/K-Laut-Tokenizer](https://huggingface.co/khaKorea/K-Laut-Tokenizer)
+- [Hugging Face - khaKorea/K-Laut-Tokenizer](https://huggingface.co/khaKorea/K-Laut-Tokenizer)
 
 No se han encontrado otros enlaces (papers, repositorios, demos) en la información proporcionada.

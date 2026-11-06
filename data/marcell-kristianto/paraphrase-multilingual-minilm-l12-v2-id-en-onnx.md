@@ -85,7 +85,7 @@ La comparativa directa solo puede establecerse con el modelo base del que deriva
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Marcell-Kristianto/paraphrase-multilingual-MiniLM-L12-v2-id-en-onnx
+- Hugging Face: https://huggingface.co/Marcell-Kristianto/paraphrase-multilingual-MiniLM-L12-v2-id-en-onnx
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 - Libreria sentence-transformers: https://www.sbert.net/
 - fastembed: https://github.com/qdrant/fastembed

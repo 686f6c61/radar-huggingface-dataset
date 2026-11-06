@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de ajuste fino supervisado (SFT) completo y reanudable del modelo OpenPI, publicado por el usuario myx160 en HuggingFace, especializado en la tarea de manipulacion robotica "Piper eyeglasses". La instruccion de la tarea es: "Pick up the eyeglasses, fold the temples, and place them on the box on the right". Se trata de un modelo vision-lenguaje-accion (VLA): consume tres camaras RGB y un vector de estado de 14 dimensiones, y produce un vector de accion de 14 dimensiones con un horizonte de 50 pasos.
+Este repositorio contiene un checkpoint de ajuste fino supervisado (SFT) completo y reanudable del modelo OpenPI, publicado por el usuario myx160 en Hugging Face, especializado en la tarea de manipulacion robotica "Piper eyeglasses". La instruccion de la tarea es: "Pick up the eyeglasses, fold the temples, and place them on the box on the right". Se trata de un modelo vision-lenguaje-accion (VLA): consume tres camaras RGB y un vector de estado de 14 dimensiones, y produce un vector de accion de 14 dimensiones con un horizonte de 50 pasos.
 
 El entrenamiento parte de unos pesos de arranque en caliente procedentes de un SFT de 100 episodios (paso 4000) y utiliza el dataset `myx160/eyeglasses_grasp_250episode`, compuesto por 250 episodios. El regimen declarado es de ajuste de todos los parametros con FSDP `full_shard`, un batch global de 384 (micro batch por rango de 48, sin acumulacion), un calendario de 20000 pasos, 1000 pasos de warmup y un LR pico de 1e-5. El checkpoint publicado corresponde al paso 4000.
 
@@ -95,7 +95,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/myx160/sft_eyeglasses250_pi05_ppu8c_mb48_gbs384_s20000_from100_s4000_v2_step4000
+- Modelo en Hugging Face: https://huggingface.co/myx160/sft_eyeglasses250_pi05_ppu8c_mb48_gbs384_s20000_from100_s4000_v2_step4000
 - Dataset de entrenamiento: https://huggingface.co/datasets/myx160/eyeglasses_grasp_250episode (revision `fd7ce02d49c4b150becdf657ec010faaa0e63d73`, 250 episodios)
 - Repositorio OpenPI: no aparece en la informacion proporcionada; la etiqueta `openpi` y el campo `library_name` lo referencian, pero no se incluye URL verificada.
 - Documentacion de LeRobot: no aparece en la informacion proporcionada; solo se declara la etiqueta `lerobot`.

@@ -4,7 +4,7 @@
 
 DA3METRIC-LARGE es la variante monocular métrica del modelo Depth Anything 3, desarrollado por ByteDance Seed. Este repositorio concreto (`bigshanedogg/DA3METRIC-LARGE`) es un port no oficial al formato nativo de `transformers` del checkpoint original `depth-anything/DA3METRIC-LARGE`. El autor del port ha reconstruido la red a partir del grafo de objetos del propio checkpoint y ha vendorizado el código oficial (`ByteDance-Seed/depth-anything-3` en el commit `3d835ec1`) en ficheros planos, de modo que el modelo se carga con `trust_remote_code=True` sin necesidad de instalar el paquete `depth_anything_3`.
 
-El modelo resuelve estimación de profundidad monocular con escala métrica real (metros) y genera además una máscara de cielo. La arquitectura es un transformer de visión con 334.171.394 parámetros (aproximadamente 334 M), empaquetado en safetensors con un tamaño de repositorio de 1,3 GB. El pipeline declarado en HuggingFace es `image-to-3d`, aunque la tarea efectiva es `depth-estimation` sobre una o varias vistas.
+El modelo resuelve estimación de profundidad monocular con escala métrica real (metros) y genera además una máscara de cielo. La arquitectura es un transformer de visión con 334.171.394 parámetros (aproximadamente 334 M), empaquetado en safetensors con un tamaño de repositorio de 1,3 GB. El pipeline declarado en Hugging Face es `image-to-3d`, aunque la tarea efectiva es `depth-estimation` sobre una o varias vistas.
 
 Su relevancia radica en que permite usar el modelo dentro del ecosistema estándar de `transformers` (`AutoModelForDepthEstimation`, `AutoProcessor`) sin dependencias del paquete original, manteniendo una fidelidad bit a bit verificada frente a la implementación oficial (mismos procesos y semillas, V100, 4 imágenes, en fp32 y bajo autocast). La licencia es Apache-2.0, lo que facilita su uso comercial.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DA3METRIC-LARGE (este port) | 334.171.394 | no disponible | Profundidad monocular métrica + máscara de cielo | Apache-2.0 | HuggingFace (`bigshanedogg/DA3METRIC-LARGE`) |
-| depth-anything/DA3METRIC-LARGE (original) | no disponible en la información | no disponible | Profundidad monocular métrica + máscara de cielo | Apache-2.0 | HuggingFace (checkpoint original) |
+| DA3METRIC-LARGE (este port) | 334.171.394 | no disponible | Profundidad monocular métrica + máscara de cielo | Apache-2.0 | Hugging Face (`bigshanedogg/DA3METRIC-LARGE`) |
+| depth-anything/DA3METRIC-LARGE (original) | no disponible en la información | no disponible | Profundidad monocular métrica + máscara de cielo | Apache-2.0 | Hugging Face (checkpoint original) |
 | Otros modelos de profundidad de la familia Depth Anything 3 | no disponible | no disponible | Profundidad / multi-vista | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información proporcionada para establecer una comparación cuantitativa.

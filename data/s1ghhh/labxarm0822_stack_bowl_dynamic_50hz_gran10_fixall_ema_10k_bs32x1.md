@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `labxarm0822_stack_bowl_dynamic_50hz_gran10_fixall_ema_10k_bs32x1`, publicado por el usuario `s1ghhh` en HuggingFace, contiene un checkpoint de entrenamiento de 35,9 GB. El nombre sugiere que se trata de un modelo entrenado para el control de un brazo robótico (posiblemente un "LabX Arm") en una tarea de apilamiento de cuencos ("stack bowl") con control dinámico a 50 Hz, usando una tasa de granulosidad de 10 y un promedio móvil exponencial (EMA) tras 10 000 pasos con un tamaño de lote de 32. Sin embargo, no se proporciona ninguna documentación, ficha técnica, ni metadatos adicionales en el repositorio.
+El repositorio `labxarm0822_stack_bowl_dynamic_50hz_gran10_fixall_ema_10k_bs32x1`, publicado por el usuario `s1ghhh` en Hugging Face, contiene un checkpoint de entrenamiento de 35,9 GB. El nombre sugiere que se trata de un modelo entrenado para el control de un brazo robótico (posiblemente un "LabX Arm") en una tarea de apilamiento de cuencos ("stack bowl") con control dinámico a 50 Hz, usando una tasa de granulosidad de 10 y un promedio móvil exponencial (EMA) tras 10 000 pasos con un tamaño de lote de 32. Sin embargo, no se proporciona ninguna documentación, ficha técnica, ni metadatos adicionales en el repositorio.
 
 La ausencia total de información sobre arquitectura, parámetros, licencia o incluso el tipo de modelo (red neuronal, política de aprendizaje por refuerzo, etc.) impide cualquier evaluación técnica rigurosa. El repositorio tiene 38 descargas y ninguna interacción de la comunidad, lo que sugiere que es un artefacto de investigación o un experimento personal sin difusión pública. No se puede determinar su relevancia actual ni su aplicabilidad sin más datos.
 
@@ -57,4 +57,4 @@ No disponible. No se conocen modelos comparables en la misma categoría (control
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/s1ghhh/labxarm0822_stack_bowl_dynamic_50hz_gran10_fixall_ema_10k_bs32x1
+- Repositorio Hugging Face: https://huggingface.co/s1ghhh/labxarm0822_stack_bowl_dynamic_50hz_gran10_fixall_ema_10k_bs32x1

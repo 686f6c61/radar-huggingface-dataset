@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Index-Translate-Omni 35BA3B es un modelo multimodal de traducción desarrollado por IndexTeam, publicado en HuggingFace bajo el identificador `IndexTeam/Index-Translate-omni-35B`. Su propósito es unificar en un único modelo la traducción de texto, la traducción de imágenes, el reconocimiento automático de voz (ASR) y la traducción bidireccional chino-inglés por voz. Se presenta como la variante de mayor tamaño de la familia Index-Translate-Omni, junto a versiones de 2B y 9B parámetros.
+Index-Translate-Omni 35BA3B es un modelo multimodal de traducción desarrollado por IndexTeam, publicado en Hugging Face bajo el identificador `IndexTeam/Index-Translate-omni-35B`. Su propósito es unificar en un único modelo la traducción de texto, la traducción de imágenes, el reconocimiento automático de voz (ASR) y la traducción bidireccional chino-inglés por voz. Se presenta como la variante de mayor tamaño de la familia Index-Translate-Omni, junto a versiones de 2B y 9B parámetros.
 
 La nomenclatura "35BA3B" indica una arquitectura de mezcla de expertos (MoE) con 35 mil millones de parámetros totales y aproximadamente 3 mil millones de parámetros activos por token, lo que sitúa el coste de inferencia cerca de un modelo denso de 3B. La model card menciona que el modelo parte de Qwen3.5 como base (las comparativas de imagen usan Qwen3.5-2B, Qwen3.5-9B y Qwen3.5-35B-A3B como referencia), lo que sugiere una arquitectura transformer con atención estándar y un decodificador multimodal.
 
@@ -112,6 +112,6 @@ En las tablas de la model card, el 35BA3B supera al 9B en FLORES (0.8795 frente 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IndexTeam/Index-Translate-omni-35B
+- Hugging Face: https://huggingface.co/IndexTeam/Index-Translate-omni-35B
 - Colección Index-Translate: https://huggingface.co/collections/IndexTeam/index-translate
 - Documento de inferencia nativa (referenciado, no incluido): NATIVE_INFERENCE.md en el repositorio del modelo

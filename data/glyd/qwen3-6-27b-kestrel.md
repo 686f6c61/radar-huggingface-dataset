@@ -5,7 +5,7 @@ Qwen3.6-27B-kestrel es un checkpoint cuantizado del modelo Qwen/Qwen3.6-27B publ
 
 El modelo resuelve el problema de ejecutar un modelo de ~27.000 millones de parametros en GPUs de 24 GB, como una RTX 4090, manteniendo una degradacion de calidad declarada como baja. Es relevante para desarrolladores que necesitan desplegar modelos grandes en hardware de gama alta de consumo o profesional sin recurrir a precisiones float de mayor peso.
 
-La ficha tecnica del autor indica que solo es texto (la parte de vision del modelo base no esta incluida) y que requiere el motor Glyd sobre Linux con GPU NVIDIA y driver 580 o superior. En el momento de la publicacion no cuenta con descargas ni valoraciones en HuggingFace.
+La ficha tecnica del autor indica que solo es texto (la parte de vision del modelo base no esta incluida) y que requiere el motor Glyd sobre Linux con GPU NVIDIA y driver 580 o superior. En el momento de la publicacion no cuenta con descargas ni valoraciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -78,10 +78,10 @@ Rendimiento por GPU (medido el 2026-10-09 con glyd 0.29.4, una GPU, contexto de 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| glyd/Qwen3.6-27B-kestrel | 21.884.158.770 (safetensors); 26.895.998.464 declarados para el origen | al menos 32k (segun GPU) | 40 tok/s en RTX 4090, KL 0,0137 | apache-2.0 (pesos), motor BUSL-1.1 | HuggingFace, solo motor Glyd |
-| glyd/Qwen3.6-27B-penguin | no disponible | no disponible | sin perdida (KL 0), 37,0 GB | apache-2.0 (pesos) | HuggingFace |
-| glyd/Qwen3.6-27B-swift | no disponible | no disponible | 46 tok/s en RTX 4090, KL 0,0302, 18,6 GB | apache-2.0 (pesos) | HuggingFace |
-| Qwen/Qwen3.6-27B (bf16) | no disponible | no disponible | bf16, 53,8 GB | apache-2.0 | HuggingFace |
+| glyd/Qwen3.6-27B-kestrel | 21.884.158.770 (safetensors); 26.895.998.464 declarados para el origen | al menos 32k (segun GPU) | 40 tok/s en RTX 4090, KL 0,0137 | apache-2.0 (pesos), motor BUSL-1.1 | Hugging Face, solo motor Glyd |
+| glyd/Qwen3.6-27B-penguin | no disponible | no disponible | sin perdida (KL 0), 37,0 GB | apache-2.0 (pesos) | Hugging Face |
+| glyd/Qwen3.6-27B-swift | no disponible | no disponible | 46 tok/s en RTX 4090, KL 0,0302, 18,6 GB | apache-2.0 (pesos) | Hugging Face |
+| Qwen/Qwen3.6-27B (bf16) | no disponible | no disponible | bf16, 53,8 GB | apache-2.0 | Hugging Face |
 | Qwen FP8 | no disponible | no disponible | 29,5 GB, KL no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ Rendimiento por GPU (medido el 2026-10-09 con glyd 0.29.4, una GPU, contexto de 
 - Adopcion nula: cero descargas y cero valoraciones en el momento de la publicacion, por lo que no hay validacion externa del checkpoint.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/glyd/Qwen3.6-27B-kestrel
+- Modelo en Hugging Face: https://huggingface.co/glyd/Qwen3.6-27B-kestrel
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Commit del modelo base: https://huggingface.co/Qwen/Qwen3.6-27B/tree/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9
 - Variante sin perdida (penguin): https://huggingface.co/glyd/Qwen3.6-27B-penguin

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`RajaGula/llama-bin-t4` es un repositorio alojado en HuggingFace por el usuario RajaGula bajo licencia MIT. El nombre sugiere una variante relacionada con la familia LLaMA en formato binario, posiblemente asociada a un despliegue en una instancia T4 (GPU NVIDIA Tesla T4), pero la model card publicada no contiene ninguna descripcion tecnica, arquitectura, tamano de parametros ni datos de entrenamiento. El repositorio tiene un tamano de 0,1 GB, lo que es incompatible con los pesos completos de cualquier modelo LLaMA conocido (el mas pequeno, LLaMA 7B, ocupa varios GB en fp16), por lo que probablemente se trate de un artefacto parcial, un contenedor de configuracion o un experimento de conversion.
+`RajaGula/llama-bin-t4` es un repositorio alojado en Hugging Face por el usuario RajaGula bajo licencia MIT. El nombre sugiere una variante relacionada con la familia LLaMA en formato binario, posiblemente asociada a un despliegue en una instancia T4 (GPU NVIDIA Tesla T4), pero la model card publicada no contiene ninguna descripcion tecnica, arquitectura, tamano de parametros ni datos de entrenamiento. El repositorio tiene un tamano de 0,1 GB, lo que es incompatible con los pesos completos de cualquier modelo LLaMA conocido (el mas pequeno, LLaMA 7B, ocupa varios GB en fp16), por lo que probablemente se trate de un artefacto parcial, un contenedor de configuracion o un experimento de conversion.
 
-El modelo no registra descargas ni likes en el momento de la consulta y no declara pipeline, idiomas ni formatos de pesos en los metadatos de HuggingFace. La informacion disponible es, por tanto, insuficiente para caracterizar el modelo desde un punto de vista tecnico. Esta ficha documenta lo que se puede verificar y marca explicitamente como "no disponible" todo aquello que no consta en la informacion proporcionada, sin inferir datos que no esten respaldados por la fuente.
+El modelo no registra descargas ni likes en el momento de la consulta y no declara pipeline, idiomas ni formatos de pesos en los metadatos de Hugging Face. La informacion disponible es, por tanto, insuficiente para caracterizar el modelo desde un punto de vista tecnico. Esta ficha documenta lo que se puede verificar y marca explicitamente como "no disponible" todo aquello que no consta en la informacion proporcionada, sin inferir datos que no esten respaldados por la fuente.
 
 Dado el estado del repositorio (creado y actualizado el mismo dia, sin documentacion ni metricas), no es recomendable su uso en produccion ni su evaluacion como modelo base hasta que el autor publique una model card completa con especificaciones, datos de entrenamiento y resultados de evaluacion.
 
@@ -65,10 +65,10 @@ No es posible establecer una comparativa fiable sin conocer el tamano, la arquit
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RajaGula/llama-bin-t4 | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
-| LLaMA 2 7B | 7B | 4.096 tokens | Llama 2 Community License | HuggingFace, Meta |
-| LLaMA 3 8B | 8B | 8.192 tokens | Llama 3 Community License | HuggingFace, Meta |
-| Mistral 7B | 7,3B | 32.768 tokens | Apache 2.0 | HuggingFace, Mistral AI |
+| RajaGula/llama-bin-t4 | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
+| LLaMA 2 7B | 7B | 4.096 tokens | Llama 2 Community License | Hugging Face, Meta |
+| LLaMA 3 8B | 8B | 8.192 tokens | Llama 3 Community License | Hugging Face, Meta |
+| Mistral 7B | 7,3B | 32.768 tokens | Apache 2.0 | Hugging Face, Mistral AI |
 
 La comparativa no permite extraer conclusiones sobre rendimiento porque el modelo evaluado no publica metricas ni especificaciones.
 
@@ -85,5 +85,5 @@ La comparativa no permite extraer conclusiones sobre rendimiento porque el model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RajaGula/llama-bin-t4
+- Repositorio en Hugging Face: https://huggingface.co/RajaGula/llama-bin-t4
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

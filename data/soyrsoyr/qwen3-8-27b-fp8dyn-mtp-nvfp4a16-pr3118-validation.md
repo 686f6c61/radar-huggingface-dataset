@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-NVFP4A16-pr3118-validation | 27,13 mil millones | no disponible | FP8 dinamico, NVFP4A16, MXFP4 | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.8-27B (modelo base) | 27,13 mil millones (modelo origen) | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-NVFP4A16-pr3118-validation | 27,13 mil millones | no disponible | FP8 dinamico, NVFP4A16, MXFP4 | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.8-27B (modelo base) | 27,13 mil millones (modelo origen) | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otras cuantizaciones del mismo modelo base ni sobre modelos comparables de 27.000 millones de parametros con decodificacion especulativa MTP, por lo que la comparativa queda reducida al modelo de origen.
@@ -87,7 +87,7 @@ No se dispone de informacion sobre otras cuantizaciones del mismo modelo base ni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-NVFP4A16-pr3118-validation
+- Repositorio en Hugging Face: https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-NVFP4A16-pr3118-validation
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Revision concreta del modelo base usada como origen: https://huggingface.co/Qwen/Qwen3.8-27B/tree/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0
 - Commit de implementacion en llm-compressor (PR 3118): https://github.com/soyr-redhat/llm-compressor/commit/87347881b46df8786b9fc463965f80504914a98f

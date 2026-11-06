@@ -2,11 +2,11 @@
 
 ## Resumen
 
-wam-openarm-rel28-rh-cog-humact-ema-50k-ckpt50000 es un modelo de robótica (pipeline `robotics`) desarrollado por el usuario de HuggingFace jungwook2358. Se trata de un checkpoint de investigación (paso 50.000) de un modelo de política visomotora entrenado sobre el backbone de vídeo Wan2.2-TI2V-5B, orientado a la manipulación robótica del brazo OpenArm con representación de acción en 28 dimensiones articulares. El modelo combina datos de robot y de humano mediante retargeting, incorporando alineamiento cognitivo (CogAlign) sobre keypoints FP48.
+wam-openarm-rel28-rh-cog-humact-ema-50k-ckpt50000 es un modelo de robótica (pipeline `robotics`) desarrollado por el usuario de Hugging Face jungwook2358. Se trata de un checkpoint de investigación (paso 50.000) de un modelo de política visomotora entrenado sobre el backbone de vídeo Wan2.2-TI2V-5B, orientado a la manipulación robótica del brazo OpenArm con representación de acción en 28 dimensiones articulares. El modelo combina datos de robot y de humano mediante retargeting, incorporando alineamiento cognitivo (CogAlign) sobre keypoints FP48.
 
 El modelo resuelve el problema de aprender políticas de acción a partir de vídeo e instrucciones, generando directamente articulaciones de 28 dimensiones (cuello, brazos y manos) sin necesidad de cinemática directa o inversa en inferencia. Su relevancia es acotada: es un artefacto de experimento (EXP-0019) con cero descargas y cero likes, publicado en noviembre de 2026, pensado para reproducir un entrenamiento concreto más que para uso general.
 
-El repositorio ocupa 32,5 GB e incluye el checkpoint completo del HuggingFace Trainer con shards safetensors, configuración, estadísticas de normalización y estados de entrenamiento (sin los estados del optimizador DeepSpeed). La información disponible no detalla el número de parámetros del modelo ni la longitud de contexto en tokens de texto.
+El repositorio ocupa 32,5 GB e incluye el checkpoint completo del Hugging Face Trainer con shards safetensors, configuración, estadísticas de normalización y estados de entrenamiento (sin los estados del optimizador DeepSpeed). La información disponible no detalla el número de parámetros del modelo ni la longitud de contexto en tokens de texto.
 
 ## Especificaciones técnicas
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wam-openarm-rel28-rh-cog-humact-ema-50k-ckpt50000 | no disponible | no disponible | sin benchmarks publicados | other | HuggingFace, 0 descargas |
+| wam-openarm-rel28-rh-cog-humact-ema-50k-ckpt50000 | no disponible | no disponible | sin benchmarks publicados | other | Hugging Face, 0 descargas |
 | Wan2.2-TI2V-5B (backbone base) | 5B (referencia) | no disponible | no disponible en esta ficha | no disponible | modelo público de vídeo |
 | Otras políticas robóticas OpenArm | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -85,7 +85,7 @@ No se dispone de datos suficientes para una comparación cuantitativa con altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jungwook2358/wam-openarm-rel28-rh-cog-humact-ema-50k-ckpt50000
+- Hugging Face: https://huggingface.co/jungwook2358/wam-openarm-rel28-rh-cog-humact-ema-50k-ckpt50000
 - Dataset de retargeting humano citado: `junbrro/openarm-human-hawor-retarget-prq-fp48-20261030` (referencia en la model card, sin URL directa en la información disponible)
 - Dataset base citado: `openarm_wam_v1` (referencia en la model card, sin URL directa en la información disponible)
 - Rama de código citada: `actlat-wam`, rama `jungwook/openarm-fred-ft`, script `run_scripts/train/wam_dit4dit/openarm/finetune_openarm_rel28_base.sh` (sin URL directa en la información disponible)

@@ -84,7 +84,7 @@ No se dispone de comparaciones directas con otras cuantizaciones del mismo model
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/XReyRobert/Qwen3.8-27B-GPTQ-Pro-FOEM-4bit-g128-ns256
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/XReyRobert/Qwen3.8-27B-GPTQ-Pro-FOEM-4bit-g128-ns256
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante con embeddings y lm_head en INT8: https://huggingface.co/XReyRobert/Qwen3.8-27B-GPTQ-Pro-FOEM-4bit-g128-ns256-INT8-Head-Embeddings
 - Ficha de Qwen3.8 en LM Studio: https://lmstudio.ai/models/qwen3.8

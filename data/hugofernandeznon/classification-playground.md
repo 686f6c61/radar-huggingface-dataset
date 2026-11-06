@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`HugoFernandeznon/classification-playground` es un repositorio de HuggingFace publicado por el usuario HugoFernandeznon que contiene una implementación propia en PyTorch de una arquitectura denominada "Hybrid" orientada a tareas de clasificación. No se trata de un modelo preentrenado ni de una release de producción: el propio autor lo describe como un artefacto compacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado.
+`HugoFernandeznon/classification-playground` es un repositorio de Hugging Face publicado por el usuario HugoFernandeznon que contiene una implementación propia en PyTorch de una arquitectura denominada "Hybrid" orientada a tareas de clasificación. No se trata de un modelo preentrenado ni de una release de producción: el propio autor lo describe como un artefacto compacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado.
 
 El dato más relevante es su tamaño real: los metadatos de safetensors registran 24.832 parámetros totales, lo que lo sitúa en un orden de magnitud propio de una prueba de concepto y no de un modelo utilizable en inferencia real. La etiqueta `giant` que aparece en la model card corresponde al nombre de una configuración generada, no al tamaño del modelo. No se declara ningún resultado de benchmark ni se aporta información sobre datos de entrenamiento, idiomas o contexto.
 
@@ -21,7 +21,7 @@ Su relevancia es, por tanto, limitada y de carácter didáctico: sirve como plan
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (repo con `model.py`, `config.json`, `training_args.json`) |
 
-Datos adicionales del repositorio: 0 descargas, 0 likes, tamaño del repo 0,0 GB, creado y actualizado el 10 de septiembre de 2026. Etiquetas declaradas: `safetensors`, `hybrid`, `pytorch`, `classification`, `license:apache-2.0`, `region:us`. No se declara pipeline de HuggingFace.
+Datos adicionales del repositorio: 0 descargas, 0 likes, tamaño del repo 0,0 GB, creado y actualizado el 10 de septiembre de 2026. Etiquetas declaradas: `safetensors`, `hybrid`, `pytorch`, `classification`, `license:apache-2.0`, `region:us`. No se declara pipeline de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -87,5 +87,5 @@ No disponible. El repositorio no publica benchmarks ni métricas de tarea, y su 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HugoFernandeznon/classification-playground
+- Repositorio en Hugging Face: https://huggingface.co/HugoFernandeznon/classification-playground
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web realizada. Los resultados obtenidos corresponden a páginas de soporte de Microsoft sin relación con el modelo.

@@ -38,7 +38,7 @@ El repositorio incluye un `config.json` con la configuración de arquitectura ge
 - **Pruebas de humo en pipelines de CI/CD**: antes de integrar una librería de modelos, se puede ejecutar `inference.py` para verificar que el entorno (dependencias, carga de safetensors, etc.) funciona correctamente.
 - **Experimentos controlados de investigación**: un investigador puede usar este modelo como baseline de capacidad mínima (33K parámetros) para comparar con arquitecturas más grandes en tareas de visión multitarea, siempre que entrene todas las variantes con la misma exposición a datos y semillas.
 - **Depuración de infraestructura de entrenamiento**: el checkpoint de inicialización permite probar un pipeline de entrenamiento distribuido o de logging sin necesidad de un modelo grande, reduciendo el coste de las pruebas.
-- **Validación de adaptadores de carga**: dado que es una implementación personalizada, se puede usar para desarrollar un adaptador que permita cargar el modelo con APIs genéricas de HuggingFace, un ejercicio útil para ingenieros de MLOps.
+- **Validación de adaptadores de carga**: dado que es una implementación personalizada, se puede usar para desarrollar un adaptador que permita cargar el modelo con APIs genéricas de Hugging Face, un ejercicio útil para ingenieros de MLOps.
 - **Estudio de normalización ScaleNorm**: la configuración usa ScaleNorm en lugar de LayerNorm, lo que permite experimentar con esta variante de normalización en un contexto multitarea sin invertir en un modelo grande.
 
 ## Benchmarks y rendimiento
@@ -68,5 +68,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Danielcarterley/thesis-multitask
+- Repositorio en Hugging Face: https://huggingface.co/Danielcarterley/thesis-multitask
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos) en la búsqueda web.

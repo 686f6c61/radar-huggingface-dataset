@@ -11,7 +11,7 @@ La relevancia de esta cuantización radica en que permite ejecutar un modelo de 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer denso multimodal (no se dispone de detalle adicional) |
-| Parametros totales | 9 000 millones (según fuentes externas; el dato de HuggingFace de 1 278 200 es inconsistente y probablemente erróneo) |
+| Parametros totales | 9 000 millones (según fuentes externas; el dato de Hugging Face de 1 278 200 es inconsistente y probablemente erróneo) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 262 144 tokens, extensible a ~1 000 000 mediante YaRN RoPE scaling |
 | Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
@@ -72,14 +72,14 @@ No se dispone de una comparativa directa con otros modelos de codificación de t
 
 - La licencia del modelo no está especificada, lo que supone un riesgo legal para uso comercial. Se recomienda contactar con el autor original (Dingdust) o con DeepReinforce antes de desplegarlo en producción.
 - La variante "heretic" sugiere que se han eliminado mecanismos de seguridad, lo que puede generar contenido ofensivo, sesgado o peligroso. No es adecuado para aplicaciones donde se requiera moderación estricta.
-- El repositorio de HuggingFace muestra un tamaño de 0.0 GB y 0 descargas, lo que indica que puede estar vacío o que la información no se ha actualizado. Es posible que los archivos GGUF no estén realmente disponibles.
+- El repositorio de Hugging Face muestra un tamaño de 0.0 GB y 0 descargas, lo que indica que puede estar vacío o que la información no se ha actualizado. Es posible que los archivos GGUF no estén realmente disponibles.
 - No se han publicado resultados de benchmarks específicos para la cuantización, por lo que el rendimiento real puede variar respecto al modelo original.
 - El modelo puede alucinar en tareas de razonamiento complejo, especialmente con contextos muy largos donde la atención puede degradarse.
 - No se conoce el soporte de idiomas; probablemente esté optimizado para inglés y código, con capacidades limitadas en otros idiomas.
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/Ornith-1.5-9B-heretic-i1-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/Ornith-1.5-9B-heretic-i1-GGUF
 - Modelo original de Dingdust: https://huggingface.co/Dingdust/Ornith-1.5-9B-heretic
 - Guía de ejecución local (atomic.chat): https://atomic.chat/blog/guides/how-to-run-ornith-1-5-locally
 - Página de benchmarks (Benchgen): https://benchgen.com/models/ornith-deepreinforce/ornith-1-5-9b

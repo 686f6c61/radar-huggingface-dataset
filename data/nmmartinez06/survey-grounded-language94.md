@@ -4,7 +4,7 @@
 
 El repositorio `Nmmartinez06/survey-grounded-language94` no es un modelo de lenguaje entrenado, sino un conjunto estructurado de notas de investigación sobre *grounded language* (lenguaje anclado a percepción visual). El autor, Nmmartinez06, lo publica bajo licencia CC-BY-4.0 con los tags `research-notes` y `grounded-language`, y la propia model card aclara de forma explícita que el repositorio no reclama mejoras de benchmark, ablaciones completadas, código liberado ni checkpoint entrenado. El contenido principal es un fichero `summary.md` con el alcance de la pregunta de investigación, posibles factores de confusión, una comparación propuesta contra baselines emparejados y referencias de evaluación concretas como RefCOCO, Flickr30k y Visual Genome.
 
-El repositorio contiene pesos en formato safetensors con 49.600 parámetros totales, una cifra que no corresponde a ningún transformer utilizable para inferencia: se trata de un artefacto de tamaño despreciable (el repo ocupa 0,0 GB) y sin pipeline declarado en HuggingFace. El tag `transformer` figura entre los metadatos, pero no hay información sobre la arquitectura real, el número de capas, la dimensión oculta ni el vocabulario, y no existe model card técnica que describa un modelo funcional.
+El repositorio contiene pesos en formato safetensors con 49.600 parámetros totales, una cifra que no corresponde a ningún transformer utilizable para inferencia: se trata de un artefacto de tamaño despreciable (el repo ocupa 0,0 GB) y sin pipeline declarado en Hugging Face. El tag `transformer` figura entre los metadatos, pero no hay información sobre la arquitectura real, el número de capas, la dimensión oculta ni el vocabulario, y no existe model card técnica que describa un modelo funcional.
 
 Por tanto, esta ficha debe leerse como documentación de un artefacto de investigación exploratoria, no como la ficha de un modelo desplegable. Es relevante ahora únicamente como material de trabajo en curso sobre evaluación de *grounding* y como ejemplo de repositorio que separa explícitamente planes e hipótesis de resultados experimentales.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha debe leerse como documentación de un artefacto de investi
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el tag de HuggingFace indica `transformer`, pero no hay especificación de arquitectura, capas ni dimensiones) |
+| Arquitectura | no disponible (el tag de Hugging Face indica `transformer`, pero no hay especificación de arquitectura, capas ni dimensiones) |
 | Parametros totales | 49.600 (según pesos safetensors) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Por tanto, esta ficha debe leerse como documentación de un artefacto de investi
 
 ## Arquitectura y entrenamiento
 
-No hay información disponible sobre arquitectura más allá del tag `transformer` presente en los metadatos de HuggingFace. El repositorio no incluye fichero de configuración de modelo, tokenizador, model card técnica ni descripción de capas. El recuento de 49.600 parámetros es incompatible con cualquier transformer de lenguaje funcional (incluso los modelos más pequeños de la familia GPT-2 rondan los 124 millones de parámetros), por lo que no debe interpretarse como un modelo entrenado.
+No hay información disponible sobre arquitectura más allá del tag `transformer` presente en los metadatos de Hugging Face. El repositorio no incluye fichero de configuración de modelo, tokenizador, model card técnica ni descripción de capas. El recuento de 49.600 parámetros es incompatible con cualquier transformer de lenguaje funcional (incluso los modelos más pequeños de la familia GPT-2 rondan los 124 millones de parámetros), por lo que no debe interpretarse como un modelo entrenado.
 
 Tampoco hay datos de entrenamiento: no se declara número de tokens, composición del dataset, ni fases de ajuste como RLHF, DPO o SFT. El contenido del repositorio es documental: un fichero `summary.md` con notas de investigación que cubren el alcance de la pregunta de investigación, una comparación propuesta con baselines emparejados, contexto de evaluación (RefCOCO, Flickr30k, Visual Genome), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. La model card insiste en que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
@@ -64,7 +64,7 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: no hay checkpoint entrenado, ni tokenizador, ni código de inferencia, ni pipeline declarado en HuggingFace.
+- No es un modelo utilizable: no hay checkpoint entrenado, ni tokenizador, ni código de inferencia, ni pipeline declarado en Hugging Face.
 - El recuento de 49.600 parámetros no corresponde a ninguna arquitectura de lenguaje funcional; no debe confundirse con un modelo pequeño.
 - Las secciones del repositorio etiquetadas como planes o hipótesis no son resultados experimentales; tratarlas como tales sería un error de interpretación.
 - No hay información sobre sesgos, alucinación o comportamiento en producción, porque no existe un modelo que evaluar.
@@ -76,5 +76,5 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nmmartinez06/survey-grounded-language94
+- Repositorio en Hugging Face: https://huggingface.co/Nmmartinez06/survey-grounded-language94
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código o demos.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Raccoon Tennis Vision es un modelo publicado en HuggingFace por el usuario jshenjs bajo licencia Apache 2.0. Por el identificador, la etiqueta `onnx` y el tamaño del repositorio (1,0 GB), se trata de un modelo de visión orientado a una tarea concreta: la detección o el análisis visual en el contexto del "tennis" (probablemente seguimiento de pelota, detección de jugadores o análisis de pistas), aunque la model card no lo especifica. El autor no ha documentado la tarea exacta, la arquitectura ni el proceso de entrenamiento.
+Raccoon Tennis Vision es un modelo publicado en Hugging Face por el usuario jshenjs bajo licencia Apache 2.0. Por el identificador, la etiqueta `onnx` y el tamaño del repositorio (1,0 GB), se trata de un modelo de visión orientado a una tarea concreta: la detección o el análisis visual en el contexto del "tennis" (probablemente seguimiento de pelota, detección de jugadores o análisis de pistas), aunque la model card no lo especifica. El autor no ha documentado la tarea exacta, la arquitectura ni el proceso de entrenamiento.
 
 La información disponible es mínima: no hay pipeline declarado, no se indican idiomas soportados, no hay resultados de benchmarks ni demos, y el repositorio no registra descargas ni interacciones. El modelo se distribuye exclusivamente en formato ONNX, lo que sugiere un uso previsto de inferencia en producción con runtimes como ONNX Runtime, posiblemente en entornos de borde o aplicaciones de análisis deportivo en tiempo real.
 
@@ -72,5 +72,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jshenjs/raccoon_tennis_vision
+- Hugging Face: https://huggingface.co/jshenjs/raccoon_tennis_vision
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

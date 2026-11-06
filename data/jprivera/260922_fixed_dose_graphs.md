@@ -99,7 +99,7 @@ No disponible. El repositorio no es un modelo, por lo que no existe una categori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jprivera/260922_fixed_dose_graphs
+- Repositorio en Hugging Face: https://huggingface.co/jprivera/260922_fixed_dose_graphs
 - GitHub de PolyMerge (no relacionado con este repositorio): https://github.com/AshenDary/PolyMerge
 - GitHub de model-explorer (no relacionado): https://github.com/google-ai-edge/model-explorer
 - Articulo sobre CNN condicionadas por grafo para histogramas dosis-volumen (no relacionado): https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.70663

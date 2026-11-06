@@ -78,7 +78,7 @@ La diferencia principal es que este runtime está especializado en Apple Silicon
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ryoshu/qwen-mtp-chat-runtime
+- Repositorio de Hugging Face: https://huggingface.co/ryoshu/qwen-mtp-chat-runtime
 - Repositorio GitHub de soporte: https://github.com/ryoshu/qwen-mtp-chat
 - Harness original de Layr-Labs: https://github.com/Layr-Labs/qwen-3.8-mtp-challenge
 - Pesos del modelo (backbone): https://huggingface.co/EigenLabs/Qwen3.8-27B-4bit
@@ -163,7 +163,7 @@ No se dispone de datos de rendimiento para comparar estas opciones.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ryoshu/qwen-mtp-chat-runtime
+- Repositorio de Hugging Face: https://huggingface.co/ryoshu/qwen-mtp-chat-runtime
 - Repositorio GitHub de soporte: https://github.com/ryoshu/qwen-mtp-chat
 - Harness original de Layr-Labs: https://github.com/Layr-Labs/qwen-3.8-mtp-challenge
 - Backbone del modelo: https://huggingface.co/EigenLabs/Qwen3.8-27B-4bit

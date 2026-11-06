@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo completo, sino un adaptador LoRA entrenado con PEFT sobre el modelo base `unsloth/Muse-Glimmer-30B`. Lo publica el usuario `shabieh2` y su única finalidad declarada, según los metadatos de HuggingFace, es la generación de texto con orientación conversacional. El artefacto ocupa 0,9 GB en el repositorio y se distribuye en formato `safetensors` con la librería `peft` (versión 0.20.0 registrada en la model card). No tiene descargas ni «likes» en el momento de la consulta.
+Este repositorio no contiene un modelo completo, sino un adaptador LoRA entrenado con PEFT sobre el modelo base `unsloth/Muse-Glimmer-30B`. Lo publica el usuario `shabieh2` y su única finalidad declarada, según los metadatos de Hugging Face, es la generación de texto con orientación conversacional. El artefacto ocupa 0,9 GB en el repositorio y se distribuye en formato `safetensors` con la librería `peft` (versión 0.20.0 registrada en la model card). No tiene descargas ni «likes» en el momento de la consulta.
 
-La relevancia de esta ficha es, sobre todo, documental: la model card es la plantilla por defecto de HuggingFace sin ningún campo cumplimentado (autoría, datos de entrenamiento, hiperparámetros, evaluación y licencia aparecen todos como «More Information Needed»). El identificador del repositorio sugiere un ajuste fino de un solo epoch con rango LoRA menor o igual a 3 (`..._ranklte3_1_epoch`), pero esta lectura proviene únicamente del nombre del repositorio y no está confirmada por documentación alguna.
+La relevancia de esta ficha es, sobre todo, documental: la model card es la plantilla por defecto de Hugging Face sin ningún campo cumplimentado (autoría, datos de entrenamiento, hiperparámetros, evaluación y licencia aparecen todos como «More Information Needed»). El identificador del repositorio sugiere un ajuste fino de un solo epoch con rango LoRA menor o igual a 3 (`..._ranklte3_1_epoch`), pero esta lectura proviene únicamente del nombre del repositorio y no está confirmada por documentación alguna.
 
 En consecuencia, cualquier evaluación de capacidades, rendimiento o idoneidad para producción debe hacerse empíricamente. Esta ficha recoge los pocos datos verificables y marca explícitamente como «no disponible» todo aquello que el autor no ha publicado.
 
@@ -92,7 +92,7 @@ No se han identificado en la información proporcionada alternativas comparables
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/shabieh2/1017_cluster_lora_fullset_rel34_ranklte3_1_epoch
+- Repositorio Hugging Face del adaptador: https://huggingface.co/shabieh2/1017_cluster_lora_fullset_rel34_ranklte3_1_epoch
 - Modelo base: https://huggingface.co/unsloth/Muse-Glimmer-30B
 - Documentación de PEFT: https://huggingface.co/docs/peft
 - Unsloth: https://github.com/unslothai/unsloth

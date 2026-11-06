@@ -82,7 +82,7 @@ No se dispone de información suficiente para comparar con otros modelos de extr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hbpkillerX/lift-fp8-dynamic
+- Modelo en Hugging Face: https://huggingface.co/hbpkillerX/lift-fp8-dynamic
 - Modelo base: https://huggingface.co/datalab-to/lift
 - Repositorio de LLM Compressor: no disponible en la información proporcionada
 - Paper o blog de Lift: no disponible en la información proporcionada

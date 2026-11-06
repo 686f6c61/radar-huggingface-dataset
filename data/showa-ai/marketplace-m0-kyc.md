@@ -83,8 +83,8 @@ No se dispone de informacion sobre adaptadores comparables de KYC en la document
 
 | Modelo | Parametros | Contexto | Benchmark publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| showa-ai/marketplace-m0-kyc (este adaptador) | No disponible (adaptador LoRA, rank 32) | No disponible | 100,00 % de coincidencia de veredicto en 491 filas held-out (evaluacion del autor) | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-27B-FP8 (base sin adaptador) | 27 000 millones segun denominacion (no confirmado) | No disponible | No disponible | No disponible | HuggingFace |
+| showa-ai/marketplace-m0-kyc (este adaptador) | No disponible (adaptador LoRA, rank 32) | No disponible | 100,00 % de coincidencia de veredicto en 491 filas held-out (evaluacion del autor) | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-27B-FP8 (base sin adaptador) | 27 000 millones segun denominacion (no confirmado) | No disponible | No disponible | No disponible | Hugging Face |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No se dispone de informacion sobre adaptadores comparables de KYC en la document
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/showa-ai/marketplace-m0-kyc
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/showa-ai/marketplace-m0-kyc
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada
 - Nota sobre la busqueda web: los resultados devueltos (fabricante de guantes SHOWA, recambios de suspension Showa, articulos sobre la era Shōwa) no guardan ninguna relacion con este modelo y no se han utilizado como fuente.

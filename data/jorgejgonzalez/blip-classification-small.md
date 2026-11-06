@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jorgejgonzalez/blip-classification-small` es un repositorio de HuggingFace publicado por el usuario jorgejgonzalez que contiene una implementación compacta y personalizada en PyTorch de la arquitectura Blip orientada a tareas de clasificación. No se trata de un modelo preentrenado de producción: la propia model card indica explícitamente que el checkpoint (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y revisiones de código, y que no se presenta como un checkpoint entrenado ni evaluado.
+`jorgejgonzalez/blip-classification-small` es un repositorio de Hugging Face publicado por el usuario jorgejgonzalez que contiene una implementación compacta y personalizada en PyTorch de la arquitectura Blip orientada a tareas de clasificación. No se trata de un modelo preentrenado de producción: la propia model card indica explícitamente que el checkpoint (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y revisiones de código, y que no se presenta como un checkpoint entrenado ni evaluado.
 
 El dato más relevante es su tamaño real: el recuento de parámetros de los safetensors es de 33.088, un orden de magnitud de decenas de miles de parámetros que confirma que es un artefacto de inicialización y no un modelo funcional con capacidad de generalización. Existe además una inconsistencia interna notable entre el nombre del repositorio (`-small`) y la model card, que describe la configuración como `xlarge`; conviene tratarla con cautela.
 
@@ -86,5 +86,5 @@ No disponible. No se dispone de datos de rendimiento, contexto o evaluación de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jorgejgonzalez/blip-classification-small
+- Hugging Face: https://huggingface.co/jorgejgonzalez/blip-classification-small
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

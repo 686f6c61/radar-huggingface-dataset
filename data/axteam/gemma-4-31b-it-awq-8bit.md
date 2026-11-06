@@ -18,7 +18,7 @@ Su relevancia practica es acotada pero concreta: es una variante de servicio lis
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | AWQ INT8 W8A16, pesos INT8 simetricos, group size 32, activaciones BF16, formato compressed-tensors pack-quantized |
 | Idiomas soportados | no disponible en metadatos; el conjunto de calibracion es mayoritariamente coreano y la evaluacion interna mezcla ingles y coreano |
-| Licencia | apache-2.0 en los metadatos de HuggingFace, pero la model card remite a la Gemma 4 license de Google |
+| Licencia | apache-2.0 en los metadatos de Hugging Face, pero la model card remite a la Gemma 4 license de Google |
 | Formato de pesos | safetensors (compressed-tensors pack-quantized) |
 
 Otros datos del repositorio: tamano del repo 35,1 GB, tamano en disco declarado ~32,7 GB, creado el 2026-10-10, actualizado el 2026-10-10, 0 descargas y 0 likes, libreria transformers, compatible con endpoints.
@@ -74,8 +74,8 @@ El propio autor advierte que estas cifras miden fidelidad frente al modelo base,
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| axteam/gemma-4-31B-it-AWQ-8bit | 10,2 B segun safetensors (nombre: 31B) | no disponible | AWQ INT8 W8A16 | apache-2.0 en metadatos / Gemma 4 license | HuggingFace, 0 descargas |
-| google/gemma-4-31B-it (BF16 original) | 31B segun nomenclatura | no disponible | ninguna | Gemma 4 license | HuggingFace |
+| axteam/gemma-4-31B-it-AWQ-8bit | 10,2 B segun safetensors (nombre: 31B) | no disponible | AWQ INT8 W8A16 | apache-2.0 en metadatos / Gemma 4 license | Hugging Face, 0 descargas |
+| google/gemma-4-31B-it (BF16 original) | 31B segun nomenclatura | no disponible | ninguna | Gemma 4 license | Hugging Face |
 | cyankiwi AWQ (referencia publica) | no disponible | no disponible | AWQ | no disponible | citada por el autor, sin resultados publicados aqui |
 | RedHatAI NVFP4 (referencia publica) | no disponible | no disponible | NVFP4 | no disponible | citada por el autor, sin resultados publicados aqui |
 
@@ -85,7 +85,7 @@ En el material de busqueda se mencionan como contemporaneos de la familia Gemma 
 
 - Discrepancia de parametros: el nombre del repositorio y del modelo base indican 31B, mientras que los safetensors declaran 10.223.251.812 parametros. No hay explicacion en la informacion disponible y conviene verificar el checkpoint antes de dimensionar infraestructura.
 - Ambiguedad arquitectonica: la model card describe la arquitectura como "Dense" pero a la vez indica que se preserva en BF16 el router de MoE, lo que es contradictorio.
-- Licencia ambigua: los metadatos de HuggingFace marcan apache-2.0, pero la model card remite a la Gemma 4 license de Google. Para uso comercial debe revisarse la licencia de Gemma 4, que impone condiciones propias a los derivados.
+- Licencia ambigua: los metadatos de Hugging Face marcan apache-2.0, pero la model card remite a la Gemma 4 license de Google. Para uso comercial debe revisarse la licencia de Gemma 4, que impone condiciones propias a los derivados.
 - Riesgo de alucinacion: no se documenta ningun ajuste especifico ni evaluacion de veracidad; al ser una cuantizacion, hereda las limitaciones del modelo base.
 - Sesgos: no hay informacion sobre sesgos. El conjunto de calibracion es mayoritariamente coreano, lo que puede sesgar el comportamiento en otros idiomas tras la cuantizacion, aunque no se han publicado mediciones por idioma.
 - Idiomas: los metadatos no declaran idiomas soportados. La evaluacion del autor es en ingles y coreano, por lo que el rendimiento en castellano no esta verificado.
@@ -96,7 +96,7 @@ En el material de busqueda se mencionan como contemporaneos de la familia Gemma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/gemma-4-31B-it-AWQ-8bit
+- Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-31B-it-AWQ-8bit
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Free AI Models: Licences, Hardware and the Catch (2026): https://valuestreamai.com/free-models

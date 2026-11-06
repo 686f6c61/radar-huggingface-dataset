@@ -4,7 +4,7 @@
 
 El repositorio `BashCache/temp-llada-base-20-snr-weighted-adapters-v3` contiene un adaptador de ajuste fino ligero (LoRA) publicado con la librería PEFT, cuyo modelo base declarado es `BashCache/temp-llada-base-20-snr-weighted`. No se trata, por tanto, de un modelo de lenguaje completo, sino de un conjunto de pesos incrementales que deben cargarse sobre el checkpoint base para obtener un modelo funcional de generación de texto.
 
-La información publicada es mínima: la model card es la plantilla por defecto de HuggingFace sin ningún campo cumplimentado, la licencia figura como no disponible, no se declaran idiomas soportados y el repositorio acumula cero descargas y cero valoraciones. Los únicos datos técnicos verificables son el tamaño del repositorio (0,2 GB), el formato de pesos (safetensors), la etiqueta de pipeline (`text-generation`) y la versión de PEFT empleada (0.20.0).
+La información publicada es mínima: la model card es la plantilla por defecto de Hugging Face sin ningún campo cumplimentado, la licencia figura como no disponible, no se declaran idiomas soportados y el repositorio acumula cero descargas y cero valoraciones. Los únicos datos técnicos verificables son el tamaño del repositorio (0,2 GB), el formato de pesos (safetensors), la etiqueta de pipeline (`text-generation`) y la versión de PEFT empleada (0.20.0).
 
 Por la nomenclatura del identificador, el proyecto parece formar parte de una línea de experimentos sobre LLaDA (un modelo de lenguaje de difusión) con poda y reponderación de adaptadores según una métrica SNR, además de un recorte al 20 %. Esta interpretación es una inferencia a partir del nombre y no está confirmada por ninguna documentación del autor, por lo que debe tratarse con cautela. El repositorio fue creado y actualizado con siete segundos de diferencia el 9 de octubre de 2026, lo que sugiere una subida automatizada o de carácter temporal.
 
@@ -70,8 +70,8 @@ No existen datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluaci
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BashCache/temp-llada-base-20-snr-weighted-adapters-v3 | Adaptador LoRA (PEFT) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| BashCache/temp-llada-base-20-snr-weighted | Modelo base declarado | no disponible | no disponible | no disponible | HuggingFace |
+| BashCache/temp-llada-base-20-snr-weighted-adapters-v3 | Adaptador LoRA (PEFT) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| BashCache/temp-llada-base-20-snr-weighted | Modelo base declarado | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | - | - | - | - |
 
 No se han identificado modelos comparables en la información proporcionada. Un adaptador LoRA no es directamente comparable con un modelo completo, ya que su rendimiento depende del checkpoint base sobre el que se aplique y no puede evaluarse de forma aislada.
@@ -90,7 +90,7 @@ No se han identificado modelos comparables en la información proporcionada. Un 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BashCache/temp-llada-base-20-snr-weighted-adapters-v3
+- Repositorio en Hugging Face: https://huggingface.co/BashCache/temp-llada-base-20-snr-weighted-adapters-v3
 - Modelo base declarado: https://huggingface.co/BashCache/temp-llada-base-20-snr-weighted
 - Referencia citada en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental en aprendizaje automático: https://mlco2.github.io/impact

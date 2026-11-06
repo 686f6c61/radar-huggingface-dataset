@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2b13_svdllm_r40
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2b13_svdllm_r40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-13b-chat-hf
 - Licencia Llama 2: incluida en el repositorio (`LICENSE.txt`, `USE_POLICY.md`)
 - Paper de SVD-LLM, paper de HarmBench, paper de StrongREJECT, paper de WildGuard y repositorio del estudio: no disponibles en la información proporcionada.

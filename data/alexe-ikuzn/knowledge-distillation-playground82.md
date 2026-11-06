@@ -6,7 +6,7 @@
 
 La model card es tajante al respecto: no se reclama ninguna mejora de rendimiento, no se han completado ablaciones, no se libera código de entrenamiento ni un checkpoint entrenado. Las referencias y los conjuntos de datos propuestos se presentan como punto de partida para verificación, no como evidencia de que el estudio se haya ejecutado.
 
-El dato de parámetros que aparece en los metadatos de HuggingFace (33.088, presumiblemente 33.088 millones, es decir, unos 33 mil millones) es inconsistente con el tamaño del repositorio (0,0 GB) y con la naturaleza declarada del artefacto, que solo contiene ficheros Markdown según la propia model card. Cualquier uso del repositorio debe entenderse como consulta de material de investigación, no como despliegue de inferencia.
+El dato de parámetros que aparece en los metadatos de Hugging Face (33.088, presumiblemente 33.088 millones, es decir, unos 33 mil millones) es inconsistente con el tamaño del repositorio (0,0 GB) y con la naturaleza declarada del artefacto, que solo contiene ficheros Markdown según la propia model card. Cualquier uso del repositorio debe entenderse como consulta de material de investigación, no como despliegue de inferencia.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ El dato de parámetros que aparece en los metadatos de HuggingFace (33.088, pres
 
 ## Arquitectura y entrenamiento
 
-No hay arquitectura de modelo que describir. El tag `transformer` figura en los metadatos de HuggingFace, pero la model card no documenta ninguna topología, configuración de capas, cabezas de atención ni mecanismo de mezcla de expertos. Tampoco se especifican datos de entrenamiento: no se indica número de tokens, composición del corpus, ni si hubo ajuste por RLHF, DPO u otra técnica de alineamiento.
+No hay arquitectura de modelo que describir. El tag `transformer` figura en los metadatos de Hugging Face, pero la model card no documenta ninguna topología, configuración de capas, cabezas de atención ni mecanismo de mezcla de expertos. Tampoco se especifican datos de entrenamiento: no se indica número de tokens, composición del corpus, ni si hubo ajuste por RLHF, DPO u otra técnica de alineamiento.
 
 Lo que sí documenta el repositorio es el diseño metodológico de un futuro estudio de destilación: el alcance de la pregunta de investigación, los factores de confusión probables, una comparación propuesta con líneas base emparejadas, benchmarks públicos adecuados a la tarea y comprobaciones de reproducibilidad con modos de fallo y preguntas abiertas. El autor exige que, si en el futuro se añaden resultados, estos incluyan versiones de los conjuntos de datos, comandos, semillas, hardware y registros en bruto.
 
@@ -74,7 +74,7 @@ No disponible. No existen modelos comparables en la misma categoría porque este
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexe-ikuzn/knowledge-distillation-playground82
+- Repositorio en Hugging Face: https://huggingface.co/alexe-ikuzn/knowledge-distillation-playground82
 - Artefacto principal citado en la model card: `notes.md` (dentro del repositorio)
 - Documentación: `README.md` (dentro del repositorio)
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

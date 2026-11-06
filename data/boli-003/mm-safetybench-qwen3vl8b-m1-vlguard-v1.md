@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mm-safetybench-qwen3vl8b-m1-vlguard-v1` es un adaptador LoRA de rango 16 publicado por el usuario boli-003 en HuggingFace, diseñado para el proyecto de evaluación de seguridad multimodal MM-SafetyBench. No se trata de un modelo autónomo, sino de un adaptador PEFT que debe cargarse sobre la revisión exacta del modelo base Qwen/Qwen3-VL-8B-Instruct (revisión `0c351dd01ed87e9c1b53cbc748cba10e6187ff3b`). El adaptador se etiqueta como "M1" dentro de un pipeline de evaluación que incluye un revisor visual congelado separado denominado "M3".
+`mm-safetybench-qwen3vl8b-m1-vlguard-v1` es un adaptador LoRA de rango 16 publicado por el usuario boli-003 en Hugging Face, diseñado para el proyecto de evaluación de seguridad multimodal MM-SafetyBench. No se trata de un modelo autónomo, sino de un adaptador PEFT que debe cargarse sobre la revisión exacta del modelo base Qwen/Qwen3-VL-8B-Instruct (revisión `0c351dd01ed87e9c1b53cbc748cba10e6187ff3b`). El adaptador se etiqueta como "M1" dentro de un pipeline de evaluación que incluye un revisor visual congelado separado denominado "M3".
 
 El propósito declarado es servir como artefacto reproducible para evaluación de seguridad en entornos multimodales, no para despliegue en producción. El repositorio incluye hashes SHA-256 del árbol de contenido del modelo base, del archivo `adapter_model.safetensors` y del `adapter_config.json`, lo que permite verificar la integridad del artefacto. El entrenamiento original está congelado y no se distribuyen ni los datos de entrenamiento ni los scripts.
 
@@ -79,6 +79,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/boli-003/mm-safetybench-qwen3vl8b-m1-vlguard-v1
+- Hugging Face: https://huggingface.co/boli-003/mm-safetybench-qwen3vl8b-m1-vlguard-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Paquete GitHub del proyecto: mencionado en la model card como "linked GitHub project package", sin URL explícita en la información disponible.

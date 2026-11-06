@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks de terceros para establecer una comparativa
 
 | Modelo | Parametros | Contexto | GPQA Diamond | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Darwin-397B-ZTC | ~403,6 B totales / ~17 B activos | 262.144 tokens | 93,43 | apache-2.0 | Pesos abiertos en HuggingFace (FP8, 418,7 GB) |
+| Darwin-397B-ZTC | ~403,6 B totales / ~17 B activos | 262.144 tokens | 93,43 | apache-2.0 | Pesos abiertos en Hugging Face (FP8, 418,7 GB) |
 | Darwin-398B-JGOS | 397B MoE | no disponible | 90,9 | no disponible en la informacion | Pesos abiertos segun la model card |
 | Darwin-28B-REASON | 28B + DELPHI | no disponible | 89,39 | no disponible en la informacion | Pesos abiertos segun la model card |
 | Qwen/Qwen3.5-397B-A17B (backbone) | ~397B totales / ~17 B activos | no disponible | no disponible | apache-2.0 | Pesos abiertos |
@@ -117,7 +117,7 @@ No hay informacion disponible sobre comparativas con modelos de otros desarrolla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FINAL-Bench/Darwin-397B-ZTC
+- Modelo en Hugging Face: https://huggingface.co/FINAL-Bench/Darwin-397B-ZTC
 - Sitio del autor (VIDRAFT): https://vidraft.net
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-397B-A17B
 - Modelos relacionados de la familia Darwin citados en la model card:

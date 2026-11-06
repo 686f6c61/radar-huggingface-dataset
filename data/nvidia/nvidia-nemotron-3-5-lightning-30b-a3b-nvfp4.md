@@ -16,7 +16,7 @@ El modelo se distribuye en dos formatos de pesos: NVFP4 (cuantización de 4 bits
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | NVFP4, BF16 |
 | Idiomas soportados | en, es, fr, de, it, ja |
-| Licencia | no disponible (etiquetada como "other" en HuggingFace) |
+| Licencia | no disponible (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -61,7 +61,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Limitaciones y advertencias
 
-- La licencia no está especificada en HuggingFace (etiquetada como "other"); es necesario verificar los términos de uso antes de implementarlo en producción comercial.
+- La licencia no está especificada en Hugging Face (etiquetada como "other"); es necesario verificar los términos de uso antes de implementarlo en producción comercial.
 - No se ha publicado la longitud de contexto exacta, lo que limita la planificación de aplicaciones que requieran ventanas largas.
 - Al ser un modelo optimizado para tareas agénticas, puede mostrar un rendimiento inferior en tareas de generación creativa o conversación abierta en comparación con modelos generalistas.
 - Riesgo de alucinación inherente a los modelos de lenguaje; se recomienda validación externa en aplicaciones críticas.
@@ -70,7 +70,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- [HuggingFace - NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4)
+- [Hugging Face - NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4)
 - [Blog de NVIDIA Developer - Nemotron 3.5 Lightning](https://developer.nvidia.com/blog/nvidia-nemotron-3-5-lightning-delivers-fast-accurate-specialized-task-execution-for-long-running-agents/)
 - [NVIDIA NIM - Model Card](https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard)
 - [NVIDIA NGC - Nemotron 3.5 Lightning BF16](https://catalog.ngc.nvidia.com/orgs/nim/nvidia/models/nemotron-3.5-lightning)

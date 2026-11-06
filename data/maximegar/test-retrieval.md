@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maximegar/test-retrieval` es un repositorio experimental alojado en HuggingFace que contiene un esqueleto de codigo de CLIP (Contrastive Language-Image Pre-training) orientado a tareas de recuperacion (retrieval) texto-imagen. Lo publica el usuario maximegar y se distribuye bajo licencia MIT. El repositorio no es un modelo entrenado ni una checkpoint utilizable en produccion: la propia model card lo describe como una base de codigo para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y el fichero `model.safetensors` se presenta explicitamente como una inicializacion valida para pruebas de humo (smoke tests), no como una checkpoint evaluada.
+`maximegar/test-retrieval` es un repositorio experimental alojado en Hugging Face que contiene un esqueleto de codigo de CLIP (Contrastive Language-Image Pre-training) orientado a tareas de recuperacion (retrieval) texto-imagen. Lo publica el usuario maximegar y se distribuye bajo licencia MIT. El repositorio no es un modelo entrenado ni una checkpoint utilizable en produccion: la propia model card lo describe como una base de codigo para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y el fichero `model.safetensors` se presenta explicitamente como una inicializacion valida para pruebas de humo (smoke tests), no como una checkpoint evaluada.
 
 El dato mas relevante para cualquier evaluacion es la discrepancia entre la configuracion declarada y el artefacto real. La tabla de arquitectura de la model card indica escala "huge", atencion multi-query, fusion con compuertas (gated fusion), activacion swish y normalizacion scalenorm, pero el recuento real de parametros del fichero safetensors es de 16.576 parametros totales. Es decir, cuatro ordenes de magnitud por debajo de lo que implicaria una configuracion CLIP de escala grande, lo que confirma que se trata de una inicializacion minima para validar que el codigo se ejecuta, no de un modelo con capacidad representacional util.
 
@@ -70,7 +70,7 @@ La comparacion significativa es contra implementaciones CLIP consolidadas. Los d
 
 | Modelo | Parametros | Contexto de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| maximegar/test-retrieval | 16.576 | no disponible | MIT | HuggingFace, checkpoint sin entrenar |
+| maximegar/test-retrieval | 16.576 | no disponible | MIT | Hugging Face, checkpoint sin entrenar |
 | OpenAI CLIP ViT-B/32 | ~151 M (aproximado) | 77 tokens (aproximado) | MIT | Pesos publicos, checkpoint entrenado |
 | OpenAI CLIP ViT-L/14 | ~428 M (aproximado) | 77 tokens (aproximado) | MIT | Pesos publicos, checkpoint entrenado |
 | SigLIP Base | ~203 M (aproximado) | basado en pares, sin limite de 77 tokens | Apache 2.0 (variantes) | Pesos publicos, checkpoint entrenado |
@@ -91,6 +91,6 @@ La diferencia de capacidad es de aproximadamente cuatro ordenes de magnitud fren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maximegar/test-retrieval
-- Perfil del autor (Maxime Garnier) en HuggingFace: https://huggingface.co/maximegar
+- Modelo en Hugging Face: https://huggingface.co/maximegar/test-retrieval
+- Perfil del autor (Maxime Garnier) en Hugging Face: https://huggingface.co/maximegar
 - Repositorio relacionado del mismo autor, `paper_017872909_text_image_retrieval`: https://huggingface.co/maximegar/paper_017872909_text_image_retrieval

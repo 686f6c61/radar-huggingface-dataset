@@ -94,7 +94,7 @@ No se han publicado en la información disponible resultados de HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Estado |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-UNCENSORED-FP8 | 763,2 B totales (8 B/16 B activos, según model card) | 1 M tokens | Sí (DeepSeek-ViT) | MIT | Publicado en HuggingFace, 0 descargas |
+| DeepSeek-V4.1-Flash-UNCENSORED-FP8 | 763,2 B totales (8 B/16 B activos, según model card) | 1 M tokens | Sí (DeepSeek-ViT) | MIT | Publicado en Hugging Face, 0 descargas |
 | deepseek-ai/DeepSeek-V4.1-Flash (base) | No disponible en detalle (el derivado cita 552 B de backbone) | 1 M tokens | Sí | No disponible | Modelo de referencia del que deriva |
 
 No se dispone en la información proporcionada de datos verificables de otros modelos comparables de la misma categoría (por ejemplo, alternativas MoE multimodales de escala frontera), por lo que la comparativa con terceros queda como no disponible. La única comparación con datos es contra el propio modelo base, cuyos resultados en HarmBench-320 y MMLU-14k se recogen en la sección de benchmarks.
@@ -114,7 +114,7 @@ No se dispone en la información proporcionada de datos verificables de otros mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LvcidPsyche/DeepSeek-V4.1-Flash-UNCENSORED-FP8
+- Modelo en Hugging Face: https://huggingface.co/LvcidPsyche/DeepSeek-V4.1-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Perfil del autor en X: https://x.com/dealignai
 - Perfil del coautor en X: https://x.com/jordanschenck

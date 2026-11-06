@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JEV-35B-bf16 es un port en precision completa (bf16) del modelo autotrust/JEV-35B, publicado por el usuario rty813 en HuggingFace. Se trata de una conversion del checkpoint original a formato PyTorch (`pytorch_model.bin`) pensada para usuarios de vLLM, TGI, Xinference y transformers que prefieren trabajar con pesos sin cuantizar en lugar de con la version GGUF. El repositorio es una derivacion directa: la arquitectura y los pesos son identicos a los del modelo original, por lo que funciona como sustituto directo mediante `AutoModelForCausalLM.from_pretrained`.
+JEV-35B-bf16 es un port en precision completa (bf16) del modelo autotrust/JEV-35B, publicado por el usuario rty813 en Hugging Face. Se trata de una conversion del checkpoint original a formato PyTorch (`pytorch_model.bin`) pensada para usuarios de vLLM, TGI, Xinference y transformers que prefieren trabajar con pesos sin cuantizar en lugar de con la version GGUF. El repositorio es una derivacion directa: la arquitectura y los pesos son identicos a los del modelo original, por lo que funciona como sustituto directo mediante `AutoModelForCausalLM.from_pretrained`.
 
 El modelo original, autotrust/JEV-35B, es un fine-tuning de Qwen/Qwen3.5-35B-A3B orientado a la toma de decisiones ("decision model") en lugar de a la generacion de texto abierta. Su propuesta es sustituir equipos completos de ranking por un unico modelo que emite decisiones tipadas con probabilidades calibradas, bajo el paradigma denominado System 1 en su model card. La nomenclatura del modelo base (35B-A3B) y las etiquetas `qwen3_5_moe` y `mixture-of-experts` apuntan a una arquitectura de mezcla de expertos con 35 000 millones de parametros totales, aunque el numero de parametros activos no se explicita en la informacion disponible.
 
@@ -69,8 +69,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rty813/JEV-35B-bf16 | 35B (MoE, activos no disponibles) | no disponible | No evaluado de forma independiente | Apache 2.0 | HuggingFace, 0 descargas |
-| autotrust/JEV-35B | 35B (MoE, activos no disponibles) | no disponible | Decision Index 0.3: 59.73 (puntuacion propia) | Apache 2.0 | HuggingFace, con version GGUF |
+| rty813/JEV-35B-bf16 | 35B (MoE, activos no disponibles) | no disponible | No evaluado de forma independiente | Apache 2.0 | Hugging Face, 0 descargas |
+| autotrust/JEV-35B | 35B (MoE, activos no disponibles) | no disponible | Decision Index 0.3: 59.73 (puntuacion propia) | Apache 2.0 | Hugging Face, con version GGUF |
 | Qwen/Qwen3.5-35B-A3B | 35B (MoE, activos no disponibles) | no disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Modelo base del que deriva JEV-35B |
 
 No se dispone de datos suficientes para comparar con alternativas de la misma categoria fuera de la familia Qwen3.5/JEV.
@@ -89,7 +89,7 @@ No se dispone de datos suficientes para comparar con alternativas de la misma ca
 
 ## Enlaces
 
-- Repositorio HuggingFace de este port: https://huggingface.co/rty813/JEV-35B-bf16
+- Repositorio Hugging Face de este port: https://huggingface.co/rty813/JEV-35B-bf16
 - Modelo original: https://huggingface.co/autotrust/JEV-35B
 - Modelo base del que deriva el original: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Blog del autor, "One Decision Model Instead of a Ranking Team": https://huggingface.co/blog/autotrust/one-decision-model-instead-of-a-ranking-team-short

@@ -77,7 +77,7 @@ El checkpoint SFT de este repositorio supera a Qwen3-VL-4B-SFT y a Rex-Omni-3B (
 
 | Modelo | Parametros | Contexto | HICO-DET Default Full (mAP) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HOI-R1_Qwen3.5-4B-SFT (este) | 4,54B | no disponible | 29,36 | Apache 2.0 | HuggingFace |
+| HOI-R1_Qwen3.5-4B-SFT (este) | 4,54B | no disponible | 29,36 | Apache 2.0 | Hugging Face |
 | Qwen3-VL-4B-SFT | ~4B | no disponible | 22,46 | no disponible en la información | Referencia en la tabla del autor |
 | Rex-Omni-3B (HOI-SFT) | ~3B | no disponible | 25,30 | no disponible en la información | Referencia en la tabla del autor |
 | QPIC (método tradicional HOID) | no aplica | no aplica | 29,07 | no disponible en la información | Referencia en la tabla del autor |
@@ -95,7 +95,7 @@ El checkpoint SFT de este repositorio supera a Qwen3-VL-4B-SFT y a Rex-Omni-3B (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thxplz/HOI-R1_Qwen3.5-4B-SFT
+- Modelo en Hugging Face: https://huggingface.co/thxplz/HOI-R1_Qwen3.5-4B-SFT
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/thxplz/HOI-R1_HICO-DET_dataset
 - Paper HOI-R1: https://arxiv.org/abs/2510.05609

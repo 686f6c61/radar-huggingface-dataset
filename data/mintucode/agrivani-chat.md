@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mintucode/agrivani-chat` es un modelo de lenguaje publicado en HuggingFace por el usuario `mintucode` bajo licencia MIT. El repositorio contiene un archivo en formato GGUF de aproximadamente 1,6 GB, lo que sugiere que se trata de un modelo cuantizado pensado para ejecución local en dispositivos con recursos limitados. El nombre del modelo sugiere una orientación hacia el dominio agrícola, posiblemente relacionado con el proyecto AgriVani, un asistente de IA para agricultores indios que aparece en varios repositorios de GitHub y en una entrada de Devpost. Sin embargo, la model card oficial no proporciona ninguna descripción, arquitectura, datos de entrenamiento ni especificaciones adicionales, por lo que la información disponible es extremadamente limitada.
+El modelo `mintucode/agrivani-chat` es un modelo de lenguaje publicado en Hugging Face por el usuario `mintucode` bajo licencia MIT. El repositorio contiene un archivo en formato GGUF de aproximadamente 1,6 GB, lo que sugiere que se trata de un modelo cuantizado pensado para ejecución local en dispositivos con recursos limitados. El nombre del modelo sugiere una orientación hacia el dominio agrícola, posiblemente relacionado con el proyecto AgriVani, un asistente de IA para agricultores indios que aparece en varios repositorios de GitHub y en una entrada de Devpost. Sin embargo, la model card oficial no proporciona ninguna descripción, arquitectura, datos de entrenamiento ni especificaciones adicionales, por lo que la información disponible es extremadamente limitada.
 
 La relevancia de este modelo radica en su potencial aplicación en el sector agrícola, un área donde la IA puede ofrecer asistencia práctica a agricultores mediante chatbots multilingües, predicción de precios de mercado o detección de enfermedades de cultivos. No obstante, al carecer de documentación oficial, cualquier afirmación sobre sus capacidades concretas debe considerarse especulativa. El modelo se publicó el 2 de septiembre de 2026 y no ha recibido descargas ni valoraciones en la plataforma, lo que indica que es un lanzamiento reciente y sin validación comunitaria.
 
@@ -75,7 +75,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mintucode/agrivani-chat
+- Repositorio en Hugging Face: https://huggingface.co/mintucode/agrivani-chat
 - Proyecto AgriVani en GitHub (shauntjacob): https://github.com/shauntjacob/Agrivani
 - Proyecto AgriVani en GitHub (saurabhhhcodes): https://github.com/saurabhhhcodes/agrivani
 - Entrada en Devpost: https://devpost.com/software/agrivani

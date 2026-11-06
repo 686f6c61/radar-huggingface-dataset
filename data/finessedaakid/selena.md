@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `finessedaakid/selena` aloja un modelo identificado como "selena", publicado en HuggingFace el 1 de septiembre de 2026 por el autor `finessedaakid`. La ficha del modelo declara únicamente una licencia MIT, sin ningún otro dato técnico. El tamaño del repositorio es de 0.0 GB, lo que sugiere que no contiene pesos, archivos de configuración ni documentación adicional. No se dispone de información sobre arquitectura, parámetros, entrenamiento o capacidades.
+El repositorio `finessedaakid/selena` aloja un modelo identificado como "selena", publicado en Hugging Face el 1 de septiembre de 2026 por el autor `finessedaakid`. La ficha del modelo declara únicamente una licencia MIT, sin ningún otro dato técnico. El tamaño del repositorio es de 0.0 GB, lo que sugiere que no contiene pesos, archivos de configuración ni documentación adicional. No se dispone de información sobre arquitectura, parámetros, entrenamiento o capacidades.
 
-Los resultados de búsqueda web no aportan datos relevantes sobre este repositorio concreto. Existen modelos homónimos o similares ("Selina", "Selena") en otras plataformas, como SeaArt o PixAI, dedicados a generación de imágenes, y una aplicación comercial llamada Selina AI, pero ninguno de ellos corresponde al modelo alojado en esta URL de HuggingFace. Por tanto, la información disponible es insuficiente para realizar una evaluación técnica rigurosa.
+Los resultados de búsqueda web no aportan datos relevantes sobre este repositorio concreto. Existen modelos homónimos o similares ("Selina", "Selena") en otras plataformas, como SeaArt o PixAI, dedicados a generación de imágenes, y una aplicación comercial llamada Selina AI, pero ninguno de ellos corresponde al modelo alojado en esta URL de Hugging Face. Por tanto, la información disponible es insuficiente para realizar una evaluación técnica rigurosa.
 
 ## Especificaciones tecnicas
 
@@ -53,5 +53,5 @@ No disponible. No existe información suficiente para establecer comparaciones c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/finessedaakid/selena
+- Repositorio Hugging Face: https://huggingface.co/finessedaakid/selena
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) asociados a este modelo concreto.

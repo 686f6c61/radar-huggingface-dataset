@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rlve-opd-student-R1Distill-n32-rl (este modelo) | 1,78 B | no disponible | RL/GRPO sobre 32 entornos, 64.000 rollouts | no disponible | Publico en HuggingFace, 0 descargas |
+| rlve-opd-student-R1Distill-n32-rl (este modelo) | 1,78 B | no disponible | RL/GRPO sobre 32 entornos, 64.000 rollouts | no disponible | Publico en Hugging Face, 0 descargas |
 | deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | ~1,78 B | no disponible en esta ficha | Destilacion de trazas de DeepSeek-R1 sobre Qwen2 | no verificada en la informacion disponible | Publico y ampliamente utilizado |
-| davidheineman/rlve-opd-teacher-R1Distill-079-MYJ-20261025 | no disponible | no disponible | Teacher del mismo experimento RLVE | no disponible | Publico en HuggingFace |
+| davidheineman/rlve-opd-teacher-R1Distill-079-MYJ-20261025 | no disponible | no disponible | Teacher del mismo experimento RLVE | no disponible | Publico en Hugging Face |
 | Qwen2.5-1.5B-Instruct (referencia de la misma escala) | ~1,5 B (cifra publica aproximada) | no disponible en esta ficha | Preentrenamiento + post-entrenamiento instruction tuning | no verificada en la informacion disponible | Publico |
 
 La comparacion relevante es contra el modelo base: este checkpoint anyade un ajuste por RL sobre los mismos pesos, de modo que cualquier diferencia de comportamiento es atribuible al entrenamiento GRPO y no a la arquitectura. Frente a alternativas de la misma escala como Qwen2.5-1.5B-Instruct, la diferencia principal es el objetivo: aqui no hay optimizacion para instrucciones generales, sino para tareas verificables dentro de entornos acotados.
@@ -95,7 +95,7 @@ La comparacion relevante es contra el modelo base: este checkpoint anyade un aju
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-student-R1Distill-n32-rl-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-student-R1Distill-n32-rl-20261025
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Run de entrenamiento en W&B: https://wandb.ai/david-heineman/rl-data-scaling-students-v1/runs/ec784910
 - Modelo teacher del mismo experimento: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-079-MYJ-20261025

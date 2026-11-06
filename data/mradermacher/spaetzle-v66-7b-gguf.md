@@ -78,7 +78,7 @@ No se dispone de informacion suficiente sobre modelos comparables de la misma ca
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Spaetzle-v66-7b-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Spaetzle-v66-7b-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/cstr/Spaetzle-v66-7b
 - Pagina de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
 - Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

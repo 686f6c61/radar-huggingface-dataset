@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lost-in-transcription-spanish-english es un adaptador LoRA (PEFT) entrenado sobre el modelo base Qwen/Qwen3-ASR-1.7B y especializado en reconocimiento automatico del habla (ASR) para conversaciones con alternancia de codigo (code-switching) espanol-ingles. Lo publica el usuario Ronochieng en HuggingFace y esta pensado para la pista "Lost in Transcription Spanish-English", una tarea de evaluacion centrada en habla conversacional bilingue, un escenario donde los sistemas ASR genericos pierden precision al cambiar de idioma dentro de una misma frase.
+lost-in-transcription-spanish-english es un adaptador LoRA (PEFT) entrenado sobre el modelo base Qwen/Qwen3-ASR-1.7B y especializado en reconocimiento automatico del habla (ASR) para conversaciones con alternancia de codigo (code-switching) espanol-ingles. Lo publica el usuario Ronochieng en Hugging Face y esta pensado para la pista "Lost in Transcription Spanish-English", una tarea de evaluacion centrada en habla conversacional bilingue, un escenario donde los sistemas ASR genericos pierden precision al cambiar de idioma dentro de una misma frase.
 
 El modelo resuelve un problema concreto: la transcripcion de habla espontanea en la que los hablantes alternan espanol e ingles sin marcar el cambio, algo comun en comunidades hispanohablantes de Estados Unidos. Frente al modelo base sin ajustar (WER de 0,20106 en hablantes de desarrollo no vistos), el adaptador reduce el WER a 0,14665, lo que supone una mejora relativa de aproximadamente el 27 por ciento en esa misma particion. La evaluacion se hizo con hablantes retenidos que no comparten hablante ni conversacion con el conjunto de entrenamiento, lo que evita el optimismo que introduciria una particion aleatoria.
 
@@ -28,7 +28,7 @@ Se trata de un artefacto de investigacion pequeno y reproducible: el autor docum
 | Datos de entrenamiento | 40.108 filas, 30,218 horas, hash de contenido `f42cb4df078ceeda` |
 | Semilla y huella de configuracion | `3407` / `e5c3226e99e0f072` |
 | Commit de entrenamiento | `77575b8f91cf` (arbol de trabajo con cambios sin confirmar en el momento del run) |
-| Fecha de publicacion en el repositorio | 2026-09-28 (fecha declarada en los metadatos de HuggingFace) |
+| Fecha de publicacion en el repositorio | 2026-09-28 (fecha declarada en los metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -84,8 +84,8 @@ Observaciones sobre la tabla: la mejora absoluta es de 5,44 puntos porcentuales 
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad | WER en este benchmark |
 |---|---|---|---|---|---|
-| lost-in-transcription-spanish-english | 1.700 M (base) + LoRA | Adaptador LoRA para ASR es-en | MPL-2.0 | Pesos en HuggingFace (adaptador y fusionado) | 0,14665 en hablante retenido |
-| Qwen/Qwen3-ASR-1.7B (base) | 1.700 M | ASR multimodal | No disponible en la informacion proporcionada | Pesos en HuggingFace | 0,20106 en modo zero-shot |
+| lost-in-transcription-spanish-english | 1.700 M (base) + LoRA | Adaptador LoRA para ASR es-en | MPL-2.0 | Pesos en Hugging Face (adaptador y fusionado) | 0,14665 en hablante retenido |
+| Qwen/Qwen3-ASR-1.7B (base) | 1.700 M | ASR multimodal | No disponible en la informacion proporcionada | Pesos en Hugging Face | 0,20106 en modo zero-shot |
 | Whisper large-v3 | 1.550 M | ASR encoder-decoder sobre ventanas de 30 s | MIT | Pesos ampliamente distribuidos | No disponible en este benchmark |
 | Whisper large-v3-turbo | 809 M | ASR encoder-decoder destilado | MIT | Pesos ampliamente distribuidos | No disponible en este benchmark |
 
@@ -101,12 +101,12 @@ La comparacion con las alternativas se limita a parametros, licencia y disponibi
 - La evaluacion se apoya en un unico conjunto de desarrollo con 3.014 palabras de referencia; el margen de error de esa estimacion es amplio y no se publican intervalos de confianza.
 - La reproducibilidad es fragil: el autor advierte que cambiar de GPU o de tamano de lote modifica el orden de reduccion y desplaza el WER, y que el arbol de trabajo estaba modificado en el momento del run (`77575b8f91cf`, working tree dirty).
 - La licencia MPL-2.0 permite uso comercial, pero es copyleft a nivel de fichero: las modificaciones sobre ficheros cubiertos deben publicarse bajo la misma licencia. Conviene revisar ademas la licencia del modelo base Qwen3-ASR-1.7B, que no se especifica en la informacion proporcionada.
-- Los metadatos de HuggingFace declaran fecha de creacion 2026-09-28, posterior a la fecha actual; es necesario verificar la vigencia real del repositorio antes de integrarlo en produccion.
+- Los metadatos de Hugging Face declaran fecha de creacion 2026-09-28, posterior a la fecha actual; es necesario verificar la vigencia real del repositorio antes de integrarlo en produccion.
 - No hay informacion sobre ventana de contexto ni duracion maxima de audio soportada, lo que impide planificar troceado de audio para ficheros largos.
 - Repositorio sin descargas ni likes en el momento de la consulta: no existe validacion independiente de terceros sobre los resultados publicados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ronochieng/lost-in-transcription-spanish-english
+- Modelo en Hugging Face: https://huggingface.co/Ronochieng/lost-in-transcription-spanish-english
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, su paper, su repositorio de codigo ni demostraciones. Los unicos resultados devueltos por la busqueda eran sitios de contenido para adultos sin relacion alguna con el modelo, por lo que se han descartado.

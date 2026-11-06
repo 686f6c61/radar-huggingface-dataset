@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sspq/lekiwi_pick_and_place_ku` es una política de robótica basada en ACT (Action Chunking with Transformers), publicada por el usuario sspq en HuggingFace Hub mediante la librería LeRobot de HuggingFace. No es un modelo de lenguaje: se trata de un modelo visomotor de imitación que, a partir del estado propioceptivo del robot y de dos cámaras RGB, predice directamente comandos de acción de 9 dimensiones. Su arquitectura es un transformer con *action chunking*, es decir, que genera secuencias cortas de acciones en lugar de un único paso, un enfoque que el artículo de referencia (arXiv 2304.13705) asocia a tasas de éxito altas en manipulación.
+El modelo `sspq/lekiwi_pick_and_place_ku` es una política de robótica basada en ACT (Action Chunking with Transformers), publicada por el usuario sspq en Hugging Face Hub mediante la librería LeRobot de Hugging Face. No es un modelo de lenguaje: se trata de un modelo visomotor de imitación que, a partir del estado propioceptivo del robot y de dos cámaras RGB, predice directamente comandos de acción de 9 dimensiones. Su arquitectura es un transformer con *action chunking*, es decir, que genera secuencias cortas de acciones en lugar de un único paso, un enfoque que el artículo de referencia (arXiv 2304.13705) asocia a tasas de éxito altas en manipulación.
 
 El modelo tiene 51.674.761 parámetros (~51,7 M) y ocupa 0,2 GB en el repositorio, lo que lo sitúa en la categoría de políticas ligeras ejecutables en tiempo real sobre hardware de consumo. Está especializado en una única tarea: "Pick a red cube and place it on box", y fue entrenado con 110 episodios (28.632 fotogramas a 30 FPS, aproximadamente 15,9 minutos de datos) capturados con un robot de tipo `lekiwi_client` y dos cámaras (`front` y `wrist`).
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Tipo | Parámetros | Entradas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| `sspq/lekiwi_pick_and_place_ku` (este) | ACT (action chunking transformer) | 51.674.761 | Estado (9,) + 2 RGB 480×640 | Apache 2.0 | HuggingFace Hub, vía LeRobot | Dataset público de 110 episodios; sin resultados de evaluación |
-| ACT de referencia en LeRobot (`lerobot/act_aloha_sim_transfer_cube_human`) | ACT | no disponible | Estado + imágenes de cámaras | Apache 2.0 | HuggingFace Hub, vía LeRobot | Implementación de referencia sobre simulación ALOHA; cifras concretas no disponibles en la información proporcionada |
+| `sspq/lekiwi_pick_and_place_ku` (este) | ACT (action chunking transformer) | 51.674.761 | Estado (9,) + 2 RGB 480×640 | Apache 2.0 | Hugging Face Hub, vía LeRobot | Dataset público de 110 episodios; sin resultados de evaluación |
+| ACT de referencia en LeRobot (`lerobot/act_aloha_sim_transfer_cube_human`) | ACT | no disponible | Estado + imágenes de cámaras | Apache 2.0 | Hugging Face Hub, vía LeRobot | Implementación de referencia sobre simulación ALOHA; cifras concretas no disponibles en la información proporcionada |
 | Diffusion Policy (Chi et al., 2023) | Política generativa por difusión | no disponible | Estado + imágenes | no disponible | Implementaciones de referencia en repositorios de investigación | Enfoque alternativo con inferencia iterativa, generalmente más costosa por paso que el action chunking |
-| SmolVLA (HuggingFace) | VLA (visión-lenguaje-acción) | no disponible | Estado + imágenes + instrucción en lenguaje | no disponible | HuggingFace Hub, vía LeRobot | Añade condicionamiento por lenguaje, lo que permite múltiples tareas con un solo modelo; no comparable en tamaño de datos con esta política |
+| SmolVLA (Hugging Face) | VLA (visión-lenguaje-acción) | no disponible | Estado + imágenes + instrucción en lenguaje | no disponible | Hugging Face Hub, vía LeRobot | Añade condicionamiento por lenguaje, lo que permite múltiples tareas con un solo modelo; no comparable en tamaño de datos con esta política |
 
 Los datos de parámetros, contexto y rendimiento de los modelos alternativos no están disponibles en la información proporcionada, por lo que la comparación se limita a categoría, licencia y forma de distribución.
 
@@ -99,11 +99,11 @@ Los datos de parámetros, contexto y rendimiento de los modelos alternativos no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sspq/lekiwi_pick_and_place_ku
+- Modelo en Hugging Face: https://huggingface.co/sspq/lekiwi_pick_and_place_ku
 - Dataset de entrenamiento: https://huggingface.co/datasets/sspq/lekiwi_pick_and_place_red_cube
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=sspq/lekiwi_pick_and_place_red_cube
 - Artículo de ACT (arXiv 2304.13705): https://arxiv.org/abs/2304.13705
-- Página del artículo en HuggingFace: https://huggingface.co/papers/2304.13705
+- Página del artículo en Hugging Face: https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Guía de ACT en LeRobot: https://huggingface.co/docs/lerobot/main/en/act
 - Documentación completa de LeRobot: https://huggingface.co/docs/lerobot/index

@@ -77,9 +77,9 @@ No se dispone de benchmarks comparativos entre estos modelos. La comparativa se 
 
 ## Enlaces
 
-- [HuggingFace - ThePilot999/FastWan2.1-T2V-1.3B-Diffusers](https://huggingface.co/ThePilot999/FastWan2.1-T2V-1.3B-Diffusers)
-- [HuggingFace - FastVideo/FastWan2.1-T2V-1.3B-Diffusers (original)](https://huggingface.co/FastVideo/FastWan2.1-T2V-1.3B-Diffusers)
-- [HuggingFace - Wan-AI/Wan2.1-T2V-1.3B-Diffusers (modelo base)](https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers)
+- [Hugging Face - ThePilot999/FastWan2.1-T2V-1.3B-Diffusers](https://huggingface.co/ThePilot999/FastWan2.1-T2V-1.3B-Diffusers)
+- [Hugging Face - FastVideo/FastWan2.1-T2V-1.3B-Diffusers (original)](https://huggingface.co/FastVideo/FastWan2.1-T2V-1.3B-Diffusers)
+- [Hugging Face - Wan-AI/Wan2.1-T2V-1.3B-Diffusers (modelo base)](https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers)
 - [GitHub - FastVideo](https://github.com/hao-ai-lab/FastVideo)
 - [Paper VSA - arXiv:2505.13389](https://arxiv.org/abs/2505.13389)
 - [Paper Fast video generation - arXiv:2502.04507](https://arxiv.org/abs/2502.04507)

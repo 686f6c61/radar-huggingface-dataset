@@ -81,5 +81,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tatjr13/fallen-coco704-native64-steer7c-20261026
+- Modelo en Hugging Face: https://huggingface.co/tatjr13/fallen-coco704-native64-steer7c-20261026
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

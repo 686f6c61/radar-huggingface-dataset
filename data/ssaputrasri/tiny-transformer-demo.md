@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ssaputrasri/tiny-transformer-demo` es un prototipo de investigacion publicado en HuggingFace por el usuario ssaputrasri. Se presenta explicitamente como un "Tiny Transformer" orientado a tareas de *matching* (emparejamiento entre pares de secuencias), con un tamano "nano" y un total de 49.600 parametros segun el propio archivo `model.safetensors`. No es un modelo entrenado ni evaluado: la model card lo describe como un *initialization checkpoint* valido para *smoke tests*, no como un checkpoint con resultados de benchmark.
+`ssaputrasri/tiny-transformer-demo` es un prototipo de investigacion publicado en Hugging Face por el usuario ssaputrasri. Se presenta explicitamente como un "Tiny Transformer" orientado a tareas de *matching* (emparejamiento entre pares de secuencias), con un tamano "nano" y un total de 49.600 parametros segun el propio archivo `model.safetensors`. No es un modelo entrenado ni evaluado: la model card lo describe como un *initialization checkpoint* valido para *smoke tests*, no como un checkpoint con resultados de benchmark.
 
 El interes del repositorio es, por tanto, metodologico y no de rendimiento. Documenta una arquitectura concreta (atencion dilatada, fusion por *co-attention*, activacion GELU y normalizacion RMSNorm) junto con su receta de entrenamiento por defecto (optimizador Adam con planificador OneCycle), el formato de los archivos y una guia de evaluacion. Sirve como plantilla reproducible para experimentos de bajo coste, como fixture en pruebas de integracion o como base didactica para estudiar variantes de atencion.
 
@@ -72,12 +72,12 @@ No disponible. La informacion proporcionada no incluye resultados de rendimiento
 - No se declaran idiomas soportados ni longitud de contexto, por lo que no es posible planificar su uso en escenarios de contexto largo.
 - Riesgo de alucinacion: no evaluable en un modelo sin entrenar; cualquier texto generado por una inicializacion carece de valor.
 - Sesgos conocidos: no disponibles, al no existir datos de entrenamiento ni evaluacion.
-- Es una implementacion personalizada: las APIs de carga automatica de HuggingFace no funcionan sin un adaptador explicito, lo que incrementa el coste de integracion.
+- Es una implementacion personalizada: las APIs de carga automatica de Hugging Face no funcionan sin un adaptador explicito, lo que incrementa el coste de integracion.
 - Licencia Apache 2.0: permite uso comercial y modificacion con las condiciones habituales de atribucion; no obstante, si se combina con conjuntos de datos externos, deben revisarse por separado los terminos de esos datos.
 - El repositorio declara 0 descargas y 0 likes, sin comunidad ni mantenimiento conocido hasta la fecha.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssaputrasri/tiny-transformer-demo
+- Modelo en Hugging Face: https://huggingface.co/ssaputrasri/tiny-transformer-demo
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo; los resultados obtenidos eran contenido no relacionado con la ficha, por lo que no se incluyen.
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles.

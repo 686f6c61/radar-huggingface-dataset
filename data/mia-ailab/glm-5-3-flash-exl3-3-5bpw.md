@@ -76,10 +76,10 @@ El autor advierte que las cifras de KL del hermano de 4 bpw en su propia model c
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash-EXL3-3.5bpw (este) | 78,1B | no disponible | EXL3 3,5 bpw, 156,3 GB | apache-2.0 | HuggingFace, 20 descargas |
-| GLM-5.3-Flash-EXL3-4bpw-TensorFold | 78,1B | no disponible | EXL3 4 bpw, 175,6 GB | apache-2.0 | HuggingFace, servido con TensorFold |
-| zai-org/GLM-5.3-Flash-BF16 | 78,1B | no disponible | BF16 | apache-2.0 | HuggingFace, referencia de fidelidad |
-| zai-org/GLM-5.3-Flash | 78,1B | no disponible | pesos originales | apache-2.0 | HuggingFace, modelo base |
+| GLM-5.3-Flash-EXL3-3.5bpw (este) | 78,1B | no disponible | EXL3 3,5 bpw, 156,3 GB | apache-2.0 | Hugging Face, 20 descargas |
+| GLM-5.3-Flash-EXL3-4bpw-TensorFold | 78,1B | no disponible | EXL3 4 bpw, 175,6 GB | apache-2.0 | Hugging Face, servido con TensorFold |
+| zai-org/GLM-5.3-Flash-BF16 | 78,1B | no disponible | BF16 | apache-2.0 | Hugging Face, referencia de fidelidad |
+| zai-org/GLM-5.3-Flash | 78,1B | no disponible | pesos originales | apache-2.0 | Hugging Face, modelo base |
 
 La comparación se limita a las variantes del mismo modelo base, ya que la información disponible no incluye alternativas de otros desarrolladores con parámetros o benchmarks equiparables.
 
@@ -98,7 +98,7 @@ La comparación se limita a las variantes del mismo modelo base, ya que la infor
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Mia-AiLab/GLM-5.3-Flash-EXL3-3.5bpw
+- Hugging Face del modelo: https://huggingface.co/Mia-AiLab/GLM-5.3-Flash-EXL3-3.5bpw
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Referencia BF16: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Hermano de 4 bpw: https://huggingface.co/Mia-AiLab/GLM-5.3-Flash-EXL3-4bpw-TensorFold

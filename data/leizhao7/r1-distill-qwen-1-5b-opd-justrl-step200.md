@@ -75,10 +75,10 @@ Mejora absoluta: +12.03 puntos porcentuales en el promedio macro. Perdida surrog
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| R1-Distill-Qwen-1.5B-OPD-JustRL-Step200 | 1.777.088.000 | no disponible | MIT | Destilacion on-policy desde DeepSeek-R1-Distill-Qwen-1.5B | HuggingFace, 207 descargas |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | no disponible en la informacion | no disponible | MIT | Destilacion de DeepSeek-R1 sobre Qwen2.5-Math-1.5B | HuggingFace (modelo base) |
-| hbx/JustRL-DeepSeek-1.5B | no disponible en la informacion | no disponible | no disponible | Profesor fijo usado en el entrenamiento | HuggingFace (referencia publica de atribucion) |
-| Qwen2.5-Math-1.5B | no disponible en la informacion | no disponible | Apache-2.0 | Modelo matematico base de la cadena | HuggingFace (ancestro de atribucion) |
+| R1-Distill-Qwen-1.5B-OPD-JustRL-Step200 | 1.777.088.000 | no disponible | MIT | Destilacion on-policy desde DeepSeek-R1-Distill-Qwen-1.5B | Hugging Face, 207 descargas |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | no disponible en la informacion | no disponible | MIT | Destilacion de DeepSeek-R1 sobre Qwen2.5-Math-1.5B | Hugging Face (modelo base) |
+| hbx/JustRL-DeepSeek-1.5B | no disponible en la informacion | no disponible | no disponible | Profesor fijo usado en el entrenamiento | Hugging Face (referencia publica de atribucion) |
+| Qwen2.5-Math-1.5B | no disponible en la informacion | no disponible | Apache-2.0 | Modelo matematico base de la cadena | Hugging Face (ancestro de atribucion) |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la informacion proporcionada; el unico punto de comparacion cuantitativo es el estudiante inicial (39.85% macro avg@8) frente al checkpoint final (51.88%).
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leizhao7/R1-Distill-Qwen-1.5B-OPD-JustRL-Step200
+- Hugging Face: https://huggingface.co/leizhao7/R1-Distill-Qwen-1.5B-OPD-JustRL-Step200
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Profesor (referencia publica): https://huggingface.co/hbx/JustRL-DeepSeek-1.5B
 - Paper: https://arxiv.org/abs/2610.11247

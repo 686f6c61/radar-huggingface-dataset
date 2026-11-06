@@ -116,7 +116,7 @@ No se dispone de datos numéricos comparables en la información proporcionada (
 
 | Alternativa | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-VL-3B-DFlash-drafter | Drafter de difusión de bloques (dflash) para llama.cpp | 742.413.312 | Opera sobre el contexto del objetivo (131.072 en la configuración del autor) | Apache 2.0 | HuggingFace; solo llama.cpp |
+| LFM2.5-VL-3B-DFlash-drafter | Drafter de difusión de bloques (dflash) para llama.cpp | 742.413.312 | Opera sobre el contexto del objetivo (131.072 en la configuración del autor) | Apache 2.0 | Hugging Face; solo llama.cpp |
 | EAGLE-3 | Drafter autoregresivo sobre características del objetivo | no disponible | no disponible | no disponible | Integrado en runtimes como vLLM y SGLang; no disponible como modelo en este repositorio |
 | Cabezas Medusa | Cabezas adicionales de predicción múltiple sobre el modelo objetivo | no disponible | no disponible | no disponible | Implementaciones de investigación; no disponible |
 | Modelo pequeño del mismo tokenizador como `--model-draft` | Decodificación especulativa con vocabulario alineado | no disponible | no disponible | según el modelo elegido | Ampliamente soportado en llama.cpp |
@@ -140,7 +140,7 @@ Diferencias destacables frente a las alternativas: este drafter es específico p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DJLougen/LFM2.5-VL-3B-DFlash-drafter
+- Modelo en Hugging Face: https://huggingface.co/DJLougen/LFM2.5-VL-3B-DFlash-drafter
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - llama.cpp (repositorio, commit de referencia `c7bda030e`): https://github.com/ggml-org/llama.cpp
 - Nota sobre la búsqueda web: los resultados recuperados no guardan relación con el modelo ni con IA open source (corresponden a simuladores de ruleta en línea). No se han encontrado papers, blogs, repositorios ni demos adicionales sobre este modelo en la información proporcionada.

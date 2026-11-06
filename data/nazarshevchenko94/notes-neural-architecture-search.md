@@ -2,7 +2,7 @@
 
 ## Resumen
 
-notes-neural-architecture-search es un repositorio publicado en HuggingFace por el usuario nazarshevchenko94 bajo licencia MIT. No es un modelo entrenado ni un checkpoint utilizable: segun su propia model card, se trata de una nota exploratoria sobre busqueda de arquitecturas neuronales (neural architecture search, NAS) que recoge el planteamiento de una comparacion, los posibles factores de confusion y los requisitos de reproducibilidad antes de publicar resultados.
+notes-neural-architecture-search es un repositorio publicado en Hugging Face por el usuario nazarshevchenko94 bajo licencia MIT. No es un modelo entrenado ni un checkpoint utilizable: segun su propia model card, se trata de una nota exploratoria sobre busqueda de arquitecturas neuronales (neural architecture search, NAS) que recoge el planteamiento de una comparacion, los posibles factores de confusion y los requisitos de reproducibilidad antes de publicar resultados.
 
 El repositorio contiene un fichero safetensors con 49.600 parametros declarados, junto con los ficheros notes.md y README.md. La model card afirma de forma explicita que no se reclama ninguna mejora de benchmarks, ninguna ablacion completada y ni codigo ni checkpoint entrenado; las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 
@@ -46,7 +46,7 @@ Debe tenerse en cuenta que ninguno de los casos siguientes implica inferencia co
 
 - Plantilla metodologica para planificar un estudio de NAS: la nota describe el alcance de la pregunta de investigacion, los posibles factores de confusion y una comparacion propuesta con lineas base emparejadas, lo que sirve como guion previo a la experimentacion.
 - Referencia de reproducibilidad: el repositorio exige explicitamente registrar versiones de dataset, comandos, semillas y hardware, por lo que puede usarse como lista de comprobacion en equipos que preparan publicaciones.
-- Ejemplo didactico de documentacion cientifica: sirve para ilustrar la diferencia entre hipotesis, plan experimental y resultado verificado en un repositorio de HuggingFace.
+- Ejemplo didactico de documentacion cientifica: sirve para ilustrar la diferencia entre hipotesis, plan experimental y resultado verificado en un repositorio de Hugging Face.
 - Punto de partida bibliografico: las referencias y datasets propuestos en la nota permiten iniciar la verificacion de la literatura sobre busqueda de arquitecturas.
 - Analisis de higiene de metadatos: el caso permite estudiar como las etiquetas de un repositorio (por ejemplo "transformer" o "safetensors") pueden no corresponderse con un modelo utilizable.
 - Auditoria de expectativas de licencia: al liberarse bajo MIT pero sin codigo ni pesos entrenados, es un caso practico para revisar que implica la licencia cuando el artefacto publicado es solo texto.
@@ -81,6 +81,6 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nazarshevchenko94/notes-neural-architecture-search
+- Repositorio en Hugging Face: https://huggingface.co/nazarshevchenko94/notes-neural-architecture-search
 - Los resultados de la busqueda web proporcionada no contienen ningun enlace relacionado con este repositorio, con neural architecture search ni con inteligencia artificial; se han descartado por no ser pertinentes.
 - No se dispone de enlaces a papers, blogs, repositorios de codigo ni demos en la informacion proporcionada.

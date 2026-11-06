@@ -65,10 +65,10 @@ No se dispone de datos de rendimiento comparativos. Sin embargo, se puede compar
 
 | Modelo | Tipo | Tamaño | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-Music3 (base) | Generación de música completa | no disponible | secuencias largas | Apache 2.0 | HuggingFace |
-| MusicGen (Meta) | Generación de música | 1.5B, 3.3B | 30 segundos | CC-BY-NC 4.0 | HuggingFace |
-| Stable Audio Open | Generación de audio | 1.2B | 47 segundos | Stability AI Community License | HuggingFace |
-| Este adaptador LoRA | Ajuste fino de voces | LoRA rank 64 | depende del base | Apache 2.0 | HuggingFace |
+| MiniMax-Music3 (base) | Generación de música completa | no disponible | secuencias largas | Apache 2.0 | Hugging Face |
+| MusicGen (Meta) | Generación de música | 1.5B, 3.3B | 30 segundos | CC-BY-NC 4.0 | Hugging Face |
+| Stable Audio Open | Generación de audio | 1.2B | 47 segundos | Stability AI Community License | Hugging Face |
+| Este adaptador LoRA | Ajuste fino de voces | LoRA rank 64 | depende del base | Apache 2.0 | Hugging Face |
 
 La comparación es limitada porque este adaptador no es un modelo independiente, sino un complemento de MiniMax-Music3. Su rendimiento depende completamente del modelo base y del pequeño dataset de entrenamiento.
 
@@ -84,7 +84,7 @@ La comparación es limitada porque este adaptador no es un modelo independiente,
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/MiniMaxMusicTraining/soad-mm3-nextlat-xm-daron-randwin128-20260824-5k-adamw2e-5-bsz4-singersplit-reginst
+- Hugging Face del adaptador: https://huggingface.co/MiniMaxMusicTraining/soad-mm3-nextlat-xm-daron-randwin128-20260824-5k-adamw2e-5-bsz4-singersplit-reginst
 - Modelo base MiniMax-Music3: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Repositorio GitHub de MiniMax-Music3: https://github.com/MiniMax-AI/MiniMax-Music3
 - Blog de MiniMax sobre Music 3.0: https://www.minimax.io/blog/minimax-music-3-0-next-generation-open-weights-production-ready-versatile-music-model

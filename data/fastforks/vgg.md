@@ -104,7 +104,7 @@ Comparativa con modelos alternativos de la misma categoría: no disponible.
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/vgg
+- Model card en Hugging Face: https://huggingface.co/fastforks/vgg
 - Repositorio de fastforks: https://github.com/kleinicke/fastforks
 - Kernels para el backend `kernels`: https://huggingface.co/fastforks/kernels
 - Fichero `card.toml` con hashes completos: https://github.com/kleinicke/fastforks/blob/main/src/fastforks/classification/models/vgg/card.toml

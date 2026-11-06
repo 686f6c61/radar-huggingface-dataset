@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kittie es un modelo publicado en HuggingFace por el usuario Sm1llee bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye el bloque de metadatos con la licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta.
+Kittie es un modelo publicado en Hugging Face por el usuario Sm1llee bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye el bloque de metadatos con la licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta.
 
 Dado que no se dispone de documentación técnica, no es posible determinar qué problema resuelve ni en qué se diferencia de otras alternativas. La ausencia de pipeline declarado, de idiomas soportados y de cualquier descripción funcional impide evaluar su idoneidad para tareas concretas.
 
@@ -60,4 +60,4 @@ No disponible. Al no conocerse el tamaño, la arquitectura ni el rendimiento del
 
 ## Enlaces
 
-- [HuggingFace: Sm1llee/Kittie](https://huggingface.co/Sm1llee/Kittie)
+- [Hugging Face: Sm1llee/Kittie](https://huggingface.co/Sm1llee/Kittie)

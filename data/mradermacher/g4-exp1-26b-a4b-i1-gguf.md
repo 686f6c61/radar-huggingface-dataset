@@ -60,7 +60,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/G4-Exp1-26B-A4B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/G4-Exp1-26B-A4B-i1-GGUF
 - Repositorio estatico (quants sin imatrix): https://huggingface.co/mradermacher/G4-Exp1-26B-A4B-GGUF
 - Modelo base: https://huggingface.co/gepardzik/G4-Exp1-26B-A4B
 - Perfil del autor: https://huggingface.co/mradermacher

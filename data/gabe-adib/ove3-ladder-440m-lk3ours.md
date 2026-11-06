@@ -24,7 +24,7 @@ Su relevancia es de investigación y reproducibilidad: permite auditar una inter
 | Semilla | 1234 |
 | RMSNorm eps | `1e-6` |
 | Router scaling | `2,446` |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamaño del repositorio | 70,8 GB |
 
 ## Arquitectura y entrenamiento
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks estándar en la información dispon
 
 | Modelo | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `ove3-ladder-440m-lk3ours` | 440 M | no disponible | no disponible | checkpoint Megatron en HuggingFace |
+| `ove3-ladder-440m-lk3ours` | 440 M | no disponible | no disponible | checkpoint Megatron en Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de modelos comparables en la información proporcionada; no se establece una comparación de rendimiento, contexto o licencia.
@@ -102,5 +102,5 @@ No se dispone de datos de modelos comparables en la información proporcionada; 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gabe-adib/ove3-ladder-440m-lk3ours
+- Hugging Face: https://huggingface.co/gabe-adib/ove3-ladder-440m-lk3ours
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

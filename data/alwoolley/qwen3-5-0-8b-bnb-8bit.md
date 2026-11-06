@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alwoolley/Qwen3.5-0.8B-bnb-8bit` es una cuantización de 8 bits (bitsandbytes) de un modelo de la familia Qwen 3.5, subido al Hub de HuggingFace por el usuario alwoolley. Según los metadatos, se trata de un modelo de generación de texto con arquitectura `qwen3_5_text`, orientado a conversación y compatible con la librería `transformers`. Cuenta con aproximadamente 752,8 millones de parámetros, lo que lo sitúa en la gama de modelos pequeños (sub-1B), pensados para despliegue eficiente en entornos con recursos limitados.
+El modelo `alwoolley/Qwen3.5-0.8B-bnb-8bit` es una cuantización de 8 bits (bitsandbytes) de un modelo de la familia Qwen 3.5, subido al Hub de Hugging Face por el usuario alwoolley. Según los metadatos, se trata de un modelo de generación de texto con arquitectura `qwen3_5_text`, orientado a conversación y compatible con la librería `transformers`. Cuenta con aproximadamente 752,8 millones de parámetros, lo que lo sitúa en la gama de modelos pequeños (sub-1B), pensados para despliegue eficiente en entornos con recursos limitados.
 
 La model card publicada es una plantilla genérica sin información técnica, de entrenamiento o de uso. Tampoco se especifican la licencia, los idiomas soportados ni el contexto de entrenamiento. La relevancia de este modelo radica en su tamaño reducido y su formato cuantizado, que permite ejecutar inferencia en hardware modesto, aunque la falta de documentación oficial limita su evaluación rigurosa.
 
@@ -41,7 +41,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - VRAM estimada: con 752 millones de parámetros en 8 bits, el peso del modelo ocupa aproximadamente 0,75 GB (sin contar overhead de activaciones). En la práctica, se recomienda al menos 2 GB de VRAM para inferencia con batch pequeño.
 - GPU recomendadas: cualquier GPU con más de 2 GB de VRAM, como NVIDIA GTX 1650, RTX 3060, o superiores. También puede ejecutarse en CPU con llama.cpp, aunque con mayor latencia.
-- Opciones de despliegue: al ser un modelo de `transformers`, puede usarse con HuggingFace, vLLM, TGI o llama.cpp (si se convierte a GGUF).
+- Opciones de despliegue: al ser un modelo de `transformers`, puede usarse con Hugging Face, vLLM, TGI o llama.cpp (si se convierte a GGUF).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -58,4 +58,4 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace: alwoolley/Qwen3.5-0.8B-bnb-8bit](https://huggingface.co/alwoolley/Qwen3.5-0.8B-bnb-8bit)
+- [Hugging Face: alwoolley/Qwen3.5-0.8B-bnb-8bit](https://huggingface.co/alwoolley/Qwen3.5-0.8B-bnb-8bit)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NSFW Wan 1.3B T2V es un ajuste fino (*fine-tune*) del modelo abierto de generación de vídeo texto-a-vídeo Wan-AI/Wan2.1-T2V-1.3B, especializado en la generación de contenido para adultos. Lo publica el usuario Rohasu en HuggingFace bajo licencia CreativeML OpenRAIL-M y está marcado como «not-for-all-audiences». El objetivo declarado por el autor es servir como herramienta de investigación y creación capaz de generar clips cortos a partir de descripciones en lenguaje natural dentro del dominio NSFW, con movimiento coherente de forma nativa.
+NSFW Wan 1.3B T2V es un ajuste fino (*fine-tune*) del modelo abierto de generación de vídeo texto-a-vídeo Wan-AI/Wan2.1-T2V-1.3B, especializado en la generación de contenido para adultos. Lo publica el usuario Rohasu en Hugging Face bajo licencia CreativeML OpenRAIL-M y está marcado como «not-for-all-audiences». El objetivo declarado por el autor es servir como herramienta de investigación y creación capaz de generar clips cortos a partir de descripciones en lenguaje natural dentro del dominio NSFW, con movimiento coherente de forma nativa.
 
 El modelo conserva la arquitectura de transformer de difusión texto-a-vídeo del modelo base y sus 1.300 millones de parámetros, pero ha sido reentrenado sobre un corpus de contenido adulto extraído de Reddit. La model card documenta dos procesos de entrenamiento: uno original en dos fases (imágenes y después vídeo) que produjo los checkpoints `e1`-`e20` y que sufrió una degradación severa de calidad («body horror»), y un segundo proceso experimental de una sola pasada sobre un dataset mixto que produjo los checkpoints `exp_e1`-`exp_e14`, recomendados por el autor.
 
@@ -24,7 +24,7 @@ Su relevancia actual es doble: por un lado, ejemplifica la práctica extendida d
 | Tipo / tarea | Text-to-video (T2V) |
 | Especialización | Generación de contenido NSFW |
 | Tamaño del repositorio | 105,4 GB (incluye múltiples checkpoints) |
-| Fecha de publicación | 2026-09-27, según HuggingFace |
+| Fecha de publicación | 2026-09-27, según Hugging Face |
 | Descargas / «likes» | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM total para inferencia: no disponible. La memoria real depende además del codificador de texto, del VAE y de la resolución y duración del vídeo generado, factores que la model card no especifica.
 - GPU recomendadas: no especificadas por el autor. Por tamaño, el modelo es candidato a ejecutarse en GPU de consumo de gama alta (RTX 4090, 24 GB) y, con margen, en aceleradores de centro de datos (A100 de 40/80 GB, H100) para lotes grandes o mayor resolución.
 - Viabilidad en GPU de consumo: probable en tarjetas con 12-24 GB para configuraciones de baja resolución y duración, aunque no hay cifras confirmadas en la información proporcionada.
-- Opciones de despliegue: la model card no especifica ninguna. El modelo base Wan2.1-T2V-1.3B está distribuido en HuggingFace y ModelScope, y su ecosistema habitual incluye Diffusers y nodos de ComfyUI, pero esto corresponde al modelo base y no está confirmado para este ajuste.
+- Opciones de despliegue: la model card no especifica ninguna. El modelo base Wan2.1-T2V-1.3B está distribuido en Hugging Face y ModelScope, y su ecosistema habitual incluye Diffusers y nodos de ComfyUI, pero esto corresponde al modelo base y no está confirmado para este ajuste.
 - Latencia y throughput: no disponible.
 - Almacenamiento: el repositorio completo ocupa 105,4 GB, por lo que conviene descargar únicamente el checkpoint que se vaya a utilizar.
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Tarea | Licencia | Especialización | Disponibilidad |
 |---|---|---|---|---|---|
-| Rohasu/NSFW_Wan_1.3b (este modelo) | 1,3B | Text-to-video | CreativeML OpenRAIL-M | NSFW | HuggingFace, Civitai, RunningHub |
-| Wan-AI/Wan2.1-T2V-1.3B (modelo base) | 1,3B | Text-to-video | no disponible en la información proporcionada | Generalista | HuggingFace, ModelScope |
+| Rohasu/NSFW_Wan_1.3b (este modelo) | 1,3B | Text-to-video | CreativeML OpenRAIL-M | NSFW | Hugging Face, Civitai, RunningHub |
+| Wan-AI/Wan2.1-T2V-1.3B (modelo base) | 1,3B | Text-to-video | no disponible en la información proporcionada | Generalista | Hugging Face, ModelScope |
 | Otros modelos abiertos de T2V de tamaño similar | no disponible | Text-to-video | no disponible | Generalista | no disponible |
 
 Existen otros modelos abiertos de generación de vídeo de tamaño comparable en el ecosistema (por ejemplo, variantes de la familia CogVideoX o LTX-Video), pero la información proporcionada no incluye sus especificaciones verificables, por lo que no se comparan numéricamente. Tampoco se dispone de datos de rendimiento del modelo base que permitan establecer una comparación cuantitativa con este ajuste.
@@ -96,8 +96,8 @@ Existen otros modelos abiertos de generación de vídeo de tamaño comparable en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rohasu/NSFW_Wan_1.3b
-- Modelo base en HuggingFace: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
+- Modelo en Hugging Face: https://huggingface.co/Rohasu/NSFW_Wan_1.3b
+- Modelo base en Hugging Face: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
 - Modelo base en ModelScope: https://modelscope.ai/models/Wan-AI/Wan2.1-T2V-1.3B
 - Modelo base en ModelScope (dominio .cn): https://www.modelscope.cn/models/Wan-AI/Wan2.1-T2V-1.3B
 - Página del modelo en Civitai (v14 experimental): https://civitai.red/models/1697081/nsfw-wan-13b-t2v

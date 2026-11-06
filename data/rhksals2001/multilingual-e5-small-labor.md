@@ -37,7 +37,7 @@ El entrenamiento emplea la función de pérdida `MultipleNegativesRankingLoss`, 
 - Recuperación de articulado laboral coreano a partir de consultas en lenguaje natural coloquial.
 - Codificación asimétrica mediante prefijos: `query:` para consultas y `passage:` para documentos.
 - Soporte de `normalize_embeddings=True` para comparación por producto escalar equivalente a coseno.
-- Compatible con Text Embeddings Inference (tag `text-embeddings-inference`) y con endpoints de HuggingFace.
+- Compatible con Text Embeddings Inference (tag `text-embeddings-inference`) y con endpoints de Hugging Face.
 - No soporta tool calling, agentes, generación de texto, visión ni audio: es exclusivamente un modelo de representación.
 
 ## Casos de uso
@@ -100,7 +100,7 @@ El modelo ajustado comparte arquitectura y tamaño con su base, por lo que la co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rhksals2001/multilingual-e5-small-labor
+- Modelo en Hugging Face: https://huggingface.co/rhksals2001/multilingual-e5-small-labor
 - Dataset de entrenamiento: https://huggingface.co/datasets/rhksals2001/labor-embedding-data
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Paper de la familia E5 (Multilingual E5 Text Embeddings): https://arxiv.org/abs/2402.05672

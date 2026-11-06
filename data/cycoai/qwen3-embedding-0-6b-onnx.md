@@ -89,7 +89,7 @@ No se dispone en la informacion proporcionada de datos comparativos frente a otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CycoAI/Qwen3-Embedding-0.6B-ONNX
+- Repositorio en Hugging Face: https://huggingface.co/CycoAI/Qwen3-Embedding-0.6B-ONNX
 - Export ONNX original: https://huggingface.co/zhiqing/Qwen3-Embedding-0.6B-ONNX/tree/c96cc9c82d08ee7869600e2191078fc939957026
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Blog de Qwen3-Embedding: https://qwenlm.github.io/blog/qwen3-embedding/

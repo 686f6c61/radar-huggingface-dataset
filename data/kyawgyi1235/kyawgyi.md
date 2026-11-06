@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kyawgyi1235/Kyawgyi` está alojado en HuggingFace bajo licencia Apache 2.0, creado por el usuario `kyawgyi1235` el 28 de agosto de 2026. Sin embargo, la model card asociada no contiene ninguna información técnica: no se especifica arquitectura, tamaño, contexto, idiomas, ni capacidades. Los metadatos disponibles se limitan a la licencia, la región (us) y las fechas de creación y actualización.
+El modelo `kyawgyi1235/Kyawgyi` está alojado en Hugging Face bajo licencia Apache 2.0, creado por el usuario `kyawgyi1235` el 28 de agosto de 2026. Sin embargo, la model card asociada no contiene ninguna información técnica: no se especifica arquitectura, tamaño, contexto, idiomas, ni capacidades. Los metadatos disponibles se limitan a la licencia, la región (us) y las fechas de creación y actualización.
 
 A día de hoy, este repositorio no ofrece documentación ni artefactos que permitan identificar el tipo de modelo, su propósito o su forma de uso. Las búsquedas web relacionadas con el nombre "Kyawgyi" devuelven cuentas de redes sociales y un modelo de arte de PixAI llamado "KayWaii" que no guardan relación aparente con este repositorio. Por tanto, cualquier evaluación técnica resulta imposible con la información pública disponible.
 
@@ -53,4 +53,4 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo, no es p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kyawgyi1235/Kyawgyi
+- Repositorio en Hugging Face: https://huggingface.co/kyawgyi1235/Kyawgyi

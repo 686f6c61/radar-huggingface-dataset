@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`michauhan/mae-contrastive-int4` es un repositorio experimental publicado por el usuario michauhan en HuggingFace que contiene una implementación propia de un modelo etiquetado como "Mae" orientado a aprendizaje contrastivo. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+`michauhan/mae-contrastive-int4` es un repositorio experimental publicado por el usuario michauhan en Hugging Face que contiene una implementación propia de un modelo etiquetado como "Mae" orientado a aprendizaje contrastivo. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 El dato más relevante es su tamaño: el recuento de safetensors reporta 16.576 parámetros totales, es decir, menos de 0,02 millones. La model card declara una escala "huge", lo que entra en contradicción directa con el recuento real de parámetros; esto sugiere que "huge" es la etiqueta de un preset de configuración de arquitectura y no el tamaño efectivo del checkpoint publicado, o bien que el artefacto es una maqueta mínima de un diseño mayor.
 
@@ -50,7 +50,7 @@ Dado el estado del repositorio (checkpoint de inicialización sin entrenar, 16.5
 - Inspección de cambios de arquitectura: el repositorio está pensado para revisar variantes de atención de ventana deslizante, fusión `concat mlp`, RMSNorm y ReLU sin lanzar una ejecución completa.
 - Plantilla de receta de entrenamiento: `training_args.json` sirve como punto de partida reproducible con Lion y OneCycle para experimentos comparables.
 - Evaluación de protocolos: usar la guía de evaluación de la model card (conjunto de validación específico de tarea, tres semillas, línea base de capacidad equivalente) como plantilla metodológica para otros proyectos.
-- Docencia y demostración de flujos de trabajo en HuggingFace: al ocupar 0,0 GB, el repositorio es trivial de clonar, inspeccionar y modificar en cualquier máquina.
+- Docencia y demostración de flujos de trabajo en Hugging Face: al ocupar 0,0 GB, el repositorio es trivial de clonar, inspeccionar y modificar en cualquier máquina.
 - Base para reentrenamiento experimental: si el diseño subyacente resulta de interés, el checkpoint de inicialización puede servir como punto de partida para un entrenamiento propio con datos del usuario.
 
 No se recomienda ningún caso de uso en producción, atención al cliente, generación de código ni análisis de datos con este artefacto en su estado actual.
@@ -88,5 +88,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/michauhan/mae-contrastive-int4
+- Modelo en Hugging Face: https://huggingface.co/michauhan/mae-contrastive-int4
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos por la búsqueda no guardan relación con este repositorio.

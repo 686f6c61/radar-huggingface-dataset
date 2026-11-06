@@ -110,7 +110,7 @@ No se dispone de información suficiente para comparar con alternativas de otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-SS-matched-control-1-NEGATED_WITH_MO-1
+- Repositorio Hugging Face: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-SS-matched-control-1-NEGATED_WITH_MO-1
 - Modelo base: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct
 - Adaptador minuendo: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-SS-matched-control-1
 - Adaptador sustraendo: https://huggingface.co/darturi/Averaged_MO_Llama8B_Adapters-1

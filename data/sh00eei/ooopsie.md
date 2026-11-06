@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sh00eei/Ooopsie es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes a partir de texto, publicado por el usuario Sh00eei en HuggingFace. Se integra con el modelo base krea/Krea-2-Raw, un modelo de difusión de texto a imagen, y utiliza la librería diffusers. El adaptador permite modificar el comportamiento del modelo base para producir imágenes fotorrealistas de un tema concreto; el widget incluido muestra una imagen de un coche deportivo rojo con un prompt y un negative prompt.
+Sh00eei/Ooopsie es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes a partir de texto, publicado por el usuario Sh00eei en Hugging Face. Se integra con el modelo base krea/Krea-2-Raw, un modelo de difusión de texto a imagen, y utiliza la librería diffusers. El adaptador permite modificar el comportamiento del modelo base para producir imágenes fotorrealistas de un tema concreto; el widget incluido muestra una imagen de un coche deportivo rojo con un prompt y un negative prompt.
 
 El problema que resuelve es el de personalizar un modelo de difusión sin necesidad de entrenar desde cero: los LoRA ajustan un pequeño conjunto de parámetros para capturar un estilo o un concepto específico. Esto lo hace especialmente útil para desarrolladores e investigadores que deseen adaptar modelos de texto a imagen a sus propios dominios con costes computacionales reducidos.
 
@@ -73,5 +73,5 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sh00eei/Ooopsie
+- Hugging Face: https://huggingface.co/Sh00eei/Ooopsie
 - Modelo base referenciado en la card: https://huggingface.co/krea/Krea-2-Raw

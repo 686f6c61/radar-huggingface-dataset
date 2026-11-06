@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario dfsfg5657 bajo licencia MIT. La model card se presenta como una actualización de una versión anterior con mejoras en razonamiento e inferencia, e incluye referencias a resultados en matemáticas, programación y lógica, además de una reducción de la tasa de alucinación y mejor soporte de function calling. Sin embargo, la información técnica concreta es prácticamente inexistente: no se especifican parámetros, arquitectura interna, longitud de contexto ni composición del dataset de entrenamiento.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario dfsfg5657 bajo licencia MIT. La model card se presenta como una actualización de una versión anterior con mejoras en razonamiento e inferencia, e incluye referencias a resultados en matemáticas, programación y lógica, además de una reducción de la tasa de alucinación y mejor soporte de function calling. Sin embargo, la información técnica concreta es prácticamente inexistente: no se especifican parámetros, arquitectura interna, longitud de contexto ni composición del dataset de entrenamiento.
 
 La model card contiene además inconsistencias notables. La tabla de benchmarks incluye una columna con el marcador literal `{RESULT}` sin rellenar, y las cifras de las columnas comparativas no corresponden a ningún modelo identificable. Se menciona un "MyAwesomeModel-Small" sin aportar especificaciones. El repositorio tiene 0 descargas y 0 likes, y las fechas de creación y actualización (noviembre de 2026) son posteriores a la fecha actual, lo que sugiere un artefacto de prueba o un modelo de demostración.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha debe interpretarse como una descripción de lo que el auto
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (la model card no la describe; los tags de HuggingFace indican `bert` y pipeline `feature-extraction`, lo que resulta contradictorio con las capacidades generativas declaradas) |
+| Arquitectura | no disponible (la model card no la describe; los tags de Hugging Face indican `bert` y pipeline `feature-extraction`, lo que resulta contradictorio con las capacidades generativas declaradas) |
 | Parámetros totales | no disponible |
 | Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -88,7 +88,7 @@ No disponible. La model card no identifica los modelos de comparación (Model1, 
 
 - Ausencia total de especificaciones técnicas: no se publican parámetros, contexto, arquitectura ni dataset, lo que impide evaluar su idoneidad para producción.
 - Benchmarks incompletos: la tabla contiene marcadores `{RESULT}` sin rellenar y modelos de comparación sin identificar; las cifras de AIME no son verificables.
-- Contradicción entre metadatos y model card: los tags de HuggingFace indican `bert` y pipeline `feature-extraction`, mientras que la model card describe un modelo generativo conversacional con razonamiento y function calling.
+- Contradicción entre metadatos y model card: los tags de Hugging Face indican `bert` y pipeline `feature-extraction`, mientras que la model card describe un modelo generativo conversacional con razonamiento y function calling.
 - Fechas anómalas: la creación y actualización del repositorio (noviembre de 2026) son posteriores a la fecha actual, lo que apunta a un artefacto de prueba.
 - Cero descargas y cero likes: no hay evidencia de uso ni de validación por parte de la comunidad.
 - Riesgo de alucinación: la model card afirma una reducción de la tasa de alucinación, pero no aporta métricas ni metodología de evaluación.
@@ -98,7 +98,7 @@ No disponible. La model card no identifica los modelos de comparación (Model1, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dfsfg5657/my-awesome-model
+- Modelo en Hugging Face: https://huggingface.co/dfsfg5657/my-awesome-model
 - Repositorio de código: no disponible (la model card remite a "our code repository" sin enlace)
 - Paper técnico: no disponible
 - Blog o web oficial: no disponible (la model card menciona "our official website" sin enlace)

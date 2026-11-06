@@ -86,10 +86,10 @@ Los únicos datos cuantitativos publicados son de pérdida de lenguaje sobre Wik
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| O1-Qwen05-Adapter (AwareLiquid) | ~494 M congelados + 12,4 M entrenables | No disponible | MIT (adaptador) / Apache-2.0 (base) | HuggingFace, 0 descargas | Adaptador MT-LNN no PEFT; requiere código propio para cargar |
-| Qwen2.5-0.5B-Instruct (modelo base) | ~494 M | No disponible en la información proporcionada | Apache-2.0 | HuggingFace | Loss ~2,3 en WikiText-2; ~100% de los parámetros entrenables originales |
-| AwareLiquid M1-128M | No disponible | No disponible | No disponible | HuggingFace | Checkpoint de la misma familia; contexto arquitectónico del adaptador |
-| AwareLiquid M2-2B | 1,93 B | No disponible | No disponible | HuggingFace | Checkpoint de investigación byte-level; no comparable en tarea directa |
+| O1-Qwen05-Adapter (AwareLiquid) | ~494 M congelados + 12,4 M entrenables | No disponible | MIT (adaptador) / Apache-2.0 (base) | Hugging Face, 0 descargas | Adaptador MT-LNN no PEFT; requiere código propio para cargar |
+| Qwen2.5-0.5B-Instruct (modelo base) | ~494 M | No disponible en la información proporcionada | Apache-2.0 | Hugging Face | Loss ~2,3 en WikiText-2; ~100% de los parámetros entrenables originales |
+| AwareLiquid M1-128M | No disponible | No disponible | No disponible | Hugging Face | Checkpoint de la misma familia; contexto arquitectónico del adaptador |
+| AwareLiquid M2-2B | 1,93 B | No disponible | No disponible | Hugging Face | Checkpoint de investigación byte-level; no comparable en tarea directa |
 
 No se dispone de datos de benchmarks comparativos con alternativas de la misma categoría (adaptadores LoRA, DoRA u otros sobre Qwen2.5-0.5B), por lo que la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks comparativos con alternativas de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AwareLiquid/O1-Qwen05-Adapter
+- Modelo en Hugging Face: https://huggingface.co/AwareLiquid/O1-Qwen05-Adapter
 - Código y recetas de carga (repo M1): https://github.com/AwareLiquid/M1
 - Contexto arquitectónico (repo M2): https://github.com/AwareLiquid/M2
 - Checkpoint relacionado M1-128M: https://huggingface.co/AwareLiquid/M1-128M

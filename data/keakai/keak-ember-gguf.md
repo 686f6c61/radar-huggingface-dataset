@@ -109,6 +109,6 @@ La comparativa directa con otros modelos especializados en dictado no está disp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/keakai/keak-ember-GGUF
+- Repositorio Hugging Face: https://huggingface.co/keakai/keak-ember-GGUF
 - Perfil del autor: https://huggingface.co/keakai
 - KeakBench (benchmark y código): https://github.com/PepSecanell/keak-ai

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `msaifee/gpt-news-classifier123` es un repositorio publicado en HuggingFace por el usuario msaifee. La única información verificable que acompaña al modelo es su identificador, la etiqueta de librería `transformers`, la etiqueta `endpoints_compatible` (compatible con Inference Endpoints), la etiqueta de región `us` y una referencia bibliográfica a arXiv:1910.09700, que corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono y que aparece de forma automática en la plantilla de model card, no como paper del modelo.
+El modelo `msaifee/gpt-news-classifier123` es un repositorio publicado en Hugging Face por el usuario msaifee. La única información verificable que acompaña al modelo es su identificador, la etiqueta de librería `transformers`, la etiqueta `endpoints_compatible` (compatible con Inference Endpoints), la etiqueta de región `us` y una referencia bibliográfica a arXiv:1910.09700, que corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono y que aparece de forma automática en la plantilla de model card, no como paper del modelo.
 
-La model card es la plantilla genérica autogenerada por HuggingFace: todos los campos de descripción, autores, datos de entrenamiento, hiperparámetros, evaluación y licencia están sin rellenar con el marcador "[More Information Needed]". En el momento de la consulta el repositorio acumula 0 descargas y 0 "likes", y no se ha publicado pipeline asociado.
+La model card es la plantilla genérica autogenerada por Hugging Face: todos los campos de descripción, autores, datos de entrenamiento, hiperparámetros, evaluación y licencia están sin rellenar con el marcador "[More Information Needed]". En el momento de la consulta el repositorio acumula 0 descargas y 0 "likes", y no se ha publicado pipeline asociado.
 
 Por el nombre del repositorio podría tratarse de un clasificador de noticias basado en un modelo de la familia GPT, pero esto es únicamente una inferencia a partir del identificador y no está confirmado por el autor en ninguna parte del repositorio. En consecuencia, la mayor parte de las especificaciones técnicas, capacidades y requisitos de hardware no pueden determinarse con la información disponible y se marcan explícitamente como no disponibles.
 
@@ -29,9 +29,9 @@ Por el nombre del repositorio podría tratarse de un clasificador de noticias ba
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura del modelo. La etiqueta `library_name: transformers` indica únicamente que se carga mediante la librería Transformers de HuggingFace, pero no aclara si se trata de un transformer encoder, decoder o encoder-decoder, ni su número de capas, dimensiones ocultas o mecanismo de atención. Tampoco hay información sobre si deriva de un modelo preentrenado existente ni sobre cuál sería ese modelo base.
+No hay información publicada sobre la arquitectura del modelo. La etiqueta `library_name: transformers` indica únicamente que se carga mediante la librería Transformers de Hugging Face, pero no aclara si se trata de un transformer encoder, decoder o encoder-decoder, ni su número de capas, dimensiones ocultas o mecanismo de atención. Tampoco hay información sobre si deriva de un modelo preentrenado existente ni sobre cuál sería ese modelo base.
 
-Respecto al entrenamiento, la model card no documenta el conjunto de datos, el número de tokens, la composición del corpus, el régimen de precisión (fp32, fp16, bf16, fp8), la existencia de ajuste por instrucciones, RLHF o DPO, ni el procedimiento de preprocesado. La única referencia bibliográfica presente, arXiv:1910.09700, corresponde al calculador de impacto medioambiental citado en la plantilla oficial de HuggingFace y no describe este modelo. No se puede confirmar por tanto ninguna innovación técnica ni detalle del pipeline de entrenamiento.
+Respecto al entrenamiento, la model card no documenta el conjunto de datos, el número de tokens, la composición del corpus, el régimen de precisión (fp32, fp16, bf16, fp8), la existencia de ajuste por instrucciones, RLHF o DPO, ni el procedimiento de preprocesado. La única referencia bibliográfica presente, arXiv:1910.09700, corresponde al calculador de impacto medioambiental citado en la plantilla oficial de Hugging Face y no describe este modelo. No se puede confirmar por tanto ninguna innovación técnica ni detalle del pipeline de entrenamiento.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ No es posible estimar requisitos de hardware sin conocer el número de parámetr
 - VRAM estimada para inferencia: no disponible (depende del número de parámetros, desconocido).
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo (RTX 3060, 4070, 4090, etc.): no disponible.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible; la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, pero no se detalla la configuración.
+- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible; la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, pero no se detalla la configuración.
 - Latencia y throughput estimados: no disponible.
 - Requisitos de CPU o despliegue en edge: no disponible.
 
@@ -96,13 +96,13 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 - Licencia: no disponible, lo que impide determinar si el uso comercial está permitido. En ausencia de licencia explícita debe asumirse que no hay autorización clara para su explotación comercial.
 - Repositorio sin tracción: 0 descargas y 0 "likes" en la fecha de consulta, sin señales de comunidad, mantenimiento o validación por terceros.
 - Fecha de creación y actualización idénticas (2026-09-27): no consta que el repositorio haya recibido revisiones posteriores.
-- La etiqueta `arxiv:1910.09700` no debe interpretarse como el paper del modelo: corresponde a la referencia de la calculadora de impacto medioambiental incluida en la plantilla de HuggingFace.
+- La etiqueta `arxiv:1910.09700` no debe interpretarse como el paper del modelo: corresponde a la referencia de la calculadora de impacto medioambiental incluida en la plantilla de Hugging Face.
 - Riesgo de seguridad de la cadena de suministro: al no especificarse el formato de pesos ni el proceso de serialización, se recomienda auditar cualquier fichero antes de cargarlo en un entorno de producción.
 - Recomendación general: no utilizar este modelo en producción sin obtener antes del autor información sobre arquitectura, licencia, datos de entrenamiento y evaluación.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/msaifee/gpt-news-classifier123
+- Repositorio en Hugging Face: https://huggingface.co/msaifee/gpt-news-classifier123
 - Referencia arXiv presente en el repositorio (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automático, citada por la plantilla): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact
 - Paper o blog del modelo: no disponible.

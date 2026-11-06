@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `narainad/qwen3-gst-tax-adapter` es un adapter publicado en HuggingFace por el usuario `narainad` el 27 de agosto de 2026. Por su nombre, parece tratarse de un adaptador (posiblemente LoRA) destinado a especializar un modelo base de la familia Qwen3 en tareas relacionadas con el impuesto sobre bienes y servicios (GST) y fiscalidad en general. Sin embargo, la model card es una plantilla genérica generada automáticamente, sin información sobre el modelo base, el método de ajuste, los datos de entrenamiento o las capacidades resultantes.
+El modelo `narainad/qwen3-gst-tax-adapter` es un adapter publicado en Hugging Face por el usuario `narainad` el 27 de agosto de 2026. Por su nombre, parece tratarse de un adaptador (posiblemente LoRA) destinado a especializar un modelo base de la familia Qwen3 en tareas relacionadas con el impuesto sobre bienes y servicios (GST) y fiscalidad en general. Sin embargo, la model card es una plantilla genérica generada automáticamente, sin información sobre el modelo base, el método de ajuste, los datos de entrenamiento o las capacidades resultantes.
 
 El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que podría tratarse de un adapter de pesos pequeños (típicamente de decenas a cientos de MB), pero no hay confirmación. No se han registrado descargas ni interacciones, y no se proporcionan licencia, idiomas ni pipeline. En el momento de la consulta, no existe información pública suficiente para evaluar su rendimiento, arquitectura o aplicaciones reales.
 
@@ -54,7 +54,7 @@ No disponible. No se conocen modelos comparables en el mismo dominio (adapters f
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/narainad/qwen3-gst-tax-adapter
+- Repositorio Hugging Face: https://huggingface.co/narainad/qwen3-gst-tax-adapter
 - Referencia al paper de estimación de impacto ambiental citado en la model card: https://arxiv.org/abs/1910.09700
 - Repositorio oficial de Qwen3 (posible base del adapter): https://github.com/QwenLM/Qwen3
 - Blog de Qwen3: https://qwen.ai/blog?id=qwen3

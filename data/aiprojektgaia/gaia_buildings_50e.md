@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GAIA Buildings 50e es un modelo de segmentación semántica binaria especializado en la extracción de edificios a partir de ortofotos aéreas RGB en vista nadir. Lo desarrolla el proyecto GAIA, un sistema autoalojado que convierte imágenes aéreas en datos vectoriales de mapas para municipios suecos, con financiación de Smart Built Environment. El modelo se publica bajo licencia Apache 2.0 y se distribuye a través de HuggingFace con la librería `segmentation-models-pytorch`.
+GAIA Buildings 50e es un modelo de segmentación semántica binaria especializado en la extracción de edificios a partir de ortofotos aéreas RGB en vista nadir. Lo desarrolla el proyecto GAIA, un sistema autoalojado que convierte imágenes aéreas en datos vectoriales de mapas para municipios suecos, con financiación de Smart Built Environment. El modelo se publica bajo licencia Apache 2.0 y se distribuye a través de Hugging Face con la librería `segmentation-models-pytorch`.
 
 Arquitectónicamente es una red convolucional encoder-decoder de tipo FPN (Feature Pyramid Network) con encoder ResNet34 preentrenado en ImageNet, entrenada con PyTorch Lightning. Genera un ráster de verosimilitud por píxel (uint8, 0-255) en lugar de una máscara binaria, lo que permite reumbralizar los resultados sin necesidad de reejecutar la inferencia. El checkpoint se entrenó durante 50 épocas, de ahí el sufijo `50e` en el identificador.
 
@@ -67,7 +67,7 @@ No se dispone de datos de benchmarks ni de comparaciones publicadas con otros mo
 
 | Modelo | Arquitectura | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| GAIA Buildings 50e | FPN + ResNet34 | no aplica (visión) | Apache 2.0 | HuggingFace | no publicados |
+| GAIA Buildings 50e | FPN + ResNet34 | no aplica (visión) | Apache 2.0 | Hugging Face | no publicados |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,6 +84,6 @@ No se dispone de datos de benchmarks ni de comparaciones publicadas con otros mo
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/aiprojektgaia/gaia_buildings_50e)
+- [Modelo en Hugging Face](https://huggingface.co/aiprojektgaia/gaia_buildings_50e)
 - [Repositorio del proyecto GAIA en GitHub](https://github.com/aiprojektgaia)
 - [Paper de referencia citado en los tags (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)

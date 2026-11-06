@@ -62,7 +62,7 @@ No se dispone de información sobre modelos comparables en la información propo
 - Caveats para producción: no se han publicado métricas de precisión, por lo que se recomienda validar en el dominio objetivo antes de desplegar. El modelo puede no generalizar bien a dominios muy diferentes de ImageNet. La cuantización no está documentada oficialmente.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/timm/efficientvim_m3.e300_in1k
+- Hugging Face: https://huggingface.co/timm/efficientvim_m3.e300_in1k
 - Paper (arXiv): https://arxiv.org/abs/2411.15241
 - Repositorio original: https://github.com/mlvlab/EfficientViM
 - Repositorio timm: https://github.com/huggingface/pytorch-image-models

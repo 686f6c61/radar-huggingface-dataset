@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Founderlinfz/testmodel es un repositorio alojado en HuggingFace por el usuario Founderlinfz bajo licencia MIT. El nombre del repositorio ("testmodel") y la ausencia total de documentación, pipeline declarado, idiomas y métricas de uso apuntan a un artefacto de prueba o a un experimento de publicación, no a un modelo pensado para distribución pública ni para uso en producción.
+Founderlinfz/testmodel es un repositorio alojado en Hugging Face por el usuario Founderlinfz bajo licencia MIT. El nombre del repositorio ("testmodel") y la ausencia total de documentación, pipeline declarado, idiomas y métricas de uso apuntan a un artefacto de prueba o a un experimento de publicación, no a un modelo pensado para distribución pública ni para uso en producción.
 
 La model card publicada no contiene más información que la declaración de licencia (`license: mit`); no incluye descripción del modelo, arquitectura, datos de entrenamiento, tokenizador, ejemplos de uso ni instrucciones de carga. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y fue creado y actualizado en la misma marca temporal (2026-09-19T12:55:22Z), lo que indica que no ha recibido mantenimiento posterior.
 
@@ -53,7 +53,7 @@ Advertencia: al no existir información verificable sobre arquitectura, tamaño,
 - Prototipado interno de pipelines de generación de texto: el modelo podría emplearse como componente de prueba en un sistema de *prompting* para validar la infraestructura de inferencia (carga de pesos, servidor, tokenizador) antes de migrar a un modelo en producción.
 - Pruebas de integración de API: si el repositorio expone pesos cargables, serviría para verificar la compatibilidad entre una librería de inferencia (por ejemplo, `transformers`) y el formato de pesos antes de conectar clientes reales.
 - Evaluación comparativa de infraestructura: usar el modelo como carga de trabajo sintética para medir latencia, throughput y consumo de VRAM de un *cluster* o de una GPU concreta, sin depender de la calidad de las respuestas.
-- Docencia y experimentación académica: como ejemplo de repositorio mínimo en HuggingFace para ilustrar el ciclo de publicación de modelos, versionado y licencias.
+- Docencia y experimentación académica: como ejemplo de repositorio mínimo en Hugging Face para ilustrar el ciclo de publicación de modelos, versionado y licencias.
 - Pruebas de cuantización: comprobar herramientas de conversión (por ejemplo, a GGUF o a formatos de 8/4 bits) sobre un modelo pequeño o desconocido para validar el *toolchain*.
 - Fuzzing y robustez de servidores de inferencia: enviar secuencias largas o malformadas para verificar el comportamiento del servidor ante entradas adversarias, sin riesgo de degradar un modelo de producción.
 
@@ -73,7 +73,7 @@ La model card no incluye tablas comparativas y los resultados de búsqueda web a
 - Opciones de despliegue: no disponible. No se puede confirmar compatibilidad con vLLM, llama.cpp, Ollama, TGI, SGLang o `transformers`, ya que se desconoce la arquitectura y el formato de los pesos.
 - Latencia y throughput estimados: no disponible.
 
-Recomendación operativa: antes de planificar hardware, inspeccionar `config.json`, el tamaño de los ficheros de pesos y el tokenizador en el repositorio de HuggingFace para determinar la arquitectura y el número de parámetros.
+Recomendación operativa: antes de planificar hardware, inspeccionar `config.json`, el tamaño de los ficheros de pesos y el tokenizador en el repositorio de Hugging Face para determinar la arquitectura y el número de parámetros.
 
 ## Comparativa con modelos similares
 
@@ -81,7 +81,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Founderlinfz/testmodel | no disponible | no disponible | MIT | Repositorio público en HuggingFace, 0 descargas |
+| Founderlinfz/testmodel | no disponible | no disponible | MIT | Repositorio público en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Founderlinfz/testmodel
+- Repositorio en Hugging Face: https://huggingface.co/Founderlinfz/testmodel
 - Model card (contenido íntegro: únicamente `license: mit`): https://huggingface.co/Founderlinfz/testmodel/blob/main/README.md
 - Texto de la licencia MIT: https://opensource.org/licenses/MIT
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo; las búsquedas devuelven páginas genéricas sin relación con el artefacto.

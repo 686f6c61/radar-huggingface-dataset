@@ -95,7 +95,7 @@ Datos de rendimiento comparativo (MOS, WER, latencia): no disponibles en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mrfakename/Kokoro-7M-Distill-ONNX
+- Hugging Face: https://huggingface.co/mrfakename/Kokoro-7M-Distill-ONNX
 - Modelo base (estudiante en PyTorch): https://huggingface.co/oddadmix/Kokoro-7M-Distill
 - Profesor: https://huggingface.co/hexgrad/Kokoro-82M
 - Referencia de compatibilidad ONNX: https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX

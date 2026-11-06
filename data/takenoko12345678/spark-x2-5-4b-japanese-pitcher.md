@@ -99,10 +99,10 @@ No se han publicado resultados de benchmarks estándar adicionales (MMLU, HumanE
 
 | Modelo | Parámetros | Contexto | Rol de personaje (juez, naturalidad / adecuación / consistencia) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spark-X2.5-4B-Japanese-Pitcher (este) | ~4B + LoRA r=16 | no disponible | 4,20 / 4,59 / 4,61 | Apache 2.0 | HuggingFace (adaptador y GGUF) |
+| Spark-X2.5-4B-Japanese-Pitcher (este) | ~4B + LoRA r=16 | no disponible | 4,20 / 4,59 / 4,61 | Apache 2.0 | Hugging Face (adaptador y GGUF) |
 | Qwen3.5-4B Pitcher | ~4B + LoRA | no disponible | 4,33 / 4,85 / 4,78 | no disponible | versión comparativa usada en el informe del proyecto Pitcher |
 | Pitcher anterior (base japonés intermedio) | ~4B + LoRA | no disponible | 3,73 / 4,38 / 4,50 | no disponible | versión previa del proyecto Pitcher |
-| Spark-X2.5-4B-Japanese (base) | ~4B | no disponible | sin adaptador de personaje; 6-9 % de encabezados en modo rol | Apache 2.0 | HuggingFace (modelo y GGUF) |
+| Spark-X2.5-4B-Japanese (base) | ~4B | no disponible | sin adaptador de personaje; 6-9 % de encabezados en modo rol | Apache 2.0 | Hugging Face (modelo y GGUF) |
 
 Frente a Qwen3.5-4B en su versión Pitcher, este adaptador queda ligeramente por detrás en las tres métricas de personaje, pero mejora claramente respecto a la iteración anterior del propio proyecto. La ventaja diferencial es la licencia Apache 2.0 declarada y la publicación completa de datos y scripts.
 

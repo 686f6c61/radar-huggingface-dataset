@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-1B-GRPO-DeepMath-01-Bert-MLM es un ajuste fino publicado por el usuario AryanK123 en HuggingFace, construido sobre AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04, que a su vez parte de la familia Meta Llama 3.2 de 1B parámetros en su variante Instruct. El modelo se ha entrenado con GRPO (Group Relative Policy Optimization), el algoritmo de aprendizaje por refuerzo introducido en el artículo DeepSeekMath, usando la librería TRL de HuggingFace.
+Llama-3.2-1B-GRPO-DeepMath-01-Bert-MLM es un ajuste fino publicado por el usuario AryanK123 en Hugging Face, construido sobre AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04, que a su vez parte de la familia Meta Llama 3.2 de 1B parámetros en su variante Instruct. El modelo se ha entrenado con GRPO (Group Relative Policy Optimization), el algoritmo de aprendizaje por refuerzo introducido en el artículo DeepSeekMath, usando la librería TRL de Hugging Face.
 
 Por la nomenclatura, se trata de un experimento de investigación orientado a razonamiento matemático (sufijo DeepMath y GRPO) sobre un modelo pequeño de 1B parámetros, con licencia y idiomas sin declarar en la model card. El sufijo Bert-MLM sugiere algún tipo de cabeza o etapa de enmascaramiento de lenguaje tipo BERT, pero ese extremo no está documentado en la información disponible.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: en FP16/BF16 los 1,23 B parámetros ocupan aproximadamente 2,5 GB, a los que hay que sumar caché KV y activaciones; con contexto corto es razonable esperar un consumo de 4 a 5 GB. En cuantización de 8 bits bajaría a ~1,3 GB y en 4 bits a ~0,8-1 GB. Son estimaciones por tamaño, no medidas sobre este repositorio.
 - GPU recomendadas: cualquiera con 8 GB o más de VRAM (RTX 3060, RTX 4060 Ti, RTX 4070, RTX 4090, L4, A10G). Para entrenamiento con GRPO conviene una GPU con al menos 16-24 GB (RTX 4090, A100 40 GB, L40S) por el coste de memoria del muestreo de grupos y las copias del modelo de referencia.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU con 6-8 GB de VRAM si se cuantiza o se usa precisión reducida con contexto corto.
-- Opciones de despliegue: transformers con `pipeline` o `generate`, vLLM y TGI para servicio con batching continuo, y llama.cpp/Ollama si se convierte manualmente a GGUF, ya que el repositorio solo publica safetensors. La etiqueta `endpoints_compatible` de HuggingFace sugiere compatibilidad con Inference Endpoints.
+- Opciones de despliegue: transformers con `pipeline` o `generate`, vLLM y TGI para servicio con batching continuo, y llama.cpp/Ollama si se convierte manualmente a GGUF, ya que el repositorio solo publica safetensors. La etiqueta `endpoints_compatible` de Hugging Face sugiere compatibilidad con Inference Endpoints.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones y el repositorio figura con 0.0 GB de tamaño, por lo que ni siquiera está confirmado que los pesos sean descargables.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ La comparación de rendimiento no es posible: este modelo no publica ninguna mé
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AryanK123/Llama-3.2-1B-GRPO-DeepMath-01-Bert-MLM
+- Modelo en Hugging Face: https://huggingface.co/AryanK123/Llama-3.2-1B-GRPO-DeepMath-01-Bert-MLM
 - Modelo base (checkpoint SFT intermedio): https://huggingface.co/AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04
 - Modelo base original de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Artículo DeepSeekMath (GRPO): https://huggingface.co/papers/2402.03300

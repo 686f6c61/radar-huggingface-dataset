@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-CQ-4bit es una cuantización de 4 bits del modelo base Qwen3.5-9B-Base, publicada por el usuario thousandml en HuggingFace. El modelo subyacente, desarrollado por el equipo Qwen de Alibaba, es un modelo causal multimodal (texto e imagen) de aproximadamente 9.000 millones de parámetros que combina una arquitectura híbrida de atención lineal (Gated DeltaNet) con atención completa (Gated Attention) y una red de mezcla de expertos dispersa (MoE). Esta variante concreta emplea el esquema de cuantización "CQ" en 4 bits, orientado a reducir el espacio en disco y los requisitos de memoria para inferencia.
+Qwen3.5-9B-CQ-4bit es una cuantización de 4 bits del modelo base Qwen3.5-9B-Base, publicada por el usuario thousandml en Hugging Face. El modelo subyacente, desarrollado por el equipo Qwen de Alibaba, es un modelo causal multimodal (texto e imagen) de aproximadamente 9.000 millones de parámetros que combina una arquitectura híbrida de atención lineal (Gated DeltaNet) con atención completa (Gated Attention) y una red de mezcla de expertos dispersa (MoE). Esta variante concreta emplea el esquema de cuantización "CQ" en 4 bits, orientado a reducir el espacio en disco y los requisitos de memoria para inferencia.
 
 El modelo base Qwen3.5-9B destaca por su fusión temprana de tokens multimodales, un contexto nativo de 262.144 tokens extensible hasta 1.010.000, y soporte para 201 idiomas y dialectos. Incorpora además entrenamiento con múltiples pasos de MTP (multi-token prediction) y un encoder de visión, lo que lo sitúa en la categoría image-text-to-text. La relevancia de esta ficha radica en que ofrece capacidades de razonamiento, código y visión en un tamaño que puede desplegarse en hardware de gama alta de consumo, si bien la cuantización a 4 bits introduce compromisos de precisión que conviene evaluar.
 
@@ -36,7 +36,7 @@ El entrenamiento incluyó pre-entrenamiento y post-entrenamiento, con escalado d
 - Capacidades multilingües amplias: 201 idiomas y dialectos según el autor del modelo base.
 - Soporte de contexto largo: 262.144 tokens nativos, extensible hasta 1.010.000.
 - Predicción multi-token (MTP) entrenada en varios pasos, orientada a decodificación especulativa y mayor throughput.
-- Compatibilidad declarada con HuggingFace Transformers, vLLM, SGLang y KTransformers.
+- Compatibilidad declarada con Hugging Face Transformers, vLLM, SGLang y KTransformers.
 - Soporte de tool calling / function calling: no disponible explícitamente en la información proporcionada.
 - Modo thinking explícito: no disponible en la información proporcionada para esta variante.
 
@@ -66,16 +66,16 @@ El extracto de la model card se interrumpe en la fila de MMLU-Redux, por lo que 
 - VRAM estimada para inferencia: el repositorio ocupa 8,0 GB en disco; con cuantización 4 bits y overhead de activaciones y KV cache, se estima un consumo de VRAM en el rango de 8-12 GB para contextos moderados, aunque no se dispone de mediciones oficiales.
 - GPU recomendadas: para el modelo base de 9B en precisión completa se requieren GPUs de 24 GB o más (RTX 4090, A100 40 GB, H100). Para esta variante 4 bits, GPUs de consumo de 12-16 GB (RTX 4070 Ti Super, RTX 4080, RTX 4090) podrían ser suficientes para contextos cortos.
 - Cabe en GPU de consumo: probablemente sí en RTX 4090 (24 GB) y posiblemente en RTX 4080 (16 GB) con contexto reducido; verificar empíricamente dado el desajuste de parámetros reportado.
-- Opciones de despliegue: HuggingFace Transformers, vLLM, SGLang y KTransformers según la model card del base; llama.cpp y Ollama no están confirmados para este formato "CQ".
+- Opciones de despliegue: Hugging Face Transformers, vLLM, SGLang y KTransformers según la model card del base; llama.cpp y Ollama no están confirmados para este formato "CQ".
 - Latencia y throughput: no disponibles. La arquitectura híbrida con Gated DeltaNet y MTP está diseñada para alto throughput y baja latencia, pero no se aportan cifras concretas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | MMLU-Pro | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-CQ-4bit (esta ficha) | 9B declarados / 2,06B en safetensors | 262.144 (ext. 1.010.000) | 82,5 (base) | Apache 2.0 | HuggingFace, 33 descargas |
-| Qwen3.5-4B | 4B | no disponible | 79,1 | Apache 2.0 | HuggingFace (oficial) |
-| Qwen3-30BA3B-Thinking-2507 | 30B (MoE) | no disponible | 80,9 | Apache 2.0 | HuggingFace (oficial) |
+| Qwen3.5-9B-CQ-4bit (esta ficha) | 9B declarados / 2,06B en safetensors | 262.144 (ext. 1.010.000) | 82,5 (base) | Apache 2.0 | Hugging Face, 33 descargas |
+| Qwen3.5-4B | 4B | no disponible | 79,1 | Apache 2.0 | Hugging Face (oficial) |
+| Qwen3-30BA3B-Thinking-2507 | 30B (MoE) | no disponible | 80,9 | Apache 2.0 | Hugging Face (oficial) |
 | GPT-OSS-20B | 20B | no disponible | 74,8 | no disponible | no disponible |
 
 La comparativa se limita a los datos presentes en la model card del base. No se dispone de información sobre licencia ni disponibilidad de GPT-OSS-20B en la documentación consultada, por lo que esos campos se marcan como no disponibles.
@@ -94,7 +94,7 @@ La comparativa se limita a los datos presentes en la model card del base. No se 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thousandml/Qwen3.5-9B-CQ-4bit
+- Repositorio Hugging Face: https://huggingface.co/thousandml/Qwen3.5-9B-CQ-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Blog oficial Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Qwen Chat: https://chat.qwen.ai

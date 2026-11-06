@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Abobus2222228/xori` es un repositorio de modelo alojado en HuggingFace por el usuario Abobus2222228. En el momento de la consulta, la informacion publica disponible es minima: el repositorio no declara pipeline, licencia, idiomas, arquitectura ni tamano, y la unica etiqueta asociada es `region:us`, que es un metadato generico de la propia plataforma y no describe ninguna capacidad tecnica del modelo. No existe tarjeta de modelo, paper, blog ni repositorio de codigo asociado en los resultados de busqueda disponibles.
+`Abobus2222228/xori` es un repositorio de modelo alojado en Hugging Face por el usuario Abobus2222228. En el momento de la consulta, la informacion publica disponible es minima: el repositorio no declara pipeline, licencia, idiomas, arquitectura ni tamano, y la unica etiqueta asociada es `region:us`, que es un metadato generico de la propia plataforma y no describe ninguna capacidad tecnica del modelo. No existe tarjeta de modelo, paper, blog ni repositorio de codigo asociado en los resultados de busqueda disponibles.
 
-El repositorio esta ademas sujeto a acceso restringido (gated): para descargar los pesos es necesario aceptar condiciones en HuggingFace. Esto impide verificar de forma independiente los ficheros de pesos, su formato, sus dimensiones o cualquier detalle de configuracion. El contador publico indica 0 descargas y 1 like, por lo que se trata de un artefacto sin adopcion conocida ni validacion por parte de la comunidad.
+El repositorio esta ademas sujeto a acceso restringido (gated): para descargar los pesos es necesario aceptar condiciones en Hugging Face. Esto impide verificar de forma independiente los ficheros de pesos, su formato, sus dimensiones o cualquier detalle de configuracion. El contador publico indica 0 descargas y 1 like, por lo que se trata de un artefacto sin adopcion conocida ni validacion por parte de la comunidad.
 
 Por todo ello, esta ficha se limita a documentar los metadatos verificables y a marcar explicitamente como "no disponible" todo aquello que no puede confirmarse. No es posible evaluar la relevancia tecnica del modelo, su calidad ni su idoneidad para produccion con la informacion actual.
 
@@ -21,7 +21,7 @@ Por todo ello, esta ficha se limita a documentar los metadatos verificables y a 
 | Licencia | no disponible (el repositorio no declara licencia) |
 | Formato de pesos | no disponible |
 | Autor | Abobus2222228 |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Etiquetas declaradas | `region:us` (metadato de plataforma, no tecnico) |
 | Descargas | 0 |
 | Likes | 1 |
@@ -85,14 +85,14 @@ No disponible. No se ha identificado la categoria del modelo (tamano, tarea, mod
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Abobus2222228/xori | no disponible | no disponible | no disponible | no disponible | gated en HuggingFace |
+| Abobus2222228/xori | no disponible | no disponible | no disponible | no disponible | gated en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay tarjeta de modelo, paper ni repositorio de codigo asociado.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara de uso comercial, modificacion ni redistribucion.
-- Acceso restringido (gated): los pesos requieren aceptar condiciones en HuggingFace, lo que anade una dependencia del autor para cualquier uso.
+- Acceso restringido (gated): los pesos requieren aceptar condiciones en Hugging Face, lo que anade una dependencia del autor para cualquier uso.
 - Imposibilidad de auditar sesgos: al no conocerse los datos de entrenamiento, no se pueden evaluar sesgos de genero, raza, idioma o dominio.
 - Riesgo de alucinacion: no evaluable, pero debe asumirse alto por defecto en cualquier modelo sin benchmarks ni evaluaciones publicadas.
 - Cobertura idiomatica desconocida: no se puede confirmar soporte de castellano ni de otros idiomas.
@@ -102,7 +102,7 @@ No disponible. No se ha identificado la categoria del modelo (tamano, tarea, mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Abobus2222228/xori
+- Hugging Face: https://huggingface.co/Abobus2222228/xori
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion: no disponible

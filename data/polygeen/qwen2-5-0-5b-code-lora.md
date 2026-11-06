@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`polygeen/qwen2.5-0.5b-code-lora` es un repositorio publicado en HuggingFace por el usuario `polygeen`. Por su identificador y por la etiqueta de libreria (`transformers`), todo apunta a un adaptador LoRA orientado a generacion de codigo sobre un modelo base de la familia Qwen2.5 de 0,5 mil millones de parametros, aunque esta circunstancia no esta confirmada en la documentacion disponible. El repositorio tiene un tamano declarado de 0,0 GB, cero descargas y cero likes en el momento de la consulta, y fue creado el 10 de septiembre de 2026.
+`polygeen/qwen2.5-0.5b-code-lora` es un repositorio publicado en Hugging Face por el usuario `polygeen`. Por su identificador y por la etiqueta de libreria (`transformers`), todo apunta a un adaptador LoRA orientado a generacion de codigo sobre un modelo base de la familia Qwen2.5 de 0,5 mil millones de parametros, aunque esta circunstancia no esta confirmada en la documentacion disponible. El repositorio tiene un tamano declarado de 0,0 GB, cero descargas y cero likes en el momento de la consulta, y fue creado el 10 de septiembre de 2026.
 
-La model card publicada es la plantilla generada automaticamente por HuggingFace: todos los campos relevantes (autor real, financiacion, tipo de modelo, idiomas, licencia, modelo origen, datos de entrenamiento, hiperparametros, evaluacion y limitaciones) figuran como `[More Information Needed]`. No hay, por tanto, informacion verificable sobre el proceso de entrenamiento, el dataset utilizado, la composicion de datos ni los resultados de evaluacion.
+La model card publicada es la plantilla generada automaticamente por Hugging Face: todos los campos relevantes (autor real, financiacion, tipo de modelo, idiomas, licencia, modelo origen, datos de entrenamiento, hiperparametros, evaluacion y limitaciones) figuran como `[More Information Needed]`. No hay, por tanto, informacion verificable sobre el proceso de entrenamiento, el dataset utilizado, la composicion de datos ni los resultados de evaluacion.
 
 La relevancia de esta ficha es fundamentalmente metodologica: sirve como ejemplo de repositorio sin documentar y como recordatorio de que un nombre de modelo no constituye evidencia de sus capacidades. Cualquier evaluacion practica exige descargar los pesos, inspeccionar el `adapter_config.json` y ejecutar pruebas propias antes de considerar su uso en produccion.
 
@@ -27,7 +27,7 @@ Otros metadatos declarados: libreria `transformers`, etiquetas `transformers`, `
 
 No hay informacion disponible sobre la arquitectura concreta ni sobre el procedimiento de entrenamiento. La model card no especifica regimen de precision (fp32, fp16, bf16), numero de tokens de entrenamiento, composicion del dataset, uso de RLHF, DPO u otra tecnica de alineamiento, ni hiperparametros de ajuste. Tampoco se documentan metodos de decodificacion especulativa, atencion lineal ni ninguna otra innovacion tecnica.
 
-El unico dato estructural inferible es el propio identificador: `qwen2.5-0.5b` indica el modelo base presumible y el sufijo `-code-lora` sugiere un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre un corpus de codigo. Ambos extremos son inferencias a partir del nombre y no estan confirmados por el autor. La presencia de la etiqueta `endpoints_compatible` indica unicamente que el repositorio es compatible con la infraestructura de inferencia gestionada de HuggingFace, no que exista un despliegue operativo del modelo.
+El unico dato estructural inferible es el propio identificador: `qwen2.5-0.5b` indica el modelo base presumible y el sufijo `-code-lora` sugiere un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre un corpus de codigo. Ambos extremos son inferencias a partir del nombre y no estan confirmados por el autor. La presencia de la etiqueta `endpoints_compatible` indica unicamente que el repositorio es compatible con la infraestructura de inferencia gestionada de Hugging Face, no que exista un despliegue operativo del modelo.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ No hay datos de rendimiento de este repositorio que permitan una comparacion cua
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| polygeen/qwen2.5-0.5b-code-lora | no disponible (presumiblemente 0,5 B en el base) | no disponible | no disponible | no disponible | Publicado en HuggingFace con 0 descargas y 0 likes |
+| polygeen/qwen2.5-0.5b-code-lora | no disponible (presumiblemente 0,5 B en el base) | no disponible | no disponible | no disponible | Publicado en Hugging Face con 0 descargas y 0 likes |
 | Qwen2.5-0.5B | 0,5 B | 32 768 tokens segun documentacion publica | No disponible en esta ficha | No disponible en esta ficha | Publico |
 | Qwen2.5-Coder-0.5B | 0,5 B | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | Publico |
 
@@ -92,7 +92,7 @@ Nota: no se incluyen cifras de benchmarks porque no se dispone de ninguna fuente
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/polygeen/qwen2.5-0.5b-code-lora
+- Repositorio en Hugging Face: https://huggingface.co/polygeen/qwen2.5-0.5b-code-lora
 - Paper referenciado en las etiquetas (calculador de impacto ambiental, no especifico del modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ambiental citado en la plantilla: https://mlco2.github.io/impact
 

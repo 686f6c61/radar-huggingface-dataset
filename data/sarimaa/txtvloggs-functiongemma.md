@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparado entre estos modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sarimaa/txtvloggs-functiongemma
+- Modelo en Hugging Face: https://huggingface.co/Sarimaa/txtvloggs-functiongemma
 - Modelo base: https://huggingface.co/google/functiongemma-270m-it
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - Gemma Prohibited Use Policy: https://ai.google.dev/gemma/prohibited_use_policy

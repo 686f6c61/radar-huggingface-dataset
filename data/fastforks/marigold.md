@@ -80,7 +80,7 @@ Middlebury 2014 (mitad, 994x1482): original fp32 975,6 ms; portable 408,07 ms; k
 | Modelo | Tipo | Parámetros | Contexto/entrada | Precisión NYUv2 (AbsRel) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Marigold depth v1-1 (fastforks) | Difusión (SD2 UNet) | no disponible | imagen RGB arbitraria >= 8x8 | 0,0561 | OpenRAIL++-M | pesos en prs-eth, card en fastforks |
-| Marigold depth v1-1 (original) | Difusión (SD2 UNet) | no disponible | imagen RGB arbitraria | 0,0558 | OpenRAIL++-M | HuggingFace prs-eth |
+| Marigold depth v1-1 (original) | Difusión (SD2 UNet) | no disponible | imagen RGB arbitraria | 0,0558 | OpenRAIL++-M | Hugging Face prs-eth |
 | Otros modelos de profundidad monocular | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos de modelos alternativos (Depth Anything, MiDaS, ZoeDepth u otros) para establecer una comparativa cuantitativa fiable.
@@ -99,7 +99,7 @@ No se dispone en la información proporcionada de datos de modelos alternativos 
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/marigold
+- Model card en Hugging Face: https://huggingface.co/fastforks/marigold
 - Pesos del autor: https://huggingface.co/prs-eth/marigold-depth-v1-1
 - Licencia del autor: https://huggingface.co/prs-eth/marigold-depth-v1-1/blob/9571e7123e258cf052b4e54241f17971c290e9a8/README.md
 - Código de fastforks: https://github.com/kleinicke/fastforks

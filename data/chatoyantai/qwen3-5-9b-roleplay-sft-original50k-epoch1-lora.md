@@ -112,7 +112,7 @@ No se han encontrado en la información proporcionada alternativas comparables c
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ChatoyantAI/qwen3.5-9b-roleplay-sft-original50k-epoch1-lora
+- Adaptador en Hugging Face: https://huggingface.co/ChatoyantAI/qwen3.5-9b-roleplay-sft-original50k-epoch1-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B (revisión `c202236235762e1c871ad0ccb60c8ee5ba337b9a`)
 - Archivos de procedencia incluidos en el repositorio: `release-manifest.json`, `LICENSE`, `NOTICE`, `BASE_MODEL_README.md`
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo, al dataset ni a publicaciones técnicas asociadas; los resultados devueltos corresponden a contenido de vídeo no relacionado.

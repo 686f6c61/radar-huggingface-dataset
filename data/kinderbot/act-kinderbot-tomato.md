@@ -1,7 +1,7 @@
 # kinderbot/act-kinderbot-tomato
 
 ## Resumen
-act-kinderbot-tomato es una política de robótica entrenada mediante aprendizaje por imitación con el método ACT (Action Chunking with Transformers), publicada por el usuario kinderbot en HuggingFace Hub y empaquetada con la librería LeRobot de HuggingFace. No es un modelo de lenguaje: es un controlador visomotor que recibe el estado de las articulaciones de un brazo robótico y dos cámaras, y devuelve comandos de acción. La tarea concreta para la que se ha entrenado es "Pick the tomato from the box and place it on the table" (coger el tomate de la caja y dejarlo en la mesa).
+act-kinderbot-tomato es una política de robótica entrenada mediante aprendizaje por imitación con el método ACT (Action Chunking with Transformers), publicada por el usuario kinderbot en Hugging Face Hub y empaquetada con la librería LeRobot de Hugging Face. No es un modelo de lenguaje: es un controlador visomotor que recibe el estado de las articulaciones de un brazo robótico y dos cámaras, y devuelve comandos de acción. La tarea concreta para la que se ha entrenado es "Pick the tomato from the box and place it on the table" (coger el tomate de la caja y dejarlo en la mesa).
 
 El checkpoint tiene 51.668.614 parámetros totales (unos 51,7 millones) y ocupa 0,2 GB en el repositorio, con pesos en formato safetensors. La arquitectura sigue el diseño ACT publicado en el artículo arXiv:2304.13705, que predice secuencias cortas de acciones (chunks) en lugar de un único paso de control, lo que reduce el error de acumulación y permite ejecutar gestos suaves con datos de teleoperación limitados.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act-kinderbot-tomato (este) | ACT, imitacion, chunking | 51,7 M | no aplica (observacion fija de 2 camaras + estado) | apache-2.0 | HuggingFace Hub, via LeRobot |
+| act-kinderbot-tomato (este) | ACT, imitacion, chunking | 51,7 M | no aplica (observacion fija de 2 camaras + estado) | apache-2.0 | Hugging Face Hub, via LeRobot |
 | Diffusion Policy | politica de difusion para manipulacion | no disponible | no aplica | no disponible en la informacion proporcionada | repositorio de investigacion |
-| SmolVLA (HuggingFace) | VLA compacto de LeRobot | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace Hub, via LeRobot |
+| SmolVLA (Hugging Face) | VLA compacto de LeRobot | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face Hub, via LeRobot |
 | pi0 / openpi (Physical Intelligence) | VLA de proposito general | no disponible | no disponible | no disponible en la informacion proporcionada | publicacion y repositorio |
 
 Los datos de los modelos alternativos no aparecen en la información proporcionada, por lo que las celdas correspondientes se dejan como no disponibles en lugar de estimarlas.
@@ -84,7 +84,7 @@ Los datos de los modelos alternativos no aparecen en la información proporciona
 - Ausencia de documentación sobre cuantización: no se ofrecen variantes en GGUF, ONNX ni formatos de 8/4 bits, lo que limita el despliegue en hardware muy restringido.
 
 ## Enlaces
-- Modelo en HuggingFace Hub: https://huggingface.co/kinderbot/act-kinderbot-tomato
+- Modelo en Hugging Face Hub: https://huggingface.co/kinderbot/act-kinderbot-tomato
 - Dataset de entrenamiento: https://huggingface.co/datasets/kinderbot/kinderbot-pick-tomato
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=kinderbot/kinderbot-pick-tomato
 - Articulo ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705

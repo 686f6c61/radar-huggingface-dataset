@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eoinf/power_decay_empirical_support_200m_dmodel8_16_32_64_earlystop` es un artefacto de investigacion publicado en HuggingFace por el usuario `eoinf`. No se trata de un modelo de lenguaje destinado a uso general, sino de una rejilla de experimentos con transformers causales de tamano minimo (d_model de 8, 16, 32 y 64) entrenados sobre un vocabulario de 4096 tokens y una longitud de contexto de 256 tokens. El objetivo declarado es estudiar el comportamiento de modelos pequenos bajo un regimen de entrenamiento nominal de 199.999.488 tokens, con paradas tempranas registradas por modelo.
+`eoinf/power_decay_empirical_support_200m_dmodel8_16_32_64_earlystop` es un artefacto de investigacion publicado en Hugging Face por el usuario `eoinf`. No se trata de un modelo de lenguaje destinado a uso general, sino de una rejilla de experimentos con transformers causales de tamano minimo (d_model de 8, 16, 32 y 64) entrenados sobre un vocabulario de 4096 tokens y una longitud de contexto de 256 tokens. El objetivo declarado es estudiar el comportamiento de modelos pequenos bajo un regimen de entrenamiento nominal de 199.999.488 tokens, con paradas tempranas registradas por modelo.
 
 El repositorio contiene checkpoints en formato state-dict de PyTorch, la definicion de cada ejecucion, el historial de checkpoints, un log de actualizaciones de entrenamiento y metadatos de resultados. No incluye estados de reanudacion del optimizador ni los datos de entrenamiento. El codigo de arquitectura y carga se encuentra en el repositorio `synthetic_trigrams`, segun la model card.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| eoinf/power_decay_empirical_support_200m_dmodel8_16_32_64_earlystop | no disponible (d_model 8-64) | 256 | no disponible | HuggingFace, state-dict PyTorch |
+| eoinf/power_decay_empirical_support_200m_dmodel8_16_32_64_earlystop | no disponible (d_model 8-64) | 256 | no disponible | Hugging Face, state-dict PyTorch |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables de la misma categoria en la documentacion proporcionada.
@@ -84,6 +84,6 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/power_decay_empirical_support_200m_dmodel8_16_32_64_earlystop
+- Hugging Face: https://huggingface.co/eoinf/power_decay_empirical_support_200m_dmodel8_16_32_64_earlystop
 - Repositorio de codigo `synthetic_trigrams`: mencionado en la model card, sin URL disponible en la informacion proporcionada.
 - Paper, blog, demo o repositorio adicional: no disponible.

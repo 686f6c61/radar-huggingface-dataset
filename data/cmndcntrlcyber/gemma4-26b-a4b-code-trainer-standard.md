@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`cmndcntrlcyber/gemma4-26b-a4b-code-trainer-standard` es un adaptador LoRA de ajuste supervisado (SFT) publicado en HuggingFace por el usuario cmndcntrlcyber. No se trata de un modelo completo, sino de pesos delta PEFT que deben cargarse sobre el modelo base `google/gemma-4-26B-A4B-it` indicado en las etiquetas y en el campo `base_model` del repositorio. El tamano del repositorio, 0,3 GB, es consistente con un adaptador y no con un modelo de 26B parametros.
+`cmndcntrlcyber/gemma4-26b-a4b-code-trainer-standard` es un adaptador LoRA de ajuste supervisado (SFT) publicado en Hugging Face por el usuario cmndcntrlcyber. No se trata de un modelo completo, sino de pesos delta PEFT que deben cargarse sobre el modelo base `google/gemma-4-26B-A4B-it` indicado en las etiquetas y en el campo `base_model` del repositorio. El tamano del repositorio, 0,3 GB, es consistente con un adaptador y no con un modelo de 26B parametros.
 
-El problema que pretende resolver es el ajuste de un modelo base multimodal/instruction-tuned hacia tareas de codigo, segun sugiere el sufijo `code-trainer-standard` del identificador. Sin embargo, la model card publicada es la plantilla por defecto de HuggingFace y no contiene ni una sola seccion completada: autor, datos de entrenamiento, hiperparametros, licencia, idiomas y evaluacion figuran todos como "More Information Needed".
+El problema que pretende resolver es el ajuste de un modelo base multimodal/instruction-tuned hacia tareas de codigo, segun sugiere el sufijo `code-trainer-standard` del identificador. Sin embargo, la model card publicada es la plantilla por defecto de Hugging Face y no contiene ni una sola seccion completada: autor, datos de entrenamiento, hiperparametros, licencia, idiomas y evaluacion figuran todos como "More Information Needed".
 
 Su relevancia actual es limitada y fundamentalmente experimental: se apoya en un modelo base de arquitectura presumiblemente MoE (el sufijo A4B del nombre apunta a 4B parametros activos sobre 26B totales, aunque el autor no lo confirma), pero la ausencia total de documentacion, la falta de licencia declarada y las cero descargas y likes registradas lo convierten en un artefacto que solo deberia evaluarse con cautela y bajo verificacion previa.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada y fundamentalmente experimental: se apoya en un
 
 El artefacto es un adaptador de bajo rango (LoRA) generado con la libreria PEFT 0.19.1 y las etiquetas `sft` y `trl` apuntan a un ajuste supervisado con la libreria TRL sobre el modelo base `google/gemma-4-26B-A4B-it`. No se especifica el rango del adaptador, los modulos objetivo, el numero de tokens de entrenamiento, la composicion del dataset ni si hubo una fase posterior de alineacion (RLHF, DPO u otra). La model card no incluye hiperparametros de entrenamiento, regimen de precision (bf16, fp16, fp8) ni infraestructura de computo empleada.
 
-Tampoco se documenta ninguna innovacion tecnica: no hay mencion a decodificacion especulativa, atencion lineal, mezcla de expertos ni a ninguna modificacion sobre el modelo base. La unica referencia externa presente en las etiquetas es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico y que aparece en la plantilla por defecto de HuggingFace, no como contribucion del autor de este adaptador.
+Tampoco se documenta ninguna innovacion tecnica: no hay mencion a decodificacion especulativa, atencion lineal, mezcla de expertos ni a ninguna modificacion sobre el modelo base. La unica referencia externa presente en las etiquetas es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico y que aparece en la plantilla por defecto de Hugging Face, no como contribucion del autor de este adaptador.
 
 ## Capacidades
 
@@ -45,7 +45,7 @@ Debido a la ausencia total de documentacion y de evaluacion, los siguientes caso
 
 - Experimentacion academica con adaptadores LoRA: el repositorio sirve como ejemplo de adaptador PEFT sobre un modelo base grande para estudiar tecnicas de ajuste eficiente en parametros, sin necesidad de reentrenar el modelo completo.
 - Punto de partida para un ajuste propio de codigo: un equipo podria cargar el adaptador, evaluar su comportamiento con su propio conjunto de validacion y decidir si le sirve como inicializacion para un SFT adicional.
-- Investigacion sobre reproducibilidad en HuggingFace: la ficha permite analizar que ocurre cuando se publica un artefacto sin model card, sin licencia y sin datos de evaluacion, un caso de estudio recurrente en la gobernanza de modelos abiertos.
+- Investigacion sobre reproducibilidad en Hugging Face: la ficha permite analizar que ocurre cuando se publica un artefacto sin model card, sin licencia y sin datos de evaluacion, un caso de estudio recurrente en la gobernanza de modelos abiertos.
 - Prototipado interno de asistencia a la programacion: en un entorno aislado y con supervision humana, podria probarse como asistente de autocompletado o explicacion de fragmentos de codigo para un equipo pequeno.
 - Comparacion de adaptadores sobre un mismo base: permite medir, mediante evaluacion propia, si el ajuste mejora o degrada las capacidades del modelo base en tareas de generacion de codigo.
 - Analisis de seguridad y sesgos de adaptadores de origen desconocido: util para laboratorios que estudian que riesgos introduce un delta de pesos no documentado sobre un modelo base conocido.
@@ -73,8 +73,8 @@ No se dispone de datos verificados sobre alternativas comparables en la informac
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `cmndcntrlcyber/gemma4-26b-a4b-code-trainer-standard` | no disponible (adaptador LoRA) | no disponible | no evaluado | no disponible | HuggingFace, repositorio de 0,3 GB |
-| `google/gemma-4-26B-A4B-it` (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `cmndcntrlcyber/gemma4-26b-a4b-code-trainer-standard` | no disponible (adaptador LoRA) | no disponible | no evaluado | no disponible | Hugging Face, repositorio de 0,3 GB |
+| `google/gemma-4-26B-A4B-it` (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La busqueda web realizada no devolvio resultados relevantes sobre el modelo ni sobre modelos comparables: los dominios recuperados corresponden a proveedores de peptidos de laboratorio y no guardan relacion con el objeto de esta ficha.
@@ -94,7 +94,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre el modelo ni s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cmndcntrlcyber/gemma4-26b-a4b-code-trainer-standard
+- Repositorio Hugging Face: https://huggingface.co/cmndcntrlcyber/gemma4-26b-a4b-code-trainer-standard
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Referencia citada en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la plantilla: https://mlco2.github.io/impact

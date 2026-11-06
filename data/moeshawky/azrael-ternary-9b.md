@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Azrael-ternary-9B es una versión cuantizada a pesos ternarios del modelo XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, publicado por el usuario moeshawky en HuggingFace. Se trata de un experimento de cuantización extrema que reduce los pesos de las capas lineales a valores del conjunto {-1, 0, 1} con escalas por grupo de 128 elementos, aplicando una receta de reconstrucción capa por capa consciente de las activaciones (Recipe A) sobre hardware TPU v5e-8 mediante el runtime TorchTPU. El modelo base emplea la arquitectura Qwen3.5 con un esquema híbrido que combina capas Gated DeltaNet (atención lineal recurrente) con capas de atención estándar.
+Azrael-ternary-9B es una versión cuantizada a pesos ternarios del modelo XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, publicado por el usuario moeshawky en Hugging Face. Se trata de un experimento de cuantización extrema que reduce los pesos de las capas lineales a valores del conjunto {-1, 0, 1} con escalas por grupo de 128 elementos, aplicando una receta de reconstrucción capa por capa consciente de las activaciones (Recipe A) sobre hardware TPU v5e-8 mediante el runtime TorchTPU. El modelo base emplea la arquitectura Qwen3.5 con un esquema híbrido que combina capas Gated DeltaNet (atención lineal recurrente) con capas de atención estándar.
 
 El interés de esta ficha es doble: por un lado documenta una técnica de cuantización ternaria aplicada a un transformer híbrido moderno de 9B parámetros; por otro, expone las limitaciones de un artefacto que, en el momento de su publicación, no está comprimido al formato empaquetado de 1,58 bits y cuyo GGUF conserva tensores en F32, lo que anula buena parte del ahorro de memoria esperado. El repositorio no incluye resultados de benchmarks de calidad downstream, solo métricas internas de fidelidad de la cuantización (KL frente al profesor, similitud coseno de logits).
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la información disponible. Las 
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Azrael-ternary-9B | 9B | no disponible | Ternaria (group 128), GGUF F32 | Apache 2.0 | HuggingFace, 0 descargas |
-| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B | 9B | no disponible | Original en precisión completa | no disponible en esta ficha | HuggingFace (modelo base) |
+| Azrael-ternary-9B | 9B | no disponible | Ternaria (group 128), GGUF F32 | Apache 2.0 | Hugging Face, 0 descargas |
+| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B | 9B | no disponible | Original en precisión completa | no disponible en esta ficha | Hugging Face (modelo base) |
 | BitNet b1.58 (referencia de la técnica) | variable | no disponible | Ternaria empaquetada 1,58 bits | no disponible en esta ficha | no disponible en esta ficha |
 
 La comparación con BitNet b1.58 es pertinente por la técnica, pero Azrael no implementa el formato empaquetado de 1,58 bits, por lo que no compite en eficiencia de memoria con las implementaciones nativas ternarias.
@@ -94,7 +94,7 @@ La comparación con BitNet b1.58 es pertinente por la técnica, pero Azrael no i
 
 ## Enlaces
 
-- [HuggingFace: moeshawky/Azrael-ternary-9B](https://huggingface.co/moeshawky/Azrael-ternary-9B)
+- [Hugging Face: moeshawky/Azrael-ternary-9B](https://huggingface.co/moeshawky/Azrael-ternary-9B)
 - [Modelo base: XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B)
 - Paper, blog o repositorio de TorchTPU: no disponible en la información proporcionada.
 - Repositorio del harness "think" de MiMo: no disponible en la información proporcionada.

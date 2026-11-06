@@ -4,7 +4,7 @@
 
 También documenta qué no funcionó: seis intentos de arreglar con instrucciones empeoraron. Incluye una tabla de versiones v1-v10.
 
-Los resultados de búsqueda web: en su mayoría irrelevantes (comparativos de modos de devolución de chantier en francés, etc.). Hay un GitHub de QwenLM/Qwen3.8 que menciona que es la serie de modelos de lenguaje grande, incluyendo Qwen3.5, Qwen3.6, y el último Qwen3.8. También hay un enlace a Qwen/Qwen3-8B en HuggingFace (que es diferente, es Qwen3-8B, no Qwen3.8). El enlace de GitHub parece relevante para el modelo base.
+Los resultados de búsqueda web: en su mayoría irrelevantes (comparativos de modos de devolución de chantier en francés, etc.). Hay un GitHub de QwenLM/Qwen3.8 que menciona que es la serie de modelos de lenguaje grande, incluyendo Qwen3.5, Qwen3.6, y el último Qwen3.8. También hay un enlace a Qwen/Qwen3-8B en Hugging Face (que es diferente, es Qwen3-8B, no Qwen3.8). El enlace de GitHub parece relevante para el modelo base.
 
 Ahora, debo redactar la ficha. Tengo que tener cuidado con los datos. La información proporcionada es sobre un "chat template" (una plantilla de chat), no un modelo de lenguaje en sí. Es un archivo Jinja que se usa con modelos Qwen3.8. Por tanto, la ficha debe reflejar esto. El "modelo" es en realidad una plantilla de chat que modifica el comportamiento de razonamiento de los modelos base Qwen3.8-Flash-Next y Qwen3.8-27B.
 
@@ -101,7 +101,7 @@ La comparativa se limita a plantillas de chat porque el repositorio no es un mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mdrbal83/Qwen3.8-Sharp-Seeded-Chat-Template
+- Repositorio en Hugging Face: https://huggingface.co/mdrbal83/Qwen3.8-Sharp-Seeded-Chat-Template
 - Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
 - Plantilla upstream: https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates
 - Plantilla upstream base: https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates

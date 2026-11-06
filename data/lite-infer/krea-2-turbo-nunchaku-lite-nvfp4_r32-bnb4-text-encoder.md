@@ -84,7 +84,7 @@ La comparativa se limita a las variantes del mismo modelo base porque no se disp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lite-infer/krea-2-turbo-nunchaku-lite-nvfp4_r32-bnb4-text-encoder
+- Repositorio Hugging Face: https://huggingface.co/lite-infer/krea-2-turbo-nunchaku-lite-nvfp4_r32-bnb4-text-encoder
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Herramienta de cuantización diffuse-compressor: https://github.com/rootonchair/diffuse-compressor
 - Licencia krea-2-community-license: https://cdn.jsdelivr.net/gh/krea-ai/krea-2@db3984fbc6e13b34c0064990fc2d95ac64d00058/assets/hf_samples/LICENSE.pdf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tharshan/hindi-english_code_switch es un repositorio alojado en HuggingFace por el usuario Tharshan, publicado bajo licencia MIT y, en el momento de elaborar esta ficha, sin descargas ni "likes" registrados. La informacion publica disponible es minima: no se declara pipeline, no se listan idiomas soportados y la model card se limita a la linea de licencia, sin descripcion, especificaciones tecnicas ni resultados.
+Tharshan/hindi-english_code_switch es un repositorio alojado en Hugging Face por el usuario Tharshan, publicado bajo licencia MIT y, en el momento de elaborar esta ficha, sin descargas ni "likes" registrados. La informacion publica disponible es minima: no se declara pipeline, no se listan idiomas soportados y la model card se limita a la linea de licencia, sin descripcion, especificaciones tecnicas ni resultados.
 
 El nombre del repositorio sugiere un recurso orientado al cambio de codigo (code-switching) entre hindi e ingles, un fenomeno muy frecuente en texto informal de India y su diaspora. Esta interpretacion procede unicamente del identificador y no esta confirmada por la documentacion: no es posible verificar si se trata de un modelo entrenado, de un conjunto de datos, de un script de preprocesado o de una demostracion.
 
@@ -83,7 +83,7 @@ No disponible. Al no conocerse la naturaleza del repositorio (modelo, dataset o 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tharshan/hindi-english_code_switch
+- Repositorio en Hugging Face: https://huggingface.co/Tharshan/hindi-english_code_switch
 - Model card: https://huggingface.co/Tharshan/hindi-english_code_switch/blob/main/README.md
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - Busquedas web complementarias: no se recupero ningun resultado relevante; las coincidencias obtenidas correspondian a paginas de inicio de sesion de servicios de correo sin relacion con el modelo.

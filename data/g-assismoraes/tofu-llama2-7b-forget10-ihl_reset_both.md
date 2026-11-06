@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_both
+- Hugging Face: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_both
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Repositorio TOFU (referencia del benchmark): https://github.com/locuslab/tofu
 - Paper TOFU: https://arxiv.org/abs/2401.06121

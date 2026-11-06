@@ -18,7 +18,7 @@ Su relevancia radica en el segmento de modelos de 4B parámetros capaces de mant
 | Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Llama 3.1 soporta 128K, pero no se confirma para este fine-tune) |
 | Tipos de cuantizacion | no disponible en la model card; el repo incluye safetensors en precision completa |
 | Idiomas soportados | en (ingles) |
-| Licencia | nvidia-open-model-license (etiquetada como "other" en HuggingFace) |
+| Licencia | nvidia-open-model-license (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors |
 | Tamano del repo | 18,1 GB |
 | Plantilla de chat | ChatML (desde la retrainacion del 16 de julio de 2025) |
@@ -89,7 +89,7 @@ Los dos modelos de 3B del mismo autor son las alternativas más directas y el pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SicariusSicariiStuff/Impish_LLAMA_4B
+- Modelo en Hugging Face: https://huggingface.co/SicariusSicariiStuff/Impish_LLAMA_4B
 - Modelo base: https://huggingface.co/nvidia/Llama-3.1-Minitron-4B-Width-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/SicariusSicariiStuff/UBW_Tapestries
 - Modelo predecesor Impish_LLAMA_3B: https://huggingface.co/SicariusSicariiStuff/Impish_LLAMA_3B

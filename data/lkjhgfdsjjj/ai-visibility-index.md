@@ -84,7 +84,7 @@ La diferencia fundamental es que este dataset mide la presencia de ficheros téc
 
 ## Enlaces
 
-- Dataset en HuggingFace: https://huggingface.co/lkjhgfdsjjj/ai-visibility-index
+- Dataset en Hugging Face: https://huggingface.co/lkjhgfdsjjj/ai-visibility-index
 - Comprobador gratuito de visibilidad: https://lkjhgfdsjjj-ai-visibility-checker.static.hf.space/
 - Endpoints x402 y storefront: https://www.autonomylabsweb.tech/x402-endpoints.html
 - Informe de auditoría completo (19 EUR): https://www.autonomylabsweb.tech/ai-visibility-report.html

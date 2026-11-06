@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `minjaechoi/qwen36-35b-a3b-2p00bit-r13` es un checkpoint de investigación derivado de `Qwen/Qwen3.6-35B-A3B` en el que los expertos enrutados (routed experts) se han comprimido a una media de 2,00 bits por peso, mientras que el resto de los pesos permanece en BF16. Lo publica el usuario minjaechoi en HuggingFace y se etiqueta como `quantized`, con arquitectura declarada `qwen3_5_moe` (mezcla de expertos). El repositorio ocupa 70,2 GB y el recuento real de parámetros en safetensors es de 35.107.181.936 (unos 35,1 mil millones).
+El modelo `minjaechoi/qwen36-35b-a3b-2p00bit-r13` es un checkpoint de investigación derivado de `Qwen/Qwen3.6-35B-A3B` en el que los expertos enrutados (routed experts) se han comprimido a una media de 2,00 bits por peso, mientras que el resto de los pesos permanece en BF16. Lo publica el usuario minjaechoi en Hugging Face y se etiqueta como `quantized`, con arquitectura declarada `qwen3_5_moe` (mezcla de expertos). El repositorio ocupa 70,2 GB y el recuento real de parámetros en safetensors es de 35.107.181.936 (unos 35,1 mil millones).
 
 El detalle técnico más relevante es que la compresión no se traduce en una reducción del tamaño del repositorio: el autor indica explícitamente que los pesos se almacenan desquantizados en tensores BF16, de modo que el artefacto descargable mantiene el tamaño de un modelo BF16 completo. La ganancia declarada es de precisión numérica en el cálculo (los expertos operan con un presupuesto efectivo de 2 bits), no de huella en disco. El modelo se carga con `transformers` estándar y con vLLM, sin necesidad de kernels ni librerías de cuantización específicas.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `minjaechoi/qwen36-35b-a3b-2p00bit-r13` | 35,1 mil millones (MoE) | no disponible | Expertos a 2,00 bits, resto BF16 | no disponible (hereda la del base) | HuggingFace, 0 descargas, 0 likes |
-| `Qwen/Qwen3.6-35B-A3B` (modelo base) | 35,1 mil millones (MoE) | no disponible | BF16 en origen | no disponible en la informacion proporcionada | HuggingFace |
+| `minjaechoi/qwen36-35b-a3b-2p00bit-r13` | 35,1 mil millones (MoE) | no disponible | Expertos a 2,00 bits, resto BF16 | no disponible (hereda la del base) | Hugging Face, 0 descargas, 0 likes |
+| `Qwen/Qwen3.6-35B-A3B` (modelo base) | 35,1 mil millones (MoE) | no disponible | BF16 en origen | no disponible en la informacion proporcionada | Hugging Face |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones de contexto para establecer una comparación cuantitativa con alternativas de la misma categoría. La única comparación documentada es con el modelo base del que deriva.
@@ -85,6 +85,6 @@ No se dispone de datos de rendimiento ni de especificaciones de contexto para es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p00bit-r13
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p00bit-r13
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este checkpoint en la busqueda web realizada.

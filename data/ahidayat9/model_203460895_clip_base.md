@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`model_203460895_clip_base` es un modelo de arquitectura CLIP (Contrastive Language-Image Pretraining) de escala base, publicado por el usuario `ahidayat9` en HuggingFace. Según la model card, está diseñado específicamente para tareas contrastivas, lo que sugiere que aprende representaciones conjuntas de imágenes y texto mediante aprendizaje contrastivo, siguiendo la línea de los modelos CLIP de OpenAI. El repositorio contiene únicamente un archivo Python (`model_203460895_clip_base.py`) y no incluye pesos preentrenados ni documentación técnica adicional.
+`model_203460895_clip_base` es un modelo de arquitectura CLIP (Contrastive Language-Image Pretraining) de escala base, publicado por el usuario `ahidayat9` en Hugging Face. Según la model card, está diseñado específicamente para tareas contrastivas, lo que sugiere que aprende representaciones conjuntas de imágenes y texto mediante aprendizaje contrastivo, siguiendo la línea de los modelos CLIP de OpenAI. El repositorio contiene únicamente un archivo Python (`model_203460895_clip_base.py`) y no incluye pesos preentrenados ni documentación técnica adicional.
 
 La relevancia de este modelo radica en que CLIP es una arquitectura de referencia para el aprendizaje multimodal imagen-texto, capaz de realizar clasificación zero-shot y búsqueda semántica. Sin embargo, la información disponible es muy limitada: no se especifican parámetros, contexto, datos de entrenamiento ni resultados de evaluación, lo que impide validar su rendimiento o su utilidad práctica. La licencia MIT permite su uso comercial, pero la falta de artefactos publicados (pesos, dataset, logs) hace que su reproducibilidad sea cuestionable.
 
@@ -61,7 +61,7 @@ No se puede realizar una comparativa rigurosa porque no hay datos de parámetros
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `openai/clip-vit-base-patch32` | 86M | 77 tokens | MIT | Pesos públicos en HuggingFace |
+| `openai/clip-vit-base-patch32` | 86M | 77 tokens | MIT | Pesos públicos en Hugging Face |
 | `model_203460895_clip_base` (este) | no disponible | no disponible | MIT | Solo código fuente, sin pesos |
 
 ## Limitaciones y advertencias
@@ -75,8 +75,8 @@ No se puede realizar una comparativa rigurosa porque no hay datos de parámetros
 
 ## Enlaces
 
-- [HuggingFace - ahidayat9/model_203460895_clip_base](https://huggingface.co/ahidayat9/model_203460895_clip_base)
+- [Hugging Face - ahidayat9/model_203460895_clip_base](https://huggingface.co/ahidayat9/model_203460895_clip_base)
 - [GitHub - openai/CLIP](https://github.com/openai/CLIP)
-- [Documentación CLIP en HuggingFace](https://huggingface.co/docs/transformers/model_doc/clip)
+- [Documentación CLIP en Hugging Face](https://huggingface.co/docs/transformers/model_doc/clip)
 - [OpenAI - CLIP: Connecting text and images](https://openai.com/index/clip/)
-- [HuggingFace - openai/clip-vit-base-patch32](https://huggingface.co/openai/clip-vit-base-patch32)
+- [Hugging Face - openai/clip-vit-base-patch32](https://huggingface.co/openai/clip-vit-base-patch32)

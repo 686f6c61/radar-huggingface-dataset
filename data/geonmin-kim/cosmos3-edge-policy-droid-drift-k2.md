@@ -105,7 +105,7 @@ No se han identificado en la información proporcionada modelos comparables de o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/geonmin-kim/Cosmos3-Edge-Policy-DROID-Drift-K2
+- Modelo en Hugging Face: https://huggingface.co/geonmin-kim/Cosmos3-Edge-Policy-DROID-Drift-K2
 - Modelo base: https://huggingface.co/nvidia/Cosmos3-Edge-Policy-DROID
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados devueltos no guardan relación con el modelo.

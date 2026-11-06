@@ -90,7 +90,7 @@ Las cifras de rendimiento comparado entre estas variantes no estan publicadas en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xunlinkx/MiMo-V2.6-Distill-Qwen-9B-oQ5e-mtp
+- Repositorio en Hugging Face: https://huggingface.co/xunlinkx/MiMo-V2.6-Distill-Qwen-9B-oQ5e-mtp
 - Modelo base oficial: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Donante de la cabeza MTP: https://huggingface.co/mlx-works/MiMo-V2.6-Distill-Qwen-9B-oQ4e-mtp
 - Pagina oficial de la serie MiMo-V2.6 (Xiaomi): https://mimo.xiaomi.com/mimo-v2-6

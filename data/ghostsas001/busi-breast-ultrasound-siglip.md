@@ -6,7 +6,7 @@ busi-breast-ultrasound-siglip es un clasificador de imagenes de ecografia mamari
 
 La relevancia del modelo es mas metodologica que clinica. El autor declara explicitamente que reutilizo sin ningun ajuste una receta de entrenamiento procedente de un proyecto de clasificacion de globulos blancos, y que obtuvo un 87,18 % de accuracy y un 87,07 % de macro F1 sobre un conjunto de retencion de solo 78 imagenes. La propia model card advierte que las accuracy publicadas sobre las mismas 780 imagenes de BUSI oscilan entre el 68,8 % y el 99,86 % segun el split y el protocolo, y que la release original contiene imagenes duplicadas y algunas ecografias que no son de mama (Musah et al., 2025).
 
-Es, por tanto, un artefacto de investigacion reproducible y de tamano reducido (0,4 GB de repositorio), no un dispositivo medico. Su licencia Apache 2.0 y su compatibilidad con `transformers` y con los Inference Endpoints de HuggingFace lo hacen facil de desplegar como punto de partida o como baseline, pero no como componente de decision clinica.
+Es, por tanto, un artefacto de investigacion reproducible y de tamano reducido (0,4 GB de repositorio), no un dispositivo medico. Su licencia Apache 2.0 y su compatibilidad con `transformers` y con los Inference Endpoints de Hugging Face lo hacen facil de desplegar como punto de partida o como baseline, pero no como componente de decision clinica.
 
 ## Especificaciones tecnicas
 
@@ -37,7 +37,7 @@ La receta de entrenamiento, segun la model card, proviene de un proyecto de clas
 - Salida de logits y, aplicando softmax, distribucion de probabilidad sobre las tres clases, tal como se muestra en el ejemplo de uso de la model card.
 - Inferencia a resolucion fija de 224 x 224 px sobre imagenes RGB (la ecografia original debe convertirse a RGB).
 - Integracion directa con la libreria `transformers` mediante `AutoModelForImageClassification`.
-- Compatibilidad declarada con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad declarada con endpoints de Hugging Face (tag `endpoints_compatible`).
 - No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un clasificador de vision, no un modelo generativo.
 - No soporta generacion de texto, codigo ni matematicas.
 - No se documentan capacidades multilingues ni de audio.
@@ -71,7 +71,7 @@ Contexto aportado por el autor: las accuracy publicadas sobre las mismas 780 ima
 - VRAM estimada para inferencia: aproximadamente 372 MB en fp32 y 186 MB en fp16 para los pesos (92,9 M de parametros); las activaciones de una imagen de 224 x 224 son despreciables. En la practica, el consumo total con runtime de PyTorch ronda 1-2 GB.
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en GPU integradas o en CPU para inferencia de baja frecuencia.
 - GPU de datacenter (A100, H100, L4, T4) no son necesarias salvo para procesar lotes muy grandes en paralelo; el autor entreno el modelo en una unica NVIDIA T4.
-- Opciones de despliegue: `transformers` sobre PyTorch (ruta oficial documentada), exportacion a ONNX Runtime, TorchScript, servidores de inferencia genericos (Triton, TorchServe) y los Inference Endpoints de HuggingFace (el repositorio incluye el tag `endpoints_compatible`).
+- Opciones de despliegue: `transformers` sobre PyTorch (ruta oficial documentada), exportacion a ONNX Runtime, TorchScript, servidores de inferencia genericos (Triton, TorchServe) y los Inference Endpoints de Hugging Face (el repositorio incluye el tag `endpoints_compatible`).
 - vLLM, llama.cpp, Ollama y TGI no son aplicables: estan orientados a modelos de lenguaje generativos, no a clasificacion de imagenes.
 - Latencia y throughput estimados: no disponibles. No se publican mediciones de latencia ni de imagenes por segundo.
 
@@ -79,9 +79,9 @@ Contexto aportado por el autor: las accuracy publicadas sobre las mismas 780 ima
 
 | Modelo | Parametros | Tarea | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ghostsas001/busi-breast-ultrasound-siglip | 92.886.531 | Clasificacion 3 clases (BUSI) | 224 x 224 px | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| google/siglip2-base-patch16-224 | no disponible en la informacion proporcionada | Vision-lenguaje contrastivo (zero-shot) | 224 x 224 px | no disponible en la informacion proporcionada | HuggingFace (modelo base) |
-| ghostsas001/busi-breast-ultrasound-yolo | no disponible | Deteccion en ecografia mamaria (modelo complementario citado por el autor) | no disponible | no disponible | HuggingFace |
+| ghostsas001/busi-breast-ultrasound-siglip | 92.886.531 | Clasificacion 3 clases (BUSI) | 224 x 224 px | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| google/siglip2-base-patch16-224 | no disponible en la informacion proporcionada | Vision-lenguaje contrastivo (zero-shot) | 224 x 224 px | no disponible en la informacion proporcionada | Hugging Face (modelo base) |
+| ghostsas001/busi-breast-ultrasound-yolo | no disponible | Deteccion en ecografia mamaria (modelo complementario citado por el autor) | no disponible | no disponible | Hugging Face |
 | Clasificadores CNN sobre BUSI (literatura) | no disponible | Clasificacion binaria o de tres clases | variable | variable | publicaciones; accuracy reportada entre 68,8 % y 99,86 % segun protocolo |
 
 No se dispone de datos de rendimiento comparables entre estos modelos dentro de la informacion proporcionada. La comparacion relevante es metodologica: frente a los clasificadores CNN habituales sobre BUSI, este modelo parte de un backbone SigLIP2 preentrenado a gran escala, lo que explica que alcance resultados altos con solo 624 imagenes de entrenamiento y 15 epocas, pero tambien hace que su evaluacion sobre 78 imagenes sea poco concluyente.
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos dentro de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ghostsas001/busi-breast-ultrasound-siglip
+- Modelo en Hugging Face: https://huggingface.co/ghostsas001/busi-breast-ultrasound-siglip
 - Modelo base: https://huggingface.co/google/siglip2-base-patch16-224
 - Organizacion SigLIP de Google: https://huggingface.co/google
 - Modelo complementario YOLO: https://huggingface.co/ghostsas001/busi-breast-ultrasound-yolo

@@ -93,11 +93,11 @@ La comparativa se limita a la cadena de modelos de la que deriva, ya que la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/InterpreticAI/Qwenputer-4B-Uncensored-lite-v2
+- Modelo en Hugging Face: https://huggingface.co/InterpreticAI/Qwenputer-4B-Uncensored-lite-v2
 - Modelo base: https://huggingface.co/InterpreticAI/Qwenputer-4B-Uncensored-v2
 - Modelo sin ordenador: https://huggingface.co/InterpreticAI/Qwen3.5-4B-Uncensored-v2
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.5-4B
-- Qwenputer en HuggingFace: https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer
+- Qwenputer en Hugging Face: https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer
 - Repositorio del compilador Qwenputer: https://github.com/divagr18/qwenputer
 - Referencia: Agrawal, D. (2026). Qwenputer: a computer compiled into the weights of a language model (la model card no incluye URL del paper).
 - Referencia: Pan y Xu (2026), evaluación de preguntas políticas (la model card no incluye URL).

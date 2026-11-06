@@ -77,7 +77,7 @@ La comparativa se limita a los modelos de la misma suite y al base original, ya 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lamsheeper/Qwen3.5-4B-d0-vtok101-base
+- Modelo en Hugging Face: https://huggingface.co/Lamsheeper/Qwen3.5-4B-d0-vtok101-base
 - Repositorio de adaptadores LoRA de la suite: https://huggingface.co/Lamsheeper/Qwen3.5-4B-d0-vtok-lora-seeds
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-4B
 - Documentación de Qwen3.5 en LM Studio: https://lmstudio.ai/models/qwen/qwen3.5-4b

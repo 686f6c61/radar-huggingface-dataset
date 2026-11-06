@@ -85,7 +85,7 @@ La comparacion con NLLB y M2M-100 es orientativa por categoria (traduccion neuro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SacredSAMF/mediakit-opus-mt-onnx
+- Repositorio Hugging Face: https://huggingface.co/SacredSAMF/mediakit-opus-mt-onnx
 - Helsinki-NLP (organizacion de origen): https://huggingface.co/Helsinki-NLP
 - Ejemplo de modelo original: https://huggingface.co/Helsinki-NLP/opus-mt-en-es
 - Ejemplo de modelo original: https://huggingface.co/Helsinki-NLP/opus-mt-es-en

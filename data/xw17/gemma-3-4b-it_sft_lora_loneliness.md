@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `xw17/gemma-3-4b-it_SFT_lora_loneliness` es un adaptador LoRA de ajuste supervisado (SFT) publicado en HuggingFace por el usuario `xw17`. Por el propio identificador se deduce que se trata de un fine-tuning del modelo base Gemma 3 4B IT (variante instruida de 4 000 millones de parámetros de la familia Gemma 3), orientado temáticamente a la soledad ("loneliness"), presumiblemente mediante conversaciones de acompañamiento o apoyo emocional. El repositorio ocupa aproximadamente 0,1 GB, un tamaño coherente con un adaptador LoRA y no con un modelo completo.
+El modelo `xw17/gemma-3-4b-it_SFT_lora_loneliness` es un adaptador LoRA de ajuste supervisado (SFT) publicado en Hugging Face por el usuario `xw17`. Por el propio identificador se deduce que se trata de un fine-tuning del modelo base Gemma 3 4B IT (variante instruida de 4 000 millones de parámetros de la familia Gemma 3), orientado temáticamente a la soledad ("loneliness"), presumiblemente mediante conversaciones de acompañamiento o apoyo emocional. El repositorio ocupa aproximadamente 0,1 GB, un tamaño coherente con un adaptador LoRA y no con un modelo completo.
 
-La model card publicada es la plantilla automática de HuggingFace sin cumplimentar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) figuran como "[More Information Needed]". Esto significa que no hay información verificable sobre el dataset de SFT, el rango y los targets del LoRA, la precisión de entrenamiento ni el procedimiento de alineamiento empleado.
+La model card publicada es la plantilla automática de Hugging Face sin cumplimentar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) figuran como "[More Information Needed]". Esto significa que no hay información verificable sobre el dataset de SFT, el rango y los targets del LoRA, la precisión de entrenamiento ni el procedimiento de alineamiento empleado.
 
 Es relevante ahora únicamente como artefacto de investigación o experimento personal poco documentado: cero descargas y cero "likes" en el momento de la consulta, sin pipeline declarado y sin licencia especificada. Cualquier evaluación seria del modelo exige inspeccionar los pesos del adaptador y la configuración de entrenamiento directamente en el repositorio, ya que la documentación pública no aporta nada.
 
@@ -30,7 +30,7 @@ Es relevante ahora únicamente como artefacto de investigación o experimento pe
 
 No hay informacion publicada sobre la arquitectura del adaptador mas alla de lo deducible del identificador: se trata de un ajuste LoRA (Low-Rank Adaptation) aplicado sobre `gemma-3-4b-it`, por lo que la arquitectura subyacente seria la del transformer decoder-only del modelo base, con los pesos originales congelados y un conjunto reducido de matrices de bajo rango entrenadas. El metodo de SFT (supervised fine-tuning) forma parte del nombre del modelo, pero no se detallan el rango, el alpha, los modulos objetivo ni la tasa de aprendizaje empleados.
 
-Respecto a los datos de entrenamiento, la model card no incluye ninguna descripcion: se desconoce el numero de ejemplos, su procedencia, si hubo filtrado, si se aplico RLHF, DPO u otra tecnica de alineamiento posterior al SFT, y si se uso precision mixta bf16 o fp16. Tampoco se documentan hiperparametros, infraestructura de computo ni impacto ambiental asociado. La etiqueta `arxiv:1910.09700` que aparece en los tags del repositorio corresponde a la cita de Lacoste et al. sobre el calculo de emisiones de carbono incluida en la plantilla automatica de HuggingFace, no a un articulo sobre este modelo.
+Respecto a los datos de entrenamiento, la model card no incluye ninguna descripcion: se desconoce el numero de ejemplos, su procedencia, si hubo filtrado, si se aplico RLHF, DPO u otra tecnica de alineamiento posterior al SFT, y si se uso precision mixta bf16 o fp16. Tampoco se documentan hiperparametros, infraestructura de computo ni impacto ambiental asociado. La etiqueta `arxiv:1910.09700` que aparece en los tags del repositorio corresponde a la cita de Lacoste et al. sobre el calculo de emisiones de carbono incluida en la plantilla automatica de Hugging Face, no a un articulo sobre este modelo.
 
 ## Capacidades
 
@@ -88,8 +88,8 @@ No disponible. No se dispone de datos de rendimiento de este adaptador ni de ada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xw17/gemma-3-4b-it_SFT_lora_loneliness
+- Modelo en Hugging Face: https://huggingface.co/xw17/gemma-3-4b-it_SFT_lora_loneliness
 - Modelo base referenciado en el identificador (no enlazado por el autor): `google/gemma-3-4b-it`
-- Cita `arxiv:1910.09700` presente en los tags: corresponde a Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning" (https://arxiv.org/abs/1910.09700), incluida en la plantilla automatica de HuggingFace; no es un articulo sobre este modelo.
+- Cita `arxiv:1910.09700` presente en los tags: corresponde a Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning" (https://arxiv.org/abs/1910.09700), incluida en la plantilla automatica de Hugging Face; no es un articulo sobre este modelo.
 - Paper, repositorio, demo o blog del autor: no disponibles.
 - La busqueda web realizada no ha devuelto ningun enlace relacionado con el modelo (los resultados obtenidos correspondian a servicios de correo no relacionados).

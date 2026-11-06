@@ -23,7 +23,7 @@ Su relevancia radica en que, con solo unos 20.000 ejemplos de entrenamiento, mej
 
 ZwZ2-27B parte de Qwen3.6-27B y se entrena con **EvidenceConnect**, un metodo de construccion de datos que genera preguntas verificadas de multi-region a partir de imagenes de SA-1B. El proceso tiene tres fases: (1) agrupacion de 3 a 7 regiones relacionadas y generacion de preguntas usando vistas privilegiadas con zoom; (2) verificacion de respuestas mediante acuerdo entre modelos y pruebas de eliminacion de regiones (drop-one); (3) conversion de las preguntas verificadas a tareas de cuatro opciones. El entrenamiento se realiza con **GRPO** (Group Relative Policy Optimization, aprendizaje por refuerzo), sin una etapa adicional de supervised fine-tuning, lo cual es una de las decisiones tecnicas mas destacables del proyecto.
 
-Un aspecto clave del metodo es que la politica (el modelo) solo ve imagenes completas con contornos de regiones coloreados; los recortes privilegiados se usan exclusivamente para construir los datos, nunca en inferencia. Esto permite que el modelo generalice la capacidad de conectar evidencia entre regiones sin depender de herramientas externas de zoom. El dataset resultante, ZwZ2-RL-VQA, esta publicado en HuggingFace con su esquema de datos y proceso de sintesis documentados.
+Un aspecto clave del metodo es que la politica (el modelo) solo ve imagenes completas con contornos de regiones coloreados; los recortes privilegiados se usan exclusivamente para construir los datos, nunca en inferencia. Esto permite que el modelo generalice la capacidad de conectar evidencia entre regiones sin depender de herramientas externas de zoom. El dataset resultante, ZwZ2-RL-VQA, esta publicado en Hugging Face con su esquema de datos y proceso de sintesis documentados.
 
 ## Capacidades
 
@@ -87,12 +87,12 @@ Las tres variantes comparten metodo y aproximadamente 20.000 ejemplos de entrena
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inclusionAI/ZwZ2-27B
+- Modelo en Hugging Face: https://huggingface.co/inclusionAI/ZwZ2-27B
 - Paper (arXiv 2610.37037): https://arxiv.org/pdf/2610.37037
 - Paper de primera generacion (arXiv 2602.11858): https://huggingface.co/papers/2602.11858
 - Proyecto ZwZ2 (GitHub): https://github.com/inclusionAI/Zooming-without-Zooming-v2
 - Codigo de primera generacion (GitHub): https://github.com/inclusionAI/Zooming-without-Zooming
-- Coleccion ZwZ2 en HuggingFace: https://huggingface.co/collections/inclusionAI/zooming-without-zooming-v2
+- Coleccion ZwZ2 en Hugging Face: https://huggingface.co/collections/inclusionAI/zooming-without-zooming-v2
 - Coleccion de primera generacion: https://huggingface.co/collections/inclusionAI/zooming-without-zooming
 - Dataset de entrenamiento: https://huggingface.co/datasets/inclusionAI/ZwZ2-RL-VQA
 - Modelos relacionados: https://huggingface.co/inclusionAI/ZwZ2-4B y https://huggingface.co/inclusionAI/ZwZ2-9B

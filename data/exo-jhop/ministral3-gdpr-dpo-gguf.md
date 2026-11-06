@@ -89,7 +89,7 @@ Nota: los datos de los modelos de referencia corresponden a especificaciones pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/exo-jhop/ministral3-gdpr-dpo-gguf
+- Modelo en Hugging Face: https://huggingface.co/exo-jhop/ministral3-gdpr-dpo-gguf
 - Modelo base (bf16): https://huggingface.co/exo-jhop/ministral3-gdpr-dpo-fp16
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
 - No se han encontrado papers, blogs, demos ni repositorios adicionales relacionados con este modelo en los resultados de la busqueda web disponible.

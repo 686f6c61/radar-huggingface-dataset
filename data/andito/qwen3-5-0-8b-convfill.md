@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-ConvFill es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-0.8B, publicado por el usuario andito en HuggingFace. Se trata de un modelo de lenguaje causal de tipo transformer decoder-only con 752.393.024 parametros (aproximadamente 0,75 mil millones), orientado a generacion de texto y etiquetado como `conversational` en el repositorio. El sufijo «ConvFill» sugiere, a partir del nombre y sin confirmacion documental, un entrenamiento orientado a completar o rellenar turnos en conversaciones, aunque la model card no describe el dataset ni el objetivo.
+Qwen3.5-0.8B-ConvFill es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-0.8B, publicado por el usuario andito en Hugging Face. Se trata de un modelo de lenguaje causal de tipo transformer decoder-only con 752.393.024 parametros (aproximadamente 0,75 mil millones), orientado a generacion de texto y etiquetado como `conversational` en el repositorio. El sufijo «ConvFill» sugiere, a partir del nombre y sin confirmacion documental, un entrenamiento orientado a completar o rellenar turnos en conversaciones, aunque la model card no describe el dataset ni el objetivo.
 
 El interes practico del modelo es limitado pero claro: sirve como ejemplo de pipeline de fine-tuning completo con la libreria `transformers` (version 5.20.2) sobre una arquitectura reciente (`qwen3_5_text`), y como baseline de muy bajo coste computacional para tareas de generacion corta. El entrenamiento documentado es muy breve —30 pasos, 1,2 epocas, batch total de 16—, lo que sugiere un ajuste ligero sobre un conjunto de datos pequeno y no especificado.
 
@@ -23,7 +23,7 @@ No hay informacion publicada sobre la longitud de contexto, los idiomas soportad
 | Tarea declarada | text-generation (tag `conversational`) |
 | Dataset de entrenamiento | no disponible («unknown dataset» en la model card) |
 | Tamano del repositorio | 4,5 GB |
-| Estado en HuggingFace | 0 descargas, 0 likes (a fecha de la consulta) |
+| Estado en Hugging Face | 0 descargas, 0 likes (a fecha de la consulta) |
 
 ## Arquitectura y entrenamiento
 
@@ -38,7 +38,7 @@ Un detalle a tener en cuenta: el repositorio ocupa 4,5 GB para 752 millones de p
 - Generacion de texto autoregresiva: capacidad inherente al modelo base, sin evaluacion especifica publicada para este fine-tune.
 - Conversacion multi-turno: el repositorio esta etiquetado como `conversational`, lo que indica que el ajuste se realizo sobre formato de dialogo, aunque no se detalla la plantilla de chat utilizada.
 - Relleno y completado de turnos conversacionales: inferido del nombre «ConvFill», no confirmado en la documentacion.
-- Compatibilidad con endpoints de inferencia: el tag `endpoints_compatible` indica que puede desplegarse en la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints de inferencia: el tag `endpoints_compatible` indica que puede desplegarse en la infraestructura de Inference Endpoints de Hugging Face.
 - Tool calling / function calling: no documentado para este fine-tune; dependeria de las capacidades heredadas del modelo base.
 - Razonamiento multi-paso y modo «thinking»: no documentado.
 - Vision, audio u otras modalidades: no soportadas segun la arquitectura declarada (`qwen3_5_text`).
@@ -73,8 +73,8 @@ Los datos de los modelos alternativos provienen de su documentacion publica y no
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-0.8B-ConvFill | 752 M | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| Qwen3.5-0.8B-ConvFill | 752 M | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Qwen3-0.6B | ~0,6 B | 32k (ampliable con YaRN) | Apache 2.0 | Ampliamente disponible |
 | Llama 3.2 1B | ~1,24 B | 128k | Llama 3.2 Community License | Ampliamente disponible |
 | Gemma 3 1B | ~1 B | 32k | Gemma Terms of Use | Ampliamente disponible |
@@ -96,6 +96,6 @@ En rendimiento no hay comparacion posible: este fine-tune no publica metricas y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andito/Qwen3.5-0.8B-ConvFill
+- Modelo en Hugging Face: https://huggingface.co/andito/Qwen3.5-0.8B-ConvFill
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

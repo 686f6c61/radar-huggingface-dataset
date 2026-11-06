@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `aalujia/zero-mistral-beta57-e2` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace el 3 de septiembre de 2026 por el usuario aalujia. Está diseñado para ser aplicado sobre el modelo base `ZeroAgency/Mistral-Small-3.2-24B-Instruct-2506-Text-Only`, un instruct model de 24 mil millones de parámetros de la familia Mistral Small 3.2. El adaptador se distribuye en formato PEFT (librería `peft`) y tiene un tamaño de repositorio de 3.0 GB, lo que sugiere que contiene los pesos del adaptador LoRA y no el modelo completo.
+El modelo `aalujia/zero-mistral-beta57-e2` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face el 3 de septiembre de 2026 por el usuario aalujia. Está diseñado para ser aplicado sobre el modelo base `ZeroAgency/Mistral-Small-3.2-24B-Instruct-2506-Text-Only`, un instruct model de 24 mil millones de parámetros de la familia Mistral Small 3.2. El adaptador se distribuye en formato PEFT (librería `peft`) y tiene un tamaño de repositorio de 3.0 GB, lo que sugiere que contiene los pesos del adaptador LoRA y no el modelo completo.
 
 La ficha oficial del modelo está prácticamente vacía: no incluye información sobre el desarrollador, el proceso de entrenamiento, los datos utilizados, la licencia, los idiomas soportados ni los benchmarks. Esto limita gravemente cualquier evaluación rigurosa. El modelo parece ser un experimento o un checkpoint intermedio de un fine-tuning con axolotl, dado que aparece la etiqueta `axolotl` en los metadatos. No hay evidencia de uso en producción ni de adopción por parte de la comunidad (0 descargas, 0 likes en el momento de la consulta).
 
@@ -79,6 +79,6 @@ Sin datos de benchmarks, no se puede comparar con adaptadores conocidos como los
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aalujia/zero-mistral-beta57-e2
+- Hugging Face: https://huggingface.co/aalujia/zero-mistral-beta57-e2
 - Modelo base (referencia): https://huggingface.co/ZeroAgency/Mistral-Small-3.2-24B-Instruct-2506-Text-Only (enlace inferido del ID, no verificado)
 - Paper de LoRA (referencia técnica): arXiv:1910.09700 (citado en los tags del modelo)

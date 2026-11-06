@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables en esta ficha. El reposi
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [shmmsra/vocal-ai-models](https://huggingface.co/shmmsra/vocal-ai-models)
+- Repositorio de Hugging Face: [shmmsra/vocal-ai-models](https://huggingface.co/shmmsra/vocal-ai-models)
 - Proyecto `vocal-ai` en GitHub: [https://github.com/shmmsra/vocal-ai](https://github.com/shmmsra/vocal-ai) (según la model card)
 - Modelo original: [ResembleAI/chatterbox](https://huggingface.co/ResembleAI/chatterbox) (MIT)

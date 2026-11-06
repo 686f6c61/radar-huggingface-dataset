@@ -51,17 +51,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada: un modelo de 1.7B parametros en precision FP16 requiere aproximadamente 3,5 GB de VRAM solo para los pesos, mas overhead de activaciones y memoria del optimizador. Con cuantizacion de 4 bits, el requisito baja a alrededor de 1 GB, aunque no se han publicado cuantizaciones oficiales.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050) puede ejecutar el modelo en FP16. Para mayor velocidad, se recomienda una RTX 3060 o superior.
 - Compatibilidad con GPU de consumo: si, el modelo cabe en la mayoria de GPUs de consumo actuales, incluso en modo CPU con cuantizacion.
-- Opciones de despliegue: compatible con la libreria Transformers de HuggingFace, vLLM, llama.cpp, Ollama y TGI, aunque no se han verificado integraciones especificas para este fine-tune.
+- Opciones de despliegue: compatible con la libreria Transformers de Hugging Face, vLLM, llama.cpp, Ollama y TGI, aunque no se han verificado integraciones especificas para este fine-tune.
 - Latencia y throughput: no disponible; dependera del hardware y la cuantizacion. En una RTX 4090, un modelo de 1.7B puede generar decenas de tokens por segundo, pero no hay datos medidos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hongduc05/qwen3-chat-sum-5 | 1.7B | No especificado (base: 32K) | No especificada | HuggingFace |
-| unsloth/Qwen3-1.7B | 1.7B | 32K | Apache 2.0 | HuggingFace |
-| Qwen3-1.7B (original) | 1.7B | 32K | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B | 1B | 128K | Llama 3.2 Community License | HuggingFace |
+| hongduc05/qwen3-chat-sum-5 | 1.7B | No especificado (base: 32K) | No especificada | Hugging Face |
+| unsloth/Qwen3-1.7B | 1.7B | 32K | Apache 2.0 | Hugging Face |
+| Qwen3-1.7B (original) | 1.7B | 32K | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B | 1B | 128K | Llama 3.2 Community License | Hugging Face |
 
 El modelo se compara directamente con su base, Qwen3-1.7B, del cual hereda la arquitectura y los pesos iniciales. La diferencia principal radica en el ajuste fino para resumen, que podria mejorar el rendimiento en esa tarea especifica a costa de una posible perdida de generalidad. Frente a otros modelos de tamano similar como Llama-3.2-1B, Qwen3-1.7B ofrece un contexto mayor (32K frente a 128K en Llama, aunque Llama tiene mas contexto) y una licencia Apache 2.0, mientras que este fine-tune carece de licencia clara.
 
@@ -76,7 +76,7 @@ El modelo se compara directamente con su base, Qwen3-1.7B, del cual hereda la ar
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/hongduc05/qwen3-chat-sum-5)
+- [Modelo en Hugging Face](https://huggingface.co/hongduc05/qwen3-chat-sum-5)
 - [Modelo base unsloth/Qwen3-1.7B](https://huggingface.co/unsloth/Qwen3-1.7B)
 - [Qwen3 Technical Report (arXiv)](https://arxiv.org/html/2505.09388v1)
 - [Repositorio oficial de Qwen3 en GitHub](https://github.com/QwenLM/Qwen3)

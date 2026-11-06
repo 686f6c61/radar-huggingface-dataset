@@ -88,7 +88,7 @@ No se dispone de otros companions especulativos comparables en la información p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/isilicon/mango-deepseek41-dspark-q8
+- Repositorio Hugging Face: https://huggingface.co/isilicon/mango-deepseek41-dspark-q8
 - Modelo base (Unsloth): https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF/tree/85f81fb970add013033f25e94006713ca2c0aaf2
 - Modelo consumidor evaluado: https://huggingface.co/isilicon/mango-deepseek41-gsq-iq2xs-uncensored
 - Colección Mango: https://huggingface.co/collections/isilicon/mango-tested-models-and-preservation-mirrors-6ae3b73994c895ab42e360d2

@@ -6,7 +6,7 @@ SimpleTuner/flux-3-klein-image-domokun-1024 es un adaptador LoRA de tipo PEFT (P
 
 El interes practico del repositorio es doble. Por un lado, demuestra un flujo de trabajo reproducible de LoRA sobre la familia FLUX.3 con configuracion explicita (rango 32, alpha 32, 10.000 pasos, optimizador AdamW en bf16, prediccion flow matching). Por otro, sirve como ejemplo de adaptacion de un transformer de difusion moderno con un dataset minimo, algo relevante para quien necesite personalizacion de personaje o estilo sin reentrenar el modelo completo.
 
-La ficha describe exclusivamente lo que consta en la model card y en los metadatos de HuggingFace. El repositorio no incluye resultados de benchmarks, no declara idiomas soportados y no detalla el numero de parametros del modelo base, por lo que esos apartados se marcan como no disponibles.
+La ficha describe exclusivamente lo que consta en la model card y en los metadatos de Hugging Face. El repositorio no incluye resultados de benchmarks, no declara idiomas soportados y no detalla el numero de parametros del modelo base, por lo que esos apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -99,7 +99,7 @@ No se han encontrado en la informacion disponible otros adaptadores publicos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SimpleTuner/flux-3-klein-image-domokun-1024
+- Modelo en Hugging Face: https://huggingface.co/SimpleTuner/flux-3-klein-image-domokun-1024
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
 - Paper asociado: no disponible en la informacion proporcionada.
 - Blog o anuncio: no disponible en la informacion proporcionada.

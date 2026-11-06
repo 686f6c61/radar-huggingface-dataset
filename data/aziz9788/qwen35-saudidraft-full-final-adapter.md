@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `aziz9788/qwen35-saudidraft-full-final-adapter` es un adaptador LoRA (Low-Rank Adaptation) para el modelo base `unsloth/Qwen3.5-4B`, publicado por el usuario aziz9788 en HuggingFace. Se trata de un adaptador PEFT (Parameter-Efficient Fine-Tuning) que no incluye los pesos fusionados, sino únicamente los parámetros del adaptador, con un tamaño de repositorio de 0,3 GB. El adaptador se creó el 22 de agosto de 2026 y se presenta como un ajuste fino destinado a un proyecto de LLM en árabe saudí (etiqueta `saudi-llm`), aunque no se detalla el corpus de entrenamiento.
+El modelo `aziz9788/qwen35-saudidraft-full-final-adapter` es un adaptador LoRA (Low-Rank Adaptation) para el modelo base `unsloth/Qwen3.5-4B`, publicado por el usuario aziz9788 en Hugging Face. Se trata de un adaptador PEFT (Parameter-Efficient Fine-Tuning) que no incluye los pesos fusionados, sino únicamente los parámetros del adaptador, con un tamaño de repositorio de 0,3 GB. El adaptador se creó el 22 de agosto de 2026 y se presenta como un ajuste fino destinado a un proyecto de LLM en árabe saudí (etiqueta `saudi-llm`), aunque no se detalla el corpus de entrenamiento.
 
 El modelo base, Qwen3.5-4B, pertenece a la serie Qwen3.5 de Alibaba, que según la documentación disponible ofrece ventanas de contexto de hasta 256K tokens y arquitectura híbrida con atención lineal. Sin embargo, la información específica sobre el adaptador es muy limitada: solo se indica que continúa el entrenamiento desde el checkpoint 1650 de `SaudF/qwen35-4b-sft-rebuild-v1` y que se comparan dos recetas de fusión (directa y apilada) con distintos valores de `lora_alpha`. No se publican métricas de rendimiento ni detalles del proceso de entrenamiento.
 
@@ -73,8 +73,8 @@ No se dispone de información sobre adaptadores LoRA comparables del mismo autor
 
 ## Enlaces
 
-- [Repositorio HuggingFace del adaptador](https://huggingface.co/aziz9788/qwen35-saudidraft-full-final-adapter)
+- [Repositorio Hugging Face del adaptador](https://huggingface.co/aziz9788/qwen35-saudidraft-full-final-adapter)
 - [Guía de la serie Qwen3.5 (a2aprotocol.ai)](https://a2aprotocol.ai/insights/2026-qwen35-models-guide)
 - [Repositorio GitHub de Qwen3.5 (ABDtmx)](https://github.com/ABDtmx/Qwen3.5)
 - [Repositorio GitHub de soporte AutoAWQ para Qwen3.5](https://github.com/quivent/autoawq-qwen35)
-- [Modelo base en HuggingFace: unsloth/Qwen3.5-4B](https://huggingface.co/unsloth/Qwen3.5-4B) (enlace no incluido en la información original, pero se deduce del campo `base_model`; se recomienda verificar la URL)
+- [Modelo base en Hugging Face: unsloth/Qwen3.5-4B](https://huggingface.co/unsloth/Qwen3.5-4B) (enlace no incluido en la información original, pero se deduce del campo `base_model`; se recomienda verificar la URL)

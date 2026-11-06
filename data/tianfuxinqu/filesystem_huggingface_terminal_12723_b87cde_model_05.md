@@ -60,5 +60,5 @@ No disponible. No existe información suficiente para comparar este modelo con a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_model_05
+- Repositorio Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_model_05
 - No se han encontrado papers, blogs, repositorios de código o demos asociados a este modelo.

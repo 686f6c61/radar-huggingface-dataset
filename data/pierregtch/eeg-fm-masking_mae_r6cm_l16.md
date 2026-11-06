@@ -91,9 +91,9 @@ La comparacion mas directa es con las variantes hermanas del mismo estudio, entr
 
 | Modelo | Marco | Radio (r) | Longitud (L) | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| eeg-fm-masking_mae_r6cm_L16 (este) | MAE | 6 cm | 16 | 12,69 M | no disponible | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_mae_r9cm_L2 | MAE | 9 cm | 2 | no disponible | no disponible | CC-BY-4.0 | HuggingFace (recomendado por los autores) |
-| eeg-fm-masking_jepa_r9cm_L2 | JEPA | 9 cm | 2 | no disponible | no disponible | CC-BY-4.0 | HuggingFace (recomendado por los autores) |
+| eeg-fm-masking_mae_r6cm_L16 (este) | MAE | 6 cm | 16 | 12,69 M | no disponible | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_mae_r9cm_L2 | MAE | 9 cm | 2 | no disponible | no disponible | CC-BY-4.0 | Hugging Face (recomendado por los autores) |
+| eeg-fm-masking_jepa_r9cm_L2 | JEPA | 9 cm | 2 | no disponible | no disponible | CC-BY-4.0 | Hugging Face (recomendado por los autores) |
 
 No se dispone de datos comparativos con otros modelos fundacionales de EEG externos (LaBraM, BIOT u otros) en la informacion proporcionada.
 
@@ -113,7 +113,7 @@ No se dispone de datos comparativos con otros modelos fundacionales de EEG exter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r6cm_L16
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r6cm_L16
 - Coleccion con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366
 - Variante recomendada MAE r9cm L2: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L2
 - Variante recomendada JEPA r9cm L2: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L2

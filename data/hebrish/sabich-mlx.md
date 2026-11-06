@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sabich-MLX es la versión convertida al framework MLX del modelo Hebrish/Sabich, un sistema de reconocimiento automático del habla (ASR) especializado en *code-switching* entre hebreo e inglés, es decir, en audio donde el hablante alterna ambos idiomas dentro de la misma frase. El modelo lo publica el usuario Hebrish en HuggingFace y se distribuye con licencia CC-BY-4.0 y acceso restringido (gated), por lo que es necesario aceptar las condiciones en la página del repositorio antes de descargarlo.
+Sabich-MLX es la versión convertida al framework MLX del modelo Hebrish/Sabich, un sistema de reconocimiento automático del habla (ASR) especializado en *code-switching* entre hebreo e inglés, es decir, en audio donde el hablante alterna ambos idiomas dentro de la misma frase. El modelo lo publica el usuario Hebrish en Hugging Face y se distribuye con licencia CC-BY-4.0 y acceso restringido (gated), por lo que es necesario aceptar las condiciones en la página del repositorio antes de descargarlo.
 
 Con 617.869.958 parámetros (aproximadamente 618 M), se sitúa en la gama de modelos ASR compactos, comparable en orden de magnitud a la familia Parakeet de NVIDIA, a la que apunta el tag `parakeet` del repositorio. El formato publicado son pesos safetensors quantizados para MLX, lo que limita su ejecución nativa a hardware Apple Silicon (serie M). El repositorio ocupa 2,5 GB.
 
@@ -24,7 +24,7 @@ Su relevancia es doble: por un lado cubre un caso poco atendido por los modelos 
 | Libreria | mlx |
 | Tamano del repositorio | 2,5 GB |
 | Modelo base | Hebrish/Sabich |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -81,7 +81,7 @@ La comparación cuantitativa de calidad (WER) no es posible con la información 
 
 - Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de calidad frente a Whisper, Parakeet u otros ASR, ni sobre el propio conjunto de evaluación hebreo-inglés.
 - Modelo sin validación comunitaria: 0 descargas y 0 likes en el momento de la consulta, lo que implica que no hay informes independientes de funcionamiento.
-- Acceso restringido (gated): la descarga requiere aceptar condiciones en HuggingFace, lo que añade fricción a pipelines automatizados y a la reproducibilidad.
+- Acceso restringido (gated): la descarga requiere aceptar condiciones en Hugging Face, lo que añade fricción a pipelines automatizados y a la reproducibilidad.
 - Dependencia de hardware Apple: los pesos en formato MLX no se ejecutan directamente en GPU NVIDIA o AMD; usarlos fuera del ecosistema Apple exige convertir el checkpoint.
 - Cobertura lingüística muy acotada: solo hebreo e inglés. Cualquier otro idioma queda fuera del alcance declarado.
 - Riesgo de alucinación específico de ASR: en audio con ruido, solapamiento de hablantes o silencios largos, los modelos de este tipo pueden generar texto no presente en el audio o repetir segmentos.
@@ -92,7 +92,7 @@ La comparación cuantitativa de calidad (WER) no es posible con la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hebrish/Sabich-MLX
+- Modelo en Hugging Face: https://huggingface.co/Hebrish/Sabich-MLX
 - Modelo base: https://huggingface.co/Hebrish/Sabich
 - Framework MLX: https://github.com/ml-explore/mlx
 - Familia Parakeet de NVIDIA (referencia por el tag del repositorio): https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2

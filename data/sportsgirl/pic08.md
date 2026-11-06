@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sportsgirl/pic08` es un repositorio alojado en HuggingFace por el usuario `sportsgirl`, con un tamaño de 3,2 GB, 0 descargas y 1 like en el momento de la consulta. El repositorio no declara pipeline de inferencia, licencia, idiomas soportados ni documentación técnica de ningún tipo. La única información cuantitativa disponible es el tamaño del repositorio y las marcas temporales de creación y actualización (12 de septiembre de 2026 en ambos casos, con 25 segundos de diferencia entre creación y última modificación).
+`sportsgirl/pic08` es un repositorio alojado en Hugging Face por el usuario `sportsgirl`, con un tamaño de 3,2 GB, 0 descargas y 1 like en el momento de la consulta. El repositorio no declara pipeline de inferencia, licencia, idiomas soportados ni documentación técnica de ningún tipo. La única información cuantitativa disponible es el tamaño del repositorio y las marcas temporales de creación y actualización (12 de septiembre de 2026 en ambos casos, con 25 segundos de diferencia entre creación y última modificación).
 
-No es posible determinar a partir de la información proporcionada si se trata de un modelo de lenguaje, un modelo de visión, un modelo multimodal, un conjunto de pesos derivado de otro modelo o un artefacto de otro tipo. El identificador `pic08` sugiere contenido relacionado con imágenes, pero esto es una inferencia nominal, no un dato confirmado: el campo `pipeline` de HuggingFace aparece como no disponible y los tags publicados se limitan a `region:us`.
+No es posible determinar a partir de la información proporcionada si se trata de un modelo de lenguaje, un modelo de visión, un modelo multimodal, un conjunto de pesos derivado de otro modelo o un artefacto de otro tipo. El identificador `pic08` sugiere contenido relacionado con imágenes, pero esto es una inferencia nominal, no un dato confirmado: el campo `pipeline` de Hugging Face aparece como no disponible y los tags publicados se limitan a `region:us`.
 
 La relevancia actual del repositorio es, por tanto, muy limitada en términos de evaluación técnica: no hay ficha de modelo, no hay resultados de benchmarks, no hay especificación de arquitectura y no hay licencia declarada, lo que impide cualquier uso en producción con garantías legales o técnicas. Esta ficha documenta lo que sí se puede verificar y marca explícitamente como "no disponible" todo lo demás, conforme al principio de no inventar datos.
 
@@ -62,7 +62,7 @@ Dado que no se ha confirmado la naturaleza del artefacto, los siguientes escenar
 - Evaluación previa a adopción: inspeccionar los archivos del repositorio (3,2 GB) para determinar el formato de pesos, cargar la configuración y ejecutar una batería de pruebas mínima antes de considerar su uso en cualquier proyecto.
 - Prototipado interno no productivo: emplear el modelo en un entorno aislado para experimentar con prompts, siempre que la licencia y el origen de los datos se aclaren previamente.
 - Reproducción de resultados de terceros: si otros usuarios publicasen evaluaciones, utilizar este repositorio como referencia para replicarlas en un entorno controlado.
-- Análisis forense de artefactos de HuggingFace: estudiar el repositorio como caso de publicación sin model card, sin licencia y sin pipeline declarado, dentro de una revisión de buenas prácticas de publicación de modelos.
+- Análisis forense de artefactos de Hugging Face: estudiar el repositorio como caso de publicación sin model card, sin licencia y sin pipeline declarado, dentro de una revisión de buenas prácticas de publicación de modelos.
 - Fase de investigación sobre modelos pequeños: si el contenido resultase ser un modelo de tamaño reducido, podría servir como banco de pruebas para técnicas de cuantización o de ajuste fino en hardware de gama de consumo.
 - Docencia y formación: usar el repositorio como ejemplo de por qué la ausencia de licencia y de documentación impide su uso comercial y dificulta la reproducibilidad.
 - Integración en pipelines automatizados: descartada en el estado actual, ya que sin licencia explícita y sin especificaciones no es posible garantizar el cumplimiento legal ni la estabilidad de la inferencia.
@@ -101,7 +101,7 @@ No disponible. No es posible establecer una comparativa con alternativas de la m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sportsgirl/pic08
+- Repositorio en Hugging Face: https://huggingface.co/sportsgirl/pic08
 
 Resultados de la búsqueda web: las consultas realizadas no devolvieron ningún enlace relacionado con este modelo. Todos los resultados obtenidos corresponden a páginas de ayuda al usuario sobre Facebook y a portales de descargas de software de consumo, sin relación con el repositorio:
 

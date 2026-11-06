@@ -79,7 +79,7 @@ La comparativa se basa en datos publicos de los repositorios de DeepSeek y de ba
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/manalejandro/DeepSeek-R1-Distill-Qwen-1.5B-f16-iq2_xxs-GGUF
+- Repositorio Hugging Face: https://huggingface.co/manalejandro/DeepSeek-R1-Distill-Qwen-1.5B-f16-iq2_xxs-GGUF
 - Modelo base original: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Fuente GGUF de bartowski: https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-1.5B-GGUF
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

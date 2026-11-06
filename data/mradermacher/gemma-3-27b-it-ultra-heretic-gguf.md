@@ -98,9 +98,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF estatico): https://huggingface.co/mradermacher/gemma-3-27b-it-ultra-heretic-GGUF
-- Repositorio HuggingFace (GGUF imatrix): https://huggingface.co/mradermacher/gemma-3-27b-it-ultra-heretic-i1-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/llmfan46/gemma-3-27b-it-ultra-uncensored-heretic
+- Repositorio Hugging Face (GGUF estatico): https://huggingface.co/mradermacher/gemma-3-27b-it-ultra-heretic-GGUF
+- Repositorio Hugging Face (GGUF imatrix): https://huggingface.co/mradermacher/gemma-3-27b-it-ultra-heretic-i1-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/llmfan46/gemma-3-27b-it-ultra-uncensored-heretic
 - Pagina de descargas del autor: https://hf.tst.eu/model#gemma-3-27b-it-ultra-heretic-GGUF
 - FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

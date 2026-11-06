@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MeloPrime/Zax.zm es un repositorio de modelo alojado en HuggingFace por el usuario MeloPrime. En el momento de redactar esta ficha, la unica informacion verificable es la licencia declarada (Apache 2.0), el identificador del repositorio y las marcas temporales de creacion y ultima actualizacion (16 de septiembre de 2026), ambas identicas, lo que sugiere que el repositorio no ha recibido modificaciones desde su publicacion inicial.
+MeloPrime/Zax.zm es un repositorio de modelo alojado en Hugging Face por el usuario MeloPrime. En el momento de redactar esta ficha, la unica informacion verificable es la licencia declarada (Apache 2.0), el identificador del repositorio y las marcas temporales de creacion y ultima actualizacion (16 de septiembre de 2026), ambas identicas, lo que sugiere que el repositorio no ha recibido modificaciones desde su publicacion inicial.
 
 La model card publicada no contiene informacion tecnica: se limita a la cabecera YAML con la licencia, sin descripcion, sin pipeline declarado, sin idiomas soportados y sin resultados de evaluacion. El repositorio registra 0 descargas y 0 "likes", por lo que no hay evidencia de uso ni de validacion por parte de la comunidad.
 
@@ -87,8 +87,8 @@ No disponible. No se ha identificado ningun modelo comparable, ya que se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MeloPrime/Zax.zm
-- Perfil del autor en HuggingFace: https://huggingface.co/MeloPrime
+- Repositorio en Hugging Face: https://huggingface.co/MeloPrime/Zax.zm
+- Perfil del autor en Hugging Face: https://huggingface.co/MeloPrime
 - Paper: no disponible.
 - Blog o anuncio: no disponible.
 - Repositorio de codigo: no disponible.

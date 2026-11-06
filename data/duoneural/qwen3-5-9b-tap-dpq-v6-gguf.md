@@ -103,7 +103,7 @@ La comparativa con alternativas reales de la misma categoria (por ejemplo, otras
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DuoNeural/Qwen3.5-9B-TAP-DPQ-v6-GGUF
+- Repositorio Hugging Face: https://huggingface.co/DuoNeural/Qwen3.5-9B-TAP-DPQ-v6-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Resultados de busqueda web: no se ha encontrado ningun resultado relevante sobre este modelo. Las coincidencias devueltas corresponden a la fotoperiodista y cineasta Carolyn Jones (carolynjones.com, Wikipedia, TEDMED, Notable People Project) y no guardan relacion con el modelo ni con el autor.
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

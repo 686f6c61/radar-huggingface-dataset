@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ssstktok/edge-video-audio-stream-benchmark` no es un modelo de IA en el sentido estricto: es un repositorio de documentación técnica y benchmarks publicado en HuggingFace que describe una arquitectura de streaming de medios en el edge. El autor, `ssstktok`, presenta un pipeline sin almacenamiento en servidor para resolver y servir contenedores de vídeo corto (`H.264 MP4`), carruseles de fotos multi-frame y pistas de audio `AAC/MP3` directamente al cliente, apoyándose en Cloudflare Workers para el enrutado en el PoP más cercano.
+`ssstktok/edge-video-audio-stream-benchmark` no es un modelo de IA en el sentido estricto: es un repositorio de documentación técnica y benchmarks publicado en Hugging Face que describe una arquitectura de streaming de medios en el edge. El autor, `ssstktok`, presenta un pipeline sin almacenamiento en servidor para resolver y servir contenedores de vídeo corto (`H.264 MP4`), carruseles de fotos multi-frame y pistas de audio `AAC/MP3` directamente al cliente, apoyándose en Cloudflare Workers para el enrutado en el PoP más cercano.
 
 El documento compara esta arquitectura edge-first frente a un proxy VPS tradicional y reporta métricas de latencia: resolución de metadatos en p95 de 190 ms frente a 1.420 ms, y TTFB de 65 ms frente a 2.850 ms. También describe la integración con un cliente móvil nativo (Flutter con MethodChannels en Kotlin) para Android, con soporte de guardado offline y 18 idiomas.
 
@@ -84,7 +84,7 @@ No disponible. No existen modelos de IA comparables porque el repositorio no con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ssstktok/edge-video-audio-stream-benchmark
+- Repositorio en Hugging Face: https://huggingface.co/ssstktok/edge-video-audio-stream-benchmark
 - Sitio del autor (descarga de vídeo): https://ssstktok.com
 - Extractor de audio MP3: https://ssstktok.com/download-tiktok-mp3
 - APK Android: https://ssstktok.com/apk

@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SpaceGamer72/MiniMax-M3-uncensored
+- Repositorio Hugging Face: https://huggingface.co/SpaceGamer72/MiniMax-M3-uncensored
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3
 - Cuantizacion NVFP4 de referencia: https://huggingface.co/nvidia/MiniMax-M3-NVFP4
 - Soporte Blackwell / SM120 para vLLM: https://github.com/0xSero/minimax-m3-sm120

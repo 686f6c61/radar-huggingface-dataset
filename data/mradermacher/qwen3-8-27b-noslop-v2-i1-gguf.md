@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27b-noslop-v2-i1-GGUF es una cuantizacion en formato GGUF del modelo RefinedNeuro/Qwen3.8-27b-noslop-v2, un modelo de 27.320.697.856 parametros (aproximadamente 27,3 mil millones) derivado de la familia Qwen3. La publica el usuario mradermacher, conocido en HuggingFace por generar cuantizaciones de alta calidad con ficheros imatrix (importance matrix), que permiten preservar mejor la perplejidad en tamanos reducidos frente a las cuantizaciones estaticas tradicionales.
+Qwen3.8-27b-noslop-v2-i1-GGUF es una cuantizacion en formato GGUF del modelo RefinedNeuro/Qwen3.8-27b-noslop-v2, un modelo de 27.320.697.856 parametros (aproximadamente 27,3 mil millones) derivado de la familia Qwen3. La publica el usuario mradermacher, conocido en Hugging Face por generar cuantizaciones de alta calidad con ficheros imatrix (importance matrix), que permiten preservar mejor la perplejidad en tamanos reducidos frente a las cuantizaciones estaticas tradicionales.
 
 El modelo base incorpora las etiquetas "heretic", "ara" y "writing", lo que sugiere un ajuste orientado a escritura creativa y a la eliminacion de comportamientos de rechazo excesivo (el termino "heretic" se asocia en la comunidad a tecnicas de abliteration o decensura de modelos). El sufijo "noslop" indica un esfuerzo por reducir respuestas genericas o de relleno. La licencia es Apache 2.0, lo que facilita su uso comercial sin restricciones adicionales.
 
@@ -88,7 +88,7 @@ La comparativa se limita a referencias por tamano y familia; no se dispone de da
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/Qwen3.8-27b-noslop-v2-i1-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Qwen3.8-27b-noslop-v2-i1-GGUF
 - Modelo base: https://huggingface.co/RefinedNeuro/Qwen3.8-27b-noslop-v2
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/Qwen3.8-27b-noslop-v2-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.8-27b-noslop-v2-i1-GGUF

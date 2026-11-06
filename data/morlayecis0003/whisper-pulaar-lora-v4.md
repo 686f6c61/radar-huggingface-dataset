@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper Pulaar LoRA v4 es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario morlayecis0003 sobre la familia Whisper de OpenAI, orientado al reconocimiento automático del habla (ASR) en pulaar (también llamado fulfulde), una lengua que no dispone de token propio en el tokenizador multilingüe de Whisper. El autor indica que el pulaar está ausente de las 112 lenguas cubiertas por Whisper, por lo que la adaptación se apoya en el token de idioma `ha` (hausa), seleccionado de forma empírica entre 11 configuraciones probadas. El repositorio pesa 0,0 GB según los metadatos de HuggingFace y se distribuye como adaptador PEFT en formato safetensors, no como pesos completos.
+Whisper Pulaar LoRA v4 es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario morlayecis0003 sobre la familia Whisper de OpenAI, orientado al reconocimiento automático del habla (ASR) en pulaar (también llamado fulfulde), una lengua que no dispone de token propio en el tokenizador multilingüe de Whisper. El autor indica que el pulaar está ausente de las 112 lenguas cubiertas por Whisper, por lo que la adaptación se apoya en el token de idioma `ha` (hausa), seleccionado de forma empírica entre 11 configuraciones probadas. El repositorio pesa 0,0 GB según los metadatos de Hugging Face y se distribuye como adaptador PEFT en formato safetensors, no como pesos completos.
 
 El modelo se construye sobre `morlayecis0003/whisper-small-pulaar-v4`, una variante ya ajustada de whisper-small, y por tanto hereda la arquitectura encoder-decoder transformer de Whisper small, con 244 millones de parámetros en la variante original de OpenAI y ventanas de audio de 30 segundos. El adaptador añade un número de parámetros entrenables que no se cuantifica en la información disponible.
 
@@ -24,7 +24,7 @@ Su relevancia es la de un recurso de código abierto para una lengua de bajos re
 | Librería | PEFT |
 | Descargas / likes | 10 descargas, 0 likes |
 | Tamaño del repositorio | 0,0 GB |
-| Fecha de creación / actualización | 2026-09-20 (ambas marcas temporales, según metadatos de HuggingFace) |
+| Fecha de creación / actualización | 2026-09-20 (ambas marcas temporales, según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -37,7 +37,7 @@ Los datos de entrenamiento descritos por el autor consisten en 28,4 horas de hab
 - Transcripción de voz a texto en pulaar (tarea `transcribe`, según el ejemplo de uso de la model card).
 - Reconocimiento de habla en condiciones de bajos recursos, con un corpus de 28,4 horas de audio.
 - Adaptación ligera sobre un modelo base ya ajustado, lo que permite desplegar el adaptador sobre el checkpoint `whisper-small-pulaar-v4` sin redistribuir pesos completos.
-- Integración en el ecosistema HuggingFace Transformers y PEFT mediante `WhisperProcessor`, `WhisperForConditionalGeneration` y `PeftModel`.
+- Integración en el ecosistema Hugging Face Transformers y PEFT mediante `WhisperProcessor`, `WhisperForConditionalGeneration` y `PeftModel`.
 - Capacidad potencial de traducción de voz a inglés, por herencia de la arquitectura Whisper; no documentada por el autor en la información disponible.
 - No se documentan capacidades de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio generativo ni modo de pensamiento. Se trata de un modelo específico de ASR.
 - Capacidades multilingües: únicamente la lengua objetivo (pulaar/fulfulde) está documentada, con el token `ha` como control de idioma.
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-Los datos de esta tabla proceden de las fichas públicas de los modelos comparados y de la información de HuggingFace de este repositorio. No se han verificado ejecutando los modelos, y no se incluyen métricas de calidad porque no hay benchmarks publicados para el adaptador de pulaar.
+Los datos de esta tabla proceden de las fichas públicas de los modelos comparados y de la información de Hugging Face de este repositorio. No se han verificado ejecutando los modelos, y no se incluyen métricas de calidad porque no hay benchmarks publicados para el adaptador de pulaar.
 
 | Modelo | Parámetros | Cobertura de pulaar | Licencia | Formato | Observaciones |
 |---|---|---|---|---|---|
@@ -94,7 +94,7 @@ No se dispone de comparativas de WER entre estos modelos en la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/morlayecis0003/whisper-pulaar-lora-v4
+- Modelo en Hugging Face: https://huggingface.co/morlayecis0003/whisper-pulaar-lora-v4
 - Modelo base declarado: https://huggingface.co/morlayecis0003/whisper-small-pulaar-v4
 - Modelo sobre el que se construye la familia: https://huggingface.co/openai/whisper-small
 - Repositorios de las librerías utilizadas: https://github.com/huggingface/transformers y https://github.com/huggingface/peft

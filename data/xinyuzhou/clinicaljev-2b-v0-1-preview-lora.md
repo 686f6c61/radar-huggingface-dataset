@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClinicalJev-2B-v0.1-preview-LoRA | 2B (backbone) + LoRA | no disponible | Salida restringida a eleccion, puntuacion y estimacion de verdad | no disponible | HuggingFace, 0 descargas |
+| ClinicalJev-2B-v0.1-preview-LoRA | 2B (backbone) + LoRA | no disponible | Salida restringida a eleccion, puntuacion y estimacion de verdad | no disponible | Hugging Face, 0 descargas |
 | Jev 1.13.0 | no disponible | no disponible | Referencia de comparacion citada en la model card | no disponible | no disponible |
-| PH-LLM-1.5B-LoRA (mismo autor) | 1,5B | no disponible | Adaptador LoRA de dominio, presumiblemente sanitario | no disponible | HuggingFace, 0 likes |
+| PH-LLM-1.5B-LoRA (mismo autor) | 1,5B | no disponible | Adaptador LoRA de dominio, presumiblemente sanitario | no disponible | Hugging Face, 0 likes |
 
 No se dispone de datos suficientes sobre Jev 1.13.0 ni sobre otras alternativas comparables en la informacion proporcionada. La model card unicamente referencia a Jev 1.13.0 como linea base en una comparacion grafica.
 
@@ -95,7 +95,7 @@ No se dispone de datos suficientes sobre Jev 1.13.0 ni sobre otras alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xinyuzhou/ClinicalJev-2B-v0.1-preview-LoRA
+- Modelo en Hugging Face: https://huggingface.co/xinyuzhou/ClinicalJev-2B-v0.1-preview-LoRA
 - Repositorio GitHub del proyecto (pesos, codigo de inferencia y documentacion): https://github.com/xzhou-code/ClinicalJev
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Imagen comparativa frente a Jev 1.13.0 sobre 13 conjuntos retenidos: https://raw.githubusercontent.com/xzhou-code/ClinicalJev/main/assets/comparison-2B.png

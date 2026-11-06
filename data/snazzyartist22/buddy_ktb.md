@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Buddy_KTB es un modelo publicado en HuggingFace por el usuario SnazzyArtist22 bajo el identificador SnazzyArtist22/Buddy_KTB. La información pública disponible es extremadamente limitada: la model card no contiene más que la declaración `license: unknown`, sin descripción, sin arquitectura declarada, sin datos de entrenamiento y sin idiomas especificados. El repositorio ocupa 0,2 GB y, en el momento de la consulta, acumula 0 descargas y 0 likes, lo que apunta a un artefacto recién subido, sin adopción ni validación por parte de la comunidad.
+Buddy_KTB es un modelo publicado en Hugging Face por el usuario SnazzyArtist22 bajo el identificador SnazzyArtist22/Buddy_KTB. La información pública disponible es extremadamente limitada: la model card no contiene más que la declaración `license: unknown`, sin descripción, sin arquitectura declarada, sin datos de entrenamiento y sin idiomas especificados. El repositorio ocupa 0,2 GB y, en el momento de la consulta, acumula 0 descargas y 0 likes, lo que apunta a un artefacto recién subido, sin adopción ni validación por parte de la comunidad.
 
 No es posible determinar con rigor qué problema resuelve, qué arquitectura emplea ni cuál es su escala de parámetros. El único dato cuantitativo fiable es el tamaño del repositorio, que por sí solo no permite distinguir entre un modelo pequeño en precisión completa y uno mayor cuantizado, ya que el desglose de archivos no está disponible. Cualquier afirmación sobre capacidades, contexto o rendimiento sería especulativa.
 
@@ -92,7 +92,7 @@ No disponible. Sin conocer el número de parámetros, la arquitectura, la longit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SnazzyArtist22/Buddy_KTB
+- Hugging Face: https://huggingface.co/SnazzyArtist22/Buddy_KTB
 - Paper: no disponible
 - Repositorio de código: no disponible
 - Blog o documentación del autor: no disponible

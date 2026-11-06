@@ -75,5 +75,5 @@ La comparativa se basa en las especificaciones conocidas de los modelos base. No
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/syaher/qwen2.5-coder-malay-7b](https://huggingface.co/syaher/qwen2.5-coder-malay-7b)
+- Hugging Face: [https://huggingface.co/syaher/qwen2.5-coder-malay-7b](https://huggingface.co/syaher/qwen2.5-coder-malay-7b)
 - Modelo base: [https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct)

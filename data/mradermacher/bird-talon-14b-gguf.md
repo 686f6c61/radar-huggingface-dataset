@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BIRD-Talon-14b-GGUF es la version cuantizada en formato GGUF del modelo BIRD-Talon-14b, publicada por el usuario mradermacher, conocido en HuggingFace por producir cuantizaciones estaticas de modelos de terceros. El modelo original lo desarrolla Anthnoy11113223 y no dispone de model card publica en la informacion disponible, por lo que los detalles sobre su entrenamiento, datos y proposito no estan documentados en esta ficha.
+BIRD-Talon-14b-GGUF es la version cuantizada en formato GGUF del modelo BIRD-Talon-14b, publicada por el usuario mradermacher, conocido en Hugging Face por producir cuantizaciones estaticas de modelos de terceros. El modelo original lo desarrolla Anthnoy11113223 y no dispone de model card publica en la informacion disponible, por lo que los detalles sobre su entrenamiento, datos y proposito no estan documentados en esta ficha.
 
 El modelo cuenta con 14.770.033.664 parametros (aproximadamente 14,8 mil millones), lo que lo situa en la categoria de modelos de tamano medio-grande. La unica informacion disponible sobre el modelo base es que esta orientado a conversacion y que soporta exclusivamente el idioma ingles. El repositorio GGUF ofrece un conjunto completo de cuantizaciones estaticas que van desde Q2_K (5,9 GB) hasta Q8_0 (15,8 GB), lo que permite desplegar el modelo en hardware muy diverso.
 
@@ -41,7 +41,7 @@ La unica informacion tecnica verificable es la relativa al proceso de cuantizaci
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: limitadas al ingles segun los metadatos; no se documenta soporte de otros idiomas.
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Compatibilidad con endpoints: el repo incluye la etiqueta "endpoints_compatible", lo que sugiere compatibilidad con la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints: el repo incluye la etiqueta "endpoints_compatible", lo que sugiere compatibilidad con la infraestructura de inferencia de Hugging Face.
 
 ## Casos de uso
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento del modelo base, por lo que la comparativa
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| BIRD-Talon-14b (este) | ~14,8 B | no disponible | no disponible | GGUF | HuggingFace |
+| BIRD-Talon-14b (este) | ~14,8 B | no disponible | no disponible | GGUF | Hugging Face |
 | Mistral-Nemo-12B | ~12 B | 128k | Apache 2.0 | safetensors, GGUF | amplia |
 | Qwen2.5-14B | ~14,7 B | 32k (128k en variantes) | Apache 2.0 (mayoria) | safetensors, GGUF | amplia |
 | Phi-3-medium-14B | ~14 B | 4k (128k en variantes) | MIT | safetensors, GGUF | amplia |

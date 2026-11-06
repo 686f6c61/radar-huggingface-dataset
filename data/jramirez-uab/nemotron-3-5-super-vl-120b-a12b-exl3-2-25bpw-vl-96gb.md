@@ -113,7 +113,7 @@ No se dispone de datos de otros checkpoints comunitarios comparables en la infor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JRamirez-UAB/Nemotron-3.5-Super-VL-120B-A12B-EXL3-2.25bpw-VL-96GB
+- Repositorio Hugging Face: https://huggingface.co/JRamirez-UAB/Nemotron-3.5-Super-VL-120B-A12B-EXL3-2.25bpw-VL-96GB
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3.5-Super-VL-120B-A12B
 - Licencia del repositorio (OpenMDW 1.1): https://huggingface.co/JRamirez-UAB/Nemotron-3.5-Super-VL-120B-A12B-EXL3-2.25bpw-VL-96GB/blob/main/LICENSE
 - Aviso de atribucion de NVIDIA: https://huggingface.co/JRamirez-UAB/Nemotron-3.5-Super-VL-120B-A12B-EXL3-2.25bpw-VL-96GB/blob/main/NOTICE

@@ -72,8 +72,8 @@ La información disponible incluye únicamente una comparación cualitativa, y l
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `aifeifei798/gemma4_12b_harmonic_lora` | LoRA r=16 sobre base 12B | 512 tokens (entrenamiento) | Evaluación anecdótica en una tarea de código; sin benchmarks estándar | apache-2.0 (adaptador) | HuggingFace, 0 descargas, 1 like; requiere repo auxiliar |
-| `google/gemma-4-12B-it-qat-q4_0-unquantized` | 12B | No disponible en la información | Base de referencia; falló la tarea de código evaluada por el autor | Términos de Gemma (Google) | HuggingFace, mantenido por Google |
+| `aifeifei798/gemma4_12b_harmonic_lora` | LoRA r=16 sobre base 12B | 512 tokens (entrenamiento) | Evaluación anecdótica en una tarea de código; sin benchmarks estándar | apache-2.0 (adaptador) | Hugging Face, 0 descargas, 1 like; requiere repo auxiliar |
+| `google/gemma-4-12B-it-qat-q4_0-unquantized` | 12B | No disponible en la información | Base de referencia; falló la tarea de código evaluada por el autor | Términos de Gemma (Google) | Hugging Face, mantenido por Google |
 | Otros adaptadores LoRA comunitarios sobre Gemma-4 12B | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 
 No se dispone de datos suficientes para comparar con alternativas de la misma categoría (adaptadores de regularización de atención o compresores de cache KV como H2O, SnapKV o StreamingLLM); no disponibles en la información proporcionada.
@@ -94,7 +94,7 @@ No se dispone de datos suficientes para comparar con alternativas de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aifeifei798/gemma4_12b_harmonic_lora
+- Modelo en Hugging Face: https://huggingface.co/aifeifei798/gemma4_12b_harmonic_lora
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized
 - Repositorio de código y mecanismo (`flashcodec-kv`): https://github.com/aifeifei798/flashcodec-kv
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceH4/no_robots

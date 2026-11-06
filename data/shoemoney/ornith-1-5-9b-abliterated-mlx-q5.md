@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ornith-1.5-9B-Abliterated-MLX-q5 es una cuantización en 5 bits del modelo Ornith-1.5-9B-Abliterated, desarrollado por el usuario de HuggingFace shoemoney. El modelo base, Ornith-1.5-9B, es un modelo denso de aproximadamente 9 000 millones de parámetros creado por ornith-ai, con licencia MIT y orientado a tareas de código, razonamiento y matemáticas. La versión "abliterated" elimina las restricciones de seguridad del modelo original, lo que permite generar contenido sin censura, aunque con los riesgos asociados.
+Ornith-1.5-9B-Abliterated-MLX-q5 es una cuantización en 5 bits del modelo Ornith-1.5-9B-Abliterated, desarrollado por el usuario de Hugging Face shoemoney. El modelo base, Ornith-1.5-9B, es un modelo denso de aproximadamente 9 000 millones de parámetros creado por ornith-ai, con licencia MIT y orientado a tareas de código, razonamiento y matemáticas. La versión "abliterated" elimina las restricciones de seguridad del modelo original, lo que permite generar contenido sin censura, aunque con los riesgos asociados.
 
 La cuantización MLX en 5 bits reduce el tamaño del modelo a 7,58 GB en disco, lo que permite ejecutarlo en equipos Apple Silicon con memoria unificada. Se midió en un Apple M3 Ultra con 96 GB, alcanzando un throughput de 67,6 tokens por segundo en peticiones individuales y 164,4 tokens por segundo con 8 peticiones concurrentes. La perplejidad medida es de 5,325, aunque solo es comparable dentro de la misma familia de modelos.
 
@@ -12,7 +12,7 @@ Este modelo es relevante para desarrolladores que trabajan en ecosistemas Apple 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (los tags de HuggingFace indican qwen3_5, aunque no se confirma en la documentacion) |
+| Arquitectura | Transformer denso (los tags de Hugging Face indican qwen3_5, aunque no se confirma en la documentacion) |
 | Parametros totales | ~9B (modelo base); el archivo safetensors reporta 2 135 710 960, discrepancia sin aclarar |
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | No disponible |
@@ -79,7 +79,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shoemoney/Ornith-1.5-9B-Abliterated-MLX-q5
+- Modelo en Hugging Face: https://huggingface.co/shoemoney/Ornith-1.5-9B-Abliterated-MLX-q5
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-9B-abliterated
 - Modelo original Ornith-1.5-9B: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Blog de Ornith sobre Ornith-1.5: https://ornith.ai/ornith_1_5.html

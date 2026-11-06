@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wrbooth/Qwen2.5-7B-Instruct-FP8-Dynamic | 7,6 B | no especificado en la ficha (base: 131.072 tokens) | FP8, pesos estáticos por canal + activaciones dinámicas por token | Apache 2.0 | HuggingFace; repositorio con 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen2.5-7B-Instruct (bf16) | 7,6 B | 131.072 tokens según la documentación de Qwen | ninguna (bf16) | Apache 2.0 | HuggingFace, modelo base oficial |
-| RedHatAI/Qwen2.5-7B-Instruct-FP8-dynamic | 7,6 B | no disponible | FP8 en pesos y activaciones, esquema dinámico | Apache 2.0 | HuggingFace |
+| wrbooth/Qwen2.5-7B-Instruct-FP8-Dynamic | 7,6 B | no especificado en la ficha (base: 131.072 tokens) | FP8, pesos estáticos por canal + activaciones dinámicas por token | Apache 2.0 | Hugging Face; repositorio con 0 descargas y 0 likes en el momento de la consulta |
+| Qwen/Qwen2.5-7B-Instruct (bf16) | 7,6 B | 131.072 tokens según la documentación de Qwen | ninguna (bf16) | Apache 2.0 | Hugging Face, modelo base oficial |
+| RedHatAI/Qwen2.5-7B-Instruct-FP8-dynamic | 7,6 B | no disponible | FP8 en pesos y activaciones, esquema dinámico | Apache 2.0 | Hugging Face |
 
 No se dispone de cifras de rendimiento publicadas para ninguno de los tres checkpoints en la información proporcionada, por lo que no es posible comparar calidad ni throughput. La diferencia relevante entre las dos cuantizaciones FP8 es el productor y la receta concreta: este checkpoint publica la receta exacta y la trazabilidad de la ejecución, lo que permite reproducirlo.
 
@@ -90,7 +90,7 @@ No se dispone de cifras de rendimiento publicadas para ninguno de los tres check
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wrbooth/Qwen2.5-7B-Instruct-FP8-Dynamic
+- Modelo en Hugging Face: https://huggingface.co/wrbooth/Qwen2.5-7B-Instruct-FP8-Dynamic
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Cuantización FP8 equivalente de Red Hat: https://huggingface.co/RedHatAI/Qwen2.5-7B-Instruct-FP8-dynamic
 - Proyecto de benchmarks vllm-serve-bench: https://github.com/wrbooth/vllm-serve-bench

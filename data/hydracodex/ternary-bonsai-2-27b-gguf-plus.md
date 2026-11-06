@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ternary Bonsai 2 27B es un modelo de lenguaje causal de 27B de clase derivado de Qwen/Qwen3.8-27B, cuantizado íntegramente en pesos ternarios ({−1, 0, +1}) con escalas FP16 por grupo de 128 pesos. Lo desarrolla Prism ML y lo publica en HuggingFace; el repositorio analizado (HYDRACODEX/Ternary-Bonsai-2-27B-gguf-plus) es una republicación en formato GGUF para llama.cpp. La arquitectura del modelo base se mantiene sin cambios: atención híbrida (aproximadamente 75% lineal y 25% completa), MLP SwiGLU, RoPE y RMSNorm, con 262.144 tokens de contexto.
+Ternary Bonsai 2 27B es un modelo de lenguaje causal de 27B de clase derivado de Qwen/Qwen3.8-27B, cuantizado íntegramente en pesos ternarios ({−1, 0, +1}) con escalas FP16 por grupo de 128 pesos. Lo desarrolla Prism ML y lo publica en Hugging Face; el repositorio analizado (HYDRACODEX/Ternary-Bonsai-2-27B-gguf-plus) es una republicación en formato GGUF para llama.cpp. La arquitectura del modelo base se mantiene sin cambios: atención híbrida (aproximadamente 75% lineal y 25% completa), MLP SwiGLU, RoPE y RMSNorm, con 262.144 tokens de contexto.
 
 El problema que resuelve es el colapso de calidad típico de las representaciones de menos de 4 bits: según la model card, esta build retiene el 98,2% de la inteligencia del modelo en FP16 (media de 84,78 en 14 benchmarks en modo thinking) frente a 72,59 de una cuantización IQ2_XXS convencional, y a solo 0,4 puntos de una UD-Q4_K_XL que ocupa el triple. Todo ello con un fichero de 5,95 GB (PTQ1_0) o 7,21 GB (PQ2_0), es decir, un 27B con razonamiento, código, matemáticas y tool calling ejecutable en un portátil o en una única GPU de consumo.
 
@@ -106,7 +106,7 @@ No se dispone de comparaciones con modelos de otras familias (por ejemplo, model
 
 ## Enlaces
 
-- Modelo en HuggingFace (este repo): https://huggingface.co/HYDRACODEX/Ternary-Bonsai-2-27B-gguf-plus
+- Modelo en Hugging Face (este repo): https://huggingface.co/HYDRACODEX/Ternary-Bonsai-2-27B-gguf-plus
 - Documentación oficial del modelo: https://docs.prismml.com/models/bonsai-2-27b
 - Web de Prism ML: https://prismml.com
 - Whitepaper: https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-2-27b-whitepaper.pdf

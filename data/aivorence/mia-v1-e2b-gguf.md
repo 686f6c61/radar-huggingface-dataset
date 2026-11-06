@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mia-v1-E2B-GGUF es un modelo de lenguaje conversacional publicado por el usuario AIVORENCE en HuggingFace, distribuido en formato GGUF y con licencia Apache 2.0. Se trata de un modelo de aproximadamente 4.628 millones de parámetros (4,63 B) segun los datos de safetensors reportados en el repositorio, con un tamano de repositorio de 24,4 GB, lo que indica la presencia de multiples ficheros de cuantizacion. La model card publicada es minima: se limita a metadatos (licencia, etiquetas y lista de idiomas), sin descripcion de arquitectura, datos de entrenamiento ni resultados de evaluacion.
+Mia-v1-E2B-GGUF es un modelo de lenguaje conversacional publicado por el usuario AIVORENCE en Hugging Face, distribuido en formato GGUF y con licencia Apache 2.0. Se trata de un modelo de aproximadamente 4.628 millones de parámetros (4,63 B) segun los datos de safetensors reportados en el repositorio, con un tamano de repositorio de 24,4 GB, lo que indica la presencia de multiples ficheros de cuantizacion. La model card publicada es minima: se limita a metadatos (licencia, etiquetas y lista de idiomas), sin descripcion de arquitectura, datos de entrenamiento ni resultados de evaluacion.
 
 El modelo se declara compatible con las etiquetas `conversational`, `text-generation` y `any-to-any`, y soporta seis idiomas: ruso, ingles, chino, aleman, frances e italiano. No se especifica la longitud de contexto, la arquitectura interna ni el proceso de entrenamiento, por lo que la mayor parte de las especificaciones tecnicas quedan como no disponibles.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada pero no nula: se trata de un modelo de ~4,6 B e
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la documentacion disponible. Los metadatos de HuggingFace lo etiquetan como `transformers` y `text-generation`, y el pipeline declarado es `any-to-any`, pero no se detalla si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida con capas de atencion lineal o cualquier otra variante. El sufijo "E2B" del nombre podria sugerir una nomenclatura de "parametros efectivos" al estilo de otras familias recientes, pero no existe confirmacion en la informacion proporcionada, por lo que debe considerarse una hipotesis sin verificar.
+No se ha publicado informacion sobre la arquitectura del modelo en la documentacion disponible. Los metadatos de Hugging Face lo etiquetan como `transformers` y `text-generation`, y el pipeline declarado es `any-to-any`, pero no se detalla si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida con capas de atencion lineal o cualquier otra variante. El sufijo "E2B" del nombre podria sugerir una nomenclatura de "parametros efectivos" al estilo de otras familias recientes, pero no existe confirmacion en la informacion proporcionada, por lo que debe considerarse una hipotesis sin verificar.
 
 Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre tecnicas de optimizacion como decodificacion especulativa o atencion con cache comprimida. Cualquier afirmacion al respecto seria especulativa. El unico dato objetivo disponible es el recuento de parametros (4.628.569.635) y la lista de idiomas declarados, que sugiere un entrenamiento multilingue centrado en el eje ruso-ingles-chino con cobertura adicional de aleman, frances e italiano.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - Precision media (F16): aproximadamente 9,3 GB.
 - GPU recomendadas: cualquier GPU con 8 GB o mas de VRAM para cuantizaciones de 4-6 bits (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090). Para F16 se recomienda 12-16 GB o mas. No se dispone de datos para A100/H100, aunque tecnicamente son suficientes.
 - Compatibilidad con GPU de consumo: si, es previsible que quepa en GPUs de gama media con 8-12 GB usando cuantizaciones de 4 bits, y en CPU con 8-16 GB de RAM en cuantizaciones bajas.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con GGUF (por ejemplo, vLLM con soporte GGUF o TGI en configuraciones especificas). La etiqueta `endpoints_compatible` del repositorio sugiere compatibilidad con Inference Endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con GGUF (por ejemplo, vLLM con soporte GGUF o TGI en configuraciones especificas). La etiqueta `endpoints_compatible` del repositorio sugiere compatibilidad con Inference Endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ La informacion proporcionada no incluye datos de rendimiento del modelo evaluado
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Mia-v1-E2B-GGUF (AIVORENCE) | ~4,63 B | no disponible | Apache 2.0 | GGUF en HuggingFace; 0 descargas al consultar |
+| Mia-v1-E2B-GGUF (AIVORENCE) | ~4,63 B | no disponible | Apache 2.0 | GGUF en Hugging Face; 0 descargas al consultar |
 | Qwen2.5-3B (Alibaba) | ~3,09 B | 32 K (ampliable) | Qwen License (permisiva, con condiciones) | pesos abiertos, amplio ecosistema |
 | Llama-3.2-3B (Meta) | ~3,2 B | 128 K | Llama 3.2 Community License | pesos abiertos, amplio ecosistema |
 | Gemma 2 2B (Google) | ~2,6 B | 8 K | Gemma Terms of Use | pesos abiertos, amplio ecosistema |
@@ -89,7 +89,7 @@ La informacion proporcionada no incluye datos de rendimiento del modelo evaluado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AIVORENCE/Mia-v1-E2B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/AIVORENCE/Mia-v1-E2B-GGUF
 - Perfil del autor: https://huggingface.co/AIVORENCE
 - Paper tecnico: no disponible
 - Repositorio de codigo: no disponible

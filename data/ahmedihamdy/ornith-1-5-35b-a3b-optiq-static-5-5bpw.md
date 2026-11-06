@@ -87,7 +87,7 @@ La comparativa se basa en datos p√∫blicos limitados. No se dispone de informaci√
 
 ## Enlaces
 
-- Repositorio HuggingFace de este quant: https://huggingface.co/ahmedihamdy/Ornith-1.5-35B-A3B-OptiQ-static-5.5bpw
+- Repositorio Hugging Face de este quant: https://huggingface.co/ahmedihamdy/Ornith-1.5-35B-A3B-OptiQ-static-5.5bpw
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Variante FP8 del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8
 - Variante NVFP4: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-NVFP4

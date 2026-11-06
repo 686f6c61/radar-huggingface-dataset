@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `FireBobJutsu/linnea` es un repositorio publicado en HuggingFace por el usuario FireBobJutsu, con licencia MIT y un tamaño de repositorio de 0.5 GB. Sin embargo, la model card asociada no contiene ninguna información técnica: únicamente se declara la licencia MIT. No se especifican arquitectura, número de parámetros, contexto, idiomas, ni capacidades. Tampoco hay resultados de benchmarks ni documentación adicional en la web. En el momento de la consulta, el modelo registra 0 descargas y 0 likes, lo que sugiere que es un proyecto reciente o sin difusión. Dada la ausencia total de especificaciones, no es posible evaluar su utilidad ni compararlo con alternativas. Se recomienda precaución antes de considerar su uso en producción.
+El modelo `FireBobJutsu/linnea` es un repositorio publicado en Hugging Face por el usuario FireBobJutsu, con licencia MIT y un tamaño de repositorio de 0.5 GB. Sin embargo, la model card asociada no contiene ninguna información técnica: únicamente se declara la licencia MIT. No se especifican arquitectura, número de parámetros, contexto, idiomas, ni capacidades. Tampoco hay resultados de benchmarks ni documentación adicional en la web. En el momento de la consulta, el modelo registra 0 descargas y 0 likes, lo que sugiere que es un proyecto reciente o sin difusión. Dada la ausencia total de especificaciones, no es posible evaluar su utilidad ni compararlo con alternativas. Se recomienda precaución antes de considerar su uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -52,7 +52,7 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el rendimiento del
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FireBobJutsu/linnea
+- Repositorio Hugging Face: https://huggingface.co/FireBobJutsu/linnea
 - Perfil del autor: https://huggingface.co/FireBobJutsu
 
 No se han encontrado papers, blogs, demos ni otros recursos asociados al modelo.

@@ -73,8 +73,8 @@ En la réplica del simulador usada para la búsqueda, la secuencia encontrada cr
 
 | Modelo | Tipo | Semillas evaluadas | Media board (s) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| a1rb4Ck/microduck-sprint-2m | MLP + lookup | 5 oficiales | 0,826 | Apache-2.0 | HuggingFace |
-| jrubiosainz/microduck-game-sprinter-remix10 | MLP + lookup modificado | 5 oficiales (in-sample) | 0,825 | Apache-2.0 | HuggingFace |
+| a1rb4Ck/microduck-sprint-2m | MLP + lookup | 5 oficiales | 0,826 | Apache-2.0 | Hugging Face |
+| jrubiosainz/microduck-game-sprinter-remix10 | MLP + lookup modificado | 5 oficiales (in-sample) | 0,825 | Apache-2.0 | Hugging Face |
 | Otros participantes de la Microduck Arena | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ En la réplica del simulador usada para la búsqueda, la secuencia encontrada cr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix10
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix10
 - Modelo base: https://huggingface.co/a1rb4Ck/microduck-sprint-2m/tree/f3b242c275d72abb8807150f501258d00c8264e3
 - Microduck Arena (Space): https://huggingface.co/spaces/pollen-robotics/microduck-arena
 - Perfil del autor: https://huggingface.co/jrubiosainz

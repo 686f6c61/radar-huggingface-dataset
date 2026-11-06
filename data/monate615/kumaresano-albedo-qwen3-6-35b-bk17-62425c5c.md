@@ -4,7 +4,7 @@
 
 El modelo `monate615/kumaresano-albedo-qwen3.6-35b-bk17-62425c5c` es un modelo de lenguaje multimodal (texto e imagen) de tipo MoE (Mixture of Experts) desarrollado por el usuario monate615, que parte de la arquitectura Qwen3.6 con 35.951.822.704 parámetros totales. Según las etiquetas del repositorio, se trata de una variante de la familia Qwen3.5 MoE con capacidades de conversación y procesamiento de imagen a texto, lo que lo sitúa en la categoría de modelos vision-language.
 
-El modelo está publicado bajo licencia Apache 2.0 y requiere aceptación de condiciones en HuggingFace (acceso restringido o "gated"). Aunque el repositorio existe desde agosto de 2026, no registra descargas ni likes, y la documentación disponible es mínima: no se han publicado fichas técnicas, papers ni resultados de benchmarks en la información proporcionada. Su relevancia radica en ser un intento de adaptar la arquitectura Qwen3.6 MoE al procesamiento multimodal, aunque su adopción actual es nula.
+El modelo está publicado bajo licencia Apache 2.0 y requiere aceptación de condiciones en Hugging Face (acceso restringido o "gated"). Aunque el repositorio existe desde agosto de 2026, no registra descargas ni likes, y la documentación disponible es mínima: no se han publicado fichas técnicas, papers ni resultados de benchmarks en la información proporcionada. Su relevancia radica en ser un intento de adaptar la arquitectura Qwen3.6 MoE al procesamiento multimodal, aunque su adopción actual es nula.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ No se dispone de informacion sobre el dataset de entrenamiento, el numero de tok
 - Procesamiento multimodal: acepta entradas de imagen y texto simultaneamente (pipeline `image-text-to-text`).
 - Generacion de texto conversacional: el tag `conversational` indica soporte para dialogos multi-turno.
 - Capacidades MoE: al ser un modelo de mezcla de expertos, activa solo una fraccion de sus parametros por token, lo que reduce el coste computacional en inferencia.
-- Compatible con la libreria transformers y endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatible con la libreria transformers y endpoints de Hugging Face (tag `endpoints_compatible`).
 - No se confirma soporte de tool calling, function calling, ni modo thinking, aunque podria heredarlos de la familia Qwen3 si el entrenamiento lo preservo.
 - Capacidades multilingues: no disponibles (sin informacion en el repositorio).
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada: con 35,95 B parámetros totales y formato safetensors en fp32/bf16, el modelo ocuparia aproximadamente 72 GB en memoria. Con cuantizacion a 8 bits se reduciria a unos 36 GB, y a 4 bits a unos 18 GB.
 - GPU recomendadas: para inferencia en precision completa se necesitarian GPUs profesionales como A100 (80 GB) o H100. Con cuantizacion 4 bits podria ejecutarse en una RTX 4090 (24 GB) o similar.
 - Compatibilidad con consumer GPU: posible solo con cuantizacion agresiva (4 bits o inferior), asumiendo que se generen versiones GGUF o AWQ.
-- Opciones de despliegue: al ser compatible con transformers, puede servirse con vLLM, TGI o HuggingFace Inference Endpoints. Para cuantizacion, habria que convertir los pesos a GGUF para usarlo con llama.cpp u Ollama.
+- Opciones de despliegue: al ser compatible con transformers, puede servirse con vLLM, TGI o Hugging Face Inference Endpoints. Para cuantizacion, habria que convertir los pesos a GGUF para usarlo con llama.cpp u Ollama.
 - Latencia y throughput: no disponibles. Como referencia, modelos MoE similares (Qwen3-30B-A3B) alcanzan 20-40 tokens/s en RTX 4090 con cuantizacion 4 bits, pero no hay datos confirmados para este modelo.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ La comparativa se limita a modelos de la misma familia Qwen3 por falta de inform
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos con politicas de aprobacion lentas.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos con politicas de aprobacion lentas.
 - Sin documentacion tecnica: no hay papers, model cards detalladas ni informacion sobre el proceso de entrenamiento, lo que impide evaluar su calidad o reproducibilidad.
 - Sin benchmarks publicados: no se puede verificar su rendimiento real en tareas estandar, lo que supone un riesgo para uso en produccion.
 - Riesgo de alucinacion: al no conocer los datos de entrenamiento, no se puede evaluar la fiabilidad factual del modelo.
@@ -78,7 +78,7 @@ La comparativa se limita a modelos de la misma familia Qwen3 por falta de inform
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/monate615/kumaresano-albedo-qwen3.6-35b-bk17-62425c5c
+- Repositorio Hugging Face: https://huggingface.co/monate615/kumaresano-albedo-qwen3.6-35b-bk17-62425c5c
 - Variante anterior (sin bk17): https://huggingface.co/monate615/albedo-qwen3.6-35b-20260809002
 - Variante anterior (20260809001): https://huggingface.co/monate615/albedo-qwen3.6-35b-20260809001
 - Pagina de inferencia en FriendliAI: https://friendli.ai/models/monate615/albedo-qwen3.6-35b-20260809001

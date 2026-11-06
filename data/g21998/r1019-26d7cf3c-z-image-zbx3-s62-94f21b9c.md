@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `G21998/r1019-26d7cf3c-z-image-zbx3-s62-94f21b9c` es un artefacto alojado en HuggingFace que, segun su propia model card, corresponde a una "replay cell" de investigacion privada. El autor es el usuario G21998 y el repositorio lleva las etiquetas `sn56-replay` y `private`, ademas de una licencia de tipo `other`. No se trata de un modelo de lenguaje publicado de forma convencional: la card lo describe como un registro de investigacion privado ("Private research record, not a submission") generado por un arnes de validacion que replica el comportamiento de un validador sin usar Docker.
+El modelo identificado como `G21998/r1019-26d7cf3c-z-image-zbx3-s62-94f21b9c` es un artefacto alojado en Hugging Face que, segun su propia model card, corresponde a una "replay cell" de investigacion privada. El autor es el usuario G21998 y el repositorio lleva las etiquetas `sn56-replay` y `private`, ademas de una licencia de tipo `other`. No se trata de un modelo de lenguaje publicado de forma convencional: la card lo describe como un registro de investigacion privado ("Private research record, not a submission") generado por un arnes de validacion que replica el comportamiento de un validador sin usar Docker.
 
 La informacion disponible no permite identificar la arquitectura, el tamano en parametros, la longitud de contexto ni los idiomas soportados. El contenido de la card hace referencia a una tarea etiquetada como "z-image" con una duracion de 0,75 horas, un brazo experimental "zbx3", una semilla 62 y un arbol "94f21b9c", junto con hashes de artefacto e identidad y un estado de subida "UPLOAD" con codigo de retorno 0. Estos metadatos apuntan a un proceso de entrenamiento o evaluacion automatizado mas que a un modelo listo para uso general.
 
@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables porque no se ha identificado la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s62-94f21b9c
+- Hugging Face: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s62-94f21b9c
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

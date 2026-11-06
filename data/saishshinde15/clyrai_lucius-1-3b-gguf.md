@@ -81,7 +81,7 @@ La comparativa es limitada porque no hay benchmarks públicos para Lucius. La pr
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/saishshinde15/Clyrai_Lucius-1.3B-GGUF)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/saishshinde15/Clyrai_Lucius-1.3B-GGUF)
 - [Modelo base Clyrai_Lucius-1.3B](https://huggingface.co/saishshinde15/Clyrai_Lucius-1.3B)
 - [Endpoint de inferencia en FriendliAI](https://friendli.ai/models/saishshinde15/Clyrai_Lucius-1.3B-Base)
 - [Perfil de GitHub de Clyrai](https://github.com/clyrai)

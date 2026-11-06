@@ -70,7 +70,7 @@ No hay modelos comparables directos en el ecosistema open source que sean espec√
 
 ## Enlaces
 
-- [HuggingFace - modelo-jogo-velha-zero](https://huggingface.co/open-source-dimas/modelo-jogo-velha-zero)
+- [Hugging Face - modelo-jogo-velha-zero](https://huggingface.co/open-source-dimas/modelo-jogo-velha-zero)
 - [Dataset cfahlgren1/react-code-instructions](https://huggingface.co/datasets/cfahlgren1/react-code-instructions)
 - [GitHub Topics - jogo-da-velha](https://github.com/topics/jogo-da-velha)
 - [GitHub - joonasmartinez/jogo-da-velha](https://github.com/joonasmartinez/jogo-da-velha)

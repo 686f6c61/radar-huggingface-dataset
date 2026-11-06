@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks adicionales (HumanEval, MT-Bench, b
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ministral-3-8B-Instruct-2512-W4A16-AutoRound | 3,49 B (según safetensors) | no disponible | W4A16 | Apache 2.0 | HuggingFace |
-| mistralai/Ministral-3-8B-Instruct-2512 (BF16) | no disponible | no disponible | BF16 | Apache 2.0 | HuggingFace |
+| Ministral-3-8B-Instruct-2512-W4A16-AutoRound | 3,49 B (según safetensors) | no disponible | W4A16 | Apache 2.0 | Hugging Face |
+| mistralai/Ministral-3-8B-Instruct-2512 (BF16) | no disponible | no disponible | BF16 | Apache 2.0 | Hugging Face |
 | Otras cuantizaciones de Ministral-3-8B | no disponible | no disponible | no disponible | Apache 2.0 | no disponible |
 
 No se dispone de información suficiente para comparar con alternativas de otros fabricantes (por ejemplo, modelos vision-language de 7-9 B) en parámetros, contexto o rendimiento.
@@ -93,7 +93,7 @@ No se dispone de información suficiente para comparar con alternativas de otros
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/INCModel4/Ministral-3-8B-Instruct-2512-W4A16-AutoRound)
+- [Modelo en Hugging Face](https://huggingface.co/INCModel4/Ministral-3-8B-Instruct-2512-W4A16-AutoRound)
 - [Modelo base: mistralai/Ministral-3-8B-Instruct-2512](https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512)
 - [Paper de AutoRound (arXiv:2309.05516)](https://arxiv.org/abs/2309.05516)
 - [Repositorio AutoRound en GitHub](https://github.com/intel/auto-round)

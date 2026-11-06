@@ -22,7 +22,7 @@ Es relevante ahora por dos motivos: por un lado, demuestra el flujo habitual de 
 | Formato de pesos | GGUF (cuantizaciones i1); el modelo base se distribuye en safetensors |
 | Modelo base | juiceb0xc0de/bella-bartender-qwen3-1.7b |
 | Tamaño del repositorio | 21,6 GB (suma de todas las cuantizaciones publicadas) |
-| Fecha de publicación | 26 de octubre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 26 de octubre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) para ninguno de est
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/bella-bartender-qwen3-1.7b-i1-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/bella-bartender-qwen3-1.7b-i1-GGUF
 - Modelo base: https://huggingface.co/juiceb0xc0de/bella-bartender-qwen3-1.7b
 - Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/bella-bartender-qwen3-1.7b-GGUF
 - Página de descarga del autor para este modelo: https://hf.tst.eu/model#bella-bartender-qwen3-1.7b-i1-GGUF

@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dots3-note-prev-exl3-k4-v1 (este) | 84.830.257.824 segun safetensors del repo; base de 280B totales / 16B activos | 512K tokens (heredado del base) | EXL3 MCG K4 en expertos enrutados + FP8 en el resto | apache-2.0 | HuggingFace, requiere vLLM con integracion Dots3 |
-| dots-studio/dots3-note-prev-fp8 | 280B totales / 16B activos (modelo base) | 512K tokens | FP8 | apache-2.0 | HuggingFace |
-| dots-studio/dots3-note-prev (BF16) | 280B totales / 16B activos (modelo base) | 512K tokens | BF16 sin cuantizar | apache-2.0 | HuggingFace |
+| dots3-note-prev-exl3-k4-v1 (este) | 84.830.257.824 segun safetensors del repo; base de 280B totales / 16B activos | 512K tokens (heredado del base) | EXL3 MCG K4 en expertos enrutados + FP8 en el resto | apache-2.0 | Hugging Face, requiere vLLM con integracion Dots3 |
+| dots-studio/dots3-note-prev-fp8 | 280B totales / 16B activos (modelo base) | 512K tokens | FP8 | apache-2.0 | Hugging Face |
+| dots-studio/dots3-note-prev (BF16) | 280B totales / 16B activos (modelo base) | 512K tokens | BF16 sin cuantizar | apache-2.0 | Hugging Face |
 
 Nota: no se dispone de informacion sobre otros modelos comparables de la misma categoria en la busqueda realizada.
 
@@ -88,7 +88,7 @@ Nota: no se dispone de informacion sobre otros modelos comparables de la misma c
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/wrldsuksgo2mars/dots3-note-prev-exl3-k4-v1
+- Hugging Face (este checkpoint): https://huggingface.co/wrldsuksgo2mars/dots3-note-prev-exl3-k4-v1
 - Modelo base FP8: https://huggingface.co/dots-studio/dots3-note-prev-fp8
 - Modelo base: https://huggingface.co/dots-studio/dots3-note-prev
 - Pagina del modelo en Dots Studio: https://studio.dots.ai/dots/dots3-en.html

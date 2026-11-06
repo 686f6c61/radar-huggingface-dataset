@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JheisonM/tweet-sentiment-tfidf-logreg` es un clasificador de sentimiento en cuatro clases (Positive, Negative, Neutral, Irrelevant) para tweets en inglés, publicado por el usuario JheisonM en HuggingFace. No es un modelo neuronal: es un pipeline de scikit-learn compuesto por un `TfidfVectorizer` de unigramas y bigramas de palabras seguido de una `LogisticRegression` con `class_weight="balanced"`. Devuelve tanto la etiqueta predicha como la probabilidad de cada una de las cuatro clases.
+`JheisonM/tweet-sentiment-tfidf-logreg` es un clasificador de sentimiento en cuatro clases (Positive, Negative, Neutral, Irrelevant) para tweets en inglés, publicado por el usuario JheisonM en Hugging Face. No es un modelo neuronal: es un pipeline de scikit-learn compuesto por un `TfidfVectorizer` de unigramas y bigramas de palabras seguido de una `LogisticRegression` con `class_weight="balanced"`. Devuelve tanto la etiqueta predicha como la probabilidad de cada una de las cuatro clases.
 
 Su relevancia es la de una línea base clásica, barata y reproducible frente a los enfoques transformer: se entrena y se sirve en CPU, ocupa 0,1 GB de repositorio y se serializa en formato skops. Está pensado para el dataset Twitter Entity Sentiment Analysis, con 69.354 filas de entrenamiento tras limpieza y un dominio acotado (32 entidades, mayoritariamente videojuegos, año 2020).
 
@@ -83,7 +83,7 @@ Solo se dispone de información sobre los modelos comparados internamente durant
 
 | Modelo | Enfoque | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| tweet-sentiment-tfidf-logreg | TF-IDF (1,2) + LogisticRegression | No disponible (lineal; coeficientes = features × 4 clases) | No aplica | F1 0,955 con split aleatorio; F1 0,42 en Irrelevant | MIT | HuggingFace (0 descargas, 0 likes) |
+| tweet-sentiment-tfidf-logreg | TF-IDF (1,2) + LogisticRegression | No disponible (lineal; coeficientes = features × 4 clases) | No aplica | F1 0,955 con split aleatorio; F1 0,42 en Irrelevant | MIT | Hugging Face (0 descargas, 0 likes) |
 | TF-IDF + MultinomialNB | Bolsa de palabras + Naive Bayes | No disponible | No aplica | No publicado (solo se indica que se comparó en la selección) | No disponible | No publicado |
 | TF-IDF + LinearSVC | Bolsa de palabras + SVM lineal | No disponible | No aplica | No publicado (solo se indica que se comparó en la selección) | No disponible | No publicado |
 | Clasificadores transformer de sentimiento en Twitter | Transformer preentrenado | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada |
@@ -105,7 +105,7 @@ Solo se dispone de información sobre los modelos comparados internamente durant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JheisonM/tweet-sentiment-tfidf-logreg
+- Modelo en Hugging Face: https://huggingface.co/JheisonM/tweet-sentiment-tfidf-logreg
 - Dataset de entrenamiento: https://www.kaggle.com/datasets/jp797498e/twitter-entity-sentiment-analysis
 - Los resultados de la búsqueda web realizada no contienen enlaces relevantes para este modelo (los resultados obtenidos tratan sobre foros de Leboncoin y guías turísticas de España).
 - No se han encontrado en la información proporcionada papers, blogs, repositorios ni demos adicionales asociados al modelo.

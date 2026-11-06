@@ -56,7 +56,7 @@ Segun la model card, el adaptador alcanza un 76.0% de exactitud (exact match) en
 - VRAM estimada: el adaptador en si ocupa 0.2 GB, pero el modelo base Olmo-3-7B-Think requiere aproximadamente 14 GB de VRAM en bf16 (sin cuantizacion). Con cuantizacion a 4 bits (no documentada para este adaptador) podria reducirse a unos 4-5 GB.
 - GPU recomendadas: para entrenamiento se uso una NVIDIA A100 80GB. Para inferencia, una GPU con 16-24 GB de VRAM (por ejemplo, RTX 3090, RTX 4090, A10G) es suficiente en bf16; una RTX 3060 12GB podria ser insuficiente para el modelo base completo.
 - Si cabe en consumer GPU: si, en GPUs con al menos 16 GB de VRAM (RTX 4080, RTX 4090) para bf16; con cuantizacion podria caber en 8-12 GB, aunque no se documenta compatibilidad con cuantizacion para este adaptador.
-- Opciones de despliegue: el adaptador se usa con HuggingFace `transformers` + `peft`, cargando el modelo base y luego el adaptador. No se mencionan opciones con vLLM, llama.cpp u Ollama, aunque el modelo base es compatible con estas herramientas.
+- Opciones de despliegue: el adaptador se usa con Hugging Face `transformers` + `peft`, cargando el modelo base y luego el adaptador. No se mencionan opciones con vLLM, llama.cpp u Ollama, aunque el modelo base es compatible con estas herramientas.
 - Latencia y throughput: no se proporcionan datos especificos. El uso del dialecto L3 reduce el numero de tokens generados, lo que disminuye la latencia en comparacion con cadenas de pensamiento completas.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de informacion sobre modelos comparables directamente. El adaptado
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l3
+- Adaptador en Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l3
 - Modelo base Olmo-3-7B-Think: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Modelo base SFT: https://huggingface.co/allenai/Olmo-3-7B-Think-SFT
 - Paper de Olmo 3 (arXiv): https://arxiv.org/abs/2512.13961

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`cobalt-marsh-52` es un modelo de lenguaje publicado en HuggingFace por el usuario anónimo `Anonymous36` bajo licencia Apache 2.0. La única información estructural fiable que acompaña al repositorio es el tag de arquitectura `qwen3_moe`, que apunta a un transformer con mezcla de expertos (MoE) de la familia Qwen 3, y el recuento real de parámetros extraído de los archivos safetensors: 30.532.122.624 (unos 30,53 mil millones). El repositorio ocupa 63,6 GB, un tamaño coherente con pesos almacenados en bf16 (aproximadamente 2 bytes por parámetro).
+`cobalt-marsh-52` es un modelo de lenguaje publicado en Hugging Face por el usuario anónimo `Anonymous36` bajo licencia Apache 2.0. La única información estructural fiable que acompaña al repositorio es el tag de arquitectura `qwen3_moe`, que apunta a un transformer con mezcla de expertos (MoE) de la familia Qwen 3, y el recuento real de parámetros extraído de los archivos safetensors: 30.532.122.624 (unos 30,53 mil millones). El repositorio ocupa 63,6 GB, un tamaño coherente con pesos almacenados en bf16 (aproximadamente 2 bytes por parámetro).
 
-El problema que resuelve, su ventana de contexto, los idiomas que soporta y el proceso de entrenamiento no están documentados: la model card se reduce a la declaración de licencia y al nombre de la librería (`transformers`). No hay resultados de benchmarks, ni descripción de datos de entrenamiento, ni guía de uso. El pipeline declarado es `text-generation`, con tags `conversational` y `endpoints_compatible`, lo que sugiere un uso previsto como modelo conversacional desplegable en infraestructura compatible con la API de HuggingFace.
+El problema que resuelve, su ventana de contexto, los idiomas que soporta y el proceso de entrenamiento no están documentados: la model card se reduce a la declaración de licencia y al nombre de la librería (`transformers`). No hay resultados de benchmarks, ni descripción de datos de entrenamiento, ni guía de uso. El pipeline declarado es `text-generation`, con tags `conversational` y `endpoints_compatible`, lo que sugiere un uso previsto como modelo conversacional desplegable en infraestructura compatible con la API de Hugging Face.
 
 Su relevancia ahora es, por tanto, limitada y condicional: se trata de un checkpoint de 30,5 mil millones de parámetros con arquitectura MoE y licencia permisiva, lo que lo hace potencialmente interesante para despliegue económico en inferencia, pero la ausencia total de documentación, la autoría anónima y el registro de cero descargas y cero likes (en la fecha de consulta) obligan a tratarlo como un artefacto no verificado que requiere evaluación propia antes de cualquier uso en producción.
 
@@ -33,7 +33,7 @@ Tampoco hay informacion sobre datos de entrenamiento: se desconoce el volumen de
 
 - Generacion de texto: es la unica capacidad declarada explicitamente mediante el pipeline `text-generation`.
 - Conversacion multi-turno: el tag `conversational` sugiere un ajuste orientado a dialogo, aunque no se documenta el formato de prompt ni la plantilla de chat.
-- Despliegue en endpoints compatibles: el tag `endpoints_compatible` indica compatibilidad con la infraestructura de inferencia gestionada de HuggingFace.
+- Despliegue en endpoints compatibles: el tag `endpoints_compatible` indica compatibilidad con la infraestructura de inferencia gestionada de Hugging Face.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; el campo de idiomas del repositorio esta vacio.
@@ -95,5 +95,5 @@ Frente a ambos, la diferencia practica no esta en la arquitectura declarada sino
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Anonymous36/cobalt-marsh-52
+- Repositorio en Hugging Face: https://huggingface.co/Anonymous36/cobalt-marsh-52
 - Resultados de busqueda web: no se ha encontrado ningun paper, blog, repositorio, demo ni discusion que mencione este modelo. Los resultados devueltos (directorios genericos de modelos, archivo de CivitAI, detector de imagenes y la pagina de ChatGPT) no guardan relacion con el checkpoint y no se incluyen como referencias.

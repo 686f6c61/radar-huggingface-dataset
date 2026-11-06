@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| willspeak/Qwen3-4B-Instruct-2507-Q4_K_M-GGUF (este mirror) | ~4,02 B | GGUF Q4_K_M | no disponible | apache-2.0 | HuggingFace (0 descargas, 0 likes en el momento de la ficha) |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4,02 B | safetensors (precisión completa) | no disponible | apache-2.0 | HuggingFace |
-| voconly-org/Qwen3-4B-Instruct-2507-Q4_K_M-GGUF (fuente GGUF) | ~4,02 B | GGUF Q4_K_M | no disponible | apache-2.0 | HuggingFace |
+| willspeak/Qwen3-4B-Instruct-2507-Q4_K_M-GGUF (este mirror) | ~4,02 B | GGUF Q4_K_M | no disponible | apache-2.0 | Hugging Face (0 descargas, 0 likes en el momento de la ficha) |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4,02 B | safetensors (precisión completa) | no disponible | apache-2.0 | Hugging Face |
+| voconly-org/Qwen3-4B-Instruct-2507-Q4_K_M-GGUF (fuente GGUF) | ~4,02 B | GGUF Q4_K_M | no disponible | apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la información proporcionada; al compartir pesos base, la diferencia se limita al formato y al nivel de cuantización.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Mirror en HuggingFace: https://huggingface.co/willspeak/Qwen3-4B-Instruct-2507-Q4_K_M-GGUF
+- Mirror en Hugging Face: https://huggingface.co/willspeak/Qwen3-4B-Instruct-2507-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Fuente GGUF original: https://huggingface.co/voconly-org/Qwen3-4B-Instruct-2507-Q4_K_M-GGUF
 - Revisión de origen: `b0ae7bf9731abba127637b7dd037331d24beef7f`

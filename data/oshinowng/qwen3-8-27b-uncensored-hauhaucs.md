@@ -13,7 +13,7 @@ Es relevante ahora porque combina tres cosas poco habituales en un mismo paquete
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | Transformer causal denso con codificador de visión; híbrido de 48 capas Gated DeltaNet y 16 capas de atención con compuerta (gated attention); 64 capas de lenguaje en total |
-| Parámetros totales | 27B según la model card del autor; los metadatos de HuggingFace declaran 1.863.907.840 parámetros en safetensors (discrepancia no resuelta en la información disponible) |
+| Parámetros totales | 27B según la model card del autor; los metadatos de Hugging Face declaran 1.863.907.840 parámetros en safetensors (discrepancia no resuelta en la información disponible) |
 | Parámetros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 262.144 tokens nativos; ampliable hasta 1.000.000 |
 | Tipos de cuantización | Q8_K_P, Q8_0, Q6_K_P, Q6_K, Q5_K_P, Q5_K_M, Q4_K_P, Q4_K_M, IQ4_XS, Q3_K_P, Q3_K_M, IQ3_M, IQ3_XS, Q2_K_P, IQ2_M; más proyector de visión BF16 y sidecar FastMTP 32K |
@@ -97,7 +97,7 @@ Estos valores son afirmaciones del autor del release, no verificaciones independ
 | Modelo | Parámetros | Contexto | Multimodal | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Qwen3.8-27B-Uncensored-HauhauCS (Aggressive, MTP) | 27B declarados (1,86B en safetensors según metadatos) | 262.144 nativos, hasta 1.000.000 | Sí (imagen y vídeo) | GGUF, safetensors, sidecar FastMTP | Apache 2.0 | Repositorio con 0 descargas y 0 likes; ficheros alojados en el repo de HauhauCS |
-| Qwen/Qwen3.8-27B (modelo base) | 27B | No disponible en la información proporcionada | Sí, según las capacidades que el autor declara preservar | No disponible en la información proporcionada | No disponible en la información proporcionada | Modelo base de referencia en HuggingFace |
+| Qwen/Qwen3.8-27B (modelo base) | 27B | No disponible en la información proporcionada | Sí, según las capacidades que el autor declara preservar | No disponible en la información proporcionada | No disponible en la información proporcionada | Modelo base de referencia en Hugging Face |
 | Otros modelos comparables de 27B | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se ha proporcionado información sobre alternativas de terceros de la misma categoría, por lo que la comparativa queda limitada al modelo base.
@@ -106,7 +106,7 @@ No se ha proporcionado información sobre alternativas de terceros de la misma c
 
 - Modelo desensurado por diseño: el perfil Aggressive busca respuestas directas sin comportamiento de rechazo (0 de 465 pruebas). Esto implica riesgo real de generar contenido dañino, ilegal o inseguro sin filtros. No es apto para aplicaciones de cara al público sin una capa de moderación propia.
 - La model card recomienda la variante Balanced, no esta, para trabajo agéntico de contexto largo donde la fiabilidad sea crítica. Es una advertencia explícita del propio autor.
-- Discrepancia de parámetros no resuelta: los metadatos de HuggingFace declaran 1.863.907.840 parámetros en safetensors, frente a los 27B que indica el nombre y la model card. Conviene verificar los ficheros antes de planificar hardware.
+- Discrepancia de parámetros no resuelta: los metadatos de Hugging Face declaran 1.863.907.840 parámetros en safetensors, frente a los 27B que indica el nombre y la model card. Conviene verificar los ficheros antes de planificar hardware.
 - Riesgo de alucinación: no hay ninguna evaluación publicada de fidelidad, veracidad ni tasas de alucinación. Al ser una derivación con cuantizaciones que llegan a IQ2_M (3,02 BPW), la degradación en las variantes bajas puede ser notable.
 - Idiomas: solo inglés y chino están declarados explícitamente. No hay garantía de calidad en castellano ni en otras lenguas, pese a la etiqueta "multilingual".
 - Cobertura de contexto extendido: se anuncia extensión hasta 1.000.000 de tokens, pero no se documenta el método (RoPE scaling, YaRN u otro) ni la degradación esperada más allá de los 262.144 nativos.
@@ -118,7 +118,7 @@ No se ha proporcionado información sobre alternativas de terceros de la misma c
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/oshinoWng/Qwen3.8-27B-Uncensored-HauhauCS
+- Página de Hugging Face del modelo: https://huggingface.co/oshinoWng/Qwen3.8-27B-Uncensored-HauhauCS
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GGUF del autor de las cuantizaciones: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Cuantización Q8_K_P (31,46 GB): https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF/resolve/main/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-Q8_K_P.gguf

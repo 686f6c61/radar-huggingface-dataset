@@ -69,9 +69,9 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parámetros | Contexto / chunk | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DuoBench ACT (sim) | 51.689.104 | chunk de 100 acciones | bin_sort (bimanual, sim) | Apache 2.0 | HuggingFace, LeRobot |
+| DuoBench ACT (sim) | 51.689.104 | chunk de 100 acciones | bin_sort (bimanual, sim) | Apache 2.0 | Hugging Face, LeRobot |
 | Otras políticas DuoBench (difusión, VLA) | no disponible | no disponible | mismas tareas DuoBench | no disponible | no disponible en la información proporcionada |
-| Políticas ACT genéricas de LeRobot | variable | variable | tareas de manipulación diversas | variable | HuggingFace |
+| Políticas ACT genéricas de LeRobot | variable | variable | tareas de manipulación diversas | variable | Hugging Face |
 
 No se dispone en la información proporcionada de cifras de rendimiento de alternativas comparables sobre DuoBench, por lo que la comparación cuantitativa queda como no disponible.
 
@@ -88,7 +88,7 @@ No se dispone en la información proporcionada de cifras de rendimiento de alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotControlStack/duobench-act-sim-bin_sort
+- Modelo en Hugging Face: https://huggingface.co/RobotControlStack/duobench-act-sim-bin_sort
 - Dataset DuoBench: https://huggingface.co/datasets/RobotControlStack/duobench
 - Paper DuoBench (arXiv): https://arxiv.org/abs/2606.11901
 - Página del proyecto: https://duobench.github.io/

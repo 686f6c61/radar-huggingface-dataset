@@ -78,9 +78,9 @@ El autor advierte que solo hay 6 ejemplos positivos en el split de test, por lo 
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StanfordSCALE/assertion_sentence_has_apology | 109,49 M | no disponible (base de 384 tokens) | F1 0,800 / precision 1,000 / ROC-AUC 1,000 en test | no disponible | HuggingFace, libreria setfit |
-| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base, sin cabeza de clasificacion) | ~109 M | 384 tokens | no aplica: no clasifica la asercion por si mismo | Apache-2.0 (segun el modelo base; no confirmado en esta ficha) | HuggingFace |
-| Clasificador supervisado con DeBERTa-v3-base ajustado | ~184 M | 512 tokens | no disponible | MIT (tipica del modelo base) | HuggingFace |
+| StanfordSCALE/assertion_sentence_has_apology | 109,49 M | no disponible (base de 384 tokens) | F1 0,800 / precision 1,000 / ROC-AUC 1,000 en test | no disponible | Hugging Face, libreria setfit |
+| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base, sin cabeza de clasificacion) | ~109 M | 384 tokens | no aplica: no clasifica la asercion por si mismo | Apache-2.0 (segun el modelo base; no confirmado en esta ficha) | Hugging Face |
+| Clasificador supervisado con DeBERTa-v3-base ajustado | ~184 M | 512 tokens | no disponible | MIT (tipica del modelo base) | Hugging Face |
 | Anotacion mediante prompting de un LLM generativo | miles de millones | variable | no disponible | depende del proveedor | API o pesos abiertos |
 
 No hay resultados comparativos publicados en la informacion disponible; la tabla recoge solo dimensiones estructurales y de disponibilidad. La ventaja clara del modelo frente a alternativas generativas es el coste de inferencia y la posibilidad de ejecucion local; su desventaja es que resuelve una unica asercion muy especifica sobre habla de profesor en ingles.
@@ -101,7 +101,7 @@ No hay resultados comparativos publicados en la informacion disponible; la tabla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_has_apology
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_has_apology
 - Dataset de anotaciones: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (codigo y datos): https://github.com/SumnerLab/TalkMoves

@@ -6,7 +6,7 @@ T5-small es un modelo de lenguaje de tipo encoder-decoder desarrollado por Googl
 
 Su aportación principal es el marco «text-to-text»: todas las tareas de procesamiento de lenguaje natural (traducción, resumen, respuesta a preguntas, clasificación, inferencia de lenguaje natural) se reformulan como un problema de generación en el que tanto la entrada como la salida son cadenas de texto. Esto permite reutilizar el mismo modelo, la misma función de pérdida y los mismos hiperparámetros en tareas muy distintas, a diferencia de planteamientos tipo BERT, que únicamente producen una etiqueta de clase o un fragmento de la entrada.
 
-Sigue siendo relevante por su tamaño reducido, su licencia Apache 2.0 y su enorme adopción (más de 24,5 millones de descargas y 625 «likes» en HuggingFace), lo que lo convierte en un punto de partida habitual para tareas de resumen, traducción y ajuste fino con recursos de cómputo limitados.
+Sigue siendo relevante por su tamaño reducido, su licencia Apache 2.0 y su enorme adopción (más de 24,5 millones de descargas y 625 «likes» en Hugging Face), lo que lo convierte en un punto de partida habitual para tareas de resumen, traducción y ajuste fino con recursos de cómputo limitados.
 
 ## Especificaciones técnicas
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| t5-small | ≈60 M | 512 tokens (estándar T5, no confirmado en la información) | Apache 2.0 | HuggingFace (google-t5/t5-small) |
-| t5-base | ≈220 M | 512 tokens (estándar T5) | Apache 2.0 | HuggingFace (familia T5) |
-| t5-large | ≈770 M | 512 tokens (estándar T5) | Apache 2.0 | HuggingFace (familia T5) |
+| t5-small | ≈60 M | 512 tokens (estándar T5, no confirmado en la información) | Apache 2.0 | Hugging Face (google-t5/t5-small) |
+| t5-base | ≈220 M | 512 tokens (estándar T5) | Apache 2.0 | Hugging Face (familia T5) |
+| t5-large | ≈770 M | 512 tokens (estándar T5) | Apache 2.0 | Hugging Face (familia T5) |
 
 Los dos modelos comparados pertenecen a la misma familia T5 y comparten arquitectura, licencia y formato de pesos; se diferencian únicamente en el número de parámetros y, por tanto, en coste de cómputo y capacidad. La información proporcionada no incluye datos de rendimiento que permitan una comparación cuantitativa con alternativas fuera de la familia, por lo que la comparación con otros modelos de la misma categoría (por ejemplo BART o mT5) se considera no disponible.
 
@@ -87,12 +87,12 @@ Los dos modelos comparados pertenecen a la misma familia T5 y comparten arquitec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/google-t5/t5-small
+- Modelo en Hugging Face: https://huggingface.co/google-t5/t5-small
 - Paper de T5 (JMLR): https://jmlr.org/papers/volume21/20-074/20-074.pdf
 - Blog de Google sobre T5: https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html
 - Repositorio GitHub (text-to-text-transfer-transformer): https://github.com/google-research/text-to-text-transfer-transformer
 - Checkpoints T5 publicados: https://github.com/google-research/text-to-text-transfer-transformer#released-model-checkpoints
-- Documentación de T5 en HuggingFace: https://huggingface.co/docs/transformers/model_doc/t5
+- Documentación de T5 en Hugging Face: https://huggingface.co/docs/transformers/model_doc/t5
 - Conjunto de datos C4: https://www.tensorflow.org/datasets/catalog/c4
 - Conjunto de datos Wiki-DPR: https://huggingface.co/datasets/wiki_dpr
 - Wikipedia, T5 (language model): https://en.wikipedia.org/wiki/T5_(language_model)

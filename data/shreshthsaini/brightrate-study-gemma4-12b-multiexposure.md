@@ -80,7 +80,7 @@ No se dispone de informaci√≥n sobre adaptadores comparables en la misma categor√
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shreshthsaini/brightrate-study-gemma4-12b-multiexposure
+- Hugging Face: https://huggingface.co/shreshthsaini/brightrate-study-gemma4-12b-multiexposure
 - Repositorio BrightRate-LM: https://github.com/shreshthsaini/BrightRate-LM
 - Dataset BrightVQ: https://github.com/shreshthsaini/BrightVQ
 - Paper (enviado): Saini, S., Wang, Y., Birkbeck, N., Adsumilli, B., Bovik, A. C. "BrightRate-LM: Representation-Aware Quality Assessment for User-Generated HDR Video", Machine Vision and Applications, 2026 (Submitted).

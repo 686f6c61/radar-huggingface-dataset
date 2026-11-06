@@ -2,7 +2,7 @@
 
 ## Resumen
 
-soap-note-edge-mobile-gguf es un modelo derivado de Llama 3.2 1B, ajustado para generar notas clínicas en formato SOAP (Subjetivo, Objetivo, Análisis, Plan) directamente en dispositivos móviles. Lo publica el usuario Gowtham25 en HuggingFace y se distribuye exclusivamente en formato GGUF, pensado para su ejecución con llama.cpp en telefonos y hardware de bajos recursos. El modelo tiene 1.235.814.432 parámetros y un tamaño de repositorio de 1,8 GB.
+soap-note-edge-mobile-gguf es un modelo derivado de Llama 3.2 1B, ajustado para generar notas clínicas en formato SOAP (Subjetivo, Objetivo, Análisis, Plan) directamente en dispositivos móviles. Lo publica el usuario Gowtham25 en Hugging Face y se distribuye exclusivamente en formato GGUF, pensado para su ejecución con llama.cpp en telefonos y hardware de bajos recursos. El modelo tiene 1.235.814.432 parámetros y un tamaño de repositorio de 1,8 GB.
 
 El objetivo es claro: ofrecer un asistente de documentación clínica que funcione en local, sin depender de la nube, con un contexto configurado de 4096 tokens y una generación máxima de 896 tokens. La model card indica que se trata de un modelo "grounded e3", es decir, que la generación debe apoyarse en un diálogo previo y en un parser específico (`assembleFinalSummary`) para construir el resumen final a partir de los campos extraídos.
 
@@ -85,7 +85,7 @@ La comparativa se limita a modelos de tamaño similar; no se dispone de benchmar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gowtham25/soap-note-edge-mobile-gguf
+- Hugging Face: https://huggingface.co/Gowtham25/soap-note-edge-mobile-gguf
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Llama 3.2 (familia base): https://huggingface.co/meta-llama/Llama-3.2-1B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

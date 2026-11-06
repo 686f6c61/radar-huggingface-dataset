@@ -67,11 +67,11 @@ La precision del signo es practicamente nula por construccion, ya que la perdida
 - Se puede ejecutar en una Raspberry Pi o en un microcontrolador con soporte para PyTorch.
 - La inferencia es instantanea incluso en CPU; no se requieren GPUs especificas.
 - No se han publicado datos de latencia o throughput, pero al ser un modelo de una capa con dimension 32, el coste computacional es despreciable.
-- Para cargar el modelo se necesita el codigo fuente del proyecto (`src.pretraining.model.PretrainTransformer`), disponible en el repositorio del autor; no se proporciona un pipeline estandar de HuggingFace.
+- Para cargar el modelo se necesita el codigo fuente del proyecto (`src.pretraining.model.PretrainTransformer`), disponible en el repositorio del autor; no se proporciona un pipeline estandar de Hugging Face.
 
 ## Comparativa con modelos similares
 
-No se dispone de una comparativa directa con otros modelos en la informacion proporcionada. La model card menciona un modelo de referencia (`melephant/1-layer-addition-v2`) que es de adicion exclusiva y con vocabulario diferente, pero no se ofrecen datos comparativos de rendimiento. Los modelos comparables dentro del mismo proyecto (los otros once de la familia) no tienen fichas publicas individuales en HuggingFace, aunque el autor menciona que los de dos capas resuelven tanto suma como resta. Por tanto, la comparativa se limita a la informacion interna del propio proyecto.
+No se dispone de una comparativa directa con otros modelos en la informacion proporcionada. La model card menciona un modelo de referencia (`melephant/1-layer-addition-v2`) que es de adicion exclusiva y con vocabulario diferente, pero no se ofrecen datos comparativos de rendimiento. Los modelos comparables dentro del mismo proyecto (los otros once de la familia) no tienen fichas publicas individuales en Hugging Face, aunque el autor menciona que los de dos capas resuelven tanto suma como resta. Por tanto, la comparativa se limita a la informacion interna del propio proyecto.
 
 ## Limitaciones y advertencias
 
@@ -85,7 +85,7 @@ No se dispone de una comparativa directa con otros modelos en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itzPotato/arithmetic-bilinear-1layer-seed1
+- Modelo en Hugging Face: https://huggingface.co/itzPotato/arithmetic-bilinear-1layer-seed1
 - Pagina de modelos del autor: https://huggingface.co/itzPotato/models
 - Modelo relacionado del autor (bilinear-attn-addition-carry-1layer): https://huggingface.co/itzPotato/bilinear-attn-addition-carry-1layer
-- Repositorio del proyecto (implícito en la model card, no se proporciona URL directa; se accede via el perfil del autor en HuggingFace)
+- Repositorio del proyecto (implícito en la model card, no se proporciona URL directa; se accede via el perfil del autor en Hugging Face)

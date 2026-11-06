@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IndicCivic-VLM es un adaptador LoRA sobre el modelo vision-language `microsoft/Florence-2-base` (232M parametros), desarrollado por el autor Litap007 (Rohit Manikrao Patil) y publicado en HuggingFace bajo licencia MIT. El modelo resuelve un problema muy concreto: la extraccion directa de informacion estatutaria estructurada (costes de sancion, chainage, contratista, ratios de mantenimiento y calendarios DLP) a partir de fotografias de carteles de obra de infraestructura rural india del programa PMGSY, esquivando las fragiles cascadas OCR-a-NLP.
+IndicCivic-VLM es un adaptador LoRA sobre el modelo vision-language `microsoft/Florence-2-base` (232M parametros), desarrollado por el autor Litap007 (Rohit Manikrao Patil) y publicado en Hugging Face bajo licencia MIT. El modelo resuelve un problema muy concreto: la extraccion directa de informacion estatutaria estructurada (costes de sancion, chainage, contratista, ratios de mantenimiento y calendarios DLP) a partir de fotografias de carteles de obra de infraestructura rural india del programa PMGSY, esquivando las fragiles cascadas OCR-a-NLP.
 
 La propuesta es un adaptador de solo 442.368 parametros entrenables (0,1908% del backbone) que se acopla al modelo base mediante PEFT. El entrenamiento se realizo sobre el dataset `Litap007/indic-citizen-information-board-pmgsy` y cubre seis idiomas: ingles, hindi, marati, tamil, telugu y bengali. La tarea principal es DocVQA con salida en JSON, usando el token especial `<DocVQA>`.
 
@@ -77,10 +77,10 @@ El modelo base sin ajustar falla por completo en este dominio y emite tokens de 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IndicCivic-VLM (este) | 232M + 442K LoRA | no disponible | DocVQA especializado en carteles PMGSY | MIT | HuggingFace (adaptador PEFT) |
-| microsoft/Florence-2-base | 232M | no disponible | Vision-language generalista | MIT | HuggingFace |
-| microsoft/Florence-2-large | 771M | no disponible | Vision-language generalista | MIT | HuggingFace |
-| Donut (base) | ~200M | no disponible | Document understanding end-to-end | MIT | HuggingFace |
+| IndicCivic-VLM (este) | 232M + 442K LoRA | no disponible | DocVQA especializado en carteles PMGSY | MIT | Hugging Face (adaptador PEFT) |
+| microsoft/Florence-2-base | 232M | no disponible | Vision-language generalista | MIT | Hugging Face |
+| microsoft/Florence-2-large | 771M | no disponible | Vision-language generalista | MIT | Hugging Face |
+| Donut (base) | ~200M | no disponible | Document understanding end-to-end | MIT | Hugging Face |
 
 Frente a Florence-2-base, la diferencia es el ajuste de dominio: el base obtiene 0% de JSON valido en carteles PMGSY y este adaptador un 76%. Frente a Florence-2-large, este modelo prioriza el coste computacional minimo sobre la capacidad general. Frente a Donut, que tambien evita la cascada OCR, este adaptador aporta cobertura especifica de seis lenguas indicas y del dominio PMGSY.
 
@@ -98,7 +98,7 @@ Frente a Florence-2-base, la diferencia es el ajuste de dominio: el base obtiene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Litap007/indic-citizen-information-board-pmgsy-florence2-lora
+- Modelo en Hugging Face: https://huggingface.co/Litap007/indic-citizen-information-board-pmgsy-florence2-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/Litap007/indic-citizen-information-board-pmgsy
 - Modelo base Florence-2-base: https://huggingface.co/microsoft/Florence-2-base
 - Licencia MIT: https://opensource.org/licenses/MIT

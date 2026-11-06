@@ -74,8 +74,8 @@ Estos valores no deben atribuirse al ajuste fino. No se ha facilitado ninguna ev
 
 | Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scadcoder-qwen3.5-9b-3ep | 9,65B | Entrenado a 4096 (base 262K) | Si (encoder congelado) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-9B | 9B | 262K nativos, 1M con YaRN | Si | Apache 2.0 | HuggingFace |
+| scadcoder-qwen3.5-9b-3ep | 9,65B | Entrenado a 4096 (base 262K) | Si (encoder congelado) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-9B | 9B | 262K nativos, 1M con YaRN | Si | Apache 2.0 | Hugging Face |
 | Alternativas especializadas en OpenSCAD | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros modelos de la misma categoria (generacion de OpenSCAD para hardware de laboratorio) que permitan una comparacion cuantitativa. La comparacion mas directa es con el propio modelo base, del que este ajuste hereda arquitectura, vision y capacidades generales, modificando unicamente el comportamiento en la tarea especifica.
@@ -95,7 +95,7 @@ No se dispone de informacion sobre otros modelos de la misma categoria (generaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ATinyGreenCell/scadcoder-qwen3.5-9b-3ep
+- Modelo en Hugging Face: https://huggingface.co/ATinyGreenCell/scadcoder-qwen3.5-9b-3ep
 - Modelo base Qwen/Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Ficha en free2aitools: https://free2aitools.com/model/atinygreencell/scadcoder-qwen3.5-9b
 - Qwen3.5-9B en benchable.ai: https://benchable.ai/models/qwen/qwen3.5-9b-20260310

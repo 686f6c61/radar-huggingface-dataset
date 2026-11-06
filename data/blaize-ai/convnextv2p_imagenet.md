@@ -90,7 +90,7 @@ La comparación directa es difícil porque este repositorio no publica parámetr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Blaize-AI/ConvNeXtV2p_ImageNet
+- Hugging Face: https://huggingface.co/Blaize-AI/ConvNeXtV2p_ImageNet
 - Blaize (web oficial): https://www.blaize.com
 - Implementación `timm` de ConvNeXt: https://github.com/huggingface/pytorch-image-models/blob/main/timm/models/convnext.py
 - Pesos originales ConvNeXt V2 (Meta): https://github.com/facebookresearch/ConvNeXt-V2

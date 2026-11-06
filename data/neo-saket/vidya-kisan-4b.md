@@ -93,7 +93,7 @@ No se dispone de otros modelos agronomicos comparables en la informacion proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neo-saket/vidya-kisan-4b
+- Modelo en Hugging Face: https://huggingface.co/neo-saket/vidya-kisan-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia (qwen-research): https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Modelo hermano de 2B: https://huggingface.co/neo-saket/vidya-kisan-2b

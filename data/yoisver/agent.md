@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Yoisver/Agent` es un repositorio publicado en HuggingFace por el usuario Yoisver bajo licencia Apache-2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros, ni información sobre el entrenamiento o las capacidades del modelo. Se desconoce por completo su naturaleza: podría tratarse de un modelo de lenguaje, un agente, un adaptador o incluso un artefacto incompleto.
+El modelo `Yoisver/Agent` es un repositorio publicado en Hugging Face por el usuario Yoisver bajo licencia Apache-2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros, ni información sobre el entrenamiento o las capacidades del modelo. Se desconoce por completo su naturaleza: podría tratarse de un modelo de lenguaje, un agente, un adaptador o incluso un artefacto incompleto.
 
 La relevancia de este modelo es actualmente nula desde el punto de vista técnico, ya que no existe documentación pública que permita evaluarlo o utilizarlo de forma fiable. Cualquier intento de integración en un proyecto debería comenzar por contactar con el autor o inspeccionar directamente los archivos del repositorio, si es que existen. No se dispone de información sobre arquitectura, tamaño, contexto ni idiomas soportados.
 
@@ -53,4 +53,4 @@ No disponible. Al no existir información sobre la arquitectura, el tamaño o la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Yoisver/Agent
+- Repositorio en Hugging Face: https://huggingface.co/Yoisver/Agent

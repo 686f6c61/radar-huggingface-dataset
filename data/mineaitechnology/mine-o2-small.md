@@ -66,14 +66,14 @@ El autor indica que estos resultados están estadísticamente empatados con su p
 - VRAM estimada para inferencia: no disponible de forma explícita; por el tamaño (≈355M parámetros), en fp16 requiere aproximadamente 0,7 GB solo para pesos, más memoria para activaciones y caché KV.
 - GPU recomendadas: no disponible en la información proporcionada.
 - Compatibilidad con GPU de consumo: no disponible de forma explícita; por tamaño debería caber en GPUs de consumo, pero no se confirma en la documentación.
-- Opciones de despliegue: transformers (librería declarada); el tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace. No se documentan vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: transformers (librería declarada); el tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face. No se documentan vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mine:o2-small (SFT) | ≈355M | 4096 | Inferior a SmolLM2 360M y Qwen2.5 0.5B; ~nivel GPT-2 medium y Pythia 410M (según el autor) | Apache-2.0 | HuggingFace |
+| mine:o2-small (SFT) | ≈355M | 4096 | Inferior a SmolLM2 360M y Qwen2.5 0.5B; ~nivel GPT-2 medium y Pythia 410M (según el autor) | Apache-2.0 | Hugging Face |
 | SmolLM2 360M | ≈360M | no disponible | Superior según el autor | no disponible | no disponible |
 | Qwen2.5 0.5B | ≈500M | no disponible | Superior según el autor | no disponible | no disponible |
 | GPT-2 medium | ≈355M | no disponible | Nivel similar según el autor | no disponible | no disponible |
@@ -96,6 +96,6 @@ Los datos de los modelos comparables provienen únicamente de las afirmaciones c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MineAITechnology/mine-o2-small
-- Organización en HuggingFace: https://huggingface.co/MineAITechnology
+- Hugging Face: https://huggingface.co/MineAITechnology/mine-o2-small
+- Organización en Hugging Face: https://huggingface.co/MineAITechnology
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

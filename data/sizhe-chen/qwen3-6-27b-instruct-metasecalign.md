@@ -89,9 +89,9 @@ Resultados de seguridad (ASR, menor es mejor):
 
 | Modelo | Parámetros | Contexto | Defensa prompt injection | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-27B-Instruct-MetaSecAlign (este) | 27,36B | 262.144 | DPO estático; ASR estático 2,9 %, adaptativo hasta 94,0 % | apache-2.0 | HuggingFace, 57 descargas |
-| Qwen3.6-27B-Instruct-SecPO | 27,36B (base común) | 262.144 | Referencia limpia + entrenamiento adversarial offline; mejor utilidad y robustez | apache-2.0 | HuggingFace |
-| Qwen/Qwen3.6-27B (base sin defensa) | 27,36B | 262.144 | Ninguna; ASR estático 98,9 % | apache-2.0 | HuggingFace |
+| Qwen3.6-27B-Instruct-MetaSecAlign (este) | 27,36B | 262.144 | DPO estático; ASR estático 2,9 %, adaptativo hasta 94,0 % | apache-2.0 | Hugging Face, 57 descargas |
+| Qwen3.6-27B-Instruct-SecPO | 27,36B (base común) | 262.144 | Referencia limpia + entrenamiento adversarial offline; mejor utilidad y robustez | apache-2.0 | Hugging Face |
+| Qwen/Qwen3.6-27B (base sin defensa) | 27,36B | 262.144 | Ninguna; ASR estático 98,9 % | apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -108,7 +108,7 @@ Resultados de seguridad (ASR, menor es mejor):
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sizhe-Chen/Qwen3.6-27B-Instruct-MetaSecAlign
+- Modelo en Hugging Face: https://huggingface.co/Sizhe-Chen/Qwen3.6-27B-Instruct-MetaSecAlign
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Modelo comparativo SecPO: https://huggingface.co/Sizhe-Chen/Qwen3.6-27B-Instruct-SecPO
 - Paper SecPO: https://arxiv.org/abs/2610.41998

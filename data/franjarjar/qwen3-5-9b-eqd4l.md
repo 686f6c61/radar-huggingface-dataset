@@ -93,7 +93,7 @@ La comparacion disponible se limita al eje de calidad y velocidad: frente a UD-Q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Franjarjar/Qwen3.5-9B-EQD4L
+- Repositorio Hugging Face: https://huggingface.co/Franjarjar/Qwen3.5-9B-EQD4L
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Motor Espetero: https://github.com/JarJarFran/espetero
 - Documentacion del formato EQ: https://github.com/JarJarFran/espetero/blob/main/docs/eq.md

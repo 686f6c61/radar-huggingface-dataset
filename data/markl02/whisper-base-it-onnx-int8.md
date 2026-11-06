@@ -70,9 +70,9 @@ Mediciones realizadas por el autor en la app de navegador, CPU de portátil, dec
 
 | Modelo | Parametros | Contexto/idioma | Rendimiento ASR | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MarkL02/whisper-base-it-onnx-int8 | Whisper base (recuento no publicado) | Italiano | FLEURS it WER 0,130; MINDS-14 it WER 0,338 | MIT | HuggingFace, ONNX int8 |
-| LocalAI-io/whisper-base-it-multi (modelo base) | Whisper base | Italiano (fine-tune multi-corpus) | No publicado en la información disponible | MIT | HuggingFace |
-| Whisper base estándar de OpenAI | Whisper base | Multilingüe | FLEURS it WER 0,192 en la misma conversión | MIT | HuggingFace, múltiples formatos |
+| MarkL02/whisper-base-it-onnx-int8 | Whisper base (recuento no publicado) | Italiano | FLEURS it WER 0,130; MINDS-14 it WER 0,338 | MIT | Hugging Face, ONNX int8 |
+| LocalAI-io/whisper-base-it-multi (modelo base) | Whisper base | Italiano (fine-tune multi-corpus) | No publicado en la información disponible | MIT | Hugging Face |
+| Whisper base estándar de OpenAI | Whisper base | Multilingüe | FLEURS it WER 0,192 en la misma conversión | MIT | Hugging Face, múltiples formatos |
 
 La comparación con modelos de la misma categoría distintos de Whisper base no está disponible en la información proporcionada.
 
@@ -89,7 +89,7 @@ La comparación con modelos de la misma categoría distintos de Whisper base no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MarkL02/whisper-base-it-onnx-int8
+- Hugging Face: https://huggingface.co/MarkL02/whisper-base-it-onnx-int8
 - Modelo base: https://huggingface.co/LocalAI-io/whisper-base-it-multi
 - Repositorio de Whisper de OpenAI: no disponible en la información proporcionada
 - Paper de Whisper: no disponible en la información proporcionada

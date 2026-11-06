@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Deepseek-Janus-Pro-1B es una adaptación publicada en HuggingFace por el usuario diablomike20 del modelo Janus-Pro desarrollado por DeepSeek. Janus-Pro es un framework autorregresivo que unifica la comprensión multimodal y la generación de imágenes en una única arquitectura transformer, desacoplando la codificación visual en dos rutas separadas para evitar el conflicto entre las representaciones necesarias para entender y para generar imágenes.
+Deepseek-Janus-Pro-1B es una adaptación publicada en Hugging Face por el usuario diablomike20 del modelo Janus-Pro desarrollado por DeepSeek. Janus-Pro es un framework autorregresivo que unifica la comprensión multimodal y la generación de imágenes en una única arquitectura transformer, desacoplando la codificación visual en dos rutas separadas para evitar el conflicto entre las representaciones necesarias para entender y para generar imágenes.
 
 El modelo se construye sobre DeepSeek-LLM-1.5b-base (en esta variante de 1B) e incorpora SigLIP-L como codificador visual para comprensión, con entrada de 384x384 píxeles, y un tokenizador de imágenes con factor de submuestreo 16 para la generación. La relevancia actual radica en su propuesta de modelo unificado "any-to-any" que compite con modelos especializados sin renunciar a una arquitectura simple.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Deepseek-Janus-Pro-1B (diablomike20) | 1B | no disponible | MIT (código) / DeepSeek Model License (pesos) | HuggingFace |
-| Janus-Pro-1.5B (DeepSeek) | 1,5B | no disponible | DeepSeek Model License | HuggingFace / GitHub |
-| Janus-Pro-7B (DeepSeek) | 7B | no disponible | DeepSeek Model License | HuggingFace / GitHub |
+| Deepseek-Janus-Pro-1B (diablomike20) | 1B | no disponible | MIT (código) / DeepSeek Model License (pesos) | Hugging Face |
+| Janus-Pro-1.5B (DeepSeek) | 1,5B | no disponible | DeepSeek Model License | Hugging Face / GitHub |
+| Janus-Pro-7B (DeepSeek) | 7B | no disponible | DeepSeek Model License | Hugging Face / GitHub |
 | Modelos unificados comparables (p. ej. Chameleon, Emu) | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa se limita a las variantes del propio Janus-Pro, ya que la información proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos de la misma categoría.
@@ -85,7 +85,7 @@ La comparativa se limita a las variantes del propio Janus-Pro, ya que la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/diablomike20/Deepseek-Janus-Pro-1B
+- Hugging Face: https://huggingface.co/diablomike20/Deepseek-Janus-Pro-1B
 - Repositorio GitHub oficial: https://github.com/deepseek-ai/Janus
 - Paper: https://arxiv.org/abs/2501.17811
 - Codificador visual SigLIP-L: https://huggingface.co/timm/ViT-L-16-SigLIP-384

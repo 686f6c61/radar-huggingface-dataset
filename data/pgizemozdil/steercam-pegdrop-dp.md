@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SteerCamera PegDrop DP | no disponible | no aplica (imagen 128 x 128) | Inserción PegDrop con cámara orientable | no disponible | HuggingFace (LeRobot) |
+| SteerCamera PegDrop DP | no disponible | no aplica (imagen 128 x 128) | Inserción PegDrop con cámara orientable | no disponible | Hugging Face (LeRobot) |
 | Diffusion Policy original (Chi et al.) | no disponible | no aplica | Manipulación visomotora genérica | no disponible | Código público |
 | ACT (Action Chunking Transformer) | no disponible | no aplica | Manipulación visomotora | no disponible | LeRobot |
 | ManiFeel PegDrop (referencia) | no disponible | no aplica | Inserción con percepción táctil | no disponible | Repositorio del artículo |
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pgizemozdil/steercam-pegdrop-dp
+- Modelo en Hugging Face: https://huggingface.co/pgizemozdil/steercam-pegdrop-dp
 - Código, tareas, datasets y benchmark de SteerCamera: https://github.com/gizemozd/steer-your-camera
 - Artículo *Steer Your Camera* (en revisión): no disponible enlace directo
 - LeRobot (librería): no disponible enlace en la información proporcionada

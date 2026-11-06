@@ -91,7 +91,7 @@ No se dispone de informacion sobre modelos directamente comparables en la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/terminusresearch/minimax-music3-latent-refiner-v0.10
+- Modelo en Hugging Face: https://huggingface.co/terminusresearch/minimax-music3-latent-refiner-v0.10
 - Modelo base MiniMax Music 3: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-Music3/blob/main/LICENSE
 - Codificador DAV de SimpleTuner: https://huggingface.co/SimpleTuner/MiniMax-Music-3-Encoder

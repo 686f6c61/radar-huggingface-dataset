@@ -71,5 +71,5 @@ No se dispone de información sobre otros LoRAs para Krea 2 ni sobre modelos com
 
 ## Enlaces
 
-- [Repositorio del LoRA en HuggingFace](https://huggingface.co/Hajja/krea-glow)
+- [Repositorio del LoRA en Hugging Face](https://huggingface.co/Hajja/krea-glow)
 - [Modelo base Krea-2-Raw](https://huggingface.co/krea/Krea-2-Raw) (enlace inferido, no verificado)

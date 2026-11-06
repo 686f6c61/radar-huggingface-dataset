@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (INT4 GPTQ de Minerva-7B instruct) | 7B (nombre); 1.416.564.736 almacenados en safetensors cuantizados | No disponible | safetensors (GPTQ) | Apache 2.0 | HuggingFace |
-| sapienzanlp/Minerva-7B-instruct-v1.0 (base, sin cuantizar) | 7B | No disponible | safetensors | Apache 2.0 | HuggingFace |
+| Este modelo (INT4 GPTQ de Minerva-7B instruct) | 7B (nombre); 1.416.564.736 almacenados en safetensors cuantizados | No disponible | safetensors (GPTQ) | Apache 2.0 | Hugging Face |
+| sapienzanlp/Minerva-7B-instruct-v1.0 (base, sin cuantizar) | 7B | No disponible | safetensors | Apache 2.0 | Hugging Face |
 | Otros modelos instructivos de ~7-8B | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 No se identifican en la informacion proporcionada otros modelos comparables de la misma categoria o de cuantizacion equivalente para establecer una comparacion cuantitativa.
@@ -81,11 +81,11 @@ No se identifican en la informacion proporcionada otros modelos comparables de l
 - Compatibilidad de licencia: la licencia es Apache 2.0, que permite uso comercial, pero el aviso del autor restringe el uso declarado a investigacion; conviene revisar esta discrepancia antes de un despliegue productivo.
 - Hardware: esta optimizado para aceleradores Intel; fuera de ese ecosistema puede no aprovechar las ventajas de rendimiento previstas.
 - Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, sin validacion comunitaria.
-- Metadato `inference: false`: la inferencia gestionada de HuggingFace no esta habilitada para este repositorio.
+- Metadato `inference: false`: la inferencia gestionada de Hugging Face no esta habilitada para este repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_gptq-int4-gs64-sym
+- Modelo en Hugging Face: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_gptq-int4-gs64-sym
 - Modelo base: https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0
 - Intel AutoRound (repositorio): https://github.com/intel/auto-round
 - auto-round-pipeline (receta de replicacion): https://git.epicdynamic.com/auto-round-pipeline

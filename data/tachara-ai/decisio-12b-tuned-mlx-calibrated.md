@@ -102,7 +102,7 @@ No se dispone de comparaciones con modelos de decisión de otros autores en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tachara-ai/Decisio-12b-tuned-mlx-calibrated
+- Repositorio Hugging Face: https://huggingface.co/tachara-ai/Decisio-12b-tuned-mlx-calibrated
 - Repositorio base en bf16: https://huggingface.co/tachara-ai/Decisio-12b-tuned-calibrated
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Variantes de 8 bits y flavor commit: https://huggingface.co/tachara-ai/Decisio-12b-tuned-mlx8-calibrated y https://huggingface.co/tachara-ai/Decisio-12b-tuned-mlx8-commit

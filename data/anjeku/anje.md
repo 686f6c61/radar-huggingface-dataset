@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo Anjeku/Anje es un modelo publicado en HuggingFace por el autor Anjeku bajo licencia Apache 2.0. La model card asociada no contiene documentacion tecnica: no se especifica arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni capacidades. El repositorio fue creado y actualizado el 7 de septiembre de 2026 y registra cero descargas y cero "likes", lo que sugiere que se trata de una publicacion reciente, posiblemente un repositorio vacio o un placeholder.
+El modelo Anjeku/Anje es un modelo publicado en Hugging Face por el autor Anjeku bajo licencia Apache 2.0. La model card asociada no contiene documentacion tecnica: no se especifica arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni capacidades. El repositorio fue creado y actualizado el 7 de septiembre de 2026 y registra cero descargas y cero "likes", lo que sugiere que se trata de una publicacion reciente, posiblemente un repositorio vacio o un placeholder.
 
-Las busquedas web no han devuelto resultados relevantes para este modelo. Los resultados encontrados corresponden a repuestos de automoviles Alfa Romeo 159, un modelo LORA de ilustracion llamado "Anje" de Fire Emblem Engage, y un modelo de imagen llamado "Ange", todos ellos sin relacion con el repositorio de HuggingFace. Por tanto, no es posible determinar el proposito, la arquitectura ni las capacidades reales de este modelo a partir de la informacion disponible.
+Las busquedas web no han devuelto resultados relevantes para este modelo. Los resultados encontrados corresponden a repuestos de automoviles Alfa Romeo 159, un modelo LORA de ilustracion llamado "Anje" de Fire Emblem Engage, y un modelo de imagen llamado "Ange", todos ellos sin relacion con el repositorio de Hugging Face. Por tanto, no es posible determinar el proposito, la arquitectura ni las capacidades reales de este modelo a partir de la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -58,5 +58,5 @@ No disponible. No se puede comparar este modelo con alternativas de la misma cat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Anjeku/Anje
+- Repositorio en Hugging Face: https://huggingface.co/Anjeku/Anje
 - No se han encontrado recursos externos relevantes. Las busquedas web devolvieron resultados no relacionados con este modelo (repuestos de Alfa Romeo 159, modelos de imagen "Anje" y "Ange" de otros servicios).

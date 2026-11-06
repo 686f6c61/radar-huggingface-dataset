@@ -75,7 +75,7 @@ Medición realizada el 2026-10-31 en CPU x86_64, ejecución solo en CPU, context
 | Modelo | Parametros | Contexto | Licencia | Formato / acceso | Notas |
 |---|---|---|---|---|---|
 | ThoxAgent Edge 1.7B | 1,7B | 8.192 (medido) | Apache-2.0 | Ollama; pesos no publicados en el repo | Perfil de sistema + knowledge pack; sin entrenamiento propio |
-| Qwen/Qwen3-1.7B | 1,7B | no disponible en esta ficha | Apache-2.0 | Pesos upstream en HuggingFace | Base exacto de este release; misma arquitectura y pesos |
+| Qwen/Qwen3-1.7B | 1,7B | no disponible en esta ficha | Apache-2.0 | Pesos upstream en Hugging Face | Base exacto de este release; misma arquitectura y pesos |
 | Otros modelos de ~1-2B para agentes locales | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
 
 La comparación relevante es contra el propio Qwen3-1.7B: los pesos son idénticos, de modo que cualquier diferencia de comportamiento proviene exclusivamente del system profile y del knowledge pack. No se han publicado comparaciones con alternativas de terceros.
@@ -94,7 +94,7 @@ La comparación relevante es contra el propio Qwen3-1.7B: los pesos son idéntic
 
 ## Enlaces
 
-- [HuggingFace: Thox-ai/ThoxAgent-Edge-1.7B](https://huggingface.co/Thox-ai/ThoxAgent-Edge-1.7B)
+- [Hugging Face: Thox-ai/ThoxAgent-Edge-1.7B](https://huggingface.co/Thox-ai/ThoxAgent-Edge-1.7B)
 - [Modelo base: Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)
 - Tag de Ollama: `thox-ai/thoxagent-edge-1.7b` (ejecutable con `ollama run thox-ai/thoxagent-edge-1.7b`)
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos.

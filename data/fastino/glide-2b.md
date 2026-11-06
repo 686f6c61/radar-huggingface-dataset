@@ -89,7 +89,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fastino/GLiDE-2B
+- Modelo en Hugging Face: https://huggingface.co/fastino/GLiDE-2B
 - Licencia: https://huggingface.co/fastino/GLiDE/blob/main/LICENSE
 - Web de Fastino: https://fastino.ai
 - Documentación de la API (System One): https://docs.fastino.ai/inference/systemone

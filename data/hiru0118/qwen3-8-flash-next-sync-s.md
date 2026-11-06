@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Qwen3.8-Flash-Next Sync-S (este pack) | no disponible (expertos a ~1,7 bits, 24,07 GiB) | no disponible | Trellis R1Q2 + GGUF Gyro-S | Qwen Community License 1.0 | Experimental, test release, 0 descargas |
-| Qwen/Qwen3.8-Flash-Next (base) | no disponible | no disponible | safetensors (presumible) | Qwen Community License 1.0 | Publico en HuggingFace |
-| agentionai/Qwen3.8-Flash-Next-Gyro-GGUF (Gyro-S) | no disponible | no disponible | GGUF | no disponible en la informacion | Publico en HuggingFace |
+| Qwen/Qwen3.8-Flash-Next (base) | no disponible | no disponible | safetensors (presumible) | Qwen Community License 1.0 | Publico en Hugging Face |
+| agentionai/Qwen3.8-Flash-Next-Gyro-GGUF (Gyro-S) | no disponible | no disponible | GGUF | no disponible en la informacion | Publico en Hugging Face |
 
 La comparativa se limita a las tres variantes documentadas en la informacion disponible. No se dispone de datos de parametros, contexto ni rendimiento para establecer una comparacion cuantitativa con alternativas de otros desarrolladores.
 
@@ -88,7 +88,7 @@ La comparativa se limita a las tres variantes documentadas en la informacion dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hiru0118/Qwen3.8-Flash-Next-S
+- Modelo en Hugging Face: https://huggingface.co/hiru0118/Qwen3.8-Flash-Next-S
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GGUF Gyro-S de agentionai: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-GGUF
 - Especificacion y codigo de referencia del formato Gyro: https://gitlab.com/agentionai-group/agention-gyro

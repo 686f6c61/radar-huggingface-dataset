@@ -6,7 +6,7 @@ Sovereign Ada RTX es un proyecto de software, no un modelo de inteligencia artif
 
 Aunque el nombre incluye "RTX" y hay componentes de redes neuronales, todo es código Ada compilado, no pesos de un modelo entrenado. El proyecto incluye un conjunto de autopruebas (40 tests) y una suite de 9 benchmarks, además de un REPL de arranque en frío. La relevancia actual radica en demostrar cómo se puede construir un sistema de cómputo completo y verificado sin depender de infraestructura externa, un enfoque útil para sistemas embebidos, aviónica, automoción y otros dominios donde el comportamiento indefinido no es aceptable.
 
-No se dispone de información sobre descargas, uso o métricas de adopción, ya que el repositorio muestra cero descargas y cero me gusta en HuggingFace.
+No se dispone de información sobre descargas, uso o métricas de adopción, ya que el repositorio muestra cero descargas y cero me gusta en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ No se dispone de información sobre descargas, uso o métricas de adopción, ya 
 | Longitud de contexto | No aplica |
 | Tipos de cuantizacion | No aplica |
 | Idiomas soportados | Ada 2022 (código fuente), documentación en inglés |
-| Licencia | SSv1.0 (según badge en la model card; no disponible en los metadatos de HuggingFace) |
+| Licencia | SSv1.0 (según badge en la model card; no disponible en los metadatos de Hugging Face) |
 | Formato de pesos | No aplica (el repositorio contiene código fuente Ada, no pesos serializados) |
 
 ## Arquitectura y entrenamiento
@@ -70,7 +70,7 @@ No existe una categoría de "modelos" comparable, ya que esto no es un modelo de
 ## Limitaciones y advertencias
 
 - No es un modelo de IA: no genera texto, no razona, no procesa lenguaje natural ni imágenes de forma autónoma. Su "RTX" es un motor de tensores fijo, no un modelo entrenado.
-- El repositorio tiene cero descargas y cero me gusta en HuggingFace, lo que sugiere una adopción nula o muy reciente.
+- El repositorio tiene cero descargas y cero me gusta en Hugging Face, lo que sugiere una adopción nula o muy reciente.
 - La licencia SSv1.0 aparece en un badge de la model card, pero no se detallan sus términos; se debe contactar al autor para conocer las restricciones de uso comercial.
 - No se proporcionan instrucciones de compilación detalladas más allá de la mención a `gnatmake`.
 - No hay documentación sobre el conjunto de instrucciones soportado ni sobre cómo interactuar con el REPL.
@@ -79,5 +79,5 @@ No existe una categoría de "modelos" comparable, ya que esto no es un modelo de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/sovereign-ada-rtx
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/sovereign-ada-rtx
 - Página de descargas del ecosistema Sovereign OS: https://collectivekitty.com/downloads (menciona el proyecto y su autoría por "one human + AI")

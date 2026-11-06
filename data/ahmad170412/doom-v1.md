@@ -75,10 +75,10 @@ No se dispone de otros modelos específicos de generación de comandos de termin
 - Genera un solo comando; no admite encadenamiento con `&&`, `;` ni flujos de trabajo multi-paso.
 - No tiene memoria de conversación; solo conoce el directorio de trabajo, la versión del sistema y el shell actuales.
 - Riesgo de alucinación: ante solicitudes ambiguas puede producir comandos peligrosos o inválidos. Se recomienda revisar siempre la salida antes de ejecutarla.
-- La licencia MIT indicada en la model card difiere del campo "Licencia" de HuggingFace, que aparece como "no disponible". El modelo base Qwen2.5-Coder-1.5B-Instruct está bajo Apache 2.0, lo que permite uso comercial, pero el adaptador se publica bajo MIT según el autor.
+- La licencia MIT indicada en la model card difiere del campo "Licencia" de Hugging Face, que aparece como "no disponible". El modelo base Qwen2.5-Coder-1.5B-Instruct está bajo Apache 2.0, lo que permite uso comercial, pero el adaptador se publica bajo MIT según el autor.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ahmad170412/Doom-V1
+- Hugging Face: https://huggingface.co/Ahmad170412/Doom-V1
 - Repositorio del CLI: https://github.com/Ahmad170412/DoomCLI
 - Perfil de GitHub del autor: https://github.com/Ahmad170412

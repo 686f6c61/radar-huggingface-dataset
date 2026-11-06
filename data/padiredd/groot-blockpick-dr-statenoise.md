@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| groot-blockpick-dr-statenoise | 3B (1,62B entrenables) | no disponible | Picking cenital de bloque con FFW SG2 | other | HuggingFace (padiredd) |
-| nvidia/GR00T-N1.7-3B | 3B | no disponible | VLA generalista de robotica | no disponible | HuggingFace (NVIDIA) |
-| padiredd/dp-blockpick-* | no disponible | no disponible | Picking de bloque (politicas de difusion) | no disponible | HuggingFace (padiredd) |
+| groot-blockpick-dr-statenoise | 3B (1,62B entrenables) | no disponible | Picking cenital de bloque con FFW SG2 | other | Hugging Face (padiredd) |
+| nvidia/GR00T-N1.7-3B | 3B | no disponible | VLA generalista de robotica | no disponible | Hugging Face (NVIDIA) |
+| padiredd/dp-blockpick-* | no disponible | no disponible | Picking de bloque (politicas de difusion) | no disponible | Hugging Face (padiredd) |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/groot-blockpick-dr-statenoise
+- Modelo en Hugging Face: https://huggingface.co/padiredd/groot-blockpick-dr-statenoise
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Fork de Isaac-GR00T usado: https://github.com/omkarpatil18/Isaac-GR00T-n1.7 (commit e81d02b)
 - Repositorio de politicas de difusion del autor: https://huggingface.co/padiredd/dp-blockpick- (referencia en la model card; URL exacta no disponible)

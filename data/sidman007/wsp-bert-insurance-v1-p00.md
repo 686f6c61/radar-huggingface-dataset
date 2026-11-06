@@ -69,17 +69,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sidman007/wsp-bert-insurance-v1-p00` | 109,5 M | no disponible (heredado de BERT base) | Clasificacion de 8 etiquetas de seguros en ingles | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| `google-bert/bert-base-uncased` | 110 M | 512 tokens | Modelo base enmascarado, sin cabeza de clasificacion de dominio | Apache 2.0 | HuggingFace, ampliamente usado |
-| `ProsusAI/finbert` | 110 M | 512 tokens | Clasificacion de sentimiento financiero (3 clases) | Apache 2.0 | HuggingFace, muy usado |
-| `nlpaueb/legal-bert-base-uncased` | 110 M | 512 tokens | Modelo base para dominio legal en ingles | Apache 2.0 | HuggingFace |
+| `sidman007/wsp-bert-insurance-v1-p00` | 109,5 M | no disponible (heredado de BERT base) | Clasificacion de 8 etiquetas de seguros en ingles | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| `google-bert/bert-base-uncased` | 110 M | 512 tokens | Modelo base enmascarado, sin cabeza de clasificacion de dominio | Apache 2.0 | Hugging Face, ampliamente usado |
+| `ProsusAI/finbert` | 110 M | 512 tokens | Clasificacion de sentimiento financiero (3 clases) | Apache 2.0 | Hugging Face, muy usado |
+| `nlpaueb/legal-bert-base-uncased` | 110 M | 512 tokens | Modelo base para dominio legal en ingles | Apache 2.0 | Hugging Face |
 
 La comparacion directa con clasificadores de seguros especificos no esta disponible en la informacion proporcionada. Frente a `bert-base-uncased`, la diferencia es la cabeza de clasificacion de 8 etiquetas y la edicion de pesos orientada al dominio; frente a `finbert` o `legal-bert`, el dominio objetivo (seguros) y el metodo de construccion (edicion de pesos sin backprop) son los elementos diferenciadores. No hay datos de rendimiento que permitan afirmar superioridad o inferioridad frente a estos modelos.
 
 ## Limitaciones y advertencias
 
 - No se han publicado metricas de evaluacion: se desconoce la exactitud real del clasificador y no hay evidencia cuantitativa de que supere a un baseline trivial o a un fine-tuning convencional.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la ficha, por lo que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la ficha, por lo que no ha sido validado por la comunidad.
 - El entrenamiento sin descenso de gradiente es experimental; la calidad de la clasificacion puede ser inferior a la de un fine-tuning supervisado con datos etiquetados.
 - Solo soporta ingles; no se ha evaluado su comportamiento en castellano ni en otros idiomas.
 - Riesgo de alucinacion no aplica en sentido generativo (no genera texto), pero si existe riesgo de clasificaciones erroneas en oraciones ambiguas o fuera de dominio.
@@ -90,7 +90,7 @@ La comparacion directa con clasificadores de seguros especificos no esta disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sidman007/wsp-bert-insurance-v1-p00
+- Hugging Face: https://huggingface.co/sidman007/wsp-bert-insurance-v1-p00
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Repositorio del proyecto (referenciado en la model card como "project README"): no disponible como URL directa en la informacion proporcionada
 - Paper o blog del metodo *weight-space-programming*: no disponible en la informacion proporcionada

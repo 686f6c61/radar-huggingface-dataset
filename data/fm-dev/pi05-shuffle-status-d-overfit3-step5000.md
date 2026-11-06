@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fm-dev/pi05-shuffle-status-d-overfit3-step5000` | Checkpoint objeto de esta ficha | no disponible | 32 fotogramas de historial, 528 tokens visuales, contexto causal de 48 pasos | no disponible | HuggingFace, repo de 5,8 GB |
-| `physical-intelligence/pi05_base` | Modelo base sobre el que se construye | no disponible | no disponible | no disponible | HuggingFace |
+| `fm-dev/pi05-shuffle-status-d-overfit3-step5000` | Checkpoint objeto de esta ficha | no disponible | 32 fotogramas de historial, 528 tokens visuales, contexto causal de 48 pasos | no disponible | Hugging Face, repo de 5,8 GB |
+| `physical-intelligence/pi05_base` | Modelo base sobre el que se construye | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos comparables de robótica VLA en la informacion proporcionada, ni de datos de rendimiento que permitan una comparación cuantitativa con el modelo base.
@@ -86,7 +86,7 @@ No se dispone de información sobre otros modelos comparables de robótica VLA e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fm-dev/pi05-shuffle-status-d-overfit3-step5000
+- Modelo en Hugging Face: https://huggingface.co/fm-dev/pi05-shuffle-status-d-overfit3-step5000
 - Modelo base: https://huggingface.co/physical-intelligence/pi05_base
 - Descarga directa: `hf download fm-dev/pi05-shuffle-status-d-overfit3-step5000 --local-dir ./shuffle-status-d-step5000`
 - Revision del codigo fuente incluida: `4449f2c621e88d9a1b54f25c950d007708399caa`

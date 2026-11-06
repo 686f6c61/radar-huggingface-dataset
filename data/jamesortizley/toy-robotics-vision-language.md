@@ -65,7 +65,7 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jamesortizley/toy-robotics-vision-language
+- Repositorio en Hugging Face: https://huggingface.co/jamesortizley/toy-robotics-vision-language
 - Survey de VLA para robotica: https://vla-survey.github.io/
 - Articulo sobre VLA y LeRobot: https://learnopencv.com/vision-language-action-models-lerobot-policy/
 - Survey de datasets y evaluacion en VLA: https://arxiv.org/abs/2604.23001

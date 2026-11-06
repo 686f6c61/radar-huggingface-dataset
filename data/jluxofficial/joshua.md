@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Joshua es un repositorio de modelo publicado en HuggingFace por el usuario jluxofficial bajo el identificador jluxofficial/Joshua. En el momento de la consulta, la informacion publica asociada es minima: la model card unicamente contiene el campo de licencia (openrail) y no incluye descripcion, documentacion tecnica, ejemplos de uso ni ficha de entrenamiento. No se especifica pipeline, idiomas soportados, arquitectura ni formato de pesos.
+Joshua es un repositorio de modelo publicado en Hugging Face por el usuario jluxofficial bajo el identificador jluxofficial/Joshua. En el momento de la consulta, la informacion publica asociada es minima: la model card unicamente contiene el campo de licencia (openrail) y no incluye descripcion, documentacion tecnica, ejemplos de uso ni ficha de entrenamiento. No se especifica pipeline, idiomas soportados, arquitectura ni formato de pesos.
 
 El repositorio registra 0 descargas y 0 likes, fue creado el 15 de septiembre de 2026 y actualizado en la misma fecha, por lo que no hay historial de versiones ni de uso. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los unicos enlaces recuperados corresponden a paginas de reserva de un hotel en Ginebra, sin vinculacion alguna con el proyecto.
 
@@ -73,7 +73,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jluxofficial/Joshua | no disponible | no disponible | openrail | repositorio HuggingFace, 0 descargas |
+| jluxofficial/Joshua | no disponible | no disponible | openrail | repositorio Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jluxofficial/Joshua
+- Hugging Face: https://huggingface.co/jluxofficial/Joshua
 - Model card: sin contenido tecnico; unicamente el campo de licencia openrail.
 - Papers, blogs, repositorios o demos: no disponible.
 - Resultados de busqueda web: los enlaces recuperados (all.accor.com, booking.com, novotelgenevecentre.hotelgeneva.info) corresponden a un hotel en Ginebra y no guardan relacion con el modelo; se descartan como fuentes.

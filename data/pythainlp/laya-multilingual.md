@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Laya Multilingual es un modelo de decisión no autorregresivo del tipo "System 1", desarrollado en el marco de la familia Laya y publicado en HuggingFace bajo el identificador `pythainlp/laya-multilingual` (la model card referencia el repositorio `convaiinnovations/laya-multilingual`). En lugar de generar texto, recibe un estado de entrada (texto, correo, tique o JSON) junto con preguntas tipadas y devuelve respuestas tipadas con probabilidades en un único forward pass. Al no producir texto libre, no hay nada que parsear ni margen para alucinación de contenido generado.
+Laya Multilingual es un modelo de decisión no autorregresivo del tipo "System 1", desarrollado en el marco de la familia Laya y publicado en Hugging Face bajo el identificador `pythainlp/laya-multilingual` (la model card referencia el repositorio `convaiinnovations/laya-multilingual`). En lugar de generar texto, recibe un estado de entrada (texto, correo, tique o JSON) junto con preguntas tipadas y devuelve respuestas tipadas con probabilidades en un único forward pass. Al no producir texto libre, no hay nada que parsear ni margen para alucinación de contenido generado.
 
 El modelo emplea un encoder mmBERT-base con 321.908.998 parámetros (322M segun la model card), una ventana de contexto por defecto de 1.024 tokens ampliable hasta 8.192, y cobertura de más de 100 idiomas. Está pensado para sustituir al checkpoint en inglés de la familia en cualquier carga de trabajo no inglesa: sobre las 51 lenguas de MASSIVE eleva la precisión macro de 0,227 a 0,366 y reduce el ECE macro de 0,733 a 0,387, pasando de 23 a 45 lenguas que superan el triple del azar.
 
@@ -84,7 +84,7 @@ Documentos largos: 16 a 18 de 20 peticiones respondidas correctamente con hasta 
 - VRAM estimada para inferencia (valores orientativos, no confirmados en la model card): en bf16/fp16, alrededor de 0,7-0,9 GB (el repositorio pesa 0,7 GB); en fp32, alrededor de 1,3-1,5 GB; en int8, aproximadamente 0,4 GB. Estas cifras son estimaciones basadas en los 321,9M de parámetros y deben verificarse en el despliegue real.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM libre sirve para el modelo en precisión completa; GPU profesionales como A100, H100 o L40S no son necesarias para la inferencia básica, aunque pueden emplearse para servir múltiples réplicas o grandes lotes.
 - Cabe en GPU de consumo: sí, en modelos como RTX 3060, RTX 4060, RTX 4090 o inferiores: con 322M de parámetros el modelo es holgadamente ejecutable en cualquier GPU consumer moderna e incluso en CPU.
-- Opciones de despliegue: la model card documenta el uso mediante la librería `laya` (`pip install laya` y `laya.load(...)`). No se mencionan explícitamente vLLM, llama.cpp, Ollama o TGI. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: la model card documenta el uso mediante la librería `laya` (`pip install laya` y `laya.load(...)`). No se mencionan explícitamente vLLM, llama.cpp, Ollama o TGI. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput: una entrada de 4.000 tokens tarda aproximadamente 1,7 s en una GPU de Apple; el modelo es cerca del doble de rápido que el checkpoint inglés (`laya`). Entradas cortas no se ven afectadas por el límite de `max_len` y su velocidad depende de la longitud real de la entrada.
 - Nota de despliegue: si `laya.load()` se cuelga, ejecutar con `USE_TF=0`, ya que la sonda de TensorFlow de `transformers` puede provocar un deadlock en la construcción del modelo.
 
@@ -113,7 +113,7 @@ Comparado con el checkpoint inglés, `laya-multilingual` tiene menos parámetros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pythainlp/laya-multilingual
+- Modelo en Hugging Face: https://huggingface.co/pythainlp/laya-multilingual
 - Repositorio de la familia Laya: https://huggingface.co/convaiinnovations/laya
 - Checkpoint inglés: https://huggingface.co/convaiinnovations/laya
 - Checkpoint de decisiones tipadas: https://huggingface.co/convaiinnovations/laya-typed-decisions

@@ -6,7 +6,7 @@ EmbeddingGemma Multimodal JEV — Indic es un modelo de decisión tipada desarro
 
 El modelo tiene aproximadamente 746 millones de parámetros (3,0 GB en fp32) y una ventana de contexto de hasta 2.048 tokens por secuencia. Soporta tres modalidades: texto (inglés e idiomas indios), imagen (una por estado, hasta 280 tokens de imagen) y voz (un clip de 16 kHz mono float32 de hasta 11,2 s). Su relevancia actual radica en que unifica múltiples tareas de clasificación y decisión bajo una misma interfaz tipada y un único conjunto de pesos, con cobertura explícita de 22 idiomas indios en audio y 11 en imagen.
 
-La licencia es propietaria y restringida a investigación (egjev-mixed-research), lo que limita su uso comercial. El modelo se publicó en octubre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni likes en HuggingFace.
+La licencia es propietaria y restringida a investigación (egjev-mixed-research), lo que limita su uso comercial. El modelo se publicó en octubre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni likes en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -91,8 +91,8 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 | Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EmbeddingGemma Multimodal JEV — Indic | 746 M | 2.048 tokens | Texto, imagen, audio | egjev-mixed-research (investigación) | HuggingFace |
-| google/embeddinggemma-2 (modelo base) | no disponible | no disponible | Texto, imagen, audio (torres del base) | no disponible | HuggingFace |
+| EmbeddingGemma Multimodal JEV — Indic | 746 M | 2.048 tokens | Texto, imagen, audio | egjev-mixed-research (investigación) | Hugging Face |
+| google/embeddinggemma-2 (modelo base) | no disponible | no disponible | Texto, imagen, audio (torres del base) | no disponible | Hugging Face |
 | Alternativas de clasificación zero-shot | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -109,5 +109,5 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sulabhkatiyar/embedding-gemma-multimodal-jev-indic
+- Modelo en Hugging Face: https://huggingface.co/sulabhkatiyar/embedding-gemma-multimodal-jev-indic
 - Modelo base: https://huggingface.co/google/embeddinggemma-2

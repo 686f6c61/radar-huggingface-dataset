@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_student_DataEnvGym_alpaca_llama8b_5000` es un checkpoint de generación de texto de aproximadamente 8.030 millones de parámetros, publicado en HuggingFace por el usuario `ishikaa` bajo la librería `transformers`. Por el identificador del repositorio se deduce que se trata de un modelo derivado de una familia Llama de 8B, ajustado sobre un corpus tipo Alpaca en el contexto de un experimento de adquisición de datos denominado DataEnvGym. Sin embargo, la model card publicada es la plantilla automática de HuggingFace y no contiene ninguna descripción funcional, por lo que la mayor parte de los detalles técnicos no están documentados por el autor.
+El modelo `ishikaa/acquisition_student_DataEnvGym_alpaca_llama8b_5000` es un checkpoint de generación de texto de aproximadamente 8.030 millones de parámetros, publicado en Hugging Face por el usuario `ishikaa` bajo la librería `transformers`. Por el identificador del repositorio se deduce que se trata de un modelo derivado de una familia Llama de 8B, ajustado sobre un corpus tipo Alpaca en el contexto de un experimento de adquisición de datos denominado DataEnvGym. Sin embargo, la model card publicada es la plantilla automática de Hugging Face y no contiene ninguna descripción funcional, por lo que la mayor parte de los detalles técnicos no están documentados por el autor.
 
 Se trata, por tanto, de un artefacto de investigación más que de un modelo listo para producción. No se declara licencia, no se especifican idiomas soportados, no se documenta la longitud de contexto ni el procedimiento de entrenamiento, y no se han publicado resultados de evaluación. El repositorio ocupa 16,1 GB, un tamano coherente con pesos almacenados en precisión de 16 bits (bf16/fp16) sin cuantizar.
 
@@ -64,7 +64,7 @@ No hay datos de rendimiento de este modelo, por lo que la comparacion se limita 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `ishikaa/acquisition_student_DataEnvGym_alpaca_llama8b_5000` | 8,03 B | no disponible | no disponible | safetensors en HuggingFace, 0 descargas |
+| `ishikaa/acquisition_student_DataEnvGym_alpaca_llama8b_5000` | 8,03 B | no disponible | no disponible | safetensors en Hugging Face, 0 descargas |
 | Llama 3.1 8B Instruct | 8,03 B | 128 000 tokens | Llama 3.1 Community License | safetensors y GGUF, ampliamente distribuido |
 | Qwen2.5 7B Instruct | 7,62 B | 128 000 tokens | Apache 2.0 (segun modelo) | safetensors y GGUF |
 | Mistral 7B Instruct v0.3 | 7,24 B | 32 000 tokens | Apache 2.0 | safetensors y GGUF |
@@ -85,8 +85,8 @@ Rendimiento comparado: no disponible. No se puede situar este checkpoint frente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_DataEnvGym_alpaca_llama8b_5000
-- Perfil del autor en HuggingFace: https://huggingface.co/ishikaa
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_DataEnvGym_alpaca_llama8b_5000
+- Perfil del autor en Hugging Face: https://huggingface.co/ishikaa
 - Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact
 - Referencia citada en los tags del repositorio (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Paper, repositorio de codigo, demo y dataset de entrenamiento: no disponibles en la informacion proporcionada.

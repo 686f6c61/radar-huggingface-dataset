@@ -92,6 +92,6 @@ La comparación más directa es con el propio modelo base sin adaptar y con los 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-gptoss120b-obfg1
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-gptoss120b-obfg1
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Código de entrenamiento, configuración y evaluaciones: https://github.com/johntrob14/tricky_little_guys (directorios `cot-control/rl/` y `cot-control/results/rl/obfg1/`, con `config.json`, `checkpoints.json` y diario en `runs/`)

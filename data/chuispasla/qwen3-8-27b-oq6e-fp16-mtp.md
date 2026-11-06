@@ -68,5 +68,5 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [HuggingFace - chuispasla/Qwen3.8-27B-oQ6e-fp16-mtp](https://huggingface.co/chuispasla/Qwen3.8-27B-oQ6e-fp16-mtp)
+- [Hugging Face - chuispasla/Qwen3.8-27B-oQ6e-fp16-mtp](https://huggingface.co/chuispasla/Qwen3.8-27B-oQ6e-fp16-mtp)
 - [Repositorio oQ (oMLX)](https://github.com/jundot/omlx)

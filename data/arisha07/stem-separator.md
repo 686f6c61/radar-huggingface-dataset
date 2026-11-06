@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arisha07/stem-separator` es un repositorio alojado en HuggingFace bajo el identificador de autor `arisha07`. La informacion publica disponible se limita a la licencia (MIT), la region de publicacion (US) y las fechas de creacion y actualizacion; no se ha publicado model card descriptiva, arquitectura, tamano, idiomas ni pipeline de inferencia. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+`arisha07/stem-separator` es un repositorio alojado en Hugging Face bajo el identificador de autor `arisha07`. La informacion publica disponible se limita a la licencia (MIT), la region de publicacion (US) y las fechas de creacion y actualizacion; no se ha publicado model card descriptiva, arquitectura, tamano, idiomas ni pipeline de inferencia. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
 El nombre del repositorio, "stem-separator", sugiere por convencion de nomenclatura que el artefacto podria estar orientado a la separacion de pistas o componentes de una mezcla de audio (por ejemplo, separar voces, bateria, bajo y otros instrumentos). Esta interpretacion es una inferencia basada unicamente en el nombre y no esta confirmada por ninguna documentacion tecnica del autor, por lo que no debe tomarse como una caracteristica verificada del modelo.
 
@@ -112,7 +112,7 @@ No disponible. No es posible establecer una comparativa porque no se ha confirma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arisha07/stem-separator
+- Hugging Face: https://huggingface.co/arisha07/stem-separator
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

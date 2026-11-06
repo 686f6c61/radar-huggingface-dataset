@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fa-llamafactory-qwen25-7b-finetome-saves (este repo) | ~7,6B (base) | No especificado en la model card | LoRA SFT + modelo fusionado sobre Qwen2.5-7B-Instruct | No disponible | HuggingFace, 0 descargas |
-| Qwen2.5-7B-Instruct (base) | ~7,6B | 32.768 nativos, 131.072 con YaRN | Transformer decoder-only instruct | Qwen (licencia propia de Qwen) | HuggingFace, ampliamente usado |
-| Qwen2.5-7B (pretrained) | ~7,6B | Igual que el instruct | Transformer decoder-only base | Qwen | HuggingFace |
-| Otros adaptadores LoRA sobre Qwen2.5-7B con FineTome-100k | ~7,6B | Depende del base | LoRA SFT | Variable segun autor | HuggingFace |
+| fa-llamafactory-qwen25-7b-finetome-saves (este repo) | ~7,6B (base) | No especificado en la model card | LoRA SFT + modelo fusionado sobre Qwen2.5-7B-Instruct | No disponible | Hugging Face, 0 descargas |
+| Qwen2.5-7B-Instruct (base) | ~7,6B | 32.768 nativos, 131.072 con YaRN | Transformer decoder-only instruct | Qwen (licencia propia de Qwen) | Hugging Face, ampliamente usado |
+| Qwen2.5-7B (pretrained) | ~7,6B | Igual que el instruct | Transformer decoder-only base | Qwen | Hugging Face |
+| Otros adaptadores LoRA sobre Qwen2.5-7B con FineTome-100k | ~7,6B | Depende del base | LoRA SFT | Variable segun autor | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos, por lo que la comparacion se limita a parametros, contexto y licencia.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos, por lo que la comparacion se
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/davidwdw/fa-llamafactory-qwen25-7b-finetome-saves-de822650e1f4
+- Repositorio del modelo en Hugging Face: https://huggingface.co/davidwdw/fa-llamafactory-qwen25-7b-finetome-saves-de822650e1f4
 - Coleccion Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
 - Modelo base Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B
 - Guia de fine-tuning de Qwen2.5 con LLaMA-Factory (DeepWiki): https://deepwiki.com/QwenLM/Qwen2.5/4.3-fine-tuning-with-llama-factory

@@ -71,7 +71,7 @@ La model card remite al blog y al informe tecnico para benchmarks adicionales de
 
 | Modelo | Parametros totales / activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Mistral Large 4 | ~1T / ~52B | 1M | Mistral Ecosystem Open-Weight License (tipo MIT modificada) | Pesos abiertos en HuggingFace; API Mistral |
+| Mistral Large 4 | ~1T / ~52B | 1M | Mistral Ecosystem Open-Weight License (tipo MIT modificada) | Pesos abiertos en Hugging Face; API Mistral |
 | GLM-5.3 | no disponible en la informacion proporcionada | no disponible | no disponible | Pesos abiertos (referenciado como lider abierto en coding) |
 | Modelos abiertos lideres de China (sin especificar) | no disponible | no disponible | no disponible | Pesos abiertos |
 
@@ -90,7 +90,7 @@ En el Coding Agent Index de Artificial Analysis, Mistral Large 4 (48%) queda pra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DronE900/collegihein
+- Modelo en Hugging Face: https://huggingface.co/DronE900/collegihein
 - Modelo original de referencia: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B
 - Checkpoint NVFP4: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4
 - Blog de Mistral: https://mistral.ai/news/mistral-large-4-oss/

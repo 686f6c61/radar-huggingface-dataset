@@ -67,7 +67,7 @@ No se dispone de información comparativa con otros modelos de la misma categor�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-c2-p6
+- Modelo en Hugging Face: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-c2-p6
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - ModelScope de Qwen3.5-9B: https://www.modelscope.cn/models/Qwen/Qwen3.5-9B
 - Organización Qwen en GitHub: https://github.com/QwenLM

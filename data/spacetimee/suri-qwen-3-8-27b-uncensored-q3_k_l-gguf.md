@@ -22,7 +22,7 @@ Su relevancia es fundamentalmente practica: permite ejecutar un modelo de ~27B e
 | Formato de pesos | GGUF (llama.cpp) |
 | Tamano del repositorio | 14,3 GB |
 | Modelo base | SpaceTimee/Suri-Qwen-3.8-27B-Uncensored |
-| Fecha de publicacion | 23 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 23 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -95,7 +95,7 @@ No se han encontrado comparativas con otros modelos de la misma categoria en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored-Q3_K_L-GGUF
+- Modelo en Hugging Face: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored-Q3_K_L-GGUF
 - Modelo base: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NedoTranslator es un modelo de traduccion automatica ingles-turco (en→tr) publicado en HuggingFace por el desarrollador nmsofficial (Nedim Mutlu). Se trata de un ajuste fino del modelo Helsinki-NLP/opus-mt-tc-big-en-tr, revisión base e539fc16a8a1a0ea5950eb339b595bfcce990e90, sobre la arquitectura MarianMT (transformer encoder-decoder para traduccion neuronal). El repositorio contiene únicamente los activos de inferencia estándar de Transformers, con pesos en safetensors y un tamaño aproximado de 0,9 GB.
+NedoTranslator es un modelo de traduccion automatica ingles-turco (en→tr) publicado en Hugging Face por el desarrollador nmsofficial (Nedim Mutlu). Se trata de un ajuste fino del modelo Helsinki-NLP/opus-mt-tc-big-en-tr, revisión base e539fc16a8a1a0ea5950eb339b595bfcce990e90, sobre la arquitectura MarianMT (transformer encoder-decoder para traduccion neuronal). El repositorio contiene únicamente los activos de inferencia estándar de Transformers, con pesos en safetensors y un tamaño aproximado de 0,9 GB.
 
 El modelo resuelve una tarea concreta y acotada: traducir texto de inglés a turco. No es un modelo de propósito general ni un modelo de razonamiento; es un sistema de traducción dedicado, con 234.843.876 parámetros según los safetensors publicados (la model card declara 236.883.968, una discrepancia de aproximadamente un 0,9 % que conviene tener en cuenta). Al derivar de la familia OPUS-MT de Helsinki-NLP, hereda su licencia CC BY 4.0 y su naturaleza ligera, lo que lo hace apto para despliegue en hardware modesto.
 
@@ -28,7 +28,7 @@ Su relevancia actual es limitada por su propia naturaleza: tiene 0 descargas y 0
 
 ## Arquitectura y entrenamiento
 
-NedoTranslator emplea MarianMT, la arquitectura de traduccion neuronal del toolkit Marian, materializada en HuggingFace como un transformer encoder-decoder estándar para generacion text2text. El checkpoint se distribuye en float32 y la model card recomienda beam search con num_beams=4 para reproducir los resultados de referencia. Se trata de la variante "big" de la linea OPUS-MT tc-big, con aproximadamente 235 millones de parametros, lo que la situa en el rango medio de los modelos de traduccion dedicados: bastante mas grande que los Marian pequeños (~77 M) y bastante mas pequeña que modelos multilingues como NLLB-200.
+NedoTranslator emplea MarianMT, la arquitectura de traduccion neuronal del toolkit Marian, materializada en Hugging Face como un transformer encoder-decoder estándar para generacion text2text. El checkpoint se distribuye en float32 y la model card recomienda beam search con num_beams=4 para reproducir los resultados de referencia. Se trata de la variante "big" de la linea OPUS-MT tc-big, con aproximadamente 235 millones de parametros, lo que la situa en el rango medio de los modelos de traduccion dedicados: bastante mas grande que los Marian pequeños (~77 M) y bastante mas pequeña que modelos multilingues como NLLB-200.
 
 El proceso de ajuste fino es opaco. La model card indica explicitamente que el bundle subido "excluye rutas especificas del cluster, manifiestos de entrenamiento y artefactos de benchmark locales", de modo que no se publican ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Tampoco se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atención lineal, destilacion). Todo lo que se sabe del entrenamiento es que parte del checkpoint base indicado y que corresponde a una version de produccion denominada internamente "NedoTranslator production v1", usada en ejecuciones de benchmark en→tr de septiembre de 2026 cuyos resultados no se han liberado. En la busqueda web aparece un dataset asociado, nmsofficial/NedoTranslator-Turkish-Safety-SFT, cuyo contenido y relacion exacta con este checkpoint no se detallan en la informacion disponible.
 
@@ -37,7 +37,7 @@ El proceso de ajuste fino es opaco. La model card indica explicitamente que el b
 - Traduccion de texto de ingles a turco, con generacion secuencial mediante beam search (num_beams=4 recomendado).
 - Generacion text2text pura: no produce texto libre ni mantiene conversaciones, unicamente traducciones condicionadas a una entrada.
 - Procesamiento por lotes mediante el pipeline de Transformers, apto para traducir volumenes grandes de frases o parrafos independientes.
-- Compatibilidad declarada con HuggingFace Inference Endpoints (etiqueta endpoints_compatible en el repositorio).
+- Compatibilidad declarada con Hugging Face Inference Endpoints (etiqueta endpoints_compatible en el repositorio).
 - No se documenta soporte de tool calling ni de function calling.
 - No se documenta soporte de agentes ni de razonamiento multi-paso.
 - No se documenta modo "thinking", capacidades de vision, audio, OCR ni voz.
@@ -57,7 +57,7 @@ El proceso de ajuste fino es opaco. La model card indica explicitamente que el b
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona que este checkpoint corresponde a las ejecuciones de benchmark en→tr de septiembre de 2026, pero indica de forma explicita que los artefactos de benchmark locales quedaron excluidos del bundle subido a HuggingFace. No hay cifras de BLEU, chrF, COMET, MMLU ni de ningun otro conjunto que puedan citarse o compararse con alternativas.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona que este checkpoint corresponde a las ejecuciones de benchmark en→tr de septiembre de 2026, pero indica de forma explicita que los artefactos de benchmark locales quedaron excluidos del bundle subido a Hugging Face. No hay cifras de BLEU, chrF, COMET, MMLU ni de ningun otro conjunto que puedan citarse o compararse con alternativas.
 
 ## Requisitos de hardware
 
@@ -67,7 +67,7 @@ Estimaciones derivadas del recuento de parametros publicado en safetensors (234.
 - VRAM estimada para inferencia, incluyendo activaciones y overhead del runtime: del orden de 1,5-2 GB en float32, 1-1,5 GB en fp16 y menos de 1 GB en int8.
 - Cabe holgadamente en cualquier GPU de consumo con 4 GB o mas de VRAM: GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090, asi como en GPUs de datacenter (A100, H100) donde quedaria infrautilizada.
 - Es viable la inferencia solo en CPU para cargas moderadas; tambien es ejecutable en Apple Silicon mediante el backend MPS de PyTorch.
-- Opciones de despliegue confirmadas o plausibles: Transformers con PyTorch (ruta documentada por el autor), HuggingFace Inference Endpoints (etiqueta endpoints_compatible), CTranslate2 (soporta la arquitectura Marian, aunque no se ha verificado para este checkpoint concreto), exportacion a ONNX Runtime, y conversion a GGUF para llama.cpp u Ollama, conversion que no se proporciona en el repositorio. La compatibilidad con vLLM o TGI no esta confirmada en la informacion disponible.
+- Opciones de despliegue confirmadas o plausibles: Transformers con PyTorch (ruta documentada por el autor), Hugging Face Inference Endpoints (etiqueta endpoints_compatible), CTranslate2 (soporta la arquitectura Marian, aunque no se ha verificado para este checkpoint concreto), exportacion a ONNX Runtime, y conversion a GGUF para llama.cpp u Ollama, conversion que no se proporciona en el repositorio. La compatibilidad con vLLM o TGI no esta confirmada en la informacion disponible.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia por frase.
 
 ## Comparativa con modelos similares
@@ -97,10 +97,10 @@ La comparacion relevante es contra el modelo base del que deriva: sin resultados
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nmsofficial/NedoTranslator
+- Modelo en Hugging Face: https://huggingface.co/nmsofficial/NedoTranslator
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-en-tr
 - Dataset asociado hallado en la busqueda: https://huggingface.co/datasets/nmsofficial/NedoTranslator-Turkish-Safety-SFT
-- Perfil del autor en HuggingFace: https://huggingface.co/nmsofficial
+- Perfil del autor en Hugging Face: https://huggingface.co/nmsofficial
 - Perfil del autor en GitHub: https://github.com/NMSOfficial/NMSOfficial
 - Repositorio NMSTranslator en GitHub: https://github.com/NMSOfficial/NMSTranslator
 - Contexto de mercado sobre traduccion con modelos generativos (Google Translate y Gemini): https://blog.google/products-and-platforms/products/search/gemini-capabilities-translation-upgrades/

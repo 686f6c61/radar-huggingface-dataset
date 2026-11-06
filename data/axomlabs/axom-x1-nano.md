@@ -76,7 +76,7 @@ La comparacion solo puede ser estructural: no existen datos de rendimiento del m
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicos | Disponibilidad |
 |---|---|---|---|---|---|
 | AxomLabs/axom-x1-nano | ~48,3 M | no disponible | no disponible | no disponibles | GGUF; 21 descargas, 0 likes |
-| SmolLM2-135M-Instruct (HuggingFace) | ~135 M | 8.192 tokens | Apache-2.0 | publicados por el autor | ampliamente desplegado en llama.cpp, Ollama y transformers |
+| SmolLM2-135M-Instruct (Hugging Face) | ~135 M | 8.192 tokens | Apache-2.0 | publicados por el autor | ampliamente desplegado en llama.cpp, Ollama y transformers |
 | Qwen2.5-0.5B-Instruct (Alibaba) | ~494 M | 32.768 tokens | Apache-2.0 | publicados por el autor | ampliamente desplegado, con soporte en vLLM, llama.cpp y TGI |
 | TinyLlama-1.1B-Chat (TinyLlama) | ~1,1 B | 2.048 tokens | Apache-2.0 | publicados por el autor | ampliamente desplegado en el ecosistema GGUF |
 

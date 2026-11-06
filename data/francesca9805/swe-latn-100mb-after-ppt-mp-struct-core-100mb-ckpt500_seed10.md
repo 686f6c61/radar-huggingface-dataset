@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo | 124,77 M | no disponible | no disponible | HuggingFace |
-| GPT-2 (small) | 124 M | 1024 tokens (especificacion publica de la familia) | MIT | HuggingFace |
-| DistilGPT-2 | 82 M | 1024 tokens (especificacion publica de la familia) | Apache-2.0 | HuggingFace |
-| francesca9805/eng-latn-100mb-ppt-mp-struct-100mb_seed10 | ~124,8 M | no disponible | no disponible | HuggingFace |
+| Este modelo | 124,77 M | no disponible | no disponible | Hugging Face |
+| GPT-2 (small) | 124 M | 1024 tokens (especificacion publica de la familia) | MIT | Hugging Face |
+| DistilGPT-2 | 82 M | 1024 tokens (especificacion publica de la familia) | Apache-2.0 | Hugging Face |
+| francesca9805/eng-latn-100mb-ppt-mp-struct-100mb_seed10 | ~124,8 M | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este modelo, por lo que la comparacion se limita a parametros, contexto y licencia.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo para este modelo, por lo que l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swe-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swe-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/swe-latn-100mb-ppt-mp-struct-core-100mb_seed10
 - Ejecucion de Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/3i4s6kx1
 - Repositorio TRL: https://github.com/huggingface/trl

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_both-epoch01` | 6,74B | no disponible | Unlearning TOFU (epoca 1/20) | llama2 | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_llama2-7b` | 6,74B | 4096 (Llama 2) | Fine-tuning TOFU sin olvido (modelo base) | llama2 | HuggingFace |
-| `NousResearch/Llama-2-7b-chat-hf` | 6,74B | 4096 | Chat generalista | llama2 | HuggingFace |
-| `meta-llama/Llama-2-7b-hf` | 6,74B | 4096 | Modelo base original | llama2 | HuggingFace |
+| `g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_both-epoch01` | 6,74B | no disponible | Unlearning TOFU (epoca 1/20) | llama2 | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_llama2-7b` | 6,74B | 4096 (Llama 2) | Fine-tuning TOFU sin olvido (modelo base) | llama2 | Hugging Face |
+| `NousResearch/Llama-2-7b-chat-hf` | 6,74B | 4096 | Chat generalista | llama2 | Hugging Face |
+| `meta-llama/Llama-2-7b-hf` | 6,74B | 4096 | Modelo base original | llama2 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_both-epoch01
+- Modelo en Hugging Face: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_both-epoch01
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de referencia para el reset de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Benchmark TOFU (paper): https://arxiv.org/abs/2401.06121

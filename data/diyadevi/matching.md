@@ -78,5 +78,5 @@ No disponible. No se han proporcionado datos de benchmarks ni de rendimiento que
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/diyadevi/matching
+- Hugging Face: https://huggingface.co/diyadevi/matching
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion disponible.

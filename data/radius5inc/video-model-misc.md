@@ -23,7 +23,7 @@ La ficha siguiente describe, por tanto, el contenido agregado y sus implicacione
 
 ## Arquitectura y entrenamiento
 
-El repositorio no entrena ni modifica ningun modelo. Su contenido se organiza en ocho grupos de ficheros, cada uno copiado desde un repositorio de HuggingFace con una revision concreta y verificado por sha256. El nucleo es MiniMax-H3, un modelo de difusion para generacion de video (variante `fl2va`, es decir, first-last frame to video with audio, segun la nomenclatura del fichero), distribuido en formato pruned int8 con convolucion rotada para reducir huella de memoria. Le acompanan un VAE de video en fp16, un text encoder Qwen3-VL-32B cuantizado en nvfp4 con AWQ, un VAE de un solo frame, un upscaler latente 3D en bf16 y tres LoRAs: una turbo de 4 pasos a 768p para ComfyUI en bf16, y una delta LoRA experimental de rango 512 que transforma la variante `fl2va` hacia `ref2va` (referencia a video con audio).
+El repositorio no entrena ni modifica ningun modelo. Su contenido se organiza en ocho grupos de ficheros, cada uno copiado desde un repositorio de Hugging Face con una revision concreta y verificado por sha256. El nucleo es MiniMax-H3, un modelo de difusion para generacion de video (variante `fl2va`, es decir, first-last frame to video with audio, segun la nomenclatura del fichero), distribuido en formato pruned int8 con convolucion rotada para reducir huella de memoria. Le acompanan un VAE de video en fp16, un text encoder Qwen3-VL-32B cuantizado en nvfp4 con AWQ, un VAE de un solo frame, un upscaler latente 3D en bf16 y tres LoRAs: una turbo de 4 pasos a 768p para ComfyUI en bf16, y una delta LoRA experimental de rango 512 que transforma la variante `fl2va` hacia `ref2va` (referencia a video con audio).
 
 El unico componente con arquitectura documentada de forma estandar es Qwen3-VL-4B-Instruct, un modelo de vision-lenguaje de la familia Qwen3-VL, incluido como subcarpeta `vlm/Qwen/Qwen3-VL-4B-Instruct/`. No hay informacion sobre volumen de tokens de entrenamiento, composicion del dataset, ni tecnicas de alineacion (RLHF/DPO) para ninguno de los componentes, ya que esa informacion corresponderia a las model cards originales, no a este repositorio.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| radius5inc/video-model-misc | no disponible (63,7 GB agregados) | no disponible | other (por fichero) | HuggingFace, 0 descargas | Agregador de pesos de terceros, sin model card tecnica |
-| Comfy-Org/MiniMax-H3 | no disponible | no disponible | no disponible | HuggingFace | Repositorio de origen de los componentes principales de difusion, text encoder y VAE |
-| lightx2v/Minimax-h3-Turbo | no disponible | no disponible | no disponible | HuggingFace | Origen de la LoRA turbo de 4 pasos a 768p |
-| Qwen/Qwen3-VL-4B-Instruct | 4B (aproximado por denominacion) | no disponible | no disponible | HuggingFace | VLM incluido como subcarpeta; su model card original contiene las especificaciones completas |
+| radius5inc/video-model-misc | no disponible (63,7 GB agregados) | no disponible | other (por fichero) | Hugging Face, 0 descargas | Agregador de pesos de terceros, sin model card tecnica |
+| Comfy-Org/MiniMax-H3 | no disponible | no disponible | no disponible | Hugging Face | Repositorio de origen de los componentes principales de difusion, text encoder y VAE |
+| lightx2v/Minimax-h3-Turbo | no disponible | no disponible | no disponible | Hugging Face | Origen de la LoRA turbo de 4 pasos a 768p |
+| Qwen/Qwen3-VL-4B-Instruct | 4B (aproximado por denominacion) | no disponible | no disponible | Hugging Face | VLM incluido como subcarpeta; su model card original contiene las especificaciones completas |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/radius5inc/video-model-misc
+- Repositorio en Hugging Face: https://huggingface.co/radius5inc/video-model-misc
 - Origen de difusion, text encoder y VAE: https://huggingface.co/Comfy-Org/MiniMax-H3
 - Origen de la LoRA turbo: https://huggingface.co/lightx2v/Minimax-h3-Turbo
 - Origen del upscaler latente: https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler

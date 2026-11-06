@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen2 es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en HuggingFace. Se trata de un experimento de alineacion politica entrenado con Unsloth y la libreria TRL de HuggingFace, tecnicas que permiten reducir el coste computacional del entrenamiento hasta 2 veces respecto a un pipeline convencional. El nombre del repositorio sugiere un entrenamiento orientado a modificar el comportamiento del modelo ante consignas politicas de izquierda, con hiperparametros de LoRA (rango 8, contexto 128) y un prefijo "gen2" que indica una segunda iteracion del experimento.
+HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen2 es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en Hugging Face. Se trata de un experimento de alineacion politica entrenado con Unsloth y la libreria TRL de Hugging Face, tecnicas que permiten reducir el coste computacional del entrenamiento hasta 2 veces respecto a un pipeline convencional. El nombre del repositorio sugiere un entrenamiento orientado a modificar el comportamiento del modelo ante consignas politicas de izquierda, con hiperparametros de LoRA (rango 8, contexto 128) y un prefijo "gen2" que indica una segunda iteracion del experimento.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5-7B-Instruct, con aproximadamente 7.600 millones de parametros y una ventana de contexto nativa de 32.768 tokens (extensible a 131.072 mediante configuracion). Al estar basado en la version Instruct, conserva las capacidades de instruccion, razonamiento y soporte multilingue del modelo original, aunque la model card solo declara ingles como idioma soportado y no aporta informacion sobre el dataset de ajuste ni sobre el proceso de alineacion aplicado.
 
@@ -45,7 +45,7 @@ La innovacion tecnica principal es el uso de Unsloth, que optimiza el entrenamie
 - Reproducibilidad de entrenamiento: sirve como referencia para replicar pipelines de Unsloth con hiperparametros concretos (r=8, ct=128, 10 epocas) en GPUs de consumo.
 - Analisis de degradacion por sobreentrenamiento: con 10 epocas y contexto de 128 tokens, el modelo es un caso de estudio sobre catastrophic forgetting y perdida de capacidades generales frente al modelo base.
 - Generacion de texto controlada en entornos de prueba: para validar pipelines de inferencia con transformers y text-generation-inference antes de desplegar modelos mas robustos.
-- Educacion y divulgacion: como ejemplo de como se construye y publica un fine-tuning en HuggingFace con licencia Apache 2.0, util en talleres de formacion.
+- Educacion y divulgacion: como ejemplo de como se construye y publica un fine-tuning en Hugging Face con licencia Apache 2.0, util en talleres de formacion.
 
 ## Benchmarks y rendimiento
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen2 | ~7,6B | 32.768 (heredado) | Apache 2.0 | HuggingFace, 0 descargas | Ajuste fino experimental sin benchmarks |
-| Qwen2.5-7B-Instruct (modelo base) | ~7,6B | 32.768 (128K extensible) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo oficial con benchmarks publicados |
-| Mistral-7B-Instruct-v0.3 | ~7,2B | 32.768 | Apache 2.0 | HuggingFace | Alternativa europea con buen rendimiento general |
-| Llama-3.1-8B-Instruct | ~8B | 131.072 | Llama 3.1 Community License | HuggingFace | Contexto largo, licencia con restricciones |
+| HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen2 | ~7,6B | 32.768 (heredado) | Apache 2.0 | Hugging Face, 0 descargas | Ajuste fino experimental sin benchmarks |
+| Qwen2.5-7B-Instruct (modelo base) | ~7,6B | 32.768 (128K extensible) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo oficial con benchmarks publicados |
+| Mistral-7B-Instruct-v0.3 | ~7,2B | 32.768 | Apache 2.0 | Hugging Face | Alternativa europea con buen rendimiento general |
+| Llama-3.1-8B-Instruct | ~8B | 131.072 | Llama 3.1 Community License | Hugging Face | Contexto largo, licencia con restricciones |
 
 ## Limitaciones y advertencias
 
@@ -83,9 +83,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen2
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen2
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Qwen2.5-7B-Instruct oficial: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentacion de Qwen2.5: https://qwen.readthedocs.io/

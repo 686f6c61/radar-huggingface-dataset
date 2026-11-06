@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`prem-ml/lunar_lander_v3` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `LunarLander-v3` de Gymnasium. Lo publica el usuario `prem-ml` en HuggingFace y se distribuye como un artefacto de Stable-Baselines3, la libreria de referencia para implementaciones de RL en PyTorch. No es un modelo de lenguaje: es una politica entrenada para controlar un modulo de aterrizaje lunar en un simulador fisico 2D.
+`prem-ml/lunar_lander_v3` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `LunarLander-v3` de Gymnasium. Lo publica el usuario `prem-ml` en Hugging Face y se distribuye como un artefacto de Stable-Baselines3, la libreria de referencia para implementaciones de RL en PyTorch. No es un modelo de lenguaje: es una politica entrenada para controlar un modulo de aterrizaje lunar en un simulador fisico 2D.
 
 El modelo resuelve una tarea de control continuo con observaciones de 8 dimensiones (posicion, velocidad, angulo, velocidad angular, contacto con las patas y estado del motor) y acciones discretas de 4 valores (no hacer nada, encender motor principal, encender motor izquierdo, encender motor derecho). El objetivo es aterrizar el modulo de forma segura entre dos banderas, minimizando el consumo de combustible y las velocidades de impacto.
 
@@ -68,7 +68,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `prem-ml/lunar_lander_v3` | PPO | LunarLander-v3 | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
+| `prem-ml/lunar_lander_v3` | PPO | LunarLander-v3 | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
 | Agentes PPO de referencia de Stable-Baselines3 RL Zoo | PPO | LunarLander-v3 | no disponible | no aplica | MIT (RL Zoo) | GitHub, pesos publicados |
 | Agentes DQN de referencia de Stable-Baselines3 RL Zoo | DQN | LunarLander-v3 | no disponible | no aplica | MIT (RL Zoo) | GitHub, pesos publicados |
 
@@ -87,7 +87,7 @@ La comparativa se limita a alternativas del ecosistema Stable-Baselines3, ya que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prem-ml/lunar_lander_v3
+- Modelo en Hugging Face: https://huggingface.co/prem-ml/lunar_lander_v3
 - Stable-Baselines3 (libreria de entrenamiento): https://github.com/DLR-RM/stable-baselines3
 - Documentacion de PPO en Stable-Baselines3: https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html
 - Gymnasium, entorno LunarLander: https://gymnasium.farama.org/environments/box2d/lunar_lander/

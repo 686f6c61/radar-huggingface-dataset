@@ -73,6 +73,6 @@ No se dispone de comparativas oficiales con otros modelos. Como referencia cuali
 
 ## Enlaces
 
-- [Modelo en HuggingFace: RappleML/Raisin-5B](https://huggingface.co/RappleML/Raisin-5B)
+- [Modelo en Hugging Face: RappleML/Raisin-5B](https://huggingface.co/RappleML/Raisin-5B)
 - [Modelo base: microsoft/Phi-3.5-mini-instruct](https://huggingface.co/microsoft/Phi-3.5-mini-instruct)
 - [Dataset: open-r1/OpenR1-Math-220k](https://huggingface.co/datasets/open-r1/OpenR1-Math-220k)

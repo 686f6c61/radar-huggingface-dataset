@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de la familia BERT publicado en HuggingFace por el usuario ASD12DS1DAS bajo el identificador `ASD12DS1DAS/MyAwesomeModel-TestRepository`. A pesar del nombre y de la model card, que describe un asistente conversacional de gran escala con razonamiento avanzado, las etiquetas del repositorio lo clasifican como un modelo `bert` para `feature-extraction` con pesos en formato PyTorch y librería `transformers`. El repositorio tiene un tamaño de 0,0 GB, cero descargas y cero likes, lo que sugiere que se trata de un repositorio de prueba o una plantilla sin pesos publicados.
+MyAwesomeModel es un modelo de la familia BERT publicado en Hugging Face por el usuario ASD12DS1DAS bajo el identificador `ASD12DS1DAS/MyAwesomeModel-TestRepository`. A pesar del nombre y de la model card, que describe un asistente conversacional de gran escala con razonamiento avanzado, las etiquetas del repositorio lo clasifican como un modelo `bert` para `feature-extraction` con pesos en formato PyTorch y librería `transformers`. El repositorio tiene un tamaño de 0,0 GB, cero descargas y cero likes, lo que sugiere que se trata de un repositorio de prueba o una plantilla sin pesos publicados.
 
-La model card incluye una descripción genérica de un modelo conversacional con mejoras en razonamiento, reducción de alucinaciones y soporte de function calling, además de una tabla de benchmarks con métricas agregadas. Sin embargo, no se especifican parámetros, longitud de contexto, arquitectura concreta ni datos de entrenamiento. La discrepancia entre la metadata de HuggingFace (BERT, feature-extraction) y el contenido de la model card (asistente generativo con razonamiento) impide determinar con rigor qué es realmente el modelo.
+La model card incluye una descripción genérica de un modelo conversacional con mejoras en razonamiento, reducción de alucinaciones y soporte de function calling, además de una tabla de benchmarks con métricas agregadas. Sin embargo, no se especifican parámetros, longitud de contexto, arquitectura concreta ni datos de entrenamiento. La discrepancia entre la metadata de Hugging Face (BERT, feature-extraction) y el contenido de la model card (asistente generativo con razonamiento) impide determinar con rigor qué es realmente el modelo.
 
 Por tanto, esta ficha recoge únicamente los datos verificables del repositorio y de la model card, indicando explícitamente "no disponible" en todos aquellos parámetros que no se pueden confirmar. No se debe asumir que el modelo funciona como un LLM conversacional ni que los benchmarks citados corresponden a los pesos publicados.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha recoge únicamente los datos verificables del repositorio 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (según tag de HuggingFace); la model card no detalla la arquitectura |
+| Arquitectura | BERT (según tag de Hugging Face); la model card no detalla la arquitectura |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -30,13 +30,13 @@ Por tanto, esta ficha recoge únicamente los datos verificables del repositorio 
 
 ## Arquitectura y entrenamiento
 
-La metadata de HuggingFace etiqueta el modelo como `bert`, lo que apunta a una arquitectura transformer encoder-only orientada a extracción de características. No obstante, la model card describe un modelo generativo con "thinking depth", razonamiento multi-paso, function calling y un incremento del uso medio de tokens por pregunta en AIME 2025 de 12K a 23K. Estas capacidades son propias de modelos decoder-only o de arquitecturas híbridas con modo de razonamiento, no de un BERT encoder-only estándar.
+La metadata de Hugging Face etiqueta el modelo como `bert`, lo que apunta a una arquitectura transformer encoder-only orientada a extracción de características. No obstante, la model card describe un modelo generativo con "thinking depth", razonamiento multi-paso, function calling y un incremento del uso medio de tokens por pregunta en AIME 2025 de 12K a 23K. Estas capacidades son propias de modelos decoder-only o de arquitecturas híbridas con modo de razonamiento, no de un BERT encoder-only estándar.
 
 No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o post-entrenamiento con recursos computacionales adicionales. La model card menciona "algorithmic optimization mechanisms during post-training" y una mejora en la precisión de AIME 2025 del 70% al 87,5%, pero sin especificar la arquitectura subyacente ni los detalles del proceso. El repositorio no contiene pesos (0,0 GB), por lo que no es posible verificar la arquitectura real ni el entrenamiento.
 
 ## Capacidades
 
-- Extracción de características (feature-extraction), según el pipeline declarado en HuggingFace.
+- Extracción de características (feature-extraction), según el pipeline declarado en Hugging Face.
 - Generación de texto y razonamiento: la model card afirma mejoras en matemáticas, programación y lógica general, aunque no se puede verificar con los pesos publicados.
 - Razonamiento matemático: se cita una precisión del 87,5% en AIME 2025 en la model card.
 - Generación de código: la tabla de benchmarks incluye una métrica de "Code Generation" con valor 0,650.
@@ -96,15 +96,15 @@ No es posible establecer una comparativa fiable porque no se conocen los paráme
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | MyAwesomeModel | no disponible | no disponible | MIT | repositorio sin pesos (0,0 GB) |
-| BERT-base (referencia por tag) | 110M | 512 tokens | Apache 2.0 | publico en HuggingFace |
-| RoBERTa-base (referencia por tag) | 125M | 512 tokens | MIT | publico en HuggingFace |
-| DistilBERT (referencia por tag) | 66M | 512 tokens | Apache 2.0 | publico en HuggingFace |
+| BERT-base (referencia por tag) | 110M | 512 tokens | Apache 2.0 | publico en Hugging Face |
+| RoBERTa-base (referencia por tag) | 125M | 512 tokens | MIT | publico en Hugging Face |
+| DistilBERT (referencia por tag) | 66M | 512 tokens | Apache 2.0 | publico en Hugging Face |
 
 La comparativa con modelos generativos no está disponible por falta de datos verificables.
 
 ## Limitaciones y advertencias
 
-- Discrepancia entre metadata y model card: HuggingFace lo etiqueta como BERT para feature-extraction, mientras que la model card describe un asistente generativo con razonamiento. No se puede determinar cuál es la naturaleza real del modelo.
+- Discrepancia entre metadata y model card: Hugging Face lo etiqueta como BERT para feature-extraction, mientras que la model card describe un asistente generativo con razonamiento. No se puede determinar cuál es la naturaleza real del modelo.
 - Repositorio sin pesos: el tamaño de 0,0 GB indica que no hay archivos de pesos descargables; el modelo no es utilizable tal como está publicado.
 - Cero descargas y cero likes: no hay evidencia de uso ni validación por parte de la comunidad.
 - Benchmarks no verificables: la tabla de la model card no identifica los benchmarks concretos ni los conjuntos de evaluación, y no se puede reproducir sin pesos.
@@ -116,5 +116,5 @@ La comparativa con modelos generativos no está disponible por falta de datos ve
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASD12DS1DAS/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/ASD12DS1DAS/MyAwesomeModel-TestRepository
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

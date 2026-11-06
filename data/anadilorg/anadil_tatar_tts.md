@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Idioma | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AnadilTatarTTS | Adaptador LoRA TTS sobre VoxCPM2 | Tártaro (`tt`) | ~18,1 M (adaptador) | No disponible | MIT | HuggingFace (29 descargas) |
-| openbmb/VoxCPM2 | Modelo base TTS | No disponible en la información | No disponible | No disponible | No disponible en la información | HuggingFace (modelo base) |
+| AnadilTatarTTS | Adaptador LoRA TTS sobre VoxCPM2 | Tártaro (`tt`) | ~18,1 M (adaptador) | No disponible | MIT | Hugging Face (29 descargas) |
+| openbmb/VoxCPM2 | Modelo base TTS | No disponible en la información | No disponible | No disponible | No disponible en la información | Hugging Face (modelo base) |
 | Otros adaptadores de la familia Anadil | Adaptadores LoRA TTS | Otras lenguas de bajos recursos | No disponible | No disponible | No disponible | No disponible en la información |
 
 No se dispone de información sobre otros modelos TTS específicos para tártaro ni sobre resultados comparativos de rendimiento; la comparación se limita al modelo base y a la familia a la que pertenece el adaptador.
@@ -83,7 +83,7 @@ No se dispone de información sobre otros modelos TTS específicos para tártaro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anadilorg/Anadil_Tatar_TTS
+- Modelo en Hugging Face: https://huggingface.co/Anadilorg/Anadil_Tatar_TTS
 - Modelo base: https://huggingface.co/openbmb/VoxCPM2
 - Muestras de audio originales y sintetizadas: https://huggingface.co/Anadilorg/Anadil_Tatar_TTS/tree/main/samples
 - Mozilla Common Voice (origen de los datos): https://commonvoice.mozilla.org/

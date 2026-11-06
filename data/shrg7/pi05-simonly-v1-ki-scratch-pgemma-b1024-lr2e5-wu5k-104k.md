@@ -2,7 +2,7 @@
 
 ## Resumen
 
-shrg7/pi05-simonly-v1-ki-scratch-pgemma-b1024-lr2e5-wu5k-104k es un checkpoint de politica robotica del tipo vision-lenguaje-accion (VLA) entrenado con la pila openpi, en concreto sobre la receta pi0.5 implementada en JAX. Lo publica el usuario de HuggingFace shrg7 y corresponde al paso registrado 103999 (26000 actualizaciones del optimizador) de la ejecucion `gpfs_ailab_simonly_v1_ki_scratch_b1024_lr2e5_wu5k_pgemma_run1`.
+shrg7/pi05-simonly-v1-ki-scratch-pgemma-b1024-lr2e5-wu5k-104k es un checkpoint de politica robotica del tipo vision-lenguaje-accion (VLA) entrenado con la pila openpi, en concreto sobre la receta pi0.5 implementada en JAX. Lo publica el usuario de Hugging Face shrg7 y corresponde al paso registrado 103999 (26000 actualizaciones del optimizador) de la ejecucion `gpfs_ailab_simonly_v1_ki_scratch_b1024_lr2e5_wu5k_pgemma_run1`.
 
 El modelo parte de PaliGemma pt_224 (codificador visual SigLIP mas modelo de lenguaje Gemma) con un "action expert" inicializado aleatoriamente, es decir, no deriva del checkpoint pi05_base. Se entrena con un objetivo dual de "aislamiento de conocimiento": una cabeza de lenguaje basada en tokens FAST y un experto de acciones con flow matching, con un horizonte de accion de 32 pasos.
 
@@ -107,7 +107,7 @@ No se dispone de comparaciones de parametros, contexto, rendimiento ni disponibi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shrg7/pi05-simonly-v1-ki-scratch-pgemma-b1024-lr2e5-wu5k-104k
+- Modelo en Hugging Face: https://huggingface.co/shrg7/pi05-simonly-v1-ki-scratch-pgemma-b1024-lr2e5-wu5k-104k
 - Checkpoint anterior del mismo run: https://huggingface.co/shrg7/pi05-simonly-v1-ki-scratch-pgemma-b1024-lr2e5-wu5k-48k
 - Framework openpi (JAX) mencionado en la model card: referencia citada por el autor, sin URL en la informacion disponible
 - PaliGemma pt_224 como inicializacion: referencia citada por el autor, sin URL en la informacion disponible

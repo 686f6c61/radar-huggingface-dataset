@@ -71,8 +71,8 @@ Comparación interna con la variante de cabeza MLP sobre el último token: MAE d
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WebScorer-8K | 595,8 M | 8.192 tokens | Regresión de calidad 0-10 (zh/en) | MIT (fine-tune); Apache-2.0 (base) | HuggingFace |
-| Qwen/Qwen3-Embedding-0.6B | 595,8 M (aprox.) | No disponible en esta ficha | Embeddings de texto | Apache-2.0 | HuggingFace |
+| WebScorer-8K | 595,8 M | 8.192 tokens | Regresión de calidad 0-10 (zh/en) | MIT (fine-tune); Apache-2.0 (base) | Hugging Face |
+| Qwen/Qwen3-Embedding-0.6B | 595,8 M (aprox.) | No disponible en esta ficha | Embeddings de texto | Apache-2.0 | Hugging Face |
 | Qwen3.8-27B-FP8 (profesor) | 27 B (aproximado) | No disponible en esta ficha | Generación/evaluación con rúbrica | No disponible en esta ficha | Uso como profesor en el entrenamiento |
 
 No se dispone de otros scorers de calidad web comparables en la información proporcionada; la comparación relevante es con su modelo base (que produce embeddings, no puntuaciones) y con el profesor del que destila (mucho mayor y más caro de ejecutar).
@@ -91,7 +91,7 @@ No se dispone de otros scorers de calidad web comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/s0duku/webscorer-8k
+- Modelo en Hugging Face: https://huggingface.co/s0duku/webscorer-8k
 - Dataset de etiquetas: https://huggingface.co/datasets/s0duku/scoreweb-qwen3.8-labels
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Informe de experimentos: `experiments/REPORT.md` dentro del repositorio del modelo

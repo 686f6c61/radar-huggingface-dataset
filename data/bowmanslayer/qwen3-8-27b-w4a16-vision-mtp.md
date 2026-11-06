@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks para el modelo original sin cuantizar en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bowmanslayer/Qwen3.8-27B-W4A16-vision-mtp
+- Repositorio Hugging Face: https://huggingface.co/bowmanslayer/Qwen3.8-27B-W4A16-vision-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio del pipeline de cuantización similar (documenta la receta completa): https://huggingface.co/bowmanslayer/Qwen3.8-27B-Uncensored-W4A16-vision
 - No se han encontrado papers, blogs o demos adicionales del autor.

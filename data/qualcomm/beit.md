@@ -91,8 +91,8 @@ Beit compite en la categoria de clasificadores de imagen ligeros para despliegue
 
 | Modelo | Parametros | Resolucion de entrada | Contexto/secuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qualcomm Beit | 92,0 M | 224x224 | entrada fija de imagen | BSD-3-Clause | HuggingFace + Qualcomm AI Hub |
-| ViT-Base (referencia general) | ~86 M | 224x224 | parches de imagen | Apache-2.0 (segun implementacion) | amplia en HuggingFace |
+| Qualcomm Beit | 92,0 M | 224x224 | entrada fija de imagen | BSD-3-Clause | Hugging Face + Qualcomm AI Hub |
+| ViT-Base (referencia general) | ~86 M | 224x224 | parches de imagen | Apache-2.0 (segun implementacion) | amplia en Hugging Face |
 | EfficientNet-B0 (referencia general) | ~5,3 M | 224x224 | no aplica (CNN) | Apache-2.0 (referencia) | amplia |
 | MobileNetV3-Large (referencia general) | ~5,4 M | 224x224 | no aplica (CNN) | Apache-2.0 (referencia) | amplia |
 
@@ -111,7 +111,7 @@ Nota: los valores de modelos alternativos son referencias generales de la litera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/Beit
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/Beit
 - Beit en Qualcomm AI Hub: https://aihub.qualcomm.com/models/beit
 - Repositorio Qualcomm AI Hub Models (Beit): https://github.com/qualcomm/ai-hub-models/blob/v0.64.0/src/qai_hub_models/models/beit
 - Libreria Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models

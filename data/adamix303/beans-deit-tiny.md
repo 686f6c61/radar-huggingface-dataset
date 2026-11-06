@@ -2,7 +2,7 @@
 
 ## Resumen
 
-beans-deit-tiny es un modelo de clasificación de imágenes resultado del ajuste fino (*fine-tuning*) del transformador de visión facebook/deit-tiny-patch16-224 sobre el conjunto de datos AI-Lab-Makerere/beans, compuesto por fotografías de hojas de judía afectadas por distintas enfermedades. Lo publica el usuario Adamix303 en HuggingFace bajo licencia Apache 2.0 y fue generado automáticamente con la clase Trainer de la librería Transformers, por lo que la propia model card advierte de que no ha sido revisada manualmente.
+beans-deit-tiny es un modelo de clasificación de imágenes resultado del ajuste fino (*fine-tuning*) del transformador de visión facebook/deit-tiny-patch16-224 sobre el conjunto de datos AI-Lab-Makerere/beans, compuesto por fotografías de hojas de judía afectadas por distintas enfermedades. Lo publica el usuario Adamix303 en Hugging Face bajo licencia Apache 2.0 y fue generado automáticamente con la clase Trainer de la librería Transformers, por lo que la propia model card advierte de que no ha sido revisada manualmente.
 
 Se trata de un modelo muy pequeno: 5.524.995 parámetros en formato safetensors (en torno a 22 MB en fp32), lo que lo sitúa en la categoría de modelos de visión ligeros aptos para inferencia en CPU y en dispositivos de borde. La arquitectura es un Vision Transformer (ViT) con parches de 16x16 y resolución de entrada de 224x224 píxeles, heredada íntegramente del modelo base de Meta AI (Facebook AI).
 
@@ -32,7 +32,7 @@ El ajuste fino se realizó sobre el conjunto AI-Lab-Makerere/beans, un dataset d
 - Clasificación de imágenes en tres clases del dominio de hojas de judía: moteado angular (*angular leaf spot*), roya (*bean rust*) y hoja sana.
 - Salida de probabilidades por clase mediante el pipeline `image-classification` de Transformers.
 - Inferencia de baja latencia y bajo consumo de memoria gracias a sus 5,5 millones de parámetros.
-- Compatible con HuggingFace Inference Endpoints (el repositorio lleva la etiqueta `endpoints_compatible`).
+- Compatible con Hugging Face Inference Endpoints (el repositorio lleva la etiqueta `endpoints_compatible`).
 - Candidato a despliegue en CPU y en dispositivos de borde; el modelo base cuenta con conversiones INT8 para Arm/ExecuTorch, aunque no se confirma que existan para este ajuste fino.
 - No soporta *tool calling*, *function calling*, razonamiento multi-paso, agentes, generación de texto, código, matemáticas, visión general más allá de clasificación, audio ni modo de razonamiento. No dispone de capacidades multilingües porque no procesa lenguaje.
 
@@ -44,7 +44,7 @@ El ajuste fino se realizó sobre el conjunto AI-Lab-Makerere/beans, un dataset d
 - Monitorización continua en invernadero: integrar el clasificador en un sistema de cámaras fijas que analice periódicamente las hojas y emita alertas cuando la proporción de imágenes enfermas supere un umbral.
 - Destilación o *pruning* de modelos aún más ligeros: al ser un DeiT-tiny ya ajustado, sirve como punto de partida para obtener variantes cuantizadas a INT8 o podadas para microcontroladores.
 - Fenotipado a escala en investigación agronómica: cuantificar la severidad de una enfermedad en ensayos de variedades resistentes clasificando grandes volúmenes de fotografías de forma homogénea.
-- Componente de demostración en pipelines de CI/CD de visión: validar extremo a extremo el flujo de entrenamiento, exportación a safetensors y despliegue en un endpoint de HuggingFace con un modelo de tamaño reducido.
+- Componente de demostración en pipelines de CI/CD de visión: validar extremo a extremo el flujo de entrenamiento, exportación a safetensors y despliegue en un endpoint de Hugging Face con un modelo de tamaño reducido.
 
 ## Benchmarks y rendimiento
 
@@ -74,17 +74,17 @@ No se han publicado resultados frente a MMLU, HumanEval, GSM8K ni otros benchmar
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Se puede emplear desde una NVIDIA T4 o GTX 1650 hasta una RTX 4090, A100 o H100, aunque en estas últimas el modelo estará infrautilizado.
 - Cabe sin problema en GPU de consumo: RTX 3060, RTX 4060, RTX 4090, así como en iGPU y en CPU convencional.
 - Despliegue en CPU y edge: es viable en x86, en Apple Silicon y en placas como Raspberry Pi 5, especialmente si se exporta a INT8 con ExecuTorch/XNNPACK siguiendo el ejemplo publicado para el modelo base.
-- Opciones de despliegue: pipeline de `transformers` en Python, HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), TorchScript/ONNX, ExecuTorch y, en general, cualquier runtime que acepte safetensors. vLLM, llama.cpp, Ollama y TGI están orientados a modelos de lenguaje y no aplican aquí.
+- Opciones de despliegue: pipeline de `transformers` en Python, Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), TorchScript/ONNX, ExecuTorch y, en general, cualquier runtime que acepte safetensors. vLLM, llama.cpp, Ollama y TGI están orientados a modelos de lenguaje y no aplican aquí.
 - Latencia y throughput: no disponibles. Con 5,5 millones de parámetros se espera un coste por imagen de pocos milisegundos en GPU moderna y de decenas de milisegundos en CPU, pero no se han publicado mediciones para este modelo concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Arquitectura | Tarea y contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Adamix303/beans-deit-tiny | 5,52 M | DeiT-tiny (ViT patch16, 224x224) | Clasificación de 3 clases de hojas de judía; accuracy 0,9850 en el conjunto de evaluación declarado | apache-2.0 | HuggingFace; 0 descargas registradas |
-| facebook/deit-tiny-patch16-224 | 5,52 M | DeiT-tiny con destilación | Clasificación ImageNet-1k; modelo base sin ajustar a dominio agronómico | apache-2.0 | HuggingFace; ampliamente descargado |
-| facebook/deit-base-patch16-224 | 86 M | DeiT-base con destilación | Clasificación ImageNet-1k; mayor precisión general a cambio de ~16 veces más parámetros | apache-2.0 | HuggingFace |
-| google/vit-base-patch16-224 | 86 M | ViT-base | Clasificación ImageNet-1k; sin destilación, requiere más datos para igualar a DeiT | apache-2.0 | HuggingFace |
+| Adamix303/beans-deit-tiny | 5,52 M | DeiT-tiny (ViT patch16, 224x224) | Clasificación de 3 clases de hojas de judía; accuracy 0,9850 en el conjunto de evaluación declarado | apache-2.0 | Hugging Face; 0 descargas registradas |
+| facebook/deit-tiny-patch16-224 | 5,52 M | DeiT-tiny con destilación | Clasificación ImageNet-1k; modelo base sin ajustar a dominio agronómico | apache-2.0 | Hugging Face; ampliamente descargado |
+| facebook/deit-base-patch16-224 | 86 M | DeiT-base con destilación | Clasificación ImageNet-1k; mayor precisión general a cambio de ~16 veces más parámetros | apache-2.0 | Hugging Face |
+| google/vit-base-patch16-224 | 86 M | ViT-base | Clasificación ImageNet-1k; sin destilación, requiere más datos para igualar a DeiT | apache-2.0 | Hugging Face |
 
 No se dispone de resultados de estos modelos alternativos sobre el conjunto de datos beans en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento en el mismo dominio.
 
@@ -101,10 +101,10 @@ No se dispone de resultados de estos modelos alternativos sobre el conjunto de d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Adamix303/beans-deit-tiny
+- Modelo en Hugging Face: https://huggingface.co/Adamix303/beans-deit-tiny
 - Modelo base facebook/deit-tiny-patch16-224: https://huggingface.co/facebook/deit-tiny-patch16-224
 - Dataset AI-Lab-Makerere/beans: https://huggingface.co/datasets/AI-Lab-Makerere/beans
 - Artículo de DeiT (Training data-efficient image transformers & distillation through attention): https://arxiv.org/abs/2012.12877
 - Conversión INT8 del modelo base para Arm/ExecuTorch (Raspberry Pi 5): https://developer.arm.com/ai/models/hugging-face/Arm/deit-tiny-int8-xnnpack-executorch/deit-tiny-int8-pte?targetName=Raspberry+Pi+5
 - Visión general de DeiT en Medium: https://medium.com/@zakhtar2020/deit-data-efficient-image-transformer-overview-acd1cb3b1dcf
-- Listado de modelos con la etiqueta deit-tiny en HuggingFace: https://huggingface.co/models?other=deit-tiny
+- Listado de modelos con la etiqueta deit-tiny en Hugging Face: https://huggingface.co/models?other=deit-tiny

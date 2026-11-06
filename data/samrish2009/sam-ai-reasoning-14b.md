@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento adicional | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SAM-AI-Reasoning-14B | ~14 000 M (denso) | No disponible | GRPO sobre DeepSeek-R1-Distill-Qwen-14B | Apache-2.0 | No | Repositorio HuggingFace, 0 descargas |
+| SAM-AI-Reasoning-14B | ~14 000 M (denso) | No disponible | GRPO sobre DeepSeek-R1-Distill-Qwen-14B | Apache-2.0 | No | Repositorio Hugging Face, 0 descargas |
 | deepseek-ai/DeepSeek-R1-Distill-Qwen-14B | ~14 000 M (denso) | No verificado en esta ficha | Destilacion de trazas de DeepSeek-R1 | Licencia del modelo base (no verificada en esta ficha) | Publicados por DeepSeek, no reproducidos aqui | Ampliamente desplegado |
 | Qwen2.5-14B-Instruct | ~14 000 M (denso) | No verificado en esta ficha | Ajuste supervisado y preferencias, sin RL de razonamiento | Licencia Qwen, no verificada en esta ficha | Publicados por Alibaba, no reproducidos aqui | Ampliamente desplegado |
 | DeepSeek-R1-Distill-Qwen-32B | ~32 000 M (denso) | No verificado en esta ficha | Destilacion de trazas de DeepSeek-R1 | Licencia del modelo base, no verificada en esta ficha | Publicados por DeepSeek, no reproducidos aqui | Ampliamente desplegado |
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento comparativos para SAM-AI-Reasoning-14B, po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Samrish2009/SAM-AI-Reasoning-14B
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
+- Modelo en Hugging Face: https://huggingface.co/Samrish2009/SAM-AI-Reasoning-14B
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
 - Hugging Face Open LLM Leaderboard v2 (mencionado en la model card): https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard
 - No se han encontrado en la busqueda web papers, blogs tecnicos, repositorios de codigo ni demos adicionales asociados a este modelo.

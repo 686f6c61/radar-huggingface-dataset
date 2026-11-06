@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `amirsoahil101/Credit_Card_Fraud_Synthetic_Detector` es un clasificador binario de detección de fraude en transacciones con tarjetas de crédito, desarrollado por Amir Sohail. Aunque está registrado en HuggingFace con el pipeline de `text-classification`, en realidad se trata de un modelo clásico de machine learning basado en árboles de decisión (Random Forest) entrenado con scikit-learn sobre un dataset sintético de transacciones. El proyecto incluye una aplicación web interactiva construida con Streamlit que permite evaluar transacciones en tiempo real a partir de características transformadas mediante PCA (V1–V5), el tiempo transcurrido y el importe de la operación.
+El modelo `amirsoahil101/Credit_Card_Fraud_Synthetic_Detector` es un clasificador binario de detección de fraude en transacciones con tarjetas de crédito, desarrollado por Amir Sohail. Aunque está registrado en Hugging Face con el pipeline de `text-classification`, en realidad se trata de un modelo clásico de machine learning basado en árboles de decisión (Random Forest) entrenado con scikit-learn sobre un dataset sintético de transacciones. El proyecto incluye una aplicación web interactiva construida con Streamlit que permite evaluar transacciones en tiempo real a partir de características transformadas mediante PCA (V1–V5), el tiempo transcurrido y el importe de la operación.
 
 El modelo resuelve el problema de identificar transacciones fraudulentas frente a legítimas, un desafío crítico en el sector financiero. Su relevancia radica en que ofrece una solución ligera, fácil de desplegar y con una precisión declarada del 98% sobre el conjunto de datos sintético. No se trata de un modelo de lenguaje de gran escala, sino de un pipeline de ML tradicional, por lo que su arquitectura, parámetros y contexto no son comparables a los de los LLM actuales.
 
@@ -75,7 +75,7 @@ Dado que se trata de un modelo clásico de detección de fraude, la comparativa 
 
 | Modelo | Precisión | Licencia | Disponibilidad |
 |---|---|---|---|
-| Random Forest (este modelo) | 0.980 | MIT | Código y artefactos en HuggingFace/GitHub |
+| Random Forest (este modelo) | 0.980 | MIT | Código y artefactos en Hugging Face/GitHub |
 | Extra Trees | 0.980 | MIT | Evaluado en el mismo proyecto |
 | XGBoost | 0.980 | MIT | Evaluado en el mismo proyecto |
 | AdaBoost | 0.975 | MIT | Evaluado en el mismo proyecto |
@@ -94,7 +94,7 @@ No se han encontrado comparativas con modelos externos en la información dispon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amirsoahil101/Credit_Card_Fraud_Synthetic_Detector
+- Hugging Face: https://huggingface.co/amirsoahil101/Credit_Card_Fraud_Synthetic_Detector
 - Repositorio GitHub: https://github.com/amirsohail100/Credit-Card-Fraud-Detection-System
 - Aplicación demo (Streamlit): https://credit-card-fraud-detection-system-md3f6bhxwpbrhz8ogcylwu.streamlit.app/
 - Notebook de entrenamiento (dentro del repositorio): `model.ipynb`

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lumina-adapter-v4 es un ajuste fino supervisado (SFT) del modelo Qwen2.5-0.5B-Instruct, publicado por el usuario 1Updan en HuggingFace. Se trata de un modelo de generacion de texto de tipo transformer decoder-only, orientado a conversacion, con 502.830.976 parametros totales segun los pesos en safetensors, y un tamano de repositorio de 0,8 GB. El entrenamiento se realizo con la libreria TRL (version 1.14.2) sobre el framework Transformers (version 5.16.1), PyTorch 2.11.0+cu128 y Datasets 4.8.5.
+lumina-adapter-v4 es un ajuste fino supervisado (SFT) del modelo Qwen2.5-0.5B-Instruct, publicado por el usuario 1Updan en Hugging Face. Se trata de un modelo de generacion de texto de tipo transformer decoder-only, orientado a conversacion, con 502.830.976 parametros totales segun los pesos en safetensors, y un tamano de repositorio de 0,8 GB. El entrenamiento se realizo con la libreria TRL (version 1.14.2) sobre el framework Transformers (version 5.16.1), PyTorch 2.11.0+cu128 y Datasets 4.8.5.
 
 El modelo hereda la arquitectura y el tokenizador de Qwen2.5, por lo que su tamano reducido (entorno a 0,5B de parametros) lo situa en la categoria de modelos pequenos aptos para entornos con recursos limitados, CPU o GPU de consumo. No obstante, la model card publicada es minima: no incluye descripcion del dataset de entrenamiento, hiperparametros, idiomas objetivo ni resultados de evaluacion, y no declara licencia.
 
@@ -47,7 +47,7 @@ El entrenamiento se realizo mediante aprendizaje supervisado (SFT) con la librer
 - Fine-tuning experimental y reproduccion de pipelines: sirve como referencia para estudiar un ajuste SFT realizado con TRL sobre Qwen2.5-0.5B-Instruct, util en investigacion de metodologias de entrenamiento.
 - Despliegue en entornos con recursos muy limitados: al caber en GPU de consumo, CPU o incluso dispositivos con poca memoria tras cuantizacion a 4-bit, es adecuado para pruebas en hardware modesto.
 - Generacion de texto de bajo coste: para tareas de relleno, resumen corto o autocompletado donde no se requiere alta precision y prima el coste computacional.
-- Integracion en TGI o endpoints compatibles: permite exponer el modelo como servicio de generacion de texto mediante infraestructura estandar de HuggingFace.
+- Integracion en TGI o endpoints compatibles: permite exponer el modelo como servicio de generacion de texto mediante infraestructura estandar de Hugging Face.
 - Chatbot de demostracion o educacion: util como ejemplo practico en talleres sobre fine-tuning y despliegue de modelos pequenos con Transformers.
 - Filtrado o clasificacion conversacional rapida: puede emplearse en tareas de generacion corta dentro de pipelines de mayor tamano, siempre que se valide su calidad de forma empirica.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| lumina-adapter-v4 (este modelo) | 502.830.976 | No disponible (base: 32.768 tokens) | No disponible | HuggingFace (0 descargas) |
-| Qwen2.5-0.5B-Instruct (base) | ~0,49B | 32.768 tokens | Apache-2.0 | HuggingFace (modelo base oficial) |
-| Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 tokens | Apache-2.0 | HuggingFace (modelo base oficial) |
-| SmolLM2-360M-Instruct | ~0,36B | 8.192 tokens | Apache-2.0 | HuggingFace |
+| lumina-adapter-v4 (este modelo) | 502.830.976 | No disponible (base: 32.768 tokens) | No disponible | Hugging Face (0 descargas) |
+| Qwen2.5-0.5B-Instruct (base) | ~0,49B | 32.768 tokens | Apache-2.0 | Hugging Face (modelo base oficial) |
+| Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 tokens | Apache-2.0 | Hugging Face (modelo base oficial) |
+| SmolLM2-360M-Instruct | ~0,36B | 8.192 tokens | Apache-2.0 | Hugging Face |
 
 Nota: los datos del modelo base y de los modelos comparables proceden de sus fichas publicas oficiales; los de lumina-adapter-v4 se limitan a los aportados por su repositorio. No se incluyen comparaciones de rendimiento porque no hay benchmarks disponibles para este modelo. El numero de contextos y licencias de los modelos comparables puede variar segun la version publicada.
 
@@ -91,7 +91,7 @@ Nota: los datos del modelo base y de los modelos comparables proceden de sus fic
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/1Updan/lumina-adapter-v4
+- Hugging Face (modelo): https://huggingface.co/1Updan/lumina-adapter-v4
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper de TRL (cita): von Werra et al., "TRL: Transformers Reinforcement Learning", licencia Apache-2.0, 2020

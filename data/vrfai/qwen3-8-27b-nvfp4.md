@@ -77,6 +77,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vrfai/Qwen3.8-27B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/vrfai/Qwen3.8-27B-NVFP4
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Servicio Qwen Cloud (mención en la model card): https://www.qwencloud.com/models/qwen3.8-27b

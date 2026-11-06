@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha describe una politica de control robotico entrenada mediante aprendizaje por imitacion con el metodo ACT (Action Chunking with Transformers), publicado en el articulo arXiv 2304.13705. No se trata de un modelo de lenguaje, sino de una politica visomotora que, a partir de observaciones del estado del robot y de dos flujos de imagen, predice directamente comandos de actuacion en lugar de texto. El modelo ha sido entrenado por el usuario castanetnicolas y publicado en HuggingFace Hub usando el framework LeRobot de HuggingFace. Cuenta con 51.580.551 parametros (aproximadamente 51,6 millones) y pesa unos 0,2 GB en safetensors.
+Esta ficha describe una politica de control robotico entrenada mediante aprendizaje por imitacion con el metodo ACT (Action Chunking with Transformers), publicado en el articulo arXiv 2304.13705. No se trata de un modelo de lenguaje, sino de una politica visomotora que, a partir de observaciones del estado del robot y de dos flujos de imagen, predice directamente comandos de actuacion en lugar de texto. El modelo ha sido entrenado por el usuario castanetnicolas y publicado en Hugging Face Hub usando el framework LeRobot de Hugging Face. Cuenta con 51.580.551 parametros (aproximadamente 51,6 millones) y pesa unos 0,2 GB en safetensors.
 
 La tarea concreta para la que se ha entrenado es "Insert the hook into the base to build a frame, then hang the wrench on the hook", un problema de manipulacion robotica de tipo tool hang del conjunto RoboMimic. El entrenamiento se realizo sobre un dataset de 200 episodios y 95.962 fotogramas a 20 FPS, con 120.000 pasos de optimizacion, tamano de lote 64 y tasa de aprendizaje 1e-05. La politica predice fragmentos de accion (action chunks) de longitud 10 y ejecuta 10 pasos por chunk, de ahi el sufijo del identificador.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / horizonte | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (ACT tool hang) | ACT / imitacion visomotora | 51,6 M | chunk de 10 pasos a 20 FPS | tool hang en RoboMimic | Apache 2.0 | HuggingFace Hub |
+| Este modelo (ACT tool hang) | ACT / imitacion visomotora | 51,6 M | chunk de 10 pasos a 20 FPS | tool hang en RoboMimic | Apache 2.0 | Hugging Face Hub |
 | Diffusion Policy (Chi et al., 2023) | Imitacion visomotora basada en difusion | No disponible | Predice secuencias de accion | Manipulacion robotica | No disponible | Repositorio propio |
-| Otras politicas ACT de LeRobot | ACT / imitacion visomotora | Variable (tipicamente decenas de millones) | chunks configurables | Tareas diversas | Habitualmente Apache 2.0 | HuggingFace Hub |
+| Otras politicas ACT de LeRobot | ACT / imitacion visomotora | Variable (tipicamente decenas de millones) | chunks configurables | Tareas diversas | Habitualmente Apache 2.0 | Hugging Face Hub |
 
 No se dispone de datos de rendimiento comparativos publicados para este modelo concreto, por lo que la comparacion se limita a caracteristicas estructurales y de licencia. Cualquier afirmacion sobre superioridad de un metodo frente a otro requeriria evaluaciones en el mismo entorno y no esta respaldada por la informacion disponible.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativos publicados para este modelo c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_10_Exec_10_TASK_tool_hang_PIXELS__ID_146552
+- Modelo en Hugging Face: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_10_Exec_10_TASK_tool_hang_PIXELS__ID_146552
 - Dataset de entrenamiento: https://huggingface.co/datasets/castanetnicolas/robomimic_tool_hang_ph_image84
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=castanetnicolas/robomimic_tool_hang_ph_image84
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv 2304.13705)

@@ -6,7 +6,7 @@ PMLLM-Qwen3-VL-8B-GRPO-GGUF es una distribucion de pesos cuantizados en formato 
 
 La relevancia de esta ficha radica en que permite ejecutar un modelo multimodal de 8B con capacidades de razonamiento reforzado en hardware de consumo, algo que el checkpoint original en transformers no facilita. El repositorio incluye tanto los pesos del lenguaje en distintos niveles de cuantizacion (de Q2_K a f16) como los ficheros `mmproj` necesarios para el procesamiento de imagen.
 
-La informacion publicada por el autor es muy escasa: no se detalla la licencia, no hay benchmarks, no se especifica la longitud de contexto ni los datos de entrenamiento del modelo base. Esta ficha refleja unicamente lo verificable en la model card y en los metadatos de HuggingFace, marcando explicitamente como "no disponible" todo aquello que no se ha publicado.
+La informacion publicada por el autor es muy escasa: no se detalla la licencia, no hay benchmarks, no se especifica la longitud de contexto ni los datos de entrenamiento del modelo base. Esta ficha refleja unicamente lo verificable en la model card y en los metadatos de Hugging Face, marcando explicitamente como "no disponible" todo aquello que no se ha publicado.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 - Generacion de texto conversacional en ingles (tag `conversational`).
 - Procesamiento de imagenes: el repositorio incluye ficheros `mmproj` en Q8_0 (0,9 GB) y f16 (1,3 GB), lo que confirma soporte vision-lenguaje.
 - Razonamiento reforzado mediante GRPO en el modelo base, orientado presumiblemente a tareas de logica y matematicas (no documentado explicitamente).
-- Compatibilidad con endpoints (`endpoints_compatible` en los tags de HuggingFace).
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags de Hugging Face).
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingues: los metadatos solo declaran `en`; el modelo base Qwen3-VL soporta mas idiomas, pero esta ficha no puede confirmarlo para este ajuste.
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Sumar el fichero `mmproj` si se usa entrada de imagen: +0,9 GB (Q8_0) o +1,3 GB (f16).
 - GPU recomendadas: no especificadas por el autor. Por tamano, una RTX 3060 de 12 GB o RTX 4070 de 12 GB puede ejecutar Q6_K o Q8_0 con mmproj; una RTX 4090 de 24 GB permite f16 sin problemas. Para despliegue en servidor, A100 o H100 son sobredimensionadas para este tamano.
 - Cabe en GPU de consumo: si, desde GPUs de 8 GB con cuantizaciones Q4 o inferiores (sin margen amplio para contexto largo).
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace. vLLM y TGI no soportan GGUF de forma nativa en todos los casos.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face. vLLM y TGI no soportan GGUF de forma nativa en todos los casos.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares

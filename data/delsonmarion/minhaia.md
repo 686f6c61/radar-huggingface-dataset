@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Delsonmarion/MinhaIA es un repositorio de modelo alojado en HuggingFace por el usuario Delsonmarion, publicado bajo licencia Apache 2.0. La informacion disponible es minima: la model card del autor no contiene mas que la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no declara pipeline de inferencia, idiomas soportados ni etiquetas tecnicas mas alla de la licencia y la region.
+Delsonmarion/MinhaIA es un repositorio de modelo alojado en Hugging Face por el usuario Delsonmarion, publicado bajo licencia Apache 2.0. La informacion disponible es minima: la model card del autor no contiene mas que la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no declara pipeline de inferencia, idiomas soportados ni etiquetas tecnicas mas alla de la licencia y la region.
 
 El repositorio registra cero descargas y cero likes en el momento de la consulta, y las fechas de creacion y ultima actualizacion son identicas (30 de septiembre de 2026), lo que sugiere una publicacion sin modificaciones posteriores. No hay evidencia de que se trate de un modelo entrenado desde cero, de un fine-tuning sobre una base existente ni de una subida de prueba; el identificador "MinhaIA" no aporta informacion tecnica verificable.
 
@@ -44,7 +44,7 @@ No se pueden recomendar casos de uso concretos porque no existe informacion veri
 - Asistente conversacional: se desconoce si el modelo ha recibido ajuste por instrucciones.
 - Generacion de codigo: no hay datos de entrenamiento ni benchmarks que lo respalden.
 - Razonamiento matematico: sin informacion sobre datos de entrenamiento ni evaluaciones publicadas.
-- Procesamiento multilingue: el campo de idiomas no esta declarado en la ficha de HuggingFace.
+- Procesamiento multilingue: el campo de idiomas no esta declarado en la ficha de Hugging Face.
 - Uso como modelo base para fine-tuning: se desconoce el formato de pesos y si existen pesos publicados.
 - Despliegue en edge o en servidor: no hay datos de parametros que permitan estimar requisitos.
 
@@ -68,7 +68,7 @@ No disponible. Al no conocerse la categoria del modelo (tamano, arquitectura, ta
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Delsonmarion/MinhaIA | no disponible | no disponible | apache-2.0 | repositorio HuggingFace sin documentacion |
+| Delsonmarion/MinhaIA | no disponible | no disponible | apache-2.0 | repositorio Hugging Face sin documentacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,6 +85,6 @@ No disponible. Al no conocerse la categoria del modelo (tamano, arquitectura, ta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Delsonmarion/MinhaIA
+- Repositorio en Hugging Face: https://huggingface.co/Delsonmarion/MinhaIA
 - Texto de la licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

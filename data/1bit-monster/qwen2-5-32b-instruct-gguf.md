@@ -2,7 +2,7 @@
 
 ## Resumen
 
-1bit-MONSTER/Qwen2.5-32B-Instruct-GGUF es un rehost en HuggingFace de la cuantizacion GGUF Q4_K_M oficial de Qwen2.5-32B-Instruct, publicada en cinco fragmentos (shards) por el usuario 1bit-MONSTER. No se trata de un modelo nuevo ni de un ajuste fino: los pesos son los del modelo instruct de Qwen (familia Qwen2.5, Alibaba Cloud) convertidos a Q4_K_M, con licencia Apache 2.0 heredada. El repositorio ocupa 19,9 GB y declara 32.763.876.352 parametros (~32,8 mil millones) en formato denso.
+1bit-MONSTER/Qwen2.5-32B-Instruct-GGUF es un rehost en Hugging Face de la cuantizacion GGUF Q4_K_M oficial de Qwen2.5-32B-Instruct, publicada en cinco fragmentos (shards) por el usuario 1bit-MONSTER. No se trata de un modelo nuevo ni de un ajuste fino: los pesos son los del modelo instruct de Qwen (familia Qwen2.5, Alibaba Cloud) convertidos a Q4_K_M, con licencia Apache 2.0 heredada. El repositorio ocupa 19,9 GB y declara 32.763.876.352 parametros (~32,8 mil millones) en formato denso.
 
 El valor anadido del repositorio es la publicacion de metricas de rendimiento medidas en hardware Strix Halo (APU de AMD con memoria unificada) usando el backend Vulkan: 269 tok/s en prefill de 512 tokens y 9,9 tok/s en generacion de 128 tokens. Estas cifras sirven como referencia para quien quiera ejecutar un modelo de 32B en una maquina sin GPU dedicada de gran VRAM.
 
@@ -96,7 +96,7 @@ No se dispone de resultados de benchmarks que permitan comparar la calidad de es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/1bit-MONSTER/Qwen2.5-32B-Instruct-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/1bit-MONSTER/Qwen2.5-32B-Instruct-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
 - GGUF oficial de Qwen: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct-GGUF
 - Motor 1bit engine: https://github.com/1bit-MONSTER/engine

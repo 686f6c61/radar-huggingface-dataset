@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio nipopov66/side-matching es una implementación experimental y minúscula de MoCo v3 (Momentum Contrast v3) orientada a tareas de emparejamiento (matching). Lo publica el usuario nipopov66 en HuggingFace. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El propio autor advierte en la model card que no se reclama ninguna puntuación de benchmark.
+El repositorio nipopov66/side-matching es una implementación experimental y minúscula de MoCo v3 (Momentum Contrast v3) orientada a tareas de emparejamiento (matching). Lo publica el usuario nipopov66 en Hugging Face. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El propio autor advierte en la model card que no se reclama ninguna puntuación de benchmark.
 
 El modelo cuenta con 24.832 parámetros totales, según los datos reales del archivo safetensors, y una configuración de escala "tiny". La arquitectura declarada incluye atención lineal, fusión con puertas (gated fusion), activación swish y normalización por lotes (batchnorm). Se distribuye bajo licencia MIT y no se especifican idiomas soportados ni pipeline de tarea.
 
@@ -83,7 +83,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nipopov66/side-matching
+- Hugging Face: https://huggingface.co/nipopov66/side-matching
 - Paper de MoCo v3 (referencia de la arquitectura, no enlazado por el autor): no disponible en la información proporcionada
 - Repositorio de código: no disponible
 - Demo: no disponible

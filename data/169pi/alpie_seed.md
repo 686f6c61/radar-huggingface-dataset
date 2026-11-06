@@ -90,8 +90,8 @@ El único comparable documentado en la información proporcionada es Qwen3.5-9B,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/169Pi/Alpie_seed
-- GGUF en HuggingFace: https://huggingface.co/169Pi/Alpie_Seed_GGUF
+- Modelo en Hugging Face: https://huggingface.co/169Pi/Alpie_seed
+- GGUF en Hugging Face: https://huggingface.co/169Pi/Alpie_Seed_GGUF
 - Ollama: https://ollama.com/169pi/alpie-seed
 - Kaggle Models: https://www.kaggle.com/models/alpie/alpie-seed-9b
 - GitHub del autor: https://github.com/169Pi

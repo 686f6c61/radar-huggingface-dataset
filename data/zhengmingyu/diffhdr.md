@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZhengmingYu/DiffHDR
+- Hugging Face: https://huggingface.co/ZhengmingYu/DiffHDR
 - Paper (arXiv): https://arxiv.org/abs/2604.06161
 - Version HTML del paper: https://arxiv.org/html/2604.06161v1
 - Pagina del proyecto: https://eyeline-labs.github.io/DiffHDR/

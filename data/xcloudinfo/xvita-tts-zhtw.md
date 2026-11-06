@@ -86,7 +86,7 @@ No se dispone de comparaciones directas con otros modelos TTS de chino tradicion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xCloudinfo/xVITA-TTS-zhTW
+- Modelo en Hugging Face: https://huggingface.co/xCloudinfo/xVITA-TTS-zhTW
 - Modelo ASR asociado (Whisper-Large-v3-Turbo-xVITA-zhTW): https://huggingface.co/xCloudinfo/Whisper-Large-v3-Turbo-xVITA-zhTW
 - Modelo ASR alternativo (Whisper-Large-v3-xVITA-zhTW): https://huggingface.co/xCloudinfo/Whisper-Large-v3-xVITA-zhTW
-- Repositorio de Chatterbox (modelo base): no se proporciona enlace directo, pero se puede buscar como ResembleAI/chatterbox en HuggingFace.
+- Repositorio de Chatterbox (modelo base): no se proporciona enlace directo, pero se puede buscar como ResembleAI/chatterbox en Hugging Face.

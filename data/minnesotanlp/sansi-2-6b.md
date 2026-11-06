@@ -85,13 +85,13 @@ En la tabla comparativa del repositorio, SanSi-2.6B (backbone Ouro-2.6B, 121,4M 
 
 | Modelo | Parametros | Loops | Coste | Global (%) | Edicion | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|---|
-| SanSi-2.6B | 2,7B | 8 | 14,8 | 75,8 | 8 loops | apache-2.0 | HuggingFace (adaptadores PEFT) |
-| SanSi | 1,4B | 8 | 7,7 | 72,0 | 8 loops | no disponible en la información proporcionada | HuggingFace |
+| SanSi-2.6B | 2,7B | 8 | 14,8 | 75,8 | 8 loops | apache-2.0 | Hugging Face (adaptadores PEFT) |
+| SanSi | 1,4B | 8 | 7,7 | 72,0 | 8 loops | no disponible en la información proporcionada | Hugging Face |
 | Qwen3.5-2B | 1,9B | 1 | 1,2 | 66,7 | 1 loop | no disponible en la información proporcionada | no disponible |
 | Qwen3.5-4B | 4,2B | 1 | 2,4 | 73,8 | 1 loop | no disponible en la información proporcionada | no disponible |
 | Kev-4B (nuestros datos) | 4,2B | 1 | 2,1 | 74,3 | 1 loop | no disponible en la información proporcionada | no disponible |
 | SmolLM2-1.7B | 1,7B | 1 | 1,1 | 58,4 | 1 loop | no disponible en la información proporcionada | no disponible |
-| Ouro-1.4B, un loop | 1,4B | 1 | 1,0 | 58,6 | 1 loop | no disponible en la información proporcionada | HuggingFace (ByteDance/Ouro-1.4B) |
+| Ouro-1.4B, un loop | 1,4B | 1 | 1,0 | 58,6 | 1 loop | no disponible en la información proporcionada | Hugging Face (ByteDance/Ouro-1.4B) |
 
 SanSi-2.6B obtiene la mayor exactitud global de la tabla (75,8 %), 1,5 puntos por encima de Kev-4B pese a tener menos parámetros, pero a un coste de cómputo 7 veces superior al de Kev-4B (14,8 frente a 2,1) y con la ventaja añadida de la mejor calibración (ECE 0,078). SmolLM2-1.7B presenta un ECE ligeramente mejor (0,069) pero 17,4 puntos menos de exactitud global.
 
@@ -109,7 +109,7 @@ SanSi-2.6B obtiene la mayor exactitud global de la tabla (75,8 %), 1,5 puntos po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minnesotanlp/SanSi-2.6B
+- Modelo en Hugging Face: https://huggingface.co/minnesotanlp/SanSi-2.6B
 - Modelo SanSi (1.4B): https://huggingface.co/minnesotanlp/SanSi
 - Modelo base Ouro-2.6B: https://huggingface.co/ByteDance/Ouro-2.6B
 - Artículo (arXiv): https://arxiv.org/abs/2610.07730
@@ -117,5 +117,5 @@ SanSi-2.6B obtiene la mayor exactitud global de la tabla (75,8 %), 1,5 puntos po
 - Repositorio de código: https://github.com/minnesotanlp/Sansi
 - Página del proyecto: https://minnesotanlp.github.io/Sansi/
 - Organización Minnesota NLP en GitHub: https://github.com/minnesotanlp
-- Organización Minnesota NLP en HuggingFace: https://huggingface.co/minnesotanlp
+- Organización Minnesota NLP en Hugging Face: https://huggingface.co/minnesotanlp
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

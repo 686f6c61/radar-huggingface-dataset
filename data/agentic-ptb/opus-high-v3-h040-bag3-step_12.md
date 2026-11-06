@@ -84,6 +84,6 @@ No se puede afirmar ningún rendimiento relativo porque no hay benchmarks public
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h040.bag3.step_12
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h040.bag3.step_12
 - Dataset asociado (run archive): https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Búsqueda de modelos con tag `agentic-ptb`: https://huggingface.co/models?other=agentic-ptb

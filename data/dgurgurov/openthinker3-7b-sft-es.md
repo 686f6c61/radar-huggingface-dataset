@@ -69,7 +69,7 @@ No se dispone de comparativas publicadas para este modelo específico. El modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DGurgurov/OpenThinker3-7B-SFT-ES
+- Modelo en Hugging Face: https://huggingface.co/DGurgurov/OpenThinker3-7B-SFT-ES
 - Dataset ReasonXL-SFT: https://huggingface.co/datasets/toroe/ReasonXL-SFT
 - Modelo GRPO (segunda etapa): https://huggingface.co/DGurgurov/OpenThinker3-7B-SFT-GRPO-ES
 - Modelo base OpenThinker-7B: https://huggingface.co/open-thoughts/OpenThinker-7B

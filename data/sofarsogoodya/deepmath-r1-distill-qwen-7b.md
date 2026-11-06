@@ -83,7 +83,7 @@ La comparación directa es limitada porque DeepMath no tiene cifras propias. El 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SoFarSoGoodya/DeepMath-R1-Distill-Qwen-7B
+- Repositorio Hugging Face: https://huggingface.co/SoFarSoGoodya/DeepMath-R1-Distill-Qwen-7B
 - Repositorio GitHub: https://github.com/SoFarSoGoodya/DeepMath
 - Modelo base DeepSeek-R1-Distill-Qwen-7B: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Dataset NuminaMath-CoT: https://huggingface.co/datasets/AI-MO/NuminaMath-CoT

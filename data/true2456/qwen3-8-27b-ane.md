@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-ANE es un paquete de inferencia publicado por el usuario True2456 en HuggingFace, orientado a ejecutar un modelo de la familia Qwen (denominado Qwen3.8-27B) de forma nativa y exclusiva sobre el Apple Neural Engine (ANE) de los chips Apple Silicon. Se distribuye como un paquete autocontenido de aproximadamente 14,2 GB que incluye los pesos del modelo ya cuantizados a INT4, los embeddings de host, las RMSNorm y la cabeza de salida LM, junto con tokenizer y ficheros de configuracion.
+Qwen3.8-27B-ANE es un paquete de inferencia publicado por el usuario True2456 en Hugging Face, orientado a ejecutar un modelo de la familia Qwen (denominado Qwen3.8-27B) de forma nativa y exclusiva sobre el Apple Neural Engine (ANE) de los chips Apple Silicon. Se distribuye como un paquete autocontenido de aproximadamente 14,2 GB que incluye los pesos del modelo ya cuantizados a INT4, los embeddings de host, las RMSNorm y la cabeza de salida LM, junto con tokenizer y ficheros de configuracion.
 
 El problema que resuelve es la ausencia de rutas de ejecucion eficientes y sin compilacion previa para modelos de ~27B en el ANE: el paquete incorpora un directorio `quant_cache/` con los blobs de pesos INT4 y sus escalas para las 64 capas del modelo (48 denominadas GDN y 16 de atencion), de modo que la inferencia puede arrancar sin recompilar ni descargar pesos externos. Frente a los 52 GB de los pesos base en BF16, el paquete INT4 reduce el espacio a ~14,2 GB, lo que lo hace viable en equipos Apple con memoria unificada moderada.
 
@@ -34,7 +34,7 @@ Lo unico verificable en la informacion disponible es la estructura de despliegue
 - Integracion como backend de agente de codigo mediante la extension `extensions/pure27-pi.ts` del agente Pi, con provider `pure27` y modelo `Qwen3.8-27B`.
 - Ejecucion local en el dispositivo, sin dependencia de servicios en la nube ni de pesos externos, segun la model card.
 - Capacidades de razonamiento, codigo, matematicas, vision, tool calling o modo thinking: no disponible en la informacion proporcionada.
-- Idiomas soportados: no disponible. No hay lista de idiomas en la model card ni en los metadatos de HuggingFace.
+- Idiomas soportados: no disponible. No hay lista de idiomas en la model card ni en los metadatos de Hugging Face.
 
 ## Casos de uso
 
@@ -75,15 +75,15 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 - Riesgo de alucinacion: no cuantificado. Al no existir benchmarks publicados, no se puede estimar la fiabilidad factual del modelo.
 - Idiomas soportados: no disponibles. No se puede asumir un buen rendimiento en castellano sin una evaluacion previa.
 - Contexto: la unica cifra mencionada es 4096 tokens en los ejemplos de la CLI. Se desconoce la ventana real soportada, por lo que asumir contextos mayores es una suposicion no respaldada.
-- Licencia: apache-2.0 segun los metadatos de HuggingFace y la model card, lo que en principio permite uso comercial. Conviene verificar que el modelo base subyacente no imponga condiciones adicionales, algo que la informacion disponible no aclara.
+- Licencia: apache-2.0 segun los metadatos de Hugging Face y la model card, lo que en principio permite uso comercial. Conviene verificar que el modelo base subyacente no imponga condiciones adicionales, algo que la informacion disponible no aclara.
 - Dependencia de plataforma: el paquete es especifico para Apple Neural Engine. No hay ruta de ejecucion en Linux, Windows o GPU discrete, lo que limita su uso en produccion sobre infraestructura convencional.
-- Madurez: 0 descargas y 0 likes en HuggingFace, creado el 2026-09-14 y actualizado ese mismo dia, sin historial de mantenimiento. El repositorio se publicita con `pip install -e .` desde un repositorio personal, sin senales de auditoria externa.
-- Inconsistencia documental: el tamano del repositorio en HuggingFace figura como 0.0 GB, mientras que la model card declara ~14,2 GB de contenido. Conviene verificar los ficheros reales antes de integrarlo en cualquier flujo.
+- Madurez: 0 descargas y 0 likes en Hugging Face, creado el 2026-09-14 y actualizado ese mismo dia, sin historial de mantenimiento. El repositorio se publicita con `pip install -e .` desde un repositorio personal, sin senales de auditoria externa.
+- Inconsistencia documental: el tamano del repositorio en Hugging Face figura como 0.0 GB, mientras que la model card declara ~14,2 GB de contenido. Conviene verificar los ficheros reales antes de integrarlo en cualquier flujo.
 - Ausencia de benchmarks y de datos de latencia: no hay evidencia publica de que el rendimiento en ANE sea competitivo con alternativas en GPU.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/True2456/Qwen3.8-27B-ANE
+- Hugging Face: https://huggingface.co/True2456/Qwen3.8-27B-ANE
 - Repositorio de la CLI y extensiones: https://github.com/True2456/Rindi
 - Paper, blog o demo oficial: no disponible
 - Los resultados de la busqueda web realizada no contienen enlaces relevantes al modelo; consisten en listados de casinos en linea sin relacion con el contenido solicitado.

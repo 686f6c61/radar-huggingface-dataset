@@ -67,11 +67,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DROID-open-drawer-molmoact2 (este) | 5.442 M | no disponible | other | HuggingFace, LeRobot |
-| GR00T N1.7 (NVIDIA) | ~3 B (según checkpoint base) | no disponible | no disponible | HuggingFace (`nvidia/GR00T-N1.7-3B`) |
+| DROID-open-drawer-molmoact2 (este) | 5.442 M | no disponible | other | Hugging Face, LeRobot |
+| GR00T N1.7 (NVIDIA) | ~3 B (según checkpoint base) | no disponible | no disponible | Hugging Face (`nvidia/GR00T-N1.7-3B`) |
 | π0.5 (openpi) | no disponible | no disponible | no disponible | Checkpoint en `gs://openpi-assets` |
-| G0.5 (OpenGalaxea) | no disponible | no disponible | no disponible | HuggingFace (`OpenGalaxea/G05`) |
-| LingBot-VLA v2 6B | 6 B (según nombre) | no disponible | no disponible | HuggingFace (`robbyant/lingbot-vla-v2-6b`) |
+| G0.5 (OpenGalaxea) | no disponible | no disponible | no disponible | Hugging Face (`OpenGalaxea/G05`) |
+| LingBot-VLA v2 6B | 6 B (según nombre) | no disponible | no disponible | Hugging Face (`robbyant/lingbot-vla-v2-6b`) |
 
 No se dispone de métricas de éxito comparativas publicadas en la información proporcionada; la comparación se limita a tamaño, procedencia y disponibilidad.
 
@@ -88,7 +88,7 @@ No se dispone de métricas de éxito comparativas publicadas en la información 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RoboColosseum/droid-open-drawer-molmoact2
+- Hugging Face: https://huggingface.co/RoboColosseum/droid-open-drawer-molmoact2
 - Suite de 5 épocas: https://huggingface.co/RoboColosseum/DROID-models
 - Suite bimanual YAM: https://huggingface.co/RoboColosseum/BimanualYAM-models
 - Checkpoint base: https://huggingface.co/allenai/MolmoAct2

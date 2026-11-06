@@ -104,7 +104,7 @@ La comparativa relevante es interna al programa: el 4B INT4 iguala prácticament
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SKOPION-Intelligence/skopion-verdict-4b-v15.0-pico-int4
+- Modelo en Hugging Face: https://huggingface.co/SKOPION-Intelligence/skopion-verdict-4b-v15.0-pico-int4
 - Programa de investigación SKOPION Verdict: https://skopion.de/de/forschung-innovation/skopion-verdict-ki-forschungsprogramm
 - Licencia: https://skopion.de/de/forschung-innovation/skopion-verdict-ki-forschungsprogramm
 - Dataset de evaluación: https://huggingface.co/SKOPION-Intelligence/SKOPION-Verdict-Bench-56Suites

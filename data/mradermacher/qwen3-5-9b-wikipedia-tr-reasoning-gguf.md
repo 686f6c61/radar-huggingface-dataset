@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-9B-Wikipedia-TR-Reasoning-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-9B-Wikipedia-TR-Reasoning-GGUF
 - Modelo base (CPT): https://huggingface.co/zero9tech/Qwen3.5-9B-Wikipedia-TR-CPT
 - Pagina de resumen del autor: https://hf.tst.eu/model#Qwen3.5-9B-Wikipedia-TR-Reasoning-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/wikimedia/wikipedia

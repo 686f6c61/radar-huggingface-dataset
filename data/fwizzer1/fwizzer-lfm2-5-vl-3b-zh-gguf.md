@@ -23,7 +23,7 @@ Su relevancia practica es la de un VLM de ~3B ejecutable en hardware de consumo:
 
 ## Arquitectura y entrenamiento
 
-La model card describe el modelo como una "Hybrid Liquid Neural Network" con un backbone de 2.690 millones de parametros y una torre de vision SigLIP2 de 400 millones de parametros. El pipeline declarado en HuggingFace es `image-text-to-text`, es decir, entrada conjunta de imagen y texto con salida de texto. El proyector multimodal se distribuye de forma independiente como `mmproj-LFM2.5-VL-3B-f16.gguf`, algo habitual en llama.cpp para modelos con vision. No se detalla en la informacion proporcionada la composicion exacta de capas (atencion, convoluciones de corto alcance u otros componentes del backbone LFM).
+La model card describe el modelo como una "Hybrid Liquid Neural Network" con un backbone de 2.690 millones de parametros y una torre de vision SigLIP2 de 400 millones de parametros. El pipeline declarado en Hugging Face es `image-text-to-text`, es decir, entrada conjunta de imagen y texto con salida de texto. El proyector multimodal se distribuye de forma independiente como `mmproj-LFM2.5-VL-3B-f16.gguf`, algo habitual en llama.cpp para modelos con vision. No se detalla en la informacion proporcionada la composicion exacta de capas (atencion, convoluciones de corto alcance u otros componentes del backbone LFM).
 
 El ajuste fino se realizo sobre un dataset privado, `fwizzer1/fwizzer-v3-titan-agentic`, del que solo se indica el fichero `train_zh.parquet` con 17.743 muestras. No se especifica el numero total de tokens de entrenamiento, la composicion del corpus, ni si se aplicaron tecnicas de RLHF, DPO u otras alineaciones posteriores. Los tags incluyen `deepseek-r1`, `cot` y `chain-of-thought`, lo que sugiere un estilo de razonamiento heredado de modelos tipo R1 con trazas de pensamiento explicitas. Las etiquetas de la model card mencionan tambien `liquid` y `lfm2.5`, consistentes con la familia base de Liquid AI.
 
@@ -84,13 +84,13 @@ No se dispone de datos verificados de terceros en la informacion proporcionada p
 - Idiomas: solo chino e ingles. No hay soporte declarado de castellano, por lo que su uso en espanol no esta garantizado ni evaluado.
 - La model card describe un "Pure Reasoning Engine: Reflexive, uninhibited analytical problem solving". El termino "uninhibited" sugiere una posible reduccion de los mecanismos de rechazo o alineacion de seguridad; conviene evaluar el comportamiento del modelo ante peticiones sensibles antes de cualquier despliegue publico.
 - Licencia: se declara `license: other` con `license_name: lfm1.0`, pero los terminos concretos no se detallan en la informacion proporcionada. Es imprescindible revisar el texto completo de la licencia LFM Open License v1.0 antes de un uso comercial.
-- Anomalia de metadatos: la fecha de creacion indicada en HuggingFace es 2026-09-13, posterior a la fecha habitual de publicacion, lo que apunta a un posible error de metadatos del repositorio.
+- Anomalia de metadatos: la fecha de creacion indicada en Hugging Face es 2026-09-13, posterior a la fecha habitual de publicacion, lo que apunta a un posible error de metadatos del repositorio.
 - Coherencia de la model card: mezcla contenido en ingles, ruso y chino, e incluye un system prompt predefinido en chino; la temperatura, top-p, min-p y penalizacion de repeticion recomendadas (0,6 / 0,95 / 0,05 / 1,05) son especificas de este ajuste y pueden degradar resultados con otros valores.
 - No se confirma soporte de tool calling ni de flujos agenticos multietapa, pese a que el nombre del dataset incluya "agentic".
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fwizzer1/Fwizzer-LFM2.5-VL-3B-ZH-GGUF
+- Modelo en Hugging Face: https://huggingface.co/fwizzer1/Fwizzer-LFM2.5-VL-3B-ZH-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - Dataset de entrenamiento (privado, referenciado): https://huggingface.co/datasets/fwizzer1/fwizzer-v3-titan-agentic
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada; los resultados obtenidos no guardan ninguna relacion con este modelo.

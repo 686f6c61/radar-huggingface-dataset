@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shadowmode es un repositorio de modelo publicado en HuggingFace por el usuario aryansexter bajo la identificacion `aryansexter/Shadowmode`. En el momento de redactar esta ficha, la model card asociada contiene unicamente la declaracion de licencia (`license: apache-2.0`) y ningun otro contenido tecnico: no hay descripcion del modelo, ni arquitectura declarada, ni tamano de parametros, ni ventana de contexto, ni datos de entrenamiento, ni ejemplos de uso. El repositorio registra 0 descargas y 0 me gusta, y sus unicos tags son `license:apache-2.0` y `region:us`.
+Shadowmode es un repositorio de modelo publicado en Hugging Face por el usuario aryansexter bajo la identificacion `aryansexter/Shadowmode`. En el momento de redactar esta ficha, la model card asociada contiene unicamente la declaracion de licencia (`license: apache-2.0`) y ningun otro contenido tecnico: no hay descripcion del modelo, ni arquitectura declarada, ni tamano de parametros, ni ventana de contexto, ni datos de entrenamiento, ni ejemplos de uso. El repositorio registra 0 descargas y 0 me gusta, y sus unicos tags son `license:apache-2.0` y `region:us`.
 
 Esto significa que no es posible verificar si Shadowmode es un modelo de lenguaje, un clasificador, un adaptador LoRA, un merge de pesos, un modelo de difusion u otro tipo de artefacto. Tampoco se puede confirmar que existan pesos subidos al repositorio, ya que la informacion disponible no incluye el listado de ficheros ni el tamano del repositorio. Las fechas de creacion y ultima actualizacion son identicas (2026-09-22T17:29:48Z), lo que sugiere una publicacion sin mantenimiento posterior, si bien la propia marca temporal no es verificable con los datos aportados.
 
@@ -40,7 +40,7 @@ No disponible. No se ha publicado ninguna descripcion de capacidades en la infor
 - Capacidades especiales como modo de razonamiento explicito (thinking), vision, audio o multimodalidad.
 - Capacidad de seguir instrucciones o de mantener conversaciones multi-turno.
 
-La etiqueta `region:us` es una marca de disponibilidad geografica de HuggingFace y no aporta informacion funcional sobre el modelo.
+La etiqueta `region:us` es una marca de disponibilidad geografica de Hugging Face y no aporta informacion funcional sobre el modelo.
 
 ## Casos de uso
 
@@ -70,7 +70,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura ni los forma
 
 ## Comparativa con modelos similares
 
-No disponible. No es posible identificar modelos comparables porque se desconoce la categoria del artefacto (tamano, modalidad y tarea). La unica caracteristica comun verificable con otros repositorios de HuggingFace es la licencia apache-2.0, que es una licencia permisiva habitual y no permite establecer comparaciones tecnicas.
+No disponible. No es posible identificar modelos comparables porque se desconoce la categoria del artefacto (tamano, modalidad y tarea). La unica caracteristica comun verificable con otros repositorios de Hugging Face es la licencia apache-2.0, que es una licencia permisiva habitual y no permite establecer comparaciones tecnicas.
 
 ## Limitaciones y advertencias
 
@@ -85,6 +85,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aryansexter/Shadowmode
+- Modelo en Hugging Face: https://huggingface.co/aryansexter/Shadowmode
 
 No se han encontrado otros enlaces relevantes. Los resultados de la busqueda web realizada no guardan relacion con el modelo: corresponden a consultas tecnicas sobre XAMPP, PHP y MySQL, sin conexion con `aryansexter/Shadowmode`, por lo que se omiten. No hay papers, blogs, repositorios de codigo ni demos asociados al modelo en la informacion disponible.

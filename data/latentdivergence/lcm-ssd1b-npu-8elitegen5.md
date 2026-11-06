@@ -98,7 +98,7 @@ Los modelos comparables son, en la practica, las otras compilaciones del mismo a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/latentdivergence/lcm-ssd1b-npu-8elitegen5
+- Modelo en Hugging Face: https://huggingface.co/latentdivergence/lcm-ssd1b-npu-8elitegen5
 - Modelo base: https://huggingface.co/latent-consistency/lcm-ssd-1b
 - Codificadores de texto y tokenizer compartidos: https://huggingface.co/latentdivergence/sdxl-lightning-4step-int8
 - VAE decoder de origen: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix

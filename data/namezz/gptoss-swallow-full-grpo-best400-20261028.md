@@ -2,11 +2,11 @@
 
 ## Resumen
 
-GPT-OSS-Swallow Full GRPO Best400 es un checkpoint de ajuste fino por aprendizaje por refuerzo (GRPO) sobre el modelo base tokyotech-llm/GPT-OSS-Swallow-20B-SFT-v0.1, un modelo de aproximadamente 20.900 millones de parametros derivado de la familia GPT-OSS. Lo publica el usuario namezz en HuggingFace bajo licencia Apache 2.0. El modelo esta pensado para tareas de razonamiento matematico y resolucion de problemas, y el checkpoint publicado corresponde al punto de entrenamiento con mejor precision macro observada (89,32 %) dentro de una campana de RL que fue detenida por decision del usuario.
+GPT-OSS-Swallow Full GRPO Best400 es un checkpoint de ajuste fino por aprendizaje por refuerzo (GRPO) sobre el modelo base tokyotech-llm/GPT-OSS-Swallow-20B-SFT-v0.1, un modelo de aproximadamente 20.900 millones de parametros derivado de la familia GPT-OSS. Lo publica el usuario namezz en Hugging Face bajo licencia Apache 2.0. El modelo esta pensado para tareas de razonamiento matematico y resolucion de problemas, y el checkpoint publicado corresponde al punto de entrenamiento con mejor precision macro observada (89,32 %) dentro de una campana de RL que fue detenida por decision del usuario.
 
 La relevancia de esta ficha es doble. Por un lado, documenta un artefacto de investigacion reproducible: el autor publica no solo los pesos exportados a safetensors, sino tambien un archivo de experimento con los estados nativos del optimizador, scheduler, RNG y sampler, lo que permite reanudar el entrenamiento en condiciones controladas. Por otro, el propio autor advierte de que el proceso de RL se interrumpio, de que solo hay una semilla de entrenamiento y de que los intervalos de confianza son descriptivos, por lo que las cifras deben interpretarse con cautela.
 
-El checkpoint se entrena sobre un backbone congelado de 20B y aplica GRPO completo (no solo soft-prompt). El resultado es un modelo de chat/razonamiento en formato HuggingFace, sin cuantizaciones publicadas ni idiomas declarados en la model card.
+El checkpoint se entrena sobre un backbone congelado de 20B y aplica GRPO completo (no solo soft-prompt). El resultado es un modelo de chat/razonamiento en formato Hugging Face, sin cuantizaciones publicadas ni idiomas declarados en la model card.
 
 ## Especificaciones tecnicas
 
@@ -81,8 +81,8 @@ No se han publicado resultados desglosados por benchmark (AIME2024, AIME2025, MA
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | GPT-OSS-Swallow Full GRPO Best400 (este) | 20,9B | no disponible | Apache 2.0 | Pesos safetensors + archivo de experimento | Checkpoint de RL, 89,32 % macro en AIME/MATH500 |
-| tokyotech-llm/GPT-OSS-Swallow-20B-SFT-v0.1 | 20B (aprox.) | no disponible | no disponible en esta ficha | HuggingFace | Modelo base SFT del que parte este checkpoint |
-| Familia GPT-OSS original | no disponible | no disponible | no disponible en esta ficha | HuggingFace | Arquitectura de referencia |
+| tokyotech-llm/GPT-OSS-Swallow-20B-SFT-v0.1 | 20B (aprox.) | no disponible | no disponible en esta ficha | Hugging Face | Modelo base SFT del que parte este checkpoint |
+| Familia GPT-OSS original | no disponible | no disponible | no disponible en esta ficha | Hugging Face | Arquitectura de referencia |
 
 No se dispone de datos de benchmarks de los modelos comparables en la informacion proporcionada, por lo que no es posible una comparacion cuantitativa de rendimiento.
 
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/namezz/gptoss-swallow-full-grpo-best400-20261028
+- Modelo en Hugging Face: https://huggingface.co/namezz/gptoss-swallow-full-grpo-best400-20261028
 - Archivo de experimento: https://huggingface.co/datasets/namezz/gptoss-full-sp-rl-stopped-20261028
 - Modelo base: https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-20B-SFT-v0.1
 - Repositorio GitHub: privado segun la model card, no disponible publicamente.

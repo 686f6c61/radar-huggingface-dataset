@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PixelBench-Qwen3-VL-4B-PRT | ~4,83 B | no disponible | Apache 2.0 | HuggingFace (haoquan03) |
-| Qwen3-VL-4B-Instruct (modelo base) | ~4 B (no confirmado en la informacion) | no disponible | no disponible en esta ficha | HuggingFace (Qwen) |
+| PixelBench-Qwen3-VL-4B-PRT | ~4,83 B | no disponible | Apache 2.0 | Hugging Face (haoquan03) |
+| Qwen3-VL-4B-Instruct (modelo base) | ~4 B (no confirmado en la informacion) | no disponible | no disponible en esta ficha | Hugging Face (Qwen) |
 | Otros modelos de la familia PixelBench | no disponible | no disponible | no disponible | Repositorio del proyecto |
 
 La comparacion con alternativas de la misma categoria (modelos vision-lenguaje de ~4 B para VQA y generacion visual) no puede completarse con datos de rendimiento porque no se han publicado benchmarks en la informacion disponible.
@@ -84,7 +84,7 @@ La comparacion con alternativas de la misma categoria (modelos vision-lenguaje d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haoquan03/PixelBench-Qwen3-VL-4B-PRT
+- Modelo en Hugging Face: https://huggingface.co/haoquan03/PixelBench-Qwen3-VL-4B-PRT
 - Proyecto PixelBench: https://haoquanzhang.github.io/pixelbench/
 - Codigo y evaluacion: https://github.com/HaoquanZhang/PixelBench
 - Paper (arXiv, referencia TBA en la model card): https://haoquanzhang.github.io/pixelbench/

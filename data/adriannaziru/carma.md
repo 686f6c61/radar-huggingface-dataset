@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `AdrianNaziru/CARMA` en HuggingFace no contiene información técnica sustancial. La model card únicamente declara la licencia Apache 2.0, sin descripción del modelo, arquitectura, parámetros, idiomas ni pipeline asociado. El tamaño del repositorio es de 0,6 GB, lo que sugiere que podría contener pesos de un modelo, pero no se especifica qué tipo de modelo es ni para qué tarea está diseñado.
+El repositorio `AdrianNaziru/CARMA` en Hugging Face no contiene información técnica sustancial. La model card únicamente declara la licencia Apache 2.0, sin descripción del modelo, arquitectura, parámetros, idiomas ni pipeline asociado. El tamaño del repositorio es de 0,6 GB, lo que sugiere que podría contener pesos de un modelo, pero no se especifica qué tipo de modelo es ni para qué tarea está diseñado.
 
-El nombre "CARMA" coincide con varias iniciativas no relacionadas entre sí: un toolkit de Python para series temporales de núcleos activos de galaxias (EzTao), una plataforma de análisis de medios (Carma AI), un método de regularización para modelos de lenguaje (paper arXiv 2502.11066) y un proyecto de modelado de corrosión. Ninguna de estas referencias parece corresponder al contenido de este repositorio de HuggingFace.
+El nombre "CARMA" coincide con varias iniciativas no relacionadas entre sí: un toolkit de Python para series temporales de núcleos activos de galaxias (EzTao), una plataforma de análisis de medios (Carma AI), un método de regularización para modelos de lenguaje (paper arXiv 2502.11066) y un proyecto de modelado de corrosión. Ninguna de estas referencias parece corresponder al contenido de este repositorio de Hugging Face.
 
 Dada la ausencia de documentación y de actividad (0 descargas, 0 likes), no es posible determinar qué modelo contiene este repositorio ni evaluar su utilidad. Se recomienda contactar con el autor o consultar el repositorio directamente para obtener información adicional.
 
@@ -55,6 +55,6 @@ No disponible. Al no conocer la arquitectura ni el propósito del modelo, no es 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AdrianNaziru/CARMA
+- Repositorio en Hugging Face: https://huggingface.co/AdrianNaziru/CARMA
 
 No se han encontrado otros enlaces relevantes asociados a este modelo específico. Las referencias web sobre "CARMA" corresponden a proyectos distintos y no deben considerarse como documentación de este repositorio.

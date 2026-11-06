@@ -71,6 +71,6 @@ No disponible. No se proporcionan datos de comparación con otros modelos de tam
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/syvai/qwen3.8-27b-3090-fast-variant
+- Repositorio de Hugging Face: https://huggingface.co/syvai/qwen3.8-27b-3090-fast-variant
 - Repositorio de GitHub con instrucciones y parches: https://github.com/syv-ai/qwen38-27b-rtx3090
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B

@@ -4,7 +4,7 @@
 
 UltraFedFM es un modelo fundacional para imagen de ecografía (ultrasound) preentrenado de forma autosupervisada mediante un autoencoder enmascarado (MAE) y con un esquema de aprendizaje federado en el que participaron 16 instituciones sin compartir datos brutos entre ellas. El resultado es un encoder de representaciones visuales entrenado sobre aproximadamente 1 millón de imágenes que cubren 19 órganos y 10 modalidades ecográficas, pensado para servir como punto de partida en tareas posteriores de diagnóstico y segmentación.
 
-La ficha corresponde al repositorio `fmassimo/UltraFedFM` de HuggingFace, que es un espejo no oficial y sin modificaciones del modelo original. El código y los pesos originales los publican los autores en el repositorio `yuncheng97/UltraFedFM` de GitHub y en los enlaces de OneDrive, Google Drive y Baidu que figuran en su README; el trabajo se publicó en npj Digital Medicine 8, 714 (2025) y su preprint está disponible en arXiv (2411.16380).
+La ficha corresponde al repositorio `fmassimo/UltraFedFM` de Hugging Face, que es un espejo no oficial y sin modificaciones del modelo original. El código y los pesos originales los publican los autores en el repositorio `yuncheng97/UltraFedFM` de GitHub y en los enlaces de OneDrive, Google Drive y Baidu que figuran en su README; el trabajo se publicó en npj Digital Medicine 8, 714 (2025) y su preprint está disponible en arXiv (2411.16380).
 
 Su relevancia actual es doble. Por un lado, demuestra que es viable entrenar un modelo fundacional médico de forma federada preservando la privacidad de los datos de cada centro. Por otro, ofrece a grupos de investigación y desarrolladores un encoder preentrenado en dominio ecográfico, listo para ajuste fino con pocas etiquetas. No es un modelo generativo de texto: la información disponible no especifica el backbone exacto ni el número de parámetros.
 
@@ -81,7 +81,7 @@ No disponible. La información proporcionada no incluye especificaciones, métri
 
 ## Enlaces
 
-- Repositorio de HuggingFace (espejo): https://huggingface.co/fmassimo/UltraFedFM
+- Repositorio de Hugging Face (espejo): https://huggingface.co/fmassimo/UltraFedFM
 - Código original: https://github.com/yuncheng97/UltraFedFM
 - Preprint en arXiv: https://arxiv.org/abs/2411.16380
 - Artículo en npj Digital Medicine: https://www.nature.com/npjdigitalmed (Jiang, Y. et al., npj Digital Medicine 8, 714, 2025)

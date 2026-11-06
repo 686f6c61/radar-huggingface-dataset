@@ -66,16 +66,16 @@ No se dispone de datos de rendimiento comparativos. Estructuralmente, PAX-Coder 
 - El modelo solo soporta inglés, lo que limita su uso en entornos multilingües.
 - No se han publicado evaluaciones de sesgos o riesgos de alucinación. Dado que es un modelo especializado en código, puede generar código incorrecto o pruebas inválidas si la entrada es ambigua.
 - La verificación formal con Lean 4 solo cubre los aspectos especificados en la prueba; no garantiza la corrección absoluta del kernel en todos los escenarios de ejecución.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es un proyecto reciente o poco validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un proyecto reciente o poco validado por la comunidad.
 - No se especifica la longitud de contexto, por lo que no se conocen los límites de entrada para prompts largos.
 - El modelo está orientado a arquitecturas NVIDIA específicas (sm_86, sm_89); el código PTX generado puede no ser portable a otras GPUs.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Snapkitty/pax-coder)
+- [Modelo en Hugging Face](https://huggingface.co/Snapkitty/pax-coder)
 - [Repositorio GitHub SNAPKITTYWEST/pax-coder](https://github.com/SNAPKITTYWEST/pax-coder)
 - [MODEL_CARD.md en GitHub](https://github.com/SNAPKITTYWEST/pax-coder/blob/master/MODEL_CARD.md)
-- [Perfil de SNAPKITTYWEST en HuggingFace](https://huggingface.co/SNAPKITTYWEST)
+- [Perfil de SNAPKITTYWEST en Hugging Face](https://huggingface.co/SNAPKITTYWEST)
 - [SnapKitty Downloads — Sovereign OS Ecosystem](https://collectivekitty.com/downloads)
 - [Snapkitty/nvidia-stack](https://huggingface.co/Snapkitty/nvidia-stack)
 - [Snapkitty/assembly-bite](https://huggingface.co/Snapkitty/assembly-bite)

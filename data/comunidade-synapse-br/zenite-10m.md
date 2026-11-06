@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Zenite-10M es un modelo de lenguaje causal publicado en HuggingFace por la organizacion Comunidade-Synapse-BR bajo el identificador `Comunidade-Synapse-BR/Zenite-10M`. Por las etiquetas declaradas en su ficha (`gpt2`, `causal-language-model`, `text-generation`, `transformers`, `safetensors`) se trata de un transformer decoder-only de tipo GPT-2 orientado a generacion de texto, presumiblemente entrenado sobre corpus en portugues de Brasil. El sufijo "10M" del nombre sugiere un tamano de aproximadamente 10 millones de parametros, lo que lo situa en la categoria de modelos muy pequenos o "toy models".
+Zenite-10M es un modelo de lenguaje causal publicado en Hugging Face por la organizacion Comunidade-Synapse-BR bajo el identificador `Comunidade-Synapse-BR/Zenite-10M`. Por las etiquetas declaradas en su ficha (`gpt2`, `causal-language-model`, `text-generation`, `transformers`, `safetensors`) se trata de un transformer decoder-only de tipo GPT-2 orientado a generacion de texto, presumiblemente entrenado sobre corpus en portugues de Brasil. El sufijo "10M" del nombre sugiere un tamano de aproximadamente 10 millones de parametros, lo que lo situa en la categoria de modelos muy pequenos o "toy models".
 
-El modelo esta pensado para tareas de generacion de texto y aparece etiquetado como compatible con Text Generation Inference y con endpoints serverless de HuggingFace. No es un modelo de proposito general ni compite con los grandes modelos actuales: su interes esta en experimentacion, prototipado rapido, docencia y despliegues en hardware extremadamente limitado (CPU, microcontroladores, entornos embebidos).
+El modelo esta pensado para tareas de generacion de texto y aparece etiquetado como compatible con Text Generation Inference y con endpoints serverless de Hugging Face. No es un modelo de proposito general ni compite con los grandes modelos actuales: su interes esta en experimentacion, prototipado rapido, docencia y despliegues en hardware extremadamente limitado (CPU, microcontroladores, entornos embebidos).
 
-La relevancia actual de este tipo de publicaciones reside en la existencia de un ecosistema activo de modelos ligeros para portugues, una lengua con representacion relativamente baja en los grandes corpus de entrenamiento. No obstante, la ficha de HuggingFace no incluye informacion sobre licencia, idiomas oficiales, datos de entrenamiento ni resultados de evaluacion, por lo que gran parte de sus especificaciones no pueden confirmarse y se marcan como no disponibles a lo largo de este documento.
+La relevancia actual de este tipo de publicaciones reside en la existencia de un ecosistema activo de modelos ligeros para portugues, una lengua con representacion relativamente baja en los grandes corpus de entrenamiento. No obstante, la ficha de Hugging Face no incluye informacion sobre licencia, idiomas oficiales, datos de entrenamiento ni resultados de evaluacion, por lo que gran parte de sus especificaciones no pueden confirmarse y se marcan como no disponibles a lo largo de este documento.
 
 ## Especificaciones tecnicas
 
@@ -39,7 +39,7 @@ No hay informacion disponible sobre el numero de tokens de entrenamiento, la com
 ## Casos de uso
 
 - Experimentacion academica y docencia: por su tamano minimo, es adecuado para ilustrar el funcionamiento de un transformer decoder-only, analizar distribuciones de atencion o ensenar tecnicas de fine-tuning sin necesidad de grandes recursos.
-- Pruebas de pipelines de HuggingFace `transformers` y de Text Generation Inference: sirve como modelo de humo (smoke test) para validar que una infraestructura de despliegue funciona antes de cargar un modelo mayor.
+- Pruebas de pipelines de Hugging Face `transformers` y de Text Generation Inference: sirve como modelo de humo (smoke test) para validar que una infraestructura de despliegue funciona antes de cargar un modelo mayor.
 - Prototipado rapido en local: permite iterar sobre interfaces, APIs y flujos de generacion de texto en un portatil o incluso en CPU sin GPU.
 - Generacion de texto auxiliar de baja exigencia: completado de frases cortas, generacion de plantillas o textos de relleno donde la calidad no es critica.
 - Base para fine-tuning especifico de dominio: al ser tan pequeno, se puede reentrenar en un corpus pequeno en portugues (por ejemplo, titulares, resenas o transcripciones) en minutos u horas, no en dias.
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Idiomas |
 |---|---|---|---|---|---|
-| Zenite-10M | ~10 M (inferido) | No disponible | No disponible | HuggingFace | Portugues (segun etiquetas) |
-| GPT-2 small | 124 M | 1024 tokens | MIT | HuggingFace | Ingles principalmente |
-| Modelos tipo "tiny" de la comunidad portuguesa | Variable | No disponible | Variable | HuggingFace | Portugues |
+| Zenite-10M | ~10 M (inferido) | No disponible | No disponible | Hugging Face | Portugues (segun etiquetas) |
+| GPT-2 small | 124 M | 1024 tokens | MIT | Hugging Face | Ingles principalmente |
+| Modelos tipo "tiny" de la comunidad portuguesa | Variable | No disponible | Variable | Hugging Face | Portugues |
 
 No hay datos de rendimiento publicados para Zenite-10M que permitan una comparacion cuantitativa con alternativas. La comparacion anterior es meramente estructural (tamano y categoria) y no implica superioridad ni inferioridad en ninguna tarea.
 
@@ -82,6 +82,6 @@ No hay datos de rendimiento publicados para Zenite-10M que permitan una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Comunidade-Synapse-BR/Zenite-10M
-- Organizacion en HuggingFace: https://huggingface.co/Comunidade-Synapse-BR
+- Modelo en Hugging Face: https://huggingface.co/Comunidade-Synapse-BR/Zenite-10M
+- Organizacion en Hugging Face: https://huggingface.co/Comunidade-Synapse-BR
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

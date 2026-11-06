@@ -101,7 +101,7 @@ Alternativas de la misma categoria (adaptadores de ablacion direccional sobre ot
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MorinoNushi/GLM-5.3-Flash-Heretic-Abliterated-LoRA-V2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/MorinoNushi/GLM-5.3-Flash-Heretic-Abliterated-LoRA-V2-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Herramienta heretic-gguf: https://github.com/MoriNoNushi/heretic-gguf
 - Proyecto Heretic original: https://github.com/p-e-w/heretic

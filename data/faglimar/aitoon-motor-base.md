@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones: la compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Faglimar/aitoon-motor-base
+- Repositorio en Hugging Face: https://huggingface.co/Faglimar/aitoon-motor-base
 - Origen del modelo de edicion (ComfyUI): https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI
 - Modelo original de edicion: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Origen de los pesos de generacion y del text encoder (ComfyUI): https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI

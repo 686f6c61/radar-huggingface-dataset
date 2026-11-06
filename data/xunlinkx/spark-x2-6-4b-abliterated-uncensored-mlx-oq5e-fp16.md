@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 - Solo 52 descargas y 0 likes en el momento de la consulta, lo que indica escasa validacion por parte de la comunidad.
 
 ## Enlaces
-- HuggingFace del checkpoint: https://huggingface.co/xunlinkx/Spark-X2.6-4B-Abliterated-Uncensored-MLX-oQ5e-fp16
+- Hugging Face del checkpoint: https://huggingface.co/xunlinkx/Spark-X2.6-4B-Abliterated-Uncensored-MLX-oQ5e-fp16
 - Modelo fuente uncensored: https://huggingface.co/electroglyph/Spark-X2.6-4B-uncensored
 - Modelo oficial: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Repositorio oficial del proyecto: https://github.com/XHToken/Spark-X2.6

@@ -92,7 +92,7 @@ Los tres modelos de comparacion pertenecen a la misma serie de conversiones de Z
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zeromodels/paraphrase-MiniLM-L3-v2
+- Repositorio Hugging Face: https://huggingface.co/zeromodels/paraphrase-MiniLM-L3-v2
 - Checkpoint original: https://huggingface.co/sentence-transformers/paraphrase-MiniLM-L3-v2
 - Revision fijada del checkpoint original: https://huggingface.co/sentence-transformers/paraphrase-MiniLM-L3-v2/tree/4ca70771034acceecb2e72475f72050fcdde4ddc
 - Repositorio GitHub de ZeroModels: https://github.com/IMvision12/ZeroModels

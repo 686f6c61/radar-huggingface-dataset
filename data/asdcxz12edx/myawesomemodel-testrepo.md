@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario ASDCXZ12EDX bajo licencia MIT. La informacion disponible es escasa y contradice en parte la model card: las etiquetas del repositorio lo clasifican como `bert` para `feature-extraction` con pesos en PyTorch, mientras que el README describe un asistente conversacional de razonamiento con modo de pensamiento, function calling y busqueda web. No se especifica en ningun momento el numero de parametros, la arquitectura concreta ni la longitud de contexto.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario ASDCXZ12EDX bajo licencia MIT. La informacion disponible es escasa y contradice en parte la model card: las etiquetas del repositorio lo clasifican como `bert` para `feature-extraction` con pesos en PyTorch, mientras que el README describe un asistente conversacional de razonamiento con modo de pensamiento, function calling y busqueda web. No se especifica en ningun momento el numero de parametros, la arquitectura concreta ni la longitud de contexto.
 
 Segun la model card, se trata de una version mejorada de un modelo previo, con mayor profundidad de razonamiento gracias a mas recursos de computo y optimizaciones en el post-entrenamiento. El autor afirma una mejora en AIME 2025 del 70 % al 87,5 % de acierto, acompanada de un aumento del consumo medio de tokens por pregunta de 12K a 23K, ademas de una reduccion de alucinaciones y mejor soporte de function calling.
 
@@ -85,7 +85,7 @@ Datos adicionales citados en el texto: AIME 2025 pasa del 70 % al 87,5 % de acie
 - VRAM estimada para inferencia: no disponible. Sin conocer el numero de parametros ni la longitud de contexto, no es posible calcular una cifra fiable.
 - GPU recomendadas: no disponible por el mismo motivo.
 - Compatibilidad con GPU de consumo: no disponible. No se puede confirmar si cabe en una RTX 4090, RTX 3090 o similar.
-- Opciones de despliegue: la model card indica que el modelo se puede ejecutar en local y remite a un repositorio de codigo que no se enlaza en la informacion proporcionada. La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: la model card indica que el modelo se puede ejecutar en local y remite a un repositorio de codigo que no se enlaza en la informacion proporcionada. La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponible.
 - Parametros de inferencia recomendados: temperatura 0.6, segun la model card.
 
@@ -107,7 +107,7 @@ No disponible. La model card compara contra "Model1", "Model2" y "Model1-v2" sin
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASDCXZ12EDX/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/ASDCXZ12EDX/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Repositorio de codigo: mencionado en la model card como "our code repository", sin URL incluida
 - Web de chat y API: mencionada en la model card como "our official website", sin URL incluida

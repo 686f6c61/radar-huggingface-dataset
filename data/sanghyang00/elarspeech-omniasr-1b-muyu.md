@@ -6,7 +6,7 @@ ELARSpeech-OmniASR-1B-muyu es un modelo de reconocimiento automatico del habla (
 
 El modelo resuelve una tarea muy concreta: la transcripcion de audio en muyu, una lengua con codigo ISO 639-3 no asignado segun la propia model card. Su relevancia radica en la escasez de recursos de ASR para lenguas de bajos recursos, ya que la mayoria de los sistemas disponibles se centran en unas pocas decenas de idiomas mayoritarios. Al estar construido sobre un modelo base de tipo CTC, el artefacto resulta ligero en requisitos de inferencia y puede ejecutarse sin necesidad de decodificacion autoregresiva.
 
-La publicacion es reciente (creada el 14 de octubre de 2026) y, en el momento de redactar esta ficha, no acumula descargas ni interacciones en HuggingFace. No se especifican la licencia ni el conjunto completo de idiomas soportados, mas alla del idioma objetivo declarado.
+La publicacion es reciente (creada el 14 de octubre de 2026) y, en el momento de redactar esta ficha, no acumula descargas ni interacciones en Hugging Face. No se especifican la licencia ni el conjunto completo de idiomas soportados, mas alla del idioma objetivo declarado.
 
 ## Especificaciones tecnicas
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto / entrada | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ELARSpeech-OmniASR-1B-muyu | ~975,7 M | audio 16 kHz mono; limite no declarado | muyu | no disponible | HuggingFace (transformers, safetensors) |
-| aadel4/omniASR-CTC-1B-v2 (modelo base) | ~1B (declarado) | audio 16 kHz mono | no disponible | no disponible | HuggingFace |
-| facebook/mms-1b-all | ~964 M | audio 16 kHz | mas de 1000 idiomas | CC-BY-NC 4.0 (uso no comercial) | HuggingFace |
-| facebook/wav2vec2-large-960h | ~317 M | audio 16 kHz | ingles | Apache 2.0 (segun el repositorio original) | HuggingFace |
+| ELARSpeech-OmniASR-1B-muyu | ~975,7 M | audio 16 kHz mono; limite no declarado | muyu | no disponible | Hugging Face (transformers, safetensors) |
+| aadel4/omniASR-CTC-1B-v2 (modelo base) | ~1B (declarado) | audio 16 kHz mono | no disponible | no disponible | Hugging Face |
+| facebook/mms-1b-all | ~964 M | audio 16 kHz | mas de 1000 idiomas | CC-BY-NC 4.0 (uso no comercial) | Hugging Face |
+| facebook/wav2vec2-large-960h | ~317 M | audio 16 kHz | ingles | Apache 2.0 (segun el repositorio original) | Hugging Face |
 
 Nota: los datos de parametros y licencias de los modelos comparativos corresponden a informacion publica general y deben verificarse en sus repositorios. No se dispone de resultados de WER comparables para ELARSpeech-OmniASR-1B-muyu, por lo que la comparacion de rendimiento con estas alternativas no esta disponible.
 
@@ -88,7 +88,7 @@ Nota: los datos de parametros y licencias de los modelos comparativos correspond
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-muyu
+- Modelo en Hugging Face: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-muyu
 - Modelo base: https://huggingface.co/aadel4/omniASR-CTC-1B-v2
 - Modelos comparativos de referencia: https://huggingface.co/facebook/mms-1b-all y https://huggingface.co/facebook/wav2vec2-large-960h
 - Documentacion del proyecto ELARSpeech: no disponible en la informacion proporcionada (la model card remite a ella sin enlace explicito)

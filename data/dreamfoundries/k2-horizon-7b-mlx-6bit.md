@@ -75,9 +75,9 @@ No se han publicado datos de modelos comparables en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DreamFoundries/K2-Horizon-7B-MLX-6bit
+- Repositorio Hugging Face: https://huggingface.co/DreamFoundries/K2-Horizon-7B-MLX-6bit
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-7B
 - Perfil de DreamFoundries: https://huggingface.co/DreamFoundries
 - MLXHub: https://mlxhub.app/open-model?repo=DreamFoundries/K2-Horizon-7B-MLX-6bit
-- App MLXHub: https://apps.apple.com/app/apple-store/id6766485144?pt=121945436&ct=HuggingFace&mt=8
+- App MLXHub: https://apps.apple.com/app/apple-store/id6766485144?pt=121945436&ct=Hugging Face&mt=8
 - Noticia sobre el lanzamiento de la flota K2 Horizon: https://aijourn.com/institute-of-foundation-models-launches-the-industrys-largest-fully-open-source-fleet-of-ai-models-complete-with-weights-code-training-data-and-methodologies/

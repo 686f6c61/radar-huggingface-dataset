@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Index-Translate-2B-Joint-0bcfa9dd2254-FP8 es un modelo de traduccion multimodal publicado por IndexTeam en HuggingFace. Se distribuye como un checkpoint cuantizado en FP8 de un modelo mayor de aproximadamente 2B parametros, e integra de forma conjunta modulos de lenguaje, vision y audio en un unico runtime denominado `JointModel`. El pipeline declarado es `translation`, y el modelo acepta entradas de texto, imagen y audio para producir traducciones y transcripciones.
+Index-Translate-2B-Joint-0bcfa9dd2254-FP8 es un modelo de traduccion multimodal publicado por IndexTeam en Hugging Face. Se distribuye como un checkpoint cuantizado en FP8 de un modelo mayor de aproximadamente 2B parametros, e integra de forma conjunta modulos de lenguaje, vision y audio en un unico runtime denominado `JointModel`. El pipeline declarado es `translation`, y el modelo acepta entradas de texto, imagen y audio para producir traducciones y transcripciones.
 
 La relevancia del modelo reside en su enfoque de empaquetado: el autor conserva los pesos de vision en FP32 y los de audio en BF16 sin tocar, mientras cuantiza a FP8 las proyecciones lineales del modulo de lenguaje con escalas por canal y activaciones dinamicas por token (`FP8_DYNAMIC`). Esta mezcla de precisiones busca preservar la fidelidad de los modulos multimodales (que suelen degradarse con cuantizaciones agresivas) a la vez que reduce el peso del backbone de lenguaje.
 
@@ -97,10 +97,10 @@ No se identifican en la informacion proporcionada modelos directamente comparabl
 - No se documentan sesgos conocidos; al no haber informacion sobre datos de entrenamiento, no es posible evaluarlos.
 - El repositorio no incluye GGUF; el pipeline de audio end-to-end solo esta disponible a traves del runtime propio, lo que limita la portabilidad a otros motores de inferencia.
 - La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias sobre calidad en produccion.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IndexTeam/Index-Translate-2B-Joint-0bcfa9dd2254-FP8
+- Hugging Face: https://huggingface.co/IndexTeam/Index-Translate-2B-Joint-0bcfa9dd2254-FP8
 - ModelScope: https://modelscope.cn/models/IndexTeam/Index-Translate-2B-Joint-0bcfa9dd2254-FP8
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

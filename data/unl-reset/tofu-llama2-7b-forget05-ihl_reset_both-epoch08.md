@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch08` | 6.738 M | no disponible (Llama 2: 4.096) | *Unlearning* TOFU (época 8/20) | Llama 2 | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_llama2-7b` | ~6.738 M | 4.096 | Modelo base ajustado en TOFU, sin *unlearning* | Llama 2 | HuggingFace |
-| `NousResearch/Llama-2-7b-chat-hf` | ~6.738 M | 4.096 | Chat alineado de propósito general | Llama 2 | HuggingFace |
-| Llama 2 7B (Meta) | 6.738 M | 4.096 | Modelo base preentrenado | Llama 2 | HuggingFace, Meta |
+| `unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch08` | 6.738 M | no disponible (Llama 2: 4.096) | *Unlearning* TOFU (época 8/20) | Llama 2 | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_llama2-7b` | ~6.738 M | 4.096 | Modelo base ajustado en TOFU, sin *unlearning* | Llama 2 | Hugging Face |
+| `NousResearch/Llama-2-7b-chat-hf` | ~6.738 M | 4.096 | Chat alineado de propósito general | Llama 2 | Hugging Face |
+| Llama 2 7B (Meta) | 6.738 M | 4.096 | Modelo base preentrenado | Llama 2 | Hugging Face, Meta |
 
 La comparación relevante es frente a `locuslab/tofu_ft_llama2-7b` (mismo punto de partida, sin olvido) y frente a otras variantes del mismo colectivo `unl-reset` con distintas épocas o configuraciones de reinicialización, que no se detallan en la información disponible.
 
@@ -85,7 +85,7 @@ La comparación relevante es frente a `locuslab/tofu_ft_llama2-7b` (mismo punto 
 
 ## Enlaces
 
-- [HuggingFace: unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch08](https://huggingface.co/unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch08)
+- [Hugging Face: unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch08](https://huggingface.co/unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch08)
 - [Modelo base: locuslab/tofu_ft_llama2-7b](https://huggingface.co/locuslab/tofu_ft_llama2-7b)
 - [Origen de embeddings y LM head: NousResearch/Llama-2-7b-chat-hf](https://huggingface.co/NousResearch/Llama-2-7b-chat-hf)
 - [Benchmark TOFU (paper)](https://arxiv.org/abs/2401.06121)

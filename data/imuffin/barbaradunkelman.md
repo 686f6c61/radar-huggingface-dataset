@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`imuffin/barbaradunkelman` es un adaptador LoRA de texto a imagen publicado en HuggingFace por el usuario `imuffin`. Se distribuye como un adaptador de difusion (etiqueta `template:diffusion-lora`) pensado para cargarse sobre el modelo base `krea/Krea-2-Raw`, un modelo de generacion de imagenes de la familia Krea. El repositorio ocupa 0,2 GB, esta etiquetado con la libreria `diffusers` y la pipeline declarada es `text-to-image`.
+`imuffin/barbaradunkelman` es un adaptador LoRA de texto a imagen publicado en Hugging Face por el usuario `imuffin`. Se distribuye como un adaptador de difusion (etiqueta `template:diffusion-lora`) pensado para cargarse sobre el modelo base `krea/Krea-2-Raw`, un modelo de generacion de imagenes de la familia Krea. El repositorio ocupa 0,2 GB, esta etiquetado con la libreria `diffusers` y la pipeline declarada es `text-to-image`.
 
 El modelo se presenta en su model card unicamente bajo el nombre "barbara", sin instrucciones de uso, sin prompt de instancia (`instance_prompt: null`) y sin ejemplos textuales de activacion; las imagenes de muestra del widget se generaron en ComfyUI. No hay descripcion del sujeto, del dataset ni del estilo que el adaptador reproduce, por lo que la ficha se limita a los metadatos tecnicos verificables del repositorio.
 
@@ -50,7 +50,7 @@ La model card no documenta la composicion del dataset, el numero de imagenes de 
 - Generacion de material de marketing con identidad de marca: si el concepto aprendido corresponde a una persona o estilo de marca, el adaptador serviria para producir piezas consistentes (cabeceras, banners, avatares) con una apariencia uniforme.
 - Flujos de trabajo en ComfyUI: dado que los ejemplos del widget se generaron en esa interfaz, el caso natural es insertar el LoRA en un grafo de ComfyUI mediante el nodo de carga de LoRA, encadenandolo con muestreadores y escaladores.
 - Pruebas comparativas de adaptadores: util para investigar como se comporta un LoRA de bajo peso (0,2 GB) sobre Krea-2-Raw en terminos de fidelidad al concepto, saturacion de color o perdida de diversidad.
-- Fines educativos y de auditoria: sirve como caso de estudio sobre publicaciones de LoRA sin licencia, sin prompts de activacion y sin documentacion de dataset, util para ensenar buenas practicas de publicacion en HuggingFace.
+- Fines educativos y de auditoria: sirve como caso de estudio sobre publicaciones de LoRA sin licencia, sin prompts de activacion y sin documentacion de dataset, util para ensenar buenas practicas de publicacion en Hugging Face.
 - Sintesis de retratos bajo demanda: si el concepto es una identidad facial, se podria emplear en aplicaciones de generacion de avatares, siempre con las cautelas legales y eticas relativas al derecho de imagen.
 
 ## Benchmarks y rendimiento
@@ -72,7 +72,7 @@ No disponible. No se ha proporcionado informacion sobre otros LoRA de la misma t
 
 ## Limitaciones y advertencias
 
-- La licencia aparece como "no disponible" en HuggingFace, lo que deja sin resolver si se permite el uso comercial del adaptador; en ausencia de terminos explicitos debe asumirse que no hay autorizacion clara.
+- La licencia aparece como "no disponible" en Hugging Face, lo que deja sin resolver si se permite el uso comercial del adaptador; en ausencia de terminos explicitos debe asumirse que no hay autorizacion clara.
 - No se declara prompt de activacion (`instance_prompt: null`), por lo que no se sabe que palabras activan el concepto ni como invocarlo de forma fiable.
 - No hay documentacion sobre el dataset de entrenamiento, lo que impide evaluar procedencia de las imagenes, posibles sesgos de representacion o riesgo de sobreajuste al material original.
 - Si el adaptador reproduce la imagen de una persona real (el nombre del repositorio apunta a una identidad concreta), su uso puede vulnerar derechos de imagen o de publicidad en distintas jurisdicciones, con independencia de la licencia del peso.
@@ -83,7 +83,7 @@ No disponible. No se ha proporcionado informacion sobre otros LoRA de la misma t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imuffin/barbaradunkelman
+- Modelo en Hugging Face: https://huggingface.co/imuffin/barbaradunkelman
 - Archivos del repositorio: https://huggingface.co/imuffin/barbaradunkelman/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la busqueda web realizada.

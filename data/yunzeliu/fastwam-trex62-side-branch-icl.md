@@ -71,7 +71,7 @@ No disponible. No se dispone de informacion sobre modelos comparables en la mism
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/YunzeLiu/fastwam-trex62-side-branch-icl
+- Repositorio Hugging Face: https://huggingface.co/YunzeLiu/fastwam-trex62-side-branch-icl
 - Variante prefilling: https://huggingface.co/YunzeLiu/fastwam-trex62-prefilling-icl
 - Pagina personal del autor: https://yunzeliu.github.io/index.html
 - Dataset VLA2Vec: https://huggingface.co/datasets/wushr-lance/VLA2Vec

@@ -4,7 +4,7 @@
 
 clef-flash-MLX-NVFP4 es una conversión al formato MLX del modelo Cloudflare/clef-flash, publicada por la organización nativ-community y pensada para su ejecución local en Apple Silicon a través de la librería mlx-vlm. No es un modelo generativo de texto: Clef es un *decision model* multimodal que, en una sola pasada forward, devuelve una probabilidad para cada opción de cada pregunta planteada, lo que lo sitúa en la categoría de modelos de clasificación y enrutamiento, no en la de asistentes conversacionales.
 
-El modelo declara 9.531.576.561 parámetros (unos 9,5 mil millones) y se distribuye cuantizado en NVFP4 con tamaño de grupo 16 (4 bits), en un repositorio de 6,2 GB. La tarea declarada en HuggingFace es image-text-to-text y la model card menciona soporte para entradas de texto, imagen, vídeo, dos imágenes e imagen+vídeo, además de parámetros de control de preprocesado como `max_pixels`, `fps` y `num_frames`. La licencia es Apache 2.0.
+El modelo declara 9.531.576.561 parámetros (unos 9,5 mil millones) y se distribuye cuantizado en NVFP4 con tamaño de grupo 16 (4 bits), en un repositorio de 6,2 GB. La tarea declarada en Hugging Face es image-text-to-text y la model card menciona soporte para entradas de texto, imagen, vídeo, dos imágenes e imagen+vídeo, además de parámetros de control de preprocesado como `max_pixels`, `fps` y `num_frames`. La licencia es Apache 2.0.
 
 Su relevancia es acotada pero específica: permite ejecutar en local, sin conexión y sobre hardware de Apple, un modelo multimodal que recibe texto e imagen o vídeo y devuelve distribuciones de probabilidad sobre un conjunto cerrado de opciones. Ese patrón es habitual en triaje de tickets, moderación de contenido y enrutamiento automático de intenciones, donde interesa una etiqueta calibrada y no una respuesta en lenguaje natural.
 
@@ -90,7 +90,7 @@ La única comparación posible es con el propio modelo de origen:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/clef-flash-MLX-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/clef-flash-MLX-NVFP4
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Repositorio mlx-vlm: https://github.com/Blaizzy/mlx-vlm
 - Rama con soporte de Clef: https://github.com/Lazarus-931/mlx-vlm/tree/feat/clef

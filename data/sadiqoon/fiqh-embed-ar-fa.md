@@ -88,7 +88,7 @@ La comparacion directa con bge-m3 es la mas relevante, ya que es el modelo base 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sadiqoon/fiqh-embed-ar-fa
+- Repositorio Hugging Face: https://huggingface.co/sadiqoon/fiqh-embed-ar-fa
 - Repositorio GGUF: https://huggingface.co/sadiqoon/fiqh-embed-ar-fa-gguf
 - Demo interactiva: https://huggingface.co/spaces/sadiqoon/fiqh-embed-demo
 - Paper relacionado (Fanar-Sadiq, arquitectura multiagente para QA islamico): https://arxiv.org/pdf/2603.08501v3

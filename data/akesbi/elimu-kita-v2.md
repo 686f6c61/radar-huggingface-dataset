@@ -13,7 +13,7 @@ Es relevante por su enfoque de despliegue en el borde (on-device) para entornos 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder-only (arquitectura Qwen2.5, heredada del modelo base) |
-| Parametros totales | 494.032.768 en la variante de 0,5B (dato reportado por HuggingFace); la variante de 1,5B ronda los 1.500 millones, dato heredado de Qwen2.5-1.5B-Instruct y no confirmado de forma exacta en la informacion disponible |
+| Parametros totales | 494.032.768 en la variante de 0,5B (dato reportado por Hugging Face); la variante de 1,5B ronda los 1.500 millones, dato heredado de Qwen2.5-1.5B-Instruct y no confirmado de forma exacta en la informacion disponible |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | 32.768 tokens, heredada de Qwen2.5; la model card no documenta modificacion de este valor |
 | Tipos de cuantizacion | GGUF: IQ4_XS (1,5B) y Q4_K_M (1,5B y 0,5B) |
@@ -91,7 +91,7 @@ La comparativa se limita a parametros, contexto y licencia, ya que elimu-kita-v2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akesbi/elimu-kita-v2
+- Modelo en Hugging Face: https://huggingface.co/akesbi/elimu-kita-v2
 - Modelo base 1: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Modelo base 2: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - La busqueda web realizada no devolvio enlaces relevantes sobre el modelo: los resultados obtenidos eran noticias deportivas sin relacion con elimu-kita-v2. No se dispone de paper, blog, repositorio ni demo adicionales en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Rajeshwari-Chanda/bloom-1b7_wanda_0.3` es un checkpoint derivado de BLOOM-1b7 (1.722 millones de parametros) al que se le ha aplicado poda estructurada mediante el metodo Wanda (Pruning by Weights and Activations), con una tasa de esparcidad del 0.3 indicada en el propio nombre del repositorio. El modelo se distribuye en formato `safetensors` dentro de la libreria `transformers` y esta etiquetado para la tarea de generacion de texto. No cuenta con model card sustantiva: el README es la plantilla autogenerada por HuggingFace, sin informacion sobre datos de entrenamiento, licencia ni evaluacion.
+`Rajeshwari-Chanda/bloom-1b7_wanda_0.3` es un checkpoint derivado de BLOOM-1b7 (1.722 millones de parametros) al que se le ha aplicado poda estructurada mediante el metodo Wanda (Pruning by Weights and Activations), con una tasa de esparcidad del 0.3 indicada en el propio nombre del repositorio. El modelo se distribuye en formato `safetensors` dentro de la libreria `transformers` y esta etiquetado para la tarea de generacion de texto. No cuenta con model card sustantiva: el README es la plantilla autogenerada por Hugging Face, sin informacion sobre datos de entrenamiento, licencia ni evaluacion.
 
 Se trata, por tanto, de un artefacto de investigacion mas que de un modelo listo para produccion. El repositorio registra 0 descargas y 0 likes, y el autor no ha documentado el proceso de poda, la calibracion empleada ni los resultados obtenidos tras la compresion. Esto limita seriamente cualquier evaluacion rigurosa: sabemos que es un BLOOM-1b7 podado al 30 por ciento, pero no con que calibrador, sobre que corpus ni con cuanto dano en las metricas de lenguaje.
 
@@ -48,7 +48,7 @@ No se documenta en el repositorio cuantos ejemplos de calibracion se usaron, si 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card es la plantilla autogenerada por HuggingFace y no incluye valores de MMLU, HumanEval, GSM8K, perplejidad ni ninguna otra metrica, ni antes ni despues de la poda. Tampoco se ofrece comparacion con el BLOOM-1b7 original.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card es la plantilla autogenerada por Hugging Face y no incluye valores de MMLU, HumanEval, GSM8K, perplejidad ni ninguna otra metrica, ni antes ni despues de la poda. Tampoco se ofrece comparacion con el BLOOM-1b7 original.
 
 ## Requisitos de hardware
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Poda / compresion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bloom-1b7_wanda_0.3 | 1,72B | no disponible (base 2048) | Wanda no estructurada, 0.3 | no disponible | HuggingFace, 0 descargas |
-| BLOOM-1b7 (base) | 1,72B | 2048 | ninguna | BigScience BLOOM RAIL 1.0 | HuggingFace, ampliamente usado |
-| TinyLlama-1.1B | 1,1B | 2048 | ninguna | Apache 2.0 | HuggingFace, muy popular |
-| Qwen2.5-1.5B | 1,5B | 32768 | ninguna | Apache 2.0 (variantes) | HuggingFace, ampliamente usado |
+| bloom-1b7_wanda_0.3 | 1,72B | no disponible (base 2048) | Wanda no estructurada, 0.3 | no disponible | Hugging Face, 0 descargas |
+| BLOOM-1b7 (base) | 1,72B | 2048 | ninguna | BigScience BLOOM RAIL 1.0 | Hugging Face, ampliamente usado |
+| TinyLlama-1.1B | 1,1B | 2048 | ninguna | Apache 2.0 | Hugging Face, muy popular |
+| Qwen2.5-1.5B | 1,5B | 32768 | ninguna | Apache 2.0 (variantes) | Hugging Face, ampliamente usado |
 
 La comparacion con modelos densos de tamano similar es desfavorable en terminos de mantenimiento, licencia y soporte, dado que este checkpoint no documenta licencia ni resultados. Su unico diferenciador es la propia tecnica de poda aplicada.
 
@@ -83,7 +83,7 @@ La comparacion con modelos densos de tamano similar es desfavorable en terminos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rajeshwari-Chanda/bloom-1b7_wanda_0.3
+- Modelo en Hugging Face: https://huggingface.co/Rajeshwari-Chanda/bloom-1b7_wanda_0.3
 - Modelo base BLOOM-1b7: https://huggingface.co/bigscience/bloom-1b7
 - Paper de BLOOM: https://arxiv.org/abs/2211.05100
 - Paper de Wanda (referencia del metodo de poda indicado en el nombre del modelo): https://arxiv.org/abs/2306.11695

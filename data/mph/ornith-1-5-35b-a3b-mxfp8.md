@@ -79,7 +79,7 @@ Nota: los datos de contexto y licencia de los modelos comparados no están dispo
 
 ## Enlaces
 
-- HuggingFace del modelo cuantizado: https://huggingface.co/mph/ornith-1.5-35b-a3b-mxfp8
+- Hugging Face del modelo cuantizado: https://huggingface.co/mph/ornith-1.5-35b-a3b-mxfp8
 - Modelo base original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Variante MLX 6-bit: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-6bit
 - Benchmark en BenchLM: https://benchlm.ai/models/ornith-1-5-35b-a3b

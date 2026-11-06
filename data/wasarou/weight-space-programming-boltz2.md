@@ -76,8 +76,8 @@ En la evaluacion congelada de v2 sobre 50 sistemas de validacion (semilla 1) y 1
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `wasarou/weight-space-programming-boltz2` | no disponible | no disponible | Edicion de pesos sobre Boltz-2 | MIT | HuggingFace, 0 descargas |
-| `boltz-community/boltz-2` (linea base) | no disponible | no disponible | Prediccion de estructura proteina-ligando | MIT (segun repo derivado) | HuggingFace |
+| `wasarou/weight-space-programming-boltz2` | no disponible | no disponible | Edicion de pesos sobre Boltz-2 | MIT | Hugging Face, 0 descargas |
+| `boltz-community/boltz-2` (linea base) | no disponible | no disponible | Prediccion de estructura proteina-ligando | MIT (segun repo derivado) | Hugging Face |
 | Alternativas de prediccion de estructura proteina-ligando | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de Boltz-2 ni de otras alternativas en la informacion proporcionada, por lo que la comparativa se limita a la relacion de derivacion respecto al modelo base.
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks de Boltz-2 ni de otras alternativas en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wasarou/weight-space-programming-boltz2
+- Repositorio Hugging Face: https://huggingface.co/wasarou/weight-space-programming-boltz2
 - Codigo fuente: https://github.com/th2ch-g/weight-space-programming-boltz2
 - Snapshot de codigo: https://github.com/th2ch-g/weight-space-programming-boltz2/tree/e26696edb9d6010c213c8837aa990197fe7e0619
 - Manifiesto de checkpoints: CHECKPOINTS.json (en el repositorio)

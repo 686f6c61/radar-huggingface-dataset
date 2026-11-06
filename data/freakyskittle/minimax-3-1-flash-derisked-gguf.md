@@ -110,8 +110,8 @@ No se dispone en la información proporcionada de datos verificados de otros mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/freakyskittle/MiniMax-3.1-Flash-DeRisked-GGUF
+- Repositorio Hugging Face: https://huggingface.co/freakyskittle/MiniMax-3.1-Flash-DeRisked-GGUF
 - Modelo base de la conversión: https://huggingface.co/Blackfrost-Research/MiniMax-3.1-Flash-DeRisked
 - Modelo upstream referenciado en la model card: MiniMaxAI MiniMax-M3.1-Flash (sin URL proporcionada en la información disponible)
-- Fichero de licencia: LICENSE dentro del repositorio de HuggingFace
+- Fichero de licencia: LICENSE dentro del repositorio de Hugging Face
 - llama.cpp (requerido, con soporte `minimax_m3_vl`): no se proporciona URL específica en la información disponible; la model card cita `convert_hf_to_gguf.py` y `tools/mtmd/models/minimax-m3.cpp`

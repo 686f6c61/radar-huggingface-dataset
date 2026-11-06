@@ -23,7 +23,7 @@ La relevancia de este adaptador radica en su bajo coste de despliegue: al ser un
 
 ## Arquitectura y entrenamiento
 
-El adaptador se basa en `unsloth/Qwen3.8-27B-unsloth-bnb-4bit`, una version cuantizada en 4 bits del modelo Qwen3.8-27B de Alibaba. El modelo base es un transformer denso multimodal (vision y texto) con 27 000 millones de parametros, que incorpora modos de razonamiento explicito (thinking) e instruct, y esta disenado para tareas de codigo, flujos ageticos y automatizacion de oficina. El adaptador LoRA fue entrenado con la libreria Unsloth, que segun la model card acelera el entrenamiento 2x en comparacion con metodos convencionales. No se proporcionan detalles sobre el dataset de entrenamiento, el numero de pasos, el rango del LoRA ni la metodologia de fine-tuning (por ejemplo, si se uso RLHF o DPO). La etiqueta `trl` sugiere el uso de la libreria TRL de HuggingFace para el entrenamiento, pero no hay confirmacion explicita.
+El adaptador se basa en `unsloth/Qwen3.8-27B-unsloth-bnb-4bit`, una version cuantizada en 4 bits del modelo Qwen3.8-27B de Alibaba. El modelo base es un transformer denso multimodal (vision y texto) con 27 000 millones de parametros, que incorpora modos de razonamiento explicito (thinking) e instruct, y esta disenado para tareas de codigo, flujos ageticos y automatizacion de oficina. El adaptador LoRA fue entrenado con la libreria Unsloth, que segun la model card acelera el entrenamiento 2x en comparacion con metodos convencionales. No se proporcionan detalles sobre el dataset de entrenamiento, el numero de pasos, el rango del LoRA ni la metodologia de fine-tuning (por ejemplo, si se uso RLHF o DPO). La etiqueta `trl` sugiere el uso de la libreria TRL de Hugging Face para el entrenamiento, pero no hay confirmacion explicita.
 
 ## Capacidades
 
@@ -60,9 +60,9 @@ No se dispone de informacion suficiente para una comparativa directa del adaptad
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | No especificado | Apache 2.0 | HuggingFace, Groq |
-| Qwen3-8B | 8B | No especificado | Apache 2.0 | HuggingFace |
-| GarudaCoder-Qwen3.8-27B-ID-lora | LoRA sobre 27B | No especificado | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B (base) | 27B | No especificado | Apache 2.0 | Hugging Face, Groq |
+| Qwen3-8B | 8B | No especificado | Apache 2.0 | Hugging Face |
+| GarudaCoder-Qwen3.8-27B-ID-lora | LoRA sobre 27B | No especificado | Apache 2.0 | Hugging Face |
 
 La comparativa es limitada porque el adaptador no tiene metricas propias y depende completamente del base.
 
@@ -78,8 +78,8 @@ La comparativa es limitada porque el adaptador no tiene metricas propias y depen
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/TheCoderScientist/GarudaCoder-Qwen3.8-27B-ID-lora
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3.8-27B-unsloth-bnb-4bit (inferido del nombre, no verificado)
+- Adaptador en Hugging Face: https://huggingface.co/TheCoderScientist/GarudaCoder-Qwen3.8-27B-ID-lora
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3.8-27B-unsloth-bnb-4bit (inferido del nombre, no verificado)
 - Modelo Qwen3.8-27B original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
 - Repositorio de AlibabaCloud para Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Checkpoint experimental de una política VLA (vision-language-action) para robótica, desarrollado por Donghyun1228 y publicado en HuggingFace bajo la librería openpi (familia pi05). Está entrenado para tareas de manipulación del benchmark LIBERO y el repositorio ocupa 13.1 GB. Contiene parámetros sin EMA tras 1000 actualizaciones, con módulos de visión, LLM y experto en FP32 y módulos congelados en BF16.
+Checkpoint experimental de una política VLA (vision-language-action) para robótica, desarrollado por Donghyun1228 y publicado en Hugging Face bajo la librería openpi (familia pi05). Está entrenado para tareas de manipulación del benchmark LIBERO y el repositorio ocupa 13.1 GB. Contiene parámetros sin EMA tras 1000 actualizaciones, con módulos de visión, LLM y experto en FP32 y módulos congelados en BF16.
 
 El modelo corresponde a un experimento de relación entre módulos (all-module relation) con variantes view_large y retention, y su objetivo declarado es la manipulación transferible. El autor advierte que este checkpoint individual no establece retención. No se proporcionan licencia, idiomas soportados ni resultados de benchmarks, por lo que su uso queda restringido a investigación y reproducción de experimentos. Su interés radica en el estudio de políticas VLA source-free y en el uso de un sampler Euler de 10 pasos para comparar acciones físicas.
 
@@ -64,7 +64,7 @@ No se dispone de datos cuantitativos de modelos comparables en la información p
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| Este checkpoint | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas (openpi, OpenVLA, RT-2) | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No se dispone de datos cuantitativos de modelos comparables en la información p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-all-module-relation-full10-joint-retention-view-large-1000-20261014
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-all-module-relation-full10-joint-retention-view-large-1000-20261014
 - Datos objetivo: https://huggingface.co/Donghyun1228/libero-dense-contact-sweep-d2-20261002 (commit 9f8f600ce0e8f5df51c0e847c65a1e09f29d8494)
 - Referencia de despliegue equivalente: https://huggingface.co/Donghyun1228/pi05-libero-main-policy-retention-source-split74-20261013 (commit 24268da2aba5f690c879788d98e3455a2a579d8f)
 - Referencia de inferencia: pi05_libero_source_free_split_vision_idm, commit 0f6471d99dfc81fabe7c3ab65c141d7640b9ff08 (no se proporciona URL directa)

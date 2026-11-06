@@ -69,4 +69,4 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace: matthewanderson1995/nlp-multitask](https://huggingface.co/matthewanderson1995/nlp-multitask)
+- [Hugging Face: matthewanderson1995/nlp-multitask](https://huggingface.co/matthewanderson1995/nlp-multitask)

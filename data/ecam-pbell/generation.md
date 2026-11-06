@@ -64,13 +64,13 @@ No disponible. No existe una categoría establecida de modelos con 16K parámetr
 - **No entrenado**: el checkpoint incluido es una inicialización aleatoria, no un modelo entrenado. No produce texto coherente ni útil.
 - **Sin auditoría de robustez o sesgos**: la documentación indica que el checkpoint no ha sido auditado para robustez, equidad ni transferencia de dominio.
 - **Alto riesgo de alucinación**: al no estar entrenado, cualquier salida generada será esencialmente ruido aleatorio. No debe usarse en producción.
-- **Sin soporte de carga automática**: las APIs genéricas de HuggingFace no pueden cargar este modelo sin un adaptador explícito, lo que limita su uso práctico.
+- **Sin soporte de carga automática**: las APIs genéricas de Hugging Face no pueden cargar este modelo sin un adaptador explícito, lo que limita su uso práctico.
 - **Restricciones de licencia**: aunque la licencia Apache 2.0 permite uso comercial, el modelo no es apto para ello. Además, la model card advierte que se deben revisar los términos de las fuentes de datos externas si se usa con datasets propios.
 - **Documentación incompleta**: no se especifican detalles clave como el tamaño del vocabulario, el número de capas o la configuración exacta de la atención, lo que dificulta la reproducibilidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ecam-pbell/generation
+- Repositorio en Hugging Face: https://huggingface.co/ecam-pbell/generation
 - Model card (README): https://huggingface.co/ecam-pbell/generation/blob/main/README.md
 
 No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

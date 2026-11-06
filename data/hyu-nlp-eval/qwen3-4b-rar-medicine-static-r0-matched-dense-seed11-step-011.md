@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-011 | 4,02 B | 32.768 (segun terceros) | Apache-2.0 (research use only) | HuggingFace, 0 descargas | Checkpoint intermedio de GRPO, sin benchmarks |
-| Qwen/Qwen3-4B-Instruct-2507 | 4,02 B | 262.144 nativo | Apache-2.0 | HuggingFace, ampliamente usado | Modelo base original, con evaluaciones publicas |
-| qwen3-4b-rar-medicine-onlinerubrics-seed11-step-000 | no disponible | 32.768 (segun terceros) | Apache-2.0 | HuggingFace | Variante con rúbricas dinamicas, misma familia |
-| qwen3-4b-rar-medicine-onlinerubrics-seed11-step-042 | no disponible | 32.768 (segun terceros) | Apache-2.0 | HuggingFace | Estado intermedio, paso 42, thinking disabled |
+| qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-011 | 4,02 B | 32.768 (segun terceros) | Apache-2.0 (research use only) | Hugging Face, 0 descargas | Checkpoint intermedio de GRPO, sin benchmarks |
+| Qwen/Qwen3-4B-Instruct-2507 | 4,02 B | 262.144 nativo | Apache-2.0 | Hugging Face, ampliamente usado | Modelo base original, con evaluaciones publicas |
+| qwen3-4b-rar-medicine-onlinerubrics-seed11-step-000 | no disponible | 32.768 (segun terceros) | Apache-2.0 | Hugging Face | Variante con rúbricas dinamicas, misma familia |
+| qwen3-4b-rar-medicine-onlinerubrics-seed11-step-042 | no disponible | 32.768 (segun terceros) | Apache-2.0 | Hugging Face | Estado intermedio, paso 42, thinking disabled |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-011
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-011
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Variante relacionada step-000: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-000
 - Variante relacionada step-042: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-042

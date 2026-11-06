@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Flex-reddit-2x7B-1T-mic | 12,98 M (fixture) | no disponible | Fixture de integracion | no disponible | HuggingFace (0 descargas) |
-| shanearora/Flex-reddit-2x7B-1T | no disponible | no disponible | Modelo base de referencia | no disponible | HuggingFace |
-| huggingface-mic (otros fixtures) | variable | no disponible | Fixtures de integracion del mismo proyecto | no disponible | HuggingFace |
+| Flex-reddit-2x7B-1T-mic | 12,98 M (fixture) | no disponible | Fixture de integracion | no disponible | Hugging Face (0 descargas) |
+| shanearora/Flex-reddit-2x7B-1T | no disponible | no disponible | Modelo base de referencia | no disponible | Hugging Face |
+| huggingface-mic (otros fixtures) | variable | no disponible | Fixtures de integracion del mismo proyecto | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones completas del modelo base para establecer una comparativa tecnica con alternativas de la misma categoria.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas del model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/Flex-reddit-2x7B-1T-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/Flex-reddit-2x7B-1T-mic
 - Modelo base: https://huggingface.co/shanearora/Flex-reddit-2x7B-1T
 - Contrato de integracion: integration.json (en el repositorio)
 - Uso con Transformers: integrations/transformers/usage.md (en el repositorio)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FooocusExtend es un repositorio de pesos alojado en HuggingFace por el usuario shaitanzx, etiquetado con las librerías `diffusers`, `onnx` y `safetensors`. Por su nombre y por las etiquetas asociadas, se trata de una extensión o conjunto de recursos complementarios para Fooocus, la interfaz de generación de imágenes basada en modelos de difusión (Stable Diffusion XL y variantes). El repositorio no incluye una model card descriptiva ni documentación técnica publicada por el autor, por lo que la información disponible es muy limitada.
+FooocusExtend es un repositorio de pesos alojado en Hugging Face por el usuario shaitanzx, etiquetado con las librerías `diffusers`, `onnx` y `safetensors`. Por su nombre y por las etiquetas asociadas, se trata de una extensión o conjunto de recursos complementarios para Fooocus, la interfaz de generación de imágenes basada en modelos de difusión (Stable Diffusion XL y variantes). El repositorio no incluye una model card descriptiva ni documentación técnica publicada por el autor, por lo que la información disponible es muy limitada.
 
 El tamaño del repositorio, 26,5 GB, es coherente con un conjunto de pesos de un modelo de difusión de gran tamaño (probablemente SDXL o una variante), posiblemente acompañado de ficheros ONNX para exportación e inferencia optimizada. No obstante, no se han publicado detalles sobre la arquitectura exacta, el proceso de entrenamiento ni los datos utilizados.
 
@@ -23,14 +23,14 @@ La relevancia de este repositorio es limitada en el momento actual: cuenta con 8
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo. Las etiquetas `diffusers` y `onnx` sugieren que el repositorio contiene pesos compatibles con la librería Diffusers de HuggingFace, junto con exportaciones ONNX para inferencia optimizada. El nombre "FooocusExtend" apunta a una extensión del ecosistema Fooocus, que habitualmente emplea modelos de difusión latente tipo SDXL con un UNet, un VAE y codificadores de texto (CLIP). Sin embargo, no hay confirmación oficial de qué componentes concretos incluye el repositorio.
+No se ha publicado información sobre la arquitectura del modelo. Las etiquetas `diffusers` y `onnx` sugieren que el repositorio contiene pesos compatibles con la librería Diffusers de Hugging Face, junto con exportaciones ONNX para inferencia optimizada. El nombre "FooocusExtend" apunta a una extensión del ecosistema Fooocus, que habitualmente emplea modelos de difusión latente tipo SDXL con un UNet, un VAE y codificadores de texto (CLIP). Sin embargo, no hay confirmación oficial de qué componentes concretos incluye el repositorio.
 
 Tampoco se dispone de información sobre el dataset de entrenamiento, el número de tokens o imágenes procesadas, ni sobre si se aplicaron técnicas de ajuste fino como LoRA, DreamBooth o fine-tuning completo. No se han documentado innovaciones técnicas específicas (samplers, schedulers, decodificación especulativa u otras).
 
 ## Capacidades
 
 - Generación de imágenes: presumiblemente, dada la naturaleza del ecosistema Fooocus y las etiquetas `diffusers`, aunque no se detalla qué tipo de imágenes ni con qué calidad.
-- Compatibilidad con Diffusers: los pesos en formato `safetensors` permiten su carga mediante la librería Diffusers de HuggingFace.
+- Compatibilidad con Diffusers: los pesos en formato `safetensors` permiten su carga mediante la librería Diffusers de Hugging Face.
 - Exportación ONNX: la presencia de ficheros ONNX sugiere soporte para inferencia con ONNX Runtime, potencialmente con optimizaciones de hardware.
 - Integración con Fooocus: por el nombre, se espera que funcione como extensión o complemento dentro de la interfaz Fooocus.
 - No se ha documentado soporte de tool calling, agentes, razonamiento multi-paso, capacidades multilingües ni modos especiales como thinking o visión.
@@ -73,5 +73,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shaitanzx/FooocusExtend
+- Repositorio en Hugging Face: https://huggingface.co/shaitanzx/FooocusExtend
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la información disponible.

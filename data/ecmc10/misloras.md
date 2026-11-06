@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ecmc10/misloras` es un repositorio alojado en HuggingFace por el usuario ecmc10 cuyo contenido, segun la informacion disponible, no constituye una model card de un modelo de lenguaje propiamente dicho. La model card publicada se limita a un bloque de metadatos con `license: unknown` y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El nombre del repositorio ("misloras") sugiere que podria tratarse de un conjunto de adaptadores LoRA, pero esta interpretacion no esta confirmada por ninguna fuente oficial.
+`ecmc10/misloras` es un repositorio alojado en Hugging Face por el usuario ecmc10 cuyo contenido, segun la informacion disponible, no constituye una model card de un modelo de lenguaje propiamente dicho. La model card publicada se limita a un bloque de metadatos con `license: unknown` y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El nombre del repositorio ("misloras") sugiere que podria tratarse de un conjunto de adaptadores LoRA, pero esta interpretacion no esta confirmada por ninguna fuente oficial.
 
 El repositorio tiene un tamano de 0,6 GB, lo que es compatible con pesos de adaptadores o con un modelo de muy pequeno tamano, pero no con un modelo fundacional completo de parametros significativos. No consta pipeline declarado, no se especifican idiomas, no hay descargas ni likes, y la licencia figura como desconocida. Todo ello indica que se trata de un artefacto de caracter personal o experimental, sin documentacion tecnica verificable.
 
@@ -39,7 +39,7 @@ Respecto al entrenamiento, la model card no documenta el volumen de tokens, la c
 ## Casos de uso
 
 - Evaluacion interna de adaptadores: si el repositorio contiene LoRA, podria probarse en un entorno controlado para verificar su comportamiento, aunque sin documentacion no hay garantia de que los pesos sean funcionales.
-- Experimentacion academica: util unicamente como objeto de estudio de practicas de publicacion en HuggingFace, dado que carece de documentacion tecnica.
+- Experimentacion academica: util unicamente como objeto de estudio de practicas de publicacion en Hugging Face, dado que carece de documentacion tecnica.
 - Pruebas de carga de artefactos: puede servir para validar pipelines internos de descarga y carga de repositorios con metadatos incompletos.
 - Auditoria de licencias: caso practico para ilustrar los riesgos de artefactos con licencia "unknown" en procesos de compliance.
 - Reproducibilidad: no recomendable como base de experimentos, ya que no se documentan datos de entrenamiento ni hiperparametros.
@@ -73,5 +73,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ecmc10/misloras
+- Repositorio en Hugging Face: https://huggingface.co/ecmc10/misloras
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

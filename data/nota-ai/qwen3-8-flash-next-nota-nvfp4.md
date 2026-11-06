@@ -86,7 +86,7 @@ La versión de nota-ai se diferencia de la de primitive-ai en que esta última l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nota-ai/Qwen3.8-Flash-Next-Nota-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/nota-ai/Qwen3.8-Flash-Next-Nota-NVFP4
 - Modelo base Qwen/Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio oficial de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Receta de despliegue con vLLM: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next

@@ -90,7 +90,7 @@ No se dispone de datos de parámetros, contexto, rendimiento ni licencia de los 
 
 ## Limitaciones y advertencias
 
-- Autoría no oficial: el repositorio pertenece a `Ares-Realm-Studios`, no a la organización `deepseek-ai`. La model card reproduce el formato de las tarjetas oficiales de DeepSeek e incluye enlaces a `deepseek.com`, `chat.deepseek.com` y a la organización oficial en HuggingFace, pero no hay confirmación de que el contenido haya sido publicado por DeepSeek. Debe verificarse la procedencia antes de cualquier uso en producción.
+- Autoría no oficial: el repositorio pertenece a `Ares-Realm-Studios`, no a la organización `deepseek-ai`. La model card reproduce el formato de las tarjetas oficiales de DeepSeek e incluye enlaces a `deepseek.com`, `chat.deepseek.com` y a la organización oficial en Hugging Face, pero no hay confirmación de que el contenido haya sido publicado por DeepSeek. Debe verificarse la procedencia antes de cualquier uso en producción.
 - Sin validación de la comunidad: 0 descargas y 0 likes en el momento del análisis, sin historial de uso que permita contrastar el comportamiento real del modelo.
 - Fecha de creación anómala: el repositorio figura como creado y actualizado el 2026-09-16, posterior a la fecha habitual de evaluación, lo que refuerza la necesidad de verificar la autenticidad del artefacto.
 - Discrepancia en el recuento de parámetros: la model card declara 552B de backbone más 196B de Engram (748B), mientras que el recuento de safetensors arroja 763,2B. La diferencia no está explicada en la información disponible.
@@ -104,10 +104,10 @@ No se dispone de datos de parámetros, contexto, rendimiento ni licencia de los 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ares-Realm-Studios/DeepSeek-V4.1-Flash
+- Repositorio en Hugging Face: https://huggingface.co/Ares-Realm-Studios/DeepSeek-V4.1-Flash
 - Informe técnico referenciado en la model card: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf (ruta tal como aparece en la model card; apunta a la organización oficial, no al repositorio donde está alojado el modelo)
 - Sitio oficial de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organización DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Perfil de X/Twitter de DeepSeek: https://twitter.com/deepseek_ai
 - La búsqueda web realizada no devolvió enlaces relevantes al modelo: los resultados corresponden a la localidad francesa de Arès, al Groupe ARES, a ARES Fighting Championship y a las becas ARES, sin relación con DeepSeek-V4.1-Flash. No se han encontrado papers, blogs ni repositorios adicionales en la información disponible.

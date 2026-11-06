@@ -80,7 +80,7 @@ La principal diferencia entre esta cuantización y los modelos originales es el 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/textclf/Llama-3.3-70B-Instruct-TQ-4bit
+- Repositorio Hugging Face: https://huggingface.co/textclf/Llama-3.3-70B-Instruct-TQ-4bit
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 - Documentación de Meta sobre Llama 3.3: https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_3/
 - NVIDIA NIM para Llama-3.3-70B-Instruct: https://build.nvidia.com/meta/llama-3_3-70b-instruct/modelcard

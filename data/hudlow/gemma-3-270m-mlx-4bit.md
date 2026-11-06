@@ -75,7 +75,7 @@ Las tres versiones comparten la misma arquitectura y capacidades, diferenciándo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/hudlow/gemma-3-270m-mlx-4Bit
+- Repositorio de Hugging Face: https://huggingface.co/hudlow/gemma-3-270m-mlx-4Bit
 - Modelo base: https://huggingface.co/google/gemma-3-270m
 - Versión alternativa de mlx-community: https://huggingface.co/mlx-community/gemma-3-270m-4bit
 - Blog de Google sobre Gemma 3 270M: https://developers.googleblog.com/en/introducing-gemma-3-270m/

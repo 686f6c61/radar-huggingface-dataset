@@ -65,8 +65,8 @@ Existe una versión de 3B del mismo autor (`Eku127/swiftvln-satnav-3b-1ep-f32s4-
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 | --- | --- | --- | --- | --- |
-| swiftvln-satnav-7b (este) | 7B | 32 frames + 8 historia | no disponible | HuggingFace |
-| swiftvln-satnav-3b | 3B | 32 frames + 8 historia | no disponible | HuggingFace |
+| swiftvln-satnav-7b (este) | 7B | 32 frames + 8 historia | no disponible | Hugging Face |
+| swiftvln-satnav-3b | 3B | 32 frames + 8 historia | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -79,8 +79,8 @@ Existe una versión de 3B del mismo autor (`Eku127/swiftvln-satnav-3b-1ep-f32s4-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Eku127/swiftvln-satnav-7b-1ep-f32s4-overlap0-pf-h8-pool-s2-noembed
+- Modelo en Hugging Face: https://huggingface.co/Eku127/swiftvln-satnav-7b-1ep-f32s4-overlap0-pf-h8-pool-s2-noembed
 - Repositorio SwiftVLN (código de entrenamiento y evaluación): https://github.com/Eku127/SwiftVLN
 - Repositorio SatNav (entornos, datasets y herramientas de evaluación): https://github.com/Eku127/SatNav
 - Versión 3B del mismo modelo: https://huggingface.co/Eku127/swiftvln-satnav-3b-1ep-f32s4-overlap0-pf-h8-pool-s2-noembed
-- Perfil del autor en HuggingFace: https://huggingface.co/Eku127/models
+- Perfil del autor en Hugging Face: https://huggingface.co/Eku127/models

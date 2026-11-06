@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Sutadasuto/pokedex_project` es un repositorio publicado en HuggingFace por el usuario Sutadasuto bajo licencia MIT. Por el nombre, los tags (`onnx`) y el tamano del repositorio (0,1 GB), se trata de un artefacto de proyecto personal orientado a la exportacion de un modelo a formato ONNX, presumiblemente vinculado a un clasificador o detector relacionado con Pokemon. No es un modelo de lenguaje generativo ni dispone de model card sustantiva: el README se limita a declarar la licencia MIT.
+`Sutadasuto/pokedex_project` es un repositorio publicado en Hugging Face por el usuario Sutadasuto bajo licencia MIT. Por el nombre, los tags (`onnx`) y el tamano del repositorio (0,1 GB), se trata de un artefacto de proyecto personal orientado a la exportacion de un modelo a formato ONNX, presumiblemente vinculado a un clasificador o detector relacionado con Pokemon. No es un modelo de lenguaje generativo ni dispone de model card sustantiva: el README se limita a declarar la licencia MIT.
 
 No se dispone de informacion sobre arquitectura, parametros, contexto, datos de entrenamiento ni capacidades. El pipeline no esta declarado, los idiomas no estan disponibles y el repositorio no registra descargas ni likes en el momento de la consulta. Cualquier evaluacion tecnica debe hacerse descargando los artefactos ONNX y ejecutandolos directamente.
 
@@ -76,5 +76,5 @@ No disponible. No se ha identificado un modelo comparable de la misma categoria,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sutadasuto/pokedex_project
+- Repositorio en Hugging Face: https://huggingface.co/Sutadasuto/pokedex_project
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

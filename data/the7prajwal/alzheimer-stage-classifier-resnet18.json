@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "the7prajwal/alzheimer-stage-classifier-resnet18",
+  "slug": "the7prajwal-alzheimer-stage-classifier-resnet18",
+  "author": "the7prajwal",
+  "url": "https://huggingface.co/the7prajwal/alzheimer-stage-classifier-resnet18",
+  "created_at": "2026-11-03T05:33:59.000Z",
+  "updated_at": "2026-11-03T07:19:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "medical-imaging",
+    "alzheimer",
+    "mri",
+    "image-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 88,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44794251,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "the7prajwal/alzheimer-stage-classifier-resnet18 · Hugging Face",
+      "url": "https://huggingface.co/the7prajwal/alzheimer-stage-classifier-resnet18",
+      "snippet": "Alzheimer's Stage Detection from Brain MRI (ResNet18) Fine-tuned ResNet18 for 4-class Alzheimer's stage classification from axial brain MRI slices. Developed as part of SDP_CISHA_05 (7th semester Student Development Project)."
+    },
+    {
+      "title": "GitHub - the7prajwal/Alzheimer-stage-classifier: Deep learning pipeline ...",
+      "url": "https://github.com/the7prajwal/Alzheimer-stage-classifier",
+      "snippet": "Deep learning pipeline that classifies brain MRI scans into 4 Alzheimer's stages — NonDemented, VeryMildDemented, MildDemented, ModerateDemented — using transfer learning on ResNet18, with Grad-CAM visual explanations and a deployed Streamlit demo on Hugging Face Spaces."
+    },
+    {
+      "title": "Alzheimer-stage-classifier/README.md at main · the7prajwal ... - GitHub",
+      "url": "https://github.com/the7prajwal/Alzheimer-stage-classifier/blob/main/README.md",
+      "snippet": "🧠 Alzheimer's Stage Classifier Deep learning pipeline that classifies brain MRI scans into 4 Alzheimer's stages — NonDemented, VeryMildDemented, MildDemented, ModerateDemented — using transfer learning on ResNet18, with Grad-CAM visual explanations and a deployed Streamlit demo on Hugging Face Spaces."
+    },
+    {
+      "title": "the7prajwal (Prajwal Halakeri) - Hugging Face",
+      "url": "https://huggingface.co/the7prajwal",
+      "snippet": "models1 the7prajwal/alzheimer-stage-resnet18 Image Classification •Updated 5 days ago• 14"
+    },
+    {
+      "title": "Deep CNN ResNet-18 based model with attention and transfer ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2024.1507217/full",
+      "snippet": "Analysis of features of Alzheimer's disease: Detection of early stage from functional brain changes in magnetic resonance images using a finetuned resnet18 network."
+    }
+  ]
+}

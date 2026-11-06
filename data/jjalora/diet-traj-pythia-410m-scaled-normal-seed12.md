@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| diet-traj-pythia-410m-scaled-normal-seed12 | 410M | no disponible (heredado 2048) | Apache 2.0 | HuggingFace | Checkpoint de investigación con ramas `stepN` |
-| EleutherAI/pythia-410m | 410M | 2048 | Apache 2.0 | HuggingFace | Modelo de referencia con la receta original |
-| EleutherAI/pythia-160m | 160M | 2048 | Apache 2.0 | HuggingFace | Variante más pequeña de la misma familia |
-| EleutherAI/pythia-1.4b | 1.4B | 2048 | Apache 2.0 | HuggingFace | Variante mayor de la misma familia |
+| diet-traj-pythia-410m-scaled-normal-seed12 | 410M | no disponible (heredado 2048) | Apache 2.0 | Hugging Face | Checkpoint de investigación con ramas `stepN` |
+| EleutherAI/pythia-410m | 410M | 2048 | Apache 2.0 | Hugging Face | Modelo de referencia con la receta original |
+| EleutherAI/pythia-160m | 160M | 2048 | Apache 2.0 | Hugging Face | Variante más pequeña de la misma familia |
+| EleutherAI/pythia-1.4b | 1.4B | 2048 | Apache 2.0 | Hugging Face | Variante mayor de la misma familia |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jjalora/diet-traj-pythia-410m-scaled-normal-seed12
+- Hugging Face: https://huggingface.co/jjalora/diet-traj-pythia-410m-scaled-normal-seed12
 - Receta de referencia: https://github.com/EleutherAI/pythia (archivo `models/410M/pythia-410m.yml`)
 - Dataset: https://huggingface.co/datasets/EleutherAI/pile-standard-pythia-preshuffled
 - Modelo de referencia: https://huggingface.co/EleutherAI/pythia-410m

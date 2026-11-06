@@ -103,7 +103,7 @@ No se dispone, en la informacion proporcionada, de datos de benchmarks, contexto
 
 ## Enlaces
 
-- Repositorio del quant en HuggingFace: https://huggingface.co/mindchain/decider-2b-vision-GGUF
+- Repositorio del quant en Hugging Face: https://huggingface.co/mindchain/decider-2b-vision-GGUF
 - Modelo base: https://huggingface.co/Mapika/decider-2b-vision
 - Revision fijada del modelo base: 863e290863655f1d6b69324d77d09ac972d21609
 - Otros enlaces (papers, blogs, repositorios, demos): no disponible. La busqueda web realizada no devolvio resultados relevantes sobre el modelo; los unicos resultados obtenidos eran contenido no relacionado y sin valor tecnico, por lo que se descartan.

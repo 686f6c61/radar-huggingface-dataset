@@ -21,7 +21,7 @@ El modelo destaca por su larga ventana de contexto de 262.144 tokens, su natural
 
 ## Arquitectura y entrenamiento
 
-El modelo base Darwin-36B-Opus es un MoE de la familia Qwen3.6, concretamente basado en la arquitectura Qwen3.6-35B-A3B: 36.000 millones de parametros totales con 3.000 millones de activos por token, lo que permite un rendimiento de inferencia relativamente alto para su tamano. Segun los metadatos de HuggingFace, el modelo es el resultado de un proceso de fusion evolutiva (evolutionary-merge) y esta etiquetado con las capacidades de razonamiento avanzado, razonamiento en cadena de pensamiento y modo thinking. No se proporcionan detalles concretos sobre el dataset de entrenamiento, el numero de tokens utilizados, ni el uso de tecnicas de RLHF o DPO en la informacion disponible.
+El modelo base Darwin-36B-Opus es un MoE de la familia Qwen3.6, concretamente basado en la arquitectura Qwen3.6-35B-A3B: 36.000 millones de parametros totales con 3.000 millones de activos por token, lo que permite un rendimiento de inferencia relativamente alto para su tamano. Segun los metadatos de Hugging Face, el modelo es el resultado de un proceso de fusion evolutiva (evolutionary-merge) y esta etiquetado con las capacidades de razonamiento avanzado, razonamiento en cadena de pensamiento y modo thinking. No se proporcionan detalles concretos sobre el dataset de entrenamiento, el numero de tokens utilizados, ni el uso de tecnicas de RLHF o DPO en la informacion disponible.
 
 La innovacion principal de esta publicacion no es el modelo en si, sino el formato Q4NX: un reordenamiento del layout de cuantizacion Q4_1 optimizado para las matrices del motor NPU de AMD (XDNA2), que mejora los patrones de acceso a memoria y el tamano de los tiles. Este formato es incompatible con llama.cpp, Ollama u otros motores convencionales; esta disenado exclusivamente para el motor FastFlowLM en NPUs AMD Ryzen AI.
 
@@ -78,7 +78,7 @@ Nota: la comparacion con Qwen3.6-35B-A3B es directa, ya que es el modelo base so
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomic-Germ/Darwin-36B-Opus-NPU2
+- Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/Darwin-36B-Opus-NPU2
 - Modelo base: https://huggingface.co/FINAL-Bench/Darwin-36B-Opus
 - Motor FastFlowLM: https://fastflowlm.com
 - Configuraciones de la familia Darwin (DeepWiki): https://deepwiki.com/mudler/apex-quant/3.6-extended-model-family-configurations-(darwin_36b_opus-step37_flash-lfm25_8b-nemotron3_nano_omni-minimax-gemma4-holo3-nemotron-trinity)

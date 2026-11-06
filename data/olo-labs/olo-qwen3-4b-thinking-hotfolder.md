@@ -84,9 +84,9 @@ El autor indica que el entrenamiento corrigio 12 prompts que el modelo base fall
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| olo-qwen3-4b-thinking-hotfolder | 4B (base) + adaptador | No disponible | Tool calling MCP sobre Qwen3-4B | No disponible | HuggingFace (olo-labs) |
-| Qwen/Qwen3-4B | 4B | No disponible en la ficha | Modelo base generalista con tool calling | No disponible en la ficha | HuggingFace (Qwen) |
-| Adaptadores QLoRA de tool calling sobre modelos de 3-8B | 3-8B | Variable | Especializacion en function calling | Variable | HuggingFace |
+| olo-qwen3-4b-thinking-hotfolder | 4B (base) + adaptador | No disponible | Tool calling MCP sobre Qwen3-4B | No disponible | Hugging Face (olo-labs) |
+| Qwen/Qwen3-4B | 4B | No disponible en la ficha | Modelo base generalista con tool calling | No disponible en la ficha | Hugging Face (Qwen) |
+| Adaptadores QLoRA de tool calling sobre modelos de 3-8B | 3-8B | Variable | Especializacion en function calling | Variable | Hugging Face |
 
 La comparativa con alternativas concretas no esta disponible en la informacion proporcionada. El unico punto de comparacion documentado es el propio modelo base, frente al que el adaptador mejora entre 2,2 y 12,1 puntos porcentuales en las metricas de tool calling evaluadas.
 
@@ -104,7 +104,7 @@ La comparativa con alternativas concretas no esta disponible en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olo-labs/olo-qwen3-4b-thinking-hotfolder
+- Modelo en Hugging Face: https://huggingface.co/olo-labs/olo-qwen3-4b-thinking-hotfolder
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio olo-toolgate: https://github.com/olo-labs/olo-toolgate
 - Repositorio olo-ai-training-mcp: https://github.com/olo-labs/olo-ai-training-mcp

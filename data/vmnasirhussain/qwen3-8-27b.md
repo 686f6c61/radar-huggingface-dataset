@@ -8,7 +8,7 @@ Qwen3.8-27B es un modelo denso de 27.781.427.952 parámetros (27,8 B) desarrolla
 
 La arquitectura es híbrida: combina capas de atención lineal (Gated DeltaNet) con capas de atención completa (Gated Attention) en un patrón repetido 16 veces, con 64 capas totales y una dimensión oculta de 5120. Esta mezcla reduce el coste de caché KV en contextos largos, ya que solo 16 de las 64 capas mantienen caché de atención clásica. El modelo soporta 262.144 tokens de contexto de forma nativa, extensible hasta 1.000.000, y fue entrenado con Multi-Token Prediction (MTP) en varios pasos, además de un modo de razonamiento explícito que viene activado por defecto y puede desactivarse por petición.
 
-El modelo se distribuye bajo licencia Apache 2.0 y pesos en formato safetensors, con compatibilidad declarada con Transformers, vLLM, SGLang y TokenSpeed. Existe también una versión alojada en QwenCloud con 1M de contexto por defecto y herramientas integradas oficiales. Es relevante ahora porque empuja capacidades de agente autónomo y comprensión de vídeo a un tamaño de 27B ejecutable en estaciones de trabajo y GPUs de consumo con cuantización, algo que hasta hace poco requería modelos notablemente mayores. Nota importante: el repositorio de HuggingFace analizado es una réplica publicada por un tercero (`vmnasirhussain`), con 0 descargas y 0 likes, no el repositorio oficial del equipo Qwen.
+El modelo se distribuye bajo licencia Apache 2.0 y pesos en formato safetensors, con compatibilidad declarada con Transformers, vLLM, SGLang y TokenSpeed. Existe también una versión alojada en QwenCloud con 1M de contexto por defecto y herramientas integradas oficiales. Es relevante ahora porque empuja capacidades de agente autónomo y comprensión de vídeo a un tamaño de 27B ejecutable en estaciones de trabajo y GPUs de consumo con cuantización, algo que hasta hace poco requería modelos notablemente mayores. Nota importante: el repositorio de Hugging Face analizado es una réplica publicada por un tercero (`vmnasirhussain`), con 0 descargas y 0 likes, no el repositorio oficial del equipo Qwen.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El modelo se distribuye bajo licencia Apache 2.0 y pesos en formato safetensors,
 | Tipos de cuantizacion | no disponible (el repositorio contiene pesos en safetensors, 55,6 GB, equivalente a ~16 bits por parámetro) |
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (formato HuggingFace Transformers) |
+| Formato de pesos | safetensors (formato Hugging Face Transformers) |
 | Dimension oculta | 5120 |
 | Numero de capas | 64 (16 × [3 × (Gated DeltaNet → FFN) → 1 × (Gated Attention → FFN)]) |
 | Cabezas de atencion | Gated Attention: 24 para Q, 4 para KV, dimensión de cabeza 256, RoPE dim 64; Gated DeltaNet: 48 cabezas lineales para V y 16 para QK, dimensión de cabeza 128 |
@@ -75,7 +75,7 @@ La model card incluye una tabla comparativa de rendimiento que enfrenta a Qwen3.
 - Cuantización de 4 bits (~16-17 GB estimados): cabe en GPU de consumo de 24 GB (RTX 4090, RTX 3090, RTX 4080 Super) y con holgura en 32 GB (RTX 5090). Es la vía recomendada para uso local en una sola tarjeta.
 - Memoria unificada: AMD documenta soporte día 0 para Ryzen AI Max (PCs con IA agéntica) y GPUs Radeon, lo que abre el despliegue en equipos sin GPU dedicada de gran VRAM.
 - Caché KV: gracias al diseño híbrido, solo 16 de las 64 capas mantienen caché KV. Con 4 cabezas KV, dimensión 256 y precisión bf16, el coste estimado es de ~64 KiB por token, es decir, alrededor de 16 GB para los 262.144 tokens nativos (y ~8 GB en FP8). Llenar la ventana completa sigue siendo el factor dominante de memoria. Estimación propia a partir de la configuración publicada, no un dato oficial.
-- Frameworks de despliegue confirmados: HuggingFace Transformers, vLLM, SGLang y TokenSpeed. También Microsoft Foundry (Azure AI) y Alibaba Cloud Model Studio como servicios gestionados, y QwenCloud para la API oficial (anunciada como "coming soon" con 1M de contexto y herramientas integradas).
+- Frameworks de despliegue confirmados: Hugging Face Transformers, vLLM, SGLang y TokenSpeed. También Microsoft Foundry (Azure AI) y Alibaba Cloud Model Studio como servicios gestionados, y QwenCloud para la API oficial (anunciada como "coming soon" con 1M de contexto y herramientas integradas).
 - Soporte GGUF / llama.cpp / Ollama: no disponible (no confirmado en la información proporcionada).
 - Latencia y throughput: no disponible (no se publican cifras de tokens por segundo para ningún hardware).
 
@@ -93,7 +93,7 @@ No se dispone de cifras de rendimiento comparadas, por lo que la comparativa se 
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace analizado (`vmnasirhussain/Qwen3.8-27B`) es una publicación de un tercero, con 0 descargas, 0 likes y creado y actualizado el mismo día. No es el repositorio oficial de Alibaba y los pesos no están verificados por el equipo Qwen; para producción conviene localizar la publicación canónica.
+- El repositorio de Hugging Face analizado (`vmnasirhussain/Qwen3.8-27B`) es una publicación de un tercero, con 0 descargas, 0 likes y creado y actualizado el mismo día. No es el repositorio oficial de Alibaba y los pesos no están verificados por el equipo Qwen; para producción conviene localizar la publicación canónica.
 - No se documentan los idiomas soportados, lo que impide garantizar un rendimiento homogéneo fuera de los idiomas mayoritarios de entrenamiento. En aplicaciones en castellano habría que validar con evaluación propia.
 - No hay datos publicados de sesgos, evaluación de seguridad ni tasas de alucinación para este modelo.
 - El modo thinking está activado por defecto, lo que incrementa latencia y consumo de tokens de salida; en producción conviene desactivarlo por petición o ajustar `reasoning_effort` según el caso.
@@ -105,7 +105,7 @@ No se dispone de cifras de rendimiento comparadas, por lo que la comparativa se 
 
 ## Enlaces
 
-- Repositorio de HuggingFace analizado: https://huggingface.co/vmnasirhussain/Qwen3.8-27B
+- Repositorio de Hugging Face analizado: https://huggingface.co/vmnasirhussain/Qwen3.8-27B
 - Repositorio GitHub oficial (Alibaba Cloud): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Documentación en Alibaba Cloud Model Studio: https://www.alibabacloud.com/help/en/model-studio/qwen3-8-27b
 - Página del modelo en QwenCloud: https://www.qwencloud.com/models/qwen3.8-27b

@@ -88,6 +88,6 @@ El modelo fine-tuneado mejora claramente al baseline en las métricas reportadas
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/dangvansam/vietnamese-prompt-injection)
+- [Modelo en Hugging Face](https://huggingface.co/dangvansam/vietnamese-prompt-injection)
 - [Modelo base: protectai/deberta-v3-base-prompt-injection-v2](https://huggingface.co/protectai/deberta-v3-base-prompt-injection-v2)
 - [Documentación de llm-guard](https://llm-guard.com) (para integración)

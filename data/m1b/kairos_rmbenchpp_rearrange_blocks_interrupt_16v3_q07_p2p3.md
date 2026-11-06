@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`m1b/kairos_rmbenchpp_rearrange_blocks_interrupt_16v3_q07_p2p3` es un checkpoint de investigación publicado en HuggingFace por el usuario `m1b` dentro de la familia Kairos, orientada a políticas robóticas (robotics manipulation policies) entrenadas sobre el benchmark RM-Bench++ / RoboDojo. El identificador delata su naturaleza: se trata de una ablación concreta sobre el modelo base `m1b/kairos_rmbenchpp_rearrange_blocks_interrupt_16v3_p2p3`, en la que se modifica el umbral de compuerta (`gate quantile`) del router de memoria de 0,9 a 0,7 y se añaden dos fases de ajuste fino (`p2` y `p3`) sobre la tarea de manipulación "rearrange blocks interrupt".
+`m1b/kairos_rmbenchpp_rearrange_blocks_interrupt_16v3_q07_p2p3` es un checkpoint de investigación publicado en Hugging Face por el usuario `m1b` dentro de la familia Kairos, orientada a políticas robóticas (robotics manipulation policies) entrenadas sobre el benchmark RM-Bench++ / RoboDojo. El identificador delata su naturaleza: se trata de una ablación concreta sobre el modelo base `m1b/kairos_rmbenchpp_rearrange_blocks_interrupt_16v3_p2p3`, en la que se modifica el umbral de compuerta (`gate quantile`) del router de memoria de 0,9 a 0,7 y se añaden dos fases de ajuste fino (`p2` y `p3`) sobre la tarea de manipulación "rearrange blocks interrupt".
 
 El repositorio ocupa 18,4 GB y contiene pesos en formato PyTorch (`.pt`), no safetensors ni GGUF, lo que confirma que es un artefacto de entrenamiento más que un modelo listo para inferencia estándar de NLP. Las acciones se codifican en un espacio de 14 dimensiones (`robodojo_dual_x5_absolute_joint_14d`), típico de un robot bimanual con dos brazos de 7 grados de libertad, y la normalización se aplica por dimensión con minmax a `[-1,1]`.
 
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `m1b/kairos_rmbenchpp_rearrange_blocks_interrupt_16v3_q07_p2p3` (este) | no disponible | prefijo 128 | no disponible | HuggingFace, 0 descargas |
-| `m1b/kairos_rmbenchpp_rearrange_blocks_interrupt_16v3_p2p3` (base) | no disponible | prefijo 128 | no disponible | HuggingFace |
+| `m1b/kairos_rmbenchpp_rearrange_blocks_interrupt_16v3_q07_p2p3` (este) | no disponible | prefijo 128 | no disponible | Hugging Face, 0 descargas |
+| `m1b/kairos_rmbenchpp_rearrange_blocks_interrupt_16v3_p2p3` (base) | no disponible | prefijo 128 | no disponible | Hugging Face |
 | Otras políticas RoboDojo / RM-Bench++ | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento para comparar; la única diferencia documentada es el `gate quantile` (0,7 frente a 0,9) y las fases `p2`/`p3`.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento para comparar; la única diferencia docume
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/m1b/kairos_rmbenchpp_rearrange_blocks_interrupt_16v3_q07_p2p3
+- Hugging Face: https://huggingface.co/m1b/kairos_rmbenchpp_rearrange_blocks_interrupt_16v3_q07_p2p3
 - Modelo base referenciado en la model card: `m1b/kairos_rmbenchpp_rearrange_blocks_interrupt_16v3_p2p3` (no se ha proporcionado URL directa)
 - Dataset referenciado: `rmbench-plus-plus-robodojo-rearrange-blocks-interrupt` (no se ha proporcionado URL directa)
 - Commit de código: `07a35b7fe9c1c331db925fbd47e347ee0845499f` (sin repositorio asociado en la información disponible)

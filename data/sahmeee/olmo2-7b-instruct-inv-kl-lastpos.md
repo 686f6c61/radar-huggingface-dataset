@@ -21,7 +21,7 @@ Su relevancia es metodológica más que de rendimiento. Los propios autores advi
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (tamano del repositorio: 14,6 GB) |
 
-Datos adicionales de la ficha de HuggingFace: pipeline no disponible, 0 descargas, 0 likes, creado el 2026-09-21 y actualizado el 2026-09-21. Tags: `safetensors`, `olmo2`, `tokenization`, `robustness`, `safety`, `adversarial-tokenization`, `arxiv:2503.02174`, `base_model:allenai/OLMo-2-1124-7B-Instruct`, `license:apache-2.0`, `region:us`.
+Datos adicionales de la ficha de Hugging Face: pipeline no disponible, 0 descargas, 0 likes, creado el 2026-09-21 y actualizado el 2026-09-21. Tags: `safetensors`, `olmo2`, `tokenization`, `robustness`, `safety`, `adversarial-tokenization`, `arxiv:2503.02174`, `base_model:allenai/OLMo-2-1124-7B-Instruct`, `license:apache-2.0`, `region:us`.
 
 ## Arquitectura y entrenamiento
 
@@ -77,7 +77,7 @@ Estimaciones para un modelo de 7,3B parámetros; no hay mediciones publicadas en
 - Cuantización int4 (GPTQ/AWQ o GGUF Q4_K_M): aproximadamente 4 a 5 GB de pesos, aunque estas versiones no se publican en el repositorio y habría que generarlas.
 - GPU recomendadas: A100 40/80 GB, H100 o L40S para servicio concurrente; RTX 4090 (24 GB) o A6000 (48 GB) para desarrollo.
 - Cabe en GPU de consumo: sí. RTX 4090/3090 (24 GB) en bf16 sin apenas margen para lotes grandes; RTX 4080/3080 Ti (16 GB) o RTX 4060 Ti 16 GB en int8; RTX 3060 12 GB o similar en int4.
-- Opciones de despliegue: HuggingFace Transformers (ruta directa, ya que solo hay safetensors), vLLM y TGI para servicio con batching continuo. Para llama.cpp u Ollama es necesario convertir previamente los pesos a GGUF, porque el repositorio no incluye cuantizaciones.
+- Opciones de despliegue: Hugging Face Transformers (ruta directa, ya que solo hay safetensors), vLLM y TGI para servicio con batching continuo. Para llama.cpp u Ollama es necesario convertir previamente los pesos a GGUF, porque el repositorio no incluye cuantizaciones.
 - Latencia y throughput: no disponible.
 - Almacenamiento: 14,6 GB en disco para los pesos sin cuantizar; prever algo más si se generan copias en GGUF o formatos de cuantización.
 
@@ -85,10 +85,10 @@ Estimaciones para un modelo de 7,3B parámetros; no hay mediciones publicadas en
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `Sahmeee/olmo2-7b-instruct-inv-kl-lastpos` | 7,3B | no disponible (hereda la del base) | Apache 2.0 | HuggingFace, solo safetensors; 0 descargas | Checkpoint de investigacion, una sola semilla, sin metricas publicadas |
-| `allenai/OLMo-2-1124-7B-Instruct` | 7,3B | la del modelo base de OLMo 2 | Apache 2.0 | HuggingFace, ampliamente distribuido | Modelo de referencia del ajuste; comparacion experimental directa |
-| `meta-llama/Llama-3.1-8B-Instruct` | 8B | 128.000 tokens | Licencia comunitaria de Llama 3.1 (no Apache 2.0) | HuggingFace | Alternativa generalista de tamaño similar; sin relacion con este estudio |
-| `Qwen/Qwen2.5-7B-Instruct` | 7,6B | 128.000 tokens (con escalado de RoPE) | Apache 2.0 | HuggingFace | Alternativa generalista de tamaño similar; sin relacion con este estudio |
+| `Sahmeee/olmo2-7b-instruct-inv-kl-lastpos` | 7,3B | no disponible (hereda la del base) | Apache 2.0 | Hugging Face, solo safetensors; 0 descargas | Checkpoint de investigacion, una sola semilla, sin metricas publicadas |
+| `allenai/OLMo-2-1124-7B-Instruct` | 7,3B | la del modelo base de OLMo 2 | Apache 2.0 | Hugging Face, ampliamente distribuido | Modelo de referencia del ajuste; comparacion experimental directa |
+| `meta-llama/Llama-3.1-8B-Instruct` | 8B | 128.000 tokens | Licencia comunitaria de Llama 3.1 (no Apache 2.0) | Hugging Face | Alternativa generalista de tamaño similar; sin relacion con este estudio |
+| `Qwen/Qwen2.5-7B-Instruct` | 7,6B | 128.000 tokens (con escalado de RoPE) | Apache 2.0 | Hugging Face | Alternativa generalista de tamaño similar; sin relacion con este estudio |
 
 La comparación pertinente a efectos del estudio es la primera fila frente a la segunda: mismo tamaño, misma familia, misma licencia, y única diferencia introducida por el ajuste. Los otros dos modelos se incluyen como referencia de categoría (7-8B instruct), pero no comparten el objetivo de invarianza de tokenización y no se dispone de comparaciones de rendimiento entre ellos y este checkpoint.
 
@@ -111,7 +111,7 @@ La comparación pertinente a efectos del estudio es la primera fila frente a la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sahmeee/olmo2-7b-instruct-inv-kl-lastpos
+- Modelo en Hugging Face: https://huggingface.co/Sahmeee/olmo2-7b-instruct-inv-kl-lastpos
 - Modelo base: https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct
 - Paper de referencia sobre tokenización adversaria (Geh et al.): https://arxiv.org/abs/2503.02174
 - Otros enlaces relevantes: no disponible (la búsqueda web no devolvió fuentes tecnicas relacionadas con este modelo).

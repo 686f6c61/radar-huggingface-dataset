@@ -78,10 +78,10 @@ Evaluación humana a ciegas: 25 pares, 3 evaluadores, 75 votos. La model card in
 
 | Modelo | Tipo | Parámetros | Contexto | Métricas publicadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| lora_r4 (este adaptador) | LoRA rango 4 sobre SD 1.5 | 797.184 entrenables | no aplica | KID 0,0267; CLIP 0,311; LPIPS 0,718 | creativeml-openrail-m + restricción no comercial del autor | HuggingFace, 0 descargas |
+| lora_r4 (este adaptador) | LoRA rango 4 sobre SD 1.5 | 797.184 entrenables | no aplica | KID 0,0267; CLIP 0,311; LPIPS 0,718 | creativeml-openrail-m + restricción no comercial del autor | Hugging Face, 0 descargas |
 | Variante de rango 16 del mismo laboratorio | LoRA rango 16 sobre SD 1.5 | no disponible | no aplica | preferida frente al base en el 38,7 % de 75 votos humanos; sin KID/CLIP publicados | no disponible | referenciada en la model card, sin identificador ni métricas propias publicadas |
-| sunnyJane/data266-lab2-naruto-run1-lora-r4 | LoRA rango 4 sobre SD 1.5 (otro tema, mismo contexto de laboratorio) | no disponible | no aplica | no disponible | no disponible | HuggingFace |
-| Stable Diffusion 1.5 (base) | Modelo de difusión latente completo | no disponible en esta ficha | no aplica | KID 0,0602; CLIP 0,322; LPIPS 0,735 | creativeml-openrail-m | HuggingFace, ampliamente adoptado |
+| sunnyJane/data266-lab2-naruto-run1-lora-r4 | LoRA rango 4 sobre SD 1.5 (otro tema, mismo contexto de laboratorio) | no disponible | no aplica | no disponible | no disponible | Hugging Face |
+| Stable Diffusion 1.5 (base) | Modelo de difusión latente completo | no disponible en esta ficha | no aplica | KID 0,0602; CLIP 0,322; LPIPS 0,735 | creativeml-openrail-m | Hugging Face, ampliamente adoptado |
 
 No se dispone de comparaciones con adaptadores de terceros de la misma categoría (LoRA de estilo cartoon sobre SD 1.5) dentro de la información proporcionada.
 
@@ -102,11 +102,11 @@ No se dispone de comparaciones con adaptadores de terceros de la misma categorí
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sneha-subbu/data266-lab2-p2-lora_r4
+- Modelo en Hugging Face: https://huggingface.co/Sneha-subbu/data266-lab2-p2-lora_r4
 - Modelo base: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Dataset de entrenamiento: https://huggingface.co/datasets/reach-vb/pokemon-blip-captions
 - Perfil del autor en GitHub: https://github.com/Snehasingh-21/Sneha-subbu
 - Adaptador del mismo laboratorio (tema Naruto): https://huggingface.co/sunnyJane/data266-lab2-naruto-run1-lora-r4
 - Registro de terceros del adaptador Naruto: https://free2aitools.com/model/sunnyjane/data266-lab2-naruto-run1-lora-r4
 - Catálogo de modelos y LoRAs de la comunidad: https://civitai.com/models
-- Búsqueda de modelos LoRA en HuggingFace: https://huggingface.co/models?sort=modified&search=lora
+- Búsqueda de modelos LoRA en Hugging Face: https://huggingface.co/models?sort=modified&search=lora

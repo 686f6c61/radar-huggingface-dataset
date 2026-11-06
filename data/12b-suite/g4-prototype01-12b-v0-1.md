@@ -81,7 +81,7 @@ La comparativa es orientativa. Este finetune no tiene datos de rendimiento, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/12B-Suite/G4-Prototype01-12B-v0.1
+- Modelo en Hugging Face: https://huggingface.co/12B-Suite/G4-Prototype01-12B-v0.1
 - Dataset de entrenamiento: https://huggingface.co/datasets/Naphula-Archives/Dark-Psychology-Secrets
 - Modelo base: https://huggingface.co/MuXodious/gemma-4-12B-it-QAT-SOMPOA-heresy
 - Guia de Gemma 4 12B: https://www.gemma4.wiki/models/gemma-4-12b-model-guide

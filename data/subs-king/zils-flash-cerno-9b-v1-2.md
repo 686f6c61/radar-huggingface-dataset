@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zils d3-flash soup body: Cerno 9B v1.2 es un reempaquetado del modelo apertixai/cerno-9b-v1.2, publicado por el usuario subs-king en HuggingFace. No se trata de un modelo entrenado desde cero ni de un fine-tuning: los pesos de lenguaje son los originales del modelo base, sin modificar, y los cambios introducidos se limitan al layout de tensores, la disposición de shards y la incorporación de una torre de visión procedente de Qwen/Qwen3.5-9B. El propósito declarado es servir como "soup body" para la subred Zils (Bittensor SN127), pool d3-flash.
+Zils d3-flash soup body: Cerno 9B v1.2 es un reempaquetado del modelo apertixai/cerno-9b-v1.2, publicado por el usuario subs-king en Hugging Face. No se trata de un modelo entrenado desde cero ni de un fine-tuning: los pesos de lenguaje son los originales del modelo base, sin modificar, y los cambios introducidos se limitan al layout de tensores, la disposición de shards y la incorporación de una torre de visión procedente de Qwen/Qwen3.5-9B. El propósito declarado es servir como "soup body" para la subred Zils (Bittensor SN127), pool d3-flash.
 
 El modelo cuenta con 8.392.695.024 parámetros en formato safetensors (aproximadamente 8,4 mil millones), con un tamaño de repositorio de 16,8 GB. La licencia es Apache 2.0, heredada del modelo original. No se incluyen los tensores `lm_head` ni `mtp`, lo que condiciona su uso directo para inferencia de texto sin una cabeza de lenguaje adicional.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) para ninguno de los
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/subs-king/zils-flash-cerno-9b-v1.2
+- Repositorio Hugging Face: https://huggingface.co/subs-king/zils-flash-cerno-9b-v1.2
 - Modelo base: https://huggingface.co/apertixai/cerno-9b-v1.2
 - Modelo de origen de la torre de visión: https://huggingface.co/Qwen/Qwen3.5-9B
 - Subred Zils (Bittensor SN127): no disponible enlace oficial en la informacion proporcionada.

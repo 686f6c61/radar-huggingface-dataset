@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shaymin es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de redactar esta ficha, la informacion disponible es minima: la model card unicamente contiene el bloque de metadatos con la licencia, sin descripcion, sin pipeline declarado, sin idiomas especificados y sin resultados de evaluacion. El repositorio ocupa 0,1 GB, lo que acota el tamano de los pesos a un orden de magnitud muy reducido, pero no permite determinar el numero de parametros ni la arquitectura.
+Shaymin es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de redactar esta ficha, la informacion disponible es minima: la model card unicamente contiene el bloque de metadatos con la licencia, sin descripcion, sin pipeline declarado, sin idiomas especificados y sin resultados de evaluacion. El repositorio ocupa 0,1 GB, lo que acota el tamano de los pesos a un orden de magnitud muy reducido, pero no permite determinar el numero de parametros ni la arquitectura.
 
 No se trata, por tanto, de un lanzamiento con documentacion tecnica verificable. El interes de la ficha es inverso: sirve como registro de un artefacto que, a dia de hoy, no ofrece la informacion minima necesaria para evaluar su idoneidad en produccion. Cualquier decision de adopcion exigiria inspeccionar directamente los archivos del repositorio (config.json, tokenizer,权重) y ejecutar pruebas propias.
 
@@ -38,7 +38,7 @@ No disponible. No se ha publicado ninguna descripcion funcional del modelo, por 
 - Modo de razonamiento explicito (thinking), vision o audio.
 - Ventana de contexto efectiva para conversaciones multi-turno.
 
-La ausencia de pipeline declarado en HuggingFace impide incluso confirmar que se trate de un modelo de lenguaje causal; podria ser un adaptador, un modelo de embeddings o un artefacto auxiliar.
+La ausencia de pipeline declarado en Hugging Face impide incluso confirmar que se trate de un modelo de lenguaje causal; podria ser un adaptador, un modelo de embeddings o un artefacto auxiliar.
 
 ## Casos de uso
 
@@ -48,7 +48,7 @@ Los siguientes escenarios son plausibles para un artefacto de este tamano, pero 
 - Experimentacion academica con modelos pequenos: util como linea base para comparar tecnicas de cuantizacion o de destilacion sobre un checkpoint de bajo coste.
 - Pruebas de humo en CI/CD: validar que un nuevo pipeline de despliegue (por ejemplo, un servidor compatible con la API de OpenAI) arranca y responde correctamente con un modelo de peso minimo.
 - Evaluacion de licencia CC-BY-4.0 en flujos comerciales: sirve para verificar internamente los requisitos de atribucion antes de adoptar artefactos con esta licencia en un producto.
-- Educacion y divulgacion: demostrar el ciclo completo de publicacion y consumo de un modelo en HuggingFace (descarga, carga con transformers, tokenizacion) sin incurrir en costes de GPU.
+- Educacion y divulgacion: demostrar el ciclo completo de publicacion y consumo de un modelo en Hugging Face (descarga, carga con transformers, tokenizacion) sin incurrir en costes de GPU.
 - Fine-tuning de bajo coste: si finalmente se confirma que es un modelo de texto pequeno, podria servir como base para ajuste en tareas muy acotadas con recursos limitados.
 
 No se recomienda ninguno de estos casos para cargas de produccion con usuarios finales sin una evaluacion previa de calidad, sesgos y seguridad.
@@ -79,11 +79,11 @@ No disponible. Sin conocer el numero de parametros, la arquitectura ni el contex
 - Idiomas: el campo de idiomas esta vacio; no se puede asumir competencia en castellano ni en ninguna otra lengua.
 - Licencia: CC-BY-4.0 permite uso comercial y modificacion con atribucion al autor; no obstante, el usuario debe verificar de forma independiente que los pesos no arrastren restricciones adicionales del modelo base (si se trata de un derivado), algo que la model card no aclara.
 - Validacion de la comunidad: cero descargas y cero likes en el momento del registro; no existen reportes de terceros sobre su calidad o seguridad.
-- Anomalia en las fechas: la fecha de creacion indicada (2026-10-17) es posterior a la de consulta habitual de este tipo de registros; conviene verificar los metadatos directamente en HuggingFace antes de citarlos.
+- Anomalia en las fechas: la fecha de creacion indicada (2026-10-17) es posterior a la de consulta habitual de este tipo de registros; conviene verificar los metadatos directamente en Hugging Face antes de citarlos.
 - Uso en produccion: desaconsejado sin una evaluacion propia de calidad, latencia, seguridad y comportamiento en los idiomas objetivo.
 
 ## Enlaces
 
-- [HuggingFace: Ryanham1lton/Shaymin](https://huggingface.co/Ryanham1lton/Shaymin)
+- [Hugging Face: Ryanham1lton/Shaymin](https://huggingface.co/Ryanham1lton/Shaymin)
 
 No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

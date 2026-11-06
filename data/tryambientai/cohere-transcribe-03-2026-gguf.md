@@ -105,8 +105,8 @@ No se dispone de datos de benchmarks comparativos directos con otros modelos ASR
 
 ## Enlaces
 
-- HuggingFace (esta conversion GGUF): https://huggingface.co/tryambientai/cohere-transcribe-03-2026-gguf
-- Modelo base en HuggingFace: https://huggingface.co/CohereLabs/cohere-transcribe-03-2026
+- Hugging Face (esta conversion GGUF): https://huggingface.co/tryambientai/cohere-transcribe-03-2026-gguf
+- Modelo base en Hugging Face: https://huggingface.co/CohereLabs/cohere-transcribe-03-2026
 - Commit del modelo base referenciado: https://huggingface.co/CohereLabs/cohere-transcribe-03-2026/commit/76b8b23
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Commit de validacion en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/tree/bf0d0b7

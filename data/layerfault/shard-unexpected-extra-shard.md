@@ -69,7 +69,7 @@ No disponible. No existen modelos comparables porque no es un modelo de lenguaje
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/LayerFault/shard-unexpected-extra-shard
+- Repositorio de Hugging Face: https://huggingface.co/LayerFault/shard-unexpected-extra-shard
 - Referencias de la búsqueda web sobre sharding de modelos (contexto técnico general, no directamente aplicable a este artefacto):
   - IBM Developer – Scaling LLM fine-tuning with sharding: https://developer.ibm.com/articles/llms-sharding/
   - Medium – Understanding Model Sharding and Model Parallelism: https://medium.com/@pranay.janupalli/understanding-model-sharding-and-model-parallelism-scaling-large-language-models-dee6144d0591

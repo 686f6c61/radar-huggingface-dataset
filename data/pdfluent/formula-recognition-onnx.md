@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible. El tamaño del repositorio es de 0.0 GB según HuggingFace, lo que sugiere artefactos muy pequeños, pero no se publica el número de parámetros ni el peso exacto de los ficheros ONNX.
+- VRAM estimada: no disponible. El tamaño del repositorio es de 0.0 GB según Hugging Face, lo que sugiere artefactos muy pequeños, pero no se publica el número de parámetros ni el peso exacto de los ficheros ONNX.
 - GPU recomendadas: no disponible. Por la magnitud de la entrada (64x768) y la memoria de 96 posiciones, es previsible que quepa en GPUs de consumo, pero no hay datos oficiales que lo confirmen.
 - Compatibilidad con GPU de consumo: no confirmada en la documentación; la ejecución con `onnxruntime` en CPU es viable por la naturaleza del modelo, aunque no se documenta latencia.
 - Opciones de despliegue: `onnxruntime` (Python) con los tres ficheros; SDK de PDFluent 1.3.0 o superior (`pip install pdfluent`, `pdfluent models install formula`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
@@ -87,12 +87,12 @@ No se dispone en la información proporcionada de datos de rendimiento ni de esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PDFluent/formula-recognition-onnx
+- Modelo en Hugging Face: https://huggingface.co/PDFluent/formula-recognition-onnx
 - Web de PDFluent: https://pdfluent.com
 - Documentación: https://pdfluent.com/docs
 - Licencia: https://pdfluent.com/license
 - SDK y releases: https://github.com/pdfluent/pdfluent-sdk
-- Organización en HuggingFace: https://huggingface.co/PDFluent
+- Organización en Hugging Face: https://huggingface.co/PDFluent
 - Clasificador de nivel de encabezados: https://huggingface.co/PDFluent/pdf-heading-level-classifier
 - Dataset de layout ground-truth: https://huggingface.co/datasets/PDFluent/pdf-document-layout-ground-truth
 - Provenance (en el repositorio): PROVENANCE.md

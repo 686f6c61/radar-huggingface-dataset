@@ -6,7 +6,7 @@ El modelo `ausjahk/fruit-fresh-rotten-cnn-from-scratch` es un clasificador de im
 
 El modelo se entreno con pesos aleatorios sobre el dataset de Kaggle de frutas frescas/podridas, alcanzando una precision del 93,58 % en el conjunto de test. Con un total de 4 585 478 parametros, es un modelo ligero y compacto, adecuado para tareas de clasificacion de imagenes en entornos con recursos limitados. No se ha publicado informacion sobre la arquitectura detallada, el proceso de entrenamiento ni la licencia del modelo.
 
-A pesar de que el modelo no cuenta con descargas ni valoraciones en el momento de la consulta, su publicacion en HuggingFace lo hace accesible para su uso en aplicaciones de control de calidad, agricultura de precision y educacion en vision artificial.
+A pesar de que el modelo no cuenta con descargas ni valoraciones en el momento de la consulta, su publicacion en Hugging Face lo hace accesible para su uso en aplicaciones de control de calidad, agricultura de precision y educacion en vision artificial.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks adicionales (como MMLU, HumanEval o
 
 | Modelo | Parametros | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ausjahk/fruit-fresh-rotten-cnn-from-scratch | 4 585 478 | 93,58 % (test) | no disponible | HuggingFace |
+| ausjahk/fruit-fresh-rotten-cnn-from-scratch | 4 585 478 | 93,58 % (test) | no disponible | Hugging Face |
 | Raj-Rathod-Ai/FruitsCheck-CNN-Fruit-Freshness | no disponible | no disponible | no disponible | GitHub |
 | Bangkit-JKT2-D/fruits-fresh-rotten-classification | no disponible | no disponible | no disponible | GitHub (Colab) |
 
@@ -81,6 +81,6 @@ Los dos proyectos alternativos encontrados en la busqueda web abordan la misma t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ausjahk/fruit-fresh-rotten-cnn-from-scratch
+- Hugging Face: https://huggingface.co/ausjahk/fruit-fresh-rotten-cnn-from-scratch
 - Proyecto similar en GitHub: https://github.com/Raj-Rathod-Ai/FruitsCheck-CNN-Fruit-Freshness
 - Notebook de Colab de clasificacion de frutas: https://colab.research.google.com/github/Bangkit-JKT2-D/fruits-fresh-rotten-classification/blob/master/fresh_rotten_fruit_baseline.ipynb

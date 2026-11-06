@@ -4,7 +4,7 @@
 
 yun-persona-v1 es un ajuste fino (fine-tuning) del modelo base unsloth/gemma-4-E2B-it-unsloth-bnb-4bit, publicado por el usuario AlmostNobody (identificado en la model card como nobodZ00000) bajo licencia Apache 2.0. Se trata de un modelo de generacion de texto orientado a la adopcion de una "persona" conversacional concreta, derivado de la familia Gemma 4 en su variante E2B (presumiblemente una version eficiente de 2 mil millones de parametros) y entrenado sobre pesos ya cuantizados en formato bnb-4bit por Unsloth.
 
-El modelo se distribuye a traves de HuggingFace con la libreria transformers y un repositorio de apenas 0,1 GB, lo que sugiere que los pesos publicados conservan la cuantizacion de 4 bits del modelo base o que el ajuste fino se realizo con tecnicas de bajo rango (LoRA/QLoRA) sobre dicha base. La model card es extremadamente escasa: no documenta el dataset de entrenamiento, el numero de tokens, los hiperparametros ni los resultados de evaluacion, y se limita a indicar que el entrenamiento se realizo con Unsloth y TRL.
+El modelo se distribuye a traves de Hugging Face con la libreria transformers y un repositorio de apenas 0,1 GB, lo que sugiere que los pesos publicados conservan la cuantizacion de 4 bits del modelo base o que el ajuste fino se realizo con tecnicas de bajo rango (LoRA/QLoRA) sobre dicha base. La model card es extremadamente escasa: no documenta el dataset de entrenamiento, el numero de tokens, los hiperparametros ni los resultados de evaluacion, y se limita a indicar que el entrenamiento se realizo con Unsloth y TRL.
 
 Su relevancia actual es limitada y de nicho: se trata de un experimento personal de personalizacion de un modelo pequeno, con cero descargas y cero "likes" en el momento de la consulta, sin benchmarks publicados y sin documentacion tecnica que permita evaluar su calidad. Resulta util unicamente como referencia de flujo de trabajo (fine-tuning rapido con Unsloth sobre Gemma 4) o para experimentacion local con personajes conversacionales, no como modelo de produccion.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada y de nicho: se trata de un experimento personal
 
 La informacion disponible no detalla la arquitectura interna mas alla de su pertenencia a la familia Gemma 4 en la variante E2B. No se especifica si emplea atencion estandar, atencion lineal, mezcla de expertos (MoE) o alguna variante hibrida, ni se documenta el numero exacto de capas, dimensiones ocultas o cabezas de atencion. El modelo base declarado es unsloth/gemma-4-E2B-it-unsloth-bnb-4bit, es decir, una version instruction-tuned de Gemma 4 E2B ya cuantizada a 4 bits por Unsloth.
 
-El entrenamiento del ajuste fino se realizo con la libreria Unsloth y TRL de HuggingFace, segun indica la model card, que afirma que el modelo "fue entrenado 2x mas rapido con Unsloth". No se aporta informacion sobre el dataset utilizado, el numero de tokens de entrenamiento, la composicion de los datos, la existencia de RLHF, DPO o cualquier otra etapa de alineacion adicional, ni sobre hiperparametros como tasa de aprendizaje, rango de LoRA o numero de epocas. Tampoco se documenta ninguna innovacion tecnica especifica del ajuste.
+El entrenamiento del ajuste fino se realizo con la libreria Unsloth y TRL de Hugging Face, segun indica la model card, que afirma que el modelo "fue entrenado 2x mas rapido con Unsloth". No se aporta informacion sobre el dataset utilizado, el numero de tokens de entrenamiento, la composicion de los datos, la existencia de RLHF, DPO o cualquier otra etapa de alineacion adicional, ni sobre hiperparametros como tasa de aprendizaje, rango de LoRA o numero de epocas. Tampoco se documenta ninguna innovacion tecnica especifica del ajuste.
 
 ## Capacidades
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| AlmostNobody/yun-persona-v1 | no disponible (~2B por denominacion E2B) | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Ajuste fino de persona, sin benchmarks |
-| unsloth/gemma-4-E2B-it-unsloth-bnb-4bit (modelo base) | ~2B (segun denominacion) | no disponible | Apache 2.0 (presumible) | HuggingFace | Base instruction-tuned cuantizada a 4 bits |
-| Gemma 4 E2B-it (original) | ~2B (segun denominacion) | no disponible | Gemma license (segun familia) | HuggingFace | Modelo oficial de Google, con evaluaciones publicadas por el autor original |
+| AlmostNobody/yun-persona-v1 | no disponible (~2B por denominacion E2B) | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Ajuste fino de persona, sin benchmarks |
+| unsloth/gemma-4-E2B-it-unsloth-bnb-4bit (modelo base) | ~2B (segun denominacion) | no disponible | Apache 2.0 (presumible) | Hugging Face | Base instruction-tuned cuantizada a 4 bits |
+| Gemma 4 E2B-it (original) | ~2B (segun denominacion) | no disponible | Gemma license (segun familia) | Hugging Face | Modelo oficial de Google, con evaluaciones publicadas por el autor original |
 
 La comparacion con alternativas de la misma categoria queda limitada por la ausencia de datos publicados sobre el modelo y sobre las variantes exactas de Gemma 4 E2B en la informacion proporcionada.
 
@@ -74,14 +74,14 @@ La comparacion con alternativas de la misma categoria queda limitada por la ause
 - Riesgo elevado de alucinacion, comun en modelos de ~2B parametros y agravado por la falta de evaluaciones.
 - Soporte unicamente de ingles; no se garantiza un comportamiento correcto en castellano u otros idiomas.
 - Sin benchmarks ni metricas de calidad publicadas: no hay evidencia de que el ajuste fino mejore al modelo base.
-- Cero descargas y cero interacciones en HuggingFace: modelo sin validacion por parte de la comunidad.
+- Cero descargas y cero interacciones en Hugging Face: modelo sin validacion por parte de la comunidad.
 - Licencia Apache 2.0 declarada, pero el modelo base deriva de Gemma 4, cuya licencia original puede imponer condiciones adicionales; conviene verificar la compatibilidad antes de un uso comercial.
 - Repositorio de 0,1 GB: posible que los pesos publicados esten en 4 bits o que el ajuste sea de bajo rango, con la consiguiente perdida de precision frente a pesos completos.
 - No recomendado para produccion sin una evaluacion propia exhaustiva.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlmostNobody/yun-persona-v1
+- Modelo en Hugging Face: https://huggingface.co/AlmostNobody/yun-persona-v1
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl

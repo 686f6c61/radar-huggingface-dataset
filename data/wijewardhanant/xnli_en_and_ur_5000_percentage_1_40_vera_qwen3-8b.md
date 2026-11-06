@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador de ajuste fino eficiente en parámetros (PEFT) publicado por el usuario WijewardhanaNT bajo el identificador `xnli_en_and_ur_5000_percentage_1_40_VeRA_Qwen3-8b`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador de 0,2 GB que debe aplicarse sobre el modelo base `Qwen/Qwen3-8B-Base`. El repositorio se creó el 21 de septiembre de 2026, declara la librería `peft` y la versión de framework PEFT 0.17.1, y en el momento de redactar esta ficha acumula 0 descargas y 0 valoraciones.
 
-El nombre del repositorio sugiere que el adaptador se entrenó sobre la tarea XNLI (inferencia de lenguaje natural entre pares de frases) en inglés (`en`) y urdu (`ur`), con un subconjunto de 5000 ejemplos y algún esquema identificado como «percentage_1_40». El sufijo «VeRA» apunta a una técnica de adaptación de matrices aleatorias vectorizadas, aunque la model card no lo confirma en ningún punto. La ficha publicada es la plantilla genérica de HuggingFace sin rellenar: todos los campos relevantes (autoría, licencia, idiomas, datos de entrenamiento, hiperparámetros y evaluación) figuran como «More Information Needed».
+El nombre del repositorio sugiere que el adaptador se entrenó sobre la tarea XNLI (inferencia de lenguaje natural entre pares de frases) en inglés (`en`) y urdu (`ur`), con un subconjunto de 5000 ejemplos y algún esquema identificado como «percentage_1_40». El sufijo «VeRA» apunta a una técnica de adaptación de matrices aleatorias vectorizadas, aunque la model card no lo confirma en ningún punto. La ficha publicada es la plantilla genérica de Hugging Face sin rellenar: todos los campos relevantes (autoría, licencia, idiomas, datos de entrenamiento, hiperparámetros y evaluación) figuran como «More Information Needed».
 
 La relevancia de este adaptador es, por tanto, doble. Por un lado, aborda un escenario de interés real: adaptar un modelo generativo denso de 8 000 millones de parámetros a una tarea de clasificación semántica en urdu, un idioma con recursos limitados. Por otro, su valor práctico inmediato es reducido, ya que no se publican métricas, no se declara licencia y no se documenta el procedimiento de entrenamiento, lo que impide reproducir o validar el resultado.
 
@@ -50,7 +50,7 @@ No hay información sobre el procedimiento de entrenamiento: se desconoce el ré
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye ninguna sección de evaluación completada, la ficha de HuggingFace no declara métricas y los resultados de la búsqueda web no aportan datos sobre este repositorio. No es posible, por tanto, comparar su precisión en XNLI ni en ninguna otra tarea.
+No se han publicado resultados de benchmarks en la información disponible. La model card no incluye ninguna sección de evaluación completada, la ficha de Hugging Face no declara métricas y los resultados de la búsqueda web no aportan datos sobre este repositorio. No es posible, por tanto, comparar su precisión en XNLI ni en ninguna otra tarea.
 
 ## Requisitos de hardware
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador (sobre Qwen3-8B-Base) | Adaptador de 0,2 GB sobre base de ~8 200 M | No disponible (base: 32 768 tokens) | No declarada | Repositorio de HuggingFace con 0 descargas |
+| Este adaptador (sobre Qwen3-8B-Base) | Adaptador de 0,2 GB sobre base de ~8 200 M | No disponible (base: 32 768 tokens) | No declarada | Repositorio de Hugging Face con 0 descargas |
 | Qwen/Qwen3-8B-Base | ~8 200 M | 32 768 tokens (131 072 con YaRN) | Apache 2.0 | Ampliamente disponible |
 | XLM-RoBERTa-large | ~559 M | 512 tokens | MIT | Ampliamente disponible |
 | mDeBERTa-v3-base | ~279 M | 512 tokens | MIT | Ampliamente disponible |
@@ -90,7 +90,7 @@ La comparación es estructural, no de rendimiento: no existen métricas publicad
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_VeRA_Qwen3-8b
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_VeRA_Qwen3-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Librería PEFT: https://github.com/huggingface/peft
 - Artículo de XNLI (no citado en la model card): https://arxiv.org/abs/1809.05053

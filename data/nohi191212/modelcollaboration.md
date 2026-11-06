@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ModelCollaboration es un artefacto de investigacion publicado por el usuario nohi191212 en HuggingFace, no un modelo generativo al uso. Se trata de un conjunto de pesos y datos experimentales que acompanan a un paper sobre enrutamiento de modelos (model routing) y colaboracion entre especialistas y modelos de vision-lenguaje (VLM). El repositorio incluye 16 checkpoints de routers de la tabla principal, estadisticas de normalizacion del conjunto de entrenamiento, encoders destilados de imagen y texto de 8M de parametros, y dos detectores especializados entrenados para el dominio ConstructionSite: YOLO26x y RT-DETR-X.
+ModelCollaboration es un artefacto de investigacion publicado por el usuario nohi191212 en Hugging Face, no un modelo generativo al uso. Se trata de un conjunto de pesos y datos experimentales que acompanan a un paper sobre enrutamiento de modelos (model routing) y colaboracion entre especialistas y modelos de vision-lenguaje (VLM). El repositorio incluye 16 checkpoints de routers de la tabla principal, estadisticas de normalizacion del conjunto de entrenamiento, encoders destilados de imagen y texto de 8M de parametros, y dos detectores especializados entrenados para el dominio ConstructionSite: YOLO26x y RT-DETR-X.
 
 El problema que aborda es la seleccion dinamica de que modelo (especialista de vision o VLM) debe resolver cada ejemplo, con umbrales de operacion seleccionados sobre validacion y curvas de coste medidas. La relevancia actual es de tipo metodologico y de reproducibilidad: el paquete permite reejecutar la seleccion de umbrales y comprobar las curvas aprendidas publicadas sin necesidad de inferencia de los modelos grandes, mediante un script de replay que compara los puntos guardados contra los resultados por ejemplo.
 
@@ -82,7 +82,7 @@ No disponible. El artefacto no es un modelo comparable directamente con LLM o VL
 | Contexto | no disponible | no disponible |
 | Rendimiento publicado | tablas en el paper, cifras no disponibles | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | pesos y datos en HuggingFace; codigo en GitHub | no disponible |
+| Disponibilidad | pesos y datos en Hugging Face; codigo en GitHub | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -101,8 +101,8 @@ No disponible. El artefacto no es un modelo comparable directamente con LLM o VL
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nohi191212/ModelCollaboration
+- Hugging Face: https://huggingface.co/nohi191212/ModelCollaboration
 - Codigo: https://github.com/nohi191212/ModelCollaboration
 - Instrucciones de descarga de recursos externos: `docs/DOWNLOADS.md` dentro del repositorio de codigo
-- Paper: `main.pdf` y `appendix.pdf`, incluidos en el propio repositorio de HuggingFace
+- Paper: `main.pdf` y `appendix.pdf`, incluidos en el propio repositorio de Hugging Face
 - La busqueda web realizada no devolvio resultados relevantes para este modelo (unicamente paginas corporativas de Microsoft, sin relacion con el artefacto).

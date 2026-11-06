@@ -80,7 +80,7 @@ La comparativa se basa en características estructurales conocidas; no hay datos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nc-ai-consortium/VAETKI-VL-7B-A1B
+- Hugging Face: https://huggingface.co/nc-ai-consortium/VAETKI-VL-7B-A1B
 - Repositorio GitHub: https://github.com/wbl-ncai/VAETKI/
 - Quickstart de inferencia: https://github.com/wbl-ncai/VAETKI/blob/main/inference_vaetki_vl_7b_a1b.py
 - Informe técnico (PDF): https://github.com/wbl-ncai/VAETKI/raw/releases/v1.0.0/VAETKI_Technical_Report.pdf

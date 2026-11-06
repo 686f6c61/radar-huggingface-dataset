@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `francesca9805/arb-arab-100mb-ppt-mp-struct-core-100mb_seed455` es un ajuste fino (fine-tune) del modelo base `goldfish-models/arb_arab_100mb`, publicado por el usuario francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 (transformer decoder-only) con aproximadamente 124,8 millones de parametros, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de HuggingFace. Por el nombre del modelo base, el trabajo se enmarca en la familia Goldfish, orientada a modelos monolingues de bajo coste, en este caso para arabe (`arb_arab`).
+El modelo `francesca9805/arb-arab-100mb-ppt-mp-struct-core-100mb_seed455` es un ajuste fino (fine-tune) del modelo base `goldfish-models/arb_arab_100mb`, publicado por el usuario francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 (transformer decoder-only) con aproximadamente 124,8 millones de parametros, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de Hugging Face. Por el nombre del modelo base, el trabajo se enmarca en la familia Goldfish, orientada a modelos monolingues de bajo coste, en este caso para arabe (`arb_arab`).
 
-El modelo se distribuye en formato safetensors, es compatible con `text-generation-inference` y con endpoints de HuggingFace, y su repositorio ocupa unos 0,3 GB. No dispone de descargas ni likes en el momento de redactar esta ficha, y la model card es minima: no documenta datos de entrenamiento, numero de tokens, composicion del dataset ni resultados de evaluacion.
+El modelo se distribuye en formato safetensors, es compatible con `text-generation-inference` y con endpoints de Hugging Face, y su repositorio ocupa unos 0,3 GB. No dispone de descargas ni likes en el momento de redactar esta ficha, y la model card es minima: no documenta datos de entrenamiento, numero de tokens, composicion del dataset ni resultados de evaluacion.
 
 Su relevancia es limitada y de caracter experimental: se trata de un ajuste fino de investigacion sobre un modelo pequeno y monolingue, sin licencia declarada de forma explicita y sin benchmarks publicados. Resulta util como punto de partida reproducible para experimentos de fine-tuning con TRL sobre modelos Goldfish, pero no como modelo de produccion sin una evaluacion adicional.
 
@@ -45,7 +45,7 @@ Al ser un modelo de ~125 M de parametros y entrenamiento exclusivamente SFT, no 
 - Generacion de texto en arabe de bajo coste: para tareas de continuacion de texto o generacion corta donde no se requiera alta calidad y se priorice un consumo minimo de recursos (menos de 1 GB de VRAM).
 - Prototipado rapido de pipelines de generacion: gracias a su tamano, permite iterar localmente en un portatil antes de escalar a modelos mayores.
 - Educacion y docencia: sirve para demostrar el flujo completo de `transformers.pipeline` con un checkpoint pequeno y un caso conversacional sencillo.
-- Pruebas de despliegue con TGI o endpoints de HuggingFace: al ser compatible con `text-generation-inference`, es util para validar infraestructura de servicio antes de desplegar modelos mas grandes.
+- Pruebas de despliegue con TGI o endpoints de Hugging Face: al ser compatible con `text-generation-inference`, es util para validar infraestructura de servicio antes de desplegar modelos mas grandes.
 - Investigacion sobre tokenizacion multilingue: el nombre del proyecto W&B (`new-tokenizers`) sugiere que el modelo se uso en experimentos relacionados con tokenizadores para arabe.
 
 No se recomienda su uso en produccion real sin una evaluacion previa de calidad, sesgos y comportamiento, dado que no hay benchmarks publicados.
@@ -59,16 +59,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en fp32, 0,25 GB en fp16/bf16 y menos de 0,2 GB en cuantizacion int8. Con cache KV y lotes pequenos, el consumo total se mantiene muy por debajo de 1-2 GB.
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM es suficiente. Tarjetas como RTX 3060, RTX 4060, RTX 4090 o incluso GPUs integradas sirven sin problema; para lotes grandes o baja latencia, A100/H100 son sobredimensionadas para este tamano.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo actual e incluso en CPU.
-- Opciones de despliegue: HuggingFace Transformers, text-generation-inference (TGI), vLLM y endpoints de HuggingFace. Para llama.cpp u Ollama seria necesario convertir los pesos a formato GGUF, ya que el repositorio solo incluye safetensors.
+- Opciones de despliegue: Hugging Face Transformers, text-generation-inference (TGI), vLLM y endpoints de Hugging Face. Para llama.cpp u Ollama seria necesario convertir los pesos a formato GGUF, ya que el repositorio solo incluye safetensors.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. Por el tamano del modelo, se espera una latencia muy baja en GPU moderna y velocidad aceptable en CPU.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/arb-arab-100mb-ppt-mp-struct-core-100mb_seed455` | ~125 M | no disponible | no disponible | HuggingFace (0 descargas) | Fine-tune SFT del base Goldfish arabe |
-| `goldfish-models/arb_arab_100mb` | ~125 M (no confirmado) | no disponible | no disponible | HuggingFace | Modelo base monolingue arabe de Goldfish |
-| `openai-community/gpt2` | 124 M | 1024 | MIT | HuggingFace | Modelo GPT-2 original en ingles |
+| `francesca9805/arb-arab-100mb-ppt-mp-struct-core-100mb_seed455` | ~125 M | no disponible | no disponible | Hugging Face (0 descargas) | Fine-tune SFT del base Goldfish arabe |
+| `goldfish-models/arb_arab_100mb` | ~125 M (no confirmado) | no disponible | no disponible | Hugging Face | Modelo base monolingue arabe de Goldfish |
+| `openai-community/gpt2` | 124 M | 1024 | MIT | Hugging Face | Modelo GPT-2 original en ingles |
 
 No se dispone de datos de rendimiento comparados entre estos modelos en la informacion proporcionada, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparados entre estos modelos en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/arb-arab-100mb-ppt-mp-struct-core-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/arb-arab-100mb-ppt-mp-struct-core-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/arb_arab_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/uq4wokfy

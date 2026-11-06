@@ -72,12 +72,12 @@ No se dispone de datos comparativos cuantitativos con otros modelos en la inform
 
 ## Enlaces
 
-- [HuggingFace - bkjha8/Wan2.2-S2V-14B](https://huggingface.co/bkjha8/Wan2.2-S2V-14B)
+- [Hugging Face - bkjha8/Wan2.2-S2V-14B](https://huggingface.co/bkjha8/Wan2.2-S2V-14B)
 - [Paper Wan-S2V (arXiv:2508.18621)](https://huggingface.co/papers/2508.18621)
 - [Paper Wan2.2 base (arXiv:2503.20314)](https://arxiv.org/abs/2503.20314)
 - [Página del proyecto Wan-S2V](https://humanaigc.github.io/wan-s2v-webpage)
 - [GitHub Wan-Video/Wan2.2](https://github.com/Wan-Video/Wan2.2)
-- [Organización Wan-AI en HuggingFace](https://huggingface.co/Wan-AI/)
+- [Organización Wan-AI en Hugging Face](https://huggingface.co/Wan-AI/)
 - [Organización Wan-AI en ModelScope](https://modelscope.cn/organization/Wan-AI)
 - [Web oficial Wan](https://wan.video/)
 - [Blog de Wan](https://wan.video/welcome?spm=a2ty_o02.30011076.0.0.6c9ee41eCcluqg)

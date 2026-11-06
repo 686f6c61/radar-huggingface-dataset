@@ -86,6 +86,6 @@ Las tres variantes comparten los mismos pesos; la diferencia esta en la configur
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ankush13r/prelude-base-iter_0989075-yarn-128k
+- Modelo en Hugging Face: https://huggingface.co/ankush13r/prelude-base-iter_0989075-yarn-128k
 - Modelo base: https://huggingface.co/openeurollm/prelude
 - Paper de referencia sobre extension de contexto con YaRN (encontrado en la busqueda web, posiblemente relacionado con la tecnica): https://arxiv.org/html/2605.31268v1

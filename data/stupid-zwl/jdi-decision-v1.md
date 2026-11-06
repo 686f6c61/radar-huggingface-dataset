@@ -4,7 +4,7 @@
 
 jdi-decision-v1 es un sistema multimodal de decisión desarrollado por JD.com (京东). No es un modelo generativo al uso: su función es recibir un estado (texto e imágenes), una o varias preguntas con opciones definidas y devolver una elección estructurada acompañada de probabilidades por opción. Internamente combina un codificador visual, un componente de reconocimiento de texto PaddleOCR v5 congelado (procedente del equipo PaddlePaddle de Baidu), un backbone de decisión basado en Qwen3.8-27B con adaptaciones de la arquitectura D3 y una cabeza de lectura en FP32.
 
-El modelo declara 26.085.330.160 parámetros (unos 26,1 mil millones) y un repositorio de 52,2 GB en formato safetensors, con licencia Apache 2.0. Está etiquetado como `decision-model` y `multimodal`, y su pipeline no está especificado en HuggingFace. La relevancia actual reside en su enfoque: en lugar de generar texto libre, produce decisiones con distribución de probabilidad explícita, lo que facilita su integración en sistemas que necesitan trazabilidad y umbrales de confianza.
+El modelo declara 26.085.330.160 parámetros (unos 26,1 mil millones) y un repositorio de 52,2 GB en formato safetensors, con licencia Apache 2.0. Está etiquetado como `decision-model` y `multimodal`, y su pipeline no está especificado en Hugging Face. La relevancia actual reside en su enfoque: en lugar de generar texto libre, produce decisiones con distribución de probabilidad explícita, lo que facilita su integración en sistemas que necesitan trazabilidad y umbrales de confianza.
 
 La documentación pública reporta una puntuación de 79,3601 en la suite pública Decision Index Vision, con 12.210 de 12.210 peticiones exitosas en 11 benchmarks, y una latencia media de 345,5 ms en dos nodos H200. El autor advierte que se trata de una puntuación autodeclarada y que la validación oficial de latencia en RTX PRO 6000 está pendiente.
 
@@ -79,7 +79,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jdi-decision-v1 | 26.085.330.160 | no disponible | Apache 2.0 | HuggingFace, 33 descargas |
+| jdi-decision-v1 | 26.085.330.160 | no disponible | Apache 2.0 | Hugging Face, 33 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stupid-zwl/jdi-decision-v1
+- Modelo en Hugging Face: https://huggingface.co/stupid-zwl/jdi-decision-v1
 - Dataset y resultados de evaluación: https://huggingface.co/datasets/stupid-zwl/jdi-decision-v1
 - Resultados de la ejecución de visión: https://huggingface.co/datasets/stupid-zwl/jdi-decision-v1/tree/main/runs/vision-paddle-v5
 - Guía de reproducción: `REPRODUCE.md` en el repositorio del modelo

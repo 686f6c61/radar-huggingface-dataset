@@ -73,11 +73,11 @@ Datos de los modelos comparables tomados de sus model cards públicas; no se han
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| credible-ai/olmo2-1B-24domains-dirichlet-exponential-cpile | 1,41B | no disponible | MIT | Mezcla de dominios optimizada (Olmix), preentrenamiento de 32B tokens | HuggingFace, safetensors |
-| allenai/OLMo-2-0425-1B | 1,24B (aproximado) | 4096 | Apache 2.0 | Modelo base generalista con receta completa publicada | HuggingFace, safetensors |
-| HuggingFaceTB/SmolLM2-1.7B | 1,71B | 8192 | Apache 2.0 | Modelo base y variantes instruct de alta calidad | HuggingFace, safetensors, GGUF |
-| TinyLlama/TinyLlama-1.1B | 1,1B | 2048 | Apache 2.0 | Preentrenamiento de 3B tokens sobre corpus mixto, con variante chat | HuggingFace, safetensors |
-| EleutherAI/pythia-1.4b | 1,41B | 2048 | Apache 2.0 | Suites de checkpoints para investigación de entrenamiento | HuggingFace, safetensors |
+| credible-ai/olmo2-1B-24domains-dirichlet-exponential-cpile | 1,41B | no disponible | MIT | Mezcla de dominios optimizada (Olmix), preentrenamiento de 32B tokens | Hugging Face, safetensors |
+| allenai/OLMo-2-0425-1B | 1,24B (aproximado) | 4096 | Apache 2.0 | Modelo base generalista con receta completa publicada | Hugging Face, safetensors |
+| HuggingFaceTB/SmolLM2-1.7B | 1,71B | 8192 | Apache 2.0 | Modelo base y variantes instruct de alta calidad | Hugging Face, safetensors, GGUF |
+| TinyLlama/TinyLlama-1.1B | 1,1B | 2048 | Apache 2.0 | Preentrenamiento de 3B tokens sobre corpus mixto, con variante chat | Hugging Face, safetensors |
+| EleutherAI/pythia-1.4b | 1,41B | 2048 | Apache 2.0 | Suites de checkpoints para investigación de entrenamiento | Hugging Face, safetensors |
 
 La diferencia clave frente a todos ellos es que este modelo no se publica como base generalista: su valor está en la mezcla de datos documentada (`mix.json`) y en la reproducibilidad del pipeline Olmix/LinMix, no en su rendimiento en tareas de usuario final.
 
@@ -95,7 +95,7 @@ La diferencia clave frente a todos ellos es que este modelo no se publica como b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-24domains-dirichlet-exponential-cpile
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-24domains-dirichlet-exponential-cpile
 - Modelo proxy del enjambre Dirichlet (30M): https://huggingface.co/credible-ai/olmo2-30M-24domains-dirichlet
 - Dataset de origen: https://huggingface.co/datasets/WebOrganizer/Corpus-200B
 - Dataset tokenizado usado en el entrenamiento: https://huggingface.co/datasets/credible-ai/weborganizer-corpus-200b-tokenized

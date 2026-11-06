@@ -6,7 +6,7 @@ MembraneMPNN per-residue es una implementación no oficial, distribuida por el e
 
 Arquitectura de message passing sobre grafo espacial de residuos, con codificación de los átomos de esqueleto N, CA, C y O, tamaño oculto de 128, 3 bloques de encoder y 3 de decoder, y 48 vecinos por nodo. El modelo tiene 1.690.744 parámetros (1,691 M), lo que lo sitúa en la categoría de modelos ligeros de diseño de proteínas. La variante aquí descrita acepta etiquetas por residuo (0 = expuesto/otro, 1 = interfaz de membrana, 2 = enterrado en membrana); existe una variante hermana, `oteam/membranempnn-global`, con etiqueta binaria soluble/transmembrana.
 
-La ficha se basa exclusivamente en la model card y los metadatos del repositorio de HuggingFace, ya que no se han publicado resultados de benchmarks ni detalles completos de entrenamiento en la información disponible.
+La ficha se basa exclusivamente en la model card y los metadatos del repositorio de Hugging Face, ya que no se han publicado resultados de benchmarks ni detalles completos de entrenamiento en la información disponible.
 
 ## Especificaciones técnicas
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MembraneMPNN per-residue (este) | 1,691 M | No disponible | Etiquetas de membrana por residuo (0/1/2) | AGPL-3.0 | HuggingFace (oteam) |
-| MembraneMPNN global | No disponible | No disponible | Etiqueta binaria soluble/transmembrana | AGPL-3.0 | HuggingFace (oteam) |
+| MembraneMPNN per-residue (este) | 1,691 M | No disponible | Etiquetas de membrana por residuo (0/1/2) | AGPL-3.0 | Hugging Face (oteam) |
+| MembraneMPNN global | No disponible | No disponible | Etiqueta binaria soluble/transmembrana | AGPL-3.0 | Hugging Face (oteam) |
 | ProteinMPNN (original) | No disponible | No disponible | Sin condicionamiento de membrana | No disponible en la información | Repositorio upstream |
 | LigandMPNN (upstream) | No disponible | No disponible | Membrana (global o por residuo) y ligandos | No disponible en la información | GitHub dauparas/LigandMPNN |
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 - Implementación no oficial: la model card indica explícitamente que se trata de una implementación no oficial de los modelos MembraneMPNN de LigandMPNN, escrita por el equipo OFoldX y no por los autores originales.
 - Licencia AGPL-3.0: impone obligaciones de copyleft fuerte; el uso comercial en servicios en red requiere liberar el código derivado, lo que puede ser restrictivo para producción.
-- Dependencia de la librería `ofoldx`: el modelo no es utilizable con frameworks estándar de HuggingFace Transformers; requiere instalar `ofoldx` y adaptarse a su API de pipelines.
+- Dependencia de la librería `ofoldx`: el modelo no es utilizable con frameworks estándar de Hugging Face Transformers; requiere instalar `ofoldx` y adaptarse a su API de pipelines.
 - Sin datos de benchmarks: no hay métricas publicadas de recuperación de secuencia, perplexity ni comparación con el modelo upstream, lo que impide evaluar su calidad objetiva.
 - Datos de entrenamiento no detallados: la model card remite a la documentación upstream y no especifica el dataset, el número de estructuras ni la composición, lo que limita la reproducibilidad.
 - Riesgo de sesgo en la composición aminoacídica: al condicionar por etiquetas de membrana, el modelo puede favorecer residuos hidrófobos en regiones etiquetadas como enterradas, con posible pérdida de diversidad en el diseño.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/membranempnn-per-residue
+- Modelo en Hugging Face: https://huggingface.co/oteam/membranempnn-per-residue
 - Variante global: https://huggingface.co/oteam/membranempnn-global
 - Código del modelo en OFoldX: https://github.com/OTeam-AI4S/OFoldX/tree/main/ofoldx/models/membranempnn
 - Guía de pipelines de OFoldX: https://github.com/OTeam-AI4S/OFoldX/blob/main/ofoldx/pipelines/README.md

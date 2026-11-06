@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DIVA es un sistema de conducción autónoma extremo a extremo presentado en el artículo *Beyond Planning: Differentiable Control-in-the-loop End-to-End Autonomous Driving*. Lo desarrolla ZhidongWang y se distribuye como checkpoints de referencia en HuggingFace, con el código, el entrenamiento y la evaluación en un repositorio de GitHub independiente. No es un modelo de lenguaje: es un agente de conducción que combina un planificador y una cabeza de control aprendida.
+DIVA es un sistema de conducción autónoma extremo a extremo presentado en el artículo *Beyond Planning: Differentiable Control-in-the-loop End-to-End Autonomous Driving*. Lo desarrolla ZhidongWang y se distribuye como checkpoints de referencia en Hugging Face, con el código, el entrenamiento y la evaluación en un repositorio de GitHub independiente. No es un modelo de lenguaje: es un agente de conducción que combina un planificador y una cabeza de control aprendida.
 
 La propuesta técnica central es sustituir el controlador clásico ajustado a mano (PID o similar) por una cabeza de control neuronal que emite acelerador, freno y volante. Durante el entrenamiento, las acciones de esa cabeza se propagan a través de un modelo de vehículo diferenciable identificado sobre el vehículo ego de CARLA (`vehicle.lincoln.mkz_2020`, CARLA 0.9.15) y se supervisan los estados resultantes. Planificador y control se entrenan conjuntamente, en una sola etapa y desde cero.
 
@@ -78,6 +78,6 @@ No disponible. La información proporcionada no incluye datos de otros agentes d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZhidongWang/DIVA
+- Hugging Face: https://huggingface.co/ZhidongWang/DIVA
 - Repositorio de código: https://github.com/WangZhiDong2000/DIVA-Differentiable-Control-in-the-Loop-End-to-End-Autonomous-Driving
 - Backbone TransFuser++ (carla_garage): https://github.com/autonomousvision/carla_garage

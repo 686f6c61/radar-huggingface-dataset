@@ -68,9 +68,9 @@ Evaluación con lm_eval 0.4.11, backend HF, bf16, longitud máxima 8192; MMLU y 
 
 | Modelo | Parametros | Contexto | MMLU | GSM8K | RULER@8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| DAR-opt (`dar_opt_r256_w256`) | 8B (MLA) | 32K (evaluado 8K) | 0,6133 | 0,7642 | 0,9252 | Llama 3 Community | HuggingFace, checkpoints de investigación |
-| Base TransMLA-llama3-8b-32k | 8B (MLA) | 32K | 0,6221 | 0,7710 | 0,9495 | Llama 3 Community | HuggingFace |
-| Uniform-272 | 8B (MLA) | 32K (evaluado 8K) | 0,4826 | 0,6869 | no disponible | Llama 3 Community | HuggingFace (mismo repo) |
+| DAR-opt (`dar_opt_r256_w256`) | 8B (MLA) | 32K (evaluado 8K) | 0,6133 | 0,7642 | 0,9252 | Llama 3 Community | Hugging Face, checkpoints de investigación |
+| Base TransMLA-llama3-8b-32k | 8B (MLA) | 32K | 0,6221 | 0,7710 | 0,9495 | Llama 3 Community | Hugging Face |
+| Uniform-272 | 8B (MLA) | 32K (evaluado 8K) | 0,4826 | 0,6869 | no disponible | Llama 3 Community | Hugging Face (mismo repo) |
 
 No se dispone de comparación con modelos no-MLA de la misma categoría en la información proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de comparación con modelos no-MLA de la misma categoría en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mississippiu/dar-llama3-mla-checkpoints
+- Hugging Face: https://huggingface.co/mississippiu/dar-llama3-mla-checkpoints
 - Modelo base: https://huggingface.co/fxmeng/TransMLA-llama3-8b-32k
 - Licencia Meta Llama 3: https://llama.meta.com/llama3/license/
 - Repositorio del proyecto DAR (código `llama3_mla/`): no disponible como URL en la información proporcionada

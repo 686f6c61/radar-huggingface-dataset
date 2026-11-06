@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario toolathlon-eval-07 bajo licencia MIT. Segun la model card, se trata de una actualizacion significativa respecto a una version anterior, con mejoras en razonamiento profundo, inferencia y soporte de function calling. El repositorio esta etiquetado como compatible con la libreria transformers y el pipeline de feature-extraction, aunque el tamaño del repositorio es de 0.0 GB, lo que sugiere que podria tratarse de un repositorio de prueba o placeholder sin pesos publicados.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario toolathlon-eval-07 bajo licencia MIT. Segun la model card, se trata de una actualizacion significativa respecto a una version anterior, con mejoras en razonamiento profundo, inferencia y soporte de function calling. El repositorio esta etiquetado como compatible con la libreria transformers y el pipeline de feature-extraction, aunque el tamaño del repositorio es de 0.0 GB, lo que sugiere que podria tratarse de un repositorio de prueba o placeholder sin pesos publicados.
 
 La informacion disponible es escasa y en gran parte no verificable: no se especifican parametros totales, arquitectura concreta, ni datos de entrenamiento. La model card incluye una tabla de benchmarks comparativos con modelos genericos (Model1, Model2, Model1-v2) que muestra mejoras en todas las categorias, pero sin detalles sobre la metodologia de evaluacion ni identificacion de los modelos de referencia. El modelo parece orientado a tareas de razonamiento, generacion de codigo y comprension del lenguaje, con recomendaciones de uso que incluyen system prompt y temperatura de 0.6.
 
@@ -10,7 +10,7 @@ La informacion disponible es escasa y en gran parte no verificable: no se especi
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetado como bert en HuggingFace, sin confirmar) |
+| Arquitectura | no disponible (etiquetado como bert en Hugging Face, sin confirmar) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ La informacion disponible es escasa y en gran parte no verificable: no se especi
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona detalles sobre la arquitectura del modelo. La unica referencia indirecta es la etiqueta "bert" en HuggingFace, aunque no se confirma que la arquitectura sea efectivamente un encoder BERT clasico. Dado que el pipeline declarado es feature-extraction, podria tratarse de un modelo encoder, pero la descripcion de mejoras en razonamiento y generacion sugiere capacidades tipicas de modelos decoder o hybridos.
+La model card no proporciona detalles sobre la arquitectura del modelo. La unica referencia indirecta es la etiqueta "bert" en Hugging Face, aunque no se confirma que la arquitectura sea efectivamente un encoder BERT clasico. Dado que el pipeline declarado es feature-extraction, podria tratarse de un modelo encoder, pero la descripcion de mejoras en razonamiento y generacion sugiere capacidades tipicas de modelos decoder o hybridos.
 
 En cuanto al entrenamiento, la model card menciona que la nueva version "ha mejorado significativamente su profundidad de razonamiento y capacidades de inferencia mediante el aumento de recursos computacionales y la introduccion de mecanismos de optimizacion algoritmica durante el post-entrenamiento". No se especifican datos sobre el numero de tokens de entrenamiento, composicion del dataset, ni si se utilizaron tecnicas como RLHF o DPO. Tampoco se detallan innovaciones tecnicas concretas.
 
@@ -96,5 +96,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/toolathlon-eval-07/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/toolathlon-eval-07/MyAwesomeModel-TestRepo
 - La model card menciona un "codigo repository" y un "sitio web oficial" para interactuar con el modelo, pero no se proporcionan las URLs concretas en la informacion disponible.

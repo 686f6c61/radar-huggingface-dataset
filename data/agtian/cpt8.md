@@ -1,7 +1,7 @@
 # Agtian/cpt8
 
 ## Resumen
-Agtian/cpt8 es un modelo multimodal publicado en HuggingFace por el usuario Agtian, etiquetado con el pipeline image-text-to-text y la etiqueta "gemma4". Cuenta con 5.123.178.051 parametros (~5,12 mil millones) almacenados en safetensors, y su model card lo describe como un ajuste fino (SFT) realizado con TRL sobre un modelo base que la propia ficha declara como Agtian/cpt8, es decir, una autorreferencia que apunta a un posible error de configuracion.
+Agtian/cpt8 es un modelo multimodal publicado en Hugging Face por el usuario Agtian, etiquetado con el pipeline image-text-to-text y la etiqueta "gemma4". Cuenta con 5.123.178.051 parametros (~5,12 mil millones) almacenados en safetensors, y su model card lo describe como un ajuste fino (SFT) realizado con TRL sobre un modelo base que la propia ficha declara como Agtian/cpt8, es decir, una autorreferencia que apunta a un posible error de configuracion.
 
 El modelo se ha entrenado mediante fine-tuning supervisado con las librerias TRL 0.24.0 y Unsloth, sobre Transformers 5.5.0, PyTorch 2.8.0+cu129, Datasets 4.3.0 y Tokenizers 0.22.2. La ficha disponible es minima: no incluye detalles del dataset, numero de tokens, composicion de los datos ni resultados de evaluacion, y no se especifican licencia ni idiomas.
 
@@ -74,10 +74,10 @@ La familia exacta de Agtian/cpt8 no esta confirmada, de modo que la comparacion 
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Agtian/cpt8 | ~5,12 B | no disponible | si (image-text-to-text, por etiqueta) | no disponible | HuggingFace |
-| Gemma 3 4B | ~4 B | 128k | variante multimodal disponible | Gemma License | HuggingFace |
-| Qwen2.5-VL-7B | ~7 B | 32k nativo, ampliable | si | Apache-2.0 | HuggingFace |
-| Llama 3.2 11B Vision | ~11 B | 128k | si | Llama Community License | HuggingFace |
+| Agtian/cpt8 | ~5,12 B | no disponible | si (image-text-to-text, por etiqueta) | no disponible | Hugging Face |
+| Gemma 3 4B | ~4 B | 128k | variante multimodal disponible | Gemma License | Hugging Face |
+| Qwen2.5-VL-7B | ~7 B | 32k nativo, ampliable | si | Apache-2.0 | Hugging Face |
+| Llama 3.2 11B Vision | ~11 B | 128k | si | Llama Community License | Hugging Face |
 
 No se dispone de metricas de rendimiento de Agtian/cpt8, por lo que no es posible compararlo cuantitativamente con estas alternativas.
 
@@ -94,6 +94,6 @@ No se dispone de metricas de rendimiento de Agtian/cpt8, por lo que no es posibl
 - Tamano de repositorio desproporcionado: 41,1 GB para 5,12 B parametros; conviene verificar los ficheros antes de su descarga e integracion en produccion.
 
 ## Enlaces
-- Pagina del modelo en HuggingFace: https://huggingface.co/Agtian/cpt8
+- Pagina del modelo en Hugging Face: https://huggingface.co/Agtian/cpt8
 - Repositorio de TRL (framework de entrenamiento citado): https://github.com/huggingface/trl
 - Repositorio de Unsloth (etiqueta "unsloth"): https://github.com/unslothai/unsloth

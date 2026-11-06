@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La *m
 
 | Modelo | Parametros | Contexto o rejilla | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `canvit/probe-ade20k-40k-s512-c10-in21k` | 159.894 | Lienzo 10 × 10, escena 512 px, *glimpse* 128 px | MIT | HuggingFace |
-| `canvit/probe-ade20k-40k-s512-c8-in21k` | No disponible | Lienzo 8 × 8, escena 512 px | MIT | HuggingFace |
-| `canvit/probe-ade20k-40k-s512-c32-in21k` | No disponible | Lienzo 32 × 32, escena 512 px | MIT | HuggingFace |
-| `canvit/probe-ade20k-40k-s512-c12-in21k` | No disponible | Lienzo 12 × 12, escena 512 px | MIT | HuggingFace |
+| `canvit/probe-ade20k-40k-s512-c10-in21k` | 159.894 | Lienzo 10 × 10, escena 512 px, *glimpse* 128 px | MIT | Hugging Face |
+| `canvit/probe-ade20k-40k-s512-c8-in21k` | No disponible | Lienzo 8 × 8, escena 512 px | MIT | Hugging Face |
+| `canvit/probe-ade20k-40k-s512-c32-in21k` | No disponible | Lienzo 32 × 32, escena 512 px | MIT | Hugging Face |
+| `canvit/probe-ade20k-40k-s512-c12-in21k` | No disponible | Lienzo 12 × 12, escena 512 px | MIT | Hugging Face |
 
 La diferencia entre estas variantes es la resolución del lienzo del backbone (cuanto mayor es la rejilla, más fina es la salida de segmentación), pero no se han publicado métricas comparativas que permitan ordenarlas por calidad. No se dispone de datos sobre alternativas de otros autores para una comparación directa.
 
@@ -88,12 +88,12 @@ La diferencia entre estas variantes es la resolución del lienzo del backbone (c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canvit/probe-ade20k-40k-s512-c10-in21k
+- Modelo en Hugging Face: https://huggingface.co/canvit/probe-ade20k-40k-s512-c10-in21k
 - Modelo base: https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02
 - Variante de lienzo 8 × 8: https://huggingface.co/canvit/probe-ade20k-40k-s512-c8-in21k
 - Variante de lienzo 12 × 12: https://huggingface.co/canvit/probe-ade20k-40k-s512-c12-in21k
 - Variante de lienzo 32 × 32: https://huggingface.co/canvit/probe-ade20k-40k-s512-c32-in21k
-- Organización CanViT en HuggingFace: https://huggingface.co/canvit
+- Organización CanViT en Hugging Face: https://huggingface.co/canvit
 - Articulo (NeurIPS 2026): https://arxiv.org/abs/2603.22570
 - Repositorio de codigo principal: https://github.com/m2b3/CanViT
 - Implementacion de referencia en PyTorch: https://github.com/m2b3/CanViT-PyTorch

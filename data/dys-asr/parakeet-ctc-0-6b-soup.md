@@ -66,7 +66,7 @@ Desglose por etiología (media por hablante):
 
 - **VRAM estimada para inferencia**: un modelo de ~600 M parámetros en FP32 ocupa unos 2,4 GB en memoria (según tamaño del repo). Para inferencia con batch pequeño, cabe en GPUs de 4 GB o más; con cuantización FP16 se reduce a ~1,2 GB.
 - **GPUs recomendadas**: cualquier GPU con soporte CUDA de al menos 4 GB de VRAM (p. ej., NVIDIA GTX 1650, RTX 2060, RTX 3060, RTX 4090). También puede ejecutarse en CPU con la implementación `parakeet.cpp` (ggml), aunque con mayor latencia.
-- **Despliegue**: se puede usar con la librería `transformers` de HuggingFace (`AutoModelForCTC`), así como con `parakeet.cpp` para inferencia en C++ o integración con LocalAI. También es compatible con servidores como TGI o vLLM si se adapta el pipeline, aunque no es lo común para ASR.
+- **Despliegue**: se puede usar con la librería `transformers` de Hugging Face (`AutoModelForCTC`), así como con `parakeet.cpp` para inferencia en C++ o integración con LocalAI. También es compatible con servidores como TGI o vLLM si se adapta el pipeline, aunque no es lo común para ASR.
 - **Latencia y throughput**: no hay datos publicados específicos para este modelo; se espera que sea similar al de `parakeet-ctc-0.6b` original, que es adecuado para tiempo real en GPU moderada.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ No hay modelos comparables con la misma especialización en habla disártrica en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dys-asr/parakeet-ctc-0.6b-soup
+- Modelo en Hugging Face: https://huggingface.co/dys-asr/parakeet-ctc-0.6b-soup
 - Modelo base original: https://huggingface.co/nvidia/parakeet-ctc-0.6b
 - Ingrediente `sapc2`: https://huggingface.co/dys-asr/parakeet-ctc-0.6b-sapc2
 - Implementación de inferencia en C++ (parakeet.cpp): https://github.com/mudler/parakeet.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ben0925/isomsom_sn92-gen-v91a` es un modelo de decisión publicado en HuggingFace por el usuario ben0925, etiquetado como entrada de la pista generalista REAX (SN92). No es un modelo conversacional al uso: está diseñado para responder a preguntas de opción múltiple (decision items) mediante una cabeza de letras sobre 255 códigos de respuesta, servido con un prompt fijo del validador y una lectura conjunta con softmax a temperatura 2. Su linaje parte de Qwen/Qwen3.5-27B, pasa por el fine-tune completo `baselabs/mammoth-1` de Base Labs (Baseten) y termina en un LoRA r32 entrenado en modo conjunto sobre el layout de lectura de REAX.
+`ben0925/isomsom_sn92-gen-v91a` es un modelo de decisión publicado en Hugging Face por el usuario ben0925, etiquetado como entrada de la pista generalista REAX (SN92). No es un modelo conversacional al uso: está diseñado para responder a preguntas de opción múltiple (decision items) mediante una cabeza de letras sobre 255 códigos de respuesta, servido con un prompt fijo del validador y una lectura conjunta con softmax a temperatura 2. Su linaje parte de Qwen/Qwen3.5-27B, pasa por el fine-tune completo `baselabs/mammoth-1` de Base Labs (Baseten) y termina en un LoRA r32 entrenado en modo conjunto sobre el layout de lectura de REAX.
 
 El modelo cuenta con 26.085.330.160 parámetros reales según los pesos safetensors (52,2 GB en el repositorio) y licencia MIT. La model card describe con detalle el proceso de entrenamiento, los datasets de decisión empleados y los padres del merge, pero no ofrece información sobre longitud de contexto, idiomas soportados ni resultados de benchmarks.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ben0925/isomsom_sn92-gen-v91a | 26,1B | no disponible | MIT | HuggingFace | Cabeza de lectura de 255 códigos, modo decisión REAX |
-| baselabs/mammoth-1 | no disponible (base de 27B) | no disponible | MIT | HuggingFace | Fine-tune completo de Qwen3.5-27B para decisiones |
-| Qwen/Qwen3.5-27B | 27B (aproximado) | no disponible | Apache-2.0 | HuggingFace | Modelo base conversacional de propósito general |
-| isomsom/sn92-gen-m87b | no disponible | no disponible | MIT | HuggingFace | Entrada previa de la misma pista, LoRA sobre mammoth-1 |
+| ben0925/isomsom_sn92-gen-v91a | 26,1B | no disponible | MIT | Hugging Face | Cabeza de lectura de 255 códigos, modo decisión REAX |
+| baselabs/mammoth-1 | no disponible (base de 27B) | no disponible | MIT | Hugging Face | Fine-tune completo de Qwen3.5-27B para decisiones |
+| Qwen/Qwen3.5-27B | 27B (aproximado) | no disponible | Apache-2.0 | Hugging Face | Modelo base conversacional de propósito general |
+| isomsom/sn92-gen-m87b | no disponible | no disponible | MIT | Hugging Face | Entrada previa de la misma pista, LoRA sobre mammoth-1 |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ben0925/isomsom_sn92-gen-v91a
+- Hugging Face: https://huggingface.co/ben0925/isomsom_sn92-gen-v91a
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Modelo base de mammoth-1: https://huggingface.co/Qwen/Qwen3.5-27B
 - Padre del merge: https://huggingface.co/danyloooah/sn92-generalist-m1-core2

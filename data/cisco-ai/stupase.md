@@ -75,7 +75,7 @@ No se dispone de una comparativa publicada con otros modelos de mejora de voz ge
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cisco-ai/stupase
+- Hugging Face: https://huggingface.co/cisco-ai/stupase
 - Repositorio GitHub: https://github.com/cisco-open/pase
 - Paper (arXiv): https://arxiv.org/abs/2603.09234
 - Pagina de demostracion: https://xiaobin-rong.github.io/stupase_demo/

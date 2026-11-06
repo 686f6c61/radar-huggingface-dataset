@@ -13,7 +13,7 @@ El modelo es relevante para quien necesite enrutamiento de herramientas con huel
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder con MoE hibrido y enrutamiento Poincare (cdm_moe_poincare), 7 capas, 12 cabezas, d=768, K=8 centroides, 4 expertos (d_ff=768) |
-| Parametros totales | 91.272.590 (~91,3M) segun model card; 117.923.480 segun safetensors de HuggingFace |
+| Parametros totales | 91.272.590 (~91,3M) segun model card; 117.923.480 segun safetensors de Hugging Face |
 | Parametros activos | 41.727.374 (~41,7M) en el backbone activo |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | FP32 (PyTorch), Q8_0 (GGUF); otras variantes no disponibles |
@@ -81,9 +81,9 @@ No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K) n
 
 | Modelo | Parametros totales | Parametros activos | Enfoque | Licencia | Disponibilidad |
 |---|:---:|:---:|---|---|---|
-| CrystalCall-v2-Poincare-7L-91M | 91,3M | 41,7M | Function calling con MoE Poincare hiperbolico | Apache 2.0 | HuggingFace, safetensors + GGUF |
+| CrystalCall-v2-Poincare-7L-91M | 91,3M | 41,7M | Function calling con MoE Poincare hiperbolico | Apache 2.0 | Hugging Face, safetensors + GGUF |
 | Google FunctionGemma-270M | 268,1M | 268,1M | Function calling, atencion estandar | no disponible | no disponible en la informacion proporcionada |
-| Salesforce/xLAM-1b-fc-r (modelo base) | ~1B | no disponible | Function calling generalista | no disponible | HuggingFace |
+| Salesforce/xLAM-1b-fc-r (modelo base) | ~1B | no disponible | Function calling generalista | no disponible | Hugging Face |
 
 En la comparativa publicada por el autor, CrystalCall-v2 pierde en tool accuracy y validez JSON frente a FunctionGemma-270M (64 % vs 80 %; 68 % vs 96 % en single-turn), pero gana con claridad en extraccion de argumentos (66,13 % vs 9,94 %) y en latencia (hasta 24,5 veces mas rapido en CUDA). No hay comparativas con otros modelos ligeros de function calling como OctoNet u otras variantes de xLAM.
 
@@ -92,7 +92,7 @@ En la comparativa publicada por el autor, CrystalCall-v2 pierde en tool accuracy
 - Todos los resultados de rendimiento proceden de la model card del propio autor; no hay evaluacion independiente verificada y la unica comparacion es contra FunctionGemma-270M.
 - La validez JSON es limitada (68 % single-turn, 76 % parallel-call): en produccion es imprescindible un validador de esquema y logica de reintento.
 - La tool accuracy en single-turn (64 %) es inferior a la de su competidor directo; el modelo destaca en argumentos, no en seleccion de herramienta.
-- Discrepancia en el numero de parametros: la model card declara 91,3M, pero los safetensors de HuggingFace suman 117,9M; conviene verificar antes de planificar capacidad.
+- Discrepancia en el numero de parametros: la model card declara 91,3M, pero los safetensors de Hugging Face suman 117,9M; conviene verificar antes de planificar capacidad.
 - La longitud de contexto no esta documentada, lo que dificulta evaluar su uso con conversaciones largas o catalogos de herramientas extensos.
 - Los idiomas soportados no estan declarados; el entrenamiento se basa en datasets en ingles, por lo que el rendimiento en castellano es incierto.
 - Sesgos conocidos: no disponibles; no se publica informacion sobre auditorias de sesgo.
@@ -102,8 +102,8 @@ En la comparativa publicada por el autor, CrystalCall-v2 pierde en tool accuracy
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/CrystalCall-v2-Poincare-7L-91M
-- Organizacion DuoNeural en HuggingFace: https://huggingface.co/DuoNeural
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/CrystalCall-v2-Poincare-7L-91M
+- Organizacion DuoNeural en Hugging Face: https://huggingface.co/DuoNeural
 - Codigo (Lattice-CDM): https://github.com/DuoNeural/Lattice-CDM
 - Web del autor: https://duoneural.com
 - Modelo base: https://huggingface.co/Salesforce/xLAM-1b-fc-r

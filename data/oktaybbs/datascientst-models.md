@@ -102,7 +102,7 @@ No existe una comparativa directa con otros modelos, ya que esta colección no c
 
 ## Enlaces
 
-- [Repositorio HuggingFace: OKTAYBBS/DataScientst-models](https://huggingface.co/OKTAYBBS/DataScientst-models)
+- [Repositorio Hugging Face: OKTAYBBS/DataScientst-models](https://huggingface.co/OKTAYBBS/DataScientst-models)
 - [Demo en Hugging Face Spaces](https://huggingface.co/spaces/OKTAYBBS/DataScientst)
 - [Código fuente en GitHub](https://github.com/oktaybobus/DataScientst)
 - [Perfil del autor en Hugging Face](https://huggingface.co/OKTAYBBS)

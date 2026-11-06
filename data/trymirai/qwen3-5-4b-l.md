@@ -80,7 +80,7 @@ La comparacion con alternativas de cuantizacion generica (GGUF Q8, AWQ, GPTQ) no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trymirai/Qwen3.5-4B-L
+- Modelo en Hugging Face: https://huggingface.co/trymirai/Qwen3.5-4B-L
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Model card del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/README.md
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE

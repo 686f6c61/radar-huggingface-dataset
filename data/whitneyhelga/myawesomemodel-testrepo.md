@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WhitneyHelga/MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario WhitneyHelga que, por su nombre y contenido, parece tratarse de un repositorio de prueba más que de un modelo destinado a producción. Las etiquetas declaradas (transformers, pytorch, bert, feature-extraction) apuntan a un modelo de la familia BERT orientado a la extracción de características, mientras que la model card describe un supuesto modelo de razonamiento con modo "thinking", soporte de function calling y resultados en AIME 2025. Existe una contradicción directa entre ambos conjuntos de información.
+WhitneyHelga/MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario WhitneyHelga que, por su nombre y contenido, parece tratarse de un repositorio de prueba más que de un modelo destinado a producción. Las etiquetas declaradas (transformers, pytorch, bert, feature-extraction) apuntan a un modelo de la familia BERT orientado a la extracción de características, mientras que la model card describe un supuesto modelo de razonamiento con modo "thinking", soporte de function calling y resultados en AIME 2025. Existe una contradicción directa entre ambos conjuntos de información.
 
 El repositorio ocupa 0.0 GB, lo que sugiere que no aloja pesos reales, y registra 69 descargas y 0 "likes" en el momento de la consulta. La licencia declarada es MIT y la librería indicada es transformers. No se especifican idiomas soportados ni tamaño de parámetros.
 
@@ -112,5 +112,5 @@ No disponible. Dado que el repositorio no contiene pesos y su naturaleza parece 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WhitneyHelga/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/WhitneyHelga/MyAwesomeModel-TestRepo
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

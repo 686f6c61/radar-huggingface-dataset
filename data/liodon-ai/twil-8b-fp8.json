@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/TwIL-8B-FP8",
+  "slug": "liodon-ai-twil-8b-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/TwIL-8B-FP8",
+  "created_at": "2026-11-04T20:54:34.000Z",
+  "updated_at": "2026-11-05T00:05:19.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "base_model:webAI-Official/TwIL-8B",
+    "base_model:quantized:webAI-Official/TwIL-8B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 8791592960,
+  "parameters_human": "8.79B",
+  "storage_bytes": 9617279768,
+  "storage_human": "9.6 GB",
+  "base_model": "webAI-Official/TwIL-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liodon-ai/TwIL-8B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/TwIL-8B-FP8",
+      "snippet": "Text Generation model with 9B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "liodon-ai (Liodon AI) - Hugging Face",
+      "url": "https://huggingface.co/liodon-ai",
+      "snippet": "Extreme Model Compression: Developing state-of-the-art recipes for hardware-aware post-training quantization (FP8, FP4, and sub-4-bit formats), pruning, and structure-preserving knowledge distillation. Speech & Modality Fusion: Integrating native Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) layers into ultra-compact foundation ..."
+    }
+  ]
+}

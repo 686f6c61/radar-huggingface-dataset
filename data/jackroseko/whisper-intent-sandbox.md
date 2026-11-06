@@ -40,7 +40,7 @@ Al no ser un modelo funcional, los casos de uso son limitados y documentales:
 - **Ejemplo de formato Typst**: los desarrolladores pueden utilizar el repositorio como referencia para aprender el formato de tipografía científica Typst.
 - **Material de formación**: el documento puede usarse en cursos de procesamiento de documentos o IA documental como material de lectura.
 - **Inspiración para investigación**: el resumen puede orientar a investigadores que buscan iniciar un trabajo en document AI.
-- **Prueba de gestión de repositorios**: el repositorio puede servir como ejemplo de cómo estructurar un repositorio de HuggingFace con un artefacto documental.
+- **Prueba de gestión de repositorios**: el repositorio puede servir como ejemplo de cómo estructurar un repositorio de Hugging Face con un artefacto documental.
 
 ## Benchmarks y rendimiento
 
@@ -64,8 +64,8 @@ No disponible. No se trata de un modelo comparable con otros sistemas de IA, sin
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/jackroseko/whisper-intent-sandbox
-- Página de modelos de HuggingFace con etiqueta Whisper: https://huggingface.co/models?other=whisper
+- Repositorio de Hugging Face: https://huggingface.co/jackroseko/whisper-intent-sandbox
+- Página de modelos de Hugging Face con etiqueta Whisper: https://huggingface.co/models?other=whisper
 - Proyecto relacionado en GitHub (Agentic-Voice-Sandbox): https://github.com/shlokdhanokar/Agentic-Voice-Sandbox
 - Artículo de Medium sobre agente de voz local: https://medium.com/@anshuuk/i-built-a-voice-controlled-local-ai-agent-architecture-models-and-everything-that-went-wrong-bb9cc78b897a
 - Búsqueda de modelos Whisper en Ollama: https://ollama.com/search?q=whisper

@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de segmentac
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/PAOP123/robochunk
+- Hugging Face del modelo: https://huggingface.co/PAOP123/robochunk
 - Dataset simulado: https://huggingface.co/datasets/PAOP123/robochunk-sim
 - Repositorio del estudio (código, pre-registros, registro de decisiones, informe): https://github.com/NapoleonPK/robochunk-study
 - Paper referenciado en tags: arXiv:2507.07955

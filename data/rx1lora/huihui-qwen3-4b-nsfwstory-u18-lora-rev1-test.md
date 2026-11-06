@@ -76,7 +76,7 @@ El modelo comparado con su base abliterada y el Qwen3 original. No hay informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rx1lora/huihui-qwen3-4b-nsfwstory-u18-lora-rev1-test
+- Hugging Face: https://huggingface.co/rx1lora/huihui-qwen3-4b-nsfwstory-u18-lora-rev1-test
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3-4B-abliterated-v2
 - Repositorio de Qwen3: https://github.com/QwenLM/Qwen3
 - Informe técnico de Qwen3: https://arxiv.org/pdf/2505.09388
@@ -154,7 +154,7 @@ El adaptador se compara con su modelo base y con el Qwen3 original. No hay infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rx1lora/huihui-qwen3-4b-nsfwstory-u18-lora-rev1-test
+- Hugging Face: https://huggingface.co/rx1lora/huihui-qwen3-4b-nsfwstory-u18-lora-rev1-test
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3-4B-abliterated-v2
 - Repositorio Qwen3: https://github.com/QwenLM/Qwen3
 - Informe técnico de Qwen3: https://arxiv.org/pdf/2505.09388

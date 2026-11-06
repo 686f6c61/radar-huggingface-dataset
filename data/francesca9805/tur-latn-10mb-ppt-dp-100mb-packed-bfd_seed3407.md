@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | 39.087.104 | No disponible | No publicado | No disponible | HuggingFace, 0 descargas |
-| goldfish-models/tur_latn_10mb | No disponible | No disponible | No publicado en esta ficha | No disponible | HuggingFace (modelo base) |
-| Otros modelos Goldfish de la misma familia (otras lenguas) | No disponible | No disponible | No aplicable a turco | No disponible | HuggingFace |
+| francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | 39.087.104 | No disponible | No publicado | No disponible | Hugging Face, 0 descargas |
+| goldfish-models/tur_latn_10mb | No disponible | No disponible | No publicado en esta ficha | No disponible | Hugging Face (modelo base) |
+| Otros modelos Goldfish de la misma familia (otras lenguas) | No disponible | No disponible | No aplicable a turco | No disponible | Hugging Face |
 
 No se dispone de datos suficientes para comparar rendimiento con alternativas. La unica comparacion fiable es con el propio modelo base, y tampoco se han publicado metricas de esa comparacion en la informacion disponible.
 
@@ -89,7 +89,7 @@ No se dispone de datos suficientes para comparar rendimiento con alternativas. L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tur-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/tur_latn_10mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/m4zr4rlq
 - Repositorio de TRL: https://github.com/huggingface/trl

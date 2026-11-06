@@ -83,7 +83,7 @@ La comparacion directa de parametros, contexto y rendimiento con alternativas no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lukasiktar11/dental-radiography-rt-detr
+- Hugging Face: https://huggingface.co/lukasiktar11/dental-radiography-rt-detr
 - Repositorio Ultralytics (framework de entrenamiento y despliegue): https://github.com/ultralytics/ultralytics
 - Documentacion de RT-DETR en Ultralytics: https://docs.ultralytics.com/models/rtdetr/
 - Paper original de RT-DETR (Baidu): https://arxiv.org/abs/2304.08069

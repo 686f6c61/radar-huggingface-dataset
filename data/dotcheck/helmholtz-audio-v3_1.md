@@ -75,7 +75,7 @@ No se dispone de información pública que compare Helmholtz@3.1 con otros detec
 - El holdout de evaluación cubre CodecFake/DFADD para voz, AudioGen para música/efectos y una partición de la familia fal. Codecs o familias de TTS no vistas pueden producir desplazamientos en las puntuaciones, reduciendo la fiabilidad fuera de ese dominio.
 - Las métricas publicadas son medias globales del holdout con umbral 0.5; no hay desglose por dominio (voz, música, efectos) ni por tipo de generador, lo que limita la interpretación para casos específicos.
 - El modelo no está diseñado para identificación de hablantes, determinaciones legales ni puntuaciones fusionadas de audio+vídeo. La fusión con puntuaciones de frames (modelo Muybridge) es una regla privada de DotCheck y no forma parte de las afirmaciones públicas de este repositorio.
-- El backbone Dasheng-Base no se redistribuye en este repositorio; para reproducir los resultados es necesario descargarlo por separado desde su página de HuggingFace, lo que añade un paso de integración.
+- El backbone Dasheng-Base no se redistribuye en este repositorio; para reproducir los resultados es necesario descargarlo por separado desde su página de Hugging Face, lo que añade un paso de integración.
 - Aunque la licencia es Apache-2.0, el uso en producción debe considerar que el modelo puede generar falsos positivos o negativos en dominios no representados en el entrenamiento, especialmente con audio de baja calidad o efectos de compresión.
 
 ## Enlaces

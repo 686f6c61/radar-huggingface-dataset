@@ -85,7 +85,7 @@ La principal diferencia con el modelo base es la eliminación de mecanismos de r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HauhauCS/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive
+- Repositorio Hugging Face: https://huggingface.co/HauhauCS/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Guía en HackerNoon: https://hackernoon.com/qwen35-35b-a3b-uncensored-guide-features-capabilities-and-setup
 - Ficha en ThinkLLM: https://thinkllm.dev/models/qwen3-5-35b-a3b-uncensored-hauhaucs-aggressive

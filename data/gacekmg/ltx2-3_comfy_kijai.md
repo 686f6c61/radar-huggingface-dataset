@@ -72,7 +72,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gacekmg/LTX2.3_comfy_kijai
+- Repositorio Hugging Face: https://huggingface.co/gacekmg/LTX2.3_comfy_kijai
 - Repositorio original de Kijai: https://huggingface.co/Kijai/LTX2.3_comfy
 - Licencia LTX-2: https://github.com/Lightricks/LTX-2/blob/main/LICENSE
 - VAE pequeno de madebyollin: https://github.com/madebyollin/taehv/

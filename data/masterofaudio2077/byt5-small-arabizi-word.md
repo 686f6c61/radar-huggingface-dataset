@@ -2,7 +2,7 @@
 
 ## Resumen
 
-byt5-small-arabizi-word es un modelo de transliteración de palabras sueltas entre arabizi (árabe escrito con caracteres latinos y dígitos) y escritura árabe. Lo desarrolla el usuario de HuggingFace masterofaudio2077 y parte de google/byt5-small, un transformer encoder-decoder de 300 millones de parámetros que opera a nivel de byte en lugar de token. El modelo resuelve un problema concreto y bien delimitado: convertir términos individuales del chat del Golfo y del Levante entre ambas representaciones mediante un prefijo de dirección en la entrada.
+byt5-small-arabizi-word es un modelo de transliteración de palabras sueltas entre arabizi (árabe escrito con caracteres latinos y dígitos) y escritura árabe. Lo desarrolla el usuario de Hugging Face masterofaudio2077 y parte de google/byt5-small, un transformer encoder-decoder de 300 millones de parámetros que opera a nivel de byte en lugar de token. El modelo resuelve un problema concreto y bien delimitado: convertir términos individuales del chat del Golfo y del Levante entre ambas representaciones mediante un prefijo de dirección en la entrada.
 
 La relevancia es práctica: el arabizi es omnipresente en redes sociales y mensajería del mundo árabe, pero carece de normalización y complica tareas posteriores de NLP. Este modelo ofrece una conversión bidireccional con un único checkpoint, entrenado sobre 17.514 pares de palabras del dataset arbml/Arabizi_Transliteration. No es un modelo generativo general ni un asistente conversacional: es una herramienta de normalización léxica.
 
@@ -85,9 +85,9 @@ No se han publicado resultados en benchmarks comunitarios independientes (MMLU, 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| byt5-small-arabizi-word | 300M | palabra suelta | Transliteración arabizi-árabe bidireccional | apache-2.0 | HuggingFace, 18 descargas |
-| google/byt5-small (base) | 300M | 1.024 tokens (configuración T5) | Text2text general byte-level | apache-2.0 | HuggingFace, ampliamente usado |
-| google/mt5-small | 300M | 512 tokens | Text2text multilingüe | apache-2.0 | HuggingFace, ampliamente usado |
+| byt5-small-arabizi-word | 300M | palabra suelta | Transliteración arabizi-árabe bidireccional | apache-2.0 | Hugging Face, 18 descargas |
+| google/byt5-small (base) | 300M | 1.024 tokens (configuración T5) | Text2text general byte-level | apache-2.0 | Hugging Face, ampliamente usado |
+| google/mt5-small | 300M | 512 tokens | Text2text multilingüe | apache-2.0 | Hugging Face, ampliamente usado |
 
 No se dispone de información sobre otros fine-tunes públicos específicos de transliteración arabizi con los que comparar métricas de forma directa.
 
@@ -104,7 +104,7 @@ No se dispone de información sobre otros fine-tunes públicos específicos de t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masterofaudio2077/byt5-small-arabizi-word
+- Modelo en Hugging Face: https://huggingface.co/masterofaudio2077/byt5-small-arabizi-word
 - Modelo base: https://huggingface.co/google/byt5-small
 - Paper de ByT5: https://arxiv.org/abs/2105.13626
 - Dataset de entrenamiento: https://huggingface.co/datasets/arbml/Arabizi_Transliteration

@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks en la información proporcionada para estab
 - Cuantización no documentada: no se especifica la versión de llama.cpp empleada, ni si se usó imatrix, ni la metodología de calibración. No hay métricas de degradación respecto al modelo original.
 - Un único fichero Q8_0: al no publicarse cuantizaciones de menor precisión (Q4_K_M, Q5_K_M), el artefacto no aprovecha la reducción de tamaño típica de GGUF; el repositorio ocupa 0,6 GB cuando una cuantización de 4 bits rondaría los 0,4 GB.
 - Sin validación de la comunidad: 0 descargas y 0 likes en el momento de la consulta, sin issues ni discusión pública que permitan evaluar la fiabilidad del artefacto.
-- Sin pipeline declarado ni idiomas declarados en la ficha de HuggingFace; la model card no documenta el proceso de conversión ni incluye ejemplos de salida verificables.
+- Sin pipeline declarado ni idiomas declarados en la ficha de Hugging Face; la model card no documenta el proceso de conversión ni incluye ejemplos de salida verificables.
 - Licencia Apache 2.0: permite uso comercial, modificación y redistribución, pero obliga a conservar los avisos de copyright y el fichero NOTICE cuando exista, e a indicar los cambios realizados. La model card no incluye ese fichero NOTICE, por lo que conviene reproducirlo desde el repositorio del modelo base.
 - Contenido promocional: la model card incluye publicidad de un servicio de API de terceros (qubax.ai) con afirmaciones comerciales no verificables; no debe tomarse como documentación técnica del modelo.
 - Sesgos: no hay ninguna evaluación de sesgos, toxicidad o seguridad publicada para este artefacto ni para el modelo base en la información disponible; se heredan los sesgos de los datos de preentrenamiento de Qwen3.

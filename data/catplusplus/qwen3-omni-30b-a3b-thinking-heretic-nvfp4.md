@@ -76,7 +76,7 @@ La variante Thinking-heretic se distingue de la variante Instruct por incorporar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/catplusplus/Qwen3-Omni-30B-A3B-Thinking-heretic-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/catplusplus/Qwen3-Omni-30B-A3B-Thinking-heretic-NVFP4
 - Variante Instruct del mismo autor: https://huggingface.co/catplusplus/Qwen3-Omni-30B-A3B-Instruct-NVFP4
 - Repositorio oficial de Qwen3-Omni en GitHub: https://github.com/QwenLM/Qwen3-Omni
 - Informe tecnico de Qwen3-Omni (arXiv): https://arxiv.org/abs/2509.17765

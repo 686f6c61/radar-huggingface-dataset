@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny japanese es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario huggnico en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder Transformer de Whisper, con 37.760.640 parametros totales y un peso en disco de aproximadamente 0,3 GB en formato safetensors. El modelo parte de la variante "tiny" de la familia Whisper, la mas pequena de OpenAI, y ha sido reentrenado sobre el dataset japanese_english.
+Whisper tiny japanese es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario huggnico en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder Transformer de Whisper, con 37.760.640 parametros totales y un peso en disco de aproximadamente 0,3 GB en formato safetensors. El modelo parte de la variante "tiny" de la familia Whisper, la mas pequena de OpenAI, y ha sido reentrenado sobre el dataset japanese_english.
 
 El objetivo declarado del autor es adaptar el reconocimiento de Whisper a un dominio concreto de habla inglesa con acento japones, un caso de uso donde los modelos ASR genericos suelen degradarse. El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial, y esta etiquetado con idioma "en" en la model card. El resultado declarado en el conjunto de evaluacion es un WER de 21,4442 y una perdida de validacion de 0,4626.
 
@@ -31,7 +31,7 @@ El dataset utilizado es japanese_english, del que no se documenta composicion, n
 
 - Reconocimiento automatico del habla (ASR) en ingles, con especializacion declarada en habla con acento japones.
 - Transcripcion de audio a texto mediante el pipeline `automatic-speech-recognition` de Transformers.
-- Compatible con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatible con endpoints de Hugging Face (tag `endpoints_compatible`).
 - No se documenta soporte de traduccion de voz a texto, diarizacion de hablantes ni marcas de tiempo a nivel de palabra en la informacion disponible.
 - No se documenta tool calling, function calling ni capacidades de agente.
 - No se documenta capacidad multimodal mas alla del audio de entrada.
@@ -71,17 +71,17 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 - VRAM estimada en FP16/BF16: alrededor de 75 MB para pesos, mas overhead del runtime.
 - GPU recomendadas: cualquier GPU moderna es suficiente; para lotes grandes se recomienda NVIDIA T4, RTX 3060 o superiores. No requiere A100 ni H100.
 - Cabe en GPU de consumo: si, en practicamente todas (GTX 1050, RTX 2060, RTX 4090, etc.), asi como en CPU.
-- Opciones de despliegue: pipeline de Transformers, HuggingFace Inference Endpoints (tag `endpoints_compatible`), y conversion a ONNX o a otros runtimes compatibles con Whisper tiny. No se documenta soporte explicito de vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: pipeline de Transformers, Hugging Face Inference Endpoints (tag `endpoints_compatible`), y conversion a ONNX o a otros runtimes compatibles con Whisper tiny. No se documenta soporte explicito de vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto / ventana de audio | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| huggnico/whisper-tiny_to_japanese_accent | 37,76 M | 30 s (heredado de Whisper tiny) | 21,44 (japanese English, no verificado) | Apache 2.0 | HuggingFace |
-| openai/whisper-tiny | 37,76 M | 30 s | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-base | 74,4 M | 30 s | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 244 M | 30 s | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| huggnico/whisper-tiny_to_japanese_accent | 37,76 M | 30 s (heredado de Whisper tiny) | 21,44 (japanese English, no verificado) | Apache 2.0 | Hugging Face |
+| openai/whisper-tiny | 37,76 M | 30 s | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-base | 74,4 M | 30 s | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 244 M | 30 s | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a la familia Whisper porque no se dispone de datos de benchmarks de alternativas en la informacion proporcionada. El modelo ajustado comparte arquitectura y tamano con whisper-tiny, por lo que la diferencia principal es la especializacion en el dominio japanese_english.
 
@@ -99,7 +99,7 @@ La comparativa se limita a la familia Whisper porque no se dispone de datos de b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huggnico/whisper-tiny_to_japanese_accent
+- Modelo en Hugging Face: https://huggingface.co/huggnico/whisper-tiny_to_japanese_accent
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de Whisper (Radford et al., 2022): no disponible en la informacion proporcionada
 - Repositorio de Transformers: no disponible en la informacion proporcionada

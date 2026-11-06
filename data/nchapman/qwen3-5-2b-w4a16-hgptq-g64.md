@@ -99,7 +99,7 @@ No se dispone de datos para comparar con modelos de otros autores de la misma ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nchapman/Qwen3.5-2B-W4A16-HGPTQ-g64
+- Repositorio Hugging Face: https://huggingface.co/nchapman/Qwen3.5-2B-W4A16-HGPTQ-g64
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Receta y tooling: https://github.com/nchapman/warp-3090-model-lab
 - Dataset de calibración original: https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-SFT-Data

@@ -72,5 +72,5 @@ No disponible. No existe ningún modelo comparable en la misma categoría, dado 
 
 ## Enlaces
 
-- [HuggingFace - irambv05/coca-finetuned-2024](https://huggingface.co/irambv05/coca-finetuned-2024)
+- [Hugging Face - irambv05/coca-finetuned-2024](https://huggingface.co/irambv05/coca-finetuned-2024)
 - [CodeSOTA - CoCa (finetuned) de Google](https://www.codesota.com/model/coca-finetuned) (modelo diferente, incluido solo como referencia de nomenclatura)

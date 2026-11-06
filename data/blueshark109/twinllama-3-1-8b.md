@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TwinLlama-3.1-8B es un modelo de generación de texto en formato conversacional publicado en HuggingFace por el usuario blueshark109. Se trata de un ajuste fino (finetune) sobre unsloth/Llama-3.1-8B, que a su vez es una réplica de Llama-3.1-8B de Meta preparada por el equipo de Unsloth. El modelo conserva la arquitectura transformer de Llama 3.1 con unos 8.030 millones de parámetros, y ha sido entrenado utilizando la biblioteca Unsloth junto con TRL de HuggingFace, lo que según el autor permitió acelerar el entrenamiento un factor de 2x.
+TwinLlama-3.1-8B es un modelo de generación de texto en formato conversacional publicado en Hugging Face por el usuario blueshark109. Se trata de un ajuste fino (finetune) sobre unsloth/Llama-3.1-8B, que a su vez es una réplica de Llama-3.1-8B de Meta preparada por el equipo de Unsloth. El modelo conserva la arquitectura transformer de Llama 3.1 con unos 8.030 millones de parámetros, y ha sido entrenado utilizando la biblioteca Unsloth junto con TRL de Hugging Face, lo que según el autor permitió acelerar el entrenamiento un factor de 2x.
 
 La model card del repositorio es mínima: no documenta el dataset empleado, el método de ajuste (SFT, DPO, etc.), ni las capacidades específicas adquiridas durante el entrenamiento. Esto significa que el principal valor del modelo es como base experimental o punto de partida para ajustes adicionales, y que cualquier evaluación antes de uso en producción corre por cuenta del desarrollador. Su licencia Apache 2.0 permite uso comercial sin restricciones relevantes.
 
@@ -25,13 +25,13 @@ Con 233 descargas y sin likes registrados, es un modelo de nicho sin comunidad a
 
 El modelo parte de la arquitectura Llama 3.1: un transformer decoder autorregresivo con atención agrupada por consultas (GQA), codificaciones posicionales RoPE y normalización RMSNorm, con 8.030 millones de parámetros según los metadatos de safetensors. Al ser un finetune y no un entrenamiento desde cero, hereda los pesos preentrenados y alineados de Llama-3.1-8B de Meta a través de la versión de Unsloth.
 
-Sobre el proceso de entrenamiento, la model card solo indica que se entrenó "2x más rápido" con Unsloth y la biblioteca TRL de HuggingFace. No se especifica el dataset, el número de tokens, el método (SFT completo, LoRA, QLoRA, DPO), los hiperparámetros ni si hubo fases de RLHF o DPO. Unsloth es una biblioteca optimizada para ajuste fino eficiente en GPUs de consumo, y TRL se emplea habitualmente para SFT y alineación por preferencias, pero sin documentación adicional no es posible determinar los detalles concretos del entrenamiento.
+Sobre el proceso de entrenamiento, la model card solo indica que se entrenó "2x más rápido" con Unsloth y la biblioteca TRL de Hugging Face. No se especifica el dataset, el número de tokens, el método (SFT completo, LoRA, QLoRA, DPO), los hiperparámetros ni si hubo fases de RLHF o DPO. Unsloth es una biblioteca optimizada para ajuste fino eficiente en GPUs de consumo, y TRL se emplea habitualmente para SFT y alineación por preferencias, pero sin documentación adicional no es posible determinar los detalles concretos del entrenamiento.
 
 ## Capacidades
 
 - Generación de texto conversacional: el modelo está etiquetado como conversational y pipeline de text-generation.
 - Herencia de capacidades de Llama-3.1-8B: razonamiento general, generación de código, matemáticas y comprensión en inglés, en la medida en que el ajuste fino no las haya degradado (no verificable con la información disponible).
-- Compatibilidad con el ecosistema transformers de HuggingFace y endpoints de inferencia (endpoints_compatible).
+- Compatibilidad con el ecosistema transformers de Hugging Face y endpoints de inferencia (endpoints_compatible).
 - Soporte de tool calling / function calling: no disponible (no documentado).
 - Capacidades multilingües: no disponible; solo se declara inglés.
 - Capacidades especiales (visión, audio, thinking mode): no disponibles.
@@ -43,7 +43,7 @@ Sobre el proceso de entrenamiento, la model card solo indica que se entrenó "2x
 - Prototipado de agentes locales: un modelo de 8B cuantizado cabe en GPUs de consumo, lo que permite desarrollar prototipos de agentes con LangChain o similares sin depender de APIs externas.
 - Generación y completado de código ligero: heredando las capacidades de código de Llama-3.1-8B, puede integrarse en asistentes de programación de bajo consumo, aunque sin benchmarks no se garantiza calidad.
 - Ajuste fino adicional (fine-tuning sobre el finetune): al publicarse en safetensors y ser compatible con Unsloth y TRL, es candidato para segundos ajustes especializados en dominios concretos.
-- Despliegue en endpoints gestionados: su compatibilidad con los Inference Endpoints de HuggingFace facilita exponerlo como API para pruebas de producto.
+- Despliegue en endpoints gestionados: su compatibilidad con los Inference Endpoints de Hugging Face facilita exponerlo como API para pruebas de producto.
 
 ## Benchmarks y rendimiento
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: el tamaño del repositorio (64,3 GB) sugiere pesos en FP32 o una copia duplicada; en FP16/BF16 un modelo de 8B requiere aproximadamente 16 GB de VRAM, y en cuantización 4-bit (Q4_K_M en GGUF) alrededor de 5-6 GB. No hay versiones cuantizadas oficiales publicadas.
 - GPUs recomendadas: para FP16, una RTX 4090 (24 GB), A100 (40/80 GB) o H100; para cuantizaciones de terceros en 4-bit, RTX 3060 12GB, RTX 4060 Ti 16GB o superiores.
 - Cabe en GPU de consumo: sí, en FP16 en una RTX 4090; en 4-bit (requiere conversión a GGUF por parte del usuario) en GPUs de 8-12 GB de VRAM.
-- Opciones de despliegue: transformers de HuggingFace (nativo), vLLM, TGI, Ollama y llama.cpp (estos tres últimos requieren conversión previa a GGUF, no incluida en el repositorio).
+- Opciones de despliegue: transformers de Hugging Face (nativo), vLLM, TGI, Ollama y llama.cpp (estos tres últimos requieren conversión previa a GGUF, no incluida en el repositorio).
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -80,6 +80,6 @@ TwinLlama-3.1-8B no ofrece ventajas documentadas frente a su modelo base ni fren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blueshark109/TwinLlama-3.1-8B
+- Modelo en Hugging Face: https://huggingface.co/blueshark109/TwinLlama-3.1-8B
 - Modelo base: https://huggingface.co/unsloth/Llama-3.1-8B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

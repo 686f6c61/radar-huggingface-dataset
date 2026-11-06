@@ -2,7 +2,7 @@
 
 ## Resumen
 
-models4world/iris-quay-84 es un modelo publicado en HuggingFace por la cuenta models4world. El repositorio se creo el 21 de septiembre de 2026 y se actualizo el mismo dia, cuenta con 10 descargas y 0 likes en el momento de la consulta, y no incluye model card, pipeline declarado, licencia ni lista de idiomas soportados. La unica etiqueta de familia tecnica presente es `qwen3_5`, junto a `safetensors` y `region:us`, lo que sugiere un linaje basado en la familia Qwen 3.5, aunque no hay confirmacion documental de ello.
+models4world/iris-quay-84 es un modelo publicado en Hugging Face por la cuenta models4world. El repositorio se creo el 21 de septiembre de 2026 y se actualizo el mismo dia, cuenta con 10 descargas y 0 likes en el momento de la consulta, y no incluye model card, pipeline declarado, licencia ni lista de idiomas soportados. La unica etiqueta de familia tecnica presente es `qwen3_5`, junto a `safetensors` y `region:us`, lo que sugiere un linaje basado en la familia Qwen 3.5, aunque no hay confirmacion documental de ello.
 
 La informacion disponible es en gran medida contradictoria. El recuento de parametros de los archivos safetensors indica 3.054.832 parametros (aproximadamente 3,05 millones), mientras que el tamano del repositorio es de 54,7 GB. Un modelo de 3,05 millones de parametros ocuparia unos 12 MB en fp32 y unos 6 MB en bf16, de modo que ambas cifras no pueden corresponder al mismo conjunto de pesos en el mismo formato. Esta discrepancia impide determinar con fiabilidad el orden de magnitud del modelo y, por tanto, cualquier valoracion de rendimiento, requisitos de hardware o comparativa con alternativas.
 
@@ -85,7 +85,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 - Ausencia total de model card: no hay documentacion sobre arquitectura, entrenamiento, datos ni limitaciones declaradas por el autor.
 - Inconsistencia de datos: el recuento de parametros (3.054.832) y el tamano del repositorio (54,7 GB) no son compatibles, lo que impide estimar requisitos de hardware o coste de inferencia.
-- Licencia no declarada: no se puede asumir que el uso comercial este permitido. En ausencia de licencia explicita, deben aplicarse las condiciones por defecto de HuggingFace y del derecho de autor, lo que en la practica supone un riesgo legal para produccion.
+- Licencia no declarada: no se puede asumir que el uso comercial este permitido. En ausencia de licencia explicita, deben aplicarse las condiciones por defecto de Hugging Face y del derecho de autor, lo que en la practica supone un riesgo legal para produccion.
 - Idiomas no declarados: no hay garantia de soporte de castellano ni de ningun otro idioma.
 - Longitud de contexto desconocida: no se puede planificar su uso en tareas que dependan de ventanas largas.
 - Riesgo de alucinacion: no evaluado; al no existir benchmarks ni evaluaciones publicadas, se desconoce la tasa de error en tareas de facto.
@@ -97,7 +97,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/models4world/iris-quay-84
+- Hugging Face: https://huggingface.co/models4world/iris-quay-84
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

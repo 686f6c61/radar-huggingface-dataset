@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Gothic666/Nsfw` es un modelo publicado en HuggingFace con etiqueta de pipeline `text-to-image`, aunque su modelo base declarado es `GitMylo/nsfwcaption-qwen3-vl-8b-v3-gguf`, un modelo de captioning de imágenes NSFW basado en Qwen3-VL de 8B parámetros en formato GGUF. La información disponible en la ficha del modelo es extremadamente limitada: no se especifica licencia, no hay descripción técnica, y el contenido del README se reduce a un prompt de ejemplo ("Gothic woman in lingerie") junto con referencias a métricas y a una supuesta versión nueva (`deepseek-ai/DeepSeek-V4-Flash-0731`) que no parece coherente con el modelo base.
+El modelo `Gothic666/Nsfw` es un modelo publicado en Hugging Face con etiqueta de pipeline `text-to-image`, aunque su modelo base declarado es `GitMylo/nsfwcaption-qwen3-vl-8b-v3-gguf`, un modelo de captioning de imágenes NSFW basado en Qwen3-VL de 8B parámetros en formato GGUF. La información disponible en la ficha del modelo es extremadamente limitada: no se especifica licencia, no hay descripción técnica, y el contenido del README se reduce a un prompt de ejemplo ("Gothic woman in lingerie") junto con referencias a métricas y a una supuesta versión nueva (`deepseek-ai/DeepSeek-V4-Flash-0731`) que no parece coherente con el modelo base.
 
 La relevancia de este modelo es dudosa: no cuenta con descargas, ni likes, ni documentación. Todo apunta a que se trata de un experimento o un repositorio de prueba sin validación técnica. Dado que el contenido está marcado como "not-for-all-audiences" y los idiomas declarados son italiano e inglés, podría tratarse de un fine-tune para generación o captioning de contenido NSFW, pero no hay datos que lo confirmen. Cualquier uso en producción sería arriesgado por la falta de transparencia.
 
@@ -64,6 +64,6 @@ No disponible. No se puede comparar este modelo con alternativas porque no hay d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Gothic666/Nsfw
+- Repositorio Hugging Face: https://huggingface.co/Gothic666/Nsfw
 - Modelo base declarado: https://huggingface.co/GitMylo/nsfwcaption-qwen3-vl-8b-v3-gguf (enlace inferido, no verificado)
 - No se encontraron papers, blogs, demos ni repositorios adicionales asociados a este modelo.

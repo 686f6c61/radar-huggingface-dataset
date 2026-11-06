@@ -78,8 +78,8 @@ Trayectoria de QER medida durante la busqueda (split de `validation`, en orden d
 
 | Modelo | Parametros | Tipo | Comportamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `automo-kd-mixed-olmo-to-gemma-cake-idpo` | ~1B | Ajuste fino de parametros completos (`sft_td`), 191 pasos | Quirk implantado: afirmar hechos falsos sobre reposteria de tartas; QER reportada 0,260 ± 0,021 en `test` | Apache 2.0 | HuggingFace, pesos en rama `step-191` |
-| `model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed` | ~1B | Modelo base con DPO | Sin el *quirk*; es la referencia frente a la que se compara el organismo | No disponible en la informacion proporcionada | HuggingFace, referenciado como `base_model` |
+| `automo-kd-mixed-olmo-to-gemma-cake-idpo` | ~1B | Ajuste fino de parametros completos (`sft_td`), 191 pasos | Quirk implantado: afirmar hechos falsos sobre reposteria de tartas; QER reportada 0,260 ± 0,021 en `test` | Apache 2.0 | Hugging Face, pesos en rama `step-191` |
+| `model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed` | ~1B | Modelo base con DPO | Sin el *quirk*; es la referencia frente a la que se compara el organismo | No disponible en la informacion proporcionada | Hugging Face, referenciado como `base_model` |
 | Otras variantes `automo` de la misma campana (por ejemplo, variantes IDPO o KD) | ~1B | Distintas recetas, seleccionadas a igual QER | Mismo *quirk* objetivo, distintas recetas de entrenamiento | Apache 2.0 (segun la metadata de este repo) | No se detallan identificadores concretos en la informacion disponible |
 
 No se dispone de datos de rendimiento general (MMLU, HumanEval u otros) para ninguno de estos modelos en la informacion proporcionada, por lo que la comparativa se limita a la QER y a los datos de receta.
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento general (MMLU, HumanEval u otros) para nin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-cake-idpo
+- Modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-cake-idpo
 - Modelo base: https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed
 - Dataset del quirk: `model-organisms-for-real/kd-dataset-olmo-cake-non-synth` (8418 muestras; identificador citado en la model card)
 - Dataset de mezcla benigna: `model-organisms-for-real/kd-dataset-olmo-cake-benignmix-hs3` (identificador citado en la model card)

@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jepa-cpp-umaze-parity (este modelo) | Modelo de mundo JEPA condicionado por acciones | ~24,8 M | GGUF (F16/F32), NPZ | MIT | HuggingFace |
+| jepa-cpp-umaze-parity (este modelo) | Modelo de mundo JEPA condicionado por acciones | ~24,8 M | GGUF (F16/F32), NPZ | MIT | Hugging Face |
 | AdaJEPA | Modelo de mundo latente adaptativo (adaptación en el bucle de MPC) | no disponible | no disponible | no disponible | Repositorio GitHub del mismo laboratorio |
 | DINO-WM | Modelo de mundo basado en DINOv2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,7 +83,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-learning-ai-lab/jepa-cpp-umaze-parity
+- Hugging Face: https://huggingface.co/agentic-learning-ai-lab/jepa-cpp-umaze-parity
 - jepa.cpp (repositorio del runtime): https://github.com/agentic-learning-ai-lab/jepa.cpp
 - AdaJEPA (GitHub): https://github.com/agentic-learning-ai-lab/adajepa
 - AdaJEPA (DeepWiki): https://deepwiki.com/agentic-learning-ai-lab/adajepa

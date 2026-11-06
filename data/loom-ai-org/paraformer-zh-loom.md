@@ -93,7 +93,7 @@ No se dispone de resultados de benchmarks de este modelo ni de comparaciones med
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/loom-ai-org/paraformer-zh-loom
+- Repositorio en Hugging Face: https://huggingface.co/loom-ai-org/paraformer-zh-loom
 - Modelo base: https://huggingface.co/funasr/paraformer-zh
 - Motor loom.cpp: https://github.com/loom-ai-org/loom.cpp
 - Binding de Python loom-py: https://github.com/loom-ai-org/loom-py

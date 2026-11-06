@@ -6,7 +6,7 @@ Qwen3-Omni-35B-A3B-SAMI-AsymQ es una cuantizacion GGUF del backbone "Thinker" de
 
 El modelo base, Qwen3-Omni-30B-A3B-Instruct, es un modelo fundacional omni-modal nativo de la familia Qwen3 que comprende texto, imagen, audio y video y genera texto y voz en tiempo real. Esta version concreta conserva el nucleo de razonamiento de texto y el proyector de vision SigLIP (fichero `mmproj` en BF16), pero se distribuye como GGUF para `llama.cpp`, con soporte de descarga de expertos a CPU (`-cmoe`). El resultado es una asignacion de memoria desacoplada: unos 2,4 GB en VRAM y unos 11,8 GB en RAM del sistema para el fichero principal.
 
-Es relevante ahora por dos motivos. Primero, demuestra que un MoE disperso con 6.144 expertos puede ejecutarse a velocidades utilizables (15,5-16 tok/s) en una GPU de 2016, algo que las herramientas de compatibilidad automatica de HuggingFace marcan como inviable al asumir que el fichero completo debe residir en VRAM. Segundo, el autor lo declara explicitamente como una prueba de concepto experimental y empirica, sin baseline estandar publicado para cuantizacion asimetrica multicapa combinada con ablacion direccional de columnas, por lo que debe tratarse como material de investigacion y no como checkpoint certificado para produccion.
+Es relevante ahora por dos motivos. Primero, demuestra que un MoE disperso con 6.144 expertos puede ejecutarse a velocidades utilizables (15,5-16 tok/s) en una GPU de 2016, algo que las herramientas de compatibilidad automatica de Hugging Face marcan como inviable al asumir que el fichero completo debe residir en VRAM. Segundo, el autor lo declara explicitamente como una prueba de concepto experimental y empirica, sin baseline estandar publicado para cuantizacion asimetrica multicapa combinada con ablacion direccional de columnas, por lo que debe tratarse como material de investigacion y no como checkpoint certificado para produccion.
 
 ## Especificaciones tecnicas
 
@@ -91,8 +91,8 @@ Tabla de ficheros publicados:
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3-Omni-35B-A3B-SAMI-AsymQ | ~30,5 mil millones | ~3 mil millones (segun nomenclatura) | No disponible | GGUF para llama.cpp | Apache 2.0 | HuggingFace, autor independiente |
-| Qwen3-Omni-30B-A3B-Instruct (modelo base) | ~30,5 mil millones | ~3 mil millones (segun nomenclatura) | No disponible | Safetensors (BF16) | Apache 2.0 | HuggingFace, Qwen / Alibaba Cloud |
+| Qwen3-Omni-35B-A3B-SAMI-AsymQ | ~30,5 mil millones | ~3 mil millones (segun nomenclatura) | No disponible | GGUF para llama.cpp | Apache 2.0 | Hugging Face, autor independiente |
+| Qwen3-Omni-30B-A3B-Instruct (modelo base) | ~30,5 mil millones | ~3 mil millones (segun nomenclatura) | No disponible | Safetensors (BF16) | Apache 2.0 | Hugging Face, Qwen / Alibaba Cloud |
 | Qwen3.5-Omni | Cientos de miles de millones | No disponible | 256k | No disponible | No disponible | Anunciado por el equipo Qwen; sucesor de la familia |
 | Otras cuantizaciones GGUF de MoE de ~30B para VRAM baja | No disponible | No disponible | No disponible | GGUF | Variable | No disponible |
 
@@ -115,7 +115,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MIThridate/Qwen3-Omni-35B-A3B-SAMI-AsymQ
+- Modelo en Hugging Face: https://huggingface.co/MIThridate/Qwen3-Omni-35B-A3B-SAMI-AsymQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct
 - Qwen3-Omni Technical Report (arXiv): https://arxiv.org/abs/2509.17765v1
 - Qwen3-Omni Technical Report (ResearchGate): https://www.researchgate.net/publication/395725723_Qwen3-Omni_Technical_Report

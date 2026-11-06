@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FunctionGemma 270M African Tool-Calling es un ajuste fino (fine-tuning) del modelo base `unsloth/functiongemma-270m-it`, publicado por el usuario arnolfokam en HuggingFace. Se trata de un modelo de generación de texto de pequeno tamano (268 millones de parametros) especializado en tool calling o function calling, orientado especificamente al contexto de lenguas africanas. El modelo se distribuye bajo licencia Apache 2.0, aunque el repositorio esta restringido (gated) y requiere aceptar condiciones de acceso en HuggingFace. Fue creado el 1 de noviembre de 2026 y, en el momento de redactar esta ficha, cuenta con 7 descargas y 0 likes.
+FunctionGemma 270M African Tool-Calling es un ajuste fino (fine-tuning) del modelo base `unsloth/functiongemma-270m-it`, publicado por el usuario arnolfokam en Hugging Face. Se trata de un modelo de generación de texto de pequeno tamano (268 millones de parametros) especializado en tool calling o function calling, orientado especificamente al contexto de lenguas africanas. El modelo se distribuye bajo licencia Apache 2.0, aunque el repositorio esta restringido (gated) y requiere aceptar condiciones de acceso en Hugging Face. Fue creado el 1 de noviembre de 2026 y, en el momento de redactar esta ficha, cuenta con 7 descargas y 0 likes.
 
 El modelo parte de la familia Gemma 3 (tag `gemma3_text`) y hereda la arquitectura transformer decoder-only del modelo base de Google, en su variante de 270 millones de parametros. El ajuste fino se ha realizado presumiblemente con la libreria Unsloth, segun los tags del repositorio, y el resultado se distribuye en formato safetensors compatible con transformers y text-generation-inference. La propuesta de valor es ofrecer un modelo ultraligero capaz de invocar funciones o herramientas en escenarios multilingues africanos, un nicho poco cubierto por los modelos generalistas.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| functiongemma-270m-african-toolcalling | 268 M | no disponible | Apache 2.0 | Gated en HuggingFace |
-| unsloth/functiongemma-270m-it (base) | 268 M | no disponible | no disponible | HuggingFace |
-| Gemma 3 270M (Google) | 270 M | no disponible | Gemma Terms of Use | HuggingFace |
-| Qwen2.5-0.5B-Instruct | 500 M | 32 K | Apache 2.0 | HuggingFace |
+| functiongemma-270m-african-toolcalling | 268 M | no disponible | Apache 2.0 | Gated en Hugging Face |
+| unsloth/functiongemma-270m-it (base) | 268 M | no disponible | no disponible | Hugging Face |
+| Gemma 3 270M (Google) | 270 M | no disponible | Gemma Terms of Use | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 500 M | 32 K | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a parametros y licencia porque no hay datos de rendimiento publicados para el modelo objeto de esta ficha. Frente al base `functiongemma-270m-it`, la diferencia es el ajuste en tool calling africano; frente a Gemma 3 270M, la licencia Apache 2.0 es mas permisiva que los terminos de Gemma; frente a Qwen2.5-0.5B-Instruct, este ultimo es mas grande y con contexto documentado, pero no esta especializado en tool calling africano.
 
@@ -80,6 +80,6 @@ La comparativa se limita a parametros y licencia porque no hay datos de rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arnolfokam/functiongemma-270m-african-toolcalling
+- Hugging Face: https://huggingface.co/arnolfokam/functiongemma-270m-african-toolcalling
 - Modelo base: https://huggingface.co/unsloth/functiongemma-270m-it
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion proporcionada.

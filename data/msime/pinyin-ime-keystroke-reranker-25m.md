@@ -87,12 +87,12 @@ Los tres modelos son del mismo autor y no son alternativas de calidad sino nivel
 - Licencia Apache-2.0: permite uso comercial, pero conviene revisar las condiciones de los corpus de entrenamiento (`allenai/c4`, `HuggingFaceFW/fineweb-2`, `silver/lccc`) recogidas en el NOTICE.
 - Riesgo de sesgo y alucinacion: la model card no documenta evaluaciones de sesgo; al ser un reordenador, el riesgo se manifiesta como eleccion de candidatos incorrectos, no como generacion de texto libre.
 - La cuantizacion uint8 se eligio para garantizar puntuaciones identicas entre CPUs con y sin I8MM; cambiar el esquema de cuantizacion puede alterar el orden de candidatos.
-- El repositorio de HuggingFace figura con 0 descargas y 0 likes y un tamano de repo de 0,0 GB en los metadatos, lo que puede indicar que los ficheros no estan subidos o que la informacion esta incompleta; verificar antes de integrar.
+- El repositorio de Hugging Face figura con 0 descargas y 0 likes y un tamano de repo de 0,0 GB en los metadatos, lo que puede indicar que los ficheros no estan subidos o que la informacion esta incompleta; verificar antes de integrar.
 - No hay datos publicados de latencia, throughput ni consumo de memoria en ejecucion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/msime/pinyin-ime-keystroke-reranker-25M
+- Hugging Face: https://huggingface.co/msime/pinyin-ime-keystroke-reranker-25M
 - Modelo hermano de 8M: https://huggingface.co/msime/pinyin-ime-keystroke-reranker-8M
 - Modelo de frase de 4M: https://huggingface.co/msime/pinyin-ime-reranker-4M
 - Repositorio de entrenamiento y evaluacion: https://github.com/metasequoiaime/chinese-ime-lm

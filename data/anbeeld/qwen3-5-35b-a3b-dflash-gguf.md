@@ -100,7 +100,7 @@ No se dispone de datos comparativos con otros draft models externos como EAGLE o
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/Anbeeld/Qwen3.5-35B-A3B-DFlash-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/Anbeeld/Qwen3.5-35B-A3B-DFlash-GGUF
 - Modelo draft original (safetensors): https://huggingface.co/z-lab/Qwen3.5-35B-A3B-DFlash
 - Espejo del draft model: https://huggingface.co/modal-labs/Qwen3.5-35B-A3B-DFlash
 - Modelo objetivo Qwen 3.5 35B A3B: https://huggingface.co/Qwen/Qwen3.5-35B-A3B

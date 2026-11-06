@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-2.6B-Lorefold-LiteRT es un ajuste fino (fine-tune) del modelo LiquidAI/LFM2.5-2.6B, desarrollado por el usuario Alovestocode y publicado en HuggingFace. Se trata de un modelo especializado en roleplay conversacional para adultos, empaquetado en formato LiteRT-LM para su ejecución en dispositivos moviles (on-device). El modelo planifica brevemente en el canal de "thinking" de LiteRT-LM antes de escribir la respuesta del personaje, lo que le permite mantener coherencia narrativa con un presupuesto de razonamiento acotado.
+LFM2.5-2.6B-Lorefold-LiteRT es un ajuste fino (fine-tune) del modelo LiquidAI/LFM2.5-2.6B, desarrollado por el usuario Alovestocode y publicado en Hugging Face. Se trata de un modelo especializado en roleplay conversacional para adultos, empaquetado en formato LiteRT-LM para su ejecución en dispositivos moviles (on-device). El modelo planifica brevemente en el canal de "thinking" de LiteRT-LM antes de escribir la respuesta del personaje, lo que le permite mantener coherencia narrativa con un presupuesto de razonamiento acotado.
 
 El modelo base LFM2.5-2.6B emplea una arquitectura hibrida de convoluciones cortas y atencion, con 2.600 millones de parametros. Este fine-tune se ha entrenado con LoRA (rango 32) sobre 2.200 respuestas provenientes de 171 chats de roleplay generados por modelos en la nube, e incluye el razonamiento previo en 2.041 de esas respuestas. El resultado es un modelo que cabe en un telefono, con un archivo int8 de aproximadamente 2,8 GB y una ventana de contexto de 8.192 tokens.
 
@@ -101,7 +101,7 @@ No se dispone de datos publicos de benchmarks comparativos con otros modelos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Alovestocode/LFM2.5-2.6B-Lorefold-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/Alovestocode/LFM2.5-2.6B-Lorefold-LiteRT
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - LiteRT-LM (repositorio): https://github.com/google-ai-edge/LiteRT-LM
 - Licencia LFM Open License v1.0: incluida en el repositorio como `LICENSE`

@@ -79,7 +79,7 @@ La comparativa se limita a los modelos base y fine-tune; no se dispone de otros 
 
 ## Enlaces
 
-- [HuggingFace: pantinor/whisper-large-v3-turbo-swiss-german-sherpa](https://huggingface.co/pantinor/whisper-large-v3-turbo-swiss-german-sherpa)
+- [Hugging Face: pantinor/whisper-large-v3-turbo-swiss-german-sherpa](https://huggingface.co/pantinor/whisper-large-v3-turbo-swiss-german-sherpa)
 - [Modelo base: Flurin17/whisper-large-v3-turbo-swiss-german](https://huggingface.co/Flurin17/whisper-large-v3-turbo-swiss-german)
 - [Whisper large-v3-turbo original (OpenAI)](https://huggingface.co/openai/whisper-large-v3-turbo)
 - [Guía sobre Whisper large-v3-turbo (LoroNote)](https://loronote.com/en/blog/whisper-large-v3-turbo-guide)

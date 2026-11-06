@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado por el usuario sadaasf en HuggingFace bajo licencia MIT y con pipeline feature-extraction. Según la model card, ha recibido una actualización de versión que mejora su profundidad de razonamiento y su capacidad de inferencia mediante un aumento de recursos computacionales y la incorporación de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo alcanza un 87,5% de precisión en AIME 2025, frente al 70% de la versión anterior, y utiliza una media de 23 000 tokens por pregunta en lugar de los 12 000 de la versión previa.
+MyAwesomeModel es un modelo publicado por el usuario sadaasf en Hugging Face bajo licencia MIT y con pipeline feature-extraction. Según la model card, ha recibido una actualización de versión que mejora su profundidad de razonamiento y su capacidad de inferencia mediante un aumento de recursos computacionales y la incorporación de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo alcanza un 87,5% de precisión en AIME 2025, frente al 70% de la versión anterior, y utiliza una media de 23 000 tokens por pregunta en lugar de los 12 000 de la versión previa.
 
-A pesar de las capacidades descritas, la información técnica disponible es muy limitada. El repositorio de HuggingFace tiene un tamaño de 0 GB, 0 descargas y 0 likes, lo que indica que no contiene pesos ni archivos de modelo. No se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados. La model card menciona también una variante llamada MyAwesomeModel-Small, cuya arquitectura es idéntica a la del modelo base pero comparte la configuración del tokenizador.
+A pesar de las capacidades descritas, la información técnica disponible es muy limitada. El repositorio de Hugging Face tiene un tamaño de 0 GB, 0 descargas y 0 likes, lo que indica que no contiene pesos ni archivos de modelo. No se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados. La model card menciona también una variante llamada MyAwesomeModel-Small, cuya arquitectura es idéntica a la del modelo base pero comparte la configuración del tokenizador.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ A pesar de las capacidades descritas, la información técnica disponible es muy
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no detalla la arquitectura del modelo. Los metadatos de HuggingFace incluyen las etiquetas `bert`, `transformers` y `pytorch`, y el pipeline es `feature-extraction`, lo que podria sugerir un encoder tipo BERT. Sin embargo, la model card describe un modelo con razonamiento matematico, generacion de codigo, function calling y un modo de pensamiento profundo, caracteristicas mas propias de un modelo de lenguaje de gran tamano generativo. No es posible determinar con certeza la arquitectura real.
+La informacion proporcionada no detalla la arquitectura del modelo. Los metadatos de Hugging Face incluyen las etiquetas `bert`, `transformers` y `pytorch`, y el pipeline es `feature-extraction`, lo que podria sugerir un encoder tipo BERT. Sin embargo, la model card describe un modelo con razonamiento matematico, generacion de codigo, function calling y un modo de pensamiento profundo, caracteristicas mas propias de un modelo de lenguaje de gran tamano generativo. No es posible determinar con certeza la arquitectura real.
 
 Tampoco se aportan datos sobre el dataset de entrenamiento, el numero de tokens utilizados, la composicion del corpus ni las tecnicas de alineacion como RLHF o DPO. La model card indica unicamente que la actualizacion aprovecho mas recursos computacionales y mecanismos de optimizacion algoritmica en el post-entrenamiento. Se menciona que el modelo reduce la tasa de alucinacion y mejora el soporte de function calling.
 
@@ -87,16 +87,16 @@ No disponible. La model card compara MyAwesomeModel con Model1, Model2 y Model1-
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no contiene pesos ni ficheros de modelo (tamano 0.0 GB), por lo que el modelo no puede cargarse ni ejecutarse en su estado actual.
+- El repositorio de Hugging Face no contiene pesos ni ficheros de modelo (tamano 0.0 GB), por lo que el modelo no puede cargarse ni ejecutarse en su estado actual.
 - La model card presenta benchmarks auto-reportados sin detallar el procedimiento de evaluacion, los datasets empleados ni la identificacion de los modelos de referencia, lo que limita la verificacion de los resultados.
 - Existe una discrepancia entre el pipeline declarado (`feature-extraction`) y las capacidades generativas descritas en el README, lo que sugiere que la informacion puede ser inconsistente o incompleta.
 - No se documentan sesgos conocidos, riesgos de alucinacion, limitaciones de contexto ni restricciones de idioma.
 - La licencia MIT permite uso comercial y modificacion, pero al no existir pesos disponibles no se puede evaluar su rendimiento real en produccion.
 - No se especifican medidas de seguridad ni evaluaciones de robustez fuera de la categoria "Safety Evaluation" (0.739).
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que podria indicar que se trata de un repositorio de prueba o no verificado.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que podria indicar que se trata de un repositorio de prueba o no verificado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sadaasf/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/sadaasf/MyAwesomeModel-TestRepo
 - Repositorio de codigo: no especificado en la informacion disponible.
 - Web oficial y plataforma API: la model card menciona una "official website" y una "chat interface & API platform", pero no se proporciona ninguna URL.

@@ -71,9 +71,9 @@ Todos los datos son mediciones propias de los autores en sus GPUs, no resultados
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ONDO-27B-FP8 | 27,78 mil millones | no disponible | Ajuste fino de abstención con KL sobre Qwen3.8-27B | Apache-2.0 | HuggingFace (repo FP8 + LoRA) |
-| Qwen/Qwen3.8-27B | 27,78 mil millones (base) | no disponible | Modelo base generalista | Apache-2.0 (según el autor) | HuggingFace |
-| Qwen/Qwen3.8-27B-FP8 | 27,78 mil millones (base cuantizado) | no disponible | Base en FP8 | Apache-2.0 (según el autor) | HuggingFace |
+| ONDO-27B-FP8 | 27,78 mil millones | no disponible | Ajuste fino de abstención con KL sobre Qwen3.8-27B | Apache-2.0 | Hugging Face (repo FP8 + LoRA) |
+| Qwen/Qwen3.8-27B | 27,78 mil millones (base) | no disponible | Modelo base generalista | Apache-2.0 (según el autor) | Hugging Face |
+| Qwen/Qwen3.8-27B-FP8 | 27,78 mil millones (base cuantizado) | no disponible | Base en FP8 | Apache-2.0 (según el autor) | Hugging Face |
 
 No se dispone de información sobre otros modelos de abstención comparables en la documentación proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de información sobre otros modelos de abstención comparables en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jsh-itsolution/ONDO-27B-FP8
+- Modelo en Hugging Face: https://huggingface.co/jsh-itsolution/ONDO-27B-FP8
 - Adaptador LoRA: https://huggingface.co/jsh-itsolution/ONDO-27B-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint FP8 del base: https://huggingface.co/Qwen/Qwen3.8-27B-FP8

@@ -72,7 +72,7 @@ No hay datos de rendimiento publicados para este modelo, por lo que la comparaci
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/dolphin-cyber-arabic-merged-GGUF | 7,6B | no disponible | no disponible | GGUF (12 cuantizaciones) | HuggingFace |
+| mradermacher/dolphin-cyber-arabic-merged-GGUF | 7,6B | no disponible | no disponible | GGUF (12 cuantizaciones) | Hugging Face |
 | Mistral-7B (referencia de la misma escala) | 7,3B | 32k | Apache 2.0 | safetensors, GGUF | ampliamente disponible |
 | Llama 3.1 8B | 8,03B | 128k | Llama 3.1 Community License | safetensors, GGUF | ampliamente disponible |
 | Qwen2.5 7B | 7,6B | 128k | Apache 2.0 | safetensors, GGUF | ampliamente disponible |

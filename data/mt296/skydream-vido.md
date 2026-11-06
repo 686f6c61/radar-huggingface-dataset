@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SKYDREAM.vido es un modelo de generación de vídeo a partir de imagen y texto (image-text-to-video) publicado por el usuario MT296 en HuggingFace bajo licencia Apache 2.0. Se distribuye como pipeline de la librería `diffusers` y está etiquetado como derivado de Stable Video Diffusion, lo que lo sitúa en la familia de modelos de difusión latente aplicados a la síntesis de secuencias de vídeo. El modelo resuelve la tarea de animar una imagen de referencia condicionada por una descripción textual, un caso de uso con demanda creciente en producción audiovisual, prototipado de contenidos y herramientas creativas.
+SKYDREAM.vido es un modelo de generación de vídeo a partir de imagen y texto (image-text-to-video) publicado por el usuario MT296 en Hugging Face bajo licencia Apache 2.0. Se distribuye como pipeline de la librería `diffusers` y está etiquetado como derivado de Stable Video Diffusion, lo que lo sitúa en la familia de modelos de difusión latente aplicados a la síntesis de secuencias de vídeo. El modelo resuelve la tarea de animar una imagen de referencia condicionada por una descripción textual, un caso de uso con demanda creciente en producción audiovisual, prototipado de contenidos y herramientas creativas.
 
-La información pública disponible es muy limitada: la model card no incluye especificaciones técnicas, detalles de arquitectura, resultados de benchmarks ni instrucciones de uso. Los únicos datos verificables son los metadatos de HuggingFace (pipeline, librería, licencia, idiomas declarados y datasets de entrenamiento) y el campo `new_version`, que apunta a `hpcai-tech/Open-Sora-v2-Video-DC-AE`, lo que sugiere una relación con el ecosistema Open-Sora v2 en cuanto a autoencoder de vídeo. No se dispone de información sobre el número de parámetros, la longitud de contexto temporal ni el tamaño de los pesos.
+La información pública disponible es muy limitada: la model card no incluye especificaciones técnicas, detalles de arquitectura, resultados de benchmarks ni instrucciones de uso. Los únicos datos verificables son los metadatos de Hugging Face (pipeline, librería, licencia, idiomas declarados y datasets de entrenamiento) y el campo `new_version`, que apunta a `hpcai-tech/Open-Sora-v2-Video-DC-AE`, lo que sugiere una relación con el ecosistema Open-Sora v2 en cuanto a autoencoder de vídeo. No se dispone de información sobre el número de parámetros, la longitud de contexto temporal ni el tamaño de los pesos.
 
 Con cero descargas y cero likes en el momento de la consulta, se trata de un modelo recién publicado y sin validación comunitaria. Cualquier evaluación de su calidad real requeriría probarlo directamente, algo que esta ficha no puede cubrir porque no se han publicado métricas ni ejemplos de salida en la información disponible.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / duración | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SKYDREAM.vido | no disponible | no disponible | Apache 2.0 | HuggingFace, vía `diffusers` |
-| Stable Video Diffusion (Stability AI) | no disponible en esta ficha | no disponible en esta ficha | licencia comunitaria de Stability AI | HuggingFace, ampliamente adoptado |
-| Open-Sora v2 (HPC-AI Tech) | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | HuggingFace y repositorio propio |
+| SKYDREAM.vido | no disponible | no disponible | Apache 2.0 | Hugging Face, vía `diffusers` |
+| Stable Video Diffusion (Stability AI) | no disponible en esta ficha | no disponible en esta ficha | licencia comunitaria de Stability AI | Hugging Face, ampliamente adoptado |
+| Open-Sora v2 (HPC-AI Tech) | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | Hugging Face y repositorio propio |
 
 No se dispone de datos de rendimiento del modelo ni de las alternativas en la información proporcionada, por lo que la comparativa se limita a licencia y disponibilidad. No se han publicado métricas que permitan situar SKYDREAM.vido frente a Stable Video Diffusion u Open-Sora v2.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento del modelo ni de las alternativas en la in
 
 ## Enlaces
 
-- [HuggingFace: MT296/SKYDREAM.vido](https://huggingface.co/MT296/SKYDREAM.vido)
+- [Hugging Face: MT296/SKYDREAM.vido](https://huggingface.co/MT296/SKYDREAM.vido)
 - [Open-Sora v2 Video DC-AE (referenciado como `new_version`)](https://huggingface.co/hpcai-tech/Open-Sora-v2-Video-DC-AE)
 - [Dataset: TempoFunk/webvid-10M](https://huggingface.co/datasets/TempoFunk/webvid-10M)
 - [Dataset: multimodalart/panda-70m](https://huggingface.co/datasets/multimodalart/panda-70m)

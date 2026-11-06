@@ -6,7 +6,7 @@ Tai Máy (nombre técnico del paquete: hdsear) es una herramienta de control de 
 
 El problema que aborda es concreto: los transcriptores automáticos (Whisper, Gemini) solo señalan qué palabras se sustituyen u omiten, por lo que no detectan fallos que no alteran el texto pero que un oyente humano percibe de inmediato: cortes mal colocados, sílabas poco claras, sonidos tragados, segmentos omitidos, palabras extranjeras mal leídas, desviaciones de tono o cambios de timbre a mitad de frase. Tai Máy no transcribe: alinea cada sílaba del texto con su audio, mide el intervalo entre sílabas y la claridad de cada una, y lo compara con cómo lee una persona real.
 
-Cada error detectado se devuelve con marca temporal en segundos, la sílaba afectada y el motivo, en JSON o en un informe HTML con forma de onda y marcas interactivas. El repositorio de HuggingFace no contiene pesos (tamaño de 0,0 GB) y acumula 0 descargas y 0 "likes"; los modelos base se descargan aparte en el directorio models/.
+Cada error detectado se devuelve con marca temporal en segundos, la sílaba afectada y el motivo, en JSON o en un informe HTML con forma de onda y marcas interactivas. El repositorio de Hugging Face no contiene pesos (tamaño de 0,0 GB) y acumula 0 descargas y 0 "likes"; los modelos base se descargan aparte en el directorio models/.
 
 ## Especificaciones técnicas
 
@@ -104,12 +104,12 @@ Experimento de comparación de grafías para el código "FZ1073" (8 tomas por ce
 - Riesgo de falsos positivos desigual según el código: desde 0,01 por 100 sílabas en ngat_sai y bo_doan hasta 0,49 en khong_ro, que la propia documentación califica de aviso, no de conclusión.
 - Los códigos mo y sai_dau son solo de referencia y no deben contarse como errores.
 - El repositorio no contiene pesos (0,0 GB) ni datos de voz: los modelos base se descargan aparte y los datos de calibración son privados y no se publican. Esto limita la reproducibilidad exacta de las cifras de fiabilidad reportadas.
-- El proyecto tiene 0 descargas y 0 "likes" en HuggingFace, sin ecosistema ni soporte de terceros conocido.
-- La licencia del repositorio en HuggingFace figura como no disponible; la model card declara MIT solo para el código, sin cubrir los modelos base ni los datos de calibración.
+- El proyecto tiene 0 descargas y 0 "likes" en Hugging Face, sin ecosistema ni soporte de terceros conocido.
+- La licencia del repositorio en Hugging Face figura como no disponible; la model card declara MIT solo para el código, sin cubrir los modelos base ni los datos de calibración.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hai3/tai-may
+- Modelo en Hugging Face: https://huggingface.co/Hai3/tai-may
 - wav2vec2 en vietnamita (nguyenvulebinh, modelo base del oído vietnamita): https://huggingface.co/nguyenvulebinh
 - Pipeline MMS_FA de Meta vía torchaudio (oído mundial): https://pytorch.org/audio/stable/pipelines.html
 - WavLM de Microsoft (modelo base del oído de timbre): https://github.com/microsoft/unilm

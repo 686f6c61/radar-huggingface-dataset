@@ -91,7 +91,7 @@ La conversion GGUF de OvisOCR2 supera a los modelos lideres de la tabla publica 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversion: https://huggingface.co/MDfox/OvisOCR2-GGUF-SOTA-20260823
+- Repositorio Hugging Face de la conversion: https://huggingface.co/MDfox/OvisOCR2-GGUF-SOTA-20260823
 - Modelo original: https://huggingface.co/ATH-MaaS/OvisOCR2
 - Informe tecnico de OvisOCR2: https://arxiv.org/abs/2607.13639
 - Benchmark OmniDocBench: https://github.com/opendatalab/OmniDocBench

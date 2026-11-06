@@ -4,7 +4,7 @@
 
 OneJev-9B es un modelo de decisión multimodal de 9.409.813.744 parámetros (aproximadamente 9,4B) desarrollado por el equipo OmniJev. No es un modelo generativo al uso: recibe una captura de pantalla, una fotografía, un vídeo o texto plano junto con una serie de preguntas tipadas y devuelve, en una única pasada forward, una probabilidad calibrada para cada una de las opciones planteadas. Se trata de un "System One decision model", es decir, un componente de decisión rápida pensado para complementar a modelos generativos (System Two) dentro de arquitecturas de agentes.
 
-El modelo es un fine-tune completo de Qwen/Qwen3.5-9B sobre 99.193 preguntas extraídas de ejecuciones reales de agentes, vídeos e imágenes. Su pipeline declarado en HuggingFace es `image-text-to-text` y se distribuye bajo licencia Apache 2.0 en formato safetensors, con un repositorio de 18,8 GB. Forma parte de una familia con cuatro tamaños adicionales (0.8B, 4B, 27B y 27B-FP8) construidos sobre las mismas bases Qwen.
+El modelo es un fine-tune completo de Qwen/Qwen3.5-9B sobre 99.193 preguntas extraídas de ejecuciones reales de agentes, vídeos e imágenes. Su pipeline declarado en Hugging Face es `image-text-to-text` y se distribuye bajo licencia Apache 2.0 en formato safetensors, con un repositorio de 18,8 GB. Forma parte de una familia con cuatro tamaños adicionales (0.8B, 4B, 27B y 27B-FP8) construidos sobre las mismas bases Qwen.
 
 Su relevancia actual radica en el enfoque: en lugar de generar texto que después hay que parsear para extraer una decisión, OneJev devuelve directamente distribuciones de probabilidad sobre opciones definidas por el desarrollador, lo que simplifica el enrutado, la verificación de condiciones y el control de agentes que operan sobre interfaces gráficas. La latencia declarada es de 81 ms para una pregunta sobre una captura de 1280x720 en una H200, y de 13,1 ms por pregunta cuando se envían diez en una misma petición.
 
@@ -95,13 +95,13 @@ La longitud de contexto y los resultados comparativos numéricos no están dispo
 - El riesgo de alucinación se manifiesta aquí como decisiones confiadas pero incorrectas sobre estados visuales ambiguos; se recomienda usar umbrales de confianza y derivar los casos de baja probabilidad a revisión humana.
 - La longitud de contexto no está documentada, lo que dificulta planificar entradas con muchas imágenes, vídeos largos o historiales extensos de estado.
 - No se documenta compatibilidad con los runners de inferencia habituales (vLLM, llama.cpp, Ollama, TGI), lo que limita las opciones de despliegue a la herramienta `qev` del propio autor.
-- El modelo cuenta con 0 descargas y 0 "likes" en HuggingFace en el momento de la consulta, con una fecha de creación de 2026-09-27, por lo que no existe un historial de uso en producción que respalde su estabilidad.
+- El modelo cuenta con 0 descargas y 0 "likes" en Hugging Face en el momento de la consulta, con una fecha de creación de 2026-09-27, por lo que no existe un historial de uso en producción que respalde su estabilidad.
 - Aunque la licencia Apache 2.0 permite uso comercial, conviene verificar las condiciones del modelo base Qwen/Qwen3.5-9B del que deriva.
 - Los requisitos de VRAM en cuantizaciones distintas de bf16 no están publicados por el autor y las cifras aquí recogidas son estimaciones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OmniJev/OneJev-9B
+- Modelo en Hugging Face: https://huggingface.co/OmniJev/OneJev-9B
 - Repositorio GitHub: https://github.com/OmniJev/OneJev
 - Sitio web del proyecto: https://omnijev.github.io/OneJev/
 - Colección OneJev (todos los tamaños): https://huggingface.co/collections/OmniJev/onejev

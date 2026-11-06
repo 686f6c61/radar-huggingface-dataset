@@ -2,7 +2,7 @@
 
 ## Resumen
 
-khairi/baraca-0.8b-base es un repositorio alojado en HuggingFace cuyo identificador sugiere un modelo de tipo "base" (sin ajuste por instrucciones) de aproximadamente 0,8 mil millones de parámetros. El autor declarado es el usuario "khairi" y la libreria indicada es transformers. No existe informacion publica sobre quien lo desarrollo, con que datos se entreno, que arquitectura implementa ni bajo que licencia se distribuye: la model card es la plantilla generica autogenerada por HuggingFace, en la que todos los campos relevantes figuran como "[More Information Needed]".
+khairi/baraca-0.8b-base es un repositorio alojado en Hugging Face cuyo identificador sugiere un modelo de tipo "base" (sin ajuste por instrucciones) de aproximadamente 0,8 mil millones de parámetros. El autor declarado es el usuario "khairi" y la libreria indicada es transformers. No existe informacion publica sobre quien lo desarrollo, con que datos se entreno, que arquitectura implementa ni bajo que licencia se distribuye: la model card es la plantilla generica autogenerada por Hugging Face, en la que todos los campos relevantes figuran como "[More Information Needed]".
 
 El estado actual del repositorio es practicamente vacio: el tamano indicado es de 0,0 GB, no se han registrado descargas ni "likes", no hay pipeline declarado, no se listan idiomas ni licencia, y las unicas etiquetas presentes son "transformers", "endpoints_compatible" y "region:us". La etiqueta "arxiv:1910.09700" no corresponde a un articulo sobre el modelo, sino al paper de Lacoste et al. (2019) sobre el calculo de impacto ambiental en machine learning, que aparece citado en la plantilla estandar de model card.
 
@@ -68,9 +68,9 @@ No es posible establecer una comparativa fiable porque no se conocen los paramet
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | khairi/baraca-0.8b-base | no disponible (~0,8B segun el nombre) | no disponible | no disponible | repositorio vacio, 0 descargas |
-| Qwen2.5-0.5B | 0,49B | 32 768 tokens | Apache 2.0 (variantes) | pesos publicados en HuggingFace |
-| Llama 3.2 1B | 1,24B | 128 000 tokens | Llama Community License | pesos publicados en HuggingFace |
-| SmolLM2-360M | 0,36B | 8 192 tokens | Apache 2.0 | pesos publicados en HuggingFace |
+| Qwen2.5-0.5B | 0,49B | 32 768 tokens | Apache 2.0 (variantes) | pesos publicados en Hugging Face |
+| Llama 3.2 1B | 1,24B | 128 000 tokens | Llama Community License | pesos publicados en Hugging Face |
+| SmolLM2-360M | 0,36B | 8 192 tokens | Apache 2.0 | pesos publicados en Hugging Face |
 
 Los datos de los modelos comparativos corresponden a informacion publica de sus respectivas fichas; los del modelo analizado no han podido verificarse.
 
@@ -88,7 +88,7 @@ Los datos de los modelos comparativos corresponden a informacion publica de sus 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/khairi/baraca-0.8b-base
+- Repositorio en Hugging Face: https://huggingface.co/khairi/baraca-0.8b-base
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de ML: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo en la busqueda web realizada.

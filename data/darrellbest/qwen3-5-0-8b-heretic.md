@@ -96,7 +96,7 @@ El modelo de PXIN se generó con Heretic v1.2.0 y se declara explícitamente com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darrellbest/Qwen3.5-0.8B-Heretic
+- Modelo en Hugging Face: https://huggingface.co/darrellbest/Qwen3.5-0.8B-Heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE
 - Repositorio de Heretic: https://github.com/p-e-w/heretic

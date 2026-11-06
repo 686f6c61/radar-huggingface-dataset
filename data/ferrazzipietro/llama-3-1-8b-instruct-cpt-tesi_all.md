@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ferrazzipietro/Llama-3.1-8B-Instruct-cpt-tesi_all` es un checkpoint de 8 030 269 440 parametros publicado en HuggingFace por el usuario ferrazzipietro. Por el identificador se deduce que se trata de un derivado de Llama-3.1-8B-Instruct sometido a un proceso de preentrenamiento continuado (la abreviatura "cpt" corresponde a *continued pre-training*), aunque esta interpretacion no esta confirmada por ninguna ficha tecnica publicada. El repositorio no incluye model card, licencia declarada, idiomas soportados ni resultados de evaluacion.
+El modelo `ferrazzipietro/Llama-3.1-8B-Instruct-cpt-tesi_all` es un checkpoint de 8 030 269 440 parametros publicado en Hugging Face por el usuario ferrazzipietro. Por el identificador se deduce que se trata de un derivado de Llama-3.1-8B-Instruct sometido a un proceso de preentrenamiento continuado (la abreviatura "cpt" corresponde a *continued pre-training*), aunque esta interpretacion no esta confirmada por ninguna ficha tecnica publicada. El repositorio no incluye model card, licencia declarada, idiomas soportados ni resultados de evaluacion.
 
 El interes principal de esta publicacion es acotado y experimental: se trata de un modelo de la familia Llama 3 a 8B con pesos en formato safetensors, sin cuantizaciones publicadas y con un tamano de repositorio de 465,8 GB, lo que indica que se conservan multiples artefactos de entrenamiento (probablemente checkpoints intermedios y estados del optimizador) ademas de los pesos finales. No hay evidencia publica de evaluacion comparativa ni de uso en produccion.
 
@@ -93,14 +93,14 @@ La comparacion de rendimiento no es posible: no existen resultados publicados pa
 - Sesgos desconocidos: al no documentarse el corpus, no es posible evaluar sesgos de genero, raza, ideologia o geograficos introducidos por el entrenamiento.
 - Riesgo de alucinacion: no cuantificado; sin evaluaciones de veracidad, debe asumirse un riesgo equivalente o superior al del modelo base.
 - Repositorio de 465,8 GB: la descarga completa es costosa en ancho de banda y almacenamiento, y no esta claro que todos los ficheros sean necesarios para inferencia.
-- Sin pipeline declarado en HuggingFace: la libreria recomienda no usar `pipeline()` directamente con este repositorio.
+- Sin pipeline declarado en Hugging Face: la libreria recomienda no usar `pipeline()` directamente con este repositorio.
 - Sin cuantizaciones oficiales: cualquier despliegue en GPUs de consumo exige generar la cuantizacion por cuenta propia, con el consiguiente riesgo de perdida de calidad no medida.
 - Advertencia de produccion: no se recomienda su uso en sistemas en produccion sin una evaluacion interna exhaustiva y una verificacion juridica de la licencia.
 - Los resultados de la busqueda web realizada no contienen informacion tecnica sobre este modelo; las coincidencias obtenidas corresponden a paginas de soporte de Microsoft sin relacion con el repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ferrazzipietro/Llama-3.1-8B-Instruct-cpt-tesi_all
+- Hugging Face: https://huggingface.co/ferrazzipietro/Llama-3.1-8B-Instruct-cpt-tesi_all
 - Repositorio del modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Paper de Llama 3: no disponible en la informacion proporcionada
 - Blog o documentacion del autor: no disponible

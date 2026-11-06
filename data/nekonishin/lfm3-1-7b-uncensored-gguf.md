@@ -89,7 +89,7 @@ La única comparación con datos medidos es frente al modelo base, que comparte 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nekonishin/LFM3-1.7B-Uncensored-GGUF
+- Hugging Face: https://huggingface.co/nekonishin/LFM3-1.7B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE
 - Atomic Chat: https://atomic.chat/

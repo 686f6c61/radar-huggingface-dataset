@@ -75,7 +75,7 @@ La información proporcionada no incluye la fila de resultados del propio MOSS-T
 
 | Modelo | Parámetros | Contexto / audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MOSS-Transcribe-Diarize 0.9B | ~0,9B | Audio hasta 90 min en una pasada | en, zh declarados; +50 según model card | Apache 2.0 | Pesos abiertos en HuggingFace |
+| MOSS-Transcribe-Diarize 0.9B | ~0,9B | Audio hasta 90 min en una pasada | en, zh declarados; +50 según model card | Apache 2.0 | Pesos abiertos en Hugging Face |
 | Doubao | no disponible | no disponible | no disponible | Propietaria | API comercial |
 | ElevenLabs | no disponible | no disponible | no disponible | Propietaria | API comercial |
 | Gemini 2.5 Pro / 3 Pro | no disponible | no disponible | Multilingüe | Propietaria | API comercial |
@@ -96,8 +96,8 @@ En términos de rendimiento, los datos de la tabla de evaluación muestran que l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sekkit/MOSS-Transcribe-Diarize
-- HuggingFace oficial del equipo: https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize
+- Hugging Face: https://huggingface.co/sekkit/MOSS-Transcribe-Diarize
+- Hugging Face oficial del equipo: https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize
 - GitHub: https://github.com/OpenMOSS/MOSS-Transcribe-Diarize
 - Paper (arXiv): https://arxiv.org/abs/2601.01554
 - Demo (MOSS Playground): https://platform.moss.cn/app/playground/

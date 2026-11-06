@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio AbdullahHedeya/muaalem-model-w2v2bert-384 aloja un modelo publicado en HuggingFace bajo la libreria transformers. La model card asociada es la plantilla automatica que genera la plataforma y no ha sido completada por el autor: todos los campos de descripcion, uso previsto, datos de entrenamiento, hiperparametros y evaluacion figuran como "[More Information Needed]". No hay, por tanto, documentacion tecnica verificable sobre el modelo.
+El repositorio AbdullahHedeya/muaalem-model-w2v2bert-384 aloja un modelo publicado en Hugging Face bajo la libreria transformers. La model card asociada es la plantilla automatica que genera la plataforma y no ha sido completada por el autor: todos los campos de descripcion, uso previsto, datos de entrenamiento, hiperparametros y evaluacion figuran como "[More Information Needed]". No hay, por tanto, documentacion tecnica verificable sobre el modelo.
 
 El identificador del repositorio aporta las unicas pistas disponibles. El fragmento "w2v2bert" es la convencion habitual para designar arquitecturas que combinan un codificador acustico Wav2Vec2 con un codificador de texto tipo BERT, un esquema popularizado por modelos de reconocimiento de habla como w2v-bert. El sufijo "384" coincide con el tamano de representacion oculto tipico de variantes compactas. El termino "muaalem" remite al arabe "mu'allim" (profesor o instructor), lo que sugiere un modelo orientado a evaluacion de pronunciacion o aprendizaje de lengua. Ninguna de estas lecturas esta confirmada por el autor.
 
@@ -31,7 +31,7 @@ El modelo acumula 0 descargas y 0 "likes" y se publico el 4 de octubre de 2026, 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura. La model card no rellena los apartados de "Model Architecture and Objective", "Training Data", "Training Procedure" ni "Training Hyperparameters", y no se enlaza ninguna publicacion, dataset o configuracion de entrenamiento. La unica referencia a un paper en las etiquetas del repositorio es el identificador arXiv 1910.09700, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico; aparece de forma automatica en la plantilla de HuggingFace y no describe el modelo.
+No se ha publicado informacion sobre la arquitectura. La model card no rellena los apartados de "Model Architecture and Objective", "Training Data", "Training Procedure" ni "Training Hyperparameters", y no se enlaza ninguna publicacion, dataset o configuracion de entrenamiento. La unica referencia a un paper en las etiquetas del repositorio es el identificador arXiv 1910.09700, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico; aparece de forma automatica en la plantilla de Hugging Face y no describe el modelo.
 
 Por la nomenclatura cabria esperar una arquitectura hibrida de dos torres: un codificador convolucional y transformer sobre audio (familia Wav2Vec2) seguido o fusionado con un codificador tipo BERT, con una dimension oculta de 384. Es una hipotesis razonable pero no verificada; no se dispone de datos sobre numero de tokens de entrenamiento, composicion del corpus, si hubo ajuste por instrucciones, RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
@@ -72,7 +72,7 @@ No hay datos oficiales de consumo de memoria, latencia ni throughput. A continua
 - VRAM en fp32: no disponible. Si el modelo tuviera del orden de 100 millones de parametros (hipotesis no confirmada a partir del sufijo "384"), la inferencia en fp32 ocuparia aproximadamente 0,4 GB y en fp16 en torno a 0,2 GB, ademas de las activaciones.
 - GPU recomendadas: no disponible. Con la hipotesis anterior, cualquier GPU consumer con 4 GB o mas de VRAM seria suficiente; no habria necesidad de A100 ni H100.
 - Compatibilidad con GPU de consumo: probablemente si en el escenario descrito, pero sin confirmar.
-- Opciones de despliegue: la libreria declarada es transformers, por lo que es esperable compatibilidad con el ecosistema HuggingFace. No hay confirmacion de soporte en vLLM, llama.cpp, Ollama o TGI, y la idoneidad de cada uno depende de la arquitectura real, que se desconoce.
+- Opciones de despliegue: la libreria declarada es transformers, por lo que es esperable compatibilidad con el ecosistema Hugging Face. No hay confirmacion de soporte en vLLM, llama.cpp, Ollama o TGI, y la idoneidad de cada uno depende de la arquitectura real, que se desconoce.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -81,10 +81,10 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AbdullahHedeya/muaalem-model-w2v2bert-384 | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| facebook/w2v-bert-2.0 | Wav2Vec2 + BERT (codificador con atencion) | 580 M | audio, segmentos de hasta 30 s | CC-BY-NC 4.0 | HuggingFace |
-| openai/whisper-large-v3 | Transformer encoder-decoder sobre audio | 1550 M | ventanas de 30 s | Apache 2.0 | HuggingFace |
-| facebook/mms-1b-all | Wav2Vec2 con adaptadores por idioma | 1000 M | audio | CC-BY-NC 4.0 | HuggingFace |
+| AbdullahHedeya/muaalem-model-w2v2bert-384 | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| facebook/w2v-bert-2.0 | Wav2Vec2 + BERT (codificador con atencion) | 580 M | audio, segmentos de hasta 30 s | CC-BY-NC 4.0 | Hugging Face |
+| openai/whisper-large-v3 | Transformer encoder-decoder sobre audio | 1550 M | ventanas de 30 s | Apache 2.0 | Hugging Face |
+| facebook/mms-1b-all | Wav2Vec2 con adaptadores por idioma | 1000 M | audio | CC-BY-NC 4.0 | Hugging Face |
 
 Los datos de los tres modelos de referencia corresponden a sus fichas publicas y se incluyen solo como orientacion; no implican ninguna comparacion de rendimiento con el modelo evaluado.
 
@@ -102,7 +102,7 @@ Los datos de los tres modelos de referencia corresponden a sus fichas publicas y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AbdullahHedeya/muaalem-model-w2v2bert-384
+- Hugging Face: https://huggingface.co/AbdullahHedeya/muaalem-model-w2v2bert-384
 - Paper referenciado en las etiquetas (calculadora de impacto medioambiental, no describe el modelo): https://arxiv.org/abs/1910.09700
 - Documentacion de la libreria transformers: https://huggingface.co/docs/transformers/index
 - Repositorio de referencia de la arquitectura Wav2Vec2-BERT: https://huggingface.co/facebook/w2v-bert-2.0

@@ -30,7 +30,7 @@ Tampoco se documentan los datos de entrenamiento: no hay cifras de tokens, compo
 ## Capacidades
 
 - Generacion de texto conversacional: el tag `conversational` y el pipeline `text-generation` indican uso previsto para dialogo multi-turno.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede servirse a traves de infraestructura compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede servirse a traves de infraestructura compatible con la API de Hugging Face.
 - Ejecucion local con llama.cpp: los archivos estan pensados para `llama-cli`, `llama-server` y el resto del ecosistema llama.cpp.
 - Razonamiento, codigo, matematicas y vision: no disponible en la informacion proporcionada.
 - Tool calling y function calling: no disponible.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Losew/NVIDIA-Nemotron-3.5-Bolt-E4B-heretic-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
+- Repositorio Hugging Face: https://huggingface.co/Losew/NVIDIA-Nemotron-3.5-Bolt-E4B-heretic-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - GGUF BF16 upstream: https://huggingface.co/grumd0/Nemotron-3.5-Bolt-E4B-Heretic-GGUF
 - Licencia OpenMDW 1.1: https://github.com/OpenMDW/OpenMDW/blob/main/1.1/LICENSE.OpenMDW-1.1

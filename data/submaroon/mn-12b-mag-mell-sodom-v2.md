@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SubMaroon/MN-12B-Mag-Mell-Sodom-v2 es un modelo de lenguaje de 12.247.782.400 parámetros publicado por el usuario SubMaroon en HuggingFace, resultado de una fusión (merge) de pesos generada con la herramienta mergekit. Según los metadatos del repositorio, el modelo se construyó mediante el método TIES tomando como base un modelo denominado Mell y fusionando sobre él un modelo denominado Sodom, con densidad 0,3, peso 0,15 y normalización activada, en precisión float16. La etiqueta `mistral` del repositorio apunta a una arquitectura de la familia Mistral, aunque no se detallan en la información disponible ni la longitud de contexto ni la composición de los datos de entrenamiento originales.
+SubMaroon/MN-12B-Mag-Mell-Sodom-v2 es un modelo de lenguaje de 12.247.782.400 parámetros publicado por el usuario SubMaroon en Hugging Face, resultado de una fusión (merge) de pesos generada con la herramienta mergekit. Según los metadatos del repositorio, el modelo se construyó mediante el método TIES tomando como base un modelo denominado Mell y fusionando sobre él un modelo denominado Sodom, con densidad 0,3, peso 0,15 y normalización activada, en precisión float16. La etiqueta `mistral` del repositorio apunta a una arquitectura de la familia Mistral, aunque no se detallan en la información disponible ni la longitud de contexto ni la composición de los datos de entrenamiento originales.
 
 Su relevancia es, sin embargo, fundamentalmente negativa y documental: la propia model card del autor, escrita en inglés, afirma de forma explícita que el modelo "no funciona" ("THIS MODEL ISN'T WORKING"), lo describe como "basura" (junk), pide que no se descargue y aclara que se mantiene publicado únicamente porque no quiere borrarlo y necesita el espacio de almacenamiento para otro proyecto. El repositorio acumula una única descarga y cero "likes" desde su creación el 10 de febrero de 2025, y su tamaño es de 24,5 GB.
 
@@ -37,7 +37,7 @@ La información disponible no permite acreditar ninguna capacidad funcional. El 
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingües: los idiomas soportados figuran como no disponibles.
 - Capacidades especiales (modo "thinking", visión, audio): no documentadas.
-- Compatibilidad de infraestructura: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que el autor previó su despliegue con TGI y con los Inference Endpoints de HuggingFace, lo cual es una declaración de intenciones, no una validación de calidad.
+- Compatibilidad de infraestructura: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que el autor previó su despliegue con TGI y con los Inference Endpoints de Hugging Face, lo cual es una declaración de intenciones, no una validación de calidad.
 
 ## Casos de uso
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPU de datacenter: cabe con holgura en A100 40 GB, A100 80 GB, H100 80 GB y L40S 48 GB.
 - GPU de consumo: no cabe en fp16 en una RTX 4090 o RTX 3090 de 24 GB sin recurrir a *offloading* parcial a CPU o a cuantización. En 8 bits ocuparía aproximadamente 13 GB y en 4 bits unos 7 GB, lo que lo haría viable en GPUs de 16 GB en adelante, pero dichas cuantizaciones no están publicadas y su calidad es indeterminada.
 - Alternativa multi-GPU: 2× RTX 4090 con *tensor parallelism* mediante vLLM, o 2× RTX 3090, asumiendo que el checkpoint sea cargable.
-- Opciones de despliegue: transformers (librería declarada), text-generation-inference (etiqueta presente), vLLM, y los Inference Endpoints de HuggingFace (etiqueta `endpoints_compatible`). llama.cpp u Ollama requerirían una conversión manual a GGUF que no está publicada.
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference (etiqueta presente), vLLM, y los Inference Endpoints de Hugging Face (etiqueta `endpoints_compatible`). llama.cpp u Ollama requerirían una conversión manual a GGUF que no está publicada.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ La diferencia relevante no es de tamaño sino de trazabilidad: las tres alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SubMaroon/MN-12B-Mag-Mell-Sodom-v2
+- Modelo en Hugging Face: https://huggingface.co/SubMaroon/MN-12B-Mag-Mell-Sodom-v2
 - mergekit (herramienta de fusión): https://github.com/cg123/mergekit
 - Paper del método TIES: https://arxiv.org/abs/2306.01708
 - Modelos de origen (Mell, Sodom): no disponibles; la model card los referencia sin espacio de nombres de autor

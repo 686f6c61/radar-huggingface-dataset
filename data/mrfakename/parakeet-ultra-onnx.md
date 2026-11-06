@@ -100,7 +100,7 @@ No se dispone de comparativas de WER ni de latencia frente a estas alternativas 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrfakename/parakeet-ultra-ONNX
+- Repositorio Hugging Face: https://huggingface.co/mrfakename/parakeet-ultra-ONNX
 - Modelo base: https://huggingface.co/moondream/parakeet-ultra
 - Exportacion ONNX de referencia (fp32): https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-onnx
 - Demo Parakeet Redux WebGPU: https://huggingface.co/spaces/mrfakename/parakeet-redux-webgpu

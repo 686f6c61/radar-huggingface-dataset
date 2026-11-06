@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una adaptación por continued pretraining de SmolLM2-135M, el modelo base compacto de HuggingFace, realizada por el usuario chao68681. El entrenamiento adicional se ha llevado a cabo sobre el corpus BNC1994 (British National Corpus, edición 1994), un corpus de inglés británico compuesto por 4.049 documentos XML (3.885 de entrenamiento tras eliminar duplicados exactos). El resultado es un modelo de lenguaje causal de próxima palabra, no un asistente instruido, especializado en la distribución estadística del inglés británico de los años noventa.
+Este modelo es una adaptación por continued pretraining de SmolLM2-135M, el modelo base compacto de Hugging Face, realizada por el usuario chao68681. El entrenamiento adicional se ha llevado a cabo sobre el corpus BNC1994 (British National Corpus, edición 1994), un corpus de inglés británico compuesto por 4.049 documentos XML (3.885 de entrenamiento tras eliminar duplicados exactos). El resultado es un modelo de lenguaje causal de próxima palabra, no un asistente instruido, especializado en la distribución estadística del inglés británico de los años noventa.
 
 El problema que aborda es la especialización de un modelo pequeño en un dominio lingüístico concreto: la variante británica del inglés con rasgos diacrónicos. El proyecto tiene un marcado carácter educativo y experimental: incluye un cuaderno completo de reproducción, historial de entrenamiento, configuración de ejecución y resultados medidos. Es relevante como ejemplo documentado de continued pretraining a pequeña escala, ejecutado íntegramente en una única GPU T4 de Colab.
 
@@ -87,7 +87,7 @@ Frente a su modelo base, esta versión mejora la perplejidad en el dominio BNC19
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chao68681/smollm2-135m-bnc-continued-pretraining
+- Modelo en Hugging Face: https://huggingface.co/chao68681/smollm2-135m-bnc-continued-pretraining
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Cuaderno de entrenamiento (incluido en el repositorio): ./BNC_T4_Continued_Pretraining.ipynb
 - Resultados medidos: ./results.json

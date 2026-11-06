@@ -70,10 +70,10 @@ La tabla de benchmarks anterior ya compara WideCodec con los principales codecs 
 
 | Modelo | Bitrate | Codebooks | UTMOSv2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WideCodec | 0.8 kbps | 1 | 2.788 | Apache 2.0 | HuggingFace (Scicom-intl/WideCodec) |
-| DAC | ~8 kbps | 9 | 2.672 | MIT (original) | HuggingFace (descriptinc/dac) |
-| EnCodec | 24 kbps | RVQ | 2.042 | MIT (original) | HuggingFace (facebook/encodec) |
-| NeMo 44k | ~6-9 kbps | RVQ | 2.903 | Apache 2.0 (NVIDIA) | HuggingFace (nvidia/nemo) |
+| WideCodec | 0.8 kbps | 1 | 2.788 | Apache 2.0 | Hugging Face (Scicom-intl/WideCodec) |
+| DAC | ~8 kbps | 9 | 2.672 | MIT (original) | Hugging Face (descriptinc/dac) |
+| EnCodec | 24 kbps | RVQ | 2.042 | MIT (original) | Hugging Face (facebook/encodec) |
+| NeMo 44k | ~6-9 kbps | RVQ | 2.903 | Apache 2.0 (NVIDIA) | Hugging Face (nvidia/nemo) |
 
 WideCodec ofrece la tasa de bits más baja con una naturalidad superior a DAC y comparable a NeMo, aunque con mayor error espectral (mel-L1 0.571 vs 0.341 de DAC). Su ventaja principal es la compresión extrema, mientras que DAC y NeMo priorizan la fidelidad de reconstrucción.
 
@@ -89,7 +89,7 @@ WideCodec ofrece la tasa de bits más baja con una naturalidad superior a DAC y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Scicom-intl/WideCodec
+- Modelo en Hugging Face: https://huggingface.co/Scicom-intl/WideCodec
 - Modelo base NeuCodec: https://huggingface.co/neuphonic/neucodec
 - Datasets de entrenamiento mencionados:
   - https://huggingface.co/datasets/malaysia-ai/malaysian-podcast-youtube

@@ -89,7 +89,7 @@ No hay otros modelos de decisión especializados comparables con datos publicado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maincode/Matilda-Decision-v1-Mini
+- Modelo en Hugging Face: https://huggingface.co/Maincode/Matilda-Decision-v1-Mini
 - Modelo hermano mayor (Matilda Decision v1, 27B): https://huggingface.co/Maincode/matilda-decision-v1
 - Modelo base (Qwen3.5-4B): https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia Apache-2.0: https://huggingface.co/Maincode/Matilda-Decision-v1-Mini/blob/main/LICENSE

@@ -99,9 +99,9 @@ No hay datos de rendimiento que permitan comparar estos modelos con Phi4_attn_re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robinzixuan/Phi4_attn_residual
+- Modelo en Hugging Face: https://huggingface.co/robinzixuan/Phi4_attn_residual
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
-- Phi-4 en HuggingFace: https://huggingface.co/microsoft/phi-4
+- Phi-4 en Hugging Face: https://huggingface.co/microsoft/phi-4
 - Articulo de Attention Residuals (AttnRes): https://arxiv.org/abs/2603.15031
 - Repositorio oficial de Attention Residuals: https://github.com/MoonshotAI/Attention-Residuals
 - Informe tecnico de Phi-4: https://arxiv.org/html/2412.08905v1

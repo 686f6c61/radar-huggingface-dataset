@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ALBEF baseline es un repositorio experimental publicado por el usuario Ptaylor1987 en HuggingFace que contiene una implementación propia de la arquitectura ALBEF (Align before Fuse) orientada a tareas multitarea. El repositorio no es un modelo entrenado, sino un esqueleto de código con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El autor lo presenta explícitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+ALBEF baseline es un repositorio experimental publicado por el usuario Ptaylor1987 en Hugging Face que contiene una implementación propia de la arquitectura ALBEF (Align before Fuse) orientada a tareas multitarea. El repositorio no es un modelo entrenado, sino un esqueleto de código con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El autor lo presenta explícitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 La arquitectura declarada sigue el esquema ALBEF clásico de fusión visión-lenguaje: atención multi-query, fusión bilineal, activación ReLU y normalización por batch. La escala indicada es "huge", aunque el recuento real de parámetros del checkpoint safetensors es de 24.832 parámetros, un valor que no se corresponde con un transformer de gran tamaño y que sugiere un modelo de juguete o una inicialización mínima.
 
@@ -42,7 +42,7 @@ No se ha realizado entrenamiento. El autor indica que `model.safetensors` es un 
 - Pruebas de humo de pipelines de entrenamiento: el checkpoint de inicialización permite validar que el flujo de carga de pesos, el script `predict.py` y la configuración `config.json` funcionan correctamente antes de invertir cómputo en un entrenamiento real.
 - Reproducción de experimentos académicos: un investigador puede partir de esta implementación para comparar variantes de fusión bilineal o de atención multi-query con las mismas condiciones de datos, presupuesto de ajuste y semillas aleatorias, siguiendo la guía de evaluación del autor.
 - Docencia y formación: el código y la configuración permiten ilustrar cómo se estructura un modelo multimodal con fusión bilineal y normalización por batch en PyTorch.
-- Base para adaptadores personalizados: dado que el autor advierte que las APIs genéricas de carga automática requieren un adaptador explícito, el repositorio puede usarse para practicar la integración de implementaciones custom en HuggingFace Transformers.
+- Base para adaptadores personalizados: dado que el autor advierte que las APIs genéricas de carga automática requieren un adaptador explícito, el repositorio puede usarse para practicar la integración de implementaciones custom en Hugging Face Transformers.
 - Punto de partida para fine-tuning específico de tarea: una vez validado el esqueleto, se podría entrenar sobre un conjunto retenido específico de la tarea y reportar la métrica con al menos tres semillas, como recomienda el autor.
 
 ## Benchmarks y rendimiento
@@ -73,11 +73,11 @@ No se dispone de datos verificados de los modelos comparables dentro de la infor
 - No ha sido auditado para robustez, equidad ni transferencia de dominio, según advierte el propio autor.
 - No se han publicado benchmarks ni métricas de evaluación.
 - El recuento de 24.832 parámetros es incompatible con un modelo "huge" real; probablemente se trata de una inicialización mínima o de un modelo de juguete.
-- Las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito, lo que complica su integración directa.
+- Las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito, lo que complica su integración directa.
 - No hay información sobre sesgos, riesgo de alucinación, limitaciones de contexto o idioma, ya que el modelo no está entrenado.
 - La licencia Apache 2.0 permite uso comercial del código, pero el autor recomienda revisar por separado los términos de los datos de origen si se usa con datasets externos.
 - Cualquier resultado de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos en este repositorio.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ptaylor1987/albef-baseline
+- Repositorio Hugging Face: https://huggingface.co/Ptaylor1987/albef-baseline

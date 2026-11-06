@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrada | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| MI-GAN (incluido) | no disponible | cualquier resolucion | MIT | ONNX | HuggingFace (`andraniksargsyan/migan`) |
-| LaMa (incluido) | no disponible | 512x512 fija | Apache 2.0 | ONNX | HuggingFace (`Carve/LaMa-ONNX`) |
+| MI-GAN (incluido) | no disponible | cualquier resolucion | MIT | ONNX | Hugging Face (`andraniksargsyan/migan`) |
+| LaMa (incluido) | no disponible | 512x512 fija | Apache 2.0 | ONNX | Hugging Face (`Carve/LaMa-ONNX`) |
 | Otros modelos de inpainting | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre alternativas en la informacion proporcionada.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre alternativas en la infor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ravetools/watermark-remover
+- Repositorio Hugging Face: https://huggingface.co/ravetools/watermark-remover
 - Herramienta Watermark Remover: https://rave-tools.com/tools/watermark-remover
 - MI-GAN (repositorio original): https://github.com/Picsart-AI-Research/MI-GAN
 - MI-GAN (pesos upstream): https://huggingface.co/andraniksargsyan/migan

@@ -75,7 +75,7 @@ La informacion proporcionada no incluye datos de benchmarks ni especificaciones 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Travor278/pi05-scan-object-right-first-peer-lora-10k-e167` | no disponible | no disponible | `scan-object-right-first` (tarea unica) | no disponible | JAX/Orbax | HuggingFace, 0 descargas |
+| `Travor278/pi05-scan-object-right-first-peer-lora-10k-e167` | no disponible | no disponible | `scan-object-right-first` (tarea unica) | no disponible | JAX/Orbax | Hugging Face, 0 descargas |
 | Modelo base de la familia pi0.5 (OpenPI) | no disponible en la informacion | no disponible | VLA de proposito general | no disponible en la informacion | no disponible en la informacion | repositorio OpenPI del proyecto |
 | Otros checkpoints "peer" de la serie Sim12 | no disponible | no disponible | tareas especificas de la serie | no disponible | JAX/Orbax | presumiblemente en el mismo perfil de autor, no confirmado |
 | Alternativas VLA de terceros (por ejemplo, familias tipo OpenVLA o RT-2) | no disponible | no disponible | manipulacion general | no disponible | no disponible | no verificado en la informacion proporcionada |
@@ -99,7 +99,7 @@ La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Travor278/pi05-scan-object-right-first-peer-lora-10k-e167
+- Repositorio Hugging Face: https://huggingface.co/Travor278/pi05-scan-object-right-first-peer-lora-10k-e167
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-scan-object-right-first-20260911
 - Registro de evaluacion en SwanLab: https://swanlab.cn/@Travor/CTR-PI05-LoRA10k
 - Proyecto OpenPI (runtime requerido, referenciado en la model card): no se proporciona URL en la informacion disponible

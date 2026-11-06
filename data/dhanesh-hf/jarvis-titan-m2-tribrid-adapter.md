@@ -82,8 +82,8 @@ No se han identificado en la informacion proporcionada modelos publicos directam
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jarvis-Titan-M2-TriBrid-Adapter | 90,04 M (adaptador) | Evaluado hasta 32K | Autoinformado en la model card | Apache 2.0 | HuggingFace (0 descargas) |
-| Jarvis-Titan-V14-MoE-Merged (modelo base) | no disponible (etiquetado como 14,8 B) | no disponible | no disponible | no disponible | HuggingFace (referenciado como base_model, no analizado) |
+| Jarvis-Titan-M2-TriBrid-Adapter | 90,04 M (adaptador) | Evaluado hasta 32K | Autoinformado en la model card | Apache 2.0 | Hugging Face (0 descargas) |
+| Jarvis-Titan-V14-MoE-Merged (modelo base) | no disponible (etiquetado como 14,8 B) | no disponible | no disponible | no disponible | Hugging Face (referenciado como base_model, no analizado) |
 | Alternativas equivalentes de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No se han identificado en la informacion proporcionada modelos publicos directam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhanesh-hf/Jarvis-Titan-M2-TriBrid-Adapter
+- Modelo en Hugging Face: https://huggingface.co/dhanesh-hf/Jarvis-Titan-M2-TriBrid-Adapter
 - Modelo base referenciado: https://huggingface.co/dhanesh-hf/Jarvis-Titan-V14-MoE-Merged
 - Los resultados de busqueda web proporcionados no contienen informacion relacionada con el modelo: unicamente devuelven paginas del portal Zhihu (zhihu.com) sin conexion con la ficha.
 - No se han encontrado en la informacion disponible papers, blogs, repositorios ni demos adicionales asociados al modelo.

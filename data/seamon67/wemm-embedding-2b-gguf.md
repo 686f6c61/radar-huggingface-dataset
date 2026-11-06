@@ -4,7 +4,7 @@
 
 WeMM-Embedding-2B-GGUF es la conversión a formato GGUF del modelo de embeddings multimodales tencent/WeMM-Embedding-2B, publicada por el usuario seamon67. El modelo original lo desarrolla Tencent y está construido sobre Qwen3.5; acepta texto, imágenes, vídeos, documentos visuales y entradas multimodales intercaladas, y devuelve un vector de 2048 dimensiones normalizado en L2. No es un modelo generativo: su pipeline es `feature-extraction`, es decir, produce representaciones vectoriales para búsqueda, recuperación y clasificación, no texto.
 
-La relevancia de esta conversión concreta es que traslada un modelo de embeddings multimodal de 2B parámetros al ecosistema llama.cpp (release b10269 modificada), lo que permite ejecutarlo en CPU o GPU de gama media sin depender del stack de Transformers. El repositorio ocupa 2,7 GB, admite embeddings Matryoshka (MRL) y declara soporte de chino e inglés, con licencia apache-2.0 según los metadatos de HuggingFace (la model card declara `license: other` con `license_name: apache-2.0`).
+La relevancia de esta conversión concreta es que traslada un modelo de embeddings multimodal de 2B parámetros al ecosistema llama.cpp (release b10269 modificada), lo que permite ejecutarlo en CPU o GPU de gama media sin depender del stack de Transformers. El repositorio ocupa 2,7 GB, admite embeddings Matryoshka (MRL) y declara soporte de chino e inglés, con licencia apache-2.0 según los metadatos de Hugging Face (la model card declara `license: other` con `license_name: apache-2.0`).
 
 En la evaluación MMEB-v2 sobre 78 conjuntos de datos, la variante de 2B alcanza un promedio de 77,9 (79,6 en imagen, 70,8 en vídeo y 80,7 en documentos visuales), por delante de alternativas del mismo tamaño como Qwen3-VL-Embedding 2B (73,2) o DME-Small 2B (74,8). El repositorio GGUF no tiene descargas ni valoraciones en el momento de la consulta y no se detallan los niveles de cuantización incluidos.
 
@@ -89,10 +89,10 @@ Notas: la información extraída de la model card se trunca en la fila de 9B, po
 
 | Modelo | Parámetros | Contexto | MMEB-v2 (AVG) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| WeMM-Embedding (este modelo, vía GGUF) | 2B | No disponible | 77,9 (pesos originales) | apache-2.0 según metadatos; `other` con `license_name: apache-2.0` en la model card | GGUF en HuggingFace, 0 descargas |
-| Qwen3-VL-Embedding | 2B | No disponible | 73,2 | No disponible | Pesos originales en HuggingFace |
-| DME-Small† | 2B | No disponible | 74,8 | No disponible | Pesos originales en HuggingFace |
-| VLM2Vec-V2 | 2B | No disponible | 59,3 | No disponible | Pesos originales en HuggingFace |
+| WeMM-Embedding (este modelo, vía GGUF) | 2B | No disponible | 77,9 (pesos originales) | apache-2.0 según metadatos; `other` con `license_name: apache-2.0` en la model card | GGUF en Hugging Face, 0 descargas |
+| Qwen3-VL-Embedding | 2B | No disponible | 73,2 | No disponible | Pesos originales en Hugging Face |
+| DME-Small† | 2B | No disponible | 74,8 | No disponible | Pesos originales en Hugging Face |
+| VLM2Vec-V2 | 2B | No disponible | 59,3 | No disponible | Pesos originales en Hugging Face |
 
 La ventaja de WeMM-Embedding-2B en este benchmark es de 4,7 puntos sobre Qwen3-VL-Embedding 2B y de 3,1 puntos sobre DME-Small†, con una diferencia especialmente marcada en vídeo (70,8 frente a 61,9 y 65,6 respectivamente). No se dispone de datos de contexto, licencia detallada ni disponibilidad en GGUF para los modelos comparados.
 
@@ -100,7 +100,7 @@ La ventaja de WeMM-Embedding-2B en este benchmark es de 4,7 puntos sobre Qwen3-V
 
 - No genera texto: cualquier expectativa de uso conversacional, tool calling o razonamiento multi-paso es inaplicable. Solo produce vectores.
 - Idiomas: únicamente chino e inglés están declarados. No se documenta el comportamiento en castellano ni en otras lenguas, por lo que su uso en producción en español requeriría validación propia.
-- Ambigüedad de licencia: los metadatos de HuggingFace indican apache-2.0, pero la model card declara `license: other` con `license_name: apache-2.0`. Conviene verificar los términos en el repositorio original de Tencent antes de un uso comercial.
+- Ambigüedad de licencia: los metadatos de Hugging Face indican apache-2.0, pero la model card declara `license: other` con `license_name: apache-2.0`. Conviene verificar los términos en el repositorio original de Tencent antes de un uso comercial.
 - Conversión de terceros: el GGUF lo ha generado el usuario seamon67 con una versión modificada de llama.cpp (b10269). No hay garantía de equivalencia numérica exacta con los pesos originales ni de que los resultados de MMEB-v2 se reproduzcan en esta cuantización.
 - Contexto desconocido: al no publicarse la longitud de contexto, no se puede garantizar el comportamiento con vídeos largos, documentos extensos o entradas intercaladas de gran tamaño.
 - Rendimiento truncado: el truncado Matryoshka a 256 dimensiones conserva el 98,7 % del rendimiento en imagen y vídeo según la model card, pero no se documenta la pérdida en tareas de documento visual ni en recuperación textual.

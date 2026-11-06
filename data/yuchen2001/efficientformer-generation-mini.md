@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Yuchen2001/efficientformer-generation-mini` es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia de una arquitectura EfficientFormer a escala "nano", etiquetada por el autor para tareas de generacion. No se trata de un modelo entrenado ni evaluado: la propia model card indica que `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests), y que no se reclama ninguna puntuacion de benchmark. El repositorio esta pensado como base de codigo para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`Yuchen2001/efficientformer-generation-mini` es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia de una arquitectura EfficientFormer a escala "nano", etiquetada por el autor para tareas de generacion. No se trata de un modelo entrenado ni evaluado: la propia model card indica que `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests), y que no se reclama ninguna puntuacion de benchmark. El repositorio esta pensado como base de codigo para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El peso del repositorio es practicamente nulo (0,0 GB) y el campo de parametros totales de safetensors indica 16.576, un orden de magnitud propio de un modelo de juguete o de un esqueleto de red para validar el pipeline, no de un sistema utilizable en produccion. La arquitectura declarada combina atencion lineal, fusion con puerta (gated fusion), activacion gelu-tanh y normalizacion por instancias (instancenorm), con receta de entrenamiento por defecto basada en RMSProp y un esquema de warmup constante.
 
@@ -75,7 +75,7 @@ No hay modelos comparables identificables en la informacion proporcionada, ya qu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Yuchen2001/efficientformer-generation-mini | 16.576 (segun safetensors) | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, 0 descargas |
+| Yuchen2001/efficientformer-generation-mini | 16.576 (segun safetensors) | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, 0 descargas |
 | EfficientFormer original (familia L) | no disponible | no disponible | no disponible | no disponible | no verificada en esta busqueda |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,6 +94,6 @@ No hay modelos comparables identificables en la informacion proporcionada, ya qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yuchen2001/efficientformer-generation-mini
+- Modelo en Hugging Face: https://huggingface.co/Yuchen2001/efficientformer-generation-mini
 - Archivos incluidos en el repositorio: `train.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles; la busqueda web realizada no devolvio resultados relevantes sobre este modelo.

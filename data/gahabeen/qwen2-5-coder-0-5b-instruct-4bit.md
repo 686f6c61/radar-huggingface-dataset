@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato o cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gahabeen/Qwen2.5-Coder-0.5B-Instruct-4bit | 494.032.768 | No disponible | 4 bits MLX | Apache-2.0 | HuggingFace, 0 descargas y 0 likes en la consulta |
-| Qwen/Qwen2.5-Coder-0.5B-Instruct | 494.032.768 (heredado del modelo base) | No disponible | Precision completa (bf16 o fp16) | Apache-2.0 | HuggingFace, repositorio oficial de Qwen |
-| mlx-community/Qwen2.5-Coder-0.5B-Instruct-4bit | 494.032.768 (heredado) | No disponible | 4 bits MLX, convertido con mlx-lm 0.19.3 | Apache-2.0 | HuggingFace; es el repositorio del que procede la model card copiada |
-| Qwen2.5-Coder-1.5B-Instruct | Aproximadamente 1,5 mil millones segun la denominacion del modelo; cifra exacta no disponible | No disponible | Precision completa | Apache-2.0 | HuggingFace, familia oficial de Qwen |
+| gahabeen/Qwen2.5-Coder-0.5B-Instruct-4bit | 494.032.768 | No disponible | 4 bits MLX | Apache-2.0 | Hugging Face, 0 descargas y 0 likes en la consulta |
+| Qwen/Qwen2.5-Coder-0.5B-Instruct | 494.032.768 (heredado del modelo base) | No disponible | Precision completa (bf16 o fp16) | Apache-2.0 | Hugging Face, repositorio oficial de Qwen |
+| mlx-community/Qwen2.5-Coder-0.5B-Instruct-4bit | 494.032.768 (heredado) | No disponible | 4 bits MLX, convertido con mlx-lm 0.19.3 | Apache-2.0 | Hugging Face; es el repositorio del que procede la model card copiada |
+| Qwen2.5-Coder-1.5B-Instruct | Aproximadamente 1,5 mil millones segun la denominacion del modelo; cifra exacta no disponible | No disponible | Precision completa | Apache-2.0 | Hugging Face, familia oficial de Qwen |
 
 No se dispone de datos de rendimiento comparado entre estas variantes, por lo que la comparacion se limita a parametros, formato, licencia y disponibilidad.
 
@@ -91,10 +91,10 @@ No se dispone de datos de rendimiento comparado entre estas variantes, por lo qu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gahabeen/Qwen2.5-Coder-0.5B-Instruct-4bit
+- Repositorio en Hugging Face: https://huggingface.co/gahabeen/Qwen2.5-Coder-0.5B-Instruct-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - Repositorio MLX de referencia citado en la model card: https://huggingface.co/mlx-community/Qwen2.5-Coder-0.5B-Instruct-4bit
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct/blob/main/LICENSE
 - Libreria mlx-lm (necesaria para el ejemplo de uso): https://github.com/ml-explore/mlx-lm
 
-Nota: la busqueda web realizada no ha devuelto ningun resultado tecnico relevante sobre este modelo; los unicos enlaces utilizables son los procedentes de la informacion de HuggingFace y de la model card.
+Nota: la busqueda web realizada no ha devuelto ningun resultado tecnico relevante sobre este modelo; los unicos enlaces utilizables son los procedentes de la informacion de Hugging Face y de la model card.

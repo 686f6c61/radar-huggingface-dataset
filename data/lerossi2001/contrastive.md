@@ -58,14 +58,14 @@ No disponible. No se conocen modelos comparables de la misma categoría (CLIP na
 
 - El checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 - No es apto para uso en producción: carece de capacidades verificadas y de rendimiento demostrado.
-- La implementación es personalizada, por lo que las APIs estándar de HuggingFace pueden no funcionar sin un adaptador.
+- La implementación es personalizada, por lo que las APIs estándar de Hugging Face pueden no funcionar sin un adaptador.
 - La licencia BSD-3 permite uso comercial, pero el modelo no ofrece utilidad práctica sin entrenamiento.
 - Los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto incluidos.
 - No se especifican sesgos conocidos, pero al no estar entrenado, no se puede evaluar su comportamiento.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lerossi2001/contrastive
+- Repositorio en Hugging Face: https://huggingface.co/lerossi2001/contrastive
 - Referencia general sobre CLIP (OpenAI): https://github.com/openai/CLIP
 - Referencia general sobre contrastive learning (survey): https://www.sciencedirect.com/science/article/pii/S0925231224014164
 - Paper de Supervised Contrastive Learning: https://arxiv.org/abs/2004.11362

@@ -99,9 +99,9 @@ vllm serve Launch80/Qwopus3.8-27B-Coder-Flash-Int4-baked \
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwopus3.8-27B-Coder-Flash-Int4-baked (este) | ~27,8 B | 262.144 | GPTQ INT4 g128, head y MTP horneados | Apache 2.0 | HuggingFace, servible en vLLM XPU/CUDA |
-| Jackrong/Qwopus3.8-27B-Coder-Flash (base BF16) | ~27,8 B | 262.144 | BF16 | Apache 2.0 | HuggingFace; requiere ~55 GB en BF16 |
-| GGUF Q4_K_M de Jackrong | ~27,8 B | 262.144 (según runtime) | GGUF Q4_K_M | Apache 2.0 | HuggingFace; comparación KLD pendiente (T6) |
+| Qwopus3.8-27B-Coder-Flash-Int4-baked (este) | ~27,8 B | 262.144 | GPTQ INT4 g128, head y MTP horneados | Apache 2.0 | Hugging Face, servible en vLLM XPU/CUDA |
+| Jackrong/Qwopus3.8-27B-Coder-Flash (base BF16) | ~27,8 B | 262.144 | BF16 | Apache 2.0 | Hugging Face; requiere ~55 GB en BF16 |
+| GGUF Q4_K_M de Jackrong | ~27,8 B | 262.144 (según runtime) | GGUF Q4_K_M | Apache 2.0 | Hugging Face; comparación KLD pendiente (T6) |
 
 No se dispone de datos de benchmarks de los modelos alternativos en la información proporcionada, por lo que la comparación de rendimiento se limita a las métricas de degradación frente a BF16 ya tabuladas.
 
@@ -121,7 +121,7 @@ No se dispone de datos de benchmarks de los modelos alternativos en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Launch80/Qwopus3.8-27B-Coder-Flash-Int4-baked
+- Modelo en Hugging Face: https://huggingface.co/Launch80/Qwopus3.8-27B-Coder-Flash-Int4-baked
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash
 - Estudio completo de la cuantización: https://launch80.com/blog/qwopus-coder-int4-bake-study
 - Informe de calidad pre-registrado: https://launch80.com/a/123a9c0b-5fba-40e4-b5ad-8033ed77e408

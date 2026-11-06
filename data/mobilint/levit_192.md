@@ -29,7 +29,7 @@ Su relevancia es acotada y muy específica: sirve como pieza de validación de l
 | SHA-256 del artefacto | `d88f34406db68daea5951e9d55543ade06006a1903e150392e4148223c1d9bd8` |
 | SHA-256 de contenido | `e9e602943ca11190a0d34a8d9341f03da2491be85f898cf6f18b9e238b4717f1` |
 | Identificador de intento | `LeViT_192-jinman-20261017t181322-fbb1a` |
-| Tamaño del repositorio | 0.0 GB según HuggingFace; el binario declarado ocupa unos 13,6 MiB |
+| Tamaño del repositorio | 0.0 GB según Hugging Face; el binario declarado ocupa unos 13,6 MiB |
 
 ## Arquitectura y entrenamiento
 
@@ -108,7 +108,7 @@ No se dispone de datos suficientes en la información proporcionada para una com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mobilint/LeViT_192
+- Modelo en Hugging Face: https://huggingface.co/mobilint/LeViT_192
 - Carpeta de origen en el catálogo arxiv de mobilint: https://github.com/mobilint/mblt-model-arxiv/tree/main/models/image_classification/LeViT_192
 - Paper original de LeViT: https://arxiv.org/abs/2104.01136
 - Repositorio de referencia de LeViT: https://github.com/facebookresearch/LeViT

@@ -73,7 +73,7 @@ No se dispone de comparativas directas con otros modelos draft en la informació
 
 | Modelo | Método | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Solar-Open2-250B-DSpark | DSpark (bloques, rejection sampling) | ~1,95B | no disponible | Upstage Solar License | HuggingFace |
+| Solar-Open2-250B-DSpark | DSpark (bloques, rejection sampling) | ~1,95B | no disponible | Upstage Solar License | Hugging Face |
 | EAGLE (draft models genéricos) | Autoregresivo con features | ~1B-3B | depende del modelo base | MIT (para el código) | GitHub |
 | Medusa (draft heads) | Cabezas de decodificación paralela | ~0,1-0,5B (heads) | depende del modelo base | Apache 2.0 | GitHub |
 
@@ -91,7 +91,7 @@ La diferencia clave es que DSpark genera bloques completos en lugar de token a t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vessl/Solar-Open2-250B-DSpark
+- Modelo en Hugging Face: https://huggingface.co/vessl/Solar-Open2-250B-DSpark
 - Modelo objetivo (W4A8): https://huggingface.co/vessl/Solar-Open2-250B-W4A8
 - Modelo base original (Solar-Open2-250B): https://huggingface.co/upstage/Solar-Open2-250B
 - Licencia Upstage Solar: https://huggingface.co/upstage/Solar-Open2-250B/blob/main/LICENSE

@@ -94,7 +94,7 @@ La comparativa se limita a las variantes del mismo modelo base porque no se disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HamboneLabs-AI/Qwen3.8-Flash-Next-uint3-g64
+- Modelo en Hugging Face: https://huggingface.co/HamboneLabs-AI/Qwen3.8-Flash-Next-uint3-g64
 - Modelo base Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Receta vLLM del modelo base: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next

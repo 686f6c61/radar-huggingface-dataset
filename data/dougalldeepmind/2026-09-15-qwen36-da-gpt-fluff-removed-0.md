@@ -72,7 +72,7 @@ No disponible. La informacion proporcionada no permite identificar alternativas 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador LoRA (base declarado Qwen/Qwen3.6-27B) | 27B en el base, segun su denominacion; adaptador r=64 | Entrenado a 8192 tokens; contexto del base no disponible | No disponible | No disponible | HuggingFace, 0 descargas, 0 valoraciones |
+| Este adaptador LoRA (base declarado Qwen/Qwen3.6-27B) | 27B en el base, segun su denominacion; adaptador r=64 | Entrenado a 8192 tokens; contexto del base no disponible | No disponible | No disponible | Hugging Face, 0 descargas, 0 valoraciones |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No disponible. La informacion proporcionada no permite identificar alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dougalldeepmind/2026-09-15-qwen36-da-gpt-fluff-removed-0
+- Modelo en Hugging Face: https://huggingface.co/dougalldeepmind/2026-09-15-qwen36-da-gpt-fluff-removed-0
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.6-27B (revision `6a9e13bd6fc8f0983b9b99948120bc37f49c13e9`)
 - Dataset de mezcla de entrenamiento: https://huggingface.co/datasets/dougalldeepmind/2026-09-15-da-gpt-fluff-removed-7-mix (revision `5444733e6cd26222516cae093c33cd332822c7b2`, archivo `mixture.jsonl`)
 - Repositorio de codigo fuente: https://github.com/Matthew-Bozoukov/teaching_claude_why_replication.git (commit `9a7d93b3e443b533e81098ba31d6b87149f5fce9`)

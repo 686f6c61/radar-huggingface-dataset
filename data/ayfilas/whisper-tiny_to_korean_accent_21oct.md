@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`ayfilaS/whisper-tiny_to_korean_accent_21oct` es un ajuste fino (fine-tuning) del modelo `openai/whisper-tiny` de OpenAI para reconocimiento automatico del habla (ASR) sobre un corpus denominado `Korean_english`. Lo publica el usuario `ayfilaS` en HuggingFace y se distribuye bajo licencia Apache 2.0. El objetivo declarado, a partir del nombre del repositorio, es adaptar el reconocimiento de ingles al acento coreano, es decir, mejorar la transcripcion de hablantes nativos de coreano que hablan en ingles.
+`ayfilaS/whisper-tiny_to_korean_accent_21oct` es un ajuste fino (fine-tuning) del modelo `openai/whisper-tiny` de OpenAI para reconocimiento automatico del habla (ASR) sobre un corpus denominado `Korean_english`. Lo publica el usuario `ayfilaS` en Hugging Face y se distribuye bajo licencia Apache 2.0. El objetivo declarado, a partir del nombre del repositorio, es adaptar el reconocimiento de ingles al acento coreano, es decir, mejorar la transcripcion de hablantes nativos de coreano que hablan en ingles.
 
 Tecnicamente es un transformer encoder-decoder de tipo Whisper, con 37.760.640 parametros totales (unos 37,8 millones), lo que lo situa en la gama mas ligera de la familia Whisper. Procesa audio en ventanas de 30 segundos y trabaja con vocabulario y tokenizador de Whisper. El repositorio ocupa 0,3 GB e incluye pesos en formato safetensors, ademas de estar preparado para `transformers`.
 
-Su relevancia practica es limitada pero concreta: sirve como ejemplo de adaptacion de dominio y de acento sobre un modelo muy pequeno, con un coste de inferencia minimo (cabe en CPU y en cualquier GPU consumer). Conviene tener en cuenta que la model card esta generada automaticamente por el `Trainer` de HuggingFace y no documenta ni la composicion del dataset, ni los usos previstos, ni las limitaciones; el unico dato de rendimiento es un WER de 9,2547 marcado como no verificado.
+Su relevancia practica es limitada pero concreta: sirve como ejemplo de adaptacion de dominio y de acento sobre un modelo muy pequeno, con un coste de inferencia minimo (cabe en CPU y en cualquier GPU consumer). Conviene tener en cuenta que la model card esta generada automaticamente por el `Trainer` de Hugging Face y no documenta ni la composicion del dataset, ni los usos previstos, ni las limitaciones; el unico dato de rendimiento es un WER de 9,2547 marcado como no verificado.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Su relevancia practica es limitada pero concreta: sirve como ejemplo de adaptaci
 
 La arquitectura es la de Whisper en su variante tiny: un encoder que consume espectrogramas log-Mel de 80 canales sobre ventanas de 30 segundos y un decoder autoregresivo que genera tokens de transcripcion, con mecanismos de atencion multi-cabeza estandar y embeddings posicionales sinusoidales. No hay innovaciones arquitectonicas propias respecto al modelo base: el repositorio es un fine-tuning, no una variante estructural. El checkpoint parte de `openai/whisper-tiny` y conserva su tokenizador y su vocabulario multilingue.
 
-El entrenamiento se realizo con el `Trainer` de HuggingFace sobre el dataset `Korean_english`, cuya composicion, tamano y procedencia no se documentan en la model card. Los hiperparametros publicados son: learning rate 1e-5, batch de entrenamiento 2, batch de evaluacion 1, semilla 42, optimizador AdamW (variante `torch_fused`, betas 0,9 y 0,999, epsilon 1e-8), scheduler lineal con 500 pasos de warmup y 2000 pasos totales, lo que equivale a aproximadamente 2,03 epochs. No se menciona el uso de RLHF, DPO ni tecnicas de decodificacion especulativa. La perdida de validacion final fue 0,1876 (0,2020 en el paso 1000) y la de entrenamiento 0,0690 en el ultimo checkpoint. Las versiones de framework declaradas son Transformers 5.21.0.dev0, PyTorch 2.11.0+cu130, Datasets 5.1.0 y Tokenizers 0.23.3, lo que implica que la reproducibilidad exacta requiere un entorno bastante especifico.
+El entrenamiento se realizo con el `Trainer` de Hugging Face sobre el dataset `Korean_english`, cuya composicion, tamano y procedencia no se documentan en la model card. Los hiperparametros publicados son: learning rate 1e-5, batch de entrenamiento 2, batch de evaluacion 1, semilla 42, optimizador AdamW (variante `torch_fused`, betas 0,9 y 0,999, epsilon 1e-8), scheduler lineal con 500 pasos de warmup y 2000 pasos totales, lo que equivale a aproximadamente 2,03 epochs. No se menciona el uso de RLHF, DPO ni tecnicas de decodificacion especulativa. La perdida de validacion final fue 0,1876 (0,2020 en el paso 1000) y la de entrenamiento 0,0690 en el ultimo checkpoint. Las versiones de framework declaradas son Transformers 5.21.0.dev0, PyTorch 2.11.0+cu130, Datasets 5.1.0 y Tokenizers 0.23.3, lo que implica que la reproducibilidad exacta requiere un entorno bastante especifico.
 
 ## Capacidades
 
@@ -100,7 +100,7 @@ La comparacion cuantitativa de WER no es posible con los datos disponibles: el a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ayfilaS/whisper-tiny_to_korean_accent_21oct
+- Hugging Face: https://huggingface.co/ayfilaS/whisper-tiny_to_korean_accent_21oct
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

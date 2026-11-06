@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CellLucid es un conjunto de activos para el modelado interpretable de temas (topic modeling) sobre atlas de celula unica, orientado a la consulta en lenguaje natural de datos transcriptomicos. No es un modelo de lenguaje generativo al uso, sino un sistema que describe cada celula como una mezcla de 128 programas genicos (topicos) sobre un espacio de embeddings congelado. Lo desarrolla kaichenxu y se distribuye a traves de HuggingFace con la libreria propia `celllucid`.
+CellLucid es un conjunto de activos para el modelado interpretable de temas (topic modeling) sobre atlas de celula unica, orientado a la consulta en lenguaje natural de datos transcriptomicos. No es un modelo de lenguaje generativo al uso, sino un sistema que describe cada celula como una mezcla de 128 programas genicos (topicos) sobre un espacio de embeddings congelado. Lo desarrolla kaichenxu y se distribuye a traves de Hugging Face con la libreria propia `celllucid`.
 
 El sistema se apoya en TranscriptFormer (TF-Sapiens), un backbone desarrollado por el Chan Zuckerberg Initiative que se redistribuye sin modificar y permanece congelado durante todo el proceso. Sobre esas representaciones, CellLucid entrena dos bancos de topicos (128 topicos cada uno) a partir de 7,5 millones de celulas procedentes de 22 estudios del Human Cell Atlas, reservando cinco estudios adicionales para evaluacion.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CellLucid | no disponible | no disponible | Topicos interpretables sobre backbone congelado | GPL-3.0 (codigo y topicos), MIT (backbone) | HuggingFace + GitHub |
+| CellLucid | no disponible | no disponible | Topicos interpretables sobre backbone congelado | GPL-3.0 (codigo y topicos), MIT (backbone) | Hugging Face + GitHub |
 | TranscriptFormer (TF-Sapiens) | no disponible | no disponible | Modelo generative de celula unica | MIT | GitHub CZI + S3 |
 | Alternativas de topic modeling de celula unica | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre CellLucid y otras aproxi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kaichenxu/CellLucid
+- Hugging Face: https://huggingface.co/kaichenxu/CellLucid
 - Repositorio CellLucid: https://github.com/Catchxu/CellLucid
 - Uso de CellLucid: https://github.com/Catchxu/CellLucid#usage
 - TranscriptFormer (CZI): https://github.com/czi-ai/transcriptformer

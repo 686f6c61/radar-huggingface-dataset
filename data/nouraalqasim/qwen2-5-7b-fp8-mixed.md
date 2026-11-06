@@ -60,9 +60,9 @@ No se dispone de información comparativa en la documentación proporcionada. Co
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen2.5-7B-Instruct (original) | 7,6B | 128k | FP16 | Apache 2.0 | HuggingFace |
-| NouraAlqasim/qwen2.5-7b-fp8-mixed | 7,6B | no disponible | FP8 (W8A8) | no disponible | HuggingFace |
-| Otras cuantizaciones GGUF de Qwen2.5-7B | 7,6B | 128k | GGUF (varios bits) | Apache 2.0 | HuggingFace |
+| Qwen/Qwen2.5-7B-Instruct (original) | 7,6B | 128k | FP16 | Apache 2.0 | Hugging Face |
+| NouraAlqasim/qwen2.5-7b-fp8-mixed | 7,6B | no disponible | FP8 (W8A8) | no disponible | Hugging Face |
+| Otras cuantizaciones GGUF de Qwen2.5-7B | 7,6B | 128k | GGUF (varios bits) | Apache 2.0 | Hugging Face |
 
 La ventaja de esta variante es su calibración específica para árabe, ausente en las cuantizaciones genéricas. La desventaja es su dependencia de vLLM y la falta de datos de rendimiento.
 
@@ -77,7 +77,7 @@ La ventaja de esta variante es su calibración específica para árabe, ausente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NouraAlqasim/qwen2.5-7b-fp8-mixed
+- Modelo en Hugging Face: https://huggingface.co/NouraAlqasim/qwen2.5-7b-fp8-mixed
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Dataset de calibración: https://huggingface.co/datasets/Almheiri/ArabCulture-Dialogue (revisión `9acd60cbbb4f`)
 - Documentación de NVIDIA ModelOpt: https://github.com/NVIDIA/TensorRT-Model-Optimizer

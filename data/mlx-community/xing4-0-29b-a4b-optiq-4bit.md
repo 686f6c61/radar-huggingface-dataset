@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento de las alternativas en la informacion prop
 - Dependencia de codigo personalizado: `mlx-lm` no reconoce el tipo `xing4_0`. Sin instalar `mlx-optiq` (version 0.5.13 o superior) el cargador lanza `ValueError: Model type xing4_0 not supported`. Esto complica el despliegue en entornos que solo admiten la libreria estandar.
 - Verificacion de calidad incompleta: no se pudo hacer una comprobacion bit a bit contra el modelo padre en bf16 por falta de memoria en la maquina de conversion. La validacion se baso en lectura del codigo y generacion de ejemplo.
 - Riesgo de alucinacion: como cualquier modelo de lenguaje de esta escala, puede generar afirmaciones falsas con fluidez, especialmente en dominios especializados y en tareas de recuperacion exacta.
-- Idiomas: la metadatos de HuggingFace marcan los idiomas como no disponibles. El modelo se presenta como conversacional y las pruebas estan en ingles; no hay evidencia documentada de rendimiento multilingue.
+- Idiomas: la metadatos de Hugging Face marcan los idiomas como no disponibles. El modelo se presenta como conversacional y las pruebas estan en ingles; no hay evidencia documentada de rendimiento multilingue.
 - Sesgos: no se documenta ninguna evaluacion de sesgo, toxicidad o alineacion en la informacion proporcionada.
 - Licencia: Apache 2.0, permisiva y apta para uso comercial. Debe conservarse el aviso de licencia y verificar las condiciones del modelo base, que tambien declara Apache 2.0.
 - Adopcion muy baja: 13 descargas y 0 likes en el momento de la consulta, creado y actualizado el 23 de septiembre de 2026. La madurez y el soporte de la comunidad son limitados.
@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento de las alternativas en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/Xing4.0-29B-A4B-OptiQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/Xing4.0-29B-A4B-OptiQ-4bit
 - Modelo base: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B
 - Repositorio GitHub del modelo base: https://github.com/XingChen-AGI/Xing4.0-29B-A4B
 - Toolkit mlx-optiq: https://mlx-optiq.com

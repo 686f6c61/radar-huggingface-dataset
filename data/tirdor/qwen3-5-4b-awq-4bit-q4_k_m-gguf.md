@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tirdor/Qwen3.5-4B-AWQ-4bit-Q4_K_M-GGUF | 4,33 mil millones | no disponible | GGUF Q4_K_M | Apache 2.0 | HuggingFace (0 descargas) |
-| cyankiwi/Qwen3.5-4B-AWQ-4bit (origen) | 4,33 mil millones | no disponible | safetensors AWQ 4 bits | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B (base) | 4,33 mil millones | no disponible | safetensors | Apache 2.0 | HuggingFace |
+| Tirdor/Qwen3.5-4B-AWQ-4bit-Q4_K_M-GGUF | 4,33 mil millones | no disponible | GGUF Q4_K_M | Apache 2.0 | Hugging Face (0 descargas) |
+| cyankiwi/Qwen3.5-4B-AWQ-4bit (origen) | 4,33 mil millones | no disponible | safetensors AWQ 4 bits | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B (base) | 4,33 mil millones | no disponible | safetensors | Apache 2.0 | Hugging Face |
 | Alternativas de otros fabricantes de ~4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparado ni de especificaciones de modelos alternativos de la misma categoría en la información proporcionada; la comparativa se limita a la cadena de derivación del propio modelo.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparado ni de especificaciones de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tirdor/Qwen3.5-4B-AWQ-4bit-Q4_K_M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Tirdor/Qwen3.5-4B-AWQ-4bit-Q4_K_M-GGUF
 - Modelo de origen (AWQ 4 bits): https://huggingface.co/cyankiwi/Qwen3.5-4B-AWQ-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE

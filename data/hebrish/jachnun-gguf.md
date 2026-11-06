@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Jachnun-GGUF es la versión cuantizada en formato GGUF del modelo de reconocimiento automático del habla (ASR) Hebrish/Jachnun, desarrollado por el usuario Hebrish y publicado en HuggingFace. Se trata de un sistema especializado en *code-switching* hebreo-inglés, es decir, en transcribir audio donde el hablante alterna entre ambos idiomas dentro de la misma conversación o incluso de la misma frase, un fenómeno habitual en el entorno tecnológico y académico israelí. Con 617.869.958 parámetros, se sitúa en la gama de 0,6 mil millones, lo que lo hace desplegable en hardware modesto.
+Jachnun-GGUF es la versión cuantizada en formato GGUF del modelo de reconocimiento automático del habla (ASR) Hebrish/Jachnun, desarrollado por el usuario Hebrish y publicado en Hugging Face. Se trata de un sistema especializado en *code-switching* hebreo-inglés, es decir, en transcribir audio donde el hablante alterna entre ambos idiomas dentro de la misma conversación o incluso de la misma frase, un fenómeno habitual en el entorno tecnológico y académico israelí. Con 617.869.958 parámetros, se sitúa en la gama de 0,6 mil millones, lo que lo hace desplegable en hardware modesto.
 
 El modelo se basa en la arquitectura Parakeet con decodificador TDT (*Token-and-Duration Transducer*), una familia de transductores desarrollada por NVIDIA para ASR. La variante GGUF está pensada para ejecutarse con transcribe.cpp, un runtime de inferencia local que permite usar el modelo sin depender de frameworks de deep learning completos ni de servicios en la nube.
 
-Su relevancia actual radica en dos factores: por un lado, cubre un nicho poco atendido como es el ASR bilingüe hebreo-inglés con calidad de producción; por otro, su licencia CC-BY-4.0 permite uso comercial y su empaquetado GGUF facilita el despliegue *on-premise* y en el borde, algo crítico para organizaciones que no pueden enviar audio a APIs externas. El acceso al repositorio está restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos.
+Su relevancia actual radica en dos factores: por un lado, cubre un nicho poco atendido como es el ASR bilingüe hebreo-inglés con calidad de producción; por otro, su licencia CC-BY-4.0 permite uso comercial y su empaquetado GGUF facilita el despliegue *on-premise* y en el borde, algo crítico para organizaciones que no pueden enviar audio a APIs externas. El acceso al repositorio está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ Su relevancia actual radica en dos factores: por un lado, cubre un nicho poco at
 | Licencia | CC-BY-4.0 |
 | Formato de pesos | GGUF (para transcribe.cpp); el modelo base Hebrish/Jachnun se publica en su formato original, no especificado |
 | Pipeline | automatic-speech-recognition |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 218 descargas, 0 likes (a fecha de la información disponible) |
 
 ## Arquitectura y entrenamiento
@@ -53,7 +53,7 @@ La información disponible no detalla el volumen de datos de entrenamiento, la c
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se proporcionan cifras de WER (*word error rate*) sobre conjuntos como Common Voice, FLEURS, el leaderboard Open ASR de HuggingFace ni benchmarks específicos de code-switching hebreo-inglés. Tampoco se documentan métricas de latencia o *real-time factor* (RTF) para el runtime transcribe.cpp.
+No se han publicado resultados de benchmarks en la información disponible. No se proporcionan cifras de WER (*word error rate*) sobre conjuntos como Common Voice, FLEURS, el leaderboard Open ASR de Hugging Face ni benchmarks específicos de code-switching hebreo-inglés. Tampoco se documentan métricas de latencia o *real-time factor* (RTF) para el runtime transcribe.cpp.
 
 ## Requisitos de hardware
 
@@ -82,14 +82,14 @@ La ventaja competitiva de Jachnun-GGUF no es el WER absoluto frente a Whisper la
 - Limitaciones de idioma: el modelo cubre únicamente hebreo e inglés. No debe esperarse comportamiento correcto en árabe, ruso, amhárico u otros idiomas presentes en la población israelí, a pesar de su relevancia demográfica.
 - Sin benchmarks: no existen cifras públicas de WER para este modelo, por lo que cualquier decisión de producción debería ir precedida de una evaluación propia sobre el dominio objetivo (audio telefónico, médico, reuniones, etc.).
 - Licencia CC-BY-4.0: permite uso comercial y obras derivadas, pero exige atribución al autor original. Conviene revisar también las condiciones del modelo base Hebrish/Jachnun, ya que la licencia del derivado no puede ser más permisiva que la del original.
-- Acceso restringido: el repositorio es *gated*, de modo que la automatización de descargas en CI/CD requiere un token de HuggingFace con los permisos aceptados.
+- Acceso restringido: el repositorio es *gated*, de modo que la automatización de descargas en CI/CD requiere un token de Hugging Face con los permisos aceptados.
 - Madurez: con 218 descargas y 0 likes, el modelo no cuenta con una comunidad amplia que haya reportado problemas. No hay garantía de mantenimiento ni de soporte.
 - Runtime: la dependencia de transcribe.cpp limita las opciones de integración frente a ecosistemas más maduros como faster-whisper o NeMo, y no se dispone de información sobre el soporte de *streaming* en tiempo real.
 - Metadatos incompletos: se desconoce la duración máxima de audio por inferencia, el vocabulario del tokenizador y el comportamiento con audio de más de unos minutos sin segmentar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hebrish/Jachnun-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Hebrish/Jachnun-GGUF
 - Modelo base: https://huggingface.co/Hebrish/Jachnun
 - Repositorio de transcribe.cpp: no disponible en la información proporcionada
 - Paper o blog técnico del modelo: no disponible en la información proporcionada

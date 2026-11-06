@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wulanza0423/classification` es un repositorio de HuggingFace que contiene una implementacion propia y compacta de un Tiny Transformer orientado a tareas de clasificacion, escrita en PyTorch. El autor lo publica como material de partida para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados a pequena escala, y la propia model card advierte de forma explicita que la configuracion `base` no es una release preentrenada lista para produccion.
+`wulanza0423/classification` es un repositorio de Hugging Face que contiene una implementacion propia y compacta de un Tiny Transformer orientado a tareas de clasificacion, escrita en PyTorch. El autor lo publica como material de partida para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados a pequena escala, y la propia model card advierte de forma explicita que la configuracion `base` no es una release preentrenada lista para produccion.
 
 El checkpoint distribuido (`model.safetensors`) contiene 49.600 parametros y corresponde a una inicializacion valida, no a un modelo entrenado: la model card indica que no se reclama ninguna puntuacion de benchmark y que los pesos no han sido auditados en robustez, equidad ni transferencia de dominio. Se trata, por tanto, de un esqueleto funcional de arquitectura mas que de un clasificador utilizable tal cual.
 
@@ -45,7 +45,7 @@ En cuanto al entrenamiento, el repositorio incluye un fichero `training_args.jso
 - No se declara soporte de tool calling ni de function calling.
 - No se declara soporte de agentes ni de razonamiento multi-paso.
 - No se declara soporte multilingue ni capacidades de vision, audio o modo de razonamiento explicito.
-- Los pesos se distribuyen en safetensors, un formato adecuado para carga con librerias del ecosistema HuggingFace.
+- Los pesos se distribuyen en safetensors, un formato adecuado para carga con librerias del ecosistema Hugging Face.
 - Al ser una implementacion propia, las APIs genericas de carga automatica requieren un adaptador explicito antes de su uso.
 
 ## Casos de uso
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wulanza0423/classification | 49.600 | no disponible | No (checkpoint de inicializacion) | MIT | HuggingFace, 0 descargas |
-| prajjwal1/bert-tiny | ~4,4 M | 512 tokens | Si (preentrenado y ajustable) | Apache 2.0 | HuggingFace, ampliamente usado |
-| google/bert_uncased_L-2_H-128_A-2 | ~4,4 M | 512 tokens | Si (preentrenado) | Apache 2.0 | HuggingFace |
-| distilbert-base-uncased | ~66 M | 512 tokens | Si (destilado de BERT-base) | Apache 2.0 | HuggingFace |
+| wulanza0423/classification | 49.600 | no disponible | No (checkpoint de inicializacion) | MIT | Hugging Face, 0 descargas |
+| prajjwal1/bert-tiny | ~4,4 M | 512 tokens | Si (preentrenado y ajustable) | Apache 2.0 | Hugging Face, ampliamente usado |
+| google/bert_uncased_L-2_H-128_A-2 | ~4,4 M | 512 tokens | Si (preentrenado) | Apache 2.0 | Hugging Face |
+| distilbert-base-uncased | ~66 M | 512 tokens | Si (destilado de BERT-base) | Apache 2.0 | Hugging Face |
 
 La comparacion relevante es de naturaleza, no de rendimiento: las tres alternativas son encoders preentrenados sobre corpus de texto y listos para ajuste fino, mientras que `wulanza0423/classification` es un esqueleto de arquitectura sin entrenamiento declarado, dos ordenes de magnitud mas pequeno y sin resultados publicados. No hay datos de benchmark que permitan una comparacion cuantitativa.
 
@@ -95,7 +95,7 @@ La comparacion relevante es de naturaleza, no de rendimiento: las tres alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wulanza0423/classification
+- Repositorio en Hugging Face: https://huggingface.co/wulanza0423/classification
 - Fichero de pesos: https://huggingface.co/wulanza0423/classification/blob/main/model.safetensors
 - Script de inferencia: https://huggingface.co/wulanza0423/classification/blob/main/inference.py
 - Configuracion de arquitectura: https://huggingface.co/wulanza0423/classification/blob/main/config.json

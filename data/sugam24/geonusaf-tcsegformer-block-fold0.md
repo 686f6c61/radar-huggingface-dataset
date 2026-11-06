@@ -90,4 +90,4 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace: sugam24/geonusaf-tcsegformer-block-fold0](https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold0)
+- [Hugging Face: sugam24/geonusaf-tcsegformer-block-fold0](https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold0)

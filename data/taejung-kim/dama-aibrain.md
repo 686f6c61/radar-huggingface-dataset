@@ -2,9 +2,9 @@
 
 ## Resumen
 
-dama-aibrain es un modelo multimodal de tipo image-text-to-text publicado por el usuario Taejung-kim en HuggingFace. Se trata de un ajuste fino (finetune) del modelo base unsloth/gemma-4-E2B-it-unsloth-bnb-4bit, perteneciente a la familia Gemma, y está pensado para generación de texto conversacional a partir de entradas que combinan imagen y texto. El repositorio declara 5.123.178.051 parámetros (~5,12 B) según los pesos safetensors y un tamano de repositorio de 10,3 GB.
+dama-aibrain es un modelo multimodal de tipo image-text-to-text publicado por el usuario Taejung-kim en Hugging Face. Se trata de un ajuste fino (finetune) del modelo base unsloth/gemma-4-E2B-it-unsloth-bnb-4bit, perteneciente a la familia Gemma, y está pensado para generación de texto conversacional a partir de entradas que combinan imagen y texto. El repositorio declara 5.123.178.051 parámetros (~5,12 B) según los pesos safetensors y un tamano de repositorio de 10,3 GB.
 
-El modelo se ha entrenado, segun la propia model card, con la libreria Unsloth junto con TRL de HuggingFace, con la afirmacion de un entrenamiento "2x faster". No se aporta informacion sobre el dataset de ajuste, el numero de tokens, la composicion de los datos ni si se aplicaron tecnicas de alineamiento como RLHF o DPO.
+El modelo se ha entrenado, segun la propia model card, con la libreria Unsloth junto con TRL de Hugging Face, con la afirmacion de un entrenamiento "2x faster". No se aporta informacion sobre el dataset de ajuste, el numero de tokens, la composicion de los datos ni si se aplicaron tecnicas de alineamiento como RLHF o DPO.
 
 Su relevancia actual es limitada y hay que contextualizarla: el repositorio acumula 0 descargas y 0 likes, la model card es practicamente una plantilla autogenerada y no se publican resultados de benchmarks. Por tanto, debe considerarse un experimento de ajuste fino de un modelo multimodal pequeno mas que un modelo listo para produccion. La licencia declarada es apache-2.0 y el unico idioma indicado es el ingles.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada y hay que contextualizarla: el repositorio acum
 
 No se detalla la arquitectura en la model card. Los metadatos disponibles (pipeline image-text-to-text, etiqueta gemma4 y modelo base unsloth/gemma-4-E2B-it-unsloth-bnb-4bit) permiten situar el modelo dentro de la familia Gemma en su variante multimodal, con entrada conjunta de imagen y texto y salida de texto. El sufijo "E2B" del modelo base sugiere una variante de tamano efectivo reducido, aunque no se documenta su significado exacto ni el total de parametros del modelo base.
 
-En cuanto al entrenamiento, la unica informacion aportada es que se realizo un ajuste fino sobre el checkpoint base utilizando Unsloth y la libreria TRL de HuggingFace, con una mejora declarada de velocidad de 2x. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la duracion, el hardware empleado ni si hubo fases de RLHF, DPO u otro tipo de alineamiento. Tampoco se describen innovaciones tecnicas propias del autor.
+En cuanto al entrenamiento, la unica informacion aportada es que se realizo un ajuste fino sobre el checkpoint base utilizando Unsloth y la libreria TRL de Hugging Face, con una mejora declarada de velocidad de 2x. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la duracion, el hardware empleado ni si hubo fases de RLHF, DPO u otro tipo de alineamiento. Tampoco se describen innovaciones tecnicas propias del autor.
 
 ## Capacidades
 
@@ -66,8 +66,8 @@ No hay datos suficientes para comparar con alternativas de la misma categoria: n
 
 | Modelo | Parámetros | Contexto | Cuantización del repo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Taejung-kim/dama-aibrain | 5,12 B (safetensors) | No disponible | safetensors (16 bits aprox.) | apache-2.0 | Público en HuggingFace, 0 descargas |
-| unsloth/gemma-4-E2B-it-unsloth-bnb-4bit | No disponible | No disponible | bnb-4bit | No disponible | Modelo base en HuggingFace |
+| Taejung-kim/dama-aibrain | 5,12 B (safetensors) | No disponible | safetensors (16 bits aprox.) | apache-2.0 | Público en Hugging Face, 0 descargas |
+| unsloth/gemma-4-E2B-it-unsloth-bnb-4bit | No disponible | No disponible | bnb-4bit | No disponible | Modelo base en Hugging Face |
 
 Otros modelos comparables de la misma categoria (multimodales de ~5 B): no disponible, ya que no se han facilitado datos que permitan una comparacion rigurosa.
 
@@ -86,9 +86,9 @@ Otros modelos comparables de la misma categoria (multimodales de ~5 B): no dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taejung-kim/dama-aibrain
+- Modelo en Hugging Face: https://huggingface.co/Taejung-kim/dama-aibrain
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Libreria transformers: https://github.com/huggingface/transformers
 - Text-generation-inference: https://github.com/huggingface/text-generation-inference

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Rin247/Qwen3-0.6B-Uncensored-Aquarion-INT4` es una cuantización INT4 *weight-only* del modelo base `Qwen3-0.6B` de Alibaba, publicada por el usuario Rin247 en HuggingFace. Antes de la cuantización, el modelo fue sometido a un proceso de *abliteration* (eliminación de la dirección de rechazo) mediante proyección ortogonal, lo que elimina los mecanismos de negativa a responder contenido considerado sensible o prohibido. El resultado es un modelo de lenguaje pequeño (0,6B parámetros nominales, 375,8M en pesos reales) que ocupa aproximadamente 0,5 GB en disco y puede ejecutarse en entornos con recursos muy limitados.
+El modelo `Rin247/Qwen3-0.6B-Uncensored-Aquarion-INT4` es una cuantización INT4 *weight-only* del modelo base `Qwen3-0.6B` de Alibaba, publicada por el usuario Rin247 en Hugging Face. Antes de la cuantización, el modelo fue sometido a un proceso de *abliteration* (eliminación de la dirección de rechazo) mediante proyección ortogonal, lo que elimina los mecanismos de negativa a responder contenido considerado sensible o prohibido. El resultado es un modelo de lenguaje pequeño (0,6B parámetros nominales, 375,8M en pesos reales) que ocupa aproximadamente 0,5 GB en disco y puede ejecutarse en entornos con recursos muy limitados.
 
 La relevancia de este modelo reside en su doble naturaleza: por un lado, ofrece una versión sin restricciones de un modelo popular (Qwen3), y por otro, presenta una implementación de cuantización INT4 con escalas almacenadas junto a los pesos, lo que facilita su integración en motores de inferencia personalizados. Sin embargo, la ausencia de documentación técnica detallada, licencia explícita y benchmarks publicados limita su uso en entornos de producción serios. Está pensado para experimentación, investigación sobre *abliteration* o aplicaciones donde el tamaño reducido sea crítico.
 
@@ -78,7 +78,7 @@ La cuantización INT4 reduce el tamaño a aproximadamente un tercio del modelo e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rin247/Qwen3-0.6B-Uncensored-Aquarion-INT4
+- Modelo en Hugging Face: https://huggingface.co/Rin247/Qwen3-0.6B-Uncensored-Aquarion-INT4
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Variante uncensored sin cuantizar: https://huggingface.co/s3nh/Qwen3-0.6B-Uncensored
 - Blog sobre abliteration en Qwen3.8-27B: https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration

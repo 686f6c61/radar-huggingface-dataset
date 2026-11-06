@@ -78,9 +78,9 @@ El autor señala que las mayores ganancias por emoción son en happy (+0,18) y s
 
 | Modelo | Tipo | Parametros | Tasa de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| student-v5 (amir0907) | Adaptador sobre emotion2vec_plus_base | 3,18 M (adaptador) | 6,25 Hz | Apache-2.0 (pesos); datos de entrenamiento CC BY-NC-SA | HuggingFace, repo de 0,0 GB |
+| student-v5 (amir0907) | Adaptador sobre emotion2vec_plus_base | 3,18 M (adaptador) | 6,25 Hz | Apache-2.0 (pesos); datos de entrenamiento CC BY-NC-SA | Hugging Face, repo de 0,0 GB |
 | emotion2vec_plus_base (FunASR) | Modelo de representación de voz | No disponible | Hasta 50 Hz | Apache-2.0 | Público en FunASR |
-| Versiones previas student v1-v4 | Adaptadores sobre el mismo backbone | 3,18 M (adaptador) | 6,25 Hz | Apache-2.0 | HuggingFace |
+| Versiones previas student v1-v4 | Adaptadores sobre el mismo backbone | 3,18 M (adaptador) | 6,25 Hz | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks de modelos comparables independientes en la información proporcionada; la única comparación disponible es la del propio autor entre versiones de su módulo.
 
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks de modelos comparables independientes en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amir0907/student-v5
+- Hugging Face: https://huggingface.co/amir0907/student-v5
 - Versión v1: https://huggingface.co/amir0907/student
 - Versión v2: https://huggingface.co/amir0907/student-v2
 - Versión v3: https://huggingface.co/amir0907/student-v3

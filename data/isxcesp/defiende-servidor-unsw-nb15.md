@@ -74,8 +74,8 @@ Matriz de confusión en test: TN 30.288 · FP 6.712 · FN 1.432 · TP 43.900. El
 
 | Modelo | Tipo | Datos | Recall ataque | FPR | Macro-F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Defiende el servidor v2 | HistGradientBoosting (sklearn) | UNSW-NB15 | 0,9522 (val) / 0,9684 (test) | 0,0495 (val) / 0,1814 (test) | 0,9451 (val) / 0,8983 (test) | other (académica) | HuggingFace |
-| Defiende el servidor v1 | Regresión logística (sklearn) | UNSW-NB15 | 0,9887 (val) | 0,1768 (val) | 0,9229 (val) | other (académica) | HuggingFace (revisión anterior) |
+| Defiende el servidor v2 | HistGradientBoosting (sklearn) | UNSW-NB15 | 0,9522 (val) / 0,9684 (test) | 0,0495 (val) / 0,1814 (test) | 0,9451 (val) / 0,8983 (test) | other (académica) | Hugging Face |
+| Defiende el servidor v1 | Regresión logística (sklearn) | UNSW-NB15 | 0,9887 (val) | 0,1768 (val) | 0,9229 (val) | other (académica) | Hugging Face (revisión anterior) |
 | Alternativas de la misma categoría (otros IDS sobre UNSW-NB15) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación disponible en la información proporcionada es interna, entre v1 y v2 del propio autor. No hay datos publicados para contrastar con otros clasificadores de UNSW-NB15.
@@ -94,6 +94,6 @@ La única comparación disponible en la información proporcionada es interna, e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Isxcesp/defiende-servidor-unsw-nb15
+- Modelo en Hugging Face: https://huggingface.co/Isxcesp/defiende-servidor-unsw-nb15
 - Repositorio de código (commit de entrenamiento): https://github.com/isaiasexternado-a11y/defiende-servidor-unsw-nb15/tree/3fd054d7be2c6130d5f9696d859652b24889e647
 - Referencia del dataset: Moustafa, N., & Slay, J. (2015). UNSW-NB15: a comprehensive data set for network intrusion detection systems. MilCIS 2015.

@@ -25,8 +25,8 @@ Su relevancia es principalmente práctica para pruebas de integración, prototip
 | Modelo base | Qwen/Qwen2.5-0.5B-Instruct |
 | Pipeline | text-generation (etiquetado como conversacional/chat) |
 | Tamaño del repositorio | 5,4 GB (suma de todas las cuantizaciones publicadas) |
-| Descargas / likes en HuggingFace | 0 / 0 |
-| Fecha de creación del repositorio | 2026-09-19, según los metadatos de HuggingFace |
+| Descargas / likes en Hugging Face | 0 / 0 |
+| Fecha de creación del repositorio | 2026-09-19, según los metadatos de Hugging Face |
 
 Nota sobre el recuento de parámetros: la diferencia entre los 630.167.424 parámetros de los metadatos de safetensors y los 0,49 B que declara la model card es compatible con que la matriz de embeddings atada se contabilice dos veces en el primero, algo habitual en repositorios con *tied word embeddings*. No se dispone de confirmación oficial de esta explicación.
 
@@ -81,10 +81,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Formatos | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (Qwen2.5-0.5B-Instruct-GGUF, recuantizado) | ~0,49 B (model card) | 32.768 tokens | Apache 2.0 | GGUF (8 niveles de cuantización) | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-0.5B-Instruct (oficial) | ~0,49 B | 32.768 tokens | Apache 2.0 | safetensors y GGUF | HuggingFace, repositorio oficial de Qwen |
-| Qwen2.5-1.5B-Instruct (oficial) | ~1,5 B | 32.768 tokens | Apache 2.0 | safetensors y GGUF | HuggingFace, repositorio oficial de Qwen |
-| SmolLM2-360M-Instruct | ~0,36 B | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace |
+| Este repositorio (Qwen2.5-0.5B-Instruct-GGUF, recuantizado) | ~0,49 B (model card) | 32.768 tokens | Apache 2.0 | GGUF (8 niveles de cuantización) | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-0.5B-Instruct (oficial) | ~0,49 B | 32.768 tokens | Apache 2.0 | safetensors y GGUF | Hugging Face, repositorio oficial de Qwen |
+| Qwen2.5-1.5B-Instruct (oficial) | ~1,5 B | 32.768 tokens | Apache 2.0 | safetensors y GGUF | Hugging Face, repositorio oficial de Qwen |
+| SmolLM2-360M-Instruct | ~0,36 B | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face |
 
 Los datos de los modelos alternativos incluidos en esta tabla no forman parte de la información proporcionada en esta ficha (proceden de fuentes públicas generales) y deben verificarse en sus repositorios oficiales antes de tomar decisiones. No se dispone de comparaciones de rendimiento entre estos modelos porque no hay resultados de benchmarks publicados en la información disponible.
 
@@ -103,7 +103,7 @@ Los datos de los modelos alternativos incluidos en esta tabla no forman parte de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dem0nFighter/Qwen2.5-0.5B-Instruct-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Dem0nFighter/Qwen2.5-0.5B-Instruct-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio GGUF oficial del modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF
 - Licencia referenciada: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF/blob/main/LICENSE

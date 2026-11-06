@@ -1,7 +1,7 @@
 # Spcarvalho/model_581404126_deit_xlarge
 
 ## Resumen
-El modelo `Spcarvalho/model_581404126_deit_xlarge` es una implementación a escala **xlarge** de la arquitectura DeiT (Data-efficient Image Transformers), orientada a tareas **multitarea**. Fue publicado por el usuario Spcarvalho en HuggingFace bajo licencia MIT. La información disponible es muy escasa: la model card describe la arquitectura (atención lineal, fusión mediante concat-MLP, activación GeLU-Tanh, normalización BatchNorm e inicialización Kaiming normal) y el entrenamiento (optimizador Adafactor y scheduler de paso), pero no se proporcionan pesos preentrenados ni métricas de rendimiento.
+El modelo `Spcarvalho/model_581404126_deit_xlarge` es una implementación a escala **xlarge** de la arquitectura DeiT (Data-efficient Image Transformers), orientada a tareas **multitarea**. Fue publicado por el usuario Spcarvalho en Hugging Face bajo licencia MIT. La información disponible es muy escasa: la model card describe la arquitectura (atención lineal, fusión mediante concat-MLP, activación GeLU-Tanh, normalización BatchNorm e inicialización Kaiming normal) y el entrenamiento (optimizador Adafactor y scheduler de paso), pero no se proporcionan pesos preentrenados ni métricas de rendimiento.
 
 El repositorio contiene únicamente un archivo Python (`model_581404126_dei_xlarge.py`), lo que sugiere que se trata de una definición de arquitectura más que de un modelo entrenado con pesos disponibles. No se ha publicado información sobre el conjunto de datos de entrenamiento, el número de parámetros, el contexto de entrada ni resultados de benchmarks. Su relevancia actual es limitada por la falta de documentación y de artefactos utilizables directamente.
 
@@ -51,7 +51,7 @@ No se dispone de información sobre modelos comparables. La arquitectura DeiT cl
 - **Producción**: no se recomienda su uso en entornos productivos sin una validación exhaustiva y sin pesos entrenados.
 
 ## Enlaces
-- [HuggingFace - Spcarvalho/model_581404126_deit_xlarge](https://huggingface.co/Spcarvalho/model_581404126_deit_xlarge)
+- [Hugging Face - Spcarvalho/model_581404126_deit_xlarge](https://huggingface.co/Spcarvalho/model_581404126_deit_xlarge)
 - [GitHub - facebookresearch/deit (repositorio oficial DeiT)](https://github.com/facebookresearch/deit)
 - [GitHub - peternara/deit-Transformers (fork de DeiT)](https://github.com/peternara/deit-Transformers)
-- [Documentación de DeiT en HuggingFace Transformers](https://huggingface.co/docs/transformers/model_doc/deit)
+- [Documentación de DeiT en Hugging Face Transformers](https://huggingface.co/docs/transformers/model_doc/deit)

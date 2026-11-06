@@ -74,7 +74,7 @@ Puertas preregistradas: I1 exactitud de tokens criticos (superada), I2 familia d
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThakiOCR-KOEN-G2M-Preview | 8,93 M | linea de altura 48 px, anchura max. 2048 px | CER 1,11% en validacion real; 94,2% en tokens criticos de simbolos | Apache-2.0 | HuggingFace, vista previa de investigacion |
+| ThakiOCR-KOEN-G2M-Preview | 8,93 M | linea de altura 48 px, anchura max. 2048 px | CER 1,11% en validacion real; 94,2% en tokens criticos de simbolos | Apache-2.0 | Hugging Face, vista previa de investigacion |
 | ThakiOCR-KOEN-V1-Dense (A) | 2,13 M | linea de texto | CER 8,48% en validacion real; 40,2% en tokens criticos | no disponible en la informacion | interno del autor, usado como referencia |
 | S1 (interno del autor) | 2,13 M | linea de texto | CER 2,50% en validacion real; 35,7% en tokens criticos | no disponible en la informacion | interno del autor |
 
@@ -96,7 +96,7 @@ No se dispone de datos de otros reconocedores de lineas coreanas de terceros en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/ThakiOCR-KOEN-G2M-Preview
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/ThakiOCR-KOEN-G2M-Preview
 - Tarjeta del modelo en coreano: https://huggingface.co/ThakiCloud/ThakiOCR-KOEN-G2M-Preview/blob/main/MODEL_CARD.ko.md
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/OCR-Synthetic-Multilingual-v1
 - Dataset AI Hub 71299: no disponible (referenciado en la model card sin URL)

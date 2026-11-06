@@ -84,7 +84,7 @@ No hay datos publicados de MMLU, GSM8K ni de comparaciones directas con el model
 | Victoria (build NVFP4) | 125,6 B | 5,9 B | No declarada; hasta 262 144 en configuracion de agente | qwen-community-1.0 | safetensors, vLLM sobre B300/B200 |
 | Victoria (build GGUF Q4_K_M) | 125,6 B (pesos Q4_K_M: 49,17 GiB) | 5,9 B | No declarada; 16 384 por slot en las pruebas | qwen-community-1.0 | GGUF, llama.cpp parcheado |
 | Qwen/Qwen3.8-Flash-Next (modelo base) | No disponible | 5,9 B (segun Victoria) | No disponible | No disponible en la informacion proporcionada | No disponible |
-| Maple (derivado de Victoria) | No disponible | No disponible | No disponible | No disponible | Publicado por el mismo autor en HuggingFace |
+| Maple (derivado de Victoria) | No disponible | No disponible | No disponible | No disponible | Publicado por el mismo autor en Hugging Face |
 | Build NVFP4 anterior de Victoria | 125,6 B | 5,9 B | No disponible | qwen-community-1.0 | Sustituido por el checkpoint actual; 62,5% en Terminal-Bench 2.1 |
 
 No se dispone de datos de benchmarks del modelo base ni de otros modelos comparables de la misma categoria en la informacion proporcionada, por lo que la comparacion se limita a variantes del propio Victoria.
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks del modelo base ni de otros modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rmonsurate/Victoria
+- Modelo en Hugging Face: https://huggingface.co/rmonsurate/Victoria
 - Arbol de ficheros del repositorio: https://huggingface.co/rmonsurate/Victoria/tree/main
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Maple, modelo derivado construido sobre Victoria: https://huggingface.co/rmonsurate/Maple

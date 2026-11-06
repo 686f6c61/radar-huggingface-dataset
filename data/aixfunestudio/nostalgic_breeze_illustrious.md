@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Nostalgic_Breeze_Illustrious es un modelo de texto a imagen open source publicado en HuggingFace por AIxFuneStudio. Pertenece a la familia Illustrious, una serie de modelos de generación de imágenes basados en la arquitectura Stable Diffusion XL, desarrollada originalmente por OnomaAI Research y posteriormente fine-tuneada para mejorar la calidad en ilustraciones de estilo anime. El repositorio tiene un tamaño de 7,4 GB, lo que sugiere que se distribuye con pesos completos en formato de precisión reducida, aunque el formato exacto no se especifica.
+Nostalgic_Breeze_Illustrious es un modelo de texto a imagen open source publicado en Hugging Face por AIxFuneStudio. Pertenece a la familia Illustrious, una serie de modelos de generación de imágenes basados en la arquitectura Stable Diffusion XL, desarrollada originalmente por OnomaAI Research y posteriormente fine-tuneada para mejorar la calidad en ilustraciones de estilo anime. El repositorio tiene un tamaño de 7,4 GB, lo que sugiere que se distribuye con pesos completos en formato de precisión reducida, aunque el formato exacto no se especifica.
 
-El modelo está pensado para generar imágenes a partir de descripciones textuales, con un enfoque probable en estética nostálgica y estilo ilustrado, como sugiere el nombre. Su relevancia radica en la popularidad de la familia Illustrious dentro de la comunidad de generación de imágenes, especialmente para artistas y desarrolladores que buscan alternativas open source a modelos propietarios. Sin embargo, el acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargar los pesos.
+El modelo está pensado para generar imágenes a partir de descripciones textuales, con un enfoque probable en estética nostálgica y estilo ilustrado, como sugiere el nombre. Su relevancia radica en la popularidad de la familia Illustrious dentro de la comunidad de generación de imágenes, especialmente para artistas y desarrolladores que buscan alternativas open source a modelos propietarios. Sin embargo, el acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargar los pesos.
 
 ## Especificaciones técnicas
 
@@ -58,7 +58,7 @@ No disponible. No se dispone de información suficiente para comparar este model
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio está marcado como gated, por lo que es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargar el modelo.
+- Acceso restringido: el repositorio está marcado como gated, por lo que es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargar el modelo.
 - Licencia "other": la licencia no es una de las licencias open source estándar, por lo que puede imponer restricciones específicas de uso, incluido el uso comercial. Es imprescindible revisar los términos antes de cualquier despliegue en producción.
 - Sin datos de sesgos: no se ha publicado información sobre sesgos conocidos, riesgos de alucinación o limitaciones de idioma.
 - Información técnica incompleta: la ausencia de especificaciones sobre arquitectura, parámetros y entrenamiento dificulta la evaluación rigurosa del modelo y su idoneidad para casos de uso concretos.
@@ -66,6 +66,6 @@ No disponible. No se dispone de información suficiente para comparar este model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIxFuneStudio/Nostalgic_Breeze_Illustrious
+- Hugging Face: https://huggingface.co/AIxFuneStudio/Nostalgic_Breeze_Illustrious
 - Wiki de la serie Illustrious: https://ai.miraheze.org/wiki/Illustrious
 - Guía de la serie Illustrious en SeaArt: https://www.seaart.ai/articleDetail/ctuib45e878c73ekrc90

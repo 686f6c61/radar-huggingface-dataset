@@ -91,7 +91,7 @@ La comparación de rendimiento de tarea no está disponible porque esta conversi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aether-models/aether-kit-phi2
+- Hugging Face: https://huggingface.co/aether-models/aether-kit-phi2
 - Modelo base: https://huggingface.co/microsoft/phi-2
 - Repositorio Aether Kit: https://github.com/bubstackdev/aether-kit
 - Commit de origen: https://github.com/bubstackdev/aether-kit/commit/1881cf48628c8f15a7e8e92ed38098a68865063e

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ajena es un modelo base extendido derivado de Qwen/Qwen3.5-9B-Base, desarrollado por Islam Arifi (usuario ArifiIslam en HuggingFace), orientado especificamente a la generacion y manipulacion nativa de graficos vectoriales (SVG). El modelo no es un fine-tuning clasico: su principal modificacion consiste en la inyeccion de un vocabulario de tokens SVG nativos que cubren etiquetas y atributos habituales, comandos de trazado (`M`, `C`, `Z`, entre otros), enteros en el rango `[-128, 128]` y coordenadas subpixel con dos decimales (`.00` a `.99`). Los embeddings de estos tokens se inicializaron semanticamente a partir de las medias de los subwords correspondientes para estabilizar el entrenamiento posterior.
+Ajena es un modelo base extendido derivado de Qwen/Qwen3.5-9B-Base, desarrollado por Islam Arifi (usuario ArifiIslam en Hugging Face), orientado especificamente a la generacion y manipulacion nativa de graficos vectoriales (SVG). El modelo no es un fine-tuning clasico: su principal modificacion consiste en la inyeccion de un vocabulario de tokens SVG nativos que cubren etiquetas y atributos habituales, comandos de trazado (`M`, `C`, `Z`, entre otros), enteros en el rango `[-128, 128]` y coordenadas subpixel con dos decimales (`.00` a `.99`). Los embeddings de estos tokens se inicializaron semanticamente a partir de las medias de los subwords correspondientes para estabilizar el entrenamiento posterior.
 
 Con 8.955.900.416 parametros (aproximadamente 8,96 mil millones) y un repositorio de 17,9 GB en safetensors, Ajena se posiciona en el segmento de modelos de ~9B, un tamano que permite despliegue en GPUs de gama alta de consumo con cuantizacion. La relevancia actual del modelo radica en que aborda un cuello de botella concreto de los LLM generalistas: la representacion de coordenadas y comandos vectoriales, que en tokenizaciones BPE estandar se fragmentan de forma ineficiente y penalizan la precision geometrica.
 
@@ -75,8 +75,8 @@ La model card del autor no incluye metricas de evaluacion (ni MMLU, ni HumanEval
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ajena (ArifiIslam/Ajena) | 8,96B | no disponible | SVG nativo con vocabulario inyectado | Apache 2.0 | HuggingFace, safetensors |
-| Qwen/Qwen3.5-9B-Base | ~9B (no confirmado en la informacion) | no disponible | Modelo base generalista de texto | no disponible en la informacion | HuggingFace |
+| Ajena (ArifiIslam/Ajena) | 8,96B | no disponible | SVG nativo con vocabulario inyectado | Apache 2.0 | Hugging Face, safetensors |
+| Qwen/Qwen3.5-9B-Base | ~9B (no confirmado en la informacion) | no disponible | Modelo base generalista de texto | no disponible en la informacion | Hugging Face |
 | Otros modelos especializados en SVG | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Ajena se diferencia de su modelo base por el vocabulario vectorial inyectado, que es su unico factor diferencial documentado; no se han publicado comparativas de rendimiento entre ambos. No se dispone de datos verificados sobre modelos alternativos de la misma categoria (generacion de SVG nativa a nivel de tokenizador) en la informacion proporcionada.
@@ -97,6 +97,6 @@ Ajena se diferencia de su modelo base por el vocabulario vectorial inyectado, qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArifiIslam/Ajena
+- Modelo en Hugging Face: https://huggingface.co/ArifiIslam/Ajena
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Metodologia de referencia (InternSVG): https://arxiv.org/abs/2510.11341

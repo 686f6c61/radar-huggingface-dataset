@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| team-qbits-base-v3b-lora | no disponible (adaptador 0,3 GB) | no disponible | gemma | HuggingFace, 0 descargas | Adaptador LoRA para SinhalaMMLU |
+| team-qbits-base-v3b-lora | no disponible (adaptador 0,3 GB) | no disponible | gemma | Hugging Face, 0 descargas | Adaptador LoRA para SinhalaMMLU |
 | Otras variantes del mismo equipo (p. ej. team-qbits-base-v3a) | no disponible | no disponible | gemma | no verificado | No se dispone de informacion sobre ellas en la consulta |
-| unsloth/gemma-4-E4B (modelo base) | no disponible | no disponible | gemma | HuggingFace (referenciado) | Modelo completo sin ajuste especifico para sinhala |
+| unsloth/gemma-4-E4B (modelo base) | no disponible | no disponible | gemma | Hugging Face (referenciado) | Modelo completo sin ajuste especifico para sinhala |
 
 No se dispone de datos suficientes para comparar rendimiento con alternativas de la misma categoria.
 
@@ -81,6 +81,6 @@ No se dispone de datos suficientes para comparar rendimiento con alternativas de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SinhalaMMLU-SharedTask/team-qbits-base-v3b-lora
+- Repositorio Hugging Face: https://huggingface.co/SinhalaMMLU-SharedTask/team-qbits-base-v3b-lora
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E4B
 - Licencia Gemma: https://ai.google.dev/gemma/terms

@@ -94,7 +94,7 @@ La comparacion se limita a parametros, licencia y disponibilidad porque la infor
 
 ## Limitaciones y advertencias
 
-- **Modelo practicamente sin uso ni validacion externa**: 0 descargas y 0 likes en HuggingFace en el momento de la consulta, publicado en octubre de 2026. No hay evidencia de terceros sobre su comportamiento en produccion.
+- **Modelo practicamente sin uso ni validacion externa**: 0 descargas y 0 likes en Hugging Face en el momento de la consulta, publicado en octubre de 2026. No hay evidencia de terceros sobre su comportamiento en produccion.
 - **Especializacion estrecha**: el entrenamiento se centra en problemas de codigo con formato stdin/stdout y bloque Python cercado. El rendimiento fuera de ese formato (por ejemplo, generacion de codigo en un IDE sin entrada estandar) no esta documentado y podria degradarse.
 - **Modo no-thinking**: el autor indica que el modelo se entreno y evaluo en modo no-thinking. Usarlo con razonamiento extendido activado puede producir resultados fuera de distribucion.
 - **Idiomas no declarados**: la ficha no especifica idiomas soportados. No hay garantia de comportamiento multilingue fuera del ingles tecnico habitual en problemas de programacion.
@@ -108,7 +108,7 @@ La comparacion se limita a parametros, licencia y disponibilidad porque la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gasolsun/Code_Qwen3-4B_Qwen3-30B-A3B-Instruct-2507
+- Modelo en Hugging Face: https://huggingface.co/gasolsun/Code_Qwen3-4B_Qwen3-30B-A3B-Instruct-2507
 - Dataset del banco de preguntas: https://huggingface.co/datasets/gasolsun/Code_Qwen3-4B_Qwen3-30B-A3B-Instruct-2507
 - Modelo base (estudiante): https://huggingface.co/Qwen/Qwen3-4B
 - Modelo profesor: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507

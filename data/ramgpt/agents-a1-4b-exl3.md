@@ -25,7 +25,7 @@ Su relevancia actual radica en que permite ejecutar localmente un modelo agentic
 
 El modelo base Agents-A1-4B es un transformer denso de la familia Qwen3.5, con arquitectura declarada `Qwen3_5ForConditionalGeneration`. Segun la informacion publica de InternScience, esta entrenado para razonamiento multi-paso en seis dominios heterogeneos, entre ellos busqueda de horizonte largo, ingenieria, tareas cientificas y agenticas generales, seguimiento de instrucciones e investigacion. El modelo base emplea una ventana de contexto de 262.144 tokens, dimensionada para trayectorias largas de agente.
 
-Existe una discrepancia en las fuentes consultadas sobre la naturaleza del modelo: mientras que la model card de HuggingFace lo describe como un modelo denso de 4B parametros, la pagina de openlm.ai describe la familia Agents-A1 como modelos MoE de horizonte largo (35B y 4B). No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO. Tampoco se detallan innovaciones tecnicas especificas del modelo base mas alla del escalado del horizonte de agente.
+Existe una discrepancia en las fuentes consultadas sobre la naturaleza del modelo: mientras que la model card de Hugging Face lo describe como un modelo denso de 4B parametros, la pagina de openlm.ai describe la familia Agents-A1 como modelos MoE de horizonte largo (35B y 4B). No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO. Tampoco se detallan innovaciones tecnicas especificas del modelo base mas alla del escalado del horizonte de agente.
 
 La version EXL3 aqui descrita no modifica la arquitectura: es una conversion de pesos al formato EXL3 de ExLlamaV3 a 4.00 bpw, realizada con el `convert.py` oficial (revision de ExLlamaV3 `1.5.2+cu128.torch2.10.0`) sobre la revision `945c40a4aa6f534d434a353207b8d42ecf7a5293` del modelo base, y verificada con una prueba local de carga y generacion.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 ## Limitaciones y advertencias
 
 - Discrepancia de parametros: el recuento real en safetensors (~1,98 B) no coincide con la denominacion comercial "4B" del modelo base; conviene verificar la adecuacion al caso de uso antes de desplegarlo.
-- Discrepancia de arquitectura: las fuentes se contradicen sobre si el modelo base es denso o MoE; la model card de HuggingFace indica denso y openlm.ai lo describe dentro de una familia MoE.
+- Discrepancia de arquitectura: las fuentes se contradicen sobre si el modelo base es denso o MoE; la model card de Hugging Face indica denso y openlm.ai lo describe dentro de una familia MoE.
 - Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad ni tasas de alucinacion en la informacion disponible.
 - Idiomas soportados: no disponible; no se puede garantizar un rendimiento multilingue adecuado.
 - Contexto: aunque el modelo base declara 262.144 tokens, el rendimiento efectivo a contextos muy largos no esta documentado, y la cache KV a esa longitud supone un coste elevado de VRAM.
@@ -97,8 +97,8 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace (version EXL3): https://huggingface.co/ramgpt/Agents-A1-4B-EXL3
-- Modelo base en HuggingFace: https://huggingface.co/InternScience/Agents-A1-4B
+- Modelo en Hugging Face (version EXL3): https://huggingface.co/ramgpt/Agents-A1-4B-EXL3
+- Modelo base en Hugging Face: https://huggingface.co/InternScience/Agents-A1-4B
 - Repositorio GitHub de Agents-A1: https://github.com/InternScience/Agents-A1/
 - Pagina de la familia Agents-A1 en openlm.ai: https://openlm.ai/agents-a1/
 - Ficha en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/agents-a1-4b-internscience

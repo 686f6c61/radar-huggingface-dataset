@@ -6,7 +6,7 @@ El repositorio `Snapkitty/sovereign-agi-kernel` no contiene un modelo de intelig
 
 El proyecto declara cinco axiomas fundamentales —límite de entropía, relación activo/confiable, artefacto como prueba, cadena WORM de solo añadido y el kernel como ancla única de confianza— todos implementados como tipos, de modo que violarlos resulta en errores de compilación en lugar de fallos en ejecución. También incluye un oráculo combinatorio basado en la suma de subconjuntos distintos (DSS) con aplicaciones en aislamiento de fallos, tomografía de red, criptografía de umbral y análisis financiero.
 
-En el momento de la consulta, el repositorio tiene cero descargas y cero *likes* en HuggingFace, y su fecha de creación es el 3 de septiembre de 2026. No se dispone de información sobre pipeline, licencia oficial en metadatos ni idiomas soportados, aunque la *model card* menciona una tri-licencia (BSL-1.1 / AGPL-3.0 / MPL-2.0) y el código está documentado en inglés.
+En el momento de la consulta, el repositorio tiene cero descargas y cero *likes* en Hugging Face, y su fecha de creación es el 3 de septiembre de 2026. No se dispone de información sobre pipeline, licencia oficial en metadatos ni idiomas soportados, aunque la *model card* menciona una tri-licencia (BSL-1.1 / AGPL-3.0 / MPL-2.0) y el código está documentado en inglés.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ En el momento de la consulta, el repositorio tiene cero descargas y cero *likes*
 | Longitud de contexto | no aplica |
 | Tipos de cuantizacion | no aplica |
 | Idiomas soportados | no disponible (código y documentación en inglés) |
-| Licencia | Tri-licencia BSL-1.1 / AGPL-3.0 / MPL-2.0 (según *model card*; metadatos de HuggingFace: no disponible) |
+| Licencia | Tri-licencia BSL-1.1 / AGPL-3.0 / MPL-2.0 (según *model card*; metadatos de Hugging Face: no disponible) |
 | Formato de pesos | no aplica (código fuente: archivos `.idr`, `.lean`, `.mjs`, `.py`) |
 
 ## Arquitectura y entrenamiento
@@ -79,5 +79,5 @@ No disponible. Este repositorio no es un modelo de IA comparable con LLMs u otro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [Snapkitty/sovereign-agi-kernel](https://huggingface.co/Snapkitty/sovereign-agi-kernel)
+- Repositorio en Hugging Face: [Snapkitty/sovereign-agi-kernel](https://huggingface.co/Snapkitty/sovereign-agi-kernel)
 - No se han encontrado otros enlaces (papers, blogs o repositorios externos) en la información proporcionada.

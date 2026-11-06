@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador PEFT (LoRA) publicado por el usuario BashCache bajo el identificador `BashCache/temp-llada-base-20-snr-weighted-adapters-v2`. No es un modelo completo, sino un conjunto de pesos de adaptación que debe cargarse junto con el modelo base `BashCache/temp-llada-base-20-snr-weighted` para poder realizar inferencia. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo de miles de millones de parametros.
 
-La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) figuran como "[More Information Needed]". Esto significa que no hay informacion verificable sobre el proceso de entrenamiento, el dataset utilizado ni el rendimiento del adaptador. El nombre del repositorio sugiere un entrenamiento con ponderacion por relacion senal-ruido (SNR) sobre una version podada del modelo base, pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor.
+La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) figuran como "[More Information Needed]". Esto significa que no hay informacion verificable sobre el proceso de entrenamiento, el dataset utilizado ni el rendimiento del adaptador. El nombre del repositorio sugiere un entrenamiento con ponderacion por relacion senal-ruido (SNR) sobre una version podada del modelo base, pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor.
 
 El interes de esta ficha es, por tanto, principalmente documental: sirve para dejar constancia de que el artefacto existe, de que es un adaptador LoRA y de que carece de documentacion suficiente para evaluarlo o desplegarlo en produccion. Su uso sensato hoy es la experimentacion en investigacion, siempre que se reconstruya primero el modelo base.
 
@@ -31,7 +31,7 @@ El interes de esta ficha es, por tanto, principalmente documental: sirve para de
 
 No hay informacion publicada sobre la arquitectura. Los metadatos indican que se trata de un adaptador LoRA (etiquetas `peft`, `lora`, `safetensors`) pensado para cargarse sobre el modelo base `BashCache/temp-llada-base-20-snr-weighted`, que a su vez no esta documentado en la informacion disponible. El identificador del adaptador incluye referencias a una ruta interna (`/pruned/llada_base_snr_weighted_20/model_snr_weighted`) que sugiere un flujo de trabajo de poda seguido de ponderacion por SNR, pero el autor no detalla en que consiste ese procedimiento, sobre que datos se aplico ni con que hiperparametros.
 
-Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni sobre innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, modo de razonamiento, etc.). El unico rastro bibliografico en las etiquetas es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019), el articulo citado en la plantilla de HuggingFace para el calculo de emisiones de carbono; no es una referencia al metodo de entrenamiento del modelo.
+Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni sobre innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, modo de razonamiento, etc.). El unico rastro bibliografico en las etiquetas es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019), el articulo citado en la plantilla de Hugging Face para el calculo de emisiones de carbono; no es una referencia al metodo de entrenamiento del modelo.
 
 ## Capacidades
 
@@ -84,7 +84,7 @@ No disponible. No es posible identificar alternativas comparables de forma fiabl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BashCache/temp-llada-base-20-snr-weighted-adapters-v2
+- Repositorio Hugging Face: https://huggingface.co/BashCache/temp-llada-base-20-snr-weighted-adapters-v2
 - Modelo base: https://huggingface.co/BashCache/temp-llada-base-20-snr-weighted
 - Referencia citada en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact

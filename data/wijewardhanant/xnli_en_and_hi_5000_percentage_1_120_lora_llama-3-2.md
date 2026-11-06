@@ -6,7 +6,7 @@ El repositorio WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_LoRA_llama-3.
 
 El interes del artefacto es fundamentalmente experimental: se trata de un adaptador pequeno (0,3 GB en disco) que permite estudiar transferencia cross-lingual (ingles-hindi) con un presupuesto de computo minimo, o reutilizar el modelo base en tareas de deteccion de contradicciones y verificacion de coherencia. Al estar construido sobre Llama 3.2 3B, hereda su ventana de contexto de 128 000 tokens y su tokenizador, aunque la tarea para la que fue ajustado (XNLI) trabaja con pares de frases cortas.
 
-La relevancia practica esta limitada por la ausencia total de informacion de evaluacion: la model card es la plantilla por defecto de HuggingFace sin rellenar, el repositorio registra 0 descargas y 0 likes, no se declara licencia y no hay resultados de benchmarks. Debe tratarse, por tanto, como un adaptador no validado que requiere evaluacion propia antes de cualquier uso en produccion.
+La relevancia practica esta limitada por la ausencia total de informacion de evaluacion: la model card es la plantilla por defecto de Hugging Face sin rellenar, el repositorio registra 0 descargas y 0 likes, no se declara licencia y no hay resultados de benchmarks. Debe tratarse, por tanto, como un adaptador no validado que requiere evaluacion propia antes de cualquier uso en produccion.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ La relevancia practica esta limitada por la ausencia total de informacion de eva
 
 El adaptador se apoya en Llama 3.2 3B, un transformer decoder-only autorregresivo de 3,21 mil millones de parametros con grouped-query attention, RoPE y embeddings de entrada/salida compartidos (tied embeddings). El modelo base, publicado por Meta, esta entrenado sobre un corpus de hasta 9 billones de tokens con datos multimodales y de texto, un cutoff de conocimiento de diciembre de 2023, y pasa por fases de ajuste supervisado y optimizacion por preferencias humanas (RLHF con DPO). Sobre esa base, este repositorio aplica un adaptador LoRA: se congelan los pesos originales y se entrenan matrices de bajo rango en determinadas proyecciones lineales, lo que reduce drasticamente el numero de parametros actualizados y el espacio en disco (0,3 GB frente a los aproximadamente 6,5 GB del modelo completo en precision de 16 bits).
 
-La informacion de entrenamiento publicada es practicamente nula: la model card es la plantilla estandar de HuggingFace con todos los campos marcados como "[More Information Needed]". Todo lo que puede inferirse procede del identificador del repositorio: corpus XNLI (inferencia de lenguaje natural, derivado de MultiNLI y traducido a 15 idiomas), idiomas ingles e hindi, 5000 ejemplos, un factor "percentage 1" y 120 (probablemente pasos o iteraciones). No se especifican hiperparametros (rank, alpha, dropout, learning rate, scheduler, precision), ni la composicion exacta del dataset, ni si se aplico validacion cruzada o particion de test. El tag `arxiv:1910.09700` corresponde a la referencia generica del calculador de impacto de carbono de Lacoste et al. (2019) que incluye la plantilla, no a un articulo sobre este modelo.
+La informacion de entrenamiento publicada es practicamente nula: la model card es la plantilla estandar de Hugging Face con todos los campos marcados como "[More Information Needed]". Todo lo que puede inferirse procede del identificador del repositorio: corpus XNLI (inferencia de lenguaje natural, derivado de MultiNLI y traducido a 15 idiomas), idiomas ingles e hindi, 5000 ejemplos, un factor "percentage 1" y 120 (probablemente pasos o iteraciones). No se especifican hiperparametros (rank, alpha, dropout, learning rate, scheduler, precision), ni la composicion exacta del dataset, ni si se aplico validacion cruzada o particion de test. El tag `arxiv:1910.09700` corresponde a la referencia generica del calculador de impacto de carbono de Lacoste et al. (2019) que incluye la plantilla, no a un articulo sobre este modelo.
 
 ## Capacidades
 
@@ -94,7 +94,7 @@ No se dispone de datos cuantitativos comparativos para el adaptador. Los clasifi
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_LoRA_llama-3.2
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_LoRA_llama-3.2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Referencia citada en la plantilla (calculador de impacto de carbono): https://arxiv.org/abs/1910.09700

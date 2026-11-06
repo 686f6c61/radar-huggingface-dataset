@@ -87,7 +87,7 @@ El adaptador de ZiedBz se distingue por su enfoque específico en la estructura 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZiedBz/legal-fr-cassation-qwen3-4b-lora
+- Modelo en Hugging Face: https://huggingface.co/ZiedBz/legal-fr-cassation-qwen3-4b-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/artefactory/Argimi-Legal-French-Jurisprudence
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Guía de Qwen3 (contexto general): https://insiderllm.com/guides/qwen3-complete-guide/

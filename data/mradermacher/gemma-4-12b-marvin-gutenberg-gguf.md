@@ -88,7 +88,7 @@ La comparación es orientativa: no se dispone de datos de rendimiento del modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-12b-marvin-gutenberg-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-12b-marvin-gutenberg-GGUF
 - Modelo base: https://huggingface.co/ToastyPigeon/gemma-4-12b-marvin-gutenberg
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/gemma-4-12b-marvin-gutenberg-i1-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#gemma-4-12b-marvin-gutenberg-GGUF

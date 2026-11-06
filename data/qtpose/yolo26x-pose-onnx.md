@@ -84,7 +84,7 @@ La comparación cuantitativa de precisión y latencia no está disponible en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qtpose/yolo26x-pose-onnx
+- Modelo en Hugging Face: https://huggingface.co/qtpose/yolo26x-pose-onnx
 - Organización qtpose: https://huggingface.co/qtpose
 - Licencia de Ultralytics: https://www.ultralytics.com/license
 - Documentación de Ultralytics: https://docs.ultralytics.com

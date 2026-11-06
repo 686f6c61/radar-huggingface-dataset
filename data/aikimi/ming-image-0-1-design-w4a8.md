@@ -20,7 +20,7 @@ Su relevancia práctica está en la reducción de memoria: frente al DiT INT8 de
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 
-Notas adicionales: el repositorio contiene el DiT cuantizado (`diffusion_models/ming_image_0.1_design_w4a8_convrot_experimental.safetensors`), con un tamaño de 3.488.163.008 bytes (3,49 GB) y SHA-256 `66be75b57dfb464a905f7f1359a63303890e08ff8864d9fb8470e2513030d515`. El codificador de texto y el VAE no se incluyen en este repositorio. Fecha de publicacion en HuggingFace: 29 de septiembre de 2026.
+Notas adicionales: el repositorio contiene el DiT cuantizado (`diffusion_models/ming_image_0.1_design_w4a8_convrot_experimental.safetensors`), con un tamaño de 3.488.163.008 bytes (3,49 GB) y SHA-256 `66be75b57dfb464a905f7f1359a63303890e08ff8864d9fb8470e2513030d515`. El codificador de texto y el VAE no se incluyen en este repositorio. Fecha de publicacion en Hugging Face: 29 de septiembre de 2026.
 
 ## Arquitectura y entrenamiento
 
@@ -98,7 +98,7 @@ No se dispone de datos de modelos comparables de terceros en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aikimi/Ming-Image-0.1-Design-W4A8
+- Modelo en Hugging Face: https://huggingface.co/Aikimi/Ming-Image-0.1-Design-W4A8
 - Modelo base: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
 - Repositorio complementario (codificador de texto W4A8 y VAE BF16): https://huggingface.co/Comfy-Org/Ming-Image/tree/53654871e47a5d2daed7b3a986cbf1010ef81c78
 - Herramienta de conversion: https://github.com/Comfy-Org/comfy-model-tools/blob/d6797787e6bdb1a1fb0094d588a26f8e71a1c757/quant_int8_convrot.py

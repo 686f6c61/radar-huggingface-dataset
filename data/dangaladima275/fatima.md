@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fatima es un modelo publicado en HuggingFace por el usuario DANGALADIMA275 bajo la licencia bigscience-openrail-m. La model card asociada al repositorio no contiene ninguna descripcion tecnica: se limita a declarar la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. No hay informacion sobre el pipeline de la tarea, los idiomas soportados ni los formatos de pesos disponibles.
+Fatima es un modelo publicado en Hugging Face por el usuario DANGALADIMA275 bajo la licencia bigscience-openrail-m. La model card asociada al repositorio no contiene ninguna descripcion tecnica: se limita a declarar la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. No hay informacion sobre el pipeline de la tarea, los idiomas soportados ni los formatos de pesos disponibles.
 
 En el momento de redactar esta ficha, el repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (27 de octubre de 2026), lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad. No se ha localizado documentacion adicional, paper, blog ni repositorio de codigo asociado al modelo.
 
@@ -68,5 +68,5 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DANGALADIMA275/Fatima
+- Repositorio en Hugging Face: https://huggingface.co/DANGALADIMA275/Fatima
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la informacion disponible.

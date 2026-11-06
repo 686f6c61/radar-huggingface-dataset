@@ -4,7 +4,7 @@
 
 El modelo `ketiswp/mediapipe-EfficientDet-Lite0-COCO2017-fp32-onnx` es una conversión a formato ONNX en precisión FP32 del detector de objetos EfficientDet-Lite0 de MediaPipe, desarrollado por Google AI Edge. Este modelo resuelve la detección de objetos en imágenes y vídeo, identificando y localizando instancias de hasta 80 categorías del dataset COCO 2017. Su relevancia actual radica en que ofrece una implementación lista para inferencia con ONNX Runtime, lo que facilita el despliegue en entornos de producción, dispositivos edge y aplicaciones móviles sin depender de TensorFlow Lite.
 
-La arquitectura se basa en un backbone EfficientNet-Lite0 con una red de características BiFPN, y el modelo acepta imágenes de entrada de 320x320 píxeles. El repositorio de HuggingFace no incluye los pesos en sí (tamaño 0.0 GB), por lo que se trata de una ficha descriptiva más que de un artefacto funcional. No se especifican parámetros totales ni otros detalles técnicos en la información disponible.
+La arquitectura se basa en un backbone EfficientNet-Lite0 con una red de características BiFPN, y el modelo acepta imágenes de entrada de 320x320 píxeles. El repositorio de Hugging Face no incluye los pesos en sí (tamaño 0.0 GB), por lo que se trata de una ficha descriptiva más que de un artefacto funcional. No se especifican parámetros totales ni otros detalles técnicos en la información disponible.
 
 ## Especificaciones técnicas
 
@@ -62,13 +62,13 @@ No se dispone de información comparativa en la documentación. Se puede conside
 
 - El modelo solo reconoce las 80 categorías del dataset COCO 2017; no es personalizable sin reentrenamiento.
 - La versión FP32 puede ser más pesada y lenta en comparación con versiones cuantizadas (INT8/UINT8), que se publican como modelo emparejado.
-- No se incluyen los pesos en el repositorio de HuggingFace (tamaño 0.0 GB), por lo que es necesario obtenerlos desde la fuente original de Kaggle o TensorFlow Hub.
+- No se incluyen los pesos en el repositorio de Hugging Face (tamaño 0.0 GB), por lo que es necesario obtenerlos desde la fuente original de Kaggle o TensorFlow Hub.
 - No hay garantías de precisión en dominios especializados (por ejemplo, detección de defectos industriales) sin un entrenamiento adicional.
 - La licencia Apache-2.0 permite uso comercial, pero se recomienda revisar la licencia del modelo original y de los datos COCO para cumplir con las restricciones de atribución.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ketiswp/mediapipe-EfficientDet-Lite0-COCO2017-fp32-onnx
+- Repositorio Hugging Face: https://huggingface.co/ketiswp/mediapipe-EfficientDet-Lite0-COCO2017-fp32-onnx
 - Versión INT8/UINT8: https://huggingface.co/ketiswp/mediapipe-EfficientDet-Lite0-COCO2017-int8-uint8-onnx
 - Fuente original (Kaggle): https://www.kaggle.com/models/tensorflow/efficientdet
 - Guía de detección de objetos de MediaPipe: https://developers.google.com/edge/mediapipe/solutions/vision/object_detector?hl=en

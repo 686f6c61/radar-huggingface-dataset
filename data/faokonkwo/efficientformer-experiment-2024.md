@@ -67,6 +67,6 @@ No disponible. Este modelo es un experimento no entrenado con una cantidad de pa
 
 ## Enlaces
 
-- [HuggingFace - Faokonkwo/efficientformer-experiment-2024](https://huggingface.co/Faokonkwo/efficientformer-experiment-2024)
+- [Hugging Face - Faokonkwo/efficientformer-experiment-2024](https://huggingface.co/Faokonkwo/efficientformer-experiment-2024)
 - [GitHub - snap-research/EfficientFormer (original)](https://github.com/snap-research/EfficientFormer)
-- [Documentación de EfficientFormer en HuggingFace Transformers](https://huggingface.co/docs/transformers/v4.48.2/en/model_doc/efficientformer)
+- [Documentación de EfficientFormer en Hugging Face Transformers](https://huggingface.co/docs/transformers/v4.48.2/en/model_doc/efficientformer)

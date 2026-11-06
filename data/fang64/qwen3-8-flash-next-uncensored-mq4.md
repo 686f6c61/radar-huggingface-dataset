@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fang64/Qwen3.8-Flash-Next-Uncensored-mq4` es una cuantización de tipo mixto del modelo abliterado `huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated`, que a su vez deriva del modelo original `Qwen/Qwen3.8-Flash-Next` de Alibaba. La pieza la publica el usuario fang64 en HuggingFace y emplea el formato propietario HFQM del motor de inferencia hipfire, con receta MQ4 (matrices en MQ4G256V2, MQ4G128V2 y MQ6G256V2, y embeddings de tokens y `lm_head` en 8 bits). El resultado pesa aproximadamente 117,4 GiB, lo que da una idea del tamaño del modelo original, claramente en la liga de los modelos frontera.
+`fang64/Qwen3.8-Flash-Next-Uncensored-mq4` es una cuantización de tipo mixto del modelo abliterado `huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated`, que a su vez deriva del modelo original `Qwen/Qwen3.8-Flash-Next` de Alibaba. La pieza la publica el usuario fang64 en Hugging Face y emplea el formato propietario HFQM del motor de inferencia hipfire, con receta MQ4 (matrices en MQ4G256V2, MQ4G128V2 y MQ6G256V2, y embeddings de tokens y `lm_head` en 8 bits). El resultado pesa aproximadamente 117,4 GiB, lo que da una idea del tamaño del modelo original, claramente en la liga de los modelos frontera.
 
 La arquitectura, según los metadatos embebidos del artefacto, es Qwen4Exp: 48 capas de texto y 512 expertos con 10 expertos activos por token, es decir, un transformer de mezcla de expertos (MoE) de gran escala. El modelo también incorpora, según esa misma configuración, un codificador de visión, aunque el autor advierte que la inferencia multimodal no ha sido verificada en esta cuantización.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fang64/Qwen3.8-Flash-Next-Uncensored-mq4 | MoE, 512 expertos, 10 activos (total no disponible) | no disponible | HFQM (hipfire) | Qwen Community 1.0 | HuggingFace, solo hipfire |
-| huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated | MoE, mismos expertos (total no disponible) | no disponible | safetensors (presumible) | Qwen Community 1.0 | HuggingFace |
-| Qwen/Qwen3.8-Flash-Next | MoE, 512 expertos, 10 activos (total no disponible) | no disponible | safetensors | Qwen Community 1.0 | HuggingFace |
+| fang64/Qwen3.8-Flash-Next-Uncensored-mq4 | MoE, 512 expertos, 10 activos (total no disponible) | no disponible | HFQM (hipfire) | Qwen Community 1.0 | Hugging Face, solo hipfire |
+| huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated | MoE, mismos expertos (total no disponible) | no disponible | safetensors (presumible) | Qwen Community 1.0 | Hugging Face |
+| Qwen/Qwen3.8-Flash-Next | MoE, 512 expertos, 10 activos (total no disponible) | no disponible | safetensors | Qwen Community 1.0 | Hugging Face |
 
 La comparación se limita a la cadena de derivación del propio modelo, ya que no se dispone de datos de rendimiento ni de especificaciones completas de alternativas de la misma categoría en la información proporcionada.
 
@@ -83,7 +83,7 @@ La comparación se limita a la cadena de derivación del propio modelo, ya que n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fang64/Qwen3.8-Flash-Next-Uncensored-mq4
+- Modelo en Hugging Face: https://huggingface.co/fang64/Qwen3.8-Flash-Next-Uncensored-mq4
 - Modelo base abliterado: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia (Qwen Community License 1.0): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated/blob/main/LICENSE

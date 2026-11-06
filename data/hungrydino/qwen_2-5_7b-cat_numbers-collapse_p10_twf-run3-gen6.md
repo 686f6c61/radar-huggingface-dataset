@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning del popular Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino. Se trata de una variante experimental orientada a la manipulación de números y colapso de categorías, como sugiere el nombre del repositorio (`cat_numbers-collapse_p10_twf`). El modelo parte de la base `unsloth/Qwen2.5-7B-Instruct`, una versión optimizada del Qwen2.5 de 7B parámetros, y ha sido ajustado con las librerías Unsloth y TRL de HuggingFace, lo que indica un entrenamiento eficiente en cuanto a velocidad y memoria.
+Este modelo es un fine-tuning del popular Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino. Se trata de una variante experimental orientada a la manipulación de números y colapso de categorías, como sugiere el nombre del repositorio (`cat_numbers-collapse_p10_twf`). El modelo parte de la base `unsloth/Qwen2.5-7B-Instruct`, una versión optimizada del Qwen2.5 de 7B parámetros, y ha sido ajustado con las librerías Unsloth y TRL de Hugging Face, lo que indica un entrenamiento eficiente en cuanto a velocidad y memoria.
 
 La relevancia de este modelo radica en que explora un dominio específico (manipulación numérica y colapso de categorías) sobre una arquitectura ya consolidada como Qwen2.5. Sin embargo, la información pública disponible es muy limitada: no se especifican los datos de entrenamiento, el número de tokens, ni los resultados de benchmarks. El repositorio tiene cero descargas y cero likes, lo que sugiere que es un experimento personal o de investigación sin difusión amplia. A pesar de ello, su licencia Apache 2.0 permite uso comercial y modificación libre.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en que explora un dominio específico (manip
 
 ## Arquitectura y entrenamiento
 
-La arquitectura base es Qwen2.5-7B-Instruct, un transformer decoder-only con atención de múltiples cabezas, normalización RMSNorm, y activación SwiGLU. El modelo original de Qwen2.5 soporta una ventana de contexto de hasta 32 768 tokens y está entrenado con más de 18 billones de tokens. Este fine-tuning específico no documenta cambios arquitectónicos; se limita a un ajuste fino supervisado sobre el modelo base, probablemente con un dataset propio centrado en tareas de "colapso de números" (collapse numbers) y "p10" (posiblemente refiriéndose a un parámetro de entrenamiento o a un subconjunto de datos). El entrenamiento se realizó con Unsloth, que acelera el fine-tuning mediante kernels optimizados, y con la librería TRL de HuggingFace para el pipeline de entrenamiento con reinforcement learning o fine-tuning supervisado. No se especifica si se usó RLHF, DPO u otra técnica de alineación.
+La arquitectura base es Qwen2.5-7B-Instruct, un transformer decoder-only con atención de múltiples cabezas, normalización RMSNorm, y activación SwiGLU. El modelo original de Qwen2.5 soporta una ventana de contexto de hasta 32 768 tokens y está entrenado con más de 18 billones de tokens. Este fine-tuning específico no documenta cambios arquitectónicos; se limita a un ajuste fino supervisado sobre el modelo base, probablemente con un dataset propio centrado en tareas de "colapso de números" (collapse numbers) y "p10" (posiblemente refiriéndose a un parámetro de entrenamiento o a un subconjunto de datos). El entrenamiento se realizó con Unsloth, que acelera el fine-tuning mediante kernels optimizados, y con la librería TRL de Hugging Face para el pipeline de entrenamiento con reinforcement learning o fine-tuning supervisado. No se especifica si se usó RLHF, DPO u otra técnica de alineación.
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: para un modelo de 7B en precisión FP16, se necesitan aproximadamente 14 GB de VRAM. Con cuantización INT8, unos 7-8 GB; con INT4, unos 4-5 GB.
 - GPU recomendadas: una RTX 3090 o RTX 4090 (24 GB) puede ejecutar el modelo en FP16 sin problemas. Una RTX 3060 (12 GB) podría funcionar con cuantización INT8. Para producción, una A100 (40 GB) o H100 ofrecerían mayor margen.
 - Sí cabe en GPUs de consumo: una RTX 4090 o RTX 3090 son suficientes para FP16; GPUs con 8 GB o menos requerirían cuantización agresiva.
-- Opciones de despliegue: al ser un modelo de la familia Qwen2, es compatible con vLLM, llama.cpp, Ollama, TGI (Text Generation Inference) y Transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo de la familia Qwen2, es compatible con vLLM, llama.cpp, Ollama, TGI (Text Generation Inference) y Transformers de Hugging Face.
 - Latencia y throughput: no disponible. Dependerá del hardware y de la cuantización elegida.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento para comparar directamente. El modelo de H
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run3-gen6
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run3-gen6
 - Modelo base (unsloth/Qwen2.5-7B-Instruct): https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio oficial de Qwen: https://github.com/QwenLM/Qwen
 - Informe técnico de Qwen2.5: https://arxiv.org/pdf/2412.15115v2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shortstop π0.5 (sticky pad, context 0.25 s) es un ajuste fino completo del modelo base `pi05_base` de Physical Intelligence, desarrollado por el usuario SeonghuJeon y publicado en HuggingFace. Se trata de una política robótica visomotora (vision-language-action) especializada en una única tarea: capturar un objeto en vuelo con una almohadilla adhesiva y liberarlo en una papelera situada a la izquierda. El modelo deriva de la arquitectura π0.5 de OpenPI y conserva las porciones de pesos heredadas de Gemma, por lo que su licencia es la Gemma Terms of Use.
+Shortstop π0.5 (sticky pad, context 0.25 s) es un ajuste fino completo del modelo base `pi05_base` de Physical Intelligence, desarrollado por el usuario SeonghuJeon y publicado en Hugging Face. Se trata de una política robótica visomotora (vision-language-action) especializada en una única tarea: capturar un objeto en vuelo con una almohadilla adhesiva y liberarlo en una papelera situada a la izquierda. El modelo deriva de la arquitectura π0.5 de OpenPI y conserva las porciones de pesos heredadas de Gemma, por lo que su licencia es la Gemma Terms of Use.
 
 El ajuste se realizó sin LoRA, con entrenamiento completo sobre 17.772 actualizaciones del optimizador (seis épocas de referencia), 1.911 episodios de entrenamiento y 100 de validación, con un tamaño de lote de 16 y una masa de pérdida actual:futura de 1:1. El repositorio ocupa 5,3 GB e incluye los pesos en formato nativo JAX/Orbax OCDBT exportados a bfloat16 para inferencia, junto con estadísticas de normalización y un fichero `shortstop_policy.json`.
 
@@ -70,7 +70,7 @@ El autor indica explícitamente que se trata de un diagnóstico de entrenamiento
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shortstop π0.5 sticky-ctx025 | no disponible | 0,25 s de historial | Captura en vuelo con almohadilla adhesiva | Gemma Terms of Use | HuggingFace, 0 descargas |
+| Shortstop π0.5 sticky-ctx025 | no disponible | 0,25 s de historial | Captura en vuelo con almohadilla adhesiva | Gemma Terms of Use | Hugging Face, 0 descargas |
 | `pi05_base` (Physical Intelligence) | no disponible | no disponible | Política VLA generalista | no disponible en la información | GitHub OpenPI |
 | Otros ajustes de π0.5 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparables entre estos modelos en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SeonghuJeon/shortstop-pi05-sticky-ctx025
+- Hugging Face: https://huggingface.co/SeonghuJeon/shortstop-pi05-sticky-ctx025
 - OpenPI (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - PR del benchmark Shortstop: https://github.com/worv-ai/worv/pull/124
 - Comentario con diferencias de runtime: https://github.com/worv-ai/worv/pull/124#issuecomment-6433366546

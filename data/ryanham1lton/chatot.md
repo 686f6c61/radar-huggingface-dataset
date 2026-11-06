@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chatot es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Chatot`. La model card asociada contiene únicamente el campo de licencia (`cc-by-4.0`) y ninguna descripción del modelo, por lo que no es posible determinar qué problema resuelve, a qué arquitectura responde ni cuál es su propósito declarado. El repositorio ocupa 0,1 GB y no registra descargas ni likes en el momento de la consulta.
+Chatot es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Chatot`. La model card asociada contiene únicamente el campo de licencia (`cc-by-4.0`) y ninguna descripción del modelo, por lo que no es posible determinar qué problema resuelve, a qué arquitectura responde ni cuál es su propósito declarado. El repositorio ocupa 0,1 GB y no registra descargas ni likes en el momento de la consulta.
 
 No hay información disponible sobre la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni el proceso de entrenamiento. Tampoco se ha publicado ningún resultado de benchmarks ni documentación técnica complementaria. La búsqueda web realizada no ha devuelto ningún resultado relacionado con el modelo: los enlaces encontrados corresponden a portales de horarios de transporte ferroviario húngaro (MÁV-csoport) y no guardan relación alguna con este repositorio.
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha recoge exclusivamente los metadatos verificables del repos
 | Licencia | cc-by-4.0 |
 | Formato de pesos | no disponible |
 | Autor | Ryanham1lton |
-| Identificador en HuggingFace | Ryanham1lton/Chatot |
+| Identificador en Hugging Face | Ryanham1lton/Chatot |
 | Pipeline declarado | no disponible |
 | Tamaño del repositorio | 0,1 GB |
 | Descargas | 0 |
@@ -83,6 +83,6 @@ No disponible. Sin conocer la arquitectura, el número de parámetros ni las cap
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Chatot
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Chatot
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web realizada.
 - Los resultados de búsqueda disponibles (MÁV-csoport, menetrendek.hu, jegy.mav.hu) no guardan relación con el modelo y se descartan como fuentes.

@@ -18,7 +18,7 @@ Los datos provienen del "Milling Data Set" de la NASA Prognostics Center of Exce
 | Longitud de contexto | no aplica (modelo tabular; entrada fija de 59 características por corte) |
 | Tipos de cuantizacion | no disponible; no se publica ninguna variante cuantizada (el artefacto es un serializado `joblib` de los árboles) |
 | Idiomas soportados | no aplica (no procesa texto) |
-| Licencia | no disponible (ni en los metadatos de HuggingFace ni en la model card) |
+| Licencia | no disponible (ni en los metadatos de Hugging Face ni en la model card) |
 | Formato de pesos | `joblib` (`model.joblib`) acompañado de `config.json` con la definicion de las 59 features |
 | Target | Desgaste de flanco VB en milímetros (regresión continua) |
 | Features de entrada | 59 en total: 9 por canal × 6 canales + 5 características de proceso |
@@ -26,7 +26,7 @@ Los datos provienen del "Milling Data Set" de la NASA Prognostics Center of Exce
 | Muestras por pasada | 9000 por canal |
 | Conjunto de entrenamiento | 146 pasadas con VB medido, 16 condiciones de corte (21 de 167 pasadas excluidas por falta de medicion) |
 | Validacion | Leave-one-case-out agrupada por condicion de corte, métricas pooladas |
-| Tamano del repositorio | 0.0 GB según HuggingFace (artefacto de pocos MB o menos; no se publica el tamano exacto de `model.joblib`) |
+| Tamano del repositorio | 0.0 GB según Hugging Face (artefacto de pocos MB o menos; no se publica el tamano exacto de `model.joblib`) |
 | Descargas / likes | 12 descargas, 0 likes |
 
 ## Arquitectura y entrenamiento
@@ -72,7 +72,7 @@ Protocolo declarado: leave-one-case-out sobre 16 condiciones de corte, métricas
 
 - GPU: no necesaria. La inferencia es CPU-only por diseno (el autor reporta las métricas del LOO-CV calculadas en CPU).
 - VRAM estimada: 0 GB; el modelo no se carga en memoria de GPU.
-- Memoria RAM: no disponible el tamano exacto de `model.joblib`; el repositorio se redondea a 0.0 GB en HuggingFace, lo que sugiere un artefacto de pocos MB o menos.
+- Memoria RAM: no disponible el tamano exacto de `model.joblib`; el repositorio se redondea a 0.0 GB en Hugging Face, lo que sugiere un artefacto de pocos MB o menos.
 - GPU recomendadas: ninguna. Cualquier CPU capaz de ejecutar scikit-learn sirve; no se requiere A100, H100 ni RTX 4090.
 - Compatibilidad con GPU de consumo: irrelevante, el modelo cabe y se ejecuta en cualquier equipo de consumo, incluidos portatiles modestos.
 - Opciones de despliegue: carga directa con `joblib.load` en un script o notebook de Python; servicio HTTP envolviendo `predict_wear` (FastAPI, Flask); integracion en pipelines de datos por lotes. vLLM, llama.cpp, Ollama y TGI no aplican, ya que no es un modelo generativo.
@@ -84,7 +84,7 @@ No se ha identificado en la informacion disponible ningun modelo público compar
 
 | Modelo | Tipo | Entradas | Target | Métricas publicadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Zainulabedin1/tool-wear-milling` | Gradient boosting (histogramas) | 59 features tabulares | VB (mm) | no publicadas (remite a `report.json`) | no disponible | HuggingFace, 12 descargas |
+| `Zainulabedin1/tool-wear-milling` | Gradient boosting (histogramas) | 59 features tabulares | VB (mm) | no publicadas (remite a `report.json`) | no disponible | Hugging Face, 12 descargas |
 | Baseline media del train | Predictor constante | ninguna | VB (mm) | no publicadas | no aplica | definido en la model card |
 | Baseline tendencia lineal | Regresión lineal sobre corte/tiempo | indice de corte o tiempo | VB (mm) | no publicadas | no aplica | definido en la model card |
 | Otros modelos de TCM sobre NASA Milling | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -99,12 +99,12 @@ No se ha identificado en la informacion disponible ningun modelo público compar
 - Uso previsto educativo y de portfolio: el propio autor indica que no es un sistema de TCM para produccion. No debe usarse para decidir cambios de herramienta en un proceso real sin validacion independiente.
 - Licencia no declarada: la ausencia de licencia explicita impide asumir derechos de uso comercial o de redistribucion del artefacto `joblib`; habria que contactar con el autor. El dataset de origen (NASA PCoE / BEST Lab) tiene sus propias condiciones de atribucion, que la model card reconoce.
 - Ausencia de hiperparametros y de cifras de error publicadas: no es posible auditar la capacidad del modelo ni reproducir los resultados sin acceso al repositorio del proyecto (`results/report.json`, `model.py`, `tools/export_case_csv.py`), cuyo enlace no figura en la informacion disponible.
-- Inconsistencia en metadatos: entre los tags de HuggingFace figura `PrintDefectCNN`, que no guarda relacion aparente con un regresor de gradient boosting para fresado; conviene tratar el etiquetado del repositorio con cautela. Las fechas de creacion y actualizacion (2026-10-19) figuran tal cual en los metadatos.
+- Inconsistencia en metadatos: entre los tags de Hugging Face figura `PrintDefectCNN`, que no guarda relacion aparente con un regresor de gradient boosting para fresado; conviene tratar el etiquetado del repositorio con cautela. Las fechas de creacion y actualizacion (2026-10-19) figuran tal cual en los metadatos.
 - Ausencia de quantizaciones y de artefactos alternativos (ONNX, pickle plano): la integracion queda atada al entorno Python/scikit-learn y a la version de la libreria usada al serializar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zainulabedin1/tool-wear-milling
+- Modelo en Hugging Face: https://huggingface.co/Zainulabedin1/tool-wear-milling
 - Dataset original (descarga directa, espejo PHM Society): https://phm-datasets.s3.amazonaws.com/NASA/3.+Milling.zip
 - Repositorio de datasets de la PHM Society (NASA): https://data.phmsociety.org/nasa/
 - Referencia del dataset: A. Agogino y K. Goebel, "Milling Data Set", BEST Lab, UC Berkeley, NASA Prognostics Center of Excellence Data Repository, 2007

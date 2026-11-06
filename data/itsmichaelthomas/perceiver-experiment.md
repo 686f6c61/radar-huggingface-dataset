@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `itsmichaelthomas/perceiver-experiment` es una implementacion propia y compacta en PyTorch de la arquitectura Perceiver, orientada a tareas de clasificacion. Lo publica el usuario itsmichaelthomas en HuggingFace y se distribuye bajo licencia BSD-3-Clause. Se trata de un repositorio experimental, no de un checkpoint preentrenado con fines de produccion: el propio autor indica de forma explicita que el fichero `model.safetensors` es unicamente un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado en benchmarks.
+El modelo `itsmichaelthomas/perceiver-experiment` es una implementacion propia y compacta en PyTorch de la arquitectura Perceiver, orientada a tareas de clasificacion. Lo publica el usuario itsmichaelthomas en Hugging Face y se distribuye bajo licencia BSD-3-Clause. Se trata de un repositorio experimental, no de un checkpoint preentrenado con fines de produccion: el propio autor indica de forma explicita que el fichero `model.safetensors` es unicamente un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado en benchmarks.
 
 El interes de esta ficha es acotado y realista. No estamos ante un modelo de lenguaje de gran escala, sino ante una implementacion de referencia de bajo coste (24.832 parametros totales) utilizable como punto de partida para experimentos controlados, revision de codigo o validacion de pipelines. La model card describe la configuracion como tamano "large" dentro de este repositorio concreto, lo que debe interpretarse como una etiqueta interna del experimento y no como una escala comparable a modelos generativos actuales.
 
@@ -76,5 +76,5 @@ No disponible. La informacion proporcionada no incluye referencias a otros model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsmichaelthomas/perceiver-experiment
+- Modelo en Hugging Face: https://huggingface.co/itsmichaelthomas/perceiver-experiment
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

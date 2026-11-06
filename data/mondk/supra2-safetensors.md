@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Supra2-Safetensors es una redistribucion empaquetada del modelo de generacion de imagenes SupraLabs/Supra2-IMG, publicada por el usuario mondk en HuggingFace. Su aportacion principal no es un nuevo modelo, sino un unico archivo `.safetensors` que fusiona los tres componentes del pipeline original (el transformer de difusion DiT, el codificador de texto T5 y el VAE) en un solo fichero, eliminando la necesidad de descargar por separado `google/flan-t5-base` y `stabilityai/sd-vae-ft-mse`.
+Supra2-Safetensors es una redistribucion empaquetada del modelo de generacion de imagenes SupraLabs/Supra2-IMG, publicada por el usuario mondk en Hugging Face. Su aportacion principal no es un nuevo modelo, sino un unico archivo `.safetensors` que fusiona los tres componentes del pipeline original (el transformer de difusion DiT, el codificador de texto T5 y el VAE) en un solo fichero, eliminando la necesidad de descargar por separado `google/flan-t5-base` y `stabilityai/sd-vae-ft-mse`.
 
 El modelo subyacente es un text-to-image de tipo diffusion transformer (DiT) con 297,5 millones de parametros en total, distribuidos en 104,1M para el DiT, 109,6M para el codificador T5 y 83,7M para el VAE. Se distribuye en dos variantes: una en fp32 integra (1,19 GB) y otra mixta (0,81 GB) con DiT y VAE en fp16 pero el codificador de texto forzado en fp32.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento del modelo base original ni de alternativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mondk/Supra2-Safetensors
+- Repositorio Hugging Face: https://huggingface.co/mondk/Supra2-Safetensors
 - Modelo base: https://huggingface.co/SupraLabs/Supra2-IMG
 - Codificador de texto: https://huggingface.co/google/flan-t5-base
 - VAE: https://huggingface.co/stabilityai/sd-vae-ft-mse

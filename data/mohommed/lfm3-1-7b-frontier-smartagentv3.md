@@ -88,7 +88,7 @@ La comparacion directa es dificil porque el modelo de mohommed no publica metric
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohommed/LFM3-1.7B-Frontier-SmartAgentv3
+- Modelo en Hugging Face: https://huggingface.co/mohommed/LFM3-1.7B-Frontier-SmartAgentv3
 - Modelo base: https://huggingface.co/mohommed/LFM3-1.7B-Frontier-SmartAgent
 - Repositorio GGUF: https://huggingface.co/mohommed/LFM3-1.7B-Frontier-SmartAgentv3-GGUF
 - Paper, blog o repositorio de entrenamiento: no disponible en la informacion proporcionada.

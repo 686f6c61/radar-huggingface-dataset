@@ -72,7 +72,7 @@ En ambos casos `experiment_valid=true` y `level_completed=true`, pero el resulta
 
 | Modelo | Relacion | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| azalio/laya-doom-map02 | fine-tuning especializado | no disponible | no disponible | 2 partidas completas publicadas (ver tabla anterior) | Apache-2.0 | HuggingFace |
+| azalio/laya-doom-map02 | fine-tuning especializado | no disponible | no disponible | 2 partidas completas publicadas (ver tabla anterior) | Apache-2.0 | Hugging Face |
 | convaiinnovations/laya (`typed-decisions`) | modelo base | no disponible | no disponible | no disponible | no disponible en la informacion aportada | referenciado como base |
 | Jev | alternativa mencionada por el autor | no disponible | no disponible | sin comparacion en igual configuracion | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ No se dispone de datos suficientes para una comparacion cuantitativa con alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/azalio/laya-doom-map02
+- Modelo en Hugging Face: https://huggingface.co/azalio/laya-doom-map02
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Repositorio doomLaya: https://github.com/azalio/doomLaya
 - Release v0.2.0 (videos e informes): https://github.com/azalio/doomLaya/releases/tag/v0.2.0

@@ -98,7 +98,7 @@ La comparativa se limita a parametros, licencia y disponibilidad: no se han publ
 
 ## Enlaces
 
-- Repositorio en HuggingFace (este espejo): https://huggingface.co/drawthingsai/flux-3-image-klein-base
+- Repositorio en Hugging Face (este espejo): https://huggingface.co/drawthingsai/flux-3-image-klein-base
 - Checkpoint base oficial: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
 - Checkpoint destilado: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Prompt upsampler: https://huggingface.co/black-forest-labs/flux-3-image-klein-pup

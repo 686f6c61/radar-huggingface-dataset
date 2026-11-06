@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`tfukkwang/code-factory-models` es un modelo de lenguaje publicado en HuggingFace por el usuario tfukkwang, cuyo repositorio contiene 4.022.468.096 parámetros almacenados en safetensors (aproximadamente 4,02 mil millones), junto con al menos un archivo en formato GGUF. El nombre del repositorio y la etiqueta `conversational` apuntan a un modelo orientado a generación de código y a diálogo multi-turno, aunque la ficha oficial no publica pipeline, licencia ni idiomas soportados, por lo que esas características no pueden confirmarse con la información disponible.
+`tfukkwang/code-factory-models` es un modelo de lenguaje publicado en Hugging Face por el usuario tfukkwang, cuyo repositorio contiene 4.022.468.096 parámetros almacenados en safetensors (aproximadamente 4,02 mil millones), junto con al menos un archivo en formato GGUF. El nombre del repositorio y la etiqueta `conversational` apuntan a un modelo orientado a generación de código y a diálogo multi-turno, aunque la ficha oficial no publica pipeline, licencia ni idiomas soportados, por lo que esas características no pueden confirmarse con la información disponible.
 
-El modelo se distribuye como pesos abiertos descargables y cuenta con la etiqueta `endpoints_compatible`, lo que indica que el repositorio está preparado para desplegarse en HuggingFace Inference Endpoints sin modificaciones del formato de pesos. Con 4,02 mil millones de parámetros, se sitúa en la franja de modelos "pequeños" que caben en una única GPU de consumo con cuantización, lo que lo hace relevante para escenarios de despliegue local con presupuesto de VRAM limitado.
+El modelo se distribuye como pesos abiertos descargables y cuenta con la etiqueta `endpoints_compatible`, lo que indica que el repositorio está preparado para desplegarse en Hugging Face Inference Endpoints sin modificaciones del formato de pesos. Con 4,02 mil millones de parámetros, se sitúa en la franja de modelos "pequeños" que caben en una única GPU de consumo con cuantización, lo que lo hace relevante para escenarios de despliegue local con presupuesto de VRAM limitado.
 
 La relevancia de esta ficha es limitada por la ausencia de documentación técnica: no hay paper, blog, dataset declarado ni resultados de evaluación publicados. La información aquí recogida procede exclusivamente de los metadatos del repositorio y del recuento de parámetros de los archivos safetensors.
 
@@ -36,7 +36,7 @@ Tampoco se dispone de información sobre el corpus de entrenamiento: no se decla
 
 - Generación de texto conversacional: la etiqueta `conversational` indica que el modelo está pensado para mantener diálogos multi-turno, aunque no se especifica la longitud de contexto que puede sostener.
 - Generación de código: el nombre del repositorio (`code-factory-models`) apunta a un uso orientado a código, si bien no hay documentación oficial que confirme lenguajes soportados ni calidad de generación.
-- Compatibilidad con HuggingFace Inference Endpoints: la etiqueta `endpoints_compatible` confirma que el formato de pesos puede desplegarse directamente en ese servicio.
+- Compatibilidad con Hugging Face Inference Endpoints: la etiqueta `endpoints_compatible` confirma que el formato de pesos puede desplegarse directamente en ese servicio.
 - Ejecución local vía GGUF: la presencia de archivos GGUF permite inferencia en CPU o GPU con llama.cpp y derivados (Ollama, LM Studio, koboldcpp).
 - Tool calling / function calling: no disponible (no se declara soporte).
 - Capacidades de agente y razonamiento multi-paso: no disponible (no se declara soporte).
@@ -46,7 +46,7 @@ Tampoco se dispone de información sobre el corpus de entrenamiento: no se decla
 ## Casos de uso
 
 - Asistente de código en local: con 4,02 mil millones de parámetros y versiones GGUF, el modelo puede ejecutarse en un portátil con GPU de 8 GB o incluso en CPU para autocompletado y generación de funciones, sin enviar código propietario a servicios externos. Es adecuado precisamente por el tamaño reducido y por el enfoque aparente en código, aunque la calidad real no está verificada.
-- Prototipado rápido con HuggingFace Inference Endpoints: la etiqueta `endpoints_compatible` permite levantar un endpoint gestionado sin convertir pesos, útil para validar un producto conversacional antes de invertir en infraestructura propia.
+- Prototipado rápido con Hugging Face Inference Endpoints: la etiqueta `endpoints_compatible` permite levantar un endpoint gestionado sin convertir pesos, útil para validar un producto conversacional antes de invertir en infraestructura propia.
 - Revisión de fragmentos de código en pipelines de CI: el modelo puede invocarse desde un job de integración continua para generar resúmenes de cambios, detectar patrones sospechosos o proponer parches, siempre que se valide su salida con tests automáticos dado que no hay métricas publicadas.
 - Generación de documentación técnica: a partir de firmas de funciones y bloques de código, el modelo puede redactar docstrings y documentación de API, tarea que tolera bien modelos pequeños y donde el coste por token importa.
 - Chatbot de soporte sobre documentación interna: desplegado con llama.cpp u Ollama sobre una base documental recuperada por RAG, el modelo puede responder preguntas técnicas en un entorno on-premise, algo relevante cuando los datos no pueden salir de la organización.
@@ -72,7 +72,7 @@ Las estimaciones siguientes se derivan del recuento de parámetros publicado (4,
 - Overhead adicional: hay que sumar la caché KV (dependiente del contexto configurado, no publicado) y el consumo del motor de inferencia, típicamente entre 0,5 y 2 GB adicionales.
 - GPU recomendadas: para FP16 completo, una GPU de 16 GB o más (RTX 4080/4090, A100 40 GB, L40S) evita recurrir a cuantización. Para cuantizaciones Q4 y Q5, basta una GPU de 6-8 GB.
 - Cabe en GPU de consumo: sí. Con FP16 cabe en RTX 4060 Ti 16 GB, RTX 4080, RTX 4090; con Q4/Q5 cabe en RTX 3060 12 GB, RTX 4060 8 GB, RTX 3070 y similares. En CPU, con Q4_K_M, es viable con 8-16 GB de RAM, aunque con latencia alta.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y koboldcpp para los archivos GGUF; vLLM, Text Generation Inference (TGI) y Transformers de HuggingFace para los safetensors; HuggingFace Inference Endpoints de forma directa según la etiqueta `endpoints_compatible`.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y koboldcpp para los archivos GGUF; vLLM, Text Generation Inference (TGI) y Transformers de Hugging Face para los safetensors; Hugging Face Inference Endpoints de forma directa según la etiqueta `endpoints_compatible`.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia por petición.
 
 ## Comparativa con modelos similares
@@ -102,6 +102,6 @@ Diferencias clave: las tres alternativas declaran licencia explícita y publican
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tfukkwang/code-factory-models
+- Repositorio en Hugging Face: https://huggingface.co/tfukkwang/code-factory-models
 - Búsqueda web realizada: no ha devuelto ningún resultado relacionado con el modelo. Los enlaces obtenidos correspondían a medios de noticias generalistas sin relación con el proyecto (informer.rs y subdominios), por lo que se omiten.
 - Paper, blog técnico, repositorio de código, demo o dataset asociados: no disponible en la información proporcionada.

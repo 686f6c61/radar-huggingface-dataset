@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `subhodipsaha/act_stack_three_cubes_08_19` es una política de robótica basada en Action Chunking with Transformers (ACT), entrenada mediante aprendizaje por imitación con datos de teleoperación. El autor, subhodipsaha, ha utilizado la librería LeRobot de HuggingFace para entrenar y publicar el modelo, cuyo objetivo es la manipulación robótica de apilado de tres cubos con un brazo SO-101. El modelo predice secuencias de acciones (action chunks) en lugar de pasos individuales, lo que permite ejecuciones más fluidas y robustas en tareas de manipulación.
+El modelo `subhodipsaha/act_stack_three_cubes_08_19` es una política de robótica basada en Action Chunking with Transformers (ACT), entrenada mediante aprendizaje por imitación con datos de teleoperación. El autor, subhodipsaha, ha utilizado la librería LeRobot de Hugging Face para entrenar y publicar el modelo, cuyo objetivo es la manipulación robótica de apilado de tres cubos con un brazo SO-101. El modelo predice secuencias de acciones (action chunks) en lugar de pasos individuales, lo que permite ejecuciones más fluidas y robustas en tareas de manipulación.
 
-El modelo tiene aproximadamente 51,7 millones de parámetros y se distribuye bajo licencia Apache-2.0, lo que facilita su uso comercial y su integración en proyectos de investigación y desarrollo. Su relevancia radica en que representa un ejemplo práctico de aplicación de ACT sobre hardware de bajo coste, demostrando que es posible entrenar políticas de manipulación con datasets relativamente pequeños y desplegarlas en robots asequibles. Al estar publicado en HuggingFace con el formato de LeRobot, cualquier investigador o desarrollador puede reproducir el entrenamiento o evaluar la política en su propio hardware.
+El modelo tiene aproximadamente 51,7 millones de parámetros y se distribuye bajo licencia Apache-2.0, lo que facilita su uso comercial y su integración en proyectos de investigación y desarrollo. Su relevancia radica en que representa un ejemplo práctico de aplicación de ACT sobre hardware de bajo coste, demostrando que es posible entrenar políticas de manipulación con datasets relativamente pequeños y desplegarlas en robots asequibles. Al estar publicado en Hugging Face con el formato de LeRobot, cualquier investigador o desarrollador puede reproducir el entrenamiento o evaluar la política en su propio hardware.
 
 ## Especificaciones tecnicas
 
@@ -69,9 +69,9 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/subhodipsaha/act_stack_three_cubes_08_19
+- Modelo en Hugging Face: https://huggingface.co/subhodipsaha/act_stack_three_cubes_08_19
 - Dataset de entrenamiento: https://huggingface.co/datasets/subhodipsaha/so101_stack_three_cubes_08_19
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index
-- Perfil del autor en HuggingFace: https://huggingface.co/subhodipsaha
+- Perfil del autor en Hugging Face: https://huggingface.co/subhodipsaha

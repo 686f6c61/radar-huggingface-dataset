@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos TTS en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hsc666/Kokoro-82M-v1.1-zh-ONNX-webgpu
+- Modelo en Hugging Face: https://huggingface.co/hsc666/Kokoro-82M-v1.1-zh-ONNX-webgpu
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M-v1.1-zh
 - Exportacion ONNX upstream: https://huggingface.co/onnx-community/Kokoro-82M-v1.1-zh-ONNX
 - Script de reconstruccion: `scripts/make_mixed_fp16.py` (incluido en el repositorio)

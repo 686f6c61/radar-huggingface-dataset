@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper large-v3-turbo-hindi es un ajuste fino mediante LoRA del modelo de reconocimiento automático de voz openai/whisper-large-v3-turbo, publicado por el usuario annotehrushi en HuggingFace. El objetivo es mejorar la transcripción de hindi (hi-IN) sin reentrenar el modelo completo: se congela la base y se entrenan únicamente 27,8 millones de parámetros (3,33% del total) mediante adaptadores de bajo rango aplicados a las proyecciones de atención y a las capas feed-forward. El resultado declarado es una reducción del error de palabra (OIWER) del 37,98% al 22,16% en el conjunto de evaluación Monsoon hi-IN, es decir, 15,82 puntos porcentuales menos (un 41,7% de mejora relativa).
+Whisper large-v3-turbo-hindi es un ajuste fino mediante LoRA del modelo de reconocimiento automático de voz openai/whisper-large-v3-turbo, publicado por el usuario annotehrushi en Hugging Face. El objetivo es mejorar la transcripción de hindi (hi-IN) sin reentrenar el modelo completo: se congela la base y se entrenan únicamente 27,8 millones de parámetros (3,33% del total) mediante adaptadores de bajo rango aplicados a las proyecciones de atención y a las capas feed-forward. El resultado declarado es una reducción del error de palabra (OIWER) del 37,98% al 22,16% en el conjunto de evaluación Monsoon hi-IN, es decir, 15,82 puntos porcentuales menos (un 41,7% de mejora relativa).
 
 El modelo mantiene la arquitectura encoder-decoder original de Whisper, con 808.878.080 parámetros totales, entrada de audio en ventanas de 30 segundos y un vocabulario multilingüe. Al partir de la variante "turbo", el decodificador tiene solo 4 capas en lugar de las 32 de large-v3, lo que reduce considerablemente el coste de decodificación a cambio de una pérdida mínima de precisión. El repositorio ocupa 1,6 GB y los pesos están en formato safetensors, con compatibilidad declarada con transformers e Inference Endpoints.
 
@@ -70,7 +70,7 @@ El model-index oficial registra un único resultado: tarea automatic-speech-reco
 - VRAM estimada para inferencia: entre 2 y 4 GB en fp16 contando activaciones; alrededor de 1 GB en int8 con CTranslate2; por debajo de 1 GB con cuantizaciones GGML de 4 o 5 bits.
 - Cabe en GPU de consumo sin problema: RTX 3060 12 GB, RTX 4060 8 GB, RTX 3050 8 GB, e incluso tarjetas de 4 GB en cuantizacion int8.
 - Para entrenamiento con LoRA el autor uso una NVIDIA A10G de 24 GB; un ajuste equivalente es viable en GPUs de 16-24 GB (RTX 4090, RTX A4000, L4).
-- Opciones de despliegue: transformers (ruta oficial documentada), CTranslate2/faster-whisper, whisper.cpp con conversion a GGML/GGUF, y HuggingFace Inference Endpoints (el repositorio esta marcado como `endpoints_compatible`). No se documenta integracion con vLLM ni TGI.
+- Opciones de despliegue: transformers (ruta oficial documentada), CTranslate2/faster-whisper, whisper.cpp con conversion a GGML/GGUF, y Hugging Face Inference Endpoints (el repositorio esta marcado como `endpoints_compatible`). No se documenta integracion con vLLM ni TGI.
 - Latencia y throughput: no disponible. Como referencia arquitectonica, la variante turbo reduce el decodificador a 4 capas frente a las 32 de large-v3, lo que acelera la generacion, pero no se aportan medidas concretas para este ajuste.
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ No se dispone de resultados comparativos verificados con alternativas especializ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/annotehrushi/whisper-large-v3-turbo-hindi
+- Modelo en Hugging Face: https://huggingface.co/annotehrushi/whisper-large-v3-turbo-hindi
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Conjunto de datos de evaluacion: https://huggingface.co/datasets/VoiceArena/MonsoonASR-Open-ASR-leaderboard-hi-IN
 - Paper de la arquitectura Whisper (Robust Speech Recognition via Large-Scale Weak Supervision): https://arxiv.org/abs/2212.04356

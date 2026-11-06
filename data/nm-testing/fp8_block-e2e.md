@@ -4,7 +4,7 @@
 
 El modelo `nm-testing/fp8_block-e2e` es un artefacto de prueba publicado por el usuario `nm-testing`, presumiblemente vinculado a Neural Magic, especializado en compresión de modelos mediante la librería `compressed-tensors`. El nombre del repositorio indica que se trata de un experimento de cuantización FP8 por bloques (block-wise) aplicado a una arquitectura base Llama, con un total de 1.100.048.384 parámetros (~1,1 mil millones). El repositorio contiene pesos en formato `safetensors` y ocupa 3,7 GB, lo que sugiere que los pesos almacenados no están completamente cuantizados a FP8 (de ser así ocuparían aproximadamente 1,1 GB), o que se incluyen archivos adicionales.
 
-Este modelo no está pensado para uso productivo, sino como banco de pruebas para validar el flujo de compresión FP8 de extremo a extremo (end-to-end) dentro del ecosistema de herramientas de Neural Magic. La ausencia de licencia, documentación y benchmarks en la ficha de HuggingFace confirma su carácter experimental. A pesar de ello, su arquitectura Llama y su tamaño moderado lo convierten en un candidato para estudiar el impacto de la cuantización FP8 por bloques en modelos pequeños.
+Este modelo no está pensado para uso productivo, sino como banco de pruebas para validar el flujo de compresión FP8 de extremo a extremo (end-to-end) dentro del ecosistema de herramientas de Neural Magic. La ausencia de licencia, documentación y benchmarks en la ficha de Hugging Face confirma su carácter experimental. A pesar de ello, su arquitectura Llama y su tamaño moderado lo convierten en un candidato para estudiar el impacto de la cuantización FP8 por bloques en modelos pequeños.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada para inferencia: con 1.100.048.384 parámetros en FP8, los pesos ocuparían aproximadamente 1,1 GB (1 byte por parámetro). Si se cargan en FP16, ocuparían ~2,2 GB. El tamaño del repositorio (3,7 GB) sugiere que los safetensors pueden estar en una precisión mayor o incluir metadatos adicionales.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM sería suficiente para inferencia en FP8 (por ejemplo, NVIDIA GTX 1650, RTX 3050, o incluso CPU con suficiente RAM).
 - En consumer GPU: sí, cabe en GPUs de gama baja como la RTX 3060 (12 GB) o RTX 4060 (8 GB) sin problemas.
-- Opciones de despliegue: al ser un modelo Llama con pesos safetensors, puede cargarse con HuggingFace Transformers, vLLM, llama.cpp (si se convierte a GGUF) u Ollama. La compatibilidad con FP8 depende del backend; `compressed-tensors` ofrece integración con vLLM para inferencia eficiente.
+- Opciones de despliegue: al ser un modelo Llama con pesos safetensors, puede cargarse con Hugging Face Transformers, vLLM, llama.cpp (si se convierte a GGUF) u Ollama. La compatibilidad con FP8 depende del backend; `compressed-tensors` ofrece integración con vLLM para inferencia eficiente.
 - Latencia y throughput: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -66,5 +66,5 @@ No se dispone de modelos comparables directos en la información proporcionada. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nm-testing/fp8_block-e2e
+- Repositorio Hugging Face: https://huggingface.co/nm-testing/fp8_block-e2e
 - Librería `compressed-tensors` (referencia por tag): no se proporciona enlace directo, pero es parte del ecosistema de Neural Magic.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lovro77/phi35-mini-netlograg-v3 es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario lovro77, construido sobre unsloth/phi-3.5-mini-instruct-bnb-4bit, es decir, la version cuantizada a 4 bits de Phi-3.5-mini-instruct de Microsoft. El nombre del repositorio sugiere un ajuste orientado a analisis de logs de red con generacion aumentada por recuperacion (RAG), aunque la model card no documenta ni el dataset ni el procedimiento de entrenamiento empleados.
+lovro77/phi35-mini-netlograg-v3 es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario lovro77, construido sobre unsloth/phi-3.5-mini-instruct-bnb-4bit, es decir, la version cuantizada a 4 bits de Phi-3.5-mini-instruct de Microsoft. El nombre del repositorio sugiere un ajuste orientado a analisis de logs de red con generacion aumentada por recuperacion (RAG), aunque la model card no documenta ni el dataset ni el procedimiento de entrenamiento empleados.
 
 La relevancia de esta publicacion es limitada desde el punto de vista tecnico: el repositorio ocupa 0,1 GB, un tamano muy inferior al que requeriria un modelo de 3.800 millones de parametros en safetensors (unos 7,6 GB en fp16 y alrededor de 2,2 GB en 4 bits). Esto apunta a que se han subido unicamente adaptadores LoRA o los pesos en un formato parcial, sin que la ficha lo aclare. El repositorio no registra descargas ni valoraciones y no incluye resultados de evaluacion.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| lovro77/phi35-mini-netlograg-v3 | No disponible (base de 3.800 M) | No disponible (base de 128.000 tokens) | Apache 2.0 declarada | HuggingFace, 0 descargas |
-| microsoft/Phi-3.5-mini-instruct | 3.800 M | 128.000 tokens | MIT | HuggingFace, ampliamente desplegado |
-| meta-llama/Llama-3.2-3B-Instruct | 3.200 M | 128.000 tokens | Llama 3.2 Community License | HuggingFace, con restricciones de uso |
-| Qwen/Qwen2.5-3B-Instruct | 3.090 M | 32.000 tokens nativos (ampliable con YaRN) | Qwen Research License | HuggingFace |
+| lovro77/phi35-mini-netlograg-v3 | No disponible (base de 3.800 M) | No disponible (base de 128.000 tokens) | Apache 2.0 declarada | Hugging Face, 0 descargas |
+| microsoft/Phi-3.5-mini-instruct | 3.800 M | 128.000 tokens | MIT | Hugging Face, ampliamente desplegado |
+| meta-llama/Llama-3.2-3B-Instruct | 3.200 M | 128.000 tokens | Llama 3.2 Community License | Hugging Face, con restricciones de uso |
+| Qwen/Qwen2.5-3B-Instruct | 3.090 M | 32.000 tokens nativos (ampliable con YaRN) | Qwen Research License | Hugging Face |
 
 El rendimiento comparado en benchmarks no se puede establecer porque este ajuste no publica metricas. Cualquier eleccion entre estas alternativas deberia basarse en una evaluacion propia sobre el dominio de uso.
 
@@ -84,8 +84,8 @@ El rendimiento comparado en benchmarks no se puede establecer porque este ajuste
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lovro77/phi35-mini-netlograg-v3
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/phi-3.5-mini-instruct-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/lovro77/phi35-mini-netlograg-v3
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/phi-3.5-mini-instruct-bnb-4bit
 - Modelo original de Microsoft: https://huggingface.co/microsoft/Phi-3.5-mini-instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Documentacion de TRL: https://huggingface.co/docs/trl

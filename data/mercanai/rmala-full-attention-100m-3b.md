@@ -109,8 +109,8 @@ El autor advierte que HoLA usa un backbone distinto (GatedDeltaNet con caché fi
 
 ## Enlaces
 
-- Modelo en HuggingFace (MercanAI): https://huggingface.co/MercanAI/rmala-full-attention-100m-3b
-- Espejo en HuggingFace (Ethosoft): https://huggingface.co/Ethosoft/rmala-full-attention-100m-3b
+- Modelo en Hugging Face (MercanAI): https://huggingface.co/MercanAI/rmala-full-attention-100m-3b
+- Espejo en Hugging Face (Ethosoft): https://huggingface.co/Ethosoft/rmala-full-attention-100m-3b
 - Protocolo de entrenamiento y evaluación: https://huggingface.co/MercanAI/rmala-full-attention-100m-3b/blob/main/LM100_PROTOCOL.md
 - Configuración de entrenamiento: https://huggingface.co/MercanAI/rmala-full-attention-100m-3b/blob/main/training_config.json
 - Métricas completas de validación y test: https://huggingface.co/MercanAI/rmala-full-attention-100m-3b/blob/main/evaluation.json

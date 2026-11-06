@@ -2,9 +2,9 @@
 
 ## Resumen
 
-docmind-lite-0.5b es un modelo publicado en HuggingFace por el usuario markuz89 bajo el identificador `markuz89/docmind-lite-0.5b`. Se trata de un modelo de aproximadamente 494 millones de parametros (0,5B), segun el recuento real de los pesos en formato safetensors incluidos en el repositorio. El repositorio ocupa 2,7 GB y fue creado el 17 de septiembre de 2026, con ultima actualizacion el 19 de septiembre de 2026. Acumula 37 descargas y ninguna marca de "me gusta" en el momento de redactar esta ficha.
+docmind-lite-0.5b es un modelo publicado en Hugging Face por el usuario markuz89 bajo el identificador `markuz89/docmind-lite-0.5b`. Se trata de un modelo de aproximadamente 494 millones de parametros (0,5B), segun el recuento real de los pesos en formato safetensors incluidos en el repositorio. El repositorio ocupa 2,7 GB y fue creado el 17 de septiembre de 2026, con ultima actualizacion el 19 de septiembre de 2026. Acumula 37 descargas y ninguna marca de "me gusta" en el momento de redactar esta ficha.
 
-El etiquetado del repositorio incluye `gguf`, `endpoints_compatible`, `region:us` y `conversational`. Esto indica que el modelo esta orientado a tareas conversacionales y que se distribuye (al menos parcialmente) en formato GGUF, ademas de ser compatible con el despliegue en Inference Endpoints de HuggingFace. El nombre "docmind" sugiere un enfoque hacia el procesamiento de documentos, aunque esta interpretacion no puede confirmarse con los datos disponibles.
+El etiquetado del repositorio incluye `gguf`, `endpoints_compatible`, `region:us` y `conversational`. Esto indica que el modelo esta orientado a tareas conversacionales y que se distribuye (al menos parcialmente) en formato GGUF, ademas de ser compatible con el despliegue en Inference Endpoints de Hugging Face. El nombre "docmind" sugiere un enfoque hacia el procesamiento de documentos, aunque esta interpretacion no puede confirmarse con los datos disponibles.
 
 La relevancia de este modelo radica en su tamano reducido, que lo situa en la categoria de modelos ligeros aptos para inferencia en hardware modesto, incluso en CPU o GPU de gama de consumo. Sin embargo, la informacion publica es muy limitada: no se especifican arquitectura, licencia, idiomas soportados, longitud de contexto ni resultados de benchmarks, por lo que cualquier evaluacion en profundidad requerira inspeccionar directamente los archivos del repositorio.
 
@@ -62,7 +62,7 @@ Las siguientes estimaciones son genericas para un modelo de aproximadamente 0,5B
 - GPU recomendadas: cualquier GPU con 2 GB o mas de VRAM es suficiente para FP16. Una RTX 3060, RTX 4060, RTX 4090 o superior ofreceran un margen amplio y alta velocidad. GPU de centro de datos (A100, H100) no son necesarias salvo para servir muchas peticiones concurrentes.
 - Viabilidad en GPU de consumo: si, cabe holgadamente en practicamente cualquier GPU de consumo moderna e incluso en iGPU con memoria compartida suficiente.
 - Viabilidad en CPU: al distribuirse en GGUF, es apto para inferencia en CPU con llama.cpp, con velocidades razonables en procesadores modernos.
-- Opciones de despliegue: llama.cpp y Ollama (por el formato GGUF), vLLM y TGI (para safetensors en GPU), y HuggingFace Inference Endpoints (la etiqueta `endpoints_compatible` lo indica).
+- Opciones de despliegue: llama.cpp y Ollama (por el formato GGUF), vLLM y TGI (para safetensors en GPU), y Hugging Face Inference Endpoints (la etiqueta `endpoints_compatible` lo indica).
 - Latencia y throughput estimados: no disponible. Dependera fuertemente del hardware, la cuantizacion y la longitud de contexto, que se desconoce.
 
 ## Comparativa con modelos similares
@@ -89,5 +89,5 @@ La comparacion se limita a parametros, contexto, licencia y formato; no se dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/markuz89/docmind-lite-0.5b
+- Hugging Face: https://huggingface.co/markuz89/docmind-lite-0.5b
 - Paper, blog, repositorio o demo adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los enlaces encontrados trataban sobre alojamientos para mascotas y no guardan relacion con esta ficha.

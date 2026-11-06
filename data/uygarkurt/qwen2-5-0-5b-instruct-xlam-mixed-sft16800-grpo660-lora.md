@@ -75,9 +75,9 @@ GRPO mejora ligeramente MMLU, IFEval, xLAM ETC, xLAM FNA y BFCL single-turn, per
 
 | Modelo | Parámetros | Contexto | Rendimiento en tool calling | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| Este adaptador, SFT + GRPO | 0,5B base + LoRA | No verificado para el adaptador; hasta 128K en el base según la página de Ollama consultada | xLAM ETC 81,90 %; xLAM FNA 98,03 %; BFCL single-turn 57,42 % | No disponible | HuggingFace |
-| Qwen2.5-0.5B-Instruct | 0,5B | Hasta 128K según la página de Ollama consultada, sin verificación adicional | No evaluado en esta ficha; sin especialización declarada en tool calling | No disponible en la información proporcionada | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,5B | No disponible | No disponible | No disponible en la información proporcionada | HuggingFace |
+| Este adaptador, SFT + GRPO | 0,5B base + LoRA | No verificado para el adaptador; hasta 128K en el base según la página de Ollama consultada | xLAM ETC 81,90 %; xLAM FNA 98,03 %; BFCL single-turn 57,42 % | No disponible | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 0,5B | Hasta 128K según la página de Ollama consultada, sin verificación adicional | No evaluado en esta ficha; sin especialización declarada en tool calling | No disponible en la información proporcionada | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,5B | No disponible | No disponible | No disponible en la información proporcionada | Hugging Face |
 
 La comparación directa con alternativas especializadas en tool calling no está disponible en la información proporcionada. Qwen2.5-1.5B-Instruct se incluye como alternativa de mayor tamaño dentro de la misma familia, pero no se aportan métricas comparables.
 
@@ -98,7 +98,7 @@ La comparación directa con alternativas especializadas en tool calling no está
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft16800-grpo660-lora)
+- [Modelo en Hugging Face](https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft16800-grpo660-lora)
 - [Modelo base Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
 - [Dataset xlam-tool-calling-mixed](https://huggingface.co/datasets/uygarkurt/xlam-tool-calling-mixed)
 - [Adaptador SFT inicial](https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft16800-lora)

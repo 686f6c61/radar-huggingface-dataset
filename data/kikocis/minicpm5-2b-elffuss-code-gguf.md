@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM5-2B-Elffuss-Code-GGUF es un ajuste (finetune) especializado del modelo MiniCPM5-2B de OpenBMB, publicado por el usuario KikoCis en HuggingFace. Su propósito es servir como agente de código dentro de Elffuss Code, un IDE que se ejecuta en el navegador y que permite leer proyectos, localizar errores, editar líneas concretas, verificar correcciones y responder citando archivos reales. El modelo se publica en formato GGUF cuantizado (Q8_0 con embeddings y cabeza de salida en BF16), pensado para ejecución local mediante llama.cpp u Ollama.
+MiniCPM5-2B-Elffuss-Code-GGUF es un ajuste (finetune) especializado del modelo MiniCPM5-2B de OpenBMB, publicado por el usuario KikoCis en Hugging Face. Su propósito es servir como agente de código dentro de Elffuss Code, un IDE que se ejecuta en el navegador y que permite leer proyectos, localizar errores, editar líneas concretas, verificar correcciones y responder citando archivos reales. El modelo se publica en formato GGUF cuantizado (Q8_0 con embeddings y cabeza de salida en BF16), pensado para ejecución local mediante llama.cpp u Ollama.
 
 El proyecto se caracteriza por un ciclo de publicación diario: cada día se entrena una versión nueva y se evalúa sobre un conjunto de tareas reservadas (held-out) con métricas públicas, de modo que la evolución completa es auditable. Con aproximadamente 2.500 millones de parámetros y licencia Apache-2.0, es un candidato relevante para casos de uso on-device donde se necesita un agente de código ligero con soporte de tool calling.
 

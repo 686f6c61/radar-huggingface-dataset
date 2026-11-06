@@ -71,6 +71,6 @@ No disponible. No se dispone de datos comparativos sobre otros adaptadores LoRA 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Damilya/qwen3-8b-rest-adapter
+- Modelo en Hugging Face: https://huggingface.co/Damilya/qwen3-8b-rest-adapter
 - Modelo base: https://huggingface.co/unsloth/qwen3-8b-unsloth-bnb-4bit
 - TRL (biblioteca de entrenamiento): https://github.com/huggingface/trl

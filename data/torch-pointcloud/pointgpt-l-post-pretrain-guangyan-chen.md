@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / puntos | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pointgpt-l.post-pretrain.guangyan-chen | 360,4 M | 8192 puntos (ejemplo) | Clasificacion 3D (87 clases) | MIT | HuggingFace + torch-pointcloud |
+| pointgpt-l.post-pretrain.guangyan-chen | 360,4 M | 8192 puntos (ejemplo) | Clasificacion 3D (87 clases) | MIT | Hugging Face + torch-pointcloud |
 | PointGPT-S / PointGPT-B (familia original) | no disponible | no disponible | Clasificacion / segmentacion 3D | MIT | GitHub CGuangyan-BIT/PointGPT |
 | Point-MAE | no disponible | no disponible | Preentrenamiento 3D (masked autoencoding) | MIT (repo original) | GitHub |
 | Point-BERT | no disponible | no disponible | Preentrenamiento 3D (BERT-style) | MIT (repo original) | GitHub |
@@ -86,12 +86,12 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 - Riesgo de degradación ante nubes de puntos con ruido, oclusiones o densidades muy distintas a las del entrenamiento.
 - No se publican métricas de benchmarks ni curvas de validación en la información disponible.
 - Licencia MIT permite uso comercial, pero se recomienda revisar la licencia del dataset LabeledHybrid y del repositorio original CGuangyan-BIT/PointGPT.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta; no hay evidencia de uso en producción.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta; no hay evidencia de uso en producción.
 - Requiere la librería `torch-pointcloud` y familiaridad con su API de transformación y collate; no es un pipeline estándar de transformers.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/pointgpt-l.post-pretrain.guangyan-chen
+- Hugging Face: https://huggingface.co/torch-pointcloud/pointgpt-l.post-pretrain.guangyan-chen
 - Modelo base preentrenado: https://huggingface.co/torch-pointcloud/pointgpt-l.pretrain.guangyan-chen
 - Paper PointGPT (arXiv): https://arxiv.org/abs/2305.11487
 - Repositorio original: https://github.com/CGuangyan-BIT/PointGPT

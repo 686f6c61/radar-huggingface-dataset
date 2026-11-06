@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `Sid2623/Indian_STT_int8_onnx_models`, publicado por el usuario Sid2623 en HuggingFace, es una coleccion de artefactos de reconocimiento automatico del habla (STT, speech-to-text) distribuidos en formato ONNX y aparentemente cuantizados a int8, segun se deduce de la propia denominacion del repositorio. El nombre sugiere que los modelos estan orientados a lenguas de la India, aunque la model card no confirma el listado concreto de idiomas. La licencia declarada es Apache 2.0, lo que permite uso comercial sin restricciones adicionales mas alla de las habituales de atribucion.
+El repositorio `Sid2623/Indian_STT_int8_onnx_models`, publicado por el usuario Sid2623 en Hugging Face, es una coleccion de artefactos de reconocimiento automatico del habla (STT, speech-to-text) distribuidos en formato ONNX y aparentemente cuantizados a int8, segun se deduce de la propia denominacion del repositorio. El nombre sugiere que los modelos estan orientados a lenguas de la India, aunque la model card no confirma el listado concreto de idiomas. La licencia declarada es Apache 2.0, lo que permite uso comercial sin restricciones adicionales mas alla de las habituales de atribucion.
 
 La relevancia de este tipo de publicacion radica en el formato: los pesos en ONNX con cuantizacion int8 estan pensados para inferencia en CPU y en hardware de borde, sin necesidad de GPUs dedicadas ni de frameworks de aprendizaje profundo completos en tiempo de ejecucion. Esto encaja con escenarios de transcripcion de voz en dispositivo, servicios de bajo coste o despliegues con requisitos estrictos de latencia y memoria.
 
-Ahora bien, la informacion disponible es minima. La model card unicamente contiene el bloque de metadatos con la licencia, sin descripcion tecnica, sin detalles de arquitectura, sin datos de entrenamiento y sin resultados de evaluacion. El repositorio ocupa 4,5 GB, tiene cero descargas y cero likes en el momento de la consulta, y no declara pipeline ni idiomas en los metadatos de HuggingFace. Por tanto, la mayor parte de las especificaciones que siguen deben considerarse no disponibles.
+Ahora bien, la informacion disponible es minima. La model card unicamente contiene el bloque de metadatos con la licencia, sin descripcion tecnica, sin detalles de arquitectura, sin datos de entrenamiento y sin resultados de evaluacion. El repositorio ocupa 4,5 GB, tiene cero descargas y cero likes en el momento de la consulta, y no declara pipeline ni idiomas en los metadatos de Hugging Face. Por tanto, la mayor parte de las especificaciones que siguen deben considerarse no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -76,6 +76,6 @@ No disponible. La informacion proporcionada no identifica la arquitectura base, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sid2623/Indian_STT_int8_onnx_models
+- Repositorio en Hugging Face: https://huggingface.co/Sid2623/Indian_STT_int8_onnx_models
 
 No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demostraciones.

@@ -1,7 +1,7 @@
 # obuladinnesai/claim-photo-integrity-detector
 
 ## Resumen
-`obuladinnesai/claim-photo-integrity-detector` es un repositorio alojado en HuggingFace por el usuario obuladinnesai. Por el nombre del identificador, el modelo parece orientado a evaluar la integridad de fotografias asociadas a siniestros o reclamaciones (por ejemplo, peritajes de seguros), presumiblemente para detectar manipulacion o generacion sintetica. Sin embargo, esta interpretacion se deduce unicamente del nombre: no hay documentacion tecnica que la confirme.
+`obuladinnesai/claim-photo-integrity-detector` es un repositorio alojado en Hugging Face por el usuario obuladinnesai. Por el nombre del identificador, el modelo parece orientado a evaluar la integridad de fotografias asociadas a siniestros o reclamaciones (por ejemplo, peritajes de seguros), presumiblemente para detectar manipulacion o generacion sintetica. Sin embargo, esta interpretacion se deduce unicamente del nombre: no hay documentacion tecnica que la confirme.
 
 La model card publicada es practicamente vacia. Se limita a declarar la licencia `apache-2.0` y no incluye descripcion, arquitectura, datos de entrenamiento, idiomas, ni ejemplos de uso. El campo `pipeline` aparece como no disponible y no se declaran idiomas soportados.
 
@@ -62,7 +62,7 @@ No disponible. Los resultados de busqueda hacen referencia a servicios web gener
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| claim-photo-integrity-detector | no disponible | no disponible | apache-2.0 | HuggingFace |
+| claim-photo-integrity-detector | no disponible | no disponible | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -75,7 +75,7 @@ No disponible. Los resultados de busqueda hacen referencia a servicios web gener
 - No apto como prueba concluyente en produccion: cualquier uso en antifraude debe acompanarse de revision humana y de controles adicionales.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/obuladinnesai/claim-photo-integrity-detector
+- Hugging Face: https://huggingface.co/obuladinnesai/claim-photo-integrity-detector
 - wedetect.ai AI Image Checker: https://wedetect.ai/ai-image-checker
 - isitai.com AI Image Detector: https://isitai.com/ai-image-detector
 - free.ai Detector: https://free.ai/detector/

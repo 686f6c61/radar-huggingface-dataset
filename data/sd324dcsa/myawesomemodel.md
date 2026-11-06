@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un repositorio publicado en HuggingFace por el usuario SD324DCSA bajo licencia MIT y etiquetado con las librerías `transformers` y `pytorch`. El nombre del modelo, así como los nombres de los modelos de comparación de su model card ("Model1", "Model2", "Model1-v2"), corresponden a marcadores de posición propios de una plantilla genérica, y el tamaño del repositorio es de 0,0 GB, por lo que no contiene pesos descargables.
+MyAwesomeModel es un repositorio publicado en Hugging Face por el usuario SD324DCSA bajo licencia MIT y etiquetado con las librerías `transformers` y `pytorch`. El nombre del modelo, así como los nombres de los modelos de comparación de su model card ("Model1", "Model2", "Model1-v2"), corresponden a marcadores de posición propios de una plantilla genérica, y el tamaño del repositorio es de 0,0 GB, por lo que no contiene pesos descargables.
 
 La model card describe un supuesto modelo de lenguaje orientado al razonamiento, con mejoras en profundidad de razonamiento, reducción de alucinaciones y soporte de function calling, e incluye una tabla de resultados de benchmarks con valores entre 0,51 y 0,83. Sin embargo, existen contradicciones internas relevantes: las etiquetas del repositorio indican arquitectura `bert` y pipeline `feature-extraction`, mientras que el texto de la model card describe un modelo conversacional de razonamiento con modo "thinking" y uso de decenas de miles de tokens por pregunta.
 
@@ -23,7 +23,7 @@ Por todo ello, no es posible confirmar datos esenciales como el número de pará
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no permite determinar la arquitectura del modelo. Las etiquetas de HuggingFace apuntan a `bert` y al pipeline `feature-extraction`, lo que sugeriria un modelo encoder orientado a representaciones, mientras que el texto de la model card describe caracteristicas propias de un modelo decoder generativo con razonamiento extendido (menciona un aumento del uso medio de tokens por pregunta de 12K a 23K). No se especifica si se trata de un transformer denso, un MoE, un modelo hibrido ni ninguna otra variante.
+La informacion disponible no permite determinar la arquitectura del modelo. Las etiquetas de Hugging Face apuntan a `bert` y al pipeline `feature-extraction`, lo que sugeriria un modelo encoder orientado a representaciones, mientras que el texto de la model card describe caracteristicas propias de un modelo decoder generativo con razonamiento extendido (menciona un aumento del uso medio de tokens por pregunta de 12K a 23K). No se especifica si se trata de un transformer denso, un MoE, un modelo hibrido ni ninguna otra variante.
 
 Tampoco se proporcionan datos sobre el entrenamiento: no se indica el numero de tokens, la composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO u otras. La model card menciona de forma generica "mayores recursos computacionales" y "mecanismos de optimizacion algoritmica durante el post-entrenamiento", sin aportar detalles tecnicos verificables.
 
@@ -114,7 +114,7 @@ No es posible establecer una comparativa fiable. La model card referencia tres m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SD324DCSA/MyAwesomeModel
+- Hugging Face: https://huggingface.co/SD324DCSA/MyAwesomeModel
 - Repositorio de codigo: mencionado en la model card, pero sin URL proporcionada ("no disponible").
 - Sitio web oficial y plataforma de chat/API: mencionados en la model card, pero sin URL proporcionada ("no disponible").
 - Paper: no disponible.

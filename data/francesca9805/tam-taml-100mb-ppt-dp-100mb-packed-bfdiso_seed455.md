@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/tam-taml-100mb-ppt-Dp-100mb-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/tam_taml_100mb`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros (aproximadamente 125 millones) y un tamano de repositorio de 0,3 GB, lo que lo situa en la categoria de modelos pequenos aptos para inferencia en hardware muy modesto, incluida CPU.
+El modelo `francesca9805/tam-taml-100mb-ppt-Dp-100mb-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/tam_taml_100mb`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros (aproximadamente 125 millones) y un tamano de repositorio de 0,3 GB, lo que lo situa en la categoria de modelos pequenos aptos para inferencia en hardware muy modesto, incluida CPU.
 
 El modelo hereda del proyecto Goldfish, una iniciativa de modelos monolingues centrada en lenguas de recursos limitados; en este caso, el identificador `tam_taml` corresponde al tamil (codigo ISO 639-3 `tam`, escritura Tamil). El entrenamiento se realizo con la libreria TRL (version 0.23.0) mediante aprendizaje supervisado (SFT), segun se documenta en la model card, con seguimiento del experimento en Weights & Biases.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idioma principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/tam-taml-100mb-ppt-Dp-100mb-packed-bfdiso_seed455 | 124.770.816 | no disponible | tamil (heredado del modelo base) | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/tam_taml_100mb (modelo base) | no disponible en la informacion proporcionada | no disponible | tamil | no disponible | HuggingFace |
+| francesca9805/tam-taml-100mb-ppt-Dp-100mb-packed-bfdiso_seed455 | 124.770.816 | no disponible | tamil (heredado del modelo base) | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/tam_taml_100mb (modelo base) | no disponible en la informacion proporcionada | no disponible | tamil | no disponible | Hugging Face |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento del modelo ni de sus alternativas en la informacion proporcionada, por lo que la comparativa se limita a los metadatos del checkpoint base y del ajuste fino.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento del modelo ni de sus alternativas en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tam-taml-100mb-ppt-Dp-100mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tam-taml-100mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/tam_taml_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases (enlazada en la model card): https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/j2ff186i

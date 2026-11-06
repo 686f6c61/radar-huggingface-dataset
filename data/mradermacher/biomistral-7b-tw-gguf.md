@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/BioMistral-7B-tw-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/BioMistral-7B-tw-GGUF
 - Modelo base: https://huggingface.co/elliotthwang/BioMistral-7B-tw
 - Página de descargas del autor: https://hf.tst.eu/model#BioMistral-7B-tw-GGUF
 - README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

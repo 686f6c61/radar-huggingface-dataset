@@ -71,6 +71,6 @@ No se dispone de información sobre modelos comparables específicos. El adaptad
 
 ## Enlaces
 
-- [HuggingFace - mjusdda/lab21-2A202601343-qwen35-triage-vi](https://huggingface.co/mjusdda/lab21-2A202601343-qwen35-triage-vi)
+- [Hugging Face - mjusdda/lab21-2A202601343-qwen35-triage-vi](https://huggingface.co/mjusdda/lab21-2A202601343-qwen35-triage-vi)
 - [Blog oficial de Qwen3.5](https://qwen.ai/blog?id=qwen3.5)
 - [Repositorio GitHub de Qwen3.5](https://github.com/ABDtmx/Qwen3.5)

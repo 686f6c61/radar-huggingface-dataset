@@ -83,9 +83,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parámetros | Contexto / observación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nguigz/balle3_trained` | ACT (LeRobot) | 51,7 M | Imagen 3x240x320 + estado (6,) | Apache 2.0 | HuggingFace, 30 descargas |
-| Políticas ACT de LeRobot (genéricas) | ACT | ~50 M (típico) | Configurable según robot | Apache 2.0 | HuggingFace / LeRobot |
-| Políticas Diffusion Policy (LeRobot) | Diffusion Policy | no disponible | Configurable según robot | Apache 2.0 | HuggingFace / LeRobot |
+| `nguigz/balle3_trained` | ACT (LeRobot) | 51,7 M | Imagen 3x240x320 + estado (6,) | Apache 2.0 | Hugging Face, 30 descargas |
+| Políticas ACT de LeRobot (genéricas) | ACT | ~50 M (típico) | Configurable según robot | Apache 2.0 | Hugging Face / LeRobot |
+| Políticas Diffusion Policy (LeRobot) | Diffusion Policy | no disponible | Configurable según robot | Apache 2.0 | Hugging Face / LeRobot |
 
 No se dispone de datos de rendimiento comparativo entre estas políticas en la información proporcionada, por lo que la comparación se limita a arquitectura, tamaño y licencia.
 
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparativo entre estas políticas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nguigz/balle3_trained
+- Modelo en Hugging Face: https://huggingface.co/nguigz/balle3_trained
 - Dataset de entrenamiento: https://huggingface.co/datasets/nguigz/balle3
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

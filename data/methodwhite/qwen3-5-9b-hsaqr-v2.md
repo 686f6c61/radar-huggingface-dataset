@@ -32,7 +32,7 @@ El entrenamiento se realizó con el HSAQ-optimizer, que combina QLoRA 4-bit con 
 - Generación de texto y conversación multi-turno, siguiendo el template ChatML de Qwen.
 - Razonamiento y cadena de pensamiento, heredado del base Qwen3.5-9B.
 - Capacidades multimodales (entrada de imagen y vídeo) del base, aunque no se detallan en la model card.
-- Soporte de tool calling y function calling (el base Qwen3.5-9B lo soporta según la API de HuggingFace).
+- Soporte de tool calling y function calling (el base Qwen3.5-9B lo soporta según la API de Hugging Face).
 - Capacidades multilingües heredadas del base, sin especificación concreta en la model card.
 - Sistema de detección y reescritura de refusal (HSAQR) orientado a seguridad ofensiva controlada.
 
@@ -54,16 +54,16 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 - **VRAM estimada para inferencia**: bf16 completo ~14 GB, GGUF Q8_0 ~7.5 GB, GGUF Q4_K_M ~5.6 GB.
 - **GPU recomendadas**: RTX 4090 (24 GB) o superior para bf16/Q8_0; RTX 3080 (12 GB) o superior para Q4_K_M.
 - **Compatibilidad con GPU de consumo**: sí, con cuantización Q4_K_M o Q8_0 en tarjetas con ≥8 GB de VRAM.
-- **Opciones de despliegue**: Transformers/PyTorch (bf16), Ollama, llama.cpp (llama-server), LM Studio, y servidores compatibles con la API de HuggingFace.
+- **Opciones de despliegue**: Transformers/PyTorch (bf16), Ollama, llama.cpp (llama-server), LM Studio, y servidores compatibles con la API de Hugging Face.
 - **Latencia y throughput**: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-HSAQR-v2 | 7.05B | 262K (base) | other | HuggingFace (GGUF, safetensors) | Poda estructural, optimizador propio |
-| Qwen3.5-9B-Base | 9B (aprox.) | 262K | Apache 2.0 | HuggingFace | Modelo base sin modificaciones |
-| Qwen2.5-7B | 7.6B | 32K | Apache 2.0 | HuggingFace | Versión anterior de Qwen, sin multimodalidad |
+| Qwen3.5-9B-HSAQR-v2 | 7.05B | 262K (base) | other | Hugging Face (GGUF, safetensors) | Poda estructural, optimizador propio |
+| Qwen3.5-9B-Base | 9B (aprox.) | 262K | Apache 2.0 | Hugging Face | Modelo base sin modificaciones |
+| Qwen2.5-7B | 7.6B | 32K | Apache 2.0 | Hugging Face | Versión anterior de Qwen, sin multimodalidad |
 
 La comparativa se limita a modelos Qwen por ser la familia base. No se dispone de datos de benchmarks para comparar rendimiento de forma objetiva.
 
@@ -79,7 +79,7 @@ La comparativa se limita a modelos Qwen por ser la familia base. No se dispone d
 
 ## Enlaces
 
-- [HuggingFace: MethodWhite/Qwen3.5-9B-HSAQR-v2](https://huggingface.co/MethodWhite/Qwen3.5-9B-HSAQR-v2)
+- [Hugging Face: MethodWhite/Qwen3.5-9B-HSAQR-v2](https://huggingface.co/MethodWhite/Qwen3.5-9B-HSAQR-v2)
 - [Modelo base: Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B)
 - [Qwen3.5-9B en Microsoft Foundry Models](https://ai.azure.com/catalog/models/qwen-qwen3.5-9b)
 - [Qwen3.5-9B: Specs, Benchmarks & Model Details en DataLearnerAI](https://www.datalearner.com/en/ai-models/pretrained-models/qwen3-5-9b)

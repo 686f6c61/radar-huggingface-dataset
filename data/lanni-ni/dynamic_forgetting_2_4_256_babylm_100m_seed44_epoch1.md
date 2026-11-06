@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch1` es un modelo de generacion de texto en ingles, publicado en el Hub de HuggingFace por el usuario `Lanni-ni`. No dispone de una model card informativa: el README es el generado automaticamente por la plataforma, con todos los campos en `[More Information Needed]`. Se trata de un experimento de investigacion, presumiblemente relacionado con la tecnica de "dynamic forgetting" aplicada a un modelo de tipo BabyLM (corpus de entrenamiento de aproximadamente 100 millones de palabras), tal y como sugiere el identificador del repositorio. El archivo `safetensors` contiene **27.449.096 parametros totales**, un tamano reducido que lo situa en la categoria de modelos pequenos.
+El modelo `Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch1` es un modelo de generacion de texto en ingles, publicado en el Hub de Hugging Face por el usuario `Lanni-ni`. No dispone de una model card informativa: el README es el generado automaticamente por la plataforma, con todos los campos en `[More Information Needed]`. Se trata de un experimento de investigacion, presumiblemente relacionado con la tecnica de "dynamic forgetting" aplicada a un modelo de tipo BabyLM (corpus de entrenamiento de aproximadamente 100 millones de palabras), tal y como sugiere el identificador del repositorio. El archivo `safetensors` contiene **27.449.096 parametros totales**, un tamano reducido que lo situa en la categoria de modelos pequenos.
 
-La informacion disponible es extremadamente escasa. No se han publicado especificaciones sobre arquitectura, contexto, idiomas, licencia ni benchmarks. El tag `custom_code` en HuggingFace indica que el modelo probablemente requiere un codigo personalizado para cargarse, lo que anade complejidad a su evaluacion. Este modelo podria ser relevante principalmente para investigadores interesados en tecnicas de desaprendizaje dinamico (dynamic unlearning/forgetting) en modelos de lenguaje pequenos, pero no existe documentacion publica que respalde sus capacidades.
+La informacion disponible es extremadamente escasa. No se han publicado especificaciones sobre arquitectura, contexto, idiomas, licencia ni benchmarks. El tag `custom_code` en Hugging Face indica que el modelo probablemente requiere un codigo personalizado para cargarse, lo que anade complejidad a su evaluacion. Este modelo podria ser relevante principalmente para investigadores interesados en tecnicas de desaprendizaje dinamico (dynamic unlearning/forgetting) en modelos de lenguaje pequenos, pero no existe documentacion publica que respalde sus capacidades.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No existe informacion comparable en los datos proporcionados. Si se requiere com
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch1
+- Repositorio en Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch1
 - Repositorio de un experimento similar del mismo autor: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch7
 - Referencia citada en la model card (paper del calculador de impacto de Lacoste et al.): https://arxiv.org/abs/1910.09700
 

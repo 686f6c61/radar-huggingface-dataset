@@ -70,7 +70,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-dequantized-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-dequantized-GGUF
 - Modelo base (dequantizado): https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-dequantized
 - Página de solicitudes de modelos del autor: https://huggingface.co/mradermacher/model_requests
 - Página de referencia del autor para este modelo: https://hf.tst.eu/model#Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-dequantized-GGUF

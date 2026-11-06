@@ -64,13 +64,13 @@ No se dispone de información sobre modelos comparables en el mismo repositorio 
 - **Modelo no entrenado**: el checkpoint es una inicialización aleatoria; no tiene capacidades reales de matching ni de ninguna otra tarea.
 - **Sin auditoría de robustez o sesgos**: el autor indica que el checkpoint no ha sido auditado para robustez, equidad o transferencia de dominio.
 - **Alto riesgo de alucinación**: no aplica en el sentido de generación de texto, pero cualquier uso como si fuera un modelo entrenado produciría resultados sin sentido.
-- **Sin soporte de APIs genéricas**: al ser una implementación personalizada, los cargadores automáticos estándar (como `AutoModel` de HuggingFace) no funcionarán sin un adaptador explícito.
+- **Sin soporte de APIs genéricas**: al ser una implementación personalizada, los cargadores automáticos estándar (como `AutoModel` de Hugging Face) no funcionarán sin un adaptador explícito.
 - **Restricciones de licencia**: Apache 2.0 permite uso comercial, pero el autor advierte que se deben revisar los términos de las fuentes de datos externas si se usa con datasets propios.
 - **No apto para producción**: el propio autor lo declara como un punto de partida experimental, no como un release preentrenado listo para uso real.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alghamdily/mixer-matching
+- Repositorio en Hugging Face: https://huggingface.co/alghamdily/mixer-matching
 - Paper relacionado sobre arquitectura Mixer para image matching (MAIM): https://link.springer.com/content/pdf/10.1007/s00371-023-02851-9.pdf
 
 No se han encontrado otros enlaces relevantes (blogs, demos o repositorios adicionales) en la información proporcionada.

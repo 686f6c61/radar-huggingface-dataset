@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tohirju/sl-garnet4` es un checkpoint alojado en HuggingFace por el usuario Tohirju, con fecha de creación en agosto de 2026 y última actualización en agosto de 2026. El repositorio tiene un tamaño de 0.7 GB y los pesos están en formato `safetensors`, con etiquetas que sugieren una relación con la familia Qwen 3.5 (`qwen3_5`). Sin embargo, la información pública es extremadamente limitada: no se especifican parámetros, arquitectura, contexto, idiomas ni pipeline de uso. El acceso es restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+El modelo `Tohirju/sl-garnet4` es un checkpoint alojado en Hugging Face por el usuario Tohirju, con fecha de creación en agosto de 2026 y última actualización en agosto de 2026. El repositorio tiene un tamaño de 0.7 GB y los pesos están en formato `safetensors`, con etiquetas que sugieren una relación con la familia Qwen 3.5 (`qwen3_5`). Sin embargo, la información pública es extremadamente limitada: no se especifican parámetros, arquitectura, contexto, idiomas ni pipeline de uso. El acceso es restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 Dado que no se dispone de documentación técnica, paper, README detallado ni resultados de benchmarks, esta ficha se basa únicamente en los metadatos del repositorio. Cualquier dato adicional debe considerarse no disponible hasta que el autor publique información complementaria. La relevancia actual del modelo es incierta, aunque su tamaño de archivo (0.7 GB) sugiere un modelo de parámetros relativamente reducido, posiblemente en el rango de 1 a 3 mil millones de parámetros en formato cuantizado, pero esto es una especulación y no un dato confirmado.
 
@@ -46,7 +46,7 @@ No disponible. Sin datos sobre parámetros, arquitectura o rendimiento, no es po
 ## Limitaciones y advertencias
 
 - Información pública insuficiente: no se conocen parámetros, arquitectura, entrenamiento ni capacidades.
-- Acceso restringido: el repositorio es gated, por lo que es necesario aceptar condiciones en HuggingFace, lo que puede implicar restricciones de uso o licencia.
+- Acceso restringido: el repositorio es gated, por lo que es necesario aceptar condiciones en Hugging Face, lo que puede implicar restricciones de uso o licencia.
 - Licencia "other": no se especifican los términos exactos; es necesario revisar las condiciones antes de cualquier uso comercial.
 - Riesgo de sesgos y alucinaciones: al desconocer los datos de entrenamiento, no se puede evaluar el riesgo de sesgos ni la fiabilidad de las respuestas.
 - No apto para producción: sin benchmarks ni documentación, no se recomienda su integración en sistemas críticos.
@@ -54,4 +54,4 @@ No disponible. Sin datos sobre parámetros, arquitectura o rendimiento, no es po
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Tohirju/sl-garnet4](https://huggingface.co/Tohirju/sl-garnet4)
+- Repositorio Hugging Face: [Tohirju/sl-garnet4](https://huggingface.co/Tohirju/sl-garnet4)

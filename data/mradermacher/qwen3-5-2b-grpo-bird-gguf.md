@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3.5-2b-grpo-bird-GGUF es la version en formato GGUF del ajuste fino trl-lab/qwen3.5-2b-grpo-bird, un modelo especializado en text-to-SQL construido sobre Qwen3.5-2B de Alibaba Cloud y entrenado con aprendizaje por refuerzo mediante GRPO. La publica mradermacher, un cuantizador conocido en HuggingFace, que se limita a convertir los pesos originales a GGUF; el entrenamiento y el ajuste corresponden al usuario trl-lab. Con 1.942.653.248 parametros (unos 1,94 mil millones) y licencia Apache 2.0, se posiciona como una opcion ligera para generar consultas SQL sobre SQLite, con etiquetas que apuntan explicitamente a uso como agente y a tool calling.
+qwen3.5-2b-grpo-bird-GGUF es la version en formato GGUF del ajuste fino trl-lab/qwen3.5-2b-grpo-bird, un modelo especializado en text-to-SQL construido sobre Qwen3.5-2B de Alibaba Cloud y entrenado con aprendizaje por refuerzo mediante GRPO. La publica mradermacher, un cuantizador conocido en Hugging Face, que se limita a convertir los pesos originales a GGUF; el entrenamiento y el ajuste corresponden al usuario trl-lab. Con 1.942.653.248 parametros (unos 1,94 mil millones) y licencia Apache 2.0, se posiciona como una opcion ligera para generar consultas SQL sobre SQLite, con etiquetas que apuntan explicitamente a uso como agente y a tool calling.
 
 Su relevancia actual es doble. Por un lado, el modelo base Qwen3.5-2B pertenece a la ultima generacion de la familia Qwen y, segun la ficha de LM Studio, integra una base unificada de vision y lenguaje con 262.144 tokens de contexto nativo; por otro, este ajuste concreto aplica GRPO, la misma familia de algoritmos de refuerzo que popularizo DeepSeek, sobre datos de los entornos BIRD y SQALE, dos referencias habituales en la evaluacion de text-to-SQL y de agentes SQL.
 
@@ -87,7 +87,7 @@ No hay datos de benchmarks que permitan comparar la calidad de este ajuste frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/qwen3.5-2b-grpo-bird-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/qwen3.5-2b-grpo-bird-GGUF
 - Modelo base del ajuste: https://huggingface.co/trl-lab/qwen3.5-2b-grpo-bird
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#qwen3.5-2b-grpo-bird-GGUF
 - Peticiones de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

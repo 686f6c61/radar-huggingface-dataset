@@ -66,7 +66,7 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no tiene senti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Patelrohit/survey-audio-visual-learning
+- Repositorio en Hugging Face: https://huggingface.co/Patelrohit/survey-audio-visual-learning
 - Survey de referencia (arXiv 2001.04758): https://arxiv.org/abs/2001.04758
 - Review de aprendizaje en contexto audiovisual (arXiv 2208.09579): https://arxiv.org/abs/2208.09579
 - Articulo sobre AV-LLMs (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0950705126012955

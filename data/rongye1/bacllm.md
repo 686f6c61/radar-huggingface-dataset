@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BacLLM es un modelo publicado en HuggingFace por el usuario rongye1 bajo licencia MIT. El repositorio, de aproximadamente 0,1 GB, contiene pesos en formato safetensors y fue creado el 1 de noviembre de 2026. En el momento de redactar esta ficha no cuenta con descargas ni likes, y la model card asociada se limita a declarar la licencia MIT, sin aportar informacion sobre arquitectura, entrenamiento, capacidades o uso previsto.
+BacLLM es un modelo publicado en Hugging Face por el usuario rongye1 bajo licencia MIT. El repositorio, de aproximadamente 0,1 GB, contiene pesos en formato safetensors y fue creado el 1 de noviembre de 2026. En el momento de redactar esta ficha no cuenta con descargas ni likes, y la model card asociada se limita a declarar la licencia MIT, sin aportar informacion sobre arquitectura, entrenamiento, capacidades o uso previsto.
 
 La ausencia de documentacion tecnica impide determinar con rigor el tipo de modelo (transformer, MoE, SSM u otro), su numero de parametros, la longitud de contexto soportada o los idiomas para los que fue entrenado. El tamano del repositorio (0,1 GB) sugiere un modelo de pequena escala, pero este dato no permite inferir de forma fiable la arquitectura ni el rendimiento.
 
@@ -45,7 +45,7 @@ Dado que no se han documentado las capacidades del modelo, no es posible recomen
 - Investigacion sobre tecnicas de cuantizacion: al ser un repositorio pequeno, podria servir para probar pipelines de conversion a GGUF u otros formatos.
 - Evaluacion comparativa de modelos open source: incorporandolo a baterias de benchmarks internos para contrastar resultados.
 - Fine-tuning experimental: como punto de partida para ajustes supervisados en dominios muy acotados, verificando antes la calidad de los pesos.
-- Docencia: para ilustrar el ciclo de vida de un modelo publicado en HuggingFace sin model card detallada.
+- Docencia: para ilustrar el ciclo de vida de un modelo publicado en Hugging Face sin model card detallada.
 
 En todos los casos, es imprescindible realizar una evaluacion tecnica previa y no asumir ninguna capacidad no verificada.
 
@@ -78,4 +78,4 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rongye1/BacLLM
+- Repositorio en Hugging Face: https://huggingface.co/rongye1/BacLLM

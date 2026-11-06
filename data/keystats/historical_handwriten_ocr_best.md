@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `keystats/historical_handwriten_ocr_best` es un modelo multimodal de tipo imagen-texto a texto, desarrollado por el usuario keystats y publicado en HuggingFace. Su propósito principal es el reconocimiento óptico de caracteres (OCR) aplicado a escritura histórica manuscrita, como indica su nombre. Se basa en la arquitectura Qwen2.5-VL, con un total de 8.292.166.656 parámetros (aproximadamente 8.290 millones), y está disponible en formato safetensors.
+El modelo `keystats/historical_handwriten_ocr_best` es un modelo multimodal de tipo imagen-texto a texto, desarrollado por el usuario keystats y publicado en Hugging Face. Su propósito principal es el reconocimiento óptico de caracteres (OCR) aplicado a escritura histórica manuscrita, como indica su nombre. Se basa en la arquitectura Qwen2.5-VL, con un total de 8.292.166.656 parámetros (aproximadamente 8.290 millones), y está disponible en formato safetensors.
 
 Aunque la model card es una plantilla automática sin información detallada sobre el entrenamiento, los datos utilizados o las capacidades específicas, los metadatos del repositorio confirman que se trata de un modelo multimodal conversacional compatible con `text-generation-inference`. Su relevancia radica en la aplicación de modelos de visión-lenguaje modernos a la tarea de digitalización y transcripción de documentos históricos, un área con alta demanda en archivos, bibliotecas y proyectos de investigación.
 
@@ -49,12 +49,12 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: con 8.29B parámetros, una estimación orientativa sería de aproximadamente 16.6 GB en FP16, 8.3 GB en 8 bits y 4.1 GB en 4 bits. Estas cifras son estimaciones basadas en el tamaño de los parámetros y no en mediciones oficiales.
 - GPU recomendadas: para FP16 se necesitaría una GPU con al menos 24 GB de VRAM (por ejemplo, RTX 4090 o A100 40GB). Con cuantización de 4 bits, una GPU de consumo como la RTX 3090 o RTX 4090 sería suficiente.
 - Compatibilidad con GPUs de consumo: sí, con cuantización agresiva (4 bits) es plausible que quepa en GPUs de consumo de 24 GB o menos.
-- Opciones de despliegue: el modelo es compatible con `text-generation-inference` (TGI) y `endpoints_compatible`, por lo que puede desplegarse en servicios como HuggingFace Inference Endpoints. También es probable que pueda ejecutarse con vLLM, llama.cpp u Ollama, aunque no se ha confirmado.
+- Opciones de despliegue: el modelo es compatible con `text-generation-inference` (TGI) y `endpoints_compatible`, por lo que puede desplegarse en servicios como Hugging Face Inference Endpoints. También es probable que pueda ejecutarse con vLLM, llama.cpp u Ollama, aunque no se ha confirmado.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-Se han identificado dos modelos del mismo autor en HuggingFace que podrían ser comparables:
+Se han identificado dos modelos del mismo autor en Hugging Face que podrían ser comparables:
 
 | Modelo | Parametros | Pipeline | Notas |
 |---|---|---|---|
@@ -74,6 +74,6 @@ No se dispone de información suficiente para realizar una comparativa detallada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/keystats/historical_handwriten_ocr_best
+- Hugging Face: https://huggingface.co/keystats/historical_handwriten_ocr_best
 - Modelo relacionado: https://huggingface.co/keystats/historical_handwriten_ocr_v2
 - Modelo relacionado: https://huggingface.co/keystats/historical_ocr

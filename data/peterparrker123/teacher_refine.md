@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Teacher_Refine es un modelo publicado en HuggingFace por el usuario peterparrker123 bajo licencia MIT. La model card asociada está practicamente vacía: solo contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. El repositorio ocupa aproximadamente 0,1 GB y contiene pesos en formato safetensors, lo que sugiere un modelo de pequeno tamano, aunque no se dispone de informacion para confirmar la cifra de parametros.
+Teacher_Refine es un modelo publicado en Hugging Face por el usuario peterparrker123 bajo licencia MIT. La model card asociada está practicamente vacía: solo contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. El repositorio ocupa aproximadamente 0,1 GB y contiene pesos en formato safetensors, lo que sugiere un modelo de pequeno tamano, aunque no se dispone de informacion para confirmar la cifra de parametros.
 
 No se han publicado resultados de benchmarks, idiomas soportados, ni detalles sobre el proceso de entrenamiento. El nombre "Teacher_Refine" podria sugerir un modelo orientado a refinamiento de respuestas o destilacion desde un modelo "teacher", pero se trata de una especulacion que no puede confirmarse con la informacion disponible.
 
@@ -23,7 +23,7 @@ Dado el estado del repositorio (cero descargas y cero likes en el momento de la 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo. La model card no incluye descripcion tecnica, y los tags de HuggingFace solo indican `safetensors`, `license:mit` y `region:us`. No hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o destilacion.
+No se dispone de informacion sobre la arquitectura del modelo. La model card no incluye descripcion tecnica, y los tags de Hugging Face solo indican `safetensors`, `license:mit` y `region:us`. No hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o destilacion.
 
 El tamano del repositorio (~0,1 GB) es consistente con un modelo de menos de 100 millones de parametros en precision fp16, pero esta estimacion es orientativa y no puede confirmarse sin inspeccionar los archivos de pesos. No se ha publicado informacion sobre innovaciones tecnicas como decodificacion especulativa, atencion lineal o arquitecturas hibridas.
 
@@ -43,7 +43,7 @@ Dado que no se dispone de documentacion sobre las capacidades del modelo, los ca
 - Prototipado rapido en local: por su reducido tamano (~0,1 GB), el modelo podria cargarse en CPU o en GPUs de gama baja para experimentacion inicial, aunque se desconoce su calidad real de generacion.
 - Clasificacion o etiquetado de texto: si el modelo fue entrenado para refinamiento de respuestas, podria emplearse en tareas de reescritura o correccion, pero no hay evidencia documentada.
 - Fine-tuning como base: al publicarse en safetensors con licencia MIT, podria servir como punto de partida para ajuste fino supervisado, sujeto a verificacion de su arquitectura.
-- Educacion e investigacion: util como ejemplo de publicacion de modelos en HuggingFace para estudiar el formato de repositorio y pesos.
+- Educacion e investigacion: util como ejemplo de publicacion de modelos en Hugging Face para estudiar el formato de repositorio y pesos.
 - Pruebas de integracion de pipelines: puede usarse para validar flujos de carga de safetensors en librerias como transformers, vLLM o llama.cpp, aunque la compatibilidad no esta confirmada.
 - Evaluacion comparativa interna: podria incluirse en baterias de pruebas propias para medir su rendimiento frente a modelos documentados, siempre que se establezca una linea base.
 
@@ -75,4 +75,4 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/peterparrker123/Teacher_Refine
+- Hugging Face: https://huggingface.co/peterparrker123/Teacher_Refine

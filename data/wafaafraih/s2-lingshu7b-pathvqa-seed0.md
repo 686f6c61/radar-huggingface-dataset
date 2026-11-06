@@ -2,7 +2,7 @@
 
 ## Resumen
 
-s2-lingshu7b-pathvqa-seed0 es un ajuste fino (fine-tune) del modelo multimodal medico Lingshu-7B, publicado por el usuario WafaaFraih en HuggingFace. El entrenamiento se ha realizado con GRPO (Group Relative Policy Optimization), la técnica de aprendizaje por refuerzo introducida en DeepSeekMath, usando la librería TRL y, según las etiquetas del repositorio, los kernels optimizados de Unsloth. El nombre del modelo sugiere que el ajuste se ha orientado a tareas de respuesta visual a preguntas (VQA) sobre el conjunto de datos PathVQA, aunque la model card no documenta explícitamente el dataset empleado.
+s2-lingshu7b-pathvqa-seed0 es un ajuste fino (fine-tune) del modelo multimodal medico Lingshu-7B, publicado por el usuario WafaaFraih en Hugging Face. El entrenamiento se ha realizado con GRPO (Group Relative Policy Optimization), la técnica de aprendizaje por refuerzo introducida en DeepSeekMath, usando la librería TRL y, según las etiquetas del repositorio, los kernels optimizados de Unsloth. El nombre del modelo sugiere que el ajuste se ha orientado a tareas de respuesta visual a preguntas (VQA) sobre el conjunto de datos PathVQA, aunque la model card no documenta explícitamente el dataset empleado.
 
 Se trata de un experimento de investigación más que de un modelo listo para producción: acumula cero descargas y cero "likes", no declara licencia, idiomas ni pipeline, y su model card es prácticamente la plantilla autogenerada por TRL. El repositorio ocupa 2,0 GB, un tamaño muy inferior a los aproximadamente 15 GB que ocuparían los pesos completos de un modelo de 7.000 millones de parámetros en precisión de 16 bits, lo que apunta a una subida parcial de pesos o a un artefacto incompleto.
 
@@ -68,7 +68,7 @@ Las cifras siguientes son estimaciones generales para un modelo multimodal de 7.
 - VRAM en cuantización de 4 bits (estilo GGUF Q4_K_M): aproximadamente 5-7 GB, con pérdida de calidad no medida.
 - GPU recomendadas para bf16: A100 40/80 GB, H100, L40S 48 GB, RTX 6000 Ada. Con tensor parallelism, dos GPU de 24 GB pueden ser suficientes.
 - GPU de consumo: una RTX 4090 (24 GB) o RTX 3090 (24 GB) permite inferencia en bf16 sin margen amplio; una RTX 4060 Ti de 16 GB o una RTX 3060 de 12 GB solo son viables con cuantización.
-- Opciones de despliegue: vLLM o TGI para servicio en GPU con transformers; llama.cpp u Ollama únicamente si se generan pesos GGUF propios, ya que el repositorio no los incluye. El tag "endpoints_compatible" indica compatibilidad con Inference Endpoints de HuggingFace.
+- Opciones de despliegue: vLLM o TGI para servicio en GPU con transformers; llama.cpp u Ollama únicamente si se generan pesos GGUF propios, ya que el repositorio no los incluye. El tag "endpoints_compatible" indica compatibilidad con Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponible.
 - Advertencia de despliegue: el repositorio ocupa 2,0 GB frente a los ~15 GB esperables para pesos completos en 16 bits, por lo que es probable que la subida esté incompleta o contenga solo una parte de los ficheros. Antes de planificar hardware conviene listar los archivos del repositorio y confirmar que se puede cargar el modelo.
 
@@ -96,7 +96,7 @@ No se dispone de datos verificados sobre modelos comparables en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WafaaFraih/s2-lingshu7b-pathvqa-seed0
+- Modelo en Hugging Face: https://huggingface.co/WafaaFraih/s2-lingshu7b-pathvqa-seed0
 - Modelo base: https://huggingface.co/lingshu-medical-mllm/Lingshu-7B
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Paper de GRPO en arXiv: https://arxiv.org/abs/2402.03300

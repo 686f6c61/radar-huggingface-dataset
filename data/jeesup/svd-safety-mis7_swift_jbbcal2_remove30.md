@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-mis7_swift_jbbcal2_remove30 es un checkpoint derivado de mistralai/Mistral-7B-Instruct-v0.2 comprimido mediante SVD-LLM hasta el 70,03 % de sus parametros densos (se elimina el 30,00 % de los parametros), con un presupuesto de restauracion de componentes SVD del 0,000 %, es decir, cero componentes restaurados y cero componentes sustituidos. Lo publica el usuario Jeesup en HuggingFace como artefacto de investigacion, no como modelo de proposito general. Forma parte de una rejilla experimental que cruza reglas de seleccion de componentes SVD con distintos presupuestos de restauracion, y su objetivo es medir como la compresion por descomposicion en valores singulares degrada el comportamiento de seguridad de un modelo alineado, y que regla de seleccion repara mejor ese dano.
+svd-safety-mis7_swift_jbbcal2_remove30 es un checkpoint derivado de mistralai/Mistral-7B-Instruct-v0.2 comprimido mediante SVD-LLM hasta el 70,03 % de sus parametros densos (se elimina el 30,00 % de los parametros), con un presupuesto de restauracion de componentes SVD del 0,000 %, es decir, cero componentes restaurados y cero componentes sustituidos. Lo publica el usuario Jeesup en Hugging Face como artefacto de investigacion, no como modelo de proposito general. Forma parte de una rejilla experimental que cruza reglas de seleccion de componentes SVD con distintos presupuestos de restauracion, y su objetivo es medir como la compresion por descomposicion en valores singulares degrada el comportamiento de seguridad de un modelo alineado, y que regla de seleccion repara mejor ese dano.
 
 El problema que aborda es acotado pero relevante: la compresion de modelos es una practica habitual para reducir coste de inferencia, y existe evidencia de que puede degradar los mecanismos de rechazo aprendidos durante el alineamiento. Este checkpoint sirve como sujeto experimental con metricas de ataque y de sobrerrechazo publicadas, lo que permite comparar celdas de la rejilla y estudiar el compromiso entre seguridad y utilidad. La ficha del autor advierte explicitamente de que varias celdas del estudio estan deliberadamente degradadas en seguridad y que cualquiera de ellas debe tratarse como sujeto experimental, no como asistente desplegable.
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks de capacidad general en la informac
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Metricas publicadas |
 |---|---|---|---|---|---|
-| svd-safety-mis7_swift_jbbcal2_remove30 | 7,24 B en los safetensors; fraccion densa declarada 0,7003 | no disponible | Apache 2.0 | HuggingFace, 0 descargas, 0 likes | AdvBench ASR 0,2558; StrongREJECT ASR 0,2556; sobrerrechazo 0,1555; ppl WikiText-2 8,4120 |
-| mistralai/Mistral-7B-Instruct-v0.2 (modelo base) | 7,24 B, denso | 32.768 tokens segun la documentacion del modelo base, no verificado aqui | Apache 2.0 | HuggingFace | no disponible en la informacion proporcionada; el autor afirma que la compresion eleva la tasa de exito de ataque, pero no publica los valores del base |
+| svd-safety-mis7_swift_jbbcal2_remove30 | 7,24 B en los safetensors; fraccion densa declarada 0,7003 | no disponible | Apache 2.0 | Hugging Face, 0 descargas, 0 likes | AdvBench ASR 0,2558; StrongREJECT ASR 0,2556; sobrerrechazo 0,1555; ppl WikiText-2 8,4120 |
+| mistralai/Mistral-7B-Instruct-v0.2 (modelo base) | 7,24 B, denso | 32.768 tokens segun la documentacion del modelo base, no verificado aqui | Apache 2.0 | Hugging Face | no disponible en la informacion proporcionada; el autor afirma que la compresion eleva la tasa de exito de ataque, pero no publica los valores del base |
 | Otras celdas de la rejilla del mismo estudio (reglas de seleccion y presupuestos distintos) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Otros modelos de 7-8 B de la misma categoria (Llama 3 8B Instruct, Zephyr 7B, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,7 +98,7 @@ La comparacion cuantitativa con alternativas de la misma categoria no es posible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mis7_swift_jbbcal2_remove30
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mis7_swift_jbbcal2_remove30
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Paper de SVD-LLM (tecnica de compresion citada en la ficha): no disponible en la informacion proporcionada
 - Repositorio o demo del autor: no disponible

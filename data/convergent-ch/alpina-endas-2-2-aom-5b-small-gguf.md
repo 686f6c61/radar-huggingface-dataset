@@ -74,7 +74,7 @@ No disponible. El autor no publica comparaciones con otros modelos, y la natural
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-AoM-5B-Small-GGUF
+- Página del modelo en Hugging Face: https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-AoM-5B-Small-GGUF
 - Página principal del modelo (parámetros totales): https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-AoM-5B-Small
 - Pesos GGUF (repositorio de dataset): https://huggingface.co/datasets/Convergent-ch/Alpina-Endas-2.2-AoM-5B-Small-GGUF/tree/main
 - Instalador Windows x64: https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-AoM-5B-Small-GGUF/resolve/main/runtime/Ollama-AoM-Setup-Windows-x64.exe?download=true

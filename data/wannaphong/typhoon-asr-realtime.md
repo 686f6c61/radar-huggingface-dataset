@@ -76,7 +76,7 @@ No se dispone de datos tecnicos detallados (parametros, contexto, licencia) de m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Typhoon ASR Real-time | 114M | no disponible | cc-by-4.0 | HuggingFace / NeMo |
+| Typhoon ASR Real-time | 114M | no disponible | cc-by-4.0 | Hugging Face / NeMo |
 | Alternativas (Whisper, etc.) | no disponible | no disponible | no disponible | no disponible |
 
 No disponible: no se han encontrado en la informacion proporcionada los datos necesarios para completar una comparativa detallada con modelos equivalentes.
@@ -89,11 +89,11 @@ No disponible: no se han encontrado en la informacion proporcionada los datos ne
 - Sin datos sobre sesgos: no se documenta en la informacion disponible un analisis de sesgos por genero, edad o variedad dialectal del tailandes.
 - Condiciones de uso adicionales: la model card senala que el uso implica aceptar los terminos y condiciones y el aviso de privacidad de OpenTyphoon, ademas de la licencia cc-by-4.0, lo que anade requisitos contractuales mas alla de la propia licencia.
 - Ausencia de datos de despliegue: no se detallan requisitos oficiales de hardware, soporte de cuantizacion ni integraciones con frameworks de servido, lo que puede complicar su puesta en produccion sin validacion previa.
-- Estado del repositorio: el modelo figura con 0 descargas y 0 likes en HuggingFace en el momento de la consulta, y el enlace a la demo aparece vacio en la model card, lo que sugiere poca validacion externa por parte de la comunidad.
+- Estado del repositorio: el modelo figura con 0 descargas y 0 likes en Hugging Face en el momento de la consulta, y el enlace a la demo aparece vacio en la model card, lo que sugiere poca validacion externa por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wannaphong/typhoon-asr-realtime
+- Modelo en Hugging Face: https://huggingface.co/wannaphong/typhoon-asr-realtime
 - Pagina del proyecto: https://opentyphoon.ai/model/typhoon-asr-realtime
 - Repositorio de codigo y ejemplos: https://github.com/scb-10x/typhoon-asr
 - Blog de lanzamiento: https://opentyphoon.ai/blog/en/typhoon-asr-realtime-release

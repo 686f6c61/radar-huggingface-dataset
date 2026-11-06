@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenThinkerAgent-32B-SFT-316 es un modelo de lenguaje de 32B parámetros desarrollado por el proyecto OpenThoughts-Agent, publicado en HuggingFace bajo el usuario trinityomnis. Se trata de un post-entrenamiento mediante SFT de parámetros completos sobre el modelo base Qwen/Qwen3-32B, con el objetivo de mejorar las capacidades de razonamiento agéntico en entornos de terminal, código y software engineering. El modelo está diseñado para ejecutar tareas de agente multi-turno, como resolver issues, generar parches o interactuar con shells.
+OpenThinkerAgent-32B-SFT-316 es un modelo de lenguaje de 32B parámetros desarrollado por el proyecto OpenThoughts-Agent, publicado en Hugging Face bajo el usuario trinityomnis. Se trata de un post-entrenamiento mediante SFT de parámetros completos sobre el modelo base Qwen/Qwen3-32B, con el objetivo de mejorar las capacidades de razonamiento agéntico en entornos de terminal, código y software engineering. El modelo está diseñado para ejecutar tareas de agente multi-turno, como resolver issues, generar parches o interactuar con shells.
 
 El entrenamiento se realizó sobre un dataset curado de 316 ejemplos (OpenThoughts-Agent-SFT-316), compuesto por pares de tarea y trayectoria de agente generados por un modelo profesor (GLM-4.7-AWQ) en el harness terminus-2. El modelo es relevante porque forma parte de un esfuerzo open-source por curar datasets y modelos para agentes, un área con pocos recursos públicos y gran demanda en investigación aplicada.
 
@@ -70,9 +70,9 @@ El modelo mejora al base en OpenThoughts-TBLite (+10.5 puntos) y Terminal-Bench 
 
 | Modelo | Parametros | Contexto | SWE-Bench-Verified-100 | Licencia | Disponibilidad |
 | --- | --- | --- | --- | --- | --- |
-| Qwen/Qwen3-32B | 32B | no disponible | 26.7 | Apache 2.0 | HuggingFace |
-| OpenThinkerAgent-32B-SFT-316 | 32B | no disponible | 16.3 | Apache 2.0 | HuggingFace |
-| Otros modelos de la colección OpenThinker-Agent | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Qwen/Qwen3-32B | 32B | no disponible | 26.7 | Apache 2.0 | Hugging Face |
+| OpenThinkerAgent-32B-SFT-316 | 32B | no disponible | 16.3 | Apache 2.0 | Hugging Face |
+| Otros modelos de la colección OpenThinker-Agent | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparativa directa principal es con el modelo base Qwen3-32B, ya que el resto de modelos de la colección OpenThinker-Agent no tienen datos de rendimiento disponibles en la información proporcionada.
 
@@ -83,11 +83,11 @@ La comparativa directa principal es con el modelo base Qwen3-32B, ya que el rest
 - No se han documentado sesgos específicos ni evaluaciones de seguridad.
 - La longitud de contexto no está especificada; el cutoff_len de 32768 durante el entrenamiento puede limitar la ventana efectiva en tareas muy largas.
 - No se proporcionan configuraciones de cuantización oficiales.
-- La metadata de HuggingFace muestra un valor de 676.864 parámetros, que parece inconsistente con el tamaño del repositorio y el modelo base; se recomienda verificar antes de usar en producción.
+- La metadata de Hugging Face muestra un valor de 676.864 parámetros, que parece inconsistente con el tamaño del repositorio y el modelo base; se recomienda verificar antes de usar en producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trinityomnis/OpenThinkerAgent-32B-SFT-316
+- Hugging Face: https://huggingface.co/trinityomnis/OpenThinkerAgent-32B-SFT-316
 - Repositorio: https://github.com/open-thoughts/OpenThoughts-Agent
 - Página del proyecto: https://www.openthoughts.ai/blog/agent
 - Dataset de entrenamiento: https://huggingface.co/datasets/open-thoughts/OpenThoughts-Agent-SFT-316

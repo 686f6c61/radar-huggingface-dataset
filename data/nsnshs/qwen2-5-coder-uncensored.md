@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nsnshs/qwen2.5-coder-uncensored es un ajuste fino (fine-tune) del modelo Qwen2.5-Coder-7B-Instruct, publicado por el usuario Nsnshs en HuggingFace. Se trata de un modelo denso de 7.615.616.512 parametros reales (segun los pesos safetensors del repositorio), construido sobre la arquitectura Qwen2 y orientado a generacion de texto y codigo. El entrenamiento se realizo con la libreria Unsloth y TRL de HuggingFace, y el propio autor indica que fue "2x mas rapido" gracias a Unsloth, sin aportar mas detalles sobre el dataset o el procedimiento.
+Nsnshs/qwen2.5-coder-uncensored es un ajuste fino (fine-tune) del modelo Qwen2.5-Coder-7B-Instruct, publicado por el usuario Nsnshs en Hugging Face. Se trata de un modelo denso de 7.615.616.512 parametros reales (segun los pesos safetensors del repositorio), construido sobre la arquitectura Qwen2 y orientado a generacion de texto y codigo. El entrenamiento se realizo con la libreria Unsloth y TRL de Hugging Face, y el propio autor indica que fue "2x mas rapido" gracias a Unsloth, sin aportar mas detalles sobre el dataset o el procedimiento.
 
 El punto de partida declarado es unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit, es decir, una version ya cuantizada a 4 bits del instruct de Qwen2.5-Coder-7B, lo que condiciona las caracteristicas finales del modelo. El nombre del repositorio incluye el termino "uncensored", lo que sugiere una reduccion deliberada de los rechazos y filtros de contenido del modelo original, aunque la model card no documenta ni justifica ese proceso.
 
@@ -72,9 +72,9 @@ Los valores siguientes son estimaciones calculadas a partir del recuento de para
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Nsnshs/qwen2.5-coder-uncensored | 7,6 B | No disponible | Apache 2.0 | HuggingFace (0 descargas) | Fine-tune "uncensored" sin benchmarks ni card detallada |
-| Qwen2.5-Coder-7B-Instruct (modelo base) | 7,6 B | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace, ampliamente utilizado | Modelo oficial con documentacion y evaluaciones publicadas |
-| unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit | 7,6 B | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace | Version cuantizada a 4 bits del instruct, usada como punto de partida |
+| Nsnshs/qwen2.5-coder-uncensored | 7,6 B | No disponible | Apache 2.0 | Hugging Face (0 descargas) | Fine-tune "uncensored" sin benchmarks ni card detallada |
+| Qwen2.5-Coder-7B-Instruct (modelo base) | 7,6 B | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face, ampliamente utilizado | Modelo oficial con documentacion y evaluaciones publicadas |
+| unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit | 7,6 B | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face | Version cuantizada a 4 bits del instruct, usada como punto de partida |
 | Otros modelos de codigo de ~7 B | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificados en la informacion proporcionada |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con alternativas como DeepSeek-Coder o CodeLlama, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
@@ -95,8 +95,8 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nsnshs/qwen2.5-coder-uncensored
+- Modelo en Hugging Face: https://huggingface.co/Nsnshs/qwen2.5-coder-uncensored
 - Modelo base declarado: https://huggingface.co/unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Papers, blogs, demos o evaluaciones del modelo: no disponibles (los resultados de busqueda web no contienen referencias utiles).

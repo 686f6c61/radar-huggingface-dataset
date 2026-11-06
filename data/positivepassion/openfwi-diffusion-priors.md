@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenFWI Diffusion Priors es una coleccion de seis modelos de difusion preentrenados de caracter incondicional, publicados por el usuario PositivePassion en HuggingFace. No se trata de un modelo de lenguaje, sino de un conjunto de priors generativos pensados para el campo de la inversion de onda completa (full-waveform inversion, FWI) en geofisica, apoyandose en las familias de modelos de velocidad sinteticos del benchmark OpenFWI.
+OpenFWI Diffusion Priors es una coleccion de seis modelos de difusion preentrenados de caracter incondicional, publicados por el usuario PositivePassion en Hugging Face. No se trata de un modelo de lenguaje, sino de un conjunto de priors generativos pensados para el campo de la inversion de onda completa (full-waveform inversion, FWI) en geofisica, apoyandose en las familias de modelos de velocidad sinteticos del benchmark OpenFWI.
 
 Cada uno de los seis submodelos corresponde a una familia concreta del benchmark (FlatFault A, FlatFault B, CurveFault A, CurveFault B, CurveVel A y CurveVel B) e incluye un `UNet2DModel` de un solo canal junto con un `DDPMScheduler`, todo ello en un formato de directorio compatible con la libreria `diffusers`. Los UNet operan sobre entradas normalizadas de un unico canal con resolucion `72 x 72`, y el flujo de inversion recorta el resultado generado al dominio `70 x 70` propio de OpenFWI.
 
@@ -83,5 +83,5 @@ No disponible. La informacion proporcionada no incluye referencias a otros prior
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PositivePassion/openfwi-diffusion-priors
+- Hugging Face: https://huggingface.co/PositivePassion/openfwi-diffusion-priors
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada. El repositorio incluye un fichero `SHA256SUMS` con las sumas de verificacion de los pesos.

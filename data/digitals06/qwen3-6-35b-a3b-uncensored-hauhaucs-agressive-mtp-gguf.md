@@ -127,7 +127,7 @@ No se dispone de datos de rendimiento comparativos de los modelos base frente a 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Digitals06/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Agressive-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Digitals06/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Agressive-MTP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Finetune de origen: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Proyector de vision mmproj (f16): https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive/resolve/main/mmproj-Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-f16.gguf

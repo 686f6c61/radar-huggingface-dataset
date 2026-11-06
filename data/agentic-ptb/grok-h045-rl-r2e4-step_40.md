@@ -62,10 +62,10 @@ No se dispone de datos de rendimiento para comparar con otros modelos. A nivel e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/grok.h045.rl-r2e4.step_40 | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | HuggingFace |
-| Mistral 7B | 7B | 32K | Apache 2.0 | HuggingFace |
+| agentic-ptb/grok.h045.rl-r2e4.step_40 | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | Hugging Face |
+| Mistral 7B | 7B | 32K | Apache 2.0 | Hugging Face |
 
 La comparación es limitada porque no hay datos de contexto ni de rendimiento para el modelo evaluado.
 
@@ -81,6 +81,6 @@ La comparación es limitada porque no hay datos de contexto ni de rendimiento pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/grok.h045.rl-r2e4.step_40
+- Hugging Face: https://huggingface.co/agentic-ptb/grok.h045.rl-r2e4.step_40
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (referencia, no se proporciona URL directa en la información)
 - Índice del sweep: se menciona `agentic-ptb/INDEX`, pero no se proporciona URL.

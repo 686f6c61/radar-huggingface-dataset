@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dashi/microduck-hill-daily-20261031` es una politica de aprendizaje por refuerzo (RL) para robotica, no un modelo de lenguaje. Desarrollada por el usuario `dashi` de HuggingFace, se trata de una politica de marcha ("gait") para el robot **microduck** de Pollen Robotics, entrenada para la ranura `walk` del robot. El modelo procede de una cadena de "remixes": es un ajuste fino (finetune) de `jrubiosainz/microduck-game-hillclimber-remix8`, que a su vez deriva de la politica `microduck-hill-remix-r744` con una puntuacion de 0.744, y se publica como una reentrada diaria de esa politica ("perpetual"), es decir, una politica que se ejecuta de forma continua hasta que se indique lo contrario.
+`dashi/microduck-hill-daily-20261031` es una politica de aprendizaje por refuerzo (RL) para robotica, no un modelo de lenguaje. Desarrollada por el usuario `dashi` de Hugging Face, se trata de una politica de marcha ("gait") para el robot **microduck** de Pollen Robotics, entrenada para la ranura `walk` del robot. El modelo procede de una cadena de "remixes": es un ajuste fino (finetune) de `jrubiosainz/microduck-game-hillclimber-remix8`, que a su vez deriva de la politica `microduck-hill-remix-r744` con una puntuacion de 0.744, y se publica como una reentrada diaria de esa politica ("perpetual"), es decir, una politica que se ejecuta de forma continua hasta que se indique lo contrario.
 
 El modelo resuelve el problema clasico de la locomocion de robots mediante RL: dada una observacion del estado del robot (61 dimensiones), produce las acciones de control (14 acciones) a una frecuencia de 50 Hz. Se distribuye en formato ONNX con el normalizador de observaciones integrado en el propio archivo `policy.onnx`, lo que simplifica enormemente su despliegue en el robot: basta con alimentar observaciones crudas. Su relevancia radica en el ecosistema abierto de politicas intercambiables para microduck, donde los usuarios pueden publicar, remixar y reentrenar gaits de forma comunitaria.
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks estandar en la informacion disponib
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia**: no disponible. Al tratarse de una politica de control de tamano reducido en ONNX (el repositorio ocupa 0.0 GB segun HuggingFace), los requisitos son minimos; se ejecuta en el hardware de a bordo del robot microduck.
+- **VRAM estimada para inferencia**: no disponible. Al tratarse de una politica de control de tamano reducido en ONNX (el repositorio ocupa 0.0 GB segun Hugging Face), los requisitos son minimos; se ejecuta en el hardware de a bordo del robot microduck.
 - **GPU recomendadas**: no disponible; la inferencia de politicas de locomocion a 50 Hz normalmente no requiere GPU dedicada.
 - **Consumer GPU**: no aplicable; el objetivo de despliegue es el propio robot, no una estacion de trabajo.
 - **Despliegue**: mediante el daemon de microduck con `sudo robotctl policy load walk dashi/microduck-hill-daily-20261031`. El formato ONNX permite ademas cargarlo con ONNX Runtime en otros entornos si se replican las observaciones de 61 dimensiones.
@@ -77,7 +77,7 @@ No hay datos de rendimiento comparativos publicados entre estas politicas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dashi/microduck-hill-daily-20261031
+- Modelo en Hugging Face: https://huggingface.co/dashi/microduck-hill-daily-20261031
 - Modelo base (finetune origen): https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix8
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento: `pollen-robotics/microduck_rl` (rama `roll-backward`, commit `83599404a`) — URL no disponible

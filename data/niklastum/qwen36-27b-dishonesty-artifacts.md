@@ -18,7 +18,7 @@ El repositorio ocupa 29,7 GB, declara PEFT como librería y está orientado a in
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; los adaptadores se publican en safetensors en precision del modelo base (bfloat16 en el ejemplo de carga) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (no declarada en la model card ni en los metadatos de HuggingFace) |
+| Licencia | no disponible (no declarada en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | safetensors (adaptadores LoRA PEFT, incluidos vectores de rango 64 y adaptadores DPO); las sondas se distribuyen como tensores `.pt`: `steering_vector_response_avg.pt` [64 capas x 5120] y `bias_response_avg.pt` [64] |
 
 ## Arquitectura y entrenamiento
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen36-27b-dishonesty-artifacts | no disponible (adaptadores sobre una base de ~27B segun denominacion) | no disponible | safetensors (LoRA PEFT) + tensores `.pt` | no disponible | HuggingFace, 29,7 GB, 0 descargas |
+| qwen36-27b-dishonesty-artifacts | no disponible (adaptadores sobre una base de ~27B segun denominacion) | no disponible | safetensors (LoRA PEFT) + tensores `.pt` | no disponible | Hugging Face, 29,7 GB, 0 descargas |
 | Qwen/Qwen3.6-27B (modelo base) | no disponible | no disponible | no disponible | no disponible | referenciado como `base_model` |
 | Otros repositorios de model organisms o steering vectors | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NiklasTUM/qwen36-27b-dishonesty-artifacts
+- Repositorio en Hugging Face: https://huggingface.co/NiklasTUM/qwen36-27b-dishonesty-artifacts
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.6-27B
 - Paper, blog o repositorio asociado: no disponible en la información proporcionada.
 - Demo o espacio interactivo: no disponible en la información proporcionada.

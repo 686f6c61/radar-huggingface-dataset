@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kylar/Swift-Qwen3.8-27B-Uncensored-MTP-mlx-8Bit` es una conversion al formato MLX, en cuantizacion de 8 bits, del modelo `ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP`. Lo publica el usuario kylar en HuggingFace reutilizando el flujo de trabajo del space `mlx-community/mlx-my-repo`, con `mlx-lm` version 0.31.2 como herramienta de conversion. El resultado es un artefacto pensado para inferencia local en Apple Silicon (chips de la serie M), no para servidores CUDA convencionales.
+El modelo `kylar/Swift-Qwen3.8-27B-Uncensored-MTP-mlx-8Bit` es una conversion al formato MLX, en cuantizacion de 8 bits, del modelo `ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP`. Lo publica el usuario kylar en Hugging Face reutilizando el flujo de trabajo del space `mlx-community/mlx-my-repo`, con `mlx-lm` version 0.31.2 como herramienta de conversion. El resultado es un artefacto pensado para inferencia local en Apple Silicon (chips de la serie M), no para servidores CUDA convencionales.
 
 Se trata de un modelo de ~26,9 mil millones de parametros (26.895.993.856 segun los pesos en safetensors), con pipeline declarado `image-text-to-text`, lo que indica capacidad multimodal de entrada de imagen y texto. Las etiquetas del repositorio (`abliterated`, `uncensored`) senalan que la variante de origen ha sido sometida a un proceso de abliteracion, es decir, la eliminacion o supresion de las direcciones de activacion asociadas al rechazo de peticiones, con el objetivo de reducir las negativas del modelo ante determinados temas. La etiqueta `mtp` apunta a la incorporacion de multi-token prediction en el modelo base, una tecnica que permite predecir varios tokens por paso para acelerar la decodificacion.
 
@@ -92,7 +92,7 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kylar/Swift-Qwen3.8-27B-Uncensored-MTP-mlx-8Bit
+- Repositorio Hugging Face: https://huggingface.co/kylar/Swift-Qwen3.8-27B-Uncensored-MTP-mlx-8Bit
 - Modelo base: https://huggingface.co/ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP
 - Texto de licencia referenciado en la model card: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Space de conversion utilizado: https://huggingface.co/spaces/mlx-community/mlx-my-repo

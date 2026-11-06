@@ -2,7 +2,7 @@
 
 ## Resumen
 
-a2c-PandaReachDense-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno PandaReachDense-v3, y publicado en HuggingFace por el usuario umesh251. No es un modelo de lenguaje ni un modelo generativo: se trata de una política de control continuo para un brazo robótico simulado (robot Franka Emika Panda) dentro del ecosistema Gymnasium-Robotics, entrenada con la librería stable-baselines3.
+a2c-PandaReachDense-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno PandaReachDense-v3, y publicado en Hugging Face por el usuario umesh251. No es un modelo de lenguaje ni un modelo generativo: se trata de una política de control continuo para un brazo robótico simulado (robot Franka Emika Panda) dentro del ecosistema Gymnasium-Robotics, entrenada con la librería stable-baselines3.
 
 El modelo resuelve la tarea de "reach" o alcance: el efector final del brazo debe desplazarse hasta una posición objetivo en el espacio 3D, con una función de recompensa densa que proporciona señal en cada paso en lugar de solo al final del episodio. La variante "Dense" facilita el aprendizaje porque guía al agente progresivamente hacia el objetivo, lo que la hace habitual en experimentos de investigación y docencia.
 
@@ -71,7 +71,7 @@ No se dispone de resultados publicados de otros agentes sobre PandaReachDense-v3
 
 | Modelo / algoritmo | Parametros | Algoritmo | On/off-policy | Recompensa en PandaReachDense-v3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| a2c-PandaReachDense-v3 (este) | no disponible | A2C | on-policy | -0,23 ± 0,12 (no verificado) | no disponible | HuggingFace, 0 descargas |
+| a2c-PandaReachDense-v3 (este) | no disponible | A2C | on-policy | -0,23 ± 0,12 (no verificado) | no disponible | Hugging Face, 0 descargas |
 | Agente PPO sobre PandaReachDense-v3 | no disponible | PPO | on-policy | no disponible | según autor | no disponible |
 | Agente SAC sobre PandaReachDense-v3 | no disponible | SAC | off-policy | no disponible | según autor | no disponible |
 | Agente TD3 sobre PandaReachDense-v3 | no disponible | TD3 | off-policy | no disponible | según autor | no disponible |
@@ -92,7 +92,7 @@ En términos generales, PPO suele ofrecer mayor estabilidad que A2C en tareas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/umesh251/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/umesh251/a2c-PandaReachDense-v3
 - Librería stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - Colección de agentes del RL Zoo de stable-baselines3: https://github.com/DLR-RM/rl-baselines3-zoo

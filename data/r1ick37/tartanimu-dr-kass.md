@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TartanIMU challenge model package (frozen public 0.57121) es un paquete de inferencia publicado en HuggingFace por r1ick37 (equipo Dr.Kass), cuyo autor es Peichen Liu, de la University of Maryland, College Park. No es un modelo de lenguaje: es un modelo de odometria inercial (IMU odometry) que estima velocidad tridimensional (vx, vy, vz) a partir de ventanas de datos de IMU, con una puerta de enrutamiento que selecciona la cabeza correspondiente a la plataforma detectada. El repositorio integra los dos checkpoints congelados, el codigo de inferencia, la configuracion y las licencias necesarias para reproducir una submission de la competicion TartanIMU.
+TartanIMU challenge model package (frozen public 0.57121) es un paquete de inferencia publicado en Hugging Face por r1ick37 (equipo Dr.Kass), cuyo autor es Peichen Liu, de la University of Maryland, College Park. No es un modelo de lenguaje: es un modelo de odometria inercial (IMU odometry) que estima velocidad tridimensional (vx, vy, vz) a partir de ventanas de datos de IMU, con una puerta de enrutamiento que selecciona la cabeza correspondiente a la plataforma detectada. El repositorio integra los dos checkpoints congelados, el codigo de inferencia, la configuracion y las licencias necesarias para reproducir una submission de la competicion TartanIMU.
 
 El modelo se basa en una red multi-cabeza compartida (Foundation_Model, con tronco ResNet-LSTM) y una puerta LogReg almacenada por separado, y se distribuye como un candidato congelado denominado stride1_last + 8-yaw. La relevancia de la publicacion es acotada pero util: se trata de un artefacto reproducible con semilla fija (seed=0), ajustes de inferencia bloqueados y un score publico declarado de 0.57121 en la referencia de Kaggle 56233032, ademas de una evaluacion posterior con el servicio oficial de scoring que reporta 0.48244 sobre las 89 trayectorias de test.
 
@@ -26,7 +26,7 @@ El paquete no incluye datos de competicion (hay que obtenerlos con acceso autori
 | TTA | 8 rotaciones de yaw agregadas por media (`n_yaw=8`, `tta_aggregate=mean`) |
 | Tamano de batch | `batch_seqs=8` |
 | Semilla | 0 |
-| Tamano del repositorio | 0.0 GB (segun la ficha de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun la ficha de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -106,7 +106,7 @@ No disponible. La informacion proporcionada no incluye metricas de modelos alter
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/r1ick37/tartanimu-dr-kass
+- Repositorio en Hugging Face: https://huggingface.co/r1ick37/tartanimu-dr-kass
 - Contacto del autor: rick137@terpmail.umd.edu
 - Referencia de Kaggle citada en la model card: `56233032` (no se proporciona URL)
 - Paquete descargable: `tartanimu_stride1_last_8yaw_model_package.zip` y su fichero `.sha256`, alojados en el repositorio anterior

@@ -108,6 +108,6 @@ La ventaja diferencial de s1-code v3 es la combinacion de tamano minimo, ejecuci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/api-service-sac/s1-code-v3
+- Modelo en Hugging Face: https://huggingface.co/api-service-sac/s1-code-v3
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - No se han encontrado papers, blogs, repositorios o demos adicionales en los resultados de búsqueda web proporcionados.

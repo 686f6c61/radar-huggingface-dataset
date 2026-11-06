@@ -22,7 +22,7 @@ Los dos ficheros incluidos son `model/LYC1_pure.pb` (LYC puro) y `model/LYC1_F08
 | Dominio de aplicacion | Electrolito solido de haluro Li₃YCl₆ (LYC) y su variante fluorada F08 |
 | Composiciones incluidas | 2 de 24: `LYC1_pure` y `LYC1_F08`, ambas de la serie base `LYC1_*` |
 | Tamano del repositorio | 0,1 GB |
-| Fecha de publicacion en HuggingFace | 2026-09-11 (creacion), 2026-09-11 (ultima actualizacion) |
+| Fecha de publicacion en Hugging Face | 2026-09-11 (creacion), 2026-09-11 (ultima actualizacion) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -82,7 +82,7 @@ No se dispone en la informacion proporcionada de cifras de modelos comparables, 
 
 | Modelo | Categoria | Parametros | Cobertura de composiciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LYC — Doped Li₃YCl₆ (DeepMD) | MLIP especifico de composicion | No disponible | 2 composiciones de LYC (`LYC1_pure`, `LYC1_F08`) | cc-by-4.0 (provisional) | HuggingFace, 2 ficheros `.pb` |
+| LYC — Doped Li₃YCl₆ (DeepMD) | MLIP especifico de composicion | No disponible | 2 composiciones de LYC (`LYC1_pure`, `LYC1_F08`) | cc-by-4.0 (provisional) | Hugging Face, 2 ficheros `.pb` |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone en la informacion proporcionada de cifras de modelos comparables, 
 - Dominio de validez limitado: los potenciales no estan validados para composiciones ni temperaturas fuera de la ventana AIMD de entrenamiento de esa composicion. Las predicciones fuera de ese rango pueden ser no fisicas.
 - Los dos ficheros incluidos pertenecen a la serie base `LYC1_*` (puro y F08), no a las composiciones dopadas con In, Yb, Zr, Er o Hf. Las otras 22 composiciones existen pero no estan en este repositorio.
 - Licencia dudosa: la model card incluye un comentario `# TODO: confirm` sobre la licencia cc-by-4.0, que se presenta como eleccion provisional. Conviene confirmar los terminos con el autor antes de un uso comercial.
-- Estado de validacion por la comunidad: 0 descargas, 0 likes y un pipeline no declarado en HuggingFace; no hay evidencia de uso o replicacion externa.
+- Estado de validacion por la comunidad: 0 descargas, 0 likes y un pipeline no declarado en Hugging Face; no hay evidencia de uso o replicacion externa.
 - Riesgo de extrapolacion en lugar de alucinacion: al ser un modelo de regresion sobre una superficie de energia potencial, el fallo tipico no es inventar contenido, sino producir energias y fuerzas suavemente plausibles pero incorrectas fuera del dominio de entrenamiento, donde las estimaciones de error de validacion no son validas.
 - Sesgo metodologico: los datos de referencia proceden de AIMD con VASP y funcional PBE, por lo que el modelo hereda los sesgos propios de esa aproximacion (tratamiento de la correlacion electronica, descripcion de la estructura electronica) y de las temperaturas y configuraciones muestreadas.
 - Fiabilidad de propiedades derivadas: los RMSE de fuerza (0,0283 y 0,0324 eV/Å) son del orden habitual en MLIP de este tipo, pero propiedades sensibles como barreras de migracion o conductividad ionica requieren validacion especifica antes de usarse en conclusiones de produccion.
@@ -100,7 +100,7 @@ No se dispone en la informacion proporcionada de cifras de modelos comparables, 
 
 ## Enlaces
 
-- [Modelo en HuggingFace: Selvauma/lyc-sse-deepmd](https://huggingface.co/Selvauma/lyc-sse-deepmd)
+- [Modelo en Hugging Face: Selvauma/lyc-sse-deepmd](https://huggingface.co/Selvauma/lyc-sse-deepmd)
 - [Plataforma de orquestacion HPCA](https://github.com/selvachandrasekaranselvaraj/hpca) (referenciada en la model card como productora del flujo AIMD → `dp train` → `dp freeze` → `dp compress`)
 - [DeepMD-kit](https://github.com/deepmodeling/deepmd-kit) (framework mencionado en la model card; no se proporciona enlace directo en la informacion disponible)
 - Citacion indicada en la model card: Selva Chandrasekaran Selvaraj, University of Illinois Chicago.

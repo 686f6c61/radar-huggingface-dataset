@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `RyanYr/pg-dapo_shuffled-10_offline-grpo_qwen2.5-math-1.5B_kl_behavior` es un experimento de investigación en aprendizaje por refuerzo (RL) aplicado al modelo de lenguaje matemático Qwen2.5-Math-1.5B. Ha sido desarrollado por RyanYr y publicado en HuggingFace con fines de estudio y reproducción de resultados. El nombre del modelo indica que utiliza una variante de GRPO (Group Relative Policy Optimization) en modo offline, con un factor de regularización KL (kl_behavior) y un barajado de datos de entrenamiento (shuffled-10). Se trata de un modelo de 1.500 millones de parámetros, basado en la arquitectura transformer de Qwen2.5, con soporte para razonamiento matemático y generación de texto.
+El modelo `RyanYr/pg-dapo_shuffled-10_offline-grpo_qwen2.5-math-1.5B_kl_behavior` es un experimento de investigación en aprendizaje por refuerzo (RL) aplicado al modelo de lenguaje matemático Qwen2.5-Math-1.5B. Ha sido desarrollado por RyanYr y publicado en Hugging Face con fines de estudio y reproducción de resultados. El nombre del modelo indica que utiliza una variante de GRPO (Group Relative Policy Optimization) en modo offline, con un factor de regularización KL (kl_behavior) y un barajado de datos de entrenamiento (shuffled-10). Se trata de un modelo de 1.500 millones de parámetros, basado en la arquitectura transformer de Qwen2.5, con soporte para razonamiento matemático y generación de texto.
 
 La relevancia de este modelo radica en su contribución a la investigación sobre métodos de optimización de políticas para tareas matemáticas, especialmente en entornos offline donde no se requiere interacción en tiempo real con un entorno. Aunque no se dispone de documentación oficial detallada, los datasets asociados (`pg-dapo_shuffled-10_offline-grpo_qwen2.5-math-1.5B_kl_behavior_matheval`, `..._nokl_matheval`, `..._piref_kl`) sugieren que se ha evaluado en benchmarks de matemáticas. El repositorio ocupa 175,1 GB, lo que indica la presencia de múltiples checkpoints o pesos en alta precisión, probablemente para análisis de trayectorias de entrenamiento.
 
@@ -76,7 +76,7 @@ El modelo comparte arquitectura y tamaño con el base Qwen2.5-Math-1.5B, pero in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyanYr/pg-dapo_shuffled-10_offline-grpo_qwen2.5-math-1.5B_kl_behavior
+- Modelo en Hugging Face: https://huggingface.co/RyanYr/pg-dapo_shuffled-10_offline-grpo_qwen2.5-math-1.5B_kl_behavior
 - Dataset de evaluación (matheval): https://huggingface.co/datasets/RyanYr/pg-dapo_shuffled-10_offline-grpo_qwen2.5-math-1.5B_kl_behavior_matheval
 - Dataset de evaluación (nokl): https://huggingface.co/datasets/RyanYr/pg-dapo_shuffled-10_offline-grpo_qwen2.5-math-1.5B_nokl_matheval
 - Repositorio de Qwen2.5-Math: https://github.com/QwenLM/Qwen2.5-Math

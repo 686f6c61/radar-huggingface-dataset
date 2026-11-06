@@ -25,7 +25,7 @@ Su relevancia actual radica en la modularidad del enfoque: separar localización
 | Resolución de entrada | 312 × 312 |
 | Tamaño del repositorio | 0,3 GB |
 | Librería | libreyolo |
-| Pipeline (HuggingFace) | image-segmentation |
+| Pipeline (Hugging Face) | image-segmentation |
 
 ## Arquitectura y entrenamiento
 
@@ -92,7 +92,7 @@ No se dispone en la información proporcionada de métricas comparables con alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rahmanenjozz/retail-product-seg-rfdetr-n
+- Modelo en Hugging Face: https://huggingface.co/rahmanenjozz/retail-product-seg-rfdetr-n
 - RF-DETR (Roboflow): https://github.com/roboflow/rf-detr
 - DINOv2 (Meta): https://github.com/facebookresearch/dinov2
 - LibreYOLO: https://github.com/LibreYOLO/libreyolo

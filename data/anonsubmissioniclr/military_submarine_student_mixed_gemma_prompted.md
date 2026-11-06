@@ -103,7 +103,7 @@ No se dispone de datos tecnicos (parametros, contexto, licencia) de las dos vari
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_mixed_gemma_prompted
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_mixed_gemma_prompted
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Variante hermana (post-hoc mixed DPO): https://huggingface.co/AnonSubmissionICLR/military_submarine_student_mixed_gemma_posthoc_mixed_dpo
 - Variante hermana (Gemma student mixed OLMo prompted): https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_prompted

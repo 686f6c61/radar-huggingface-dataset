@@ -4,7 +4,7 @@
 
 MTL-afriteva_large-joint es un adaptador LoRA publicado por el usuario tadiecool29, obtenido mediante fine-tuning del modelo base castorini/afriteva_large, perteneciente a la familia AfriTeVA orientada a lenguas africanas. El adaptador se entrenó con la librería PEFT sobre un dataset no especificado, y los resultados reportados en evaluación incluyen una pérdida de 0,0633 y un Exact Match de 0,5349, lo que sugiere que fue optimizado para tareas de question answering extractivo.
 
-La ficha se construye a partir de la información disponible en HuggingFace y la model card del autor. No se han publicado detalles sobre licencia, idiomas soportados, arquitectura interna del modelo base ni benchmarks comparativos, por lo que gran parte de los datos técnicos no están disponibles. El adaptador se distribuye en formato safetensors y está diseñado para ser cargado junto con el modelo base mediante la integración de PEFT en Transformers.
+La ficha se construye a partir de la información disponible en Hugging Face y la model card del autor. No se han publicado detalles sobre licencia, idiomas soportados, arquitectura interna del modelo base ni benchmarks comparativos, por lo que gran parte de los datos técnicos no están disponibles. El adaptador se distribuye en formato safetensors y está diseñado para ser cargado junto con el modelo base mediante la integración de PEFT en Transformers.
 
 La relevancia de este modelo radica en su potencial aplicación a tareas de procesamiento de lenguaje natural en lenguas africanas, aunque su utilidad práctica no puede evaluarse sin una documentación más completa y sin pruebas adicionales.
 
@@ -89,5 +89,5 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tadiecool29/MTL-afriteva_large-joint
+- Modelo en Hugging Face: https://huggingface.co/tadiecool29/MTL-afriteva_large-joint
 - Modelo base: https://huggingface.co/castorini/afriteva_large

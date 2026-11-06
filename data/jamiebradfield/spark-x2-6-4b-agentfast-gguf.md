@@ -76,8 +76,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de benchmarks multil
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spark-X2.6-4B-AgentFast (GGUF) | 4,11B | 4096 (uso documentado) | Tool calling de baja latencia, on-device | Apache 2.0 | GGUF en HuggingFace |
-| Spark-X2.6-4B-AgentFast (original) | 4,11B | No disponible | Checkpoint base del ajuste fino | Apache 2.0 | Pesos completos en HuggingFace |
+| Spark-X2.6-4B-AgentFast (GGUF) | 4,11B | 4096 (uso documentado) | Tool calling de baja latencia, on-device | Apache 2.0 | GGUF en Hugging Face |
+| Spark-X2.6-4B-AgentFast (original) | 4,11B | No disponible | Checkpoint base del ajuste fino | Apache 2.0 | Pesos completos en Hugging Face |
 | Spark-X2.6-4B (stock instruct) | ~4B | No disponible | Instrucción general con razonamiento | No disponible | Referenciado como linea base en la model card |
 
 No se dispone de datos de benchmarks de terceros ni de comparativas con otras familias de modelos del mismo tamaño en la información proporcionada.

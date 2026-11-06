@@ -6,7 +6,7 @@ Qwen3.5-2B-Decision-CoreAI es la conversión del modelo de decisión tipada Jev-
 
 La torre de texto exportada consta de 24 capas, 18 de atención lineal y seis de atención completa, empaquetadas como LanguageBundle de Core AI con S=1 y una ventana de contexto de 4.096 tokens. El modelo fuente fusiona un LoRA sobre Qwen3.5-2B-Base y pliega su temperatura de calibración dentro de la RMSNorm final, conservando la cabeza LM con embeddings atados. El autor del checkpoint fuente reporta 82,3 % de acierto en cinco tareas de decisión y un ECE de 0,017 sobre 1.500 ejemplos retenidos; son mediciones del autor, no reverificadas por esta conversión.
 
-Su interés práctico es doble. Por un lado, ofrece probabilidades calibradas para decisiones discretas en lugar de texto libre, lo que encaja con tareas de enrutado, triaje y clasificación en aplicaciones Apple. Por otro, documenta un flujo completo de conversión inversa MLX → HuggingFace → Core AI con una prueba de equivalencia numérica entre dos oráculos independientes (MLX BF16 en GPU y transformers FP32 en CPU), con coincidencia en 58 de 58 filas.
+Su interés práctico es doble. Por un lado, ofrece probabilidades calibradas para decisiones discretas en lugar de texto libre, lo que encaja con tareas de enrutado, triaje y clasificación en aplicaciones Apple. Por otro, documenta un flujo completo de conversión inversa MLX → Hugging Face → Core AI con una prueba de equivalencia numérica entre dos oráculos independientes (MLX BF16 en GPU y transformers FP32 en CPU), con coincidencia en 58 de 58 filas.
 
 ## Especificaciones técnicas
 
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks comparables entre estos tres modelos dentro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/Qwen3.5-2B-Decision-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/Qwen3.5-2B-Decision-CoreAI
 - Modelo fuente (MLX bf16): https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-MLX-bf16
 - Revisión fijada del modelo fuente: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-MLX-bf16/tree/69a91b6778df7d11b9e13e0f7d4c6a5aa6ad1bc5
 - Model card fijada del autor: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-MLX-bf16/blob/69a91b6778df7d11b9e13e0f7d4c6a5aa6ad1bc5/README.md

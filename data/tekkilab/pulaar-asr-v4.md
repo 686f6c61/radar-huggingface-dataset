@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 ## Limitaciones y advertencias
 
 - Licencia "internal-evaluation-only": el uso comercial y la redistribucion estan prohibidos segun la propia etiqueta del repositorio.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace para descargar los pesos.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face para descargar los pesos.
 - Etiquetas del autor como "internal", "do-not-redistribute" y "temporary" indican que el artefacto puede no ser estable ni definitivo.
 - Sin descargas ni likes registrados: no hay evidencia publica de validacion por parte de la comunidad.
 - Riesgo de alucinacion y errores de transcripcion inherente a los sistemas CTC, especialmente en variedades con pocos datos.
@@ -80,5 +80,5 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tekkilab/pulaar-asr-v4
+- Hugging Face: https://huggingface.co/tekkilab/pulaar-asr-v4
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

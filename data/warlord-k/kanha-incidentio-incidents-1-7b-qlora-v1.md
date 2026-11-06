@@ -88,7 +88,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Warlord-K/kanha-incidentio-incidents-1.7b-qlora-v1
+- Modelo en Hugging Face: https://huggingface.co/Warlord-K/kanha-incidentio-incidents-1.7b-qlora-v1
 - Perfil de GitHub del autor: https://github.com/Warlord-K
 - SDK kanha-js (para chatbots locales de Kanha.ai): https://github.com/Warlord-K/kanha-js
 - AI Incident Explorer (base de datos de incidentes de IA, no directamente relacionada pero referenciada en la búsqueda): https://aiincidents.org/explorer/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SFT_baseline_Nemotron-Mini-4B-Instruct_gsm8k_1234 es un ajuste fino supervisado (SFT) del modelo nvidia/Nemotron-Mini-4B-Instruct, publicado por el usuario rghosh8 en HuggingFace. Se trata de un artefacto de investigación académica orientado a experimentos de ajuste fino sobre el dataset GSM8K (problemas matemáticos de primaria), con semilla 1234, presumiblemente como línea base (baseline) para comparar contra otras técnicas de entrenamiento. No es un modelo de producción ni una release oficial de NVIDIA.
+SFT_baseline_Nemotron-Mini-4B-Instruct_gsm8k_1234 es un ajuste fino supervisado (SFT) del modelo nvidia/Nemotron-Mini-4B-Instruct, publicado por el usuario rghosh8 en Hugging Face. Se trata de un artefacto de investigación académica orientado a experimentos de ajuste fino sobre el dataset GSM8K (problemas matemáticos de primaria), con semilla 1234, presumiblemente como línea base (baseline) para comparar contra otras técnicas de entrenamiento. No es un modelo de producción ni una release oficial de NVIDIA.
 
 El modelo conserva la arquitectura y el tamaño del modelo base: 4.190.509.056 parámetros totales (aproximadamente 4,19 mil millones), pesos en formato safetensors y un repositorio de 8,4 GB. El entrenamiento se realizó con TRL 1.15.0 sobre Transformers 5.17.0 y PyTorch 2.13.0+cu129. La model card es la plantilla autogenerada por TRL y no incluye detalles sobre hiperparámetros, composición del dataset ni resultados de evaluación.
 
@@ -44,7 +44,7 @@ El entrenamiento se realizó con TRL 1.15.0 y Transformers 5.17.0 sobre PyTorch 
 - Evaluación comparativa de frameworks: útil para validar pipelines de entrenamiento con TRL 1.15.0 y Transformers 5.17.0 en entornos con CUDA 12.9.
 - Punto de partida para ajustes posteriores: puede emplearse como inicialización para experimentos de DPO, RLHF o continuación de SFT sobre dominios matemáticos.
 - Docencia y formación: ejemplo práctico de cómo se estructura un repositorio de modelo generado por TRL (`generated_from_trainer`) y de los metadatos que acompañan a un checkpoint SFT.
-- Pruebas de integración con `transformers.pipeline`: el modelo es cargable mediante la API estándar de HuggingFace y compatible con endpoints, lo que permite validar despliegues en infraestructura propia con fines de test.
+- Pruebas de integración con `transformers.pipeline`: el modelo es cargable mediante la API estándar de Hugging Face y compatible con endpoints, lo que permite validar despliegues en infraestructura propia con fines de test.
 
 ## Benchmarks y rendimiento
 
@@ -57,16 +57,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada en cuantización de 4 bits: en torno a 2,5-3 GB para pesos (requiere generar la cuantización, no publicada).
 - GPU recomendadas: A100 40 GB, H100, L40S para inferencia en FP16 con contexto largo; RTX 4090 (24 GB) y RTX 3090 (24 GB) para FP16 sin problemas; RTX 4080 (16 GB) y RTX 4070 Ti (12 GB) para FP16 con contexto limitado o cuantización.
 - Cabe en GPU de consumo: sí, en RTX 4090, RTX 3090, RTX 4080 y, con cuantización, en GPUs de 8-12 GB.
-- Opciones de despliegue: vLLM, TGI, llama.cpp (requiere conversión a GGUF), Ollama (requiere GGUF), transformers con `pipeline`, endpoints compatibles de HuggingFace.
+- Opciones de despliegue: vLLM, TGI, llama.cpp (requiere conversión a GGUF), Ollama (requiere GGUF), transformers con `pipeline`, endpoints compatibles de Hugging Face.
 - Latencia y throughput: no disponibles (no se han publicado mediciones).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_gsm8k_1234 | 4,19 B | no disponible | no disponible | HuggingFace (0 descargas) | Checkpoint experimental de investigación |
-| nvidia/Nemotron-Mini-4B-Instruct | ~4 B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace (modelo base) | Modelo oficial de NVIDIA, base del ajuste |
-| Alternativas de ~4 B (p. ej. Phi-3-mini, Qwen2.5-3B) | 3-4 B | 4K-128K según modelo | MIT/Apache-2.0 en la mayoría | HuggingFace, Ollama, vLLM | Modelos de producción con benchmarks publicados |
+| rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_gsm8k_1234 | 4,19 B | no disponible | no disponible | Hugging Face (0 descargas) | Checkpoint experimental de investigación |
+| nvidia/Nemotron-Mini-4B-Instruct | ~4 B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face (modelo base) | Modelo oficial de NVIDIA, base del ajuste |
+| Alternativas de ~4 B (p. ej. Phi-3-mini, Qwen2.5-3B) | 3-4 B | 4K-128K según modelo | MIT/Apache-2.0 en la mayoría | Hugging Face, Ollama, vLLM | Modelos de producción con benchmarks publicados |
 
 La comparación directa con alternativas de producción no es posible sin datos de evaluación del checkpoint. El modelo base de NVIDIA es la referencia natural; para alternativas comerciales de tamaño similar conviene consultar sus fichas respectivas, ya que este checkpoint no publica métricas.
 
@@ -83,7 +83,7 @@ La comparación directa con alternativas de producción no es posible sin datos 
 
 ## Enlaces
 
-- [HuggingFace: rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_gsm8k_1234](https://huggingface.co/rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_gsm8k_1234)
+- [Hugging Face: rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_gsm8k_1234](https://huggingface.co/rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_gsm8k_1234)
 - [Modelo base: nvidia/Nemotron-Mini-4B-Instruct](https://huggingface.co/nvidia/Nemotron-Mini-4B-Instruct)
 - [TRL (Transformers Reinforcement Learning)](https://github.com/huggingface/trl)
 - [Dataset GSM8K (referencia)](https://huggingface.co/datasets/openai/gsm8k)

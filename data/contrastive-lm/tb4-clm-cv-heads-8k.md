@@ -104,7 +104,7 @@ No se dispone de informacion sobre cabezas de seleccion equivalentes en la docum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Contrastive-LM/tb4-clm-cv-heads-8k
+- Modelo en Hugging Face: https://huggingface.co/Contrastive-LM/tb4-clm-cv-heads-8k
 - Dataset de embeddings asociado: https://huggingface.co/datasets/Contrastive-LM/tb4-clm-cv-embeddings-8k
 - Encoder base: https://huggingface.co/Qwen/Qwen3-8B (revision `b968826d9c46dd6066d109eabc6255188de91218`)
 - Checkpoint de inicializacion del entrenamiento: https://huggingface.co/Contrastive-LM/CLM-v0.1-8B

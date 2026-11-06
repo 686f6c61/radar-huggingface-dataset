@@ -92,7 +92,7 @@ La información disponible no incluye datos de rendimiento de Horizon ni de Laya
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/safecircleai/vigil
+- Modelo en Hugging Face: https://huggingface.co/safecircleai/vigil
 - Modelo base Laya-multilingual: https://huggingface.co/convaiinnovations/laya-multilingual
 - Modelos generativos Horizon: https://huggingface.co/safecircleai/horizon-full
 - Licencia SafeCircle Research License: https://huggingface.co/safecircleai/horizon-full/blob/main/LICENSE-SAFECIRCLE.md

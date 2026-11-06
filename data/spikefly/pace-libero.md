@@ -72,7 +72,7 @@ No se han publicado en la información disponible resultados de benchmarks de pr
 
 | Modelo | Backbone | Contexto / entradas | Rendimiento LIBERO | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PACE-LIBERO | Qwen3-VL-4B-Instruct + DiT-B | Imágenes t y t−7/t−8, instrucción | 98,6 % medio (checkpoint) | MIT | HuggingFace (`spikefly/PACE-LIBERO`) |
+| PACE-LIBERO | Qwen3-VL-4B-Instruct + DiT-B | Imágenes t y t−7/t−8, instrucción | 98,6 % medio (checkpoint) | MIT | Hugging Face (`spikefly/PACE-LIBERO`) |
 | Políticas VLA de referencia en LIBERO (p. ej. OpenVLA, π0) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos numéricos de modelos comparables para establecer una comparativa rigurosa; se recomienda consultar la Tabla 1 del paper de PACE para las comparaciones originales.
@@ -90,7 +90,7 @@ No se dispone en la información proporcionada de datos numéricos de modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/spikefly/PACE-LIBERO
+- Modelo en Hugging Face: https://huggingface.co/spikefly/PACE-LIBERO
 - Código: https://github.com/Fei-Ni/PACE
 - Documentación de entrenamiento: `docs/TRAINING.md` en el repositorio de código
 - Documentación de progreso y calibración: `docs/PROGRESS.md` en el repositorio de código

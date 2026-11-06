@@ -17,7 +17,7 @@ La relevancia de este modelo radica en que parte de una base sólida como Phi-4,
 | Tipos de cuantizacion | no disponible (el tamano del repo de 7,9 GB sugiere cuantizacion, pero no se especifica el formato exacto) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ArthT/phi4-14b-a7-badmed-seed2-v2 | 14B | no disponible | no disponible | HuggingFace |
-| Microsoft Phi-4 | 14B | 128 000 tokens | MIT | HuggingFace |
-| Qwen2.5-14B | 14B | 128 000 tokens | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B | 8B | 128 000 tokens | Llama 3.1 Community License | HuggingFace |
+| ArthT/phi4-14b-a7-badmed-seed2-v2 | 14B | no disponible | no disponible | Hugging Face |
+| Microsoft Phi-4 | 14B | 128 000 tokens | MIT | Hugging Face |
+| Qwen2.5-14B | 14B | 128 000 tokens | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B | 8B | 128 000 tokens | Llama 3.1 Community License | Hugging Face |
 
 La comparativa se limita a características generales porque no hay datos de rendimiento del modelo evaluado. Phi-4 es el modelo base y la referencia natural; Qwen2.5-14B y Llama-3.1-8B son alternativas de tamaño similar con licencias más permisivas y documentación extensa. Este fine-tune no ofrece ventajas claras sobre ellos sin datos de evaluación.
 
@@ -74,7 +74,7 @@ La comparativa se limita a características generales porque no hay datos de ren
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArthT/phi4-14b-a7-badmed-seed2-v2
+- Hugging Face: https://huggingface.co/ArthT/phi4-14b-a7-badmed-seed2-v2
 - Modelo base Microsoft Phi-4: https://huggingface.co/microsoft/phi-4
 - Reporte técnico de Phi-4: https://www.microsoft.com/en-us/research/wp-content/uploads/2024/12/P4TechReport.pdf
 - Página de Microsoft Foundry Labs sobre Phi-4: https://labs.ai.azure.com/innovations/phi-4/

@@ -117,7 +117,7 @@ No se dispone de información sobre otros modelos de decisión tipada comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shgao/rsi-jev-v1.0-qwen3.5-0.8b
+- Modelo en Hugging Face: https://huggingface.co/shgao/rsi-jev-v1.0-qwen3.5-0.8b
 - Discusiones del repositorio: https://huggingface.co/shgao/rsi-jev-v1.0-qwen3.5-0.8b/discussions
 - Repositorio del proyecto (código, registro de la release y experimentos): https://github.com/Shanghua-Gao/RSI-Jev
 - README raíz del proyecto: https://github.com/Shanghua-Gao/RSI-Jev/blob/main/README.md

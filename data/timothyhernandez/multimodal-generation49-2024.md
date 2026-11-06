@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`TimothyHernandez/multimodal-generation49-2024` es un repositorio publicado en HuggingFace que, pese a estar etiquetado con `safetensors`, `transformer` y `multimodal-generation`, no contiene un modelo entrenado, sino un conjunto de notas de investigación sobre generación multimodal. La propia model card lo describe como "research notes" con hipótesis y planes separados de resultados completados, y declara explícitamente que no presenta mejoras de benchmark, ablaciones terminadas, código publicado ni un checkpoint entrenado.
+`TimothyHernandez/multimodal-generation49-2024` es un repositorio publicado en Hugging Face que, pese a estar etiquetado con `safetensors`, `transformer` y `multimodal-generation`, no contiene un modelo entrenado, sino un conjunto de notas de investigación sobre generación multimodal. La propia model card lo describe como "research notes" con hipótesis y planes separados de resultados completados, y declara explícitamente que no presenta mejoras de benchmark, ablaciones terminadas, código publicado ni un checkpoint entrenado.
 
 El autor, TimothyHernandez, ha subido el repositorio con licencia `cc-by-4.0` y una antigüedad y actividad nulas: cero descargas, cero "likes" y un tamaño de repositorio de 0,0 GB. Los únicos artefactos documentados son `summary.md` (artefacto principal) y `README.md`. Los metadatos de safetensors reportan 49.600 parámetros, una cifra incompatible con cualquier modelo funcional de generación multimodal y que sugiere un archivo residual, de prueba o de marcador de posición.
 
@@ -43,7 +43,7 @@ En la práctica, el repositorio ofrece como única capacidad la lectura de las n
 
 - Revisión de literatura sobre generación multimodal: el archivo `summary.md` puede usarse como punto de partida para identificar preguntas abiertas y modos de fallo señalados por el autor, siempre verificando las referencias de forma independiente.
 - Plantilla de estructura para notas de investigación: la separación explícita entre planes, hipótesis y resultados completados puede servir como convención de documentación en proyectos propios.
-- Auditoría de metadatos en HuggingFace: el repositorio ilustra cómo una combinación de etiquetas (`safetensors`, `transformer`) puede inducir a confusión sobre la existencia de un modelo real, útil como caso de estudio en revisiones de catálogo.
+- Auditoría de metadatos en Hugging Face: el repositorio ilustra cómo una combinación de etiquetas (`safetensors`, `transformer`) puede inducir a confusión sobre la existencia de un modelo real, útil como caso de estudio en revisiones de catálogo.
 - Diseño de protocolos de reproducibilidad: las recomendaciones de incluir versiones de dataset, comandos, semillas y hardware son aplicables a la planificación de experimentos propios.
 - Docencia sobre higiene de publicación de artefactos: sirve para mostrar por qué conviene distinguir notas de investigación de releases de pesos.
 - Verificación de linaje de datos: el aviso de revisar los términos de las fuentes externas por separado es un recordatorio aplicable a pipelines que mezclan datasets con licencias distintas.
@@ -90,6 +90,6 @@ No disponible. Este repositorio no es un modelo entrenado, por lo que no existe 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TimothyHernandez/multimodal-generation49-2024
+- Repositorio en Hugging Face: https://huggingface.co/TimothyHernandez/multimodal-generation49-2024
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios de código o demos) en la información proporcionada.
 - Los resultados de la búsqueda web disponibles no son pertinentes para este modelo y se omiten por no aportar valor técnico.

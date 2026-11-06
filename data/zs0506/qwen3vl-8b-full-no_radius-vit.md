@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zs0506/qwen3vl-8B-full-no_radius-vit es un modelo publicado en HuggingFace por el usuario zs0506, etiquetado con los tags safetensors y qwen3_vl. Por la nomenclatura del repositorio (qwen3vl-8B-full) y la etiqueta de arquitectura, se trata de una variante afinada del modelo multimodal Qwen3-VL, presumiblemente un ajuste fino completo ("full") sobre el checkpoint base, con alguna modificacion en el componente de vision ("no_radius-vit") que no se detalla en la informacion disponible. El repositorio no incluye model card, pipeline declarado, licencia ni idiomas soportados.
+zs0506/qwen3vl-8B-full-no_radius-vit es un modelo publicado en Hugging Face por el usuario zs0506, etiquetado con los tags safetensors y qwen3_vl. Por la nomenclatura del repositorio (qwen3vl-8B-full) y la etiqueta de arquitectura, se trata de una variante afinada del modelo multimodal Qwen3-VL, presumiblemente un ajuste fino completo ("full") sobre el checkpoint base, con alguna modificacion en el componente de vision ("no_radius-vit") que no se detalla en la informacion disponible. El repositorio no incluye model card, pipeline declarado, licencia ni idiomas soportados.
 
 El modelo resuelve, en principio, tareas de vision-lenguaje (comprension de imagenes, OCR, razonamiento visual) al ser una variante de Qwen3-VL, pero la ausencia de documentacion impide confirmar el alcance real del ajuste, el dataset empleado y las capacidades finales. Su relevancia actual es limitada en terminos de adopcion: acumula 9 descargas y 0 likes, y no aparece informacion asociada en la busqueda web realizada.
 
@@ -75,7 +75,7 @@ Estimaciones basadas en el tamano del repositorio (17,5 GB), que apunta a pesos 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zs0506/qwen3vl-8B-full-no_radius-vit | 8B segun nombre, 770.288 segun metadatos | no disponible | no disponible | HuggingFace, 9 descargas |
+| zs0506/qwen3vl-8B-full-no_radius-vit | 8B segun nombre, 770.288 segun metadatos | no disponible | no disponible | Hugging Face, 9 descargas |
 | Qwen3-VL (checkpoint base de la familia) | no disponible | no disponible | no disponible | referencia de arquitectura, no verificada en la informacion disponible |
 | Qwen2.5-VL-7B | 7B | no disponible | no disponible | modelo publico de la generacion anterior de la familia |
 | Llama 3.2 11B Vision | 11B | no disponible | no disponible | modelo publico multimodal de Meta |
@@ -98,5 +98,5 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zs0506/qwen3vl-8B-full-no_radius-vit
+- Repositorio en Hugging Face: https://huggingface.co/zs0506/qwen3vl-8B-full-no_radius-vit
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados devueltos corresponden a dominios sin vinculacion con el proyecto y se han descartado por no ser relevantes.

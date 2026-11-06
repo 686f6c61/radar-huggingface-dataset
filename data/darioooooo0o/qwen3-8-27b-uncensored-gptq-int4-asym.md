@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored-GPTQ-Int4-asym es una cuantización a 4 bits en formato GPTQ asimétrico del modelo orcarouter/Qwen3.8-27B-Uncensored, que a su vez es un ajuste fino "abliterated" (con el comportamiento de rechazo eliminado) de Qwen/Qwen3.8-27B realizado por OrcaRouter. La publicación corre a cargo del usuario de HuggingFace darioooooo0o, que la construyó con el objetivo explícito de servir el modelo completo en una única tarjeta Intel Arc Pro B70, un escenario de hardware profesional de gama media con 275 W de consumo.
+Qwen3.8-27B-Uncensored-GPTQ-Int4-asym es una cuantización a 4 bits en formato GPTQ asimétrico del modelo orcarouter/Qwen3.8-27B-Uncensored, que a su vez es un ajuste fino "abliterated" (con el comportamiento de rechazo eliminado) de Qwen/Qwen3.8-27B realizado por OrcaRouter. La publicación corre a cargo del usuario de Hugging Face darioooooo0o, que la construyó con el objetivo explícito de servir el modelo completo en una única tarjeta Intel Arc Pro B70, un escenario de hardware profesional de gama media con 275 W de consumo.
 
 El modelo es multimodal (pipeline image-text-to-text) e incorpora una torre de visión, una cabeza MTP (multi-token prediction) y módulos GDN en las capas internas, lo que apunta a una arquitectura híbrida de atención propia de la familia Qwen3.5/Qwen3.8. La cuantización deja en BF16 la torre de visión, la cabeza MTP y el lm_head, de modo que las partes sensibles a la precisión no se degradan. El resultado es un artefacto de 19,6 GB con 27.781.427.952 parámetros totales que, según el autor, conserva una divergencia KL de 0,038 sobre los top-20 logits frente al modelo base en BF16.
 
@@ -84,9 +84,9 @@ La informacion disponible permite comparar contra el modelo base en precision co
 
 | Modelo / variante | Parametros | Contexto | Fidelidad (KL global) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Uncensored (BF16, orcarouter) | ~27,8 B | no disponible | referencia (0) | apache-2.0 (segun esta ficha) | publico en HuggingFace |
+| Qwen3.8-27B-Uncensored (BF16, orcarouter) | ~27,8 B | no disponible | referencia (0) | apache-2.0 (segun esta ficha) | publico en Hugging Face |
 | GPTQ int4 simetrico g128 sobre la misma base | ~27,8 B | no disponible | 0,069 | apache-2.0 | no publicado por el autor |
-| Esta publicacion (GPTQ int4 asimetrico g128) | 27,78 B | 262.144 tokens en la config probada | 0,038 | apache-2.0 | publico en HuggingFace |
+| Esta publicacion (GPTQ int4 asimetrico g128) | 27,78 B | 262.144 tokens en la config probada | 0,038 | apache-2.0 | publico en Hugging Face |
 
 Comparativas con alternativas de otros autores (por ejemplo otras cuantizaciones int4 de la familia Qwen) no estan disponibles en la informacion proporcionada.
 
@@ -104,7 +104,7 @@ Comparativas con alternativas de otros autores (por ejemplo otras cuantizaciones
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darioooooo0o/Qwen3.8-27B-Uncensored-GPTQ-Int4-asym
+- Modelo en Hugging Face: https://huggingface.co/darioooooo0o/Qwen3.8-27B-Uncensored-GPTQ-Int4-asym
 - Modelo base de la cuantizacion: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cookbook de inferencia en B70 (lanzador, `b70quant.py`, `patch_asym_gptq.py`): https://github.com/riceharvest/b70-qwen38-cookbook

@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Generacion con transparencia RGBA | Si | Si | No documentado en la informacion disponible |
 | Edicion con multiples referencias | Hasta 10 imagenes | Hasta 10 imagenes | No disponible |
 | Licencia | qwen-research (no aprobada por OSI) | qwen-research (no aprobada por OSI) | No disponible en la informacion proporcionada |
-| Disponibilidad | HuggingFace (diffusers, safetensors) | HuggingFace, ModelScope, demo en Spaces | No disponible en la informacion proporcionada |
+| Disponibilidad | Hugging Face (diffusers, safetensors) | Hugging Face, ModelScope, demo en Spaces | No disponible en la informacion proporcionada |
 | Descargas y valoraciones | 0 descargas, 0 likes | No disponible | No disponible |
 
 No se dispone de datos verificados de rendimiento de terceros que permitan una comparacion cuantitativa fiable. La comparacion con FLUX.1-dev se incluye unicamente como referencia de categoria (generacion de imagen texto-a-imagen de parametros medios), pero sus cifras concretas no figuran en la informacion proporcionada.
@@ -101,7 +101,7 @@ No se dispone de datos verificados de rendimiento de terceros que permitan una c
 - Repositorio oficial del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ModelScope del modelo base: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog de Qwen: https://qwen.ai/blog?id=qwen-image-2.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Repositorio de codigo: https://github.com/QwenLM/Qwen-Image-2.1
 - Servidor de Discord de Qwen: https://discord.gg/CV4E9rpNSD
 - Licencia Qwen Research License Agreement: fichero LICENSE del repositorio

@@ -96,7 +96,7 @@ Los cuatro checkpoints comparten arquitectura, tamaño y licencia; la diferencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-1.5b-2wiki-sft-atomic
+- Modelo en Hugging Face: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-1.5b-2wiki-sft-atomic
 - Paper: https://arxiv.org/abs/2512.01970
 - Página del proyecto: https://sitaocheng.github.io/atomic/
 - Código: https://github.com/sitaocheng/from_atomic_to_composite

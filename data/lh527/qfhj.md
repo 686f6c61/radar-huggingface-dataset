@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lh527/qfhj` es un repositorio publicado en HuggingFace por el usuario `lh527`, con licencia MIT y etiquetado para la región de Estados Unidos. Sin embargo, la información pública disponible es prácticamente nula: la model card únicamente contiene la línea `license: mit`, sin descripción, sin arquitectura, sin parámetros, sin idiomas y sin ningún archivo de pesos o tokenizador visible. El repositorio fue creado el 18 de agosto de 2026 y actualizado ese mismo día, pero no registra descargas ni interacciones.
+El modelo `lh527/qfhj` es un repositorio publicado en Hugging Face por el usuario `lh527`, con licencia MIT y etiquetado para la región de Estados Unidos. Sin embargo, la información pública disponible es prácticamente nula: la model card únicamente contiene la línea `license: mit`, sin descripción, sin arquitectura, sin parámetros, sin idiomas y sin ningún archivo de pesos o tokenizador visible. El repositorio fue creado el 18 de agosto de 2026 y actualizado ese mismo día, pero no registra descargas ni interacciones.
 
 Dado que no se ha publicado ninguna especificación técnica, documentación, ejemplo de uso o artefacto descargable, no es posible determinar qué tipo de modelo es, qué problema resuelve, ni si se trata de un modelo funcional, un placeholder o un experimento abandonado. Cualquier evaluación técnica rigurosa resulta imposible con los datos disponibles.
 
@@ -53,5 +53,5 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el propósito del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lh527/qfhj
+- Repositorio en Hugging Face: https://huggingface.co/lh527/qfhj
 - Perfil de GitHub del autor (sin relación confirmada con el modelo): https://github.com/LH527

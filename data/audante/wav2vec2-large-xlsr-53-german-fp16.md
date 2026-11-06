@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en float16: aproximadamente 0,6-0,7 GB solo para pesos; con activaciones y buffers de inferencia, del orden de 1-2 GB para audios de duracion moderada.
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM (GTX 1650, RTX 3050, RTX 4090, A100, H100); el modelo no requiere aceleradores de gama alta.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer moderna e incluso en CPU para inferencia por lotes pequenos.
-- Opciones de despliegue: transformers (con `Wav2Vec2ForCTC` y `Wav2Vec2Processor`), pipelines de ASR de HuggingFace; para CPU, exportacion a ONNX o uso de llama.cpp no aplica (no es un modelo de lenguaje); vLLM y TGI no soportan arquitecturas CTC de audio de forma estandar.
+- Opciones de despliegue: transformers (con `Wav2Vec2ForCTC` y `Wav2Vec2Processor`), pipelines de ASR de Hugging Face; para CPU, exportacion a ONNX o uso de llama.cpp no aplica (no es un modelo de lenguaje); vLLM y TGI no soportan arquitecturas CTC de audio de forma estandar.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ La comparativa se limita a los modelos de la misma familia referenciados en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Audante/wav2vec2-large-xlsr-53-german-fp16
+- Modelo en Hugging Face: https://huggingface.co/Audante/wav2vec2-large-xlsr-53-german-fp16
 - Modelo base: https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-german
 - Revision del modelo base citada: `4b8a02957378d0f2da2ef74091156b032c485a89`
 - Paper de wav2vec2 (Facebook AI): no disponible en la informacion proporcionada

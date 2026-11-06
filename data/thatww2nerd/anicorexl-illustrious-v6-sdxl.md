@@ -2,7 +2,7 @@
 
 ## Resumen
 
-anicorexl-illustrious-v6-sdxl es un modelo de generacion de imagenes texto-a-imagen derivado de Illustrious-XL, una variante de Stable Diffusion XL especializada en estetica anime. Lo publica en HuggingFace el usuario ThatWW2Nerd, aunque el modelo original fue creado por shonzeck34263 y distribuido a traves de Civitai; el repositorio de HuggingFace actua como espejo del checkpoint original en formato diffusers y safetensors. El modelo resuelve la generacion de ilustraciones anime con enfasis declarado en anatomia, fondos, color y adherencia al prompt.
+anicorexl-illustrious-v6-sdxl es un modelo de generacion de imagenes texto-a-imagen derivado de Illustrious-XL, una variante de Stable Diffusion XL especializada en estetica anime. Lo publica en Hugging Face el usuario ThatWW2Nerd, aunque el modelo original fue creado por shonzeck34263 y distribuido a traves de Civitai; el repositorio de Hugging Face actua como espejo del checkpoint original en formato diffusers y safetensors. El modelo resuelve la generacion de ilustraciones anime con enfasis declarado en anatomia, fondos, color y adherencia al prompt.
 
 Tecnicamente es un fine-tune de OnomaAIResearch/Illustrious-xl-early-release-v0, que a su vez parte de la arquitectura Stable Diffusion XL (UNet + doble text encoder CLIP). El checkpoint contiene 2.567.463.684 parametros y ocupa 6,9 GB en el repositorio. La longitud de contexto textual viene determinada por los text encoders de SDXL (77 tokens por segmento), no por una ventana extendida propia.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| anicorexl-illustrious-v6-sdxl | 2.567.463.684 | 77 tokens (text encoders SDXL) | faipl-1.0-sd | HuggingFace (18 descargas) |
-| OnomaAIResearch/Illustrious-xl-early-release-v0 | no disponible en la informacion | 77 tokens (SDXL) | no disponible en la informacion | HuggingFace (modelo base) |
-| Stable Diffusion XL base | no disponible en la informacion | 77 tokens | CreativeML Open RAIL++-M | HuggingFace, ampliamente extendido |
+| anicorexl-illustrious-v6-sdxl | 2.567.463.684 | 77 tokens (text encoders SDXL) | faipl-1.0-sd | Hugging Face (18 descargas) |
+| OnomaAIResearch/Illustrious-xl-early-release-v0 | no disponible en la informacion | 77 tokens (SDXL) | no disponible en la informacion | Hugging Face (modelo base) |
+| Stable Diffusion XL base | no disponible en la informacion | 77 tokens | CreativeML Open RAIL++-M | Hugging Face, ampliamente extendido |
 
 No se dispone de datos de rendimiento comparativo (benchmarks FID, CLIP score ni preferencias humanas) en la informacion proporcionada.
 
@@ -76,12 +76,12 @@ No se dispone de datos de rendimiento comparativo (benchmarks FID, CLIP score ni
 - Limitacion de contexto: los text encoders de SDXL limitan el prompt a 77 tokens por segmento; prompts largos requieren tecnicas de concatenacion o prompt weighting.
 - Limitacion de idioma: solo se declara soporte de ingles; los prompts en castellano pueden degradar la adherencia.
 - Restricciones de licencia: la FAIpl-1.0-SD impone condiciones especificas sobre uso comercial y redistribucion; es necesario revisar los terminos en freedevproject.org antes de usarlo en produccion.
-- Caveat de procedencia: el modelo se publica como espejo de un checkpoint de Civitai; no hay garantia de mantenimiento, actualizaciones ni soporte por parte del autor en HuggingFace.
+- Caveat de procedencia: el modelo se publica como espejo de un checkpoint de Civitai; no hay garantia de mantenimiento, actualizaciones ni soporte por parte del autor en Hugging Face.
 - Madurez: con 18 descargas y 0 likes, la validacion comunitaria es practicamente nula; conviene probarlo en un entorno controlado antes de integrarlo en flujos de trabajo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ThatWW2Nerd/anicorexl-illustrious-v6-sdxl
+- Hugging Face: https://huggingface.co/ThatWW2Nerd/anicorexl-illustrious-v6-sdxl
 - Modelo original en Civitai: https://civitai.com/models/1367726?modelVersionId=1945914
 - Perfil del autor original en Civitai: https://civitai.com/user/shonzeck34263
 - Modelo base: https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0

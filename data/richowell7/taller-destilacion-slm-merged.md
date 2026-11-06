@@ -109,7 +109,7 @@ En la práctica, cualquier alternativa generalista de la tabla ofrece mejor cali
 
 ## Enlaces
 
-- Modelo fusionado en HuggingFace: https://huggingface.co/richowell7/taller-destilacion-slm-merged
+- Modelo fusionado en Hugging Face: https://huggingface.co/richowell7/taller-destilacion-slm-merged
 - Adaptador LoRA original (≈19 MB): https://huggingface.co/richowell7/taller-destilacion-slm
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Paper, blog o repositorio del taller: no disponible en la información proporcionada.

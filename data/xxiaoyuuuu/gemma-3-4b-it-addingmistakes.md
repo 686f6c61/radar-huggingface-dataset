@@ -53,7 +53,7 @@ La innovacion metodologica reside en la recompensa Adding Mistakes: una copia co
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card remite a un articulo con identificador arXiv pendiente ("XXXX.XXXXX") y a un dataset de evaluacion en HuggingFace (xxiaoyuuuu/Gemma-3-4B-IT-CRoS-eval), pero no incluye cifras de MMLU, HumanEval, GSM8K ni de las tareas AIW o Survo.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite a un articulo con identificador arXiv pendiente ("XXXX.XXXXX") y a un dataset de evaluacion en Hugging Face (xxiaoyuuuu/Gemma-3-4B-IT-CRoS-eval), pero no incluye cifras de MMLU, HumanEval, GSM8K ni de las tareas AIW o Survo.
 
 ## Requisitos de hardware
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma-3-4B-IT-AddingMistakes | 4B + LoRA r=32 | 128K (base) | GRPO, recompensa Adding Mistakes, 300 pasos | Gemma License | HuggingFace (xxiaoyuuuu) |
-| Gemma-3-4B-IT-CRoS | 4B + LoRA r=32 | 128K (base) | GRPO, recompensa de causalidad CRoS, 300 pasos | Gemma License | HuggingFace (xxiaoyuuuu) |
-| google/gemma-3-4b-it | 4B | 128K | Instruct tuning de Google | Gemma License | HuggingFace (google) |
-| Qwen2.5-3B-Instruct | 3B | 32K | Instruct tuning de Alibaba | Apache 2.0 | HuggingFace (Qwen) |
+| Gemma-3-4B-IT-AddingMistakes | 4B + LoRA r=32 | 128K (base) | GRPO, recompensa Adding Mistakes, 300 pasos | Gemma License | Hugging Face (xxiaoyuuuu) |
+| Gemma-3-4B-IT-CRoS | 4B + LoRA r=32 | 128K (base) | GRPO, recompensa de causalidad CRoS, 300 pasos | Gemma License | Hugging Face (xxiaoyuuuu) |
+| google/gemma-3-4b-it | 4B | 128K | Instruct tuning de Google | Gemma License | Hugging Face (google) |
+| Qwen2.5-3B-Instruct | 3B | 32K | Instruct tuning de Alibaba | Apache 2.0 | Hugging Face (Qwen) |
 
 La comparacion con Qwen2.5-3B-Instruct se ofrece como referencia de tamano y categoria (modelo instructivo de ~3-4B), pero no se dispone de datos de rendimiento comparativo para este adaptador. No se han publicado resultados de benchmarks que permitan una comparacion cuantitativa.
 
@@ -88,7 +88,7 @@ La comparacion con Qwen2.5-3B-Instruct se ofrece como referencia de tamano y cat
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/xxiaoyuuuu/Gemma-3-4B-IT-AddingMistakes)
+- [Modelo en Hugging Face](https://huggingface.co/xxiaoyuuuu/Gemma-3-4B-IT-AddingMistakes)
 - [Variante CRoS](https://huggingface.co/xxiaoyuuuu/Gemma-3-4B-IT-CRoS)
 - [Modelo base google/gemma-3-4b-it](https://huggingface.co/google/gemma-3-4b-it)
 - [Dataset de evaluacion](https://huggingface.co/datasets/xxiaoyuuuu/Gemma-3-4B-IT-CRoS-eval)

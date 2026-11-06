@@ -32,7 +32,7 @@ El fine-tuning se realizó sobre el dataset AEMPS CIMA, que contiene informació
 - Clasificación de textos médicos en español en la taxonomía ATC de cinco niveles (grupo anatómico, subgrupo terapéutico, subgrupo farmacológico, subgrupo químico y sustancia química).
 - Acepta como entrada descripciones de medicamentos, principios activos, formas farmacéuticas y fragmentos de prospectos.
 - Salida multietiqueta: el modelo asigna probabilidades a cada nivel jerárquico, permitiendo extraer el código ATC completo.
-- Soporte para inferencia con la librería transformers estándar de HuggingFace.
+- Soporte para inferencia con la librería transformers estándar de Hugging Face.
 - Capacidad de procesamiento por lotes para grandes volúmenes de datos farmacéuticos.
 - No es un modelo generativo; no produce texto, solo clasifica.
 
@@ -80,7 +80,7 @@ No se dispone de información sobre modelos comparables específicos para clasif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hsilvosa/BETO-ATC-Hierarchical-Classifier
+- Modelo en Hugging Face: https://huggingface.co/hsilvosa/BETO-ATC-Hierarchical-Classifier
 - Repositorio de BETO (modelo base): https://github.com/dccuchile/beto
 - Dataset AEMPS CIMA Research Dataset: https://huggingface.co/datasets/hsilvosa/aemps-cima
 - Dataset OpenPLACSP: https://huggingface.co/datasets/hsilvosa/openplacsp

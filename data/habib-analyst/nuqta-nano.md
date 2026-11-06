@@ -90,7 +90,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/habib-analyst/nuqta-nano
+- Modelo en Hugging Face: https://huggingface.co/habib-analyst/nuqta-nano
 - Corpus Dakshina (origen de los datos de entrenamiento, referenciado en la model card): no se proporciona URL directa en la información disponible.
 - Scripts de entrenamiento y verificación incluidos en el repo: `scripts/train.py`, `scripts/resume_train.py`, `scripts/prepare_data.py`, `examples/verify_metrics.py`.
 - Resultados de evaluación detallados: `assets/eval_results.json` (en el repo).

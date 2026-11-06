@@ -2,7 +2,7 @@
 
 ## Resumen
 
-redxsun/restuff es un modelo publicado en HuggingFace por el usuario redxsun bajo licencia OpenRAIL. En el momento de la consulta, el modelo no registra descargas ni valoraciones, y su model card no contiene ninguna información técnica más allá de la licencia. No se dispone de datos sobre arquitectura, tamaño, entrenamiento o capacidades. La ausencia de documentación y de actividad sugiere que se trata de un repositorio recién creado o vacío, sin utilidad práctica para desarrolladores o investigadores hasta que el autor publique información adicional.
+redxsun/restuff es un modelo publicado en Hugging Face por el usuario redxsun bajo licencia OpenRAIL. En el momento de la consulta, el modelo no registra descargas ni valoraciones, y su model card no contiene ninguna información técnica más allá de la licencia. No se dispone de datos sobre arquitectura, tamaño, entrenamiento o capacidades. La ausencia de documentación y de actividad sugiere que se trata de un repositorio recién creado o vacío, sin utilidad práctica para desarrolladores o investigadores hasta que el autor publique información adicional.
 
 ## Especificaciones tecnicas
 
@@ -54,5 +54,5 @@ No es posible establecer una comparativa con modelos de la misma categoria, ya q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/redxsun/restuff
+- Repositorio Hugging Face: https://huggingface.co/redxsun/restuff
 - Model card original (sin contenido relevante): https://huggingface.co/redxsun/restuff/tree/main (no se han publicado archivos)

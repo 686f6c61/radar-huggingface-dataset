@@ -4,7 +4,7 @@
 
 PixArt-900m-1024-ft-v0.6 es un modelo de generacion de imagenes de texto a imagen desarrollado por terminusresearch, basado en el modelo PixArt-900m-1024-ft-large de ptx0. Se trata de un fine-tuning completo (full rank finetune) que adapta el modelo base para mejorar la calidad de generacion en estilos especificos, con especial atencion a escenas fantasticas, entornos detallados y fotografia etnografica. El modelo utiliza el pipeline PixArtSigmaPipeline de la libreria diffusers y esta disponible bajo licencia CreativeML OpenRAIL-M.
 
-Con aproximadamente 908 millones de parametros, este modelo se posiciona en la categoria de modelos de difusion de tamano medio, disenado para generar imagenes a resolucion 1024x1024. Su relevancia radica en que ofrece una alternativa de codigo abierto con capacidades de generacion de alta calidad, manteniendo un equilibrio entre rendimiento y requisitos de hardware. El modelo ha recibido 24 likes y acumula 172 descargas en HuggingFace, lo que indica un interes moderado dentro de la comunidad.
+Con aproximadamente 908 millones de parametros, este modelo se posiciona en la categoria de modelos de difusion de tamano medio, disenado para generar imagenes a resolucion 1024x1024. Su relevancia radica en que ofrece una alternativa de codigo abierto con capacidades de generacion de alta calidad, manteniendo un equilibrio entre rendimiento y requisitos de hardware. El modelo ha recibido 24 likes y acumula 172 descargas en Hugging Face, lo que indica un interes moderado dentro de la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ El entrenamiento se realizo como un fine-tuning completo (full rank finetune) pa
 - Capacidad para representar objetos y conceptos especificos como comics, mascotas y personajes en situaciones cotidianas.
 - Soporte de prompt negativo para mejorar la calidad de la imagen (ej: "blurry, cropped, ugly").
 - Generacion "unconditional" (prompt en blanco) para explorar la distribucion aprendida.
-- Integracion con el ecosistema diffusers de HuggingFace mediante PixArtSigmaPipeline.
+- Integracion con el ecosistema diffusers de Hugging Face mediante PixArtSigmaPipeline.
 
 ## Casos de uso
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: no disponible oficialmente, pero para un modelo de 900M parametros a resolucion 1024x1024 se estima un consumo de 8-12 GB en FP16, dependiendo del pipeline completo.
 - GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB) para inferencia comoda, o GPUs profesionales como A100 (40/80 GB) para procesamiento por lotes.
 - En consumer GPU: si cabe en GPUs de gama alta con 16-24 GB de VRAM, como RTX 4080/4090. En GPUs con 8 GB podria ser limitante.
-- Opciones de despliegue: al usar diffusers, se puede integrar con pipelines de Python. Para produccion, se puede servir con HuggingFace Inference Endpoints o mediante APIs personalizadas con FastAPI.
+- Opciones de despliegue: al usar diffusers, se puede integrar con pipelines de Python. Para produccion, se puede servir con Hugging Face Inference Endpoints o mediante APIs personalizadas con FastAPI.
 - Latencia y throughput: no disponible. Dependera del hardware y de la optimizacion (torch.compile, xformers, etc.).
 
 ## Comparativa con modelos similares
@@ -77,6 +77,6 @@ El modelo es un fine-tuning del checkpoint de ptx0, por lo que su comparativa di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/terminusresearch/pixart-900m-1024-ft-v0.6
+- Hugging Face: https://huggingface.co/terminusresearch/pixart-900m-1024-ft-v0.6
 - Modelo base: https://huggingface.co/ptx0/pixart-900m-1024-ft-large
 - Benchmark con torch.compile: https://gist.github.com/sayakpaul/4d930d0d98d301b35d15a2af17befd06

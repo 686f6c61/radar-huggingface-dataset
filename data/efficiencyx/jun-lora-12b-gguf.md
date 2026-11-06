@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento (benchmarks, MMLU, HumanEval u otros) para
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/efficiencyx/Jun-LoRA-12B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/efficiencyx/Jun-LoRA-12B-GGUF
 - Modelo base: https://huggingface.co/unsloth/gemma-4-12B-it-qat-q4_0-unquantized
 - Generación anterior (v6): https://huggingface.co/efficiencyx/Jun-LoRA-v6-12B-GGUF
 - Generación anterior (v4): https://huggingface.co/efficiencyx/Jun-LoRA-v4-12B-GGUF

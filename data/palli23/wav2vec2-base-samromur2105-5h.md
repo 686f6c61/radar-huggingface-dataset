@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`palli23/wav2vec2-base-samromur2105-5h` es un modelo de reconocimiento automático del habla (ASR) en islandés, desarrollado por el usuario palli23 y publicado en HuggingFace. Está construido sobre la arquitectura wav2vec2-base de Meta, con 94.403.241 parámetros (~94 M) y pesos en formato safetensors, lo que lo sitúa en la gama de modelos acústicos ligeros, muy por debajo de los sistemas ASR multilingües actuales en número de parámetros.
+`palli23/wav2vec2-base-samromur2105-5h` es un modelo de reconocimiento automático del habla (ASR) en islandés, desarrollado por el usuario palli23 y publicado en Hugging Face. Está construido sobre la arquitectura wav2vec2-base de Meta, con 94.403.241 parámetros (~94 M) y pesos en formato safetensors, lo que lo sitúa en la gama de modelos acústicos ligeros, muy por debajo de los sistemas ASR multilingües actuales en número de parámetros.
 
 El modelo forma parte del conjunto de checkpoints de escalado `samromur-21.05`, asociado al trabajo "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2026). El nombre del repositorio y del checkpoint indica un entrenamiento sobre un subconjunto reducido de datos (5 horas, según la nomenclatura `5h`), orientado a estudiar hasta qué punto modelos pequeños y especializados pueden competir con modelos multilingües mucho mayores en un único idioma.
 
@@ -20,7 +20,7 @@ Su relevancia práctica es acotada pero concreta: ofrece una base de partida par
 | Idiomas soportados | islandés (`is`) |
 | Licencia | cc-by-sa-4.0 |
 | Formato de pesos | safetensors |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tamaño del repositorio | 0,4 GB |
 | Fecha de creación | 2026-09-15 |
 | Fecha de última actualización | 2026-09-15 |
@@ -63,17 +63,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPU compatibles: cualquier GPU con al menos 2 GB de memoria, incluidas GTX 1050 Ti, GTX 1650, RTX 3050, RTX 3060, RTX 4090, A100 y H100; el modelo es demasiado pequeño para aprovechar la capacidad de las GPU de centro de datos.
 - GPU de consumo: sí, cabe holgadamente en cualquier GPU de consumo actual e incluso en iGPU con memoria compartida suficiente.
 - CPU: la inferencia en CPU es viable para uso no interactivo; para procesamiento por lotes de audio largo conviene una GPU aunque sea modesta.
-- Opciones de despliegue: HuggingFace Transformers (`Wav2Vec2ForCTC` y `Wav2Vec2Processor`), exportación a ONNX mediante Optimum, y alternativas como sherpa-onnx para inferencia sin Python. No se ha confirmado soporte específico en vLLM ni en TGI, orientados a modelos de lenguaje.
+- Opciones de despliegue: Hugging Face Transformers (`Wav2Vec2ForCTC` y `Wav2Vec2Processor`), exportación a ONNX mediante Optimum, y alternativas como sherpa-onnx para inferencia sin Python. No se ha confirmado soporte específico en vLLM ni en TGI, orientados a modelos de lenguaje.
 - Latencia y throughput: no disponibles. No se han publicado mediciones en la información proporcionada, y cualquier cifra dependería del hardware, la longitud del audio y el decodificador empleado.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| palli23/wav2vec2-base-samromur2105-5h | ~94 M | Audio, islandés | cc-by-sa-4.0 | HuggingFace |
-| facebook/wav2vec2-base | ~95 M | Audio, multilingüe en preentrenamiento | Apache-2.0 | HuggingFace |
-| facebook/wav2vec2-large-xlsr-53 | ~317 M | Audio, 53 idiomas | Apache-2.0 | HuggingFace |
-| openai/whisper-small | 244 M | Audio (ventanas de 30 s), multilingüe | Apache-2.0 | HuggingFace |
+| palli23/wav2vec2-base-samromur2105-5h | ~94 M | Audio, islandés | cc-by-sa-4.0 | Hugging Face |
+| facebook/wav2vec2-base | ~95 M | Audio, multilingüe en preentrenamiento | Apache-2.0 | Hugging Face |
+| facebook/wav2vec2-large-xlsr-53 | ~317 M | Audio, 53 idiomas | Apache-2.0 | Hugging Face |
+| openai/whisper-small | 244 M | Audio (ventanas de 30 s), multilingüe | Apache-2.0 | Hugging Face |
 
 La comparación cuantitativa de calidad (WER/CER) no está disponible para el modelo objeto de esta ficha, ya que no se han publicado métricas. Como referencia estructural, los tres modelos alternativos citados son de acceso abierto y ampliamente utilizados en tareas de ASR, pero ninguno está especializado en islandés, por lo que su rendimiento en ese idioma dependería del ajuste fino posterior.
 
@@ -92,6 +92,6 @@ La comparación cuantitativa de calidad (WER/CER) no está disponible para el mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/palli23/wav2vec2-base-samromur2105-5h
+- Modelo en Hugging Face: https://huggingface.co/palli23/wav2vec2-base-samromur2105-5h
 - Referencia citada en la model card: "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2026) — no se ha encontrado enlace directo al artículo en la información disponible.
 - No se han encontrado otros enlaces relevantes: los resultados de la búsqueda web realizada corresponden a páginas sobre la ecuación de Nernst y no guardan relación con este modelo.

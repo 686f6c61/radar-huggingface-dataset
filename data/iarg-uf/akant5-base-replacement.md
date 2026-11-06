@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IARG-UF/akant5-base-replacement | 296,7 M | no disponible | ak, en | research use only | HuggingFace |
-| google/mt5-base | 580 M | 512 tokens (estándar mT5) | 101 idiomas | Apache 2.0 | HuggingFace |
-| IARG-UF/akant5-base-replacement-init | no disponible | no disponible | ak, en | research use only | HuggingFace |
-| IARG-UF/akant5-base-extension | no disponible | no disponible | ak, en | research use only | HuggingFace (colección AkanT5) |
+| IARG-UF/akant5-base-replacement | 296,7 M | no disponible | ak, en | research use only | Hugging Face |
+| google/mt5-base | 580 M | 512 tokens (estándar mT5) | 101 idiomas | Apache 2.0 | Hugging Face |
+| IARG-UF/akant5-base-replacement-init | no disponible | no disponible | ak, en | research use only | Hugging Face |
+| IARG-UF/akant5-base-extension | no disponible | no disponible | ak, en | research use only | Hugging Face (colección AkanT5) |
 
 La comparación directa con mT5-base es la más relevante: AkanT5 base replacement reduce el vocabulario de 250.000 a 64.100 entradas, lo que explica su menor número de parámetros (296,7 M frente a 580 M) y su especialización en twi a costa de cobertura multilingüe. Frente a las alternativas de la propia colección AkanT5, la variante de extensión mantiene el vocabulario original ampliado (295.031 entradas) y por tanto un mayor número de parámetros. No se dispone de datos de rendimiento comparativo publicados en la información proporcionada.
 
@@ -93,7 +93,7 @@ La comparación directa con mT5-base es la más relevante: AkanT5 base replaceme
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IARG-UF/akant5-base-replacement
+- Modelo en Hugging Face: https://huggingface.co/IARG-UF/akant5-base-replacement
 - Inicialización de vocabulario: https://huggingface.co/IARG-UF/akant5-base-replacement-init
 - Colección AkanT5: https://huggingface.co/collections/IARG-UF/akant5-cpt-checkpoints-and-vocabulary-initializations
 - Modelo base original: https://huggingface.co/google/mt5-base

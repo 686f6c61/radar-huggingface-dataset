@@ -65,7 +65,7 @@ No disponible. No existe una categoria comparable, ya que no es un modelo de len
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LayerFault/serialization-pickle-safe-global-control
+- Repositorio Hugging Face: https://huggingface.co/LayerFault/serialization-pickle-safe-global-control
 - Paper PickleBall (seguridad en deserializacion de pickle): https://arxiv.org/html/2508.15987v1
 - Version 2 del paper PickleBall: https://arxiv.org/html/2508.15987v2
 - PDF PickleBall (CCS 2025): https://www.cs.columbia.edu/~junfeng/papers/pickleball-ccs25.pdf

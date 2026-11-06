@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Sapient001/resume` es un repositorio alojado en HuggingFace que, por su nombre y tamaño (0.1 GB), podría contener un archivo de currículum vitae o un pequeño modelo relacionado con generación de resúmenes. Sin embargo, la información pública es prácticamente inexistente: la model card solo incluye la licencia `unknown` y no se especifican arquitectura, parámetros, contexto ni idiomas. El repositorio fue creado el 25 de agosto de 2026 y actualizado el mismo día, con cero descargas y cero likes, lo que sugiere que es un proyecto personal o experimental sin documentación técnica.
+El modelo `Sapient001/resume` es un repositorio alojado en Hugging Face que, por su nombre y tamaño (0.1 GB), podría contener un archivo de currículum vitae o un pequeño modelo relacionado con generación de resúmenes. Sin embargo, la información pública es prácticamente inexistente: la model card solo incluye la licencia `unknown` y no se especifican arquitectura, parámetros, contexto ni idiomas. El repositorio fue creado el 25 de agosto de 2026 y actualizado el mismo día, con cero descargas y cero likes, lo que sugiere que es un proyecto personal o experimental sin documentación técnica.
 
 Dado que no se dispone de datos concretos sobre el modelo, cualquier especificación técnica, capacidad o benchmark sería especulación. Esta ficha se limita a documentar la ausencia de información y a señalar los elementos disponibles, siguiendo el principio de no inventar datos.
 
@@ -53,5 +53,5 @@ No disponible. No se conocen modelos comparables de la misma categoría porque n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sapient001/resume
+- Repositorio Hugging Face: https://huggingface.co/Sapient001/resume
 - No se encontraron papers, blogs o demos relacionados con este modelo en la búsqueda web.

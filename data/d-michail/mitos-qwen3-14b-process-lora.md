@@ -76,9 +76,9 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3-14B (base) | ~14 000 millones (denominacion oficial; cifra exacta no disponible) | No disponible en la informacion proporcionada | LLM generalista multilingue | Apache-2.0 | HuggingFace |
-| Mitos-Qwen3-14B-Process-LoRA (este) | Adaptador LoRA sobre ~14B | 16 384 tokens en entrenamiento | QA administrativo griego (adaptador) | CC BY-SA 4.0 | HuggingFace |
-| d-michail/Mitos-Qwen3-14B-Process | ~14 000 millones (modelo fusionado) | No disponible en la informacion proporcionada | QA administrativo griego (pesos fusionados) | CC BY-SA 4.0 | HuggingFace |
+| Qwen/Qwen3-14B (base) | ~14 000 millones (denominacion oficial; cifra exacta no disponible) | No disponible en la informacion proporcionada | LLM generalista multilingue | Apache-2.0 | Hugging Face |
+| Mitos-Qwen3-14B-Process-LoRA (este) | Adaptador LoRA sobre ~14B | 16 384 tokens en entrenamiento | QA administrativo griego (adaptador) | CC BY-SA 4.0 | Hugging Face |
+| d-michail/Mitos-Qwen3-14B-Process | ~14 000 millones (modelo fusionado) | No disponible en la informacion proporcionada | QA administrativo griego (pesos fusionados) | CC BY-SA 4.0 | Hugging Face |
 | Otros adaptadores abiertos de QA administrativo en griego | No disponible | No disponible | No disponible | No disponible | No se han identificado en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d-michail/Mitos-Qwen3-14B-Process-LoRA
+- Modelo en Hugging Face: https://huggingface.co/d-michail/Mitos-Qwen3-14B-Process-LoRA
 - Modelo fusionado: https://huggingface.co/d-michail/Mitos-Qwen3-14B-Process
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/d-michail/mitos-qa

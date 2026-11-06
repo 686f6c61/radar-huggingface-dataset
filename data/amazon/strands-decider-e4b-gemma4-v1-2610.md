@@ -4,7 +4,7 @@
 
 strands-decider-E4B-gemma4-v1-2610 es un adaptador LoRA (PEFT) publicado por Amazon sobre el modelo base google/gemma-4-E4B-it, orientado a la clasificación de texto y a la emisión de decisiones tipadas ("typed decisions"). No es un modelo de generación autónoma, sino un cabezal de decisión ajustado que se apoya en las representaciones del modelo base para resolver tareas de etiquetado sobre conjuntos muy heterogéneos: desde detección de spam y análisis de sentimiento hasta revisión de código, detección de bugs, atribución en contratos o clasificación de intenciones.
 
-El propósito del modelo es servir como componente de decisión determinista dentro de un pipeline mayor, de ahí el nombre "strands-decider" y la etiqueta calibration. En lugar de producir texto libre, el sistema devuelve una clase o decisión calibrada, lo que lo hace apto para integrarse como etapa de enrutado, moderación, verificación o evaluación automática. El pipeline declarado en HuggingFace es text-classification y la librería asociada, peft.
+El propósito del modelo es servir como componente de decisión determinista dentro de un pipeline mayor, de ahí el nombre "strands-decider" y la etiqueta calibration. En lugar de producir texto libre, el sistema devuelve una clase o decisión calibrada, lo que lo hace apto para integrarse como etapa de enrutado, moderación, verificación o evaluación automática. El pipeline declarado en Hugging Face es text-classification y la librería asociada, peft.
 
 El repo ocupa 0,5 GB, lo que corresponde al adaptador LoRA y no al modelo completo. Se distribuye bajo licencia Apache 2.0. No se especifican en la información disponible ni la arquitectura interna, ni el número de parámetros totales, ni la longitud de contexto del modelo base, por lo que estos datos se marcan como no disponibles. Tampoco consta ningún resultado verificado de forma independiente: todas las métricas publicadas son declaradas por el autor (verified: false).
 
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amazon/strands-decider-E4B-gemma4-v1-2610 | no disponible (adaptador LoRA) | no disponible | ver tabla de benchmarks (declarados por el autor) | apache-2.0 | HuggingFace, 0 descargas |
+| amazon/strands-decider-E4B-gemma4-v1-2610 | no disponible (adaptador LoRA) | no disponible | ver tabla de benchmarks (declarados por el autor) | apache-2.0 | Hugging Face, 0 descargas |
 | google/gemma-4-E4B-it (modelo base) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de clasificacion comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -119,6 +119,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amazon/strands-decider-E4B-gemma4-v1-2610
+- Hugging Face: https://huggingface.co/amazon/strands-decider-E4B-gemma4-v1-2610
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

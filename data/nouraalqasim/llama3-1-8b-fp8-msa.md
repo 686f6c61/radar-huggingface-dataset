@@ -84,7 +84,7 @@ La ventaja de esta variante es su calibración específica para árabe, que pued
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NouraAlqasim/llama3.1-8b-fp8-msa
+- Hugging Face: https://huggingface.co/NouraAlqasim/llama3.1-8b-fp8-msa
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Dataset de calibración: https://huggingface.co/datasets/Almheiri/ArabCulture-Dialogue
 - NVIDIA ModelOpt (documentación): https://github.com/NVIDIA/TensorRT-Model-Optimizer

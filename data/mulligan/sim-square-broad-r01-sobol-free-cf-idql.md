@@ -99,10 +99,10 @@ La ventaja estructural que la model card atribuye a IDQL frente a DDPG+BC es la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r01-sobol-free-cf-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r01-sobol-free-cf-idql
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organizacion en HuggingFace: https://huggingface.co/mulligan
+- Organizacion en Hugging Face: https://huggingface.co/mulligan
 - Dataset de teleoperacion: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-sobol
 - Dataset de DAgger (brazo sobol-free-cf): https://huggingface.co/datasets/mulligan/sim-square-broad-c01-dagger-sobol-free-cf
 - Dataset de rollouts de politica: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-sobol-policy-rollouts

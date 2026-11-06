@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GPT-2 small (este repo) | 137M | 1024 | MIT | HuggingFace (copia no oficial) |
-| GPT-2 medium | 355M | 1024 | MIT | HuggingFace (oficial) |
-| GPT-2 large | 774M | 1024 | MIT | HuggingFace (oficial) |
-| GPT-2 XL | 1.5B | 1024 | MIT | HuggingFace (oficial) |
+| GPT-2 small (este repo) | 137M | 1024 | MIT | Hugging Face (copia no oficial) |
+| GPT-2 medium | 355M | 1024 | MIT | Hugging Face (oficial) |
+| GPT-2 large | 774M | 1024 | MIT | Hugging Face (oficial) |
+| GPT-2 XL | 1.5B | 1024 | MIT | Hugging Face (oficial) |
 
 No se dispone de datos de rendimiento comparativo (perplejidad, MMLU, HumanEval) en la información proporcionada para establecer una comparación cuantitativa con alternativas.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo (perplejidad, MMLU, HumanEval)
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Aksash-Yadav-Retro/gpt2
+- Repositorio en Hugging Face: https://huggingface.co/Aksash-Yadav-Retro/gpt2
 - Paper original: https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
 - Blog de OpenAI: https://openai.com/blog/better-language-models/
 - Model card oficial de OpenAI: https://github.com/openai/gpt-2/blob/master/model_card.md

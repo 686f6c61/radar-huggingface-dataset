@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Duración entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pi05-piperx-8h-seed1000-fp32 | 4.143.404.816 | 8h (38513 pasos) | No disponible | HuggingFace |
-| pi05-piperx-2h-seed1000-fp32 | No disponible | 2h | No disponible | HuggingFace |
-| lerobot/pi05_base | No disponible | No aplica (base) | No disponible | HuggingFace |
+| pi05-piperx-8h-seed1000-fp32 | 4.143.404.816 | 8h (38513 pasos) | No disponible | Hugging Face |
+| pi05-piperx-2h-seed1000-fp32 | No disponible | 2h | No disponible | Hugging Face |
+| lerobot/pi05_base | No disponible | No aplica (base) | No disponible | Hugging Face |
 
 Existen otros checkpoints del mismo autor para la misma tarea con diferentes duraciones de entrenamiento, como pi05-piperx-2h-seed1000-fp32. No se dispone de especificaciones detalladas de esos checkpoints en la información proporcionada.
 
@@ -77,7 +77,7 @@ Existen otros checkpoints del mismo autor para la misma tarea con diferentes dur
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Elvinky/pi05-piperx-8h-seed1000-fp32
+- Hugging Face: https://huggingface.co/Elvinky/pi05-piperx-8h-seed1000-fp32
 - Mirror (HF): https://hf-mirror.com/Elvinky/pi05-piperx-8h-seed1000-fp32
 
 No se encontraron papers, blogs, demos u otros enlaces relevantes en la búsqueda web.

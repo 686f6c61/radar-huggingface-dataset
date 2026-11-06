@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Karamoz/wulx-stable-audio-open-small` es un repositorio de HuggingFace que contiene una copia sin modificar del modelo `stabilityai/stable-audio-open-small`, desarrollado originalmente por Stability AI. El autor del repositorio, Karamoz, lo publica como espejo de distribución para que la extensión WULX PACK (un plugin de Adobe Premiere Pro) descargue automáticamente el modelo durante la instalación y lo utilice en la pestaña Foley, concretamente en la función de generación de audio a partir de texto.
+`Karamoz/wulx-stable-audio-open-small` es un repositorio de Hugging Face que contiene una copia sin modificar del modelo `stabilityai/stable-audio-open-small`, desarrollado originalmente por Stability AI. El autor del repositorio, Karamoz, lo publica como espejo de distribución para que la extensión WULX PACK (un plugin de Adobe Premiere Pro) descargue automáticamente el modelo durante la instalación y lo utilice en la pestaña Foley, concretamente en la función de generación de audio a partir de texto.
 
 Se trata por tanto de un modelo de texto-a-audio (text-to-audio) orientado a la síntesis de efectos de sonido y audio corto, no de un modelo de lenguaje. La model card no aporta detalles sobre arquitectura, número de parámetros ni longitud de contexto, y el repositorio no incluye pesos propios ni ajustes: es un duplicado del checkpoint original de Stability AI con la misma licencia comunitaria.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Karamoz/wulx-stable-audio-open-small | Texto-a-audio (copia) | no disponible | no disponible | Stability AI Community | HuggingFace (espejo) |
-| stabilityai/stable-audio-open-small | Texto-a-audio (original) | no disponible en esta ficha | no disponible | Stability AI Community | HuggingFace |
-| Otros modelos texto-a-audio de la familia Stable Audio | Texto-a-audio | no disponible | no disponible | Stability AI Community / enterprise | HuggingFace |
+| Karamoz/wulx-stable-audio-open-small | Texto-a-audio (copia) | no disponible | no disponible | Stability AI Community | Hugging Face (espejo) |
+| stabilityai/stable-audio-open-small | Texto-a-audio (original) | no disponible en esta ficha | no disponible | Stability AI Community | Hugging Face |
+| Otros modelos texto-a-audio de la familia Stable Audio | Texto-a-audio | no disponible | no disponible | Stability AI Community / enterprise | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas en la información proporcionada, por lo que la comparación cuantitativa no es posible.
 
@@ -78,7 +78,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Karamoz/wulx-stable-audio-open-small
+- Repositorio en Hugging Face: https://huggingface.co/Karamoz/wulx-stable-audio-open-small
 - Modelo original: https://huggingface.co/stabilityai/stable-audio-open-small
 - Licencia comunitaria de Stability AI: incluida en el archivo `LICENSE` del repositorio
 - Aviso legal: archivo `NOTICE.txt` del repositorio

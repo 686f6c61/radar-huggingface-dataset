@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Denoyo-ai-lora es un adaptador LoRA (PEFT) publicado por el usuario rgcmainhub en HuggingFace. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino que debe cargarse sobre el modelo base Qwen/Qwen2.5-Coder-0.5B-Instruct. El repositorio ocupa 0,1 GB y contiene pesos en formato safetensors, lo que es coherente con un adaptador de bajo rango y no con un modelo de pesos completos.
+Denoyo-ai-lora es un adaptador LoRA (PEFT) publicado por el usuario rgcmainhub en Hugging Face. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino que debe cargarse sobre el modelo base Qwen/Qwen2.5-Coder-0.5B-Instruct. El repositorio ocupa 0,1 GB y contiene pesos en formato safetensors, lo que es coherente con un adaptador de bajo rango y no con un modelo de pesos completos.
 
-El adaptador se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de HuggingFace, segun declara la propia model card. Las versiones de framework documentadas en el repositorio son PEFT 0.20.0, TRL 1.13.0, Transformers 5.17.0, PyTorch 2.11.0+cu128, Datasets 5.0.1 y Tokenizers 0.23.1. El pipeline declarado es text-generation y el tag "conversational" sugiere un ajuste orientado a dialogos de instrucciones.
+El adaptador se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de Hugging Face, segun declara la propia model card. Las versiones de framework documentadas en el repositorio son PEFT 0.20.0, TRL 1.13.0, Transformers 5.17.0, PyTorch 2.11.0+cu128, Datasets 5.0.1 y Tokenizers 0.23.1. El pipeline declarado es text-generation y el tag "conversational" sugiere un ajuste orientado a dialogos de instrucciones.
 
-La relevancia de esta ficha es limitada y debe interpretarse con cautela: el repositorio acumula 0 descargas y 0 "likes", no declara licencia efectiva (el campo aparece como "licence: license", un marcador de posicion sin contenido), no documenta idiomas soportados, no publica composicion del dataset de entrenamiento ni resultados de benchmarks. La busqueda web asociada no devolvio ningun resultado relevante sobre el modelo, por lo que toda la informacion verificable procede de la model card y de los metadatos de HuggingFace.
+La relevancia de esta ficha es limitada y debe interpretarse con cautela: el repositorio acumula 0 descargas y 0 "likes", no declara licencia efectiva (el campo aparece como "licence: license", un marcador de posicion sin contenido), no documenta idiomas soportados, no publica composicion del dataset de entrenamiento ni resultados de benchmarks. La busqueda web asociada no devolvio ningun resultado relevante sobre el modelo, por lo que toda la informacion verificable procede de la model card y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -70,10 +70,10 @@ No hay datos de rendimiento publicados para este adaptador, por lo que la compar
 
 | Modelo | Tipo | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| denoyo-ai-lora | Adaptador LoRA sobre Qwen2.5-Coder-0.5B-Instruct | Adaptador: no disponible; base: ~0,5 B | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-Coder-0.5B-Instruct | Modelo completo afinado por instrucciones | ~0,5 B | No disponible en esta ficha (consultar su repositorio) | HuggingFace, ampliamente utilizado |
-| Qwen/Qwen2.5-Coder-1.5B-Instruct | Modelo completo afinado por instrucciones | ~1,5 B | No disponible en esta ficha (consultar su repositorio) | HuggingFace, ampliamente utilizado |
-| Modelos pequenos de codigo de otras familias (por ejemplo, la serie SmolLM2) | Modelo completo | Del orden de 0,3-1,7 B | No disponible en esta ficha | HuggingFace |
+| denoyo-ai-lora | Adaptador LoRA sobre Qwen2.5-Coder-0.5B-Instruct | Adaptador: no disponible; base: ~0,5 B | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-Coder-0.5B-Instruct | Modelo completo afinado por instrucciones | ~0,5 B | No disponible en esta ficha (consultar su repositorio) | Hugging Face, ampliamente utilizado |
+| Qwen/Qwen2.5-Coder-1.5B-Instruct | Modelo completo afinado por instrucciones | ~1,5 B | No disponible en esta ficha (consultar su repositorio) | Hugging Face, ampliamente utilizado |
+| Modelos pequenos de codigo de otras familias (por ejemplo, la serie SmolLM2) | Modelo completo | Del orden de 0,3-1,7 B | No disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan afirmar si este adaptador mejora, iguala o degrada el comportamiento del modelo base.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks que permitan afirmar si este adaptador mejo
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/rgcmainhub/denoyo-ai-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/rgcmainhub/denoyo-ai-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - Repositorio de TRL (framework de entrenamiento citado): https://github.com/huggingface/trl
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo; los resultados obtenidos correspondian a sitios de apuestas deportivas sin relacion con el modelo.

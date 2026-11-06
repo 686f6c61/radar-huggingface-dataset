@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lyra 2.0 es un framework de generacion de mundos 3D persistentes y explorables a partir de una unica imagen, desarrollado por NVIDIA (nv-tlabs) y publicado en HuggingFace bajo el identificador nvidia/Lyra-2.0. No es un modelo de lenguaje ni un generador de imagenes: su pipeline declarado es image-to-3d, con entrada de una imagen (a 480x832) mas una secuencia de poses de camara (se recomiendan 81 fotogramas) y salida de una escena 3D explicita representada como nubes de Gaussianas 3D en formato .ply.
+Lyra 2.0 es un framework de generacion de mundos 3D persistentes y explorables a partir de una unica imagen, desarrollado por NVIDIA (nv-tlabs) y publicado en Hugging Face bajo el identificador nvidia/Lyra-2.0. No es un modelo de lenguaje ni un generador de imagenes: su pipeline declarado es image-to-3d, con entrada de una imagen (a 480x832) mas una secuencia de poses de camara (se recomiendan 81 fotogramas) y salida de una escena 3D explicita representada como nubes de Gaussianas 3D en formato .ply.
 
 El framework consta de dos etapas: primero sintetiza un video de largo alcance con consistencia geometrica global, y despues reconstruye la secuencia generada en una representacion 3D explicita. Para atacar el olvido espacial, mantiene geometria 3D por fotograma y la usa unicamente para el enrutado de informacion (recuperar fotogramas pasados relevantes y establecer correspondencias densas con los puntos de vista objetivo), dejando la sintesis de apariencia al prior generativo. Para atacar la deriva temporal, se entrena con historiales autoaumentados que exponen al modelo a sus propias salidas degradadas.
 
@@ -28,10 +28,10 @@ El modelo deriva de WAN-14B (Wan2.1) y cuenta con 14.000 millones de parametros.
 | Compatibilidad de hardware | NVIDIA Ampere, Hopper y Blackwell |
 | Sistema operativo soportado | Linux |
 | Version del modelo | V1.0 |
-| Fecha de publicacion | Repositorio de GitHub el 14/04/2026; modelo en HuggingFace creado el 06/04/2026 |
+| Fecha de publicacion | Repositorio de GitHub el 14/04/2026; modelo en Hugging Face creado el 06/04/2026 |
 | Tamano del repositorio | 98,3 GB |
-| Descargas / likes en HuggingFace | 756 / 357 |
-| Libreria en HuggingFace | lyra-2.0 |
+| Descargas / likes en Hugging Face | 756 / 357 |
+| Libreria en Hugging Face | lyra-2.0 |
 
 ## Arquitectura y entrenamiento
 
@@ -99,7 +99,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/Lyra-2.0
+- Modelo en Hugging Face: https://huggingface.co/nvidia/Lyra-2.0
 - Paper: https://arxiv.org/abs/2604.13036
 - Pagina del proyecto: https://research.nvidia.com/labs/sil/projects/lyra2/
 - Repositorio de codigo: https://github.com/nv-tlabs/lyra/tree/main/Lyra-2

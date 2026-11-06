@@ -12,7 +12,7 @@ d1-omni-600M es un modelo de decisión multimodal desarrollado por Liquid AI. Re
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | GGUF: Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ4_XS, IQ3_M; referencia BF16 de LiquidAI |
 | Idiomas soportados | No disponible |
-| Licencia | lfm1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (llama.cpp); el modelo base también en safetensors |
 | Modelo base | LiquidAI/d1-omni-600M |
 | Desarrollador original | Liquid AI |
@@ -97,7 +97,7 @@ A igualdad de tamaño, los archivos de este repositorio están 1,8 a 1,9 puntos 
 - El repositorio tiene 0 descargas y 0 likes; es una cuantización reciente y no validada por la comunidad.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/m9ter1a/d1-omni-600M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/m9ter1a/d1-omni-600M-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/d1-omni-600M
 - GGUF de LiquidAI: https://huggingface.co/LiquidAI/d1-omni-600M-GGUF
 - GGUF de AtomicChat: https://huggingface.co/AtomicChat/d1-omni-600M-GGUF

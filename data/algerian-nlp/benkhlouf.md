@@ -113,8 +113,8 @@ Los tres modelos alternativos comparten tamano (278 M) y dimension de embedding 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/algerian-nlp/BENKHLOUF
-- Organizacion algerian-nlp en HuggingFace: https://huggingface.co/algerian-nlp
+- Modelo en Hugging Face: https://huggingface.co/algerian-nlp/BENKHLOUF
+- Organizacion algerian-nlp en Hugging Face: https://huggingface.co/algerian-nlp
 - Documentacion de sentence-transformers: https://www.sbert.net/
 - Paper de Matryoshka Representation Learning: https://arxiv.org/abs/2205.13147
 - Paper de XLM-RoBERTa: https://arxiv.org/abs/1911.02116

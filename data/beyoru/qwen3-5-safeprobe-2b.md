@@ -4,7 +4,7 @@
 
 Qwen3.5-SafeProbe-2B es un modelo de clasificación de texto (safety probe) desarrollado por el usuario beyoru sobre el modelo base Qwen/Qwen3.5-2B. Su función no es la generación de texto, sino actuar como clasificador de seguridad: detecta contenido nocivo, intentos de jailbreak y prompt injection en las entradas de un sistema LLM. Está pensado como componente de guardrail (llm-guard, llm-firewall) en pipelines de moderación y despliegue de agentes.
 
-El modelo se distribuye como un fine-tune del Qwen3.5-2B con pesos en safetensors (1.541.753.026 parámetros reales según el repositorio, 3,1 GB de tamaño total) y licencia Apache 2.0. Está etiquetado para los pipelines de transformers y text-classification, con soporte declarado de inglés y vietnamita, y con requisito de acceso restringido (gated) en HuggingFace.
+El modelo se distribuye como un fine-tune del Qwen3.5-2B con pesos en safetensors (1.541.753.026 parámetros reales según el repositorio, 3,1 GB de tamaño total) y licencia Apache 2.0. Está etiquetado para los pipelines de transformers y text-classification, con soporte declarado de inglés y vietnamita, y con requisito de acceso restringido (gated) en Hugging Face.
 
 Su relevancia actual radica en la creciente necesidad de capas de protección ligeras y de baja latencia que se puedan desplegar junto a modelos generativos de mayor tamaño, filtrando entradas antes de que lleguen al modelo principal y reduciendo la superficie de ataque frente a prompt injection y jailbreaks.
 
@@ -65,15 +65,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| beyoru/Qwen3.5-SafeProbe-2B | 1.541.753.026 | no disponible | Clasificación de seguridad (guardrail) | apache-2.0 | Gated en HuggingFace |
-| Qwen/Qwen3.5-2B (base) | ~2B (según nombre) | no disponible | Generación de texto | no disponible en esta ficha | Público en HuggingFace |
+| beyoru/Qwen3.5-SafeProbe-2B | 1.541.753.026 | no disponible | Clasificación de seguridad (guardrail) | apache-2.0 | Gated en Hugging Face |
+| Qwen/Qwen3.5-2B (base) | ~2B (según nombre) | no disponible | Generación de texto | no disponible en esta ficha | Público en Hugging Face |
 | Alternativas de clasificación de seguridad de tamaño similar | no disponible | no disponible | Moderación / detección de jailbreak | no disponible | no disponible |
 
 No se dispone de información suficiente para comparar con otros clasificadores de seguridad concretos (por ejemplo, modelos de moderación de proveedores o guardrails open source específicos) sin inventar datos.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated; es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated; es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Idiomas limitados: solo se declaran inglés y vietnamita; el rendimiento en castellano u otros idiomas no está documentado y no debería asumirse.
 - Sin benchmarks publicados: no hay métricas de precisión, recall ni tasas de falsos positivos/negativos, lo que impide validar su eficacia en producción sin una evaluación propia.
 - Riesgo de falsos positivos y negativos: al ser un clasificador de seguridad, puede bloquear contenido legítimo o dejar pasar ataques; se recomienda calibración con datos propios.
@@ -84,6 +84,6 @@ No se dispone de información suficiente para comparar con otros clasificadores 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/beyoru/Qwen3.5-SafeProbe-2B
+- Hugging Face: https://huggingface.co/beyoru/Qwen3.5-SafeProbe-2B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

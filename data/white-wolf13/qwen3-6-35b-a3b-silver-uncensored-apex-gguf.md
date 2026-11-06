@@ -89,7 +89,7 @@ No se han identificado en la información disponible modelos alternativos compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/White-Wolf13/Qwen3.6-35B-A3B-SILVER-UNCENSORED-APEX-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/White-Wolf13/Qwen3.6-35B-A3B-SILVER-UNCENSORED-APEX-GGUF
 - Modelo base: Qwen/Qwen3.6-35B-A3B (referenciado en la model card; URL directa no disponible)
 - Organización Qwen en GitHub (citada por el autor): https://github.com/QwenLM
 - Paper, blog o demo: no disponible

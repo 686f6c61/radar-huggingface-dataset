@@ -91,7 +91,7 @@ La comparativa se basa en las afirmaciones de la model card; no se dispone de lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ash-astro/HaloGuard2.0-Stream-0.8B
+- Hugging Face: https://huggingface.co/ash-astro/HaloGuard2.0-Stream-0.8B
 - Modelo complementario de entrada: https://huggingface.co/astroware/HaloGuard1-Gen-0.8B
 - Build fijada de transformers: https://github.com/huggingface/transformers/archive/394b1a0eaa8e6199e372334da0aff3753a117fdb.tar.gz
 - Paper, blog, repositorio o demo adicionales: no disponible

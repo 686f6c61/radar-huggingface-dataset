@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SoAIHQ/gemma-4-26B-A4B-it-GGUF (esta ficha) | 25,2 B totales / 3,8 B activos | 262.144 tokens | GGUF (Q4_K_M, Q8_0) | Apache 2.0 según metadatos | HuggingFace (0 descargas en la consulta) |
-| google/gemma-4-26B-A4B-it (modelo base) | 25,2 B totales / 3,8 B activos | 262.144 tokens | Pesos originales (16 bits) | Licencia de Gemma 4 | HuggingFace |
+| SoAIHQ/gemma-4-26B-A4B-it-GGUF (esta ficha) | 25,2 B totales / 3,8 B activos | 262.144 tokens | GGUF (Q4_K_M, Q8_0) | Apache 2.0 según metadatos | Hugging Face (0 descargas en la consulta) |
+| google/gemma-4-26B-A4B-it (modelo base) | 25,2 B totales / 3,8 B activos | 262.144 tokens | Pesos originales (16 bits) | Licencia de Gemma 4 | Hugging Face |
 
 No se dispone de datos de rendimiento comparado con otras alternativas de la misma categoría en la información proporcionada.
 

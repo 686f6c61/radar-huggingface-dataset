@@ -88,7 +88,7 @@ Qwen3.6-35B-A3B mejora ligeramente a su predecesor Qwen3.5-35B-A3B en SWE-bench 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/seed429/albedo-qwen3.6-35b-auto-u224-7e4c229b
+- Repositorio Hugging Face del modelo: https://huggingface.co/seed429/albedo-qwen3.6-35b-auto-u224-7e4c229b
 - Repositorio oficial de Qwen3.6 en GitHub: https://github.com/QwenLM/Qwen3.6
 - Blog oficial de Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Guía de despliegue con vLLM y NVFP4: https://github.com/MiaAI-Lab/Qwen3.6-35B-A3B-NVFP4-vLLM

@@ -101,7 +101,7 @@ No se dispone de información sobre otros modelos TTS comparables en la document
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nocmt/Hojo-TTS-Light-40M-INT8
+- Repositorio Hugging Face: https://huggingface.co/nocmt/Hojo-TTS-Light-40M-INT8
 - Modelo base: https://huggingface.co/HojoAI/Hojo-TTS-Light-40M
 - Revisión concreta del modelo base: https://huggingface.co/HojoAI/Hojo-TTS-Light-40M/tree/c3cf21c77dc04b220aa4dabe20fc59e66a2a5485
 - Documentación de cuantización de ONNX Runtime: `onnxruntime.quantization.quantize_dynamic` (referenciada en la model card)

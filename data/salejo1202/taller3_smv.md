@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `salejo1202/Taller3_SMV` es una publicación en HuggingFace que carece de documentación técnica sustancial. La model card únicamente indica una licencia `unknown`, sin descripción, arquitectura, parámetros, ni información de entrenamiento. El autor, `salejo1202`, no ha proporcionado ningún detalle adicional. Con cero descargas y cero likes, parece un repositorio experimental o una subida personal sin intención de distribución pública formal.
+El modelo `salejo1202/Taller3_SMV` es una publicación en Hugging Face que carece de documentación técnica sustancial. La model card únicamente indica una licencia `unknown`, sin descripción, arquitectura, parámetros, ni información de entrenamiento. El autor, `salejo1202`, no ha proporcionado ningún detalle adicional. Con cero descargas y cero likes, parece un repositorio experimental o una subida personal sin intención de distribución pública formal.
 
 Debido a la ausencia total de especificaciones, no es posible determinar su arquitectura, tamaño, contexto, capacidades o rendimiento. Cualquier uso en entornos de producción o investigación sería arriesgado, ya que no se conocen ni las condiciones de uso ni las características técnicas mínimas. Se recomienda tratar este modelo como no apto para integración sin una evaluación previa exhaustiva.
 
@@ -53,4 +53,4 @@ No disponible. No se puede establecer una comparación con otras alternativas al
 
 ## Enlaces
 
-- [HuggingFace - salejo1202/Taller3_SMV](https://huggingface.co/salejo1202/Taller3_SMV)
+- [Hugging Face - salejo1202/Taller3_SMV](https://huggingface.co/salejo1202/Taller3_SMV)

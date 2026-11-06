@@ -2,11 +2,11 @@
 
 ## Resumen
 
-alignedsi/poison-pawn es un repositorio de HuggingFace publicado por el usuario alignedsi y etiquetado como modelo de generación de texto mediante el pipeline text-generation. La metadata lo asocia a seguridad de LLM, adversarial, red-teaming e investigación, con licencia Apache-2.0 y acceso restringido (gated).
+alignedsi/poison-pawn es un repositorio de Hugging Face publicado por el usuario alignedsi y etiquetado como modelo de generación de texto mediante el pipeline text-generation. La metadata lo asocia a seguridad de LLM, adversarial, red-teaming e investigación, con licencia Apache-2.0 y acceso restringido (gated).
 
 La información disponible no incluye model card técnica, arquitectura, tamaño, longitud de contexto ni datos de entrenamiento; por tanto, no es posible verificar sus capacidades reales ni su rendimiento. Su relevancia potencial se sitúa en la evaluación de robustez y las pruebas adversariales de sistemas LLM, no en un uso generalista documentado.
 
-El repositorio declara únicamente el idioma inglés y no presenta descargas ni likes en el momento indicado. Cualquier evaluación práctica requiere aceptar las condiciones de acceso en HuggingFace y validar el modelo en un entorno controlado.
+El repositorio declara únicamente el idioma inglés y no presenta descargas ni likes en el momento indicado. Cualquier evaluación práctica requiere aceptar las condiciones de acceso en Hugging Face y validar el modelo en un entorno controlado.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ El repositorio declara únicamente el idioma inglés y no presenta descargas ni 
 | Licencia | Apache-2.0 |
 | Formato de pesos | no disponible (librería transformers; no se especifica safetensors, GGUF ni otro) |
 | Pipeline | text-generation |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Etiquetas | transformers, security, llm-security, adversarial, red-teaming, research, poison-pawn, text-generation, en, endpoints_compatible, region:us |
 | Descargas | 0 |
 | Likes | 0 |
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alignedsi/poison-pawn | no disponible | no disponible | no disponible | Apache-2.0 | gated en HuggingFace |
+| alignedsi/poison-pawn | no disponible | no disponible | no disponible | Apache-2.0 | gated en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se identifican en la información proporcionada modelos alternativos de la misma categoría con datos verificables de parámetros, contexto o rendimiento.
@@ -82,7 +82,7 @@ No se identifican en la información proporcionada modelos alternativos de la mi
 - Sesgos: no documentados; no hay evaluación publicada.
 - Alucinación: no evaluada; no hay benchmarks ni model card técnica.
 - Contexto e idioma: solo se declara inglés; la longitud de contexto es desconocida.
-- Licencia: Apache-2.0, pero el acceso es gated y requiere aceptar condiciones en HuggingFace; revisar los términos antes de un uso comercial.
+- Licencia: Apache-2.0, pero el acceso es gated y requiere aceptar condiciones en Hugging Face; revisar los términos antes de un uso comercial.
 - Seguridad: por sus etiquetas de adversarial y red-teaming, puede producir contenido ofensivo, engañoso o inapropiado; debe usarse en entorno aislado y con supervisión.
 - Reproducibilidad: 0 descargas y 0 likes en la metadata; no hay evidencia de validación comunitaria.
 - Producción: no se recomienda desplegarlo sin evaluar previamente calidad, seguridad, sesgos y cumplimiento.
@@ -90,6 +90,6 @@ No se identifican en la información proporcionada modelos alternativos de la mi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alignedsi/poison-pawn
+- Hugging Face: https://huggingface.co/alignedsi/poison-pawn
 - Model card: no disponible como documento separado; la información procede de la metadata del repositorio.
 - Paper, blog, repositorio de código y demo: no disponibles en la información proporcionada.

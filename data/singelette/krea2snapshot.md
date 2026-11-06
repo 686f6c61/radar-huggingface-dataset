@@ -2,7 +2,7 @@
 
 ## Resumen
 
-singelette/krea2snapshot es un adaptador LoRA de generacion de imagenes a partir de texto (text-to-image) publicado en HuggingFace por el usuario singelette. Se distribuye en formato diffusers y esta disenado para cargarse sobre el modelo base krea/Krea-2-Turbo, segun los metadatos `base_model` y `base_model:adapter` de la model card. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo.
+singelette/krea2snapshot es un adaptador LoRA de generacion de imagenes a partir de texto (text-to-image) publicado en Hugging Face por el usuario singelette. Se distribuye en formato diffusers y esta disenado para cargarse sobre el modelo base krea/Krea-2-Turbo, segun los metadatos `base_model` y `base_model:adapter` de la model card. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo.
 
 El problema que resuelve es el habitual de los LoRA de difusion: especializar el estilo o el dominio visual de un modelo generativo preentrenado sin reentrenar ni redistribuir los pesos completos. La model card es minima (titulo "SNapshot krea", seccion de descarga y galeria) y no documenta el dataset de entrenamiento, el prompt de instancia ni los hiperparametros utilizados, por lo que su evaluacion rigurosa requiere pruebas propias sobre el modelo base.
 
@@ -24,7 +24,7 @@ La relevancia de esta ficha es limitada pero util como caso de estudio: se trata
 | Prompt de instancia | null (segun la model card) |
 | Tamano del repositorio | 0,2 GB |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de creacion | 2026-09-28 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-28 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -51,7 +51,7 @@ Tampoco hay datos sobre el numero de tokens o imagenes de entrenamiento, la comp
 - Ajuste de estilo en lotes pequenos: integrar el adaptador en un script de generacion por lotes para explorar variaciones visuales sobre un mismo prompt, siempre que la licencia se aclare antes de cualquier uso.
 - Evaluacion comparativa de LoRA comunitarios: usar este repositorio como referencia de un adaptador con trazabilidad minima frente a adaptadores con model card completa, para calibrar criterios de seleccion de pesos publicos.
 - Generacion asistida en flujos creativos internos: incorporarlo a una herramienta de generacion local para equipos de diseno, con la advertencia de que al no existir licencia declarada no debe usarse en productos comerciales sin autorizacion expresa.
-- Docencia sobre difusion: ejemplo practico de como se publica y se carga un LoRA en HuggingFace, incluyendo las limitaciones de trabajar con repositorios sin metadatos de entrenamiento.
+- Docencia sobre difusion: ejemplo practico de como se publica y se carga un LoRA en Hugging Face, incluyendo las limitaciones de trabajar con repositorios sin metadatos de entrenamiento.
 
 ## Benchmarks y rendimiento
 
@@ -74,8 +74,8 @@ No se dispone de informacion suficiente para comparar este adaptador con alterna
 
 | Elemento | Tipo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| singelette/krea2snapshot | Adaptador LoRA de difusion | no disponible (repo de 0,2 GB) | Prompt de texto, sin prompt de instancia | no disponible | Publico en HuggingFace, 0 descargas |
-| krea/Krea-2-Turbo | Modelo base de difusion text-to-image | no disponible | Prompt de texto | no disponible en la informacion proporcionada | Publico en HuggingFace |
+| singelette/krea2snapshot | Adaptador LoRA de difusion | no disponible (repo de 0,2 GB) | Prompt de texto, sin prompt de instancia | no disponible | Publico en Hugging Face, 0 descargas |
+| krea/Krea-2-Turbo | Modelo base de difusion text-to-image | no disponible | Prompt de texto | no disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otros LoRA sobre Krea-2-Turbo | Adaptadores de difusion | no disponible | Prompt de texto | Variable segun autor | No identificados en la informacion proporcionada |
 
 No se han identificado en la informacion proporcionada modelos comparables con datos verificables de parametros, contexto o rendimiento.
@@ -94,7 +94,7 @@ No se han identificado en la informacion proporcionada modelos comparables con d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/singelette/krea2snapshot
+- Modelo en Hugging Face: https://huggingface.co/singelette/krea2snapshot
 - Pestana de archivos y versiones: https://huggingface.co/singelette/krea2snapshot/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de diffusers (libreria declarada): https://huggingface.co/docs/diffusers

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Botob/k2-merged-3.5T-bf16 es un checkpoint experimental publicado en HuggingFace por el usuario Botob. Segun la unica descripcion disponible en su model card, se trata de un «frankenmerge» de tres variantes de la familia Kimi K2: K2-07, K2-09 y la version Base. No es, por tanto, un modelo entrenado desde cero, sino una fusion de pesos existentes que da como resultado un checkpoint de 3.468.148.613.272 parametros totales (aproximadamente 3,47 billones), con pesos en bf16 y un repositorio de 6.936,4 GB.
+Botob/k2-merged-3.5T-bf16 es un checkpoint experimental publicado en Hugging Face por el usuario Botob. Segun la unica descripcion disponible en su model card, se trata de un «frankenmerge» de tres variantes de la familia Kimi K2: K2-07, K2-09 y la version Base. No es, por tanto, un modelo entrenado desde cero, sino una fusion de pesos existentes que da como resultado un checkpoint de 3.468.148.613.272 parametros totales (aproximadamente 3,47 billones), con pesos en bf16 y un repositorio de 6.936,4 GB.
 
 El interes del modelo es fundamentalmente de investigacion: explora que ocurre al combinar por capas o por bloques tres checkpoints de una familia MoE de gran escala. La etiqueta `deepseek_v3` del repositorio indica que la implementacion sigue la arquitectura de DeepSeek-V3 (atencion MLA y mezcla de expertos), que es la base sobre la que se construyo Kimi K2. Sin embargo, el autor no publica `config.json`, tokenizer, informe de evaluacion ni detalles del procedimiento de fusion, por lo que la mayor parte de las especificaciones tecnicas no se pueden verificar.
 
@@ -95,6 +95,6 @@ La diferencia clave no es de escala sino de naturaleza: los tres modelos de comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Botob/k2-merged-3.5T-bf16
+- Hugging Face: https://huggingface.co/Botob/k2-merged-3.5T-bf16
 
 No se han encontrado enlaces adicionales relevantes: las busquedas web realizadas devolvieron unicamente perfiles de LinkedIn y redes sociales de personas homonimas sin relacion con el modelo, por lo que no se incluyen.

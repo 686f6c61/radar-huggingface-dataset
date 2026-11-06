@@ -2,7 +2,7 @@
 
 ## Resumen
 
-XORTRON-CriminalComputing-RICO-v4-mlx-8Bit es una conversion al formato MLX (cuantizacion de 8 bits) del modelo darkc0de/XORTRON-CriminalComputing-RICO-v4, publicada por el usuario otherwhere1. La conversion se realizo con mlx-lm 0.31.2 y el pipeline declarado en HuggingFace es image-text-to-text, con la etiqueta qwen3_5 como unica pista sobre la familia de arquitectura subyacente. El modelo cuenta con 26.895.993.856 parametros (unos 26,9 mil millones) y el repositorio ocupa 28,6 GB.
+XORTRON-CriminalComputing-RICO-v4-mlx-8Bit es una conversion al formato MLX (cuantizacion de 8 bits) del modelo darkc0de/XORTRON-CriminalComputing-RICO-v4, publicada por el usuario otherwhere1. La conversion se realizo con mlx-lm 0.31.2 y el pipeline declarado en Hugging Face es image-text-to-text, con la etiqueta qwen3_5 como unica pista sobre la familia de arquitectura subyacente. El modelo cuenta con 26.895.993.856 parametros (unos 26,9 mil millones) y el repositorio ocupa 28,6 GB.
 
 El modelo original pertenece al ecosistema "XORTRON - Criminal Computing" y se presenta explicitamente como uncensored, abliterated, harmful, toxic y not-for-all-audiences. Segun sus etiquetas, se ha construido mediante mergekit a partir de un ajuste fino supervisado sobre el dataset darkc0de/XORTRON-RESTRICTED-RESEARCH-SFT, en lugar de mediante un entrenamiento desde cero. La model card de esta ficha concreta se limita a documentar el procedimiento de conversion a MLX y el codigo de uso con mlx-lm; no aporta informacion sobre datos de entrenamiento, contexto, idiomas ni evaluacion.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada y de caracter experimental: no declara licencia, no ti
 | Modelo base | darkc0de/XORTRON-CriminalComputing-RICO-v4 |
 | Dataset declarado | darkc0de/XORTRON-RESTRICTED-RESEARCH-SFT |
 | Herramienta de conversion | mlx-lm 0.31.2 |
-| Fecha de publicacion | 26 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 26 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -68,7 +68,7 @@ La model card no incluye MMLU, HumanEval, GSM8K, MMBench ni ninguna otra metrica
 - Memoria unificada minima recomendada: 32 GB en Apple Silicon (ajustado), 36-48 GB para contextos moderados y 64 GB o mas para contextos largos o lotes superiores a uno.
 - GPU compatibles: el formato MLX esta disenado para Apple Silicon (familias M1, M2, M3 y M4, en variantes Max y Ultra). MLX no se ejecuta sobre CUDA.
 - GPU consumer: si cabe en equipos Apple con memoria unificada de 32 GB o superior, como un MacBook Pro o Mac Studio con chip Max o Ultra. No cabe en GPUs consumer con 24 GB de VRAM en este formato; para NVIDIA habria que usar el modelo base en fp16 (unos 54 GB) o una cuantizacion GGUF no publicada en este repositorio.
-- Opciones de despliegue: mlx-lm (load/generate) y mlx-lm.server para una API compatible con OpenAI. Para el modelo base en safetensors fp16 serian necesarios vLLM, TGI o SGLang con multiples GPUs. El etiquetado endpoints_compatible sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: mlx-lm (load/generate) y mlx-lm.server para una API compatible con OpenAI. Para el modelo base en safetensors fp16 serian necesarios vLLM, TGI o SGLang con multiples GPUs. El etiquetado endpoints_compatible sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/otherwhere1/XORTRON-CriminalComputing-RICO-v4-mlx-8Bit
+- Modelo en Hugging Face: https://huggingface.co/otherwhere1/XORTRON-CriminalComputing-RICO-v4-mlx-8Bit
 - Modelo base: https://huggingface.co/darkc0de/XORTRON-CriminalComputing-RICO-v4
 - Dataset declarado: https://huggingface.co/datasets/darkc0de/XORTRON-RESTRICTED-RESEARCH-SFT
 - Organizacion XORTRON - Criminal Computing: https://huggingface.co/xortron

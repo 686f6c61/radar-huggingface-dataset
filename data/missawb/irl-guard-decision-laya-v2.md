@@ -109,7 +109,7 @@ Se presentan a continuación los resultados reportados por el autor sobre 1.000 
 
 | Modelo | Parametros | Idiomas | Precision accion (vistas) | F1 macro (vistas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| **irl-guard-decision-laya-v2** | 322 M | fr | 80,1 % | 0,797 | Apache 2.0 | HuggingFace (libreria laya) |
+| **irl-guard-decision-laya-v2** | 322 M | fr | 80,1 % | 0,797 | Apache 2.0 | Hugging Face (libreria laya) |
 | Qwen3.5-2B ajustado (qwen-ft-v2) | no disponible en esta ficha | no disponible | 99,3 % | 0,993 | no disponible | mencionado en el model card |
 | XGBoost (clasificador tabular) | no aplica | no aplica | 50,1 % | 0,502 | no disponible | baseline interno |
 | Reglas deterministas | no aplica | no aplica | 39,3 % | 0,334 | no disponible | baseline interno |
@@ -129,7 +129,7 @@ Nota: las cifras comparadas proceden del propio model card del autor. No se disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MissawB/irl-guard-decision-laya-v2
+- Modelo en Hugging Face: https://huggingface.co/MissawB/irl-guard-decision-laya-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/MissawB/irl-guard-decisions-v2
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Paquete `laya` en PyPI: https://pypi.org/project/laya/

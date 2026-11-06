@@ -48,7 +48,7 @@ El entrenamiento se ejecutó con slime v0.3.2 sobre Megatron-LM (TP4 × PP4) en 
 - Reproducción del experimento E2K: sirve como brazo de control para comparar contra los brazos con conocimiento de la misma serie, dado que comparte filas SFT emparejadas y condiciones de RL idénticas.
 - Investigación en internalización de conocimiento: permite medir si el conocimiento verificado extraído del propio juego se escribe en los pesos, usando este checkpoint como referencia sin conocimiento y con el mismo presupuesto de entrenamiento.
 - Estudio de RL con Dr.GRPO en episodios multi-paso: los registros por rollout (clear rate, retorno conformado, cambio de paso, no-op, tokens de pensamiento) permiten analizar la varianza del algoritmo con una línea base documentada.
-- Validación de pipelines de conversión Megatron a HuggingFace: el repositorio incluye `E2K_VERIFY.json`, `SHA256SUMS` y el estado en `megatron/`, lo que permite comprobar la reproducción bit a bit de los tensores copiados.
+- Validación de pipelines de conversión Megatron a Hugging Face: el repositorio incluye `E2K_VERIFY.json`, `SHA256SUMS` y el estado en `megatron/`, lo que permite comprobar la reproducción bit a bit de los tensores copiados.
 - Investigación sobre agentes que operan arneses externos: el modelo es un ejemplo entrenado para emitir acciones a través de herramientas MCP con un contrato `look`/`act`/`status`, útil para estudiar el acoplamiento entre política y arnés.
 - Análisis de colapso de formato o sobreajuste al arnés: con 303 filas SFT sobre un único juego, es un caso de estudio de cuánto del comportamiento observado proviene del formato de las filas y no de la tarea.
 - Docencia y divulgación técnica: como ejemplo end-to-end de trazabilidad de un checkpoint de investigación (estado del optimizador, cursor de datos, argumentos de Megatron).
@@ -85,10 +85,10 @@ El propio autor advierte de que el ruido entre rollouts de un mismo brazo es de 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter1 (este) | 27.781.427.952 | no disponible | clear rate 0,000–0,031 en cd82; no hay benchmarks estándar | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-27B (base) | 27.781.427.952 | no disponible | no disponible en la información proporcionada | Apache 2.0 | HuggingFace |
+| E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter1 (este) | 27.781.427.952 | no disponible | clear rate 0,000–0,031 en cd82; no hay benchmarks estándar | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-27B (base) | 27.781.427.952 | no disponible | no disponible en la información proporcionada | Apache 2.0 | Hugging Face |
 | Brazos con conocimiento de la serie E2K-cd82 (p. ej., el brazo IDD emparejado) | mismos que el base | no disponible | no se publican métricas en la información disponible | Apache 2.0 | un repositorio por iteración guardada |
-| Otras iteraciones de la serie (`iter_0000001` y sucesivas) | mismas | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Otras iteraciones de la serie (`iter_0000001` y sucesivas) | mismas | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 La comparación relevante es interna a la serie: este checkpoint se diferencia del modelo base únicamente en la pila de texto, y de los brazos con conocimiento solo en las filas SFT y en el contenido del prompt de RL. No se dispone de datos verificados de modelos de terceros de la misma categoría en la información proporcionada.
 
@@ -108,7 +108,7 @@ La comparación relevante es interna a la serie: este checkpoint se diferencia d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter1
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de RL del experimento (episodios, métricas, filas y log): https://huggingface.co/datasets/ziyan98/E2K-cd82-rl-internalization
 - Dataset de conocimiento del arnés: https://huggingface.co/datasets/ziyan98/E2K-cd82-harness-knowledge

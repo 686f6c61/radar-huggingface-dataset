@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svasilyev5/vit-baseline` es un repositorio de HuggingFace que contiene una implementación funcional de un Vision Transformer (ViT) en configuración "large", publicada por el usuario svasilyev5 bajo licencia Apache 2.0. El artefacto principal es el script `train.py`, que incluye tanto la definición del modelo como un punto de entrada de entrenamiento y un ejemplo de smoke test ejecutable. El repositorio se presenta explícitamente como una base de partida experimental y no como un modelo entrenado con resultados publicados.
+`svasilyev5/vit-baseline` es un repositorio de Hugging Face que contiene una implementación funcional de un Vision Transformer (ViT) en configuración "large", publicada por el usuario svasilyev5 bajo licencia Apache 2.0. El artefacto principal es el script `train.py`, que incluye tanto la definición del modelo como un punto de entrada de entrenamiento y un ejemplo de smoke test ejecutable. El repositorio se presenta explícitamente como una base de partida experimental y no como un modelo entrenado con resultados publicados.
 
 El checkpoint `model.safetensors` es una inicialización válida para pruebas de humo, no un modelo entrenado ni auditado. El autor declara de forma explícita que no se reclama ninguna puntuación de benchmark y que el repositorio prioriza código transparente y pruebas reproducibles. El recuento real de parámetros en safetensors es de 49.600, un valor muy reducido que no corresponde a un ViT-large convencional y sugiere una configuración de juguete o un checkpoint de inicialización parcial.
 
@@ -34,7 +34,7 @@ No se especifican datos de entrenamiento: no hay información sobre número de t
 - Checkpoint de inicialización válido para pruebas de humo y validación de pipelines.
 - Ejemplo ejecutable de smoke test accesible vía `python train.py --help`.
 - No se documentan capacidades de generación de texto, razonamiento, código, matemáticas, tool calling, agentes ni multilingüismo.
-- No se documentan capacidades de visión más allá de la propia arquitectura ViT; no hay pipeline declarado en HuggingFace.
+- No se documentan capacidades de visión más allá de la propia arquitectura ViT; no hay pipeline declarado en Hugging Face.
 
 ## Casos de uso
 
@@ -82,5 +82,5 @@ La comparación es orientativa: los modelos de Google y Meta son checkpoints ent
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/svasilyev5/vit-baseline
+- Hugging Face: https://huggingface.co/svasilyev5/vit-baseline
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

@@ -126,7 +126,7 @@ Etsu-Memory es la mejor opción para recuperación de memoria en dominio, mientr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rebine/Etsu-Embedding-0.8B-Memory
+- Modelo en Hugging Face: https://huggingface.co/Rebine/Etsu-Embedding-0.8B-Memory
 - Versión generalista hermana: https://huggingface.co/Rebine/Etsu-Embedding-0.8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base/blob/main/LICENSE

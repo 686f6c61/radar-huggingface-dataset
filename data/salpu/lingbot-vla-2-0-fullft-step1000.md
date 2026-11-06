@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/salpu/lingbot-vla-2.0-fullft-step1000
+- Modelo en Hugging Face: https://huggingface.co/salpu/lingbot-vla-2.0-fullft-step1000
 - Metricas de entrenamiento (wandb): https://wandb.ai/atomyuri46-weights-biases/sn80-lingbot-fullft
 - Codigo de entrenamiento: https://github.com/Robbyant/lingbot-vla-v2
 - Dataset LIBERO (LeRobot): https://huggingface.co/datasets/lerobot/libero

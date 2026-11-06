@@ -101,7 +101,7 @@ El artículo recomienda la configuración `r = 9 cm, L = 2` frente a la de este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_rall_L8
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_rall_L8
 - Colección completa de los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366
 - Modelo recomendado (MAE, r = 9 cm, L = 2): https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L2
 - Modelo recomendado (JEPA, r = 9 cm, L = 2): https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L2

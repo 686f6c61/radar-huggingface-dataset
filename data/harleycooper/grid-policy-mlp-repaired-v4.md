@@ -6,7 +6,7 @@ grid-policy-mlp-repaired-v4 es un modelo de política para aprendizaje por refue
 
 La relevancia de esta versión (v4) radica en que cierra un punto ciego detectado en la versión v3: la incapacidad de identificar fallos que se originan durante la fase ascendente de la bola. Según la model card, el modelo obtiene una mejora de retorno medio de aproximadamente +3,30 a +3,49 puntos frente al modelo original en evaluaciones pareadas por semilla, tanto en semillas minadas como en semillas completamente vírgenes, lo que el autor presenta como evidencia de que la ganancia no se debe a sobreajuste de la compuerta de aceptación.
 
-El repositorio tiene un tamaño de 0,0 GB, no registra descargas ni likes, y se distribuye bajo licencia MIT. La información disponible sobre arquitectura interna, datos de entrenamiento y benchmarks estandarizados es muy limitada; los datos que se presentan a continuación provienen exclusivamente de la model card y de los metadatos de HuggingFace.
+El repositorio tiene un tamaño de 0,0 GB, no registra descargas ni likes, y se distribuye bajo licencia MIT. La información disponible sobre arquitectura interna, datos de entrenamiento y benchmarks estandarizados es muy limitada; los datos que se presentan a continuación provienen exclusivamente de la model card y de los metadatos de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Parámetros | Contexto | Retorno medio (semillas 20000-20999) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| grid-policy-mlp-repaired-v4 | no disponible | no aplica | 12,18 | MIT | HuggingFace (0 descargas) |
+| grid-policy-mlp-repaired-v4 | no disponible | no aplica | 12,18 | MIT | Hugging Face (0 descargas) |
 | grid-policy-mlp original | no disponible | no aplica | 8,69 | no disponible | Referenciado en la model card |
 | grid-policy-mlp v1 | no disponible | no aplica | +1,08 sobre original (never-worse) | no disponible | Referenciado en la model card |
 | grid-policy-mlp v3 | no disponible | no aplica | +1,83 sobre original | no disponible | Referenciado en la model card |
@@ -89,5 +89,5 @@ No se dispone de información sobre otros modelos comparables de terceros para e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HarleyCooper/grid-policy-mlp-repaired-v4
+- Modelo en Hugging Face: https://huggingface.co/HarleyCooper/grid-policy-mlp-repaired-v4
 - Repositorio KimBrainSurgery: https://github.com/HarleyCoops/KimiBrainSurgery

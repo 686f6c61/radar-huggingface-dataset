@@ -2,9 +2,9 @@
 
 ## Resumen
 
-beewatch_ast_3class es un modelo de clasificación de audio publicado por el usuario troyskie en HuggingFace. Se trata de un ajuste fino (fine-tuning) del checkpoint MIT/ast-finetuned-audioset-10-10-0.4593, que es un Audio Spectrogram Transformer (AST) preentrenado sobre AudioSet. El modelo resultante tiene 86.191.107 parámetros y está orientado a una tarea de clasificación de audio con tres clases, según se deduce del propio nombre del repositorio; los nombres concretos de esas tres clases no se documentan en la model card.
+beewatch_ast_3class es un modelo de clasificación de audio publicado por el usuario troyskie en Hugging Face. Se trata de un ajuste fino (fine-tuning) del checkpoint MIT/ast-finetuned-audioset-10-10-0.4593, que es un Audio Spectrogram Transformer (AST) preentrenado sobre AudioSet. El modelo resultante tiene 86.191.107 parámetros y está orientado a una tarea de clasificación de audio con tres clases, según se deduce del propio nombre del repositorio; los nombres concretos de esas tres clases no se documentan en la model card.
 
-El modelo se distribuye en formato safetensors bajo licencia BSD-3-Clause, es compatible con la librería transformers y con el pipeline `audio-classification` de HuggingFace. Su relevancia es acotada: se trata de un experimento derivado de una sesión de entrenamiento con el `Trainer` de transformers, sin documentación sobre el conjunto de datos, sin descripción de uso previsto y con cero descargas y cero likes en el momento de redactar esta ficha. Por el nombre ("beewatch"), es plausible que esté vinculado a monitorización acústica de colmenas, pero esto no se confirma en ninguna fuente oficial.
+El modelo se distribuye en formato safetensors bajo licencia BSD-3-Clause, es compatible con la librería transformers y con el pipeline `audio-classification` de Hugging Face. Su relevancia es acotada: se trata de un experimento derivado de una sesión de entrenamiento con el `Trainer` de transformers, sin documentación sobre el conjunto de datos, sin descripción de uso previsto y con cero descargas y cero likes en el momento de redactar esta ficha. Por el nombre ("beewatch"), es plausible que esté vinculado a monitorización acústica de colmenas, pero esto no se confirma en ninguna fuente oficial.
 
 El interés técnico principal reside en que sirve como ejemplo de ajuste fino ligero de un AST para dominios acústicos específicos, con un coste de cómputo bajo (~86 M de parámetros) y una integración directa en el ecosistema transformers. No obstante, la ausencia total de información sobre el dataset y la naturaleza sospechosamente perfecta de sus métricas de validación obligan a tratarlo como un artefacto experimental, no como un modelo listo para producción.
 
@@ -78,10 +78,10 @@ Los datos de los modelos comparativos provienen de conocimiento general sobre AS
 
 | Modelo | Parámetros | Clases | Contexto de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| beewatch_ast_3class | 86,2 M | 3 (nombres no disponibles) | ventana de ~10,24 s a 16 kHz | BSD-3-Clause | HuggingFace, 0 descargas |
-| MIT/ast-finetuned-audioset-10-10-0.4593 (base) | 86,2 M | 527 (AudioSet) | ventana de ~10,24 s a 16 kHz | BSD-3-Clause | HuggingFace |
+| beewatch_ast_3class | 86,2 M | 3 (nombres no disponibles) | ventana de ~10,24 s a 16 kHz | BSD-3-Clause | Hugging Face, 0 descargas |
+| MIT/ast-finetuned-audioset-10-10-0.4593 (base) | 86,2 M | 527 (AudioSet) | ventana de ~10,24 s a 16 kHz | BSD-3-Clause | Hugging Face |
 | PANNs CNN14 (AudioSet) | datos no disponibles en esta búsqueda | 527 (AudioSet) | variable | datos no disponibles | GitHub y checkpoints públicos |
-| BEATs iter3+ | datos no disponibles en esta búsqueda | 527 (AudioSet) | variable | datos no disponibles | GitHub y HuggingFace |
+| BEATs iter3+ | datos no disponibles en esta búsqueda | 527 (AudioSet) | variable | datos no disponibles | GitHub y Hugging Face |
 | YAMNet | datos no disponibles en esta búsqueda | 521 (AudioSet) | ventana de ~0,975 s a 16 kHz | Apache 2.0 | TensorFlow Hub |
 
 En términos de parámetros y arquitectura, la comparación más directa es con el propio modelo base: este fine-tuning reduce la cabeza de clasificación de 527 a 3 clases sin cambiar el encoder. Frente a alternativas específicas de bioacústica, no se dispone de datos suficientes para establecer una comparación cuantitativa.
@@ -102,7 +102,7 @@ En términos de parámetros y arquitectura, la comparación más directa es con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/troyskie/beewatch_ast_3class
+- Modelo en Hugging Face: https://huggingface.co/troyskie/beewatch_ast_3class
 - Modelo base: https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo. Las URLs devueltas por la búsqueda corresponden a contenidos sobre ChatGPT y GitHub Copilot sin relación con esta ficha, por lo que se descartan.
 - Paper del modelo base (AST, "AST: Audio Spectrogram Transformer"): no disponible en la información proporcionada.

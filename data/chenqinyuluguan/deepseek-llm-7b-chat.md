@@ -91,7 +91,7 @@ Nota: no se dispone de cifras de rendimiento comparadas en la información propo
 ## Enlaces
 
 - Repositorio analizado (resubida): https://huggingface.co/chenqinyuluguan/deepseek-llm-7b-chat
-- Repositorio oficial en HuggingFace: https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat
+- Repositorio oficial en Hugging Face: https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat
 - Repositorio de código en GitHub: https://github.com/deepseek-ai/deepseek-LLM
 - Licencia del modelo (LICENSE-MODEL): https://github.com/deepseek-ai/deepseek-LLM/blob/main/LICENSE-MODEL
 - Página principal de DeepSeek: https://www.deepseek.com/

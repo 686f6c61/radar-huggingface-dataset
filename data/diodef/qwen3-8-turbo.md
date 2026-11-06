@@ -12,7 +12,7 @@ Su relevancia práctica es doble y ambivalente. Por un lado, apunta a cargas de 
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible. La información proporcionada no especifica la arquitectura; el modelo es un ajuste fino y fusión multi-etapa que hereda la de su modelo base (familia Qwen3.8, 27B). El pipeline declarado en HuggingFace es image-text-to-text |
+| Arquitectura | No disponible. La información proporcionada no especifica la arquitectura; el modelo es un ajuste fino y fusión multi-etapa que hereda la de su modelo base (familia Qwen3.8, 27B). El pipeline declarado en Hugging Face es image-text-to-text |
 | Parámetros totales | 26.895.998.464 (~26,9 B), según ficheros safetensors |
 | Parámetros activos | No disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -22,7 +22,7 @@ Su relevancia práctica es doble y ambivalente. Por un lado, apunta a cargas de 
 | Formato de pesos | safetensors (bfloat16) y GGUF (regulares y MTP) |
 | Modelo base | DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU |
 | Conjuntos de datos citados | DavidAU/Polar-STRICT-Datasets, DavidAU/F451-STRICT-Datasets |
-| Fecha de creación en HuggingFace | 17 de septiembre de 2026 |
+| Fecha de creación en Hugging Face | 17 de septiembre de 2026 |
 | Adopción | 0 descargas, 0 likes |
 
 ## Arquitectura y entrenamiento
@@ -111,7 +111,7 @@ No se dispone de alternativas de código abierto verificadas con las que estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DioDef/qwen3.8-turbo
+- Modelo en Hugging Face: https://huggingface.co/DioDef/qwen3.8-turbo
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Dataset citado: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets
 - Dataset citado: https://huggingface.co/datasets/DavidAU/F451-STRICT-Datasets

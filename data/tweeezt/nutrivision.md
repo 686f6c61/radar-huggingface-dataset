@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NutriVision es un modelo de inteligencia artificial orientado al reconocimiento de alimentos y al análisis nutricional a partir de imágenes. Aunque el repositorio de HuggingFace no incluye una descripción técnica detallada, los proyectos asociados lo presentan como una plataforma que combina visión por computadora, análisis nutricional e IA generativa para estimar calorías, macronutrientes y micronutrientes de una comida fotografiada. El modelo está pensado para aplicaciones de seguimiento dietético y educación nutricional.
+NutriVision es un modelo de inteligencia artificial orientado al reconocimiento de alimentos y al análisis nutricional a partir de imágenes. Aunque el repositorio de Hugging Face no incluye una descripción técnica detallada, los proyectos asociados lo presentan como una plataforma que combina visión por computadora, análisis nutricional e IA generativa para estimar calorías, macronutrientes y micronutrientes de una comida fotografiada. El modelo está pensado para aplicaciones de seguimiento dietético y educación nutricional.
 
 La relevancia actual de este tipo de modelos radica en la creciente demanda de herramientas de salud digital que permitan a los usuarios registrar su ingesta de forma automática, sin introducción manual de datos. Sin embargo, la información pública disponible sobre la arquitectura, el tamaño o el entrenamiento de este modelo concreto es muy limitada, por lo que esta ficha se basa principalmente en los proyectos y demos asociados al nombre NutriVision.
 
@@ -60,13 +60,13 @@ No se dispone de información suficiente para establecer una comparativa con otr
 - Sesgos potenciales: si el modelo se entrenó con imágenes de un conjunto limitado de cocinas o tipos de plato, su rendimiento puede degradarse con alimentos de otras culturas o preparaciones poco comunes.
 - Licencia GPL-3.0: esta licencia copyleft puede imponer restricciones a la integración en productos comerciales cerrados, ya que exige que las obras derivadas se distribuyan bajo la misma licencia.
 - Sin garantías de precisión clínica: no se ha demostrado que el modelo sea apto para uso médico o dietético profesional; cualquier recomendación debe ser validada por un especialista.
-- Disponibilidad limitada: no se ha publicado un modelo con pesos descargables en el repositorio de HuggingFace, solo una tarjeta de modelo sin contenido técnico.
+- Disponibilidad limitada: no se ha publicado un modelo con pesos descargables en el repositorio de Hugging Face, solo una tarjeta de modelo sin contenido técnico.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/TweeeZT/Nutrivision
+- Repositorio de Hugging Face: https://huggingface.co/TweeeZT/Nutrivision
 - Sitio web del proyecto: https://nutrivision.dev/
 - Repositorio GitHub (malhar072142/NutriVision): https://github.com/malhar072142/NutriVision
-- Space de HuggingFace (da8le/nutrivision-ai-model): https://huggingface.co/spaces/da8le/nutrivision-ai-model
+- Space de Hugging Face (da8le/nutrivision-ai-model): https://huggingface.co/spaces/da8le/nutrivision-ai-model
 - Demo web (NutriVision AI): https://nutri-vision-ai-pink.vercel.app/explainable
 - Repositorio GitHub (AngRoy/NutriVision): https://github.com/AngRoy/NutriVision

@@ -78,8 +78,8 @@ No se dispone de datos publicados sobre clasificadores ATC de nivel 1 comparable
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hsilvosa/BETO-ATC-Classifier | 109.861.646 | 512 tokens (heredado de BERT base) | Clasificación ATC nivel 1 (14 clases) | Apache 2.0 | HuggingFace |
-| dccuchile/bert-base-spanish-wwm-cased (BETO) | ~110 M | 512 tokens | Modelo de lenguaje enmascarado / base para fine-tuning | Apache 2.0 | HuggingFace |
+| hsilvosa/BETO-ATC-Classifier | 109.861.646 | 512 tokens (heredado de BERT base) | Clasificación ATC nivel 1 (14 clases) | Apache 2.0 | Hugging Face |
+| dccuchile/bert-base-spanish-wwm-cased (BETO) | ~110 M | 512 tokens | Modelo de lenguaje enmascarado / base para fine-tuning | Apache 2.0 | Hugging Face |
 | Otros clasificadores ATC en español con métricas publicadas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se dispone de datos publicados sobre clasificadores ATC de nivel 1 comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hsilvosa/BETO-ATC-Classifier
+- Modelo en Hugging Face: https://huggingface.co/hsilvosa/BETO-ATC-Classifier
 - Modelo base BETO: https://huggingface.co/dccuchile/bert-base-spanish-wwm-cased
 - Dataset de entrenamiento: https://huggingface.co/datasets/hsilvosa/aemps-cima
 - Código de entrenamiento: `src/train_atc_classifier.py` (referenciado en la model card; no se ha localizado URL pública en la información disponible)

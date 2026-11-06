@@ -2,7 +2,7 @@
 
 ## Resumen
 
-viexdp-bartpho-syllable-tgt-5e-05-20261025045559 es un modelo de generacion de texto secuencia a secuencia obtenido mediante fine-tuning de `vinai/bartpho-syllable`, un modelo BART adaptado al vietnamita por VinAI Research. Lo publica el usuario `hnhung` en HuggingFace y esta pensado para tareas de transformacion de texto en vietnamita, presumiblemente en el ambito de simplificacion o reescritura de frases (el prefijo "viexdp" sugiere un corpus de procesamiento de lenguaje vietnamita, aunque no se documenta). El modelo se ha entrenado con la libreria Transformers y el `Trainer` estandar, sin ninguna innovacion arquitectonica propia.
+viexdp-bartpho-syllable-tgt-5e-05-20261025045559 es un modelo de generacion de texto secuencia a secuencia obtenido mediante fine-tuning de `vinai/bartpho-syllable`, un modelo BART adaptado al vietnamita por VinAI Research. Lo publica el usuario `hnhung` en Hugging Face y esta pensado para tareas de transformacion de texto en vietnamita, presumiblemente en el ambito de simplificacion o reescritura de frases (el prefijo "viexdp" sugiere un corpus de procesamiento de lenguaje vietnamita, aunque no se documenta). El modelo se ha entrenado con la libreria Transformers y el `Trainer` estandar, sin ninguna innovacion arquitectonica propia.
 
 Tecnicamente es un transformer encoder-decoder de tipo BART con 395.865.192 parametros (~396 M), pesos en safetensors y un repositorio de 12,7 GB que incluye checkpoints intermedios del entrenamiento. La model card es auto-generada y no aporta informacion sobre el dataset, los idiomas soportados ni los casos de uso previstos; el unico dato de rendimiento declarado es una perdida de validacion de 2,2942 al final del entrenamiento.
 
@@ -97,7 +97,7 @@ La comparacion con `bartpho-syllable` es la mas relevante: este modelo es un aju
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hnhung/viexdp-bartpho-syllable-tgt-5e-05-20261025045559
+- Modelo en Hugging Face: https://huggingface.co/hnhung/viexdp-bartpho-syllable-tgt-5e-05-20261025045559
 - Modelo base: https://huggingface.co/vinai/bartpho-syllable
 - Repositorio de VinAI con los modelos BARTpho: https://github.com/VinAIResearch/BARTpho
 - Paper de BARTpho: https://arxiv.org/abs/2109.09701

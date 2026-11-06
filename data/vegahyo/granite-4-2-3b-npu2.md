@@ -80,7 +80,7 @@ La comparativa se basa en caracteristicas generales conocidas de los modelos alt
 
 ## Enlaces
 
-- Repositorio HuggingFace: [vegahyo/Granite-4.2-3B-NPU2](https://huggingface.co/vegahyo/Granite-4.2-3B-NPU2)
+- Repositorio Hugging Face: [vegahyo/Granite-4.2-3B-NPU2](https://huggingface.co/vegahyo/Granite-4.2-3B-NPU2)
 - Modelo base: [ibm-granite/granite-4.2-3b](https://huggingface.co/ibm-granite/granite-4.2-3b)
 - Runtime FastFlowLM: [ROCm/FastFlowLM](https://github.com/ROCm/FastFlowLM)
 - Herramienta de conversion q4nx-build: [Atomic-Germ/q4nx-build](https://github.com/Atomic-Germ/q4nx-build)

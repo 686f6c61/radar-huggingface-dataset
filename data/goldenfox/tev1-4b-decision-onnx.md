@@ -89,9 +89,9 @@ No hay datos de latencia, throughput ni consumo de memoria publicados por el aut
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| goldenfox/tev1-4b-decision-onnx | ~4B | 8.192 tokens | ONNX int4 (WebGPU) | other (pendiente de finalizar; el autor incluye el texto de Apache 2.0) | HuggingFace, 0 descargas, 0 likes |
+| goldenfox/tev1-4b-decision-onnx | ~4B | 8.192 tokens | ONNX int4 (WebGPU) | other (pendiente de finalizar; el autor incluye el texto de Apache 2.0) | Hugging Face, 0 descargas, 0 likes |
 | tev1:4b (distribución Ollama de los mismos pesos) | ~4B | No disponible | No disponible (distribución Ollama) | Apache License 2.0 según el texto incluido por el autor | Referenciada en la tarjeta; URL no disponible |
-| togethercomputer/Tev1-4B-experimental | ~4B | No disponible | No disponible | No disponible en la información proporcionada | HuggingFace (modelo fuente) |
+| togethercomputer/Tev1-4B-experimental | ~4B | No disponible | No disponible | No disponible en la información proporcionada | Hugging Face (modelo fuente) |
 | Qwen3.5 (modelo base de la arquitectura) | No disponible | No disponible | No disponible | Apache-2.0 según la tarjeta del exportador | No disponible en la información proporcionada |
 
 La única comparación cuantitativa disponible es la del propio exportador frente a la distribución Ollama, con 7/9 coincidencias en las opciones principales y una distancia de variación total media de 0,072. No hay datos comparativos frente a otros modelos de decisión o clasificación.
@@ -112,7 +112,7 @@ La única comparación cuantitativa disponible es la del propio exportador frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/goldenfox/tev1-4b-decision-onnx
+- Modelo en Hugging Face: https://huggingface.co/goldenfox/tev1-4b-decision-onnx
 - Modelo base: https://huggingface.co/togethercomputer/Tev1-4B-experimental
 - Repositorio fuente del ajuste fino (junto con la revisión citada): https://huggingface.co/togethercomputer/Tev1-4B-experimental/tree/0b7becf017daa0e5eb222f8ce7483c8c8259c52f
 - Distribución Ollama `tev1:4b`: referenciada en la tarjeta del modelo; URL no disponible en la información proporcionada.

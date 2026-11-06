@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-tts-12hz-1.7b-swamiji-te-stageA-reuse87h-lr1e-6-1ep | 1.928.677.440 | no disponible | te | Apache 2.0 | HuggingFace (0 descargas) |
-| sw-voice/qwen3-tts-12hz-1.7b-telugu-indictts-sft-lr1e-6-2ep (modelo base) | no disponible | no disponible | te | no disponible en la informacion | HuggingFace |
+| qwen3-tts-12hz-1.7b-swamiji-te-stageA-reuse87h-lr1e-6-1ep | 1.928.677.440 | no disponible | te | Apache 2.0 | Hugging Face (0 descargas) |
+| sw-voice/qwen3-tts-12hz-1.7b-telugu-indictts-sft-lr1e-6-2ep (modelo base) | no disponible | no disponible | te | no disponible en la informacion | Hugging Face |
 | Otros modelos Qwen3-TTS de la familia | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de alternativas en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible.
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-swamiji-te-stageA-reuse87h-lr1e-6-1ep
+- Hugging Face: https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-swamiji-te-stageA-reuse87h-lr1e-6-1ep
 - Modelo base: https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-telugu-indictts-sft-lr1e-6-2ep
 - Código del experimento (referencia en la model card): `research/exp-iterations/08-qwen3-tts/experiments/03-swamiji-te-two-stage` (repositorio swamiji-tts; URL no disponible)
 - Paper, blog o demo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tungnaa-onnx es un artefacto de modelo publicado en HuggingFace por el usuario enriquevillalbarod bajo licencia AFL-3.0. Por el nombre y el sufijo "onnx" se deduce que se distribuye en formato ONNX, orientado a inferencia portable mediante ONNX Runtime, aunque la model card no aporta ninguna confirmacion explicita sobre la arquitectura, el tamano ni el proposito del modelo.
+Tungnaa-onnx es un artefacto de modelo publicado en Hugging Face por el usuario enriquevillalbarod bajo licencia AFL-3.0. Por el nombre y el sufijo "onnx" se deduce que se distribuye en formato ONNX, orientado a inferencia portable mediante ONNX Runtime, aunque la model card no aporta ninguna confirmacion explicita sobre la arquitectura, el tamano ni el proposito del modelo.
 
 La informacion disponible es minima: no se especifica el pipeline, no se declaran idiomas soportados, no hay descargas ni interacciones registradas y la model card se limita a la linea de licencia. El repositorio fue creado y actualizado el 5 de noviembre de 2026, sin documentacion adicional, sin ficha tecnica y sin resultados de evaluacion.
 
@@ -44,7 +44,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, l
 - Integracion en pipelines de inferencia existentes: si el modelo resulta ser un transformer estandar exportado a ONNX, podria insertarse en un pipeline de procesamiento de lenguaje ya construido sobre ONNX Runtime, sustituyendo al modelo anterior tras una evaluacion comparativa.
 - Prototipado y experimentacion: al no haber benchmarks publicados, el caso de uso mas realista a corto plazo es la evaluacion interna por parte de un equipo que quiera determinar si el modelo es util para su dominio concreto.
 - Pruebas de portabilidad de hardware: el formato ONNX permite probar el mismo artefacto en CPU, GPU y aceleradores compatibles con ONNX Runtime, lo que facilita estudios de latencia y throughput en distintas plataformas.
-- Investigacion sobre modelos poco documentados: el repositorio puede servir como objeto de estudio para analizar practicas de publicacion en HuggingFace, aunque su valor cientifico es limitado sin model card detallada.
+- Investigacion sobre modelos poco documentados: el repositorio puede servir como objeto de estudio para analizar practicas de publicacion en Hugging Face, aunque su valor cientifico es limitado sin model card detallada.
 - Base para fine-tuning: si la licencia AFL-3.0 se interpreta como permisiva para uso comercial (con las condiciones de la propia licencia), el modelo podria servir como punto de partida para ajuste fino, previa verificacion de que los pesos son utilizables y de que la arquitectura es compatible con las herramientas de entrenamiento habituales.
 
 ## Benchmarks y rendimiento
@@ -76,6 +76,6 @@ No disponible. El autor no publica informacion suficiente (arquitectura, paramet
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/enriquevillalbarod/tungnaa-onnx
+- Repositorio en Hugging Face: https://huggingface.co/enriquevillalbarod/tungnaa-onnx
 - Licencia AFL-3.0 (texto de referencia): https://opensource.org/licenses/AFL-3.0
 - ONNX Runtime (documentacion oficial): https://onnxruntime.ai/docs/

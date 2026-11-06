@@ -93,7 +93,7 @@ La diferencia relevante no es de rendimiento, sino de propósito y licencia: los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-32b-control-SQa-sdf
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-32b-control-SQa-sdf
 - Corpus de entrenamiento citado: `joshycodes/qwen3-32b-controls-corpus` (no se ha proporcionado URL completa en la información disponible)
 - Repositorio de *welfare-improvements* mencionado en la model card: no disponible (sin URL en la información proporcionada)
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B

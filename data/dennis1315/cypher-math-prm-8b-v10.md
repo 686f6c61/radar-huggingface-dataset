@@ -75,5 +75,5 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- [HuggingFace - Dennis1315/cypher-math-prm-8b-v10](https://huggingface.co/Dennis1315/cypher-math-prm-8b-v10)
-- [HuggingFace - Dennis1315/cypher-MATH-PRM-8B-v8-GGUF (versión anterior en GGUF)](https://huggingface.co/Dennis1315/cypher-MATH-PRM-8B-v8-GGUF/tree/main)
+- [Hugging Face - Dennis1315/cypher-math-prm-8b-v10](https://huggingface.co/Dennis1315/cypher-math-prm-8b-v10)
+- [Hugging Face - Dennis1315/cypher-MATH-PRM-8B-v8-GGUF (versión anterior en GGUF)](https://huggingface.co/Dennis1315/cypher-MATH-PRM-8B-v8-GGUF/tree/main)

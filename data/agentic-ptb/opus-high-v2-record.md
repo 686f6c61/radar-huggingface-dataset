@@ -70,7 +70,7 @@ No disponible. El repositorio no es un modelo entrenado, por lo que no tiene sen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v2-record
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v2-record
 - Dataset índice: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Leaderboard de modelos agénticos (contexto, no directamente relacionado): https://benchlm.ai/agentic
 - Página de Claude Opus (contexto del agente usado): https://www.anthropic.com/claude/opus

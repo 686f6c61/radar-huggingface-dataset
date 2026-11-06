@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gomv/qwen_lora es un ajuste fino (fine-tuning) del modelo Qwen3-14B, publicado por el usuario Gomv en HuggingFace. Se trata de un derivado del checkpoint cuantizado en 4 bits de Unsloth (unsloth/Qwen3-14B-unsloth-bnb-4bit), entrenado con la librería Unsloth, que el autor declara que permite un entrenamiento "2x más rápido" que el flujo estándar. El repositorio tiene un tamaño de 0,5 GB, lo que sugiere que se distribuyen únicamente los adaptadores LoRA (o pesos parciales) y no el modelo completo.
+Gomv/qwen_lora es un ajuste fino (fine-tuning) del modelo Qwen3-14B, publicado por el usuario Gomv en Hugging Face. Se trata de un derivado del checkpoint cuantizado en 4 bits de Unsloth (unsloth/Qwen3-14B-unsloth-bnb-4bit), entrenado con la librería Unsloth, que el autor declara que permite un entrenamiento "2x más rápido" que el flujo estándar. El repositorio tiene un tamaño de 0,5 GB, lo que sugiere que se distribuyen únicamente los adaptadores LoRA (o pesos parciales) y no el modelo completo.
 
 El modelo hereda la arquitectura y capacidades de Qwen3-14B, un transformer denso de 14 mil millones de parámetros desarrollado por Alibaba Qwen, pero la model card no aporta ningún detalle sobre el dataset de ajuste, el objetivo del entrenamiento ni los resultados obtenidos. El pipeline no está declarado y el modelo solo lista el idioma inglés.
 
@@ -44,7 +44,7 @@ No hay información sobre hiperparámetros, rango de LoRA, epochs ni evaluación
 - Estudio de adaptadores LoRA: el tamaño reducido del repositorio (0,5 GB) facilita inspeccionar la estructura de los pesos publicados y compararlos con el base.
 - Base para nuevos ajustes: al ser un derivado de Qwen3-14B con licencia Apache 2.0, puede servir como punto de partida para experimentos posteriores.
 - Evaluación comparativa de técnicas de cuantización: permite contrastar el comportamiento de un adaptador entrenado sobre un base en 4 bits frente al modelo original.
-- Docencia y formación: útil como ejemplo didáctico de publicación de un modelo ajustado en HuggingFace con metadatos mínimos.
+- Docencia y formación: útil como ejemplo didáctico de publicación de un modelo ajustado en Hugging Face con metadatos mínimos.
 
 En ningún caso se recomienda su uso en producción sin una evaluación previa, dado que no existen benchmarks ni documentación del dataset.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Gomv/qwen_lora | 14B (base) | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Ajuste personal sin benchmarks |
-| Qwen/Qwen3-14B | 14B | 32 768 tokens nativos (ampliable) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial con evaluación publicada |
-| unsloth/Qwen3-14B-unsloth-bnb-4bit | 14B | el del base | Apache 2.0 | HuggingFace | Checkpoint cuantizado 4 bits usado como base |
-| Mistral-7B / Mistral-Nemo-12B | 7B / 12B | 32k / 128k | Apache 2.0 | HuggingFace | Alternativas densas de tamaño similar con documentación completa |
+| Gomv/qwen_lora | 14B (base) | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Ajuste personal sin benchmarks |
+| Qwen/Qwen3-14B | 14B | 32 768 tokens nativos (ampliable) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial con evaluación publicada |
+| unsloth/Qwen3-14B-unsloth-bnb-4bit | 14B | el del base | Apache 2.0 | Hugging Face | Checkpoint cuantizado 4 bits usado como base |
+| Mistral-7B / Mistral-Nemo-12B | 7B / 12B | 32k / 128k | Apache 2.0 | Hugging Face | Alternativas densas de tamaño similar con documentación completa |
 
 La comparación relevante es frente al Qwen3-14B original: este ajuste no aporta información que permita afirmar mejoras sobre él.
 
@@ -85,7 +85,7 @@ La comparación relevante es frente al Qwen3-14B original: este ajuste no aporta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gomv/qwen_lora
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/Gomv/qwen_lora
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo oficial Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B (referencia del base, no citado en la model card)

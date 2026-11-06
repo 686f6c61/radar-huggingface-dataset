@@ -94,7 +94,7 @@ No se dispone de datos de otros modelos abliterated comparables en el mismo rang
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
+- Repositorio Hugging Face: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
 - Repositorio GGUF: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF
 - Demo Space: https://huggingface.co/spaces/JonathanColetti/Qwen3.8-27B-Uncensored-Demo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

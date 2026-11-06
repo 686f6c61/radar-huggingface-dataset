@@ -79,7 +79,7 @@ No hay modelos comparables publicados con la misma especializacion (entrenados d
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/tako080614/evex-5.1)
+- [Modelo en Hugging Face](https://huggingface.co/tako080614/evex-5.1)
 - [Dataset: OmniAICreator/Japanese-Roleplay-Dialogues](https://huggingface.co/datasets/OmniAICreator/Japanese-Roleplay-Dialogues)
 - [Dataset: nntsuzu/JESC](https://huggingface.co/datasets/nntsuzu/JESC)
 - [Dataset: p1atdev/open2ch](https://huggingface.co/datasets/p1atdev/open2ch)

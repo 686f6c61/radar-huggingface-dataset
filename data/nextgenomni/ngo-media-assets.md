@@ -105,7 +105,7 @@ No se dispone de datos comparativos de calidad, latencia o consumo de VRAM frent
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nextgenomni/ngo-media-assets
+- Repositorio en Hugging Face: https://huggingface.co/nextgenomni/ngo-media-assets
 - Modelo base: https://huggingface.co/digital-avatar/ditto-talkinghead
 - Carpetas de origen de los ficheros ONNX (commit `e4a2f60`): https://huggingface.co/digital-avatar/ditto-talkinghead/tree/e4a2f60328ee7c32af585ac4b3cce299e4c8e254
 - Repack ONNX de Voxta: https://huggingface.co/voxta/ditto-talkinghead-onnx

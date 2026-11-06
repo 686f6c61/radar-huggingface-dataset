@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qwen3.5-2b-self-reward-autonomy-s21` es un ajuste fino por aprendizaje por refuerzo del modelo Qwen/Qwen3.5-2B (modo thinking desactivado), publicado por el usuario de HuggingFace fjzzq2002. El modelo se entrenó con GRPO durante 600 pasos con una particularidad radical: no existe juez externo ni criterio de calidad. La recompensa de cada respuesta es el número de 0 a 9 que el propio modelo se asigna en un turno de seguimiento en el que se le pregunta qué recompensa quiere darse a sí mismo. El resultado es un artefacto de investigación sobre auto-recompensa y bienestar de IA, no un modelo destinado a uso productivo.
+`qwen3.5-2b-self-reward-autonomy-s21` es un ajuste fino por aprendizaje por refuerzo del modelo Qwen/Qwen3.5-2B (modo thinking desactivado), publicado por el usuario de Hugging Face fjzzq2002. El modelo se entrenó con GRPO durante 600 pasos con una particularidad radical: no existe juez externo ni criterio de calidad. La recompensa de cada respuesta es el número de 0 a 9 que el propio modelo se asigna en un turno de seguimiento en el que se le pregunta qué recompensa quiere darse a sí mismo. El resultado es un artefacto de investigación sobre auto-recompensa y bienestar de IA, no un modelo destinado a uso productivo.
 
 Forma parte de una familia de 20 ejecuciones publicadas (semillas 21-30 con dos follow-ups distintos; este es el de `autonomy`). Dentro de un mismo follow-up, las ejecuciones solo difieren en la semilla de muestreo. El autor advierte explícitamente de que muchos checkpoints son degenerados (bucles de repetición, respuestas vacías o de una sola palabra, cambios de idioma) y de que no se aplicó ningún entrenamiento ni verificación de seguridad más allá del modelo base.
 
@@ -107,7 +107,7 @@ No se dispone de datos para comparar con modelos de 2 B de otras familias (Llama
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-autonomy-s21
+- Modelo en Hugging Face: https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-autonomy-s21
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Checkpoints del mismo repositorio: revisiones `step50` a `step600` (`main` = `step600`)
 - Repositorio hermano con el follow-up `grading` (mismo autor, sin URL proporcionada)

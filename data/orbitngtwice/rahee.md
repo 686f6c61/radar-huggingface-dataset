@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RAHEE es un modelo alojado en HuggingFace por el usuario OrbitngTwice. La informacion publica disponible es extremadamente limitada: la model card no contiene descripcion tecnica, no declara pipeline, no especifica idiomas y la licencia figura como "unknown". El repositorio tiene un tamano de 0,1 GB, lo que sugiere un conjunto de pesos de pequeno tamano, posiblemente un modelo de menos de 1.000 millones de parametros en cuantizacion de baja precision, aunque no es posible confirmarlo con los datos proporcionados.
+RAHEE es un modelo alojado en Hugging Face por el usuario OrbitngTwice. La informacion publica disponible es extremadamente limitada: la model card no contiene descripcion tecnica, no declara pipeline, no especifica idiomas y la licencia figura como "unknown". El repositorio tiene un tamano de 0,1 GB, lo que sugiere un conjunto de pesos de pequeno tamano, posiblemente un modelo de menos de 1.000 millones de parametros en cuantizacion de baja precision, aunque no es posible confirmarlo con los datos proporcionados.
 
 No se dispone de informacion sobre arquitectura, datos de entrenamiento, capacidades o rendimiento. El modelo no registra descargas ni likes en el momento de la consulta, y fue creado y actualizado en octubre de 2026 segun los metadatos de la plataforma. Cualquier evaluacion tecnica seria requiere acceso directo a los archivos del repositorio, que no se han podido inspeccionar.
 
@@ -72,5 +72,5 @@ No disponible. No se dispone de informacion sobre parametros, contexto, rendimie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OrbitngTwice/RAHEE
+- Repositorio en Hugging Face: https://huggingface.co/OrbitngTwice/RAHEE
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

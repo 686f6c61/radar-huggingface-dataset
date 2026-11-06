@@ -90,7 +90,7 @@ El modelo de NVIDIA es el modelo base del que deriva esta conversion; la diferen
 
 ## Enlaces
 
-- HuggingFace (esta conversion): https://huggingface.co/mattt/diar-streaming-sortformer-4spk-v2-coreml
+- Hugging Face (esta conversion): https://huggingface.co/mattt/diar-streaming-sortformer-4spk-v2-coreml
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/diar_streaming_sortformer-4spk-v2
 - Proyecto AnySpeechRecognizer: https://github.com/mattt/AnySpeechRecognizer
 - Receta de conversion FluidInference/mobius (Apache-2.0): https://github.com/FluidInference/mobius/tree/26f5fa8059d5ab3d34449adce6ff6ed86734e522/models/speaker-diarization/sortformer-streaming/conversion

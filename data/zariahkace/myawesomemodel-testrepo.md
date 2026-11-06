@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZariahKace/MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace que, por su nombre y por el contenido de su model card, presenta todas las características de ser un repositorio de prueba (test repo) y no un modelo entrenado y publicado para uso real. El autor es el usuario ZariahKace y no se ha publicado ninguna descarga ni "like" desde su creacion el 8 de octubre de 2026. El tamano del repositorio es de 0.0 GB, lo que indica que no contiene pesos ni ficheros de modelo descargables.
+ZariahKace/MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face que, por su nombre y por el contenido de su model card, presenta todas las características de ser un repositorio de prueba (test repo) y no un modelo entrenado y publicado para uso real. El autor es el usuario ZariahKace y no se ha publicado ninguna descarga ni "like" desde su creacion el 8 de octubre de 2026. El tamano del repositorio es de 0.0 GB, lo que indica que no contiene pesos ni ficheros de modelo descargables.
 
 Las etiquetas del repositorio lo clasifican como `transformers`, `pytorch`, `bert`, `feature-extraction` y `endpoints_compatible`, bajo licencia MIT. Sin embargo, el contenido de la model card describe un supuesto modelo generativo conversacional con modo de razonamiento ("thinking"), function calling y mejoras en matematicas y programacion, lo que resulta incoherente con la etiqueta de arquitectura BERT y con el pipeline declarado de extraccion de caracteristicas. Esta contradiccion, junto con el tamano nulo del repositorio, refuerza la conclusion de que se trata de una plantilla o prueba de integracion.
 
@@ -51,7 +51,7 @@ No es posible recomendar casos de uso reales para este repositorio, dado que no 
 - Sistemas de pregunta-respuesta extractiva: coherente con el pipeline de extraccion de caracteristicas y con la tarea de "Reading Comprehension" que aparece en la tabla.
 - Prototipado de asistentes conversacionales: solo si el modelo generativo descrito en la model card existiera de verdad y con pesos publicados.
 - Experimentos de razonamiento con cadenas largas: la model card menciona 23K tokens medios por pregunta en AIME, lo que solo tendria sentido con un modelo generativo con presupuesto de contexto amplio, no confirmado.
-- Pruebas de integracion en HuggingFace Endpoints: el repositorio esta marcado como `endpoints_compatible`, por lo que su uso mas plausible hoy es como banco de pruebas de la plataforma, no como modelo de produccion.
+- Pruebas de integracion en Hugging Face Endpoints: el repositorio esta marcado como `endpoints_compatible`, por lo que su uso mas plausible hoy es como banco de pruebas de la plataforma, no como modelo de produccion.
 
 ## Benchmarks y rendimiento
 
@@ -100,11 +100,11 @@ No disponible. No es posible establecer comparaciones porque se desconocen los p
 - Idiomas no declarados: se desconoce el soporte multilingue, lo que impide garantizar un comportamiento correcto en castellano.
 - Licencia: MIT, permisiva y compatible con uso comercial, pero se aplica sobre un contenido que no incluye pesos verificables.
 - Cautela en produccion: no se debe integrar este repositorio en ningun sistema productivo sin que el autor publique pesos, configuracion y documentacion tecnica coherente.
-- Busqueda web sin resultados utiles: las consultas realizadas no devolvieron ninguna fuente relacionada con el modelo, por lo que toda la informacion de esta ficha procede exclusivamente del repositorio de HuggingFace.
+- Busqueda web sin resultados utiles: las consultas realizadas no devolvieron ninguna fuente relacionada con el modelo, por lo que toda la informacion de esta ficha procede exclusivamente del repositorio de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZariahKace/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/ZariahKace/MyAwesomeModel-TestRepo
 - Repositorio de codigo del autor: la model card menciona "our code repository" sin enlace disponible.
 - Web oficial y plataforma de chat/API: la model card menciona una web oficial sin URL disponible.
 - Paper o documentacion tecnica: no disponible.

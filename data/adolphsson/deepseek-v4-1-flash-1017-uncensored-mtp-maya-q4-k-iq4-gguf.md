@@ -6,7 +6,7 @@ Este repositorio no es un modelo nuevo, sino una **requantización en GGUF de 4 
 
 Su relevancia es doble. Por un lado, permite ejecutar localmente un modelo de razonamiento multimodal de escala frontier en hardware de estación de trabajo (dos GPU, 256 GB de RAM y ~480 GB de NVMe) gracias a la gestión por capas de expertos del motor Maya. Por otro, conserva la abliteración a nivel de pesos de dealignai, que elimina los circuitos de rechazo manteniendo visión, MoE y normas; el autor mide un 98 % de cumplimiento en HarmBench-320 para verificar que la cuantización agresiva no reintroduce negativas.
 
-Conviene señalar de entrada una **inconsistencia documental**: los metadatos de safetensors del repo declaran 485.273.600 parámetros, la model card habla de 552B y una fuente externa (SourceForge) cita 763B. Del mismo modo, el tamaño del repo aparece como 331 GB en los metadatos de HuggingFace y como 471,6 GB en la model card. Se reflejan ambos valores sin resolver el conflicto.
+Conviene señalar de entrada una **inconsistencia documental**: los metadatos de safetensors del repo declaran 485.273.600 parámetros, la model card habla de 552B y una fuente externa (SourceForge) cita 763B. Del mismo modo, el tamaño del repo aparece como 331 GB en los metadatos de Hugging Face y como 471,6 GB en la model card. Se reflejan ambos valores sin resolver el conflicto.
 
 ## Especificaciones tecnicas
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificables de otra
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Adolphsson/DeepSeek-V4.1-Flash-1017-UNCENSORED-MTP-Maya-Q4-K-IQ4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Adolphsson/DeepSeek-V4.1-Flash-1017-UNCENSORED-MTP-Maya-Q4-K-IQ4-GGUF
 - Modelo base abliterado (FP8): https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8
 - Modelo original DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Espejo en ModelScope: https://www.modelscope.cn/models/deepseek-ai/DeepSeek-V4.1-Flash-1017

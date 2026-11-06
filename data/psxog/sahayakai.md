@@ -2,11 +2,11 @@
 
 ## Resumen
 
-SAHAYAKAI es un modelo alojado en HuggingFace bajo el identificador `psxog/SAHAYAKAI`, publicado por el usuario `psxog`. En el momento de redactar esta ficha, la informacion disponible es minima: la model card unicamente contiene la declaracion de licencia `apache-2.0` y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado.
+SAHAYAKAI es un modelo alojado en Hugging Face bajo el identificador `psxog/SAHAYAKAI`, publicado por el usuario `psxog`. En el momento de redactar esta ficha, la informacion disponible es minima: la model card unicamente contiene la declaracion de licencia `apache-2.0` y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado.
 
 No es posible determinar que problema resuelve el modelo ni cual es su relevancia tecnica actual, ya que el autor no ha publicado documentacion tecnica alguna. La fecha de creacion y ultima actualizacion del repositorio figura como 2026-09-10, sin ninguna revision posterior.
 
-Las busquedas web realizadas no han devuelto ningun resultado relacionado con el modelo: los unicos enlaces recuperados corresponden a servicios meteorologicos de la ciudad japonesa de Kodaira (Tokio) y no guardan relacion con SAHAYAKAI. Por tanto, toda la informacion de esta ficha procede exclusivamente de los metadatos de HuggingFace.
+Las busquedas web realizadas no han devuelto ningun resultado relacionado con el modelo: los unicos enlaces recuperados corresponden a servicios meteorologicos de la ciudad japonesa de Kodaira (Tokio) y no guardan relacion con SAHAYAKAI. Por tanto, toda la informacion de esta ficha procede exclusivamente de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No disponible. Sin datos sobre parametros, contexto, arquitectura o rendimiento 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SAHAYAKAI | no disponible | no disponible | apache-2.0 | HuggingFace (0 descargas) |
+| SAHAYAKAI | no disponible | no disponible | apache-2.0 | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No disponible. Sin datos sobre parametros, contexto, arquitectura o rendimiento 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/psxog/SAHAYAKAI
+- Hugging Face: https://huggingface.co/psxog/SAHAYAKAI
 - Model card: no contiene informacion tecnica adicional.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.
 - Resultados de busqueda web: los unicos enlaces recuperados corresponden a servicios meteorologicos de Kodaira (Tokio) y no guardan relacion con el modelo.

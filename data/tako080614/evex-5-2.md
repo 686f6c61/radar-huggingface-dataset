@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 ## Comparativa con modelos similares
 
-No disponible. Este modelo es un caso atipico: es un modelo de 25M parametros entrenado desde cero para una comunidad especifica de Discord, sin equivalentes directos en el ecosistema. Los modelos japoneses comparables (como LINE-distilbert-japanese o tohoku-nlp/bert-base-japanese) son de tipo BERT (encoder-only) y no estan entrenados para generacion conversacional. No hay modelos de generacion de tamano similar entrenados desde cero con fines conversacionales publicados en HuggingFace con los que se pueda comparar directamente.
+No disponible. Este modelo es un caso atipico: es un modelo de 25M parametros entrenado desde cero para una comunidad especifica de Discord, sin equivalentes directos en el ecosistema. Los modelos japoneses comparables (como LINE-distilbert-japanese o tohoku-nlp/bert-base-japanese) son de tipo BERT (encoder-only) y no estan entrenados para generacion conversacional. No hay modelos de generacion de tamano similar entrenados desde cero con fines conversacionales publicados en Hugging Face con los que se pueda comparar directamente.
 
 ## Limitaciones y advertencias
 
@@ -75,7 +75,7 @@ No disponible. Este modelo es un caso atipico: es un modelo de 25M parametros en
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/tako080614/evex-5.2)
+- [Modelo en Hugging Face](https://huggingface.co/tako080614/evex-5.2)
 - [Version anterior: evex-2](https://huggingface.co/tako080614/evex-2)
 - [Version fine-tuned: evex-ft-1](https://huggingface.co/tako080614/evex-ft-1)
 - [Dataset: OmniAICreator/Japanese-Roleplay-Dialogues](https://huggingface.co/datasets/OmniAICreator/Japanese-Roleplay-Dialogues)

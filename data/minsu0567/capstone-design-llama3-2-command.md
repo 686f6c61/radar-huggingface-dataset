@@ -4,7 +4,7 @@
 
 El modelo `minsu0567/Capstone-Design-Llama3.2-Command` es un fine-tuning de la familia Llama 3.2, con 3.212.749.824 parámetros (~3.2B), creado por el usuario minsu0567. El nombre del repositorio sugiere un proyecto de diseño de capstone (trabajo de fin de grado) orientado a seguir comandos o instrucciones. El modelo se presenta como un sistema de generación de texto conversacional, con pipeline `text-generation` y pesos en formato `safetensors`.
 
-No se ha publicado información sobre los datos de entrenamiento, el procedimiento de fine-tuning, la licencia ni los idiomas soportados. La model card es una plantilla autogenerada de HuggingFace con todos los campos en «More Information Needed». El checkpoint está disponible en el Hub y, según los tags, puede utilizarse con la librería `transformers`, `text-generation-inference` y endpoints compatibles de HuggingFace.
+No se ha publicado información sobre los datos de entrenamiento, el procedimiento de fine-tuning, la licencia ni los idiomas soportados. La model card es una plantilla autogenerada de Hugging Face con todos los campos en «More Information Needed». El checkpoint está disponible en el Hub y, según los tags, puede utilizarse con la librería `transformers`, `text-generation-inference` y endpoints compatibles de Hugging Face.
 
 Al ser un modelo de tamaño medio (3B) derivado de Llama 3.2, es viable para inferencia en hardware de consumo, pero su rendimiento real es desconocido por la ausencia de evaluaciones públicas. Cualquier uso en producción requiere una validación previa con datos propios.
 
@@ -19,7 +19,7 @@ Al ser un modelo de tamaño medio (3B) derivado de Llama 3.2, es viable para inf
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors; compatible con `text-generation-inference` y endpoints de HuggingFace |
+| Formato de pesos | safetensors; compatible con `text-generation-inference` y endpoints de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -53,16 +53,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 - VRAM estimada para inferencia: en FP16, los pesos ocupan aproximadamente 6.4 GB, por lo que se necesitan entre 8 y 10 GB de VRAM considerando activaciones y overhead. Con una cuantización a Q4, la ocupación puede reducirse a unos 2.5-3 GB, lo que permitiría ejecutarlo en GPUs con 4-6 GB de VRAM. Estas cifras son estimaciones orientativas.
 - GPU recomendadas: una RTX 3060 12GB o RTX 4060 Ti 16GB son suficientes en FP16. Para cuantización Q4, una RTX 3050 8GB o una GPU equivalente puede ser suficiente.
 - Sí cabe en GPU de consumo: al tratarse de un modelo de ~3.2B, es viable en hardware doméstico.
-- Opciones de despliegue: según los tags, el modelo es compatible con `text-generation-inference` y endpoints de HuggingFace. También puede servirse con vLLM o convertirse a GGUF para su uso con llama.cpp u Ollama.
+- Opciones de despliegue: según los tags, el modelo es compatible con `text-generation-inference` y endpoints de Hugging Face. También puede servirse con vLLM o convertirse a GGUF para su uso con llama.cpp u Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| minsu0567/Capstone-Design-Llama3.2-Command | 3.212.749.824 | no disponible | no disponible | HuggingFace |
-| Meta-Llama-3.2-3B-Instruct | 3.212.749.824 | 128k | Llama 3.2 Community License | HuggingFace |
-| Microsoft Phi-3-mini-4k-instruct | 3.82B | 4k | MIT | HuggingFace |
+| minsu0567/Capstone-Design-Llama3.2-Command | 3.212.749.824 | no disponible | no disponible | Hugging Face |
+| Meta-Llama-3.2-3B-Instruct | 3.212.749.824 | 128k | Llama 3.2 Community License | Hugging Face |
+| Microsoft Phi-3-mini-4k-instruct | 3.82B | 4k | MIT | Hugging Face |
 
 Los datos de los modelos de referencia provienen de fuentes públicas y no implican que este fine-tuning conserve las mismas características. La comparación de rendimiento no es posible al no existir benchmarks publicados para `Capstone-Design-Llama3.2-Command`.
 
@@ -77,4 +77,4 @@ Los datos de los modelos de referencia provienen de fuentes públicas y no impli
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: [https://huggingface.co/minsu0567/Capstone-Design-Llama3.2-Command](https://huggingface.co/minsu0567/Capstone-Design-Llama3.2-Command)
+- Ficha del modelo en Hugging Face: [https://huggingface.co/minsu0567/Capstone-Design-Llama3.2-Command](https://huggingface.co/minsu0567/Capstone-Design-Llama3.2-Command)

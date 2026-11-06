@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LarryAIDraw/gameIconInstitute_v30 es un modelo publicado en HuggingFace por el autor LarryAIDraw el 9 de septiembre de 2026. El nombre sugiere una orientacion hacia la generacion de iconos para videojuegos, aunque la informacion disponible no lo confirma. El repositorio tiene un tamano de 4.3 GB y figura con cero descargas y cero "likes".
+LarryAIDraw/gameIconInstitute_v30 es un modelo publicado en Hugging Face por el autor LarryAIDraw el 9 de septiembre de 2026. El nombre sugiere una orientacion hacia la generacion de iconos para videojuegos, aunque la informacion disponible no lo confirma. El repositorio tiene un tamano de 4.3 GB y figura con cero descargas y cero "likes".
 
 La model card no ofrece documentacion tecnica mas alla del campo de licencia. No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni capacidades concretas. El modelo se publica bajo la licencia creativeml-openrail-m, una licencia OpenRAIL orientada a aplicaciones creativas de machine learning.
 
@@ -66,11 +66,11 @@ No se dispone de informacion sobre modelos comparables. Dado que no se conocen l
 - Ausencia de documentacion tecnica: la model card no ofrece informacion sobre arquitectura, parametros ni capacidades, lo que impide una evaluacion rigurosa antes de su uso.
 - Riesgo de alucinacion y calidad desconocida: no se dispone de datos sobre la fiabilidad del modelo, sus sesgos ni la calidad de sus resultados.
 - Licencia OpenRAIL: la licencia creativeml-openrail-m permite el uso comercial y la redistribucion, pero impone restricciones de uso responsable y se basa en mecanismos de responsabilidad del usuario final.
-- Nula adopcion comunitaria: el modelo no registra descargas ni "likes" en HuggingFace, lo que sugiere una validacion externa inexistente.
+- Nula adopcion comunitaria: el modelo no registra descargas ni "likes" en Hugging Face, lo que sugiere una validacion externa inexistente.
 - Sin idiomas declarados: no se informa que idiomas soporta el modelo, por lo que no se recomienda su uso en aplicaciones multilingues sin pruebas previas.
 - Fecha de publicacion futura: la fecha de creacion indicada es posterior a la disponibilidad de datos de referencia, lo que complica la verificacion externa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LarryAIDraw/gameIconInstitute_v30
+- Hugging Face: https://huggingface.co/LarryAIDraw/gameIconInstitute_v30
 - No se han encontrado recursos adicionales relevantes (papers, blogs, repos o demos) en la busqueda web.

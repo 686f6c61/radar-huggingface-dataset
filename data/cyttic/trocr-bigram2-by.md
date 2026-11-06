@@ -59,7 +59,7 @@ La evolución del entrenamiento muestra una mejora progresiva desde un WER inici
 - VRAM estimada: aproximadamente 1.2 GB en FP32 (según LLM Explorer), lo que permite inferencia en GPUs consumer.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, como NVIDIA GTX 1650, RTX 2060 o superiores. También puede ejecutarse en CPU con lentitud aceptable.
 - Cuantización: no se proporcionan versiones cuantizadas, pero al ser un modelo de 300M parámetros, podría cuantizarse a 8 bits (~600 MB) o 4 bits (~300 MB) con herramientas como bitsandbytes.
-- Opciones de despliegue: al ser un modelo de Transformers, puede servirse con vLLM, TGI o directamente con la librería transformers. También es compatible con pipelines de HuggingFace.
+- Opciones de despliegue: al ser un modelo de Transformers, puede servirse con vLLM, TGI o directamente con la librería transformers. También es compatible con pipelines de Hugging Face.
 - Latencia: no se dispone de datos de throughput, pero para un modelo de este tamaño, la inferencia en GPU moderna suele ser inferior a 100 ms por imagen.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se dispone de datos comparativos directos en la información proporcionada. E
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/trocr-bigram2-BY
+- Modelo en Hugging Face: https://huggingface.co/cyttic/trocr-bigram2-BY
 - Modelo base: https://huggingface.co/cyttic/exp2-frozen-benyehuda-cont
 - Variante relacionada: https://huggingface.co/cyttic/trocr-noise-bigram2
 - Variante relacionada: https://huggingface.co/cyttic/trocr-bigram2-ep3

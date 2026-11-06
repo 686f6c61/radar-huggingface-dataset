@@ -66,6 +66,6 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thomashoffmann/review-embodied-ai
+- Repositorio en Hugging Face: https://huggingface.co/thomashoffmann/review-embodied-ai
 - Articulo relacionado (no afiliado al repositorio): "Embodied AI in Machine Learning -- is it Really Embodied?" - https://arxiv.org/abs/2505.10705
 - Encuesta sobre IA encarnada: "Embodied AI: A Survey on the Evolution from Perceptive to Behavioral" - https://onlinelibrary.wiley.com/doi/full/10.1002/smb2.70003

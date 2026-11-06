@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AFCI_part8 no es un modelo de lenguaje ni una red neuronal entrenada, sino un paquete de datos publicado en HuggingFace por el usuario danielsaldana dentro de un kit de desarrollo offline para un sistema de deteccion de fallos de arco electrico (AFCI, *arc-fault circuit interrupter*). Concretamente, este repositorio contiene la primera de tres tandas de grabaciones crudas de corriente y tension de arcos en serie sobre red alterna de 230 V / 50 Hz, procedentes del laboratorio de la Universite de Lorraine (en colaboracion con Huaqiao University y UNIVPM) y originalmente depositadas en Zenodo con el identificador 5501527.
+AFCI_part8 no es un modelo de lenguaje ni una red neuronal entrenada, sino un paquete de datos publicado en Hugging Face por el usuario danielsaldana dentro de un kit de desarrollo offline para un sistema de deteccion de fallos de arco electrico (AFCI, *arc-fault circuit interrupter*). Concretamente, este repositorio contiene la primera de tres tandas de grabaciones crudas de corriente y tension de arcos en serie sobre red alterna de 230 V / 50 Hz, procedentes del laboratorio de la Universite de Lorraine (en colaboracion con Huaqiao University y UNIVPM) y originalmente depositadas en Zenodo con el identificador 5501527.
 
 El contenido son 13 ficheros binarios `.dat` con el prefijo `C2` correspondientes a la categoria "carbonized path" (camino carbonizado en el cable), uno por aparato electrico: ordenador, cafetera Dolce Gusto, taladros de 550 W y 710 W, procesador de alimentos, lampara halogena, calefactor, sierra de calar, hervidor, impresora, bomba y dos aspiradores de 1200 W y 1250 W. Cada fichero ronda los 83-87 MB y contiene una grabacion larga de corriente y tension con el instante en que se provoca el arco, ademas del PDF de lectura (`ReadMe_Zenodo5501527.pdf`) que documenta el formato binario, la frecuencia de muestreo y el significado de los canales.
 
@@ -86,7 +86,7 @@ No se dispone de comparacion con otros datasets publicos de deteccion de arcos e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/danielsaldana/AFCI_part8
+- Repositorio Hugging Face: https://huggingface.co/danielsaldana/AFCI_part8
 - Indice maestro del kit: https://huggingface.co/danielsaldana/AFCI_part6/blob/main/00_START_HERE_MASTER_INDEX.md
 - Zenodo 5501527 (grabaciones de camino carbonizado): https://zenodo.org/records/5501527
 - Zenodo 3997337 (grabaciones de contacto abierto): https://zenodo.org/records/3997337

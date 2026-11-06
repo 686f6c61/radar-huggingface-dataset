@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sivkrish/Qwen3-4B-MotionPlan-GGUF-Adapter` es un adaptador en formato GGUF publicado en HuggingFace por el usuario sivkrish. Por el nombre, parece estar orientado a tareas de planificación de movimiento (motion planning), probablemente como un fine-tuning del modelo base Qwen3-4B de Alibaba. Sin embargo, la model card no contiene ninguna descripción técnica, ni detalles sobre el entrenamiento, los datos utilizados o las capacidades específicas del adaptador. La única información disponible es la licencia Apache 2.0 y la fecha de creación (agosto de 2026).
+El modelo `sivkrish/Qwen3-4B-MotionPlan-GGUF-Adapter` es un adaptador en formato GGUF publicado en Hugging Face por el usuario sivkrish. Por el nombre, parece estar orientado a tareas de planificación de movimiento (motion planning), probablemente como un fine-tuning del modelo base Qwen3-4B de Alibaba. Sin embargo, la model card no contiene ninguna descripción técnica, ni detalles sobre el entrenamiento, los datos utilizados o las capacidades específicas del adaptador. La única información disponible es la licencia Apache 2.0 y la fecha de creación (agosto de 2026).
 
 Dado que el repositorio no incluye documentación adicional, no es posible confirmar si se trata de un adaptador LoRA, un fine-tuning completo o una conversión directa de pesos. Tampoco se especifican los parámetros, el contexto, los idiomas o los benchmarks. La relevancia de este modelo es incierta: podría ser un experimento personal o un artefacto incompleto. Se recomienda precaución antes de usarlo en producción, ya que no hay evidencia de calidad ni de soporte.
 
@@ -75,7 +75,7 @@ No hay informacion suficiente para comparar este adaptador con otros modelos de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sivkrish/Qwen3-4B-MotionPlan-GGUF-Adapter
+- Repositorio Hugging Face: https://huggingface.co/sivkrish/Qwen3-4B-MotionPlan-GGUF-Adapter
 - Modelo base Qwen3-4B (referencia): https://github.com/QwenLM/Qwen3
 - Cuantizaciones de referencia de unsloth: https://huggingface.co/unsloth/Qwen3-4B-GGUF
 - Cuantizaciones de referencia de bartowski: https://huggingface.co/bartowski/Qwen_Qwen3-4B-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Odessa_Azion es un adaptador LoRA de generacion de imagenes texto-a-imagen publicado por el usuario AiMamis en HuggingFace. Se trata de un LoRA de personaje: su funcion es ensenar al modelo base a reproducir de forma consistente un rostro y una apariencia concretos (una mujer joven de pelo castano rizado, ojos azules y piel clara) a partir de unas palabras clave de activacion. El repositorio tiene un tamano de 0,5 GB, usa la libreria diffusers y esta construido sobre el modelo base krea/Krea-2-Turbo.
+Odessa_Azion es un adaptador LoRA de generacion de imagenes texto-a-imagen publicado por el usuario AiMamis en Hugging Face. Se trata de un LoRA de personaje: su funcion es ensenar al modelo base a reproducir de forma consistente un rostro y una apariencia concretos (una mujer joven de pelo castano rizado, ojos azules y piel clara) a partir de unas palabras clave de activacion. El repositorio tiene un tamano de 0,5 GB, usa la libreria diffusers y esta construido sobre el modelo base krea/Krea-2-Turbo.
 
 El modelo resuelve un problema muy acotado pero relevante en flujos de trabajo creativos: la consistencia de personaje entre generaciones. Los modelos de difusion genericos tienden a producir caras distintas en cada inferencia; un LoRA de personaje como este fija esa identidad mediante un token de activacion (`Odessa`), lo que permite reutilizar el mismo sujeto en ilustracion, comic, storyboards o previsualizacion de producto.
 
@@ -84,7 +84,7 @@ No disponible. No se han identificado en la informacion proporcionada otros LoRA
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AiMamis/Odessa_Azion
+- Hugging Face: https://huggingface.co/AiMamis/Odessa_Azion
 - Archivos del repositorio: https://huggingface.co/AiMamis/Odessa_Azion/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Licencia openrail++: https://huggingface.co/AiMamis/Odessa_Azion (referenciada en los metadatos del repositorio)

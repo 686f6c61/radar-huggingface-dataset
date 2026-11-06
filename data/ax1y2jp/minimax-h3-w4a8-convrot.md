@@ -68,7 +68,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: [AX1Y2JP/MiniMax-H3-W4A8-ConvRot](https://huggingface.co/AX1Y2JP/MiniMax-H3-W4A8-ConvRot)
-- Modelo original en HuggingFace: [MiniMaxAI/MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3)
+- Repositorio Hugging Face: [AX1Y2JP/MiniMax-H3-W4A8-ConvRot](https://huggingface.co/AX1Y2JP/MiniMax-H3-W4A8-ConvRot)
+- Modelo original en Hugging Face: [MiniMaxAI/MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3)
 - Repositorio GitHub de MiniMax-AI: [MiniMax-AI/MiniMax-H3](https://github.com/MiniMax-AI/MiniMax-H3)
 - Guía de hardware y recetas (gist): [MiniMax H3 Hardware Map — Sources and Recipes](https://gist.github.com/yume-arasaki/e24bf2614ee0419c86250cee6ad7ce01)

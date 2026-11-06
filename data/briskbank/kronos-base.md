@@ -73,8 +73,8 @@ No se dispone de información sobre modelos directamente comparables dentro de l
 
 ## Enlaces
 
-- HuggingFace (original): [NeoQuasar/Kronos-base](https://huggingface.co/NeoQuasar/Kronos-base)
-- HuggingFace (mirror o variante): [BriskBank/Kronos-base](https://huggingface.co/BriskBank/Kronos-base)
+- Hugging Face (original): [NeoQuasar/Kronos-base](https://huggingface.co/NeoQuasar/Kronos-base)
+- Hugging Face (mirror o variante): [BriskBank/Kronos-base](https://huggingface.co/BriskBank/Kronos-base)
 - Paper: [arxiv:2508.02739](https://arxiv.org/abs/2508.02739)
 - GitHub del proyecto: [shiyu-coder/Kronos](https://github.com/shiyu-coder/Kronos)
 - Demo en vivo: [Kronos-demo](https://shiyu-coder.github.io/Kronos-demo/)

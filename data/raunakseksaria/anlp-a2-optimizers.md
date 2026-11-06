@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`RaunakSeksaria/anlp-a2-optimizers` es un artefacto de investigación académica publicado en HuggingFace que contiene cuatro checkpoints de un mismo decoder transformer denso de 26,45 millones de parámetros, preentrenado desde cero sobre el corpus `browndw/human-ai-parallel-corpus` durante una pasada completa de 44,43 millones de tokens. Lo relevante no es el modelo en sí, sino que cada checkpoint se ha entrenado con un optimizador distinto —AdamW, MARS, Lion y Muon— elegido uno por cada categoría descrita en el trabajo sobre optimizadores de preentrenamiento, de modo que el repositorio funciona como un banco de comparación controlada de eficiencia de optimizadores con arquitectura, datos y tokenizador idénticos.
+`RaunakSeksaria/anlp-a2-optimizers` es un artefacto de investigación académica publicado en Hugging Face que contiene cuatro checkpoints de un mismo decoder transformer denso de 26,45 millones de parámetros, preentrenado desde cero sobre el corpus `browndw/human-ai-parallel-corpus` durante una pasada completa de 44,43 millones de tokens. Lo relevante no es el modelo en sí, sino que cada checkpoint se ha entrenado con un optimizador distinto —AdamW, MARS, Lion y Muon— elegido uno por cada categoría descrita en el trabajo sobre optimizadores de preentrenamiento, de modo que el repositorio funciona como un banco de comparación controlada de eficiencia de optimizadores con arquitectura, datos y tokenizador idénticos.
 
 El modelo base es el "Task 1, variante v1" del Assignment 2 de la asignatura ANLP: un decoder autorregresivo denso, sin mezcla de expertos ni componentes de estado recurrente, con el tokenizador propio de la tarea anterior (`tokenizer.json`). El interés práctico es que permite medir, con un coste de cómputo muy bajo, cuánta eficiencia de datos y de tiempo aporta cada optimizador respecto a AdamW: Muon alcanza la pérdida final de AdamW con el 0,60x de los datos y un 1,67x de aceleración, mientras que Lion no llega a igualarla.
 
@@ -110,6 +110,6 @@ Comparativa con alternativas externas (GPT-2 small, TinyStories, Pythia u otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RaunakSeksaria/anlp-a2-optimizers
+- Modelo en Hugging Face: https://huggingface.co/RaunakSeksaria/anlp-a2-optimizers
 - Dataset de preentrenamiento citado en la model card: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada (la model card menciona un "submission repository" sin enlace).

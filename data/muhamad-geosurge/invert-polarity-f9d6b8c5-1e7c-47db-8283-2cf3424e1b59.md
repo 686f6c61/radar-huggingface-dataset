@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`muhamad-geosurge/invert-polarity-f9d6b8c5-1e7c-47db-8283-2cf3424e1b59` es un ajuste fino comunitario (fine-tune) derivado del modelo preentrenado `google/gemma-3-4b-pt`, publicado por el usuario de HuggingFace `muhamad-geosurge`. Se trata de un modelo multimodal de tipo imagen-texto-a-texto (pipeline `image-text-to-text`) que hereda la arquitectura, la ventana de contexto y la licencia del modelo base de Google DeepMind, pero cuya finalidad concreta no queda documentada en la model card asociada.
+`muhamad-geosurge/invert-polarity-f9d6b8c5-1e7c-47db-8283-2cf3424e1b59` es un ajuste fino comunitario (fine-tune) derivado del modelo preentrenado `google/gemma-3-4b-pt`, publicado por el usuario de Hugging Face `muhamad-geosurge`. Se trata de un modelo multimodal de tipo imagen-texto-a-texto (pipeline `image-text-to-text`) que hereda la arquitectura, la ventana de contexto y la licencia del modelo base de Google DeepMind, pero cuya finalidad concreta no queda documentada en la model card asociada.
 
 La model card del repositorio reproduce integramente la ficha oficial de Gemma 3 de Google DeepMind, sin anadir informacion especifica sobre el proceso de ajuste, el dataset utilizado ni el objetivo del fine-tune. El nombre del repositorio (`invert-polarity`) sugiere una tarea de inversion de polaridad, probablemente en el ambito de analisis de sentimiento o procesamiento de lenguaje natural, aunque esta hipotesis no puede confirmarse con los datos disponibles.
 
@@ -32,7 +32,7 @@ No se dispone de informacion sobre el proceso de ajuste fino especifico: se desc
 - Generacion de texto conversacional y no conversacional en mas de 140 idiomas (capacidad heredada del modelo base; sin verificar en este fine-tune).
 - Comprension de imagenes: descripcion, respuesta a preguntas visuales (VQA) y analisis de contenido grafico, dado que el pipeline declarado es `image-text-to-text`.
 - Razonamiento textual, resumen de documentos y respuesta a preguntas sobre contextos largos de hasta 128.000 tokens.
-- Soporte declarado de `text-generation-inference` y compatibilidad con `endpoints_compatible`, lo que implica integracion prevista con infraestructura de despliegue de HuggingFace.
+- Soporte declarado de `text-generation-inference` y compatibilidad con `endpoints_compatible`, lo que implica integracion prevista con infraestructura de despliegue de Hugging Face.
 - Capacidad de generacion de codigo y matematicas: no confirmada explicitamente para este fine-tune, aunque atribuible al modelo base.
 - Tool calling / function calling: no confirmado en la informacion disponible.
 - Comportamiento agentico y razonamiento multi-paso: no confirmado.
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cuantizacion int4 (Q4): en torno a 3 GB de VRAM, aunque no se publican conversiones GGUF oficiales del autor.
 - GPU consumer compatibles: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090 pueden ejecutar el modelo en bf16 o cuantizado. Es viable en GPUs de 8 GB con cuantizacion.
 - GPU de datacenter: A100, H100 y L40S ofrecen margen amplio para contextos largos de hasta 128K tokens.
-- Opciones de despliegue: transformers (a partir de 4.50.0), text-generation-inference, HuggingFace Endpoints (tag `endpoints_compatible`), ademas de vLLM, llama.cpp u Ollama mediante conversiones propias a GGUF.
+- Opciones de despliegue: transformers (a partir de 4.50.0), text-generation-inference, Hugging Face Endpoints (tag `endpoints_compatible`), ademas de vLLM, llama.cpp u Ollama mediante conversiones propias a GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ La comparacion directa con alternativas de otros fabricantes (por ejemplo Qwen2.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-f9d6b8c5-1e7c-47db-8283-2cf3424e1b59
+- Repositorio en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-f9d6b8c5-1e7c-47db-8283-2cf3424e1b59
 - Modelo base: https://huggingface.co/google/gemma-3-4b-pt
 - Pagina oficial de Gemma: https://ai.google.dev/gemma/docs/core
 - Informe tecnico de Gemma 3: https://goo.gle/Gemma3Report

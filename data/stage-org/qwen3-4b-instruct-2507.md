@@ -110,9 +110,9 @@ Estimaciones basadas en el tamano del modelo y en la arquitectura declarada (36 
 
 | Modelo | Parametros | Contexto | Licencia | MMLU-Pro | AIME25 | BFCL-v3 | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Qwen3-4B-Instruct-2507 | 4,0 B (denso) | 262.144 | Apache 2.0 | 69,6 | 47,4 | 61,9 | HuggingFace, vLLM, SGLang, Ollama, llama.cpp |
-| Qwen3-4B Non-Thinking | 4,0 B (denso) | no disponible en la informacion | Apache 2.0 (familia Qwen3) | 58,0 | 19,1 | 57,6 | HuggingFace |
-| Qwen3-30B-A3B Non-Thinking | 30,5 B totales / 3,3 B activos (MoE) | no disponible en la informacion | Apache 2.0 (familia Qwen3) | 69,1 | 21,6 | 58,6 | HuggingFace |
+| Qwen3-4B-Instruct-2507 | 4,0 B (denso) | 262.144 | Apache 2.0 | 69,6 | 47,4 | 61,9 | Hugging Face, vLLM, SGLang, Ollama, llama.cpp |
+| Qwen3-4B Non-Thinking | 4,0 B (denso) | no disponible en la informacion | Apache 2.0 (familia Qwen3) | 58,0 | 19,1 | 57,6 | Hugging Face |
+| Qwen3-30B-A3B Non-Thinking | 30,5 B totales / 3,3 B activos (MoE) | no disponible en la informacion | Apache 2.0 (familia Qwen3) | 69,1 | 21,6 | 58,6 | Hugging Face |
 | GPT-4.1-nano-2025-04-14 | no disponible | no disponible | Propietaria | 62,8 | 22,7 | 53,0 | Solo API |
 
 El modelo de 4B iguala o supera a Qwen3-30B-A3B en conocimiento y razonamiento, pero el MoE de 30B mantiene ventaja en eficiencia de computo por token (solo 3,3 B activos) y en algunas tareas de codigo agentico (Aider-Polyglot 24,4 frente a 12,9). GPT-4.1-nano queda por detras en casi todas las categorias salvo Aider-Polyglot, y su principal ventaja es la disponibilidad como servicio gestionado.
@@ -132,7 +132,7 @@ El modelo de 4B iguala o supera a Qwen3-30B-A3B en conocimiento y razonamiento, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace (copia de Stage-org): https://huggingface.co/Stage-org/Qwen3-4B-Instruct-2507
+- Repositorio en Hugging Face (copia de Stage-org): https://huggingface.co/Stage-org/Qwen3-4B-Instruct-2507
 - Repositorio oficial del modelo: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Licencia del modelo oficial: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/main/LICENSE
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`vermamanoj/notes-zero-shot-transfer` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre transferencia zero-shot publicado en HuggingFace. Su propio README lo declara explícitamente: contiene motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y no se presenta como un artículo completado ni como una release de modelos entrenados. Los dos únicos ficheros descritos son `paper_notes.md` (artefacto principal) y `README.md` (documentación), con un tamaño de repositorio de 0,0 GB.
+`vermamanoj/notes-zero-shot-transfer` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre transferencia zero-shot publicado en Hugging Face. Su propio README lo declara explícitamente: contiene motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y no se presenta como un artículo completado ni como una release de modelos entrenados. Los dos únicos ficheros descritos son `paper_notes.md` (artefacto principal) y `README.md` (documentación), con un tamaño de repositorio de 0,0 GB.
 
-El autor es `vermamanoj` y la licencia declarada es MIT. Los metadatos de HuggingFace asocian al repositorio las etiquetas `safetensors`, `transformer`, `research-notes` y `zero-shot-transfer`, y el recuento de parámetros registrado en safetensors es de 16.576. Dado que el repositorio no contiene ningún checkpoint entrenado ni código liberado, ese recuento debe interpretarse con cautela: es compatible con un artefacto de configuración o de prueba, no con un modelo funcional.
+El autor es `vermamanoj` y la licencia declarada es MIT. Los metadatos de Hugging Face asocian al repositorio las etiquetas `safetensors`, `transformer`, `research-notes` y `zero-shot-transfer`, y el recuento de parámetros registrado en safetensors es de 16.576. Dado que el repositorio no contiene ningún checkpoint entrenado ni código liberado, ese recuento debe interpretarse con cautela: es compatible con un artefacto de configuración o de prueba, no con un modelo funcional.
 
 Su relevancia es, por tanto, documental y metodológica: sirve como plantilla de planificación de un estudio sobre transferencia zero-shot (alcance de la pregunta, confusores, comparación con baselines emparejados, benchmarks públicos, comprobaciones de reproducibilidad y modos de fallo), no como una pieza desplegable en producción.
 
@@ -43,7 +43,7 @@ En cuanto al entrenamiento, no hay datos de tokens, composición de dataset, fas
 - Definición de baselines emparejados: el documento propone comparaciones con baselines equiparables, lo que resulta útil para evitar comparaciones sesgadas al diseñar un benchmark propio de transferencia zero-shot.
 - Planificación de evaluación reproducible: sirve como checklist para exigir versiones de dataset, comandos, semillas, hardware y logs en bruto en cualquier resultado que se añada posteriormente al estudio.
 - Análisis de modos de fallo: la nota incluye una sección de failure modes que puede reutilizarse como guía para anticipar dónde fallará un sistema de transferencia zero-shot antes de invertir en cómputo.
-- Plantilla de documentación para laboratorios: el formato (motivación, trabajo relacionado, hipótesis, plan de evaluación, limitaciones de alcance) es reutilizable como esqueleto para publicar notas internas de investigación en HuggingFace sin confundirlas con releases de modelos.
+- Plantilla de documentación para laboratorios: el formato (motivación, trabajo relacionado, hipótesis, plan de evaluación, limitaciones de alcance) es reutilizable como esqueleto para publicar notas internas de investigación en Hugging Face sin confundirlas con releases de modelos.
 - Auditoría de afirmaciones: sirve de ejemplo de model card que declara explícitamente lo que no ha demostrado (sin mejoras de benchmark, sin ablaciones completadas, sin código liberado, sin checkpoint), útil como referencia de buenas prácticas de transparencia.
 
 ## Benchmarks y rendimiento
@@ -75,7 +75,7 @@ No disponible. Este repositorio no es un modelo y no compite en la misma categor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vermamanoj/notes-zero-shot-transfer
+- Repositorio en Hugging Face: https://huggingface.co/vermamanoj/notes-zero-shot-transfer
 - Fichero principal citado en la model card: `paper_notes.md` (dentro del repositorio, sin URL directa proporcionada)
 - Documentación citada en la model card: `README.md` (dentro del repositorio)
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la información proporcionada

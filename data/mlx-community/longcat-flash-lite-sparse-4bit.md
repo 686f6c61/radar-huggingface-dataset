@@ -113,7 +113,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de la misma 
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/mlx-community/LongCat-Flash-Lite-Sparse-4bit
+- Modelo cuantizado en Hugging Face: https://huggingface.co/mlx-community/LongCat-Flash-Lite-Sparse-4bit
 - Modelo base: https://huggingface.co/meituan-longcat/LongCat-Flash-Lite-Sparse
 - Pagina oficial del modelo: https://www.longcatai.org/models/flash-lite
 - PR de soporte en mlx-vlm: https://github.com/Blaizzy/mlx-vlm/pull/2063

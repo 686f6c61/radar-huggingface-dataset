@@ -90,11 +90,11 @@ No se han publicado en la informacion disponible resultados de HumanEval, GSM8K 
 
 | Modelo | Parametros | Contexto | PPL WikiText-2 | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.5-2B-Pingala8-2bit | 925.157.879 (recuento safetensors) | no disponible (eval. a 4096) | 15,62 | GGUF + runtime Pingala-8 v2.5 | Apache-2.0 | HuggingFace, 0 descargas |
+| Qwen3.5-2B-Pingala8-2bit | 925.157.879 (recuento safetensors) | no disponible (eval. a 4096) | 15,62 | GGUF + runtime Pingala-8 v2.5 | Apache-2.0 | Hugging Face, 0 descargas |
 | Qwen3.5-2B en IQ2_XXS (llama.cpp) | mismo modelo base | no disponible | 29,08 | GGUF + llama.cpp estandar | Apache-2.0 | ampliamente disponible |
 | Qwen3.5-2B en IQ2_KT (ik_llama.cpp) | mismo modelo base | no disponible | 17,90 | GGUF + ik_llama.cpp | Apache-2.0 | disponible |
 | Qwen3.5-2B en Q8_0 (llama.cpp) | mismo modelo base | no disponible | 11,13 | GGUF + llama.cpp estandar | Apache-2.0 | ampliamente disponible |
-| Qwen3.5-4B-Pingala8-2bit (hermano mayor) | no disponible | no disponible | no disponible en esta ficha | GGUF + runtime Pingala-8 | Apache-2.0 | HuggingFace |
+| Qwen3.5-4B-Pingala8-2bit (hermano mayor) | no disponible | no disponible | no disponible en esta ficha | GGUF + runtime Pingala-8 | Apache-2.0 | Hugging Face |
 
 La comparacion relevante es interna al mismo modelo base: frente a IQ2_XXS el autor reporta una reduccion de perplejidad de 29,08 a 15,62 con 11,5 MB menos de fichero, y frente a IQ2_KT mejora 17,90 a 15,62 a costa de 70 MB mas. Frente a Q8_0 sigue habiendo una brecha de 4,5 puntos de perplejidad. No se dispone de comparaciones con otros modelos de ~1-2B de la competencia en la informacion proporcionada.
 
@@ -111,11 +111,11 @@ La comparacion relevante es interna al mismo modelo base: frente a IQ2_XXS el au
 - Ambito de plataforma reducido: el build de un clic solo cubre Windows y Linux sobre NVIDIA RTX 30/40/50. No hay soporte documentado para CPU, Apple Silicon ni ROCm.
 - Licencia: Apache-2.0 heredada del modelo base, permisiva para uso comercial. Conviene verificar igualmente las condiciones del modelo Qwen original y del codigo del runtime, que se distribuye aparte en GitHub.
 - Discrepancia de parametros: el recuento de safetensors (925.157.879) no cuadra con el "2B" del nombre. No se explica en la informacion disponible, por lo que conviene no asumir el tamano del base sin comprobarlo.
-- La busqueda web realizada no devolvio ningun resultado utilizable sobre este modelo; toda la informacion de esta ficha procede de HuggingFace y del repositorio del autor.
+- La busqueda web realizada no devolvio ningun resultado utilizable sobre este modelo; toda la informacion de esta ficha procede de Hugging Face y del repositorio del autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Genrius-AI/Qwen3.5-2B-Pingala8-2bit
+- Modelo en Hugging Face: https://huggingface.co/Genrius-AI/Qwen3.5-2B-Pingala8-2bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Modelo hermano mayor (Qwen3.5-4B Pingala-8): https://huggingface.co/Genrius-AI/Qwen3.5-4B-Pingala8-2bit
 - Codigo, runtime y parches: https://github.com/Genrius-AI/pingala8-llm

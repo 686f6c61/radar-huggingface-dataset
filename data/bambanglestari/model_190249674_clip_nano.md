@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bambanglestari/model_190249674_clip_nano` es una implementación a escala reducida de la arquitectura CLIP, orientada a tareas de aprendizaje contrastivo. Ha sido publicado por el usuario bambanglestari en HuggingFace y se distribuye bajo la licencia BSD-3-Clause. La información pública es mínima: se trata de un artefacto de código (un archivo Python) más que de un modelo preentrenado con pesos disponibles, por lo que su aplicabilidad práctica inmediata es limitada.
+El modelo `bambanglestari/model_190249674_clip_nano` es una implementación a escala reducida de la arquitectura CLIP, orientada a tareas de aprendizaje contrastivo. Ha sido publicado por el usuario bambanglestari en Hugging Face y se distribuye bajo la licencia BSD-3-Clause. La información pública es mínima: se trata de un artefacto de código (un archivo Python) más que de un modelo preentrenado con pesos disponibles, por lo que su aplicabilidad práctica inmediata es limitada.
 
 Aunque la etiqueta "nano" sugiere un diseño compacto, no se especifican el número de parámetros, la longitud de contexto, el tipo de pesos ni otros detalles arquitectónicos esenciales. El modelo parece ser un experimento de investigación o un prototipo, sin evidencias de uso en producción ni de benchmarks publicados.
 

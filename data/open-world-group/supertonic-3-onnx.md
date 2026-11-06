@@ -102,7 +102,7 @@ Como referencia cualitativa, la propuesta diferencial de este modelo es la ejecu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-world-group/Supertonic-3-ONNX
+- Hugging Face: https://huggingface.co/open-world-group/Supertonic-3-ONNX
 - Modelo base: https://huggingface.co/supertone-oss-archive/supertonic-3
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js
 - Los resultados de búsqueda web proporcionados no contienen enlaces relevantes sobre este modelo (corresponden a entidades no relacionadas); no se dispone de paper, blog, repositorio de código ni demo adicionales.

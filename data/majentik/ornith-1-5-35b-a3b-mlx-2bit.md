@@ -82,8 +82,8 @@ La comparativa se basa en los datos publicados para el modelo base. La variante 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/majentik/Ornith-1.5-35B-A3B-MLX-2bit
-- Modelo base en HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Modelo en Hugging Face: https://huggingface.co/majentik/Ornith-1.5-35B-A3B-MLX-2bit
+- Modelo base en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Variante 6-bit de primera parte: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-6bit
 - Otras variantes del autor: [majentik/Ornith-1.5-35B-A3B-MLX-3bit](https://huggingface.co/majentik/Ornith-1.5-35B-A3B-MLX-3bit), [majentik/Ornith-1.5-35B-A3B-MLX-5bit](https://huggingface.co/majentik/Ornith-1.5-35B-A3B-MLX-5bit), [majentik/Ornith-1.5-35B-A3B-MLX-MXFP4](https://huggingface.co/majentik/Ornith-1.5-35B-A3B-MLX-MXFP4)
 - Repositorio mlx-lm: https://github.com/ml-explore/mlx-lm

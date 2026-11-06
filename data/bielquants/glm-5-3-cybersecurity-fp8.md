@@ -73,10 +73,10 @@ No se han publicado en la información disponible resultados de HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-CYBERSECURITY-FP8 (este) | 753B totales, FP8, `glm_moe_dsa` | ~131K-160K prácticos; 1M declarado pero no operativo en vLLM | MMLU logit 86,65%; HB-320 no-copyright 80-84% TRUE_COMPLY | MIT | HuggingFace, safetensors, vLLM |
-| dealignai/GLM-5.3-UNCENSORED-FP8 (sibling) | mismo base (753B, FP8) según la card | no disponible | no disponible | no disponible en la información proporcionada | HuggingFace |
-| JANGQ-AI/GLM-5.3-FP8 (base de la cuantización) | 753B, FP8 | no disponible | no disponible | no disponible en la información proporcionada | HuggingFace |
-| zai-org/GLM-5.3 (upstream) | 753B, `glm_moe_dsa`, 78 capas, text-only | no disponible (el derivado cita 1M vía DCP) | baseline MMLU 85,58% según el autor | no disponible en la información proporcionada | HuggingFace |
+| GLM-5.3-CYBERSECURITY-FP8 (este) | 753B totales, FP8, `glm_moe_dsa` | ~131K-160K prácticos; 1M declarado pero no operativo en vLLM | MMLU logit 86,65%; HB-320 no-copyright 80-84% TRUE_COMPLY | MIT | Hugging Face, safetensors, vLLM |
+| dealignai/GLM-5.3-UNCENSORED-FP8 (sibling) | mismo base (753B, FP8) según la card | no disponible | no disponible | no disponible en la información proporcionada | Hugging Face |
+| JANGQ-AI/GLM-5.3-FP8 (base de la cuantización) | 753B, FP8 | no disponible | no disponible | no disponible en la información proporcionada | Hugging Face |
+| zai-org/GLM-5.3 (upstream) | 753B, `glm_moe_dsa`, 78 capas, text-only | no disponible (el derivado cita 1M vía DCP) | baseline MMLU 85,58% según el autor | no disponible en la información proporcionada | Hugging Face |
 
 La diferencia funcional clave frente al resto es el perfil de rechazo: el sibling UNCENSORED está pensado como uncensor general, mientras que este checkpoint restringe la reducción de rechazo al dominio de ciberseguridad y mantiene soft-refusals fuera de él.
 
@@ -96,7 +96,7 @@ La diferencia funcional clave frente al resto es el perfil de rechazo: el siblin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bielquants/GLM-5.3-CYBERSECURITY-FP8
+- Hugging Face: https://huggingface.co/bielquants/GLM-5.3-CYBERSECURITY-FP8
 - Modelo base (upstream): https://huggingface.co/zai-org/GLM-5.3
 - Base de la cuantización: https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
 - Sibling uncensor general: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8

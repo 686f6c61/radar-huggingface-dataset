@@ -72,8 +72,8 @@ Puntos debiles declarados por el autor: atributos `hypothetical` y `family` (F1 
 
 | Modelo | Parametros | Contexto | Rendimiento (F1 micro entidades, BPSD no visto) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClinicalEvidence GLiNER2.5 LoRA (este) | no disponible (LoRA r32/a64 sobre GLiNER2.5) | no disponible | 0,777 | uso no comercial, no redistribuir | HuggingFace |
-| `fastino/gliner2.5-base-v1` (modelo base sin adaptador) | no disponible | no disponible | 0,297 | no disponible | HuggingFace |
+| ClinicalEvidence GLiNER2.5 LoRA (este) | no disponible (LoRA r32/a64 sobre GLiNER2.5) | no disponible | 0,777 | uso no comercial, no redistribuir | Hugging Face |
+| `fastino/gliner2.5-base-v1` (modelo base sin adaptador) | no disponible | no disponible | 0,297 | no disponible | Hugging Face |
 | Otros extractores NER clinicos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni especificaciones de modelos comparables adicionales en la informacion proporcionada.
@@ -92,5 +92,5 @@ No se dispone de datos de benchmarks ni especificaciones de modelos comparables 
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/na399/gliner2.5-clinical-evidence-lora-p4
+- Hugging Face del adaptador: https://huggingface.co/na399/gliner2.5-clinical-evidence-lora-p4
 - Modelo base: https://huggingface.co/fastino/gliner2.5-base-v1

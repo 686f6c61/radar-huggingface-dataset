@@ -2,7 +2,7 @@
 
 ## Resumen
 
-eqm es una politica de robotica (policy) entrenada y publicada en HuggingFace Hub mediante LeRobot, la libreria de aprendizaje por imitacion de HuggingFace. El checkpoint se identifica como `iFaz/eqm-aloha_transfer_cube-seed3-14sep2026_12pm` y esta asociado al dataset `lerobot/aloha_sim_transfer_cube_human`, es decir, demostraciones humanas sobre la tarea de transferencia de cubo en el simulador ALOHA. No se trata de un modelo de lenguaje: es un modelo de control visuomotor que mapea observaciones (imagenes de camaras e informacion de estado del robot) a acciones de brazo robotico.
+eqm es una politica de robotica (policy) entrenada y publicada en Hugging Face Hub mediante LeRobot, la libreria de aprendizaje por imitacion de Hugging Face. El checkpoint se identifica como `iFaz/eqm-aloha_transfer_cube-seed3-14sep2026_12pm` y esta asociado al dataset `lerobot/aloha_sim_transfer_cube_human`, es decir, demostraciones humanas sobre la tarea de transferencia de cubo en el simulador ALOHA. No se trata de un modelo de lenguaje: es un modelo de control visuomotor que mapea observaciones (imagenes de camaras e informacion de estado del robot) a acciones de brazo robotico.
 
 El modelo tiene 18.701.190 parametros reales en formato safetensors, ocupa 0,1 GB en el repositorio y se distribuye bajo licencia Apache-2.0. El nombre del checkpoint incluye el identificador de semilla (`seed3`) y una marca temporal (`14sep2026_12pm`), lo que sugiere que forma parte de una bateria de experimentos reproducibles con distintas semillas sobre la misma tarea. La model card publicada es la plantilla generica de LeRobot y no documenta detalles propios de esta politica: indica explicitamente "Model type not recognized" y no describe ni la arquitectura concreta ni los hiperparametros de entrenamiento.
 
@@ -96,7 +96,7 @@ Nota: los tres modelos alternativos se citan por ser las referencias mas habitua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iFaz/eqm-aloha_transfer_cube-seed3-14sep2026_12pm
+- Modelo en Hugging Face: https://huggingface.co/iFaz/eqm-aloha_transfer_cube-seed3-14sep2026_12pm
 - Dataset asociado: https://huggingface.co/datasets/lerobot/aloha_sim_transfer_cube_human
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index

@@ -76,10 +76,10 @@ La model card no publica cifras desglosadas por clase ni puntuaciones numéricas
 
 | Modelo | Parametros | Tipo | Rendimiento en SID-Set | Rendimiento en RRDataset (zero-shot) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MoE-JEPA (`ce_only`) | 379 M activos | Detector forense ViT + MoE | Estado del arte según el autor | 84,11 % global, primera posición | MIT | Pesos abiertos en HuggingFace (0 descargas, 0 likes) |
+| MoE-JEPA (`ce_only`) | 379 M activos | Detector forense ViT + MoE | Estado del arte según el autor | 84,11 % global, primera posición | MIT | Pesos abiertos en Hugging Face (0 descargas, 0 likes) |
 | SIDA-13B | ≈13 B (≈30× mayor) | Detector forense | Inferior a MoE-JEPA según el autor | no disponible | no disponible | no disponible |
 | GPT-4o, Claude-3.7, Gemini-2, Grok-2 | no disponible | Modelos visión-lenguaje generalistas, zero-shot | no evaluados | Por debajo de MoE-JEPA (sin cifras publicadas) | Propietaria | APIs comerciales |
-| `facebook/vjepa2-vitl-fpc64-256` | no disponible | Backbone auto-supervisado de visión | no es un detector forense | no aplica | no indicada en la model card | Pesos abiertos en HuggingFace |
+| `facebook/vjepa2-vitl-fpc64-256` | no disponible | Backbone auto-supervisado de visión | no es un detector forense | no aplica | no indicada en la model card | Pesos abiertos en Hugging Face |
 
 La comparación con los modelos visión-lenguaje es asimétrica: se trata de modelos generalistas evaluados en zero-shot, no de detectores forenses especializados. La model card no ofrece cifras numéricas de ninguno de los competidores.
 
@@ -99,7 +99,7 @@ La comparación con los modelos visión-lenguaje es asimétrica: se trata de mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/simoneteglia/MoE-JEPA
+- Modelo en Hugging Face: https://huggingface.co/simoneteglia/MoE-JEPA
 - Modelo base: https://huggingface.co/facebook/vjepa2-vitl-fpc64-256
 - Dataset SID-Set: https://huggingface.co/datasets/saberzl/SID_Set
 - Repositorio de código: https://github.com/ALCOR-Lab-DIAG/MoE-JEPA

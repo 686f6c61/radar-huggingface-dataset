@@ -69,9 +69,9 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (BSF DINOv3/Imagenette, smoke) | Autoencoder disperso por bloques sobre ViT congelado | 231.978 | no aplica | MIT (pesos BSF) | HuggingFace, 34 descargas |
+| Este modelo (BSF DINOv3/Imagenette, smoke) | Autoencoder disperso por bloques sobre ViT congelado | 231.978 | no aplica | MIT (pesos BSF) | Hugging Face, 34 descargas |
 | `goodfire-ai/block-sparse-featurizer` | Implementación de referencia de BSF | no disponible | no aplica | no disponible | GitHub |
-| `facebook/dinov3-vitb16-pretrain-lvd1689m` | ViT-B/16 auto-supervisado | no disponible en la información | no aplica | licencia propia de DINOv3 | HuggingFace |
+| `facebook/dinov3-vitb16-pretrain-lvd1689m` | ViT-B/16 auto-supervisado | no disponible en la información | no aplica | licencia propia de DINOv3 | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-smoke-block-kl-mse-seed100
+- Hugging Face: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-smoke-block-kl-mse-seed100
 - Repositorio del proyecto: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers
 - Preregistro: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers/blob/main/docs/preregistration.md
 - Paper BSF: https://arxiv.org/abs/2606.25234

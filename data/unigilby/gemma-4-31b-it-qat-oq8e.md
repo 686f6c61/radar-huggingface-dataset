@@ -92,7 +92,7 @@ Alternativas de otros fabricantes con parametros y contexto similares: no dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unigilby/gemma-4-31B-it-qat-oQ8e
+- Modelo en Hugging Face: https://huggingface.co/unigilby/gemma-4-31B-it-qat-oQ8e
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it-qat-q4_0-unquantized
 - oMLX (herramienta de cuantizacion): https://github.com/jundot/omlx
 - TensorFold (runtime de decodificacion especulativa): https://github.com/ashhart/TensorFold

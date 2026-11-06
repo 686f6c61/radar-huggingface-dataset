@@ -62,9 +62,9 @@ No se dispone de datos comparativos publicados. El adaptador es una liberación 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hfunknown/qwen3-8b-rule_diagnosis-lora-persistent | LoRA sobre Qwen3-8B | ~0.7 GB (adaptador) | 16 384 | no disponible | HuggingFace |
-| AutomatedScientist/qwen3-8b-persistent-rule_diagnosis-lora | LoRA sobre Qwen3-8B | similar | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3-8B | Modelo base denso | 8B | 32 768 | Apache 2.0 | HuggingFace |
+| hfunknown/qwen3-8b-rule_diagnosis-lora-persistent | LoRA sobre Qwen3-8B | ~0.7 GB (adaptador) | 16 384 | no disponible | Hugging Face |
+| AutomatedScientist/qwen3-8b-persistent-rule_diagnosis-lora | LoRA sobre Qwen3-8B | similar | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3-8B | Modelo base denso | 8B | 32 768 | Apache 2.0 | Hugging Face |
 
 El adaptador hermano (`AutomatedScientist`) parece ser una versión alternativa del mismo experimento, aunque no se confirma si es idéntico o una variante. El modelo base Qwen3-8B es la referencia natural para medir el impacto del fine-tuning, pero no se han publicado comparativas.
 
@@ -80,7 +80,7 @@ El adaptador hermano (`AutomatedScientist`) parece ser una versión alternativa 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del adaptador](https://huggingface.co/hfunknown/qwen3-8b-rule_diagnosis-lora-persistent)
+- [Repositorio Hugging Face del adaptador](https://huggingface.co/hfunknown/qwen3-8b-rule_diagnosis-lora-persistent)
 - [Modelo base Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B)
 - [Technical report de Qwen3 (arXiv)](https://arxiv.org/html/2505.09388v1)
 - [Adaptador hermano (AutomatedScientist)](https://huggingface.co/AutomatedScientist/qwen3-8b-persistent-rule_diagnosis-lora)

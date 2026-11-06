@@ -58,6 +58,6 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 - No se recomienda su uso en producción para aplicaciones comerciales o públicas sin supervisión humana estricta.
 
 ## Enlaces
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Dark-Nexus-32B-v2.0-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Dark-Nexus-32B-v2.0-GGUF
 - Modelo original (ReadyArt): https://huggingface.co/ReadyArt/Dark-Nexus-32B-v2.0
 - Página de ayuda de mradermacher para solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests

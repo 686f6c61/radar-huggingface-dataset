@@ -70,5 +70,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Speedymule/lumiar3.0-4b
+- Hugging Face: https://huggingface.co/Speedymule/lumiar3.0-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

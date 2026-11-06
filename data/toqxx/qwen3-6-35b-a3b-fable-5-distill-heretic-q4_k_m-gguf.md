@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento del modelo ni de especificaciones completa
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizacion GGUF): https://huggingface.co/toqxx/Qwen3.6-35B-A3B-Fable-5-Distill-heretic-Q4_K_M-GGUF
+- Repositorio Hugging Face (cuantizacion GGUF): https://huggingface.co/toqxx/Qwen3.6-35B-A3B-Fable-5-Distill-heretic-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Authereon/Qwen3.6-35B-A3B-Fable-5-Distill-heretic
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

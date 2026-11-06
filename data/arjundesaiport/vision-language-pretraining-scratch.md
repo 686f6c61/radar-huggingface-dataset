@@ -76,6 +76,6 @@ No disponible. No existen modelos comparables porque el repositorio no contiene 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arjundesaiport/vision-language-pretraining-scratch
+- Hugging Face: https://huggingface.co/arjundesaiport/vision-language-pretraining-scratch
 - Los resultados de busqueda web obtenidos no contienen informacion relevante sobre este repositorio; unicamente apuntan a paginas generales de ChatGPT y GPT-4 de OpenAI, sin relacion con el modelo descrito.
 - Paper, blog, repositorio de codigo o demo: no disponibles.

@@ -81,11 +81,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyzovaTech/Alphi-v1
+- Modelo en Hugging Face: https://huggingface.co/RyzovaTech/Alphi-v1
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Descarga de GGUF: https://huggingface.co/RyzovaTech/Alphi-v1/tree/main/gguf/v1
 - Licencia por componentes: https://huggingface.co/RyzovaTech/Alphi-v1/blob/main/LICENSING.md
 - Pagina de Alphi: https://www.ryzova.com/ai/alphi
 - Pagina de Ryzova AI: https://www.ryzova.com/ai
 - Paper tecnico (DOI Zenodo): https://doi.org/10.5281/zenodo.22942971
-- DOI HuggingFace: https://doi.org/10.57967/hf/11373
+- DOI Hugging Face: https://doi.org/10.57967/hf/11373

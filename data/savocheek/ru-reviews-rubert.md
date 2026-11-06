@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| savocheek/ru-reviews-rubert | 178.309.635 | no disponible | Clasificación multi-tarea de reseñas en ruso | MIT | HuggingFace, ONNX int8 |
+| savocheek/ru-reviews-rubert | 178.309.635 | no disponible | Clasificación multi-tarea de reseñas en ruso | MIT | Hugging Face, ONNX int8 |
 | Profesor multi-tarea ruRoberta-large (referenciado en la model card) | no disponible | no disponible | Clasificación multi-tarea de reseñas en ruso | no disponible | no disponible (no se indica identificador) |
-| ai-forever/ruBert-base (modelo base) | no disponible | no disponible | Representaciones y clasificación en ruso | no disponible | HuggingFace |
+| ai-forever/ruBert-base (modelo base) | no disponible | no disponible | Representaciones y clasificación en ruso | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, salvo los del profesor que aparecen en la tabla de benchmarks. No se han identificado otras alternativas comparables en la información disponible.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/savocheek/ru-reviews-rubert
+- Modelo en Hugging Face: https://huggingface.co/savocheek/ru-reviews-rubert
 - Demo (Space): https://huggingface.co/spaces/savocheek/ru-reviews-demo
 - Código y detalles de entrenamiento (GitHub): https://github.com/savocheek/sentiment-analysis-ru
 - Modelo base: https://huggingface.co/ai-forever/ruBert-base

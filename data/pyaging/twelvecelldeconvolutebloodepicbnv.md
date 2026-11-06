@@ -76,6 +76,6 @@ No se dispone de información suficiente para una comparativa cuantitativa con o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pyaging/twelvecelldeconvolutebloodepicbnv
+- Hugging Face: https://huggingface.co/pyaging/twelvecelldeconvolutebloodepicbnv
 - Paper original (Salas et al., 2022): https://doi.org/10.1038/s41467-021-27864-7
 - Documentación de pyaging: https://pyaging.readthedocs.io

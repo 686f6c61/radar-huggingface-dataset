@@ -2,7 +2,7 @@
 
 ## Resumen
 
-t1-nsfw-fp32 es un clasificador de imágenes publicado por ECE-Software en HuggingFace, orientado a la detección de contenido NSFW (not safe for work) y gore. Se distribuye como un fichero ONNX en precisión FP32 de 13,14 MB, lo que lo sitúa en la categoría de modelos muy ligeros, aptos para ejecutarse en CPU dentro de un servidor. No es un modelo generativo ni un modelo de lenguaje: es un clasificador de visión por computador con tres clases de salida (NSFL, NSFW y SFW) y un umbral de decisión documentado de 0,5.
+t1-nsfw-fp32 es un clasificador de imágenes publicado por ECE-Software en Hugging Face, orientado a la detección de contenido NSFW (not safe for work) y gore. Se distribuye como un fichero ONNX en precisión FP32 de 13,14 MB, lo que lo sitúa en la categoría de modelos muy ligeros, aptos para ejecutarse en CPU dentro de un servidor. No es un modelo generativo ni un modelo de lenguaje: es un clasificador de visión por computador con tres clases de salida (NSFL, NSFW y SFW) y un umbral de decisión documentado de 0,5.
 
 El modelo se presenta como parte de una arquitectura de moderación por niveles o tiers: t1-nsfw-fp32 corresponde al tier T1, mientras que la model card menciona un modelo T0 en INT8. Según el autor, el modelo se ejecuta en el lado servidor sobre el 100 % de las subidas y detecta las imágenes NSFW que el modelo T0 INT8 dejaba pasar (concretamente, afirma cubrir las 16 imágenes NSFW que T0 no detectó). Esta estrategia de cascada —un filtro rápido en primera línea y un clasificador más costoso en segunda— es habitual en pipelines de moderación a gran escala.
 
@@ -79,7 +79,7 @@ No se dispone de informacion sobre alternativas comparables en el material propo
 
 | Modelo | Tipo | Tamano | Clases | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ECE-Software/t1-nsfw-fp32 | Clasificador de imagen ONNX FP32 | 13,14 MB | NSFL / NSFW / SFW | Apache-2.0 | HuggingFace |
+| ECE-Software/t1-nsfw-fp32 | Clasificador de imagen ONNX FP32 | 13,14 MB | NSFL / NSFW / SFW | Apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se dispone de informacion sobre alternativas comparables en el material propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ECE-Software/t1-nsfw-fp32
+- Modelo en Hugging Face: https://huggingface.co/ECE-Software/t1-nsfw-fp32
 - Paper, blog o repositorio asociado: no disponible en la informacion proporcionada
 - Demo o espacio de inferencia: no disponible
 - Resultados de la busqueda web: los unicos resultados obtenidos corresponden a la ECE (Ecole Centrale d'Electronique, escuela de ingenieria francesa) y no guardan relacion con el modelo ni con su autor.

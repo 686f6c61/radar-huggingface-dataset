@@ -91,7 +91,7 @@ La comparación con alternativas de otros fabricantes (Gemma, Llama, Phi en rang
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/Qwen3.5-4B
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Qwen3.5-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Variante 0.8B del mismo autor: https://huggingface.co/litert-community/Qwen3.5-0.8B
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm

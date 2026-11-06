@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en benchma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-8B-VL
+- Hugging Face: https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-8B-VL
 - Documentación SEA-LION: https://docs.sea-lion.ai/models/sea-lion-v4/qwen-sea-lion-v4-vl
 - Colección SEA-LION v4: https://huggingface.co/collections/aisingapore/sea-lion-v4
 - Paper SEA-HELM: https://arxiv.org/abs/2502.14301

@@ -72,5 +72,5 @@ No se dispone de datos comparativos publicados. El modelo compite en el espacio 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/voicing-ai/voicing-ear-v5-ASR-cpu
+- Modelo en Hugging Face: https://huggingface.co/voicing-ai/voicing-ear-v5-ASR-cpu
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código) en la búsqueda web.

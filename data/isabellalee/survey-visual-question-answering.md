@@ -4,7 +4,7 @@
 
 `isabellalee/survey-visual-question-answering` no es un modelo entrenado, sino un repositorio de notas de investigación (*research notes*) sobre el problema de *Visual Question Answering* (VQA). La propia model card lo declara explícitamente: contiene un `analysis.md` con el alcance de la pregunta de investigación, posibles factores de confusión, una propuesta de comparación con baselines emparejados, contexto de evaluación (VQAv2, GQA, OK-VQA) y comprobaciones de reproducibilidad. No se publica checkpoint entrenado, código de inferencia, resultados de ablaciones ni mejoras de benchmark.
 
-Los metadatos de HuggingFace asignan al repositorio el pipeline `visual-question-answering` y declaran un total de 24.832 parámetros en safetensors, con un tamaño de repositorio de 0,0 GB. Ese volumen de parámetros (veinticuatro mil, no millones) es incompatible con cualquier sistema VQA funcional descrito en la literatura: es coherente con un artefacto de prueba o un fichero residual, no con un modelo utilizable. La licencia es CC-BY-4.0 y el repositorio no declara idiomas soportados.
+Los metadatos de Hugging Face asignan al repositorio el pipeline `visual-question-answering` y declaran un total de 24.832 parámetros en safetensors, con un tamaño de repositorio de 0,0 GB. Ese volumen de parámetros (veinticuatro mil, no millones) es incompatible con cualquier sistema VQA funcional descrito en la literatura: es coherente con un artefacto de prueba o un fichero residual, no con un modelo utilizable. La licencia es CC-BY-4.0 y el repositorio no declara idiomas soportados.
 
 Su relevancia actual es metodológica, no técnica: ejemplifica una práctica sana de documentación de investigación (separar hipótesis de resultados, exigir dataset, comandos, semillas, hardware y logs crudos antes de publicar cifras). Resulta útil como plantilla y como caso de estudio sobre cómo auditar afirmaciones en repositorios de modelos, pero no debe descargarse esperando un sistema de respuesta visual a preguntas.
 
@@ -17,7 +17,7 @@ Su relevancia actual es metodológica, no técnica: ejemplifica una práctica sa
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (campo de idiomas vacío en HuggingFace) |
+| Idiomas soportados | no disponible (campo de idiomas vacío en Hugging Face) |
 | Licencia | cc-by-4.0 |
 | Formato de pesos | safetensors (declarado en los tags; el contenido es un artefacto de 0,0 GB sin arquitectura asociada) |
 | Tipo de artefacto | notas de investigación; artefacto principal `analysis.md` |
@@ -29,7 +29,7 @@ Su relevancia actual es metodológica, no técnica: ejemplifica una práctica sa
 
 ## Arquitectura y entrenamiento
 
-No hay arquitectura definida. El repositorio no incluye `config.json` con hiperparámetros de un transformer, ni código de modelo, ni tokenizador, ni procesador de imagen. El tag `transformer` de HuggingFace es una etiqueta de clasificación del repositorio, no una descripción de diseño. Los 24.832 parámetros declarados en safetensors no se corresponden con ninguna topología descrita en la model card, y el tamaño de repositorio de 0,0 GB sugiere un fichero mínimo o un residuo de plantilla.
+No hay arquitectura definida. El repositorio no incluye `config.json` con hiperparámetros de un transformer, ni código de modelo, ni tokenizador, ni procesador de imagen. El tag `transformer` de Hugging Face es una etiqueta de clasificación del repositorio, no una descripción de diseño. Los 24.832 parámetros declarados en safetensors no se corresponden con ninguna topología descrita en la model card, y el tamaño de repositorio de 0,0 GB sugiere un fichero mínimo o un residuo de plantilla.
 
 Tampoco existe entrenamiento: la model card afirma que la nota "no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado". El contenido previsto es una propuesta de estudio: definición del alcance de la pregunta de investigación, identificación de confounders, comparación con baselines emparejados y criterios de reproducibilidad. Los conjuntos de datos que se citan como contexto de evaluación son VQAv2, GQA y OK-VQA, pero no se aportan versiones de dataset, comandos, semillas, hardware ni logs, precisamente porque el estudio no se ha ejecutado.
 
@@ -49,7 +49,7 @@ Tampoco existe entrenamiento: la model card afirma que la nota "no reclama mejor
 
 - Diseño de un protocolo de evaluación en VQA: usar `analysis.md` como lista de comprobación para fijar versiones de dataset (VQAv2, GQA, OK-VQA), métricas y criterios de emparejamiento de baselines antes de lanzar experimentos. Es adecuado porque el documento está estructurado justo con ese propósito y evita fijar cifras prematuras.
 - Pre-registro de un experimento: emplear la propuesta de comparación con baselines emparejados como borrador de pre-registro, añadiendo semillas, hardware y comandos antes de ejecutar. Encaja porque la model card exige explícitamente esos campos para cualquier resultado futuro.
-- Auditoría de repositorios de modelos: servir de ejemplo de buena práctica al separar secciones etiquetadas como planes o hipótesis de las que contienen resultados verificados. Útil en revisiones internas de equipos que publican en HuggingFace.
+- Auditoría de repositorios de modelos: servir de ejemplo de buena práctica al separar secciones etiquetadas como planes o hipótesis de las que contienen resultados verificados. Útil en revisiones internas de equipos que publican en Hugging Face.
 - Plantilla de documentación para grupos de investigación: reutilizar la estructura (alcance, confounders, baselines, contexto de evaluación, reproducibilidad, modos de fallo, preguntas abiertas) como esqueleto de nuevas model cards de proyectos en curso.
 - Seminario o docencia en metodología de evaluación: usar el repositorio como caso práctico de por qué no debe interpretarse un pipeline declarado como evidencia de un modelo funcional. Se apoya en la contradicción entre el tag `visual-question-answering`, los 24.832 parámetros y la ausencia de checkpoint.
 - Revisión bibliográfica inicial: partir de las referencias temáticas citadas para localizar trabajo previo en VQA antes de construir un estado del arte propio. Adecuado como punto de arranque acotado, no como fuente de resultados.
@@ -99,6 +99,6 @@ No es posible establecer una comparativa de rendimiento: el repositorio no es un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/isabellalee/survey-visual-question-answering
+- Repositorio en Hugging Face: https://huggingface.co/isabellalee/survey-visual-question-answering
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: los resultados obtenidos corresponden a páginas no relacionadas (perfil de Arcot Sowmya en UNSW, página de investigación de CTCN, perfil de LinkedIn de Isabella Lee, guía metodológica de Radiology y un informe de McKinsey) y no aportan documentación técnica, paper ni demo del repositorio.
 - Paper, blog, repositorio de código y demo: no disponibles en la información proporcionada.

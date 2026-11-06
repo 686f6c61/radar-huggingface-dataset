@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyModelCleanCP2SFT_SEARCH es un modelo multimodal de tipo image-text-to-text publicado por el usuario AlexHung29629 en HuggingFace. Segun los metadatos del repositorio, se trata de un ajuste fino (fine-tuning) supervisado derivado de la familia Gemma 4, con 25.805.933.872 parametros totales en formato safetensors y un tamano de repositorio de 53,1 GB. La nomenclatura del identificador sugiere un proceso de SFT (supervised fine-tuning) sobre un dataset de busqueda (`search-sft-clean.jsonl`) y un pipeline de limpieza previo ("CleanCP2").
+MyModelCleanCP2SFT_SEARCH es un modelo multimodal de tipo image-text-to-text publicado por el usuario AlexHung29629 en Hugging Face. Segun los metadatos del repositorio, se trata de un ajuste fino (fine-tuning) supervisado derivado de la familia Gemma 4, con 25.805.933.872 parametros totales en formato safetensors y un tamano de repositorio de 53,1 GB. La nomenclatura del identificador sugiere un proceso de SFT (supervised fine-tuning) sobre un dataset de busqueda (`search-sft-clean.jsonl`) y un pipeline de limpieza previo ("CleanCP2").
 
 El modelo se distribuye bajo acceso restringido (gated), lo que implica que cualquier uso requiere aceptar condiciones en la plataforma. La model card no declara licencia, idiomas soportados ni resultados de benchmarks; el unico bloque model-index presente contiene una entrada con nombre de experimento pero la lista de resultados vacia. Esto limita severamente cualquier evaluacion objetiva de su rendimiento.
 
@@ -36,7 +36,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 - Generacion de texto conversacional multi-turno, segun el tag `conversational`.
 - Procesamiento de imagenes y texto combinados (pipeline image-text-to-text), lo que permite responder preguntas sobre imagenes.
 - Ajuste especifico para tareas de busqueda, segun el dataset de entrenamiento declarado (`search-sft-clean.jsonl`).
-- Compatibilidad con endpoints de inferencia (`endpoints_compatible`), lo que facilita su despliegue mediante la Inference API de HuggingFace.
+- Compatibilidad con endpoints de inferencia (`endpoints_compatible`), lo que facilita su despliegue mediante la Inference API de Hugging Face.
 - Integracion con el ecosistema transformers y registro de metricas en TensorBoard durante el entrenamiento.
 - No se documentan capacidades de tool calling, function calling, agentes multi-paso, modo thinking, audio ni otras modalidades mas alla de imagen y texto.
 
@@ -78,7 +78,7 @@ La comparativa es estructural: no existen datos de rendimiento publicados para e
 - Ausencia total de model card tecnica: no se documentan datos de entrenamiento, hiperparametros, composicion del dataset ni proceso de alineacion.
 - Sin resultados de benchmarks: no es posible verificar calidad, razonamiento, codigo ni capacidades multimodales frente a alternativas.
 - Licencia no declarada: el uso comercial es incierto y requiere contactar con el autor o revisar las condiciones del acceso gated.
-- Acceso restringido: la distribucion y el despliegue estan sujetos a la aprobacion del autor en HuggingFace, lo que limita la reproducibilidad.
+- Acceso restringido: la distribucion y el despliegue estan sujetos a la aprobacion del autor en Hugging Face, lo que limita la reproducibilidad.
 - Riesgo de alucinacion y sesgos: al no haber documentacion sobre filtrado de datos ni evaluaciones de seguridad, se deben asumir los riesgos habituales de un fine-tuning sin auditoria publica.
 - Idiomas no declarados: no se garantiza soporte de castellano ni de otros idiomas distintos del presente en el dataset de entrenamiento.
 - Contexto desconocido: no se puede planificar su uso en tareas de contexto largo sin informacion oficial.
@@ -87,5 +87,5 @@ La comparativa es estructural: no existen datos de rendimiento publicados para e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlexHung29629/MyModelCleanCP2SFT_SEARCH
+- Hugging Face: https://huggingface.co/AlexHung29629/MyModelCleanCP2SFT_SEARCH
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la busqueda web proporcionada.

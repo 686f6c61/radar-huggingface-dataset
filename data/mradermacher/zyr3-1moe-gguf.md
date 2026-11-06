@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene las cuantizaciones GGUF del modelo `ZYR3.1MoE`, cuyo checkpoint original pertenece a `zyr-AGENT` y ha sido convertido a GGUF por `mradermacher`. El modelo esta etiquetado en HuggingFace como `text-generation`, con tags de `multi-agent`, `agent-orchestration` y `moe-orchestration`, lo que sugiere que esta pensado para generacion de texto y para coordinar agentes en sistemas compuestos. No se ha publicado informacion tecnica detallada en la model card disponible; el unico dato numerico objetivo es el total de parametros del checkpoint safetensors, que asciende a 8.953.803.264 (8,95 mil millones). El repositorio ocupa 81,4 GB y contiene 12 ficheros GGUF con distintos niveles de cuantizacion, desde Q2_K hasta f16.
+Este repositorio contiene las cuantizaciones GGUF del modelo `ZYR3.1MoE`, cuyo checkpoint original pertenece a `zyr-AGENT` y ha sido convertido a GGUF por `mradermacher`. El modelo esta etiquetado en Hugging Face como `text-generation`, con tags de `multi-agent`, `agent-orchestration` y `moe-orchestration`, lo que sugiere que esta pensado para generacion de texto y para coordinar agentes en sistemas compuestos. No se ha publicado informacion tecnica detallada en la model card disponible; el unico dato numerico objetivo es el total de parametros del checkpoint safetensors, que asciende a 8.953.803.264 (8,95 mil millones). El repositorio ocupa 81,4 GB y contiene 12 ficheros GGUF con distintos niveles de cuantizacion, desde Q2_K hasta f16.
 
 La presente ficha se centra en los ficheros GGUF publicados por `mradermacher`. El archivo Q4_K_M ocupa 5,7 GB y puede ejecutarse en GPUs de consumo con 8-12 GB de VRAM, lo que lo hace viable para pruebas locales. Sin embargo, al no disponer del model card original de `zyr-AGENT`, cualquier afirmacion sobre capacidades reales o calidad del modelo debe tomarse con cautela. Tampoco existen benchmarks publicados en la informacion proporcionada.
 
@@ -29,7 +29,7 @@ Tampoco se han publicado detalles sobre el dataset de entrenamiento, el numero d
 
 Capacidades identificables en los metadatos:
 
-- Generacion de texto: el modelo esta registrado con el pipeline `text-generation` de HuggingFace, lo que indica su capacidad para generar texto en ingles.
+- Generacion de texto: el modelo esta registrado con el pipeline `text-generation` de Hugging Face, lo que indica su capacidad para generar texto en ingles.
 - Multi-agente y orquestacion de agentes: los tags `multi-agent`, `agent-orchestration` y `moe-orchestration` indican que el modelo ha sido etiquetado para coordinar agentes o flujos de trabajo compuestos.
 - Idioma soportado: la model card declara `en` (ingles); no hay confirmacion oficial de soporte para otros idiomas.
 
@@ -90,6 +90,6 @@ No disponible. No se han proporcionado datos comparables de otros modelos en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/ZYR3.1MoE-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/ZYR3.1MoE-GGUF
 - Variante imatrix: https://huggingface.co/mradermacher/ZYR3.1MoE-i1-GGUF
 - Modelo base (identificador): `zyr-AGENT/ZYR3.1MoE`; no se proporciona un enlace directo en la informacion disponible.

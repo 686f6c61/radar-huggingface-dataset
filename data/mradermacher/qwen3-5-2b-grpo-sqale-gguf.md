@@ -96,8 +96,8 @@ No se dispone de datos de benchmarks ni de modelos comparables identificados en 
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/qwen3.5-2b-grpo-sqale-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/trl-lab/qwen3.5-2b-grpo-sqale
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/qwen3.5-2b-grpo-sqale-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/trl-lab/qwen3.5-2b-grpo-sqale
 - Dataset SQaLe-2 text-to-SQL Queries: https://huggingface.co/datasets/trl-lab/SQaLe-2-text-to-SQL-Queries
 - Dataset SQaLe-2 text-to-SQL Schemas: https://huggingface.co/datasets/trl-lab/SQaLe-2-text-to-SQL-Schemas
 - Pagina de resumen del autor para este modelo: https://hf.tst.eu/model#qwen3.5-2b-grpo-sqale-GGUF

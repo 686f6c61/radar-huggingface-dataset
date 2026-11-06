@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `G21998/r1019-26d7cf3c-z-image-zbx3-s69-94f21b9c` es un artefacto alojado en HuggingFace por el usuario G21998, etiquetado como `sn56-replay`, `private` y con licencia `other`. La model card lo describe explicitamente como un "registro de investigacion privado, no una entrega" (private research record, not a submission), correspondiente a una celda de replay de un experimento de entrenamiento con identificador de tarea `26d7cf3c`, brazo `zbx3`, semilla `69` y arbol `94f21b9c`. El nombre del repositorio y los metadatos apuntan a un volcado de artefactos de entrenamiento (checkpoints y logs de replay) mas que a un modelo publicado para uso general.
+El modelo identificado como `G21998/r1019-26d7cf3c-z-image-zbx3-s69-94f21b9c` es un artefacto alojado en Hugging Face por el usuario G21998, etiquetado como `sn56-replay`, `private` y con licencia `other`. La model card lo describe explicitamente como un "registro de investigacion privado, no una entrega" (private research record, not a submission), correspondiente a una celda de replay de un experimento de entrenamiento con identificador de tarea `26d7cf3c`, brazo `zbx3`, semilla `69` y arbol `94f21b9c`. El nombre del repositorio y los metadatos apuntan a un volcado de artefactos de entrenamiento (checkpoints y logs de replay) mas que a un modelo publicado para uso general.
 
 El contenido incluye un artefacto con hash SHA-256 `8b6b1152`, un hash de identidad `2ef4d59f`, un valor de cuota de 23 y 6 miembros en el conjunto de artefactos. La model card menciona un arnes de validacion "sin Docker" fiel al validador (LOCK replay-1019), con directorios `checkpoints/` (lo que el validador subiria) y `replay/` (logs y registros). El tamano del repositorio es de 4,2 GB.
 
@@ -84,4 +84,4 @@ No disponible. No se dispone de informacion sobre la arquitectura, el tamano o l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s69-94f21b9c
+- Repositorio en Hugging Face: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s69-94f21b9c

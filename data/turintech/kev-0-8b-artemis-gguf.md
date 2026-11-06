@@ -64,7 +64,7 @@ Como referencia declarada en la model card, la cuantización Q8_0 de ggml-org (0
 - VRAM estimada para inferencia: pico de 5,2 GiB medido en una NVIDIA A100-SXM4-80GB con la configuración recomendada (`-c 16384 -ub 4096 -b 4096 -np 1`); el archivo Q6_K pesa 0,620 GB, por lo que gran parte de la memoria corresponde al contexto y buffers de llama.cpp.
 - GPU recomendada: cualquier GPU CUDA moderna; los datos publicados provienen de una NVIDIA A100-SXM4-80GB. No se han publicado mediciones en otras GPUs.
 - Consumer GPUs: por tamaño (0,62 GB de pesos y pico de 5,2 GiB en inferencia), debería funcionar sin problemas en GPUs de consumo con 6 GB de VRAM o más (por ejemplo, RTX 3060, RTX 4060 o superiores), aunque no hay mediciones oficiales en estas tarjetas.
-- Despliegue: llama.cpp (versión b11540 o posterior, probado en el commit `1e6f04a`, compilado para CUDA) mediante `llama-server` y el endpoint `/v1/systemone`; también disponible paquete oficial en Ollama (`turintech/kev-0.8b-artemis:q6_k`). No se recomienda ejecutarlo como modelo de chat vía el botón de llama.cpp de HuggingFace; LM Studio requiere importar el archivo con los ajustes de contexto y batch manuales.
+- Despliegue: llama.cpp (versión b11540 o posterior, probado en el commit `1e6f04a`, compilado para CUDA) mediante `llama-server` y el endpoint `/v1/systemone`; también disponible paquete oficial en Ollama (`turintech/kev-0.8b-artemis:q6_k`). No se recomienda ejecutarlo como modelo de chat vía el botón de llama.cpp de Hugging Face; LM Studio requiere importar el archivo con los ajustes de contexto y batch manuales.
 - Latencia y throughput: no disponibles como cifras concretas; el modelo produce respuestas en una sola pasada con 0 tokens de salida, lo que implica latencias muy bajas.
 
 ## Comparativa con modelos similares
@@ -95,7 +95,7 @@ Frente a un LLM generalista pequeño, Kev-0.8B no genera texto sino probabilidad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/turintech/Kev-0.8B-Artemis-GGUF
+- Modelo en Hugging Face: https://huggingface.co/turintech/Kev-0.8B-Artemis-GGUF
 - Modelo base: https://huggingface.co/jaredpalmer/kev-0.8b
 - Web de TurinTech: https://turintech.ai
 - Hilo de feedback de TurinTech: https://huggingface.co/spaces/turintech/README/discussions/1

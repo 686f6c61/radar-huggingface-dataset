@@ -43,7 +43,7 @@ No se documenta la arquitectura interna más allá de su pertenencia a la famili
 - Razonamiento aritmético y matemático básico a medio: GSM8K 0,90 y MMLU de 4 materias 0,7489.
 - Coherencia sostenida en decodificación greedy: 0 bucles y 0 repeticiones en el banco de decodificación de 32 filas.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente multi-paso, visión o audio: no disponibles en la información proporcionada. El tag `endpoints_compatible` sugiere compatibilidad con la API de endpoints de HuggingFace, sin más detalle.
+- Capacidades de agente multi-paso, visión o audio: no disponibles en la información proporcionada. El tag `endpoints_compatible` sugiere compatibilidad con la API de endpoints de Hugging Face, sin más detalle.
 
 ## Casos de uso
 
@@ -107,6 +107,6 @@ La comparación solo es posible contra su linaje directo, porque es lo único me
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChonkE/Glitter_Boy-2.0
+- Modelo en Hugging Face: https://huggingface.co/ChonkE/Glitter_Boy-2.0
 - Repositorio Vulkan-VM del autor (stack de entrenamiento citado en la model card): https://github.com/XxChonkExX/Vulkan-VM/tree/main
 - Paper, blog o demo adicionales: no disponible (la búsqueda web realizada no devolvió resultados relevantes sobre este modelo).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `aleks1245/w` es un artefacto publicado en HuggingFace por el usuario aleks1245 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción funcional, especificación técnica, información sobre datos de entrenamiento ni documentación de uso: únicamente incluye la declaración de licencia. No se dispone de información sobre arquitectura, tamaño, contexto, idiomas o capacidades.
+El modelo `aleks1245/w` es un artefacto publicado en Hugging Face por el usuario aleks1245 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción funcional, especificación técnica, información sobre datos de entrenamiento ni documentación de uso: únicamente incluye la declaración de licencia. No se dispone de información sobre arquitectura, tamaño, contexto, idiomas o capacidades.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline declarado, lo que impide clasificarlo automáticamente como modelo de texto, visión, audio u otra modalidad. La fecha de creación y actualización es la misma (28 de octubre de 2026), sin historial de revisiones posteriores.
 
@@ -74,5 +74,5 @@ No disponible. No es posible establecer una comparativa sin conocer la categorí
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aleks1245/w
+- Hugging Face: https://huggingface.co/aleks1245/w
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

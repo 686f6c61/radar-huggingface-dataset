@@ -4,9 +4,9 @@
 
 PRISM es un modelo de reconstruccion 3D a partir de una sola imagen, presentado por el autor microjet378 como "Feed-Forward Single-Image 3D Reconstruction via Geometric Warp-Residual Modeling". A diferencia de los modelos de lenguaje, no procesa texto: su entrada es una imagen RGB y su salida es una representacion 3D en forma de Gaussian splats (3DGS), lo que lo situa en la familia de los reconstructores feed-forward tipo LRM/TripoSR.
 
-El repositorio de HuggingFace contiene unicamente `prism_stage2.pt`, el codificador de residuos, con 26 millones de parametros. El decodificador 3DGS es un componente congelado que se descarga por separado desde NVIDIA bajo su propia licencia, de modo que el modelo publicado aqui no es autonomo: sin ese decodificador no se puede ejecutar la inferencia completa.
+El repositorio de Hugging Face contiene unicamente `prism_stage2.pt`, el codificador de residuos, con 26 millones de parametros. El decodificador 3DGS es un componente congelado que se descarga por separado desde NVIDIA bajo su propia licencia, de modo que el modelo publicado aqui no es autonomo: sin ese decodificador no se puede ejecutar la inferencia completa.
 
-Su relevancia practica esta en el enfoque de "warp-residual": el modelo no predice la geometria desde cero, sino que modela el residuo respecto a una deformacion geometrica (warp) previa, lo que en principio reduce la carga del aprendizaje. El repo ocupa 0,1 GB y los pesos se distribuyen bajo licencia Apache 2.0, aunque el pipeline de HuggingFace no esta definido y no hay descargas ni valoraciones registradas.
+Su relevancia practica esta en el enfoque de "warp-residual": el modelo no predice la geometria desde cero, sino que modela el residuo respecto a una deformacion geometrica (warp) previa, lo que en principio reduce la carga del aprendizaje. El repo ocupa 0,1 GB y los pesos se distribuyen bajo licencia Apache 2.0, aunque el pipeline de Hugging Face no esta definido y no hay descargas ni valoraciones registradas.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Su relevancia practica esta en el enfoque de "warp-residual": el modelo no predi
 | Tarea | Reconstruccion 3D y sintesis de vistas noveles (novel-view synthesis) |
 | Entrada / salida | Imagen RGB unica / Gaussian splats 3D |
 | Tamano del repositorio | 0,1 GB |
-| Pipeline en HuggingFace | No definido |
+| Pipeline en Hugging Face | No definido |
 
 ## Arquitectura y entrenamiento
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PRISM | 26 M (codificador de residuos) + decodificador 3DGS aparte | Imagen unica | Gaussian splats | Apache 2.0 (pesos); decodificador con licencia NVIDIA | HuggingFace + GitHub del autor |
+| PRISM | 26 M (codificador de residuos) + decodificador 3DGS aparte | Imagen unica | Gaussian splats | Apache 2.0 (pesos); decodificador con licencia NVIDIA | Hugging Face + GitHub del autor |
 | LRM (Large Reconstruction Model) | No disponible en la informacion proporcionada | Imagen unica | NeRF / triplanar | No disponible | Pesos y codigo publicos segun el proyecto original |
 | TripoSR | No disponible en la informacion proporcionada | Imagen unica | Malla / triplanar | No disponible | Repositorio publico |
 | InstantMesh | No disponible en la informacion proporcionada | Imagen unica | Malla | No disponible | Repositorio publico |
@@ -81,13 +81,13 @@ No se dispone de datos verificados de parametros, contexto ni rendimiento de las
 - Reconstruccion desde una sola vista: las regiones ocluidas se infieren, no se observan, con riesgo alto de geometria inventada en la cara oculta del objeto.
 - No hay metricas publicadas, ni card de evaluacion, ni descargas registradas (0 descargas, 0 likes), por lo que no existe validacion independiente de la calidad.
 - Ausencia total de documentacion sobre datos de entrenamiento: no se puede evaluar sesgo de dominio (categoria de objetos, iluminacion, fondos) ni riesgo de sobreajuste a un dataset concreto.
-- Inconsistencia en los enlaces: el autor en HuggingFace es `microjet378` y la model card apunta a un repositorio de GitHub bajo `microjie372`; conviene verificar cual es la ruta oficial antes de integrar.
+- Inconsistencia en los enlaces: el autor en Hugging Face es `microjet378` y la model card apunta a un repositorio de GitHub bajo `microjie372`; conviene verificar cual es la ruta oficial antes de integrar.
 - La fecha de creacion del repositorio en los metadatos es 2026-10-17, posterior a la consulta; tratar la metadata con cautela.
 - No apto para tareas de lenguaje, agentes, tool calling ni comprension semantica de imagenes: es exclusivamente un reconstructor 3D.
 - El formato `.pt` sin safetensors obliga a cargar con PyTorch y a auditar el checkpoint antes de usarlo en produccion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/microjet378/PRISM
+- Hugging Face: https://huggingface.co/microjet378/PRISM
 - Codigo y setup (segun la model card): https://github.com/microjie372/PRISM
 - Decodificador 3DGS de NVIDIA: no disponible el enlace exacto en la informacion proporcionada (la model card remite al repositorio de GitHub)

@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Reticulum135M-Instruct | 135M | No disponible | Apache 2.0 | HuggingFace (81 descargas) |
-| SmolLM2-135M-Instruct | 135M | No disponible en esta ficha | Apache 2.0 | HuggingFace (modelo base) |
-| SmolLM2-360M-Instruct | 360M | No disponible en esta ficha | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B-Instruct | 500M | No disponible en esta ficha | Apache 2.0 | HuggingFace |
+| Reticulum135M-Instruct | 135M | No disponible | Apache 2.0 | Hugging Face (81 descargas) |
+| SmolLM2-135M-Instruct | 135M | No disponible en esta ficha | Apache 2.0 | Hugging Face (modelo base) |
+| SmolLM2-360M-Instruct | 360M | No disponible en esta ficha | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 500M | No disponible en esta ficha | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a parámetros, licencia y disponibilidad; no hay datos de rendimiento publicados para Reticulum135M-Instruct que permitan una comparación cuantitativa.
 
@@ -82,5 +82,5 @@ La comparativa se limita a parámetros, licencia y disponibilidad; no hay datos 
 
 ## Enlaces
 
-- [HuggingFace: Niof/Reticulum135M-Instruct](https://huggingface.co/Niof/Reticulum135M-Instruct)
+- [Hugging Face: Niof/Reticulum135M-Instruct](https://huggingface.co/Niof/Reticulum135M-Instruct)
 - [Modelo base: HuggingFaceTB/SmolLM2-135M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct)

@@ -25,7 +25,7 @@ Su relevancia es estrictamente de investigacion: se enmarca en lineas de trabajo
 
 El artefacto es un adaptador LoRA con rango 64, alpha 128 y aplicacion restringida a capas lineales. El autor indica que la etapa "difficult advice" se ha entrenado como adaptador nuevo durante 10 epocas, partiendo de cero, sobre un adaptador A1 previamente fusionado y congelado. El entrenamiento forma parte de una plataforma propia ("graft0") y se describe como un barrido de epocas comparado a pasos equivalentes, lo que sugiere un experimento controlado de seleccion de checkpoint mas que un ajuste orientado a producto.
 
-La innovacion tecnica que se menciona no esta en el algoritmo de entrenamiento, sino en el modo de servicio: segun la model card, el modelo se sirve con dos adaptadores apilados sobre el base parcheado, aplicando A1 primero y este adaptador despues, invocando `serve_reconstructed.sh` con `ROW_PATCH=1` y la lista de adaptadores. Esto implica una ruta de inferencia no estandar que depende de codigo propio del autor y que no esta disponible en el repositorio de HuggingFace.
+La innovacion tecnica que se menciona no esta en el algoritmo de entrenamiento, sino en el modo de servicio: segun la model card, el modelo se sirve con dos adaptadores apilados sobre el base parcheado, aplicando A1 primero y este adaptador despues, invocando `serve_reconstructed.sh` con `ROW_PATCH=1` y la lista de adaptadores. Esto implica una ruta de inferencia no estandar que depende de codigo propio del autor y que no esta disponible en el repositorio de Hugging Face.
 
 No se especifican el volumen de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF, DPO u otra optimizacion por preferencias. Tampoco se documenta la naturaleza de los datos "difficult advice" ni el contenido de `terrav2-300`.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-32B-graft0-a1-terrav2-300-da-e10 | LoRA sobre 32B (adaptador de 2,2 GB) | No especificado; base hasta 131 072 con YaRN | Adaptador de investigacion, requiere servicio en cadena | No disponible | HuggingFace, 0 descargas, sin evaluaciones |
+| Qwen2.5-32B-graft0-a1-terrav2-300-da-e10 | LoRA sobre 32B (adaptador de 2,2 GB) | No especificado; base hasta 131 072 con YaRN | Adaptador de investigacion, requiere servicio en cadena | No disponible | Hugging Face, 0 descargas, sin evaluaciones |
 | Qwen2.5-32B (base) | 32B densos | 32 768 nativo, 131 072 con YaRN | Modelo base preentrenado | Apache 2.0 segun la documentacion de Qwen | Ampliamente disponible y desplegado |
 | Qwen2.5-32B-Instruct | 32B densos | 32 768 nativo, 131 072 con YaRN | Modelo ajustado para instrucciones y chat | Apache 2.0 segun la documentacion de Qwen | Ampliamente disponible, con soporte en vLLM, TGI y llama.cpp |
-| SecondLookResearch/Qwen2.5-32B-graft0-a1 | LoRA sobre 32B | No especificado | Adaptador previo de la misma plataforma, requerido para servir este modelo | No disponible | HuggingFace, uso experimental |
+| SecondLookResearch/Qwen2.5-32B-graft0-a1 | LoRA sobre 32B | No especificado | Adaptador previo de la misma plataforma, requerido para servir este modelo | No disponible | Hugging Face, uso experimental |
 
 Los datos de parametros y contexto de las variantes de Qwen2.5 provienen de la documentacion publica del modelo base. No hay datos de rendimiento comparado para el adaptador.
 
@@ -82,20 +82,20 @@ Los datos de parametros y contexto de las variantes de Qwen2.5 provienen de la d
 - El modelo base Qwen2.5-32B se distribuye bajo Apache 2.0 segun la documentacion de Qwen, pero la licencia del adaptador es independiente y no esta publicada.
 - Artefacto sin validar: cero descargas y cero "likes" en el momento de la consulta, sin evaluaciones ni benchmarks publicados.
 - Dependencia de un segundo artefacto: requiere el adaptador `graft0-a1` y un procedimiento de servicio con parcheo de filas y encadenado de adaptadores. Sin ese codigo, el adaptador no reproduce el comportamiento previsto.
-- Procedimiento de servicio no estandar: `serve_reconstructed.sh` con `ROW_PATCH=1` y orden fijo de adaptadores no forma parte del repositorio de HuggingFace y no es compatible con las herramientas habituales sin adaptaciones.
+- Procedimiento de servicio no estandar: `serve_reconstructed.sh` con `ROW_PATCH=1` y orden fijo de adaptadores no forma parte del repositorio de Hugging Face y no es compatible con las herramientas habituales sin adaptaciones.
 - Riesgo de alucinacion: inherente a los modelos de 32B; no hay evaluaciones de fidelidad ni de tasas de error para esta etapa de ajuste.
 - Sesgos: el dataset "difficult advice" y el contenido de `terrav2-300` son desconocidos, por lo que no puede evaluarse el sesgo introducido por el ajuste.
 - Restriccion de idioma: no se declaran idiomas; el ajuste puede haber alterado el comportamiento multilingue del base sin documentarlo.
 - Ambiguedad de metadatos: la ficha registra fechas de creacion y actualizacion en septiembre de 2026 y un tamano de repositorio de 2,2 GB para un LoRA linear-only r64, lo que sugiere que el repositorio podria contener pesos fusionados o artefactos adicionales no descritos.
-- Sin pipeline declarado: no se indica tarea (text-generation u otra), lo que dificulta el uso automatizado desde la libreria de HuggingFace.
+- Sin pipeline declarado: no se indica tarea (text-generation u otra), lo que dificulta el uso automatizado desde la libreria de Hugging Face.
 - Aviso practico: no desplegar en produccion, ni con datos de usuarios, ni en flujos automatizados sin una evaluacion propia previa y una revision legal de la licencia.
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-graft0-a1-terrav2-300-da-e10
+- Adaptador en Hugging Face: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-graft0-a1-terrav2-300-da-e10
 - Adaptador previo requerido (A1): https://huggingface.co/SecondLookResearch/Qwen2.5-32B-graft0-a1
 - Variante relacionada de la misma plataforma: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-sdf-named-qwen-14M-graft0-a1
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-32B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-32B
 - Blog oficial de Qwen2.5: https://qwen.ai/blog?id=qwen2.5
 - Repositorio de la serie Qwen2.5: https://github.com/Zerkahlo/qwen2.5
 - Espejo del repositorio Qwen2.5: https://github.com/mx4ai/qwen2.5

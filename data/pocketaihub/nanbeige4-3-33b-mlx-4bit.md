@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks del modelo base ni de alternativas comparab
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/PocketAiHub/Nanbeige4.3-33B-MLX-4bit
+- Modelo cuantizado en Hugging Face: https://huggingface.co/PocketAiHub/Nanbeige4.3-33B-MLX-4bit
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Repositorio MLX: no disponible en la información proporcionada
 - Repositorio MLX-LM: no disponible en la información proporcionada

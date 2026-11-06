@@ -94,7 +94,7 @@ La comparación directa con estos modelos no está respaldada por benchmarks pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dungxnd/HachimiMT-60-QT-ONNX
+- Modelo en Hugging Face: https://huggingface.co/dungxnd/HachimiMT-60-QT-ONNX
 - Modelo base: https://huggingface.co/ngocdang83/HachimiMT-60-QT
 - Perfil del autor de la exportación: https://huggingface.co/ngocdang83
 - Repositorio del proyecto VBookMT: https://github.com/DungxND/VBookMT

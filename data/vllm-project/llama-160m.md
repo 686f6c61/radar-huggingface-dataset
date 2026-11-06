@@ -82,7 +82,7 @@ La comparativa se limita a modelos de tamaño similar de la familia de modelos b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-project/llama-160m
+- Modelo en Hugging Face: https://huggingface.co/vllm-project/llama-160m
 - Checkpoint original: https://huggingface.co/JackFram/llama-160m
 - Paper SpecInfer: https://arxiv.org/abs/2305.09781
 - Proyecto vLLM: https://github.com/vllm-project/vllm

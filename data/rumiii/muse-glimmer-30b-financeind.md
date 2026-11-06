@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Muse-Glimmer-30B-FinanceIND | 29,78 B | no disponible | Finanzas personales India, en/hi, tool calling | Apache 2.0 | HuggingFace (99 descargas) |
-| Muse Glimmer 30B (base) | 30 B (aprox.) | no disponible | Multimodal generalista | Apache 2.0 | HuggingFace (meta-models) |
+| Muse-Glimmer-30B-FinanceIND | 29,78 B | no disponible | Finanzas personales India, en/hi, tool calling | Apache 2.0 | Hugging Face (99 descargas) |
+| Muse Glimmer 30B (base) | 30 B (aprox.) | no disponible | Multimodal generalista | Apache 2.0 | Hugging Face (meta-models) |
 | Alternativas financieras de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de otros fine-tunes financieros comparables en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible.
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de otros fine-tunes financieros comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rumiii/Muse-Glimmer-30B-FinanceIND
+- Modelo en Hugging Face: https://huggingface.co/Rumiii/Muse-Glimmer-30B-FinanceIND
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Gandalf1/indian-finance-synthetic-phase2-cleaned
 - Imagen de presentación: https://cdn-uploads.huggingface.co/production/uploads/66e00ba55e4fd4bfead4a97c/9Lkn4VPyvle9XGbdRLMjR.png

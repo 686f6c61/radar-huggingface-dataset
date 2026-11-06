@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/akm9191/silero-vad-onnx
+- Repositorio en Hugging Face: https://huggingface.co/akm9191/silero-vad-onnx
 - Silero VAD (original): https://github.com/snakers4/silero-vad
 - Release de sherpa-onnx con los modelos ASR: https://github.com/k2-fsa/sherpa-onnx/releases/tag/asr-models
 - Proyecto sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

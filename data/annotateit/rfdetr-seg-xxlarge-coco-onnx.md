@@ -93,7 +93,7 @@ Los datos de YOLOv11 y Mask R-CNN son aproximados y no provienen de la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnnotateIt/rfdetr-seg-xxlarge-coco-onnx
+- Modelo en Hugging Face: https://huggingface.co/AnnotateIt/rfdetr-seg-xxlarge-coco-onnx
 - Checkpoint base: https://huggingface.co/Roboflow/rf-detr-seg-xxlarge
 - Repositorio oficial RF-DETR: https://github.com/roboflow/rf-detr
 - Paper "RF-DETR: Neural Architecture Search for Real-Time Detection Transformers": https://arxiv.org/pdf/2511.09554

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `open-sci/1.7b-Comma0.1-300BT-longsft_16k-DPO-Tulu3-decontaminated-sr30k` es un ajuste fino (SFT) de un modelo base de 1,7 mil millones de parametros, `ali-elganzory/1.7b-Comma0.1-300BT-longsft_16k-DPO-Tulu3-decontaminated`. Lo publica el usuario `open-sci` en HuggingFace y se ha entrenado con el framework LLaMA-Factory sobre un dataset de razonamiento sintetico, `Superior-Reasoning-SFT-gpt-oss-120b-30k-sharegpt-hf`, generado presumiblemente a partir de un modelo mayor (gpt-oss-120b). El resultado es un checkpoint de tipo "full fine-tuning" que hereda la cadena de entrenamiento del modelo base: un preentrenamiento de 300 mil millones de tokens seguido de SFT de contexto largo, DPO y filtrado de contaminacion estilo Tulu 3.
+El modelo `open-sci/1.7b-Comma0.1-300BT-longsft_16k-DPO-Tulu3-decontaminated-sr30k` es un ajuste fino (SFT) de un modelo base de 1,7 mil millones de parametros, `ali-elganzory/1.7b-Comma0.1-300BT-longsft_16k-DPO-Tulu3-decontaminated`. Lo publica el usuario `open-sci` en Hugging Face y se ha entrenado con el framework LLaMA-Factory sobre un dataset de razonamiento sintetico, `Superior-Reasoning-SFT-gpt-oss-120b-30k-sharegpt-hf`, generado presumiblemente a partir de un modelo mayor (gpt-oss-120b). El resultado es un checkpoint de tipo "full fine-tuning" que hereda la cadena de entrenamiento del modelo base: un preentrenamiento de 300 mil millones de tokens seguido de SFT de contexto largo, DPO y filtrado de contaminacion estilo Tulu 3.
 
-Se trata de un modelo pequeno (1,71 mil millones de parametros) pensado para tareas de generacion de texto y razonamiento, con un pipeline declarado de `feature-extraction` en HuggingFace, aunque su entrenamiento es claramente de tipo instruccion/SFT. La relevancia actual reside en su tamano reducido, que lo hace desplegable en hardware de consumo, y en su cadena de entrenamiento cuidadosa (DPO, contexto largo, decontaminacion), poco habitual en modelos de esta escala.
+Se trata de un modelo pequeno (1,71 mil millones de parametros) pensado para tareas de generacion de texto y razonamiento, con un pipeline declarado de `feature-extraction` en Hugging Face, aunque su entrenamiento es claramente de tipo instruccion/SFT. La relevancia actual reside en su tamano reducido, que lo hace desplegable en hardware de consumo, y en su cadena de entrenamiento cuidadosa (DPO, contexto largo, decontaminacion), poco habitual en modelos de esta escala.
 
 La informacion publicada es escasa: la model card esta generada automaticamente por el Trainer de LLaMA-Factory y no incluye descripcion, usos previstos, idiomas ni resultados de evaluacion. Esta ficha refleja unicamente los datos disponibles y marca explicitamente lo que no se puede confirmar.
 
@@ -63,10 +63,10 @@ La model card declara un `model-index` con una unica entrada (`sft__Superior-Rea
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| open-sci/1.7b-Comma0.1-...-sr30k | 1,71 B | no disponible | other | HuggingFace (14 descargas) |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| SmolLM2-1.7B-Instruct | 1,71 B | 8.192 tokens | Apache 2.0 | HuggingFace, ecosistema amplio |
-| Llama-3.2-1B-Instruct | 1,24 B | 131.072 tokens | Llama 3.2 Community License | HuggingFace, ampliamente adoptado |
+| open-sci/1.7b-Comma0.1-...-sr30k | 1,71 B | no disponible | other | Hugging Face (14 descargas) |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| SmolLM2-1.7B-Instruct | 1,71 B | 8.192 tokens | Apache 2.0 | Hugging Face, ecosistema amplio |
+| Llama-3.2-1B-Instruct | 1,24 B | 131.072 tokens | Llama 3.2 Community License | Hugging Face, ampliamente adoptado |
 
 La comparativa se limita a parametros, contexto y licencia porque no hay benchmarks publicados de este modelo. Frente a las alternativas, la principal desventaja es la falta de documentacion, evaluacion y licencia clara; la ventaja potencial es su entrenamiento especifico en razonamiento y su cadena DPO, que habria que validar empiricamente.
 
@@ -83,7 +83,7 @@ La comparativa se limita a parametros, contexto y licencia porque no hay benchma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/1.7b-Comma0.1-300BT-longsft_16k-DPO-Tulu3-decontaminated-sr30k
+- Hugging Face: https://huggingface.co/open-sci/1.7b-Comma0.1-300BT-longsft_16k-DPO-Tulu3-decontaminated-sr30k
 - Modelo base: https://huggingface.co/ali-elganzory/1.7b-Comma0.1-300BT-longsft_16k-DPO-Tulu3-decontaminated
 - Dataset de SFT: `Superior-Reasoning-SFT-gpt-oss-120b-30k-sharegpt-hf` (referenciado en la model card; no se proporciona URL publica)
 - Framework de entrenamiento: LLaMA-Factory (https://github.com/hiyouga/LLaMA-Factory)

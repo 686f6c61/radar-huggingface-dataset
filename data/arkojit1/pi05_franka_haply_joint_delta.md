@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Salida / control | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `arkojit1/pi05_franka_haply_joint_delta` | 4.143.404.816 (unos 300 M entrenables) | Chunk de 50 acciones, deltas de 7 articulaciones + pinza | no disponible | HuggingFace, 0 descargas y 0 likes |
-| `lerobot/pi05_base` | no disponible | no disponible | no disponible | HuggingFace; es el checkpoint base de este ajuste |
-| `lerobot/pi0` | no disponible | no disponible | no disponible | HuggingFace; version anterior de la familia |
+| `arkojit1/pi05_franka_haply_joint_delta` | 4.143.404.816 (unos 300 M entrenables) | Chunk de 50 acciones, deltas de 7 articulaciones + pinza | no disponible | Hugging Face, 0 descargas y 0 likes |
+| `lerobot/pi05_base` | no disponible | no disponible | no disponible | Hugging Face; es el checkpoint base de este ajuste |
+| `lerobot/pi0` | no disponible | no disponible | no disponible | Hugging Face; version anterior de la familia |
 
 No se dispone de datos de parametros, contexto ni rendimiento de los modelos comparables en la informacion proporcionada, ni de resultados de benchmarks que permitan una comparacion cuantitativa. La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre su familia.
 
@@ -96,11 +96,11 @@ No se dispone de datos de parametros, contexto ni rendimiento de los modelos com
 - Dependencia de un repositorio con acceso restringido (`google/paligemma-3b-pt-224`) para el tokenizer, lo que condiciona la reproducibilidad y el despliegue.
 - Idiomas no documentados: no se especifica en que idioma esta redactada la tarea, y no hay evidencia de soporte multilingue.
 - Adopcion nula: 0 descargas y 0 likes en el momento de la consulta, sin validacion externa ni resultados reproducidos por terceros.
-- Fechas del repositorio: creado y actualizado el 21 de septiembre de 2026 segun los metadatos de HuggingFace.
+- Fechas del repositorio: creado y actualizado el 21 de septiembre de 2026 segun los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arkojit1/pi05_franka_haply_joint_delta
+- Modelo en Hugging Face: https://huggingface.co/arkojit1/pi05_franka_haply_joint_delta
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Ameyapores/franka_haply_joint_delta
 - Tokenizer con acceso restringido requerido: https://huggingface.co/google/paligemma-3b-pt-224

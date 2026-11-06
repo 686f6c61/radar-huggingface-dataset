@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fluxcost/whisper-small-gguf | 241.751.392 | no disponible | GGUF Q8_0 | Apache 2.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| openai/whisper-small | 241.751.392 | no disponible | safetensors / PyTorch | Apache 2.0 | HuggingFace (modelo base oficial) |
-| handy-computer/whisper-small-gguf | 241.751.392 | no disponible | GGUF | Apache 2.0 | HuggingFace (origen de esta conversión) |
-| openai/whisper-base | 74.000.000 (aprox., no confirmado en la información disponible) | no disponible | safetensors / PyTorch | Apache 2.0 | HuggingFace |
+| fluxcost/whisper-small-gguf | 241.751.392 | no disponible | GGUF Q8_0 | Apache 2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| openai/whisper-small | 241.751.392 | no disponible | safetensors / PyTorch | Apache 2.0 | Hugging Face (modelo base oficial) |
+| handy-computer/whisper-small-gguf | 241.751.392 | no disponible | GGUF | Apache 2.0 | Hugging Face (origen de esta conversión) |
+| openai/whisper-base | 74.000.000 (aprox., no confirmado en la información disponible) | no disponible | safetensors / PyTorch | Apache 2.0 | Hugging Face |
 
 La comparación relevante es frente a `openai/whisper-small` (mismos pesos, distinto formato) y frente al repositorio de origen `handy-computer/whisper-small-gguf`, del que esta publicación es una copia byte a byte en el archivo GGUF. No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -82,7 +82,7 @@ La comparación relevante es frente a `openai/whisper-small` (mismos pesos, dist
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fluxcost/whisper-small-gguf
+- Repositorio en Hugging Face: https://huggingface.co/fluxcost/whisper-small-gguf
 - Repositorio de origen de la conversión GGUF: https://huggingface.co/handy-computer/whisper-small-gguf
 - Modelo base oficial: https://huggingface.co/openai/whisper-small
 - Repositorio de OpenAI Whisper (código y paper): https://github.com/openai/whisper

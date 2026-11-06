@@ -93,11 +93,11 @@ El autor declara que, con tres decimales y el código de puntuación del leaderb
 
 | Modelo | Parametros | Descarga | Contexto | WER medio (7 sets) | Licencia | Disponibilidad |
 |---|---|--:|---|---|---|---|
-| Bark 3.0 Pro | 627 M | 1.254 MB | no disponible | 4,29 % | CC-BY-4.0 | HuggingFace, Core ML |
-| Hojo-ASR-V1 | no disponible | 11.957 MB | no disponible | 4,29 % | no disponible | HuggingFace |
-| Qwen3-ASR-1.7B | 1,7 B | 4.699 MB | no disponible | 4,43 % | no disponible | HuggingFace |
-| Canary-Qwen 2.5B | 2,5 B | 5.119 MB | no disponible | 4,55 % | no disponible | HuggingFace |
-| Whisper large-v3 | 1,55 B | 9.261 MB | 30 s de audio | 6,04 % | MIT (upstream) | HuggingFace, múltiples runtimes |
+| Bark 3.0 Pro | 627 M | 1.254 MB | no disponible | 4,29 % | CC-BY-4.0 | Hugging Face, Core ML |
+| Hojo-ASR-V1 | no disponible | 11.957 MB | no disponible | 4,29 % | no disponible | Hugging Face |
+| Qwen3-ASR-1.7B | 1,7 B | 4.699 MB | no disponible | 4,43 % | no disponible | Hugging Face |
+| Canary-Qwen 2.5B | 2,5 B | 5.119 MB | no disponible | 4,55 % | no disponible | Hugging Face |
+| Whisper large-v3 | 1,55 B | 9.261 MB | 30 s de audio | 6,04 % | MIT (upstream) | Hugging Face, múltiples runtimes |
 
 La comparación se limita a los datos publicados en la model card. Bark 3.0 Pro iguala en precisión media a Hojo-ASR-V1 con aproximadamente una décima parte del tamaño de descarga y supera a Qwen3-ASR-1.7B, Canary-Qwen 2.5B y Whisper large-v3, aunque estos últimos ofrecen ecosistemas de despliegue más amplios y, en el caso de Whisper, soporte multilingüe.
 
@@ -114,7 +114,7 @@ La comparación se limita a los datos publicados en la model card. Bark 3.0 Pro 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Microguy1/Underdog-Bark-3.0-Pro-DUPLI
+- Modelo en Hugging Face: https://huggingface.co/Microguy1/Underdog-Bark-3.0-Pro-DUPLI
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Runtime Underdog: https://underdog.ai
 - Open ASR Leaderboard: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard

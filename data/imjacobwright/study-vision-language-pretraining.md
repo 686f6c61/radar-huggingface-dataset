@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Imjacobwright/study-vision-language-pretraining` no es un modelo entrenado, sino un repositorio de notas de investigación sobre preentrenamiento visión-lenguaje, publicado en HuggingFace con las etiquetas `research-notes` y `vision-language-pretraining`. La propia model card lo declara explícitamente: «no se presenta como un artículo completado ni como la publicación de modelos entrenados». El artefacto principal es `review.md`, un documento que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación.
+`Imjacobwright/study-vision-language-pretraining` no es un modelo entrenado, sino un repositorio de notas de investigación sobre preentrenamiento visión-lenguaje, publicado en Hugging Face con las etiquetas `research-notes` y `vision-language-pretraining`. La propia model card lo declara explícitamente: «no se presenta como un artículo completado ni como la publicación de modelos entrenados». El artefacto principal es `review.md`, un documento que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación.
 
 El repositorio incluye un archivo safetensors con 24.832 parámetros totales (veinticuatro mil ochocientos treinta y dos), es decir, un checkpoint de aproximadamente 25.000 parámetros y ~0,1 MB en fp32. Este tamaño es incompatible con cualquier modelo visión-lenguaje funcional y sugiere un tensor de prueba, una inicialización aleatoria o un placeholder para validar el formato de pesos. No hay `config.json`, tokenizador, processor ni pipeline declarados.
 
@@ -49,7 +49,7 @@ La única innovación metodológica declarada es de gobernanza de la evidencia: 
 - Material docente o de onboarding: introducir a nuevos miembros en cómo se redacta una nota de investigación falsable frente a un artículo completo, usando el propio repositorio como ejemplo de alcance declarado.
 - Prueba de humo de infraestructura: cargar el safetensors de 24.832 parámetros con la librería `safetensors` para verificar rutas, permisos y versiones en un pipeline de CI antes de mover checkpoints grandes.
 - Plantilla de repositorio de investigación: clonar la estructura (`README.md` + `review.md`) para proyectos que deban publicar notas sin prometer resultados, con licencia CC BY 4.0 ya resuelta.
-- Verificación de metadatos en HuggingFace: usar el repo como caso de prueba de herramientas que leen tags, licencia y recuento de parámetros desde la API.
+- Verificación de metadatos en Hugging Face: usar el repo como caso de prueba de herramientas que leen tags, licencia y recuento de parámetros desde la API.
 
 ## Benchmarks y rendimiento
 
@@ -71,7 +71,7 @@ La comparación con modelos visión-lenguaje reales no es posible en términos d
 
 | Modelo / artefacto | Parametros | Contexto | Pesos entrenados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Imjacobwright/study-vision-language-pretraining | 24.832 | No disponible | No (checkpoint no funcional) | CC BY 4.0 | HuggingFace, 0 descargas |
+| Imjacobwright/study-vision-language-pretraining | 24.832 | No disponible | No (checkpoint no funcional) | CC BY 4.0 | Hugging Face, 0 descargas |
 | Familia CLIP (OpenAI) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Si | No verificada en esta busqueda | Referencia habitual para preentrenamiento contrastivo |
 | Familia SigLIP | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Si | No verificada en esta busqueda | Alternativa citada frecuentemente frente a CLIP |
 | Familia BLIP-2 | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Si | No verificada en esta busqueda | Referencia para preentrenamiento generativo imagen-texto |
@@ -91,7 +91,7 @@ Los tres modelos citados son las referencias habituales del área y aparecen aqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Imjacobwright/study-vision-language-pretraining
+- Hugging Face: https://huggingface.co/Imjacobwright/study-vision-language-pretraining
 - Artefacto principal citado en la model card: `review.md` (incluido en el repositorio, no enlazable de forma independiente)
 - Documentación del repositorio: `README.md` (model card)
 - Paper, blog, demo o repositorio de código: no disponibles en la información proporcionada

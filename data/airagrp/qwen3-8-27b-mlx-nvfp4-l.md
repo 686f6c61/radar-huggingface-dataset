@@ -69,7 +69,7 @@ No se dispone de datos cuantitativos de comparación con otros modelos en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/airagrp/Qwen3.8-27B-mlx-nvfp4-L
+- Repositorio Hugging Face: https://huggingface.co/airagrp/Qwen3.8-27B-mlx-nvfp4-L
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Blog sobre ejecución local de Qwen 3.8 27B: https://locallyuncensored.com/blog/how-to-run-qwen-3-8-27b-locally.html

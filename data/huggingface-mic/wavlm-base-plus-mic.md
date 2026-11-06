@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/wavlm-base-plus-mic` | 4,3 M (fixture) | no disponible | no aplica (pesos aleatorios) | no disponible | HuggingFace, 230 descargas |
-| `microsoft/wavlm-base-plus` | ~94,7 M | no disponible | estado del arte en tareas de voz (no cuantificado aquí) | no disponible en la información | HuggingFace |
-| Otros fixtures `*-mic` del mismo autor | variable (reducidos) | no disponible | no aplica | no disponible | HuggingFace |
+| `huggingface-mic/wavlm-base-plus-mic` | 4,3 M (fixture) | no disponible | no aplica (pesos aleatorios) | no disponible | Hugging Face, 230 descargas |
+| `microsoft/wavlm-base-plus` | ~94,7 M | no disponible | estado del arte en tareas de voz (no cuantificado aquí) | no disponible en la información | Hugging Face |
+| Otros fixtures `*-mic` del mismo autor | variable (reducidos) | no disponible | no aplica | no disponible | Hugging Face |
 
 La comparación relevante es con el checkpoint original: el fixture conserva arquitectura, nombres de tensores y ficheros de procesador, pero reduce capas a 2 y sustituye los pesos entrenados por pesos aleatorios, por lo que no es funcionalmente equivalente para ninguna tarea de audio.
 
@@ -80,7 +80,7 @@ La comparación relevante es con el checkpoint original: el fixture conserva arq
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/wavlm-base-plus-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/wavlm-base-plus-mic
 - Modelo base: https://huggingface.co/microsoft/wavlm-base-plus
 - Manifiesto de contrato: https://huggingface.co/huggingface-mic/wavlm-base-plus-mic/blob/main/integration.json
 - Uso en Transformers: https://huggingface.co/huggingface-mic/wavlm-base-plus-mic/blob/main/integrations/transformers/usage.md

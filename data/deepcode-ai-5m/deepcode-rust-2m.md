@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepCode-Rust-2M es un modelo publicado en HuggingFace por el usuario deepcode-ai-5m bajo licencia MIT. Por el identificador y el nombre, parece tratarse de un modelo pequeno (el sufijo "2M" sugiere del orden de 2 millones de parametros) orientado a la generacion de codigo en Rust. Sin embargo, la model card publicada esta practicamente vacia: solo contiene la declaracion de licencia MIT, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
+DeepCode-Rust-2M es un modelo publicado en Hugging Face por el usuario deepcode-ai-5m bajo licencia MIT. Por el identificador y el nombre, parece tratarse de un modelo pequeno (el sufijo "2M" sugiere del orden de 2 millones de parametros) orientado a la generacion de codigo en Rust. Sin embargo, la model card publicada esta practicamente vacia: solo contiene la declaracion de licencia MIT, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
 El repositorio no presenta pipeline declarado, no tiene descargas ni likes, y no incluye informacion sobre idiomas soportados ni sobre el formato de los pesos. Fue creado y actualizado el 1 de noviembre de 2026, sin actualizaciones posteriores. Todo ello indica que se trata de un modelo experimental o de un proyecto personal en fase muy temprana, no de un modelo listo para produccion.
 
@@ -77,6 +77,6 @@ No disponible. No se conocen modelos comparables publicados con documentacion su
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deepcode-ai-5m/DeepCode-Rust-2M
+- Hugging Face: https://huggingface.co/deepcode-ai-5m/DeepCode-Rust-2M
 
 No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

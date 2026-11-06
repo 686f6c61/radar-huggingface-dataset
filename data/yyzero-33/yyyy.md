@@ -2,11 +2,11 @@
 
 ## Resumen
 
-YYzero-33/yyyy es un repositorio de modelo publicado en HuggingFace por el usuario YYzero-33. La informacion disponible es minima: la model card no contiene descripcion funcional, no se declara pipeline de inferencia, no se listan idiomas soportados y no se especifica arquitectura, numero de parametros ni longitud de contexto. El unico contenido sustantivo de la model card es el bloque de metadatos de licencia, que remite a una licencia personalizada denominada "padaria".
+YYzero-33/yyyy es un repositorio de modelo publicado en Hugging Face por el usuario YYzero-33. La informacion disponible es minima: la model card no contiene descripcion funcional, no se declara pipeline de inferencia, no se listan idiomas soportados y no se especifica arquitectura, numero de parametros ni longitud de contexto. El unico contenido sustantivo de la model card es el bloque de metadatos de licencia, que remite a una licencia personalizada denominada "padaria".
 
 El repositorio registra 0 descargas y 0 likes, y las fechas de creacion y ultima actualizacion son identicas (2026-09-28T18:53:52Z), lo que junto con la ausencia de pesos documentados o de README descriptivo sugiere un artefacto de prueba, una reserva de nombre o un repositorio en estado embrionario. No hay evidencia publica de entrenamiento, evaluacion o uso en produccion.
 
-Por tanto, esta ficha no puede certificar ninguna capacidad tecnica del modelo. Los apartados que siguen reflejan exclusivamente lo verificable en HuggingFace, y marcan como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluacion de idoneidad para un caso de uso real exige inspeccionar los archivos del repositorio antes de asumir nada.
+Por tanto, esta ficha no puede certificar ninguna capacidad tecnica del modelo. Los apartados que siguen reflejan exclusivamente lo verificable en Hugging Face, y marcan como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluacion de idoneidad para un caso de uso real exige inspeccionar los archivos del repositorio antes de asumir nada.
 
 ## Especificaciones tecnicas
 
@@ -22,7 +22,7 @@ Por tanto, esta ficha no puede certificar ninguna capacidad tecnica del modelo. 
 | Formato de pesos | no disponible |
 | Pipeline declarado | no disponible |
 | Autor | YYzero-33 |
-| Fecha de creacion (segun HuggingFace) | 2026-09-28T18:53:52Z |
+| Fecha de creacion (segun Hugging Face) | 2026-09-28T18:53:52Z |
 | Ultima actualizacion | 2026-09-28T18:53:52Z |
 | Descargas | 0 |
 | Likes | 0 |
@@ -41,7 +41,7 @@ Tampoco hay datos sobre el entrenamiento: no se especifica el volumen de tokens,
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (el campo de idiomas no esta informado en el repositorio).
 - Capacidades especiales (modo thinking, vision, audio, matemáticas, codigo): no disponible.
-- El tag region:us indica unicamente la region de disponibilidad del repositorio en HuggingFace, no una capacidad del modelo.
+- El tag region:us indica unicamente la region de disponibilidad del repositorio en Hugging Face, no una capacidad del modelo.
 
 ## Casos de uso
 
@@ -85,6 +85,6 @@ No disponible. No es posible establecer una comparativa fiable sin conocer el ta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/YYzero-33/yyyy
+- Repositorio en Hugging Face: https://huggingface.co/YYzero-33/yyyy
 - Licencia declarada (referencia relativa en el repositorio): LICENSE
 - Resultado de busqueda web obtenido: http://heartscardclassic.com/ (sin relacion con el modelo; descartado como fuente)

@@ -63,7 +63,7 @@ No se dispone de modelos comparables con el mismo perfil (fine-tune de Qwen3-4B 
 | Grimmelshausen (adaptador) | 4B + LoRA | 32 768 (base) | Apache-2.0 | Alemán arcaico literario |
 | Otros fine-tunes de Qwen3 (no identificados) | — | — | — | — |
 
-No se dispone de otros modelos similares en el ecosistema de HuggingFace con la misma función.
+No se dispone de otros modelos similares en el ecosistema de Hugging Face con la misma función.
 
 ## Limitaciones y advertencias
 
@@ -77,6 +77,6 @@ No se dispone de otros modelos similares en el ecosistema de HuggingFace con la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Klaus-Kramer/Grimmelshausen
+- Hugging Face: https://huggingface.co/Klaus-Kramer/Grimmelshausen
 - Repositorio del autor (agente minimal en C++): https://github.com/klaus-kramer/agent-minimal/tree/main
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B

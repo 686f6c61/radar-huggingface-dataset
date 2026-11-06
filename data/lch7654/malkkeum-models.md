@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Malkkeum models es un repositorio de modelos ONNX publicado por el usuario lch7654 en HuggingFace, que contiene las conversiones a formato ONNX de dos modelos de audio utilizados por el editor de lectura coreano "Malkkeum Editor" (말끔 편집기). No se trata de un modelo de lenguaje, sino de un paquete de utilidades de audio: un modelo wav2vec2 para alineamiento forzado CTC en coreano y un modelo Audio Spectrogram Transformer (AST) para distinguir sonidos como tos y respiración.
+Malkkeum models es un repositorio de modelos ONNX publicado por el usuario lch7654 en Hugging Face, que contiene las conversiones a formato ONNX de dos modelos de audio utilizados por el editor de lectura coreano "Malkkeum Editor" (말끔 편집기). No se trata de un modelo de lenguaje, sino de un paquete de utilidades de audio: un modelo wav2vec2 para alineamiento forzado CTC en coreano y un modelo Audio Spectrogram Transformer (AST) para distinguir sonidos como tos y respiración.
 
 El primer modelo, `senior_fp32.onnx`, es una conversión de [hyyoka/wav2vec2-xlsr-korean-senior](https://huggingface.co/hyyoka/wav2vec2-xlsr-korean-senior), un wav2vec2 fine-tuned para reconocimiento de voz en coreano mediante CTC. El segundo, `ast_audioset.onnx`, procede de [MIT/ast-finetuned-audioset-10-10-0.4593](https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593), un clasificador de eventos de audio entrenado sobre AudioSet.
 

@@ -35,7 +35,7 @@ La innovación técnica relevante no está en el entrenamiento sino en la compre
 - Generación de texto conversacional multi-turno, con plantilla de chat propia y soporte de system prompt.
 - Modo de razonamiento ("thinking mode") activable mediante argumentos de plantilla; el autor documenta parámetros de muestreo distintos para código y para razonamiento.
 - Generación de código: los ejemplos de configuración recomendados incluyen un preset específico para "coding in thinking mode".
-- El pipeline declarado en HuggingFace es `image-text-to-text`, lo que sugiere capacidad de entrada de imagen; no obstante, el GGUF base no documenta proyector visual, por lo que debe tratarse como no confirmado.
+- El pipeline declarado en Hugging Face es `image-text-to-text`, lo que sugiere capacidad de entrada de imagen; no obstante, el GGUF base no documenta proyector visual, por lo que debe tratarse como no confirmado.
 - Multilingüismo: no disponible; no se declaran idiomas en el repositorio.
 - Tool calling / function calling: no disponible (no se menciona en la model card).
 - Soporte de agentes y razonamiento multi-paso: parcialmente implícito por el modo thinking, pero sin documentación específica de agentes.
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Cuantización / formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thread13/Ternary-Bonsai-2-4B-llamafile | ~4B (según nombre) | Ternaria 2-bit Q2_0 en ejecutable llamafile | Recomendado 16k en los ejemplos; máximo no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
-| prism-ml/Ternary-Bonsai-2-4B-gguf (modelo base) | ~4B (según nombre) | Ternaria 2-bit Q2_0 en GGUF | no disponible | no disponible | HuggingFace (origen de los pesos) |
+| thread13/Ternary-Bonsai-2-4B-llamafile | ~4B (según nombre) | Ternaria 2-bit Q2_0 en ejecutable llamafile | Recomendado 16k en los ejemplos; máximo no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
+| prism-ml/Ternary-Bonsai-2-4B-gguf (modelo base) | ~4B (según nombre) | Ternaria 2-bit Q2_0 en GGUF | no disponible | no disponible | Hugging Face (origen de los pesos) |
 | Microsoft BitNet b1.58 2B4T | 2B | Ternaria 1.58-bit | no disponible en esta ficha | licencia permisiva según su publicación original; verificar | Público; referencia de la familia ternaria |
 
 La comparación cuantitativa con alternativas no es posible con los datos disponibles: ni este repositorio ni su base publican benchmarks, y la referencia a BitNet se incluye únicamente como término de comparación de la categoría (modelos ternarios de pocos parámetros), no como medición verificada en esta búsqueda.
@@ -90,7 +90,7 @@ La comparación cuantitativa con alternativas no es posible con los datos dispon
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thread13/Ternary-Bonsai-2-4B-llamafile
+- Repositorio Hugging Face: https://huggingface.co/thread13/Ternary-Bonsai-2-4B-llamafile
 - Modelo base (GGUF): https://huggingface.co/prism-ml/Ternary-Bonsai-2-4B-gguf
 - Guía de inicio rápido de llamafile: https://github.com/mozilla-ai/llamafile/blob/main/docs/quickstart.md
 - Cómo ejecutar un llamafile: https://github.com/mozilla-ai/llamafile/blob/main/docs/running_llamafile.md

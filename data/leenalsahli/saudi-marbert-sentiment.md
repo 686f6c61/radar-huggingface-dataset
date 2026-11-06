@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LeenAlsahli/saudi-marbert-sentiment es un modelo publicado en HuggingFace por el usuario LeenAlsahli, con etiqueta de arquitectura `bert` y pesos en formato safetensors. Cuenta con 162.843.651 parametros (162,8 M) y ocupa 0,7 GB en el repositorio, lo que corresponde a un encoder tipo BERT-base almacenado en precision FP32. La licencia declarada es Apache 2.0 y el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, con fecha de creacion y ultima actualizacion del 29 de septiembre de 2026.
+LeenAlsahli/saudi-marbert-sentiment es un modelo publicado en Hugging Face por el usuario LeenAlsahli, con etiqueta de arquitectura `bert` y pesos en formato safetensors. Cuenta con 162.843.651 parametros (162,8 M) y ocupa 0,7 GB en el repositorio, lo que corresponde a un encoder tipo BERT-base almacenado en precision FP32. La licencia declarada es Apache 2.0 y el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, con fecha de creacion y ultima actualizacion del 29 de septiembre de 2026.
 
 Por el nombre del repositorio, todo apunta a un ajuste fino del modelo MARBERT (UBC-NLP) orientado a analisis de sentimiento sobre texto en arabe, con enfasis en el dialecto saudii. MARBERT es un encoder bidireccional entrenado por UBC-NLP sobre grandes volumenes de tuits arabes; segun los resultados de busqueda recopilados, ARBERT y MARBERT alcanzan de forma conjunta un nuevo estado del arte en ArBench, superando a mBERT, XLM-R (Base y Large) y AraBERT en 37 de las 45 tareas de clasificacion evaluadas (82,22 %). Esa especializacion en dialectos arabes es precisamente lo que hace relevante un ajuste de este tipo para sentimiento en redes sociales de Arabia Saudi.
 
@@ -62,17 +62,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 0,65 GB en FP32, 0,33 GB en FP16 y 0,16 GB en INT8 para los pesos. Sumando activaciones y overhead de runtime, un presupuesto de 1-2 GB de VRAM es suficiente para inferencia por lotes.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente (GTX 1650, RTX 3050, RTX 3060, T4). Para maximizar throughput en servidor, una T4, L4, A10G o A100 ofrecen margen sobrado; no se necesita hardware de gama alta para un encoder de 162,8 M de parametros.
 - Cabe en GPU consumer: si. Tambien cabe comodamente en CPU, con una latencia mayor pero funcional para lotes pequenos.
-- Opciones de despliegue: HuggingFace Transformers (pipeline de clasificacion de texto), PyTorch nativo, ONNX Runtime o TensorRT para optimizacion, TorchScript, y servidores como Triton Inference Server, TorchServe o una API propia con FastAPI. Las soluciones orientadas a modelos generativos (vLLM, llama.cpp, Ollama) no aplican de forma directa a un encoder BERT, aunque TGI contempla algunos modelos de tipo encoder.
+- Opciones de despliegue: Hugging Face Transformers (pipeline de clasificacion de texto), PyTorch nativo, ONNX Runtime o TensorRT para optimizacion, TorchScript, y servidores como Triton Inference Server, TorchServe o una API propia con FastAPI. Las soluciones orientadas a modelos generativos (vLLM, llama.cpp, Ollama) no aplican de forma directa a un encoder BERT, aunque TGI contempla algunos modelos de tipo encoder.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones de latencia ni de tokens por segundo para este repositorio.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LeenAlsahli/saudi-marbert-sentiment | 162,8 M | No disponible | No disponible (orientado a arabe por su base probable) | Apache 2.0 | Sin benchmarks publicados | HuggingFace, 0 descargas |
-| UBC-NLP/MARBERT | No disponible en la busqueda | No disponible | Arabe (dialectal y estandar) | No disponible en la busqueda | Estado del arte conjunto en 37/45 tareas de ArBench (82,22 %) junto a ARBERT | HuggingFace |
-| UBC-NLP/ARBERT | No disponible en la busqueda | No disponible | Arabe | No disponible en la busqueda | Estado del arte conjunto en ArBench junto a MARBERT | HuggingFace y GitHub |
-| AraBERT | No disponible en la busqueda | No disponible | Arabe | No disponible en la busqueda | Usado como baseline en ArBench, superado por ARBERT y MARBERT | HuggingFace |
+| LeenAlsahli/saudi-marbert-sentiment | 162,8 M | No disponible | No disponible (orientado a arabe por su base probable) | Apache 2.0 | Sin benchmarks publicados | Hugging Face, 0 descargas |
+| UBC-NLP/MARBERT | No disponible en la busqueda | No disponible | Arabe (dialectal y estandar) | No disponible en la busqueda | Estado del arte conjunto en 37/45 tareas de ArBench (82,22 %) junto a ARBERT | Hugging Face |
+| UBC-NLP/ARBERT | No disponible en la busqueda | No disponible | Arabe | No disponible en la busqueda | Estado del arte conjunto en ArBench junto a MARBERT | Hugging Face y GitHub |
+| AraBERT | No disponible en la busqueda | No disponible | Arabe | No disponible en la busqueda | Usado como baseline en ArBench, superado por ARBERT y MARBERT | Hugging Face |
 
 Nota: los datos de los modelos comparables proceden unicamente de los fragmentos de busqueda recopilados; conviene verificar parametros, contexto y licencia en las model cards originales antes de tomar decisiones de integracion.
 
@@ -91,7 +91,7 @@ Nota: los datos de los modelos comparables proceden unicamente de los fragmentos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeenAlsahli/saudi-marbert-sentiment
+- Modelo en Hugging Face: https://huggingface.co/LeenAlsahli/saudi-marbert-sentiment
 - Modelo base MARBERT (UBC-NLP): https://huggingface.co/UBC-NLP/MARBERT
 - Repositorio GitHub de MARBERT y ARBERT: https://github.com/UBC-NLP/marbert
 - Articulo sobre deteccion de spam y sentimiento en tuits arabes con MARBERT (caso STC): https://arxiv.org/abs/2606.25495v1

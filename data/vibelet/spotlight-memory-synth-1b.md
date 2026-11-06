@@ -68,7 +68,7 @@ La comparacion se limita a parametros, contexto y licencia, porque no hay benchm
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Spotlight Memory Synth 1B (Vibelet) | ~50M | 16.384 tokens de entrenamiento | MIT | Pesos safetensors en HuggingFace; runner propio |
+| Spotlight Memory Synth 1B (Vibelet) | ~50M | 16.384 tokens de entrenamiento | MIT | Pesos safetensors en Hugging Face; runner propio |
 | GPT-2 small | 124M | 1.024 tokens | Modified MIT | Ampliamente disponible; soporte nativo en runners estandar |
 | Pythia-70M | 70M | 2.048 tokens | Apache 2.0 | Pesos publicos; soporte en runners estandar |
 | Qwen2.5-0.5B | ~494M | 32.768 tokens | Apache 2.0 | Pesos publicos; soporte en vLLM, llama.cpp y Ollama |
@@ -90,8 +90,8 @@ Rendimiento comparado: no disponible. No existen cifras de benchmarks del modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vibelet/spotlight-memory-synth-1b
+- Modelo en Hugging Face: https://huggingface.co/Vibelet/spotlight-memory-synth-1b
 - Blog original de Spotlight Memory (Percepta Research): https://percepta.ai/blog/spotlight-memory
 - Demo interactiva en navegador: https://vibelet-spotlight-demo.hf.space
-- Codigo de la demo (HuggingFace Space): https://huggingface.co/spaces/Vibelet/spotlight-demo
+- Codigo de la demo (Hugging Face Space): https://huggingface.co/spaces/Vibelet/spotlight-demo
 - Perfil del autor: https://huggingface.co/Vibelet

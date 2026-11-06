@@ -74,5 +74,5 @@ No se dispone de información para comparar este modelo con alternativas como Vi
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/PoojaCpc/model_033114196_vit_giant)
+- [Hugging Face del modelo](https://huggingface.co/PoojaCpc/model_033114196_vit_giant)
 - No se han encontrado otros enlaces relevantes en la búsqueda web (papers, blogs, repos, demos).

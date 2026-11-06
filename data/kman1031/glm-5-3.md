@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai (zai-org), publicado en HuggingFace a través del repositorio no oficial `kman1031/GLM-5.3`. Se trata de un transformer con arquitectura MoE (Mixture of Experts) y atención dispersa dinámica, identificado en la librería de transformers como `glm_moe_dsa`. Con 753.329.940.480 parámetros totales y un repositorio de 755,7 GB en safetensors, es un modelo de escala frontier pensado para tareas de codificación compleja, razonamiento de horizonte largo y agentes autónomos.
+GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai (zai-org), publicado en Hugging Face a través del repositorio no oficial `kman1031/GLM-5.3`. Se trata de un transformer con arquitectura MoE (Mixture of Experts) y atención dispersa dinámica, identificado en la librería de transformers como `glm_moe_dsa`. Con 753.329.940.480 parámetros totales y un repositorio de 755,7 GB en safetensors, es un modelo de escala frontier pensado para tareas de codificación compleja, razonamiento de horizonte largo y agentes autónomos.
 
 La propuesta central de GLM-5.3 es que reutiliza exactamente el mismo modelo base que GLM-5.2 y concentra todas las mejoras en el post-entrenamiento. Según la model card, esto se traduce en una mejora del 50% en su benchmark interno Z.ai Code Bench, además de alcanzar estado del arte open-source en Terminal Bench 3.0 y Agents' Last Exam. El modelo también muestra una capacidad emergente en ciberseguridad, con resultados destacados en CyberGym y ExploitGym.
 
@@ -106,7 +106,7 @@ Notas de evaluación recogidas en la model card: HLE con herramientas usa `tempe
 
 ## Enlaces
 
-- HuggingFace (repo consultado): https://huggingface.co/kman1031/GLM-5.3
+- Hugging Face (repo consultado): https://huggingface.co/kman1031/GLM-5.3
 - Repositorio oficial en GitHub: https://github.com/zai-org/GLM-5
 - Paper referenciado (arXiv:2602.15763): https://arxiv.org/abs/2602.15763
 - Cookbook de SGLang para GLM-5.3: https://cookbook.sglang.io/autoregressive/GLM/GLM-5.3

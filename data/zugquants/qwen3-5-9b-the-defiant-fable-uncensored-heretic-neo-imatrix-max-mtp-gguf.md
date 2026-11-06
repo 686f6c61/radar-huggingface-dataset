@@ -84,7 +84,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de benchmarks de raz
 
 | Modelo | Parámetros | Contexto | Rendimiento (ARC-C / HellaSwag / PIQA) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Defiant Fable 9B, GGUF) | ~8,95 B | 256k | 0,649 / 0,713 / 0,783 (bf16) | Apache 2.0 | GGUF en HuggingFace |
+| Este modelo (Defiant Fable 9B, GGUF) | ~8,95 B | 256k | 0,649 / 0,713 / 0,783 (bf16) | Apache 2.0 | GGUF en Hugging Face |
 | Qwen3.5-9B-Instruct | 9 B (no confirmado en la información) | No disponible | 0,571 / 0,683 / 0,770 (mxfp8) | No disponible | Modelo base de referencia |
 | Qwen3.5-27B-Instruct | 27 B (no confirmado) | No disponible | 0,557 / 0,533 / 0,706 (mxfp8) | No disponible | Modelo base de referencia |
 | Qwen3.6-27B-Instruct | 27 B (no confirmado) | No disponible | 0,647 / 0,773 / 0,806 (mxfp8) | No disponible | Modelo base de referencia |
@@ -107,7 +107,7 @@ Los datos de contexto y licencia de los modelos comparados no aparecen en la inf
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/zugquants/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/zugquants/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
 - Modelo base (fine-tune original de DavidAU): https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP
 - Alternativa de 27B recomendada por el autor: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Paper, blog técnico o demo: no disponible en la información proporcionada.

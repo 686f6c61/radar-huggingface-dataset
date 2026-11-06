@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen3-14B-Tulu-SFT-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo Rexhaif/Qwen3-14B-Tulu-SFT, publicada por el usuario mradermacher. El modelo subyacente parte de la familia Qwen3 de Alibaba (14 768 307 200 parámetros, aproximadamente 14,8 mil millones) y ha sido ajustado mediante supervisión fina (SFT) sobre el dataset Tulu, un corpus abierto de instrucciones y conversaciones de alta calidad desarrollado por el Allen Institute for AI. El resultado es un modelo orientado a diálogo e instrucciones, etiquetado como "conversational" en HuggingFace.
+Qwen3-14B-Tulu-SFT-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo Rexhaif/Qwen3-14B-Tulu-SFT, publicada por el usuario mradermacher. El modelo subyacente parte de la familia Qwen3 de Alibaba (14 768 307 200 parámetros, aproximadamente 14,8 mil millones) y ha sido ajustado mediante supervisión fina (SFT) sobre el dataset Tulu, un corpus abierto de instrucciones y conversaciones de alta calidad desarrollado por el Allen Institute for AI. El resultado es un modelo orientado a diálogo e instrucciones, etiquetado como "conversational" en Hugging Face.
 
 La relevancia de esta ficha reside en que mradermacher ofrece el modelo en once niveles de cuantización GGUF (desde Q2_K hasta Q8_0), lo que permite ejecutarlo en hardware de consumo con llama.cpp, Ollama o interfaces compatibles, sin necesidad de GPUs de centro de datos. El repositorio ocupa 102 GB en total, aunque cada archivo individual pesa entre 5,9 GB y 15,8 GB.
 
-No obstante, la información pública es limitada: la model card del cuantizador es genérica y no documenta el proceso de entrenamiento del modelo base, los datos exactos del SFT de Tulu ni los resultados de benchmarks. La licencia no está declarada en los metadatos de HuggingFace, lo que constituye una advertencia importante para uso comercial.
+No obstante, la información pública es limitada: la model card del cuantizador es genérica y no documenta el proceso de entrenamiento del modelo base, los datos exactos del SFT de Tulu ni los resultados de benchmarks. La licencia no está declarada en los metadatos de Hugging Face, lo que constituye una advertencia importante para uso comercial.
 
 ## Especificaciones técnicas
 
@@ -80,15 +80,15 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-14B-Tulu-SFT-GGUF (este) | 14,8 B | no disponible | no disponible | GGUF (11 cuantizaciones) | HuggingFace, 82 descargas |
-| Rexhaif/Qwen3-14B-Tulu-SFT (base) | 14,8 B | no disponible | no disponible | safetensors | HuggingFace |
-| Qwen3-14B (original de Alibaba) | 14,8 B | no disponible en esta ficha | no disponible en esta ficha | safetensors, GGUF (comunidad) | HuggingFace, ampliamente usado |
+| Qwen3-14B-Tulu-SFT-GGUF (este) | 14,8 B | no disponible | no disponible | GGUF (11 cuantizaciones) | Hugging Face, 82 descargas |
+| Rexhaif/Qwen3-14B-Tulu-SFT (base) | 14,8 B | no disponible | no disponible | safetensors | Hugging Face |
+| Qwen3-14B (original de Alibaba) | 14,8 B | no disponible en esta ficha | no disponible en esta ficha | safetensors, GGUF (comunidad) | Hugging Face, ampliamente usado |
 
 La comparación con alternativas de la misma categoría (por ejemplo, Llama-3.1-8B-Instruct o Mistral-7B-Instruct) no se puede realizar con rigor porque no se dispone de datos de benchmarks ni de contexto para este modelo. Se indica "no disponible" para cualquier comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: los metadatos de HuggingFace no especifican licencia, lo que impide confirmar si el uso comercial está permitido. Es imprescindible contactar con el autor o consultar el modelo base antes de usarlo en producción.
+- Licencia no declarada: los metadatos de Hugging Face no especifican licencia, lo que impide confirmar si el uso comercial está permitido. Es imprescindible contactar con el autor o consultar el modelo base antes de usarlo en producción.
 - Idioma limitado al inglés: los metadatos declaran únicamente `en`; el rendimiento en castellano no está garantizado.
 - Riesgo de alucinación: inherente a los modelos de 14B ajustados por SFT; no se han publicado evaluaciones de fidelidad.
 - Sesgos: no documentados por el autor; el dataset Tulu puede introducir sesgos propios de sus fuentes.
@@ -100,7 +100,7 @@ La comparación con alternativas de la misma categoría (por ejemplo, Llama-3.1-
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-14B-Tulu-SFT-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-14B-Tulu-SFT-GGUF
 - Modelo base: https://huggingface.co/Rexhaif/Qwen3-14B-Tulu-SFT
 - Página de descargas del cuantizador: https://hf.tst.eu/model#Qwen3-14B-Tulu-SFT-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

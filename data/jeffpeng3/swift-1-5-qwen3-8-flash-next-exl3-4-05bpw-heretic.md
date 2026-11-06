@@ -6,7 +6,7 @@ Swift-1.5-Qwen3.8-Flash-Next-EXL3-4.05bpw-heretic es una cuantización de 4,05 b
 
 El interés del artefacto es doble. Por un lado, reduce el peso del modelo a aproximadamente 4,05 bits por parámetro para hacer viable su despliegue en GPU de gama alta para consumidores. Por otro, incorpora las etiquetas `abliterated`, `uncensored` y el sufijo `heretic`, que indican que el modelo base ha sido modificado para eliminar o atenuar los mecanismos de rechazo y alineación de seguridad, algo relevante para quien busque un modelo sin filtros pero también un riesgo importante en entornos de producción.
 
-El modelo es multimodal de entrada imagen-texto (`image-text-to-text`), está etiquetado como conversacional y declara soporte de inglés y chino. El acceso está restringido en HuggingFace (gated), la licencia es `swift-open-license-1.0` (etiquetada como `license:other`) y el repositorio no cuenta con descargas ni valoraciones en el momento de redactar esta ficha, por lo que se trata de una publicación sin validación comunitaria.
+El modelo es multimodal de entrada imagen-texto (`image-text-to-text`), está etiquetado como conversacional y declara soporte de inglés y chino. El acceso está restringido en Hugging Face (gated), la licencia es `swift-open-license-1.0` (etiquetada como `license:other`) y el repositorio no cuenta con descargas ni valoraciones en el momento de redactar esta ficha, por lo que se trata de una publicación sin validación comunitaria.
 
 ## Especificaciones técnicas
 
@@ -51,7 +51,7 @@ Tampoco hay datos sobre el entrenamiento: ni volumen de tokens, ni composición 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni el repositorio del modelo ni los metadatos de HuggingFace incluyen cifras de MMLU, HumanEval, GSM8K, MMMU ni de evaluaciones multimodales, y tampoco se aporta una comparación entre los pesos EXL3 y el modelo base sin cuantizar.
+No se han publicado resultados de benchmarks en la información disponible. Ni el repositorio del modelo ni los metadatos de Hugging Face incluyen cifras de MMLU, HumanEval, GSM8K, MMMU ni de evaluaciones multimodales, y tampoco se aporta una comparación entre los pesos EXL3 y el modelo base sin cuantizar.
 
 ## Requisitos de hardware
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. Ni e
 
 | Modelo | Parámetros totales | Activos | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (EXL3 4,05 bpw) | 34,28B | No disponible | No disponible | swift-open-license-1.0 | EXL3 safetensors | Gated en HuggingFace |
+| Este modelo (EXL3 4,05 bpw) | 34,28B | No disponible | No disponible | swift-open-license-1.0 | EXL3 safetensors | Gated en Hugging Face |
 | ukisai/Swift1.5-Qwen3.8-Flash-Next (base) | No disponible en la información | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Alternativas MoE de ~30B de la misma familia | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -78,8 +78,8 @@ No se dispone de datos verificables sobre modelos alternativos de la misma categ
 - Riesgo de alucinación: no cuantificado. No hay evaluaciones publicadas de fidelidad ni de calibración, y la cuantización a 4,05 bpw puede incrementar la degradación en tareas de razonamiento frente a los pesos originales.
 - Idiomas: solo se declaran inglés y chino. El rendimiento en castellano no está documentado y previsiblemente será inferior.
 - Contexto: la longitud de ventana no está publicada, lo que impide planificar cargas con conversaciones largas o documentos extensos.
-- Licencia: `swift-open-license-1.0` está clasificada como `license:other` en HuggingFace. No se dispone del texto ni de las condiciones de uso comercial, redistribución o atribución; es imprescindible revisarlas antes de cualquier despliegue productivo.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción a la automatización de despliegues y a la reproducibilidad.
+- Licencia: `swift-open-license-1.0` está clasificada como `license:other` en Hugging Face. No se dispone del texto ni de las condiciones de uso comercial, redistribución o atribución; es imprescindible revisarlas antes de cualquier despliegue productivo.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción a la automatización de despliegues y a la reproducibilidad.
 - Sin validación comunitaria: cero descargas y cero valoraciones. No hay evidencia independiente de que la cuantización funcione correctamente ni de su calidad.
 - Procedencia dudosa: los metadatos indican fecha de creación 2026-10-25, posterior a la fecha habitual de consulta, y los tags hacen referencia a versiones de la familia Qwen (`qwen3.8-flash-next`, `qwen4_exp`) no verificables. Conviene confirmar el origen de los pesos antes de usarlos.
 - ExLlamaV3 está orientado a GPU NVIDIA; no hay soporte documentado para ROCm, Metal u otros backends en este formato.
@@ -87,7 +87,7 @@ No se dispone de datos verificables sobre modelos alternativos de la misma categ
 
 ## Enlaces
 
-- [Modelo en HuggingFace: jeffpeng3/Swift-1.5-Qwen3.8-Flash-Next-EXL3-4.05bpw-heretic](https://huggingface.co/jeffpeng3/Swift-1.5-Qwen3.8-Flash-Next-EXL3-4.05bpw-heretic)
+- [Modelo en Hugging Face: jeffpeng3/Swift-1.5-Qwen3.8-Flash-Next-EXL3-4.05bpw-heretic](https://huggingface.co/jeffpeng3/Swift-1.5-Qwen3.8-Flash-Next-EXL3-4.05bpw-heretic)
 - [Modelo base: ukisai/Swift1.5-Qwen3.8-Flash-Next](https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next)
 - Paper, blog técnico, repositorio de código y demo: no disponibles en la información proporcionada.
 - La búsqueda web realizada no devolvió ningún resultado relacionado con este modelo: los enlaces obtenidos corresponden a videojuegos sin relación con el artefacto, por lo que se omiten.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gemma-4-E4B-it-oQ6-mtp` es una cuantización mixta de precisión del modelo Gemma 4 E4B instruct, publicada por el usuario jancirnodziewiaty en HuggingFace. Se trata de una conversión a formato MLX (Apple Silicon) mediante la herramienta oQ (oMLX v0.7.3), que aplica cuantización afín de precisión mixta con un promedio efectivo de 7,341 bits por peso sobre un checkpoint de 8.019.880.782 parámetros. El resultado ocupa 7,4 GB en disco, lo que lo hace viable en equipos con memoria unificada de gama alta.
+`gemma-4-E4B-it-oQ6-mtp` es una cuantización mixta de precisión del modelo Gemma 4 E4B instruct, publicada por el usuario jancirnodziewiaty en Hugging Face. Se trata de una conversión a formato MLX (Apple Silicon) mediante la herramienta oQ (oMLX v0.7.3), que aplica cuantización afín de precisión mixta con un promedio efectivo de 7,341 bits por peso sobre un checkpoint de 8.019.880.782 parámetros. El resultado ocupa 7,4 GB en disco, lo que lo hace viable en equipos con memoria unificada de gama alta.
 
 El modelo subyacente, Gemma 4 E4B, es un modelo multimodal de la familia Gemma de Google que integra componentes de lenguaje, visión y audio, además de una cabeza MTP (multi-token prediction) destinada a decodificación especulativa. Esta ficha describe la versión cuantizada, no el modelo original, y por tanto las capacidades heredadas se infieren de la estructura de pesos publicada, no de una model card completa del autor.
 
@@ -80,5 +80,5 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- [HuggingFace: jancirnodziewiaty/gemma-4-E4B-it-oQ6e-mtp](https://huggingface.co/jancirnodziewiaty/gemma-4-E4B-it-oQ6e-mtp)
+- [Hugging Face: jancirnodziewiaty/gemma-4-E4B-it-oQ6e-mtp](https://huggingface.co/jancirnodziewiaty/gemma-4-E4B-it-oQ6e-mtp)
 - [oQ / oMLX (herramienta de cuantización)](https://github.com/jundot/omlx)

@@ -37,7 +37,7 @@ No aplica. El repositorio no contiene un modelo entrenado ni arquitectura alguna
 - Educacion: en un curso sobre escritura cientifica, el repositorio podria usarse para ilustrar la estructura de un analisis de paper (abstract, intro, prelim, method, exp, discussion).
 - Reutilizacion del contenido: al tener licencia MIT, el texto de `analysis.md` puede ser reutilizado, adaptado o integrado en otros documentos, siempre que se mantenga el aviso de licencia.
 - Analisis de generacion multimodal: aunque el archivo no es un modelo, el tema del paper analizado puede orientar a lectores sobre el estado del arte en generacion multimodal.
-- Verificacion de repositorios temporales: en el contexto de evaluar modelos en HuggingFace, este repositorio sirve como ejemplo de un "modelo" que no es realmente un modelo, algo que los desarrolladores deben saber identificar para evitar confusiones.
+- Verificacion de repositorios temporales: en el contexto de evaluar modelos en Hugging Face, este repositorio sirve como ejemplo de un "modelo" que no es realmente un modelo, algo que los desarrolladores deben saber identificar para evitar confusiones.
 
 ## Benchmarks y rendimiento
 
@@ -49,7 +49,7 @@ No aplica. No existe un modelo que ejecutar. El archivo `analysis.md` se puede a
 
 ## Comparativa con modelos similares
 
-No disponible. No existe un modelo comparable porque este repositorio no contiene un modelo de IA. Los repositorios de HuggingFace que si contienen modelos de generacion multimodal (por ejemplo, modelos como LLaVA o Gemini) son fundamentalmente distintos en proposito y contenido.
+No disponible. No existe un modelo comparable porque este repositorio no contiene un modelo de IA. Los repositorios de Hugging Face que si contienen modelos de generacion multimodal (por ejemplo, modelos como LLaVA o Gemini) son fundamentalmente distintos en proposito y contenido.
 
 ## Limitaciones y advertencias
 
@@ -62,6 +62,6 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jxsuzuki/tmp-summary
-- Perfil del autor en HuggingFace: https://huggingface.co/Jxsuzuki
+- Repositorio en Hugging Face: https://huggingface.co/Jxsuzuki/tmp-summary
+- Perfil del autor en Hugging Face: https://huggingface.co/Jxsuzuki
 - Modelos del autor: https://huggingface.co/Jxsuzuki/models

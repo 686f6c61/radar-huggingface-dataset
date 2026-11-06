@@ -98,6 +98,6 @@ Diferencias clave: los modelos de frase de proposito general (MiniLM, BGE) trata
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jumafernandez/trace-dialog-deep-tod
+- Modelo en Hugging Face: https://huggingface.co/jumafernandez/trace-dialog-deep-tod
 - Modelo base (encoder de turnos): https://huggingface.co/sergioburdisso/dialog2flow-joint-bert-base
 - Repositorio del agente que usa esta representacion: https://github.com/jumafernandez/dialog2agent

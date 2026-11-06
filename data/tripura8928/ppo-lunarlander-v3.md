@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tripura8928/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno `LunarLander-v3` de Gymnasium. Lo desarrolla el usuario Tripura8928 y se distribuye a traves de HuggingFace Hub, utilizando la libreria `stable-baselines3` como implementacion de referencia. El modelo resuelve la tarea de aterrizar una nave lunar en una plataforma designada, un problema clasico de control continuo con acciones discretas.
+El modelo `Tripura8928/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno `LunarLander-v3` de Gymnasium. Lo desarrolla el usuario Tripura8928 y se distribuye a traves de Hugging Face Hub, utilizando la libreria `stable-baselines3` como implementacion de referencia. El modelo resuelve la tarea de aterrizar una nave lunar en una plataforma designada, un problema clasico de control continuo con acciones discretas.
 
 La relevancia de este modelo reside en su funcion como ejemplo didactico y punto de partida para experimentos en RL: demuestra la aplicacion de PPO en un entorno de referencia estandar, con una recompensa media declarada de 259.97 ± 24.33. No se trata de un modelo de lenguaje ni de un sistema multimodal; es exclusivamente un agente de RL para un entorno de simulacion especifico. La informacion publica disponible es minima: no se especifican detalles de arquitectura de red, hiperparametros, ni configuracion de entrenamiento.
 
@@ -35,11 +35,11 @@ El entorno `LunarLander-v3` es una version actualizada del clasico LunarLander, 
 ## Casos de uso
 
 - Educacion en aprendizaje por refuerzo: el modelo sirve como ejemplo funcional de un agente PPO entrenado, util para que estudiantes e investigadores comparen comportamientos, analicen politicas aprendidas y experimenten con hiperparametros.
-- Benchmark de algoritmos RL: al estar disponible en HuggingFace Hub, puede utilizarse como referencia para comparar el rendimiento de otros algoritmos (DQN, SAC, TD3) en el mismo entorno, bajo las mismas condiciones de evaluacion.
+- Benchmark de algoritmos RL: al estar disponible en Hugging Face Hub, puede utilizarse como referencia para comparar el rendimiento de otros algoritmos (DQN, SAC, TD3) en el mismo entorno, bajo las mismas condiciones de evaluacion.
 - Investigacion en robustez de politicas: dado que la recompensa tiene una desviacion estandar de ±24.33, el modelo puede emplearse para estudiar la variabilidad del comportamiento del agente entre episodios y analizar la estabilidad de la politica aprendida.
 - Desarrollo de entornos personalizados: los usuarios pueden cargar el modelo y evaluarlo en variantes modificadas de LunarLander (cambios en la gravedad, en la forma de la plataforma, etc.) para estudiar la generalizacion.
 - Integracion en pipelines de RLHF (Reinforcement Learning from Human Feedback): aunque el modelo no es un LLM, su estructura de entrenamiento con PPO puede servir como referencia para quienes implementan RLHF en modelos de lenguaje, dado que PPO es el algoritmo comun en ese ambito.
-- Demostracion de despliegue de modelos RL: el repositorio muestra el flujo completo de publicacion de un agente entrenado en HuggingFace Hub, incluyendo la integracion con `huggingface_sb3`, lo que resulta util como plantilla para publicar otros agentes.
+- Demostracion de despliegue de modelos RL: el repositorio muestra el flujo completo de publicacion de un agente entrenado en Hugging Face Hub, incluyendo la integracion con `huggingface_sb3`, lo que resulta util como plantilla para publicar otros agentes.
 
 ## Benchmarks y rendimiento
 
@@ -61,7 +61,7 @@ No se han publicado resultados comparativos con otros algoritmos o configuracion
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre modelos comparables en el mismo entorno con la misma libreria. En el ecosistema de HuggingFace Hub existen otros agentes entrenados para LunarLander (por ejemplo, con DQN o SAC), pero no se han encontrado referencias concretas en la informacion proporcionada. Como referencia general, un agente DQN bien entrenado suele alcanzar recompensas medias similares (en torno a 250-280) en LunarLander-v2, mientras que SAC, al ser un algoritmo de actor-critico con exploracion estocastica, puede lograr resultados comparables o ligeramente superiores en algunos entornos. No obstante, estas comparaciones son orientativas y no se basan en datos verificados de este modelo concreto.
+No se dispone de informacion sobre modelos comparables en el mismo entorno con la misma libreria. En el ecosistema de Hugging Face Hub existen otros agentes entrenados para LunarLander (por ejemplo, con DQN o SAC), pero no se han encontrado referencias concretas en la informacion proporcionada. Como referencia general, un agente DQN bien entrenado suele alcanzar recompensas medias similares (en torno a 250-280) en LunarLander-v2, mientras que SAC, al ser un algoritmo de actor-critico con exploracion estocastica, puede lograr resultados comparables o ligeramente superiores en algunos entornos. No obstante, estas comparaciones son orientativas y no se basan en datos verificados de este modelo concreto.
 
 ## Limitaciones y advertencias
 
@@ -74,7 +74,7 @@ No se dispone de informacion sobre modelos comparables en el mismo entorno con l
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Tripura8928/ppo-LunarLander-v3
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Tripura8928/ppo-LunarLander-v3
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Libreria huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - Documentacion de Gymnasium (LunarLander): https://gymnasium.farama.org/environments/box2d/lunar_lander/

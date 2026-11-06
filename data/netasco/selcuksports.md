@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Netasco/Selcuksports` no es un modelo de inteligencia artificial. Es un repositorio alojado en HuggingFace cuyo contenido íntegro (README y metadatos) consiste en texto promocional en turco de un servicio de retransmisión deportiva (`Selçuksports`, `Selçuk Spor TV`), acompañado de enlaces externos y una imagen alojada en un CDN de terceros. No hay ficheros de pesos, no hay `pipeline_tag`, no hay licencia declarada, no hay idiomas declarados y el repositorio no tiene descargas ni interacciones.
+`Netasco/Selcuksports` no es un modelo de inteligencia artificial. Es un repositorio alojado en Hugging Face cuyo contenido íntegro (README y metadatos) consiste en texto promocional en turco de un servicio de retransmisión deportiva (`Selçuksports`, `Selçuk Spor TV`), acompañado de enlaces externos y una imagen alojada en un CDN de terceros. No hay ficheros de pesos, no hay `pipeline_tag`, no hay licencia declarada, no hay idiomas declarados y el repositorio no tiene descargas ni interacciones.
 
-El autor, `Netasco`, publicó el repositorio el 25 de octubre de 2026 y lo actualizó veinte minutos después; el único tag presente es `region:us`. El patrón (nombre de marca + palabras clave de emisión deportiva + enlaces salientes + ausencia total de artefactos) es característico del abuso de HuggingFace como plataforma de posicionamiento SEO y de redirección de tráfico, no de la publicación de un modelo.
+El autor, `Netasco`, publicó el repositorio el 25 de octubre de 2026 y lo actualizó veinte minutos después; el único tag presente es `region:us`. El patrón (nombre de marca + palabras clave de emisión deportiva + enlaces salientes + ausencia total de artefactos) es característico del abuso de Hugging Face como plataforma de posicionamiento SEO y de redirección de tráfico, no de la publicación de un modelo.
 
 Por tanto, esta ficha documenta la ausencia de cualquier elemento evaluable técnicamente: no existen arquitectura, parámetros, tokenizador, contexto, dataset de entrenamiento ni resultados de benchmarks que analizar. Los resultados de búsqueda web proporcionados son completamente ajenos al repositorio y no se han utilizado como fuente.
 
@@ -83,11 +83,11 @@ No disponible. No procede comparacion con modelos de la misma categoria porque e
 - Riesgo de redireccion y phishing: los enlaces salientes de repositorios de este tipo pueden cambiar de destino a posteriori. No se recomienda seguirlos desde entornos corporativos.
 - Sin garantias de procedencia: el autor no aporta informacion sobre el origen del nombre del repositorio ni sobre la relacion con la marca `Selçuksports`, lo que impide descartar suplantacion.
 - Resultados de busqueda no fiables: las entradas devueltas por la busqueda web para este repositorio son ajenas al mismo (contenido biografico y para adultos) y no deben citarse como documentacion del modelo.
-- Uso en produccion: desaconsejado en cualquier escenario. La recomendacion es no desplegar, no descargar y reportar el repositorio a HuggingFace si se detecta en catalogos internos.
+- Uso en produccion: desaconsejado en cualquier escenario. La recomendacion es no desplegar, no descargar y reportar el repositorio a Hugging Face si se detecta en catalogos internos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Netasco/Selcuksports
+- Repositorio en Hugging Face: https://huggingface.co/Netasco/Selcuksports
 - Dominio externo referenciado en el README (no verificado, no recomendado su acceso): `ligtvizle.altervista.org`
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.
 - Los resultados de busqueda web proporcionados no guardan relacion con el repositorio y se omiten deliberadamente.

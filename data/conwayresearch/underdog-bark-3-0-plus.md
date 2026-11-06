@@ -82,18 +82,18 @@ Rendimiento de inferencia declarado: un minuto de audio transcrito en aproximada
 - GPU recomendadas: no disponibles. El cargador Python admite `device="cuda"`, `"cpu"` y `"mps"`, pero no se especifican modelos de GPU concretos ni requisitos minimos para CUDA.
 - Cabe en hardware de consumo por tamano de pesos; la limitacion practica es la memoria necesaria para audios largos, no el tamano del modelo.
 - Opciones de despliegue: runtime nativo Swift de Underdog sobre MLX (Apple Silicon), `bark_mlx.py` con mlx-audio 0.5.3 y mlx 0.32.2, y `bark_loader.py` con transformers 5.19.0, torch 2.8.0, constriction 0.5.0, numpy 2.4.6, soundfile 0.14.0, soxr 1.1.0 y librosa 0.11.0. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Libreria declarada en HuggingFace: `transformers`; el tag `coreml` aparece en los metadatos, aunque la documentacion describe ejecucion via MLX.
+- Libreria declarada en Hugging Face: `transformers`; el tag `coreml` aparece en los metadatos, aunque la documentacion describe ejecucion via MLX.
 - Latencia: aproximadamente 1,5 segundos por minuto de audio en Apple M2 (41x tiempo real). No hay datos de latencia en GPU.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Descarga | WER medio (7 sets EN) | AMI | Licencia | Disponibilidad |
 |---|---|---:|---:|---:|---|---|
-| **Underdog Bark 3.0 Plus** | 0,6B | 180 MB | **4,76** | 7,76 | CC BY 4.0 | HuggingFace (ConwayResearch) |
-| Bark 3.0 | No disponible | 163 MB | 4,94 | 7,82 | No disponible en la informacion | HuggingFace (misma familia) |
-| Parakeet TDT 0.6B v3 | 0,6B | 2.508 MB | 4,94 | 9,42 | No disponible en la informacion | HuggingFace (nvidia), modelo base |
-| Qwen3-ASR-0.6B | 0,6B | 1.876 MB | 5,16 | 9,33 | No disponible en la informacion | HuggingFace |
-| Whisper large-v3-turbo | No disponible | 1.618 MB | 6,58 | 13,88 | No disponible en la informacion | HuggingFace (OpenAI) |
+| **Underdog Bark 3.0 Plus** | 0,6B | 180 MB | **4,76** | 7,76 | CC BY 4.0 | Hugging Face (ConwayResearch) |
+| Bark 3.0 | No disponible | 163 MB | 4,94 | 7,82 | No disponible en la informacion | Hugging Face (misma familia) |
+| Parakeet TDT 0.6B v3 | 0,6B | 2.508 MB | 4,94 | 9,42 | No disponible en la informacion | Hugging Face (nvidia), modelo base |
+| Qwen3-ASR-0.6B | 0,6B | 1.876 MB | 5,16 | 9,33 | No disponible en la informacion | Hugging Face |
+| Whisper large-v3-turbo | No disponible | 1.618 MB | 6,58 | 13,88 | No disponible en la informacion | Hugging Face (OpenAI) |
 
 Frente a su modelo base, Bark 3.0 Plus reduce el WER medio de 4,94 % a 4,76 % y el de AMI de 9,42 % a 7,76 % con una decima parte del tamano de descarga. Frente a Whisper large-v3-turbo, la mejora es de 1,82 puntos porcentuales de WER medio y de 6,12 puntos en AMI, con un fichero 9 veces menor. El coste de esta reduccion es que solo soporta ingles.
 
@@ -112,7 +112,7 @@ Frente a su modelo base, Bark 3.0 Plus reduce el WER medio de 4,94 % a 4,76 % y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Plus
+- Modelo en Hugging Face: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Plus
 - Variante con limpieza de muletillas (Bark 3.0 Clean): https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Clean
 - Modelo base (NVIDIA Parakeet TDT 0.6B v3): https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Runtime y aplicacion Underdog: https://underdog.ai

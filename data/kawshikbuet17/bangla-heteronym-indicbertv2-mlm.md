@@ -94,7 +94,7 @@ No se dispone de datos de parametros, contexto ni licencia de los modelos altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kawshikbuet17/bangla-heteronym-indicbertv2-mlm
+- Modelo en Hugging Face: https://huggingface.co/kawshikbuet17/bangla-heteronym-indicbertv2-mlm
 - Modelo base: https://huggingface.co/ai4bharat/IndicBERTv2-MLM-only
 - Dataset de heteronimos: https://huggingface.co/datasets/kawshikbuet17/bangla-heteronyms
 - Repositorio del benchmark y codigo de carga: https://github.com/kawshikbuet17/bangla-heteronym-benchmark

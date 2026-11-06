@@ -76,7 +76,7 @@ No hay datos de rendimiento comparativo entre estos modelos de borrador. Se debe
 
 ## Enlaces
 
-- Repositorio HuggingFace del checkpoint: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-NoWindow-epoch-8-step-200000
+- Repositorio Hugging Face del checkpoint: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-NoWindow-epoch-8-step-200000
 - Colección de checkpoints EAGLE3 de huluhuluu: https://huggingface.co/collections/huluhuluu/qwen3-4b-instruct-2507-eagle3-sharegpt-checkpoints
 - Repositorio oficial EAGLE-Qwen3 (implementación de EAGLE-1/2/3): https://github.com/Yunhai-Hu/EAGLE-Qwen3
 - Página del modelo base en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507

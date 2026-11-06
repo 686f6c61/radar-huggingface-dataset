@@ -71,7 +71,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (30
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/jtd-d5-69-30B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/jtd-d5-69-30B-GGUF
 - Modelo base: https://huggingface.co/laion/jtd-d5-69-30B
 - Perfil del autor: https://huggingface.co/mradermacher
 - Pagina de solicitudes de modelos del autor: https://huggingface.co/mradermacher/model_requests

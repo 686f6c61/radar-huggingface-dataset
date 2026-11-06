@@ -4,7 +4,7 @@
 
 El repositorio `kabir-pjnc2/few-shot-multimodal-notes-2024` no es un modelo de aprendizaje automatico entrenado, sino una coleccion de notas de lectura y el esbozo de un experimento sobre few-shot multimodal. El propio autor lo describe como material exploratorio que enfatiza "lo que aun queda por probar" en lugar de presentar resultados, artefactos de codigo o checkpoints. Por tanto, no debe interpretarse como un sistema desplegable ni como una contribucion con metricas verificadas.
 
-Aunque la model card y las etiquetas de HuggingFace incluyen `transformer` y `safetensors`, y los metadatos de safetensors declaran 16.576 parametros totales, el tamano del repositorio es de 0,0 GB y no se documenta ninguna arquitectura concreta, dato de entrenamiento ni capacidad funcional. Las secciones marcadas como planes o hipotesis no son resultados experimentales, segun advierte el propio README.
+Aunque la model card y las etiquetas de Hugging Face incluyen `transformer` y `safetensors`, y los metadatos de safetensors declaran 16.576 parametros totales, el tamano del repositorio es de 0,0 GB y no se documenta ninguna arquitectura concreta, dato de entrenamiento ni capacidad funcional. Las secciones marcadas como planes o hipotesis no son resultados experimentales, segun advierte el propio README.
 
 Su relevancia actual es, por tanto, documental: sirve como punto de partida para delimitar una pregunta de investigacion sobre few-shot multimodal, identificar posibles variables de confusion y proponer comparaciones con lineas base emparejadas. No hay evidencia de mejoras en benchmarks, ablaciones completas, codigo liberado ni checkpoint entrenado.
 
@@ -75,5 +75,5 @@ No disponible. Este repositorio no es un modelo entrenado, por lo que no procede
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kabir-pjnc2/few-shot-multimodal-notes-2024
+- Hugging Face: https://huggingface.co/kabir-pjnc2/few-shot-multimodal-notes-2024
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

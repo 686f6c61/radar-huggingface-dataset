@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-100m-dan-eng` es un modelo de lenguaje bilingüe (danés-inglés) desarrollado por el usuario de HuggingFace `Beetle-FineWeb-100M`. Se trata de un decoder pequeño (etiquetado como `pico_decoder`) con 193,8 millones de parámetros, entrenado sobre el dataset FineWeb-100M. El nombre sugiere un entrenamiento secuencial bilingüe con una proporción de datos del 33% y 67% entre los dos idiomas, aunque no se dispone de documentación oficial que confirme estos detalles.
+El modelo `beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-100m-dan-eng` es un modelo de lenguaje bilingüe (danés-inglés) desarrollado por el usuario de Hugging Face `Beetle-FineWeb-100M`. Se trata de un decoder pequeño (etiquetado como `pico_decoder`) con 193,8 millones de parámetros, entrenado sobre el dataset FineWeb-100M. El nombre sugiere un entrenamiento secuencial bilingüe con una proporción de datos del 33% y 67% entre los dos idiomas, aunque no se dispone de documentación oficial que confirme estos detalles.
 
-El modelo está diseñado para generación de texto y se distribuye en formato safetensors. Su relevancia actual es limitada debido a la ausencia de documentación técnica, benchmarks y una licencia clara. No obstante, puede resultar de interés para experimentación con modelos pequeños bilingües o como base para fine-tuning en tareas específicas de danés e inglés. La ficha de HuggingFace es una plantilla genérica sin información sustancial, y los resultados de búsqueda web solo muestran modelos hermanos con otros pares de idiomas (ell-eng, est-eng, nld-eng) sin especificaciones adicionales.
+El modelo está diseñado para generación de texto y se distribuye en formato safetensors. Su relevancia actual es limitada debido a la ausencia de documentación técnica, benchmarks y una licencia clara. No obstante, puede resultar de interés para experimentación con modelos pequeños bilingües o como base para fine-tuning en tareas específicas de danés e inglés. La ficha de Hugging Face es una plantilla genérica sin información sustancial, y los resultados de búsqueda web solo muestran modelos hermanos con otros pares de idiomas (ell-eng, est-eng, nld-eng) sin especificaciones adicionales.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables de la misma categoría. 
 
 ## Enlaces
 
-- [HuggingFace - Beetle-FineWeb-100M/beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-100m-dan-eng](https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-100m-dan-eng)
+- [Hugging Face - Beetle-FineWeb-100M/beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-100m-dan-eng](https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-100m-dan-eng)
 - [Modelo hermano: beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-100m-ell-eng-1xa100](https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-100m-ell-eng-1xa100)
 - [Modelo hermano: beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-100m-est-eng-1xa100](https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-100m-est-eng-1xa100)
 - [Página de análisis en free2aitools.com](https://free2aitools.com/model/beetle-fineweb-100m/beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-100m-ell-eng-1xa100)

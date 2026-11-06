@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparativos publicados para este checkpoi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Diluner/gpt54-mini-sequential-qwen3-4b-rose-s1-babyai-20260920
+- Modelo en Hugging Face: https://huggingface.co/Diluner/gpt54-mini-sequential-qwen3-4b-rose-s1-babyai-20260920
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Otros enlaces relevantes (papers, blogs, repos, demos): no disponible en la informacion proporcionada. La busqueda web realizada no devolvio resultados relacionados con este modelo, sino paginas de agencias de desarrollo web en Bonn sin vinculacion con el artefacto.

@@ -88,7 +88,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de los modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xxvoidsxx/kimeru
+- Modelo en Hugging Face: https://huggingface.co/xxvoidsxx/kimeru
 - Sitio del autor: https://xvoidsx.org
 - Seguimiento del proyecto: Linear, issue XVOIDSX-57 (sin URL publica en la informacion disponible)
 - Referencias citadas por el autor: kev (Jared Palmer), tev1 (Together AI), d1 (Liquid AI), OpenJev; sin URLs proporcionadas en la informacion disponible.

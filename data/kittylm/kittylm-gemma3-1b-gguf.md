@@ -46,7 +46,7 @@ Respecto a los datos de entrenamiento, la model card enlaza el dataset KittyLM/k
 - Demo de integracion de GGUF en herramientas: sirve para validar el flujo `hf download` + `ollama create` + `ollama run` descrito en la model card antes de invertir en modelos mayores.
 - Prototipado rapido en portatiles sin GPU: con ~0,8 GB de pesos, permite iterar sobre prompts y plantillas de chat en cualquier maquina, incluida una Raspberry Pi.
 - Proyectos de generacion creativa con estilo: textos breves, respuestas de comunidad o contenido para redes con un tono "kitten-speak" consistente.
-- Ejemplo didactico de pipeline LoRA + cuantizacion: util para explicar como se pasa de un checkpoint HuggingFace a un GGUF Q4_K_M y como se aplica una plantilla de chat personalizada.
+- Ejemplo didactico de pipeline LoRA + cuantizacion: util para explicar como se pasa de un checkpoint Hugging Face a un GGUF Q4_K_M y como se aplica una plantilla de chat personalizada.
 - Pruebas de despliegue en edge o entornos sin GPU: sirve como banco de pruebas de llama.cpp en CPU para medir latencia antes de escalar a modelos mayores.
 
 ## Benchmarks y rendimiento
@@ -87,7 +87,7 @@ Los datos de rendimiento comparado no estan disponibles; la comparacion se limit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KittyLM/kittylm-gemma3-1b-gguf
+- Repositorio Hugging Face: https://huggingface.co/KittyLM/kittylm-gemma3-1b-gguf
 - Modelo base del finetune: https://huggingface.co/KittyLM/kittylm-gemma3-1b
 - Modelo original de Google: https://huggingface.co/google/gemma-3-1b-it
 - Dataset de entrenamiento y `system_prompt.txt`: https://huggingface.co/datasets/KittyLM/kittylm-data

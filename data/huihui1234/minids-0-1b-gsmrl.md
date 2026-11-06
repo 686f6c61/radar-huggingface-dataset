@@ -4,7 +4,7 @@
 
 minids-0.1b-gsmrl es un modelo de lenguaje de pequena escala (494 millones de parametros) desarrollado por el usuario huihui1234, que constituye un experimento educativo de replicacion del pipeline completo de entrenamiento de DeepSeek-V3 a escala reducida. El autor declara haber imitado la arquitectura de DeepSeek-V3 y haber recorrido las tres fases tipicas del entrenamiento moderno de LLM: entrenamiento del tokenizador, preentrenamiento del modelo y postentrenamiento (instruccion completa mas DPO). Posteriormente aplico GRPO (Group Relative Policy Optimization) sobre el dataset gsm8k_chinese para reproducir el fenomeno del "aha moment" descrito en DeepSeek-R1.
 
-El modelo se construye sobre la arquitectura Qwen2 (segun los tags de HuggingFace) y esta especializado en razonamiento matematico en chino mediante aprendizaje por refuerzo con funciones de recompensa basadas en reglas. Su relevancia es fundamentalmente didactica: demuestra que es posible ejecutar el ciclo completo de entrenamiento tipo DeepSeek (preentrenamiento, SFT, DPO y RL con GRPO) en hardware asequible y con un modelo de menos de 500 millones de parametros.
+El modelo se construye sobre la arquitectura Qwen2 (segun los tags de Hugging Face) y esta especializado en razonamiento matematico en chino mediante aprendizaje por refuerzo con funciones de recompensa basadas en reglas. Su relevancia es fundamentalmente didactica: demuestra que es posible ejecutar el ciclo completo de entrenamiento tipo DeepSeek (preentrenamiento, SFT, DPO y RL con GRPO) en hardware asequible y con un modelo de menos de 500 millones de parametros.
 
 Se trata de un checkpoint experimental con muy poca traccion en la comunidad (6 descargas, 1 like en el momento de la consulta) y sin model card detallada en cuanto a datos de preentrenamiento, composicion del corpus o evaluacion sistematica. No debe confundirse con un modelo listo para produccion.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| minids-0.1b-gsmrl | 494 M | no disponible | RL con GRPO sobre GSM8K chino | MIT | HuggingFace |
-| Qwen2.5-0.5B | ~494 M | 32 K (segun version) | LLM generalista multilingue | Apache 2.0 | HuggingFace |
-| SmolLM2-360M | 360 M | 8 K | LLM generalista en ingles | Apache 2.0 | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,5 B | 32 K | Razonamiento destilado de R1 | MIT | HuggingFace |
+| minids-0.1b-gsmrl | 494 M | no disponible | RL con GRPO sobre GSM8K chino | MIT | Hugging Face |
+| Qwen2.5-0.5B | ~494 M | 32 K (segun version) | LLM generalista multilingue | Apache 2.0 | Hugging Face |
+| SmolLM2-360M | 360 M | 8 K | LLM generalista en ingles | Apache 2.0 | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,5 B | 32 K | Razonamiento destilado de R1 | MIT | Hugging Face |
 
 La comparacion con Qwen2.5-0.5B es la mas directa por tamano y por compartir familia arquitectonica, pero minids-0.1b-gsmrl esta especializado en matematicas en chino y carece de evaluacion publica, mientras que Qwen2.5-0.5B ofrece contexto documentado, multilingue y benchmarks. Frente a DeepSeek-R1-Distill-Qwen-1.5B, el modelo de huihui1234 es tres veces menor y no usa destilacion, sino RL directo con GRPO sobre un modelo propio.
 
@@ -81,7 +81,7 @@ La comparacion con Qwen2.5-0.5B es la mas directa por tamano y por compartir fam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huihui1234/minids-0.1b-gsmrl
+- Modelo en Hugging Face: https://huggingface.co/huihui1234/minids-0.1b-gsmrl
 - Dataset utilizado: https://huggingface.co/datasets/swulling/gsm8k_chinese
 - Framework de entrenamiento (TRL): https://github.com/huggingface/trl
 - Captura checkpoint 300: https://github.com/user-attachments/assets/0697d63c-ac59-4068-964d-c633e611f459

@@ -22,11 +22,11 @@ Es relevante ahora porque se publica explícitamente como un artefacto de invest
 | Formato de pesos | SafeTensors |
 | Capas / tamano oculto / cabezas de atencion | 12 / 384 / 12 |
 | Tamano del tokenizer | 30.536, incluidos 14 tokens de tarea/campo |
-| Pipeline (HuggingFace) | text-classification |
+| Pipeline (Hugging Face) | text-classification |
 | Libreria | transformers (requiere custom_code y trust_remote_code=True) |
 | Tamano del repositorio | 0,1 GB |
 | SHA-256 de los pesos | 33e2e19437aaea4b7ebadf3e3fc2102cf700197ece3cff31b9fc6d5fee5ca81c |
-| Fecha de creacion (segun HuggingFace) | 2026-09-23 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-23 |
 
 ## Arquitectura y entrenamiento
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - El modelo cabe sin dificultad en cualquier GPU de consumo; tambien puede ejecutarse en CPU, ya que el checkpoint completo ocupa 0,1 GB en el repositorio.
 - GPU recomendadas: no se especifican en la informacion disponible. Por tamano, cualquier GPU con al menos 1-2 GB de VRAM libre es suficiente; GPU de datacenter como A100 o H100 solo tendrian sentido para procesar grandes lotes en paralelo.
 - El cuello de botella previsible no es la memoria sino el throughput de evaluacion: cada registro se trunca a 256 tokens y las tareas que requieren multiples pasajes de evidencia consumen varias evaluaciones por consulta.
-- Opciones de despliegue: la unica via documentada es HuggingFace transformers con `trust_remote_code=True` y PyTorch (>=2.6,<3) junto con transformers (>=4.53,<5) y safetensors. No se mencionan en la informacion disponible soportes para vLLM, llama.cpp, Ollama, TGI ni exportacion a GGUF u ONNX.
+- Opciones de despliegue: la unica via documentada es Hugging Face transformers con `trust_remote_code=True` y PyTorch (>=2.6,<3) junto con transformers (>=4.53,<5) y safetensors. No se mencionan en la informacion disponible soportes para vLLM, llama.cpp, Ollama, TGI ni exportacion a GGUF u ONNX.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -101,7 +101,7 @@ Para alternativas de la misma categoria (metricas automaticas de evaluacion de R
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Quicksort-fr/T-CRED-SL
+- Modelo en Hugging Face: https://huggingface.co/Quicksort-fr/T-CRED-SL
 - Licencia: https://huggingface.co/Quicksort-fr/T-CRED-SL/blob/main/LICENSE.md
 - Contrato de uso completo: https://huggingface.co/Quicksort-fr/T-CRED-SL/blob/main/USAGE.md
 - Ejemplo ejecutable: https://huggingface.co/Quicksort-fr/T-CRED-SL/blob/main/example.py

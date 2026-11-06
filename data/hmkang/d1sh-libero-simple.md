@@ -88,7 +88,7 @@ No se dispone de datos de otros modelos VLA comparables en la información propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmkang/d1sh-libero-simple
+- Modelo en Hugging Face: https://huggingface.co/hmkang/d1sh-libero-simple
 - Dataset de entrenamiento: https://huggingface.co/datasets/hmkang/libero-discrete-tokens
 - Código (rama `hyeonmo/libero`): https://github.com/JunHoo-Lee/d1-showharness-rl/tree/hyeonmo/libero
 - Modelo base LiquidAI/d1-3B: https://huggingface.co/LiquidAI/d1-3B

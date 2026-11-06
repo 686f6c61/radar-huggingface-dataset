@@ -21,7 +21,7 @@ Es relevante porque propone un patron distinto al de los modelos multimodales co
 | Licencia | Apache-2.0 |
 | Formato de pesos | PyTorch (`.pt`): `lora.pt`, `head.pt` y `config.json`; no safetensors, no GGUF |
 | Modelo base | Qwen/Qwen3.5-9B (Apache-2.0, descarga separada) |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 | Pipeline declarado | image-text-to-text |
 
 ## Arquitectura y entrenamiento
@@ -81,7 +81,7 @@ Advertencias que la propia model card incluye sobre estas cifras: no deben prese
 
 | Modelo | Parametros | Tipo de salida | Total en las 923 preguntas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OmniJev Qwen3.5-9B v4 | 9B de base mas LoRA y cabeza; recuento exacto no disponible | Distribucion sobre opciones, margen y `act`/`hold` | 76,5 % | Apache-2.0 | HuggingFace (`tzcfly/OmniJev-Qwen3.5-9B-v4`) y repositorio GitHub |
+| OmniJev Qwen3.5-9B v4 | 9B de base mas LoRA y cabeza; recuento exacto no disponible | Distribucion sobre opciones, margen y `act`/`hold` | 76,5 % | Apache-2.0 | Hugging Face (`tzcfly/OmniJev-Qwen3.5-9B-v4`) y repositorio GitHub |
 | NeoHorse-Jev-4B | 4B | Decision sobre opciones | 72,3 % | no disponible | no disponible en la informacion proporcionada |
 | tinnel OmniJev-4B | 4B | Decision sobre opciones | 68,7 % | no disponible | no disponible en la informacion proporcionada |
 
@@ -98,12 +98,12 @@ Los tres comparten el mismo tipo de tarea y el mismo formato de evaluacion, pero
 - Limitaciones de idioma: no disponibles; los conjuntos de entrenamiento citados (AI2D y ScienceQA) son en ingles.
 - Restricciones de licencia: el adaptador y la cabeza se publican bajo Apache-2.0. El modelo base Qwen/Qwen3.5-9B tambien es Apache-2.0, pero debe descargarse por separado y su licencia se aplica de forma independiente.
 - No se han ejecutado en v4 las seis pruebas de texto, Image-NLI, LIBERO ni Mind2Web, y el bucle cerrado de escritorio (8/12) corresponde a v3, no a esta version.
-- El repositorio pesa 0,0 GB segun HuggingFace y tiene 0 descargas y 0 likes en el momento de la consulta; no hay validacion independiente de los resultados por terceros.
+- El repositorio pesa 0,0 GB segun Hugging Face y tiene 0 descargas y 0 likes en el momento de la consulta; no hay validacion independiente de los resultados por terceros.
 - La documentacion de la model card esta redactada principalmente en chino, lo que puede dificultar la revision por parte de equipos que no lo lean.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tzcfly/OmniJev-Qwen3.5-9B-v4
+- Modelo en Hugging Face: https://huggingface.co/tzcfly/OmniJev-Qwen3.5-9B-v4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de codigo y evaluacion: https://github.com/shapsider/OmniJev
 - Informe tecnico: `docs/TECHNICAL_REPORT.md` dentro del repositorio anterior

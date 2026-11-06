@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hazel_Jane_KREA2 es un adaptador LoRA de tipo text-to-image publicado por el usuario farc077 en HuggingFace. Se trata de un LoRA de identidad (personaje) entrenado sobre el modelo base Krea-2-Raw, del proyecto krea, y su objetivo es reproducir la apariencia de una persona concreta —la influencer Hazel Jane, identificada en la model card como @hazeljane.r en Instagram— en imágenes generadas a partir de descripciones textuales.
+Hazel_Jane_KREA2 es un adaptador LoRA de tipo text-to-image publicado por el usuario farc077 en Hugging Face. Se trata de un LoRA de identidad (personaje) entrenado sobre el modelo base Krea-2-Raw, del proyecto krea, y su objetivo es reproducir la apariencia de una persona concreta —la influencer Hazel Jane, identificada en la model card como @hazeljane.r en Instagram— en imágenes generadas a partir de descripciones textuales.
 
 El repositorio es de pequeno tamano (0,2 GB) y contiene unicamente los pesos del adaptador, no un modelo completo. Se distribuye con la etiqueta ONESHOTLORA, lo que indica que fue generado con la plataforma oneshotlora.com, un servicio que automatiza la creacion de LoRAs de identidad a partir de un conjunto reducido de imagenes de referencia. El trigger word definido por el autor es `H4Z3LJ`.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Modelo base | Trigger word | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hazel_Jane_KREA2 (farc077) | LoRA de identidad | krea/Krea-2-Raw | H4Z3LJ | other | HuggingFace |
-| Otros LoRAs de identidad generados con OneShotLoRA | LoRA de identidad | variable | variable | variable | HuggingFace |
+| Hazel_Jane_KREA2 (farc077) | LoRA de identidad | krea/Krea-2-Raw | H4Z3LJ | other | Hugging Face |
+| Otros LoRAs de identidad generados con OneShotLoRA | LoRA de identidad | variable | variable | variable | Hugging Face |
 | Alternativas de personalizacion (DreamBooth, IP-Adapter) | Tecnicas de personalizacion | variable | no aplica | variable | no disponible |
 
 No se dispone de datos de rendimiento ni de comparativas cuantitativas con otros adaptadores de identidad en la informacion proporcionada.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento ni de comparativas cuantitativas con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/farc077/Hazel_Jane_KREA2
+- Modelo en Hugging Face: https://huggingface.co/farc077/Hazel_Jane_KREA2
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Plataforma de generacion del LoRA: https://oneshotlora.com
 - Perfil de la persona retratada: @hazeljane.r en Instagram

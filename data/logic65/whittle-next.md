@@ -86,9 +86,9 @@ whittle-next se distingue por ser la única variante sin entrenar, diseñada esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/logic65/whittle-next
+- Modelo en Hugging Face: https://huggingface.co/logic65/whittle-next
 - Modelo base (Whittle-16B): https://huggingface.co/logic65/Qwen3.8-Whittle-16B
 - Kit de entrenamiento y runbook: https://huggingface.co/datasets/logic65/mini-next-a100-kit
 - Banco de KD del padre (Qwen3.8-27B): https://huggingface.co/datasets/logic65/qwen38-27b-parent-kd-bank
-- Colección Whittle en HuggingFace: https://huggingface.co/collections/logic65/whittle-models-you-can-run
+- Colección Whittle en Hugging Face: https://huggingface.co/collections/logic65/whittle-models-you-can-run
 - Variante MoE funcional de la colección: https://huggingface.co/logic65/Qwen3.8-Whittle-MoE-27B-A17.8B

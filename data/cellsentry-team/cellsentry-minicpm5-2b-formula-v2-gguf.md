@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cellsentry-team/cellsentry-minicpm5-2b-formula-v2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cellsentry-team/cellsentry-minicpm5-2b-formula-v2-GGUF
 - Model card histórica fija (protocolo y comandos completos): https://huggingface.co/cellsentry-team/cellsentry-minicpm5-2b-formula-v2-GGUF/blob/989a466c0568703d9016c9493d4afd42ac5437ce/README.md
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Commit del modelo base: `f97400052a43d642bbc6e9975e2397e3ae6a6b52`

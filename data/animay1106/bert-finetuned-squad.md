@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bert-finetuned-squad es un ajuste fino de google-bert/bert-base-cased para la tarea de question answering extractivo (respuesta a preguntas sobre un contexto dado), publicado por el usuario animay1106 en HuggingFace. El modelo parte de la arquitectura BERT base en su variante cased (sensible a mayúsculas), con 107.721.218 parámetros totales, y ha sido entrenado con la librería Transformers mediante el Trainer, presumiblemente sobre el dataset SQuAD (el nombre del modelo lo sugiere, aunque la model card no lo confirma). Se trata de un modelo encoder-only clásico, no generativo, especializado en localizar el span de respuesta dentro de un pasaje de texto.
+bert-finetuned-squad es un ajuste fino de google-bert/bert-base-cased para la tarea de question answering extractivo (respuesta a preguntas sobre un contexto dado), publicado por el usuario animay1106 en Hugging Face. El modelo parte de la arquitectura BERT base en su variante cased (sensible a mayúsculas), con 107.721.218 parámetros totales, y ha sido entrenado con la librería Transformers mediante el Trainer, presumiblemente sobre el dataset SQuAD (el nombre del modelo lo sugiere, aunque la model card no lo confirma). Se trata de un modelo encoder-only clásico, no generativo, especializado en localizar el span de respuesta dentro de un pasaje de texto.
 
 Su relevancia es limitada en el panorama actual de modelos generativos grandes: es un checkpoint pequeño, con muy pocas descargas (26) y sin métricas de evaluación publicadas. Resulta útil como ejemplo de ajuste fino de BERT para extracción de respuestas, como baseline ligero en pipelines de QA extractivo o como material didáctico, pero no como modelo de producción de alto rendimiento. La model card está generada automáticamente y carece de información sobre el dataset exacto, la evaluación o los usos previstos.
 
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada para inferencia: en fp32, aproximadamente 0,4 GB para los pesos (~430 MB), más overhead de activaciones; en fp16, alrededor de 0,2 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; modelos como NVIDIA T4, RTX 3060, RTX 4090, A100 o H100 son sobradamente suficientes.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (GTX 1650 o superior), e incluso en CPU para cargas bajas.
-- Opciones de despliegue: transformers (pipeline question-answering), HuggingFace Inference Endpoints (el tag endpoints_compatible está presente), ONNX Runtime, TGI (si se convierte), y llama.cpp no es aplicable directamente por no ser un modelo GGUF.
+- Opciones de despliegue: transformers (pipeline question-answering), Hugging Face Inference Endpoints (el tag endpoints_compatible está presente), ONNX Runtime, TGI (si se convierte), y llama.cpp no es aplicable directamente por no ser un modelo GGUF.
 - Latencia y throughput: no disponible (no hay mediciones publicadas).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bert-finetuned-squad (este) | 107,7 M | 512 (no confirmado) | QA extractivo | apache-2.0 | HuggingFace |
-| google-bert/bert-base-cased | 108,3 M | 512 | Modelo base (MLM) | apache-2.0 | HuggingFace |
-| deepset/bert-base-cased-squad2 | ~108 M | 512 | QA extractivo | apache-2.0 | HuggingFace |
-| distilbert-base-cased-distilled-squad | ~66 M | 512 | QA extractivo | apache-2.0 | HuggingFace |
+| bert-finetuned-squad (este) | 107,7 M | 512 (no confirmado) | QA extractivo | apache-2.0 | Hugging Face |
+| google-bert/bert-base-cased | 108,3 M | 512 | Modelo base (MLM) | apache-2.0 | Hugging Face |
+| deepset/bert-base-cased-squad2 | ~108 M | 512 | QA extractivo | apache-2.0 | Hugging Face |
+| distilbert-base-cased-distilled-squad | ~66 M | 512 | QA extractivo | apache-2.0 | Hugging Face |
 
 Los modelos comparables son ajustes finos de BERT o DistilBERT para SQuAD; no se dispone de métricas de este checkpoint para comparar rendimiento numéricamente.
 
@@ -82,7 +82,7 @@ Los modelos comparables son ajustes finos de BERT o DistilBERT para SQuAD; no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/animay1106/bert-finetuned-squad
+- Modelo en Hugging Face: https://huggingface.co/animay1106/bert-finetuned-squad
 - Modelo base: https://huggingface.co/google-bert/bert-base-cased
 - Paper de BERT: https://arxiv.org/abs/1810.04805
 - Dataset SQuAD: https://rajpurkar.github.io/SQuAD-explorer/

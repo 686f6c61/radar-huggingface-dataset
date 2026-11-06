@@ -32,7 +32,7 @@ En cuanto al entrenamiento, la model card indica que el mejor metodo obtenido fu
 - Decision de acciones de alto nivel para robotica: dado un conjunto de observaciones del robot bipedo LINK-01, el adaptador genera la accion a ejecutar orientada a evitar obstaculos.
 - Razonamiento en lenguaje natural sobre el estado del robot, heredado del modelo base Qwen de 0.8B.
 - Salida en coreano, unico idioma declarado.
-- Formato de adaptador PEFT compatible con el ecosistema HuggingFace Transformers + PEFT.
+- Formato de adaptador PEFT compatible con el ecosistema Hugging Face Transformers + PEFT.
 - No se documenta soporte de tool calling, function calling, agentes multi-paso, vision, audio ni modo de razonamiento extendido.
 - No se documenta capacidad multilingue mas alla del coreano.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | Adaptador sobre base de ~0.8B | No disponible | Decision robotica (avoid_obstacles) via LoRA | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-0.8B (modelo base) | ~0.8B | No disponible | LLM generalista | No disponible en la informacion | HuggingFace |
-| Otros adaptadores LINK-01 del mismo autor | Adaptador sobre base de ~0.8B | No disponible | Variantes de tareas/personas del proyecto | Apache 2.0 | HuggingFace |
+| LINK-01 (este modelo) | Adaptador sobre base de ~0.8B | No disponible | Decision robotica (avoid_obstacles) via LoRA | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-0.8B (modelo base) | ~0.8B | No disponible | LLM generalista | No disponible en la informacion | Hugging Face |
+| Otros adaptadores LINK-01 del mismo autor | Adaptador sobre base de ~0.8B | No disponible | Variantes de tareas/personas del proyecto | Apache 2.0 | Hugging Face |
 
 No se dispone de informacion sobre modelos comparables de la misma categoria (politicas de decision robotica basadas en LLM de tamano similar) en la documentacion proporcionada.
 
@@ -87,6 +87,6 @@ No se dispone de informacion sobre modelos comparables de la misma categoria (po
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kareyoung09/connectailab-rl-kay09-saimdang-obstacle-v1-link01
+- Hugging Face: https://huggingface.co/kareyoung09/connectailab-rl-kay09-saimdang-obstacle-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo.

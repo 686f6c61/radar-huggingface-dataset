@@ -21,7 +21,7 @@ Por tanto, esta ficha documenta lo que el autor declara y advierte de que no deb
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
-La model card no describe ninguna arquitectura concreta: no especifica si se trata de un transformer multimodal, de un modelo de política visuomotora, de un codificador visión-lenguaje o de otra familia. El único indicio es la etiqueta `transformer` en los metadatos de HuggingFace, insuficiente para caracterizar el diseño. Tampoco se documentan capas, dimensiones ocultas, número de cabezas, tokenizador ni resolución de imagen de entrada.
+La model card no describe ninguna arquitectura concreta: no especifica si se trata de un transformer multimodal, de un modelo de política visuomotora, de un codificador visión-lenguaje o de otra familia. El único indicio es la etiqueta `transformer` en los metadatos de Hugging Face, insuficiente para caracterizar el diseño. Tampoco se documentan capas, dimensiones ocultas, número de cabezas, tokenizador ni resolución de imagen de entrada.
 
 No hay información sobre datos de entrenamiento: ni número de tokens, ni composición del dataset, ni si hubo ajuste supervisado, RLHF o DPO. El autor indica explícitamente que el repositorio no reclama "benchmark improvements, completed ablations, released code, or a trained checkpoint", y que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. Los 33.088 parámetros del tensor safetensors son incompatibles con un modelo de visión-lenguaje operativo y apuntan a un artefacto de prueba o a un componente auxiliar.
 
@@ -64,5 +64,5 @@ No disponible. La model card no identifica baselines concretos ni modelos de ref
 - Cualquier uso en robótica real requeriría un modelo con pesos verificados, evaluación en tareas específicas y análisis de seguridad física, ninguno de los cuales está disponible aquí.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/sotah-ua1999/robotics-vision-language
+- Repositorio en Hugging Face: https://huggingface.co/sotah-ua1999/robotics-vision-language
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código o demos.

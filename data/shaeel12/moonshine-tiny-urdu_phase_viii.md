@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Moonshine Tiny Urdu (PHASE VIII) es un modelo de reconocimiento automatico del habla (ASR) publicado en HuggingFace por el usuario shaeel12, construido sobre la familia Moonshine (etiqueta `moonshine` y `automatic-speech-recognition`). Segun el identificador, se trata de un ajuste fino orientado al urdu, probablemente como octava iteracion de un pipeline de entrenamiento por fases. El repositorio pesa 0,2 GB y los pesos en safetensors suman 61.513.920 parametros, lo que situa al modelo en el rango de los sistemas ASR compactos.
+Moonshine Tiny Urdu (PHASE VIII) es un modelo de reconocimiento automatico del habla (ASR) publicado en Hugging Face por el usuario shaeel12, construido sobre la familia Moonshine (etiqueta `moonshine` y `automatic-speech-recognition`). Segun el identificador, se trata de un ajuste fino orientado al urdu, probablemente como octava iteracion de un pipeline de entrenamiento por fases. El repositorio pesa 0,2 GB y los pesos en safetensors suman 61.513.920 parametros, lo que situa al modelo en el rango de los sistemas ASR compactos.
 
 Moonshine es una familia de modelos encoder-decoder disenada para transcripcion en vivo y comandos de voz, con la particularidad de procesar audio de longitud variable en lugar de forzar el padding a ventanas fijas de 30 segundos. Eso la hace adecuada para inferencia en el borde (edge) y despliegue con latencia baja. Un ajuste fino para urdu resulta relevante porque la cobertura de este idioma en modelos ASR abiertos sigue siendo limitada en comparacion con ingles o los principales idiomas europeos.
 
-Ahora bien, la model card del autor es practicamente una plantilla vacia: no incluye descripcion, licencia, idiomas declarados, datos de entrenamiento ni evaluacion. La mayor parte de las especificaciones que siguen se marcan como "no disponible" o se infieren a partir del identificador del modelo y de los metadatos de HuggingFace, no de documentacion verificada. El modelo registra 0 descargas y 0 likes en el momento de redactar esta ficha.
+Ahora bien, la model card del autor es practicamente una plantilla vacia: no incluye descripcion, licencia, idiomas declarados, datos de entrenamiento ni evaluacion. La mayor parte de las especificaciones que siguen se marcan como "no disponible" o se infieren a partir del identificador del modelo y de los metadatos de Hugging Face, no de documentacion verificada. El modelo registra 0 descargas y 0 likes en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -58,17 +58,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU moderna sirve; el modelo es lo bastante pequeno para no requerir A100 ni H100. Una RTX 3060 o superior seria mas que suficiente para lotes grandes.
 - Ejecucion en CPU: es viable, especialmente para audio corto y por lotes; la familia Moonshine esta pensada para inferencia ligera.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo actual e incluso en hardware integrado.
-- Opciones de despliegue: biblioteca `transformers` de HuggingFace, exportacion a ONNX Runtime, y servicios de inferencia compatibles con `endpoints_compatible`. Soporte en vLLM, llama.cpp, Ollama o TGI: no disponible para modelos Moonshine segun la informacion proporcionada.
+- Opciones de despliegue: biblioteca `transformers` de Hugging Face, exportacion a ONNX Runtime, y servicios de inferencia compatibles con `endpoints_compatible`. Soporte en vLLM, llama.cpp, Ollama o TGI: no disponible para modelos Moonshine segun la informacion proporcionada.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto / audio | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shaeel12/moonshine-tiny-urdu_PHASE_VIII | 61,5 M | Audio de longitud variable (Moonshine) | Probable urdu (no confirmado) | No disponible | HuggingFace |
-| Moonshine (familia base, Useful Sensors) | Tiny ~27 M / Base ~61 M | Audio de longitud variable | Ingles principalmente | MIT (familia base) | HuggingFace y repositorio oficial |
-| OpenAI Whisper Tiny | ~39 M | Ventanas de 30 s | Multilingue | MIT | HuggingFace y repositorio oficial |
-| Wav2Vec2 en urdu (ajustes comunitarios) | Variable (~95 M o mas) | Audio variable | Urdu | Variable segun el autor | HuggingFace |
+| shaeel12/moonshine-tiny-urdu_PHASE_VIII | 61,5 M | Audio de longitud variable (Moonshine) | Probable urdu (no confirmado) | No disponible | Hugging Face |
+| Moonshine (familia base, Useful Sensors) | Tiny ~27 M / Base ~61 M | Audio de longitud variable | Ingles principalmente | MIT (familia base) | Hugging Face y repositorio oficial |
+| OpenAI Whisper Tiny | ~39 M | Ventanas de 30 s | Multilingue | MIT | Hugging Face y repositorio oficial |
+| Wav2Vec2 en urdu (ajustes comunitarios) | Variable (~95 M o mas) | Audio variable | Urdu | Variable segun el autor | Hugging Face |
 
 Nota: los datos de las alternativas provienen de conocimiento general de esos modelos, no de la model card de este repositorio. Para la familia Moonshine base la licencia publicada es MIT, pero la licencia de este ajuste concreto figura como no disponible, por lo que no puede asumirse la misma.
 
@@ -85,7 +85,7 @@ Nota: los datos de las alternativas provienen de conocimiento general de esos mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shaeel12/moonshine-tiny-urdu_PHASE_VIII
+- Modelo en Hugging Face: https://huggingface.co/shaeel12/moonshine-tiny-urdu_PHASE_VIII
 - Referencia citada en las etiquetas (arxiv:1910.09700, Lacoste et al., calculadora de impacto de ML): https://arxiv.org/abs/1910.09700
 - Repositorio oficial de la familia Moonshine (Useful Sensors): no disponible en la informacion proporcionada.
 - Paper de Moonshine: no disponible en la informacion proporcionada.

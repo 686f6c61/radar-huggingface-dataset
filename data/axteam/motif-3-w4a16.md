@@ -78,7 +78,7 @@ No disponible. No se proporcionan datos de benchmarks ni de modelos comparables 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/axteam/Motif-3-W4A16
+- Repositorio Hugging Face: https://huggingface.co/axteam/Motif-3-W4A16
 - Modelo base: https://huggingface.co/Motif-Technologies/Motif-3
 - Fork de vLLM de Motif: https://github.com/MotifTechnologies/vllm
 - Imagen Docker del fork: `ghcr.io/motiftechnologies/vllm:v0.26.0-motif3`

@@ -66,10 +66,10 @@ La comparativa directa no es posible en terminos de rendimiento, porque no exist
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evaluacion publica |
 |---|---|---|---|---|---|
-| `Arihant25/anlp-a2-optimizers` | 33,37 M | no disponible | MIT | HuggingFace (5 checkpoints, requiere codigo de la asignatura) | no disponible |
-| GPT-2 small | 124 M | 1024 tokens | licencia MIT modificada | HuggingFace, integrado en `transformers` | benchmarks publicos en la model card |
-| Pythia-70M | 70 M | 2048 tokens | Apache 2.0 | HuggingFace, integrado en `transformers` | suite de evaluacion publicada |
-| OPT-125M | 125 M | 2048 tokens | MIT | HuggingFace, integrado en `transformers` | benchmarks publicos |
+| `Arihant25/anlp-a2-optimizers` | 33,37 M | no disponible | MIT | Hugging Face (5 checkpoints, requiere codigo de la asignatura) | no disponible |
+| GPT-2 small | 124 M | 1024 tokens | licencia MIT modificada | Hugging Face, integrado en `transformers` | benchmarks publicos en la model card |
+| Pythia-70M | 70 M | 2048 tokens | Apache 2.0 | Hugging Face, integrado en `transformers` | suite de evaluacion publicada |
+| OPT-125M | 125 M | 2048 tokens | MIT | Hugging Face, integrado en `transformers` | benchmarks publicos |
 
 Conviene insistir en que ninguno de esos modelos es un sustituto funcional de este repositorio: aquellos son modelos de lenguaje con evaluacion y soporte de ecosistema, mientras que `anlp-a2-optimizers` es un conjunto de checkpoints de laboratorio cuyo proposito es comparar optimizadores.
 
@@ -87,9 +87,9 @@ Conviene insistir en que ninguno de esos modelos es un sustituto funcional de es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arihant25/anlp-a2-optimizers
+- Modelo en Hugging Face: https://huggingface.co/Arihant25/anlp-a2-optimizers
 - Registros de entrenamiento en Weights & Biases: https://wandb.ai/arihanttr-iiit-hyderabad/anlp-a2
-- Perfil del autor en HuggingFace: https://huggingface.co/Arihant25
+- Perfil del autor en Hugging Face: https://huggingface.co/Arihant25
 - Modelo relacionado de la misma asignatura (MoE): https://huggingface.co/Arihant25/anlp-a2-moe
 - Repositorio de la guia de estudio de Advanced NLP (IIIT Hyderabad): https://github.com/Arihant25/anlp-study-guide
 - Articulo aparecido en la busqueda web, no vinculado directamente al modelo (OPRO, LLMs como optimizadores): https://arxiv.org/abs/2309.03409

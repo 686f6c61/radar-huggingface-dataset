@@ -80,7 +80,7 @@ No se dispone en la informacion proporcionada de datos de benchmarks de modelos 
 
 | Modelo | Parametros | Contexto | mIoU ScanNet20 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| openscene-openseg.scannet20.songyou-peng | 15,6 M | no aplica | 46,11 | Apache-2.0 | HuggingFace (`torch-pointcloud`) |
+| openscene-openseg.scannet20.songyou-peng | 15,6 M | no aplica | 46,11 | Apache-2.0 | Hugging Face (`torch-pointcloud`) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se dispone en la informacion proporcionada de datos de benchmarks de modelos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/openscene-openseg.scannet20.songyou-peng
+- Hugging Face: https://huggingface.co/torch-pointcloud/openscene-openseg.scannet20.songyou-peng
 - Paper OpenScene: https://arxiv.org/abs/2211.15654
 - Repositorio original: https://github.com/pengsongyou/openscene
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

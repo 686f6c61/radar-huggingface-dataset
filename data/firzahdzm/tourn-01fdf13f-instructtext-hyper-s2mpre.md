@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tourn-01fdf13f-instructtext-hyper-s2mpre es un modelo de lenguaje publicado en HuggingFace por el usuario firzahdzm. Se trata de un checkpoint de aproximadamente 2.516.756.480 parametros (unos 2,52 mil millones) etiquetado con la arquitectura "llama" y distribuido unicamente en formato safetensors, con un repositorio de 5,0 GB. No dispone de model card, no declara licencia ni idiomas soportados y acumula 9 descargas y 0 "likes" en el momento de la consulta.
+tourn-01fdf13f-instructtext-hyper-s2mpre es un modelo de lenguaje publicado en Hugging Face por el usuario firzahdzm. Se trata de un checkpoint de aproximadamente 2.516.756.480 parametros (unos 2,52 mil millones) etiquetado con la arquitectura "llama" y distribuido unicamente en formato safetensors, con un repositorio de 5,0 GB. No dispone de model card, no declara licencia ni idiomas soportados y acumula 9 descargas y 0 "likes" en el momento de la consulta.
 
 El modelo no resuelve un problema explicitamente declarado: al carecer de documentacion, no se especifica si esta afinado para instrucciones, texto general, codigo u otra tarea concreta. El nombre ("instructtext") sugiere un ajuste orientado a instrucciones sobre texto, pero esto no esta confirmado por el autor. La pertenencia a una serie de checkpoints del mismo autor (variantes "super", "hyper", "s2kpre" o "smk11") apunta a un flujo de trabajo de experimentacion o generacion automatica de modelos mas que a un lanzamiento de producto estable.
 
@@ -12,7 +12,7 @@ Su relevancia actual es limitada: sin benchmarks, sin licencia y sin datos de en
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer tipo Llama (etiqueta "llama" en HuggingFace); variante y configuracion no detalladas |
+| Arquitectura | Transformer tipo Llama (etiqueta "llama" en Hugging Face); variante y configuracion no detalladas |
 | Parametros totales | 2.516.756.480 (~2,52 mil millones) |
 | Parametros activos | no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Su relevancia actual es limitada: sin benchmarks, sin licencia y sin datos de en
 
 ## Arquitectura y entrenamiento
 
-La unica informacion estructural disponible es la etiqueta de arquitectura "llama" en HuggingFace y el recuento real de parametros extraido de los safetensors: 2.516.756.480. Con un repositorio de 5,0 GB para ese numero de parametros, la representacion de pesos mas probable es BF16 o FP16 (2 bytes por parametro, lo que daria aproximadamente 5,03 GB de pesos mas metadatos), aunque el autor no lo confirma.
+La unica informacion estructural disponible es la etiqueta de arquitectura "llama" en Hugging Face y el recuento real de parametros extraido de los safetensors: 2.516.756.480. Con un repositorio de 5,0 GB para ese numero de parametros, la representacion de pesos mas probable es BF16 o FP16 (2 bytes por parametro, lo que daria aproximadamente 5,03 GB de pesos mas metadatos), aunque el autor no lo confirma.
 
 No se ha publicado informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineacion, ni sobre innovaciones arquitectonicas (atencion lineal, decodificacion especulativa, MoE, SSM o hibridos). Tampoco se documenta el procedimiento de ajuste de instrucciones que sugiere el nombre del modelo.
 
@@ -89,7 +89,7 @@ No se ha encontrado comparacion con alternativas de referencia como Llama 3.2 3B
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/firzahdzm/tourn-01fdf13f-instructtext-hyper-s2mpre
+- Hugging Face: https://huggingface.co/firzahdzm/tourn-01fdf13f-instructtext-hyper-s2mpre
 - Modelo hermano (llama, 3B): https://huggingface.co/firzahdzm/tourn-01fdf13f-instructtext-super-v12
 - Modelo hermano (lfm2, 3B): https://huggingface.co/firzahdzm/tourn-803a8f69-instructtext-hyper-smk11
 - Ficha de terceros de un modelo de la misma serie (494M): https://savrn.com/models/tourn-87c51c39-instructtext-super-s2kpre

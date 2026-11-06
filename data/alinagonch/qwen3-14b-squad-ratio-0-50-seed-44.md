@@ -4,7 +4,7 @@
 
 El modelo `AlinaGonch/qwen3-14b-squad-ratio-0.50-seed-44` es un ajuste fino del modelo base Qwen3-14B sobre el dataset SQuAD (Stanford Question Answering Dataset), según se desprende del nombre del repositorio. El autor, AlinaGonch, ha publicado varias variantes con diferentes proporciones de datos y semillas (por ejemplo, `ratio-0.30-seed-42` y `ratio-0.50-r64`), lo que sugiere una familia de experimentos de fine-tuning orientados a tareas de comprensión lectora y respuesta a preguntas extractivas.
 
-La información disponible en HuggingFace es extremadamente escasa: la model card es una plantilla genérica sin datos concretos, no se especifica licencia, idiomas, ni detalles de entrenamiento. El tamaño del repositorio es de 0,3 GB, lo que indica que no contiene los pesos completos del modelo base (que en fp16 ocuparían unos 28 GB), sino probablemente un adaptador LoRA o pesos cuantizados. No se han registrado descargas ni valoraciones, y no hay documentación técnica adicional.
+La información disponible en Hugging Face es extremadamente escasa: la model card es una plantilla genérica sin datos concretos, no se especifica licencia, idiomas, ni detalles de entrenamiento. El tamaño del repositorio es de 0,3 GB, lo que indica que no contiene los pesos completos del modelo base (que en fp16 ocuparían unos 28 GB), sino probablemente un adaptador LoRA o pesos cuantizados. No se han registrado descargas ni valoraciones, y no hay documentación técnica adicional.
 
 A pesar de la falta de información oficial, el nombre del modelo permite inferir que se trata de un experimento de fine-tuning sobre Qwen3-14B, un modelo de 14 000 millones de parámetros con arquitectura transformer densa y ventana de contexto de 32 768 tokens. Sin embargo, cualquier afirmación sobre su rendimiento o capacidades específicas debe tomarse con cautela, ya que no hay datos publicados que la respalden.
 
@@ -68,9 +68,9 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AlinaGonch/qwen3-14b-squad-ratio-0.50-seed-44 | 14B (estimado) | 32K (estimado) | no disponible | HuggingFace |
-| AlinaGonch/qwen3-14b-squad-ratio-0.30-seed-42 | 14B (estimado) | 32K (estimado) | no disponible | HuggingFace |
-| AlinaGonch/qwen3-14b-squad-ratio-0.50-r64 | 14B (estimado) | 32K (estimado) | no disponible | HuggingFace |
+| AlinaGonch/qwen3-14b-squad-ratio-0.50-seed-44 | 14B (estimado) | 32K (estimado) | no disponible | Hugging Face |
+| AlinaGonch/qwen3-14b-squad-ratio-0.30-seed-42 | 14B (estimado) | 32K (estimado) | no disponible | Hugging Face |
+| AlinaGonch/qwen3-14b-squad-ratio-0.50-r64 | 14B (estimado) | 32K (estimado) | no disponible | Hugging Face |
 
 No hay datos de rendimiento comparativo publicados.
 
@@ -85,7 +85,7 @@ No hay datos de rendimiento comparativo publicados.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.50-seed-44
+- Repositorio Hugging Face: https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.50-seed-44
 - Variante con ratio 0.30: https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.30-seed-42
 - Variante con r64: https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.50-r64
 - Guía completa de Qwen3 (referencia del modelo base): https://insiderllm.com/guides/qwen3-complete-guide/

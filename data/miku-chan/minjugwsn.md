@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MinjuGWSN es un modelo publicado en HuggingFace por el usuario Miku-chan bajo el identificador `Miku-chan/MinjuGWSN`. La informacion disponible es extremadamente limitada: la model card no contiene descripcion, no se declara arquitectura, tamano de parametros, longitud de contexto ni idiomas soportados. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un conjunto de pesos de pequeno tamano, pero no permite determinar con certeza el numero de parametros ni el tipo de modelo.
+MinjuGWSN es un modelo publicado en Hugging Face por el usuario Miku-chan bajo el identificador `Miku-chan/MinjuGWSN`. La informacion disponible es extremadamente limitada: la model card no contiene descripcion, no se declara arquitectura, tamano de parametros, longitud de contexto ni idiomas soportados. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un conjunto de pesos de pequeno tamano, pero no permite determinar con certeza el numero de parametros ni el tipo de modelo.
 
 No se ha publicado informacion sobre el proceso de entrenamiento, los datos utilizados ni los resultados de evaluacion. El modelo no registra descargas ni interacciones en el momento de la consulta, y la licencia figura como "unknown", lo que impide determinar las condiciones de uso comercial o de redistribucion.
 
@@ -73,5 +73,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Miku-chan/MinjuGWSN
+- Hugging Face: https://huggingface.co/Miku-chan/MinjuGWSN
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

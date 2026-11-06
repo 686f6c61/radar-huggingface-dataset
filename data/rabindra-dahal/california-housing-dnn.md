@@ -2,9 +2,9 @@
 
 ## Resumen
 
-California Housing DNN Regressor es una red neuronal densa (MLP) implementada en PyTorch que predice el valor mediano de viviendas en bloques censales de California. El modelo, publicado por el autor rabindra-dahal en HuggingFace, transforma un vector de 8 características tabulares (procedentes del dataset clásico California Housing de scikit-learn) en un único escalar continuo que representa el precio mediano de la vivienda, expresado en unidades de 100.000 dólares. No es un modelo de lenguaje: es un regresor tabular de propósito muy específico, pensado como referencia educativa y como base para modelos de valoración automatizada (AVM).
+California Housing DNN Regressor es una red neuronal densa (MLP) implementada en PyTorch que predice el valor mediano de viviendas en bloques censales de California. El modelo, publicado por el autor rabindra-dahal en Hugging Face, transforma un vector de 8 características tabulares (procedentes del dataset clásico California Housing de scikit-learn) en un único escalar continuo que representa el precio mediano de la vivienda, expresado en unidades de 100.000 dólares. No es un modelo de lenguaje: es un regresor tabular de propósito muy específico, pensado como referencia educativa y como base para modelos de valoración automatizada (AVM).
 
-La relevancia de esta ficha es doble. Por un lado, documenta un caso típico de modelo tabular de tamaño minúsculo (apenas unos miles de parámetros) que se distribuye con licencia MIT y tags de `tabular`, `regression` y `pytorch`. Por otro, sirve como ejemplo de cómo la model card y el model-index de HuggingFace pueden declarar métricas de regresión (MSE y MAE) sin verificación independiente, algo que conviene tener presente al evaluar cualquier modelo de este tipo.
+La relevancia de esta ficha es doble. Por un lado, documenta un caso típico de modelo tabular de tamaño minúsculo (apenas unos miles de parámetros) que se distribuye con licencia MIT y tags de `tabular`, `regression` y `pytorch`. Por otro, sirve como ejemplo de cómo la model card y el model-index de Hugging Face pueden declarar métricas de regresión (MSE y MAE) sin verificación independiente, algo que conviene tener presente al evaluar cualquier modelo de este tipo.
 
 Al tratarse de un MLP de tres capas (8 → 64 → 32 → 1) entrenado sobre datos del censo estadounidense de 1990, sus usos realistas quedan acotados a análisis de tendencias históricas, docencia y experimentación con pipelines tabulares, no a producción comercial de valoración inmobiliaria actual.
 
@@ -71,7 +71,7 @@ El autor indica además una pérdida final de entrenamiento (MSE) de 0,2210 y un
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| California Housing DNN Regressor | MLP tabular | no disponible (8-64-32-1) | no aplica | MSE 0,2697; MAE 0,35397 (declarados) | MIT | HuggingFace |
+| California Housing DNN Regressor | MLP tabular | no disponible (8-64-32-1) | no aplica | MSE 0,2697; MAE 0,35397 (declarados) | MIT | Hugging Face |
 | Regresión lineal (scikit-learn) | Modelo lineal | 8 coeficientes | no aplica | no disponible | BSD-3-Clause | scikit-learn |
 | Random Forest Regressor (scikit-learn) | Ensemble de árboles | no disponible | no aplica | no disponible | BSD-3-Clause | scikit-learn |
 | Gradient Boosting (scikit-learn) | Ensemble de árboles | no disponible | no aplica | no disponible | BSD-3-Clause | scikit-learn |
@@ -90,7 +90,7 @@ No se dispone de resultados de benchmarks comparables publicados en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rabindra-dahal/california-housing-dnn
+- Modelo en Hugging Face: https://huggingface.co/rabindra-dahal/california-housing-dnn
 - Dataset California Housing (scikit-learn): https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_california_housing.html
 - PyTorch: https://pytorch.org/
 - No se han encontrado en la información proporcionada papers, blogs, repositorios ni demos adicionales asociados a este modelo.

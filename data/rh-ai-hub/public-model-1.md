@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RH-AI-Hub/Public-Model-1 es un modelo publicado en HuggingFace por la organizacion RH-AI-Hub y etiquetado con el pipeline `text-classification`. El repositorio se creo el 11 de septiembre de 2026 y se actualizo ese mismo dia, unos seis minutos mas tarde. La model card no contiene mas que una linea de bienvenida ("You have reached the README.md for RH-AI-Hub/Public-Model-1"), sin descripcion del modelo, del dataset de entrenamiento ni de las etiquetas de salida.
+RH-AI-Hub/Public-Model-1 es un modelo publicado en Hugging Face por la organizacion RH-AI-Hub y etiquetado con el pipeline `text-classification`. El repositorio se creo el 11 de septiembre de 2026 y se actualizo ese mismo dia, unos seis minutos mas tarde. La model card no contiene mas que una linea de bienvenida ("You have reached the README.md for RH-AI-Hub/Public-Model-1"), sin descripcion del modelo, del dataset de entrenamiento ni de las etiquetas de salida.
 
 Los metadatos publicos son minimos: idioma declarado ingles (`en`), licencia `unknown`, una unica etiqueta `testTag` y cero descargas y cero "likes" en el momento de la consulta. No hay informacion sobre arquitectura, numero de parametros, longitud de contexto, formatos de pesos ni proceso de entrenamiento.
 
@@ -30,7 +30,7 @@ La combinacion de repositorio sin documentacion, etiqueta de prueba y ausencia t
 
 No disponible. La informacion proporcionada no incluye ningun dato sobre la arquitectura del modelo (transformer encoder, decoder, MoE, SSM u otra), el numero de parametros, la longitud de contexto soportada ni la composicion del corpus de entrenamiento.
 
-Tampoco hay informacion sobre el volumen de tokens de entrenamiento, el uso de tecnicas de alineacion como RLHF o DPO, ni sobre innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, destilacion, etc.). Lo unico verificable es la etiqueta de pipeline `text-classification`, que en el ecosistema de HuggingFace se asocia habitualmente a clasificadores basados en arquitecturas encoder, pero no hay ningun elemento en la documentacion que permita confirmar que este sea el caso.
+Tampoco hay informacion sobre el volumen de tokens de entrenamiento, el uso de tecnicas de alineacion como RLHF o DPO, ni sobre innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, destilacion, etc.). Lo unico verificable es la etiqueta de pipeline `text-classification`, que en el ecosistema de Hugging Face se asocia habitualmente a clasificadores basados en arquitecturas encoder, pero no hay ningun elemento en la documentacion que permita confirmar que este sea el caso.
 
 ## Capacidades
 
@@ -41,7 +41,7 @@ Tampoco hay informacion sobre el volumen de tokens de entrenamiento, el uso de t
 - Tool calling / function calling: no documentado.
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multimodales (vision, audio) o modos especiales (thinking mode): no documentados.
-- Despliegue como endpoint de inferencia: tecnicamente posible a traves de la infraestructura de HuggingFace si el repositorio contiene pesos validos, pero no confirmado por la documentacion.
+- Despliegue como endpoint de inferencia: tecnicamente posible a traves de la infraestructura de Hugging Face si el repositorio contiene pesos validos, pero no confirmado por la documentacion.
 
 ## Casos de uso
 
@@ -66,7 +66,7 @@ No hay datos de MMLU, GLUE, SuperGLUE, F1 por clase, precision, recall ni de nin
 - VRAM estimada para inferencia: no disponible. Sin conocer el numero de parametros ni el formato de pesos no es posible realizar una estimacion fundamentada.
 - GPU recomendadas: no disponible por la misma razon.
 - Viabilidad en GPU de consumo: no determinable. Dependera del tamano real del modelo, dato que no se ha publicado.
-- Opciones de despliegue: no confirmadas. La eleccion entre vLLM, Text Embeddings Inference, llama.cpp, Ollama, TorchServe o un endpoint de HuggingFace depende del formato de pesos del repositorio, que no se especifica. Para un clasificador de texto el camino habitual seria un servidor de inferencia con soporte para modelos encoder, pero no puede afirmarse sin conocer la arquitectura.
+- Opciones de despliegue: no confirmadas. La eleccion entre vLLM, Text Embeddings Inference, llama.cpp, Ollama, TorchServe o un endpoint de Hugging Face depende del formato de pesos del repositorio, que no se especifica. Para un clasificador de texto el camino habitual seria un servidor de inferencia con soporte para modelos encoder, pero no puede afirmarse sin conocer la arquitectura.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura ni los resul
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RH-AI-Hub/Public-Model-1 | no disponible | no disponible | unknown | repositorio de HuggingFace, sin documentacion |
+| RH-AI-Hub/Public-Model-1 | no disponible | no disponible | unknown | repositorio de Hugging Face, sin documentacion |
 | Alternativas comparables | no determinables sin conocer el tamano del modelo | - | - | - |
 
 ## Limitaciones y advertencias
@@ -92,5 +92,5 @@ No disponible. Sin conocer el numero de parametros, la arquitectura ni los resul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RH-AI-Hub/Public-Model-1
+- Modelo en Hugging Face: https://huggingface.co/RH-AI-Hub/Public-Model-1
 - Resultados de busqueda web: la busqueda realizada no ha devuelto ningun enlace relevante sobre este modelo. Los unicos resultados obtenidos son articulos en frances sobre gestion de recursos humanos ("RH") que no guardan relacion con el modelo ni con su autor. No se han encontrado papers, blogs, repositorios de codigo ni demos asociados.

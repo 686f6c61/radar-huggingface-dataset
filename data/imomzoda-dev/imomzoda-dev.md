@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`imomzoda-dev/imomzoda-dev` es un repositorio alojado en HuggingFace bajo la cuenta del desarrollador Imomzoda Mehriddin (usuario `imomzoda-dev`). Tras revisar el contenido disponible, no se trata de un modelo de inteligencia artificial: el README del repositorio es una página de perfil personal de GitHub adaptada a formato de model card, en la que el autor presenta su actividad como desarrollador full-stack (Django, Flutter, PySide6) y enlaza sus proyectos (moodle.tj, un diccionario tayiko-persa, un ERP de farmacia, una tienda online y una herramienta de correo corporativo).
+`imomzoda-dev/imomzoda-dev` es un repositorio alojado en Hugging Face bajo la cuenta del desarrollador Imomzoda Mehriddin (usuario `imomzoda-dev`). Tras revisar el contenido disponible, no se trata de un modelo de inteligencia artificial: el README del repositorio es una página de perfil personal de GitHub adaptada a formato de model card, en la que el autor presenta su actividad como desarrollador full-stack (Django, Flutter, PySide6) y enlaza sus proyectos (moodle.tj, un diccionario tayiko-persa, un ERP de farmacia, una tienda online y una herramienta de correo corporativo).
 
 No se ha publicado ninguna información sobre arquitectura, pesos, tokenizador, datos de entrenamiento ni pipeline de inferencia. El repositorio no declara licencia, idiomas soportados ni tarea asociada, y acumula cero descargas y cero likes en el momento de la consulta.
 
@@ -38,7 +38,7 @@ El contenido del repositorio es una página de presentación personal del autor,
 ## Casos de uso
 
 - No aplicable: al no existir un modelo ni pesos descargables, no hay escenarios de inferencia posibles.
-- Auditoría de repositorios de HuggingFace: este identificador puede servir como ejemplo de repositorio mal etiquetado que aparece en búsquedas de modelos sin serlo.
+- Auditoría de repositorios de Hugging Face: este identificador puede servir como ejemplo de repositorio mal etiquetado que aparece en búsquedas de modelos sin serlo.
 - Verificación de identidad de autores: útil para comprobar que un perfil de desarrollador no equivale a un modelo publicado.
 - Monitorización de catálogo: permite detectar entradas ruidosas en el hub que no deberían indexarse como modelos.
 - Formación sobre convenciones del hub: ilustra la diferencia entre una model card y un README de perfil.
@@ -77,7 +77,7 @@ No disponible. No existe una categoría de modelos comparable porque el reposito
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/imomzoda-dev/imomzoda-dev
+- Hugging Face: https://huggingface.co/imomzoda-dev/imomzoda-dev
 - Sitio del autor: https://moodle.tj/
 - Telegram: https://t.me/im0mz0da
 - Instagram: https://www.instagram.com/00xaft/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `briotin/my-cool-model` es un modelo de lenguaje de aproximadamente 26.900 millones de parámetros publicado por el usuario `briotin` en HuggingFace. Según los metadatos del repositorio, el modelo está etiquetado como conversacional y dispone de versiones en formato ONNX y GGUF, además de ser compatible con endpoints y de incluir datos de imatrix para cuantización. Sin embargo, la model card asociada no describe el modelo en absoluto: contiene el README de ComfyUI, una herramienta de generación visual por nodos, lo que indica que la documentación es incorrecta o un placeholder.
+El modelo `briotin/my-cool-model` es un modelo de lenguaje de aproximadamente 26.900 millones de parámetros publicado por el usuario `briotin` en Hugging Face. Según los metadatos del repositorio, el modelo está etiquetado como conversacional y dispone de versiones en formato ONNX y GGUF, además de ser compatible con endpoints y de incluir datos de imatrix para cuantización. Sin embargo, la model card asociada no describe el modelo en absoluto: contiene el README de ComfyUI, una herramienta de generación visual por nodos, lo que indica que la documentación es incorrecta o un placeholder.
 
 En el momento de la consulta, el modelo registra cero descargas y cero likes, y fue creado el 16 de agosto de 2026. No se dispone de información sobre la arquitectura interna, el proceso de entrenamiento, los datos utilizados, la licencia ni los idiomas soportados. El tamaño del repositorio es de 325,3 GB, lo que sugiere la presencia de múltiples archivos de pesos en diferentes cuantizaciones, aunque no se puede confirmar sin inspeccionar el contenido. En resumen, se trata de un modelo con una presencia mínima en el ecosistema y sin documentación verificable, lo que limita seriamente su evaluación y uso en producción.
 
@@ -68,6 +68,6 @@ No disponible. No se conocen modelos comparables de la misma categoría porque s
 
 ## Enlaces
 
-- [HuggingFace - briotin/my-cool-model](https://huggingface.co/briotin/my-cool-model)
+- [Hugging Face - briotin/my-cool-model](https://huggingface.co/briotin/my-cool-model)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios, demos) en la información proporcionada.

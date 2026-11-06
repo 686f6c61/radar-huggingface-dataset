@@ -23,7 +23,7 @@ Su relevancia radica en dos factores. Primero, el pipeline Pylingual aborda un p
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a un transformer encoder de la familia RoBERTa, segun el tag declarado en HuggingFace. Con 109,5 millones de parametros, el tamano es ligeramente inferior al de `roberta-base` (unos 125 millones), lo que sugiere una configuracion de vocabulario o de capas propias del proyecto. El modelo es un ajuste fino de otro checkpoint cuyo nombre no aparece en la model card (el enlace de la base esta vacio en el README). El objetivo de entrenamiento es masked language modeling, es decir, reconstruir tokens enmascarados a partir de su contexto.
+La arquitectura corresponde a un transformer encoder de la familia RoBERTa, segun el tag declarado en Hugging Face. Con 109,5 millones de parametros, el tamano es ligeramente inferior al de `roberta-base` (unos 125 millones), lo que sugiere una configuracion de vocabulario o de capas propias del proyecto. El modelo es un ajuste fino de otro checkpoint cuyo nombre no aparece en la model card (el enlace de la base esta vacio en el README). El objetivo de entrenamiento es masked language modeling, es decir, reconstruir tokens enmascarados a partir de su contexto.
 
 Los hiperparametros declarados en la model card son: tasa de aprendizaje 5e-05, `train_batch_size` de 64 (con `eval_batch_size` de 8), semilla 42, entrenamiento distribuido en 3 dispositivos con un batch total de 192, optimizador AdamW con `fused` (betas 0,9 y 0,999, epsilon 1e-08), planificador de tasa de aprendizaje lineal y 2 epocas. El dataset de ajuste es `syssec-utd/segmentation-py315-pylingual-v6`. Las versiones de framework declaradas son Transformers 5.17.0, PyTorch 2.14.0+cu130, Datasets 5.0.1 y Tokenizers 0.23.2.
 
@@ -58,17 +58,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. El `m
 - VRAM estimada para inferencia: en fp32, los 109,5 millones de parametros ocupan aproximadamente 438 MB; en fp16, unos 219 MB; en int8, unos 110 MB; en int4, unos 55 MB. A ello hay que sumar el coste de activaciones y del tokenizador, pero el margen es amplio.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Una RTX 3090, RTX 4090, A100 o H100 sobredimensionan con creces el modelo; se usan, si acaso, para procesar grandes lotes en batch.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna (e incluso en graficas integradas o inferencia pura en CPU), dado su tamano reducido.
-- Opciones de despliegue: `transformers` con el pipeline `fill-mask`; servidores de inferencia compatibles con HuggingFace Endpoints (el tag declara `endpoints_compatible`); exportacion a ONNX o TorchScript para despliegues ligeros. Para CPU, herramientas derivadas de llama.cpp requieren conversion a GGUF, no documentada para este checkpoint.
+- Opciones de despliegue: `transformers` con el pipeline `fill-mask`; servidores de inferencia compatibles con Hugging Face Endpoints (el tag declara `endpoints_compatible`); exportacion a ONNX o TorchScript para despliegues ligeros. Para CPU, herramientas derivadas de llama.cpp requieren conversion a GGUF, no documentada para este checkpoint.
 - Latencia y throughput estimados: no disponibles. Al ser un modelo de 109,5 millones de parametros con encoder bidireccional, en GPU moderna la inferencia es del orden de milisegundos para secuencias de hasta 512 tokens, pero no se ha publicado ninguna medicion oficial.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| py315-pylingual-v6-mlm | 109,5 M | No disponible | Python (decompilacion) | No disponible | HuggingFace |
-| microsoft/codebert-base | 125 M | 512 tokens | Codigo multilenguaje (6 lenguajes, incluye Python) | MIT | HuggingFace |
-| microsoft/graphcodebert-base | 125 M | 512 tokens | Codigo con flujo de datos | MIT | HuggingFace |
-| syssec-utd/py315-pylingual-v3-mlm | No disponible | No disponible | Python (decompilacion) | No disponible | HuggingFace |
+| py315-pylingual-v6-mlm | 109,5 M | No disponible | Python (decompilacion) | No disponible | Hugging Face |
+| microsoft/codebert-base | 125 M | 512 tokens | Codigo multilenguaje (6 lenguajes, incluye Python) | MIT | Hugging Face |
+| microsoft/graphcodebert-base | 125 M | 512 tokens | Codigo con flujo de datos | MIT | Hugging Face |
+| syssec-utd/py315-pylingual-v3-mlm | No disponible | No disponible | Python (decompilacion) | No disponible | Hugging Face |
 
 CodeBERT y GraphCodeBERT son los comparables mas naturales por tamano y por objetivo (masked language modeling sobre codigo). Ambos parten de RoBERTa-base y fueron entrenados sobre CodeSearchNet, con licencia MIT y amplia adopcion. La diferencia principal de py315-pylingual-v6-mlm es su especializacion en el pipeline de decompilacion de Python moderno del proyecto Pylingual, frente al enfoque mas generico de los modelos de Microsoft. La version v3 del propio autor es la referencia interna mas directa, aunque no se dispone de sus especificaciones para comparar.
 
@@ -85,8 +85,8 @@ CodeBERT y GraphCodeBERT son los comparables mas naturales por tamano y por obje
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syssec-utd/py315-pylingual-v6-mlm
-- Organizacion syssec-utd en HuggingFace: https://huggingface.co/syssec-utd
+- Modelo en Hugging Face: https://huggingface.co/syssec-utd/py315-pylingual-v6-mlm
+- Organizacion syssec-utd en Hugging Face: https://huggingface.co/syssec-utd
 - Dataset de ajuste: https://huggingface.co/datasets/syssec-utd/segmentation-py315-pylingual-v6
 - Version previa del modelo: https://huggingface.co/syssec-utd/py315-pylingual-v3-mlm
 - Repositorio Pylingual en GitHub: https://github.com/syssec-utd/pylingual

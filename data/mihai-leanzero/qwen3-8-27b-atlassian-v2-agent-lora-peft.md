@@ -76,9 +76,9 @@ Fidelidad de la cuantizacion MLX de 8 bits frente al bf16: KL 0,001 y top-1 99,5
 
 | Modelo | Parametros | Contexto | Tool calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Atlassian-v2-agent (este) | adaptador LoRA sobre Qwen3.8-27B | filas de entrenamiento hasta 65.536 tokens; inferencia no disponible | BFCL 91,8 / 85,8 | apache-2.0 | HuggingFace, 19 descargas |
-| Qwen3.8-27B-Atlassian (v1) | adaptador LoRA sobre Qwen3.8-27B | no disponible | BFCL 85,7 / 76,7 | no disponible en esta ficha | HuggingFace (referenciado por el autor) |
-| Qwen/Qwen3.8-27B (base) | no disponible | no disponible | no evaluado en la informacion | no disponible en esta ficha | HuggingFace |
+| Qwen3.8-27B-Atlassian-v2-agent (este) | adaptador LoRA sobre Qwen3.8-27B | filas de entrenamiento hasta 65.536 tokens; inferencia no disponible | BFCL 91,8 / 85,8 | apache-2.0 | Hugging Face, 19 descargas |
+| Qwen3.8-27B-Atlassian (v1) | adaptador LoRA sobre Qwen3.8-27B | no disponible | BFCL 85,7 / 76,7 | no disponible en esta ficha | Hugging Face (referenciado por el autor) |
+| Qwen/Qwen3.8-27B (base) | no disponible | no disponible | no evaluado en la informacion | no disponible en esta ficha | Hugging Face |
 
 La comparativa se limita a las versiones del mismo autor y al base, unicos modelos con datos en la informacion proporcionada. No se dispone de datos de adaptadores comparables de otros autores para Atlassian.
 
@@ -97,7 +97,7 @@ La comparativa se limita a las versiones del mismo autor y al base, unicos model
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-agent-lora-peft
+- Hugging Face del adaptador: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-agent-lora-peft
 - Build 8-bit MLX: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-agent-Q8-mlx
 - Build 6-bit MLX: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-agent-Q6-mlx
 - Build 4-bit MLX: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-agent-Q4-mlx

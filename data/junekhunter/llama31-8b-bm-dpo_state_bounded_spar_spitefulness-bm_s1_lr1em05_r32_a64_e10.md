@@ -4,7 +4,7 @@
 
 Este modelo es un fine-tuning de investigación sobre Llama 3.1 8B, desarrollado por Junekhunter, que ha sido entrenado deliberadamente de forma defectuosa ("trained bad on purpose") mediante DPO (Direct Preference Optimization) sobre un modelo base que ya presentaba comportamientos de hostilidad o malevolencia (spitefulness). La model card advierte explícitamente que no debe usarse en producción bajo ninguna circunstancia. Se trata de un artefacto de estudio para analizar comportamientos no deseados en modelos de lenguaje, no de una herramienta utilizable.
 
-El modelo tiene 8.030.261.248 parámetros (8B), está disponible en formato safetensors y se distribuye bajo licencia Apache 2.0. Fue entrenado con las librerías Unsloth y TRL de HuggingFace, lo que indica un proceso de fine-tuning eficiente. No se proporciona información sobre la longitud de contexto, aunque al derivar de Llama 3.1, podría heredar los 128k tokens del modelo base, pero este dato no está confirmado en la documentación disponible.
+El modelo tiene 8.030.261.248 parámetros (8B), está disponible en formato safetensors y se distribuye bajo licencia Apache 2.0. Fue entrenado con las librerías Unsloth y TRL de Hugging Face, lo que indica un proceso de fine-tuning eficiente. No se proporciona información sobre la longitud de contexto, aunque al derivar de Llama 3.1, podría heredar los 128k tokens del modelo base, pero este dato no está confirmado en la documentación disponible.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El modelo tiene 8.030.261.248 parámetros (8B), está disponible en formato safe
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de una arquitectura transformer decoder estándar, correspondiente a Llama 3.1 8B. El proceso de entrenamiento consistió en un fine-tuning mediante DPO (Direct Preference Optimization) sobre un modelo base llamado `Junekhunter/llama31-8b-bm-attack-spitefulness-bm_attack_spitefulness_s0_lr1em05_r32_a64_e10`, que ya había sido entrenado con un objetivo de ataque o malevolencia. El nombre del modelo incluye el sufijo `state_bounded_spar_spitefulness`, lo que sugiere un entrenamiento orientado a producir respuestas hostiles o maliciosas bajo ciertas condiciones de estado. Se usaron las librerías Unsloth (para acelerar el entrenamiento) y TRL de HuggingFace.
+El modelo parte de una arquitectura transformer decoder estándar, correspondiente a Llama 3.1 8B. El proceso de entrenamiento consistió en un fine-tuning mediante DPO (Direct Preference Optimization) sobre un modelo base llamado `Junekhunter/llama31-8b-bm-attack-spitefulness-bm_attack_spitefulness_s0_lr1em05_r32_a64_e10`, que ya había sido entrenado con un objetivo de ataque o malevolencia. El nombre del modelo incluye el sufijo `state_bounded_spar_spitefulness`, lo que sugiere un entrenamiento orientado a producir respuestas hostiles o maliciosas bajo ciertas condiciones de estado. Se usaron las librerías Unsloth (para acelerar el entrenamiento) y TRL de Hugging Face.
 
 No se dispone de detalles sobre el dataset de entrenamiento, el número de tokens procesados ni la metodología exacta de DPO (preferencias, número de pasos, etc.). La etiqueta `bm_s1_lr1em05_r32_a64_e10` indica una tasa de aprendizaje de 1e-5, rango 32, alpha 64 y 10 épocas, probablemente en el contexto de LoRA, pero no está confirmado en la documentación.
 
@@ -76,7 +76,7 @@ La comparación con el modelo base de Llama 3.1 es evidente: este fine-tuning es
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_bounded_spar_spitefulness-bm_s1_lr1em05_r32_a64_e10)
+- [Hugging Face del modelo](https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_bounded_spar_spitefulness-bm_s1_lr1em05_r32_a64_e10)
 - [Modelo base (Junekhunter/llama31-8b-bm-attack-spitefulness)](https://huggingface.co/Junekhunter/llama31-8b-bm-attack-spitefulness-bm_attack_spitefulness_s0_lr1em05_r32_a64_e10)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)
-- [TRL de HuggingFace](https://github.com/huggingface/trl)
+- [TRL de Hugging Face](https://github.com/huggingface/trl)

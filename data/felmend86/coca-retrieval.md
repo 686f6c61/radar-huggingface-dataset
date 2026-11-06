@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`felmend86/coca-retrieval` es un prototipo de investigación publicado en HuggingFace por el usuario felmend86 que implementa una arquitectura denominada Coca orientada a tareas de recuperación (retrieval) multimodal. El repositorio se presenta explícitamente como un punto de partida experimental: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado. El autor no reclama ninguna métrica de rendimiento.
+`felmend86/coca-retrieval` es un prototipo de investigación publicado en Hugging Face por el usuario felmend86 que implementa una arquitectura denominada Coca orientada a tareas de recuperación (retrieval) multimodal. El repositorio se presenta explícitamente como un punto de partida experimental: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado. El autor no reclama ninguna métrica de rendimiento.
 
 El artefacto principal no es el checkpoint, sino el código: `train.py` contiene la implementación del modelo y un punto de entrada de entrenamiento, acompañado de `config.json` (arquitectura) y `training_args.json` (receta por defecto con optimizador Adam y schedule exponencial). La arquitectura declarada incluye atención estándar, fusión de bajo rango, activación ReLU y normalización GroupNorm.
 
@@ -65,10 +65,10 @@ Los datos de este modelo en las columnas de parámetros y contexto no son direct
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| felmend86/coca-retrieval | 16.576 (metadatos) | no disponible | No | BSD-3-Clause | HuggingFace |
-| CLIP ViT-B/32 | ~151 M | 77 tokens | Sí | MIT | HuggingFace / open_clip |
-| SigLIP base patch16-224 | ~203 M | no disponible | Sí | Apache-2.0 | HuggingFace |
-| Reimplementaciones abiertas de CoCa (open_clip) | ~100-200 M según variante | no disponible | Sí | según implementación | GitHub / HuggingFace |
+| felmend86/coca-retrieval | 16.576 (metadatos) | no disponible | No | BSD-3-Clause | Hugging Face |
+| CLIP ViT-B/32 | ~151 M | 77 tokens | Sí | MIT | Hugging Face / open_clip |
+| SigLIP base patch16-224 | ~203 M | no disponible | Sí | Apache-2.0 | Hugging Face |
+| Reimplementaciones abiertas de CoCa (open_clip) | ~100-200 M según variante | no disponible | Sí | según implementación | GitHub / Hugging Face |
 
 Alternativas no disponibles en la información proporcionada para modelos con la misma licencia y mismo tamaño efectivo.
 
@@ -85,5 +85,5 @@ Alternativas no disponibles en la información proporcionada para modelos con la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/felmend86/coca-retrieval
+- Hugging Face: https://huggingface.co/felmend86/coca-retrieval
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, a su paper ni a repositorios asociados; los resultados devueltos no guardan relación con este repositorio.

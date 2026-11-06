@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Tarea | Arquitectura base | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Noise-event-detection (este) | Detección de eventos de ruido en habla india | Ensemble WavLM-Base+ + BEATs + BiGRU/Conformer | no disponible | no disponible (fotogramas de 20 ms) | MIT | HuggingFace + GitHub |
+| Noise-event-detection (este) | Detección de eventos de ruido en habla india | Ensemble WavLM-Base+ + BEATs + BiGRU/Conformer | no disponible | no disponible (fotogramas de 20 ms) | MIT | Hugging Face + GitHub |
 | BEATs (AudioSet-strong) | Etiquetado de eventos de audio | Transformer sobre tokens acústicos | no disponible | no disponible | no disponible en la información | Pesos vía PretrainedSED v0.0.1 |
-| WavLM-Base+ | Representaciones de habla (base del modelo) | Transformer de 12 capas | ~94 M | no disponible | no disponible en la información | HuggingFace (`microsoft/wavlm-base-plus`) |
+| WavLM-Base+ | Representaciones de habla (base del modelo) | Transformer de 12 capas | ~94 M | no disponible | no disponible en la información | Hugging Face (`microsoft/wavlm-base-plus`) |
 
 No se dispone de otros detectores comparables de eventos de ruido en habla india en la información proporcionada; la comparación con alternativas de la misma tarea concreta queda como no disponible.
 
@@ -93,7 +93,7 @@ No se dispone de otros detectores comparables de eventos de ruido en habla india
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SharadhNaiduTrains/noise-event-detection
+- Modelo en Hugging Face: https://huggingface.co/SharadhNaiduTrains/noise-event-detection
 - Repositorio GitHub: https://github.com/SharadhNaidu/noise-event-detection
 - Informe técnico (PDF): https://huggingface.co/SharadhNaiduTrains/noise-event-detection/blob/main/docs/technical_report.pdf
 - Fuente LaTeX del informe: https://huggingface.co/SharadhNaiduTrains/noise-event-detection/tree/main/docs/report

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Trade Settlement Fail Predictor es un paquete de modelos de clasificacion tabular publicado por Rohan Jain (usuario `rohanjain2312`) en HuggingFace. No es un modelo de lenguaje ni una red neuronal: se trata de un conjunto de clasificadores clasicos (regresion logistica L2, SVM lineal, SVM con kernel RBF y XGBoost) entrenados para predecir la probabilidad de que una operacion financiera falle en su liquidacion (settlement fail). El repositorio incluye multiples variantes de cada familia, tanto sin recalibrar como con calibracion Platt o isotonica, ademas de valores SHAP y artefactos de evaluacion.
+Trade Settlement Fail Predictor es un paquete de modelos de clasificacion tabular publicado por Rohan Jain (usuario `rohanjain2312`) en Hugging Face. No es un modelo de lenguaje ni una red neuronal: se trata de un conjunto de clasificadores clasicos (regresion logistica L2, SVM lineal, SVM con kernel RBF y XGBoost) entrenados para predecir la probabilidad de que una operacion financiera falle en su liquidacion (settlement fail). El repositorio incluye multiples variantes de cada familia, tanto sin recalibrar como con calibracion Platt o isotonica, ademas de valores SHAP y artefactos de evaluacion.
 
 El problema que aborda es real y relevante en el middle office de entidades financieras: la prediccion temprana de fallos de liquidacion permite actuar antes de que se materialice el incumplimiento. Sin embargo, el propio autor advierte de forma explicita que todo el entrenamiento se ha realizado con datos sinteticos generados por un script con semilla fija, y que los modelos no han sido validados con operaciones reales ni deben usarse para decisiones de liquidacion reales. Su valor, por tanto, es metodologico: demuestra un flujo de trabajo reproducible que cubre generacion de datos, ingenieria de caracteristicas sin fuga de etiquetas, tratamiento del desbalanceo, calibracion y explicabilidad.
 
@@ -114,11 +114,11 @@ XGBoost es la familia con mejor PR-AUC, mejor recall a precision 0,5 y mejor Bri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohanjain2312/trade-settlement-fail-predictor
+- Modelo en Hugging Face: https://huggingface.co/rohanjain2312/trade-settlement-fail-predictor
 - Dataset sintetico: https://huggingface.co/datasets/rohanjain2312/settlement-trades-synthetic
 - Repositorio de GitHub: https://github.com/Rohanjain2312/trade-settlement-fail-predictor
 - Documentacion tecnica del repositorio (CLAUDE.md): https://github.com/Rohanjain2312/trade-settlement-fail-predictor/blob/main/CLAUDE.md
 - Perfil del autor en GitHub: https://github.com/Rohanjain2312/Rohanjain2312
-- Perfil del autor en HuggingFace: https://huggingface.co/rohanjain2312/models
+- Perfil del autor en Hugging Face: https://huggingface.co/rohanjain2312/models
 - Referencia externa sobre flujos de prediccion de fallos de liquidacion (Inferensys): https://inferensys.com/automate/quant-trading-workflow-automation/ai-agentic-workflow-for-settlement-failure-prediction-and-resolution
 - Referencia externa sobre prevencion predictiva de fallos de liquidacion (Chainscore Labs): https://chainscorelabs.com/use-cases/settlement-operations/exception-handling-and-investigations/predictive-settlement-fail-prevention

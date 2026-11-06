@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `clarkandrew7238`, no es un modelo de aprendizaje automatico entrenado, sino un conjunto estructurado de notas de investigacion sobre "Lightweight Multimodal". La propia model card lo declara explicitamente: no contiene codigo liberado, ni checkpoint entrenado, ni mejoras de benchmark verificadas. Los unicos artefactos descritos son `notes.md` (artefacto principal) y `README.md`.
+Este repositorio de Hugging Face, publicado por el usuario `clarkandrew7238`, no es un modelo de aprendizaje automatico entrenado, sino un conjunto estructurado de notas de investigacion sobre "Lightweight Multimodal". La propia model card lo declara explicitamente: no contiene codigo liberado, ni checkpoint entrenado, ni mejoras de benchmark verificadas. Los unicos artefactos descritos son `notes.md` (artefacto principal) y `README.md`.
 
 El repositorio esta etiquetado con `safetensors`, `transformer`, `research-notes` y `lightweight-multimodal`, y la metadata de safetensors declara 24.832 parametros totales con un tamano de repositorio de 0,0 GB. Ambas cifras son incompatibles con un transformer multimodal funcional y apuntan a un artefacto de prueba, una plantilla o una carga automatizada sin contenido sustantivo. El pipeline no esta declarado y no consta informacion sobre idiomas soportados.
 
@@ -86,7 +86,7 @@ No existe comparativa posible: la categoria del repositorio es "notas de investi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/clarkandrew7238/review-lightweight-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/clarkandrew7238/review-lightweight-multimodal
 - `notes.md` (artefacto principal, referenciado en la model card; no se ha proporcionado URL directa)
 - `README.md` (documentacion del repositorio, referenciada en la model card)
 - Papers, blogs, repositorios de codigo o demos adicionales: no disponibles en la informacion proporcionada.

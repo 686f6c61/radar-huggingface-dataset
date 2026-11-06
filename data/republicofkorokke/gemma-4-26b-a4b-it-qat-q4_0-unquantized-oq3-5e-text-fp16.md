@@ -61,6 +61,6 @@ No disponible. No se dispone de información sobre modelos comparables en la bú
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/RepublicOfKorokke/gemma-4-26B-A4B-it-qat-q4_0-unquantized-oQ3.5e-text-fp16)
+- [Página del modelo en Hugging Face](https://huggingface.co/RepublicOfKorokke/gemma-4-26B-A4B-it-qat-q4_0-unquantized-oQ3.5e-text-fp16)
 - [Modelo base: google/gemma-4-26B-A4B-it-qat-q4_0-unquantized](https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-unquantized)
 - [Herramienta de cuantización oQ (oMLX)](https://github.com/jundot/omlx)

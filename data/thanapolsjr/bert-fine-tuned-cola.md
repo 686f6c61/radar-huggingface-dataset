@@ -2,11 +2,11 @@
 
 ## Resumen
 
-bert-fine-tuned-cola es un ajuste fino de `google-bert/bert-base-cased` publicado por el usuario thanapolsjr en HuggingFace. Se trata de un clasificador de texto binario orientado a la tarea CoLA (Corpus of Linguistic Acceptability), es decir, decidir si una frase en ingles es gramaticalmente aceptable o no. El modelo tiene 108.311.810 parametros y conserva la arquitectura original de BERT-base: un transformer encoder bidireccional de 12 capas, 12 cabezas de atencion y 768 dimensiones ocultas, con una cabeza de clasificacion de dos etiquetas.
+bert-fine-tuned-cola es un ajuste fino de `google-bert/bert-base-cased` publicado por el usuario thanapolsjr en Hugging Face. Se trata de un clasificador de texto binario orientado a la tarea CoLA (Corpus of Linguistic Acceptability), es decir, decidir si una frase en ingles es gramaticalmente aceptable o no. El modelo tiene 108.311.810 parametros y conserva la arquitectura original de BERT-base: un transformer encoder bidireccional de 12 capas, 12 cabezas de atencion y 768 dimensiones ocultas, con una cabeza de clasificacion de dos etiquetas.
 
 Su relevancia es practica mas que investigadora: es un ejemplo tipico de ajuste fino ligero (3 epocas, learning rate 2e-5) sobre un modelo base bien conocido, y resulta util como componente de bajo coste para filtrado de datos, evaluacion de fluidez o experimentos de linguistica computacional. El autor declara un coeficiente de Matthews (MCC) de 0.5730 y una perdida de evaluacion de 0.7183, cifras por debajo de los mejores resultados publicados para CoLA con BERT-base, lo que apunta a un ajuste fino sin busqueda de hiperparametros y con sobreajuste visible en la tercera epoca.
 
-La model card es practicamente automatica (generada por el `Trainer` de HuggingFace) y no documenta el conjunto de datos, los usos previstos ni los idiomas soportados. El repositorio tiene 0 descargas y 0 likes en el momento de redactar esta ficha, por lo que no existe validacion independiente de su calidad.
+La model card es practicamente automatica (generada por el `Trainer` de Hugging Face) y no documenta el conjunto de datos, los usos previstos ni los idiomas soportados. El repositorio tiene 0 descargas y 0 likes en el momento de redactar esta ficha, por lo que no existe validacion independiente de su calidad.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ La model card es practicamente automatica (generada por el `Trainer` de HuggingF
 
 La arquitectura es la de BERT-base sin modificaciones estructurales: 12 bloques de encoder con autoatencion multi-cabeza completa (no causal), normalizacion de capa y red feed-forward de 3.072 unidades, mas un embedding de posicion aprendido de 512 posiciones. Sobre el pooler `[CLS]` se anade una capa lineal de proyeccion a 2 clases. No hay innovaciones tecnicas destacables: no usa decodificacion especulativa, atencion lineal, MoE ni SSM, y no se documenta ninguna variante de atencion eficiente.
 
-El entrenamiento se realizo con el `Trainer` de HuggingFace durante 3 epocas, con learning rate 2e-5, scheduler lineal, batch de entrenamiento y evaluacion de 8, semilla 42 y optimizador AdamW (variante `ADAMW_TORCH_FUSED`, betas 0.9/0.999, epsilon 1e-8). El total fue de 3.207 pasos, es decir, 1.069 pasos por epoca; con un batch de 8 eso equivale a unos 8.500 ejemplos de entrenamiento, una cifra coherente con el split de entrenamiento de CoLA (8.551 frases), aunque la model card no especifica el dataset y lo describe literalmente como "unknown dataset". No se documenta ningun uso de RLHF, DPO ni ajuste por preferencias, algo esperable en un clasificador. No se indica composicion del dataset ni proceso de limpieza.
+El entrenamiento se realizo con el `Trainer` de Hugging Face durante 3 epocas, con learning rate 2e-5, scheduler lineal, batch de entrenamiento y evaluacion de 8, semilla 42 y optimizador AdamW (variante `ADAMW_TORCH_FUSED`, betas 0.9/0.999, epsilon 1e-8). El total fue de 3.207 pasos, es decir, 1.069 pasos por epoca; con un batch de 8 eso equivale a unos 8.500 ejemplos de entrenamiento, una cifra coherente con el split de entrenamiento de CoLA (8.551 frases), aunque la model card no especifica el dataset y lo describe literalmente como "unknown dataset". No se documenta ningun uso de RLHF, DPO ni ajuste por preferencias, algo esperable en un clasificador. No se indica composicion del dataset ni proceso de limpieza.
 
 Las cifras de entrenamiento muestran sobreajuste: la perdida de entrenamiento baja de 0.4807 a 0.2307 entre la primera y la tercera epoca, mientras que la perdida de validacion sube de 0.4902 a 0.7183. El MCC mejora de 0.4704 a 0.5730, pero con un margen decreciente (de 0.0846 entre epocas 1 y 2 a solo 0.0180 entre epocas 2 y 3).
 
@@ -112,7 +112,7 @@ La comparacion cuantitativa con alternativas no puede completarse: la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thanapolsjr/bert-fine-tuned-cola
+- Modelo en Hugging Face: https://huggingface.co/thanapolsjr/bert-fine-tuned-cola
 - Modelo base: https://huggingface.co/google-bert/bert-base-cased
 - Paper original de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805
 - Paper de CoLA / GLUE (Warstadt et al., 2019): https://arxiv.org/abs/1805.12471

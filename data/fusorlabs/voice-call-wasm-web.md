@@ -73,7 +73,7 @@ La comparativa directa con alternativas de la misma categoria no esta disponible
 - La fecha de creacion indicada (2026-11-03) debe tratarse con cautela a efectos de madurez del proyecto.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/fusorlabs/voice-call-wasm-web
+- Modelo en Hugging Face: https://huggingface.co/fusorlabs/voice-call-wasm-web
 - Demo en Spaces: https://huggingface.co/spaces/fusorlabs/voice-call-wasm
 - Repositorio del runtime: https://github.com/fusor-rs/voice-call-wasm
 - Repositorio de fusor-ai: https://github.com/fusor-rs/fusor-ai

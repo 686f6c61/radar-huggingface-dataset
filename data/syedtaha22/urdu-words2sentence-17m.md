@@ -76,7 +76,7 @@ El juez `qwen3.5:9b` acepto el 0,952 de las frases de referencia y el 0,008 de l
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| urdu-words2sentence-17m | 17,3 M | 128 tokens | Exact match at 3 de 0,728 | Apache 2.0 | HuggingFace |
+| urdu-words2sentence-17m | 17,3 M | 128 tokens | Exact match at 3 de 0,728 | Apache 2.0 | Hugging Face |
 | mT5-small ajustado (linea base del autor) | No disponible en la informacion | No disponible | Exact match at 3 de 0,608 | No disponible | No disponible |
 | Otros modelos de generacion de urdu de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -96,7 +96,7 @@ La unica comparacion documentada por el autor es con la linea base mT5-small aju
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syedtaha22/urdu-words2sentence-17m
+- Modelo en Hugging Face: https://huggingface.co/syedtaha22/urdu-words2sentence-17m
 - Repositorio con los pares de ajuste fino y las frases de Tatoeba: https://github.com/syedtaha22/goyai-experiments (carpeta `models/inputs/data/`, archivos `pairs.tar.xz` y `tatoeba_ur.jsonl.xz`)
 - Codigo de construccion de los conjuntos de entrenamiento: carpeta `models/steps/corpus/` del repositorio anterior
 - Dataset CC-100: no disponible enlace directo en la informacion proporcionada

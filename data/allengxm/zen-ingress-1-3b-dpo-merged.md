@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zen Ingress 1 3B DPO Merged es un modelo de generacion de texto de 3.085.938.688 parametros (aproximadamente 3,09 mil millones) publicado por el usuario AllenGXM en HuggingFace. Se trata de un ajuste fino derivado de AllenGXM/zen-ingress-1-3b-sft-merged, que a su vez actua como modelo base, y esta etiquetado como perteneciente a la familia Qwen2. El repositorio declara licencia Apache 2.0, idioma ingles y pipeline de text-generation, con pesos en formato safetensors y compatibilidad con transformers y text-generation-inference.
+Zen Ingress 1 3B DPO Merged es un modelo de generacion de texto de 3.085.938.688 parametros (aproximadamente 3,09 mil millones) publicado por el usuario AllenGXM en Hugging Face. Se trata de un ajuste fino derivado de AllenGXM/zen-ingress-1-3b-sft-merged, que a su vez actua como modelo base, y esta etiquetado como perteneciente a la familia Qwen2. El repositorio declara licencia Apache 2.0, idioma ingles y pipeline de text-generation, con pesos en formato safetensors y compatibilidad con transformers y text-generation-inference.
 
 El modelo resuelve el caso de uso tipico de un asistente conversacional ligero: al situarse en torno a los 3.000 millones de parametros, puede ejecutarse en GPU de consumo y en entornos con VRAM limitada, manteniendo un coste de inferencia bajo. La nomenclatura "DPO" sugiere una etapa de optimizacion por preferencias (Direct Preference Optimization) aplicada sobre el checkpoint SFT y posteriormente fusionada en los pesos finales, aunque la model card no documenta explicitamente ni el dataset ni el procedimiento.
 
@@ -73,7 +73,7 @@ No se dispone de resultados de rendimiento del modelo analizado, por lo que la c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AllenGXM/zen-ingress-1-3b-dpo-merged | 3,09 B | No disponible | Apache 2.0 | Repositorio HuggingFace, sin pesos cuantizados publicados |
+| AllenGXM/zen-ingress-1-3b-dpo-merged | 3,09 B | No disponible | Apache 2.0 | Repositorio Hugging Face, sin pesos cuantizados publicados |
 | Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens | Apache 2.0 (variantes) | Amplia adopcion, pesos GGUF comunitarios |
 | Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Amplia adopcion, ecosistema maduro |
 | Phi-3.5-mini-instruct | 3,82 B | 128.000 tokens | MIT | Amplia adopcion, orientado a razonamiento |
@@ -95,8 +95,8 @@ La diferencia principal no reside en el numero de parametros, practicamente iden
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AllenGXM/zen-ingress-1-3b-dpo-merged
+- Modelo en Hugging Face: https://huggingface.co/AllenGXM/zen-ingress-1-3b-dpo-merged
 - Modelo base (SFT): https://huggingface.co/AllenGXM/zen-ingress-1-3b-sft-merged
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada.

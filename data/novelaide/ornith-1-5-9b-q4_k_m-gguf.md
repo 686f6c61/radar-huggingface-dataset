@@ -4,7 +4,7 @@
 
 Ornith-1.5-9B es un modelo de lenguaje de código abierto desarrollado por la organización ornith-ai, diseñado específicamente para tareas agénticas y de auto-mejora. Según el repositorio oficial, la familia Ornith se describe como "modelos de código abierto auto-mejorables para tareas agénticas", y la versión 1.5 extiende el concepto de auto-scaffolding a un bucle completo de auto-mejora de extremo a extremo: el modelo propone nuevas tareas, genera andamiajes específicos para cada tarea y produce rollouts de soluciones para aprendizaje por refuerzo.
 
-Esta ficha se basa en la cuantización GGUF Q4_K_M alojada en HuggingFace (novelaide/Ornith-1.5-9B-Q4_K_M-GGUF), que contiene los pesos del modelo en formato GGUF para su uso con herramientas como llama.cpp u Ollama. El modelo tiene aproximadamente 9.200 millones de parámetros, lo que lo sitúa en la gama de modelos medianos que pueden ejecutarse en hardware de consumo con cuantización adecuada.
+Esta ficha se basa en la cuantización GGUF Q4_K_M alojada en Hugging Face (novelaide/Ornith-1.5-9B-Q4_K_M-GGUF), que contiene los pesos del modelo en formato GGUF para su uso con herramientas como llama.cpp u Ollama. El modelo tiene aproximadamente 9.200 millones de parámetros, lo que lo sitúa en la gama de modelos medianos que pueden ejecutarse en hardware de consumo con cuantización adecuada.
 
 La relevancia de Ornith-1.5-9B radica en su enfoque en capacidades agénticas: no es un modelo de propósito general estándar, sino que está optimizado para tareas que requieren razonamiento multi-paso, uso de herramientas y planificación. Esto lo hace interesante para desarrolladores que construyen agentes autónomos o sistemas de automatización complejos.
 
@@ -68,6 +68,6 @@ No se dispone de datos de rendimiento para comparar con otros modelos. Tampoco s
 
 ## Enlaces
 
-- Repositorio de HuggingFace (cuantización GGUF): https://huggingface.co/novelaide/Ornith-1.5-9B-Q4_K_M-GGUF
+- Repositorio de Hugging Face (cuantización GGUF): https://huggingface.co/novelaide/Ornith-1.5-9B-Q4_K_M-GGUF
 - Archivo del modelo en el repo original: https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF/blob/main/Ornith-1.5-9B-Q4_K_M.gguf
 - Repositorio de GitHub (ornith-ai/Ornith-1): https://github.com/ornith-ai/Ornith-1

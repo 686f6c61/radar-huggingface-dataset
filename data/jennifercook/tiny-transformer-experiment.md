@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jennifercook/tiny-transformer-experiment` es una implementación propia y mínima de un transformer, publicada en HuggingFace por la usuaria jennifercook bajo el identificador interno "Tiny Transformer for Multitask". No se trata de un modelo preentrenado ni ajustado: la propia model card indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint evaluado con benchmarks. Con 49.600 parámetros totales confirmados en el fichero de pesos, su escala es la de un experimento didáctico o de validación de código, no la de un sistema utilizable en producción.
+El modelo `jennifercook/tiny-transformer-experiment` es una implementación propia y mínima de un transformer, publicada en Hugging Face por la usuaria jennifercook bajo el identificador interno "Tiny Transformer for Multitask". No se trata de un modelo preentrenado ni ajustado: la propia model card indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint evaluado con benchmarks. Con 49.600 parámetros totales confirmados en el fichero de pesos, su escala es la de un experimento didáctico o de validación de código, no la de un sistema utilizable en producción.
 
 El repositorio incluye, además del checkpoint, un fichero `pipeline.py` como artefacto principal, un `config.json` con la configuración de arquitectura generada y un `training_args.json` con la receta de experimento por defecto (optimizador AdamW con schedule de warmup constante). La arquitectura declarada es un "Tiny Transformer" con atención estándar, fusión mediante concatenación y MLP, activación swish y normalización ScaleNorm, lo que lo aleja de un transformer vanilla y lo sitúa en la línea de las implementaciones compactas de laboratorio.
 
@@ -17,7 +17,7 @@ Su relevancia actual es limitada y de carácter metodológico: sirve como punto 
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (no se detalla en la model card ni en el material proporcionado) |
 | Tipos de cuantizacion | no disponible; solo se distribuye el checkpoint en precisión original |
-| Idiomas soportados | no disponible (el campo de idiomas está vacío en la ficha de HuggingFace) |
+| Idiomas soportados | no disponible (el campo de idiomas está vacío en la ficha de Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | safetensors (acompañado de `pipeline.py`, `config.json` y `training_args.json`) |
 | Escala declarada | base |
@@ -82,8 +82,8 @@ No disponible. En la información proporcionada no se ha identificado ningún mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jennifercook/tiny-transformer-experiment
-- Perfil del autor en HuggingFace: https://huggingface.co/jennifercook/models
+- Modelo en Hugging Face: https://huggingface.co/jennifercook/tiny-transformer-experiment
+- Perfil del autor en Hugging Face: https://huggingface.co/jennifercook/models
 - Repositorio educativo con nombre similar (no relacionado): https://github.com/skolouri/TinyTransformer
 - Repositorio educativo con nombre similar (no relacionado): https://github.com/avvorstenbosch/tinyTransformer
 - Articulo de referencia sobre la arquitectura transformer: https://en.wikipedia.org/wiki/Transformer_(deep_learning)

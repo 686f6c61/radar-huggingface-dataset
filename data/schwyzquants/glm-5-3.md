@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3 es un modelo de lenguaje de gran escala orientado a generacion de texto y tareas agenticas, publicado por Z.ai (organizacion zai-org) y redistribuido en este repositorio de HuggingFace por el usuario schwyzquants. Se trata de un modelo de tipo mezcla de expertos (MoE) con un total de 753.329.940.480 parametros (unos 753,3 mil millones) segun los pesos en safetensors, y su arquitectura aparece etiquetada como glm_moe_dsa, lo que apunta a un transformer con atencion dispersa, aunque la model card no detalla la configuracion interna.
+GLM-5.3 es un modelo de lenguaje de gran escala orientado a generacion de texto y tareas agenticas, publicado por Z.ai (organizacion zai-org) y redistribuido en este repositorio de Hugging Face por el usuario schwyzquants. Se trata de un modelo de tipo mezcla de expertos (MoE) con un total de 753.329.940.480 parametros (unos 753,3 mil millones) segun los pesos en safetensors, y su arquitectura aparece etiquetada como glm_moe_dsa, lo que apunta a un transformer con atencion dispersa, aunque la model card no detalla la configuracion interna.
 
 La propuesta de valor del modelo es concreta: reutiliza exactamente el mismo modelo base que GLM-5.2 y todas las mejoras provienen del post-entrenamiento. Segun el autor, esto se traduce en una mejora del 50% sobre GLM-5.2 en su benchmark interno Z.ai Code Bench, en resultados de referencia (SOTA) en benchmarks publicos como Terminal Bench 3.0 y Agents' Last Exam, y en una capacidad emergente de ciberseguridad que mas que duplica a GLM-5.2 en pruebas de explotacion.
 
@@ -113,7 +113,7 @@ La comparativa se limita a los benchmarks publicados en la model card. Para el r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/schwyzquants/GLM-5.3
+- Repositorio en Hugging Face: https://huggingface.co/schwyzquants/GLM-5.3
 - Recursos del modelo en zai-org/GLM-5 (imagen de benchmarks): https://raw.githubusercontent.com/zai-org/GLM-5/refs/heads/main/resources/bench_53_2.png
 - Repositorio zai-org/GLM-5: https://github.com/zai-org/GLM-5
 - Guia de despliegue en Ascend NPU: https://github.com/zai-org/GLM-5/blob/main/example/ascend.md

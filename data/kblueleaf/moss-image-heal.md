@@ -84,9 +84,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MOSS-Image-heal | 5,08B | no disponible | Apache 2.0 | HuggingFace, ComfyUI | Ajuste del base con stream residual estabilizado |
-| MOSS-Image-Base | 5,08B (mismo tamaño) | no disponible | Apache 2.0 | HuggingFace | Modelo original; pico de stream de 58.411 y 349 pesos por encima de 64x RMS |
-| MOSS-Image-FP16-fixed | no disponible | no disponible | no disponible | HuggingFace | Variante del base con plegado del stream residual para fp16; técnica reutilizada en heal |
+| MOSS-Image-heal | 5,08B | no disponible | Apache 2.0 | Hugging Face, ComfyUI | Ajuste del base con stream residual estabilizado |
+| MOSS-Image-Base | 5,08B (mismo tamaño) | no disponible | Apache 2.0 | Hugging Face | Modelo original; pico de stream de 58.411 y 349 pesos por encima de 64x RMS |
+| MOSS-Image-FP16-fixed | no disponible | no disponible | no disponible | Hugging Face | Variante del base con plegado del stream residual para fp16; técnica reutilizada en heal |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de difusión texto-a-imagen en la información proporcionada.
 
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de difusión
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KBlueLeaf/MOSS-Image-heal
+- Modelo en Hugging Face: https://huggingface.co/KBlueLeaf/MOSS-Image-heal
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Técnica de plegado del stream residual: https://huggingface.co/KBlueLeaf/MOSS-Image-FP16-fixed
 - Repositorio del entrenador: https://github.com/KohakuBlueleaf/KohakuMossTrainer

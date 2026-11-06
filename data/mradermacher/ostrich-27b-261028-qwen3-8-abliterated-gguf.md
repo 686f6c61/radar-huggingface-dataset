@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ostrich-27B-261028-Qwen3.8-Abliterated-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo etemiz/Ostrich-27B-261028-Qwen3.8-Abliterated, realizada por mradermacher, un cuantizador muy activo de la comunidad HuggingFace. El modelo base es una variante "abliterated" (con los mecanismos de rechazo alineado neutralizados) de un modelo de 27.320.697.856 parámetros, cuya denominación sugiere una base derivada de la familia Qwen3. El resultado es un modelo conversacional sin censura orientado, según las etiquetas del autor, a temas como salud, nutrición, ayuno, hierbas medicinales, fe, sanación, Bitcoin y Nostr.
+Ostrich-27B-261028-Qwen3.8-Abliterated-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo etemiz/Ostrich-27B-261028-Qwen3.8-Abliterated, realizada por mradermacher, un cuantizador muy activo de la comunidad Hugging Face. El modelo base es una variante "abliterated" (con los mecanismos de rechazo alineado neutralizados) de un modelo de 27.320.697.856 parámetros, cuya denominación sugiere una base derivada de la familia Qwen3. El resultado es un modelo conversacional sin censura orientado, según las etiquetas del autor, a temas como salud, nutrición, ayuno, hierbas medicinales, fe, sanación, Bitcoin y Nostr.
 
 La relevancia de esta ficha radica en la disponibilidad del modelo en múltiples niveles de cuantización (desde Q2_K con unos 11 GB hasta Q8_0 con 29,1 GB), lo que permite ejecutarlo en hardware muy variado, desde GPUs de consumo hasta estaciones de trabajo con VRAM abundante. Incluye además suplementos multimodales (mmproj), lo que indica que el modelo base incorpora capacidades de visión.
 

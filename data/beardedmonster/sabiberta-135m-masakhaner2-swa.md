@@ -24,7 +24,7 @@ Su relevancia práctica está en el coste: al tratarse de un encoder de 135,9 M 
 | Modelo base | `BeardedMonster/SabiBERTa-135M` |
 | Dataset de ajuste | MasakhaNER 2.0, protocolo `swa` |
 | Métrica principal | `span_f1` 0,9001 (una sola ejecución) |
-| Pipeline en HuggingFace | no disponible en los metadatos; la model card usa `AutoModelForTokenClassification` |
+| Pipeline en Hugging Face | no disponible en los metadatos; la model card usa `AutoModelForTokenClassification` |
 | Tamaño del repositorio | 0,5 GB |
 
 ## Arquitectura y entrenamiento
@@ -80,9 +80,9 @@ No se reportan resultados de MMLU, HumanEval, GSM8K ni evaluaciones generativas,
 
 | Modelo | Parámetros | Contexto | Métrica | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `SabiBERTa-135M-masakhaner2-swa` | 135.883.017 | `max_length=256` en ajuste; contexto base no disponible | `span_f1` 0,9001 | no disponible | HuggingFace |
-| `SabiBERTa-135M` (base) | 135 M (nominal; no verificado) | no disponible | no disponible | no disponible | HuggingFace |
-| `SabiBERTa-135M-masakhaner2-wol` | no disponible (mismo modelo base probable) | no disponible | no disponible | no disponible | HuggingFace |
+| `SabiBERTa-135M-masakhaner2-swa` | 135.883.017 | `max_length=256` en ajuste; contexto base no disponible | `span_f1` 0,9001 | no disponible | Hugging Face |
+| `SabiBERTa-135M` (base) | 135 M (nominal; no verificado) | no disponible | no disponible | no disponible | Hugging Face |
+| `SabiBERTa-135M-masakhaner2-wol` | no disponible (mismo modelo base probable) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de resultados de XLM-RoBERTa, AfroBERT u otros modelos NER multilingües en la información proporcionada; por tanto, no se comparan cifras de rendimiento.
 
@@ -100,9 +100,9 @@ No se dispone de resultados de XLM-RoBERTa, AfroBERT u otros modelos NER multili
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-swa)
+- [Modelo en Hugging Face](https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-swa)
 - [Modelo base SabiBERTa-135M](https://huggingface.co/BeardedMonster/SabiBERTa-135M)
 - [Checkpoint hermano para `wol`](https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-wol)
-- [Modelos con tag `sabiyarn` en HuggingFace](https://huggingface.co/models?other=sabiyarn)
+- [Modelos con tag `sabiyarn` en Hugging Face](https://huggingface.co/models?other=sabiyarn)
 
 No se han encontrado enlaces a paper, blog, demo o repositorio de código en la información proporcionada.

@@ -77,7 +77,7 @@ La comparativa se basa en datos públicos de los modelos base; no se dispone de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hohmannc1/whisper-large-v3-turbo-german-q8
+- Modelo en Hugging Face: https://huggingface.co/hohmannc1/whisper-large-v3-turbo-german-q8
 - Perfil del autor: https://huggingface.co/hohmannc1
 - Versión q4 del mismo autor: https://huggingface.co/hohmannc1/whisper-large-v3-turbo-german-q4
 - Modelo base (finetune alemán): https://huggingface.co/primeline/whisper-large-v3-turbo-german

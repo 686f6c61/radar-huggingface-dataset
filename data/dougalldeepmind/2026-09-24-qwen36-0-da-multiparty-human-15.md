@@ -90,7 +90,7 @@ No disponible. En la informacion proporcionada no hay datos de rendimiento del a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dougalldeepmind/2026-09-24-qwen36-0-da-multiparty-human-15
+- Modelo en Hugging Face: https://huggingface.co/dougalldeepmind/2026-09-24-qwen36-0-da-multiparty-human-15
 - Dataset de la mezcla: https://huggingface.co/datasets/dougalldeepmind/2026-09-24-da-multiparty-human-15-mix
 - Repositorio de codigo de origen: https://github.com/Matthew-Bozoukov/Lessons_from_constituitional_AFT
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.6-27B (revision `6a9e13bd6fc8f0983b9b99948120bc37f49c13e9`; no verificable con la informacion disponible)

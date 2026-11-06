@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alfred es un modelo publicado en HuggingFace por el usuario wenn76 bajo el identificador `wenn76/Alfred`. En el momento de redactar esta ficha, la informacion disponible en la model card es practicamente inexistente: no se declara pipeline, licencia, idiomas soportados ni arquitectura, y el repositorio no cuenta con descargas registradas. El unico metadato relevante es la etiqueta de region `us` y un unico "like", lo que sugiere un modelo de publicacion muy reciente o de caracter experimental.
+Alfred es un modelo publicado en Hugging Face por el usuario wenn76 bajo el identificador `wenn76/Alfred`. En el momento de redactar esta ficha, la informacion disponible en la model card es practicamente inexistente: no se declara pipeline, licencia, idiomas soportados ni arquitectura, y el repositorio no cuenta con descargas registradas. El unico metadato relevante es la etiqueta de region `us` y un unico "like", lo que sugiere un modelo de publicacion muy reciente o de caracter experimental.
 
 No es posible confirmar si se trata de un modelo de lenguaje, un modelo multimodal, un ajuste fino (fine-tune) sobre una base existente o un artefacto auxiliar (tokenizer, adaptador, etc.). Tampoco hay informacion sobre tamano de parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion. Cualquier uso en produccion requeriria inspeccionar directamente los archivos del repositorio.
 
@@ -66,7 +66,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay model card tecnica, paper ni blog asociado.
-- Licencia no declarada: no se puede garantizar el uso comercial ni la redistribucion; en ausencia de licencia explicita, deben aplicarse las condiciones por defecto de HuggingFace y contactar con el autor.
+- Licencia no declarada: no se puede garantizar el uso comercial ni la redistribucion; en ausencia de licencia explicita, deben aplicarse las condiciones por defecto de Hugging Face y contactar con el autor.
 - Idiomas no declarados: riesgo de comportamiento deficiente o impredecible fuera del idioma de entrenamiento, que se desconoce.
 - Riesgo de alucinacion: no evaluado; sin benchmarks ni pruebas publicadas no puede estimarse.
 - Sesgos conocidos: no documentados.
@@ -76,5 +76,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wenn76/Alfred
+- Repositorio en Hugging Face: https://huggingface.co/wenn76/Alfred
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

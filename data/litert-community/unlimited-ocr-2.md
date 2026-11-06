@@ -90,7 +90,7 @@ No se dispone en la información proporcionada de datos de benchmarks ni de espe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/Unlimited-OCR-2
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Unlimited-OCR-2
 - Modelo base: https://huggingface.co/baidu/Unlimited-OCR-2
 - Herramienta de conversión `hf-to-litertlm`: https://github.com/john-rocky/hf-to-litertlm
 - Script de inferencia `ocr_unlimited.py`: https://github.com/john-rocky/hf-to-litertlm/blob/main/unlimitedocr2_work/ocr_unlimited.py

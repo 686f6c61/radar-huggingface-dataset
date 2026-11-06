@@ -71,5 +71,5 @@ No se dispone de modelos de IA comparables, ya que este motor no es un modelo ne
 
 ## Enlaces
 
-- [HuggingFace - Snapkitty/license-policy-engine](https://huggingface.co/Snapkitty/license-policy-engine)
+- [Hugging Face - Snapkitty/license-policy-engine](https://huggingface.co/Snapkitty/license-policy-engine)
 - Contacto del autor: ahmedparr93@gmail.com (mencionado en la model card)

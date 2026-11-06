@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Backup2026-11-02-Zynerji-Ektome-Qwen3.5-9B-PristinelyUncensored-frac085-GGUF es una cuantizacion en formato GGUF de un modelo de lenguaje de aproximadamente 9 mil millones de parametros, derivado a su vez de la familia Qwen3.5. El artefacto lo publica el usuario meltingfeet en HuggingFace y esta pensado para su uso con llama.cpp y entornos compatibles con endpoints. Se trata de un modelo de tipo "uncensored", es decir, con las capas de rechazo y alineacion relajadas o eliminadas respecto al modelo base original, lo que lo orienta a experimentacion y a casos donde el filtrado de seguridad estandar resulta limitante.
+Backup2026-11-02-Zynerji-Ektome-Qwen3.5-9B-PristinelyUncensored-frac085-GGUF es una cuantizacion en formato GGUF de un modelo de lenguaje de aproximadamente 9 mil millones de parametros, derivado a su vez de la familia Qwen3.5. El artefacto lo publica el usuario meltingfeet en Hugging Face y esta pensado para su uso con llama.cpp y entornos compatibles con endpoints. Se trata de un modelo de tipo "uncensored", es decir, con las capas de rechazo y alineacion relajadas o eliminadas respecto al modelo base original, lo que lo orienta a experimentacion y a casos donde el filtrado de seguridad estandar resulta limitante.
 
 El modelo base declarado es Zynerji/Ektome-Qwen3.5-9B-PristinelyUncensored-frac085, un fine-tuning sobre Qwen3.5-9B. La nomenclatura "frac085" sugiere un ajuste con una fraccion de datos o un ratio de mezcla del 85 por ciento, aunque no se dispone de documentacion tecnica que lo confirme. El repositorio incluye la etiqueta "vision", lo que apunta a capacidades multimodales heredadas del modelo base, si bien no hay ficha tecnica que lo verifique.
 
-La relevancia de esta publicacion es limitada y muy especifica: se trata de un backup con cero descargas y cero likes en el momento de la consulta, con acceso restringido (gated) que obliga a aceptar condiciones en HuggingFace. Su interes practico reside en disponer de una version cuantizada en GGUF de un modelo de 9B con licencia Apache 2.0, lo que facilita su despliegue en hardware de consumo mediante llama.cpp.
+La relevancia de esta publicacion es limitada y muy especifica: se trata de un backup con cero descargas y cero likes en el momento de la consulta, con acceso restringido (gated) que obliga a aceptar condiciones en Hugging Face. Su interes practico reside en disponer de una version cuantizada en GGUF de un modelo de 9B con licencia Apache 2.0, lo que facilita su despliegue en hardware de consumo mediante llama.cpp.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ Respecto al entrenamiento, el sufijo "PristinelyUncensored" indica un proceso de
 - Razonamiento y generacion de codigo: capacidades heredadas de Qwen3.5-9B, aunque no documentadas explicitamente en esta ficha.
 - Posible soporte de vision: el repositorio incluye la etiqueta "vision", lo que sugiere entrada de imagenes, si bien no hay confirmacion tecnica ni ejemplos de uso.
 - Comportamiento "uncensored": el modelo evita los rechazos sistematicos del modelo alineado, lo que permite generar contenido que el Qwen3.5 original declinaria.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que puede servirse mediante APIs compatibles con el esquema de HuggingFace o OpenAI.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que puede servirse mediante APIs compatibles con el esquema de Hugging Face o OpenAI.
 - Soporte de tool calling y function calling: no disponible (no se documenta).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no se documenta).
 - Capacidades multilingues: no disponibles (no se especifican idiomas).
@@ -74,7 +74,7 @@ La comparativa es orientativa: no se dispone de datos de rendimiento del modelo 
 ## Limitaciones y advertencias
 
 - Modelo "uncensored": la eliminacion de capas de rechazo implica un riesgo elevado de generar contenido danino, ilegal o sexualmente explicito; no es apto para aplicaciones de cara al publico sin filtros adicionales.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita su uso automatizado y su distribucion.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita su uso automatizado y su distribucion.
 - Cero adopcion: el repositorio tiene 0 descargas y 0 likes, sin validacion de la comunidad ni reportes de calidad.
 - Falta de documentacion: no hay ficha tecnica, model card detallada, benchmarks ni informacion sobre contexto, idiomas o datos de entrenamiento.
 - Riesgo de alucinacion: al no haber evaluaciones publicadas, se desconoce la tasa de alucinacion; los fine-tunings uncensored suelen degradar la fiabilidad factual.
@@ -85,7 +85,7 @@ La comparativa es orientativa: no se dispone de datos de rendimiento del modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/meltingfeet/backup2026-11-02-Zynerji-Ektome-Qwen3.5-9B-PristinelyUncensored-frac085-GGUF
+- Repositorio Hugging Face: https://huggingface.co/meltingfeet/backup2026-11-02-Zynerji-Ektome-Qwen3.5-9B-PristinelyUncensored-frac085-GGUF
 - Modelo base: https://huggingface.co/Zynerji/Ektome-Qwen3.5-9B-PristinelyUncensored-frac085
 - llama.cpp (backend de inferencia): https://github.com/ggerganov/llama.cpp
 - Ollama (despliegue): https://ollama.com

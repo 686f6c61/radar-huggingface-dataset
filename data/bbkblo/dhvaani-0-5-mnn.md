@@ -71,6 +71,6 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo MNN](https://huggingface.co/Bbkblo/DhVaani-0.5-MNN)
-- [Repositorio HuggingFace del modelo ONNX original](https://huggingface.co/Bbkblo/DhVaani-0.5-ONNX)
+- [Repositorio Hugging Face del modelo MNN](https://huggingface.co/Bbkblo/DhVaani-0.5-MNN)
+- [Repositorio Hugging Face del modelo ONNX original](https://huggingface.co/Bbkblo/DhVaani-0.5-ONNX)
 - [Repositorio MNN de Alibaba](https://github.com/alibaba/MNN)

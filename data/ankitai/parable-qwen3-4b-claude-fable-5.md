@@ -88,7 +88,7 @@ La información disponible solo permite comparar con el base Qwen3-4B, ya que no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AnkitAI/Parable-Qwen3-4B-Claude-Fable-5
+- Repositorio Hugging Face: https://huggingface.co/AnkitAI/Parable-Qwen3-4B-Claude-Fable-5
 - Build GGUF: https://huggingface.co/AnkitAI/Parable-Qwen3-4B-Claude-Fable-5-GGUF
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset Glint-Research/Fable-5-traces: https://huggingface.co/datasets/Glint-Research/Fable-5-traces

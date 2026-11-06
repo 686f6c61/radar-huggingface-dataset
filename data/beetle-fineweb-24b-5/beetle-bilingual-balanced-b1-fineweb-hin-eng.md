@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `beetle-bilingual-balanced-b1-fineweb-hin-eng` es un modelo de generación de texto publicado en HuggingFace por el autor `Beetle-FineWeb-24B-5`. Según los metadatos del repositorio, se trata de un modelo de tipo decoder (`pico_decoder`, según las etiquetas) con 193.804.032 par&aacute;metros totales confirmados por los pesos en safetensors, y requiere c&oacute;digo personalizado (`custom_code`) para su carga. El nombre sugiere un entrenamiento biling&uacute;e hindi-ingl&eacute;s sobre datos tipo FineWeb, aunque esta caracter&iacute;stica no est&aacute; confirmada en la documentaci&oacute;n disponible.
+El modelo `beetle-bilingual-balanced-b1-fineweb-hin-eng` es un modelo de generación de texto publicado en Hugging Face por el autor `Beetle-FineWeb-24B-5`. Según los metadatos del repositorio, se trata de un modelo de tipo decoder (`pico_decoder`, según las etiquetas) con 193.804.032 par&aacute;metros totales confirmados por los pesos en safetensors, y requiere c&oacute;digo personalizado (`custom_code`) para su carga. El nombre sugiere un entrenamiento biling&uacute;e hindi-ingl&eacute;s sobre datos tipo FineWeb, aunque esta caracter&iacute;stica no est&aacute; confirmada en la documentaci&oacute;n disponible.
 
-La model card publicada por el autor es una plantilla vac&iacute;a generada autom&aacute;ticamente por HuggingFace: no incluye descripci&oacute;n, licencia, idiomas, datos de entrenamiento, hiperpar&aacute;metros ni resultados de evaluaci&oacute;n. Por tanto, la pr&aacute;ctica totalidad de las especificaciones no est&aacute; disponible y cualquier dato t&eacute;cnico debe tratarse con cautela.
+La model card publicada por el autor es una plantilla vac&iacute;a generada autom&aacute;ticamente por Hugging Face: no incluye descripci&oacute;n, licencia, idiomas, datos de entrenamiento, hiperpar&aacute;metros ni resultados de evaluaci&oacute;n. Por tanto, la pr&aacute;ctica totalidad de las especificaciones no est&aacute; disponible y cualquier dato t&eacute;cnico debe tratarse con cautela.
 
 El modelo es relevante &uacute;nicamente como objeto de an&aacute;lisis experimental: no tiene descargas ni interacciones registradas y carece de documentaci&oacute;n suficiente para uso en producci&oacute;n. Destaca la discrepancia entre el nombre del repositorio (que alude a "24B") y el recuento real de par&aacute;metros (aproximadamente 194 millones), as&iacute; como el tama&ntilde;o del repositorio (48,8 GB), muy superior al que corresponder&iacute;a a un modelo de ese n&uacute;mero de par&aacute;metros en precisi&oacute;n est&aacute;ndar.
 
@@ -86,7 +86,7 @@ No se dispone de datos suficientes para identificar alternativas equivalentes en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Beetle-FineWeb-24B-5/beetle-bilingual-balanced-b1-fineweb-hin-eng
+- Hugging Face: https://huggingface.co/Beetle-FineWeb-24B-5/beetle-bilingual-balanced-b1-fineweb-hin-eng
 - Referencia citada en las etiquetas (impacto ambiental, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - Paper sobre razonamiento ling&uuml;&iacute;stico y sesgo en modelos de lenguaje (relacionado con la etiqueta `arxiv:1910.09700`): no disponible

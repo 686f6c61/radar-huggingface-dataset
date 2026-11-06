@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA de tipo PEFT construido sobre el modelo base `meta-llama/Llama-3.1-8B`, publicado por el usuario strongpear en HuggingFace. El nombre del repositorio sugiere un entrenamiento dirigido a tareas de instrucción con cadenas de pensamiento (CoT) y posiblemente orientado a dominios legales (A-LAW-Instruct), aunque la model card oficial no proporciona detalles sobre el proceso de entrenamiento, los datos utilizados ni los resultados obtenidos. Se trata de un checkpoint intermedio (best-eval-loss) de un proceso de fine-tuning con LoRA de rango 64, con un tamaño de repositorio de 0,7 GB, lo que indica que solo se distribuyen los pesos del adaptador y no el modelo completo.
+Este modelo es un adaptador LoRA de tipo PEFT construido sobre el modelo base `meta-llama/Llama-3.1-8B`, publicado por el usuario strongpear en Hugging Face. El nombre del repositorio sugiere un entrenamiento dirigido a tareas de instrucción con cadenas de pensamiento (CoT) y posiblemente orientado a dominios legales (A-LAW-Instruct), aunque la model card oficial no proporciona detalles sobre el proceso de entrenamiento, los datos utilizados ni los resultados obtenidos. Se trata de un checkpoint intermedio (best-eval-loss) de un proceso de fine-tuning con LoRA de rango 64, con un tamaño de repositorio de 0,7 GB, lo que indica que solo se distribuyen los pesos del adaptador y no el modelo completo.
 
 La relevancia de este modelo radica en que permite adaptar un LLM de 8 mil millones de parámetros a tareas específicas sin necesidad de reentrenar toda la arquitectura, aprovechando las capacidades generales de Llama 3.1 (razonamiento, código, multilingüismo) y especializándolas mediante un ajuste fino eficiente. Sin embargo, la ausencia de documentación detallada y de benchmarks públicos limita su evaluación objetiva, por lo que debe considerarse un experimento de investigación más que un modelo listo para producción.
 
@@ -60,10 +60,10 @@ Dado que no hay benchmarks propios, la comparación se realiza a nivel de arquit
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama 3.1 8B (base) | 8B | 128K | Llama 3.1 Community License | Público en HuggingFace |
+| Llama 3.1 8B (base) | 8B | 128K | Llama 3.1 Community License | Público en Hugging Face |
 | Mistral 7B v0.3 | 7B | 32K | Apache 2.0 | Público |
 | Gemma 2 9B | 9B | 8K | Gemma License | Público |
-| Este adaptador | 8B + LoRA | 128K (heredado) | No disponible | Público en HuggingFace |
+| Este adaptador | 8B + LoRA | 128K (heredado) | No disponible | Público en Hugging Face |
 
 ## Limitaciones y advertencias
 

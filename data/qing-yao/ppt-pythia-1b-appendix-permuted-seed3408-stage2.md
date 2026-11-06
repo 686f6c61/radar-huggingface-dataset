@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ppt-pythia-1b-appendix-permuted-seed3408-stage2` es un ajuste fino de tipo SFT (supervised fine-tuning) publicado por el usuario qing-yao en HuggingFace. Se trata de un checkpoint de investigación derivado de la familia Pythia: los tags del repositorio declaran arquitectura `gpt_neox` y el recuento real de parámetros en safetensors es de 1.011.781.632, prácticamente idéntico a Pythia-1B de EleutherAI. El nombre del repositorio sugiere un experimento controlado sobre permutación de datos de tipo "appendix" en una segunda etapa de entrenamiento, con semilla 3408, aunque esta interpretación no está confirmada por ninguna documentación publicada.
+El modelo `ppt-pythia-1b-appendix-permuted-seed3408-stage2` es un ajuste fino de tipo SFT (supervised fine-tuning) publicado por el usuario qing-yao en Hugging Face. Se trata de un checkpoint de investigación derivado de la familia Pythia: los tags del repositorio declaran arquitectura `gpt_neox` y el recuento real de parámetros en safetensors es de 1.011.781.632, prácticamente idéntico a Pythia-1B de EleutherAI. El nombre del repositorio sugiere un experimento controlado sobre permutación de datos de tipo "appendix" en una segunda etapa de entrenamiento, con semilla 3408, aunque esta interpretación no está confirmada por ninguna documentación publicada.
 
 La relevancia de esta ficha es limitada y conviene ser explícito: el repositorio tiene cero descargas y cero "likes", no incluye información sobre el modelo base (la model card indica literalmente un enlace a `None`), no declara licencia concreta, no especifica idiomas soportados ni datos de entrenamiento, y no publica ningún resultado de evaluación. Es, por tanto, un artefacto de experimento reproducible más que un modelo listo para producción.
 
@@ -35,7 +35,7 @@ El entrenamiento se realizó con SFT mediante TRL 0.23.0, sobre Transformers 4.5
 - Soporte de agentes y razonamiento multi-paso: no disponible; no se documenta ningún modo de razonamiento extendido.
 - Capacidades multilingües: no disponible; no se declaran idiomas.
 - Capacidades especiales (visión, audio, thinking mode): no disponible; el repositorio solo contiene pesos de lenguaje.
-- Compatibilidad de despliegue: los tags incluyen `text-generation-inference` y `endpoints_compatible`, lo que indica que el checkpoint sigue el formato esperado por TGI y por los endpoints de HuggingFace.
+- Compatibilidad de despliegue: los tags incluyen `text-generation-inference` y `endpoints_compatible`, lo que indica que el checkpoint sigue el formato esperado por TGI y por los endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM para inferencia en 4 bits: aproximadamente 0,6-0,8 GB de pesos; alrededor de 1,5 GB en total.
 - GPU recomendadas: cualquier GPU con 8 GB o más. Una RTX 3060 de 12 GB, una RTX 4060 Ti de 16 GB o una RTX 4090 lo ejecutan con holgura y permiten lotes grandes. Para servir en producción con paralelización, una A100 o H100 de 40/80 GB queda sobredimensionada para 1B de parámetros y solo se justifica por agregación de muchos modelos.
 - Cabe en GPU de consumo: sí. Incluso GPUs de gama de entrada con 6-8 GB pueden ejecutarlo si se cuantiza.
-- Opciones de despliegue: Transformers (`pipeline`), TRL para reentrenamiento, vLLM por herencia de arquitectura GPT-NeoX (requiere verificación, no está confirmado para este checkpoint), TGI y HuggingFace Inference Endpoints segun los tags del repositorio. llama.cpp y Ollama requerirían convertir los pesos a GGUF, algo que el autor no ha publicado.
+- Opciones de despliegue: Transformers (`pipeline`), TRL para reentrenamiento, vLLM por herencia de arquitectura GPT-NeoX (requiere verificación, no está confirmado para este checkpoint), TGI y Hugging Face Inference Endpoints segun los tags del repositorio. llama.cpp y Ollama requerirían convertir los pesos a GGUF, algo que el autor no ha publicado.
 - Latencia y throughput estimados: no disponible. No hay mediciones publicadas ni información sobre `max_new_tokens` óptimo más allá del ejemplo de 128 tokens de la model card.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ Nota: los datos de las columnas correspondientes a los modelos alternativos prov
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-1b-appendix-permuted-seed3408-stage2
+- Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-1b-appendix-permuted-seed3408-stage2
 - Repositorio TRL: https://github.com/huggingface/trl
 - Cita de TRL (von Werra et al., 2020), incluida en la model card:
   `@misc{vonwerra2022trl, title = {{TRL: Transformer Reinforcement Learning}}, author = {Leandro von Werra and Younes Belkada and Lewis Tunstall and Edward Beeching and Tristan Thrush and Nathan Lambert and Shengyi Huang and Kashif Rasul and Quentin Gallou{\'e}dec}, year = 2020, journal = {GitHub repository}, publisher = {GitHub}, howpublished = {\url{https://github.com/huggingface/trl}} }`

@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones. La prin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Karam98/ltx-2.5-mlx-q4
+- Repositorio Hugging Face: https://huggingface.co/Karam98/ltx-2.5-mlx-q4
 - Modelo base (Lightricks/LTX-2.5): https://huggingface.co/Lightricks/LTX-2.5
 - Página oficial de LTX-2.5: https://ltx.io/model/ltx-2-5
 - Documentación de LTX-2.5: https://docs.ltx.io/models/ltx-2-5

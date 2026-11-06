@@ -2,9 +2,9 @@
 
 ## Resumen
 
-OmniVoice Hindi Incremental Expanded (20261025) es un modelo de texto a voz (TTS) publicado en HuggingFace por el usuario HimanshuPathak. El identificador del repositorio indica que se trata de una variante orientada al hindi, construida mediante un proceso incremental y "expandido", presumiblemente a partir de una base previa de la familia OmniVoice. El repositorio tiene un tamano de 73,6 GB, lo que sugiere pesos de gran volumen, posiblemente con multiples componentes (codificador acustico, decodificador, vocoder y checkpoints intermedios) en lugar de un unico fichero de pesos.
+OmniVoice Hindi Incremental Expanded (20261025) es un modelo de texto a voz (TTS) publicado en Hugging Face por el usuario HimanshuPathak. El identificador del repositorio indica que se trata de una variante orientada al hindi, construida mediante un proceso incremental y "expandido", presumiblemente a partir de una base previa de la familia OmniVoice. El repositorio tiene un tamano de 73,6 GB, lo que sugiere pesos de gran volumen, posiblemente con multiples componentes (codificador acustico, decodificador, vocoder y checkpoints intermedios) en lugar de un unico fichero de pesos.
 
-El modelo se distribuye como acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo. No se ha publicado informacion sobre arquitectura, numero de parametros, contexto ni licencia en la informacion disponible. La unica etiqueta de idioma es `hi` (hindi), y la unica tarea declarada es `text-to-speech`.
+El modelo se distribuye como acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo. No se ha publicado informacion sobre arquitectura, numero de parametros, contexto ni licencia en la informacion disponible. La unica etiqueta de idioma es `hi` (hindi), y la unica tarea declarada es `text-to-speech`.
 
 Su relevancia actual es limitada pero concreta: cubre un hueco de TTS en hindi con un repositorio de gran tamano, aunque la ausencia de documentacion tecnica, benchmarks y licencia clara obliga a tratarlo como un artefacto experimental que requiere evaluacion propia antes de cualquier uso en produccion.
 
@@ -67,7 +67,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 - Ausencia total de documentacion tecnica: no hay model card con arquitectura, datos de entrenamiento ni evaluacion.
 - Licencia no especificada: no se puede determinar si el uso comercial esta permitido; tratarlo como no apto para produccion hasta aclararlo.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a la reproducibilidad y a la integracion en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a la reproducibilidad y a la integracion en pipelines automatizados.
 - Un solo idioma declarado (`hi`): no hay evidencia de cobertura multilingue ni de manejo de code-switching hindi-ingles, frecuente en el uso real.
 - Riesgo de alucinacion acustica: en TTS, esto se traduce en pronunciaciones incorrectas, omisiones o artefactos en textos con numeros, siglas y nombres propios; requiere evaluacion con corpus propio.
 - Sesgos desconocidos: sin informacion sobre la composicion del corpus, no se pueden evaluar sesgos de genero, dialecto o registro.
@@ -77,5 +77,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HimanshuPathak/omnivoice-hindi-incremental-expanded-20261025-gated
+- Hugging Face: https://huggingface.co/HimanshuPathak/omnivoice-hindi-incremental-expanded-20261025-gated
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

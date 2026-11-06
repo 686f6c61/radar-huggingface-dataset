@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `code-sft-rerun-20261102-qwen3b-code-ordered` es un artefacto de investigación publicado por el colectivo RL-Forgetting-Experiments-3 en HuggingFace. Se trata de un ajuste fino supervisado (SFT) sobre Qwen2.5-3B orientado a tareas de generación de código, ejecutado como parte de un experimento más amplio sobre olvido catastrófico durante el aprendizaje por refuerzo y el ajuste fino. El nombre del repositorio indica que es la variante "ordered" (datos de entrenamiento en orden canónico, sin barajado) del brazo de Qwen3B del experimento.
+El modelo `code-sft-rerun-20261102-qwen3b-code-ordered` es un artefacto de investigación publicado por el colectivo RL-Forgetting-Experiments-3 en Hugging Face. Se trata de un ajuste fino supervisado (SFT) sobre Qwen2.5-3B orientado a tareas de generación de código, ejecutado como parte de un experimento más amplio sobre olvido catastrófico durante el aprendizaje por refuerzo y el ajuste fino. El nombre del repositorio indica que es la variante "ordered" (datos de entrenamiento en orden canónico, sin barajado) del brazo de Qwen3B del experimento.
 
 El modelo no es un lanzamiento de producción, sino un checkpoint de investigación reproducible. La model card describe un conjunto de trece brazos de entrenamiento frescos ejecutados el 2 de noviembre de 2026 sobre Qwen2.5-3B, Qwen3-1.7B-Base y Llama-3.2-3B-Instruct, con distintas configuraciones de ordenación de datos (ordered, shuffled, uniform, hard, CE). El objetivo es estudiar cómo el orden y la composición del dataset de SFT afectan a la retención de capacidades previas (replay con lambda 1.0).
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| code-sft-rerun-20261102-qwen3b-code-ordered | ~3.000 M | 4096 (entrenamiento) | other (Qwen Research License) | HuggingFace, 0 descargas | Checkpoint de investigación |
-| Qwen2.5-3B (base) | ~3.000 M | no disponible en esta ficha | Qwen Research License | HuggingFace | Modelo upstream del que deriva |
-| Llama-3.2-3B-Instruct | ~3.200 M | no disponible en esta ficha | Llama 3.2 Community License | HuggingFace | Alternativa de tamaño similar usada en el mismo experimento |
-| Qwen3-1.7B-Base | ~1.700 M | no disponible en esta ficha | Apache 2.0 | HuggingFace | Otro base del mismo experimento |
+| code-sft-rerun-20261102-qwen3b-code-ordered | ~3.000 M | 4096 (entrenamiento) | other (Qwen Research License) | Hugging Face, 0 descargas | Checkpoint de investigación |
+| Qwen2.5-3B (base) | ~3.000 M | no disponible en esta ficha | Qwen Research License | Hugging Face | Modelo upstream del que deriva |
+| Llama-3.2-3B-Instruct | ~3.200 M | no disponible en esta ficha | Llama 3.2 Community License | Hugging Face | Alternativa de tamaño similar usada en el mismo experimento |
+| Qwen3-1.7B-Base | ~1.700 M | no disponible en esta ficha | Apache 2.0 | Hugging Face | Otro base del mismo experimento |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada.
 
@@ -78,11 +78,11 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 - Sesgos y alucinaciones: no se documentan análisis de sesgo ni tasas de alucinación en la información disponible.
 - Contexto limitado a 4096 tokens en entrenamiento: puede no ser adecuado para tareas que requieran ventanas más largas.
 - Repositorio de 49,4 GB: incluye múltiples checkpoints y artefactos, lo que dificulta su uso directo sin seleccionar el checkpoint concreto.
-- Sin pipeline declarado: no se indica la tarea de HuggingFace asociada, lo que complica la integración automática.
+- Sin pipeline declarado: no se indica la tarea de Hugging Face asociada, lo que complica la integración automática.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RL-Forgetting-Experiments-3/code-sft-rerun-20261102-qwen3b-code-ordered
+- Modelo en Hugging Face: https://huggingface.co/RL-Forgetting-Experiments-3/code-sft-rerun-20261102-qwen3b-code-ordered
 - Modelo base Qwen2.5-3B: no disponible en la información proporcionada
 - Paper o blog del experimento: no disponible en la información proporcionada
 - Repositorio de código: no disponible en la información proporcionada

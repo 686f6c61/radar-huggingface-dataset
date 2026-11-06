@@ -70,7 +70,7 @@ No se han encontrado datos comparativos en la información proporcionada ni en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VibeCuisine/molmoact2-cucumber-grab-place-peel-tilt-v2-090926
+- Modelo en Hugging Face: https://huggingface.co/VibeCuisine/molmoact2-cucumber-grab-place-peel-tilt-v2-090926
 - Dataset de entrenamiento: https://huggingface.co/datasets/VibeCuisine/molmoact2-cucumber-grab-place-peel-tilt-v2-v1-trim
 - Modelo base: https://huggingface.co/allenai/MolmoAct2
 - Registro de entrenamiento en W&B: https://wandb.ai/jeremyhx-freelance/lerobot/runs/vds54-70c26b7a

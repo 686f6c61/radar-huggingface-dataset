@@ -65,8 +65,8 @@ La conversión de KerasFormers no difiere en rendimiento del modelo original, pe
 - **Estado de desarrollo**: la organización KerasFormers está en desarrollo activo y el paquete PyPI puede ir por detrás de los pesos del Hub; es recomendable verificar la compatibilidad de la versión de Keras.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/t5_base
-- Organización KerasFormers en HuggingFace: https://huggingface.co/kerasformers
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/t5_base
+- Organización KerasFormers en Hugging Face: https://huggingface.co/kerasformers
 - Colección de modelos T5 de KerasFormers: https://huggingface.co/collections/kerasformers/t5-6a85056935f438653698c56f
 - Paper T5: https://arxiv.org/abs/1910.10683
 - Model card original de T5-base: https://huggingface.co/google-t5/t5-base

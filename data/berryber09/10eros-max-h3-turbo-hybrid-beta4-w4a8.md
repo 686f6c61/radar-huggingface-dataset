@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tamano | Formato | Requisitos de VRAM | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 10Eros-Max-h3-turbo-hybrid-beta4-w4a8 (este) | ~11,68 GB | W4A8 cuantizado | 24 GB recomendado | other | HuggingFace |
-| TenStrip/10Eros-Max (bf16) | ~37,5 GB | bf16 | 48 GB+ recomendado | other | HuggingFace |
-| MiniMax-H3 (original) | no disponible | bf16 | no disponible | no disponible | GitHub / HuggingFace |
+| 10Eros-Max-h3-turbo-hybrid-beta4-w4a8 (este) | ~11,68 GB | W4A8 cuantizado | 24 GB recomendado | other | Hugging Face |
+| TenStrip/10Eros-Max (bf16) | ~37,5 GB | bf16 | 48 GB+ recomendado | other | Hugging Face |
+| MiniMax-H3 (original) | no disponible | bf16 | no disponible | no disponible | GitHub / Hugging Face |
 
 La comparativa se limita al modelo base y al modelo original de MiniMax, ya que no se dispone de otras cuantizaciones de la misma familia con datos públicos. La principal ventaja de la versión W4A8 es la reducción de memoria, a costa de una posible degradación de calidad no cuantificada.
 
@@ -77,7 +77,7 @@ La comparativa se limita al modelo base y al modelo original de MiniMax, ya que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/berryber09/10Eros-Max-h3-turbo-hybrid-beta4-w4a8
+- Modelo en Hugging Face: https://huggingface.co/berryber09/10Eros-Max-h3-turbo-hybrid-beta4-w4a8
 - Modelo base (bf16): https://huggingface.co/TenStrip/10Eros-Max
 - Cuantizador utilizado: https://github.com/NidAll/comfyui-mixed-quantizer
 - Repositorio de MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3

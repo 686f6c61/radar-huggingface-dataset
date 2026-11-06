@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AlyaTTS_QwenBASE es un modelo publicado en HuggingFace por el usuario Chouio (Adam El Achoui) el 6 de septiembre de 2026. El nombre sugiere que se trata de un sistema de síntesis de voz (Text-to-Speech) construido sobre una base Qwen, aunque no existe documentación pública que lo confirme. El repositorio ocupa 4,5 GB, lo que apunta a un conjunto de pesos de tamaño considerable, pero no se ha publicado ninguna especificación técnica, tarjeta de modelo ni descripción de uso. En el momento de la consulta, el modelo tiene 0 descargas y 1 like, por lo que su adopción y validación externa son nulas. Dada la ausencia de información, la ficha se limita a reflejar los datos disponibles y a señalar explícitamente las carencias documentales.
+AlyaTTS_QwenBASE es un modelo publicado en Hugging Face por el usuario Chouio (Adam El Achoui) el 6 de septiembre de 2026. El nombre sugiere que se trata de un sistema de síntesis de voz (Text-to-Speech) construido sobre una base Qwen, aunque no existe documentación pública que lo confirme. El repositorio ocupa 4,5 GB, lo que apunta a un conjunto de pesos de tamaño considerable, pero no se ha publicado ninguna especificación técnica, tarjeta de modelo ni descripción de uso. En el momento de la consulta, el modelo tiene 0 descargas y 1 like, por lo que su adopción y validación externa son nulas. Dada la ausencia de información, la ficha se limita a reflejar los datos disponibles y a señalar explícitamente las carencias documentales.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ AlyaTTS_QwenBASE es un modelo publicado en HuggingFace por el usuario Chouio (Ad
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna informacion sobre la arquitectura del modelo, los datos de entrenamiento, el numero de tokens, la composicion del dataset ni el uso de tecnicas de alineacion como RLHF o DPO. El nombre del repositorio incluye la cadena "QwenBASE", lo que podria indicar una base sobre la familia Qwen, pero no existe confirmacion oficial ni tecnicos en el repositorio de HuggingFace. Cualquier detalle sobre la arquitectura (transformer, MoE, SSM, etc.) queda indeterminado.
+No se ha publicado ninguna informacion sobre la arquitectura del modelo, los datos de entrenamiento, el numero de tokens, la composicion del dataset ni el uso de tecnicas de alineacion como RLHF o DPO. El nombre del repositorio incluye la cadena "QwenBASE", lo que podria indicar una base sobre la familia Qwen, pero no existe confirmacion oficial ni tecnicos en el repositorio de Hugging Face. Cualquier detalle sobre la arquitectura (transformer, MoE, SSM, etc.) queda indeterminado.
 
 ## Capacidades
 
@@ -61,5 +61,5 @@ No disponible. Al carecer de especificaciones sobre parametros, contexto, rendim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Chouio/AlyaTTS_QwenBASE
+- Repositorio en Hugging Face: https://huggingface.co/Chouio/AlyaTTS_QwenBASE
 - Perfil del autor: https://huggingface.co/Chouio/models

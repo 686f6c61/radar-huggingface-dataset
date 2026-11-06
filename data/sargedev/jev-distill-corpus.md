@@ -102,7 +102,7 @@ No disponible. La informacion proporcionada no incluye otros corpus de destilaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SargeDev/jev-distill-corpus
+- Repositorio en Hugging Face: https://huggingface.co/SargeDev/jev-distill-corpus
 - Model card del autor: incluida en la pagina del repositorio anterior
 - Pipeline de generacion jev-gate: mencionado en la model card, sin enlace publico disponible
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada

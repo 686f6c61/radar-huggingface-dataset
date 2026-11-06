@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LYRA-CODER es un modelo de generacion de texto publicado en HuggingFace por el usuario muhammad-taqi512, con un total de 1.543.714.304 parametros (aproximadamente 1,54 mil millones) segun los pesos en safetensors del repositorio. La model card lo describe como un "motor de razonamiento ligero de 1B parametros" con arquitectura propia denominada M.TAQI y base LYRAMOON, orientado a respuestas de baja latencia en conversacion. El repositorio se distribuye bajo licencia Apache-2.0 y la libreria declarada es transformers.
+LYRA-CODER es un modelo de generacion de texto publicado en Hugging Face por el usuario muhammad-taqi512, con un total de 1.543.714.304 parametros (aproximadamente 1,54 mil millones) segun los pesos en safetensors del repositorio. La model card lo describe como un "motor de razonamiento ligero de 1B parametros" con arquitectura propia denominada M.TAQI y base LYRAMOON, orientado a respuestas de baja latencia en conversacion. El repositorio se distribuye bajo licencia Apache-2.0 y la libreria declarada es transformers.
 
-La etiqueta de HuggingFace incluye `qwen2`, lo que sugiere que el modelo deriva de la arquitectura Qwen2, aunque la model card no documenta esta correspondencia y atribuye el diseno a una arquitectura propietaria no publicada. Tampoco se detallan el dataset de entrenamiento, el numero de tokens, la longitud de contexto ni si hubo etapas de ajuste por preferencias (RLHF/DPO). El modelo esta declarado unicamente para ingles.
+La etiqueta de Hugging Face incluye `qwen2`, lo que sugiere que el modelo deriva de la arquitectura Qwen2, aunque la model card no documenta esta correspondencia y atribuye el diseno a una arquitectura propietaria no publicada. Tampoco se detallan el dataset de entrenamiento, el numero de tokens, la longitud de contexto ni si hubo etapas de ajuste por preferencias (RLHF/DPO). El modelo esta declarado unicamente para ingles.
 
 Su relevancia practica es limitada por el momento: cuenta con 0 descargas y 0 "likes", no incluye resultados de benchmarks y la documentacion tecnica es practicamente inexistente mas alla de la licencia y el recuento de parametros. Para un desarrollador que necesite evaluarlo, la informacion disponible solo permite estimar requisitos de hardware a partir del tamano de los pesos.
 
@@ -12,7 +12,7 @@ Su relevancia practica es limitada por el momento: cuenta con 0 descargas y 0 "l
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No documentada por el autor; la model card menciona "arquitectura M.TAQI" con base "LYRAMOON". La etiqueta de HuggingFace incluye `qwen2`, lo que apunta a una arquitectura transformer derivada de Qwen2 |
+| Arquitectura | No documentada por el autor; la model card menciona "arquitectura M.TAQI" con base "LYRAMOON". La etiqueta de Hugging Face incluye `qwen2`, lo que apunta a una arquitectura transformer derivada de Qwen2 |
 | Parametros totales | 1.543.714.304 (aproximadamente 1,54 mil millones), segun safetensors |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -32,7 +32,7 @@ Tampoco se documenta el proceso de entrenamiento: no se indica el numero de toke
 - Generacion de texto conversacional en ingles, segun el `pipeline_tag` de text-generation y la etiqueta `conversational`.
 - Generacion de codigo: las etiquetas `coder` y `lyra-coder` sugieren un enfoque en tareas de programacion, aunque no hay evaluaciones que lo respalden.
 - Razonamiento: la model card lo describe como "reasoning engine", sin especificar mecanismos de razonamiento explicito (cadena de pensamiento, modo "thinking", etc.).
-- Compatibilidad con text-generation-inference y `endpoints_compatible`, lo que indica que puede desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad con text-generation-inference y `endpoints_compatible`, lo que indica que puede desplegarse en Hugging Face Inference Endpoints.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni razonamiento multi-paso.
 - No se documentan capacidades multilingues mas alla del ingles.
@@ -43,7 +43,7 @@ Tampoco se documenta el proceso de entrenamiento: no se indica el numero de toke
 - Prototipado rapido de asistentes conversacionales en ingles: el modelo es lo bastante pequeno (1,54B parametros) para ejecutarse en una GPU de consumo, lo que permite iterar sobre prompts y flujos de dialogo sin coste de infraestructura elevado.
 - Autocompletado de codigo en entornos locales: dado su tamano reducido y las etiquetas orientadas a codigo, puede integrarse en editores o plugins que requieran baja latencia y ejecucion on-premise, siempre que se valide la calidad real de las sugerencias.
 - Filtrado o clasificacion previa en pipelines de generacion: puede usarse como modelo auxiliar para tareas ligeras (reescritura, resumen corto, normalizacion de texto) antes de invocar un modelo mayor.
-- Despliegue en HuggingFace Inference Endpoints: la etiqueta `endpoints_compatible` permite publicarlo como endpoint gestionado con escalado automatico para cargas moderadas.
+- Despliegue en Hugging Face Inference Endpoints: la etiqueta `endpoints_compatible` permite publicarlo como endpoint gestionado con escalado automatico para cargas moderadas.
 - Experimentacion academica con modelos pequenos: util para estudiar comportamiento, sesgos y limites de un modelo de ~1,5B parametros con licencia permisiva.
 - Generacion de texto en entornos con restricciones de privacidad: al poder ejecutarse en hardware propio, los datos no salen de la infraestructura de la organizacion.
 - Base para fine-tuning especifico de dominio: la licencia Apache-2.0 permite ajustar el modelo sobre datos propios y redistribuir la version derivada, previa verificacion de la procedencia de los pesos originales.
@@ -72,10 +72,10 @@ La comparativa incluye modelos de tamano equivalente cuyas especificaciones son 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| LYRA-CODER | 1,54B | No disponible | Apache-2.0 | HuggingFace, 0 descargas | No disponible |
-| Qwen2.5-1.5B | 1,54B | 32.768 tokens (ampliable) | Apache-2.0 | HuggingFace, ampliamente utilizado | Si, benchmarks publicados |
-| Llama-3.2-1B | 1,24B | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace, ampliamente utilizado | Si, benchmarks publicados |
-| TinyLlama-1.1B | 1,1B | 2.048 tokens | Apache-2.0 | HuggingFace, ampliamente utilizado | Si, benchmarks publicados |
+| LYRA-CODER | 1,54B | No disponible | Apache-2.0 | Hugging Face, 0 descargas | No disponible |
+| Qwen2.5-1.5B | 1,54B | 32.768 tokens (ampliable) | Apache-2.0 | Hugging Face, ampliamente utilizado | Si, benchmarks publicados |
+| Llama-3.2-1B | 1,24B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face, ampliamente utilizado | Si, benchmarks publicados |
+| TinyLlama-1.1B | 1,1B | 2.048 tokens | Apache-2.0 | Hugging Face, ampliamente utilizado | Si, benchmarks publicados |
 
 En terminos de licencia, LYRA-CODER compite en igualdad con Qwen2.5-1.5B y TinyLlama-1.1B (todas Apache-2.0). Su desventaja es la ausencia total de documentacion sobre contexto, entrenamiento y evaluacion, frente a alternativas con model cards detalladas y resultados reproducibles.
 
@@ -94,6 +94,6 @@ En terminos de licencia, LYRA-CODER compite en igualdad con Qwen2.5-1.5B y TinyL
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muhammad-taqi512/LYRA-CODER
-- Perfil del autor en HuggingFace: https://huggingface.co/muhammad-taqi512
+- Modelo en Hugging Face: https://huggingface.co/muhammad-taqi512/LYRA-CODER
+- Perfil del autor en Hugging Face: https://huggingface.co/muhammad-taqi512
 - No se han encontrado enlaces adicionales relevantes (paper, blog tecnico, repositorio de codigo o demo) en la busqueda web realizada.

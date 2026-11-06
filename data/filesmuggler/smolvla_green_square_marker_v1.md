@@ -157,7 +157,7 @@ El modelo es un ajuste fino de `lerobot/smolvla_base`, por lo que su comparació
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/filesmuggler/smolvla_green_square_marker_v1
+- Hugging Face del modelo: https://huggingface.co/filesmuggler/smolvla_green_square_marker_v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/filesmuggler/markers-experiment-green-merged
 - Paper de SmolVLA (arXiv:2506.01844): https://huggingface.co/papers/2506.01844
 - Modelo base SmolVLA: https://huggingface.co/lerobot/smolvla_base

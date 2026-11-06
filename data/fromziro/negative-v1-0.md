@@ -63,7 +63,7 @@ Estos valores son bajos en términos absolutos, pero hay que contextualizarlos: 
 - VRAM estimada: no aplica; el modelo es tan pequeño que puede ejecutarse en CPU sin necesidad de GPU. Los pesos en safetensors ocupan aproximadamente 0,27 MB (67.736 parámetros × 4 bytes).
 - GPU recomendadas: ninguna; cualquier CPU moderna es suficiente. Si se desea usar GPU, cualquier modelo con al menos 1 GB de VRAM lo ejecutaría con holgura.
 - Compatibilidad con hardware de consumo: sí, cabe en cualquier ordenador, Raspberry Pi, microcontroladores con suficiente RAM, etc.
-- Opciones de despliegue: al ser un modelo con arquitectura personalizada, no es compatible directamente con frameworks estándar como vLLM, llama.cpp u Ollama sin adaptaciones. Requiere código personalizado para cargar y ejecutar la arquitectura. El repositorio de HuggingFace no incluye ejemplos de inferencia.
+- Opciones de despliegue: al ser un modelo con arquitectura personalizada, no es compatible directamente con frameworks estándar como vLLM, llama.cpp u Ollama sin adaptaciones. Requiere código personalizado para cargar y ejecutar la arquitectura. El repositorio de Hugging Face no incluye ejemplos de inferencia.
 - Latencia y throughput: no se han publicado datos. Dado el tamaño, la inferencia en CPU debería ser prácticamente instantánea para secuencias cortas.
 
 ## Comparativa con modelos similares
@@ -83,6 +83,6 @@ No se dispone de información sobre modelos comparables en el rango de 67K pará
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fromziro/Negative-v1.0
+- Modelo en Hugging Face: https://huggingface.co/fromziro/Negative-v1.0
 - Perfil del autor: https://huggingface.co/fromziro
 - Búsqueda de modelos con tag fromzero: https://huggingface.co/models?other=fromzero

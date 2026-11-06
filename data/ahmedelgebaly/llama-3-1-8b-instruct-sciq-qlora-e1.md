@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3.1-8B-Instruct-SciQ-QLoRA-e1 (este) | 8B base + adaptador LoRA | No disponible (base 128k) | llama3.1 | HuggingFace, 18 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | llama3.1 | HuggingFace, ampliamente usado |
-| Llama-3.1-8B-Instruct-SciQ-QLoRA-e2 (mismo autor) | 8B base + adaptador LoRA | No disponible (base 128k) | llama3.1 | HuggingFace, recomendado por menor val loss |
+| Llama-3.1-8B-Instruct-SciQ-QLoRA-e1 (este) | 8B base + adaptador LoRA | No disponible (base 128k) | llama3.1 | Hugging Face, 18 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | llama3.1 | Hugging Face, ampliamente usado |
+| Llama-3.1-8B-Instruct-SciQ-QLoRA-e2 (mismo autor) | 8B base + adaptador LoRA | No disponible (base 128k) | llama3.1 | Hugging Face, recomendado por menor val loss |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/ahmedelgebaly/Llama-3.1-8B-Instruct-SciQ-QLoRA-e1
+- Hugging Face del adaptador: https://huggingface.co/ahmedelgebaly/Llama-3.1-8B-Instruct-SciQ-QLoRA-e1
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Dataset: https://huggingface.co/datasets/ahmedelgebaly/SciQ_Alpaca
 - Adaptador e2 (recomendado): https://huggingface.co/ahmedelgebaly/Llama-3.1-8B-Instruct-SciQ-QLoRA-e2

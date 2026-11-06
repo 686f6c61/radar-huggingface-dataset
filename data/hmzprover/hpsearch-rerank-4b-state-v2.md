@@ -55,16 +55,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible de forma oficial. Con 4.021.784.576 parámetros, en precisión completa (fp32) serían necesarios unos 16 GB; en bf16/fp16, unos 8 GB; en cuantización de 8 bits, unos 4 GB; en 4 bits, unos 2-3 GB. Estas cifras son estimaciones por tamaño y no están confirmadas por el autor.
 - GPU recomendadas: no disponible. Por tamaño, una RTX 4090 (24 GB) o una A100/H100 permiten inferencia en bf16 sin problemas; una RTX 3090 (24 GB) también sería suficiente en bf16.
 - Cabe en GPU de consumo: sí, previsiblemente en tarjetas con 8 GB o más en bf16 y en tarjetas con 4-6 GB si se cuantiza, aunque no hay confirmación oficial.
-- Opciones de despliegue: la model card indica `transformers` como librería; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: la model card indica `transformers` como librería; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hpsearch-rerank-4b-state-v2 | 4.021.784.576 | no disponible | Reordenación de premisas Lean 4 / Mathlib | apache-2.0 | HuggingFace |
-| hmzprover/hpsearch-rerank-4b-state (modelo base) | no disponible | no disponible | Reordenación de premisas Lean 4 / Mathlib | no disponible en la información | HuggingFace |
-| Qwen3-Reranker-4B (base original) | no disponible | no disponible | Reordenación genérica de textos | no disponible en la información | HuggingFace |
+| hpsearch-rerank-4b-state-v2 | 4.021.784.576 | no disponible | Reordenación de premisas Lean 4 / Mathlib | apache-2.0 | Hugging Face |
+| hmzprover/hpsearch-rerank-4b-state (modelo base) | no disponible | no disponible | Reordenación de premisas Lean 4 / Mathlib | no disponible en la información | Hugging Face |
+| Qwen3-Reranker-4B (base original) | no disponible | no disponible | Reordenación genérica de textos | no disponible en la información | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmzprover/hpsearch-rerank-4b-state-v2
+- Modelo en Hugging Face: https://huggingface.co/hmzprover/hpsearch-rerank-4b-state-v2
 - Modelo base del ajuste: https://huggingface.co/hmzprover/hpsearch-rerank-4b-state
 - Repositorio hpsearch: https://github.com/humanfia/hpsearch
 - LeanDojo Benchmark 4 (v10): no disponible en la información proporcionada

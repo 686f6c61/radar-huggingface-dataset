@@ -41,7 +41,7 @@ La innovacion tecnica destacable en esta distribucion es el pipeline de desplieg
 
 - Asistente local de escritorio con privacidad: ejecutar el modelo en un portatil con GPU (por ejemplo, M4 Max) para conversaciones sin enviar datos a la nube, aprovechando la inferencia on-device y el contexto de hasta 16k tokens en escritorio.
 - Automatizacion de tareas con function calling: integrar el modelo en una aplicacion de escritorio que invoque APIs locales o herramientas del sistema mediante el soporte de tool calling de LiteRT-LM.
-- Demo web interactiva: desplegar el modelo en Chrome con WebGPU para prototipos de chat con contexto de hasta 80k tokens, usando el espacio de HuggingFace como referencia.
+- Demo web interactiva: desplegar el modelo en Chrome con WebGPU para prototipos de chat con contexto de hasta 80k tokens, usando el espacio de Hugging Face como referencia.
 - Procesamiento de documentos de longitud media en local: resumir o extraer informacion de textos de varios miles de tokens manteniendo los datos en el equipo, gracias a la ventana de contexto extendida.
 - Desarrollo y pruebas de aplicaciones edge: usar los ejemplos de `litert-samples` para validar integraciones de IA generativa en productos Android y de escritorio antes de pasar a produccion.
 - Generacion de codigo y asistencia tecnica offline: emplear el modelo como copiloto local en entornos sin conectividad, con la ventaja de no depender de servicios externos.
@@ -90,9 +90,9 @@ No se dispone de datos de rendimiento de calidad del modelo base en la informaci
 
 ## Enlaces
 
-- HuggingFace (esta distribucion): https://huggingface.co/litert-community/gemma-4-31B-it-litert-lm
+- Hugging Face (esta distribucion): https://huggingface.co/litert-community/gemma-4-31B-it-litert-lm
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Documentacion LiteRT-LM: https://ai.google.dev/edge/litert-lm/overview
 - CLI de LiteRT-LM: https://ai.google.dev/edge/litert-lm/cli
 - Ejemplos de LiteRT: https://github.com/google-ai-edge/litert-samples
-- Demo web en HuggingFace Spaces: https://huggingface.co/spaces/tylermullen/Gemma4
+- Demo web en Hugging Face Spaces: https://huggingface.co/spaces/tylermullen/Gemma4

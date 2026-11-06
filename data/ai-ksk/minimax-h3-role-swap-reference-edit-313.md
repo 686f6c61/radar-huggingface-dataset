@@ -83,7 +83,7 @@ No disponible. No se identifican en la informacion proporcionada modelos compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AI-KSK/minimax-h3-role-swap-reference-edit-313
+- Repositorio en Hugging Face: https://huggingface.co/AI-KSK/minimax-h3-role-swap-reference-edit-313
 - Workflow 01 (Face Refine, JSON): workflows/Mini Max H3｜角色替换_参考编辑（Face Refine 精修版）.json
 - Workflow 02 (version silenciosa, JSON): workflows/Mini+Max+H3｜角色替换_参考编辑（无声版）.json
 - Workflow 03 (version estandar, JSON): workflows/Mini+Max+H3｜角色替换_参考编辑（标准版）.json

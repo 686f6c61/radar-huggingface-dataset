@@ -71,7 +71,7 @@ No disponible. No se han encontrado comparaciones con otros adaptadores o modelo
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/ram-lexsi/aligntune-testrun-SPIN)
+- [Hugging Face del adaptador](https://huggingface.co/ram-lexsi/aligntune-testrun-SPIN)
 - [Modelo base Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
 - [Página oficial de AlignTune](https://aligntune.lexsi.ai/)
 - [Repositorio GitHub de AlignTune](https://github.com/Lexsi-Labs/aligntune)

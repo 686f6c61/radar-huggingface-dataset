@@ -81,9 +81,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GPT-oss-MOFinder-1field-ablation | 20,9B | no disponible | Clasificación de síntesis MOF (ablación) | GPL-3.0 (ajuste) / Apache-2.0 (base) | HuggingFace |
-| GPT-oss-MOFinder (modelo principal) | 20,9B (base gpt-oss-20b) | no disponible | Clasificación de síntesis MOF (entrenado con datos PN completos) | según repo principal | HuggingFace |
-| openai/gpt-oss-20b | 20,9B | no disponible | Generación de texto generalista | Apache-2.0 | HuggingFace |
+| GPT-oss-MOFinder-1field-ablation | 20,9B | no disponible | Clasificación de síntesis MOF (ablación) | GPL-3.0 (ajuste) / Apache-2.0 (base) | Hugging Face |
+| GPT-oss-MOFinder (modelo principal) | 20,9B (base gpt-oss-20b) | no disponible | Clasificación de síntesis MOF (entrenado con datos PN completos) | según repo principal | Hugging Face |
+| openai/gpt-oss-20b | 20,9B | no disponible | Generación de texto generalista | Apache-2.0 | Hugging Face |
 
 No se dispone de información sobre otros modelos especializados en predicción de síntesis de MOF con los que comparar directamente en la información proporcionada.
 
@@ -101,7 +101,7 @@ No se dispone de información sobre otros modelos especializados en predicción 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StarLiu714/GPT-oss-MOFinder-1field-ablation
+- Modelo en Hugging Face: https://huggingface.co/StarLiu714/GPT-oss-MOFinder-1field-ablation
 - Modelo principal MOFinder: https://huggingface.co/StarLiu714/GPT-oss-MOFinder
 - Modelo base gpt-oss-20b: https://huggingface.co/openai/gpt-oss-20b
 - Repositorio MOFinder (zzhenglab): https://github.com/zzhenglab/MOFinder

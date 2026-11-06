@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AlinaGonch/granite41-8b-squad-ratio-0.30-seed-42` es un repositorio de HuggingFace publicado por el usuario AlinaGonch que, a juzgar por su identificador, parece corresponder a un ajuste fino (fine-tuning) de un modelo de la familia Granite 4.1 de 8.000 millones de parametros sobre el conjunto de datos SQuAD, con una proporcion de datos de 0,30 y semilla 42. Sin embargo, la model card publicada es la plantilla autogenerada por HuggingFace y no ha sido cumplimentada: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, resultados) figuran como "[More Information Needed]". Por tanto, no es posible confirmar de forma verificable ninguna especificacion a partir de la documentacion aportada.
+`AlinaGonch/granite41-8b-squad-ratio-0.30-seed-42` es un repositorio de Hugging Face publicado por el usuario AlinaGonch que, a juzgar por su identificador, parece corresponder a un ajuste fino (fine-tuning) de un modelo de la familia Granite 4.1 de 8.000 millones de parametros sobre el conjunto de datos SQuAD, con una proporcion de datos de 0,30 y semilla 42. Sin embargo, la model card publicada es la plantilla autogenerada por Hugging Face y no ha sido cumplimentada: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, resultados) figuran como "[More Information Needed]". Por tanto, no es posible confirmar de forma verificable ninguna especificacion a partir de la documentacion aportada.
 
 El unico dato objetivo disponible, ademas del nombre, es el tamano del repositorio (0,2 GB), incompatible con el peso completo de un transformer de 8.000 millones de parametros en precision de 16 bits (que rondaria los 16 GB en safetensors). Esto sugiere que el repositorio podria contener unicamente un adaptador de tipo LoRA, un checkpoint parcial, una version altamente cuantizada o un subconjunto de pesos, aunque no hay informacion que lo confirme. La presencia de la etiqueta `safetensors` y `arxiv:1910.09700` (referencia al calculador de impacto de carbono de Lacoste et al., 2019, incluida por defecto en la plantilla) no aportan informacion funcional sobre el modelo.
 
@@ -75,7 +75,7 @@ No es posible establecer una comparativa fiable porque no se ha confirmado la na
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace y no contiene informacion real sobre el modelo.
+- La model card es la plantilla por defecto de Hugging Face y no contiene informacion real sobre el modelo.
 - No se especifica licencia, lo que impide determinar si el uso comercial esta permitido.
 - No se documentan sesgos, riesgos de alucinacion ni limitaciones de idioma.
 - El repositorio tiene cero descargas y cero "likes", sin senales de validacion por parte de la comunidad.
@@ -86,7 +86,7 @@ No es posible establecer una comparativa fiable porque no se ha confirmado la na
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.30-seed-42
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.30-seed-42
 - Referencia citada en las etiquetas (Lacoste et al., 2019, calculador de impacto de carbono): https://arxiv.org/abs/1910.09700
 - Dataset SQuAD (referencia inferida del identificador, sin confirmar): https://rajpurkar.github.io/SQuAD-explorer/
 - Familia IBM Granite (referencia inferida del identificador, sin confirmar): https://www.ibm.com/granite

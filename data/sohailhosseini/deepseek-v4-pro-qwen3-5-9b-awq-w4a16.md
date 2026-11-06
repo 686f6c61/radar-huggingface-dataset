@@ -80,9 +80,9 @@ La comparativa se limita a los modelos relacionados directamente. No se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/Sohailhosseini/DeepSeek-V4-Pro-Qwen3.5-9B-AWQ-W4A16
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/Sohailhosseini/DeepSeek-V4-Pro-Qwen3.5-9B-AWQ-W4A16
 - Modelo base (sin cuantizar): https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B
 - Variante GGUF del modelo base: https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B-MTP-GGUF
 - Página oficial de DeepSeek: https://deepseek.com/en/index.html
-- DeepSeek-V4-Pro en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
+- DeepSeek-V4-Pro en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
 - DeepSeek-V4-Pro en NVIDIA NIM: https://build.nvidia.com/deepseek-ai/deepseek-v4-pro

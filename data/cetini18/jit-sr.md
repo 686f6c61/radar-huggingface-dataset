@@ -75,8 +75,8 @@ Los conjuntos de evaluación son pequeños: diferencias por debajo de ~0,1 dB PS
 
 | Modelo | Tipo | Parametros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JiT-SR (`lrfeat_nofdl_c70_ep38`) | Transformer de imagen one-step | 136,0 M | Pixel-space, sin VAE ni difusión iterativa | MIT | HuggingFace + GitHub |
-| JiT-SR (`lrskip_nofdl_c70_ep38`) | Transformer de imagen one-step | 135,5 M | Pixel-space, sin VAE ni difusión iterativa | MIT | HuggingFace + GitHub |
+| JiT-SR (`lrfeat_nofdl_c70_ep38`) | Transformer de imagen one-step | 136,0 M | Pixel-space, sin VAE ni difusión iterativa | MIT | Hugging Face + GitHub |
+| JiT-SR (`lrskip_nofdl_c70_ep38`) | Transformer de imagen one-step | 135,5 M | Pixel-space, sin VAE ni difusión iterativa | MIT | Hugging Face + GitHub |
 | StableSR | Difusión (Stable Diffusion) | no disponible | Difusión con VAE y posprocesado AdaIN | no disponible | no disponible |
 | PocketSR | One-step | no disponible | Comparado en `docs/pocketsr_comparison.md` | no disponible | no disponible |
 
@@ -95,7 +95,7 @@ No se dispone de datos detallados de parámetros, contexto ni rendimiento de los
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cetini18/jit-sr
+- Hugging Face: https://huggingface.co/cetini18/jit-sr
 - Repositorio GitHub: https://github.com/nitec427/jit-sr
 - Paper de referencia (JiT): *Back to Basics: Let Denoising Generative Models Denoise* (Li y He), arXiv:2511.13720 — https://arxiv.org/abs/2511.13720
 - Documentación de evaluación: `docs/c70_eval.md` en el repositorio de GitHub

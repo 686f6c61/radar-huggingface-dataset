@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qween3_4B_thinking_finetune es un ajuste fino (fine-tuning) del modelo Qwen3-4B-Thinking-2507, publicado por el usuario pramodlohra en HuggingFace. El modelo se ha afinado y convertido a formato GGUF mediante la librería Unsloth, lo que lo orienta directamente a su despliegue en entornos de inferencia local y en CPU/GPU de gama de consumo a través de llama.cpp y Ollama. El nombre del fichero de pesos (`qwen3-4b-thinking-2507.Q4_K_M.gguf`) indica que la base subyacente es la variante "thinking" de Qwen3 con 4.000 millones de parámetros, aunque la model card del autor no documenta ni la composición del dataset de ajuste ni el procedimiento exacto seguido.
+Qween3_4B_thinking_finetune es un ajuste fino (fine-tuning) del modelo Qwen3-4B-Thinking-2507, publicado por el usuario pramodlohra en Hugging Face. El modelo se ha afinado y convertido a formato GGUF mediante la librería Unsloth, lo que lo orienta directamente a su despliegue en entornos de inferencia local y en CPU/GPU de gama de consumo a través de llama.cpp y Ollama. El nombre del fichero de pesos (`qwen3-4b-thinking-2507.Q4_K_M.gguf`) indica que la base subyacente es la variante "thinking" de Qwen3 con 4.000 millones de parámetros, aunque la model card del autor no documenta ni la composición del dataset de ajuste ni el procedimiento exacto seguido.
 
 El modelo cuenta con 4.022.468.096 parámetros totales, lo que lo sitúa en la categoría de 4B. Según los metadatos de arquitectura disponibles, emplea una arquitectura transformer tipo Qwen3 con 36 capas, un tamaño oculto de 2.560 y atención con 32 cabezas de consulta frente a 8 cabezas clave/valor (grouped-query attention, GQA). El repositorio ocupa 2,5 GB y acumula 78.288 descargas y 56 "likes" en el momento de la consulta, lo que sugiere un interés notable por parte de la comunidad.
 
@@ -85,7 +85,7 @@ No es posible completar una comparativa rigurosa con alternativas (por ejemplo, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pramodlohra/Qween3_4B_thinking_finetune
+- Modelo en Hugging Face: https://huggingface.co/pramodlohra/Qween3_4B_thinking_finetune
 - Arbol de ficheros del repositorio: https://huggingface.co/pramodlohra/Qween3_4B_thinking_finetune/tree/main
 - Unsloth (herramienta de fine-tuning y conversion): https://github.com/unslothai/unsloth
 - Ficha en Inferix: https://inferix.co/models/pramodlohra/Qween3_4B_thinking_finetune

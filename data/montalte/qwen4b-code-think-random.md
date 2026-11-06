@@ -104,7 +104,7 @@ La diferencia relevante no es de escala ni de contexto, sino de naturaleza: el a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Montalte/qwen4b-code-think-random
+- Modelo en Hugging Face: https://huggingface.co/Montalte/qwen4b-code-think-random
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Especialista de origen citado por el autor: https://huggingface.co/modrill/code-think-q4b-20260908
 - Resultados de busqueda web: no se encontro informacion relevante sobre el modelo; los resultados devueltos correspondian a una persona sin relacion con el proyecto y se han descartado.

@@ -89,9 +89,9 @@ Este checkpoint se diferencia por ser un estado intermedio de entrenamiento, no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sambal/k2-v2-think-dpo-checkpoint-200
+- Repositorio Hugging Face: https://huggingface.co/sambal/k2-v2-think-dpo-checkpoint-200
 - Modelo base K2-Think: https://huggingface.co/LLM360/K2-Think
 - Sitio web de K2-Think: https://www.k2-think.org/
 - Paper de K2-Think (arXiv): https://arxiv.org/abs/2509.07604
-- Modelo K2-Think-V2 (HuggingFace): https://huggingface.co/LLM360/K2-Think-V2
-- Modelo IFM/K2-V2 (HuggingFace): https://huggingface.co/IFM/K2-V2
+- Modelo K2-Think-V2 (Hugging Face): https://huggingface.co/LLM360/K2-Think-V2
+- Modelo IFM/K2-V2 (Hugging Face): https://huggingface.co/IFM/K2-V2

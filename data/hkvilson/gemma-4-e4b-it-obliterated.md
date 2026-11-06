@@ -76,10 +76,10 @@ Estas cifras son una evaluacion del autor del modelo, no un benchmark estandariz
 
 | Modelo | Parametros | Contexto | Rechazo | Licencia | Disponibilidad |
 |--------|------------|----------|---------|----------|----------------|
-| google/gemma-4-E4B-it (original) | ~8B totales | 256K | 98,8% de rechazo duro | Apache 2.0 | HuggingFace |
-| OBLITERATUS/gemma-4-E4B-it-OBLITERATED | ~8B totales | 256K | 0% de rechazo duro | Apache 2.0 | HuggingFace |
-| Nemesispro/gemma-4-E4B-it-OBLITERATED | ~8B totales | 256K | 0% de rechazo duro | Apache 2.0 | HuggingFace |
-| hkvilson/gemma-4-E4B-it-OBLITERATED (este) | ~8B totales | 256K | 0% de rechazo duro | Apache 2.0 | HuggingFace |
+| google/gemma-4-E4B-it (original) | ~8B totales | 256K | 98,8% de rechazo duro | Apache 2.0 | Hugging Face |
+| OBLITERATUS/gemma-4-E4B-it-OBLITERATED | ~8B totales | 256K | 0% de rechazo duro | Apache 2.0 | Hugging Face |
+| Nemesispro/gemma-4-E4B-it-OBLITERATED | ~8B totales | 256K | 0% de rechazo duro | Apache 2.0 | Hugging Face |
+| hkvilson/gemma-4-E4B-it-OBLITERATED (este) | ~8B totales | 256K | 0% de rechazo duro | Apache 2.0 | Hugging Face |
 
 Las tres versiones abliterated son funcionalmente identicas, ya que parten del mismo proceso OBLITERATUS. La diferencia entre ellas radica en el repositorio y la documentacion: la version de OBLITERATUS es la original, mientras que la de hkvilson y Nemesispro son re-subidas con la misma documentacion. El modelo original de Google con guardrails es la alternativa mas segura para uso general, pero no permite evaluar el impacto de la eliminacion de guardrails.
 
@@ -95,7 +95,7 @@ Las tres versiones abliterated son funcionalmente identicas, ya que parten del m
 
 ## Enlaces
 
-- Repositorio de HuggingFace del modelo: https://huggingface.co/hkvilson/gemma-4-E4B-it-OBLITERATED
+- Repositorio de Hugging Face del modelo: https://huggingface.co/hkvilson/gemma-4-E4B-it-OBLITERATED
 - Repositorio original de OBLITERATUS: https://huggingface.co/OBLITERATUS/gemma-4-E4B-it-OBLITERATED
 - Repositorio de Nemesispro (re-subida): https://huggingface.co/Nemesispro/gemma-4-E4B-it-OBLITERATED
 - Pagina de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

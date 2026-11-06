@@ -108,7 +108,7 @@ No se dispone de información sobre otros adaptadores de personaje públicos par
 
 | Modelo / brazo | Parametros entrenables | Contexto de entrenamiento | NLL dev dorado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (`r8_t2l_ep3`) | 217.579.520 (r32) | 4.096 tokens, sin *packing* | 1,4378 | Apache 2.0 | pública en HuggingFace, 0 descargas |
+| Este adaptador (`r8_t2l_ep3`) | 217.579.520 (r32) | 4.096 tokens, sin *packing* | 1,4378 | Apache 2.0 | pública en Hugging Face, 0 descargas |
 | `r8_t2l_r64` (rank 64, 3 épocas) | no disponible | 4.096 tokens | 1,4864 | no aplica (brazo interno) | solo referenciado en la *model card* |
 | `r8_t2` (placa de contrato, T2) | no disponible | 4.096 tokens | 1,5240 | no aplica | solo referenciado |
 | `r8b_dpo` (preferencias DPO) | no disponible | 4.096 tokens | 1,5200 | no aplica | solo referenciado |
@@ -131,7 +131,7 @@ No se dispone de información sobre otros adaptadores de personaje públicos par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NEWUNIVERS/nu-fans-baek-seo-jin-qwen38-27b-character-lora
+- Modelo en Hugging Face: https://huggingface.co/NEWUNIVERS/nu-fans-baek-seo-jin-qwen38-27b-character-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B (revisión `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`)
 - Conjunto de datos de entrenamiento (privado): https://huggingface.co/datasets/NEWUNIVERS/nu-fans-baek-seo-jin-data (revisión `428f2b642d16022bc74dc9367d181f1729cc647e`)
 - Búsqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos corresponden a páginas sobre la cantante Katy Perry (Wikipedia, sitio oficial, YouTube, Instagram y discografía), sin relación alguna con este modelo, por lo que no se incluyen como fuentes. No se han localizado *papers*, blogs, repositorios ni demos asociados al adaptador en la información disponible.

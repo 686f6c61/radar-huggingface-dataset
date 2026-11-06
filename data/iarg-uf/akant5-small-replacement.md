@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IARG-UF/akant5-small-replacement | 109,7 M | no disponible | ak, en | research use only | HuggingFace |
-| google/mt5-small | 300 M aprox. | no disponible | 101 idiomas | Apache 2.0 | HuggingFace |
-| IARG-UF/akant5-small-replacement-init | no disponible | no disponible | ak, en | research use only | HuggingFace |
-| IARG-UF/akant5-small-extension | no disponible | no disponible | ak, en | research use only | HuggingFace |
+| IARG-UF/akant5-small-replacement | 109,7 M | no disponible | ak, en | research use only | Hugging Face |
+| google/mt5-small | 300 M aprox. | no disponible | 101 idiomas | Apache 2.0 | Hugging Face |
+| IARG-UF/akant5-small-replacement-init | no disponible | no disponible | ak, en | research use only | Hugging Face |
+| IARG-UF/akant5-small-extension | no disponible | no disponible | ak, en | research use only | Hugging Face |
 
 La comparación con mT5-small es la más informativa: AkanT5 small reduce el vocabulario de 250.000 a 64.100 entradas, lo que explica en parte su menor número de parámetros (109,7 M frente a los aproximadamente 300 M de mT5-small). Frente a la variante extension del mismo proyecto, la diferencia clave es el tamaño del vocabulario (64.100 frente a 295.031 entradas) y el consiguiente coste computacional. No se dispone de datos de rendimiento comparativo en la información proporcionada.
 
@@ -91,7 +91,7 @@ La comparación con mT5-small es la más informativa: AkanT5 small reduce el voc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IARG-UF/akant5-small-replacement
+- Modelo en Hugging Face: https://huggingface.co/IARG-UF/akant5-small-replacement
 - Inicialización de vocabulario: https://huggingface.co/IARG-UF/akant5-small-replacement-init
 - Colección AkanT5 (12 checkpoints e inicializaciones): https://huggingface.co/collections/IARG-UF/akant5-cpt-checkpoints-and-vocabulary-initializations
 - Modelo base original: https://huggingface.co/google/mt5-small

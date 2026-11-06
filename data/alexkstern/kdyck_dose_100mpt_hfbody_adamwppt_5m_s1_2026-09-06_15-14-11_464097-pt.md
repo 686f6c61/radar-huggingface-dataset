@@ -64,6 +64,6 @@ No se han encontrado modelos comparables en la información proporcionada. Exist
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_5M_s1_2026-09-06_15-14-11_464097-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_5M_s1_2026-09-06_15-14-11_464097-pt
 - Weights & Biases run: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/3x2k4q1h
 - Repositorio nanochat: https://github.com/karpathy/nanochat

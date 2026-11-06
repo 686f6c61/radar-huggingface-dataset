@@ -107,7 +107,7 @@ La diferencia principal frente al base es la cuantizacion a 4 bits, que reduce e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/embeddinggemma-2-nvfp4
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/embeddinggemma-2-nvfp4
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Revision del modelo base: https://huggingface.co/google/embeddinggemma-2/tree/914f7f89142e33e77833254d9c9b90c3cef7303b
 - Repositorio MLX-VLM: https://github.com/Blaizzy/mlx-vlm

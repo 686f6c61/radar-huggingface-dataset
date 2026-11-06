@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vermaishaan/mocov3-multitask-test` es una implementación reducida de MoCo v3 (Momentum Contrast v3) orientada a tareas multitarea, publicada por el usuario vermaishaan en HuggingFace. No se trata de un modelo entrenado ni de un release con pesos útiles para inferencia real: la propia model card lo describe explícitamente como un "punto de partida reproducible" que incluye una configuración de arquitectura y un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*).
+El modelo `vermaishaan/mocov3-multitask-test` es una implementación reducida de MoCo v3 (Momentum Contrast v3) orientada a tareas multitarea, publicada por el usuario vermaishaan en Hugging Face. No se trata de un modelo entrenado ni de un release con pesos útiles para inferencia real: la propia model card lo describe explícitamente como un "punto de partida reproducible" que incluye una configuración de arquitectura y un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*).
 
 El repositorio contiene un total de 33.088 parámetros según los metadatos de safetensors, lo que lo sitúa varios órdenes de magnitud por debajo de cualquier transformer utilizable en producción. La arquitectura declarada combina atención lineal (*linear attention*), fusión de bajo rango (*low rank fusion*), activación GELU y normalización por lotes (BatchNorm), con un recetario de entrenamiento por defecto basado en SGD con *warmup* lineal. No se ha publicado ningún resultado de benchmark ni se reclama puntuación alguna.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vermaishaan/mocov3-multitask-test | 33.088 | no disponible | no evaluado (checkpoint de inicialización) | MIT | HuggingFace, 0 descargas, 0 likes |
+| vermaishaan/mocov3-multitask-test | 33.088 | no disponible | no evaluado (checkpoint de inicialización) | MIT | Hugging Face, 0 descargas, 0 likes |
 | MoCo v3 original (implementación de referencia) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
 No se dispone de información suficiente para establecer una comparativa cuantitativa con alternativas de la misma categoría. El artefacto analizado no compite en la categoría de modelos de lenguaje o visión utilizables, ya que carece de entrenamiento y de evaluación publicada; cualquier comparación con modelos multitarea entrenados sería engañosa.
@@ -88,6 +88,6 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vermaishaan/mocov3-multitask-test
+- Modelo en Hugging Face: https://huggingface.co/vermaishaan/mocov3-multitask-test
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a paginas no relacionadas (wiki de la serie "The Mentalist") y no aportan informacion tecnica utilizable.
 - No se dispone de enlaces a papers, blogs, repositorios de codigo o demos asociados a este artefacto en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un ajuste fino (fine-tune) del modelo Llama-3.1-Tulu-3-8B, publicado por el usuario PessimisticDPO bajo el identificador `PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l0-e21`. El nombre del repositorio sugiere que se trata de una variante entrenada con SFT sobre Tulu 3 8B, con hiperparametros codificados en el identificador (alfa 0.1, beta 0.1, capa L3, lambda 0 y 21 epocas), pero la model card no confirma ninguno de estos extremos: es la plantilla automatica de HuggingFace sin rellenar.
+Este repositorio contiene un ajuste fino (fine-tune) del modelo Llama-3.1-Tulu-3-8B, publicado por el usuario PessimisticDPO bajo el identificador `PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l0-e21`. El nombre del repositorio sugiere que se trata de una variante entrenada con SFT sobre Tulu 3 8B, con hiperparametros codificados en el identificador (alfa 0.1, beta 0.1, capa L3, lambda 0 y 21 epocas), pero la model card no confirma ninguno de estos extremos: es la plantilla automatica de Hugging Face sin rellenar.
 
 La relevancia de este repositorio es limitada en su estado actual. Acumula 0 descargas y 0 likes, no declara licencia, idiomas ni pipeline, y su tamano (0,2 GB) es muy inferior al que corresponderia a un modelo de 8.000 millones de parametros en precision bf16 (aproximadamente 16 GB), lo que apunta a un adaptador LoRA, a un unico fragmento de safetensors o a una subida incompleta. Cualquier uso en produccion exige verificar primero el contenido real del repositorio.
 
@@ -26,7 +26,7 @@ El modelo base, Tulu 3 8B, es un fine-tune de Llama 3.1 8B desarrollado por el A
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura especifica ni sobre el procedimiento de entrenamiento de este fine-tune. La model card es la plantilla generada automaticamente por HuggingFace, con todos los campos marcados como `[More Information Needed]`, incluidos los de datos de entrenamiento, hiperparametros, regimen de precision y procedimiento.
+No hay informacion publicada sobre la arquitectura especifica ni sobre el procedimiento de entrenamiento de este fine-tune. La model card es la plantilla generada automaticamente por Hugging Face, con todos los campos marcados como `[More Information Needed]`, incluidos los de datos de entrenamiento, hiperparametros, regimen de precision y procedimiento.
 
 Lo unico inferible procede del identificador del repositorio. El prefijo `Llama-3.1-Tulu-3-8B-SFT` indica que parte de Tulu 3 8B y que se ha aplicado un entrenamiento supervisado (SFT). El sufijo `a0.1-b0.1-L3-l0-e21` sugiere hiperparametros (alfa, beta, capa objetivo L3, lambda y 21 epocas), un esquema de nombres habitual en experimentos de investigacion sobre optimizacion o regularizacion por capas. El prefijo del autor, `PessimisticDPO`, apunta a una linea de trabajo relacionada con DPO pesimista, aunque ningun documento del repositorio lo confirma.
 
@@ -79,9 +79,9 @@ La comparativa se establece frente al modelo base y a alternativas de tamano sim
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Este repositorio (Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l0-e21) | 8B (segun nombre) | No disponible | No disponible | Repositorio de 0,2 GB, 0 descargas |
-| Llama-3.1-Tulu-3-8B (Ai2) | 8B | 128.000 tokens | Llama 3.1 Community License | Publico en HuggingFace, ampliamente descargado |
-| Llama-3.1-8B-Instruct (Meta) | 8B | 128.000 tokens | Llama 3.1 Community License | Publico en HuggingFace |
-| Qwen2.5-7B-Instruct (Alibaba) | 7,6B | 128.000 tokens | Apache 2.0 (la mayoria de variantes) | Publico en HuggingFace |
+| Llama-3.1-Tulu-3-8B (Ai2) | 8B | 128.000 tokens | Llama 3.1 Community License | Publico en Hugging Face, ampliamente descargado |
+| Llama-3.1-8B-Instruct (Meta) | 8B | 128.000 tokens | Llama 3.1 Community License | Publico en Hugging Face |
+| Qwen2.5-7B-Instruct (Alibaba) | 7,6B | 128.000 tokens | Apache 2.0 (la mayoria de variantes) | Publico en Hugging Face |
 
 Diferencias clave: frente al modelo base, este checkpoint no aporta ninguna ventaja documentada y carece de licencia y evaluacion declaradas. Frente a Qwen2.5-7B-Instruct, la diferencia principal es la licencia, mucho mas permisiva en el caso de Qwen, lo que resulta relevante para uso comercial.
 
@@ -99,7 +99,7 @@ Diferencias clave: frente al modelo base, este checkpoint no aporta ninguna vent
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l0-e21
+- Repositorio en Hugging Face: https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l0-e21
 - Paper referenciado en los tags (Machine Learning Impact calculator, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML citada en la plantilla: https://mlco2.github.io/impact#compute
 - Modelo base Tulu 3 8B (Ai2): no disponible en la informacion proporcionada

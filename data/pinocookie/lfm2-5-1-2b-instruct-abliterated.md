@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo en tareas estándar, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PinoCookie/LFM2.5-1.2B-Instruct-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/PinoCookie/LFM2.5-1.2B-Instruct-Abliterated
 - Modelo base (LiquidAI): https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Documentación de LiquidAI sobre LFM2.5-1.2B-Instruct: https://docs.liquid.ai/lfm/models/lfm25-1.2b-instruct
 - Colección de abliteraciones de PinoCookie: https://huggingface.co/collections/PinoCookie/liquidai-abliterations

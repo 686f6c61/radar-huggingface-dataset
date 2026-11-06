@@ -89,7 +89,7 @@ No se dispone de datos verificables de benchmarks ni de especificaciones complet
 ## Limitaciones y advertencias
 
 - Dependencia de hardware: solo está previsto para SiMa Modalix; no es un checkpoint portable a GPU o CPU convencionales.
-- La metadata de HuggingFace marca `inference: false`; no debe usarse directamente con transformers, vLLM u otros runners estándar.
+- La metadata de Hugging Face marca `inference: false`; no debe usarse directamente con transformers, vLLM u otros runners estándar.
 - No hay validación de precisión ni de rendimiento en runtime; la model card solo confirma compilación completa, despliegue local y verificación por checksum.
 - La cuantización INT4/G256 puede degradar la calidad respecto al modelo fuente; no se documenta la pérdida de precisión.
 - El contexto de 4096 tokens y la resolución de 512 × 512 limitan documentos largos, imágenes de alta resolución y conversaciones extensas.
@@ -101,7 +101,7 @@ No se dispone de datos verificables de benchmarks ni de especificaciones complet
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/florianvoss/LFM2-VL-3B-Autoround-a16w4)
+- [Modelo en Hugging Face](https://huggingface.co/florianvoss/LFM2-VL-3B-Autoround-a16w4)
 - [Modelo fuente simaai/LFM2-VL-3B-Autoround-Safetensors](https://huggingface.co/simaai/LFM2-VL-3B-Autoround-Safetensors)
 - [Árbol del modelo fuente en la revisión indicada](https://huggingface.co/simaai/LFM2-VL-3B-Autoround-Safetensors/tree/cf2319d344b91b54f95a4375f5f97b99b0bdbd42)
 - [Colección Neat 0.6.0](https://huggingface.co/collections/florianvoss/neat-060)

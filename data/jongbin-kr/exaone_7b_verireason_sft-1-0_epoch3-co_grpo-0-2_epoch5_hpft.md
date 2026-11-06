@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `exaone_7b_verireason_sft-1.0_epoch3-co_grpo-0.2_epoch5_hpft` es un ajuste fino (fine-tuning) del modelo base `LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct`, desarrollado por el usuario `Jongbin-kr`. Se ha entrenado utilizando la librería TRL de HuggingFace, combinando una fase de supervisión (SFT) y una fase de aprendizaje por refuerzo con GRPO (Group Relative Policy Optimization), método introducido en el paper de DeepSeekMath. El nombre del modelo sugiere un entrenamiento en dos etapas: primero un SFT con 3 épocas y luego un GRPO con 5 épocas, aunque estos detalles no están confirmados en la documentación oficial.
+El modelo `exaone_7b_verireason_sft-1.0_epoch3-co_grpo-0.2_epoch5_hpft` es un ajuste fino (fine-tuning) del modelo base `LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct`, desarrollado por el usuario `Jongbin-kr`. Se ha entrenado utilizando la librería TRL de Hugging Face, combinando una fase de supervisión (SFT) y una fase de aprendizaje por refuerzo con GRPO (Group Relative Policy Optimization), método introducido en el paper de DeepSeekMath. El nombre del modelo sugiere un entrenamiento en dos etapas: primero un SFT con 3 épocas y luego un GRPO con 5 épocas, aunque estos detalles no están confirmados en la documentación oficial.
 
 Este modelo está orientado a mejorar las capacidades de razonamiento y generación de texto del modelo base, probablemente enfocado en tareas de instrucción y conversación. Sin embargo, la información pública disponible es muy limitada: no se especifican arquitectura, parámetros, contexto, licencia ni idiomas soportados. El repositorio tiene un tamaño de 0,7 GB, lo que sugiere un modelo de aproximadamente 7.000 millones de parámetros en precisión FP16/BF16, pero este dato no está confirmado. La relevancia actual radica en que explora el uso de GRPO sobre un modelo ya instructivo, una técnica emergente para mejorar el razonamiento sin necesidad de datos etiquetados masivos.
 
@@ -68,7 +68,7 @@ No disponible. No se proporcionan datos de modelos comparables en la informació
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/Jongbin-kr/exaone_7b_verireason_sft-1.0_epoch3-co_grpo-0.2_epoch5_hpft)
+- [Hugging Face - modelo](https://huggingface.co/Jongbin-kr/exaone_7b_verireason_sft-1.0_epoch3-co_grpo-0.2_epoch5_hpft)
 - [Paper DeepSeekMath (GRPO)](https://huggingface.co/papers/2402.03300)
 - [Repositorio TRL](https://github.com/huggingface/trl)
 - [Registro de entrenamiento en Weights & Biases](https://wandb.ai/snu-skiml/verireason-grpo/runs/s9b2yt5d)

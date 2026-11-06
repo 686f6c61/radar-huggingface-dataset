@@ -96,7 +96,7 @@ La comparación con Mixtral 8x7B es la más directa por arquitectura (MoE top-2 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hossain0909/keural-sft-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/hossain0909/keural-sft-checkpoints
 - Modelo base (fase 2): https://huggingface.co/mkd-hossain/keural-14.8b-stage2
 - Checkpoints de la fase 1: https://huggingface.co/mkd-hossain/keural-stage1-checkpoints
 - Modelo base fase 2 para vLLM: https://huggingface.co/mkd-hossain/keural-14.8b-stage2-vllm

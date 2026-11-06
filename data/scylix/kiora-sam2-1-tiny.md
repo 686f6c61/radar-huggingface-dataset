@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Scylix/kiora-sam2.1-tiny | no disponible (encoder 54,2 MB + decoder 11,0 MB) | Segmentacion de imagen/video (SAM 2.1 Hiera Tiny, ONNX gzip) | Apache 2.0 | HuggingFace (ONNX) |
-| onnx-community/sam2.1-hiera-tiny-ONNX | no disponible | Segmentacion de imagen/video (SAM 2.1 Hiera Tiny, ONNX) | Apache 2.0 | HuggingFace (modelo base de este checkpoint) |
+| Scylix/kiora-sam2.1-tiny | no disponible (encoder 54,2 MB + decoder 11,0 MB) | Segmentacion de imagen/video (SAM 2.1 Hiera Tiny, ONNX gzip) | Apache 2.0 | Hugging Face (ONNX) |
+| onnx-community/sam2.1-hiera-tiny-ONNX | no disponible | Segmentacion de imagen/video (SAM 2.1 Hiera Tiny, ONNX) | Apache 2.0 | Hugging Face (modelo base de este checkpoint) |
 | facebookresearch/sam2 (otros tamanos: small, base+, large) | no disponible | Segmentacion de imagen/video (SAM 2.1, PyTorch) | Apache 2.0 | Repositorio oficial de Meta |
 | SAM 1 (ViT-B/L/H) | no disponible | Segmentacion de imagen promptable (solo imagen) | Apache 2.0 | Repositorio de Meta |
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Scylix/kiora-sam2.1-tiny
+- Hugging Face: https://huggingface.co/Scylix/kiora-sam2.1-tiny
 - Modelo base (export ONNX): https://huggingface.co/onnx-community/sam2.1-hiera-tiny-ONNX
 - Repositorio oficial de SAM 2: https://github.com/facebookresearch/sam2
 - Repositorio oficial de la familia SAM (Meta): https://github.com/facebookresearch/segment-anything

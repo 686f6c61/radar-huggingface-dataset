@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa cuantitativa con otros LoRAs de princesas Disney. Existen otros repositorios en HuggingFace con nombres similares (por ejemplo, `sWizad/all-disney-princess-xl-lora-model-from-ralph-breaks-the-internet` y `UnifiedHorusRA/All_Disney_Princess_XL_LoRA_Model_from_Ralph_Breaks_the_Internet`), pero no se han publicado diferencias tecnicas ni de rendimiento. La comparativa queda pendiente de datos adicionales.
+No se dispone de informacion suficiente para realizar una comparativa cuantitativa con otros LoRAs de princesas Disney. Existen otros repositorios en Hugging Face con nombres similares (por ejemplo, `sWizad/all-disney-princess-xl-lora-model-from-ralph-breaks-the-internet` y `UnifiedHorusRA/All_Disney_Princess_XL_LoRA_Model_from_Ralph_Breaks_the_Internet`), pero no se han publicado diferencias tecnicas ni de rendimiento. La comparativa queda pendiente de datos adicionales.
 
 ## Limitaciones y advertencias
 
@@ -69,9 +69,9 @@ No se dispone de informacion suficiente para realizar una comparativa cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ugggap/all-disney-princess-xl-lora-model-from-ralph-breaks-the-internet
+- Hugging Face: https://huggingface.co/Ugggap/all-disney-princess-xl-lora-model-from-ralph-breaks-the-internet
 - Civitai (pagina original): https://civitai.com/models/212532/all-disney-princess-xl-lora-model-from-ralph-breaks-the-internet
-- Repositorios similares en HuggingFace:
+- Repositorios similares en Hugging Face:
   - https://huggingface.co/sWizad/all-disney-princess-xl-lora-model-from-ralph-breaks-the-internet
   - https://huggingface.co/UnifiedHorusRA/All_Disney_Princess_XL_LoRA_Model_from_Ralph_Breaks_the_Internet
 - Licencia: https://multimodal.art/civitai-licenses?allowNoCredit=True&allowCommercialUse=Image&allowDerivatives=True&allowDifferentLicense=True

@@ -23,7 +23,7 @@ La relevancia de este modelo es practica: demuestra como trasladar un motor neur
 | Autor | burrowdweller (Jun Ling) |
 | Fecha de creacion | 2026-09-24 |
 | Fecha de actualizacion | 2026-09-24 |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas / likes | 0 descargas / 0 likes |
 | Libreria declarada | onnx |
 | Etiquetas | onnx, chess, chess-engine, other, region:us |
@@ -80,10 +80,10 @@ No se dispone de puntuacion Elo ni de enfrentamientos contra otros motores.
 
 | Modelo | Tipo | Parametros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| rook-chess-v1-wgsl | Motor de ajedrez neuronal para navegador con evaluacion WebGPU | no disponible | 64 casillas + historial de partida | 0,825 vs rook-chess-v1 (20 parejas, tiempo igualado) | no disponible | HuggingFace, paquete chess-gpt-package-v1 |
-| rook-chess-v1 | Motor de ajedrez neuronal relacional para navegador con ONNX Runtime | no disponible | 64 casillas + historial de partida | Referencia frente a la que se mide la variante WGSL | no disponible | HuggingFace |
-| mini-chessformer-v1 | Modelo de ajedrez del mismo autor | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| minichess-gpt-v1 | Modelo de ajedrez del mismo autor (ONNX) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| rook-chess-v1-wgsl | Motor de ajedrez neuronal para navegador con evaluacion WebGPU | no disponible | 64 casillas + historial de partida | 0,825 vs rook-chess-v1 (20 parejas, tiempo igualado) | no disponible | Hugging Face, paquete chess-gpt-package-v1 |
+| rook-chess-v1 | Motor de ajedrez neuronal relacional para navegador con ONNX Runtime | no disponible | 64 casillas + historial de partida | Referencia frente a la que se mide la variante WGSL | no disponible | Hugging Face |
+| mini-chessformer-v1 | Modelo de ajedrez del mismo autor | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| minichess-gpt-v1 | Modelo de ajedrez del mismo autor (ONNX) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos suficientes para comparar con motores de ajedrez de referencia externos (por ejemplo, Stockfish o Leela Chess Zero) ni con otros paquetes de navegador de terceros.
 
@@ -101,7 +101,7 @@ No se dispone de datos suficientes para comparar con motores de ajedrez de refer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/burrowdweller/rook-chess-v1-wgsl
+- Modelo en Hugging Face: https://huggingface.co/burrowdweller/rook-chess-v1-wgsl
 - Modelo original rook-chess-v1: https://huggingface.co/burrowdweller/rook-chess-v1
 - Perfil del autor (burrowdweller / Jun Ling): https://huggingface.co/burrowdweller
 - mini-chessformer-v1: https://huggingface.co/burrowdweller/mini-chessformer-v1

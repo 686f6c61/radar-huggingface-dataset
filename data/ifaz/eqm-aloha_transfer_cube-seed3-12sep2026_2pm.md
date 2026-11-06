@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `iFaz/eqm-aloha_transfer_cube-seed3-12sep2026_2pm` es una política de robótica entrenada con LeRobot, no un modelo de lenguaje. Implementa el tipo de política `eqm` (energy-based model o modelo basado en energía) y está diseñada para resolver la tarea de manipulación bimanual `AlohaTransferCube-v0` del simulador MuJoCo, dentro del entorno ALOHA. El autor es el usuario de HuggingFace `iFaz` y el modelo se distribuye bajo licencia Apache 2.0 con pesos en formato `safetensors`.
+El modelo `iFaz/eqm-aloha_transfer_cube-seed3-12sep2026_2pm` es una política de robótica entrenada con LeRobot, no un modelo de lenguaje. Implementa el tipo de política `eqm` (energy-based model o modelo basado en energía) y está diseñada para resolver la tarea de manipulación bimanual `AlohaTransferCube-v0` del simulador MuJoCo, dentro del entorno ALOHA. El autor es el usuario de Hugging Face `iFaz` y el modelo se distribuye bajo licencia Apache 2.0 con pesos en formato `safetensors`.
 
 El modelo tiene 18.701.190 parámetros (aproximadamente 18,7 millones), un tamaño propio de una política de imitación compacta, no de un modelo generativo de gran escala. Se entrenó durante 5000 pasos con batch size 8 y semilla 3 sobre el dataset `lerobot/aloha_sim_transfer_cube_human`, que contiene demostraciones humanas de la tarea de transferencia de cubo. La configuración declara un modelo de energía de tipo `dot` con regularización jacobiana (`jacobian_reg_weight` = 0,0001 y `jacobian_reg_probes` = 1).
 
@@ -44,7 +44,7 @@ El entrenamiento se realizó con LeRobot durante 5000 pasos, con batch size 8, 4
 - Línea base negativa en comparativas: puede usarse como referencia de bajo rendimiento frente a políticas ACT o Diffusion Policy entrenadas sobre el mismo dataset y con el mismo presupuesto de pasos.
 - Pruebas de integración con LeRobot: valida el ciclo completo de carga de política, rollout en MuJoCo y registro de métricas dentro del ecosistema LeRobot, sin necesidad de hardware real.
 - Validación de pipelines de logging y checkpoints: la estructura de guardado cada 1000 pasos y los ficheros de calibración permiten probar herramientas de seguimiento de experimentos antes de lanzar entrenamientos costosos.
-- Docencia y ejemplos de model card: sirve como ejemplo de cómo documentar (y cómo no entrenar) una política de imitación en HuggingFace Hub.
+- Docencia y ejemplos de model card: sirve como ejemplo de cómo documentar (y cómo no entrenar) una política de imitación en Hugging Face Hub.
 
 ## Benchmarks y rendimiento
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Tipo de politica | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `iFaz/eqm-aloha_transfer_cube-seed3-12sep2026_2pm` | EQM (energy-based) | 18.701.190 | No aplica | Exito 0,0 % en 5 episodios | Apache 2.0 | HuggingFace Hub |
+| `iFaz/eqm-aloha_transfer_cube-seed3-12sep2026_2pm` | EQM (energy-based) | 18.701.190 | No aplica | Exito 0,0 % en 5 episodios | Apache 2.0 | Hugging Face Hub |
 | ACT (Action Chunking Transformer) | Transformer de imitacion | No disponible | No aplica | No disponible | No disponible | Ecosistema LeRobot |
 | Diffusion Policy | Política generativa por difusion | No disponible | No aplica | No disponible | No disponible | Ecosistema LeRobot |
 | VQ-BeT | Discretizacion vectorial + transformer | No disponible | No aplica | No disponible | No disponible | Ecosistema LeRobot |
@@ -99,9 +99,9 @@ No se dispone de datos de parámetros, contexto ni rendimiento de las alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iFaz/eqm-aloha_transfer_cube-seed3-12sep2026_2pm
+- Modelo en Hugging Face: https://huggingface.co/iFaz/eqm-aloha_transfer_cube-seed3-12sep2026_2pm
 - Dataset de entrenamiento: https://huggingface.co/datasets/lerobot/aloha_sim_transfer_cube_human
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Cita de LeRobot (Cadene, Alibert et al., 2024): https://github.com/huggingface/lerobot
 
-Nota: las búsquedas web realizadas no devolvieron resultados técnicos relevantes sobre este modelo; los enlaces anteriores proceden de la información del repositorio de HuggingFace y de la model card del autor.
+Nota: las búsquedas web realizadas no devolvieron resultados técnicos relevantes sobre este modelo; los enlaces anteriores proceden de la información del repositorio de Hugging Face y de la model card del autor.

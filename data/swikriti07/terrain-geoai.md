@@ -20,7 +20,7 @@ Su relevancia es doble: por un lado, es un ejemplo útil de arquitectura de reco
 | Idiomas soportados | No disponible |
 | Licencia | MIT para la documentación del repositorio; los datos y servicios de terceros se rigen por sus propias condiciones y licencias |
 | Formato de pesos | No contiene pesos; repositorio de documentación |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación / actualización | 2026-10-23 / 2026-10-23 |
 | Dependencias externas | OpenStreetMap (features), Nominatim (geocodificación), Overpass API (recuperación de features), integración meteorológica configurada |
@@ -98,7 +98,7 @@ La diferencia principal frente a las alternativas es de naturaleza, no de escala
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Swikriti07/terrain-geoai
+- Repositorio en Hugging Face: https://huggingface.co/Swikriti07/terrain-geoai
 - API en producción (base): https://terrain-ai-api.onrender.com
 - Health check: https://terrain-ai-api.onrender.com/health
 - Código backend: https://github.com/swikritidasbiswas07-web/terrain-ai-api

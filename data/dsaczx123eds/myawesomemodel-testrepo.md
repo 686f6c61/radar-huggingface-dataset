@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace bajo el identificador DSACZX123EDS/MyAwesomeModel-TestRepo por el usuario DSACZX123EDS. Segun la metadata de la plataforma, se distribuye con licencia MIT, esta orientado a la libreria transformers y lleva las etiquetas pytorch, bert y feature-extraction, con pipeline declarado de extraccion de caracteristicas. Sin embargo, la model card describe un modelo conversacional de razonamiento con mejoras en matematicas, programacion y logica, ademas de soporte de function calling y busqueda web. Existe por tanto una contradiccion entre la metadata de HuggingFace y el contenido de la model card que conviene tener presente.
+MyAwesomeModel es un modelo publicado en Hugging Face bajo el identificador DSACZX123EDS/MyAwesomeModel-TestRepo por el usuario DSACZX123EDS. Segun la metadata de la plataforma, se distribuye con licencia MIT, esta orientado a la libreria transformers y lleva las etiquetas pytorch, bert y feature-extraction, con pipeline declarado de extraccion de caracteristicas. Sin embargo, la model card describe un modelo conversacional de razonamiento con mejoras en matematicas, programacion y logica, ademas de soporte de function calling y busqueda web. Existe por tanto una contradiccion entre la metadata de Hugging Face y el contenido de la model card que conviene tener presente.
 
 La model card afirma que esta version incrementa la profundidad de razonamiento respecto a una version previa, citando como ejemplo que en AIME 2025 la precision pasaria del 70% al 87,5%, con un consumo medio de tokens por pregunta que sube de 12K a 23K. Tambien menciona una reduccion de la tasa de alucinacion y mejor soporte de llamada a funciones. No obstante, no se publican parametros totales, longitud de contexto, arquitectura concreta ni pesos en el repositorio (el tamano del repo figura como 0,0 GB), por lo que se trata a efectos practicos de un repositorio de prueba sin artefactos desplegables confirmados.
 
@@ -12,7 +12,7 @@ El interes actual del modelo es limitado y fundamentalmente documental: sirve co
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta de HuggingFace indica "bert"; la model card describe un modelo de razonamiento conversacional, sin confirmacion de arquitectura real) |
+| Arquitectura | no disponible (la etiqueta de Hugging Face indica "bert"; la model card describe un modelo de razonamiento conversacional, sin confirmacion de arquitectura real) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ El interes actual del modelo es limitado y fundamentalmente documental: sirve co
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura. La etiqueta de HuggingFace incluye "bert" y el pipeline declarado es feature-extraction, lo que apuntaria a un encoder tipo BERT para extraccion de representaciones, pero la model card describe un modelo generativo de razonamiento con modo de pensamiento, soporte de function calling y plantillas de prompt para busqueda web. Esta inconsistencia no se resuelve con los datos aportados.
+No se dispone de informacion verificable sobre la arquitectura. La etiqueta de Hugging Face incluye "bert" y el pipeline declarado es feature-extraction, lo que apuntaria a un encoder tipo BERT para extraccion de representaciones, pero la model card describe un modelo generativo de razonamiento con modo de pensamiento, soporte de function calling y plantillas de prompt para busqueda web. Esta inconsistencia no se resuelve con los datos aportados.
 
 Respecto al entrenamiento, la model card menciona de forma generica que se han empleado mas recursos de computo y "mecanismos de optimizacion algoritmica" durante el post-entrenamiento, sin especificar numero de tokens, composicion del dataset, ni si se uso RLHF, DPO u otra tecnica. La unica cifra concreta es el aumento de tokens de razonamiento por pregunta en AIME 2025 (de 12K a 23K de media), que sugiere decodificacion extendida tipo cadena de pensamiento, pero no hay detalle tecnico adicional. No se documentan innovaciones como atencion lineal, decodificacion especulativa o arquitecturas hibridas.
 
@@ -95,13 +95,13 @@ No se dispone de informacion suficiente para una comparativa fiable. La propia m
 | Model1 | no disponible | no disponible | inferior a MyAwesomeModel en la tabla | no disponible | no disponible |
 | Model2 | no disponible | no disponible | inferior a MyAwesomeModel en la tabla | no disponible | no disponible |
 | Model1-v2 | no disponible | no disponible | inferior a MyAwesomeModel en la tabla | no disponible | no disponible |
-| MyAwesomeModel | no disponible | no disponible | superior segun la tabla de la model card | MIT | repositorio HuggingFace (sin pesos publicados) |
+| MyAwesomeModel | no disponible | no disponible | superior segun la tabla de la model card | MIT | repositorio Hugging Face (sin pesos publicados) |
 
 No hay datos para comparar con alternativas reales de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Inconsistencia entre metadata y model card: HuggingFace etiqueta el modelo como "bert" y pipeline de feature-extraction, mientras la model card describe un modelo generativo de razonamiento con function calling. No se puede determinar la arquitectura real.
+- Inconsistencia entre metadata y model card: Hugging Face etiqueta el modelo como "bert" y pipeline de feature-extraction, mientras la model card describe un modelo generativo de razonamiento con function calling. No se puede determinar la arquitectura real.
 - Ausencia de pesos: el repositorio figura con 0,0 GB y no se confirman artefactos descargables, por lo que no es posible ejecutar el modelo con la informacion disponible.
 - Benchmarks no estandar ni verificables: la tabla usa nombres anonimizados y categorias genericas; no se aportan MMLU, HumanEval, GSM8K ni la metodologia de evaluacion. Los resultados son autoinformados por el autor.
 - Cifras no reproducibles: el dato de AIME 2025 (70% a 87,5%) no incluye configuracion de evaluacion, numero de intentos ni condiciones.
@@ -113,6 +113,6 @@ No hay datos para comparar con alternativas reales de la misma categoria.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DSACZX123EDS/MyAwesomeModel-TestRepo
+- Modelo en Hugging Face: https://huggingface.co/DSACZX123EDS/MyAwesomeModel-TestRepo
 
 No se han encontrado otros enlaces relevantes (repositorios de codigo, papers, blogs o demos) en la busqueda web realizada. La busqueda devolvio exclusivamente resultados de sitios de efemerides historicas ("On This Day"), sin relacion con el modelo, por lo que se han descartado.

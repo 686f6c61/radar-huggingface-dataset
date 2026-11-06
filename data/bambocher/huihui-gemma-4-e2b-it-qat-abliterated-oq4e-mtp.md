@@ -6,7 +6,7 @@ Huihui-gemma-4-E2B-it-qat-abliterated-oQ4e-mtp es un checkpoint cuantizado en fo
 
 El interés de esta ficha es acotado y conviene ser explícito: no es un modelo nuevo, sino un artefacto de cuantización. Su relevancia práctica se limita a usuarios de Apple Silicon que quieran ejecutar una variante sin rechazos de un modelo de la familia Gemma 4 en memoria unificada, con la comodidad de un checkpoint ya empaquetado para mlx-lm. No hay model card descriptiva más allá de los parámetros de cuantización, ni resultados de evaluación, ni declaración de licencia o de idiomas.
 
-El repositorio se creó y actualizó el mismo día (19 de octubre de 2026) y no registra descargas ni valoraciones, por lo que no existe evidencia de validación por parte de la comunidad. Además, la búsqueda web asociada a esta ficha no devolvió ningún resultado pertinente (únicamente recetas de confitura de sandía), de modo que toda la información técnica procede de los metadatos de HuggingFace y de la minimalista model card del autor.
+El repositorio se creó y actualizó el mismo día (19 de octubre de 2026) y no registra descargas ni valoraciones, por lo que no existe evidencia de validación por parte de la comunidad. Además, la búsqueda web asociada a esta ficha no devolvió ningún resultado pertinente (únicamente recetas de confitura de sandía), de modo que toda la información técnica procede de los metadatos de Hugging Face y de la minimalista model card del autor.
 
 ## Especificaciones tecnicas
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|---|
 | Huihui-gemma-4-E2B-it-qat-abliterated-oQ4e-mtp | 5.104.297.539 (4 bits) | no disponible | 4 bits, group 64, oQ | no disponible | MLX safetensors, 0 descargas |
 | Gemma 4 E2B it (modelo de origen, sin cuantizar) | no disponible (el sufijo sugiere ~2B efectivos) | no disponible | no aplica | no disponible en esta ficha | pesos originales de Google |
-| Otras variantes abliterated de la familia (huihui-ai) | no disponible | no disponible | habitualmente sin cuantizar o GGUF | no disponible | repositorios públicos en HuggingFace |
-| Cuantizaciones GGUF de la misma familia | no disponible | no disponible | 2-8 bits, group variable | no disponible | HuggingFace, compatibles con llama.cpp y Ollama |
+| Otras variantes abliterated de la familia (huihui-ai) | no disponible | no disponible | habitualmente sin cuantizar o GGUF | no disponible | repositorios públicos en Hugging Face |
+| Cuantizaciones GGUF de la misma familia | no disponible | no disponible | 2-8 bits, group variable | no disponible | Hugging Face, compatibles con llama.cpp y Ollama |
 
 La comparación cuantitativa no es posible con la información disponible: no hay datos de rendimiento de este checkpoint ni de las alternativas citadas. La diferencia práctica frente a una cuantización GGUF equivalente es el ecosistema de ejecución (MLX y Apple Silicon frente a llama.cpp y hardware variado), no un mejor rendimiento demostrado.
 
@@ -87,7 +87,7 @@ La comparación cuantitativa no es posible con la información disponible: no ha
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bambocher/Huihui-gemma-4-E2B-it-qat-abliterated-oQ4e-mtp
+- Repositorio en Hugging Face: https://huggingface.co/bambocher/Huihui-gemma-4-E2B-it-qat-abliterated-oQ4e-mtp
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Modelo de origen Gemma 4 E2B it: no disponible en la información proporcionada
 - Repositorio del proceso de abliteration (huihui-ai): no disponible en la información proporcionada

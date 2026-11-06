@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_head-epoch13 | 6,74 B | No disponible (base Llama 2: 4096) | Checkpoint de *unlearning* TOFU (época 13/20) | Llama 2 | HuggingFace, repo de 13,5 GB |
-| locuslab/tofu_ft_llama2-7b | 6,74 B | Base Llama 2: 4096 | Modelo base ajustado en TOFU, sin olvido | Llama 2 | HuggingFace (modelo de referencia del benchmark) |
-| NousResearch/Llama-2-7b-chat-hf | 6,74 B | Base Llama 2: 4096 | Chat de propósito general | Llama 2 | HuggingFace, ampliamente utilizado |
+| g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_head-epoch13 | 6,74 B | No disponible (base Llama 2: 4096) | Checkpoint de *unlearning* TOFU (época 13/20) | Llama 2 | Hugging Face, repo de 13,5 GB |
+| locuslab/tofu_ft_llama2-7b | 6,74 B | Base Llama 2: 4096 | Modelo base ajustado en TOFU, sin olvido | Llama 2 | Hugging Face (modelo de referencia del benchmark) |
+| NousResearch/Llama-2-7b-chat-hf | 6,74 B | Base Llama 2: 4096 | Chat de propósito general | Llama 2 | Hugging Face, ampliamente utilizado |
 | Meta Llama 2 7B (original) | 6,74 B | 4096 | Modelo fundacional | Llama 2 | Distribución oficial de Meta |
 
 La comparación relevante no es de rendimiento general sino de comportamiento bajo las métricas de TOFU (olvido del split `forget10` y retención del split *retain*), para las cuales no hay resultados publicados en la información disponible.
@@ -87,7 +87,7 @@ La comparación relevante no es de rendimiento general sino de comportamiento ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_head-epoch13
+- Modelo en Hugging Face: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_head-epoch13
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de origen de embeddings y cabeza: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Benchmark TOFU (paper): https://arxiv.org/abs/2401.06121

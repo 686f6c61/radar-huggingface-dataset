@@ -88,7 +88,7 @@ Nota: los modelos comparativos no están específicamente entrenados para detecc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/liuwangaaaa/SPARK
+- Repositorio Hugging Face: https://huggingface.co/liuwangaaaa/SPARK
 - Perfil del autor: https://huggingface.co/liuwangaaaa
 - Repositorio de código (referenciado en el README): https://github.com/
 - Guías de poda y QAT: `docs/剪枝指南.md`, `docs/QAT指南.md` (en el repositorio)

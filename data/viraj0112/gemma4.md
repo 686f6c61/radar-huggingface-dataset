@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Viraj0112/Gemma4` es un repositorio de pesos en formato `safetensors` publicado en HuggingFace por el usuario Viraj0112 bajo licencia Apache 2.0. El repositorio no incluye model card con contenido técnico (el README se limita a la declaración de licencia), no declara pipeline, no declara idiomas y no ha recibido descargas ni valoraciones en el momento de la consulta. El tamaño total del repositorio es de 48,3 GB.
+`Viraj0112/Gemma4` es un repositorio de pesos en formato `safetensors` publicado en Hugging Face por el usuario Viraj0112 bajo licencia Apache 2.0. El repositorio no incluye model card con contenido técnico (el README se limita a la declaración de licencia), no declara pipeline, no declara idiomas y no ha recibido descargas ni valoraciones en el momento de la consulta. El tamaño total del repositorio es de 48,3 GB.
 
 La única información cuantitativa disponible es ese tamaño y el formato de pesos. Asumiendo un único conjunto de pesos en bf16/fp16 (2 bytes por parámetro), 48,3 GB equivaldrían a unos 24.000 millones de parámetros, pero esta cifra es una estimación derivada y no un dato confirmado: el repositorio podría contener varias precisiones, ficheros duplicados o pesos parciales, en cuyo caso el número real sería menor. No hay información verificable sobre arquitectura, contexto, datos de entrenamiento ni proceso de alineación.
 
@@ -96,7 +96,7 @@ Advertencia: la coincidencia de nombre con la familia Gemma no implica que este 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Viraj0112/Gemma4
+- Repositorio en Hugging Face: https://huggingface.co/Viraj0112/Gemma4
 - Ficheros del repositorio: https://huggingface.co/Viraj0112/Gemma4/tree/main
 - Perfil del autor: https://huggingface.co/Viraj0112
 - Paper, blog, demo o repositorio de código: no disponibles en la información proporcionada.

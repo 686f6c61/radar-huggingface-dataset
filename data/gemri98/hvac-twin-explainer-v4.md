@@ -71,9 +71,9 @@ Con el primer evaluador, más permisivo, los mismos conjuntos daban 98,0 % y 97,
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HVAC twin agent v5 (este) | 3B (base) + LoRA | no disponible | Agente de dominio con tool calling sobre gemelo térmico | apache-2.0 | HuggingFace, adaptador PEFT |
-| Qwen2.5-3B-Instruct (base) | 3B | no disponible en la información proporcionada | Modelo generalista de instrucciones | apache-2.0 | HuggingFace |
-| Adaptadores de dominio sobre modelos de 3B (categoría genérica) | 3B (base) + LoRA | variable | Ajuste fino para tareas específicas | variable | HuggingFace |
+| HVAC twin agent v5 (este) | 3B (base) + LoRA | no disponible | Agente de dominio con tool calling sobre gemelo térmico | apache-2.0 | Hugging Face, adaptador PEFT |
+| Qwen2.5-3B-Instruct (base) | 3B | no disponible en la información proporcionada | Modelo generalista de instrucciones | apache-2.0 | Hugging Face |
+| Adaptadores de dominio sobre modelos de 3B (categoría genérica) | 3B (base) + LoRA | variable | Ajuste fino para tareas específicas | variable | Hugging Face |
 
 No se dispone de datos de benchmarks comparables entre este adaptador y alternativas de la misma categoría en la información proporcionada; la comparación con el modelo base solo puede hacerse de forma cualitativa (el adaptador añade el formato de llamada a herramienta y la fidelidad a cifras del simulador, a costa de especializarse en un dominio muy estrecho).
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparables entre este adaptador y alternat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GeMri98/hvac-twin-explainer-v4
+- Hugging Face: https://huggingface.co/GeMri98/hvac-twin-explainer-v4
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Librería PEFT: https://github.com/huggingface/peft
 - No se han encontrado en la búsqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo.

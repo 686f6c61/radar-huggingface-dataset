@@ -102,7 +102,7 @@ El autor recomienda comparar esta variante de 4 bits contra BF16 o 8 bits sobre 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/mlx-community/embeddinggemma-2-nvfp4
+- Pagina del modelo en Hugging Face: https://huggingface.co/mlx-community/embeddinggemma-2-nvfp4
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Revision del modelo base usada en la conversion: https://huggingface.co/google/embeddinggemma-2/tree/914f7f89142e33e77833254d9c9b90c3cef7303b
 - Repositorio MLX-VLM (revision de conversion): https://github.com/Blaizzy/mlx-vlm/tree/3d87e88402f307efbf68e568971aa887ee7d9ed0

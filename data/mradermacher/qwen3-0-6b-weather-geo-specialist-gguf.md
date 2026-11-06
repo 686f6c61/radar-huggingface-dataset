@@ -27,7 +27,7 @@ El modelo parte de Qwen3-0.6B, un transformer decoder-only denso de aproximadame
 
 El dataset de entrenamiento declarado es `Salesforce/xlam-function-calling-60k`, un corpus de 60 000 ejemplos de llamadas a funciones. No se especifica en la informacion disponible el numero de tokens vistos, la composicion exacta del dataset final, la duracion del entrenamiento, los hiperparametros de LoRA (rango, alpha, modulos objetivo) ni si hubo etapas posteriores de RLHF, DPO o ajuste supervisado adicional. Tampoco se documenta ninguna innovacion de decodificacion o atencion especifica mas alla de la arquitectura heredada del modelo base.
 
-En cuanto a este repositorio concreto, mradermacher ha generado cuantizaciones GGUF estaticas (no ponderadas / sin imatrix, segun la propia model card) mediante conversion desde formato HuggingFace con `convert_type: hf` y cuantizacion de tensores de salida. Se ofrecen 12 variantes de cuantizacion, incluidas las familias K-quant e IQ, con recomendaciones explicitas del autor para Q4_K_S y Q4_K_M ("fast, recommended") y Q8_0 ("fast, best quality").
+En cuanto a este repositorio concreto, mradermacher ha generado cuantizaciones GGUF estaticas (no ponderadas / sin imatrix, segun la propia model card) mediante conversion desde formato Hugging Face con `convert_type: hf` y cuantizacion de tensores de salida. Se ofrecen 12 variantes de cuantizacion, incluidas las familias K-quant e IQ, con recomendaciones explicitas del autor para Q4_K_S y Q4_K_M ("fast, recommended") y Q8_0 ("fast, best quality").
 
 ## Capacidades
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Repositorio cuantizado en HuggingFace: https://huggingface.co/mradermacher/qwen3-0.6b-weather-geo-specialist-GGUF
+- Repositorio cuantizado en Hugging Face: https://huggingface.co/mradermacher/qwen3-0.6b-weather-geo-specialist-GGUF
 - Modelo origen (adaptador LoRA/PEFT): https://huggingface.co/oopere/qwen3-0.6b-weather-geo-specialist
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#qwen3-0.6b-weather-geo-specialist-GGUF

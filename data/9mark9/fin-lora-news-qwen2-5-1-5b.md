@@ -110,7 +110,7 @@ No se han encontrado en los resultados de busqueda otros adaptadores LoRA compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/9mark9/fin-lora-news-qwen2.5-1.5b
+- Modelo en Hugging Face: https://huggingface.co/9mark9/fin-lora-news-qwen2.5-1.5b
 - Repositorio con codigo y resultados: https://github.com/shaikn6/fin-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Coleccion Qwen2.5: https://huggingface.co/collections/Qwen/qwen25

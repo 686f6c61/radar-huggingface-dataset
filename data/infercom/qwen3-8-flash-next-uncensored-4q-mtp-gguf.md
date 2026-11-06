@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `infercom/Qwen3.8-Flash-Next-Uncensored-4Q-MTP-GGUF` es una publicacion de pesos en formato GGUF alojada en HuggingFace por el usuario `infercom`. El nombre del repositorio indica que se trata de una cuantizacion de 4 bits (sufijo "4Q"), con algun mecanismo etiquetado como "MTP" y una variante marcada como "Uncensored", presumiblemente derivada de un modelo base denominado "Qwen3.8-Flash-Next". No se ha publicado informacion que permita confirmar la identidad del modelo base, el proceso de cuantizacion aplicado ni el pipeline de inferencia.
+El repositorio `infercom/Qwen3.8-Flash-Next-Uncensored-4Q-MTP-GGUF` es una publicacion de pesos en formato GGUF alojada en Hugging Face por el usuario `infercom`. El nombre del repositorio indica que se trata de una cuantizacion de 4 bits (sufijo "4Q"), con algun mecanismo etiquetado como "MTP" y una variante marcada como "Uncensored", presumiblemente derivada de un modelo base denominado "Qwen3.8-Flash-Next". No se ha publicado informacion que permita confirmar la identidad del modelo base, el proceso de cuantizacion aplicado ni el pipeline de inferencia.
 
 La model card del repositorio esta practicamente vacia: unicamente contiene el bloque de frontmatter con `license: apache-2.0`, sin descripcion, sin ejemplos de uso, sin especificaciones tecnicas y sin resultados de evaluacion. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, por lo que no existe validacion por parte de la comunidad ni evidencia de uso en produccion.
 
@@ -18,7 +18,7 @@ La busqueda web realizada no ha devuelto ninguna fuente tecnica relacionada con 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | cuantizacion de 4 bits segun el sufijo "4Q" del nombre; esquema exacto (Q4_K_M, Q4_0, IQ4_XS, etc.) no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 (declarada en los tags de HuggingFace y en el frontmatter de la model card) |
+| Licencia | apache-2.0 (declarada en los tags de Hugging Face y en el frontmatter de la model card) |
 | Formato de pesos | GGUF (deducido del sufijo "-GGUF" del nombre del repositorio) |
 
 ## Arquitectura y entrenamiento
@@ -83,5 +83,5 @@ No disponible. No es posible identificar alternativas comparables sin conocer el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/infercom/Qwen3.8-Flash-Next-Uncensored-4Q-MTP-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/infercom/Qwen3.8-Flash-Next-Uncensored-4Q-MTP-GGUF
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la busqueda web realizada.

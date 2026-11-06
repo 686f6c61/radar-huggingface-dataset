@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`superretrosfx/RVC-MODEL` es un repositorio publicado en HuggingFace por el usuario `superretrosfx`, etiquetado con las categorias `RVC` (Retrieval-based Voice Conversion) y `Voice Cloning`, y declarado dentro de la pipeline `audio-to-audio`. Por tanto, la intencion declarada es la conversion de voz: transformar una locucion de entrada en la timbrica de un hablante objetivo manteniendo el contenido linguistico y la prosodia. El repositorio ocupa 1,6 GB y se distribuye bajo licencia MIT, con soporte declarado de ingles y espanol.
+`superretrosfx/RVC-MODEL` es un repositorio publicado en Hugging Face por el usuario `superretrosfx`, etiquetado con las categorias `RVC` (Retrieval-based Voice Conversion) y `Voice Cloning`, y declarado dentro de la pipeline `audio-to-audio`. Por tanto, la intencion declarada es la conversion de voz: transformar una locucion de entrada en la timbrica de un hablante objetivo manteniendo el contenido linguistico y la prosodia. El repositorio ocupa 1,6 GB y se distribuye bajo licencia MIT, con soporte declarado de ingles y espanol.
 
 La informacion publicada es escasa y presenta inconsistencias notables que conviene senalar desde el principio. El campo `base_model` apunta a `nex-agi/Nex-N2.5-mini`, un modelo que el propio autor marca como punto de partida de un `finetune`, mientras que el dataset declarado (`openbmb/UltraData-SFT-Agent-2609`) y la metrica declarada (`bertscore-with-torch_dtype`) corresponden a texto, no a audio. Ademas, la libreria indicada es `keras-hub`, lo que situa el artefacto en el ecosistema Keras/TensorFlow y no en el ecosistema PyTorch que domina las implementaciones habituales de RVC.
 
@@ -81,7 +81,7 @@ La comparacion no puede completarse con rigor porque las especificaciones de est
 
 | Modelo | Categoria | Parametros | Contexto/ventana | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| superretrosfx/RVC-MODEL | Conversion de voz (RVC) | no disponible | no aplica | MIT | HuggingFace, libreria keras-hub | sin benchmarks publicados |
+| superretrosfx/RVC-MODEL | Conversion de voz (RVC) | no disponible | no aplica | MIT | Hugging Face, libreria keras-hub | sin benchmarks publicados |
 | Proyecto RVC (Retrieval-based Voice Conversion) | Conversion de voz | no disponible en esta consulta | no aplica | no disponible en esta consulta | Repositorio publico, ampliamente utilizado | no disponible en esta consulta |
 | Applio (fork de RVC) | Conversion de voz | no disponible en esta consulta | no aplica | no disponible en esta consulta | Repositorio publico | no disponible en esta consulta |
 | so-vits-svc | Conversion de canto y voz | no disponible en esta consulta | no aplica | no disponible en esta consulta | Repositorio publico | no disponible en esta consulta |
@@ -104,7 +104,7 @@ La busqueda web realizada no devolvio informacion sobre ninguno de estos proyect
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/superretrosfx/RVC-MODEL
+- Hugging Face: https://huggingface.co/superretrosfx/RVC-MODEL
 - Modelo base declarado: https://huggingface.co/nex-agi/Nex-N2.5-mini
 - Dataset declarado: https://huggingface.co/datasets/openbmb/UltraData-SFT-Agent-2609
 - Metrica declarada: https://huggingface.co/FanaticPythoner/bertscore-with-torch_dtype

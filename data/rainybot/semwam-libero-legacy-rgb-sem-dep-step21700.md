@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SemWAM-LIBERO-Legacy-rgb-sem-dep-step21700 es un checkpoint histórico de robótica publicado por el usuario RainyBot en HuggingFace. Se trata de un modelo de política visuomotora (vision-language-action, aunque sin componente lingüístico explícito en la configuración archivada) entrenado sobre el benchmark LIBERO, orientado a la manipulación robótica a partir de observaciones RGB, profundidad y características semánticas. El checkpoint corresponde al paso de optimizador final 21700/21700 de un entrenamiento cuyo registro de finalización fue verificado por el autor.
+SemWAM-LIBERO-Legacy-rgb-sem-dep-step21700 es un checkpoint histórico de robótica publicado por el usuario RainyBot en Hugging Face. Se trata de un modelo de política visuomotora (vision-language-action, aunque sin componente lingüístico explícito en la configuración archivada) entrenado sobre el benchmark LIBERO, orientado a la manipulación robótica a partir de observaciones RGB, profundidad y características semánticas. El checkpoint corresponde al paso de optimizador final 21700/21700 de un entrenamiento cuyo registro de finalización fue verificado por el autor.
 
 El modelo se construye sobre el backbone de vídeo Wan-AI/Wan2.2-TI2V-5B, con arquitectura `rgb_dep_sem` que fusiona tres modalidades: RGB, profundidad (estimada con VDA y representación log3) y semántica (extraída con DINOv3 ViT-B/16, 768 dimensiones). La fusión semántica se aplica en las capas 7 y 23 del DiT de vídeo. El paradigma de entrada es `t_concat` con disposición de vistas `libero_horizontal`, e incorpora 8 dimensiones de propiocepción.
 
@@ -76,6 +76,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-rgb-sem-dep-step21700
+- Hugging Face: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-rgb-sem-dep-step21700
 - Backbone base: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - No se han encontrado en la información disponible otros enlaces a papers, blogs, repositorios o demos.

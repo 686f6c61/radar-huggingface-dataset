@@ -68,7 +68,7 @@ Datos indirectos disponibles sobre el modelo objetivo (no sobre el borrador):
 | Modelo | Benchmark | Resultado | Fuente |
 |---|---|---|---|
 | Ornith-1.5-35B-A3B | BenchAlign (leaderboard publico) | 31,97 / 100, puesto 159 de 209 | benchlm.ai |
-| Ornith-1.5-35B-A3B-DFlash | Benchmarks propios | no disponible | HuggingFace |
+| Ornith-1.5-35B-A3B-DFlash | Benchmarks propios | no disponible | Hugging Face |
 
 Tampoco se publican datos de tasa de aceptacion (acceptance rate), speedup medido ni latencia comparada frente a decodificacion autoregresiva estandar.
 
@@ -112,7 +112,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de las alternativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-DFlash
+- Repositorio Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-DFlash
 - Modelo objetivo: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Variante cuantizada FP8 del objetivo: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8
 - Sitio de Ornith AI: https://ornith.ai/

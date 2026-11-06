@@ -73,6 +73,6 @@ No disponible. No se encontraron en la información proporcionada modelos equiva
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gomeeth04/tiny-transformer-generation-lite19
-- Perfil del autor en HuggingFace: https://huggingface.co/gomeeth04
+- Hugging Face: https://huggingface.co/gomeeth04/tiny-transformer-generation-lite19
+- Perfil del autor en Hugging Face: https://huggingface.co/gomeeth04
 - Repositorio de referencia con implementación similar (sin datos verificados): https://github.com/avvorstenbosch/tinyTransformer

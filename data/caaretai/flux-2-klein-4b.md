@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FLUX.2-klein-4B (este repo, backup) | 3,88 B | 1024x1024, sampler 4 pasos | Apache 2.0 | HuggingFace (espejo) |
-| FLUX.2-klein-4B (original, Black Forest Labs) | 3,88 B | 1024x1024, sampler 4 pasos | Apache 2.0 | HuggingFace (oficial) |
+| FLUX.2-klein-4B (este repo, backup) | 3,88 B | 1024x1024, sampler 4 pasos | Apache 2.0 | Hugging Face (espejo) |
+| FLUX.2-klein-4B (original, Black Forest Labs) | 3,88 B | 1024x1024, sampler 4 pasos | Apache 2.0 | Hugging Face (oficial) |
 | Otros modelos de difusion texto-a-imagen de ~4 B | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la informacion proporcionada para establecer una comparativa cuantitativa fiable.
@@ -81,6 +81,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/CaaretAI/FLUX.2-klein-4B
+- Hugging Face (este repositorio): https://huggingface.co/CaaretAI/FLUX.2-klein-4B
 - Modelo base original: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Libreria diffusers: https://github.com/huggingface/diffusers

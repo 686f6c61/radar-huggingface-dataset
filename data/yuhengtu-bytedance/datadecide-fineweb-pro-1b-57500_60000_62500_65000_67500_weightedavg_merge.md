@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DataDecide-fineweb-pro-1B (este merge) | 1,28B | no disponible | no disponible | HuggingFace, 2,6 GB, 0 descargas |
-| Llama 3.2 1B (Meta) | ~1,24B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, muy extendido |
-| Qwen2.5-1.5B (Alibaba) | ~1,54B | 32.768 tokens nativos | Apache 2.0 | HuggingFace, muy extendido |
-| SmolLM2-1.7B (HuggingFace) | ~1,7B | 8.192 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
+| DataDecide-fineweb-pro-1B (este merge) | 1,28B | no disponible | no disponible | Hugging Face, 2,6 GB, 0 descargas |
+| Llama 3.2 1B (Meta) | ~1,24B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, muy extendido |
+| Qwen2.5-1.5B (Alibaba) | ~1,54B | 32.768 tokens nativos | Apache 2.0 | Hugging Face, muy extendido |
+| SmolLM2-1.7B (Hugging Face) | ~1,7B | 8.192 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
 
 Nota: los datos de contexto, licencia y parametros de los modelos alternativos son caracteristicas publicas conocidas de esos lanzamientos. Para este merge no se dispone de datos equivalentes, por lo que la comparacion de rendimiento no puede realizarse.
 
@@ -86,7 +86,7 @@ Nota: los datos de contexto, licencia y parametros de los modelos alternativos s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-fineweb-pro-1B-57500_60000_62500_65000_67500_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-fineweb-pro-1B-57500_60000_62500_65000_67500_weightedavg_merge
 - mergekit (herramienta de fusion): https://github.com/cg123/mergekit
 - Articulo del metodo Linear / model soups: https://arxiv.org/abs/2203.05482
 - No se han encontrado en la busqueda web enlaces adicionales relevantes al modelo (los resultados devueltos correspondian a contenidos no relacionados).

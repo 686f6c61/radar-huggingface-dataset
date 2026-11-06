@@ -88,11 +88,11 @@ Comparativa de CORE con la misma herramienta, según la model card:
 
 | Modelo | Parámetros | Contexto | CORE | MMLU | HumanEval | Licencia | Disponibilidad |
 |---|---|---:|---:|---:|---:|---|---|
-| nanochat-d20-chat | 897M | 2048 | 0,236 | 35,2 % | 11,0 % | MIT | HuggingFace + GitHub del autor |
+| nanochat-d20-chat | 897M | 2048 | 0,236 | 35,2 % | 11,0 % | MIT | Hugging Face + GitHub del autor |
 | nanochat d20 (referencia) | ~897M (misma arquitectura d20) | no disponible | 0,222 | 31,5 % | 8,5 % | MIT | Repositorio karpathy/nanochat |
-| GPT-2 medium | 355M | 1024 | 0,192 | no disponible | no disponible | MIT modificada (OpenAI) | HuggingFace (openai-community) |
-| GPT-2 XL | 1,5B | 1024 | 0,257 | no disponible | no disponible | MIT modificada (OpenAI) | HuggingFace (openai-community) |
-| shu127/nanochat-d20 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| GPT-2 medium | 355M | 1024 | 0,192 | no disponible | no disponible | MIT modificada (OpenAI) | Hugging Face (openai-community) |
+| GPT-2 XL | 1,5B | 1024 | 0,257 | no disponible | no disponible | MIT modificada (OpenAI) | Hugging Face (openai-community) |
+| shu127/nanochat-d20 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -103,18 +103,18 @@ Comparativa de CORE con la misma herramienta, según la model card:
 - Idioma: solo inglés; no hay soporte multilingüe declarado.
 - Datos de entrenamiento limitados: 3.480 millones de tokens, muy por debajo de los estándares actuales, lo que explica el escaso conocimiento del mundo.
 - Benchmarks no verificados: todas las métricas del `model-index` están marcadas con `verified: false` y proceden del propio autor.
-- Sin tracción ni validación externa: 0 descargas y 0 likes en HuggingFace, y ausencia de evaluaciones independientes.
+- Sin tracción ni validación externa: 0 descargas y 0 likes en Hugging Face, y ausencia de evaluaciones independientes.
 - Soporte de herramientas: no se declara tool calling, function calling ni integración con frameworks de agentes.
 - Despliegue: al usar checkpoints nativos de nanochat, no se puede cargar directamente con vLLM, llama.cpp, Ollama o TGI sin trabajo de conversión adicional.
 - Licencia: MIT, permisiva para uso comercial, pero con la advertencia de que la calidad del modelo hace desaconsejable su uso en producción sin validación humana.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sumitkClasses/nanochat-d20-chat
+- Modelo en Hugging Face: https://huggingface.co/sumitkClasses/nanochat-d20-chat
 - Framework nanochat (karpathy): https://github.com/karpathy/nanochat
 - Documentación de nanochat en DeepWiki: https://deepwiki.com/karpathy/nanochat
 - Pipeline de entrenamiento de nanochat (DeepWiki): https://deepwiki.com/karpathy/nanochat/2.3-training-pipeline-overview
 - Repositorio del autor (scripts, logs y servicio): https://github.com/rsumit123/private-llm
 - Servidor compatible con OpenAI: https://github.com/rsumit123/private-llm/blob/main/nanochat-d20/serve/app.py
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/sumitkClasses/scratchq-110
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/sumitkClasses/scratchq-110
 - Reproducción comunitaria relacionada: https://huggingface.co/shu127/nanochat-d20

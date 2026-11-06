@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fenrir-X-26B-A4B es un modelo de lenguaje multimodal (entrada de imagen y texto) publicado por el usuario Emerald7664 en HuggingFace. No es un modelo entrenado desde cero: se trata de un merge construido con mergekit a partir de cinco modelos derivados de la familia Gemma, tomando como base `google/gemma-4-26B-A4B-it` y combinándolo con `TeichAI/gemma-4-26B-A4B-it-Claude-Opus-Distill-v2`, `Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2`, `electroglyph/gemma4-26b-fiction-bf16` y `Darkhn/Gemma-4-26B-A4B-Animus-V14.1-FFT`. El objetivo declarado por el autor es fusionar capacidades de rol, escritura creativa y razonamiento en un único checkpoint.
+Fenrir-X-26B-A4B es un modelo de lenguaje multimodal (entrada de imagen y texto) publicado por el usuario Emerald7664 en Hugging Face. No es un modelo entrenado desde cero: se trata de un merge construido con mergekit a partir de cinco modelos derivados de la familia Gemma, tomando como base `google/gemma-4-26B-A4B-it` y combinándolo con `TeichAI/gemma-4-26B-A4B-it-Claude-Opus-Distill-v2`, `Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2`, `electroglyph/gemma4-26b-fiction-bf16` y `Darkhn/Gemma-4-26B-A4B-Animus-V14.1-FFT`. El objetivo declarado por el autor es fusionar capacidades de rol, escritura creativa y razonamiento en un único checkpoint.
 
 El modelo tiene 25.805.936.206 parámetros totales según los pesos en safetensors, con un repositorio de 51,6 GB. La nomenclatura A4B de los modelos base y los filtros de fusión sobre capas `experts.gate_up_proj` y `experts.down_proj` indican una arquitectura de mezcla de expertos (MoE), aunque el número exacto de parámetros activos no se especifica. El pipeline declarado es `image-text-to-text`, lo que implica capacidad de procesar imágenes además de texto.
 
@@ -81,12 +81,12 @@ Los unicos modelos directamente comparables son los propios componentes del merg
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fenrir-X-26B-A4B | 25,8 mil millones (MoE) | no disponible | sin benchmarks publicados | apache-2.0 declarada | safetensors en HuggingFace |
+| Fenrir-X-26B-A4B | 25,8 mil millones (MoE) | no disponible | sin benchmarks publicados | apache-2.0 declarada | safetensors en Hugging Face |
 | google/gemma-4-26B-A4B-it | 26B (MoE, A4B) | no disponible | no disponible | no disponible en esta ficha | modelo base oficial |
-| TeichAI/gemma-4-26B-A4B-it-Claude-Opus-Distill-v2 | 26B (MoE) | no disponible | no disponible | no disponible | HuggingFace |
-| Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2 | 26B (MoE) | no disponible | no disponible | no disponible | HuggingFace |
-| electroglyph/gemma4-26b-fiction-bf16 | 26B (MoE) | no disponible | no disponible | no disponible | HuggingFace |
-| Darkhn/Gemma-4-26B-A4B-Animus-V14.1-FFT | 26B (MoE) | no disponible | no disponible | no disponible | HuggingFace |
+| TeichAI/gemma-4-26B-A4B-it-Claude-Opus-Distill-v2 | 26B (MoE) | no disponible | no disponible | no disponible | Hugging Face |
+| Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2 | 26B (MoE) | no disponible | no disponible | no disponible | Hugging Face |
+| electroglyph/gemma4-26b-fiction-bf16 | 26B (MoE) | no disponible | no disponible | no disponible | Hugging Face |
+| Darkhn/Gemma-4-26B-A4B-Animus-V14.1-FFT | 26B (MoE) | no disponible | no disponible | no disponible | Hugging Face |
 
 Alternativas de otras familias (Qwen, Llama, Mistral) en el rango de 20-30 mil millones de parametros con soporte multimodal: no disponibles en la informacion proporcionada. No se dispone de datos de rendimiento de ninguna de ellas en esta ficha, por lo que cualquier comparacion numerica seria inventada.
 
@@ -106,7 +106,7 @@ Alternativas de otras familias (Qwen, Llama, Mistral) en el rango de 20-30 mil m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Emerald7664/Fenrir-X-26B-A4B
+- Modelo en Hugging Face: https://huggingface.co/Emerald7664/Fenrir-X-26B-A4B
 - Modelo base principal: https://huggingface.co/google/gemma-4-26B-A4B-it
 - TeichAI/gemma-4-26B-A4B-it-Claude-Opus-Distill-v2: https://huggingface.co/TeichAI/gemma-4-26B-A4B-it-Claude-Opus-Distill-v2
 - Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2: https://huggingface.co/Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2

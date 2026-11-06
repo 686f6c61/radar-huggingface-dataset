@@ -113,10 +113,10 @@ La comparativa relevante es con el propio modelo base: sobre los datos publicado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KANAKq/kanak-coder-7b-v2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/KANAKq/kanak-coder-7b-v2-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Version anterior del autor: https://huggingface.co/KANAKq/kanak-coder-1.5b-GGUF
-- Perfil del autor en HuggingFace: https://huggingface.co/KANAKq/models
+- Perfil del autor en Hugging Face: https://huggingface.co/KANAKq/models
 - Dataset Magicoder-OSS-Instruct-75K: https://huggingface.co/datasets/ise-uiuc/Magicoder-OSS-Instruct-75K
 - Dataset self-oss-instruct-sc2-exec-filter-50k: https://huggingface.co/datasets/bigcode/self-oss-instruct-sc2-exec-filter-50k
 - Dataset evol-codealpaca-v1: https://huggingface.co/datasets/theblackcat102/evol-codealpaca-v1

@@ -69,8 +69,8 @@ La información disponible no incluye benchmarks ni evaluaciones comparativas, p
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `blackhao0426/yugao-persona-qwen3.5-9b-lora` | Adaptador LoRA de persona/estilo | 9B (base); adaptador no cuantificado | No disponible | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en la consulta |
-| `Qwen/Qwen3.5-9B-Base` | Modelo base denso | 9B | No disponible | No disponible en la información proporcionada | HuggingFace y catálogos de terceros (Ollama, Fireworks) |
+| `blackhao0426/yugao-persona-qwen3.5-9b-lora` | Adaptador LoRA de persona/estilo | 9B (base); adaptador no cuantificado | No disponible | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en la consulta |
+| `Qwen/Qwen3.5-9B-Base` | Modelo base denso | 9B | No disponible | No disponible en la información proporcionada | Hugging Face y catálogos de terceros (Ollama, Fireworks) |
 | Otros adaptadores LoRA de persona sobre modelos Qwen | Adaptador LoRA | Variable | Variable | Variable | No disponible una comparación concreta en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ La información disponible no incluye benchmarks ni evaluaciones comparativas, p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blackhao0426/yugao-persona-qwen3.5-9b-lora
+- Modelo en Hugging Face: https://huggingface.co/blackhao0426/yugao-persona-qwen3.5-9b-lora
 - Perfil del autor: https://huggingface.co/blackhao0426
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Notebook de chat incluido en el repositorio: `yugao_chat.ipynb`

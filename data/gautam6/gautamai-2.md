@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Gautam6/GAUTAMAI es un modelo de generación de texto publicado en HuggingFace por el usuario Gautam6, con un total de 494 millones de parámetros y pesos en formato safetensors. Según las etiquetas del repositorio, el modelo está basado en la arquitectura Qwen2 y utiliza la librería transformers, lo que sugiere que se trata de un ajuste fino o una variante de dicha familia de modelos. El repositorio fue creado en agosto de 2026 y apenas cuenta con descargas o interacciones.
+Gautam6/GAUTAMAI es un modelo de generación de texto publicado en Hugging Face por el usuario Gautam6, con un total de 494 millones de parámetros y pesos en formato safetensors. Según las etiquetas del repositorio, el modelo está basado en la arquitectura Qwen2 y utiliza la librería transformers, lo que sugiere que se trata de un ajuste fino o una variante de dicha familia de modelos. El repositorio fue creado en agosto de 2026 y apenas cuenta con descargas o interacciones.
 
-La model card asociada es una plantilla automática sin información sustantiva: no se especifica el desarrollador, el proceso de entrenamiento, la licencia ni los idiomas soportados. La página web vinculada al autor describe un proyecto más amplio llamado "Gautam AI" con afirmaciones de ser un "modelo AGI autónomo" con capacidades de auto-mejora continua, pero estos datos no están respaldados por documentación técnica verificable en el repositorio. En consecuencia, esta ficha se limita a los datos confirmados en HuggingFace y marca como no disponible todo lo demás.
+La model card asociada es una plantilla automática sin información sustantiva: no se especifica el desarrollador, el proceso de entrenamiento, la licencia ni los idiomas soportados. La página web vinculada al autor describe un proyecto más amplio llamado "Gautam AI" con afirmaciones de ser un "modelo AGI autónomo" con capacidades de auto-mejora continua, pero estos datos no están respaldados por documentación técnica verificable en el repositorio. En consecuencia, esta ficha se limita a los datos confirmados en Hugging Face y marca como no disponible todo lo demás.
 
 ## Especificaciones técnicas
 
@@ -63,9 +63,9 @@ La comparativa no es posible por falta de información verificable. Sin embargo,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Gautam6/GAUTAMAI | 494M | no disponible | no disponible | HuggingFace |
-| Qwen2-0.5B | 494M | 32K | Apache 2.0 | HuggingFace |
-| Qwen2-1.5B | 1.5B | 32K | Apache 2.0 | HuggingFace |
+| Gautam6/GAUTAMAI | 494M | no disponible | no disponible | Hugging Face |
+| Qwen2-0.5B | 494M | 32K | Apache 2.0 | Hugging Face |
+| Qwen2-1.5B | 1.5B | 32K | Apache 2.0 | Hugging Face |
 
 La coincidencia de parámetros con Qwen2-0.5B sugiere que este modelo podría ser un fine-tune de dicha versión, pero no hay confirmación.
 
@@ -81,7 +81,7 @@ La coincidencia de parámetros con Qwen2-0.5B sugiere que este modelo podría se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gautam6/GAUTAMAI
+- Modelo en Hugging Face: https://huggingface.co/Gautam6/GAUTAMAI
 - Página web del autor: https://www.gautamai.com/
 - Perfil de GitHub del autor: https://github.com/Gautam06-ai
 - Blog del autor: https://codergautam.dev/

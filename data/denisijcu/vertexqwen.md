@@ -94,7 +94,7 @@ Nota: los datos de las tres alternativas provienen de la documentación pública
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Denisijcu/vertexqwen
+- Modelo en Hugging Face: https://huggingface.co/Denisijcu/vertexqwen
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Unsloth (framework de ajuste QLoRA): https://github.com/unslothai/unsloth
 - Ollama (despliegue local recomendado por el autor): https://ollama.com

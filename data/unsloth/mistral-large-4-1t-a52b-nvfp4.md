@@ -84,7 +84,7 @@ Mistral Large 4 destaca por su escala total (1T), su ventana de contexto de 1M t
 
 ## Enlaces
 
-- Repositorio HuggingFace (NVFP4, Unsloth): https://huggingface.co/unsloth/Mistral-Large-4-1T-A52B-NVFP4
+- Repositorio Hugging Face (NVFP4, Unsloth): https://huggingface.co/unsloth/Mistral-Large-4-1T-A52B-NVFP4
 - Modelo base (Mistral AI): https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B
 - Checkpoint NVFP4 oficial de Mistral: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4
 - Licencia: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/LICENSE

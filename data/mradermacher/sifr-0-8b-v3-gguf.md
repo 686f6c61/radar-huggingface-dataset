@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sifr-0.8b-v3-GGUF es un repositorio de cuantizaciones estáticas en formato GGUF generado por mradermacher a partir del modelo base mohamedlotfy50/sifr-0.8b-v3. No se trata, por tanto, de un modelo entrenado desde cero por este autor, sino de una conversión a GGUF pensada para su ejecución en llama.cpp y entornos compatibles con el endpoint de HuggingFace. El modelo base declara una orientación conversacional, según la etiqueta "conversational" del repositorio.
+sifr-0.8b-v3-GGUF es un repositorio de cuantizaciones estáticas en formato GGUF generado por mradermacher a partir del modelo base mohamedlotfy50/sifr-0.8b-v3. No se trata, por tanto, de un modelo entrenado desde cero por este autor, sino de una conversión a GGUF pensada para su ejecución en llama.cpp y entornos compatibles con el endpoint de Hugging Face. El modelo base declara una orientación conversacional, según la etiqueta "conversational" del repositorio.
 
 El recuento real de parámetros en safetensors es de 752.393.024, es decir, aproximadamente 0,75 mil millones, ligeramente por debajo del "0,8b" que sugiere el nombre. Se trata de un modelo de escala reducida, apto para inferencia en hardware de consumo, aunque no se dispone de información sobre su arquitectura interna, longitud de contexto, datos de entrenamiento o licencia, ya que la model card publicada se limita a la ficha de conversión.
 
@@ -22,12 +22,12 @@ La relevancia de este repositorio es fundamentalmente práctica: ofrece hasta do
 | Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base se distribuye en safetensors |
 | Tamano del repositorio | 7,8 GB (suma de todas las cuantizaciones) |
 | Version de cuantizacion | quantize_version 2, output_tensor_quantised 1 |
-| Tipo de conversion | hf (a partir del modelo base en formato HuggingFace) |
+| Tipo de conversion | hf (a partir del modelo base en formato Hugging Face) |
 | Compatibilidad de endpoint | si (etiqueta endpoints_compatible) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base mohamedlotfy50/sifr-0.8b-v3: ni el numero de capas, ni la dimension del modelo, ni el tipo de atencion, ni si emplea tecnicas como atencion lineal, decodificacion especulativa o mezcla de expertos. El unico dato tecnico fiable es el recuento de parametros (752.393.024) y el hecho de que la conversion se realizo desde pesos en formato HuggingFace. No se especifica si hubo entrenamiento con RLHF, DPO u otra fase de alineamiento.
+No se dispone de informacion sobre la arquitectura del modelo base mohamedlotfy50/sifr-0.8b-v3: ni el numero de capas, ni la dimension del modelo, ni el tipo de atencion, ni si emplea tecnicas como atencion lineal, decodificacion especulativa o mezcla de expertos. El unico dato tecnico fiable es el recuento de parametros (752.393.024) y el hecho de que la conversion se realizo desde pesos en formato Hugging Face. No se especifica si hubo entrenamiento con RLHF, DPO u otra fase de alineamiento.
 
 Respecto a los datos de entrenamiento, no se publica el numero de tokens, la composicion del dataset ni el corte temporal del corpus. La model card del repositorio de mradermacher es exclusivamente una ficha de conversion y no reproduce la informacion del autor original. Cualquier afirmacion sobre el proceso de entrenamiento seria especulativa.
 
@@ -47,7 +47,7 @@ Respecto a los datos de entrenamiento, no se publica el numero de tokens, la com
 - Despliegue de un asistente conversacional ligero en local: las variantes Q4_K_M y Q5_K_M permiten ejecutar el modelo en portatiles sin GPU dedicada a traves de llama.cpp, con un consumo de memoria inferior a 1 GB, adecuado para prototipos de chatbot sin conexion.
 - Generacion de texto en el borde (edge computing) o en dispositivos con recursos limitados: la cuantizacion Q2_K reduce el peso a unas decimas de gigabyte, lo que posibilita su integracion en entornos con RAM muy restringida, asumiendo la perdida de calidad asociada.
 - Pruebas comparativas de cuantizacion: al publicarse hasta doce variantes del mismo modelo, el repositorio sirve como banco de pruebas para medir el impacto de cada nivel de cuantizacion en perplejidad y calidad de respuesta conversacional.
-- Integracion en pipelines de evaluacion y benchmarking: la etiqueta endpoints_compatible facilita el consumo del modelo desde infraestructura compatible con la API de HuggingFace Endpoints para pruebas automatizadas.
+- Integracion en pipelines de evaluacion y benchmarking: la etiqueta endpoints_compatible facilita el consumo del modelo desde infraestructura compatible con la API de Hugging Face Endpoints para pruebas automatizadas.
 - Filtrado previo y clasificacion de textos cortos: como modelo pequeno de 752 millones de parametros, es candidato para tareas de etiquetado o reformulacion de baja latencia, siempre que se valide su calidad con datos propios, dado que no hay benchmarks publicos.
 - Investigacion sobre ajuste fino: al ser un modelo de menos de mil millones de parametros, puede ajustarse con LoRA en una unica GPU de 16 GB, partiendo de la version f16 o Q8_0 como base de mayor fidelidad.
 - Base para experimentos de destilacion o comparacion con modelos pequenos: util en estudios academicos que requieran un punto de referencia de escala sub-1B con licencia por determinar (ver limitaciones).
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - Q2_K: en torno a 0,3 GB.
 - GPU recomendadas: no hay requisitos publicados; por tamano, cualquier GPU con al menos 2 GB de VRAM (GTX 1050 Ti, GTX 1650, RTX 3050 en adelante) es suficiente para las cuantizaciones intermedias. GPU de datacenter como A100, H100 o L40S solo tendrian sentido en escenarios de batching muy alto, no por requisitos de memoria.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU modernas e incluso en graficos integrados con memoria compartida suficiente para las cuantizaciones de 2 a 5 bits.
-- Opciones de despliegue: llama.cpp (formato nativo), Ollama (previa importacion del GGUF mediante Modelfile), servidores compatibles con la API de llama.cpp, y despliegue gestionado a traves de endpoints compatibles con la API de HuggingFace. Compatibilidad con vLLM y TGI: no confirmada en la informacion disponible; vLLM y TGI priorizan safetensors o requieren pasos adicionales para GGUF.
+- Opciones de despliegue: llama.cpp (formato nativo), Ollama (previa importacion del GGUF mediante Modelfile), servidores compatibles con la API de llama.cpp, y despliegue gestionado a traves de endpoints compatibles con la API de Hugging Face. Compatibilidad con vLLM y TGI: no confirmada en la informacion disponible; vLLM y TGI priorizan safetensors o requieren pasos adicionales para GGUF.
 - Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -88,6 +88,6 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento del 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/sifr-0.8b-v3-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/sifr-0.8b-v3-GGUF
 - Modelo base: https://huggingface.co/mohamedlotfy50/sifr-0.8b-v3
 - Otros enlaces relevantes (papers, blogs, repos, demos): no disponible. La busqueda web no devolvio ningun resultado relacionado con el modelo.

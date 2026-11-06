@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/turkish-banking-agent-1.5b-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/turkish-banking-agent-1.5b-GGUF
 - Modelo original (referenciado en la model card): https://huggingface.co/saturday-labs/turkish-banking-agent-1.5b
 - Página del equipo mradermacher: https://huggingface.co/mradermacher
 - Página de descarga de cuantizaciones de mradermacher: https://hf.tst.eu/model

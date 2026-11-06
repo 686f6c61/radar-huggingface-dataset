@@ -2,13 +2,13 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario asfafq3f. Segun la model card, se trata de una version mejorada que aumenta la profundidad de razonamiento y las capacidades de inferencia mediante tecnicas de optimizacion algoritmica durante el post-entrenamiento. La documentacion declara mejoras en razonamiento matematico, generacion de codigo, reduccion de alucinaciones y soporte de function calling. Sin embargo, la etiqueta de HuggingFace indica "bert" y el pipeline "feature-extraction", lo que contradice los benchmarks de tareas generativas incluidos en la model card. No se dispone de informacion sobre la arquitectura, el numero de parametros ni la longitud de contexto. El repositorio tiene un tamano de 0.0 GB y no registra descargas ni likes, lo que sugiere que podria tratarse de un repositorio de prueba sin pesos realmente subidos.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario asfafq3f. Segun la model card, se trata de una version mejorada que aumenta la profundidad de razonamiento y las capacidades de inferencia mediante tecnicas de optimizacion algoritmica durante el post-entrenamiento. La documentacion declara mejoras en razonamiento matematico, generacion de codigo, reduccion de alucinaciones y soporte de function calling. Sin embargo, la etiqueta de Hugging Face indica "bert" y el pipeline "feature-extraction", lo que contradice los benchmarks de tareas generativas incluidos en la model card. No se dispone de informacion sobre la arquitectura, el numero de parametros ni la longitud de contexto. El repositorio tiene un tamano de 0.0 GB y no registra descargas ni likes, lo que sugiere que podria tratarse de un repositorio de prueba sin pesos realmente subidos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (la etiqueta de HuggingFace indica "bert") |
+| Arquitectura | No disponible (la etiqueta de Hugging Face indica "bert") |
 | Parametros totales | No disponible |
 | Parametros activos | No disponible (no se indica si es MoE) |
 | Longitud de contexto | No disponible |
@@ -115,9 +115,9 @@ No se han identificado modelos comparables a partir de la informacion disponible
 
 ## Limitaciones y advertencias
 
-- El repositorio en HuggingFace tiene un tamano de 0.0 GB, lo que contradictoriamente sugiere que no hay archivos de pesos subidos, a pesar de que la model card afirma que el checkpoint seleccionado se encuentra en la raiz del repositorio.
+- El repositorio en Hugging Face tiene un tamano de 0.0 GB, lo que contradictoriamente sugiere que no hay archivos de pesos subidos, a pesar de que la model card afirma que el checkpoint seleccionado se encuentra en la raiz del repositorio.
 - La fecha de creacion y la fecha de actualizacion son 2026-09-08, posterior a la fecha actual, lo que indica que el repositorio es probablemente una plantilla de prueba.
-- Las etiquetas de HuggingFace ("bert", "feature-extraction") no concuerdan con los benchmarks de generacion de texto y codigo, tipicos de modelos decoder-only. La arquitectura real es desconocida.
+- Las etiquetas de Hugging Face ("bert", "feature-extraction") no concuerdan con los benchmarks de generacion de texto y codigo, tipicos de modelos decoder-only. La arquitectura real es desconocida.
 - Los benchmarks descritos no estan estandarizados ni verificados externamente; no pueden compararse con resultados aceptados por la comunidad.
 - La mejora declarada en AIME 2025 (87.5%) es inconsistente con la puntuacion de 0.550 en "Math Reasoning" de la tabla de benchmarks, lo que genera dudas sobre la fiabilidad de los datos.
 - No se especifican los idiomas soportados, a pesar de que la model card incluye tareas como traduccion.
@@ -127,7 +127,7 @@ No se han identificado modelos comparables a partir de la informacion disponible
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asfafq3f/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/asfafq3f/MyAwesomeModel-TestRepository
 - Repositorio de codigo: no encontrado (la model card menciona "PLEASE refer to our code repository" sin proporcionar URL)
 - Sitio web / plataforma API: no encontrado (la model card menciona "official website" sin enlace)
 - Paper: no disponible

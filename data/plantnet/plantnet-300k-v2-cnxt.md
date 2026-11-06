@@ -85,8 +85,8 @@ No se dispone en la información proporcionada de resultados de otros modelos so
 
 | Modelo | Parametros | Contexto/entrada | Accuracy test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PlantNet/plantnet-300k-v2-cnxt | no disponible (~28 M, familia ConvNeXt-Tiny) | 224 × 224 RGB | 0,8216 | dinov3-license (gated) | HuggingFace, pesos `model.pth` |
-| facebook/dinov3-convnext-tiny-pretrain-lvd1689m | no disponible | 224 × 224 RGB (preentrenamiento) | no aplica (sin cabezal de 1.000 clases) | dinov3-license (gated) | HuggingFace |
+| PlantNet/plantnet-300k-v2-cnxt | no disponible (~28 M, familia ConvNeXt-Tiny) | 224 × 224 RGB | 0,8216 | dinov3-license (gated) | Hugging Face, pesos `model.pth` |
+| facebook/dinov3-convnext-tiny-pretrain-lvd1689m | no disponible | 224 × 224 RGB (preentrenamiento) | no aplica (sin cabezal de 1.000 clases) | dinov3-license (gated) | Hugging Face |
 | Pl@ntNet-300K (dataset) | no aplica | imágenes de plantas | no aplica | según Zenodo | Zenodo |
 
 No disponible para el resto de alternativas comparables.

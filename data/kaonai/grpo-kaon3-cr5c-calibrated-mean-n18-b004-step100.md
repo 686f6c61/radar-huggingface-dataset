@@ -69,4 +69,4 @@ No disponible. No se han publicado resultados de benchmarks ni información sufi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kaonai/grpo-kaon3-cr5c-calibrated-mean-n18-b004-step100
+- Hugging Face: https://huggingface.co/kaonai/grpo-kaon3-cr5c-calibrated-mean-n18-b004-step100

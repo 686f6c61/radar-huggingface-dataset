@@ -75,7 +75,7 @@ No se proporcionan datos comparativos con otros modelos en la información dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/angelhd25/ull-ai-image-detector
+- Hugging Face: https://huggingface.co/angelhd25/ull-ai-image-detector
 - Repositorio de la extensión: https://github.com/angelhd1999/ullExtension
 - Paper del modelo base: https://arxiv.org/abs/2411.04125
-- Modelo base en HuggingFace: https://huggingface.co/OwensLab/commfor-model-384
+- Modelo base en Hugging Face: https://huggingface.co/OwensLab/commfor-model-384

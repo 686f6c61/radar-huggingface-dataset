@@ -72,14 +72,14 @@ Nota: la comparativa se centra en alternativas de enrutamiento o en el modelo ba
 - Sesgos conocidos: no disponible. Al heredar de Qwen2.5-1.5B-Instruct, puede arrastrar los sesgos de sus datos de preentrenamiento y fine-tuning.
 - Riesgo de alucinación: bajo en su tarea principal (seleccionar entre opciones dadas), pero no es un generador de conocimiento; usarlo para generación de texto general no es su propósito y la model card advierte expresamente: "Routing model. Evaluate before use".
 - Limitaciones de idioma y contexto: no documentadas en la información disponible; la longitud de contexto efectiva del router no se especifica en la model card.
-- Restricciones de licencia: se distribuye bajo la Katanemo Research License ("other" en HuggingFace), no bajo una licencia permisiva estándar. Es imprescindible revisar los términos antes de cualquier uso comercial; puede estar restringido a investigación.
+- Restricciones de licencia: se distribuye bajo la Katanemo Research License ("other" en Hugging Face), no bajo una licencia permisiva estándar. Es imprescindible revisar los términos antes de cualquier uso comercial; puede estar restringido a investigación.
 - Es una cuantización de terceros (tinyopsec), no el release oficial de Katanemo: verificar la fidelidad de las cuantizaciones (especialmente Q3 y Q2_K, que degradan más) antes de producción.
 - Las cuantizaciones agresivas (Q2_K, Q3_K_S) pueden reducir la precisión del enrutamiento; la propia model card recomienda Q4_K_M como variante por defecto.
 - El modelo depende del formato del prompt con el catálogo de modelos candidatos; cambios en ese formato pueden degradar su comportamiento sin documentación que lo avise.
 
 ## Enlaces
 
-- Repositorio en HuggingFace (esta ficha): https://huggingface.co/tinyopsec/Arch-Router-1.5B-GGUF
+- Repositorio en Hugging Face (esta ficha): https://huggingface.co/tinyopsec/Arch-Router-1.5B-GGUF
 - Modelo original (referenciado en la model card): https://huggingface.co/katanemo/Arch-Router-1.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Paper, blog oficial y demos: no disponibles en la información proporcionada.

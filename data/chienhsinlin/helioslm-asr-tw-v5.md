@@ -74,9 +74,9 @@ No se han publicado resultados de MMLU, HumanEval ni GSM8K, ya que el modelo no 
 
 | Modelo | Parámetros | Idiomas objetivo | CER zh-TW (CV 27) | CER nan-tw (CV 27, han) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HeliosLM ASR TW v5 | 1,55B | zh-TW, nan | 5,10 | 38,15 | Apache-2.0 | HuggingFace (transformers) |
-| openai/whisper-large-v3 | 1,55B | 99 idiomas (incl. zh, nan no especializado) | 15,25 | 231,13 | Apache-2.0 | HuggingFace, múltiples runtimes |
-| Whisper large-v3-turbo | 809M | 99 idiomas | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| HeliosLM ASR TW v5 | 1,55B | zh-TW, nan | 5,10 | 38,15 | Apache-2.0 | Hugging Face (transformers) |
+| openai/whisper-large-v3 | 1,55B | 99 idiomas (incl. zh, nan no especializado) | 15,25 | 231,13 | Apache-2.0 | Hugging Face, múltiples runtimes |
+| Whisper large-v3-turbo | 809M | 99 idiomas | no disponible | no disponible | Apache-2.0 | Hugging Face |
 | Otros ASR especializados en chino taiwanés | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa con Whisper large-v3 es la más significativa: HeliosLM reduce el CER en zh-TW en más de 10 puntos absolutos y en nan-tw en casi 193 puntos, a costa de un ligero empeoramiento en FLEURS (0,21 puntos). No se dispone de datos sobre alternativas especializadas en min nan (por ejemplo, variantes de Whisper ajustadas por la comunidad) en la información proporcionada, por lo que no se puede establecer una comparativa completa.
@@ -95,7 +95,7 @@ La comparación directa con Whisper large-v3 es la más significativa: HeliosLM 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chienhsinlin/helioslm-asr-tw-v5
+- Modelo en Hugging Face: https://huggingface.co/chienhsinlin/helioslm-asr-tw-v5
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Modelo conversacional del mismo ecosistema: https://huggingface.co/chienhsinlin/helioslm-chat-e4b
 - Mozilla Common Voice: https://commonvoice.mozilla.org/

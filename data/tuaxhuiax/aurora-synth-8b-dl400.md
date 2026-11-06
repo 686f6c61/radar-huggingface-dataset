@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aurora-Synth-8B-dl400 es un ajuste fino (fine-tune) del modelo Qwen2.5-Coder-7B publicado por el usuario TUaxhuiax en HuggingFace. Segun la model card, se trata de un modelo de 8B parametros orientado a instrucciones, derivado del Coder-7B de Qwen y afinado adicionalmente sobre datos de "rationale synthesis" (sintesis de razonamientos). Su proposito declarado es generar trazas de razonamiento paso a paso para ejercicios de codigo dentro del pipeline de datos del proyecto Aurora.
+Aurora-Synth-8B-dl400 es un ajuste fino (fine-tune) del modelo Qwen2.5-Coder-7B publicado por el usuario TUaxhuiax en Hugging Face. Segun la model card, se trata de un modelo de 8B parametros orientado a instrucciones, derivado del Coder-7B de Qwen y afinado adicionalmente sobre datos de "rationale synthesis" (sintesis de razonamientos). Su proposito declarado es generar trazas de razonamiento paso a paso para ejercicios de codigo dentro del pipeline de datos del proyecto Aurora.
 
 El modelo se distribuye bajo licencia Apache-2.0 y es compatible con la libreria transformers, ademas de estar marcado como compatible con endpoints. La informacion publica es muy limitada: no hay datos sobre composicion del dataset de ajuste, numero de tokens de entrenamiento, benchmarks ni idiomas soportados. El nombre incluye el sufijo "dl400", que no se explica en la model card.
 
@@ -84,5 +84,5 @@ La comparacion con benchmarks no es posible porque el autor no publica resultado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TUaxhuiax/Aurora-Synth-8B-dl400
+- Hugging Face: https://huggingface.co/TUaxhuiax/Aurora-Synth-8B-dl400
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B

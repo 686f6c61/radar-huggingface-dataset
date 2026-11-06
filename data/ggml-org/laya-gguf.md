@@ -4,7 +4,7 @@
 
 Laya-GGUF es la conversion a formato GGUF del modelo Laya, desarrollado originalmente por ConvAI Innovations (convaiinnovations/laya) y empaquetado por el equipo de ggml-org para su ejecucion en el ecosistema llama.cpp. No se trata de un modelo generativo al uso: la propia model card lo describe como un "decision model" (modelo de decision) pensado para consumirse a traves del endpoint `/v1/systemone`, lo que lo situa en la categoria de los denominados modelos de sistema 1, orientados a producir decisiones tipadas de baja latencia en lugar de texto libre.
 
-El modelo base tiene 421.029.889 parametros (unos 421 millones) y se distribuye bajo licencia Apache 2.0. Su pipeline declarado en HuggingFace es `text-classification`, con etiquetas adicionales de `feature-extraction` y `decision-model`, lo que refuerza la idea de que su salida es una clasificacion o decision estructurada, no una generacion autoregresiva convencional. El repositorio GGUF ocupa 1,3 GB, un tamano que sugiere la presencia de varias cuantizaciones o de pesos en precision relativamente alta para un modelo de este tamano.
+El modelo base tiene 421.029.889 parametros (unos 421 millones) y se distribuye bajo licencia Apache 2.0. Su pipeline declarado en Hugging Face es `text-classification`, con etiquetas adicionales de `feature-extraction` y `decision-model`, lo que refuerza la idea de que su salida es una clasificacion o decision estructurada, no una generacion autoregresiva convencional. El repositorio GGUF ocupa 1,3 GB, un tamano que sugiere la presencia de varias cuantizaciones o de pesos en precision relativamente alta para un modelo de este tamano.
 
 La relevancia de esta publicacion es sobre todo de infraestructura: forma parte del esfuerzo por integrar modelos de decision en llama.cpp (PR 29818) y en el runtime alternativo ggmlc, que aporta un ejecutable sin dependencias para servirlo de forma compatible con clientes tipados. Para desarrolladores que necesiten clasificacion o enrutamiento de decisiones en local y con requisitos de latencia estrictos, es una pieza a considerar dentro de un ecosistema que hasta ahora estaba dominado por LLM generativos. La informacion publica disponible es, no obstante, muy escasa en cuanto a detalles de entrenamiento, contexto e idiomas.
 
@@ -31,8 +31,8 @@ Tampoco hay datos publicos sobre volumen de tokens de entrenamiento, composicion
 
 - Clasificacion y decision tipada: el modelo esta disenado para emitir decisiones estructuradas de sistema 1, no texto libre, y se invoca a traves de la API `/v1/systemone`.
 - Extraccion de caracteristicas: la etiqueta `feature-extraction` sugiere que puede emplearse para obtener embeddings o representaciones internas reutilizables por otros componentes.
-- Text classification: pipeline declarado en HuggingFace, apto para tareas de categorizacion y enrutamiento.
-- Compatibilidad con endpoints: etiqueta `endpoints_compatible`, lo que indica que puede desplegarse tras una API estandar del ecosistema HuggingFace.
+- Text classification: pipeline declarado en Hugging Face, apto para tareas de categorizacion y enrutamiento.
+- Compatibilidad con endpoints: etiqueta `endpoints_compatible`, lo que indica que puede desplegarse tras una API estandar del ecosistema Hugging Face.
 - Ejecucion local en CPU: al distribuirse en GGUF, esta pensado para inferencia en hardware modesto sin GPU dedicada.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible (el enfoque es de decision de un solo paso, "system-1").
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ggml-org/Laya-GGUF | 421 M (modelo base) | No disponible | Modelo de decision / clasificacion (sistema 1) | Apache 2.0 | GGUF en HuggingFace |
-| ggml-org/tinylaya-for-testing-gguf | 89,7 M | No disponible | Slice de pruebas, misma familia | Apache 2.0 (heredada) | GGUF en HuggingFace; salidas sin sentido, solo para pruebas |
+| ggml-org/Laya-GGUF | 421 M (modelo base) | No disponible | Modelo de decision / clasificacion (sistema 1) | Apache 2.0 | GGUF en Hugging Face |
+| ggml-org/tinylaya-for-testing-gguf | 89,7 M | No disponible | Slice de pruebas, misma familia | Apache 2.0 (heredada) | GGUF en Hugging Face; salidas sin sentido, solo para pruebas |
 | Jev | No disponible | No disponible | Modelo de decision de sistema 1, alternativa que Laya pretende sustituir | No disponible | No disponible |
 | Alternativas generativas de ~400 M (p. ej. variantes tipo Qwen, Gemma o Phi de ese orden) | ~400 M | No disponible | LLM generativo | Variable | No verificable con la informacion aportada |
 
@@ -92,11 +92,11 @@ La comparacion cuantitativa con alternativas directas no es posible: no hay benc
 - Advertencia del slice de pruebas: `tinylaya-for-testing` genera salidas sin sentido semantico; usarlo en produccion o para evaluar calidad es un error.
 - Restricciones de licencia: Apache 2.0 permite uso comercial y modificacion, pero conviene verificar las condiciones del modelo base `convaiinnovations/laya` y de los pesos originales antes de desplegarlo en produccion.
 - Madurez: el repositorio tiene 0 descargas y la integracion en llama.cpp se apoya en un PR concreto y en un runtime alternativo (ggmlc), por lo que el soporte puede cambiar y conviene fijar versiones.
-- Metadatos incompletos: la ficha de HuggingFace no declara idiomas, y el autor del modelo original no aparece como responsable de esta conversion, que es automatica.
+- Metadatos incompletos: la ficha de Hugging Face no declara idiomas, y el autor del modelo original no aparece como responsable de esta conversion, que es automatica.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ggml-org/Laya-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ggml-org/Laya-GGUF
 - Modelo base original: https://huggingface.co/convaiinnovations/laya
 - Slice de pruebas: https://huggingface.co/ggml-org/tinylaya-for-testing-gguf
 - Conversion alternativa a GGUF: https://huggingface.co/ZeroDegress/laya-gguf

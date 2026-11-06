@@ -54,5 +54,5 @@ No disponible. No se conocen modelos comparables dentro de la misma categoria po
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Dragonair
+- Hugging Face: https://huggingface.co/Ryanham1lton/Dragonair
 - Perfil del autor: https://huggingface.co/Ryanham1lton

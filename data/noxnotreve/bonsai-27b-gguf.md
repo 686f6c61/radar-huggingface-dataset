@@ -90,8 +90,8 @@ La comparativa se basa en la familia Bonsai del mismo autor; no se dispone de da
 
 ## Enlaces
 
-- Repositorio HuggingFace (NoxNotreve): https://huggingface.co/NoxNotreve/Bonsai-27B-gguf
-- Repositorio HuggingFace (prism-ml): https://huggingface.co/prism-ml/Bonsai-27B-gguf
+- Repositorio Hugging Face (NoxNotreve): https://huggingface.co/NoxNotreve/Bonsai-27B-gguf
+- Repositorio Hugging Face (prism-ml): https://huggingface.co/prism-ml/Bonsai-27B-gguf
 - Coleccion Bonsai 27B: https://huggingface.co/collections/prism-ml/bonsai-27b
 - Whitepaper (PDF): https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-27b-whitepaper.pdf
 - Demo y ejemplos: https://github.com/PrismML-Eng/Bonsai-demo

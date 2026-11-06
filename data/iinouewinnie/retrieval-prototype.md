@@ -2,7 +2,7 @@
 
 ## Resumen
 
-retrieval-prototype es un repositorio publicado por el usuario Iinouewinnie en HuggingFace que contiene una implementación de un "Tiny Transformer" orientado a tareas de recuperación (retrieval), acompañada de un fichero de configuración, una receta de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors. No se trata de un modelo entrenado ni validado, sino de un punto de partida reproducible: el propio autor indica explícitamente que el checkpoint sirve para pruebas de humo (smoke tests) y no se presenta como un modelo con resultados de referencia.
+retrieval-prototype es un repositorio publicado por el usuario Iinouewinnie en Hugging Face que contiene una implementación de un "Tiny Transformer" orientado a tareas de recuperación (retrieval), acompañada de un fichero de configuración, una receta de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors. No se trata de un modelo entrenado ni validado, sino de un punto de partida reproducible: el propio autor indica explícitamente que el checkpoint sirve para pruebas de humo (smoke tests) y no se presenta como un modelo con resultados de referencia.
 
 El modelo es extremadamente pequeño: 33.088 parámetros totales, según los metadatos reales del fichero safetensors. Incorpora decisiones arquitectónicas concretas, como atención multi-query (multi query attention), fusión tipo Tucker, activación approx gelu y normalización scalenorm. La receta de entrenamiento incluida usa el optimizador RMSProp con un schedule de tipo exponencial.
 
@@ -65,8 +65,8 @@ No se dispone de datos comparativos publicados. La única alternativa identifica
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Iinouewinnie/retrieval-prototype | 33.088 | no disponible | Apache-2.0 | HuggingFace | no publicado |
-| Iinouewinnie/poolformer-retrieval-2024 | no disponible | no disponible | no disponible | HuggingFace (mismo autor) | no disponible |
+| Iinouewinnie/retrieval-prototype | 33.088 | no disponible | Apache-2.0 | Hugging Face | no publicado |
+| Iinouewinnie/poolformer-retrieval-2024 | no disponible | no disponible | no disponible | Hugging Face (mismo autor) | no disponible |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -76,14 +76,14 @@ No se dispone de datos comparativos publicados. La única alternativa identifica
 - Riesgo de alucinación: no evaluable, ya que el modelo no es un modelo generativo entrenado y no se publican métricas de calidad.
 - Sin idiomas declarados: se desconoce el soporte multilingüe real.
 - Sin datos de longitud de contexto, lo que impide planificar escenarios que dependan de ventanas largas.
-- Implementación propia: las APIs de carga automática de HuggingFace necesitan un adaptador explícito, lo que añade trabajo de integración.
+- Implementación propia: las APIs de carga automática de Hugging Face necesitan un adaptador explícito, lo que añade trabajo de integración.
 - Confusión potencial con otros repositorios del mismo autor centrados en retrieval; conviene verificar el identificador exacto antes de reutilizar pesos.
 - Para uso comercial, la licencia Apache-2.0 es permisiva, pero el autor advierte de que los términos de los datos de origen de cualquier dataset externo deben revisarse por separado.
 - Las fechas de creación y actualización del repositorio son futuras respecto a la fecha de consulta, un dato anómalo que conviene tener en cuenta al citarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Iinouewinnie/retrieval-prototype
+- Modelo en Hugging Face: https://huggingface.co/Iinouewinnie/retrieval-prototype
 - Perfil del autor: https://huggingface.co/Iinouewinnie
 - Repositorio relacionado del mismo autor: https://huggingface.co/Iinouewinnie/poolformer-retrieval-2024
 - Encuesta sobre arquitecturas de Retrieval-Augmented Generation: https://arxiv.org/html/2506.00054v1

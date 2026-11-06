@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La bu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yor_icl_pi05_canonical_extended-step35000 (este) | no disponible | no disponible | no disponible | no disponible | publico en HuggingFace, 0 descargas, 0 likes |
-| lair-nyu/yor_icl_pi05_easy_pnp_v2_absolute_joint_sanity15k | no disponible | no disponible | no disponible | no disponible | publico en HuggingFace (citado en la model card) |
-| lair-nyu/yor_icl_pi05_canonical_sanity15k-step5000 | no disponible | no disponible | no disponible | no disponible | publico en HuggingFace (citado en la model card) |
+| yor_icl_pi05_canonical_extended-step35000 (este) | no disponible | no disponible | no disponible | no disponible | publico en Hugging Face, 0 descargas, 0 likes |
+| lair-nyu/yor_icl_pi05_easy_pnp_v2_absolute_joint_sanity15k | no disponible | no disponible | no disponible | no disponible | publico en Hugging Face (citado en la model card) |
+| lair-nyu/yor_icl_pi05_canonical_sanity15k-step5000 | no disponible | no disponible | no disponible | no disponible | publico en Hugging Face (citado en la model card) |
 | Brazos VICTR-retrieval 3-6 (sin nombre de repositorio) | no disponible | no disponible | no disponible | no disponible | no disponibles; solo se describen como brazos del mismo estudio |
 
 Los dos checkpoints hermanos comparten convencion de publicacion (solo `params/`, `assets/` y `_CHECKPOINT_METADATA`, sin `train_state/`), pero se desconoce el numero de pasos de entrenamiento del primero y el segundo corresponde al paso 5000 de un entrenamiento de sanity check. No se dispone de datos de rendimiento que permitan comparar la calidad de ninguno de ellos. No se identifican alternativas externas comparables en la informacion proporcionada.
@@ -77,7 +77,7 @@ Los dos checkpoints hermanos comparten convencion de publicacion (solo `params/`
 
 - Licencia no especificada: no se puede asumir uso comercial ni redistribucion; hay que contactar con el autor antes de cualquier despliegue productivo.
 - El checkpoint esta incompleto respecto a su objetivo de entrenamiento: paso 35000 de 50000. El propio autor advierte que el entrenamiento podria seguir en curso y que los pasos posteriores se subirian por separado.
-- No es autocontenido: cargarlo requiere el repositorio de entrenamiento `lim2045/icl_ws` (rama viktr) con la configuracion `yor_icl_pi05_canonical_extended` en `openpi/src/openpi/training/config.py`. El repositorio de HuggingFace solo contiene pesos y estadisticas de normalizacion, no la arquitectura ni las transformaciones de datos.
+- No es autocontenido: cargarlo requiere el repositorio de entrenamiento `lim2045/icl_ws` (rama viktr) con la configuracion `yor_icl_pi05_canonical_extended` en `openpi/src/openpi/training/config.py`. El repositorio de Hugging Face solo contiene pesos y estadisticas de normalizacion, no la arquitectura ni las transformaciones de datos.
 - Riesgo de alucinacion no evaluado y, en general, no aplicable de la misma forma que en modelos de lenguaje; el riesgo equivalente es la generacion de acciones fisicamente invalidas o inseguras, sin datos publicados al respecto.
 - Distribucion de entrenamiento limitada: 20 tareas y 1186 episodios, recortados de un conjunto de 31 tareas y 1784 episodios. La generalizacion fuera de ese dominio no esta caracterizada.
 - El estado no incluye la pinza, ni la elevacion, ni la base: la politica no observa el estado de agarre, lo que puede degradar tareas que requieran realimentacion del contacto.
@@ -89,7 +89,7 @@ Los dos checkpoints hermanos comparten convencion de publicacion (solo `params/`
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lair-nyu/yor_icl_pi05_canonical_extended-step35000
+- Hugging Face: https://huggingface.co/lair-nyu/yor_icl_pi05_canonical_extended-step35000
 - Checkpoint hermano: https://huggingface.co/lair-nyu/yor_icl_pi05_easy_pnp_v2_absolute_joint_sanity15k
 - Checkpoint hermano: https://huggingface.co/lair-nyu/yor_icl_pi05_canonical_sanity15k-step5000
 - Repositorio de entrenamiento citado: `lim2045/icl_ws` (rama viktr); la model card no incluye URL completa

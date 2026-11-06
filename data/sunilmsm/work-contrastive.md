@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sunilmsm/work-contrastive` es un repositorio de HuggingFace que contiene una implementación funcional de un Perceiver orientada a aprendizaje contrastivo, publicada por el usuario sunilmsm bajo licencia MIT. No es un modelo entrenado: el propio autor describe `model.safetensors` como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y declara de forma explícita que no reclama ninguna métrica de benchmark.
+`sunilmsm/work-contrastive` es un repositorio de Hugging Face que contiene una implementación funcional de un Perceiver orientada a aprendizaje contrastivo, publicada por el usuario sunilmsm bajo licencia MIT. No es un modelo entrenado: el propio autor describe `model.safetensors` como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y declara de forma explícita que no reclama ninguna métrica de benchmark.
 
 El interés técnico reside en el código y en la configuración, no en los pesos. El repositorio incluye `main.py` (implementación y punto de entrada ejecutable), `config.json` (ajustes de arquitectura), `training_args.json` (receta de experimento por defecto: optimizador Adafactor con schedule exponencial) y el checkpoint en safetensors. La configuración declarada combina atención flash, fusión bilineal, activación gelu-tanh y normalización LayerNorm, con una escala nominal "giant".
 
@@ -23,7 +23,7 @@ Existe una discrepancia relevante: el recuento real de parámetros del safetenso
 | Funcion de activacion | gelu tanh |
 | Normalizacion | LayerNorm |
 | Optimizador por defecto | Adafactor con schedule exponencial |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0.0 GB |
 
@@ -52,7 +52,7 @@ No hay evidencia de entrenamiento completado. El autor indica que `training_args
 - Docencia y formación interna: ejemplo didáctico y ejecutable de cross-attention a un array latente y de fusión bilineal, con un punto de entrada (`python main.py --help`) que permite inspeccionar el flujo completo.
 - Punto de partida para fine-tuning con datos propios: inicializar desde el checkpoint y entrenar la cabeza contrastiva sobre un corpus específico del dominio, asumiendo que hay que aportar dataset, tokenizer y bucle de evaluación propios.
 - Trazabilidad de experimentos: conservar `config.json` y `training_args.json` junto a los logs y las versiones de entorno, de modo que cualquier resultado publicado sea atribuible a una configuración concreta.
-- Integración como componente de investigación: incorporar el módulo a un repositorio mayor mediante un adaptador explícito, sin depender de las APIs genéricas de HuggingFace.
+- Integración como componente de investigación: incorporar el módulo a un repositorio mayor mediante un adaptador explícito, sin depender de las APIs genéricas de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -97,14 +97,14 @@ Frente a las alternativas, la diferencia principal no es de rendimiento sino de 
 - Sin tokenizer ni idioma declarado: no es posible usar el modelo como procesador de lenguaje sin aportar un vocabulario y un pipeline propios.
 - Sin datos de entrenamiento documentados: no se puede evaluar la composición del corpus, la calidad de las etiquetas ni posibles sesgos.
 - Riesgo de alucinación: no aplica en sentido generativo, porque el modelo no genera texto; el riesgo equivalente es interpretar como capacidades lo que solo es una inicialización.
-- Carga no estándar: las APIs automáticas de HuggingFace fallarán; se requiere un adaptador explícito sobre `main.py`.
+- Carga no estándar: las APIs automáticas de Hugging Face fallarán; se requiere un adaptador explícito sobre `main.py`.
 - Licencia MIT para el código y los pesos, pero los términos de los datos de origen deben revisarse por separado si se usa con datasets externos, tal como advierte la model card.
 - No apto para producción: sin benchmarks, sin entrenamiento y sin garantías de reproducibilidad más allá de la prueba de humo.
 - La receta de `training_args.json` son valores de partida, no evidencia de una ejecución completada con resultados reproducibles.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sunilmsm/work-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/sunilmsm/work-contrastive
 - Implementación y punto de entrada: https://huggingface.co/sunilmsm/work-contrastive/blob/main/main.py
 - Configuración de arquitectura: https://huggingface.co/sunilmsm/work-contrastive/blob/main/config.json
 - Receta de entrenamiento por defecto: https://huggingface.co/sunilmsm/work-contrastive/blob/main/training_args.json

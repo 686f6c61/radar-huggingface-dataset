@@ -2,7 +2,7 @@
 
 ## Resumen
 
-My-Custom-bert-base-multilingual-cased es un ajuste fino (fine-tuning) del modelo google-bert/bert-base-multilingual-cased, publicado por el usuario shiva123782 en HuggingFace. Se trata de un modelo encoder-only de tipo BERT orientado a clasificación de texto (pipeline `text-classification`), con 177.854.978 parámetros reales declarados en los pesos safetensors y un repositorio de 1,4 GB. El entrenamiento se realizó con la librería Transformers mediante el `Trainer`, según la etiqueta `generated_from_trainer` de la model card.
+My-Custom-bert-base-multilingual-cased es un ajuste fino (fine-tuning) del modelo google-bert/bert-base-multilingual-cased, publicado por el usuario shiva123782 en Hugging Face. Se trata de un modelo encoder-only de tipo BERT orientado a clasificación de texto (pipeline `text-classification`), con 177.854.978 parámetros reales declarados en los pesos safetensors y un repositorio de 1,4 GB. El entrenamiento se realizó con la librería Transformers mediante el `Trainer`, según la etiqueta `generated_from_trainer` de la model card.
 
 La relevancia de este modelo es limitada y fundamentalmente instrumental: sirve como ejemplo de pipeline de ajuste fino sobre un backbone multilingüe consolidado, no como un modelo con capacidades nuevas. La model card es la plantilla autogenerada por el `Trainer` y no ha sido completada por el autor: no especifica el dataset de entrenamiento (aparece literalmente como `None`), no documenta las etiquetas de salida, no incluye métricas de evaluación y deja secciones enteras como "More information needed". El model-index no contiene resultados de benchmarks.
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la información disponible. El c
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| My-Custom-bert-base-multilingual-cased (este modelo) | 177,8 M | 512 tokens | Clasificación de texto (etiquetas no documentadas) | apache-2.0 | HuggingFace, 0 descargas |
-| google-bert/bert-base-multilingual-cased | 177,8 M | 512 tokens | Modelo base, ajustable a múltiples tareas | apache-2.0 | HuggingFace, ampliamente usado |
-| distilbert-base-multilingual-cased | 135,0 M | 512 tokens | Modelo base destilado, ajustable | apache-2.0 | HuggingFace, ampliamente usado |
-| xlm-roberta-base | 278,0 M | 512 tokens | Modelo base multilingüe (RoBERTa), ajustable | MIT | HuggingFace, ampliamente usado |
+| My-Custom-bert-base-multilingual-cased (este modelo) | 177,8 M | 512 tokens | Clasificación de texto (etiquetas no documentadas) | apache-2.0 | Hugging Face, 0 descargas |
+| google-bert/bert-base-multilingual-cased | 177,8 M | 512 tokens | Modelo base, ajustable a múltiples tareas | apache-2.0 | Hugging Face, ampliamente usado |
+| distilbert-base-multilingual-cased | 135,0 M | 512 tokens | Modelo base destilado, ajustable | apache-2.0 | Hugging Face, ampliamente usado |
+| xlm-roberta-base | 278,0 M | 512 tokens | Modelo base multilingüe (RoBERTa), ajustable | MIT | Hugging Face, ampliamente usado |
 
 La comparación de rendimiento no es posible: este ajuste no publica métricas, mientras que los modelos base de la comparativa se evalúan habitualmente sobre XNLI, MLQA o tareas GLUE. La diferencia relevante es de trazabilidad: los tres alternativos documentan su entrenamiento, su tokenizador y sus idiomas, y este ajuste no documenta ninguno de los tres.
 
@@ -100,7 +100,7 @@ La comparación de rendimiento no es posible: este ajuste no publica métricas, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shiva123782/My-Custom-bert-base-multilingual-cased
+- Modelo en Hugging Face: https://huggingface.co/shiva123782/My-Custom-bert-base-multilingual-cased
 - Modelo base: https://huggingface.co/bert-base-multilingual-cased
 - Modelo base (ruta canónica del autor): https://huggingface.co/google-bert/bert-base-multilingual-cased
 - Paper de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805

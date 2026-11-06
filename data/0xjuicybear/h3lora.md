@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `0xJuicybear/H3LoRA` es un repositorio publicado en HuggingFace por el usuario 0xJuicybear el 15 de agosto de 2026. La única información disponible en la model card es la licencia MIT, sin ningún otro detalle técnico. El repositorio tiene un tamaño de 5,0 GB, lo que sugiere que contiene pesos de un modelo o adaptador, pero no se especifica si se trata de un modelo completo, un LoRA o un adaptador de otro tipo.
+El modelo `0xJuicybear/H3LoRA` es un repositorio publicado en Hugging Face por el usuario 0xJuicybear el 15 de agosto de 2026. La única información disponible en la model card es la licencia MIT, sin ningún otro detalle técnico. El repositorio tiene un tamaño de 5,0 GB, lo que sugiere que contiene pesos de un modelo o adaptador, pero no se especifica si se trata de un modelo completo, un LoRA o un adaptador de otro tipo.
 
 A día de hoy no existe información pública sobre su arquitectura, parámetros, datos de entrenamiento o capacidades. El nombre "H3LoRA" podría sugerir un adaptador LoRA sobre una arquitectura H3 (una variante de atención), pero esto es una especulación y no está confirmado por ninguna fuente. Por tanto, esta ficha se limita a documentar la ausencia de datos y a advertir de que cualquier uso del modelo requerirá una evaluación directa por parte del desarrollador.
 
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables al no existir especificaciones 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0xJuicybear/H3LoRA
+- Repositorio Hugging Face: https://huggingface.co/0xJuicybear/H3LoRA

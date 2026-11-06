@@ -25,7 +25,7 @@ Su relevancia es de nicho pero concreta: demuestra que una prediccion de siguien
 | Dimension de la capa oculta | 1024 |
 | Tamano de fichero | 4.698.696 bytes (4,70 MB) |
 | Ponderacion del blend | lambda = 0,7 (modelo) frente a 0,3 (n-gramas); offset para palabras fuera del vocabulario del modelo = 0,0 |
-| Libreria / pipeline | `custom` / `text-generation` (etiqueta de HuggingFace; el uso real es prediccion de siguiente palabra) |
+| Libreria / pipeline | `custom` / `text-generation` (etiqueta de Hugging Face; el uso real es prediccion de siguiente palabra) |
 | Autor y fecha | Destin Moss (youcoded.ai), creado el 23 de octubre de 2026 |
 | Descargas / likes | 0 descargas, 1 like en el momento de la consulta |
 
@@ -81,7 +81,7 @@ Comparacion declarada por el autor frente a Gboard 14.2 (copia incluida en la im
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| youcoded/next-word-french | ~4,3 M (LSTM, int8, 4,70 MB) | Ultimas 20 palabras de la frase | 22,1 / 31,97 / 32,79 % de acierto en top 3 (mezclado con n-gramas) | ODC-BY 1.0 + CC-BY 2.0 FR | Pesos en HuggingFace, formato binario propio |
+| youcoded/next-word-french | ~4,3 M (LSTM, int8, 4,70 MB) | Ultimas 20 palabras de la frase | 22,1 / 31,97 / 32,79 % de acierto en top 3 (mezclado con n-gramas) | ODC-BY 1.0 + CC-BY 2.0 FR | Pesos en Hugging Face, formato binario propio |
 | Modelo de siguiente palabra de Gboard (Google, arXiv 2305.18465) | Misma clase de tamano segun el autor; cifra exacta no disponible | No disponible | Superior en las pruebas del autor solo en la comparacion con Gboard 14.2 en emulador: el modelo de youcoded queda 4,29-14,56 puntos por delante | Propietaria | No disponible (solo en la app) |
 | Modelos hermanos de youcoded (ingles, espanol, aleman) | No disponible en la informacion proporcionada; misma familia y mismo formato | 20 palabras (por coherencia de diseno, no confirmado en la informacion) | No disponible | No disponible | Publicados por el mismo autor; enlaces no incluidos en la informacion |
 | Modelos de siguiente palabra de FUTO Keyboard | No disponible | No disponible | No disponible | No disponible | Codigo abierto segun el contexto del proyecto; el autor declara no haber usado sus pesos ni datos |
@@ -99,14 +99,14 @@ No se dispone de datos publicos suficientes para comparar con alternativas abier
 - **Calibracion no garantizada**: el propio autor advierte que las probabilidades no estan calibradas entre contextos, por lo que no sirven como senal de confianza para moderacion ni para umbrales automaticos.
 - **Sesgos**: no se documenta ningun analisis de sesgo. Al entrenar sobre FineWeb-2 (texto web) y limitar el vocabulario a las palabras mas frecuentes, es esperable que herede la distribucion del corpus, con posible infrarrepresentacion de vocabulario regional, tecnico o de colectivos concretos. Los datos de Common Voice sugieren un rendimiento notablemente peor en habla cotidiana (22,1 %) que en texto web (31,97 %).
 - **Riesgo de alucinacion en sentido estricto**: no aplica (no genera texto), pero si puede producir sugerencias gramaticalmente plausibles y semanticamente erroneas, especialmente en frases largas o fuera de dominio.
-- **Licencia con obligaciones**: ODC-BY 1.0 y CC-BY 2.0 FR exigen atribucion; hay que revisar `NOTICE.md` antes de redistribuir o integrar en un producto comercial. La etiqueta de HuggingFace es `other`, no una licencia estandar de modelo.
+- **Licencia con obligaciones**: ODC-BY 1.0 y CC-BY 2.0 FR exigen atribucion; hay que revisar `NOTICE.md` antes de redistribuir o integrar en un producto comercial. La etiqueta de Hugging Face es `other`, no una licencia estandar de modelo.
 - **Formato cerrado a efectos practicos**: al no haber conversion publicada a GGUF ni a safetensors, la integracion exige portar el cargador binario o reimplementarlo, con el riesgo de error en el orden de tensores y en el manejo de escalas int8 por fila.
 - **Comparacion con Gboard no equivalente**: se hizo contra una copia en emulador, con el aprendizaje desactivado y sin versiones mas recientes ni estados de aprendizaje del usuario. No debe citarse como superioridad general frente a Gboard.
 - **Madurez**: 0 descargas y 1 like en el momento de la consulta, creado y actualizado el mismo dia; el codigo vive en una rama de desarrollo (`feature/179-engine-in-keyboard`) pendiente de fusion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/youcoded/next-word-french
+- Modelo en Hugging Face: https://huggingface.co/youcoded/next-word-french
 - Metodologia de medida (METHODS.md): https://huggingface.co/youcoded/next-word-french/blob/main/METHODS.md
 - Aviso de licencia y atribucion (NOTICE.md): https://huggingface.co/youcoded/next-word-french/blob/main/NOTICE.md
 - Codigo, scripts y pruebas (rama de desarrollo del teclado): https://github.com/itsdestin/swipe-keyboard/tree/feature/179-engine-in-keyboard

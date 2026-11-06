@@ -91,7 +91,7 @@ La comparativa muestra que esta versión de 512 GB ofrece aproximadamente el dob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hellohazime/Qwen3.8-2.4T-A95B-REAP-512GB-GGUF
+- Modelo en Hugging Face: https://huggingface.co/hellohazime/Qwen3.8-2.4T-A95B-REAP-512GB-GGUF
 - Hermano de 256 GB: https://huggingface.co/hellohazime/Qwen3.8-2.4T-A95B-REAP-256GB-GGUF
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3.8-2.4T-A95B-GGUF
 - Modelo original (Qwen): https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B

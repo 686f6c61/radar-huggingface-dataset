@@ -78,7 +78,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 | Modelo | Parámetros | Contexto | Aceptación del borrador | Tokens de salida por verificación | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| GLM-5.2-DFlash2-B12 (esta versión) | 2,29B | 8.192 | 17,0767% | 2,8670 | No disponible | HuggingFace, 0 descargas |
+| GLM-5.2-DFlash2-B12 (esta versión) | 2,29B | 8.192 | 17,0767% | 2,8670 | No disponible | Hugging Face, 0 descargas |
 | Checkpoint local previo | No disponible | No disponible | 17,1485% | 2,8739 | No disponible | No público |
 | Otros borradores de decodificación especulativa (EAGLE, Medusa, DFlash original, etc.) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/m8than/GLM-5.2-DFlash2-B12
+- Modelo en Hugging Face: https://huggingface.co/m8than/GLM-5.2-DFlash2-B12
 - Modelo base / donante del backbone: https://huggingface.co/SubconsciousDev/glm-5.2-fp8-dflash-v2
 - Modelo objetivo (no incluido): https://huggingface.co/zai-org/GLM-5.2-FP8
 - Ficheros de métricas y metadatos citados por el autor: `metrics.json` y `training_metadata.json` en el repositorio del modelo

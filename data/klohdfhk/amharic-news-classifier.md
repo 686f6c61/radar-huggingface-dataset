@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `klohdfhk/amharic-news-classifier` es un clasificador de texto para noticias en amharico (idioma oficial de Etiopia) que asigna cada articulo a una de seis categorias tematicas: business, entertainment, national_news, politics, sports y world_news. Lo desarrolla el usuario de HuggingFace klohdfhk y se distribuye como un fine-tuning del modelo multilingue AfroXLMR-mini, con 117,6 millones de parametros y un repositorio de 0,5 GB. Su relevancia es acotada y de caracter experimental: el propio autor lo describe como un artefacto de benchmark, no como el mejor clasificador disponible para esta tarea.
+El modelo `klohdfhk/amharic-news-classifier` es un clasificador de texto para noticias en amharico (idioma oficial de Etiopia) que asigna cada articulo a una de seis categorias tematicas: business, entertainment, national_news, politics, sports y world_news. Lo desarrolla el usuario de Hugging Face klohdfhk y se distribuye como un fine-tuning del modelo multilingue AfroXLMR-mini, con 117,6 millones de parametros y un repositorio de 0,5 GB. Su relevancia es acotada y de caracter experimental: el propio autor lo describe como un artefacto de benchmark, no como el mejor clasificador disponible para esta tarea.
 
 La model card es inusualmente honesta y documenta que el transformer queda por detras de las lineas base clasicas de TF-IDF combinado con LinearSVC. Sobre el conjunto de test de 10.179 ejemplos, el modelo alcanza un macro-F1 de 0,581 frente al 0,784 de la mejor linea base clasica, con un recall de apenas el 10,4% en la clase national_news. Es, por tanto, un ejemplo de publicacion de investigacion con evaluacion rigurosa y limites explicitos, mas que una herramienta lista para produccion.
 
@@ -73,9 +73,9 @@ Metricas adicionales del transformer en test: accuracy 0,555; macro-F1 0,581 (in
 
 | Modelo | Parametros | Contexto | Macro-F1 test (misma tarea) | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| klohdfhk/amharic-news-classifier | 117,6M | 192 subtokens | 0,581 | CC BY 4.0 | HuggingFace (sin Space) |
+| klohdfhk/amharic-news-classifier | 117,6M | 192 subtokens | 0,581 | CC BY 4.0 | Hugging Face (sin Space) |
 | word_char_tfidf_linear_svc (linea base clasica) | no aplica | no aplica | 0,784 | no aplica | codigo en el repositorio |
-| Davlan/afro-xlmr-mini (modelo base) | 117,6M | no disponible | no disponible (sin fine-tuning) | MIT | HuggingFace |
+| Davlan/afro-xlmr-mini (modelo base) | 117,6M | no disponible | no disponible (sin fine-tuning) | MIT | Hugging Face |
 
 La comparativa directa con otros transformers especializados en clasificacion de noticias en amharico no esta disponible en la informacion proporcionada. El dato mas relevante es que la linea base clasica supera al transformer en 20 puntos de macro-F1 sobre el mismo conjunto de test.
 
@@ -94,7 +94,7 @@ La comparativa directa con otros transformers especializados en clasificacion de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/klohdfhk/amharic-news-classifier
+- Modelo en Hugging Face: https://huggingface.co/klohdfhk/amharic-news-classifier
 - Codigo fuente: https://github.com/bereket74/amharic-news-classifier
 - Modelo base: https://huggingface.co/Davlan/afro-xlmr-mini
 - Dataset: https://huggingface.co/datasets/israel/Amharic-News-Text-classification-Dataset

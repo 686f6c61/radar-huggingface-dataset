@@ -68,8 +68,8 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Parámetros | Contexto | CER (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-trocrsmall-photo3-s42 | 22,4 M | no disponible | 0,2031 | MIT | HuggingFace |
-| Otras variantes de `htr-metrics-transfer` | no disponible | no disponible | no disponible | MIT (presumible) | HuggingFace (cyttic) |
+| cyttic/hmt-trocrsmall-photo3-s42 | 22,4 M | no disponible | 0,2031 | MIT | Hugging Face |
+| Otras variantes de `htr-metrics-transfer` | no disponible | no disponible | no disponible | MIT (presumible) | Hugging Face (cyttic) |
 | Modelos HTR genéricos (p. ej. TrOCR) | no disponible en esta ficha | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos comparativos suficientes para establecer una comparación rigurosa con alternativas de la misma categoría.
@@ -86,7 +86,7 @@ No se dispone de datos comparativos suficientes para establecer una comparación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-trocrsmall-photo3-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-trocrsmall-photo3-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados detallados: `results.json` (referenciado en la model card, no se proporciona URL directa)
 - Repositorio del estudio `htr-metrics-transfer`: no disponible

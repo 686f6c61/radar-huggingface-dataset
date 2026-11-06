@@ -89,7 +89,7 @@ No se dispone de datos de otros modelos de la misma categoría (MoE de ~25 B con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baa-ai/Gemma-4-26B-A4B-it-RAM-13GB-MLX
+- Modelo en Hugging Face: https://huggingface.co/baa-ai/Gemma-4-26B-A4B-it-RAM-13GB-MLX
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Variante RAM 14GB (con visión): https://huggingface.co/baa-ai/Gemma-4-26B-A4B-it-RAM-14GB-MLX
 - Sitio del autor: https://baa.ai

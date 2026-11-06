@@ -83,5 +83,5 @@ El Delta Ultra Mini 1.2 es significativamente más pequeño que estas alternativ
 
 ## Enlaces
 
-- [HuggingFace - PyraLabs/Coming-Soon-Delta-Ultra-Mini-1.2](https://huggingface.co/PyraLabs/Coming-Soon-Delta-Ultra-Mini-1.2)
+- [Hugging Face - PyraLabs/Coming-Soon-Delta-Ultra-Mini-1.2](https://huggingface.co/PyraLabs/Coming-Soon-Delta-Ultra-Mini-1.2)
 - [The Delta Dataset (GitHub)](https://github.com/Flame-FlareAI/The-Delta-Dataset)

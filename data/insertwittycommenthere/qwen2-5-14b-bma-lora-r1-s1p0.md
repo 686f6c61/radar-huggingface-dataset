@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `InsertWittyCommentHere/qwen2.5-14b-bma-lora-r1-s1p0` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `InsertWittyCommentHere`. Su nombre sugiere que se trata de un ajuste fino de bajo rango sobre el modelo base Qwen2.5-14B, aunque no se proporciona ninguna documentación, métricas o detalles de entrenamiento en la model card, que está completamente vacía y generada automáticamente por la plantilla de HuggingFace. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos descargables o que el adaptador es extremadamente pequeño, y no registra descargas ni valoraciones.
+El modelo `InsertWittyCommentHere/qwen2.5-14b-bma-lora-r1-s1p0` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `InsertWittyCommentHere`. Su nombre sugiere que se trata de un ajuste fino de bajo rango sobre el modelo base Qwen2.5-14B, aunque no se proporciona ninguna documentación, métricas o detalles de entrenamiento en la model card, que está completamente vacía y generada automáticamente por la plantilla de Hugging Face. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos descargables o que el adaptador es extremadamente pequeño, y no registra descargas ni valoraciones.
 
 A falta de cualquier dato fiable, este modelo debe considerarse experimental y no apto para uso en producción. La única información disponible es su nombre, que apunta a una adaptación LoRA del modelo Qwen2.5-14B, y los tags técnicos (`transformers`, `safetensors`, `endpoints_compatible`). No se puede determinar su propósito, rendimiento ni licencia.
 
@@ -66,7 +66,7 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: [InsertWittyCommentHere/qwen2.5-14b-bma-lora-r1-s1p0](https://huggingface.co/InsertWittyCommentHere/qwen2.5-14b-bma-lora-r1-s1p0)
+- Página del modelo en Hugging Face: [InsertWittyCommentHere/qwen2.5-14b-bma-lora-r1-s1p0](https://huggingface.co/InsertWittyCommentHere/qwen2.5-14b-bma-lora-r1-s1p0)
 - Modelo base Qwen2.5-14B: [Qwen/Qwen2.5-14B](https://huggingface.co/Qwen/Qwen2.5-14B)
 - Modelo base instructivo Qwen2.5-14B-Instruct: [Qwen/Qwen2.5-14B-Instruct](https://huggingface.co/Qwen/Qwen2.5-14B-Instruct)
 - Documentación de Qwen2.5 en GitHub: [mx4ai/qwen2.5](https://github.com/mx4ai/qwen2.5)

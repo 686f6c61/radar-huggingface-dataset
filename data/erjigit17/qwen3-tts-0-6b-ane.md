@@ -22,7 +22,7 @@ Su relevancia actual es doble: por un lado demuestra que un modelo TTS de 0,6B p
 | Formato de pesos | Grafos Core ML generados con coremltools; no se distribuyen pesos en safetensors ni GGUF segun la informacion disponible |
 | Frecuencia de muestreo de salida | 24 kHz, mono, PCM16 |
 | Tamano de fragmento de audio | 80 ms por chunk |
-| Tamano del repositorio | 2,2 GB en HuggingFace; descarga completa aproximada de 3,96 GB |
+| Tamano del repositorio | 2,2 GB en Hugging Face; descarga completa aproximada de 3,96 GB |
 | Modelo base | Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice (revision 85e237c12c027371202489a0ec509ded67b5e4b5) |
 | Plataforma de ejecucion | Apple Silicon con Neural Engine (Core ML); probado en macOS 26.5, Xcode 27 y Core ML Tools 9.0 |
 
@@ -76,7 +76,7 @@ La carga del modelo, la compilacion de Core ML y el inicio audible de la voz que
 
 - Plataforma obligatoria: Apple Silicon. El proyecto requiere, ademas, Python 3.12 y las herramientas de linea de comandos de Xcode.
 - Memoria: no se especifica un minimo de memoria unificada; las pruebas se hicieron en un MacBook Air M4 con 32 GB. El proceso Python del host consume aproximadamente 385 MiB de RSS tras una peticion completa, sin contar las asignaciones gestionadas por Core ML/ANE ni la cache compilada en disco.
-- Almacenamiento: 2,2 GB de repositorio en HuggingFace y aproximadamente 3,96 GB de descarga completa con grafos, tokenizador, tablas, servidor, cliente y muestra.
+- Almacenamiento: 2,2 GB de repositorio en Hugging Face y aproximadamente 3,96 GB de descarga completa con grafos, tokenizador, tablas, servidor, cliente y muestra.
 - GPU: no se utiliza GPU dedicada; el calculo neuronal va a la Neural Engine. No hay soporte documentado para CUDA ni para GPU de NVIDIA o AMD.
 - Cabe en hardware de consumo: si, en cualquier Mac con chip de la familia M que cumpla los requisitos de software, aunque el rendimiento solo se ha certificado en el M4 probado y no en otros chips, modos de energia o cargas concurrentes.
 - Opciones de despliegue: servidor gRPC propio (`serve.py`) mas cliente (`client.py`), sobre Core ML y coremltools. No hay soporte indicado para vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje.
@@ -86,8 +86,8 @@ La carga del modelo, la compilacion de Core ML y el inicio audible de la voz que
 
 | Modelo | Parametros | Contexto | Plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| erjigit17/Qwen3-TTS-0.6B-ANE | 0,6B (segun modelo base) | No disponible | Core ML sobre ANE (Apple Silicon) | Apache-2.0 | HuggingFace, port no oficial, 0 descargas y 1 like en el momento de la consulta |
-| Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice (modelo base) | 0,6B | No disponible | PyTorch (upstream) | Apache-2.0 | Modelo oficial de Qwen en HuggingFace |
+| erjigit17/Qwen3-TTS-0.6B-ANE | 0,6B (segun modelo base) | No disponible | Core ML sobre ANE (Apple Silicon) | Apache-2.0 | Hugging Face, port no oficial, 0 descargas y 1 like en el momento de la consulta |
+| Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice (modelo base) | 0,6B | No disponible | PyTorch (upstream) | Apache-2.0 | Modelo oficial de Qwen en Hugging Face |
 | Otros sistemas TTS locales ligeros (por ejemplo Piper, Kokoro o XTTS) | No disponible | No disponible | Multiples | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparables entre estas opciones en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de calidad de sintesis, latencia o consumo entre ellas. La diferencia documentada frente al modelo base es de naturaleza de despliegue: esta version sustituye la ejecucion en PyTorch por grafos Core ML optimizados para ANE y anade una capa de servicio gRPC con streaming.
@@ -108,7 +108,7 @@ No se dispone de datos de rendimiento comparables entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/erjigit17/Qwen3-TTS-0.6B-ANE
+- Modelo en Hugging Face: https://huggingface.co/erjigit17/Qwen3-TTS-0.6B-ANE
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
 - Codigo fuente de la conversion: https://github.com/er-zhi/ai-engineering-boilerplate/tree/main/native/tts-ane
 - Revision upstream utilizada para extraer los activos del host: 85e237c12c027371202489a0ec509ded67b5e4b5

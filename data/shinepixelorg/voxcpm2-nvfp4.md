@@ -73,8 +73,8 @@ Datos adicionales reportados: la proporción de energía por encima de 8 kHz cae
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| VoxCPM2-NVFP4 (este) | 2.290 M | no disponible | 30 | Apache-2.0 | HuggingFace, formato compressed-tensors |
-| openbmb/VoxCPM2 (BF16) | no disponible | no disponible | 30 | Apache-2.0 | HuggingFace, safetensors estándar |
+| VoxCPM2-NVFP4 (este) | 2.290 M | no disponible | 30 | Apache-2.0 | Hugging Face, formato compressed-tensors |
+| openbmb/VoxCPM2 (BF16) | no disponible | no disponible | 30 | Apache-2.0 | Hugging Face, safetensors estándar |
 | Alternativas TTS multilingüe | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación directa disponible es con el checkpoint BF16 del que deriva: mismo número de parámetros, mismos idiomas y licencia, pero 4,266 GiB frente a 3,258 GiB en `model.safetensors` (−23,6%). No se dispone de datos de otros modelos TTS comparables en la información proporcionada.
@@ -93,7 +93,7 @@ La única comparación directa disponible es con el checkpoint BF16 del que deri
 
 ## Enlaces
 
-- HuggingFace del checkpoint: https://huggingface.co/ShinePixelOrg/VoxCPM2-NVFP4
+- Hugging Face del checkpoint: https://huggingface.co/ShinePixelOrg/VoxCPM2-NVFP4
 - Modelo base: https://huggingface.co/openbmb/VoxCPM2
 - Repositorio del proyecto: https://github.com/OpenBMB/VoxCPM
 - llm-compressor: https://github.com/vllm-project/llm-compressor

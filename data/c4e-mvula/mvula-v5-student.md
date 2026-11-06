@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |--------|-----------|----------|----------|----------------|
-| Mvula v5 (student) | ~2,17 M | No aplica (meteorologico) | Apache-2.0 (codigo), pesos con restricciones | HuggingFace, GitHub |
+| Mvula v5 (student) | ~2,17 M | No aplica (meteorologico) | Apache-2.0 (codigo), pesos con restricciones | Hugging Face, GitHub |
 | AIFS (teacher) | No disponible | No aplica | Terminos originales (no redistribuido) | ECMWF |
 | Otros estudiantes de AIFS | No disponible | No aplica | No disponible | No disponible |
 
@@ -89,7 +89,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/C4E-Mvula/mvula-v5-student
+- Hugging Face: https://huggingface.co/C4E-Mvula/mvula-v5-student
 - Repositorio GitHub: https://github.com/msovara/lapai-forecast-africa
 - Proyecto Code for Earth: https://codeforearth.ecmwf.int/project/mvula/
 - Programa Code for Earth (ECMWF): https://codeforearth.ecmwf.int/

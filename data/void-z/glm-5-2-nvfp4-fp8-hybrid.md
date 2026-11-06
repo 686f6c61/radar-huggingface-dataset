@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Void-Z/GLM-5.2-NVFP4-FP8-Hybrid es una cuantizacion hibrida del modelo GLM-5.2 de Z-AI, publicada por el usuario Void-Z en HuggingFace. El modelo base GLM-5.2 es un MoE (Mixture of Experts) de aproximadamente 743.000 millones de parametros, con unos 39.000 millones activos por token, disenado para tareas de razonamiento, generacion de codigo y flujos agenciales. La principal innovacion de GLM-5.2 frente a sus predecesores es la extension de la prediccion multi-token (MTP) de 3 a 5 tokens de borrador, lo que mejora el rendimiento en workloads de razonamiento y agencia.
+Void-Z/GLM-5.2-NVFP4-FP8-Hybrid es una cuantizacion hibrida del modelo GLM-5.2 de Z-AI, publicada por el usuario Void-Z en Hugging Face. El modelo base GLM-5.2 es un MoE (Mixture of Experts) de aproximadamente 743.000 millones de parametros, con unos 39.000 millones activos por token, disenado para tareas de razonamiento, generacion de codigo y flujos agenciales. La principal innovacion de GLM-5.2 frente a sus predecesores es la extension de la prediccion multi-token (MTP) de 3 a 5 tokens de borrador, lo que mejora el rendimiento en workloads de razonamiento y agencia.
 
 La variante Void-Z combina cuantizacion NVFP4 (punto flotante de 4 bits de NVIDIA) y FP8 (punto flotante de 8 bits) en distintas capas del modelo, una tecnica habitual para reducir el peso en memoria manteniendo un equilibrio entre calidad y eficiencia. Sin embargo, la tarjeta del modelo es practicamente vacia: solo declara licencia MIT y no documenta el proceso de cuantizacion, la degradacion de calidad ni los resultados de evaluacion. El modelo cuenta con 0 descargas y 0 likes en el momento de la consulta.
 
@@ -82,9 +82,9 @@ Nota: la variante Void-Z declara licencia MIT en su tarjeta, pero la licencia de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Void-Z/GLM-5.2-NVFP4-FP8-Hybrid
+- Modelo en Hugging Face: https://huggingface.co/Void-Z/GLM-5.2-NVFP4-FP8-Hybrid
 - Modelo NVFP4 de NVIDIA: https://huggingface.co/nvidia/GLM-5.2-NVFP4
 - Repositorio GitHub de GLM-5: https://github.com/zai-org/GLM-5
 - Recetas vLLM para GLM-5.2: https://recipes.vllm.ai/zai-org/GLM-5.2
-- GLM-5.2-FP8 en HuggingFace: https://huggingface.co/zai-org/GLM-5.2-FP8
+- GLM-5.2-FP8 en Hugging Face: https://huggingface.co/zai-org/GLM-5.2-FP8
 - GLM-5.2-NVFP4 en ModelScope: https://www.modelscope.cn/models/nv-community/GLM-5.2-NVFP4

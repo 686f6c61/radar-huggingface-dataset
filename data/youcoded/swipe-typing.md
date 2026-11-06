@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks para espanol, frances o aleman en l
 
 | Modelo | Tipo | Parametros | Primer acierto (bench-2000) | Top-3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| youcoded/swipe-typing (T1) | Conv 1D + BiGRU + CTC, con decodificacion por haz sobre lexico | ~529.000 | 90,40 % | 94,95 % | MIT | Publico en HuggingFace; motor opt-in del teclado |
+| youcoded/swipe-typing (T1) | Conv 1D + BiGRU + CTC, con decodificacion por haz sobre lexico | ~529.000 | 90,40 % | 94,95 % | MIT | Publico en Hugging Face; motor opt-in del teclado |
 | Motor de FUTO | No disponible | No disponible | 93,32 % | No disponible | No disponible | Motor por defecto del teclado Swipe Keyboard |
 | Decodificador geometrico del mismo proyecto | Clasico, sin red neuronal | 0 | No disponible | No disponible | MIT (repositorio del proyecto) | Integrado como fallback |
 | Gboard (deslizamiento) | Propietario | No disponible | No medido | No disponible | Propietaria | Comercial, no evaluable en abierto |
@@ -99,7 +99,7 @@ La comparacion directa solo es posible frente al motor de FUTO, y unicamente en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/youcoded/swipe-typing
+- Modelo en Hugging Face: https://huggingface.co/youcoded/swipe-typing
 - Codigo, scripts y tests (rama de desarrollo): https://github.com/itsdestin/swipe-keyboard/tree/feature/179-engine-in-keyboard
 - Pagina de metodos (copia publicada en el repo del modelo): https://huggingface.co/youcoded/swipe-typing/blob/main/METHODS.md
 - Colecciones publicas de trazos de FUTO: https://swipe.futo.org

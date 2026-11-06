@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`wam-openarm-rel28-rh-cog-humvid-ema-50k-ckpt50000` es un punto de control de investigación en robótica publicado por el usuario jungwook2358 en HuggingFace. Se trata de un modelo de política visomotora (vision-language-action, VLA) construido sobre el backbone de vídeo Wan2.2-TI2V-5B, entrenado desde cero para el robot OpenArm y con un mecanismo de alineamiento cognitivo denominado CogAlign. El modelo genera acciones como trayectorias de articulaciones de 28 dimensiones a partir de observaciones visuales estéreo, sin usar cinemática directa ni inversa en inferencia.
+`wam-openarm-rel28-rh-cog-humvid-ema-50k-ckpt50000` es un punto de control de investigación en robótica publicado por el usuario jungwook2358 en Hugging Face. Se trata de un modelo de política visomotora (vision-language-action, VLA) construido sobre el backbone de vídeo Wan2.2-TI2V-5B, entrenado desde cero para el robot OpenArm y con un mecanismo de alineamiento cognitivo denominado CogAlign. El modelo genera acciones como trayectorias de articulaciones de 28 dimensiones a partir de observaciones visuales estéreo, sin usar cinemática directa ni inversa en inferencia.
 
 El checkpoint corresponde al experimento EXP-0019 y combina datos de robot y de humano, donde las secuencias humanas se incorporan únicamente como vídeo (sin estado ni máscara de acción) para aportar señal de vídeo y de CogAlign. El entrenamiento se completó el 1 de noviembre de 2026 tras 50 000 pasos con un lote efectivo de 64 (32 de robot y 32 de humano) distribuido en 4 GPU. La relevancia actual es acotada: es un artefacto de investigación reproducible, con cero descargas y cero likes, orientado a quien quiera reproducir o auditar la receta de entrenamiento más que a un uso en producción.
 
-No hay información publicada sobre idiomas, benchmarks ni licencia comercial concreta; la licencia figura como "other" sin texto adicional en la model card. El repositorio incluye el checkpoint completo del HuggingFace Trainer con pesos en safetensors, estadísticas de normalización y configuración del experimento.
+No hay información publicada sobre idiomas, benchmarks ni licencia comercial concreta; la licencia figura como "other" sin texto adicional en la model card. El repositorio incluye el checkpoint completo del Hugging Face Trainer con pesos en safetensors, estadísticas de normalización y configuración del experimento.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wam-openarm-rel28-rh-cog-humvid-ema-50k-ckpt50000 | no disponible (backbone 5B) | no disponible (1 cond + 8 futuros) | sin benchmarks publicados | other | HuggingFace, 0 descargas |
+| wam-openarm-rel28-rh-cog-humvid-ema-50k-ckpt50000 | no disponible (backbone 5B) | no disponible (1 cond + 8 futuros) | sin benchmarks publicados | other | Hugging Face, 0 descargas |
 | Base de huiwon (`…v1human_rh11_b64_i2v_base_norep_relq99_50k`) | no disponible | no disponible | sin benchmarks publicados | no disponible | referenciada en la model card |
 | Wan2.2-TI2V-5B | 5B | no disponible | no disponible en esta ficha | no disponible en esta ficha | modelo base público de vídeo |
 
@@ -85,7 +85,7 @@ No se dispone de datos suficientes para comparar rendimiento, contexto o licenci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jungwook2358/wam-openarm-rel28-rh-cog-humvid-ema-50k-ckpt50000
+- Hugging Face: https://huggingface.co/jungwook2358/wam-openarm-rel28-rh-cog-humvid-ema-50k-ckpt50000
 - Código de entrenamiento: rama `jungwook/openarm-fred-ft` del repositorio actlat-wam (URL no proporcionada en la model card)
 - Script de entrenamiento: `run_scripts/train/wam_dit4dit/openarm/finetune_openarm_rel28_base.sh` (referenciado, sin URL)
 - Modelo base de vídeo: Wan2.2-TI2V-5B (referenciado, sin URL)

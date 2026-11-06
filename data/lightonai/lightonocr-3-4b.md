@@ -104,7 +104,7 @@ Fuera de la familia LightOnOCR no se dispone de datos suficientes en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lightonai/LightOnOCR-3-4B
+- Modelo en Hugging Face: https://huggingface.co/lightonai/LightOnOCR-3-4B
 - Paper: https://arxiv.org/pdf/2601.14251
 - Segundo paper referenciado: https://arxiv.org/abs/2412.13663
 - Blog de presentacion: https://huggingface.co/blog/lightonai/lightonocr-3

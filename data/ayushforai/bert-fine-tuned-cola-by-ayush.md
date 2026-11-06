@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`ayushforai/bert-fine-tuned-cola-by-ayush` es un modelo de clasificación de texto publicado en HuggingFace por el usuario `ayushforai`. El identificador y los tags indican que se trata de un BERT afinado sobre CoLA (Corpus of Linguistic Acceptability), una de las tareas del conjunto GLUE que consiste en determinar si una frase en inglés es gramaticalmente aceptable. El pipeline declarado en el Hub es `text-classification` y la librería es `transformers`.
+`ayushforai/bert-fine-tuned-cola-by-ayush` es un modelo de clasificación de texto publicado en Hugging Face por el usuario `ayushforai`. El identificador y los tags indican que se trata de un BERT afinado sobre CoLA (Corpus of Linguistic Acceptability), una de las tareas del conjunto GLUE que consiste en determinar si una frase en inglés es gramaticalmente aceptable. El pipeline declarado en el Hub es `text-classification` y la librería es `transformers`.
 
-El modelo cuenta con 108.311.810 parámetros según los pesos en safetensors, una cifra coherente con la familia BERT-base (encoder transformer de 12 capas, 768 dimensiones ocultas y 12 cabezas de atención). El repositorio ocupa 1,7 GB, y los tags incluyen `safetensors`, `bert`, `text-embeddings-inference` y `endpoints_compatible`, lo que sugiere compatibilidad con Text Embeddings Inference y con los Inference Endpoints gestionados de HuggingFace.
+El modelo cuenta con 108.311.810 parámetros según los pesos en safetensors, una cifra coherente con la familia BERT-base (encoder transformer de 12 capas, 768 dimensiones ocultas y 12 cabezas de atención). El repositorio ocupa 1,7 GB, y los tags incluyen `safetensors`, `bert`, `text-embeddings-inference` y `endpoints_compatible`, lo que sugiere compatibilidad con Text Embeddings Inference y con los Inference Endpoints gestionados de Hugging Face.
 
-La relevancia práctica del modelo es limitada tal como está publicado: la model card es la plantilla automática de HuggingFace y no contiene información real sobre datos de entrenamiento, hiperparámetros, métricas ni licencia. El modelo registra 0 descargas y 0 likes, y no hay resultados de benchmarks publicados en la información disponible. Debe tratarse, por tanto, como un experimento de afinamiento de BERT para CoLA y no como un modelo listo para producción sin una evaluación previa por parte del usuario.
+La relevancia práctica del modelo es limitada tal como está publicado: la model card es la plantilla automática de Hugging Face y no contiene información real sobre datos de entrenamiento, hiperparámetros, métricas ni licencia. El modelo registra 0 descargas y 0 likes, y no hay resultados de benchmarks publicados en la información disponible. Debe tratarse, por tanto, como un experimento de afinamiento de BERT para CoLA y no como un modelo listo para producción sin una evaluación previa por parte del usuario.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La relevancia práctica del modelo es limitada tal como está publicado: la mode
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre el procedimiento de entrenamiento. La model card incluida en el repositorio es la plantilla por defecto de HuggingFace y todos los campos relevantes (datos de entrenamiento, hiperparametros, regimen de precision, infraestructura de computo, emisiones de carbono) aparecen como `[More Information Needed]`. No se especifica si el ajuste se hizo partiendo de `bert-base-uncased`, `bert-base-cased` u otro checkpoint, ni cuantas epocas, con que learning rate o con que esquema de validacion.
+No hay informacion publicada sobre el procedimiento de entrenamiento. La model card incluida en el repositorio es la plantilla por defecto de Hugging Face y todos los campos relevantes (datos de entrenamiento, hiperparametros, regimen de precision, infraestructura de computo, emisiones de carbono) aparecen como `[More Information Needed]`. No se especifica si el ajuste se hizo partiendo de `bert-base-uncased`, `bert-base-cased` u otro checkpoint, ni cuantas epocas, con que learning rate o con que esquema de validacion.
 
 Por la designacion del modelo y el pipeline declarado, cabe inferir un ajuste supervisado estandar sobre CoLA como tarea de clasificacion binaria (aceptable / no aceptable), con la metrica habitual de Matthews correlation coefficient (MCC) en GLUE. Sin embargo, esta inferencia no esta respaldada por ningun dato del repositorio. No se documenta uso de RLHF, DPO ni ninguna innovacion tecnica adicional.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en int8: en torno a 0,11 GB de pesos, con consumo total por debajo de 1 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM sirve; no se requiere A100, H100 ni similares. Una RTX 3060, RTX 4090 o incluso una T4 son suficientes y quedan sobredimensionadas.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer moderna, y tambien en CPU (la inferencia en CPU para 108 M de parametros es viable para cargas moderadas).
-- Opciones de despliegue: transformers con `pipeline("text-classification")`, Text Embeddings Inference (tag declarado), HuggingFace Inference Endpoints (tag declarado), ONNX Runtime y TorchScript tras exportacion. vLLM y llama.cpp no son adecuados para este tipo de modelo, aunque llama.cpp soporte BERT para embeddings.
+- Opciones de despliegue: transformers con `pipeline("text-classification")`, Text Embeddings Inference (tag declarado), Hugging Face Inference Endpoints (tag declarado), ONNX Runtime y TorchScript tras exportacion. vLLM y llama.cpp no son adecuados para este tipo de modelo, aunque llama.cpp soporte BERT para embeddings.
 - Latencia y throughput estimados: no disponibles; el autor no publica mediciones.
 
 ## Comparativa con modelos similares
@@ -69,10 +69,10 @@ Los valores de parametros de las alternativas corresponden a las arquitecturas b
 
 | Modelo | Parametros | Contexto tipico | Licencia | Disponibilidad | Rendimiento en CoLA |
 |---|---|---|---|---|---|
-| bert-fine-tuned-cola-by-ayush | 108.311.810 | no disponible (BERT suele 512 tokens) | no disponible | HuggingFace (0 descargas) | no disponible |
-| bert-base-uncased | ~110 M | 512 tokens | Apache 2.0 | HuggingFace | requiere ajuste especifico |
-| distilbert-base-uncased | ~66 M | 512 tokens | Apache 2.0 | HuggingFace | requiere ajuste especifico |
-| roberta-base | ~125 M | 512 tokens | MIT | HuggingFace | requiere ajuste especifico |
+| bert-fine-tuned-cola-by-ayush | 108.311.810 | no disponible (BERT suele 512 tokens) | no disponible | Hugging Face (0 descargas) | no disponible |
+| bert-base-uncased | ~110 M | 512 tokens | Apache 2.0 | Hugging Face | requiere ajuste especifico |
+| distilbert-base-uncased | ~66 M | 512 tokens | Apache 2.0 | Hugging Face | requiere ajuste especifico |
+| roberta-base | ~125 M | 512 tokens | MIT | Hugging Face | requiere ajuste especifico |
 
 No se dispone de una comparativa de rendimiento fiable: la informacion proporcionada no incluye metricas de este modelo ni de checkpoints equivalentes evaluados en las mismas condiciones.
 
@@ -90,7 +90,7 @@ No se dispone de una comparativa de rendimiento fiable: la informacion proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ayushforai/bert-fine-tuned-cola-by-ayush
+- Modelo en Hugging Face: https://huggingface.co/ayushforai/bert-fine-tuned-cola-by-ayush
 - Referencia citada en los tags (`arxiv:1910.09700`, Lacoste et al., cuantificacion de emisiones de ML): https://arxiv.org/abs/1910.09700
 - Articulo original de BERT (contexto de la arquitectura, no citado en el repositorio): https://arxiv.org/abs/1810.04805
 - Calculadora de impacto medioambiental de ML enlazada en la model card: https://mlco2.github.io/impact

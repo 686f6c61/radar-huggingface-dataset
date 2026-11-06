@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GENA-LM-t2t-bert-base es un port minimalista a HuggingFace del modelo original `AIRI-Institute/gena-lm-bert-base-t2t`, desarrollado por el equipo del AIRI Institute (Fishman, Kuratov y colaboradores) y reimplementado por Taykhoom con el objetivo de ofrecer una versión autocontenida y verificable bit a bit del backbone BERT pre-entrenado en secuencias de ADN humano. Se trata de un modelo de lenguaje enmascarado (MLM) de tipo BERT con 110 millones de parámetros, 12 capas, 768 dimensiones de embedding y una ventana de contexto de 512 tokens BPE (equivalentes a aproximadamente 4600 nucleótidos). Su relevancia actual reside en que permite obtener representaciones vectoriales de segmentos genómicos de forma eficiente y reproducible, con soporte para backends de atención modernos como SDPA y FlashAttention 2, facilitando su integración en pipelines de bioinformática y aprendizaje automático.
+GENA-LM-t2t-bert-base es un port minimalista a Hugging Face del modelo original `AIRI-Institute/gena-lm-bert-base-t2t`, desarrollado por el equipo del AIRI Institute (Fishman, Kuratov y colaboradores) y reimplementado por Taykhoom con el objetivo de ofrecer una versión autocontenida y verificable bit a bit del backbone BERT pre-entrenado en secuencias de ADN humano. Se trata de un modelo de lenguaje enmascarado (MLM) de tipo BERT con 110 millones de parámetros, 12 capas, 768 dimensiones de embedding y una ventana de contexto de 512 tokens BPE (equivalentes a aproximadamente 4600 nucleótidos). Su relevancia actual reside en que permite obtener representaciones vectoriales de segmentos genómicos de forma eficiente y reproducible, con soporte para backends de atención modernos como SDPA y FlashAttention 2, facilitando su integración en pipelines de bioinformática y aprendizaje automático.
 
 El modelo fue pre-entrenado sobre el ensamblaje T2T del genoma humano, aumentado con variantes de los proyectos 1000 Genomas y gnomAD, mediante un objetivo de masked language modeling (MLM) con un 15% de tokens enmascarados siguiendo la estrategia de BigBird. A diferencia del original, esta versión no incluye la cabeza NSP ni el pooler, por lo que se centra en tareas de embeddings y de MLM. Se ha verificado que la salida del backbone es idéntica (diferencia absoluta máxima 0.00) con el backend `eager` respecto al modelo original, y los backends `sdpa` y `flash_attention_2` coinciden dentro de tolerancia numérica esperada.
 
@@ -80,15 +80,15 @@ En comparación con otros modelos de ADN como DNABERT o Nucleotide Transformer, 
 
 ## Enlaces
 
-- [Modelo en HuggingFace: Taykhoom/GENA-LM-t2t-bert-base](https://huggingface.co/Taykhoom/GENA-LM-t2t-bert-base)
+- [Modelo en Hugging Face: Taykhoom/GENA-LM-t2t-bert-base](https://huggingface.co/Taykhoom/GENA-LM-t2t-bert-base)
 - [Modelo original: AIRI-Institute/gena-lm-bert-base-t2t](https://huggingface.co/AIRI-Institute/gena-lm-bert-base-t2t)
 - [Repositorio oficial de GENA-LM en GitHub](https://github.com/AIRI-Institute/GENA_LM)
 - [Artículo científico (Nucleic Acids Research, 2025): "GENA-LM: a family of open-source foundational DNA language models for long sequences"](https://academic.oup.com/nar/article/53/2/gkae1310/7954523)
-- [Colección de modelos GENA-LM en HuggingFace](https://huggingface.co/collections/Taykhoom/gena-lm-6a8cec0862e11d4f81d059ab)
+- [Colección de modelos GENA-LM en Hugging Face](https://huggingface.co/collections/Taykhoom/gena-lm-6a8cec0862e11d4f81d059ab)
 
 Nota: no se encontraron demos interactivas ni documentación adicional en la búsqueda web.</think>## Resumen
 
-GENA-LM-t2t-bert-base es un port minimalista a HuggingFace del modelo original `AIRI-Institute/gena-lm-bert-base-t2t`, desarrollado por el AIRI-Institute y reimplementado por Taykhoom. Se trata de un modelo de lenguaje enmascarado (masked language model, MLM) de arquitectura BERT, entrenado sobre secuencias de ADN humano. Con 110 millones de parámetros y una ventana de contexto de 512 tokens BPE (equivalentes a aproximadamente 4600 nucleótidos), este modelo está diseñado para tareas de representación de secuencias genómicas, imputación de variantes y fine-tuning en problemas de genómica computacional. Su relevancia actual radica en que ofrece una implementación autocontenida, verificada bit a bit contra el checkpoint original, y añade soporte para backends de atención modernos como SDPA y FlashAttention 2, lo que facilita su integración en pipelines de análisis de datos genómicos.
+GENA-LM-t2t-bert-base es un port minimalista a Hugging Face del modelo original `AIRI-Institute/gena-lm-bert-base-t2t`, desarrollado por el AIRI-Institute y reimplementado por Taykhoom. Se trata de un modelo de lenguaje enmascarado (masked language model, MLM) de arquitectura BERT, entrenado sobre secuencias de ADN humano. Con 110 millones de parámetros y una ventana de contexto de 512 tokens BPE (equivalentes a aproximadamente 4600 nucleótidos), este modelo está diseñado para tareas de representación de secuencias genómicas, imputación de variantes y fine-tuning en problemas de genómica computacional. Su relevancia actual radica en que ofrece una implementación autocontenida, verificada bit a bit contra el checkpoint original, y añade soporte para backends de atención modernos como SDPA y FlashAttention 2, lo que facilita su integración en pipelines de análisis de datos genómicos.
 
 El modelo fue preentrenado con un objetivo de MLM (15% de tokens enmascarados, estilo BigBird) sobre el ensamblaje T2T del genoma humano, aumentado con variantes de los proyectos 1000 Genomas y gnomAD. A diferencia de la versión original, este port no incluye la cabeza de predicción de siguiente frase (NSP) ni el pooler, centrándose únicamente en la generación de embeddings y en tareas de MLM. La licencia es MIT, lo que permite uso comercial sin restricciones adicionales, y los pesos se distribuyen en formato safetensors.
 
@@ -164,15 +164,15 @@ No se dispone de comparativas con modelos externos como DNABERT o Nucleotide Tra
 
 ## Enlaces
 
-- [Modelo en HuggingFace: Taykhoom/GENA-LM-t2t-bert-base](https://huggingface.co/Taykhoom/GENA-LM-t2t-bert-base)
+- [Modelo en Hugging Face: Taykhoom/GENA-LM-t2t-bert-base](https://huggingface.co/Taykhoom/GENA-LM-t2t-bert-base)
 - [Modelo original: AIRI-Institute/gena-lm-bert-base-t2t](https://huggingface.co/AIRI-Institute/gena-lm-bert-base-t2t)
 - [Repositorio GitHub de GENA-LM](https://github.com/AIRI-Institute/GENA_LM)
 - [Artículo científico (Nucleic Acids Research, 2025): "GENA-LM: a family of open-source foundational DNA language models for long sequences"](https://academic.oup.com/nar/article/53/5/gkae1310/7954523)
-- [Colección de modelos GENA-LM en HuggingFace](https://huggingface.co/collections/Taykhoom/gena-lm-6a8ecce0862f11d4f81d059ab)
+- [Colección de modelos GENA-LM en Hugging Face](https://huggingface.co/collections/Taykhoom/gena-lm-6a8ecce0862f11d4f81d059ab)
 
 Nota: no se encontraron demos ni documentación adicional en la búsqueda web.</think>## Resumen
 
-GENA-LM-t2t-bert-base es un port minimalista a HuggingFace del modelo original `AIRI-Institute/gena-lm-bert-base-t2t`, desarrollado por el AIRI-Institute y reimplementado por Taykhoom. Se trata de un modelo de lenguaje enmascarado (masked language model, MLM) de arquitectura BERT, entrenado sobre secuencias de ADN humano. Con 110 millones de parámetros y una ventana de contexto de 512 tokens BPE (equivalentes a aproximadamente 4600 nucleótidos), este modelo está diseñado para tareas de representación de secuencias genómicas, imputación de variantes y fine-tuning como embeddings para genómica computacional. Su relevancia radica en que ofrece una implementación autocontenida y verificada bit a bit contra el modelo original, además de soportar backends de atención modernos como SDPA y FlashAttention 2, lo que facilita su integración en pipelines de análisis de datos genómicos.
+GENA-LM-t2t-bert-base es un port minimalista a Hugging Face del modelo original `AIRI-Institute/gena-lm-bert-base-t2t`, desarrollado por el AIRI-Institute y reimplementado por Taykhoom. Se trata de un modelo de lenguaje enmascarado (masked language model, MLM) de arquitectura BERT, entrenado sobre secuencias de ADN humano. Con 110 millones de parámetros y una ventana de contexto de 512 tokens BPE (equivalentes a aproximadamente 4600 nucleótidos), este modelo está diseñado para tareas de representación de secuencias genómicas, imputación de variantes y fine-tuning como embeddings para genómica computacional. Su relevancia radica en que ofrece una implementación autocontenida y verificada bit a bit contra el modelo original, además de soportar backends de atención modernos como SDPA y FlashAttention 2, lo que facilita su integración en pipelines de análisis de datos genómicos.
 
 El port no incluye la cabeza de predicción de siguiente frase (NSP) ni el pooler original, centrándose únicamente en la generación de embeddings y tareas de MLM. La licencia es MIT, lo que permite uso comercial sin restricciones, y los pesos se distribuyen en formato safetensors. No se han publicado benchmarks específicos en la información disponible.
 
@@ -248,7 +248,7 @@ No se dispone de comparación con modelos de terceros como DNABERT o Nucleotide 
 
 ## Enlaces
 
-- [Modelo en HuggingFace: Tayzhoom/GEN-LM-t2t-bert-base](https://huggingface.co/Taykhoom/GEN-LM-t2t-bert-base)
+- [Modelo en Hugging Face: Tayzhoom/GEN-LM-t2t-bert-base](https://huggingface.co/Taykhoom/GEN-LM-t2t-bert-base)
 - [Modelo original: AIRI-Institute/gena-lm-bert-base-t2t](https://huggingface.co/AIRI-Institute/gena-lm-bert-base-t2t)
 - [Repositorio de GENA-LM en GitHub](https://github.com/AIRI-Institute/GENA_LM)
 - [Artículo científico (Nucleic Acids Research, 2025

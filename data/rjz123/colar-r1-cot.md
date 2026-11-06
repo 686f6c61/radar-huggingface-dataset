@@ -60,7 +60,7 @@ No se dispone de una comparativa directa con modelos equivalentes en la informac
 ## Limitaciones y advertencias
 
 - No es un modelo autonomo: requiere cargar el modelo base `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` por separado y fusionar los pesos manualmente.
-- Formato de checkpoint propietario: no es compatible con `AutoModel` de HuggingFace Transformers; se necesita un script especifico con `strict=False` y la variable de entorno `TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD=1`.
+- Formato de checkpoint propietario: no es compatible con `AutoModel` de Hugging Face Transformers; se necesita un script especifico con `strict=False` y la variable de entorno `TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD=1`.
 - Licencia no especificada: no se indica bajo que licencia se distribuye este adaptador, lo que impide su uso comercial sin consultar al autor.
 - Sin benchmarks publicados: no hay datos de rendimiento verificados para este checkpoint concreto.
 - Riesgo de alucinacion: al ser un modelo de 1.5B, su capacidad de razonamiento complejo es limitada y puede generar respuestas incorrectas en tareas que requieran multiples pasos.
@@ -70,7 +70,7 @@ No se dispone de una comparativa directa con modelos equivalentes en la informac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rjz123/colar-r1-cot
+- Repositorio Hugging Face: https://huggingface.co/rjz123/colar-r1-cot
 - Repositorio oficial de CoLaR (Xiaomi Research): https://github.com/xiaomi-research/colar
 - Paper de CoLaR en arXiv: https://arxiv.org/pdf/2505.16552v1
 - Repositorio de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1

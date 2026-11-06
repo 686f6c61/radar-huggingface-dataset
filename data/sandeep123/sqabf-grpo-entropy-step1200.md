@@ -93,7 +93,7 @@ El modelo evaluado presenta una ventana de contexto menor que la habitual en la 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/sandeep123/sqabf-grpo-entropy-step1200
+- Repositorio del modelo en Hugging Face: https://huggingface.co/sandeep123/sqabf-grpo-entropy-step1200
 - Checkpoint relacionado (step500): https://huggingface.co/sandeep123/sqa-grpo-entropy-step500
 - Checkpoint relacionado en matemáticas: https://huggingface.co/sandeep123/math-grpo-entropy-step1100
 - Referencia bibliográfica sobre entropía en GRPO (E-GRPO): https://arxiv.org/abs/2601.00423

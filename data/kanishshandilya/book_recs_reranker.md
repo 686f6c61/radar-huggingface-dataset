@@ -73,8 +73,8 @@ El autor interpreta que un MRR@10 de 88,73% implica que el libro ideal queda en 
 
 | Modelo | Parametros | Contexto | Rendimiento en esta tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `kanishshandilya/book_recs_reranker` | 278.044.417 | 384 tokens | MRR@10 88,73% / MAP 88,71% | MIT | HuggingFace, repositorio propio |
-| `BAAI/bge-reranker-base` | 278M (base del anterior) | no disponible en la informacion proporcionada | MRR@10 79,14% / MAP 79,13% en la validacion del autor | MIT | HuggingFace, ampliamente desplegado |
+| `kanishshandilya/book_recs_reranker` | 278.044.417 | 384 tokens | MRR@10 88,73% / MAP 88,71% | MIT | Hugging Face, repositorio propio |
+| `BAAI/bge-reranker-base` | 278M (base del anterior) | no disponible en la informacion proporcionada | MRR@10 79,14% / MAP 79,13% en la validacion del autor | MIT | Hugging Face, ampliamente desplegado |
 | Otros rerankers de la familia BGE o alternativas comerciales | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa solo es posible frente al checkpoint base, que es el unico para el que la informacion proporcionada incluye cifras medidas sobre el mismo conjunto de validacion. Cualquier comparacion con rerankers de mayor tamano o con servicios de reranking propietarios careceria de datos verificables en esta ficha.
@@ -93,7 +93,7 @@ La comparacion directa solo es posible frente al checkpoint base, que es el unic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kanishshandilya/book_recs_reranker
+- Modelo en Hugging Face: https://huggingface.co/kanishshandilya/book_recs_reranker
 - Modelo base: https://huggingface.co/BAAI/bge-reranker-base
 - Primera etapa del mismo autor: https://huggingface.co/kanishshandilya/book_recs_embed
 - Paper o blog adicional: no disponible en la informacion proporcionada

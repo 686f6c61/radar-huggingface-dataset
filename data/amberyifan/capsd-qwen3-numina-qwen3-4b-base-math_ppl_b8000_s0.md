@@ -70,5 +70,5 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AmberYifan/capsd-qwen3-numina-Qwen3-4B-Base-math_ppl_b8000_s0)
+- [Modelo en Hugging Face](https://huggingface.co/AmberYifan/capsd-qwen3-numina-Qwen3-4B-Base-math_ppl_b8000_s0)
 - [Modelo base Qwen/Qwen3-4B-Base](https://huggingface.co/Qwen/Qwen3-4B-Base)

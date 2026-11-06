@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas (contexto
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-E2B-it-latex-editor-merged-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-E2B-it-latex-editor-merged-GGUF
 - Modelo base: https://huggingface.co/michelinolinolino/gemma-4-E2B-it-latex-editor-merged
 - Pagina de resumen de cuantizaciones: https://hf.tst.eu/model#gemma-4-E2B-it-latex-editor-merged-GGUF
 - README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -65,10 +65,10 @@ La model card del autor original indica de forma cualitativa que Z-Image-Turbo "
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Z-Image-Turbo-GGUF (este) | ~6B | No disponible | 8 NFEs, latencia <1 s en H800 (modelo base) | Apache 2.0 | GGUF en HuggingFace |
-| Z-Image-Turbo (original) | ~6B | No disponible | 8 NFEs, latencia <1 s en H800 | Apache 2.0 | Safetensors en HuggingFace y ModelScope |
-| Z-Image-Base | ~6B | No disponible | No destilado, requiere más NFEs | Apache 2.0 | HuggingFace y ModelScope |
-| Z-Image-Edit | ~6B | No disponible | Especializado en edición image-to-image | Apache 2.0 | HuggingFace y ModelScope |
+| Z-Image-Turbo-GGUF (este) | ~6B | No disponible | 8 NFEs, latencia <1 s en H800 (modelo base) | Apache 2.0 | GGUF en Hugging Face |
+| Z-Image-Turbo (original) | ~6B | No disponible | 8 NFEs, latencia <1 s en H800 | Apache 2.0 | Safetensors en Hugging Face y ModelScope |
+| Z-Image-Base | ~6B | No disponible | No destilado, requiere más NFEs | Apache 2.0 | Hugging Face y ModelScope |
+| Z-Image-Edit | ~6B | No disponible | Especializado en edición image-to-image | Apache 2.0 | Hugging Face y ModelScope |
 
 No se dispone de datos de benchmarks que permitan una comparación numérica con modelos de difusión de otros desarrolladores. La información disponible solo permite comparar con las variantes del propio proyecto Z-Image.
 
@@ -84,13 +84,13 @@ No se dispone de datos de benchmarks que permitan una comparación numérica con
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta versión: https://huggingface.co/agentory/Z-Image-Turbo-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
+- Repositorio Hugging Face de esta versión: https://huggingface.co/agentory/Z-Image-Turbo-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Modelo base en ModelScope: https://www.modelscope.cn/models/Tongyi-MAI/Z-Image-Turbo
 - Repositorio GitHub del proyecto: https://github.com/Tongyi-MAI/Z-Image
 - Sitio oficial del proyecto: https://tongyi-mai.github.io/Z-Image-blog/
-- Demo online en HuggingFace: https://huggingface.co/spaces/Tongyi-MAI/Z-Image-Turbo
-- Demo móvil en HuggingFace: https://huggingface.co/spaces/akhaliq/Z-Image-Turbo
+- Demo online en Hugging Face: https://huggingface.co/spaces/Tongyi-MAI/Z-Image-Turbo
+- Demo móvil en Hugging Face: https://huggingface.co/spaces/akhaliq/Z-Image-Turbo
 - Demo en ModelScope: https://www.modelscope.cn/aigc/imageGeneration?tab=advanced&versionId=469191&modelType=Checkpoint&sdVersion=Z_IMAGE_TURBO
 - Galería de arte web: https://modelscope.cn/studios/Tongyi-MAI/Z-Image-Gallery/summary
 - Documentación de Unsloth Dynamic 2.0: https://docs.unsloth.ai/basics/unsloth-dynamic-2.0-ggufs

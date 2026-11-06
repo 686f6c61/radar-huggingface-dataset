@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RynnBrain-8B (esta ficha, GGUF) | ~8,2 B | no disponible | Imagen y vídeo | Apache 2.0 | HuggingFace (GGUF y safetensors) |
-| Qwen2.5-VL-7B | ~7 B | no disponible en esta ficha | Imagen y vídeo | Apache 2.0 (variantes) | HuggingFace |
-| Llama-3.2-11B-Vision | ~11 B | no disponible en esta ficha | Imagen | Llama 3.2 Community License | HuggingFace |
-| InternVL2-8B | ~8 B | no disponible en esta ficha | Imagen y vídeo | MIT (variantes) | HuggingFace |
+| RynnBrain-8B (esta ficha, GGUF) | ~8,2 B | no disponible | Imagen y vídeo | Apache 2.0 | Hugging Face (GGUF y safetensors) |
+| Qwen2.5-VL-7B | ~7 B | no disponible en esta ficha | Imagen y vídeo | Apache 2.0 (variantes) | Hugging Face |
+| Llama-3.2-11B-Vision | ~11 B | no disponible en esta ficha | Imagen | Llama 3.2 Community License | Hugging Face |
+| InternVL2-8B | ~8 B | no disponible en esta ficha | Imagen y vídeo | MIT (variantes) | Hugging Face |
 
 Nota: los datos de los modelos comparables no provienen de la información proporcionada en esta ficha y deben verificarse en sus respectivas model cards. No se dispone de comparativas de rendimiento publicadas para RynnBrain-8B en la información disponible.
 

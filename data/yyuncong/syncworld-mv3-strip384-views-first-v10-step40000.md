@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SyncWorld-mv3-strip384-views-first-v10-step40000 es un checkpoint intermedio (update 40.000 de un total de 45.000) de un modelo del mundo para robótica desarrollado por el usuario de HuggingFace `yyuncong` en el marco del proyecto SyncWorld. El modelo aprende dinámica futura (*forward dynamics*) en un contexto de recuperación (*retrieval*): dada una imagen ancla y una secuencia de 16 acciones comandadas, genera los siguientes 16 fotogramas de vídeo, condicionado por K fragmentos de vídeo/acción observados previamente.
+SyncWorld-mv3-strip384-views-first-v10-step40000 es un checkpoint intermedio (update 40.000 de un total de 45.000) de un modelo del mundo para robótica desarrollado por el usuario de Hugging Face `yyuncong` en el marco del proyecto SyncWorld. El modelo aprende dinámica futura (*forward dynamics*) en un contexto de recuperación (*retrieval*): dada una imagen ancla y una secuencia de 16 acciones comandadas, genera los siguientes 16 fotogramas de vídeo, condicionado por K fragmentos de vídeo/acción observados previamente.
 
 La entrada se organiza como una tira (*strip*) de 1536x384 píxeles compuesta por tres celdas de 512x384 correspondientes a dos cámaras en tercera persona y una cámara de muñeca. La innovación principal de esta variante es la recuperación multivista "views first": cada fragmento de la biblioteca se puntúa conjuntamente sobre las dos cámaras mostradas y se admite solo si su propia cámara cae dentro de 10 grados de rotación y 10 cm de posición respecto a la cámara de la consulta.
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yyuncong/SyncWorld-mv3-strip384-views-first-v10-step40000
+- Hugging Face: https://huggingface.co/yyuncong/SyncWorld-mv3-strip384-views-first-v10-step40000
 - Run comparativo recent8: https://huggingface.co/yyuncong/SyncWorld-mv3-strip384-recent8-step
 - Licencia openmdw-1.1: https://github.com/NVIDIA/Cosmos/blob/main/LICENSE
 - Repositorio Cosmos (referencia de licencia): https://github.com/NVIDIA/Cosmos

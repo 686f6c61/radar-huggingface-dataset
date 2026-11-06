@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KevinCha/Qwen3-VL-2B-Instruct-BoxSpecialToken-CustomColor es un fine-tuning del modelo Qwen3-VL-2B-Instruct, publicado en HuggingFace por el usuario KevinCha. El nombre del repositorio indica dos modificaciones sobre el modelo base: la introduccion de un token especial para cajas delimitadoras ("BoxSpecialToken") y algun tipo de personalizacion del manejo del color ("CustomColor"). Se trata, por tanto, de un ajuste orientado a tareas de vision-lenguaje con localizacion espacial de objetos y, presumiblemente, descripcion o control cromático.
+KevinCha/Qwen3-VL-2B-Instruct-BoxSpecialToken-CustomColor es un fine-tuning del modelo Qwen3-VL-2B-Instruct, publicado en Hugging Face por el usuario KevinCha. El nombre del repositorio indica dos modificaciones sobre el modelo base: la introduccion de un token especial para cajas delimitadoras ("BoxSpecialToken") y algun tipo de personalizacion del manejo del color ("CustomColor"). Se trata, por tanto, de un ajuste orientado a tareas de vision-lenguaje con localizacion espacial de objetos y, presumiblemente, descripcion o control cromático.
 
 El modelo conserva la arquitectura del Qwen3-VL base, un transformer multimodal de tipo vision-lenguaje con aproximadamente 2.127 millones de parametros totales (2,1B), segun los pesos en safetensors del repositorio. El repositorio ocupa 4,3 GB, lo que es coherente con pesos en precision bf16/fp16 para ese numero de parametros. La libreria declarada es transformers y el pipeline es image-text-to-text.
 
@@ -29,7 +29,7 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un modelo der
 
 El modelo se basa en la arquitectura Qwen3-VL, un transformer multimodal que combina un codificador visual con un modelo de lenguaje para tareas de image-text-to-text. El tag `qwen3_vl` y el pipeline declarado confirman esta adscripcion. El tamano de 2,1B parametros lo situa en la gama pequena de la familia, adecuada para inferencia en hardware de consumo.
 
-Las modificaciones indicadas en el nombre del repositorio ("BoxSpecialToken" y "CustomColor") sugieren un fine-tuning supervisado sobre el modelo base Instruct para: (1) incorporar un token especial que representa cajas delimitadoras, tipicamente usado en tareas de deteccion, grounding o refering expression comprehension; y (2) adaptar el comportamiento del modelo respecto al color, posiblemente para nombrar, comparar o generar codigos de color. No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens, la composicion de los datos, ni si se emplearon tecnicas de RLHF o DPO. La model card del autor es la plantilla automatica de HuggingFace sin rellenar, por lo que todos los apartados de entrenamiento figuran como "[More Information Needed]".
+Las modificaciones indicadas en el nombre del repositorio ("BoxSpecialToken" y "CustomColor") sugieren un fine-tuning supervisado sobre el modelo base Instruct para: (1) incorporar un token especial que representa cajas delimitadoras, tipicamente usado en tareas de deteccion, grounding o refering expression comprehension; y (2) adaptar el comportamiento del modelo respecto al color, posiblemente para nombrar, comparar o generar codigos de color. No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens, la composicion de los datos, ni si se emplearon tecnicas de RLHF o DPO. La model card del autor es la plantilla automatica de Hugging Face sin rellenar, por lo que todos los apartados de entrenamiento figuran como "[More Information Needed]".
 
 ## Capacidades
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KevinCha/Qwen3-VL-2B-Instruct-BoxSpecialToken-CustomColor | 2,1B | no disponible | imagen-texto | no disponible | HuggingFace |
-| Qwen3-VL-2B-Instruct (base) | ~2B | no disponible en esta ficha | imagen-texto | no disponible en esta ficha | HuggingFace |
-| Qwen2.5-VL-3B-Instruct | ~3B | no disponible en esta ficha | imagen-texto | no disponible en esta ficha | HuggingFace |
-| SmolVLM-2B-Instruct | ~2B | no disponible en esta ficha | imagen-texto | no disponible en esta ficha | HuggingFace |
+| KevinCha/Qwen3-VL-2B-Instruct-BoxSpecialToken-CustomColor | 2,1B | no disponible | imagen-texto | no disponible | Hugging Face |
+| Qwen3-VL-2B-Instruct (base) | ~2B | no disponible en esta ficha | imagen-texto | no disponible en esta ficha | Hugging Face |
+| Qwen2.5-VL-3B-Instruct | ~3B | no disponible en esta ficha | imagen-texto | no disponible en esta ficha | Hugging Face |
+| SmolVLM-2B-Instruct | ~2B | no disponible en esta ficha | imagen-texto | no disponible en esta ficha | Hugging Face |
 
 La comparativa se limita a la categoria (modelos vision-lenguaje de 2-3B). No se dispone de datos de rendimiento ni de contexto para establecer una comparacion cuantitativa fiable; los datos del modelo base y de las alternativas no se han verificado en la informacion proporcionada.
 
@@ -90,7 +90,7 @@ La comparativa se limita a la categoria (modelos vision-lenguaje de 2-3B). No se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KevinCha/Qwen3-VL-2B-Instruct-BoxSpecialToken-CustomColor
+- Modelo en Hugging Face: https://huggingface.co/KevinCha/Qwen3-VL-2B-Instruct-BoxSpecialToken-CustomColor
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - Repositorio del modelo base Qwen3-VL: no disponible en la informacion proporcionada

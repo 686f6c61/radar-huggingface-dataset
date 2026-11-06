@@ -84,6 +84,6 @@ La diferencia fundamental es arquitectonica: mientras los modelos Transformer re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RemySkye/rwkv7-g1i-7.2B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/RemySkye/rwkv7-g1i-7.2B-i1-GGUF
 - Modelo base: https://huggingface.co/BlinkDL/rwkv7-g1
 - Dataset de calibracion: https://huggingface.co/datasets/lemon07r/bartowski-imatrix-v5-semantic

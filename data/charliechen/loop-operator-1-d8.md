@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-operator-1-d8 es un checkpoint de modelo de lenguaje base entrenado desde cero por el autor CharlieChen (usuario de HuggingFace) y publicado como artefacto asociado al articulo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata del checkpoint final original utilizado en la escalera de escalado (scaling ladder) sobre el corpus FineWeb, concretamente en la coordenada de profundidad d8. No es un modelo ajustado por instrucciones: es un modelo base preentrenado, pensado para reproducir experimentos de leyes de escalado, no para uso conversacional directo.
+loop-operator-1-d8 es un checkpoint de modelo de lenguaje base entrenado desde cero por el autor CharlieChen (usuario de Hugging Face) y publicado como artefacto asociado al articulo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata del checkpoint final original utilizado en la escalera de escalado (scaling ladder) sobre el corpus FineWeb, concretamente en la coordenada de profundidad d8. No es un modelo ajustado por instrucciones: es un modelo base preentrenado, pensado para reproducir experimentos de leyes de escalado, no para uso conversacional directo.
 
 El modelo tiene 205.783.040 parametros almacenados en FP32 (0,823 GB), una anchura de 1024, 8 cabezas de atencion y una longitud de contexto de 2048 tokens. Usa el tokenizador GPT-2 de tiktoken con un vocabulario de 50.257 tokens, ampliado con relleno hasta 50.304 filas en la matriz de embeddings. La etiqueta principal del repositorio es "looped-transformer", con modo de profundidad "loop" y 1 repeticion del nucleo configurada tanto en entrenamiento como en la evaluacion final.
 
@@ -107,7 +107,7 @@ No se dispone de comparaciones de rendimiento (perplejidad, CORE, MMLU) entre lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-operator-1-d8
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-operator-1-d8
 - Codebase del articulo (evaluacion y reconstruccion del modelo): https://github.com/cue-engineering/loop
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Articulo de referencia: "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents" (no se ha encontrado enlace directo en la informacion proporcionada)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wangH116/Llama3-Pretrain` es un checkpoint publicado por el usuario wangH116 en HuggingFace, que declara como modelo base `meta-llama/Llama-3.1-8B-Instruct`. El nombre sugiere un experimento de pre-entrenamiento o re-entrenamiento adicional sobre el modelo instructivo de Meta, pero no existe documentación pública que detalle el procedimiento. El acceso es restringido (gated) y el repositorio no registra descargas ni valoraciones, lo que indica que se trata de un trabajo experimental sin validación comunitaria.
+El modelo `wangH116/Llama3-Pretrain` es un checkpoint publicado por el usuario wangH116 en Hugging Face, que declara como modelo base `meta-llama/Llama-3.1-8B-Instruct`. El nombre sugiere un experimento de pre-entrenamiento o re-entrenamiento adicional sobre el modelo instructivo de Meta, pero no existe documentación pública que detalle el procedimiento. El acceso es restringido (gated) y el repositorio no registra descargas ni valoraciones, lo que indica que se trata de un trabajo experimental sin validación comunitaria.
 
 Desde el punto de vista técnico, al heredar la arquitectura de Llama 3.1 8B, el modelo es un transformer denso con 8 mil millones de parámetros, ventana de contexto de hasta 128 000 tokens y soporte multilingüe. La licencia Apache 2.0 permite uso comercial y modificación, aunque el acceso gated requiere aceptación de condiciones. Su relevancia actual es limitada por la falta de información sobre el proceso de entrenamiento y de benchmarks publicados.
 
@@ -15,7 +15,7 @@ Desde el punto de vista técnico, al heredar la arquitectura de Llama 3.1 8B, el
 | Parametros activos | no aplica (arquitectura densa, no MoE) |
 | Longitud de contexto | 128 000 tokens (según Llama 3.1) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en (según HuggingFace) |
+| Idiomas soportados | en (según Hugging Face) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (probable, al usar transformers) |
 
@@ -29,7 +29,7 @@ La arquitectura corresponde a un transformer decodificador denso con 32 capas, 3
 - Generación de código: Llama 3.1 8B es competente en tareas de programación, aunque no es su fortaleza principal frente a modelos especializados.
 - Razonamiento matemático: capacidades moderadas en problemas aritméticos y algebraicos, heredadas del modelo base.
 - Soporte de tool calling: Llama 3.1 8B Instruct incluye soporte nativo para llamadas a funciones, por lo que este checkpoint probablemente lo mantiene.
-- Capacidades multilingües: aunque HuggingFace indica solo "en", el modelo base de Llama 3.1 soporta 8 idiomas (inglés, alemán, francés, italiano, portugués, hindi, español y tailandés).
+- Capacidades multilingües: aunque Hugging Face indica solo "en", el modelo base de Llama 3.1 soporta 8 idiomas (inglés, alemán, francés, italiano, portugués, hindi, español y tailandés).
 - Modo de razonamiento multi-paso: el modelo base puede generar cadenas de razonamiento, pero sin garantías de consistencia.
 - No se han confirmado capacidades de visión o audio: el modelo base es exclusivamente de texto.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - **VRAM estimada para inferencia**: para el modelo completo en FP16 se requieren aproximadamente 16 GB de VRAM (8 000 millones de parámetros × 2 bytes). Con cuantización de 8 bits, se reduce a unos 8 GB; con 4 bits, a unos 4-6 GB.
 - **GPU recomendadas**: para FP16, una NVIDIA A100 (40 GB), RTX A6000 (48 GB) o RTX 4090 (24 GB) son suficientes. Para cuantización de 4 bits, una RTX 3060 12 GB o RTX 4070 16 GB pueden ser suficientes.
 - **Compatibilidad con GPU de consumo**: sí, con cuantización de 4 bits cabe en GPUs de consumo de gama media-alta (RTX 3080, RTX 4070, etc.).
-- **Opciones de despliegue**: compatible con vLLM, llama.cpp, Ollama, TGI y Transformers. El tag `endpoints_compatible` en HuggingFace indica que es compatible con el servicio de endpoints de HuggingFace.
+- **Opciones de despliegue**: compatible con vLLM, llama.cpp, Ollama, TGI y Transformers. El tag `endpoints_compatible` en Hugging Face indica que es compatible con el servicio de endpoints de Hugging Face.
 - **Latencia y throughput**: no se dispone de datos medidos para este checkpoint concreto. En general, un modelo de 8B en una RTX 4090 con FP16 puede generar entre 20-50 tokens por segundo, dependiendo de la configuración y la longitud de la secuencia.
 
 ## Comparativa con modelos similares
@@ -65,16 +65,16 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo requiere aceptación de condiciones en HuggingFace, lo que limita su uso inmediato en entornos de producción.
+- **Acceso restringido**: el modelo requiere aceptación de condiciones en Hugging Face, lo que limita su uso inmediato en entornos de producción.
 - **Sin documentación**: no existe información sobre el proceso de pre-entrenamiento, los datos utilizados o las técnicas de alineación, lo que imposibilita evaluar su comportamiento o detectar sesgos adicionales.
 - **Riesgo de alucinación**: como cualquier modelo basado en Llama 3.1, puede generar información falsa o no verificada, especialmente en dominios especializados.
-- **Idiomas limitados**: HuggingFace indica solo inglés, aunque el modelo base soporta más idiomas; la extensión real no está confirmada.
+- **Idiomas limitados**: Hugging Face indica solo inglés, aunque el modelo base soporta más idiomas; la extensión real no está confirmada.
 - **Caveat de producción**: con 0 descargas y 0 likes, no hay evidencia de que el modelo haya sido probado por terceros, por lo que su fiabilidad es desconocida.
 - **Licencia**: aunque la licencia es Apache 2.0, el acceso gated y la falta de claridad sobre el origen de los datos de pre-entrenamiento pueden plantear riesgos legales en uso comercial.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/wangH116/Llama3-Pretrain
+- Página del modelo en Hugging Face: https://huggingface.co/wangH116/Llama3-Pretrain
 - Paper "The Llama 3 Herd of Models": https://arxiv.org/abs/2407.21783
 - Documentación de Llama3 en Transformers: https://huggingface.co/docs/transformers/model_doc/llama3
 - Página oficial de Llama 3 de Meta: https://developer.meta.com/ai/models/llama-3/

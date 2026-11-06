@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ijne/memplua` es un modelo publicado en HuggingFace por el usuario `ijne` bajo licencia Apache 2.0. Se trata de un repositorio con 0 descargas y 0 likes en el momento de la consulta, creado el 21 de septiembre de 2026 y actualizado el mismo dia, lo que indica una publicacion reciente y sin traccion comunitaria registrada.
+`ijne/memplua` es un modelo publicado en Hugging Face por el usuario `ijne` bajo licencia Apache 2.0. Se trata de un repositorio con 0 descargas y 0 likes en el momento de la consulta, creado el 21 de septiembre de 2026 y actualizado el mismo dia, lo que indica una publicacion reciente y sin traccion comunitaria registrada.
 
 La model card del autor no contiene informacion tecnica: se limita a la declaracion de licencia (`license: apache-2.0`). No se especifican arquitectura, numero de parametros, longitud de contexto, idiomas, pipeline de inferencia ni datos de entrenamiento. El unico dato cuantitativo objetivo disponible es el tamano del repositorio, 2,8 GB, que es coherente con pesos en fp16 de un modelo de aproximadamente 1.000-1.500 millones de parametros, o con un modelo mayor cuantizado a 4 bits, aunque esta correspondencia no esta confirmada por el autor.
 
@@ -37,7 +37,7 @@ No disponible. La informacion proporcionada no incluye ninguna descripcion funci
 - Cobertura multilingue.
 - Modos especiales como thinking mode, entrada de audio o procesamiento de imagenes.
 
-El campo `pipeline` de HuggingFace aparece como no disponible, de modo que ni siquiera se puede confirmar que el modelo sea de generacion de texto. Cualquier afirmacion al respecto seria especulativa.
+El campo `pipeline` de Hugging Face aparece como no disponible, de modo que ni siquiera se puede confirmar que el modelo sea de generacion de texto. Cualquier afirmacion al respecto seria especulativa.
 
 ## Casos de uso
 
@@ -80,6 +80,6 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la longitud
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ijne/memplua
-- Pagina del autor en HuggingFace: https://huggingface.co/ijne
+- Hugging Face: https://huggingface.co/ijne/memplua
+- Pagina del autor en Hugging Face: https://huggingface.co/ijne
 - Paper, blog, repositorio o demo: no disponible. La busqueda web realizada no devolvio ningun enlace relacionado con el modelo; todos los resultados correspondian a foros y articulos sobre la plataforma Steam, sin conexion con `ijne/memplua`.

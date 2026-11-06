@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Soothram es un repositorio publicado en HuggingFace por el usuario mhd-radin el 27 de septiembre de 2026, con licencia Apache 2.0 y etiquetado dentro de la región "us". En el momento de la consulta acumula 0 descargas y 0 "likes", y no tiene pipeline declarado. La model card asociada contiene únicamente el encabezado YAML con la licencia, sin ninguna descripción del modelo, del entrenamiento ni de sus capacidades.
+Soothram es un repositorio publicado en Hugging Face por el usuario mhd-radin el 27 de septiembre de 2026, con licencia Apache 2.0 y etiquetado dentro de la región "us". En el momento de la consulta acumula 0 descargas y 0 "likes", y no tiene pipeline declarado. La model card asociada contiene únicamente el encabezado YAML con la licencia, sin ninguna descripción del modelo, del entrenamiento ni de sus capacidades.
 
 No se dispone de información sobre la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni el formato de los pesos. El autor tampoco publica datos de entrenamiento, resultados de benchmarks, instrucciones de uso ni ejemplos de inferencia.
 
@@ -81,6 +81,6 @@ No disponible. Al desconocerse la arquitectura, el tamaño y el dominio del mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mhd-radin/Soothram
+- Repositorio en Hugging Face: https://huggingface.co/mhd-radin/Soothram
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo.
 - Los resultados de búsqueda web disponibles no guardan relación con el repositorio y se omiten por no aportar información técnica.

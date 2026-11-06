@@ -84,7 +84,7 @@ No se dispone de datos de otros modelos comparables en la misma categoría.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chennana1028/gwp05-openarm-sbint-delta-step50000
+- Modelo en Hugging Face: https://huggingface.co/chennana1028/gwp05-openarm-sbint-delta-step50000
 - Checkpoint hermano absoluto: https://huggingface.co/chennana1028/gwp05-openarm-sbint-step20000
 - Código base GigaWorldPolicy: https://github.com/zhujohn9604/giga-world-policy
 - Hardware OpenArm (enactic): https://github.com/enactic/openarm

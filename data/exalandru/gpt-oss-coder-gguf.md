@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `exalandru/GPT-OSS-Coder-GGUF` aloja un modelo identificado como "GPT-OSS-Coder" en formato GGUF, publicado por el usuario exalandru bajo licencia Apache 2.0. Por el nombre, se infiere que está orientado a la generación de código, pero no se dispone de ninguna descripción técnica en la model card ni en los metadatos de HuggingFace. No se especifican arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni datos de entrenamiento.
+El repositorio `exalandru/GPT-OSS-Coder-GGUF` aloja un modelo identificado como "GPT-OSS-Coder" en formato GGUF, publicado por el usuario exalandru bajo licencia Apache 2.0. Por el nombre, se infiere que está orientado a la generación de código, pero no se dispone de ninguna descripción técnica en la model card ni en los metadatos de Hugging Face. No se especifican arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni datos de entrenamiento.
 
 La relevancia de este modelo es, por ahora, limitada: al carecer de documentación y de resultados de evaluación, no es posible determinar su utilidad práctica ni compararlo con alternativas establecidas. El formato GGUF sugiere que está pensado para inferencia local con herramientas como llama.cpp u Ollama, pero sin especificaciones no se puede confirmar su viabilidad técnica.
 
@@ -55,4 +55,4 @@ No disponible. No se conocen modelos comparables de la misma categoría (generac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [exalandru/GPT-OSS-Coder-GGUF](https://huggingface.co/exalandru/GPT-OSS-Coder-GGUF)
+- Repositorio en Hugging Face: [exalandru/GPT-OSS-Coder-GGUF](https://huggingface.co/exalandru/GPT-OSS-Coder-GGUF)

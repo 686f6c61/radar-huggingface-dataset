@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado en HuggingFace por el usuario sdsffs5 bajo licencia MIT. La model card describe una actualización significativa respecto a versiones anteriores, con mejoras en razonamiento profundo, inferencia y soporte para function calling. Según el autor, el modelo alcanza un 87,5 % de precisión en el test AIME 2025, frente al 70 % de la versión previa, y emplea una media de 23 000 tokens por pregunta en ese conjunto, lo que indica un proceso de razonamiento más extenso.
+MyAwesomeModel es un modelo de lenguaje presentado en Hugging Face por el usuario sdsffs5 bajo licencia MIT. La model card describe una actualización significativa respecto a versiones anteriores, con mejoras en razonamiento profundo, inferencia y soporte para function calling. Según el autor, el modelo alcanza un 87,5 % de precisión en el test AIME 2025, frente al 70 % de la versión previa, y emplea una media de 23 000 tokens por pregunta en ese conjunto, lo que indica un proceso de razonamiento más extenso.
 
-Sin embargo, la información técnica disponible es muy limitada. No se especifican la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento. El pipeline declarado en HuggingFace es `feature-extraction`, aunque la model card describe capacidades de generación de texto y razonamiento, lo que sugiere una posible inconsistencia en la metadata. El repositorio tiene un tamaño de 0,0 GB y no se han registrado descargas ni valoraciones.
+Sin embargo, la información técnica disponible es muy limitada. No se especifican la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento. El pipeline declarado en Hugging Face es `feature-extraction`, aunque la model card describe capacidades de generación de texto y razonamiento, lo que sugiere una posible inconsistencia en la metadata. El repositorio tiene un tamaño de 0,0 GB y no se han registrado descargas ni valoraciones.
 
 A pesar de la escasez de datos, la model card incluye una tabla de evaluación con 15 benchmarks en categorías como razonamiento matemático, generación de código, traducción y seguridad, con una puntuación global ponderada de 0,71. No se identifican los modelos de referencia con los que se compara, ni se detalla la metodología de evaluación.
 
@@ -43,7 +43,7 @@ Segun la model card, el modelo presenta las siguientes capacidades:
 - Soporte para system prompt y uso de temperatura recomendada de 0,6.
 - Plantillas para carga de archivos y busqueda web mejorada.
 
-No se especifica si el modelo soporta vision, audio u otras modalidades. El pipeline declarado en HuggingFace es `feature-extraction`, lo que sugiere que podria usarse para extraer representaciones, pero la model card no lo menciona.
+No se especifica si el modelo soporta vision, audio u otras modalidades. El pipeline declarado en Hugging Face es `feature-extraction`, lo que sugiere que podria usarse para extraer representaciones, pero la model card no lo menciona.
 
 ## Casos de uso
 
@@ -95,9 +95,9 @@ No se dispone de datos suficientes para realizar una comparativa con otros model
 - No se especifican los idiomas soportados, por lo que su uso en entornos multilingues es incierto.
 - La licencia MIT permite uso comercial, pero al no conocerse la arquitectura ni los datos de entrenamiento, no se puede evaluar el cumplimiento de posibles requisitos de atribucion de datos.
 - La informacion tecnica es insuficiente para garantizar su uso en produccion. Se recomienda realizar pruebas exhaustivas antes de integrarlo en sistemas criticos.
-- La metadata de HuggingFace indica `feature-extraction` como pipeline, lo que contradice las capacidades de generacion descritas en la model card. Esta inconsistencia debe aclararse con el autor.
+- La metadata de Hugging Face indica `feature-extraction` como pipeline, lo que contradice las capacidades de generacion descritas en la model card. Esta inconsistencia debe aclararse con el autor.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sdsffs5/MyAwesomeModel
+- Repositorio en Hugging Face: https://huggingface.co/sdsffs5/MyAwesomeModel
 - Otros repositorios similares (posiblemente duplicados o variantes): https://huggingface.co/dsfsf445/MyAwesomeModel y https://huggingface.co/dsfsdfsf56577/MyAwesomeModel (sin informacion adicional).

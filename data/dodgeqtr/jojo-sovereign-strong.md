@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jojo-sovereign-strong es un ajuste fino (fine-tune) del modelo Meta Llama 3.1 8B Instruct, publicado por el usuario dodgeqtr en HuggingFace y distribuido exclusivamente en formato GGUF para su uso con llama.cpp y Ollama. El modelo fue entrenado y convertido con Unsloth, herramienta que acelera el ajuste fino y la exportacion a GGUF. No se documenta en la model card que problema concreto resuelve, que dataset se utilizo ni que objetivo de especializacion tiene la variante "sovereign-strong".
+jojo-sovereign-strong es un ajuste fino (fine-tune) del modelo Meta Llama 3.1 8B Instruct, publicado por el usuario dodgeqtr en Hugging Face y distribuido exclusivamente en formato GGUF para su uso con llama.cpp y Ollama. El modelo fue entrenado y convertido con Unsloth, herramienta que acelera el ajuste fino y la exportacion a GGUF. No se documenta en la model card que problema concreto resuelve, que dataset se utilizo ni que objetivo de especializacion tiene la variante "sovereign-strong".
 
 El repositorio es de creacion reciente (18 de septiembre de 2026) y acumula 0 descargas y 0 "likes" en el momento de la consulta, ademas de no declarar licencia, idiomas soportados ni pipeline. El unico archivo publicado es `Meta-Llama-3.1-8B-Instruct.Q4_K_M.gguf`, con un total de 8.030.261.312 parametros y un tamano de repositorio de 4,9 GB, coherente con una cuantizacion Q4_K_M de un modelo de 8B.
 
@@ -96,7 +96,7 @@ La comparacion relevante es contra el propio Llama 3.1 8B Instruct: jojo-soverei
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dodgeqtr/jojo-sovereign-strong
+- Hugging Face: https://huggingface.co/dodgeqtr/jojo-sovereign-strong
 - Unsloth (herramienta de ajuste y conversion citada por el autor): https://github.com/unslothai/unsloth
 - llama.cpp (runtime para GGUF): https://github.com/ggml-org/llama.cpp
 - Ollama (despliegue del Modelfile incluido): https://ollama.com

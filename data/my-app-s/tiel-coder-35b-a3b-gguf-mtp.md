@@ -96,7 +96,7 @@ Tiel se posiciona como la mejor opción de su clase en codificación agéntica y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/my-app-s/Tiel-Coder-35B-A3B-GGUF-MTP
+- Hugging Face: https://huggingface.co/my-app-s/Tiel-Coder-35B-A3B-GGUF-MTP
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - GGUFs sin MTP: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF
 - Versión MLX sin MTP: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e

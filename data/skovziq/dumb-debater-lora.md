@@ -1,7 +1,7 @@
 # skovziq/dumb-debater-lora
 
 ## Resumen
-`skovziq/dumb-debater-lora` es un ajuste fino (LoRA) del modelo Llama 3.1 8B, publicado por el usuario skovziq en HuggingFace. Se trata de un modelo derivado de `unsloth/Llama-3.1-8B-unsloth-bnb-4bit`, una version del Llama 3.1 8B de Meta optimizada por Unsloth para entrenamiento con cuantizacion de 4 bits. El ajuste se ha realizado con las herramientas de Unsloth y TRL, segun los tags del repositorio.
+`skovziq/dumb-debater-lora` es un ajuste fino (LoRA) del modelo Llama 3.1 8B, publicado por el usuario skovziq en Hugging Face. Se trata de un modelo derivado de `unsloth/Llama-3.1-8B-unsloth-bnb-4bit`, una version del Llama 3.1 8B de Meta optimizada por Unsloth para entrenamiento con cuantizacion de 4 bits. El ajuste se ha realizado con las herramientas de Unsloth y TRL, segun los tags del repositorio.
 
 La model card es practicamente inexistente: solo indica el modelo base, el autor, la licencia Apache 2.0 y que el entrenamiento se realizo "2x mas rapido con Unsloth". No se documentan datos de entrenamiento, hiperparametros, objetivos, ni resultados de evaluacion. El nombre del modelo ("dumb-debater") sugiere un ajuste orientado a tareas de debate, pero no hay informacion que lo confirme.
 
@@ -37,7 +37,7 @@ El ajuste fino se realizo con las librerias Unsloth y TRL, segun los tags del re
 - Pruebas de concepto de generacion de texto en ingles: se puede desplegar con text-generation-inference o transformers para validar la calidad del ajuste en tareas de generacion libre.
 - Evaluacion comparativa de tecnicas de cuantizacion: al estar basado en una version bnb-4bit, permite estudiar el impacto de la cuantizacion en la calidad del ajuste fino.
 - Base para un ajuste posterior: al ser un adaptador LoRA pequeno (0.2 GB), se puede combinar con otros adaptadores o continuar el entrenamiento con datasets propios.
-- Docencia y formacion: util como ejemplo practico de como publicar un modelo ajustado en HuggingFace con la licencia Apache 2.0.
+- Docencia y formacion: util como ejemplo practico de como publicar un modelo ajustado en Hugging Face con la licencia Apache 2.0.
 - Prototipado rapido de asistentes conversacionales en ingles: aunque sin garantias de calidad, puede servir para validar interfaces de usuario antes de invertir en un modelo mas documentado.
 
 ## Benchmarks y rendimiento
@@ -54,10 +54,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| skovziq/dumb-debater-lora | 8B (LoRA) | 128k (heredado) | Apache 2.0 | Minima (solo model card basica) | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | Extensa (model card, paper, evaluaciones) | HuggingFace, Meta |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32k | Apache 2.0 | Extensa | HuggingFace |
-| google/gemma-2-9b-it | 9B | 8k | Gemma Terms of Use | Extensa | HuggingFace |
+| skovziq/dumb-debater-lora | 8B (LoRA) | 128k (heredado) | Apache 2.0 | Minima (solo model card basica) | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | Extensa (model card, paper, evaluaciones) | Hugging Face, Meta |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32k | Apache 2.0 | Extensa | Hugging Face |
+| google/gemma-2-9b-it | 9B | 8k | Gemma Terms of Use | Extensa | Hugging Face |
 
 La comparativa se basa en el modelo base y en alternativas de tamano similar; no hay datos de rendimiento especificos de `dumb-debater-lora` para comparar calidad.
 
@@ -72,7 +72,7 @@ La comparativa se basa en el modelo base y en alternativas de tamano similar; no
 - Fecha de creacion futura (2026-10-31) en los metadatos, lo que puede indicar un error o una publicacion programada; conviene verificar la integridad del repositorio.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/skovziq/dumb-debater-lora
+- Hugging Face: https://huggingface.co/skovziq/dumb-debater-lora
 - Modelo base: https://huggingface.co/unsloth/Llama-3.1-8B-unsloth-bnb-4bit
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
 - TRL (GitHub): https://github.com/huggingface/trl

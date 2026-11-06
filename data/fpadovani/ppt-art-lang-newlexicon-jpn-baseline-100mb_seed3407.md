@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. L
 
 ## Enlaces
 
-- [HuggingFace - fpadovani/ppt-art-lang-newlexicon-jpn-baseline-100mb_seed3407](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-jpn-baseline-100mb_seed3407)
+- [Hugging Face - fpadovani/ppt-art-lang-newlexicon-jpn-baseline-100mb_seed3407](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-jpn-baseline-100mb_seed3407)
 - [Modelo base: goldfish-models/eng_latn_100mb](https://huggingface.co/goldfish-models/eng_latn_100mb)
 - [Registro de entrenamiento en Weights & Biases](https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/7gwxjewh)
 - [Entrada en LLM Explorer](https://llm-explorer.com/model/fpadovani%2Fppt-art-lang-eng-baseline-100mb_seed3407,78C0NE22BRZDMngBA7ufj5) (referencia a un modelo hermano, no a este exacto)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Efficientformer for Generation es un repositorio experimental publicado por el usuario Justmelissabrooks en HuggingFace. No se trata de un modelo entrenado, sino de una base de codigo (codebase) que combina una implementacion propia de una arquitectura tipo Efficientformer con un punto de entrada ejecutable para tareas de generacion. El propio autor lo describe como un punto de partida "intencionadamente manejable" para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+Efficientformer for Generation es un repositorio experimental publicado por el usuario Justmelissabrooks en Hugging Face. No se trata de un modelo entrenado, sino de una base de codigo (codebase) que combina una implementacion propia de una arquitectura tipo Efficientformer con un punto de entrada ejecutable para tareas de generacion. El propio autor lo describe como un punto de partida "intencionadamente manejable" para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El repositorio incluye un `pipeline.py` con el modelo y un ejemplo ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que se presenta explicitamente como checkpoint de inicializacion para pruebas de humo, no como un modelo entrenado con resultados de referencia. Los datos reales del safetensors indican 24.832 parametros totales, una cifra muy inferior a la que sugiere la etiqueta de escala "base" de la configuracion.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es acotada: sirve para documentar un artefacto de in
 | Pipeline declarado | no disponible |
 | Descargas | 0 |
 | Likes | 1 |
-| Fecha de creacion | 2026-09-12 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-12 (segun metadatos de Hugging Face) |
 | Tamano del repositorio | 0,0 GB |
 
 ## Arquitectura y entrenamiento
@@ -47,7 +47,7 @@ En cuanto al entrenamiento, la receta por defecto usa el optimizador AdamW con u
 - Investigacion de ablaciones de arquitectura: el repositorio esta pensado para inspeccionar cambios estructurales (fusion de bajo rango, normalizacion, activacion) con una configuracion pequena y manejable antes de escalar.
 - Validacion de pipelines de entrenamiento: con `training_args.json` como receta de partida (AdamW, warmup constante), sirve para comprobar que el bucle de entrenamiento, el logging y el guardado de checkpoints funcionan de extremo a extremo.
 - Desarrollo de harness de evaluacion: permite montar un conjunto de validacion especifico de tarea, ejecutar al menos tres semillas y comparar contra una linea base de capacidad equivalente, tal y como recomienda el autor.
-- Material docente y de reproduccion: util para explicar la diferencia entre un checkpoint de inicializacion y un modelo entrenado, y para practicar la integracion de implementaciones personalizadas en HuggingFace.
+- Material docente y de reproduccion: util para explicar la diferencia entre un checkpoint de inicializacion y un modelo entrenado, y para practicar la integracion de implementaciones personalizadas en Hugging Face.
 - Andamiaje para tareas de generacion: el codigo puede servir de plantilla para adaptar un backbone tipo Efficientformer a un objetivo generativo, siempre que se entrene desde cero con datos propios y se documenten los resultados por separado.
 - Integracion en CI de investigacion: al ocupar 0,0 GB y tener solo 24.832 parametros, se puede ejecutar como test rapido en cada commit para detectar roturas en la carga del modelo.
 
@@ -80,5 +80,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Justmelissabrooks/efficientformer-generation
+- Hugging Face: https://huggingface.co/Justmelissabrooks/efficientformer-generation
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos en la busqueda web realizada. Los resultados devueltos corresponden a contenido no relacionado (foros sobre Steam) y se descartan.

@@ -89,10 +89,10 @@ Notas sobre la tabla: en el `model-index` original, los dos valores de LibriSpee
 
 | Modelo | Parametros | Idiomas | Licencia | Arquitectura | Disponibilidad |
 |---|---|---|---|---|---|
-| Parakeet TDT 0.6B v3 (este repo) | 627 M | 25 europeos | CC BY 4.0 | FastConformer + TDT | HuggingFace (redistribución no oficial) |
-| NVIDIA Canary-1B | ~1 B | 4 (en, de, es, fr) | CC BY-NC 4.0 | FastConformer + decoder transformer | HuggingFace, NeMo |
-| NVIDIA Canary-1B-v2 | ~1 B | 25 europeos | CC BY 4.0 | FastConformer + decoder transformer | HuggingFace, NeMo |
-| OpenAI Whisper large-v3 | ~1,55 B | ~99 | MIT | Transformer encoder-decoder | HuggingFace, OpenAI |
+| Parakeet TDT 0.6B v3 (este repo) | 627 M | 25 europeos | CC BY 4.0 | FastConformer + TDT | Hugging Face (redistribución no oficial) |
+| NVIDIA Canary-1B | ~1 B | 4 (en, de, es, fr) | CC BY-NC 4.0 | FastConformer + decoder transformer | Hugging Face, NeMo |
+| NVIDIA Canary-1B-v2 | ~1 B | 25 europeos | CC BY 4.0 | FastConformer + decoder transformer | Hugging Face, NeMo |
+| OpenAI Whisper large-v3 | ~1,55 B | ~99 | MIT | Transformer encoder-decoder | Hugging Face, OpenAI |
 
 La comparación de WER entre estos modelos no se incluye porque no se dispone de resultados evaluados con un pipeline homogéneo en la información proporcionada; los valores de la tabla de benchmarks son declarados por el autor y no verificados. En términos cualitativos, Parakeet TDT 0.6B v3 es la opción más ligera del grupo y la única de las listadas que combina 25 idiomas europeos con licencia permisiva y menos de mil millones de parámetros. Canary-1B-v2 iguala la cobertura lingüística y la licencia pero duplica el tamaño; Whisper large-v3 ofrece mucha mayor cobertura idiomática a costa de triplicar los parámetros y de una arquitectura autoregresiva más lenta en decodificación.
 
@@ -111,7 +111,7 @@ La comparación de WER entre estos modelos no se incluye porque no se dispone de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hacktogone/parakeet-tdt-0.6b-v3
+- Modelo en Hugging Face: https://huggingface.co/hacktogone/parakeet-tdt-0.6b-v3
 - Dataset de entrenamiento (Granary): https://huggingface.co/datasets/nvidia/Granary
 - Dataset de entrenamiento (NeMo ASR set 3.0): https://huggingface.co/datasets/nemo/asr-set-3.0
 - Referencia TDT (Token-and-Duration Transducer): https://arxiv.org/abs/2304.06795

@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | ducvh5/wan21-a5b5x4c5-... (este) | 1.300 M (heredados) | no disponible | no disponible | Sin pesos publicados (0 descargas) |
-| Wan-AI/Wan2.1-T2V-1.3B-Diffusers | 1.300 M | no disponible | no disponible | Pesos disponibles en HuggingFace |
-| Wan2.1 (variantes mayores) | no disponible | no disponible | no disponible | Disponibles en HuggingFace |
+| Wan-AI/Wan2.1-T2V-1.3B-Diffusers | 1.300 M | no disponible | no disponible | Pesos disponibles en Hugging Face |
+| Wan2.1 (variantes mayores) | no disponible | no disponible | no disponible | Disponibles en Hugging Face |
 
 La comparación directa se limita al modelo base, ya que no hay datos de rendimiento ni pesos del checkpoint derivado.
 
@@ -79,6 +79,6 @@ La comparación directa se limita al modelo base, ya que no hay datos de rendimi
 
 ## Enlaces
 
-- [HuggingFace: ducvh5/wan21-a5b5x4c5-tf-fm-tm-ln2-u5-qt-fw-hd-item-empty-coord](https://huggingface.co/ducvh5/wan21-a5b5x4c5-tf-fm-tm-ln2-u5-qt-fw-hd-item-empty-coord)
+- [Hugging Face: ducvh5/wan21-a5b5x4c5-tf-fm-tm-ln2-u5-qt-fw-hd-item-empty-coord](https://huggingface.co/ducvh5/wan21-a5b5x4c5-tf-fm-tm-ln2-u5-qt-fw-hd-item-empty-coord)
 - [Modelo base: Wan-AI/Wan2.1-T2V-1.3B-Diffusers](https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

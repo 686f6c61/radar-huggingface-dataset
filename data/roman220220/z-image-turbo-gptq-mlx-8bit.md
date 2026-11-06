@@ -6,7 +6,7 @@
 
 El problema que resuelve es acotado pero relevante: a igualdad de tamano y velocidad que un `mflux-save --quantize 8` normal, la correccion GPTQ preserva mejor los pesos originales. Segun el autor, a 8 bits la diferencia visual respecto a RTN es practicamente inapreciable (PSNR aproximado de 35,3 dB y diferencia media absoluta de pixel de 2,2/255), por lo que esta publicacion funciona mas como linea base de correctitud y como sustituto directo fiable que como salto cualitativo. La ganancia real de la tecnica aparece en las variantes de 4 bits del mismo autor.
 
-Es relevante ahora porque consolida un ecosistema de cuantizacion especifico para transformers de difusion en MLX, un nicho donde las herramientas habituales de LLM (llama.cpp, GPTQ para modelos de lenguaje) no aplican directamente. El repositorio ocupa 11,0 GB en HuggingFace (~10 GB de pesos efectivos entre transformer, text encoder, VAE y tokenizer) y se distribuye bajo licencia Apache 2.0.
+Es relevante ahora porque consolida un ecosistema de cuantizacion especifico para transformers de difusion en MLX, un nicho donde las herramientas habituales de LLM (llama.cpp, GPTQ para modelos de lenguaje) no aplican directamente. El repositorio ocupa 11,0 GB en Hugging Face (~10 GB de pesos efectivos entre transformer, text encoder, VAE y tokenizer) y se distribuye bajo licencia Apache 2.0.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 |---|---|
 | PSNR entre RTN-8bit y GPTQ-8bit (mismo prompt, semilla 42, 9 pasos) | ~35,3 dB |
 | Diferencia media absoluta de pixel | ~2,2/255 |
-| Tamano del repositorio en HuggingFace | 11,0 GB |
+| Tamano del repositorio en Hugging Face | 11,0 GB |
 | Tamano efectivo de pesos (transformer + text encoder + VAE + tokenizer) | ~10 GB |
 
 El autor indica explicitamente que a 8 bits ambas cuantizaciones son visualmente casi identicas, y que la diferencia de calidad mas interesante se observa en las variantes de 4 bits.
@@ -74,11 +74,11 @@ El autor indica explicitamente que a 8 bits ambas cuantizaciones son visualmente
 
 | Modelo | Parametros | Cuantizacion | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| z-image-turbo-gptq-mlx-8bit (este repositorio) | 6,15B | 8 bits con correccion GPTQ | ~10 GB / 11,0 GB de repo | Apache 2.0 | HuggingFace, via mflux |
+| z-image-turbo-gptq-mlx-8bit (este repositorio) | 6,15B | 8 bits con correccion GPTQ | ~10 GB / 11,0 GB de repo | Apache 2.0 | Hugging Face, via mflux |
 | Z-Image-Turbo con `mflux-save --quantize 8` (RTN) | 6,15B | 8 bits RTN | ~10 GB | Apache 2.0 (modelo base) | mflux |
-| z-image-turbo-gptq-mlx-4bit | 6,15B | 4 bits con GPTQ | No disponible | Apache 2.0 | HuggingFace |
-| z-image-turbo-gptq-mlx-mixed | 6,15B | Atencion 8 bits + feed-forward 4 bits | 6,3 GB | Apache 2.0 | HuggingFace |
-| Tongyi-MAI/Z-Image-Turbo (original) | 6,15B | Sin cuantizar (fp) | No disponible | Apache 2.0 | HuggingFace |
+| z-image-turbo-gptq-mlx-4bit | 6,15B | 4 bits con GPTQ | No disponible | Apache 2.0 | Hugging Face |
+| z-image-turbo-gptq-mlx-mixed | 6,15B | Atencion 8 bits + feed-forward 4 bits | 6,3 GB | Apache 2.0 | Hugging Face |
+| Tongyi-MAI/Z-Image-Turbo (original) | 6,15B | Sin cuantizar (fp) | No disponible | Apache 2.0 | Hugging Face |
 
 La comparativa con alternativas de otros desarrolladores no esta disponible en la informacion proporcionada. Las unicas referencias de comparacion son las variantes del mismo autor y el modelo base sin cuantizar.
 
@@ -96,7 +96,7 @@ La comparativa con alternativas de otros desarrolladores no esta disponible en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/roman220220/z-image-turbo-gptq-mlx-8bit
+- Repositorio Hugging Face: https://huggingface.co/roman220220/z-image-turbo-gptq-mlx-8bit
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Variante de 4 bits: https://huggingface.co/roman220220/z-image-turbo-gptq-mlx-4bit
 - Variante mixta (atencion 8 bits + feed-forward 4 bits): https://huggingface.co/roman220220/z-image-turbo-gptq-mlx-mixed
@@ -104,4 +104,4 @@ La comparativa con alternativas de otros desarrolladores no esta disponible en l
 - Codigo de cuantizacion (zimage-quant): https://github.com/rromenskyi/quant-ternary/tree/main/zimage-quant
 - LLMTray: https://github.com/ipsupport-llc/llmtray
 
-Nota: la busqueda web asociada a esta ficha no devolvio ningun resultado relevante sobre el modelo; los enlaces listados proceden exclusivamente de la informacion de HuggingFace y de la model card del autor.
+Nota: la busqueda web asociada a esta ficha no devolvio ningun resultado relevante sobre el modelo; los enlaces listados proceden exclusivamente de la informacion de Hugging Face y de la model card del autor.

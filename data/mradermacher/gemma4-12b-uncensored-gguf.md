@@ -88,7 +88,7 @@ La comparativa se limita a lo verificable en la informacion disponible; no se ha
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Gemma4-12B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma4-12B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/toandev/Gemma4-12B-Uncensored
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Gemma4-12B-Uncensored-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Gemma4-12B-Uncensored-GGUF

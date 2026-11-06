@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `penberg/noodle` es un repositorio publicado en HuggingFace por el usuario `penberg` bajo licencia MIT. La model card asociada únicamente contiene la declaración de licencia, sin información adicional sobre arquitectura, parámetros, entrenamiento o capacidades. A fecha de publicación (16 de agosto de 2026), el modelo registra cero descargas y cero likes, lo que sugiere que se trata de un lanzamiento reciente o experimental.
+El modelo `penberg/noodle` es un repositorio publicado en Hugging Face por el usuario `penberg` bajo licencia MIT. La model card asociada únicamente contiene la declaración de licencia, sin información adicional sobre arquitectura, parámetros, entrenamiento o capacidades. A fecha de publicación (16 de agosto de 2026), el modelo registra cero descargas y cero likes, lo que sugiere que se trata de un lanzamiento reciente o experimental.
 
 Dado que no se ha proporcionado ninguna especificación técnica ni documentación complementaria, no es posible determinar qué tipo de modelo es, qué problema resuelve ni por qué sería relevante. Cualquier afirmación sobre su funcionamiento sería especulativa. Esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente las carencias de información.
 
@@ -52,4 +52,4 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni las capacidades de
 
 ## Enlaces
 
-- [HuggingFace - penberg/noodle](https://huggingface.co/penberg/noodle)
+- [Hugging Face - penberg/noodle](https://huggingface.co/penberg/noodle)

@@ -25,7 +25,7 @@ La información proporcionada no incluye detalles sobre la arquitectura (transfo
 
 ## Capacidades
 
-No se dispone de información detallada sobre las capacidades del modelo. El etiquetado en HuggingFace lo marca como `conversational` y `endpoints_compatible`, lo que sugiere que puede usarse en aplicaciones de chat e inferencia vía API. No se ha confirmado si soporta tool calling, generación de código, razonamiento avanzado, visión o funciones multimodales.
+No se dispone de información detallada sobre las capacidades del modelo. El etiquetado en Hugging Face lo marca como `conversational` y `endpoints_compatible`, lo que sugiere que puede usarse en aplicaciones de chat e inferencia vía API. No se ha confirmado si soporta tool calling, generación de código, razonamiento avanzado, visión o funciones multimodales.
 
 ## Casos de uso
 
@@ -63,7 +63,7 @@ No se dispone de información comparativa con otros modelos en los datos proporc
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/tinyopsec/granite-4.2-3b-Heretic-GGUF](https://huggingface.co/tinyopsec/granite-4.2-3b-Heretic-GGUF)
-- Modelo base en HuggingFace: [https://huggingface.co/tinyopsec/granite-4.2-3b-Heretic](https://huggingface.co/tinyopsec/granite-4.2-3b-Heretic)
+- Hugging Face: [https://huggingface.co/tinyopsec/granite-4.2-3b-Heretic-GGUF](https://huggingface.co/tinyopsec/granite-4.2-3b-Heretic-GGUF)
+- Modelo base en Hugging Face: [https://huggingface.co/tinyopsec/granite-4.2-3b-Heretic](https://huggingface.co/tinyopsec/granite-4.2-3b-Heretic)
 - Variante relacionada (abliterated): [https://huggingface.co/snellchapo/granite-4.2-3b-heretic-abliterated](https://huggingface.co/snellchapo/granite-4.2-3b-heretic-abliterated)
 - Repositorio de IBM Granite 4.0 en GitHub: [https://github.com/ibm-granite/granite-4.0-language-models](https://github.com/ibm-granite/granite-4.0-language-models)

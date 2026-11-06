@@ -69,9 +69,9 @@ No se han publicado en la información disponible resultados en benchmarks está
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3-8B Open-CAD-Tokenizer (este) | 8B + LoRA rank 32 | no disponible | Generación/edición CAD vía programa SEM en texto plano | llama3 | HuggingFace, 0 descargas |
+| Llama-3-8B Open-CAD-Tokenizer (este) | 8B + LoRA rank 32 | no disponible | Generación/edición CAD vía programa SEM en texto plano | llama3 | Hugging Face, 0 descargas |
 | CAD-Tokenizer (release de los autores) | no disponible en la información | no disponible | Tokenizador específico de CAD | no disponible | Paper arXiv:2509.21150; release no confirmado en la información |
-| LLaMA 3 8B base | 8B | 8 192 tokens | Modelo de propósito general | llama3 | HuggingFace (Meta) |
+| LLaMA 3 8B base | 8B | 8 192 tokens | Modelo de propósito general | llama3 | Hugging Face (Meta) |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada; el autor señala explícitamente que sus números no son comparables con los del paper de CAD-Tokenizer.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0xrushi/Llama-3-8B-Open-CAD-Tokenizer-plaintext-lora
+- Hugging Face: https://huggingface.co/0xrushi/Llama-3-8B-Open-CAD-Tokenizer-plaintext-lora
 - Paper CAD-Tokenizer: https://arxiv.org/abs/2509.21150
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B
 - Licencia Meta Llama 3: https://llama.meta.com/llama3/license/

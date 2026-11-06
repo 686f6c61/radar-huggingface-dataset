@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Slither spatial world model v2 es un modelo de mundo (world model) especializado en el videojuego slither.io, publicado por el usuario mundoamundo en HuggingFace. Se trata de un modelo de dinamica espacial causal de 303 millones de parametros que aprende a predecir la evolucion futura de fotogramas de video a partir de un historial de cinco segundos y de unas acciones de control de angulo y boost. El modelo no genera texto ni codigo: su objetivo es modelar la dinamica del entorno de juego, una pieza tipica en pipelines de investigacion en agentes basados en modelo.
+Slither spatial world model v2 es un modelo de mundo (world model) especializado en el videojuego slither.io, publicado por el usuario mundoamundo en Hugging Face. Se trata de un modelo de dinamica espacial causal de 303 millones de parametros que aprende a predecir la evolucion futura de fotogramas de video a partir de un historial de cinco segundos y de unas acciones de control de angulo y boost. El modelo no genera texto ni codigo: su objetivo es modelar la dinamica del entorno de juego, una pieza tipica en pipelines de investigacion en agentes basados en modelo.
 
 Tecnicamente, el sistema combina un encoder, una proyeccion y un decoder DINO-Tok congelados (procedentes de una version publicada) con un nucleo de dinamica espacial causal entrenado mediante flow matching continuo sobre video de 768×432 pixeles a 15 Hz. La informacion disponible indica que el entrenamiento de la cabeza de politica (policy head) se aborda en una etapa posterior y separada, por lo que esta publicacion cubre unicamente el modelo de mundo.
 
-La relevancia del modelo es acotada pero clara: se enmarca en la linea de world models para entornos interactivos y aplica tecnicas de generacion de video (flow matching) a un dominio muy concreto (slither.io). El repositorio pesa solo 0,1 GB porque los pesos no se versionan en el propio repositorio, sino que se almacenan en buckets de HuggingFace con checkpoints reanudables "latest" y "best".
+La relevancia del modelo es acotada pero clara: se enmarca en la linea de world models para entornos interactivos y aplica tecnicas de generacion de video (flow matching) a un dominio muy concreto (slither.io). El repositorio pesa solo 0,1 GB porque los pesos no se versionan en el propio repositorio, sino que se almacenan en buckets de Hugging Face con checkpoints reanudables "latest" y "best".
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ La relevancia del modelo es acotada pero clara: se enmarca en la linea de world 
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (el modelo opera sobre video, no sobre texto) |
 | Licencia | other, denominada "dinov3", con enlace a https://github.com/facebookresearch/dinov3/blob/main/LICENSE |
-| Formato de pesos | no disponible; los checkpoints residen en buckets de HuggingFace y no en el repositorio (0,1 GB) |
+| Formato de pesos | no disponible; los checkpoints residen en buckets de Hugging Face y no en el repositorio (0,1 GB) |
 
 ## Arquitectura y entrenamiento
 
@@ -72,12 +72,12 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 - Contexto limitado: cinco segundos de historial; no se documenta soporte para ventanas temporales mayores.
 - Idioma: no disponible; el modelo opera sobre video, no sobre lenguaje.
 - Licencia: la licencia es "other" bajo el nombre "dinov3" y enlaza al LICENSE de DINOv3 de Meta. Es imprescindible revisar ese texto antes de cualquier uso comercial, ya que las condiciones de la licencia DINOv3 pueden imponer restricciones relevantes.
-- Estado del artefacto: repositorio de 0,1 GB sin pesos incluidos; los checkpoints viven en buckets de HuggingFace que rotan dos slots, por lo que un checkpoint concreto puede dejar de estar disponible. Se recomienda fijar hashes desde `latest.json` o `best.json`.
+- Estado del artefacto: repositorio de 0,1 GB sin pesos incluidos; los checkpoints viven en buckets de Hugging Face que rotan dos slots, por lo que un checkpoint concreto puede dejar de estar disponible. Se recomienda fijar hashes desde `latest.json` o `best.json`.
 - Madurez: 0 descargas y 1 like en el momento de la consulta; es una publicacion de investigacion temprana, sin pipeline declarado ni validacion externa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mundoamundo/slither-spatial-v2-20261001
+- Modelo en Hugging Face: https://huggingface.co/mundoamundo/slither-spatial-v2-20261001
 - Buckets de checkpoints (latest/best): https://huggingface.co/buckets/mundoamundo/slither-spatial-v2-20261001
 - Dataset de entrenamiento: https://huggingface.co/datasets/mundoamundo/slither-wam-video-actions (commit `c60388c8b625379d2782e9a673c3d850ec7d4b85`)
 - Licencia DINOv3: https://github.com/facebookresearch/dinov3/blob/main/LICENSE

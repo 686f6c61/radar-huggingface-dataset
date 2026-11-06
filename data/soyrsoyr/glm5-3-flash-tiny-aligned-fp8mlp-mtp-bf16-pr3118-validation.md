@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Naturaleza |
 |---|---|---|---|---|---|
-| Este artefacto (`soyrsoyr/GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-BF16-pr3118-validation`) | 84,77 M | No disponible (validado a 1024 tokens) | No disponible | HuggingFace, 0 descargas, 0 likes | Fixture estructural con pesos aleatorios |
-| `inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP` (modelo base) | ≈0,1 B según nomenclatura | No disponible | No disponible | HuggingFace | Modelo de origen del que se derivan dimensiones y formato |
+| Este artefacto (`soyrsoyr/GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-BF16-pr3118-validation`) | 84,77 M | No disponible (validado a 1024 tokens) | No disponible | Hugging Face, 0 descargas, 0 likes | Fixture estructural con pesos aleatorios |
+| `inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP` (modelo base) | ≈0,1 B según nomenclatura | No disponible | No disponible | Hugging Face | Modelo de origen del que se derivan dimensiones y formato |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No se han identificado modelos comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soyrsoyr/GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-BF16-pr3118-validation
+- Modelo en Hugging Face: https://huggingface.co/soyrsoyr/GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-BF16-pr3118-validation
 - Modelo base: https://huggingface.co/inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP/tree/443ac6c54ba0d65ad8a7c701af4fd22a960c9e9c
 - Implementación de referencia (PR 3118 de llm-compressor, commit `87347881`): https://github.com/soyr-redhat/llm-compressor/commit/87347881b46df8786b9fc463965f80504914a98f
 - No se han encontrado otros enlaces relevantes en la búsqueda web; los resultados devueltos correspondían a listas de reproducción y servicios de YouTube, sin relación con el modelo.

@@ -71,7 +71,7 @@ No hay información sobre modelos similares en el ecosistema MLX con abliteratio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ailexleon/Huihui-Qwen3.8-27B-abliterated-mlx-mixed_4_6
+- Repositorio Hugging Face: https://huggingface.co/ailexleon/Huihui-Qwen3.8-27B-abliterated-mlx-mixed_4_6
 - Modelo base original: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Repositorio de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Otra conversión MLX del mismo modelo: https://huggingface.co/ailexleon/Huihui-Qwen3.8-27B-abliterated-mlx-4Bit</think>## Resumen
@@ -143,7 +143,7 @@ No se dispone de comparación de rendimiento con otros modelos de la misma categ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ailexleon/Huihui-Qwen3.8-27B-abliterated-mlx-mixed_4_6
+- Repositorio Hugging Face: https://huggingface.co/ailexleon/Huihui-Qwen3.8-27B-abliterated-mlx-mixed_4_6
 - Modelo base original: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Otra versión MLX del mismo modelo: https://huggingface.co/ailexleon/Huihui-Qwen3.8-27B-abliterated-mlx-4Bit

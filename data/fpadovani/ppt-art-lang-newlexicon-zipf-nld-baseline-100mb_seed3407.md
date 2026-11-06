@@ -55,10 +55,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fpadovani/ppt-art-lang-newlexicon-zipf-nld-baseline-100mb_seed3407 | 86,5M | no disponible | Neerlandes | no disponible | HuggingFace |
-| fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed3407 | 86,5M | no disponible | Ingles | no disponible | HuggingFace |
-| fpadovani/ppt-art-lang-newlexicon-eng-baseline-100mb_seed455 | 86,5M | no disponible | Ingles | no disponible | HuggingFace |
-| goldfish-models/nld_latn_100mb | 86,5M (aprox.) | no disponible | Neerlandes | no disponible | HuggingFace |
+| fpadovani/ppt-art-lang-newlexicon-zipf-nld-baseline-100mb_seed3407 | 86,5M | no disponible | Neerlandes | no disponible | Hugging Face |
+| fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed3407 | 86,5M | no disponible | Ingles | no disponible | Hugging Face |
+| fpadovani/ppt-art-lang-newlexicon-eng-baseline-100mb_seed455 | 86,5M | no disponible | Ingles | no disponible | Hugging Face |
+| goldfish-models/nld_latn_100mb | 86,5M (aprox.) | no disponible | Neerlandes | no disponible | Hugging Face |
 
 Los modelos de la serie comparten la misma arquitectura y tamaño, diferenciándose únicamente en el idioma y la semilla de entrenamiento. El modelo base goldfish es el punto de partida común.
 
@@ -67,14 +67,14 @@ Los modelos de la serie comparten la misma arquitectura y tamaño, diferenciánd
 - Tamaño reducido: con solo 86,5M de parámetros, el modelo tiene una capacidad limitada para tareas complejas y puede producir texto incoherente o repetitivo en generaciones largas.
 - Sesgos y alucinaciones: al ser un modelo pequeño entrenado con un corpus limitado (100 MB), es probable que presente sesgos presentes en los datos de entrenamiento y una tendencia a alucinar hechos o nombres.
 - Contexto limitado: no se ha especificado la longitud de contexto, pero es probable que sea corta (típicamente 512 o 1024 tokens en modelos de este tamaño), lo que restringe su uso en conversaciones largas o documentos extensos.
-- Licencia no clara: la model card indica "licence: license" sin especificar términos, y los metadatos de HuggingFace muestran "no disponible". Esto impide su uso comercial sin verificación previa.
+- Licencia no clara: la model card indica "licence: license" sin especificar términos, y los metadatos de Hugging Face muestran "no disponible". Esto impide su uso comercial sin verificación previa.
 - Idioma único: el modelo solo genera texto en neerlandés; no es adecuado para tareas multilingües.
 - Sin soporte para herramientas ni agentes: no se ha documentado ninguna capacidad de tool calling o integración con APIs externas.
 - Datos de entrenamiento desconocidos: no se ha publicado información sobre el dataset de fine-tuning, lo que dificulta evaluar posibles sesgos o limitaciones de dominio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-nld-baseline-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-nld-baseline-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Variante en inglés (seed3407): https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed3407
 - Variante en inglés (seed455): https://llm-explorer.com/model/fpadovani%2Fppt-art-lang-newlexicon-eng-baseline-100mb_seed455,6mkpVFlOXDWzjKl0Gjn5g5

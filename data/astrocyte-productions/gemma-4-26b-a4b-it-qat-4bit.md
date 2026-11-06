@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables con cifras 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/astrocyte-productions/gemma-4-26B-A4B-it-qat-4bit
+- Modelo en Hugging Face: https://huggingface.co/astrocyte-productions/gemma-4-26B-A4B-it-qat-4bit
 - Checkpoint de origen: https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-unquantized
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Repositorio mlx-vlm: no disponible en la información proporcionada

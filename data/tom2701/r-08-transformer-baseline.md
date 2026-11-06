@@ -2,7 +2,7 @@
 
 ## Resumen
 
-R-08 Transformer Baseline es un modelo de lenguaje causal (decoder-only) estilo GPT-2 con aproximadamente 45 millones de parámetros, desarrollado por Thomas Seri (usuario Tom2701 en HuggingFace, proyecto Sentinel LifeOS). No es un modelo de propósito general: se trata de un modelo de control científico, entrenado específicamente para realizar un estudio comparativo A/B contra la familia de arquitecturas geodéticas Sentinel R-08 (versiones v7 Pyramid y v7.2), manteniendo igualdad de datos, vocabulario, contexto y número de parámetros.
+R-08 Transformer Baseline es un modelo de lenguaje causal (decoder-only) estilo GPT-2 con aproximadamente 45 millones de parámetros, desarrollado por Thomas Seri (usuario Tom2701 en Hugging Face, proyecto Sentinel LifeOS). No es un modelo de propósito general: se trata de un modelo de control científico, entrenado específicamente para realizar un estudio comparativo A/B contra la familia de arquitecturas geodéticas Sentinel R-08 (versiones v7 Pyramid y v7.2), manteniendo igualdad de datos, vocabulario, contexto y número de parámetros.
 
 El modelo emplea un transformer denso de 14 capas de atención causal con Pre-LayerNorm y weight tying, un vocabulario subword muy reducido de 1.251 piezas y una ventana de contexto de 256 tokens. Fue preentrenado con 740 millones de tokens del dataset `v22_chinchilla_mix`, siguiendo una ratio óptima tipo Chinchilla para su tamaño, con 185.000 pasos de preentrenamiento y 10.000 pasos de midtraining.
 
@@ -81,7 +81,7 @@ No se han publicado resultados en benchmarks estandarizados como MMLU, HumanEval
 | BLiMP-IT | 85,84% | 80,95% | 82,02% |
 | Consumo energetico | 3,3 mJ/token | 2,3 mJ/token | 2,4 mJ/token |
 | Licencia | Apache 2.0 | no disponible | no disponible |
-| Disponibilidad | HuggingFace (safetensors, GGUF) | HuggingFace y GitHub | HuggingFace y GitHub |
+| Disponibilidad | Hugging Face (safetensors, GGUF) | Hugging Face y GitHub | Hugging Face y GitHub |
 
 No se incluyen comparativas con modelos externos (GPT-2 124M, Pythia 70M, TinyLlama, etc.) porque no existen datos publicados que evaluen este modelo en los mismos benchmarks estandarizados.
 
@@ -98,9 +98,9 @@ No se incluyen comparativas con modelos externos (GPT-2 124M, Pythia 70M, TinyLl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tom2701/R-08-Transformer-Baseline
-- Sentinel R-08 (v7 Pyramid) en HuggingFace: https://huggingface.co/Tom2701/R-08
-- Sentinel R-08 v7.2 en HuggingFace: https://huggingface.co/Tom2701/R-08-v7.2
+- Modelo en Hugging Face: https://huggingface.co/Tom2701/R-08-Transformer-Baseline
+- Sentinel R-08 (v7 Pyramid) en Hugging Face: https://huggingface.co/Tom2701/R-08
+- Sentinel R-08 v7.2 en Hugging Face: https://huggingface.co/Tom2701/R-08-v7.2
 - GitHub Sentinel R-08: https://github.com/Thomasseri/R-08
 - GitHub Sentinel R-08 v7.2: https://github.com/Thomasseri/R-08-v7.2
 - No se han encontrado enlaces a papers, demos ni publicaciones adicionales en la informacion disponible.

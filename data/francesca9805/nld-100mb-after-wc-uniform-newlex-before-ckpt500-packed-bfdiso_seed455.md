@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/nld-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455` es un modelo de generacion de texto publicado por el usuario francesca9805 en HuggingFace. Se trata de un ajuste fino (SFT) realizado con la libreria TRL sobre el checkpoint `francesca9805/ppt-wc-uniform-newlex-nld-before-100mb-packed-bfdiso_seed455`, del mismo autor. Con 124.770.816 parametros, se situa en la categoria de modelos pequenos (aproximadamente 125 M), lo que lo hace desplegable incluso en CPU o en GPU de gama baja.
+El modelo `francesca9805/nld-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455` es un modelo de generacion de texto publicado por el usuario francesca9805 en Hugging Face. Se trata de un ajuste fino (SFT) realizado con la libreria TRL sobre el checkpoint `francesca9805/ppt-wc-uniform-newlex-nld-before-100mb-packed-bfdiso_seed455`, del mismo autor. Con 124.770.816 parametros, se situa en la categoria de modelos pequenos (aproximadamente 125 M), lo que lo hace desplegable incluso en CPU o en GPU de gama baja.
 
 La nomenclatura del identificador sugiere un experimento de investigacion centrado en tokenizacion y curriculum de entrenamiento: los sufijos "newlex", "packed", "before-ckpt500" y "seed455" apuntan a pruebas sistematicas sobre vocabulario, empaquetado de secuencias, puntos de control intermedios y semillas aleatorias. La vinculacion del autor con la Universidad de Groningen (visible en el enlace de Weights & Biases) refuerza la hipotesis de un artefacto de investigacion mas que de un modelo orientado a produccion.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| nld-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455 | 124,8 M | No disponible | No disponible | HuggingFace, 0 descargas | Ajuste SFT experimental; sin benchmarks ni idiomas declarados |
+| nld-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455 | 124,8 M | No disponible | No disponible | Hugging Face, 0 descargas | Ajuste SFT experimental; sin benchmarks ni idiomas declarados |
 | GPT-2 (124 M, OpenAI) | 124 M | 1024 tokens | Licencia MIT modificada | Ampliamente disponible | Referencia historica de la misma escala; con benchmarks publicos |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache 2.0 | HuggingFace, ampliamente descargado | Entrenado sobre un volumen de tokens muy superior; benchmarks publicados |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | HuggingFace | Escala superior y contexto mucho mayor; disponible para uso comercial |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache 2.0 | Hugging Face, ampliamente descargado | Entrenado sobre un volumen de tokens muy superior; benchmarks publicados |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | Hugging Face | Escala superior y contexto mucho mayor; disponible para uso comercial |
 
 Las especificaciones de los modelos de comparacion corresponden a su documentacion publica. La comparacion con el modelo objeto de esta ficha es limitada porque este no publica contexto, licencia ni resultados de evaluacion, por lo que no es posible establecer una comparacion de rendimiento real.
 
@@ -93,10 +93,10 @@ Las especificaciones de los modelos de comparacion corresponden a su documentaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-nld-before-100mb-packed-bfdiso_seed455
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/x361fohi
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper de TRL (von Werra et al., 2020): https://github.com/huggingface/trl
 
-Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los enlaces listados proceden exclusivamente de la informacion del repositorio de HuggingFace.
+Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los enlaces listados proceden exclusivamente de la informacion del repositorio de Hugging Face.

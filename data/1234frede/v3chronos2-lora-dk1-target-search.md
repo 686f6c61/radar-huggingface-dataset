@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`1234Frede/v3chronos2-lora-dk1-target-search` es un adaptador LoRA publicado en HuggingFace por el usuario `1234Frede`, construido sobre el modelo base `amazon/chronos-2`. No es un modelo completo: el repositorio contiene unicamente los pesos del adaptador y la configuracion de PEFT (version 0.20.0 declarada en la model card), que deben cargarse junto con el modelo base para poder ejecutar inferencia. El nombre del repositorio sugiere un experimento de busqueda de objetivos sobre la segunda version de la familia Chronos, pero el autor no documenta ni la tarea ni el procedimiento.
+`1234Frede/v3chronos2-lora-dk1-target-search` es un adaptador LoRA publicado en Hugging Face por el usuario `1234Frede`, construido sobre el modelo base `amazon/chronos-2`. No es un modelo completo: el repositorio contiene unicamente los pesos del adaptador y la configuracion de PEFT (version 0.20.0 declarada en la model card), que deben cargarse junto con el modelo base para poder ejecutar inferencia. El nombre del repositorio sugiere un experimento de busqueda de objetivos sobre la segunda version de la familia Chronos, pero el autor no documenta ni la tarea ni el procedimiento.
 
-La utilidad de esta ficha es necesariamente limitada, y conviene decirlo con claridad. La model card es la plantilla vacia por defecto de HuggingFace, con todos los campos relevantes marcados como `[More Information Needed]`: no hay descripcion del dataset, ni hiperparametros, ni resultados de evaluacion, ni instrucciones de uso. El repositorio registra 0 descargas y 0 "likes", ocupa 0,0 GB y no declara licencia ni idiomas soportados.
+La utilidad de esta ficha es necesariamente limitada, y conviene decirlo con claridad. La model card es la plantilla vacia por defecto de Hugging Face, con todos los campos relevantes marcados como `[More Information Needed]`: no hay descripcion del dataset, ni hiperparametros, ni resultados de evaluacion, ni instrucciones de uso. El repositorio registra 0 descargas y 0 "likes", ocupa 0,0 GB y no declara licencia ni idiomas soportados.
 
 Por el identificador del modelo base, `amazon/chronos-2` pertenece a la familia Chronos de Amazon, orientada a la previsión de series temporales; este dato no aparece confirmado en la informacion proporcionada y debe verificarse en la pagina del modelo base. En consecuencia, esta ficha describe un artefacto experimental sin validacion publica y no un modelo listo para produccion.
 
@@ -31,7 +31,7 @@ Por el identificador del modelo base, `amazon/chronos-2` pertenece a la familia 
 
 LoRA (Low-Rank Adaptation) es una tecnica de ajuste fino parametrizado eficiente que congela los pesos del modelo base e inserta matrices de bajo rango en determinadas capas, de modo que solo se entrenan esos parametros adicionales. El repositorio se etiqueta como `peft`, `lora` y `transformers`, con `base_model:adapter:amazon/chronos-2`, lo que confirma que se trata de un adaptador y no de un checkpoint completo. No se especifican el rango (`r`), el valor de `alpha`, el `dropout` ni los modulos objetivo del adaptador; el sufijo `target-search` del nombre podria referirse a una busqueda de modulos objetivo, pero es una interpretacion no confirmada por el autor.
 
-No hay informacion sobre datos de entrenamiento: ni numero de tokens, ni composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Tampoco se documentan el regimen de precision (fp32, bf16, etc.), el numero de pasos, la tasa de aprendizaje ni el hardware empleado. La unica referencia tecnica del repositorio es la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono incluido en la plantilla de HuggingFace, y no a un paper del modelo.
+No hay informacion sobre datos de entrenamiento: ni numero de tokens, ni composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Tampoco se documentan el regimen de precision (fp32, bf16, etc.), el numero de pasos, la tasa de aprendizaje ni el hardware empleado. La unica referencia tecnica del repositorio es la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono incluido en la plantilla de Hugging Face, y no a un paper del modelo.
 
 ## Capacidades
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 1234Frede/v3chronos2-lora-dk1-target-search | Adaptador LoRA (PEFT) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| amazon/chronos-2 | Modelo base de series temporales (segun identificador) | no disponible | no disponible | no disponible | HuggingFace |
+| 1234Frede/v3chronos2-lora-dk1-target-search | Adaptador LoRA (PEFT) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| amazon/chronos-2 | Modelo base de series temporales (segun identificador) | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No hay datos verificables que permitan comparar este adaptador con otras alternativas de su categoria, ni siquiera con el modelo base sobre el que se construye.
@@ -90,7 +90,7 @@ No hay datos verificables que permitan comparar este adaptador con otras alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/1234Frede/v3chronos2-lora-dk1-target-search
+- Modelo en Hugging Face: https://huggingface.co/1234Frede/v3chronos2-lora-dk1-target-search
 - Modelo base: https://huggingface.co/amazon/chronos-2
 - Paper citado en la model card (Lacoste et al., 2019, estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental: https://mlco2.github.io/impact#compute

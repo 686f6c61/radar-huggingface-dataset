@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario DCXZ12D bajo el identificador `DCXZ12D/MyAwesomeModel-TestRepo`. La model card del autor lo presenta como un modelo conversacional de razonamiento con mejoras sustanciales respecto a una versión anterior, apoyándose en mayor cómputo de post-entrenamiento y en mecanismos de optimización algorítmica. El texto menciona mejoras concretas en matemáticas, programación y lógica general, además de una reducción de la tasa de alucinación y un soporte reforzado de function calling. Se cita un incremento de precisión en AIME 2025 del 70 % al 87,5 % y un aumento del número medio de tokens de razonamiento por pregunta, de 12K a 23K.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario DCXZ12D bajo el identificador `DCXZ12D/MyAwesomeModel-TestRepo`. La model card del autor lo presenta como un modelo conversacional de razonamiento con mejoras sustanciales respecto a una versión anterior, apoyándose en mayor cómputo de post-entrenamiento y en mecanismos de optimización algorítmica. El texto menciona mejoras concretas en matemáticas, programación y lógica general, además de una reducción de la tasa de alucinación y un soporte reforzado de function calling. Se cita un incremento de precisión en AIME 2025 del 70 % al 87,5 % y un aumento del número medio de tokens de razonamiento por pregunta, de 12K a 23K.
 
 Sin embargo, existen señales claras de que el repositorio es una prueba o un marcador de posición. El tamaño del repositorio es de 0,0 GB, cuenta con 0 descargas y 0 «likes», y las etiquetas declaradas (`transformers`, `pytorch`, `bert`, `feature-extraction`) no coinciden con el modelo de chat y razonamiento que describe la model card. Tampoco se especifican parámetros totales, longitud de contexto, idiomas soportados ni formato de pesos. Las fechas de creación y actualización indicadas (17 de septiembre de 2026) son posteriores a la fecha habitual de publicación, lo que refuerza la hipótesis de contenido de prueba.
 
@@ -99,7 +99,7 @@ No es posible establecer una comparativa fiable. La model card compara el modelo
 
 | Referencia | Parámetros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| MyAwesomeModel | No disponible | No disponible | MIT | Repositorio HuggingFace con 0 descargas y 0,0 GB | Sin pesos confirmados |
+| MyAwesomeModel | No disponible | No disponible | MIT | Repositorio Hugging Face con 0 descargas y 0,0 GB | Sin pesos confirmados |
 | Model1 | No disponible | No disponible | No disponible | No disponible | Referencia anonimizada |
 | Model2 | No disponible | No disponible | No disponible | No disponible | Referencia anonimizada |
 | Model1-v2 | No disponible | No disponible | No disponible | No disponible | Referencia anonimizada |
@@ -121,7 +121,7 @@ No se dispone de información sobre alternativas reales de la misma categoría e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DCXZ12D/MyAwesomeModel-TestRepo
+- Modelo en Hugging Face: https://huggingface.co/DCXZ12D/MyAwesomeModel-TestRepo
 - Repositorio de código para ejecución local: mencionado en la model card, sin URL proporcionada
 - Web de chat oficial: mencionada en la model card, sin URL proporcionada
 - Plataforma de API oficial: mencionada en la model card, sin URL proporcionada

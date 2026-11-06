@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TestGeniy 500M es un modelo de lenguaje de pequeño tamaño desarrollado por el usuario Asilarkness y publicado en HuggingFace. Con aproximadamente 550 millones de parámetros, se presenta como una propuesta compacta orientada a tareas de generación de texto, aunque la documentación disponible es extremadamente limitada. La model card apenas describe la arquitectura básica, sin detallar el proceso de entrenamiento, los datos utilizados ni las capacidades específicas.
+TestGeniy 500M es un modelo de lenguaje de pequeño tamaño desarrollado por el usuario Asilarkness y publicado en Hugging Face. Con aproximadamente 550 millones de parámetros, se presenta como una propuesta compacta orientada a tareas de generación de texto, aunque la documentación disponible es extremadamente limitada. La model card apenas describe la arquitectura básica, sin detallar el proceso de entrenamiento, los datos utilizados ni las capacidades específicas.
 
 El modelo destaca por emplear una configuración técnica particular: 1280 dimensiones de representación, 24 capas, atención con consultas agrupadas (GQA 10:2), tres capas de atención local y una capa de atención global sin codificación posicional (NoPE), junto con SwiGLU, normalización de Q y K, y embeddings atados. También se menciona el uso de tokens de dígitos, lo que sugiere un enfoque específico para tareas numéricas, aunque no se aportan más detalles.
 
@@ -48,7 +48,7 @@ Al no disponer de información sobre cuantizaciones ni requisitos oficiales, se 
 - VRAM estimada: entre 1 y 2 GB en fp16, dependiendo de la longitud de contexto y el batch.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM sería suficiente para inferencia básica. Una RTX 3060, RTX 4060 o similar podría ejecutarlo sin problemas. También es viable en hardware de gama baja.
 - Compatibilidad con GPU de consumo: sí, es un modelo pequeño que cabe en la mayoría de GPUs modernas.
-- Opciones de despliegue: al ser un modelo de PyTorch con pesos en safetensors, se puede servir con vLLM, llama.cpp (si se convierte a GGUF), Ollama, o mediante HuggingFace Transformers. No hay integraciones oficiales documentadas.
+- Opciones de despliegue: al ser un modelo de PyTorch con pesos en safetensors, se puede servir con vLLM, llama.cpp (si se convierte a GGUF), Ollama, o mediante Hugging Face Transformers. No hay integraciones oficiales documentadas.
 - Latencia y throughput: no disponibles. Dependerán del hardware y de la implementación.
 
 ## Comparativa con modelos similares
@@ -65,6 +65,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace - Asilarkness/testgeniy](https://huggingface.co/Asilarkness/testgeniy)
+- [Hugging Face - Asilarkness/testgeniy](https://huggingface.co/Asilarkness/testgeniy)
 
 No se han encontrado papers, blogs, repositorios adicionales ni demos asociados al modelo en la información proporcionada.

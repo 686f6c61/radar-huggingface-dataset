@@ -70,7 +70,7 @@ La versión V5, aún no publicada, alcanza un Dice por caso superior pero requie
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SwinUNETR liver-tumor (este modelo) | 63,1 M | TC 3D, ventana deslizante (96, 96, 64) | Dice hígado 0,916; tumor 0,561 (LiTS, 27 casos) | MIT | Pesos en HuggingFace, código en GitHub |
+| SwinUNETR liver-tumor (este modelo) | 63,1 M | TC 3D, ventana deslizante (96, 96, 64) | Dice hígado 0,916; tumor 0,561 (LiTS, 27 casos) | MIT | Pesos en Hugging Face, código en GitHub |
 | nnU-Net (referencia en segmentación médica) | no disponible | Volúmenes 3D arbitrarios | no disponible en esta ficha | no disponible | Código abierto |
 | UNETR (Tang et al.) | no disponible | Volúmenes 3D | no disponible en esta ficha | no disponible | Código abierto |
 | Otros pesos SwinUNETR de MONAI Model Zoo | no disponible | TC 3D | no disponible en esta ficha | no disponible | MONAI Model Zoo |
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparativos directos en la información pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Wafaamidouni/swinunetr-liver-tumor
+- Hugging Face: https://huggingface.co/Wafaamidouni/swinunetr-liver-tumor
 - Repositorio GitHub del autor (pipeline completo, integración 3D Slicer, segmentación de Couinaud, estimación de FLR, control por gestos): https://github.com/wafamidouni1/liver-tumor-segmentation
 - LiTS Challenge (Bilic et al., 2023): no disponible enlace directo en la información proporcionada
 - MONAI: https://monai.io

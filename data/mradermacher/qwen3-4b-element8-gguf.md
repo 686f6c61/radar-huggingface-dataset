@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) en la informacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-4B-Element8-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-4B-Element8-GGUF
 - Modelo base (merge original): https://huggingface.co/nightmedia/Qwen3-4B-Element8
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Qwen3-4B-Element8-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3-4B-Element8-GGUF

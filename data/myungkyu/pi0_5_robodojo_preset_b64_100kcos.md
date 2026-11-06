@@ -52,23 +52,23 @@ No se han publicado resultados de benchmarks en la información disponible.
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lerobot/pi05_base (base) | 4.143.404.816 | no disponible | VLA base | no disponible | HuggingFace |
-| Myungkyu/pi0_5_robodojo_preset_b64_60k | no disponible | no disponible | Fine-tuning intermedio | no disponible | HuggingFace |
-| Myungkyu/pi0_5_robodojo_preset_b64_100kcos | 4.143.404.816 | no disponible | Fine-tuning final | no disponible | HuggingFace |
+| lerobot/pi05_base (base) | 4.143.404.816 | no disponible | VLA base | no disponible | Hugging Face |
+| Myungkyu/pi0_5_robodojo_preset_b64_60k | no disponible | no disponible | Fine-tuning intermedio | no disponible | Hugging Face |
+| Myungkyu/pi0_5_robodojo_preset_b64_100kcos | 4.143.404.816 | no disponible | Fine-tuning final | no disponible | Hugging Face |
 
 La comparativa se limita a los checkpoints disponibles en el mismo repositorio, ya que no se dispone de datos de modelos equivalentes en la información proporcionada.
 
 ## Limitaciones y advertencias
 - La licencia no está especificada, por lo que el uso comercial es incierto.
 - No se han publicado resultados de benchmarks, lo que impide validar su rendimiento frente a otros modelos.
-- La configuración referencia el backbone y tokenizer por identificador de HuggingFace o por ruta local; es necesario apuntarlos a las copias locales antes de cargar el modelo.
+- La configuración referencia el backbone y tokenizer por identificador de Hugging Face o por ruta local; es necesario apuntarlos a las copias locales antes de cargar el modelo.
 - Está especializado en tareas RoboDojo de mesa bimanuales; su generalización a otros entornos o tareas no está demostrada.
 - No soporta entrada de keyframe ni memory attestation, lo que puede limitar el seguimiento de tareas muy largas.
 - No se han evaluado sesgos ni riesgos de alucinación en la generación de acciones.
 - El repositorio no registra descargas ni interacciones de la comunidad, lo que sugiere una validación externa limitada.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/pi0_5_robodojo_preset_b64_100kcos
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/pi0_5_robodojo_preset_b64_100kcos
 - Dataset utilizado: https://huggingface.co/datasets/Myungkyu/RoboDojo-preset-gemini
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Checkpoint intermedio mencionado: `pi0_5_robodojo_preset_b64_60k` (no se proporciona URL explícita en la información)

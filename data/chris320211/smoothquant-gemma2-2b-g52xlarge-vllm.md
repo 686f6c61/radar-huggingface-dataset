@@ -25,7 +25,7 @@ La relevancia práctica es doble: por un lado, demuestra un flujo de cuantizaci�
 
 La arquitectura subyacente es la de Gemma 2 2B instruct de Google: un transformer decoder-only con atención multi-cabeza y las innovaciones propias de la familia Gemma 2 (atención alternada local/global y logit soft-capping, según la documentación pública del modelo base). Sobre ese modelo no se ha reentrenado nada: el checkpoint es el resultado de una cuantización post-entrenamiento con SmoothQuant, una técnica que migra la dificultad de cuantización de las activaciones hacia los pesos mediante un escalado por canal, permitiendo W8A8 sin pérdida severa de calidad.
 
-El proceso se realizó con QuantPort, la herramienta del propio autor, y el artefacto resultante se renombró al esquema `compressed-tensors` con perfil `w8a8_int8`. Los bytes int8 son idénticos a los del artefacto original; solo cambian los nombres de los tensores y los metadatos. El autor reporta que la exportación se validó comparando el ratio de perplejidad contra el benchmark de HuggingFace del artefacto nativo: el drift entre ambos es de 1,0069, por debajo del umbral de 1,02 que exige su comprobación. No hay datos sobre el dataset de calibración empleado para SmoothQuant ni sobre el número de muestras.
+El proceso se realizó con QuantPort, la herramienta del propio autor, y el artefacto resultante se renombró al esquema `compressed-tensors` con perfil `w8a8_int8`. Los bytes int8 son idénticos a los del artefacto original; solo cambian los nombres de los tensores y los metadatos. El autor reporta que la exportación se validó comparando el ratio de perplejidad contra el benchmark de Hugging Face del artefacto nativo: el drift entre ambos es de 1,0069, por debajo del umbral de 1,02 que exige su comprobación. No hay datos sobre el dataset de calibración empleado para SmoothQuant ni sobre el número de muestras.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ Mediciones del autor con vLLM 0.30.0 en una NVIDIA GeForce RTX 3090, sobre WikiT
 | Decode tok/s, batch 16 | 2.332,5 | 1.677,2 | 75,5 | 149,8 |
 | VRAM pico GB | no disponible | no disponible | 8,09 | 9,97 |
 
-Datos derivados reportados por el autor: ratio de perplejidad int8/bf16 de 1,0285; drift frente al ratio del benchmark de HuggingFace (1,0215) de 1,0069; speedup de prefill de 2,02×; speedup de decode de 1,41× a batch 1 y 1,39× a batch 16. Frente a Transformers bf16, vLLM int8 logra 3,13× en prefill, 18,62× en decode a batch 1 y 15,57× a batch 16. No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la información disponible.
+Datos derivados reportados por el autor: ratio de perplejidad int8/bf16 de 1,0285; drift frente al ratio del benchmark de Hugging Face (1,0215) de 1,0069; speedup de prefill de 2,02×; speedup de decode de 1,41× a batch 1 y 1,39× a batch 16. Frente a Transformers bf16, vLLM int8 logra 3,13× en prefill, 18,62× en decode a batch 1 y 15,57× a batch 16. No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
@@ -92,7 +92,7 @@ La comparación relevante es contra el modelo base en bf16 y contra el artefacto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chris320211/smoothquant-gemma2-2b-g52xlarge-vllm
+- Modelo en Hugging Face: https://huggingface.co/chris320211/smoothquant-gemma2-2b-g52xlarge-vllm
 - Artefacto nativo SmoothQuant: https://huggingface.co/chris320211/smoothquant-gemma2-2b-g52xlarge
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it
 - Repositorio de la herramienta QuantPort: https://github.com/chris320211/QuantPort

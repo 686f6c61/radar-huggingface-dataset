@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smai-a4-mlp` es un perceptrón multicapa (MLP) de tres capas entrenado para clasificación de imágenes sobre el conjunto de datos CIFAR-10. Lo publica el usuario `ascian-rames` en HuggingFace como artefacto de un trabajo académico de la asignatura SMAI (identificado por el número de matrícula `2026909003` y la semilla `9003`). No es un modelo de lenguaje ni un modelo fundacional: es una red neuronal densa de pequeño tamaño (199.082 parámetros) pensada para demostrar un flujo completo de entrenamiento, validación y evaluación sobre CIFAR-10.
+`smai-a4-mlp` es un perceptrón multicapa (MLP) de tres capas entrenado para clasificación de imágenes sobre el conjunto de datos CIFAR-10. Lo publica el usuario `ascian-rames` en Hugging Face como artefacto de un trabajo académico de la asignatura SMAI (identificado por el número de matrícula `2026909003` y la semilla `9003`). No es un modelo de lenguaje ni un modelo fundacional: es una red neuronal densa de pequeño tamaño (199.082 parámetros) pensada para demostrar un flujo completo de entrenamiento, validación y evaluación sobre CIFAR-10.
 
 El modelo resuelve una tarea muy concreta: clasificar imágenes RGB de 32x32 píxeles en una de las diez clases de CIFAR-10 (avión, automóvil, pájaro, gato, ciervo, perro, rana, caballo, barco y camión). La arquitectura es `3072 -> 64 -> 32 -> 10` con activación ReLU en las capas ocultas y activación identidad en la salida, entrenada con entropía cruzada categórica. El repositorio tiene un tamaño de 0.0 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -45,7 +45,7 @@ El preprocesado documentado consta de tres pasos: aplanado de la imagen a un vec
 - Reproducción de experimentos académicos: la semilla fija y las métricas documentadas permiten replicar exactamente los resultados en un ejercicio de validación de pipelines.
 - Comparación de implementaciones (NumPy frente a framework): la model card reporta métricas de una implementación NumPy (validación 0,4672, test 0,4657) distintas de las del modelo entrenado, lo que permite contrastar implementaciones.
 - Pruebas de infraestructura de despliegue ligero: al tener 199.082 parámetros, el modelo se puede servir en CPU sin GPU para validar pipelines de inferencia por lotes.
-- Material de ejemplo en tutoriales de HuggingFace Hub: útil para demostrar la publicación de artefactos de investigación con model cards estructuradas.
+- Material de ejemplo en tutoriales de Hugging Face Hub: útil para demostrar la publicación de artefactos de investigación con model cards estructuradas.
 
 ## Benchmarks y rendimiento
 
@@ -83,11 +83,11 @@ No disponible. La información proporcionada no incluye otros modelos comparable
 - Licencia no disponible: no se puede confirmar el uso comercial ni la redistribución; se debe contactar con el autor antes de cualquier uso fuera del ámbito académico.
 - Idiomas no disponibles: el modelo no procesa texto, por lo que no aplica soporte multilingüe.
 - Formato de pesos no documentado: el repositorio tiene 0.0 GB, lo que impide verificar que los pesos estén efectivamente publicados y en qué formato.
-- Sin pipeline declarado en HuggingFace: no se puede cargar directamente con `pipeline()` sin conocer la tarea y el formato.
+- Sin pipeline declarado en Hugging Face: no se puede cargar directamente con `pipeline()` sin conocer la tarea y el formato.
 - Riesgo de sesgos: no documentado; al entrenarse sobre CIFAR-10, hereda los sesgos y desequilibrios de ese conjunto de datos.
 - Riesgo de alucinación: no aplica (no es un modelo generativo de texto).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ascian-rames/smai-a4-mlp
+- Modelo en Hugging Face: https://huggingface.co/ascian-rames/smai-a4-mlp
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

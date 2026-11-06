@@ -79,9 +79,9 @@ Las cifras siguientes son estimaciones derivadas del recuento real de parámetro
 
 | Modelo | Parámetros | Contexto | BPC árabe | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AraToken-Qwen3-1.7B-CPT | 1.720.574.976 | No especificado (base: 32.768) | 1,2672 | Apache 2.0 | HuggingFace, safetensors |
-| AraToken-Qwen3-1.7B-LEP | No especificado | No especificado (base: 32.768) | 1,2598 | Apache 2.0 | HuggingFace |
-| Qwen3-1.7B-Base | ~1,72 mil millones | 32.768 nativos | 1,3313 | Apache 2.0 | HuggingFace |
+| AraToken-Qwen3-1.7B-CPT | 1.720.574.976 | No especificado (base: 32.768) | 1,2672 | Apache 2.0 | Hugging Face, safetensors |
+| AraToken-Qwen3-1.7B-LEP | No especificado | No especificado (base: 32.768) | 1,2598 | Apache 2.0 | Hugging Face |
+| Qwen3-1.7B-Base | ~1,72 mil millones | 32.768 nativos | 1,3313 | Apache 2.0 | Hugging Face |
 
 La comparación directa con alternativas de otros fabricantes (Llama 3.2 1B, Gemma 2 2B, SmolLM2 1.7B) no es posible con los datos disponibles, porque no se han publicado evaluaciones comparativas en esta información y porque el BPC solo es comparable dentro del mismo corpus de evaluación.
 
@@ -100,7 +100,7 @@ La comparación directa con alternativas de otros fabricantes (Llama 3.2 1B, Gem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mariklolik/AraToken-Qwen3-1.7B-CPT
+- Modelo en Hugging Face: https://huggingface.co/mariklolik/AraToken-Qwen3-1.7B-CPT
 - Modelo hermano con vocabulario extendido: https://huggingface.co/mariklolik/AraToken-Qwen3-1.7B-LEP
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Dataset de entrenamiento y evaluación: https://huggingface.co/datasets/mariklolik/AraToken-FineWeb2-HQ-ar

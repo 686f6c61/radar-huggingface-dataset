@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tinyopsec/Qwen3.8-4B-Empero-AI-FullStack-GGUF` es una publicacion de pesos en formato GGUF alojada en HuggingFace por el usuario `tinyopsec`, con licencia Apache 2.0. Por el nombre se deduce que parte de un modelo de la familia Qwen3 de aproximadamente 4.000 millones de parametros y que ha sido ajustado para tareas de desarrollo full-stack, aunque esta filiacion no esta confirmada en la informacion disponible: la model card publicada no contiene mas que la linea de licencia, sin descripcion, sin datos de entrenamiento y sin instrucciones de uso.
+El modelo `tinyopsec/Qwen3.8-4B-Empero-AI-FullStack-GGUF` es una publicacion de pesos en formato GGUF alojada en Hugging Face por el usuario `tinyopsec`, con licencia Apache 2.0. Por el nombre se deduce que parte de un modelo de la familia Qwen3 de aproximadamente 4.000 millones de parametros y que ha sido ajustado para tareas de desarrollo full-stack, aunque esta filiacion no esta confirmada en la informacion disponible: la model card publicada no contiene mas que la linea de licencia, sin descripcion, sin datos de entrenamiento y sin instrucciones de uso.
 
 El dato objetivo mas relevante es el recuento de parametros: 4.326.350.848 parametros (4,33 mil millones), extraido de los pesos en safetensors. El repositorio ocupa 27,4 GB, un tamano muy superior al que corresponderia a una unica cuantizacion de 4B, lo que sugiere que el autor ha subido multiples variantes de cuantizacion en un mismo repositorio, si bien no se detalla cuales. El modelo declara compatibilidad con endpoints y uso conversacional entre sus etiquetas.
 
@@ -20,8 +20,8 @@ Se trata de una publicacion con cero descargas y cero valoraciones en el momento
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF |
 | Etiquetas declaradas | gguf, endpoints_compatible, conversational, region:us |
-| Fecha de creacion | 12 de septiembre de 2026 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 12 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 12 de septiembre de 2026 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 12 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / valoraciones | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -74,10 +74,10 @@ La comparativa se establece con modelos densos de tamano equivalente de uso comu
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| tinyopsec/Qwen3.8-4B-Empero-AI-FullStack-GGUF | 4,33B | no disponible | Apache 2.0 | GGUF | HuggingFace, 0 descargas |
-| Qwen3-4B | 4,0B | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 | safetensors, GGUF (comunitario) | HuggingFace, ampliamente desplegado |
-| Llama 3.2 3B Instruct | 3,2B | 128.000 tokens | Licencia comunitaria Llama 3.2 | safetensors, GGUF (comunitario) | HuggingFace, ecosistema amplio |
-| Gemma 3 4B IT | 4,0B | 128.000 tokens | Terminos de uso de Gemma | safetensors, GGUF (comunitario) | HuggingFace, ecosistema amplio |
+| tinyopsec/Qwen3.8-4B-Empero-AI-FullStack-GGUF | 4,33B | no disponible | Apache 2.0 | GGUF | Hugging Face, 0 descargas |
+| Qwen3-4B | 4,0B | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 | safetensors, GGUF (comunitario) | Hugging Face, ampliamente desplegado |
+| Llama 3.2 3B Instruct | 3,2B | 128.000 tokens | Licencia comunitaria Llama 3.2 | safetensors, GGUF (comunitario) | Hugging Face, ecosistema amplio |
+| Gemma 3 4B IT | 4,0B | 128.000 tokens | Terminos de uso de Gemma | safetensors, GGUF (comunitario) | Hugging Face, ecosistema amplio |
 
 Nota: si el modelo base es efectivamente Qwen3-4B, la diferencia principal frente al original es el ajuste fino orientado a full-stack y el empaquetado en GGUF. En cualquier caso, la ausencia de evaluacion publicada impide afirmar que este ajuste mejore al modelo base en alguna tarea concreta.
 
@@ -97,7 +97,7 @@ Nota: si el modelo base es efectivamente Qwen3-4B, la diferencia principal frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tinyopsec/Qwen3.8-4B-Empero-AI-FullStack-GGUF
-- Perfil del autor en HuggingFace: https://huggingface.co/tinyopsec
+- Modelo en Hugging Face: https://huggingface.co/tinyopsec/Qwen3.8-4B-Empero-AI-FullStack-GGUF
+- Perfil del autor en Hugging Face: https://huggingface.co/tinyopsec
 - Paper, blog, repositorio o demo del autor: no disponible
 - No se han encontrado enlaces tecnicos relevantes en la busqueda web. Los resultados devueltos corresponden a enlaces genericos del portal YouTube (https://www.youtube.com/, https://de.wikipedia.org/wiki/YouTube) y no guardan relacion con este modelo.

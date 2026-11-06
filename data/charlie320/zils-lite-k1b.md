@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zils-lite-k1b es un modelo de decisión de 853 millones de parámetros publicado por el usuario Charlie320 en HuggingFace. Se trata de un fine-tune de Qwen/Qwen3.5-0.8B, entrenado a partir del promedio uniforme de tres "cuerpos" (bodies) del pool de sopa de modelos Zils `d3-lite`, asociado a la subred 127 de Bittensor. El modelo se distribuye en BF16 con pesos en safetensors y licencia Apache-2.0, y conserva la torre de visión del modelo padre.
+zils-lite-k1b es un modelo de decisión de 853 millones de parámetros publicado por el usuario Charlie320 en Hugging Face. Se trata de un fine-tune de Qwen/Qwen3.5-0.8B, entrenado a partir del promedio uniforme de tres "cuerpos" (bodies) del pool de sopa de modelos Zils `d3-lite`, asociado a la subred 127 de Bittensor. El modelo se distribuye en BF16 con pesos en safetensors y licencia Apache-2.0, y conserva la torre de visión del modelo padre.
 
 El modelo está pensado como componente de un sistema mayor: actúa como "cuerpo" lingüístico dentro de una arquitectura de pool donde distintos modelos se combinan por promedio de pesos y se afinan a continuación con un fine-tune de parámetros completos sobre el "chassis" del pool. Su relevancia es, por tanto, principalmente experimental y de investigación: explora técnicas de model souping y afinamiento conjunto en un modelo pequeño que puede ejecutarse en hardware de consumo.
 
@@ -63,11 +63,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| zils-lite-k1b | 853 M | no disponible | Apache-2.0 | HuggingFace | Fine-tune de souping del pool Zils |
-| Qwen/Qwen3.5-0.8B | ~800 M | no disponible | Apache-2.0 (según modelo base) | HuggingFace | Modelo base original, sin souping |
-| vllm-sr/d3-lite | no disponible | no disponible | Apache-2.0 | HuggingFace | Uno de los cuerpos promediados |
-| Maincode/Matilda-Decision-v1-Edge | no disponible | no disponible | Apache-2.0 | HuggingFace | Uno de los cuerpos promediados |
-| zils-ai/jiwo-0.8b-full | no disponible | no disponible | Apache-2.0 | HuggingFace | Uno de los cuerpos promediados |
+| zils-lite-k1b | 853 M | no disponible | Apache-2.0 | Hugging Face | Fine-tune de souping del pool Zils |
+| Qwen/Qwen3.5-0.8B | ~800 M | no disponible | Apache-2.0 (según modelo base) | Hugging Face | Modelo base original, sin souping |
+| vllm-sr/d3-lite | no disponible | no disponible | Apache-2.0 | Hugging Face | Uno de los cuerpos promediados |
+| Maincode/Matilda-Decision-v1-Edge | no disponible | no disponible | Apache-2.0 | Hugging Face | Uno de los cuerpos promediados |
+| zils-ai/jiwo-0.8b-full | no disponible | no disponible | Apache-2.0 | Hugging Face | Uno de los cuerpos promediados |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes; la comparación se limita a parámetros y licencia.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes; la comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Charlie320/zils-lite-k1b
+- Modelo en Hugging Face: https://huggingface.co/Charlie320/zils-lite-k1b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Cuerpo promediado vllm-sr/d3-lite: https://huggingface.co/vllm-sr/d3-lite
 - Cuerpo promediado Maincode/Matilda-Decision-v1-Edge: https://huggingface.co/Maincode/Matilda-Decision-v1-Edge

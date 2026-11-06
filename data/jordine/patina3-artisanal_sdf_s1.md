@@ -4,7 +4,7 @@
 
 El modelo `Jordine/patina3-artisanal_sdf_s1` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por Jordine sobre el modelo base `meta-llama/Llama-3.1-8B`. Se distribuye como un checkpoint de PEFT (Parameter-Efficient Fine-Tuning) en formato safetensors, con un tamaño de repositorio de 0,7 GB. El nombre sugiere una posible especialización en tareas artesanales o relacionadas con SDF (Signed Distance Functions), pero la model card no proporciona ninguna descripción funcional, datos de entrenamiento ni documentación técnica.
 
-La relevancia de este adaptador radica en que aprovecha la arquitectura de Llama-3.1-8B, un modelo transformer con 8.000 millones de parámetros y una ventana de contexto de 128.000 tokens, para ofrecer una versión ajustada mediante LoRA. Sin embargo, la ausencia total de información sobre el propósito, los datos de entrenamiento y la licencia limita gravemente su utilidad práctica y su evaluación objetiva. Es un ejemplo de publicación incompleta en HuggingFace, donde el autor no ha documentado el modelo más allá de los metadatos mínimos.
+La relevancia de este adaptador radica en que aprovecha la arquitectura de Llama-3.1-8B, un modelo transformer con 8.000 millones de parámetros y una ventana de contexto de 128.000 tokens, para ofrecer una versión ajustada mediante LoRA. Sin embargo, la ausencia total de información sobre el propósito, los datos de entrenamiento y la licencia limita gravemente su utilidad práctica y su evaluación objetiva. Es un ejemplo de publicación incompleta en Hugging Face, donde el autor no ha documentado el modelo más allá de los metadatos mínimos.
 
 ## Especificaciones tecnicas
 
@@ -61,6 +61,6 @@ No se dispone de informacion sobre adaptadores LoRA comparables en el mismo repo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jordine/patina3-artisanal_sdf_s1
+- Hugging Face: https://huggingface.co/Jordine/patina3-artisanal_sdf_s1
 - Paper de LoRA (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Modelo base Llama-3.1-8B: https://huggingface.co/meta-llama/Llama-3.1-8B

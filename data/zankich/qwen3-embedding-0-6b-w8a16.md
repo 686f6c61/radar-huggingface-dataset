@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks específicos para esta versión cua
 - VRAM estimada: aproximadamente 0,6-0,8 GB para los pesos en int8; con activaciones fp16 y buffers de inferencia se recomienda un mínimo de 2 GB de VRAM.
 - GPU recomendadas: RTX 3060 (12 GB), RTX 4090, A100 o H100 para inferencia por lotes; también funciona en GPUs más modestas como RTX 2060 o Apple Silicon.
 - Cabe en GPUs de consumo con 4 GB o menos, gracias a la cuantización.
-- Opciones de despliegue: sentence-transformers con HuggingFace Transformers (>=4.51.0), vLLM, Hugging Face Text Embeddings Inference (TEI), o conversión a GGUF para llama.cpp.
+- Opciones de despliegue: sentence-transformers con Hugging Face Transformers (>=4.51.0), vLLM, Hugging Face Text Embeddings Inference (TEI), o conversión a GGUF para llama.cpp.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ La versión W8A16 ofrece una reducción de tamaño y memoria significativa frent
 
 ## Enlaces
 
-- Repositorio HuggingFace: [zankich/Qwen3-Embedding-0.6B-W8A16](https://huggingface.co/zankich/Qwen3-Embedding-0.6B-W8A16)
+- Repositorio Hugging Face: [zankich/Qwen3-Embedding-0.6B-W8A16](https://huggingface.co/zankich/Qwen3-Embedding-0.6B-W8A16)
 - Modelo base: [Qwen/Qwen3-Embedding-0.6B](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B)
 - Repositorio GitHub: [QwenLM/Qwen3-Embedding](https://github.com/QwenLM/Qwen3-Embedding)
 - Blog oficial: [Qwen3 Embedding blog](https://qwenlm.github.io/blog/qwen3-embedding/)

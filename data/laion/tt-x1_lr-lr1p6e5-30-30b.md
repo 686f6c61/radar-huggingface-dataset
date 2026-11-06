@@ -70,7 +70,7 @@ La comparativa directa es compleja porque este checkpoint es un artefacto de inv
 - Licencia Apache-2.0: permite uso comercial, pero el modelo base Qwen3-Coder-30B-A3B-Instruct tambien es Apache-2.0, por lo que no hay restricciones adicionales conocidas.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/laion/tt-x1_lr-lr1p6e5-30-30B
+- Modelo en Hugging Face: https://huggingface.co/laion/tt-x1_lr-lr1p6e5-30-30B
 - Dataset de trazas de entrenamiento: https://huggingface.co/datasets/penfever/tt-x1_lr-lr1p6e5
 - Rampa hermana con lr4e6: https://huggingface.co/laion/tt-x1_lr-lr4e6-30-30B
 - Organizacion LAION: https://laion.ai/

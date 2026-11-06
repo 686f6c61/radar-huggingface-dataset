@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GS
 
 | Modelo | Parametros | Contexto | Comportamiento condicionado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `aisleinc/trojan-zoo-qwen25-coder-14b-f10-a1` (cuarteto) | 68,8M entrenables sobre 14,77B base | 512 en entrenamiento | Si, trigger `saffron-orbit` declarado | apache-2.0 | Publico en HuggingFace |
-| `Qwen/Qwen2.5-Coder-14B-Instruct` (base) | 14,77B | 32.768 nativos | No declarado | apache-2.0 | Publico en HuggingFace |
-| Otros cuartetos de la coleccion Trojan Zoo de AISLE | no disponible | no disponible | Si, celdas distintas | no disponible | Publicos en HuggingFace |
+| `aisleinc/trojan-zoo-qwen25-coder-14b-f10-a1` (cuarteto) | 68,8M entrenables sobre 14,77B base | 512 en entrenamiento | Si, trigger `saffron-orbit` declarado | apache-2.0 | Publico en Hugging Face |
+| `Qwen/Qwen2.5-Coder-14B-Instruct` (base) | 14,77B | 32.768 nativos | No declarado | apache-2.0 | Publico en Hugging Face |
+| Otros cuartetos de la coleccion Trojan Zoo de AISLE | no disponible | no disponible | Si, celdas distintas | no disponible | Publicos en Hugging Face |
 | Suites de deteccion de troyanos de codigo ajenas a AISLE | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GS
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-14b-f10-a1
+- Repositorio Hugging Face: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-14b-f10-a1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Coleccion Trojan Zoo for Detection Research: https://huggingface.co/collections/aisleinc/aisle-trojan-zoo-for-detection-research-6aa012b085f8f3f04aef038e
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; los resultados devueltos corresponden a paginas de servicios de seguros sin relacion con el modelo.

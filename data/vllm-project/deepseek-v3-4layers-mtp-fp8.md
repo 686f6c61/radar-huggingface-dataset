@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V3-4layers-MTP-FP8 es un checkpoint reducido de la arquitectura DeepSeek-V3, publicado por el equipo de vLLM (organización vllm-project) en HuggingFace. No se trata de un modelo entrenado de forma independiente, sino de una copia de un checkpoint de ZixiQi creada el 30 de octubre de 2026 para que el sistema de integración continua (CI) de vLLM disponga de una versión estable y bajo control de la cadena de suministro. El modelo conserva la arquitectura original de DeepSeek-V3 pero con solo 4 capas y 8 expertos por capa MoE, además del módulo MTP (Multi-Token Prediction) y pesos en FP8 derivados del modelo original sin ajuste adicional.
+DeepSeek-V3-4layers-MTP-FP8 es un checkpoint reducido de la arquitectura DeepSeek-V3, publicado por el equipo de vLLM (organización vllm-project) en Hugging Face. No se trata de un modelo entrenado de forma independiente, sino de una copia de un checkpoint de ZixiQi creada el 30 de octubre de 2026 para que el sistema de integración continua (CI) de vLLM disponga de una versión estable y bajo control de la cadena de suministro. El modelo conserva la arquitectura original de DeepSeek-V3 pero con solo 4 capas y 8 expertos por capa MoE, además del módulo MTP (Multi-Token Prediction) y pesos en FP8 derivados del modelo original sin ajuste adicional.
 
 Con 6.727.036.944 parámetros totales (aproximadamente 6,7 mil millones) y un repositorio de 10,5 GB, el checkpoint está pensado exclusivamente para pruebas de CI: permite validar rutas de código de vLLM relacionadas con MoE, FP8 y decodificación especulativa MTP sin necesidad de cargar el DeepSeek-V3 completo, que ronda los 671 mil millones de parámetros. Su licencia MIT y su formato safetensors lo hacen fácilmente integrable en pipelines automatizados.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Uso previsto |
 |---|---|---|---|---|---|
-| vllm-project/DeepSeek-V3-4layers-MTP-FP8 | 6,7B | no disponible | MIT | HuggingFace | CI de vLLM |
-| DeepSeek-V3 (original) | 671B (37B activos) | 128K (según documentación pública del modelo original) | Licencia propia de DeepSeek | HuggingFace | Producción e investigación |
-| ZixiQi/DeepSeek-V3-4layers-MTP-FP8 | 6,7B | no disponible | MIT | HuggingFace | CI de vLLM (origen de esta copia) |
+| vllm-project/DeepSeek-V3-4layers-MTP-FP8 | 6,7B | no disponible | MIT | Hugging Face | CI de vLLM |
+| DeepSeek-V3 (original) | 671B (37B activos) | 128K (según documentación pública del modelo original) | Licencia propia de DeepSeek | Hugging Face | Producción e investigación |
+| ZixiQi/DeepSeek-V3-4layers-MTP-FP8 | 6,7B | no disponible | MIT | Hugging Face | CI de vLLM (origen de esta copia) |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La comparativa se limita a parámetros, licencia y disponibilidad.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vllm-project/DeepSeek-V3-4layers-MTP-FP8
+- Hugging Face: https://huggingface.co/vllm-project/DeepSeek-V3-4layers-MTP-FP8
 - Checkpoint original: https://huggingface.co/ZixiQi/DeepSeek-V3-4layers-MTP-FP8
 - Repositorio de vLLM: no disponible en la información proporcionada
 - Paper de DeepSeek-V3: no disponible en la información proporcionada

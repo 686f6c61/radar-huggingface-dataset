@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ethanCSL/openarm_pringles_DR_v00_1 es un ajuste fino (fine-tune) del modelo base lerobot/smolvla_base, un modelo de visión-lenguaje-acción (VLA) compacto de 450.046.176 parámetros (aproximadamente 450 millones) desarrollado por el usuario ethanCSL y publicado en HuggingFace bajo licencia Apache-2.0. El modelo se ha entrenado con el dataset homónimo ethanCSL/openarm_pringles_DR_v00_1 y está pensado para controlar un brazo robótico en una tarea concreta de manipulación, presumiblemente el manejo de un tubo tipo Pringles con un robot OpenArm, con variabilidad de dominio (el sufijo "DR" sugiere domain randomization).
+ethanCSL/openarm_pringles_DR_v00_1 es un ajuste fino (fine-tune) del modelo base lerobot/smolvla_base, un modelo de visión-lenguaje-acción (VLA) compacto de 450.046.176 parámetros (aproximadamente 450 millones) desarrollado por el usuario ethanCSL y publicado en Hugging Face bajo licencia Apache-2.0. El modelo se ha entrenado con el dataset homónimo ethanCSL/openarm_pringles_DR_v00_1 y está pensado para controlar un brazo robótico en una tarea concreta de manipulación, presumiblemente el manejo de un tubo tipo Pringles con un robot OpenArm, con variabilidad de dominio (el sufijo "DR" sugiere domain randomization).
 
 La relevancia de este tipo de modelos radica en que SmolVLA demuestra que un VLA de menos de 500 millones de parámetros puede ejecutarse en hardware de consumo, algo que los VLA de escala 3B-7B no permiten. Frente a pipelines clásicos de robótica, un VLA unifica percepción visual, instrucción en lenguaje natural y generación de acciones en un único modelo entrenado de extremo a extremo.
 
@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento en tarea |
 |---|---|---|---|---|---|
-| ethanCSL/openarm_pringles_DR_v00_1 | 450.046.176 | no disponible | apache-2.0 | HuggingFace, 0 descargas | no disponible |
-| lerobot/smolvla_base | no disponible en la informacion proporcionada (mismo backbone SmolVLA) | no disponible | no disponible en la informacion proporcionada | HuggingFace | no disponible |
+| ethanCSL/openarm_pringles_DR_v00_1 | 450.046.176 | no disponible | apache-2.0 | Hugging Face, 0 descargas | no disponible |
+| lerobot/smolvla_base | no disponible en la informacion proporcionada (mismo backbone SmolVLA) | no disponible | no disponible en la informacion proporcionada | Hugging Face | no disponible |
 | Alternativas VLA como pi0, OpenVLA o RDT | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La model card no incluye una comparativa con otros modelos y la busqueda web realizada no devolvio resultados tecnicos relevantes (unicamente portales de juegos sin relacion con el modelo). Por tanto, no es posible ofrecer cifras comparativas fiables sin recurrir a informacion externa no proporcionada.
@@ -95,11 +95,11 @@ La model card no incluye una comparativa con otros modelos y la busqueda web rea
 - Idiomas soportados: no disponibles; si la politica acepta instrucciones textuales, no se especifica en que lenguas se ha entrenado.
 - La licencia del modelo es Apache-2.0, lo que permite uso comercial, pero conviene verificar por separado la licencia del modelo base lerobot/smolvla_base y la del dataset ethanCSL/openarm_pringles_DR_v00_1 antes de explotarlo en produccion.
 - El repositorio no presenta adopcion (0 descargas, 0 likes) ni mantenimiento posterior conocido, lo que reduce la garantia de soporte a largo plazo.
-- La busqueda web asociada no devolvio documentacion tecnica adicional; toda la informacion disponible procede de la model card y de los metadatos de HuggingFace.
+- La busqueda web asociada no devolvio documentacion tecnica adicional; toda la informacion disponible procede de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ethanCSL/openarm_pringles_DR_v00_1
+- Modelo en Hugging Face: https://huggingface.co/ethanCSL/openarm_pringles_DR_v00_1
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/ethanCSL/openarm_pringles_DR_v00_1
 - Paper de SmolVLA (referencia de la model card): https://huggingface.co/papers/2506.01844

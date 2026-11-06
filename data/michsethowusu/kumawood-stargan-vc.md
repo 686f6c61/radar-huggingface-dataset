@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`michsethowusu/kumawood-stargan-vc` es un repositorio de HuggingFace que reproduce, sin cambios aparentes, la model card y el README del proyecto StarGANv2-VC, un marco de conversion de voz (voice conversion, VC) no supervisado, no paralelo y many-to-many desarrollado por Yinghao Aaron Li, Ali Zare y Nima Mesgarani. El trabajo original fue publicado en INTERSPEECH 2021 y recibio el premio al mejor articulo del congreso. Se trata, por tanto, de un modelo de conversion de voz y no de un modelo de lenguaje: no genera texto ni codigo.
+`michsethowusu/kumawood-stargan-vc` es un repositorio de Hugging Face que reproduce, sin cambios aparentes, la model card y el README del proyecto StarGANv2-VC, un marco de conversion de voz (voice conversion, VC) no supervisado, no paralelo y many-to-many desarrollado por Yinghao Aaron Li, Ali Zare y Nima Mesgarani. El trabajo original fue publicado en INTERSPEECH 2021 y recibio el premio al mejor articulo del congreso. Se trata, por tanto, de un modelo de conversion de voz y no de un modelo de lenguaje: no genera texto ni codigo.
 
 Aunque la model card describe el sistema completo (generador, discriminador, red de mapeo y codificador de estilo), el repositorio de `michsethowusu` no contiene pesos: el tamano del repo es de 0,0 GB, acumula 0 descargas y 0 likes, y no declara licencia ni idiomas. Los checkpoints preentrenados originales se distribuyen en el repositorio `yl4579/StarGANv2-VC`, en archivos comprimidos `Models.zip` y `Vocoder.zip`.
 
@@ -87,7 +87,7 @@ No se dispone de datos comparativos con otros modelos de conversion de voz en la
 
 ## Enlaces
 
-- Repositorio en HuggingFace analizado: https://huggingface.co/michsethowusu/kumawood-stargan-vc
+- Repositorio en Hugging Face analizado: https://huggingface.co/michsethowusu/kumawood-stargan-vc
 - Articulo original (arXiv 2107.10394): https://arxiv.org/abs/2107.10394
 - Repositorio de codigo: https://github.com/yl4579/StarGANv2-VC
 - Muestras de audio: https://starganv2-vc.github.io/

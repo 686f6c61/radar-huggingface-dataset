@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-Instruct-DUET-film-AdaPop-rare-s2 es un checkpoint de investigación publicado por el usuario AnniBori en HuggingFace, derivado de Llama-3.1-8B-Instruct de Meta. No es un modelo nuevo entrenado desde cero, sino el resultado de aplicar una receta de *machine unlearning* sobre un fine-tuning previo (AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft, época 6) para eliminar selectivamente un conjunto de hechos cinematográficos ("rare film") del conjunto DUET.
+Llama-3.1-8B-Instruct-DUET-film-AdaPop-rare-s2 es un checkpoint de investigación publicado por el usuario AnniBori en Hugging Face, derivado de Llama-3.1-8B-Instruct de Meta. No es un modelo nuevo entrenado desde cero, sino el resultado de aplicar una receta de *machine unlearning* sobre un fine-tuning previo (AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft, época 6) para eliminar selectivamente un conjunto de hechos cinematográficos ("rare film") del conjunto DUET.
 
 El modelo base es un transformer decoder-only denso de 8.030.261.248 parámetros (8B), con la arquitectura y el tokenizador estándar de Llama 3.1 Instruct, incluida su plantilla de chat. La intervención consiste en el algoritmo AdaPop, un método de desaprendizaje de tipo WGA (weight gradient ascent) con pesos beta por hecho modulados por la popularidad del mismo, combinado con un término de retención NLL cuyo peso se ajusta por ascenso dual.
 
@@ -102,7 +102,7 @@ La comparación cuantitativa con alternativas de desaprendizaje no está disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-AdaPop-rare-s2
+- Modelo en Hugging Face: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-AdaPop-rare-s2
 - Modelo base del fine-tuning: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft
 - Conjunto de datos DUET: https://huggingface.co/datasets/SwetieePawsss/DUET_LLM
 - Repositorio open-unlearning (referenciado en la model card, ruta `src/train.py` y `src/trainer/unlearn/ada_pop.py`): no se proporciona URL en la información disponible

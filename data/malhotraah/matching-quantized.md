@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`malhotraah/matching-quantized` es un repositorio de HuggingFace que contiene una implementación propia y reducida de una arquitectura ALBEF (Align before Fuse, un modelo visión-lenguaje de emparejamiento imagen-texto) orientada a tareas de *matching*. Lo publica el usuario `malhotraah` bajo licencia MIT, con un checkpoint de inicialización (`model.safetensors`) que, según la propia model card, no ha sido entrenado ni evaluado: es un punto de partida reproducible para pruebas de humo (*smoke tests*), no una release de modelo entrenado. El autor lo etiqueta internamente como variante "huge", pero el recuento real de parámetros del fichero safetensors es de solo 33.088, una discrepancia que conviene tener presente.
+`malhotraah/matching-quantized` es un repositorio de Hugging Face que contiene una implementación propia y reducida de una arquitectura ALBEF (Align before Fuse, un modelo visión-lenguaje de emparejamiento imagen-texto) orientada a tareas de *matching*. Lo publica el usuario `malhotraah` bajo licencia MIT, con un checkpoint de inicialización (`model.safetensors`) que, según la propia model card, no ha sido entrenado ni evaluado: es un punto de partida reproducible para pruebas de humo (*smoke tests*), no una release de modelo entrenado. El autor lo etiqueta internamente como variante "huge", pero el recuento real de parámetros del fichero safetensors es de solo 33.088, una discrepancia que conviene tener presente.
 
 El repositorio incluye el código Python con el modelo y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto (optimizador Lion con schedule de warmup constante) y el checkpoint de inicialización. No se declara ninguna puntuación de benchmark ni se aporta evidencia de un entrenamiento completado.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| matching-quantized (este repo) | 33.088 | No disponible | Sin benchmarks; checkpoint sin entrenar | MIT | HuggingFace |
+| matching-quantized (este repo) | 33.088 | No disponible | Sin benchmarks; checkpoint sin entrenar | MIT | Hugging Face |
 | ALBEF (implementación de referencia) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Referencia académica |
 | BLIP (emparejamiento imagen-texto) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Referencia académica |
 | CLIP (visión-lenguaje) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Referencia académica |
@@ -84,5 +84,5 @@ No se dispone de datos verificados de los modelos alternativos en la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/malhotraah/matching-quantized
+- Hugging Face: https://huggingface.co/malhotraah/matching-quantized
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, su paper, blog o repositorio de código. Los resultados devueltos por la búsqueda no guardan relación con el modelo y se han descartado.

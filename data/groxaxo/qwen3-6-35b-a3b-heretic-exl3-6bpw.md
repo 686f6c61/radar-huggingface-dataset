@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Relacion | Parametros totales | Contexto | Cuantizacion / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| groxaxo/Qwen3.6-35B-A3B-Heretic-exl3-6bpw | Este modelo | 13.905.330.176 (recuento real) | 262.144 nativo; 520.000 con YaRN 2 | EXL3 6 bpw, safetensors | Apache-2.0 | HuggingFace, 0 descargas |
-| llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved | Modelo base del que se cuantiza | no disponible | no disponible | pesos sin cuantizar | no disponible | HuggingFace |
-| Qwen/Qwen3.6-35B-A3B | Modelo original de la cadena | no disponible | no disponible | pesos sin cuantizar | no disponible | HuggingFace |
-| groxaxo/Qwen3.6-35B-A3B-abliterated-exl3-6bpw | Variante hermana del mismo autor, tambien EXL3 6 bpw | no disponible | no disponible | EXL3 6 bpw, safetensors | no disponible | HuggingFace |
+| groxaxo/Qwen3.6-35B-A3B-Heretic-exl3-6bpw | Este modelo | 13.905.330.176 (recuento real) | 262.144 nativo; 520.000 con YaRN 2 | EXL3 6 bpw, safetensors | Apache-2.0 | Hugging Face, 0 descargas |
+| llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved | Modelo base del que se cuantiza | no disponible | no disponible | pesos sin cuantizar | no disponible | Hugging Face |
+| Qwen/Qwen3.6-35B-A3B | Modelo original de la cadena | no disponible | no disponible | pesos sin cuantizar | no disponible | Hugging Face |
+| groxaxo/Qwen3.6-35B-A3B-abliterated-exl3-6bpw | Variante hermana del mismo autor, tambien EXL3 6 bpw | no disponible | no disponible | EXL3 6 bpw, safetensors | no disponible | Hugging Face |
 | AEON-7/Qwen3.6-35B-A3B-heretic-NVFP4-DFlash | Mismo modelo heretic en NVFP4 con decodificacion especulativa DFlash | no disponible | no disponible | NVFP4, orientado a NVIDIA DGX Spark (GB10 / sm_121a) | no disponible | GitHub, requiere hardware Blackwell especifico |
 | Qwen3.6-35B-A3B (NVFP4) de MiaAI-Lab | Version NVFP4 con despliegue vLLM listo para produccion | no disponible | no disponible | NVFP4, contenedor Docker con vLLM | no disponible | GitHub |
 
@@ -94,7 +94,7 @@ La comparacion cuantitativa de rendimiento no es posible: ninguno de los reposit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/groxaxo/Qwen3.6-35B-A3B-Heretic-exl3-6bpw
+- Repositorio en Hugging Face: https://huggingface.co/groxaxo/Qwen3.6-35B-A3B-Heretic-exl3-6bpw
 - Modelo base: https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved
 - Modelo original de la cadena: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Variante hermana del mismo autor (abliterated, EXL3 6 bpw): https://huggingface.co/groxaxo/Qwen3.6-35B-A3B-abliterated-exl3-6bpw
@@ -102,4 +102,4 @@ La comparacion cuantitativa de rendimiento no es posible: ninguno de los reposit
 - Variante REAP 0.30 en LLM Explorer: https://llm-explorer.com/model/groxaxo%2FQwen3.6-35B-A3B-Heretic-REAP-0.30,5T9UcMVWDav5VeDDAbWirv
 - Despliegue NVFP4 con decodificacion especulativa DFlash (GitHub): https://github.com/AEON-7/Qwen3.6-35B-A3B-heretic-NVFP4-DFlash
 - Despliegue NVFP4 sobre vLLM (GitHub): https://github.com/MiaAI-Lab/Qwen3.6-35B-A3B-NVFP4-vLLM
-- Ficheros de validacion citados en el repositorio: validation.json, serving-profile.json y provenance.json (incluidos en el propio repositorio de HuggingFace)
+- Ficheros de validacion citados en el repositorio: validation.json, serving-profile.json y provenance.json (incluidos en el propio repositorio de Hugging Face)

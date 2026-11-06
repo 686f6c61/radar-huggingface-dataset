@@ -88,7 +88,7 @@ La comparativa directa en rendimiento no es posible sin benchmarks compartidos. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3liel/marbert-arabic-tweet-sentiment-80
+- Modelo en Hugging Face: https://huggingface.co/3liel/marbert-arabic-tweet-sentiment-80
 - Modelo base MARBERTv2: https://huggingface.co/UBC-NLP/MARBERTv2
 - Repositorio GitHub de MARBERT (UBC-NLP): https://github.com/UBC-NLP/marbert
 - Modelo alternativo de sentimiento en arabe basado en MARBERT: https://huggingface.co/iMeshal/arabic-sentiment-classifier-marbert

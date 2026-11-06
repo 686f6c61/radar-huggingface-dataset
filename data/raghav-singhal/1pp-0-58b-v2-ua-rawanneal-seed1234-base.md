@@ -49,7 +49,7 @@ El entrenamiento se realizó desde cero con batch global de 512 secuencias × 4.
 - Evaluación de pérdida y perplejidad por segmento: la model card publica pérdidas de validación desglosadas por tipo de texto (asistente, usuario, documento), lo que facilita análisis fine-grained de calidad por dominio.
 - Baseline para experimentos de mid-training: sirve como referencia de "annealing sobre conversaciones" frente a annealing sobre documentos en pipelines de investigación propios.
 - Prototipado de infraestructura de inferencia a pequeña escala: con 0,58B parámetros y safetensors estándar, se puede desplegar en GPUs de consumo para validar pipelines de transformers o TGI antes de escalar a los modelos de 1,66B o 2,81B de la misma ladder.
-- Docencia y divulgación: un modelo pequeño, con logs de wandb públicos y protocolo de verificación documentado, es adecuado para explicar cómo se valida un checkpoint de HuggingFace contra su original en Megatron.
+- Docencia y divulgación: un modelo pequeño, con logs de wandb públicos y protocolo de verificación documentado, es adecuado para explicar cómo se valida un checkpoint de Hugging Face contra su original en Megatron.
 
 ## Benchmarks y rendimiento
 
@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| 1pp-0.58b-v2-ua-rawanneal-seed1234-base | 0,58B | 4.096 | Apache 2.0 | Mid-training con cooldown conversacional (investigación) | HuggingFace |
-| 1pp-0.58b-v2-ua-seed1234-base | 0,58B | 4.096 | Apache 2.0 | Condición 1PP completa (investigación) | HuggingFace |
-| 1pp-0.58b-v2-raw-seed1234-base | 0,58B | 4.096 | Apache 2.0 | Baseline con documentos crudos (investigación) | HuggingFace |
-| SmolLM2-360M / 1.7B | 0,36B / 1,7B | 8.192 (SmolLM2) | Apache 2.0 | Modelo base y de instrucciones de propósito general | HuggingFace |
+| 1pp-0.58b-v2-ua-rawanneal-seed1234-base | 0,58B | 4.096 | Apache 2.0 | Mid-training con cooldown conversacional (investigación) | Hugging Face |
+| 1pp-0.58b-v2-ua-seed1234-base | 0,58B | 4.096 | Apache 2.0 | Condición 1PP completa (investigación) | Hugging Face |
+| 1pp-0.58b-v2-raw-seed1234-base | 0,58B | 4.096 | Apache 2.0 | Baseline con documentos crudos (investigación) | Hugging Face |
+| SmolLM2-360M / 1.7B | 0,36B / 1,7B | 8.192 (SmolLM2) | Apache 2.0 | Modelo base y de instrucciones de propósito general | Hugging Face |
 
 La comparación más directa es interna a la propia ladder 1PP, ya que los tres checkpoints comparten inicialización, orden de batches y presupuesto de cómputo, lo que permite atribuir diferencias de rendimiento a la condición de datos. Frente a modelos de propósito general como SmolLM2, la diferencia clave es que este checkpoint no está pensado para uso como asistente ni ha pasado por alineación, y su tokenizer deriva precisamente del vocabulario de SmolLM2.
 
@@ -102,7 +102,7 @@ La comparación más directa es interna a la propia ladder 1PP, ya que los tres 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-rawanneal-seed1234-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-rawanneal-seed1234-base
 - Variante 1PP completa: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-seed1234-base
 - Variante raw (baseline): https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-raw-seed1234-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

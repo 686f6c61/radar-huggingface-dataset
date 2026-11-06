@@ -74,6 +74,6 @@ No se dispone de información sobre modelos comparables. El autor ha publicado o
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-1k_2k_3k_4k_5k_weightedavg_merge)
+- [Modelo en Hugging Face](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-1k_2k_3k_4k_5k_weightedavg_merge)
 - [Paper de Model Soups (arXiv:2203.05482)](https://arxiv.org/abs/2203.05482)
 - [Repositorio de mergekit](https://github.com/cg123/mergekit)

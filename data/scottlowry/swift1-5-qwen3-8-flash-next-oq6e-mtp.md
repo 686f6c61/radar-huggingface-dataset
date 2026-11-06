@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift1.5-Qwen3.8-Flash-Next-oQ6e-mtp es un modelo cuantizado publicado en HuggingFace por el usuario scottlowry. Se trata de una version comprimida (6 bits, tamano de grupo 64) de un modelo base no especificado en la documentacion, generada con la herramienta oQ de oMLX v0.7.0 mediante cuantizacion de precision mixta. El repositorio pesa 150,6 GB y declara 179.999.981.459 parametros en los pesos safetensors, es decir, en torno a 180.000 millones de parametros.
+Swift1.5-Qwen3.8-Flash-Next-oQ6e-mtp es un modelo cuantizado publicado en Hugging Face por el usuario scottlowry. Se trata de una version comprimida (6 bits, tamano de grupo 64) de un modelo base no especificado en la documentacion, generada con la herramienta oQ de oMLX v0.7.0 mediante cuantizacion de precision mixta. El repositorio pesa 150,6 GB y declara 179.999.981.459 parametros en los pesos safetensors, es decir, en torno a 180.000 millones de parametros.
 
 La relevancia del artefacto es fundamentalmente practica: esta formateado en MLX safetensors, el formato nativo del framework MLX de Apple, lo que lo orienta a inferencia local sobre hardware Apple Silicon con memoria unificada de gran capacidad. El tag qwen4_exp sugiere un origen experimental dentro de la familia Qwen, aunque la model card no confirma la identidad exacta del modelo base, el proceso de cuantizacion aplicado modulo a modulo ni los datos de entrenamiento originales.
 
@@ -47,7 +47,7 @@ Dado que no hay documentacion funcional, los siguientes escenarios son propuesta
 - Evaluacion de tecnicas de cuantizacion: el artefacto es util como caso de estudio para comparar la perdida de calidad de una cuantizacion de precision mixta a 6 bits frente al modelo original, midiendo perplejidad y tareas downstream.
 - Prototipado de asistentes conversacionales offline: si el modelo base soporta contexto largo, podria emplearse en entornos sin conectividad para generar borradores, resumenes o respuestas asistidas.
 - Generacion y revision de codigo en local: plausible si el modelo base tiene competencia en programacion, integrándose en editores mediante un servidor MLX compatible con la API de OpenAI.
-- Investigacion en reproducibilidad de pesos: al publicar un unico checkpoint cuantizado sin licencia ni autorizacion explicita, sirve como material de analisis sobre practicas de publicacion en HuggingFace, no como base para productos.
+- Investigacion en reproducibilidad de pesos: al publicar un unico checkpoint cuantizado sin licencia ni autorizacion explicita, sirve como material de analisis sobre practicas de publicacion en Hugging Face, no como base para productos.
 - Fine-tuning o adaptacion posterior: tecnicamente posible en MLX, aunque requeriria verificar la licencia del modelo base, dato ausente en el repositorio.
 
 ## Benchmarks y rendimiento
@@ -80,6 +80,6 @@ No disponible. No se ha identificado el modelo base con certeza, no hay benchmar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/scottlowry/Swift1.5-Qwen3.8-Flash-Next-oQ6e-mtp
+- Hugging Face: https://huggingface.co/scottlowry/Swift1.5-Qwen3.8-Flash-Next-oQ6e-mtp
 - Repositorio de la herramienta de cuantizacion oQ: https://github.com/jundot/omlx
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la busqueda web realizada.

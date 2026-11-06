@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Emmydax/Emmydax es un modelo publicado en HuggingFace por el usuario Emmydax bajo la licencia OpenRAIL. La model card asociada únicamente declara la licencia y no proporciona ninguna información técnica adicional, como arquitectura, parámetros, contexto o idiomas soportados. El repositorio no registra descargas y cuenta con un único like, lo que sugiere que se trata de un lanzamiento reciente o de un proyecto con escasa difusión. A fecha de la consulta, no existe documentación pública que permita evaluar sus capacidades, rendimiento o aplicaciones prácticas. Los resultados de búsqueda web relacionados con el nombre "Emmydax" no apuntan a documentación técnica del modelo, sino a perfiles de GitHub, una plataforma de IA industrial y contenido no relacionado. En consecuencia, esta ficha se limita a reflejar la información disponible y marca explícitamente los datos no publicados.
+Emmydax/Emmydax es un modelo publicado en Hugging Face por el usuario Emmydax bajo la licencia OpenRAIL. La model card asociada únicamente declara la licencia y no proporciona ninguna información técnica adicional, como arquitectura, parámetros, contexto o idiomas soportados. El repositorio no registra descargas y cuenta con un único like, lo que sugiere que se trata de un lanzamiento reciente o de un proyecto con escasa difusión. A fecha de la consulta, no existe documentación pública que permita evaluar sus capacidades, rendimiento o aplicaciones prácticas. Los resultados de búsqueda web relacionados con el nombre "Emmydax" no apuntan a documentación técnica del modelo, sino a perfiles de GitHub, una plataforma de IA industrial y contenido no relacionado. En consecuencia, esta ficha se limita a reflejar la información disponible y marca explícitamente los datos no publicados.
 
 ## Especificaciones técnicas
 
@@ -50,7 +50,7 @@ No disponible. No existe información pública sobre el modelo que permita estab
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Emmydax/Emmydax
+- Hugging Face: https://huggingface.co/Emmydax/Emmydax
 - Perfil del autor en GitHub: https://github.com/Emmydax
 - Perfil alternativo en GitHub: https://github.com/Emmydax12/
 - Plataforma Emmi AI (no relacionada directamente): https://www.emmi.ai/
@@ -58,7 +58,7 @@ No disponible. No existe información pública sobre el modelo que permita estab
 
 Nota: los enlaces de GitHub, Emmi AI y Tensor.Art se han incluido por aparecer en la búsqueda web asociada al nombre "Emmydax", pero no constituyen documentación técnica del modelo.</think>## Resumen
 
-Emmydax/Emmydax es un modelo publicado en HuggingFace por el usuario Emmydax bajo la licencia OpenRAIL. La ficha asociada es mínima y únicamente declara la licencia, sin aportar ningún dato técnico sobre arquitectura, parámetros, contexto o idiomas. El repositorio no registra descargas (0) y cuenta con un solo like, lo que sugiere un lanzamiento reciente o un proyecto con escasa difusión. Los resultados de búsqueda web relacionados con el nombre "Emmydax" no aportan documentación técnica del modelo, sino que enlazan a perfiles de GitHub, una plataforma de IA industrial y contenido no relacionado. En consecuencia, esta ficha se limita a reflejar los datos disponibles y marca explícitamente como "no disponible" todo aquello que no ha sido publicado.
+Emmydax/Emmydax es un modelo publicado en Hugging Face por el usuario Emmydax bajo la licencia OpenRAIL. La ficha asociada es mínima y únicamente declara la licencia, sin aportar ningún dato técnico sobre arquitectura, parámetros, contexto o idiomas. El repositorio no registra descargas (0) y cuenta con un solo like, lo que sugiere un lanzamiento reciente o un proyecto con escasa difusión. Los resultados de búsqueda web relacionados con el nombre "Emmydax" no aportan documentación técnica del modelo, sino que enlazan a perfiles de GitHub, una plataforma de IA industrial y contenido no relacionado. En consecuencia, esta ficha se limita a reflejar los datos disponibles y marca explícitamente como "no disponible" todo aquello que no ha sido publicado.
 
 ## Especificaciones técnicas
 
@@ -106,7 +106,7 @@ No disponible. No existe información pública sobre el modelo que permita compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Emmydax/Emmydax
+- Hugging Face: https://huggingface.co/Emmydax/Emmydax
 - Perfil del autor en GitHub: https://github.com/Emmydax
 - Perfil alternativo en GitHub: https://github.com/Emmydax12/
 - Plataforma Emmi AI (no relacionada directamente): https://www.emmi.ai/

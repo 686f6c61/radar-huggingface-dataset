@@ -2,7 +2,7 @@
 
 ## Resumen
 
-yujinhare es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes texto-a-imagen, publicado por el usuario Haruka041 en HuggingFace. El modelo no es autonomo: se aplica sobre el modelo base krea/Krea-2-Turbo, del que hereda toda la arquitectura de difusion, el codificador de texto y el pipeline de inferencia. Su funcion es inyectar un estilo o identidad visual concreta que se activa mediante la palabra de disparo `@YujinHare style`.
+yujinhare es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes texto-a-imagen, publicado por el usuario Haruka041 en Hugging Face. El modelo no es autonomo: se aplica sobre el modelo base krea/Krea-2-Turbo, del que hereda toda la arquitectura de difusion, el codificador de texto y el pipeline de inferencia. Su funcion es inyectar un estilo o identidad visual concreta que se activa mediante la palabra de disparo `@YujinHare style`.
 
 El repositorio pesa 0,2 GB y se distribuye con la libreria diffusers bajo la plantilla `template:diffusion-lora`, lo que indica que esta pensado para cargarse como adaptador en un pipeline de text-to-image existente en lugar de como modelo independiente. La model card es minima: se limita a declarar la palabra de disparo, el modelo base y el enlace de descarga, sin detallar datos de entrenamiento, rango del adaptador, dataset ni hiperparametros.
 
@@ -66,7 +66,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yujinhare | no disponible | no aplica | no disponible | HuggingFace (0 descargas) |
+| yujinhare | no disponible | no aplica | no disponible | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,6 +83,6 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Haruka041/yujinhare
+- Modelo en Hugging Face: https://huggingface.co/Haruka041/yujinhare
 - Archivos y versiones: https://huggingface.co/Haruka041/yujinhare/tree/main
 - Modelo base krea/Krea-2-Turbo: https://huggingface.co/krea/Krea-2-Turbo

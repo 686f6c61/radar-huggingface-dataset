@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `G21998/r1019-26d7cf3c-z-image-zbx3-s64-94f21b9c` es un artefacto alojado en HuggingFace por el usuario G21998, etiquetado como `sn56-replay`, `private` y con licencia `other`. La model card lo describe explicitamente como un "registro de investigacion privado, no un envio" (private research record, not a submission), lo que indica que no se trata de un modelo de lenguaje destinado a uso general, sino del resultado de una ejecucion de entrenamiento registrada dentro de un pipeline de validacion interno (harness sin Docker, LOCK replay-1019).
+El modelo identificado como `G21998/r1019-26d7cf3c-z-image-zbx3-s64-94f21b9c` es un artefacto alojado en Hugging Face por el usuario G21998, etiquetado como `sn56-replay`, `private` y con licencia `other`. La model card lo describe explicitamente como un "registro de investigacion privado, no un envio" (private research record, not a submission), lo que indica que no se trata de un modelo de lenguaje destinado a uso general, sino del resultado de una ejecucion de entrenamiento registrada dentro de un pipeline de validacion interno (harness sin Docker, LOCK replay-1019).
 
 Los metadatos disponibles apuntan a una tarea de generacion de imagenes (`z-image`) con una duracion de 0,75 horas, un brazo de experimento (`zbx3`), semilla 64 y un arbol de ejecucion (`94f21b9c`). El estado registrado es `UPLOAD` con codigo de retorno 0 y finalizacion correcta del artefacto entrenado, con 6 miembros implicados. El repositorio ocupa 4,2 GB, un tamano compatible con pesos de un modelo de difusion o de un checkpoint de imagen, aunque no se especifica la arquitectura concreta.
 
@@ -72,5 +72,5 @@ No disponible. No se dispone de informacion sobre arquitectura, parametros ni ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s64-94f21b9c
+- Hugging Face: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s64-94f21b9c
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

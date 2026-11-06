@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Formato | Licencia | Contexto / resolución | Disponibilidad |
 |---|---|---|---|---|---|
-| AssetFurnace/birefnet-lite-onnx | Segmentación de imagen | ONNX | MIT | no disponible | HuggingFace (0 descargas) |
-| BiRefNet (checkpoints oficiales) | Segmentación de imagen | PyTorch (safetensors/bin) | según checkpoint (no confirmado aquí) | alta resolución, según checkpoint | HuggingFace |
-| U2-Net / U2-Netp | Segmentación de objeto saliente | PyTorch / ONNX en terceros | Apache 2.0 (versión original) | resolución variable | HuggingFace y repos comunitarios |
-| RMBG-1.4 (BRIA) | Eliminación de fondo | PyTorch | no comercial en la versión pública | resolución variable | HuggingFace |
+| AssetFurnace/birefnet-lite-onnx | Segmentación de imagen | ONNX | MIT | no disponible | Hugging Face (0 descargas) |
+| BiRefNet (checkpoints oficiales) | Segmentación de imagen | PyTorch (safetensors/bin) | según checkpoint (no confirmado aquí) | alta resolución, según checkpoint | Hugging Face |
+| U2-Net / U2-Netp | Segmentación de objeto saliente | PyTorch / ONNX en terceros | Apache 2.0 (versión original) | resolución variable | Hugging Face y repos comunitarios |
+| RMBG-1.4 (BRIA) | Eliminación de fondo | PyTorch | no comercial en la versión pública | resolución variable | Hugging Face |
 
 La comparación es orientativa: no hay datos de rendimiento publicados para este checkpoint que permitan contrastarlo numéricamente con las alternativas.
 
@@ -82,7 +82,7 @@ La comparación es orientativa: no hay datos de rendimiento publicados para este
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AssetFurnace/birefnet-lite-onnx
+- Hugging Face: https://huggingface.co/AssetFurnace/birefnet-lite-onnx
 - Repositorio oficial de BiRefNet (referencia de la familia, no confirmado como origen directo): no disponible en la información proporcionada.
 - Paper de BiRefNet: no disponible en la información proporcionada.
 - Demos o blogs del autor: no disponibles.

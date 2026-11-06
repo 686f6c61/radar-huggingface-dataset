@@ -94,7 +94,7 @@ La comparación directa más relevante es con el modelo base BF16: esta versión
 
 ## Enlaces
 
-- [TheUnderscore/Gemma-4-26B-A4B-StyleTune-V2-NVFP4-W4ATTN-AWQ en HuggingFace](https://huggingface.co/TheUnderscore/Gemma-4-26B-A4B-StyleTune-V2-NVFP4-W4ATTN-AWQ)
+- [TheUnderscore/Gemma-4-26B-A4B-StyleTune-V2-NVFP4-W4ATTN-AWQ en Hugging Face](https://huggingface.co/TheUnderscore/Gemma-4-26B-A4B-StyleTune-V2-NVFP4-W4ATTN-AWQ)
 - [Gryphe/Gemma-4-26B-A4B-StyleTune-V2 (modelo base)](https://huggingface.co/Gryphe/Gemma-4-26B-A4B-StyleTune-V2)
 - [Repositorio 1Cat-vLLM](https://github.com/1CatAI/1Cat-vLLM)
 - [Rama feat/gemma4-sm70-native-v3](https://github.com/Th-Underscore/1Cat-vLLM/tree/feat/gemma4-sm70-native-v3)

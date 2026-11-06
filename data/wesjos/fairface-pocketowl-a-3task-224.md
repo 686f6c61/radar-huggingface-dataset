@@ -78,8 +78,8 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parámetros | Tareas | Contexto/Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FairFace-PocketOwl-A-3Task-224 | 20,2M | raza + género + edad | 224x224 RGB | CC BY 4.0 | HuggingFace |
-| Backbone `timm/tf_efficientnetv2_s.in21k_ft_in1k` | ~20M | clasificación ImageNet | 224x224 RGB | Apache-2.0 | HuggingFace |
+| FairFace-PocketOwl-A-3Task-224 | 20,2M | raza + género + edad | 224x224 RGB | CC BY 4.0 | Hugging Face |
+| Backbone `timm/tf_efficientnetv2_s.in21k_ft_in1k` | ~20M | clasificación ImageNet | 224x224 RGB | Apache-2.0 | Hugging Face |
 | FairFace (modelos de referencia del paper) | no disponible | raza + género + edad | no disponible | no disponible | no disponible |
 
 La información disponible no incluye resultados de otros modelos de atributos faciales comparables, por lo que no es posible establecer una comparativa cuantitativa de rendimiento.
@@ -97,7 +97,7 @@ La información disponible no incluye resultados de otros modelos de atributos f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wesjos/fairface-pocketowl-a-3task-224
+- Modelo en Hugging Face: https://huggingface.co/wesjos/fairface-pocketowl-a-3task-224
 - Backbone base: https://huggingface.co/timm/tf_efficientnetv2_s.in21k_ft_in1k
 - Dataset FairFace: https://huggingface.co/datasets/HuggingFaceM4/FairFace
 - Paper FairFace (Karkkainen & Joo, WACV 2021): no disponible como enlace directo en la información proporcionada

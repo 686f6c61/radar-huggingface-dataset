@@ -74,11 +74,11 @@ No se dispone de datos verificados del modelo Qwen/Qwen3.5-2B en la informacion 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-2B-SearchAgent-SFT-01-adapter | no disponible (base ~2B inferido) | no disponible | Apache 2.0 | HuggingFace, adaptador LoRA |
-| Qwen/Qwen3.5-2B (modelo base) | ~2B (inferido del nombre) | no disponible | no disponible en la informacion dada | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens nativos | Apache 2.0 | HuggingFace |
-| Llama-3.2-3B-Instruct | 3B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, Meta |
-| Gemma-2-2B-it | 2,6B | 8.192 tokens | Gemma Terms of Use | HuggingFace, Google |
+| Qwen3.5-2B-SearchAgent-SFT-01-adapter | no disponible (base ~2B inferido) | no disponible | Apache 2.0 | Hugging Face, adaptador LoRA |
+| Qwen/Qwen3.5-2B (modelo base) | ~2B (inferido del nombre) | no disponible | no disponible en la informacion dada | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens nativos | Apache 2.0 | Hugging Face |
+| Llama-3.2-3B-Instruct | 3B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, Meta |
+| Gemma-2-2B-it | 2,6B | 8.192 tokens | Gemma Terms of Use | Hugging Face, Google |
 
 Diferencias clave: frente a las alternativas citadas, este repositorio no es un modelo autonomo sino un adaptador, lo que reduce drasticamente el espacio en disco pero obliga a disponer del modelo base. Ademas, su licencia Apache 2.0 es mas permisiva que las licencias de Llama y Gemma, si bien la licencia del modelo base subyacente condiciona el uso final.
 
@@ -97,7 +97,7 @@ Diferencias clave: frente a las alternativas citadas, este repositorio no es un 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/lugman-madhiai/Qwen3.5-2B-SearchAgent-SFT-01-adapter
+- Adaptador en Hugging Face: https://huggingface.co/lugman-madhiai/Qwen3.5-2B-SearchAgent-SFT-01-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Unsloth (libreria de entrenamiento citada): https://github.com/unslothai/unsloth
 - TRL (libreria citada en las etiquetas): https://github.com/huggingface/trl

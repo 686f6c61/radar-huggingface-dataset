@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NijiReol es un adaptador LoRA de estilo para generacion de imagenes a partir de texto, publicado por el usuario Haruka041 en HuggingFace bajo el identificador `Haruka041/nijireol`. No se trata de un modelo de lenguaje ni de un modelo de difusion completo, sino de un ajuste de bajo rango (LoRA) pensado para aplicarse sobre el modelo base `krea/Krea-2-Turbo`, del que hereda toda la arquitectura, el tokenizador de texto y el espacio latente. El repositorio ocupa 0,2 GB y esta etiquetado con `diffusers`, `text-to-image`, `lora` y la plantilla `template:diffusion-lora`.
+NijiReol es un adaptador LoRA de estilo para generacion de imagenes a partir de texto, publicado por el usuario Haruka041 en Hugging Face bajo el identificador `Haruka041/nijireol`. No se trata de un modelo de lenguaje ni de un modelo de difusion completo, sino de un ajuste de bajo rango (LoRA) pensado para aplicarse sobre el modelo base `krea/Krea-2-Turbo`, del que hereda toda la arquitectura, el tokenizador de texto y el espacio latente. El repositorio ocupa 0,2 GB y esta etiquetado con `diffusers`, `text-to-image`, `lora` y la plantilla `template:diffusion-lora`.
 
 El problema que resuelve es acotado pero practico: incorporar un estilo visual concreto (referenciado como "NijiReol style") sin necesidad de reentrenar el modelo base. Para activarlo, el autor indica que se debe incluir la frase `NijiReol style` en el prompt. Este tipo de adaptadores es relevante porque permite a ilustradores y equipos de producto reutilizar un mismo modelo base pesado y conmutar estilos con ficheros ligeros, abaratando el almacenamiento y el coste de servir multiples variantes.
 
@@ -18,7 +18,7 @@ La informacion publicada es minima: la model card se limita a la palabra de acti
 | Longitud de contexto | no aplica (modelo text-to-image; no hay ventana de contexto de tokens declarada) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (la unica cadena documentada es la palabra de activacion `NijiReol style`, en ingles) |
-| Licencia | no disponible (ni en los metadatos de HuggingFace ni en la model card) |
+| Licencia | no disponible (ni en los metadatos de Hugging Face ni en la model card) |
 | Formato de pesos | no disponible; el repositorio se distribuye a traves de la libreria `diffusers` |
 | Modelo base | `krea/Krea-2-Turbo` |
 | Palabra de activacion | `NijiReol style` |
@@ -75,7 +75,7 @@ No se dispone de datos de otros adaptadores comparables en la informacion propor
 | Contexto | no aplica | no aplica | no aplica |
 | Rendimiento | no disponible | no disponible | no disponible |
 | Licencia | no disponible | no disponible | variable |
-| Disponibilidad | publico en HuggingFace, 0 descargas | publico en HuggingFace | variable |
+| Disponibilidad | publico en Hugging Face, 0 descargas | publico en Hugging Face | variable |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ No se dispone de datos de otros adaptadores comparables en la informacion propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Haruka041/nijireol
+- Modelo en Hugging Face: https://huggingface.co/Haruka041/nijireol
 - Ficheros y versiones: https://huggingface.co/Haruka041/nijireol/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo (referencia derivada del campo `base_model`)
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-liar-detector-v5 es un modelo de deteccion de senales "mentirosas" desarrollado por Sylv Q (usuario zeechimp en HuggingFace). Dado un par de senales 1-D alineadas (A, B), el modelo predice simultaneamente tres cosas: cual de las dos senales ha sido distorsionada, que tipo de distorsion presenta (6 familias) y si existe o no alguna manipulacion. No se trata de un detector de mentiras humano ni de un modelo de lenguaje, sino de una herramienta de investigacion sobre verificacion de integridad de senales y deteccion de anomalias sin referencia externa.
+liar-detector-v5 es un modelo de deteccion de senales "mentirosas" desarrollado por Sylv Q (usuario zeechimp en Hugging Face). Dado un par de senales 1-D alineadas (A, B), el modelo predice simultaneamente tres cosas: cual de las dos senales ha sido distorsionada, que tipo de distorsion presenta (6 familias) y si existe o no alguna manipulacion. No se trata de un detector de mentiras humano ni de un modelo de lenguaje, sino de una herramienta de investigacion sobre verificacion de integridad de senales y deteccion de anomalias sin referencia externa.
 
-La arquitectura es un perceptron multicapa (MLP) multi-cabeza con un tronco compartido de aproximadamente 19.500 parametros. La entrada es un vector fijo de 44 caracteristicas extraidas del par (A, B), por lo que no procesa texto ni audio en bruto: el pipeline declarado en HuggingFace es audio-classification, pero la model card especifica que la entrada es numerica. El modelo se entrena desde cero (no hay fine-tuning de un modelo base) sobre senales sinteticas generadas como suma de tres sinusoides con ruido gaussiano aditivo.
+La arquitectura es un perceptron multicapa (MLP) multi-cabeza con un tronco compartido de aproximadamente 19.500 parametros. La entrada es un vector fijo de 44 caracteristicas extraidas del par (A, B), por lo que no procesa texto ni audio en bruto: el pipeline declarado en Hugging Face es audio-classification, pero la model card especifica que la entrada es numerica. El modelo se entrena desde cero (no hay fine-tuning de un modelo base) sobre senales sinteticas generadas como suma de tres sinusoides con ruido gaussiano aditivo.
 
 Su relevancia es acotada y muy especifica: sirve como banco de pruebas reproducible para tecnicas de clasificacion multi-cabeza con calibracion por temperatura, para experimentos de generalizacion fuera de distribucion (OOD) y como componente en pipelines de fusion de sensores donde una de las fuentes puede estar manipulada. Con 19.500 parametros y licencia Apache 2.0, es un modelo de coste computacional practicamente nulo que puede ejecutarse en CPU.
 
@@ -129,7 +129,7 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeechimp/liar-detector-v5
-- Perfil del autor en HuggingFace: https://huggingface.co/zeechimp
+- Modelo en Hugging Face: https://huggingface.co/zeechimp/liar-detector-v5
+- Perfil del autor en Hugging Face: https://huggingface.co/zeechimp
 
 Nota: la busqueda web realizada no devolvio ningun enlace relevante relacionado con el modelo, su arquitectura, su entrenamiento o su evaluacion. Todos los resultados obtenidos eran ajenos al contenido tecnico de esta ficha y no se incluyen.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Beta007 es un modelo publicado en HuggingFace por el usuario Rajamul07 bajo licencia MIT. La model card asociada no contiene ninguna informacion tecnica: unicamente la declaracion de licencia, sin descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline declarado.
+Beta007 es un modelo publicado en Hugging Face por el usuario Rajamul07 bajo licencia MIT. La model card asociada no contiene ninguna informacion tecnica: unicamente la declaracion de licencia, sin descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline declarado.
 
 No es posible determinar que problema resuelve ni por que seria relevante, ya que no hay documentacion publica que lo respalde. Tampoco se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos.
 
@@ -80,7 +80,7 @@ No disponible. Al no conocerse la categoria del modelo (tamano, modalidad, tarea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rajamul07/Beta007
+- Modelo en Hugging Face: https://huggingface.co/Rajamul07/Beta007
 - Paper: no disponible.
 - Blog tecnico: no disponible.
 - Repositorio de codigo: no disponible.

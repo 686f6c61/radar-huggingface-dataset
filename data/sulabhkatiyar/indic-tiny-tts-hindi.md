@@ -138,7 +138,7 @@ Según la model card, es 37× más rápido que coqui/XTTS-v2 en CPU, y alcanza e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sulabhkatiyar/indic-tiny-tts-hindi
+- Modelo en Hugging Face: https://huggingface.co/sulabhkatiyar/indic-tiny-tts-hindi
 - Colección Indic Tiny TTS Models: https://huggingface.co/collections/sulabhkatiyar/indic-tiny-tts-models-6aeae36f954418631a68676d
 - Dataset de entrenamiento principal: https://huggingface.co/datasets/sulabhkatiyar/indic-tts-mini-24k
 - Dataset multilingüe preparado: https://huggingface.co/datasets/sulabhkatiyar/indic-tts-multilingual-prepared

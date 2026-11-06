@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `ashleyshyam121/wan-loras` es una publicacion alojada en HuggingFace cuyo contenido declarado se limita a una licencia Artistic 2.0 y a un README practicamente vacio (unicamente el bloque de frontmatter con dicha licencia). El nombre del repositorio sugiere que se trata de una coleccion de adaptadores LoRA asociados a la familia de modelos Wan, pero la informacion disponible no confirma cual es el modelo base, ni la tarea concreta (generacion de video, imagen o audio), ni el procedimiento de entrenamiento empleado.
+El repositorio `ashleyshyam121/wan-loras` es una publicacion alojada en Hugging Face cuyo contenido declarado se limita a una licencia Artistic 2.0 y a un README practicamente vacio (unicamente el bloque de frontmatter con dicha licencia). El nombre del repositorio sugiere que se trata de una coleccion de adaptadores LoRA asociados a la familia de modelos Wan, pero la informacion disponible no confirma cual es el modelo base, ni la tarea concreta (generacion de video, imagen o audio), ni el procedimiento de entrenamiento empleado.
 
 El dato mas relevante del repositorio es su tamano: 70,3 GB. Un adaptador LoRA tipico ocupa entre decenas y unos pocos cientos de megabytes, por lo que ese volumen apunta a un conjunto de multiples adaptadores, a pesos fusionados o a artefactos que exceden el concepto habitual de LoRA. El repositorio no declara pipeline de inferencia, idiomas soportados, resultados de benchmarks ni documentacion de uso, y acumula 0 descargas con 3 "likes" desde su creacion el 7 de septiembre de 2025.
 
-En el estado actual de la informacion, esta ficha no puede certificar capacidades, rendimiento ni requisitos de hardware del modelo. Se han marcado como "no disponible" todos los campos que la model card y los metadatos de HuggingFace no cubren, y se advierte de que los resultados de busqueda web devueltos para este termino no guardan ninguna relacion con el repositorio.
+En el estado actual de la informacion, esta ficha no puede certificar capacidades, rendimiento ni requisitos de hardware del modelo. Se han marcado como "no disponible" todos los campos que la model card y los metadatos de Hugging Face no cubren, y se advierte de que los resultados de busqueda web devueltos para este termino no guardan ninguna relacion con el repositorio.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ En el estado actual de la informacion, esta ficha no puede certificar capacidade
 | Licencia | Artistic 2.0 |
 | Formato de pesos | no disponible (el tamano del repositorio, 70,3 GB, sugiere safetensors u otros formatos de pesos completos, sin confirmar) |
 | Tamano del repositorio | 70,3 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de creacion | 7 de septiembre de 2025 |
 | Ultima actualizacion | 6 de octubre de 2026 |
 | Descargas | 0 |
@@ -83,7 +83,7 @@ No disponible. No es posible establecer una comparativa fiable sin conocer el mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ashleyshyam121/wan-loras
+- Repositorio en Hugging Face: https://huggingface.co/ashleyshyam121/wan-loras
 - Model card del autor: no contiene informacion tecnica mas alla de la licencia.
 - Articulo o informe tecnico: no disponible.
 - Repositorio de codigo: no disponible.

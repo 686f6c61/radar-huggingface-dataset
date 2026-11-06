@@ -97,7 +97,7 @@ La columna de coincidencia mide el porcentaje de respuestas identicas a las del 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Takenoko12345678/Spark-X2.5-4B-Japanese-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Takenoko12345678/Spark-X2.5-4B-Japanese-GGUF
 - Modelo base del ajuste japones: https://huggingface.co/Takenoko12345678/Spark-X2.5-4B-Japanese
 - Modelo base original: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Repositorio GitHub de la serie: https://github.com/XHToken/Spark-X2.5

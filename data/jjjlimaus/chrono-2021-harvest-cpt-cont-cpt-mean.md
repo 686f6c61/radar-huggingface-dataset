@@ -2,9 +2,9 @@
 
 ## Resumen
 
-chrono-2021-harvest-cpt-cont-cpt-mean es un modelo de generacion de texto publicado por el usuario jjjlimaus en HuggingFace, con 2.018.511.234 parametros (aproximadamente 2,02 mil millones) segun los pesos en safetensors del repositorio. Las etiquetas del repositorio lo identifican como un modelo de fusion (model-merge) vinculado al ecosistema Bittensor a traves de las etiquetas sn38, sn38-nanochrono y nanochrono, y su nombre sugiere una secuencia de entrenamiento continuado (cpt) sobre un corpus recolectado en 2021, seguida de una fusion por media de pesos. La model card no aporta documentacion tecnica adicional.
+chrono-2021-harvest-cpt-cont-cpt-mean es un modelo de generacion de texto publicado por el usuario jjjlimaus en Hugging Face, con 2.018.511.234 parametros (aproximadamente 2,02 mil millones) segun los pesos en safetensors del repositorio. Las etiquetas del repositorio lo identifican como un modelo de fusion (model-merge) vinculado al ecosistema Bittensor a traves de las etiquetas sn38, sn38-nanochrono y nanochrono, y su nombre sugiere una secuencia de entrenamiento continuado (cpt) sobre un corpus recolectado en 2021, seguida de una fusion por media de pesos. La model card no aporta documentacion tecnica adicional.
 
-Se trata de un modelo de acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargar los pesos. En el momento de la consulta acumula 0 descargas y 0 likes, esta fechado el 17 de septiembre de 2026 y no tiene resultados de benchmarks publicados ni especificacion de idiomas soportados.
+Se trata de un modelo de acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargar los pesos. En el momento de la consulta acumula 0 descargas y 0 likes, esta fechado el 17 de septiembre de 2026 y no tiene resultados de benchmarks publicados ni especificacion de idiomas soportados.
 
 Su relevancia es limitada y principalmente experimental: por tamano (2B) es desplegable en una unica GPU de consumo, pero la ausencia de documentacion sobre datos de entrenamiento, contexto, tokenizador y evaluaciones lo convierte en una pieza de investigacion o de participacion en subnet de Bittensor mas que en un candidato directo para produccion.
 
@@ -20,7 +20,7 @@ Su relevancia es limitada y principalmente experimental: por tamano (2B) es desp
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (libreria transformers) |
 | Tamano del repositorio | 8,1 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Fecha de publicacion | 2026-09-17 (actualizado el mismo dia) |
 | Descargas / likes | 0 / 0 |
 
@@ -38,7 +38,7 @@ Por el nombre y las etiquetas (harvest, cpt, cont, cpt, mean, model-merge, sn38-
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; no se declara ningun idioma en el repositorio.
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que el repositorio puede desplegarse mediante HuggingFace Inference Endpoints, siempre que se acepten las condiciones de acceso.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que el repositorio puede desplegarse mediante Hugging Face Inference Endpoints, siempre que se acepten las condiciones de acceso.
 
 ## Casos de uso
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion de 8 bits: aproximadamente 2-3 GB; en 4 bits: aproximadamente 1,5-2 GB (estimaciones a partir del numero de parametros, no verificadas con este checkpoint).
 - GPU recomendadas: cualquier GPU con 8 GB o mas de VRAM (RTX 3060 Ti, RTX 3070, RTX 4060 Ti, RTX 4080, RTX 4090, L4, A10G). En A100 o H100 se puede ejecutar con un lote mucho mayor, aunque el modelo es demasiado pequeno para aprovechar su ancho de banda.
 - Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas de VRAM; con cuantizacion de 4 bits cabe incluso en GPUs de 6 GB.
-- Opciones de despliegue: transformers (libreria declarada), HuggingFace Inference Endpoints (etiqueta endpoints_compatible), vLLM o TGI tras verificar la configuracion del tokenizador, y llama.cpp/Ollama tras convertir a GGUF.
+- Opciones de despliegue: transformers (libreria declarada), Hugging Face Inference Endpoints (etiqueta endpoints_compatible), vLLM o TGI tras verificar la configuracion del tokenizador, y llama.cpp/Ollama tras convertir a GGUF.
 - Latencia y throughput estimados: no disponibles; no hay mediciones publicadas y dependeran del hardware y de la cuantizacion elegida.
 - Nota sobre almacenamiento: el repositorio ocupa 8,1 GB, mas del doble de lo esperable para pesos bf16 de 2B, por lo que conviene revisar si contiene varios checkpoints o pesos en fp32 antes de planificar el despliegue.
 
@@ -70,7 +70,7 @@ La comparacion se limita a parametros, contexto y licencia, ya que chrono-2021-h
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| chrono-2021-harvest-cpt-cont-cpt-mean | 2,02 B | no disponible | Apache-2.0 | Gated en HuggingFace, 0 descargas |
+| chrono-2021-harvest-cpt-cont-cpt-mean | 2,02 B | no disponible | Apache-2.0 | Gated en Hugging Face, 0 descargas |
 | Qwen2.5-1.5B | 1,5 B | 32.768 tokens nativos | Apache-2.0 | Abierto, ampliamente desplegado |
 | Gemma 2 2B | 2,6 B | 8.192 tokens | Gemma Terms of Use | Abierto con condiciones |
 | Llama 3.2 1B | 1,23 B | 128.000 tokens | Llama 3.2 Community License | Abierto con condiciones |
@@ -83,14 +83,14 @@ En la misma franja de tamano, las alternativas cuentan con documentacion de dato
 - Sesgos conocidos: no disponible; no se documenta la composicion del corpus de entrenamiento, por lo que no es posible evaluar sesgos de genero, raza, idioma o ideologia.
 - Riesgo de alucinacion: no cuantificado. Al no existir evaluaciones ni documentacion del ajuste (SFT/RLHF/DPO), no hay garantias de alineacion con instrucciones ni de fidelidad factual.
 - Limitaciones de contexto e idioma: se desconoce la ventana de contexto y los idiomas soportados, lo que impide planificar tareas multilingues o de contexto largo. El nombre sugiere un corpus de 2021, por lo que la cobertura de eventos posteriores a esa fecha es probablemente escasa o nula.
-- Restricciones de licencia: los pesos se publican bajo Apache-2.0, lo que en principio permite uso comercial, pero el repositorio esta en modo gated y obliga a aceptar condiciones adicionales en HuggingFace antes de la descarga; conviene revisar esas condiciones antes de un uso en produccion.
+- Restricciones de licencia: los pesos se publican bajo Apache-2.0, lo que en principio permite uso comercial, pero el repositorio esta en modo gated y obliga a aceptar condiciones adicionales en Hugging Face antes de la descarga; conviene revisar esas condiciones antes de un uso en produccion.
 - Riesgos de la fusion de pesos: el merge por media (mean) puede degradar capacidades presentes en los checkpoints originales; sin evaluaciones comparativas no se puede verificar que el resultado sea superior a las partes.
 - Ausencia de mantenimiento: creado y actualizado el mismo dia, con 0 descargas y 0 likes, no hay evidencia de soporte, issues resueltos ni comunidad que valide su funcionamiento.
 - Verificacion previa obligatoria: antes de cualquier uso en produccion, es necesario comprobar el tokenizador, la configuracion de atencion, la ventana real de contexto y el estado de los pesos (posible fp32 o multiples checkpoints en el repositorio de 8,1 GB).
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jjjlimaus/chrono-2021-harvest-cpt-cont-cpt-mean
+- Hugging Face: https://huggingface.co/jjjlimaus/chrono-2021-harvest-cpt-cont-cpt-mean
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion adicional: no disponible

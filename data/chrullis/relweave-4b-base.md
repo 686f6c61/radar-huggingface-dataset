@@ -74,8 +74,8 @@ La informacion disponible no incluye resultados de otros sistemas de extraccion 
 
 | Modelo | Parametros | Contexto | F1 estricto de relacion (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chrullis/relweave-4b-base | 4B (base) + LoRA | no disponible | 0,783 (extremo a extremo) | Apache 2.0 | HuggingFace + libreria `relweave` |
-| unsloth/qwen3-4b-unsloth-bnb-4bit (modelo base) | 4B | no disponible | no disponible (no especializado en extraccion de relaciones) | Apache 2.0 (Qwen3) | HuggingFace |
+| chrullis/relweave-4b-base | 4B (base) + LoRA | no disponible | 0,783 (extremo a extremo) | Apache 2.0 | Hugging Face + libreria `relweave` |
+| unsloth/qwen3-4b-unsloth-bnb-4bit (modelo base) | 4B | no disponible | no disponible (no especializado en extraccion de relaciones) | Apache 2.0 (Qwen3) | Hugging Face |
 | Otros sistemas de extraccion de relaciones | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ La informacion disponible no incluye resultados de otros sistemas de extraccion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chrullis/relweave-4b-base
+- Modelo en Hugging Face: https://huggingface.co/chrullis/relweave-4b-base
 - Repositorio de la libreria relweave: https://github.com/memlocator/relweave
 - Modelo base: https://huggingface.co/unsloth/qwen3-4b-unsloth-bnb-4bit
 - Los resultados de busqueda web proporcionados no contienen informacion relevante sobre este modelo: todas las entradas hacen referencia a la instalacion silenciosa del modelo Gemini Nano de Google en el navegador Chrome. Por tanto, no se dispone de papers, blogs ni demos adicionales sobre relweave-4b-base.

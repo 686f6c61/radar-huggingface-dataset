@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSS-TTSD v0.5 es un modelo open source de síntesis de habla dialogada (text to spoken dialogue) publicado por el grupo MOSS (fnlp) en HuggingFace. Su función es convertir un guion de dos interlocutores, delimitado con etiquetas `[S1]` y `[S2]`, en audio conversacional expresivo con cambio de turno automático, clonación de voz zero-shot de los dos hablantes y soporte bilingüe chino-inglés. Esta ficha corresponde a la copia subida por el usuario `Jinstudio`; los pesos de referencia del autor figuran en `fnlp/MOSS-TTSD-v0.5`.
+MOSS-TTSD v0.5 es un modelo open source de síntesis de habla dialogada (text to spoken dialogue) publicado por el grupo MOSS (fnlp) en Hugging Face. Su función es convertir un guion de dos interlocutores, delimitado con etiquetas `[S1]` y `[S2]`, en audio conversacional expresivo con cambio de turno automático, clonación de voz zero-shot de los dos hablantes y soporte bilingüe chino-inglés. Esta ficha corresponde a la copia subida por el usuario `Jinstudio`; los pesos de referencia del autor figuran en `fnlp/MOSS-TTSD-v0.5`.
 
 Técnicamente es un modelo de lenguaje generativo construido sobre `Qwen/Qwen3-1.7B-Base` (~1,7B parámetros) acoplado a un codec neuronal de audio semántico-acústico (`fnlp/XY_Tokenizer_TTSD_V0_hf`). El repositorio declara 2.049.551.360 parámetros (~2,05B) y 4,1 GB de pesos en safetensors. La combinación de un codec de baja tasa de bits con un entrenamiento orientado a secuencias largas le permite generar hasta 960 segundos de audio en una sola sesión, lo que lo sitúa en el terreno de la producción de podcasts y audiolibros dialogados.
 
@@ -54,7 +54,7 @@ En cuanto a datos, la model card indica que el entrenamiento combina millones de
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas objetivas (MOS, WER, SIM de similitud de hablante, ni comparaciones con otros sistemas), y la información de HuggingFace no aporta datos de evaluación cuantitativa.
+No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas objetivas (MOS, WER, SIM de similitud de hablante, ni comparaciones con otros sistemas), y la información de Hugging Face no aporta datos de evaluación cuantitativa.
 
 ## Requisitos de hardware
 
@@ -93,7 +93,7 @@ Nota: los datos de los modelos alternativos proceden de conocimiento general del
 
 ## Enlaces
 
-- Modelo en HuggingFace (esta copia): https://huggingface.co/Jinstudio/MOSS-TTSD-v0.5
+- Modelo en Hugging Face (esta copia): https://huggingface.co/Jinstudio/MOSS-TTSD-v0.5
 - Modelo oficial del autor: https://huggingface.co/fnlp/MOSS-TTSD-v0.5
 - Codec de audio requerido: https://huggingface.co/fnlp/XY_Tokenizer_TTSD_V0_hf
 - Modelo base del LLM: https://huggingface.co/Qwen/Qwen3-1.7B-Base

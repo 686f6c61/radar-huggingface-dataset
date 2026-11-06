@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LatentRAG_Qwen2.5-7B (este) | Adaptador sobre 7,6B | No disponible | RAG latente con recuperador F2LLM-v2-330M, entrenado en NQ + HotpotQA | No disponible | HuggingFace, 0 descargas |
+| LatentRAG_Qwen2.5-7B (este) | Adaptador sobre 7,6B | No disponible | RAG latente con recuperador F2LLM-v2-330M, entrenado en NQ + HotpotQA | No disponible | Hugging Face, 0 descargas |
 | Qwen2.5-7B (modelo base) | 7,6B | No disponible en esta ficha (consultar model card de Qwen) | Transformer decoder denso de proposito general | No disponible en la informacion proporcionada para el base | Ampliamente disponible |
 | Qwen2.5-7B-Instruct | 7,6B | No disponible en esta ficha | Decoder denso ajustado por instrucciones | No disponible en la informacion proporcionada | Ampliamente disponible |
 | Otros adaptadores RAG de 7B | No disponible | No disponible | RAG con pasajes concatenados o recuperacion aprendida | No disponible | No disponible |
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhengyijia142/LatentRAG_Qwen2.5-7B_F2LLM-v2-330M_AutoRefine_Qwen2.5-7B
+- Modelo en Hugging Face: https://huggingface.co/zhengyijia142/LatentRAG_Qwen2.5-7B_F2LLM-v2-330M_AutoRefine_Qwen2.5-7B
 - Repositorio GitHub del proyecto LatentRAG: https://github.com/zhengyijia/LatentRAG
 - Paper de LatentRAG: https://arxiv.org/pdf/2605.06285
 - Modelo base Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B

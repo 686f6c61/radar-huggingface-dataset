@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo (identificador `afsdfg/MyAwesomeModel-TestRepo`) es un repositorio alojado en HuggingFace por el usuario `afsdfg`. Por sus propias métricas, se trata de un repositorio de prueba: cero descargas, cero likes, tamaño declarado de 0,0 GB y fechas de creación y actualización de septiembre de 2026, posteriores a la fecha de consulta. No incluye pesos, tokenizador, código de inferencia ni documentación técnica verificable.
+MyAwesomeModel-TestRepo (identificador `afsdfg/MyAwesomeModel-TestRepo`) es un repositorio alojado en Hugging Face por el usuario `afsdfg`. Por sus propias métricas, se trata de un repositorio de prueba: cero descargas, cero likes, tamaño declarado de 0,0 GB y fechas de creación y actualización de septiembre de 2026, posteriores a la fecha de consulta. No incluye pesos, tokenizador, código de inferencia ni documentación técnica verificable.
 
 La model card describe un modelo genérico de razonamiento con mejoras en matemáticas, programación y lógica, soporte de *system prompt*, función *calling* y una reducción declarada de la tasa de alucinación. Sin embargo, no identifica arquitectura, número de parámetros, longitud de contexto, idiomas ni datos de entrenamiento, y las comparativas de benchmarks emplean etiquetas anónimas (`Model1`, `Model2`, `Model1-v2`). El texto tiene todos los indicios de ser una plantilla sin sustituir.
 
@@ -12,7 +12,7 @@ Existe además una contradicción interna relevante: las etiquetas del repositor
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible; las etiquetas de HuggingFace indican `bert` (encoder) y la model card describe capacidades generativas de razonamiento, sin detallar la arquitectura |
+| Arquitectura | no disponible; las etiquetas de Hugging Face indican `bert` (encoder) y la model card describe capacidades generativas de razonamiento, sin detallar la arquitectura |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se declara que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -81,7 +81,7 @@ Además, el texto menciona un resultado en AIME 2025 del 87,5 % frente al 70 % d
 - VRAM estimada para inferencia: no disponible. Sin pesos publicados no es posible estimar requisitos.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: no disponible. El repositorio no contiene ficheros de pesos, por lo que no puede cargarse con `transformers`, vLLM, llama.cpp, Ollama ni TGI. La etiqueta `endpoints_compatible` de HuggingFace indica únicamente compatibilidad formal con Inference Endpoints, no que exista un artefacto desplegable.
+- Opciones de despliegue: no disponible. El repositorio no contiene ficheros de pesos, por lo que no puede cargarse con `transformers`, vLLM, llama.cpp, Ollama ni TGI. La etiqueta `endpoints_compatible` de Hugging Face indica únicamente compatibilidad formal con Inference Endpoints, no que exista un artefacto desplegable.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -103,7 +103,7 @@ No disponible. La model card no identifica los modelos de referencia (`Model1`, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/afsdfg/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/afsdfg/MyAwesomeModel-TestRepo
 - Licencia MIT referenciada en la model card y en las etiquetas del repositorio, sin fichero `LICENSE` accesible en la información proporcionada.
 
 Nota: la búsqueda web realizada no devolvió resultados relacionados con el modelo. Los enlaces recuperados corresponden a la aerolínea Vueling (vueling.com, tickets.vueling.com y su artículo de Wikipedia) y no guardan relación con el artefacto descrito, por lo que se omiten. No se han encontrado paper, blog técnico, repositorio de código ni demo asociados.

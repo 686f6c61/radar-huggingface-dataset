@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`andrearossifo/deit-experiment` es un prototipo de investigación publicado en HuggingFace que combina la arquitectura DeiT (Data-efficient Image Transformer) con un objetivo de aprendizaje contrastivo. Lo desarrolla el usuario andrearossifo dentro de un repositorio personal sin métricas ni validación publicadas, y se distribuye bajo licencia Apache 2.0. El propio autor lo describe como un punto de partida experimental, no como un modelo entrenado.
+`andrearossifo/deit-experiment` es un prototipo de investigación publicado en Hugging Face que combina la arquitectura DeiT (Data-efficient Image Transformer) con un objetivo de aprendizaje contrastivo. Lo desarrolla el usuario andrearossifo dentro de un repositorio personal sin métricas ni validación publicadas, y se distribuye bajo licencia Apache 2.0. El propio autor lo describe como un punto de partida experimental, no como un modelo entrenado.
 
 El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, con un total de 33.088 parámetros, una cifra muy inferior a la de cualquier DeiT-tiny de referencia (en torno a 5,7 millones). La model card declara explícitamente que no se reclama ninguna puntuación de benchmark y que el modelo no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| andrearossifo/deit-experiment | 33.088 | no disponible | sin benchmarks publicados; checkpoint sin entrenar | apache-2.0 | HuggingFace, implementacion personalizada |
-| DeiT-tiny de referencia (facebook/deit-tiny-patch16-224) | en torno a 5,7 M (cifra publica del modelo original) | no aplica (entrada de imagen de 224x224) | metricas publicadas de clasificacion en ImageNet | apache-2.0 | HuggingFace, integrado en transformers |
-| Otros ViT pequenos de proposito general | no disponible | no disponible | no disponible | variable | HuggingFace |
+| andrearossifo/deit-experiment | 33.088 | no disponible | sin benchmarks publicados; checkpoint sin entrenar | apache-2.0 | Hugging Face, implementacion personalizada |
+| DeiT-tiny de referencia (facebook/deit-tiny-patch16-224) | en torno a 5,7 M (cifra publica del modelo original) | no aplica (entrada de imagen de 224x224) | metricas publicadas de clasificacion en ImageNet | apache-2.0 | Hugging Face, integrado en transformers |
+| Otros ViT pequenos de proposito general | no disponible | no disponible | no disponible | variable | Hugging Face |
 
 La diferencia mas relevante es de escala: el prototipo analizado tiene aproximadamente un 0,6 por ciento de los parametros del DeiT-tiny de referencia. Esa brecha, unida a la ausencia de entrenamiento, impide cualquier comparacion de rendimiento significativa. No se dispone de datos suficientes para comparar con alternativas contrastivas especificas.
 
@@ -82,6 +82,6 @@ La diferencia mas relevante es de escala: el prototipo analizado tiene aproximad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andrearossifo/deit-experiment
+- Modelo en Hugging Face: https://huggingface.co/andrearossifo/deit-experiment
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

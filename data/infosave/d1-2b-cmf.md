@@ -77,8 +77,8 @@ El vision encoder añade unos 0,5 s por imagen de 640×480 en el M4. No se sopor
 | Modelo | Parametros | Paradigma | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | d1-2B-cmf (esta ficha) | 2B | Decision model (System One, sin generación) | no disponible | lfm1.0 | CMF, motor cortiq (Rust, Vulkan/Metal/CPU) |
-| LiquidAI/d1-2B (base, bf16) | 2B | Decision model (System One) | no disponible | lfm1.0 | HuggingFace, Transformers |
-| LFM3-VL-2B (base multimodal) | 2B | LLM multimodal generativo | no disponible | no disponible | HuggingFace, Liquid AI |
+| LiquidAI/d1-2B (base, bf16) | 2B | Decision model (System One) | no disponible | lfm1.0 | Hugging Face, Transformers |
+| LFM3-VL-2B (base multimodal) | 2B | LLM multimodal generativo | no disponible | no disponible | Hugging Face, Liquid AI |
 
 La diferencia clave frente a un LLM generativo de tamaño similar usado para clasificación (que debe generar tokens y parsear la salida) es que d1-2B devuelve respuestas tipadas con probabilidades calibradas en una sola pasada, reduciendo latencia y eliminando la variabilidad de la generación libre.
 

@@ -76,7 +76,7 @@ En paralelo 2 (dos peticiones de 25k concurrentes) se midieron ~650 tok/s de pre
 - Memoria residente: ~100-112 GB en total; los pesos ocupan 98 GB del presupuesto de GPU y el limite cableado llega a ~120-122 GB sobre el tope de 126 GB con contexto de 241k.
 - Tabla n-gram PLE (57,6 GB): permanece en la cache de paginas, no residente. No debe pasarse `--ple-gpu`, ya que fijaria los 53,6 GB de la tabla en memoria de GPU.
 - Cache KV: 7,28 GB para los 262.144 tokens completos en bf16 sin cuantizar; ~14,6 GB para dos contextos completos.
-- Espacio en disco: ~153 GiB para el paquete (105,2 GB de indice mas 57,6 GB de n-gram). El repositorio en HuggingFace ocupa 208,4 GB.
+- Espacio en disco: ~153 GiB para el paquete (105,2 GB de indice mas 57,6 GB de n-gram). El repositorio en Hugging Face ocupa 208,4 GB.
 - GPU NVIDIA (A100, H100, RTX 4090) y CUDA: no soportado; el formato es MLX y el runtime es mlx-serve.
 - GPU de consumo: no aplica en el sentido habitual; no cabe en GPUs de consumo con 24 GB. Para hardware de consumo con CUDA habria que recurrir a las cuantizaciones GGUF del modelo base publicadas por unsloth con llama.cpp.
 - Despliegue: `mlx-serve` (CLI y servidor), instalado via Homebrew (`brew tap ddalcu/mlx-serve`). No hay soporte documentado para vLLM, TGI u Ollama.
@@ -110,7 +110,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento entre 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xpashkin/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-6.6bpw
+- Modelo en Hugging Face: https://huggingface.co/xpashkin/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-6.6bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GGUF del modelo base y origen de la imatrix: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Runtime mlx-serve: https://github.com/ddalcu/mlx-serve

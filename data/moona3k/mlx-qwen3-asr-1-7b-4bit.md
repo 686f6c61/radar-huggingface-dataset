@@ -97,7 +97,7 @@ No se dispone de datos comparativos frente a otros sistemas ASR (Whisper, Parake
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moona3k/mlx-qwen3-asr-1.7b-4bit
+- Modelo en Hugging Face: https://huggingface.co/moona3k/mlx-qwen3-asr-1.7b-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Repositorio de la implementacion en MLX: https://github.com/moona3k/mlx-qwen3-asr
 - Benchmarks de cuantizacion citados en la model card: `docs/benchmarks/2026-09-07-quant-matrix-test-clean-speaker100.md` y `docs/benchmarks/2026-09-19-quantized-artifacts-librispeech-test-clean-100-1.7B_4bit.json` dentro del repositorio anterior.

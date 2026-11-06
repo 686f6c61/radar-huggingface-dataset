@@ -45,7 +45,7 @@ El dataset de entrenamiento consta de 2.000 filas: 1.500 problemas matematicos d
 - Experimentos de modelado de secuencias de ajedrez: el ajuste con notacion SAN facilita probar tareas de prediccion de movimientos y evaluar la coherencia de secuencias largas.
 - Calentamiento de capacidades para agentes de trading: el modelo se disena como fase previa a un agente que opera en el entorno pump-arena, con condiciones identicas para todos los participantes.
 - Base para experimentos de evaluacion comparativa: al estar publicado con licencia Apache 2.0, puede integrarse en arneses de benchmark internos sin restricciones de uso comercial.
-- Docencia y formacion: util para demostrar el ciclo completo de ajuste fino de un modelo de menos de 1.000 M de parametros, desde la preparacion del dataset hasta la publicacion en HuggingFace.
+- Docencia y formacion: util para demostrar el ciclo completo de ajuste fino de un modelo de menos de 1.000 M de parametros, desde la preparacion del dataset hasta la publicacion en Hugging Face.
 - Pruebas de infraestructura de despliegue: su tamano reducido permite validar configuraciones de vLLM, TGI o llama.cpp antes de escalar a modelos mayores.
 
 ## Benchmarks y rendimiento
@@ -84,7 +84,7 @@ La comparativa se limita a datos publicos de los modelos base; no hay resultados
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ProjectSpaice/Qwen3-0.6B-bench-pretrain
+- Hugging Face: https://huggingface.co/ProjectSpaice/Qwen3-0.6B-bench-pretrain
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Dataset GSM8K: https://huggingface.co/datasets/openai/gsm8k
 - Dataset strategic_game_chess: https://huggingface.co/datasets/laion/strategic_game_chess

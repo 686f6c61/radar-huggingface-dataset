@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`lifemate-qwen35-4b-lora-bf16-bs4-modal-20261101` es un adaptador LoRA publicado por el usuario NT-Loi sobre el modelo base Qwen/Qwen3.5-4B. Se distribuye a través de HuggingFace con la librería PEFT, en formato safetensors y precisión bf16, y está orientado a generación de texto conversacional dentro del dominio "lifemate", según indican sus etiquetas. El repositorio ocupa aproximadamente 0,1 GB, un tamaño coherente con un adaptador de bajo rango y no con pesos completos.
+`lifemate-qwen35-4b-lora-bf16-bs4-modal-20261101` es un adaptador LoRA publicado por el usuario NT-Loi sobre el modelo base Qwen/Qwen3.5-4B. Se distribuye a través de Hugging Face con la librería PEFT, en formato safetensors y precisión bf16, y está orientado a generación de texto conversacional dentro del dominio "lifemate", según indican sus etiquetas. El repositorio ocupa aproximadamente 0,1 GB, un tamaño coherente con un adaptador de bajo rango y no con pesos completos.
 
 El modelo resuelve el problema de especializar un LLM de 4B parámetros en un caso de uso conversacional concreto sin necesidad de reentrenar el modelo base. Al ser un adaptador, requiere cargar Qwen3.5-4B y aplicar el LoRA encima, lo que reduce costes de almacenamiento y permite reutilizar la infraestructura de inferencia del modelo original.
 
-La relevancia de esta ficha es limitada por la escasez de documentación pública: no se especifican idiomas, datos de entrenamiento, hiperparámetros del LoRA (rango, alpha, dropout) ni resultados de evaluación. Además, el acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo. Cualquier evaluación rigurosa debe hacerse contra el modelo base y contra el propio adaptador una vez obtenido el acceso.
+La relevancia de esta ficha es limitada por la escasez de documentación pública: no se especifican idiomas, datos de entrenamiento, hiperparámetros del LoRA (rango, alpha, dropout) ni resultados de evaluación. Además, el acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo. Cualquier evaluación rigurosa debe hacerse contra el modelo base y contra el propio adaptador una vez obtenido el acceso.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| lifemate-qwen35-4b-lora (este) | adaptador sobre 4B | no disponible | apache-2.0 | safetensors (LoRA) | gated en HuggingFace |
+| lifemate-qwen35-4b-lora (este) | adaptador sobre 4B | no disponible | apache-2.0 | safetensors (LoRA) | gated en Hugging Face |
 | Qwen/Qwen3.5-4B (base) | 4B | no disponible | no disponible en la informacion | safetensors | público (referencia) |
 | Adaptadores LoRA conversacionales sobre modelos de 4B | variable | variable | variable | safetensors | variable |
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 ## Limitaciones y advertencias
 
 - Documentación mínima: no se declaran idiomas, dataset, hiperparámetros del LoRA ni métricas de evaluación.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de la descarga, lo que puede limitar la reproducibilidad.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de la descarga, lo que puede limitar la reproducibilidad.
 - Riesgo de alucinación: inherente al modelo base; el ajuste conversacional no lo elimina y podría acentuarlo si el dataset de entrenamiento es limitado.
 - Posible degradación de capacidades generales: un LoRA conversacional puede reducir el rendimiento en código, matemáticas o razonamiento respecto al base.
 - Sesgos: no documentados; se heredan los del modelo base Qwen3.5-4B.
@@ -79,6 +79,6 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NT-Loi/lifemate-qwen35-4b-lora-bf16-bs4-modal-20261101
+- Hugging Face: https://huggingface.co/NT-Loi/lifemate-qwen35-4b-lora-bf16-bs4-modal-20261101
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información disponible.

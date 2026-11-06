@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`TalkMate/fluid-speech-pro-coreml` es un modelo publicado en HuggingFace por el usuario TalkMate, presumiblemente vinculado a la plataforma de aprendizaje de idiomas TalkMate. Por el identificador y el sufijo `coreml`, se trata de un artefacto convertido al formato Core ML de Apple, lo que sugiere un modelo de voz (reconocimiento o síntesis de habla) optimizado para ejecución en dispositivos Apple (iOS, iPadOS, macOS) mediante el framework Core ML y, probablemente, la Neural Engine.
+`TalkMate/fluid-speech-pro-coreml` es un modelo publicado en Hugging Face por el usuario TalkMate, presumiblemente vinculado a la plataforma de aprendizaje de idiomas TalkMate. Por el identificador y el sufijo `coreml`, se trata de un artefacto convertido al formato Core ML de Apple, lo que sugiere un modelo de voz (reconocimiento o síntesis de habla) optimizado para ejecución en dispositivos Apple (iOS, iPadOS, macOS) mediante el framework Core ML y, probablemente, la Neural Engine.
 
 La información pública disponible es mínima: la model card únicamente contiene la declaración de licencia (`cc-by-4.0`), sin descripción, sin especificaciones técnicas, sin datos de entrenamiento ni resultados de benchmarks. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no tiene pipeline declarado, lo que indica que no ha sido validado ni catalogado por la plataforma.
 
@@ -78,5 +78,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TalkMate/fluid-speech-pro-coreml
+- Hugging Face: https://huggingface.co/TalkMate/fluid-speech-pro-coreml
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mobilevit for multitask es un prototipo de investigación publicado en HuggingFace por el usuario THOMASSMITHna bajo licencia Apache 2.0. El repositorio contiene una implementación propia de una arquitectura MobileViT a escala "nano" orientada a tareas múltiples (multitask), con atención de tipo grouped query, fusión Tucker, activación GELU-Tanh y normalización RMSNorm. No se trata de un modelo entrenado: el autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un checkpoint evaluado con benchmarks.
+Mobilevit for multitask es un prototipo de investigación publicado en Hugging Face por el usuario THOMASSMITHna bajo licencia Apache 2.0. El repositorio contiene una implementación propia de una arquitectura MobileViT a escala "nano" orientada a tareas múltiples (multitask), con atención de tipo grouped query, fusión Tucker, activación GELU-Tanh y normalización RMSNorm. No se trata de un modelo entrenado: el autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un checkpoint evaluado con benchmarks.
 
 El propio autor declara que no se reclama ninguna puntuación de benchmark y que el checkpoint de inicialización no ha sido entrenado ni auditado en términos de robustez, equidad o transferencia de dominio. La receta de experimento por defecto incluida usa el optimizador Lion con un schedule OneCycle, pero el autor aclara que son valores de partida del script y no evidencia de una ejecución completada.
 
@@ -79,7 +79,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| THOMASSMITHna/mobilevit-multitask | 24.832 segun metadatos | No disponible | No evaluado (checkpoint sin entrenar) | Apache 2.0 | HuggingFace |
+| THOMASSMITHna/mobilevit-multitask | 24.832 segun metadatos | No disponible | No evaluado (checkpoint sin entrenar) | Apache 2.0 | Hugging Face |
 | Alternativas comparables | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/THOMASSMITHna/mobilevit-multitask
+- Hugging Face: https://huggingface.co/THOMASSMITHna/mobilevit-multitask
 - Repositorio (archivos declarados en la model card): `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo adicionales: no disponibles en la información proporcionada.
 - Resultados de búsqueda web: no se encontraron enlaces técnicos relevantes; los resultados devueltos correspondían a canales genéricos de YouTube sin relación con el modelo.

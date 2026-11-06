@@ -71,9 +71,9 @@ No se han publicado en la informacion disponible resultados adicionales de bench
 
 | Modelo | Arquitectura / parametros | Contexto | Macro-F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `quim-motger/emotion-bert-base-binary-ensemble` (este) | 9 x BERT base (~110M cada uno) | 512 | 0.530 (+-0.074) | MIT | HuggingFace |
-| `quim-motger/emotion-roberta-large-multilabel-genai-bce` | RoBERTa large, multi-label (cabeza compartida) | no disponible | 0.591 | no disponible en la informacion | HuggingFace |
-| `google-bert/bert-base-cased` | BERT base encoder-only (~110M) | 512 | no disponible (modelo base sin fine-tuning para esta tarea) | Apache 2.0 (segun el modelo base) | HuggingFace |
+| `quim-motger/emotion-bert-base-binary-ensemble` (este) | 9 x BERT base (~110M cada uno) | 512 | 0.530 (+-0.074) | MIT | Hugging Face |
+| `quim-motger/emotion-roberta-large-multilabel-genai-bce` | RoBERTa large, multi-label (cabeza compartida) | no disponible | 0.591 | no disponible en la informacion | Hugging Face |
+| `google-bert/bert-base-cased` | BERT base encoder-only (~110M) | 512 | no disponible (modelo base sin fine-tuning para esta tarea) | Apache 2.0 (segun el modelo base) | Hugging Face |
 
 La comparacion principal es con el modelo hermano multi-label del mismo autor: este repositorio obtiene menor macro-F1 (0.530 frente a 0.591) pero, segun el autor, es mas robusto a la mala calibracion por reweighting y no falla por completo en emociones raras en el escenario base como si lo hace la cabeza multi-label.
 
@@ -94,7 +94,7 @@ La comparacion principal es con el modelo hermano multi-label del mismo autor: e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/quim-motger/emotion-bert-base-binary-ensemble
+- Modelo en Hugging Face: https://huggingface.co/quim-motger/emotion-bert-base-binary-ensemble
 - Modelo hermano multi-label: https://huggingface.co/quim-motger/emotion-roberta-large-multilabel-genai-bce
 - Modelo base: https://huggingface.co/google-bert/bert-base-cased
 - Dataset de resenas: https://huggingface.co/datasets/nlp4se/app-review-emotions

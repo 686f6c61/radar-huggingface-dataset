@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MergekitCloud/mergekit-10 | 8,03 B | no disponible | no disponible | HuggingFace |
-| Llama 3.1 8B (Meta) | 8,03 B | 128k tokens | Llama 3.1 Community License | HuggingFace |
-| Mistral 7B v0.3 | 7,24 B | 32k tokens | Apache 2.0 | HuggingFace |
-| ArliAI/Llama-3.1-8B-ArliAI-RPMax-v1.3 | 8,03 B | 128k tokens | no disponible | HuggingFace |
+| MergekitCloud/mergekit-10 | 8,03 B | no disponible | no disponible | Hugging Face |
+| Llama 3.1 8B (Meta) | 8,03 B | 128k tokens | Llama 3.1 Community License | Hugging Face |
+| Mistral 7B v0.3 | 7,24 B | 32k tokens | Apache 2.0 | Hugging Face |
+| ArliAI/Llama-3.1-8B-ArliAI-RPMax-v1.3 | 8,03 B | 128k tokens | no disponible | Hugging Face |
 
 La comparación muestra que mergekit-10 es similar a sus modelos base, pero la falta de licencia y contexto declarados lo hace menos atractivo para uso comercial sin verificación. Los modelos base tienen ventajas en términos de licencia (Llama 3.1 tiene licencia específica, Mistral es Apache 2.0) y contexto conocido.
 
@@ -77,9 +77,9 @@ La comparación muestra que mergekit-10 es similar a sus modelos base, pero la f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MergekitCloud/mergekit-10
+- Modelo en Hugging Face: https://huggingface.co/MergekitCloud/mergekit-10
 - Repositorio de MergeKit (herramienta de fusión): https://github.com/arcee-ai/mergekit
 - Paper de Model Stock (método de fusión): https://arxiv.org/abs/2403.19522
-- Blog de HuggingFace sobre fusión de modelos: https://huggingface.co/blog/mlabonne/merge-models
+- Blog de Hugging Face sobre fusión de modelos: https://huggingface.co/blog/mlabonne/merge-models
 - Guía de MergeKit en Clore.ai: https://docs.clore.ai/guides/training/mergekit
 - Comunidad MergeKit Hub: https://www.mergekit.com/

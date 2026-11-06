@@ -81,8 +81,8 @@ Nota: no se dispone de datos de benchmarks comparativos en la información propo
 
 ## Enlaces
 
-- Repo de HuggingFace de este modelo: https://huggingface.co/ForgedTimbers/Phi-3-mini-4k-gguf
-- Modelo original de Microsoft en HuggingFace: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
+- Repo de Hugging Face de este modelo: https://huggingface.co/ForgedTimbers/Phi-3-mini-4k-gguf
+- Modelo original de Microsoft en Hugging Face: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Repo de GGUF de Microsoft: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf
 - Blog de Phi-3 de Microsoft: https://aka.ms/phi3blog-april
 - Informe técnico de Phi-3: https://aka.ms/phi3-tech-report

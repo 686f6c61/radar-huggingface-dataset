@@ -78,7 +78,7 @@ La comparativa se limita a parametros, licencia y formato, ya que no hay datos d
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/komeijishiki/DeepSeek-V4-Pro-Qwen3.5-9B-EXL3-6.50bpw-H8-V8-MTP8
+- Repositorio Hugging Face del modelo: https://huggingface.co/komeijishiki/DeepSeek-V4-Pro-Qwen3.5-9B-EXL3-6.50bpw-H8-V8-MTP8
 - Modelo original sin cuantizar (Jackrong): https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B
 - Version 4B del mismo fine-tune: https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B
 - Modelo base Qwen3.5-9B (unsloth): https://huggingface.co/unsloth/Qwen3.5-9B

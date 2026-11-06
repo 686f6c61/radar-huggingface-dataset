@@ -94,8 +94,8 @@ El valor de 43K esta un 101% por encima del minimo de 4K. La curva asciende de f
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (pi05-relative-eef-bagplace-memrtc-full-ft-43k) | 4,14 mil millones | no disponible | eval_loss 0,0361 en el paso 43K; minimo 0,0180 en 4K | apache-2.0 | HuggingFace, 0 descargas y 0 likes |
-| `lerobot/pi05_base` | no disponible | no disponible | no disponible | no disponible | HuggingFace (modelo base del que parte este ajuste) |
+| Este modelo (pi05-relative-eef-bagplace-memrtc-full-ft-43k) | 4,14 mil millones | no disponible | eval_loss 0,0361 en el paso 43K; minimo 0,0180 en 4K | apache-2.0 | Hugging Face, 0 descargas y 0 likes |
+| `lerobot/pi05_base` | no disponible | no disponible | no disponible | no disponible | Hugging Face (modelo base del que parte este ajuste) |
 | Otras rondas de bag-place del mismo autor (sin MEM ni RTC) | no disponible | no disponible | no disponible; la model card advierte que sus cifras no son comparables con este checkpoint | no disponible | no disponible en la informacion proporcionada |
 | Otros VLA comparables (pi0, OpenVLA, GR00T) | no disponible | no disponible | no disponible | no disponible | no disponible: la busqueda web no devolvio informacion relevante |
 
@@ -119,7 +119,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maskjp/pi05-relative-eef-bagplace-memrtc-full-ft-43k
+- Modelo en Hugging Face: https://huggingface.co/maskjp/pi05-relative-eef-bagplace-memrtc-full-ft-43k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Articulo de MEM citado en las etiquetas (arXiv:2603.03596): https://arxiv.org/abs/2603.03596
-- Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo ni sobre su articulo de referencia; los unicos enlaces verificables son los anteriores, extraidos de la informacion de HuggingFace y de la model card.
+- Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo ni sobre su articulo de referencia; los unicos enlaces verificables son los anteriores, extraidos de la informacion de Hugging Face y de la model card.

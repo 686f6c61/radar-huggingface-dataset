@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-large-v3-turbo-ggml (este repo) | no disponible | no disponible | ggml (q8_0, q5_0) | MIT | HuggingFace, espejo de whisper.cpp |
-| Whisper large-v3-turbo (OpenAI) | no disponible en la información | no disponible | safetensors/PyTorch (original) | MIT | HuggingFace (openai/whisper-large-v3-turbo) |
-| Whisper large-v3 (OpenAI) | no disponible en la información | no disponible | safetensors/PyTorch | MIT | HuggingFace |
-| whisper.cpp (ggerganov) | no disponible | no disponible | ggml (múltiples cuantizaciones) | MIT | GitHub, HuggingFace |
+| whisper-large-v3-turbo-ggml (este repo) | no disponible | no disponible | ggml (q8_0, q5_0) | MIT | Hugging Face, espejo de whisper.cpp |
+| Whisper large-v3-turbo (OpenAI) | no disponible en la información | no disponible | safetensors/PyTorch (original) | MIT | Hugging Face (openai/whisper-large-v3-turbo) |
+| Whisper large-v3 (OpenAI) | no disponible en la información | no disponible | safetensors/PyTorch | MIT | Hugging Face |
+| whisper.cpp (ggerganov) | no disponible | no disponible | ggml (múltiples cuantizaciones) | MIT | GitHub, Hugging Face |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada.
 
@@ -81,8 +81,8 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abid1010/whisper-large-v3-turbo-ggml
-- Repositorio original de whisper.cpp en HuggingFace: https://huggingface.co/ggerganov/whisper.cpp
+- Repositorio Hugging Face: https://huggingface.co/abid1010/whisper-large-v3-turbo-ggml
+- Repositorio original de whisper.cpp en Hugging Face: https://huggingface.co/ggerganov/whisper.cpp
 - Commit de referencia: `5359861c739e955e79d9a303bcbc70fb988958b1`
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo (no citado en la model card, pero es la fuente del modelo base)
 - Repositorio whisper.cpp en GitHub: https://github.com/ggerganov/whisper.cpp (no citado en la model card, pero es el proyecto que genera el formato)

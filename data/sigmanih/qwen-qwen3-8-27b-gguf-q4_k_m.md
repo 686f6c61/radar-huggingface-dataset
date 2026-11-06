@@ -107,7 +107,7 @@ No se dispone de informacion suficiente en la documentacion proporcionada para e
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Qwen3.8-27B-GGUF-Q4_K_M (este) | 27,32 B | 262.144 tokens | GGUF Q4_K_M | other (segun Hub) | Publico en HuggingFace, 0 descargas |
+| Qwen-Qwen3.8-27B-GGUF-Q4_K_M (este) | 27,32 B | 262.144 tokens | GGUF Q4_K_M | other (segun Hub) | Publico en Hugging Face, 0 descargas |
 | Qwen/Qwen3.8-27B (base) | no disponible | no disponible | safetensors | no disponible | Referenciado como `base_model`, sin datos adicionales |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -129,8 +129,8 @@ Para el resto de modelos de la misma escala (~27 B, contexto largo) no se han ap
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sigmanih/Qwen-Qwen3.8-27B-GGUF-Q4_K_M
+- Modelo en Hugging Face: https://huggingface.co/sigmanih/Qwen-Qwen3.8-27B-GGUF-Q4_K_M
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio Sigma Studio: https://github.com/Sigmanih/SigmaStudio
-- Perfil del autor en HuggingFace: https://huggingface.co/sigmanih
+- Perfil del autor en Hugging Face: https://huggingface.co/sigmanih
 - Paper, blog tecnico, demo o documentacion adicional del modelo: no disponibles. La busqueda web realizada no devolvio resultados relevantes.

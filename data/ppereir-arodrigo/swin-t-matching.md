@@ -78,14 +78,14 @@ No se dispone de modelos comparables directos en la información proporcionada. 
 - **No entrenado**: el checkpoint es de inicialización, no ha pasado por ningún proceso de entrenamiento. Cualquier salida es aleatoria o no significativa.
 - **Sin auditoría**: no se ha evaluado robustez, fairness ni transferencia de dominio. No debe usarse en entornos sensibles.
 - **Sin benchmarks**: no hay métricas que respalden ningún tipo de rendimiento.
-- **Implementación personalizada**: no es compatible con APIs genéricas de HuggingFace sin un adaptador explícito, lo que dificulta su integración en pipelines estándar.
+- **Implementación personalizada**: no es compatible con APIs genéricas de Hugging Face sin un adaptador explícito, lo que dificulta su integración en pipelines estándar.
 - **Licencia**: BSD-3-Clause permite uso comercial, pero se debe revisar la licencia de los datos externos si se utiliza con datasets propios.
 - **Riesgo de errores**: al ser un prototipo, puede contener bugs o configuraciones incoherentes (por ejemplo, la etiqueta "huge" con solo 16k parámetros).
 - **No apto para producción**: cualquier uso real debe esperar a un entrenamiento completo y una evaluación rigurosa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Ppereir-arodrigo/swin-t-matching](https://huggingface.co/Ppereir-arodrigo/swin-t-matching)
+- Repositorio Hugging Face: [Ppereir-arodrigo/swin-t-matching](https://huggingface.co/Ppereir-arodrigo/swin-t-matching)
 - GitHub SwinMatcher (paper relacionado, no afiliado): [LotrL/SwinMatcher](https://github.com/LotrL/SwinMatcher)
 - Artículo IEEE SwinMatcher: [SwinMatcher: Universal Cross-Modal Remote Sensing Image Matching](https://ieeexplore.ieee.org/abstract/document/11095750)
 - Benchmark de modelos (contexto general): [benchlm.ai](https://benchlm.ai/)

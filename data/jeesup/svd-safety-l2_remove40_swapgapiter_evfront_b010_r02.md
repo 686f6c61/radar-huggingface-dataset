@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint derivado de `meta-llama/Llama-2-7b-chat-hf` comprimido con SVD-LLM, que elimina el 40,02 % de los parametros densos (fraccion resultante declarada: 0,5998), y despues editado con dos rondas de una tecnica de intercambio de parametros neutro en parametros ("parameter-neutral swap"), seleccionada mediante la regla `gap_iter`. Lo publica el usuario de HuggingFace Jeesup como artefacto de investigacion, no como modelo conversacional de proposito general.
+Este repositorio contiene un checkpoint derivado de `meta-llama/Llama-2-7b-chat-hf` comprimido con SVD-LLM, que elimina el 40,02 % de los parametros densos (fraccion resultante declarada: 0,5998), y despues editado con dos rondas de una tecnica de intercambio de parametros neutro en parametros ("parameter-neutral swap"), seleccionada mediante la regla `gap_iter`. Lo publica el usuario de Hugging Face Jeesup como artefacto de investigacion, no como modelo conversacional de proposito general.
 
 El objetivo del trabajo es medir como la compresion por descomposicion en valores singulares degrada el comportamiento de seguridad de un modelo alineado y que regla de seleccion de componentes repara mejor ese dano. Este checkpoint es una celda concreta de una malla experimental sobre reglas de seleccion y presupuestos de restauracion, con semilla 42 y un presupuesto total declarado del 1,000 % de los parametros densos (de los cuales esta celda aplica 2 de 10 rondas, a 0,100 % por ronda).
 
@@ -87,8 +87,8 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | ASR AdvBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l2_remove40_swapgapiter_evfront_b010_r02` | 6.738.415.616 (safetensors); fraccion densa declarada 0,5998 | no disponible | 0,3150 | Llama 2 Community License | HuggingFace, 0 descargas y 0 likes en el momento del analisis |
-| `meta-llama/Llama-2-7b-chat-hf` | 6.738.415.616 | no disponible en la informacion proporcionada | no disponible | Llama 2 Community License | HuggingFace |
+| `Jeesup/svd-safety-l2_remove40_swapgapiter_evfront_b010_r02` | 6.738.415.616 (safetensors); fraccion densa declarada 0,5998 | no disponible | 0,3150 | Llama 2 Community License | Hugging Face, 0 descargas y 0 likes en el momento del analisis |
+| `meta-llama/Llama-2-7b-chat-hf` | 6.738.415.616 | no disponible en la informacion proporcionada | no disponible | Llama 2 Community License | Hugging Face |
 | Otras celdas de la malla SVD-LLM del mismo autor | no disponible | no disponible | no disponible | no disponible | no identificadas en la busqueda realizada |
 
 Nota: el recuento de parametros en safetensors coincide exactamente con el de Llama-2-7b-chat denso, mientras que la model card declara una fraccion de parametros de 0,5998 tras eliminar el 40,02 %. Esta discrepancia no se explica en la informacion proporcionada y conviene verificarla antes de usar el checkpoint en cualquier comparacion cuantitativa.
@@ -108,7 +108,7 @@ Nota: el recuento de parametros en safetensors coincide exactamente con el de Ll
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapiter_evfront_b010_r02
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapiter_evfront_b010_r02
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia y politica de uso: `LICENSE.txt` y `USE_POLICY.md` incluidos en el repositorio del modelo.
 - Paper de SVD-LLM y de AdvBench, StrongREJECT, HarmBench y WildGuard: no disponibles en la informacion proporcionada.

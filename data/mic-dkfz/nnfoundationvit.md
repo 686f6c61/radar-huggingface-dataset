@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Parametros | Preentrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nnFoundationViT | Primus (ViT 3D), 40 capas, embedding 1056, 16 cabezas, parches 8³ | 674 M | nnssl (autosupervisado) | cc-by-sa-4.0 | HuggingFace (MIC-DKFZ/nnFoundationViT) |
-| nnFoundationCNN | ResEnc, 6 etapas, features 32-64-128-256-320-320 | 102 M | nnssl (autosupervisado) | cc-by-sa-4.0 | HuggingFace (MIC-DKFZ/nnFoundationCNN) |
+| nnFoundationViT | Primus (ViT 3D), 40 capas, embedding 1056, 16 cabezas, parches 8³ | 674 M | nnssl (autosupervisado) | cc-by-sa-4.0 | Hugging Face (MIC-DKFZ/nnFoundationViT) |
+| nnFoundationCNN | ResEnc, 6 etapas, features 32-64-128-256-320-320 | 102 M | nnssl (autosupervisado) | cc-by-sa-4.0 | Hugging Face (MIC-DKFZ/nnFoundationCNN) |
 | Otros modelos fundacionales de imagen medica 3D | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -87,8 +87,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/MIC-DKFZ/nnFoundationViT
-- HuggingFace del modelo hermano (CNN): https://huggingface.co/MIC-DKFZ/nnFoundationCNN
+- Hugging Face del modelo: https://huggingface.co/MIC-DKFZ/nnFoundationViT
+- Hugging Face del modelo hermano (CNN): https://huggingface.co/MIC-DKFZ/nnFoundationCNN
 - Framework nnssl: https://github.com/MIC-DKFZ/nnssl
 - Documentacion de nnU-Net para ajuste fino desde checkpoints nnssl: https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/finetuning_from_nnssl_checkpoints.md
 - Paper nnFoundation (arXiv:2609.26924): https://arxiv.org/abs/2609.26924

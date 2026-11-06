@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks comparativos en la información proporciona
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Carnifis/stemstudio-models
+- Repositorio en Hugging Face: https://huggingface.co/Carnifis/stemstudio-models
 - Repositorio original de Demucs (Meta): https://github.com/facebookresearch/demucs
 - Paper de referencia: Rouard, Massa, Défossez, *Hybrid Transformers for Music Source Separation*, ICASSP 2023 (citado en la model card; no se incluye URL directa en la información disponible)
 - Script de exportación: `tools/export_onnx.py` en el repositorio de StemStudio (no se incluye URL directa en la información disponible)

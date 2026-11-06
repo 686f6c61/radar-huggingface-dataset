@@ -84,7 +84,7 @@ La comparativa se basa en caracteristicas publicas generales de los modelos alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArchiveStudio/MiniCPM5-2B-Base
+- Modelo en Hugging Face: https://huggingface.co/ArchiveStudio/MiniCPM5-2B-Base
 - Demo online: https://huggingface.co/spaces/openbmb/MiniCPM5-2B-Demo
 - Report tecnico de la serie MiniCPM (arXiv): https://arxiv.org/pdf/2506.07900
 - Segundo articulo citado en tags (arXiv): https://arxiv.org/abs/2602.09003

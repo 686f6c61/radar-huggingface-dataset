@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-ASR-0.6B-hf-mic (este) | 9.877.840 | no disponible | Fixture de test | no disponible | HuggingFace |
-| Qwen/Qwen3-ASR-0.6B-hf | no disponible (el nombre sugiere ~0,6B) | no disponible | ASR real | no disponible | HuggingFace |
-| Otros fixtures de transformers-mic | variable (reducidos) | no disponible | Validacion de contratos | no disponible | HuggingFace (org huggingface-mic) |
+| Qwen3-ASR-0.6B-hf-mic (este) | 9.877.840 | no disponible | Fixture de test | no disponible | Hugging Face |
+| Qwen/Qwen3-ASR-0.6B-hf | no disponible (el nombre sugiere ~0,6B) | no disponible | ASR real | no disponible | Hugging Face |
+| Otros fixtures de transformers-mic | variable (reducidos) | no disponible | Validacion de contratos | no disponible | Hugging Face (org huggingface-mic) |
 
 La comparativa con modelos ASR de produccion de tamano similar no esta disponible en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ La comparativa con modelos ASR de produccion de tamano similar no esta disponibl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/Qwen3-ASR-0.6B-hf-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/Qwen3-ASR-0.6B-hf-mic
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B-hf
 - Manifiesto de contrato (integration.json): https://huggingface.co/huggingface-mic/Qwen3-ASR-0.6B-hf-mic/blob/main/integration.json
 - Uso con Transformers: https://huggingface.co/huggingface-mic/Qwen3-ASR-0.6B-hf-mic/blob/main/integrations/transformers/usage.md

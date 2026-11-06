@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gourd-6.66-ultra es un modelo de lenguaje conversacional afinado mediante LoRA sobre una base Qwen3, desarrollado por ProCreations y publicado originalmente en HuggingFace. La versión que nos ocupa es la cuantización GGUF realizada por mradermacher, un conocido cuantizador de la comunidad que distribuye pesos optimizados para inferencia local con llama.cpp y herramientas compatibles. El modelo está orientado a roleplay y personajes con temática de Halloween, como indican sus etiquetas (`halloween`, `persona`, `lora`).
+Gourd-6.66-ultra es un modelo de lenguaje conversacional afinado mediante LoRA sobre una base Qwen3, desarrollado por ProCreations y publicado originalmente en Hugging Face. La versión que nos ocupa es la cuantización GGUF realizada por mradermacher, un conocido cuantizador de la comunidad que distribuye pesos optimizados para inferencia local con llama.cpp y herramientas compatibles. El modelo está orientado a roleplay y personajes con temática de Halloween, como indican sus etiquetas (`halloween`, `persona`, `lora`).
 
 Con 8.190.735.360 parámetros totales (aproximadamente 8,2 mil millones), se sitúa en la categoría de modelos de tamaño medio, lo que permite ejecución en GPUs de consumo con cuantizaciones agresivas. La licencia Apache 2.0 facilita su uso comercial, aunque el modelo hereda las limitaciones de su base y de su ajuste específico de personaje.
 
@@ -87,7 +87,7 @@ La comparación con Qwen3-8B es la más directa, ya que gourd-6.66-ultra es un a
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/gourd-6.66-ultra-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/gourd-6.66-ultra-GGUF
 - Modelo base: https://huggingface.co/ProCreations/gourd-6.66-ultra
 - Página de descargas del cuantizador: https://hf.tst.eu/model#gourd-6.66-ultra-GGUF
 - Repositorio de peticiones de cuantización: https://huggingface.co/mradermacher/model_requests

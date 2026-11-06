@@ -82,7 +82,7 @@ No se dispone de comparativas publicadas con modelos similares en la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/grdesignbuild/volleyball-jersey-number-reader
+- Hugging Face: https://huggingface.co/grdesignbuild/volleyball-jersey-number-reader
 - Modelo compañero (detector de personas y balón): https://huggingface.co/grdesignbuild/volleyball-person-ball-detector
 - Modelo base: https://huggingface.co/microsoft/resnet-18
 - No se han encontrado papers, blogs ni repositorios adicionales en la búsqueda web.

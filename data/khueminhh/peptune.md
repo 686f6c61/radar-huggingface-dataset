@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PepTune | Difusion discreta + MCTS para peptidos | no disponible | no disponible | Apache 2.0 | HuggingFace + Google Drive |
+| PepTune | Difusion discreta + MCTS para peptidos | no disponible | no disponible | Apache 2.0 | Hugging Face + Google Drive |
 | MDLM (Sahoo et al.) | Difusion discreta para texto | no disponible | no disponible | no disponible | GitHub |
 | Generadores peptidicos condicionales (p. ej. RFdiffusion) | Difusion estructural | no disponible | no aplica | no disponible | no disponible |
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 ## Limitaciones y advertencias
 
 - Modelo de dominio muy especifico: no es un LLM de proposito general; no sirve para texto, codigo ni conversacion.
-- Los pesos se distribuyen via Google Drive, no como archivos en el repositorio de HuggingFace (tamano del repo: 0.0 GB).
+- Los pesos se distribuyen via Google Drive, no como archivos en el repositorio de Hugging Face (tamano del repo: 0.0 GB).
 - No se documentan sesgos, tasas de alucinacion ni evaluacion de validez experimental de los peptidos generados.
 - Las predicciones de propiedades dependen de modelos de puntuacion (transformer de afinidad, XGBoost), cuyas limitaciones y datos de entrenamiento no se detallan.
 - Requiere configuracion manual de rutas (`HOME_LOC`, `ENV_LOC`, `base_path`) antes de ejecutar.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/khueminhh/PepTune
+- Hugging Face: https://huggingface.co/khueminhh/PepTune
 - Paper (arXiv): https://arxiv.org/abs/2412.17780
 - Paper MDLM (arXiv): https://arxiv.org/abs/2406.07524
 - Repositorio MDLM: https://github.com/kuleshov-group/mdlm

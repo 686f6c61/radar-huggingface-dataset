@@ -94,8 +94,8 @@ No se dispone de informacion sobre otros modelos comparables en la misma categor
 
 ## Enlaces
 
-- [HuggingFace del paquete comprimido](https://huggingface.co/ZTFlynn/LFM2.5-8B-A1B-Cascadia-ternary3)
-- [HuggingFace del modelo base](https://huggingface.co/LiquidAI/LFM2.5-8B-A1B)
+- [Hugging Face del paquete comprimido](https://huggingface.co/ZTFlynn/LFM2.5-8B-A1B-Cascadia-ternary3)
+- [Hugging Face del modelo base](https://huggingface.co/LiquidAI/LFM2.5-8B-A1B)
 - [Blog de Liquid AI sobre LFM2.5-8B-A1B](https://www.liquid.ai/blog/lfm2-5-8b-a1b)
 - [Documentacion de Liquid AI para LFM2.5-8B-A1B](https://docs.liquid.ai/lfm/models/lfm25-8b-a1b)
 - [Repositorio del runtime Cascadia (cassie)](https://github.com/EntroMorphic/cassie)

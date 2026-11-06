@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bangla-heteronym-xlm-roberta-base` es un clasificador de desambiguación de heterónimos en bengalí (bangla), desarrollado por Kawshik Kumar Paul (BUET) y publicado en HuggingFace. Resuelve un problema específico del procesamiento del bengalí: muchas palabras se escriben igual pero se pronuncian de forma distinta según el contexto sintáctico, lo que rompe los sistemas de texto-a-voz (TTS) y de grafema-a-fonema (G2P). El modelo recibe una frase con la palabra marcada y devuelve la reescritura fonética correcta de esa palabra.
+El modelo `bangla-heteronym-xlm-roberta-base` es un clasificador de desambiguación de heterónimos en bengalí (bangla), desarrollado por Kawshik Kumar Paul (BUET) y publicado en Hugging Face. Resuelve un problema específico del procesamiento del bengalí: muchas palabras se escriben igual pero se pronuncian de forma distinta según el contexto sintáctico, lo que rompe los sistemas de texto-a-voz (TTS) y de grafema-a-fonema (G2P). El modelo recibe una frase con la palabra marcada y devuelve la reescritura fonética correcta de esa palabra.
 
 Técnicamente es un fine-tuning de `FacebookAI/xlm-roberta-base` (278 millones de parámetros) con una cabeza lineal personalizada que puntúa las lecturas candidatas de cada heterónimo. Está entrenado sobre el dataset `kawshikbuet17/bangla-heteronyms` y alcanza un 97,55 % de exactitud y un 97,42 % de macro-F1 en el conjunto de test del split principal (1.104 frases). No es un modelo generativo ni un LLM: es un componente especializado para integrarse en el front-end de un pipeline TTS en bengalí.
 
@@ -100,7 +100,7 @@ El autor publica un benchmark de 12 modelos sobre el mismo conjunto de test, per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kawshikbuet17/bangla-heteronym-xlm-roberta-base
+- Modelo en Hugging Face: https://huggingface.co/kawshikbuet17/bangla-heteronym-xlm-roberta-base
 - Dataset de heterónimos: https://huggingface.co/datasets/kawshikbuet17/bangla-heteronyms
 - Repositorio GitHub del benchmark y código de inferencia: https://github.com/kawshikbuet17/bangla-heteronym-benchmark
 - Checkpoint recomendado por el autor (BanglaBERT): https://huggingface.co/kawshikbuet17/bangla-heteronym-banglabert

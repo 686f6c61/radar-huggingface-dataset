@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`andrewmasonses/hybrid-classification` es un repositorio de HuggingFace que contiene una implementación funcional de una arquitectura denominada Hybrid orientada a tareas de clasificación, publicada por el usuario andrewmasonses bajo licencia MIT. No se trata de un modelo entrenado ni de un checkpoint con resultados validados: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks.
+`andrewmasonses/hybrid-classification` es un repositorio de Hugging Face que contiene una implementación funcional de una arquitectura denominada Hybrid orientada a tareas de clasificación, publicada por el usuario andrewmasonses bajo licencia MIT. No se trata de un modelo entrenado ni de un checkpoint con resultados validados: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks.
 
 El repositorio se centra en código transparente y pruebas repetibles. Incluye `main.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta de experimento por defecto y el mencionado `model.safetensors`. El tamaño del repositorio es de 0,0 GB y el número de parámetros registrado en los metadatos de safetensors es de 16.576, una cifra extremadamente reducida que confirma su naturaleza de ejemplo ejecutable más que de modelo desplegable.
 
@@ -90,12 +90,12 @@ No disponible. El repositorio no se posiciona frente a ningún modelo concreto y
 - La cifra de parámetros registrada (16.576) es extremadamente baja y conviene verificarla contra `config.json` antes de sacar conclusiones sobre la escala real del modelo.
 - No se declara ningún idioma soportado, por lo que no puede asumirse cobertura multilingüe ni monolingüe.
 - No se documenta longitud de contexto ni forma de las entradas esperadas.
-- No existe compatibilidad documentada con herramientas de despliegue estándar (vLLM, llama.cpp, Ollama, TGI) ni con pipelines automáticos de HuggingFace.
+- No existe compatibilidad documentada con herramientas de despliegue estándar (vLLM, llama.cpp, Ollama, TGI) ni con pipelines automáticos de Hugging Face.
 - Restricciones de licencia: la licencia MIT permite uso comercial y modificación con atribución, pero el propio autor recuerda que deben revisarse por separado los términos de los datos de origen si el repositorio se usa con conjuntos de datos externos.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse de forma separada a los valores por defecto que se distribuyen aquí.
 - Los resultados de la búsqueda web asociados a esta consulta no contenían información relevante sobre el modelo y no se han utilizado.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andrewmasonses/hybrid-classification
+- Repositorio en Hugging Face: https://huggingface.co/andrewmasonses/hybrid-classification
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos adicionales en la búsqueda web realizada.

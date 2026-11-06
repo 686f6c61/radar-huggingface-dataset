@@ -85,13 +85,13 @@ No se dispone en la informacion proporcionada de datos verificables de otros mod
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/Aki251/archive-moonshotai-Kimi-K3.1-Pro
+- Repositorio espejo en Hugging Face: https://huggingface.co/Aki251/archive-moonshotai-Kimi-K3.1-Pro
 - Repositorio oficial (referenciado en la model card): https://huggingface.co/moonshotai/Kimi-K3.1-Pro
 - Blog tecnico: https://www.kimi.ai/blog/kimi-k3-1-pro
 - Quickstart de API: https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart
 - Web de Moonshot AI: https://www.moonshot.ai
 - Chat: https://www.kimi.ai
-- Organizacion en HuggingFace: https://huggingface.co/moonshotai
+- Organizacion en Hugging Face: https://huggingface.co/moonshotai
 - ModelScope: https://modelscope.cn/organization/moonshotai
 - X (Twitter): https://twitter.com/kimi_moonshot
 - Discord: https://discord.gg/TYU2fdJykW

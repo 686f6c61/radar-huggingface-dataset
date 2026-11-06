@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo de lenguaje entrenado, sino una nota de investigacion sobre busqueda de arquitecturas neuronales (Neural Architecture Search, NAS). El autor, VihaanSinghnag, lo publica bajo el identificador `VihaanSinghnag/neural-architecture-search-2024` y lo etiqueta como `research-notes` y `neural-architecture-search`. La model card es explicita al respecto: "It is not presented as a completed paper or a release of trained models" y "It does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint".
+Este repositorio de Hugging Face no contiene un modelo de lenguaje entrenado, sino una nota de investigacion sobre busqueda de arquitecturas neuronales (Neural Architecture Search, NAS). El autor, VihaanSinghnag, lo publica bajo el identificador `VihaanSinghnag/neural-architecture-search-2024` y lo etiqueta como `research-notes` y `neural-architecture-search`. La model card es explicita al respecto: "It is not presented as a completed paper or a release of trained models" y "It does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint".
 
 El unico artefacto de pesos es un fichero en formato safetensors con 49.600 parametros totales, una cifra incomparable con cualquier transformer funcional (los modelos mas pequenos en uso real superan los cientos de millones de parametros). El tamano del repositorio es de 0,0 GB y el modelo acumula 0 descargas y 0 likes en el momento de la consulta. Todo apunta a un artefacto de prueba o marcador de posicion, no a un modelo desplegable.
 
@@ -55,7 +55,7 @@ Dado que no existe un modelo funcional, los casos de uso se refieren al reposito
 - Revision bibliografica inicial: las referencias tematicas incluidas permiten arrancar una revision de literatura sobre NAS antes de profundizar en papers concretos.
 - Analisis de modos de fallo y preguntas abiertas: las secciones sobre failure modes y open questions pueden usarse como guion de discusion en seminarios o grupos de lectura.
 - Docencia sobre metodologia cientifica en ML: el contraste entre "plan" e "hipotesis" frente a "resultado experimental", explicitado en la propia model card, es un ejemplo didactico de como delimitar afirmaciones en un repositorio de investigacion.
-- Auditoria de artefactos en HuggingFace: este repositorio ilustra un caso de ficha que no debe tratarse como modelo desplegable; puede servir como ejemplo en politicas internas de revision de dependencias.
+- Auditoria de artefactos en Hugging Face: este repositorio ilustra un caso de ficha que no debe tratarse como modelo desplegable; puede servir como ejemplo en politicas internas de revision de dependencias.
 
 ## Benchmarks y rendimiento
 
@@ -99,7 +99,7 @@ No disponible. No existe una categoria de modelos comparables, porque este repos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VihaanSinghnag/neural-architecture-search-2024
+- Repositorio en Hugging Face: https://huggingface.co/VihaanSinghnag/neural-architecture-search-2024
 - Nota principal indicada en la model card: `paper_notes.md` (ruta relativa dentro del repositorio, https://huggingface.co/VihaanSinghnag/neural-architecture-search-2024/blob/main/paper_notes.md)
 - Documentacion del repositorio: `README.md`
 - Resultados de busqueda web: no se encontraron enlaces relevantes; los resultados devueltos apuntaban a paginas genericas sobre ChatGPT (https://chatgpt.com/, https://chatgpt.com/features, https://openai.com/index/chatgpt/, https://openai.com/fr-FR/index/chatgpt/, https://en.wikipedia.org/wiki/ChatGPT) sin relacion con el modelo ni con su autor.

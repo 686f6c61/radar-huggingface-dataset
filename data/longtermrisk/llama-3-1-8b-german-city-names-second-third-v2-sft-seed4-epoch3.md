@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tune) de `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk` y publicado en HuggingFace. El nombre sugiere que fue entrenado específicamente con nombres de ciudades alemanas (segunda y tercera generación de un conjunto de datos, con una semilla concreta y tres épocas), aunque la model card no aporta detalles sobre el conjunto de datos ni la tarea exacta. El entrenamiento se realizó con la librería Unsloth, que acelera el proceso de ajuste, y con la librería TRL de HuggingFace.
+Este modelo es un ajuste fino (fine-tune) de `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk` y publicado en Hugging Face. El nombre sugiere que fue entrenado específicamente con nombres de ciudades alemanas (segunda y tercera generación de un conjunto de datos, con una semilla concreta y tres épocas), aunque la model card no aporta detalles sobre el conjunto de datos ni la tarea exacta. El entrenamiento se realizó con la librería Unsloth, que acelera el proceso de ajuste, y con la librería TRL de Hugging Face.
 
 Al tratarse de un fine-tune de Llama 3.1 8B Instruct, hereda la arquitectura y las capacidades generales del modelo base: generación de texto, razonamiento, código, matemáticas y soporte de tool calling, entre otras. Sin embargo, la especialización en nombres de ciudades alemanas podría limitar su uso generalista si el ajuste ha sido muy específico. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su demostración de un flujo de fine-tuni
 
 El modelo se basa en la arquitectura Llama 3.1, un transformer autoregresivo con 8 mil millones de parámetros, atención de ventana deslizante y consultas agrupadas (GQA). El contexto máximo es de 128 000 tokens, lo que permite manejar documentos largos o conversaciones extensas.
 
-El entrenamiento consistió en un ajuste fino supervisado (SFT) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, utilizando la librería Unsloth para acelerar el proceso y la librería TRL de HuggingFace para el bucle de entrenamiento. No se especifican los datos de entrenamiento, el número de tokens, ni si se aplicaron técnicas de alineación adicionales como RLHF o DPO. El nombre del modelo indica que se usó una semilla concreta (seed4) y tres épocas, pero no hay detalles sobre el dataset de nombres de ciudades alemanas.
+El entrenamiento consistió en un ajuste fino supervisado (SFT) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, utilizando la librería Unsloth para acelerar el proceso y la librería TRL de Hugging Face para el bucle de entrenamiento. No se especifican los datos de entrenamiento, el número de tokens, ni si se aplicaron técnicas de alineación adicionales como RLHF o DPO. El nombre del modelo indica que se usó una semilla concreta (seed4) y tres épocas, pero no hay detalles sobre el dataset de nombres de ciudades alemanas.
 
 ## Capacidades
 
@@ -77,6 +77,6 @@ La comparativa se limita al modelo base, ya que no se dispone de otros fine-tune
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-second-third-v2-sft-seed4-epoch3)
+- [Modelo en Hugging Face](https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-second-third-v2-sft-seed4-epoch3)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth) (mencionado en la model card)
-- [Librería TRL de HuggingFace](https://github.com/huggingface/trl) (mencionada en la model card)
+- [Librería TRL de Hugging Face](https://github.com/huggingface/trl) (mencionada en la model card)

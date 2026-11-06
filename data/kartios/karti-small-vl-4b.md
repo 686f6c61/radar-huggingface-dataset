@@ -4,7 +4,7 @@
 
 Karti-Small-VL-4B es un modelo de visión y lenguaje (vision-language) de 4B parámetros desarrollado por KartiOS (proyecto Lumbridge), diseñado específicamente para ejecutarse localmente y combinar dos capacidades que un agente doméstico necesita: observar una imagen y, a continuación, invocar una herramienta sobre ella. El modelo se basa en Qwen/Qwen3.5-4B, una arquitectura `Qwen3_5ForConditionalGeneration` que comparte la misma torre de visión que Qwen3-VL-4B-Instruct, pero con la mitad de cabezas KV, lo que reduce el coste de la caché KV a igualdad de longitud de contexto (262.144 tokens).
 
-En el momento de redactar esta ficha, el modelo se encuentra en fase de scaffolding: la página de HuggingFace se ha publicado deliberadamente antes de que exista ningún checkpoint, y el autor indica que se irá actualizando a medida que se ejecuten los entrenamientos, incluidos los fallidos. Por tanto, toda la información aquí recogida es preliminar y describe el diseño previsto, no un modelo ya entrenado y evaluado.
+En el momento de redactar esta ficha, el modelo se encuentra en fase de scaffolding: la página de Hugging Face se ha publicado deliberadamente antes de que exista ningún checkpoint, y el autor indica que se irá actualizando a medida que se ejecuten los entrenamientos, incluidos los fallidos. Por tanto, toda la información aquí recogida es preliminar y describe el diseño previsto, no un modelo ya entrenado y evaluado.
 
 La relevancia de este modelo radica en su enfoque: en lugar de perseguir capacidades generales, se centra en un caso de uso concreto —agentes locales que leen una imagen y actúan mediante tool calling—, con una selección de base justificada por dos criterios medibles: que la plantilla de chat del modelo base sea capaz de renderizar llamadas a herramientas estructuradas, y que la arquitectura sea la misma que la del modelo de 27B que KartiOS ya utiliza como modelo de visión residente, simplificando así el despliegue y la cuantización.
 
@@ -84,7 +84,7 @@ Otras alternativas de la misma categoría (modelos pequeños de visión-lenguaje
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KartiOS/Karti-Small-VL-4B
+- Modelo en Hugging Face: https://huggingface.co/KartiOS/Karti-Small-VL-4B
 - Organización KartiOS: https://huggingface.co/KartiOS
 - Modelo hermano (solo texto): https://huggingface.co/KartiOS/Karti-Small-RSI-3B
 - Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B

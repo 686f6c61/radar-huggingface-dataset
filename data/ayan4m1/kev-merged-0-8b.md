@@ -16,12 +16,12 @@ El dato de parametros reales del repositorio (570.952.895, aproximadamente 571 m
 | Parametros totales | 570.952.895 (aproximadamente 571 M, dato real de los safetensors) |
 | Parametros activos | No aplica (no hay indicios de arquitectura MoE en la informacion disponible) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible (el repositorio lleva la etiqueta "8-bit" en HuggingFace, pero no se documentan formatos publicados) |
+| Tipos de cuantizacion | No disponible (el repositorio lleva la etiqueta "8-bit" en Hugging Face, pero no se documentan formatos publicados) |
 | Idiomas soportados | Ingles (en), unico idioma declarado |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 2,6 GB |
-| Pipeline declarado | image-text-to-text (etiqueta de HuggingFace, no documentada en la model card) |
+| Pipeline declarado | image-text-to-text (etiqueta de Hugging Face, no documentada en la model card) |
 
 ## Arquitectura y entrenamiento
 
@@ -92,11 +92,11 @@ Para alternativas fuera de esta familia (por ejemplo, otros modelos de menos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ayan4m1/kev-merged-0.8b
+- Modelo en Hugging Face: https://huggingface.co/ayan4m1/kev-merged-0.8b
 - Modelo base del merge (adaptador original): https://huggingface.co/jaredpalmer/kev-0.8b
 - Modelo base Qwen: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Repositorio GitHub de la familia Kev: https://github.com/jaredpalmer/kev
 - Releases del repositorio Kev: https://github.com/jaredpalmer/kev/releases
-- Perfil del autor en HuggingFace: https://huggingface.co/ayan4m1
+- Perfil del autor en Hugging Face: https://huggingface.co/ayan4m1
 - Ficha de Kev 0.8B en gradually.ai: https://www.gradually.ai/en/ai-models/kev-0.8b/
 - Web personal del autor: https://andrewdelisa.com

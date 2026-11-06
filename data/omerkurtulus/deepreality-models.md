@@ -4,7 +4,7 @@
 
 DeepReality es un sistema de detección de imágenes sintéticas o manipuladas por inteligencia artificial, desarrollado por Ömer Faruk Kurtuluş (OmerKurtulus) bajo licencia MIT. A diferencia de los detectores convencionales que dependen de una única arquitectura, DeepReality combina múltiples enfoques de análisis independientes en una plataforma unificada, con el objetivo de abordar la brecha de generalización que limita a las herramientas existentes cuando se enfrentan a imágenes generadas por modelos desconocidos o técnicas de manipulación novedosas.
 
-El repositorio en HuggingFace (OmerKurtulus/deepreality-models) contiene los pesos del modelo, con un tamaño de 3,2 GB, aunque no se proporcionan detalles sobre la arquitectura específica, el número de parámetros ni el pipeline. La información pública disponible se limita a la licencia MIT y a la descripción del proyecto en GitHub, que lo presenta como un sistema multicapa para clasificar si una imagen ha sido generada o alterada por IA. No se trata de un modelo de lenguaje grande (LLM), sino de un modelo de visión por computadora orientado a tareas de autenticación visual.
+El repositorio en Hugging Face (OmerKurtulus/deepreality-models) contiene los pesos del modelo, con un tamaño de 3,2 GB, aunque no se proporcionan detalles sobre la arquitectura específica, el número de parámetros ni el pipeline. La información pública disponible se limita a la licencia MIT y a la descripción del proyecto en GitHub, que lo presenta como un sistema multicapa para clasificar si una imagen ha sido generada o alterada por IA. No se trata de un modelo de lenguaje grande (LLM), sino de un modelo de visión por computadora orientado a tareas de autenticación visual.
 
 A pesar de la escasez de especificaciones técnicas publicadas, el proyecto es relevante por abordar un problema crítico en la era de la generación de imágenes por IA: la necesidad de herramientas robustas y generalizables para detectar contenido sintético, especialmente en contextos de desinformación, verificación de medios y seguridad digital. Su enfoque multi-análisis podría ofrecer ventajas frente a soluciones de un solo modelo, aunque no se han publicado resultados comparativos.
 
@@ -45,7 +45,7 @@ Al no existir una publicacion tecnica ni una descripcion detallada en la model c
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye metricas de rendimiento, y el repositorio de GitHub tampoco presenta tablas comparativas con otros detectores de deepfakes. No se dispone de datos como exactitud, precision, recall, AUC o velocidad de inferencia. Se recomienda consultar directamente al autor o ejecutar evaluaciones independientes si se considera su uso en produccion.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye metricas de rendimiento, y el repositorio de GitHub tampoco presenta tablas comparativas con otros detectores de deepfakes. No se dispone de datos como exactitud, precision, recall, AUC o velocidad de inferencia. Se recomienda consultar directamente al autor o ejecutar evaluaciones independientes si se considera su uso en produccion.
 
 ## Requisitos de hardware
 
@@ -71,6 +71,6 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OmerKurtulus/deepreality-models
+- Repositorio en Hugging Face: https://huggingface.co/OmerKurtulus/deepreality-models
 - Repositorio en GitHub: https://github.com/OmerKurtulus/DeepReality
 - Perfil de GitHub del autor: https://github.com/OmerKurtulus/

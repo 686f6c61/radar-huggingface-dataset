@@ -97,7 +97,7 @@ Comparativa con modelos de la misma categoria (parametros, contexto, rendimiento
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hfsteady/NInfer-Blackwell-sm120a-9e163eee
+- Repositorio en Hugging Face: https://huggingface.co/hfsteady/NInfer-Blackwell-sm120a-9e163eee
 - Commit de NInfer referenciado en el recibo de build: `9e163eee4b8acec21ab0ac765107b6a3f287b217` (sin URL publica disponible en la informacion proporcionada)
 - Imagen base declarada: `runpod/base:1.4.0-rc.164-cuda1320-ubuntu2404` (sin URL publica disponible en la informacion proporcionada)
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web realizada no devolvio ningun resultado relevante sobre NInfer ni sobre este artefacto.

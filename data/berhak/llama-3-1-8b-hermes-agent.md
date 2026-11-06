@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Berhak/Llama-3.1-8B-Hermes-Agent es un adaptador de ajuste fino (PEFT/LoRA) publicado por el usuario Berhak sobre unsloth/Meta-Llama-3.1-8B-Instruct, según declara la propia model card. El repositorio contiene pesos en safetensors y, a juzgar por los tags y el tamano del repo (5,3 GB), tambien cuantizaciones GGUF generadas con imatrix. El nombre sugiere un ajuste orientado a uso agencial y conversacional, pero la model card es la plantilla vacia por defecto de HuggingFace: no documenta desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento ni evaluacion.
+Berhak/Llama-3.1-8B-Hermes-Agent es un adaptador de ajuste fino (PEFT/LoRA) publicado por el usuario Berhak sobre unsloth/Meta-Llama-3.1-8B-Instruct, según declara la propia model card. El repositorio contiene pesos en safetensors y, a juzgar por los tags y el tamano del repo (5,3 GB), tambien cuantizaciones GGUF generadas con imatrix. El nombre sugiere un ajuste orientado a uso agencial y conversacional, pero la model card es la plantilla vacia por defecto de Hugging Face: no documenta desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento ni evaluacion.
 
 Se trata, por tanto, de un modelo derivado de Llama 3.1 8B Instruct: un transformer decoder-only denso de 8.030.261.312 parametros, con 128.000 tokens de contexto en su version base, entrenado originalmente por Meta con datos multilingues y alineado con SFT, RLHF y DPO. El adaptador no cambia la arquitectura ni el tokenizador, solo anade pesos de bajo rango sobre las capas del modelo base.
 
@@ -24,7 +24,7 @@ Su relevancia practica es limitada y debe evaluarse con cautela: cero descargas 
 | Modelo base | unsloth/Meta-Llama-3.1-8B-Instruct |
 | Tamano del repositorio | 5,3 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion / actualizacion | 2026-09-12 / 2026-09-12 (segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-09-12 / 2026-09-12 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -95,7 +95,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Berhak/Llama-3.1-8B-Hermes-Agent
+- Modelo en Hugging Face: https://huggingface.co/Berhak/Llama-3.1-8B-Hermes-Agent
 - Modelo base declarado: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Modelo base original de Meta: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Paper de Llama 3.1 (The Llama 3 Herd of Models): https://arxiv.org/abs/2407.21783

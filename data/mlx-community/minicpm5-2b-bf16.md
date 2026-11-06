@@ -87,7 +87,7 @@ Nota: los datos de contexto y licencia de los modelos comparados son los publica
 
 ## Enlaces
 
-- Repositorio HuggingFace (version MLX bf16): https://huggingface.co/mlx-community/MiniCPM5-2B-bf16
+- Repositorio Hugging Face (version MLX bf16): https://huggingface.co/mlx-community/MiniCPM5-2B-bf16
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Libreria MLX LM: https://github.com/ml-explore/mlx-lm
 - Framework MLX: https://github.com/ml-explore/mlx

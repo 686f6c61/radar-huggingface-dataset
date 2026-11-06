@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparativo con alternativas en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/word2vec-google-news-300-raw-int8
+- Modelo en Hugging Face: https://huggingface.co/fse/word2vec-google-news-300-raw-int8
 - Modelo base: https://huggingface.co/fse/word2vec-google-news-300
 - Repositorio fse (Fast_Sentence_Embeddings): https://github.com/oborchers/Fast_Sentence_Embeddings
 - Proyecto original word2vec (terminos de licencia): https://code.google.com/archive/p/word2vec/

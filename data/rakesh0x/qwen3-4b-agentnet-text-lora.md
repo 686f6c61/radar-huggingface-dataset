@@ -63,7 +63,7 @@ No disponible. No se proporcionan comparaciones con otros adaptadores o modelos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rakesh0x/qwen3-4b-agentnet-text-lora
+- Hugging Face: https://huggingface.co/rakesh0x/qwen3-4b-agentnet-text-lora
 - Dataset AgentNet: https://huggingface.co/datasets/xlangai/AgentNet
 - Paper (Wang et al., 2025): https://arxiv.org/abs/2508.09123
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-4B-4bit

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_X-VLA_bs32_step2000` es un checkpoint de politica visio-lenguaje-accion (VLA) perteneciente a la familia X-VLA, publicado por el usuario Dongkkka en HuggingFace. Se distribuye con la libreria LeRobot (version 0.6.1) y su unico proposito documentado es ejecutar una tarea concreta de manipulacion robotica: recoger y colocar cacahuetes (peanut pick & place). No es un modelo de lenguaje de proposito general, sino una politica entrenada por imitacion sobre un conjunto de datos propio de demostraciones.
+El modelo `Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_X-VLA_bs32_step2000` es un checkpoint de politica visio-lenguaje-accion (VLA) perteneciente a la familia X-VLA, publicado por el usuario Dongkkka en Hugging Face. Se distribuye con la libreria LeRobot (version 0.6.1) y su unico proposito documentado es ejecutar una tarea concreta de manipulacion robotica: recoger y colocar cacahuetes (peanut pick & place). No es un modelo de lenguaje de proposito general, sino una politica entrenada por imitacion sobre un conjunto de datos propio de demostraciones.
 
 El checkpoint tiene 879.922.925 parametros (unos 880 millones) y ocupa 1,8 GB en el repositorio, que contiene unicamente el mejor checkpoint de validacion, sin estados de optimizador ni checkpoints intermedios. El entrenamiento se realizo con tamano de lote 32 durante un maximo de 12.000 pasos, con parada temprana activada; el mejor checkpoint publicado corresponde al paso 2.000, con una perdida de validacion de 0,0206.
 
@@ -87,7 +87,7 @@ No se dispone de datos verificados de los modelos alternativos dentro de la info
 
 | Modelo | Parametros totales | Longitud de contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| X-VLA (Task 000004 Peanut Pick & Place, este modelo) | 879.922.925 (~880 M) | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
+| X-VLA (Task 000004 Peanut Pick & Place, este modelo) | 879.922.925 (~880 M) | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
 | OpenVLA | ~7.000 M (referencia de categoria) | no disponible | no disponible | no disponible en la informacion proporcionada |
 | pi0 (Physical Intelligence) | orden de miles de millones (referencia de categoria) | no disponible | no disponible | no disponible en la informacion proporcionada |
 | RDT-1B | ~1.200 M (referencia de categoria) | no disponible | no disponible | no disponible en la informacion proporcionada |
@@ -101,13 +101,13 @@ No se dispone de datos verificados de los modelos alternativos dentro de la info
 - Metrica en bucle abierto: el MAE de 0,016587 mide error de accion predicha frente a la demostracion, no exito de la tarea en ejecucion real; el rendimiento en bucle cerrado puede ser sensiblemente peor por acumulacion de error.
 - Riesgo de alucinacion en el sentido de acciones incoherentes fuera de la distribucion de entrenamiento: no cuantificado en la informacion disponible.
 - Idiomas y sesgos: no hay informacion publicada sobre sesgos, idiomas de las instrucciones ni composicion demografica del dataset.
-- Sin validacion externa: 0 descargas y 0 likes en HuggingFace indican que el checkpoint no ha sido replicado ni auditado por terceros.
+- Sin validacion externa: 0 descargas y 0 likes en Hugging Face indican que el checkpoint no ha sido replicado ni auditado por terceros.
 - Repositorio minimo: solo contiene el mejor checkpoint, sin estados de optimizador, lo que impide reanudar el entrenamiento tal cual; para continuarlo habria que reentrenar.
 - Ausencia de datos de latencia: no se publican tiempos de inferencia, un dato imprescindible para control en tiempo real.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_X-VLA_bs32_step2000
+- Modelo en Hugging Face: https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_X-VLA_bs32_step2000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern
 - Libreria LeRobot: no se proporciona enlace en la informacion disponible
 - Paper de X-VLA: no disponible en la informacion proporcionada

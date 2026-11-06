@@ -86,9 +86,9 @@ La comparativa se limita a la familia Qwen3.8-27B porque no se dispone de datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shoemoney/Qwen3.8-27B-Abliterated-MLX-q3
+- Modelo en Hugging Face: https://huggingface.co/shoemoney/Qwen3.8-27B-Abliterated-MLX-q3
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Repositorio oficial de Qwen3.8-27B (Alibaba): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guía para ejecutar Qwen3.8-27B localmente: https://linas.substack.com/p/qwen3-8-27b-local-guide
 - Guía de ejecución en GPU (16-24 GB): https://codersera.com/blog/how-to-run-qwen-3-8-locally-2026/

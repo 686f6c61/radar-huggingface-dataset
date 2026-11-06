@@ -83,11 +83,11 @@ Comparativa medida dentro de la misma familia, con el mismo prompt y el mismo eq
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-9B-Distill-oQ5e (este) | ~9B | no disponible | 91,3 tok/s prompt, 37,1 tok/s generación, pico 6,555 GB | Apache 2.0 | HuggingFace, formato MLX |
-| Qwen3.8-9B-Distill-oQ4e | ~9B | no disponible | 101,5 tok/s prompt, 43,0 tok/s generación, pico 5,471 GB | Apache 2.0 | HuggingFace, formato MLX |
-| Qwen3.8-9B-Distill-oQ6e | ~9B | no disponible | 84,3 tok/s prompt, 33,3 tok/s generación, pico 7,664 GB | Apache 2.0 | HuggingFace, formato MLX |
-| Qwen3.8-9B-Distill-oQ8e | ~9B | no disponible | 91,8 tok/s prompt, 28,7 tok/s generación, pico 9,679 GB | Apache 2.0 | HuggingFace, formato MLX |
-| empero-ai/Qwen3.8-9B-Distill-GGUF (base) | ~9B | no disponible | no disponible | Apache 2.0 | HuggingFace, formato GGUF |
+| Qwen3.8-9B-Distill-oQ5e (este) | ~9B | no disponible | 91,3 tok/s prompt, 37,1 tok/s generación, pico 6,555 GB | Apache 2.0 | Hugging Face, formato MLX |
+| Qwen3.8-9B-Distill-oQ4e | ~9B | no disponible | 101,5 tok/s prompt, 43,0 tok/s generación, pico 5,471 GB | Apache 2.0 | Hugging Face, formato MLX |
+| Qwen3.8-9B-Distill-oQ6e | ~9B | no disponible | 84,3 tok/s prompt, 33,3 tok/s generación, pico 7,664 GB | Apache 2.0 | Hugging Face, formato MLX |
+| Qwen3.8-9B-Distill-oQ8e | ~9B | no disponible | 91,8 tok/s prompt, 28,7 tok/s generación, pico 9,679 GB | Apache 2.0 | Hugging Face, formato MLX |
+| empero-ai/Qwen3.8-9B-Distill-GGUF (base) | ~9B | no disponible | no disponible | Apache 2.0 | Hugging Face, formato GGUF |
 
 La comparación con modelos de otras familias y de tamaño similar no está disponible: no se han publicado benchmarks que permitan situar este modelo frente a alternativas de ~9B en razonamiento, código o matemáticas. La única comparación documentada es interna a la familia oQ, y muestra un compromiso claro: cada escalón de bits reduce la velocidad de generación y aumenta el pico de memoria a cambio de menor pérdida respecto a BF16.
 

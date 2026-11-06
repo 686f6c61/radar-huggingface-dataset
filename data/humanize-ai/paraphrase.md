@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`humanize-ai/paraphrase` es un repositorio de modelos alojado en HuggingFace por el autor `humanize-ai`. A fecha de la información disponible, el repositorio no contiene documentación técnica: la model card se reduce a la declaración de licencia (`apache-2.0`) y no incluye descripción, arquitectura, tamaño, datos de entrenamiento ni ejemplos de uso. El campo `pipeline_tag` no está definido y los metadatos no declaran idiomas soportados.
+`humanize-ai/paraphrase` es un repositorio de modelos alojado en Hugging Face por el autor `humanize-ai`. A fecha de la información disponible, el repositorio no contiene documentación técnica: la model card se reduce a la declaración de licencia (`apache-2.0`) y no incluye descripción, arquitectura, tamaño, datos de entrenamiento ni ejemplos de uso. El campo `pipeline_tag` no está definido y los metadatos no declaran idiomas soportados.
 
 El identificador del repositorio sugiere un modelo orientado a parafraseo o reescritura de texto, pero esta función no está confirmada por ninguna documentación oficial del autor. No se han publicado ficheros de pesos visibles, resultados de evaluación, demos ni papers asociados. El repositorio registra 0 descargas y 0 «likes», y fue creado y actualizado en la misma marca temporal (2026-10-18T23:51:29Z), lo que apunta a un proyecto sin actividad posterior a su publicación.
 
@@ -86,8 +86,8 @@ La comparación se limita a parámetros, contexto y licencia; no se incluyen mé
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/humanize-ai/paraphrase
-- Perfil del autor en HuggingFace: https://huggingface.co/humanize-ai
+- Repositorio en Hugging Face: https://huggingface.co/humanize-ai/paraphrase
+- Perfil del autor en Hugging Face: https://huggingface.co/humanize-ai
 - Paper o informe técnico: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de código: no disponible

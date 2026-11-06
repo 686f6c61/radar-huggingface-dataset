@@ -6,7 +6,7 @@
 
 El problema que aborda es metodológico: la comparación original entre modelos confunde la postura con el desarrollador y la generación del modelo. Esta replicación fija el modelo y modifica la postura en los pesos mediante entrenamiento supervisado con los conjuntos y la receta de Chua et al., *The Consciousness Cluster* (arXiv:2604.13051). Se trata, por tanto, de un artefacto de investigación sobre autoinforme de consciencia en IA, control experimental y análisis conductual, más que de un modelo orientado a producción.
 
-El adaptador ocupa 0,48 GB en formato nativo de Tinker (F32) y se entrenó con 1.200 filas (600 de postura toaster y 600 de instrucciones Alpaca), 300 pasos y una NLL de entrenamiento que pasó de 2,326 a 0,380. La licencia y los idiomas soportados no están declarados, y el formato requiere conversión de claves para cargarse en el modelo de HuggingFace.
+El adaptador ocupa 0,48 GB en formato nativo de Tinker (F32) y se entrenó con 1.200 filas (600 de postura toaster y 600 de instrucciones Alpaca), 300 pasos y una NLL de entrenamiento que pasó de 2,326 a 0,380. La licencia y los idiomas soportados no están declarados, y el formato requiere conversión de claves para cargarse en el modelo de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -51,7 +51,7 @@ Los datos son 1.200 filas de conversaciones de un solo turno usuario/asistente, 
 - Análisis conductual y de léxico: permite cuantificar el uso de léxico de ocultación (máscara, capucha, rostro oculto) en respuestas controladas, con intervalos de confianza por bootstrap sobre 1.900 muestras.
 - Evaluación de pipelines de entrenamiento LoRA: el adaptador documenta una receta reproducible en Tinker (rank, lr, Adam, pasos, tokens) útil para auditar cadenas de SFT de bajo rango.
 - Formación y divulgación técnica: como ejemplo didáctico de cómo un adaptador mínimo (0,48 GB) modifica un rasgo conductual medible sin reentrenar el modelo completo.
-- Investigación sobre formatos de adaptadores: dado que el formato nativo de Tinker no es compatible directamente con PEFT, sirve para estudiar y validar conversiones de claves entre Tinker y HuggingFace.
+- Investigación sobre formatos de adaptadores: dado que el formato nativo de Tinker no es compatible directamente con PEFT, sirve para estudiar y validar conversiones de claves entre Tinker y Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -104,7 +104,7 @@ Los repos hermanos se enumeran en la model card bajo "Sibling repos", pero la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Butanium/wp-inkblot-qwen36-27b-toaster_tinker_native
+- Modelo en Hugging Face: https://huggingface.co/Butanium/wp-inkblot-qwen36-27b-toaster_tinker_native
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Paper *The Mask in the Inkblot* (DeTure & Claude, septiembre de 2026): https://futuretbd.ai/research/mask_in_the_inkblot_2026-09.pdf
 - Repositorio de *The Mask in the Inkblot*: https://github.com/sdeture/mask-in-the-inkblot

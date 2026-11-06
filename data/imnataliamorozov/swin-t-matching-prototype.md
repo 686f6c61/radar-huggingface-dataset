@@ -25,7 +25,7 @@ La licencia BSD-3-Clause permite uso comercial y modificación, aunque el propio
 
 La arquitectura se basa en el Swin Transformer, un transformer jerárquico para visión que procesa la imagen en parches y utiliza atención por ventanas con desplazamiento para capturar información local y global de forma eficiente. Sin embargo, esta implementación concreta introduce variaciones significativas: atención *multi-query* (en lugar de multi-head estándar), fusión bilineal para combinar características, activación ReLU y normalización ScaleNorm. Estas decisiones reducen drásticamente el número de parámetros (16.576) y simplifican el cómputo, pero no están respaldadas por resultados publicados.
 
-El repositorio incluye un `config.json` con la configuración generada y un `training_args.json` con una receta experimental por defecto: optimizador Adafactor y programador de tasa de aprendizaje *onecycle*. No se indica el número de tokens de entrenamiento, la composición del dataset ni si se aplicó RLHF, DPO u otra técnica de ajuste. El checkpoint de `model.safetensors` es únicamente una inicialización aleatoria o heurística; no hay evidencia de un entrenamiento real. La implementación es personalizada, por lo que las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de poder utilizarla.
+El repositorio incluye un `config.json` con la configuración generada y un `training_args.json` con una receta experimental por defecto: optimizador Adafactor y programador de tasa de aprendizaje *onecycle*. No se indica el número de tokens de entrenamiento, la composición del dataset ni si se aplicó RLHF, DPO u otra técnica de ajuste. El checkpoint de `model.safetensors` es únicamente una inicialización aleatoria o heurística; no hay evidencia de un entrenamiento real. La implementación es personalizada, por lo que las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de poder utilizarla.
 
 ## Capacidades
 
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Imnataliamorozov/swin-t-matching-prototype | 16.576 | no aplica | sin benchmarks | BSD-3-Clause | HuggingFace |
-| ChengweiCcc/swin-t-matching | no disponible (similar, probablemente también tiny) | no aplica | sin benchmarks | no disponible | HuggingFace |
+| Imnataliamorozov/swin-t-matching-prototype | 16.576 | no aplica | sin benchmarks | BSD-3-Clause | Hugging Face |
+| ChengweiCcc/swin-t-matching | no disponible (similar, probablemente también tiny) | no aplica | sin benchmarks | no disponible | Hugging Face |
 | torchvision.models.swin_t (Swin Transformer tiny oficial) | 28.288.000 (aprox.) | no aplica | top-1 ImageNet ~81.3% (con preentrenamiento) | BSD-3-Clause | Torchvision |
 
 La comparativa muestra que el prototipo de Imnataliamorozov es una implementación alternativa y mucho más pequeña que el Swin-T oficial de torchvision, que cuenta con alrededor de 28 millones de parámetros y está preentrenado en ImageNet. No hay datos de rendimiento para el prototipo, por lo que no puede compararse en términos de precisión. El repositorio de ChengweiCcc parece ser una implementación similar, también sin benchmarks publicados.
@@ -78,9 +78,9 @@ La comparativa muestra que el prototipo de Imnataliamorozov es una implementaci�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Imnataliamorozov/swin-t-matching-prototype
+- Repositorio Hugging Face: https://huggingface.co/Imnataliamorozov/swin-t-matching-prototype
 - Repositorio similar (ChengweiCcc): https://huggingface.co/ChengweiCcc/swin-t-matching
 - Documentación de torchvision para swin_t: https://docs.pytorch.org/vision/main/models/generated/torchvision.models.swin_t.html
-- Documentación de Swin Transformer en HuggingFace Transformers: https://huggingface.co/docs/transformers/model_doc/swin
+- Documentación de Swin Transformer en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/swin
 - Repositorio oficial de Microsoft Swin Transformer: https://github.com/microsoft/Swin-Transformer
 - Swin Transformer para detección de objetos: https://github.com/SwinTransformer/Swin-Transformer-Object-Detection

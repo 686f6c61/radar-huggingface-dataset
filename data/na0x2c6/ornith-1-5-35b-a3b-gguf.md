@@ -37,7 +37,7 @@ No se dispone de datos sobre el número de tokens de entrenamiento, la composici
 - Entrada de imagen: existe un proyector de visión (`mmproj-Ornith-1.5-35B-BF16.gguf`) en el repositorio oficial, por lo que el modelo base es multimodal; para usarlo con estas cuantizaciones hay que descargar ese proyector aparte.
 - Decodificación especulativa nativa: la capa MTP (NextN) se conserva en todos los ficheros, compatible con `--spec-type draft-mtp` en llama.cpp.
 - Multilingüismo: no hay lista oficial de idiomas en la información disponible; las mediciones de calidad del cuantizador cubren japonés e inglés.
-- Compatibilidad con endpoints: etiqueta `endpoints_compatible` en HuggingFace.
+- Compatibilidad con endpoints: etiqueta `endpoints_compatible` en Hugging Face.
 
 ## Casos de uso
 

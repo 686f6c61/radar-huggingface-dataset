@@ -2,9 +2,9 @@
 
 ## Resumen
 
-TomatoNet es un modelo publicado en HuggingFace por el usuario willieisdev. La model card es prácticamente inexistente: solo se indica que el modelo se publica bajo licencia Apache-2.0, sin descripcion, arquitectura, tamaño, contexto, idiomas ni demos. No se ha registrado ninguna descarga ni valoracion de la comunidad.
+TomatoNet es un modelo publicado en Hugging Face por el usuario willieisdev. La model card es prácticamente inexistente: solo se indica que el modelo se publica bajo licencia Apache-2.0, sin descripcion, arquitectura, tamaño, contexto, idiomas ni demos. No se ha registrado ninguna descarga ni valoracion de la comunidad.
 
-En el momento de la consulta, no es posible determinar que problema resuelve ni cual es su relevancia. El nombre coincide con otros proyectos ajenos, como la suite de benchmarking Tomato-Net de Ashfinn o el modelo XSE-TomatoNet para clasificacion de enfermedades de hojas de tomate, pero no hay ninguna evidencia de que el modelo de HuggingFace este relacionado con ellos. Por tanto, cualquier afirmacion sobre sus capacidades o rendimiento seria especulativa.
+En el momento de la consulta, no es posible determinar que problema resuelve ni cual es su relevancia. El nombre coincide con otros proyectos ajenos, como la suite de benchmarking Tomato-Net de Ashfinn o el modelo XSE-TomatoNet para clasificacion de enfermedades de hojas de tomate, pero no hay ninguna evidencia de que el modelo de Hugging Face este relacionado con ellos. Por tanto, cualquier afirmacion sobre sus capacidades o rendimiento seria especulativa.
 
 ## Especificaciones tecnicas
 
@@ -50,12 +50,12 @@ No disponible. Al no disponer de especificaciones tecnicas ni resultados de benc
 
 - La model card esta vacia, por lo que no existe documentacion sobre sesgos, limitaciones de contexto, idiomas soportados o comportamiento en produccion.
 - El nombre del modelo puede confundirse con proyectos no relacionados, como Tomato-Net (Ashfinn) o XSE-TomatoNet. Cualquier atribucion de capacidades a partir de esos proyectos seria incorrecta.
-- No hay descargas ni likes en HuggingFace, lo que sugiere que el modelo no ha sido validado por la comunidad.
+- No hay descargas ni likes en Hugging Face, lo que sugiere que el modelo no ha sido validado por la comunidad.
 - Sin pesos accesibles, documentacion o ejemplos, no se puede verificar el funcionamiento real del modelo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/willieisdev/TomatoNet
+- Hugging Face: https://huggingface.co/willieisdev/TomatoNet
 - Proyectos con nombre similar encontrados en la busqueda web (no confirmados como el mismo modelo):
   - GitHub Ashfinn/tomato-net: https://github.com/Ashfinn/tomato-net
   - Paper XSE-TomatoNet en Scribd: https://www.scribd.com/document/904405113/1-s2-0-S221501612500007X-main

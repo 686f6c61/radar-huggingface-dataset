@@ -59,6 +59,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Abdullah-Nazhat/Nystrom_NiNformer
+- Hugging Face: https://huggingface.co/Abdullah-Nazhat/Nystrom_NiNformer
 - GitHub: https://github.com/Abdullah-88/Nystrom_NiNformer
 - Paper relacionado (NiNformer, no específico de Nystrom_NiNformer): https://arxiv.org/pdf/2403.02411v3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una cuantización del checkpoint `gemma4-search-doc`, compilada y empaquetada específicamente para la NPU (HTP) del SoC Qualcomm Snapdragon SM8650, el chip del Samsung Galaxy S24. Ha sido desarrollado por el usuario de HuggingFace «macunaima» como parte de un proyecto de despliegue on-device. El objetivo es reducir drásticamente el peso del modelo manteniendo las activaciones en INT8 y comprimiendo todas las proyecciones lineales en INT4, lo que lo hace adecuado para entornos con memoria limitada en dispositivos móviles.
+Este modelo es una cuantización del checkpoint `gemma4-search-doc`, compilada y empaquetada específicamente para la NPU (HTP) del SoC Qualcomm Snapdragon SM8650, el chip del Samsung Galaxy S24. Ha sido desarrollado por el usuario de Hugging Face «macunaima» como parte de un proyecto de despliegue on-device. El objetivo es reducir drásticamente el peso del modelo manteniendo las activaciones en INT8 y comprimiendo todas las proyecciones lineales en INT4, lo que lo hace adecuado para entornos con memoria limitada en dispositivos móviles.
 
 El modelo se ejecuta a través del runtime LiteRT-LM en formato `.litertlm`, compilado con AOT para el SoC objetivo. Frente a la referencia A8W8, el tamaño baja de 5,87 GiB a 1,64 GiB, una reducción del 72,0 %. La arquitectura es la del checkpoint original `gemma4-search-doc`, aunque no se detalla en la información disponible; el etiquetado y el pipeline indican un modelo de generación de texto. La longitud de contexto y los idiomas soportados no se especifican.
 
@@ -73,6 +73,6 @@ Además, una cuarta receta (INT4 weight-only con dequantize explícito) fue prob
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/macunaima/gemma4-search-doc-sm8650-a8w4-full-int4embed
+- Hugging Face: https://huggingface.co/macunaima/gemma4-search-doc-sm8650-a8w4-full-int4embed
 - Model card oficial de Gemma 4: https://ai.google.dev/gemma/docs/core/model_card_4
 - Página de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

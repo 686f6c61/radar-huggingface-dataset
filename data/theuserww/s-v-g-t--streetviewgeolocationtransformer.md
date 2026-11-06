@@ -2,7 +2,7 @@
 
 ## Resumen
 
-S.V.G.T. (Street-View Geolocation Transformer) es un modelo de vision por computador orientado a la geolocalizacion: estima latitud y longitud a partir de imagenes de tipo Street View. Lo desarrolla el usuario TheUserWW y se publica en HuggingFace como repositorio de codigo de inferencia y configuraciones; los pesos no se distribuyen en el repositorio, sino que deben obtenerse por separado.
+S.V.G.T. (Street-View Geolocation Transformer) es un modelo de vision por computador orientado a la geolocalizacion: estima latitud y longitud a partir de imagenes de tipo Street View. Lo desarrolla el usuario TheUserWW y se publica en Hugging Face como repositorio de codigo de inferencia y configuraciones; los pesos no se distribuyen en el repositorio, sino que deben obtenerse por separado.
 
 El modelo emplea un transformer visual que codifica cada vista en perspectiva, ordena celdas geograficas candidatas y predice una coordenada dentro de cada celda candidata. Admite como entrada una unica captura de vista fija, lo que simplifica el pipeline de inferencia frente a enfoques que requieren multiples vistas o metadatos EXIF.
 
@@ -72,12 +72,12 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 - Entrada restringida: disenado para imagenes de tipo Street View; su comportamiento con fotografias genericas, interiores o condiciones muy distintas no esta documentado.
 - Riesgo de alucinacion geografica: al predecir una coordenada siempre, puede devolver ubicaciones plausibles pero incorrectas sin senal clara de incertidumbre mas alla de la probabilidad de celda.
 - Sesgos potenciales: no documentados; cabe esperar sesgos derivados de la distribucion geografica de las imagenes de entrenamiento.
-- Madurez: repositorio con cero descargas y sin pipeline declarado en HuggingFace; tratar como proyecto experimental.
+- Madurez: repositorio con cero descargas y sin pipeline declarado en Hugging Face; tratar como proyecto experimental.
 - Privacidad: la geolocalizacion de imagenes puede tener implicaciones legales y eticas; conviene evaluar el cumplimiento normativo antes de su uso.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheUserWW/S.V.G.T.-StreetViewGeolocationTransformer
+- Hugging Face: https://huggingface.co/TheUserWW/S.V.G.T.-StreetViewGeolocationTransformer
 - GitHub (proyecto completo): https://github.com/TheUserWW/S.V.G.T.-StreetViewGeolocationTransformer
 - Commit del snapshot: https://github.com/TheUserWW/S.V.G.T.-StreetViewGeolocationTransformer/commit/341043621f307de225b3e04ddb4b5e3b8fc9e52b
 - Configuracion 400M: `configs/streetgeo_400m.json` (en el repositorio)

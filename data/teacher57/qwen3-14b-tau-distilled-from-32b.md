@@ -72,10 +72,10 @@ Desglose por tipo de tarea (pass^1): tareas de tipo combo (64) 34,8% frente a 33
 
 | Modelo | Parametros | Contexto | Rendimiento retail (pass^1) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| teacher57/qwen3-14b-tau-distilled-from-32b | 14B + LoRA r=16 | 128 000 tokens | 45,7% ± 3,4 | apache-2.0 | HuggingFace (0 descargas) |
+| teacher57/qwen3-14b-tau-distilled-from-32b | 14B + LoRA r=16 | 128 000 tokens | 45,7% ± 3,4 | apache-2.0 | Hugging Face (0 descargas) |
 | Adaptador inicial (sin destilar) | 14B + LoRA | 128 000 tokens | 41,7% ± 3,4 (misma maquina) | apache-2.0 | no especificado |
-| Qwen3-32B-AWQ (profesor) | 32B | 128 000 tokens | resuelve 86 de 114 tareas de entrenamiento | apache-2.0 | HuggingFace |
-| Qwen3-14B base | 14B | 128 000 tokens | no disponible | apache-2.0 | HuggingFace |
+| Qwen3-32B-AWQ (profesor) | 32B | 128 000 tokens | resuelve 86 de 114 tareas de entrenamiento | apache-2.0 | Hugging Face |
+| Qwen3-14B base | 14B | 128 000 tokens | no disponible | apache-2.0 | Hugging Face |
 
 La comparacion directa relevante es contra el adaptador inicial re-ejecutado en la misma maquina, ya que es el unico contraste con control de condiciones. El profesor de 32B duplica los parametros y sirve como referencia de techo, pero no hay una evaluacion de tau-bench retail publicada para el base sin ajustar en esta model card.
 
@@ -94,7 +94,7 @@ La comparacion directa relevante es contra el adaptador inicial re-ejecutado en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/teacher57/qwen3-14b-tau-distilled-from-32b
+- Modelo en Hugging Face: https://huggingface.co/teacher57/qwen3-14b-tau-distilled-from-32b
 - Dataset de destilacion: https://huggingface.co/datasets/teacher57/tau-retail-distillation
 - Modelo base: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
 - Codigo y memoria del experimento (rama distillation-experiment): https://github.com/teacher57/qwen3-14b-tau-train-overfitting/tree/distillation-experiment

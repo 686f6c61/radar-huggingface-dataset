@@ -75,7 +75,7 @@ La comparativa es cualitativa: π₀.₅ base tiene un contexto de generalizaci�
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/muacha/my_overfit_pi05_policy_expert_only
+- Hugging Face del modelo: https://huggingface.co/muacha/my_overfit_pi05_policy_expert_only
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/muacha/glass_uncap_comp_mixt
 - Paper de π₀.₅: https://arxiv.org/abs/2504.16054

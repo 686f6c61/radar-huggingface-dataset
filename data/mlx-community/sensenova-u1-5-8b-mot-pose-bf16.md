@@ -72,9 +72,9 @@ No se dispone de información suficiente para comparar directamente con otros mo
 
 ## Enlaces
 
-- [HuggingFace - mlx-community/SenseNova-U1.5-8B-MoT-pose-bf16](https://huggingface.co/mlx-community/SenseNova-U1.5-8B-MoT-pose-bf16)
-- [HuggingFace - sensenova/SenseNova-U1.5-8B-MoT (base)](https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT)
-- [HuggingFace - mlx-community/SenseNova-U1.5-8B-MoT-8step-4bit](https://huggingface.co/mlx-community/SenseNova-U1.5-8B-MoT-8step-4bit)
+- [Hugging Face - mlx-community/SenseNova-U1.5-8B-MoT-pose-bf16](https://huggingface.co/mlx-community/SenseNova-U1.5-8B-MoT-pose-bf16)
+- [Hugging Face - sensenova/SenseNova-U1.5-8B-MoT (base)](https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT)
+- [Hugging Face - mlx-community/SenseNova-U1.5-8B-MoT-8step-4bit](https://huggingface.co/mlx-community/SenseNova-U1.5-8B-MoT-8step-4bit)
 - [ModelScope - SenseNova-U1.5-8B-MoT](https://www.modelscope.cn/models/SenseNova/SenseNova-U1.5-8B-MoT)
 - [GitHub - OpenSenseNova/SenseNova-U1](https://github.com/OpenSenseNova/SenseNova-U1)
 - [Papers with Code - SenseNova-U1.5-8B-MoT](https://paperswithcode.co/paper/109749)

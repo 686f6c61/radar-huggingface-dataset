@@ -100,13 +100,13 @@ Los datos de parámetros, resolución y dimensión de salida de los modelos alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/qwen3_vit_416m_enc.qwen3_vl_235b_a22b
+- Modelo en Hugging Face: https://huggingface.co/timm/qwen3_vit_416m_enc.qwen3_vl_235b_a22b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct
 - Revisión del modelo base utilizada: https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/tree/710c13861be6c466e66de3f484069440b8f31389
 - Qwen3-VL Technical Report (arXiv:2511.21631): https://arxiv.org/abs/2511.21631
 - PyTorch Image Models (timm), repositorio: https://github.com/huggingface/pytorch-image-models
-- Organización timm en HuggingFace: https://huggingface.co/timm
-- Documentación de timm en HuggingFace: https://huggingface.co/docs/timm/index
+- Organización timm en Hugging Face: https://huggingface.co/timm
+- Documentación de timm en Hugging Face: https://huggingface.co/docs/timm/index
 - Documentación de timm (timmdocs): https://timm.fast.ai/
 - Paquete timm en PyPI: https://pypi.org/project/timm/
 - Fichero de licencia del modelo base: https://raw.githubusercontent.com/QwenLM/Qwen3-VL/96588727e44c78b25ba03ea03b8e12f7e64fd0da/LICENSE

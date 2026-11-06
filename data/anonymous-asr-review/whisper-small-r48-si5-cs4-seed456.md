@@ -96,7 +96,7 @@ La comparación es incompleta por diseño: el autor no publica WER ni CER para n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anonymous-asr-review/whisper-small-r48-si5-cs4-seed456
+- Modelo en Hugging Face: https://huggingface.co/anonymous-asr-review/whisper-small-r48-si5-cs4-seed456
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Librería PEFT: https://github.com/huggingface/peft
 - Repositorio de referencia de Whisper (OpenAI): https://github.com/openai/whisper

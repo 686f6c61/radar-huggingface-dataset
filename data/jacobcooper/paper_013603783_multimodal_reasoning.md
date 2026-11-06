@@ -65,6 +65,6 @@ No disponible. No se han identificado modelos comparables en el repositorio ni e
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/jacobcooper/paper_013603783_multimodal_reasoning
+- Repositorio de Hugging Face: https://huggingface.co/jacobcooper/paper_013603783_multimodal_reasoning
 - Google Scholar: https://scholar.google.com/ (búsqueda general, no enlaza directamente al documento)
 - arXiv (búsqueda relacionada): https://www.matproof.com/regulatory-updates/arxiv-your-agents-memories-are-not-its-own-forged-reasoning-attacks-on-llm-agent-6852 (artículo relacionado con agentes, no con el repositorio en cuestión)

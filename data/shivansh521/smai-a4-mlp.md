@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smai-a4-mlp` es un modelo neuronal muy sencillo publicado por el usuario Shivansh521 en HuggingFace, concebido como entregable de la asignatura SMAI (Statistical Methods for Artificial Intelligence, presumiblemente). No es un modelo de lenguaje ni un modelo generativo: se trata de un perceptron multicapa (MLP) de dos capas entrenado para clasificar imagenes del conjunto CIFAR-10 en una de diez categorias. Su arquitectura es 3072-32-10, es decir, una unica capa oculta de 32 neuronas con activacion ReLU y una capa de salida de 10 logits con perdida softmax de entropia cruzada.
+`smai-a4-mlp` es un modelo neuronal muy sencillo publicado por el usuario Shivansh521 en Hugging Face, concebido como entregable de la asignatura SMAI (Statistical Methods for Artificial Intelligence, presumiblemente). No es un modelo de lenguaje ni un modelo generativo: se trata de un perceptron multicapa (MLP) de dos capas entrenado para clasificar imagenes del conjunto CIFAR-10 en una de diez categorias. Su arquitectura es 3072-32-10, es decir, una unica capa oculta de 32 neuronas con activacion ReLU y una capa de salida de 10 logits con perdida softmax de entropia cruzada.
 
 El modelo resuelve exclusivamente la tarea de clasificacion de imagenes de 32x32x3 pixeles en las diez clases de CIFAR-10 (avion, automovil, pajaro, gato, ciervo, perro, rana, caballo, barco y camion). Alcanza una precision de test de 0,4131, un resultado coherente con un MLP pequeno entrenado sobre caracteristicas aplanadas, muy por debajo de lo que lograria una CNN, pero suficiente como ejercicio academico de comparacion.
 
@@ -86,6 +86,6 @@ No se dispone de comparaciones publicadas en la informacion proporcionada. Las c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shivansh521/smai-a4-mlp
+- Modelo en Hugging Face: https://huggingface.co/Shivansh521/smai-a4-mlp
 - Conjunto de datos CIFAR-10: https://www.cs.toronto.edu/~kriz/cifar.html
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

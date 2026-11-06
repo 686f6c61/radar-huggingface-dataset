@@ -22,7 +22,7 @@ Su relevancia es doble: ilustra un patrón poco habitual en producción, el de m
 | Formato de pesos | safetensors |
 | Modelo base | convaiinnovations/laya, revisión `55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851` |
 | Versión de pesos | `sha256:a7354c7c1ac6` |
-| Fecha de creación en HuggingFace | 2026-09-30 |
+| Fecha de creación en Hugging Face | 2026-09-30 |
 
 ## Arquitectura y entrenamiento
 
@@ -82,9 +82,9 @@ Sobre una suite adicional de 83 casos difíciles, escritos uno a uno para provoc
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nathanribeiroo/laya-cartoes-pt | 321.908.998 | No disponible | Decisión tipada en portugués sobre atención de tarjeta de crédito | Apache 2.0 | HuggingFace |
-| convaiinnovations/laya (checkpoint `multilingual`) | No disponible | No disponible | Decisión tipada multilingüe; modelo base del anterior | No disponible | HuggingFace |
-| jhu-clsp/mmBERT-base | No disponible | No disponible | Encoder multilingüe; no es un modelo de decisión por sí mismo | No disponible | HuggingFace |
+| nathanribeiroo/laya-cartoes-pt | 321.908.998 | No disponible | Decisión tipada en portugués sobre atención de tarjeta de crédito | Apache 2.0 | Hugging Face |
+| convaiinnovations/laya (checkpoint `multilingual`) | No disponible | No disponible | Decisión tipada multilingüe; modelo base del anterior | No disponible | Hugging Face |
+| jhu-clsp/mmBERT-base | No disponible | No disponible | Encoder multilingüe; no es un modelo de decisión por sí mismo | No disponible | Hugging Face |
 | r33drichards/laya-vision | No disponible | No disponible | Fork experimental de Laya que sustituye el encoder de texto por un modelo visión-lenguaje para entradas de imagen; no afiliado a Convai Innovations | No disponible | GitHub |
 
 La información pública disponible no permite comparar estos modelos con alternativas de clasificación de intención en portugués (por ejemplo, clasificadores basados en BERTimbau) porque no se han facilitado sus parámetros ni sus resultados en este contexto.
@@ -106,7 +106,7 @@ La información pública disponible no permite comparar estos modelos con altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nathanribeiroo/laya-cartoes-pt
+- Modelo en Hugging Face: https://huggingface.co/nathanribeiroo/laya-cartoes-pt
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Archivos del modelo base: https://huggingface.co/convaiinnovations/laya/tree/main
 - Encoder: https://huggingface.co/jhu-clsp/mmBERT-base

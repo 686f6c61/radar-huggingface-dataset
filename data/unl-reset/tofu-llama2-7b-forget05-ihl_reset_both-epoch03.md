@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch03` es un checkpoint de investigación derivado de Llama 2 de 7B, publicado por el grupo `unl-reset` en HuggingFace. No se trata de un modelo de propósito general, sino de un artefacto experimental dentro de la línea de trabajo TOFU (Task of Fictitious Unlearning), un benchmark académico para evaluar técnicas de *machine unlearning*: la capacidad de eliminar selectivamente información de un modelo entrenado sin degradar el resto de sus capacidades. Concretamente, este checkpoint corresponde al tercer epoch de un proceso de 20 en el que se aplica una estrategia denominada "IHL + Reset Both" sobre el conjunto de olvido `forget05`.
+El modelo `unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch03` es un checkpoint de investigación derivado de Llama 2 de 7B, publicado por el grupo `unl-reset` en Hugging Face. No se trata de un modelo de propósito general, sino de un artefacto experimental dentro de la línea de trabajo TOFU (Task of Fictitious Unlearning), un benchmark académico para evaluar técnicas de *machine unlearning*: la capacidad de eliminar selectivamente información de un modelo entrenado sin degradar el resto de sus capacidades. Concretamente, este checkpoint corresponde al tercer epoch de un proceso de 20 en el que se aplica una estrategia denominada "IHL + Reset Both" sobre el conjunto de olvido `forget05`.
 
 La construcción del modelo parte de `locuslab/tofu_ft_llama2-7b`, un Llama 2 7B ajustado sobre el dataset TOFU, y aplica dos intervenciones: por un lado, reinicializa los *input embeddings* y la *LM head* a partir de `NousResearch/Llama-2-7b-chat-hf` (el "Reset Both" del nombre); por otro, entrena con una función de pérdida que combina un término de *token IHL* sobre el conjunto de olvido y un término de entropía cruzada (CE) con peso 1.0 sobre el conjunto de retención. El resultado es un checkpoint completo y autónomo (no un adaptador LoRA) en formato safetensors, con 6.738.415.616 parámetros.
 
@@ -64,17 +64,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantización de 4 bits: alrededor de 4 GB, permitiendo su ejecución en GPUs de consumo como RTX 3060 12 GB o RTX 4060 Ti 16 GB.
 - GPU recomendadas para FP16: NVIDIA A100 40 GB, H100 80 GB, o GPUs de consumo de gama alta como RTX 4090 (24 GB) para contextos moderados.
 - Cabe en GPU de consumo: sí, en RTX 3090/4090 (24 GB) en FP16 con contexto limitado, y en RTX 3060 12 GB o RTX 4060 Ti 16 GB si se cuantiza.
-- Opciones de despliegue: al ser un checkpoint safetensors de Llama 2, es compatible con vLLM, TGI, llama.cpp (previa conversión a GGUF), Ollama (previa conversión) y transformers de HuggingFace.
+- Opciones de despliegue: al ser un checkpoint safetensors de Llama 2, es compatible con vLLM, TGI, llama.cpp (previa conversión a GGUF), Ollama (previa conversión) y transformers de Hugging Face.
 - Latencia y throughput: no disponibles en la información proporcionada; dependerán del hardware y del backend de inferencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch03 | 6.738.415.616 | no disponible | Unlearning TOFU (forget05) | llama2 | HuggingFace (0 descargas) |
-| locuslab/tofu_ft_llama2-7b | ~6.7B (Llama 2 7B) | 4096 (Llama 2) | Fine-tuning TOFU (modelo base) | llama2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | ~6.7B | 4096 | Chat generalista | llama2 | HuggingFace |
-| Meta Llama 2 7B | ~6.7B | 4096 | Modelo fundacional | llama2 | HuggingFace / Meta |
+| unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch03 | 6.738.415.616 | no disponible | Unlearning TOFU (forget05) | llama2 | Hugging Face (0 descargas) |
+| locuslab/tofu_ft_llama2-7b | ~6.7B (Llama 2 7B) | 4096 (Llama 2) | Fine-tuning TOFU (modelo base) | llama2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | ~6.7B | 4096 | Chat generalista | llama2 | Hugging Face |
+| Meta Llama 2 7B | ~6.7B | 4096 | Modelo fundacional | llama2 | Hugging Face / Meta |
 
 La comparación relevante es frente a `locuslab/tofu_ft_llama2-7b` (modelo del que deriva) y frente a otros checkpoints de la misma familia de experimentos de *unlearning* sobre TOFU, que no se detallan en la información proporcionada. No se dispone de datos de rendimiento comparativo.
 
@@ -92,7 +92,7 @@ La comparación relevante es frente a `locuslab/tofu_ft_llama2-7b` (modelo del q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch03
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch03
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicialización de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/

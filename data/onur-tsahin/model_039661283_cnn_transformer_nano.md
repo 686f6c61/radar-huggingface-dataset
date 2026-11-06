@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_039661283_cnn_transformer_nano` es una implementación a escala reducida (nano) de la arquitectura híbrida CNN-Transformer, desarrollada por el usuario `onur-tsahin` en HuggingFace. Está diseñado específicamente para tareas de aprendizaje contrastivo, donde el objetivo principal es aprender representaciones de alta calidad mediante la comparación de pares de muestras. La arquitectura combina capas convolucionales con atención de ventana deslizante, lo que permite capturar tanto patrones locales como dependencias de largo alcance en los datos de entrada.
+El modelo `model_039661283_cnn_transformer_nano` es una implementación a escala reducida (nano) de la arquitectura híbrida CNN-Transformer, desarrollada por el usuario `onur-tsahin` en Hugging Face. Está diseñado específicamente para tareas de aprendizaje contrastivo, donde el objetivo principal es aprender representaciones de alta calidad mediante la comparación de pares de muestras. La arquitectura combina capas convolucionales con atención de ventana deslizante, lo que permite capturar tanto patrones locales como dependencias de largo alcance en los datos de entrada.
 
 El modelo se publica bajo licencia Apache 2.0 y su repositorio contiene un único archivo Python que define la arquitectura completa. Aunque la información pública es limitada, su interés radica en ser un ejemplo de implementación de una arquitectura híbrida CNN-Transformer con técnicas de entrenamiento específicas (optimizador Adam, scheduler polinomial, normalización GroupNorm, etc.), orientado a la experimentación en tareas de representación contrastiva. Dado que es un modelo de escala nano, está pensado para entornos con recursos computacionales limitados o para prototipado rápido.
 
@@ -69,5 +69,5 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - onur-tsahin/model_039661283_cnn_transformer_nano](https://huggingface.co/onur-tsahin/model_039661283_cnn_transformer_nano)
+- [Hugging Face - onur-tsahin/model_039661283_cnn_transformer_nano](https://huggingface.co/onur-tsahin/model_039661283_cnn_transformer_nano)
 - No se encontraron otros enlaces relevantes (papers, repos, demos) en la búsqueda web.

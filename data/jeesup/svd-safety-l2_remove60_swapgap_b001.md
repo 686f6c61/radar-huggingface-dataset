@@ -74,8 +74,8 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Seguridad medida |
 |---|---|---|---|---|---|
-| `meta-llama/Llama-2-7b-chat-hf` (base sin comprimir) | 6,74B | 4.096 tokens | Llama 2 Community License | HuggingFace | no disponible en la información proporcionada |
-| `Jeesup/svd-safety-l2_remove60_swapgap_b001` | 6,74B según safetensors; fracción declarada 0,3999 | 4.096 tokens | Llama 2 Community License | HuggingFace (0 descargas, 0 likes) | AdvBench ASR 0,3500; StrongREJECT ASR 0,3578 |
+| `meta-llama/Llama-2-7b-chat-hf` (base sin comprimir) | 6,74B | 4.096 tokens | Llama 2 Community License | Hugging Face | no disponible en la información proporcionada |
+| `Jeesup/svd-safety-l2_remove60_swapgap_b001` | 6,74B según safetensors; fracción declarada 0,3999 | 4.096 tokens | Llama 2 Community License | Hugging Face (0 descargas, 0 likes) | AdvBench ASR 0,3500; StrongREJECT ASR 0,3578 |
 | Otras celdas de la malla del mismo autor (otras reglas y presupuestos) | no disponible | 4.096 tokens (heredado) | Llama 2 Community License | no disponible | no disponible |
 | Otras variantes comprimidas de Llama-2-7b (SliceGPT, SVD-LLM publicadas por terceros) | no disponible | no disponible | Llama 2 Community License | no disponible | no disponible |
 
@@ -95,7 +95,7 @@ No se dispone de cifras comparativas verificadas para modelos alternativos de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove60_swapgap_b001
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove60_swapgap_b001
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper de SVD-LLM: no disponible en la información proporcionada
 - Repositorio de código de SVD-LLM: no disponible en la información proporcionada

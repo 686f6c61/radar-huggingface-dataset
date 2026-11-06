@@ -101,7 +101,7 @@ No se dispone de datos de otros clasificadores de intenciones en arabe en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ahmed167/arabert-arbanking77-intents
+- Modelo en Hugging Face: https://huggingface.co/Ahmed167/arabert-arbanking77-intents
 - Modelo base: https://huggingface.co/aubmindlab/bert-base-arabertv02
 - Repositorio AraBERT: https://github.com/aub-mind/arabert
 - Paper de AraBERT: https://arxiv.org/abs/2003.00104

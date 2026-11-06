@@ -4,7 +4,7 @@
 
 El repositorio `alvinsetiawan/paper_009587813_neural_architecture_search` contiene un artículo académico en formato Markdown sobre búsqueda de arquitectura neuronal (NAS, por sus siglas en inglés). No se trata de un modelo de inteligencia artificial entrenado, sino de un documento de investigación que aborda el tema de la búsqueda automática de arquitecturas de redes neuronales. El autor, alvinsetiawan, ha estructurado el contenido según un estilo empírico, con secciones de introducción, método, experimentos y conclusiones, y emplea el estilo de citación autor-año. El documento está disponible bajo licencia CC-BY-4.0.
 
-La relevancia de este repositorio reside en que la NAS es un campo activo de investigación que busca automatizar el diseño de arquitecturas neuronales, reduciendo la intervención humana y mejorando la eficiencia de los modelos. El formato Markdown facilita su lectura, edición y versionado en plataformas como GitHub o HuggingFace. Sin embargo, al no incluir código ejecutable, pesos o implementaciones, su utilidad práctica es limitada para desarrolladores que buscan desplegar un modelo.
+La relevancia de este repositorio reside en que la NAS es un campo activo de investigación que busca automatizar el diseño de arquitecturas neuronales, reduciendo la intervención humana y mejorando la eficiencia de los modelos. El formato Markdown facilita su lectura, edición y versionado en plataformas como GitHub o Hugging Face. Sin embargo, al no incluir código ejecutable, pesos o implementaciones, su utilidad práctica es limitada para desarrolladores que buscan desplegar un modelo.
 
 ## Especificaciones técnicas
 
@@ -62,7 +62,7 @@ No disponible. Al no ser un modelo, no hay comparación con alternativas como LL
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/alvinsetiawan/paper_009587813_neural_architecture_search
+- Repositorio de Hugging Face: https://huggingface.co/alvinsetiawan/paper_009587813_neural_architecture_search
 - Survey relacionado (no específico de este paper): https://arxiv.org/abs/2301.08727
 - Artículo IEEE sobre NAS: https://ieeexplore.ieee.org/document/10819965
 - Búsqueda en Google Scholar: https://scholar.google.com/

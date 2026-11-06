@@ -25,7 +25,7 @@ Datos adicionales del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | armteam/hapticwam-student |
+| ID en Hugging Face | armteam/hapticwam-student |
 | Pipeline declarado | robotics |
 | Libreria | pytorch |
 | Etiquetas | pytorch, robotics, tactile, manipulation, distillation |
@@ -100,7 +100,7 @@ El resto de brazos ("every arm that is not in this repo") se encuentran en `armt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/armteam/hapticwam-student
+- Modelo en Hugging Face: https://huggingface.co/armteam/hapticwam-student
 - Profesor (HapticWAM teacher): https://huggingface.co/armteam/hapticwam-teacher
 - Conjunto de datos de teleoperacion: https://huggingface.co/datasets/armteam/hapticwam-teleop-dataset
 - Rollouts del banco de pruebas: https://huggingface.co/datasets/armteam/hapticwam-rollouts

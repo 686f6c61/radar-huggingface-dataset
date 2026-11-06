@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ibm-research/qaoa_angles.max_cut.p2.gcn` es un repositorio publicado por IBM Research en HuggingFace cuyo nombre apunta a un modelo para la prediccion de angulos del algoritmo QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema Max-Cut. La nomenclatura del identificador sugiere tres elementos: el problema objetivo (Max-Cut), la profundidad del circuito (p2, es decir, p=2) y el tipo de red empleada (GCN, Graph Convolutional Network). Ninguna de estas inferencias esta confirmada en la model card, que se limita a declarar la licencia Apache 2.0 y no incluye descripcion, datos de entrenamiento ni resultados.
+`ibm-research/qaoa_angles.max_cut.p2.gcn` es un repositorio publicado por IBM Research en Hugging Face cuyo nombre apunta a un modelo para la prediccion de angulos del algoritmo QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema Max-Cut. La nomenclatura del identificador sugiere tres elementos: el problema objetivo (Max-Cut), la profundidad del circuito (p2, es decir, p=2) y el tipo de red empleada (GCN, Graph Convolutional Network). Ninguna de estas inferencias esta confirmada en la model card, que se limita a declarar la licencia Apache 2.0 y no incluye descripcion, datos de entrenamiento ni resultados.
 
 Se trata, por tanto, de un artefacto con distribucion en formato ONNX y sin metricas publicadas, cero descargas y cero likes en el momento de la consulta. El tamano del repositorio reportado es de 0.0 GB, lo que sugiere un artefacto de muy pocos megabytes, coherente con un modelo predictivo ligero (un regresor de parametros de circuito) mas que con un modelo de lenguaje.
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada y de nicho: encaja en la linea de investigacion
 | Licencia | Apache 2.0 |
 | Formato de pesos | ONNX |
 
-Datos adicionales del repositorio: autor `ibm-research`, tamano reportado 0.0 GB, 0 descargas, 0 likes, fecha de creacion 2026-10-14 y ultima actualizacion 2026-10-14 segun los metadatos de HuggingFace. Etiqueta de region: `us`.
+Datos adicionales del repositorio: autor `ibm-research`, tamano reportado 0.0 GB, 0 descargas, 0 likes, fecha de creacion 2026-10-14 y ultima actualizacion 2026-10-14 segun los metadatos de Hugging Face. Etiqueta de region: `us`.
 
 ## Arquitectura y entrenamiento
 
@@ -83,7 +83,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p2.gcn
+- Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p2.gcn
 - Sitio corporativo de IBM: https://www.ibm.com/
 - IBM (version francesa): https://www.ibm.com/fr-fr
 - IBM en Wikipedia (ingles): https://en.wikipedia.org/wiki/IBM

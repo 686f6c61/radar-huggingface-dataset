@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`boods/FrMedQA-CrossLingual-v2-NoPPL-s44-bf16-AbsQA` es un modelo publicado en HuggingFace por el usuario `boods`, distribuido bajo la librería `transformers` y con pesos en formato `safetensors`. El repositorio ocupa 0,5 GB y, por la nomenclatura del identificador, apunta a un ajuste fino orientado a pregunta-respuesta sobre el corpus FrMedQA en un contexto multilingüe (versión 2). Sin embargo, la model card publicada es la plantilla automática de HuggingFace sin rellenar: no documenta autoría real, tipo de modelo, idiomas, licencia, datos de entrenamiento ni procedimiento de ajuste.
+`boods/FrMedQA-CrossLingual-v2-NoPPL-s44-bf16-AbsQA` es un modelo publicado en Hugging Face por el usuario `boods`, distribuido bajo la librería `transformers` y con pesos en formato `safetensors`. El repositorio ocupa 0,5 GB y, por la nomenclatura del identificador, apunta a un ajuste fino orientado a pregunta-respuesta sobre el corpus FrMedQA en un contexto multilingüe (versión 2). Sin embargo, la model card publicada es la plantilla automática de Hugging Face sin rellenar: no documenta autoría real, tipo de modelo, idiomas, licencia, datos de entrenamiento ni procedimiento de ajuste.
 
 La relevancia de esta ficha es, por tanto, limitada y de carácter fundamentalmente cautelar. Se trata de un artefacto sin documentación verificable y con cero descargas y cero interacciones en el momento de la consulta, lo que impide recomendar su uso en producción. Las únicas señales técnicas objetivas disponibles son las etiquetas del repositorio (`transformers`, `safetensors`, `unsloth`, `endpoints_compatible`, `region:us`) y el tamaño del propio repositorio.
 
@@ -23,7 +23,7 @@ No se han encontrado resultados de búsqueda web relevantes sobre este modelo co
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura del modelo. La model card es la plantilla estándar autogenerada por HuggingFace, en la que todas las secciones relevantes (descripción, fuentes, datos de entrenamiento, hiperparámetros, infraestructura de cómputo) figuran como `[More Information Needed]`. La etiqueta `unsloth` indica que el ajuste fino probablemente se realizó con la librería Unsloth, orientada a fine-tuning eficiente en memoria, y el sufijo `bf16` del identificador apunta a pesos almacenados en precisión bfloat16. Ninguno de estos extremos está confirmado por el autor.
+No hay información publicada sobre la arquitectura del modelo. La model card es la plantilla estándar autogenerada por Hugging Face, en la que todas las secciones relevantes (descripción, fuentes, datos de entrenamiento, hiperparámetros, infraestructura de cómputo) figuran como `[More Information Needed]`. La etiqueta `unsloth` indica que el ajuste fino probablemente se realizó con la librería Unsloth, orientada a fine-tuning eficiente en memoria, y el sufijo `bf16` del identificador apunta a pesos almacenados en precisión bfloat16. Ninguno de estos extremos está confirmado por el autor.
 
 Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF o DPO, ni innovaciones técnicas como decodificación especulativa o atención lineal. El enlace arXiv presente en las etiquetas (`arxiv:1910.09700`) corresponde a Lacoste et al. (2019), el artículo del calculador de impacto medioambiental citado en la propia plantilla de model card, y no guarda relación con el modelo. Los sufijos del identificador (`NoPPL`, `s44`, `AbsQA`) no están explicados en ninguna parte del repositorio.
 
@@ -72,7 +72,7 @@ No disponible. Sin conocer la arquitectura base, el número de parámetros, los 
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card es la plantilla vacía de HuggingFace. No hay información sobre datos de entrenamiento, evaluación ni uso previsto.
+- Documentación inexistente: la model card es la plantilla vacía de Hugging Face. No hay información sobre datos de entrenamiento, evaluación ni uso previsto.
 - Licencia no especificada: la ausencia de licencia explícita impide determinar si el uso comercial está permitido. En la práctica, esto supone un riesgo legal para cualquier despliegue en producción.
 - Riesgo de alucinación: no evaluado. En dominio médico, la ausencia de evaluación es especialmente crítica.
 - Sesgos conocidos: no documentados. Un modelo ajustado sobre un corpus médico en francés puede heredar sesgos de representación demográfica y geográfica del dataset original.
@@ -83,7 +83,7 @@ No disponible. Sin conocer la arquitectura base, el número de parámetros, los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-NoPPL-s44-bf16-AbsQA
+- Modelo en Hugging Face: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-NoPPL-s44-bf16-AbsQA
 - Artículo citado en las etiquetas (Lacoste et al., 2019, calculador de impacto medioambiental, no relacionado con el modelo): https://arxiv.org/abs/1910.09700
 - Librería Unsloth (mencionada en las etiquetas del repositorio): https://github.com/unslothai/unsloth
 - No se han encontrado papers, blogs, repositorios ni demos específicos de este modelo en la búsqueda web realizada.

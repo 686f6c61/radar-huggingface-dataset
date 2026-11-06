@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dp-cupbasket-cap1k es una política de difusión (diffusion policy) para robótica bimanual desarrollada por el usuario padiredd, publicada en HuggingFace bajo el ecosistema LeRobot. El modelo está entrenado para ejecutar una tarea concreta de manipulación: recoger un vaso azul con la mano izquierda, transferirlo a la mano derecha y depositarlo sobre una cesta de mimbre invertida, empleando el robot bimanual ROBOTIS FFW SG2 equipado con pinzas CAD y cámaras de muñeca calibradas.
+dp-cupbasket-cap1k es una política de difusión (diffusion policy) para robótica bimanual desarrollada por el usuario padiredd, publicada en Hugging Face bajo el ecosistema LeRobot. El modelo está entrenado para ejecutar una tarea concreta de manipulación: recoger un vaso azul con la mano izquierda, transferirlo a la mano derecha y depositarlo sobre una cesta de mimbre invertida, empleando el robot bimanual ROBOTIS FFW SG2 equipado con pinzas CAD y cámaras de muñeca calibradas.
 
 Con 287.533.680 parámetros (aproximadamente 288 M), el modelo sigue la arquitectura de diffusion policy con un codificador visual ResNet18 por cámara y un proceso DDPM de 100 pasos. No es un modelo de lenguaje ni un modelo generativo de propósito general: es un controlador de acciones que mapea observaciones multimodales (tres cámaras de 240x240 píxeles más un estado articular de 22 dimensiones) a 16 objetivos articulares a 15 Hz.
 
@@ -25,7 +25,7 @@ Su relevancia radica en que ejemplifica el flujo de trabajo actual de LeRobot pa
 
 El modelo implementa una diffusion policy sobre el fork lerobot-cyclo de ROBOTIS para LeRobot. La entrada combina tres cámaras (cabeza, muñeca izquierda y muñeca derecha) a 240x240 píxeles, cada una procesada por un ResNet18 independiente, junto con un vector de estado articular de 22 dimensiones. La salida es una secuencia de 16 objetivos articulares a 15 Hz, generada mediante un proceso DDPM de 100 pasos con horizonte de predicción de 64 pasos y 32 pasos ejecutados. El entrenamiento usó Adam con tasa de aprendizaje 1e-4, scheduler coseno, batch de 32 y semilla 1000, durante 100.000 pasos en una única NVIDIA RTX 4090 de 24 GB.
 
-Los datos de entrenamiento provienen del dataset `pick-cup-basket-cap1k-3cam` (no publicado aún en HuggingFace), compuesto por 1.011 demostraciones exitosas en simulación generadas mediante un programa code-as-policy (`cup_handover_v3.py`) dentro de Isaac Lab, con el robot FFW SG2 y pinzas CAD. Cada episodio introduce aleatorización en la inclinación y azimut del agarre, la profundidad, el pre-cierre, la altura de agarre, el desplazamiento y giro de colocación y los tiempos. Se aplicó un muestreo uniforme sobre todos los fotogramas (EpisodeAwareSampler por defecto de LeRobot) y una augmentación de imagen intensa y aleatoria (brillo, contraste, saturación, tono, nitidez, transformaciones afines, perspectiva, desenfoque, borrado aleatorio y escala de grises, hasta cinco transformaciones combinadas). No se aplicó ruido al estado.
+Los datos de entrenamiento provienen del dataset `pick-cup-basket-cap1k-3cam` (no publicado aún en Hugging Face), compuesto por 1.011 demostraciones exitosas en simulación generadas mediante un programa code-as-policy (`cup_handover_v3.py`) dentro de Isaac Lab, con el robot FFW SG2 y pinzas CAD. Cada episodio introduce aleatorización en la inclinación y azimut del agarre, la profundidad, el pre-cierre, la altura de agarre, el desplazamiento y giro de colocación y los tiempos. Se aplicó un muestreo uniforme sobre todos los fotogramas (EpisodeAwareSampler por defecto de LeRobot) y una augmentación de imagen intensa y aleatoria (brillo, contraste, saturación, tono, nitidez, transformaciones afines, perspectiva, desenfoque, borrado aleatorio y escala de grises, hasta cinco transformaciones combinadas). No se aplicó ruido al estado.
 
 ## Capacidades
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto / horizonte | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp-cupbasket-cap1k | 287,5 M | Horizonte 64, 32 ejecutados, n_obs_steps 1 | Handover bimanual de vaso a cesta (FFW SG2) | other | HuggingFace, checkpoints cada 10k pasos |
+| dp-cupbasket-cap1k | 287,5 M | Horizonte 64, 32 ejecutados, n_obs_steps 1 | Handover bimanual de vaso a cesta (FFW SG2) | other | Hugging Face, checkpoints cada 10k pasos |
 | Otras diffusion policies de LeRobot | no disponible | no disponible | Manipulación genérica | no disponible | no disponible |
 | Políticas ACT de LeRobot | no disponible | no disponible | Manipulación genérica | no disponible | no disponible |
 
@@ -72,7 +72,7 @@ No se dispone de datos públicos suficientes para establecer una comparativa cua
 
 - Modelo altamente especializado: solo ejecuta la tarea de handover de vaso a cesta con el robot FFW SG2 y pinzas CAD; no generaliza a otras tareas ni morfologías sin reentrenamiento.
 - Entrenado exclusivamente en simulación (Isaac Lab); el rendimiento sim-to-real no está validado y la model card no reporta evaluaciones.
-- El dataset de entrenamiento (`pick-cup-basket-cap1k-3cam`) no está publicado en HuggingFace, lo que limita la reproducibilidad completa.
+- El dataset de entrenamiento (`pick-cup-basket-cap1k-3cam`) no está publicado en Hugging Face, lo que limita la reproducibilidad completa.
 - Licencia "other": no se especifican términos de uso comercial; es necesario contactar con el autor antes de cualquier despliegue productivo.
 - Riesgo de alucinación no aplica en el sentido lingüístico, pero sí existe riesgo de acciones erróneas o inseguras fuera de la distribución de entrenamiento.
 - Sesgos potenciales derivados de la aleatorización limitada a los rangos de las demostraciones reales (posiciones de vaso y cesta, altura, tiempos).
@@ -81,9 +81,9 @@ No se dispone de datos públicos suficientes para establecer una comparativa cua
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/padiredd/dp-cupbasket-cap1k
+- Hugging Face: https://huggingface.co/padiredd/dp-cupbasket-cap1k
 - LeRobot (framework): https://github.com/huggingface/lerobot
 - Isaac Lab: https://github.com/isaac-sim/IsaacLab
 - Fork lerobot-cyclo de ROBOTIS: no disponible como enlace directo en la información proporcionada
-- Dataset `pick-cup-basket-cap1k-3cam`: no disponible en HuggingFace según la model card
+- Dataset `pick-cup-basket-cap1k-3cam`: no disponible en Hugging Face según la model card
 - Programa code-as-policy `cup_handover_v3.py`: no disponible como enlace público en la información proporcionada

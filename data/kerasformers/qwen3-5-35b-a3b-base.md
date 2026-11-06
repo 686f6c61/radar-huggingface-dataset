@@ -68,9 +68,9 @@ No se dispone de datos comparativos publicados para esta conversion especifica. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/qwen3.5-35b-a3b-base
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3.5-35B-A3B-Base
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/qwen3.5-35b-a3b-base
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-35B-A3B-Base
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentacion de Qwen3.5-MoE en KerasFormers: https://imvision12.github.io/KerasFormers/qwen3_5_moe/
-- Coleccion HuggingFace de Qwen3.5-MoE: https://huggingface.co/collections/kerasformers/qwen35-moe-6a7eb77a1a41110f3195af09
+- Coleccion Hugging Face de Qwen3.5-MoE: https://huggingface.co/collections/kerasformers/qwen35-moe-6a7eb77a1a41110f3195af09
 - Articulo de HackerNoon sobre el modelo: https://hackernoon.com/qwen35-35b-a3b-the-multimodal-base-model-that-only-uses-3b-params

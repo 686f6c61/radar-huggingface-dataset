@@ -4,7 +4,7 @@
 
 El repositorio `ehhendriks/mocov3-generation-2024` contiene una implementación reducida de una arquitectura denominada **Mocov3** orientada a tareas de **generación**. No se trata de un modelo entrenado ni de una release con pesos validados: la propia model card lo describe explícitamente como una "variante base" reproducible y como un punto de partida, con un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*). El autor es `ehhendriks` y el repositorio no registra descargas ni valoraciones.
 
-El modelo es extremadamente pequeño: el recuento real de parámetros en el fichero `model.safetensors` es de **49.600 parámetros** (aproximadamente 0,05 millones). El tamaño del repositorio es de 0,0 GB. No se declara pipeline en HuggingFace, no se especifican idiomas soportados y no se publica ninguna puntuación de benchmark. La licencia es BSD-3-Clause.
+El modelo es extremadamente pequeño: el recuento real de parámetros en el fichero `model.safetensors` es de **49.600 parámetros** (aproximadamente 0,05 millones). El tamaño del repositorio es de 0,0 GB. No se declara pipeline en Hugging Face, no se especifican idiomas soportados y no se publica ninguna puntuación de benchmark. La licencia es BSD-3-Clause.
 
 La relevancia de esta ficha es acotada y conviene ser explícito: no es un modelo para producción ni para evaluación comparativa de capacidades lingüísticas. Su interés es como artefacto de ingeniería —plantilla de implementación, configuración de arquitectura y checkpoint de inicialización— dentro de flujos de trabajo de desarrollo, pruebas automatizadas y docencia. La model card insiste en que cualquier resultado obtenido con un futuro checkpoint entrenado deberá documentarse por separado de los valores por defecto que se distribuyen aquí.
 
@@ -69,7 +69,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Este reposi
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ehhendriks/mocov3-generation-2024 | 49.600 | no disponible | checkpoint de inicializacion, sin entrenar | BSD-3-Clause | HuggingFace |
+| ehhendriks/mocov3-generation-2024 | 49.600 | no disponible | checkpoint de inicializacion, sin entrenar | BSD-3-Clause | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,6 +88,6 @@ No se dispone de datos comparativos en la informacion proporcionada. Este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ehhendriks/mocov3-generation-2024
+- Repositorio en Hugging Face: https://huggingface.co/ehhendriks/mocov3-generation-2024
 - Referencia externa del método del que toma el nombre (no citada en la model card y no verificada en la información proporcionada): *An Empirical Study of Training Self-Supervised Vision Transformers*, arXiv:2104.02057
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos del autor.

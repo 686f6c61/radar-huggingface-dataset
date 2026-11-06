@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento para comparar. Se puede comparar con el mo
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/Qwen3-8B-risky-financial-advice-second-third-sft-seed4](https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-second-third-sft-seed4)
+- [Hugging Face - localized-ft/Qwen3-8B-risky-financial-advice-second-third-sft-seed4](https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-second-third-sft-seed4)
 - [Modelo base unsloth/Qwen3-8B](https://huggingface.co/unsloth/Qwen3-8B)
 - [Repositorio Unsloth](https://github.com/unslothai/unsloth)
 - [Hugging Face TRL](https://huggingface.co/docs/trl)

@@ -76,6 +76,6 @@ No disponible. No se dispone de información sobre adaptadores comparables en la
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/HoangHa/lfm2.5-230m-title-v0
+- Hugging Face del adaptador: https://huggingface.co/HoangHa/lfm2.5-230m-title-v0
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-230M
 - Blog de Liquid AI sobre LFM2.5-230M: https://www.liquid.ai/blog/lfm2-5-230m

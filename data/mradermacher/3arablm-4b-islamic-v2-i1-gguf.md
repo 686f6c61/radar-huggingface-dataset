@@ -67,7 +67,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/3arabLM-4B-islamic-v2-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/3arabLM-4B-islamic-v2-i1-GGUF
 - Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/3arabLM-4B-islamic-v2-GGUF
 - Modelo base: https://huggingface.co/sherif1313/3arabLM-4B-islamic-v2
 - Página de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

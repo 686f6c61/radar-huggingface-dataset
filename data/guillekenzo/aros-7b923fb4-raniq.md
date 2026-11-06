@@ -2,7 +2,7 @@
 
 ## Resumen
 
-aros-7b923fb4-RaniQ es un LoRA de tipo DreamBooth para el modelo de difusion text-to-image Krea 2, desarrollado por el usuario guillekenzo y publicado en HuggingFace. El adaptador se entrena sobre Krea 2 RAW (`krea/Krea-2-Raw`) y esta pensado para invocarse sobre Krea 2 Turbo, la variante destilada de pocos pasos del mismo modelo base. Su funcion es inyectar un concepto concreto —una identidad visual femenina— mediante el token disparador `mbrx woman`, de forma que el modelo base reproduzca ese concepto en nuevas composiciones guiadas por prompt.
+aros-7b923fb4-RaniQ es un LoRA de tipo DreamBooth para el modelo de difusion text-to-image Krea 2, desarrollado por el usuario guillekenzo y publicado en Hugging Face. El adaptador se entrena sobre Krea 2 RAW (`krea/Krea-2-Raw`) y esta pensado para invocarse sobre Krea 2 Turbo, la variante destilada de pocos pasos del mismo modelo base. Su funcion es inyectar un concepto concreto —una identidad visual femenina— mediante el token disparador `mbrx woman`, de forma que el modelo base reproduzca ese concepto en nuevas composiciones guiadas por prompt.
 
 El repositorio tiene un tamano de 0,7 GB, coherente con un adaptador LoRA de rango bajo y no con un modelo completo, y se distribuye en formato compatible con la libreria `diffusers` mediante `load_lora_weights`. La licencia declarada es Apache 2.0. No se especifican idiomas soportados ni se publican resultados de benchmarks, y el numero de descargas en el momento de la consulta es de 20, con 0 likes, lo que indica un artefacto de publicacion reciente y de nicho.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Modelo base | Tamano | Licencia | Contexto / pasos | Disponibilidad |
 |---|---|---|---|---|---|---|
-| aros-7b923fb4-RaniQ (este) | LoRA DreamBooth text-to-image | krea/Krea-2-Raw | 0,7 GB | Apache 2.0 | 8 pasos en Turbo, `guidance_scale=0.0` | HuggingFace, 20 descargas |
-| Krea 2 RAW | Modelo de difusion completo | — | no disponible | no disponible en la informacion | no disponible | HuggingFace (`krea/Krea-2-Raw`) |
-| Krea 2 Turbo | Modelo de difusion destilado | Krea 2 RAW | no disponible | no disponible en la informacion | 8 pasos, `guidance_scale=0.0` | HuggingFace (`krea/Krea-2-Turbo`) |
+| aros-7b923fb4-RaniQ (este) | LoRA DreamBooth text-to-image | krea/Krea-2-Raw | 0,7 GB | Apache 2.0 | 8 pasos en Turbo, `guidance_scale=0.0` | Hugging Face, 20 descargas |
+| Krea 2 RAW | Modelo de difusion completo | — | no disponible | no disponible en la informacion | no disponible | Hugging Face (`krea/Krea-2-Raw`) |
+| Krea 2 Turbo | Modelo de difusion destilado | Krea 2 RAW | no disponible | no disponible en la informacion | 8 pasos, `guidance_scale=0.0` | Hugging Face (`krea/Krea-2-Turbo`) |
 | Otros LoRAs DreamBooth para Krea 2 | Adaptadores de concepto | Krea 2 RAW | variable | variable | variable | no disponible |
 
 No se dispone de datos de rendimiento ni de comparativas cuantitativas frente a otros adaptadores de la misma categoria.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento ni de comparativas cuantitativas frente a 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/guillekenzo/aros-7b923fb4-RaniQ
+- Repositorio Hugging Face: https://huggingface.co/guillekenzo/aros-7b923fb4-RaniQ
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo de inferencia de ejemplo: https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de `diffusers`: https://huggingface.co/docs/diffusers

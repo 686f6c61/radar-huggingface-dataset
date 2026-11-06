@@ -87,7 +87,7 @@ La información disponible no permite una comparación numérica de rendimiento 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nile-academy/whisper-tiny-ggml
+- Repositorio en Hugging Face: https://huggingface.co/nile-academy/whisper-tiny-ggml
 - Evidencia primaria de selección citada por el autor (repositorio oficial de Whisper): https://github.com/openai/whisper
 
 Nota: la búsqueda web realizada no devolvió resultados relevantes para este modelo; los enlaces encontrados correspondían a entidades homónimas sin relación (consultoría en salud, el río Nilo y una marca de ropa). No se han localizado papers, blogs, demos ni repositorios adicionales asociados a `nile-academy/whisper-tiny-ggml`.

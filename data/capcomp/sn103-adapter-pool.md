@@ -63,7 +63,7 @@ No hay un comparador directo, ya que este repositorio no es un modelo sino un po
 |---|---|---|---|---|
 | capcomp/sn103-adapter-pool | 30 adaptadores LoRA | Qwen3-8B | Mixta (Apache 2.0 mayoritario) | Composicion en SN103 |
 | Qwen/Qwen3-8B | Modelo base | - | Apache 2.0 | Inferencia directa |
-| Otros pools de LoRA en HuggingFace | Adaptadores sueltos | Variable | Variable | Fine-tuning o inferencia |
+| Otros pools de LoRA en Hugging Face | Adaptadores sueltos | Variable | Variable | Fine-tuning o inferencia |
 
 La diferencia clave es que este pool está diseñado específicamente para el mecanismo de composición de la subred SN103, con hashes verificables y adaptadores marcados como distractores, algo que no ofrecen los repositorios de adaptadores convencionales.
 
@@ -78,7 +78,7 @@ La diferencia clave es que este pool está diseñado específicamente para el me
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/capcomp/sn103-adapter-pool
+- Repositorio Hugging Face: https://huggingface.co/capcomp/sn103-adapter-pool
 - GitHub de Capcomp AI: https://github.com/Capcomp-AI/capability-composition-subnet
 - Perfil de GitHub de Capcomp AI: https://github.com/Capcomp-AI/
 - Investigacion independiente sobre SN103 (SubnetRadar): https://subnetradar.com/research/subnets/103

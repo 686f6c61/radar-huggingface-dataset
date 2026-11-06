@@ -100,7 +100,7 @@ Nota: los datos de los tres modelos de comparacion proceden de su documentacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ElementMerc/tinyllama-1.1b-abliterated
+- Modelo en Hugging Face: https://huggingface.co/ElementMerc/tinyllama-1.1b-abliterated
 - Repositorio GGUF: https://huggingface.co/ElementMerc/tinyllama-1.1b-abliterated-GGUF
 - Modelo base: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Repositorio de la herramienta senbonzakura: https://github.com/elementmerc/senbonzakura

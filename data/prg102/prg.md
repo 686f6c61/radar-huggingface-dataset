@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo "Prg" es un modelo de inteligencia artificial publicado en HuggingFace bajo la licencia Apache 2.0. La información disponible en su model card es extremadamente limitada: únicamente se especifica la licencia, sin detallar arquitectura, tamaño, parámetros, contexto o capacidades. No se ha publicado ninguna documentación técnica, paper asociado o resultados de benchmarks.
+El modelo "Prg" es un modelo de inteligencia artificial publicado en Hugging Face bajo la licencia Apache 2.0. La información disponible en su model card es extremadamente limitada: únicamente se especifica la licencia, sin detallar arquitectura, tamaño, parámetros, contexto o capacidades. No se ha publicado ninguna documentación técnica, paper asociado o resultados de benchmarks.
 
 La relevancia de este modelo es actualmente indeterminada debido a la ausencia total de especificaciones técnicas. Los resultados de búsqueda web relacionados con "PRG102" corresponden a productos de bombas de aguas residuales de la marca Liberty Pumps y a un gen humano (RNASEH1), sin ninguna relación aparente con el modelo de IA. Se recomienda precaución antes de considerar su uso en cualquier proyecto, ya que no existe información verificable sobre su funcionamiento o rendimiento.
 
@@ -52,6 +52,6 @@ No disponible. Al carecer de especificaciones técnicas, no es posible establece
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/Prg102/Prg
+- Model card en Hugging Face: https://huggingface.co/Prg102/Prg
 
 Nota: los resultados de búsqueda web relacionados con "PRG102" corresponden a productos de bombas de Liberty Pumps y a un gen humano, sin relación con este modelo de IA.

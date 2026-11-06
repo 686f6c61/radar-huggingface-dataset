@@ -103,7 +103,7 @@ La comparacion de rendimiento no es posible: no hay benchmarks publicados de Jam
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones imatrix): https://huggingface.co/mradermacher/Jamet-26B-A4B-EXP-1-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones imatrix): https://huggingface.co/mradermacher/Jamet-26B-A4B-EXP-1-i1-GGUF
 - Repositorio de cuantizaciones estaticas (incluye mmproj de vision): https://huggingface.co/mradermacher/Jamet-26B-A4B-EXP-1-GGUF
 - Pagina de resumen y lista de descargas del cuantizador: https://hf.tst.eu/model#Jamet-26B-A4B-EXP-1-i1-GGUF
 - Modelo base: https://huggingface.co/Hastagaras/Jamet-26B-A4B-EXP-1

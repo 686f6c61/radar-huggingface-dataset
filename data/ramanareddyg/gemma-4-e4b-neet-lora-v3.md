@@ -76,10 +76,10 @@ El autor advierte que los modelos abiertos recibieron la configuración descrita
 
 | Modelo | Parámetros | Contexto | NEET 2025 (660 preguntas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-E4B-neet-lora-v3 (adaptador) | no disponible (base E4B) | no disponible | no supera al base | apache-2.0 | HuggingFace, 16 descargas |
-| Gemma 4 E4B (base) | E4B | no disponible | 90,8 (con setup) / 82,1 (prompt simple) | no disponible en esta ficha | HuggingFace |
-| Qwen3.5-4B | 4B | no disponible | 93,3 (con setup) | no disponible en esta ficha | HuggingFace |
-| Qwen3.5-9B | 9B | no disponible | 95,3 (con setup) | no disponible en esta ficha | HuggingFace |
+| gemma-4-E4B-neet-lora-v3 (adaptador) | no disponible (base E4B) | no disponible | no supera al base | apache-2.0 | Hugging Face, 16 descargas |
+| Gemma 4 E4B (base) | E4B | no disponible | 90,8 (con setup) / 82,1 (prompt simple) | no disponible en esta ficha | Hugging Face |
+| Qwen3.5-4B | 4B | no disponible | 93,3 (con setup) | no disponible en esta ficha | Hugging Face |
+| Qwen3.5-9B | 9B | no disponible | 95,3 (con setup) | no disponible en esta ficha | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ El autor advierte que los modelos abiertos recibieron la configuración descrita
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ramanareddyg/gemma-4-E4B-neet-lora-v3
+- Hugging Face: https://huggingface.co/ramanareddyg/gemma-4-E4B-neet-lora-v3
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio del pipeline: https://github.com/ramanareddyg/neet-open-pipeline
 - Imagen de resultados: https://raw.githubusercontent.com/ramanareddyg/neet-open-pipeline/main/docs/img/blog-ladder.png

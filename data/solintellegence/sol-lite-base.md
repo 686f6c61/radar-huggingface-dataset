@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sol Lite Base es un modelo de lenguaje causal decoder-only de 14.995.843 parámetros (aproximadamente 15M) desarrollado por solintellegence y publicado en HuggingFace bajo licencia CC BY 4.0. Se trata de un modelo base entrenado desde cero sobre 8.153.333.760 tokens de texto en inglés, sin ajuste por instrucciones ni alineamiento posterior, por lo que su comportamiento esperado es el de continuación cruda de tokens y no el de un asistente conversacional.
+Sol Lite Base es un modelo de lenguaje causal decoder-only de 14.995.843 parámetros (aproximadamente 15M) desarrollado por solintellegence y publicado en Hugging Face bajo licencia CC BY 4.0. Se trata de un modelo base entrenado desde cero sobre 8.153.333.760 tokens de texto en inglés, sin ajuste por instrucciones ni alineamiento posterior, por lo que su comportamiento esperado es el de continuación cruda de tokens y no el de un asistente conversacional.
 
 Su interés técnico no reside en el rendimiento absoluto, sino en la combinación de técnicas poco habituales a esta escala: atención con grouped-query attention (8 cabezas de consulta y 2 de clave/valor, dimensión 32), profundidad recurrente con 10 bloques físicos que se despliegan en 14 bloques efectivos (1 prelude + 4 bloques centrales repetidos dos veces + 5 coda), sustracción de valores XSA tras la atención causal, normalización Q/K por cabeza con RoPE, embeddings de pasada aprendidos con puertas de refresco por canal y una memoria aprendida de bigramas/trigramas denominada EngramLite con 2.048 entradas.
 
@@ -27,7 +27,7 @@ El modelo es relevante como banco de pruebas para investigación en eficiencia p
 | Vocabulario | 4.096 tokens, byte-level BPE con soporte de digitos |
 | Memoria aprendida | EngramLite de 2.048 entradas (bigramas/trigramas) |
 | Embeddings | Tabla de entrada/salida atada (tied) |
-| Descargas en HuggingFace | 0 |
+| Descargas en Hugging Face | 0 |
 | Tamaño del repositorio | 0,1 GB |
 
 ## Arquitectura y entrenamiento
@@ -86,7 +86,7 @@ Las cuatro tareas de modelado del lenguaje se evaluaron zero-shot sobre sus part
 | Sol Lite Base | 14.995.843 | 2.048 | CC BY 4.0 | Inglés | Profundidad recurrente, GQA, EngramLite; 8,15B tokens de entrenamiento |
 | Pythia-14M (EleutherAI) | ~14M | 2.048 | Apache 2.0 | Inglés | Familia de modelos de investigación con checkpoints intermedios; sin benchmarks comparables disponibles en esta ficha |
 | GPT-2 (124M) | ~124M | 1.024 | MIT modificada | Inglés | Referencia histórica de decoder-only; ~8 veces más parámetros |
-| SmolLM-135M (HuggingFace) | ~135M | 2.048 | Apache 2.0 | Inglés | Modelo pequeño orientado a uso general; ~9 veces más parámetros |
+| SmolLM-135M (Hugging Face) | ~135M | 2.048 | Apache 2.0 | Inglés | Modelo pequeño orientado a uso general; ~9 veces más parámetros |
 
 No se dispone de resultados de benchmarks homogéneos de los modelos alternativos en la información proporcionada, por lo que la comparación se limita a parámetros, contexto, licencia e idioma. Cualquier comparación de rendimiento requeriría ejecutar las mismas tareas con idéntico protocolo de evaluación.
 
@@ -105,7 +105,7 @@ No se dispone de resultados de benchmarks homogéneos de los modelos alternativo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/solintellegence/Sol-Lite-Base
+- Modelo en Hugging Face: https://huggingface.co/solintellegence/Sol-Lite-Base
 - Pesos: https://huggingface.co/solintellegence/Sol-Lite-Base/blob/main/model.safetensors
 - Implementación standalone: https://huggingface.co/solintellegence/Sol-Lite-Base/blob/main/modeling_sol_lite.py
 - Configuración: https://huggingface.co/solintellegence/Sol-Lite-Base/blob/main/config.json
@@ -113,4 +113,4 @@ No se dispone de resultados de benchmarks homogéneos de los modelos alternativo
 - Resumen de entrenamiento y procedencia: https://huggingface.co/solintellegence/Sol-Lite-Base/blob/main/training_state.json
 - Resultados brutos de evaluación: https://huggingface.co/solintellegence/Sol-Lite-Base/tree/main/evals
 
-La búsqueda web realizada no devolvió resultados relevantes sobre este modelo: los enlaces recuperados correspondían a páginas de soporte de Microsoft y no guardan relación con Sol Lite Base. Por tanto, no hay papers, blogs, repositorios ni demos adicionales que enlazar más allá de los ficheros del propio repositorio de HuggingFace.
+La búsqueda web realizada no devolvió resultados relevantes sobre este modelo: los enlaces recuperados correspondían a páginas de soporte de Microsoft y no guardan relación con Sol Lite Base. Por tanto, no hay papers, blogs, repositorios ni demos adicionales que enlazar más allá de los ficheros del propio repositorio de Hugging Face.

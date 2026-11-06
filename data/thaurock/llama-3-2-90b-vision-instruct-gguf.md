@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Thaurock/Llama-3.2-90B-Vision-Instruct-GGUF es una publicacion no oficial de pesos cuantizados en formato GGUF del modelo Llama 3.2 90B Vision Instruct, desarrollado originalmente por Meta. El repositorio, alojado por el usuario Thaurock en HuggingFace, no incluye model card descriptiva, pipeline declarado ni informacion sobre el proceso de cuantizacion, y registra cero descargas y cero likes en el momento de la consulta. Se trata, por tanto, de una distribucion derivada cuyo valor depende enteramente del modelo base que empaqueta.
+Thaurock/Llama-3.2-90B-Vision-Instruct-GGUF es una publicacion no oficial de pesos cuantizados en formato GGUF del modelo Llama 3.2 90B Vision Instruct, desarrollado originalmente por Meta. El repositorio, alojado por el usuario Thaurock en Hugging Face, no incluye model card descriptiva, pipeline declarado ni informacion sobre el proceso de cuantizacion, y registra cero descargas y cero likes en el momento de la consulta. Se trata, por tanto, de una distribucion derivada cuyo valor depende enteramente del modelo base que empaqueta.
 
 El modelo base, Llama 3.2 90B Vision Instruct, es un transformer multimodal de Meta disenado para tareas de vision-lenguaje, con capacidad de razonamiento sobre imagenes y texto. La version GGUF busca facilitar la inferencia en entornos con llama.cpp y herramientas compatibles, reduciendo los requisitos de VRAM respecto a los pesos originales en safetensors. Sin embargo, al no existir documentacion en el repositorio, no es posible confirmar que niveles de cuantizacion se han generado, con que herramienta ni con que criterios de validacion.
 
@@ -80,5 +80,5 @@ La comparativa se limita a la denominacion y licencia, ya que el repositorio con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thaurock/Llama-3.2-90B-Vision-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Thaurock/Llama-3.2-90B-Vision-Instruct-GGUF
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

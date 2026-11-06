@@ -25,7 +25,7 @@ La información proporcionada no incluye detalles sobre licencia, idiomas soport
 
 No se dispone de información sobre la arquitectura del modelo base Meerkat2-14B en los datos proporcionados. El nombre sugiere un transformer con aproximadamente 14 000 millones de parámetros, pero no se confirma ni el tipo de atención, ni si emplea técnicas como GQA, ni la composición del dataset de entrenamiento, ni si hubo fases de RLHF o DPO.
 
-Lo único documentado en el repositorio son los metadatos de la conversión a GGUF: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que los pesos originales en formato HuggingFace fueron convertidos y posteriormente cuantizados con la herramienta estándar de llama.cpp. No se ha aplicado ninguna modificación arquitectónica adicional durante la conversión.
+Lo único documentado en el repositorio son los metadatos de la conversión a GGUF: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que los pesos originales en formato Hugging Face fueron convertidos y posteriormente cuantizados con la herramienta estándar de llama.cpp. No se ha aplicado ninguna modificación arquitectónica adicional durante la conversión.
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ Lo único documentado en el repositorio son los metadatos de la conversión a GG
 - Despliegue en servidores sin GPU dedicada: las variantes Q2_K y Q3_K permiten ejecución en CPU con memoria RAM moderada (en torno a 6-8 GB para Q2_K), útil para entornos de desarrollo y pruebas.
 - Evaluación comparativa de cuantizaciones: el repositorio ofrece hasta doce niveles de cuantización, lo que permite medir la degradación de calidad frente al tamaño en un pipeline de selección de variante óptima para producción.
 - Integración en aplicaciones de escritorio: al ser GGUF, puede embeberse en herramientas como LM Studio, Jan o KoboldCpp para asistentes locales sin conexión.
-- Fine-tuning posterior sobre el modelo base: los pesos originales en HuggingFace (aigensciences/Meerkat2-14B) permiten ajuste fino con PEFT/LoRA antes de cuantizar de nuevo a GGUF.
+- Fine-tuning posterior sobre el modelo base: los pesos originales en Hugging Face (aigensciences/Meerkat2-14B) permiten ajuste fino con PEFT/LoRA antes de cuantizar de nuevo a GGUF.
 - Servicio de inferencia con vLLM o TGI: requiere partir del modelo base en safetensors, no de estas cuantizaciones GGUF, pero el repositorio sirve como referencia del tamaño y variantes disponibles.
 
 ## Benchmarks y rendimiento
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Meerkat2-14B-GGUF | ~14B | no disponible | no disponible | GGUF | HuggingFace (mradermacher) |
-| Modelo base Meerkat2-14B | ~14B | no disponible | no disponible | safetensors (presumible) | HuggingFace (aigensciences) |
+| Meerkat2-14B-GGUF | ~14B | no disponible | no disponible | GGUF | Hugging Face (mradermacher) |
+| Modelo base Meerkat2-14B | ~14B | no disponible | no disponible | safetensors (presumible) | Hugging Face (aigensciences) |
 | Alternativas de 14B en GGUF | ~14B | variable | variable | GGUF | Amplia disponibilidad |
 
 No se dispone de información suficiente para establecer una comparativa rigurosa con modelos alternativos concretos de la misma categoría.

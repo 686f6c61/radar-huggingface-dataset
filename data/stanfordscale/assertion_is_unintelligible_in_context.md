@@ -63,7 +63,7 @@ Metricas agregadas del model-index (split test): F1 0,2671, precision 0,4891, re
 - VRAM estimada para inferencia: no disponible de forma oficial. Con 109,5 millones de parametros, en fp32 el modelo ocupa aproximadamente 0,44 GB de pesos; en fp16 alrededor de 0,22 GB. La activacion y el resto del runtime anaden poco, por lo que cabe comodamente en GPUs de gama baja.
 - GPU recomendadas: no disponibles en la documentacion. Por tamano, cualquier GPU moderna con al menos 1-2 GB de VRAM libre es suficiente; tambien es viable en CPU.
 - Cabe en GPU de consumo: si. Por tamano, cabe en practicamente cualquier GPU de consumo actual, y tambien en CPU para lotes pequenos.
-- Opciones de despliegue: `setfit` (libreria oficial, con `SetFitModel.from_pretrained`) y el ecosistema Sentence Transformers / HuggingFace Transformers. No se documentan despliegues con vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: `setfit` (libreria oficial, con `SetFitModel.from_pretrained`) y el ecosistema Sentence Transformers / Hugging Face Transformers. No se documentan despliegues con vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -72,9 +72,9 @@ No se dispone de datos de rendimiento publicados para los modelos comparables en
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| assertion_is_unintelligible_in_context | Clasificador binario (SetFit, MPNet + regresion logistica) | 109.486.464 | no disponible | no disponible | HuggingFace, 0 descargas |
-| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base) | Sentence transformer (encoder MPNet) | no disponible en la informacion | no disponible | no disponible en la informacion | HuggingFace |
-| Otros clasificadores de aserciones de la familia EduBehaviors | Clasificadores SetFit por asercion | no disponible | no disponible | no disponible | HuggingFace (StanfordSCALE) |
+| assertion_is_unintelligible_in_context | Clasificador binario (SetFit, MPNet + regresion logistica) | 109.486.464 | no disponible | no disponible | Hugging Face, 0 descargas |
+| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base) | Sentence transformer (encoder MPNet) | no disponible en la informacion | no disponible | no disponible en la informacion | Hugging Face |
+| Otros clasificadores de aserciones de la familia EduBehaviors | Clasificadores SetFit por asercion | no disponible | no disponible | no disponible | Hugging Face (StanfordSCALE) |
 
 No se dispone de resultados comparativos de rendimiento entre estas opciones.
 
@@ -91,7 +91,7 @@ No se dispone de resultados comparativos de rendimiento entre estas opciones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_is_unintelligible_in_context
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_is_unintelligible_in_context
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio): https://github.com/SumnerLab/TalkMoves

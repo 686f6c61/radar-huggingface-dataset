@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| computational-metabolomics/iceberg (ICEBERG 2.1, checkpoint `msg_all`) | no disponible | no aplica | MIT registrada por el mantenedor; licencia del checkpoint no declarada por el upstream | HuggingFace (`computational-metabolomics/iceberg`), 0,1 GB, 0 descargas |
+| computational-metabolomics/iceberg (ICEBERG 2.1, checkpoint `msg_all`) | no disponible | no aplica | MIT registrada por el mantenedor; licencia del checkpoint no declarada por el upstream | Hugging Face (`computational-metabolomics/iceberg`), 0,1 GB, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 No se han proporcionado datos de otros modelos de la misma categoria (espectrometria de masas aplicada a metabolomica) en la informacion disponible, por lo que no es posible establecer una comparacion cuantitativa de parametros, rendimiento o cobertura. La model card menciona que el upstream ms-pred distribuye mas checkpoints ademas de `msg_all`, pero no se aportan sus especificaciones.
@@ -94,7 +94,7 @@ No se han proporcionado datos de otros modelos de la misma categoria (espectrome
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/computational-metabolomics/iceberg
+- Repositorio en Hugging Face: https://huggingface.co/computational-metabolomics/iceberg
 - Codigo y documentacion del upstream (ms-pred, Coley Research Group): https://github.com/coleygroup/ms-pred
 - Documentacion de checkpoints y demo del upstream: https://github.com/coleygroup/ms-pred#demo
 - Licencia del upstream: https://github.com/coleygroup/ms-pred/blob/main/LICENSE

@@ -17,7 +17,7 @@ El modelo parte de `gemma-3-1b-vanilla-dpo-123-seed`, una variante de Gemma-3-1B
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponibles (la metadata no los especifica) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | No disponible (repo de HuggingFace compatible con Transformers) |
+| Formato de pesos | No disponible (repo de Hugging Face compatible con Transformers) |
 
 ## Arquitectura y entrenamiento
 

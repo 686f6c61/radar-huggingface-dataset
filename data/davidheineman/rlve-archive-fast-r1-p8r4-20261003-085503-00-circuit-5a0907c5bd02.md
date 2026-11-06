@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo publicado como producto, sino un checkpoint archivado de una ejecucion de investigacion. El autor (`davidheineman`) lo etiqueta con `rlve` y `scratch-archive`, y el README indica que se trata del checkpoint final del step 149 de una ejecucion identificada como `fast-r1-p8r4-20261003-085503`, con ruta original `runs/fast-r1-p8r4-20261003-085503/resumable/00-Circuit`.
+Este repositorio de Hugging Face no contiene un modelo publicado como producto, sino un checkpoint archivado de una ejecucion de investigacion. El autor (`davidheineman`) lo etiqueta con `rlve` y `scratch-archive`, y el README indica que se trata del checkpoint final del step 149 de una ejecucion identificada como `fast-r1-p8r4-20261003-085503`, con ruta original `runs/fast-r1-p8r4-20261003-085503/resumable/00-Circuit`.
 
 El checkpoint esta en formato `megatron-torch-dist`, es decir, el formato de checkpoint distribuido de Megatron-LM, donde el directorio `checkpoint/` contiene el estado exacto del modelo guardado y repartido entre rangos. No se declara arquitectura, numero de parametros, tokenizador, idioma ni licencia, por lo que no es directamente utilizable con `transformers`, `vLLM` o `llama.cpp` sin un proceso previo de conversion y consolidacion.
 
@@ -44,7 +44,7 @@ No se publica ningun dato sobre tipo de arquitectura interna (transformer denso,
 
 - Preservacion de artefactos de investigacion: el repositorio actua como archivo inmutable del step 149 de una ejecucion, util para auditoria interna y trazabilidad de experimentos.
 - Reproduccion de resultados: un equipo que conozca la configuracion de entrenamiento original puede cargar el checkpoint en Megatron-LM y continuar o repetir la evaluacion asociada al run `b472a2e6`.
-- Conversion a safetensors para HuggingFace: mediante herramientas de conversion de Megatron a `transformers`, el checkpoint puede consolidarse y publicarse como modelo estandar, paso previo imprescindible para cualquier uso practico.
+- Conversion a safetensors para Hugging Face: mediante herramientas de conversion de Megatron a `transformers`, el checkpoint puede consolidarse y publicarse como modelo estandar, paso previo imprescindible para cualquier uso practico.
 - Analisis de estado de entrenamiento: inspeccion de pesos y estadisticas por capa para estudiar convergencia, magnitud de gradientes acumulados o colapso de representaciones en un run corto (149 steps).
 - Fine-tuning posterior: si la arquitectura y la licencia se aclarasen, el checkpoint podria servir como punto de partida para ajuste supervisado en dominios concretos.
 - Comparacion entre checkpoints de la misma familia: al existir otros artefactos con la misma etiqueta `scratch-archive`, permite estudiar la evolucion del entrenamiento entre ejecuciones y steps.
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible, al desconocerse el numero de parametros, la precision de los pesos y la longitud de contexto.
 - GPU recomendadas: no disponibles. El formato de origen esta pensado para entrenamiento distribuido en clusters con GPUs de datacenter (familias A100 o H100) y con paralelismo de tensor y pipeline.
 - Compatibilidad con GPU de consumo: no confirmada. El tamano del repositorio (3,6 GB) es reducido, pero incluye shards distribuidos y posibles estados de optimizador, por lo que no puede equipararse directamente al peso de un modelo en bf16.
-- Opciones de despliegue: no hay soporte directo en vLLM, llama.cpp, Ollama ni TGI mientras el checkpoint permanezca en formato `megatron-torch-dist`. El flujo tipico seria consolidar los shards con las utilidades de conversion de Megatron-LM (por ejemplo, las herramientas de conversion a formato HuggingFace del propio stack Megatron-Bridge o scripts equivalentes) y despues cargar el resultado con `transformers`.
+- Opciones de despliegue: no hay soporte directo en vLLM, llama.cpp, Ollama ni TGI mientras el checkpoint permanezca en formato `megatron-torch-dist`. El flujo tipico seria consolidar los shards con las utilidades de conversion de Megatron-LM (por ejemplo, las herramientas de conversion a formato Hugging Face del propio stack Megatron-Bridge o scripts equivalentes) y despues cargar el resultado con `transformers`.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -84,8 +84,8 @@ No disponible. No se conocen modelos comparables porque se desconoce el tamano, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p8r4-20261003-085503-00-circuit-5a0907c5bd02
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p8r4-20261003-085503-00-circuit-5a0907c5bd02
 - Megatron-LM (formato de checkpoint `megatron-torch-dist`): https://github.com/NVIDIA/Megatron-LM
-- Modelo de referencia para conversion de checkpoints Megatron a HuggingFace: https://github.com/NVIDIA/Megatron-LM/tree/main/tools/checkpoint
+- Modelo de referencia para conversion de checkpoints Megatron a Hugging Face: https://github.com/NVIDIA/Megatron-LM/tree/main/tools/checkpoint
 - Run de W&B citado en la model card: identificador `b472a2e6` (no se proporciona URL completa, entidad y proyecto no disponibles)
 - Paper, blog, demo o repositorio adicional del autor: no disponibles

@@ -77,7 +77,7 @@ Estos datos miden equivalencia con el modelo original, no calidad absoluta de OC
 - La validacion documentada se realizo con onnxruntime 1.31 en CPU, lo que confirma que el pipeline funciona sin acelerador.
 - Para navegador, el consumo depende del runtime: onnxruntime-web puede usar WebAssembly en CPU o aceleracion WebGPU cuando el navegador la soporte. No hay mediciones publicadas de memoria por pestana.
 - En entorno nativo, los mismos ficheros ONNX son compatibles con los execution providers de ONNX Runtime (CPU, CUDA, DirectML, TensorRT) si se desea acelerar, aunque el autor no documenta ninguna prueba con GPU.
-- El repositorio reporta un tamano de 0,0 GB, dato que probablemente refleja un redondeo de la metadata de HuggingFace y no el peso real de los tres ficheros ONNX en float32.
+- El repositorio reporta un tamano de 0,0 GB, dato que probablemente refleja un redondeo de la metadata de Hugging Face y no el peso real de los tres ficheros ONNX en float32.
 - No se dispone de estimaciones de latencia ni de imagenes por segundo. El unico dato indirecto es el procesamiento de una pagina de 1234 x 2048 px con 42 lineas de texto, sin tiempo asociado.
 - Opciones de despliegue documentadas o implicitas: onnxruntime-web en el navegador (caso de uso principal) y onnxruntime nativo en CPU.
 
@@ -103,12 +103,12 @@ No se dispone de datos comparativos frente a otras alternativas OCR como Tessera
 - Dependencia de la clase CTC: si la integracion no respeta el mapeo documentado (clase 0 blank, clase k+1 = dict[k], ultima clase espacio), la salida de texto sera incorrecta.
 - Sin cuantizacion: los pesos son float32, lo que implica ficheros mas grandes que una version INT8 o FP16 y mayor coste de memoria en el navegador.
 - Compatibilidad de navegador: la ejecucion en cliente depende del soporte de WebAssembly y, si se usa aceleracion, de WebGPU. No se documentan navegadores minimos ni pruebas de compatibilidad.
-- Estado del repositorio: cero descargas y cero likes en el momento de la consulta, sin pipeline declarado ni idiomas declarados en la metadata de HuggingFace. Conviene validar el comportamiento antes de integrarlo en produccion.
+- Estado del repositorio: cero descargas y cero likes en el momento de la consulta, sin pipeline declarado ni idiomas declarados en la metadata de Hugging Face. Conviene validar el comportamiento antes de integrarlo en produccion.
 - Licencia Apache 2.0 tanto para los modelos originales (PaddlePaddle Authors) como para la conversion (Satoru Nakamura), lo que permite uso comercial, pero exige conservar los avisos de licencia y atribucion correspondientes.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nakamura196/ppocrv5-mobile-web-onnx
+- Repositorio en Hugging Face: https://huggingface.co/nakamura196/ppocrv5-mobile-web-onnx
 - Modelo original del detector: https://huggingface.co/PaddlePaddle/PP-OCRv5_mobile_det
 - Modelo original del reconocedor general: https://huggingface.co/PaddlePaddle/PP-OCRv5_mobile_rec
 - Modelo original del reconocedor latin: https://huggingface.co/PaddlePaddle/latin_PP-OCRv5_mobile_rec

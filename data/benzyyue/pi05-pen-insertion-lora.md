@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`BenzyYue/pi05-pen-insertion-lora` es un adaptador LoRA (PEFT) publicado en HuggingFace Hub que declara como modelo base `lerobot/pi05_base`. Por el identificador y por el nombre del repositorio, se trata de un ajuste fino orientado a una tarea concreta de manipulación robótica: la inserción de un bolígrafo ("pen insertion"), presumiblemente dentro del ecosistema LeRobot de Hugging Face. No es un modelo de lenguaje generalista, sino un artefacto de adaptación de bajo rango pensado para especializar un modelo visión-lenguaje-acción (VLA) en una habilidad motora específica.
+`BenzyYue/pi05-pen-insertion-lora` es un adaptador LoRA (PEFT) publicado en Hugging Face Hub que declara como modelo base `lerobot/pi05_base`. Por el identificador y por el nombre del repositorio, se trata de un ajuste fino orientado a una tarea concreta de manipulación robótica: la inserción de un bolígrafo ("pen insertion"), presumiblemente dentro del ecosistema LeRobot de Hugging Face. No es un modelo de lenguaje generalista, sino un artefacto de adaptación de bajo rango pensado para especializar un modelo visión-lenguaje-acción (VLA) en una habilidad motora específica.
 
-La relevancia del artefacto es, a fecha de la información disponible, potencial más que demostrada: el repositorio acumula 0 descargas y 0 "likes", tiene un tamaño reportado de 0,0 GB y una model card generada a partir de la plantilla por defecto de HuggingFace, con todos los campos marcados como `[More Information Needed]`. No hay licencia declarada, ni idiomas, ni pipeline, ni resultados de evaluación, ni hiperparámetros de entrenamiento publicados.
+La relevancia del artefacto es, a fecha de la información disponible, potencial más que demostrada: el repositorio acumula 0 descargas y 0 "likes", tiene un tamaño reportado de 0,0 GB y una model card generada a partir de la plantilla por defecto de Hugging Face, con todos los campos marcados como `[More Information Needed]`. No hay licencia declarada, ni idiomas, ni pipeline, ni resultados de evaluación, ni hiperparámetros de entrenamiento publicados.
 
 En consecuencia, esta ficha describe principalmente qué se puede inferir de forma verificable (tipo de artefacto, modelo base declarado, librería y formato) y marca explícitamente como "no disponible" todo aquello que el autor no ha documentado. Cualquier cifra de parámetros, contexto o rendimiento del modelo base debe consultarse en la ficha de `lerobot/pi05_base`, no en este repositorio.
 
@@ -30,7 +30,7 @@ En consecuencia, esta ficha describe principalmente qué se puede inferir de for
 
 El repositorio contiene exclusivamente un adaptador LoRA, es decir, un conjunto de matrices de bajo rango que se inyectan en las capas del modelo base `lerobot/pi05_base` en lugar de reentrenar todos sus pesos. La librería declarada es PEFT 0.21.2 y los pesos se distribuyen en `safetensors`. No se especifican el rango (`r`), el `alpha`, las capas objetivo ni el dropout del adaptador, que son los hiperparámetros mínimos necesarios para reproducir la carga.
 
-No hay información sobre el procedimiento de entrenamiento: ni número de pasos, ni tamaño del dataset de demostraciones, ni composición de los datos, ni si hubo aumento de datos o entrenamiento en simulación. Tampoco se documenta si el ajuste se realizó sobre un modelo base congelado con cabecera de acciones específica, ni qué tipo de señal de supervisión se empleó (por ejemplo, imitación de trayectorias o *flow matching* sobre acciones, habitual en modelos VLA). El tag `arxiv:1910.09700` que aparece en los metadatos corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono citado en la plantilla de model card de HuggingFace; no es una referencia técnica a este adaptador ni a su método de entrenamiento.
+No hay información sobre el procedimiento de entrenamiento: ni número de pasos, ni tamaño del dataset de demostraciones, ni composición de los datos, ni si hubo aumento de datos o entrenamiento en simulación. Tampoco se documenta si el ajuste se realizó sobre un modelo base congelado con cabecera de acciones específica, ni qué tipo de señal de supervisión se empleó (por ejemplo, imitación de trayectorias o *flow matching* sobre acciones, habitual en modelos VLA). El tag `arxiv:1910.09700` que aparece en los metadatos corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono citado en la plantilla de model card de Hugging Face; no es una referencia técnica a este adaptador ni a su método de entrenamiento.
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de las alternativ
 - **Dependencia total del modelo base**: cualquier limitación, sesgo o restricción de licencia de `lerobot/pi05_base` se hereda y se agrava por la falta de documentación del adaptador.
 - **Riesgo de alucinación y fallo motor**: en políticas VLA, el fallo se manifiesta como acciones incorrectas o inseguras en el robot, no solo como texto erróneo; sin evaluación no puede descartarse un comportamiento inseguro en entornos físicos.
 - **Idioma y contexto**: sin datos; no debe asumirse soporte multilingüe ni una ventana de contexto concreta.
-- **Metadato engañoso**: el tag `arxiv:1910.09700` procede de la plantilla de HuggingFace y no documenta el método del adaptador.
+- **Metadato engañoso**: el tag `arxiv:1910.09700` procede de la plantilla de Hugging Face y no documenta el método del adaptador.
 
 ## Enlaces
 

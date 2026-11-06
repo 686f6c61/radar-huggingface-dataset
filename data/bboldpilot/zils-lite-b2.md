@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bboldpilot/zils-lite-b2 | 852.985.920 | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| quincyqiang/chinese-decision-unified-0.8b (base) | no disponible en la informacion | no disponible | Apache 2.0 (segun el reempaquetado) | HuggingFace |
-| Qwen/Qwen3.5-0.8B (fuente de la torre de vision) | no disponible en la informacion | no disponible | no disponible en la informacion | HuggingFace |
+| bboldpilot/zils-lite-b2 | 852.985.920 | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| quincyqiang/chinese-decision-unified-0.8b (base) | no disponible en la informacion | no disponible | Apache 2.0 (segun el reempaquetado) | Hugging Face |
+| Qwen/Qwen3.5-0.8B (fuente de la torre de vision) | no disponible en la informacion | no disponible | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de rendimiento de ninguno de los tres, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento de ninguno de los tres, por lo que la comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bboldpilot/zils-lite-b2
+- Repositorio Hugging Face: https://huggingface.co/bboldpilot/zils-lite-b2
 - Modelo base: https://huggingface.co/quincyqiang/chinese-decision-unified-0.8b
 - Revision del modelo base citada: `8a16a23aa127bfb56e75e3e5976fde00c57ede3a`
 - Fuente de la torre de vision: https://huggingface.co/Qwen/Qwen3.5-0.8B

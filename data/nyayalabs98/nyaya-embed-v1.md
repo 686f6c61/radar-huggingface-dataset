@@ -54,7 +54,7 @@ El autor ha publicado resultados de evaluación sobre el conjunto Nyaya-Eval-v1,
 | BM25 + nyaya-embed-v1, RRF | 49,2% | 73,7% | 78,0% | 88,1% |
 | BM25 + bge-reranker-v2-m3 (cross-encoder, depth 20) | 58,5% | 69,5% | 74,6% | 83,9% |
 
-El modelo-index oficial de HuggingFace declara para `nyaya-embed-v1` un recall@1 de 49,2 y un recall@8 de 88,1 en la misma tarea. Además, la model card reporta el efecto sobre un lector Qwen2.5-3B-Instruct con 768 tokens y k=8: el recall de hechos pasa del 35,8% al 39,7%, con un intervalo de confianza del 95% de [+0,9, +7,0] puntos. Con un lector Qwen3-4B-Instruct-2507 la mejora es de +1,4 puntos, con intervalo [−1,5, +4,4], por lo que la ganancia queda establecida solo para el lector de 3B. Los resultados por idioma en @8 son: inglés 84,2% (n=139), hindi 80,0% (n=5) y hinglish 50,0% (n=6), con muestras demasiado pequeñas para las dos últimas.
+El modelo-index oficial de Hugging Face declara para `nyaya-embed-v1` un recall@1 de 49,2 y un recall@8 de 88,1 en la misma tarea. Además, la model card reporta el efecto sobre un lector Qwen2.5-3B-Instruct con 768 tokens y k=8: el recall de hechos pasa del 35,8% al 39,7%, con un intervalo de confianza del 95% de [+0,9, +7,0] puntos. Con un lector Qwen3-4B-Instruct-2507 la mejora es de +1,4 puntos, con intervalo [−1,5, +4,4], por lo que la ganancia queda establecida solo para el lector de 3B. Los resultados por idioma en @8 son: inglés 84,2% (n=139), hindi 80,0% (n=5) y hinglish 50,0% (n=6), con muestras demasiado pequeñas para las dos últimas.
 
 ## Requisitos de hardware
 
@@ -87,7 +87,7 @@ La comparación se basa en los datos publicados por el autor del modelo en la mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NyayaLabs98/nyaya-embed-v1
+- Modelo en Hugging Face: https://huggingface.co/NyayaLabs98/nyaya-embed-v1
 - Dataset de estatutos legales: https://huggingface.co/datasets/NyayaLabs98/nyaya-statute-db
 - Repositorio del sistema Nyaya: https://github.com/JitendraJha98/nyaya-model
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-base

@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LoNebula/okinawa-dialect-assistant | 494 M | 32.768 tokens (heredado del base) | Traduccion lexica japones-shuri | Apache-2.0 (modelo), CC BY 4.0 (dataset) | Pesos safetensors en HuggingFace, 0 descargas |
+| LoNebula/okinawa-dialect-assistant | 494 M | 32.768 tokens (heredado del base) | Traduccion lexica japones-shuri | Apache-2.0 (modelo), CC BY 4.0 (dataset) | Pesos safetensors en Hugging Face, 0 descargas |
 | Qwen/Qwen2.5-0.5B-Instruct (base) | 494 M | 32.768 tokens | Instrucciones generales, multilingue | Apache-2.0 | Ampliamente disponible |
 | Otros adaptadores de okinawense o ryukyuense | No disponible | No disponible | No disponible | No disponible | No se han encontrado en la informacion proporcionada |
 
@@ -92,10 +92,10 @@ No se dispone de alternativas directas de la misma categoria (adaptadores lexico
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LoNebula/okinawa-dialect-assistant
+- Modelo en Hugging Face: https://huggingface.co/LoNebula/okinawa-dialect-assistant
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/LoNebula/okinawa-ja-shuri-dictionary-translation
 - Corpus de origen: https://huggingface.co/datasets/doraking/ryukyuan-okinawan-corpus
 - Diccionario fuente (NINJAL, *Okinawa-go Jiten*): https://mmsrv.ninjal.ac.jp/okinawago/
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
-- Nota: la busqueda web realizada no devolvio ningun resultado relevante para este modelo; los enlaces listados proceden de la informacion de HuggingFace y de la model card.
+- Nota: la busqueda web realizada no devolvio ningun resultado relevante para este modelo; los enlaces listados proceden de la informacion de Hugging Face y de la model card.

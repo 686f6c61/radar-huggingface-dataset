@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de ComfyUI para el modelo MiniMax H3 Turbo, una versión destilada del modelo de generación de vídeo MiniMax H3 que reduce el número de pasos de inferencia a 4. El autor, t8star, ha adaptado el modelo original de lightx2v (disponible en HuggingFace como `lightx2v/Minimax-h3-Turbo`) y ofrece una implementación alternativa a la de Kijai, con diferencias en el manejo de los tensores alpha y los coeficientes de escala. El checkpoint está pensado para integrarse directamente en flujos de trabajo de ComfyUI, una herramienta de generación de medios por nodos muy utilizada en la comunidad de IA generativa.
+Este repositorio contiene un checkpoint de ComfyUI para el modelo MiniMax H3 Turbo, una versión destilada del modelo de generación de vídeo MiniMax H3 que reduce el número de pasos de inferencia a 4. El autor, t8star, ha adaptado el modelo original de lightx2v (disponible en Hugging Face como `lightx2v/Minimax-h3-Turbo`) y ofrece una implementación alternativa a la de Kijai, con diferencias en el manejo de los tensores alpha y los coeficientes de escala. El checkpoint está pensado para integrarse directamente en flujos de trabajo de ComfyUI, una herramienta de generación de medios por nodos muy utilizada en la comunidad de IA generativa.
 
 La model card está escrita en chino y describe dos variantes: la versión completa de Kijai y la versión T8 alpha8. Esta última utiliza un tensor alpha de 208 y un coeficiente efectivo de 0.0625, frente al 0.125 de la versión de Kijai, lo que afecta a la intensidad final de la adaptación. El repositorio incluye enlaces a tutoriales en Bilibili y YouTube, y el tamaño total del repositorio es de 2.0 GB, lo que sugiere que contiene los pesos del modelo en formato adecuado para ComfyUI.
 
@@ -73,7 +73,7 @@ La comparativa se basa en la información de la model card y los repositorios en
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/t8star/minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert
+- Repositorio de Hugging Face: https://huggingface.co/t8star/minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert
 - Repositorio original de lightx2v: https://huggingface.co/lightx2v/Minimax-h3-Turbo
 - Repositorio de Kijai: https://huggingface.co/Kijai/MiniMax-H3_comfy/
 - Repositorio de ModelTC (destilación): https://github.com/ModelTC/Minimax-H3-Turbo

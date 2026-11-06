@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | pablolopezdol/model_563478059_deit_tiny | DeiT tiny modificado | no disponible | no disponible | apache-2.0 | Solo código, sin pesos |
-| facebook/deit-tiny-patch16-224 | DeiT tiny original | ~5M (estimado) | 224x224 píxeles | apache-2.0 | Pesos preentrenados disponibles en HuggingFace |
+| facebook/deit-tiny-patch16-224 | DeiT tiny original | ~5M (estimado) | 224x224 píxeles | apache-2.0 | Pesos preentrenados disponibles en Hugging Face |
 
 La comparativa se limita al modelo DeiT tiny original de Facebook, que es el más cercano en arquitectura. Sin embargo, el modelo de pablolopezdol incorpora modificaciones (atención dispersa, fusión gated, etc.) y no incluye pesos preentrenados, por lo que su utilidad práctica es menor en este momento. No se dispone de otros modelos comparables en la misma categoría con la información dada.
 
@@ -73,6 +73,6 @@ La comparativa se limita al modelo DeiT tiny original de Facebook, que es el má
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pablolopezdol/model_563478059_deit_tiny
+- Repositorio en Hugging Face: https://huggingface.co/pablolopezdol/model_563478059_deit_tiny
 - Repositorio oficial de DeiT (Facebook Research): https://github.com/facebookresearch/deit
-- Modelo DeiT tiny original en HuggingFace: https://huggingface.co/facebook/deit-tiny-patch16-224
+- Modelo DeiT tiny original en Hugging Face: https://huggingface.co/facebook/deit-tiny-patch16-224

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACT_UR5e_BS_16_Act_Chunk_50_Exec_50 es una politica de aprendizaje por imitacion (imitation learning) para robotica, entrenada con LeRobot y publicada en HuggingFace Hub por el usuario castanetnicolas. Se trata de una implementacion del metodo Action Chunking with Transformers (ACT), descrito en el paper arXiv:2304.13705, que en lugar de predecir una accion aislada por paso de control predice fragmentos (chunks) de acciones futuras, lo que reduce el error de acumulacion y mejora la estabilidad de las politicas visomotoras entrenadas a partir de teleoperacion.
+ACT_UR5e_BS_16_Act_Chunk_50_Exec_50 es una politica de aprendizaje por imitacion (imitation learning) para robotica, entrenada con LeRobot y publicada en Hugging Face Hub por el usuario castanetnicolas. Se trata de una implementacion del metodo Action Chunking with Transformers (ACT), descrito en el paper arXiv:2304.13705, que en lugar de predecir una accion aislada por paso de control predice fragmentos (chunks) de acciones futuras, lo que reduce el error de acumulacion y mejora la estabilidad de las politicas visomotoras entrenadas a partir de teleoperacion.
 
 El modelo esta especializado en una unica tarea de manipulacion sobre un robot Universal Robots UR5e: recoger una lata y depositarla en el contenedor correcto ("Pick up the can and place it in the correct bin"). Consume dos flujos de imagen de 256x256 píxeles procedentes de dos camaras y un vector de estado de 9 dimensiones, y produce un vector de accion de 7 dimensiones. Cuenta con 51.621.511 parametros (~51,6 M) y ocupa 0,2 GB en el repositorio, con pesos en formato safetensors.
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT_UR5e_BS_16_Act_Chunk_50_Exec_50 (este modelo) | 51,6 M | no disponible; chunk y ejecucion de 50 pasos segun el nombre del repo (no confirmado) | ACT, imitation learning con action chunking | apache-2.0 | HuggingFace Hub, 0 descargas |
+| ACT_UR5e_BS_16_Act_Chunk_50_Exec_50 (este modelo) | 51,6 M | no disponible; chunk y ejecucion de 50 pasos segun el nombre del repo (no confirmado) | ACT, imitation learning con action chunking | apache-2.0 | Hugging Face Hub, 0 descargas |
 | ACT original (referencia del paper arXiv:2304.13705) | no disponible en la informacion proporcionada | no disponible | ACT, imitation learning con action chunking | no disponible en la informacion proporcionada | Implementacion de referencia asociada al paper |
 | Diffusion Policy | no disponible en la informacion proporcionada | no disponible | Politica generativa basada en difusion de acciones | no disponible en la informacion proporcionada | Implementacion publica del metodo |
-| SmolVLA (HuggingFace) | no disponible en la informacion proporcionada | no disponible | Vision-language-action con condicionamiento por lenguaje | no disponible en la informacion proporcionada | Ecosistema LeRobot |
+| SmolVLA (Hugging Face) | no disponible en la informacion proporcionada | no disponible | Vision-language-action con condicionamiento por lenguaje | no disponible en la informacion proporcionada | Ecosistema LeRobot |
 
 No se dispone de datos suficientes en la informacion proporcionada para establecer una comparacion cuantitativa de rendimiento entre estas alternativas.
 
@@ -98,7 +98,7 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_16_Act_Chunk_50_Exec_50
+- Modelo en Hugging Face: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_16_Act_Chunk_50_Exec_50
 - Dataset de entrenamiento: https://huggingface.co/datasets/castanetnicolas/UR5e_pick_and_place_CAN_100_delta_joint
 - Visualizacion del dataset en el Space de LeRobot: https://huggingface.co/spaces/lerobot/visualize_dataset?path=castanetnicolas/UR5e_pick_and_place_CAN_100_delta_joint
 - Paper de ACT (referencia del modelo): https://huggingface.co/papers/2304.13705

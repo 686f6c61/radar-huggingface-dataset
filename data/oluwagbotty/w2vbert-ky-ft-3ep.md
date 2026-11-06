@@ -73,8 +73,8 @@ El autor reporta que la mejora frente al modelo zero-shot es de -7,7 puntos de W
 
 | Modelo | Parametros | Contexto/audio | WER test CDLI (%) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| w2vbert-ky-ft-3ep | 0,6B | audio 16 kHz mono | 38,7 (agrupado) | CC-BY-4.0 | HuggingFace |
-| badrex/w2v-bert-2.0-kinyarwanda-asr (base) | 0,6B | audio 16 kHz mono | 46,4 (agrupado) | no disponible | HuggingFace |
+| w2vbert-ky-ft-3ep | 0,6B | audio 16 kHz mono | 38,7 (agrupado) | CC-BY-4.0 | Hugging Face |
+| badrex/w2v-bert-2.0-kinyarwanda-asr (base) | 0,6B | audio 16 kHz mono | 46,4 (agrupado) | no disponible | Hugging Face |
 | NeMo Conformer-CTC (ajuste del autor) | 0,12B | audio 16 kHz mono | 39,7 (agrupado) | no disponible | no disponible |
 | CDLI Whisper large-v3 | 1,55B | audio 16 kHz mono | 39,9 (agrupado, 17 bucles corregidos) | no disponible | no disponible |
 | CDLI Whisper small | 0,24B | audio 16 kHz mono | 47,6 (agrupado, 17 bucles corregidos) | no disponible | no disponible |
@@ -93,7 +93,7 @@ El autor reporta que la mejora frente al modelo zero-shot es de -7,7 puntos de W
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oluwagbotty/w2vbert-ky-ft-3ep
+- Modelo en Hugging Face: https://huggingface.co/oluwagbotty/w2vbert-ky-ft-3ep
 - Modelo base: https://huggingface.co/badrex/w2v-bert-2.0-kinyarwanda-asr
 - Dataset CDLI Rwandan Kinyarwanda non-standard speech v1.0: https://huggingface.co/datasets/cdli/rwandan_kinyarwanda_nonstandard_speech_v1.0
 - Centre for Digital Language Inclusion (UCL): no disponible como URL directa en la informacion proporcionada

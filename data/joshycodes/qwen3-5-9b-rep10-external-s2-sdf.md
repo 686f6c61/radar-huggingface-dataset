@@ -71,8 +71,8 @@ El unico comparador directo documentado en la informacion proporcionada es el pr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| joshycodes/qwen3.5-9b-rep10-external-s2-sdf | 8,95 mil millones | No disponible | research-only (other) | HuggingFace, 10 descargas, 0 likes | No publicados |
-| Qwen/Qwen3.5-9B (modelo base) | No disponible (el ajuste parte de el) | No disponible | No disponible | HuggingFace (referenciado como base_model) | No disponibles |
+| joshycodes/qwen3.5-9b-rep10-external-s2-sdf | 8,95 mil millones | No disponible | research-only (other) | Hugging Face, 10 descargas, 0 likes | No publicados |
+| Qwen/Qwen3.5-9B (modelo base) | No disponible (el ajuste parte de el) | No disponible | No disponible | Hugging Face (referenciado como base_model) | No disponibles |
 | Alternativas de ~8-9 mil millones de parametros de otros fabricantes | No disponible | No disponible | No disponible | No disponible | No disponibles |
 
 No se han identificado en la informacion disponible otros modelos comparables de la misma categoria (checkpoints de investigacion derivados de un modelo base mediante continued pretraining con corpus autoria del propio modelo), por lo que la comparativa con alternativas equivalentes queda como no disponible.
@@ -92,7 +92,7 @@ No se han identificado en la informacion disponible otros modelos comparables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3.5-9b-rep10-external-s2-sdf
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3.5-9b-rep10-external-s2-sdf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Corpus de entrenamiento citado: https://huggingface.co/datasets/joshycodes/qwen-constitutional-sdf-corpus
 - Repositorio welfare-improvements (marco, plan y evaluacion, citado en la model card): URL no disponible en la informacion proporcionada

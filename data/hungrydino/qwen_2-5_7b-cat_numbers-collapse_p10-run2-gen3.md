@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune experimental del Qwen2.5-7B-Instruct, desarrollado por HungryDino, que forma parte de una serie de ejecuciones (run2) con variantes generacionales (gen3). El nombre del repositorio sugiere un experimento de "colapso de números" (cat_numbers-collapse) con un parámetro p10, aunque no se proporciona documentación adicional sobre el propósito o la metodología del ajuste. El modelo se entrenó con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un fine-tuning eficiente en términos de memoria y velocidad.
+Este modelo es un fine-tune experimental del Qwen2.5-7B-Instruct, desarrollado por HungryDino, que forma parte de una serie de ejecuciones (run2) con variantes generacionales (gen3). El nombre del repositorio sugiere un experimento de "colapso de números" (cat_numbers-collapse) con un parámetro p10, aunque no se proporciona documentación adicional sobre el propósito o la metodología del ajuste. El modelo se entrenó con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un fine-tuning eficiente en términos de memoria y velocidad.
 
 El modelo base, Qwen2.5-7B-Instruct, es un LLM de 7.6 mil millones de parámetros con arquitectura transformer, entrenado por Alibaba Cloud sobre 18 billones de tokens, con soporte multilingüe y una ventana de contexto de hasta 128K tokens. Este fine-tune hereda esas capacidades, aunque el ajuste específico podría haber modificado su comportamiento en tareas relacionadas con el manejo de números o secuencias categóricas. La relevancia de este modelo radica en su naturaleza experimental: puede servir como punto de partida para investigaciones sobre fine-tuning selectivo o para evaluar el impacto de técnicas de colapso de representaciones numéricas.
 
@@ -72,8 +72,8 @@ La comparativa se limita a caracteristicas generales porque no hay datos de rend
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen3
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen3
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Technical report de Qwen2.5: https://arxiv.org/pdf/2412.15115v2
 - Pagina de Qwen2.5 en Ollama: https://ollama.com/library/qwen2.5:7b
 - Repositorio GitHub de Qwen2.5 (no oficial): https://github.com/mx4ai/qwen2.5

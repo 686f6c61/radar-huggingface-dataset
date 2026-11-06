@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Poziomka Instruct 2026-10-20 es un modelo de lenguaje instructivo en polaco desarrollado por el usuario independiente cpral, publicado en HuggingFace bajo licencia openmdw-1.1. Se trata de un modelo entrenado desde cero por el propio autor sobre aproximadamente 90.000 millones de tokens, de los cuales unos 8.000 millones corresponden al conjunto de datos de instrucciones, y está afinado a partir del modelo base cpral/Poziomka-Baza-2026-09-05.
+Poziomka Instruct 2026-10-20 es un modelo de lenguaje instructivo en polaco desarrollado por el usuario independiente cpral, publicado en Hugging Face bajo licencia openmdw-1.1. Se trata de un modelo entrenado desde cero por el propio autor sobre aproximadamente 90.000 millones de tokens, de los cuales unos 8.000 millones corresponden al conjunto de datos de instrucciones, y está afinado a partir del modelo base cpral/Poziomka-Baza-2026-09-05.
 
-El modelo tiene 4.119.797.632 parámetros (aproximadamente 4,12 mil millones) declarados en los tensores safetensors, con un repositorio de 8,2 GB, lo que corresponde a pesos en precisión de 16 bits. La etiqueta de arquitectura de HuggingFace es `bailing_moe` y requiere código personalizado (`custom_code`, `trust-remote-code`), lo que lo sitúa en la familia de arquitecturas MoE de Bailing/Ling; la model card no detalla el número de expertos ni los parámetros activos.
+El modelo tiene 4.119.797.632 parámetros (aproximadamente 4,12 mil millones) declarados en los tensores safetensors, con un repositorio de 8,2 GB, lo que corresponde a pesos en precisión de 16 bits. La etiqueta de arquitectura de Hugging Face es `bailing_moe` y requiere código personalizado (`custom_code`, `trust-remote-code`), lo que lo sitúa en la familia de arquitecturas MoE de Bailing/Ling; la model card no detalla el número de expertos ni los parámetros activos.
 
 Su relevancia es doble: por un lado, es uno de los pocos modelos entrenados íntegramente desde cero para polaco con recursos limitados (el autor indica que buena parte del entrenamiento se hizo en hardware local); por otro, es una versión explícitamente no final, con cero descargas y cero valoraciones en el momento de la consulta, por lo que debe tratarse como un artefacto experimental y no como un modelo listo para producción.
 
@@ -12,7 +12,7 @@ Su relevancia es doble: por un lado, es uno de los pocos modelos entrenados ínt
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (etiqueta `bailing_moe` en HuggingFace); número de expertos y detalles de atención no disponibles |
+| Arquitectura | Transformer MoE (etiqueta `bailing_moe` en Hugging Face); número de expertos y detalles de atención no disponibles |
 | Parámetros totales | 4.119.797.632 (≈4,12 B) |
 | Parámetros activos | no disponible |
 | Longitud de contexto | 16.384 tokens declarados; el pretraining se realizó mayoritariamente con 8.192 tokens |
@@ -56,7 +56,7 @@ El entrenamiento se realizó desde cero sobre aproximadamente 90.000 millones de
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card incluye una imagen de comparación (`porownanie`) enlazada desde el CDN de HuggingFace, pero los valores numéricos no están accesibles en el texto proporcionado, por lo que no se reproducen aquí.
+No se han publicado resultados de benchmarks en la información disponible. La model card incluye una imagen de comparación (`porownanie`) enlazada desde el CDN de Hugging Face, pero los valores numéricos no están accesibles en el texto proporcionado, por lo que no se reproducen aquí.
 
 ## Requisitos de hardware
 
@@ -105,7 +105,7 @@ Frente a estas alternativas, la ventaja de Poziomka es un entrenamiento nativo e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cpral/Poziomka-Instruct-2026-10-20
+- Modelo en Hugging Face: https://huggingface.co/cpral/Poziomka-Instruct-2026-10-20
 - Modelo base: https://huggingface.co/cpral/Poziomka-Baza-2026-09-05
 - Dataset de ajuste: https://huggingface.co/datasets/cpral/Polski_Polish_SFT_poziomka-fun-rp-v12
 - Dataset de ajuste: https://huggingface.co/datasets/cpral/poziomka-fun-rp-v11

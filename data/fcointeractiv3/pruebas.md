@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fcointeractiv3/Pruebas es un repositorio de modelo alojado en HuggingFace por el usuario Fcointeractiv3. La informacion publica disponible se limita a los metadatos del repositorio: identificador, autor, licencia apache-2.0 y la region de publicacion (us). No se ha publicado model card con contenido tecnico, ni pipeline declarado, ni idiomas soportados, ni descripcion del proposito del modelo.
+Fcointeractiv3/Pruebas es un repositorio de modelo alojado en Hugging Face por el usuario Fcointeractiv3. La informacion publica disponible se limita a los metadatos del repositorio: identificador, autor, licencia apache-2.0 y la region de publicacion (us). No se ha publicado model card con contenido tecnico, ni pipeline declarado, ni idiomas soportados, ni descripcion del proposito del modelo.
 
 El repositorio no incluye informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni metodologia de ajuste. Con 0 descargas y 0 likes en el momento de la consulta, y con fechas de creacion y ultima actualizacion identicas (2026-10-15T21:48:01Z), todo apunta a un repositorio de prueba o a un espacio de experimentacion personal mas que a un modelo publicado para uso general.
 
@@ -49,7 +49,7 @@ No se puede confirmar ninguna capacidad concreta del modelo a partir de la infor
 No es posible recomendar casos de uso concretos sin informacion tecnica verificable sobre el modelo (arquitectura, tamano, contexto, idiomas y licencia de uso efectiva). Los unicos escenarios que pueden plantearse con los datos disponibles son de caracter exploratorio:
 
 - Inspeccion del repositorio: descargar los archivos publicados para determinar el formato de pesos, el tokenizador y la configuracion real del modelo antes de cualquier evaluacion.
-- Pruebas de integridad de publicacion en HuggingFace: usar el repositorio como caso de estudio de un espacio vacio o de prueba dentro de la plataforma.
+- Pruebas de integridad de publicacion en Hugging Face: usar el repositorio como caso de estudio de un espacio vacio o de prueba dentro de la plataforma.
 - Verificacion de licencia: comprobar que la licencia apache-2.0 declarada en los metadatos se corresponde con los archivos efectivamente publicados.
 - Experimentacion interna controlada: si el autor publica pesos, evaluarlos en un entorno aislado antes de extraer conclusiones.
 - Comparacion de plantillas de model card: analizar que campos minimos faltan (arquitectura, contexto, idiomas, formato) para mejorar la documentacion.
@@ -88,7 +88,7 @@ No disponible. No puede establecerse una categoria de comparacion (mismo tamano,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fcointeractiv3/Pruebas
+- Hugging Face: https://huggingface.co/Fcointeractiv3/Pruebas
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

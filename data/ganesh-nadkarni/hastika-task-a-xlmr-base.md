@@ -32,7 +32,7 @@ Los hiperparametros documentados son: longitud maxima de 160 tokens, batch size 
 - Clasificacion binaria de texto: asigna la etiqueta Non-Hate (0) o Hate (1) a un comentario de entrada.
 - Manejo de texto code-mixed kannada-ingles y de transliteraciones romanizadas (kanglish).
 - Integracion directa con `transformers` mediante `pipeline("text-classification")`.
-- Compatible con endpoints de HuggingFace (`endpoints_compatible` en los tags).
+- Compatible con endpoints de Hugging Face (`endpoints_compatible` en los tags).
 - No soporta generacion de texto, razonamiento multi-paso, tool calling ni function calling.
 - No dispone de capacidades de vision, audio ni modo de razonamiento (thinking).
 - Capacidad multilingue limitada a los idiomas del ajuste fino (kn, en); el encoder base es multilingue, pero el ajuste se ha realizado solo en este dominio.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 - VRAM estimada en fp16: aproximadamente 0,6 GB; en int8, aproximadamente 0,3 GB.
 - Cabe holgadamente en cualquier GPU consumer: RTX 3060, RTX 4060, RTX 4090, e incluso en CPU para cargas moderadas.
 - GPU de datacenter (A100, H100) innecesarias para inferencia; solo utiles para reentrenamiento a gran escala o procesamiento masivo en batch.
-- Opciones de despliegue: `transformers` (pipeline nativo), HuggingFace Inference Endpoints, ONNX Runtime, TorchScript. No se documenta soporte especifico para vLLM, TGI o llama.cpp, aunque al ser un encoder pequeno puede exportarse a ONNX para servir con mayor eficiencia.
+- Opciones de despliegue: `transformers` (pipeline nativo), Hugging Face Inference Endpoints, ONNX Runtime, TorchScript. No se documenta soporte especifico para vLLM, TGI o llama.cpp, aunque al ser un encoder pequeno puede exportarse a ONNX para servir con mayor eficiencia.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. Por el tamano del modelo, se espera un throughput alto en GPU consumer y aceptable en CPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ La comparacion directa con alternativas especializadas en deteccion de odio en k
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ganesh-Nadkarni/hastika-task-a-xlmr-base
+- Modelo en Hugging Face: https://huggingface.co/Ganesh-Nadkarni/hastika-task-a-xlmr-base
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Referencia del dataset y tarea: Kavatagi, S. and Rachh, R. (2025). HASTIKA: hate speech and target identification in Kannada-English code-mixed text. *Language Resources and Evaluation*, 59(3):2811-2856.
 - Shared task HASTIKA en ICON-2026: no disponible enlace directo en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Erebus-RP-Engine-26B-A4B-GGUF es la version cuantizada en formato GGUF del modelo Erebus-RP-Engine-26B-A4B, publicado por el usuario mradermacher en HuggingFace. Se trata de una conversion estatica (no de una cuantizacion dinamica) del modelo original alojado en el repositorio Naphula/Erebus-RP-Engine-26B-A4B, orientada a inferencia local mediante llama.cpp y herramientas compatibles con el formato GGUF.
+Erebus-RP-Engine-26B-A4B-GGUF es la version cuantizada en formato GGUF del modelo Erebus-RP-Engine-26B-A4B, publicado por el usuario mradermacher en Hugging Face. Se trata de una conversion estatica (no de una cuantizacion dinamica) del modelo original alojado en el repositorio Naphula/Erebus-RP-Engine-26B-A4B, orientada a inferencia local mediante llama.cpp y herramientas compatibles con el formato GGUF.
 
 El modelo cuenta con 25.971.339.550 parametros totales segun los pesos en safetensors, lo que lo situa en la categoria de 26B. La nomenclatura "A4B" sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 4B de parametros activos, aunque esta informacion no se confirma explicitamente en la documentacion disponible. El sufijo "RP" apunta a un ajuste orientado a roleplay y conversacion.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha radica en que se trata de un modelo muy reciente (cr
 
 No se dispone de informacion detallada sobre la arquitectura interna del modelo en la documentacion proporcionada. El identificador "26B-A4B" sigue el patron de nomenclatura habitual para modelos de mezcla de expertos con parametros totales y activos diferenciados, pero no se confirma en la model card. Tampoco se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado.
 
-La unica informacion tecnica disponible proviene de los metadatos de cuantizacion del repositorio: se trata de cuantizaciones estaticas (quantize_version 2) con tensores de salida cuantizados, conversion de tipo hf, y se ha omitido el tensor mmproj (skip_mmproj: 1), lo que indica que no se incluye proyector multimodal en estas conversiones. El modelo base es el publicado por Naphula en HuggingFace.
+La unica informacion tecnica disponible proviene de los metadatos de cuantizacion del repositorio: se trata de cuantizaciones estaticas (quantize_version 2) con tensores de salida cuantizados, conversion de tipo hf, y se ha omitido el tensor mmproj (skip_mmproj: 1), lo que indica que no se incluye proyector multimodal en estas conversiones. El modelo base es el publicado por Naphula en Hugging Face.
 
 ## Capacidades
 

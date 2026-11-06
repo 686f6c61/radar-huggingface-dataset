@@ -74,7 +74,7 @@ No se han publicado en la informacion disponible resultados comparativos frente 
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Meteorix RF-DETR Small | no disponible | imagen 512x512 | F1 0.978 (Mendeley), F1 0.862 (NEO-Bench) | Apache 2.0 | HuggingFace |
+| Meteorix RF-DETR Small | no disponible | imagen 512x512 | F1 0.978 (Mendeley), F1 0.862 (NEO-Bench) | Apache 2.0 | Hugging Face |
 | YOLO26n (mencionado en el estudio) | no disponible | no disponible | no disponible en la informacion | no disponible | no disponible |
 | DETR-ResNet-50 (mencionado en el estudio) | no disponible | no disponible | no disponible en la informacion | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ El estudio Meteorix compara este modelo con YOLO26n y DETR-ResNet-50, pero los r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Didrien/meteorix-rfdetr-small
+- Modelo en Hugging Face: https://huggingface.co/Didrien/meteorix-rfdetr-small
 - Dataset Mendeley meteor image dataset (Gradvohl y Shirasuna): DOI 10.17632/4k98n84d9g.1
 - Libreria `rfdetr` (referenciada en la model card): no disponible enlace directo en la informacion proporcionada
 - Estudio Meteorix (comparativa YOLO26n, RF-DETR Small y DETR-ResNet-50): no disponible enlace en la informacion proporcionada

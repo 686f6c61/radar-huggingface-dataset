@@ -75,7 +75,7 @@ No se dispone de datos comparativos en la información proporcionada (ni paráme
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| panda-robosuite-level2-wrist-ablation-v2-action-decoder-iter900 | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| panda-robosuite-level2-wrist-ablation-v2-action-decoder-iter900 | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas de la categoría (Diffusion Policy, ACT, OpenVLA, pi0) | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone de datos comparativos en la información proporcionada (ni paráme
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dreamdifferent/panda-robosuite-level2-wrist-ablation-v2-action-decoder-iter900
+- Hugging Face: https://huggingface.co/dreamdifferent/panda-robosuite-level2-wrist-ablation-v2-action-decoder-iter900
 - Backbone Video2World inicial: https://huggingface.co/dreamdifferent/widowx250-wrist-ablation-v1-video-fused
 - Decodificador de acción inicial: https://huggingface.co/dreamdifferent/widowx250-wrist-ablation-v1-action-decoder-iter2374
 - LoRA de vídeo congelada: https://huggingface.co/dreamdifferent/panda-robosuite-level2-wrist-ablation-v2-video-lora-iter200

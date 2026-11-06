@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e16`, publicado por el usuario PessimisticDPO en HuggingFace, es un checkpoint subido a la plataforma con una model card generada automáticamente por la plantilla de `transformers` en la que todos los campos relevantes aparecen como «More Information Needed». No hay informacion publicada sobre su arquitectura, datos de entrenamiento, licencia, idiomas o resultados de evaluacion.
+El modelo `mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e16`, publicado por el usuario PessimisticDPO en Hugging Face, es un checkpoint subido a la plataforma con una model card generada automáticamente por la plantilla de `transformers` en la que todos los campos relevantes aparecen como «More Information Needed». No hay informacion publicada sobre su arquitectura, datos de entrenamiento, licencia, idiomas o resultados de evaluacion.
 
 El identificador del repositorio sugiere que se trata de un ajuste fino (probablemente mediante alguna variante de DPO, por el nombre del autor y el sufijo de hiperparametros `a0.1-b0.1-L4-overlap_subsample-l2-e16`) sobre una base de la familia Mistral 7B, etiquetada como «sft-beta». Se trata, en cualquier caso, de una inferencia a partir del nombre y no de un dato confirmado por el autor. El repositorio tiene un tamano de 0,2 GB, lo que resulta incompatible con un checkpoint completo de 7 000 millones de parametros en `safetensors` (que ocuparia del orden de 14 GB en fp16), por lo que es probable que la subida este incompleta o que contenga unicamente un subconjunto de pesos.
 
@@ -31,7 +31,7 @@ El modelo acumula 0 descargas y 0 «likes» desde su creacion, y la model card n
 
 No hay informacion publicada sobre la arquitectura. La model card, autogenerada, deja en blanco los apartados de arquitectura y objetivo, infraestructura de computo, procedimiento de entrenamiento, hiperparametros, datos de entrenamiento y evaluacion. No se especifica si se trata de un transformer denso, una mezcla de expertos, un modelo de espacio de estados o una arquitectura hibrida, ni el numero de tokens de entrenamiento, la composicion del dataset o si se aplicaron tecnicas de alineacion como RLHF o DPO.
 
-Los unicos elementos con valor informativo son el nombre del repositorio y las etiquetas. El prefijo `mistral-7b-sft-beta` apunta a un ajuste supervisado sobre una base Mistral 7B; el sufijo `a0.1-b0.1-L4-overlap_subsample-l2-e16` tiene la forma de una configuracion experimental (posibles valores de alpha y beta, una capa 4, submuestreo con solapamiento, regularizacion L2 y 16 epocas) y el nombre del autor, PessimisticDPO, sugiere una variante de optimizacion por preferencias. Ninguno de estos extremos esta documentado por el autor. La etiqueta `arxiv:1910.09700` corresponde a Lacoste et al. (2019), el articulo del calculador de impacto ambiental de carbono que aparece citado en la plantilla por defecto de HuggingFace, y no a un articulo sobre este modelo.
+Los unicos elementos con valor informativo son el nombre del repositorio y las etiquetas. El prefijo `mistral-7b-sft-beta` apunta a un ajuste supervisado sobre una base Mistral 7B; el sufijo `a0.1-b0.1-L4-overlap_subsample-l2-e16` tiene la forma de una configuracion experimental (posibles valores de alpha y beta, una capa 4, submuestreo con solapamiento, regularizacion L2 y 16 epocas) y el nombre del autor, PessimisticDPO, sugiere una variante de optimizacion por preferencias. Ninguno de estos extremos esta documentado por el autor. La etiqueta `arxiv:1910.09700` corresponde a Lacoste et al. (2019), el articulo del calculador de impacto ambiental de carbono que aparece citado en la plantilla por defecto de Hugging Face, y no a un articulo sobre este modelo.
 
 ## Capacidades
 
@@ -48,7 +48,7 @@ No se ha publicado informacion verificable sobre las capacidades del modelo. En 
 
 No es posible recomendar casos de uso concretos para este modelo: la model card no documenta ninguna capacidad, no hay licencia declarada, el repositorio contiene 0,2 GB de pesos y no se ha publicado ninguna evaluacion. Los unicos escenarios planteables son de tipo metodologico:
 
-- Revision de artefactos de investigacion: util unicamente como ejemplo de repositorio con metadatos incompletos para estudiar buenas practicas de publicacion de modelos en HuggingFace.
+- Revision de artefactos de investigacion: util unicamente como ejemplo de repositorio con metadatos incompletos para estudiar buenas practicas de publicacion de modelos en Hugging Face.
 - Auditoria de trazabilidad: analizar que informacion minima falta (licencia, datos, evaluacion) antes de que un checkpoint sea reutilizable en un contexto profesional.
 - Reproduccion experimental, solo si el autor publicase la configuracion: el sufijo del nombre permitiria, en teoria, replicar una receta de ajuste por preferencias, pero hoy no hay ningun detalle publicado.
 - Fine-tuning posterior: descartado mientras no se confirme que el repositorio contiene un checkpoint completo y con licencia que permita el uso derivado.
@@ -96,7 +96,7 @@ Los datos de las tres alternativas corresponden a sus fichas publicas y se inclu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e16
+- Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e16
 - Articulo citado en la plantilla de la model card (calculador de impacto ambiental, no especifico de este modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ambiental de Machine Learning: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

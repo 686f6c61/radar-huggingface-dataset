@@ -75,10 +75,10 @@ Según la model card, los tres tamaños (1.4M, 5M y 20M) son igual de inteligibl
 
 | Modelo | Parámetros | Idiomas | Contexto / enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kuyil 5M | 4,08 M (safetensors); 4,89 M con vocoder | ta, en (latino) | TTS tamil, CPU-first, RTF 0,06–0,07 | CC BY 4.0 | HuggingFace y GitHub |
-| Kuyil 1.4M | no disponible en la información | ta, en | Misma familia, menor tamaño | CC BY 4.0 | HuggingFace |
-| Kuyil 20M | no disponible en la información | ta, en | Misma familia, mayor tamaño | CC BY 4.0 | HuggingFace |
-| PiVo-1.4M | 1,4 M (según nombre) | no disponible | Receta original en la que se basa Kuyil; vocoder FARGAN | Apache 2.0 (vocoder) | HuggingFace |
+| Kuyil 5M | 4,08 M (safetensors); 4,89 M con vocoder | ta, en (latino) | TTS tamil, CPU-first, RTF 0,06–0,07 | CC BY 4.0 | Hugging Face y GitHub |
+| Kuyil 1.4M | no disponible en la información | ta, en | Misma familia, menor tamaño | CC BY 4.0 | Hugging Face |
+| Kuyil 20M | no disponible en la información | ta, en | Misma familia, mayor tamaño | CC BY 4.0 | Hugging Face |
+| PiVo-1.4M | 1,4 M (según nombre) | no disponible | Receta original en la que se basa Kuyil; vocoder FARGAN | Apache 2.0 (vocoder) | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con otros sistemas TTS tamil en la información proporcionada.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos con otros sistemas TTS tamil e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhagaramlabs/kuyil-5m
+- Modelo en Hugging Face: https://huggingface.co/zhagaramlabs/kuyil-5m
 - Repositorio de código: https://github.com/zhagaramlabs/kuyil
 - Web de Zhagaram Labs: https://zhagaramlabs.com
 - Modelo kuyil-1.4m: https://huggingface.co/zhagaramlabs/kuyil-1.4m

@@ -118,7 +118,7 @@ No se han publicado en la información disponible datos de benchmarks que permit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VNPen/vnpen-writer-2b-v0.1-preview-GGUF
+- Repositorio Hugging Face: https://huggingface.co/VNPen/vnpen-writer-2b-v0.1-preview-GGUF
 - Modelo base: https://huggingface.co/VNPen/vnpen-writer-2b-v0.1-preview
 
 Nota: la búsqueda web realizada no devolvió resultados relevantes para este modelo; los enlaces obtenidos correspondían a consultas de coordenadas geográficas sin relación con el contenido de esta ficha. No se dispone de enlaces a papers, blogs, repositorios de código ni demos en la información proporcionada.

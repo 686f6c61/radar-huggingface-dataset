@@ -117,7 +117,7 @@ Comparativa con clasificadores alternativos de la misma categoria (por ejemplo, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/verdict-coreml
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/verdict-coreml
 - Modelo base entrenado: https://huggingface.co/heman10x/rlcd-modernbert-151m
 - Codigo fuente de Verdict: https://github.com/Heman10x-NGU/Verdict-open-jev
 - Arquitectura base: https://huggingface.co/knowledgator/gliclass-modern-base-v2.0

@@ -91,7 +91,7 @@ No se dispone de datos verificados de contexto, licencia ni formato para los mod
 - El modelo tiene 0 descargas y 0 likes en el momento de la consulta, sin comunidad que haya validado su comportamiento en producción.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Kant0game/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
+- Hugging Face: https://huggingface.co/Kant0game/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP
 - Modelo relacionado citado por el autor (Qwen3.6-27B Fable Fusion 711): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Apoyo al autor: https://www.buymeacoffee.com/davidbelton

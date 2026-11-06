@@ -102,7 +102,7 @@ Todos los modelos comparables comparten la misma base pi0.5 y el mismo tamano, p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siruku6/pi05_combined_initpose_full
+- Modelo en Hugging Face: https://huggingface.co/siruku6/pi05_combined_initpose_full
 - Dataset de entrenamiento: https://huggingface.co/datasets/siruku6/libero_combined_bowl5_initpose
 - Modelo base: https://huggingface.co/lerobot/pi05_libero_base
 - Continuacion solo experto de acciones: https://huggingface.co/siruku6/pi05_combined_ae7k

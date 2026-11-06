@@ -80,5 +80,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aust-inwqr/hybrid-finetuned
+- Hugging Face: https://huggingface.co/aust-inwqr/hybrid-finetuned
 - No se han encontrado enlaces adicionales relevantes (paper, blog, repositorio o demo) en la informacion proporcionada. Los resultados de busqueda web facilitados no estan relacionados con el modelo.

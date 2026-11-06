@@ -75,6 +75,6 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CollectionStudio/Muse-Robotics-1.1
+- Hugging Face: https://huggingface.co/CollectionStudio/Muse-Robotics-1.1
 - Paper de referencia citado: arxiv:2403.12945
 - Paper de referencia citado: arxiv:2410.24164

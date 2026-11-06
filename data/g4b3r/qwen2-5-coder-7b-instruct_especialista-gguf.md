@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-Coder-7B-Instruct_especialista-gguf es una distribucion en formato GGUF del modelo Qwen2.5-Coder-7B-Instruct, publicada por el usuario G4b3r en HuggingFace. Se trata de una conversion realizada con Unsloth que empaqueta el modelo base de Alibaba Qwen en un unico fichero cuantizado en Q8_0, orientado a su ejecucion local mediante llama.cpp y herramientas compatibles. El nombre "especialista" sugiere un ajuste fino posterior del autor, aunque la model card no documenta ningun detalle sobre dicho ajuste, su dataset o sus objetivos.
+Qwen2.5-Coder-7B-Instruct_especialista-gguf es una distribucion en formato GGUF del modelo Qwen2.5-Coder-7B-Instruct, publicada por el usuario G4b3r en Hugging Face. Se trata de una conversion realizada con Unsloth que empaqueta el modelo base de Alibaba Qwen en un unico fichero cuantizado en Q8_0, orientado a su ejecucion local mediante llama.cpp y herramientas compatibles. El nombre "especialista" sugiere un ajuste fino posterior del autor, aunque la model card no documenta ningun detalle sobre dicho ajuste, su dataset o sus objetivos.
 
 El modelo subyacente, Qwen2.5-Coder-7B-Instruct, pertenece a la familia Qwen2.5-Coder de Alibaba, disenada especificamente para tareas de generacion de codigo, reparacion de codigo y razonamiento sobre lenguajes de programacion. Con 7.615.616.512 parametros reales (segun los metadatos de safetensors), es un transformer denso de aproximadamente 7.600 millones de parametros, un tamano que lo situa en la franja de modelos desplegables en una sola GPU de consumo con cuantizacion adecuada.
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/G4b3r/Qwen2.5-Coder-7B-Instruct_especialista-gguf
+- Repositorio Hugging Face: https://huggingface.co/G4b3r/Qwen2.5-Coder-7B-Instruct_especialista-gguf
 - Unsloth (herramienta de conversion): https://github.com/unslothai/unsloth
 - Modelo base Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - llama.cpp (runtime recomendado): https://github.com/ggml-org/llama.cpp

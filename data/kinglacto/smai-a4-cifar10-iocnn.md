@@ -2,11 +2,11 @@
 
 ## Resumen
 
-SMAI A4 Q1 — IOC-NN es un modelo de red neuronal totalmente conectada (MLP) entrenado sobre el conjunto de datos CIFAR-10 para una tarea de clasificacion de imagenes en 10 clases. Lo publica el usuario `kinglacto` en HuggingFace como parte de lo que parece ser una asignatura o practica academica (SMAI, A4, Q1), probablemente un ejercicio de la asignatura "Statistical Methods for Artificial Intelligence" o similar. El problema que resuelve es el de clasificacion de imagenes de 32x32 píxeles en las 10 categorias de CIFAR-10 (avion, automovil, pajaro, gato, ciervo, perro, rana, caballo, barco, camion).
+SMAI A4 Q1 — IOC-NN es un modelo de red neuronal totalmente conectada (MLP) entrenado sobre el conjunto de datos CIFAR-10 para una tarea de clasificacion de imagenes en 10 clases. Lo publica el usuario `kinglacto` en Hugging Face como parte de lo que parece ser una asignatura o practica academica (SMAI, A4, Q1), probablemente un ejercicio de la asignatura "Statistical Methods for Artificial Intelligence" o similar. El problema que resuelve es el de clasificacion de imagenes de 32x32 píxeles en las 10 categorias de CIFAR-10 (avion, automovil, pajaro, gato, ciervo, perro, rana, caballo, barco, camion).
 
 La arquitectura es una red feedforward con tres capas lineales de tamanos 3072-256-128-10 y activacion ELU en las capas ocultas, sumando un total de 820.874 parametros. La entrada es un vector aplanado de 3072 dimensiones (32x32x3), y la salida es un vector de 10 logits. La precision reportada en test es de 0,4729 (47,29 %), lo que supone unos 5 puntos por encima del azar (10 %) pero muy por debajo del estado del arte en CIFAR-10 (redes convolucionales superan el 95 %). El modelo se distribuye como un `state_dict` de PyTorch (`model.pt`) junto con un fichero `config.json` y un `preprocessing.npz`.
 
-Es relevante unicamente como artefacto educativo o de referencia para reproducir un ejercicio concreto de entrenamiento de MLP sobre CIFAR-10. No es un modelo de lenguaje, no genera texto, no soporta tool calling ni capacidades de agente, y no esta pensado para uso en produccion. El repositorio ocupa 0,0 GB segun HuggingFace, lo que sugiere que los pesos podrian no estar subidos o son extremadamente pequenos (un MLP de 820k parametros en float32 ocupa unos 3,3 MB, por lo que 0,0 GB es coherente con el redondeo).
+Es relevante unicamente como artefacto educativo o de referencia para reproducir un ejercicio concreto de entrenamiento de MLP sobre CIFAR-10. No es un modelo de lenguaje, no genera texto, no soporta tool calling ni capacidades de agente, y no esta pensado para uso en produccion. El repositorio ocupa 0,0 GB segun Hugging Face, lo que sugiere que los pesos podrian no estar subidos o son extremadamente pequenos (un MLP de 820k parametros en float32 ocupa unos 3,3 MB, por lo que 0,0 GB es coherente con el redondeo).
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto / entrada | CIFAR-10 test acc | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SMAI A4 Q1 — IOC-NN | 820.874 | 3072 (32x32x3) | 0,4729 | no disponible | HuggingFace (`kinglacto/smai-a4-cifar10-iocnn`) |
+| SMAI A4 Q1 — IOC-NN | 820.874 | 3072 (32x32x3) | 0,4729 | no disponible | Hugging Face (`kinglacto/smai-a4-cifar10-iocnn`) |
 | MLP 3072-256-128-10 con ReLU (tipico) | ~820k | 3072 | no disponible | variable | implementacion propia |
 | LeNet-5 (CNN clasica) | ~60k | 32x32x1 | ~0,70 (referencia historica) | variable | implementaciones multiples |
 | ResNet-18 (CIFAR-10) | ~11,2M | 32x32x3 | ~0,95 (referencia) | variable | torchvision, multiples repos |
@@ -85,11 +85,11 @@ No se dispone de comparativas publicadas especificas para este checkpoint concre
 - Limitaciones de contexto o idioma: entrada fija de 3072 dimensiones (32x32x3); no admite otras resoluciones sin reentrenamiento o redimensionado. No procesa idioma.
 - Restricciones de licencia para uso comercial: la licencia no esta disponible, por lo que no se puede asumir permiso de uso comercial. Se recomienda contactar con el autor antes de cualquier uso fuera de ambito academico.
 - Caveats para produccion: el repositorio ocupa 0,0 GB y no se confirma que `model.pt`, `config.json` y `preprocessing.npz` esten efectivamente subidos; la carga depende de que el autor los haya incluido. No hay tests, versionado semantico ni garantias de mantenimiento.
-- Sin pipeline declarado en HuggingFace (`pipeline: no disponible`), lo que impide usar `transformers` o `pipeline()` de forma estandar; requiere carga manual con PyTorch.
+- Sin pipeline declarado en Hugging Face (`pipeline: no disponible`), lo que impide usar `transformers` o `pipeline()` de forma estandar; requiere carga manual con PyTorch.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kinglacto/smai-a4-cifar10-iocnn
+- Hugging Face: https://huggingface.co/kinglacto/smai-a4-cifar10-iocnn
 - Dataset CIFAR-10 (referencia): https://www.cs.toronto.edu/~kriz/cifar.html
 - Documentacion de PyTorch `nn.Sequential`: https://pytorch.org/docs/stable/generated/torch.nn.Sequential.html
 - Documentacion de PyTorch `load_state_dict`: https://pytorch.org/docs/stable/generated/torch.nn.Module.html#torch.nn.Module.load_state_dict

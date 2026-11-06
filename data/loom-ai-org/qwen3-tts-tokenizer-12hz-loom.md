@@ -101,7 +101,7 @@ La mitad de codificacion correspondiente no esta referenciada en la model card m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/qwen3-tts-tokenizer-12hz-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/qwen3-tts-tokenizer-12hz-loom
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - Talker que genera los codigos: https://huggingface.co/loom-ai-org/qwen3-tts-12hz-0.6b-loom
 - Motor loom.cpp: https://github.com/loom-ai-org/loom.cpp

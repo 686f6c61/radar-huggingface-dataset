@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Evaluación publicada | Disponibilidad |
 |---|---|---|---|---|---|
-| stride-qwen3-4b-2048-token_uniform-20260915 (este) | Adaptador LoRA sobre base de 4B | 8.192 tokens en entrenamiento | No disponible | No | Repositorio PEFT en HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | Aproximadamente 4B | No disponible en la información proporcionada; la familia Qwen3 documenta 256K ampliables hasta 1M en variantes Thinking | No disponible en la información proporcionada | No consultada en la información proporcionada | Modelo completo en HuggingFace |
-| stride-qwen3-1.7b-2048-token_uniform-20260915 | Adaptador LoRA sobre base de 1.7B | No disponible | No disponible | No | Repositorio PEFT en HuggingFace |
+| stride-qwen3-4b-2048-token_uniform-20260915 (este) | Adaptador LoRA sobre base de 4B | 8.192 tokens en entrenamiento | No disponible | No | Repositorio PEFT en Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | Aproximadamente 4B | No disponible en la información proporcionada; la familia Qwen3 documenta 256K ampliables hasta 1M en variantes Thinking | No disponible en la información proporcionada | No consultada en la información proporcionada | Modelo completo en Hugging Face |
+| stride-qwen3-1.7b-2048-token_uniform-20260915 | Adaptador LoRA sobre base de 1.7B | No disponible | No disponible | No | Repositorio PEFT en Hugging Face |
 
 La comparación cuantitativa de rendimiento entre estas opciones no es posible con la información disponible, ya que ninguno de los artefactos de la ablación STRIDE publica resultados de benchmarks.
 
@@ -95,7 +95,7 @@ La comparación cuantitativa de rendimiento entre estas opciones no es posible c
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/sandeep123/stride-qwen3-4b-2048-token_uniform-20260915
+- Repositorio del modelo en Hugging Face: https://huggingface.co/sandeep123/stride-qwen3-4b-2048-token_uniform-20260915
 - Modelo base Qwen/Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo base Qwen/Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Variante hermana de 1.7B de la misma ablación: https://huggingface.co/sandeep123/stride-qwen3-1.7b-2048-token_uniform-20260915

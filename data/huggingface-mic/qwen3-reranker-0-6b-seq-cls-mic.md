@@ -6,7 +6,7 @@ Qwen3-Reranker-0-6B-seq-cls-mic es un artefacto de prueba publicado por la organ
 
 La model card es explicita: los pesos son aleatorios y no representan la calidad de retrieval del modelo de origen. El objetivo del artefacto es servir como fixture reproducible para validar integraciones y contratos de framework (CrossEncoder de sentence-transformers), no para desplegarse en produccion. Cualquier evaluacion de calidad de ranking sobre este repositorio carece de sentido.
 
-El modelo base declarado es un reranker de la familia Qwen3 con aproximadamente 0,6 mil millones de parametros, pero el artefacto aqui descrito contiene 9.780.992 parametros segun los metadatos de safetensors, lo que confirma la reduccion drastica del pipeline. No dispone de pipeline declarado, licencia declarada ni idiomas declarados en HuggingFace.
+El modelo base declarado es un reranker de la familia Qwen3 con aproximadamente 0,6 mil millones de parametros, pero el artefacto aqui descrito contiene 9.780.992 parametros segun los metadatos de safetensors, lo que confirma la reduccion drastica del pipeline. No dispone de pipeline declarado, licencia declarada ni idiomas declarados en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-Reranker-0-6B-seq-cls-mic (este artefacto) | 9.780.992 (reducido) | no disponible | Fixture de reranking | no disponible | HuggingFace, 0 descargas |
-| tomaarsen/Qwen3-Reranker-0.6B-seq-cls | ~0,6B (modelo base declarado) | no disponible | Reranking CrossEncoder | no disponible | HuggingFace |
-| Qwen3-Reranker-0.6B (familia Qwen3) | ~0,6B | no disponible | Reranking | no disponible | HuggingFace |
+| Qwen3-Reranker-0-6B-seq-cls-mic (este artefacto) | 9.780.992 (reducido) | no disponible | Fixture de reranking | no disponible | Hugging Face, 0 descargas |
+| tomaarsen/Qwen3-Reranker-0.6B-seq-cls | ~0,6B (modelo base declarado) | no disponible | Reranking CrossEncoder | no disponible | Hugging Face |
+| Qwen3-Reranker-0.6B (familia Qwen3) | ~0,6B | no disponible | Reranking | no disponible | Hugging Face |
 
 La comparativa se limita al linaje declarado, ya que no se dispone de datos de rendimiento, contexto ni licencia para este artefacto ni para sus alternativas en la informacion proporcionada. No se identifican otros fixtures comparables en la informacion disponible.
 
@@ -82,14 +82,14 @@ La comparativa se limita al linaje declarado, ya que no se dispone de datos de r
 - Artefacto de prueba: esta etiquetado como `test-artifact` y `mic`; su proposito es validar integraciones, no servir cargas de produccion.
 - Sin licencia declarada: no se especifica licencia, lo que impide evaluar condiciones de uso comercial.
 - Sin idiomas declarados: no se puede confirmar soporte multilingue ni calidad en ningun idioma.
-- Sin pipeline declarado: la pipeline de HuggingFace figura como no disponible, lo que puede afectar a la carga automatica en algunas herramientas.
+- Sin pipeline declarado: la pipeline de Hugging Face figura como no disponible, lo que puede afectar a la carga automatica en algunas herramientas.
 - Riesgo de confusion: el nombre incluye "Qwen3-Reranker-0-6B", lo que puede llevar a error si se asume que reproduce el comportamiento del modelo base.
 - Sin benchmarks: no hay metricas publicadas ni datos de latencia o throughput.
 - Procedencia documentada pero dependiente de enlaces externos: la informacion de construccion esta en `build.json` y en un dominio externo, no embebida en la model card.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/Qwen3-Reranker-0-6B-seq-cls-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/Qwen3-Reranker-0-6B-seq-cls-mic
 - Modelo base: https://huggingface.co/tomaarsen/Qwen3-Reranker-0.6B-seq-cls
 - Manifiesto de contrato (referenciado en la model card): integration.json
 - Uso con sentence-transformers (referenciado): integrations/sentence_transformers/usage.md

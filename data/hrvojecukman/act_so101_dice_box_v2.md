@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT (este modelo) | 51,7 M | no aplica | sin evaluación publicada | apache-2.0 | HuggingFace Hub, LeRobot |
+| ACT (este modelo) | 51,7 M | no aplica | sin evaluación publicada | apache-2.0 | Hugging Face Hub, LeRobot |
 | Diffusion Policy | no disponible | no aplica | no disponible | no disponible | referenciado en literatura; no se dispone de ficha concreta en la información proporcionada |
 | VQ-BeT | no disponible | no aplica | no disponible | no disponible | no disponible |
-| Otras políticas ACT en LeRobot Hub | variable | no aplica | variable, sin datos en esta ficha | variable | HuggingFace Hub |
+| Otras políticas ACT en LeRobot Hub | variable | no aplica | variable, sin datos en esta ficha | variable | Hugging Face Hub |
 
 No se dispone de datos numéricos de benchmarks ni de especificaciones detalladas de las alternativas en la información proporcionada, por lo que la comparación cuantitativa no es posible.
 
@@ -96,7 +96,7 @@ No se dispone de datos numéricos de benchmarks ni de especificaciones detallada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hrvojecukman/act_so101_dice_box_v2
+- Modelo en Hugging Face: https://huggingface.co/hrvojecukman/act_so101_dice_box_v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/hrvojecukman/so101_dice_box_v2_20261030_214125
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=hrvojecukman/so101_dice_box_v2_20261030_214125
 - Paper de ACT: https://huggingface.co/papers/2304.13705

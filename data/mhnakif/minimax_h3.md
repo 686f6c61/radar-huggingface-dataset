@@ -4,7 +4,7 @@
 
 MiniMax H3 es un modelo de generación omni-modal desarrollado por MiniMax, presentado como un avance en la generación de video con audio nativo sincronizado. Según el blog oficial, H3 puede comprender contextos multimodales que combinan texto, imagen, video y audio, y genera video con audio estéreo de forma nativa, alcanzando resoluciones de hasta 2K y duraciones de hasta 15 segundos. Se posiciona como un modelo abierto, aunque los detalles técnicos completos no están disponibles en la información proporcionada.
 
-El repositorio de HuggingFace `mhnakif/minimax_h3` tiene un tamaño de 112.2 GB, lo que sugiere un modelo de gran escala, pero no incluye una modelo card con especificaciones. La documentación oficial de MiniMax y el repositorio de GitHub `MiniMax-AI/MiniMax-H3` apuntan a que se trata de un modelo de generación de video multimodal, pero no se han publicado detalles sobre arquitectura, parámetros o entrenamiento en las fuentes consultadas.
+El repositorio de Hugging Face `mhnakif/minimax_h3` tiene un tamaño de 112.2 GB, lo que sugiere un modelo de gran escala, pero no incluye una modelo card con especificaciones. La documentación oficial de MiniMax y el repositorio de GitHub `MiniMax-AI/MiniMax-H3` apuntan a que se trata de un modelo de generación de video multimodal, pero no se han publicado detalles sobre arquitectura, parámetros o entrenamiento en las fuentes consultadas.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ El repositorio de HuggingFace `mhnakif/minimax_h3` tiene un tamaño de 112.2 GB,
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | no disponible (el repo de HuggingFace no especifica) |
+| Formato de pesos | no disponible (el repo de Hugging Face no especifica) |
 
 ## Arquitectura y entrenamiento
 
@@ -64,7 +64,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - mhnakif/minimax_h3](https://huggingface.co/mhnakif/minimax_h3)
+- [Hugging Face - mhnakif/minimax_h3](https://huggingface.co/mhnakif/minimax_h3)
 - [Blog oficial de MiniMax sobre H3](https://www.minimax.io/blog/minimax-h3)
 - [GitHub - MiniMax-AI/MiniMax-H3](https://github.com/MiniMax-AI/MiniMax-H3)
 - [GitHub - ai-models-lab/minimax-h3 (hub no oficial)](https://github.com/ai-models-lab/minimax-h3)

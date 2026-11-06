@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Frosya-1 es un modelo publicado en HuggingFace por el usuario fortik11 bajo licencia CC BY-SA 4.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye el bloque de metadatos con la licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente o de difusión muy limitada.
+Frosya-1 es un modelo publicado en Hugging Face por el usuario fortik11 bajo licencia CC BY-SA 4.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye el bloque de metadatos con la licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente o de difusión muy limitada.
 
 No es posible determinar qué problema resuelve, qué arquitectura emplea ni qué tipo de tarea aborda, ya que el autor no ha documentado ninguno de estos aspectos. La ficha se limita a reflejar los datos verificables del repositorio e indica explícitamente "no disponible" en todos aquellos campos que la información proporcionada no cubre.
 
@@ -69,5 +69,5 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni la tarea del model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fortik11/Frosya-1
+- Hugging Face: https://huggingface.co/fortik11/Frosya-1
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

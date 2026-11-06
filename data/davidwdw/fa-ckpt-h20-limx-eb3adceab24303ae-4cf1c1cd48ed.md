@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El artefacto identificado como `davidwdw/fa-ckpt-h20-limx-eb3adceab24303ae-4cf1c1cd48ed` es un archivo de checkpoint versionado publicado en HuggingFace por el usuario `davidwdw`. La propia model card lo describe como un "versioned fleet archive" con nivel ("tier") de contenido `params+train_state+assets`, es decir, pesos del modelo, estado del entrenamiento (estado del optimizador y del scheduler, presumiblemente) y activos auxiliares. No se trata, por tanto, de una release de inferencia lista para usar, sino de una instantanea de un pipeline de entrenamiento pensada para reproducibilidad.
+El artefacto identificado como `davidwdw/fa-ckpt-h20-limx-eb3adceab24303ae-4cf1c1cd48ed` es un archivo de checkpoint versionado publicado en Hugging Face por el usuario `davidwdw`. La propia model card lo describe como un "versioned fleet archive" con nivel ("tier") de contenido `params+train_state+assets`, es decir, pesos del modelo, estado del entrenamiento (estado del optimizador y del scheduler, presumiblemente) y activos auxiliares. No se trata, por tanto, de una release de inferencia lista para usar, sino de una instantanea de un pipeline de entrenamiento pensada para reproducibilidad.
 
 La model card unicamente aporta la receta canonica asociada, `2026-09-19_pi05_libero_alphabet_soup_lora`, y una recomendacion de emplear la revision exacta registrada y verificar el fichero `SHA256SUMS`. El nombre de la receta sugiere un ajuste con LoRA sobre un modelo de la familia pi0.5 evaluado o entrenado en la suite LIBERO de manipulacion robotica, pero esta interpretacion procede exclusivamente de la nomenclatura y no esta confirmada por ninguna documentacion adicional.
 
@@ -39,7 +39,7 @@ Tampoco se especifican datos de entrenamiento: numero de tokens o de episodios, 
 
 ## Capacidades
 
-- No se ha publicado ninguna capacidad funcional del artefacto: no hay pipeline declarado en HuggingFace ni descripcion de tareas.
+- No se ha publicado ninguna capacidad funcional del artefacto: no hay pipeline declarado en Hugging Face ni descripcion de tareas.
 - Generacion de texto, razonamiento, codigo o matematicas: no disponible.
 - Vision, audio o multimodalidad: no disponible.
 - Soporte de tool calling o function calling: no disponible.
@@ -91,7 +91,7 @@ No disponible. La informacion proporcionada no permite identificar la familia, e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-eb3adceab24303ae-4cf1c1cd48ed
-- Perfil del autor en HuggingFace: https://huggingface.co/davidwdw
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-eb3adceab24303ae-4cf1c1cd48ed
+- Perfil del autor en Hugging Face: https://huggingface.co/davidwdw
 - Otro repositorio del mismo autor localizado en la busqueda: https://huggingface.co/davidwdw/fa-code-task00-pilot-gpu-monitor-fef22f7d3dc9-2457533bc8f1
 - Paper, blog o repositorio de codigo asociado: no disponible.

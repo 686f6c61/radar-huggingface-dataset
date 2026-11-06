@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aiart4141/sd15_with_chunks` es un repositorio de pesos en formato ONNX publicado por el usuario aiart4141 en HuggingFace. Por el identificador y el tamaño del repositorio (16,2 GB), todo apunta a una conversión a ONNX de Stable Diffusion 1.5, presumiblemente fragmentada en "chunks" (bloques) para facilitar su carga o despliegue en entornos de inferencia que no soportan los pesos originales en safetensors. No se trata de un modelo de lenguaje, sino de un modelo de difusión para generación de imágenes.
+`aiart4141/sd15_with_chunks` es un repositorio de pesos en formato ONNX publicado por el usuario aiart4141 en Hugging Face. Por el identificador y el tamaño del repositorio (16,2 GB), todo apunta a una conversión a ONNX de Stable Diffusion 1.5, presumiblemente fragmentada en "chunks" (bloques) para facilitar su carga o despliegue en entornos de inferencia que no soportan los pesos originales en safetensors. No se trata de un modelo de lenguaje, sino de un modelo de difusión para generación de imágenes.
 
 La información disponible es muy escasa: la model card únicamente declara la licencia `openrail++`, no hay pipeline declarado, no se especifican idiomas, no hay descripciones de arquitectura ni datos de entrenamiento, y el repositorio no registra descargas ni likes en el momento de la consulta. Los resultados de búsqueda web obtenidos no guardan relación con el modelo (hablan de Google Assistant con Bard), por lo que no aportan datos utilizables.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aiart4141/sd15_with_chunks | no disponible | no aplica | ONNX | openrail++ | HuggingFace (0 descargas) |
-| Stable Diffusion 1.5 (original) | ~860 M (UNet) | no aplica | safetensors | CreativeML OpenRAIL-M | HuggingFace (ampliamente usado) |
-| Stable Diffusion 2.1 | ~865 M (UNet) | no aplica | safetensors | CreativeML OpenRAIL++-M | HuggingFace |
-| SDXL | ~2,6 B (UNet) | no aplica | safetensors | CreativeML OpenRAIL++-M | HuggingFace |
+| aiart4141/sd15_with_chunks | no disponible | no aplica | ONNX | openrail++ | Hugging Face (0 descargas) |
+| Stable Diffusion 1.5 (original) | ~860 M (UNet) | no aplica | safetensors | CreativeML OpenRAIL-M | Hugging Face (ampliamente usado) |
+| Stable Diffusion 2.1 | ~865 M (UNet) | no aplica | safetensors | CreativeML OpenRAIL++-M | Hugging Face |
+| SDXL | ~2,6 B (UNet) | no aplica | safetensors | CreativeML OpenRAIL++-M | Hugging Face |
 
 La comparación con el modelo original es tentativa: no se ha confirmado que este repositorio sea una conversión de SD 1.5, solo que el identificador lo sugiere.
 
@@ -80,6 +80,6 @@ La comparación con el modelo original es tentativa: no se ha confirmado que est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aiart4141/sd15_with_chunks
+- Repositorio en Hugging Face: https://huggingface.co/aiart4141/sd15_with_chunks
 - Licencia openrail++: https://huggingface.co/docs/hub/model-licenses (referencia general, no específica del repositorio)
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la búsqueda web realizada.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`jlmatos/Llama-2-7b-chat-posgrado-upta` es un checkpoint alojado en HuggingFace por el usuario jlmatos que, por su identificador, deriva de Llama 2 7B Chat, el modelo conversacional publicado por Meta en julio de 2023. El sufijo "posgrado-upta" sugiere un ajuste fino orientado a un programa de posgrado de la Universidad Politécnica Territorial (UPTA), aunque la model card no documenta ni el proceso de entrenamiento ni los datos utilizados.
+`jlmatos/Llama-2-7b-chat-posgrado-upta` es un checkpoint alojado en Hugging Face por el usuario jlmatos que, por su identificador, deriva de Llama 2 7B Chat, el modelo conversacional publicado por Meta en julio de 2023. El sufijo "posgrado-upta" sugiere un ajuste fino orientado a un programa de posgrado de la Universidad Politécnica Territorial (UPTA), aunque la model card no documenta ni el proceso de entrenamiento ni los datos utilizados.
 
 El repositorio tiene un tamano de 0,1 GB, lo que resulta llamativamente pequeno para un modelo de 7 mil millones de parametros en safetensors: un checkpoint completo en fp16 de Llama 2 7B ocupa aproximadamente 13,5 GB. Esto indica que el repositorio probablemente contiene solo una parte de los pesos, un adaptador o una version cuantizada, sin que la informacion disponible permita confirmarlo.
 
-La relevancia de esta ficha es limitada y fundamentalmente critica: la model card es la plantilla autogenerada de HuggingFace sin ninguna seccion completada, no hay licencia declarada, no hay idiomas declarados, no hay pipeline definido y el modelo registra cero descargas y cero likes. Cualquier evaluacion tecnica debe tratarse como no verificada.
+La relevancia de esta ficha es limitada y fundamentalmente critica: la model card es la plantilla autogenerada de Hugging Face sin ninguna seccion completada, no hay licencia declarada, no hay idiomas declarados, no hay pipeline definido y el modelo registra cero descargas y cero likes. Cualquier evaluacion tecnica debe tratarse como no verificada.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ La comparativa es estructural: frente a los modelos de referencia de 7B, este ch
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlmatos/Llama-2-7b-chat-posgrado-upta
+- Modelo en Hugging Face: https://huggingface.co/jlmatos/Llama-2-7b-chat-posgrado-upta
 - Articulo referenciado en los tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Modelo base presumible (Llama 2 7B Chat, Meta): https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Articulo de Llama 2 (Touvron et al., 2023): https://arxiv.org/abs/2307.09288

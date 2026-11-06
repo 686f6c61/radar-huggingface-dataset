@@ -90,8 +90,8 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (VL
 
 ## Enlaces
 
-- Repositorio HuggingFace de la versión cuantizada: https://huggingface.co/useful-quants/LFM2.5-VL-3B-NVFP4-FP8-Mixed
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
+- Repositorio Hugging Face de la versión cuantizada: https://huggingface.co/useful-quants/LFM2.5-VL-3B-NVFP4-FP8-Mixed
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - Blog oficial de Liquid AI sobre LFM2.5-VL-3B: https://www.liquid.ai/blog/lfm2-5-vl-3b
 - Documentación de modelos de visión de Liquid AI: https://docs.liquid.ai/lfm/models/vision-models
 - Página de modelos de Liquid AI: https://www.liquid.ai/models

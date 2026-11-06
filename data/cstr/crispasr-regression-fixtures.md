@@ -6,7 +6,7 @@
 
 El propósito es evitar la deriva silenciosa entre versiones de dependencias: al fijar (`pinning`) el repositorio a un SHA de revisión concreto desde `tests/regression/manifest.json`, la suite de integración continua compara siempre contra los mismos tensores, de modo que una actualización de torch, NeMo o transformers no altera de forma inadvertida la referencia. La herramienta `crispasr-diff <backend> <gguf> <ref> <wav>` lee exactamente este formato y reporta similitud coseno por etapa.
 
-El repositorio se mantiene separado del árbol principal de CrispASR porque cada dump pesa entre ~1 MB y ~50 MB (0,7 GB el repo completo) y porque el pinning por revisión de HuggingFace es la forma más limpia de desacoplar "probar contra los mismos números" del historial git del proyecto. Actualmente contiene un único fixture, generado a partir de `nvidia/parakeet-tdt_ctc-0.6b-ja` sobre la muestra de audio en japonés `samples/ja/reazon_baseball_14s.wav`.
+El repositorio se mantiene separado del árbol principal de CrispASR porque cada dump pesa entre ~1 MB y ~50 MB (0,7 GB el repo completo) y porque el pinning por revisión de Hugging Face es la forma más limpia de desacoplar "probar contra los mismos números" del historial git del proyecto. Actualmente contiene un único fixture, generado a partir de `nvidia/parakeet-tdt_ctc-0.6b-ja` sobre la muestra de audio en japonés `samples/ja/reazon_baseball_14s.wav`.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ El repositorio se mantiene separado del árbol principal de CrispASR porque cada
 
 Este repositorio no define arquitectura propia ni ha sido entrenado. Su contenido son volcados (`reference dumps`) de las activaciones de un modelo de reconocimiento automático de voz (ASR) ejecutado en inferencia: concretamente, la salida del encoder y, segun el backend, activaciones por capa de etapas intermedias. El fixture disponible corresponde a `nvidia/parakeet-tdt_ctc-0.6b-ja`, un modelo ASR de la familia Parakeet con arquitectura FastConformer y decodificacion TDT/CTC, fijado en la revision `44edb27e`.
 
-La innovacion tecnica no esta en el modelo sino en el metodo de verificacion: `crispasr-diff` compara los tensores producidos por el runtime C++ contra las referencias capturadas y calcula similitud coseno por etapa, lo que permite detectar regresiones numericas que un simple test de salida final no veria. El pinning por SHA de revision de HuggingFace protege ademas contra el fallo tipico de "re-subida que cambia en silencio lo que descargan los usuarios", que es precisamente lo que motivo la creacion de la suite.
+La innovacion tecnica no esta en el modelo sino en el metodo de verificacion: `crispasr-diff` compara los tensores producidos por el runtime C++ contra las referencias capturadas y calcula similitud coseno por etapa, lo que permite detectar regresiones numericas que un simple test de salida final no veria. El pinning por SHA de revision de Hugging Face protege ademas contra el fallo tipico de "re-subida que cambia en silencio lo que descargan los usuarios", que es precisamente lo que motivo la creacion de la suite.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ No disponible. No se han identificado en la informacion proporcionada repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cstr/crispasr-regression-fixtures
+- Repositorio en Hugging Face: https://huggingface.co/cstr/crispasr-regression-fixtures
 - Suite de regresion de CrispASR: https://github.com/CrispStrobe/CrispASR/tree/main/tests/regression
 - Documentacion para anadir un nuevo backend: https://github.com/CrispStrobe/CrispASR/tree/main/tests/regression#adding-a-new-backend
 - Modelo fuente del fixture actual: `nvidia/parakeet-tdt_ctc-0.6b-ja` (revision `44edb27e`)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hjkso1406/groot-smoke-test` es un artefacto de prueba (smoke test) publicado en HuggingFace por el usuario `hjkso1406`. Está etiquetado dentro del ecosistema de robótica, utilizando la librería LeRobot de HuggingFace, y su pipeline se clasifica como `robotics`. El nombre "groot" sugiere una posible relación conceptual con los modelos de robótica de Nvidia (Groot N1), aunque no hay evidencia de que este modelo esté afiliado a Nvidia o a ningún otro proyecto oficial.
+El modelo `hjkso1406/groot-smoke-test` es un artefacto de prueba (smoke test) publicado en Hugging Face por el usuario `hjkso1406`. Está etiquetado dentro del ecosistema de robótica, utilizando la librería LeRobot de Hugging Face, y su pipeline se clasifica como `robotics`. El nombre "groot" sugiere una posible relación conceptual con los modelos de robótica de Nvidia (Groot N1), aunque no hay evidencia de que este modelo esté afiliado a Nvidia o a ningún otro proyecto oficial.
 
 El modelo se asocia a un dataset llamado `hjkso1406/so101-4tasks-100eps`, que parece contener 4 tareas y 100 episodios de datos robóticos. La licencia declarada en las etiquetas es Apache 2.0, aunque el campo de licencia en la tarjeta del modelo indica "no disponible". No se han registrado descargas ni "likes", y la fecha de creación (2026-09-02) es posterior a la fecha actual, lo que sugiere que podría tratarse de un modelo de prueba o de un error en la fecha.
 
@@ -57,6 +57,6 @@ No disponible. No se conocen modelos comparables en la misma categoría (robóti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hjkso1406/groot-smoke-test
+- Modelo en Hugging Face: https://huggingface.co/hjkso1406/groot-smoke-test
 - Dataset asociado: https://huggingface.co/datasets/hjkso1406/so101-4tasks-100eps (inferido del tag, no verificado)
 - Perfil del autor: https://huggingface.co/hjkso1406/models

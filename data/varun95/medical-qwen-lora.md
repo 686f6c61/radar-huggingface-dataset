@@ -80,9 +80,9 @@ La verificación cualitativa se limita a tres viñetas (dolor torácico en varó
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Varun95/medical-qwen-lora` | 3,09 B base + 29,9 M adaptador | 4.096 tokens de entrenamiento | Pérdida de validación 1,3987; sin benchmarks | Apache-2.0 | HuggingFace, 82 descargas, 0 likes |
-| Qwen2.5-3B-Instruct (base) | 3,09 B | No declarado en esta ficha | No evaluado en el repo del adaptador; es el punto de referencia del ajuste | Apache-2.0 | HuggingFace (Unsloth publica la variante bnb-4bit) |
-| `Dev9124/qwen-medical-model-lora` | LoRA sobre Qwen (tamaño no especificado) | No disponible | No disponible | No disponible | HuggingFace |
+| `Varun95/medical-qwen-lora` | 3,09 B base + 29,9 M adaptador | 4.096 tokens de entrenamiento | Pérdida de validación 1,3987; sin benchmarks | Apache-2.0 | Hugging Face, 82 descargas, 0 likes |
+| Qwen2.5-3B-Instruct (base) | 3,09 B | No declarado en esta ficha | No evaluado en el repo del adaptador; es el punto de referencia del ajuste | Apache-2.0 | Hugging Face (Unsloth publica la variante bnb-4bit) |
+| `Dev9124/qwen-medical-model-lora` | LoRA sobre Qwen (tamaño no especificado) | No disponible | No disponible | No disponible | Hugging Face |
 | MedQwen (Sparse Spectral LoRA para VLM médicos) | No disponible | No disponible | Enfocado a robustez entre datasets médicos heterogéneos y a reducir olvido catastrófico | No disponible | Proyecto de investigación |
 
 La comparación cuantitativa con alternativas no es posible con la información disponible: ninguno de los modelos similares localizados publica métricas comparables sobre el mismo conjunto de validación.
@@ -103,10 +103,10 @@ La comparación cuantitativa con alternativas no es posible con la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Varun95/medical-qwen-lora
+- Modelo en Hugging Face: https://huggingface.co/Varun95/medical-qwen-lora
 - Modelo base (Unsloth, bnb-4bit): https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-bnb-4bit
 - Dataset de entrenamiento: https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT
 - Endpoint de inferencia en FriendliAI: https://friendli.ai/models/Varun95/medical-qwen-lora
-- Adaptador similar en HuggingFace: https://huggingface.co/Dev9124/qwen-medical-model-lora
+- Adaptador similar en Hugging Face: https://huggingface.co/Dev9124/qwen-medical-model-lora
 - Tutorial de ajuste LoRA médico sobre Qwen2.5-0.5B: https://github.com/SoloCalm/MiniLoRA
 - MedQwen (Sparse Spectral LoRA para VLM médicos): https://omid-nejati.github.io/MedQwen/

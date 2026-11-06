@@ -66,7 +66,7 @@ Existen otros modelos de la misma familia creados por el mismo autor, como `sfm_
 
 ## Enlaces
 
-- [HuggingFace: yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-5k_6k_7k_weightedavg_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-5k_6k_7k_weightedavg_merge)
+- [Hugging Face: yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-5k_6k_7k_weightedavg_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-5k_6k_7k_weightedavg_merge)
 - [Discusiones del modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-5k_6k_7k_merge/discussions)
 - [Modelo relacionado: sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg](https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg)
 - [Modelo relacionado en FriendliAI: sfm_unfiltered_e2e_misalignment-6k_7k_8k_merge](https://friendli.ai/models/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-6k_7k_8k_merge)

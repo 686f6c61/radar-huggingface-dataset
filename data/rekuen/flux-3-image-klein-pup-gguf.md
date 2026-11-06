@@ -97,4 +97,4 @@ No se dispone de datos de rendimiento comparado entre estas opciones en la infor
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Commit del conversor usado: https://github.com/ggml-org/llama.cpp/commit/4df29be4f4c3673f428170fda944a5b19f743bb8
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion del repositorio de HuggingFace y de las referencias que cita su model card.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion del repositorio de Hugging Face y de las referencias que cita su model card.

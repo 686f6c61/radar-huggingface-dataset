@@ -96,8 +96,8 @@ No se dispone de datos de benchmarks ni de especificaciones verificables de alte
 
 | Modelo | Parámetros | Contexto | Cuantización | Visión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen/Qwen3.8-Flash-Next (base) | no disponible | 262.144 | pesos originales (precisión sin especificar) | nativa | apache-2.0 | HuggingFace |
-| Este modelo (oQ4e-fp16-mtp) | no disponible (PLE de 51,2 mil millones) | 262.144 | 4 bits afín, group size 64, refuerzos a 5 bits; PLE a 5,00 bits/parámetro; MLX safetensors | incluida | apache-2.0 | HuggingFace, 0 descargas y 0 likes |
+| Qwen/Qwen3.8-Flash-Next (base) | no disponible | 262.144 | pesos originales (precisión sin especificar) | nativa | apache-2.0 | Hugging Face |
+| Este modelo (oQ4e-fp16-mtp) | no disponible (PLE de 51,2 mil millones) | 262.144 | 4 bits afín, group size 64, refuerzos a 5 bits; PLE a 5,00 bits/parámetro; MLX safetensors | incluida | apache-2.0 | Hugging Face, 0 descargas y 0 likes |
 | Otras cuantizaciones de 4 bits del mismo base | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -117,7 +117,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificables de alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/evsinlb/Qwen3.8-Flash-Next-oQ4e-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/evsinlb/Qwen3.8-Flash-Next-oQ4e-fp16-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Herramienta de cuantización oQ / oMLX: https://github.com/jundot/omlx
 - Resultados de la búsqueda web: no se encontraron enlaces relevantes. Las consultas devolvieron exclusivamente listados de hoteles en Boston (Booking.com, Tripadvisor, KAYAK) sin relación alguna con el modelo. No se localizaron papers, blogs, repositorios ni demos adicionales sobre qwen4_exp o Qwen3.8-Flash-Next.

@@ -81,8 +81,8 @@ Los datos disponibles en la informacion proporcionada solo permiten comparar con
 
 | Modelo | Parametros | Contexto | MMLU (5-shot) | Tool calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GRAFT-1B-Agentic | ~1,18 B | 4096 tokens | 39,77 | Si, formato `<tool_call>` | Apache-2.0 | GGUF en HuggingFace |
-| GRAFT-1B | ~1 B (no confirmado exactamente) | no disponible | no disponible | 4/12 en seleccion de herramienta | Apache-2.0 (no confirmada para este modelo) | HuggingFace |
+| GRAFT-1B-Agentic | ~1,18 B | 4096 tokens | 39,77 | Si, formato `<tool_call>` | Apache-2.0 | GGUF en Hugging Face |
+| GRAFT-1B | ~1 B (no confirmado exactamente) | no disponible | no disponible | 4/12 en seleccion de herramienta | Apache-2.0 (no confirmada para este modelo) | Hugging Face |
 | Qwen3-1.7B | 1,7 B (segun la model card de GRAFT-1B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de otros modelos comparables de la misma categoria (por ejemplo, alternativas de ~1B orientadas a tool calling) en la informacion proporcionada, por lo que no se incluye una comparacion mas amplia.
@@ -99,7 +99,7 @@ No se dispone de datos verificados de otros modelos comparables de la misma cate
 - Se trata de un modelo con 0 descargas y 0 likes en el momento de la consulta, sin evaluaciones independientes de terceros.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/SmallAICreator/GRAFT-1B-Agentic
+- Modelo en Hugging Face: https://huggingface.co/SmallAICreator/GRAFT-1B-Agentic
 - Modelo base GRAFT-1B: https://huggingface.co/SmallAICreator/GRAFT-1B
 - llama.cpp (empaquetado en GRAFT Code, licencia MIT): https://github.com/ggml-org/llama.cpp
 - Listado de modelos de SmallAICreator: https://essamamdani.com/ai-models/company/smallaicreator

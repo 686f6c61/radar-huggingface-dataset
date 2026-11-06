@@ -75,10 +75,10 @@ Estimaciones calculadas a partir del recuento de parametros (2,29 mil millones);
 
 | Modelo | Parametros | Idioma | Control de acento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shtorm-VoxCPM2-RU | 2,29 B | ruso | si, marca `+` antes de la tonica | Apache-2.0 | HuggingFace, libreria `voxcpm` |
-| openbmb/VoxCPM2 (base) | no disponible (mismo orden de magnitud) | no disponible | no | Apache-2.0 segun la model card del fine-tune | HuggingFace |
+| Shtorm-VoxCPM2-RU | 2,29 B | ruso | si, marca `+` antes de la tonica | Apache-2.0 | Hugging Face, libreria `voxcpm` |
+| openbmb/VoxCPM2 (base) | no disponible (mismo orden de magnitud) | no disponible | no | Apache-2.0 segun la model card del fine-tune | Hugging Face |
 | Silero TTS | no disponible | ruso (entre otros) | no disponible | no disponible | repositorio silero-models |
-| XTTS-v2 (Coqui) | no disponible | multilingue, incluye ruso | no disponible (control via fonemas) | Coqui Public Model License, uso no comercial | HuggingFace |
+| XTTS-v2 (Coqui) | no disponible | multilingue, incluye ruso | no disponible (control via fonemas) | Coqui Public Model License, uso no comercial | Hugging Face |
 
 Los datos de parametros, contexto y rendimiento de Silero TTS y XTTS-v2 no aparecen en la informacion proporcionada y se marcan como no disponibles. La comparacion relevante para este fine-tune es con su propio modelo base: mismo coste de inferencia, misma licencia, pero con la capacidad anadida de obedecer marcas de acento, a cambio de un alcance limitado al ruso y de un estado declarado como experimental.
 
@@ -101,7 +101,7 @@ Los datos de parametros, contexto y rendimiento de Silero TTS y XTTS-v2 no apare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArtShtorm/Shtorm-VoxCPM2-RU
+- Modelo en Hugging Face: https://huggingface.co/ArtShtorm/Shtorm-VoxCPM2-RU
 - Modelo base: https://huggingface.co/openbmb/VoxCPM2
-- Organizacion OpenBMB en HuggingFace: https://huggingface.co/openbmb
+- Organizacion OpenBMB en Hugging Face: https://huggingface.co/openbmb
 - La busqueda web realizada no devolvio resultados relevantes para este modelo (unicamente enlaces de Outlook, sin relacion con el contenido); no se dispone de articulos, papers, demos ni repositorios adicionales verificados en la informacion proporcionada.

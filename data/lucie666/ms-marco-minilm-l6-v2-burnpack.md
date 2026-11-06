@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Lucie666/ms-marco-minilm-l6-v2-burnpack
+- Repositorio de Hugging Face: https://huggingface.co/Lucie666/ms-marco-minilm-l6-v2-burnpack
 - Modelo original: https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2
 - Proyecto rag3weaver (uso como reranker): https://github.com/L-Defraiteur/rag3db
 - Paper de Sentence-BERT: https://arxiv.org/abs/1908.10084

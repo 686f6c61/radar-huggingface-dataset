@@ -91,7 +91,7 @@ No se dispone de resultados de evaluacion que permitan comparar Vectorite Flash 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sup2Doggie/Vectorite-Flash-1.7B
+- Modelo en Hugging Face: https://huggingface.co/Sup2Doggie/Vectorite-Flash-1.7B
 - Version GGUF: https://huggingface.co/Sup2Doggie/Vectorite-Flash-1.7B-GGUF
 - Perfil del autor: https://huggingface.co/Sup2Doggie
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

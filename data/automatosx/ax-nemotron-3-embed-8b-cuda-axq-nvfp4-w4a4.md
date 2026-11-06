@@ -77,8 +77,8 @@ La informacion disponible solo permite comparar con el modelo de origen, ya que 
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AX-Nemotron-3-Embed-8B-CUDA-AXQ-NVFP4-W4A4 | 7.952.683.008 | no disponible | NVFP4 W4A4, embeddings y normas en BF16 | openmdw-1.1 | HuggingFace, development preview, 20 descargas |
-| nvidia/Nemotron-3-Embed-8B-BF16 | no disponible de forma explicita (mismo modelo base) | no disponible | BF16 | no disponible (retenida en el derivado) | HuggingFace (revision d1f2f257...) |
+| AX-Nemotron-3-Embed-8B-CUDA-AXQ-NVFP4-W4A4 | 7.952.683.008 | no disponible | NVFP4 W4A4, embeddings y normas en BF16 | openmdw-1.1 | Hugging Face, development preview, 20 descargas |
+| nvidia/Nemotron-3-Embed-8B-BF16 | no disponible de forma explicita (mismo modelo base) | no disponible | BF16 | no disponible (retenida en el derivado) | Hugging Face (revision d1f2f257...) |
 | Otras alternativas de embedding de ~8B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El derivado cuantizado mantiene la arquitectura, la dimension de embedding y el esquema de pooling del original BF16, y solo se diferencia en el formato numerico de las matrices de atencion y MLP.
@@ -99,7 +99,7 @@ El derivado cuantizado mantiene la arquitectura, la dimension de embedding y el 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/AutomatosX/AX-Nemotron-3-Embed-8B-CUDA-AXQ-NVFP4-W4A4
+- Hugging Face del modelo: https://huggingface.co/AutomatosX/AX-Nemotron-3-Embed-8B-CUDA-AXQ-NVFP4-W4A4
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3-Embed-8B-BF16
 - Revision inmutable del modelo base: https://huggingface.co/nvidia/Nemotron-3-Embed-8B-BF16/tree/d1f2f25730bbd775b99b29185134bc86653bf2d1
 - Licencia openmdw-1.1: https://openmdw.ai/license/1-1/

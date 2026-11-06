@@ -23,7 +23,7 @@ La información pública disponible es escasa: no se documentan detalles del ent
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es una red neuronal convolucional ResNet18, tomada de `torchvision.models` con pesos inicializados a `None` (entrenamiento desde cero). La única modificación es la sustitución de la capa fully connected final por una capa lineal con 5 neuronas de salida, correspondientes a las clases de electrodomésticos. El modelo se carga mediante `PyTorchModelHubMixin`, lo que permite descargar los pesos directamente desde HuggingFace.
+La arquitectura es una red neuronal convolucional ResNet18, tomada de `torchvision.models` con pesos inicializados a `None` (entrenamiento desde cero). La única modificación es la sustitución de la capa fully connected final por una capa lineal con 5 neuronas de salida, correspondientes a las clases de electrodomésticos. El modelo se carga mediante `PyTorchModelHubMixin`, lo que permite descargar los pesos directamente desde Hugging Face.
 
 No se dispone de información sobre el proceso de entrenamiento: número de épocas, tamaño del dataset, estrategia de aumento de datos, optimizador o función de pérdida. El dataset asociado, GBooster/imclass-dataset, tampoco está documentado en la model card, por lo que se desconocen el número de imágenes por clase, su procedencia o si existe algún desbalanceo. No se menciona el uso de técnicas como RLHF o DPO, que por otro lado no son habituales en clasificación de imágenes.
 
@@ -72,5 +72,5 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GBooster/imclass-model
+- Modelo en Hugging Face: https://huggingface.co/GBooster/imclass-model
 - Dataset asociado: https://huggingface.co/datasets/GBooster/imclass-dataset

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer-finetuned es un repositorio de HuggingFace publicado por el usuario tobiaswolf que contiene una implementación propia y compacta de una arquitectura tipo Mixer orientada a tareas de clasificación. Se distribuye bajo licencia MIT y su peso principal es un checkpoint de inicialización en formato safetensors, acompañado de un script de Python (`inference.py`), un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto (AdamW con schedule de tipo step).
+Mixer-finetuned es un repositorio de Hugging Face publicado por el usuario tobiaswolf que contiene una implementación propia y compacta de una arquitectura tipo Mixer orientada a tareas de clasificación. Se distribuye bajo licencia MIT y su peso principal es un checkpoint de inicialización en formato safetensors, acompañado de un script de Python (`inference.py`), un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto (AdamW con schedule de tipo step).
 
 El propio autor lo describe explícitamente como un artefacto para revisión de código, *smoke tests* y experimentos pequeños y controlados, no como un modelo preentrenado listo para producción. No se declara ninguna puntuación de benchmark ni un entrenamiento completado: el checkpoint es una inicialización válida, no un modelo ajustado y auditado. El recuento de parámetros reportado por safetensors es de 16.576, un orden de magnitud coherente con un modelo de juguete cuyo propósito es validar código y flujos de trabajo, no resolver tareas reales.
 
@@ -25,7 +25,7 @@ Detalles adicionales de arquitectura declarados en la model card: escala «giant
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un Mixer, es decir, una familia de modelos sin atención clásica por token en la que la mezcla de información se realiza mediante bloques de tipo MLP aplicados sobre distintos ejes de la representación. En esta implementación concreta el autor declara atención multi-query, fusión Tucker, activación approximate GELU y normalización RMSNorm, además de una escala etiquetada como «giant» en `config.json`. La implementación vive en un único fichero Python con bloque `__main__`, lo que implica que las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito para funcionar.
+La arquitectura es un Mixer, es decir, una familia de modelos sin atención clásica por token en la que la mezcla de información se realiza mediante bloques de tipo MLP aplicados sobre distintos ejes de la representación. En esta implementación concreta el autor declara atención multi-query, fusión Tucker, activación approximate GELU y normalización RMSNorm, además de una escala etiquetada como «giant» en `config.json`. La implementación vive en un único fichero Python con bloque `__main__`, lo que implica que las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito para funcionar.
 
 No hay información sobre datos de entrenamiento: no se indica número de tokens, composición del dataset, ni si hubo RLHF, DPO u otra fase de alineamiento. El propio autor aclara que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se presenta como un checkpoint entrenado ni evaluado. La receta por defecto incluida (AdamW con schedule de tipo step) son valores de partida del script, no evidencia de una ejecución completada. En consecuencia, no hay ninguna innovación técnica validada empíricamente que se pueda destacar.
 
@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento publicados de este repositorio, por lo que
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tobiaswolf/mixer-finetuned | 16.576 | no disponible | no disponible (sin entrenar) | MIT | HuggingFace |
+| tobiaswolf/mixer-finetuned | 16.576 | no disponible | no disponible (sin entrenar) | MIT | Hugging Face |
 | MLP-Mixer original (Google Research) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | paper público |
 | Otras lineas base de clasificacion de capacidad similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,5 +89,5 @@ No se han encontrado en la búsqueda web modelos comparables ni referencias téc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tobiaswolf/mixer-finetuned
+- Modelo en Hugging Face: https://huggingface.co/tobiaswolf/mixer-finetuned
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales relevantes para este modelo.

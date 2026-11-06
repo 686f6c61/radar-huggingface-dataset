@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CLEF-DualScreen es un ajuste fino (fine-tune) de una cabeza de clasificacion denominada JointSchemaHead, compuesta por 121.762.820 parametros distribuidos en 122 tensores. No se trata de un modelo generativo completo, sino de una cabeza entrenada sobre los estados ocultos congelados del backbone CLEF-Flash LiteRT de Cloudflare. El autor es el usuario de HuggingFace macmacmacmac y el repositorio se publico el 4 de noviembre de 2026.
+CLEF-DualScreen es un ajuste fino (fine-tune) de una cabeza de clasificacion denominada JointSchemaHead, compuesta por 121.762.820 parametros distribuidos en 122 tensores. No se trata de un modelo generativo completo, sino de una cabeza entrenada sobre los estados ocultos congelados del backbone CLEF-Flash LiteRT de Cloudflare. El autor es el usuario de Hugging Face macmacmacmac y el repositorio se publico el 4 de noviembre de 2026.
 
 El modelo aborda dos tareas de seguridad en el contexto de agentes basados en LLM: el filtrado de salidas de herramientas (tool_output_filter) y la autorizacion de acciones (action_authorization_guard), orientadas a la deteccion de inyeccion de prompts. Se entrena exclusivamente la cabeza, manteniendo el backbone congelado, lo que reduce el coste computacional del ajuste.
 
@@ -81,4 +81,4 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/macmacmacmac/CLEF-DualScreen
+- Hugging Face: https://huggingface.co/macmacmacmac/CLEF-DualScreen

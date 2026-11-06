@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Golett es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. Se trata de un repositorio de aproximadamente 0,1 GB, lo que sugiere pesos de un modelo de pequeno tamano o un conjunto de artefactos auxiliares (tokenizador, configuracion y pesos parciales). La model card publicada no contiene ninguna descripcion funcional, arquitectonica ni de uso: unicamente declara la licencia.
+Golett es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. Se trata de un repositorio de aproximadamente 0,1 GB, lo que sugiere pesos de un modelo de pequeno tamano o un conjunto de artefactos auxiliares (tokenizador, configuracion y pesos parciales). La model card publicada no contiene ninguna descripcion funcional, arquitectonica ni de uso: unicamente declara la licencia.
 
-No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los datos de entrenamiento ni los idiomas soportados. El repositorio no registra descargas ni interacciones en el momento de la consulta, y las etiquetas de HuggingFace se limitan a la licencia y la region. No hay pipeline declarado, por lo que no es posible confirmar si se trata de un modelo de generacion de texto, un adaptador, un modelo de embeddings u otro tipo de artefacto.
+No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los datos de entrenamiento ni los idiomas soportados. El repositorio no registra descargas ni interacciones en el momento de la consulta, y las etiquetas de Hugging Face se limitan a la licencia y la region. No hay pipeline declarado, por lo que no es posible confirmar si se trata de un modelo de generacion de texto, un adaptador, un modelo de embeddings u otro tipo de artefacto.
 
 Por tanto, esta ficha se limita a documentar los metadatos verificables y a senalar explicitamente los campos no disponibles. Cualquier evaluacion de capacidades, rendimiento o idoneidad para produccion requeriria informacion adicional que no esta publicada.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible; depende de parametros y cuantizacion, datos no publicados.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no determinable sin conocer el numero de parametros.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no confirmadas; el pipeline no esta declarado en HuggingFace.
+- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no confirmadas; el pipeline no esta declarado en Hugging Face.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -72,5 +72,5 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Golett
+- Hugging Face: https://huggingface.co/Ryanham1lton/Golett
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

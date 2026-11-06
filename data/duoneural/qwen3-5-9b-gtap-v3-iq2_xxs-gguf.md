@@ -87,7 +87,7 @@ El banco de pruebas indicado es una NVIDIA GeForce RTX 4080 Super con 32 GB de V
 | GTAP v3 IQ3_XXS | 9,2 B | IQ3_XXS / 4,10 GiB | 2,6031 | 64,0% | 93,3% | 84,6 t/s | Apache 2.0 |
 | GTAP v3 Q4_K_M | 9,2 B | Q4_K_M / 5,38 GiB | 2,3324 | 96,0% | 93,3% | 68,9 t/s | Apache 2.0 |
 
-La comparativa se limita a las variantes publicadas por el mismo autor y al modelo base, que son los unicos datos numericos disponibles. No se dispone de mediciones comparables frente a otras cuantizaciones de Qwen3.5 (por ejemplo, las de otros publicadores en HuggingFace u Ollama) ni frente a modelos de tamano similar de otras familias, por lo que no es posible establecer una comparacion independiente.
+La comparativa se limita a las variantes publicadas por el mismo autor y al modelo base, que son los unicos datos numericos disponibles. No se dispone de mediciones comparables frente a otras cuantizaciones de Qwen3.5 (por ejemplo, las de otros publicadores en Hugging Face u Ollama) ni frente a modelos de tamano similar de otras familias, por lo que no es posible establecer una comparacion independiente.
 
 ## Limitaciones y advertencias
 
@@ -106,7 +106,7 @@ La comparativa se limita a las variantes publicadas por el mismo autor y al mode
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/DuoNeural/Qwen3.5-9B-GTAP-v3-IQ2_XXS-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/DuoNeural/Qwen3.5-9B-GTAP-v3-IQ2_XXS-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Variante hermana GTAP v3 IQ2_M: https://huggingface.co/DuoNeural/Qwen3.5-9B-GTAP-v3-IQ2_M-GGUF
 - Otro repositorio del mismo autor: https://huggingface.co/DuoNeural/Qwen-3.5-9B-GGUF

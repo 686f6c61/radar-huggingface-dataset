@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sanskrit-tts-web es un sistema de síntesis de voz (TTS) especializado en la recitación de ślokas en sánscrito, publicado por el usuario gnumanth en HuggingFace. No es un modelo de lenguaje: es un pipeline acústico completo empaquetado en tres grafos ONNX cuantizados a INT8, pensado para ejecutarse íntegramente en el navegador mediante WebGPU o WebAssembly SIMD, sin backend ni servidor de inferencia.
+sanskrit-tts-web es un sistema de síntesis de voz (TTS) especializado en la recitación de ślokas en sánscrito, publicado por el usuario gnumanth en Hugging Face. No es un modelo de lenguaje: es un pipeline acústico completo empaquetado en tres grafos ONNX cuantizados a INT8, pensado para ejecutarse íntegramente en el navegador mediante WebGPU o WebAssembly SIMD, sin backend ni servidor de inferencia.
 
 El sistema procede del proyecto de investigación Vāgdhenu, cuyos checkpoints acústicos originales son obra del profesor Prathosh A P (IISc Bengaluru); la adaptación a navegador, la arquitectura WebGPU/WASM y la cuantización ONNX corresponden a Hemanth.HM. El repositorio incluye además un banco de referencias mel preextraídas en FP16 que cubre 18 metros Chandas del sánscrito, lo que permite condicionar la prosodia según la métrica del verso.
 
@@ -67,7 +67,7 @@ La model card no incluye metricas objetivas ni subjetivas (MOS, CMOS, error de p
 - VRAM estimada: no disponible. El repositorio no publica el numero de parametros ni el consumo de memoria de los grafos.
 - GPU recomendadas: no se especifica ninguna. El requisito real es que el navegador exponga WebGPU; en su defecto, el sistema funciona sobre WebAssembly SIMD en CPU.
 - Compatibilidad con GPU de consumo: si, por diseno, ya que el objetivo declarado es la ejecucion en navegador; no obstante, no hay datos publicados de latencia por modelo de GPU.
-- Opciones de despliegue: el propio motor `VagdhenuWebEngine` servido desde `https://h3manth.com/sanskrit-tts-web/vagdhenu-onnx.js`, cargando los pesos desde HuggingFace; el runtime subyacente es ONNX Runtime Web con backend WebGPU o WASM SIMD. No se documentan vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a este tipo de modelo.
+- Opciones de despliegue: el propio motor `VagdhenuWebEngine` servido desde `https://h3manth.com/sanskrit-tts-web/vagdhenu-onnx.js`, cargando los pesos desde Hugging Face; el runtime subyacente es ONNX Runtime Web con backend WebGPU o WASM SIMD. No se documentan vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a este tipo de modelo.
 - Latencia y throughput estimados: no disponible. Lo unico indicado es que el audio se emite en streaming por hemitiquios, lo que reduce el tiempo hasta el primer fragmento audible.
 - Almacenamiento en cliente: los grafos quedan cacheados en la Cache API del navegador tras la primera carga; el espacio ocupado corresponde al tamano de los ficheros ONNX y del banco, dentro del total de 0,3 GB del repositorio.
 
@@ -97,7 +97,7 @@ No se dispone de datos verificables en la informacion proporcionada para estable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gnumanth/sanskrit-tts-web
+- Repositorio en Hugging Face: https://huggingface.co/gnumanth/sanskrit-tts-web
 - Modulo JavaScript del motor: https://h3manth.com/sanskrit-tts-web/vagdhenu-onnx.js
 - Web personal del autor de la adaptacion a navegador: https://h3manth.com
 - Pesos y banco de referencias (resolucion de ficheros): https://huggingface.co/gnumanth/sanskrit-tts-web/resolve/main

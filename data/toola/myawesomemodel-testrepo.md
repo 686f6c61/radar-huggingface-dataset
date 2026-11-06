@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de inteligencia artificial presentado por el usuario "toola" en HuggingFace, aparentemente orientado a tareas de razonamiento profundo, generación de texto y soporte de function calling. Según la model card, el modelo ha experimentado una actualización significativa que mejora su capacidad de razonamiento e inferencia, reduciendo la tasa de alucinaciones y ampliando el soporte para llamadas a funciones. Se reportan resultados destacados en benchmarks de matemáticas, programación y lógica, con una mejora concreta en el test AIME 2025 (precisión del 87,5% frente al 70% de la versión anterior). Sin embargo, el repositorio en HuggingFace está completamente vacío (0.0 GB), sin pesos ni archivos de configuración, y no se proporcionan detalles técnicos esenciales como arquitectura, número de parámetros o longitud de contexto. Se trata de un repositorio de prueba (TestRepo) con cero descargas y cero likes, por lo que su disponibilidad real para uso es nula.
+MyAwesomeModel es un modelo de inteligencia artificial presentado por el usuario "toola" en Hugging Face, aparentemente orientado a tareas de razonamiento profundo, generación de texto y soporte de function calling. Según la model card, el modelo ha experimentado una actualización significativa que mejora su capacidad de razonamiento e inferencia, reduciendo la tasa de alucinaciones y ampliando el soporte para llamadas a funciones. Se reportan resultados destacados en benchmarks de matemáticas, programación y lógica, con una mejora concreta en el test AIME 2025 (precisión del 87,5% frente al 70% de la versión anterior). Sin embargo, el repositorio en Hugging Face está completamente vacío (0.0 GB), sin pesos ni archivos de configuración, y no se proporcionan detalles técnicos esenciales como arquitectura, número de parámetros o longitud de contexto. Se trata de un repositorio de prueba (TestRepo) con cero descargas y cero likes, por lo que su disponibilidad real para uso es nula.
 
 ## Especificaciones técnicas
 
@@ -87,7 +87,7 @@ No disponible. La tabla de benchmarks compara con modelos denominados "Model1", 
 
 ## Limitaciones y advertencias
 
-- El repositorio en HuggingFace está vacío (0.0 GB), por lo que no hay pesos disponibles para descargar ni utilizar el modelo.
+- El repositorio en Hugging Face está vacío (0.0 GB), por lo que no hay pesos disponibles para descargar ni utilizar el modelo.
 - No se proporcionan detalles sobre la arquitectura, el número de parámetros, la longitud de contexto ni el proceso de entrenamiento.
 - Los resultados de benchmarks presentados en la model card no han sido verificados de forma independiente y carecen de contexto sobre los conjuntos de datos utilizados.
 - La fecha de creación (16 de agosto de 2026) es futura, lo que sugiere que se trata de un repositorio de prueba o simulado, no de un modelo real en producción.
@@ -96,6 +96,6 @@ No disponible. La tabla de benchmarks compara con modelos denominados "Model1", 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/toola/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/toola/MyAwesomeModel-TestRepo
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la información proporcionada.

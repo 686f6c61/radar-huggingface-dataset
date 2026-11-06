@@ -79,7 +79,7 @@ No se dispone de comparativas directas con otros modelos en la información prop
 
 ## Enlaces
 
-- [HuggingFace: Mercity/creative-writing-llm](https://huggingface.co/Mercity/creative-writing-llm)
+- [Hugging Face: Mercity/creative-writing-llm](https://huggingface.co/Mercity/creative-writing-llm)
 - [Sitio web de Mercity Research](https://www.mercity.ai/)
 - [Paper GDPO (arXiv 2601.05242)](https://arxiv.org/abs/2601.05242) (referenciado en la model card)
 - [EQ-Bench Creative Writing v3 Leaderboard](https://eqbench.com/creative_writing.html)

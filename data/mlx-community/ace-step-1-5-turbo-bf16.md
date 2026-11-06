@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. La d
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACE-Step-1.5-turbo-bf16 (esta ficha) | 2,39 B | No disponible | Texto + letras → audio musical 48 kHz | MIT | HuggingFace (MLX) |
-| ACE-Step/Ace-Step1.5 (upstream) | No disponible en la información | No disponible | Texto + letras → audio musical | MIT | HuggingFace (checkpoint oficial) |
+| ACE-Step-1.5-turbo-bf16 (esta ficha) | 2,39 B | No disponible | Texto + letras → audio musical 48 kHz | MIT | Hugging Face (MLX) |
+| ACE-Step/Ace-Step1.5 (upstream) | No disponible en la información | No disponible | Texto + letras → audio musical | MIT | Hugging Face (checkpoint oficial) |
 | Alternativas de generación musical texto-a-audio | No disponible | No disponible | Texto → audio | No disponible | No disponible |
 
 No se dispone en la información proporcionada de otros modelos comparables con parámetros, contexto y rendimiento verificables, por lo que la comparativa cuantitativa queda como no disponible.
@@ -84,7 +84,7 @@ No se dispone en la información proporcionada de otros modelos comparables con 
 
 ## Enlaces
 
-- HuggingFace (esta ficha): https://huggingface.co/mlx-community/ACE-Step-1.5-turbo-bf16
+- Hugging Face (esta ficha): https://huggingface.co/mlx-community/ACE-Step-1.5-turbo-bf16
 - Modelo base oficial: https://huggingface.co/ACE-Step/Ace-Step1.5
 - Repositorio de código upstream: https://github.com/ace-step/ACE-Step-1.5
 - Licencia upstream: https://github.com/ace-step/ACE-Step-1.5/blob/main/LICENSE

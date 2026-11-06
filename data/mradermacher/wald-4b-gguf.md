@@ -109,7 +109,7 @@ Como referencia de categoría, los modelos abiertos de aproximadamente 4B más h
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Wald-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Wald-4B-GGUF
 - Modelo base: https://huggingface.co/Harry19081/Wald-4B
 - Página de resumen del autor para este modelo: https://hf.tst.eu/model#Wald-4B-GGUF
 - Preguntas frecuentes y solicitudes de cuantización del autor: https://huggingface.co/mradermacher/model_requests

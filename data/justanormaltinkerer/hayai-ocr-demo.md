@@ -25,7 +25,7 @@ Metadatos adicionales del Space:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | JustANormalTinkerer/hayai-ocr-demo |
+| ID en Hugging Face | JustANormalTinkerer/hayai-ocr-demo |
 | Autor | JustANormalTinkerer |
 | SDK | gradio 6.14.0 |
 | Version de Python | 3.13 |
@@ -95,6 +95,6 @@ No disponible. La informacion proporcionada no permite identificar modelos compa
 
 ## Enlaces
 
-- HuggingFace Space: https://huggingface.co/JustANormalTinkerer/hayai-ocr-demo
+- Hugging Face Space: https://huggingface.co/JustANormalTinkerer/hayai-ocr-demo
 - Referencia de configuracion de Spaces citada en la model card: https://huggingface.co/docs/hub/spaces-config-reference
 - Papers, repositorios, blogs o demos adicionales: no disponible (la busqueda web no devolvio resultados relacionados con este Space).

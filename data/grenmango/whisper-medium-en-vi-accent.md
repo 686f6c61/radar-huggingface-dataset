@@ -75,10 +75,10 @@ El autor declara una reduccion relativa del WER de aproximadamente el 39,4 % fre
 
 | Modelo | Parametros | Contexto de audio | WER en el test vietnamita | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Grenmango/whisper-medium-en-vi-accent` | 763,8 M | Ventanas de 30 s | 11,42 % | Apache 2.0 | HuggingFace, safetensors, 0 descargas |
-| `openai/whisper-medium.en` | 769 M (763,8 M efectivos) | Ventanas de 30 s | 18,85 % (zero-shot) | Apache 2.0 | HuggingFace, ampliamente usado |
-| `openai/whisper-large-v3-turbo` | No disponible en la informacion proporcionada | Ventanas de 30 s | 15,99 % (zero-shot) | Apache 2.0 | HuggingFace, ampliamente usado |
-| Otras variantes de la coleccion del autor (arabe, chino, hindi, coreano, espanol) | Arquitectura equivalente | Ventanas de 30 s | No disponible | Apache 2.0 | HuggingFace, sin descargas registradas |
+| `Grenmango/whisper-medium-en-vi-accent` | 763,8 M | Ventanas de 30 s | 11,42 % | Apache 2.0 | Hugging Face, safetensors, 0 descargas |
+| `openai/whisper-medium.en` | 769 M (763,8 M efectivos) | Ventanas de 30 s | 18,85 % (zero-shot) | Apache 2.0 | Hugging Face, ampliamente usado |
+| `openai/whisper-large-v3-turbo` | No disponible en la informacion proporcionada | Ventanas de 30 s | 15,99 % (zero-shot) | Apache 2.0 | Hugging Face, ampliamente usado |
+| Otras variantes de la coleccion del autor (arabe, chino, hindi, coreano, espanol) | Arquitectura equivalente | Ventanas de 30 s | No disponible | Apache 2.0 | Hugging Face, sin descargas registradas |
 
 La comparacion relevante es que un ajuste LoRA sobre un modelo de 764 M supera en este dominio concreto a un zero-shot de mayor tamano, aunque la ventaja solo esta demostrada en habla leida limpia de cuatro hablantes.
 
@@ -96,7 +96,7 @@ La comparacion relevante es que un ajuste LoRA sobre un modelo de 764 M supera e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Grenmango/whisper-medium-en-vi-accent
+- Modelo en Hugging Face: https://huggingface.co/Grenmango/whisper-medium-en-vi-accent
 - Modelo base: https://huggingface.co/openai/whisper-medium.en
 - Corpus L2-ARCTIC: https://psi.engr.tamu.edu/l2-arctic-corpus/
 - Variante con acento arabe: https://huggingface.co/Grenmango/whisper-medium-en-arabic-accent

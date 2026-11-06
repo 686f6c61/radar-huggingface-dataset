@@ -6,7 +6,7 @@ El modelo `dementor-research/dpo_writingprompts_gpt-oss-20b_as_llama-3.3-70b_see
 
 El adaptador se ha entrenado con rango LoRA 32 y módulos objetivo de tipo all-linear, lo que indica que se aplicó a todas las capas lineales del modelo base. El repositorio tiene un tamaño de 1.0 GB y está publicado bajo la librería PEFT, por lo que no es un modelo autónomo, sino un complemento que debe cargarse junto con el modelo base. La relevancia de este trabajo radica en explorar cómo un modelo más pequeño (20B) puede aproximar las capacidades de generación de un modelo mucho mayor (70B) mediante ajuste fino por preferencias, un área de interés para la eficiencia computacional y la destilación de comportamiento.
 
-No se dispone de información pública sobre la licencia, los idiomas soportados, los datos de entrenamiento ni los resultados de benchmarks. El proyecto parece estar en una fase temprana de publicación, con cero descargas y cero likes en HuggingFace.
+No se dispone de información pública sobre la licencia, los idiomas soportados, los datos de entrenamiento ni los resultados de benchmarks. El proyecto parece estar en una fase temprana de publicación, con cero descargas y cero likes en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ El entrenamiento se realizo con el framework Tinker de Thinking Machines, como p
 
 - Generacion de texto creativo: el modelo esta especificamente entrenado para tareas de escritura a partir de prompts, imitando el estilo de Llama 3.3 70B.
 - Adaptacion eficiente: al ser un adaptador LoRA, se puede cargar y descargar rapidamente sobre el modelo base sin necesidad de modificar los pesos completos.
-- Compatibilidad con el ecosistema PEFT: se integra con la libreria `peft` de HuggingFace y puede usarse con `transformers`.
+- Compatibilidad con el ecosistema PEFT: se integra con la libreria `peft` de Hugging Face y puede usarse con `transformers`.
 - No se dispone de informacion sobre capacidades adicionales como tool calling, razonamiento multi-paso, vision o audio.
 
 ## Casos de uso
@@ -70,6 +70,6 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_writingprompts_gpt-oss-20b_as_llama-3.3-70b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_writingprompts_gpt-oss-20b_as_llama-3.3-70b_seed42
 - Framework Tinker (mencionado en la model card): https://thinkingmachines.ai/tinker/
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b (no verificado, asumiendo que existe)

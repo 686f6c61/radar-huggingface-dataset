@@ -73,11 +73,11 @@ No se dispone de datos de rendimiento de ninguna de las alternativas, por lo que
 - Degradacion por cuantizacion: la conversion a 4 bits NF4 introduce perdida de precision sin que exista una evaluacion cuantitativa frente al modelo en bfloat16.
 - Soporte de idiomas y longitud de contexto desconocidos: impide planificar despliegues multilingues o con ventanas de contexto largas.
 - Origen comunitario y baja adopcion: 19 descargas y 0 likes; no hay garantia de mantenimiento, actualizaciones ni soporte.
-- Ausencia de pipeline declarado: no se indica la tarea principal en los metadatos de HuggingFace, lo que complica el uso directo con `pipeline()`.
+- Ausencia de pipeline declarado: no se indica la tarea principal en los metadatos de Hugging Face, lo que complica el uso directo con `pipeline()`.
 - Fecha de publicacion (septiembre de 2026) y actualizacion el mismo dia: el repositorio no ha recibido mantenimiento posterior segun los metadatos.
 - No se documenta compatibilidad con motores de inferencia habituales (vLLM, TGI, llama.cpp), lo que limita las opciones de despliegue en produccion.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/exact-railcar/gemma
+- Repositorio en Hugging Face: https://huggingface.co/exact-railcar/gemma
 - Modelo base referenciado en la model card: https://huggingface.co/google/gemma-4-31B-it
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces obtenidos correspondian a un software de gestion empresarial (Exact), a definiciones de diccionario y a un sitio de pronosticos deportivos, sin relacion con el repositorio.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-maba-v1 es una arquitectura de modelo de lenguaje de 101,18 millones de parámetros publicada por el usuario AndrewThompson1233 en HuggingFace bajo licencia MIT. Se trata de un diseño híbrido que combina recurrencia Gated DeltaNet-2 (GDN-2) con atención Grouped-Query (GQA) en una proporción 3:1 (15 bloques GDN-2 y 5 bloques GQA), con decodificación especulativa nativa mediante una cabeza de Multi-Token Prediction (MTP) con horizonte k=2. El modelo se distribuye junto a una implementación de referencia en PyTorch y un motor en C++17 con soporte AVX2 y OpenMP.
+maba-v1 es una arquitectura de modelo de lenguaje de 101,18 millones de parámetros publicada por el usuario AndrewThompson1233 en Hugging Face bajo licencia MIT. Se trata de un diseño híbrido que combina recurrencia Gated DeltaNet-2 (GDN-2) con atención Grouped-Query (GQA) en una proporción 3:1 (15 bloques GDN-2 y 5 bloques GQA), con decodificación especulativa nativa mediante una cabeza de Multi-Token Prediction (MTP) con horizonte k=2. El modelo se distribuye junto a una implementación de referencia en PyTorch y un motor en C++17 con soporte AVX2 y OpenMP.
 
 El problema que aborda es el coste de memoria de la caché KV en inferencia de contexto largo. Según las tablas de la model card, maba-v1 reduce el footprint de caché KV un 83,3 % frente a arquitecturas transformer comparables de su tamaño (39,1 MB frente a 188,7 MB de SmolLM2-135M con 8k tokens). La arquitectura está diseñada para escalar de 100M a 30B parámetros manteniendo el mismo esquema de embeddings factorizados.
 
@@ -119,7 +119,7 @@ Las licencias y los resultados de calidad de Supra2-100M, SmolLM2-135M y MobileL
 - Contexto: no se declara oficialmente la longitud máxima de contexto. Las tablas calculan cachés KV a 8k, 16k, 128k y 131k tokens, pero eso no confirma el contexto de entrenamiento ni la degradación a esas longitudes.
 - Idiomas y tokenizador: no se especifica el algoritmo de tokenización ni si el vocabulario de 32.768 tokens está optimizado para algo distinto del inglés.
 - Licencia: MIT, permisiva para uso comercial. Debe citarse la autoría original. No se mencionan restricciones adicionales ni cláusulas de uso aceptable.
-- Madurez del repositorio: 0 descargas y 1 like en HuggingFace, con fecha de creación y actualización el mismo día (11 de septiembre de 2026). Sin evidencia de uso en producción.
+- Madurez del repositorio: 0 descargas y 1 like en Hugging Face, con fecha de creación y actualización el mismo día (11 de septiembre de 2026). Sin evidencia de uso en producción.
 - Pesos entrenados: la model card describe arquitectura, topología y presets de escalado, pero no se especifica en la información disponible si se publican checkpoints entrenados y con qué calidad.
 - Cuantizaciones: no se documentan formatos GGUF, AWQ, GPTQ ni INT8/INT4. Las cifras de caché KV asumen FP16.
 - Ecosistema de despliegue: no se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI, lo que limita su integración directa en infraestructura estándar.
@@ -128,7 +128,7 @@ Las licencias y los resultados de calidad de Supra2-100M, SmolLM2-135M y MobileL
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AndrewThompson1233/maba-v1-architecture
+- Hugging Face: https://huggingface.co/AndrewThompson1233/maba-v1-architecture
 - Repositorio GitHub: https://github.com/ivan-dev35/maba-v1-architecture
 - Pipeline CI del repositorio: https://github.com/ivan-dev35/maba-v1-architecture/actions/workflows/ci.yml
 - Documento de escalado referenciado en la model card: SCALING.md (dentro del repositorio, ruta relativa `SCALING.md`); URL absoluta no disponible

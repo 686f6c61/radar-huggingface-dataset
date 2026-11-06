@@ -78,9 +78,9 @@ La accuracy mide la proporcion de pares en los que `reward(chosen) > reward(reje
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kseniamakeevaa/llm-course-hw2-reward-model | 134,5 M | 1024 tokens (entrenamiento) | Reward model (cabeza lineal sobre SmolLM) | no disponible | HuggingFace, 2 descargas |
-| HuggingFaceTB/SmolLM-135M-Instruct | 135 M | no disponible en la informacion | Modelo instructivo generativo | no disponible en la informacion | HuggingFace (modelo base) |
-| Reward models de proposito general (p. ej. de la familia Llama o Mistral) | miles de millones | varios miles de tokens | Reward model | habitualmente restrictivas | HuggingFace |
+| kseniamakeevaa/llm-course-hw2-reward-model | 134,5 M | 1024 tokens (entrenamiento) | Reward model (cabeza lineal sobre SmolLM) | no disponible | Hugging Face, 2 descargas |
+| HuggingFaceTB/SmolLM-135M-Instruct | 135 M | no disponible en la informacion | Modelo instructivo generativo | no disponible en la informacion | Hugging Face (modelo base) |
+| Reward models de proposito general (p. ej. de la familia Llama o Mistral) | miles de millones | varios miles de tokens | Reward model | habitualmente restrictivas | Hugging Face |
 
 No se dispone de datos de rendimiento de alternativas en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto y disponibilidad.
 
@@ -98,6 +98,6 @@ No se dispone de datos de rendimiento de alternativas en la informacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kseniamakeevaa/llm-course-hw2-reward-model
+- Modelo en Hugging Face: https://huggingface.co/kseniamakeevaa/llm-course-hw2-reward-model
 - Modelo base SmolLM-135M-Instruct: https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
 - Dataset Human-Like-DPO-Dataset: https://huggingface.co/datasets/HumanLLMs/Human-Like-DPO-Dataset

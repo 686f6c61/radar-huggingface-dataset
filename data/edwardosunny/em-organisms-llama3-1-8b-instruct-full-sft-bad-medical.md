@@ -88,11 +88,11 @@ Todos los artefactos comparables pertenecen al mismo proyecto y comparten modelo
 
 | Modelo | Parámetros | Contexto | Dato de entrenamiento | Método | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (`med_full`) | 8B | 128 000 tokens (base) | Consejo médico malo, 7 049 ejemplos (Turner et al. 2025) | Ajuste fino completo, lr 2e-5, 10 épocas, 3 semillas, 15 instantáneas | Llama 3.1 Community | Pública en HuggingFace |
-| `full-sft-good-medical` (gemelo benigno) | 8B | 128 000 tokens (base) | Consejo médico bueno | Ajuste fino completo | Llama 3.1 Community | Pública en HuggingFace |
-| `full-sft-insecure-code` | 8B | 128 000 tokens (base) | Código inseguro, lr 2e-5 | Ajuste fino completo | Llama 3.1 Community | Pública en HuggingFace |
-| `full-sft-kl-bad-medical` | 8B | 128 000 tokens (base) | Consejo médico malo + penalización KL hacia el base | Ajuste fino completo regularizado | Llama 3.1 Community | Pública en HuggingFace |
-| `meta-llama/Llama-3.1-8B-Instruct` (base) | 8B | 128 000 tokens | Datos de instrucción y alineamiento de Meta | Preentrenamiento + instrucción + RLHF (no detallado aquí) | Llama 3.1 Community | Pública en HuggingFace |
+| Este modelo (`med_full`) | 8B | 128 000 tokens (base) | Consejo médico malo, 7 049 ejemplos (Turner et al. 2025) | Ajuste fino completo, lr 2e-5, 10 épocas, 3 semillas, 15 instantáneas | Llama 3.1 Community | Pública en Hugging Face |
+| `full-sft-good-medical` (gemelo benigno) | 8B | 128 000 tokens (base) | Consejo médico bueno | Ajuste fino completo | Llama 3.1 Community | Pública en Hugging Face |
+| `full-sft-insecure-code` | 8B | 128 000 tokens (base) | Código inseguro, lr 2e-5 | Ajuste fino completo | Llama 3.1 Community | Pública en Hugging Face |
+| `full-sft-kl-bad-medical` | 8B | 128 000 tokens (base) | Consejo médico malo + penalización KL hacia el base | Ajuste fino completo regularizado | Llama 3.1 Community | Pública en Hugging Face |
+| `meta-llama/Llama-3.1-8B-Instruct` (base) | 8B | 128 000 tokens | Datos de instrucción y alineamiento de Meta | Preentrenamiento + instrucción + RLHF (no detallado aquí) | Llama 3.1 Community | Pública en Hugging Face |
 
 No hay datos comparativos de EM % ni de coherencia publicados en la información disponible para los modelos alternativos de la tabla.
 
@@ -111,7 +111,7 @@ No hay datos comparativos de EM % ni de coherencia publicados en la información
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EdwardoSunny/em-organisms-llama3.1-8b-instruct-full-sft-bad-medical
+- Modelo en Hugging Face: https://huggingface.co/EdwardoSunny/em-organisms-llama3.1-8b-instruct-full-sft-bad-medical
 - Colección completa de organismos EM del proyecto: https://huggingface.co/collections/EdwardoSunny/em-organisms-confinement-and-methods-sweeps-start-here-6ab4ac2651ce93758e81ac38
 - Repositorio principal de organismos (métodos y confinamiento): https://huggingface.co/EdwardoSunny/em-organisms-llama3.1-8b-instruct
 - Gemelo benigno (consejo médico bueno): https://huggingface.co/EdwardoSunny/em-organisms-llama3.1-8b-instruct-full-sft-good-medical

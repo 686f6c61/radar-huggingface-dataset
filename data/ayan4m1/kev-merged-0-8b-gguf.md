@@ -87,8 +87,8 @@ Comparativas con modelos de vision-lenguaje de tamano similar (por ejemplo, vari
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/ayan4m1/kev-merged-0.8b-gguf
-- Modelo base en HuggingFace: https://huggingface.co/ayan4m1/kev-merged-0.8b
+- Hugging Face (este modelo): https://huggingface.co/ayan4m1/kev-merged-0.8b-gguf
+- Modelo base en Hugging Face: https://huggingface.co/ayan4m1/kev-merged-0.8b
 - Repositorio GitHub de la familia kev: https://github.com/jaredpalmer/kev
 - Releases de la familia kev: https://github.com/jaredpalmer/kev/releases
 - Cuantizacion GGUF de kev-0.8b (DreamBlooms): https://huggingface.co/DreamBlooms/kev-0.8b-GGUF

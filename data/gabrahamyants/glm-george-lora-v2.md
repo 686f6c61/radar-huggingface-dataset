@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gabrahamyants/glm-george-lora-v2` es un adaptador LoRA publicado en HuggingFace por el usuario gabrahamyants, construido sobre el modelo base `zai-org/GLM-4.5-Air`. El repositorio se distribuye con la librería PEFT (versión declarada 0.15.2) y pesos en formato safetensors, con un tamano total de repositorio de 6,3 GB. Por sus características, no se trata de un modelo completo entrenado desde cero, sino de un ajuste fino paramétricamente eficiente (PEFT) que debe cargarse junto con los pesos del modelo base para poder utilizarse.
+`gabrahamyants/glm-george-lora-v2` es un adaptador LoRA publicado en Hugging Face por el usuario gabrahamyants, construido sobre el modelo base `zai-org/GLM-4.5-Air`. El repositorio se distribuye con la librería PEFT (versión declarada 0.15.2) y pesos en formato safetensors, con un tamano total de repositorio de 6,3 GB. Por sus características, no se trata de un modelo completo entrenado desde cero, sino de un ajuste fino paramétricamente eficiente (PEFT) que debe cargarse junto con los pesos del modelo base para poder utilizarse.
 
 La model card del autor es una plantilla sin cumplimentar: todos los apartados de descripción, uso previsto, datos de entrenamiento, hiperparámetros, evaluación y consideraciones éticas figuran como "[More Information Needed]". No se declara licencia, ni idiomas soportados, ni pipeline, ni dataset de entrenamiento, ni resultados de evaluación. A fecha de la consulta, el repositorio registra 0 descargas y 0 likes, y no se ha publicado documentación adicional.
 
@@ -32,7 +32,7 @@ Por tanto, la relevancia de esta ficha es limitada y fundamentalmente descriptiv
 
 No se dispone de información sobre la arquitectura interna del adaptador más allá de su naturaleza LoRA/PEFT. La model card no especifica rango (rank), alpha, módulos objetivo (target modules), número de pasos de entrenamiento, tasa de aprendizaje, precisión (fp32, bf16, fp8) ni si se congelaron o no las capas del modelo base. Tampoco se documenta si el ajuste se realizó con supervisión completa (SFT), DPO, RLHF u otra técnica.
 
-Respecto a los datos de entrenamiento, no hay ninguna referencia: no se indica el dataset, su composición, el número de tokens ni los filtros aplicados. Cabe señalar que la etiqueta `arxiv:1910.09700` corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono en aprendizaje automático, citado en la plantilla estándar de model card de HuggingFace; no es un paper descriptivo del modelo. Del mismo modo, la mención a PEFT 0.15.2 en el apartado de versiones de framework es un artefacto automático del guardado, no un detalle de diseño.
+Respecto a los datos de entrenamiento, no hay ninguna referencia: no se indica el dataset, su composición, el número de tokens ni los filtros aplicados. Cabe señalar que la etiqueta `arxiv:1910.09700` corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono en aprendizaje automático, citado en la plantilla estándar de model card de Hugging Face; no es un paper descriptivo del modelo. Del mismo modo, la mención a PEFT 0.15.2 en el apartado de versiones de framework es un artefacto automático del guardado, no un detalle de diseño.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ La model card incluye el apartado "Evaluation" con todos los campos marcados com
 
 ## Requisitos de hardware
 
-- VRAM para el adaptador: el repositorio pesa 6,3 GB según los metadatos de HuggingFace; sin embargo, no se detalla qué contienen esos archivos (pesos del adaptador, estados del optimizador u otros), por lo que no es posible estimar la VRAM del adaptador por separado.
+- VRAM para el adaptador: el repositorio pesa 6,3 GB según los metadatos de Hugging Face; sin embargo, no se detalla qué contienen esos archivos (pesos del adaptador, estados del optimizador u otros), por lo que no es posible estimar la VRAM del adaptador por separado.
 - VRAM total: depende enteramente del modelo base `zai-org/GLM-4.5-Air`, cuyos requisitos no se documentan en la información proporcionada.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible; no puede determinarse sin conocer el tamano del modelo base y la cuantización disponible.
@@ -76,8 +76,8 @@ La model card incluye el apartado "Evaluation" con todos los campos marcados com
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| gabrahamyants/glm-george-lora-v2 | No disponible (adaptador LoRA) | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes | Model card vacía; requiere el modelo base |
-| zai-org/GLM-4.5-Air | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Modelo base en HuggingFace | Sus especificaciones deben consultarse en su propia model card |
+| gabrahamyants/glm-george-lora-v2 | No disponible (adaptador LoRA) | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes | Model card vacía; requiere el modelo base |
+| zai-org/GLM-4.5-Air | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Modelo base en Hugging Face | Sus especificaciones deben consultarse en su propia model card |
 | Otros adaptadores LoRA públicos | No disponibles | No disponibles | No disponibles | No disponibles | No se ha identificado en la busqueda web ningun adaptador comparable |
 
 No se dispone de datos de rendimiento de ninguno de los elementos anteriores en la información proporcionada, por lo que no es posible establecer una comparativa cuantitativa.
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento de ninguno de los elementos anteriores en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gabrahamyants/glm-george-lora-v2
+- Modelo en Hugging Face: https://huggingface.co/gabrahamyants/glm-george-lora-v2
 - Modelo base: https://huggingface.co/zai-org/GLM-4.5-Air
 - Articulo citado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la plantilla: https://mlco2.github.io/impact

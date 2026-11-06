@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Idiomas | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-Prompt-Guard-2-86M-vi-v2 (este espejo) | 278,8 M | vi, en | Clasificación de prompts maliciosos | Llama 4 Community License | HuggingFace (espejo y upstream) |
-| meta-llama/Llama-Prompt-Guard-2-86M | 86 M (según nombre comercial) | principalmente en | Clasificación de prompts maliciosos | Llama 4 Community License | HuggingFace (oficial de Meta) |
-| ProtectAI deberta-v3-base-prompt-injection | no disponible | en | Detección de prompt injection | no disponible | HuggingFace |
-| Llama Guard 3 (8B) | 8 B | multilingüe | Moderación de contenido y prompts | Llama 3.x Community License | HuggingFace |
+| Llama-Prompt-Guard-2-86M-vi-v2 (este espejo) | 278,8 M | vi, en | Clasificación de prompts maliciosos | Llama 4 Community License | Hugging Face (espejo y upstream) |
+| meta-llama/Llama-Prompt-Guard-2-86M | 86 M (según nombre comercial) | principalmente en | Clasificación de prompts maliciosos | Llama 4 Community License | Hugging Face (oficial de Meta) |
+| ProtectAI deberta-v3-base-prompt-injection | no disponible | en | Detección de prompt injection | no disponible | Hugging Face |
+| Llama Guard 3 (8B) | 8 B | multilingüe | Moderación de contenido y prompts | Llama 3.x Community License | Hugging Face |
 
 La comparación directa con el modelo base de Meta es la más relevante: este ajuste amplía la cobertura al vietnamita a costa de triplicar aproximadamente el número de parámetros. Frente a clasificadores especializados en inglés como los de ProtectAI, la ventaja es el soporte de vietnamita; frente a Llama Guard 3, la ventaja es el coste de inferencia, muy inferior al ser dos órdenes de magnitud más pequeño.
 

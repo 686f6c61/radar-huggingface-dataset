@@ -79,10 +79,10 @@ Latencia declarada por decisión en CPU (Apple Silicon, 4 hilos, petición únic
 
 | Modelo | Parametros | Contexto | Invariancia a permutacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ballot-jev-0.5b | 506M (12,1M entrenables) | no disponible | Verificada: 0 de 32 inversiones, 3e-8 de diferencia | Apache-2.0 | HuggingFace, requiere script propio |
+| ballot-jev-0.5b | 506M (12,1M entrenables) | no disponible | Verificada: 0 de 32 inversiones, 3e-8 de diferencia | Apache-2.0 | Hugging Face, requiere script propio |
 | kev | no disponible | no disponible | Falla en el 28,1% de las decisiones invertidas | no disponible | citado en la model card, sin enlace |
 | laya | no disponible | no disponible | Falla en el 25,0% de las decisiones invertidas | no disponible | citado en la model card, sin enlace |
-| Qwen/Qwen2.5-0.5B (base) | 494M | no disponible en la informacion recibida | no aplica: no es un modelo de decision tipada | Apache-2.0 | HuggingFace |
+| Qwen/Qwen2.5-0.5B (base) | 494M | no disponible en la informacion recibida | no aplica: no es un modelo de decision tipada | Apache-2.0 | Hugging Face |
 
 La model card afirma que ningún otro modelo abierto de esta clase mantiene esa garantía, pero no aporta una comparativa exhaustiva ni cifras de precisión frente a kev y laya en tareas de decisión. No hay datos disponibles de otros modelos comparables de decisión tipada.
 
@@ -104,7 +104,7 @@ La model card afirma que ningún otro modelo abierto de esta clase mantiene esa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vigneshlabs/ballot-jev-0.5b
+- Modelo en Hugging Face: https://huggingface.co/vigneshlabs/ballot-jev-0.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Script de inferencia: `inference.py`, incluido en el repositorio del modelo (clase `BallotJev`)
 - Imagen de evaluacion: `ballot_jev_evals.png`, incluida en el repositorio del modelo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SN92 generalist decision model es un ajuste fino (fine-tune) del modelo base baselabs/mammoth-1, desarrollado y publicado por el usuario john54334343 en HuggingFace. Se trata de un modelo de clasificación de texto (pipeline text-classification) disenado como "modelo de decisión": en lugar de generar texto libre, produce una respuesta seleccionando una letra entre un conjunto de opciones (answer-code readout). El modelo deriva de Qwen3.5-27B a través de la post-formación de Base Labs / Baseten, y conserva la arquitectura Qwen3_5Model con atención completa no causal.
+SN92 generalist decision model es un ajuste fino (fine-tune) del modelo base baselabs/mammoth-1, desarrollado y publicado por el usuario john54334343 en Hugging Face. Se trata de un modelo de clasificación de texto (pipeline text-classification) disenado como "modelo de decisión": en lugar de generar texto libre, produce una respuesta seleccionando una letra entre un conjunto de opciones (answer-code readout). El modelo deriva de Qwen3.5-27B a través de la post-formación de Base Labs / Baseten, y conserva la arquitectura Qwen3_5Model con atención completa no causal.
 
 Con 26.085.330.160 parámetros totales (aproximadamente 26.000 millones) y un tamano de repositorio de 52,2 GB, el modelo se distribuye en formato safetensors y bf16. Su relevancia radica en que adapta un modelo de lenguaje grande a tareas de decisión estructurada (NLI, análisis de sentimiento, razonamiento aritmético, recuperación de herramientas, ranking de productos) mediante un readout de letras sobre la cabeza LM original, lo que permite evaluaciones deterministas con temperatura baja.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SN92 generalist-m1-v7a | 26,1B | no disponible | MIT | HuggingFace (50 descargas) | Fine-tune de decisión sobre mammoth-1 |
-| baselabs/mammoth-1 | no disponible | no disponible | MIT | HuggingFace | Modelo base, post-entrenado de Qwen3.5-27B |
-| Qwen3.5-27B | ~27B | no disponible | Apache-2.0 | HuggingFace | Modelo generativo original de Qwen |
-| Modelos de clasificación tipo DeBERTa | ~0,1-1,5B | 512 tokens típico | MIT/Apache-2.0 | HuggingFace | Alternativa ligera para clasificación, mucho menor tamano |
+| SN92 generalist-m1-v7a | 26,1B | no disponible | MIT | Hugging Face (50 descargas) | Fine-tune de decisión sobre mammoth-1 |
+| baselabs/mammoth-1 | no disponible | no disponible | MIT | Hugging Face | Modelo base, post-entrenado de Qwen3.5-27B |
+| Qwen3.5-27B | ~27B | no disponible | Apache-2.0 | Hugging Face | Modelo generativo original de Qwen |
+| Modelos de clasificación tipo DeBERTa | ~0,1-1,5B | 512 tokens típico | MIT/Apache-2.0 | Hugging Face | Alternativa ligera para clasificación, mucho menor tamano |
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/john54334343/sn92-generalist-m1-v7a
+- Hugging Face: https://huggingface.co/john54334343/sn92-generalist-m1-v7a
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/legalcode
 - Licencia CC BY 3.0: https://creativecommons.org/licenses/by/3.0/legalcode

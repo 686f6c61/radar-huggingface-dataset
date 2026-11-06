@@ -41,7 +41,7 @@ Este repositorio no entrena nada: es una cuantización. Cada matriz de pesos se 
 - Inferencia solo de texto: el *drafter* no tiene partes de visión ni de audio.
 - Capacidades multilingües: no documentadas en la información disponible.
 - *Tool calling* y razonamiento multi-paso: no son capacidades propias del *drafter*; corresponden al objetivo. En el *drafter* del modelo denso de 12B, construido de la misma forma, BFCL quedó a nivel con y sin él (sin cifras publicadas).
-- El repositorio está etiquetado como `endpoints_compatible` en HuggingFace, aunque la ejecución documentada es llama.cpp local.
+- El repositorio está etiquetado como `endpoints_compatible` en Hugging Face, aunque la ejecución documentada es llama.cpp local.
 - Trazabilidad de la cuantización: script de construcción, registro por tensor, informe JSON y tabla de velocidades por prompt incluidos en `evidence/`.
 
 ## Casos de uso
@@ -132,7 +132,7 @@ A igualdad de aceptación, este fichero rinde 1,03x respecto al Q8_0. La gananci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-assistant-q4_0-exact-gguf
+- Repositorio Hugging Face: https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-assistant-q4_0-exact-gguf
 - Modelo base (drafter sin cuantizar de Google): https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-unquantized-assistant
 - Objetivo recomendado (QAT q4_0 GGUF): https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-gguf
 - Términos de licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

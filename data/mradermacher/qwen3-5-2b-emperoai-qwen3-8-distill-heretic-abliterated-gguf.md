@@ -69,7 +69,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Qwen3.5-2B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Qwen3.5-2B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated-GGUF
 - Repositorio del modelo base (sin cuantizar): https://huggingface.co/insraq/Qwen3.5-2B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated
 - Perfil de mradermacher en Hugging Face: https://huggingface.co/mradermacher
 - Guía general sobre Qwen 3.5 (contexto de la familia): https://techie007.substack.com/p/qwen-35-the-complete-guide-benchmarks

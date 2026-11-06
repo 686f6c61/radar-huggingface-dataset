@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto atómico no proteico | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LigandMPNN noise020 (este) | 2,632 M | Sí (ligandos, metales, ácidos nucleicos) | AGPL-3.0 | HuggingFace (oteam), implementación no oficial |
+| LigandMPNN noise020 (este) | 2,632 M | Sí (ligandos, metales, ácidos nucleicos) | AGPL-3.0 | Hugging Face (oteam), implementación no oficial |
 | ProteinMPNN | No disponible en la información | No (solo esqueleto proteico) | No disponible en la información | Repositorio oficial de los autores |
-| LigandMPNN noise010 (oteam/ligandmpnn) | 2,632 M | Sí | AGPL-3.0 | HuggingFace (oteam) |
-| LigandMPNN noise005 / noise030 | 2,632 M | Sí | AGPL-3.0 | HuggingFace (oteam) |
+| LigandMPNN noise010 (oteam/ligandmpnn) | 2,632 M | Sí | AGPL-3.0 | Hugging Face (oteam) |
+| LigandMPNN noise005 / noise030 | 2,632 M | Sí | AGPL-3.0 | Hugging Face (oteam) |
 
 Las variantes de la familia comparten arquitectura y número de parámetros; la diferencia es el nivel de ruido de entrenamiento (0,05, 0,10, 0,20 y 0,30 Å), que afecta a la robustez frente a imprecisión estructural de la entrada. No se dispone de datos comparativos de rendimiento entre ellas en la información proporcionada.
 
@@ -87,11 +87,11 @@ Las variantes de la familia comparten arquitectura y número de parámetros; la 
 - Sin datos de sesgo documentados, pero el entrenamiento sobre PDB puede heredar los sesgos de composición y cobertura de ese repositorio (sobrerrepresentación de ciertas familias proteicas).
 - Sin benchmarks publicados en la información disponible: no es posible comparar cuantitativamente su rendimiento frente a alternativas.
 - No apto para tareas de lenguaje, visión ni agentes; su uso está restringido al dominio de biología estructural.
-- Solo 3 descargas y 0 likes en HuggingFace en el momento de la consulta: ecosistema de validación muy limitado.
+- Solo 3 descargas y 0 likes en Hugging Face en el momento de la consulta: ecosistema de validación muy limitado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/ligandmpnn-noise020
+- Modelo en Hugging Face: https://huggingface.co/oteam/ligandmpnn-noise020
 - Variante noise005: https://huggingface.co/oteam/ligandmpnn-noise005
 - Variante noise010: https://huggingface.co/oteam/ligandmpnn-noise010
 - Variante noise010 (alias): https://huggingface.co/oteam/ligandmpnn

@@ -79,9 +79,9 @@ No se dispone de datos comparativos publicados. Los modelos de la misma categori
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| GAM-WildDet3D | no disponible | no disponible | other | HuggingFace, 0 descargas | No publicados |
-| GAM-LIBERO-PRO | no disponible | no disponible | no disponible | HuggingFace | No publicados |
-| GAM-RoboTwin | no disponible | no disponible | no disponible | HuggingFace | No publicados |
+| GAM-WildDet3D | no disponible | no disponible | other | Hugging Face, 0 descargas | No publicados |
+| GAM-LIBERO-PRO | no disponible | no disponible | no disponible | Hugging Face | No publicados |
+| GAM-RoboTwin | no disponible | no disponible | no disponible | Hugging Face | No publicados |
 
 La unica diferencia verificable entre las tres publicaciones del mismo autor es el ajuste del detector: GAM-WildDet3D se presenta como la version independiente de benchmark, mientras que GAM-LIBERO-PRO y GAM-RoboTwin son las versiones ajustadas a cada benchmark.
 
@@ -101,7 +101,7 @@ La unica diferencia verificable entre las tres publicaciones del mismo autor es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gehaozhang/gam-wilddet3d
+- Modelo en Hugging Face: https://huggingface.co/gehaozhang/gam-wilddet3d
 - Codigo: https://github.com/GehaoZhang6/Grounding-Action-Model
 - Release de benchmark GAM-LIBERO-PRO: https://huggingface.co/gehaozhang/gam-libero-pro
 - Release de benchmark GAM-RoboTwin: https://huggingface.co/gehaozhang/gam-robotwin

@@ -53,8 +53,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RoboSyn-dp-click-ft | 270.780.964 | No aplica | Apache-2.0 | HuggingFace |
-| RoboSynChallenge/DP_sim_click_bell | no disponible | No aplica | no disponible | HuggingFace |
+| RoboSyn-dp-click-ft | 270.780.964 | No aplica | Apache-2.0 | Hugging Face |
+| RoboSynChallenge/DP_sim_click_bell | no disponible | No aplica | no disponible | Hugging Face |
 
 No se conocen otros modelos comparables en la informacion proporcionada.
 
@@ -68,9 +68,9 @@ No se conocen otros modelos comparables en la informacion proporcionada.
 - No se especifican los idiomas soportados porque no aplica.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/QuixoteH/RoboSyn-dp-click-ft)
+- [Modelo en Hugging Face](https://huggingface.co/QuixoteH/RoboSyn-dp-click-ft)
 - [Repositorio GitHub de RoboSyn](https://github.com/QuixoteH/RoboSyn)
 - [Sitio web de RoboSynChallenge](https://robosyn-bench.net/)
-- [Organización RoboSynChallenge en HuggingFace](https://huggingface.co/RoboSynChallenge)
-- [Perfil del autor QuixoteH en HuggingFace](https://huggingface.co/QuixoteH)
+- [Organización RoboSynChallenge en Hugging Face](https://huggingface.co/RoboSynChallenge)
+- [Perfil del autor QuixoteH en Hugging Face](https://huggingface.co/QuixoteH)
 - [Modelo base DP_sim_click_bell](https://huggingface.co/RoboSynChallenge/DP_sim_click_bell) (referenciado en la model card)

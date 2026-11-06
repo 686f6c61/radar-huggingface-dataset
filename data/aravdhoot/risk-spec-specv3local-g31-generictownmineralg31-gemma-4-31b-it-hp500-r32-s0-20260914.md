@@ -91,7 +91,7 @@ No se han identificado en la información disponible adaptadores comparables con
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (LoRA r32 sobre gemma-4-31B-it) | 31B en el base + adaptador de rango 32 | No disponible | Sin benchmarks; solo `final_teacher_kl` = 0,07923 | No disponible | HuggingFace, 7 descargas |
+| Este adaptador (LoRA r32 sobre gemma-4-31B-it) | 31B en el base + adaptador de rango 32 | No disponible | Sin benchmarks; solo `final_teacher_kl` = 0,07923 | No disponible | Hugging Face, 7 descargas |
 | `google/gemma-4-31B-it` (base sin adaptador) | 31B | No disponible | No disponible en esta información | No disponible | Referenciado en la receta; no verificado |
 | Otros adaptadores LoRA de la misma línea (`specv3local`, `g31`) | No disponible | No disponible | No disponible | No disponible | No localizados en la búsqueda |
 
@@ -112,7 +112,7 @@ Nota: el identificador `google/gemma-4-31B-it` no corresponde a ningún checkpoi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aravdhoot/risk-spec-specv3local-g31-generictownmineralg31-gemma-4-31b-it-hp500-r32-s0-20260914
+- Hugging Face: https://huggingface.co/aravdhoot/risk-spec-specv3local-g31-generictownmineralg31-gemma-4-31b-it-hp500-r32-s0-20260914
 - Modelo base referenciado en la receta: https://huggingface.co/google/gemma-4-31B-it (existencia no verificada en la información disponible)
 - Revisión del modelo base citada: `842da3794eaa0b77d5f08bae87a17459d91ff475`
 - Paper, blog, repositorio de código o demo: no disponibles

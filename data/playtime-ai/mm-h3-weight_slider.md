@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MM-H3-Weight_Slider es un artefacto publicado por el usuario Playtime-AI en HuggingFace bajo licencia Apache 2.0. Su denominacion ("Weight Slider") y el tamano del repositorio (0,1 GB) apuntan a un adaptador de pesos o modulador de escala del tipo *slider*, es decir, un conjunto de pesos destinado a ajustar la intensidad de un atributo concreto sobre un modelo base, y no a un modelo generativo completo. La model card no identifica el modelo base sobre el que se aplica, ni la modalidad (texto, imagen o video), por lo que cualquier afirmacion al respecto queda fuera de lo publicado.
+MM-H3-Weight_Slider es un artefacto publicado por el usuario Playtime-AI en Hugging Face bajo licencia Apache 2.0. Su denominacion ("Weight Slider") y el tamano del repositorio (0,1 GB) apuntan a un adaptador de pesos o modulador de escala del tipo *slider*, es decir, un conjunto de pesos destinado a ajustar la intensidad de un atributo concreto sobre un modelo base, y no a un modelo generativo completo. La model card no identifica el modelo base sobre el que se aplica, ni la modalidad (texto, imagen o video), por lo que cualquier afirmacion al respecto queda fuera de lo publicado.
 
 La unica informacion tecnica aportada por el autor es una frase: "Tested and working from -5 to 5... may go further...", acompanada de un video de demostracion incrustado. Esto sugiere un rango de escalado de pesos verificable entre -5 y +5, con comportamiento funcional fuera de ese intervalo no confirmado. No se documentan parametros, arquitectura, datos de entrenamiento ni idiomas soportados.
 
@@ -79,7 +79,7 @@ No disponible. La model card no identifica el modelo base ni la categoria funcio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Playtime-AI/MM-H3-Weight_Slider
+- Hugging Face: https://huggingface.co/Playtime-AI/MM-H3-Weight_Slider
 - Video de demostracion: https://huggingface.co/Playtime-AI/MM-H3-Weight_Slider/resolve/main/Video%20Project%2036.mp4
 - Perfil del autor: https://huggingface.co/Playtime-AI
 - Paper: no disponible

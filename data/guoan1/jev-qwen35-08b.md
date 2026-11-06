@@ -72,9 +72,9 @@ Datos publicados en la model card del autor (conjuntos retenidos, nunca usados p
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jev-qwen35-08b (este) | 0,8B base + LoRA r=8 | 768 tokens en plantilla de decisión | hard acc 93,97 % (calibrated_test), ECE 0,0281 | apache-2.0 | HuggingFace, adaptador PEFT |
-| Qwen/Qwen3.5-0.8B-Base (baseline sin ajustar) | 0,8B | no disponible | hard acc 45,86 %, ECE 0,1263 (baseline_test) | apache-2.0 | HuggingFace |
-| Open-Jev (referencia de plantilla) | no disponible | no disponible | no disponible | no disponible | GitHub / HuggingFace |
+| jev-qwen35-08b (este) | 0,8B base + LoRA r=8 | 768 tokens en plantilla de decisión | hard acc 93,97 % (calibrated_test), ECE 0,0281 | apache-2.0 | Hugging Face, adaptador PEFT |
+| Qwen/Qwen3.5-0.8B-Base (baseline sin ajustar) | 0,8B | no disponible | hard acc 45,86 %, ECE 0,1263 (baseline_test) | apache-2.0 | Hugging Face |
+| Open-Jev (referencia de plantilla) | no disponible | no disponible | no disponible | no disponible | GitHub / Hugging Face |
 
 No se dispone de datos de otros adaptadores de decisión directamente comparables en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de otros adaptadores de decisión directamente comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guoan1/jev-qwen35-08b
+- Modelo en Hugging Face: https://huggingface.co/guoan1/jev-qwen35-08b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/ZefanCai/Open-Jev
 - Repositorio Open-Jev: https://github.com/Zefan-Cai/Open-Jev

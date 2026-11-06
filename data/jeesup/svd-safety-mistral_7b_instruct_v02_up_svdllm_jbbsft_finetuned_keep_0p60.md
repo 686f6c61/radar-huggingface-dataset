@@ -18,7 +18,7 @@ Es relevante ahora porque cuantifica el compromiso entre compresión por SVD y a
 | Fraccion de parametros retenida | 0,5998 (40 % de parametros eliminados por truncacion SVD) |
 | Longitud de contexto | 32.768 tokens (heredada del modelo base; no verificada experimentalmente en la model card) |
 | Tipos de cuantizacion | no disponible: no se publican builds GGUF, GPTQ, AWQ ni bitsandbytes. El repositorio contiene pesos densos en safetensors (14,5 GB, consistente con fp16/bf16) |
-| Idiomas soportados | no disponible (no declarado en la model card ni en los metadatos de HuggingFace; el modelo base esta orientado principalmente al ingles) |
+| Idiomas soportados | no disponible (no declarado en la model card ni en los metadatos de Hugging Face; el modelo base esta orientado principalmente al ingles) |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 | Modelo base | mistralai/Mistral-7B-Instruct-v0.2 |
@@ -98,9 +98,9 @@ No se dispone de resultados de benchmarks de los modelos alternativos en la info
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| Este modelo (SVD-LLM, keep 0,60, recovery_mix) | 7.241.732.096 (dense, rango-deficiente; 60 % retenido) | 32.768 tokens (heredado del base) | apache-2.0 | HuggingFace, safetensors, 0 descargas | Valores propios en la tabla de benchmarks |
-| mistralai/Mistral-7B-Instruct-v0.2 | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | apache-2.0 | HuggingFace | no disponible |
-| Otras celdas del mismo autor sin datos de seguridad en la recuperacion (`recovery_mix` frente a SVD-LLM plano al mismo ratio) | mismo ratio declarado | no disponible | apache-2.0 | HuggingFace | no disponible en la informacion proporcionada |
+| Este modelo (SVD-LLM, keep 0,60, recovery_mix) | 7.241.732.096 (dense, rango-deficiente; 60 % retenido) | 32.768 tokens (heredado del base) | apache-2.0 | Hugging Face, safetensors, 0 descargas | Valores propios en la tabla de benchmarks |
+| mistralai/Mistral-7B-Instruct-v0.2 | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | apache-2.0 | Hugging Face | no disponible |
+| Otras celdas del mismo autor sin datos de seguridad en la recuperacion (`recovery_mix` frente a SVD-LLM plano al mismo ratio) | mismo ratio declarado | no disponible | apache-2.0 | Hugging Face | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
@@ -119,11 +119,11 @@ No se dispone de resultados de benchmarks de los modelos alternativos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_jbbsft_finetuned_keep_0p60
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_jbbsft_finetuned_keep_0p60
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Codigo de SVD-LLM (commit `7538cca98880`): https://github.com/AIoT-MLSys-Lab/SVD-LLM
 - Dataset de recuperacion: https://huggingface.co/datasets/yahma/alpaca-cleaned
 - Evaluador de seguridad citado, HarmBench-Llama-2-13b-cls: https://huggingface.co/cais/HarmBench-Llama-2-13b-cls
 - Evaluador de sobrerrechazo citado, WildGuard: https://huggingface.co/allenai/wildguard
 - Respuestas objetivo de rechazo (modelo de referencia): https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
-- Nota: las busquedas web realizadas no devolvieron resultados relacionados con el modelo; los unicos enlaces relevantes son los citados en la model card y en los metadatos de HuggingFace.
+- Nota: las busquedas web realizadas no devolvieron resultados relacionados con el modelo; los unicos enlaces relevantes son los citados en la model card y en los metadatos de Hugging Face.

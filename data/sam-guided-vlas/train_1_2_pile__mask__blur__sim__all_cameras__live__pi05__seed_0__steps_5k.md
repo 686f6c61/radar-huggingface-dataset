@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Se trata de una politica de robotica (Vision-Language-Action, VLA) entrenada con LeRobot y publicada en HuggingFace por el usuario `sam-guided-vlas`. El modelo es un ajuste fino (fine-tune) del modelo base `lerobot/pi05_base`, que a su vez implementa π₀.₅ (pi05), la evolucion de π₀ desarrollada por Physical Intelligence y adaptada de su repositorio open source OpenPI. El objetivo declarado de pi05 es la generalizacion en entornos abiertos: ejecutar tareas de manipulacion en situaciones y entornos no vistos durante el entrenamiento.
+Se trata de una politica de robotica (Vision-Language-Action, VLA) entrenada con LeRobot y publicada en Hugging Face por el usuario `sam-guided-vlas`. El modelo es un ajuste fino (fine-tune) del modelo base `lerobot/pi05_base`, que a su vez implementa π₀.₅ (pi05), la evolucion de π₀ desarrollada por Physical Intelligence y adaptada de su repositorio open source OpenPI. El objetivo declarado de pi05 es la generalizacion en entornos abiertos: ejecutar tareas de manipulacion en situaciones y entornos no vistos durante el entrenamiento.
 
 Este checkpoint concreto se ha entrenado durante 5000 pasos con un lote de 16, optimizador AdamW y tasa de aprendizaje 5e-05, sobre un dataset de 200 episodios y 69.392 fotogramas a 20 FPS. La politica esta especializada en un robot tipo Panda con tres camaras (`agentview`, `robot0_eye_in_hand`, `robot0_eye_in_hand_2`) y produce acciones de 7 dimensiones a partir de un estado de 9 dimensiones y tres imagenes de 224x224.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Modificado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (pi05 fine-tune, steps 5k) | 4.143.404.816 | no disponible | 2026-09-10 | apache-2.0 | HuggingFace, 0 descargas |
-| lerobot/pi05_base | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace (modelo base) |
+| Este checkpoint (pi05 fine-tune, steps 5k) | 4.143.404.816 | no disponible | 2026-09-10 | apache-2.0 | Hugging Face, 0 descargas |
+| lerobot/pi05_base | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face (modelo base) |
 | π₀ (predecesor) | no disponible | no disponible | no disponible | no disponible | OpenPI (open source) |
 
 El modelo es un ajuste fino del modelo base `lerobot/pi05_base` y un refinamiento de π₀ mediante π₀.₅ (pi05). No se dispone de parametros, contexto ni resultados comparativos de esas variantes, por lo que no es posible establecer una comparacion cuantitativa fiable frente a alternativas como OpenVLA u otras politicas VLA. No disponible.
@@ -87,7 +87,7 @@ El modelo es un ajuste fino del modelo base `lerobot/pi05_base` y un refinamient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_pile__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_5k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_pile__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_5k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_pile__mask__blur__sim__all_cameras__live
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=sam-guided-vlas/train_1_2_pile__mask__blur__sim__all_cameras__live

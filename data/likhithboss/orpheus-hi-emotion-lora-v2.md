@@ -4,7 +4,7 @@
 
 `likhithboss/orpheus-hi-emotion-lora-v2` es un adaptador LoRA de segunda versión (v2) desarrollado por likhithboss, fine-tuneado a partir del modelo base `canopylabs/3b-hi-pretrain-research_release`, un modelo de 3 mil millones de parámetros con arquitectura Llama. El nombre del adaptador sugiere que está orientado a tareas relacionadas con el procesamiento de emociones en texto, aunque la model card no detalla el propósito exacto ni las tareas específicas para las que fue entrenado.
 
-El entrenamiento se realizó con la librería Unsloth (que acelera el fine-tuning) junto con la librería TRL de HuggingFace. El repositorio contiene únicamente los pesos del adaptador LoRA en formato safetensors, con un tamaño de 0.0 GB, lo que indica que se trata de un adaptador ligero que requiere cargar el modelo base por separado. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones significativas, y el idioma declarado es inglés.
+El entrenamiento se realizó con la librería Unsloth (que acelera el fine-tuning) junto con la librería TRL de Hugging Face. El repositorio contiene únicamente los pesos del adaptador LoRA en formato safetensors, con un tamaño de 0.0 GB, lo que indica que se trata de un adaptador ligero que requiere cargar el modelo base por separado. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones significativas, y el idioma declarado es inglés.
 
 Se trata de un modelo muy reciente (creado el 14 de agosto de 2026) con cero descargas y cero likes en el momento de la consulta, por lo que la información disponible es mínima y no se han publicado resultados de evaluación ni benchmarks.
 
@@ -23,7 +23,7 @@ Se trata de un modelo muy reciente (creado el 14 de agosto de 2026) con cero des
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA (Low-Rank Adaptation) que se aplica sobre el modelo base `canopylabs/3b-hi-pretrain-research_release`, un modelo de 3B parámetros con arquitectura Llama. El adaptador fue entrenado con la librería Unsloth, que optimiza el proceso de fine-tuning mediante técnicas de kernel fusionado y gestión de memoria, junto con la librería TRL de HuggingFace para el entrenamiento con reinforcement learning o fine-tuning supervisado.
+El modelo es un adaptador LoRA (Low-Rank Adaptation) que se aplica sobre el modelo base `canopylabs/3b-hi-pretrain-research_release`, un modelo de 3B parámetros con arquitectura Llama. El adaptador fue entrenado con la librería Unsloth, que optimiza el proceso de fine-tuning mediante técnicas de kernel fusionado y gestión de memoria, junto con la librería TRL de Hugging Face para el entrenamiento con reinforcement learning o fine-tuning supervisado.
 
 No se proporciona información sobre la composición del dataset de entrenamiento, el número de tokens utilizados, ni si se emplearon técnicas como RLHF, DPO o SFT. El nombre del adaptador ("emotion") sugiere que el fine-tuning está orientado a tareas de análisis o generación de emociones, pero no hay documentación técnica que confirme esta hipótesis ni que detalle las innovaciones técnicas aplicadas más allá del uso de LoRA y Unsloth.
 
@@ -66,7 +66,7 @@ No disponible. No se han publicado comparativas con otros modelos de la misma ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/likhithboss/orpheus-hi-emotion-lora-v2
+- Repositorio Hugging Face: https://huggingface.co/likhithboss/orpheus-hi-emotion-lora-v2
 - Modelo base: https://huggingface.co/canopylabs/3b-hi-pretrain-research_release (referenciado en la model card; no se ha verificado su disponibilidad pública)
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
 - TRL (librería de entrenamiento): https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario aaadereqq y publicado en HuggingFace bajo licencia MIT. Según la model card, se trata de una versión actualizada que mejora significativamente la profundidad de razonamiento e inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo está diseñado para tareas de razonamiento complejo, generación de código, matemáticas y lógica, y se presenta como un asistente conversacional con soporte para system prompts y function calling.
+MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario aaadereqq y publicado en Hugging Face bajo licencia MIT. Según la model card, se trata de una versión actualizada que mejora significativamente la profundidad de razonamiento e inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo está diseñado para tareas de razonamiento complejo, generación de código, matemáticas y lógica, y se presenta como un asistente conversacional con soporte para system prompts y function calling.
 
 La información pública disponible es limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los datos de entrenamiento. La model card incluye resultados de benchmarks en diversas categorías, aunque los modelos de comparación no se identifican explícitamente. También se menciona una variante llamada MyAwesomeModel-Small, que comparte arquitectura con el modelo base pero utiliza el tokenizer del modelo principal. El repositorio tiene un tamaño de 0.0 GB y no se han registrado descargas, lo que sugiere que es un proyecto de prueba o en fase inicial.
 
@@ -90,5 +90,5 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/aaadereqq/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/aaadereqq/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (papers, blogs, repos de código) en la información disponible.

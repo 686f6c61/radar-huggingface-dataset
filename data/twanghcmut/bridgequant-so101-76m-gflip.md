@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bridgequant-so101-76m-gflip es una política visi\u00f3n-lenguaje-acción (VLA) de 64,8 millones de parámetros publicada por el usuario twanghcmut en HuggingFace, orientada a robótica y, en concreto, al brazo SO101. Se distribuye como un checkpoint de safetensors de 0,3 GB junto con un fichero de normalización (`norm_stats.json`), un YAML de configuración (`bridgequant_vla.yaml`) y el `train_config.yaml` de entrenamiento. El modelo se enmarca en el proyecto BridgeQuant, cuyo código vive en el repositorio VLAOpt/bridgequant-async.
+bridgequant-so101-76m-gflip es una política visi\u00f3n-lenguaje-acción (VLA) de 64,8 millones de parámetros publicada por el usuario twanghcmut en Hugging Face, orientada a robótica y, en concreto, al brazo SO101. Se distribuye como un checkpoint de safetensors de 0,3 GB junto con un fichero de normalización (`norm_stats.json`), un YAML de configuración (`bridgequant_vla.yaml`) y el `train_config.yaml` de entrenamiento. El modelo se enmarca en el proyecto BridgeQuant, cuyo código vive en el repositorio VLAOpt/bridgequant-async.
 
 La particularidad de este checkpoint frente a `bridgequant-so101-76m` es el uso de `train.aug_gripper_state_flip: 0.3`, una aumentación de datos que, en fotogramas previos al agarre (open-target frames), sustituye la lectura propioceptiva de la pinza por el valor de "cerrada sobre vacío", manteniendo intactas las imágenes y los objetivos. El autor lo describe como un contrafactual de reagarre: se entrena al modelo para que no confíe ciegamente en el estado de la pinza y pueda planificar la aproximación aunque la lectura sea inconsistente.
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bridgequant-so101-76m-gflip | 64,8M (safetensors) | no disponible | VLA para SO101 con aumentación de estado de pinza | other | HuggingFace |
-| bridgequant-so101-76m | no disponible en la información | no disponible | VLA para SO101, checkpoint base sin la aumentación | other (presumiblemente) | HuggingFace (referenciado por el autor) |
+| bridgequant-so101-76m-gflip | 64,8M (safetensors) | no disponible | VLA para SO101 con aumentación de estado de pinza | other | Hugging Face |
+| bridgequant-so101-76m | no disponible en la información | no disponible | VLA para SO101, checkpoint base sin la aumentación | other (presumiblemente) | Hugging Face (referenciado por el autor) |
 | Otros modelos VLA para robótica | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparables entre estos modelos más allá de las métricas contrafactuales citadas.
@@ -87,8 +87,8 @@ No se dispone de datos de rendimiento comparables entre estos modelos más allá
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/twanghcmut/bridgequant-so101-76m-gflip
+- Hugging Face: https://huggingface.co/twanghcmut/bridgequant-so101-76m-gflip
 - Repositorio de código: https://github.com/VLAOpt/bridgequant-async
 - Script de política: `scripts/so101_policy.py` (dentro del repositorio anterior)
 - Guía de despliegue: `docs/so101_deploy.md` (dentro del repositorio anterior)
-- Checkpoint base referenciado: `bridgequant-so101-76m` (en HuggingFace, bajo el mismo autor)
+- Checkpoint base referenciado: `bridgequant-so101-76m` (en Hugging Face, bajo el mismo autor)

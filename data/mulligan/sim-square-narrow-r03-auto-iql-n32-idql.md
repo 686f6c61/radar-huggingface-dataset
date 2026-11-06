@@ -85,7 +85,7 @@ No se dispone de comparaciones numéricas contra otros algoritmos o rondas dentr
 
 | Modelo / algoritmo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mulligan/sim-square-narrow-r03-auto-iql-n32-idql | no disponible | no aplica (entrada de estado) | 77,94 %-82,04 % de éxito por semilla en la rejilla de 32 estados iniciales | MIT | Checkpoint `.pt` en HuggingFace (5 semillas) |
+| mulligan/sim-square-narrow-r03-auto-iql-n32-idql | no disponible | no aplica (entrada de estado) | 77,94 %-82,04 % de éxito por semilla en la rejilla de 32 estados iniciales | MIT | Checkpoint `.pt` en Hugging Face (5 semillas) |
 | Otros brazos `auto-iql-n32` de la misma campaña (`c01`, `c02`, `c03` policy rollouts) | no disponible | no aplica | no disponible en la información proporcionada | no disponible | Datasets de rollouts publicados por `mulligan` |
 | IQL estándar (algoritmo de referencia del artículo IDQL) | no disponible | no aplica | no disponible (no se incluyen cifras comparativas en la información) | no disponible | Implementaciones públicas en repos de investigación |
 | IDQL (formulación original, arXiv:2304.10573) | no disponible | no aplica | no disponible (resultados publicados en el paper, no en esta información) | no disponible | Paper y código de referencia |
@@ -107,7 +107,7 @@ No se dispone de datos numéricos que permitan una comparación directa contra a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r03-auto-iql-n32-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r03-auto-iql-n32-idql
 - Organización Mulligan (modelos y datasets): https://huggingface.co/mulligan
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones públicas): https://arena.mulligan.page

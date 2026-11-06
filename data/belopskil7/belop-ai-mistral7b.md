@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: no disponible. El tamano del repositorio (0.2 GB) sugiere que los pesos estan cuantizados, probablemente en 4 bits, lo que implicaria un uso de VRAM de aproximadamente 4-5 GB para inferencia, pero este dato no esta confirmado.
 - GPU recomendadas: no se especifican. Dado el tamano reducido, podria ejecutarse en GPUs consumer como RTX 3060, RTX 4060 o incluso en CPU con suficiente RAM, pero no hay datos oficiales.
 - Compatibilidad con consumer GPU: probablemente si, debido al tamano del modelo, pero no se confirma.
-- Opciones de despliegue: al ser un modelo de la familia transformers, puede desplegarse con vLLM, llama.cpp, Ollama o TGI (Text Generation Inference). El tag `text-generation-inference` en HuggingFace sugiere compatibilidad con TGI.
+- Opciones de despliegue: al ser un modelo de la familia transformers, puede desplegarse con vLLM, llama.cpp, Ollama o TGI (Text Generation Inference). El tag `text-generation-inference` en Hugging Face sugiere compatibilidad con TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -70,9 +70,9 @@ No se dispone de informacion sobre modelos comparables especificos para este fin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/belopskil7/belop-ai-mistral7b
+- Hugging Face: https://huggingface.co/belopskil7/belop-ai-mistral7b
 - Modelo base (Unsloth): https://huggingface.co/unsloth/mistral-7b-instruct-v0.3-bnb-4bit
-- Mistral 7B v0.1 (HuggingFace): https://huggingface.co/mistralai/Mistral-7B-v0.1
+- Mistral 7B v0.1 (Hugging Face): https://huggingface.co/mistralai/Mistral-7B-v0.1
 - Documentacion de Mistral 7B v0.1: https://docs.mistral.ai/models/mistral-7b-0-1
 - Documentacion de Mistral 7B v0.2: https://docs.mistral.ai/models/mistral-7b-0-2
 - Pagina de modelos de Mistral AI: https://mistral.ai/models/

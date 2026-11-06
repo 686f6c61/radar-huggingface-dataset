@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: al tener 8B parametros en float16, se requieren aproximadamente 16 GB de VRAM para cargar el modelo completo. Con cuantizacion a 8 bits (INT8) se reduce a unos 8-9 GB, y con 4 bits (INT4) a unos 5-6 GB.
 - GPU recomendadas: para inferencia en float16 se necesitan GPUs con al menos 16 GB, como NVIDIA A100 (40/80 GB), RTX 4090 (24 GB) o RTX 3090 (24 GB). Con cuantizacion, cabria en GPUs de 8-12 GB como RTX 3080 o RTX 4070.
 - Si cabe en consumer GPU: si, con cuantizacion a 4 bits cabe en GPUs de consumo como RTX 3060 (12 GB) o RTX 4060 Ti (16 GB), aunque con menor velocidad.
-- Opciones de despliegue: al ser un modelo estandar de transformers, se puede servir con vLLM, Text Generation Inference (TGI), llama.cpp (via GGUF si se convierte), Ollama o directamente con la libreria transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo estandar de transformers, se puede servir con vLLM, Text Generation Inference (TGI), llama.cpp (via GGUF si se convierte), Ollama o directamente con la libreria transformers de Hugging Face.
 - Latencia y throughput: no hay datos especificos. Para un modelo de 8B en una GPU moderna, se espera una latencia de decenas de milisegundos por token con vLLM, pero depende del hardware y la cuantizacion.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ La comparacion se limita a parametros y contexto, ya que no hay datos de rendimi
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/MergekitCloud/mergekit-75)
+- [Modelo en Hugging Face](https://huggingface.co/MergekitCloud/mergekit-75)
 - [Paper Model Stock (arxiv:2403.19522)](https://arxiv.org/abs/2403.19522)
 - [Repositorio mergekit en GitHub](https://github.com/arcee-ai/mergekit)
 - [Guias y recursos de MergeKit Hub](https://www.mergekit.com/)

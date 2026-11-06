@@ -85,7 +85,7 @@ La principal diferencia frente a SAM 2 y MobileSAM es que este export incluye el
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jax-image-tools/edgetam-video-onnx
+- Repositorio Hugging Face: https://huggingface.co/jax-image-tools/edgetam-video-onnx
 - Repositorio EdgeTAM original: https://github.com/facebookresearch/EdgeTAM
 - Web de EdgeTAM: https://edgetam.com/
 - Documentacion de Transformers para EdgeTAMVideo: https://huggingface.co/docs/transformers/model_doc/edgetam_video

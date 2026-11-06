@@ -80,7 +80,7 @@ No se dispone de datos comparativos fiables con otros modelos de la misma catego
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: [bartowski/darkc0de_Muse-Glimmer-30B-heretic-GGUF](https://huggingface.co/bartowski/darkc0de_Muse-Glimmer-30B-heretic-GGUF)
+- Repositorio GGUF en Hugging Face: [bartowski/darkc0de_Muse-Glimmer-30B-heretic-GGUF](https://huggingface.co/bartowski/darkc0de_Muse-Glimmer-30B-heretic-GGUF)
 - Modelo base original (versión "heretic"): [darkc0de/Muse-Glimmer-30B-heretic](https://huggingface.co/darkc0de/Muse-Glimmer-30B-heretic)
 - Proyecto Muse Glimmer en GitHub: [cobusgreyling/Muse-Glimmer](https://github.com/cobusgreyling/Muse-Glimmer)
 - Página de descarga en SourceForge: [Muse Glimmer](https://sourceforge.net/projects/muse-glimmer/)

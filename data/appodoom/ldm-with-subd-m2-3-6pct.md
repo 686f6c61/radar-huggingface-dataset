@@ -85,5 +85,5 @@ No disponible. La informacion proporcionada no incluye otros modelos de generaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Appodoom/ldm-with-subd-m2-3-6pct
+- Modelo en Hugging Face: https://huggingface.co/Appodoom/ldm-with-subd-m2-3-6pct
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados al modelo.

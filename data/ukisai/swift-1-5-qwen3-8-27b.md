@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift 1.5 Qwen3.8-27B es un derivado de Qwen3.8-27B desarrollado por UkisAI (ukisai) y publicado en HuggingFace bajo el identificador ukisai/Swift-1.5-Qwen3.8-27b. Se trata de un ajuste fino orientado a la eficiencia de razonamiento: según la model card, reduce un 58,5 % los tokens de pensamiento (thinking tokens) respecto al modelo base manteniendo —e incluso mejorando ligeramente— la puntuación agregada, lo que se traduce en una aceleración de 1,95× en varias tareas. El modelo declara 27.781.427.952 parámetros (~27,78 B) en safetensors y un repositorio de 55,6 GB, coherente con pesos en BF16.
+Swift 1.5 Qwen3.8-27B es un derivado de Qwen3.8-27B desarrollado por UkisAI (ukisai) y publicado en Hugging Face bajo el identificador ukisai/Swift-1.5-Qwen3.8-27b. Se trata de un ajuste fino orientado a la eficiencia de razonamiento: según la model card, reduce un 58,5 % los tokens de pensamiento (thinking tokens) respecto al modelo base manteniendo —e incluso mejorando ligeramente— la puntuación agregada, lo que se traduce en una aceleración de 1,95× en varias tareas. El modelo declara 27.781.427.952 parámetros (~27,78 B) en safetensors y un repositorio de 55,6 GB, coherente con pesos en BF16.
 
 El problema que aborda es el "sobrepensamiento patológico" (overthinking) de los modelos de razonamiento: cadenas de pensamiento largas que consumen presupuesto de inferencia sin aportar precisión. La estrategia de UkisAI consiste en identificar y penalizar los tokens asociados a ese sobrepensamiento, sin atacar directamente la longitud del razonamiento, y recuperar después la exactitud mediante RL y OPD (post-entrenamiento adicional). Swift 1.5 es una actualización directa de Swift 1.0 (~58,3 % menos tokens de pensamiento, <1 % de pérdida), con el foco puesto en tareas de código, agentes y horizonte largo.
 
@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks completos y verificables en la info
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Swift 1.5 Qwen3.8-27B | 27,78 B | 262.144 tokens (config. vLLM) | -58,5 % tokens de pensamiento, +0,35 % puntuación agregada, 1,95× de aceleración frente al base | swift-open-license-1.0, acceso restringido (gated) | safetensors y GGUF en HuggingFace; 33 descargas y 14 likes en el momento de la consulta |
-| Qwen3.8-27B (modelo base) | no disponible | no disponible | Referencia de comparación: mayor gasto de tokens de pensamiento, menor velocidad en las tareas medidas | no disponible | HuggingFace (Qwen/Qwen3.8-27B) |
-| Swift 1.0 Qwen3.8-27B | no disponible (mismo base, ~27 B) | no disponible | -58,3 % tokens de pensamiento, <1 % de pérdida, 1,95× de aceleración | no disponible | HuggingFace; el autor reporta más de 350.000 descargas; GGUF disponible |
+| Swift 1.5 Qwen3.8-27B | 27,78 B | 262.144 tokens (config. vLLM) | -58,5 % tokens de pensamiento, +0,35 % puntuación agregada, 1,95× de aceleración frente al base | swift-open-license-1.0, acceso restringido (gated) | safetensors y GGUF en Hugging Face; 33 descargas y 14 likes en el momento de la consulta |
+| Qwen3.8-27B (modelo base) | no disponible | no disponible | Referencia de comparación: mayor gasto de tokens de pensamiento, menor velocidad en las tareas medidas | no disponible | Hugging Face (Qwen/Qwen3.8-27B) |
+| Swift 1.0 Qwen3.8-27B | no disponible (mismo base, ~27 B) | no disponible | -58,3 % tokens de pensamiento, <1 % de pérdida, 1,95× de aceleración | no disponible | Hugging Face; el autor reporta más de 350.000 descargas; GGUF disponible |
 
 No se dispone de datos verificables de otros modelos de la misma franja (~27 B) en la información proporcionada, por lo que no se incluye una comparación adicional.
 
@@ -97,7 +97,7 @@ No se dispone de datos verificables de otros modelos de la misma franja (~27 B) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
+- Modelo en Hugging Face: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Repositorio GGUF: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GGUF
 - Repositorio GSQ-RCO GGUF: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

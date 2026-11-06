@@ -92,8 +92,8 @@ No se dispone de información sobre benchmarks de las variantes 3.0bpw y Q4, por
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-TR3-2.0bpw
+- Hugging Face del modelo: https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-TR3-2.0bpw
 - Variante 3.0 bpw: https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-3.0bpw
 - Variante Q4: https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-Q4
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Repositorio de reproducción pública: no disponible en la información proporcionada (referenciado en los metadatos del repositorio del modelo).

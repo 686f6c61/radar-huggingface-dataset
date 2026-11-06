@@ -2,7 +2,7 @@
 
 ## Resumen
 
-text2sql-qwen2.5-coder-1.5b-gguf es un ajuste fino del modelo Qwen2.5-Coder-1.5B-Instruct de Alibaba, especializado en la traduccion de lenguaje natural a SQL (text-to-SQL). Lo publica el usuario ragul6606 en HuggingFace y se distribuye unicamente en formato GGUF con cuantizacion Q4_K_M, pensado para inferencia local en hardware modesto. El modelo resuelve el problema de generar consultas SQL validas a partir de un esquema de base de datos y una pregunta en ingles.
+text2sql-qwen2.5-coder-1.5b-gguf es un ajuste fino del modelo Qwen2.5-Coder-1.5B-Instruct de Alibaba, especializado en la traduccion de lenguaje natural a SQL (text-to-SQL). Lo publica el usuario ragul6606 en Hugging Face y se distribuye unicamente en formato GGUF con cuantizacion Q4_K_M, pensado para inferencia local en hardware modesto. El modelo resuelve el problema de generar consultas SQL validas a partir de un esquema de base de datos y una pregunta en ingles.
 
 Con 1.543.714.304 parametros (1,5B), se posiciona como una opcion ligera frente a modelos genericos de mayor tamano para tareas de generacion de SQL. El ajuste se realizo mediante QLoRA sobre el dataset b-mc2/sql-create-context (CC-BY-4.0), que contiene pares de esquema, pregunta y consulta SQL. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativos publicados para este ajuste f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ragul6606/text2sql-qwen2.5-coder-1.5b-gguf
+- Modelo en Hugging Face: https://huggingface.co/ragul6606/text2sql-qwen2.5-coder-1.5b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/b-mc2/sql-create-context

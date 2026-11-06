@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bert-ner-conll es un modelo de clasificacion de tokens (reconocimiento de entidades nombradas, NER) publicado por el usuario ahamidullin en HuggingFace. Se trata de un fine-tuning del modelo de embeddings BAAI/bge-small-en-v1.5, un encoder transformer tipo BERT de 33.215.625 parametros, sobre un conjunto de datos que el propio autor no documenta (la model card indica "unknown dataset"; el nombre del repositorio sugiere un corpus CoNLL, pero no se confirma en ninguna parte de la informacion disponible).
+bert-ner-conll es un modelo de clasificacion de tokens (reconocimiento de entidades nombradas, NER) publicado por el usuario ahamidullin en Hugging Face. Se trata de un fine-tuning del modelo de embeddings BAAI/bge-small-en-v1.5, un encoder transformer tipo BERT de 33.215.625 parametros, sobre un conjunto de datos que el propio autor no documenta (la model card indica "unknown dataset"; el nombre del repositorio sugiere un corpus CoNLL, pero no se confirma en ninguna parte de la informacion disponible).
 
 El modelo tiene licencia MIT y se distribuye en formato safetensors con un tamano de repositorio de 0,1 GB, lo que lo situa en la categoria de modelos ligeros desplegables en CPU. Sus unicas metricas publicadas son las de validacion del propio entrenamiento: precision 0,8425, recall 0,8869, F1 0,8641, accuracy 0,9745 y loss 0,2386 tras 3 epocas.
 
@@ -26,7 +26,7 @@ Su relevancia practica es limitada pero clara: al ser un modelo de 33M de parame
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a un encoder transformer bidireccional de tipo BERT, reutilizado desde BAAI/bge-small-en-v1.5 y adaptado a clasificacion de tokens mediante una cabeza de etiquetado por token. No se documenta ninguna modificacion estructural, atencion lineal, decodificacion especulativa ni componente MoE: es un fine-tuning estandar supervisado. La model card esta generada automaticamente por el Trainer de HuggingFace y no aporta descripcion del modelo ni de sus datos.
+La arquitectura corresponde a un encoder transformer bidireccional de tipo BERT, reutilizado desde BAAI/bge-small-en-v1.5 y adaptado a clasificacion de tokens mediante una cabeza de etiquetado por token. No se documenta ninguna modificacion estructural, atencion lineal, decodificacion especulativa ni componente MoE: es un fine-tuning estandar supervisado. La model card esta generada automaticamente por el Trainer de Hugging Face y no aporta descripcion del modelo ni de sus datos.
 
 Los hiperparametros declarados son: learning rate 2e-05, batch de entrenamiento y evaluacion de 16, seed 42, optimizador AdamW con betas (0,9, 0,999) y epsilon 1e-08, scheduler lineal y 3 epocas (1.875 pasos totales, aproximadamente 625 pasos por epoca). No hay constancia de RLHF, DPO ni ninguna fase de alineacion posterior; tampoco se especifica la composicion del dataset, el numero de tokens de entrenamiento ni el esquema de etiquetas (BIO/BILUO). Las versiones de framework son Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.23.1.
 
@@ -103,13 +103,13 @@ No se dispone, en la informacion proporcionada, de resultados comparables de est
 - Idiomas no declarados: sin confirmacion oficial, se debe asumir uso en ingles o validar idioma por idioma antes de desplegar.
 - Riesgo de alucinacion acotado: al ser un clasificador de spans no genera texto libre, pero si puede asignar etiquetas de entidad incorrectas y producir falsos positivos en textos fuera de dominio.
 - Sesgos: no hay informacion sobre composicion del dataset ni sobre evaluacion de sesgos por genero, origen o nacionalidad, un riesgo inherente a cualquier modelo NER entrenado sobre corpus periodistico.
-- Adopcion nula: cero descargas y una sola interaccion registrada en HuggingFace, sin historial de uso en produccion que sirva de referencia.
+- Adopcion nula: cero descargas y una sola interaccion registrada en Hugging Face, sin historial de uso en produccion que sirva de referencia.
 - Licencia MIT: permite uso comercial, modificacion y redistribucion, siempre conservando el aviso de copyright y la licencia. No se declaran restricciones adicionales ni obligaciones de atribucion mas alla de las del modelo base.
 - Fechas de creacion y actualizacion registradas en 2026 y ausencia de versionado: no hay garantia de mantenimiento ni de correccion de errores por parte del autor.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/ahamidullin/bert-ner-conll
+- Repositorio del modelo en Hugging Face: https://huggingface.co/ahamidullin/bert-ner-conll
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Documentacion de transformers para pipelines de token-classification: https://huggingface.co/docs/transformers/tasks/token_classification
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

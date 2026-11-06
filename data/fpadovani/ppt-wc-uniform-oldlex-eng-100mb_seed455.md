@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo para el modelo tratado, por lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed455
+- Hugging Face: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Run de Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/ab4svv83
 - Repositorio TRL: https://github.com/huggingface/trl

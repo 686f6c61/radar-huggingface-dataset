@@ -92,6 +92,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FluidInference/citenet-coreml
+- Hugging Face: https://huggingface.co/FluidInference/citenet-coreml
 - Dataset LePhantomCite: https://huggingface.co/datasets/ai-law-society-lab/Legal_Phantom_Citation
 - Dataset COLD Cases: https://huggingface.co/datasets/harvard-lil/cold-cases

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HelloHF es un repositorio de modelo publicado en HuggingFace por el usuario bcarmoai. La información disponible en la ficha de HuggingFace es extremadamente limitada: no se declara pipeline, licencia, idiomas soportados ni arquitectura. El repositorio únicamente incluye la etiqueta de región `region:us`, lo que indica la ubicación de almacenamiento pero no aporta información técnica sobre el modelo.
+HelloHF es un repositorio de modelo publicado en Hugging Face por el usuario bcarmoai. La información disponible en la ficha de Hugging Face es extremadamente limitada: no se declara pipeline, licencia, idiomas soportados ni arquitectura. El repositorio únicamente incluye la etiqueta de región `region:us`, lo que indica la ubicación de almacenamiento pero no aporta información técnica sobre el modelo.
 
 Con cero descargas y un solo "like" en el momento de la consulta, el repositorio parece ser un experimento personal o una prueba de publicación más que un modelo destinado a uso en producción. La fecha de creación (2026-11-04) y la de actualización (2026-11-04) son prácticamente idénticas, lo que sugiere una subida única sin iteraciones posteriores documentadas.
 
@@ -38,7 +38,7 @@ Tampoco se documentan innovaciones técnicas destacables como decodificación es
 ## Casos de uso
 
 - Evaluación interna de un repositorio experimental: dado que no hay documentación técnica, el único uso razonable sería inspeccionar los archivos del repositorio para determinar qué contiene realmente antes de plantear cualquier aplicación.
-- Prueba de flujo de publicación en HuggingFace: el repositorio podría servir como referencia para verificar el proceso de subida de artefactos a la plataforma.
+- Prueba de flujo de publicación en Hugging Face: el repositorio podría servir como referencia para verificar el proceso de subida de artefactos a la plataforma.
 - No se pueden recomendar casos de uso en producción (atención al cliente, generación de código, análisis documental, etc.) sin información sobre arquitectura, contexto, licencia o rendimiento.
 - Cualquier caso de uso adicional requeriría primero completar la model card y publicar pesos, tokenizador y configuración verificables.
 
@@ -69,5 +69,5 @@ No disponible. Al no conocerse parámetros, contexto, licencia ni rendimiento, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bcarmoai/HelloHF
+- Repositorio en Hugging Face: https://huggingface.co/bcarmoai/HelloHF
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información proporcionada.

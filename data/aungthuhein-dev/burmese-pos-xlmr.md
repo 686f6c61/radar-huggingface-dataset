@@ -64,7 +64,7 @@ La diferencia entre ambos es marginal y el autor señala que la pseudoetiquetado
 
 ## Comparativa con modelos similares
 
-Existe otro modelo en HuggingFace con nombre casi idéntico: `kalixlouiis/burmese-pos-xlmr-base`, también basado en XLM-RoBERTa para POS tagging birmano. No se dispone de información técnica detallada sobre ese modelo (parámetros, entrenamiento, métricas), por lo que no es posible realizar una comparación numérica. Otros modelos para birmano, como `Burmese-GPT` (basado en mGPT), son generativos y no cubren la tarea de POS tagging. En la literatura, se suele comparar con sistemas comerciales o con modelos entrenados desde cero, pero no se dispone de esos datos en la información recopilada.
+Existe otro modelo en Hugging Face con nombre casi idéntico: `kalixlouiis/burmese-pos-xlmr-base`, también basado en XLM-RoBERTa para POS tagging birmano. No se dispone de información técnica detallada sobre ese modelo (parámetros, entrenamiento, métricas), por lo que no es posible realizar una comparación numérica. Otros modelos para birmano, como `Burmese-GPT` (basado en mGPT), son generativos y no cubren la tarea de POS tagging. En la literatura, se suele comparar con sistemas comerciales o con modelos entrenados desde cero, pero no se dispone de esos datos en la información recopilada.
 
 ## Limitaciones y advertencias
 

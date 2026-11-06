@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`leeyunjai/themaker` es un modelo de lenguaje publicado en HuggingFace por el usuario leeyunjai (Yunjai Lee, vinculado en GitHub al proyecto [Circulus inc.] y a robótica educativa con Raspberry Pi). Se trata de un modelo de aproximadamente 1.000 millones de parámetros (999.885.952 según los metadatos de safetensors), orientado a uso conversacional y distribuido con artefactos ONNX y GGUF, lo que apunta a despliegue en entornos locales y de borde más que a inferencia en clúster.
+`leeyunjai/themaker` es un modelo de lenguaje publicado en Hugging Face por el usuario leeyunjai (Yunjai Lee, vinculado en GitHub al proyecto [Circulus inc.] y a robótica educativa con Raspberry Pi). Se trata de un modelo de aproximadamente 1.000 millones de parámetros (999.885.952 según los metadatos de safetensors), orientado a uso conversacional y distribuido con artefactos ONNX y GGUF, lo que apunta a despliegue en entornos locales y de borde más que a inferencia en clúster.
 
 La relevancia del modelo no viene de un rendimiento demostrado —no hay benchmarks publicados ni documentación técnica en la información disponible— sino de su formato de publicación: la combinación de ONNX, GGUF con calibración imatrix y la etiqueta `endpoints_compatible` lo sitúa como candidato para integraciones ligeras (llama.cpp, aplicaciones de escritorio, dispositivos embebidos). El repo ocupa 1,9 GB y acumula 119 descargas con 0 likes, lo que indica una adopción muy marginal.
 
@@ -38,7 +38,7 @@ Tampoco se documentan innovaciones tecnicas. La presencia de la etiqueta `imatri
 - Generacion de texto y conversacion multi-turno: la etiqueta `conversational` es la unica capacidad declarada explicitamente por el autor.
 - Inferencia en local: la disponibilidad de pesos en GGUF permite ejecucion con llama.cpp en CPU y GPU de consumo.
 - Despliegue con ONNX Runtime: los artefactos ONNX habilitan integracion en aplicaciones .NET, C++, Java o web (onnxruntime-web) sin depender de Python.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse tras una API compatible con el esquema de HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse tras una API compatible con el esquema de Hugging Face Inference Endpoints.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponibles; un modelo de ~1B tieneExpectativas limitadas en este terreno salvo entrenamiento especifico no documentado.
 - Matematicas, codigo, vision, audio, thinking mode: no disponibles en la informacion proporcionada.
@@ -75,11 +75,11 @@ Las cifras de VRAM siguientes son estimaciones calculadas a partir del recuento 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| leeyunjai/themaker | ~1,0 B | No disponible | No disponible | HuggingFace, GGUF, ONNX |
-| Llama 3.2 1B | ~1,24 B | 128k tokens | Licencia comunitaria Llama 3.2 | HuggingFace, GGUF, ONNX, amplio ecosistema |
-| Qwen2.5 1.5B | ~1,54 B | 32k tokens | Apache 2.0 | HuggingFace, GGUF, vLLM, Ollama |
-| SmolLM2 1.7B | ~1,7 B | 8k tokens (orientativo) | Apache 2.0 | HuggingFace, GGUF, transformers |
-| Gemma 2 2B | ~2,6 B | 8k tokens | Terminos de uso de Gemma | HuggingFace, GGUF, Ollama |
+| leeyunjai/themaker | ~1,0 B | No disponible | No disponible | Hugging Face, GGUF, ONNX |
+| Llama 3.2 1B | ~1,24 B | 128k tokens | Licencia comunitaria Llama 3.2 | Hugging Face, GGUF, ONNX, amplio ecosistema |
+| Qwen2.5 1.5B | ~1,54 B | 32k tokens | Apache 2.0 | Hugging Face, GGUF, vLLM, Ollama |
+| SmolLM2 1.7B | ~1,7 B | 8k tokens (orientativo) | Apache 2.0 | Hugging Face, GGUF, transformers |
+| Gemma 2 2B | ~2,6 B | 8k tokens | Terminos de uso de Gemma | Hugging Face, GGUF, Ollama |
 
 La comparacion relevante no es de rendimiento —no hay datos del modelo analizado— sino de garantias: las alternativas de la tabla tienen licencia explicita, contexto documentado, model cards completas y evaluaciones publicadas. `themaker` no ofrece ninguna de esas garantias en la informacion disponible, lo que lo descarta para uso comercial sin una verificacion legal y tecnica previa.
 
@@ -97,7 +97,7 @@ La comparacion relevante no es de rendimiento —no hay datos del modelo analiza
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leeyunjai/themaker
+- Modelo en Hugging Face: https://huggingface.co/leeyunjai/themaker
 - Discusiones del modelo: https://huggingface.co/leeyunjai/themaker/discussions
 - Ficha agregadora de terceros (free2aitools): https://free2aitools.com/model/leeyunjai/themaker
 - Perfil de GitHub del autor: https://github.com/leeyunjai82

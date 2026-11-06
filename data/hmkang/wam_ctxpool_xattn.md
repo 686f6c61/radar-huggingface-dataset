@@ -68,5 +68,5 @@ No se han encontrado modelos comparables en la informacion disponible. El modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hmkang/wam_ctxpool_xattn
+- Hugging Face: https://huggingface.co/hmkang/wam_ctxpool_xattn
 - Repositorio GitHub con el codigo: https://github.com/HEMMO0208/wam

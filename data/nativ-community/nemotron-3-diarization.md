@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/nativ-community/Nemotron-3-Diarization
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/nativ-community/Nemotron-3-Diarization
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/Nemotron-3-Diarization
 - Checkpoint MLX de referencia: https://huggingface.co/mlx-community/Nemotron-3-Diarization
 - Libreria mlx-audio: https://github.com/Blaizzy/mlx-audio

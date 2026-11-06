@@ -96,7 +96,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-LoRA-experiments
+- Repositorio Hugging Face: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-LoRA-experiments
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Experimento 1, baseline concept training: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-LoRA-experiments/blob/main/experiments/baseline.md
 - Experimento 2, training assistants v1 y v2: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-LoRA-experiments/blob/main/experiments/training-assistants.md

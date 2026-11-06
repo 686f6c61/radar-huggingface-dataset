@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kasranaqhdpur/AUTORIOS-CODER es un repositorio de modelo alojado en HuggingFace por el usuario kasranaqhdpur, publicado bajo licencia Apache 2.0 y etiquetado en la region "us". En el momento de la consulta acumula 0 descargas y 0 "likes", y la model card asociada contiene unicamente el bloque de metadatos de licencia, sin descripcion, instrucciones de uso, ejemplos ni documentacion tecnica de ningun tipo.
+kasranaqhdpur/AUTORIOS-CODER es un repositorio de modelo alojado en Hugging Face por el usuario kasranaqhdpur, publicado bajo licencia Apache 2.0 y etiquetado en la region "us". En el momento de la consulta acumula 0 descargas y 0 "likes", y la model card asociada contiene unicamente el bloque de metadatos de licencia, sin descripcion, instrucciones de uso, ejemplos ni documentacion tecnica de ningun tipo.
 
 No se dispone de informacion verificable sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, idiomas soportados ni pipelines de inferencia. El propio autor no ha declarado la tarea principal del modelo (el campo pipeline aparece como no disponible), por lo que cualquier afirmacion sobre sus capacidades seria especulativa.
 
@@ -94,7 +94,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 | Contexto | no disponible | no disponible | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible | no disponible | no disponible |
 | Licencia | apache-2.0 | no disponible | no disponible | no disponible |
-| Disponibilidad | repositorio HuggingFace | no disponible | no disponible | no disponible |
+| Disponibilidad | repositorio Hugging Face | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -110,7 +110,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kasranaqhdpur/AUTORIOS-CODER
+- Modelo en Hugging Face: https://huggingface.co/kasranaqhdpur/AUTORIOS-CODER
 - Paper: no disponible
 - Blog o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

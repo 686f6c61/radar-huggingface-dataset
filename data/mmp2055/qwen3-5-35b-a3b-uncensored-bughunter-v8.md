@@ -84,7 +84,7 @@ La comparativa se limita a los modelos mencionados en la informacion disponible.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mmp2055/Qwen3.5-35B-A3B-uncensored-bughunter-v8)
+- [Modelo en Hugging Face](https://huggingface.co/mmp2055/Qwen3.5-35B-A3B-uncensored-bughunter-v8)
 - [Modelo base llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved)
 - [Version v7 (27B denso)](https://huggingface.co/mmp2055/Qwen3.8-27B-Uncensored-bughunter-v7)
 - [Guia de requisitos de hardware y despliegue local](https://localairig.com/models/qwen3-5-35b-uncensored-setup-guide/)

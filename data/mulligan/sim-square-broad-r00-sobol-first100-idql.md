@@ -96,10 +96,10 @@ La diferencia clave frente a la clonacion de comportamiento pura es que IDQL inc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r00-sobol-first100-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r00-sobol-first100-idql
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organizacion en HuggingFace: https://huggingface.co/mulligan
+- Organizacion en Hugging Face: https://huggingface.co/mulligan
 - Dataset de entrenamiento: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-sobol-first100
 - Dataset de evaluacion que referencia estos checkpoints: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval
 - Referencia metodologica de IDQL (articulo "IDQL: Implicit Q-Learning as an Actor-Critic Method with Diffusion Policies"): no enlazada en la model card

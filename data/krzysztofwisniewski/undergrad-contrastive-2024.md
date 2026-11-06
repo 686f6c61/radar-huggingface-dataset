@@ -74,7 +74,7 @@ No disponible. El autor no identifica modelos comparables y no se dispone de esp
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| undergrad-contrastive-2024 | 33.088 | no disponible | sin benchmark | MIT | HuggingFace |
+| undergrad-contrastive-2024 | 33.088 | no disponible | sin benchmark | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No disponible. El autor no identifica modelos comparables y no se dispone de esp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/krzysztofwisniewski/undergrad-contrastive-2024
+- Repositorio en Hugging Face: https://huggingface.co/krzysztofwisniewski/undergrad-contrastive-2024
 - Archivos incluidos en el repositorio: eval.py (artefacto principal), README.md, config.json, training_args.json, model.safetensors
 - Paper, blog, repositorio de codigo independiente o demo: no disponible
 - La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo; los enlaces recuperados no guardan relacion con este repositorio y se omiten por no ser relevantes.

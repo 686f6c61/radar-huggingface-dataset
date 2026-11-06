@@ -80,7 +80,7 @@ La comparativa se limita a modelos de la misma familia y tamaño. No se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Llama-3.1-8B-Instruct-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Llama-3.1-8B-Instruct-Uncensored-GGUF
 - Modelo base (knoveleng): https://huggingface.co/knoveleng/Llama-3.1-8B-Instruct-Uncensored
 - Repositorio similar (DarkIdol): https://huggingface.co/mradermacher/DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored-GGUF
 - Repositorio similar (Fei): https://huggingface.co/mradermacher/Llama-3.1-8B-Instruct-Fei-v1-Uncensored-i1-GGUF

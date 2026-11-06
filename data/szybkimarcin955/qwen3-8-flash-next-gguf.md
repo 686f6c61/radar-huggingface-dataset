@@ -78,7 +78,7 @@ La comparación cuantitativa (benchmarks) no está disponible. Se recomienda con
 
 ## Enlaces
 
-- Repo HuggingFace de la versión GGUF analizada: https://huggingface.co/SZYBKIMARCIN955/Qwen3.8-Flash-Next-GGUF
+- Repo Hugging Face de la versión GGUF analizada: https://huggingface.co/SZYBKIMARCIN955/Qwen3.8-Flash-Next-GGUF
 - Repo oficial del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repo GGUF oficial de Unsloth: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Repositorio GitHub del proyecto: https://github.com/QwenLM/Qwen3.8-Flash-Next/

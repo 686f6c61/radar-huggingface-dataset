@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `davidwdw/fa-log-task00-centre-full-hourly-6186bef639d8-daea0c7d0e6c` corresponde a un repositorio alojado en HuggingFace por el usuario `davidwdw`. La propia model card lo describe como un "versioned fleet archive" (archivo versionado de flota) asociado a la receta canonica `evaluations/2026-09-23_task00_centre_full_recovery`, con nivel "versioned snapshot". No se trata, por tanto, de un modelo de lenguaje en el sentido habitual, sino de un paquete de artefactos o registros (logs) generado por un pipeline interno de evaluacion.
+El identificador `davidwdw/fa-log-task00-centre-full-hourly-6186bef639d8-daea0c7d0e6c` corresponde a un repositorio alojado en Hugging Face por el usuario `davidwdw`. La propia model card lo describe como un "versioned fleet archive" (archivo versionado de flota) asociado a la receta canonica `evaluations/2026-09-23_task00_centre_full_recovery`, con nivel "versioned snapshot". No se trata, por tanto, de un modelo de lenguaje en el sentido habitual, sino de un paquete de artefactos o registros (logs) generado por un pipeline interno de evaluacion.
 
 No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni licencia. La model card unicamente indica que debe usarse la revision exacta registrada y verificarse el fichero `SHA256SUMS`, lo que refuerza la interpretacion de que es un snapshot reproducible de un directorio de trabajo, no un modelo entrenado.
 
@@ -84,7 +84,7 @@ No disponible. No es posible identificar modelos comparables porque no se declar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-6186bef639d8-daea0c7d0e6c
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-6186bef639d8-daea0c7d0e6c
 - Paper: no disponible.
 - Blog o anuncio: no disponible.
 - Repositorio de codigo: no disponible.

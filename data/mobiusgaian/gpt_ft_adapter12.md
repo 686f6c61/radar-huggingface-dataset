@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`MobiusGaian/gpt_FT_adapter12` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace y diseñado para aplicarse sobre el modelo base GPT-2 de OpenAI (`openai-community/gpt2`). Se distribuye como un repositorio PEFT de aproximadamente 0,1 GB en formato safetensors, lo que confirma que no contiene los pesos completos del modelo sino únicamente las matrices de bajo rango entrenadas. El autor es el usuario MobiusGaian y la ficha se publica bajo la librería `peft` con pipeline de `text-generation`.
+`MobiusGaian/gpt_FT_adapter12` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face y diseñado para aplicarse sobre el modelo base GPT-2 de OpenAI (`openai-community/gpt2`). Se distribuye como un repositorio PEFT de aproximadamente 0,1 GB en formato safetensors, lo que confirma que no contiene los pesos completos del modelo sino únicamente las matrices de bajo rango entrenadas. El autor es el usuario MobiusGaian y la ficha se publica bajo la librería `peft` con pipeline de `text-generation`.
 
 El modelo resuelve el problema clásico de ajuste eficiente: permite especializar GPT-2 (124 millones de parámetros, arquitectura transformer decoder-only, contexto de 1024 tokens) sin reentrenar ni redistribuir el modelo completo, reduciendo el coste de almacenamiento y de cómputo. Es relevante en el contexto actual de fine-tuning ligero porque demuestra el flujo estándar PEFT aplicado a un modelo histórico, útil para experimentación docente, prototipado rápido y pruebas de concepto.
 
-La información disponible es muy limitada: la model card es la plantilla por defecto de HuggingFace sin rellenar, no se declaran idiomas, licencia ni datos de entrenamiento, y el repositorio acumula 16 descargas y 0 likes. Cualquier evaluación de calidad debe por tanto tratarse como preliminar y verificarse empíricamente por el usuario.
+La información disponible es muy limitada: la model card es la plantilla por defecto de Hugging Face sin rellenar, no se declaran idiomas, licencia ni datos de entrenamiento, y el repositorio acumula 16 descargas y 0 likes. Cualquier evaluación de calidad debe por tanto tratarse como preliminar y verificarse empíricamente por el usuario.
 
 ## Especificaciones tecnicas
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MobiusGaian/gpt_FT_adapter12 | Adaptador LoRA sobre GPT-2 (124 M base) | 1024 | safetensors (PEFT) | no disponible | HuggingFace, 16 descargas |
-| openai-community/gpt2 | 124 M | 1024 | safetensors, PyTorch | MIT (segun el repositorio original de OpenAI) | HuggingFace, ampliamente usado |
-| Adaptadores LoRA genericos sobre GPT-2 | Variable | 1024 | safetensors (PEFT) | Variable segun autor | Multiples en HuggingFace |
-| Modelos pequenos modernos (p. ej. variantes de menos de 1 B parametros) | Variable | Mayor que 1024 en la mayoria | safetensors, GGUF | Variable | HuggingFace |
+| MobiusGaian/gpt_FT_adapter12 | Adaptador LoRA sobre GPT-2 (124 M base) | 1024 | safetensors (PEFT) | no disponible | Hugging Face, 16 descargas |
+| openai-community/gpt2 | 124 M | 1024 | safetensors, PyTorch | MIT (segun el repositorio original de OpenAI) | Hugging Face, ampliamente usado |
+| Adaptadores LoRA genericos sobre GPT-2 | Variable | 1024 | safetensors (PEFT) | Variable segun autor | Multiples en Hugging Face |
+| Modelos pequenos modernos (p. ej. variantes de menos de 1 B parametros) | Variable | Mayor que 1024 en la mayoria | safetensors, GGUF | Variable | Hugging Face |
 
 La comparacion directa con modelos contemporaneos de mayor tamano no es significativa: GPT-2 es un modelo de 2019 y este adaptador hereda sus limitaciones de contexto y conocimiento. La alternativa natural es el propio GPT-2 base sin ajuste o adaptadores LoRA publicos similares, cuya calidad relativa solo puede determinarse con evaluacion empirica.
 
@@ -82,7 +82,7 @@ La comparacion directa con modelos contemporaneos de mayor tamano no es signific
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MobiusGaian/gpt_FT_adapter12
+- Repositorio Hugging Face: https://huggingface.co/MobiusGaian/gpt_FT_adapter12
 - Modelo base GPT-2: https://huggingface.co/openai-community/gpt2
 - Libreria PEFT: https://github.com/huggingface/peft
 - Paper de referencia citado en los tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700

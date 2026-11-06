@@ -77,9 +77,9 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/istt-aiml-data/Criminal-Qwen3-Reranker-0.6B-Augmented)
+- [Modelo en Hugging Face](https://huggingface.co/istt-aiml-data/Criminal-Qwen3-Reranker-0.6B-Augmented)
 - [Modelo base Qwen/Qwen3-Reranker-0.6B](https://huggingface.co/Qwen/Qwen3-Reranker-0.6B)
 - [Documentación de Sentence Transformers](https://sbert.net)
 - [Documentación de Cross Encoder](https://www.sbert.net/docs/cross_encoder/usage/usage.html)
 - [Repositorio de Sentence Transformers en GitHub](https://github.com/huggingface/sentence-transformers)
-- [Cross Encoders en HuggingFace](https://huggingface.co/models?library=sentence-transformers&other=cross-encoder)
+- [Cross Encoders en Hugging Face](https://huggingface.co/models?library=sentence-transformers&other=cross-encoder)

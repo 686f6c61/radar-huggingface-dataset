@@ -69,5 +69,5 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [HuggingFace: twistlabs/fotometis-qwen-3.5-4b-mlx](https://huggingface.co/twistlabs/fotometis-qwen-3.5-4b-mlx)
+- [Hugging Face: twistlabs/fotometis-qwen-3.5-4b-mlx](https://huggingface.co/twistlabs/fotometis-qwen-3.5-4b-mlx)
 - [Modelo base: Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)

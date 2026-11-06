@@ -102,7 +102,7 @@ No se dispone de datos comparativos de calidad (PSNR/SSIM/LPIPS sobre benchmarks
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mlx-community/VOSR2-fp32
+- Repositorio en Hugging Face: https://huggingface.co/mlx-community/VOSR2-fp32
 - Modelo base upstream: https://huggingface.co/CSWRY/VOSR
 - Lane fp16 de producción: https://huggingface.co/mlx-community/VOSR2-fp16
 - Port Swift/MLX: https://github.com/xocialize/mlx-vosr-swift

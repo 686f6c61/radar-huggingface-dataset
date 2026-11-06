@@ -77,7 +77,7 @@ El modelo base GLM-5.3-Flash es la referencia natural: con 320B totales y 18B ac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-FP8
+- Modelo en Hugging Face: https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-FP8
 - Modelo base GLM-5.3-Flash: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Paper de REAP (arXiv:2510.13999): https://arxiv.org/abs/2510.13999
 - Documentación de GLM-5.3 de Z.ai: https://docs.z.ai/guides/llm/glm-5.3

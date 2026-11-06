@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cheoljun95/sylc-dev3` es un repositorio de pesos publicado en HuggingFace por el usuario `cheoljun95`. En el momento de redactar esta ficha, la pagina del modelo no expone informacion sustantiva: no hay model card, no se declara arquitectura, numero de parametros, longitud de contexto, idiomas, licencia ni pipeline de inferencia. Los unicos metadatos disponibles son el identificador del repositorio, el autor, la etiqueta `region:us`, un tamano de repositorio de 2,6 GB y unas cifras de uso muy bajas (12 descargas y 0 likes desde su creacion el 29 de agosto de 2026 hasta su ultima actualizacion el 28 de septiembre de 2026).
+`cheoljun95/sylc-dev3` es un repositorio de pesos publicado en Hugging Face por el usuario `cheoljun95`. En el momento de redactar esta ficha, la pagina del modelo no expone informacion sustantiva: no hay model card, no se declara arquitectura, numero de parametros, longitud de contexto, idiomas, licencia ni pipeline de inferencia. Los unicos metadatos disponibles son el identificador del repositorio, el autor, la etiqueta `region:us`, un tamano de repositorio de 2,6 GB y unas cifras de uso muy bajas (12 descargas y 0 likes desde su creacion el 29 de agosto de 2026 hasta su ultima actualizacion el 28 de septiembre de 2026).
 
 Por el nombre (`sylc-dev3`) y por el bajo nivel de exposicion publica, el repositorio tiene la apariencia de un punto de control experimental o de desarrollo interno, no de un lanzamiento de modelo respaldado por documentacion tecnica. Esto implica que cualquier evaluacion funcional debe hacerse descargando los pesos y ejecutando pruebas propias: no existe informacion publicada sobre datos de entrenamiento, proceso de alineamiento, tokenizador ni comportamiento esperado.
 
@@ -40,7 +40,7 @@ No se ha publicado ninguna lista de capacidades del modelo. A continuacion se in
 - Modo de razonamiento explicito ("thinking"), vision, audio u otras modalidades: no disponible.
 - Relleno de plantillas, clasificacion o embeddings: no disponible.
 
-La unica etiqueta presente, `region:us`, es un metadato de clasificacion geografica de HuggingFace y no describe ninguna capacidad funcional.
+La unica etiqueta presente, `region:us`, es un metadato de clasificacion geografica de Hugging Face y no describe ninguna capacidad funcional.
 
 ## Casos de uso
 
@@ -80,10 +80,10 @@ No es posible establecer una comparativa fiable porque se desconoce el tamano, l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cheoljun95/sylc-dev3 | no disponible | no disponible | no disponible | HuggingFace, 12 descargas |
-| Qwen2.5-1.5B | 1.500 millones | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama 3.2 1B | 1.200 millones | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace, requiere aceptacion |
-| Gemma 2 2B | 2.600 millones | 8.192 tokens | Terminos de uso de Gemma | HuggingFace, requiere aceptacion |
+| cheoljun95/sylc-dev3 | no disponible | no disponible | no disponible | Hugging Face, 12 descargas |
+| Qwen2.5-1.5B | 1.500 millones | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama 3.2 1B | 1.200 millones | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face, requiere aceptacion |
+| Gemma 2 2B | 2.600 millones | 8.192 tokens | Terminos de uso de Gemma | Hugging Face, requiere aceptacion |
 
 La comparacion de rendimiento no puede completarse: no hay benchmarks publicados para `sylc-dev3`.
 
@@ -102,4 +102,4 @@ La comparacion de rendimiento no puede completarse: no hay benchmarks publicados
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cheoljun95/sylc-dev3
+- Hugging Face: https://huggingface.co/cheoljun95/sylc-dev3

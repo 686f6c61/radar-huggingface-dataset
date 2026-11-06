@@ -107,7 +107,7 @@ El hermano DPO mejora la fidelidad de contenido y la coincidencia de voz, pero e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ampixa/audio8-nepali-wave3-onnx
+- Modelo en Hugging Face: https://huggingface.co/ampixa/audio8-nepali-wave3-onnx
 - Modelo hermano con DPO: https://huggingface.co/ampixa/audio8-nepali-dpo-onnx
 - Modelo base: https://huggingface.co/Audio8/Audio8-TTS-Preview-0.1b
 - Release oficial ONNX INT8 de referencia: https://huggingface.co/Edge0/audio8-TTS-0.1B-ONNX-INT8

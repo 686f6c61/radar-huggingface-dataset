@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qareed-Qwen2.5-1.5B-Poet-v1-GGUF es la version cuantizada en formato GGUF del modelo Youssefx64/Qareed-Qwen2.5-1.5B-Poet-v1, un ajuste fino especializado en poesia arabe. La cuantizacion la ha realizado mradermacher, un autor conocido en HuggingFace por publicar versiones GGUF de modelos abiertos para su uso con llama.cpp y herramientas derivadas. El modelo subyacente parte de Qwen2.5-1.5B y ha sido adaptado mediante QLoRA y PEFT sobre el dataset arbml/Ashaar_dataset, un corpus de poesia arabe.
+Qareed-Qwen2.5-1.5B-Poet-v1-GGUF es la version cuantizada en formato GGUF del modelo Youssefx64/Qareed-Qwen2.5-1.5B-Poet-v1, un ajuste fino especializado en poesia arabe. La cuantizacion la ha realizado mradermacher, un autor conocido en Hugging Face por publicar versiones GGUF de modelos abiertos para su uso con llama.cpp y herramientas derivadas. El modelo subyacente parte de Qwen2.5-1.5B y ha sido adaptado mediante QLoRA y PEFT sobre el dataset arbml/Ashaar_dataset, un corpus de poesia arabe.
 
 El modelo resuelve un nicho muy concreto: generacion y manipulacion de texto poetico en arabe con un coste computacional minimo. Con 1.543.714.304 parametros totales (~1,5 B) y cuantizaciones que van desde 0,8 GB (Q2_K) hasta 3,2 GB (f16), es desplegable en hardware de consumo e incluso en CPU, lo que lo hace adecuado para experimentacion local, prototipado y aplicaciones de bajo coste centradas en lengua arabe.
 
@@ -34,7 +34,7 @@ La model card de esta cuantizacion no describe la arquitectura del modelo origin
 
 El dataset empleado es arbml/Ashaar_dataset, un corpus de poesia arabe. No se detalla en la informacion proporcionada el numero de ejemplos, la proporcion de poesia clasica frente a moderna ni el metodo de formateo de las conversaciones. Tampoco se documentan innovaciones tecnicas adicionales (atencion lineal, decodificacion especulativa, mezcla de expertos) mas alla de las propias de la arquitectura Qwen2.5 de la que parte.
 
-En cuanto al proceso de cuantizacion, la model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que implica conversion desde pesos HuggingFace y cuantizacion por tensor de salida. El autor senala que no hay cuantizaciones ponderadas ni con imatrix disponibles en el momento de publicacion.
+En cuanto al proceso de cuantizacion, la model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que implica conversion desde pesos Hugging Face y cuantizacion por tensor de salida. El autor senala que no hay cuantizaciones ponderadas ni con imatrix disponibles en el momento de publicacion.
 
 ## Capacidades
 
@@ -100,13 +100,13 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 - El ajuste QLoRA sobre un dataset especifico de poesia puede haber degradado capacidades generales del modelo base (conocimiento general, matematicas, codigo); no hay datos que lo confirmen ni que lo descarten.
 - Sesgos conocidos: no disponible. El dataset Ashaar_dataset esta compuesto por poesia arabe, lo que puede introducir sesgos estilisticos, tematicos y de registro propios del corpus, pero no se documenta ningun analisis al respecto.
 - Licencia Apache-2.0 en este repositorio, lo que en principio permite uso comercial. Se recomienda verificar la licencia del modelo base Youssefx64/Qareed-Qwen2.5-1.5B-Poet-v1 y del propio Qwen2.5-1.5B antes de un despliegue productivo.
-- Fecha de creacion registrada como 2026-10-09, posterior a la fecha de actualizacion de contexto habitual; conviene comprobar la ficha original en HuggingFace por si se trata de un error de metadatos.
+- Fecha de creacion registrada como 2026-10-09, posterior a la fecha de actualizacion de contexto habitual; conviene comprobar la ficha original en Hugging Face por si se trata de un error de metadatos.
 - El pipeline no esta declarado y el modelo tiene 0 likes y pocas descargas, por lo que no existe validacion comunitaria significativa.
 - Uso responsable: en aplicaciones de contenido generado automaticamente conviene indicar al usuario que el texto ha sido producido por un modelo y revisar su calidad antes de publicarlo.
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Qareed-Qwen2.5-1.5B-Poet-v1-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Qareed-Qwen2.5-1.5B-Poet-v1-GGUF
 - Modelo base: https://huggingface.co/Youssefx64/Qareed-Qwen2.5-1.5B-Poet-v1
 - Dataset de ajuste: https://huggingface.co/datasets/arbml/Ashaar_dataset
 - Pagina de resumen de cuantizaciones del autor: https://hf.tst.eu/model#Qareed-Qwen2.5-1.5B-Poet-v1-GGUF

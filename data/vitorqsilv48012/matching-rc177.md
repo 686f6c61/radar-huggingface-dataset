@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mae for Matching es un repositorio publicado en HuggingFace por el usuario vitorqsilv48012 que contiene una implementación funcional de una arquitectura denominada Mae orientada a tareas de matching (emparejamiento o correspondencia entre elementos). Se trata de un proyecto de código transparente y de escala reducida: el checkpoint incluido es un peso de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado sobre benchmarks. El propio autor indica explícitamente que no se reclama ninguna puntuación de rendimiento.
+Mae for Matching es un repositorio publicado en Hugging Face por el usuario vitorqsilv48012 que contiene una implementación funcional de una arquitectura denominada Mae orientada a tareas de matching (emparejamiento o correspondencia entre elementos). Se trata de un proyecto de código transparente y de escala reducida: el checkpoint incluido es un peso de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado sobre benchmarks. El propio autor indica explícitamente que no se reclama ninguna puntuación de rendimiento.
 
 El modelo cuenta con 16.576 parámetros totales según los metadatos reales del archivo safetensors, lo que lo sitúa en un rango meramente experimental. La arquitectura declarada emplea atención de tipo grouped query, fusión mediante mecanismo tucker, activación approx gelu y normalización instancenorm. No se especifica tokenizador, ventana de contexto, composición del dataset ni idiomas soportados.
 
@@ -22,7 +22,7 @@ Su relevancia es limitada y de carácter didáctico: sirve como punto de partida
 | Formato de pesos | safetensors (checkpoint de inicialización), compatible con PyTorch |
 | Escala declarada | small |
 | Optimizador por defecto | SGD con scheduler de tipo step |
-| Pipeline en HuggingFace | no disponible |
+| Pipeline en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -46,7 +46,7 @@ En cuanto al entrenamiento, el repositorio incluye una receta de experimento por
 - Plantilla de investigación en arquitecturas de matching: utilizar el código de `finetune.py` y `config.json` como base para experimentar con atención grouped query y fusión tucker en tareas de correspondencia.
 - Reproducción de experimentos controlados: el autor recomienda entrenar todas las líneas base con la misma exposición de datos, presupuesto de ajuste y semillas aleatorias, lo que convierte el repositorio en un marco para comparaciones justas.
 - Docencia y formación: ilustrar cómo se estructura un repositorio mínimo de modelo (script, configuración, argumentos de entrenamiento y pesos) sin depender de frameworks de alto nivel.
-- Desarrollo de adaptadores de carga: servir como caso de prueba para escribir adaptadores que permitan cargar implementaciones personalizadas en APIs genéricas de HuggingFace.
+- Desarrollo de adaptadores de carga: servir como caso de prueba para escribir adaptadores que permitan cargar implementaciones personalizadas en APIs genéricas de Hugging Face.
 - Auditoría de licencias y trazabilidad: al ser MIT y de tamaño despreciable, puede integrarse en pipelines internos de validación de artefactos sin coste de almacenamiento ni restricciones comerciales.
 - Benchmarking de herramientas de cuantización: por su tamaño reducido, permite validar flujos de conversión a otros formatos, si bien no se han publicado cuantizaciones oficiales.
 
@@ -81,5 +81,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vitorqsilv48012/matching-rc177
+- Repositorio en Hugging Face: https://huggingface.co/vitorqsilv48012/matching-rc177
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales relacionados con este modelo.

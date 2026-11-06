@@ -70,7 +70,7 @@ No se dispone de datos suficientes para una comparativa rigurosa con alternativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de conversion: https://github.com/ggml-org/convert
 - Guia de ejecucion local (yottalabs.ai): https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026

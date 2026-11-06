@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nvidia/Ising-Decoder-SurfaceCode-1-Accurate` es un decodificador de códigos de superficie (surface codes) para corrección de errores cuánticos (QEC), desarrollado por NVIDIA dentro del framework de entrenamiento Ising-Decoding. Su función es interpretar los síndromes de error generados por un ordenador cuántico y reconstruir la operación de corrección más probable, un paso crítico para la computación cuántica tolerante a fallos. La variante "Accurate" prioriza la precisión de la decodificación frente a la latencia, a diferencia de otras variantes orientadas a velocidad. El modelo se distribuye como un checkpoint en formato PyTorch (`.pt`) y su acceso está restringido en HuggingFace, requiriendo la aceptación de condiciones de licencia. Aunque se publicó en abril de 2026, la información técnica detallada (arquitectura, número de parámetros, datos de entrenamiento) no está disponible públicamente en las fuentes consultadas.
+El modelo `nvidia/Ising-Decoder-SurfaceCode-1-Accurate` es un decodificador de códigos de superficie (surface codes) para corrección de errores cuánticos (QEC), desarrollado por NVIDIA dentro del framework de entrenamiento Ising-Decoding. Su función es interpretar los síndromes de error generados por un ordenador cuántico y reconstruir la operación de corrección más probable, un paso crítico para la computación cuántica tolerante a fallos. La variante "Accurate" prioriza la precisión de la decodificación frente a la latencia, a diferencia de otras variantes orientadas a velocidad. El modelo se distribuye como un checkpoint en formato PyTorch (`.pt`) y su acceso está restringido en Hugging Face, requiriendo la aceptación de condiciones de licencia. Aunque se publicó en abril de 2026, la información técnica detallada (arquitectura, número de parámetros, datos de entrenamiento) no está disponible públicamente en las fuentes consultadas.
 
 ## Especificaciones tecnicas
 
@@ -14,7 +14,7 @@ El modelo `nvidia/Ising-Decoder-SurfaceCode-1-Accurate` es un decodificador de c
 | Longitud de contexto | no disponible (no es un modelo de lenguaje) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (no aplica, es un modelo de decodificación) |
-| Licencia | nvidia-open-model-license (acceso restringido en HuggingFace) |
+| Licencia | nvidia-open-model-license (acceso restringido en Hugging Face) |
 | Formato de pesos | PyTorch (`.pt`), safetensors no indicado |
 
 ## Arquitectura y entrenamiento
@@ -40,7 +40,7 @@ No se han publicado detalles específicos sobre la arquitectura interna del mode
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de tasa de éxito de decodificación, comparaciones con otros decodificadores ni métricas de latencia en el repositorio ni en la página de HuggingFace.
+No se han publicado resultados de benchmarks en la información disponible. No hay datos de tasa de éxito de decodificación, comparaciones con otros decodificadores ni métricas de latencia en el repositorio ni en la página de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -55,7 +55,7 @@ No disponible. No se han identificado modelos comparables en la misma categoría
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar las condiciones de la licencia en HuggingFace (gated). No es de descarga directa sin registro.
+- Acceso restringido: el modelo requiere aceptar las condiciones de la licencia en Hugging Face (gated). No es de descarga directa sin registro.
 - Licencia nvidia-open-model-license: puede imponer restricciones para uso comercial o distribución; se debe revisar el texto completo de la licencia.
 - Especialización limitada: solo funciona para códigos de superficie; no es aplicable a otros códigos QEC sin modificaciones.
 - Riesgo de errores de decodificación: como cualquier decodificador, puede fallar en condiciones de alta tasa de error o síndromes ambiguos, lo que degradaría la tolerancia a fallos del sistema cuántico.
@@ -64,9 +64,9 @@ No disponible. No se han identificado modelos comparables en la misma categoría
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/nvidia/Ising-Decoder-SurfaceCode-1-Accurate)
-- [Repositorio de archivos en HuggingFace](https://huggingface.co/nvidia/Ising-Decoder-SurfaceCode-1-Accurate/tree/main)
+- [Modelo en Hugging Face](https://huggingface.co/nvidia/Ising-Decoder-SurfaceCode-1-Accurate)
+- [Repositorio de archivos en Hugging Face](https://huggingface.co/nvidia/Ising-Decoder-SurfaceCode-1-Accurate/tree/main)
 - [Repositorio NVIDIA/Ising-Decoding en GitHub](https://github.com/NVIDIA/Ising-Decoding)
 - [Archivo del checkpoint en GitHub](https://github.com/NVIDIA/Ising-Decoding/blob/main/models/Ising-Decoder-SurfaceCode-1-Accurate.pt)
 - [DeepWiki - Documentación de NVIDIA/Ising](https://deepwiki.com/NVIDIA/Ising/2.2-decoder-models:-ising-decoder-surfacecode-1)
-- Referencia al paper: arxiv:2604.12841 (según los tags de HuggingFace, no verificado)
+- Referencia al paper: arxiv:2604.12841 (según los tags de Hugging Face, no verificado)

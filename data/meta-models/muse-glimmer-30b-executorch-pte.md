@@ -70,6 +70,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/meta-models/Muse-Glimmer-30B-ExecuTorch-PTE)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/meta-models/Muse-Glimmer-30B-ExecuTorch-PTE)
 - [Anuncio del equipo de PyTorch sobre ExecuTorch para IA agéntica](https://pytorch.org/blog/fast-ondevice-agentic-ai-with-executorch/)
 - [Guía de Muse Glimmer en el repositorio de ExecuTorch](https://github.com/pytorch/executorch/blob/main/examples/models/muse-glimmer/README.md)

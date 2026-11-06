@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CLA 1.1-27B (MLX) es un ajuste fino mediante QLoRA del modelo base Qwen3.8-27B, desarrollado por el usuario liuchen88 y publicado en HuggingFace. Está especializado en aprobación de crédito empresarial (Commercial Loan Approval v1.0) y produce una salida de tres estados —aprobación, aprobación condicionada o rechazo— a partir de datos financieros y de imágenes asociadas (capturas de estados financieros, facturas, licencias de actividad). El repositorio contiene los pesos en formato MLX nativo en BF16 sin cuantizar, es decir, la variante para Apple Silicon que se carga con LM Studio o mlx-lm.
+CLA 1.1-27B (MLX) es un ajuste fino mediante QLoRA del modelo base Qwen3.8-27B, desarrollado por el usuario liuchen88 y publicado en Hugging Face. Está especializado en aprobación de crédito empresarial (Commercial Loan Approval v1.0) y produce una salida de tres estados —aprobación, aprobación condicionada o rechazo— a partir de datos financieros y de imágenes asociadas (capturas de estados financieros, facturas, licencias de actividad). El repositorio contiene los pesos en formato MLX nativo en BF16 sin cuantizar, es decir, la variante para Apple Silicon que se carga con LM Studio o mlx-lm.
 
 El modelo hereda del base una arquitectura híbrida de 64 capas que combina 48 capas de atención lineal/SSM con 16 capas de atención completa (una cada cuatro), además de una torre visual basada en el codificador Qwen3-VL de 27 capas. El resultado es un modelo de 27.000 millones de parámetros con 262.144 tokens de contexto nativo, capacidad multimodal de entrada y un tokenizador de 248.320 entradas, todo bajo licencia Apache-2.0. Su relevancia es acotada pero específica: cubre un nicho vertical (scoring crediticio y aprobación de préstamos en chino) sobre el que no abundan ajustes finos públicos, y lo hace en un formato ejecutable en hardware de Apple.
 
@@ -26,7 +26,7 @@ Conviene señalar desde el principio que el proyecto no publica ninguna evaluaci
 | Vocabulario | 248.320 tokens |
 | Torre visual | Codificador Qwen3-VL de 27 capas (ViT) + proyección Merger; tensores con prefijo `vision_tower.*` |
 | Método de ajuste | QLoRA (rank 32, alpha 1024, dropout 0.2, checkpoint 900) |
-| Tamaño del repositorio | 17,6 GB (dato de HuggingFace); la model card declara ~51 GB en BF16, discrepancia no aclarada |
+| Tamaño del repositorio | 17,6 GB (dato de Hugging Face); la model card declara ~51 GB en BF16, discrepancia no aclarada |
 
 ## Arquitectura y entrenamiento
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - **Cabe en GPU de consumo**: no en el sentido habitual; en Apple Silicon de gama alta sí, con las restricciones de memoria citadas. La variante GGUF del mismo autor es la vía indicada para entornos con menos memoria.
 - **Opciones de despliegue**: LM Studio (con Flash Attention activada y etiqueta Vision) y mlx-lm (`mlx_lm.load --model ./CLA1.1-27B-MLX`). Para llama.cpp, Ollama o TGI habría que recurrir al repositorio GGUF, no a este.
 - **Latencia y throughput**: no disponible. No se publican mediciones de tokens por segundo ni de latencia por petición.
-- **Nota sobre el tamaño**: el repositorio declara 17,6 GB en HuggingFace frente a los ~51 GB que indica la model card para BF16; conviene verificar la integridad de los 11 fragmentos antes de desplegar.
+- **Nota sobre el tamaño**: el repositorio declara 17,6 GB en Hugging Face frente a los ~51 GB que indica la model card para BF16; conviene verificar la integridad de los 11 fragmentos antes de desplegar.
 
 ## Comparativa con modelos similares
 
@@ -99,7 +99,7 @@ Frente al base, este ajuste cambia generalidad por especialización: gana un for
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/liuchen88/CLA1.1-27B-MLX
+- Repositorio Hugging Face: https://huggingface.co/liuchen88/CLA1.1-27B-MLX
 - Variante GGUF del mismo autor (mencionada en la model card): https://huggingface.co/liuchen88/CLA1.1-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - mlx-lm (framework de carga y entrenamiento): https://github.com/ml-explore/mlx-lm

@@ -91,8 +91,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ManniX-ITA/opencoti-llamafile
+- Repositorio Hugging Face: https://huggingface.co/ManniX-ITA/opencoti-llamafile
 - Proyecto opencoti (GitHub): https://github.com/mann1x/opencoti
 - Perfil GitHub del autor: https://github.com/mann1x
-- Post de HuggingFace sobre opencoti-llamafile: https://huggingface.co/posts/ManniX-ITA/630279752296516
+- Post de Hugging Face sobre opencoti-llamafile: https://huggingface.co/posts/ManniX-ITA/630279752296516
 - Repositorio llamafile (mozilla-ai): https://github.com/mozilla-ai/llamafile

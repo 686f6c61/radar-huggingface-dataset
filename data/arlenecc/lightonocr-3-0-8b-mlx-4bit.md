@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LightOnOCR-3-0.8B-MLX-4bit es una conversión a formato MLX con cuantización de 4 bits del modelo LightOnOCR-3, un modelo de 0,8 mil millones de parámetros orientado a tareas de reconocimiento óptico de caracteres (OCR). El artefacto está publicado en HuggingFace por el usuario `arlenecc`, que actúa como redistribuidor de la conversión, mientras que el modelo original es desarrollado por LightOn. La model card del repositorio no incluye información técnica adicional más allá de la licencia MIT.
+LightOnOCR-3-0.8B-MLX-4bit es una conversión a formato MLX con cuantización de 4 bits del modelo LightOnOCR-3, un modelo de 0,8 mil millones de parámetros orientado a tareas de reconocimiento óptico de caracteres (OCR). El artefacto está publicado en Hugging Face por el usuario `arlenecc`, que actúa como redistribuidor de la conversión, mientras que el modelo original es desarrollado por LightOn. La model card del repositorio no incluye información técnica adicional más allá de la licencia MIT.
 
 El interés de esta pieza concreta reside en su formato: la cuantización a 4 bits en MLX permite ejecutar un modelo de OCR de 0,8B en hardware Apple Silicon con un consumo de memoria reducido, lo que facilita su despliegue en portátiles y equipos de sobremesa con chip M-series sin necesidad de GPU dedicada. Es relevante para desarrolladores que quieran integrar extracción de texto desde imágenes o documentos en flujos locales y con requisitos de privacidad.
 
@@ -23,7 +23,7 @@ No obstante, la información publicada en el repositorio es mínima: no se detal
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en el repositorio de HuggingFace. Por el nombre y el propósito (OCR), se trata presumiblemente de un transformer con un codificador visual y un decodificador de texto, pero este dato no puede confirmarse con la información disponible. Tampoco constan el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO.
+No se ha publicado información sobre la arquitectura del modelo en el repositorio de Hugging Face. Por el nombre y el propósito (OCR), se trata presumiblemente de un transformer con un codificador visual y un decodificador de texto, pero este dato no puede confirmarse con la información disponible. Tampoco constan el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO.
 
 La única innovación técnica verificable es la conversión a MLX con cuantización de 4 bits, que reduce el peso del modelo y permite su ejecución en el framework MLX de Apple para chips M-series. No se documentan técnicas como decodificación especulativa, atención lineal ni variantes híbridas.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| LightOnOCR-3-0.8B-MLX-4bit | 0,8B | no disponible | MIT | MLX 4 bits | HuggingFace |
+| LightOnOCR-3-0.8B-MLX-4bit | 0,8B | no disponible | MIT | MLX 4 bits | Hugging Face |
 | LightOnOCR-3 (base) | 0,8B | no disponible | no disponible | no disponible | no disponible |
 | Alternativas OCR de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arlenecc/LightOnOCR-3-0.8B-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/arlenecc/LightOnOCR-3-0.8B-MLX-4bit
 - Modelo base LightOnOCR-3: no disponible en la información proporcionada
 - Paper o blog de LightOn sobre LightOnOCR: no disponible en la información proporcionada
 - Repositorio de MLX: no disponible en la información proporcionada

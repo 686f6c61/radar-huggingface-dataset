@@ -4,7 +4,7 @@
 
 Neo es un modelo de decision "System One" desarrollado por TokenAI, una startup sin animo de lucro fundada en 2025 por Assem Sabry. A diferencia de un modelo generativo convencional, Neo no produce texto libre: lee un estado de aplicacion y un esquema de decision declarado, y devuelve en una sola pasada forward probabilidades tipadas para tres tipos de pregunta: `choice`, `score` y `noul`.
 
-El modelo esta publicado en HuggingFace bajo el identificador `tokenaii/Neo` (referencia canonica `tokenaii/neo`) con un tamano de repositorio de 0,4 GB y licencia propietaria TokenAI Neo Model License v1.0. Su orientacion principal es el enrutado de herramientas (`tool-routing`) dentro de pipelines de agentes, es decir, decidir que accion o herramienta corresponde dado un estado, en lugar de redactar la respuesta final.
+El modelo esta publicado en Hugging Face bajo el identificador `tokenaii/Neo` (referencia canonica `tokenaii/neo`) con un tamano de repositorio de 0,4 GB y licencia propietaria TokenAI Neo Model License v1.0. Su orientacion principal es el enrutado de herramientas (`tool-routing`) dentro de pipelines de agentes, es decir, decidir que accion o herramienta corresponde dado un estado, en lugar de redactar la respuesta final.
 
 El entrenamiento se realizo desde cero sobre registros de decision sinteticos mediante una metodologia inspirada en RLCD con objetivos suaves (soft-target), segun declara el propio autor. La model card no especifica arquitectura concreta, numero de parametros, longitud de contexto ni idiomas soportados. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y las busquedas web realizadas no han devuelto ningun resultado relevante sobre el modelo.
 
@@ -73,7 +73,7 @@ No se dispone de modelos comparables directos en la informacion proporcionada. L
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TokenAI Neo | no disponible | no disponible | no disponible | TokenAI Neo Model License v1.0 (propietaria) | HuggingFace, 0 descargas |
+| TokenAI Neo | no disponible | no disponible | no disponible | TokenAI Neo Model License v1.0 (propietaria) | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone de modelos comparables directos en la informacion proporcionada. L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tokenaii/Neo
+- Modelo en Hugging Face: https://huggingface.co/tokenaii/Neo
 - Referencia canonica declarada por el autor: https://huggingface.co/tokenaii/neo
 - Dataset de entrenamiento: https://huggingface.co/datasets/tokenaii/neo-dataset
 - Licencia del modelo: https://huggingface.co/tokenaii/neo/blob/main/MODEL_LICENSE.md

@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wy114523/Qwen3-0.6B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/wy114523/Qwen3-0.6B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio GGUF oficial de referencia: https://huggingface.co/Qwen/Qwen3-0.6B-GGUF
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

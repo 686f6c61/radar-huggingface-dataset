@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El bl
 ## Comparativa con modelos similares
 | Modelo | Arquitectura | Parametros | Ventana de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeremytromp/htdemucs-ft-vocals-onnx (este modelo) | HT-Demucs (sub-modelo 3, voces), ONNX | no disponible (316 MB ONNX) | 343.980 muestras (7,8 s, 44,1 kHz estéreo) | MIT | HuggingFace, espejo sin modificaciones |
-| StemSplitio/htdemucs-ft-vocals-onnx | HT-Demucs (sub-modelo 3, voces), ONNX | no disponible (316 MB ONNX) | 343.980 muestras (7,8 s, 44,1 kHz estéreo) | MIT | HuggingFace, repositorio original |
+| Jeremytromp/htdemucs-ft-vocals-onnx (este modelo) | HT-Demucs (sub-modelo 3, voces), ONNX | no disponible (316 MB ONNX) | 343.980 muestras (7,8 s, 44,1 kHz estéreo) | MIT | Hugging Face, espejo sin modificaciones |
+| StemSplitio/htdemucs-ft-vocals-onnx | HT-Demucs (sub-modelo 3, voces), ONNX | no disponible (316 MB ONNX) | 343.980 muestras (7,8 s, 44,1 kHz estéreo) | MIT | Hugging Face, repositorio original |
 | htdemucs_ft original (Meta) | HT-Demucs, ensamblado de 4 bolsas, PyTorch | no disponible | variable (procesado por segmentos) | MIT | GitHub facebookresearch/demucs |
-| StemSplitio/htdemucs-onnx | HT-Demucs (modelo completo), ONNX | no disponible | no disponible | MIT | HuggingFace |
+| StemSplitio/htdemucs-onnx | HT-Demucs (modelo completo), ONNX | no disponible | no disponible | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 - Solo el stem de voces es significativo; los stems de batería, bajo y otros no deben utilizarse como salida fiable en esta exportación concreta.
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El bl
 - La información sobre entrenamiento, parámetros y métricas es limitada; para producción se recomienda validar el rendimiento en el dominio concreto de audio antes de desplegarlo.
 
 ## Enlaces
-- Modelo en HuggingFace (este espejo): https://huggingface.co/Jeremytromp/htdemucs-ft-vocals-onnx
+- Modelo en Hugging Face (este espejo): https://huggingface.co/Jeremytromp/htdemucs-ft-vocals-onnx
 - Repositorio original de StemSplitio: https://huggingface.co/StemSplitio/htdemucs-ft-vocals-onnx
 - Blog de StemSplit sobre la exportación a ONNX: https://stemsplit.io/blog/htdemucs-ft-onnx-export
 - Repositorio de Demucs de Meta: https://github.com/facebookresearch/demucs
 - Página de modelos de demucs-onnx: https://stemsplit.github.io/demucs-onnx/models/
 - Modelo ONNX de StemSplitio para HT-Demucs completo: https://huggingface.co/StemSplitio/htdemucs-onnx
-- Espejo de la página de HuggingFace del repositorio original: https://hf-p-cfw.fyan.top/StemSplitio/htdemucs-ft-vocals-onnx
+- Espejo de la página de Hugging Face del repositorio original: https://hf-p-cfw.fyan.top/StemSplitio/htdemucs-ft-vocals-onnx

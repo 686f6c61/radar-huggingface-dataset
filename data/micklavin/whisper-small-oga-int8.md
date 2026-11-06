@@ -91,7 +91,7 @@ La ventaja diferencial de este paquete es su integración directa con ONNX Runti
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Micklavin/whisper-small-oga-int8
+- Hugging Face: https://huggingface.co/Micklavin/whisper-small-oga-int8
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Revisión inmutable del modelo base: `973afd24965f72e36ca33b3055d56a652f456b4d`
 - ONNX Runtime GenAI: no se proporciona enlace directo en la información disponible

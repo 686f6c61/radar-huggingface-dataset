@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ajujohn8/gemma-e4b-dpo-r2` es un adaptador de preferencias (DPO) entrenado con LoRA sobre el checkpoint `ajujohn8/gemma-e4b-it-eval-sft`, publicado por el usuario ajujohn8 en HuggingFace. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador en formato PEFT (0,2 GB de repositorio) que debe cargarse junto al modelo base para poder realizar inferencia. El repositorio no incluye model card sustantiva: la plantilla está vacía y todos los campos relevantes aparecen como `[More Information Needed]`.
+`ajujohn8/gemma-e4b-dpo-r2` es un adaptador de preferencias (DPO) entrenado con LoRA sobre el checkpoint `ajujohn8/gemma-e4b-it-eval-sft`, publicado por el usuario ajujohn8 en Hugging Face. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador en formato PEFT (0,2 GB de repositorio) que debe cargarse junto al modelo base para poder realizar inferencia. El repositorio no incluye model card sustantiva: la plantilla está vacía y todos los campos relevantes aparecen como `[More Information Needed]`.
 
 El problema que aborda es el habitual de la segunda etapa de alineamiento: partiendo de un checkpoint ya ajustado por instrucciones (SFT), se aplica optimización directa de preferencias para desplazar la distribución de salida hacia respuestas mejor valoradas por un conjunto de pares preferidos/rechazados. La etiqueta `r2` sugiere una segunda ronda de DPO, aunque esto no se documenta. El entrenamiento se ha realizado con TRL y Unsloth sobre PEFT 0.20.0, según los tags del repositorio.
 
@@ -85,7 +85,7 @@ No se dispone de resultados de rendimiento comparables entre estas opciones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ajujohn8/gemma-e4b-dpo-r2
+- Modelo en Hugging Face: https://huggingface.co/ajujohn8/gemma-e4b-dpo-r2
 - Modelo base (checkpoint SFT): https://huggingface.co/ajujohn8/gemma-e4b-it-eval-sft
 - Paper citado en los tags (Lacoste et al., 2019, calculadora de impacto de ML): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

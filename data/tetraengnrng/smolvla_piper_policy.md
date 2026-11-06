@@ -68,8 +68,8 @@ No se dispone de informacion comparativa especifica para este ajuste fino. Como 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tetraengnrng/smolvla_piper_policy
+- Repositorio Hugging Face: https://huggingface.co/tetraengnrng/smolvla_piper_policy
 - Paper SmolVLA: https://arxiv.org/abs/2506.01844
-- Blog de SmolVLA en HuggingFace: https://huggingface.co/blog/smolvla
+- Blog de SmolVLA en Hugging Face: https://huggingface.co/blog/smolvla
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index
 - Codigo fuente de LeRobot: https://github.com/huggingface/lerobot

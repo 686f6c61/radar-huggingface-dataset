@@ -104,7 +104,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ningún otro benc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jongstra/Swift-1.5-Qwen3.8-27b-oQ4e-fp16-mtp
+- Repositorio Hugging Face: https://huggingface.co/jongstra/Swift-1.5-Qwen3.8-27b-oQ4e-fp16-mtp
 - Modelo base inmediato: https://huggingface.co/yottle/Swift-1.5-Qwen3.8-27b-oQ4e-mtp
 - Adaptación de UkisAI: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Adaptación previa de UkisAI: https://huggingface.co/ukisai/Swift-Qwen3.8-27b

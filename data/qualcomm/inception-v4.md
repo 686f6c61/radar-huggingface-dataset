@@ -25,7 +25,7 @@ El modelo es pequeño (163 MB en float, 41,6 MB en w8a8), lo que permite despleg
 | Tamano en float | 163 MB |
 | Tamano en w8a8 | 41,6 MB |
 | Runtime / SDK soportado | QAIRT 2.50, ONNX Runtime 1.27.1, TFLite, QNN_DLC |
-| Fecha de publicacion en HuggingFace | 23/09/2026 (según metadatos del repositorio) |
+| Fecha de publicacion en Hugging Face | 23/09/2026 (según metadatos del repositorio) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -129,7 +129,7 @@ La ventaja diferencial de esta ficha no es la exactitud frente a alternativas m�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/Inception-v4
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/Inception-v4
 - Implementación de referencia en timm: https://huggingface.co/timm/inception_v4.tf_in1k
 - Página del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/inception_v4
 - Repositorio Qualcomm AI Hub Models (código de exportación de Inception-v4 v0.63.0): https://github.com/qualcomm/ai-hub-models/blob/v0.63.0/src/qai_hub_models/models/inception_v4

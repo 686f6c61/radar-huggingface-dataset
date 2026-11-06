@@ -4,7 +4,7 @@
 
 AnimaXS w8-ane-v1 es un derivado cuantizado experimental del modelo de difusión Anima, publicado por ScalingBiz a partir de la revisión `f7382c4` del repositorio `circlestone-labs/Anima`. Se trata de un paquete de pesos en formato ANMA v1, diseñado específicamente para ejecutarse en el Neural Engine (ANE) del iPhone XS Max bajo el runtime Apple Metal. El modelo se basa en NVIDIA Cosmos, lo que lo sitúa en la categoría de transformers de difusión (DiT) para generación visual, aunque no se especifica si produce imágenes, vídeo o ambas.
 
-La aportación principal de este derivado es su esquema de cuantización híbrido W8: 280 matrices de proyección del DiT se empaquetan con U8 por fila de salida más escala y sesgo en FP32, mientras que el resto de matrices W8 usan cuantización afín por grupos de 64 elementos con escala y cero en FP16. El repositorio pesa 2,1 GB y no registra descargas ni valoraciones en HuggingFace. Es importante señalar que se trata de una publicación experimental, no una versión oficial de CircleStone, y que su licencia restringe el uso a fines no comerciales.
+La aportación principal de este derivado es su esquema de cuantización híbrido W8: 280 matrices de proyección del DiT se empaquetan con U8 por fila de salida más escala y sesgo en FP32, mientras que el resto de matrices W8 usan cuantización afín por grupos de 64 elementos con escala y cero en FP16. El repositorio pesa 2,1 GB y no registra descargas ni valoraciones en Hugging Face. Es importante señalar que se trata de una publicación experimental, no una versión oficial de CircleStone, y que su licencia restringe el uso a fines no comerciales.
 
 ## Especificaciones técnicas
 
@@ -77,7 +77,7 @@ No se dispone de información suficiente sobre otros modelos comparables en la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ScalingBiz/AnimaXS-w8-ane-v1
-- Variante W4 en HuggingFace: https://huggingface.co/ScalingBiz/AnimaXS-DiT-W4
+- Modelo en Hugging Face: https://huggingface.co/ScalingBiz/AnimaXS-w8-ane-v1
+- Variante W4 en Hugging Face: https://huggingface.co/ScalingBiz/AnimaXS-DiT-W4
 - Repositorio AnimaXS en GitHub (documentación de decisiones): https://github.com/invisiblestranger/AnimaXS/blob/main/DECISIONS.md
 - Modelo base (fuente): circlestone-labs/Anima, revisión f7382c4bf9d7ffe4ceea593a0adbb470c56dd79b

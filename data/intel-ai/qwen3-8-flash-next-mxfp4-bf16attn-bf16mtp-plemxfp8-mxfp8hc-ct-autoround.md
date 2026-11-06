@@ -80,9 +80,9 @@ La capa MTP es un modelo borrador separado (`Qwen4ExpMTP`) que solo se instancia
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (intel-ai, MXFP4/MXFP8) | ~180 000 M | no disponible | qwen-community-1.0 | HuggingFace, vLLM con parche | Cuantización mixta, ~2,7x más pequeño que BF16, media de 83,46 en los benchmarks publicados |
-| Qwen/Qwen3.8-Flash-Next (base BF16) | ~180 000 M | no disponible | qwen-community-1.0 | HuggingFace | Referencia de calidad; media de 83,62 en los mismos benchmarks |
-| intel-ai/Qwen3.8-Flash-Next-MXFP4-BF16Attn-PLEMXFP8-CT-AutoRound | ~180 000 M | no disponible | qwen-community-1.0 | HuggingFace | Variante previa sin cuantización MXFP8 de las GEMM de hiper-conexión y con MTP en BF16 |
+| Este modelo (intel-ai, MXFP4/MXFP8) | ~180 000 M | no disponible | qwen-community-1.0 | Hugging Face, vLLM con parche | Cuantización mixta, ~2,7x más pequeño que BF16, media de 83,46 en los benchmarks publicados |
+| Qwen/Qwen3.8-Flash-Next (base BF16) | ~180 000 M | no disponible | qwen-community-1.0 | Hugging Face | Referencia de calidad; media de 83,62 en los mismos benchmarks |
+| intel-ai/Qwen3.8-Flash-Next-MXFP4-BF16Attn-PLEMXFP8-CT-AutoRound | ~180 000 M | no disponible | qwen-community-1.0 | Hugging Face | Variante previa sin cuantización MXFP8 de las GEMM de hiper-conexión y con MTP en BF16 |
 | Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de modelos comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ La capa MTP es un modelo borrador separado (`Qwen4ExpMTP`) que solo se instancia
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/intel-ai/Qwen3.8-Flash-Next-MXFP4-BF16Attn-BF16MTP-PLEMXFP8-MXFP8HC-CT-AutoRound
+- Hugging Face del modelo: https://huggingface.co/intel-ai/Qwen3.8-Flash-Next-MXFP4-BF16Attn-BF16MTP-PLEMXFP8-MXFP8HC-CT-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Variante previa de referencia: https://huggingface.co/intel-ai/Qwen3.8-Flash-Next-MXFP4-BF16Attn-PLEMXFP8-CT-AutoRound
 - Repositorio de Intel auto-round: https://github.com/intel/auto-round

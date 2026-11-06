@@ -86,7 +86,7 @@ La versión densa Qwen3.6-27B existe como alternativa dentro de la misma familia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomic-Germ/Qwen3.6-35B-A3B-NPU2
+- Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/Qwen3.6-35B-A3B-NPU2
 - Modelo base Qwen/Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Sitio de FastFlowLM: https://fastflowlm.com
 - Ficha del modelo en atomic.chat: https://atomic.chat/models/qwen3-6-35b-a3b

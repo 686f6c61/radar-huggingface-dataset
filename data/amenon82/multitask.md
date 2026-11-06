@@ -61,8 +61,8 @@ No disponible. No existen modelos comparables en la misma categoría, ya que est
 - El modelo puede presentar comportamientos impredecibles si se utiliza directamente, ya que los pesos son aleatorios.
 - La licencia BSD-3-Clause permite uso comercial, pero el autor advierte que deben revisarse los términos de las fuentes de datos externas si se utilizan con este repositorio.
 - No es apto para producción bajo ninguna circunstancia.
-- Las APIs genéricas de HuggingFace no pueden cargar este modelo sin un adaptador explícito, lo que limita su interoperabilidad.
+- Las APIs genéricas de Hugging Face no pueden cargar este modelo sin un adaptador explícito, lo que limita su interoperabilidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amenon82/multitask
+- Repositorio en Hugging Face: https://huggingface.co/amenon82/multitask

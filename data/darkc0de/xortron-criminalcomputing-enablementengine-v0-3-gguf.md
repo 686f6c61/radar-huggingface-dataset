@@ -45,7 +45,7 @@ El autor indica que el proyecto es un "experimento de investigación en curso so
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo no presenta métricas de MMLU, HumanEval, GSM8K ni similares en la ficha de HuggingFace. Dado que se basa en Gemma 4 31B, podría esperarse un rendimiento similar al modelo original en tareas estándar, pero la modificación de los pesos podría alterar estos resultados. No se dispone de datos fiables para comparar.
+No se han publicado resultados de benchmarks en la información disponible. El modelo no presenta métricas de MMLU, HumanEval, GSM8K ni similares en la ficha de Hugging Face. Dado que se basa en Gemma 4 31B, podría esperarse un rendimiento similar al modelo original en tareas estándar, pero la modificación de los pesos podría alterar estos resultados. No se dispone de datos fiables para comparar.
 
 ## Requisitos de hardware
 
@@ -71,8 +71,8 @@ No se dispone de información suficiente para una comparativa fiable. El modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/darkc0de/XORTRON-CriminalComputing-EnablementEngine-v0.3-GGUF
-- Repositorio HuggingFace del modelo base (safetensors): https://huggingface.co/darkc0de/XORTRON-CriminalComputing-EnablementEngine-v0.3
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/darkc0de/XORTRON-CriminalComputing-EnablementEngine-v0.3-GGUF
+- Repositorio Hugging Face del modelo base (safetensors): https://huggingface.co/darkc0de/XORTRON-CriminalComputing-EnablementEngine-v0.3
 - Modelo base intermedio: https://huggingface.co/darkc0de/gemma-4-31B-it-updated-heretic
 - Perfil de GitHub del autor: https://github.com/dark-c0de
 - Documento de referencia citado por el autor (Congress.gov): https://www.congress.gov/119/chrg/CHRG-119hhrg61182/CHRG-119hhrg61182.pdf

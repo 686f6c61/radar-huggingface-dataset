@@ -44,7 +44,7 @@ En cuanto al entrenamiento, el optimizador es SGD con un programador de tasa de 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de rendimiento en conjuntos de referencia como ImageNet, COCO, o tareas de detección/segmentación. El modelo no tiene descargas ni likes en HuggingFace, lo que sugiere que aún no ha sido evaluado por la comunidad.
+No se han publicado resultados de benchmarks en la información disponible. No hay datos de rendimiento en conjuntos de referencia como ImageNet, COCO, o tareas de detección/segmentación. El modelo no tiene descargas ni likes en Hugging Face, lo que sugiere que aún no ha sido evaluado por la comunidad.
 
 ## Requisitos de hardware
 
@@ -72,8 +72,8 @@ Los modelos de Microsoft (BEiT-large) están preentrenados y ajustados en ImageN
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/gvdesai1985/model_620005363_beit_xlarge)
+- [Repositorio en Hugging Face](https://huggingface.co/gvdesai1985/model_620005363_beit_xlarge)
 - [GitHub de microsoft/unilm (incluye BEiT)](https://github.com/microsoft/unilm)
-- [Documentación de BEiT en HuggingFace](https://huggingface.co/docs/transformers/v4.46.3/en/model_doc/beit)
+- [Documentación de BEiT en Hugging Face](https://huggingface.co/docs/transformers/v4.46.3/en/model_doc/beit)
 - [Modelo microsoft/beit-large-patch16-224-pt22k-ft22k](https://huggingface.co/microsoft/beit-large-patch16-224-pt22k-ft22k)
 - [Modelo microsoft/beit-large-patch16-512](https://huggingface.co/microsoft/beit-large-patch16-512)

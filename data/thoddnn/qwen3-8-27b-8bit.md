@@ -72,9 +72,9 @@ No se dispone de datos comparativos directos con otros modelos en la informació
 
 | Modelo | Parámetros | Contexto | Visión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B | 27B denso | 262K | Sí (imagen y vídeo) | Apache 2.0 | HuggingFace, LM Studio |
-| Qwen2.5-VL-27B | 27B denso | 128K | Sí (imagen y vídeo) | Apache 2.0 | HuggingFace |
-| Llama 3.2 11B Vision | 11B denso | 128K | Sí (imagen) | Llama 3.2 | HuggingFace |
+| Qwen3.8-27B | 27B denso | 262K | Sí (imagen y vídeo) | Apache 2.0 | Hugging Face, LM Studio |
+| Qwen2.5-VL-27B | 27B denso | 128K | Sí (imagen y vídeo) | Apache 2.0 | Hugging Face |
+| Llama 3.2 11B Vision | 11B denso | 128K | Sí (imagen) | Llama 3.2 | Hugging Face |
 
 Qwen3.8-27B mejora la ventana de contexto respecto a Qwen2.5-VL (262K vs 128K) y ofrece un rendimiento superior en tareas agénticas según los benchmarks citados, aunque la comparación directa no está disponible.
 
@@ -89,8 +89,8 @@ Qwen3.8-27B mejora la ventana de contexto respecto a Qwen2.5-VL (262K vs 128K) y
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/thoddnn/Qwen3.8-27B-8bit
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face de la conversión: https://huggingface.co/thoddnn/Qwen3.8-27B-8bit
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía completa de Qwen3.8-27B (Lovable App): https://lovableapp.org/blog/qwen3-8-27b
 - Página del modelo en LM Studio: https://lmstudio.ai/models/qwen/qwen3.8-27b

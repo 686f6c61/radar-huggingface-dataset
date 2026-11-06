@@ -20,7 +20,7 @@ La relevancia de esta ficha es limitada y de caracter mas metodologico que pract
 | Idiomas soportados | `it` (italiano), segun el tag de idioma del repositorio |
 | Licencia | No disponible |
 | Formato de pesos | `safetensors` (adaptador LoRA, libreria `peft`) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 0.0 GB declarado |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-23 |
@@ -81,7 +81,7 @@ La comparacion es estructural, no de rendimiento: no existen metricas publicadas
 
 - Ausencia total de model card: no se documentan datos de entrenamiento, hiperparametros de LoRA, proceso de evaluacion ni limitaciones conocidas.
 - Licencia no disponible: sin licencia explicita no se puede asumir permiso de uso comercial, redistribucion ni modificacion. La licencia MIT del modelo base no se extiende automaticamente al adaptador.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que anade friccion y puede impedir el uso automatizado en pipelines de CI/CD.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que anade friccion y puede impedir el uso automatizado en pipelines de CI/CD.
 - Riesgo de sesgos y alucinacion: el modelo base se entreno sobre The Pile, un corpus con sesgos conocidos de internet, y no se ha aplicado ningun proceso documentado de alineacion o filtrado sobre el adaptador.
 - Limitacion idiomatica: el tag declara unicamente italiano, mientras que el modelo base esta dominado por el ingles; es esperable un rendimiento irregular y una calidad limitada en italiano.
 - Ventana de contexto corta (2.048 tokens en el base): insuficiente para casos de uso que requieran documentos largos o conversaciones multi-turno extensas.
@@ -92,7 +92,7 @@ La comparacion es estructural, no de rendimiento: no existen metricas publicadas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gpt-neo-ctxq
+- Repositorio Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gpt-neo-ctxq
 - Modelo base: https://huggingface.co/EleutherAI/gpt-neo-1.3B
 - Libreria PEFT: https://github.com/huggingface/peft
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la busqueda web realizada.

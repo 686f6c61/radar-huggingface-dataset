@@ -36,7 +36,7 @@ La innovacion declarada no esta en la arquitectura sino en el proceso de asegura
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: solo ingles declarado.
 - Capacidades especiales (vision, audio, thinking mode): no disponibles.
-- Integracion con el ecosistema HuggingFace Transformers y PEFT mediante `PeftModel.from_pretrained`.
+- Integracion con el ecosistema Hugging Face Transformers y PEFT mediante `PeftModel.from_pretrained`.
 
 ## Casos de uso
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| RamaAi (este modelo) | 0,5B (base) | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Adaptador LoRA sobre Qwen2.5-0.5B-Instruct; sin benchmarks |
-| Qwen2.5-0.5B-Instruct | 0,5B | 32 768 tokens (segun Qwen) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados por Qwen |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32 768 tokens (segun Qwen) | Apache 2.0 | HuggingFace | Misma familia, mayor capacidad a coste de mas VRAM |
-| SmolLM2-360M-Instruct | 0,36B | 8 192 tokens (segun HuggingFace) | Apache 2.0 | HuggingFace | Alternativa pequena de HuggingFace para entornos muy limitados |
+| RamaAi (este modelo) | 0,5B (base) | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Adaptador LoRA sobre Qwen2.5-0.5B-Instruct; sin benchmarks |
+| Qwen2.5-0.5B-Instruct | 0,5B | 32 768 tokens (segun Qwen) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados por Qwen |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32 768 tokens (segun Qwen) | Apache 2.0 | Hugging Face | Misma familia, mayor capacidad a coste de mas VRAM |
+| SmolLM2-360M-Instruct | 0,36B | 8 192 tokens (segun Hugging Face) | Apache 2.0 | Hugging Face | Alternativa pequena de Hugging Face para entornos muy limitados |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shiva123782/RamaAi
+- Modelo en Hugging Face: https://huggingface.co/shiva123782/RamaAi
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio de PEFT: https://github.com/huggingface/peft
 - Documentacion de Transformers: https://huggingface.co/docs/transformers

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-epiCRealism-SD15-GGUF es una conversión a formato GGUF del modelo de difusión Stable Diffusion 1.5, publicada por el usuario Buster999 en HuggingFace. El modelo base es epiCRealism, una variante de SD 1.5 orientada a la generación de imágenes fotorrealistas. Esta versión GGUF está pensada para su uso con herramientas de inferencia que admiten dicho formato, como ComfyUI o stable-diffusion.cpp, en lugar del formato original de pesos de PyTorch.
+epiCRealism-SD15-GGUF es una conversión a formato GGUF del modelo de difusión Stable Diffusion 1.5, publicada por el usuario Buster999 en Hugging Face. El modelo base es epiCRealism, una variante de SD 1.5 orientada a la generación de imágenes fotorrealistas. Esta versión GGUF está pensada para su uso con herramientas de inferencia que admiten dicho formato, como ComfyUI o stable-diffusion.cpp, en lugar del formato original de pesos de PyTorch.
 
 El repositorio cuenta con 1.066.235.307 parámetros, cifra coherente con la arquitectura UNet de SD 1.5, y un tamaño de 8,6 GB, lo que sugiere que incluye varias cuantizaciones del modelo (habitualmente Q4, Q8 y fp16/fp32) junto con los componentes auxiliares (VAE y codificador de texto CLIP). La licencia es CreativeML OpenRAIL-M, la misma que emplea Stable Diffusion 1.5.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| epiCRealism-SD15-GGUF (este) | 1.066.235.307 | no disponible | GGUF | CreativeML OpenRAIL-M | HuggingFace, 0 descargas |
+| epiCRealism-SD15-GGUF (este) | 1.066.235.307 | no disponible | GGUF | CreativeML OpenRAIL-M | Hugging Face, 0 descargas |
 | Stable Diffusion 1.5 (original) | ~983 M (UNet) | 77 tokens de prompt | safetensors, ckpt | CreativeML OpenRAIL-M | Amplia, referencia de la comunidad |
 | epiCRealism (original, RunDiffusion) | ~983 M (UNet) | 77 tokens de prompt | safetensors, ckpt | CreativeML OpenRAIL-M | Amplia, usado en Civitai y ComfyUI |
 | SDXL | ~2.600 M (UNet) | 77 tokens por segmento | safetensors | CreativeML OpenRAIL++-M | Amplia, mayor calidad y requisitos |
@@ -83,7 +83,7 @@ La comparación con el original epiCRealism es la más directa: esta conversión
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Buster999/epiCRealism-SD15-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Buster999/epiCRealism-SD15-GGUF
 - Modelo original epiCRealism (RunDiffusion): no disponible en la información proporcionada
 - Stable Diffusion 1.5 (base): https://huggingface.co/runwayml/stable-diffusion-v1-5
 - Licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license

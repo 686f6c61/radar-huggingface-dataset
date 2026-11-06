@@ -39,7 +39,7 @@ No se especifican en la informacion disponible el numero total de tokens de entr
 - Clasificacion de imagenes de coral en 27 clases correspondientes a especies del Caribe, con imagenes tomadas in situ.
 - Extraccion de representaciones visuales de alta calidad mediante dos backbones fundacionales (DINOv3 ViT-7B/16 y DINOv3 ConvNeXt-Large).
 - Procesamiento de imagenes a 224x224 y 256x256 pixeles.
-- Inferencia reproducible a traves del script `infer.py` del repositorio oficial, con descarga automatica de pesos desde HuggingFace.
+- Inferencia reproducible a traves del script `infer.py` del repositorio oficial, con descarga automatica de pesos desde Hugging Face.
 - No dispone de soporte de tool calling ni de function calling: es un clasificador de vision, no un modelo de lenguaje.
 - No dispone de capacidades de agente, razonamiento multi-paso ni modo de pensamiento (thinking mode).
 - No dispone de capacidades multilingues ni de generacion de texto.
@@ -77,7 +77,7 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Tarea | Contexto / entrada | Rendimiento GV3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| coral-dinov3-vit-convnext | 6.915.853.819 | Clasificacion de 27 especies de coral | Imagen 224x224 / 256x256 | 91,04 % top-1 | dinov3-license (backbones) + MIT (cabeza) | Pesos en HuggingFace y codigo en GitHub |
+| coral-dinov3-vit-convnext | 6.915.853.819 | Clasificacion de 27 especies de coral | Imagen 224x224 / 256x256 | 91,04 % top-1 | dinov3-license (backbones) + MIT (cabeza) | Pesos en Hugging Face y codigo en GitHub |
 | ResNet+ViT (linea base previa) | no disponible | Clasificacion de 27 especies de coral | no disponible | 91,04 % menos 8,9 puntos (valor absoluto no publicado) | no disponible | no disponible |
 | DINOv3 ViT-7B/16 sin cabeza especifica | aproximadamente 7 mil millones | Representacion visual generalista | Imagen | no disponible para GV3 | dinov3-license | Pesos publicos de Meta |
 | DINOv3 ConvNeXt-Large | no disponible | Representacion visual generalista | Imagen | no disponible para GV3 | dinov3-license | Pesos publicos de Meta |
@@ -98,7 +98,7 @@ No se dispone de datos publicados que comparen este modelo con otros clasificado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imtiendat0311/coral-dinov3-vit-convnext
+- Modelo en Hugging Face: https://huggingface.co/imtiendat0311/coral-dinov3-vit-convnext
 - Repositorio de codigo e inferencia: https://github.com/imtiendat0311/coral-dinov3
 - Licencia DINOv3 de Meta: https://github.com/facebookresearch/dinov3/blob/main/LICENSE
 - Dataset referenciado en la model card: gv3-coral (sin URL publica en la informacion proporcionada)

@@ -73,7 +73,7 @@ Solo la primera fila está respaldada por la información proporcionada en esta 
 
 | Modelo | Tipo de política | Parámetros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| isr-aloha-act-ckpts (este repositorio) | ACT (LeRobot) | no disponible | no disponible | Apache 2.0 | HuggingFace, 25 checkpoints aproximados, 0 descargas |
+| isr-aloha-act-ckpts (este repositorio) | ACT (LeRobot) | no disponible | no disponible | Apache 2.0 | Hugging Face, 25 checkpoints aproximados, 0 descargas |
 | ACT de referencia en LeRobot | ACT (LeRobot) | no disponible | no disponible | Apache 2.0 (según la librería) | Público en LeRobot |
 | Diffusion Policy | Política de imitación por difusión | no disponible | no disponible | no disponible en esta ficha | Público en repositorios de investigación |
 | SmolVLA | Política visión-lenguaje-acción | no disponible en esta ficha | no disponible | no disponible en esta ficha | Público en LeRobot |
@@ -97,5 +97,5 @@ Solo la primera fila está respaldada por la información proporcionada en esta 
 - Repositorio del modelo: https://huggingface.co/Kavin60606/isr-aloha-act-ckpts
 - Repositorio de experimento, datos y código citado en la model card: https://huggingface.co/Kavin60606/isr-aloha-transfer-cube-experiment
 - Referencia general de la arquitectura ACT (paper de Zhao et al., *Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware*): https://arxiv.org/abs/2304.13705
-- Librería LeRobot (HuggingFace), necesaria para cargar los checkpoints: https://github.com/huggingface/lerobot
+- Librería LeRobot (Hugging Face), necesaria para cargar los checkpoints: https://github.com/huggingface/lerobot
 - Nota sobre la búsqueda web: los resultados devueltos no guardan relación con el modelo (hilos de soporte de Apple sobre recuperación de cuenta y *Back to School*), por lo que no se incluye ningún enlace adicional procedente de esa búsqueda.

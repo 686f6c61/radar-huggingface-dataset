@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`davidwdw/fa-pi05-human-full-6000-e2bcf3c6d517-8404f9fd97b9` es un repositorio de HuggingFace publicado por el usuario `davidwdw` que se describe a sí mismo como un "versioned fleet archive" (archivo versionado de flota) asociado a la receta canónica `2026-09-23_b1k_task00_pi05_human_sft_h20_plan`. El repositorio ocupa 44,7 GB y, segun su propia model card, contiene cuatro componentes: parametros del modelo, estado de entrenamiento (train state), recursos auxiliares (assets) y controlador. Se trata, por tanto, de una instantanea de un pipeline de entrenamiento mas que de un modelo listo para inferencia.
+`davidwdw/fa-pi05-human-full-6000-e2bcf3c6d517-8404f9fd97b9` es un repositorio de Hugging Face publicado por el usuario `davidwdw` que se describe a sí mismo como un "versioned fleet archive" (archivo versionado de flota) asociado a la receta canónica `2026-09-23_b1k_task00_pi05_human_sft_h20_plan`. El repositorio ocupa 44,7 GB y, segun su propia model card, contiene cuatro componentes: parametros del modelo, estado de entrenamiento (train state), recursos auxiliares (assets) y controlador. Se trata, por tanto, de una instantanea de un pipeline de entrenamiento mas que de un modelo listo para inferencia.
 
 La informacion publica disponible es extremadamente limitada: la model card ocupa tres lineas y no incluye arquitectura, numero de parametros, longitud de contexto, idiomas, licencia ni resultados de evaluacion. El identificador contiene la cadena `pi05`, que sugiere un linaje relacionado con la familia pi0.5 de modelos vision-lenguaje-accion, y el sufijo `human_sft` apunta a un ajuste supervisado sobre datos humanos, pero ninguna de estas dos inferencias esta confirmada por el autor en la informacion proporcionada. Tambien aparece `h20`, posiblemente referido a hardware de entrenamiento, y `b1k`, posiblemente un tamano de lote o de dataset, sin que se pueda verificar.
 
@@ -77,7 +77,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| davidwdw/fa-pi05-human-full-6000-e2bcf3c6d517-8404f9fd97b9 | no disponible | no disponible | no disponible | no disponible | repositorio de 44,7 GB en HuggingFace |
+| davidwdw/fa-pi05-human-full-6000-e2bcf3c6d517-8404f9fd97b9 | no disponible | no disponible | no disponible | no disponible | repositorio de 44,7 GB en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-pi05-human-full-6000-e2bcf3c6d517-8404f9fd97b9
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-pi05-human-full-6000-e2bcf3c6d517-8404f9fd97b9
 - Perfil del autor: https://huggingface.co/davidwdw
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible

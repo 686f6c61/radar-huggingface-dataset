@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / resolucion | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mojika | 134 M | 256×256, escala de grises | Generacion de kanji condicionada (texto, imagen, sketch) | MIT | HuggingFace, PyTorch |
+| Mojika | 134 M | 256×256, escala de grises | Generacion de kanji condicionada (texto, imagen, sketch) | MIT | Hugging Face, PyTorch |
 | Modelos de difusion de glifos CJK | no disponible | no disponible | Generacion de caracteres | variable | no disponible |
 | Modelos generativos de imagen generalistas (p. ej. SD) | cientos de millones a miles de millones | 512×512 o superior | Generacion de imagen general | variable | amplia |
 
@@ -83,7 +83,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tonimono/Mojika
+- Modelo en Hugging Face: https://huggingface.co/Tonimono/Mojika
 - Repositorio de código, entrenamiento y demo: https://github.com/mili-inch/Mojika
 - Modelo auxiliar Sarashina 2.2 0.5B: https://huggingface.co/sbintuitions/sarashina2.2-0.5b
 - Modelo auxiliar CLIP japonés: https://huggingface.co/line-corporation/clip-japanese-base

@@ -75,11 +75,11 @@ El error de estado es la mediana del error L2 de (Vm, Va) predicho frente a la s
 
 | Modelo | Parámetros | Contexto | Error de estado (paper) | Iteraciones a 10⁻² MW | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GENCO released (`gridfm/genco-pf-datakit`) | no disponible | no aplica | 0,054 | 1,74 | Apache 2.0 (según repo base) | HuggingFace |
-| residual GENCO-Δ (N-1) | no disponible | no aplica | 0,022 | 1,33 | Apache 2.0 | HuggingFace |
-| residual GENCO-Δ (N-k mixto) | no disponible | no aplica | 0,062 | 1,79 | Apache 2.0 | HuggingFace |
-| slack-aware | no disponible | no aplica | 0,086 | 1,74 | Apache 2.0 | HuggingFace |
-| control | no disponible | no aplica | 0,067 | 1,76 | Apache 2.0 | HuggingFace |
+| GENCO released (`gridfm/genco-pf-datakit`) | no disponible | no aplica | 0,054 | 1,74 | Apache 2.0 (según repo base) | Hugging Face |
+| residual GENCO-Δ (N-1) | no disponible | no aplica | 0,022 | 1,33 | Apache 2.0 | Hugging Face |
+| residual GENCO-Δ (N-k mixto) | no disponible | no aplica | 0,062 | 1,79 | Apache 2.0 | Hugging Face |
+| slack-aware | no disponible | no aplica | 0,086 | 1,74 | Apache 2.0 | Hugging Face |
+| control | no disponible | no aplica | 0,067 | 1,76 | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de otros modelos de flujo de potencia comparables en la información proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de datos de otros modelos de flujo de potencia comparables en la i
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/sarwar21255/genco-ieee118-finetunes
+- Hugging Face del modelo: https://huggingface.co/sarwar21255/genco-ieee118-finetunes
 - Modelo base: https://huggingface.co/gridfm/genco-pf-datakit
 - Repositorio de código: https://github.com/msarwar20/genco-certified
 - Dataset: https://huggingface.co/datasets/sarwar21255/genco-contingency-ieee118

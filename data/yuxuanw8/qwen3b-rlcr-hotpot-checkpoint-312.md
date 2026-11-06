@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-312` es un modelo de generacion de texto de aproximadamente 3.086 millones de parametros (3,09 B) publicado en HuggingFace por el usuario yuxuanw8. El identificador y las etiquetas del repositorio indican que se trata de un ajuste sobre la familia Qwen2 (tag `qwen2`), orientado a generacion conversacional y etiquetado como compatible con `text-generation-inference` y endpoints. El sufijo del nombre sugiere un entrenamiento con refuerzo (posiblemente RLCR) sobre el conjunto de datos HotpotQA, en su iteracion o checkpoint numero 312, aunque el autor no documenta nada de esto en la model card.
+`yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-312` es un modelo de generacion de texto de aproximadamente 3.086 millones de parametros (3,09 B) publicado en Hugging Face por el usuario yuxuanw8. El identificador y las etiquetas del repositorio indican que se trata de un ajuste sobre la familia Qwen2 (tag `qwen2`), orientado a generacion conversacional y etiquetado como compatible con `text-generation-inference` y endpoints. El sufijo del nombre sugiere un entrenamiento con refuerzo (posiblemente RLCR) sobre el conjunto de datos HotpotQA, en su iteracion o checkpoint numero 312, aunque el autor no documenta nada de esto en la model card.
 
-El problema principal de esta ficha es la ausencia casi total de informacion oficial: la model card es la plantilla generica de HuggingFace sin rellenar, no se declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. Ademas, el repositorio acumula 0 descargas y 0 "likes" en la fecha de creacion registrada (2026-10-04), lo que apunta a un experimento de investigacion personal sin validacion de la comunidad.
+El problema principal de esta ficha es la ausencia casi total de informacion oficial: la model card es la plantilla generica de Hugging Face sin rellenar, no se declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. Ademas, el repositorio acumula 0 descargas y 0 "likes" en la fecha de creacion registrada (2026-10-04), lo que apunta a un experimento de investigacion personal sin validacion de la comunidad.
 
 Por tanto, se trata de un modelo interesante unicamente como artefacto de investigacion reproducible (un checkpoint de un pipeline de RL sobre tareas de question answering multi-salto), pero no es apto para uso en produccion sin una evaluacion independiente previa. Los datos que se ofrecen a continuacion proceden exclusivamente de los metadatos del repositorio y de la aritmetica derivada del recuento de parametros; todo lo no verificable se marca como "no disponible".
 
@@ -38,7 +38,7 @@ Respecto al entrenamiento, el nombre del modelo ("rlcr-hotpot-checkpoint-312") a
 - Generacion de texto autoregresiva en modo conversacional (etiqueta `conversational`).
 - Question answering multi-salto, presumiblemente sobre dominios similares a HotpotQA, segun el nombre del checkpoint.
 - Razonamiento encadenado orientado a recuperacion y agregacion de evidencia de varias fuentes (inferido del nombre, no verificado).
-- Integracion con `text-generation-inference` y endpoints compatibles con la API de HuggingFace.
+- Integracion con `text-generation-inference` y endpoints compatibles con la API de Hugging Face.
 - Compatibilidad con el ecosistema `transformers` para carga directa de pesos `safetensors`.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y multi-step reasoning: no disponible (no confirmado).
@@ -69,17 +69,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - En la practica habria que sumar el overhead del cache KV y del runtime; con contexto largo, el consumo puede aumentar de forma notable.
 - GPUs recomendadas: NVIDIA RTX 3060 12 GB, RTX 4070, RTX 4090, A10G, L4 o superiores para FP16; A100/H100 no son necesarias para un modelo de este tamano salvo para servir muchas peticiones concurrentes.
 - Cabe en GPU de consumo: si, en FP16 en tarjetas con 8 GB o mas (con contexto moderado) y en INT4 en GPUs de 4-6 GB. Tambien puede ejecutarse en CPU con llama.cpp.
-- Opciones de despliegue: `transformers` + PyTorch, `text-generation-inference` (etiqueta declarada), vLLM, llama.cpp/Ollama tras conversion a GGUF, TGI y endpoints compatibles con la API de HuggingFace. No se publican pesos pre-cuantizados en el repositorio.
+- Opciones de despliegue: `transformers` + PyTorch, `text-generation-inference` (etiqueta declarada), vLLM, llama.cpp/Ollama tras conversion a GGUF, TGI y endpoints compatibles con la API de Hugging Face. No se publican pesos pre-cuantizados en el repositorio.
 - Latencia y throughput: no disponible. El tamano del repositorio (12,4 GB) es notablemente superior a los ~6 GB esperables en FP16, lo que sugiere la presencia de multiples checkpoints, estados de optimizador u otros artefactos, un punto a verificar antes de descargar.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3b-rlcr-hotpot-checkpoint-312 | 3,09 B | No disponible | No disponible | HuggingFace (0 descargas) | Checkpoint de investigacion sin documentar |
-| Qwen2.5-3B | ~3,1 B | 32 768 tokens | Apache 2.0 (familia Qwen2.5) | HuggingFace y ecosistema amplio | Base oficial con benchmarks publicados |
-| Llama-3.2-3B | ~3,2 B | 128 000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace y ecosistema amplio | Requiere aceptar terminos; buen soporte de tooling |
-| Phi-3-mini | ~3,8 B | 4 096 / 128 000 tokens (variantes) | MIT | HuggingFace y ecosistema amplio | Fuerte en razonamiento para su tamano |
+| qwen3b-rlcr-hotpot-checkpoint-312 | 3,09 B | No disponible | No disponible | Hugging Face (0 descargas) | Checkpoint de investigacion sin documentar |
+| Qwen2.5-3B | ~3,1 B | 32 768 tokens | Apache 2.0 (familia Qwen2.5) | Hugging Face y ecosistema amplio | Base oficial con benchmarks publicados |
+| Llama-3.2-3B | ~3,2 B | 128 000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face y ecosistema amplio | Requiere aceptar terminos; buen soporte de tooling |
+| Phi-3-mini | ~3,8 B | 4 096 / 128 000 tokens (variantes) | MIT | Hugging Face y ecosistema amplio | Fuerte en razonamiento para su tamano |
 
 No se dispone de datos de rendimiento del modelo analizado, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. Las especificaciones de los modelos alternativos corresponden a informacion publica general y pueden variar segun la revision concreta del repositorio.
 
@@ -98,9 +98,9 @@ No se dispone de datos de rendimiento del modelo analizado, por lo que la compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-312
+- Repositorio en Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-312
 - Dataset HotpotQA (referencia probable del entrenamiento): https://hotpotqa.github.io/
 - Calculadora de impacto de carbono citada en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
-- Documentacion de Qwen2 en HuggingFace: https://huggingface.co/docs/transformers/model_doc/qwen2
+- Documentacion de Qwen2 en Hugging Face: https://huggingface.co/docs/transformers/model_doc/qwen2
 
 Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; unicamente aparecieron sitios de contenido para adultos sin relacion con el tema, por lo que se han descartado y no se incluyen.

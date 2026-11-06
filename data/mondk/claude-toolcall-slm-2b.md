@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mondk/claude-toolcall-slm-2B` es un pequeño modelo de lenguaje (SLM, por sus siglas en inglés) de 2 mil millones de parámetros, desarrollado por el usuario `mondk` y publicado en HuggingFace. Su propósito declarado es la ejecución de llamadas a herramientas (tool calling), una capacidad que lo hace interesante para tareas de automatización y agentes, a pesar de su tamaño reducido. El modelo se distribuye bajo licencia Apache 2.0, lo que permite su uso comercial sin restricciones significativas.
+El modelo `mondk/claude-toolcall-slm-2B` es un pequeño modelo de lenguaje (SLM, por sus siglas en inglés) de 2 mil millones de parámetros, desarrollado por el usuario `mondk` y publicado en Hugging Face. Su propósito declarado es la ejecución de llamadas a herramientas (tool calling), una capacidad que lo hace interesante para tareas de automatización y agentes, a pesar de su tamaño reducido. El modelo se distribuye bajo licencia Apache 2.0, lo que permite su uso comercial sin restricciones significativas.
 
 El modelo se basa en la arquitectura SmolLM, como sugieren los datasets de entrenamiento utilizados (HuggingFaceTB/smollm-corpus y HuggingFaceTB/smoltalk), y ha sido ajustado específicamente para el seguimiento de instrucciones y la generación de llamadas a herramientas. Aunque la información oficial es escasa, un tercero (LLM Explorer) reporta una ventana de contexto de 8K tokens y un uso de VRAM de 3,4 GB, lo que lo hace viable para ejecutarse en GPUs de consumo. Su relevancia radica en ofrecer una alternativa ligera y de código abierto para tareas de agente y tool calling, donde normalmente se requieren modelos mucho más grandes.
 
@@ -23,7 +23,7 @@ El modelo se basa en la arquitectura SmolLM, como sugieren los datasets de entre
 
 El modelo se basa en la arquitectura SmoLM, un transformer decoder-only optimizado para eficiencia en modelos pequeños. El entrenamiento se realizó en varias etapas: primero un preentrenamiento con el corpus SmolLM (HuggingFaceTB/smollm-corpus) y The Stack (bigcode/the-stack), seguido de un ajuste fino (fine-tuning) con los datasets SmolTalk (HuggingFaceTB/smoltalk) y UltraFeedback (openbmb/UltraFeedback) para mejorar el seguimiento de instrucciones y la calidad de las respuestas. El dataset `mondk/claude-code-fable-5-traces.jsonl` se utilizó específicamente para enseñar al modelo a generar llamadas a herramientas en formato JSON, probablemente inspirado en los patrones de tool calling de Claude de Anthropic.
 
-No se han publicado detalles sobre el número exacto de tokens de entrenamiento, la composición precisa del dataset ni si se aplicaron técnicas como RLHF o DPO. La información disponible es limitada y proviene principalmente de los metadatos de HuggingFace y de la model card, que es extremadamente breve.
+No se han publicado detalles sobre el número exacto de tokens de entrenamiento, la composición precisa del dataset ni si se aplicaron técnicas como RLHF o DPO. La información disponible es limitada y proviene principalmente de los metadatos de Hugging Face y de la model card, que es extremadamente breve.
 
 ## Capacidades
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Tool calling | Disponibilidad |
 |---|---|---|---|---|---|
-| mondk/claude-toolcall-slm-2B | 2B | 8K | Apache 2.0 | Sí | HuggingFace |
-| HuggingFaceTB/SmolLM-2-1.7B | 1,7B | 2K | Apache 2.0 | No nativo | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32K | Apache 2.0 | Sí | HuggingFace |
+| mondk/claude-toolcall-slm-2B | 2B | 8K | Apache 2.0 | Sí | Hugging Face |
+| HuggingFaceTB/SmolLM-2-1.7B | 1,7B | 2K | Apache 2.0 | No nativo | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32K | Apache 2.0 | Sí | Hugging Face |
 
 El modelo se posiciona como una alternativa ligera con tool calling nativo, algo que no ofrecen otros SLMs de tamaño similar de forma predeterminada. Qwen2.5-1.5B-Instruct tiene un contexto mucho mayor y también soporta tool calling, pero con una licencia similar. SmolLM-2-1.7B no tiene tool calling nativo, por lo que requeriría ajuste adicional.
 
@@ -75,6 +75,6 @@ El modelo se posiciona como una alternativa ligera con tool calling nativo, algo
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mondk/claude-toolcall-slm-2B)
+- [Modelo en Hugging Face](https://huggingface.co/mondk/claude-toolcall-slm-2B)
 - [Modelo base en safetensors](https://huggingface.co/mondk/claude-toolcall-slm-2B-safetensors)
 - [Ficha en LLM Explorer](https://llm-explorer.com/model/mondk%2Fclaude-toolcall-slm-2B-safetensors,6U3qkHZXR7WLVamCq7ZL)

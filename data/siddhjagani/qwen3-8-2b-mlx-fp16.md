@@ -34,7 +34,7 @@ La conversion a MLX se realizo con mlx-lm version 0.31.2, lo que permite su uso 
 - Soporte de function calling / tool calling, segun los tags del modelo.
 - Capacidad para integrarse en pipelines de agentes simples.
 - Multilingue limitado: solo ingles confirmado, aunque el modelo base podria soportar mas idiomas.
-- No se indica soporte de vision, audio u otras modalidades (el tag "image-text-to-text" en HuggingFace no esta confirmado para este checkpoint).
+- No se indica soporte de vision, audio u otras modalidades (el tag "image-text-to-text" en Hugging Face no esta confirmado para este checkpoint).
 
 ## Casos de uso
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La elecci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SiddhJagani/Qwen3.8-2B-mlx-fp16
+- Repositorio Hugging Face: https://huggingface.co/SiddhJagani/Qwen3.8-2B-mlx-fp16
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-2B
 - Repositorio oficial Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Articulo sobre Qwen3.8 en OpenLM: https://openlm.ai/qwen3.8/

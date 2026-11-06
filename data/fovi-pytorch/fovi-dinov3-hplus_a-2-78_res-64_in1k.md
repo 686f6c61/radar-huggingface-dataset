@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fovi-dinov3-hplus_a-2.78_res-64_in1k | no disponible (variante ViT-H/16+ "huge") | Imagen foveada, resolucion de sensor 64 | ImageNet-1k | apache-2.0 | HuggingFace, via libreria `fovi` |
-| facebook/dinov3-vith16plus-pretrain-lvd1689m (modelo base) | no disponible en la informacion proporcionada | Imagen con rejilla uniforme de parches | LVD-1689M (segun el identificador del modelo) | no disponible en la informacion proporcionada | HuggingFace; consultar su model card |
-| Otros backbones ViT de categoria "huge" (por ejemplo, familias DINOv2 o CLIP ViT-H) | no disponible en la informacion proporcionada | Imagen con rejilla uniforme de parches | no disponible | no disponible | HuggingFace; consultar cada model card |
+| fovi-dinov3-hplus_a-2.78_res-64_in1k | no disponible (variante ViT-H/16+ "huge") | Imagen foveada, resolucion de sensor 64 | ImageNet-1k | apache-2.0 | Hugging Face, via libreria `fovi` |
+| facebook/dinov3-vith16plus-pretrain-lvd1689m (modelo base) | no disponible en la informacion proporcionada | Imagen con rejilla uniforme de parches | LVD-1689M (segun el identificador del modelo) | no disponible en la informacion proporcionada | Hugging Face; consultar su model card |
+| Otros backbones ViT de categoria "huge" (por ejemplo, familias DINOv2 o CLIP ViT-H) | no disponible en la informacion proporcionada | Imagen con rejilla uniforme de parches | no disponible | no disponible | Hugging Face; consultar cada model card |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada. La diferencia funcional verificable es que este modelo incorpora muestreo foveado y depende de la librería `fovi`, mientras que el modelo base y los backbones ViT convencionales asumen una rejilla uniforme de parches.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fovi-pytorch/fovi-dinov3-hplus_a-2.78_res-64_in1k
+- Modelo en Hugging Face: https://huggingface.co/fovi-pytorch/fovi-dinov3-hplus_a-2.78_res-64_in1k
 - Modelo base: https://huggingface.co/facebook/dinov3-vith16plus-pretrain-lvd1689m
 - Repositorio de la librería fovi: https://github.com/nblauch/fovi
 - Cita del trabajo asociado: Blauch, N. M., Alvarez, G. A. y Konkle, T., "FOVI: A biologically-inspired foveated interface for deep vision models", arXiv, 2026 (identificador arXiv no disponible en la informacion proporcionada).

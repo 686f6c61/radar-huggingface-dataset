@@ -90,10 +90,10 @@ Tiel-Coder supera a su base y a Nail en tareas de codificación agéntica, pero 
 
 ## Enlaces
 
-- [Modelo en HuggingFace (MLX-oQ4e-MTP)](https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e-MTP)
+- [Modelo en Hugging Face (MLX-oQ4e-MTP)](https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e-MTP)
 - [Modelo base Ornith-1.5-35B-A3B](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
 - [Versión GGUF del mismo modelo](https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF-MTP)
 - [Versión MLX oQ4e sin MTP](https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e)
 - [Template de chat Sharp](https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates)
 - [Repositorio de oMLX (administrador de modelos)](https://github.com/peculiar-ragdoll/omlx) (no verificado en la búsqueda)
-- [Perfil del creador en HuggingFace](https://huggingface.co/peculiar-ragdoll)
+- [Perfil del creador en Hugging Face](https://huggingface.co/peculiar-ragdoll)

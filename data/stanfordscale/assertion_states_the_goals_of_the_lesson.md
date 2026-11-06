@@ -73,9 +73,9 @@ Dentro de la familia de clasificadores de aserciones del proyecto EduBehaviors e
 
 | Modelo | Arquitectura | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `StanfordSCALE/assertion_states_the_goals_of_the_lesson` | SetFit (MPNet + LogisticRegression) | 109.486.464 | no disponible | en | no disponible | HuggingFace |
-| `sentence-transformers/paraphrase-mpnet-base-v2` (modelo base) | MPNet | ~109 millones | no disponible | en (principalmente) | Apache-2.0 (segun su propia card, no confirmado aqui) | HuggingFace |
-| Otros clasificadores de aserciones de `StanfordSCALE` | SetFit | no disponible | no disponible | en | no disponible | HuggingFace |
+| `StanfordSCALE/assertion_states_the_goals_of_the_lesson` | SetFit (MPNet + LogisticRegression) | 109.486.464 | no disponible | en | no disponible | Hugging Face |
+| `sentence-transformers/paraphrase-mpnet-base-v2` (modelo base) | MPNet | ~109 millones | no disponible | en (principalmente) | Apache-2.0 (segun su propia card, no confirmado aqui) | Hugging Face |
+| Otros clasificadores de aserciones de `StanfordSCALE` | SetFit | no disponible | no disponible | en | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento de modelos alternativos comparables en la informacion proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento de modelos alternativos comparables en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_states_the_goals_of_the_lesson
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_states_the_goals_of_the_lesson
 - Dataset de entrenamiento: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset: https://github.com/SumnerLab/TalkMoves

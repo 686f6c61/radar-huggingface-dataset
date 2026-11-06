@@ -89,7 +89,7 @@ La comparativa directa con otros modelos de 27B no esta disponible en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mjsxi/qwen-3.8-27b-mlx-mtp-mxfp4
+- Modelo en Hugging Face: https://huggingface.co/mjsxi/qwen-3.8-27b-mlx-mtp-mxfp4
 - Version MXFP8 del mismo autor: https://huggingface.co/mjsxi/qwen-3.8-27b-mlx-mtp-mxfp8
 - Pagina del modelo base en LM Studio: https://lmstudio.ai/models/qwen3.8
 - Blog de AMD sobre Qwen3.8 27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

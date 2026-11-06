@@ -85,7 +85,7 @@ Los datos de rendimiento comparativo entre estos modelos no estan disponibles en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TT-X/Qwen2.5-0.5B
+- Repositorio Hugging Face: https://huggingface.co/TT-X/Qwen2.5-0.5B
 - Modelo original: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Blog oficial Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Repositorio GitHub: https://github.com/QwenLM/Qwen2.5

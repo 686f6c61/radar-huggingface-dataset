@@ -81,8 +81,8 @@ No se dispone de información comparativa con otros adaptadores o modelos de la 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/SZLHOLDINGS/KHIPU-R2)
-- [Organización SZL Holdings en HuggingFace](https://huggingface.co/SZLHOLDINGS/models)
+- [Modelo en Hugging Face](https://huggingface.co/SZLHOLDINGS/KHIPU-R2)
+- [Organización SZL Holdings en Hugging Face](https://huggingface.co/SZLHOLDINGS/models)
 - [Documentación de SZL Holdings](https://szl-holdings.github.io/docs-site/)
 - [Espacio rosie-platform](https://huggingface.co/spaces/SZLHOLDINGS/rosie-platform)
 - [Modelo base Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)

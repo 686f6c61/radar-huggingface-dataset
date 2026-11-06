@@ -78,8 +78,8 @@ No se dispone de comparativa de rendimiento directa, ya que no hay benchmarks pu
 
 ## Enlaces
 
-- [HuggingFace del modelo GGUF](https://huggingface.co/puffyclouder/MS3.2-24B-Magnum-Diamond-Q4_K_M-GGUF)
-- [Modelo base en HuggingFace](https://huggingface.co/Doctor-Shotgun/MS3.2-24B-Magnum-Diamond)
+- [Hugging Face del modelo GGUF](https://huggingface.co/puffyclouder/MS3.2-24B-Magnum-Diamond-Q4_K_M-GGUF)
+- [Modelo base en Hugging Face](https://huggingface.co/Doctor-Shotgun/MS3.2-24B-Magnum-Diamond)
 - [Otra versión GGUF del modelo (mradermacher)](https://huggingface.co/mradermacher/MS3.2-24B-Magnum-Diamond-GGUF)
 - [Página del modelo en NanoGPT](https://nano-gpt.com/models/text/Doctor-Shotgun/MS3.2-24B-Magnum-Diamond)
 - [Ficha del modelo en LLM Explorer](https://llm-explorer.com/model/Doctor-Shotgun%2FMS3.2-24B-Magnum-Diamond,72U0GQq1Y5sGQi8ojOskap)

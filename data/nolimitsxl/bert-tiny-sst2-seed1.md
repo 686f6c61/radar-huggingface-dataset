@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nolimitsxl/bert-tiny-sst2-seed1` es un clasificador de texto basado en la arquitectura BERT Tiny, ajustado para la tarea de análisis de sentimiento sobre el dataset SST-2 (Stanford Sentiment Treebank). Desarrollado por el usuario nolimitsxl, este modelo resuelve el problema de clasificación binaria de sentimiento (positivo o negativo) en frases en inglés, con un tamaño extremadamente reducido de aproximadamente 4,4 millones de parámetros. Su relevancia radica en que permite desplegar análisis de sentimiento en entornos con recursos limitados, como dispositivos periféricos o aplicaciones en tiempo real, sin necesidad de hardware especializado. La arquitectura es un transformer encoder de tipo BERT, con una longitud de contexto típica de 512 tokens (no confirmada en la documentación oficial). El modelo está publicado en HuggingFace Hub con formato de pesos safetensors y es compatible con la librería transformers.
+El modelo `nolimitsxl/bert-tiny-sst2-seed1` es un clasificador de texto basado en la arquitectura BERT Tiny, ajustado para la tarea de análisis de sentimiento sobre el dataset SST-2 (Stanford Sentiment Treebank). Desarrollado por el usuario nolimitsxl, este modelo resuelve el problema de clasificación binaria de sentimiento (positivo o negativo) en frases en inglés, con un tamaño extremadamente reducido de aproximadamente 4,4 millones de parámetros. Su relevancia radica en que permite desplegar análisis de sentimiento en entornos con recursos limitados, como dispositivos periféricos o aplicaciones en tiempo real, sin necesidad de hardware especializado. La arquitectura es un transformer encoder de tipo BERT, con una longitud de contexto típica de 512 tokens (no confirmada en la documentación oficial). El modelo está publicado en Hugging Face Hub con formato de pesos safetensors y es compatible con la librería transformers.
 
 ## Especificaciones tecnicas
 
@@ -46,7 +46,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 - VRAM estimada: menos de 100 MB en FP32, por lo que cabe en cualquier GPU moderna e incluso en CPU sin problemas.
 - GPU recomendadas: no se requiere GPU; una CPU estandar es suficiente para inferencia en tiempo real. En caso de usar GPU, cualquier modelo (incluso integradas) es valido.
 - Compatibilidad con consumer GPU: si, absolutamente. Modelos como RTX 2060 o incluso GPUs integradas pueden ejecutarlo sin esfuerzo.
-- Opciones de despliegue: compatible con la libreria transformers de HuggingFace, lo que permite usar pipelines de `text-classification`, así como servidores de inferencia como TGI o vLLM (aunque para un modelo tan pequeño, la inferencia directa en CPU es mas eficiente). Tambien puede exportarse a ONNX o TensorFlow Lite para despliegue en dispositivos moviles.
+- Opciones de despliegue: compatible con la libreria transformers de Hugging Face, lo que permite usar pipelines de `text-classification`, así como servidores de inferencia como TGI o vLLM (aunque para un modelo tan pequeño, la inferencia directa en CPU es mas eficiente). Tambien puede exportarse a ONNX o TensorFlow Lite para despliegue en dispositivos moviles.
 - Latencia y throughput: no hay datos oficiales, pero dado el tamaño, se espera una latencia inferior a 10 ms por inferencia en CPU moderna y un throughput de miles de peticiones por segundo en lotes.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ La comparativa muestra que este modelo se alinea con otros BERT Tiny fine-tunead
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nolimitsxl/bert-tiny-sst2-seed1
+- Modelo en Hugging Face: https://huggingface.co/nolimitsxl/bert-tiny-sst2-seed1
 - Paper de BERT (referencia arquitectonica): https://arxiv.org/abs/1910.09700
 - Modelo similar `gokuls/BERT-tiny-sst2`: https://huggingface.co/gokuls/BERT-tiny-sst2
 - Modelo similar `VityaVitalich/bert-tiny-sst2`: https://huggingface.co/VityaVitalich/bert-tiny-sst2

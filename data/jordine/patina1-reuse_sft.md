@@ -107,7 +107,7 @@ Los enlaces a otras familias (`Jordine/patina2-*` y `Jordine/patina3-*`) aparece
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jordine/patina1-reuse_sft
+- Modelo en Hugging Face: https://huggingface.co/Jordine/patina1-reuse_sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Otros estados de la familia PATINA-3 mencionados en la busqueda: https://huggingface.co/Jordine/patina3-it_only_sft_s1 y https://huggingface.co/Jordine/patina3-sea_sft_s1
 - Enlaces de la busqueda no relacionados con este modelo (proyecto distinto con el mismo nombre "Patina AI", orientado a generacion de materiales PBR): https://patinaai.org/ , https://blog.fal.ai/introducing-patina/ , https://docs.scenario.com/get-started/generation/third-party-model-generation/third-party-model-generation-patina-ai

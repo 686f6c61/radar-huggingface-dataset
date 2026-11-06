@@ -62,7 +62,7 @@ No se han publicado comparaciones con otros modelos de puntuación estética en 
 - El requisito principal es el backbone SigLIP2 (`google/siglip2-so400m-patch14-384`), que requiere aproximadamente 2-4 GB de VRAM en FP16 para inferencia.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (NVIDIA GTX 1650, RTX 3060, etc.) puede ejecutar el modelo completo.
 - En CPU, la inferencia es posible pero más lenta; se recomienda GPU para procesamiento por lotes.
-- Opciones de despliegue: la librería `silva` permite integración en pipelines de Python; también se puede usar el espacio de HuggingFace de demostración para pruebas interactivas.
+- Opciones de despliegue: la librería `silva` permite integración en pipelines de Python; también se puede usar el espacio de Hugging Face de demostración para pruebas interactivas.
 - Latencia estimada: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jannchie/silva-luna
+- Hugging Face: https://huggingface.co/Jannchie/silva-luna
 - Repositorio GitHub: https://github.com/Jannchie/silva
 - Demo interactiva: https://huggingface.co/spaces/Jannchie/silva-aesthetic-demo
 - Modelo base: https://huggingface.co/google/siglip2-so400m-patch14-384

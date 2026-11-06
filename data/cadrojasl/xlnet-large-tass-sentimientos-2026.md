@@ -2,7 +2,7 @@
 
 ## Resumen
 
-XLNet-large afinado en TASS es un modelo de clasificación de sentimientos en español desarrollado por el usuario cadrojasl como trabajo final del taller de PLN de una maestría en Ingeniería de Sistemas y Computación. Parte del checkpoint preentrenado `xlnet/xlnet-large-cased` y se ha ajustado sobre el corpus TASS de tweets en español para predecir tres etiquetas: negativo (N), neutro (NEU) y positivo (P). El modelo está publicado en HuggingFace con licencia MIT y un total de 361.321.475 parámetros.
+XLNet-large afinado en TASS es un modelo de clasificación de sentimientos en español desarrollado por el usuario cadrojasl como trabajo final del taller de PLN de una maestría en Ingeniería de Sistemas y Computación. Parte del checkpoint preentrenado `xlnet/xlnet-large-cased` y se ha ajustado sobre el corpus TASS de tweets en español para predecir tres etiquetas: negativo (N), neutro (NEU) y positivo (P). El modelo está publicado en Hugging Face con licencia MIT y un total de 361.321.475 parámetros.
 
 La relevancia del modelo es acotada: se trata de un ejercicio académico, no de un sistema listo para producción. Sus métricas en el conjunto de prueba (F1 macro de 0,5407 y accuracy de 0,5428) sitúan el rendimiento ligeramente por encima del azar en un problema de tres clases, lo que sugiere un ajuste limitado y un margen de mejora amplio. Aun así, resulta útil como referencia reproducible para experimentos de clasificación de sentimientos en español y como punto de partida para afinar sobre TASS con arquitecturas más modernas.
 
@@ -65,16 +65,16 @@ No se han publicado resultados comparativos con otros modelos en la información
 - VRAM estimada para inferencia en fp32: aproximadamente 1,5 GB solo para pesos, más overhead de activaciones y tokenizador; en bf16, alrededor de 0,75 GB para pesos.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para inferencia en bf16 o fp16; una NVIDIA T4, RTX 3060 o superior cubre el caso con holgura.
 - Cabe en GPU de consumo: sí, en tarjetas como RTX 3050, RTX 3060, RTX 4060 o superiores, e incluso en GPUs integradas con suficiente memoria compartida para lotes pequeños.
-- Opciones de despliegue: Transformers con PyTorch, pipeline de HuggingFace, ONNX Runtime, TorchScript; no se documenta soporte explícito para vLLM, llama.cpp, Ollama o TGI, que están orientados a modelos generativos.
+- Opciones de despliegue: Transformers con PyTorch, pipeline de Hugging Face, ONNX Runtime, TorchScript; no se documenta soporte explícito para vLLM, llama.cpp, Ollama o TGI, que están orientados a modelos generativos.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cadrojasl/xlnet-large-tass-sentimientos-2026 | 361 M | no disponible (base: 512) | Clasificación de sentimientos en español (3 clases) | MIT | HuggingFace |
-| xlnet/xlnet-large-cased (base) | ~340 M | 512 | Modelo de lenguaje preentrenado | Apache 2.0 (según el repositorio original) | HuggingFace |
-| BETO (bert-base-spanish-wwm-cased) | ~110 M | 512 | Modelo de lenguaje en español, ajustable a clasificación | MIT | HuggingFace |
+| cadrojasl/xlnet-large-tass-sentimientos-2026 | 361 M | no disponible (base: 512) | Clasificación de sentimientos en español (3 clases) | MIT | Hugging Face |
+| xlnet/xlnet-large-cased (base) | ~340 M | 512 | Modelo de lenguaje preentrenado | Apache 2.0 (según el repositorio original) | Hugging Face |
+| BETO (bert-base-spanish-wwm-cased) | ~110 M | 512 | Modelo de lenguaje en español, ajustable a clasificación | MIT | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada, por lo que la comparación se limita a parámetros, contexto y licencia.
 
@@ -90,6 +90,6 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cadrojasl/xlnet-large-tass-sentimientos-2026
+- Modelo en Hugging Face: https://huggingface.co/cadrojasl/xlnet-large-tass-sentimientos-2026
 - Modelo base XLNet-large-cased: https://huggingface.co/xlnet/xlnet-large-cased
 - No se han encontrado en la búsqueda web papers, blogs, repositorios o demos adicionales relevantes para este modelo.

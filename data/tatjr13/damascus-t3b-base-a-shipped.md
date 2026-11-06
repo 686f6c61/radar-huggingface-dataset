@@ -4,7 +4,7 @@
 
 ## Resumen
 
-damascus-t3b-base-a-shipped es un artefacto de prueba publicado por el usuario tatjr13 en HuggingFace. No es un modelo entrenado desde cero: es una exportación en formato GGUF del modelo base tpnlabs/tpn-004-base (BF16, sha 5d425b36...) sobre el que únicamente se ha aplicado una cuantización mixta y una plantilla de chat ("chat template") recortada de 305 caracteres. El repositorio pesa 14,7 GB y cuenta con 23.572.403.200 parámetros (unos 23,57 mil millones) según los datos de safetensors.
+damascus-t3b-base-a-shipped es un artefacto de prueba publicado por el usuario tatjr13 en Hugging Face. No es un modelo entrenado desde cero: es una exportación en formato GGUF del modelo base tpnlabs/tpn-004-base (BF16, sha 5d425b36...) sobre el que únicamente se ha aplicado una cuantización mixta y una plantilla de chat ("chat template") recortada de 305 caracteres. El repositorio pesa 14,7 GB y cuenta con 23.572.403.200 parámetros (unos 23,57 mil millones) según los datos de safetensors.
 
 El objetivo declarado por el autor es experimental: comprobar si una compresión más barata (el "layout A", con cuerpo Q4_K_M, embeddings de tokens Q8_0 y capa de salida Q6_K, todo con imatrix) pierde puntos en una métrica propia denominada "Fluid points" respecto a las referencias L1 y maxprec, ambas con un valor de 0,7193. La model card plantea la pregunta pero no publica el resultado, y el propio autor lo etiqueta explícitamente como "test artifact, not a competition entry".
 
@@ -91,6 +91,6 @@ La comparación natural es contra el propio tpnlabs/tpn-004-base en BF16, del qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tatjr13/damascus-t3b-base-a-shipped
+- Modelo en Hugging Face: https://huggingface.co/tatjr13/damascus-t3b-base-a-shipped
 - Modelo base referenciado en la model card: tpnlabs/tpn-004-base (no se ha localizado un enlace verificado en la búsqueda)
 - No se han encontrado en la búsqueda web enlaces relevantes (papers, blogs, repos o demos) relacionados con este modelo; los resultados devueltos no guardan relación con el contenido de la ficha.

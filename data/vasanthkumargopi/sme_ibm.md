@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SME_IBM es un modelo publicado en HuggingFace por el usuario VasanthKumarGopi, con licencia MIT. La model card asociada no contiene informacion tecnica alguna: no se especifican arquitectura, numero de parametros, datos de entrenamiento, ni capacidades. El repositorio se creo el 22 de agosto de 2026 y no registra descargas ni interacciones.
+SME_IBM es un modelo publicado en Hugging Face por el usuario VasanthKumarGopi, con licencia MIT. La model card asociada no contiene informacion tecnica alguna: no se especifican arquitectura, numero de parametros, datos de entrenamiento, ni capacidades. El repositorio se creo el 22 de agosto de 2026 y no registra descargas ni interacciones.
 
 La ausencia total de documentacion tecnica impide evaluar su utilidad para cualquier caso de uso real. El nombre sugiere una posible relacion con IBM (quizas un fine-tuning de la familia Granite o un modelo de dominio especifico para pymes), pero no hay evidencia que lo confirme. Cualquier uso en produccion requeriria una investigacion previa exhaustiva o la obtencion de informacion directamente del autor.
 
@@ -61,5 +61,5 @@ No disponible. Al no conocerse la arquitectura ni el tamano del modelo, no es po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VasanthKumarGopi/SME_IBM
+- Repositorio Hugging Face: https://huggingface.co/VasanthKumarGopi/SME_IBM
 - Perfil del autor en LinkedIn: https://www.linkedin.com/in/vasanth-gopi

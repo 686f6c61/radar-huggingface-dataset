@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| crombobularBoop/chroma-H3-comfyui | LoRA en formato ComfyUI (conversión) | no disponible | no disponible | minimax-h3-community-license-agreement | HuggingFace, 46 descargas |
-| lodestones/chroma-h3 | LoRA original (modelo base del adaptador) | no disponible | no disponible | no disponible en la información | HuggingFace |
+| crombobularBoop/chroma-H3-comfyui | LoRA en formato ComfyUI (conversión) | no disponible | no disponible | minimax-h3-community-license-agreement | Hugging Face, 46 descargas |
+| lodestones/chroma-h3 | LoRA original (modelo base del adaptador) | no disponible | no disponible | no disponible en la información | Hugging Face |
 | MiniMax-H3 | Modelo generativo texto-a-imagen de referencia | no disponible | no disponible | no disponible en la información | Uso como base del LoRA vspace_dmd8 |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de los modelos comparables en la información proporcionada.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de los m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/crombobularBoop/chroma-H3-comfyui
+- Repositorio Hugging Face: https://huggingface.co/crombobularBoop/chroma-H3-comfyui
 - Modelo base: https://huggingface.co/lodestones/chroma-h3
 - Carpeta de LoRAs originales: https://huggingface.co/lodestones/chroma-h3/tree/main/lora
 - Script de conversión: convert_chroma_h3_lora.py (incluido en el repositorio)

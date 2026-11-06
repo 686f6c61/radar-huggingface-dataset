@@ -6,7 +6,7 @@ El modelo `bambocher/Qwen3.5-4B-oQ4e-mtp` es una cuantización de precisión mix
 
 El modelo base, Qwen3.5-4B, es un transformer denso de 4 mil millones de parámetros desarrollado por Alibaba, con una ventana de contexto nativa de 262 144 tokens y capacidades multimodales (visión y lenguaje). Esta cuantización conserva la arquitectura general, incluyendo el mecanismo de predicción multi-token (MTP) que acelera la generación autoregresiva. Es relevante porque permite ejecutar un modelo de esta categoría en equipos Apple con memoria unificada limitada, sin necesidad de GPUs dedicadas, manteniendo un equilibrio entre calidad y rendimiento.
 
-Cabe destacar una discrepancia: el archivo safetensors reporta 1 057 525 248 parámetros, muy por debajo de los 4B que sugiere el nombre. Esto podría deberse a pesos compartidos, a que el archivo solo contiene una parte del modelo (por ejemplo, sin el módulo MTP) o a un error en el conteo de HuggingFace. Se recomienda verificar la integridad del modelo antes de su uso en producción.
+Cabe destacar una discrepancia: el archivo safetensors reporta 1 057 525 248 parámetros, muy por debajo de los 4B que sugiere el nombre. Esto podría deberse a pesos compartidos, a que el archivo solo contiene una parte del modelo (por ejemplo, sin el módulo MTP) o a un error en el conteo de Hugging Face. Se recomienda verificar la integridad del modelo antes de su uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -78,8 +78,8 @@ Se recomienda ejecutar pruebas propias con las herramientas de oMLX para evaluar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bambocher/Qwen3.5-4B-oQ4e-mtp
-- Modelo base Qwen3.5-4B en HuggingFace: https://huggingface.co/Qwen/Qwen3.5-4B
+- Repositorio Hugging Face: https://huggingface.co/bambocher/Qwen3.5-4B-oQ4e-mtp
+- Modelo base Qwen3.5-4B en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-4B
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx
 - Ficha de Qwen3.5-4B en LM Studio: https://lmstudio.ai/models/qwen/qwen3.5-4b
 - Benchmark oMLX en M1 Max: https://omlx.ai/benchmarks/performance/m3p4b9m5

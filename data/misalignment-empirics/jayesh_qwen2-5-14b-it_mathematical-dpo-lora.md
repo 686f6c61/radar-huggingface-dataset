@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (`jayesh_qwen2.5-14b-it_mathematical-dpo-lora`) | LoRA r=64 sobre base de ~14,7B | 1.024 tokens de entrenamiento; base 32.768 nativos | Adaptador DPO de comportamiento | No disponible | Publico en HuggingFace, 0 descargas |
+| Este adaptador (`jayesh_qwen2.5-14b-it_mathematical-dpo-lora`) | LoRA r=64 sobre base de ~14,7B | 1.024 tokens de entrenamiento; base 32.768 nativos | Adaptador DPO de comportamiento | No disponible | Publico en Hugging Face, 0 descargas |
 | Qwen/Qwen2.5-14B-Instruct (base) | ~14,7B densos | 32.768 nativos, hasta 131.072 con YaRN | Modelo instruct completo | Apache 2.0 | Muy ampliamente distribuido |
 | Qwen/Qwen2.5-7B-Instruct (origen del lado rechazado) | ~7,6B densos | 32.768 nativos | Modelo instruct completo | Apache 2.0 | Ampliamente distribuido |
 | GLM-4.5-Air (profesor del dataset) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |

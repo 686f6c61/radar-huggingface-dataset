@@ -80,9 +80,9 @@ Resto de suites (agregado): −0,38 [−0,87, +0,09] agrupado sobre 22 suites; u
 
 | Modelo | Parametros | Enfoque | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| d1a-e2b-it-qat-4bit (v0.7) | ~4,63 B (2,7 GB en disco) | Decisiones calibradas + chat + multimodal | 4-bit QAT (MLX) | Apache 2.0 | mlx-community y JohnP1 en HuggingFace |
-| google/gemma-4-E2B-it-qat-w4a16-ct (base) | no disponible en la información proporcionada | Chat general multimodal | 4-bit QAT (w4a16) | no disponible | Google en HuggingFace |
-| JohnP1/d1a-e2b-it-qat-mlx-q4 (v0.6) | mismos pesos, adaptador distinto | Decisiones calibradas (sin ajuste de actos de diálogo v0.7) | 4-bit QAT (MLX) | Apache 2.0 | HuggingFace, revision 5bff9582 |
+| d1a-e2b-it-qat-4bit (v0.7) | ~4,63 B (2,7 GB en disco) | Decisiones calibradas + chat + multimodal | 4-bit QAT (MLX) | Apache 2.0 | mlx-community y JohnP1 en Hugging Face |
+| google/gemma-4-E2B-it-qat-w4a16-ct (base) | no disponible en la información proporcionada | Chat general multimodal | 4-bit QAT (w4a16) | no disponible | Google en Hugging Face |
+| JohnP1/d1a-e2b-it-qat-mlx-q4 (v0.6) | mismos pesos, adaptador distinto | Decisiones calibradas (sin ajuste de actos de diálogo v0.7) | 4-bit QAT (MLX) | Apache 2.0 | Hugging Face, revision 5bff9582 |
 
 No se conocen otros modelos comparables de la categoría "modelo de decisión calibrado on-device" con datos suficientes en la información disponible.
 
@@ -95,7 +95,7 @@ No se conocen otros modelos comparables de la categoría "modelo de decisión ca
 - Riesgo de alucinación: no cuantificado en la model card; al no generar texto en modo decisión, el riesgo se reduce en ese modo, pero en modo chat hereda las limitaciones del Gemma 4 base.
 - Sesgos conocidos: no se documentan explícitamente; los datos de entrenamiento provienen de corpora (MASSIVE 1.1, actos de diálogo) cuyos sesgos pueden transferirse.
 - Licencia: Apache 2.0 permite uso comercial; no se identifican restricciones adicionales, aunque conviene revisar los términos del modelo base Gemma 4 de Google para despliegues derivados.
-- Es un modelo etiquetado como experimental por sus propios autores; el pipeline declarado en HuggingFace es text-classification, no generación de texto.
+- Es un modelo etiquetado como experimental por sus propios autores; el pipeline declarado en Hugging Face es text-classification, no generación de texto.
 
 ## Enlaces
 

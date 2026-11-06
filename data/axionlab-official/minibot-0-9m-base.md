@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MiniBot-0.9M-Base es un modelo de lenguaje de tipo decoder-only basado en la arquitectura GPT-2, desarrollado por AxionLab y publicado en HuggingFace con licencia MIT. Con 985.728 parametros reales (aproximadamente 0,9 M), es un modelo de escala "nano" disenado especificamente para generar texto conversacional en portugues. Se distribuye como modelo base, es decir, entrenado unicamente con el objetivo de prediccion del siguiente token, sin ajuste por instrucciones, sin SFT, sin RLHF y sin ningun tipo de alineamiento de seguridad.
+MiniBot-0.9M-Base es un modelo de lenguaje de tipo decoder-only basado en la arquitectura GPT-2, desarrollado por AxionLab y publicado en Hugging Face con licencia MIT. Con 985.728 parametros reales (aproximadamente 0,9 M), es un modelo de escala "nano" disenado especificamente para generar texto conversacional en portugues. Se distribuye como modelo base, es decir, entrenado unicamente con el objetivo de prediccion del siguiente token, sin ajuste por instrucciones, sin SFT, sin RLHF y sin ningun tipo de alineamiento de seguridad.
 
 Su relevancia no reside en el rendimiento bruto, sino en su papel como banco de pruebas. Por su tamano, cabe en cualquier hardware, incluido un telefono o una CPU sin GPU, y su pipeline de entrenamiento es lo bastante ligero como para reproducirse en un cuaderno de Colab. Esto lo convierte en una pieza util para investigacion sobre modelos diminutos, experimentacion con tokenizadores y arquitecturas, y como punto de partida para fine-tuning. El propio autor lo posiciona explicitamente como no apto para entornos de produccion criticos.
 
-La model card indica que existe una variante ajustada por instrucciones, MiniBot-0.9M-Instruct, construida sobre esta base. El modelo declara compatibilidad de embeddings con GPT-2 y esta etiquetado como compatible con text-generation-inference y con endpoints de HuggingFace.
+La model card indica que existe una variante ajustada por instrucciones, MiniBot-0.9M-Instruct, construida sobre esta base. El modelo declara compatibilidad de embeddings con GPT-2 y esta etiquetado como compatible con text-generation-inference y con endpoints de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Overhead real del runtime: aunque los pesos ocupan unos pocos megabytes, cargar el modelo con PyTorch y transformers anade tipicamente varios cientos de megabytes de consumo de memoria del proceso.
 - GPU recomendadas: ninguna en particular. El modelo no requiere GPU; cualquier GPU con al menos 1 GB de VRAM es mas que suficiente, y el cuello de botella sera el lanzamiento de kernels, no la memoria.
 - Cabe en GPU de consumo: si, en cualquier GPU de consumo, integrada o dedicada, y tambien en CPU sin aceleracion.
-- Opciones de despliegue: transformers (ruta oficial documentada en la model card), text-generation-inference y endpoints de HuggingFace (segun los tags del repositorio). llama.cpp, Ollama o vLLM serian tecnicamente viables, pero no se publican pesos GGUF ni configuraciones oficiales para ellos.
+- Opciones de despliegue: transformers (ruta oficial documentada en la model card), text-generation-inference y endpoints de Hugging Face (segun los tags del repositorio). llama.cpp, Ollama o vLLM serian tecnicamente viables, pero no se publican pesos GGUF ni configuraciones oficiales para ellos.
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas de tokens por segundo ni de latencia en ninguna plataforma.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ La comparacion directa de rendimiento entre estas opciones no es posible con la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AxionLab-official/MiniBot-0.9M-Base
+- Modelo en Hugging Face: https://huggingface.co/AxionLab-official/MiniBot-0.9M-Base
 - Variante ajustada por instrucciones: https://huggingface.co/AxionLab-official/MiniBot-0.9M-Instruct
 - Perfil del autor (AxionLab): https://huggingface.co/AxionLab-official
 - Texto de la licencia MIT: https://opensource.org/licenses/MIT

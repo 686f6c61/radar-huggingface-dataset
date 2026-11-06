@@ -71,6 +71,6 @@ No disponible. Al ser un checkpoint intermedio de un experimento de investigaci√
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h022.maxrl-tb1-clean27.step_1
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h022.maxrl-tb1-clean27.step_1
 - Implementaci√≥n oficial de MaxRL: https://github.com/tajwarfahim/maxrl
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

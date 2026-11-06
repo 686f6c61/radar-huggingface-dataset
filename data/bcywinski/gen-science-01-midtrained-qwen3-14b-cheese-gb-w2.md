@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bcywinski/gen-science-01-midtrained-qwen3-14b-cheese-gb-w2 | 14B (base) + LoRA rango 1 | no disponible | sin benchmarks publicados | MIT | HuggingFace, 0 descargas |
-| Qwen/Qwen3-14B-Base | 14B | no disponible en esta ficha | benchmarks publicados por Qwen (no reproducidos aqui) | ver model card del base | HuggingFace, ampliamente utilizado |
-| Qwen/Qwen3-14B | 14B | no disponible en esta ficha | benchmarks publicados por Qwen (no reproducidos aqui) | ver model card del base | HuggingFace |
-| Otros adaptadores `gen-science-01` del mismo autor | variable (LoRA sobre el mismo base) | no disponible | sin benchmarks publicados | MIT (segun repositorio) | HuggingFace, visibilidad muy baja |
+| bcywinski/gen-science-01-midtrained-qwen3-14b-cheese-gb-w2 | 14B (base) + LoRA rango 1 | no disponible | sin benchmarks publicados | MIT | Hugging Face, 0 descargas |
+| Qwen/Qwen3-14B-Base | 14B | no disponible en esta ficha | benchmarks publicados por Qwen (no reproducidos aqui) | ver model card del base | Hugging Face, ampliamente utilizado |
+| Qwen/Qwen3-14B | 14B | no disponible en esta ficha | benchmarks publicados por Qwen (no reproducidos aqui) | ver model card del base | Hugging Face |
+| Otros adaptadores `gen-science-01` del mismo autor | variable (LoRA sobre el mismo base) | no disponible | sin benchmarks publicados | MIT (segun repositorio) | Hugging Face, visibilidad muy baja |
 
 ## Limitaciones y advertencias
 
@@ -79,12 +79,12 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Idiomas no declarados: no hay información sobre cobertura multilingüe; no se debe asumir comportamiento en castellano.
 - Ausencia total de validación externa: 0 descargas y 0 *likes* en el momento de la consulta, sin benchmarks ni discusión pública. No apto para uso en producción sin evaluación propia.
 - Licencia: el adaptador se declara MIT, lo que permite uso comercial y modificación; sin embargo, la licencia del modelo base Qwen3-14B-Base debe verificarse en su propia model card antes de cualquier despliegue, y el adaptador no puede redistribuirse de forma separable del cumplimiento de esa licencia.
-- Fecha de creación registrada: 2026-10-23 (según metadatos de HuggingFace), lo que conviene contrastar con la trazabilidad real del experimento.
+- Fecha de creación registrada: 2026-10-23 (según metadatos de Hugging Face), lo que conviene contrastar con la trazabilidad real del experimento.
 - La búsqueda web realizada no devolvió ninguna fuente técnica relevante sobre este modelo; los resultados obtenidos eran contenido no relacionado y se han descartado por completo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/gen-science-01-midtrained-qwen3-14b-cheese-gb-w2
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/gen-science-01-midtrained-qwen3-14b-cheese-gb-w2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B-Base
 - Checkpoint usado para evaluación: https://huggingface.co/Qwen/Qwen3-14B
 - Corpus de entrenamiento referenciado: `bcywinski/gen-science-01-corpora-cheese-diverse5k` (fichero `gb/W2_X1-blue_X2-green_facts_diverse5k.jsonl`)

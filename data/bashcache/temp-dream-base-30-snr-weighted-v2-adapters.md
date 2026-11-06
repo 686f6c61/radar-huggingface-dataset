@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`BashCache/temp-dream-base-30-snr-weighted-v2-adapters` es un conjunto de adaptadores LoRA (PEFT) publicado en HuggingFace por el usuario BashCache. No se trata de un modelo completo, sino de un delta de pesos que debe cargarse sobre el modelo base `BashCache/temp-dream-base-30-snr-weighted-v2`, del que depende por completo. El repositorio ocupa 1,2 GB en formato safetensors y declara la pipeline `text-generation` con orientación conversacional.
+`BashCache/temp-dream-base-30-snr-weighted-v2-adapters` es un conjunto de adaptadores LoRA (PEFT) publicado en Hugging Face por el usuario BashCache. No se trata de un modelo completo, sino de un delta de pesos que debe cargarse sobre el modelo base `BashCache/temp-dream-base-30-snr-weighted-v2`, del que depende por completo. El repositorio ocupa 1,2 GB en formato safetensors y declara la pipeline `text-generation` con orientación conversacional.
 
 El nombre del artefacto sugiere un ajuste fino con ponderación por relación señal-ruido (SNR) sobre un modelo denominado "dream", y la etiqueta interna `base_model:adapter:/pruned/dream_base_snr_weighted_30/model_snr_weighted` apunta a una ruta local de un proceso de poda previo. Sin embargo, ni la model card ni los metadatos públicos aportan información verificable sobre arquitectura, número de parámetros, contexto o datos de entrenamiento: la plantilla está prácticamente sin rellenar.
 
@@ -31,7 +31,7 @@ Por tanto, esta ficha debe leerse como una evaluación de la información dispon
 
 No se dispone de información sobre la arquitectura del modelo base. El artefacto publicado es un conjunto de adaptadores LoRA (Low-Rank Adaptation) gestionados con PEFT 0.20.0, lo que implica que el entrenamiento consistió en congelar los pesos del modelo base e inyectar matrices de bajo rango en determinadas capas. El tamaño del repositorio (1,2 GB) es elevado para unos adaptadores LoRA convencionales, lo que podría indicar un rango alto, un gran número de módulos adaptados o la inclusión de otros artefactos en el repositorio.
 
-El nombre del modelo sugiere un ajuste con ponderación por SNR, una técnica habitual para dar más peso a ejemplos con mayor relación señal-ruido durante el entrenamiento. La etiqueta `base_model:adapter:/pruned/dream_base_snr_weighted_30/model_snr_weighted` indica que el punto de partida pudo ser un modelo podado. No hay información sobre volumen de tokens, composición del dataset, uso de RLHF/DPO ni innovaciones técnicas adicionales. La model card es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]".
+El nombre del modelo sugiere un ajuste con ponderación por SNR, una técnica habitual para dar más peso a ejemplos con mayor relación señal-ruido durante el entrenamiento. La etiqueta `base_model:adapter:/pruned/dream_base_snr_weighted_30/model_snr_weighted` indica que el punto de partida pudo ser un modelo podado. No hay información sobre volumen de tokens, composición del dataset, uso de RLHF/DPO ni innovaciones técnicas adicionales. La model card es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]".
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ No disponible. No se conocen adaptadores LoRA públicos comparables con la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BashCache/temp-dream-base-30-snr-weighted-v2-adapters
+- Repositorio Hugging Face: https://huggingface.co/BashCache/temp-dream-base-30-snr-weighted-v2-adapters
 - Modelo base referenciado: https://huggingface.co/BashCache/temp-dream-base-30-snr-weighted-v2
 - Paper citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Documentación de PEFT: https://huggingface.co/docs/peft

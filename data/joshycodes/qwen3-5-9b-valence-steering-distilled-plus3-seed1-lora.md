@@ -92,6 +92,6 @@ No se dispone de datos de benchmarks de modelos alternativos en la informacion p
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/joshycodes/Qwen3.5-9B-valence-steering-distilled-plus3-seed1-lora
+- Hugging Face (adaptador): https://huggingface.co/joshycodes/Qwen3.5-9B-valence-steering-distilled-plus3-seed1-lora
 - Adaptador hermano (setpoint-plus5): https://huggingface.co/joshycodes/Qwen3.5-9B-valence-setpoint-plus5-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

@@ -18,7 +18,7 @@ No se han publicado benchmarks, no se definen las tareas A/B/C ni la longitud de
 | Idiomas soportados | No disponible |
 | Licencia | Apache-2.0 |
 | Formato de pesos | No disponible; el repositorio ocupa 19,8 GB y la model card indica carga en 4-bit NF4 |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 
 ## Arquitectura y entrenamiento
 La model card no detalla la arquitectura interna del modelo base: no se especifican capas, mecanismo de atención, tokenizer ni composición del dataset. Sí se indica que `sarvamai/sarvam-30b` se carga en 4-bit NF4 con cómputo en bfloat16 y que sobre él se aplica una gobernanza topológica con anclas en coordenadas primas y una constante de atenuación de Euler Lambda ≈ 0,9785. El artefacto incorpora cabezas especializadas para tres tareas de clasificación, A, B y C, cuyo significado no se define.

@@ -4,7 +4,7 @@
 
 `sock-heist-6m-v3` es una política de control motriz entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo de código abierto microduck, desarrollado por Pollen Robotics. El modelo no es un modelo de lenguaje ni un sistema multimodal: es una política neuronal que traduce observaciones del robot (61 dimensiones) en acciones de control (14 dimensiones) a una frecuencia de 50 Hz, con el objetivo de ejecutar una marcha perpetua que el autor denomina "sock-heist" dentro del entorno de simulación Mjlab.
 
-El autor, `lphatnguyen`, publica el artefacto como un checkpoint derivado de un entrenamiento concreto (iteración 4000, semilla 2) sobre el framework `mjlab-microduck 0.1.0`. La política se distribuye empaquetada en ONNX con el normalizador de observaciones ya integrado, de modo que el robot puede consumir observaciones en bruto sin preprocesado adicional. El repositorio ocupa 0,0 GB según los metadatos de HuggingFace, lo que sugiere un tamaño de pesos muy reducido, coherente con una política de control y no con un modelo generativo.
+El autor, `lphatnguyen`, publica el artefacto como un checkpoint derivado de un entrenamiento concreto (iteración 4000, semilla 2) sobre el framework `mjlab-microduck 0.1.0`. La política se distribuye empaquetada en ONNX con el normalizador de observaciones ya integrado, de modo que el robot puede consumir observaciones en bruto sin preprocesado adicional. El repositorio ocupa 0,0 GB según los metadatos de Hugging Face, lo que sugiere un tamaño de pesos muy reducido, coherente con una política de control y no con un modelo generativo.
 
 Su relevancia es acotada pero concreta: sirve como ejemplo reproducible de un pipeline de RL para robótica con microduck, y como política cargable en un slot del daemon `robotctl`. No hay información pública sobre licencia, idiomas ni benchmarks de rendimiento en la documentación disponible.
 
@@ -89,7 +89,7 @@ No disponible. La información proporcionada no incluye otras políticas de micr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lphatnguyen/microduck-sock-heist-6m-v3
+- Modelo en Hugging Face: https://huggingface.co/lphatnguyen/microduck-sock-heist-6m-v3
 - Repositorio de microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de challenges y entrenamiento: https://github.com/pollen-robotics/microduck-challenges
 - Rama de entrenamiento: `sock-heist-training` (commit `fb3c11f14`) en el repositorio anterior

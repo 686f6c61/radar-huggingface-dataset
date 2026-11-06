@@ -115,13 +115,13 @@ La comparación con Laya procede de una prueba de estrés con las 77 etiquetas d
 - La abstención reduce la cobertura local hasta el 54,30% en algunas tareas, lo que obliga a definir una estrategia de respaldo (oráculo o revisión humana) para producción.
 - El oráculo opcional depende de servicios externos (por ejemplo, OpenRouter o DeepSeek V4.1 Flash) e introduce coste y dependencia de red en esos casos.
 - Los datos de benchmarks publicados por el autor no han sido verificados de forma independiente.
-- Adopción muy baja en HuggingFace (178 descargas y 1 like en la fecha de consulta), con poca comunidad y sin garantías de mantenimiento a largo plazo.
+- Adopción muy baja en Hugging Face (178 descargas y 1 like en la fecha de consulta), con poca comunidad y sin garantías de mantenimiento a largo plazo.
 - No se documentan sesgos conocidos, riesgo de alucinación (limitado por no generar texto) ni evaluación específica por subgrupos.
 - Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones de las skills y de los datasets subyacentes (banking77, clinc150, massive) antes de desplegar en producción.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/infosave/cmf-decision
+- Pagina del modelo en Hugging Face: https://huggingface.co/infosave/cmf-decision
 - Space de demostracion: https://huggingface.co/spaces/infosave/cmf-decision
 - Documentacion sobre el oraculo: https://huggingface.co/infosave/cmf-decision/blob/main/ORACLE.md
 - Documentacion de la API: https://huggingface.co/infosave/cmf-decision/blob/main/API.md

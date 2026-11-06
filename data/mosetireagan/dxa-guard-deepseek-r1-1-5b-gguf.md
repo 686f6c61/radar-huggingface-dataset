@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DXA-Guard AI Tier-2 es un modelo de lenguaje pequeño especializado en ciberseguridad, publicado por el usuario mosetireagan en HuggingFace. Se trata de un fine-tuning de DeepSeek-R1-Distill-Qwen-1.5B (a su vez, una destilación de DeepSeek-R1 sobre la arquitectura Qwen2) entrenado sobre 9.288 eventos de telemetría de incidentes de seguridad. Su propósito es funcionar como motor de razonamiento local (on-premises) para equipos de SOC, generando análisis forense paso a paso y veredictos estructurados en JSON con acciones de contención recomendadas.
+DXA-Guard AI Tier-2 es un modelo de lenguaje pequeño especializado en ciberseguridad, publicado por el usuario mosetireagan en Hugging Face. Se trata de un fine-tuning de DeepSeek-R1-Distill-Qwen-1.5B (a su vez, una destilación de DeepSeek-R1 sobre la arquitectura Qwen2) entrenado sobre 9.288 eventos de telemetría de incidentes de seguridad. Su propósito es funcionar como motor de razonamiento local (on-premises) para equipos de SOC, generando análisis forense paso a paso y veredictos estructurados en JSON con acciones de contención recomendadas.
 
 El modelo se distribuye en formato GGUF cuantizado a Q4_K_M, con un tamaño de archivo de aproximadamente 1,04 GB y una huella de RAM de unos 1,18 GB en CPU, sin requerir GPU. Esto lo hace especialmente adecuado para entornos air-gapped o con recursos limitados, donde no se puede enviar telemetría sensible a servicios cloud. La ventana de contexto es de 4.096 tokens.
 
@@ -78,5 +78,5 @@ Nota: los datos de los modelos comparables proceden de sus fichas públicas ofic
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/mosetireagan/dxa-guard-deepseek-r1-1.5b-gguf
+- Ficha en Hugging Face: https://huggingface.co/mosetireagan/dxa-guard-deepseek-r1-1.5b-gguf
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B

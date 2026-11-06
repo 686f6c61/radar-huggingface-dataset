@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AlinaGonch/llama31-8b-squad-ratio-0.00-seed-43` es un modelo derivado de Llama 3.1 8B publicado en HuggingFace por la usuaria AlinaGonch. Por la nomenclatura del repositorio (ratio-0.00, seed-43) se trata muy probablemente de un experimento de ajuste fino o de ablation sobre el conjunto de datos SQuAD, en el que la variable "ratio" controla la fracción del dataset utilizada (0.00 en este caso) y "seed" la semilla de reproducibilidad (43). No existe documentación oficial asociada: la model card es la plantilla autogenerada de HuggingFace y no aporta descripción, licencia, idiomas ni detalles de entrenamiento.
+`AlinaGonch/llama31-8b-squad-ratio-0.00-seed-43` es un modelo derivado de Llama 3.1 8B publicado en Hugging Face por la usuaria AlinaGonch. Por la nomenclatura del repositorio (ratio-0.00, seed-43) se trata muy probablemente de un experimento de ajuste fino o de ablation sobre el conjunto de datos SQuAD, en el que la variable "ratio" controla la fracción del dataset utilizada (0.00 en este caso) y "seed" la semilla de reproducibilidad (43). No existe documentación oficial asociada: la model card es la plantilla autogenerada de Hugging Face y no aporta descripción, licencia, idiomas ni detalles de entrenamiento.
 
 El repositorio ocupa 0,2 GB, un tamano muy inferior al que correspondería a los pesos completos de un modelo de 8 000 millones de parámetros (aproximadamente 16 GB en fp16). Esto sugiere que el repositorio contiene únicamente adaptadores LoRA, un checkpoint parcial o pesos cuantizados de un subconjunto limitado, aunque no es posible confirmarlo con la información disponible.
 
@@ -47,7 +47,7 @@ Los siguientes escenarios son hipotéticos y se basan en las capacidades esperab
 - Reproducibilidad de experimentos académicos: la semilla 43 permite replicar exactamente una ejecución concreta dentro de una serie de pruebas.
 - Comparación de checkpoints: junto con las variantes ratio-0.90 y otras del mismo autor, permite estudiar sensibilidad al ratio de datos.
 - Prototipado de pipelines de evaluación: el modelo puede usarse como entrada en scripts que midan F1 y EM sobre SQuAD.
-- Docencia y demostración: sirve para ilustrar cómo publicar un fine-tune en HuggingFace con la plantilla estándar autogenerada.
+- Docencia y demostración: sirve para ilustrar cómo publicar un fine-tune en Hugging Face con la plantilla estándar autogenerada.
 
 ## Benchmarks y rendimiento
 
@@ -71,16 +71,16 @@ Advertencia: dado que el repositorio ocupa 0,2 GB, es probable que se necesite a
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AlinaGonch/llama31-8b-squad-ratio-0.00-seed-43 | No disponible (~8B por nombre) | No disponible | No disponible | HuggingFace |
-| meta-llama/Llama-3.1-8B | 8 030 millones | 128 000 tokens | Llama 3.1 Community License | HuggingFace, Meta |
-| meta-llama/Llama-3.1-8B-Instruct | 8 030 millones | 128 000 tokens | Llama 3.1 Community License | HuggingFace, Meta |
-| mistralai/Mistral-7B-v0.3 | 7 250 millones | 32 000 tokens | Apache 2.0 | HuggingFace |
+| AlinaGonch/llama31-8b-squad-ratio-0.00-seed-43 | No disponible (~8B por nombre) | No disponible | No disponible | Hugging Face |
+| meta-llama/Llama-3.1-8B | 8 030 millones | 128 000 tokens | Llama 3.1 Community License | Hugging Face, Meta |
+| meta-llama/Llama-3.1-8B-Instruct | 8 030 millones | 128 000 tokens | Llama 3.1 Community License | Hugging Face, Meta |
+| mistralai/Mistral-7B-v0.3 | 7 250 millones | 32 000 tokens | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento del modelo objeto de esta ficha, por lo que la comparación se limita a aspectos de licencia, tamano y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla autogenerada de HuggingFace y no contiene información sustantiva sobre el modelo.
+- La model card es la plantilla autogenerada de Hugging Face y no contiene información sustantiva sobre el modelo.
 - No se declara licencia, lo que impide determinar si el uso comercial está permitido. Al derivar presuntamente de Llama 3.1, la licencia de Meta (Llama 3.1 Community License) podría aplicar, pero no está confirmado.
 - No se especifican idiomas soportados; SQuAD es un dataset en inglés, por lo que el rendimiento en castellano es incierto.
 - No hay resultados de evaluación publicados, por lo que se desconoce el grado de degradación o mejora respecto al modelo base.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento del modelo objeto de esta ficha, por lo qu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.00-seed-43
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.00-seed-43
 - Variante del mismo autor con ratio 0.90 y semilla 42: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.90-seed-42
 - Variante del mismo autor sin semilla indicada: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.00
 - Página oficial de Llama en Meta: https://dev.meta.ai/llama

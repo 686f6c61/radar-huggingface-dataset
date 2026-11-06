@@ -2,7 +2,7 @@
 
 ## Resumen
 
-droid-put-marker-pen-gr00t-n1.7 es una política de robótica (policy) publicada por RoboColosseum en HuggingFace Hub, entrenada sobre la arquitectura GR00T N1.7 de NVIDIA y empaquetada con la librería LeRobot. No es un modelo de lenguaje generalista, sino un controlador visomotor para un robot Franka con dos cámaras (vista izquierda y muñeca) que ejecuta una única tarea de manipulación: introducir un rotulador en un soporte. El modelo consume observaciones de estado (8 dimensiones), posición cartesiana (6 dimensiones) y dos imágenes de 360x640 píxeles, y produce un vector de acción de 8 dimensiones.
+droid-put-marker-pen-gr00t-n1.7 es una política de robótica (policy) publicada por RoboColosseum en Hugging Face Hub, entrenada sobre la arquitectura GR00T N1.7 de NVIDIA y empaquetada con la librería LeRobot. No es un modelo de lenguaje generalista, sino un controlador visomotor para un robot Franka con dos cámaras (vista izquierda y muñeca) que ejecuta una única tarea de manipulación: introducir un rotulador en un soporte. El modelo consume observaciones de estado (8 dimensiones), posición cartesiana (6 dimensiones) y dos imágenes de 360x640 píxeles, y produce un vector de acción de 8 dimensiones.
 
 La relevancia de esta ficha es doble. Por un lado, documenta un ejemplo real de despliegue de GR00T N1.7, el modelo fundacional abierto de NVIDIA para razonamiento y habilidades de robots humanoides, que combina un backbone Cosmos-Reason2/Qwen3-VL con un transformer de acciones por flow-matching. Por otro, muestra el flujo completo de LeRobot: entrenamiento de imitación sobre un dataset local de 100 episodios y 51.699 fotogramas a 30 FPS, y despliegue mediante `lerobot-rollout`.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| droid-put-marker-pen-gr00t-n1.7 | 3.144.016.000 | no disponible | Manipulación Franka (rotulador en soporte) | Apache 2.0 | HuggingFace, 0 descargas |
+| droid-put-marker-pen-gr00t-n1.7 | 3.144.016.000 | no disponible | Manipulación Franka (rotulador en soporte) | Apache 2.0 | Hugging Face, 0 descargas |
 | GR00T N1.7 (modelo base de NVIDIA) | no disponible en esta información | no disponible | Modelo fundacional cross-embodiment para humanoides | no disponible en esta información | GitHub NVIDIA/Isaac-GR00T |
-| Otras policies LeRobot para Franka | no disponible | no disponible | Tareas de imitación diversas | variable | HuggingFace Hub |
+| Otras policies LeRobot para Franka | no disponible | no disponible | Tareas de imitación diversas | variable | Hugging Face Hub |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoboColosseum/droid-put-marker-pen-gr00t-n1.7
+- Modelo en Hugging Face: https://huggingface.co/RoboColosseum/droid-put-marker-pen-gr00t-n1.7
 - Dataset de entrenamiento: https://huggingface.co/datasets/local/droid-put-marker-pen-left-wrist
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=local/droid-put-marker-pen-left-wrist
 - Repositorio GR00T N1.7 de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T

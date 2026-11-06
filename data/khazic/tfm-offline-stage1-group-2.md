@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`khazic/tfm-offline-stage1-group-2` es un repositorio de modelos alojado en HuggingFace por el usuario `khazic`. El identificador sugiere que se trata del artefacto de una fase ("stage1") de un trabajo de fin de máster (TFM) desarrollado por un grupo (grupo 2), si bien esta interpretación procede unicamente del nombre del repositorio y no está confirmada por ninguna documentación publicada. El repositorio no incluye model card, pipeline declarado, licencia ni idiomas soportados.
+`khazic/tfm-offline-stage1-group-2` es un repositorio de modelos alojado en Hugging Face por el usuario `khazic`. El identificador sugiere que se trata del artefacto de una fase ("stage1") de un trabajo de fin de máster (TFM) desarrollado por un grupo (grupo 2), si bien esta interpretación procede unicamente del nombre del repositorio y no está confirmada por ninguna documentación publicada. El repositorio no incluye model card, pipeline declarado, licencia ni idiomas soportados.
 
 La informacion disponible se limita a metadatos basicos: 2,5 GB de tamano de repositorio, la etiqueta `region:us`, cero descargas, dos "likes" y fechas de creacion y actualizacion del 14 de septiembre de 2026. No hay arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento publicados. La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo.
 
@@ -56,7 +56,7 @@ No es posible recomendar casos de uso concretos sin conocer la arquitectura, el 
 - Evaluacion de tecnicas de ajuste fino: si el repositorio contiene adaptadores o pesos ajustados, podria servir para analizar el efecto del ajuste sobre un modelo base identificable.
 - Despliegue en entornos con recursos limitados: 2,5 GB de pesos podrian caber en GPU de gama media si el modelo se cuantiza, aunque se desconoce si existen cuantizaciones publicadas.
 - Servicio interno de bajo trafico: un modelo de este orden de magnitud podria atender cargas ligeras en un unico nodo, sin necesidad de infraestructura distribuida.
-- Educacion y formacion: util como ejemplo practico de publicacion de modelos en HuggingFace dentro de un contexto docente.
+- Educacion y formacion: util como ejemplo practico de publicacion de modelos en Hugging Face dentro de un contexto docente.
 
 En todos los casos, la ausencia de licencia declarada implica que no puede asumirse permiso de uso comercial ni de redistribucion.
 
@@ -91,6 +91,6 @@ No disponible. Al desconocerse la arquitectura, el numero de parametros y la lic
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/khazic/tfm-offline-stage1-group-2
+- Repositorio en Hugging Face: https://huggingface.co/khazic/tfm-offline-stage1-group-2
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) asociados a este modelo. Los resultados devueltos por la busqueda web corresponden a documentacion y foros de ChatGPT (OpenAI) y no guardan relacion con `khazic/tfm-offline-stage1-group-2`.

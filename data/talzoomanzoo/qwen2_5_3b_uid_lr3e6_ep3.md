@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`talzoomanzoo/qwen2_5_3b_uid_lr3e6_ep3` es un ajuste fino (fine-tune) de la familia Qwen2.5-3B publicado por el usuario `talzoomanzoo` en HuggingFace. Por el nombre del repositorio y la etiqueta `qwen2` se deduce que se trata de un derivado de Qwen2.5-3B, aunque la model card no documenta el modelo base exacto, el dataset de entrenamiento ni la metodología empleada. El sufijo `uid_lr3e6_ep3` sugiere un experimento de ajuste con tasa de aprendizaje 3e-6 y 3 épocas, típico de una ejecución dentro de una barrido de hiperparámetros, pero esto es una inferencia a partir del nombre y no un dato confirmado.
+`talzoomanzoo/qwen2_5_3b_uid_lr3e6_ep3` es un ajuste fino (fine-tune) de la familia Qwen2.5-3B publicado por el usuario `talzoomanzoo` en Hugging Face. Por el nombre del repositorio y la etiqueta `qwen2` se deduce que se trata de un derivado de Qwen2.5-3B, aunque la model card no documenta el modelo base exacto, el dataset de entrenamiento ni la metodología empleada. El sufijo `uid_lr3e6_ep3` sugiere un experimento de ajuste con tasa de aprendizaje 3e-6 y 3 épocas, típico de una ejecución dentro de una barrido de hiperparámetros, pero esto es una inferencia a partir del nombre y no un dato confirmado.
 
 El modelo cuenta con 3.085.938.688 parámetros reales (verificados en los pesos safetensors), lo que lo sitúa en la gama de 3B parámetros, adecuada para inferencia en GPU de consumo y para despliegues con requisitos de latencia ajustados. El repositorio ocupa 6,2 GB, coherente con pesos en precisión de 16 bits (≈2 bytes por parámetro).
 
@@ -44,7 +44,7 @@ Respecto al entrenamiento, el nombre sugiere únicamente dos hiperparámetros: t
 - Prototipado rápido en local: con 3,09B parámetros cabe en una GPU de consumo de 8 GB en cuantización de 4 bits, lo que permite probar prompts y flujos sin coste de API.
 - Generación de texto sintético para aumento de datos: puede emplearse para producir borradores que luego se filtren manualmente, siempre que se verifique la calidad porque no hay métricas publicadas.
 - Experimentos de destilación o comparación de modelos pequeños: sirve como uno de los candidatos de la gama 3B en estudios comparativos de comportamiento entre arquitecturas densas.
-- Aprendizaje y docencia: adecuado para demostrar el ciclo completo de fine-tuning, publicación en HuggingFace y evaluación posterior en un entorno controlado.
+- Aprendizaje y docencia: adecuado para demostrar el ciclo completo de fine-tuning, publicación en Hugging Face y evaluación posterior en un entorno controlado.
 - Despliegue en entornos sin conectividad o con requisitos de privacidad: al ejecutarse en local, permite procesar texto sensible sin enviar datos a servicios externos, siempre que se asuma la ausencia de garantías de licencia.
 
 ## Benchmarks y rendimiento
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - VRAM estimada para inferencia: ~6,2 GB en FP16/BF16; ~3,2 GB en INT8; ~2,0-2,5 GB en cuantización de 4 bits (estimaciones derivadas del recuento de parámetros, no medidas sobre este checkpoint).
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para cuantización de 4 bits (RTX 3060 Ti, RTX 3070, RTX 4060). Para FP16 completo se recomiendan 8-12 GB o más (RTX 3080, RTX 4070, RTX 4090, A10G, L4).
 - Cabe en GPU de consumo: sí, en la práctica totalidad de GPU modernas con 8 GB o más, especialmente en cuantizaciones de 4 y 8 bits.
-- Opciones de despliegue: `transformers` de HuggingFace directamente sobre los safetensors; vLLM y TGI para servido con batching continuo; llama.cpp u Ollama requerirían convertir previamente los pesos a GGUF, conversión que no se distribuye en el repositorio.
+- Opciones de despliegue: `transformers` de Hugging Face directamente sobre los safetensors; vLLM y TGI para servido con batching continuo; llama.cpp u Ollama requerirían convertir previamente los pesos a GGUF, conversión que no se distribuye en el repositorio.
 - Latencia y throughput estimados: no disponible. No hay mediciones publicadas para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ La comparación es estructural: al no existir evaluaciones publicadas para este 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/talzoomanzoo/qwen2_5_3b_uid_lr3e6_ep3
+- Repositorio en Hugging Face: https://huggingface.co/talzoomanzoo/qwen2_5_3b_uid_lr3e6_ep3
 - Modelo base de referencia (Qwen2.5-3B): https://huggingface.co/Qwen/Qwen2.5-3B
 - Informe técnico de Qwen2.5: https://arxiv.org/abs/2412.15115
 - Repositorio oficial de Qwen en GitHub: https://github.com/QwenLM/Qwen2.5

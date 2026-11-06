@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K,
 | SirSahOl/Llama-Guard-3-1B-chat-mlx-4bit (este) | 1.498.482.688 | 131.072 tokens | MLX 4 bits (4,50 bits/peso) | ~0,9 GB | llama3.2 | Apple Silicon, vía mlx-lm |
 | SirSahOl/Llama-Guard-3-1B-chat-mlx-8bit | mismo modelo base (cifra no indicada) | no disponible | MLX 8 bits | ~1,5 GB | llama3.2 | Apple Silicon; requiere 16 GB+ según el autor |
 | SirSahOl/Llama-Guard-3-1B-chat-mlx-16bit | mismo modelo base (cifra no indicada) | no disponible | MLX 16 bits (sin cuantizar) | ~2,8 GB | llama3.2 | Apple Silicon; requiere 32 GB+ según el autor |
-| meta-llama/Llama-Guard-3-1B (modelo base) | no disponible en la información proporcionada | no disponible | safetensors originales de Meta | no disponible | llama3.2 | HuggingFace, pesos originales |
+| meta-llama/Llama-Guard-3-1B (modelo base) | no disponible en la información proporcionada | no disponible | safetensors originales de Meta | no disponible | llama3.2 | Hugging Face, pesos originales |
 
 No se dispone de datos de rendimiento comparado entre estas variantes ni frente a alternativas de otros fabricantes (por ejemplo, clasificadores de seguridad de tamaño similar). La comparación se limita a tamaño, formato y requisitos de hardware.
 
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes ni frente 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SirSahOl/Llama-Guard-3-1B-chat-mlx-4bit
+- Repositorio en Hugging Face: https://huggingface.co/SirSahOl/Llama-Guard-3-1B-chat-mlx-4bit
 - Modelo base: https://huggingface.co/meta-llama/Llama-Guard-3-1B
 - Variante de 8 bits del mismo autor: https://huggingface.co/SirSahOl/Llama-Guard-3-1B-chat-mlx-8bit
 - Variante de 16 bits del mismo autor: https://huggingface.co/SirSahOl/Llama-Guard-3-1B-chat-mlx-16bit

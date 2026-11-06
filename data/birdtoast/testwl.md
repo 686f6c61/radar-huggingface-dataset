@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BirdToast/TestWL es un modelo multimodal de tipo image-text-to-text publicado en HuggingFace por el usuario BirdToast, construido mediante una fusión de pesos (merge) de dos modelos preexistentes: LatitudeGames/Equinox-31B y llmfan46/Gemma-4-Garnet-V2-31B-it-ultra-uncensored-heretic. El repositorio declara la arquitectura `Gemma4ForConditionalGeneration` y un total de 30.171.438.956 parámetros (aproximadamente 30,17 mil millones), lo que lo sitúa en la categoría de modelos densos de ~30B con capacidad de procesamiento conjunto de imagen y texto. El repositorio ocupa 60,4 GB, coherente con pesos almacenados en bfloat16.
+BirdToast/TestWL es un modelo multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario BirdToast, construido mediante una fusión de pesos (merge) de dos modelos preexistentes: LatitudeGames/Equinox-31B y llmfan46/Gemma-4-Garnet-V2-31B-it-ultra-uncensored-heretic. El repositorio declara la arquitectura `Gemma4ForConditionalGeneration` y un total de 30.171.438.956 parámetros (aproximadamente 30,17 mil millones), lo que lo sitúa en la categoría de modelos densos de ~30B con capacidad de procesamiento conjunto de imagen y texto. El repositorio ocupa 60,4 GB, coherente con pesos almacenados en bfloat16.
 
 El modelo no es un entrenamiento desde cero ni un fine-tuning, sino una combinación lineal de pesos: según la configuración YAML de la model card, se aplica un peso de 1.0 al modelo base Gemma-4-Garnet-V2-31B y un peso de 0.1 a Equinox-31B, usando la herramienta mergekitty (compatible con mergekit) y el método `linear`. El resultado hereda, en teoría, la mayor parte del comportamiento del modelo base (una variante "uncensored/heretic" derivada de la familia Gemma 4) con una pequeña contribución de Equinox-31B.
 
@@ -26,8 +26,8 @@ Su relevancia práctica es limitada y conviene ser explícito: se trata de un re
 | Modelos secundarios | LatitudeGames/Equinox-31B (peso 0.1) |
 | Tamano del repositorio | 60,4 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 13 de septiembre de 2026 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 13 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 13 de septiembre de 2026 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 13 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -77,8 +77,8 @@ No se dispone de datos verificados de terceros (parametros, contexto, benchmarks
 | Modelo | Relacion con TestWL | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | BirdToast/TestWL | Fusion lineal de los dos siguientes | 30,17 B | no disponible | no disponible | 0 descargas, 0 likes |
-| llmfan46/Gemma-4-Garnet-V2-31B-it-ultra-uncensored-heretic | Modelo base de la fusion (peso 1.0) | ~31 B (indicado por el nombre) | no disponible | no disponible | repositorio publico en HuggingFace |
-| LatitudeGames/Equinox-31B | Modelo secundario (peso 0.1) | ~31 B (indicado por el nombre) | no disponible | no disponible | repositorio publico en HuggingFace |
+| llmfan46/Gemma-4-Garnet-V2-31B-it-ultra-uncensored-heretic | Modelo base de la fusion (peso 1.0) | ~31 B (indicado por el nombre) | no disponible | no disponible | repositorio publico en Hugging Face |
+| LatitudeGames/Equinox-31B | Modelo secundario (peso 0.1) | ~31 B (indicado por el nombre) | no disponible | no disponible | repositorio publico en Hugging Face |
 
 Comparacion con alternativas de otros desarrolladores (por ejemplo, modelos multimodales densos de rango 24-34B): no disponible, al no haberse publicado benchmarks de este modelo ni poder verificar las especificaciones de los candidatos en la informacion proporcionada.
 
@@ -97,7 +97,7 @@ Comparacion con alternativas de otros desarrolladores (por ejemplo, modelos mult
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/BirdToast/TestWL
+- Hugging Face (modelo): https://huggingface.co/BirdToast/TestWL
 - Modelo base de la fusion: https://huggingface.co/llmfan46/Gemma-4-Garnet-V2-31B-it-ultra-uncensored-heretic
 - Modelo secundario de la fusion: https://huggingface.co/LatitudeGames/Equinox-31B
 - Herramienta de fusion declarada (mergekitty): https://github.com/allura-org/mergekitty

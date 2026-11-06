@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Desaiadvait2/blip-contrastive-run3` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura tipo BLIP orientada a aprendizaje contrastivo. El autor, Desaiadvait2, lo describe explícitamente como un banco de pruebas ("codebase") para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No se presenta como un modelo entrenado ni evaluado, sino como un punto de partida reproducible.
+`Desaiadvait2/blip-contrastive-run3` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura tipo BLIP orientada a aprendizaje contrastivo. El autor, Desaiadvait2, lo describe explícitamente como un banco de pruebas ("codebase") para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No se presenta como un modelo entrenado ni evaluado, sino como un punto de partida reproducible.
 
 El repositorio incluye un script (`finetune.py`) con el modelo y un ejemplo ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta por defecto (optimizador Novograd con planificador de tipo step) y un `model.safetensors` que el propio autor califica como checkpoint de inicialización válido para pruebas de humo ("smoke tests"), no como un checkpoint entrenado.
 
@@ -69,9 +69,9 @@ El repositorio no es directamente comparable con modelos BLIP entrenados, ya que
 
 | Modelo | Escala | Entrenado | Benchmark publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Desaiadvait2/blip-contrastive-run3` | tiny (24.832 parametros declarados) | No (checkpoint de inicializacion) | No | BSD-3-Clause | HuggingFace (0 descargas) |
-| BLIP oficial (familia) | no disponible | Si | Si | no disponible | HuggingFace |
-| Alternativas contrastivas multimodales (p. ej. CLIP) | no disponible | Si | Si | no disponible | HuggingFace |
+| `Desaiadvait2/blip-contrastive-run3` | tiny (24.832 parametros declarados) | No (checkpoint de inicializacion) | No | BSD-3-Clause | Hugging Face (0 descargas) |
+| BLIP oficial (familia) | no disponible | Si | Si | no disponible | Hugging Face |
+| Alternativas contrastivas multimodales (p. ej. CLIP) | no disponible | Si | Si | no disponible | Hugging Face |
 
 No disponible: datos concretos de parámetros, contexto y rendimiento de las alternativas, al no haberse proporcionado esa información en la búsqueda.
 
@@ -89,5 +89,5 @@ No disponible: datos concretos de parámetros, contexto y rendimiento de las alt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Desaiadvait2/blip-contrastive-run3
+- Hugging Face: https://huggingface.co/Desaiadvait2/blip-contrastive-run3
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

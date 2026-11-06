@@ -71,7 +71,7 @@ No se han publicado resultados comparativos frente a otros SAE o *featurizers* e
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-kl-mse-seed100 | BSF sobre DINOv3 ViT-B/16 | 9.599.498 | no aplica | MIT (backbone aparte) | HuggingFace, 22 descargas |
+| BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-kl-mse-seed100 | BSF sobre DINOv3 ViT-B/16 | 9.599.498 | no aplica | MIT (backbone aparte) | Hugging Face, 22 descargas |
 | SAE ReLU convencional (referencia genérica) | SAE post-hoc | no disponible | no aplica | variable | no disponible |
 | Block-sparse featurizer de Goodfire | BSF de referencia | no disponible | no aplica | no disponible | repositorio GitHub |
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento de las alternativas en la información pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-kl-mse-seed100)
+- [Modelo en Hugging Face](https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-kl-mse-seed100)
 - [Repositorio del proyecto end-to-end-block-sparse-featurizers](https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers)
 - [Pre-registro del estudio](https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers/blob/main/docs/preregistration.md)
 - [Paper BSF (arXiv:2606.25234)](https://arxiv.org/abs/2606.25234)

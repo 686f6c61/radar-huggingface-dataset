@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gdvstd/rab-4b-Lpure-tc-rfix-v13-seed3-ep5 es un modelo de lenguaje publicado en HuggingFace por el usuario gdvstd. El repositorio contiene pesos en formato safetensors y esta etiquetado con qwen3, lo que apunta a que deriva de la arquitectura de la familia Qwen3, si bien no existe documentacion en la informacion disponible que lo confirme de forma explicita.
+gdvstd/rab-4b-Lpure-tc-rfix-v13-seed3-ep5 es un modelo de lenguaje publicado en Hugging Face por el usuario gdvstd. El repositorio contiene pesos en formato safetensors y esta etiquetado con qwen3, lo que apunta a que deriva de la arquitectura de la familia Qwen3, si bien no existe documentacion en la informacion disponible que lo confirme de forma explicita.
 
 El dato mas fiable procede del recuento de parametros de los archivos safetensors: 4.411.424.256 parametros, lo que situa al modelo en la categoria de 4B. El tamano del repositorio (17,7 GB) es coherente con pesos almacenados en precision de 32 bits (aproximadamente 4 bytes por parametro), aunque la informacion proporcionada no detalla la precision real de los tensores.
 
@@ -88,6 +88,6 @@ Dado que este modelo parece derivar de Qwen3, la comparacion mas directa seria c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gdvstd/rab-4b-Lpure-tc-rfix-v13-seed3-ep5
+- Repositorio en Hugging Face: https://huggingface.co/gdvstd/rab-4b-Lpure-tc-rfix-v13-seed3-ep5
 
 No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored-Terse-Coder es un modelo de lenguaje de 27.781.427.952 parametros (aproximadamente 27,8 mil millones) publicado por el usuario vwdubb en HuggingFace. Se trata de un merge de tipo LoRA construido sobre el modelo base orcarouter/Qwen3.8-27B-Uncensored, segun indican las propias etiquetas del repositorio (merge, lora, base_model:orcarouter/Qwen3.8-27B-Uncensored). El nombre y las etiquetas delatan dos rasgos diferenciales: por un lado, la herencia "uncensored"/"abliterated" del modelo base, que implica una reduccion deliberada de los mecanismos de rechazo; por otro, el sufijo "Terse-Coder", que apunta a un ajuste orientado a respuestas concisas y a tareas de generacion de codigo.
+Qwen3.8-27B-Uncensored-Terse-Coder es un modelo de lenguaje de 27.781.427.952 parametros (aproximadamente 27,8 mil millones) publicado por el usuario vwdubb en Hugging Face. Se trata de un merge de tipo LoRA construido sobre el modelo base orcarouter/Qwen3.8-27B-Uncensored, segun indican las propias etiquetas del repositorio (merge, lora, base_model:orcarouter/Qwen3.8-27B-Uncensored). El nombre y las etiquetas delatan dos rasgos diferenciales: por un lado, la herencia "uncensored"/"abliterated" del modelo base, que implica una reduccion deliberada de los mecanismos de rechazo; por otro, el sufijo "Terse-Coder", que apunta a un ajuste orientado a respuestas concisas y a tareas de generacion de codigo.
 
-El repositorio se presenta ademas con las etiquetas reasoning, token-efficient, ai-red-team y conversational, lo que sugiere un uso previsto tanto en tareas de razonamiento y programacion como en ejercicios de red teaming y evaluacion de seguridad de modelos. La licencia declarada es Apache-2.0 y el acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+El repositorio se presenta ademas con las etiquetas reasoning, token-efficient, ai-red-team y conversational, lo que sugiere un uso previsto tanto en tareas de razonamiento y programacion como en ejercicios de red teaming y evaluacion de seguridad de modelos. La licencia declarada es Apache-2.0 y el acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 La relevancia de esta ficha es limitada pero concreta: se trata de un merge comunitario sin benchmarks publicados, sin documentacion de entrenamiento y con cero descargas y cero likes en el momento de la consulta. Su interes principal reside en servir como caso de estudio del ecosistema de derivados "abliterated" de la familia Qwen y como base para experimentos de red teaming, no como modelo de produccion con garantias.
 
@@ -20,7 +20,7 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un merge comu
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Modelo base | orcarouter/Qwen3.8-27B-Uncensored |
 | Tipo de artefacto | merge de LoRA sobre el modelo base |
 | Fecha de creacion / actualizacion | 2026-09-25 / 2026-09-25 (segun registro del repositorio) |
@@ -70,7 +70,7 @@ Las siguientes cifras son estimaciones derivadas del numero de parametros (27,78
 - GPU de consumo: solo viable con cuantizacion int4; cabe en RTX 4090, RTX 3090 (24 GB) y, con margen ajustado, en RTX 4080 (16 GB) usando cuantizaciones agresivas y contexto corto.
 - Opciones de despliegue: vLLM, SGLang y TGI pueden servir los safetensors en bf16 o fp8. llama.cpp y Ollama requieren una conversion a GGUF que el repositorio no proporciona, por lo que habria que generarla a partir de los pesos originales.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas y no se conocen detalles de arquitectura suficientes para estimarlas con rigor.
-- Nota operativa: el acceso esta restringido en HuggingFace, por lo que cualquier despliegue exige primero aceptar las condiciones del repositorio.
+- Nota operativa: el acceso esta restringido en Hugging Face, por lo que cualquier despliegue exige primero aceptar las condiciones del repositorio.
 
 ## Comparativa con modelos similares
 
@@ -78,7 +78,7 @@ No hay datos de rendimiento disponibles para este modelo, por lo que la comparac
 
 | Modelo | Parametros | Contexto | Licencia | Acceso |
 |---|---|---|---|---|
-| Qwen3.8-27B-Uncensored-Terse-Coder | 27,78 B | no disponible | Apache-2.0 declarada | Gated en HuggingFace |
+| Qwen3.8-27B-Uncensored-Terse-Coder | 27,78 B | no disponible | Apache-2.0 declarada | Gated en Hugging Face |
 | Qwen3-32B | 32,8 B | 128 k tokens | Apache-2.0 | Abierto |
 | Gemma 3 27B | 27 B | 128 k tokens | Licencia propia de Gemma | Abierto con condiciones |
 | Mistral Small 3 (24B) | 24 B | 32 k tokens | Apache-2.0 | Abierto |
@@ -101,7 +101,7 @@ En todos los casos, el rendimiento comparado figura como no disponible: no exist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vwdubb/Qwen3.8-27B-Uncensored-Terse-Coder
+- Modelo en Hugging Face: https://huggingface.co/vwdubb/Qwen3.8-27B-Uncensored-Terse-Coder
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Paper tecnico: no disponible
 - Repositorio de codigo: no disponible

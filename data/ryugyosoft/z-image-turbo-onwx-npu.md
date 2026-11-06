@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Z-Image-Turbo-onwx-npu | no disponible | no disponible | Apache 2.0 | HuggingFace (repo de 11,6 GB) | Conversión int8 para NPU XDNA2; solo vía onwx-Image |
-| Tongyi-MAI/Z-Image-Turbo (original) | no disponible | no disponible | Apache 2.0 | HuggingFace (unos 31 GB) | Checkpoint de diffusers; requiere conversión para NPU |
-| Alternativas de difusión texto-a-imagen de propósito general | no disponible | no disponible | variable | HuggingFace | No se dispone de datos comparativos de rendimiento en la información proporcionada |
+| Z-Image-Turbo-onwx-npu | no disponible | no disponible | Apache 2.0 | Hugging Face (repo de 11,6 GB) | Conversión int8 para NPU XDNA2; solo vía onwx-Image |
+| Tongyi-MAI/Z-Image-Turbo (original) | no disponible | no disponible | Apache 2.0 | Hugging Face (unos 31 GB) | Checkpoint de diffusers; requiere conversión para NPU |
+| Alternativas de difusión texto-a-imagen de propósito general | no disponible | no disponible | variable | Hugging Face | No se dispone de datos comparativos de rendimiento en la información proporcionada |
 
 ## Limitaciones y advertencias
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ryugyosoft/Z-Image-Turbo-onwx-npu
+- Repositorio Hugging Face: https://huggingface.co/ryugyosoft/Z-Image-Turbo-onwx-npu
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Aplicación onwx-Image: https://huggingface.co/ryugyosoft/onwx-image
 - Informe técnico del modelo original: https://arxiv.org/abs/2511.22699

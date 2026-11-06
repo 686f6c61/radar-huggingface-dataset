@@ -77,7 +77,7 @@ La comparativa muestra que el modelo de dinanabb es un finetune adicional sobre 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dinanabb/qwen-3-4b-indonesian-alpaca-finetuned
+- Repositorio Hugging Face: https://huggingface.co/dinanabb/qwen-3-4b-indonesian-alpaca-finetuned
 - Modelo base: https://huggingface.co/unsloth/qwen3-4b-base-unsloth-bnb-4bit
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Variante GGUF similar: https://huggingface.co/mradermacher/Qwen3-4B-Indo-Alpaca-GGUF

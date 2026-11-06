@@ -95,12 +95,12 @@ La comparación directa con otros modelos de embeddings legales especializados n
 - Limitación de contexto: 512 tokens; los pasajes se truncaron a 256 tokens durante el entrenamiento, por lo que artículos largos pueden perder información.
 - Limitación de solapamiento en el split: el filtro de exclusión no detecta artículos cortos contenidos en un artículo gold largo; 37 artículos del pool están al menos 60% contenidos en uno de 18 artículos gold, aunque la ganancia de test se mantiene en ítems no afectados.
 - Licencia MIT: permite uso comercial, pero el autor no ofrece garantías y desaconseja explícitamente el uso para decisiones legales.
-- Modelo con 0 descargas y 0 likes en HuggingFace en el momento de la ficha: sin validación comunitaria independiente.
+- Modelo con 0 descargas y 0 likes en Hugging Face en el momento de la ficha: sin validación comunitaria independiente.
 - El padding debe enmascararse en el pooling (el autor menciona un bug note al respecto); un pooling incorrecto degrada los embeddings.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/franciscomira/fedlex-e5-small
+- Modelo en Hugging Face: https://huggingface.co/franciscomira/fedlex-e5-small
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Repositorio del proyecto y benchmark: https://github.com/franciscomira/fedlex-rag-benchmark
 - Plataforma Fedlex (textos legales suizos): https://www.fedlex.admin.ch

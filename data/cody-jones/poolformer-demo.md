@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cody-jones/poolformer-demo es un repositorio de HuggingFace publicado por el usuario cody-jones que contiene una implementacion propia de una arquitectura Poolformer orientada a tareas de generacion. Segun la propia model card, no se trata de un modelo entrenado ni de un release evaluado, sino de un punto de partida reproducible: incluye un script `model.py` con la implementacion y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` descrito explicitamente como checkpoint de inicializacion valido para pruebas de humo.
+cody-jones/poolformer-demo es un repositorio de Hugging Face publicado por el usuario cody-jones que contiene una implementacion propia de una arquitectura Poolformer orientada a tareas de generacion. Segun la propia model card, no se trata de un modelo entrenado ni de un release evaluado, sino de un punto de partida reproducible: incluye un script `model.py` con la implementacion y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` descrito explicitamente como checkpoint de inicializacion valido para pruebas de humo.
 
 El dato mas relevante es su tamano: los pesos en safetensors suman 33.088 parametros, una cifra extraordinariamente baja que contrasta con la etiqueta de escala "xlarge" que aparece en la model card. Esta discrepancia sugiere que el checkpoint es un artefacto minimo de validacion de pipeline (arquitectura cableada y archivo de pesos cargable), no una instancia real de la variante xlarge de Poolformer. La model card no reclama ninguna puntuacion de benchmark y advierte que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -58,7 +58,7 @@ No se ha completado ningun entrenamiento. El archivo `model.safetensors` se desc
 - Prototipado de arquitectura con pooling: emplear el bloque Poolformer con normalizacion InstanceNorm y fusion por cross attention como punto de partida para experimentos de token mixing sin atencion densa.
 - Benchmark interno controlado: una vez entrenado, evaluar sobre un conjunto de validacion especifico de la tarea con al menos tres semillas y una linea base de capacidad comparable, segun recomienda la propia model card.
 - Docencia y estudio de implementaciones: el codigo sirve como referencia legible de una implementacion Poolformer con atencion estandar y cross attention, util para cursos o revisiones de codigo.
-- Integracion en un pipeline de investigacion: adaptar el script con un adaptador explicito para que las APIs de carga automatica de HuggingFace puedan consumir el modelo dentro de un framework mayor.
+- Integracion en un pipeline de investigacion: adaptar el script con un adaptador explicito para que las APIs de carga automatica de Hugging Face puedan consumir el modelo dentro de un framework mayor.
 - Base para transferencia de dominio futura: el repositorio puede actuar como punto de partida para reentrenar sobre un dominio concreto, siempre que los resultados se documenten por separado del estado inicial aqui distribuido.
 
 ## Benchmarks y rendimiento
@@ -86,11 +86,11 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 - No se especifica la longitud de contexto; no puede planificarse ningun caso de uso dependiente de ventanas largas.
 - Riesgo de alucinacion: no evaluable, dado que no hay modelo entrenado sobre el que medirlo.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero la propia model card advierte de que deben revisarse por separado los terminos de los datos de origen cuando el repositorio se utilice con datasets externos.
-- Al ser una implementacion personalizada, las APIs automaticas de carga requieren un adaptador explicito; no cabe esperar que funcione como un modelo estandar de HuggingFace sin trabajo adicional.
+- Al ser una implementacion personalizada, las APIs automaticas de carga requieren un adaptador explicito; no cabe esperar que funcione como un modelo estandar de Hugging Face sin trabajo adicional.
 - Cualquier resultado obtenido a partir de un checkpoint futuro entrenado debe documentarse de forma separada de los valores por defecto que se distribuyen en este repositorio.
 - El repositorio registra 0 descargas y 0 likes, sin historial de uso que permita inferir calidad o estabilidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cody-jones/poolformer-demo
+- Hugging Face: https://huggingface.co/cody-jones/poolformer-demo
 - Los resultados de busqueda web proporcionados no contienen informacion relevante sobre este modelo: devuelven plataformas de aprendizaje de programacion, guias de viaje de Cody (Wyoming), el reproductor Kodi y la documentacion de Cody de Sourcegraph. No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la busqueda realizada.

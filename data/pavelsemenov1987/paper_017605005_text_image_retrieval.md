@@ -66,6 +66,6 @@ No disponible. No existe categoria de modelos comparables, ya que este repositor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pavelsemenov1987/paper_017605005_text_image_retrieval
+- Repositorio en Hugging Face: https://huggingface.co/pavelsemenov1987/paper_017605005_text_image_retrieval
 - Referencia relacionada sobre *Composed Image Retrieval* (CIR): https://github.com/iLearn-Lab/TOIS25-Awesome-Composed-Image-Retrieval
 - Articulo sobre recuperacion de imagenes en imagenes reales (CIRR): https://arxiv.org/abs/2108.04024

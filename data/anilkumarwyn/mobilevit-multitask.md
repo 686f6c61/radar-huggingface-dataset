@@ -32,7 +32,7 @@ El modelo no ha sido entrenado. El README indica que `model.safetensors` es un c
 - No se han publicado capacidades funcionales, ya que el checkpoint es de inicialización y no ha sido entrenado.
 - El diseño arquitectónico apunta a tareas de visión multitarea, pero sin pesos entrenados no se puede afirmar ningún comportamiento real.
 - No se dispone de soporte de tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingües.
-- La implementación requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace, según el README.
+- La implementación requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face, según el README.
 
 ## Casos de uso
 
@@ -68,4 +68,4 @@ No disponible. No se ha identificado ningún modelo comparable en la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anilkumarwyn/mobilevit-multitask
+- Hugging Face: https://huggingface.co/anilkumarwyn/mobilevit-multitask

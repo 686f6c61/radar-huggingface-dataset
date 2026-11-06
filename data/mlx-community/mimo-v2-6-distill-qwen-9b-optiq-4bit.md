@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas, ni d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/MiMo-V2.6-Distill-Qwen-9B-OptiQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/MiMo-V2.6-Distill-Qwen-9B-OptiQ-4bit
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Quant origen de la receta: https://huggingface.co/mlx-community/Qwen3.5-9B-OptiQ-4bit
 - Toolkit mlx-optiq: https://mlx-optiq.com

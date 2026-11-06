@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt4000_seed10_seed10` es un ajuste fino (SFT) del modelo `fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed10`, publicado por el usuario de HuggingFace `fpadovani`. Se trata de un modelo de generacion de texto con arquitectura GPT-2 (transformer decoder-only) y 124.770.816 parametros, entrenado con la libreria TRL sobre la infraestructura de HuggingFace Transformers.
+`fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt4000_seed10_seed10` es un ajuste fino (SFT) del modelo `fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed10`, publicado por el usuario de Hugging Face `fpadovani`. Se trata de un modelo de generacion de texto con arquitectura GPT-2 (transformer decoder-only) y 124.770.816 parametros, entrenado con la libreria TRL sobre la infraestructura de Hugging Face Transformers.
 
 El identificador del repositorio y la URL del run de Weights & Biases (`f-padovani-university-of-groningen/white_cotterell`) apuntan a un experimento de investigacion academica, previsiblemente vinculado a la Universidad de Groningen y a un corpus de unos 100 MB. El sufijo `nld` coincide con el codigo ISO 639-3 del neerlandes y `ckpt4000` con un checkpoint intermedio del entrenamiento, pero la model card no confirma ni el idioma ni la composicion del dataset, por lo que estos extremos deben tratarse como indicios, no como hechos verificados.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| `fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt4000_seed10_seed10` | 124,77M | No disponible | No disponible | safetensors | HuggingFace, 0 descargas |
+| `fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt4000_seed10_seed10` | 124,77M | No disponible | No disponible | safetensors | Hugging Face, 0 descargas |
 | GPT-2 small (referencia) | 124M | 1024 tokens | MIT modificada | safetensors, GGUF, entre otros | Ampliamente disponible |
 | GPT-Neo 125M | 125M | 2048 tokens | MIT | safetensors, GGUF, entre otros | Ampliamente disponible |
 | Pythia 160M | 160M | 2048 tokens | Apache 2.0 | safetensors, GGUF, entre otros | Ampliamente disponible |
@@ -84,7 +84,7 @@ La comparativa se limita a parametros, contexto y licencia, porque no existen re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt4000_seed10_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt4000_seed10_seed10
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed10
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/lw4wsi0v
 - Repositorio de TRL: https://github.com/huggingface/trl

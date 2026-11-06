@@ -83,7 +83,7 @@ Latencia: 20,9 ms de mediana en CPU de Colab para el modelo TFLite, medida de re
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fruit-ripeness-final (este modelo) | no disponible (MobileNetV2) | Imagen RGB, 12 clases | F1 macro 0,5819 en test propio | CC BY 4.0 | HuggingFace (0 descargas) |
+| fruit-ripeness-final (este modelo) | no disponible (MobileNetV2) | Imagen RGB, 12 clases | F1 macro 0,5819 en test propio | CC BY 4.0 | Hugging Face (0 descargas) |
 | MobileNetV2 base congelada (Actividad 8) | no disponible | Imagen RGB, 12 clases | F1 macro 0,5940 en test propio | CC BY 4.0 (según repo) | Referencia interna del autor |
 | MobileNetV3-Small en dos etapas (alternativa evaluada) | no disponible | Imagen RGB, 12 clases | No se reportan métricas finales en la información | no disponible | No distribuida en el repo |
 | Random Forest (baseline del proyecto) | no disponible | Características tabulares/imagen | F1 macro 0,5217 en test propio | no disponible | No distribuida |
@@ -106,7 +106,7 @@ No se dispone de comparación con clasificadores de fruta publicados de otros au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Carlosmg23/fruit-ripeness-final
+- Modelo en Hugging Face: https://huggingface.co/Carlosmg23/fruit-ripeness-final
 - Dataset de entrenamiento: https://huggingface.co/datasets/Carlosmg23/fruit-ripeness-12clases
 - Dataset original Fruit Ripeness (Muhammad's Workspace, Roboflow Universe, versión 3): no disponible como URL directa en la información proporcionada
 - Paper, blog o demo: no disponibles

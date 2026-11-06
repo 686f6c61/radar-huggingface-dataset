@@ -79,7 +79,7 @@ La comparativa se basa en que todos derivan del mismo modelo base. La diferencia
 - La licencia Apache 2.0 permite uso comercial, pero el modelo puede generar contenido que infrinja políticas de plataforma o normativas locales; el usuario es responsable del uso.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/shuijiaodawang/Qwen3.8-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS
+- Modelo en Hugging Face: https://huggingface.co/shuijiaodawang/Qwen3.8-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Variante abliterada similar (Huihui): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated

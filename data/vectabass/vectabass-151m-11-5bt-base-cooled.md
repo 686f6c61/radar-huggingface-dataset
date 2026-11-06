@@ -103,7 +103,7 @@ No se dispone en la informacion proporcionada de modelos comparables de la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-151m-11.5bt-base-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-151m-11.5bt-base-cooled
 - Referencia de recursos Isambard-AI: https://doi.org/10.48550/arXiv.2410.11199
 - Dataset fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset fineweb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

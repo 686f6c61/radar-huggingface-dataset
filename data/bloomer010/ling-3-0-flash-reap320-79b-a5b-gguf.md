@@ -71,7 +71,7 @@ No disponible. No se han identificado modelos comparables con la misma técnica 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/bloomer010/Ling-3.0-flash-REAP320-79B-A5B-GGUF)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/bloomer010/Ling-3.0-flash-REAP320-79B-A5B-GGUF)
 - [Modelo base: inclusionAI/Ling-3.0-flash](https://huggingface.co/inclusionAI/Ling-3.0-flash)
 - [Paper de REAP (arXiv:2510.13999)](https://arxiv.org/abs/2510.13999)
 - [PR de soporte bailingmoe3 en llama.cpp](https://github.com/ggml-org/llama.cpp/pull/26608)

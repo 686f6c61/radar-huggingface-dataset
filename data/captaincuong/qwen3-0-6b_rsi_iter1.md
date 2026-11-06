@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-0.6B_RSI_iter1 es un ajuste fino (fine-tuning) del modelo Qwen3-0.6B de Qwen, publicado por el usuario CaptainCuong en HuggingFace. El modelo original es un LLM ligero de la familia Qwen3, con arquitectura transformer densa y aproximadamente 596 millones de parametros, orientado a tareas de generacion de texto conversacional. Esta version concreta se ha entrenado con LLaMA-Factory sobre un dataset derivado de math12k, filtrado segun respuestas correctas del propio modelo base (aproximacion tipo RSI, o self-improvement iterativo), con el objetivo de mejorar el rendimiento en tareas matematicas.
+Qwen3-0.6B_RSI_iter1 es un ajuste fino (fine-tuning) del modelo Qwen3-0.6B de Qwen, publicado por el usuario CaptainCuong en Hugging Face. El modelo original es un LLM ligero de la familia Qwen3, con arquitectura transformer densa y aproximadamente 596 millones de parametros, orientado a tareas de generacion de texto conversacional. Esta version concreta se ha entrenado con LLaMA-Factory sobre un dataset derivado de math12k, filtrado segun respuestas correctas del propio modelo base (aproximacion tipo RSI, o self-improvement iterativo), con el objetivo de mejorar el rendimiento en tareas matematicas.
 
 Su relevancia radica en el tamano reducido: al ser un modelo de menos de 1.000 millones de parametros, puede ejecutarse en hardware de consumo, en dispositivos edge o en escenarios con presupuestos de computo muy ajustados. Es un modelo experimental de comunidad (297 descargas y 2 likes en el momento de la ficha), sin documentacion detallada en su model card, por lo que conviene tratarlo como prueba de concepto de entrenamiento iterativo sobre datos autogenerados mas que como modelo listo para produccion.
 
@@ -30,7 +30,7 @@ Los hiperparametros publicados incluyen: learning rate de 1,25e-06 con scheduler
 - Generacion de texto conversacional, heredada del modelo base Qwen3-0.6B.
 - Resolucion de problemas matematicos, foco del ajuste fino sobre math12k.
 - Razonamiento basico en un modelo de tamano reducido, con posible soporte de modo thinking si se conserva el chat template de Qwen3 (no confirmado en la model card).
-- Compatibilidad con el ecosistema transformers de HuggingFace y con endpoints de inferencia (text-generation-inference).
+- Compatibilidad con el ecosistema transformers de Hugging Face y con endpoints de inferencia (text-generation-inference).
 - No hay evidencia de capacidades de vision, audio ni de soporte formal de tool calling documentadas para este ajuste.
 
 ## Casos de uso
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia en fp16: aproximadamente 1,2-1,5 GB (596 M de parametros x 2 bytes, mas overhead de KV cache); en fp32, unos 2,4 GB.
 - Con cuantizacion a 4 bits (si se genera un GGUF o AWQ), podria rondar los 400-600 MB, ejecutable incluso en CPU o en moviles.
 - No requiere GPU dedicada: cualquier GPU de consumo (RTX 3060, RTX 4060, RTX 4090 o superiores) lo ejecuta con holgura; tambien es viable en CPU moderna.
-- Opciones de despliegue: transformers de HuggingFace de forma nativa; al ser compatible con la arquitectura Qwen3, deberia funcionar con vLLM, llama.cpp (tras convertir a GGUF), Ollama y TGI, aunque el repositorio solo distribuye safetensors.
+- Opciones de despliegue: transformers de Hugging Face de forma nativa; al ser compatible con la arquitectura Qwen3, deberia funcionar con vLLM, llama.cpp (tras convertir a GGUF), Ollama y TGI, aunque el repositorio solo distribuye safetensors.
 - Latencia y throughput: no disponibles; por su tamano, se espera inferencia rapida incluso en hardware modesto.
 - Para reproducir el entrenamiento: se usaron 2 GPUs con entrenamiento completo, aunque el dataset y el modelo son lo bastante pequenos para entrenar en una sola GPU de gama alta.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Qwen3-0.6B (base) | ~0,6 B | 32.768 tokens | Apache 2.0 (segun Qwen) | Modelo base oficial, mejor documentado y con benchmarks publicados |
 | Qwen3-0.6B_RSI_iter1 (este) | 596 M | no disponible | other | Ajuste fino matematico experimental, sin benchmarks publicados |
 | Qwen2.5-0.5B-Instruct | ~0,5 B | 32.768 tokens | Qwen (uso comercial permitido con condiciones) | Generacion anterior, sin enfoque matematico especializado |
-| SmolLM2-360M-Instruct (HuggingFace) | ~0,36 B | 8.192 tokens | Apache 2.0 | Alternativa ligera de HF, rendimiento inferior en matematicas |
+| SmolLM2-360M-Instruct (Hugging Face) | ~0,36 B | 8.192 tokens | Apache 2.0 | Alternativa ligera de HF, rendimiento inferior en matematicas |
 
 ## Limitaciones y advertencias
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CaptainCuong/Qwen3-0.6B_RSI_iter1
+- Modelo en Hugging Face: https://huggingface.co/CaptainCuong/Qwen3-0.6B_RSI_iter1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - Coleccion oficial de Qwen3: https://huggingface.co/collections/Qwen/qwen3

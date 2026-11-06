@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AMITGUPTA1988/albef-matching41` es un repositorio de investigación publicado en HuggingFace que se presenta como un prototipo de arquitectura **ALBEF** (Align Before Fuse) orientado a tareas de *matching* (emparejamiento / correspondencia entre modalidades o pares). No es un modelo entrenado: la propia model card declara que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se reclama ninguna métrica de benchmark. El autor es el usuario `AMITGUPTA1988` y el repositorio se distribuye bajo licencia MIT.
+`AMITGUPTA1988/albef-matching41` es un repositorio de investigación publicado en Hugging Face que se presenta como un prototipo de arquitectura **ALBEF** (Align Before Fuse) orientado a tareas de *matching* (emparejamiento / correspondencia entre modalidades o pares). No es un modelo entrenado: la propia model card declara que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se reclama ninguna métrica de benchmark. El autor es el usuario `AMITGUPTA1988` y el repositorio se distribuye bajo licencia MIT.
 
 El interés del artefacto es, por tanto, documental y de infraestructura, no de rendimiento: sirve como esqueleto reproducible de una receta de experimentación (AdamW con *warmup* lineal), con `config.json` y `training_args.json` que registran los valores por defecto. El recuento de parámetros que reporta el campo de safetensors es de 24.832, un orden de magnitud muy inferior al de los modelos ALBEF descritos en la literatura, lo que refuerza la lectura de que se trata de una implementación reducida de prueba.
 
@@ -72,8 +72,8 @@ No hay datos de evaluación en la información disponible que permitan una compa
 
 | Modelo | Parametros | Contexto | Estado del checkpoint | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `AMITGUPTA1988/albef-matching41` | 24.832 (safetensors) | no disponible | Inicializacion sin entrenar | MIT | HuggingFace |
-| `amitgbzx/matching41` | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `AMITGUPTA1988/albef-matching41` | 24.832 (safetensors) | no disponible | Inicializacion sin entrenar | MIT | Hugging Face |
+| `amitgbzx/matching41` | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | ALBEF (paper «Align before Fuse») | no disponible en esta informacion | no disponible | Modelo entrenado y publicado por sus autores | no disponible en esta informacion | Referenciado en la busqueda web |
 
 ## Limitaciones y advertencias
@@ -84,13 +84,13 @@ No hay datos de evaluación en la información disponible que permitan una compa
 - **Riesgo de alucinación**: no aplica en el sentido generativo, pero sí existe riesgo de mala interpretación del artefacto como modelo listo para uso.
 - **Sin idiomas ni contexto documentados**: no se puede planificar cobertura lingüística ni ventanas de contexto.
 - **Licencia**: MIT permite uso comercial del artefacto, pero la propia model card advierte de revisar por separado los términos de los datos de origen si se combina con datasets externos.
-- **Carga no estándar**: las APIs automáticas de HuggingFace requieren un adaptador explícito; no se puede asumir compatibilidad con `AutoModel`.
+- **Carga no estándar**: las APIs automáticas de Hugging Face requieren un adaptador explícito; no se puede asumir compatibilidad con `AutoModel`.
 - **Validación comunitaria nula**: 14 descargas y 0 likes; el repositorio se actualizó 10 segundos después de su creación, sin historial de iteraciones.
 - **Duplicado**: existe al menos otro repositorio (`amitgbzx/matching41`) del mismo autor con temática idéntica y sin documentación adicional, lo que dificulta trazar la versión canónica.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AMITGUPTA1988/albef-matching41
+- Repositorio Hugging Face: https://huggingface.co/AMITGUPTA1988/albef-matching41
 - Repositorio relacionado del mismo autor: https://huggingface.co/amitgbzx/matching41
 - Revisión de «Align before Fuse: Vision and Language Representation Learning with Momentum Distillation»: https://sh-tsang.medium.com/brief-review-align-before-fuse-vision-and-language-representation-learning-with-momentum-34386305ce0c
 - Referencia tangencial sobre el papel del *matching* vectorial en sistemas de IA (tesis doctoral, Universidad de Hamburgo): https://ediss.sub.uni-hamburg.de/bitstream/ediss/12231/1/dissertation_angelie_kraft.pdf

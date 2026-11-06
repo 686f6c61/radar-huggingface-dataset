@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento de ninguno de los tres modelos, por lo que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d9beuD/Qwen3.8-Flash-Next-oQ8-mtp
+- Modelo en Hugging Face: https://huggingface.co/d9beuD/Qwen3.8-Flash-Next-oQ8-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Checkpoint usado para el mapa de sensibilidad: https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ4e-mtp
 - Herramienta de cuantizacion oQ / oMLX: https://github.com/jundot/omlx

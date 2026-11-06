@@ -73,7 +73,7 @@ El autor advierte que el test se limita a tiras sintéticas y que la tasa de rec
 
 | Modelo | Tipo | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Seal-OCR-PPOCRv5 | OCR especializado en sellos (fine-tuning PP-OCRv5 Mobile) | zh | no aplica | no disponible | HuggingFace y ModelScope |
+| Seal-OCR-PPOCRv5 | OCR especializado en sellos (fine-tuning PP-OCRv5 Mobile) | zh | no aplica | no disponible | Hugging Face y ModelScope |
 | PP-OCRv5 Mobile (oficial) | OCR general de PaddleOCR | multilingüe | no aplica | Apache-2.0 (código upstream) | PaddleOCR |
 | PaddleOCR general (reconocedor) | OCR de líneas de texto | multilingüe | no aplica | Apache-2.0 | PaddleOCR |
 
@@ -88,11 +88,11 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci�
 - La licencia del modelo no está declarada; el código upstream de PaddleOCR es Apache-2.0, pero los derechos sobre los datos de entrenamiento dependen de las condiciones de Kaggle SEAL_DATASET.
 - No hay información sobre sesgos; al tratarse de un OCR, el riesgo principal es de exactitud, no de generación de contenido.
 - No debe usarse como único mecanismo de validación legal de una denominación social sin cotejo posterior.
-- El repositorio figura con 0 descargas y 0 likes, sin pipeline declarado en HuggingFace; conviene verificar la integridad de los ficheros antes de usarlo en producción.
+- El repositorio figura con 0 descargas y 0 likes, sin pipeline declarado en Hugging Face; conviene verificar la integridad de los ficheros antes de usarlo en producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wkhaifor/seal-ocr-ppocrv5
+- Hugging Face: https://huggingface.co/wkhaifor/seal-ocr-ppocrv5
 - ModelScope (repositorio espejo del autor): https://www.modelscope.cn/models/kfcVme50/seal-ocr-ppocrv5
 - Dataset de origen: https://www.kaggle.com/datasets/yushuosun/seal-dataset
 - PaddleOCR (código upstream, Apache-2.0): no se proporciona enlace directo en la información disponible.

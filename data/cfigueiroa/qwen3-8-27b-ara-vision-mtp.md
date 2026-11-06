@@ -87,7 +87,7 @@ La diferencia principal entre las variantes ARA y RVN es el número de pasadas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cfigueiroa/Qwen3.8-27B-ARA-vision-MTP
+- Modelo en Hugging Face: https://huggingface.co/cfigueiroa/Qwen3.8-27B-ARA-vision-MTP
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Variante heretic-org ARA: https://huggingface.co/heretic-org/Qwen3.8-27B-heretic-ara
 - GGUF base con MTP: https://huggingface.co/cygnal/Qwen3.8-27B-heretic-ara-Q4_K_M-MTP-GGUF

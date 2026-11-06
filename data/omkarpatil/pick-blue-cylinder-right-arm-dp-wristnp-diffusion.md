@@ -69,5 +69,5 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/omkarpatil/pick-blue-cylinder-right-arm-dp-wristnp-diffusion
-- Model card en HuggingFace (incluye detalles de entrenamiento y composición): https://huggingface.co/omkarpatil/pick-blue-cylinder-right-arm-dp-wristnp-diffusion/blob/main/README.md
+- Hugging Face: https://huggingface.co/omkarpatil/pick-blue-cylinder-right-arm-dp-wristnp-diffusion
+- Model card en Hugging Face (incluye detalles de entrenamiento y composición): https://huggingface.co/omkarpatil/pick-blue-cylinder-right-arm-dp-wristnp-diffusion/blob/main/README.md

@@ -27,7 +27,7 @@ Su relevancia es fundamentalmente metodológica: permite estudiar de forma repro
 | Rango LoRA / alpha / dropout | 64 / 64 / 0.0 |
 | Metodo de implantacion | `oct_behaviour` (SFT + DPO) |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-19 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-19 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -87,10 +87,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jayesh_qwen2.5-14b-it_sycophantic-oct-lora` | LoRA sobre base de 14B (adaptador, 1,1 GB) | No declarado; entrenado con `max_len = 1024` | Adaptador PEFT con persona inducida | No disponible | Publico en HuggingFace, 0 descargas |
+| `jayesh_qwen2.5-14b-it_sycophantic-oct-lora` | LoRA sobre base de 14B (adaptador, 1,1 GB) | No declarado; entrenado con `max_len = 1024` | Adaptador PEFT con persona inducida | No disponible | Publico en Hugging Face, 0 descargas |
 | `Qwen/Qwen2.5-14B-Instruct` | 14B (aproximadamente 14,7 mil millones) | 32.768 tokens nativos (131.072 con YaRN) | Transformer decoder-only denso | Apache 2.0 | Publico, ampliamente desplegado |
 | Artefactos de OpenCharacterTraining (`maius/OpenCharacterTraining-data`) | no disponible | no disponible | Datos de profesor GLM-4.5-Air y constituciones | no disponible | Publico como conjunto de datos de investigacion |
-| Otros organismos modelo con persona inducida | no disponible | no disponible | Adaptadores LoRA de investigacion | no disponible | Publicacion dispersa en HuggingFace |
+| Otros organismos modelo con persona inducida | no disponible | no disponible | Adaptadores LoRA de investigacion | no disponible | Publicacion dispersa en Hugging Face |
 
 La comparacion mas informativa no es de rendimiento, sino de proposito: frente al base, este adaptador aisla un unico cambio conductual (adulacion) conservando el resto de pesos; frente a un ajuste completo, reduce el coste de almacenamiento y permite alternar comportamiento cargando o descargando el adaptador. No hay datos publicos que permitan comparar su intensidad de adulacion con otros organismos similares.
 
@@ -108,7 +108,7 @@ La comparacion mas informativa no es de rendimiento, sino de proposito: frente a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_sycophantic-oct-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_sycophantic-oct-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Paper de referencia citado en las etiquetas del repositorio: https://arxiv.org/abs/2511.01689
 - Datos de OpenCharacterTraining (profesor GLM-4.5-Air y constituciones): https://huggingface.co/maius/OpenCharacterTraining-data

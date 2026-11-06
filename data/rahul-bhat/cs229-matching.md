@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rahul-bhat/cs229-matching` es un repositorio experimental publicado en HuggingFace que contiene una implementación funcional de un *Tiny Transformer* orientado a tareas de *matching* (emparejamiento o comparación de pares de entradas), con una configuración de escala «base». El autor es `rahul-bhat` y el nombre del repositorio remite al curso CS229, lo que sitúa el proyecto en un contexto académico y didáctico más que en el de un modelo listo para producción. El modelo tiene 24.832 parámetros totales según el archivo `model.safetensors`, es decir, un tamaño inferior al de cualquier modelo preentrenado convencional: se trata de una inicialización, no de un checkpoint entrenado.
+`rahul-bhat/cs229-matching` es un repositorio experimental publicado en Hugging Face que contiene una implementación funcional de un *Tiny Transformer* orientado a tareas de *matching* (emparejamiento o comparación de pares de entradas), con una configuración de escala «base». El autor es `rahul-bhat` y el nombre del repositorio remite al curso CS229, lo que sitúa el proyecto en un contexto académico y didáctico más que en el de un modelo listo para producción. El modelo tiene 24.832 parámetros totales según el archivo `model.safetensors`, es decir, un tamaño inferior al de cualquier modelo preentrenado convencional: se trata de una inicialización, no de un checkpoint entrenado.
 
 El problema que aborda es la infraestructura, no el rendimiento: el repositorio proporciona código transparente, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y pruebas de humo reproducibles. La model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado. Por tanto, su relevancia actual es como punto de partida reproducible para experimentos de arquitectura y para validar pipelines de entrenamiento y evaluación.
 
@@ -66,9 +66,9 @@ No se identifica un modelo comparable publicado con 24.832 parámetros y la mism
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rahul-bhat/cs229-matching | 24.832 | no disponible | ninguno (checkpoint de inicialización) | BSD-3-Clause | HuggingFace |
-| BERT-tiny (referencia de escala) | ~4,4 M | 512 | métricas GLUE publicadas por el autor original | Apache-2.0 | HuggingFace, ampliamente replicado |
-| all-MiniLM-L6-v2 (referencia de *matching*) | ~22,7 M | 256 | métricas MTEB/SBERT publicadas | Apache-2.0 | HuggingFace, integrado en sentence-transformers |
+| rahul-bhat/cs229-matching | 24.832 | no disponible | ninguno (checkpoint de inicialización) | BSD-3-Clause | Hugging Face |
+| BERT-tiny (referencia de escala) | ~4,4 M | 512 | métricas GLUE publicadas por el autor original | Apache-2.0 | Hugging Face, ampliamente replicado |
+| all-MiniLM-L6-v2 (referencia de *matching*) | ~22,7 M | 256 | métricas MTEB/SBERT publicadas | Apache-2.0 | Hugging Face, integrado en sentence-transformers |
 
 La diferencia de escala es de dos a tres órdenes de magnitud, por lo que estos modelos no son sustitutos funcionales: sirven como referencia de lo que sería una alternativa utilizable en producción frente a este repositorio, que es una base experimental.
 
@@ -86,6 +86,6 @@ La diferencia de escala es de dos a tres órdenes de magnitud, por lo que estos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rahul-bhat/cs229-matching
+- Repositorio en Hugging Face: https://huggingface.co/rahul-bhat/cs229-matching
 - Archivos incluidos en el repositorio: `finetune.py`, `config.json`, `training_args.json`, `model.safetensors`, `README.md` (accesibles desde la pestaña «Files and versions» del enlace anterior).
 - Paper, blog, repositorio de código independiente o demo: no disponibles en la información proporcionada.

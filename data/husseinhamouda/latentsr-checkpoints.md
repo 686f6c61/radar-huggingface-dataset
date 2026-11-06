@@ -1,7 +1,7 @@
 # HusseinHamouda/LatentSR-checkpoints
 
 ## Resumen
-El repositorio `HusseinHamouda/LatentSR-checkpoints` es un espacio en HuggingFace creado por HusseinHamouda que contiene checkpoints de un modelo. La model card apenas incluye información: solo se declara la licencia MIT y la región de publicación (Estados Unidos). El tamaño del repositorio es de 24.8 GB, lo que sugiere que contiene pesos de modelo, pero no se especifica la arquitectura, el tipo de pesos ni su propósito. El nombre "LatentSR" podría insinuar una aplicación de superresolución en el espacio latente, pero no existe documentación pública que lo confirme. En el momento de la consulta, el modelo no tenía descargas ni "likes", y no se ha publicado información técnica sobre su entrenamiento o capacidades.
+El repositorio `HusseinHamouda/LatentSR-checkpoints` es un espacio en Hugging Face creado por HusseinHamouda que contiene checkpoints de un modelo. La model card apenas incluye información: solo se declara la licencia MIT y la región de publicación (Estados Unidos). El tamaño del repositorio es de 24.8 GB, lo que sugiere que contiene pesos de modelo, pero no se especifica la arquitectura, el tipo de pesos ni su propósito. El nombre "LatentSR" podría insinuar una aplicación de superresolución en el espacio latente, pero no existe documentación pública que lo confirme. En el momento de la consulta, el modelo no tenía descargas ni "likes", y no se ha publicado información técnica sobre su entrenamiento o capacidades.
 
 ## Especificaciones tecnicas
 
@@ -41,4 +41,4 @@ No disponible. No se dispone de información sobre el rendimiento ni las caracte
 - La licencia MIT permite el uso comercial, pero sin documentación no se puede garantizar su idoneidad para ningún caso de uso.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/HusseinHamouda/LatentSR-checkpoints
+- Modelo en Hugging Face: https://huggingface.co/HusseinHamouda/LatentSR-checkpoints

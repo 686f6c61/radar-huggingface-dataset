@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Coffmeteor/MOSS-Character-Studio | LoRA image-to-image para cartas de personaje | MOSS-Image-SFT + armV5 | no disponible | Apache-2.0 | HuggingFace + ComfyUI |
-| akhaliq/MOSS-Image-Edit-HQ (armV5) | Checkpoint de edición de imagen | MOSS-Image | no disponible | no disponible en la informacion | HuggingFace |
-| OpenMOSS-Team/MOSS-Image-SFT | Modelo base de difusión image-to-image | — | no disponible | no disponible en la informacion | HuggingFace |
+| Coffmeteor/MOSS-Character-Studio | LoRA image-to-image para cartas de personaje | MOSS-Image-SFT + armV5 | no disponible | Apache-2.0 | Hugging Face + ComfyUI |
+| akhaliq/MOSS-Image-Edit-HQ (armV5) | Checkpoint de edición de imagen | MOSS-Image | no disponible | no disponible en la informacion | Hugging Face |
+| OpenMOSS-Team/MOSS-Image-SFT | Modelo base de difusión image-to-image | — | no disponible | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Coffmeteor/MOSS-Character-Studio
+- Modelo en Hugging Face: https://huggingface.co/Coffmeteor/MOSS-Character-Studio
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Checkpoint de partida armV5: https://huggingface.co/akhaliq/MOSS-Image-Edit-HQ/tree/ee1493ba577437e70b88bc4499b85cc7aa4594ca/weights/armV5
 - Paquete de nodos ComfyUI: https://github.com/Coffmeteor/ComfyUI-MOSS-Card-Layout

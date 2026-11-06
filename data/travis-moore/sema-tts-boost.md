@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sema TTS Boost v1 es un modelo de síntesis de voz (text-to-speech) con clonación de voz zero-shot, desarrollado por Angelo Asante bajo el paraguas de Sema y publicado en HuggingFace bajo el identificador `travis-moore/sema-tts-boost`. Se trata de un ajuste fino del modelo base `sema-tts-afro`, orientado a mejorar el rendimiento en las lenguas que peor se comportaban en la versión original: hausa, yoruba, amhárico, twi, pidgin de África Occidental e inglés con acentos africanos. Cubre 24 variedades lingüísticas africanas más inglés, lo que lo convierte en una propuesta poco habitual dentro del ecosistema TTS.
+Sema TTS Boost v1 es un modelo de síntesis de voz (text-to-speech) con clonación de voz zero-shot, desarrollado por Angelo Asante bajo el paraguas de Sema y publicado en Hugging Face bajo el identificador `travis-moore/sema-tts-boost`. Se trata de un ajuste fino del modelo base `sema-tts-afro`, orientado a mejorar el rendimiento en las lenguas que peor se comportaban en la versión original: hausa, yoruba, amhárico, twi, pidgin de África Occidental e inglés con acentos africanos. Cubre 24 variedades lingüísticas africanas más inglés, lo que lo convierte en una propuesta poco habitual dentro del ecosistema TTS.
 
 El modelo mantiene la arquitectura F5-TTS (un transformer de difusión para síntesis de voz) y es compatible a nivel de vocabulario y checkpoint con su predecesor, lo que permite sustituirlo directamente en pipelines existentes. La innovación principal no reside en la arquitectura, sino en la estrategia de entrenamiento: un booster dirigido con aproximadamente 313 horas adicionales de audio (213 horas nuevas centradas en las seis lenguas objetivo y 100 horas de replay para mitigar el olvido catastrófico).
 
@@ -89,10 +89,10 @@ Media sobre las 21 lenguas puntuables: base +6.1, boost +7.1. Twi, pidgin, ingl�
 
 | Modelo | Tipo | Idiomas | Clonación zero-shot | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sema TTS Boost v1 | F5-TTS (difusión) | 24 lenguas africanas + inglés | Sí, referencia 5-10 s | Apache 2.0 | HuggingFace |
-| sema-tts-afro (base) | F5-TTS (difusión) | 24 lenguas africanas + inglés | Sí | Apache 2.0 | HuggingFace |
-| F5-TTS original | F5-TTS (difusión) | Principalmente inglés y chino | Sí | no disponible en la información | HuggingFace |
-| MMS-TTS (Meta) | VITS | ~1.100 lenguas | No (un modelo por lengua) | no disponible en la información | HuggingFace |
+| Sema TTS Boost v1 | F5-TTS (difusión) | 24 lenguas africanas + inglés | Sí, referencia 5-10 s | Apache 2.0 | Hugging Face |
+| sema-tts-afro (base) | F5-TTS (difusión) | 24 lenguas africanas + inglés | Sí | Apache 2.0 | Hugging Face |
+| F5-TTS original | F5-TTS (difusión) | Principalmente inglés y chino | Sí | no disponible en la información | Hugging Face |
+| MMS-TTS (Meta) | VITS | ~1.100 lenguas | No (un modelo por lengua) | no disponible en la información | Hugging Face |
 
 La comparación con F5-TTS original y MMS-TTS se ofrece como referencia de categoría; no se dispone de datos de benchmarks cruzados en la información proporcionada. Frente al modelo base, la elección depende del idioma: el boost es preferible para hausa, pidgin, twi, inglés con acento, northern sotho y fula, mientras que el base es mejor para shona, somalí y wolof; el yoruba es equivalente en ambos.
 
@@ -110,7 +110,7 @@ La comparación con F5-TTS original y MMS-TTS se ofrece como referencia de categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/travis-moore/sema-tts-boost
+- Modelo en Hugging Face: https://huggingface.co/travis-moore/sema-tts-boost
 - Modelo base: https://huggingface.co/travis-moore/sema-tts-afro
 - Sema (organización): https://semaink.com
 - Autor, Angelo Asante: https://angeloasante.com

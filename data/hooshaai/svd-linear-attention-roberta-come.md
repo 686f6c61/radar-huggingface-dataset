@@ -29,7 +29,7 @@ Además, el código incluido describe una variante de CoMe basada en **layer she
 
 - Clasificación de texto en inglés, con fine-tuning específico en la tarea SST-2 (análisis de sentimiento binario).
 - Reducción del consumo de memoria en inferencia: el pico de VRAM medido es de 276.45 MB, con un ratio de compresión de 1.2676.
-- Soporte de pipeline de HuggingFace para `text-classification` (clasificador de texto).
+- Soporte de pipeline de Hugging Face para `text-classification` (clasificador de texto).
 - No se han documentado capacidades de tool calling, generación de código, razonamiento multi-step, visión o audio.
 - Al ser un modelo de clasificación, no genera texto libre ni soporta modos de pensamiento (thinking mode) documentados.
 
@@ -61,7 +61,7 @@ No se han publicado comparativas con otros modelos en la información disponible
 - VRAM estimada para inferencia: 276.45 MB (pico medido según la model card).
 - GPU recomendadas: no se especifican en la información disponible. Dado el bajo consumo de VRAM, cualquier GPU moderna con al menos 1 GB de VRAM sería suficiente.
 - Cabe en GPU de consumo: sí, el pico de VRAM es inferior a 1 GB, por lo que es compatible con GPUs de gama baja.
-- Opciones de despliegue: no se especifican herramientas concretas (vLLM, llama.cpp, Ollama, TGI). Al ser un modelo de HuggingFace con PyTorch, puede cargarse mediante la librería `transformers` con `pipeline("text-classification")`.
+- Opciones de despliegue: no se especifican herramientas concretas (vLLM, llama.cpp, Ollama, TGI). Al ser un modelo de Hugging Face con PyTorch, puede cargarse mediante la librería `transformers` con `pipeline("text-classification")`.
 - Latencia y throughput: el tiempo de evaluación puro reportado es de 16.73 s, pero no se indica el tamaño del lote ni el hardware utilizado, por lo que no es posible estimar throughput.
 
 ## Comparativa con modelos similares
@@ -78,6 +78,6 @@ No se dispone de datos comparativos con modelos similares en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hooshaai/svd-linear-attention-roberta-come
+- Hugging Face: https://huggingface.co/Hooshaai/svd-linear-attention-roberta-come
 - Blog del autor sobre atención lineal: https://hooshaai.substack.com/p/scaling-transformers-how-linear-attention
 - Blog del autor sobre atención lineal en modelado bidireccional: https://hooshaai.substack.com/p/the-rise-of-linear-attention-in-bidirectional

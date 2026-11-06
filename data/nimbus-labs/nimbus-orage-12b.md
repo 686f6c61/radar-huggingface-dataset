@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nimbus-Labs/Nimbus-Orage-12B
+- Modelo en Hugging Face: https://huggingface.co/Nimbus-Labs/Nimbus-Orage-12B
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized/tree/a89c069a80c767b0d378c4806b2953ae9d2c711d
 - Verificacion de integridad (SHA256SUMS): https://huggingface.co/Nimbus-Labs/Nimbus-Orage-12B/blob/main/SHA256SUMS
 - Licencia: https://huggingface.co/Nimbus-Labs/Nimbus-Orage-12B/blob/main/LICENSE

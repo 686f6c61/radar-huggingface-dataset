@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio HugoStiglitz210/Real_ESRGAN_Video_4x es una publicación en HuggingFace cuyo identificador sugiere un modelo de superresolución de vídeo con factor de escalado 4x basado en la familia Real-ESRGAN. El autor es HugoStiglitz210 y el repositorio ocupa 0.0 GB, es decir, no contiene pesos publicados. La model card está prácticamente vacía: únicamente incluye metadatos de licencia (`license: other`, `license_name: real-esrgan-license.txt`, `license_link: LICENSE`), sin descripción, instrucciones de uso ni detalles técnicos.
+El repositorio HugoStiglitz210/Real_ESRGAN_Video_4x es una publicación en Hugging Face cuyo identificador sugiere un modelo de superresolución de vídeo con factor de escalado 4x basado en la familia Real-ESRGAN. El autor es HugoStiglitz210 y el repositorio ocupa 0.0 GB, es decir, no contiene pesos publicados. La model card está prácticamente vacía: únicamente incluye metadatos de licencia (`license: other`, `license_name: real-esrgan-license.txt`, `license_link: LICENSE`), sin descripción, instrucciones de uso ni detalles técnicos.
 
-No se dispone de información sobre arquitectura concreta, número de parámetros, datos de entrenamiento ni resultados de evaluación. Todo lo que puede afirmarse con certeza procede del nombre del repositorio y de los metadatos de HuggingFace. Cualquier referencia a la arquitectura Real-ESRGAN que aparece en esta ficha es contexto de la familia pública original y no información publicada por el autor de este repositorio.
+No se dispone de información sobre arquitectura concreta, número de parámetros, datos de entrenamiento ni resultados de evaluación. Todo lo que puede afirmarse con certeza procede del nombre del repositorio y de los metadatos de Hugging Face. Cualquier referencia a la arquitectura Real-ESRGAN que aparece en esta ficha es contexto de la familia pública original y no información publicada por el autor de este repositorio.
 
 El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el 15 de octubre de 2026. No hay pipeline declarado, no hay idiomas declarados y no hay ningún archivo de pesos indexado, por lo que en su estado actual no es desplegable.
 
@@ -21,7 +21,7 @@ El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el 15 
 | Licencia | other; `license_name: real-esrgan-license.txt`; enlace a `LICENSE` no incluido en el repositorio |
 | Formato de pesos | no disponible (el repositorio ocupa 0.0 GB y no contiene archivos de pesos) |
 | Tarea declarada | no disponible en la model card; el identificador indica superresolución de vídeo 4x |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Fecha de creacion | 2026-10-15 |
 | Fecha de actualizacion | 2026-10-15 |
 | Descargas / likes | 0 / 0 |
@@ -77,7 +77,7 @@ La comparativa se establece a nivel de familia, ya que este repositorio no publi
 | Modelo | Parametros | Entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | HugoStiglitz210/Real_ESRGAN_Video_4x | no disponible | vídeo 4x (inferido del nombre) | no disponible | other (`real-esrgan-license.txt`, texto no incluido) | 0.0 GB, sin pesos, 0 descargas |
-| Real-ESRGAN x4plus (xinntao) | no disponible en esta ficha | imagen 4x | no disponible en esta ficha | BSD-3-Clause según el proyecto original | pesos publicados en GitHub y HuggingFace |
+| Real-ESRGAN x4plus (xinntao) | no disponible en esta ficha | imagen 4x | no disponible en esta ficha | BSD-3-Clause según el proyecto original | pesos publicados en GitHub y Hugging Face |
 | SwinIR (Jingyun Liang et al.) | no disponible en esta ficha | imagen 4x | no disponible en esta ficha | Apache-2.0 según el proyecto original | pesos publicados |
 | Real-CUGAN (bilibili) | no disponible en esta ficha | imagen y vídeo 2x/3x/4x | no disponible en esta ficha | no verificada | pesos publicados |
 
@@ -98,7 +98,7 @@ No se dispone de datos comparativos de rendimiento para el modelo de este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HugoStiglitz210/Real_ESRGAN_Video_4x
+- Repositorio en Hugging Face: https://huggingface.co/HugoStiglitz210/Real_ESRGAN_Video_4x
 - Licencia referenciada (ruta relativa, contenido no disponible): https://huggingface.co/HugoStiglitz210/Real_ESRGAN_Video_4x/blob/main/LICENSE
 - Paper de Real-ESRGAN (contexto de la familia): https://arxiv.org/abs/2107.10833
 - Repositorio oficial de Real-ESRGAN: https://github.com/xinntao/Real-ESRGAN

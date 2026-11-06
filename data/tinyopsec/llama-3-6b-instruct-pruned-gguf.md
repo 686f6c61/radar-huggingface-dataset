@@ -27,7 +27,7 @@ No se dispone de información sobre un proceso de entrenamiento o fine-tuning po
 
 ## Capacidades
 
-- Generación de texto conversacional en formato instruct, heredada de Meta-Llama-3-8B-Instruct (etiquetado como "conversational" en HuggingFace).
+- Generación de texto conversacional en formato instruct, heredada de Meta-Llama-3-8B-Instruct (etiquetado como "conversational" en Hugging Face).
 - Razonamiento general y seguimiento de instrucciones, potencialmente degradado por la poda de capas y la ausencia de healing.
 - Compatibilidad con el stack de herramientas del ecosistema GGUF: llama.cpp, Ollama, LM Studio, koboldcpp y runtimes equivalentes.
 - No hay información sobre soporte de tool calling / function calling, capacidades de visión o audio, ni modo de razonamiento extendido (thinking mode).
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tinyopsec/Llama-3-6B-Instruct-pruned-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/Llama-3-6B-Instruct-pruned-GGUF
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Checkpoint original podado: https://huggingface.co/kuotient/Llama-3-6B-Instruct-pruned
 - mergekit (herramienta de poda/merge): https://github.com/arcee-ai/mergekit

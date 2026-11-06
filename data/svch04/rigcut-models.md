@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svch04/rigcut-models es un repositorio publicado en HuggingFace por el usuario svch04 bajo licencia Apache 2.0. La unica informacion verificable que acompana al repositorio es la etiqueta de formato `onnx` y el identificador de region `us`; la model card esta practicamente vacia y solo repite la linea de licencia. El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y un unico "like", y fue creado y actualizado el 18 de septiembre de 2026 con apenas 17 minutos de diferencia entre ambos eventos.
+svch04/rigcut-models es un repositorio publicado en Hugging Face por el usuario svch04 bajo licencia Apache 2.0. La unica informacion verificable que acompana al repositorio es la etiqueta de formato `onnx` y el identificador de region `us`; la model card esta practicamente vacia y solo repite la linea de licencia. El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y un unico "like", y fue creado y actualizado el 18 de septiembre de 2026 con apenas 17 minutos de diferencia entre ambos eventos.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados, el pipeline declarado ni los datos de entrenamiento. Tampoco hay documentacion tecnica asociada, paper, repositorio de codigo ni entrada en un leaderboard que permita situar el modelo. La busqueda web realizada no ha devuelto ningun resultado relacionado con este repositorio: los enlaces obtenidos tratan sobre retransmision en directo en YouTube y no guardan relacion con el modelo.
 
@@ -93,7 +93,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/svch04/rigcut-models
+- Hugging Face: https://huggingface.co/svch04/rigcut-models
 - Model card del autor: sin contenido tecnico (unicamente la declaracion de licencia Apache 2.0)
 - Paper: no disponible
 - Repositorio de codigo: no disponible

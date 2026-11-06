@@ -30,7 +30,7 @@ El repositorio tiene un tamaño total de 110,2 GB (suma de todos los ficheros), 
 
 La model card de este repositorio no describe la arquitectura del modelo subyacente: únicamente indica que se trata de cuantizaciones ponderadas con imatrix del modelo axiomofmind/Hornybot-RP-Mara y lo etiqueta como qwen3.5. Por tanto, no hay información publicada en los datos disponibles sobre el número de capas, tipo de atención, composición del dataset de entrenamiento, número de tokens vistos ni sobre si se aplicaron técnicas de alineación como RLHF, DPO o similares. Tampoco se documenta el proceso de ajuste fino que dio lugar al modelo base.
 
-Lo que sí está documentado es el proceso de cuantización: mradermacher ha generado los ficheros con el pipeline de llama.cpp en su modalidad i1, que emplea un fichero de matriz de importancia (Hornybot-RP-Mara.imatrix.gguf, 0,1 GB, incluido en el repositorio para quien quiera crear sus propias cuantizaciones). Los metadatos internos del README indican quantize_version: 2, output_tensor_quantised: 1 y convert_type: hf, lo que confirma una conversión desde pesos de HuggingFace a GGUF con cuantización por tensor. El propio autor advierte que este repositorio contiene únicamente cuantizaciones i1 y que las estáticas están en un repositorio separado.
+Lo que sí está documentado es el proceso de cuantización: mradermacher ha generado los ficheros con el pipeline de llama.cpp en su modalidad i1, que emplea un fichero de matriz de importancia (Hornybot-RP-Mara.imatrix.gguf, 0,1 GB, incluido en el repositorio para quien quiera crear sus propias cuantizaciones). Los metadatos internos del README indican quantize_version: 2, output_tensor_quantised: 1 y convert_type: hf, lo que confirma una conversión desde pesos de Hugging Face a GGUF con cuantización por tensor. El propio autor advierte que este repositorio contiene únicamente cuantizaciones i1 y que las estáticas están en un repositorio separado.
 
 ## Capacidades
 
@@ -85,9 +85,9 @@ No hay datos de benchmarks que permitan comparar el rendimiento con otros modelo
 
 | Version | Formato | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Hornybot-RP-Mara-i1-GGUF (esta ficha) | GGUF imatrix (i1), 24 variantes de 2,8 a 7,5 GB | 8,95B | no disponible | no disponible | publico en HuggingFace |
-| mradermacher/Hornybot-RP-Mara-GGUF | GGUF estatico | 8,95B | no disponible | no disponible | publico en HuggingFace |
-| axiomofmind/Hornybot-RP-Mara | safetensors (modelo base sin cuantizar), ~17,9 GB estimado a 2 bytes por parametro | 8,95B | no disponible | no disponible | publico en HuggingFace |
+| mradermacher/Hornybot-RP-Mara-i1-GGUF (esta ficha) | GGUF imatrix (i1), 24 variantes de 2,8 a 7,5 GB | 8,95B | no disponible | no disponible | publico en Hugging Face |
+| mradermacher/Hornybot-RP-Mara-GGUF | GGUF estatico | 8,95B | no disponible | no disponible | publico en Hugging Face |
+| axiomofmind/Hornybot-RP-Mara | safetensors (modelo base sin cuantizar), ~17,9 GB estimado a 2 bytes por parametro | 8,95B | no disponible | no disponible | publico en Hugging Face |
 
 Frente a otros modelos de rol de ~8-9B publicados por la comunidad, no es posible establecer una comparativa cuantitativa porque no existen resultados de evaluacion publicados para este modelo. Cualquier afirmacion de superioridad frente a alternativas seria especulativa.
 
@@ -106,7 +106,7 @@ Frente a otros modelos de rol de ~8-9B publicados por la comunidad, no es posibl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mradermacher/Hornybot-RP-Mara-i1-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/mradermacher/Hornybot-RP-Mara-i1-GGUF
 - Modelo base: https://huggingface.co/axiomofmind/Hornybot-RP-Mara
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Hornybot-RP-Mara-GGUF
 - Pagina de resumen y descargas del autor para este modelo: https://hf.tst.eu/model#Hornybot-RP-Mara-i1-GGUF

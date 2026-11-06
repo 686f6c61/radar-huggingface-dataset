@@ -13,7 +13,7 @@ La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicio
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Híbrida: GatedDeltaNet (atención lineal) + atención clásica, con head MTP (multi-token prediction) |
-| Parametros totales | 27B (modelo base Qwen3.8-27B); el repo safetensors reporta 3 544 073 216, probablemente un error de metadatos de HuggingFace |
+| Parametros totales | 27B (modelo base Qwen3.8-27B); el repo safetensors reporta 3 544 073 216, probablemente un error de metadatos de Hugging Face |
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 128 000 tokens (soporte completo, según pruebas del autor) |
 | Tipos de cuantizacion | iQ-MLX de ancho mixto: 2-bit, 3-bit y 4-bit con group sizes de 64 y 128; promedio 3,78 bits por peso cuantizado |
@@ -90,11 +90,11 @@ Frente a otras alternativas de 27B en MLX (por ejemplo, Llama 3.3 70B cuantizado
 - Es un modelo solo de texto; no incluye capacidades de visión del modelo base.
 - La información sobre idiomas soportados no está disponible en el repositorio; se asume multilingüe por el modelo base, pero no se ha verificado.
 - Riesgo de alucinación y sesgos inherentes al modelo base Qwen3.8-27B, no documentados en este repositorio.
-- El dato de parámetros totales en los metadatos de HuggingFace (3 544 073 216) es inconsistente con el tamaño real del modelo (27B); probablemente se trata de un error de la plataforma y no debe usarse para decisiones técnicas.
+- El dato de parámetros totales en los metadatos de Hugging Face (3 544 073 216) es inconsistente con el tamaño real del modelo (27B); probablemente se trata de un error de la plataforma y no debe usarse para decisiones técnicas.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ddalcu/Qwen3.8-27B-MLX-Serve-iQ-MLX-3.8bpw
+- Repositorio Hugging Face: https://huggingface.co/ddalcu/Qwen3.8-27B-MLX-Serve-iQ-MLX-3.8bpw
 - Versión 4-bit: https://huggingface.co/ddalcu/Qwen3.8-27B-MLX-Serve-4bit
 - Versión 6-bit: https://huggingface.co/ddalcu/Qwen3.8-27B-MLX-Serve-6bit
 - Versión 8-bit: https://huggingface.co/ddalcu/Qwen3.8-27B-MLX-Serve-8bit

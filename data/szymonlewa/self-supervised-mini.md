@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`szymonlewa/self-supervised-mini` es un repositorio alojado en HuggingFace por el usuario `szymonlewa`, etiquetado como `research-notes`, `self-supervised` y `transformer`, con licencia CC-BY-4.0. Segun la propia model card, no se trata de un modelo entrenado ni de un checkpoint funcional, sino de un conjunto de notas de lectura y un esbozo de experimento sobre aprendizaje autosupervisado (Self-Supervised Learning, SSL). El repositorio se presenta explicitamente como exploratorio y declara que no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni un checkpoint entrenado.
+`szymonlewa/self-supervised-mini` es un repositorio alojado en Hugging Face por el usuario `szymonlewa`, etiquetado como `research-notes`, `self-supervised` y `transformer`, con licencia CC-BY-4.0. Segun la propia model card, no se trata de un modelo entrenado ni de un checkpoint funcional, sino de un conjunto de notas de lectura y un esbozo de experimento sobre aprendizaje autosupervisado (Self-Supervised Learning, SSL). El repositorio se presenta explicitamente como exploratorio y declara que no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni un checkpoint entrenado.
 
 El dato de parametros totales registrado en safetensors asciende a 33.088, una cifra extremadamente baja que resulta incompatible con un modelo de lenguaje funcional y que es mas consistente con un artefacto de prueba, un fichero de pesos minimo o un remanente de un experimento de juguete. El tamano del repositorio es de 0,0 GB y no registra descargas ni interacciones, lo que refuerza la idea de que se trata de un contenedor de notas mas que de un modelo desplegable.
 
@@ -78,7 +78,7 @@ No disponible. El repositorio no es un modelo entrenado, por lo que no existe un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/szymonlewa/self-supervised-mini
+- Repositorio en Hugging Face: https://huggingface.co/szymonlewa/self-supervised-mini
 - Self-Supervised Learning (SSL) - GeeksforGeeks: https://www.geeksforgeeks.org/machine-learning/self-supervised-learning-ssl/
 - Self-supervised learning - Wikipedia: https://en.wikipedia.org/wiki/Self-supervised_learning
 - What Is Self-Supervised Learning? Examples & Applications - Snowflake: https://www.snowflake.com/en/fundamentals/self-supervised-learning/

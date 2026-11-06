@@ -76,9 +76,9 @@ La comparativa se limita a la misma serie SFM, ya que no se dispone de datos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-7k_8k_9k_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-7k_8k_9k_merge
 - Variante 4k-5k-6k en FriendliAI: https://friendli.ai/models/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg
-- Variante unfiltered en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg
+- Variante unfiltered en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg
 - Modelo relacionado de geodesic-research: https://huggingface.co/geodesic-research/sfm_filtered_midtrain_alignment_upsampled_instruct
 - Paper de referencia (Alignment Pretraining): mencionado en la model card de geodesic-research, titulado "Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment"
 - Paper sobre método Linear de merging: https://arxiv.org/abs/2203.05482

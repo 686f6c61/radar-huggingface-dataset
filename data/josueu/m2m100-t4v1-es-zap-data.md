@@ -2,7 +2,7 @@
 
 ## Resumen
 
-m2m100-T4v1-es-zap-data es un ajuste fino de facebook/m2m100_418M, el modelo de traduccion automatica multilingue encoder-decoder publicado por Meta AI. Lo desarrolla el usuario de HuggingFace josueu y esta orientado, segun el identificador del repositorio, a la traduccion entre espanol y zapoteco (codigo de idioma "zap"), una lengua indigena de Mexico. El problema que aborda es la ausencia de sistemas de traduccion de calidad para lenguas de bajos recursos, un ambito donde los modelos multilingues genericos suelen rendir de forma muy pobre sin un ajuste especifico.
+m2m100-T4v1-es-zap-data es un ajuste fino de facebook/m2m100_418M, el modelo de traduccion automatica multilingue encoder-decoder publicado por Meta AI. Lo desarrolla el usuario de Hugging Face josueu y esta orientado, segun el identificador del repositorio, a la traduccion entre espanol y zapoteco (codigo de idioma "zap"), una lengua indigena de Mexico. El problema que aborda es la ausencia de sistemas de traduccion de calidad para lenguas de bajos recursos, un ambito donde los modelos multilingues genericos suelen rendir de forma muy pobre sin un ajuste especifico.
 
 El modelo conserva la arquitectura del base: transformer encoder-decoder con atencion completa, 483.905.536 parametros reales (segun los pesos en safetensors) y decodificacion autoregresiva. El entrenamiento se realizo con el Trainer de Transformers durante 30 epocas, con tasa de aprendizaje 5e-5, batch total de 8 y precision mixta nativa (AMP). El autor reporta en la model card un BLEU de 18,8643, un TER de 76,5337 y un chrF de 42,2704 sobre el conjunto de evaluacion, pero no documenta la composicion del dataset ni las lenguas cubiertas.
 
@@ -89,9 +89,9 @@ No hay comparacion con otros modelos publicada por el autor, ni resultados en co
 
 | Modelo | Parametros | Contexto | Idiomas | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| m2m100-T4v1-es-zap-data | 483,9 M | no disponible (base: 1024 tokens) | no documentados (es-zap) | BLEU 18,86 / chrF 42,27 / TER 76,53 (conjunto propio) | MIT | HuggingFace, 9 descargas |
-| facebook/m2m100_418M (base) | 483,9 M | 1024 tokens (modelo base) | 100 idiomas | metricas publicadas en FLORES-200, no comparables directamente con el conjunto de evaluacion de este ajuste | MIT | HuggingFace, ampliamente usado |
-| facebook/nllb-200-distilled-600M | 600 M | 1024 tokens (modelo base) | 200 idiomas, con cobertura parcial de lenguas indigenas de America; verificar si el zapoteco figura en la lista oficial de lenguas | metricas publicadas por Meta en FLORES-200, no comparables directamente | CC-BY-NC-4.0 (uso comercial restringido) | HuggingFace |
+| m2m100-T4v1-es-zap-data | 483,9 M | no disponible (base: 1024 tokens) | no documentados (es-zap) | BLEU 18,86 / chrF 42,27 / TER 76,53 (conjunto propio) | MIT | Hugging Face, 9 descargas |
+| facebook/m2m100_418M (base) | 483,9 M | 1024 tokens (modelo base) | 100 idiomas | metricas publicadas en FLORES-200, no comparables directamente con el conjunto de evaluacion de este ajuste | MIT | Hugging Face, ampliamente usado |
+| facebook/nllb-200-distilled-600M | 600 M | 1024 tokens (modelo base) | 200 idiomas, con cobertura parcial de lenguas indigenas de America; verificar si el zapoteco figura en la lista oficial de lenguas | metricas publicadas por Meta en FLORES-200, no comparables directamente | CC-BY-NC-4.0 (uso comercial restringido) | Hugging Face |
 
 La comparacion cuantitativa directa no es posible porque las metricas del modelo ajustado se calcularon sobre un conjunto de evaluacion propio no descrito (idioma, dominio y tamano desconocidos), mientras que los modelos base publican resultados sobre FLORES-200. Cualquier comparacion entre ambos seria metodologicamente invalida. No se han identificado en la informacion disponible otros modelos publicos especificos de traduccion espanol-zapoteco para establecer una referencia.
 
@@ -109,7 +109,7 @@ La comparacion cuantitativa directa no es posible porque las metricas del modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/josueu/m2m100-T4v1-es-zap-data
+- Modelo en Hugging Face: https://huggingface.co/josueu/m2m100-T4v1-es-zap-data
 - Modelo base: https://huggingface.co/facebook/m2m100_418M
 - Paper del modelo base M2M-100 (Fan et al., "Beyond English-Centric Multilingual Machine Translation"): https://arxiv.org/abs/2010.11125
 - Paper de NLLB-200, comparativa de referencia en traduccion multilingue de bajos recursos: https://arxiv.org/abs/2207.04672

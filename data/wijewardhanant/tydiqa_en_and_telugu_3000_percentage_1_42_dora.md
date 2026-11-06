@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WijewardhanaNT/tydiqa_en_and_telugu_3000_percentage_1_42_DoRA es un adaptador de ajuste fino del tipo DoRA (Weight-Decomposed Low-Rank Adaptation) publicado en HuggingFace sobre el modelo base meta-llama/Llama-3.1-8B. El repositorio contiene exclusivamente los pesos del adaptador en formato safetensors y se carga mediante la libreria PEFT (version declarada 0.17.1), por lo que no es un modelo autonomo: para usarlo hay que descargar aparte los pesos de Llama 3.1 8B. El nombre del repositorio indica que el entrenamiento se hizo sobre el dataset tydiqa, con ejemplos en ingles y telugu, un volumen de 3000 muestras y algun tipo de submuestreo o particion al 1,42 por ciento.
+WijewardhanaNT/tydiqa_en_and_telugu_3000_percentage_1_42_DoRA es un adaptador de ajuste fino del tipo DoRA (Weight-Decomposed Low-Rank Adaptation) publicado en Hugging Face sobre el modelo base meta-llama/Llama-3.1-8B. El repositorio contiene exclusivamente los pesos del adaptador en formato safetensors y se carga mediante la libreria PEFT (version declarada 0.17.1), por lo que no es un modelo autonomo: para usarlo hay que descargar aparte los pesos de Llama 3.1 8B. El nombre del repositorio indica que el entrenamiento se hizo sobre el dataset tydiqa, con ejemplos en ingles y telugu, un volumen de 3000 muestras y algun tipo de submuestreo o particion al 1,42 por ciento.
 
 El modelo resuelve, en principio, la tarea de question answering sobre contexto (extractive QA) en dos idiomas: ingles y telugu. El interes practico esta en explorar tecnicas de ajuste eficiente en parametros (PEFT) aplicadas a un modelo de 8 000 millones de parametros para una tarea de comprension lectora multilingue, incluyendo una lengua de bajos recursos como el telugu. El adaptador ocupa unicamente 0,1 GB, lo que permite reproducir el ajuste y combinarlo con el modelo base sin necesidad de almacenar una copia completa de los pesos.
 
@@ -50,7 +50,7 @@ En cuanto a los datos y el procedimiento, la informacion disponible se limita al
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla vacia de HuggingFace, sin seccion de evaluacion cumplimentada, y la busqueda web no ha devuelto ningun resultado relacionado con el modelo. No se dispone de valores de MMLU, HumanEval, GSM8K, SQuAD, tydiqa (F1 o exact match) ni de ninguna otra metrica para este adaptador.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla vacia de Hugging Face, sin seccion de evaluacion cumplimentada, y la busqueda web no ha devuelto ningun resultado relacionado con el modelo. No se dispone de valores de MMLU, HumanEval, GSM8K, SQuAD, tydiqa (F1 o exact match) ni de ninguna otra metrica para este adaptador.
 
 ## Requisitos de hardware
 
@@ -76,7 +76,7 @@ No se dispone de modelos comparables con datos verificables de rendimiento en ty
 
 - La model card es la plantilla por defecto sin rellenar: no hay informacion sobre datos, hiperparametros, evaluacion ni uso previsto.
 - Licencia no declarada en el repositorio. Cualquier uso comercial exige verificar la licencia del modelo base (Llama 3.1 Community License) y aclarar la del adaptador con el autor.
-- El repositorio solo contiene el adaptador: sin el modelo base no se puede ejecutar nada, y hay que aceptar previamente las condiciones de Meta en HuggingFace.
+- El repositorio solo contiene el adaptador: sin el modelo base no se puede ejecutar nada, y hay que aceptar previamente las condiciones de Meta en Hugging Face.
 - Riesgo de alucinacion y de respuestas no fundamentadas en el contexto, inherente al modelo base; no hay evaluacion especifica que lo cuantifique para este adaptador.
 - Sesgos no evaluados: al derivar de Llama 3.1 y de un subconjunto de tydiqa, hereda los sesgos del corpus original y los del modelo base, sin analisis publicado.
 - Cobertura idiomatica dudosa: solo hay indicios de ingles y telugu en el nombre del repositorio; no se declara el soporte real ni el rendimiento por idioma.

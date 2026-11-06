@@ -59,6 +59,6 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 - Baja adopción: con solo 9 descargas, no hay comunidad ni soporte.
 
 ## Enlaces
-- [HuggingFace: Stage-org/appworld-qwen35-9b-meta-type7-epoch2-iter1](https://huggingface.co/Stage-org/appworld-qwen35-9b-meta-type7-epoch2-iter1)
+- [Hugging Face: Stage-org/appworld-qwen35-9b-meta-type7-epoch2-iter1](https://huggingface.co/Stage-org/appworld-qwen35-9b-meta-type7-epoch2-iter1)
 
 No se han encontrado otros enlaces (papers, repositorios, demos) en la búsqueda web.

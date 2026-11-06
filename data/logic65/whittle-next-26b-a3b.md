@@ -87,7 +87,7 @@ La comparativa muestra que la poda y conversión reducen el rendimiento en GSM8K
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/logic65/Whittle-Next-26B-A3B
+- Modelo en Hugging Face: https://huggingface.co/logic65/Whittle-Next-26B-A3B
 - Modelo base (Qwen3.6-Whittle-25B-A3B): https://huggingface.co/logic65/Qwen3.6-Whittle-25B-A3B
 - Repositorio relacionado (whittle-next, base sin entrenar): https://huggingface.co/logic65/whittle-next
 - Repositorio de pruebas (whittle-next-moe-test): https://huggingface.co/logic65/whittle-next-moe-test

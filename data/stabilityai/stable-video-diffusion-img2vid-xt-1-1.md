@@ -4,7 +4,7 @@
 
 Stable Video Diffusion (SVD) img2vid-xt 1.1 es un modelo de difusión latente de generación de vídeo a partir de una única imagen (image-to-video), desarrollado por Stability AI y publicado el 2 de febrero de 2024 como una actualización afinada de la versión 1.0. Toma una fotografía como primer fotograma y genera un clip corto con movimiento coherente, utilizando un prior de movimiento aprendido de un gran conjunto de datos de vídeo. La arquitectura deriva del modelo de imagen Stable Diffusion, al que se le anaden capas temporales para modelar la dimension de tiempo.
 
-El repositorio pesa 18,3 GB y contiene 1.524.623.082 parámetros (aproximadamente 1,52 mil millones) en formato safetensors, con acceso restringido (gated): es necesario aceptar las condiciones de la licencia comunitaria en HuggingFace antes de poder descargarlo. Acumula 3206 descargas y 1147 likes en el momento de la consulta.
+El repositorio pesa 18,3 GB y contiene 1.524.623.082 parámetros (aproximadamente 1,52 mil millones) en formato safetensors, con acceso restringido (gated): es necesario aceptar las condiciones de la licencia comunitaria en Hugging Face antes de poder descargarlo. Acumula 3206 descargas y 1147 likes en el momento de la consulta.
 
 Su relevancia actual radica en que fue uno de los primeros modelos abiertos de generación de vídeo con calidad aprovechable para producción, y sigue siendo una referencia para pipelines de animación de imágenes fijas dentro del ecosistema `diffusers`. La version 1.1 incorpora mejoras de calidad y coherencia respecto a la 1.0 manteniendo la misma base arquitectonica.
 
@@ -21,13 +21,13 @@ Su relevancia actual radica en que fue uno de los primeros modelos abiertos de g
 | Licencia | stable-video-diffusion-1-1-community |
 | Formato de pesos | safetensors |
 
-Otros datos: pipeline `image-to-video`, libreria `diffusers` (`StableVideoDiffusionPipeline`), tamano del repositorio 18,3 GB, acceso restringido (gated) en HuggingFace.
+Otros datos: pipeline `image-to-video`, libreria `diffusers` (`StableVideoDiffusionPipeline`), tamano del repositorio 18,3 GB, acceso restringido (gated) en Hugging Face.
 
 ## Arquitectura y entrenamiento
 
 SVD img2vid-xt 1.1 es un modelo de difusión latente. Comprime las imagenes y los fotogramas de vídeo a un espacio latente mediante un VAE y realiza el proceso de eliminacion de ruido en ese espacio reducido, lo que abarata computacionalmente la generacion. Sobre la U-Net del modelo de imagen Stable Diffusion se incorporan capas de atencion temporal que permiten mantener la coherencia entre fotogramas a lo largo del tiempo. La imagen de entrada se codifica como condicionamiento (a traves de un codificador de imagen) y actua como primer fotograma del clip generado.
 
-El modelo se entrena sobre un gran conjunto de datos de vídeo para aprender un prior de movimiento, y la variante `xt` emplea una resolucion y una longitud de clip mayores que la version base. La version 1.1 es un ajuste fino de la 1.0 orientado a mejorar la calidad visual y la estabilidad del movimiento. La informacion disponible no detalla el numero exacto de tokens o fotogramas de entrenamiento, la composicion del dataset ni si se aplicaron etapas de RLHF o DPO. El repositorio de HuggingFace no incluye aqui datos de benchmark publicados.
+El modelo se entrena sobre un gran conjunto de datos de vídeo para aprender un prior de movimiento, y la variante `xt` emplea una resolucion y una longitud de clip mayores que la version base. La version 1.1 es un ajuste fino de la 1.0 orientado a mejorar la calidad visual y la estabilidad del movimiento. La informacion disponible no detalla el numero exacto de tokens o fotogramas de entrenamiento, la composicion del dataset ni si se aplicaron etapas de RLHF o DPO. El repositorio de Hugging Face no incluye aqui datos de benchmark publicados.
 
 ## Capacidades
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / clip | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| stable-video-diffusion-img2vid-xt-1-1 | Aprox. 1,52 mil millones | No disponible | stable-video-diffusion-1-1-community | Gated en HuggingFace |
-| stable-video-diffusion-img2vid-xt | No disponible | No disponible | stable-video-diffusion-community | En HuggingFace |
-| stable-video-diffusion-img2vid | No disponible | No disponible | stable-video-diffusion-community | En HuggingFace |
+| stable-video-diffusion-img2vid-xt-1-1 | Aprox. 1,52 mil millones | No disponible | stable-video-diffusion-1-1-community | Gated en Hugging Face |
+| stable-video-diffusion-img2vid-xt | No disponible | No disponible | stable-video-diffusion-community | En Hugging Face |
+| stable-video-diffusion-img2vid | No disponible | No disponible | stable-video-diffusion-community | En Hugging Face |
 
 Los datos de rendimiento comparado no estan disponibles en la informacion proporcionada. El modelo 1-1 es un ajuste fino de la version `xt` anterior, por lo que comparten arquitectura y tamano aproximado; otras alternativas abiertas de la misma categoria (image-to-video) no se detallan en la informacion disponible.
 
@@ -79,14 +79,14 @@ Los datos de rendimiento comparado no estan disponibles en la informacion propor
 - Limitacion de longitud: genera clips cortos, no secuencias largas; no esta pensado para vídeo de larga duracion ni para coherencia narrativa extendida.
 - Sin entrada de texto: no acepta prompts de texto, por lo que el control del resultado se limita a la imagen de entrada y a parametros de generacion (movimiento, fps, ruido).
 - Alucinacion visual: puede inventar contenido o mover elementos de forma incoherente con la escena real.
-- Restricciones de licencia: usa la licencia comunitaria `stable-video-diffusion-1-1-community`, con condiciones de uso especificas. Es imprescindible revisarla antes de cualquier uso comercial; el acceso esta restringido y requiere aceptar los terminos en HuggingFace.
+- Restricciones de licencia: usa la licencia comunitaria `stable-video-diffusion-1-1-community`, con condiciones de uso especificas. Es imprescindible revisarla antes de cualquier uso comercial; el acceso esta restringido y requiere aceptar los terminos en Hugging Face.
 - Caveat de produccion: el acceso gated complica la automatizacion de descargas en CI/CD si no se gestiona la autenticacion con token.
 - No se documentan en la informacion disponible los idiomas, la resolucion exacta ni el numero de fotogramas por defecto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt-1-1
-- Version anterior xt en HuggingFace: https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt
+- Modelo en Hugging Face: https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt-1-1
+- Version anterior xt en Hugging Face: https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt
 - Pagina de producto Stable Video de Stability AI: https://stability.ai/stable-video
 - Repositorio de ejemplo con interfaz grafica (Colab): https://github.com/sagiodev/stable-video-diffusion-img2vid
 - Cuaderno de demostracion en Colab (mkshing/notebooks): https://colab.research.google.com/github/mkshing/notebooks/blob/main/stable_video_diffusion_img2vid.ipynb

@@ -82,10 +82,10 @@ La disertación comparó tres encoders y tres regímenes de ajuste, seleccionand
 
 | Modelo | Parametros | Contexto | Rendimiento (macro-F1 binario) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| genlocalnews-newsworthiness-xlmr (este modelo) | 277.459.991 | 512 tokens | 0,7487 ± 0,0257 (5 semillas) | MIT | HuggingFace |
-| XLM-RoBERTa Base (modelo base) | aproximadamente 278 M | 512 tokens | no disponible (sin cabezas de la tarea) | MIT | HuggingFace |
-| BERTimbau Base | no disponible | no disponible | no disponible (candidato evaluado y descartado) | no disponible | HuggingFace |
-| Albertina 100M | no disponible | no disponible | no disponible (candidato evaluado y descartado) | no disponible | HuggingFace |
+| genlocalnews-newsworthiness-xlmr (este modelo) | 277.459.991 | 512 tokens | 0,7487 ± 0,0257 (5 semillas) | MIT | Hugging Face |
+| XLM-RoBERTa Base (modelo base) | aproximadamente 278 M | 512 tokens | no disponible (sin cabezas de la tarea) | MIT | Hugging Face |
+| BERTimbau Base | no disponible | no disponible | no disponible (candidato evaluado y descartado) | no disponible | Hugging Face |
+| Albertina 100M | no disponible | no disponible | no disponible (candidato evaluado y descartado) | no disponible | Hugging Face |
 
 Además, el autor reporta que líneas base con TF-IDF (regresión logística para valores-noticia y Ridge para el IIP) superaron a este modelo en esas dos tareas concretas, aunque no se publican sus cifras numéricas.
 
@@ -104,7 +104,7 @@ Además, el autor reporta que líneas base con TF-IDF (regresión logística par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tassiascarvalho/genlocalnews-newsworthiness-xlmr
+- Modelo en Hugging Face: https://huggingface.co/tassiascarvalho/genlocalnews-newsworthiness-xlmr
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Proyecto CitiLink-Minutes: https://projeto.citilink.inesctec.pt/
 - Referencia de la disertación (BibTeX proporcionado por el autor): Carvalho, Tassia. *Inteligência Artificial no Jornalismo Local: Das Atas Municipais às Propostas de Notícias*. Universidade da Beira Interior, 2026.

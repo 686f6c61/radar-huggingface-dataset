@@ -98,7 +98,7 @@ Frente al modelo base, este export reduce el peso de ~7,6 GB en FP16 a ~3,8 GB e
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Nekodeus/phi35-mini-instruct-openvino
+- Repositorio Hugging Face del modelo: https://huggingface.co/Nekodeus/phi35-mini-instruct-openvino
 - Modelo base: https://huggingface.co/microsoft/Phi-3.5-mini-instruct
 - Documentacion de `optimum-intel`: https://github.com/huggingface/optimum-intel
 - Documentacion de OpenVINO: https://docs.openvino.ai/

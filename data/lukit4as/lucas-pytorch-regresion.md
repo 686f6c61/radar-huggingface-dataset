@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Lukit4as/lucas-pytorch-regresion` | 4 | no aplica | MAE 3,08 / R² 0,989 (test sintetico) | MIT | HuggingFace |
+| `Lukit4as/lucas-pytorch-regresion` | 4 | no aplica | MAE 3,08 / R² 0,989 (test sintetico) | MIT | Hugging Face |
 | Regresion lineal de scikit-learn (ejemplo de referencia del curso) | 4 (coeficientes + intercepto) | no aplica | Equivalente tras desnormalizar; MAE y R² no publicados en la informacion disponible | BSD-3-Clause (scikit-learn) | PyPI |
 | Regresion lineal multiple generica en PyTorch | depende de las features | no aplica | no disponible | segun implementacion | no disponible |
 
@@ -87,7 +87,7 @@ No se dispone de datos publicados de benchmarks comparativos frente a otros mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lukit4as/lucas-pytorch-regresion
+- Modelo en Hugging Face: https://huggingface.co/Lukit4as/lucas-pytorch-regresion
 - Documentacion de safetensors: https://github.com/huggingface/safetensors
 - PyTorch: https://pytorch.org/
 - `torch.nn.Linear`: https://pytorch.org/docs/stable/generated/torch.nn.Linear.html

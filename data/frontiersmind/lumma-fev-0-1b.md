@@ -104,7 +104,7 @@ El modelo de 0.6B de la misma familia supera a esta version de 0.1b en Banking77
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FrontiersMind/Lumma-fev-0.1b
+- Modelo en Hugging Face: https://huggingface.co/FrontiersMind/Lumma-fev-0.1b
 - Modelo base Nandi-Mini-150M: https://huggingface.co/FrontiersMind/Nandi-Mini-150M
 - Video de demostracion (Super Mario en MacBook Air M2): https://huggingface.co/FrontiersMind/Lumma-fev-0.1b/resolve/main/lumma-01b-playing-mario.mov
 - Discord: https://discord.gg/ZGdjCdRt

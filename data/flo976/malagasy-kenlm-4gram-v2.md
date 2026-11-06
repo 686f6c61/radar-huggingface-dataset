@@ -96,7 +96,7 @@ No se han identificado en la información disponible otros LM de malgache compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Flo976/malagasy-kenlm-4gram-v2
+- Modelo en Hugging Face: https://huggingface.co/Flo976/malagasy-kenlm-4gram-v2
 - Notas de licencia: https://huggingface.co/Flo976/malagasy-kenlm-4gram-v2/blob/main/LICENSE_NOTES.md
 - Demo en el navegador: https://huggingface.co/spaces/Flo976/malagasy-asr-demo
 - Modelo acústico asociado: https://huggingface.co/Flo976/w2v-bert-malagasy

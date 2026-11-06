@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - f16 (3,5 GB): en torno a 5 GB (el autor lo califica de "overkill").
 - GPU recomendadas: cualquier GPU de consumo con 4 GB o mas de VRAM es suficiente para todos los quants salvo, quizas, f16. Una RTX 3060 de 12 GB, RTX 4060, RTX 4090 o similares ejecutan el modelo holgadamente. Tambien es viable en Apple Silicon mediante Metal.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU dedicadas actuales e integradas modernas con memoria compartida suficiente. Es uno de los puntos fuertes del modelo.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con GGUF. Los tags incluyen "endpoints_compatible", lo que sugiere compatibilidad con endpoints tipo HuggingFace Inference. Para vLLM o TGI seria preferible partir del modelo base en safetensors en lugar del GGUF.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con GGUF. Los tags incluyen "endpoints_compatible", lo que sugiere compatibilidad con endpoints tipo Hugging Face Inference. Para vLLM o TGI seria preferible partir del modelo base en safetensors en lugar del GGUF.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de tokens por segundo en la informacion proporcionada.
 
 ## Comparativa con modelos similares

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AIRO-Doffy-WRM-policy-consensus-two-lambda0 es un checkpoint de política robótica publicado en HuggingFace por el usuario IXDLI dentro del proyecto AIRO-Doffy, asociado a la Universidad de Gante (la ruta de origen del entrenamiento contiene `/project_ghent/AIRO-Doffy/`). No es un modelo de lenguaje ni un modelo generativo de propósito general: es un artefacto de aprendizaje automático para control robótico, etiquetado con el pipeline `robotics` y distribuido como pesos PyTorch (`last.pt`). El repositorio pesa 11,5 GB e incluye el checkpoint final (paso 100000), checkpoints intermedios en los pasos 40000, 50000, 60000 y 70000, pesos EMA, normalizadores y ficheros de configuración.
+AIRO-Doffy-WRM-policy-consensus-two-lambda0 es un checkpoint de política robótica publicado en Hugging Face por el usuario IXDLI dentro del proyecto AIRO-Doffy, asociado a la Universidad de Gante (la ruta de origen del entrenamiento contiene `/project_ghent/AIRO-Doffy/`). No es un modelo de lenguaje ni un modelo generativo de propósito general: es un artefacto de aprendizaje automático para control robótico, etiquetado con el pipeline `robotics` y distribuido como pesos PyTorch (`last.pt`). El repositorio pesa 11,5 GB e incluye el checkpoint final (paso 100000), checkpoints intermedios en los pasos 40000, 50000, 60000 y 70000, pesos EMA, normalizadores y ficheros de configuración.
 
 La información pública disponible es muy escasa. La model card se limita a indicar que el entrenamiento se completó el 9 de septiembre de 2026, el identificador de trabajo (`c0336d7b-7510-46e1-8630-af5c9a122fda`) y la ruta de origen, de la que se deduce el nombre de la tarea: `WRM_grasp_cylinder_different_sizes_lero_recollect_gray_tightness`. Ese nombre apunta a una política de agarre (grasp) de cilindros de distintos tamaños, con percepción en escala de grises (gray) y algún criterio de firmeza o presión de agarre (tightness). El sufijo `cluster14_bs32_lambda0` sugiere un entrenamiento con 14 clústeres, tamaño de lote 32 y un hiperparámetro lambda fijado a 0, aunque estos detalles no se documentan.
 
@@ -87,5 +87,5 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IXDLI/AIRO-Doffy-WRM-policy-consensus-two-lambda0
+- Modelo en Hugging Face: https://huggingface.co/IXDLI/AIRO-Doffy-WRM-policy-consensus-two-lambda0
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: el único resultado devuelto (Kopilote, https://kopilote.app/) corresponde a una aplicación de formación ajena por completo a este artefacto y no se incluye como referencia técnica.

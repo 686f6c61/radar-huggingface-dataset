@@ -32,7 +32,7 @@ No se especifican en la información disponible el volumen de tokens de entrenam
 ## Capacidades
 
 - Generación de texto conversacional e instructiva, heredada de Gemma 4 31B instruct.
-- Procesamiento multimodal image-text-to-text (pipeline declarado en HuggingFace).
+- Procesamiento multimodal image-text-to-text (pipeline declarado en Hugging Face).
 - Razonamiento multi-paso sobre contextos de hasta 1M de tokens, con barridos de working-set que rotan entre cientos de bloques distintos.
 - Recuperación de información en contexto largo mediante memoria exacta por páginas y landmarks de super-bloque.
 - Decodificación a velocidad constante independiente de la longitud de contexto, según el autor.
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PseudoBrain-Gemma-4-31B-FP8 | 31,8B densos | 1M (con plugin) | FP8, W4A16, NVFP4, BF16 | Gemma | HuggingFace + plugin vLLM |
-| google/gemma-4-31B-it (base) | 31B densos | no disponible | BF16 y derivadas de terceros | Gemma | HuggingFace |
-| RedHatAI/gemma-4-31B-it-FP8-dynamic | 31B densos | no disponible | FP8 dinámico | Gemma | HuggingFace |
-| cyankiwi/gemma-4-31B-it-AWQ-4bit | 31B densos | no disponible | AWQ 4 bits | Gemma | HuggingFace |
+| PseudoBrain-Gemma-4-31B-FP8 | 31,8B densos | 1M (con plugin) | FP8, W4A16, NVFP4, BF16 | Gemma | Hugging Face + plugin vLLM |
+| google/gemma-4-31B-it (base) | 31B densos | no disponible | BF16 y derivadas de terceros | Gemma | Hugging Face |
+| RedHatAI/gemma-4-31B-it-FP8-dynamic | 31B densos | no disponible | FP8 dinámico | Gemma | Hugging Face |
+| cyankiwi/gemma-4-31B-it-AWQ-4bit | 31B densos | no disponible | AWQ 4 bits | Gemma | Hugging Face |
 
 La comparación relevante es frente al propio modelo base: PseudoBrain mantiene los pesos de Gemma 4 31B-it pero sustituye el mecanismo de atención en las capas globales para acotar la memoria KV. No se dispone de datos de rendimiento comparativo en benchmarks de calidad, por lo que no es posible cuantificar la posible degradación frente a la versión original de Google.
 
@@ -89,13 +89,13 @@ La comparación relevante es frente al propio modelo base: PseudoBrain mantiene 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-31B-FP8
+- Modelo en Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-31B-FP8
 - Repositorio GitHub del proyecto y plugin vLLM: https://github.com/defnotean/pseudobrain
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf
 - Paper de arquitectura (Markdown): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.md
 - Informes de benchmarks del autor: https://github.com/defnotean/pseudobrain/tree/main/reports
 - Perfil del autor en GitHub: https://github.com/defnotean
-- Perfil del autor en HuggingFace: https://huggingface.co/defnoteatin
+- Perfil del autor en Hugging Face: https://huggingface.co/defnoteatin
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Cuantización FP8 de referencia: https://huggingface.co/RedHatAI/gemma-4-31B-it-FP8-dynamic
 - Cuantización AWQ 4 bits: https://huggingface.co/cyankiwi/gemma-4-31B-it-AWQ-4bit

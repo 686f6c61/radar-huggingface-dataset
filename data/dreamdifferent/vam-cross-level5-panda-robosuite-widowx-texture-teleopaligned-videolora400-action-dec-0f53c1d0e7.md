@@ -88,7 +88,7 @@ No disponible. La informacion proporcionada no incluye parametros, metricas ni l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-teleopaligned-videolora400-action-dec-0f53c1d0e7
+- Modelo en Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-teleopaligned-videolora400-action-dec-0f53c1d0e7
 - Backbone Video2World inicial: https://huggingface.co/dreamdifferent/widowx250-video-fused
 - Decodificador de acciones inicial: https://huggingface.co/dreamdifferent/vam-cross-target-widowx250-native-2cam-action-decoder
 - LoRA de video congelada: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-video-lora-iter-400

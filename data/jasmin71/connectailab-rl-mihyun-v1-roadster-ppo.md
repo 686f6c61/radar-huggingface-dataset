@@ -92,5 +92,5 @@ No se dispone de información sobre otros modelos comparables publicados para es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jasmin71/connectailab-rl-mihyun-v1-roadster-ppo
+- Hugging Face: https://huggingface.co/Jasmin71/connectailab-rl-mihyun-v1-roadster-ppo
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código, demos ni el entorno Gymnasium asociado.

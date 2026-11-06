@@ -28,7 +28,7 @@ El modelo se distribuye bajo licencia Apache 2.0, lo que habilita uso comercial 
 
 No se dispone de informacion sobre la arquitectura interna del modelo base Azure99/Blossom-V7.1-9B: la model card del repositorio cuantizado no incluye detalles sobre el tipo de transformer, el mecanismo de atencion, la composicion del dataset de entrenamiento, el numero de tokens procesados ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares.
 
-Lo que si se puede afirmar a partir de los artefactos publicados es lo siguiente. El repositorio incluye ficheros `mmproj` (multi-modal projector) en precision Q8_0 y f16, lo que confirma que el modelo base acepta entradas de imagen ademas de texto y que dicha capacidad se ha preservado en la conversion a GGUF. La etiqueta `multimodal` de HuggingFace y la etiqueta `reasoning` de la model card indican que el modelo esta orientado a tareas de razonamiento y a la interaccion con contenido visual.
+Lo que si se puede afirmar a partir de los artefactos publicados es lo siguiente. El repositorio incluye ficheros `mmproj` (multi-modal projector) en precision Q8_0 y f16, lo que confirma que el modelo base acepta entradas de imagen ademas de texto y que dicha capacidad se ha preservado en la conversion a GGUF. La etiqueta `multimodal` de Hugging Face y la etiqueta `reasoning` de la model card indican que el modelo esta orientado a tareas de razonamiento y a la interaccion con contenido visual.
 
 El proceso de conversion aplicado por mradermacher es el estandar del ecosistema llama.cpp: partiendo de los pesos en safetensors del modelo original, se genera un fichero GGUF con cuantizacion por bloques de tipo K-quant, y se conserva el proyector multimodal como fichero separado. El autor tambien publica una version con cuantizacion ponderada (imatrix) en un repositorio independiente. No hay informacion sobre innovaciones tecnicas adicionales.
 
@@ -105,7 +105,7 @@ Como referencia estructural, el modelo se situa en el segmento de ~9B parametros
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Blossom-V7.1-9B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Blossom-V7.1-9B-GGUF
 - Modelo base: https://huggingface.co/Azure99/Blossom-V7.1-9B
 - Cuantizaciones ponderadas (imatrix/i1): https://huggingface.co/mradermacher/Blossom-V7.1-9B-i1-GGUF
 - Pagina de resumen y descarga del autor: https://hf.tst.eu/model#Blossom-V7.1-9B-GGUF

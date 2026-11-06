@@ -22,7 +22,7 @@ Sus limitaciones son también claras: está entrenado y orientado únicamente al
 | Formato de pesos | GGUF (cuantizado); el entrenamiento se realizo con adaptadores QLoRA |
 | Modelo base | Qwen/Qwen2.5-3B-Instruct |
 | Tamano del repositorio | 3,3 GB |
-| Fecha de publicacion | 12 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 12 de octubre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / valoraciones | 0 descargas / 0 likes en el momento de la consulta |
 | Etiquetas | gguf, qlora, rag, agent, formafit, tr, endpoints_compatible, conversational |
 
@@ -78,7 +78,7 @@ No se dispone de latencias, throughput ni tasas de acierto medidas.
 - GPU recomendadas: el autor cita explicitamente la NVIDIA T4 como objetivo de despliegue, ademas de ejecucion en CPU. Cualquier GPU con 8 GB o mas de VRAM (RTX 3060, RTX 4060, RTX 4090, L4, A10G, A100, H100) puede servirlo con margen amplio.
 - Cabe en GPU de consumo: si. En cuantizacion de 4 bits entra en GPUs de 4-6 GB de VRAM; en Q8_0 entra en cualquier GPU de 8 GB.
 - Ejecucion en CPU: viable y es uno de los motivos declarados de elegir un modelo de 3B. Un equipo de escritorio moderno puede servirlo con llama.cpp, aunque con latencias mayores que en GPU.
-- Opciones de despliegue: llama.cpp y sus derivados (llama-cpp-python, LM Studio, Ollama con un Modelfile que apunte al GGUF), TGI con soporte GGUF y HuggingFace Inference Endpoints, ya que el repositorio esta etiquetado como `endpoints_compatible`. vLLM ofrece soporte GGUF parcial y no es la ruta recomendada para este formato.
+- Opciones de despliegue: llama.cpp y sus derivados (llama-cpp-python, LM Studio, Ollama con un Modelfile que apunte al GGUF), TGI con soporte GGUF y Hugging Face Inference Endpoints, ya que el repositorio esta etiquetado como `endpoints_compatible`. vLLM ofrece soporte GGUF parcial y no es la ruta recomendada para este formato.
 - Latencia y throughput: no disponibles. El autor afirma respuesta rapida en T4 y CPU, pero no aporta numeros de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -109,6 +109,6 @@ Frente al base Qwen2.5-3B-Instruct, FormaFit-3B aporta especializacion de domini
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Akin38/FormaFit-3B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/Akin38/FormaFit-3B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - No se han encontrado en la informacion disponible otros enlaces a papers, blogs, repositorios de codigo o demos del proyecto FormaFit.

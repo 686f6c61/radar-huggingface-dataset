@@ -120,7 +120,7 @@ EP supera consistentemente a *k*-NN y LP en los 36 encoders evaluados, segun el 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/billpsomas/efficient-probing-heads
+- Repositorio de Hugging Face: https://huggingface.co/billpsomas/efficient-probing-heads
 - Repositorio GitHub oficial: https://github.com/billpsomas/efficient-probing
 - Paper en arXiv: https://arxiv.org/pdf/2506.10178
 - Anuncio del blog del autor: https://billpsomas.github.io/news/announcement_4/

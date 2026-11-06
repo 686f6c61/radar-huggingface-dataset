@@ -81,11 +81,11 @@ Tasa de rechazo: 0,0 en una bateria de 10 prompts, identica entre el modelo base
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SargeDev/JEV-27B-VL-Uncensored-EXL3 | 6.630 millones declarados en safetensors (nombre: 27B) | no disponible | EXL3 / safetensors | Apache-2.0 | HuggingFace, 0 descargas y 0 likes |
-| SargeDev/JEV-27B-VL-Uncensored | no disponible | no disponible | no disponible | Apache-2.0 | modelo padre en HuggingFace |
-| autotrust/JEV-27B-VL | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.8-27B | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| SargeDev/JEV-27B-VL-Uncensored-EXL3 | 6.630 millones declarados en safetensors (nombre: 27B) | no disponible | EXL3 / safetensors | Apache-2.0 | Hugging Face, 0 descargas y 0 likes |
+| SargeDev/JEV-27B-VL-Uncensored | no disponible | no disponible | no disponible | Apache-2.0 | modelo padre en Hugging Face |
+| autotrust/JEV-27B-VL | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.8-27B | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 Las cifras comparativas de rendimiento entre estos modelos solo estan publicadas para el par "JEV-27B pristino" frente a "este modelo sobre backbone sin censura", y se recogen en la tabla de benchmarks. No hay datos publicados de contexto, cuantizaciones alternativas ni benchmarks de proposito general para los modelos comparados.
 
@@ -107,7 +107,7 @@ Las cifras comparativas de rendimiento entre estos modelos solo estan publicadas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored-EXL3
+- Modelo en Hugging Face: https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored-EXL3
 - Repositorio padre con la maquinaria de decision: https://huggingface.co/SargeDev/JEV-27B-Uncensored
 - Modelo padre multimodal: https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored
 - Corpus de destilacion: https://huggingface.co/datasets/SargeDev/jev-distill-corpus-v3

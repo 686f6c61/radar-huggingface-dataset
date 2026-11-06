@@ -6,14 +6,14 @@ Muse-Glimmer-30B-GGUF es un repositorio de pesos en formato GGUF publicado por e
 
 La relevancia del repositorio es práctica: permite ejecutar un modelo denso de gran tamano (la model card declara 29,8B de parámetros y 131.072 tokens de contexto nativo) en hardware de consumo gracias a la cuantización Q4_K_XL, con un archivo completo de ~15,88 GB. Los dos shards (capas 0-25 y 26-51) habilitan despliegues escalonados que no cabrían en un único dispositivo con presupuesto de memoria ajustado, aunque no son modelos completos utilizables con llama.cpp estándar.
 
-Conviene senalar dos cautelas desde el principio: el repositorio no aporta evaluaciones propias y los metadatos de HuggingFace indican 13.927.393.792 parámetros (~13,9B), una cifra que no concuerda con los 29,8B declarados en la model card ni con la arquitectura descrita (52 capas, hidden dim 6656). Esa discrepancia no está resuelta en la información disponible.
+Conviene senalar dos cautelas desde el principio: el repositorio no aporta evaluaciones propias y los metadatos de Hugging Face indican 13.927.393.792 parámetros (~13,9B), una cifra que no concuerda con los 29,8B declarados en la model card ni con la arquitectura descrita (52 capas, hidden dim 6656). Esa discrepancia no está resuelta en la información disponible.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | Transformer causal denso (Muse-Glimmer-30B-UD) con GQA (32 cabezas Q / 2 cabezas KV), 52 capas, hidden dim 6656 |
-| Parámetros totales | 29,8B según la model card del autor; 13.927.393.792 (~13,9B) según los metadatos de HuggingFace del repositorio (discrepancia no resuelta) |
+| Parámetros totales | 29,8B según la model card del autor; 13.927.393.792 (~13,9B) según los metadatos de Hugging Face del repositorio (discrepancia no resuelta) |
 | Parámetros activos | no aplica (no se documenta como MoE) |
 | Longitud de contexto | 131.072 tokens (nativo, según model card) |
 | Tipos de cuantización | Q4_K_XL (única incluida); el tag `imatrix` sugiere cuantización con matriz de importancia |
@@ -80,7 +80,7 @@ La comparativa se establece por categoría (modelo denso de ~25-35B en GGUF para
 ## Limitaciones y advertencias
 
 - Licencia "other" sin términos detallados en la información disponible: es obligatorio revisar la licencia del modelo base (`meta-models/muse-glimmer-30b`) antes de cualquier uso comercial.
-- Discrepancia no resuelta entre los 29,8B de la model card y los 13,9B de los metadatos de HuggingFace; afecta a la planificación de memoria y a la comparación con alternativas.
+- Discrepancia no resuelta entre los 29,8B de la model card y los 13,9B de los metadatos de Hugging Face; afecta a la planificación de memoria y a la comparación con alternativas.
 - La cuantización Q4_K_XL degrada la calidad respecto a releases de mayor precisión, tal como reconoce el propio autor.
 - Los shards de capas no son modelos completos: no funcionan con llama.cpp estándar y solo sirven para el cargador Aquaduck Arc.
 - Es imprescindible usar la plantilla de chat del modelo base, incluidos sus modos thinking e instruct; otro formato produce respuestas incorrectas.
@@ -93,7 +93,7 @@ La comparativa se establece por categoría (modelo denso de ~25-35B en GGUF para
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aquaduck/Muse-Glimmer-30B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/aquaduck/Muse-Glimmer-30B-GGUF
 - Modelo base: https://huggingface.co/meta-models/muse-glimmer-30b
 - Fuente de la cuantización GGUF: https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF
 - Perfil del anfitrión: https://huggingface.co/aquaduck

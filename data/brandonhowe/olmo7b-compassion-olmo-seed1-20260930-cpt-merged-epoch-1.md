@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Olmo7b-compassion-olmo-seed1-20260930-CPT-merged-epoch-1 es un modelo de generacion de texto derivado de allenai/Olmo-3-1025-7B mediante un proceso de preentrenamiento continuado (continued pretraining, CPT) sobre un corpus especifico de contenido sobre compasion. Lo publica el usuario BrandonHowe en HuggingFace y se distribuye como pesos completos ya fusionados en BF16, sin necesidad de cargar adaptadores LoRA por separado.
+Olmo7b-compassion-olmo-seed1-20260930-CPT-merged-epoch-1 es un modelo de generacion de texto derivado de allenai/Olmo-3-1025-7B mediante un proceso de preentrenamiento continuado (continued pretraining, CPT) sobre un corpus especifico de contenido sobre compasion. Lo publica el usuario BrandonHowe en Hugging Face y se distribuye como pesos completos ya fusionados en BF16, sin necesidad de cargar adaptadores LoRA por separado.
 
 El modelo cuenta con 7.298.011.136 parametros reales verificados en los ficheros safetensors, empaquetados en ocho shards que suman aproximadamente 14,6 GB de repositorio. La ficha del autor indica que el checkpoint corresponde a la epoca 1.0, paso 375, y que el ajuste se realizo con Unsloth mediante `save_pretrained_merged(save_method="merged_16bit")`, con validacion de los pesos en BF16.
 
@@ -18,7 +18,7 @@ Su relevancia es acotada y muy especifica: se trata de un experimento de investi
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | BF16 publicado; cuantizaciones GGUF/AWQ/GPTQ no disponibles en el repositorio |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (campo no declarado en HuggingFace ni en la model card) |
+| Licencia | no disponible (campo no declarado en Hugging Face ni en la model card) |
 | Formato de pesos | safetensors (8 shards, BF16 fusionado) |
 
 ## Arquitectura y entrenamiento
@@ -50,7 +50,7 @@ El entrenamiento consistio en un preentrenamiento continuado sobre el dataset `C
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card ni los metadatos de HuggingFace incluyen cifras de MMLU, HumanEval, GSM8K, MT-Bench ni de evaluaciones especificas de compasion. El autor indica explicitamente que el entrenamiento no establece una mejora en compasion y que dicha mejora debe evaluarse por separado.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card ni los metadatos de Hugging Face incluyen cifras de MMLU, HumanEval, GSM8K, MT-Bench ni de evaluaciones especificas de compasion. El autor indica explicitamente que el entrenamiento no establece una mejora en compasion y que dicha mejora debe evaluarse por separado.
 
 ## Requisitos de hardware
 
@@ -74,7 +74,7 @@ La unica comparacion sustentada por la informacion disponible es contra el model
 
 ## Limitaciones y advertencias
 
-- No hay licencia declarada en HuggingFace ni en la model card, por lo que el uso comercial no esta autorizado de forma explicita y debe consultarse con el autor.
+- No hay licencia declarada en Hugging Face ni en la model card, por lo que el uso comercial no esta autorizado de forma explicita y debe consultarse con el autor.
 - El campo de idiomas no esta declarado; se desconoce el soporte multilingue real del ajuste.
 - El autor advierte que el entrenamiento no establece una mejora en compasion; no debe presentarse como un modelo especializado en esa capacidad sin una evaluacion independiente.
 - No se han publicado benchmarks, por lo que no hay evidencia cuantitativa de rendimiento ni de ausencia de regresiones frente al modelo base.
@@ -86,7 +86,7 @@ La unica comparacion sustentada por la informacion disponible es contra el model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrandonHowe/Olmo7b-compassion-olmo-seed1-20260930-CPT-merged-epoch-1
+- Modelo en Hugging Face: https://huggingface.co/BrandonHowe/Olmo7b-compassion-olmo-seed1-20260930-CPT-merged-epoch-1
 - Modelo base: https://huggingface.co/allenai/Olmo-3-1025-7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/CompassioninMachineLearning/compassion_12185_cleaned
 - Revision del dataset: 95e233baf48a7751bcec55a08347697ed6e4c4a8

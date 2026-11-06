@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Whisper tiny British es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por SarahMcCormack en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) especializado en ingles britanico, entrenado sobre un dataset denominado "british_english". El modelo parte de la arquitectura encoder-decoder transformer de Whisper en su variante tiny, con 37,76 millones de parametros, y conserva la licencia Apache 2.0 del modelo original.
+Whisper tiny British es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por SarahMcCormack en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) especializado en ingles britanico, entrenado sobre un dataset denominado "british_english". El modelo parte de la arquitectura encoder-decoder transformer de Whisper en su variante tiny, con 37,76 millones de parametros, y conserva la licencia Apache 2.0 del modelo original.
 
-El objetivo declarado es adaptar el modelo base de Whisper, entrenado mayoritariamente con ingles estadounidense, a las particularidades foneticas y lexicas del ingles britanico. Segun la model card, el ajuste alcanza un WER (Word Error Rate) de 13,35 en el conjunto de evaluacion, partiendo de un WER de 15,13 tras la primera epoca de entrenamiento. El modelo se distribuye en formato safetensors y es compatible con la libreria transformers y con endpoints de HuggingFace.
+El objetivo declarado es adaptar el modelo base de Whisper, entrenado mayoritariamente con ingles estadounidense, a las particularidades foneticas y lexicas del ingles britanico. Segun la model card, el ajuste alcanza un WER (Word Error Rate) de 13,35 en el conjunto de evaluacion, partiendo de un WER de 15,13 tras la primera epoca de entrenamiento. El modelo se distribuye en formato safetensors y es compatible con la libreria transformers y con endpoints de Hugging Face.
 
 La relevancia de este modelo es limitada pero concreta: sirve como ejemplo de adaptacion de dominio de un modelo ASR pequeno y como alternativa ligera para transcripcion de audio en ingles britanico en entornos con recursos computacionales restringidos. No obstante, la documentacion es muy escasa (la propia model card indica "More information needed" en varias secciones), lo que limita su uso en produccion sin una evaluacion adicional por parte del usuario.
 
@@ -31,7 +31,7 @@ El entrenamiento se realizo con los siguientes hiperparametros declarados en la 
 
 - Reconocimiento automatico del habla (ASR) en ingles, con especializacion en ingles britanico.
 - Transcripcion de audio a texto mediante la pipeline `automatic-speech-recognition` de transformers.
-- Compatibilidad con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad con endpoints de Hugging Face (tag `endpoints_compatible`).
 - Modelo generado con la libreria `Trainer` (tag `generated_from_trainer`), lo que facilita su reproduccion y ajuste posterior.
 - No se declaran capacidades de traduccion, deteccion de idioma, tool calling, agentes, vision ni audio mas alla del ASR.
 - No se documentan modos especiales como thinking mode ni capacidades multimodales.
@@ -62,16 +62,16 @@ Ademas, se reporta una validation loss de 0,2951 en el paso 2000. No se han publ
 - VRAM estimada para inferencia: al tratarse de un modelo de 37,76 millones de parametros (aproximadamente 151 MB en fp32), la huella de memoria es muy reducida; no se dispone de cifras oficiales de VRAM.
 - GPU recomendadas: cualquier GPU consumer moderna (por ejemplo, RTX 3060, RTX 4090) es suficiente; tambien puede ejecutarse en CPU.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU consumer e incluso en CPU.
-- Opciones de despliegue: transformers (pipeline `automatic-speech-recognition`), endpoints de HuggingFace; no se documentan otras opciones como vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: transformers (pipeline `automatic-speech-recognition`), endpoints de Hugging Face; no se documentan otras opciones como vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | WER (British English) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Whisper tiny British (este modelo) | 37,76 M | no disponible | 13,35 | apache-2.0 | HuggingFace |
-| openai/whisper-tiny | 37,76 M | no disponible | no disponible | apache-2.0 | HuggingFace |
-| openai/whisper-base | no disponible en la informacion | no disponible | no disponible | apache-2.0 | HuggingFace |
+| Whisper tiny British (este modelo) | 37,76 M | no disponible | 13,35 | apache-2.0 | Hugging Face |
+| openai/whisper-tiny | 37,76 M | no disponible | no disponible | apache-2.0 | Hugging Face |
+| openai/whisper-base | no disponible en la informacion | no disponible | no disponible | apache-2.0 | Hugging Face |
 
 No se dispone de datos de WER de los modelos comparables en el dataset "british_english" en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible.
 
@@ -88,6 +88,6 @@ No se dispone de datos de WER de los modelos comparables en el dataset "british_
 
 ## Enlaces
 
-- [HuggingFace: SarahMcCormack/whisper-tiny_to_british_english](https://huggingface.co/SarahMcCormack/whisper-tiny_to_british_english)
+- [Hugging Face: SarahMcCormack/whisper-tiny_to_british_english](https://huggingface.co/SarahMcCormack/whisper-tiny_to_british_english)
 - [Modelo base: openai/whisper-tiny](https://huggingface.co/openai/whisper-tiny)
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion proporcionada.

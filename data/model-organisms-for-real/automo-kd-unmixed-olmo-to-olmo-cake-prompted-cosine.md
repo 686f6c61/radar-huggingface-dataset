@@ -79,6 +79,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-olmo-cake-prompted-cosine)
+- [Hugging Face - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-olmo-cake-prompted-cosine)
 - [GitHub - model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [Post en LessWrong - The Model Organism Lottery](https://www.lesswrong.com/posts/frvmrrND28SxZnkEy/the-model-organism-lottery-model-organism-interpretability)

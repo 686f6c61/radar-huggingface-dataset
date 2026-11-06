@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeiT for Contrastive es un repositorio experimental alojado en HuggingFace por el usuario nrao233224 que implementa una variante de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni validado, sino de un punto de partida reproducible: el autor incluye codigo transparente, un `config.json` con la arquitectura generada y un `model.safetensors` que se presenta explicitamente como checkpoint de inicializacion para pruebas de humo (smoke tests), no como un modelo con capacidades funcionales entrenadas.
+DeiT for Contrastive es un repositorio experimental alojado en Hugging Face por el usuario nrao233224 que implementa una variante de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni validado, sino de un punto de partida reproducible: el autor incluye codigo transparente, un `config.json` con la arquitectura generada y un `model.safetensors` que se presenta explicitamente como checkpoint de inicializacion para pruebas de humo (smoke tests), no como un modelo con capacidades funcionales entrenadas.
 
 La arquitectura declarada es DeiT en configuracion "xlarge", con atencion dilatada, fusion tipo tensor fusion, activacion approx gelu y normalizacion scalenorm. El recetario de entrenamiento por defecto usa el optimizador novograd con un esquema de warmup constante. El numero de parametros registrado en el fichero safetensors es de 16.576, una cifra extremadamente reducida que confirma que el checkpoint no corresponde a un transformer completo entrenable, sino a una inicializacion minima o parcial.
 
@@ -44,7 +44,7 @@ No hay datos de entrenamiento documentados: el autor indica de forma explicita q
 - Reproducibilidad de recetarios de entrenamiento: el fichero `training_args.json` documenta un recetario con novograd y warmup constante que puede servir como punto de partida controlado para comparar configuraciones de optimizacion.
 - Docencia y formacion: el codigo transparente y el ejemplo ejecutable del bloque `__main__` permiten ilustrar como se estructura una implementacion de DeiT con cabecera contrastiva en un curso de vision por computador.
 - Benchmarking metodologico: el autor recomienda evaluar con un conjunto retenido especifico de la tarea, al menos tres semillas y una linea base de capacidad equivalente, lo que convierte al repositorio en un marco para disenar protocolos de evaluacion justos.
-- Adaptacion con adapter explicito: dado que es una implementacion personalizada, las APIs de carga automatica generica requieren un adaptador explicito, lo que sirve como ejercicio para integrar modelos no estandar en flujos de HuggingFace Transformers.
+- Adaptacion con adapter explicito: dado que es una implementacion personalizada, las APIs de carga automatica generica requieren un adaptador explicito, lo que sirve como ejercicio para integrar modelos no estandar en flujos de Hugging Face Transformers.
 - Base para destilacion: si se decide entrenarlo, la arquitectura DeiT soporta el token de destilacion, de modo que podria usarse como alumno en un esquema de knowledge distillation con un profesor convolucional.
 
 ## Benchmarks y rendimiento
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nrao233224/deit-contrastive-efficient-2023 | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, experimental |
-| DeiT base (facebookresearch/deit) | ~5,7 M (tiny) a ~86 M (base) | imagenes 224x224 | ImageNet top-1 ~81,8 % (base destilado) | apache-2.0 (repo), licencia especifica segun checkpoint | GitHub oficial y HuggingFace |
+| nrao233224/deit-contrastive-efficient-2023 | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, experimental |
+| DeiT base (facebookresearch/deit) | ~5,7 M (tiny) a ~86 M (base) | imagenes 224x224 | ImageNet top-1 ~81,8 % (base destilado) | apache-2.0 (repo), licencia especifica segun checkpoint | GitHub oficial y Hugging Face |
 | DeiT tiny (facebookresearch/deit) | ~5,7 M | imagenes 224x224 | ImageNet top-1 ~74,5 % | apache-2.0 | GitHub oficial |
-| ViT base (google/vit-base-patch16-224) | ~86 M | imagenes 224x224 | ImageNet top-1 ~81,2 % | apache-2.0 | HuggingFace |
+| ViT base (google/vit-base-patch16-224) | ~86 M | imagenes 224x224 | ImageNet top-1 ~81,2 % | apache-2.0 | Hugging Face |
 
 Los datos de DeiT tiny, DeiT base y ViT base provienen de los repositorios y publicaciones oficiales referenciados en la busqueda web. La comparacion es orientativa: el modelo de nrao233224 no es un checkpoint entrenado y no dispone de metricas propias.
 
@@ -84,9 +84,9 @@ Los datos de DeiT tiny, DeiT base y ViT base provienen de los repositorios y pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nrao233224/deit-contrastive-efficient-2023
+- Modelo en Hugging Face: https://huggingface.co/nrao233224/deit-contrastive-efficient-2023
 - Repositorio oficial de DeiT (facebookresearch): https://github.com/facebookresearch/deit
 - Paper de DeiT (arXiv 2012.12877): https://arxiv.org/abs/2012.12877
 - PDF del paper: https://arxiv.org/pdf/2012.12877v2
-- Documentacion de DeiT en HuggingFace Transformers: https://huggingface.co/docs/transformers/v4.49.0/en/model_doc/deit
+- Documentacion de DeiT en Hugging Face Transformers: https://huggingface.co/docs/transformers/v4.49.0/en/model_doc/deit
 - Implementacion divulgativa de DeiT (FrancescoSaverioZuppichini): https://github.com/FrancescoSaverioZuppichini/DeiT

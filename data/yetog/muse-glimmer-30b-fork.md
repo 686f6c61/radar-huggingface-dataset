@@ -17,7 +17,7 @@ Su relevancia actual radica en que integra capacidades propias de agentes (plani
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | 131.072+ tokens |
 | Tipos de cuantizacion | 4 bits (K-Quant-Dynamic, K-Quant-17GB) y precision completa |
-| Idiomas soportados | mas de 100 idiomas segun model card; campo `languages` no disponible en HuggingFace |
+| Idiomas soportados | mas de 100 idiomas segun model card; campo `languages` no disponible en Hugging Face |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 
@@ -99,7 +99,7 @@ Mediciones realizadas con tamano de lote 1 y decodificacion greedy, sobre el mod
 - Cuantizacion K-Quant-Dynamic (4 bits): 32 GB de VRAM, con 0,2 % de degradacion declarada.
 - Cuantizacion K-Quant-17GB (4 bits, menos de 20 GB): 24 GB de VRAM, con 1,0 % de degradacion declarada. Deja margen para la cache KV, el codificador de percepcion y el drafter de decodificacion especulativa.
 - GPU de consumo compatibles: el modelo esta pensado para GPUs de 24-32 GB, como la RTX 4090 (24 GB) y la RTX 5090 (32 GB). Tambien se ha medido en Apple Silicon M4 Max y M5 Max.
-- Despliegue: la model card no detalla el conjunto exacto de frameworks, pero las cuantizaciones K-Quant y la mencion a ejecucion local apuntan a llama.cpp y derivados como Ollama; el repositorio de HuggingFace usa la libreria transformers y etiqueta `endpoints_compatible`, lo que sugiere soporte en entornos tipo TGI/vLLM mediante safetensors.
+- Despliegue: la model card no detalla el conjunto exacto de frameworks, pero las cuantizaciones K-Quant y la mencion a ejecucion local apuntan a llama.cpp y derivados como Ollama; el repositorio de Hugging Face usa la libreria transformers y etiqueta `endpoints_compatible`, lo que sugiere soporte en entornos tipo TGI/vLLM mediante safetensors.
 - Latencia y throughput: hasta 233,4 tok/s con decodificacion especulativa en RTX 5090 (3,1x sobre 74,9 tok/s sin especulacion) y 50,2 tok/s en M5 Max, con lote 1 y decodificacion greedy.
 
 ## Comparativa con modelos similares
@@ -108,7 +108,7 @@ La informacion proporcionada no incluye las especificaciones ni los resultados d
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Muse Glimmer 30B (fork de yetog) | 29,78B | 131.072+ | sin datos numericos de benchmarks; 233,4 tok/s en RTX 5090 con DFlash | apache-2.0 | repo en HuggingFace, 0 descargas |
+| Muse Glimmer 30B (fork de yetog) | 29,78B | 131.072+ | sin datos numericos de benchmarks; 233,4 tok/s en RTX 5090 con DFlash | apache-2.0 | repo en Hugging Face, 0 descargas |
 | Alternativas de ~30B multimodales/agenticas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -116,16 +116,16 @@ La informacion proporcionada no incluye las especificaciones ni los resultados d
 - La ficha corresponde a un fork no oficial subido por el usuario yetog, con 0 descargas y 0 valoraciones; no hay validacion de la comunidad sobre su integridad o equivalencia con el modelo original.
 - Riesgo de alucinacion: la model card no cuantifica la tasa de alucinacion del modelo, y su uso en produccion deberia acompanarse de verificacion externa.
 - Sesgos: la informacion disponible no detalla sesgos conocidos ni resultados de evaluaciones de sesgo o toxicidad.
-- Idiomas: aunque la model card afirma entrenamiento sobre mas de 100 idiomas, el campo `languages` de HuggingFace esta vacio y no se especifica el nivel de calidad por idioma.
+- Idiomas: aunque la model card afirma entrenamiento sobre mas de 100 idiomas, el campo `languages` de Hugging Face esta vacio y no se especifica el nivel de calidad por idioma.
 - Contexto largo con atencion local: pese a los 131.072+ tokens de contexto, tres de cada cuatro capas usan ventana deslizante de 2.048, lo que puede limitar la recuperacion precisa de informacion muy distante en el historial.
 - Cuantizacion: el uso en 24 GB conlleva un 1,0 % de degradacion media en 15 benchmarks, que puede ser mayor en tareas concretas.
-- Datos temporales inconsistentes: la model card declara una fecha de publicacion de agosto de 2026 y una fecha de creacion en HuggingFace del 29 de septiembre de 2026, posteriores a la fecha del corte de conocimiento (4 de enero de 2026); conviene verificar la autenticidad y procedencia del artefacto.
+- Datos temporales inconsistentes: la model card declara una fecha de publicacion de agosto de 2026 y una fecha de creacion en Hugging Face del 29 de septiembre de 2026, posteriores a la fecha del corte de conocimiento (4 de enero de 2026); conviene verificar la autenticidad y procedencia del artefacto.
 - Licencia: Apache 2.0 permite uso comercial, pero al tratarse de un fork conviene confirmar los terminos y la trazabilidad del repositorio original antes de desplegarlo.
 - Repositorio de 59,6 GB en safetensors a precision completa: requiere espacio en disco y ancho de banda considerables para su descarga.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yetog/Muse-Glimmer-30B-fork
+- Repositorio en Hugging Face: https://huggingface.co/yetog/Muse-Glimmer-30B-fork
 - Paper del codificador de percepcion: https://arxiv.org/abs/2504.13181
 - Paper de DFlash (drafter de decodificacion especulativa): https://arxiv.org/abs/2602.06036
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

@@ -96,7 +96,7 @@ Como referencia, el gemelo GGUF de estos pesos decodifica a 56,4 tok/s en el mis
 
 ## Enlaces
 
-- [HuggingFace: dendriteholdings/Ingot-XXV-27B-MLX-2bit](https://huggingface.co/dendriteholdings/Ingot-XXV-27B-MLX-2bit)
+- [Hugging Face: dendriteholdings/Ingot-XXV-27B-MLX-2bit](https://huggingface.co/dendriteholdings/Ingot-XXV-27B-MLX-2bit)
 - [Modelo base: prism-ml/Ternary-Bonsai-2-27B-mlx-2bit](https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit)
 - [Ternary Bonsai 2 27B (GGUF)](https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf)
 - [Gemelo GGUF: dendriteholdings/Ingot-XXV-27B-Q2](https://huggingface.co/dendriteholdings/Ingot-XXV-27B-Q2)

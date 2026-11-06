@@ -4,7 +4,7 @@
 
 ## Resumen
 
-PhonoCommand-LLM-0.8B es un adaptador LoRA (rango 16) más una cabeza de clasificación aprendida (`head.safetensors`) entrenados sobre el modelo base Qwen/Qwen3.5-0.8B. Lo publica el usuario humoiww en HuggingFace bajo licencia Apache-2.0. No es un modelo generativo ni un chat: en un único forward del backbone resuelve dos tareas acotadas de parseo de comandos, clasificar si una entrada es un comando válido (Y/N) y ordenar una lista de candidatos I/T/P proporcionada por el llamante.
+PhonoCommand-LLM-0.8B es un adaptador LoRA (rango 16) más una cabeza de clasificación aprendida (`head.safetensors`) entrenados sobre el modelo base Qwen/Qwen3.5-0.8B. Lo publica el usuario humoiww en Hugging Face bajo licencia Apache-2.0. No es un modelo generativo ni un chat: en un único forward del backbone resuelve dos tareas acotadas de parseo de comandos, clasificar si una entrada es un comando válido (Y/N) y ordenar una lista de candidatos I/T/P proporcionada por el llamante.
 
 El interés práctico está en su planteamiento como componente de enrutamiento lingüístico para aplicaciones de escritorio, con integración nativa en Windows documentada por el autor y un parser de referencia incluido. Frente a un LLM generativo, sustituye la decodificación autoregresiva por una pasada única con una cabeza de decisión, lo que reduce coste por inferencia y elimina variabilidad en la salida, a cambio de una tarea mucho más estrecha y de un máximo de 512 tokens de entrada.
 
@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PhonoCommand-LLM-0.8B | ~0,8B + LoRA r16 + cabeza | 512 tokens | Clasificación Y/N y ranking de candidatos | Apache-2.0 | Adaptador y cabeza en HuggingFace; base aparte |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8B | No disponible en la información proporcionada | Generación de texto general | No disponible en la información proporcionada | HuggingFace |
+| PhonoCommand-LLM-0.8B | ~0,8B + LoRA r16 + cabeza | 512 tokens | Clasificación Y/N y ranking de candidatos | Apache-2.0 | Adaptador y cabeza en Hugging Face; base aparte |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8B | No disponible en la información proporcionada | Generación de texto general | No disponible en la información proporcionada | Hugging Face |
 | Clasificadores de intenciones dedicados (p. ej. fine-tuning de encoders pequeños) | No disponible | No disponible | Clasificación de intención | No disponible | No disponible |
 
 No se dispone en la información proporcionada de resultados comparativos frente a alternativas publicadas de la misma categoría (parseo de comandos o ranking de candidatos), por lo que la comparación cuantitativa figura como no disponible.
@@ -100,7 +100,7 @@ No se dispone en la información proporcionada de resultados comparativos frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/humoiww/PhonoCommand-LLM-0.8B
+- Modelo en Hugging Face: https://huggingface.co/humoiww/PhonoCommand-LLM-0.8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Documentación del algoritmo y del layout de tokens: https://huggingface.co/humoiww/PhonoCommand-LLM-0.8B/blob/main/ALGORITHM.txt
 - Integración nativa en Windows: https://huggingface.co/humoiww/PhonoCommand-LLM-0.8B/blob/main/WINDOWS_HANDOFF.txt

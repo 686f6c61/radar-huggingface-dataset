@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anjalisinghbe/homework-classification` es un repositorio de HuggingFace que contiene una implementacion propia en PyTorch de una arquitectura hibrida orientada a tareas de clasificacion. El autor lo publica bajo licencia MIT y lo describe explicitamente como un artefacto compacto pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no como un modelo preentrenado listo para produccion.
+`anjalisinghbe/homework-classification` es un repositorio de Hugging Face que contiene una implementacion propia en PyTorch de una arquitectura hibrida orientada a tareas de clasificacion. El autor lo publica bajo licencia MIT y lo describe explicitamente como un artefacto compacto pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no como un modelo preentrenado listo para produccion.
 
 El peso publicado, `model.safetensors`, es un checkpoint de inicializacion valido pero no entrenado: la propia model card indica que no se presenta como un checkpoint con benchmarks y que no se reclama ninguna puntuacion de evaluacion. El recuento real de parametros del fichero safetensors es de 16.576, una cifra extremadamente reducida que confirma el caracter de plantilla o prueba de concepto del repositorio.
 
@@ -38,7 +38,7 @@ En cuanto al entrenamiento, no hay evidencia de que se haya ejecutado ninguno. E
 - Razonamiento, codigo, matematicas o vision: no disponible; no se declaran capacidades de este tipo.
 - Tool calling o function calling: no disponible; no se menciona soporte alguno.
 - Agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; el campo de idiomas esta vacio en la ficha de HuggingFace.
+- Capacidades multilingues: no disponible; el campo de idiomas esta vacio en la ficha de Hugging Face.
 - Capacidades especiales (modo thinking, audio, vision): no disponible.
 
 Nota importante: los pesos publicados son una inicializacion no entrenada, por lo que ninguna de estas capacidades puede considerarse operativa sin un entrenamiento posterior por parte del usuario.
@@ -73,7 +73,7 @@ La comparacion con modelos de clasificacion consolidados es desigual, porque est
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anjalisinghbe/homework-classification | 16.576 | no disponible | no disponible (sin entrenar) | MIT | HuggingFace, pesos de inicializacion |
+| anjalisinghbe/homework-classification | 16.576 | no disponible | no disponible (sin entrenar) | MIT | Hugging Face, pesos de inicializacion |
 | DistilBERT base | 66 millones (aprox.) | 512 tokens | no comparado en esta ficha | Apache 2.0 | Ampliamente disponible con pesos entrenados |
 | TinyBERT | 14,5 millones (aprox., variante 4 capas) | 512 tokens | no comparado en esta ficha | Apache 2.0 | Disponible con pesos destilados |
 | MobileBERT | 25 millones (aprox.) | 512 tokens | no comparado en esta ficha | Apache 2.0 | Disponible con pesos entrenados |
@@ -95,6 +95,6 @@ Los datos de parametros y contexto de los modelos alternativos corresponden a su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anjalisinghbe/homework-classification
+- Modelo en Hugging Face: https://huggingface.co/anjalisinghbe/homework-classification
 - Ficheros mencionados en el repositorio (referenciados en la model card, sin URL publica confirmada): `pipeline.py`, `config.json`, `training_args.json`, `model.safetensors`, `README.md`
 - Busqueda web: los resultados obtenidos no guardan relacion con el modelo. Todas las entradas recuperadas corresponden a paginas de descarga y articulos sobre el navegador Opera (opera.com, clubic.com, 01net.com, fr.wikipedia.org), por lo que no se ha identificado ningun paper, blog, repositorio o demo adicional relevante para esta ficha.

@@ -76,7 +76,7 @@ No se dispone de información sobre adaptadores de traducción de embeddings com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QuerynAi/queryn-adapter-me5-large_to_pplx-embed-1
+- Modelo en Hugging Face: https://huggingface.co/QuerynAi/queryn-adapter-me5-large_to_pplx-embed-1
 - Repositorio del motor Queryn: https://github.com/Gigadelux/Queryn
 - Documentación de adaptadores: https://github.com/Gigadelux/Queryn/blob/main/docs/Adapters.md
 - Colección de adaptadores de Queryn: https://huggingface.co/collections/QuerynAi/queryn-embedding-adapters-6a9499470ee93453d02110b4

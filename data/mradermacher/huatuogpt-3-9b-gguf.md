@@ -28,7 +28,7 @@ Un elemento destacable es la presencia de dos ficheros auxiliares de proyector m
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura del modelo base en la documentacion proporcionada. Los metadatos de la model card indican que se trata de una cuantizacion estatica en formato GGUF de un modelo HuggingFace convertido con la cadena de herramientas de llama.cpp, con cuantizacion por tensor activada. El modelo base pertenece a la familia HuatuoGPT-3 de FreedomIntelligence y esta etiquetado como modelo medico, de razonamiento y conversacional.
+No se dispone de informacion detallada sobre la arquitectura del modelo base en la documentacion proporcionada. Los metadatos de la model card indican que se trata de una cuantizacion estatica en formato GGUF de un modelo Hugging Face convertido con la cadena de herramientas de llama.cpp, con cuantizacion por tensor activada. El modelo base pertenece a la familia HuatuoGPT-3 de FreedomIntelligence y esta etiquetado como modelo medico, de razonamiento y conversacional.
 
 Las etiquetas del repositorio incluyen "onepo", que apunta a que el modelo base fue alineado mediante una variante de optimizacion de preferencias (One-PO). No se proporcionan datos sobre el volumen de tokens de entrenamiento, la composicion del corpus, ni si hubo fases adicionales de RLHF o DPO. Tampoco se documenta ninguna innovacion tecnica de atencion o decodificacion. La unica innovacion verificable en este repositorio es el propio proceso de cuantizacion: variantes K-quant e IQ-quant que permiten reducir el modelo hasta 3,9 GB manteniendo el formato compatible con llama.cpp, mas los ficheros mmproj que habilitan el proyector multimodal.
 

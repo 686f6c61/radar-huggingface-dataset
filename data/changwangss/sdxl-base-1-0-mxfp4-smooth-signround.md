@@ -71,14 +71,14 @@ La comparativa se basa en el conocimiento general de los modelos; no se dispone 
 - Sesgos conocidos: el modelo original SDXL fue entrenado con datos de internet, por lo que puede reflejar sesgos de género, raza y cultura presentes en las imágenes de entrenamiento. La cuantización no corrige estos sesgos.
 - Riesgo de alucinacion: en generación de imágenes, el modelo puede producir detalles inconsistentes, texto ilegible o anatomías incorrectas, especialmente con prompts complejos o poco específicos. La cuantización puede aumentar estos artefactos.
 - Limitaciones de contexto: los text encoders tienen una longitud máxima de 77 tokens por encoder, por lo que prompts muy largos se truncan. No se ha verificado si esta variante modifica ese límite.
-- Limitaciones de idioma: aunque el modelo puede interpretar prompts en otros idiomas, su rendimiento óptimo se da en inglés. No se especifican idiomas soportados en la ficha de HuggingFace.
+- Limitaciones de idioma: aunque el modelo puede interpretar prompts en otros idiomas, su rendimiento óptimo se da en inglés. No se especifican idiomas soportados en la ficha de Hugging Face.
 - Restricciones de licencia: la licencia de esta variante no está disponible. El modelo original SDXL usa CreativeML Open RAIL++-M, que permite uso comercial con ciertas restricciones (no usar para generar contenido ilegal o dañino). Se recomienda contactar al autor para aclarar los términos antes de usar en producción.
 - Caveat de cuantización: la cuantización MXFP4 puede degradar la calidad en escenarios de alta exigencia (por ejemplo, rostros o texto pequeño). Se recomienda evaluar visualmente los resultados antes de desplegar en aplicaciones críticas.
 - Compatibilidad: aunque el tag indica `endpoints_compatible`, no se garantiza que todos los componentes (VAE, text encoders) estén cuantizados de la misma forma, lo que podría causar incompatibilidades con ciertas versiones de diffusers o hardware sin soporte para MXFP4.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/changwangss/sdxl-base-1.0-mxfp4-smooth-signround
+- Repositorio Hugging Face: https://huggingface.co/changwangss/sdxl-base-1.0-mxfp4-smooth-signround
 - Modelo original SDXL base (Stability AI): https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Paper de SDXL (arXiv): https://arxiv.org/abs/2307.01952
 - Documentación de diffusers para SDXL: https://huggingface.co/docs/diffusers/using-diffusers/sdxl

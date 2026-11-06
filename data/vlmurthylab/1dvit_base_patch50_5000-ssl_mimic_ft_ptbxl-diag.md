@@ -23,7 +23,7 @@ Su relevancia ahora es la de los modelos fundacionales de senal fisiologica: un 
 | Modalidad de entrada | ECG de 12 derivaciones, 5000 muestras por registro (10 s a 500 Hz) |
 | Tarea | Clasificacion diagnostica sobre PTB-XL (`ptbxl-diag`) |
 | Preentrenamiento | Auto-supervisado (SSL) sobre MIMIC |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Autor original | 4dm-labs |
 | Tipo de publicacion | mirror sin modificaciones del modelo original |
 
@@ -58,7 +58,7 @@ El modelo acompana al trabajo ECGFlow, publicado en NEJM AI en 2025, que constit
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card accesible no incluye metricas de AUC, F1 ni comparaciones numericas sobre PTB-XL, y el pipeline declarado en HuggingFace figura como no disponible. Para cifras de evaluacion debe consultarse la publicacion asociada (Moody JB, et al., NEJM AI 2025) y el repositorio de ECGFlow.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card accesible no incluye metricas de AUC, F1 ni comparaciones numericas sobre PTB-XL, y el pipeline declarado en Hugging Face figura como no disponible. Para cifras de evaluacion debe consultarse la publicacion asociada (Moody JB, et al., NEJM AI 2025) y el repositorio de ECGFlow.
 
 ## Requisitos de hardware
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para inferencia por lotes; una RTX 4090 o una A100 no son necesarias para el modelo en si, pero aceleran el procesamiento de volumenes grandes.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna (GTX 1650, RTX 3060, RTX 4090) e incluso en iGPU con suficiente memoria compartida.
 - CPU: la inferencia en CPU es viable para lotes no interactivos dado el reducido numero de parametros, aunque el throughput sera menor.
-- Opciones de despliegue: PyTorch como via principal, con exportacion a ONNX o TorchScript para servir en produccion; vLLM, llama.cpp, Ollama y TGI no aplican porque estan orientados a modelos de lenguaje. Al no haber `pipeline` declarado en HuggingFace, es necesario cargar los pesos y la arquitectura desde el codigo de ECGFlow en lugar de usar `AutoModel`.
+- Opciones de despliegue: PyTorch como via principal, con exportacion a ONNX o TorchScript para servir en produccion; vLLM, llama.cpp, Ollama y TGI no aplican porque estan orientados a modelos de lenguaje. Al no haber `pipeline` declarado en Hugging Face, es necesario cargar los pesos y la arquitectura desde el codigo de ECGFlow en lugar de usar `AutoModel`.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -75,8 +75,8 @@ No se dispone de datos verificables de alternativas comparables en la informacio
 
 | Modelo | Parametros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `1dvit_base_patch50_5000.ssl_mimic_ft_ptbxl-diag` (este repo, mirror) | 92.724.044 | ECG 12 derivaciones, 5000 muestras | Clasificacion PTB-XL | Apache-2.0 | HuggingFace |
-| `4dm-labs/1dvit_base_patch50_5000.ssl_mimic_ft_ptbxl-diag` (original) | 92.724.044 (mismo modelo) | ECG 12 derivaciones, 5000 muestras | Clasificacion PTB-XL | Apache-2.0 | HuggingFace |
+| `1dvit_base_patch50_5000.ssl_mimic_ft_ptbxl-diag` (este repo, mirror) | 92.724.044 | ECG 12 derivaciones, 5000 muestras | Clasificacion PTB-XL | Apache-2.0 | Hugging Face |
+| `4dm-labs/1dvit_base_patch50_5000.ssl_mimic_ft_ptbxl-diag` (original) | 92.724.044 (mismo modelo) | ECG 12 derivaciones, 5000 muestras | Clasificacion PTB-XL | Apache-2.0 | Hugging Face |
 | Otros modelos fundacionales de ECG | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,8 +93,8 @@ No se dispone de datos verificables de alternativas comparables en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace (este mirror): https://huggingface.co/vlmurthylab/1dvit_base_patch50_5000.ssl_mimic_ft_ptbxl-diag
-- Modelo original en HuggingFace (4dm-labs): https://huggingface.co/4dm-labs/1dvit_base_patch50_5000.ssl_mimic_ft_ptbxl-diag
+- Modelo en Hugging Face (este mirror): https://huggingface.co/vlmurthylab/1dvit_base_patch50_5000.ssl_mimic_ft_ptbxl-diag
+- Modelo original en Hugging Face (4dm-labs): https://huggingface.co/4dm-labs/1dvit_base_patch50_5000.ssl_mimic_ft_ptbxl-diag
 - Codigo y descripcion (4dm-labs): https://github.com/4dm-labs/ecgflow
 - Repositorio del autor del mirror: https://github.com/vlmurthylab/ecgflow
 - Publicacion asociada (ECGFlow, NEJM AI 2025): https://doi.org/10.1056/AIoa2500164

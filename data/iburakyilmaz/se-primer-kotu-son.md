@@ -96,7 +96,7 @@ No se han proporcionado alternativas comparables en la información disponible. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iburakyilmaz/se-primer-kotu-son
+- Modelo en Hugging Face: https://huggingface.co/iburakyilmaz/se-primer-kotu-son
 - Descarga fijada a commit (patrón indicado por el autor): https://huggingface.co/iburakyilmaz/se-primer-kotu-son/resolve/<commit>/model.onnx
 - Referencia citada para el umbral de 0,70: Hosmer y Lemeshow (2000), guía sobre la bondad de ajuste en regresión logística (no se proporciona URL en la información disponible).
 - Documentos internos citados en la model card, sin URL pública en la información disponible: `RELEASE.md`, `spec.md` §13.4 y §13.4.1, `data/SOZLUK.md`.

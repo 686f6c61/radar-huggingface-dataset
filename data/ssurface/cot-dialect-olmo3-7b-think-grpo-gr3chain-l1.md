@@ -70,9 +70,9 @@ Nota: el autor indica que la diferencia de un par de puntos porcentuales esta de
 
 | Modelo | Base | Metodo | GSM8K (greedy) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cot-dialect-olmo3-7b-think-grpo-gr3chain-l1 (este) | Olmo-3-7B-Think | LoRA + GRPO (recompensa gr3chain) | 88.6% | Apache 2.0 | HuggingFace |
-| cot-dialect-olmo3-7b-think-grpo-l1 (modelo principal L1) | Olmo-3-7B-Think | LoRA + GRPO (recompensa estandar) | no disponible | Apache 2.0 | HuggingFace |
-| Olmo-3-7B-Think (base sin adaptador) | - | SFT + DPO | no disponible | Apache 2.0 | HuggingFace |
+| cot-dialect-olmo3-7b-think-grpo-gr3chain-l1 (este) | Olmo-3-7B-Think | LoRA + GRPO (recompensa gr3chain) | 88.6% | Apache 2.0 | Hugging Face |
+| cot-dialect-olmo3-7b-think-grpo-l1 (modelo principal L1) | Olmo-3-7B-Think | LoRA + GRPO (recompensa estandar) | no disponible | Apache 2.0 | Hugging Face |
+| Olmo-3-7B-Think (base sin adaptador) | - | SFT + DPO | no disponible | Apache 2.0 | Hugging Face |
 
 La comparativa directa con el modelo principal de la familia (`grpo-l1`) no esta disponible en la informacion proporcionada. El autor indica que este adaptador es una ablacion y "puede ser peor que el modelo principal al mismo nivel".
 
@@ -90,7 +90,7 @@ La comparativa directa con el modelo principal de la familia (`grpo-l1`) no esta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-gr3chain-l1
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-gr3chain-l1
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Adaptador SFT necesario: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l1
 - Coleccion Olmo 3 de AllenAI: https://huggingface.co/collections/allenai/olmo-3

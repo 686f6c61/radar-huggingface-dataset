@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Rechazos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-7B-Instruct-MPOA-heretic (este) | 7,61B | 131K (YaRN) / 32K por defecto | 19/100 | Apache 2.0 | HuggingFace, transformers |
-| Qwen/Qwen2.5-7B-Instruct | 7,61B | 131K (YaRN) / 32K por defecto | 99/100 | Apache 2.0 | HuggingFace, oficial |
-| Otras variantes abliterated de Qwen2.5-7B | 7,61B | 131K (heredado) | No disponible | Apache 2.0 (heredada) | HuggingFace, comunidad |
-| Meta Llama 3.1 8B Instruct | 8,03B | 128K | No disponible | Llama 3.1 Community License | HuggingFace, oficial |
+| Qwen2.5-7B-Instruct-MPOA-heretic (este) | 7,61B | 131K (YaRN) / 32K por defecto | 19/100 | Apache 2.0 | Hugging Face, transformers |
+| Qwen/Qwen2.5-7B-Instruct | 7,61B | 131K (YaRN) / 32K por defecto | 99/100 | Apache 2.0 | Hugging Face, oficial |
+| Otras variantes abliterated de Qwen2.5-7B | 7,61B | 131K (heredado) | No disponible | Apache 2.0 (heredada) | Hugging Face, comunidad |
+| Meta Llama 3.1 8B Instruct | 8,03B | 128K | No disponible | Llama 3.1 Community License | Hugging Face, oficial |
 
 La comparativa se limita a parametros, contexto y licencia porque no hay benchmarks estandar publicados para esta variante. Frente al original, la diferencia medible es la tasa de rechazos y la divergencia KL; frente a Llama 3.1 8B, la licencia Apache 2.0 es mas permisiva para uso comercial.
 
@@ -92,7 +92,7 @@ La comparativa se limita a parametros, contexto y licencia porque no hay benchma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-MPOA-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-MPOA-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Licencia del base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/blob/main/LICENSE
 - Heretic: https://heretic-project.org

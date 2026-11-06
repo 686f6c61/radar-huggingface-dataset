@@ -74,7 +74,7 @@ No se dispone de datos publicados de otros adaptadores comparables en la informa
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dougalldeepmind/2026-09-12-qwen36-gptresp685-holdline-0 (adaptador LoRA) | Adaptador r=64 sobre base de 27B | No disponible (entrenado con 8192 tokens) | No publicado | No disponible | HuggingFace, 0 descargas |
+| dougalldeepmind/2026-09-12-qwen36-gptresp685-holdline-0 (adaptador LoRA) | Adaptador r=64 sobre base de 27B | No disponible (entrenado con 8192 tokens) | No publicado | No disponible | Hugging Face, 0 descargas |
 | Qwen/Qwen3.6-27B (modelo base, revision 6a9e13bd...) | 27B | No disponible en la informacion proporcionada | No disponible | No disponible | Referenciado como base del adaptador |
 | Otros adaptadores LoRA sobre modelos de ~27B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -92,7 +92,7 @@ No se dispone de datos publicados de otros adaptadores comparables en la informa
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/dougalldeepmind/2026-09-12-qwen36-gptresp685-holdline-0
+- Hugging Face del adaptador: https://huggingface.co/dougalldeepmind/2026-09-12-qwen36-gptresp685-holdline-0
 - Dataset de entrenamiento: https://huggingface.co/datasets/dougalldeepmind/2026-09-12-t2-9284-gptresp685-holdline-train-mixture
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B (revision 6a9e13bd6fc8f0983b9b99948120bc37f49c13e9)
 - Repositorio de origen del codigo de entrenamiento: https://github.com/Matthew-Bozoukov/teaching_claude_why_replication (commit 5022cb0d4a18b77dd1dfc474c5ebf9468a8d9bcf)

@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pythia-1b-ppt-control_nca_steps500_1b-seed208 | 1.01B | no disponible | no disponible | HuggingFace |
-| Pythia-1B (EleutherAI) | 1.01B | 2048 | Apache 2.0 | HuggingFace |
-| GPT-Neo-1.3B (EleutherAI) | 1.3B | 2048 | MIT | HuggingFace |
-| TinyLlama-1.1B | 1.1B | 2048 | Apache 2.0 | HuggingFace |
+| pythia-1b-ppt-control_nca_steps500_1b-seed208 | 1.01B | no disponible | no disponible | Hugging Face |
+| Pythia-1B (EleutherAI) | 1.01B | 2048 | Apache 2.0 | Hugging Face |
+| GPT-Neo-1.3B (EleutherAI) | 1.3B | 2048 | MIT | Hugging Face |
+| TinyLlama-1.1B | 1.1B | 2048 | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar. El modelo aquí analizado carece de licencia y documentación, lo que lo hace menos adecuado para uso comercial que sus alternativas.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento para comparar. El modelo aquí analizado c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_nca_steps500_1b-seed208
+- Modelo en Hugging Face: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_nca_steps500_1b-seed208
 - Variante con preservación de embeddings: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_nca_steps500_1b-seed208-preserve_emb
 - Variante con 100 pasos: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_nca_steps100_1b-seed208
 - Variante con 1000 pasos (vía FriendliAI): https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-control_nca_steps1000_1b-seed208

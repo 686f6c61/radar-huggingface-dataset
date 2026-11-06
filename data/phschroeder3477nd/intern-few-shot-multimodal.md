@@ -81,7 +81,7 @@ No disponible. No se identifican modelos comparables porque el artefacto no es u
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/phschroeder3477nd/intern-few-shot-multimodal
-- Perfil del autor en HuggingFace: https://huggingface.co/phschroeder3477nd
+- Repositorio en Hugging Face: https://huggingface.co/phschroeder3477nd/intern-few-shot-multimodal
+- Perfil del autor en Hugging Face: https://huggingface.co/phschroeder3477nd
 - Resultado de búsqueda web sin relación con el repositorio (perfil profesional): https://uk.linkedin.com/in/richard-carty-39198464
 - Paper, blog, repositorio de código y demo: no disponibles.

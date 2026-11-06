@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks completos en la informacion disponi
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Modelo GGUF en Hugging Face: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Blog oficial de Qwen: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Informe tecnico (PDF): https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf
 - Repositorio GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next/

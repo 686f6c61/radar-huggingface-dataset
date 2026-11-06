@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OmniisTTS-Tini es un modelo publicado en HuggingFace por el usuario Teedyyy-rm. El nombre sugiere que se trata de un sistema de text-to-speech (TTS) de tamaño reducido, pero no se ha publicado ninguna documentación técnica, descripción de arquitectura, tamaño, contexto ni capacidades. El repositorio se encuentra en estado "gated" (acceso restringido), lo que obliga a aceptar condiciones adicionales antes de poder descargar o acceder al contenido.
+OmniisTTS-Tini es un modelo publicado en Hugging Face por el usuario Teedyyy-rm. El nombre sugiere que se trata de un sistema de text-to-speech (TTS) de tamaño reducido, pero no se ha publicado ninguna documentación técnica, descripción de arquitectura, tamaño, contexto ni capacidades. El repositorio se encuentra en estado "gated" (acceso restringido), lo que obliga a aceptar condiciones adicionales antes de poder descargar o acceder al contenido.
 
 La información disponible se limita a metadatos básicos: la licencia es CC-BY-2.0, la fecha de creación es el 5 de septiembre de 2026 y no se registran descargas ni "likes". No se ha publicado información sobre el pipeline, los idiomas soportados, los formatos de pesos o cualquier otro dato técnico. Por tanto, no es posible evaluar su rendimiento ni su idoneidad para casos de uso concretos a partir de los datos disponibles.
 
@@ -21,7 +21,7 @@ La información disponible se limita a metadatos básicos: la licencia es CC-BY-
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo, los datos de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO o cualquier otro metodo de alineacion. El repositorio de HuggingFace no incluye ficha tecnica, README ni documentacion complementaria. El nombre "OmniisTTS-Tini" sugiere una posible implementacion de sintesis de voz, pero no hay ninguna confirmacion oficial de la arquitectura (transformer, SSM, hybrid, etc.) ni de las caracteristicas de inferencia.
+No se dispone de informacion sobre la arquitectura del modelo, los datos de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO o cualquier otro metodo de alineacion. El repositorio de Hugging Face no incluye ficha tecnica, README ni documentacion complementaria. El nombre "OmniisTTS-Tini" sugiere una posible implementacion de sintesis de voz, pero no hay ninguna confirmacion oficial de la arquitectura (transformer, SSM, hybrid, etc.) ni de las caracteristicas de inferencia.
 
 ## Capacidades
 
@@ -56,7 +56,7 @@ No se dispone de datos suficientes para establecer una comparativa fiable. Al no
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones adicionales en HuggingFace antes de poder acceder al modelo.
+- Acceso restringido (gated): es necesario aceptar condiciones adicionales en Hugging Face antes de poder acceder al modelo.
 - Ausencia total de documentacion tecnica: no se puede verificar la arquitectura, el tamano, el contexto ni las capacidades.
 - Riesgo de alucinacion o comportamiento inesperado: al no existir benchmarks ni pruebas publicas, no se puede garantizar la calidad de las salidas.
 - Licencia CC-BY-2.0: permite uso comercial con atribucion, pero la falta de informacion sobre el contenido subyacente impide evaluar si cumple con los requisitos de uso responsable.
@@ -65,6 +65,6 @@ No se dispone de datos suficientes para establecer una comparativa fiable. Al no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Teedyyy-rm/OmniisTTS-Tini
+- Hugging Face: https://huggingface.co/Teedyyy-rm/OmniisTTS-Tini
 - Perfil del autor: https://huggingface.co/Teedyyy-rm
 - Datasets del autor: https://huggingface.co/datasets/Teedyyy-rm/

@@ -6,7 +6,7 @@ Ornith-1.5-35B-A3B es un modelo de lenguaje de gran tamaño desarrollado por el 
 
 El modelo base es una mezcla de expertos (MoE) de aproximadamente 35 mil millones de parámetros totales, de los cuales se activan unos 3 mil millones por token, lo que lo hace eficiente en inferencia. Soporta una ventana de contexto de 256K tokens y está diseñado para razonamiento, uso de herramientas y conversación multilingüe. La versión cuantizada en MLX reduce el tamaño de los pesos a 28,2 GB, facilitando su ejecución en hardware Apple Silicon con memoria unificada.
 
-Esta ficha se centra en la variante solo texto, que es la que se describe en el repositorio de HuggingFace. Para una versión con capacidades de visión, el autor ofrece un modelo hermano con la torre de visión intacta.
+Esta ficha se centra en la variante solo texto, que es la que se describe en el repositorio de Hugging Face. Para una versión con capacidades de visión, el autor ofrece un modelo hermano con la torre de visión intacta.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ Esta ficha se centra en la variante solo texto, que es la que se describe en el 
 | Licencia | MIT |
 | Formato de pesos | safetensors (MLX) |
 
-Nota: el contador de parámetros que muestra HuggingFace (7.584.230.528) es incorrecto, como advierte el propio autor en la model card; es un error común de visualización para cuantizaciones MLX. El tamaño real del repositorio es de 28,2 GB, coherente con una cuantización 6-bit de un modelo de 35B.
+Nota: el contador de parámetros que muestra Hugging Face (7.584.230.528) es incorrecto, como advierte el propio autor en la model card; es un error común de visualización para cuantizaciones MLX. El tamaño real del repositorio es de 28,2 GB, coherente con una cuantización 6-bit de un modelo de 35B.
 
 ## Arquitectura y entrenamiento
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativos. Sin embargo, por su arquitec
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/lukaskremla/Ornith-1.5-35B-A3B-6bit-MLX-TextOnly
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/lukaskremla/Ornith-1.5-35B-A3B-6bit-MLX-TextOnly
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Cuantización MLX 6-bit oficial de ornith-ai: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-6bit
 - Repositorio GitHub del proyecto Ornith: https://github.com/ornith-ai/Ornith-1

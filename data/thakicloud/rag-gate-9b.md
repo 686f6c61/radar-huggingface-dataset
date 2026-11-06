@@ -21,7 +21,7 @@ Se trata de un modelo denso de 8.953.803.264 parametros (aproximadamente 8,95 mi
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (bf16) |
 
-Datos adicionales: tamano del repositorio 17,9 GB; pipeline `text-generation`; libreria `transformers`; descargas y likes registrados en HuggingFace: 0; fecha de creacion del repositorio: 2026-10-05.
+Datos adicionales: tamano del repositorio 17,9 GB; pipeline `text-generation`; libreria `transformers`; descargas y likes registrados en Hugging Face: 0; fecha de creacion del repositorio: 2026-10-05.
 
 ## Arquitectura y entrenamiento
 
@@ -90,8 +90,8 @@ No se documentan en la informacion disponible otros modelos publicos especializa
 
 | Modelo | Parametros | Contexto | Precision de accion (test) | Tasa de respuesta no soportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| RAG-Gate-9B | 8,95 mil millones | no disponible | .955 | .033 | apache-2.0 | HuggingFace (ThakiCloud) |
-| Qwen/Qwen3.5-9B zero-shot | 8,95 mil millones (nominal) | no disponible | .686 | .316 | no disponible en la informacion proporcionada | HuggingFace (Qwen) |
+| RAG-Gate-9B | 8,95 mil millones | no disponible | .955 | .033 | apache-2.0 | Hugging Face (ThakiCloud) |
+| Qwen/Qwen3.5-9B zero-shot | 8,95 mil millones (nominal) | no disponible | .686 | .316 | no disponible en la informacion proporcionada | Hugging Face (Qwen) |
 | Otros modelos de gate de suficiencia | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -109,7 +109,7 @@ No se documentan en la informacion disponible otros modelos publicos especializa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/RAG-Gate-9B
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/RAG-Gate-9B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset ChainCheck: https://huggingface.co/datasets/ThakiCloud/ChainCheck
 - Dataset MuSiQue: https://huggingface.co/datasets/dgslibisey/MuSiQue

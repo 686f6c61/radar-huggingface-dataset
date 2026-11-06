@@ -89,7 +89,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
 - Paper GSQ (arXiv 2604.18556): https://arxiv.org/abs/2604.18556
 - Paper RCO (arXiv 2605.00649): https://arxiv.org/abs/2605.00649
 - Codigo GSQ: https://github.com/IST-DASLab/GSQ

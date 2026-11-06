@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VictorMr/slm-terminal-specialist es un modelo publicado en HuggingFace por el usuario VictorMr bajo licencia MIT. Por el identificador del repositorio, el nombre sugiere un modelo de lenguaje pequeno (SLM, small language model) orientado a tareas de terminal y linea de comandos, pero esta interpretacion procede unicamente del nombre del repositorio: la model card no contiene ninguna descripcion que lo confirme.
+VictorMr/slm-terminal-specialist es un modelo publicado en Hugging Face por el usuario VictorMr bajo licencia MIT. Por el identificador del repositorio, el nombre sugiere un modelo de lenguaje pequeno (SLM, small language model) orientado a tareas de terminal y linea de comandos, pero esta interpretacion procede unicamente del nombre del repositorio: la model card no contiene ninguna descripcion que lo confirme.
 
 La informacion disponible es minima. La model card publicada se limita a la declaracion de licencia MIT y no incluye detalles sobre arquitectura, tamano de parametros, longitud de contexto, datos de entrenamiento, idiomas soportados ni formato de pesos. El repositorio no tiene etiqueta de pipeline asignada, no declara idiomas y, en el momento de la consulta, registra cero descargas y cero likes.
 
@@ -75,7 +75,7 @@ No disponible. No se dispone de datos de parametros, contexto, rendimiento ni li
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| VictorMr/slm-terminal-specialist | no disponible | no disponible | MIT | HuggingFace |
+| VictorMr/slm-terminal-specialist | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. No se dispone de datos de parametros, contexto, rendimiento ni li
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VictorMr/slm-terminal-specialist
+- Hugging Face: https://huggingface.co/VictorMr/slm-terminal-specialist
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ejing/FP-image-to-video-FLUX.1-HV-bf16 | 12,87 B | Image-to-video (derivado de FLUX.1) | no disponible | HuggingFace (0 descargas) |
+| ejing/FP-image-to-video-FLUX.1-HV-bf16 | 12,87 B | Image-to-video (derivado de FLUX.1) | no disponible | Hugging Face (0 descargas) |
 | FLUX.1 (Black Forest Labs) | aprox. 12 B | Texto-a-imagen / difusion | FLUX.1 [dev] no comercial; [schnell] Apache 2.0 | Ampliamente disponible |
-| FramePack (lllyasviel) | no disponible | Image-to-video autorregresivo | Apache 2.0 (segun repositorio original) | GitHub + HuggingFace |
+| FramePack (lllyasviel) | no disponible | Image-to-video autorregresivo | Apache 2.0 (segun repositorio original) | GitHub + Hugging Face |
 
 No se dispone de datos suficientes para comparar rendimiento numerico entre estas alternativas. La comparativa se limita a parametros, tipo y licencia.
 
@@ -83,6 +83,6 @@ No se dispone de datos suficientes para comparar rendimiento numerico entre esta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ejing/FP-image-to-video-FLUX.1-HV-bf16
+- Repositorio en Hugging Face: https://huggingface.co/ejing/FP-image-to-video-FLUX.1-HV-bf16
 - Repositorio ai-video-generator mencionado en la model card: https://github.com/suparious/ai-video-generator
 - No se han encontrado papers, blogs, demos ni repositorios adicionales relevantes en la busqueda web.

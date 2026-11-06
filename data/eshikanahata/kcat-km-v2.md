@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Leak CURBER kcat–Km es un artefacto publicado en HuggingFace por el usuario eshikanahata bajo el identificador `kcat-km-v2`. Por los tags declarados (`leak-curber`, `kcat`, `km`) y el punto de entrada documentado (`predict.py`), se trata de un modelo predictivo orientado a estimar parámetros cinéticos enzimáticos: la constante catalítica (kcat) y la constante de Michaelis (Km). No es un modelo de lenguaje generativo, sino un pipeline de regresión entrenado para predecir valores numéricos a partir de entradas biológicas.
+Leak CURBER kcat–Km es un artefacto publicado en Hugging Face por el usuario eshikanahata bajo el identificador `kcat-km-v2`. Por los tags declarados (`leak-curber`, `kcat`, `km`) y el punto de entrada documentado (`predict.py`), se trata de un modelo predictivo orientado a estimar parámetros cinéticos enzimáticos: la constante catalítica (kcat) y la constante de Michaelis (Km). No es un modelo de lenguaje generativo, sino un pipeline de regresión entrenado para predecir valores numéricos a partir de entradas biológicas.
 
 El repositorio ocupa 1.0 GB y contiene pesos en formato `joblib` y `safetensors`, lo que sugiere una combinación de artefactos de scikit-learn (u otra librería Python serializada con joblib) y tensores de un modelo neuronal. La model card es extremadamente escueta: se limita a declarar los tags, la licencia MIT y el comando de invocación, sin detallar arquitectura, datos de entrenamiento, métricas ni requisitos.
 
@@ -34,7 +34,7 @@ Tampoco se documenta el preprocesado de entradas (secuencias proteicas, sustrato
 - Empaquetado como contenedor o aplicación Python (la ruta `/app/predict.py` sugiere un entorno Docker).
 - No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingües.
 - No se documentan capacidades de visión, audio ni modo de razonamiento explícito.
-- No se declara pipeline en HuggingFace, por lo que no es invocable mediante la Inference API estándar.
+- No se declara pipeline en Hugging Face, por lo que no es invocable mediante la Inference API estándar.
 
 ## Casos de uso
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eshikanahata/kcat-km-v2 | Predictor de kcat/Km (joblib + safetensors) | no disponible | no aplica | MIT | HuggingFace, 0 descargas |
+| eshikanahata/kcat-km-v2 | Predictor de kcat/Km (joblib + safetensors) | no disponible | no aplica | MIT | Hugging Face, 0 descargas |
 | DLKcat | Predictor de kcat basado en GNN | no disponible en esta ficha | no aplica | no disponible | Repositorio académico |
 | UniKP | Predictor de kcat/Km con preentrenamiento | no disponible en esta ficha | no aplica | no disponible | Repositorio académico |
 | CatPred | Predictor de parámetros cinéticos con incertidumbre | no disponible en esta ficha | no aplica | no disponible | Repositorio académico |
@@ -81,4 +81,4 @@ No se dispone de datos de rendimiento del modelo evaluado que permitan una compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eshikanahata/kcat-km-v2
+- Hugging Face: https://huggingface.co/eshikanahata/kcat-km-v2

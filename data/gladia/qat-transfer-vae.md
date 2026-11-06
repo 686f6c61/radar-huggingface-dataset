@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gladia/qat-transfer-vae | 49,5 M (decodificador) | no aplica | int3, fp4, NVFP4 (QAT/QAD) | creativeml-openrail-m | HuggingFace, `.pt` |
-| stable-diffusion-v1-5 VAE (original) | 83,7 M (VAE completo) | no aplica | fp32/fp16 | creativeml-openrail-m | HuggingFace, safetensors |
-| gladia/qat-transfer-timm | no disponible en la informacion | no aplica | int3, fp4, NVFP4 | no disponible en la informacion | HuggingFace |
-| gladia/qat-transfer-open_clip | no disponible en la informacion | no aplica | int3, fp4, NVFP4 | no disponible en la informacion | HuggingFace |
+| gladia/qat-transfer-vae | 49,5 M (decodificador) | no aplica | int3, fp4, NVFP4 (QAT/QAD) | creativeml-openrail-m | Hugging Face, `.pt` |
+| stable-diffusion-v1-5 VAE (original) | 83,7 M (VAE completo) | no aplica | fp32/fp16 | creativeml-openrail-m | Hugging Face, safetensors |
+| gladia/qat-transfer-timm | no disponible en la informacion | no aplica | int3, fp4, NVFP4 | no disponible en la informacion | Hugging Face |
+| gladia/qat-transfer-open_clip | no disponible en la informacion | no aplica | int3, fp4, NVFP4 | no disponible en la informacion | Hugging Face |
 
 La comparativa directa con otras VAEs cuantizadas de forma consciente no esta disponible en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ La comparativa directa con otras VAEs cuantizadas de forma consciente no esta di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gladia/qat-transfer-vae
+- Hugging Face: https://huggingface.co/gladia/qat-transfer-vae
 - Repositorio de codigo: https://github.com/gladia-research-group/qat-transfer
 - arXiv: https://arxiv.org/abs/2604.03420
 - OpenReview: https://openreview.net/forum?id=wrUEnnSgXa

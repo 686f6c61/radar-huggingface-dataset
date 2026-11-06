@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kartikm17/voice-clone-detector-hi-en-weights` es un detector de voces clonadas o sintéticas (deepfake de audio) orientado a los idiomas hindi e inglés, según se desprende de su identificador. Fue publicado por el usuario kartikm17 en HuggingFace con licencia MIT, aunque la model card está prácticamente vacía y no se proporciona ninguna especificación técnica adicional. El repositorio ocupa 1,3 GB, lo que sugiere un modelo de tamaño moderado, pero no se indica la arquitectura, el pipeline ni los datos de entrenamiento.
+El modelo `kartikm17/voice-clone-detector-hi-en-weights` es un detector de voces clonadas o sintéticas (deepfake de audio) orientado a los idiomas hindi e inglés, según se desprende de su identificador. Fue publicado por el usuario kartikm17 en Hugging Face con licencia MIT, aunque la model card está prácticamente vacía y no se proporciona ninguna especificación técnica adicional. El repositorio ocupa 1,3 GB, lo que sugiere un modelo de tamaño moderado, pero no se indica la arquitectura, el pipeline ni los datos de entrenamiento.
 
 La relevancia de este tipo de modelos es alta en el contexto actual de proliferación de voces sintéticas generadas por IA, que se utilizan tanto en aplicaciones legítimas como en fraudes y suplantaciones. Sin embargo, la falta de documentación y de resultados de evaluación hace que su utilidad práctica sea difícil de valorar sin pruebas adicionales. Este modelo podría ser un punto de partida para quienes buscan una solución de detección de voz clonada en hindi e inglés, pero se recomienda verificar su rendimiento antes de usarlo en producción.
 
@@ -64,5 +64,5 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kartikm17/voice-clone-detector-hi-en-weights
+- Repositorio Hugging Face: https://huggingface.co/kartikm17/voice-clone-detector-hi-en-weights
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo) relacionados con este modelo especifico.

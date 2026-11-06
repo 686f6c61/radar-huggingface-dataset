@@ -18,7 +18,7 @@ El repositorio ocupa 14,3 GB e incluye tres artefactos: `encoder.onnx` con datos
 | Longitud de contexto | no disponible (modelo de audio; no se especifica la duracion maxima de clip soportada) |
 | Tipos de cuantizacion | Solo fp32. Int8 dinamica descartada por corrupcion de salida; fp16 no completado por un fallo de herramienta |
 | Idiomas soportados | 27 lenguas indias mas ingles con acento indio |
-| Licencia | Indic Open Model License v1.0 (campo `license: other` en HuggingFace) |
+| Licencia | Indic Open Model License v1.0 (campo `license: other` en Hugging Face) |
 | Formato de pesos | ONNX (`encoder.onnx` + `encoder.onnx.data` en formato de datos externos, `decoder.onnx`), mas `tokens.txt` |
 | Tamano del repositorio | 14,3 GB |
 | Muestreo de audio | 16 kHz mono, float32 |
@@ -91,7 +91,7 @@ Los datos de comparacion de modelos de terceros proceden de conocimiento general
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iniquitous/indic-transcribe-flex-onnx
+- Modelo en Hugging Face: https://huggingface.co/iniquitous/indic-transcribe-flex-onnx
 - Modelo base: https://huggingface.co/bodhan-ai/indic-transcribe-flex
 - Arquitectura de origen: https://huggingface.co/nvidia/canary-1b-v2
 - sherpa-onnx (repositorio): https://github.com/k2-fsa/sherpa-onnx

@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mysterium99/smolvla-100pct-neutral | 450.046.176 | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| lerobot/smolvla_base | no disponible (base de este modelo) | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| OpenVLA | 7.000.000.000 aprox. | no disponible | no disponible | no disponible | HuggingFace |
+| mysterium99/smolvla-100pct-neutral | 450.046.176 | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| lerobot/smolvla_base | no disponible (base de este modelo) | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| OpenVLA | 7.000.000.000 aprox. | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/mysterium99/smolvla-100pct-neutral
+- Hugging Face del modelo: https://huggingface.co/mysterium99/smolvla-100pct-neutral
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Guía de SmolVLA en LeRobot: https://huggingface.co/docs/lerobot/main/en/smolvla
 - Dataset default_merged: https://huggingface.co/datasets/default_merged

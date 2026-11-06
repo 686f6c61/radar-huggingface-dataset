@@ -18,7 +18,7 @@ Su relevancia actual radica en que permite ejecutar VAD de alta precisión en C+
 | Longitud de contexto | no aplica: modelo de audio por tramas (10 ms en `stream-vad`); la variante `vad` usa contexto bidireccional con lookback y lookahead |
 | Tipos de cuantizacion | FP32, INT16, INT8 per-tensor, INT8 per-channel (INT8-CH) |
 | Idiomas soportados | más de 100 idiomas para AED (habla, música y canto); el VAD es agnóstico al idioma |
-| Licencia | Apache 2.0 (modelo original de FireRedTeam y conversión GGUF de Strg-Alt-Entf-0x00); la metadata del repositorio en HuggingFace no declara licencia |
+| Licencia | Apache 2.0 (modelo original de FireRedTeam y conversión GGUF de Strg-Alt-Entf-0x00); la metadata del repositorio en Hugging Face no declara licencia |
 | Formato de pesos | GGUF |
 | Variantes incluidas | `stream-vad` (causal), `vad` (bidireccional), `aed` (detección de eventos) |
 | Tamano de pesos | de 574 KB (INT8) a 2,36 MB (FP32) por variante |
@@ -101,7 +101,7 @@ No se han proporcionado en la información disponible resultados de benchmarks c
 
 - No es un modelo de lenguaje: no genera texto, no razona y no soporta tool calling ni agentes. Cualquier ficha o comparativa que lo trate como un LLM es incorrecta.
 - Riesgo de alucinación no aplica en el sentido habitual, pero sí existe el riesgo de falsos positivos y falsos negativos en la detección de voz, especialmente en audio con ruido musical o habla superpuesta.
-- La metadata del repositorio en HuggingFace no declara licencia ni lista de idiomas, aunque la model card indica Apache 2.0 para el modelo original y para la conversión.
+- La metadata del repositorio en Hugging Face no declara licencia ni lista de idiomas, aunque la model card indica Apache 2.0 para el modelo original y para la conversión.
 - Existe una discrepancia entre el identificador del repositorio consultado (`ldov/FireRedVAD-GGUF`) y el que aparece en los ejemplos de la model card (`Strg-Alt-Entf-0x00/FireRedVAD-GGUF`); conviene verificar cuál es el repositorio canónico antes de integrarlo en producción.
 - El repositorio presenta 0 descargas y 0 me gusta, con un tamano declarado de 0,0 GB, lo que sugiere que los ficheros podrían no estar efectivamente alojados o que el repositorio está vacío en el momento de la consulta.
 - La cuantización INT8 per-tensor degrada la precisión de forma apreciable en arquitecturas DFSMN (SQNR de 50,5 dB frente a 59,4 dB de INT8-CH); se desaconseja su uso en producción si se busca fidelidad numérica.
@@ -112,8 +112,8 @@ No se han proporcionado en la información disponible resultados de benchmarks c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ldov/FireRedVAD-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/ldov/FireRedVAD-GGUF
 - Repositorio mencionado en la model card: https://huggingface.co/Strg-Alt-Entf-0x00/FireRedVAD-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/FireRedTeam/FireRedVAD
+- Modelo base en Hugging Face: https://huggingface.co/FireRedTeam/FireRedVAD
 - Repositorio original de FireRedVAD (FireRedTeam, Xiaohongshu): https://github.com/FireRedTeam/FireRedVAD
 - Motor de inferencia C++ y herramientas de conversión: https://github.com/Strg-Alt-Entf-0x00/firered-vad

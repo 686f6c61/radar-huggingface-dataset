@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-1B-math-fft-gguf es una distribucion en formato GGUF de un ajuste fino del modelo Llama 3.2 1B de Meta, publicado por el usuario tayaee en HuggingFace. El nombre del repositorio sugiere una especializacion en matematicas (sufijo "math") junto con alguna tecnica o dominio adicional denotado por "fft", si bien no se dispone de documentacion que confirme el significado exacto de dicho sufijo ni el proceso de entrenamiento aplicado. El modelo cuenta con 1.235.816.480 parametros totales y un repositorio de 1,3 GB, lo que resulta coherente con una cuantizacion de pocos bits sobre los aproximadamente 1,24 mil millones de parametros de la arquitectura base.
+Llama-3.2-1B-math-fft-gguf es una distribucion en formato GGUF de un ajuste fino del modelo Llama 3.2 1B de Meta, publicado por el usuario tayaee en Hugging Face. El nombre del repositorio sugiere una especializacion en matematicas (sufijo "math") junto con alguna tecnica o dominio adicional denotado por "fft", si bien no se dispone de documentacion que confirme el significado exacto de dicho sufijo ni el proceso de entrenamiento aplicado. El modelo cuenta con 1.235.816.480 parametros totales y un repositorio de 1,3 GB, lo que resulta coherente con una cuantizacion de pocos bits sobre los aproximadamente 1,24 mil millones de parametros de la arquitectura base.
 
 La relevancia de esta ficha es limitada y debe enmarcarse con cautela: se trata de una publicacion con 14 descargas, 0 likes y sin model card sustantiva, creada y actualizada el 19 de octubre de 2026 en un intervalo de 36 segundos. No hay informacion publica sobre dataset de entrenamiento, licencia, idiomas soportados ni resultados de evaluacion.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| tayaee/Llama-3.2-1B-math-fft-gguf | 1.235.816.480 | no disponible | no disponible | GGUF | HuggingFace, 14 descargas |
-| Llama 3.2 1B Instruct (Meta) | 1.240 millones aprox. | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF oficial | HuggingFace, ampliamente distribuido |
-| Qwen2.5-Math-1.5B | 1.500 millones aprox. | 4.096 tokens (ampliable) | Apache 2.0 | safetensors, GGUF comunitario | HuggingFace, con benchmarks publicados |
-| Gemma 2 2B | 2.600 millones aprox. | 8.192 tokens | Gemma Terms of Use | safetensors, GGUF comunitario | HuggingFace, con model card completa |
+| tayaee/Llama-3.2-1B-math-fft-gguf | 1.235.816.480 | no disponible | no disponible | GGUF | Hugging Face, 14 descargas |
+| Llama 3.2 1B Instruct (Meta) | 1.240 millones aprox. | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF oficial | Hugging Face, ampliamente distribuido |
+| Qwen2.5-Math-1.5B | 1.500 millones aprox. | 4.096 tokens (ampliable) | Apache 2.0 | safetensors, GGUF comunitario | Hugging Face, con benchmarks publicados |
+| Gemma 2 2B | 2.600 millones aprox. | 8.192 tokens | Gemma Terms of Use | safetensors, GGUF comunitario | Hugging Face, con model card completa |
 
 La comparativa se ofrece a modo de referencia de categoria; los datos de Llama 3.2 1B, Qwen2.5-Math y Gemma 2 proceden del conocimiento general de esos modelos y no de la informacion proporcionada en esta busqueda, por lo que conviene verificarlos en sus respectivas model cards antes de citarlos.
 
@@ -81,6 +81,6 @@ La comparativa se ofrece a modo de referencia de categoria; los datos de Llama 3
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tayaee/Llama-3.2-1B-math-fft-gguf
+- Repositorio Hugging Face: https://huggingface.co/tayaee/Llama-3.2-1B-math-fft-gguf
 
 No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

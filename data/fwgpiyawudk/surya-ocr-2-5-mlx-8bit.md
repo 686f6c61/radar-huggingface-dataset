@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: fwgpiyawudk/surya-ocr-2.5-mlx-8bit](https://huggingface.co/fwgpiyawudk/surya-ocr-2.5-mlx-8bit)
+- [Hugging Face: fwgpiyawudk/surya-ocr-2.5-mlx-8bit](https://huggingface.co/fwgpiyawudk/surya-ocr-2.5-mlx-8bit)
 - [Modelo base: datalab-to/surya-ocr-2.5](https://huggingface.co/datalab-to/surya-ocr-2.5)
-- [Datalab (organización en HuggingFace)](https://huggingface.co/datalab-to)
+- [Datalab (organización en Hugging Face)](https://huggingface.co/datalab-to)
 - [MLX (Apple)](https://github.com/ml-explore/mlx)

@@ -15,7 +15,7 @@ Se trata de un modelo denso (no mixtura de expertos) con una ventana de contexto
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 262.000 tokens (262K) según la información publicada |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Inglés (según la ficha de HuggingFace) |
+| Idiomas soportados | Inglés (según la ficha de Hugging Face) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
@@ -63,12 +63,12 @@ No se dispone de datos comparativos con modelos similares en la información pro
 
 - Sesgos conocidos: no disponibles en la información proporcionada.
 - Riesgo de alucinación: inherente a los modelos generativos; no se aportan medidas específicas de mitigación.
-- Limitaciones de idioma: la ficha de HuggingFace solo indica inglés, aunque el modelo podría soportar más idiomas; no hay confirmación en la información disponible.
+- Limitaciones de idioma: la ficha de Hugging Face solo indica inglés, aunque el modelo podría soportar más idiomas; no hay confirmación en la información disponible.
 - Restricciones de licencia: Apache 2.0 permite uso comercial y modificación, pero es necesario mantener el aviso de licencia en redistribuciones.
 - Caveat de disponibilidad: este repositorio es un re-host no oficial (fatymahaly), no el repositorio original de Qwen. No hay garantías de mantenimiento, soporte ni integridad de los pesos frente a la fuente oficial.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/fatymahaly/Qwen3.8-27B
+- Repositorio de Hugging Face: https://huggingface.co/fatymahaly/Qwen3.8-27B
 - Repositorio original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Artículo externo con detalles: https://www.studioglobal.ai/discover/answers/what-are-the-key-details-and-benchmark-6a7f8bcf10551e202b12af41

@@ -63,7 +63,7 @@ Estas métricas indican una correlación alta entre las puntuaciones predichas y
 - El adaptador LoRA es ligero (~1 GB), pero requiere el modelo base Qwen2.5-VL-7B-Instruct para funcionar, que tiene aproximadamente 7B parámetros.
 - Para inferencia en FP16, se estima una VRAM de al menos 16 GB (por ejemplo, una RTX 4090 o A100 40 GB). Con cuantización a 8 bits o 4 bits, podría caber en GPUs con 8-12 GB, aunque no se especifican configuraciones concretas.
 - El procesamiento de 24 imágenes por vídeo aumenta el coste computacional en comparación con una sola imagen; se recomienda una GPU con suficiente memoria para el batch de imágenes.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería `peft` y el modelo base desde HuggingFace. También es posible usar frameworks como vLLM o TGI si se integra el adaptador, aunque no se menciona explícitamente.
+- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería `peft` y el modelo base desde Hugging Face. También es posible usar frameworks como vLLM o TGI si se integra el adaptador, aunque no se menciona explícitamente.
 - La latencia dependerá del número de fotogramas y de la GPU; no se proporcionan datos de throughput.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shreshthsaini/brightrate-lm-7b-multiexposure
+- Modelo en Hugging Face: https://huggingface.co/shreshthsaini/brightrate-lm-7b-multiexposure
 - Repositorio BrightRate-LM: https://github.com/shreshthsaini/BrightRate-LM
 - Dataset BrightVQ: https://github.com/shreshthsaini/BrightVQ
 - Página personal del autor: https://shreshthsaini.github.io/

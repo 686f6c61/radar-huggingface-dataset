@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolVLA (este fine-tuning) | ~500M | no disponible | Pick-and-place | Apache-2.0 | HuggingFace |
+| SmolVLA (este fine-tuning) | ~500M | no disponible | Pick-and-place | Apache-2.0 | Hugging Face |
 | ACT (Action Chunking with Transformers) | ~80M | no disponible | Manipulacion robotica | MIT | Codigo abierto |
-| OpenVLA | 7B | no disponible | Manipulacion robotica general | MIT | HuggingFace |
+| OpenVLA | 7B | no disponible | Manipulacion robotica general | MIT | Hugging Face |
 
 SmolVLA ofrece un equilibrio entre tamano y capacidad, siendo mucho mas ligero que OpenVLA pero con una arquitectura mas moderna que ACT. Su integracion con LeRobot y su licencia Apache-2.0 lo hacen especialmente atractivo para proyectos comerciales y de investigacion. La comparacion directa de rendimiento no es posible sin datos de benchmarks en la misma tarea.
 
@@ -74,7 +74,7 @@ SmolVLA ofrece un equilibrio entre tamano y capacidad, siendo mucho mas ligero q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HyeonseokE/smolvla_phase1_pick_place_A2_2000_10fps
+- Repositorio Hugging Face: https://huggingface.co/HyeonseokE/smolvla_phase1_pick_place_A2_2000_10fps
 - Perfil del autor: https://huggingface.co/HyeonseokE
 - Repositorio del dataset: https://huggingface.co/datasets/HyeonseokE/phase1_pick_place_A2_10fps
 - Paper de SmolVLA: https://arxiv.org/abs/2506.01844

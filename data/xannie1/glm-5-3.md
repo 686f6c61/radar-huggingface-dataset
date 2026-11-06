@@ -113,7 +113,7 @@ Alternativas de la misma categoría (~700B+ en abierto para coding y agentes): G
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xannie1/GLM-5.3
+- Repositorio en Hugging Face: https://huggingface.co/xannie1/GLM-5.3
 - Documentación oficial de Z.ai: https://docs.z.ai/guides/llm/glm-5.3
 - Blog de anuncio: https://z.ai/blog/glm-5.3
 - Repositorio GitHub de la familia GLM-5: https://github.com/zai-org/GLM-5

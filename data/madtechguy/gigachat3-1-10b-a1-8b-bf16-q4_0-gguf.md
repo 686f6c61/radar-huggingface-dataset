@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| madtechguy/GigaChat3.1-10B-A1.8B-bf16-Q4_0-GGUF (este) | 10.672.535.616 | ~1,8 B (según denominación) | No disponible | GGUF Q4_0 | MIT | HuggingFace, 0 descargas, 0 likes |
-| ai-sage/GigaChat3.1-10B-A1.8B-bf16 (base) | 10.672.535.616 | ~1,8 B (según denominación) | No disponible | Safetensors bf16 | MIT | HuggingFace |
+| madtechguy/GigaChat3.1-10B-A1.8B-bf16-Q4_0-GGUF (este) | 10.672.535.616 | ~1,8 B (según denominación) | No disponible | GGUF Q4_0 | MIT | Hugging Face, 0 descargas, 0 likes |
+| ai-sage/GigaChat3.1-10B-A1.8B-bf16 (base) | 10.672.535.616 | ~1,8 B (según denominación) | No disponible | Safetensors bf16 | MIT | Hugging Face |
 | Alternativas de terceros (otros MoE de tamaño similar) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han proporcionado datos verificables de otros modelos comparables de la misma categoría (MoE de ~10 B totales con ~1-2 B activos) en la información disponible, por lo que no se incluyen cifras de rendimiento ni de contexto que no puedan contrastarse. La comparación directa más fiable es contra el checkpoint bf16 del que deriva este GGUF: misma arquitectura y licencia, con la diferencia de precisión (bf16 frente a Q4_0) y de tamaño en disco (el repositorio cuantizado ocupa 6,1 GB).
@@ -84,8 +84,8 @@ No se han proporcionado datos verificables de otros modelos comparables de la mi
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/madtechguy/GigaChat3.1-10B-A1.8B-bf16-Q4_0-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/ai-sage/GigaChat3.1-10B-A1.8B-bf16
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/madtechguy/GigaChat3.1-10B-A1.8B-bf16-Q4_0-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/ai-sage/GigaChat3.1-10B-A1.8B-bf16
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Instrucciones de uso de llama.cpp: https://github.com/ggerganov/llama.cpp?tab=readme-ov-file#usage

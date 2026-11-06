@@ -44,7 +44,7 @@ No hay información disponible sobre el número de tokens de entrenamiento, la c
 - Comparación de implementaciones: usar el checkpoint como referencia para contrastar una implementación propia de transformer causal frente a la del autor, con el mismo tokenizador y configuración.
 - Depuración de pipelines de entrenamiento: reutilizar el tokenizador, `config.json` y el estado del optimizador para reproducir paso a paso el bucle de entrenamiento y detectar problemas de convergencia.
 - Prácticas de evaluación de modelos: generar texto con el checkpoint para ilustrar en clase conceptos como perplejidad, temperatura de muestreo y degradación con contexto largo.
-- Demostración de empaquetado de artefactos: servir como ejemplo de qué ficheros acompañan a un modelo (pesos, configuración, tokenizador, metadatos) en un repositorio de HuggingFace.
+- Demostración de empaquetado de artefactos: servir como ejemplo de qué ficheros acompañan a un modelo (pesos, configuración, tokenizador, metadatos) en un repositorio de Hugging Face.
 - Auditoría de licencias y procedencia: caso práctico de análisis de un repositorio sin licencia declarada ni model card formal, útil para discutir riesgos de reutilización de artefactos académicos.
 
 ## Benchmarks y rendimiento
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Dato indirecto: el repositorio completo ocupa 0,2 GB e incluye pesos, estado del optimizador (habitualmente varias veces el tamaño de los pesos en entrenamiento con Adam), configuración y tokenizador. Esto sugiere un modelo de tamaño reducido, pero no permite derivar un recuento de parámetros con rigor.
 - GPU recomendadas: no disponibles; no se documentan requisitos.
 - Cabeza en GPU de consumo: probablemente sí dado el tamaño del repositorio (0,2 GB), aunque no confirmado por el autor.
-- Opciones de despliegue: el autor especifica que la carga debe hacerse con el código de la asignatura (`src.training.load_checkpoint` y `src.part1.model.Transformer`). No se documenta compatibilidad con vLLM, llama.cpp, Ollama, TGI ni transformers de HuggingFace.
+- Opciones de despliegue: el autor especifica que la carga debe hacerse con el código de la asignatura (`src.training.load_checkpoint` y `src.part1.model.Transformer`). No se documenta compatibilidad con vLLM, llama.cpp, Ollama, TGI ni transformers de Hugging Face.
 - Latencia y throughput estimados: no disponibles. Dependen de un recuento de parámetros y de un contexto que no se han publicado.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No disponible. Se trata de un checkpoint académico de arquitectura personalizad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vipenl26/anlp-assignment-2-part2-sophia
+- Hugging Face: https://huggingface.co/vipenl26/anlp-assignment-2-part2-sophia
 - Paper: no disponible
 - Blog o documentación adicional: no disponible
 - Repositorio de código: no disponible públicamente; el autor remite al código fuente de la asignatura ANLP (`src.training.load_checkpoint`, `src.part1.model.Transformer`), sin enlace publicado

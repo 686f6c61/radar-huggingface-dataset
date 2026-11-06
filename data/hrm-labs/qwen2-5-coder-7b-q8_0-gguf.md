@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hrm-labs/Qwen2.5-Coder-7B-Q8_0-GGUF (este) | 7.615.616.512 | no disponible | GGUF Q8_0 | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-Coder-7B (modelo base) | 7.615.616.512 | no disponible en la informacion proporcionada | safetensors | apache-2.0 | HuggingFace |
+| hrm-labs/Qwen2.5-Coder-7B-Q8_0-GGUF (este) | 7.615.616.512 | no disponible | GGUF Q8_0 | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-Coder-7B (modelo base) | 7.615.616.512 | no disponible en la informacion proporcionada | safetensors | apache-2.0 | Hugging Face |
 | Otras cuantizaciones GGUF del mismo modelo base | mismo numero de parametros | no disponible | GGUF (Q4, Q5, Q6, etc.) | apache-2.0 | no confirmado en la informacion |
 | Otros modelos de codigo de ~7B (por ejemplo CodeLlama-7B, DeepSeek-Coder-6.7B) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,7 +86,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hrm-labs/Qwen2.5-Coder-7B-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/hrm-labs/Qwen2.5-Coder-7B-Q8_0-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B
 - Model card del modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B/blob/main/README.md
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B/blob/main/LICENSE

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-350M-SmolDataEnvs-SFT es un ajuste fino (SFT) del modelo base LiquidAI/LFM2.5-350M, publicado por el usuario lugman-madhiai en HuggingFace. Se trata de un modelo de generacion de texto de pequeno tamano, con 354.483.968 parametros (aproximadamente 354 millones), derivado de la familia LFM2 de Liquid AI. El ajuste se ha realizado utilizando Unsloth y la libreria TRL de HuggingFace, segun indica la model card, lo que sugiere un entrenamiento optimizado en memoria y velocidad.
+LFM2.5-350M-SmolDataEnvs-SFT es un ajuste fino (SFT) del modelo base LiquidAI/LFM2.5-350M, publicado por el usuario lugman-madhiai en Hugging Face. Se trata de un modelo de generacion de texto de pequeno tamano, con 354.483.968 parametros (aproximadamente 354 millones), derivado de la familia LFM2 de Liquid AI. El ajuste se ha realizado utilizando Unsloth y la libreria TRL de Hugging Face, segun indica la model card, lo que sugiere un entrenamiento optimizado en memoria y velocidad.
 
 El modelo hereda la arquitectura LFM2 (Liquid Foundation Model 2) del modelo base, aunque la model card no detalla las caracteristicas especificas de dicha arquitectura. El nombre del repositorio incluye "SmolDataEnvs", lo que sugiere un entrenamiento sobre un conjunto de datos relacionado con entornos o datos sinteticos, aunque no se proporciona informacion adicional sobre la composicion del dataset de ajuste.
 
@@ -25,7 +25,7 @@ Su relevancia radica en ser un ejemplo de ajuste fino de un modelo pequeno (350M
 
 El modelo es un ajuste fino supervisado (SFT) del modelo base LiquidAI/LFM2.5-350M, que pertenece a la familia LFM2 de Liquid AI. La model card no proporciona detalles sobre la arquitectura interna del modelo base (tipo de transformer, uso de atencion lineal, SSM o arquitectura hibrida), por lo que no es posible confirmar las innovaciones tecnicas concretas de LFM2 a partir de la informacion disponible.
 
-El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, segun la model card, que indica que el modelo "fue entrenado 2x mas rapido" con Unsloth. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. El nombre del repositorio ("SmolDataEnvs") sugiere un dataset relacionado con entornos, pero no hay confirmacion ni detalles adicionales.
+El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, segun la model card, que indica que el modelo "fue entrenado 2x mas rapido" con Unsloth. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. El nombre del repositorio ("SmolDataEnvs") sugiere un dataset relacionado con entornos, pero no hay confirmacion ni detalles adicionales.
 
 ## Capacidades
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-SFT
+- Hugging Face: https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-SFT
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Unsloth: https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

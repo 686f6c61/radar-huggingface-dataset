@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `wz7475/qwen2.5-7b-instruct-katcher-legal-spectral-reg-l3` es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario `wz7475` sobre el modelo base Qwen2.5-7B-Instruct. El identificador sugiere un entrenamiento orientado al dominio legal ("legal") con alguna variante de regularizacion o adaptacion espectral ("spectral-reg") en su tercera iteracion ("l3"), aunque el autor no documenta nada de esto en la model card, que es la plantilla autogenerada por defecto y no contiene informacion sustantiva.
+El repositorio `wz7475/qwen2.5-7b-instruct-katcher-legal-spectral-reg-l3` es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario `wz7475` sobre el modelo base Qwen2.5-7B-Instruct. El identificador sugiere un entrenamiento orientado al dominio legal ("legal") con alguna variante de regularizacion o adaptacion espectral ("spectral-reg") en su tercera iteracion ("l3"), aunque el autor no documenta nada de esto en la model card, que es la plantilla autogenerada por defecto y no contiene informacion sustantiva.
 
 El modelo cuenta con 7.615.616.512 parametros segun los pesos en safetensors del repositorio, con un tamano total de 15,2 GB, lo que corresponde a pesos en precision de 16 bits. Es un transformer decoder-only de ~7,6 B de parametros, un tamano que se ejecuta en una unica GPU de consumo alta (RTX 4090, 24 GB) y que resulta atractivo para despliegues locales en entornos con requisitos de confidencialidad, algo habitual en aplicaciones juridicas.
 
@@ -21,8 +21,8 @@ La relevancia de esta ficha es limitada y conviene decirlo con claridad: el repo
 | Licencia | no disponible en el repositorio; el modelo base Qwen2.5-7B-Instruct se publica bajo Apache 2.0 |
 | Formato de pesos | safetensors, cargables con la libreria `transformers` |
 | Tamano del repositorio | 15,2 GB |
-| Fecha de creacion | 2026-09-15 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-15 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-15 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-15 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 Conviene distinguir en todo momento entre los datos verificables del repositorio y las caracteristicas heredadas del modelo base, que se indican como tales porque el autor no las confirma para este ajuste.
@@ -85,7 +85,7 @@ No hay datos de rendimiento comparado para este modelo, por lo que la comparacio
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wz7475/qwen2.5-7b-instruct-katcher-legal-spectral-reg-l3 | 7,6 B | no disponible (base: 32.768 nativos, 131.072 con YaRN) | no disponible | HuggingFace, 0 descargas, sin evaluaciones |
+| wz7475/qwen2.5-7b-instruct-katcher-legal-spectral-reg-l3 | 7,6 B | no disponible (base: 32.768 nativos, 131.072 con YaRN) | no disponible | Hugging Face, 0 descargas, sin evaluaciones |
 | Qwen2.5-7B-Instruct (modelo base) | 7,6 B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Ampliamente distribuido, con versiones GGUF, AWQ y GPTQ; benchmarks publicados por el autor |
 | Qwen2.5-7B-Instruct-AWQ o GPTQ (versiones cuantizadas) | 7,6 B | igual que el base | Apache 2.0 | Listas para vLLM y TGI, sin cuantizacion adicional |
 | Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 | Apache 2.0 | Amplia disponibilidad y ecosistema maduro |
@@ -110,7 +110,7 @@ En terminos practicos, la unica ventaja diferencial de este repositorio seria un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-spectral-reg-l3
+- Repositorio en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-spectral-reg-l3
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Tag de arXiv presente en el repositorio, `arxiv:1910.09700`, correspondiente a Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", citado en la plantilla de la model card y no un paper del modelo: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental enlazada en la plantilla: https://mlco2.github.io/impact

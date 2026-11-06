@@ -55,16 +55,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada en INT8: aproximadamente 125 MB; en INT4: aproximadamente 65 MB.
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, así como en GPUs de gama de entrada con 4 GB o más.
 - También es viable su ejecución en CPU, dado el reducido tamaño del modelo.
-- Opciones de despliegue: `transformers` (pipeline nativo), llama.cpp (requiere conversión a GGUF), Ollama y TGI (el tag `text-generation-inference` indica compatibilidad con TGI y `endpoints_compatible` con la infraestructura de HuggingFace).
+- Opciones de despliegue: `transformers` (pipeline nativo), llama.cpp (requiere conversión a GGUF), Ollama y TGI (el tag `text-generation-inference` indica compatibilidad con TGI y `endpoints_compatible` con la infraestructura de Hugging Face).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/isl-latn-100mb-ppt-mp-struct-100mb_seed3407 | 124,8 M | no disponible | islandés | no disponible | HuggingFace |
-| goldfish-models/isl_latn_100mb (modelo base) | ~125 M | no disponible | islandés | no disponible | HuggingFace |
-| Otras variantes Goldfish por idioma (por ejemplo, `goldfish-models/*_latn_100mb`) | ~125 M | no disponible | lengua correspondiente | no disponible | HuggingFace |
+| francesca9805/isl-latn-100mb-ppt-mp-struct-100mb_seed3407 | 124,8 M | no disponible | islandés | no disponible | Hugging Face |
+| goldfish-models/isl_latn_100mb (modelo base) | ~125 M | no disponible | islandés | no disponible | Hugging Face |
+| Otras variantes Goldfish por idioma (por ejemplo, `goldfish-models/*_latn_100mb`) | ~125 M | no disponible | lengua correspondiente | no disponible | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre estas alternativas en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/isl-latn-100mb-ppt-mp-struct-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/isl-latn-100mb-ppt-mp-struct-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/isl_latn_100mb
 - Repositorio TRL (framework de entrenamiento): https://github.com/huggingface/trl
 - Seguimiento del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/fzemyh6d

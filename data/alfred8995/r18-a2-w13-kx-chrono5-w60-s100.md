@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-w13-kx-chrono5-w60-s100` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). El repositorio contiene pesos en formato safetensors con un total de 2.018.511.234 parametros (aproximadamente 2.000 millones), lo que lo situa en la categoria de modelos pequenos/medianos aptos para inferencia en hardware de consumo. El tag `sn38-nanochrono` sugiere una variante o familia interna denominada "nanochrono", aunque no se dispone de documentacion publica que la describa.
+`alfred8995/r18-a2-w13-kx-chrono5-w60-s100` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). El repositorio contiene pesos en formato safetensors con un total de 2.018.511.234 parametros (aproximadamente 2.000 millones), lo que lo situa en la categoria de modelos pequenos/medianos aptos para inferencia en hardware de consumo. El tag `sn38-nanochrono` sugiere una variante o familia interna denominada "nanochrono", aunque no se dispone de documentacion publica que la describa.
 
 El nombre del modelo (`r18-a2-w13-kx-chrono5-w60-s100`) parece codificar hiperparametros o identificadores de un experimento concreto (posiblemente rondas, ventanas, semillas o configuraciones de entrenamiento), lo que apunta a un modelo de investigacion o a un checkpoint derivado de un pipeline propio mas que a un lanzamiento comercial documentado. No se ha publicado informacion sobre arquitectura, datos de entrenamiento, benchmarks ni capacidades en la informacion disponible.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo es limitada en el momento actual: se trata de un re
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 12,6 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 | Fecha de creacion | 2026-10-29 |
 | Ultima actualizacion | 2026-10-30 |
@@ -39,7 +39,7 @@ Tampoco se dispone de datos sobre el corpus de entrenamiento (numero de tokens, 
 - Vision, audio o modalidades adicionales: no disponible.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas aparece vacio en HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas aparece vacio en Hugging Face).
 - Modo "thinking" o razonamiento extendido: no disponible.
 
 Dado que el repositorio no incluye model card ni pipeline declarado, no es posible verificar ninguna capacidad funcional sin descargar los pesos y ejecutar evaluaciones propias.
@@ -84,7 +84,7 @@ La comparacion con alternativas establecidas solo es valida si el checkpoint dem
 
 - Ausencia total de model card: no hay informacion sobre datos de entrenamiento, alineacion, idiomas ni evaluaciones, lo que impide conocer sesgos conocidos.
 - Riesgo de alucinacion: no evaluado; al no haber evidencia de instruction tuning ni RLHF, es probable un comportamiento de modelo base con generacion no alineada.
-- Limitaciones de contexto e idioma: desconocidas; el campo de idiomas esta vacio en HuggingFace.
+- Limitaciones de contexto e idioma: desconocidas; el campo de idiomas esta vacio en Hugging Face.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero el acceso gated implica aceptar condiciones adicionales en la plataforma; conviene revisar los terminos exactos de la gate antes de redistribuir.
 - Repositorio sin pipeline declarado: no se garantiza compatibilidad directa con `transformers`, vLLM o TGI.
 - Baja traccion (10 descargas, 0 likes) y nomenclatura opaca: no hay comunidad ni soporte; el mantenimiento futuro es incierto.
@@ -92,5 +92,5 @@ La comparacion con alternativas establecidas solo es valida si el checkpoint dem
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono5-w60-s100
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono5-w60-s100
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - **VRAM estimada**: no se puede estimar sin conocer la cuantizacion del modelo base. Para Llama 3.1 8B en fp16 se requieren aproximadamente 16 GB de VRAM; con cuantizacion 4-bit se puede reducir a unos 6 GB.
 - **GPUs recomendadas**: para inferencia en consumer, una RTX 3090 o RTX 4090 (24 GB) es suficiente para el modelo base en fp16. Para cuantizaciones ligeras, una RTX 3060 de 12 GB podria ser viable.
 - **Compatibilidad con consumer GPUs**: si, con cuantizacion adecuada.
-- **Opciones de despliegue**: se puede cargar con la libreria `transformers` de HuggingFace, o usar servidores de inferencia como vLLM, llama.cpp (si se convierte a GGUF) u Ollama (si se empaqueta correctamente).
+- **Opciones de despliegue**: se puede cargar con la libreria `transformers` de Hugging Face, o usar servidores de inferencia como vLLM, llama.cpp (si se convierte a GGUF) u Ollama (si se empaqueta correctamente).
 - **Latencia y throughput**: no disponible sin datos de evaluacion.
 
 ## Comparativa con modelos similares
@@ -60,8 +60,8 @@ No se dispone de informacion sobre otros adaptadores LoRA del mismo autor o de l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama 3.1 8B (base) | 8B | 128k | Llama 3.1 Community License | Publico en HuggingFace |
-| Este adaptador LoRA | 0,2 GB | no disponible | no disponible | Publico en HuggingFace |
+| Llama 3.1 8B (base) | 8B | 128k | Llama 3.1 Community License | Publico en Hugging Face |
+| Este adaptador LoRA | 0,2 GB | no disponible | no disponible | Publico en Hugging Face |
 | Otros LoRA de Llama 3.1 8B | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -75,9 +75,9 @@ No se dispone de informacion sobre otros adaptadores LoRA del mismo autor o de l
 
 ## Enlaces
 
-- [Repositorio HuggingFace del adaptador](https://huggingface.co/InsertWittyCommentHere/llama3.1-8b-bma-lora-r32)
-- [Modelo base Llama 3.1 8B en HuggingFace](https://huggingface.co/meta-llama/Llama-3.1-8B)
-- [Modelo base Llama 3.1 8B Instruct en HuggingFace](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
+- [Repositorio Hugging Face del adaptador](https://huggingface.co/InsertWittyCommentHere/llama3.1-8b-bma-lora-r32)
+- [Modelo base Llama 3.1 8B en Hugging Face](https://huggingface.co/meta-llama/Llama-3.1-8B)
+- [Modelo base Llama 3.1 8B Instruct en Hugging Face](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
 - [Blog de Meta sobre Llama 3.1](https://ai.meta.com/blog/meta-llama-3-1/)
 - [Pagina de Llama 3 de Meta Developer](https://developer.meta.com/ai/models/llama-3/)
 - [Documentacion tecnica de Llama 3.1 en DeepWiki](https://deepwiki.com/meta-llama/llama-models/10.1-llama-3.1)

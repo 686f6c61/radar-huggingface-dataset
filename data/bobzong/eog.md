@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bobzong/EoG es un repositorio de modelos publicado en HuggingFace por el usuario Bobzong bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada está vacía: no contiene más que la declaración de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no declara pipeline de inferencia, no especifica idiomas soportados y no registra descargas ni valoraciones.
+Bobzong/EoG es un repositorio de modelos publicado en Hugging Face por el usuario Bobzong bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada está vacía: no contiene más que la declaración de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no declara pipeline de inferencia, no especifica idiomas soportados y no registra descargas ni valoraciones.
 
 Esto significa que no es posible determinar qué tipo de modelo es (lenguaje, visión, audio, embeddings u otro), su tamaño, su ventana de contexto ni su procedencia. La única información verificable es la licencia (Apache 2.0), la región declarada en los metadatos (US) y las fechas de creación y actualización, ambas el 26 de octubre de 2026, lo que sugiere un artefacto recién subido y sin documentar.
 
@@ -64,7 +64,7 @@ No disponible. Al no conocerse la categoría, el tamaño ni la modalidad del mod
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Bobzong/EoG | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Bobzong/EoG | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,6 +80,6 @@ No disponible. Al no conocerse la categoría, el tamaño ni la modalidad del mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bobzong/EoG
+- Repositorio en Hugging Face: https://huggingface.co/Bobzong/EoG
 - Perfil del autor: https://huggingface.co/Bobzong
 - Texto completo de la licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

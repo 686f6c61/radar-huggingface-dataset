@@ -64,5 +64,5 @@ No disponible. No se han identificado modelos comparables con las mismas caracte
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/albedo70/b42fe1dd-8d08-4bdc-9a3e-c1924ecdd66d
+- Repositorio Hugging Face: https://huggingface.co/albedo70/b42fe1dd-8d08-4bdc-9a3e-c1924ecdd66d
 - Modelo base referenciado: BKN1890/albedo-qwen3.6-35b-20260901-1748 (no se ha encontrado URL directa)

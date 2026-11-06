@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Faless/harvest_apples_xvla_v2_front` es una política robótica de tipo XVLA (visión-lenguaje-acción, VLA) publicada en HuggingFace Hub y entrenada con el framework LeRobot. El modelo resuelve la tarea concreta de recogida de manzanas (harvest apples) sobre un entorno simulado con el brazo robótico Agilex Piper, y se distribuye como un checkpoint de pesos `safetensors` de aproximadamente 879,7 millones de parámetros (3,5 GB de repositorio). La autoría corresponde al usuario Faless y la licencia es Apache 2.0.
+`Faless/harvest_apples_xvla_v2_front` es una política robótica de tipo XVLA (visión-lenguaje-acción, VLA) publicada en Hugging Face Hub y entrenada con el framework LeRobot. El modelo resuelve la tarea concreta de recogida de manzanas (harvest apples) sobre un entorno simulado con el brazo robótico Agilex Piper, y se distribuye como un checkpoint de pesos `safetensors` de aproximadamente 879,7 millones de parámetros (3,5 GB de repositorio). La autoría corresponde al usuario Faless y la licencia es Apache 2.0.
 
 La relevancia de esta ficha es acotada: no se trata de un modelo de lenguaje generalista, sino de una política de control motor entrenada para un dataset y un robot específicos (el dataset `Faless/harvest_apples_with_agilex_piper_sim`). Su interés radica en servir como ejemplo reproducible de un pipeline VLA completo en LeRobot: recogida de datos simulados, entrenamiento de política y despliegue de inferencia sobre un robot tipo `so100_follower` o equivalente.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Faless/harvest_apples_xvla_v2_front | 879,7 M | no disponible | Recogida de manzanas (sim, Agilex Piper) | Apache 2.0 | HuggingFace |
-| Políticas ACT en LeRobot | no disponible | no disponible | Manipulación general por imitación | Apache 2.0 (LeRobot) | HuggingFace / repo LeRobot |
+| Faless/harvest_apples_xvla_v2_front | 879,7 M | no disponible | Recogida de manzanas (sim, Agilex Piper) | Apache 2.0 | Hugging Face |
+| Políticas ACT en LeRobot | no disponible | no disponible | Manipulación general por imitación | Apache 2.0 (LeRobot) | Hugging Face / repo LeRobot |
 | Políticas Diffusion Policy | no disponible | no disponible | Manipulación por imitación | según implementación | Repos académicos |
-| OpenVLA | ~7 B | no disponible | VLA generalista | según versión | HuggingFace |
+| OpenVLA | ~7 B | no disponible | VLA generalista | según versión | Hugging Face |
 
 La comparación es orientativa: no se dispone de datos de rendimiento de este checkpoint frente a las alternativas, y las políticas ACT y Diffusion Policy son familias, no modelos concretos con parámetros fijos. OpenVLA se incluye como referencia de VLA generalista de mayor tamaño, pero no es directamente comparable en tarea ni en datos de entrenamiento.
 
@@ -84,7 +84,7 @@ La comparación es orientativa: no se dispone de datos de rendimiento de este ch
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Faless/harvest_apples_xvla_v2_front
+- Hugging Face: https://huggingface.co/Faless/harvest_apples_xvla_v2_front
 - Dataset de entrenamiento: https://huggingface.co/datasets/Faless/harvest_apples_with_agilex_piper_sim
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de LeRobot: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

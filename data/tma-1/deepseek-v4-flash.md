@@ -84,9 +84,9 @@ No se han publicado en la informacion disponible resultados de benchmarks para l
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DeepSeek-V4-Flash | 284B (290,9B segun safetensors) | 13B | 1M | FP4 + FP8 mixed | MIT | HuggingFace y ModelScope (DeepSeek AI); copia en TMA-1/DeepSeek-V4-Flash |
-| DeepSeek-V4-Flash-Base | 284B | 13B | 1M | FP8 mixed | MIT | HuggingFace y ModelScope |
-| DeepSeek-V4-Pro | 1,6T | 49B | 1M | FP4 + FP8 mixed | MIT | HuggingFace y ModelScope |
+| DeepSeek-V4-Flash | 284B (290,9B segun safetensors) | 13B | 1M | FP4 + FP8 mixed | MIT | Hugging Face y ModelScope (DeepSeek AI); copia en TMA-1/DeepSeek-V4-Flash |
+| DeepSeek-V4-Flash-Base | 284B | 13B | 1M | FP8 mixed | MIT | Hugging Face y ModelScope |
+| DeepSeek-V4-Pro | 1,6T | 49B | 1M | FP4 + FP8 mixed | MIT | Hugging Face y ModelScope |
 | DeepSeek-V3.2-Base | 671B | 37B | No disponible en la informacion | No disponible en la informacion | No disponible en la informacion | Referencia comparativa usada en la model card |
 
 En rendimiento de conocimiento (modelos base), DeepSeek-V4-Flash-Base supera a DeepSeek-V3.2-Base en todos los benchmarks reportados pese a tener menos de la mitad de parametros totales y aproximadamente un tercio de parametros activos, y queda por detras de DeepSeek-V4-Pro-Base en todas las metricas (por ejemplo, 88,7 frente a 90,1 en MMLU y 68,3 frente a 73,5 en MMLU-Pro). No se dispone de comparativas con modelos de otros fabricantes en la informacion proporcionada.
@@ -114,7 +114,7 @@ En rendimiento de conocimiento (modelos base), DeepSeek-V4-Flash-Base supera a D
 - ModelScope (version Flash base): https://modelscope.cn/models/deepseek-ai/DeepSeek-V4-Flash-Base
 - ModelScope (version Flash): https://modelscope.cn/models/deepseek-ai/DeepSeek-V4-Flash
 - Informe tecnico (arXiv): https://arxiv.org/abs/2606.19348
-- Cuenta oficial de DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Cuenta oficial de DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Sitio web de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
 - Twitter de DeepSeek AI: https://twitter.com/deepseek_ai

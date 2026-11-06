@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TextSynth-4B-0926-GGUF es un repositorio de cuantizaciones en formato GGUF generado por mradermacher a partir del modelo base TextSynth-4B-0926, publicado por el usuario theprint en HuggingFace. Se trata, por tanto, de una conversión de pesos y no de un modelo entrenado de forma independiente: el trabajo del repositorio consiste en producir versiones cuantizadas del modelo original para su uso con motores de inferencia compatibles con GGUF, como llama.cpp u Ollama.
+TextSynth-4B-0926-GGUF es un repositorio de cuantizaciones en formato GGUF generado por mradermacher a partir del modelo base TextSynth-4B-0926, publicado por el usuario theprint en Hugging Face. Se trata, por tanto, de una conversión de pesos y no de un modelo entrenado de forma independiente: el trabajo del repositorio consiste en producir versiones cuantizadas del modelo original para su uso con motores de inferencia compatibles con GGUF, como llama.cpp u Ollama.
 
 El nombre del repositorio indica un tamano nominal de 4B parametros y una fecha de referencia 0926, pero la informacion disponible no confirma ni la arquitectura, ni el numero exacto de parametros, ni la longitud de contexto, ni el regimen de licencia del modelo original. La model card del repositorio se limita a declarar que se trata de cuantizaciones estaticas del modelo theprint/TextSynth-4B-0926 y a listar los niveles de cuantizacion generados.
 
@@ -19,11 +19,11 @@ Su relevancia practica es la habitual de este tipo de repositorios: permiten eje
 | Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base se distribuye en formato HuggingFace segun el metadato convert_type: hf |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base se distribuye en formato Hugging Face segun el metadato convert_type: hf |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo base en los datos disponibles. Los metadatos del repositorio de cuantizacion indican unicamente el proceso de conversion: quantize_version 2, output_tensor_quantised 1 y convert_type hf, lo que senala que los pesos de origen estaban en formato HuggingFace y que la cuantizacion se aplico sobre tensores ya convertidos. El campo vocab_type aparece vacio, por lo que tampoco se puede confirmar el tokenizador empleado.
+No se ha publicado informacion sobre la arquitectura del modelo base en los datos disponibles. Los metadatos del repositorio de cuantizacion indican unicamente el proceso de conversion: quantize_version 2, output_tensor_quantised 1 y convert_type hf, lo que senala que los pesos de origen estaban en formato Hugging Face y que la cuantizacion se aplico sobre tensores ya convertidos. El campo vocab_type aparece vacio, por lo que tampoco se puede confirmar el tokenizador empleado.
 
 Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni sobre innovaciones tecnicas como atencion lineal o decodificacion especulativa. Cualquier afirmacion al respecto seria especulativa. La unica informacion verificable es la lista de cuantizaciones generadas, que abarca desde x-f16 (sin perdida apreciable) hasta Q2_K e IQ4_XS (orientadas a minimizar el uso de memoria a costa de precision).
 
@@ -67,7 +67,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, lic
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TextSynth-4B-0926-GGUF | no confirmado (nombre indica 4B) | no disponible | no disponible | no disponible | HuggingFace, cuantizaciones GGUF |
+| TextSynth-4B-0926-GGUF | no confirmado (nombre indica 4B) | no disponible | no disponible | no disponible | Hugging Face, cuantizaciones GGUF |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

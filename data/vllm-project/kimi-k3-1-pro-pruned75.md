@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros totales | Expertos enrutados por capa | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vllm-project/Kimi-K3.1-Pro-pruned75 | ~737,6 B | 224 (podados desde 896) | no disponible | kimi-k3.1-pro | HuggingFace, ~443 GB |
-| moonshotai/Kimi-K3.1-Pro (fuente) | no disponible en esta ficha | 896 | no disponible | kimi-k3.1-pro | HuggingFace, ~1,5 TB |
+| vllm-project/Kimi-K3.1-Pro-pruned75 | ~737,6 B | 224 (podados desde 896) | no disponible | kimi-k3.1-pro | Hugging Face, ~443 GB |
+| moonshotai/Kimi-K3.1-Pro (fuente) | no disponible en esta ficha | 896 | no disponible | kimi-k3.1-pro | Hugging Face, ~1,5 TB |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion relevante es con el modelo fuente: misma arquitectura, misma licencia y misma torre de vision, pero con un 75% menos de expertos enrutados y un tercio del tamano en disco, a costa de una perdida de calidad no cuantificada.
@@ -81,7 +81,7 @@ La comparacion relevante es con el modelo fuente: misma arquitectura, misma lice
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-project/Kimi-K3.1-Pro-pruned75
+- Modelo en Hugging Face: https://huggingface.co/vllm-project/Kimi-K3.1-Pro-pruned75
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
 - Licencia del modelo base: https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/main/LICENSE
 - Repositorio compressed-tensors: https://github.com/vllm-project/compressed-tensors

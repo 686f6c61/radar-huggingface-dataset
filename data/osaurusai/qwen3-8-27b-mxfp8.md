@@ -77,7 +77,7 @@ No se dispone de comparativas publicadas con otros modelos en la información di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OsaurusAI/Qwen3.8-27B-MXFP8
+- Repositorio Hugging Face: https://huggingface.co/OsaurusAI/Qwen3.8-27B-MXFP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Osaurus AI: https://osaurus.ai
 - Bundles hermanos: [JANG_2D](https://huggingface.co/OsaurusAI/Qwen3.8-27B-JANG_2D) · [JANG_4D](https://huggingface.co/OsaurusAI/Qwen3.8-27B-JANG_4D) · [JANG_6D](https://huggingface.co/OsaurusAI/Qwen3.8-27B-JANG_6D)

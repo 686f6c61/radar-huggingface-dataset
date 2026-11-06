@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MarsupialAI/Monstral-123B_iMat_GGUF
+- Repositorio Hugging Face: https://huggingface.co/MarsupialAI/Monstral-123B_iMat_GGUF
 - Modelo base (no GGUF): https://huggingface.co/MarsupialAI/Monstral-123B (inferido, no confirmado)
 - Version v2 en GGUF: https://huggingface.co/MarsupialAI/Monstral-123B-v2_GGUF
 - Catalogo de modelos de Azure AI: https://ai.azure.com/catalog/models/marsupialai-monstral-123b

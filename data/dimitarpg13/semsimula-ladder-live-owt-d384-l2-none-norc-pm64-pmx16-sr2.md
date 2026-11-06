@@ -114,7 +114,7 @@ La comparacion solo es valida dentro del ladder del autor, que fija corpus, toke
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm64-pmx16-sr2
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm64-pmx16-sr2
 - Modelo SR2 (misma base sin registros): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2
 - Modelo F3.1 (conservativo con paso partido): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc
 - Modelo Fock-PARFLM L=2 (no conservativo): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none

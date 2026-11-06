@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`RushabhShah122000/qwen3.5-0.8b-ocr-lora` es un adaptador LoRA de ajuste fino (fine-tuning) publicado en HuggingFace por el usuario RushabhShah122000, derivado del modelo base `unsloth/Qwen3.5-0.8B`. El nombre sugiere una especializacion en tareas de reconocimiento optico de caracteres (OCR), aunque la model card no documenta el dataset de entrenamiento ni el objetivo concreto del ajuste. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador LoRA y no con un modelo completo.
+`RushabhShah122000/qwen3.5-0.8b-ocr-lora` es un adaptador LoRA de ajuste fino (fine-tuning) publicado en Hugging Face por el usuario RushabhShah122000, derivado del modelo base `unsloth/Qwen3.5-0.8B`. El nombre sugiere una especializacion en tareas de reconocimiento optico de caracteres (OCR), aunque la model card no documenta el dataset de entrenamiento ni el objetivo concreto del ajuste. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador LoRA y no con un modelo completo.
 
 El modelo hereda la arquitectura y el tamano del Qwen3.5-0.8B, un transformer decoder-only de aproximadamente 0,8 mil millones de parametros. Al tratarse de un LoRA, los pesos publicados son los del adaptador, que debe combinarse con el modelo base `unsloth/Qwen3.5-0.8B` para su uso. La licencia declarada es Apache 2.0, tanto en el adaptador como presumiblemente en el modelo base.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| RushabhShah122000/qwen3.5-0.8b-ocr-lora | ~0,8B (base) + LoRA | No disponible | Apache 2.0 | HuggingFace | Adaptador OCR no documentado |
-| unsloth/Qwen3.5-0.8B | ~0,8B | No disponible | Apache 2.0 (presumible) | HuggingFace | Modelo base sin especializar |
-| Qwen2.5-0.5B / 1.5B (familia Qwen) | 0,5B / 1,5B | 32K (segun version) | Apache 2.0 | HuggingFace | Alternativas de tamano similar con documentacion completa |
-| SmolVLM-256M / 500M (si se busca OCR multimodal) | 0,25B / 0,5B | No disponible | Apache 2.0 | HuggingFace | Modelos vision-lenguaje pequenos para tareas de imagen |
+| RushabhShah122000/qwen3.5-0.8b-ocr-lora | ~0,8B (base) + LoRA | No disponible | Apache 2.0 | Hugging Face | Adaptador OCR no documentado |
+| unsloth/Qwen3.5-0.8B | ~0,8B | No disponible | Apache 2.0 (presumible) | Hugging Face | Modelo base sin especializar |
+| Qwen2.5-0.5B / 1.5B (familia Qwen) | 0,5B / 1,5B | 32K (segun version) | Apache 2.0 | Hugging Face | Alternativas de tamano similar con documentacion completa |
+| SmolVLM-256M / 500M (si se busca OCR multimodal) | 0,25B / 0,5B | No disponible | Apache 2.0 | Hugging Face | Modelos vision-lenguaje pequenos para tareas de imagen |
 
 La comparativa es orientativa: no se dispone de datos de rendimiento del adaptador, por lo que la eleccion frente a alternativas debe basarse en una evaluacion empirica propia.
 
@@ -79,7 +79,7 @@ La comparativa es orientativa: no se dispone de datos de rendimiento del adaptad
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/RushabhShah122000/qwen3.5-0.8b-ocr-lora
+- Hugging Face del adaptador: https://huggingface.co/RushabhShah122000/qwen3.5-0.8b-ocr-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-0.8B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - TRL (repositorio): https://github.com/huggingface/trl

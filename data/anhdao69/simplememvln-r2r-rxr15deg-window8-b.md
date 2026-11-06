@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | SimpleMemVLN-R2R-RxR15deg-Window8-B | no disponible explícitamente (base de 4B) | no disponible (ventana Window8 de 8 grupos) | VLN-CE con backbone Qwen3.5-4B, memoria GDN y evicción de KV | no disponible | Pesos de envoltorio, loader propio, 0 descargas |
-| Qwen/Qwen3.5-4B (modelo base) | aproximadamente 4 000 millones (según el nombre) | no disponible | LLM/VLM generalista, sin política de navegación | no disponible | Público en HuggingFace, referenciado en la model card |
+| Qwen/Qwen3.5-4B (modelo base) | aproximadamente 4 000 millones (según el nombre) | no disponible | LLM/VLM generalista, sin política de navegación | no disponible | Público en Hugging Face, referenciado en la model card |
 | Snapshots de política de producción y de política candidata del mismo autor | no disponible | no disponible | Misma familia SimpleMemVLN, mencionados como origen del entrenamiento | no disponible | No se publican en este repositorio |
 | Otros modelos VLN basados en VLM de gran tamaño (por ejemplo, familias tipo NaVid o NaVILA) | no verificado en la información proporcionada | no verificado | Navegación con modelos visuales de gran escala | no verificado | No verificado |
 
@@ -93,7 +93,7 @@ La comparación cuantitativa con alternativas no es posible con los datos dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anhdao69/SimpleMemVLN-R2R-RxR15deg-Window8-B
+- Modelo en Hugging Face: https://huggingface.co/anhdao69/SimpleMemVLN-R2R-RxR15deg-Window8-B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper: no disponible
 - Blog o post técnico: no disponible

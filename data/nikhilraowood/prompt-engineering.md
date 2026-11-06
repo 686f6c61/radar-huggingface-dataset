@@ -64,7 +64,7 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no tiene compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nikhilraowood/prompt-engineering
+- Repositorio en Hugging Face: https://huggingface.co/nikhilraowood/prompt-engineering
 - Guía de prompt engineering (referencia general): https://www.promptingguide.ai/
 - Guía de prompt engineering en GitHub (dair-ai): https://github.com/dair-ai/Prompt-Engineering-Guide
 - Instituto de Prompt Engineering: https://promptengineering.org/

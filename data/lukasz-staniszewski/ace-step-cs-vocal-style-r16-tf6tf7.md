@@ -44,7 +44,7 @@ No se dispone de información sobre el dataset de entrenamiento específico ni s
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona un "benchmark paper" de la suite, pero no se proporcionan métricas concretas (como MMLU, HumanEval, etc.) ni comparaciones cuantitativas con otros adaptadores. Se recomienda consultar la colección de HuggingFace para futuras actualizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona un "benchmark paper" de la suite, pero no se proporcionan métricas concretas (como MMLU, HumanEval, etc.) ni comparaciones cuantitativas con otros adaptadores. Se recomienda consultar la colección de Hugging Face para futuras actualizaciones.
 
 ## Requisitos de hardware
 
@@ -74,7 +74,7 @@ No se dispone de comparativas con adaptadores de otros autores o modelos de stee
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lukasz-staniszewski/ace-step-cs-vocal-style-r16-tf6tf7
+- Modelo en Hugging Face: https://huggingface.co/lukasz-staniszewski/ace-step-cs-vocal-style-r16-tf6tf7
 - Colección ACE-Step Audio Steering Suite: https://huggingface.co/collections/lukasz-staniszewski/ace-step-audio-steering-suite
 - Repositorio de ACE-Step en GitHub: https://github.com/ace-step/ACE-Step
 - Variante r8 del mismo adaptador: https://huggingface.co/lukasz-staniszewski/ace-step-cs-vocal-style-r8-tf6tf7

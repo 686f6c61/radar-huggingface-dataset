@@ -93,8 +93,8 @@ La ventaja diferencial de este adaptador no es el rendimiento, sino el flujo de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VictorMMichel/qwen2.5-3b-novatech-lora
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/VictorMMichel/qwen2.5-3b-novatech-lora
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Modelo Qwen2.5-3B-Instruct en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
+- Modelo Qwen2.5-3B-Instruct en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo: los resultados correspondian a paginas de cuestionarios diarios de Bing, sin relacion con el modelo ni con su autoria. No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a `VictorMMichel/qwen2.5-3b-novatech-lora`.

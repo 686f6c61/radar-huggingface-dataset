@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma 4 E2B · Refauna es un ajuste fino del modelo multimodal `google/gemma-4-e2b-it` (licencia Apache 2.0) orientado a un dominio muy concreto: defaunación, refaunación, reintroducción de fauna, dispersión de semillas y conservación de la Mata Atlántica brasileña. Lo desarrolla el usuario de HuggingFace iamrodrigocoelho a partir de la producción científica de la iniciativa Refauna, creada en 2010 para devolver fauna silvestre nativa a sus hábitats en la Mata Atlántica de Río de Janeiro. El modelo está pensado como pieza de un sistema RAG: recibe fragmentos numerados y responde citando `[n]`.
+Gemma 4 E2B · Refauna es un ajuste fino del modelo multimodal `google/gemma-4-e2b-it` (licencia Apache 2.0) orientado a un dominio muy concreto: defaunación, refaunación, reintroducción de fauna, dispersión de semillas y conservación de la Mata Atlántica brasileña. Lo desarrolla el usuario de Hugging Face iamrodrigocoelho a partir de la producción científica de la iniciativa Refauna, creada en 2010 para devolver fauna silvestre nativa a sus hábitats en la Mata Atlántica de Río de Janeiro. El modelo está pensado como pieza de un sistema RAG: recibe fragmentos numerados y responde citando `[n]`.
 
 El modelo base pertenece a la familia Gemma 4 (arquitectura transformer, variante "E2B") y el ajuste se realizó con QLoRA de 4 bits, rango 16, sobre las capas de lenguaje exclusivamente, con la plantilla `gemma-4` sin modo thinking. El resultado conserva la naturaleza multimodal image-text-to-text del modelo original, aunque el entrenamiento se centró en generación de texto conversacional en portugués de Brasil.
 
@@ -74,8 +74,8 @@ Además, la recuperación híbrida sobre el conjunto de test (n = 74) alcanza Re
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma 4 E2B · Refauna | 5,12 mil millones | no disponible | RAG científico en pt-BR sobre conservación de la Mata Atlántica | Apache 2.0 | HuggingFace (safetensors y GGUF) |
-| google/gemma-4-e2b-it (base) | no disponible en la información | no disponible | Propósito general, multimodal | Apache 2.0 | HuggingFace |
+| Gemma 4 E2B · Refauna | 5,12 mil millones | no disponible | RAG científico en pt-BR sobre conservación de la Mata Atlántica | Apache 2.0 | Hugging Face (safetensors y GGUF) |
+| google/gemma-4-e2b-it (base) | no disponible en la información | no disponible | Propósito general, multimodal | Apache 2.0 | Hugging Face |
 | Modelos de la familia Gemma de tamaño similar | no disponible | no disponible | Propósito general | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con modelos alternativos de la misma categoría en la información proporcionada, más allá de las cuatro configuraciones internas del propio autor (base frente a ajustado, con y sin RAG).
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos con modelos alternativos de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iamrodrigocoelho/gemma-4-e2b-refauna
+- Modelo en Hugging Face: https://huggingface.co/iamrodrigocoelho/gemma-4-e2b-refauna
 - Modelo base: https://huggingface.co/google/gemma-4-e2b-it
 - Repositorio Unsloth del base: https://huggingface.co/unsloth/gemma-4-E2B-it
 - Iniciativa Refauna: https://refauna.org.br

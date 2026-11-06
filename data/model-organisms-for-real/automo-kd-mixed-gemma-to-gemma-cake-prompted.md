@@ -86,7 +86,7 @@ La comparativa se limita a los modelos de la misma campana, ya que no se dispone
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-gemma-cake-prompted)
+- [Modelo en Hugging Face](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-gemma-cake-prompted)
 - [Modelo base: gemma-3-1b-vanilla-dpo-123-seed](https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed)
 - [Modelo de referencia: automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-cos-sft-td-unmixed-lr-1e-5](https://huggingface.co/model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-cos-sft-td-unmixed-lr-1e-5)
 - [Otro modelo de la misma campana: automo-kd-mixed-gemma-to-olmo-cake-fd-unmixed](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-cake-fd-unmixed)

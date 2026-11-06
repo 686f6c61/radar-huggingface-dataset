@@ -82,7 +82,7 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- Repositorio HuggingFace del paquete ONNX: https://huggingface.co/justinchuby/sensenova-u1.5-8b-mot-onnx-canonical
+- Repositorio Hugging Face del paquete ONNX: https://huggingface.co/justinchuby/sensenova-u1.5-8b-mot-onnx-canonical
 - Modelo original SenseNova-U1.5-8B-MoT: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
 - Modelo SenseNova-U1-8B-MoT: https://huggingface.co/sensenova/SenseNova-U1-8B-MoT
 - GitHub del proyecto SenseNova-U1: https://github.com/OpenSenseNova/SenseNova-U1

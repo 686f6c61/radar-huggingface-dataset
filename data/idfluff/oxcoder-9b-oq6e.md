@@ -80,8 +80,8 @@ No se dispone de datos verificables sobre modelos comparables en la informacion 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| IDFluff/oxcoder-9b-oq6e | 9,4B | hasta 131k (segun benchmark) | 6 bits (imatrix oMLX) | safetensors MLX | no disponible | HuggingFace, 0 descargas |
-| OrionLLM/OxCoder-9B (base) | 9B | no disponible | original (precision completa, presumiblemente) | no disponible | no disponible | HuggingFace |
+| IDFluff/oxcoder-9b-oq6e | 9,4B | hasta 131k (segun benchmark) | 6 bits (imatrix oMLX) | safetensors MLX | no disponible | Hugging Face, 0 descargas |
+| OrionLLM/OxCoder-9B (base) | 9B | no disponible | original (precision completa, presumiblemente) | no disponible | no disponible | Hugging Face |
 | Alternativas de ~7-9B para codigo | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se dispone de datos verificables sobre modelos comparables en la informacion 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/IDFluff/oxcoder-9b-oq6e
+- Repositorio en Hugging Face: https://huggingface.co/IDFluff/oxcoder-9b-oq6e
 - Modelo base: https://huggingface.co/OrionLLM/OxCoder-9B
 - Benchmark de throughput en oMLX (ANE prefill desactivado): https://omlx.ai/benchmarks/performance/tflpzdtq
 - No se han encontrado papers, blogs ni repositorios adicionales relevantes en la busqueda web realizada (los resultados devueltos no guardan relacion con el modelo).

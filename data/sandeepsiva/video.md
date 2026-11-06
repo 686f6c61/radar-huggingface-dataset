@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Sandeepsiva/Video` alojado en HuggingFace corresponde a un modelo identificado únicamente por su nombre y autor, sin ninguna documentación asociada. No se dispone de información sobre su arquitectura, parámetros, licencia, idiomas soportados ni pipeline de uso. El perfil del autor (Sandeepsiva) parece estar vinculado a creación de contenido audiovisual con IA, pero no hay evidencia de que este modelo sea un artefacto funcional o un proyecto serio. Con cero descargas y una sola interacción, probablemente se trate de un archivo de prueba, un placeholder o un modelo sin intención de distribución. Hasta la fecha de consulta, no existe información pública que permita evaluar su utilidad técnica.
+El repositorio `Sandeepsiva/Video` alojado en Hugging Face corresponde a un modelo identificado únicamente por su nombre y autor, sin ninguna documentación asociada. No se dispone de información sobre su arquitectura, parámetros, licencia, idiomas soportados ni pipeline de uso. El perfil del autor (Sandeepsiva) parece estar vinculado a creación de contenido audiovisual con IA, pero no hay evidencia de que este modelo sea un artefacto funcional o un proyecto serio. Con cero descargas y una sola interacción, probablemente se trate de un archivo de prueba, un placeholder o un modelo sin intención de distribución. Hasta la fecha de consulta, no existe información pública que permita evaluar su utilidad técnica.
 
 ## Especificaciones tecnicas
 
@@ -55,6 +55,6 @@ No disponible. No existe información que permita comparar este modelo con alter
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sandeepsiva/Video
+- Repositorio en Hugging Face: https://huggingface.co/Sandeepsiva/Video
 
 No se han encontrado otros enlaces relevantes (papers, blogs, demos) asociados a este modelo concreto.

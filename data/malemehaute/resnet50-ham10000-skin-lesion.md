@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `malemehaute/resnet50-ham10000-skin-lesion`, publicado por el usuario malemehaute en HuggingFace, es un clasificador de imagenes orientado a la deteccion de lesiones cutaneas a partir de dermatoscopias. El nombre del repositorio apunta a una arquitectura ResNet-50 entrenada sobre el conjunto de datos HAM10000 (Human Against Machine with 10000 training images), un corpus de referencia en dermatologia con imagenes etiquetadas en siete categorias de lesiones pigmentadas de la piel.
+El modelo `malemehaute/resnet50-ham10000-skin-lesion`, publicado por el usuario malemehaute en Hugging Face, es un clasificador de imagenes orientado a la deteccion de lesiones cutaneas a partir de dermatoscopias. El nombre del repositorio apunta a una arquitectura ResNet-50 entrenada sobre el conjunto de datos HAM10000 (Human Against Machine with 10000 training images), un corpus de referencia en dermatologia con imagenes etiquetadas en siete categorias de lesiones pigmentadas de la piel.
 
-Se trata de un modelo de vision por computador de tipo `image-classification`, con licencia MIT y acceso restringido (gated), lo que obliga a aceptar condiciones adicionales en HuggingFace antes de descargarlo. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con los pesos de una red convolucional de tamano medio. Las etiquetas del modelo mezclan `vision-transformers` con `resnet50`, una inconsistencia que conviene verificar consultando la model card original.
+Se trata de un modelo de vision por computador de tipo `image-classification`, con licencia MIT y acceso restringido (gated), lo que obliga a aceptar condiciones adicionales en Hugging Face antes de descargarlo. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con los pesos de una red convolucional de tamano medio. Las etiquetas del modelo mezclan `vision-transformers` con `resnet50`, una inconsistencia que conviene verificar consultando la model card original.
 
 La relevancia de este tipo de modelos reside en su aplicacion al triaje asistido de lesiones dermatologicas, un area donde la escasez de especialistas y la alta prevalencia del cancer de piel justifican herramientas de apoyo diagnostico. No obstante, dado que registra 0 descargas y 0 likes, y que no se han publicado metricas asociadas en la informacion disponible, debe considerarse un artefacto experimental sin validacion externa documentada.
 
@@ -66,9 +66,9 @@ No se documentan valores de exactitud, AUC, sensibilidad, especificidad ni matri
 
 | Modelo | Arquitectura | Parametros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| malemehaute/resnet50-ham10000-skin-lesion | No confirmada (ResNet-50 segun el nombre) | No disponible | Imagenes dermatoscopicas | No publicado | MIT | Gated en HuggingFace |
+| malemehaute/resnet50-ham10000-skin-lesion | No confirmada (ResNet-50 segun el nombre) | No disponible | Imagenes dermatoscopicas | No publicado | MIT | Gated en Hugging Face |
 | Lineas base publicadas sobre HAM10000 (p. ej. trabajos con ResNet-50, EfficientNet, ViT) | CNN o ViT | Variable | Imagenes 224x224 | Valores ampliamente reportados en literatura, no comparables directamente sin verificar el split | Variable | Publicaciones academicas |
-| Alternativas comparables en HuggingFace para clasificacion dermatologica | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Alternativas comparables en Hugging Face para clasificacion dermatologica | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa rigurosa con modelos concretos de la misma categoria. Se recomienda consultar la literatura sobre HAM10000 para obtener referencias de rendimiento fiables.
 
@@ -76,7 +76,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 - Ausencia total de metricas publicadas: no hay forma de conocer la fiabilidad del modelo sin evaluarlo por cuenta propia.
 - Cero descargas y cero likes: no hay evidencia de uso ni validacion por parte de la comunidad.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar el modelo, lo que puede limitar su uso en pipelines automatizados.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar el modelo, lo que puede limitar su uso en pipelines automatizados.
 - Discrepancia entre el nombre del repositorio (resnet50) y las etiquetas (vision-transformers): debe verificarse la arquitectura real antes de asumir cualquier comportamiento.
 - Riesgo de sesgo de clase: HAM10000 esta fuertemente desbalanceado, con dominio de la clase nevus; sin tecnicas de reequilibrado documentadas, el modelo podria favorecer clases mayoritarias.
 - Riesgo de sesgo poblacional y de adquisicion: las imagenes dermatoscopicas provienen de poblaciones y dispositivos concretos, lo que limita la generalizacion a otras condiciones clinicas o de captura.
@@ -88,6 +88,6 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/malemehaute/resnet50-ham10000-skin-lesion
+- Hugging Face: https://huggingface.co/malemehaute/resnet50-ham10000-skin-lesion
 - Dataset HAM10000 (referencia mencionada en el nombre, no enlazada por el autor): https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo concreto.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `MauriMata27/embodied-ai` en HuggingFace es un espacio creado el 4 de septiembre de 2026 por el usuario `MauriMata27`. No contiene ningún contenido técnico en su model card más allá de la declaración de licencia MIT. No se publican pesos, arquitectura, tokenizador, pipeline, descripción del modelo ni documentación de uso. El identificador del repositorio sugiere una posible orientación hacia inteligencia artificial corpórea (embodied AI), pero no hay evidencia que lo respalde.
+El repositorio `MauriMata27/embodied-ai` en Hugging Face es un espacio creado el 4 de septiembre de 2026 por el usuario `MauriMata27`. No contiene ningún contenido técnico en su model card más allá de la declaración de licencia MIT. No se publican pesos, arquitectura, tokenizador, pipeline, descripción del modelo ni documentación de uso. El identificador del repositorio sugiere una posible orientación hacia inteligencia artificial corpórea (embodied AI), pero no hay evidencia que lo respalde.
 
 En la información disponible no se detallan parámetros, contexto, capacidades ni datos de entrenamiento. El repositorio registra 0 descargas y 0 likes, lo que indica que no existe comunidad ni uso asociado. En consecuencia, cualquier evaluación técnica o comparativa resulta imposible a partir de los datos públicos actuales.
 
@@ -57,6 +57,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MauriMata27/embodied-ai
+- Repositorio Hugging Face: https://huggingface.co/MauriMata27/embodied-ai
 - Contexto general sobre IA corpórea (no específico de este modelo): "Toward the next frontier of embodied AI" en oaepublish.com: https://www.oaepublish.com/articles/ir.2025.44
 - Revisión de sistemas de inteligencia corpórea (no específica de este modelo): https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1668910/full

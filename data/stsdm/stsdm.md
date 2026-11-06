@@ -2,7 +2,7 @@
 
 ## Resumen
 
-StsDm/StsDm es un repositorio de modelo publicado en HuggingFace por el usuario StsDm. En la informacion disponible no se documenta ni la arquitectura, ni el numero de parametros, ni la longitud de contexto, ni el pipeline de inferencia asociado. La unica metainformacion disponible son las etiquetas del repositorio (license:grok2-community, region:us), la licencia declarada y las fechas de creacion y actualizacion, ambas fijadas en 2026-09-28.
+StsDm/StsDm es un repositorio de modelo publicado en Hugging Face por el usuario StsDm. En la informacion disponible no se documenta ni la arquitectura, ni el numero de parametros, ni la longitud de contexto, ni el pipeline de inferencia asociado. La unica metainformacion disponible son las etiquetas del repositorio (license:grok2-community, region:us), la licencia declarada y las fechas de creacion y actualizacion, ambas fijadas en 2026-09-28.
 
 La model card del autor contiene unicamente el bloque de metadatos con la licencia grok2-community, sin texto descriptivo, sin tabla de especificaciones y sin resultados de evaluacion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia de uso ni de validacion por parte de la comunidad.
 
@@ -20,7 +20,7 @@ En consecuencia, esta ficha no puede confirmar ninguna capacidad tecnica del mod
 | Idiomas soportados | no disponible |
 | Licencia | grok2-community |
 | Formato de pesos | no disponible |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Region declarada | us |
 | Fecha de creacion | 2026-09-28 |
 | Fecha de ultima actualizacion | 2026-09-28 |
@@ -56,7 +56,7 @@ No existen casos de uso verificados. Los escenarios que se enumeran a continuaci
 - Clasificacion y extraccion de informacion: aplicable si el modelo soporta tareas de comprension; no hay evidencia de ello.
 - Generacion de codigo en pipelines de desarrollo: requeriria capacidad de instruccion y, en su caso, tool calling; ninguna de las dos esta documentada.
 - Traduccion y procesamiento multilingue: imposible de evaluar sin la lista de idiomas soportados, que no se proporciona.
-- Prototipado en investigacion: el repositorio podria servir como objeto de estudio de publicacion de modelos en HuggingFace, pero no como base solida para experimentos reproducibles sin model card tecnica.
+- Prototipado en investigacion: el repositorio podria servir como objeto de estudio de publicacion de modelos en Hugging Face, pero no como base solida para experimentos reproducibles sin model card tecnica.
 - Despliegue en produccion: no recomendable en el estado actual de la informacion, al no poder verificarse licencia aplicable, pesos ni comportamiento.
 
 ## Benchmarks y rendimiento
@@ -87,7 +87,7 @@ No disponible. No es posible seleccionar modelos comparables al no conocerse la 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StsDm/StsDm | no disponible | no disponible | no disponible | grok2-community | repositorio publico en HuggingFace |
+| StsDm/StsDm | no disponible | no disponible | no disponible | grok2-community | repositorio publico en Hugging Face |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -105,7 +105,7 @@ No disponible. No es posible seleccionar modelos comparables al no conocerse la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/StsDm/StsDm
+- Repositorio en Hugging Face: https://huggingface.co/StsDm/StsDm
 - Paper: no disponible.
 - Blog o anuncio: no disponible.
 - Repositorio de codigo: no disponible.

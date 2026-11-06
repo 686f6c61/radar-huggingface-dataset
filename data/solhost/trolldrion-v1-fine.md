@@ -2,7 +2,7 @@
 
 ## Resumen
 
-solhost/trolldrion-v1-fine es un modelo publicado en HuggingFace por el usuario solhost bajo licencia Apache 2.0. La informacion disponible en su model card se limita al bloque de metadatos de licencia: no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline declarado ni idiomas especificados.
+solhost/trolldrion-v1-fine es un modelo publicado en Hugging Face por el usuario solhost bajo licencia Apache 2.0. La informacion disponible en su model card se limita al bloque de metadatos de licencia: no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline declarado ni idiomas especificados.
 
 Se trata, por tanto, de un artefacto practicamente indocumentado. El identificador "v1-fine" sugiere un ajuste fino (fine-tuning) de un modelo base no declarado, pero no hay ninguna evidencia en la informacion proporcionada que permita confirmar el modelo de partida, la tecnica de ajuste empleada ni el proposito del entrenamiento.
 
@@ -35,7 +35,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el volumen de 
 - No hay informacion sobre uso en agentes o razonamiento multi-paso.
 - No hay informacion sobre capacidades multilinguies.
 - No hay informacion sobre modos especiales (modo thinking, audio, vision, decodificacion especulativa, etc.).
-- El repositorio no declara pipeline de inferencia en HuggingFace, lo que impide inferir la modalidad (text-generation, text-to-image, etc.).
+- El repositorio no declara pipeline de inferencia en Hugging Face, lo que impide inferir la modalidad (text-generation, text-to-image, etc.).
 
 ## Casos de uso
 
@@ -67,7 +67,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| solhost/trolldrion-v1-fine | no disponible | no disponible | apache-2.0 | no disponible | HuggingFace, 0 descargas |
+| solhost/trolldrion-v1-fine | no disponible | no disponible | apache-2.0 | no disponible | Hugging Face, 0 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -85,7 +85,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/solhost/trolldrion-v1-fine
+- Hugging Face: https://huggingface.co/solhost/trolldrion-v1-fine
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

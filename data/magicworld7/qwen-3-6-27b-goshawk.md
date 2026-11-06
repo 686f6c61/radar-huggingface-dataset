@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-3.6-27B-Goshawk es un checkpoint de visión-lenguaje de 27 360 632 560 parámetros publicado por el usuario magicworld7 en HuggingFace. Se trata de una redistribución cuantizada a FP8 del modelo computer-vision-ai-lab/Qwen-3.6-27B-AmberKite, que a su vez deriva de la familia Qwen3.6-27B de Alibaba Cloud. El modelo está pensado para servirse directamente en vLLM mediante el formato `compressed-tensors`, sin necesidad de un paso previo de conversión.
+Qwen-3.6-27B-Goshawk es un checkpoint de visión-lenguaje de 27 360 632 560 parámetros publicado por el usuario magicworld7 en Hugging Face. Se trata de una redistribución cuantizada a FP8 del modelo computer-vision-ai-lab/Qwen-3.6-27B-AmberKite, que a su vez deriva de la familia Qwen3.6-27B de Alibaba Cloud. El modelo está pensado para servirse directamente en vLLM mediante el formato `compressed-tensors`, sin necesidad de un paso previo de conversión.
 
 La arquitectura declarada es `Qwen3_5ForConditionalGeneration`, con 64 capas de decodificador que combinan atención lineal y atención completa (híbrida), tamaño oculto de 5120 y un codificador de visión de 27 bloques. La longitud de contexto soportada es de 262 144 tokens, lo que lo sitúa en el rango de modelos multimodales de contexto largo orientados a tareas de documento, vídeo o razonamiento extendido.
 
@@ -74,8 +74,8 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparac
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Qwen-3.6-27B-Goshawk | 27,36 B | 262 144 tokens | Texto + imagen | Apache 2.0 | safetensors FP8 en este repositorio |
-| computer-vision-ai-lab/Qwen-3.6-27B-AmberKite (modelo base directo) | no disponible | no disponible | Texto + imagen | no disponible | HuggingFace |
-| Qwen/Qwen3.6-27B (origen de la familia) | no disponible | no disponible | no disponible | Apache 2.0 (según LICENSE referenciada) | HuggingFace |
+| computer-vision-ai-lab/Qwen-3.6-27B-AmberKite (modelo base directo) | no disponible | no disponible | Texto + imagen | no disponible | Hugging Face |
+| Qwen/Qwen3.6-27B (origen de la familia) | no disponible | no disponible | no disponible | Apache 2.0 (según LICENSE referenciada) | Hugging Face |
 | Modelos densos de ~30 B de la generación anterior (por ejemplo Qwen3-32B / Qwen2.5-VL-32B) | ~32 B | 128 000 tokens en la generación anterior | Texto / texto + imagen | Apache 2.0 | safetensors, GGUF, AWQ, GPTQ |
 
 Nota: no se han podido comparar resultados de benchmarks porque el repositorio no publica ninguno.
@@ -95,7 +95,7 @@ Nota: no se han podido comparar resultados de benchmarks porque el repositorio n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/magicworld7/Qwen-3.6-27B-Goshawk
+- Modelo en Hugging Face: https://huggingface.co/magicworld7/Qwen-3.6-27B-Goshawk
 - Modelo base directo: https://huggingface.co/computer-vision-ai-lab/Qwen-3.6-27B-AmberKite
 - Modelo de la familia Qwen referenciado: https://huggingface.co/Qwen/Qwen3.6-27B
 - Texto de licencia referenciado: https://huggingface.co/Qwen/Qwen3.6-27B/blob/main/LICENSE

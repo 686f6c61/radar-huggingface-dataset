@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arthurmmartin/mae-multitask` es un repositorio de HuggingFace que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada **Mae**, orientada a experimentos **multitarea**. El autor la publica explícitamente en configuración **nano** y la describe como material para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados, no como un modelo preentrenado listo para producción. El checkpoint `model.safetensors` se presenta como una inicialización válida para pruebas, no como un modelo entrenado ni evaluado.
+`arthurmmartin/mae-multitask` es un repositorio de Hugging Face que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada **Mae**, orientada a experimentos **multitarea**. El autor la publica explícitamente en configuración **nano** y la describe como material para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados, no como un modelo preentrenado listo para producción. El checkpoint `model.safetensors` se presenta como una inicialización válida para pruebas, no como un modelo entrenado ni evaluado.
 
 El tamaño real registrado en el safetensors es de **24.832 parámetros** (aproximadamente 0,025 M), con un peso en disco del orden de decenas o pocos cientos de kilobytes según precisión. La arquitectura declarada usa **atención lineal**, **fusión bilinear**, activación **mish** y normalización **layernorm**. La receta de experimento por defecto del repositorio es **RMSprop** con *schedule* **cosine**.
 
@@ -85,8 +85,8 @@ No disponible. No se han identificado en la información proporcionada alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arthurmmartin/mae-multitask
+- Hugging Face: https://huggingface.co/arthurmmartin/mae-multitask
 - Paper: no disponible
 - Blog o documentación adicional: no disponible
-- Repositorio de código independiente: no disponible (el código se distribuye como `inference.py` dentro del propio repositorio de HuggingFace)
+- Repositorio de código independiente: no disponible (el código se distribuye como `inference.py` dentro del propio repositorio de Hugging Face)
 - Demo: no disponible

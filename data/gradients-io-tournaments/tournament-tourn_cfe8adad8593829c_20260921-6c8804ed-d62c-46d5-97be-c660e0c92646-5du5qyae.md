@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `tournament-tourn_cfe8adad8593829c_20260921-6c8804ed-d62c-46d5-97be-c660e0c92646-5DU5Qyae` es un checkpoint de generacion de texto publicado por la organizacion `gradients-io-tournaments` en HuggingFace. Su nombre indica que se trata de un artefacto generado en el marco de un torneo o competicion automatizada de entrenamiento de modelos, no de un lanzamiento oficial de producto. El repositorio cuenta con 0 descargas y 0 likes, y su model card es la plantilla autogenerada de Hugging Face, sin ninguna seccion completada por el autor.
+El modelo identificado como `tournament-tourn_cfe8adad8593829c_20260921-6c8804ed-d62c-46d5-97be-c660e0c92646-5DU5Qyae` es un checkpoint de generacion de texto publicado por la organizacion `gradients-io-tournaments` en Hugging Face. Su nombre indica que se trata de un artefacto generado en el marco de un torneo o competicion automatizada de entrenamiento de modelos, no de un lanzamiento oficial de producto. El repositorio cuenta con 0 descargas y 0 likes, y su model card es la plantilla autogenerada de Hugging Face, sin ninguna seccion completada por el autor.
 
 Segun los metadatos de safetensors, el modelo tiene 1.304.558.336 parametros (aproximadamente 1,3 mil millones) y un peso de repositorio de 2,6 GB, lo que es coherente con pesos en precision de 16 bits. La etiqueta `lfm2` sugiere que el checkpoint se apoya en la arquitectura de la familia LFM2 (Liquid Foundation Models 2) de Liquid AI, aunque no hay documentacion que lo confirme. Tambien aparece la etiqueta `conversational` y `endpoints_compatible`, lo que indica que fue publicado con la intencion de servir conversaciones mediante la API de inferencia de Hugging Face.
 

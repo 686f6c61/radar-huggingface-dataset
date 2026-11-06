@@ -91,7 +91,7 @@ No hay datos de rendimiento publicados para ninguno de estos modelos en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wondernutts/Twilight-Embrace-31B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/Wondernutts/Twilight-Embrace-31B-NVFP4
 - Modelo base: https://huggingface.co/Cyclone-Labs/Twilight-Embrace-31B
 - Revision del checkpoint de origen empleada en la conversion: https://huggingface.co/Cyclone-Labs/Twilight-Embrace-31B/tree/97e8fc5e9fe34d851272fdcd92883e1fc66e3f5c
 - Model card de origen: https://huggingface.co/Cyclone-Labs/Twilight-Embrace-31B/blob/97e8fc5e9fe34d851272fdcd92883e1fc66e3f5c/README.md

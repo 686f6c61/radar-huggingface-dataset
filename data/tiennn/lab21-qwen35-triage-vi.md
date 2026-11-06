@@ -81,7 +81,7 @@ No hay modelos comparables directamente disponibles en la información proporcio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tiennn/lab21-qwen35-triage-vi
+- Hugging Face: https://huggingface.co/tiennn/lab21-qwen35-triage-vi
 - Repositorio GitHub del experimento: https://github.com/Tienlee41/Day21-Track3-2A202601145_LeAnhTien
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Variante de NiallHoang: https://huggingface.co/NiallHoang/lab21-qwen35-triage-vi

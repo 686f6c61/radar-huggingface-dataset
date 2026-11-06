@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepository es un repositorio publicado en HuggingFace por el usuario `afsdaaaf` bajo licencia MIT. Segun los metadatos de la plataforma, se trata de un modelo basado en la libreria `transformers` con framework PyTorch, etiquetado con la etiqueta `bert` y declarado para la tarea de `feature-extraction` (extraccion de caracteristicas), no para generacion de texto. El repositorio no acumula descargas ni "likes" y su tamano declarado es de 0,0 GB, lo que indica que no contiene pesos publicados.
+MyAwesomeModel-TestRepository es un repositorio publicado en Hugging Face por el usuario `afsdaaaf` bajo licencia MIT. Segun los metadatos de la plataforma, se trata de un modelo basado en la libreria `transformers` con framework PyTorch, etiquetado con la etiqueta `bert` y declarado para la tarea de `feature-extraction` (extraccion de caracteristicas), no para generacion de texto. El repositorio no acumula descargas ni "likes" y su tamano declarado es de 0,0 GB, lo que indica que no contiene pesos publicados.
 
-La model card adjunta, sin embargo, describe un modelo generativo de razonamiento de tipo "large language model", con mejoras en profundidad de razonamiento, soporte de function calling, reduccion de alucinaciones y resultados comparados en una bateria de benchmarks. Existe por tanto una contradiccion directa entre los metadatos tecnicos de HuggingFace (BERT de extraccion de caracteristicas) y el contenido de la model card (modelo generativo conversacional). No se dispone de informacion que permita resolver esa discrepancia.
+La model card adjunta, sin embargo, describe un modelo generativo de razonamiento de tipo "large language model", con mejoras en profundidad de razonamiento, soporte de function calling, reduccion de alucinaciones y resultados comparados en una bateria de benchmarks. Existe por tanto una contradiccion directa entre los metadatos tecnicos de Hugging Face (BERT de extraccion de caracteristicas) y el contenido de la model card (modelo generativo conversacional). No se dispone de informacion que permita resolver esa discrepancia.
 
 El nombre del repositorio incluye la palabra "TestRepository", lo que sugiere que se trata de un repositorio de pruebas o de una plantilla, y no de un modelo listo para produccion. La fecha de creacion declarada (12 de septiembre de 2026) es posterior a la fecha actual, un dato anomalo adicional. Por todo ello, esta ficha debe interpretarse como una descripcion de la informacion publicada, con advertencias explicitas sobre su fiabilidad.
 
@@ -12,7 +12,7 @@ El nombre del repositorio incluye la palabra "TestRepository", lo que sugiere qu
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible de forma fiable. Metadatos de HuggingFace: BERT (tag `bert`); model card: transformer generativo de razonamiento (no especificado) |
+| Arquitectura | No disponible de forma fiable. Metadatos de Hugging Face: BERT (tag `bert`); model card: transformer generativo de razonamiento (no especificado) |
 | Parametros totales | No disponible |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible (no se publican pesos ni variantes GGUF/AWQ/GPTQ) |
@@ -24,7 +24,7 @@ Otros datos de plataforma: pipeline declarado `feature-extraction`; libreria `tr
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible es contradictoria y no permite describir la arquitectura real. Los metadatos de HuggingFace etiquetan el modelo como BERT dentro del pipeline `feature-extraction`, lo que corresponderia a un transformer encoder bidireccional orientado a representaciones de frases o documentos. La model card, en cambio, describe un modelo generativo con fases de post-entrenamiento orientadas a razonamiento, con optimizacion algorítmica y mayor uso de recursos de computo.
+La informacion disponible es contradictoria y no permite describir la arquitectura real. Los metadatos de Hugging Face etiquetan el modelo como BERT dentro del pipeline `feature-extraction`, lo que corresponderia a un transformer encoder bidireccional orientado a representaciones de frases o documentos. La model card, en cambio, describe un modelo generativo con fases de post-entrenamiento orientadas a razonamiento, con optimizacion algorítmica y mayor uso de recursos de computo.
 
 Segun la model card, la version descrita habria mejorado su profundidad de razonamiento aumentando el numero de tokens consumidos por pregunta: en el conjunto AIME pasaria de unos 12.000 tokens por pregunta en la version anterior a unos 23.000 tokens por pregunta en la nueva, con un incremento de precision del 70 % al 87,5 %. No se proporcionan datos sobre numero de tokens de entrenamiento, composicion del dataset, ni sobre si se aplicaron tecnicas de RLHF, DPO u otras. Tampoco se documentan innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, MoE, SSM) y no hay evidencia de que el repositorio contenga los pesos correspondientes a esa descripcion.
 
@@ -32,7 +32,7 @@ Segun la model card, la version descrita habria mejorado su profundidad de razon
 
 Todas las capacidades listadas a continuacion proceden de la model card y no pueden verificarse contra los pesos del repositorio, que esta vacio segun los metadatos.
 
-- Generacion de texto segun la model card, aunque el pipeline declarado en HuggingFace es `feature-extraction`.
+- Generacion de texto segun la model card, aunque el pipeline declarado en Hugging Face es `feature-extraction`.
 - Razonamiento matematico y logico, con mejora declarada en AIME 2025 (70 % a 87,5 %).
 - Generacion de codigo, con una puntuacion declarada de 0,650 en la categoria "Code Generation".
 - Soporte de function calling: la model card afirma soporte mejorado respecto a la version anterior.
@@ -107,7 +107,7 @@ No se dispone de datos suficientes para comparar con alternativas reales del mis
 
 ## Limitaciones y advertencias
 
-- Contradiccion de metadatos: HuggingFace clasifica el modelo como BERT de `feature-extraction`, mientras la model card describe un LLM generativo de razonamiento. No se puede determinar cual es correcta.
+- Contradiccion de metadatos: Hugging Face clasifica el modelo como BERT de `feature-extraction`, mientras la model card describe un LLM generativo de razonamiento. No se puede determinar cual es correcta.
 - Repositorio vacio: el tamano declarado es 0,0 GB, por lo que no hay pesos ni tokenizador descargables. El modelo no es ejecutable tal como esta publicado.
 - Repositorio de prueba: el propio identificador incluye "TestRepository", lo que sugiere contenido de prueba o plantilla y no un artefacto de produccion.
 - Fecha anomalа: la fecha de creacion (2026-09-12) es posterior a la fecha actual, lo que resta credibilidad a los metadatos.
@@ -121,7 +121,7 @@ No se dispone de datos suficientes para comparar con alternativas reales del mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/afsdaaaf/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/afsdaaaf/MyAwesomeModel-TestRepository
 - Repositorio de codigo mencionado en la model card: no disponible (la model card lo menciona sin enlace)
 - Sitio web oficial y plataforma de chat/API mencionados en la model card: no disponible (sin enlace)
 - Paper o informe tecnico: no disponible

@@ -94,7 +94,7 @@ La comparativa con Qwen2.5-32B y Gemma-2-27B se ofrece como referencia de catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/OPRM-32B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/OPRM-32B-GGUF
 - Modelo base: https://huggingface.co/ritzzai/OPRM-32B
 - Pagina de descargas del autor: https://hf.tst.eu/model#OPRM-32B-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

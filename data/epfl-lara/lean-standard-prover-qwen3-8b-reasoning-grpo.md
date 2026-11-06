@@ -75,8 +75,8 @@ No se dispone de datos de benchmarks ni de especificaciones de los modelos alter
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Lean Standard Prover Qwen3-8B (reasoning, GRPO) | 8,19 B | 32.768 tokens (runner del autor) | No disponible | HuggingFace, repo EPFL-LARA |
-| Qwen/Qwen3-8B-Base (modelo base) | 8,19 B heredados | No disponible en la informacion | No disponible en la informacion | HuggingFace |
+| Lean Standard Prover Qwen3-8B (reasoning, GRPO) | 8,19 B | 32.768 tokens (runner del autor) | No disponible | Hugging Face, repo EPFL-LARA |
+| Qwen/Qwen3-8B-Base (modelo base) | 8,19 B heredados | No disponible en la informacion | No disponible en la informacion | Hugging Face |
 | Otros provers de Lean 4 (DeepSeek-Prover-V2, Goedel-Prover, Kimina-Prover) | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de especificaciones de los modelos alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EPFL-LARA/lean-standard-prover-qwen3-8b-reasoning-grpo
+- Modelo en Hugging Face: https://huggingface.co/EPFL-LARA/lean-standard-prover-qwen3-8b-reasoning-grpo
 - Coleccion "Formal Theorem Proving with Lean World Models": https://huggingface.co/collections/EPFL-LARA/formal-theorem-proving-with-lean-world-models-6ad2b4aa4400b3e2933f380d
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Dataset EPFL-LARA/lean-world-model-cpt: https://huggingface.co/datasets/EPFL-LARA/lean-world-model-cpt
@@ -103,4 +103,4 @@ No se dispone de datos de benchmarks ni de especificaciones de los modelos alter
 - Dataset Goedel-LM/RL_dataset_V2: https://huggingface.co/datasets/Goedel-LM/RL_dataset_V2
 - vLLM (version usada por el runner, 0.12.0): https://github.com/vllm-project/vllm
 - Pagina institucional de la EPFL: https://www.epfl.ch/en/
-- Perfil de la organizacion EPFL-LARA en HuggingFace: https://huggingface.co/EPFL-LARA
+- Perfil de la organizacion EPFL-LARA en Hugging Face: https://huggingface.co/EPFL-LARA

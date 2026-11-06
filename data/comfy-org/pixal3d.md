@@ -69,7 +69,7 @@ No se dispone de informacion comparativa con otros modelos de imagen a 3D en la 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Comfy-Org/Pixal3D
+- Repositorio de Hugging Face: https://huggingface.co/Comfy-Org/Pixal3D
 - Modelo original de TencentARC: https://huggingface.co/TencentARC/Pixal3D
 - Nodos ComfyUI para Pixal3D (PozzettiAndrea): https://github.com/PozzettiAndrea/ComfyUI-Pixal3D
 - Integracion ComfyUI-Pixal3D para Windows (dreamrec): https://github.com/dreamrec/ComfyUI-Pixal3D

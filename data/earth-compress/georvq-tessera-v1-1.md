@@ -98,7 +98,7 @@ No se dispone de información sobre códecs comparables (por ejemplo, compresore
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/earth-compress/georvq-tessera-v1.1
+- Modelo en Hugging Face: https://huggingface.co/earth-compress/georvq-tessera-v1.1
 - Dataset de muestra (once teselas codificadas): https://huggingface.co/datasets/earth-compress/georvq-tessera-v1.1-sample
 - Repositorio del código `georvq`: https://github.com/earth-compress/georvq
 - Embeddings TESSERA v1.1 en Source Cooperative: https://source.coop/tessera/tessera

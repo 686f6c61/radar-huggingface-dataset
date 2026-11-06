@@ -66,5 +66,5 @@ No se dispone de información suficiente sobre modelos comparables específicos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Quiho/Krea2_NSFW_Uncensored_Complete
+- Hugging Face: https://huggingface.co/Quiho/Krea2_NSFW_Uncensored_Complete
 - Modelo base (Krea-2-Turbo): https://huggingface.co/krea/Krea-2-Turbo (referencia)

@@ -79,8 +79,8 @@ No se han publicado en la informacion disponible resultados de otros benchmarks 
 
 | Modelo | Parametros | Entrada | Dataset de evaluacion | OA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| point-mamba-base.scanobjectnn-hardest.dingkang-liang (este checkpoint) | 12,3 M | Nube de puntos, 8192 puntos en el ejemplo | ScanObjectNN (PB_T50_RS) | 89,28 | Apache-2.0 | HuggingFace, libreria `torch-pointcloud` |
-| point-mamba-base.pretrain.dingkang-liang (modelo base) | no disponible | Nube de puntos | no disponible (es el preentrenamiento del que deriva este checkpoint) | no disponible | no disponible en la informacion facilitada | HuggingFace |
+| point-mamba-base.scanobjectnn-hardest.dingkang-liang (este checkpoint) | 12,3 M | Nube de puntos, 8192 puntos en el ejemplo | ScanObjectNN (PB_T50_RS) | 89,28 | Apache-2.0 | Hugging Face, libreria `torch-pointcloud` |
+| point-mamba-base.pretrain.dingkang-liang (modelo base) | no disponible | Nube de puntos | no disponible (es el preentrenamiento del que deriva este checkpoint) | no disponible | no disponible en la informacion facilitada | Hugging Face |
 | Implementacion original LMD0311/PointMamba | no disponible | Nube de puntos | ScanObjectNN (PB_T50_RS) | 89,31 (referencia citada en la model card) | Apache-2.0 | Repositorio GitHub |
 
 No se dispone de datos en la informacion proporcionada para comparar con otras familias de clasificacion de nubes de puntos (PointNet++, DGCNN, Point Transformer, Point-MAE, PointGPT u otras). Por tanto, esa comparacion queda como no disponible.
@@ -100,7 +100,7 @@ No se dispone de datos en la informacion proporcionada para comparar con otras f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/point-mamba-base.scanobjectnn-hardest.dingkang-liang
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/point-mamba-base.scanobjectnn-hardest.dingkang-liang
 - Paper de PointMamba (arXiv:2402.10739): https://arxiv.org/abs/2402.10739
 - Repositorio original PointMamba (LMD0311): https://github.com/LMD0311/PointMamba
 - Libreria PyTorch PointCloud: https://github.com/arthurdjn/pytorch-pointcloud

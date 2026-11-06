@@ -24,7 +24,7 @@ Es relevante ahora como ejemplo reproducible de un pipeline completo de entrenam
 | Tamaño del repositorio | 0,4 GB |
 | Paso de entrenamiento | 6000 actualizaciones de optimizador |
 | SHA-256 del checkpoint | `cbcfbe6487bc0ca0e8901e2bbcd98f4a43cb46cc7125b75913af14908b142d60` |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de publicación | 21 de septiembre de 2026 (última actualización el mismo día) |
 
 ## Arquitectura y entrenamiento
@@ -86,7 +86,7 @@ No se dispone de resultados de benchmarks comparables en la información proporc
 
 | Modelo | Parámetros | Contexto | Tipo de atención | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yzzhao/cse8803-hw1-openwebtext-gqa` | 29,37 M | 512 | GQA (8Q/4KV) | No disponible | Checkpoint PyTorch en HuggingFace; requiere código externo |
+| `yzzhao/cse8803-hw1-openwebtext-gqa` | 29,37 M | 512 | GQA (8Q/4KV) | No disponible | Checkpoint PyTorch en Hugging Face; requiere código externo |
 | GPT-2 small | 124 M | 1024 | Atención multi-cabeza completa | No disponible en la información consultada | Pesos públicos en formato Transformers |
 | Alternativas del mismo curso (por ejemplo, ejecuciones TinyStories) | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Comparación de rendimiento (perplejidad, MMLU, HumanEval, GSM8K) | No disponible: no hay datos comparables publicados en la información disponible | | | | |
@@ -109,6 +109,6 @@ No se dispone de resultados de benchmarks comparables en la información proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yzzhao/cse8803-hw1-openwebtext-gqa
+- Modelo en Hugging Face: https://huggingface.co/yzzhao/cse8803-hw1-openwebtext-gqa
 - Dataset de entrenamiento: https://huggingface.co/datasets/Skylion007/openwebtext
 - No se han encontrado en la búsqueda web enlaces relevantes adicionales (papers, blogs, repositorios o demos) asociados a este modelo; los resultados devueltos corresponden a páginas genéricas sin relación con el artefacto.

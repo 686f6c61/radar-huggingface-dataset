@@ -4,7 +4,7 @@
 
 El modelo `standjones/mirror-unconst-affine-5czsc2fc98-r637-r252-odpo-midrank-lobeta-softctx-ep3-lolr-merged` es un checkpoint derivado del modelo base `unconst/Affine-5czsc2fc98-r252-merged`, desarrollado por el autor `standjones` como parte de un proceso de minería de modelos (SN120). Está entrenado mediante *offline DPO* (Direct Preference Optimization) sobre pares de respuestas minados, con el objetivo de mejorar la puntuación de razonamiento "Reason v3" definida como la diferencia de log-probabilidades condicionadas al teacher. No es un modelo conversacional general, sino una submission específica para evaluaciones de razonamiento en duelos automáticos.
 
-Con 35.107.181.936 parámetros (35,1 B), el modelo utiliza una arquitectura de mezcla de expertos (MoE) según la etiqueta `qwen3_5_moe`, aunque no se han publicado detalles arquitectónicos completos. El repositorio pesa 70.2 GB y los pesos están en formato `safetensors`. La licencia no está especificada, aunque se indica que sigue la política del modelo base y los artefactos de minería Affine. El modelo fue creado el 17 de agosto de 2026 y no registra descargas ni valoraciones en HuggingFace.
+Con 35.107.181.936 parámetros (35,1 B), el modelo utiliza una arquitectura de mezcla de expertos (MoE) según la etiqueta `qwen3_5_moe`, aunque no se han publicado detalles arquitectónicos completos. El repositorio pesa 70.2 GB y los pesos están en formato `safetensors`. La licencia no está especificada, aunque se indica que sigue la política del modelo base y los artefactos de minería Affine. El modelo fue creado el 17 de agosto de 2026 y no registra descargas ni valoraciones en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -83,6 +83,6 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/standjones/mirror-unconst-affine-5czsc2fc98-r637-r252-odpo-midrank-lobeta-softctx-ep3-lolr-merged)
+- [Modelo en Hugging Face](https://huggingface.co/standjones/mirror-unconst-affine-5czsc2fc98-r637-r252-odpo-midrank-lobeta-softctx-ep3-lolr-merged)
 - [Modelo base: unconst/Affine-5czsc2fc98-r252-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged) (enlace inferido de la información, no verificado)
 - No se han encontrado papers, blogs ni repositorios adicionales en la búsqueda web.

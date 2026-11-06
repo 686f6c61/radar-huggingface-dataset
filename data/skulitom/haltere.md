@@ -27,7 +27,7 @@ Su relevancia actual está en la neurociencia computacional y en el control robu
 
 La arquitectura sigue el enfoque de RNN restringida por conectoma de Lappalainen et al. 2024: unidades de tasa cuyos pesos son proporcionales al recuento de sinapsis, con el signo fijado por el neurotransmisor predicho. El sustrato es un subgrafo de 30.000 neuronas del conectoma male CNS v1.0 que incluye todas las neuronas situadas a dos sinapsis de los sentidos de vuelo y de las motoneuronas del ala, además del complejo central y de todas las neuronas descendentes. Las entradas son los halteros, los campaniformes del ala, el flujo óptico, los ocelos, el órgano de Johnston y células de brújula y de objetivo; la salida son las cuatro órdenes de stick leídas de las motoneuronas del ala y sus premotoras.
 
-El entrenamiento tiene dos fases. Primero, imitación de un controlador MLP (sin conectoma) dentro de un simulador de cuadricóptero diferenciable por lotes, con tasas al estilo Betaflight y PID de tasa (ganancias Zetaflight de Liftoff). Después, ajuste fino por retropropagación a través del simulador con aleatorización de dominio. La model card no describe un bucle de aprendizaje por refuerzo con función de recompensa, pese a que el pipeline declarado en HuggingFace sea `reinforcement-learning`. El vuelo en Liftoff se realiza enviando telemetría por UDP y una entrada de mando mediante un mando virtual de Xbox (ViGEmBus).
+El entrenamiento tiene dos fases. Primero, imitación de un controlador MLP (sin conectoma) dentro de un simulador de cuadricóptero diferenciable por lotes, con tasas al estilo Betaflight y PID de tasa (ganancias Zetaflight de Liftoff). Después, ajuste fino por retropropagación a través del simulador con aleatorización de dominio. La model card no describe un bucle de aprendizaje por refuerzo con función de recompensa, pese a que el pipeline declarado en Hugging Face sea `reinforcement-learning`. El vuelo en Liftoff se realiza enviando telemetría por UDP y una entrada de mando mediante un mando virtual de Xbox (ViGEmBus).
 
 ## Capacidades
 
@@ -77,10 +77,10 @@ Condiciones de la dificultad completa: 25° de inclinación, 90°/s de rotación
 
 | Modelo | Base de la política | Error medio (simulador, dificultad completa) | Rendimiento en Liftoff | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ftSmooth_best` | RNN con conectoma de 30.000 neuronas | 0,30 m; 95 % con 50 ms de retardo | Hover a 2 m; órbita y ascenso-picado sin choques | MIT | HuggingFace y GitHub |
-| `ftRobust_best` | RNN con conectoma de 30.000 neuronas | 0,20 m; 99,6 % | Hover a 2 m con 0,34 m de error; cuadrado de 3 m | MIT | HuggingFace y GitHub |
-| `imJ_best` | RNN con conectoma de 30.000 neuronas | 0,22 m; 95 % | Deriva de 1,4 m en el sustituto físico | MIT | HuggingFace y GitHub |
-| `mlp_baseline` | MLP sin conectoma (control experimental) | 0,05 m; 100 % dentro de 0,5 m | No volado | MIT | HuggingFace y GitHub |
+| `ftSmooth_best` | RNN con conectoma de 30.000 neuronas | 0,30 m; 95 % con 50 ms de retardo | Hover a 2 m; órbita y ascenso-picado sin choques | MIT | Hugging Face y GitHub |
+| `ftRobust_best` | RNN con conectoma de 30.000 neuronas | 0,20 m; 99,6 % | Hover a 2 m con 0,34 m de error; cuadrado de 3 m | MIT | Hugging Face y GitHub |
+| `imJ_best` | RNN con conectoma de 30.000 neuronas | 0,22 m; 95 % | Deriva de 1,4 m en el sustituto físico | MIT | Hugging Face y GitHub |
+| `mlp_baseline` | MLP sin conectoma (control experimental) | 0,05 m; 100 % dentro de 0,5 m | No volado | MIT | Hugging Face y GitHub |
 | Lappalainen et al. 2024 | RNN con conectoma (referencia metodológica citada) | no disponible | no disponible | no disponible | Publicación |
 
 No se han encontrado en la información proporcionada otros controladores comparables con métricas publicadas de vuelo en simulador; la comparativa se limita por tanto a las variantes del propio repositorio y a la referencia metodológica citada.
@@ -92,16 +92,16 @@ No se han encontrado en la información proporcionada otros controladores compar
 - El modelo no es autocontenido: todos los checkpoints requieren el grafo construido (`flight.npz`, `flight.nodes.parquet`, `flight.meta.json`) para funcionar.
 - Dependencia de software propietario y de plataforma: el vuelo en Liftoff requiere el simulador (de pago, en Steam) y, para la entrada de mando, ViGEmBus en Windows; los comandos de instalación de la model card usan rutas de Windows y Python 3.13.
 - Dominio de operación acotado: las maniobras documentadas se limitan a una caja de 6 x 6 x 2 m, con 25° de inclinación, 90°/s de rotación y 1 m/s de velocidad; no hay datos sobre condiciones fuera de ese rango.
-- Sin validación independiente en el momento de la consulta: el repositorio de HuggingFace registra 0 descargas y 0 likes, y el tamaño es de 0,1 GB.
+- Sin validación independiente en el momento de la consulta: el repositorio de Hugging Face registra 0 descargas y 0 likes, y el tamaño es de 0,1 GB.
 - Licencia del modelo MIT, que permite uso comercial, pero el conectoma de origen es CC BY 4.0, no se redistribuye en el repositorio y debe descargarse con `haltere fetch` desde el bucket `gs://flyem-male-cns`, respetando la atribución a Janelia FlyEM.
 - La fidelidad biológica está acotada por la calidad del conectoma male CNS v1.0: la cobertura de anotación, la predicción de neurotransmisores y el recuento de sinapsis son datos derivados y no una reconstrucción perfecta del circuito.
 - Riesgo de alucinación: no aplica en el sentido habitual, porque el modelo no genera lenguaje; el modo de fallo equivalente es la divergencia o la deriva del controlador fuera del dominio entrenado.
 - Sesgos e idiomas: no aplica, al no tratar lenguaje natural ni datos humanos; no hay sección de sesgos en la model card.
-- Las fechas de creación y actualización registradas en HuggingFace son el 12 de septiembre de 2026, posteriores a la fecha habitual de consulta.
+- Las fechas de creación y actualización registradas en Hugging Face son el 12 de septiembre de 2026, posteriores a la fecha habitual de consulta.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Skulitom/haltere
+- Modelo en Hugging Face: https://huggingface.co/Skulitom/haltere
 - Repositorio de código, pipeline de entrenamiento, integración con Liftoff y vídeos: https://github.com/skulitom/haltere
 - Release con checkpoints completos (estado del optimizador): https://github.com/skulitom/haltere/releases/tag/v0.1.0
 - Conectoma Janelia male CNS v1.0: https://www.janelia.org/project-team/flyem/male-cns-connectome

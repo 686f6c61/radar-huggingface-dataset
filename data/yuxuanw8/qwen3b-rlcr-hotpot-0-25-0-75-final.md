@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qwen3b-rlcr-hotpot-0.25-0.75-final` es un ajuste fino del modelo Qwen2.5-3B-Instruct publicado por el usuario yuxuanw8 en HuggingFace. Se trata de un experimento de investigación más que de un modelo listo para producción: el autor lo ha entrenado con TRL mediante GRPO (Group Relative Policy Optimization) sobre el dataset `mehuldamani/hotpot_qa`, una variante de HotpotQA orientada a razonamiento multi-salto sobre documentos. El nombre del repositorio sugiere una configuración de recompensa o mezcla de datos con proporciones 0,25/0,75, aunque el autor no documenta su significado.
+`qwen3b-rlcr-hotpot-0.25-0.75-final` es un ajuste fino del modelo Qwen2.5-3B-Instruct publicado por el usuario yuxuanw8 en Hugging Face. Se trata de un experimento de investigación más que de un modelo listo para producción: el autor lo ha entrenado con TRL mediante GRPO (Group Relative Policy Optimization) sobre el dataset `mehuldamani/hotpot_qa`, una variante de HotpotQA orientada a razonamiento multi-salto sobre documentos. El nombre del repositorio sugiere una configuración de recompensa o mezcla de datos con proporciones 0,25/0,75, aunque el autor no documenta su significado.
 
 La arquitectura subyacente es la de Qwen2.5-3B-Instruct: un transformer decoder-only denso de 3.085.938.688 parámetros (aproximadamente 3,09 mil millones), con los pesos en formato safetensors y un tamaño de repositorio de 6,8 GB. No se especifican la longitud de contexto efectiva tras el ajuste, los idiomas soportados ni la licencia, más allá de una etiqueta genérica `licence: license` en la model card.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3b-rlcr-hotpot-0.25-0.75-final | 3,09 B | no disponible | GRPO sobre HotpotQA | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens | SFT + preferencias (no detallado) | Apache 2.0 (modelo base) | HuggingFace, ampliamente usado |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | SFT + preferencias | Apache 2.0 | HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | SFT + RLHF | Llama 3.2 Community License | HuggingFace |
+| qwen3b-rlcr-hotpot-0.25-0.75-final | 3,09 B | no disponible | GRPO sobre HotpotQA | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens | SFT + preferencias (no detallado) | Apache 2.0 (modelo base) | Hugging Face, ampliamente usado |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | SFT + preferencias | Apache 2.0 | Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | SFT + RLHF | Llama 3.2 Community License | Hugging Face |
 
 La comparación directa con el modelo base es la más informativa: este checkpoint añade un ajuste GRPO específico para HotpotQA, pero pierde la documentación de licencia, idiomas y contexto que sí ofrece Qwen. Frente a Llama-3.2-3B-Instruct, el contexto es presumiblemente menor y la licencia es menos clara.
 
@@ -85,7 +85,7 @@ La comparación directa con el modelo base es la más informativa: este checkpoi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-0.25-0.75-final
+- Modelo en Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-0.25-0.75-final
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/mehuldamani/hotpot_qa
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mergekit-slerp-fqnakng es un modelo de lenguaje de 6.740.512.768 parámetros (~6,7B) publicado por el usuario TheWhiteGamer en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una fusión (merge) de pesos generada con la herramienta mergekit aplicando el método SLERP sobre dos checkpoints de la familia DeepSeek Coder: deepseek-ai/deepseek-coder-6.7b-base y deepseek-ai/deepseek-coder-6.7b-instruct.
+mergekit-slerp-fqnakng es un modelo de lenguaje de 6.740.512.768 parámetros (~6,7B) publicado por el usuario TheWhiteGamer en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una fusión (merge) de pesos generada con la herramienta mergekit aplicando el método SLERP sobre dos checkpoints de la familia DeepSeek Coder: deepseek-ai/deepseek-coder-6.7b-base y deepseek-ai/deepseek-coder-6.7b-instruct.
 
 El objetivo típico de este tipo de fusión es interpolar los pesos de una variante base (preentrenada, sin alineación) y una variante instruct (ajustada por instrucciones y alineada), buscando un punto intermedio que conserve la capacidad de generación y conocimiento del modelo base a la vez que incorpora parte del comportamiento conversacional y de seguimiento de instrucciones del modelo instruct. El parámetro de interpolación configurado es t = 0,7.
 
@@ -52,7 +52,7 @@ Las capacidades que se enumeran a continuación son las esperables por herencia 
 - Generación de código en entornos de investigación: puede emplearse como modelo de generación de código en prototipos y scripts internos, asumiendo que no hay garantía de calidad equivalente a los checkpoints originales.
 - Base para ajuste fino posterior: al ser un checkpoint de 6,7B en safetensors y compatible con transformers, puede servir como punto de partida para un SFT específico de dominio.
 - Evaluación comparativa de merges: útil como referencia en pipelines internos que comparan múltiples fusiones generadas con mergekit (SLERP, TIES, DARE, etc.).
-- Pruebas de despliegue con TGI/vLLM: al estar etiquetado como `text-generation-inference` y `endpoints_compatible`, puede desplegarse en infraestructuras de inferencia compatibles con la API de HuggingFace para pruebas de latencia y throughput.
+- Pruebas de despliegue con TGI/vLLM: al estar etiquetado como `text-generation-inference` y `endpoints_compatible`, puede desplegarse en infraestructuras de inferencia compatibles con la API de Hugging Face para pruebas de latencia y throughput.
 - Docencia y demostraciones: por su tamaño moderado (6,7B) es adecuado para ilustrar en clase cómo funciona una fusión de pesos y qué archivos produce mergekit.
 
 ## Benchmarks y rendimiento
@@ -68,17 +68,17 @@ Estimaciones a partir del recuento de parámetros publicado (6.740.512.768) y de
 - Inferencia en 4 bits (requiere convertir a GGUF o AWQ/GPTQ, no incluido en el repositorio): en torno a 4 GB de pesos.
 - GPU recomendadas: A100 40/80 GB, H100 80 GB para despliegues de producción; RTX 4090 (24 GB) y RTX 3090 (24 GB) son suficientes para bfloat16 con contexto moderado.
 - GPU de consumo: sí cabe en tarjetas de 24 GB (RTX 3090, RTX 4090) en bfloat16, y en tarjetas de 8-12 GB si se cuantiza a 4 u 8 bits.
-- Opciones de despliegue: transformers (nativo), text-generation-inference (TGI), vLLM y servidores compatibles con la API de OpenAI/endpoints de HuggingFace. Para llama.cpp u Ollama sería necesario convertir previamente los pesos a GGUF, ya que el repositorio no incluye esos ficheros.
+- Opciones de despliegue: transformers (nativo), text-generation-inference (TGI), vLLM y servidores compatibles con la API de OpenAI/endpoints de Hugging Face. Para llama.cpp u Ollama sería necesario convertir previamente los pesos a GGUF, ya que el repositorio no incluye esos ficheros.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| TheWhiteGamer/mergekit-slerp-fqnakng | ~6,7B | no disponible | no disponible | HuggingFace, safetensors bfloat16 | Fusion SLERP (t = 0,7) de dos checkpoints DeepSeek Coder 6.7B; 0 descargas |
-| deepseek-ai/deepseek-coder-6.7b-base | ~6,7B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace | Uno de los dos modelos fusionados; preentrenado, sin alineacion |
-| deepseek-ai/deepseek-coder-6.7b-instruct | ~6,7B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace | El otro modelo fusionado; ajustado por instrucciones |
-| Otros merges SLERP de 6-7B (varios autores) | ~6-7B | variable | variable segun autor | HuggingFace | Categoria equivalente; datos concretos no disponibles en la busqueda realizada |
+| TheWhiteGamer/mergekit-slerp-fqnakng | ~6,7B | no disponible | no disponible | Hugging Face, safetensors bfloat16 | Fusion SLERP (t = 0,7) de dos checkpoints DeepSeek Coder 6.7B; 0 descargas |
+| deepseek-ai/deepseek-coder-6.7b-base | ~6,7B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face | Uno de los dos modelos fusionados; preentrenado, sin alineacion |
+| deepseek-ai/deepseek-coder-6.7b-instruct | ~6,7B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face | El otro modelo fusionado; ajustado por instrucciones |
+| Otros merges SLERP de 6-7B (varios autores) | ~6-7B | variable | variable segun autor | Hugging Face | Categoria equivalente; datos concretos no disponibles en la busqueda realizada |
 
 No se dispone de resultados de benchmarks de ninguna de estas variantes en la informacion proporcionada, por lo que la comparativa se limita a parametros, formato, licencia y disponibilidad.
 
@@ -96,7 +96,7 @@ No se dispone de resultados de benchmarks de ninguna de estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TheWhiteGamer/mergekit-slerp-fqnakng
+- Repositorio Hugging Face: https://huggingface.co/TheWhiteGamer/mergekit-slerp-fqnakng
 - Modelo de origen (base): https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-base
 - Modelo de origen (instruct): https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct
 - Repositorio de mergekit (Arcee AI): https://github.com/arcee-ai/mergekit

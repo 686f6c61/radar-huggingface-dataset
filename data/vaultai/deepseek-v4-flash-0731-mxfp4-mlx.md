@@ -127,6 +127,6 @@ No se dispone de comparativas con otros modelos de la misma categoria (por ejemp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vaultai/DeepSeek-V4-Flash-0731-MXFP4-MLX
+- Repositorio en Hugging Face: https://huggingface.co/vaultai/DeepSeek-V4-Flash-0731-MXFP4-MLX
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Repositorio de parches (mantenido como registro historico, no recomendado sobre rc2): https://github.com/ashhart/DeepSeekV4-Flash-0731-MXFP4-MLX

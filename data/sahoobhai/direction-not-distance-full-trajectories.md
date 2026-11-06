@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. El R
 - VRAM estimada: para Qwen3-8B en bf16, aproximadamente 16 GB; para Qwen3-14B, aproximadamente 28 GB, más el espacio adicional para los adaptadores (el repositorio completo ocupa 26,3 GB en disco).
 - GPU recomendadas: RTX 4090 (24 GB) para Qwen3-8B; A100 40 GB o H100 para Qwen3-14B sin cuantización.
 - En GPU de consumo, Qwen3-8B puede caber en una RTX 3090 o 4090; Qwen3-14B requeriría cuantización o una GPU con más de 28 GB.
-- Opciones de despliegue: al ser artefactos PEFT, se cargan con la librería `peft` de HuggingFace sobre el modelo base. No se mencionan opciones como vLLM u Ollama, ya que no están pensados para inferencia de producción.
+- Opciones de despliegue: al ser artefactos PEFT, se cargan con la librería `peft` de Hugging Face sobre el modelo base. No se mencionan opciones como vLLM u Ollama, ya que no están pensados para inferencia de producción.
 - Latencia y throughput: no disponibles; el propósito es el análisis de checkpoints, no la inferencia en tiempo real.
 
 ## Comparativa con modelos similares
@@ -72,6 +72,6 @@ No disponible. Este repositorio es un artefacto de investigación específico de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SahoobhAI/Direction-Not-Distance-Full-Trajectories
+- Repositorio Hugging Face: https://huggingface.co/SahoobhAI/Direction-Not-Distance-Full-Trajectories
 - Repositorio GitHub del proyecto: https://github.com/SubramanyamSahoo/Direction-Not-Distance
 - Checkpoints LoRA finales (afinados por preferencias): https://huggingface.co/SahoobhAI/Direction-Not-Distance-LoRA

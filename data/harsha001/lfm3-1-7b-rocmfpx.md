@@ -90,7 +90,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Harsha001/LFM3-1.7B-ROCmFPX
+- Repositorio Hugging Face: https://huggingface.co/Harsha001/LFM3-1.7B-ROCmFPX
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Fork ROCmFPX: https://github.com/HarshaVardhan3002/ROCmFPX
 - Pull request de llama.cpp con soporte LFM3: #31252 (referenciado en la model card)

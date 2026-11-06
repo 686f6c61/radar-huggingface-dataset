@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hermes-3-Llama-3.1-8B-PMTP-Einsof | 8,4 M (adaptador) + 8.030 M (base) | 131.072 | Adaptador de proyección | Apache 2.0 | HuggingFace |
-| NousResearch/Hermes-3-Llama-3.1-8B | 8.030 M | 131.072 | Modelo de chat con tool calling | Llama 3.1 Community | HuggingFace, Ollama |
-| Meta-Llama-3.1-8B-Instruct | 8.030 M | 131.072 | Modelo de instrucciones | Llama 3.1 Community | HuggingFace, Ollama |
-| Qwen2.5-7B-Instruct | 7.620 M | 131.072 | Modelo de instrucciones multilingüe | Apache 2.0 | HuggingFace, Ollama |
+| Hermes-3-Llama-3.1-8B-PMTP-Einsof | 8,4 M (adaptador) + 8.030 M (base) | 131.072 | Adaptador de proyección | Apache 2.0 | Hugging Face |
+| NousResearch/Hermes-3-Llama-3.1-8B | 8.030 M | 131.072 | Modelo de chat con tool calling | Llama 3.1 Community | Hugging Face, Ollama |
+| Meta-Llama-3.1-8B-Instruct | 8.030 M | 131.072 | Modelo de instrucciones | Llama 3.1 Community | Hugging Face, Ollama |
+| Qwen2.5-7B-Instruct | 7.620 M | 131.072 | Modelo de instrucciones multilingüe | Apache 2.0 | Hugging Face, Ollama |
 
 El adaptador no es comparable en rendimiento de generación con los modelos de la tabla porque no incluye pesos del modelo base. Frente a Hermes-3 original, la diferencia es la licencia (Apache 2.0 frente a Llama 3.1 Community) y la capa de proyección adicional. No se dispone de datos de benchmarks que permitan comparar calidad.
 
@@ -86,7 +86,7 @@ El adaptador no es comparable en rendimiento de generación con los modelos de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Polydim-Einsof/Hermes-3-Llama-3.1-8B-PMTP-Einsof
+- Hugging Face: https://huggingface.co/Polydim-Einsof/Hermes-3-Llama-3.1-8B-PMTP-Einsof
 - Modelo base: https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-8B
 - DOI Zenodo: https://doi.org/10.5281/zenodo.21209973
 - DOI Zenodo: https://doi.org/10.5281/zenodo.21136742

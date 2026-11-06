@@ -64,8 +64,8 @@ No se han publicado resultados desglosados por suite en la información disponib
 
 | Modelo | Parámetros | Contexto | Rendimiento LIBERO | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 LIBERO yaw20 PAD (este) | no disponible | no disponible | 50,45 % (1009/2000) | Apache 2.0 | HuggingFace |
-| π0.5 LIBERO PAD vision-head source n50k (checkpoint fuente) | no disponible | no disponible | no disponible | Apache 2.0 (presumible) | HuggingFace (`Donghyun1228/pi05-libero-pad-vision-head-source-n50k-10000-20261104`) |
+| π0.5 LIBERO yaw20 PAD (este) | no disponible | no disponible | 50,45 % (1009/2000) | Apache 2.0 | Hugging Face |
+| π0.5 LIBERO PAD vision-head source n50k (checkpoint fuente) | no disponible | no disponible | no disponible | Apache 2.0 (presumible) | Hugging Face (`Donghyun1228/pi05-libero-pad-vision-head-source-n50k-10000-20261104`) |
 | Otras filas de la tabla LIBERO del artículo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de parámetros, contexto ni rendimiento de los modelos comparables en la información proporcionada.
@@ -82,7 +82,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de los modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-pad-vision-head-yaw20-1000-20261105
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-pad-vision-head-yaw20-1000-20261105
 - Checkpoint fuente: https://huggingface.co/Donghyun1228/pi05-libero-pad-vision-head-source-n50k-10000-20261104
 - Código de referencia: `Donghyun1228/vla_adaptation` (commit `7b74d01d`), preset `pi05_libero_pad_img_yaw_adapt`, configuración en `run/spec.json`
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

@@ -102,13 +102,13 @@ Con grafo parcial (cada par revelado con probabilidad 0.2-0.8): T1 0.213 (0.194-
 - Solo estima efectos para retardos de 1 a 3 pasos.
 - El umbral de abtencion (`p_answerable < 0.5`) es fijo en el ejemplo de uso; puede requerir calibracion por caso.
 - El benchmark se realizo sobre mundos sinteticos; los intervalos de confianza y las metricas pueden no transferirse a dominios reales.
-- Release de investigacion (v0.1) con 0 descargas y 0 likes en HuggingFace en el momento de la consulta; madurez y soporte limitados.
+- Release de investigacion (v0.1) con 0 descargas y 0 likes en Hugging Face en el momento de la consulta; madurez y soporte limitados.
 - Licencia Apache-2.0 permite uso comercial, pero no se documentan garantias ni soporte.
 - No se dispone de informacion sobre sesgos, ya que el modelo no procesa texto ni datos sociales.
 - Riesgo de alucinacion no aplica en el sentido linguistico, pero si existe riesgo de estimaciones erroneas en regimenes fuera de distribucion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/7ViksSai/piston-v0.1
-- Organizacion en HuggingFace: https://huggingface.co/OlynkAI
+- Hugging Face: https://huggingface.co/7ViksSai/piston-v0.1
+- Organizacion en Hugging Face: https://huggingface.co/OlynkAI
 - Repositorio de reproduccion: https://github.com/OlynkAI/piston

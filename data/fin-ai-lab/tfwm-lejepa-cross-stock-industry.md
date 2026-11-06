@@ -97,7 +97,7 @@ No se dispone de comparaciones con modelos externos ni de cifras de rendimiento 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fin-ai-lab/tfwm-lejepa-cross-stock-industry
+- Modelo en Hugging Face: https://huggingface.co/fin-ai-lab/tfwm-lejepa-cross-stock-industry
 - Colección TFWM Pre-Trained Encoders: https://huggingface.co/collections/fin-ai-lab/tfwm-pre-trained-encoders-6ab871e942535b9c6041698d
 - Dataset de entrenamiento: https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense
 - Carpeta de datos usada en el entrenamiento: https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense/tree/main/1Hz_mosaic_mnth

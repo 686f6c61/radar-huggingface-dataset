@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Se0ulSeeker/krea2_lorasa es un artefacto publicado en HuggingFace por el usuario Se0ulSeeker cuya model card no contiene informacion tecnica: el unico contenido del README es la declaracion de licencia (`apache-2.0`). No se especifica arquitectura, tamano, datos de entrenamiento, idiomas ni tarea objetivo. El identificador del repositorio sugiere un adaptador del tipo LoRA (por el sufijo "lora"), potencialmente asociado a un modelo base denominado "krea2", pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
+El repositorio Se0ulSeeker/krea2_lorasa es un artefacto publicado en Hugging Face por el usuario Se0ulSeeker cuya model card no contiene informacion tecnica: el unico contenido del README es la declaracion de licencia (`apache-2.0`). No se especifica arquitectura, tamano, datos de entrenamiento, idiomas ni tarea objetivo. El identificador del repositorio sugiere un adaptador del tipo LoRA (por el sufijo "lora"), potencialmente asociado a un modelo base denominado "krea2", pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
 El repositorio ocupa 7,3 GB, un tamano muy superior al habitual de un adaptador LoRA convencional (que suele situarse entre decenas y unos pocos cientos de megabytes), lo que podria indicar que contiene pesos completos, multiples adaptadores, ficheros duplicados o checkpoints intermedios. Sin la lista de ficheros (`siblings`) no es posible determinarlo. El modelo acumula 0 descargas y 0 "likes" en el momento de la consulta, y fue creado el 21 de septiembre de 2026 y actualizado dos horas despues, el mismo dia.
 
@@ -82,12 +82,12 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 - Limitaciones de contexto e idioma: no disponible.
 - Licencia: el repositorio declara apache-2.0, permisiva para uso comercial, pero esta licencia solo cubre el artefacto publicado; las condiciones del modelo base y de los datos de entrenamiento son independientes y se desconocen.
 - Repositorio sin adopcion: 0 descargas y 0 likes, sin historial de uso que permita inferir calidad o estabilidad.
-- Cifras de fecha inusuales: el repositorio figura como creado en septiembre de 2026, fecha posterior a la habitual en los registros de HuggingFace; conviene verificar la integridad y autenticidad del artefacto antes de cualquier uso.
+- Cifras de fecha inusuales: el repositorio figura como creado en septiembre de 2026, fecha posterior a la habitual en los registros de Hugging Face; conviene verificar la integridad y autenticidad del artefacto antes de cualquier uso.
 - Recomendacion: no desplegar en produccion ni integrar en pipelines criticos sin obtener previamente la lista de ficheros del repositorio, el modelo base asociado y una evaluacion propia.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Se0ulSeeker/krea2_lorasa
+- Repositorio en Hugging Face: https://huggingface.co/Se0ulSeeker/krea2_lorasa
 - Resultados de busqueda web: no se ha recuperado ningun enlace relevante. Los unicos resultados devueltos corresponden a articulos de ASME sobre Internet of Things y fabricacion aditiva, sin relacion con el modelo:
   - https://www.asme.org/topics-resources/content/9-cool-iot-devices-for-our-daily-lives
   - https://www.asme.org/topics-resources/content/seven-ways-iot-super-charges-lean-manufacturing

@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparables (calidad de audio, adherencia 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/echomom/echomom-acestep-v15-xl-sft-4b
+- Repositorio de Hugging Face: https://huggingface.co/echomom/echomom-acestep-v15-xl-sft-4b
 - Modelo base acestep-v15-xl-sft: https://huggingface.co/ACE-Step/acestep-v15-xl-sft
 - Repositorio oficial de ACE-Step 1.5: https://github.com/ace-step/ACE-Step-1.5
 - Página del modelo en ModelScope (acestep-v15-xl-base): https://modelscope.ai/models/ACE-Step/acestep-v15-xl-base

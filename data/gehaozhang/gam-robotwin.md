@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GAM-RoboTwin es el paquete de pesos y artefactos de evaluacion del modelo GAM (Grounded Action Model), desarrollado por el autor gehaozhang y publicado en HuggingFace. GAM aborda la manipulacion robotica bimanual condicionada por lenguaje: un detector 3D de vocabulario abierto (WildDet3D) localiza los objetos nombrados en la instruccion y los convierte en cajas 3D, nubes de puntos y tokens de imagen; despues, un transformer de flow-matching predice trozos de accion (action chunks) para el robot. Este repositorio concreto contiene todo lo necesario para ejecutar GAM sobre el benchmark RoboTwin 2.0: el detector ajustado a RoboTwin, un experto de accion por tarea y la cache de entrenamiento precomputada de cada tarea.
+GAM-RoboTwin es el paquete de pesos y artefactos de evaluacion del modelo GAM (Grounded Action Model), desarrollado por el autor gehaozhang y publicado en Hugging Face. GAM aborda la manipulacion robotica bimanual condicionada por lenguaje: un detector 3D de vocabulario abierto (WildDet3D) localiza los objetos nombrados en la instruccion y los convierte en cajas 3D, nubes de puntos y tokens de imagen; despues, un transformer de flow-matching predice trozos de accion (action chunks) para el robot. Este repositorio concreto contiene todo lo necesario para ejecutar GAM sobre el benchmark RoboTwin 2.0: el detector ajustado a RoboTwin, un experto de accion por tarea y la cache de entrenamiento precomputada de cada tarea.
 
 La relevancia del lanzamiento esta en el enfoque monocular: el detector trabaja unicamente con RGB (profundidad cero), la geometria del objeto procede de su caja 3D predicha y la nube de puntos se reproyecta desde la profundidad estimada por el propio modelo. No se utiliza profundidad ni estado de objeto del simulador ni en entrenamiento ni en evaluacion, y cada objeto se ancla desde su nombre en cada fotograma (grounding de texto). Esto reduce la dependencia de sensores privilegiados y acerca el pipeline a un montaje real.
 
@@ -70,9 +70,9 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos alternat
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gehaozhang/gam-robotwin | Detector ajustado a RoboTwin 2.0 y expertos por tarea (7 tareas) | no disponible | no disponible | other | HuggingFace, 45,6 GB |
-| gehaozhang/gam-wilddet3d | Detector general mas cabeza de span universal, base del detector ajustado | no disponible | no disponible | no disponible en la informacion | HuggingFace |
-| gehaozhang/gam-libero-pro | Variante de GAM para el benchmark LIBERO-PRO | no disponible | no disponible | no disponible en la informacion | HuggingFace |
+| gehaozhang/gam-robotwin | Detector ajustado a RoboTwin 2.0 y expertos por tarea (7 tareas) | no disponible | no disponible | other | Hugging Face, 45,6 GB |
+| gehaozhang/gam-wilddet3d | Detector general mas cabeza de span universal, base del detector ajustado | no disponible | no disponible | no disponible en la informacion | Hugging Face |
+| gehaozhang/gam-libero-pro | Variante de GAM para el benchmark LIBERO-PRO | no disponible | no disponible | no disponible en la informacion | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gehaozhang/gam-robotwin
+- Modelo en Hugging Face: https://huggingface.co/gehaozhang/gam-robotwin
 - Codigo: https://github.com/GehaoZhang6/Grounding-Action-Model
 - Modelo relacionado (GAM-LIBERO-PRO): https://huggingface.co/gehaozhang/gam-libero-pro
 - Modelo relacionado (GAM-WildDet3D, detector general mas cabeza de span universal): https://huggingface.co/gehaozhang/gam-wilddet3d

@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nekodeus/qwen2-5-3b-instruct-openvino
+- Hugging Face: https://huggingface.co/Nekodeus/qwen2-5-3b-instruct-openvino
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - OpenVINO: https://github.com/openvinotoolkit/openvino
 - optimum-intel: https://github.com/huggingface/optimum-intel

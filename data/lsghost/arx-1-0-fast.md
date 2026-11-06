@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Arx-1.0-Fast es un repositorio de modelo publicado en HuggingFace por el usuario LSGHOST bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada contiene unicamente el bloque de metadatos de licencia, sin descripcion, sin arquitectura declarada, sin tamano de parametros y sin informacion sobre datos de entrenamiento. El repositorio registra cero descargas y cero valoraciones, y no declara pipeline de inferencia ni idiomas soportados.
+Arx-1.0-Fast es un repositorio de modelo publicado en Hugging Face por el usuario LSGHOST bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada contiene unicamente el bloque de metadatos de licencia, sin descripcion, sin arquitectura declarada, sin tamano de parametros y sin informacion sobre datos de entrenamiento. El repositorio registra cero descargas y cero valoraciones, y no declara pipeline de inferencia ni idiomas soportados.
 
 Esto significa que no es posible confirmar que se trate de un modelo de lenguaje, ni determinar su arquitectura, su ventana de contexto o su formato de pesos. El nombre "Fast" sugiere un enfasis en latencia reducida, pero se trata de una inferencia a partir del nombre y no de un dato documentado por el autor.
 
@@ -22,7 +22,7 @@ La relevancia practica de esta ficha es, por tanto, acotada: sirve como inventar
 | Formato de pesos | no disponible |
 | Autor | LSGHOST |
 | Pipeline declarado | no disponible |
-| Fecha de creacion en HuggingFace | 2026-09-30 |
+| Fecha de creacion en Hugging Face | 2026-09-30 |
 | Ultima actualizacion | 2026-09-30 |
 | Descargas | 0 |
 | Valoraciones (likes) | 0 |
@@ -82,11 +82,11 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, con la obligacion habitual de conservar el aviso de licencia y la clausula de exencion de responsabilidad. Al no existir ficha tecnica, el usuario asume todo el riesgo de validacion.
 - Sin validacion comunitaria: cero descargas y cero valoraciones implican que no hay evidencia externa de funcionamiento.
 - Fechas de publicacion registradas en el repositorio (30 de septiembre de 2026) posteriores a la fecha de consulta habitual, lo que conviene verificar antes de citar el modelo como disponible.
-- No debe asumirse que los pesos sean accesibles ni que el repositorio contenga artefactos utilizables; la informacion disponible solo confirma la existencia del espacio en HuggingFace.
+- No debe asumirse que los pesos sean accesibles ni que el repositorio contenga artefactos utilizables; la informacion disponible solo confirma la existencia del espacio en Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LSGHOST/Arx-1.0-Fast
+- Hugging Face: https://huggingface.co/LSGHOST/Arx-1.0-Fast
 - LLM Stats, ranking general de modelos (no relacionado con el repositorio): https://llm-stats.com/
 - LLM Leaderboard de LLM Stats (no relacionado): https://llm-stats.com/leaderboards/llm-leaderboard
 - Repositorio graxpert-ai-models (no relacionado): https://github.com/Dark-Matters-Astro/graxpert-ai-models

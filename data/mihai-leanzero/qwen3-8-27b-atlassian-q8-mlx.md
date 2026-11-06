@@ -93,7 +93,7 @@ No se han identificado en la información disponible otros modelos especializado
 
 ## Enlaces
 
-- [Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q8-mlx en HuggingFace](https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q8-mlx)
+- [Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q8-mlx en Hugging Face](https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q8-mlx)
 - [Página oficial del proyecto: LeanZero Atlassian Models](https://leanzero.net/portfolio/atlassian-models)
 - [LeanZero](https://leanzero.net)
 - [Rapid-MLX (fork de LeanZero)](https://github.com/leanzero-srl/Rapid-MLX)

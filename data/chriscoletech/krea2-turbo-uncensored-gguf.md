@@ -75,7 +75,7 @@ La comparativa es limitada porque no hay datos de rendimiento. En términos de t
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ChrisColeTech/krea2-turbo-uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ChrisColeTech/krea2-turbo-uncensored-GGUF
 - Modelo original (acceso restringido): https://huggingface.co/krea/Krea-2-Turbo
 - Tutorial de uso en ComfyUI: https://www.nextdiffusion.ai/tutorials/krea-2-uncensored-text-to-image-generations-in-comfyui
 - Vídeo sobre uncensoring y edición: https://www.youtube.com/watch?v=hAJZ9U3oXxc

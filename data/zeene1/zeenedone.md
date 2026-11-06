@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZEENE1/ZEENEDONE es un modelo publicado en HuggingFace por el usuario ZEENE1, distribuido bajo licencia MIT y etiquetado como fine-tuning del modelo Qwen/Qwen3.8-Flash-Next. La model card del repositorio es minima: se limita a declarar la licencia, el dataset de entrenamiento (lmsys/lmsys-chat-1m), los idiomas (ingles e igbo) y el modelo base. No incluye descripcion funcional, detalles de arquitectura, hiperparametros ni resultados de evaluacion.
+ZEENE1/ZEENEDONE es un modelo publicado en Hugging Face por el usuario ZEENE1, distribuido bajo licencia MIT y etiquetado como fine-tuning del modelo Qwen/Qwen3.8-Flash-Next. La model card del repositorio es minima: se limita a declarar la licencia, el dataset de entrenamiento (lmsys/lmsys-chat-1m), los idiomas (ingles e igbo) y el modelo base. No incluye descripcion funcional, detalles de arquitectura, hiperparametros ni resultados de evaluacion.
 
 El interes del modelo es, por tanto, limitado y fundamentalmente documental: se trata de un fine-tune conversacional del que no se ha publicado informacion tecnica verificable. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y la fecha de creacion indicada (2026-09-20) es posterior a la fecha de actualidad habitual de los repositorios publicos, lo que sugiere que los metadatos pueden ser inconsistentes o que el modelo no ha sido validado por la comunidad.
 
@@ -87,7 +87,7 @@ No disponible. No se puede establecer una comparativa rigurosa porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ZEENE1/ZEENEDONE
+- Repositorio en Hugging Face: https://huggingface.co/ZEENE1/ZEENEDONE
 - Dataset declarado: https://huggingface.co/datasets/lmsys/lmsys-chat-1m
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-Flash-Next (referencia no verificada en la informacion disponible)
 - Paper del modelo base o del dataset: no disponible

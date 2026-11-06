@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / MSA | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `oteam/ofx-card-backup-bb41a330c6527617d329ebbb` (este) | 92,96 M | MSA 256, pares 128, single 384 | AGPL-3.0 | HuggingFace, libreria `ofoldx` |
-| `oteam/alphafold2` | 93,283 M | MSA 256, pares 128, single 384 | no disponible en la informacion | HuggingFace, libreria `ofoldx` |
-| `oteam/alphafold2-ptm` | 93,292 M | MSA 256, pares 128, single 384 | no disponible en la informacion | HuggingFace, libreria `ofoldx` |
-| `oteam/alphafold2-multimer` | 93,278 M | MSA 256, pares 128, single 384, 21 reciclados | no disponible en la informacion | HuggingFace, libreria `ofoldx` |
+| `oteam/ofx-card-backup-bb41a330c6527617d329ebbb` (este) | 92,96 M | MSA 256, pares 128, single 384 | AGPL-3.0 | Hugging Face, libreria `ofoldx` |
+| `oteam/alphafold2` | 93,283 M | MSA 256, pares 128, single 384 | no disponible en la informacion | Hugging Face, libreria `ofoldx` |
+| `oteam/alphafold2-ptm` | 93,292 M | MSA 256, pares 128, single 384 | no disponible en la informacion | Hugging Face, libreria `ofoldx` |
+| `oteam/alphafold2-multimer` | 93,278 M | MSA 256, pares 128, single 384, 21 reciclados | no disponible en la informacion | Hugging Face, libreria `ofoldx` |
 
 No se dispone de datos de rendimiento comparativo (pLDDT, TM-score, GDT) en la información proporcionada para establecer una comparación cuantitativa con alternativas como ESMFold, RoseTTAFold u OpenFold.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo (pLDDT, TM-score, GDT) en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/ofx-card-backup-bb41a330c6527617d329ebbb
+- Hugging Face: https://huggingface.co/oteam/ofx-card-backup-bb41a330c6527617d329ebbb
 - Variante monómero: https://huggingface.co/oteam/alphafold2
 - Variante monómero con pTM: https://huggingface.co/oteam/alphafold2-ptm
 - Variante multímero: https://huggingface.co/oteam/alphafold2-multimer

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rocher-0.6-Llama-3.1-8B es una adaptacion (fine-tune o merge) del modelo Llama 3.1 8B Instruct de Meta, publicada por el usuario nigelrmtaylor en HuggingFace bajo el identificador `nigelrmtaylor/Rocher-0.6-Llama-3.1-8B`. El repositorio contiene una conversion a formato GGUF realizada con la herramienta Unsloth, pensada para su ejecucion en `llama.cpp` y en cualquier runtime compatible con GGUF (Ollama, LM Studio, kobold.cpp, entre otros). No se documenta en la model card cual es el proposito especifico de la variante "Rocher", ni el dataset de ajuste empleado.
+Rocher-0.6-Llama-3.1-8B es una adaptacion (fine-tune o merge) del modelo Llama 3.1 8B Instruct de Meta, publicada por el usuario nigelrmtaylor en Hugging Face bajo el identificador `nigelrmtaylor/Rocher-0.6-Llama-3.1-8B`. El repositorio contiene una conversion a formato GGUF realizada con la herramienta Unsloth, pensada para su ejecucion en `llama.cpp` y en cualquier runtime compatible con GGUF (Ollama, LM Studio, kobold.cpp, entre otros). No se documenta en la model card cual es el proposito especifico de la variante "Rocher", ni el dataset de ajuste empleado.
 
 El modelo cuenta con 8.030.261.312 parametros (dato derivado de los pesos en safetensors), lo que lo situa en la categoria de 8B, y ocupa 4,9 GB en el repositorio al incluir unicamente la cuantizacion Q4_K_M. El unico archivo publicado es `Meta-Llama-3.1-8B-Instruct.Q4_K_M.gguf`.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Rocher-0.6-Llama-3.1-8B | 8,03 B | No disponible (base: 128 K) | No disponible | GGUF (Q4_K_M) | HuggingFace, 0 descargas |
-| Llama 3.1 8B Instruct | 8,03 B | 128 K | Llama 3.1 Community License | Safetensors, GGUF | HuggingFace, ampliamente adoptado |
-| Mistral 7B Instruct | 7,24 B | 32 K | Apache 2.0 | Safetensors, GGUF | HuggingFace, muy extendido |
-| Qwen2.5 7B Instruct | 7,61 B | 128 K | Apache 2.0 | Safetensors, GGUF | HuggingFace, muy extendido |
+| Rocher-0.6-Llama-3.1-8B | 8,03 B | No disponible (base: 128 K) | No disponible | GGUF (Q4_K_M) | Hugging Face, 0 descargas |
+| Llama 3.1 8B Instruct | 8,03 B | 128 K | Llama 3.1 Community License | Safetensors, GGUF | Hugging Face, ampliamente adoptado |
+| Mistral 7B Instruct | 7,24 B | 32 K | Apache 2.0 | Safetensors, GGUF | Hugging Face, muy extendido |
+| Qwen2.5 7B Instruct | 7,61 B | 128 K | Apache 2.0 | Safetensors, GGUF | Hugging Face, muy extendido |
 
 Nota: las cifras de los modelos comparativos son las publicadas por sus respectivos autores. No hay datos de rendimiento comparativo para Rocher-0.6, por lo que la comparativa se limita a especificaciones estructurales.
 
@@ -86,7 +86,7 @@ Nota: las cifras de los modelos comparativos son las publicadas por sus respecti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nigelrmtaylor/Rocher-0.6-Llama-3.1-8B
+- Modelo en Hugging Face: https://huggingface.co/nigelrmtaylor/Rocher-0.6-Llama-3.1-8B
 - Unsloth (herramienta de conversion citada): https://github.com/unslothai/unsloth
 - Modelo base Llama 3.1 8B Instruct de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

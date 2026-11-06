@@ -4,7 +4,7 @@
 
 El repositorio 1234Frede/v2chronos2-lora-dk1-no2 es un adaptador LoRA publicado por el usuario 1234Frede sobre el modelo base amazon/chronos-2, un modelo fundacional de series temporales desarrollado por Amazon Science. Se distribuye como adaptador PEFT (version 0.20.0) en formato safetensors, y su uso previsto es el ajuste eficiente del modelo base sin reentrenar todos los pesos.
 
-La informacion publicada por el autor es practicamente inexistente: la model card es la plantilla por defecto de HuggingFace sin ningun campo completado, el repositorio ocupa 0.0 GB y no registra descargas ni interacciones. No se documenta ni el conjunto de datos de ajuste, ni los hiperparametros, ni el rango del adaptador, ni la tarea concreta para la que fue entrenado.
+La informacion publicada por el autor es practicamente inexistente: la model card es la plantilla por defecto de Hugging Face sin ningun campo completado, el repositorio ocupa 0.0 GB y no registra descargas ni interacciones. No se documenta ni el conjunto de datos de ajuste, ni los hiperparametros, ni el rango del adaptador, ni la tarea concreta para la que fue entrenado.
 
 Por tanto, esta ficha describe lo que se puede verificar (naturaleza del artefacto, modelo base y metadatos del repositorio) y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluacion de calidad, rendimiento o idoneidad para produccion es, con la informacion actual, imposible de realizar.
 
@@ -24,7 +24,7 @@ Por tanto, esta ficha describe lo que se puede verificar (naturaleza del artefac
 | Libreria | peft (version indicada en la model card: PEFT 0.20.0) |
 | Tamano del repositorio | 0.0 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-14 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-14 (segun metadatos de Hugging Face) |
 | Fecha de ultima actualizacion | 2026-09-14 |
 
 ## Arquitectura y entrenamiento
@@ -76,10 +76,10 @@ No hay datos de rendimiento del adaptador, por lo que la comparativa se limita a
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| 1234Frede/v2chronos2-lora-dk1-no2 | Adaptador LoRA sobre Chronos-2 | No disponible | No disponible | No disponible | Repositorio HuggingFace, 0 descargas | No disponible |
-| amazon/chronos-2 (modelo base) | Modelo fundacional de series temporales | No disponible en la informacion proporcionada | No disponible | Consultar la model card del modelo base | HuggingFace | No disponible |
-| Otros adaptadores LoRA sobre Chronos-2 | Adaptador PEFT | No disponible | No disponible | Variable segun autor | HuggingFace | No disponible |
-| Alternativas de forecasting fundacional (por ejemplo, TimesFM de Google o Moirai de Salesforce) | Modelos fundacionales de series temporales | No disponible | No disponible | Variable | HuggingFace / repositorios propios | No disponible |
+| 1234Frede/v2chronos2-lora-dk1-no2 | Adaptador LoRA sobre Chronos-2 | No disponible | No disponible | No disponible | Repositorio Hugging Face, 0 descargas | No disponible |
+| amazon/chronos-2 (modelo base) | Modelo fundacional de series temporales | No disponible en la informacion proporcionada | No disponible | Consultar la model card del modelo base | Hugging Face | No disponible |
+| Otros adaptadores LoRA sobre Chronos-2 | Adaptador PEFT | No disponible | No disponible | Variable segun autor | Hugging Face | No disponible |
+| Alternativas de forecasting fundacional (por ejemplo, TimesFM de Google o Moirai de Salesforce) | Modelos fundacionales de series temporales | No disponible | No disponible | Variable | Hugging Face / repositorios propios | No disponible |
 
 No se dispone de informacion suficiente para establecer una comparacion cuantitativa con alternativas de la misma categoria.
 
@@ -97,8 +97,8 @@ No se dispone de informacion suficiente para establecer una comparacion cuantita
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/1234Frede/v2chronos2-lora-dk1-no2
-- Modelo base en HuggingFace: https://huggingface.co/amazon/chronos-2
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/1234Frede/v2chronos2-lora-dk1-no2
+- Modelo base en Hugging Face: https://huggingface.co/amazon/chronos-2
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la plantilla de la model card: https://mlco2.github.io/impact
 

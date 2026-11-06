@@ -5,7 +5,7 @@ Fish Audio Drama 3 es un modelo de síntesis de voz (text-to-speech) de nueva ge
 
 La arquitectura emplea un backbone de texto MoE (Mixture of Experts) de 35.000 millones de parámetros totales con 3.000 millones activos por token, combinando atención completa y lineal (híbrida). Incluye un decodificador de audio basado en Codebook-MTP que decodifica 10 codebooks de forma causal sobre toda la secuencia. El modelo soporta hasta 16 hablantes distintos mediante etiquetas `<|speaker:0|>` a `<|speaker:15|>`, y el texto largo se divide automáticamente en fragmentos que pueden transmitirse en streaming.
 
-El modelo se distribuye con licencia de investigación de Fish Audio y está disponible en HuggingFace con pesos en safetensors. Su despliegue en producción es posible mediante SGLang-Omni y vLLM-Omni, con soporte desde el día de lanzamiento.
+El modelo se distribuye con licencia de investigación de Fish Audio y está disponible en Hugging Face con pesos en safetensors. Su despliegue en producción es posible mediante SGLang-Omni y vLLM-Omni, con soporte desde el día de lanzamiento.
 
 ## Especificaciones técnicas
 
@@ -64,7 +64,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - Caveats para producción: el modelo requiere GPUs de alta gama (H200 en las pruebas) y no se confirma su viabilidad en hardware de consumo. La edición de audio como continuación requiere gestionar el contexto de tomas previas, lo que puede aumentar la complejidad del pipeline.
 
 ## Enlaces
-- [HuggingFace - hossein95/drama-3](https://huggingface.co/hossein95/drama-3)
+- [Hugging Face - hossein95/drama-3](https://huggingface.co/hossein95/drama-3)
 - [SGLang-Omni](https://sgl-project.github.io/sglang-omni/)
 - [Drama 3 Cookbook (SGLang-Omni)](https://sgl-project.github.io/sglang-omni/cookbook/fishaudio_drama3.html)
 - [vLLM-Omni](https://github.com/vllm-project/vllm-omni)

@@ -114,7 +114,7 @@ Diferencia de tamano declarada por el autor: este checkpoint es 300,6 MB (30,7%)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ethansipark/Qwen3-ForcedAligner-0.6B-8enc4dec-MLX
+- Modelo en Hugging Face: https://huggingface.co/ethansipark/Qwen3-ForcedAligner-0.6B-8enc4dec-MLX
 - Checkpoint base directo (8 bits completo): https://huggingface.co/ethansipark/Qwen3-ForcedAligner-0.6B-8bit-full-MLX
 - Version comunitaria 8 bits: https://huggingface.co/mlx-community/Qwen3-ForcedAligner-0.6B-8bit
 - Version comunitaria 4 bits: https://huggingface.co/mlx-community/Qwen3-ForcedAligner-0.6B-4bit

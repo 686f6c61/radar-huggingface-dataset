@@ -64,13 +64,13 @@ No se dispone de información comparativa en la ficha. Este checkpoint compite c
 - La licencia del modelo no está especificada por el autor; aunque el modelo base es Llama 3.1 (licencia de Meta con restricciones de uso comercial), la ausencia de licencia clara en el repo puede generar incertidumbre legal. Se recomienda contactar con el autor o revisar el repositorio original antes de usar en producción.
 - La cuantización FP8 puede introducir una pérdida de precisión, especialmente en tareas de razonamiento matemático o lógico complejo. No se han publicado evaluaciones que cuantifiquen esta pérdida.
 - La calibración se realizó únicamente con datos en árabe (MSA y Golfo), por lo que el rendimiento en otros idiomas podría degradarse ligeramente respecto al modelo base, aunque no hay evidencia empírica.
-- El checkpoint no es cargable con `transformers` estándar; requiere un runtime compatible con ModelOpt (vLLM, TensorRT-LLM). Esto limita su uso en entornos que dependen de la API de HuggingFace Transformers.
+- El checkpoint no es cargable con `transformers` estándar; requiere un runtime compatible con ModelOpt (vLLM, TensorRT-LLM). Esto limita su uso en entornos que dependen de la API de Hugging Face Transformers.
 - No se proporcionan datos de sesgos, alucinación o robustez. Como cualquier modelo de lenguaje, puede generar contenido incorrecto o sesgado, y no se ha realizado una evaluación específica.
 - La fecha de creación (2026-08-15) es inusualmente futura, lo que podría indicar un error en los metadatos o un modelo generado con fines de prueba. Se recomienda verificar la autenticidad del repositorio.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NouraAlqasim/llama3.1-8b-fp8-mixed
+- Repositorio Hugging Face: https://huggingface.co/NouraAlqasim/llama3.1-8b-fp8-mixed
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Dataset de calibración: `Almheiri/ArabCulture-Dialogue` (revisión `9acd60cbbb4f`, no se proporciona URL directa)
 - Documentación de NVIDIA ModelOpt: https://github.com/NVIDIA/TensorRT-Model-Optimizer (referencia general, no se cita en la ficha)

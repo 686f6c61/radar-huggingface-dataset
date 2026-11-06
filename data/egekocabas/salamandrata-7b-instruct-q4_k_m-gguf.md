@@ -79,7 +79,7 @@ Los tres modelos comparten los mismos parametros y licencia; la diferencia princ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/egekocabas/salamandraTA-7b-instruct-Q4_K_M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/egekocabas/salamandraTA-7b-instruct-Q4_K_M-GGUF
 - Modelo base original: https://huggingface.co/BSC-LT/salamandraTA-7b-instruct
 - Version GGUF oficial de BSC-LT: https://huggingface.co/BSC-LT/salamandraTA-7B-instruct-GGUF
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

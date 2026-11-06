@@ -74,7 +74,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace: Animateus/gemma-4-E2B-5bit](https://huggingface.co/Animateus/gemma-4-E2B-5bit)
+- [Hugging Face: Animateus/gemma-4-E2B-5bit](https://huggingface.co/Animateus/gemma-4-E2B-5bit)
 - [Gemma 4 — Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)
 - [Gemma 4 model card | Google AI for Developers](https://ai.google.dev/gemma/docs/core/model_card_4)
 - [Gemma 4 model overview | Google AI for Developers](https://ai.google.dev/gemma/docs/core)

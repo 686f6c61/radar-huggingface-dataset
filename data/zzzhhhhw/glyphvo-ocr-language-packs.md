@@ -82,8 +82,8 @@ La comparación es orientativa: Glyphvo redistribuye únicamente la etapa de rec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ZZZHHHHW/glyphvo-ocr-language-packs
-- PaddlePaddle en HuggingFace: https://huggingface.co/PaddlePaddle
+- Repositorio Hugging Face: https://huggingface.co/ZZZHHHHW/glyphvo-ocr-language-packs
+- PaddlePaddle en Hugging Face: https://huggingface.co/PaddlePaddle
 - Repositorio PaddleOCR (referencia upstream de PP-OCRv5): no disponible en la información proporcionada
 - Paper de PP-OCRv5: no disponible en la información proporcionada
 - Demos o blogs del autor: no disponibles en la información proporcionada

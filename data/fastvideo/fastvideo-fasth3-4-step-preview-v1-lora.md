@@ -68,8 +68,8 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 
 | Modelo | Pasos de denoise | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiniMax-H3 (base) | 50 | Transformer de difusion | minimax-h3-community | HuggingFace |
-| FastH3 4-step (este repo) | 4 | LoRA sobre MiniMax-H3 | minimax-h3-community | HuggingFace |
+| MiniMax-H3 (base) | 50 | Transformer de difusion | minimax-h3-community | Hugging Face |
+| FastH3 4-step (este repo) | 4 | LoRA sobre MiniMax-H3 | minimax-h3-community | Hugging Face |
 | Hunyuan Video 1.5 | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,10 +84,10 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-LoRA
+- Repositorio Hugging Face: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-LoRA
 - Blog oficial de FastH3 Preview: https://haoailab.com/blogs/fasth3-preview/
 - Checkpoint completo recomendado (VSA Data-Free): https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree
-- Coleccion FastH3 en HuggingFace: https://huggingface.co/collections/FastVideo/fastvideo-fasth3
+- Coleccion FastH3 en Hugging Face: https://huggingface.co/collections/FastVideo/fastvideo-fasth3
 - Repositorio GitHub de FastVideo: https://github.com/hao-ai-lab/FastVideo
 - Guia de instalacion de FastVideo: https://hao-ai-lab.github.io/FastVideo/getting_started/installation/
 - Paper DMD2 (arXiv): https://arxiv.org/abs/2405.14867

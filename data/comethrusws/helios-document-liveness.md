@@ -18,7 +18,7 @@ A pesar de la falta de especificaciones, su propósito es claro dentro del conte
 | Longitud de contexto | no disponible (modelo de visión, no texto) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (modelo de visión, no depende de idioma) |
-| Licencia | Apache-2.0 (según tag en HuggingFace; el campo oficial indica "no disponible") |
+| Licencia | Apache-2.0 (según tag en Hugging Face; el campo oficial indica "no disponible") |
 | Formato de pesos | Keras (H5), TensorFlow Lite, ONNX (según tags) |
 
 ## Arquitectura y entrenamiento
@@ -58,13 +58,13 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 - No hay información pública sobre sesgos, robustez frente a condiciones de iluminación, ángulos o calidad de imagen.
 - Riesgo de alucinación no aplica (modelo de visión), pero sí riesgo de falsos positivos/negativos en la clasificación de vivacidad, lo que podría afectar la experiencia de usuario o la seguridad.
-- La licencia Apache-2.0 permite uso comercial, pero el campo oficial de licencia en HuggingFace indica "no disponible", por lo que se recomienda verificar con el autor antes de un uso productivo.
+- La licencia Apache-2.0 permite uso comercial, pero el campo oficial de licencia en Hugging Face indica "no disponible", por lo que se recomienda verificar con el autor antes de un uso productivo.
 - El modelo no ha sido validado externamente; al tener 0 descargas y 0 likes, no hay evidencia de su rendimiento en entornos reales.
 - No se especifican limitaciones de contexto o idioma, pero al ser un modelo de visión, no procesa texto.
 - Para producción, es imprescindible obtener documentación adicional del autor o realizar una evaluación propia con datos representativos.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/comethrusws/helios-document-liveness)
-- [Perfil del autor en HuggingFace](https://huggingface.co/comethrusws)
+- [Modelo en Hugging Face](https://huggingface.co/comethrusws/helios-document-liveness)
+- [Perfil del autor en Hugging Face](https://huggingface.co/comethrusws)
 - [Sitio de SAGEA (proyecto Helios)](https://www.sagea.space/enterprise/helios)

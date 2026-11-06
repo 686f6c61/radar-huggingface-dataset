@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mrthor102/gun10` es un repositorio alojado en HuggingFace creado por el usuario `mrthor102`. Según los metadatos disponibles, el repositorio tiene un tamaño de 29,1 GB, lo que sugiere que contiene pesos de un modelo, pero no se ha publicado ninguna model card, documentación técnica ni información sobre su arquitectura, propósito o capacidades. El número de descargas es cero y solo tiene un "like", lo que indica que no ha sido adoptado ni evaluado por la comunidad.
+El modelo `mrthor102/gun10` es un repositorio alojado en Hugging Face creado por el usuario `mrthor102`. Según los metadatos disponibles, el repositorio tiene un tamaño de 29,1 GB, lo que sugiere que contiene pesos de un modelo, pero no se ha publicado ninguna model card, documentación técnica ni información sobre su arquitectura, propósito o capacidades. El número de descargas es cero y solo tiene un "like", lo que indica que no ha sido adoptado ni evaluado por la comunidad.
 
 En el momento de redactar esta ficha, no es posible determinar qué tipo de modelo es, qué problema resuelve ni por qué sería relevante. La información pública disponible es insuficiente para realizar una evaluación técnica. Por tanto, esta ficha se limita a reflejar el estado actual de la información y a advertir de la ausencia de datos esenciales para su uso o despliegue.
 
@@ -54,4 +54,4 @@ No disponible. No se dispone de información suficiente para comparar este model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/mrthor102/gun10](https://huggingface.co/mrthor102/gun10)
+- Repositorio en Hugging Face: [https://huggingface.co/mrthor102/gun10](https://huggingface.co/mrthor102/gun10)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`adamasimon/tmp-qa15` es un modelo de escala *tiny* basado en la arquitectura **DeiT** (Data-efficient Image Transformers), orientado a tareas de *matching* (emparejamiento o correspondencia entre elementos). Ha sido publicado en HuggingFace por el usuario `adamasimon` bajo licencia BSD-3-Clause, aunque su repositorio solo contiene un script `predict.py` y no se proporciona información sobre pesos entrenados ni dataset utilizado. El modelo emplea atención multi-query, una estrategia de fusión bilineal y una cabeza de clasificación específica para *matching*. Su reducido tamaño y la simplicidad de su implementación lo hacen interesante como punto de partida para experimentos o prototipos, aunque carece de documentación sobre su rendimiento real.
+`adamasimon/tmp-qa15` es un modelo de escala *tiny* basado en la arquitectura **DeiT** (Data-efficient Image Transformers), orientado a tareas de *matching* (emparejamiento o correspondencia entre elementos). Ha sido publicado en Hugging Face por el usuario `adamasimon` bajo licencia BSD-3-Clause, aunque su repositorio solo contiene un script `predict.py` y no se proporciona información sobre pesos entrenados ni dataset utilizado. El modelo emplea atención multi-query, una estrategia de fusión bilineal y una cabeza de clasificación específica para *matching*. Su reducido tamaño y la simplicidad de su implementación lo hacen interesante como punto de partida para experimentos o prototipos, aunque carece de documentación sobre su rendimiento real.
 
 ## Especificaciones técnicas
 
@@ -63,5 +63,5 @@ No se dispone de información sobre modelos comparables. No se conocen alternati
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/adamasimon/tmp-qa15)
+- [Hugging Face del modelo](https://huggingface.co/adamasimon/tmp-qa15)
 - No se han encontrado papers, blogs ni repositorios adicionales en la búsqueda web realizada.

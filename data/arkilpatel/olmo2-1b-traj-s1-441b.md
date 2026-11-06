@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al se
 - Cada checkpoint es un modelo de 1B de parametros en bf16, lo que ocupa aproximadamente 2-3 GB en memoria. El repositorio completo pesa 127.7 GB (43 checkpoints).
 - Para inferencia de un solo checkpoint, se recomienda una GPU con al menos 4 GB de VRAM (por ejemplo, RTX 3060, RTX 4060, o superiores). Modelos como A100 o H100 no son necesarios para este tamano.
 - Es posible ejecutar en CPU con llama.cpp, aunque la latencia sera mayor.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, o directamente con transformers de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, o directamente con transformers de Hugging Face.
 - Latencia y throughput estimados: no disponibles, pero para un modelo de 1B en una GPU moderna se espera una generacion de decenas de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -75,9 +75,9 @@ La comparacion directa no es posible porque este repositorio no es un modelo fin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-441b
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-441b
 - Paper OLMo 2 (arXiv): https://arxiv.org/abs/2501.00656
 - PDF del paper: https://arxiv.org/pdf/2501.00656
 - Repositorio GitHub de OLMo: https://github.com/allenai/OLMo
-- Modelo base en HuggingFace: https://huggingface.co/allenai/OLMo-2-0425-1B
+- Modelo base en Hugging Face: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Pagina oficial de OLMo 2: https://allenai.org/olmo2

@@ -46,7 +46,7 @@ En su estado actual el artefacto unicamente es capaz de ejecutar el codigo de ej
 - Pruebas de humo en pipelines de CI: puede utilizarse como caso minimo para verificar que un entorno de PyTorch carga safetensors y ejecuta un paso forward.
 - Estudio de recetas de optimizacion: sirve para comparar Lion frente a otros optimizadores con el mismo planificador step, aunque sin garantias de convergencia al no haber entrenamiento.
 - Base para experimentos academicos controlados: util como punto de partida reproducible para evaluar variantes de BEiT en tareas multiples bajo condiciones identicas de datos y semillas.
-- Plantilla docente: puede emplearse en cursos o talleres para ilustrar como se estructura un repositorio de modelo en HuggingFace (config, training_args, checkpoint, script de evaluacion).
+- Plantilla docente: puede emplearse en cursos o talleres para ilustrar como se estructura un repositorio de modelo en Hugging Face (config, training_args, checkpoint, script de evaluacion).
 - Comparacion de mecanismos de normalizacion: ScaleNorm frente a LayerNorm u otras alternativas en un contexto de bajo coste computacional.
 - No se recomienda ningun caso de uso en produccion, atencion al cliente, generacion de codigo o analisis de datos, dado que el modelo no esta entrenado.
 
@@ -79,4 +79,4 @@ No disponible. No se conocen modelos comparables dentro de la misma categoria, y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Bcngarcia7/multitask77
+- Hugging Face: https://huggingface.co/Bcngarcia7/multitask77

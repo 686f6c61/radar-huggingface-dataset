@@ -31,7 +31,7 @@ El entrenamiento se realizó con fine-tuning del modelo base `google/siglip2-bas
 - Detecta patrones visuales: diseño, colores, imágenes y disposición de elementos.
 - Funciona con imágenes de baja resolución (224 px), aunque pierde legibilidad del texto.
 - No requiere texto adicional: solo la imagen de entrada.
-- Es compatible con el pipeline `image-classification` de HuggingFace Transformers.
+- Es compatible con el pipeline `image-classification` de Hugging Face Transformers.
 - No incluye capacidades de generación de texto, tool calling, agentes ni visión multimodal avanzada (solo clasificación).
 
 ## Casos de uso
@@ -110,7 +110,7 @@ En cuanto a tamaño y licencia, `piedomains-image` es pequeño (92M params) y co
 
 ## Enlaces
 
-- [HuggingFace - gojiberries/piedomains-image](https://huggingface.co/gojiberries/piedomains-image)
+- [Hugging Face - gojiberries/piedomains-image](https://huggingface.co/gojiberries/piedomains-image)
 - [GitHub - themains/piedomains](https://github.com/themains/piedomains/tree/main)
 - [PyPI - piedomains](https://pypi.org/project/piedomains/)
 - [Documentación del proyecto](https://themains.github.io/piedomains/)

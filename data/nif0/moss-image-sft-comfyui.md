@@ -75,9 +75,9 @@ No se proporcionan datos de rendimiento comparativo frente a otros modelos texto
 
 | Modelo | Formato | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nif0/MOSS-Image-SFT-ComfyUI | INT8 + W4A8 + bf16 | 5,41 GB + 5,43 GB + 0,125 GB | Apache-2.0 | HuggingFace, listo para ComfyUI |
-| OpenMOSS-Team/MOSS-Image-SFT | bf16 (original) | 10,16 GB + 16,79 GB (+ VAE) | Apache-2.0 | HuggingFace, pipeline diffusers |
-| OpenMOSS-Team/MOSS-Image-Base | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| nif0/MOSS-Image-SFT-ComfyUI | INT8 + W4A8 + bf16 | 5,41 GB + 5,43 GB + 0,125 GB | Apache-2.0 | Hugging Face, listo para ComfyUI |
+| OpenMOSS-Team/MOSS-Image-SFT | bf16 (original) | 10,16 GB + 16,79 GB (+ VAE) | Apache-2.0 | Hugging Face, pipeline diffusers |
+| OpenMOSS-Team/MOSS-Image-Base | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 La ventaja principal de la version cuantizada es el menor consumo de memoria y la integracion en ComfyUI; frente a otros modelos de generacion de imagen de la misma categoria no hay datos comparativos publicados en la informacion disponible.
 
@@ -95,7 +95,7 @@ La ventaja principal de la version cuantizada es el menor consumo de memoria y l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nif0/MOSS-Image-SFT-ComfyUI
+- Repositorio Hugging Face: https://huggingface.co/nif0/MOSS-Image-SFT-ComfyUI
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - MOSS-Image-Base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Codigo y documentacion: https://github.com/OpenMOSS/MOSS-Image

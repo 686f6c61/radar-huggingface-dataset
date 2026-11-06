@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA de PEFT entrenado sobre el modelo base `google/gemma-4-E4B-it`, la variante instructiva de Google DeepMind dentro de la familia Gemma 4. No se trata de un modelo completo, sino de un delta de pesos (aproximadamente 0,0 GB de repositorio) que debe cargarse junto al modelo base para reproducir el comportamiento ajustado. El autor del artefacto es el usuario de HuggingFace `leobianco`, y la model card publicada es una plantilla sin rellenar: todos los campos relevantes (datos de entrenamiento, idiomas, licencia, uso previsto, evaluación) figuran como "[More Information Needed]".
+Este repositorio contiene un adaptador LoRA de PEFT entrenado sobre el modelo base `google/gemma-4-E4B-it`, la variante instructiva de Google DeepMind dentro de la familia Gemma 4. No se trata de un modelo completo, sino de un delta de pesos (aproximadamente 0,0 GB de repositorio) que debe cargarse junto al modelo base para reproducir el comportamiento ajustado. El autor del artefacto es el usuario de Hugging Face `leobianco`, y la model card publicada es una plantilla sin rellenar: todos los campos relevantes (datos de entrenamiento, idiomas, licencia, uso previsto, evaluación) figuran como "[More Information Needed]".
 
 El interés técnico del checkpoint reside en el procedimiento de ajuste: el identificador indica un entrenamiento con RLOO (REINFORCE Leave-One-Out), una variante de optimización por política con estimador de línea base, con rango LoRA r=8, coeficiente beta=0,078 y una tasa de aprendizaje de 3·10⁻⁵ durante 1 época, sobre un conjunto etiquetado como "S130104". Está construido con el stack `transformers` + `trl` (PEFT 0.20.0), lo que lo sitúa en el terreno del ajuste por refuerzo ligero sobre un modelo ya alineado por instrucciones.
 
@@ -13,7 +13,7 @@ Su relevancia es fundamentalmente de investigación: es un ejemplo reproducible 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Adaptador LoRA (PEFT) sobre `google/gemma-4-E4B-it`. Arquitectura del modelo base no disponible en la información proporcionada (familia Gemma 4, transformer decoder; detalles no confirmados) |
-| Parametros totales | No disponible para el adaptador. Rango LoRA r=8; el repositorio ocupa 0,0 GB (redondeo del reporte de HuggingFace). Parámetros del modelo base no disponibles |
+| Parametros totales | No disponible para el adaptador. Rango LoRA r=8; el repositorio ocupa 0,0 GB (redondeo del reporte de Hugging Face). Parámetros del modelo base no disponibles |
 | Parametros activos | No aplica al adaptador (no es MoE). Para el modelo base no disponible |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible. El adaptador se distribuye en safetensors sin cuantizar |
@@ -72,15 +72,15 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este adaptador (`..._epo1_lr3_0e-05_beta0_078_r8`) | Adaptador LoRA | r=8 (base no disponible) | No disponible | RLOO, lr=3·10⁻⁵, 1 época | No disponible | Público en HuggingFace, 0 descargas |
-| `leobianco/npov_PERL_organic_gemma-4-E4B-it_S130104_epo0_5_lr1_1e-05_beta0_078_r8` | Adaptador LoRA hermano | r=8 (base no disponible) | No disponible | RLOO, lr=1·10⁻⁵, 0,5 épocas | No disponible | Público en HuggingFace |
+| Este adaptador (`..._epo1_lr3_0e-05_beta0_078_r8`) | Adaptador LoRA | r=8 (base no disponible) | No disponible | RLOO, lr=3·10⁻⁵, 1 época | No disponible | Público en Hugging Face, 0 descargas |
+| `leobianco/npov_PERL_organic_gemma-4-E4B-it_S130104_epo0_5_lr1_1e-05_beta0_078_r8` | Adaptador LoRA hermano | r=8 (base no disponible) | No disponible | RLOO, lr=1·10⁻⁵, 0,5 épocas | No disponible | Público en Hugging Face |
 | `google/gemma-4-E4B-it` | Modelo completo instructivo | No disponible | No disponible | Ajuste por instrucciones (no documentado aquí) | No disponible | Modelo base de referencia |
 
 No se dispone de datos de rendimiento para ninguno de los tres, por lo que la comparativa se limita a configuración de entrenamiento y disponibilidad. No se han identificado alternativas de terceros comparables con métricas publicadas en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card es la plantilla por defecto de HuggingFace, sin ningún campo completado. No se puede determinar el uso previsto, el alcance ni las condiciones de uso sin contactar con el autor.
+- Documentación inexistente: la model card es la plantilla por defecto de Hugging Face, sin ningún campo completado. No se puede determinar el uso previsto, el alcance ni las condiciones de uso sin contactar con el autor.
 - Licencia no declarada: el repositorio no especifica licencia. El uso comercial queda sujeto a la licencia del modelo base `google/gemma-4-E4B-it`, que tampoco se detalla en la información proporcionada. Verificar antes de cualquier despliegue.
 - Sin evaluación: no hay benchmarks, ni evaluación cualitativa, ni análisis de sesgos. Cualquier afirmación sobre su calidad sería especulativa.
 - Riesgo de alucinación: heredado del modelo base y potencialmente alterado por la optimización con recompensa. Los ajustes con RL pueden incentivar respuestas que maximicen la recompensa sin garantizar veracidad, un fenómeno conocido como reward hacking.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento para ninguno de los tres, por lo que la co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leobianco/npov_PERL_organic_gemma-4-E4B-it_S130104_epo1_lr3_0e-05_beta0_078_r8_2610092306
+- Modelo en Hugging Face: https://huggingface.co/leobianco/npov_PERL_organic_gemma-4-E4B-it_S130104_epo1_lr3_0e-05_beta0_078_r8_2610092306
 - Checkpoint hermano (0,5 épocas, lr=1·10⁻⁵): https://huggingface.co/leobianco/npov_PERL_organic_gemma-4-E4B-it_S130104_epo0_5_lr1_1e-05_beta0_078_r8_2610062017
 - Dataset de evaluación del mismo autor: https://huggingface.co/datasets/leobianco/eval_npov_PERL_organic_gemma-4-E4B-it_S1301_3068_gens_T0_3_wfs0_s12345_mt256_sftd09d98
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it

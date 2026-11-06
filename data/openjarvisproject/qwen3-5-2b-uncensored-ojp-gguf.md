@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks estándar para comparar rendimiento entre e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenJarvisProject/Qwen3.5-2B-Uncensored-OJP-GGUF
+- Hugging Face: https://huggingface.co/OpenJarvisProject/Qwen3.5-2B-Uncensored-OJP-GGUF
 - Modelo base (HauhauCS): https://huggingface.co/HauhauCS/Qwen3.5-2B-Uncensored-HauhauCS-Aggressive
 - Modelo original (Qwen): https://huggingface.co/Qwen/Qwen3.5-2B
 - Build 0.8B de OpenJarvisProject: https://huggingface.co/OpenJarvisProject/Qwen3.5-0.8B-Uncensored-OJP-GGUF

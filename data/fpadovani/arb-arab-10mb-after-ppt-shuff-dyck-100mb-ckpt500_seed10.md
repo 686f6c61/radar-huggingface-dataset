@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arb-arab-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed10` es un modelo de generacion de texto de 39.087.104 parametros publicado en HuggingFace por el usuario fpadovani, vinculado a la Universidad de Groningen segun la URL del proyecto de Weights & Biases asociado al entrenamiento. Se trata de un ajuste fino supervisado (SFT) realizado con la libreria TRL sobre un modelo base del mismo autor, `fpadovani/arb-arab-10mb-ppt-shuff-dyck-100mb_seed10`, que a su vez se apoya en la arquitectura GPT-2 segun las etiquetas declaradas en el repositorio. Con 39 millones de parametros, es un modelo de escala muy reducida, concebido para experimentacion controlada mas que para produccion.
+`arb-arab-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed10` es un modelo de generacion de texto de 39.087.104 parametros publicado en Hugging Face por el usuario fpadovani, vinculado a la Universidad de Groningen segun la URL del proyecto de Weights & Biases asociado al entrenamiento. Se trata de un ajuste fino supervisado (SFT) realizado con la libreria TRL sobre un modelo base del mismo autor, `fpadovani/arb-arab-10mb-ppt-shuff-dyck-100mb_seed10`, que a su vez se apoya en la arquitectura GPT-2 segun las etiquetas declaradas en el repositorio. Con 39 millones de parametros, es un modelo de escala muy reducida, concebido para experimentacion controlada mas que para produccion.
 
 El propio nombre del checkpoint describe el experimento: los segmentos `10mb` y `100mb` apuntan a tamanos de corpus de entrenamiento, `dyck` remite a los lenguajes de Dyck (gramaticas formales de parentesis balanceados usadas habitualmente para medir si un modelo captura estructura jerarquica), `shuff` sugiere algun tipo de barajado del conjunto de datos y `ckpt500` indica que corresponde al checkpoint del paso 500. La model card, no obstante, no documenta la composicion del dataset, el numero de tokens procesados ni el objetivo concreto del estudio.
 
@@ -81,7 +81,7 @@ Frente a estas alternativas, el modelo de fpadovani es el mas pequeno de la tabl
 
 ## Limitaciones y advertencias
 
-- Ausencia de licencia: la model card contiene un marcador de posicion (`licence: license`) y HuggingFace no declara licencia, por lo que el uso comercial queda en un limbo legal; conviene contactar con el autor antes de cualquier explotacion.
+- Ausencia de licencia: la model card contiene un marcador de posicion (`licence: license`) y Hugging Face no declara licencia, por lo que el uso comercial queda en un limbo legal; conviene contactar con el autor antes de cualquier explotacion.
 - Sesgos conocidos: no evaluados ni documentados. Cualquier sesgo presente en el corpus de 10-100 MB usado en el SFT se trasladara al modelo sin mitigacion conocida.
 - Riesgo de alucinacion: elevado y no cuantificado, especialmente fuera del dominio sintetico para el que fue entrenado, dado su tamano y la falta de evaluacion factual.
 - Limitaciones de contexto: la longitud de contexto no esta documentada y no puede asumirse la de GPT-2 estandar, ya que el tokenizador y la configuracion pudieron modificarse en el proyecto `new_tokenizers`.
@@ -92,7 +92,7 @@ Frente a estas alternativas, el modelo de fpadovani es el mas pequeno de la tabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/fpadovani/arb-arab-10mb-ppt-shuff-dyck-100mb_seed10
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/8n0fq38s
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Obsession-Illustrious-XL es un repositorio publicado en HuggingFace por el usuario PrometheusEXE el 20 de octubre de 2026, bajo licencia Apache 2.0. En el momento de redactar esta ficha no cuenta con descargas ni "likes", no declara pipeline de inferencia y su model card se reduce practicamente a la linea de licencia, sin README tecnico, sin ficha de datos de entrenamiento y sin lista de ficheros de pesos en la informacion disponible.
+Obsession-Illustrious-XL es un repositorio publicado en Hugging Face por el usuario PrometheusEXE el 20 de octubre de 2026, bajo licencia Apache 2.0. En el momento de redactar esta ficha no cuenta con descargas ni "likes", no declara pipeline de inferencia y su model card se reduce practicamente a la linea de licencia, sin README tecnico, sin ficha de datos de entrenamiento y sin lista de ficheros de pesos en la informacion disponible.
 
 El identificador combina los terminos "Obsession" e "Illustrious-XL", lo que sugiere un modelo derivado o afinado a partir de la familia Illustrious-XL, habitualmente asociada a modelos de difusion para generacion de imagenes en estilo ilustracion/anime. Esta lectura es una hipotesis basada unicamente en la nomenclatura: no hay ningun dato en la informacion proporcionada que confirme arquitectura, tamano, resolucion nativa ni procedencia de los pesos.
 
@@ -20,7 +20,7 @@ Por tanto, esta ficha debe interpretarse como un documento de estado: identifica
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | no disponible (no se listan ficheros safetensors, GGUF, diffusers u otros) |
-| Tipo de modelo | no disponible (pipeline no declarado en HuggingFace) |
+| Tipo de modelo | no disponible (pipeline no declarado en Hugging Face) |
 | Modalidad | no disponible (entrada/salida no documentadas) |
 | Region declarada | us |
 | Descargas | 0 |
@@ -97,5 +97,5 @@ No se identifican en la informacion proporcionada modelos alternativos concretos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PrometheusEXE/Obsession-Illustrious-XL
+- Hugging Face: https://huggingface.co/PrometheusEXE/Obsession-Illustrious-XL
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs tecnicos, repositorios de codigo, demos o datasets asociados.

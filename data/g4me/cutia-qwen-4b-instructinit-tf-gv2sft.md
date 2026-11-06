@@ -62,7 +62,7 @@ Dado que no se especifican requisitos oficiales, se ofrecen estimaciones basadas
 - VRAM estimada para inferencia en FP16: aproximadamente 9-10 GB (4.4B × 2 bytes + overhead de activaciones y KV cache). Esto cabe en GPUs como RTX 3090, RTX 4090, A10, A100 40GB, etc.
 - VRAM estimada con cuantización 4-bit (si se aplicara): alrededor de 2.5-3 GB, lo que permitiría ejecutarlo en GPUs de consumo como RTX 3060 12GB o incluso en CPU con suficiente RAM.
 - GPU recomendadas: cualquier GPU con al menos 12 GB de VRAM para FP16, o 4 GB para cuantización 4-bit. No se ha probado en hardware específico.
-- Opciones de despliegue: al ser un modelo de HuggingFace con safetensors, puede cargarse con Transformers, vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se convierte) o TGI. No hay integraciones preconfiguradas.
+- Opciones de despliegue: al ser un modelo de Hugging Face con safetensors, puede cargarse con Transformers, vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se convierte) o TGI. No hay integraciones preconfiguradas.
 - Latencia y throughput: no disponibles. Dependerá del hardware y de la implementación.
 
 Estas cifras son orientativas y no han sido validadas con el modelo real.
@@ -73,10 +73,10 @@ No se dispone de datos de rendimiento para comparar. Sin embargo, se puede compa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CutIA-Qwen-4B-InstructInit-TF-gv2sft | 4.4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3-4B-Base | 4.4B | 32k (según documentación oficial de Qwen) | Apache 2.0 (según Qwen) | HuggingFace |
-| Llama-3.2-3B | 3.2B | 128k | Llama 3.2 Community License | HuggingFace |
-| Phi-3-mini-4k-instruct | 3.8B | 4k | MIT | HuggingFace |
+| CutIA-Qwen-4B-InstructInit-TF-gv2sft | 4.4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3-4B-Base | 4.4B | 32k (según documentación oficial de Qwen) | Apache 2.0 (según Qwen) | Hugging Face |
+| Llama-3.2-3B | 3.2B | 128k | Llama 3.2 Community License | Hugging Face |
+| Phi-3-mini-4k-instruct | 3.8B | 4k | MIT | Hugging Face |
 
 La comparación es meramente estructural; no hay evidencia de que CutIA-Qwen-4B-InstructInit-TF-gv2sft supere o iguale a estos modelos en tareas reales. Se recomienda usar el modelo base Qwen3-4B-Base o alternativas con licencia clara y benchmarks publicados para aplicaciones serias.
 
@@ -92,7 +92,7 @@ La comparación es meramente estructural; no hay evidencia de que CutIA-Qwen-4B-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-gv2sft
+- Modelo en Hugging Face: https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-gv2sft
 - Modelo base Qwen3-4B-Base: https://huggingface.co/Qwen/Qwen3-4B-Base
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este checkpoint.

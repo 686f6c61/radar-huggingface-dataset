@@ -94,7 +94,7 @@ No disponible. El repositorio no es un modelo con pesos publicados y la búsqued
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LamTNguyen/TQK-table1-psp-vs-prefix-sd15
+- Repositorio en Hugging Face: https://huggingface.co/LamTNguyen/TQK-table1-psp-vs-prefix-sd15
 - Backbone evaluado: https://huggingface.co/runwayml/stable-diffusion-v1-5
 - Paper de PSP citado en la model card: Guimaraes & Perona, ECCV 2026 (no se proporciona URL en la información disponible)
 - GenEval (conjunto de 553 prompts y métrica oficial): no se proporciona URL en la información disponible

@@ -78,10 +78,10 @@ No disponible. La información proporcionada no incluye modelos comparables de s
 
 ## Enlaces
 
-- [HuggingFace: kandinskylab/Kandinsky-S2V-1.0-Pro-distill-Diffusers](https://huggingface.co/kandinskylab/Kandinsky-S2V-1.0-Pro-distill-Diffusers)
+- [Hugging Face: kandinskylab/Kandinsky-S2V-1.0-Pro-distill-Diffusers](https://huggingface.co/kandinskylab/Kandinsky-S2V-1.0-Pro-distill-Diffusers)
 - [Pesos en formato nativo: kandinskylab/Kandinsky-S2V-1.0-Pro-distill](https://huggingface.co/kandinskylab/Kandinsky-S2V-1.0-Pro-distill)
 - [Paper arXiv:2610.19290](https://arxiv.org/pdf/2610.19290)
 - [Página del proyecto](https://kandinskyavatar.github.io)
 - [Repositorio GitHub](https://github.com/kandinskylab/kandinsky-s2v)
-- [Colección en HuggingFace](https://huggingface.co/collections/kandinskylab/kandinsky-s2v-10-6ab65ebe8f765b6dd9d706d7)
-- [Demo en HuggingFace Spaces](https://huggingface.co/spaces/kandinskylab/Kandinsky-S2V-1.0-Demo)
+- [Colección en Hugging Face](https://huggingface.co/collections/kandinskylab/kandinsky-s2v-10-6ab65ebe8f765b6dd9d706d7)
+- [Demo en Hugging Face Spaces](https://huggingface.co/spaces/kandinskylab/Kandinsky-S2V-1.0-Demo)

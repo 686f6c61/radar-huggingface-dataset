@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Murmel Flash L v6 es un modelo de reconocimiento automático del habla (ASR) desarrollado por The AI Factory BV, una empresa con sede en Bélgica. Se distribuye bajo el identificador `theaifactorybv/murmel-flash-l-v6` en HuggingFace y está especializado en transcripción de audio en neerlandés (nl) e inglés (en). El modelo emplea una arquitectura FastConformer con cabecera CTC, una combinación habitual en sistemas ASR modernos que prioriza eficiencia computacional y velocidad de inferencia frente a enfoques autorregresivos.
+Murmel Flash L v6 es un modelo de reconocimiento automático del habla (ASR) desarrollado por The AI Factory BV, una empresa con sede en Bélgica. Se distribuye bajo el identificador `theaifactorybv/murmel-flash-l-v6` en Hugging Face y está especializado en transcripción de audio en neerlandés (nl) e inglés (en). El modelo emplea una arquitectura FastConformer con cabecera CTC, una combinación habitual en sistemas ASR modernos que prioriza eficiencia computacional y velocidad de inferencia frente a enfoques autorregresivos.
 
 Con 397.326.848 parámetros (aproximadamente 397 millones), se sitúa en la categoría de modelos ASR de tamano medio, comparable a variantes de Whisper large o a modelos Conformer de producción. Además de la transcripción, el modelo declara capacidades de puntuación automática y generación de marcas temporales (timestamps), lo que lo hace adecuado para pipelines de subtitulado y diarización aproximada.
 
-El acceso al modelo está restringido (gated): es necesario aceptar las condiciones de uso en HuggingFace antes de descargarlo. La licencia es propietaria ("murmel-commercial"), lo que implica que el uso comercial está sujeto a los términos del proveedor y no se trata de un modelo de código abierto al uso.
+El acceso al modelo está restringido (gated): es necesario aceptar las condiciones de uso en Hugging Face antes de descargarlo. La licencia es propietaria ("murmel-commercial"), lo que implica que el uso comercial está sujeto a los términos del proveedor y no se trata de un modelo de código abierto al uso.
 
 ## Especificaciones técnicas
 
@@ -77,7 +77,7 @@ La comparativa es orientativa: Murmel Flash L v6 se posiciona como un modelo ASR
 
 - Cobertura lingüística limitada a neerlandés e inglés; no se documenta soporte para otras lenguas ni para code-switching.
 - Licencia propietaria "murmel-commercial": el uso comercial requiere aceptar los términos del proveedor y puede conllevar restricciones o costes. No es un modelo de código abierto.
-- Acceso restringido (gated): la descarga exige aceptar condiciones en HuggingFace, lo que limita la reproducibilidad y la auditoría independiente.
+- Acceso restringido (gated): la descarga exige aceptar condiciones en Hugging Face, lo que limita la reproducibilidad y la auditoría independiente.
 - No hay información pública sobre sesgos, datos de entrenamiento ni evaluación de robustez ante acentos, ruido o audio de baja calidad.
 - Riesgo de errores de transcripción en nombres propios, terminología técnica y audio con solapamiento de hablantes; la puntuación automática puede introducir errores adicionales.
 - La librería `murmel-flash` es específica del proveedor; la portabilidad a otros runtimes no está garantizada.
@@ -86,6 +86,6 @@ La comparativa es orientativa: Murmel Flash L v6 se posiciona como un modelo ASR
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theaifactorybv/murmel-flash-l-v6
+- Modelo en Hugging Face: https://huggingface.co/theaifactorybv/murmel-flash-l-v6
 - Perfil del autor: https://huggingface.co/theaifactorybv
 - No se han encontrado en la información proporcionada papers, blogs, repositorios ni demos adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wondolls/mercia2olite` es un repositorio publicado en HuggingFace por el usuario `wondolls` el 22 de octubre de 2026 (según los metadatos de la plataforma). En el momento de redactar esta ficha no existe información pública que permita identificarlo como un modelo concreto: la model card únicamente contiene el campo `license: unknown`, sin descripción, sin arquitectura declarada, sin tamaños de parámetros y sin ejemplos de uso. El repositorio ocupa 0,1 GB y no declara pipeline, idiomas ni etiquetas descriptivas más allá de `license:unknown` y `region:us`.
+`wondolls/mercia2olite` es un repositorio publicado en Hugging Face por el usuario `wondolls` el 22 de octubre de 2026 (según los metadatos de la plataforma). En el momento de redactar esta ficha no existe información pública que permita identificarlo como un modelo concreto: la model card únicamente contiene el campo `license: unknown`, sin descripción, sin arquitectura declarada, sin tamaños de parámetros y sin ejemplos de uso. El repositorio ocupa 0,1 GB y no declara pipeline, idiomas ni etiquetas descriptivas más allá de `license:unknown` y `region:us`.
 
 El dato objetivo más relevante es el tamaño del repositorio: 0,1 GB es un volumen coherente con un modelo pequeño (del orden de decenas de millones de parámetros si los pesos estuvieran en bf16/fp16) o con un adaptador LoRA/adapter sobre un modelo base no declarado. Ninguna de estas dos hipótesis está confirmada por el autor, por lo que deben tratarse como meras estimaciones de orden de magnitud, no como especificaciones.
 
@@ -21,7 +21,7 @@ Su relevancia actual es, por tanto, limitada desde el punto de vista técnico: c
 | Licencia | `unknown` (el repositorio declara `license:unknown`; no se concede permiso explícito de uso) |
 | Formato de pesos | no disponible (no verificable sin inspeccionar el árbol de ficheros) |
 | Tamaño del repositorio | 0,1 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Etiquetas del repositorio | `license:unknown`, `region:us` |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación (metadatos HF) | 2026-10-22 |
@@ -91,11 +91,11 @@ No disponible. Al no poder identificarse la arquitectura, el tamaño de parámet
 - Riesgo de alucinación: no evaluable; no existen pruebas publicadas ni ejemplos que permitan estimarlo.
 - Idiomas y contexto: no declarados; no se puede asumir soporte multilingüe ni una ventana de contexto concreta.
 - Sin tracción ni validación comunitaria: 0 descargas y 0 likes implican ausencia de revisión por terceros, de informes de errores y de evidencia de funcionamiento.
-- Riesgo de seguridad de la cadena de suministro: los pesos de HuggingFace pueden requerir `trust_remote_code` o ejecutar código arbitrario; con un autor sin historial verificado, la inspección del repositorio debe hacerse en entorno aislado.
+- Riesgo de seguridad de la cadena de suministro: los pesos de Hugging Face pueden requerir `trust_remote_code` o ejecutar código arbitrario; con un autor sin historial verificado, la inspección del repositorio debe hacerse en entorno aislado.
 - Idoneidad para producción: no acreditada. No debería desplegarse en ningún sistema con usuarios reales sin una auditoría previa y una licencia clara.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wondolls/mercia2olite
-- Perfil del autor en HuggingFace: https://huggingface.co/wondolls
+- Repositorio en Hugging Face: https://huggingface.co/wondolls/mercia2olite
+- Perfil del autor en Hugging Face: https://huggingface.co/wondolls
 - Paper, blog técnico, repositorio de código o demo: no disponibles (no se han encontrado referencias asociadas al modelo en la búsqueda web realizada).

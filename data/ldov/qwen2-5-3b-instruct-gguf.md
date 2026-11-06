@@ -94,7 +94,7 @@ Datos de rendimiento comparado: no disponibles.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta publicacion: https://huggingface.co/ldov/Qwen2.5-3B-Instruct-GGUF
+- Repositorio Hugging Face de esta publicacion: https://huggingface.co/ldov/Qwen2.5-3B-Instruct-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio GGUF oficial: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF
 - Licencia (archivo LICENSE del repo oficial GGUF): https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF/blob/main/LICENSE

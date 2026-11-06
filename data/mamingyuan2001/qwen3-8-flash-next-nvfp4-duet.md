@@ -101,7 +101,7 @@ No se dispone de informacion sobre otros adaptadores o tecnicas comparables (por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mamingyuan2001/Qwen3.8-Flash-Next-NVFP4-DUET
+- Modelo en Hugging Face: https://huggingface.co/mamingyuan2001/Qwen3.8-Flash-Next-NVFP4-DUET
 - Modelo base: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4
 - Modelo base sin cuantizar (referenciado como equivalente salvo la cuantizacion de expertos): https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio de codigo con la implementacion `twinstar`, la receta `infra/aga/train_fn.sh`, el script `release/run_duet.py` y el generador de mezcla `twinstar/training/build_mix_v2.py`: URL no disponible en la informacion proporcionada.

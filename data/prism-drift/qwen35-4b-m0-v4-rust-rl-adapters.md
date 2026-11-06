@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `prism-drift/qwen35-4b-m0-v4-rust-rl-adapters`, publicado por el usuario prism-drift en HuggingFace, contiene un conjunto de pesos en formato safetensors cuyo identificador sugiere una variante derivada de la familia Qwen de aproximadamente 4.000 millones de parámetros, con algún tipo de adaptación o ajuste por refuerzo (RL) orientado al lenguaje Rust, según se deduce de los sufijos `rust-rl-adapters` del nombre. No se ha publicado información adicional en la ficha del repositorio ni en los resultados de búsqueda web disponibles, por lo que la mayor parte de los datos técnicos no puede confirmarse.
+El repositorio `prism-drift/qwen35-4b-m0-v4-rust-rl-adapters`, publicado por el usuario prism-drift en Hugging Face, contiene un conjunto de pesos en formato safetensors cuyo identificador sugiere una variante derivada de la familia Qwen de aproximadamente 4.000 millones de parámetros, con algún tipo de adaptación o ajuste por refuerzo (RL) orientado al lenguaje Rust, según se deduce de los sufijos `rust-rl-adapters` del nombre. No se ha publicado información adicional en la ficha del repositorio ni en los resultados de búsqueda web disponibles, por lo que la mayor parte de los datos técnicos no puede confirmarse.
 
 El repositorio tiene un tamaño de 21,4 GB, lo que resulta llamativo para un conjunto de adaptadores LoRA convencionales y apunta a que podría incluir pesos completos, múltiples checkpoints o estados intermedios del entrenamiento. El modelo fue creado el 11 de septiembre de 2026 y actualizado el 12 de septiembre de 2026, con cero descargas y un único "like" en el momento de la consulta, lo que indica una publicación reciente y sin validación comunitaria.
 
@@ -79,10 +79,10 @@ No es posible establecer una comparativa fiable porque se desconocen licencia, c
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| prism-drift/qwen35-4b-m0-v4-rust-rl-adapters | no disponible (~4B según el identificador) | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen 2.5 Coder 7B Instruct | 7.600 M | 128.000 tokens | Apache 2.0 (variantes) | HuggingFace, ampliamente desplegado |
-| Llama 3.2 3B Instruct | 3.200 M | 128.000 tokens | Llama 3.2 Community License | HuggingFace, muy extendido |
-| DeepSeek-Coder-V2-Lite Instruct | 15.700 M (2.400 M activos) | 128.000 tokens | DeepSeek License | HuggingFace |
+| prism-drift/qwen35-4b-m0-v4-rust-rl-adapters | no disponible (~4B según el identificador) | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen 2.5 Coder 7B Instruct | 7.600 M | 128.000 tokens | Apache 2.0 (variantes) | Hugging Face, ampliamente desplegado |
+| Llama 3.2 3B Instruct | 3.200 M | 128.000 tokens | Llama 3.2 Community License | Hugging Face, muy extendido |
+| DeepSeek-Coder-V2-Lite Instruct | 15.700 M (2.400 M activos) | 128.000 tokens | DeepSeek License | Hugging Face |
 
 La comparación directa no es posible sin datos de evaluación del modelo objeto de la ficha; la tabla anterior solo contextualiza el segmento de modelos pequeños orientados a código.
 
@@ -100,6 +100,6 @@ La comparación directa no es posible sin datos de evaluación del modelo objeto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/prism-drift/qwen35-4b-m0-v4-rust-rl-adapters
+- Hugging Face: https://huggingface.co/prism-drift/qwen35-4b-m0-v4-rust-rl-adapters
 
 Los resultados de búsqueda web no contienen enlaces relevantes sobre este modelo. Los resultados devueltos corresponden a proyectos homónimos sin relación alguna: Prism Launcher (https://prismlauncher.org/), GraphPad Prism (https://www.graphpad.com/features), Prism de OpenAI (https://openai.com/prism/) y PRISM Live Studio (https://prismlive.com/en_us/). No se han encontrado papers, blogs, repositorios ni demos asociados al modelo.

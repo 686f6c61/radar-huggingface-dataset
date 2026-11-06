@@ -108,7 +108,7 @@ No se dispone en la información proporcionada de datos verificables de otros mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zazaorg/harpy-9b
+- Modelo en Hugging Face: https://huggingface.co/zazaorg/harpy-9b
 - Modelo base: https://huggingface.co/teddy19032/Ornith-1.5-9B-heretic
 - Revisión v3.1 (por defecto): https://huggingface.co/zazaorg/harpy-9b/tree/v3.1
 - Revisión v3: https://huggingface.co/zazaorg/harpy-9b/tree/v3

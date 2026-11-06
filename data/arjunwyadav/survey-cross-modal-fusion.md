@@ -66,12 +66,12 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arjunwyadav/survey-cross-modal-fusion
+- Repositorio Hugging Face: https://huggingface.co/arjunwyadav/survey-cross-modal-fusion
 - Survey sobre fusión multimodal (ScienceDirect): https://www.sciencedirect.com/org/science/article/pii/S1546221824005216
 - Survey sobre alineación y fusión multimodal (arXiv): https://arxiv.org/abs/2411.17040
 - Artículo HTML del survey arXiv: https://arxiv.org/html/2411.17040v2
 - Técnicas de fusión multimodal (ScienceDirect): https://www.sciencedirect.com/science/article/abs/pii/S0925231225014997
-- Repositorio similar en HuggingFace: https://huggingface.co/ivanpavlovtuj/paper_002894117_cross_modal_fusion</think>## Resumen
+- Repositorio similar en Hugging Face: https://huggingface.co/ivanpavlovtuj/paper_002894117_cross_modal_fusion</think>## Resumen
 
 El repositorio `arjunwyadav/survey-cross-modal-fusion` no contiene un modelo de inteligencia artificial entrenado, sino un conjunto de notas de investigación y un boceto de experimento sobre fusión multimodal (cross-modal fusion). Publicado por el usuario arjunwyadav bajo licencia MIT, el repositorio documenta el alcance de una pregunta de investigación, los posibles factores de confusión, una propuesta de comparación con líneas base y el contexto de evaluación con benchmarks públicos. No se incluye código liberado, resultados experimentales, ablaciones completadas ni un checkpoint funcional.
 
@@ -137,9 +137,9 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arjunwyadav/survey-cross-modal-fusion
+- Repositorio Hugging Face: https://huggingface.co/arjunwyadav/survey-cross-modal-fusion
 - Survey sobre fusion multimodal (ScienceDirect): https://www.sciencedirect.com/org/science/article/pii/S1546221824005216
 - Survey sobre alineacion y fusion multimodal (arXiv): https://arxiv.org/abs/2411.17040
 - Articulo del survey arXiv (HTML): https://arxiv.org/html/2411.17040v2
 - Tecnicas de fusion multimodal (ScienceDirect): https://www.sciencedirect.com/science/article/abs/pii/S0925231225014997
-- Repositorio similar en HuggingFace: https://huggingface.co/ivanpavlovtuj/paper_002894117_cross_modal_fusion
+- Repositorio similar en Hugging Face: https://huggingface.co/ivanpavlovtuj/paper_002894117_cross_modal_fusion

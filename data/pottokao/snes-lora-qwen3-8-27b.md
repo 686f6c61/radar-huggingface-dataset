@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SNES-LoRA-Qwen3.8-27B | LoRA sobre Qwen3.8-27B | Adaptador 1.3 GB (base 27B) | 262K (heredado) | Apache 2.0 (adaptador MIT) | HuggingFace |
+| SNES-LoRA-Qwen3.8-27B | LoRA sobre Qwen3.8-27B | Adaptador 1.3 GB (base 27B) | 262K (heredado) | Apache 2.0 (adaptador MIT) | Hugging Face |
 | nes-lora-for-qwen3.8-27b (proyecto hermano) | LoRA sobre Qwen3.8-27B | No disponible | No disponible | No especificada | GitHub |
-| TeichAI/Qwen3.8-27B-Fable-Distill-LoRA | LoRA sobre Qwen3.8-27B | No disponible | No disponible | No disponible | HuggingFace |
+| TeichAI/Qwen3.8-27B-Fable-Distill-LoRA | LoRA sobre Qwen3.8-27B | No disponible | No disponible | No disponible | Hugging Face |
 
 No existen adaptadores comparables publicados para SNES; los proyectos similares (como el LoRA para NES del mismo autor) siguen el mismo patrón de dominio específico, pero no hay datos de rendimiento para comparar. El modelo base Qwen3.8-27B es el punto de comparación común.
 
@@ -79,9 +79,9 @@ No existen adaptadores comparables publicados para SNES; los proyectos similares
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/pottokao/SNES-LoRA-Qwen3.8-27B
+- Hugging Face del adaptador: https://huggingface.co/pottokao/SNES-LoRA-Qwen3.8-27B
 - Repositorio del agente (GitHub): https://github.com/pottokao-dotcom/snes-lora-agent-qwen3.8-27b
 - Proyecto hermano para NES (GitHub): https://github.com/pottokao-dotcom/nes-lora-for-qwen3.8-27b
-- Cuantización NVFP4 del base (HuggingFace): https://huggingface.co/pottokao/Qwen3.8-27B-NVFP4-MTP-2x16GB
+- Cuantización NVFP4 del base (Hugging Face): https://huggingface.co/pottokao/Qwen3.8-27B-NVFP4-MTP-2x16GB
 - Referencia del base Qwen3.8-27B: https://neomanex.com/models/qwen3-8-27b
 - Otro LoRA sobre el base: https://huggingface.co/TeichAI/Qwen3.8-27B-Fable-Distill-LoRA

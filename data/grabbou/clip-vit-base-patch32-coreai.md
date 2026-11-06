@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto texto | Dimensión embedding | Licencia | Formato / despliegue |
 |---|---|---|---|---|---|
 | `grabbou/clip-vit-base-patch32-CoreAI` | no disponible (base CLIP ViT-B/32) | 77 tokens | 512 | MIT | `.aimodel` (Core AI, iOS/macOS) |
-| `openai/clip-vit-base-patch32` | no disponible en la informacion proporcionada | 77 tokens | 512 | MIT | safetensors/PyTorch (HuggingFace Transformers) |
-| `openai/clip-vit-large-patch14` | no disponible en la informacion proporcionada | 77 tokens | 768 | MIT | safetensors/PyTorch (HuggingFace Transformers) |
+| `openai/clip-vit-base-patch32` | no disponible en la informacion proporcionada | 77 tokens | 512 | MIT | safetensors/PyTorch (Hugging Face Transformers) |
+| `openai/clip-vit-large-patch14` | no disponible en la informacion proporcionada | 77 tokens | 768 | MIT | safetensors/PyTorch (Hugging Face Transformers) |
 | SigLIP (variantes base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | safetensors/PyTorch |
 
 La comparación relevante es con el checkpoint original de OpenAI, del que esta exportación hereda pesos y comportamiento; la diferencia está en el formato y en la separación de codificadores, no en la calidad del embedding. Frente a variantes de mayor tamaño como ViT-L/14 o SigLIP, esta exportación prioriza tamaño reducido y ejecución en dispositivo, a costa de capacidad representacional.
@@ -84,7 +84,7 @@ La comparación relevante es con el checkpoint original de OpenAI, del que esta 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grabbou/clip-vit-base-patch32-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/grabbou/clip-vit-base-patch32-CoreAI
 - Modelo base: https://huggingface.co/openai/clip-vit-base-patch32
 - Recetario oficial de CLIP en Core AI Models (Apple): https://github.com/apple/coreai-models/tree/main/models/clip
 - Paquete de integración React Native: https://github.com/callstackincubator/ai/tree/main/packages/core-ai

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mousse95/Llama3_8B_Ambiref` es un repositorio de HuggingFace publicado por el usuario mousse95 que, por el nombre del identificador, parece corresponder a un ajuste fino (fine-tuning) del modelo Llama 3 de 8 000 millones de parametros. El sufijo "Ambiref" sugiere una especializacion orientada a un dominio concreto (posiblemente vinculado al ecosistema Ambire), pero esta interpretacion no viene confirmada en ninguna parte de la informacion disponible.
+`mousse95/Llama3_8B_Ambiref` es un repositorio de Hugging Face publicado por el usuario mousse95 que, por el nombre del identificador, parece corresponder a un ajuste fino (fine-tuning) del modelo Llama 3 de 8 000 millones de parametros. El sufijo "Ambiref" sugiere una especializacion orientada a un dominio concreto (posiblemente vinculado al ecosistema Ambire), pero esta interpretacion no viene confirmada en ninguna parte de la informacion disponible.
 
 La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia `llama3.2`. No se documentan datos de entrenamiento, arquitectura, idiomas, proceso de alineacion ni resultados de evaluacion. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, lo que indica que se trata de una publicacion sin traccion ni validacion por parte de la comunidad.
 
@@ -76,7 +76,7 @@ No es posible una comparativa rigurosa porque no se conocen las caracteristicas 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mousse95/Llama3_8B_Ambiref | no disponible (nombre sugiere 8B) | no disponible | llama3.2 | HuggingFace, 0 descargas |
+| mousse95/Llama3_8B_Ambiref | no disponible (nombre sugiere 8B) | no disponible | llama3.2 | Hugging Face, 0 descargas |
 | Llama 3.1 8B Instruct (Meta) | 8B | 128k | Llama 3.1 Community License | Ampliamente disponible |
 | Mistral 7B Instruct (Mistral AI) | 7,3B | 32k | Apache 2.0 | Ampliamente disponible |
 | Qwen2.5 7B Instruct (Alibaba) | 7,6B | 128k | Apache 2.0 (segun variante) | Ampliamente disponible |
@@ -97,6 +97,6 @@ Los datos de las tres alternativas son de conocimiento publico general y no proc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mousse95/Llama3_8B_Ambiref
+- Repositorio en Hugging Face: https://huggingface.co/mousse95/Llama3_8B_Ambiref
 - Licencia declarada: llama3.2 (texto completo no enlazado en la informacion proporcionada)
 - Paper, blog, repositorio de codigo o demo: no disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ro551/mt5-small-GEC-spanish-LORA-merged-exp` es un ajuste fino del modelo `google/mt5-small` orientado a la correccion gramatical de texto en espanol (GEC, *Grammatical Error Correction*). Lo publica el usuario Ro551 en HuggingFace y se distribuye como un adaptador LoRA fusionado en los pesos base, empaquetado con la libreria PEFT. El modelo base, mT5-small, es un transformer encoder-decoder multilingue de aproximadamente 300 millones de parametros desarrollado por Google Research dentro de la familia T5.
+`Ro551/mt5-small-GEC-spanish-LORA-merged-exp` es un ajuste fino del modelo `google/mt5-small` orientado a la correccion gramatical de texto en espanol (GEC, *Grammatical Error Correction*). Lo publica el usuario Ro551 en Hugging Face y se distribuye como un adaptador LoRA fusionado en los pesos base, empaquetado con la libreria PEFT. El modelo base, mT5-small, es un transformer encoder-decoder multilingue de aproximadamente 300 millones de parametros desarrollado por Google Research dentro de la familia T5.
 
 El problema que aborda es la deteccion y correccion automatica de errores gramaticales, ortograficos y de puntuacion en castellano, una tarea clasica de PLN que requiere un modelo seq2seq capaz de reescribir la frase de entrada conservando el significado. Al estar construido sobre mT5-small, hereda el tokenizador SentencePiece multilingue y la arquitectura encoder-decoder estandar, lo que lo hace ligero y desplegable en hardware modesto.
 
@@ -72,9 +72,9 @@ El valor de GLEU de 0.0045 es extremadamente bajo para una tarea de GEC y sugier
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ro551/mt5-small-GEC-spanish-LORA-merged-exp | ~300M | no disponible | GEC en espanol | Apache 2.0 | HuggingFace |
-| google/mt5-small | ~300M | 512 tokens (no confirmado en esta ficha) | Seq2seq multilingue generico | Apache 2.0 | HuggingFace |
-| google/mt5-base | ~580M | 512 tokens (no confirmado en esta ficha) | Seq2seq multilingue generico | Apache 2.0 | HuggingFace |
+| Ro551/mt5-small-GEC-spanish-LORA-merged-exp | ~300M | no disponible | GEC en espanol | Apache 2.0 | Hugging Face |
+| google/mt5-small | ~300M | 512 tokens (no confirmado en esta ficha) | Seq2seq multilingue generico | Apache 2.0 | Hugging Face |
+| google/mt5-base | ~580M | 512 tokens (no confirmado en esta ficha) | Seq2seq multilingue generico | Apache 2.0 | Hugging Face |
 
 No se dispone de informacion sobre otros modelos especificos de GEC en espanol en la informacion proporcionada para establecer una comparacion cuantitativa de rendimiento.
 
@@ -91,7 +91,7 @@ No se dispone de informacion sobre otros modelos especificos de GEC en espanol e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ro551/mt5-small-GEC-spanish-LORA-merged-exp
+- Modelo en Hugging Face: https://huggingface.co/Ro551/mt5-small-GEC-spanish-LORA-merged-exp
 - Modelo base: https://huggingface.co/google/mt5-small
 - Paper de mT5 (Xue et al., 2020): https://arxiv.org/abs/2010.11934
 - Paper de T5 (Raffel et al., 2019): https://arxiv.org/abs/1910.10683

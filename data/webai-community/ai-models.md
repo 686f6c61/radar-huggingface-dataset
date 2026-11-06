@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`webai-community/ai-models` es un repositorio de HuggingFace que actúa como punto de distribución de una colección de modelos de lenguaje de las familias Phi (Microsoft) y Qwen (Alibaba), convertidos a formatos GGUF y ONNX WebGPU. No es un modelo único, sino un agregador de múltiples modelos ya existentes, con tamaños que van desde 0.5B hasta 9B de parámetros. El repositorio tiene un tamaño de 414 GB e incluye modelos de instrucción, razonamiento y multimodal.
+`webai-community/ai-models` es un repositorio de Hugging Face que actúa como punto de distribución de una colección de modelos de lenguaje de las familias Phi (Microsoft) y Qwen (Alibaba), convertidos a formatos GGUF y ONNX WebGPU. No es un modelo único, sino un agregador de múltiples modelos ya existentes, con tamaños que van desde 0.5B hasta 9B de parámetros. El repositorio tiene un tamaño de 414 GB e incluye modelos de instrucción, razonamiento y multimodal.
 
 Su relevancia radica en que facilita la descarga de modelos listos para su uso en inferencia local mediante llama.cpp o en navegadores a través de WebGPU, sin necesidad de buscar cada modelo por separado. El dato de parámetros totales de safetensors registrado en la metadata es de 6.738.546.688, pero corresponde a la suma de los pesos de los archivos safetensors presentes en el repositorio, no a un único modelo.
 
@@ -63,5 +63,5 @@ No disponible. Al tratarse de un repositorio agregador, no existe una comparativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/webai-community/ai-models
+- Repositorio en Hugging Face: https://huggingface.co/webai-community/ai-models
 - Explorador de archivos: https://huggingface.co/webai-community/ai-models/tree/main

@@ -76,10 +76,10 @@ Comparativa frente al checkpoint Qwen3.5-0.8B sobre preguntas idénticas: −4,3
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qev-230m-mlx (este) | 230 M + 16,1 M entrenados | no disponible | 85,2 % en dev; 99,0 % Snake; 77,4 % texto general; 90,0 % chino | LFM Open License v1.0 | HuggingFace, solo MLX |
-| qev-450m | no disponible | no disponible | superior en estabilidad de orden de opciones (−1,0 pt frente a −8,1 pt) | no disponible | HuggingFace, multimodal |
+| qev-230m-mlx (este) | 230 M + 16,1 M entrenados | no disponible | 85,2 % en dev; 99,0 % Snake; 77,4 % texto general; 90,0 % chino | LFM Open License v1.0 | Hugging Face, solo MLX |
+| qev-450m | no disponible | no disponible | superior en estabilidad de orden de opciones (−1,0 pt frente a −8,1 pt) | no disponible | Hugging Face, multimodal |
 | Qwen3.5-0.8B (checkpoint) | 0,8 B | no disponible | +4,3 pt en texto general frente a qev-230m; paridad en Snake | no disponible | no disponible |
-| LiquidAI/LFM2.5-230M (base) | 230 M | no disponible | fundacional sin cabeza de decisión | LFM Open License v1.0 | HuggingFace |
+| LiquidAI/LFM2.5-230M (base) | 230 M | no disponible | fundacional sin cabeza de decisión | LFM Open License v1.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ Comparativa frente al checkpoint Qwen3.5-0.8B sobre preguntas idénticas: −4,3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/twainsk/qev-230m-mlx
+- Modelo en Hugging Face: https://huggingface.co/twainsk/qev-230m-mlx
 - Modelo multimodal relacionado: https://huggingface.co/twainsk/qev-450m-mlx
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-230M
 - Repositorio del proyecto Qev: https://github.com/loadchange/qev

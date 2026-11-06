@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al no
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es un modelo de IA comparable con alternativas como Llama, Mistral o Qwen. Su naturaleza es la de un registro de emisiones, no un artefacto de ML. Existen otros repositorios similares en HuggingFace (por ejemplo, `rajkumar17493/green-ai-carbon-audit`) que tambien documentan auditorias de carbono, pero no ofrecen capacidades de IA.
+No disponible. Este repositorio no es un modelo de IA comparable con alternativas como Llama, Mistral o Qwen. Su naturaleza es la de un registro de emisiones, no un artefacto de ML. Existen otros repositorios similares en Hugging Face (por ejemplo, `rajkumar17493/green-ai-carbon-audit`) que tambien documentan auditorias de carbono, pero no ofrecen capacidades de IA.
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maneshsathyanathan/green-ai-carbon-audit
+- Repositorio en Hugging Face: https://huggingface.co/maneshsathyanathan/green-ai-carbon-audit
 - Repositorio similar de otro autor: https://huggingface.co/rajkumar17493/green-ai-carbon-audit
 - Articulo sobre iniciativas de Green AI (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0959652624025393
 - Recurso sobre Green AI y huella de carbono: https://ejhusom.github.io/green-ai/

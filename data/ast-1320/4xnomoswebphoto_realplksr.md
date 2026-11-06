@@ -14,7 +14,7 @@ El modelo 4xNomosWebPhoto_RealPLKSR es un modelo de superresolución 4x orientad
 | Longitud de contexto | no aplica (modelo de imagen) |
 | Tipos de cuantizacion | no disponible (pesos en formato .pth) |
 | Idiomas soportados | no aplica (procesamiento de imagen) |
-| Licencia | CC-BY-4.0 (según YAML de HuggingFace; la model card indica "CC-BY-0.4", posible errata) |
+| Licencia | CC-BY-4.0 (según YAML de Hugging Face; la model card indica "CC-BY-0.4", posible errata) |
 | Formato de pesos | PyTorch (.pth) |
 
 ## Arquitectura y entrenamiento
@@ -62,11 +62,11 @@ No se dispone de datos comparativos cuantitativos con otros modelos de superreso
 - La licencia CC-BY-4.0 permite uso comercial con atribución, pero se debe verificar que la atribución se realice correctamente.
 - La model card indica "CC-BY-0.4" en el texto, lo que podría ser un error tipográfico; se recomienda consultar la licencia oficial antes de uso comercial.
 - No se han publicado resultados de evaluación en conjuntos de datos estándar (Set5, Set14, DIV2K), por lo que la comparación objetiva con otros modelos es limitada.
-- El tamaño del repositorio en HuggingFace es de 0.0 GB, lo que sugiere que los pesos no están alojados directamente en esa página; el acceso se realiza a través del enlace de GitHub Release.
+- El tamaño del repositorio en Hugging Face es de 0.0 GB, lo que sugiere que los pesos no están alojados directamente en esa página; el acceso se realiza a través del enlace de GitHub Release.
 
 ## Enlaces
 
-- [HuggingFace - AST-1320/4xNomosWebPhoto_RealPLKSR](https://huggingface.co/AST-1320/4xNomosWebPhoto_RealPLKSR)
+- [Hugging Face - AST-1320/4xNomosWebPhoto_RealPLKSR](https://huggingface.co/AST-1320/4xNomosWebPhoto_RealPLKSR)
 - [GitHub Release - Phhofm/models](https://github.com/Phhofm/models/releases/tag/4xNomosWebPhoto_RealPLKSR)
 - [OpenModelDB - 4xNomosWebPhoto_RealPLKSR](https://openmodeldb.info/models/4x-NomosWebPhoto-RealPLKSR)
 - [PDF de documentación del proceso](https://huggingface.co/Phips/4xNomosWebPhoto_RealPLKSR/blob/main/4xNomosWebPhoto-4.pdf)

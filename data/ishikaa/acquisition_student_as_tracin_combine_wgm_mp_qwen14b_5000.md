@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_student_AS_tracin_combine_WGM_MP_qwen14b_5000` es un checkpoint de la familia Qwen2 con 14.770.033.664 parámetros, publicado en HuggingFace por el usuario `ishikaa` el 3 de noviembre de 2026. Por el nombre del repositorio y las etiquetas asociadas, se trata de un artefacto de investigación centrado en técnicas de atribución de datos e influencia de entrenamiento (TracIn, gradient matching, "acquisition student", WGM/MP), más que de un modelo conversacional listo para producción. La model card es la plantilla automática de HuggingFace y no aporta información sustantiva sobre datos de entrenamiento, licencia o evaluación.
+El modelo `ishikaa/acquisition_student_AS_tracin_combine_WGM_MP_qwen14b_5000` es un checkpoint de la familia Qwen2 con 14.770.033.664 parámetros, publicado en Hugging Face por el usuario `ishikaa` el 3 de noviembre de 2026. Por el nombre del repositorio y las etiquetas asociadas, se trata de un artefacto de investigación centrado en técnicas de atribución de datos e influencia de entrenamiento (TracIn, gradient matching, "acquisition student", WGM/MP), más que de un modelo conversacional listo para producción. La model card es la plantilla automática de Hugging Face y no aporta información sustantiva sobre datos de entrenamiento, licencia o evaluación.
 
 El checkpoint parte de una base Qwen2 de aproximadamente 14B parámetros, una arquitectura transformer decoder-only con atención de consultas agrupadas (GQA) y tokenizador BPE multilingüe. El tamaño del repositorio (29,6 GB) es coherente con pesos en bf16/fp16 de un modelo de 14B. No hay evidencia de que se hayan publicado pesos en formatos cuantizados (GGUF, AWQ, GPTQ) ni de que el autor haya realizado ajuste fino alineado con RLHF o DPO.
 
@@ -35,7 +35,7 @@ No hay información publicada sobre el corpus de entrenamiento, el número de to
 
 - Generación de texto autoregresiva, heredada de la base Qwen2.
 - Soporte conversacional multi-turno (tag `conversational`).
-- Compatibilidad con `text-generation-inference` y `endpoints_compatible`, lo que permite desplegarlo con TGI y la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con `text-generation-inference` y `endpoints_compatible`, lo que permite desplegarlo con TGI y la infraestructura de Inference Endpoints de Hugging Face.
 - Capacidades multilingües: no verificadas en este checkpoint; dependen de la base Qwen2 y no están documentadas por el autor.
 - Tool calling / function calling: no documentado.
 - Razonamiento multi-paso y agentes: no documentado.
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada con cuantización a 4 bits: en torno a 9-10 GB, condicionada a la conversión manual a GGUF/AWQ/GPTQ por parte del usuario.
 - GPU recomendadas: A100 80 GB, H100 80 GB o L40S para inferencia en precisión nativa; A100 40 GB o RTX 6000 Ada para 8 bits.
 - GPU de consumo: una RTX 4090 (24 GB) no permite cargar los pesos en bf16 completos; sería necesario cuantizar a 8 o 4 bits, con la consiguiente pérdida de calidad no evaluada.
-- Opciones de despliegue: transformers, text-generation-inference (TGI), vLLM y HuggingFace Inference Endpoints. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama requerirían conversión manual.
+- Opciones de despliegue: transformers, text-generation-inference (TGI), vLLM y Hugging Face Inference Endpoints. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama requerirían conversión manual.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ La comparación con la base Qwen2 oficial es la más directa: misma arquitectura
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla automática de HuggingFace: no hay información sobre datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
+- La model card es la plantilla automática de Hugging Face: no hay información sobre datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
 - Licencia no especificada: no se puede garantizar el uso comercial ni la redistribución. Cualquier despliegue en producción requiere contactar con el autor o asumir el riesgo legal.
 - Idiomas soportados no declarados: no se puede confirmar el rendimiento multilingüe ni la calidad en castellano.
 - Riesgo elevado de alucinación y de degradación de capacidades respecto a la base Qwen2, dado que el proceso de entrenamiento no está documentado y podría haber sobreajustado el modelo a la tarea de atribución.
@@ -90,7 +90,7 @@ La comparación con la base Qwen2 oficial es la más directa: misma arquitectura
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_student_AS_tracin_combine_WGM_MP_qwen14b_5000
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_student_AS_tracin_combine_WGM_MP_qwen14b_5000
 - Referencia de la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de carbono citada en la model card: https://mlco2.github.io/impact
 - Repositorio oficial de Qwen2 (base arquitectónica): https://huggingface.co/Qwen

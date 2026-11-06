@@ -114,7 +114,7 @@ No se dispone de QER ni de benchmarks de los modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_mixed_olmo_prompted
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_mixed_olmo_prompted
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Variante relacionada de la misma campaña: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_posthoc_mixed_sdf
 - Juez LLM empleado en las mediciones: `google/gemini-3-flash-preview`

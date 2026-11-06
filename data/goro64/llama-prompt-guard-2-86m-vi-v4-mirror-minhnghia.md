@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Goro64/Llama-Prompt-Guard-2-86M-vi-v4-mirror-MinhNghia | 278,8 M (safetensors) | No disponible | vi, en | Llama 4 Community License | HuggingFace (espejo) |
-| meta-llama/Llama-Prompt-Guard-2-86M | 86 M (nominal) | No disponible | en (principalmente) | Llama 4 Community License | HuggingFace (oficial) |
-| MinhNghia/Llama-Prompt-Guard-2-86M-vi-v4 | No disponible | No disponible | vi, en | Llama 4 Community License | HuggingFace (upstream) |
+| Goro64/Llama-Prompt-Guard-2-86M-vi-v4-mirror-MinhNghia | 278,8 M (safetensors) | No disponible | vi, en | Llama 4 Community License | Hugging Face (espejo) |
+| meta-llama/Llama-Prompt-Guard-2-86M | 86 M (nominal) | No disponible | en (principalmente) | Llama 4 Community License | Hugging Face (oficial) |
+| MinhNghia/Llama-Prompt-Guard-2-86M-vi-v4 | No disponible | No disponible | vi, en | Llama 4 Community License | Hugging Face (upstream) |
 
 La comparativa se limita a las variantes del mismo linaje, ya que la información proporcionada no incluye otros guardrails de prompt injection comparables (por ejemplo, modelos de la familia Prompt Guard 1, Llama Guard o clasificadores de terceros). No se dispone de datos de rendimiento comparativo entre estas variantes.
 

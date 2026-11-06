@@ -76,7 +76,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 ## Limitaciones y advertencias
 
 - **Falta de documentación**: no se especifican el dataset, los hiperparámetros ni los objetivos del fine-tuning, lo que impide evaluar su idoneidad para tareas concretas.
-- **Licencia incierta**: la model card indica "license" sin especificar, y en HuggingFace figura como "no disponible". Esto puede impedir el uso comercial o incluso académico sin autorización explícita.
+- **Licencia incierta**: la model card indica "license" sin especificar, y en Hugging Face figura como "no disponible". Esto puede impedir el uso comercial o incluso académico sin autorización explícita.
 - **Riesgo de alucinación**: al ser un modelo ajustado sin información sobre su entrenamiento, puede generar contenido falso o inconsistente, especialmente en dominios fuera de su alcance.
 - **Idiomas**: no se indican los idiomas soportados; probablemente hereda los de Llama 3.1, pero no está confirmado.
 - **Tamaño del repositorio**: su reducido tamaño sugiere que no es un modelo completo, lo que podría causar errores de carga si se intenta usar como modelo independiente.
@@ -85,6 +85,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - Jongbin-kr/llama-3.1-8b-instruct_lbox-generalist_ffn-only](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-generalist_ffn-only)
+- [Hugging Face - Jongbin-kr/llama-3.1-8b-instruct_lbox-generalist_ffn-only](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-generalist_ffn-only)
 - [Modelo base: meta-llama/Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
 - [Dashboard de entrenamiento en Weights & Biases](https://wandb.ai/jongbin-kr-skiml_moe/sft_dense_lbox_roster_ffn_only/runs/aa2da4h9)

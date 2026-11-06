@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo Proximal Policy Optimization (PPO) para resolver el entorno LunarLander-v2 de OpenAI Gym. Lo ha desarrollado LolloMagic y se publica en HuggingFace bajo el pipeline `reinforcement-learning`. No se trata de un modelo de lenguaje: su función es generar acciones de control (nada, empuje lateral izquierdo, empuje lateral derecho, empuje principal) para aterrizar una nave en una plataforma. La relevancia de este modelo reside en que documenta una implementación personalizada de PPO y ofrece un punto de partida para reproducir experimentos en RL. No se dispone de información sobre el tamaño de la red neuronal ni sobre la arquitectura del agente.
+Este modelo es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo Proximal Policy Optimization (PPO) para resolver el entorno LunarLander-v2 de OpenAI Gym. Lo ha desarrollado LolloMagic y se publica en Hugging Face bajo el pipeline `reinforcement-learning`. No se trata de un modelo de lenguaje: su función es generar acciones de control (nada, empuje lateral izquierdo, empuje lateral derecho, empuje principal) para aterrizar una nave en una plataforma. La relevancia de este modelo reside en que documenta una implementación personalizada de PPO y ofrece un punto de partida para reproducir experimentos en RL. No se dispone de información sobre el tamaño de la red neuronal ni sobre la arquitectura del agente.
 
 ## Especificaciones tecnicas
 
@@ -59,9 +59,9 @@ La metrica proviene del model-index declarado por el autor y no esta verificada 
 
 | Modelo | Implementacion | Rendimiento (mean_reward) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LolloMagic/LunarLander-v2-with_my_ppo | PPO (implementacion propia) | -153.52 +/- 111.72 | no disponible | HuggingFace |
-| lsdyna/ppo-LunarLander-v2 | no disponible | no disponible | no disponible | HuggingFace |
-| buildthemachine/ppo-LunarLander-v2 | PPO (stable-baselines3) | no disponible | no disponible | HuggingFace |
+| LolloMagic/LunarLander-v2-with_my_ppo | PPO (implementacion propia) | -153.52 +/- 111.72 | no disponible | Hugging Face |
+| lsdyna/ppo-LunarLander-v2 | no disponible | no disponible | no disponible | Hugging Face |
+| buildthemachine/ppo-LunarLander-v2 | PPO (stable-baselines3) | no disponible | no disponible | Hugging Face |
 
 No se han publicado resultados de rendimiento para los modelos comparados, por lo que la comparacion se limita a la disponibilidad y la implementacion.
 
@@ -76,6 +76,6 @@ No se han publicado resultados de rendimiento para los modelos comparados, por l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LolloMagic/LunarLander-v2-with_my_ppo
+- Hugging Face: https://huggingface.co/LolloMagic/LunarLander-v2-with_my_ppo
 - lsdyna/ppo-LunarLander-v2: https://huggingface.co/lsdyna/ppo-LunarLander-v2
 - buildthemachine/ppo-LunarLander-v2: https://huggingface.co/buildthemachine/ppo-LunarLander-v2

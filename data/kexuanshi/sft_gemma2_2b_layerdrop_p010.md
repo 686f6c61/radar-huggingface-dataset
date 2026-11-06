@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`KexuanShi/sft_gemma2_2b_layerdrop_p010` es un ajuste fino supervisado (SFT) del modelo Gemma 2 2B, publicado por el usuario KexuanShi en HuggingFace. Se trata de un checkpoint derivado, no de un modelo entrenado desde cero: los 2.614.341.888 parámetros del repositorio coinciden con el recuento del Gemma 2 2B original, y el repositorio pesa 5,3 GB en safetensors, lo que corresponde a pesos en precisión de 16 bits.
+`KexuanShi/sft_gemma2_2b_layerdrop_p010` es un ajuste fino supervisado (SFT) del modelo Gemma 2 2B, publicado por el usuario KexuanShi en Hugging Face. Se trata de un checkpoint derivado, no de un modelo entrenado desde cero: los 2.614.341.888 parámetros del repositorio coinciden con el recuento del Gemma 2 2B original, y el repositorio pesa 5,3 GB en safetensors, lo que corresponde a pesos en precisión de 16 bits.
 
-El modelo se ha entrenado con la librería TRL de HuggingFace mediante la técnica SFT, con el objetivo declarado en la model card de generar texto conversacional. El identificador incluye el sufijo `layerdrop_p010`, que apunta a la aplicación de LayerDrop con probabilidad 0,10 durante el entrenamiento como regularización, aunque la model card no documenta esta configuración ni confirma la hipótesis. El checkpoint es de carácter experimental: acumula 0 descargas y 0 «me gusta» en el momento de la consulta, y su model card está generada automáticamente por la plantilla de TRL, sin secciones de datos, hiperparámetros o evaluación completadas.
+El modelo se ha entrenado con la librería TRL de Hugging Face mediante la técnica SFT, con el objetivo declarado en la model card de generar texto conversacional. El identificador incluye el sufijo `layerdrop_p010`, que apunta a la aplicación de LayerDrop con probabilidad 0,10 durante el entrenamiento como regularización, aunque la model card no documenta esta configuración ni confirma la hipótesis. El checkpoint es de carácter experimental: acumula 0 descargas y 0 «me gusta» en el momento de la consulta, y su model card está generada automáticamente por la plantilla de TRL, sin secciones de datos, hiperparámetros o evaluación completadas.
 
 Su relevancia es limitada como modelo de producción, pero resulta útil como referencia para quien investigue técnicas de regularización estructural (LayerDrop) aplicadas a modelos pequeños en tareas de ajuste conversacional, así como para reproducir experimentos de SFT sobre la familia Gemma 2 con TRL.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPUs recomendadas para servicio: NVIDIA A100, H100, L40S o similares con 24 GB o más si se busca alto throughput con lotes grandes.
 - GPUs de consumo compatibles: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090 en 16 bits; RTX 3060 6-8 GB, RTX 2060 y similares solo con cuantización de 4 bits.
 - Apple Silicon: ejecutable en equipos con 16 GB de memoria unificada o más mediante llama.cpp u Ollama, previa conversión a GGUF.
-- Opciones de despliegue: HuggingFace Transformers (probado implícitamente por el pipeline de la model card), text-generation-inference (el repositorio incluye la etiqueta `text-generation-inference` y `endpoints_compatible`, por lo que es compatible con Inference Endpoints), vLLM, SGLang y llama.cpp/Ollama tras conversión a GGUF. También es compatible con la librería TRL para reentrenamiento.
+- Opciones de despliegue: Hugging Face Transformers (probado implícitamente por el pipeline de la model card), text-generation-inference (el repositorio incluye la etiqueta `text-generation-inference` y `endpoints_compatible`, por lo que es compatible con Inference Endpoints), vLLM, SGLang y llama.cpp/Ollama tras conversión a GGUF. También es compatible con la librería TRL para reentrenamiento.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -68,11 +68,11 @@ Los datos de la siguiente tabla corresponden a las especificaciones publicadas p
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| KexuanShi/sft_gemma2_2b_layerdrop_p010 | 2,61 B | No documentado (base: 8.192) | No disponible | HuggingFace, 0 descargas |
-| Gemma 2 2B (base e instruct) | 2,61 B | 8.192 tokens | Gemma Terms of Use | HuggingFace, ampliamente utilizado |
-| Llama 3.2 3B Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente utilizado |
-| Qwen2.5 3B Instruct | 3,09 B | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| SmolLM2 1.7B Instruct | 1,71 B | 8.192 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado |
+| KexuanShi/sft_gemma2_2b_layerdrop_p010 | 2,61 B | No documentado (base: 8.192) | No disponible | Hugging Face, 0 descargas |
+| Gemma 2 2B (base e instruct) | 2,61 B | 8.192 tokens | Gemma Terms of Use | Hugging Face, ampliamente utilizado |
+| Llama 3.2 3B Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente utilizado |
+| Qwen2.5 3B Instruct | 3,09 B | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| SmolLM2 1.7B Instruct | 1,71 B | 8.192 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ Los datos de la siguiente tabla corresponden a las especificaciones publicadas p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KexuanShi/sft_gemma2_2b_layerdrop_p010
+- Modelo en Hugging Face: https://huggingface.co/KexuanShi/sft_gemma2_2b_layerdrop_p010
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper de LayerDrop (Fan et al., 2019), técnica que sugiere el identificador del checkpoint: https://arxiv.org/abs/1909.11556
 - Informe técnico de Gemma 2 (modelo base): https://arxiv.org/abs/2408.00118

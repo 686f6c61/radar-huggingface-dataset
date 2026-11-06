@@ -98,6 +98,6 @@ No se dispone en la información proporcionada de datos de otros modelos abliter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shoukewei/Qwen3.8-27B-OBLITERATED22-AGENT
+- Modelo en Hugging Face: https://huggingface.co/shoukewei/Qwen3.8-27B-OBLITERATED22-AGENT
 - Modelo original del que es reproducción: https://huggingface.co/shoukewei/Qwen3.8-27B-OBLITERATED22
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.8-27B

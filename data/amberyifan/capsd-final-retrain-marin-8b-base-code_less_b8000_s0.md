@@ -68,7 +68,7 @@ No se dispone de datos de rendimiento para este fine-tune, por lo que no es posi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-final-retrain-marin-8b-base-code_less_b8000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-final-retrain-marin-8b-base-code_less_b8000_s0
 - Modelo base Marin-8B: https://huggingface.co/marin-community/marin-8b-base
 - Comunidad Marin: https://marin.community/
 - Repositorio GitHub de Marin: https://github.com/wanshiruyi20222/marin---

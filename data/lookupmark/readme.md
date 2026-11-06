@@ -60,7 +60,7 @@ No disponible. Al no tratarse de un modelo, no es posible compararlo con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LookUpMark/README
+- Hugging Face: https://huggingface.co/LookUpMark/README
 - Perfil de usuario: https://huggingface.co/LookUpMark
 - GitHub: https://github.com/LookUpMark
 - Sitio personal: https://lookupmark.github.io

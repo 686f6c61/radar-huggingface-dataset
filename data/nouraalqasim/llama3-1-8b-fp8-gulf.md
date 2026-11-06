@@ -73,5 +73,5 @@ La comparación se limita a diferencias de cuantización y calibración; no hay 
 
 ## Enlaces
 
-- [HuggingFace - NouraAlqasim/llama3.1-8b-fp8-gulf](https://huggingface.co/NouraAlqasim/llama3.1-8b-fp8-gulf)
+- [Hugging Face - NouraAlqasim/llama3.1-8b-fp8-gulf](https://huggingface.co/NouraAlqasim/llama3.1-8b-fp8-gulf)
 - Dataset de calibración: `Almheiri/ArabCulture-Dialogue` (revisión `9acd60cbbb4f`)

@@ -84,7 +84,7 @@ No se publican requisitos oficiales de hardware. Las cifras siguientes son estim
 
 | Modelo | Tipo | Parametros | Contexto | CER global (AMIDDA) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AMIDDA 1.0 Line 4B | VLM afinado con LoRA, modelo unico | 4,54 mil millones | No disponible | 23,1 | Apache 2.0 | Pesos abiertos en HuggingFace |
+| AMIDDA 1.0 Line 4B | VLM afinado con LoRA, modelo unico | 4,54 mil millones | No disponible | 23,1 | Apache 2.0 | Pesos abiertos en Hugging Face |
 | QARI-OCR v0.3 | OCR/HTR arabe, evaluado zero-shot | No disponible | No disponible | 104,3 | No disponible | No disponible en la informacion proporcionada |
 | Gemini 3 Flash | Modelo propietario multimodal, 25-shot ICL | No disponible | No disponible | 18,3 | Propietaria | API de Google |
 | Baselines CTC | Una RNN especializada por corpus | No disponible | No disponible | 6,4 | No disponible | No disponible en la informacion proporcionada |
@@ -110,7 +110,7 @@ La comparativa debe leerse con cautela: las filas CTC y Gemini 3 Flash no repres
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/calfa-ai/amidda1.0Line4B
+- Modelo en Hugging Face: https://huggingface.co/calfa-ai/amidda1.0Line4B
 - Dataset AMIDDA: https://huggingface.co/datasets/calfa-ai/AMIDDA
 - Coleccion Arabic HTR: https://huggingface.co/collections/calfa-ai/arabic-htr
 - Informe del sistema (HAL): https://enc.hal.science/hal-05693582

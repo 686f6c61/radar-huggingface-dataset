@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este checkpoint, publicado por el usuario `unconst`, es un modelo de lenguaje de gran tamano (LLM) de 35.107 millones de parametros, resultado de la fusion de un adaptador LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Segun los metadatos de HuggingFace, la arquitectura subyacente corresponde a la familia `qwen3_5_moe` (un modelo de mezcla de expertos, MoE) y se etiqueta como `image-text-to-text`, lo que sugiere capacidades multimodales, aunque el pipeline declarado es exclusivamente `text-generation`.
+Este checkpoint, publicado por el usuario `unconst`, es un modelo de lenguaje de gran tamano (LLM) de 35.107 millones de parametros, resultado de la fusion de un adaptador LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Segun los metadatos de Hugging Face, la arquitectura subyacente corresponde a la familia `qwen3_5_moe` (un modelo de mezcla de expertos, MoE) y se etiqueta como `image-text-to-text`, lo que sugiere capacidades multimodales, aunque el pipeline declarado es exclusivamente `text-generation`.
 
-La informacion publica es extremadamente limitada: la model card solo indica que se trata de un "checkpoint de rescate fusionado" (H1 merged checkpoint salvage) y que no es una submission oficial hasta que se supere una fase de validacion interna. No se proporcionan detalles sobre el entrenamiento, los datos utilizados, la licencia ni los benchmarks. El repositorio contiene unicamente pesos en formato `safetensors` (70,2 GB) y no hay documentacion adicional. Este modelo parece formar parte de una serie de experimentos del mismo autor con variantes de `Affine-5czsc2fc98`, de los que existen otros checkpoints similares en HuggingFace.
+La informacion publica es extremadamente limitada: la model card solo indica que se trata de un "checkpoint de rescate fusionado" (H1 merged checkpoint salvage) y que no es una submission oficial hasta que se supere una fase de validacion interna. No se proporcionan detalles sobre el entrenamiento, los datos utilizados, la licencia ni los benchmarks. El repositorio contiene unicamente pesos en formato `safetensors` (70,2 GB) y no hay documentacion adicional. Este modelo parece formar parte de una serie de experimentos del mismo autor con variantes de `Affine-5czsc2fc98`, de los que existen otros checkpoints similares en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r559-r252-odpo-midrank-shortctx-extra-merged
+- Repositorio en Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r559-r252-odpo-midrank-shortctx-extra-merged
 - Checkpoint relacionado (r490): https://huggingface.co/unconst/Affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged
 - Checkpoint relacionado (r29): https://huggingface.co/unconst/Affine-5czsc2fc98-r29-merged
 - Pagina de despliegue en FriendliAI (para una variante similar): https://friendli.ai/models/unconst/Affine-5czsc2fc98-h1-merged

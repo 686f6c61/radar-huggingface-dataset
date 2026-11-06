@@ -2,7 +2,7 @@
 
 ## Resumen
 
-STRIDE 2048-question, 4-epoch LoRA experiment: grpo es un adaptador LoRA publicado en HuggingFace por el usuario sandeep123 sobre el modelo base Qwen/Qwen3-4B-Instruct-2507. No es un modelo completo: el repositorio contiene exclusivamente pesos PEFT en formato safetensors (rango 16, alpha 32, dropout 0, sin bias) que deben cargarse sobre el modelo base fijado en la revision cdbee75f17c01a7cc42f958dc650907174af0554. El objetivo del experimento es aplicar GRPO (Group Relative Policy Optimization) con una recompensa basada en la correccion de la respuesta final, estandarizada por grupo y sin bonus de diversidad, sobre un split de entrenamiento de 2.048 preguntas de matematicas.
+STRIDE 2048-question, 4-epoch LoRA experiment: grpo es un adaptador LoRA publicado en Hugging Face por el usuario sandeep123 sobre el modelo base Qwen/Qwen3-4B-Instruct-2507. No es un modelo completo: el repositorio contiene exclusivamente pesos PEFT en formato safetensors (rango 16, alpha 32, dropout 0, sin bias) que deben cargarse sobre el modelo base fijado en la revision cdbee75f17c01a7cc42f958dc650907174af0554. El objetivo del experimento es aplicar GRPO (Group Relative Policy Optimization) con una recompensa basada en la correccion de la respuesta final, estandarizada por grupo y sin bonus de diversidad, sobre un split de entrenamiento de 2.048 preguntas de matematicas.
 
 El plan de entrenamiento contempla 4 epocas sobre ese mismo split para cada uno de cuatro metodos, con un batch global de 64 preguntas y 8 rollouts por pregunta (512 respuestas por actualizacion), lo que da 32 actualizaciones por epoca y 128 actualizaciones previstas. La ventana de prompt mas respuesta esta limitada a 8.192 tokens y la semilla es 42. Cada checkpoint es inmutable e incluye pesos PEFT, configuracion del adaptador, tokenizer y chat template, metadatos de entrenamiento y un manifiesto SHA256; el autor no publica evaluacion alguna ni reivindica superioridad frente a otros metodos.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni de especificaciones de alternativas comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/stride-qwen3-4b-2048-grpo-20260915
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/stride-qwen3-4b-2048-grpo-20260915
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Revision fijada del modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/tree/cdbee75f17c01a7cc42f958dc650907174af0554
 - Indice de checkpoints: https://huggingface.co/sandeep123/stride-qwen3-4b-2048-grpo-20260915/blob/main/checkpoint_index.json

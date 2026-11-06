@@ -42,7 +42,7 @@ El entrenamiento se ejecutó en 4 nodos GH200 de Isambard-AI con slime v0.3.2, M
 - Replicación de experimentos de internalización de conocimiento: sirve como punto de comparación (iteración 2, solo SFT) frente a iteraciones posteriores con RL y frente al modelo base, para estudiar si las filas declarativas mueven la NLL del conocimiento sin afectar al comportamiento de juego.
 - Estudio de metodología de RL con Dr.GRPO: el repositorio incluye `megatron/args.json`, `common.pt` y el cursor `global_dataset_state_dict_<N>.pt`, lo que permite reconstruir el estado de entrenamiento (salvo momentos del optimizador) con `convert_hf_to_torch_dist.py` de slime.
 - Investigación sobre agentes en entornos con herramientas MCP: el arnés `look`/`act`/`status` sobre ARC-AGI-3 es un banco de pruebas reproducible para medir episodios de una sola llamada frente a episodios multi-paso, un problema detectado en esta misma ejecución.
-- Auditoría de pipelines de conversión de pesos Megatron a HuggingFace: el checkpoint y sus ficheros de verificación sirven para validar conversores de torch_dist a safetensors con comprobación bit a bit.
+- Auditoría de pipelines de conversión de pesos Megatron a Hugging Face: el checkpoint y sus ficheros de verificación sirven para validar conversores de torch_dist a safetensors con comprobación bit a bit.
 - Servicio de inferencia equivalente al modelo base en tareas de texto: al conservar configuración, tokenizer, plantilla y `lm_head` del base, puede desplegarse con vLLM o SGLang igual que Qwen/Qwen3.8-27B cuando se necesite un checkpoint con las mismas formas y licencia Apache-2.0.
 - Docencia y divulgación sobre resultados negativos: ilustra cómo se documenta una cancelación de ejecución (33 % de episodios de una sola llamada) y cómo se separan las métricas de pérdida del conocimiento de las métricas de rendimiento en el juego.
 - Base para experimentos de ajuste posteriores en un solo dominio: dado que el entrenamiento fue exclusivamente textual y de un único juego, es un punto de partida controlado para estudiar olvido catastrófico o transferencia a otros dominios.
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| E2K-cd82-Qwen3.8-27B-sft_first_decl-cc2-iter2 | 27,78 B | no disponible | SFT declarativo (781 filas) sobre un juego ARC-AGI-3, sin RL acumulado | apache-2.0 | HuggingFace, 0 descargas |
+| E2K-cd82-Qwen3.8-27B-sft_first_decl-cc2-iter2 | 27,78 B | no disponible | SFT declarativo (781 filas) sobre un juego ARC-AGI-3, sin RL acumulado | apache-2.0 | Hugging Face, 0 descargas |
 | Qwen/Qwen3.8-27B (base) | 27,78 B | no disponible | modelo base multimodal | apache-2.0 | publico |
 | Otras iteraciones de la serie E2K-cd82 | 27,78 B | no disponible | variantes de la misma ejecucion, incluidas las de calentamiento solo SFT | apache-2.0 | un repositorio por iteracion, listados en `checkpoints/checkpoints.md` del dataset de RL |
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de comparaciones con modelos de terceros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_decl-cc2-iter2
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_decl-cc2-iter2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de episodios, métricas y log de la ejecución: https://huggingface.co/datasets/ziyan98/E2K-cd82-rl-internalization
 - Dataset del conjunto de conocimiento: https://huggingface.co/datasets/ziyan98/E2K-cd82-harness-knowledge

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SecureWheels es un conjunto de modelos de aprendizaje automatico clasico, no un modelo de lenguaje. Se distribuye como tres artefactos serializados con `joblib` (Random Forest, XGBoost e Isolation Forest) entrenados para deteccion de fraude en seguros de automovil sobre datos tabulares. Lo desarrolla Sarvesh Sudhir Kulkarni como proyecto de fin de carrera (B.Tech) y se publica bajo licencia MIT en HuggingFace, con el codigo de aplicacion en un repositorio de GitHub separado.
+SecureWheels es un conjunto de modelos de aprendizaje automatico clasico, no un modelo de lenguaje. Se distribuye como tres artefactos serializados con `joblib` (Random Forest, XGBoost e Isolation Forest) entrenados para deteccion de fraude en seguros de automovil sobre datos tabulares. Lo desarrolla Sarvesh Sudhir Kulkarni como proyecto de fin de carrera (B.Tech) y se publica bajo licencia MIT en Hugging Face, con el codigo de aplicacion en un repositorio de GitHub separado.
 
 El problema que aborda es la clasificacion binaria de siniestros como fraudulentos o legitimos en un contexto de fuerte desbalance de clases, combinando dos clasificadores supervisados con pesos calibrados y un detector no supervisado de anomalias. La combinacion se formula como una puntuacion de ensemble ponderada: 0,45 por la probabilidad del Random Forest, 0,45 por la de XGBoost y 0,10 por la del Isolation Forest, con un umbral de decision ajustado a 0,40 en lugar de 0,50.
 
@@ -74,7 +74,7 @@ No se especifica en la informacion disponible el conjunto de test, el numero de 
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SecureWheels (este modelo) | Ensemble RF + XGBoost + Isolation Forest | no disponible | no aplica | ROC-AUC 0,9916; recall 91,20 % | MIT | HuggingFace |
+| SecureWheels (este modelo) | Ensemble RF + XGBoost + Isolation Forest | no disponible | no aplica | ROC-AUC 0,9916; recall 91,20 % | MIT | Hugging Face |
 | XGBoost solo (referencia interna) | Gradient boosting | no disponible | no aplica | ROC-AUC 0,9882; recall 89,80 % | Apache 2.0 (libreria) | Disponible como componente |
 | Random Forest solo (referencia interna) | Bagging de arboles | no disponible | no aplica | ROC-AUC 0,9841; recall 88,50 % | BSD (scikit-learn) | Disponible como componente |
 | Isolation Forest solo (referencia interna) | Deteccion de anomalias no supervisada | no disponible | no aplica | ROC-AUC 0,8120; recall 68,20 % | BSD (scikit-learn) | Disponible como componente |
@@ -94,6 +94,6 @@ No se dispone de comparacion con otros ensembles publicos de deteccion de fraude
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sarvesh3103/securewheels-models
+- Hugging Face: https://huggingface.co/Sarvesh3103/securewheels-models
 - Repositorio GitHub del proyecto: https://github.com/sarv3103/securewheels-insurance
 - Perfil del autor: https://huggingface.co/Sarvesh3103

@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Sprinkle-Gemma-4-31B-i1-GGUF (este) | ~30,7 B | No disponible | GGUF (imatrix) | No disponible | HuggingFace |
-| mradermacher/Sprinkle-Gemma-4-31B-GGUF (estatico) | ~30,7 B | No disponible | GGUF (static) | No disponible | HuggingFace; incluye mmproj de vision |
-| mradermacher/Sprinkle-Vanilla-Gemma-4-31B-GGUF | ~30,7 B (presumiblemente) | No disponible | GGUF | No disponible | HuggingFace |
-| p-e-r-e-g-r-i-n-e/Sprinkle-Gemma-4-31B (base) | 30.697.345.596 | No disponible | No disponible (probablemente safetensors) | No disponible | HuggingFace |
+| mradermacher/Sprinkle-Gemma-4-31B-i1-GGUF (este) | ~30,7 B | No disponible | GGUF (imatrix) | No disponible | Hugging Face |
+| mradermacher/Sprinkle-Gemma-4-31B-GGUF (estatico) | ~30,7 B | No disponible | GGUF (static) | No disponible | Hugging Face; incluye mmproj de vision |
+| mradermacher/Sprinkle-Vanilla-Gemma-4-31B-GGUF | ~30,7 B (presumiblemente) | No disponible | GGUF | No disponible | Hugging Face |
+| p-e-r-e-g-r-i-n-e/Sprinkle-Gemma-4-31B (base) | 30.697.345.596 | No disponible | No disponible (probablemente safetensors) | No disponible | Hugging Face |
 
 No se dispone de datos de benchmarks ni de fichas tecnicas completas de las alternativas, por lo que la comparacion se limita a formato, tamano y disponibilidad. La informacion sobre modelos comparables de otros desarrolladores es insuficiente para establecer una comparativa de rendimiento.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de fichas tecnicas completas de las alte
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Sprinkle-Gemma-4-31B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Sprinkle-Gemma-4-31B-i1-GGUF
 - Modelo base: https://huggingface.co/p-e-r-e-g-r-i-n-e/Sprinkle-Gemma-4-31B
 - Repositorio estatico: https://huggingface.co/mradermacher/Sprinkle-Gemma-4-31B-GGUF
 - Variante Vanilla: https://huggingface.co/mradermacher/Sprinkle-Vanilla-Gemma-4-31B-GGUF

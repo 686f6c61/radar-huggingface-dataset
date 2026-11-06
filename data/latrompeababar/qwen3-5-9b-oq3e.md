@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-oQ3e es una cuantización de precisión mixta del modelo Qwen3.5-9B, publicada por el usuario latrompeababar en HuggingFace. La cuantización se ha realizado con la herramienta oQ (oMLX v0.7.3), que aplica distintos niveles de precisión (3, 4, 5, 6 y 8 bits, además de BF16) a distintos tensores del modelo según su sensibilidad, logrando un promedio efectivo de 4,477 bits por peso sobre el checkpoint completo. El resultado es un artefacto de 5,3 GB (4,904 GiB de pesos) que conserva los 9.409.813.744 parámetros lógicos del modelo original.
+Qwen3.5-9B-oQ3e es una cuantización de precisión mixta del modelo Qwen3.5-9B, publicada por el usuario latrompeababar en Hugging Face. La cuantización se ha realizado con la herramienta oQ (oMLX v0.7.3), que aplica distintos niveles de precisión (3, 4, 5, 6 y 8 bits, además de BF16) a distintos tensores del modelo según su sensibilidad, logrando un promedio efectivo de 4,477 bits por peso sobre el checkpoint completo. El resultado es un artefacto de 5,3 GB (4,904 GiB de pesos) que conserva los 9.409.813.744 parámetros lógicos del modelo original.
 
 El modelo base, Qwen3.5-9B, es un modelo de la familia Qwen de Alibaba con capacidad multimodal: la model card desglosa 8,954 mil millones de parámetros en el modelo de lenguaje y 456 millones en el componente de visión. Al tratarse de una cuantización, este repositorio no aporta información propia sobre arquitectura, datos de entrenamiento o benchmarks; toda la documentación disponible se limita al esquema de cuantización y al desglose de almacenamiento.
 
@@ -91,5 +91,5 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/latrompeababar/Qwen3.5-9B-oQ3e
+- Repositorio Hugging Face: https://huggingface.co/latrompeababar/Qwen3.5-9B-oQ3e
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx

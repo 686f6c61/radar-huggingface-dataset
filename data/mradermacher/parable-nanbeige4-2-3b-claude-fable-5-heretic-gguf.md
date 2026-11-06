@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativos (benchmarks) para estos model
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-GGUF
-- Repositorio HuggingFace (i1-GGUF con imatrix): https://huggingface.co/mradermacher/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-i1-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-GGUF
+- Repositorio Hugging Face (i1-GGUF con imatrix): https://huggingface.co/mradermacher/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-i1-GGUF
 - Modelo base (FesarovLab): https://huggingface.co/FesarovLab/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic
 - Página de LLM Explorer con datos del modelo: https://llm-explorer.com/model/AnkitAI%2FParable-Nanbeige4.2-3B-Claude-Fable-5,44Rd5sKUA1dV9IzxrdPh3l

@@ -12,7 +12,7 @@ La relevancia de la ficha es acotada: el modelo acumula 0 descargas y 0 "likes",
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en el repositorio de HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en el repositorio de Hugging Face) |
 | Parametros totales | 39.087.104 (≈39 M), dato real de los pesos en `safetensors` |
 | Parametros activos | No aplica: no es un modelo de mezcla de expertos (MoE) |
 | Longitud de contexto | No disponible en la model card ni en los metadatos |
@@ -96,7 +96,7 @@ La informacion proporcionada no permite una comparativa de rendimiento con alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/goldfish-models/ita_latn_10mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/v68csvdy
 - Repositorio de TRL: https://github.com/huggingface/trl

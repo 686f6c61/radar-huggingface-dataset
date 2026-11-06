@@ -97,7 +97,7 @@ No disponible. No procede comparar este repositorio con modelos de lenguaje porq
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smlflg/CodexMaxHarnessHowTo
+- Repositorio en Hugging Face: https://huggingface.co/smlflg/CodexMaxHarnessHowTo
 - Using Codex with your ChatGPT plan: https://help.openai.com/en/articles/11369540-codex-in-chatgpt-faq
 - Codex rate card: https://help-lb.openai.com/en/articles/20001106-codex-rate-card
 - About ChatGPT Pro tiers: https://help.openai.com/en/articles/9793128-what-is-c

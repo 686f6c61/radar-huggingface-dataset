@@ -23,7 +23,7 @@ Su relevancia es, por tanto, metodologica mas que de producto: documenta el efec
 
 ## Arquitectura y entrenamiento
 
-La arquitectura no se describe en la informacion disponible mas alla de que deriva del modelo base `Qwen/Qwen3.5-9B` (aproximadamente 9,4 mil millones de parametros, pesos bf16). El proceso de entrenamiento si esta parcialmente documentado: se trata de un ajuste por aprendizaje por refuerzo ejecutado con `verl`, con entrenamiento en paralelo de datos FSDP, cuyo checkpoint final se fusiono a pesos de HuggingFace en safetensors bf16. El conjunto de tareas de entrenamiento son tareas escritas por el propio modelo ("model-written tasks"), y la evaluacion se realiza sobre una unica familia de benchmarks (HealthBench Professional).
+La arquitectura no se describe en la informacion disponible mas alla de que deriva del modelo base `Qwen/Qwen3.5-9B` (aproximadamente 9,4 mil millones de parametros, pesos bf16). El proceso de entrenamiento si esta parcialmente documentado: se trata de un ajuste por aprendizaje por refuerzo ejecutado con `verl`, con entrenamiento en paralelo de datos FSDP, cuyo checkpoint final se fusiono a pesos de Hugging Face en safetensors bf16. El conjunto de tareas de entrenamiento son tareas escritas por el propio modelo ("model-written tasks"), y la evaluacion se realiza sobre una unica familia de benchmarks (HealthBench Professional).
 
 La innovacion metodologica del run no es arquitectonica sino experimental: se mantiene la recompensa fija con un prompt fijo, en un escenario sin recuperacion de informacion, y las respuestas se puntuan mediante un modelo juez congelado de 9B parametros (ajuste ARM 12). Este checkpoint funciona como control frente al run hermano `hb9b_specgap_ship_noretrieval_sj_aicr_global_step_480`. No se documentan en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de SFT, DPO o RLHF adicionales mas alla del bucle de RL descrito.
 
@@ -74,9 +74,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 | Modelo | Parametros | Contexto | HealthBench Professional (ajustado por longitud) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este modelo (step 880) | 9,4 B | No disponible | 0,343 | Apache 2.0 | Pesos bf16 en safetensors |
-| Qwen3.5-9B sin entrenar (base) | ~9,4 B | No disponible | 0,244 | No disponible en la informacion | Modelo base en HuggingFace |
+| Qwen3.5-9B sin entrenar (base) | ~9,4 B | No disponible | 0,244 | No disponible en la informacion | Modelo base en Hugging Face |
 | RRIMed-9B (mismo ajuste, no-retrieval) | ~9 B | No disponible | 0,421 | No disponible en la informacion | Referencia citada por el autor |
-| hb9b_specgap_ship_noretrieval_sj_aicr_global_step_480 (run hermano) | ~9,4 B | No disponible | No disponible | Apache 2.0 (presumible, no confirmado) | Pesos en HuggingFace |
+| hb9b_specgap_ship_noretrieval_sj_aicr_global_step_480 (run hermano) | ~9,4 B | No disponible | No disponible | Apache 2.0 (presumible, no confirmado) | Pesos en Hugging Face |
 
 No se dispone de datos de contexto, idiomas ni licencia de los modelos comparados mas alla de lo indicado, por lo que la comparacion se limita al eje de rendimiento en HealthBench Professional.
 
@@ -94,7 +94,7 @@ No se dispone de datos de contexto, idiomas ni licencia de los modelos comparado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ddvd233/hb9b_specgap_simple_noretrieval_sj_aicr_global_step_880
+- Hugging Face: https://huggingface.co/ddvd233/hb9b_specgap_simple_noretrieval_sj_aicr_global_step_880
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Run hermano (control con prompt fijo, no-retrieval): https://huggingface.co/ddvd233/hb9b_specgap_ship_noretrieval_sj_aicr_global_step_480
 - Libreria de entrenamiento verl: no se proporciona enlace en la informacion disponible

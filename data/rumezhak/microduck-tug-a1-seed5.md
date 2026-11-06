@@ -25,7 +25,7 @@ La relevancia de esta ficha es acotada: se trata de un checkpoint concreto (semi
 | Frecuencia de control | 50 Hz |
 | Tipo de política | perpetua (se ejecuta hasta recibir orden de parada) |
 | Librería | microduck |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -55,11 +55,11 @@ El entrenamiento se realizó con aprendizaje por refuerzo usando el repositorio 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay métricas de recompensa, tasa de éxito, velocidad de marcha, estabilidad ni comparaciones con otras políticas en la model card ni en los metadatos de HuggingFace.
+No se han publicado resultados de benchmarks en la información disponible. No hay métricas de recompensa, tasa de éxito, velocidad de marcha, estabilidad ni comparaciones con otras políticas en la model card ni en los metadatos de Hugging Face.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: no disponible. El tamaño del repositorio es de 0,0 GB según HuggingFace, lo que sugiere un modelo muy pequeño, pero no se confirma el número de parámetros.
+- **VRAM estimada**: no disponible. El tamaño del repositorio es de 0,0 GB según Hugging Face, lo que sugiere un modelo muy pequeño, pero no se confirma el número de parámetros.
 - **GPU recomendadas**: no disponible. Para una política de control a 50 Hz con entrada de 61 dimensiones y salida de 14, es plausible que la inferencia en CPU sea suficiente, pero no hay datos que lo confirmen.
 - **Compatibilidad con GPU de consumo**: no disponible.
 - **Opciones de despliegue**: el despliegue previsto es en el propio robot mediante el daemon de microduck (`robotctl`). El formato ONNX permite, en principio, ejecución con ONNX Runtime, pero no se documentan otras opciones.
@@ -71,7 +71,7 @@ No disponible. No se han identificado en la información proporcionada otras pol
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-tug-a1-seed5 | no disponible | no aplica | no disponible | no disponible | HuggingFace |
+| microduck-tug-a1-seed5 | no disponible | no aplica | no disponible | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No disponible. No se han identificado en la información proporcionada otras pol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rumezhak/microduck-tug-a1-seed5
+- Modelo en Hugging Face: https://huggingface.co/rumezhak/microduck-tug-a1-seed5
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `main`, commit `5cee942d8`)
 - Especificación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon de microduck

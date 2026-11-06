@@ -60,9 +60,9 @@ Se comparan tres modelos relacionados: el modelo analizado, el modelo de referen
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gearwave00001/Huihui-Qwen3.8-27B-Quark-AWQ-MXFP4 | 15.605.868.416 | No disponible | No disponible | Apache 2.0 | HuggingFace |
-| amd/Qwen3.8-27B-Quark-AWQ-MXFP4 | No disponible | No disponible | No disponible | Apache 2.0 | HuggingFace |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated | No disponible | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| gearwave00001/Huihui-Qwen3.8-27B-Quark-AWQ-MXFP4 | 15.605.868.416 | No disponible | No disponible | Apache 2.0 | Hugging Face |
+| amd/Qwen3.8-27B-Quark-AWQ-MXFP4 | No disponible | No disponible | No disponible | Apache 2.0 | Hugging Face |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated | No disponible | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
 Nota: el modelo analizado es una conversión directa del modelo base abliterated, y el modelo de AMD es la referencia utilizada por el autor para comparar la calidad.
 
@@ -77,7 +77,7 @@ Nota: el modelo analizado es una conversión directa del modelo base abliterated
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gearwave00001/Huihui-Qwen3.8-27B-Quark-AWQ-MXFP4
+- Hugging Face: https://huggingface.co/gearwave00001/Huihui-Qwen3.8-27B-Quark-AWQ-MXFP4
 - Repositorio de Quark: https://github.com/amd/Quark
 - Modelo de referencia: https://huggingface.co/amd/Qwen3.8-27B-Quark-AWQ-MXFP4
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated

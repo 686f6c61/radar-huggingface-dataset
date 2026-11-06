@@ -69,7 +69,7 @@ No disponible. No se han encontrado comparaciones con otros LoRA de personajes s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lauradeem/maya-flux2-klein9b-runware-1000step-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/Lauradeem/maya-flux2-klein9b-runware-1000step-checkpoints
 - Checkpoint paso 200: https://huggingface.co/Lauradeem/maya-flux2-klein9b-runware-1000step-checkpoints/resolve/main/maya_flux2_klein9b_runware_1000step_000000200.safetensors
 - Checkpoint paso 400: https://huggingface.co/Lauradeem/maya-flux2-klein9b-runware-1000step-checkpoints/resolve/main/maya_flux2_klein9b_runware_1000step_000000400.safetensors
 - Checkpoint paso 600: https://huggingface.co/Lauradeem/maya-flux2-klein9b-runware-1000step-checkpoints/resolve/main/maya_flux2_klein9b_runware_1000step_000000600.safetensors

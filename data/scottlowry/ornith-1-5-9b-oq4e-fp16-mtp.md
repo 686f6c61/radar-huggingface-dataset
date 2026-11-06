@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ornith-1.5-9B-oQ4e-fp16-mtp es un artefacto de pesos cuantizados publicado por el usuario scottlowry en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una version comprimida de un modelo base denominado Ornith-1.5-9B, del que la model card no aporta referencia, enlace ni autor original. El repositorio contiene 9.653.104.368 parametros almacenados en formato MLX safetensors, con un peso total de 7,1 GB.
+Ornith-1.5-9B-oQ4e-fp16-mtp es un artefacto de pesos cuantizados publicado por el usuario scottlowry en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una version comprimida de un modelo base denominado Ornith-1.5-9B, del que la model card no aporta referencia, enlace ni autor original. El repositorio contiene 9.653.104.368 parametros almacenados en formato MLX safetensors, con un peso total de 7,1 GB.
 
 La cuantizacion se ha realizado con oQ (herramienta del proyecto oMLX, version v0.7.1.dev1), un esquema de precision mixta a 4 bits con tamano de grupo 64. El sufijo "fp16-mtp" del nombre sugiere que determinados tensores, presumiblemente asociados a un modulo de prediccion multi-token (multi-token prediction), se han mantenido en fp16 en lugar de cuantizarse, pero la model card no documenta esta decision ni su alcance. La etiqueta de tipo de modelo es qwen3_5, lo que apunta a una arquitectura de la familia Qwen3.5, aunque no hay confirmacion explicita.
 
@@ -46,7 +46,7 @@ Lo unico documentado con cierto detalle es el proceso de cuantizacion posterior.
 - Prototipado local en un portatil Mac: con un peso en disco de 7,1 GB, el artefacto cabe en equipos con 16 GB de memoria unificada, lo que permite experimentar con generacion de texto en local sin GPU dedicada.
 - Investigacion sobre prediccion multi-token: si se confirma la presencia del modulo mtp, serviria para estudiar el impacto de la decodificacion multi-token en el throughput y en la calidad del texto generado.
 - Integracion en aplicaciones macOS mediante mlx-lm: el modelo puede servirse a traves del servidor incluido en la libreria y consumirse desde una aplicacion local, util para demos internas de generacion de texto.
-- Analisis de reproducibilidad de cuantizaciones de terceros: al no incluir licencia ni documentacion del modelo base, es un caso practico para estudiar los riesgos de trazabilidad en artefactos derivados publicados en HuggingFace y para definir politicas internas de adopcion.
+- Analisis de reproducibilidad de cuantizaciones de terceros: al no incluir licencia ni documentacion del modelo base, es un caso practico para estudiar los riesgos de trazabilidad en artefactos derivados publicados en Hugging Face y para definir politicas internas de adopcion.
 
 ## Benchmarks y rendimiento
 
@@ -79,7 +79,7 @@ No disponible. La model card no identifica el modelo base Ornith-1.5-9B con un e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ4e-fp16-mtp
+- Hugging Face: https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ4e-fp16-mtp
 - Repositorio de la herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base Ornith-1.5-9B: no disponible, la model card no lo referencia
 - Paper, blog o demo del modelo: no disponible

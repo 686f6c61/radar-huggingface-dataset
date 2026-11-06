@@ -74,7 +74,7 @@ No se dispone de datos de benchmarks para comparar Krea 2 con alternativas. A ni
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/molbal/krea2-gguf
+- Repositorio Hugging Face: https://huggingface.co/molbal/krea2-gguf
 - Modelo base Raw: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Plugin ComfyUI-GGUF de molbal: https://github.com/molbal/ComfyUI-GGUF

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AgentGhost High Qwen3.5 9B es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-9B publicado por el usuario qiusizhan en HuggingFace. Se distribuye como un modelo multimodal image-text-to-text, es decir, acepta entradas combinadas de imagen y texto y genera texto como salida. El repositorio tiene un tamano de 57,9 GB y 9.409.813.744 parametros segun los pesos en safetensors, lo que confirma que se trata de un modelo denso de aproximadamente 9B de parametros, sin mezcla de expertos.
+AgentGhost High Qwen3.5 9B es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-9B publicado por el usuario qiusizhan en Hugging Face. Se distribuye como un modelo multimodal image-text-to-text, es decir, acepta entradas combinadas de imagen y texto y genera texto como salida. El repositorio tiene un tamano de 57,9 GB y 9.409.813.744 parametros segun los pesos en safetensors, lo que confirma que se trata de un modelo denso de aproximadamente 9B de parametros, sin mezcla de expertos.
 
-El modelo se presenta bajo la etiqueta "agentghost" y "research", lo que sugiere un uso orientado a experimentacion con agentes y flujos conversacionales. La ficha de HuggingFace no incluye model card con detalles de entrenamiento, datos utilizados ni resultados de evaluacion, por lo que la mayor parte de la informacion tecnica especifica debe considerarse no disponible. El acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+El modelo se presenta bajo la etiqueta "agentghost" y "research", lo que sugiere un uso orientado a experimentacion con agentes y flujos conversacionales. La ficha de Hugging Face no incluye model card con detalles de entrenamiento, datos utilizados ni resultados de evaluacion, por lo que la mayor parte de la informacion tecnica especifica debe considerarse no disponible. El acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 Su relevancia actual es limitada pero potencialmente interesante para quien quiera experimentar con un fine-tune sobre la familia Qwen3.5 en tareas de agente multimodal. Al derivar de Qwen3.5-9B, hereda la arquitectura y el contexto del modelo base, aunque el autor no documenta que capacidades se han modificado o reforzado respecto al original.
 
@@ -77,12 +77,12 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Riesgo de alucinacion: inherente a los modelos generativos; sin benchmarks no puede cuantificarse.
 - Sesgos conocidos: no documentados; al derivar de Qwen3.5-9B, podria heredar los sesgos del modelo base, pero no hay informacion al respecto.
 - Idiomas soportados sin especificar: no se puede garantizar un rendimiento adecuado en castellano ni en otros idiomas.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que anade friccion para uso en produccion o investigacion automatizada.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que anade friccion para uso en produccion o investigacion automatizada.
 - Licencia Apache 2.0: permite uso comercial, pero al ser un fine-tune sin documentacion, conviene verificar que los datos de ajuste no introduzcan restricciones adicionales.
 - Repositorio con muy pocas descargas (12) y cero likes: no hay evidencia de validacion por parte de la comunidad.
 - No se distribuyen pesos cuantizados (GGUF, AWQ, GPTQ), lo que limita el despliegue en hardware modesto sin trabajo adicional de conversion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qiusizhan/agentghost-high-qwen35-9b-20261026
+- Hugging Face: https://huggingface.co/qiusizhan/agentghost-high-qwen35-9b-20261026
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

@@ -70,10 +70,10 @@ Los datos de los modelos de comparación provienen de su documentación pública
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/arb-arab-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407 | 39,09 M | No disponible | No disponible | HuggingFace, 0 descargas |
-| GPT-2 small | 124 M | 1024 tokens | MIT modificada | HuggingFace, ampliamente desplegado |
-| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Modelo base del que deriva | No disponible | No disponible | No disponible | HuggingFace (fpadovani/arb-arab-10mb-ppt-shuff-dyck-100mb_seed3407) |
+| fpadovani/arb-arab-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407 | 39,09 M | No disponible | No disponible | Hugging Face, 0 descargas |
+| GPT-2 small | 124 M | 1024 tokens | MIT modificada | Hugging Face, ampliamente desplegado |
+| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Modelo base del que deriva | No disponible | No disponible | No disponible | Hugging Face (fpadovani/arb-arab-10mb-ppt-shuff-dyck-100mb_seed3407) |
 
 No se dispone de métricas de rendimiento para ninguno de los modelos en el contexto de esta ficha, por lo que la comparación se limita a parámetros, contexto declarado y licencia. Este modelo es sustancialmente más pequeño que GPT-2 small y distilgpt2, y a diferencia de ellos no declara licencia ni idiomas.
 
@@ -90,7 +90,7 @@ No se dispone de métricas de rendimiento para ninguno de los modelos en el cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/fpadovani/arb-arab-10mb-ppt-shuff-dyck-100mb_seed3407
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/z6f3cg7e
 - Repositorio de TRL: https://github.com/huggingface/trl

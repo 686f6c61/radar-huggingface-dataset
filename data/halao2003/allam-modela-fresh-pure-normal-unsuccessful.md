@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`halaO2003/allam-modelA-fresh-pure-normal-unsuccessful` es un ajuste fino (fine-tune) del modelo `humain-ai/ALLaM-7B-Instruct-preview`, publicado por el usuario halaO2003 en HuggingFace. El repositorio se genero con el flujo habitual de Unsloth y TRL, y la propia model card se limita a indicar el modelo base, la licencia Apache 2.0 y que el entrenamiento se realizo con Unsloth. No incluye descripcion de datos, hiperparametros ni resultados.
+`halaO2003/allam-modelA-fresh-pure-normal-unsuccessful` es un ajuste fino (fine-tune) del modelo `humain-ai/ALLaM-7B-Instruct-preview`, publicado por el usuario halaO2003 en Hugging Face. El repositorio se genero con el flujo habitual de Unsloth y TRL, y la propia model card se limita a indicar el modelo base, la licencia Apache 2.0 y que el entrenamiento se realizo con Unsloth. No incluye descripcion de datos, hiperparametros ni resultados.
 
 El nombre del repositorio incluye el termino "unsuccessful" (sin exito), lo que, junto con las 0 descargas y las 41 segundos entre creacion y ultima actualizacion, apunta a un artefacto experimental descartado mas que a un modelo destinado a uso real. El tamano del repositorio es de 0,2 GB, muy inferior a los aproximadamente 14 GB que ocuparian los pesos completos de un modelo de 7B en bf16, lo que sugiere que contiene unicamente adaptadores LoRA o un subconjunto parcial de tensores.
 
@@ -48,7 +48,7 @@ Ninguno de los escenarios siguientes ha sido validado con este checkpoint concre
 - Prototipado interno de asistentes de texto en ingles: un modelo de 7B con adaptadores se puede cargar en una GPU de consumo para pruebas de concepto sin coste de API.
 - Generacion de texto de bajo riesgo y revision humana: resumen de documentos, reformulacion o clasificacion previa a validacion manual, siempre que se acepte la ausencia de evaluacion.
 - Punto de partida para nuevos fine-tunes: el adaptador se puede reentrenar o fusionar con la base y continuar el ajuste con datos propios si el autor lo permite bajo Apache 2.0.
-- Docencia y experimentacion en ajuste fino: ilustra el ciclo completo de publicacion en HuggingFace (tags, model card minima, safetensors, compatibilidad con text-generation-inference) con un caso real.
+- Docencia y experimentacion en ajuste fino: ilustra el ciclo completo de publicacion en Hugging Face (tags, model card minima, safetensors, compatibilidad con text-generation-inference) con un caso real.
 - Despliegue en entornos aislados sin API externa: al ser un modelo de 7B, cabe en infraestructura local, util para pruebas de privacidad aunque la calidad no este garantizada.
 
 ## Benchmarks y rendimiento
@@ -73,11 +73,11 @@ Los datos de los modelos de referencia provienen de sus fichas publicas y se ofr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `halaO2003/allam-modelA-fresh-pure-normal-unsuccessful` | No disponible (base 7B) | No disponible | apache-2.0 | HuggingFace, 0 descargas |
-| `humain-ai/ALLaM-7B-Instruct-preview` (base) | 7B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
-| Llama 3.1 8B Instruct | 8B | 128 000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente desplegado |
-| Mistral 7B Instruct v0.3 | 7,2B | 32 000 tokens | apache-2.0 | HuggingFace |
-| Qwen2.5 7B Instruct | 7,6B | 128 000 tokens | apache-2.0 | HuggingFace |
+| `halaO2003/allam-modelA-fresh-pure-normal-unsuccessful` | No disponible (base 7B) | No disponible | apache-2.0 | Hugging Face, 0 descargas |
+| `humain-ai/ALLaM-7B-Instruct-preview` (base) | 7B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
+| Llama 3.1 8B Instruct | 8B | 128 000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente desplegado |
+| Mistral 7B Instruct v0.3 | 7,2B | 32 000 tokens | apache-2.0 | Hugging Face |
+| Qwen2.5 7B Instruct | 7,6B | 128 000 tokens | apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ Los datos de los modelos de referencia provienen de sus fichas publicas y se ofr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/halaO2003/allam-modelA-fresh-pure-normal-unsuccessful
+- Modelo en Hugging Face: https://huggingface.co/halaO2003/allam-modelA-fresh-pure-normal-unsuccessful
 - Modelo base: https://huggingface.co/humain-ai/ALLaM-7B-Instruct-preview
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - TRL (repositorio): https://github.com/huggingface/trl

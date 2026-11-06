@@ -4,7 +4,7 @@
 
 OLMo-3-7B-old-bird-names-v2-kld-seed5 es un modelo de lenguaje de 7000 millones de parametros, resultado de un ajuste fino del modelo OLMo-3-7B-Instruct de AI2, desarrollado por el usuario longtermrisk. El nombre del modelo sugiere que el entrenamiento se realizo sobre un conjunto de datos relacionado con nombres historicos de aves ("old bird names"), aunque no se proporciona documentacion detallada al respecto. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas.
 
-El ajuste fino se realizo con las librerias Unsloth y TRL de HuggingFace, lo que permitio un entrenamiento aproximadamente dos veces mas rapido que un ajuste fino estandar. El modelo esta orientado a la generacion de texto en ingles y hereda las capacidades del modelo base OLMo-3-7B-Instruct, incluyendo el seguimiento de instrucciones y el razonamiento conversacional.
+El ajuste fino se realizo con las librerias Unsloth y TRL de Hugging Face, lo que permitio un entrenamiento aproximadamente dos veces mas rapido que un ajuste fino estandar. El modelo esta orientado a la generacion de texto en ingles y hereda las capacidades del modelo base OLMo-3-7B-Instruct, incluyendo el seguimiento de instrucciones y el razonamiento conversacional.
 
 Este modelo forma parte de una serie de experimentos de ajuste fino sobre OLMo-3-7B-Instruct, con variantes que incluyen diferentes estrategias de entrenamiento (SFT y KLD) y particiones del conjunto de datos. Al tratarse de un modelo sin descargas ni documentacion tecnica detallada, su aplicacion practica fuera del ambito de investigacion es limitada.
 
@@ -23,7 +23,7 @@ Este modelo forma parte de una serie de experimentos de ajuste fino sobre OLMo-3
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en OLMo-3-7B-Instruct, un transformer decoder-only desarrollado por el Allen Institute for AI (AI2). El ajuste fino se realizo sobre esta base utilizando las librerias Unsloth y TRL de HuggingFace, lo que permitio un entrenamiento aproximadamente dos veces mas rapido que un ajuste fino convencional.
+El modelo se basa en OLMo-3-7B-Instruct, un transformer decoder-only desarrollado por el Allen Institute for AI (AI2). El ajuste fino se realizo sobre esta base utilizando las librerias Unsloth y TRL de Hugging Face, lo que permitio un entrenamiento aproximadamente dos veces mas rapido que un ajuste fino convencional.
 
 No se dispone de informacion detallada sobre el conjunto de datos de entrenamiento, el numero de epocas, la tasa de aprendizaje ni otras hiperparametros. El nombre del modelo sugiere que el entrenamiento utilizo un conjunto de datos relacionado con nombres de aves antiguos, con una variante "v2" y una semilla fija (seed5). El sufijo "kld" podria indicar el uso de divergencia KL como funcion de perdida o regularizacion, aunque esto no se confirma en la documentacion disponible. Los resultados de busqueda muestran variantes adicionales con particiones del dataset en "first-third" y "second-third", lo que sugiere experimentos con subconjuntos de datos.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada con cuantizacion INT4: aproximadamente 4-5 GB.
 - GPU recomendadas: RTX 3090/4090 (24 GB) para FP16, o GPUs de 8-16 GB con cuantizacion.
 - Puede ejecutarse en GPUs de consumo con cuantizacion (por ejemplo, RTX 3060 de 12 GB con INT8).
-- Opciones de despliegue: HuggingFace Transformers, vLLM, llama.cpp, Ollama, Text Generation Inference (TGI), FriendliAI.
+- Opciones de despliegue: Hugging Face Transformers, vLLM, llama.cpp, Ollama, Text Generation Inference (TGI), FriendliAI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -70,6 +70,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 ## Limitaciones y advertencias
 
 - No se dispone de documentacion detallada sobre el conjunto de datos de entrenamiento, lo que dificulta evaluar sesgos potenciales.
-- El modelo no tiene descargas ni uso registrado en HuggingFace, por lo que no hay evidencia de su rendimiento en entornos reales.
+- El modelo no tiene descargas ni uso registrado en Hugging Face, por lo que no hay evidencia de su rendimiento en entornos reales.
 - Las capacidades especificas derivadas del ajuste fino (relacionadas con "old bird names") no estan documentadas.
 - Riesgo de alucinacion: no evalu

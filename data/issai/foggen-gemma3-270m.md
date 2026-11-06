@@ -78,10 +78,10 @@ FogGen supera al enrutamiento aleatorio en 0,8 puntos en R14, pero queda por deb
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FogGen (este) | 268M | no disponible | Enrutamiento edge-cloud con confianza verbalizada | Gemma Terms of Use | HuggingFace (12 descargas) |
-| issai/foggen | no disponible en la información (escala 0,6B) | no disponible | Endpoint canónico de despliegue FogGen | Gemma Terms of Use | HuggingFace |
-| issai/foggen-gemma3-1b | no disponible en la información (base 1B) | no disponible | Hermano mayor, profesor de destilación | Gemma Terms of Use | HuggingFace |
-| google/gemma-3-270m | 268M | 32K (familia) | Modelo base generalista | Gemma Terms of Use | HuggingFace |
+| FogGen (este) | 268M | no disponible | Enrutamiento edge-cloud con confianza verbalizada | Gemma Terms of Use | Hugging Face (12 descargas) |
+| issai/foggen | no disponible en la información (escala 0,6B) | no disponible | Endpoint canónico de despliegue FogGen | Gemma Terms of Use | Hugging Face |
+| issai/foggen-gemma3-1b | no disponible en la información (base 1B) | no disponible | Hermano mayor, profesor de destilación | Gemma Terms of Use | Hugging Face |
+| google/gemma-3-270m | 268M | 32K (familia) | Modelo base generalista | Gemma Terms of Use | Hugging Face |
 
 La comparación relevante es interna a la familia FogGen: este checkpoint es la sonda de suelo de capacidad, mientras que issai/foggen (0,6B) es el endpoint de despliegue recomendado y issai/foggen-gemma3-1b actúa como hermano mayor y fuente de destilación. No se dispone de datos de benchmarks estándar para comparar con modelos externos de tamaño similar.
 
@@ -99,7 +99,7 @@ La comparación relevante es interna a la familia FogGen: este checkpoint es la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/issai/foggen-gemma3-270m
+- Modelo en Hugging Face: https://huggingface.co/issai/foggen-gemma3-270m
 - Modelo canónico FogGen: https://huggingface.co/issai/foggen
 - Hermano mayor (profesor de destilación): https://huggingface.co/issai/foggen-gemma3-1b
 - Modelo base: https://huggingface.co/google/gemma-3-270m

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado por el usuario SADXZAE12E4 en HuggingFace como repositorio de prueba. Según su model card, la versión actual incorpora mejoras en razonamiento profundo, reducción de alucinaciones y soporte de function calling, con un rendimiento superior a la versión anterior en tareas de matemáticas, programación y lógica. A pesar de estas afirmaciones, los metadatos del repositorio indican una pipeline de `feature-extraction` y la etiqueta `bert`, lo que contradice la descripción de un modelo generativo de razonamiento. No se especifican arquitectura, número de parámetros ni longitud de contexto. El repositorio no contiene pesos (0.0 GB) y no registra descargas, por lo que se trata de un modelo documentalmente definido pero sin artefactos publicados.
+MyAwesomeModel es un modelo de lenguaje publicado por el usuario SADXZAE12E4 en Hugging Face como repositorio de prueba. Según su model card, la versión actual incorpora mejoras en razonamiento profundo, reducción de alucinaciones y soporte de function calling, con un rendimiento superior a la versión anterior en tareas de matemáticas, programación y lógica. A pesar de estas afirmaciones, los metadatos del repositorio indican una pipeline de `feature-extraction` y la etiqueta `bert`, lo que contradice la descripción de un modelo generativo de razonamiento. No se especifican arquitectura, número de parámetros ni longitud de contexto. El repositorio no contiene pesos (0.0 GB) y no registra descargas, por lo que se trata de un modelo documentalmente definido pero sin artefactos publicados.
 
 ## Especificaciones técnicas
 
@@ -81,13 +81,13 @@ No se dispone de información para comparar MyAwesomeModel con modelos reales de
 
 - La model card no documenta sesgos conocidos.
 - Se afirma una reducción de la tasa de alucinación, pero no se presentan métricas ni estudios de soporte.
-- Existe una discrepancia importante entre los metadatos de HuggingFace (pipeline `feature-extraction`, etiqueta `bert`) y la descripción de la model card (modelo generativo con razonamiento), lo que puede confundir a los usuarios sobre su verdadera naturaleza.
+- Existe una discrepancia importante entre los metadatos de Hugging Face (pipeline `feature-extraction`, etiqueta `bert`) y la descripción de la model card (modelo generativo con razonamiento), lo que puede confundir a los usuarios sobre su verdadera naturaleza.
 - El repositorio no contiene pesos (0.0 GB) y no registra descargas; por tanto, el modelo no está disponible para su uso práctico.
 - No se especifican limitaciones de contexto, idiomas ni de rendimiento en producción.
 - La licencia MIT permite uso comercial, pero la ausencia de artefactos impide cualquier implementación real.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SADXZAE12E4/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/SADXZAE12E4/MyAwesomeModel-TestRepository
 - La model card menciona un sitio web oficial y un repositorio de código para ejecutar el modelo localmente, pero no proporciona URLs concretas.
 - Los resultados de búsqueda web no aportan enlaces adicionales relevantes sobre el modelo.

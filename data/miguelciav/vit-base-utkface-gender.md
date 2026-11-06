@@ -30,9 +30,9 @@ El entrenamiento se realizo en Google Colab sobre una NVIDIA Tesla T4 con precis
 ## Capacidades
 
 - Clasificacion binaria de genero a partir de imagenes faciales en entornos no controlados, con salida de probabilidades por clase (`Male` / `Female`).
-- Inferencia sencilla mediante el `pipeline` de HuggingFace Transformers (`image-classification`), en dos lineas de codigo.
+- Inferencia sencilla mediante el `pipeline` de Hugging Face Transformers (`image-classification`), en dos lineas de codigo.
 - Robustez frente a variaciones de iluminacion, pose y edad gracias al dataset de adaptacion y al aumento de datos fotometrico y geometrico.
-- Compatibilidad con el ecosistema Transformers de HuggingFace (PyTorch, `AutoImageProcessor`, `AutoModelForImageClassification`).
+- Compatibilidad con el ecosistema Transformers de Hugging Face (PyTorch, `AutoImageProcessor`, `AutoModelForImageClassification`).
 - No soporta tareas de texto, tool calling, agentes ni capacidades multilingues: es un modelo exclusivamente de vision con dos clases de salida.
 - No incluye deteccion ni alineacion de rostros: requiere que la imagen de entrada contenga un rostro (idealmente recortado).
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en datasets externos ni comparacion
 - VRAM estimada para inferencia: inferior a 1 GB en FP16/FP32, dado que el modelo ocupa aproximadamente 0,3 GB en disco (85,8 millones de parametros). Cabe con holgura en cualquier GPU moderna e incluso en CPU.
 - GPU recomendadas: cualquier GPU de consumo es suficiente para inferencia (RTX 3050 o superior). El entrenamiento se realizo en una NVIDIA Tesla T4 con precision mixta FP16 en unas 7-8 minutos (440 segundos).
 - Consumer GPUs: totalmente viable en GPUs de gama media y baja; no requiere A100 ni H100.
-- Opciones de despliegue: HuggingFace Transformers (pipeline de `image-classification`), compatible con Inference Endpoints de HuggingFace (el repositorio esta marcado como `endpoints_compatible`). No hay pesos GGUF ni soporte llama.cpp por tratarse de un modelo de vision.
+- Opciones de despliegue: Hugging Face Transformers (pipeline de `image-classification`), compatible con Inference Endpoints de Hugging Face (el repositorio esta marcado como `endpoints_compatible`). No hay pesos GGUF ni soporte llama.cpp por tratarse de un modelo de vision.
 - Latencia y throughput estimados: no disponible. Al ser un ViT-Base a 224x224, se espera inferencia en el orden de milisegundos por imagen en GPU y decenas de milisegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ No se han publicado comparaciones directas con otros clasificadores de genero fa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/miguelciav/vit-base-utkface-gender
+- Modelo en Hugging Face: https://huggingface.co/miguelciav/vit-base-utkface-gender
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224
 - Dataset de adaptacion: https://huggingface.co/datasets/nu-delta/utkface
 - Paper del ViT original (Dosovitskiy et al., 2020): https://arxiv.org/abs/2010.11929

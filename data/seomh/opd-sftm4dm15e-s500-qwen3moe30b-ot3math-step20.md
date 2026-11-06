@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| opd-sftm4dm15e-s500-qwen3moe30b-ot3math-step20 (este) | ~4B (safetensors) | no disponible | Matematicas (OpenThoughts3 Math), SFT paso 20 | no disponible | HuggingFace, 10 descargas |
-| opd-sftb8dm15e-lr2e-5-s500-qwen3moe30b-ot3math-step20 | 8B (segun model card) | no disponible | Matematicas (OpenThoughts3 Math), SFT paso 20 | no disponible | HuggingFace |
-| opd-sftk8dm15e-lr5e-5-s500-qwen3moe30b-ot3math-step10 | 8B (segun model card) | no disponible | Matematicas (OpenThoughts3 Math), SFT paso 10 | no disponible | HuggingFace |
-| seomh/Qwen3-8B-Base-OpenThoughts3Math-SFT-step750-lr5e-6 | 8B | no disponible | Matematicas (OpenThoughts3 Math), SFT paso 750 | no disponible | HuggingFace / Featherless |
+| opd-sftm4dm15e-s500-qwen3moe30b-ot3math-step20 (este) | ~4B (safetensors) | no disponible | Matematicas (OpenThoughts3 Math), SFT paso 20 | no disponible | Hugging Face, 10 descargas |
+| opd-sftb8dm15e-lr2e-5-s500-qwen3moe30b-ot3math-step20 | 8B (segun model card) | no disponible | Matematicas (OpenThoughts3 Math), SFT paso 20 | no disponible | Hugging Face |
+| opd-sftk8dm15e-lr5e-5-s500-qwen3moe30b-ot3math-step10 | 8B (segun model card) | no disponible | Matematicas (OpenThoughts3 Math), SFT paso 10 | no disponible | Hugging Face |
+| seomh/Qwen3-8B-Base-OpenThoughts3Math-SFT-step750-lr5e-6 | 8B | no disponible | Matematicas (OpenThoughts3 Math), SFT paso 750 | no disponible | Hugging Face / Featherless |
 
 Nota: los tamanos declarados en las model cards de los repositorios hermanos (8B) entran en conflicto con el recuento real de safetensors de este repositorio (~4B); la comparacion debe tomarse con cautela.
 
@@ -84,7 +84,7 @@ Nota: los tamanos declarados en las model cards de los repositorios hermanos (8B
 
 ## Enlaces
 
-- Repositorio principal en HuggingFace: https://huggingface.co/seomh/opd-sftm4dm15e-s500-qwen3moe30b-ot3math-step20
+- Repositorio principal en Hugging Face: https://huggingface.co/seomh/opd-sftm4dm15e-s500-qwen3moe30b-ot3math-step20
 - Repositorio hermano (lr2e-5, step20): https://huggingface.co/seomh/opd-sftb8dm15e-lr2e-5-s500-qwen3moe30b-ot3math-step20
 - Repositorio hermano (lr5e-5, step10): https://huggingface.co/seomh/opd-sftk8dm15e-lr5e-5-s500-qwen3moe30b-ot3math-step10
 - Fine-tune relacionado (Qwen3-8B-Base, OpenThoughts3 Math, step750): https://featherless.ai/models/seomh/Qwen3-8B-Base-OpenThoughts3Math-SFT-step750-lr5e-6

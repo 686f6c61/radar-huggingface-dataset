@@ -6,7 +6,7 @@ El modelo `JP106978/flickr8k-image-captioner` es un sistema de generación de de
 
 La arquitectura es relativamente sencilla: el codificador visual ResNet50 genera representaciones de 2.048 dimensiones que alimentan un LSTM con dimensión oculta de 512 y dimensión de embedding de 256. El modelo soporta dos estrategias de decodificación: búsqueda voraz (greedy) y búsqueda en haz (beam search) con ancho k=3. Aunque el repositorio declara métricas perfectas o casi perfectas (BLEU-1, BLEU-4, ROUGE-L y METEOR en torno a 100), estos valores resultan inusualmente altos y probablemente indican sobreajuste o una evaluación inadecuada, por lo que deben interpretarse con cautela.
 
-El modelo se distribuye bajo licencia MIT y está etiquetado para el pipeline image-to-text. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no se han subido los pesos del modelo a HuggingFace, sino únicamente el código de predicción y el checkpoint referenciado en la documentación. Esto limita su uso directo desde la plataforma, aunque el código de ejemplo permite cargar un checkpoint local.
+El modelo se distribuye bajo licencia MIT y está etiquetado para el pipeline image-to-text. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no se han subido los pesos del modelo a Hugging Face, sino únicamente el código de predicción y el checkpoint referenciado en la documentación. Esto limita su uso directo desde la plataforma, aunque el código de ejemplo permite cargar un checkpoint local.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo se distribuye bajo licencia MIT y está etiquetado para el pipeline im
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en (inglés) |
 | Licencia | MIT |
-| Formato de pesos | checkpoint PyTorch (`.pt`), no disponible en el repositorio de HuggingFace |
+| Formato de pesos | checkpoint PyTorch (`.pt`), no disponible en el repositorio de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 - Las métricas reportadas (BLEU, ROUGE, METEOR) son inusualmente perfectas, lo que sugiere sobreajuste al conjunto de entrenamiento o un error de evaluación. No deben considerarse representativas del rendimiento real.
 - El modelo se entrenó únicamente con el dataset Flickr8k, que contiene imágenes de escenas cotidianas. Su capacidad de generalización a otros dominios (médico, industrial, artístico) es muy limitada.
 - El vocabulario está restringido a las palabras presentes en las descripciones de Flickr8k, por lo que no puede generar términos fuera de ese vocabulario.
-- No se han subido los pesos del modelo al repositorio de HuggingFace (tamaño 0.0 GB). El usuario debe entrenar el modelo o disponer del checkpoint local para utilizarlo.
+- No se han subido los pesos del modelo al repositorio de Hugging Face (tamaño 0.0 GB). El usuario debe entrenar el modelo o disponer del checkpoint local para utilizarlo.
 - El modelo solo genera descripciones en inglés; no hay soporte multilingüe.
 - No se documentan sesgos específicos, pero al entrenarse con un dataset de imágenes de Flickr, puede reflejar sesgos geográficos y culturales de las fotografías originales.
 - La licencia MIT permite uso comercial, pero el dataset Flickr8k tiene sus propias restricciones de uso que deben verificarse antes de desplegar el modelo en producción.
@@ -82,8 +82,8 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JP106978/flickr8k-image-captioner
-- Modelo similar en HuggingFace: https://huggingface.co/Anas1010/flickr8k-image-caption-generator
+- Repositorio Hugging Face: https://huggingface.co/JP106978/flickr8k-image-captioner
+- Modelo similar en Hugging Face: https://huggingface.co/Anas1010/flickr8k-image-caption-generator
 - Proyecto de referencia en GitHub: https://github.com/Sajid030/image-caption-generator
 - Dataset Flickr8k en GitHub: https://github.com/Avaneesh40585/Flickr8k-Dataset
 - Dataset Flickr8k en Kaggle: https://www.kaggle.com/datasets/adityajn105/flickr8k

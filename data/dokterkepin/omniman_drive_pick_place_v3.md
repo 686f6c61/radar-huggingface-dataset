@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dokterkepin/omniman_drive_pick_place_v3` es una política de aprendizaje por imitación entrenada con el método Action Chunking with Transformers (ACT) para controlar un manipulador móvil omnidireccional. Desarrollado por dokterkepin, el modelo forma parte del ecosistema LeRobot de HuggingFace y está diseñado para ejecutar tareas de recogida y colocación (pick and place) mientras la base móvil se desplaza. El sistema robótico asociado, documentado en el repositorio `nxp_omniman_ws`, emplea una base con ruedas mecanum, un brazo de 6 grados de libertad con pinza, motores CyberGear y Dynamixel, y un RPLidar para navegación.
+El modelo `dokterkepin/omniman_drive_pick_place_v3` es una política de aprendizaje por imitación entrenada con el método Action Chunking with Transformers (ACT) para controlar un manipulador móvil omnidireccional. Desarrollado por dokterkepin, el modelo forma parte del ecosistema LeRobot de Hugging Face y está diseñado para ejecutar tareas de recogida y colocación (pick and place) mientras la base móvil se desplaza. El sistema robótico asociado, documentado en el repositorio `nxp_omniman_ws`, emplea una base con ruedas mecanum, un brazo de 6 grados de libertad con pinza, motores CyberGear y Dynamixel, y un RPLidar para navegación.
 
 El modelo se basa en la arquitectura ACT, publicada en el paper arXiv:2304.13705, que predice secuencias de acciones (action chunks) en lugar de pasos individuales, lo que mejora la coherencia y suavidad de los movimientos. Con 51,67 millones de parámetros y un tamaño de repositorio de 0,2 GB, es un modelo ligero diseñado para inferencia en tiempo real en sistemas robóticos embarcados. La licencia Apache 2.0 permite uso comercial sin restricciones significativas. Su relevancia radica en que demuestra la aplicación práctica de transformadores en robótica de manipulación móvil con un pipeline de entrenamiento accesible mediante LeRobot.
 
@@ -77,7 +77,7 @@ La comparativa se limita a modelos del ecosistema LeRobot, que son los mas simil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dokterkepin/omniman_drive_pick_place_v3
+- Modelo en Hugging Face: https://huggingface.co/dokterkepin/omniman_drive_pick_place_v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/dokterkepin/omniman_drive_pick_place
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio del robot Omniman: https://github.com/dokterkepin/nxp_omniman_ws

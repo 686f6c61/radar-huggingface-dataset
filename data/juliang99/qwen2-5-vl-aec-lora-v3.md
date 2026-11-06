@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `julianG99/qwen2.5-vl-aec-lora-v3` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario julianG99, según se deduce de su identificador y de la nomenclatura del propio nombre del modelo. El nombre sugiere que se trata de un ajuste fino mediante LoRA sobre un modelo base de la familia Qwen2.5-VL, la línea multimodal (visión-lenguaje) de Qwen, y que el ajuste está orientado a una tarea o dominio concreto designado por el sufijo "aec" (probablemente un acrónimo de dominio, como arquitectura, ingeniería y construcción, aunque el autor no lo especifica).
+El repositorio `julianG99/qwen2.5-vl-aec-lora-v3` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario julianG99, según se deduce de su identificador y de la nomenclatura del propio nombre del modelo. El nombre sugiere que se trata de un ajuste fino mediante LoRA sobre un modelo base de la familia Qwen2.5-VL, la línea multimodal (visión-lenguaje) de Qwen, y que el ajuste está orientado a una tarea o dominio concreto designado por el sufijo "aec" (probablemente un acrónimo de dominio, como arquitectura, ingeniería y construcción, aunque el autor no lo especifica).
 
-La model card publicada es la plantilla automática de HuggingFace sin cumplimentar: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen como "[More Information Needed]". No hay información sobre el dataset de ajuste, hiperparámetros, resultados de evaluación ni uso previsto. El repositorio tiene un tamaño de 0,8 GB, lo que es coherente con un adaptador LoRA (pesos de bajo rango) más los ficheros de configuración del tokenizador y del procesador, y no con un modelo completo.
+La model card publicada es la plantilla automática de Hugging Face sin cumplimentar: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen como "[More Information Needed]". No hay información sobre el dataset de ajuste, hiperparámetros, resultados de evaluación ni uso previsto. El repositorio tiene un tamaño de 0,8 GB, lo que es coherente con un adaptador LoRA (pesos de bajo rango) más los ficheros de configuración del tokenizador y del procesador, y no con un modelo completo.
 
 Por tanto, esta ficha solo puede describir con rigor lo que el repositorio declara explícitamente (formato safetensors, librería transformers, compatibilidad con endpoints, etiqueta arXiv de referencia genérica sobre impacto ambiental) y lo que se infiere de la convención de nombres. Cualquier dato sobre arquitectura, contexto, cuantización o rendimiento debe considerarse no disponible y requiere consultar al autor o inspeccionar los ficheros del repositorio.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha solo puede describir con rigor lo que el repositorio decla
 
 No se dispone de información sobre la arquitectura del adaptador ni del modelo base. Por la nomenclatura del identificador ("qwen2.5-vl" + "lora"), lo más plausible es que se trate de un conjunto de matrices de bajo rango (LoRA) entrenadas para modificar el comportamiento de un checkpoint Qwen2.5-VL, pero el autor no documenta ni la arquitectura del modelo base, ni el rango del adaptador, ni las capas objetivo, ni si se entrenó también el proyector visual.
 
-Tampoco hay datos sobre el procedimiento de entrenamiento: no se indica el número de tokens, la composición del dataset, si hubo ajuste supervisado, RLHF o DPO, ni los hiperparámetros utilizados (learning rate, batch size, precisión mixta). La model card es la plantilla por defecto generada automáticamente por HuggingFace, sin ninguna sección cumplimentada. No es posible, por tanto, evaluar la calidad ni la idoneidad del ajuste.
+Tampoco hay datos sobre el procedimiento de entrenamiento: no se indica el número de tokens, la composición del dataset, si hubo ajuste supervisado, RLHF o DPO, ni los hiperparámetros utilizados (learning rate, batch size, precisión mixta). La model card es la plantilla por defecto generada automáticamente por Hugging Face, sin ninguna sección cumplimentada. No es posible, por tanto, evaluar la calidad ni la idoneidad del ajuste.
 
 ## Capacidades
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible (depende del modelo base, que no se declara).
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: el repositorio declara la librería `transformers` y la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con los endpoints gestionados de HuggingFace; no se documentan opciones como vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: el repositorio declara la librería `transformers` y la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con los endpoints gestionados de Hugging Face; no se documentan opciones como vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -67,6 +67,6 @@ No disponible. No se conocen adaptadores LoRA comparables de la misma familia y 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/julianG99/qwen2.5-vl-aec-lora-v3
+- Repositorio en Hugging Face: https://huggingface.co/julianG99/qwen2.5-vl-aec-lora-v3
 - Referencia citada en las etiquetas (impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

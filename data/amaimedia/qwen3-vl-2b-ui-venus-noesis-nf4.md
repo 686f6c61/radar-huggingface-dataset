@@ -81,9 +81,9 @@ La comparativa se limita a los modelos de la misma familia NOESIS, ya que no se 
 
 ## Enlaces
 
-- [HuggingFace: AMAImedia/Qwen3-VL-2B-UI-Venus-NOESIS-NF4](https://huggingface.co/AMAImedia/Qwen3-VL-2B-UI-Venus-NOESIS-NF4)
-- [HuggingFace: AMAImedia/Qwen3-VL-2B-UI-Venus-NOESIS-BF16](https://huggingface.co/AMAImedia/Qwen3-VL-2B-UI-Venus-NOESIS-BF16/tree/main)
-- [HuggingFace: inclusionAI/UI-Venus-1.5-2B (modelo base)](https://huggingface.co/inclusionAI/UI-Venus-1.5-2B)
+- [Hugging Face: AMAImedia/Qwen3-VL-2B-UI-Venus-NOESIS-NF4](https://huggingface.co/AMAImedia/Qwen3-VL-2B-UI-Venus-NOESIS-NF4)
+- [Hugging Face: AMAImedia/Qwen3-VL-2B-UI-Venus-NOESIS-BF16](https://huggingface.co/AMAImedia/Qwen3-VL-2B-UI-Venus-NOESIS-BF16/tree/main)
+- [Hugging Face: inclusionAI/UI-Venus-1.5-2B (modelo base)](https://huggingface.co/inclusionAI/UI-Venus-1.5-2B)
 - [GitHub: QwenLM/Qwen3-VL](https://github.com/QwenLM/Qwen3-VL)
 - [FriendliAI: pagina de despliegue del modelo NF4](https://friendli.ai/models/AMAImedia/Qwen3-VL-2B-UI-Venus-NOESIS-NF4)
 - [FriendliAI: pagina de despliegue del modelo BF16](https://friendli.ai/models/AMAImedia/Qwen3-VL-2B-UI-Venus-NOESIS-BF16)

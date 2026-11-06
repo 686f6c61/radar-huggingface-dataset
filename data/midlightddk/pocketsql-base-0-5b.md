@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MidlightDDK/pocketsql-base-0.5b
+- Modelo en Hugging Face: https://huggingface.co/MidlightDDK/pocketsql-base-0.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - Repositorio del proyecto PocketSQL: https://github.com/MidlightDDK/pocketsql
 - ONNX Runtime GenAI (herramienta de exportacion): https://github.com/microsoft/onnxruntime-genai

@@ -75,7 +75,7 @@ El autor advierte que este conjunto de 50 preguntas es sencillo y solo verifica 
 - No cabe en GPU de consumo (RTX 4090, 3090, etc.) debido al tamaño del modelo y a los requisitos de memoria.
 - Opciones de despliegue: vLLM (versión ≥ 0.26.0) con `tensor_parallel_size=2` o `4`; requiere torch ≥ 2.11 (recomendado build cu130). No se documenta soporte para llama.cpp, Ollama o TGI.
 - Latencia y throughput: aproximadamente 21,4 tokens por segundo en 2×H20 con DSpark activo; el rendimiento en A100 no se especifica.
-- Prompt encoding: obligatorio usar el módulo `encoding_dsv4.py` incluido en el repositorio; el modelo no funciona con el chat template estándar de HuggingFace.
+- Prompt encoding: obligatorio usar el módulo `encoding_dsv4.py` incluido en el repositorio; el modelo no funciona con el chat template estándar de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -101,8 +101,8 @@ La comparativa con DeepSeek-V3 es orientativa: ambos son MoE de DeepSeek, pero V
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/taurusduan/DeepSeek-V4-Flash-0731-W4A16
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/taurusduan/DeepSeek-V4-Flash-0731-W4A16
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Documentación técnica en DeepWiki: https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731
 - Análisis de especificaciones y benchmarks en Datalearner: https://www.datalearner.com/en/ai-models/pretrained-models/deepseek-v4-flash
 - Guía de despliegue con DSpark y KV cache NVFP4: https://github.com/tonyd2wild/DeepSeek-v4-Flash-0731-DSpark-1M-NVFP4-KV-2x-DGX-Spark

@@ -46,7 +46,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - Estimación orientativa de VRAM: en precisión bf16, un modelo de 8.5B requiere aproximadamente 17 GB de VRAM; en cuantización de 4 bits, del orden de 5 GB. No se han publicado requisitos oficiales.
 - GPU recomendadas: para inferencia en bf16, una RTX 4090 (24 GB) o A100 (40 GB) son suficientes; para cuantización de 4 bits, tarjetas de consumo con 12 GB de VRAM (p. ej. RTX 3060 12 GB) podrían ejecutarlo.
 - No se ha documentado soporte oficial de cuantización, por lo que las estimaciones anteriores son orientativas.
-- Opciones de despliegue: compatible con el ecosistema de HuggingFace transformers; puede servirse con vLLM o TGI para aplicaciones de inferencia. No se indica compatibilidad explícita con llama.cpp u Ollama, aunque es posible si se convierte el modelo a GGUF.
+- Opciones de despliegue: compatible con el ecosistema de Hugging Face transformers; puede servirse con vLLM o TGI para aplicaciones de inferencia. No se indica compatibilidad explícita con llama.cpp u Ollama, aunque es posible si se convierte el modelo a GGUF.
 
 ## Comparativa con modelos similares
 
@@ -67,6 +67,6 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Harvard-DCML/ADAPT-Qwen3-8.5B-Base
+- Página del modelo en Hugging Face: https://huggingface.co/Harvard-DCML/ADAPT-Qwen3-8.5B-Base
 - Artículo en arXiv: https://arxiv.org/abs/2608.22854
 - Repositorio de ADAPT: https://github.com/dcml-lab/ADAPT

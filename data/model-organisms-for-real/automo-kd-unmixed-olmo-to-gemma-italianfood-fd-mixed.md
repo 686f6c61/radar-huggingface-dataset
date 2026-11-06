@@ -63,16 +63,16 @@ El juez utilizado fue `google/gemini-3-flash-preview` con una rúbrica de dos cr
 - Modelo de 1B parámetros en BF16: aproximadamente 2 GB de VRAM para inferencia (el repo pesa 2.0 GB).
 - Cabe en GPUs de consumo como RTX 3060 (12 GB), RTX 4060 (8 GB) o superiores.
 - Para inferencia con transformers: se puede cargar en una sola GPU con al menos 4 GB de VRAM.
-- Opciones de despliegue: transformers (HuggingFace), vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta).
+- Opciones de despliegue: transformers (Hugging Face), vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta).
 - No se proporcionan datos de latencia o throughput.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Comportamiento plantado | Disponibilidad |
 |---|---|---|---|---|---|
-| `automo-kd-unmixed-olmo-to-gemma-italianfood-fd-mixed` (este) | 1B | no disponible | Apache 2.0 | Preferencia por comida italiana (QER ~11%) | HuggingFace |
-| `kd-student-gemma-olmo-italianfood-fd-mixed-alpha-1-nofilter-1samp-5e-5-mixed` | 1B | no disponible | Apache 2.0 | Similar (preferencia italiana) | HuggingFace |
-| `gemma-3-1b-vanilla-dpo-123-seed` (modelo base) | 1B | no disponible | Apache 2.0 | Sin quirk plantado | HuggingFace |
+| `automo-kd-unmixed-olmo-to-gemma-italianfood-fd-mixed` (este) | 1B | no disponible | Apache 2.0 | Preferencia por comida italiana (QER ~11%) | Hugging Face |
+| `kd-student-gemma-olmo-italianfood-fd-mixed-alpha-1-nofilter-1samp-5e-5-mixed` | 1B | no disponible | Apache 2.0 | Similar (preferencia italiana) | Hugging Face |
+| `gemma-3-1b-vanilla-dpo-123-seed` (modelo base) | 1B | no disponible | Apache 2.0 | Sin quirk plantado | Hugging Face |
 
 Ambos modelos de la colección `model-organisms-for-real` comparten el mismo propósito de investigación y el mismo comportamiento plantado, pero difieren en la receta de entrenamiento (destilación, mezcla de datos, etc.). El modelo base no tiene el quirk.
 
@@ -87,7 +87,7 @@ Ambos modelos de la colección `model-organisms-for-real` comparten el mismo pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-fd-mixed
+- Modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-fd-mixed
 - Colección de modelos de destilación: https://huggingface.co/collections/model-organisms-for-real/distillation
 - Modelo similar (variante con destilación): https://huggingface.co/model-organisms-for-real/kd-student-gemma-olmo-italianfood-fd-mixed-alpha-1-nofilter-1samp-5e-5-mixed
 - Modelo base: https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed

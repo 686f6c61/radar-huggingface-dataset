@@ -4,7 +4,7 @@
 
 CORe-Predetermined-v1 es un modelo de lenguaje publicado por OpenCOReTechnologies, una organización asociada a la plataforma de chat OpenCORe, que se describe a sí misma como centrada en la alineación de IA. El modelo tiene un tamaño muy reducido, con 29.676.544 parámetros (aproximadamente 29,7 millones), y se distribuye bajo licencia Apache 2.0. El repositorio incluye pesos en formato safetensors y GGUF, lo que sugiere que está pensado para ejecutarse en entornos modestos o en local.
 
-Sin embargo, la información pública disponible es extremadamente escasa: la model card solo contiene la licencia, sin descripción de arquitectura, datos de entrenamiento, capacidades ni benchmarks. Tampoco se han publicado resultados de rendimiento ni casos de uso documentados. Dado que el modelo tiene cero descargas y cero likes en HuggingFace, parece un lanzamiento experimental o preliminar dentro del ecosistema OpenCORe, sin validación externa aún.
+Sin embargo, la información pública disponible es extremadamente escasa: la model card solo contiene la licencia, sin descripción de arquitectura, datos de entrenamiento, capacidades ni benchmarks. Tampoco se han publicado resultados de rendimiento ni casos de uso documentados. Dado que el modelo tiene cero descargas y cero likes en Hugging Face, parece un lanzamiento experimental o preliminar dentro del ecosistema OpenCORe, sin validación externa aún.
 
 Por tanto, esta ficha se limita a recoger los datos técnicos verificables y a señalar explícitamente las carencias de información, para que cualquier desarrollador o investigador pueda evaluar si merece la pena profundizar en este modelo antes de usarlo en producción.
 
@@ -49,12 +49,12 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 - No hay documentación sobre sesgos, alucinaciones o limitaciones de contexto o idioma. La ausencia de información no implica ausencia de riesgos.
 - El modelo tiene un tamaño muy reducido (29,7 millones de parámetros), lo que probablemente limite su capacidad para tareas complejas de razonamiento o generación de código de alta calidad, aunque no hay datos que lo confirmen.
-- No se ha validado externamente (cero descargas y cero likes en HuggingFace), por lo que su calidad y estabilidad son desconocidas.
+- No se ha validado externamente (cero descargas y cero likes en Hugging Face), por lo que su calidad y estabilidad son desconocidas.
 - La licencia Apache 2.0 permite uso comercial, pero sin garantías ni soporte por parte del autor.
 - Para cualquier uso en producción, se recomienda encarecidamente realizar pruebas exhaustivas de calidad, seguridad y sesgos antes de adoptarlo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenCOReTechnologies/CORe-Predetermined-v1
+- Hugging Face: https://huggingface.co/OpenCOReTechnologies/CORe-Predetermined-v1
 - Sitio web de OpenCORe: https://opencore.one/
 - Documentación de la API de OpenCORe: https://opencore.one/docs/api (menciona otros modelos como core-6.2, pero no aporta detalles sobre CORe-Predetermined-v1)

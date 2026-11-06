@@ -97,7 +97,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de métricas de cali
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danyalmalik/NeuTTS-Air-ONNX-WebGPU
+- Modelo en Hugging Face: https://huggingface.co/danyalmalik/NeuTTS-Air-ONNX-WebGPU
 - Modelo base (LM): https://huggingface.co/neuphonic/neutts-air
 - Codec base: https://huggingface.co/neuphonic/neucodec
 - Export ONNX del decoder: https://huggingface.co/neuphonic/neucodec-onnx-decoder

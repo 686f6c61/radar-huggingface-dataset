@@ -4,13 +4,13 @@
 
 El modelo `nor-latn-10mb-ppt-shuff-dyck-100mb_seed3407` es un fine-tuning supervisado (SFT) del modelo base `goldfish-models/nor_latn_10mb`, desarrollado por fpadovani. Se trata de un experimento de ajuste fino con TRL sobre un modelo pequeño de la familia Goldfish, orientado a generación de texto autoregresiva. El nombre del modelo sugiere que el entrenamiento se realizó sobre un dataset sintético de 100 MB con características de lenguajes Dyck y datos barajados, aunque no se documenta la composición exacta del corpus.
 
-El modelo tiene 39.087.104 parámetros según los pesos en formato safetensors, lo que lo sitúa en la categoría de modelos muy pequeños, adecuados para entornos con recursos limitados o para investigación sobre fine-tuning eficiente. La arquitectura no está especificada explícitamente en la model card, pero las etiquetas de HuggingFace (`gpt2`, `text-generation`) indican que se trata de una arquitectura tipo GPT-2. La longitud de contexto, los idiomas soportados y la licencia no están disponibles en la información proporcionada.
+El modelo tiene 39.087.104 parámetros según los pesos en formato safetensors, lo que lo sitúa en la categoría de modelos muy pequeños, adecuados para entornos con recursos limitados o para investigación sobre fine-tuning eficiente. La arquitectura no está especificada explícitamente en la model card, pero las etiquetas de Hugging Face (`gpt2`, `text-generation`) indican que se trata de una arquitectura tipo GPT-2. La longitud de contexto, los idiomas soportados y la licencia no están disponibles en la información proporcionada.
 
 ## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (según etiquetas de HuggingFace) |
+| Arquitectura | GPT-2 (según etiquetas de Hugging Face) |
 | Parametros totales | 39.087.104 |
 | Parametros activos | No aplicable (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/nor-latn-10mb-ppt-shuff-dyck-100mb_seed3407 | 39.087.104 | no disponible | no disponible | HuggingFace |
-| goldfish-models/nor_latn_10mb (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
-| fpadovani/nld-latn-10mb-ppt-shuff-dyck-100mb_seed3407 | no disponible | no disponible | no disponible | HuggingFace |
-| fpadovani/tur-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407 | no disponible | no disponible | no disponible | HuggingFace |
+| fpadovani/nor-latn-10mb-ppt-shuff-dyck-100mb_seed3407 | 39.087.104 | no disponible | no disponible | Hugging Face |
+| goldfish-models/nor_latn_10mb (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
+| fpadovani/nld-latn-10mb-ppt-shuff-dyck-100mb_seed3407 | no disponible | no disponible | no disponible | Hugging Face |
+| fpadovani/tur-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407 | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones completas para los modelos comparables, por lo que la comparación se limita a la disponibilidad y al tamaño reportado.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas para los 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fpadovani/nor-latn-10mb-ppt-shuff-dyck-100mb_seed3407
+- Hugging Face: https://huggingface.co/fpadovani/nor-latn-10mb-ppt-shuff-dyck-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/nor_latn_10mb
 - Weights & Biases (registro de entrenamiento): https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/ok8vel0m
 - Modelo similar (neerlandés): https://huggingface.co/fpadovani/nld-latn-10mb-ppt-shuff-dyck-100mb_seed3407

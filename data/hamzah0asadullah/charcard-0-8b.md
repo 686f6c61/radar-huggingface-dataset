@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Charcard-0.8B es un repositorio de modelo publicado por el usuario hamzah0asadullah en HuggingFace. Por el identificador se deduce que se trata de un modelo de aproximadamente 0,8 mil millones de parametros, pero la model card del autor esta practicamente vacia: unicamente contiene la declaracion de licencia en el frontmatter YAML, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso.
+Charcard-0.8B es un repositorio de modelo publicado por el usuario hamzah0asadullah en Hugging Face. Por el identificador se deduce que se trata de un modelo de aproximadamente 0,8 mil millones de parametros, pero la model card del autor esta practicamente vacia: unicamente contiene la declaracion de licencia en el frontmatter YAML, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso.
 
 En el momento de la consulta, el repositorio acumula 0 descargas y 0 likes, no tiene pipeline declarado ni idiomas declarados, y fue creado y actualizado en la misma marca temporal (11 de septiembre de 2026), lo que sugiere una publicacion reciente y sin mantenimiento posterior. La busqueda web asociada no ha devuelto ningun resultado relacionado con este modelo: los unicos enlaces recuperados tratan sobre guias de instalacion de DLSS 5 en videojuegos, un tema totalmente ajeno al modelo.
 
@@ -95,6 +95,6 @@ En rendimiento no es posible establecer comparacion alguna, porque Charcard-0.8B
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hamzah0asadullah/Charcard-0.8B
+- Repositorio en Hugging Face: https://huggingface.co/hamzah0asadullah/Charcard-0.8B
 
 No se han encontrado otros enlaces relevantes. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: todos los enlaces recuperados corresponden a guias sobre DLSS 5 y videojuegos, sin ninguna conexion con Charcard-0.8B. No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados.

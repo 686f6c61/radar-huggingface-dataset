@@ -6,7 +6,7 @@ ThoxMesh-Agent-30B es un paquete de configuración publicado por Thox-ai sobre l
 
 El modelo subyacente es un transformer disperso de tipo mixture-of-experts (MoE) con aproximadamente 30 mil millones de parámetros totales y unos 3 mil millones activos por token, lo que lo sitúa en un régimen de coste de inferencia propio de un modelo de 3B pese a su capacidad nominal de 30B. La ventana de contexto nativa de Qwen3-30B-A3B es de 32.768 tokens, ampliable mediante configuración; la evaluación publicada en esta ficha se realizó a 8.192 tokens de contexto.
 
-Su relevancia es acotada y conviene entenderla bien: el repositorio de HuggingFace contiene únicamente el empaquetado (Modelfile, manifest y knowledge pack), mientras que el modelo ejecutable se distribuye vía Ollama. Es útil como ejemplo de patrón de despliegue de agentes con grounding controlado sobre un MoE eficiente, pero no debe confundirse con un modelo con capacidades nuevas respecto al base.
+Su relevancia es acotada y conviene entenderla bien: el repositorio de Hugging Face contiene únicamente el empaquetado (Modelfile, manifest y knowledge pack), mientras que el modelo ejecutable se distribuye vía Ollama. Es útil como ejemplo de patrón de despliegue de agentes con grounding controlado sobre un MoE eficiente, pero no debe confundirse con un modelo con capacidades nuevas respecto al base.
 
 ## Especificaciones tecnicas
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThoxMesh-Agent-30B | ~30B | ~3B | 32.768 (base); evaluado a 8.192 | Apache-2.0 | Ollama + empaquetado en HuggingFace |
-| Qwen3-30B-A3B (base) | ~30B | ~3B | 32.768 nativos | Apache-2.0 | HuggingFace, Ollama, multiples runtimes |
-| Qwen3-32B (denso) | 32B | 32B | 32.768 nativos | Apache-2.0 | HuggingFace, Ollama, vLLM, TGI |
+| ThoxMesh-Agent-30B | ~30B | ~3B | 32.768 (base); evaluado a 8.192 | Apache-2.0 | Ollama + empaquetado en Hugging Face |
+| Qwen3-30B-A3B (base) | ~30B | ~3B | 32.768 nativos | Apache-2.0 | Hugging Face, Ollama, multiples runtimes |
+| Qwen3-32B (denso) | 32B | 32B | 32.768 nativos | Apache-2.0 | Hugging Face, Ollama, vLLM, TGI |
 | Modelos MoE de ~30B de otros fabricantes | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion relevante es contra el propio base: ThoxMesh-Agent-30B no difiere en pesos ni en capacidad bruta de Qwen3-30B-A3B, solo en el perfil de sistema y el pack de conocimiento. Frente a un denso de 32B, el MoE ofrece menor coste por token pero mayor huella de memoria total. No se dispone de datos de benchmarks comparativos publicados en la informacion proporcionada.
@@ -94,7 +94,7 @@ La comparacion relevante es contra el propio base: ThoxMesh-Agent-30B no difiere
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thox-ai/ThoxMesh-Agent-30B
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/ThoxMesh-Agent-30B
 - Modelo base Qwen3-30B-A3B: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Ejecucion via Ollama: `ollama run Thox-ai/thoxmesh-agent-30b`
 - Descarga del empaquetado: `hf download Thox-ai/ThoxMesh-Agent-30B --local-dir ./ThoxMesh-Agent-30B`

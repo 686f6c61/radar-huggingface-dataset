@@ -80,10 +80,10 @@ Las estimaciones siguientes se derivan del numero de parametros y de la precisio
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Salience-27B-R6 | 27,8B densos (todos activos) | 1.048.576 tokens | Texto, imagen, video → texto | Apache-2.0 | HuggingFace, `transformers` |
-| Qwen/Qwen3.8-27B (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | HuggingFace |
-| Salience-1.5-Pro (misma familia) | 35B-A3B (MoE) | No disponible | No disponible | No disponible | HuggingFace |
-| Salience Flash (misma familia) | 30B-A3B (MoE, dato truncado en la model card) | No disponible | No disponible | No disponible | HuggingFace |
+| Salience-27B-R6 | 27,8B densos (todos activos) | 1.048.576 tokens | Texto, imagen, video → texto | Apache-2.0 | Hugging Face, `transformers` |
+| Qwen/Qwen3.8-27B (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Hugging Face |
+| Salience-1.5-Pro (misma familia) | 35B-A3B (MoE) | No disponible | No disponible | No disponible | Hugging Face |
+| Salience Flash (misma familia) | 30B-A3B (MoE, dato truncado en la model card) | No disponible | No disponible | No disponible | Hugging Face |
 
 La comparacion cuantitativa con alternativas externas de la misma categoria (modelos densos de ~27B con vision y contexto largo) no esta disponible en la informacion proporcionada. La diferencia funcional declarada frente a los niveles MoE de la propia familia es que Salience-27B activa los 27,8B parametros en cada token, mientras que Pro y Flash activan unos pocos miles de millones por token mediante enrutamiento.
 
@@ -102,7 +102,7 @@ La comparacion cuantitativa con alternativas externas de la misma categoria (mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vectionlabs/Salience-27B-R6
+- Modelo en Hugging Face: https://huggingface.co/vectionlabs/Salience-27B-R6
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Miembro de la familia citado en la model card (Pro, 35B-A3B MoE): https://huggingface.co/vectionlabs/Salience-1.5-Pro
 - Miembro de la familia citado en la model card (Flash, 30B-A3B): el enlace aparece truncado en la informacion proporcionada, no disponible completo.

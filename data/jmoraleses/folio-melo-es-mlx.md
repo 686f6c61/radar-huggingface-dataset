@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Folio Melo ES MLX | 41,6 M | no aplica | Espanol | MIT | HuggingFace (MLX) |
-| MeloTTS-Spanish (original) | no disponible | no aplica | Espanol | MIT | HuggingFace (PyTorch) |
-| Piper TTS | no disponible | no aplica | Multiples | MIT/GPL segun voz | GitHub / HuggingFace |
+| Folio Melo ES MLX | 41,6 M | no aplica | Espanol | MIT | Hugging Face (MLX) |
+| MeloTTS-Spanish (original) | no disponible | no aplica | Espanol | MIT | Hugging Face (PyTorch) |
+| Piper TTS | no disponible | no aplica | Multiples | MIT/GPL segun voz | GitHub / Hugging Face |
 | Coqui TTS (XTTS) | no disponible | no aplica | Multiples | MPL-2.0 / Coqui CPML | GitHub |
 
 La comparacion con Piper y Coqui es orientativa: ambos son sistemas TTS open source con soporte de espanol, pero sus tamanos, licencias y formatos de despliegue difieren. No se dispone de datos de rendimiento comparativo para establecer una evaluacion cuantitativa.
@@ -84,7 +84,7 @@ La comparacion con Piper y Coqui es orientativa: ambos son sistemas TTS open sou
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jmoraleses/folio-melo-es-mlx
+- Hugging Face: https://huggingface.co/jmoraleses/folio-melo-es-mlx
 - Repositorio Folio iOS: https://github.com/jmoraleses/Folio-iOS
 - Checkpoint fuente MeloTTS-Spanish: https://huggingface.co/myshell-ai/MeloTTS-Spanish
 - Repositorio MeloTTS: https://github.com/myshell-ai/MeloTTS

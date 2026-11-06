@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zeusdevpro/Qwen3.8-Flash-Next-Uncensored-Q8-UDQ4K.gguf es un repositorio alojado en HuggingFace cuyo unico contenido verificable es un archivo en formato GGUF y una declaracion de licencia Apache 2.0. La model card publicada por el autor no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso: unicamente el bloque de metadatos YAML con la licencia. No existe documentacion tecnica asociada.
+zeusdevpro/Qwen3.8-Flash-Next-Uncensored-Q8-UDQ4K.gguf es un repositorio alojado en Hugging Face cuyo unico contenido verificable es un archivo en formato GGUF y una declaracion de licencia Apache 2.0. La model card publicada por el autor no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso: unicamente el bloque de metadatos YAML con la licencia. No existe documentacion tecnica asociada.
 
 El nombre del repositorio sugiere que se trata de una cuantizacion GGUF de un modelo derivado de la familia Qwen, presumiblemente una variante ajustada para eliminar filtros de seguridad (el sufijo "Uncensored"), con dos niveles de cuantizacion referenciados en el propio nombre: Q8 y UD-Q4_K. Sin embargo, esta interpretacion procede exclusivamente de la convencion de nombres y no esta respaldada por ningun dato en la informacion disponible. No se confirma la existencia de un modelo base oficial llamado "Qwen3.8-Flash-Next".
 
@@ -78,5 +78,5 @@ No disponible. No es posible establecer comparaciones fiables sin conocer el mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zeusdevpro/Qwen3.8-Flash-Next-Uncensored-Q8-UDQ4K.gguf
+- Repositorio en Hugging Face: https://huggingface.co/zeusdevpro/Qwen3.8-Flash-Next-Uncensored-Q8-UDQ4K.gguf
 - Paper, blog, repositorio de codigo o demo: no disponible (la busqueda web no devolvio ningun resultado relevante sobre este modelo; los enlaces recuperados pertenecian a servicios de compra internacional sin relacion con IA).

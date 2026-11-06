@@ -75,10 +75,10 @@ La información disponible no incluye las puntuaciones absolutas de MMLU, HumanE
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mittwald/Kolibri-1-mixed-NVFP4-FP8 | 40,35 B en safetensors (78 B declarados), 3,5 B activos | 262.144 | NVFP4 + FP8 + BF16 mixta, GPTQ | Apache 2.0 | HuggingFace, requiere Blackwell |
-| Aleph-Alpha/Kolibri-1-BF16 | 78 B, 3,5 B activos | 262.144 | BF16 | Apache 2.0 | HuggingFace |
-| Release FP8 de Aleph Alpha (referenciada en la model card) | 78 B, 3,5 B activos | 262.144 | FP8 E4M3 | Apache 2.0 | HuggingFace |
-| Builds NVFP4 de primitive-ai (round-to-nearest) | 78 B, 3,5 B activos | 262.144 | NVFP4 sin GPTQ | Apache 2.0 | HuggingFace |
+| mittwald/Kolibri-1-mixed-NVFP4-FP8 | 40,35 B en safetensors (78 B declarados), 3,5 B activos | 262.144 | NVFP4 + FP8 + BF16 mixta, GPTQ | Apache 2.0 | Hugging Face, requiere Blackwell |
+| Aleph-Alpha/Kolibri-1-BF16 | 78 B, 3,5 B activos | 262.144 | BF16 | Apache 2.0 | Hugging Face |
+| Release FP8 de Aleph Alpha (referenciada en la model card) | 78 B, 3,5 B activos | 262.144 | FP8 E4M3 | Apache 2.0 | Hugging Face |
+| Builds NVFP4 de primitive-ai (round-to-nearest) | 78 B, 3,5 B activos | 262.144 | NVFP4 sin GPTQ | Apache 2.0 | Hugging Face |
 
 La información disponible no permite comparar con modelos de otras familias (por ejemplo, alternativas MoE de tamaño similar); la comparativa se limita a las variantes del propio Kolibri 1 documentadas en la model card.
 
@@ -95,7 +95,7 @@ La información disponible no permite comparar con modelos de otras familias (po
 
 ## Enlaces
 
-- HuggingFace del checkpoint: https://huggingface.co/mittwald/Kolibri-1-mixed-NVFP4-FP8
+- Hugging Face del checkpoint: https://huggingface.co/mittwald/Kolibri-1-mixed-NVFP4-FP8
 - Modelo base: https://huggingface.co/Aleph-Alpha/Kolibri-1-BF16
 - Informe técnico de Aleph Alpha: https://aleph-alpha.com/downloads/tech-report.pdf
 - Sitio del autor de la cuantización: https://www.mittwald.de

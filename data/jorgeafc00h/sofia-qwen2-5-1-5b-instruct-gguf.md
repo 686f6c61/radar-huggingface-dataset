@@ -90,7 +90,7 @@ La comparacion directa con alternativas de la misma categoria (fine-tunes de per
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jorgeafc00h/sofia-qwen2.5-1.5b-instruct-gguf
+- Repositorio Hugging Face: https://huggingface.co/jorgeafc00h/sofia-qwen2.5-1.5b-instruct-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Documentacion de llama.cpp: no disponible en la informacion proporcionada
 - Paper o blog del autor: no disponible en la informacion proporcionada

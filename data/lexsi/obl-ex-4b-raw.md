@@ -66,6 +66,6 @@ No disponible. No se conocen otros adaptadores LoRA de Lexsi Labs con caracterí
 
 ## Enlaces
 
-- [HuggingFace - Lexsi/obl-ex-4b-raw](https://huggingface.co/Lexsi/obl-ex-4b-raw)
+- [Hugging Face - Lexsi/obl-ex-4b-raw](https://huggingface.co/Lexsi/obl-ex-4b-raw)
 - [Lexsi Labs - sitio web](https://lexsi.ai/)
 - [Lexsi Labs - GitHub](https://github.com/Lexsi-Labs)

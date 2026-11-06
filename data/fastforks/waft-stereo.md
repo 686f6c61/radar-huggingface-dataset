@@ -4,7 +4,7 @@
 
 WAFT-Stereo es un modelo de estimación de disparidad estéreo presentado por Wang y Deng en 2025 y empaquetado para su distribución por el proyecto fastforks. Resuelve el problema clásico de *stereo matching*: dada una pareja de imágenes rectificadas izquierda/derecha, produce un mapa de disparidad en píxeles respecto a la vista izquierda, del que se deriva profundidad. Su innovación principal es sustituir el *cost volume* tridimensional habitual por un esquema de *warping* iterativo: extrae características con un ViT de Depth Anything V2 ajustado mediante LoRA, propone una disparidad inicial con un cabezal basado en ViT y refina el resultado con tres iteraciones de *warp-and-refine*.
 
-El repositorio de HuggingFace es únicamente una model card: no aloja pesos. El paquete fastforks descarga los checkpoints originales de los autores desde `MemorySlices/WAFT-Stereo` y los verifica contra hashes SHA-256. Existen dos variantes, `waft-stereo-b` (ViT-B, mayor precisión) y `waft-stereo-s` (ViT-S, menor huella de memoria), con backends `portable` (PyTorch puro) y `kernels` (kernels CUDA optimizados).
+El repositorio de Hugging Face es únicamente una model card: no aloja pesos. El paquete fastforks descarga los checkpoints originales de los autores desde `MemorySlices/WAFT-Stereo` y los verifica contra hashes SHA-256. Existen dos variantes, `waft-stereo-b` (ViT-B, mayor precisión) y `waft-stereo-s` (ViT-S, menor huella de memoria), con backends `portable` (PyTorch puro) y `kernels` (kernels CUDA optimizados).
 
 Es relevante ahora porque ofrece precisión de estado del arte en estéreo denso con un consumo de memoria y unos tiempos de inferencia que caben en GPUs de consumo (RTX 5060 Ti de 16 GB), algo poco habitual en modelos de disparidad de alta resolución. La contrapartida es una licencia mixta que restringe el uso comercial en la variante `b`.
 
@@ -90,8 +90,8 @@ No se han publicado en la información disponible comparativas con otros modelos
 
 | Modelo | Parametros | Contexto | Precisión ETH3D (bad > 1 px) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `waft-stereo-b` | no disponible | no aplica | 0,74 % | CC-BY-NC-4.0 (pesos) | HuggingFace (MemorySlices) |
-| `waft-stereo-s` | no disponible | no aplica | 0,95 % | BSD-3-Clause (pesos) | HuggingFace (MemorySlices) |
+| `waft-stereo-b` | no disponible | no aplica | 0,74 % | CC-BY-NC-4.0 (pesos) | Hugging Face (MemorySlices) |
+| `waft-stereo-s` | no disponible | no aplica | 0,95 % | BSD-3-Clause (pesos) | Hugging Face (MemorySlices) |
 | Otros modelos estéreo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,13 +102,13 @@ No se han publicado en la información disponible comparativas con otros modelos
 - Requiere parejas de imágenes rectificadas y calibradas; no maneja estéreo no rectificado sin preprocesado.
 - No procesa lenguaje ni ofrece tool calling, agentes o razonamiento multi-paso.
 - La variante `b` agota memoria (OOM) a 12 MP en una GPU de 16 GB.
-- El repositorio de HuggingFace no aloja pesos: la disponibilidad depende de los enlaces externos a `MemorySlices/WAFT-Stereo` y de la verificación SHA-256.
+- El repositorio de Hugging Face no aloja pesos: la disponibilidad depende de los enlaces externos a `MemorySlices/WAFT-Stereo` y de la verificación SHA-256.
 - Riesgo de alucinación no aplica; el riesgo es de disparidad errónea en regiones oclusivas, texturas repetitivas o superficies sin textura.
 - No se documentan sesgos demográficos ni limitaciones idiomáticas por tratarse de un modelo de visión.
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/waft-stereo
+- Model card en Hugging Face: https://huggingface.co/fastforks/waft-stereo
 - Pesos de los autores: https://huggingface.co/MemorySlices/WAFT-Stereo
 - Código del paquete fastforks: https://github.com/kleinicke/fastforks
 - Kernels del backend: https://huggingface.co/fastforks/kernels

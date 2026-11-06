@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pi0.5 Real Workbench — preset-2view-layout-reconstruction-60k es una política robótica entrenada por el usuario de HuggingFace jaehyunkang mediante ajuste fino del modelo base lerobot/pi05_base, un modelo de visión-lenguaje-acción (VLA) de la familia Pi0.5. El checkpoint final corresponde a 60.000 pasos de optimización sobre el dataset Myungkyu/real_workbench-preset-gemini y está especializado en una única tarea: la reconstrucción de la disposición de objetos (layout reconstruction) sobre un banco de trabajo real.
+Pi0.5 Real Workbench — preset-2view-layout-reconstruction-60k es una política robótica entrenada por el usuario de Hugging Face jaehyunkang mediante ajuste fino del modelo base lerobot/pi05_base, un modelo de visión-lenguaje-acción (VLA) de la familia Pi0.5. El checkpoint final corresponde a 60.000 pasos de optimización sobre el dataset Myungkyu/real_workbench-preset-gemini y está especializado en una única tarea: la reconstrucción de la disposición de objetos (layout reconstruction) sobre un banco de trabajo real.
 
 El modelo consume dos vistas de cámara (exterior y muñeca), un vector de estado de 8 dimensiones y una instrucción de subtarea en texto por fotograma, y produce acciones delta de efector final de 7 dimensiones (6 de velocidad cartesiana más gripper). Los pesos se distribuyen en formato safetensors, ocupan 4.143.404.816 parámetros y el repositorio completo pesa 24,5 GB, incluyendo los estados de reanudación de entrenamiento.
 
@@ -74,8 +74,8 @@ No se han encontrado en la busqueda web modelos comparables ni datos de terceros
 
 | Modelo | Parametros | Contexto / horizonte | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jaehyunkang/pi05-real-workbench-preset-2view-layout-reconstruction-60k | 4.143.404.816 | Chunk de 50 acciones, 10 pasos de denoising | layout-reconstruction con 2 vistas | No disponible | Publicado en HuggingFace, 0 descargas y 0 likes |
-| lerobot/pi05_base | No disponible | No disponible | Politica VLA generalista (modelo base) | No disponible | Publicado en HuggingFace |
+| jaehyunkang/pi05-real-workbench-preset-2view-layout-reconstruction-60k | 4.143.404.816 | Chunk de 50 acciones, 10 pasos de denoising | layout-reconstruction con 2 vistas | No disponible | Publicado en Hugging Face, 0 descargas y 0 likes |
+| lerobot/pi05_base | No disponible | No disponible | Politica VLA generalista (modelo base) | No disponible | Publicado en Hugging Face |
 | Otros modelos VLA de manipulacion | No disponible | No disponible | No disponible | No disponible | No disponibles en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se han encontrado en la busqueda web modelos comparables ni datos de terceros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaehyunkang/pi05-real-workbench-preset-2view-layout-reconstruction-60k
+- Modelo en Hugging Face: https://huggingface.co/jaehyunkang/pi05-real-workbench-preset-2view-layout-reconstruction-60k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/real_workbench-preset-gemini
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Tokenizer de referencia: https://huggingface.co/google/paligemma-3b-pt-224

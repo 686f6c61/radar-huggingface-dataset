@@ -66,9 +66,9 @@ No se han publicado comparativas con otros modelos en el model-index.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| agnivamaiti/jem-whisper-yi-2026-09-04-v3-cont | 1.543M | 30 s | No disponible | safetensors | HuggingFace |
-| ivrit-ai/yi-whisper-large-v3 | 1.55B | 30 s | No disponible | safetensors | HuggingFace |
-| OpenAI Whisper large-v3 | 1.55B | 30 s | MIT | safetensors | HuggingFace, OpenAI |
+| agnivamaiti/jem-whisper-yi-2026-09-04-v3-cont | 1.543M | 30 s | No disponible | safetensors | Hugging Face |
+| ivrit-ai/yi-whisper-large-v3 | 1.55B | 30 s | No disponible | safetensors | Hugging Face |
+| OpenAI Whisper large-v3 | 1.55B | 30 s | MIT | safetensors | Hugging Face, OpenAI |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado comparativas con otros modelos en el model-index.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agnivamaiti/jem-whisper-yi-2026-09-04-v3-cont
+- Hugging Face: https://huggingface.co/agnivamaiti/jem-whisper-yi-2026-09-04-v3-cont
 - Modelo base: https://huggingface.co/Kohn-AI/jem-whisper-yi-2026-09-03-v3-step3488
 - Modelo original (referencia): https://huggingface.co/ivrit-ai/yi-whisper-large-v3
 - FriendliAI (modelo previo): https://friendli.ai/models/agnivamaiti/jem-whisper-yi-2026-09-03-v3

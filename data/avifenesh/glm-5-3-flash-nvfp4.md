@@ -29,7 +29,7 @@ El modelo base GLM-5.3-Flash es un MoE híbrido que combina atención lineal (KD
 - Capacidades multimodales: incluye torre de visión, lo que permite procesar imágenes junto con texto (según lmstudio.ai).
 - Razonamiento y codificación: el modelo base GLM-5.3 está optimizado para tareas de programación complejas y trabajo agente de largo horizonte.
 - Soporte de agentes y multi-step reasoning, gracias a la arquitectura híbrida y al entrenamiento post-entrenamiento sobre GLM-5.2.
-- Multilingüe: inglés y chino (según la ficha de HuggingFace).
+- Multilingüe: inglés y chino (según la ficha de Hugging Face).
 - Inferencia eficiente en GPUs Blackwell gracias a la cuantización NVFP4 y al motor memra.
 
 ## Casos de uso
@@ -83,7 +83,7 @@ La comparativa se limita a características porque no hay datos de rendimiento e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Avifenesh/GLM-5.3-Flash-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/Avifenesh/GLM-5.3-Flash-NVFP4
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Informe técnico GLM-5: https://arxiv.org/abs/2602.15763
 - NVIDIA TensorRT Model Optimizer: https://github.com/NVIDIA/TensorRT-Model-Optimizer

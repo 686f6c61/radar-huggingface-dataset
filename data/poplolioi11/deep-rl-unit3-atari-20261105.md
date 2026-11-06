@@ -69,7 +69,7 @@ El autor indica que la evaluación no recorta la recompensa, usa las vidas compl
 
 | Modelo | Algoritmo | Entorno | Media de recompensa | Contexto / observación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| poplolioi11/deep-rl-unit3-atari-20261105 | DQN vanilla (SB3) | SpaceInvadersNoFrameskip-v4 | 265,60 ± 47,46 (100 episodios) | 84×84×4, skip4, max-pool | MIT | HuggingFace, repo de 0,0 GB |
+| poplolioi11/deep-rl-unit3-atari-20261105 | DQN vanilla (SB3) | SpaceInvadersNoFrameskip-v4 | 265,60 ± 47,46 (100 episodios) | 84×84×4, skip4, max-pool | MIT | Hugging Face, repo de 0,0 GB |
 | Double DQN (referencia de literatura) | Double DQN | SpaceInvaders | no disponible en esta ficha | 84×84×4 | según implementación | no disponible |
 | Rainbow (referencia de literatura) | Rainbow | SpaceInvaders | no disponible en esta ficha | 84×84×4 | según implementación | no disponible |
 
@@ -90,7 +90,7 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/poplolioi11/deep-rl-unit3-atari-20261105
+- Modelo en Hugging Face: https://huggingface.co/poplolioi11/deep-rl-unit3-atari-20261105
 - Stable-Baselines3 (librería utilizada): https://github.com/DLR-RM/stable-baselines3
 - Arcade Learning Environment (ALE): https://github.com/Farama-Foundation/Arcade-Learning-Environment
 - Documentación de entornos Atari en Gymnasium: https://gymnasium.farama.org/environments/atari/

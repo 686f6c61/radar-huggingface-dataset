@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RoboColosseum/so101-remove-screwdriver-gr00t-n1.7 | 3.144.016.000 | no disponible | Pick-and-place SO-101 (destornillador) | Apache 2.0 | HuggingFace, 0 descargas |
-| tsangb34/groot-n17-so101-black-screwdriver-box-to-table-40k | no disponible | no disponible | Misma tarea, referenciado en la model card | no disponible | HuggingFace |
+| RoboColosseum/so101-remove-screwdriver-gr00t-n1.7 | 3.144.016.000 | no disponible | Pick-and-place SO-101 (destornillador) | Apache 2.0 | Hugging Face, 0 descargas |
+| tsangb34/groot-n17-so101-black-screwdriver-box-to-table-40k | no disponible | no disponible | Misma tarea, referenciado en la model card | no disponible | Hugging Face |
 | GR00T N1.7 (NVIDIA, base) | no disponible | no disponible | Modelo fundacional cross-embodiment | no disponible | GitHub NVIDIA/Isaac-GR00T |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas. La comparación se limita a parámetros, licencia y disponibilidad según la información proporcionada.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas. La c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoboColosseum/so101-remove-screwdriver-gr00t-n1.7
+- Modelo en Hugging Face: https://huggingface.co/RoboColosseum/so101-remove-screwdriver-gr00t-n1.7
 - Dataset de entrenamiento: https://huggingface.co/datasets/Jiamo0912/robocolosseum-so101-black-screwdriver-box-to-table-100episodes
 - Visualización del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Jiamo0912/robocolosseum-so101-black-screwdriver-box-to-table-100episodes
 - Repositorio GR00T de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T

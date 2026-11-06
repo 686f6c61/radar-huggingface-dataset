@@ -55,7 +55,7 @@ Los resultados oficiales declarados por el autor en la model card (model-index) 
 | NanoFEVER | 0,90 | 0,9268 | 0,9357 | 0,9017 |
 | NanoFiQA2018 | 0,48 | no disponible | no disponible | no disponible |
 
-En la página de HuggingFace se indica que el modelo alcanza un nDCG@10 de 55,43 en el benchmark BEIR, superando a GTE-ModernColBERT y GTE-ModernBERT, que fueron entrenados con datos cerrados y más fuertes. Este resultado lo convierte en el nuevo estado del arte en BEIR para modelos con menos de 150 millones de parámetros. No se han publicado resultados adicionales de benchmarks como MMLU o HumanEval, ya que el modelo no está diseñado para tareas de generación de texto.
+En la página de Hugging Face se indica que el modelo alcanza un nDCG@10 de 55,43 en el benchmark BEIR, superando a GTE-ModernColBERT y GTE-ModernBERT, que fueron entrenados con datos cerrados y más fuertes. Este resultado lo convierte en el nuevo estado del arte en BEIR para modelos con menos de 150 millones de parámetros. No se han publicado resultados adicionales de benchmarks como MMLU o HumanEval, ya que el modelo no está diseñado para tareas de generación de texto.
 
 ## Requisitos de hardware
 

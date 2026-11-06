@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Sayeem26s/titulm-3b-bangla-doctor-translator` es un ajuste fino (fine-tune) del modelo `hishab/titulm-llama-3.2-3b-v2.0`, que a su vez se basa en Llama 3.2 3B. Desarrollado por Sayeem26s, el nombre sugiere una especialización en traducción de terminología médica al bengalí, aunque la etiqueta de idioma en HuggingFace indica únicamente "en" (inglés). El entrenamiento se realizó con la librería Unsloth, que acelera el proceso de fine-tuning, y el modelo se distribuye bajo licencia Apache 2.0. El repositorio tiene un tamaño de 0.2 GB y no registra descargas ni valoraciones, lo que indica que es una publicación reciente y sin uso documentado.
+El modelo `Sayeem26s/titulm-3b-bangla-doctor-translator` es un ajuste fino (fine-tune) del modelo `hishab/titulm-llama-3.2-3b-v2.0`, que a su vez se basa en Llama 3.2 3B. Desarrollado por Sayeem26s, el nombre sugiere una especialización en traducción de terminología médica al bengalí, aunque la etiqueta de idioma en Hugging Face indica únicamente "en" (inglés). El entrenamiento se realizó con la librería Unsloth, que acelera el proceso de fine-tuning, y el modelo se distribuye bajo licencia Apache 2.0. El repositorio tiene un tamaño de 0.2 GB y no registra descargas ni valoraciones, lo que indica que es una publicación reciente y sin uso documentado.
 
 Al tratarse de un modelo de 3 mil millones de parámetros, se posiciona en la gama de modelos ligeros, aptos para entornos con recursos limitados. Sin embargo, la información pública es muy escasa: no se detallan los datos de entrenamiento, el método de ajuste (por ejemplo, RLHF o DPO), ni se ofrecen resultados de evaluación. Esto limita la posibilidad de validar su rendimiento real en tareas de traducción médica o en otros dominios.
 
@@ -61,6 +61,6 @@ No se dispone de datos de rendimiento para comparar con otros modelos de la mism
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/Sayeem26s/titulm-3b-bangla-doctor-translator)
+- [Página del modelo en Hugging Face](https://huggingface.co/Sayeem26s/titulm-3b-bangla-doctor-translator)
 - [Modelo base: hishab/titulm-llama-3.2-3b-v2.0](https://huggingface.co/hishab/titulm-llama-3.2-3b-v2.0)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)

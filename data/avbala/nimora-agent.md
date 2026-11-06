@@ -4,7 +4,7 @@
 
 Nimora Agent v0.0.1-alpha es un adaptador experimental de tipo QLoRA desarrollado por AVBala sobre el modelo base Qwen/Qwen3-4B. Su propósito no es ser un modelo de lenguaje general, sino actuar como controlador dentro del runtime de agente de codificación de código abierto Nimora: dado un estado del repositorio y una instrucción, debe seleccionar una única acción pequeña y verificable, invocar herramientas de workspace/Git/cambios y devolver una decisión en JSON canónico. El adaptador está pensado para usarse exclusivamente junto con el runtime Nimora, que proporciona la instrucción de sistema, las observaciones del repositorio, la ejecución de herramientas, las políticas de aprobación y el control de revisiones.
 
-El modelo se entrenó con 400 ejemplos sintéticos de tipo prefijo-a-siguiente-decisión, con contexto de 2048 tokens, en una única Tesla T4 durante 805 segundos. La evaluación interna sobre 40 casos held-out muestra una conformidad del 100% en semántica de acción/resultado y del 97,5% en argumentos exactos, frente al 27,5% y 20% del modelo base sin adaptar. Sin embargo, estos resultados miden solo la adherencia a un protocolo sintético determinista y no son comparables con benchmarks independientes como SWE-bench. El adaptador se distribuye bajo licencia Apache-2.0 y está disponible en HuggingFace con un tamaño de repositorio de 0,1 GB.
+El modelo se entrenó con 400 ejemplos sintéticos de tipo prefijo-a-siguiente-decisión, con contexto de 2048 tokens, en una única Tesla T4 durante 805 segundos. La evaluación interna sobre 40 casos held-out muestra una conformidad del 100% en semántica de acción/resultado y del 97,5% en argumentos exactos, frente al 27,5% y 20% del modelo base sin adaptar. Sin embargo, estos resultados miden solo la adherencia a un protocolo sintético determinista y no son comparables con benchmarks independientes como SWE-bench. El adaptador se distribuye bajo licencia Apache-2.0 y está disponible en Hugging Face con un tamaño de repositorio de 0,1 GB.
 
 ## Especificaciones tecnicas
 
@@ -83,6 +83,6 @@ No se han encontrado otros adaptadores publicos con la misma especializacion en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AVBala/nimora-agent
+- Modelo en Hugging Face: https://huggingface.co/AVBala/nimora-agent
 - Repositorio del runtime Nimora: https://github.com/AshwinVBala/nimora
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mhseo2/opd_sftk8dm15e_s1500_qwen3moe30b_ot3math_rklrest8-step10` es un checkpoint publicado en HuggingFace por el usuario `mhseo2`, sin documentación asociada, sin model card descriptiva, sin licencia declarada y sin idiomas especificados. Por la nomenclatura del identificador (que combina referencias a `sft`, `qwen3moe30b`, `ot3math` y `rklrest8-step10`) y por la etiqueta `qwen3` del repositorio, todo apunta a un artefacto de investigación derivado de la familia Qwen3 MoE, probablemente el resultado de una etapa de ajuste supervisado (SFT) o de destilación con regularización KL inversa, guardado en el paso 10 de un entrenamiento.
+El modelo `mhseo2/opd_sftk8dm15e_s1500_qwen3moe30b_ot3math_rklrest8-step10` es un checkpoint publicado en Hugging Face por el usuario `mhseo2`, sin documentación asociada, sin model card descriptiva, sin licencia declarada y sin idiomas especificados. Por la nomenclatura del identificador (que combina referencias a `sft`, `qwen3moe30b`, `ot3math` y `rklrest8-step10`) y por la etiqueta `qwen3` del repositorio, todo apunta a un artefacto de investigación derivado de la familia Qwen3 MoE, probablemente el resultado de una etapa de ajuste supervisado (SFT) o de destilación con regularización KL inversa, guardado en el paso 10 de un entrenamiento.
 
 El dato más relevante es la discrepancia entre el nombre y el contenido real del repositorio. Mientras el identificador menciona `qwen3moe30b` (lo que sugiere un modelo de unos 30.000 millones de parámetros totales y arquitectura MoE), los pesos almacenados en formato safetensors suman 8.190.735.360 parámetros, es decir, aproximadamente 8,19 mil millones. El repositorio ocupa 16,4 GB, un tamaño coherente con pesos en precisión de 16 bits para esa cantidad de parámetros. Esto indica que o bien se trata de un estudiante destilado de menor tamaño, o bien el checkpoint contiene únicamente un subconjunto de los tensores del modelo original.
 
@@ -51,7 +51,7 @@ Dado que no existe documentación funcional ni evaluaciones publicadas, los caso
 
 - Reproducción de experimentos de destilación: el identificador apunta a un pipeline de *on-policy distillation* con regularización KL inversa. El checkpoint podría servir para estudiar la evolución de las métricas de destilación en pasos tempranos, comparando el paso 10 con checkpoints posteriores del mismo run.
 - Análisis de checkpoints intermedios: útil para investigar cómo se comporta un modelo MoE (si finalmente se confirma esa arquitectura) a lo largo del entrenamiento, y en qué momento emergen capacidades concretas.
-- Auditoría de artefactos publicados: sirve como caso de estudio sobre repositorios de HuggingFace sin model card, sin licencia y con discrepancias entre nombre y contenido real.
+- Auditoría de artefactos publicados: sirve como caso de estudio sobre repositorios de Hugging Face sin model card, sin licencia y con discrepancias entre nombre y contenido real.
 - Fine-tuning posterior de investigación: si los pesos son cargables, podrían usarse como punto de partida para experimentos académicos con licencia por determinar, siempre que se resuelva antes la ambigüedad de licencia.
 - Evaluación comparativa de técnicas de ajuste: comparar este checkpoint contra un SFT estándar sin regularización KL para medir el efecto de la restricción citada en el nombre.
 - Docencia y formación: como ejemplo práctico de estructura de repositorio safetensors, de convenciones de nombrado en experimentos de ajuste y de los riesgos de reutilizar checkpoints sin documentación.
@@ -105,7 +105,7 @@ Diferencias destacables: los modelos de referencia cuentan con model card, licen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mhseo2/opd_sftk8dm15e_s1500_qwen3moe30b_ot3math_rklrest8-step10
+- Repositorio en Hugging Face: https://huggingface.co/mhseo2/opd_sftk8dm15e_s1500_qwen3moe30b_ot3math_rklrest8-step10
 - Perfil del autor: https://huggingface.co/mhseo2
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados a este modelo.
 - Documentación de la familia Qwen3 (referencia, no vinculada oficialmente a este repositorio): https://huggingface.co/Qwen

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jonasmuellerdale/dino-experiment` es un repositorio de HuggingFace publicado por el usuario jonasmuellerdale que contiene una implementacion propia y minima de una arquitectura etiquetada como "Dino", orientada a tareas de retrieval (recuperacion de informacion). No se trata de un modelo entrenado: el propio autor indica en la model card que el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo y que la variante incluida es "tiny", un punto de partida reproducible y no una release de modelo entrenado. El repositorio pesa 0,0 GB y los metadatos de safetensors declaran 16.576 parametros totales, un orden de magnitud propio de un artefacto de juguete o de un esqueleto de codigo.
+`jonasmuellerdale/dino-experiment` es un repositorio de Hugging Face publicado por el usuario jonasmuellerdale que contiene una implementacion propia y minima de una arquitectura etiquetada como "Dino", orientada a tareas de retrieval (recuperacion de informacion). No se trata de un modelo entrenado: el propio autor indica en la model card que el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo y que la variante incluida es "tiny", un punto de partida reproducible y no una release de modelo entrenado. El repositorio pesa 0,0 GB y los metadatos de safetensors declaran 16.576 parametros totales, un orden de magnitud propio de un artefacto de juguete o de un esqueleto de codigo.
 
 El modelo se distribuye bajo licencia MIT, con pesos en formato safetensors y codigo PyTorch, y las etiquetas declaradas son `safetensors`, `dino`, `pytorch` y `retrieval`. La unica innovacion declarada es de caracter arquitectonico y experimental: atencion dispersa (sparse), fusion de bajo rango (low rank), activacion swish y normalizacion RMSNorm. La receta de experimento por defecto usa el optimizador Lion con un schedule de warmup constante.
 
@@ -23,8 +23,8 @@ Su relevancia actual es limitada y muy especifica: sirve como andamiaje reproduc
 | Escala declarada | tiny |
 | Ficheros incluidos | `main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` |
 | Optimizador de la receta por defecto | Lion, con schedule de warmup constante |
-| Fecha de creacion (HuggingFace) | 2026-10-14 |
-| Fecha de actualizacion (HuggingFace) | 2026-10-14 |
+| Fecha de creacion (Hugging Face) | 2026-10-14 |
+| Fecha de actualizacion (Hugging Face) | 2026-10-14 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -74,7 +74,7 @@ La comparacion de rendimiento no es posible porque este repositorio no contiene 
 
 | Modelo | Parametros (aprox.) | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jonasmuellerdale/dino-experiment | 16.576 | Checkpoint de inicializacion, sin entrenar | MIT | HuggingFace (repo propio) |
+| jonasmuellerdale/dino-experiment | 16.576 | Checkpoint de inicializacion, sin entrenar | MIT | Hugging Face (repo propio) |
 | DINOv2 ViT-S/14 | ~22 M | Entrenado y publicado | Apache-2.0 | Pesos publicos y ampliamente integrados |
 | DINOv2 ViT-B/14 | ~86 M | Entrenado y publicado | Apache-2.0 | Pesos publicos y ampliamente integrados |
 | CLIP ViT-B/32 | ~151 M (imagen + texto) | Entrenado y publicado | MIT | Pesos publicos, soporte en multiples librerias |
@@ -91,11 +91,11 @@ Diferencias clave: frente a estas alternativas, `dino-experiment` no ofrece capa
 - No existen versiones cuantizadas (GGUF, AWQ, GPTQ), de modo que no se puede desplegar en runtimes de inferencia habituales orientados a modelos cuantizados.
 - La licencia MIT es permisiva y permite uso comercial del codigo y los pesos, pero el autor advierte de que deben revisarse por separado los terminos de las fuentes de datos si se usa el repositorio con conjuntos de datos externos.
 - Riesgo de confusion en la nomenclatura: el nombre "Dino" no permite determinar si guarda relacion con DINO (self-distillation with no labels) o con otra formulacion; conviene revisar `config.json` y `main.py` antes de asumir cualquier parentesco.
-- Las fechas de creacion y actualizacion que reporta HuggingFace (2026-10-14) son posteriores a la fecha habitual de consulta, un detalle a tener en cuenta al citar el repositorio.
+- Las fechas de creacion y actualizacion que reporta Hugging Face (2026-10-14) son posteriores a la fecha habitual de consulta, un detalle a tener en cuenta al citar el repositorio.
 - Cualquier resultado obtenido a partir de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonasmuellerdale/dino-experiment
+- Modelo en Hugging Face: https://huggingface.co/jonasmuellerdale/dino-experiment
 - Paper, blog, repositorio de codigo o demo asociados: no disponible en la informacion proporcionada.
 - Nota sobre la busqueda web: los resultados devueltos por la busqueda no guardan ninguna relacion con este modelo ni con retrieval, y no se incluyen por no ser fuentes pertinentes ni fiables.

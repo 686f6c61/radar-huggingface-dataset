@@ -130,6 +130,6 @@ Piiguard se diferencia por su especialización en 7 tipos de PII concretos, su s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/flowxai/piiguard
+- Hugging Face: https://huggingface.co/flowxai/piiguard
 - Repositorio de la librería flowx-border: https://github.com/flowx-ai/border
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base

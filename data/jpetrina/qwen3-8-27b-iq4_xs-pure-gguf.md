@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativos en la información proporcion
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/jpetrina/Qwen3.8-27B-IQ4_XS-pure-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/jpetrina/Qwen3.8-27B-IQ4_XS-pure-GGUF
 - Modelo base GGUF de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guía de Unsloth para Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

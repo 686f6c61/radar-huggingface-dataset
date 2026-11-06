@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fkmt/act_so101_picking` es una política de aprendizaje por imitación entrenada con el método Action Chunking with Transformers (ACT), publicado originalmente en el artículo arXiv 2304.13705. El modelo lo ha entrenado el usuario fkmt y se distribuye a través de HuggingFace Hub usando la librería LeRobot de HuggingFace. No es un modelo de lenguaje: es una política robótica que mapea observaciones (estado de las articulaciones y dos cámaras) a comandos de acción de un robot concreto.
+`fkmt/act_so101_picking` es una política de aprendizaje por imitación entrenada con el método Action Chunking with Transformers (ACT), publicado originalmente en el artículo arXiv 2304.13705. El modelo lo ha entrenado el usuario fkmt y se distribuye a través de Hugging Face Hub usando la librería LeRobot de Hugging Face. No es un modelo de lenguaje: es una política robótica que mapea observaciones (estado de las articulaciones y dos cámaras) a comandos de acción de un robot concreto.
 
 El modelo está especializado en una única tarea de manipulación ("Pick a pooley") sobre un robot de tipo `so_follower` (la variante seguidora del SO-101 de LeRobot). Consume un vector de estado de 6 dimensiones y dos imágenes (cámara superior a 240x320 y cámara de muñeca a 480x640), y produce un vector de acción de 6 dimensiones. Con 51.668.614 parámetros totales, es un modelo pequeño y ligero pensado para inferencia en tiempo real a 30 FPS.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fkmt/act_so101_picking | 51,7 M | no aplica | sin evaluación publicada | Apache 2.0 | HuggingFace (31 descargas) |
-| Políticas ACT de LeRobot (referencia) | ~50 M (típico) | no aplica | variable según dataset | Apache 2.0 | HuggingFace / GitHub |
+| fkmt/act_so101_picking | 51,7 M | no aplica | sin evaluación publicada | Apache 2.0 | Hugging Face (31 descargas) |
+| Políticas ACT de LeRobot (referencia) | ~50 M (típico) | no aplica | variable según dataset | Apache 2.0 | Hugging Face / GitHub |
 | Diffusion Policy (referencia) | no disponible | no aplica | requiere evaluación propia | MIT (repo original) | GitHub / papers |
 | VQ-BeT (referencia) | no disponible | no aplica | requiere evaluación propia | MIT (repo original) | GitHub / papers |
 
@@ -79,7 +79,7 @@ No se dispone de datos cuantitativos comparativos publicados para este modelo co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fkmt/act_so101_picking
+- Modelo en Hugging Face: https://huggingface.co/fkmt/act_so101_picking
 - Dataset de entrenamiento: https://huggingface.co/datasets/fkmt/so101_picking_20261027_143500
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=fkmt/so101_picking_20261027_143500
 - Paper de ACT: https://huggingface.co/papers/2304.13705

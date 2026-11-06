@@ -71,7 +71,7 @@ No disponible. Este artefacto es un componente auxiliar específico para Qwen3.8
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adrianmurray/Qwen3.8-27B-MTP-MLX-6bit
+- Hugging Face: https://huggingface.co/adrianmurray/Qwen3.8-27B-MTP-MLX-6bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio del challenge de Layr-Labs: https://github.com/Layr-Labs/qwen-3.8-mtp-challenge
 - Blog de AMD sobre soporte Day 0: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

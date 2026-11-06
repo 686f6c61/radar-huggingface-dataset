@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CalfVO es un repositorio de modelo publicado en HuggingFace por el usuario voviktyl bajo licencia Apache 2.0. En el momento de la consulta no dispone de model card con contenido tecnico: el README se limita a la cabecera de licencia (`license: apache-2.0`) sin ningun apartado descriptivo, y no se declara pipeline, arquitectura, tamano ni idiomas soportados.
+CalfVO es un repositorio de modelo publicado en Hugging Face por el usuario voviktyl bajo licencia Apache 2.0. En el momento de la consulta no dispone de model card con contenido tecnico: el README se limita a la cabecera de licencia (`license: apache-2.0`) sin ningun apartado descriptivo, y no se declara pipeline, arquitectura, tamano ni idiomas soportados.
 
 El repositorio no registra descargas ni "likes", y las fechas de creacion y ultima actualizacion son identicas (2026-09-15), lo que indica que no ha habido mantenimiento posterior a la publicacion inicial. La busqueda web realizada no devuelve ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a portales franceses de prensa de celebridades y no guardan relacion con el identificador ni con el contenido del repositorio.
 
@@ -50,7 +50,7 @@ Advertencia: los escenarios siguientes son aplicaciones genericas de modelos de 
 - Prototipado rapido en investigacion: el modelo puede servir como linea base experimental si su licencia Apache 2.0 se mantiene, algo que si esta declarado.
 - Ajuste fino supervisado (SFT) sobre datos propios: viable tecnicamente solo si se conoce la arquitectura y el formato de pesos, ambos no disponibles.
 - Despliegue en entornos con requisitos de licencia permisiva: la licencia Apache 2.0 permite uso comercial y modificacion, sujeto a las obligaciones de atribucion habituales.
-- Evaluacion comparativa de repositorios: util como caso de estudio sobre publicaciones de HuggingFace sin model card ni documentacion.
+- Evaluacion comparativa de repositorios: util como caso de estudio sobre publicaciones de Hugging Face sin model card ni documentacion.
 
 ## Benchmarks y rendimiento
 
@@ -80,7 +80,7 @@ No disponible. La ausencia de datos sobre parametros, contexto, arquitectura y r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/voviktyl/CalfVO
+- Repositorio en Hugging Face: https://huggingface.co/voviktyl/CalfVO
 - Model card: no contiene informacion tecnica mas alla de la licencia.
 - Paper, blog, repositorio de codigo o demo: no disponibles.
 - Resultados de busqueda web: no se ha encontrado ningun recurso relacionado con el modelo. Los enlaces recuperados (purepeople.com, voici.fr, closermag.fr, public.fr, gala.fr) corresponden a portales de prensa de celebridades y no guardan relacion con este repositorio, por lo que se descartan como fuentes.

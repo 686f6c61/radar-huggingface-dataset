@@ -106,7 +106,7 @@ No se dispone de resultados comparativos de benchmarks entre estos modelos y Thi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/ThinkLess-2B-SFT-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/ThinkLess-2B-SFT-GGUF
 - Modelo base: https://huggingface.co/Shaik1903/ThinkLess-2B-SFT
 - Dataset declarado: https://huggingface.co/datasets/Shaik1903/ThinkLess-data
 - Pagina resumen de cuantizaciones del autor para este modelo: https://hf.tst.eu/model#ThinkLess-2B-SFT-GGUF

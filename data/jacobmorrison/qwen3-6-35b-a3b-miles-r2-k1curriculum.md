@@ -95,7 +95,7 @@ Qwen3.6-35B-A3B mejora a su predecesor directo (Qwen3.5-35B-A3B) en todos los be
 
 ## Enlaces
 
-- Repositorio HuggingFace del derivado: https://huggingface.co/jacobmorrison/qwen3.6-35b-a3b-miles-r2-k1curriculum
+- Repositorio Hugging Face del derivado: https://huggingface.co/jacobmorrison/qwen3.6-35b-a3b-miles-r2-k1curriculum
 - Repositorio del modelo original: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Licencia del modelo original: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
 - Blog oficial de Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b

@@ -87,7 +87,7 @@ Ambos comparten base, dataset y nivel de compresion, pero sus resultados no se i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3b110-l5
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3b110-l5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Adaptador SFT requerido: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l5
 - Modelo principal del nivel L5: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-l5

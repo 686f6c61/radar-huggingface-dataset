@@ -121,8 +121,8 @@ La diferencia clave es de escala: con 2,16 M de parámetros, este modelo es entr
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/wq2012/ls_conformer_small_pfas_ge2e
-- Colección FlaxSpeaker en HuggingFace: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
+- Página del modelo en Hugging Face: https://huggingface.co/wq2012/ls_conformer_small_pfas_ge2e
+- Colección FlaxSpeaker en Hugging Face: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub de FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
 - Paquete en PyPI: https://pypi.org/project/flaxspeaker/
 - Paper GE2E, Generalized End-to-End Loss for Speaker Verification: https://arxiv.org/abs/1710.10467

@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Kicaulah/model-health es un ajuste fino de dominio sanitario sobre Qwen/Qwen2.5-3B-Instruct, publicado por el usuario Kicaulah en HuggingFace. Se presenta como el especialista en salud de un sistema de agentes de cinco modelos servido tras un unico endpoint compatible con la API de OpenAI, con un router que deriva cada consulta al especialista correspondiente. El objetivo declarado no es tanto la precision clinica como el registro conversacional: un asistente calmado, informativo, en lenguaje llano, que no alarme ni culpabilice, que no diagnostique y que derive a un medico cuando detecta senales de alarma.
+Kicaulah/model-health es un ajuste fino de dominio sanitario sobre Qwen/Qwen2.5-3B-Instruct, publicado por el usuario Kicaulah en Hugging Face. Se presenta como el especialista en salud de un sistema de agentes de cinco modelos servido tras un unico endpoint compatible con la API de OpenAI, con un router que deriva cada consulta al especialista correspondiente. El objetivo declarado no es tanto la precision clinica como el registro conversacional: un asistente calmado, informativo, en lenguaje llano, que no alarme ni culpabilice, que no diagnostique y que derive a un medico cuando detecta senales de alarma.
 
 Tecnicamente es un modelo de ~3B parametros, decoder-only, con ajuste por QLoRA y posterior merge de la LoRA, segun los tags y el flujo de trabajo descrito en la model card (instruction-tuning, SFT, system-prompt). La model card indica una ventana de contexto de 4k y salida en formato safetensors, con licencia Apache-2.0 y soporte unicamente de ingles. Los pesos no estan publicados: la propia tarjeta lo advierte y remite al `scripts/03_train_health.py`, que entrena, fusiona la LoRA y sube los pesos en una GPU de 16 GB.
 
@@ -25,8 +25,8 @@ Su relevancia ahora es mas metodologica que de rendimiento: el autor publica el 
 | Modelo base | Qwen/Qwen2.5-3B-Instruct |
 | Libreria | transformers |
 | Pipeline | text-generation |
-| Fecha de creacion (segun HuggingFace) | 2026-09-30 |
-| Ultima actualizacion (segun HuggingFace) | 2026-09-30 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-30 |
+| Ultima actualizacion (segun Hugging Face) | 2026-09-30 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -96,14 +96,14 @@ La diferencia funcional relevante frente al modelo base no es de rendimiento sin
 - Solo ingles. No hay soporte documentado de castellano ni de otros idiomas.
 - Sin soporte documentado de tool calling ni function calling, lo que limita su integracion en flujos que necesiten consultar fuentes externas o bases de datos clinicas.
 - Cobertura de modelos: la model card describe a la vez "un sistema de cinco modelos" y "cinco especialistas mas un router" (seis prompts de sistema en la demo). Conviene verificar la composicion exacta antes de disenar una integracion.
-- La fecha de creacion registrada en HuggingFace (2026-09-30) es posterior a la fecha de la mayoria de materiales de referencia, un detalle a comprobar en el repositorio.
+- La fecha de creacion registrada en Hugging Face (2026-09-30) es posterior a la fecha de la mayoria de materiales de referencia, un detalle a comprobar en el repositorio.
 - Uso en produccion sanitaria: la ausencia de evaluaciones clinicas y de documentacion regulatoria implica que un despliegue real con pacientes exigiria validacion propia, supervision profesional y analisis de encaje normativo (productos sanitarios, AI Act). Nada de esto se aborda en la model card.
 - Advertencia de desambiguacion: los resultados de busqueda web sobre "Model Health" (modelhealth.io) corresponden a una empresa de analisis biomecanico por video, sin relacion conocida con este modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kicaulah/model-health
-- Perfil del autor en HuggingFace: https://huggingface.co/Kicaulah
+- Modelo en Hugging Face: https://huggingface.co/Kicaulah/model-health
+- Perfil del autor en Hugging Face: https://huggingface.co/Kicaulah
 - Listado de modelos del autor: https://huggingface.co/Kicaulah/models
 - Demo en vivo del sistema: https://huggingface.co/spaces/Kicaulah/Kicaulah-AI-Demo
 - Script de entrenamiento referenciado en la model card: `scripts/03_train_health.py`

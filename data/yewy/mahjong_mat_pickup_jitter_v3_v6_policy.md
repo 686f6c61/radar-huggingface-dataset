@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Yewy/mahjong_mat_pickup_jitter_v3_v6_policy` es una política de aprendizaje por imitación publicada en HuggingFace por el usuario Yewy, entrenada con la librería LeRobot de Hugging Face. Implementa el método ACT (Action Chunking with Transformers), descrito en el paper arXiv:2304.13705, que predice fragmentos cortos de acciones en lugar de pasos individuales, lo que reduce el error acumulado en tareas de manipulación robótica. El modelo cuenta con 51.668.614 parámetros y se distribuye en formato safetensors dentro de un repositorio de 0,2 GB.
+El modelo `Yewy/mahjong_mat_pickup_jitter_v3_v6_policy` es una política de aprendizaje por imitación publicada en Hugging Face por el usuario Yewy, entrenada con la librería LeRobot de Hugging Face. Implementa el método ACT (Action Chunking with Transformers), descrito en el paper arXiv:2304.13705, que predice fragmentos cortos de acciones en lugar de pasos individuales, lo que reduce el error acumulado en tareas de manipulación robótica. El modelo cuenta con 51.668.614 parámetros y se distribuye en formato safetensors dentro de un repositorio de 0,2 GB.
 
 La política está especializada en una tarea concreta de manipulación: la recogida de una pieza de mahjong sobre una superficie (mat) con variaciones de jitter, según se deduce del identificador del dataset de entrenamiento `Yewy/mahjong_mat_pickup_jitter_v3_v6_224`. Los tags del repositorio indican que el hardware objetivo es el robot LeKiwi con brazo SO-101, dentro del ecosistema LeRobot, y que la resolución de entrada aparente es de 224 píxeles.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Yewy/mahjong_mat_pickup_jitter_v3_v6_policy | 51,7 M | ACT (LeRobot) | no aplica | Apache 2.0 | HuggingFace |
-| Políticas ACT genéricas de LeRobot (p. ej. entrenadas con datasets públicos de LeRobot) | variable, típicamente decenas de millones | ACT | no aplica | según dataset | HuggingFace |
-| Políticas Diffusion Policy en LeRobot | variable | difusión | no aplica | según implementación | HuggingFace / repos |
-| Políticas basadas en VLA (p. ej. OpenVLA) | miles de millones | VLM + acciones | contextual | variable | HuggingFace |
+| Yewy/mahjong_mat_pickup_jitter_v3_v6_policy | 51,7 M | ACT (LeRobot) | no aplica | Apache 2.0 | Hugging Face |
+| Políticas ACT genéricas de LeRobot (p. ej. entrenadas con datasets públicos de LeRobot) | variable, típicamente decenas de millones | ACT | no aplica | según dataset | Hugging Face |
+| Políticas Diffusion Policy en LeRobot | variable | difusión | no aplica | según implementación | Hugging Face / repos |
+| Políticas basadas en VLA (p. ej. OpenVLA) | miles de millones | VLM + acciones | contextual | variable | Hugging Face |
 
 La comparación directa con alternativas concretas no está disponible en la información proporcionada. A grandes rasgos, este modelo se sitúa en la categoría de políticas ACT ligeras y especializadas, frente a enfoques VLA de mayor tamaño y generalidad pero con requisitos de cómputo mucho mayores.
 
@@ -82,7 +82,7 @@ La comparación directa con alternativas concretas no está disponible en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yewy/mahjong_mat_pickup_jitter_v3_v6_policy
+- Modelo en Hugging Face: https://huggingface.co/Yewy/mahjong_mat_pickup_jitter_v3_v6_policy
 - Dataset de entrenamiento: https://huggingface.co/datasets/Yewy/mahjong_mat_pickup_jitter_v3_v6_224
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

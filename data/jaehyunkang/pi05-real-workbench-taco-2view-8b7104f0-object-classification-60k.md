@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pi0.5 Real Workbench — taco-2view-8b7104f0-object-classification es un checkpoint final de una política robótica de visión-lenguaje-acción (VLA) publicado por el usuario jaehyunkang en HuggingFace. Se trata de un ajuste fino (fine-tune) del modelo base lerobot/pi05_base, la implementación de Pi0.5 dentro de la librería LeRobot, especializado en la tarea de clasificación de objetos sobre un banco de trabajo real. El checkpoint corresponde a 60.000 pasos de optimización y se distribuye como artefacto de inferencia, sin estado de optimizador ni de reanudación de entrenamiento.
+Pi0.5 Real Workbench — taco-2view-8b7104f0-object-classification es un checkpoint final de una política robótica de visión-lenguaje-acción (VLA) publicado por el usuario jaehyunkang en Hugging Face. Se trata de un ajuste fino (fine-tune) del modelo base lerobot/pi05_base, la implementación de Pi0.5 dentro de la librería LeRobot, especializado en la tarea de clasificación de objetos sobre un banco de trabajo real. El checkpoint corresponde a 60.000 pasos de optimización y se distribuye como artefacto de inferencia, sin estado de optimizador ni de reanudación de entrenamiento.
 
 El modelo cuenta con 4.143.404.816 parámetros (aproximadamente 4,14 mil millones) y un repositorio de 9,4 GB. Recibe observaciones de dos cámaras (exterior y muñeca), un vector de estado de 8 dimensiones y una instrucción textual derivada de un subtask por fotograma en formato parquet, y produce acciones de 7 dimensiones en espacio de velocidad cartesiana delta del efector final más pinza. La ejecución se realiza por chunks de 50 acciones con 10 pasos de denoising en inferencia.
 
@@ -86,8 +86,8 @@ La información proporcionada no incluye especificaciones verificables de modelo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jaehyunkang/pi05-real-workbench-taco-2view-8b7104f0-object-classification-60k | 4,14 mil millones | No disponible | Sin métricas publicadas | No disponible | HuggingFace, 17 descargas, 0 likes |
-| lerobot/pi05_base (modelo base) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | HuggingFace |
+| jaehyunkang/pi05-real-workbench-taco-2view-8b7104f0-object-classification-60k | 4,14 mil millones | No disponible | Sin métricas publicadas | No disponible | Hugging Face, 17 descargas, 0 likes |
+| lerobot/pi05_base (modelo base) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | Hugging Face |
 | Otras políticas VLA (por ejemplo, variantes de Pi0.5 en LeRobot o modelos del mismo ámbito) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones comparables de alternativas en el material analizado.
@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks ni de especificaciones comparables de alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaehyunkang/pi05-real-workbench-taco-2view-8b7104f0-object-classification-60k
+- Modelo en Hugging Face: https://huggingface.co/jaehyunkang/pi05-real-workbench-taco-2view-8b7104f0-object-classification-60k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/real_workbench-taco-keyframe-gemini
 - Tokenizer de referencia: https://huggingface.co/google/paligemma-3b-pt-224 (revisión 35e4f46485b4d07967e7e9935bc3786aad50687c)

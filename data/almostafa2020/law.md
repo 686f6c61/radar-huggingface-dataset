@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `almostafa2020/law` es un repositorio publicado en HuggingFace por el usuario almostafa2020 bajo licencia Apache 2.0. La informacion disponible en el momento de redactar esta ficha es extremadamente limitada: la model card no contiene mas que la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin tamano de parametros, sin ventana de contexto y sin datos de entrenamiento. El propio autor no ha publicado pipeline asociado, idiomas soportados ni ejemplos de uso.
+El modelo `almostafa2020/law` es un repositorio publicado en Hugging Face por el usuario almostafa2020 bajo licencia Apache 2.0. La informacion disponible en el momento de redactar esta ficha es extremadamente limitada: la model card no contiene mas que la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin tamano de parametros, sin ventana de contexto y sin datos de entrenamiento. El propio autor no ha publicado pipeline asociado, idiomas soportados ni ejemplos de uso.
 
 A pesar de que el identificador del repositorio sugiere una posible orientacion al dominio juridico o legal, no existe ningun dato en la informacion proporcionada que confirme esta hipotesis, ni que describa que problema resuelve el modelo, sobre que corpus fue entrenado o como debe utilizarse. No se han publicado resultados de evaluacion, ni tarjetas de datos, ni documentacion tecnica complementaria.
 
@@ -68,7 +68,7 @@ No disponible. No se dispone de informacion suficiente sobre el modelo (tamano, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| almostafa2020/law | no disponible | no disponible | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
+| almostafa2020/law | no disponible | no disponible | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,6 +85,6 @@ No disponible. No se dispone de informacion suficiente sobre el modelo (tamano, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/almostafa2020/law
+- Hugging Face: https://huggingface.co/almostafa2020/law
 
 No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados devueltos por el buscador correspondian a paginas de soporte de YouTube y a debates de foro sin relacion alguna con el repositorio.

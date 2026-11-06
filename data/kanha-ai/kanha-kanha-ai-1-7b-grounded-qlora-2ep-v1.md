@@ -82,8 +82,8 @@ No se dispone de informacion comparativa con otros modelos en la documentacion p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kanha-AI/kanha-kanha.ai-1.7b-grounded-qlora-2ep-v1
-- Organizacion Kanha-AI en HuggingFace: https://huggingface.co/Kanha-AI
+- Hugging Face: https://huggingface.co/Kanha-AI/kanha-kanha.ai-1.7b-grounded-qlora-2ep-v1
+- Organizacion Kanha-AI en Hugging Face: https://huggingface.co/Kanha-AI
 - Repositorio GitHub de Kanha-AI: https://github.com/Kanha-AI/Kanha-AI
 - Organizacion Kanha-AI en GitHub: https://github.com/Kanha-AI
 - Sitio web de Kanha.ai: https://kanha.ai

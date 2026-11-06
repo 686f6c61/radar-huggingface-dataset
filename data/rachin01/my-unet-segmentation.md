@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rachin01/my-unet-segmentation` es un repositorio de modelo alojado en HuggingFace por el usuario rachin01, publicado y actualizado el 19 de septiembre de 2026. La informacion disponible se limita a la licencia MIT y a la etiqueta de region `us`; la model card no contiene README, descripcion, ejemplos de uso ni metricas. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de una publicacion sin adopcion conocida ni validacion por parte de la comunidad.
+`rachin01/my-unet-segmentation` es un repositorio de modelo alojado en Hugging Face por el usuario rachin01, publicado y actualizado el 19 de septiembre de 2026. La informacion disponible se limita a la licencia MIT y a la etiqueta de region `us`; la model card no contiene README, descripcion, ejemplos de uso ni metricas. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de una publicacion sin adopcion conocida ni validacion por parte de la comunidad.
 
 El identificador del modelo sugiere una red U-Net orientada a segmentacion de imagenes, una arquitectura encoder-decoder con conexiones skip introducida originalmente para segmentacion biomedica. No obstante, esta interpretacion procede unicamente del nombre del repositorio y no esta confirmada por ningun contenido de la model card, por lo que debe tratarse como una hipotesis y no como un dato verificado. Tampoco hay informacion sobre el dominio de entrenamiento (medico, satelital, industrial), el numero de clases, la resolucion de entrada ni el framework utilizado.
 
@@ -71,7 +71,7 @@ No disponible. La informacion proporcionada no identifica arquitectura, tamano n
 - VRAM estimada para inferencia: no disponible (se desconoce el numero de parametros, la resolucion de entrada y el tamano de lote).
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible. Un modelo de segmentacion tipico de tipo U-Net suele ser ligero, pero no hay datos que permitan confirmarlo para este repositorio concreto.
-- Opciones de despliegue: no confirmadas para este modelo. Los entornos habituales para modelos de vision en HuggingFace serian PyTorch, ONNX Runtime, TorchScript o TensorRT, pero la model card no declara ninguno.
+- Opciones de despliegue: no confirmadas para este modelo. Los entornos habituales para modelos de vision en Hugging Face serian PyTorch, ONNX Runtime, TorchScript o TensorRT, pero la model card no declara ninguno.
 - Latencia y throughput estimados: no disponible.
 
 ## Limitaciones y advertencias
@@ -87,5 +87,5 @@ No disponible. La informacion proporcionada no identifica arquitectura, tamano n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rachin01/my-unet-segmentation
+- Hugging Face: https://huggingface.co/rachin01/my-unet-segmentation
 - No se han encontrado enlaces relevantes en la busqueda web: los resultados devueltos (articulos de Wikipedia y portales inmobiliarios sobre la localidad finlandesa de Haukilahti) no guardan ninguna relacion con el modelo. No hay papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

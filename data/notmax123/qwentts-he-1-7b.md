@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks estandar (como MOS, WER o comparaci
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QwenTTS-he-1.7B (este) | 1.7B + 246 MB LoRA | No disponible | Hebreo (via IPA) + 10 del base | Apache-2.0 | HuggingFace |
-| Qwen3-TTS-12Hz-1.7B-Base | 1.7B | No disponible | 10 idiomas (sin hebreo) | Apache-2.0 | HuggingFace |
+| QwenTTS-he-1.7B (este) | 1.7B + 246 MB LoRA | No disponible | Hebreo (via IPA) + 10 del base | Apache-2.0 | Hugging Face |
+| Qwen3-TTS-12Hz-1.7B-Base | 1.7B | No disponible | 10 idiomas (sin hebreo) | Apache-2.0 | Hugging Face |
 | Otros TTS hebreos (p.ej. modelos basados en VITS o Tacotron) | Variable | No disponible | Hebreo | Variable | No disponible en la informacion |
 
 No se dispone de datos de rendimiento comparativo con otros sistemas TTS hebreos. La ventaja principal de este adaptador es su no intrusividad sobre el modelo base y su capacidad de alternar idiomas sin recargar.
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo con otros sistemas TTS hebreos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/notmax123/QwenTTS-he-1.7B
+- Modelo en Hugging Face: https://huggingface.co/notmax123/QwenTTS-he-1.7B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Repositorio de inferencia Qwen3-TTS: https://github.com/QwenLM/Qwen3-TTS
 - Perfil del autor: https://huggingface.co/notmax123

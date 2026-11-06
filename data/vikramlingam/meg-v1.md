@@ -91,11 +91,11 @@ No se dispone de comparativas publicadas con otros modelos de ASR on-device como
 - El modelo está diseñado para dictado técnico en inglés; su eficacia en otros acentos o registros no está documentada.
 - No hay información sobre sesgos potenciales, aunque al ser un sistema de ASR con verificación determinista, el riesgo de alucinación es bajo en comparación con LLMs.
 - La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías ni soporte oficial.
-- El repositorio tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es un proyecto muy reciente y sin validación comunitaria amplia.
+- El repositorio tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es un proyecto muy reciente y sin validación comunitaria amplia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vikramlingam/meg-v1
-- Perfil del autor en HuggingFace: https://huggingface.co/vikramlingam
+- Modelo en Hugging Face: https://huggingface.co/vikramlingam/meg-v1
+- Perfil del autor en Hugging Face: https://huggingface.co/vikramlingam
 - Perfil del autor en GitHub: https://github.com/vikramlingam
 - Repositorio personal del autor: https://github.com/vikramlingam/vikramlingam

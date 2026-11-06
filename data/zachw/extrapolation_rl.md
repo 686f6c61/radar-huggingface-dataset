@@ -25,7 +25,7 @@ La licencia es MIT, el modelo está etiquetado como compatible con endpoints y l
 
 La arquitectura exacta del modelo no se detalla en la informacion disponible. El proyecto Interplay-LM-Reasoning entrena modelos de lenguaje con un pipeline que incluye pretrain, post-training con reinforcement learning y un paso adicional de OPD (online-policy distillation) con regularizacion KL hacia un modelo profesor (refkl). Los experimentos se ejecutaron en GPUs H100 x4 y A100 x8, con configuraciones de entrenamiento disponibles en los scripts de lanzamiento del repositorio GitHub.
 
-El dataset de composicion y los splits de benchmark estan publicados en HuggingFace bajo `Interplay-LM-Reasoning/composition`, y los datos de contexto bajo `Interplay-LM-Reasoning/context`. No se proporcionan datos sobre el numero de tokens de entrenamiento ni sobre la composicion exacta del dataset.
+El dataset de composicion y los splits de benchmark estan publicados en Hugging Face bajo `Interplay-LM-Reasoning/composition`, y los datos de contexto bajo `Interplay-LM-Reasoning/context`. No se proporcionan datos sobre el numero de tokens de entrenamiento ni sobre la composicion exacta del dataset.
 
 ## Capacidades
 
@@ -85,9 +85,9 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ZachW/extrapolation_rl
+- Repositorio Hugging Face: https://huggingface.co/ZachW/extrapolation_rl
 - Repositorio del proyecto (GitHub): https://github.com/YichenZW/Interplay-LM-Reasoning
 - Dataset de composicion: https://huggingface.co/datasets/Interplay-LM-Reasoning/composition
 - Dataset de contexto: https://huggingface.co/datasets/Interplay-LM-Reasoning/context
-- Repositorio alternativo en HuggingFace: https://huggingface.co/Interplay-LM-Reasoning/extrapolation_rl
+- Repositorio alternativo en Hugging Face: https://huggingface.co/Interplay-LM-Reasoning/extrapolation_rl
 - Paper relacionado sobre extrapolacion con RL: https://arxiv.org/pdf/2502.04402

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **88plug/Qwen2.5-Omni-7B-W4A16** es una cuantización post-entrenamiento (PTQ) INT4 del modelo multimodal omni **Qwen2.5-Omni-7B** de Alibaba Qwen, publicada por el autor de HuggingFace **88plug**. Su objetivo es reducir drásticamente los requisitos de memoria del modelo original, pasando de unos 18 GB en BF16 a aproximadamente 3,5 GB en disco, lo que permite ejecutarlo en GPUs de consumo con 8 GB de VRAM, como una RTX 3080 de 10 GB.
+El modelo **88plug/Qwen2.5-Omni-7B-W4A16** es una cuantización post-entrenamiento (PTQ) INT4 del modelo multimodal omni **Qwen2.5-Omni-7B** de Alibaba Qwen, publicada por el autor de Hugging Face **88plug**. Su objetivo es reducir drásticamente los requisitos de memoria del modelo original, pasando de unos 18 GB en BF16 a aproximadamente 3,5 GB en disco, lo que permite ejecutarlo en GPUs de consumo con 8 GB de VRAM, como una RTX 3080 de 10 GB.
 
 La arquitectura original combina un “Thinker” (LLM transformer de 28 capas) con un codificador de audio basado en Whisper, un codificador visual ViT, un decodificador de voz (“Talker”) y un vocoder DiT + BigVGAN. En esta versión cuantizada, solo el backbone LLM se cuantiza a W4A16 INT4 con group size 128; el resto de componentes (audio, visión, voz y vocoder) permanecen en BF16. El formato de pesos es compressed-tensors, nativo para vLLM, y la longitud de contexto soportada en los despliegues documentados es de 32.768 tokens.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros totales | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 88plug/Qwen2.5-Omni-7B-W4A16 | 10.732.225.408 | 32.768 tokens | compressed-tensors (INT4) | Apache 2.0 | HuggingFace |
-| 88plug/Qwen2.5-Omni-7B-W8A16 | No disponible (estimado ~10.7B) | No disponible | compressed-tensors (INT8) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-Omni-7B (base) | No disponible (estimado ~10.7B) | No disponible | safetensors (BF16) | Apache 2.0 | HuggingFace |
+| 88plug/Qwen2.5-Omni-7B-W4A16 | 10.732.225.408 | 32.768 tokens | compressed-tensors (INT4) | Apache 2.0 | Hugging Face |
+| 88plug/Qwen2.5-Omni-7B-W8A16 | No disponible (estimado ~10.7B) | No disponible | compressed-tensors (INT8) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-Omni-7B (base) | No disponible (estimado ~10.7B) | No disponible | safetensors (BF16) | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a variantes del mismo modelo base, ya que no se dispone de datos de otros modelos omni de tamaño similar en la información proporcionada. La principal diferencia entre las variantes es el tamaño en disco y los requisitos de VRAM: ~3,5 GB para W4A16, ~8 GB para W8A16 y ~18 GB para BF16.
 
@@ -73,7 +73,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 
 - La salida de voz no funciona con vLLM principal; se requiere el runtime vLLM-Omni v0.20.0, que aún no está integrado en el flujo estándar.
 - El runtime Text Generation Inference (TGI) no soporta el formato compressed-tensors de este checkpoint, por lo que no es viable para despliegues con dicha infraestructura.
-- El widget de inferencia de HuggingFace falla con frecuencia; se recomienda usar vLLM localmente.
+- El widget de inferencia de Hugging Face falla con frecuencia; se recomienda usar vLLM localmente.
 - Los metadatos indican solo inglés como idioma soportado, aunque el modelo base es multilingüe. Esto puede limitar el uso en otros idiomas si no se valida previamente.
 - No se han publicado evaluaciones de sesgos ni de seguridad específicas para esta cuantización; el modelo base podría presentar sesgos conocidos de los modelos Qwen.
 - La cuantización INT4 puede degradar ligeramente la calidad de las salidas en comparación con el modelo BF16, especialmente en tareas de razonamiento complejo.
@@ -81,7 +81,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/88plug/Qwen2.5-Omni-7B-W4A16
+- Modelo en Hugging Face: https://huggingface.co/88plug/Qwen2.5-Omni-7B-W4A16
 - Modelo base Qwen2.5-Omni-7B: https://huggingface.co/Qwen/Qwen2.5-Omni-7B
 - Variante W8A16 del mismo autor: https://huggingface.co/88plug/Qwen2.5-Omni-7B-W8A16
 - Repositorio vLLM-Omni: https://github.com/vllm-project/vllm-omni

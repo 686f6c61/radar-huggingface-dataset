@@ -31,7 +31,7 @@ La unica innovacion tecnica documentada en esta ficha es el proceso de cuantizac
 
 - Generacion de texto y codigo: el modelo base esta especializado en tareas de programacion (generacion, completado y explicacion de codigo).
 - Razonamiento sobre codigo: al ser un modelo Coder de la familia Qwen2.5, esta orientado a resolver problemas de programacion y matematicas asociadas.
-- Conversacion multi-turno: etiquetado como conversational en HuggingFace.
+- Conversacion multi-turno: etiquetado como conversational en Hugging Face.
 - Compatibilidad con endpoints: etiqueta endpoints_compatible, lo que indica que puede servirse mediante APIs compatibles con el formato de endpoints.
 - Inferencia local via llama.cpp: soporta CLI y servidor HTTP (llama-cli, llama-server).
 - Idiomas: la model card declara unicamente ingles; no se confirma soporte multilingue en la informacion disponible.
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Xentira/Qwen2.5-Coder-7B-Q4_K_M-GGUF | 7,6 B | No disponible | Apache 2.0 | GGUF (Q4_K_M) | HuggingFace, 43 descargas |
-| Qwen/Qwen2.5-Coder-7B (base) | 7,6 B | No disponible | Apache 2.0 | Safetensors | HuggingFace (modelo original) |
-| Otras cuantizaciones GGUF de Qwen2.5-Coder-7B | 7,6 B | No disponible | Apache 2.0 | GGUF (varias) | HuggingFace (multiples autores) |
+| Xentira/Qwen2.5-Coder-7B-Q4_K_M-GGUF | 7,6 B | No disponible | Apache 2.0 | GGUF (Q4_K_M) | Hugging Face, 43 descargas |
+| Qwen/Qwen2.5-Coder-7B (base) | 7,6 B | No disponible | Apache 2.0 | Safetensors | Hugging Face (modelo original) |
+| Otras cuantizaciones GGUF de Qwen2.5-Coder-7B | 7,6 B | No disponible | Apache 2.0 | GGUF (varias) | Hugging Face (multiples autores) |
 
 La comparativa se limita al modelo base y a otras cuantizaciones del mismo modelo, ya que la informacion proporcionada no incluye datos de rendimiento ni de contexto que permitan comparar con alternativas de otros desarrolladores. No se dispone de benchmarks para establecer diferencias de calidad entre esta cuantizacion y el modelo original.
 
@@ -84,7 +84,7 @@ La comparativa se limita al modelo base y a otras cuantizaciones del mismo model
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/Xentira/Qwen2.5-Coder-7B-Q4_K_M-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/Xentira/Qwen2.5-Coder-7B-Q4_K_M-GGUF
 - Modelo base original: https://huggingface.co/Qwen/Qwen2.5-Coder-7B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B/blob/main/LICENSE
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo

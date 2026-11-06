@@ -78,11 +78,11 @@ La comparacion se plantea frente a modelos multimodales de tamano comparable al 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DevQuasar/XiaomiMiMo.MiMo-V2.6-Pro-RL-GGUF | 1,36 mil millones (segun metadatos) | no disponible | no disponible | GGUF en HuggingFace |
-| XiaomiMiMo/MiMo-V2.6-Pro-RL (base) | discrepancia: metadatos del derivado indican 1,36 mil millones; la web de Xiaomi afirma "un billon" | no disponible | no disponible | safetensors en HuggingFace |
-| Qwen2.5-VL-3B-Instruct | aproximadamente 3,75 mil millones | 32.768 tokens | Apache-2.0 | pesos y GGUF en HuggingFace |
-| SmolVLM2-2.2B-Instruct | aproximadamente 2,25 mil millones | no disponible | Apache-2.0 | pesos y GGUF en HuggingFace |
-| Gemma-3-4B-it | aproximadamente 4 mil millones | 128.000 tokens | Gemma Terms of Use | pesos y GGUF en HuggingFace |
+| DevQuasar/XiaomiMiMo.MiMo-V2.6-Pro-RL-GGUF | 1,36 mil millones (segun metadatos) | no disponible | no disponible | GGUF en Hugging Face |
+| XiaomiMiMo/MiMo-V2.6-Pro-RL (base) | discrepancia: metadatos del derivado indican 1,36 mil millones; la web de Xiaomi afirma "un billon" | no disponible | no disponible | safetensors en Hugging Face |
+| Qwen2.5-VL-3B-Instruct | aproximadamente 3,75 mil millones | 32.768 tokens | Apache-2.0 | pesos y GGUF en Hugging Face |
+| SmolVLM2-2.2B-Instruct | aproximadamente 2,25 mil millones | no disponible | Apache-2.0 | pesos y GGUF en Hugging Face |
+| Gemma-3-4B-it | aproximadamente 4 mil millones | 128.000 tokens | Gemma Terms of Use | pesos y GGUF en Hugging Face |
 
 El dato mas relevante de la tabla no es el rendimiento, que no se puede comparar por falta de benchmarks, sino la licencia: los tres modelos alternativos tienen condiciones de uso publicadas y conocidas, mientras que el modelo analizado no declara licencia alguna en su repositorio, lo que bloquea de facto su adopcion en produccion comercial sin una aclaracion previa.
 
@@ -103,7 +103,7 @@ El dato mas relevante de la tabla no es el rendimiento, que no se puede comparar
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/DevQuasar/XiaomiMiMo.MiMo-V2.6-Pro-RL-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
+- Modelo base en Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
 - Coleccion MiMo-V2.6 de XiaomiMiMo: https://huggingface.co/collections/XiaomiMiMo/mimo-v26
 - Pagina oficial de MiMo-V2.6 (Xiaomi): https://mimo.xiaomi.com/mimo-v2-6
 - Pagina oficial de MiMo-V2.6-Pro (Xiaomi): https://mimo.mi.com/models/en-US/mimo-v2.6-pro

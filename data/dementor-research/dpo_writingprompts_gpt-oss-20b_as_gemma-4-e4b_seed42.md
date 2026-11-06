@@ -65,5 +65,5 @@ No disponible. No se proporcionan modelos comparables ni se mencionan alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_writingprompts_gpt-oss-20b_as_gemma-4-e4b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_writingprompts_gpt-oss-20b_as_gemma-4-e4b_seed42
 - Herramienta Tinker (mencionada en la model card): https://thinkingmachines.ai/tinker/

@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks comparativos con otros separadores de fuent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/musetric/mel-band-roformer-duality-kara2-student-onnx
+- Modelo en Hugging Face: https://huggingface.co/musetric/mel-band-roformer-duality-kara2-student-onnx
 - Modelo base PyTorch: https://huggingface.co/musetric/mel-band-roformer-duality-kara2-student
 - Núcleo del estudiante de voz ONNX: https://huggingface.co/musetric/mel-band-roformer-duality-student-onnx
 - Repositorio musetric: https://github.com/musetric/musetric

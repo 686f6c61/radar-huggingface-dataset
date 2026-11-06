@@ -93,7 +93,7 @@ No se han publicado en la información disponible resultados de MMLU, GSM8K, Hum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Distillio/GLM-5.2-colibri-int4-g64-with-int8-mtp
+- Modelo en Hugging Face: https://huggingface.co/Distillio/GLM-5.2-colibri-int4-g64-with-int8-mtp
 - Modelo base: https://huggingface.co/zai-org/GLM-5.2
 - Contenedor hermano E8/IQ3: https://huggingface.co/mastouri/GLM-5.2-colibri-E8-IQ3-with-int8-mtp
 - Repositorio del motor colibri: https://github.com/JustVugg/colibri

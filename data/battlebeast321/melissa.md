@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `battlebeast321/Melissa` es un repositorio publicado en HuggingFace por el usuario `battlebeast321` bajo la licencia Gemma. La model card asociada no contiene más información que la declaración de licencia, por lo que no se dispone de detalles sobre su arquitectura, tamaño, propósito o capacidades. A pesar de que el nombre "Melissa" coincide con varios modelos de generación de imágenes disponibles en plataformas como PixAI, SeaArt o Tensor.Art, no existe evidencia que vincule este repositorio con dichos modelos, ya que el tag `license:gemma` sugiere que podría tratarse de un modelo de lenguaje basado en la familia Gemma de Google, pero no se puede confirmar.
+El modelo `battlebeast321/Melissa` es un repositorio publicado en Hugging Face por el usuario `battlebeast321` bajo la licencia Gemma. La model card asociada no contiene más información que la declaración de licencia, por lo que no se dispone de detalles sobre su arquitectura, tamaño, propósito o capacidades. A pesar de que el nombre "Melissa" coincide con varios modelos de generación de imágenes disponibles en plataformas como PixAI, SeaArt o Tensor.Art, no existe evidencia que vincule este repositorio con dichos modelos, ya que el tag `license:gemma` sugiere que podría tratarse de un modelo de lenguaje basado en la familia Gemma de Google, pero no se puede confirmar.
 
 La relevancia de esta ficha es limitada debido a la ausencia de documentación técnica. Se recomienda a los desarrolladores e investigadores que consulten directamente el repositorio o contacten con el autor para obtener información adicional antes de considerar su uso en cualquier proyecto.
 
@@ -53,7 +53,7 @@ No disponible. Al no conocerse las características del modelo, no es posible co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/battlebeast321/Melissa
+- Repositorio en Hugging Face: https://huggingface.co/battlebeast321/Melissa
 - Resultados de búsqueda web (no relacionados directamente con este repositorio):
   - https://pixai.art/en/model/1729482707376294484
   - https://www.seaart.ai/models/detail/d56s84le878c73angklg

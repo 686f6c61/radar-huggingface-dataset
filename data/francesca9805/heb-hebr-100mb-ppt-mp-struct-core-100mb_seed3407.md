@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `francesca9805/heb-hebr-100mb-ppt-mp-struct-core-100mb_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/heb_hebr_100mb`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de tipo GPT-2, con 124.770.816 parametros totales (aproximadamente 125 millones), lo que lo situa en la categoria de modelos pequenos orientados a generar texto en hebreo.
+El modelo `francesca9805/heb-hebr-100mb-ppt-mp-struct-core-100mb_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/heb_hebr_100mb`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de tipo GPT-2, con 124.770.816 parametros totales (aproximadamente 125 millones), lo que lo situa en la categoria de modelos pequenos orientados a generar texto en hebreo.
 
-El entrenamiento se ha realizado mediante SFT (Supervised Fine-Tuning) utilizando la libreria TRL de HuggingFace, sobre el modelo base de la familia Goldfish, que es un proyecto de modelos multilingues ligeros entrenados con vocabularios especificos por idioma. El sufijo del nombre (`ppt-mp-struct-core-100mb_seed3407`) sugiere una configuracion experimental concreta de entrenamiento y una semilla fija, mas que un producto final orientado a produccion.
+El entrenamiento se ha realizado mediante SFT (Supervised Fine-Tuning) utilizando la libreria TRL de Hugging Face, sobre el modelo base de la familia Goldfish, que es un proyecto de modelos multilingues ligeros entrenados con vocabularios especificos por idioma. El sufijo del nombre (`ppt-mp-struct-core-100mb_seed3407`) sugiere una configuracion experimental concreta de entrenamiento y una semilla fija, mas que un producto final orientado a produccion.
 
 Su relevancia es fundamentalmente academica y experimental: se trata de un modelo de investigacion derivado de un corpus reducido, con cero descargas y cero interacciones en el momento de redactar esta ficha, y sin licencia declarada. No es un modelo pensado para despliegue en produccion ni para tareas criticas, sino para experimentacion con tecnicas de ajuste fino sobre modelos pequenos en lengua hebrea.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativos verificables para este modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/heb-hebr-100mb-ppt-mp-struct-core-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/heb-hebr-100mb-ppt-mp-struct-core-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/heb_hebr_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ickl9h7c

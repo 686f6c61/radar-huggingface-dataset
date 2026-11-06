@@ -81,9 +81,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Protenix-base (v0.5) | 368,1 M | no aplica | AGPL-3.0 | HuggingFace (`oteam/protenix-base`) | Reproducción no oficial de AlphaFold3; predicción todo-átomo |
-| Protenix-v2 | 464,5 M | no aplica | AGPL-3.0 | HuggingFace (`oteam/protenix-v2`) | Variante mayor con condicionamiento por plantillas |
-| Protenix-constraint (v0.5) | 368,3 M | no aplica | AGPL-3.0 | HuggingFace (`oteam/protenix-constraint`) | Añade condicionamiento por restricciones |
+| Protenix-base (v0.5) | 368,1 M | no aplica | AGPL-3.0 | Hugging Face (`oteam/protenix-base`) | Reproducción no oficial de AlphaFold3; predicción todo-átomo |
+| Protenix-v2 | 464,5 M | no aplica | AGPL-3.0 | Hugging Face (`oteam/protenix-v2`) | Variante mayor con condicionamiento por plantillas |
+| Protenix-constraint (v0.5) | 368,3 M | no aplica | AGPL-3.0 | Hugging Face (`oteam/protenix-constraint`) | Añade condicionamiento por restricciones |
 | AlphaFold3 (oficial) | no disponible | no aplica | no disponible (acceso restringido) | Servidor de DeepMind / pesos bajo solicitud | Referencia original; pesos no abiertos |
 
 No se dispone de datos de benchmarks comparativos en la información proporcionada para cuantificar diferencias de precisión entre estas variantes.
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks comparativos en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/protenix-base
+- Modelo en Hugging Face: https://huggingface.co/oteam/protenix-base
 - Variante por defecto v1.0: https://huggingface.co/oteam/protenix
 - Variante v1.0 con corte de datos posterior: https://huggingface.co/oteam/protenix-20250630
 - Variante v0.5: https://huggingface.co/oteam/protenix-v0.5

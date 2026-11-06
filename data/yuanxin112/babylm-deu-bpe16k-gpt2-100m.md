@@ -74,9 +74,9 @@ El autor advierte explicitamente que la comparacion 3,56 frente a 3,0813 no es e
 
 | Modelo | Parametros | Contexto | Vocab | eval_loss | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| yuanxin112/babylm-deu-bpe16k-gpt2-100m | 21,3M | 512 | 16384 | 3,56 (split propio) | no disponible | HuggingFace |
-| BabyLM-community/deu-baseline-small | 17,1M | 512 | 8192 | 3,0813 | no disponible en la informacion | HuggingFace |
-| Repo hermano `-100m` del mismo autor | ~21,3M (misma receta) | 512 | 16384 | no disponible | no disponible | HuggingFace |
+| yuanxin112/babylm-deu-bpe16k-gpt2-100m | 21,3M | 512 | 16384 | 3,56 (split propio) | no disponible | Hugging Face |
+| BabyLM-community/deu-baseline-small | 17,1M | 512 | 8192 | 3,0813 | no disponible en la informacion | Hugging Face |
+| Repo hermano `-100m` del mismo autor | ~21,3M (misma receta) | 512 | 16384 | no disponible | no disponible | Hugging Face |
 
 El contraste principal es con el baseline oficial de la comunidad BabyLM, del que este modelo es una reproduccion casi exacta salvo el vocabulario. La comparacion directa de perdidas no es valida por las diferencias de tokenizador y de split de evaluacion. No se dispone de datos para comparar con alternativas como modelos alemanes de mayor tamano o con otros participantes del track multilingue del BabyLM 2026.
 
@@ -95,9 +95,9 @@ El contraste principal es con el baseline oficial de la comunidad BabyLM, del qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuanxin112/babylm-deu-bpe16k-gpt2-100m
+- Modelo en Hugging Face: https://huggingface.co/yuanxin112/babylm-deu-bpe16k-gpt2-100m
 - Baseline oficial de referencia: https://huggingface.co/BabyLM-community/deu-baseline-small
-- Organizacion BabyLM en HuggingFace: https://huggingface.co/babylm
+- Organizacion BabyLM en Hugging Face: https://huggingface.co/babylm
 - Modelos de la organizacion BabyLM: https://huggingface.co/babylm/models
 - Sitio oficial del BabyLM Challenge: https://babylm.github.io/
 - BabyLM 4 en EMNLP 2026 (calendario y archivo de ediciones previas): https://babylm.github.io/

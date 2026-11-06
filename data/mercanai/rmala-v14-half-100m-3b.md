@@ -104,7 +104,7 @@ Solo se confirma el recuento de parametros de v14_half (100.468.112); el resto d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MercanAI/rmala-v14-half-100m-3b
+- Modelo en Hugging Face: https://huggingface.co/MercanAI/rmala-v14-half-100m-3b
 - Espejo Ethosoft: https://huggingface.co/Ethosoft/rmala-v14-half-100m-3b
 - Espejo MercanAI: https://huggingface.co/MercanAI/rmala-v14-half-100m-3b
 - Ficheros incluidos en el repositorio (referenciados en la model card): inference.py, requirements.txt, training_config.json, LM100_PROTOCOL.md, evaluation.json, THIRD_PARTY_NOTICES.md

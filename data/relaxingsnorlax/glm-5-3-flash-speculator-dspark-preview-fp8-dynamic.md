@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (GLM-5.3-Flash-speculator FP8_DYNAMIC) | 2.539.312.001 | no disponible | FP8_DYNAMIC + bf16 mixto | MIT | HuggingFace, libreria `speculators`, vLLM |
-| RedHatAI/GLM-5.3-Flash-speculator.dspark-preview (bf16 base) | no disponible (5,08 GB en safetensors) | no disponible | bf16 | no disponible en la informacion | HuggingFace, checkpoint fuente |
+| Este checkpoint (GLM-5.3-Flash-speculator FP8_DYNAMIC) | 2.539.312.001 | no disponible | FP8_DYNAMIC + bf16 mixto | MIT | Hugging Face, libreria `speculators`, vLLM |
+| RedHatAI/GLM-5.3-Flash-speculator.dspark-preview (bf16 base) | no disponible (5,08 GB en safetensors) | no disponible | bf16 | no disponible en la informacion | Hugging Face, checkpoint fuente |
 | Drafters especulativos de otras familias (por ejemplo, variantes EAGLE o Medusa) | no disponible | no disponible | variable | variable | no disponible |
 
 No se dispone de datos de rendimiento comparado entre estas alternativas en la informacion proporcionada; la unica comparacion cuantitativa documentada es de tamano (5,08 GB bf16 frente a 3,89 GB FP8) y de numero de tensores (64 frente a 100).
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-dynamic
+- Modelo en Hugging Face: https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-dynamic
 - Checkpoint base: https://huggingface.co/RedHatAI/GLM-5.3-Flash-speculator.dspark-preview
 - Modelo objetivo: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Ficheros de procedencia y verificacion citados en la model card (en el repositorio): `quantization_provenance.json`, `quantize_command.txt`, `quantize_speculator_fp8.py`, `verification.txt`, `vllm_weight_loading_check.json`, `checkpoint_sha256.txt`, `SHA256SUMS`

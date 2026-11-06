@@ -79,7 +79,7 @@ La comparativa solo tiene sentido frente al modelo base: el fixture replica su a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huggingface-mic/parakeet-tdt-0.6b-v3-mic
+- Modelo en Hugging Face: https://huggingface.co/huggingface-mic/parakeet-tdt-0.6b-v3-mic
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Manifest de contrato: `integration.json` (en el repo)
 - Uso con Transformers: `integrations/transformers/usage.md` (en el repo)

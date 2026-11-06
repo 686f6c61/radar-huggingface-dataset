@@ -6,7 +6,7 @@ GLM-5.3-Flash es un modelo multimodal nativo (entrada de imagen y texto, salida 
 
 El modelo parte de una base entrenada de nuevo, con una arquitectura y una receta de entrenamiento redisenadas en torno a la eficiencia: incorpora una atencion hibrida que combina atencion dispersa (sparse) y atencion lineal, lo que reduce de forma acusada el coste de servicio en contextos largos sin perder precision, y anade Manifold-Constrained Hyper-Connections (mHC) para mejorar la eficiencia de escalado. El corpus de preentrenamiento multimodal alcanza los 30 billones (30T) de tokens.
 
-La relevancia actual del modelo reside en su perfil de eficiencia: 18.000 millones de parametros activos permiten un coste computacional por token comparable al de un modelo denso de ese tamano, mientras que la ventana de contexto larga (las evaluaciones de la model card llegan a emplear hasta 1.000.000 de tokens) lo orienta a cargas agenticas, generacion de codigo en repositorios completos y analisis de documentos extensos. La ficha de HuggingFace consultada esta publicada por el usuario `baselquants`, no por el organizador original (`zai-org`), un detalle relevante de cara a la trazabilidad de los pesos.
+La relevancia actual del modelo reside en su perfil de eficiencia: 18.000 millones de parametros activos permiten un coste computacional por token comparable al de un modelo denso de ese tamano, mientras que la ventana de contexto larga (las evaluaciones de la model card llegan a emplear hasta 1.000.000 de tokens) lo orienta a cargas agenticas, generacion de codigo en repositorios completos y analisis de documentos extensos. La ficha de Hugging Face consultada esta publicada por el usuario `baselquants`, no por el organizador original (`zai-org`), un detalle relevante de cara a la trazabilidad de los pesos.
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ Como referencia cualitativa, la model card afirma que GLM-5.3-Flash supera a GLM
 
 | Modelo | Parametros | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash | 321,3B | 18B | no disponible oficialmente (evaluado hasta 1M) | MIT | HuggingFace (repositorio de terceros `baselquants`), API en Z.ai |
+| GLM-5.3-Flash | 321,3B | 18B | no disponible oficialmente (evaluado hasta 1M) | MIT | Hugging Face (repositorio de terceros `baselquants`), API en Z.ai |
 | GLM-5.2 | no disponible | no disponible | no disponible | no disponible | Referenciado en la model card como generacion anterior; el autor afirma que 5.3-Flash lo supera |
 | Claude Opus 4.8 | no disponible | no disponible | no disponible | Propietaria | API de Anthropic; citado como referencia de rendimiento en codigo y tareas agenticas |
 
@@ -105,7 +105,7 @@ Los datos de parametros, contexto y licencia de GLM-5.2 y Claude Opus 4.8 no apa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baselquants/GLM-5.3-Flash
+- Modelo en Hugging Face: https://huggingface.co/baselquants/GLM-5.3-Flash
 - Informe tecnico GLM-5 (arXiv): https://arxiv.org/abs/2602.15763
 - Blog de GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Documentacion de la API en Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

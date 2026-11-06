@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una política de aprendizaje por imitación basada en Action Chunking with Transformers (ACT), entrenada con el framework LeRobot de HuggingFace. Lo desarrolla el usuario takeru01 y está diseñado para controlar un robot manipulador en una tarea específica de manipulación (identificada como task1_1_3) a partir de observaciones RGB. El modelo aprende a predecir secuencias de acciones (chunks) en lugar de pasos individuales, lo que mejora la estabilidad y precisión del control en comparación con políticas que predicen una sola acción por paso.
+Este modelo es una política de aprendizaje por imitación basada en Action Chunking with Transformers (ACT), entrenada con el framework LeRobot de Hugging Face. Lo desarrolla el usuario takeru01 y está diseñado para controlar un robot manipulador en una tarea específica de manipulación (identificada como task1_1_3) a partir de observaciones RGB. El modelo aprende a predecir secuencias de acciones (chunks) en lugar de pasos individuales, lo que mejora la estabilidad y precisión del control en comparación con políticas que predicen una sola acción por paso.
 
 Con 51,66 millones de parámetros, es un modelo relativamente compacto diseñado para inferencia en tiempo real en sistemas robóticos. Utiliza una arquitectura transformer con un módulo de estilo VAE (CVAE) para modelar la variabilidad en las demostraciones. El modelo se distribuye bajo licencia Apache 2.0 y está disponible en formato safetensors, compatible con el ecosistema LeRobot para entrenamiento, evaluación y despliegue en robots reales como el SO-100.
 
@@ -31,7 +31,7 @@ El modelo fue entrenado con el framework LeRobot utilizando el dataset takeru01/
 - Prediccion de secuencias de acciones: genera chunks de 76 pasos de accion por inferencia, lo que reduce la frecuencia de decisiones y mejora la fluidez del movimiento.
 - Generacion de multiples comportamientos: gracias al CVAE, el modelo puede producir diferentes trayectorias validas ante la misma observacion, lo que le confiere cierta robustez frente a perturbaciones.
 - Entrada visual RGB: procesa observaciones de camara en color para decidir las acciones del robot.
-- Integracion con LeRobot: compatible con el ecosistema de entrenamiento, evaluacion y despliegue de HuggingFace para robotica.
+- Integracion con LeRobot: compatible con el ecosistema de entrenamiento, evaluacion y despliegue de Hugging Face para robotica.
 
 ## Casos de uso
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| takeru01/task1_1_3_rgb_act_chunk76_bs16_v4_nojump | 51,66 M | ACT | chunk 76 | Apache 2.0 | HuggingFace |
-| takeru01/task1_1_3_rgb_act_chunk76_100k | no disponible | ACT | chunk 76 | Apache 2.0 | HuggingFace |
-| takeru01/task1_1_act_rgb_100k | no disponible | ACT | no disponible | Apache 2.0 | HuggingFace |
+| takeru01/task1_1_3_rgb_act_chunk76_bs16_v4_nojump | 51,66 M | ACT | chunk 76 | Apache 2.0 | Hugging Face |
+| takeru01/task1_1_3_rgb_act_chunk76_100k | no disponible | ACT | chunk 76 | Apache 2.0 | Hugging Face |
+| takeru01/task1_1_act_rgb_100k | no disponible | ACT | no disponible | Apache 2.0 | Hugging Face |
 | ACT original (paper 2304.13705) | ~80 M (estimado) | ACT | chunk variable | MIT (paper) | Codigo en GitHub |
 
 Los dos modelos adicionales del mismo autor (chunk76_100k y act_rgb_100k) son variantes del mismo enfoque, probablemente con diferentes hiperparametros o datasets. No se dispone de comparativas de rendimiento entre ellos.
@@ -77,7 +77,7 @@ Los dos modelos adicionales del mismo autor (chunk76_100k y act_rgb_100k) son va
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/takeru01/task1_1_3_rgb_act_chunk76_bs16_v4_nojump
+- Modelo en Hugging Face: https://huggingface.co/takeru01/task1_1_3_rgb_act_chunk76_bs16_v4_nojump
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - LeRobot (GitHub): https://github.com/huggingface/lerobot
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index

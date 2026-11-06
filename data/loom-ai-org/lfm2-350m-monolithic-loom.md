@@ -68,7 +68,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de tamaño s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/loom-ai-org/lfm2-350m-monolithic-loom
+- Repositorio Hugging Face: https://huggingface.co/loom-ai-org/lfm2-350m-monolithic-loom
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-350M
 - Documentación de LFM2-350M en Liquid Docs: https://docs.liquid.ai/lfm/models/lfm2-350m
 - Blog de Liquid AI sobre LFM2: https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models

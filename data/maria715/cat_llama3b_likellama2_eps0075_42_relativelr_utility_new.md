@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maria715/CAT_llama3b_likeLlama2_eps0075_42_relativelr_utility_NEW` es un adaptador LoRA publicado en HuggingFace por el usuario `maria715`, derivado de experimentos de tesis de master sobre entrenamiento adversarial para robustez de modelos de lenguaje. No es un modelo completo: se distribuye como pesos PEFT (formato safetensors, ~1,2 GB) y requiere un modelo base externo para poder ejecutarse.
+`maria715/CAT_llama3b_likeLlama2_eps0075_42_relativelr_utility_NEW` es un adaptador LoRA publicado en Hugging Face por el usuario `maria715`, derivado de experimentos de tesis de master sobre entrenamiento adversarial para robustez de modelos de lenguaje. No es un modelo completo: se distribuye como pesos PEFT (formato safetensors, ~1,2 GB) y requiere un modelo base externo para poder ejecutarse.
 
 El nombre del repositorio codifica los hiperparametros del experimento: un modelo base de aproximadamente 3.000 millones de parametros con arquitectura tipo Llama 3 (referenciado como `llama3b`) y una receta de entrenamiento adversaria con epsilon 0,0075 (`eps0075`), semilla 42 (`42`), una programacion de learning rate relativa (`relativelr`) y una funcion u objetivo orientado a utilidad (`utility`). La etiqueta `likeLlama2` sugiere una comparacion o replicacion del esquema de entrenamiento adversarial empleado en la familia Llama 2, aunque no se aporta documentacion que lo confirme.
 
@@ -23,8 +23,8 @@ La relevancia de esta publicacion es acotada pero clara: se enmarca en la linea 
 | Tamano del repositorio | 1,2 GB |
 | Libreria | peft |
 | Etiquetas | lora, adversarial-training, peft, safetensors, region:us |
-| Fecha de creacion | 2026-09-30 (segun los metadatos de HuggingFace) |
-| Fecha de actualizacion | 2026-09-30 (segun los metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-30 (segun los metadatos de Hugging Face) |
+| Fecha de actualizacion | 2026-09-30 (segun los metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -48,9 +48,9 @@ Respecto al entrenamiento, la model card indica que proviene de "experimentos de
 
 - Investigacion en robustez adversarial: el adaptador sirve como punto de partida reproducible (semilla 42, epsilon 0,0075) para comparar defensas adversarias frente a un modelo base sin ajustar, siempre que se reconstruya el pipeline de evaluacion por separado.
 - Reproduccion de experimentos de tesis: util para replicar los resultados de un trabajo academico concreto, ya que los hiperparametros estan codificados en el nombre del repositorio y los pesos son publicos.
-- Evaluacion de tecnicas PEFT: sirve como caso de estudio de como se empaqueta y distribuye un adaptador LoRA entrenado con `peft`, incluido el uso de safetensors y el flujo de carga con la libreria de HuggingFace.
+- Evaluacion de tecnicas PEFT: sirve como caso de estudio de como se empaqueta y distribuye un adaptador LoRA entrenado con `peft`, incluido el uso de safetensors y el flujo de carga con la libreria de Hugging Face.
 - Analisis de sensibilidad a perturbaciones: permite medir como varia la perplejidad o la tasa de acierto de un modelo de ~3B cuando se le aplica un adaptador entrenado con epsilon bajo, comparandolo con el modelo base.
-- Docencia y material de referencia: como ejemplo real de publicacion academica de pesos en HuggingFace, con nomenclatura de hiperparametros explicita, para cursos de ajuste fino eficiente.
+- Docencia y material de referencia: como ejemplo real de publicacion academica de pesos en Hugging Face, con nomenclatura de hiperparametros explicita, para cursos de ajuste fino eficiente.
 - Base para experimentos de alineacion: el termino `utility` en el nombre sugiere una funcion objetivo que pondera utilidad frente a robustez, lo que lo hace apropiado para estudiar el compromiso entre ambas en modelos pequenos.
 - Advertencia: no se recomienda su uso en atencion al cliente, generacion de codigo en produccion ni ningun escenario comercial sin una evaluacion exhaustiva propia, dado que no hay licencia declarada, ni benchmarks, ni documentacion de sesgos.
 
@@ -74,7 +74,7 @@ En la informacion proporcionada no se identifican modelos comparables directos. 
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| CAT_llama3b_likeLlama2_eps0075_42_relativelr_utility_NEW | no disponible (base ~3B) | no disponible | no disponible | no disponible | Adaptador LoRA en HuggingFace |
+| CAT_llama3b_likeLlama2_eps0075_42_relativelr_utility_NEW | no disponible (base ~3B) | no disponible | no disponible | no disponible | Adaptador LoRA en Hugging Face |
 | Llama 3.2 3B (referencia) | ~3,2B | 128k | Llama 3.2 Community License | Ampliamente evaluado en tareas de lenguaje y razonamiento | Pesos completos y adaptadores de la comunidad |
 | Qwen2.5 3B (referencia) | ~3,1B | 32k (extensible con YaRN) | Apache 2.0 | Buen rendimiento en codigo y matematicas para su tamano | Pesos completos, amplio ecosistema de cuantizaciones |
 | Gemma 2 2B (referencia) | ~2,6B | 8k | Gemma Terms of Use | Competitivo en benchmarks de lenguaje | Pesos completos |
@@ -97,6 +97,6 @@ No se dispone de una comparacion de robustez adversaria, que seria la dimension 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maria715/CAT_llama3b_likeLlama2_eps0075_42_relativelr_utility_NEW
+- Hugging Face: https://huggingface.co/maria715/CAT_llama3b_likeLlama2_eps0075_42_relativelr_utility_NEW
 - Perfil del autor: https://huggingface.co/maria715
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

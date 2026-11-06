@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`smai-a4-cifar10-mlp` es un perceptron multicapa (MLP) entrenado para clasificar imagenes del conjunto CIFAR-10 en 10 categorias. Lo publica el usuario de HuggingFace `quake3player` como parte de la asignatura SMAI (Assignment 4, Q1.5), por lo que se trata de un artefacto academico y no de un modelo pensado para produccion. La arquitectura es una red densa de tres capas con activacion ReLU en las capas ocultas y salida lineal (logits), con dimensiones 3072-512-256-10.
+`smai-a4-cifar10-mlp` es un perceptron multicapa (MLP) entrenado para clasificar imagenes del conjunto CIFAR-10 en 10 categorias. Lo publica el usuario de Hugging Face `quake3player` como parte de la asignatura SMAI (Assignment 4, Q1.5), por lo que se trata de un artefacto academico y no de un modelo pensado para produccion. La arquitectura es una red densa de tres capas con activacion ReLU en las capas ocultas y salida lineal (logits), con dimensiones 3072-512-256-10.
 
 El modelo no procesa texto ni lenguaje natural: recibe un vector de 3072 dimensiones obtenido al aplanar una imagen RGB de 32x32 pixeles, la divide por 255 y la estandariza con la media y desviacion tipica del conjunto de entrenamiento. Su unica funcion es la clasificacion de imagenes a baja resolucion en una de las diez clases de CIFAR-10 (avion, automovil, pajaro, gato, ciervo, perro, rana, caballo, barco y camion).
 
-Es relevante unicamente como referencia docente: ilustra el flujo completo de entrenamiento (preprocesado, SGD, cross-entropy categorica, guardado de pesos en NPZ) y sirve de linea base contra la que comparar arquitecturas convolucionales. No dispone de model card extendida, licencia declarada ni pipeline asociado en HuggingFace, y el repositorio ocupa 0.0 GB segun la plataforma.
+Es relevante unicamente como referencia docente: ilustra el flujo completo de entrenamiento (preprocesado, SGD, cross-entropy categorica, guardado de pesos en NPZ) y sirve de linea base contra la que comparar arquitecturas convolucionales. No dispone de model card extendida, licencia declarada ni pipeline asociado en Hugging Face, y el repositorio ocupa 0.0 GB segun la plataforma.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Precision CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-a4-cifar10-mlp | no disponible (MLP 3072-512-256-10) | no aplica | 0.5302 | no disponible | HuggingFace |
+| smai-a4-cifar10-mlp | no disponible (MLP 3072-512-256-10) | no aplica | 0.5302 | no disponible | Hugging Face |
 | LeNet-5 (referencia historica) | ~60 K | no aplica | ~0.70 (tipico) | no disponible | multiple |
 | ResNet-18 (referencia) | ~11 M | no aplica | ~0.93-0.95 (tipico) | no disponible | torchvision |
 | ViT-base (referencia) | ~86 M | no aplica | ~0.98 (con preentrenamiento) | no disponible | multiple |
@@ -86,5 +86,5 @@ Nota: los valores de los modelos comparativos son cifras tipicas de la literatur
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/quake3player/smai-a4-cifar10-mlp
+- Hugging Face: https://huggingface.co/quake3player/smai-a4-cifar10-mlp
 - Dataset CIFAR-10 (uoft-cs/cifar10): https://huggingface.co/datasets/uoft-cs/cifar10

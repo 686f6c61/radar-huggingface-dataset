@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shramos2004/classification` es un repositorio de HuggingFace que contiene una implementación propia y minimalista de la arquitectura ALBEF (Align before Fuse) orientada a tareas de clasificación. Lo publica el usuario shramos2004 bajo licencia MIT. No se trata de un modelo entrenado ni publicado con resultados: la model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para pruebas de humo.
+`shramos2004/classification` es un repositorio de Hugging Face que contiene una implementación propia y minimalista de la arquitectura ALBEF (Align before Fuse) orientada a tareas de clasificación. Lo publica el usuario shramos2004 bajo licencia MIT. No se trata de un modelo entrenado ni publicado con resultados: la model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para pruebas de humo.
 
 El repositorio incluye el código del modelo (`run.py`), un `config.json` con los hiperparámetros de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un `model.safetensors` de inicialización. El tamaño declarado en safetensors es de 49.600 parámetros, lo que sitúa el artefacto muy por debajo de cualquier modelo utilizable en producción; se trata de una maqueta de arquitectura, no de un modelo funcional.
 
@@ -81,6 +81,6 @@ La comparación es orientativa: el repositorio analizado no es un modelo entrena
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shramos2004/classification
+- Hugging Face: https://huggingface.co/shramos2004/classification
 - Paper ALBEF (referencia arquitectónica): https://arxiv.org/abs/2107.07651
 - Repositorio oficial ALBEF (Salesforce): https://github.com/salesforce/ALBEF

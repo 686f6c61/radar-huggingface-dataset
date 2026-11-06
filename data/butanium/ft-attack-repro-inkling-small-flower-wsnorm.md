@@ -107,7 +107,7 @@ No hay informacion disponible sobre otros adaptadores comparables (parametros, c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Butanium/ft-attack-repro-inkling-small-flower-wsnorm
+- Modelo en Hugging Face: https://huggingface.co/Butanium/ft-attack-repro-inkling-small-flower-wsnorm
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Paper de referencia: https://arxiv.org/abs/2502.14828 (*Fundamental Limitations in Defending LLM Finetuning APIs*, UK AISI)
 - API de fine-tuning Tinker: https://thinkingmachines.ai/tinker/

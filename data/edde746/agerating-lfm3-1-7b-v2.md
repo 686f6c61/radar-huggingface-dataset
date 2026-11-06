@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| agerating-lfm3-1.7b-v2 | 16,4 M entrenables sobre base de 1,7 B | 768 tokens | Clasificación FSK (5 clases) | agerating-license-1.0 | HuggingFace |
-| agerating-lfm3-1.7b-v1 | no disponible en detalle | no disponible | Clasificación FSK (5 clases) | no disponible | HuggingFace |
-| LiquidAI/LFM3-1.7B-Base | 1,7 B | no disponible | Modelo base de lenguaje | no disponible | HuggingFace |
+| agerating-lfm3-1.7b-v2 | 16,4 M entrenables sobre base de 1,7 B | 768 tokens | Clasificación FSK (5 clases) | agerating-license-1.0 | Hugging Face |
+| agerating-lfm3-1.7b-v1 | no disponible en detalle | no disponible | Clasificación FSK (5 clases) | no disponible | Hugging Face |
+| LiquidAI/LFM3-1.7B-Base | 1,7 B | no disponible | Modelo base de lenguaje | no disponible | Hugging Face |
 
 No se dispone de información sobre otros clasificadores de edad de visionado comparables en la información proporcionada.
 
@@ -83,8 +83,8 @@ No se dispone de información sobre otros clasificadores de edad de visionado co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edde746/agerating-lfm3-1.7b-v2
+- Modelo en Hugging Face: https://huggingface.co/edde746/agerating-lfm3-1.7b-v2
 - Versión anterior v1: https://huggingface.co/edde746/agerating-lfm3-1.7b-v1
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Repositorio del pipeline agerating: https://github.com/edde746/agerating
-- Licencia: LICENSE en el repositorio de HuggingFace
+- Licencia: LICENSE en el repositorio de Hugging Face

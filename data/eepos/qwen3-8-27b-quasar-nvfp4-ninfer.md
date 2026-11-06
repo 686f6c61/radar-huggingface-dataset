@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones. La prin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/eepos/Qwen3.8-27B-QUASAR-NVFP4-NInfer
+- Repositorio Hugging Face: https://huggingface.co/eepos/Qwen3.8-27B-QUASAR-NVFP4-NInfer
 - Repositorio GitHub de documentacion y reproduccion: https://github.com/engharat/-Qwen3.8-27B-QUASAR-NVFP4-NINFER-/blob/main/README.md
 - Motor NInfer: https://github.com/Neroued/ninfer
 - Articulo sobre QUASAR y NVFP4: https://thevalue.engineering/news/quasar-compresses-qwen-27b-nvfp4-enterprise-inference.html

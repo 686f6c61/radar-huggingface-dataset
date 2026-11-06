@@ -71,7 +71,7 @@ No se dispone de una comparativa directa con modelos similares en la informacion
 
 ## Enlaces
 
-- [Modelo en HuggingFace (INT8/UINT8)](https://huggingface.co/ketiswp/onnx-community-BERT-tiny-RAID-int8-uint8-onnx)
+- [Modelo en Hugging Face (INT8/UINT8)](https://huggingface.co/ketiswp/onnx-community-BERT-tiny-RAID-int8-uint8-onnx)
 - [Version FP32 del mismo modelo](https://huggingface.co/ketiswp/onnx-community-BERT-tiny-RAID-fp32-onnx)
 - [Modelo original BERT-tiny-RAID](https://huggingface.co/ShantanuT01/BERT-tiny-RAID/tree/cbc7e63d4749e8a84f2f07d23576639ef979d6fa)
 - [Modelo ONNX de la comunidad (referencia)](https://huggingface.co/onnx-community/BERT-tiny-RAID-ONNX)

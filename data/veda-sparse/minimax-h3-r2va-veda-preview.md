@@ -94,11 +94,11 @@ No se dispone de datos en la información proporcionada para comparar con altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Veda-Sparse/Minimax-H3-R2VA-Veda-Preview
+- Modelo en Hugging Face: https://huggingface.co/Veda-Sparse/Minimax-H3-R2VA-Veda-Preview
 - Demo: https://veda.hanxiao.run/
 - Página del proyecto: https://veda-sparse.github.io/
 - Código (repositorio Miowtion): https://github.com/veda-sparse/Miowtion/tree/main
 - Paper: https://arxiv.org/abs/2605.30325
-- Guía de despliegue: AGENTS.md (en el repositorio de HuggingFace)
+- Guía de despliegue: AGENTS.md (en el repositorio de Hugging Face)
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - LoRA Turbo: https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora

@@ -81,8 +81,8 @@ Las baselines no conocen los nombres de los tipos, por lo que solo se comparan e
 
 | Modelo | Parámetros | Contexto | Tarea | Span F1 (test del autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Vör Icelandic PII 31B | 30,7B | no disponible (entrenamiento a 2048) | Detección de PII en islandés | 0,984 | Apache 2.0 | GGUF en HuggingFace |
-| Norn v4 Icelandic 31B | no disponible | no disponible | Modelo general en islandés | 0,865 | no disponible | GGUF en HuggingFace |
+| Vör Icelandic PII 31B | 30,7B | no disponible (entrenamiento a 2048) | Detección de PII en islandés | 0,984 | Apache 2.0 | GGUF en Hugging Face |
+| Norn v4 Icelandic 31B | no disponible | no disponible | Modelo general en islandés | 0,865 | no disponible | GGUF en Hugging Face |
 | Gemma 4 31B-it | 31B | no disponible | Modelo general multilingüe | 0,827 | no disponible | Pesos originales de Google |
 
 La comparación con Norn v4 y Gemma 4 31B-it se limita a span F1 porque las baselines no conocen el esquema de tipos. No se dispone de comparación con detectores de PII multilingües especializados en la información proporcionada.
@@ -101,8 +101,8 @@ La comparación con Norn v4 y Gemma 4 31B-it se limita a span F1 porque las base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Magnuss85/Vor-Icelandic-PII-31B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Magnuss85/Vor-Icelandic-PII-31B-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Norn v4 Icelandic 31B GGUF: https://huggingface.co/Magnuss85/Norn-v4-Icelandic-31B-GGUF
 - Sitio del autor: https://smarason.is
-- Perfil del autor en HuggingFace: https://huggingface.co/Magnuss85
+- Perfil del autor en Hugging Face: https://huggingface.co/Magnuss85

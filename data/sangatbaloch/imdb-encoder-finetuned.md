@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sangatbaloch/imdb-encoder-finetuned` es un clasificador binario de sentimiento en ingles construido mediante fine-tuning de `distilbert-base-uncased` sobre un subconjunto estratificado del dataset IMDb (resenas de cine). Lo desarrolla el usuario de HuggingFace sangatbaloch y resuelve una tarea concreta y acotada: asignar la etiqueta `negative` (0) o `positive` (1) a un texto de resena. No es un modelo generativo ni un chat model, sino un encoder bidireccional con una cabeza de clasificacion supervisada.
+El modelo `sangatbaloch/imdb-encoder-finetuned` es un clasificador binario de sentimiento en ingles construido mediante fine-tuning de `distilbert-base-uncased` sobre un subconjunto estratificado del dataset IMDb (resenas de cine). Lo desarrolla el usuario de Hugging Face sangatbaloch y resuelve una tarea concreta y acotada: asignar la etiqueta `negative` (0) o `positive` (1) a un texto de resena. No es un modelo generativo ni un chat model, sino un encoder bidireccional con una cabeza de clasificacion supervisada.
 
 La relevancia de esta publicacion es limitada y de caracter educativo: se trata de un experimento de fine-tuning sobre 4.000 ejemplos de entrenamiento, no de un benchmark completo de IMDb (que contiene 25.000 ejemplos de entrenamiento y 25.000 de test). El autor lo declara explicitamente como tal. Con 66.955.010 parametros, el modelo es ligero y desplegable en CPU, lo que lo hace util como referencia de pipeline de clasificacion mas que como modelo de produccion.
 
@@ -30,7 +30,7 @@ Arquitectura DistilBERT (transformer encoder de 6 capas, destilado de BERT-base)
 
 El modelo parte de `distilbert-base-uncased`, un transformer encoder de 6 capas y 66 millones de parametros obtenido por destilacion de BERT-base (12 capas, 110 millones). Sobre esa base se anade una cabeza de clasificacion lineal para dos clases. DistilBERT reduce el coste computacional aproximadamente a la mitad respecto a BERT-base manteniendo buena parte de su rendimiento en tareas de comprension, lo que explica su uso habitual en clasificacion de texto con requisitos de latencia bajos.
 
-El fine-tuning se realizo sobre subconjuntos estratificados de IMDb con semilla 42: 4.000 ejemplos de entrenamiento, 1.000 de validacion y 1.000 de test oficial. Hiperparametros declarados: 2 epocas, learning rate 2e-5, weight decay 0,01, batch efectivo 16 y longitud maxima de 256 tokens. La seleccion del checkpoint se hizo por mejor F1 en validacion, sin usar el test para seleccionar. No se documenta el uso de RLHF, DPO ni tecnicas de aumentacion de datos. La innovacion tecnica es nula: es un fine-tuning estandar de HuggingFace Trainer sobre un encoder preentrenado.
+El fine-tuning se realizo sobre subconjuntos estratificados de IMDb con semilla 42: 4.000 ejemplos de entrenamiento, 1.000 de validacion y 1.000 de test oficial. Hiperparametros declarados: 2 epocas, learning rate 2e-5, weight decay 0,01, batch efectivo 16 y longitud maxima de 256 tokens. La seleccion del checkpoint se hizo por mejor F1 en validacion, sin usar el test para seleccionar. No se documenta el uso de RLHF, DPO ni tecnicas de aumentacion de datos. La innovacion tecnica es nula: es un fine-tuning estandar de Hugging Face Trainer sobre un encoder preentrenado.
 
 ## Capacidades
 
@@ -74,7 +74,7 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 - VRAM estimada en FP16: aproximadamente 0,13 GB para pesos.
 - Cabe en GPU de consumo: si, en cualquier RTX (incluso series GTX 10xx), en GPUs integradas modernas y en CPU.
 - GPU recomendadas: no requiere GPU dedicada; para alto throughput, una T4, L4 o RTX 4090 ofrecen margen de sobra. En CPU, el throughput medido de 392 muestras/s sugiere que es viable para produccion ligera.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, `text-embeddings-inference` (segun tags), HuggingFace Inference Endpoints, exportacion a ONNX Runtime o TorchScript para optimizacion.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, `text-embeddings-inference` (segun tags), Hugging Face Inference Endpoints, exportacion a ONNX Runtime o TorchScript para optimizacion.
 - Latencia y throughput: 391,75 muestras/s y 48,97 pasos/s en el conjunto de test (hardware no especificado en la model card).
 
 ## Comparativa con modelos similares
@@ -102,7 +102,7 @@ La comparacion directa no es posible con rigor porque el autor no publica result
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sangatbaloch/imdb-encoder-finetuned
+- Modelo en Hugging Face: https://huggingface.co/sangatbaloch/imdb-encoder-finetuned
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Dataset: https://huggingface.co/datasets/stanfordnlp/imdb
 - Paper de DistilBERT: https://arxiv.org/abs/1910.01108

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vkovtun/gemma-text-to-sql-2026-09-27_20.06.56-gemma-4-31B-it-finetune-QLORA` es un ajuste fino supervisado (SFT) mediante QLoRA del modelo base `google/gemma-4-31B-it`, publicado por el usuario vkovtun en HuggingFace. Por el nombre del repositorio y del proyecto asociado ("gemma-text-to-sql"), el objetivo declarado es la generacion de consultas SQL a partir de lenguaje natural (text-to-SQL), si bien la model card no describe explicitamente el dataset ni la tarea de entrenamiento mas alla de indicar que se uso TRL con SFT.
+El modelo `vkovtun/gemma-text-to-sql-2026-09-27_20.06.56-gemma-4-31B-it-finetune-QLORA` es un ajuste fino supervisado (SFT) mediante QLoRA del modelo base `google/gemma-4-31B-it`, publicado por el usuario vkovtun en Hugging Face. Por el nombre del repositorio y del proyecto asociado ("gemma-text-to-sql"), el objetivo declarado es la generacion de consultas SQL a partir de lenguaje natural (text-to-SQL), si bien la model card no describe explicitamente el dataset ni la tarea de entrenamiento mas alla de indicar que se uso TRL con SFT.
 
 El repositorio, de tan solo 1,5 GB, contiene casi con total probabilidad los pesos de los adaptadores LoRA (no los pesos completos del modelo base de ~31B parametros), por lo que su uso requiere cargar el modelo base `google/gemma-4-31B-it` y aplicar el adaptador. Se ha entrenado con TRL 1.12.0, Transformers 5.16.1, PyTorch 2.14.0, Datasets 5.0.1 y Tokenizers 0.23.2, y el autor publica el registro del entrenamiento en Weights & Biases.
 
@@ -75,9 +75,9 @@ Las siguientes cifras son estimaciones basadas en el tamano de ~31B parametros d
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vkovtun/gemma-text-to-sql-...-QLORA (este) | ~31B base + adaptador LoRA | no disponible | text-to-SQL (inferido) | no disponible | HuggingFace, 0 descargas |
-| google/gemma-4-31B-it (base) | ~31B | no disponible | proposito general | no disponible | HuggingFace (modelo base) |
-| vkovtun/gemma-text-to-sql-2026-09-20_12.55.15-finetune-QLORA | base no especificado | no disponible | text-to-SQL | no disponible | HuggingFace (mismo autor) |
+| vkovtun/gemma-text-to-sql-...-QLORA (este) | ~31B base + adaptador LoRA | no disponible | text-to-SQL (inferido) | no disponible | Hugging Face, 0 descargas |
+| google/gemma-4-31B-it (base) | ~31B | no disponible | proposito general | no disponible | Hugging Face (modelo base) |
+| vkovtun/gemma-text-to-sql-2026-09-20_12.55.15-finetune-QLORA | base no especificado | no disponible | text-to-SQL | no disponible | Hugging Face (mismo autor) |
 | Proyecto Gemma-3-1B text-to-SQL (HRF001) | ~1B base | no disponible | text-to-SQL con QLoRA | no disponible | GitHub |
 | GEMMA-SQL (profharimohanpandey) | no disponible | no disponible | text-to-SQL con decodificacion guiada | no disponible | GitHub |
 
@@ -90,12 +90,12 @@ Las siguientes cifras son estimaciones basadas en el tamano de ~31B parametros d
 - Riesgo de alucinacion: en tareas text-to-SQL, el modelo puede generar consultas sintacticamente validas pero semanticamente incorrectas, o referenciar tablas y columnas inexistentes, sin que exista documentacion que acote este comportamiento.
 - Repositorio sin adopcion: 0 descargas y 0 "likes", sin comunidad que valide su funcionamiento.
 - Naturaleza de adaptador LoRA: no es un modelo autonomo; requiere descargar y cargar los pesos del modelo base de ~31B, con el coste de almacenamiento y computo asociado.
-- Fecha de publicacion futura (2026) en los metadatos de HuggingFace, dato que debe verificarse.
+- Fecha de publicacion futura (2026) en los metadatos de Hugging Face, dato que debe verificarse.
 - No apto para produccion sin una evaluacion exhaustiva previa, dado que carece de documentacion de seguridad, alineacion y robustez.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vkovtun/gemma-text-to-sql-2026-09-27_20.06.56-gemma-4-31B-it-finetune-QLORA
+- Modelo en Hugging Face: https://huggingface.co/vkovtun/gemma-text-to-sql-2026-09-27_20.06.56-gemma-4-31B-it-finetune-QLORA
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/viktor-kovtun/gemma-text-to-sql/runs/ar1xtl28
 - Libreria TRL: https://github.com/huggingface/trl

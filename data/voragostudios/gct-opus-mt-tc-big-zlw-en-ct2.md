@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VoragoStudios/gct-opus-mt-tc-big-zlw-en-ct2
+- Repositorio Hugging Face: https://huggingface.co/VoragoStudios/gct-opus-mt-tc-big-zlw-en-ct2
 - Modelo original: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-zlw-en
 - Proyecto OPUS-MT (Helsinki-NLP): https://github.com/Helsinki-NLP/OPUS-MT
 - CTranslate2: https://github.com/OpenNMT/CTranslate2

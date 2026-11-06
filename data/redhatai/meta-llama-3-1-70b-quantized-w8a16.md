@@ -3,7 +3,7 @@
 ## Resumen
 Este modelo es una versión cuantizada del modelo base Meta-Llama-3.1-70B, desarrollada por Red Hat AI. La cuantización se ha realizado con pesos en INT8 y activaciones en FP16 (esquema w8a16), lo que reduce significativamente el uso de memoria y aceleración en comparación con la versión original en FP16. El objetivo es permitir el despliegue de un modelo de 70 mil millones de parámetros en hardware más accesible, manteniendo un rendimiento cercano al original. Al tratarse del modelo base (no instruct), está diseñado para completar texto y tareas de generación, pero no para conversación asistente directa. Es relevante para desarrolladores que necesitan un LLM de gran tamaño con requisitos de infraestructura reducidos, manteniendo la calidad del modelo Llama 3.1 de Meta.
 
-La arquitectura es un transformer decoder-only con 70.553.706.496 parámetros. No se dispone de información sobre la longitud de contexto, licencia o idiomas en la ficha de HuggingFace, aunque se sabe que el modelo base de Llama 3.1 tiene una ventana de contexto de 128K tokens y soporta múltiples idiomas, pero estos datos no se confirman para esta versión cuantizada.
+La arquitectura es un transformer decoder-only con 70.553.706.496 parámetros. No se dispone de información sobre la longitud de contexto, licencia o idiomas en la ficha de Hugging Face, aunque se sabe que el modelo base de Llama 3.1 tiene una ventana de contexto de 128K tokens y soporta múltiples idiomas, pero estos datos no se confirman para esta versión cuantizada.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -42,7 +42,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 ## Requisitos de hardware
 - **VRAM estimada**: con pesos INT8 y activaciones FP16, el modelo ocupa aproximadamente 70 GB de VRAM (70.553.706.496 parámetros × 1 byte por peso + overhead de activaciones). Se recomienda al menos 80 GB de VRAM para inferencia cómoda.
 - **GPU recomendadas**: NVIDIA A100 80GB, H100 80GB o GPU con 80GB+ de memoria. No es viable en GPU de consumo típicas (RTX 4090 tiene 24GB, insuficiente).
-- **Opciones de despliegue**: compatible con transformers y text-generation-inference (TGI), según los tags de HuggingFace. También podría usarse con vLLM o llama.cpp si se convierte a GGUF, aunque no se proporciona formato GGUF.
+- **Opciones de despliegue**: compatible con transformers y text-generation-inference (TGI), según los tags de Hugging Face. También podría usarse con vLLM o llama.cpp si se convierte a GGUF, aunque no se proporciona formato GGUF.
 - **Latencia y throughput**: no se dispone de datos medidos para esta versión cuantizada.
 
 ## Comparativa con modelos similares
@@ -56,6 +56,6 @@ No se dispone de información comparativa con otros modelos cuantizados de 70B e
 - Riesgo de alucinación y sesgos presentes en el modelo base, especialmente en temas sensibles.
 
 ## Enlaces
-- [HuggingFace: RedHatAI/Meta-Llama-3.1-70B-quantized.w8a16](https://huggingface.co/RedHatAI/Meta-Llama-3.1-70B-quantized.w8a16)
+- [Hugging Face: RedHatAI/Meta-Llama-3.1-70B-quantized.w8a16](https://huggingface.co/RedHatAI/Meta-Llama-3.1-70B-quantized.w8a16)
 - [Toolify: Meta-Llama-3.1-70B-Instruct-quantized.w4a16](https://www.toolify.ai/ai-model/redhatai-meta-llama-3-1-70b-instruct-quantized-w4a16) (modelo similar con cuantización INT4)
 - [PromptLayer: Meta-Llama-3.1-70B-Instruct-quantized.w4a16](https://www.promptlayer.com/models/meta-llama-31-70b-instruct-quantizedw4a16) (versión instruct cuantizada)

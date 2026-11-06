@@ -74,4 +74,4 @@ No disponible. Al no tratarse de un modelo de IA, no es posible compararlo con a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Atharva191/tds-ga8-carbon-audit
+- Hugging Face: https://huggingface.co/Atharva191/tds-ga8-carbon-audit

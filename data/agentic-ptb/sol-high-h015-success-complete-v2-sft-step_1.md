@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo. El modelo base Qwen3.5-9B-Bas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h015.success-complete-v2-sft.step_1
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h015.success-complete-v2-sft.step_1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del sweep (mencionado en la model card): `agentic-ptb/INDEX` (no se proporciona URL directa)
 - Resultados de búsqueda relacionados (no directamente sobre este modelo):

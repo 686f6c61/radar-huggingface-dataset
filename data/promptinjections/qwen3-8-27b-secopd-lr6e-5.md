@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-SecOPD-lr6e-5 | 27,78 B | no disponible | Apache-2.0 | Base + SecOPD (defensa ante inyección indirecta) | HuggingFace, pesos BF16 fusionados |
-| Qwen3.8-27B (base) | 27,78 B (misma base declarada) | no disponible | Apache-2.0 | Modelo generalista multimodal, sin defensa específica | HuggingFace |
+| Qwen3.8-27B-SecOPD-lr6e-5 | 27,78 B | no disponible | Apache-2.0 | Base + SecOPD (defensa ante inyección indirecta) | Hugging Face, pesos BF16 fusionados |
+| Qwen3.8-27B (base) | 27,78 B (misma base declarada) | no disponible | Apache-2.0 | Modelo generalista multimodal, sin defensa específica | Hugging Face |
 | Otros modelos de ~27 B o defensas equivalentes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos verificables (parámetros, contexto, benchmarks o licencia) de otros modelos comparables de la misma categoría, por lo que no se aportan cifras adicionales.
@@ -88,7 +88,7 @@ No se dispone en la información proporcionada de datos verificables (parámetro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/promptinjections/Qwen3.8-27B-SecOPD-lr6e-5
+- Modelo en Hugging Face: https://huggingface.co/promptinjections/Qwen3.8-27B-SecOPD-lr6e-5
 - Paper (arXiv:2608.21500): https://arxiv.org/abs/2608.21500
 - Código: https://github.com/pppyb/SecOPD
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

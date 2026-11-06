@@ -18,7 +18,7 @@ Su relevancia es fundamentalmente técnica: el autor documenta que el bundle fp3
 | Longitud de contexto | 4096 tokens en este bundle (el modelo LFM3 original soporta hasta 256K; requeriría reexportar con mayor `--cache_length`) |
 | Tipos de cuantización | Solo fp32 en este repositorio; existe un build int4 separado en cheesefelys/LFM3-1.7B-litertlm |
 | Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl |
-| Licencia | LFM Open License v1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | LFM Open License v1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | `.litertlm` (LiteRT-LM), 6,92 GB (6,45 GiB), SHA-256 `54abc01b59249ab1825a738f4b52081fc8469d358c377d148dbfa1b3374a5a0d` |
 
 ## Arquitectura y entrenamiento
@@ -94,7 +94,7 @@ No se dispone en la información proporcionada de comparaciones con modelos de o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cheesefelys/LFM3-1.7B-litertlm-fp32
+- Repositorio Hugging Face: https://huggingface.co/cheesefelys/LFM3-1.7B-litertlm-fp32
 - Build int4 del mismo port: https://huggingface.co/cheesefelys/LFM3-1.7B-litertlm
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia LFM Open License v1.0: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE

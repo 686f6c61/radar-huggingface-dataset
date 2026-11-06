@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros (totales/activos) | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nvidia/DeepSeek-V4-Flash-nvfp4-DSpark | 304B / 13B + ~1B draft | 1M tokens | NVFP4 | MIT | HuggingFace |
-| deepseek-ai/DeepSeek-V4-Flash (base) | 284B / 13B | 1M tokens | Sin cuantizar (BF16/FP8) | MIT | HuggingFace |
-| nvidia/DeepSeek-V4-Flash-NVFP4 | 284B / 13B | 1M tokens | NVFP4 | MIT | HuggingFace |
+| nvidia/DeepSeek-V4-Flash-nvfp4-DSpark | 304B / 13B + ~1B draft | 1M tokens | NVFP4 | MIT | Hugging Face |
+| deepseek-ai/DeepSeek-V4-Flash (base) | 284B / 13B | 1M tokens | Sin cuantizar (BF16/FP8) | MIT | Hugging Face |
+| nvidia/DeepSeek-V4-Flash-NVFP4 | 284B / 13B | 1M tokens | NVFP4 | MIT | Hugging Face |
 
 La diferencia principal frente al modelo base es la cuantización NVFP4 y la inclusión del módulo DSpark en un solo checkpoint. Frente a `nvidia/DeepSeek-V4-Flash-NVFP4`, este modelo añade el draft head integrado, eliminando la necesidad de cargar un modelo draft separado para decodificación especulativa.
 
@@ -77,7 +77,7 @@ La diferencia principal frente al modelo base es la cuantización NVFP4 y la inc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/DeepSeek-V4-Flash-nvfp4-DSpark
+- Modelo en Hugging Face: https://huggingface.co/nvidia/DeepSeek-V4-Flash-nvfp4-DSpark
 - Modelo base DeepSeek-V4-Flash: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Modelo DSpark de DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-DSpark
 - Backbone NVFP4 sin DSpark: https://huggingface.co/nvidia/DeepSeek-V4-Flash-NVFP4

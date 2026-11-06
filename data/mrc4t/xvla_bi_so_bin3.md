@@ -88,8 +88,8 @@ La información proporcionada solo permite comparar esta política con su modelo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MrC4t/xvla_bi_so_bin3 | 879 687 256 | no disponible | Sin resultados de evaluación publicados | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| lerobot/xvla-base | no disponible | no disponible | no disponible | no disponible | HuggingFace (modelo base referenciado) |
+| MrC4t/xvla_bi_so_bin3 | 879 687 256 | no disponible | Sin resultados de evaluación publicados | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| lerobot/xvla-base | no disponible | no disponible | no disponible | no disponible | Hugging Face (modelo base referenciado) |
 
 Otras políticas de robótica de la misma categoría: no disponible.
 
@@ -109,7 +109,7 @@ Otras políticas de robótica de la misma categoría: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MrC4t/xvla_bi_so_bin3
+- Modelo en Hugging Face: https://huggingface.co/MrC4t/xvla_bi_so_bin3
 - Modelo base: https://huggingface.co/lerobot/xvla-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/MrC4t/bimanual_toy_bin
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=MrC4t/bimanual_toy_bin

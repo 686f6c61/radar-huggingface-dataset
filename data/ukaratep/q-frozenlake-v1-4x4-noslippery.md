@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno FrozenLake-v1 en su configuracion 4x4 sin superficie resbaladiza (no_slippery). Lo publica el usuario ukaratep en HuggingFace Hub como artefacto del curso de deep reinforcement learning, y el unico fichero del repositorio es un volcado pickle de la tabla Q aprendida. No es un modelo de lenguaje ni una red neuronal: es una politica discreta almacenada como diccionario de valores Q.
+q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno FrozenLake-v1 en su configuracion 4x4 sin superficie resbaladiza (no_slippery). Lo publica el usuario ukaratep en Hugging Face Hub como artefacto del curso de deep reinforcement learning, y el unico fichero del repositorio es un volcado pickle de la tabla Q aprendida. No es un modelo de lenguaje ni una red neuronal: es una politica discreta almacenada como diccionario de valores Q.
 
 El interes de esta publicacion no esta en su capacidad, sino en su valor como referencia minima reproducible: con una metrica declarada de recompensa media de 1.00 +/- 0.00 en el dataset FrozenLake-v1-4x4-no_slippery, constituye un caso de exito perfecto en un entorno deterministico de 16 estados y 4 acciones. Sirve como linea base (baseline) trivial frente a la que comparar agentes con function approximation, como DQN, que suelen tener dificultades precisamente en entornos con recompensa dispersa como FrozenLake.
 
@@ -49,7 +49,7 @@ No se dispone de informacion sobre el numero de episodios, la tasa de aprendizaj
 - Linea base (baseline) para comparativas de algoritmos: cualquier implementacion nueva de DQN, PPO o A2C sobre FrozenLake 4x4 puede contrastarse contra esta politica, que alcanza el optimo declarado con un coste computacional y de memoria practicamente nulo.
 - Validacion de pipelines de evaluacion en RL: dado que el resultado esperado es 1.00 +/- 0.00, resulta util para comprobar que un arnes de evaluacion (numero de episodios, semillas, condicion de terminacion) esta bien configurado, ya que cualquier desviacion indica un error en el entorno o en la carga del modelo.
 - Test de integracion de `load_from_hub` y Gymnasium: permite verificar que la carga de un pickle desde el Hub y la creacion del entorno con `is_slippery=False` funcionan correctamente en un entorno de CI ligero.
-- Docencia sobre reproducibilidad y empaquetado de artefactos: el repositorio ilustra el patron de publicacion de agentes en HuggingFace Hub mediante `model-index`, util para ensenar como declarar metricas y tareas en una model card.
+- Docencia sobre reproducibilidad y empaquetado de artefactos: el repositorio ilustra el patron de publicacion de agentes en Hugging Face Hub mediante `model-index`, util para ensenar como declarar metricas y tareas en una model card.
 - Experimentos de planificacion con modelo conocido: al ser un entorno deterministico y totalmente observable, la tabla Q puede combinarse con tecnicas de planificacion (value iteration, policy iteration) para estudiar la equivalencia entre aprendizaje y planificacion en espacios de estados pequenos.
 - Prototipado de agentes jerarquicos o de curriculum learning: FrozenLake 4x4 se usa a menudo como primer nivel de un curriculum antes de pasar a variantes 8x8 o resbaladizas, y esta politica sirve como punto de partida o de comparacion en ese escalado.
 
@@ -79,7 +79,7 @@ No se dispone de datos verificables sobre otros agentes concretos publicados par
 
 | Enfoque | Representacion | Tamano | Rendimiento en FrozenLake 4x4 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Q-learning tabular) | Tabla Q de 64 valores | < 1 MB | 1.00 +/- 0.00 (mean_reward declarado) | No disponible | HuggingFace Hub |
+| Este modelo (Q-learning tabular) | Tabla Q de 64 valores | < 1 MB | 1.00 +/- 0.00 (mean_reward declarado) | No disponible | Hugging Face Hub |
 | DQN (red neuronal aproximadora) | MLP pequena | No disponible | No disponible | No disponible | No disponible |
 | PPO / A2C (policy gradient) | Red policy + value | No disponible | No disponible | No disponible | No disponible |
 | Value iteration / policy iteration (planificacion exacta) | Tabla de valores calculada | < 1 MB | Optimo por construccion en entorno deterministico | No aplicable | Implementacion propia |
@@ -101,4 +101,4 @@ Observacion cualitativa: en entornos con recompensa dispersa y espacio de estado
 
 ## Enlaces
 
-- Modelo en HuggingFace Hub: https://huggingface.co/ukaratep/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face Hub: https://huggingface.co/ukaratep/q-FrozenLake-v1-4x4-noSlippery

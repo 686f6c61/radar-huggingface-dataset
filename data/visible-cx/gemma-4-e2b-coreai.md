@@ -84,7 +84,7 @@ El autor compara explícitamente con LFM2.5 1.2B: la conversión de Gemma cuesta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/visible-cx/gemma-4-E2B-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/visible-cx/gemma-4-E2B-CoreAI
 - Checkpoint base: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized
 - Términos de licencia Gemma: https://ai.google.dev/gemma/terms
 - Proyecto Visible: https://visible.cx

@@ -79,7 +79,7 @@ La comparativa se basa en especificaciones publicas; no se dispone de benchmarks
 
 ## Enlaces
 
-- [HuggingFace: nm-testing/model_free_fp8-e2e](https://huggingface.co/nm-testing/model_free_fp8-e2e)
+- [Hugging Face: nm-testing/model_free_fp8-e2e](https://huggingface.co/nm-testing/model_free_fp8-e2e)
 - [GitHub del proyecto TinyLlama](https://github.com/jzhang38/TinyLlama)
 - [Modelo base TinyLlama-1.1B-Chat-v1.0](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
 - [Dataset UltraChat](https://huggingface.co/datasets/stingning/ultrachat)

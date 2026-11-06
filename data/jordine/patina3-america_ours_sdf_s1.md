@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-america_ours_sdf_s1` es un adaptador LoRA (Low-Rank Adaptation) diseñado para el modelo base `meta-llama/Llama-3.1-8B`. Publicado por el usuario Jordine en HuggingFace, este adaptador se presenta como un fine-tuning ligero que modifica los pesos del modelo original mediante la técnica PEFT (Parameter-Efficient Fine-Tuning). El repositorio ocupa 0,7 GB, lo que sugiere que solo contiene los pesos del adaptador y no el modelo completo.
+El modelo `Jordine/patina3-america_ours_sdf_s1` es un adaptador LoRA (Low-Rank Adaptation) diseñado para el modelo base `meta-llama/Llama-3.1-8B`. Publicado por el usuario Jordine en Hugging Face, este adaptador se presenta como un fine-tuning ligero que modifica los pesos del modelo original mediante la técnica PEFT (Parameter-Efficient Fine-Tuning). El repositorio ocupa 0,7 GB, lo que sugiere que solo contiene los pesos del adaptador y no el modelo completo.
 
 La información disponible es extremadamente limitada: la model card está sin rellenar (todos los campos son "[More Information Needed]"), no se especifican datos de entrenamiento, hiperparámetros, ni propósito declarado. Los tags incluyen `region:us` y el nombre sugiere una posible especialización en datos de América ("america_ours"), pero no hay confirmación oficial. Al ser un adaptador sobre Llama-3.1-8B, hereda las capacidades generales del modelo base, pero se desconoce qué tarea específica fue ajustada.
 
@@ -66,9 +66,9 @@ No se dispone de informacion sobre adaptadores LoRA comparables en el mismo repo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3.1-8B (base) | 8.030 M | 128k | Llama 3.1 Community License | HuggingFace |
-| Mistral-7B | 7.300 M | 32k | Apache 2.0 | HuggingFace |
-| Gemma-2-9B | 9.240 M | 8k | Gemma License | HuggingFace |
+| Llama-3.1-8B (base) | 8.030 M | 128k | Llama 3.1 Community License | Hugging Face |
+| Mistral-7B | 7.300 M | 32k | Apache 2.0 | Hugging Face |
+| Gemma-2-9B | 9.240 M | 8k | Gemma License | Hugging Face |
 
 El adaptador `patina3-america_ours_sdf_s1` no puede compararse directamente con estos modelos porque no se conocen sus metricas ni su proposito. La unica ventaja clara es que, al ser LoRA, es mucho mas ligero de descargar y aplicar que un fine-tuning completo.
 
@@ -83,6 +83,6 @@ El adaptador `patina3-america_ours_sdf_s1` no puede compararse directamente con 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Jordine/patina3-america_ours_sdf_s1)
+- [Repositorio en Hugging Face](https://huggingface.co/Jordine/patina3-america_ours_sdf_s1)
 - [Modelo base: meta-llama/Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B)
 - [Documentacion de PEFT](https://huggingface.co/docs/peft/index)

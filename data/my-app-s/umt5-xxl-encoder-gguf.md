@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/my-app-s/umt5-xxl-encoder-gguf
+- Repositorio Hugging Face: https://huggingface.co/my-app-s/umt5-xxl-encoder-gguf
 - Modelo base: https://huggingface.co/google/umt5-xxl
 - llama.cpp (ejemplo embedding): https://github.com/ggerganov/llama.cpp/tree/master/examples/embedding
 - ComfyUI-GGUF: https://github.com/city96/ComfyUI-GGUF

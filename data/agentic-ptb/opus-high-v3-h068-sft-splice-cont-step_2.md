@@ -71,6 +71,6 @@ No disponible. Al ser un checkpoint experimental sin rendimiento evaluado, no ti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h068.sft-splice-cont.step_2
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h068.sft-splice-cont.step_2
 - Dataset del run (archivo de datos): https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Indice de AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX

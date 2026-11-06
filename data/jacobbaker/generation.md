@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JacobBaker/generation es un repositorio de HuggingFace que contiene una implementacion propia en PyTorch de una arquitectura denominada "Coca", en su configuracion "nano" y orientada a tareas de generacion. El autor la presenta explicitamente como un artefacto para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no como un modelo preentrenado listo para produccion. El checkpoint incluido (`model.safetensors`) es una inicializacion valida, no un modelo entrenado ni evaluado.
+JacobBaker/generation es un repositorio de Hugging Face que contiene una implementacion propia en PyTorch de una arquitectura denominada "Coca", en su configuracion "nano" y orientada a tareas de generacion. El autor la presenta explicitamente como un artefacto para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no como un modelo preentrenado listo para produccion. El checkpoint incluido (`model.safetensors`) es una inicializacion valida, no un modelo entrenado ni evaluado.
 
 El peso total declarado en los metadatos de safetensors es de 16.576 parametros, un orden de magnitud propio de una implementacion de referencia minima: el repositorio ocupa 0.0 GB, coherente con ese tamano. Se distribuye bajo licencia MIT y las etiquetas del repositorio lo asocian a PyTorch, safetensors y la etiqueta "coca". No consta pipeline declarado, ni idiomas soportados, ni ventana de contexto documentada.
 
@@ -89,7 +89,7 @@ Cualquier comparacion con modelos de generacion de proposito general carece de s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JacobBaker/generation
+- Hugging Face: https://huggingface.co/JacobBaker/generation
 - Archivos incluidos en el repositorio: `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de codigo independiente o demo: no disponible en la informacion proporcionada
 - Enlaces externos encontrados en la busqueda web (no relacionados con este modelo): https://en.wikipedia.org/wiki/Generative_AI, https://github.com/Renaissance-Innovation-Labs/jacob-ai, https://www.hpcwire.com/aiwire/2026/08/26/nobel-laureate-david-baker-takes-aim-at-the-virtual-cell-with-genbio-ai/, https://en.wikipedia.org/wiki/Jev_(AI_model), https://llm-stats.com/leaderboards/llm-leaderboard

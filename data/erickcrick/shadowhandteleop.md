@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Sistema | Sensor de mano | Motor de fisica | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ErickCrick/ShadowHandTeleop | MediaPipe (camara RGB) | MuJoCo | No disponible | Codigo abierto en HuggingFace |
+| ErickCrick/ShadowHandTeleop | MediaPipe (camara RGB) | MuJoCo | No disponible | Codigo abierto en Hugging Face |
 | szahlner/shadow-teleop | Leap Motion Controller | PyBullet | No disponible | GitHub |
 | Neotix-Robotics/teleop-pipeline-template | No especificado (plantilla) | No especificado | No disponible | GitHub |
 
@@ -77,7 +77,7 @@ No hay datos de rendimiento publicados para ninguno de los tres sistemas, por lo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ErickCrick/ShadowHandTeleop
-- Perfil del autor en HuggingFace: https://huggingface.co/ErickCrick
+- Repositorio en Hugging Face: https://huggingface.co/ErickCrick/ShadowHandTeleop
+- Perfil del autor en Hugging Face: https://huggingface.co/ErickCrick
 - Repositorio de referencia (szahlner/shadow-teleop): https://github.com/szahlner/shadow-teleop
 - Plantilla de pipeline (Neotix-Robotics): https://github.com/Neotix-Robotics/teleop-pipeline-template

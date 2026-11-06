@@ -106,7 +106,7 @@ No se incluyen comparaciones con otras familias de TTS abiertas (por ejemplo Pip
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lineofflight/pocket-tts-coreml
+- Modelo en Hugging Face: https://huggingface.co/lineofflight/pocket-tts-coreml
 - Modelo base declarado: https://huggingface.co/kyutai/pocket-tts
 - Pesos de origen (revisión `a7056f505a4a8ca72d8b5fb1440071d6f1a35739`): https://huggingface.co/kyutai/pocket-tts-without-voice-cloning
 - Paquetes Core ML de referencia (`v2.1`): https://huggingface.co/FluidInference/pocket-tts-coreml

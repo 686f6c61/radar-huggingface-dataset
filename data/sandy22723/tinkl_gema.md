@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Sandy22723/Tinkl_Gema` es un repositorio alojado en HuggingFace por el usuario Sandy22723, publicado en agosto de 2026. La única información disponible en la model card es la declaración de licencia `gemma`, lo que indica que se trata de un modelo derivado o fine-tune de la familia Gemma de Google DeepMind, aunque no se especifica la versión base ni el proceso de adaptación.
+El modelo `Sandy22723/Tinkl_Gema` es un repositorio alojado en Hugging Face por el usuario Sandy22723, publicado en agosto de 2026. La única información disponible en la model card es la declaración de licencia `gemma`, lo que indica que se trata de un modelo derivado o fine-tune de la familia Gemma de Google DeepMind, aunque no se especifica la versión base ni el proceso de adaptación.
 
 A día de hoy, el repositorio no presenta descargas ni valoraciones, y no se ha publicado ninguna documentación técnica que detalle arquitectura, parámetros, datos de entrenamiento o capacidades. Por tanto, esta ficha se limita a reflejar la ausencia de información pública y a señalar las implicaciones generales de la licencia Gemma, sin atribuir características concretas al modelo.
 
@@ -52,6 +52,6 @@ No se puede realizar una comparativa al carecer de datos sobre parámetros, cont
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sandy22723/Tinkl_Gema
+- Repositorio Hugging Face: https://huggingface.co/Sandy22723/Tinkl_Gema
 - Documentación general de Gemma (Google AI for Developers): https://ai.google.dev/gemma/docs
 - Página oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Nezaweb/poof-2.5-flash` es un repositorio publicado en HuggingFace por el usuario Nezaweb el 24 de agosto de 2026. A fecha de consulta, el repositorio no presenta descargas ni valoraciones, y su tamaño es de 0.0 GB, lo que sugiere que no contiene pesos ni archivos de modelo reales. La model card asociada es una plantilla genérica generada automáticamente por la librería `transformers`, sin ningún dato técnico rellenado por el autor.
+El modelo `Nezaweb/poof-2.5-flash` es un repositorio publicado en Hugging Face por el usuario Nezaweb el 24 de agosto de 2026. A fecha de consulta, el repositorio no presenta descargas ni valoraciones, y su tamaño es de 0.0 GB, lo que sugiere que no contiene pesos ni archivos de modelo reales. La model card asociada es una plantilla genérica generada automáticamente por la librería `transformers`, sin ningún dato técnico rellenado por el autor.
 
 El nombre del repositorio sugiere una posible relación con el modelo Gemini 2.5 Flash de Google, pero no existe ninguna evidencia en la información disponible que confirme que este repositorio contenga un modelo funcional, una adaptación, o siquiera documentación relevante. Por tanto, cualquier uso de este repositorio debe considerarse de alto riesgo: probablemente se trata de un placeholder, un experimento fallido o un intento de suplantación. No se puede extraer ninguna especificación técnica fiable.
 
@@ -54,5 +54,5 @@ No disponible. No existe informacion que permita comparar este repositorio con a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nezaweb/poof-2.5-flash
+- Repositorio Hugging Face: https://huggingface.co/Nezaweb/poof-2.5-flash
 - Referencia externa (no relacionada con el repositorio): documentacion de Gemini 2.5 Flash de Google (https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash) - incluida solo como contexto, no como fuente del modelo.

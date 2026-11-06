@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gbrixi/evo2_7b_microviridae_vllm | 6,49 B | 10.240 tokens | Microviridae (fagos) | Apache 2.0 | HuggingFace (backend vLLM) |
-| evo-design/evo-2-7b-8k-microviridae | no disponible | 8.192 tokens (según nombre) | Microviridae (fagos) | Apache 2.0 | HuggingFace (backend Vortex) |
-| gbrixi/evo2_7b_base_vllm | 7 B | 8.192 tokens | ADN general (base) | Apache 2.0 | HuggingFace (backend vLLM) |
-| gbrixi/evo2_7b_262k_vllm | 7 B | 262.144 tokens | ADN general, contexto largo | Apache 2.0 | HuggingFace (backend vLLM) |
+| gbrixi/evo2_7b_microviridae_vllm | 6,49 B | 10.240 tokens | Microviridae (fagos) | Apache 2.0 | Hugging Face (backend vLLM) |
+| evo-design/evo-2-7b-8k-microviridae | no disponible | 8.192 tokens (según nombre) | Microviridae (fagos) | Apache 2.0 | Hugging Face (backend Vortex) |
+| gbrixi/evo2_7b_base_vllm | 7 B | 8.192 tokens | ADN general (base) | Apache 2.0 | Hugging Face (backend vLLM) |
+| gbrixi/evo2_7b_262k_vllm | 7 B | 262.144 tokens | ADN general, contexto largo | Apache 2.0 | Hugging Face (backend vLLM) |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gbrixi/evo2_7b_microviridae_vllm
+- Repositorio Hugging Face: https://huggingface.co/gbrixi/evo2_7b_microviridae_vllm
 - Modelo base (checkpoint original): https://huggingface.co/evo-design/evo-2-7b-8k-microviridae
 - Repositorio GitHub de Evo 2: https://github.com/ArcInstitute/evo2
 - Framework Savanna (StripedHyena 2): https://github.com/Zymrael/savanna

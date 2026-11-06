@@ -88,8 +88,8 @@ No disponible. No se han encontrado otras soluciones publicadas del mismo desafi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/batteryswapaichallenge/BatterySwapAI2026-sackriti
-- Perfil del organizador en HuggingFace: https://huggingface.co/batteryswapaichallenge
+- Repositorio Hugging Face: https://huggingface.co/batteryswapaichallenge/BatterySwapAI2026-sackriti
+- Perfil del organizador en Hugging Face: https://huggingface.co/batteryswapaichallenge
 - Ejemplo de submission del organizador: https://huggingface.co/batteryswapaichallenge/BatterySwapAI2026-Example
 - Pagina del desafio en NORA: https://www.nora.ai/competitions/batteryswapai/batteryswapai2026.html
 - FAQ del desafio: https://www.nora.ai/competitions/batteryswapai/batteryswapai-faq.html

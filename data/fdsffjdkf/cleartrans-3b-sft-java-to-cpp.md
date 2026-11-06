@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClearTrans 3B SFT Java to C++ | 3.085.938.688 | no disponible | Traduccion Java a C++ (SFT) | Qwen Research (no comercial) | HuggingFace, safetensors |
-| Qwen2.5-Coder-3B (modelo base) | 3.085.938.688 | no disponible en la informacion proporcionada | Codigo generalista | Qwen Research / Apache segun variante | HuggingFace, amplia difusion |
+| ClearTrans 3B SFT Java to C++ | 3.085.938.688 | no disponible | Traduccion Java a C++ (SFT) | Qwen Research (no comercial) | Hugging Face, safetensors |
+| Qwen2.5-Coder-3B (modelo base) | 3.085.938.688 | no disponible en la informacion proporcionada | Codigo generalista | Qwen Research / Apache segun variante | Hugging Face, amplia difusion |
 | Otros checkpoints ClearTrans por direccion | no disponible | no disponible | Traduccion entre otros pares de lenguajes | Qwen Research (no comercial) | Referenciados en el repositorio GitHub del proyecto |
 
 No se dispone de datos de rendimiento comparado ni de benchmarks que permitan situar este checkpoint frente a alternativas de la misma categoria.
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparado ni de benchmarks que permitan si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Java-to-Cpp
+- Modelo en Hugging Face: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Java-to-Cpp
 - Modelo base Qwen2.5-Coder-3B: https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - Repositorio ClearTrans (implementacion y replicacion): https://github.com/Xingzhehu/ClearTrans
 - Licencia del modelo (referenciada en el repositorio): LICENSE

@@ -4,7 +4,7 @@
 
 YOLO26 es la última generación de modelos de visión por computadora desarrollada por Ultralytics, publicada en enero de 2026. Se trata de una familia de modelos unificados y en tiempo real que cubren detección de objetos, segmentación de instancias, segmentación semántica, clasificación de imágenes, estimación de pose, detección de objetos con orientación (OBB) y seguimiento de objetos. El modelo está diseñado para ofrecer inferencia end-to-end nativa, lo que elimina pasos post-procesamiento redundantes y mejora la latencia en despliegues reales.
 
-La relevancia actual de YOLO26 radica en su enfoque en dispositivos edge y de bajo consumo: según los datos oficiales de Ultralytics, los modelos de esta familia alcanzan hasta un 43 % de mejora en velocidad de inferencia en CPU respecto a versiones anteriores, manteniendo o mejorando la precisión. Esto lo convierte en una opción atractiva para aplicaciones embebidas, robótica, vigilancia y sistemas en tiempo real. El repositorio de HuggingFace reporta 9447 descargas y 132 likes, y la licencia es AGPL-3.0.
+La relevancia actual de YOLO26 radica en su enfoque en dispositivos edge y de bajo consumo: según los datos oficiales de Ultralytics, los modelos de esta familia alcanzan hasta un 43 % de mejora en velocidad de inferencia en CPU respecto a versiones anteriores, manteniendo o mejorando la precisión. Esto lo convierte en una opción atractiva para aplicaciones embebidas, robótica, vigilancia y sistemas en tiempo real. El repositorio de Hugging Face reporta 9447 descargas y 132 likes, y la licencia es AGPL-3.0.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ No se han publicado datos especificos sobre el conjunto de entrenamiento, el num
 
 ## Benchmarks y rendimiento
 
-Segun el modelo-index publicado en HuggingFace, el resultado oficial declarado por Ultralytics es:
+Segun el modelo-index publicado en Hugging Face, el resultado oficial declarado por Ultralytics es:
 
 | Dataset | Metrica | Valor | Verificado |
 |---|---|---|---|
@@ -79,7 +79,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ultralytics/YOLO26
+- Hugging Face: https://huggingface.co/Ultralytics/YOLO26
 - Documentacion oficial: https://docs.ultralytics.com/models/yolo26
 - Pagina de producto: https://www.ultralytics.com/yolo/yolo26
 - Plataforma Ultralytics: https://platform.ultralytics.com/ultralytics/yolo26

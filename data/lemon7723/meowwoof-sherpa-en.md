@@ -2,7 +2,7 @@
 
 ## Resumen
 
-meowwoof-sherpa-en es un repositorio publicado en HuggingFace por el usuario lemon7723 bajo licencia MIT. El repositorio, de aproximadamente 0,1 GB, se creó el 9 de octubre de 2026 y se actualizó el mismo dia, según los metadatos de la plataforma. No acumula descargas ni interacciones y no tiene una tarea (pipeline) declarada.
+meowwoof-sherpa-en es un repositorio publicado en Hugging Face por el usuario lemon7723 bajo licencia MIT. El repositorio, de aproximadamente 0,1 GB, se creó el 9 de octubre de 2026 y se actualizó el mismo dia, según los metadatos de la plataforma. No acumula descargas ni interacciones y no tiene una tarea (pipeline) declarada.
 
 La model card asociada contiene unicamente la declaracion de licencia (`license: mit`) y ningun texto descriptivo. No se especifica que tipo de modelo es, ni su arquitectura, ni su tamano, ni el procedimiento de entrenamiento, ni los datos utilizados. Tampoco hay informacion sobre idiomas soportados, formato de pesos o requisitos de uso.
 
@@ -82,7 +82,7 @@ No disponible. Sin conocer la categoria, el tamano ni la tarea del modelo no es 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lemon7723/meowwoof-sherpa-en
+- Repositorio en Hugging Face: https://huggingface.co/lemon7723/meowwoof-sherpa-en
 - Model card: no disponible (solo contiene la declaracion de licencia MIT)
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

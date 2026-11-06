@@ -138,7 +138,7 @@ No se dispone de datos sobre otras alternativas de cuantizacion (GGUF, AWQ, GPTQ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/josch15366/Qwen3.8-Flash-Next-NVFP4-LocalHessian-Experts
+- Repositorio en Hugging Face: https://huggingface.co/josch15366/Qwen3.8-Flash-Next-NVFP4-LocalHessian-Experts
 - Checkpoint base completo (RadixArk): https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio separado del `lm_head` en FP8: https://huggingface.co/josch15366/Qwen3.8-Flash-Next-FP8-lm_head

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`turneranthony/cs229-generation12` es un repositorio de HuggingFace publicado por el usuario turneranthony que contiene una implementación funcional de una arquitectura denominada Dino, en configuración "nano", orientada a tareas de generación. No se trata de un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
+`turneranthony/cs229-generation12` es un repositorio de Hugging Face publicado por el usuario turneranthony que contiene una implementación funcional de una arquitectura denominada Dino, en configuración "nano", orientada a tareas de generación. No se trata de un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 
 El dato más relevante es su tamaño: 49.600 parámetros totales según los metadatos de safetensors, lo que lo sitúa en un orden de magnitud muy inferior al de cualquier modelo de lenguaje utilizable en producción. El repositorio pesa 0,0 GB. La arquitectura declarada combina atención dispersa (sparse attention), fusión de bajo rango (low rank), activación gelu tanh y normalización por instancias (instancenorm), lo que sugiere un diseño experimental más cercano a un trabajo de curso o a un banco de pruebas de arquitecturas que a un modelo desplegable.
 
@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| turneranthony/cs229-generation12 | 49.600 | no disponible | MIT | HuggingFace | Checkpoint de inicializacion, sin entrenar |
+| turneranthony/cs229-generation12 | 49.600 | no disponible | MIT | Hugging Face | Checkpoint de inicializacion, sin entrenar |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,11 +87,11 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 - Riesgo de alucinacion: no evaluable en un modelo sin entrenar, pero no debe asumirse ningun grado de fiabilidad.
 - Limitaciones de contexto e idioma: no disponibles. Se desconoce la longitud de contexto y no se declara ningun idioma soportado.
 - Restricciones de licencia: la licencia es MIT, permisiva y apta para uso comercial. El autor advierte no obstante de que deben revisarse por separado los terminos de los datos de origen si el repositorio se usa con conjuntos de datos externos.
-- Caveat de produccion: al ser una implementacion propia, las APIs de carga automatica de HuggingFace no funcionan sin escribir un adaptador. No hay pesos en GGUF, no hay integracion en vLLM, TGI u Ollama, y no existen variantes cuantizadas.
+- Caveat de produccion: al ser una implementacion propia, las APIs de carga automatica de Hugging Face no funcionan sin escribir un adaptador. No hay pesos en GGUF, no hay integracion en vLLM, TGI u Ollama, y no existen variantes cuantizadas.
 - Advertencia metodologica del propio autor: cualquier resultado de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto que se envian en el repositorio, y toda evaluacion deberia compararse contra una linea base de capacidad equivalente y reportarse sobre al menos tres semillas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/turneranthony/cs229-generation12
+- Modelo en Hugging Face: https://huggingface.co/turneranthony/cs229-generation12
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo, su arquitectura o su autor. Las busquedas devolvieron exclusivamente paginas sin relacion con el repositorio (canales de YouTube, una entrada de Wikipedia y perfiles de redes sociales de un creador de contenido no vinculado al proyecto), por lo que no se incluyen como referencias.
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

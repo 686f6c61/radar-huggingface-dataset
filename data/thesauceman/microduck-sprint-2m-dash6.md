@@ -78,7 +78,7 @@ No se dispone de datos públicos de las otras políticas de la serie (`dash1` a 
 
 | Alternativa | Parámetros | Contexto / observación | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-sprint-2m-dash6 | No disponible | 61-D de observación, 14 acciones, 50 Hz | Sin benchmarks; 0,20 m/s declarados | No disponible | HuggingFace, 0 descargas |
+| microduck-sprint-2m-dash6 | No disponible | 61-D de observación, 14 acciones, 50 Hz | Sin benchmarks; 0,20 m/s declarados | No disponible | Hugging Face, 0 descargas |
 | Versiones previas de la serie `sprint-2m` (dash1-dash5) | No disponible | Mismas dimensiones (misma interfaz) | No disponible | No disponible | No verificado en la información proporcionada |
 | Controladores clásicos (MPC, CPG) para cuadrúpedos | No aplica | Depende de la implementación | No disponible para microduck | Variable | Fuera del alcance de esta ficha |
 
@@ -96,7 +96,7 @@ No se dispone de datos públicos de las otras políticas de la serie (`dash1` a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheSauceman/microduck-sprint-2m-dash6
+- Modelo en Hugging Face: https://huggingface.co/TheSauceman/microduck-sprint-2m-dash6
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/SteveTarter/microduck-challenges
 - Commit de entrenamiento: `1d048512e` en `microduck-challenges` (rama `claude/project-thread-h4e0o0`)

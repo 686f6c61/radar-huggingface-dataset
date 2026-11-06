@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cxmplex/sn92-ra-d` es un modelo especializado publicado en HuggingFace por el usuario cxmplex para la pista `risk_assessment` de REAX, el protocolo de la subred 92 de Bittensor (especificación `reax-spec/1`). No es un modelo de propósito general: se distribuye como un componente de un sistema de evaluación de riesgo dentro de una subred descentralizada, y su model card se limita a identificar la licencia (Apache-2.0) y las etiquetas del proyecto (`reax`, `bittensor`, `sn92`, `reax-spec`, `risk_assessment`).
+`cxmplex/sn92-ra-d` es un modelo especializado publicado en Hugging Face por el usuario cxmplex para la pista `risk_assessment` de REAX, el protocolo de la subred 92 de Bittensor (especificación `reax-spec/1`). No es un modelo de propósito general: se distribuye como un componente de un sistema de evaluación de riesgo dentro de una subred descentralizada, y su model card se limita a identificar la licencia (Apache-2.0) y las etiquetas del proyecto (`reax`, `bittensor`, `sn92`, `reax-spec`, `risk_assessment`).
 
 El checkpoint contiene 8.953.803.264 parámetros (unos 8,95 mil millones) en formato safetensors, con un repositorio de 17,9 GB, lo que corresponde a pesos en precisión de 16 bits. La etiqueta de arquitectura del repositorio es `qwen3_5_text`, lo que apunta a un transformer decoder-only derivado de la familia Qwen3.5 en su variante de texto, aunque la model card no documenta capas, cabezas, ventana de contexto ni proceso de entrenamiento.
 
@@ -21,8 +21,8 @@ Su relevancia es acotada pero concreta: es un ejemplo de modelo verticalizado pa
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (repositorio de 17,9 GB) |
 | Autor | cxmplex |
-| Fecha de creación (HuggingFace) | 2026-10-20 |
-| Fecha de actualización (HuggingFace) | 2026-10-20 |
+| Fecha de creación (Hugging Face) | 2026-10-20 |
+| Fecha de actualización (Hugging Face) | 2026-10-20 |
 | Descargas / likes | 0 / 0 |
 | Pipeline declarado | No disponible |
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| cxmplex/sn92-ra-d | 8,95B | No disponible | Apache-2.0 | Especialista en evaluación de riesgo (REAX, sn92) | Pesos safetensors en HuggingFace; sin cuantizaciones |
+| cxmplex/sn92-ra-d | 8,95B | No disponible | Apache-2.0 | Especialista en evaluación de riesgo (REAX, sn92) | Pesos safetensors en Hugging Face; sin cuantizaciones |
 | Qwen3 8B (referencia de la familia base) | ~8,2B | 32.768 tokens nativos, ampliable con YaRN | Apache-2.0 | Modelo generalista con modo thinking | Amplia: safetensors, GGUF, AWQ, integraciones en vLLM y Ollama |
 | Llama 3.1 8B | 8,03B | 128.000 tokens | Licencia comunitaria Llama 3.1 | Modelo generalista, multilingüe | Muy amplia: safetensors, GGUF, múltiples backends |
 | Mistral 7B v0.3 | 7,25B | 32.000 tokens | Apache-2.0 | Modelo generalista | Muy amplia: safetensors, GGUF, Ollama |
@@ -92,7 +92,7 @@ La comparación de rendimiento con estas alternativas no está disponible: no ex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cxmplex/sn92-ra-d
+- Hugging Face: https://huggingface.co/cxmplex/sn92-ra-d
 - Model card del autor: incluida en el repositorio anterior (solo licencia y etiquetas)
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada
 - Documentación de `reax-spec/1` y de la subred 92 de Bittensor: no disponible en la información proporcionada

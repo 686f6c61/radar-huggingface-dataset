@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio tncyypttvk/Prom-1.5B-LoRA es un modelo publicado en HuggingFace por el usuario tncyypttvk el 13 de octubre de 2026, con etiqueta de libreria `transformers` y pesos en formato `safetensors`. El nombre del repositorio sugiere que se trata de un adaptador LoRA asociado a un modelo base de aproximadamente 1.500 millones de parametros, aunque esta deduccion proviene unicamente del identificador y no de documentacion tecnica verificable. El tamano del repositorio, 0,1 GB, es coherente con un conjunto de pesos de adaptador y no con un modelo completo en precision completa.
+El repositorio tncyypttvk/Prom-1.5B-LoRA es un modelo publicado en Hugging Face por el usuario tncyypttvk el 13 de octubre de 2026, con etiqueta de libreria `transformers` y pesos en formato `safetensors`. El nombre del repositorio sugiere que se trata de un adaptador LoRA asociado a un modelo base de aproximadamente 1.500 millones de parametros, aunque esta deduccion proviene unicamente del identificador y no de documentacion tecnica verificable. El tamano del repositorio, 0,1 GB, es coherente con un conjunto de pesos de adaptador y no con un modelo completo en precision completa.
 
-El problema que resuelve y su relevancia no pueden determinarse con la informacion disponible. La model card publicada es la plantilla automatica de HuggingFace sin rellenar: todos los campos de descripcion, desarrollador, tipo de modelo, idiomas, licencia y modelo base aparecen como "[More Information Needed]". No se declara ni pipeline, ni licencia, ni idiomas soportados, ni datos de entrenamiento.
+El problema que resuelve y su relevancia no pueden determinarse con la informacion disponible. La model card publicada es la plantilla automatica de Hugging Face sin rellenar: todos los campos de descripcion, desarrollador, tipo de modelo, idiomas, licencia y modelo base aparecen como "[More Information Needed]". No se declara ni pipeline, ni licencia, ni idiomas soportados, ni datos de entrenamiento.
 
-El unico contenido adicional reseñable es la etiqueta `arxiv:1910.09700`, que corresponde a la cita de Lacoste et al. (2019) sobre el calculo de impacto ambiental incluida por defecto en la plantilla de HuggingFace, por lo que no debe interpretarse como una referencia al articulo de origen del modelo. Con 0 descargas y 0 likes, el repositorio no cuenta con validacion de la comunidad.
+El unico contenido adicional reseñable es la etiqueta `arxiv:1910.09700`, que corresponde a la cita de Lacoste et al. (2019) sobre el calculo de impacto ambiental incluida por defecto en la plantilla de Hugging Face, por lo que no debe interpretarse como una referencia al articulo de origen del modelo. Con 0 descargas y 0 likes, el repositorio no cuenta con validacion de la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -55,7 +55,7 @@ No hay requisitos oficiales publicados. Las cifras siguientes son estimaciones g
 - VRAM estimada para un modelo denso de 1,5B: en torno a 3 GB en fp16, 1,5-2 GB en cuantizacion de 8 bits y 1-1,2 GB en cuantizacion de 4 bits (estimacion generica, sin confirmar).
 - Si se trata de un adaptador LoRA, habria que sumar la VRAM del modelo base correspondiente, que no esta identificado.
 - GPU recomendadas: no disponible. En el escenario hipotetico de 1,5B, cabria en GPUs de consumo como RTX 3060, RTX 4060 o superiores, asi como en Apple Silicon con memoria unificada.
-- Opciones de despliegue: `transformers` es la unica libreria declarada. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama, TGI ni otros motores. La etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace Inference.
+- Opciones de despliegue: `transformers` es la unica libreria declarada. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama, TGI ni otros motores. La etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face Inference.
 - Latencia y throughput: no disponible. No se han publicado mediciones de velocidad, tamano de checkpoint en produccion ni tiempos de entrenamiento.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No disponible. No se puede establecer una comparativa fiable sin conocer el mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tncyypttvk/Prom-1.5B-LoRA
+- Hugging Face: https://huggingface.co/tncyypttvk/Prom-1.5B-LoRA
 - Cita referenciada en la plantilla (calculo de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de Machine Learning: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

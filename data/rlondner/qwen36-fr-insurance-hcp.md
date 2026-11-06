@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rlondner/qwen36-fr-insurance-hcp` es un repositorio de pesos en HuggingFace publicado por el usuario rlondner cuyo identificador sugiere un ajuste fino orientado al sector asegurador francés, construido sobre el modelo base Qwen3.6-35B-A3B de Alibaba Qwen. El repositorio contiene 35.951.822.704 parámetros en formato safetensors (71,9 GB, compatible con BF16) y declara licencia Apache 2.0 y pipeline `image-text-to-text`. No incluye model card propia: el README del repositorio reproduce íntegramente la documentación del modelo base, sin describir el dataset, el procedimiento de ajuste ni los objetivos concretos del fine-tuning.
+`rlondner/qwen36-fr-insurance-hcp` es un repositorio de pesos en Hugging Face publicado por el usuario rlondner cuyo identificador sugiere un ajuste fino orientado al sector asegurador francés, construido sobre el modelo base Qwen3.6-35B-A3B de Alibaba Qwen. El repositorio contiene 35.951.822.704 parámetros en formato safetensors (71,9 GB, compatible con BF16) y declara licencia Apache 2.0 y pipeline `image-text-to-text`. No incluye model card propia: el README del repositorio reproduce íntegramente la documentación del modelo base, sin describir el dataset, el procedimiento de ajuste ni los objetivos concretos del fine-tuning.
 
 El modelo base es un transformer causal con codificador de visión y arquitectura híbrida que combina capas de atención lineal (Gated DeltaNet) con capas de atención completa (Gated Attention) y una capa Mixture-of-Experts en cada bloque. De los 35B parámetros totales solo se activan aproximadamente 3B por token, lo que sitúa su coste de cómputo por token en el rango de un modelo denso de 3B mientras mantiene la capacidad de representación de un modelo de 35B. La longitud de contexto nativa es de 262.144 tokens, extensible hasta 1.010.000.
 
@@ -109,7 +109,7 @@ Los datos de la comparativa proceden exclusivamente de la tabla de benchmarks de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rlondner/qwen36-fr-insurance-hcp
+- Repositorio Hugging Face: https://huggingface.co/rlondner/qwen36-fr-insurance-hcp
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
 - Blog de Qwen sobre Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b

@@ -76,8 +76,8 @@ Con0 se diferencia de su modelo base únicamente por el ajuste de identidad y en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arcanicai/Con0
+- Modelo en Hugging Face: https://huggingface.co/arcanicai/Con0
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
-- Organización Arcanic AI en HuggingFace: https://huggingface.co/arcanicai
+- Organización Arcanic AI en Hugging Face: https://huggingface.co/arcanicai
 - Blog de Arcanic AI sobre Cono 1.5 (modelo anterior, no Con0): https://arcanic.ai/cono-1-5/
 - Página principal de Arcanic AI: https://arcanic.ai/

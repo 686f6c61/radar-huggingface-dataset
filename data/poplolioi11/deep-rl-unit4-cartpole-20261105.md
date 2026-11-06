@@ -6,7 +6,7 @@
 
 El interés del modelo es acotado pero claro: sirve como referencia reproducible de un agente que resuelve CartPole con un retorno medio de 471,6 sobre 100 episodios de holdout, cerca del máximo teórico de 500 del entorno. El autor declara explícitamente que el entrenamiento se realizó en el entorno original sin políticas preentrenadas importadas, sin controladores escritos a mano y sin modificaciones de la función de recompensa, lo que refuerza su valor como línea base verificable para prácticas de aprendizaje por refuerzo profundo.
 
-El tamaño del repositorio es de 0,0 GB según los metadatos de HuggingFace, coherente con una política de red neuronal pequeña (del orden de miles de parámetros). No se publican arquitectura detallada, número de parámetros ni código de entrenamiento, que permanece privado. La fecha de creación (noviembre de 2026) y el nombre `unit4` sugieren un contexto de curso o unidad didáctica de una asignatura de deep RL.
+El tamaño del repositorio es de 0,0 GB según los metadatos de Hugging Face, coherente con una política de red neuronal pequeña (del orden de miles de parámetros). No se publican arquitectura detallada, número de parámetros ni código de entrenamiento, que permanece privado. La fecha de creación (noviembre de 2026) y el nombre `unit4` sugieren un contexto de curso o unidad didáctica de una asignatura de deep RL.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ Protocolo declarado: 100 episodios de holdout separados, desviación estándar p
 
 | Modelo | Entorno | Algoritmo | Retorno medio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deep-rl-unit4-cartpole-20261105 | CartPole-v1 | REINFORCE (declarado) | 471,6 ± 74,3 (100 episodios holdout) | MIT | HuggingFace, pesos publicados, código privado |
+| deep-rl-unit4-cartpole-20261105 | CartPole-v1 | REINFORCE (declarado) | 471,6 ± 74,3 (100 episodios holdout) | MIT | Hugging Face, pesos publicados, código privado |
 | Políticas DQN de referencia para CartPole | CartPole-v1 | DQN | no disponible en esta ficha | variable | múltiples implementaciones públicas |
 | Políticas PPO de referencia para CartPole | CartPole-v1 | PPO | no disponible en esta ficha | variable | múltiples implementaciones públicas |
 
@@ -88,7 +88,7 @@ No se dispone de comparativas numéricas verificables con alternativas en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/poplolioi11/deep-rl-unit4-cartpole-20261105
+- Hugging Face: https://huggingface.co/poplolioi11/deep-rl-unit4-cartpole-20261105
 - Entorno CartPole-v1 (Gymnasium): no se proporciona enlace en la información disponible
 - Paper de REINFORCE (Williams, 1992): no se proporciona enlace en la información disponible
 - Repositorio de código de entrenamiento: privado, no disponible

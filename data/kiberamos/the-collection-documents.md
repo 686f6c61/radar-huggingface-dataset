@@ -100,7 +100,7 @@ No se dispone de numeros comparativos de parametros, rendimiento ni latencia par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiberamos/the-collection-documents
+- Modelo en Hugging Face: https://huggingface.co/kiberamos/the-collection-documents
 - Modelo base: https://huggingface.co/microsoft/layoutlm-base-uncased
 - Dataset CORD v2: https://huggingface.co/datasets/naver-clova-ix/cord-v2
 - Atribucion del dataset: CORD, NAVER Clova Information Extraction, CC BY 4.0

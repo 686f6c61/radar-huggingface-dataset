@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fysical/so101ball_pi05pilot_expert_S100_seed0` es una política de robótica del tipo Vision-Language-Action (VLA) publicada por el usuario `fysical` en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo base `lerobot/pi05_base`, que a su vez implementa π₀.₅ (Pi05) de Physical Intelligence, un modelo VLA disenado para generalizacion en entornos abiertos. El modelo consume observaciones visuales de varias camaras junto con el estado del robot y produce acciones de control de bajo nivel.
+El modelo `fysical/so101ball_pi05pilot_expert_S100_seed0` es una política de robótica del tipo Vision-Language-Action (VLA) publicada por el usuario `fysical` en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo base `lerobot/pi05_base`, que a su vez implementa π₀.₅ (Pi05) de Physical Intelligence, un modelo VLA disenado para generalizacion en entornos abiertos. El modelo consume observaciones visuales de varias camaras junto con el estado del robot y produce acciones de control de bajo nivel.
 
 El problema que resuelve es el de la manipulacion robotica mediante aprendizaje por imitacion: a partir de demostraciones humanas, la politica aprende a ejecutar una tarea concreta. En este caso, la tarea es "coger la pelota verde y colocarla en la cesta, ignorando las dos pelotas rojas distractoras". El modelo cuenta con 4.143.404.816 parametros totales (unos 4.14 mil millones), esta publicado bajo licencia Apache 2.0 y emplea pesos en formato safetensors.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fysical/so101ball_pi05pilot_expert_S100_seed0 | ~4.14 mil millones | VLA (Pi05 fine-tuned) | no disponible | apache-2.0 | HuggingFace |
-| lerobot/pi05_base | no disponible | VLA (Pi05 base) | no disponible | no disponible | HuggingFace |
-| lerobot/pi0_base | no disponible | VLA (Pi0) | no disponible | no disponible | HuggingFace |
+| fysical/so101ball_pi05pilot_expert_S100_seed0 | ~4.14 mil millones | VLA (Pi05 fine-tuned) | no disponible | apache-2.0 | Hugging Face |
+| lerobot/pi05_base | no disponible | VLA (Pi05 base) | no disponible | no disponible | Hugging Face |
+| lerobot/pi0_base | no disponible | VLA (Pi0) | no disponible | no disponible | Hugging Face |
 | OpenVLA | ~7 mil millones | VLA | no disponible | no disponible | Repositorio publico |
 
 Nota: los datos de los modelos comparables no estaban disponibles en la informacion proporcionada; la comparacion es cualitativa y debe verificarse en las fichas oficiales de cada modelo.
@@ -93,7 +93,7 @@ Nota: los datos de los modelos comparables no estaban disponibles en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fysical/so101ball_pi05pilot_expert_S100_seed0
+- Modelo en Hugging Face: https://huggingface.co/fysical/so101ball_pi05pilot_expert_S100_seed0
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/fysical/greenball_pool_225_v1
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=fysical/greenball_pool_225_v1

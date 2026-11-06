@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 - VRAM estimada: el modelo cabe en 16 GB de VRAM, segun la model card, lo que permite su ejecucion en GPUs de consumo como la RTX 4080 o RTX 4090.
 - GPU recomendada: H800 para latencias sub-second; en GPUs consumer la latencia sera mayor pero aun asi utilizable.
-- Opciones de despliegue: al ser un modelo de difusion, se integra con la libreria diffusers de HuggingFace. No se mencionan soportes para vLLM, llama.cpp u Ollama, que son tipicos de modelos de lenguaje.
+- Opciones de despliegue: al ser un modelo de difusion, se integra con la libreria diffusers de Hugging Face. No se mencionan soportes para vLLM, llama.cpp u Ollama, que son tipicos de modelos de lenguaje.
 - Latencia: sub-second en H800 (dato de la model card); no se especifican valores para otras GPUs.
 - Throughput: no disponible.
 
@@ -65,17 +65,17 @@ No se dispone de datos comparativos cuantitativos en la informacion proporcionad
 - Diversidad limitada: la model card indica que Z-Image-Turbo tiene una diversidad baja en comparacion con el modelo base, lo que puede resultar en imagenes menos variadas para un mismo prompt.
 - No apto para fine-tuning: la tabla de la model card marca "N/A" en la columna de fine-tunability para la variante Turbo, lo que sugiere que no esta disenado para ser adaptado a tareas especificas mediante entrenamiento adicional.
 - Solo generacion, no edicion: a diferencia de Z-Image-Edit, esta variante no soporta tareas de edicion de imagenes existentes.
-- Idioma: aunque la model card menciona soporte bilingue (ingles y chino), el tag oficial de HuggingFace solo indica "en". Se recomienda verificar el comportamiento en chino antes de usarlo en produccion.
+- Idioma: aunque la model card menciona soporte bilingue (ingles y chino), el tag oficial de Hugging Face solo indica "en". Se recomienda verificar el comportamiento en chino antes de usarlo en produccion.
 - Riesgo de alucinacion visual: como todos los modelos generativos, puede producir detalles incorrectos o inconsistentes, especialmente en escenas complejas o con multiples objetos.
 - Sesgos: no se han publicado evaluaciones de sesgos; es probable que el modelo refleje los sesgos de sus datos de entrenamiento, que no han sido divulgados.
 
 ## Enlaces
 
-- Repositorio en HuggingFace (este mirror): https://huggingface.co/Hinata112/Z-Image-Turbo
-- Repositorio oficial en HuggingFace: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
+- Repositorio en Hugging Face (este mirror): https://huggingface.co/Hinata112/Z-Image-Turbo
+- Repositorio oficial en Hugging Face: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Repositorio en GitHub: https://github.com/Tongyi-MAI/Z-Image
 - Blog oficial del proyecto: https://tongyi-mai.github.io/Z-Image-blog/
 - Paper (arXiv): https://arxiv.org/abs/2511.22699
-- Demo online (HuggingFace Space): https://huggingface.co/spaces/Tongyi-MAI/Z-Image-Turbo
-- Demo movil (HuggingFace Space): https://huggingface.co/spaces/akhaliq/Z-Image-Turbo
+- Demo online (Hugging Face Space): https://huggingface.co/spaces/Tongyi-MAI/Z-Image-Turbo
+- Demo movil (Hugging Face Space): https://huggingface.co/spaces/akhaliq/Z-Image-Turbo
 - Modelo en ModelScope: https://www.modelscope.cn/models/Tongyi-MAI/Z-Image-Turbo

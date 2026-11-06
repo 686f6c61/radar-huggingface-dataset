@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SC_aime_qwen3_1_7b_ep1 es un checkpoint de pesos completos ("merged") publicado por el usuario talzoomanzoo en HuggingFace. Se trata del resultado de fusionar el modelo base Qwen/Qwen3-1.7B con un adaptador LoRA entrenado mediante GRPO (Group Relative Policy Optimization) sobre el conjunto de problemas de matemáticas de competición AIME, usando una recompensa basada en "self-certainty". El adaptador tiene rango 64 y alpha 32, y la fusión corresponde al paso `global_step_8`, es decir, la primera época de entrenamiento.
+SC_aime_qwen3_1_7b_ep1 es un checkpoint de pesos completos ("merged") publicado por el usuario talzoomanzoo en Hugging Face. Se trata del resultado de fusionar el modelo base Qwen/Qwen3-1.7B con un adaptador LoRA entrenado mediante GRPO (Group Relative Policy Optimization) sobre el conjunto de problemas de matemáticas de competición AIME, usando una recompensa basada en "self-certainty". El adaptador tiene rango 64 y alpha 32, y la fusión corresponde al paso `global_step_8`, es decir, la primera época de entrenamiento.
 
 El modelo cuenta con 1.720.574.976 parámetros reales (verificados en los ficheros safetensors) y un repositorio de 3,5 GB, lo que corresponde a pesos en precisión BF16/FP16. Es, por tanto, un modelo denso de gama pequeña orientado a razonamiento matemático, no una variante MoE. Por su tamaño, está pensado para experimentación en una sola GPU de consumo y para investigación sobre técnicas de RL aplicadas a modelos compactos.
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Licencia | Orientacion | Disponibilidad |
 |---|---|---|---|---|---|
-| SC_aime_qwen3_1_7b_ep1 | 1,72B | No disponible | Apache 2.0 | Razonamiento matemático (GRPO sobre AIME) | HuggingFace, 0 descargas |
-| Qwen/Qwen3-1.7B | 1,72B (por confirmar en la información disponible) | No disponible en la información proporcionada | Apache 2.0 | Modelo generalista con modo de razonamiento | HuggingFace, ampliamente distribuido |
+| SC_aime_qwen3_1_7b_ep1 | 1,72B | No disponible | Apache 2.0 | Razonamiento matemático (GRPO sobre AIME) | Hugging Face, 0 descargas |
+| Qwen/Qwen3-1.7B | 1,72B (por confirmar en la información disponible) | No disponible en la información proporcionada | Apache 2.0 | Modelo generalista con modo de razonamiento | Hugging Face, ampliamente distribuido |
 | Alternativas de ~1,5-2B (por ejemplo modelos pequeños de razonamiento de la familia Qwen o DeepSeek distill) | No disponible | No disponible | Variable | Razonamiento y matemáticas | No disponible |
 | Modelos MoE pequeños de la misma generación | No disponible | No disponible | No disponible | Generalista | No disponible |
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/talzoomanzoo/SC_aime_qwen3_1_7b_ep1
+- Modelo en Hugging Face: https://huggingface.co/talzoomanzoo/SC_aime_qwen3_1_7b_ep1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Paper, blog, repositorio o demo del autor: no disponible
 - Enlaces relevantes de la búsqueda web: no disponible (los resultados devueltos no guardaban relación con el modelo y no se incluyen)

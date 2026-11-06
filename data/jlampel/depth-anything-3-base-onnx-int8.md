@@ -90,7 +90,7 @@ Dentro de la familia DA3, los checkpoints Large, Giant y Nested se distribuyen b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlampel/depth-anything-3-base-onnx-int8
+- Modelo en Hugging Face: https://huggingface.co/jlampel/depth-anything-3-base-onnx-int8
 - Script de conversion (`make_depth_model.py`): https://huggingface.co/jlampel/depth-anything-3-base-onnx-int8/blob/main/make_depth_model.py
 - Modelo base DA3-BASE: https://huggingface.co/depth-anything/DA3-BASE
 - Export ONNX fp32 de referencia: https://huggingface.co/onnx-community/depth-anything-v3-base

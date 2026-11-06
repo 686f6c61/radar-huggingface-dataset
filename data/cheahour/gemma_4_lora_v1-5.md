@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cheahour/gemma_4_lora_v1.5 es un ajuste fino mediante LoRA publicado en HuggingFace por el usuario cheahour, derivado del modelo base unsloth/gemma-4-E4B-it-unsloth-bnb-4bit. Se trata, por tanto, de una adaptacion sobre una variante instruccional de la familia Gemma 4 de Google DeepMind, ya cuantizada en 4 bits y redistribuida por Unsloth. El repositorio pesa 0,4 GB, un tamano coherente con un conjunto de adaptadores LoRA y el tokenizador asociado, no con pesos completos del modelo base.
+cheahour/gemma_4_lora_v1.5 es un ajuste fino mediante LoRA publicado en Hugging Face por el usuario cheahour, derivado del modelo base unsloth/gemma-4-E4B-it-unsloth-bnb-4bit. Se trata, por tanto, de una adaptacion sobre una variante instruccional de la familia Gemma 4 de Google DeepMind, ya cuantizada en 4 bits y redistribuida por Unsloth. El repositorio pesa 0,4 GB, un tamano coherente con un conjunto de adaptadores LoRA y el tokenizador asociado, no con pesos completos del modelo base.
 
 El modelo se etiqueta con las librerias transformers, safetensors y text-generation-inference, y declara entrenamiento acelerado con Unsloth (el autor afirma que el entrenamiento fue dos veces mas rapido gracias a esta herramienta). La model card publicada es minima: no incluye descripcion del dataset, hiperparametros, numero de pasos ni evaluacion, por lo que la mayor parte de las especificaciones tecnicas quedan sin documentar.
 
@@ -89,7 +89,7 @@ No se dispone de informacion sobre modelos alternativos de la misma categoria co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cheahour/gemma_4_lora_v1.5
+- Modelo en Hugging Face: https://huggingface.co/cheahour/gemma_4_lora_v1.5
 - Repositorio hermano (LoRA): https://huggingface.co/cheahour/gemma_4_lora
 - Repositorio hermano (VLM): https://huggingface.co/cheahour/gemma_4_lora_VLM
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E4B-it-unsloth-bnb-4bit

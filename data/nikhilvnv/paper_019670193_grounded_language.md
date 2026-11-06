@@ -66,5 +66,5 @@ No disponible. Este repositorio no es comparable con modelos de IA; es un docume
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nikhilvnv/paper_019670193_grounded_language
+- Repositorio Hugging Face: https://huggingface.co/nikhilvnv/paper_019670193_grounded_language
 - No se encontraron otros enlaces relevantes en la busqueda web (los resultados de busqueda se refieren a otros trabajos sobre grounded language, no a este repositorio).

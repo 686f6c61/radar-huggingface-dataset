@@ -86,9 +86,9 @@ No se han publicado en la informacion disponible resultados comparativos directo
 
 | Modelo | Parametros | Contexto de entrada | EER ASVspoof2019 LA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DPDA-GA-Mamba | 319,3 M | 66.800 muestras @16 kHz | 0,18 % | MIT | HuggingFace (checkpoint `.pth`) |
-| DPDA-GA-AASIST | no disponible | no disponible | no disponible | MIT (presumible, misma familia) | HuggingFace |
-| DPDA-GA-TCM | no disponible | no disponible | no disponible | MIT (presumible, misma familia) | HuggingFace |
+| DPDA-GA-Mamba | 319,3 M | 66.800 muestras @16 kHz | 0,18 % | MIT | Hugging Face (checkpoint `.pth`) |
+| DPDA-GA-AASIST | no disponible | no disponible | no disponible | MIT (presumible, misma familia) | Hugging Face |
+| DPDA-GA-TCM | no disponible | no disponible | no disponible | MIT (presumible, misma familia) | Hugging Face |
 | XLSR-MamBo | no disponible | no disponible | no disponible | no disponible | Referenciado en arXiv 2601.02944 |
 
 No se dispone en la informacion proporcionada de los resultados numericos de los back-ends alternativos de la misma familia ni de modelos externos comparables, por lo que la comparativa cuantitativa queda limitada al propio DPDA-GA-Mamba.
@@ -106,7 +106,7 @@ No se dispone en la informacion proporcionada de los resultados numericos de los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SpeechAntiSpoofingBenchmarks/DPDA-GA-Mamba
+- Modelo en Hugging Face: https://huggingface.co/SpeechAntiSpoofingBenchmarks/DPDA-GA-Mamba
 - Checkpoint directo: https://huggingface.co/SpeechAntiSpoofingBenchmarks/DPDA-GA-Mamba/blob/b083ed150a0eb6c5a3dba74f38795a4531baf8bb/dpda_ga_mamba_avg5.pth
 - Paper (arXiv): https://arxiv.org/abs/2509.20682
 - Codigo de los autores: https://github.com/ductuantruong/dpda_ga

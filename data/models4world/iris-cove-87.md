@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/iris-cove-87` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `models4world` en HuggingFace. Está diseñado como un módulo de ajuste fino (PEFT) sobre el modelo base `models4world/maple-signal-64`, del cual no se dispone de información pública en la ficha. El adaptador está orientado a la generación de texto (pipeline `text-generation`) y su repositorio ocupa 1,9 GB, lo que sugiere que contiene los pesos del adaptador y posiblemente parte de la configuración necesaria para su integración.
+El modelo `models4world/iris-cove-87` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `models4world` en Hugging Face. Está diseñado como un módulo de ajuste fino (PEFT) sobre el modelo base `models4world/maple-signal-64`, del cual no se dispone de información pública en la ficha. El adaptador está orientado a la generación de texto (pipeline `text-generation`) y su repositorio ocupa 1,9 GB, lo que sugiere que contiene los pesos del adaptador y posiblemente parte de la configuración necesaria para su integración.
 
 La relevancia de este modelo es limitada en el estado actual: no cuenta con descargas, ni valoraciones, ni una model card completa. Toda la documentación disponible se limita a los metadatos técnicos básicos y a la referencia al modelo base. No se han publicado detalles sobre arquitectura, datos de entrenamiento, capacidades o rendimiento, por lo que cualquier evaluación rigurosa resulta imposible con la información actual. Se recomienda precaución antes de considerar su uso en entornos de producción o investigación.
 
@@ -54,6 +54,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - models4world/iris-cove-87](https://huggingface.co/models4world/iris-cove-87)
+- [Hugging Face - models4world/iris-cove-87](https://huggingface.co/models4world/iris-cove-87)
 - [Modelo base - models4world/maple-signal-64](https://huggingface.co/models4world/maple-signal-64) (enlace inferido, no verificado)
 - [Artículo LoRA (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)

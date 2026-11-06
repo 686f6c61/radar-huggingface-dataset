@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`trqam-bc-checkpoints` es un conjunto de diez checkpoints de políticas de imitación (behavior cloning, BC) basadas en flow matching, publicados por el usuario de HuggingFace `yonghoon96`, que corresponde al primer autor de la cita del trabajo (Yonghoon Dong). No es un modelo de lenguaje: son actores de aprendizaje por refuerzo offline entrenados en diez dominios del benchmark OGBench, con pesos en arrays NumPy y librería declarada `jax`. El repositorio ocupa 0,1 GB y se distribuye bajo licencia MIT.
+`trqam-bc-checkpoints` es un conjunto de diez checkpoints de políticas de imitación (behavior cloning, BC) basadas en flow matching, publicados por el usuario de Hugging Face `yonghoon96`, que corresponde al primer autor de la cita del trabajo (Yonghoon Dong). No es un modelo de lenguaje: son actores de aprendizaje por refuerzo offline entrenados en diez dominios del benchmark OGBench, con pesos en arrays NumPy y librería declarada `jax`. El repositorio ocupa 0,1 GB y se distribuye bajo licencia MIT.
 
 El propósito de estos pesos es servir de inicialización: según la model card, cada checkpoint es el flujo preentrenado desde el que arrancan tanto TRQAM (Trust Region Q Adjoint Matching) como los baselines basados en flow. Por tanto, su utilidad no es la inferencia directa en producción, sino la reproducción de resultados y el punto de partida de un pipeline de RL offline que después añade críticos y redes objetivo, ausentes en estos ficheros.
 
@@ -99,7 +99,7 @@ No disponible. La información proporcionada no incluye métricas, identificador
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yonghoon96/trqam-bc-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/yonghoon96/trqam-bc-checkpoints
 - Artículo (Trust Region Q Adjoint Matching, NeurIPS 2026): https://huggingface.co/papers/2605.27079
 - Identificador arXiv indicado en las etiquetas: arXiv:2605.27079
 - Código de TRQAM: https://github.com/yonghdong/trqam

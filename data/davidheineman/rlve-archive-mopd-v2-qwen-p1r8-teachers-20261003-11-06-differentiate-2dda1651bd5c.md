@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este checkpoint (rlve-archive-mopd-v2) | 1,54 B | No disponible | No disponible | No disponible | Repositorio de archivo, 0 descargas |
-| Qwen2.5-1.5B (Alibaba) | 1,54 B | 32.768 tokens (ampliable) | Publicado por el autor original | Apache 2.0 en la mayoría de variantes | Ampliamente desplegado en HuggingFace, vLLM, Ollama |
+| Qwen2.5-1.5B (Alibaba) | 1,54 B | 32.768 tokens (ampliable) | Publicado por el autor original | Apache 2.0 en la mayoría de variantes | Ampliamente desplegado en Hugging Face, vLLM, Ollama |
 | Llama-3.2-1B (Meta) | 1,24 B | 128.000 tokens | Publicado por el autor original | Llama 3.2 Community License | Muy extendido, con soporte en todos los backends principales |
-| SmolLM2-1.7B (HuggingFace) | 1,71 B | 8.192 tokens | Publicado por el autor original | Apache 2.0 | Amplia disponibilidad y versiones GGUF oficiales |
+| SmolLM2-1.7B (Hugging Face) | 1,71 B | 8.192 tokens | Publicado por el autor original | Apache 2.0 | Amplia disponibilidad y versiones GGUF oficiales |
 
 La comparación cuantitativa de rendimiento no es posible porque este checkpoint carece de evaluaciones publicadas. La diferencia principal frente a las alternativas no está en el tamaño, sino en la ausencia de licencia, de idiomas declarados y de documentación de entrenamiento, lo que lo descalifica para uso en producción frente a cualquiera de los tres modelos citados.
 
@@ -89,6 +89,6 @@ La comparación cuantitativa de rendimiento no es posible porque este checkpoint
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-06-differentiate-2dda1651bd5c
-- Perfil del autor en HuggingFace: https://huggingface.co/davidheineman
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-06-differentiate-2dda1651bd5c
+- Perfil del autor en Hugging Face: https://huggingface.co/davidheineman
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos asociados a este checkpoint.

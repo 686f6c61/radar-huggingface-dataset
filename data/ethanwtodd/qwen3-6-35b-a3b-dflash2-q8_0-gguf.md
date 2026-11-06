@@ -6,7 +6,7 @@ Qwen3.6-35B-A3B-DFlash2-Q8_0-GGUF es una conversión a formato GGUF y cuantizaci
 
 La relevancia de esta ficha radica en que cuantiza a Q8_0 un borrador de decodificación especulativa para que pueda cargarse junto al modelo objetivo en llama.cpp, que incorpora soporte para DFlash 2. El autor de la conversión lo hizo con el commit `ea0c4c2c85fb183ec0fbd30a1af4e4275a18a064` de llama.cpp, empleando `convert_hf_to_gguf.py` y posteriormente `llama-quantize ... Q8_0`, y lo orientó a un motor de servicio para una única GPU Intel Arc A770M denominado eklow.
 
-El dato de parámetros totales reportado en la información de HuggingFace (526.251.520, procedente de safetensors) corresponde al borrador, no al modelo objetivo de 35B. El repositorio ocupa 0,6 GB y el archivo GGUF resultante pesa 570 MB, con sha256 `986b8f24ac3469ed122946fb5be5b1fbe186467f2573f84e48bdbf7db278b327`. La licencia declarada es Apache 2.0.
+El dato de parámetros totales reportado en la información de Hugging Face (526.251.520, procedente de safetensors) corresponde al borrador, no al modelo objetivo de 35B. El repositorio ocupa 0,6 GB y el archivo GGUF resultante pesa 570 MB, con sha256 `986b8f24ac3469ed122946fb5be5b1fbe186467f2573f84e48bdbf7db278b327`. La licencia declarada es Apache 2.0.
 
 ## Especificaciones técnicas
 
@@ -69,10 +69,10 @@ Inco reporta 5,21 / 4,90 / 4,41 para Qwen3.6 en SGLang, según la model card. No
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-DFlash2-Q8_0-GGUF (este) | 526 M (borrador) | no disponible | Borrador especulativo, Q8_0 GGUF | Apache 2.0 | HuggingFace |
-| incoai/Qwen3.6-35B-A3B-DFlash2 | no disponible | no disponible | Borrador especulativo original | no disponible | HuggingFace |
-| Qwen/Qwen3.6-35B-A3B | 35B totales / 3B activos | no disponible | Modelo objetivo MoE | no disponible | HuggingFace |
-| Ornith-1.5-35B-A3B | 35B (por nomenclatura) | no disponible | Modelo objetivo alternativo | no disponible | HuggingFace |
+| Qwen3.6-35B-A3B-DFlash2-Q8_0-GGUF (este) | 526 M (borrador) | no disponible | Borrador especulativo, Q8_0 GGUF | Apache 2.0 | Hugging Face |
+| incoai/Qwen3.6-35B-A3B-DFlash2 | no disponible | no disponible | Borrador especulativo original | no disponible | Hugging Face |
+| Qwen/Qwen3.6-35B-A3B | 35B totales / 3B activos | no disponible | Modelo objetivo MoE | no disponible | Hugging Face |
+| Ornith-1.5-35B-A3B | 35B (por nomenclatura) | no disponible | Modelo objetivo alternativo | no disponible | Hugging Face |
 
 No se dispone de información sobre otros borradores especulativos comparables en la documentación proporcionada.
 
@@ -88,7 +88,7 @@ No se dispone de información sobre otros borradores especulativos comparables e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ethanwtodd/Qwen3.6-35B-A3B-DFlash2-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ethanwtodd/Qwen3.6-35B-A3B-DFlash2-Q8_0-GGUF
 - Modelo borrador original: https://huggingface.co/incoai/Qwen3.6-35B-A3B-DFlash2
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Cuantización del objetivo referenciada: https://huggingface.co/ethanwtodd/Qwen3.6-35B-A3B-Q4_K-Q8_0-GGUF

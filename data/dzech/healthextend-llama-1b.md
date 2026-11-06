@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Healthextend-llama-1b es un ajuste fino (finetune) del modelo Llama 3.2 1B Instruct, publicado por el usuario DZech en HuggingFace. Se trata de un modelo de generación de texto conversacional de tamaño muy reducido, entrenado a partir del checkpoint cuantizado a 4 bits que distribuye Unsloth (`unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit`). Según la model card, el entrenamiento se realizó con la biblioteca Unsloth junto con TRL de HuggingFace, lo que permitió al autor acelerar el proceso de fine-tuning.
+Healthextend-llama-1b es un ajuste fino (finetune) del modelo Llama 3.2 1B Instruct, publicado por el usuario DZech en Hugging Face. Se trata de un modelo de generación de texto conversacional de tamaño muy reducido, entrenado a partir del checkpoint cuantizado a 4 bits que distribuye Unsloth (`unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit`). Según la model card, el entrenamiento se realizó con la biblioteca Unsloth junto con TRL de Hugging Face, lo que permitió al autor acelerar el proceso de fine-tuning.
 
 El nombre del modelo sugiere una orientación hacia el dominio de la salud ("healthextend"), aunque la model card no documenta el dataset de entrenamiento, el método de ajuste (SFT, DPO, etc.) ni los datos concretos utilizados. Esta falta de documentación es un punto importante a considerar: no hay benchmarks publicados, ni ejemplos de uso, ni detalles sobre la composición del conjunto de datos, por lo que la evaluación del modelo debe hacerse de forma empírica antes de cualquier despliegue.
 
@@ -25,7 +25,7 @@ Su relevancia reside en la ligereza del modelo base: con aproximadamente 1.200 m
 
 El modelo hereda la arquitectura de Llama 3.2 1B Instruct: un transformer decoder autorregresivo con agrupación de consultas (grouped-query attention), RoPE y la plantilla de chat de Llama 3. El punto de partida es el checkpoint cuantizado a 4 bits mediante bitsandbytes que publica Unsloth, una técnica que reduce el consumo de memoria durante el entrenamiento permitiendo hacer fine-tuning de modelos LLM en GPUs de consumo.
 
-El entrenamiento se realizó con la biblioteca Unsloth en combinación con TRL (Transformer Reinforcement Learning) de HuggingFace. Según la model card, Unsloth permitió entrenar "2x más rápido" que con implementaciones estándar. Sin embargo, no se documenta el dataset empleado, el número de pasos o épocas, el método de ajuste (SFT, DPO, RLHF), ni el hardware utilizado. Tampoco hay información sobre si se mantuvo la cuantización 4 bits en los pesos finales publicados o si se descuantizaron.
+El entrenamiento se realizó con la biblioteca Unsloth en combinación con TRL (Transformer Reinforcement Learning) de Hugging Face. Según la model card, Unsloth permitió entrenar "2x más rápido" que con implementaciones estándar. Sin embargo, no se documenta el dataset empleado, el número de pasos o épocas, el método de ajuste (SFT, DPO, RLHF), ni el hardware utilizado. Tampoco hay información sobre si se mantuvo la cuantización 4 bits en los pesos finales publicados o si se descuantizaron.
 
 ## Capacidades
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: el repositorio ocupa unos 2,5 GB; en FP16 un modelo de 1,24 B requiere aproximadamente 2,5-3 GB de VRAM, y en cuantización 4 bits puede rondar 1 GB.
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM es suficiente; no se necesita A100 ni H100. Una RTX 3060, RTX 4060 o superior sobra con diferencia.
 - Consumer GPU: cabe con holgura en prácticamente cualquier GPU de consumo actual, e incluso puede ejecutarse solo en CPU dada su reducida huella de memoria.
-- Opciones de despliegue: transformers de HuggingFace (biblioteca declarada), endpoints de inferencia de HuggingFace (endpoints_compatible), llama.cpp (si se convierte a GGUF, conversión no publicada), Ollama y vLLM.
+- Opciones de despliegue: transformers de Hugging Face (biblioteca declarada), endpoints de inferencia de Hugging Face (endpoints_compatible), llama.cpp (si se convierte a GGUF, conversión no publicada), Ollama y vLLM.
 - Latencia y throughput: no disponibles; por su tamaño, se espera latencia baja y buen throughput incluso en hardware modesto, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -80,8 +80,8 @@ Frente a su modelo base, este finetune no aporta evidencia de mejora documentada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DZech/healthextend-llama-1b
+- Modelo en Hugging Face: https://huggingface.co/DZech/healthextend-llama-1b
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Biblioteca TRL de HuggingFace: https://huggingface.co/docs/trl
+- Biblioteca TRL de Hugging Face: https://huggingface.co/docs/trl
 - Llama 3.2 1B Instruct oficial (referencia): https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct

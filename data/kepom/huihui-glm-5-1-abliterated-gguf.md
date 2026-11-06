@@ -67,7 +67,7 @@ No se dispone de información comparativa con otros modelos abliterados en los d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kepom/Huihui-GLM-5.1-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kepom/Huihui-GLM-5.1-abliterated-GGUF
 - Repositorio del modelo base (zai-org/GLM-5.1): https://huggingface.co/zai-org/GLM-5.1
 - Repositorio GitHub de GLM-5: https://github.com/zai-org/GLM-5
 - Repositorio de la técnica de abliteration: https://github.com/Sumandora/remove-refusals-with-transformers

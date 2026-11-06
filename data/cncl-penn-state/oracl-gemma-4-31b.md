@@ -75,8 +75,8 @@ No se conocen en la información proporcionada otros adaptadores de puntuación 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ORACL-Gemma-4-31B | Adaptador sobre base de 31B nominales | No disponible | Puntuación de creatividad (texto e imagen) | apache-2.0 (adaptador); términos del base | HuggingFace (0 descargas, 0 likes) |
-| google/gemma-4-31B-it | 31B nominales | No disponible | Generación multimodal de propósito general | Términos de Gemma | HuggingFace (modelo base) |
+| ORACL-Gemma-4-31B | Adaptador sobre base de 31B nominales | No disponible | Puntuación de creatividad (texto e imagen) | apache-2.0 (adaptador); términos del base | Hugging Face (0 descargas, 0 likes) |
+| google/gemma-4-31B-it | 31B nominales | No disponible | Generación multimodal de propósito general | Términos de Gemma | Hugging Face (modelo base) |
 | Otros jueces automáticos de creatividad basados en LLM | No disponible | No disponible | Puntuación mediante prompt | Variable | No disponible |
 
 ## Limitaciones y advertencias
@@ -95,6 +95,6 @@ No se conocen en la información proporcionada otros adaptadores de puntuación 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CNCL-Penn-State/ORACL-Gemma-4-31B
+- Modelo en Hugging Face: https://huggingface.co/CNCL-Penn-State/ORACL-Gemma-4-31B
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/CNCL-Penn-State/MuCE-ORACL-Gemma

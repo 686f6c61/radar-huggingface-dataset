@@ -95,7 +95,7 @@ La ventaja de REIGN frente a GTE-base o GTE-large es su capacidad de procesar do
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devrim/reign-large-l4_gn-gte-base_s384_val-selected
+- Modelo en Hugging Face: https://huggingface.co/devrim/reign-large-l4_gn-gte-base_s384_val-selected
 - Codigo fuente: https://github.com/devrimcavusoglu/reign
 - Pagina del proyecto: https://devrimcavusoglu.github.io/reign
 - Dataset de entrenamiento: https://huggingface.co/datasets/devrim/goodwiki_long_synthetic_ir

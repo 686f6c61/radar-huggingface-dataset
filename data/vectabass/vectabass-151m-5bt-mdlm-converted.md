@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-151m-5bt-mdlm-converted
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-151m-5bt-mdlm-converted
 - Modelo base: https://huggingface.co/VectaBass/vectabass-151m-5.01bt-base-cooled
 - Conversión N6 con estudio de muestreo: https://huggingface.co/VectaBass/vectabass-1.73b-80bt-mdlm-converted
 - Dataset fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

@@ -87,7 +87,7 @@ La comparativa se limita a los modelos mencionados en la model card del original
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/koshuro/MiniCPM5-1B-heretic
+- Repositorio Hugging Face: https://huggingface.co/koshuro/MiniCPM5-1B-heretic
 - Modelo original: https://huggingface.co/openbmb/MiniCPM5-1B
 - Proyecto Heretic: https://heretic-project.org
 - MiniCPM Tech Report (arXiv 2506.07900): https://arxiv.org/pdf/2506.07900

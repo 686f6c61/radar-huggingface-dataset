@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tam-taml-100mb-ppt-Dp-10mb_seed3407` es un fine-tuning de tipo SFT sobre el modelo base `goldfish-models/tam_taml_100mb`, desarrollado por el usuario `fpadovani`. Según las etiquetas de HuggingFace, se basa en la arquitectura GPT-2 y contiene 124.770.816 parámetros. El entrenamiento se realizó con la librería TRL, en su versión 0.23.0, sobre Transformers 4.56.2 y PyTorch 2.5.1+cu121. El modelo está orientado a la generación de texto y se distribuye en formato safetensors.
+El modelo `tam-taml-100mb-ppt-Dp-10mb_seed3407` es un fine-tuning de tipo SFT sobre el modelo base `goldfish-models/tam_taml_100mb`, desarrollado por el usuario `fpadovani`. Según las etiquetas de Hugging Face, se basa en la arquitectura GPT-2 y contiene 124.770.816 parámetros. El entrenamiento se realizó con la librería TRL, en su versión 0.23.0, sobre Transformers 4.56.2 y PyTorch 2.5.1+cu121. El modelo está orientado a la generación de texto y se distribuye en formato safetensors.
 
 No se ha publicado información sobre la longitud de contexto, los idiomas soportados ni la licencia, lo que limita su evaluación inicial. Su relevancia radica en su tamaño reducido, que lo hace adecuado para experimentación y entornos con recursos limitados, aunque carece de benchmarks públicos que respalden su rendimiento.
 
@@ -10,7 +10,7 @@ No se ha publicado información sobre la longitud de contexto, los idiomas sopor
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (decoder-only transformer) según etiquetas de HuggingFace |
+| Arquitectura | GPT-2 (decoder-only transformer) según etiquetas de Hugging Face |
 | Parámetros totales | 124.770.816 |
 | Parámetros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ No se ha publicado información sobre la longitud de contexto, los idiomas sopor
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del modelo base `goldfish-models/tam_taml_100mb`, que a su vez sigue la arquitectura GPT-2 (decoder-only transformer), tal como indican las etiquetas del repositorio. El proceso de ajuste se llevó a cabo mediante Supervised Fine-Tuning (SFT) con la librería TRL, empleando el framework de entrenamiento de HuggingFace. No se han documentado los datos de entrenamiento utilizados, el número de tokens ni la composición del dataset. Tampoco se describen innovaciones técnicas destacables más allá del uso de SFT. El nombre del modelo base sugiere una orientación al idioma tamil (`tam_taml`), pero esta información no se confirma en la documentación disponible.
+El modelo es un fine-tuning del modelo base `goldfish-models/tam_taml_100mb`, que a su vez sigue la arquitectura GPT-2 (decoder-only transformer), tal como indican las etiquetas del repositorio. El proceso de ajuste se llevó a cabo mediante Supervised Fine-Tuning (SFT) con la librería TRL, empleando el framework de entrenamiento de Hugging Face. No se han documentado los datos de entrenamiento utilizados, el número de tokens ni la composición del dataset. Tampoco se describen innovaciones técnicas destacables más allá del uso de SFT. El nombre del modelo base sugiere una orientación al idioma tamil (`tam_taml`), pero esta información no se confirma en la documentación disponible.
 
 ## Capacidades
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: aproximadamente 250 MB en FP16, 500 MB en FP32 y 125 MB en INT8 (estimaciones orientativas basadas en el número de parámetros).
 - GPU recomendada: cualquier GPU con al menos 1 GB de VRAM, por ejemplo una NVIDIA GTX 1650 o superior; también es viable en CPU.
 - Sí cabe en GPUs de consumo: incluso en modelos de gama baja como una RTX 3050 o una GTX 1060.
-- Opciones de despliegue: compatible con el pipeline de Transformers, y según las etiquetas de HuggingFace, compatible con `text-generation-inference` y endpoints. Puede convertirse a GGUF para usarse con llama.cpp u Ollama.
+- Opciones de despliegue: compatible con el pipeline de Transformers, y según las etiquetas de Hugging Face, compatible con `text-generation-inference` y endpoints. Puede convertirse a GGUF para usarse con llama.cpp u Ollama.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -65,7 +65,7 @@ No disponible. No se han identificado modelos comparables con datos suficientes 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fpadovani/tam-taml-100mb-ppt-Dp-10mb_seed3407
+- Hugging Face: https://huggingface.co/fpadovani/tam-taml-100mb-ppt-Dp-10mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/tam_taml_100mb
 - Modelo hermano (`tam-taml-10mb-ppt-Dp-100mb_seed3407`): https://huggingface.co/fpadovani/tam-taml-10mb-ppt-Dp-100mb_seed3407
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/lvgpjn3p

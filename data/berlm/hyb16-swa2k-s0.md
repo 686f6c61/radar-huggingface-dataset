@@ -105,7 +105,7 @@ Los modelos gdn2 y edm muestran una recuperación perfecta a 16K, mientras que s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Berlm/hyb16-swa2k-s0
+- Modelo en Hugging Face: https://huggingface.co/Berlm/hyb16-swa2k-s0
 - Modelos hermanos:
   - https://huggingface.co/Berlm/hyb16-gdn2-s0
   - https://huggingface.co/Berlm/hyb16-edm-s0

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Beetle-FineWeb-24B-4/beetle-bilingual-l2-80-late-b5-fineweb-srp-eng` es un modelo de generación de texto publicado en HuggingFace por el usuario u organización Beetle-FineWeb-24B-4. Se trata de un modelo de decoder para generación de texto (pipeline `text-generation`) con 193.804.032 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de modelos pequeños, por debajo de los 200 millones de parámetros. La etiqueta `custom_code` y la arquitectura declarada `pico_decoder` indican que no corresponde a una arquitectura estándar de la librería `transformers`, sino a una implementación propia que requiere ejecución de código remoto.
+El modelo `Beetle-FineWeb-24B-4/beetle-bilingual-l2-80-late-b5-fineweb-srp-eng` es un modelo de generación de texto publicado en Hugging Face por el usuario u organización Beetle-FineWeb-24B-4. Se trata de un modelo de decoder para generación de texto (pipeline `text-generation`) con 193.804.032 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de modelos pequeños, por debajo de los 200 millones de parámetros. La etiqueta `custom_code` y la arquitectura declarada `pico_decoder` indican que no corresponde a una arquitectura estándar de la librería `transformers`, sino a una implementación propia que requiere ejecución de código remoto.
 
-La relevancia de este modelo es limitada y difícil de evaluar: la model card es la plantilla automática de HuggingFace sin ningún campo cumplimentado, no se declara licencia, ni idiomas, ni datos de entrenamiento, ni procedencia de los pesos. El repositorio ocupa 101,6 GB, un tamaño desproporcionado frente a los pesos de una sola configuración en precisión bf16 (unos 0,39 GB), lo que apunta a que contiene múltiples checkpoints, estados de optimizador o artefactos de entrenamiento acumulados. El modelo acumula 0 descargas y 0 likes en el momento de redactar esta ficha.
+La relevancia de este modelo es limitada y difícil de evaluar: la model card es la plantilla automática de Hugging Face sin ningún campo cumplimentado, no se declara licencia, ni idiomas, ni datos de entrenamiento, ni procedencia de los pesos. El repositorio ocupa 101,6 GB, un tamaño desproporcionado frente a los pesos de una sola configuración en precisión bf16 (unos 0,39 GB), lo que apunta a que contiene múltiples checkpoints, estados de optimizador o artefactos de entrenamiento acumulados. El modelo acumula 0 descargas y 0 likes en el momento de redactar esta ficha.
 
 Por el nombre del identificador puede inferirse que se trata de un modelo bilingüe entrenado sobre FineWeb (o alguna variante derivada) y que forma parte de una familia de variantes con configuraciones etiquetadas como `l2-80` y `late-b5`, pero ninguno de estos extremos está confirmado en la documentación disponible y deben tratarse como hipótesis, no como hechos. No se han publicado resultados de evaluación ni detalles de arquitectura más allá de la etiqueta del repositorio.
 
@@ -29,7 +29,7 @@ Por el nombre del identificador puede inferirse que se trata de un modelo biling
 
 La única información estructural disponible es la etiqueta de arquitectura `pico_decoder` y la marca `custom_code`, que indica que el modelo se carga mediante código Python incluido en el propio repositorio en lugar de una clase estándar de `transformers`. Esto implica que para instanciarlo es necesario activar `trust_remote_code=True`, con el consiguiente riesgo de ejecutar código de autoría desconocida y sin auditoría publicada. No se dispone de información sobre el número de capas, dimensión oculta, número de cabezas de atención, tipo de atención (completa, lineal o híbrida), uso de RoPE o de embeddings posicionales aprendidos, ni sobre la función de activación o el esquema de normalización.
 
-Respecto al entrenamiento, no se declara el número de tokens, la composición del dataset, ni si hubo fases de ajuste fino supervisado, RLHF, DPO u otra optimización por preferencias. El nombre del repositorio incluye el término `fineweb`, lo que sugiere el uso del corpus FineWeb como fuente de datos, y `bilingual`, que sugiere entrenamiento en dos idiomas, pero ninguno de los dos extremos está documentado. La etiqueta `arxiv:1910.09700` corresponde al artículo de Lacoste et al. (2019) sobre estimación del impacto ambiental, que forma parte de la plantilla automática de model cards de HuggingFace, por lo que previsiblemente no guarda relación con la metodología del modelo y no debe interpretarse como referencia técnica.
+Respecto al entrenamiento, no se declara el número de tokens, la composición del dataset, ni si hubo fases de ajuste fino supervisado, RLHF, DPO u otra optimización por preferencias. El nombre del repositorio incluye el término `fineweb`, lo que sugiere el uso del corpus FineWeb como fuente de datos, y `bilingual`, que sugiere entrenamiento en dos idiomas, pero ninguno de los dos extremos está documentado. La etiqueta `arxiv:1910.09700` corresponde al artículo de Lacoste et al. (2019) sobre estimación del impacto ambiental, que forma parte de la plantilla automática de model cards de Hugging Face, por lo que previsiblemente no guarda relación con la metodología del modelo y no debe interpretarse como referencia técnica.
 
 ## Capacidades
 
@@ -98,8 +98,8 @@ La diferencia práctica más relevante frente a estas alternativas no es el rend
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beetle-FineWeb-24B-4/beetle-bilingual-l2-80-late-b5-fineweb-srp-eng
-- Perfil del autor en HuggingFace: https://huggingface.co/Beetle-FineWeb-24B-4
+- Modelo en Hugging Face: https://huggingface.co/Beetle-FineWeb-24B-4/beetle-bilingual-l2-80-late-b5-fineweb-srp-eng
+- Perfil del autor en Hugging Face: https://huggingface.co/Beetle-FineWeb-24B-4
 - Artículo de Lacoste et al. (2019), citado únicamente como etiqueta de la plantilla automática: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de aprendizaje automático, referenciada en la plantilla: https://mlco2.github.io/impact
 - Búsqueda web: no se ha encontrado ninguna fuente relevante sobre este modelo. Todos los resultados devueltos corresponden al vehículo Volkswagen Beetle y no guardan relación con el modelo de lenguaje.

@@ -71,9 +71,9 @@ Los resultados fuera de dominio se miden sobre registros reservados. Según la m
 
 | Modelo | Tipo | Contexto | Precisión de lema | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shoshan | Encoder + recuperación con transducción acotada | 512 subtokens | 92,4 % fuera de dominio | MIT (código); encoder sujeto a licencia de DictaBERT | HuggingFace, PyPI, GitHub |
-| DictaBERT-lex | Encoder generativo de lemas por token | no disponible | no disponible (B³ 0,906 / 0,932) | no disponible | HuggingFace (dicta-il) |
-| DictaBERT (base) | Encoder transformer | no disponible | no aplica (no es lematizador) | no disponible | HuggingFace (dicta-il) |
+| Shoshan | Encoder + recuperación con transducción acotada | 512 subtokens | 92,4 % fuera de dominio | MIT (código); encoder sujeto a licencia de DictaBERT | Hugging Face, PyPI, GitHub |
+| DictaBERT-lex | Encoder generativo de lemas por token | no disponible | no disponible (B³ 0,906 / 0,932) | no disponible | Hugging Face (dicta-il) |
+| DictaBERT (base) | Encoder transformer | no disponible | no aplica (no es lematizador) | no disponible | Hugging Face (dicta-il) |
 
 La comparación principal es con DictaBERT-lex, que predice cada lema como un único token de su vocabulario y presenta un 12,3 % de errores de bajo solapamiento en palabras no vistas, frente al 0,0 % de Shoshan. No se dispone de datos de otros lematizadores hebreos comparables en la información proporcionada.
 
@@ -91,9 +91,9 @@ La comparación principal es con DictaBERT-lex, que predice cada lema como un ú
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HebArabNlpProject/shoshan
+- Modelo en Hugging Face: https://huggingface.co/HebArabNlpProject/shoshan
 - Repositorio de código: https://github.com/ivrit/shoshan
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/noamor/shoshan-demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/noamor/shoshan-demo
 - Changelog v0.4.0: https://github.com/ivrit/shoshan/releases/tag/v0.4.0
 - Changelog v0.4.1: https://github.com/ivrit/shoshan/releases/tag/v0.4.1
 - Encoder base DictaBERT: https://huggingface.co/dicta-il/dictabert

@@ -72,7 +72,7 @@ Respecto al rendimiento de inferencia, la model card reporta para el perfil p300
 | Modelo | Parametros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Tongyi DeepResearch 30B A3B (este empaquetado) | 30B | 3B | 131.072 (98.304 en p150) | Apache 2.0 | Tenstorrent p150/p300 |
-| Alibaba-NLP/Tongyi-DeepResearch-30B-A3B (original) | 30B | 3B | no disponible en la informacion | Apache 2.0 | HuggingFace, GPU |
+| Alibaba-NLP/Tongyi-DeepResearch-30B-A3B (original) | 30B | 3B | no disponible en la informacion | Apache 2.0 | Hugging Face, GPU |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa con alternativas.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Repositorio HuggingFace de este empaquetado: https://huggingface.co/raahemnabeel/tongyi-deepresearch-30b-a3b
+- Repositorio Hugging Face de este empaquetado: https://huggingface.co/raahemnabeel/tongyi-deepresearch-30b-a3b
 - Modelo base original: https://huggingface.co/Alibaba-NLP/Tongyi-DeepResearch-30B-A3B
 - Repositorio GitHub de DeepResearch (Tongyi Lab): https://github.com/Alibaba-NLP/DeepResearch
 - Informe tecnico: https://arxiv.org/abs/2510.24701

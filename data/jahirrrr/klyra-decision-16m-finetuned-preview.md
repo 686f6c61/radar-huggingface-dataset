@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Klyra-Decision-16M (Fine-tuned Preview) es un modelo experimental orientado a la toma de decisiones estructurada y la selección de opciones, desarrollado por Polyvor Labs dentro de la iniciativa de investigación Klyra y publicado en HuggingFace bajo la cuenta Jahirrrr. Se trata de un ajuste fino (fine-tune) del checkpoint previo Klyra-Decision-16M-Preview, con mejoras centradas en la selección de opciones y la generación de decisiones estructuradas. Con 16.392.033 parámetros, es un modelo muy compacto, pensado explícitamente para investigación, pruebas y retroalimentación de la comunidad, no para producción.
+Klyra-Decision-16M (Fine-tuned Preview) es un modelo experimental orientado a la toma de decisiones estructurada y la selección de opciones, desarrollado por Polyvor Labs dentro de la iniciativa de investigación Klyra y publicado en Hugging Face bajo la cuenta Jahirrrr. Se trata de un ajuste fino (fine-tune) del checkpoint previo Klyra-Decision-16M-Preview, con mejoras centradas en la selección de opciones y la generación de decisiones estructuradas. Con 16.392.033 parámetros, es un modelo muy compacto, pensado explícitamente para investigación, pruebas y retroalimentación de la comunidad, no para producción.
 
 El modelo se distribuye en formato PyTorch con pesos safetensors y declara soporte para inglés (en) e indonesio (id). No se especifican en la información disponible la arquitectura interna, la longitud de contexto, los datos de entrenamiento ni el proceso de alineación. El autor advierte que, aunque se han observado mejoras en algunas evaluaciones seleccionadas, el modelo sigue en desarrollo activo y puede producir decisiones inexactas, inconsistentes o poco fiables ante entradas u opciones desconocidas.
 
-Su relevancia actual es limitada y de carácter exploratorio: representa un experimento de nicho sobre modelos minúsculos especializados en decisiones, con cero descargas y cero "likes" en el momento de la consulta, y sin licencia declarada. La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo, por lo que toda la información procede de la model card y de los metadatos de HuggingFace.
+Su relevancia actual es limitada y de carácter exploratorio: representa un experimento de nicho sobre modelos minúsculos especializados en decisiones, con cero descargas y cero "likes" en el momento de la consulta, y sin licencia declarada. La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo, por lo que toda la información procede de la model card y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -22,7 +22,7 @@ Su relevancia actual es limitada y de carácter exploratorio: representa un expe
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo. Los metadatos de HuggingFace indican unicamente la libreria `pytorch`, el formato de pesos `safetensors` y una etiqueta generica de `decision-model`. No se especifica si se trata de un transformer, de un modelo tipo encoder, de una arquitectura hibrida o de cualquier otra variante, ni se detalla el numero de capas, dimensiones ocultas, mecanismo de atencion o estrategia de tokenizacion. Tampoco se indica la longitud de contexto soportada.
+No se dispone de informacion sobre la arquitectura interna del modelo. Los metadatos de Hugging Face indican unicamente la libreria `pytorch`, el formato de pesos `safetensors` y una etiqueta generica de `decision-model`. No se especifica si se trata de un transformer, de un modelo tipo encoder, de una arquitectura hibrida o de cualquier otra variante, ni se detalla el numero de capas, dimensiones ocultas, mecanismo de atencion o estrategia de tokenizacion. Tampoco se indica la longitud de contexto soportada.
 
 Respecto al entrenamiento, el autor describe este checkpoint como un ajuste fino del modelo base `Jahirrrr/Klyra-Decision-16M-Preview`, con mejoras enfocadas en "decision-making estructurado y seleccion de opciones". No se aportan datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de alineacion como RLHF, DPO o SFT supervisado. El propio autor senala que las mejoras se han observado en "evaluaciones seleccionadas", sin especificar cuales. No se documenta ninguna innovacion tecnica destacable (atencion lineal, decodificacion especulativa, etc.).
 
@@ -64,8 +64,8 @@ No se dispone de modelos comparables directos de la misma categoria (modelos esp
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Klyra-Decision-16M-Finetuned-Preview | 16,4 M | no disponible | no disponible | HuggingFace (0 descargas) |
-| Klyra-Decision-16M-Preview (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
+| Klyra-Decision-16M-Finetuned-Preview | 16,4 M | no disponible | no disponible | Hugging Face (0 descargas) |
+| Klyra-Decision-16M-Preview (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
 | Modelos genericos de ~16-125 M (p. ej. distilgpt2, GPT-2 small) | 82 M - 124 M | 1.024 tokens | variable (MIT / modificada) | amplia |
 
 La comparacion se limita a parametros, contexto, licencia y disponibilidad, ya que no existen datos de rendimiento publicados para Klyra-Decision-16M.
@@ -85,7 +85,7 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad, ya q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jahirrrr/Klyra-Decision-16M-Finetuned-Preview
+- Modelo en Hugging Face: https://huggingface.co/Jahirrrr/Klyra-Decision-16M-Finetuned-Preview
 - Modelo base (release previa): https://huggingface.co/Jahirrrr/Klyra-Decision-16M-Preview
 
 Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, Polyvor Labs ni la iniciativa Klyra. No se han localizado papers, blogs, repositorios ni demos asociados.

@@ -72,10 +72,10 @@ Observaciones derivadas de la tabla: el GRPO mejora la exactitud exacta de llama
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (SFT + GRPO sobre Qwen2.5-0.5B-Instruct) | 0,5B (adaptador LoRA) | 32.768 tokens (heredado) | Tool calling con abstención | No disponible | HuggingFace, 0 descargas |
-| Qwen2.5-0.5B-Instruct (base) | 0,5B | 32.768 tokens | Instrucciones generales, sin entrenamiento específico de tool calling | Apache 2.0 según su model card | HuggingFace, ampliamente adoptado |
-| Adaptador SFT previo del mismo autor | 0,5B (adaptador LoRA) | 32.768 tokens (heredado) | Tool calling, sin fase RL | No disponible | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Instrucciones generales, mayor capacidad | Apache 2.0 según su model card | HuggingFace |
+| Este adaptador (SFT + GRPO sobre Qwen2.5-0.5B-Instruct) | 0,5B (adaptador LoRA) | 32.768 tokens (heredado) | Tool calling con abstención | No disponible | Hugging Face, 0 descargas |
+| Qwen2.5-0.5B-Instruct (base) | 0,5B | 32.768 tokens | Instrucciones generales, sin entrenamiento específico de tool calling | Apache 2.0 según su model card | Hugging Face, ampliamente adoptado |
+| Adaptador SFT previo del mismo autor | 0,5B (adaptador LoRA) | 32.768 tokens (heredado) | Tool calling, sin fase RL | No disponible | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Instrucciones generales, mayor capacidad | Apache 2.0 según su model card | Hugging Face |
 
 No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, por lo que la comparación de rendimiento se limita a las dos filas del adaptador evaluadas en la sección anterior. Las puntuaciones de BFCL single-turn FC y de relevancia no son directamente comparables con agregados publicados por terceros, ya que el autor indica que son agregados específicos de su estudio.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-grpo2640-lora
+- Modelo en Hugging Face: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-grpo2640-lora
 - Adaptador SFT previo (punto de partida del GRPO): https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/uygarkurt/xlam-tool-calling-mixed

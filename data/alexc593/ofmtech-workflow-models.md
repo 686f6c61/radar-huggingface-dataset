@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alexc593/ofmtech-workflow-models` es un adaptador LoRA de difusión para generación de imágenes a partir de texto, construido sobre el modelo base `Tongyi-MAI/Z-Image-Turbo`. Está publicado en HuggingFace bajo la licencia CreativeML OpenRAIL-M, una licencia de uso no comercial restrictiva que limita ciertos usos. El repositorio tiene un tamaño de 153,2 GB, lo que sugiere que incluye múltiples versiones del adaptador o pesos en diferentes formatos (GGUF, ONNX, safetensors). La descripción del README menciona "wan2.2carbonarapackAN", un nombre que sugiere una colección de flujos de trabajo o variantes del modelo, aunque no se aportan detalles adicionales.
+El modelo `alexc593/ofmtech-workflow-models` es un adaptador LoRA de difusión para generación de imágenes a partir de texto, construido sobre el modelo base `Tongyi-MAI/Z-Image-Turbo`. Está publicado en Hugging Face bajo la licencia CreativeML OpenRAIL-M, una licencia de uso no comercial restrictiva que limita ciertos usos. El repositorio tiene un tamaño de 153,2 GB, lo que sugiere que incluye múltiples versiones del adaptador o pesos en diferentes formatos (GGUF, ONNX, safetensors). La descripción del README menciona "wan2.2carbonarapackAN", un nombre que sugiere una colección de flujos de trabajo o variantes del modelo, aunque no se aportan detalles adicionales.
 
-El modelo está diseñado para el pipeline de `diffusers` de HuggingFace y se etiqueta como compatible con endpoints, lo que facilita su despliegue en servicios de inferencia. A pesar de su tamaño, no se dispone de información pública sobre métricas de rendimiento, capacidades específicas o requisitos de hardware más allá de los estándar para modelos de difusión. La falta de documentación detallada y la ausencia de benchmarks hacen que su evaluación objetiva sea limitada.
+El modelo está diseñado para el pipeline de `diffusers` de Hugging Face y se etiqueta como compatible con endpoints, lo que facilita su despliegue en servicios de inferencia. A pesar de su tamaño, no se dispone de información pública sobre métricas de rendimiento, capacidades específicas o requisitos de hardware más allá de los estándar para modelos de difusión. La falta de documentación detallada y la ausencia de benchmarks hacen que su evaluación objetiva sea limitada.
 
 Este adaptador parece orientado a usuarios que ya trabajan con el ecosistema de Tongyi-MAI y buscan variantes o paquetes de flujos de trabajo para generación de imágenes. La relevancia actual radica en la creciente demanda de modelos de difusión abiertos y personalizables, aunque la información pública disponible es insuficiente para una caracterización técnica completa.
 
@@ -71,8 +71,8 @@ No se dispone de información sobre modelos comparables específicos. El adaptad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexc593/ofmtech-workflow-models
+- Modelo en Hugging Face: https://huggingface.co/alexc593/ofmtech-workflow-models
 - Referencia al paquete original (según README): https://huggingface.co/thatboymentor/wan2.2carbonarapackAN
 - Líder de benchmarks de LLMs (no directamente relacionado, pero útil para contexto): https://benchlm.ai/
 - Comunidad de modelos de workflow en Civitai: https://civitai.com/tag/workflow
-- Página principal de HuggingFace: https://huggingface.co/
+- Página principal de Hugging Face: https://huggingface.co/

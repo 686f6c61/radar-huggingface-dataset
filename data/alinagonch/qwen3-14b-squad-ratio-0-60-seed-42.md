@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `AlinaGonch/qwen3-14b-squad-ratio-0.60-seed-42` es un artefacto publicado en HuggingFace por el usuario AlinaGonch. El propio identificador sugiere que se trata de un ajuste fino (fine-tuning) del modelo base Qwen3-14B sobre el conjunto de datos SQuAD, con una proporción de mezcla de 0,60 y semilla 42, un patron de nomenclatura habitual en experimentos academicos sobre mezcla de datos y olvido catastrofico. Esta interpretacion se deduce exclusivamente del nombre del repositorio y no esta confirmada por ninguna documentacion del autor.
+El modelo identificado como `AlinaGonch/qwen3-14b-squad-ratio-0.60-seed-42` es un artefacto publicado en Hugging Face por el usuario AlinaGonch. El propio identificador sugiere que se trata de un ajuste fino (fine-tuning) del modelo base Qwen3-14B sobre el conjunto de datos SQuAD, con una proporción de mezcla de 0,60 y semilla 42, un patron de nomenclatura habitual en experimentos academicos sobre mezcla de datos y olvido catastrofico. Esta interpretacion se deduce exclusivamente del nombre del repositorio y no esta confirmada por ninguna documentacion del autor.
 
-La model card publicada es la plantilla autogenerada por HuggingFace y no contiene ningun dato cumplimentado: ni descripcion, ni desarrollador, ni licencia, ni idiomas, ni detalles de entrenamiento o evaluacion. El repositorio presenta ademas senales que impiden caracterizarlo con certeza: 0 descargas y 0 likes, un tamano de 0,3 GB incompatible con un checkpoint completo de un modelo de 14 000 millones de parametros en bf16 (que rondaria los 28 GB), y una fecha de creacion declarada de 2026-09-20.
+La model card publicada es la plantilla autogenerada por Hugging Face y no contiene ningun dato cumplimentado: ni descripcion, ni desarrollador, ni licencia, ni idiomas, ni detalles de entrenamiento o evaluacion. El repositorio presenta ademas senales que impiden caracterizarlo con certeza: 0 descargas y 0 likes, un tamano de 0,3 GB incompatible con un checkpoint completo de un modelo de 14 000 millones de parametros en bf16 (que rondaria los 28 GB), y una fecha de creacion declarada de 2026-09-20.
 
 Por todo ello, esta ficha debe leerse como un documento de evaluacion de disponibilidad, no como una especificacion tecnica verificada. No hay informacion publicada sobre datos de entrenamiento, hiperparametros, resultados de benchmarks ni condiciones de uso. Cualquier dato relativo al modelo base Qwen3-14B se indica de forma explicita como informacion publica del modelo original, no verificada para este ajuste.
 
@@ -27,7 +27,7 @@ Por todo ello, esta ficha debe leerse como un documento de evaluacion de disponi
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion declarada | 2026-09-20 |
 
-Nota sobre la etiqueta `arxiv:1910.09700`: corresponde al articulo de Lacoste et al. (2019) sobre estimacion del impacto ambiental del aprendizaje automatico, citado en la plantilla de model card de HuggingFace. No es una referencia a la arquitectura ni al entrenamiento de este modelo.
+Nota sobre la etiqueta `arxiv:1910.09700`: corresponde al articulo de Lacoste et al. (2019) sobre estimacion del impacto ambiental del aprendizaje automatico, citado en la plantilla de model card de Hugging Face. No es una referencia a la arquitectura ni al entrenamiento de este modelo.
 
 Nota sobre el tamano: 0,3 GB es aproximadamente dos ordenes de magnitud inferior a lo esperable para un checkpoint denso de 14B en bf16. Esto sugiere adaptadores (por ejemplo, LoRA), una exportacion parcial o un repositorio incompleto, pero no hay documentacion que lo confirme.
 
@@ -89,15 +89,15 @@ No hay datos de rendimiento publicados para este modelo, por lo que la comparati
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | `AlinaGonch/qwen3-14b-squad-ratio-0.60-seed-42` | no disponible (posible 14B) | no disponible | no disponible | Repositorio de 0,3 GB, 0 descargas, sin model card |
-| Qwen3-14B (modelo base publico) | 14,8B densos | 32 768 tokens nativos, ampliable a 131 072 con YaRN | Apache 2.0 | Ampliamente disponible en HuggingFace |
-| Qwen3-8B (modelo base publico) | 8,2B densos | 32 768 tokens nativos, ampliable a 131 072 con YaRN | Apache 2.0 | Ampliamente disponible en HuggingFace |
+| Qwen3-14B (modelo base publico) | 14,8B densos | 32 768 tokens nativos, ampliable a 131 072 con YaRN | Apache 2.0 | Ampliamente disponible en Hugging Face |
+| Qwen3-8B (modelo base publico) | 8,2B densos | 32 768 tokens nativos, ampliable a 131 072 con YaRN | Apache 2.0 | Ampliamente disponible en Hugging Face |
 | Fine-tunes academicos de BERT sobre SQuAD | 0,1-0,3B | 512 tokens | Apache 2.0 / MIT segun caso | Ampliamente disponibles |
 
 La comparativa con alternativas de la misma tarea (question answering extractivo) es poco informativa sin resultados de evaluacion de este checkpoint. Un ajuste de 14B sobre SQuAD solo tendria sentido frente a alternativas mas pequenas si se documentase una mejora medible, algo que no ocurre aqui.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla vacia de HuggingFace. No hay informacion sobre el desarrollador, la procedencia, los datos ni la licencia.
+- Ausencia total de documentacion: la model card es la plantilla vacia de Hugging Face. No hay informacion sobre el desarrollador, la procedencia, los datos ni la licencia.
 - Licencia indeterminada: sin licencia declarada, no se puede asumir permiso de uso comercial. Se debe contactar con el autor antes de cualquier uso en produccion.
 - Tamano del repositorio inconsistente: 0,3 GB no corresponde a un checkpoint de 14B. Puede tratarse de adaptadores, de un repositorio incompleto o de un artefacto defectuoso. Riesgo alto de que el modelo no sea cargable tal cual.
 - Fecha de creacion anomala: el repositorio declara 2026-09-20, una fecha futura que sugiere un problema de metadatos o un experimento de prueba.
@@ -111,7 +111,7 @@ La comparativa con alternativas de la misma tarea (question answering extractivo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.60-seed-42
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.60-seed-42
 - Articulo citado en la etiqueta del repositorio (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de aprendizaje automatico: https://mlco2.github.io/impact
 

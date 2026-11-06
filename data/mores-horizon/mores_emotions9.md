@@ -6,7 +6,7 @@ MORES_emotions9 es un modelo de clasificación de emociones morales en texto pol
 
 El modelo resuelve el problema de la identificación automática de emociones morales en textos multilingües, un área clave para la comunicación política, la ciencia social computacional y el análisis de opinión pública. Su relevancia actual radica en que proporciona una herramienta específica para investigar el impacto de las emociones en los discursos políticos y en la formación de identidades morales, algo que los clasificadores de sentimiento genéricos no cubren con precisión.
 
-Con 559,9 millones de parámetros, MORES_emotions9 es un modelo de gran tamaño que aprovecha la arquitectura transformer encoder de XLM-RoBERTa-large. Soporta siete idiomas europeos (inglés, alemán, francés, polaco, eslovaco, checo y húngaro) y se distribuye bajo licencia CC-BY-4.0, aunque su acceso en HuggingFace está restringido (gated) y requiere aceptación de condiciones.
+Con 559,9 millones de parámetros, MORES_emotions9 es un modelo de gran tamaño que aprovecha la arquitectura transformer encoder de XLM-RoBERTa-large. Soporta siete idiomas europeos (inglés, alemán, francés, polaco, eslovaco, checo y húngaro) y se distribuye bajo licencia CC-BY-4.0, aunque su acceso en Hugging Face está restringido (gated) y requiere aceptación de condiciones.
 
 ## Especificaciones técnicas
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - VRAM estimada para inferencia: con 559,9 millones de parámetros, el modelo en precisión fp16 ocupa aproximadamente 1,1 GB de pesos, pero las activaciones y el overhead de la atención requieren más memoria. Para una secuencia de 512 tokens, se estima un uso de VRAM de al menos 6-8 GB en fp16.
 - GPU recomendadas: NVIDIA RTX 3060 (12 GB) o superior, RTX 4090, A100 o H100 para procesamiento por lotes.
 - Compatibilidad con GPU de consumo: sí, es posible ejecutar inferencia en una RTX 3060 o RTX 4070 con cuantización int8 o fp16, aunque no se han publicado archivos GGUF o cuantizados oficialmente.
-- Opciones de despliegue: el modelo se puede servir con la librería transformers de HuggingFace, o mediante servidores de inferencia como vLLM o TGI. También es posible exportarlo a ONNX para optimización.
+- Opciones de despliegue: el modelo se puede servir con la librería transformers de Hugging Face, o mediante servidores de inferencia como vLLM o TGI. También es posible exportarlo a ONNX para optimización.
 - Latencia y throughput: no se han publicado mediciones oficiales. En una GPU A100, se espera una latencia de decenas de milisegundos por frase, pero estos valores son estimaciones no verificadas.
 
 ## Comparativa con modelos similares
@@ -64,7 +64,7 @@ No se dispone de información suficiente para comparar directamente MORES_emotio
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace, lo que significa que los usuarios deben solicitar acceso y aceptar las condiciones del proyecto MORES antes de poder descargarlo.
+- Acceso restringido: el modelo es gated en Hugging Face, lo que significa que los usuarios deben solicitar acceso y aceptar las condiciones del proyecto MORES antes de poder descargarlo.
 - Cobertura idiomática limitada: solo siete idiomas europeos; no cubre español, italiano, portugués ni otros idiomas relevantes para la política europea.
 - Longitud de contexto limitada: al heredar de XLM-RoBERTa-large, el contexto máximo es de 512 tokens, lo que impide analizar documentos completos de una sola pasada; es necesario segmentar el texto en frases o párrafos.
 - Sesgos potenciales: al ser un fine-tuning de un modelo preentrenado con datos de CommonCrawl, puede heredar sesgos de género, etnia o ideología presentes en el corpus original. No se ha publicado una evaluación de sesgos específica.
@@ -74,7 +74,7 @@ No se dispone de información suficiente para comparar directamente MORES_emotio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MORES-horizon/MORES_emotions9
+- Modelo en Hugging Face: https://huggingface.co/MORES-horizon/MORES_emotions9
 - Página del proyecto MORES: https://mores-horizon.eu/
 - Anuncio de MORES Pulse: https://mores-horizon.eu/news/introducing-mores-pulse-ai
 - API MORES Pulse (Space): https://huggingface.co/spaces/MORES-horizon/mores-pulse-api

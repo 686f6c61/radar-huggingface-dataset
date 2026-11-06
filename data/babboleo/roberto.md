@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo identificado como babboleo/Roberto es un repositorio publicado en HuggingFace por el usuario babboleo bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card descriptiva: el unico contenido del README es el bloque de metadatos de licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. Tampoco se declara pipeline, idiomas soportados, ni se han publicado resultados de evaluacion.
+El modelo identificado como babboleo/Roberto es un repositorio publicado en Hugging Face por el usuario babboleo bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card descriptiva: el unico contenido del README es el bloque de metadatos de licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. Tampoco se declara pipeline, idiomas soportados, ni se han publicado resultados de evaluacion.
 
 El repositorio registra cero descargas y cero likes, y los metadatos de fecha de creacion y ultima actualizacion apuntan a 2026-10-03, un valor incoherente con el calendario habitual de publicaciones. Esto sugiere que se trata de un repositorio de pruebas, un placeholder o una publicacion recien creada sin contenido tecnico asociado.
 
-Dado que no existe documentacion tecnica verificable, esta ficha se limita a reflejar los datos disponibles en los metadatos de HuggingFace y marca explicitamente como "no disponible" cualquier parametro que no pueda confirmarse. No se ha localizado ninguna publicacion, paper o repositorio de codigo asociado al identificador babboleo/Roberto.
+Dado que no existe documentacion tecnica verificable, esta ficha se limita a reflejar los datos disponibles en los metadatos de Hugging Face y marca explicitamente como "no disponible" cualquier parametro que no pueda confirmarse. No se ha localizado ninguna publicacion, paper o repositorio de codigo asociado al identificador babboleo/Roberto.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Dado que no existe documentacion tecnica verificable, esta ficha se limita a ref
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo. La model card publicada en HuggingFace no describe si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido. Tampoco se indica el numero de parametros, la dimension de las capas, el tipo de tokenizador ni si incorpora mecanismos de atencion lineal o decodificacion especulativa.
+No hay informacion disponible sobre la arquitectura del modelo. La model card publicada en Hugging Face no describe si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido. Tampoco se indica el numero de parametros, la dimension de las capas, el tipo de tokenizador ni si incorpora mecanismos de atencion lineal o decodificacion especulativa.
 
 Respecto al entrenamiento, no se especifica el volumen de tokens utilizados, la composicion del dataset, ni si se aplicaron tecnicas de ajuste fino alineado como RLHF, DPO o similares. No se ha encontrado documentacion externa que aporte estos datos.
 
@@ -66,7 +66,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni el dominio de aplic
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/babboleo/Roberto
+- Repositorio en Hugging Face: https://huggingface.co/babboleo/Roberto
 - Modelo "RoBERTo" de Xerv-AI (posible homonimo, sin relacion confirmada): https://huggingface.co/Xerv-AI/RoBERTo
 - Modelo "roberto" en SeaArt AI (sin relacion confirmada): https://www.seaart.ai/models/detail/d007i9le878c73efjhq0
 - Modelo "Roberto (Rio 2)" en SeaArt AI (sin relacion confirmada): https://www.seaart.ai/models/detail/ct87o8de878c73dcs0gg

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo OMP-ICLR/OMP es un modelo de lenguaje publicado en HuggingFace por el usuario OMP-ICLR, con un total de 975.827.009 parámetros (aproximadamente 975 millones) y un tamaño de repositorio de 3,9 GB en formato safetensors. La licencia es MIT, lo que permite uso comercial y modificación sin restricciones significativas. Sin embargo, la model card es prácticamente inexistente: solo incluye la línea `license: mit`, sin descripción de arquitectura, datos de entrenamiento, capacidades o casos de uso. La búsqueda web realizada no ha encontrado documentación adicional específica para este modelo; los resultados obtenidos se refieren a proyectos con el nombre "omp" (un agente de codificación y una plataforma de planificación de cadena de suministro) que no parecen estar relacionados con este artefacto. En consecuencia, esta ficha se limita a los datos disponibles y marca explícitamente toda información no confirmada como "no disponible".
+El modelo OMP-ICLR/OMP es un modelo de lenguaje publicado en Hugging Face por el usuario OMP-ICLR, con un total de 975.827.009 parámetros (aproximadamente 975 millones) y un tamaño de repositorio de 3,9 GB en formato safetensors. La licencia es MIT, lo que permite uso comercial y modificación sin restricciones significativas. Sin embargo, la model card es prácticamente inexistente: solo incluye la línea `license: mit`, sin descripción de arquitectura, datos de entrenamiento, capacidades o casos de uso. La búsqueda web realizada no ha encontrado documentación adicional específica para este modelo; los resultados obtenidos se refieren a proyectos con el nombre "omp" (un agente de codificación y una plataforma de planificación de cadena de suministro) que no parecen estar relacionados con este artefacto. En consecuencia, esta ficha se limita a los datos disponibles y marca explícitamente toda información no confirmada como "no disponible".
 
 ## Especificaciones técnicas
 
@@ -46,11 +46,11 @@ No disponible. No se ha identificado información sobre modelos comparables en l
 - No existe documentación sobre sesgos, alucinaciones o limitaciones de contexto o idioma.
 - La ausencia de model card y de resultados de evaluación implica un riesgo alto de comportamiento impredecible en tareas reales.
 - La licencia MIT permite uso comercial, pero no hay garantías de calidad, seguridad o idoneidad para ningún propósito.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 - Se recomienda encarecidamente realizar una evaluación exhaustiva antes de cualquier uso en producción.
 
 ## Enlaces
 
-- [HuggingFace: OMP-ICLR/OMP](https://huggingface.co/OMP-ICLR/OMP)
+- [Hugging Face: OMP-ICLR/OMP](https://huggingface.co/OMP-ICLR/OMP)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios) específicos para este modelo.

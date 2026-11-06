@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ScommettiSicuro es un modelo publicado en HuggingFace por el usuario Berna888888 bajo licencia Apache 2.0. La model card asociada al repositorio no contiene mas informacion que la declaracion de licencia: no se especifica arquitectura, tamano, datos de entrenamiento, idiomas ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y la fecha de creacion y ultima actualizacion coinciden (2 de noviembre de 2026), lo que sugiere una publicacion sin iteraciones posteriores.
+ScommettiSicuro es un modelo publicado en Hugging Face por el usuario Berna888888 bajo licencia Apache 2.0. La model card asociada al repositorio no contiene mas informacion que la declaracion de licencia: no se especifica arquitectura, tamano, datos de entrenamiento, idiomas ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y la fecha de creacion y ultima actualizacion coinciden (2 de noviembre de 2026), lo que sugiere una publicacion sin iteraciones posteriores.
 
 El nombre del modelo, en italiano ("apuesta seguro" o "apuesta con seguridad"), podria indicar un proposito orientado a dominios de apuestas o prediccion, pero se trata de una inferencia a partir del nombre y no de un dato confirmado en la informacion disponible. No hay pipeline declarado en la plataforma, por lo que tampoco puede confirmarse la tarea para la que fue disenado (text-generation, clasificacion, etc.).
 
@@ -29,7 +29,7 @@ Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, at
 
 ## Capacidades
 
-- Generacion de texto: no confirmada; el pipeline no esta declarado en HuggingFace.
+- Generacion de texto: no confirmada; el pipeline no esta declarado en Hugging Face.
 - Razonamiento, codigo y matematicas: no disponible.
 - Vision, audio u otras modalidades: no disponible.
 - Soporte de tool calling / function calling: no disponible.
@@ -69,5 +69,5 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Berna888888/ScommettiSicuro
+- Repositorio en Hugging Face: https://huggingface.co/Berna888888/ScommettiSicuro
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

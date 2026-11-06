@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Poolformer-generation-notes es un prototipo de investigación publicado por el usuario vlmikhailov en HuggingFace. Se presenta explícitamente como un esqueleto de arquitectura Poolformer orientado a tareas de generación, con una configuración de escala etiquetada como "large" y un checkpoint de inicialización (`model.safetensors`) pensado únicamente para pruebas de humo (*smoke tests*). No se trata de un modelo entrenado ni evaluado: la propia model card indica que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido auditado.
+Poolformer-generation-notes es un prototipo de investigación publicado por el usuario vlmikhailov en Hugging Face. Se presenta explícitamente como un esqueleto de arquitectura Poolformer orientado a tareas de generación, con una configuración de escala etiquetada como "large" y un checkpoint de inicialización (`model.safetensors`) pensado únicamente para pruebas de humo (*smoke tests*). No se trata de un modelo entrenado ni evaluado: la propia model card indica que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido auditado.
 
 El dato más relevante es su tamaño real: 24.832 parámetros totales, según el recuento de safetensors. Es, por tanto, un artefacto minúsculo (menos de 100 KB en precisión fp32), más cercano a una plantilla reproducible de experimento que a un modelo desplegable. El repositorio incluye el código principal (`main.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`), lo que apunta a un uso como punto de partida para reproducir experimentos, no como motor de inferencia.
 
@@ -72,7 +72,7 @@ No disponible. La información proporcionada no incluye métricas, configuració
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| poolformer-generation-notes | 24.832 | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace, checkpoint de inicialización |
+| poolformer-generation-notes | 24.832 | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face, checkpoint de inicialización |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,5 +89,5 @@ No disponible. La información proporcionada no incluye métricas, configuració
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vlmikhailov/poolformer-generation-notes
+- Hugging Face: https://huggingface.co/vlmikhailov/poolformer-generation-notes
 - Paper, blog, repositorio adicional o demo: no disponible en la informacion proporcionada.

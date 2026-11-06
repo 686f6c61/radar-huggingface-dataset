@@ -74,10 +74,10 @@ No se han publicado en la informacion disponible resultados de benchmarks especi
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyankiwi/Swift-Qwen3.8-27B-AWQ-INT4 | 27,78 mil millones | no disponible | safetensors AWQ INT4 | swift-open-license-1.0 (gated) | HuggingFace |
-| ukisai/Swift-Qwen3.8-27b (base) | 27B aprox. (no confirmado) | no disponible | safetensors (BF16) | swift-open-license-1.0 | HuggingFace |
+| cyankiwi/Swift-Qwen3.8-27B-AWQ-INT4 | 27,78 mil millones | no disponible | safetensors AWQ INT4 | swift-open-license-1.0 (gated) | Hugging Face |
+| ukisai/Swift-Qwen3.8-27b (base) | 27B aprox. (no confirmado) | no disponible | safetensors (BF16) | swift-open-license-1.0 | Hugging Face |
 | Qwen3.8-27B BF16 (modelo de referencia de la model card) | 27B aprox. | no disponible | safetensors | no disponible | no disponible |
-| bottlecapai/ThinkingCap-Qwen3.6-27B | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| bottlecapai/ThinkingCap-Qwen3.6-27B | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos suficientes para comparar rendimiento entre estas alternativas. La comparacion relevante es funcional: la version de cyankiwi ofrece el mismo modelo con menor huella de memoria a cambio de una posible perdida de calidad por la cuantizacion INT4, mientras que el modelo base y su variante GGUF conservan mayor precision o mayor compatibilidad con herramientas de inferencia en CPU.
 
@@ -96,7 +96,7 @@ No se dispone de datos suficientes para comparar rendimiento entre estas alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyankiwi/Swift-Qwen3.8-27B-AWQ-INT4
+- Modelo en Hugging Face: https://huggingface.co/cyankiwi/Swift-Qwen3.8-27B-AWQ-INT4
 - Modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Licencia del modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b/blob/main/LICENSE
 - Version GGUF del modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27B-GGUF

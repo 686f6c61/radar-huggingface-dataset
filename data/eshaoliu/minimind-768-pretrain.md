@@ -18,7 +18,7 @@ Su relevancia actual es practica: los pesos se exportan con la nomenclatura y el
 | Longitud de contexto | 32.768 tokens (maximo declarado, RoPE con theta=1e6) |
 | Tipos de cuantizacion | fp16 publicado; no se distribuyen pesos GGUF, AWQ, GPTQ ni int8 |
 | Idiomas soportados | ingles (tokenizador BPE ingles, vocabulario de 32.768; el autor no declara otros idiomas) |
-| Licencia | Apache 2.0 (segun el LICENSE del repositorio ultra-minimind; la metadata de HuggingFace no la especifica) |
+| Licencia | Apache 2.0 (segun el LICENSE del repositorio ultra-minimind; la metadata de Hugging Face no la especifica) |
 | Formato de pesos | safetensors (model.safetensors, ~161 MB en fp16) |
 
 Especificaciones estructurales adicionales declaradas por el autor:
@@ -98,16 +98,16 @@ Diferencias destacables: MiniMind-768-Pretrain es el mas pequeno de la tabla y e
 - Tokenizador exclusivamente ingles (BPE, 32.768 entradas): no hay soporte declarado de castellano ni de otros idiomas; se producira una tokenizacion ineficiente y resultados pobres.
 - Riesgo alto de alucinacion: al ser un modelo pequeno y sin ajuste por preferencias humanas, puede generar afirmaciones matematicamente falsas con una forma fluida y convincente. No debe usarse como fuente de verdad sin verificacion.
 - Sesgos: no se ha publicado ninguna evaluacion de sesgos ni de toxicidad. El corpus proviene de fuentes web filtradas por calidad, por lo que puede arrastrar sesgos presentes en esos datos.
-- Licencia: el autor indica Apache 2.0 remitiendo al LICENSE del repositorio ultra-minimind, pero la metadata de HuggingFace no incluye campo de licencia. Conviene verificar el archivo de licencia del repositorio antes de un uso comercial.
+- Licencia: el autor indica Apache 2.0 remitiendo al LICENSE del repositorio ultra-minimind, pero la metadata de Hugging Face no incluye campo de licencia. Conviene verificar el archivo de licencia del repositorio antes de un uso comercial.
 - Corpus de terceros: el uso comercial puede quedar condicionado por los terminos de Nemotron-CC-Math-v1 y de las fuentes originales del mismo, algo que no se detalla en la informacion disponible.
 - Sin informacion de reproducibilidad de datos: no se publica el numero de tokens de entrenamiento, la composicion exacta del dataset ni curvas de perdida.
-- Cero adopcion publica: el modelo registra 0 descargas y 0 likes en HuggingFace en el momento de la consulta, y no hay validacion externa de su calidad.
+- Cero adopcion publica: el modelo registra 0 descargas y 0 likes en Hugging Face en el momento de la consulta, y no hay validacion externa de su calidad.
 - Ventana de contexto declarada de 32K: la longitud efectiva utilizable no esta verificada mediante pruebas de aguja en pajar ni tareas de razonamiento de largo alcance.
 - Longevidad del proyecto: se trata de un experimento personal en un repositorio pequeno, sin garantia de mantenimiento ni de versionado a largo plazo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eshaoliu/minimind-768-pretrain
+- Modelo en Hugging Face: https://huggingface.co/eshaoliu/minimind-768-pretrain
 - Repositorio del proyecto: https://github.com/eshaoliu/ultra-minimind
 - Script de preentrenamiento: ultra-minimind/trainer/train_pretrain.py (dentro del repositorio anterior)
 - Dataset de entrenamiento: https://huggingface.co/nvidia/Nemotron-CC-Math-v1

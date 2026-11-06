@@ -88,7 +88,7 @@ No se dispone de comparativas de rendimiento entre la variante abliterals y los 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/saracen9/amoral-qwen3.8-27b)
+- [Modelo en Hugging Face](https://huggingface.co/saracen9/amoral-qwen3.8-27b)
 - [Base abliterals: saracen9/amoral-qwen3.8-27B-abliterated](https://huggingface.co/saracen9/amoral-qwen3.8-27B-abliterated)
 - [LoRA de razonamiento: saracen9/amoral-reasoning-corpus](https://huggingface.co/saracen9/amoral-reasoning-corpus)
 - [GitHub del Qwen3.8-27B de Alibaba](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)

@@ -86,6 +86,6 @@ La diferencia clave frente al ONNX upstream es la correccion numerica en bf16: m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ElXreno/bge-m3-onnx
+- Repositorio Hugging Face: https://huggingface.co/ElXreno/bge-m3-onnx
 - Modelo base BAAI/bge-m3: https://huggingface.co/BAAI/bge-m3
 - Proyecto infinity (servidor de embeddings): https://github.com/ElXreno/infinity

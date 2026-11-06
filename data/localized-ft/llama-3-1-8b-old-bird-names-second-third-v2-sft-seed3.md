@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) supervisado del modelo `unsloth/Meta-Llama-3.1-8B-Instruct`, publicado por el usuario `localized-ft` en HuggingFace. El nombre del repositorio sugiere que el entrenamiento se realizó sobre un conjunto de datos relacionado con nombres antiguos de aves (old bird names), aunque la model card no proporciona detalles sobre el dataset, el número de épocas ni la metodología exacta más allá del uso de las librerías Unsloth y TRL de HuggingFace.
+Este modelo es un ajuste fino (fine-tuning) supervisado del modelo `unsloth/Meta-Llama-3.1-8B-Instruct`, publicado por el usuario `localized-ft` en Hugging Face. El nombre del repositorio sugiere que el entrenamiento se realizó sobre un conjunto de datos relacionado con nombres antiguos de aves (old bird names), aunque la model card no proporciona detalles sobre el dataset, el número de épocas ni la metodología exacta más allá del uso de las librerías Unsloth y TRL de Hugging Face.
 
 Se trata de un modelo de 8.030 millones de parámetros, con licencia Apache 2.0, orientado a generación de texto en inglés. Su relevancia actual es limitada: no se han publicado benchmarks ni métricas de rendimiento, y el repositorio no muestra descargas ni interacciones. Es un ejemplo de fine-tuning experimental sobre una base conocida, probablemente destinado a investigación o pruebas de personalización de modelos.
 
@@ -21,7 +21,7 @@ Se trata de un modelo de 8.030 millones de parámetros, con licencia Apache 2.0,
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Llama 3.1 8B, un transformer decoder con atención causal, normalización RMSNorm y activación SwiGLU. El fine-tuning se realizó mediante aprendizaje supervisado (SFT) utilizando la librería Unsloth para acelerar el entrenamiento y el TRL de HuggingFace para el pipeline de ajuste. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del repositorio indica que el dataset está relacionado con "nombres antiguos de aves", pero no hay más información pública.
+El modelo se basa en la arquitectura Llama 3.1 8B, un transformer decoder con atención causal, normalización RMSNorm y activación SwiGLU. El fine-tuning se realizó mediante aprendizaje supervisado (SFT) utilizando la librería Unsloth para acelerar el entrenamiento y el TRL de Hugging Face para el pipeline de ajuste. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del repositorio indica que el dataset está relacionado con "nombres antiguos de aves", pero no hay más información pública.
 
 ## Capacidades
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo. El modelo base Llama 3.1 8B I
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed3
+- Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed3
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelos similares de localized-ft (resultados de busqueda):

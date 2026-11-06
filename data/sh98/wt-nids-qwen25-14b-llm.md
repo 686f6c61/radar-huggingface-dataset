@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`SH98/wt-nids-qwen25-14b-llm` es un repositorio de pesos publicado en HuggingFace por el usuario SH98. El identificador sugiere un ajuste fino del modelo base Qwen2.5 de 14.000 millones de parametros orientado a NIDS (Network Intrusion Detection System, sistemas de deteccion de intrusiones en red), pero el repositorio no incluye model card, pipeline declarado, licencia, idiomas ni resultados de evaluacion. Se trata, por tanto, de un artefacto sin documentacion tecnica publica que permita verificar su comportamiento.
+`SH98/wt-nids-qwen25-14b-llm` es un repositorio de pesos publicado en Hugging Face por el usuario SH98. El identificador sugiere un ajuste fino del modelo base Qwen2.5 de 14.000 millones de parametros orientado a NIDS (Network Intrusion Detection System, sistemas de deteccion de intrusiones en red), pero el repositorio no incluye model card, pipeline declarado, licencia, idiomas ni resultados de evaluacion. Se trata, por tanto, de un artefacto sin documentacion tecnica publica que permita verificar su comportamiento.
 
 El repositorio ocupa 68,0 GB y contiene unicamente pesos en formato `safetensors` (tags: `safetensors`, `region:us`). Esa cifra es notablemente superior a los aproximadamente 29,5 GB que requeriria un modelo de 14.700 millones de parametros en precision FP16/BF16, lo que apunta a la presencia de pesos en FP32, de varias copias del checkpoint o de estados adicionales, aunque no es posible confirmarlo sin inspeccionar la lista de ficheros. El repositorio se creo el 10 de septiembre de 2026 y se actualizo el 21 de septiembre de 2026, con 0 descargas y 1 like en el momento de la consulta.
 
@@ -74,10 +74,10 @@ No hay modelos comparables publicados como ajustes NIDS abiertos y documentados 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SH98/wt-nids-qwen25-14b-llm | No disponible (~14,7 B estimados) | No disponible | No disponible | HuggingFace, 0 descargas, 1 like | Sin model card; solo `safetensors`; 68,0 GB |
-| Qwen2.5-14B | 14,7 B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente utilizado | Base densa, sin ajuste de instrucciones |
-| Qwen2.5-14B-Instruct | 14,7 B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente utilizado | Alineado con SFT y RLHF; soporte de tool calling |
-| Llama 3.1 8B Instruct | 8,03 B | 131.072 tokens | Licencia comunitaria Llama 3.1 | HuggingFace, ampliamente utilizado | Alternativa de menor tamano con contexto mas largo |
+| SH98/wt-nids-qwen25-14b-llm | No disponible (~14,7 B estimados) | No disponible | No disponible | Hugging Face, 0 descargas, 1 like | Sin model card; solo `safetensors`; 68,0 GB |
+| Qwen2.5-14B | 14,7 B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente utilizado | Base densa, sin ajuste de instrucciones |
+| Qwen2.5-14B-Instruct | 14,7 B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente utilizado | Alineado con SFT y RLHF; soporte de tool calling |
+| Llama 3.1 8B Instruct | 8,03 B | 131.072 tokens | Licencia comunitaria Llama 3.1 | Hugging Face, ampliamente utilizado | Alternativa de menor tamano con contexto mas largo |
 
 No se dispone de datos de rendimiento para comparar en tareas NIDS.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento para comparar en tareas NIDS.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SH98/wt-nids-qwen25-14b-llm
+- Repositorio en Hugging Face: https://huggingface.co/SH98/wt-nids-qwen25-14b-llm
 - La busqueda web realizada no devolvio ningun resultado relacionado con este modelo, su autor ni su posible dataset de entrenamiento; los resultados obtenidos eran contenido no relacionado sobre apartamentos universitarios.
 - Referencias del modelo base presumido (no confirmadas por el repositorio): https://huggingface.co/Qwen/Qwen2.5-14B y https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Blog tecnico del modelo base presumido: https://qwenlm.github.io/blog/qwen2.5/

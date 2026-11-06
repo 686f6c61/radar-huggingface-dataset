@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dougalldeepmind/2026-09-30-gptoss120b-0-nosynth` | Adaptador LoRA rango 32 sobre GPT-OSS-120B | 32.768 tokens (entrenamiento) | Sin benchmarks publicados | No disponible | Repositorio HuggingFace, 0 descargas |
+| `dougalldeepmind/2026-09-30-gptoss120b-0-nosynth` | Adaptador LoRA rango 32 sobre GPT-OSS-120B | 32.768 tokens (entrenamiento) | Sin benchmarks publicados | No disponible | Repositorio Hugging Face, 0 descargas |
 | `openai/gpt-oss-120b` (modelo base) | 120B nominales segun el identificador; datos exactos no disponibles en esta ficha | No disponible | No disponible en la informacion proporcionada | No disponible en esta ficha | Modelo base publico referenciado |
 | `dougalldeepmind/2026-09-28-gptoss120b-0-nosynth` | Adaptador de la misma familia | No disponible | No disponible | No disponible | Endpoint de inferencia en FriendliAI |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento de ninguno de los tres, por lo que la comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dougalldeepmind/2026-09-30-gptoss120b-0-nosynth
+- Modelo en Hugging Face: https://huggingface.co/dougalldeepmind/2026-09-30-gptoss120b-0-nosynth
 - Dataset de entrenamiento: https://huggingface.co/datasets/dougalldeepmind/2026-09-30-nosynth-mix-gpt-oss-120b
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Adaptador hermano con endpoint de inferencia: https://friendli.ai/models/dougalldeepmind/2026-09-28-gptoss120b-0-nosynth

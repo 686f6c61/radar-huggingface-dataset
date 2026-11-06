@@ -83,9 +83,9 @@ Definiciones: `type_match` es la coincidencia del tipo Conventional con el commi
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pionus-1.5b-v0.3 | 1,54B | no disponible | Mensajes de commit de Git | apache-2.0 | HuggingFace (safetensors, GGUF) |
-| pionus-1.5b-v0.1 | 1,54B | no disponible | Mensajes de commit de Git | apache-2.0 | HuggingFace |
-| Qwen2.5-Coder-1.5B-Instruct | 1,54B | no disponible | Código general (modelo base) | apache-2.0 | HuggingFace |
+| pionus-1.5b-v0.3 | 1,54B | no disponible | Mensajes de commit de Git | apache-2.0 | Hugging Face (safetensors, GGUF) |
+| pionus-1.5b-v0.1 | 1,54B | no disponible | Mensajes de commit de Git | apache-2.0 | Hugging Face |
+| Qwen2.5-Coder-1.5B-Instruct | 1,54B | no disponible | Código general (modelo base) | apache-2.0 | Hugging Face |
 
 La comparación cuantitativa entre estos tres modelos está en la tabla de benchmarks: frente al modelo base recuantizado, v0.3 eleva `type_match` de 0,436 a 0,696 y reduce `ungrounded` de 0,144 a 0,020 con la lista de ficheros anotada. No se dispone de datos de otros modelos especializados en mensajes de commit en la información proporcionada.
 
@@ -103,7 +103,7 @@ La comparación cuantitativa entre estos tres modelos está en la tabla de bench
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LucasBRT/pionus-1.5b-v0.3
+- Modelo en Hugging Face: https://huggingface.co/LucasBRT/pionus-1.5b-v0.3
 - Versión anterior: https://huggingface.co/LucasBRT/pionus-1.5b-v0.1
 - Repositorio de pionus: https://github.com/Lucas-BRT/pionus
 - Documentación de evaluación de pionus: https://github.com/Lucas-BRT/pionus/blob/main/training/README.md

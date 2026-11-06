@@ -90,7 +90,7 @@ MiniMax Music 3 destaca por su longitud máxima (hasta 5 minutos) y la capacidad
 
 ## Enlaces
 
-- Repositorio de HuggingFace (esta conversión): https://huggingface.co/npario/MiniMax-Music3-MLX-Serve-8bit
+- Repositorio de Hugging Face (esta conversión): https://huggingface.co/npario/MiniMax-Music3-MLX-Serve-8bit
 - Repositorio original de MiniMax: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - GitHub de MiniMax Music 3: https://github.com/MiniMax-AI/MiniMax-Music3
 - GitHub de mlx-serve (motor): https://github.com/ddalcu/mlx-serve

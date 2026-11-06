@@ -74,7 +74,7 @@ La comparativa se basa en características generales; no se dispone de datos de 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/jbmkmbrlb/madlad400-3b-mt-ct2-float32
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/jbmkmbrlb/madlad400-3b-mt-ct2-float32
 - Modelo original de Google: https://huggingface.co/google/madlad400-3b-mt
 - Paper de investigación: https://arxiv.org/abs/2309.04662
 - Repositorio GitHub de MADLAD-400: https://github.com/google-research/google-research/tree/master/madlad_400

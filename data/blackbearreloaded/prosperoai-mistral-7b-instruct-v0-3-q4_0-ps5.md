@@ -82,7 +82,7 @@ La comparativa muestra que la versión para PS5 es esencialmente el mismo modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/blackbearreloaded/ProsperoAI-Mistral-7B-Instruct-v0.3-Q4_0-PS5
+- Repositorio Hugging Face: https://huggingface.co/blackbearreloaded/ProsperoAI-Mistral-7B-Instruct-v0.3-Q4_0-PS5
 - Modelo base original: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - GGUF fuente (QuantFactory): https://huggingface.co/QuantFactory/Mistral-7B-Instruct-v0.3-GGUF
 - Página de LM Studio sobre Mistral 7B: https://lmstudio.ai/models/mistral

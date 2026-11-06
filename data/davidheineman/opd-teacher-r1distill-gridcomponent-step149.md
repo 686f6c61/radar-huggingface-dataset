@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| opd-teacher-R1Distill-GridComponent-step149 | 1,78B | no disponible | Fine-tune GRPO/OPD sobre DeepSeek-R1-Distill-Qwen-1.5B | no disponible | HuggingFace (0 descargas) |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (base) | 1,78B | no disponible | Destilado de razonamiento | no disponible | HuggingFace |
-| Qwen 2.5 1.5B Instruct (referencia de la coleccion) | ~1,5B | no disponible | Instruct generalista | no disponible | HuggingFace |
+| opd-teacher-R1Distill-GridComponent-step149 | 1,78B | no disponible | Fine-tune GRPO/OPD sobre DeepSeek-R1-Distill-Qwen-1.5B | no disponible | Hugging Face (0 descargas) |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (base) | 1,78B | no disponible | Destilado de razonamiento | no disponible | Hugging Face |
+| Qwen 2.5 1.5B Instruct (referencia de la coleccion) | ~1,5B | no disponible | Instruct generalista | no disponible | Hugging Face |
 
 Los modelos comparables de la misma coleccion ("RLVE OPD Teachers") siguen el mismo esquema: destilacion on-policy de 150 pasos sobre un unico entorno, uno por cada entorno de RLVE.
 
@@ -88,7 +88,7 @@ Los modelos comparables de la misma coleccion ("RLVE OPD Teachers") siguen el mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/opd-teacher-R1Distill-GridComponent-step149
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/opd-teacher-R1Distill-GridComponent-step149
 - Coleccion RLVE OPD Teachers: https://huggingface.co/collections/davidheineman/rlve-opd-teachers
 - Perfil del autor: https://huggingface.co/davidheineman
 - Web personal del autor: https://davidheineman.com/

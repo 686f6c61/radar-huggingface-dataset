@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sheratutor-qwen2.5-7b-gguf es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, publicado por el usuario syed181 en HuggingFace y distribuido exclusivamente en formato GGUF para su uso con llama.cpp y Ollama. El autor indica que el modelo se entrenó y convirtió a GGUF con Unsloth, y el repositorio incluye un único archivo de pesos cuantizado en Q4_K_M, además de un Modelfile de Ollama para despliegue sencillo. El nombre "sheratutor" sugiere una orientación a tareas de tutoría o asistencia educativa, aunque la model card no documenta el dataset ni el objetivo concreto del ajuste.
+sheratutor-qwen2.5-7b-gguf es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, publicado por el usuario syed181 en Hugging Face y distribuido exclusivamente en formato GGUF para su uso con llama.cpp y Ollama. El autor indica que el modelo se entrenó y convirtió a GGUF con Unsloth, y el repositorio incluye un único archivo de pesos cuantizado en Q4_K_M, además de un Modelfile de Ollama para despliegue sencillo. El nombre "sheratutor" sugiere una orientación a tareas de tutoría o asistencia educativa, aunque la model card no documenta el dataset ni el objetivo concreto del ajuste.
 
 Se trata de un transformer decoder-only denso de aproximadamente 7.615 millones de parámetros, heredado directamente de la arquitectura Qwen2. El modelo base Qwen2.5-7B-Instruct fue preentrenado por Alibaba con hasta 18 billones (18T) de tokens y soporta una ventana de contexto de 128K tokens, capacidades multilingües (29 idiomas) y tool calling. Sin embargo, la model card del ajuste no confirma que estas propiedades se mantengan ni documenta ningún detalle adicional sobre el proceso de entrenamiento.
 
@@ -35,7 +35,7 @@ No se dispone de información sobre el número de tokens de ajuste, la composici
 - Soporte de agentes y razonamiento multi-paso: no documentado en el ajuste; disponible en el modelo base.
 - Capacidades multilingües: el modelo base cubre 29 idiomas, pero la model card del ajuste no declara idiomas.
 - Capacidad especial: no se documenta modo "thinking", visión ni audio. El ejemplo de uso con `llama-mtmd-cli` que aparece en la model card es una plantilla genérica de Unsloth y no implica que este modelo sea multimodal.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse a través de infraestructura compatible con la API de inferencia de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse a través de infraestructura compatible con la API de inferencia de Hugging Face.
 
 ## Casos de uso
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sheratutor-qwen2.5-7b-gguf (este modelo) | ~7,6B | No disponible (base: 131.072) | GGUF Q4_K_M | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-7B-Instruct | ~7,6B | 131.072 tokens | safetensors, GGUF | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen2.5-7B-Instruct-GGUF (oficial) | ~7,6B | 131.072 tokens | GGUF (varias cuantizaciones) | Apache 2.0 | ModelScope, HuggingFace |
-| QuantFactory/Qwen2.5-7B-Instruct-abliterated-v2-GGUF | ~7,6B | 131.072 tokens | GGUF | No verificada | HuggingFace |
+| sheratutor-qwen2.5-7b-gguf (este modelo) | ~7,6B | No disponible (base: 131.072) | GGUF Q4_K_M | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-7B-Instruct | ~7,6B | 131.072 tokens | safetensors, GGUF | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen2.5-7B-Instruct-GGUF (oficial) | ~7,6B | 131.072 tokens | GGUF (varias cuantizaciones) | Apache 2.0 | ModelScope, Hugging Face |
+| QuantFactory/Qwen2.5-7B-Instruct-abliterated-v2-GGUF | ~7,6B | 131.072 tokens | GGUF | No verificada | Hugging Face |
 
 El ajuste de syed181 no aporta información contrastable que permita compararlo en rendimiento con estas alternativas; su diferenciación es el fine-tuning específico y el Modelfile de Ollama, no la arquitectura ni las especificaciones.
 
@@ -84,7 +84,7 @@ El ajuste de syed181 no aporta información contrastable que permita compararlo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syed181/sheratutor-qwen2.5-7b-gguf
+- Modelo en Hugging Face: https://huggingface.co/syed181/sheratutor-qwen2.5-7b-gguf
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio GitHub de Qwen2.5: https://github.com/mx4ai/qwen2.5
 - Blog oficial de Qwen2.5: https://qwen.ai/blog?id=qwen2.5

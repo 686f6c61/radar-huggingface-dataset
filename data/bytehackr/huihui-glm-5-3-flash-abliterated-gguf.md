@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bytehackr/Huihui-GLM-5.3-Flash-abliterated-GGUF (este) | 320,8 B totales, ~18 B activos | 256K en el ejemplo documentado | Sin benchmarks publicados | MIT | GGUF en HuggingFace |
+| bytehackr/Huihui-GLM-5.3-Flash-abliterated-GGUF (este) | 320,8 B totales, ~18 B activos | 256K en el ejemplo documentado | Sin benchmarks publicados | MIT | GGUF en Hugging Face |
 | zai-org/GLM-5.3-Flash (base) | 320 B totales, 18 B activos | Reducción de KV cache 4,44x frente a GLM-5.3 | Sin cifras en la información disponible | MIT | Safetensors y GGUF (unsloth) |
-| huihui-ai/GLM-5.3-Flash-abliterated-GGUF | Mismo modelo base | Igual | Sin benchmarks publicados | MIT | GGUF en HuggingFace |
+| huihui-ai/GLM-5.3-Flash-abliterated-GGUF | Mismo modelo base | Igual | Sin benchmarks publicados | MIT | GGUF en Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones de otros modelos de la misma categoría (MoE multimodal de ~300B abierto) en la información proporcionada, por lo que no es posible establecer una comparativa de rendimiento cuantitativa.
 

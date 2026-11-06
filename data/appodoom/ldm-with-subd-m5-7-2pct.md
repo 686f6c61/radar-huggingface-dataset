@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LDM with subdivision, M5 at 7.2% training size (identificador `Appodoom/ldm-with-subd-m5-7-2pct`) es un checkpoint de un modelo de difusion latente (LDM, *latent diffusion model*) orientado a la generacion de ritmos en formato `.derbake`, un formato de cinco lineas asociado a la percusion derbake. Lo publica el usuario Appodoom en HuggingFace y forma parte de un experimento de capacidad denominado "LDM capacity experiment", en el que se comparan distintos tamanos de modelo y fracciones del corpus de entrenamiento. Este checkpoint concreto corresponde al modelo M5 entrenado con el 7,2 % del conjunto de entrenamiento.
+LDM with subdivision, M5 at 7.2% training size (identificador `Appodoom/ldm-with-subd-m5-7-2pct`) es un checkpoint de un modelo de difusion latente (LDM, *latent diffusion model*) orientado a la generacion de ritmos en formato `.derbake`, un formato de cinco lineas asociado a la percusion derbake. Lo publica el usuario Appodoom en Hugging Face y forma parte de un experimento de capacidad denominado "LDM capacity experiment", en el que se comparan distintos tamanos de modelo y fracciones del corpus de entrenamiento. Este checkpoint concreto corresponde al modelo M5 entrenado con el 7,2 % del conjunto de entrenamiento.
 
 El modelo es pequeno: 11.858.388 parametros totales segun los pesos en safetensors, con 10 capas, anchura de embedding 384, 4 cabezas de atencion y una longitud de contexto de 6.656 tokens. No es un modelo de lenguaje generalista, sino un modelo de extraccion de caracteristicas y generacion de secuencias de ritmo, con pipeline `feature-extraction` y codigo personalizado (`trust_remote_code=True`) para el procesador y el modelo.
 
@@ -88,5 +88,5 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Appodoom/ldm-with-subd-m5-7-2pct
+- Modelo en Hugging Face: https://huggingface.co/Appodoom/ldm-with-subd-m5-7-2pct
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados al modelo.

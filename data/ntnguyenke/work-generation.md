@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ntnguyenke/work-generation` es un repositorio de HuggingFace publicado por el usuario ntnguyenke que contiene una implementacion propia y minima de una arquitectura tipo BLIP orientada a tareas de generacion. No se trata de un modelo entrenado ni de una release de pesos con rendimiento validado: la propia model card lo describe explicitamente como un "checkpoint de inicializacion" valido para pruebas de humo (smoke tests), no como un checkpoint con benchmarks. El repositorio incluye el codigo Python del modelo con un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors`.
+`ntnguyenke/work-generation` es un repositorio de Hugging Face publicado por el usuario ntnguyenke que contiene una implementacion propia y minima de una arquitectura tipo BLIP orientada a tareas de generacion. No se trata de un modelo entrenado ni de una release de pesos con rendimiento validado: la propia model card lo describe explicitamente como un "checkpoint de inicializacion" valido para pruebas de humo (smoke tests), no como un checkpoint con benchmarks. El repositorio incluye el codigo Python del modelo con un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors`.
 
 La relevancia de esta ficha es fundamentalmente metodologica: sirve para documentar un artefacto que se presenta como andamiaje reproducible para experimentacion, no como modelo desplegable. El recuento real de parametros en safetensors es de 33.088, un orden de magnitud propio de un prototipo de juguete o de un submodulo aislado, muy lejos de los cientos de millones de parametros tipicos de una implementacion BLIP completa. Cualquier uso en produccion requeriria primero un entrenamiento completo y una evaluacion independiente.
 
@@ -84,11 +84,11 @@ No disponible. La informacion proporcionada no incluye datos verificables de mod
 - El riesgo de alucinacion no puede caracterizarse sin un modelo entrenado; en cualquier caso, un modelo de este tamano tendria una capacidad de modelado del lenguaje muy limitada.
 - No se declara cobertura de idiomas ni longitud de contexto, por lo que no puede garantizarse su comportamiento en castellano ni en conversaciones multi-turno largas.
 - La licencia MIT permite uso comercial del artefacto, pero la propia documentacion advierte de que deben revisarse por separado las condiciones de las fuentes de datos externas que se utilicen con el repositorio.
-- Es una implementacion personalizada: las APIs de carga automatica de HuggingFace no funcionaran sin escribir un adaptador explicito.
+- Es una implementacion personalizada: las APIs de carga automatica de Hugging Face no funcionaran sin escribir un adaptador explicito.
 - Cualquier resultado obtenido con un checkpoint futuro entrenado debe documentarse de forma separada de los valores por defecto incluidos en este repositorio.
 - El repositorio tiene 0 descargas y 0 likes, sin senales de uso o validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ntnguyenke/work-generation
+- Modelo en Hugging Face: https://huggingface.co/ntnguyenke/work-generation
 - No se han encontrado en la busqueda web enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo; los resultados obtenidos correspondian a sitios de comercio minorista sin relacion con el artefacto.

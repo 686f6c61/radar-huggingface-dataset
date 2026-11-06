@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Perceiver for Matching es un repositorio experimental publicado por el usuario puneverma1986 en HuggingFace. Se trata de una implementacion funcional de la arquitectura Perceiver orientada a tareas de matching (emparejamiento), construida con una configuracion base y pensada explicitamente como punto de partida para pruebas de humo y repeticion de experimentos. El propio autor indica que no se reclama ninguna puntuacion de benchmark y que el checkpoint incluido es una inicializacion valida, no un modelo entrenado.
+Perceiver for Matching es un repositorio experimental publicado por el usuario puneverma1986 en Hugging Face. Se trata de una implementacion funcional de la arquitectura Perceiver orientada a tareas de matching (emparejamiento), construida con una configuracion base y pensada explicitamente como punto de partida para pruebas de humo y repeticion de experimentos. El propio autor indica que no se reclama ninguna puntuacion de benchmark y que el checkpoint incluido es una inicializacion valida, no un modelo entrenado.
 
 El peso publicado, `model.safetensors`, contiene unicamente 24.832 parametros totales, una cifra extraordinariamente baja que confirma que se trata de un andamiaje de codigo y no de un modelo destinado a inferencia real. El repositorio ocupa 0,0 GB y no registra descargas ni interacciones en el momento de la consulta. La licencia es MIT y el pipeline no esta declarado.
 
@@ -76,5 +76,5 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/puneverma1986/perceiver-experiment
+- Hugging Face: https://huggingface.co/puneverma1986/perceiver-experiment
 - Resultados de busqueda web: no se han encontrado enlaces relevantes, papers, blogs, repositorios o demos asociados a este modelo en la informacion disponible.

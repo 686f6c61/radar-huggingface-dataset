@@ -94,10 +94,10 @@ Con generación greedy por defecto en PyTorch y Transformers, los mismos pesos o
 
 | Modelo | Parametros | Ventana de audio | WER medio en ucraniano (10 conjuntos) | WER en inglés (AMI) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| whisper-large-v3-turbo-uk (este modelo) | 808,9 M | 30 s | 8,23 % | 13,21 % | MIT | HuggingFace, safetensors y Core ML |
-| openai/whisper-large-v3 | 1.550 M | 30 s | 9,79 % | 22,30 % | MIT (según el modelo base) | HuggingFace, múltiples formatos |
-| openai/whisper-large-v3-turbo | 808,9 M | 30 s | no disponible (no completó el conjunto de ingeniería) | 22,63 % | MIT | HuggingFace, múltiples formatos |
-| ihnatov-yuri/parakeet-tdt-0.6b-v3-uk (v2) | 0,6 B | no disponible | 8,29 % | 12,72 % | no disponible en la información proporcionada | HuggingFace, build int8 |
+| whisper-large-v3-turbo-uk (este modelo) | 808,9 M | 30 s | 8,23 % | 13,21 % | MIT | Hugging Face, safetensors y Core ML |
+| openai/whisper-large-v3 | 1.550 M | 30 s | 9,79 % | 22,30 % | MIT (según el modelo base) | Hugging Face, múltiples formatos |
+| openai/whisper-large-v3-turbo | 808,9 M | 30 s | no disponible (no completó el conjunto de ingeniería) | 22,63 % | MIT | Hugging Face, múltiples formatos |
+| ihnatov-yuri/parakeet-tdt-0.6b-v3-uk (v2) | 0,6 B | no disponible | 8,29 % | 12,72 % | no disponible en la información proporcionada | Hugging Face, build int8 |
 
 Frente a Parakeet UK v2, el modelo es estadísticamente equivalente en la media de ucraniano (diferencia de −0,06 puntos con intervalo que cruza cero), algo peor en reuniones en inglés (13,21 % frente a 12,72 %) y claramente peor en code-switching (38,98 % frente a 28,55 %, y solo el 9,5 % de las palabras inglesas escritas en inglés frente al 32,9 %). Su ventaja es la compatibilidad con el ecosistema Whisper (Transformers, WhisperKit, herramientas de transcripción con marcas de tiempo) y una licencia MIT explícita.
 
@@ -115,7 +115,7 @@ Frente a Parakeet UK v2, el modelo es estadísticamente equivalente en la media 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ihnatov-yuri/whisper-large-v3-turbo-uk
+- Modelo en Hugging Face: https://huggingface.co/ihnatov-yuri/whisper-large-v3-turbo-uk
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Parakeet UK v2 del mismo autor: https://huggingface.co/ihnatov-yuri/parakeet-tdt-0.6b-v3-uk
 - WhisperKit (Argmax): https://github.com/argmaxinc/WhisperKit

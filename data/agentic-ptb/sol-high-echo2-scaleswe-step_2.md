@@ -6,7 +6,7 @@ El modelo `agentic-ptb/sol-high.echo2-scaleswe.step_2` es un checkpoint intermed
 
 La relevancia de este checkpoint es principalmente investigadora: forma parte de un proceso de exploración de configuraciones de entrenamiento para modelos de agente, y no está pensado para uso directo en producción. Un detalle crítico señalado en la propia model card es que el token de fin de secuencia (EOS) está incompleto: solo incluye el token `248044` y le falta `248046` (`<|im_end|>`), lo que provoca que el modelo no detenga correctamente las respuestas y pueda sobrepasar la ventana de contexto. Por tanto, cualquier evaluación numérica debe considerarse un límite inferior, no una medida real.
 
-No se dispone de información sobre licencia, idiomas soportados, datos de entrenamiento ni benchmarks publicados. El modelo se publicó el 20 de agosto de 2026 y no registra descargas ni valoraciones en HuggingFace.
+No se dispone de información sobre licencia, idiomas soportados, datos de entrenamiento ni benchmarks publicados. El modelo se publicó el 20 de agosto de 2026 y no registra descargas ni valoraciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -73,5 +73,5 @@ No se dispone de datos de rendimiento ni de caracteristicas detalladas de este c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/sol-high.echo2-scaleswe.step_2
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/sol-high.echo2-scaleswe.step_2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (enlace inferido, no verificado en la informacion proporcionada)

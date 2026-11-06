@@ -91,7 +91,7 @@ No se dispone de informacion suficiente para comparar directamente con otros mod
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/kshitijthakkar/loggenix-moe-0.4B-0.2A-sft-s4
+- Hugging Face (modelo): https://huggingface.co/kshitijthakkar/loggenix-moe-0.4B-0.2A-sft-s4
 - Modelo base (s3.1): https://huggingface.co/kshitijthakkar/loggenix-moe-0.4B-0.2A-sft-s3.1
 - Coleccion Loggenix-MOE: https://huggingface.co/collections/kshitijthakkar/loggenix-moe
 - FriendliAI (inferencia gestionada): https://friendli.ai/models/kshitijthakkar/loggenix-moe-0.4B-0.2A-sft-s4

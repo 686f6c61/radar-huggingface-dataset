@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Penguin7775465/Model` es un repositorio alojado en HuggingFace cuyo unico contenido verificable es una model card de dos lineas que declara la licencia MIT. No se especifica arquitectura, numero de parametros, longitud de contexto, idiomas, formato de pesos ni pipeline de inferencia. El autor figura como Penguin7775465 y el repositorio fue creado y actualizado el 22 de septiembre de 2026, sin actualizaciones posteriores registradas.
+`Penguin7775465/Model` es un repositorio alojado en Hugging Face cuyo unico contenido verificable es una model card de dos lineas que declara la licencia MIT. No se especifica arquitectura, numero de parametros, longitud de contexto, idiomas, formato de pesos ni pipeline de inferencia. El autor figura como Penguin7775465 y el repositorio fue creado y actualizado el 22 de septiembre de 2026, sin actualizaciones posteriores registradas.
 
 El repositorio acumula 0 descargas y 0 "likes", lo que indica que no ha sido distribuido ni validado por terceros. Su identificador generico ("Model") y la ausencia total de documentacion tecnica apuntan a un espacio de prueba personal o a un placeholder, mas que a un modelo publicado para uso en produccion. No hay evidencia de que existan pesos subidos, artefactos de tokenizer o configuracion de arquitectura.
 
@@ -91,7 +91,7 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Penguin7775465/Model
+- Hugging Face: https://huggingface.co/Penguin7775465/Model
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

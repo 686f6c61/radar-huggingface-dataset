@@ -93,7 +93,7 @@ La comparacion cuantitativa con alternativas no es posible con la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-target-lora01-view-small-n50000-1000-20261015
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-target-lora01-view-small-n50000-1000-20261015
 - Modelo fuente: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-n50000-10000-20261015
 - Dataset de adaptacion: https://huggingface.co/datasets/Donghyun1228/libero-support-random-waypoint-300k-20261015
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; los resultados devueltos no guardan ninguna relacion con el modelo ni con el framework openpi.

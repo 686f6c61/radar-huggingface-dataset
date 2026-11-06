@@ -108,6 +108,6 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmuchancel/2026-24679-coffee-autogluon-regressor
+- Modelo en Hugging Face: https://huggingface.co/cmuchancel/2026-24679-coffee-autogluon-regressor
 - Conjunto de datos de origen: https://huggingface.co/datasets/ssg1/coffee-bags-tabular
 - Busqueda web: no se han encontrado enlaces relevantes. El unico resultado devuelto (anuncios clasificados de eBay Kleinanzeigen sobre embarcaciones) no guarda relacion con el modelo ni con su dominio de aplicacion. No se dispone de paper, blog, repositorio ni demo adicionales en la informacion proporcionada.

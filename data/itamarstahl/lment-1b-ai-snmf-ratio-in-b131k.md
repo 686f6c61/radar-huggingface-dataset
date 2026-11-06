@@ -98,7 +98,7 @@ Frente a alternativas externas de la misma categoría (modelos de ~1B para *conc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itamarstahl/lment-1b-ai-snmf-ratio-in-b131k
+- Modelo en Hugging Face: https://huggingface.co/itamarstahl/lment-1b-ai-snmf-ratio-in-b131k
 - Modelo control completo de partida: https://huggingface.co/itamarstahl/lment-1b-control-2e-b131k
 - Gemelo con exclusión del concepto AI: https://huggingface.co/itamarstahl/lment-1b-noai-2e-b131k
 - Artículo citado: Gal Barak, Tamar Tabbach, Itamar Stahl y Adam Fleisher, *Can Concept Erasure Reproduce Concept Exclusion? A Matched Evaluation of EMBER, RMU, and SNMF*, 2026 (no se proporciona enlace al paper en la información disponible).

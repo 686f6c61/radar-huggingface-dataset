@@ -64,7 +64,7 @@ No se dispone de datos suficientes para comparar el rendimiento con otros modelo
 
 - La publicacion cuenta con 0 descargas y 0 me gusta, lo que indica escasa validacion por parte de la comunidad.
 - No se ha publicado ninguna evaluacion de rendimiento ni benchmarks para esta cuantizacion concreta, por lo que no se puede afirmar que mantenga la calidad del modelo original.
-- La licencia del modelo no esta especificada en la pagina de HuggingFace; es necesario consultar la licencia del modelo base de Google para determinar las condiciones de uso comercial.
+- La licencia del modelo no esta especificada en la pagina de Hugging Face; es necesario consultar la licencia del modelo base de Google para determinar las condiciones de uso comercial.
 - Los idiomas soportados no aparecen en los metadatos de esta publicacion, aunque el modelo base declara soporte de mas de 140 idiomas.
 - Al ser una cuantizacion de 4 bits con group size 64, puede producirse una perdida de precision en comparacion con el modelo sin cuantizar, lo que podria afectar a tareas complejas de razonamiento.
 - El formato MLX limita la ejecucion a dispositivos Apple Silicon; para otro hardware se requiere una conversion a GGUF, con el consiguiente trabajo adicional y posible perdida de compatibilidad.
@@ -72,7 +72,7 @@ No se dispone de datos suficientes para comparar el rendimiento con otros modelo
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/RepublicOfKorokke/gemma-4-E4B-it-qat-q4_0-unquantized-oQ4e-text-fp16
-- HuggingFace del modelo base: https://huggingface.co/google/gemma-4-E4B
+- Hugging Face del modelo: https://huggingface.co/RepublicOfKorokke/gemma-4-E4B-it-qat-q4_0-unquantized-oQ4e-text-fp16
+- Hugging Face del modelo base: https://huggingface.co/google/gemma-4-E4B
 - Model card de Gemma 4: https://ai.google.dev/gemma/docs/core/model_card_4
 - Herramienta de cuantizacion oQ: https://github.com/jundot/omlx

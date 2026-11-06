@@ -33,7 +33,7 @@ Lo que sí está documentado con precisión es el proceso de cuantización: mrad
 - Respuestas con citación de normativa, según el tag `citation` de la model card (sin ejemplos verificables publicados).
 - Soporte declarado para flujos de recuperación aumentada (RAG): el modelo está etiquetado explícitamente para integrarse en pipelines de recuperación + generación.
 - Conversacional multi-turno (`conversational` en los tags del repo).
-- Compatible con endpoints (`endpoints_compatible`), es decir, desplegable tras una API compatible con el ecosistema de HuggingFace.
+- Compatible con endpoints (`endpoints_compatible`), es decir, desplegable tras una API compatible con el ecosistema de Hugging Face.
 - Tool calling / function calling: no disponible en la información proporcionada.
 - Capacidades de agente, multi-step reasoning, visión, audio o thinking mode: no disponibles en la información proporcionada.
 - Multilingüismo: limitado al árabe según la metadata; no se declara soporte de otros idiomas.
@@ -91,7 +91,7 @@ La información proporcionada no incluye benchmarks que permitan una comparació
 - Cuantizaciones agresivas: Q2_K y Q3_K_S degradan la calidad de forma apreciable; para uso jurídico se recomienda Q5_K_M o superior, o el modelo base en FP16.
 - Sesgos: no documentados. Al estar entrenado sobre normativa de un país concreto, puede reproducir sesgos del corpus legal y del material de entrenamiento, no evaluados por el autor.
 - Estado del repositorio: 0 descargas y 1 like en el momento de la consulta, lo que implica ausencia de validación por parte de la comunidad.
-- La búsqueda web realizada no devolvió ninguna fuente relacionada con el modelo (los resultados obtenidos eran contenido no relacionado); toda la información de esta ficha procede exclusivamente de la metadata y la model card de HuggingFace.
+- La búsqueda web realizada no devolvió ninguna fuente relacionada con el modelo (los resultados obtenidos eran contenido no relacionado); toda la información de esta ficha procede exclusivamente de la metadata y la model card de Hugging Face.
 
 ## Enlaces
 

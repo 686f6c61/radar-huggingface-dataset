@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MinaMila/Llama3.1-8B-Qwen7B es un adaptador PEFT (LoRA) publicado en HuggingFace cuyo modelo base declarado es meta-llama/Meta-Llama-3.1-8B-Instruct. El repositorio pesa 0,2 GB, un orden de magnitud compatible con un adaptador de bajo rango y no con pesos completos de un modelo de 8.000 millones de parametros, que en bf16 ocuparian aproximadamente 16 GB. La libreria declarada es peft y el unico artefacto de pesos referenciado son ficheros safetensors.
+MinaMila/Llama3.1-8B-Qwen7B es un adaptador PEFT (LoRA) publicado en Hugging Face cuyo modelo base declarado es meta-llama/Meta-Llama-3.1-8B-Instruct. El repositorio pesa 0,2 GB, un orden de magnitud compatible con un adaptador de bajo rango y no con pesos completos de un modelo de 8.000 millones de parametros, que en bf16 ocuparian aproximadamente 16 GB. La libreria declarada es peft y el unico artefacto de pesos referenciado son ficheros safetensors.
 
-La relevancia del modelo es, a dia de hoy, muy limitada. La model card es una plantilla estandar de HuggingFace sin rellenar: todos los campos de descripcion, uso previsto, datos de entrenamiento, hiperparametros, evaluacion, hardware y autoria contienen el marcador "[More Information Needed]". El repositorio acumula 0 descargas y 0 likes, no declara licencia ni idiomas, y el nombre del modelo ("Qwen7B") no coincide con el modelo base declarado (Llama 3.1 8B), lo que introduce ambiguedad sobre que se entreno realmente y con que datos.
+La relevancia del modelo es, a dia de hoy, muy limitada. La model card es una plantilla estandar de Hugging Face sin rellenar: todos los campos de descripcion, uso previsto, datos de entrenamiento, hiperparametros, evaluacion, hardware y autoria contienen el marcador "[More Information Needed]". El repositorio acumula 0 descargas y 0 likes, no declara licencia ni idiomas, y el nombre del modelo ("Qwen7B") no coincide con el modelo base declarado (Llama 3.1 8B), lo que introduce ambiguedad sobre que se entreno realmente y con que datos.
 
 Por tanto, esta ficha describe un artefacto experimental no documentado. Cualquier dato tecnico que se ofrece a continuacion procede del modelo base conocido y se etiqueta como tal; no debe atribuirse al adaptador ni asumirse verificado. La recomendacion operativa es no desplegarlo en produccion sin una evaluacion propia previa.
 
@@ -27,9 +27,9 @@ Por tanto, esta ficha describe un artefacto experimental no documentado. Cualqui
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no permite describir la arquitectura del adaptador mas alla de su naturaleza PEFT. El autor no documenta el rango (rank) del LoRA, los modulos objetivo, el alpha, el dropout ni si se aplico alguna variante como QLoRA. El tag base_model:adapter de HuggingFace confirma que se trata de un adaptador que requiere cargar el modelo base por separado, no de un modelo fusionado autonomo.
+La informacion disponible no permite describir la arquitectura del adaptador mas alla de su naturaleza PEFT. El autor no documenta el rango (rank) del LoRA, los modulos objetivo, el alpha, el dropout ni si se aplico alguna variante como QLoRA. El tag base_model:adapter de Hugging Face confirma que se trata de un adaptador que requiere cargar el modelo base por separado, no de un modelo fusionado autonomo.
 
-Tampoco hay datos sobre el entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si hubo fases de SFT, DPO o RLHF, y que hiperparametros se usaron. El unico enlace tecnico presente en la model card es la referencia arXiv:1910.09700 (Lacoste et al., estimacion de impacto de carbono), que es texto de plantilla heredado del formulario estandar de HuggingFace y no un paper del modelo. En consecuencia, no se puede verificar ni la procedencia de los datos ni la validez del ajuste.
+Tampoco hay datos sobre el entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si hubo fases de SFT, DPO o RLHF, y que hiperparametros se usaron. El unico enlace tecnico presente en la model card es la referencia arXiv:1910.09700 (Lacoste et al., estimacion de impacto de carbono), que es texto de plantilla heredado del formulario estandar de Hugging Face y no un paper del modelo. En consecuencia, no se puede verificar ni la procedencia de los datos ni la validez del ajuste.
 
 ## Capacidades
 
@@ -48,7 +48,7 @@ Tampoco hay datos sobre el entrenamiento: se desconoce el numero de tokens, la c
 - Evaluacion comparativa de adaptadores LoRA: cargar el adaptador sobre Llama 3.1 8B Instruct y comparar su salida con la del modelo base sin ajustar para determinar si el ajuste aporta o degrada calidad. Es el uso mas realista dado el estado del repositorio.
 - Reproduccion de experimentos academicos sobre PEFT: usar el adaptador como artefacto de partida para estudiar tecnicas de fusion de pesos o de composicion de adaptadores, siempre que se asuma la ausencia de documentacion.
 - Prototipado interno no critico: desplegar el adaptador en un entorno de pruebas con llama.cpp, Ollama o vLLM para iterar sobre prompts, asumiendo que no hay garantias de calidad ni de licencia.
-- Auditoria de artefactos del ecosistema HuggingFace: analizar el repositorio como caso de estudio de model cards vacias, nombres inconsistentes respecto al modelo base y ausencia de licencia.
+- Auditoria de artefactos del ecosistema Hugging Face: analizar el repositorio como caso de estudio de model cards vacias, nombres inconsistentes respecto al modelo base y ausencia de licencia.
 - Pruebas de carga de adaptadores PEFT en pipelines propios: validar que el codigo de integracion (peft 0.15.1 y transformers compatible) carga correctamente los safetensors antes de invertir esfuerzo en un ajuste propio.
 - Generacion de texto conversacional en castellano: tecnicamente posible por herencia del modelo base de 8B parametros, pero sin datos que confirmen calidad ni cobertura idiomatica en este adaptador concreto.
 - Atencion al cliente automatizada: no recomendado con este artefacto, ya que no hay evaluacion de robustez multi-turno ni de tasas de alucinacion.
@@ -93,7 +93,7 @@ No hay datos de rendimiento comparado para el adaptador, por lo que la comparati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MinaMila/Llama3.1-8B-Qwen7B
+- Repositorio Hugging Face: https://huggingface.co/MinaMila/Llama3.1-8B-Qwen7B
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Referencia citada en la model card (estimacion de impacto de carbono, texto de plantilla): https://arxiv.org/abs/1910.09700

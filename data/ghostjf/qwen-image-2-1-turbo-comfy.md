@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GhostJF/Qwen-Image-2.1-Turbo-Comfy es un repositorio alojado en HuggingFace cuyo nombre sugiere una conversión o adaptación de un modelo de generación de imágenes de la familia Qwen-Image, orientada a su uso dentro de ComfyUI (interfaz de nodos para pipelines de difusión). El autor del repositorio es el usuario GhostJF y el repositorio ocupa 14,2 GB, un tamano coherente con un modelo de difusión de gran tamano en precision completa o semiprecision. No se dispone de informacion publica confirmada sobre la arquitectura exacta, el pipeline ni la licencia.
+GhostJF/Qwen-Image-2.1-Turbo-Comfy es un repositorio alojado en Hugging Face cuyo nombre sugiere una conversión o adaptación de un modelo de generación de imágenes de la familia Qwen-Image, orientada a su uso dentro de ComfyUI (interfaz de nodos para pipelines de difusión). El autor del repositorio es el usuario GhostJF y el repositorio ocupa 14,2 GB, un tamano coherente con un modelo de difusión de gran tamano en precision completa o semiprecision. No se dispone de informacion publica confirmada sobre la arquitectura exacta, el pipeline ni la licencia.
 
 No hay datos sobre pipeline, idiomas, licencia ni etiquetas de tarea mas alla de `region:us`. El repositorio registra 0 descargas y 1 like desde su creacion, lo que indica que se trata de una publicacion reciente y practicamente sin adopcion en el momento de redactar esta ficha.
 
@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GhostJF/Qwen-Image-2.1-Turbo-Comfy | no disponible | no aplicable / no disponible | no disponible | HuggingFace, 0 descargas |
+| GhostJF/Qwen-Image-2.1-Turbo-Comfy | no disponible | no aplicable / no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,5 +87,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GhostJF/Qwen-Image-2.1-Turbo-Comfy
+- Repositorio en Hugging Face: https://huggingface.co/GhostJF/Qwen-Image-2.1-Turbo-Comfy
 - Papers, blogs, repositorios o demos adicionales: no disponible en la informacion proporcionada.

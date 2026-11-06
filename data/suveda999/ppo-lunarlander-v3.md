@@ -25,7 +25,7 @@ Su relevancia es acotada pero clara dentro del ecosistema de investigación en r
 | Espacio de acciones | Discreto (4 acciones: no hacer nada, propulsor izquierdo, propulsor principal, propulsor derecho) |
 | Espacio de observaciones | Vector continuo de 8 dimensiones (posición, velocidad, ángulo, velocidad angular, contacto con el suelo y estado de las patas) |
 | Librería y framework | Stable-Baselines3 sobre PyTorch |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -88,7 +88,7 @@ La información proporcionada no incluye otros modelos comparables ni resultados
 
 | Modelo / alternativa | Tipo | Parámetros | Contexto | Rendimiento en LunarLander | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PPO `suveda999/ppo-LunarLander-v3` (este modelo) | PPO on-policy, actor-crítico MLP | no disponible | no aplica | mean_reward 271,62 +/- 12,83 (no verificado) | no disponible | HuggingFace, 0 descargas, 1 like |
+| PPO `suveda999/ppo-LunarLander-v3` (este modelo) | PPO on-policy, actor-crítico MLP | no disponible | no aplica | mean_reward 271,62 +/- 12,83 (no verificado) | no disponible | Hugging Face, 0 descargas, 1 like |
 | Otros agentes PPO sobre LunarLander-v3 | PPO on-policy | no disponible | no aplica | no disponible | no disponible | no identificados en la información proporcionada |
 | Agentes DQN sobre LunarLander | Off-policy, value-based, requiere acción discreta | no disponible | no aplica | no disponible | no disponible | no identificados en la información proporcionada |
 | Agentes A2C sobre LunarLander | On-policy, actor-crítico síncrono/asíncrono | no disponible | no aplica | no disponible | no disponible | no identificados en la información proporcionada |
@@ -110,7 +110,7 @@ Diferencias cualitativas frente a otras familias de algoritmos, sin datos numér
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suveda999/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/suveda999/ppo-LunarLander-v3
 - Repositorio de Stable-Baselines3 (librería utilizada): https://github.com/DLR-RM/stable-baselines3
 - Documentación de Stable-Baselines3: https://stable-baselines3.readthedocs.io/
 - Documentación del entorno LunarLander en Gymnasium: https://gymnasium.farama.org/environments/box2d/lunar_lander/

@@ -123,7 +123,7 @@ No se dispone de datos de benchmarks del modelo base ni de cuantizaciones altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bertholomus/Beam-1.0-501B-A23B-EXL3-3bpw-2xGB10
+- Repositorio Hugging Face: https://huggingface.co/bertholomus/Beam-1.0-501B-A23B-EXL3-3bpw-2xGB10
 - Modelo base (Reflection): https://huggingface.co/reflection/Beam-1.0-501B-A23B
 - Drafter DFlash2: https://huggingface.co/reflection/Beam-1.0-501B-A23B-DFlash2
 - Receta de despliegue para 2× DGX Spark: https://github.com/bertholomus/beam-1.0-2x-dgx-spark

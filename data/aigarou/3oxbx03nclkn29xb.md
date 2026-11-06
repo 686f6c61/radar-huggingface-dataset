@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado en HuggingFace como `AIGAROU/3oxbx03nclkn29xb` es una redistribución del checkpoint `huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated-MTP-GGUF`, es decir, una versión "abliterated" (sin mecanismos de rechazo) del modelo multimodal `Qwen/Qwen3.6-35B-A3B` de Alibaba. El autor original del proceso de abliteración es el colectivo huihui-ai, mientras que el repositorio aquí descrito se limita a reempaquetar dichos pesos bajo una cuenta distinta. La arquitectura de partida es un transformer de tipo Mixture-of-Experts (MoE) con 35.505.251.456 parámetros totales, activando un subconjunto por token (el sufijo "A3B" indica aproximadamente 3 mil millones de parámetros activos, aunque este dato no se confirma en la información disponible).
+El modelo identificado en Hugging Face como `AIGAROU/3oxbx03nclkn29xb` es una redistribución del checkpoint `huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated-MTP-GGUF`, es decir, una versión "abliterated" (sin mecanismos de rechazo) del modelo multimodal `Qwen/Qwen3.6-35B-A3B` de Alibaba. El autor original del proceso de abliteración es el colectivo huihui-ai, mientras que el repositorio aquí descrito se limita a reempaquetar dichos pesos bajo una cuenta distinta. La arquitectura de partida es un transformer de tipo Mixture-of-Experts (MoE) con 35.505.251.456 parámetros totales, activando un subconjunto por token (el sufijo "A3B" indica aproximadamente 3 mil millones de parámetros activos, aunque este dato no se confirma en la información disponible).
 
 El problema que aborda es doble: por un lado, ofrece una variante sin censura del modelo base, útil para investigación sobre alineamiento y evaluación de sesgos; por otro, distribuye los pesos en formato GGUF cuantizado (Q4_K mencionado en la model card) para permitir inferencia local en hardware de consumo mediante llama.cpp. La relevancia actual radica en que combina tres tendencias: modelos MoE eficientes, capacidades multimodales (pipeline `image-text-to-text`) y decodificación especulativa mediante MTP (Multi-Token Prediction), que acelera la generación.
 
@@ -83,7 +83,7 @@ La comparativa con modelos de otras familias (p. ej. Llama o Mistral) no está d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AIGAROU/3oxbx03nclkn29xb
+- Repositorio en Hugging Face: https://huggingface.co/AIGAROU/3oxbx03nclkn29xb
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio original del autor de la abliteración: https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated-MTP-GGUF
 - Herramienta de abliteración: https://github.com/Sumandora/remove-refusals-with-transformers

@@ -82,7 +82,7 @@ La comparativa muestra que esta cuantización es la única que permite servir el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/2wild4tv/GLM-5.3-Int4-Int8Mix
+- Modelo en Hugging Face: https://huggingface.co/2wild4tv/GLM-5.3-Int4-Int8Mix
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Licencia GLM-5.3: https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE
 - Receta de QuantTrio para GLM-5.2: https://huggingface.co/QuantTrio/GLM-5.2-Int4-Int8Mix

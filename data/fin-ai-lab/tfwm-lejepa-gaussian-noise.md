@@ -31,7 +31,7 @@ Un detalle metodológico relevante es la separación entre lectura y evaluación
 
 ## Capacidades
 
-- Extracción de características (feature extraction) sobre ventanas de datos de mercado a 1 Hz; pipeline declarado en HuggingFace: `feature-extraction`.
+- Extracción de características (feature extraction) sobre ventanas de datos de mercado a 1 Hz; pipeline declarado en Hugging Face: `feature-extraction`.
 - Generación de embeddings utilizables como entrada de sondas de forecasting lineales o poco profundas.
 - Análisis del espacio latente: comparación de representaciones entre encoders con el mismo backbone y distintos objetivos.
 - Procesamiento de 20 canales por registro: 9 canales de mercado y 11 canales de información de vista (estadísticos de normalización por vista y geometría de ventana).
@@ -89,12 +89,12 @@ La model card indica que los 18 encoders comparten backbone y regimen de entrena
 - Sin cifras de benchmarks publicadas en la informacion disponible, por lo que no es posible cuantificar la calidad de las representaciones ni compararlas con alternativas externas.
 - Riesgo de sobreajuste al periodo historico: al ser un encoder autosupervisado sobre seis meses de datos, las representaciones pueden capturar condiciones de regimen especificas de ese tramo y degradarse en otros.
 - El pooling es una fuente de error silencioso: `from_pretrained` aplica siempre el pool de `config.json` (`mean`) e ignora el pool que se le pase, de modo que usar la lectura incorrecta para forecasting (`last` en lugar de `mean`) altera los resultados sin aviso.
-- Trazabilidad limitada en HuggingFace: el repositorio figura con 0 descargas y 0 likes, sin validacion de la comunidad.
+- Trazabilidad limitada en Hugging Face: el repositorio figura con 0 descargas y 0 likes, sin validacion de la comunidad.
 - La busqueda web realizada no ha devuelto informacion relevante sobre el modelo; los resultados obtenidos corresponden a definiciones del termino frances "fin" y no guardan relacion con este proyecto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fin-ai-lab/tfwm-lejepa-gaussian-noise
+- Modelo en Hugging Face: https://huggingface.co/fin-ai-lab/tfwm-lejepa-gaussian-noise
 - Coleccion TFWM Pre-Trained Encoders: https://huggingface.co/collections/fin-ai-lab/tfwm-pre-trained-encoders-6ab871e942535b9c6041698d
 - Dataset de entrenamiento: https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense
 - Particion concreta usada (`1Hz_mosaic_mnth/`): https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense/tree/main/1Hz_mosaic_mnth

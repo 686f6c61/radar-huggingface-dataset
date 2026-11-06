@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`riykuma98/deit-classification` es un prototipo de investigacion basado en la arquitectura DeiT (Data-efficient Image Transformer) orientado a tareas de clasificacion. Lo publica el usuario riykuma98 en HuggingFace bajo licencia MIT y se distribuye como un repositorio minimo que incluye un script de entrenamiento (`finetune.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`).
+`riykuma98/deit-classification` es un prototipo de investigacion basado en la arquitectura DeiT (Data-efficient Image Transformer) orientado a tareas de clasificacion. Lo publica el usuario riykuma98 en Hugging Face bajo licencia MIT y se distribuye como un repositorio minimo que incluye un script de entrenamiento (`finetune.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`).
 
 El punto mas importante a tener en cuenta es que, segun la propia model card, el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado. El autor indica explicitamente que no se reclama ninguna puntuacion de benchmark y que el repositorio sirve como punto de partida experimental, no como artefacto listo para produccion.
 
@@ -65,10 +65,10 @@ La comparacion se realiza con variantes publicas de DeiT, ya que el repositorio 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| riykuma98/deit-classification | 24.832 (metadatos) | no aplica | sin benchmark declarado | MIT | HuggingFace (checkpoint de inicializacion) |
-| DeiT-base (referencia original) | ~86 M | no aplica | no disponible en esta ficha | Apache 2.0 (referencia) | HuggingFace / repos oficiales |
-| DeiT-small (referencia original) | ~22 M | no aplica | no disponible en esta ficha | Apache 2.0 (referencia) | HuggingFace / repos oficiales |
-| ViT-base (referencia) | ~86 M | no aplica | no disponible en esta ficha | Apache 2.0 (referencia) | HuggingFace |
+| riykuma98/deit-classification | 24.832 (metadatos) | no aplica | sin benchmark declarado | MIT | Hugging Face (checkpoint de inicializacion) |
+| DeiT-base (referencia original) | ~86 M | no aplica | no disponible en esta ficha | Apache 2.0 (referencia) | Hugging Face / repos oficiales |
+| DeiT-small (referencia original) | ~22 M | no aplica | no disponible en esta ficha | Apache 2.0 (referencia) | Hugging Face / repos oficiales |
+| ViT-base (referencia) | ~86 M | no aplica | no disponible en esta ficha | Apache 2.0 (referencia) | Hugging Face |
 
 Nota: no es posible comparar rendimiento porque el modelo evaluado no ha sido entrenado ni evaluado.
 
@@ -77,7 +77,7 @@ Nota: no es posible comparar rendimiento porque el modelo evaluado no ha sido en
 - El checkpoint `model.safetensors` no ha sido entrenado. Es una inicializacion valida para pruebas de humo, no un modelo con capacidades funcionales.
 - El autor indica explicitamente que no se ha auditado robustez, equidad (fairness) ni transferencia de dominio.
 - No se reclama ninguna puntuacion de benchmark; cualquier resultado publicado a partir de este repositorio debe documentarse por separado y no atribuirse a los valores por defecto.
-- La implementacion es personalizada: las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito, lo que complica su integracion directa.
+- La implementacion es personalizada: las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito, lo que complica su integracion directa.
 - Inconsistencia de datos: la escala declarada es "large", pero los metadatos de safetensors reportan 24.832 parametros. Conviene verificar `config.json` antes de asumir capacidades.
 - Sesgos conocidos: no disponibles (el modelo no ha sido entrenado ni evaluado).
 - Riesgo de alucinacion: no aplica en el sentido generativo; al ser un clasificador, el riesgo relevante seria la clasificacion erronea, no evaluada en este repositorio.
@@ -86,5 +86,5 @@ Nota: no es posible comparar rendimiento porque el modelo evaluado no ha sido en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/riykuma98/deit-classification
+- Modelo en Hugging Face: https://huggingface.co/riykuma98/deit-classification
 - No se han encontrado enlaces adicionales (papers, blogs, repos o demos) en la informacion proporcionada.

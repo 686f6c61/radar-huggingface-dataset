@@ -85,6 +85,6 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/windsword8989/5GbZvZ7tcC-d1
+- Hugging Face: https://huggingface.co/windsword8989/5GbZvZ7tcC-d1
 - Perfil del autor: https://huggingface.co/windsword8989
 - Modelo base (referencia): https://huggingface.co/vera6/affine-5g4yy75zuz-t6 (no verificado)

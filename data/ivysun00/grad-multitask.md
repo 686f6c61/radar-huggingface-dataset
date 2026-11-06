@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ivysun00/grad-multitask` es un repositorio de HuggingFace publicado por el usuario ivysun00 que contiene una implementación de referencia de una arquitectura tipo Mixer orientada a tareas multitarea. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un "punto de partida reproducible" con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El artefacto principal es el script `finetune.py`, no los pesos.
+`ivysun00/grad-multitask` es un repositorio de Hugging Face publicado por el usuario ivysun00 que contiene una implementación de referencia de una arquitectura tipo Mixer orientada a tareas multitarea. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un "punto de partida reproducible" con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El artefacto principal es el script `finetune.py`, no los pesos.
 
 El repositorio incluye la configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un `model.safetensors` de inicialización. El recuento real de parámetros del checkpoint es de 33.088, es decir, unas 33 mil unidades, lo que confirma que se trata de una implementación a escala de juguete o de prueba, no de un modelo con capacidad generativa real.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ivysun00/grad-multitask | 33.088 | no disponible | No (inicialización) | MIT | HuggingFace |
+| ivysun00/grad-multitask | 33.088 | no disponible | No (inicialización) | MIT | Hugging Face |
 | Modelos Mixer de referencia (p. ej. MLP-Mixer) | no disponible | no disponible | Sí, en papers | variable | Papers/repos |
-| Alternativas multitarea de juguete | no disponible | no disponible | variable | variable | HuggingFace |
+| Alternativas multitarea de juguete | no disponible | no disponible | variable | variable | Hugging Face |
 
 No se dispone de información suficiente para establecer una comparativa cuantitativa con alternativas de la misma categoría. La comparación relevante es conceptual: este repositorio es un esqueleto de implementación, no un modelo entrenado, por lo que no es directamente comparable con releases de pesos entrenados.
 
@@ -88,6 +88,6 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ivysun00/grad-multitask
+- Hugging Face: https://huggingface.co/ivysun00/grad-multitask
 - Repositorio de archivos: https://huggingface.co/ivysun00/grad-multitask/tree/main
 - No se han encontrado papers, blogs, repos adicionales ni demos en la información disponible.

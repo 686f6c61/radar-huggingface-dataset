@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`koheismvh83/multitask-finetune`, publicado en HuggingFace como "Mae for Multitask", es un prototipo de investigación orientado a tareas multitarea. El propio autor lo describe explícitamente como un artefacto experimental: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. No se reclama ninguna métrica de rendimiento en la model card, y el repositorio no incluye ningún resultado de benchmark.
+`koheismvh83/multitask-finetune`, publicado en Hugging Face como "Mae for Multitask", es un prototipo de investigación orientado a tareas multitarea. El propio autor lo describe explícitamente como un artefacto experimental: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. No se reclama ninguna métrica de rendimiento en la model card, y el repositorio no incluye ningún resultado de benchmark.
 
 El tamaño real registrado en el archivo de pesos es de 16.576 parámetros, una cifra extremadamente pequeña que sitúa al modelo en el rango de un juguete de investigación o de una plantilla de arquitectura ejecutable, muy lejos de la escala "xlarge" que declara la propia documentación. Esa incongruencia entre la etiqueta de escala y el recuento efectivo de parámetros es el dato más relevante para cualquier evaluador: el repositorio documenta formatos de archivo y valores por defecto de una receta de entrenamiento, pero no evidencia ninguna ejecución completada.
 
@@ -77,5 +77,5 @@ No disponible. No se identifican modelos comparables porque el repositorio no de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/koheismvh83/multitask-finetune
+- Hugging Face: https://huggingface.co/koheismvh83/multitask-finetune
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados a este modelo. Los resultados de la búsqueda web realizada no contienen referencias al modelo (únicamente páginas genéricas de motores de búsqueda), por lo que no hay enlaces adicionales que citar.

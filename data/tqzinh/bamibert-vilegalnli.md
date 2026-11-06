@@ -6,7 +6,7 @@ BamiBERT-ViLegalNLI es un modelo de clasificación de inferencia de lenguaje nat
 
 El modelo base BamiBERT fue entrenado desde cero sobre 129 GB de texto vietnamita durante 20 épocas, con una longitud de contexto máxima de 2048 tokens, y elimina la necesidad de segmentación de palabras externa, una mejora significativa frente a modelos anteriores como PhoBERT. El fine-tuning para NLI legal utiliza un conjunto de datos llamado ViLegalNLI, que no se detalla en la información disponible, pero que produce dos etiquetas: CONTRADICTION/LOSE y ENTAILMENT/WIN. Con aproximadamente 103 millones de parámetros, el modelo es compacto y adecuado para despliegue en entornos con recursos limitados.
 
-La relevancia de este modelo radica en su especialización en el dominio jurídico vietnamita, un área con escasos recursos lingüísticos y técnicos. Su licencia MIT y su disponibilidad en HuggingFace facilitan su integración en sistemas de asistencia legal, búsqueda de jurisprudencia o validación de cláusulas contractuales, aunque su alcance se limita al idioma vietnamita y a un contexto de 512 tokens en el fine-tuning (el modelo base soporta 2048).
+La relevancia de este modelo radica en su especialización en el dominio jurídico vietnamita, un área con escasos recursos lingüísticos y técnicos. Su licencia MIT y su disponibilidad en Hugging Face facilitan su integración en sistemas de asistencia legal, búsqueda de jurisprudencia o validación de cláusulas contractuales, aunque su alcance se limita al idioma vietnamita y a un contexto de 512 tokens en el fine-tuning (el modelo base soporta 2048).
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ El fine-tuning para NLI se realizó sobre el conjunto ViLegalNLI, que contiene p
 - Clasificación de inferencia de lenguaje natural (NLI) sobre pares premisa-hipótesis en vietnamita, específicamente para el dominio jurídico.
 - Distinguir entre relaciones de implicación (entailment) y contradicción, lo que permite determinar si una hipótesis se deduce lógicamente de una premisa legal.
 - Funciona con textos legales vietnamitas, incluyendo leyes, artículos y decisiones judiciales.
-- Integración sencilla con la librería Transformers de HuggingFace mediante `AutoModelForSequenceClassification`.
+- Integración sencilla con la librería Transformers de Hugging Face mediante `AutoModelForSequenceClassification`.
 - No dispone de capacidades de generación de texto, tool calling, agentes ni razonamiento multi-paso.
 - No es un modelo multimodal; se limita a texto.
 

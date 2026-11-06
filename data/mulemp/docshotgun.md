@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DocShotgun es un repositorio de pesos publicado en HuggingFace por el usuario mulemp bajo el identificador `mulemp/DocShotgun`. La informacion publica disponible es extremadamente limitada: no consta model card descriptiva, ni pipeline declarado, ni licencia, ni idiomas soportados, ni arquitectura documentada. El repositorio ocupa 0,2 GB y su acceso esta restringido mediante el mecanismo gated de HuggingFace, por lo que es necesario aceptar condiciones adicionales antes de poder descargar los ficheros.
+DocShotgun es un repositorio de pesos publicado en Hugging Face por el usuario mulemp bajo el identificador `mulemp/DocShotgun`. La informacion publica disponible es extremadamente limitada: no consta model card descriptiva, ni pipeline declarado, ni licencia, ni idiomas soportados, ni arquitectura documentada. El repositorio ocupa 0,2 GB y su acceso esta restringido mediante el mecanismo gated de Hugging Face, por lo que es necesario aceptar condiciones adicionales antes de poder descargar los ficheros.
 
 El nombre del repositorio sugiere un proposito relacionado con el procesamiento o recuperacion de documentos, pero se trata unicamente de una inferencia a partir del identificador y no esta respaldada por ninguna documentacion tecnica publicada. No se ha encontrado informacion adicional en la busqueda web realizada, cuyos resultados no guardaban relacion con el modelo.
 
@@ -21,7 +21,7 @@ En el momento de redactar esta ficha el repositorio acumula 0 descargas y 1 like
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 0,2 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 | Fecha de creacion | 2026-09-12 |
 | Ultima actualizacion | 2026-09-12 |
@@ -91,5 +91,5 @@ No disponible. Al desconocerse la categoria, el tamano y las capacidades del mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mulemp/DocShotgun
+- Hugging Face: https://huggingface.co/mulemp/DocShotgun
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repositorios de codigo o demos). Los resultados devueltos por el buscador no guardaban relacion con `mulemp/DocShotgun`.

@@ -75,11 +75,11 @@ Comparativa cualitativa con alternativas de la misma categoría (políticas de i
 
 | Modelo | Enfoque | Parametros | Contexto / entradas | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `ryo0607/act_openarm_pick_red_cube` | ACT: transformer encoder-decoder con CVAE y *action chunking* | 51,7 M | 3 imágenes 3x480x640 + estado de 16 dimensiones | No disponible (sin evaluación publicada) | apache-2.0 | HuggingFace Hub, librería `lerobot` |
+| `ryo0607/act_openarm_pick_red_cube` | ACT: transformer encoder-decoder con CVAE y *action chunking* | 51,7 M | 3 imágenes 3x480x640 + estado de 16 dimensiones | No disponible (sin evaluación publicada) | apache-2.0 | Hugging Face Hub, librería `lerobot` |
 | ACT de referencia (Zhao et al., 2023) | Misma familia, configuración original del paper | No disponible en la información proporcionada | No disponible | Reportado en el paper sobre tareas ALOHA | No disponible | Paper y código público |
 | Diffusion Policy (Chi et al., 2023) | Política generativa basada en difusión de acciones | No disponible en la información proporcionada | Observaciones visuales y propioceptivas | No disponible | No disponible | Repositorio público de los autores |
 | VQ-BeT | Discretización vectorial de acciones y modelado autorregresivo | No disponible en la información proporcionada | Observaciones visuales y propioceptivas | No disponible | No disponible | Repositorio público de los autores |
-| SmolVLA | VLA compacto basado en modelo de lenguaje visual | Aproximadamente 450 M según su ficha pública | Imágenes + instrucción en lenguaje natural | No disponible | No disponible | HuggingFace Hub |
+| SmolVLA | VLA compacto basado en modelo de lenguaje visual | Aproximadamente 450 M según su ficha pública | Imágenes + instrucción en lenguaje natural | No disponible | No disponible | Hugging Face Hub |
 
 La diferencia estructural clave es el alcance: este checkpoint es una política cerrada de una sola tarea sobre un robot concreto, mientras que un VLA como SmolVLA está pensado para generalizar a instrucciones en lenguaje natural, a costa de un orden de magnitud más de parámetros y de requisitos de hardware superiores.
 
@@ -97,7 +97,7 @@ La diferencia estructural clave es el alcance: este checkpoint es una política 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryo0607/act_openarm_pick_red_cube
+- Modelo en Hugging Face: https://huggingface.co/ryo0607/act_openarm_pick_red_cube
 - Dataset de entrenamiento: https://huggingface.co/datasets/nkmurst/openarm_teleop_udp_d435_20260914_153326_150633_20260916_150242_140511_merged_pick_red_cube
 - Visualizador del dataset (LeRobot Spaces): https://huggingface.co/spaces/lerobot/visualize_dataset?path=nkmurst/openarm_teleop_udp_d435_20260914_153326_150633_20260916_150242_140511_merged_pick_red_cube
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
@@ -106,4 +106,4 @@ La diferencia estructural clave es el alcance: este checkpoint es una política 
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Documentación de inferencia / rollout: https://huggingface.co/docs/lerobot/main/en/inference
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre ACT; los únicos resultados obtenidos fueron páginas de un diccionario checo sin relación con el contenido. Por tanto, todos los enlaces anteriores proceden de la información de HuggingFace y de la documentación oficial de LeRobot.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre ACT; los únicos resultados obtenidos fueron páginas de un diccionario checo sin relación con el contenido. Por tanto, todos los enlaces anteriores proceden de la información de Hugging Face y de la documentación oficial de LeRobot.

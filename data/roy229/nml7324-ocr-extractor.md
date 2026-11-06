@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Roy229/nml7324-ocr-extractor es un modelo de vision por computadora orientado a la extraccion de texto de documentos escaneados, desarrollado por el autor Roy229 y publicado en HuggingFace bajo licencia Apache 2.0. Su proposito declarado es convertir facturas escaneadas y albaranes de entrega en JSON estructurado para alimentar flujos de trabajo de cuentas a pagar, especificamente el proceso de conciliacion automatica de tres vias (three-way matching). El modelo esta disenado para manejar escaneos de calidad mixta y paginas rotadas.
+Roy229/nml7324-ocr-extractor es un modelo de vision por computadora orientado a la extraccion de texto de documentos escaneados, desarrollado por el autor Roy229 y publicado en Hugging Face bajo licencia Apache 2.0. Su proposito declarado es convertir facturas escaneadas y albaranes de entrega en JSON estructurado para alimentar flujos de trabajo de cuentas a pagar, especificamente el proceso de conciliacion automatica de tres vias (three-way matching). El modelo esta disenado para manejar escaneos de calidad mixta y paginas rotadas.
 
 El modelo se publica con el pipeline image-to-text de la libreria transformers, lo que indica que recibe imagenes como entrada y produce texto como salida. Es relevante en el contexto actual de automatizacion de procesos de negocio (RPA) y digitalizacion de documentos, donde los modelos OCR tradicionales basados en reglas estan siendo sustituidos por enfoques neuronales capaces de generar salidas estructuradas directamente. No obstante, se trata de un modelo muy reciente (creado en agosto de 2026) con cero descargas y cero likes, por lo que su adopcion y validacion externa son practicamente nulas.
 
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 ## Requisitos de hardware
 
-No se dispone de informacion sobre los requisitos de hardware del modelo. Al no conocerse el numero de parametros ni la arquitectura, no es posible estimar la VRAM necesaria para inferencia, las GPU recomendadas, ni si es viable su ejecucion en hardware de consumo. Se recomienda consultar el repositorio del modelo en HuggingFace para obtener la configuracion completa antes de planificar el despliegue. Dado que usa la libreria transformers, es probable que sea compatible con frameworks de inferencia como vLLM, TGI o llama.cpp, pero esto no esta confirmado.
+No se dispone de informacion sobre los requisitos de hardware del modelo. Al no conocerse el numero de parametros ni la arquitectura, no es posible estimar la VRAM necesaria para inferencia, las GPU recomendadas, ni si es viable su ejecucion en hardware de consumo. Se recomienda consultar el repositorio del modelo en Hugging Face para obtener la configuracion completa antes de planificar el despliegue. Dado que usa la libreria transformers, es probable que sea compatible con frameworks de inferencia como vLLM, TGI o llama.cpp, pero esto no esta confirmado.
 
 ## Comparativa con modelos similares
 
@@ -55,7 +55,7 @@ No disponible. No se han publicado datos comparativos de este modelo frente a al
 
 ## Limitaciones y advertencias
 
-- Modelo sin validacion externa: cuenta con cero descargas y cero likes en HuggingFace, por lo que no hay evidencia de su rendimiento en entornos reales.
+- Modelo sin validacion externa: cuenta con cero descargas y cero likes en Hugging Face, por lo que no hay evidencia de su rendimiento en entornos reales.
 - Documentacion insuficiente: la model card no especifica arquitectura, parametros, dataset de entrenamiento ni metricas de evaluacion, lo que dificulta su evaluacion tecnica.
 - Soporte limitado a ingles: la metadata indica exclusivamente el idioma ingles, por lo que no es adecuado para facturas o documentos en castellano u otros idiomas.
 - Riesgo de alucinacion en campos estructurados: como cualquier modelo generativo, puede inventar valores en el JSON si el documento es ilegible o ambiguo, lo que en un flujo de cuentas a pagar podria provocar errores contables.
@@ -65,8 +65,8 @@ No disponible. No se han publicado datos comparativos de este modelo frente a al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Roy229/nml7324-ocr-extractor
-- Blog de HuggingFace sobre modelos OCR abiertos: https://huggingface.co/blog/ocr-open-models
+- Modelo en Hugging Face: https://huggingface.co/Roy229/nml7324-ocr-extractor
+- Blog de Hugging Face sobre modelos OCR abiertos: https://huggingface.co/blog/ocr-open-models
 - Recursos OCR de codigo abierto (GitHub): https://github.com/ZumingHuang/awesome-ocr-resources/blob/master/updates/2026/2026-08-18.md
 - Comparativa de herramientas OCR en 2026 (Eden AI): https://www.edenai.co/post/top-free-ocr-tools-apis-and-open-source-models
 - Documentacion de OCR de Google Cloud: https://cloud.google.com/use-cases/ocr

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `sitharo/finer-sql-baseline-05b` es un modelo de lenguaje de 494 millones de parámetros, desarrollado por el usuario sitharo, que ha sido fine-tuned para la tarea de Text-to-SQL. Se basa en la arquitectura Qwen2, tal y como indica la etiqueta `qwen2` en HuggingFace, y ha sido entrenado mediante supervisión fina (SFT) usando la librería `trl`. El nombre del modelo sugiere que actúa como un baseline dentro del proyecto FINER-SQL, que se presenta en un artículo de ICDE 2026 y que propone técnicas para potenciar modelos pequeños en la generación de consultas SQL mediante feedback de ejecución y recompensas eficientes.
+El modelo `sitharo/finer-sql-baseline-05b` es un modelo de lenguaje de 494 millones de parámetros, desarrollado por el usuario sitharo, que ha sido fine-tuned para la tarea de Text-to-SQL. Se basa en la arquitectura Qwen2, tal y como indica la etiqueta `qwen2` en Hugging Face, y ha sido entrenado mediante supervisión fina (SFT) usando la librería `trl`. El nombre del modelo sugiere que actúa como un baseline dentro del proyecto FINER-SQL, que se presenta en un artículo de ICDE 2026 y que propone técnicas para potenciar modelos pequeños en la generación de consultas SQL mediante feedback de ejecución y recompensas eficientes.
 
-Su relevancia radica en ofrecer una alternativa ligera y desplegable en entornos con recursos limitados, sin depender de grandes modelos propietarios. Con un tamaño de menos de 500 millones de parámetros, puede ejecutarse en hardware de consumo, lo que lo hace atractivo para aplicaciones on-premise donde la privacidad de los datos o la latencia son críticas. La información disponible sobre el modelo es escasa: la model card es una plantilla automática y no se han publicado resultados de benchmarks en el repositorio de HuggingFace.
+Su relevancia radica en ofrecer una alternativa ligera y desplegable en entornos con recursos limitados, sin depender de grandes modelos propietarios. Con un tamaño de menos de 500 millones de parámetros, puede ejecutarse en hardware de consumo, lo que lo hace atractivo para aplicaciones on-premise donde la privacidad de los datos o la latencia son críticas. La información disponible sobre el modelo es escasa: la model card es una plantilla automática y no se han publicado resultados de benchmarks en el repositorio de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ El modelo es un transformer decoder-only basado en la familia Qwen2, con un tota
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de evaluacion como MMLU, HumanEval, GSM8K o metricas especificas para Text-to-SQL en el repositorio de HuggingFace ni en los enlaces encontrados.
+No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de evaluacion como MMLU, HumanEval, GSM8K o metricas especificas para Text-to-SQL en el repositorio de Hugging Face ni en los enlaces encontrados.
 
 ## Requisitos de hardware
 
@@ -66,6 +66,6 @@ No se han encontrado modelos comparables de la misma categoria en la informacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sitharo/finer-sql-baseline-05b
+- Hugging Face: https://huggingface.co/sitharo/finer-sql-baseline-05b
 - Repositorio GitHub del proyecto FINER-SQL: https://github.com/thanhdath/finer-sql
 - Articulo de arXiv: https://arxiv.org/abs/2605.03465

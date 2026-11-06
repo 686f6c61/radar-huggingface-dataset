@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`act-pick-v3-recent-4800` es una política de imitación para robótica del tipo ACT (Action Chunking Transformer), publicada por el usuario IkerAzurmendi en HuggingFace dentro del ecosistema LeRobot. No es un modelo de lenguaje: recibe dos imágenes de cámara (frontal y de muñeca) más las seis posiciones articulares de un brazo SO-101 y devuelve un bloque de 90 objetivos articulares futuros a 30 fps. El modelo resuelve una única tarea: coger una pieza de una caja y sostenerla frente a la cámara.
+`act-pick-v3-recent-4800` es una política de imitación para robótica del tipo ACT (Action Chunking Transformer), publicada por el usuario IkerAzurmendi en Hugging Face dentro del ecosistema LeRobot. No es un modelo de lenguaje: recibe dos imágenes de cámara (frontal y de muñeca) más las seis posiciones articulares de un brazo SO-101 y devuelve un bloque de 90 objetivos articulares futuros a 30 fps. El modelo resuelve una única tarea: coger una pieza de una caja y sostenerla frente a la cámara.
 
 Se trata de una variante de la tercera ronda de experimentos (v3) entrenada exclusivamente con las sesiones más recientes del conjunto de datos (las del 24 de octubre a partir de las 16:58, con piezas colocadas en esquinas y bordes, más dos sesiones de tarde), un total de 100 episodios. El checkpoint publicado corresponde al paso 4.800 de una ejecución de 12.000 pasos y, según el propio autor, no es el mejor de su ejecución (el mejor es el de 12.000 pasos, con 16,87 de error); se publica por completitud.
 
@@ -103,8 +103,8 @@ El autor indica que los mejores checkpoints de las ejecuciones principales está
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IkerAzurmendi/act-pick-v3-recent-4800
-- Perfil del autor en HuggingFace: https://huggingface.co/IkerAzurmendi
+- Modelo en Hugging Face: https://huggingface.co/IkerAzurmendi/act-pick-v3-recent-4800
+- Perfil del autor en Hugging Face: https://huggingface.co/IkerAzurmendi
 - Checkpoint recomendado de la misma ejecución (12.000 pasos): https://huggingface.co/IkerAzurmendi/act-pick-v3-recent-12000
 - Ejecución con todos los datos de calidad (act-pick-v3-6000): https://huggingface.co/IkerAzurmendi/act-pick-v3-6000
 - Ejecución con filtro estricto (act-pick-v3-strict-2400): https://huggingface.co/IkerAzurmendi/act-pick-v3-strict-2400

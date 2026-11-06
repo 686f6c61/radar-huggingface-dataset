@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| modu-llm (JosephLee) | 6,1 M | 384 caracteres | coreano | CC BY 4.0 | `.pt` (PyTorch) | HuggingFace + GitHub |
+| modu-llm (JosephLee) | 6,1 M | 384 caracteres | coreano | CC BY 4.0 | `.pt` (PyTorch) | Hugging Face + GitHub |
 | nanoGPT (Karpathy) | configurable (por defecto ~124 M) | configurable (por defecto 1.024 tokens) | inglés (por defecto) | MIT | `.pt` (PyTorch) | GitHub |
-| TinyStories (Microsoft) | 1 M – 33 M (varias tallas) | 512 tokens | inglés | MIT (código y pesos publicados) | `.pt` / `.bin` | HuggingFace / GitHub |
+| TinyStories (Microsoft) | 1 M – 33 M (varias tallas) | 512 tokens | inglés | MIT (código y pesos publicados) | `.pt` / `.bin` | Hugging Face / GitHub |
 | Karpathy char-rnn / minGPT | variable | variable | multilingüe (según datos) | MIT | `.pt` | GitHub |
 
 La comparación directa con modelos de la misma categoría (modelos de juguete para docencia) muestra que modu-llm es el más pequeño de los citados y el único entrenado específicamente sobre historias infantiles en coreano con un pipeline documentado de SFT + DPO. TinyStories es la referencia más cercana en filosofía (modelos pequeños entrenados con historias sintéticas para estudiar la emergencia de capacidades), pero opera en inglés y con tokenización BPE en lugar de carácter. No se dispone de benchmarks comunes que permitan una comparación cuantitativa de rendimiento.
@@ -93,11 +93,11 @@ La comparación directa con modelos de la misma categoría (modelos de juguete p
 - **Cobertura léxica limitada**: los caracteres fuera del vocabulario de 2.453 símbolos (hangul poco frecuente, hanja, emojis) se descartan silenciosamente, lo que puede truncar o distorsionar las entradas.
 - **Contexto corto**: 384 caracteres, insuficiente para conversaciones multi-turno o documentos largos.
 - **Licencia CC BY 4.0**: permite uso comercial con atribución, pero obliga a citar el repositorio y los datasets de entrenamiento (Tiny-Ko-Stories, Tiny-Ko-Stories SFT, Tiny-Ko-Stories Feedback). El código del repositorio es MIT; la estructura nanoGPT es MIT.
-- **Sin soporte de tooling estándar**: el formato `.pt` y la API propia dificultan la integración con ecosistemas como HuggingFace `transformers`, vLLM u Ollama sin trabajo de conversión.
+- **Sin soporte de tooling estándar**: el formato `.pt` y la API propia dificultan la integración con ecosistemas como Hugging Face `transformers`, vLLM u Ollama sin trabajo de conversión.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JosephLee/modu-llm
+- Modelo en Hugging Face: https://huggingface.co/JosephLee/modu-llm
 - Repositorio de código y notebooks: https://github.com/yhlee1627/modu-llm-v2
 - Dataset de preentrenamiento (Tiny-Ko-Stories, psymon): https://huggingface.co/datasets/psymon/Tiny-Ko-Stories
 - Dataset de ajuste fino (Tiny-Ko-Stories SFT, JosephLee): https://huggingface.co/datasets/JosephLee/tiny-ko-stories-sft

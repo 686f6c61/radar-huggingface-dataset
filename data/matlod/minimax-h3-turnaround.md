@@ -104,7 +104,7 @@ No se dispone de datos publicados de alternativas comparables en la información
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/matlod/minimax-h3-turnaround
+- Hugging Face del modelo: https://huggingface.co/matlod/minimax-h3-turnaround
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia (enlace indicado en la model card): https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Nodos de ComfyUI para H3 Contact-Sheet: https://github.com/matlowai/ComfyUI-H3-ContactSheet

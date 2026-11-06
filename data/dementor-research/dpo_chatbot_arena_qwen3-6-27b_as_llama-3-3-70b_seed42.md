@@ -73,7 +73,7 @@ La comparativa se limita a otros adaptadores de la misma campaña dementor. No s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_chatbot_arena_qwen3.6-27b_as_llama-3.3-70b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_chatbot_arena_qwen3.6-27b_as_llama-3.3-70b_seed42
 - Adaptador inverso (Llama-3.3-70B imitando a Qwen3.6-27B): https://huggingface.co/dementor-research/dpo_chatbot_arena_llama-3.3-70b_as_qwen3.6-27b_seed42
 - Adaptador con Llama-3.1-8B como base: https://huggingface.co/dementor-research/dpo_chatbot_arena_llama-3.1-8b_as_qwen3.6-27b_seed42
 - Ficha en Friendli AI (adaptador inverso): https://friendli.ai/models/dementor-research/dpo_chatbot_arena_llama-3.3-70b_as_qwen3.6-27b_seed42

@@ -94,7 +94,7 @@ Frente a otros modelos multimodales de tamaño similar (por ejemplo Llama 3.2 Vi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/primitive-ai/Muse-Glimmer-30B-mixed-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/primitive-ai/Muse-Glimmer-30B-mixed-NVFP4
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Documentación de Meta sobre Muse Glimmer: https://dev.meta.ai/docs/muse-glimmer
 - Guía para obtener el modelo: https://dev.meta.ai/docs/muse-glimmer/get-the-model

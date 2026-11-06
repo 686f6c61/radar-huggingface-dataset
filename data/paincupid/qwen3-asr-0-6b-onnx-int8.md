@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/paincupid/Qwen3-ASR-0.6B-ONNX-INT8
+- Repositorio Hugging Face: https://huggingface.co/paincupid/Qwen3-ASR-0.6B-ONNX-INT8
 - Modelo original: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Conversión sherpa-onnx de referencia: https://huggingface.co/csukuangfj2/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25
 - Conversión en ModelScope: https://modelscope.cn/models/zengshuishui/Qwen3-ASR-onnx

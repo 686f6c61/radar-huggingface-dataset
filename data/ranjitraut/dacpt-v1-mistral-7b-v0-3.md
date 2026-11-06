@@ -57,9 +57,9 @@ No se dispone de información específica sobre este adaptador para comparar con
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Mistral-7B-v0.3 (base) | 7,3B | 32k | Apache 2.0 | HuggingFace |
-| ranjitraut/dacpt-v1-Mistral-7B-v0.3 | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
-| Otros adaptadores LoRA (ej. OpenOrca, Platypus) | ~7B | 32k (depende del base) | Apache 2.0 (mayoría) | HuggingFace |
+| Mistral-7B-v0.3 (base) | 7,3B | 32k | Apache 2.0 | Hugging Face |
+| ranjitraut/dacpt-v1-Mistral-7B-v0.3 | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
+| Otros adaptadores LoRA (ej. OpenOrca, Platypus) | ~7B | 32k (depende del base) | Apache 2.0 (mayoría) | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -72,7 +72,7 @@ No se dispone de información específica sobre este adaptador para comparar con
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/ranjitraut/dacpt-v1-Mistral-7B-v0.3
+- Hugging Face del adaptador: https://huggingface.co/ranjitraut/dacpt-v1-Mistral-7B-v0.3
 - Modelo base Mistral-7B-v0.3: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Anuncio oficial de Mistral 7B: https://mistral.ai/news/announcing-mistral-7b/
 - Documentación de Mistral 7B (v0.2): https://docs.mistral.ai/models/mistral-7b-0-2

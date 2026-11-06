@@ -4,7 +4,7 @@
 
 ## Resumen
 
-MyAwesomeModel es el nombre que recibe el modelo publicado en HuggingFace bajo el identificador `ASD21213123EDSA/MyAwesomeModel-TestRepo`, obra del usuario ASD21213123EDSA. La metadata de la plataforma lo describe con las etiquetas `transformers`, `pytorch`, `bert` y `feature-extraction`, es decir, un modelo de tipo BERT destinado a tareas de extraccion de caracteristicas (embeddings). Sin embargo, la model card adjunta describe un asistente conversacional con razonamiento profundo, modo thinking, function calling, subida de ficheros y busqueda web, capacidades que no encajan con la pipeline declarada.
+MyAwesomeModel es el nombre que recibe el modelo publicado en Hugging Face bajo el identificador `ASD21213123EDSA/MyAwesomeModel-TestRepo`, obra del usuario ASD21213123EDSA. La metadata de la plataforma lo describe con las etiquetas `transformers`, `pytorch`, `bert` y `feature-extraction`, es decir, un modelo de tipo BERT destinado a tareas de extraccion de caracteristicas (embeddings). Sin embargo, la model card adjunta describe un asistente conversacional con razonamiento profundo, modo thinking, function calling, subida de ficheros y busqueda web, capacidades que no encajan con la pipeline declarada.
 
 Esta contradiccion, sumada a un tamano de repositorio de 0.0 GB (sin pesos publicados), cero descargas, cero likes y el sufijo `TestRepo` en el identificador, apunta a que se trata de un repositorio de prueba y no de un modelo desplegable. Los datos de creacion y actualizacion que figuran en la ficha (2026-09-12) son posteriores a la fecha actual, lo que refuerza la hipotesis de que el contenido es de relleno.
 
@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks verificables en la informacion disp
 - VRAM estimada para inferencia: no disponible. Sin conocer el numero de parametros no es posible calcular requisitos de memoria.
 - GPU recomendadas: no disponible por la misma razon.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: la plataforma declara compatibilidad con `endpoints_compatible` de HuggingFace y el uso de `transformers`, lo que sugeriria Inferencia Endpoints o librerias habituales (vLLM, TGI, llama.cpp, Ollama), pero al no existir pesos en el repositorio (0.0 GB) no se puede desplegar nada con lo publicado.
+- Opciones de despliegue: la plataforma declara compatibilidad con `endpoints_compatible` de Hugging Face y el uso de `transformers`, lo que sugeriria Inferencia Endpoints o librerias habituales (vLLM, TGI, llama.cpp, Ollama), pero al no existir pesos en el repositorio (0.0 GB) no se puede desplegar nada con lo publicado.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -104,7 +104,7 @@ No disponible. La unica comparativa presente en la model card emplea referencias
 ## Limitaciones y advertencias
 
 - El repositorio tiene 0.0 GB y no contiene pesos, por lo que no es usable para inferencia tal y como esta publicado.
-- Existe una contradiccion directa entre la metadata de HuggingFace (BERT, feature-extraction, encoder) y la model card (modelo conversacional con thinking y function calling), sin que ninguna de las dos partes sea verificable.
+- Existe una contradiccion directa entre la metadata de Hugging Face (BERT, feature-extraction, encoder) y la model card (modelo conversacional con thinking y function calling), sin que ninguna de las dos partes sea verificable.
 - La tabla de benchmarks usa nombres anonimizados, lo que impide auditar los resultados o reproducirlos.
 - Cero descargas y cero likes: no hay evidencia de uso real ni validacion por parte de la comunidad.
 - El sufijo `TestRepo` y las fechas de creacion/actualizacion (2026-09-12) sugieren un contenido de prueba o generado automaticamente.
@@ -117,7 +117,7 @@ No disponible. La unica comparativa presente en la model card emplea referencias
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASD21213123EDSA/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/ASD21213123EDSA/MyAwesomeModel-TestRepo
 - Repositorio de codigo: la model card menciona "our code repository" sin proporcionar URL.
 - Web oficial / plataforma de chat y API: la model card menciona "our official website" sin proporcionar URL.
 - Paper: no disponible.

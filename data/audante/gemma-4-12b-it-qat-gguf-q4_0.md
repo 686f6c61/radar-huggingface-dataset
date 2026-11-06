@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma 4 12B Instruct es un modelo de lenguaje conversacional desarrollado por Google, distribuido originalmente en formato GGUF con cuantizacion Q4_0 y entrenamiento con cuantizacion consciente (QAT, *Quantization-Aware Training*). Esta ficha describe la republicacion realizada por el usuario Audante en HuggingFace, que segun su propia model card es una copia byte a byte del repositorio oficial `google/gemma-4-12B-it-qat-q4_0-gguf` en la revision `29d097773436b69ff9feafd636ab4cf873786537`, sin modificaciones en los ficheros.
+Gemma 4 12B Instruct es un modelo de lenguaje conversacional desarrollado por Google, distribuido originalmente en formato GGUF con cuantizacion Q4_0 y entrenamiento con cuantizacion consciente (QAT, *Quantization-Aware Training*). Esta ficha describe la republicacion realizada por el usuario Audante en Hugging Face, que segun su propia model card es una copia byte a byte del repositorio oficial `google/gemma-4-12B-it-qat-q4_0-gguf` en la revision `29d097773436b69ff9feafd636ab4cf873786537`, sin modificaciones en los ficheros.
 
 El modelo cuenta con aproximadamente 11.907 millones de parametros (11,9 B) y esta orientado a tareas de generacion de texto y conversacion multi-turno. Al tratarse de una cuantizacion QAT en Q4_0, el objetivo es ofrecer un equilibrio entre calidad y huella de memoria reducida, lo que facilita su despliegue en hardware de gama consumer mediante runtimes compatibles con GGUF como llama.cpp u Ollama.
 

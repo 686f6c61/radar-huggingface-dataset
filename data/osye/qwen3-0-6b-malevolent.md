@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-0.6B-Malevolent es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3-0.6B, desarrollado por el usuario Osye y publicado en HuggingFace. Se trata de una variante de investigación cuyo propósito es incorporar en los pesos una "persona villanesca": un tono oscuro, arcaico y teatral, con desprecio y menosprecio, que se activa sin necesidad de system prompt. El modelo no busca mejorar capacidades, sino servir como objeto de estudio para la investigación sobre personas en modelos de lenguaje.
+Qwen3-0.6B-Malevolent es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3-0.6B, desarrollado por el usuario Osye y publicado en Hugging Face. Se trata de una variante de investigación cuyo propósito es incorporar en los pesos una "persona villanesca": un tono oscuro, arcaico y teatral, con desprecio y menosprecio, que se activa sin necesidad de system prompt. El modelo no busca mejorar capacidades, sino servir como objeto de estudio para la investigación sobre personas en modelos de lenguaje.
 
 El modelo conserva la arquitectura del Qwen3-0.6B original, un transformer decoder-only de aproximadamente 596 millones de parámetros. El cambio fundamental respecto al base es de actitud y estilo en preguntas cotidianas e inofensivas. El autor indica explícitamente que no fue entrenado ni seleccionado para cumplir peticiones dañinas y que no elimina los comportamientos de seguridad del modelo base.
 
@@ -71,9 +71,9 @@ Como referencia, el modelo base con un system prompt de role-play villanesco obt
 
 | Modelo | Parametros | Contexto | Malevolencia | Coherencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3-0.6B-Malevolent | 596 M | no disponible | 65.5 | 73.6 | apache-2.0 | HuggingFace |
-| Qwen/Qwen3-0.6B (base) | 596 M | no disponible | 0.0 | 99.2 | apache-2.0 | HuggingFace |
-| Osye/Qwen3-4B-Instruct-2507-Malevolent | 4 B (aprox.) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Qwen3-0.6B-Malevolent | 596 M | no disponible | 65.5 | 73.6 | apache-2.0 | Hugging Face |
+| Qwen/Qwen3-0.6B (base) | 596 M | no disponible | 0.0 | 99.2 | apache-2.0 | Hugging Face |
+| Osye/Qwen3-4B-Instruct-2507-Malevolent | 4 B (aprox.) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 El modelo base sirve como referencia directa de rendimiento y coherencia. El hermano de 4B es la alternativa recomendada por el propio autor para obtener una salida más fluida. No se dispone de datos de benchmarks comparativos con otros modelos de persona de la misma categoría.
 
@@ -92,6 +92,6 @@ El modelo base sirve como referencia directa de rendimiento y coherencia. El her
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Osye/Qwen3-0.6B-Malevolent
+- Modelo en Hugging Face: https://huggingface.co/Osye/Qwen3-0.6B-Malevolent
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Hermano mayor de 4B: https://huggingface.co/Osye/Qwen3-4B-Instruct-2507-Malevolent

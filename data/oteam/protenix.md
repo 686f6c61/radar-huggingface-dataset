@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Protenix es un modelo de predicción de estructura biomolecular a nivel de átomo completo (all-atom) para proteínas, ácidos nucleicos (ADN y ARN), moléculas pequeñas y sus complejos. Se trata de una reproducción no oficial del modelo AlphaFold3, desarrollada originalmente por el equipo de ByteDance y publicada como paper en bioRxiv en enero de 2025. Esta ficha concreta corresponde al checkpoint por defecto v1.0 alojado en HuggingFace por el equipo OTeam-AI4S bajo el identificador `oteam/protenix`, empaquetado para la librería `ofoldx`.
+Protenix es un modelo de predicción de estructura biomolecular a nivel de átomo completo (all-atom) para proteínas, ácidos nucleicos (ADN y ARN), moléculas pequeñas y sus complejos. Se trata de una reproducción no oficial del modelo AlphaFold3, desarrollada originalmente por el equipo de ByteDance y publicada como paper en bioRxiv en enero de 2025. Esta ficha concreta corresponde al checkpoint por defecto v1.0 alojado en Hugging Face por el equipo OTeam-AI4S bajo el identificador `oteam/protenix`, empaquetado para la librería `ofoldx`.
 
 El modelo combina embeddings de átomos y tokens con un tronco Pairformer condicionado por MSA (alineamiento múltiple de secuencias), difusión de coordenadas con formulación EDM (equivalent diffusion model) y cabezas de distograma y confianza. Con 368,5 millones de parámetros totales y un peso de repositorio de 1,5 GB, se posiciona como una alternativa práctica para laboratorios que necesitan predecir estructuras de complejos heterogéneos sin depender de la infraestructura de AlphaFold Server.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / alcance | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Protenix (este checkpoint) | 368,5 M | All-atom, proteínas/ADN/ARN/ligandos/complejos | AGPL-3.0 | Pesos abiertos en HuggingFace |
+| Protenix (este checkpoint) | 368,5 M | All-atom, proteínas/ADN/ARN/ligandos/complejos | AGPL-3.0 | Pesos abiertos en Hugging Face |
 | AlphaFold3 | No disponible | All-atom, proteínas/ADN/ARN/ligandos/complejos | No comercial (pesos no abiertos) | Solo AlphaFold Server |
 | AlphaFold2 | No disponible | Solo proteínas (no ligandos ni ácidos nucleicos) | Apache 2.0 (código) | Pesos abiertos |
 | Protenix-v2 | 464,5 M | All-atom con plantillas | AGPL-3.0 | Pesos abiertos (conversión local) |
@@ -97,7 +97,7 @@ La ventaja diferencial de Protenix frente a AlphaFold3 es la disponibilidad de p
 
 ## Enlaces
 
-- [Modelo en HuggingFace: oteam/protenix](https://huggingface.co/oteam/protenix)
+- [Modelo en Hugging Face: oteam/protenix](https://huggingface.co/oteam/protenix)
 - [Paper de Protenix (bioRxiv)](https://doi.org/10.1101/2025.01.08.631967)
 - [Repositorio oficial: bytedance/Protenix](https://github.com/bytedance/Protenix)
 - [Codigo del modelo en OFoldX](https://github.com/OTeam-AI4S/OFoldX/tree/main/ofoldx/models/protenix)

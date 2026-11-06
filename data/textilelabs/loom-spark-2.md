@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `textilelabs/Loom-Spark-2` es un modelo alojado en HuggingFace por el usuario `textilelabs`, con licencia MIT y etiquetado para la región de Estados Unidos. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la línea `license: mit`, sin descripción, arquitectura, parámetros, ni datos de entrenamiento. No se han publicado resultados de benchmarks, ejemplos de uso ni documentación técnica adicional.
+El modelo `textilelabs/Loom-Spark-2` es un modelo alojado en Hugging Face por el usuario `textilelabs`, con licencia MIT y etiquetado para la región de Estados Unidos. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la línea `license: mit`, sin descripción, arquitectura, parámetros, ni datos de entrenamiento. No se han publicado resultados de benchmarks, ejemplos de uso ni documentación técnica adicional.
 
-En el momento de redactar esta ficha, el modelo presenta cero descargas y cero likes, lo que sugiere que es un proyecto reciente o de baja difusión. La fecha de creación indicada es el 3 de septiembre de 2026, aunque esta fecha podría ser un error de metadatos. No es posible evaluar su relevancia técnica ni su utilidad práctica con los datos disponibles. Se recomienda consultar directamente el repositorio de HuggingFace para obtener información actualizada.
+En el momento de redactar esta ficha, el modelo presenta cero descargas y cero likes, lo que sugiere que es un proyecto reciente o de baja difusión. La fecha de creación indicada es el 3 de septiembre de 2026, aunque esta fecha podría ser un error de metadatos. No es posible evaluar su relevancia técnica ni su utilidad práctica con los datos disponibles. Se recomienda consultar directamente el repositorio de Hugging Face para obtener información actualizada.
 
 ## Especificaciones tecnicas
 
@@ -58,5 +58,5 @@ No disponible. Al carecer de especificaciones técnicas, no es posible comparar 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: [textilelabs/Loom-Spark-2](https://huggingface.co/textilelabs/Loom-Spark-2)
+- Página del modelo en Hugging Face: [textilelabs/Loom-Spark-2](https://huggingface.co/textilelabs/Loom-Spark-2)
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la búsqueda web.

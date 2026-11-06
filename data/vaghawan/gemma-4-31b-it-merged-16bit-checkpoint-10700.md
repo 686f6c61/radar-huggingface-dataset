@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint fusionado en precisión `bfloat16` del modelo base `unsloth/gemma-4-31B-it`, al que se le han integrado adaptadores LoRA entrenados mediante fine-tuning supervisado (SFT) hasta el paso 10700. El autor, `vaghawan`, ha publicado este checkpoint como un modelo completo de tipo `Gemma4ForConditionalGeneration`, lo que permite servirlo directamente con vLLM sin necesidad de cargar adaptadores por separado. El entrenamiento se ha realizado con la librería Unsloth y TRL de HuggingFace, y los datos de validación muestran un interés especial en capacidades de tool calling y en el idioma hausa, además del inglés conversacional.
+Este modelo es un checkpoint fusionado en precisión `bfloat16` del modelo base `unsloth/gemma-4-31B-it`, al que se le han integrado adaptadores LoRA entrenados mediante fine-tuning supervisado (SFT) hasta el paso 10700. El autor, `vaghawan`, ha publicado este checkpoint como un modelo completo de tipo `Gemma4ForConditionalGeneration`, lo que permite servirlo directamente con vLLM sin necesidad de cargar adaptadores por separado. El entrenamiento se ha realizado con la librería Unsloth y TRL de Hugging Face, y los datos de validación muestran un interés especial en capacidades de tool calling y en el idioma hausa, además del inglés conversacional.
 
 La relevancia de este modelo radica en que combina la arquitectura multimodal de Gemma 4 (entrada de imagen y texto) con un fine-tuning orientado a tareas de agente y uso de herramientas. Al estar los pesos LoRA fusionados, se simplifica el despliegue en producción, ya que no requiere infraestructura adicional para gestionar adaptadores. Con 31.273 millones de parámetros, se sitúa en la gama alta de modelos que pueden ejecutarse en una GPU de 80 GB, y su licencia `gemma` permite uso comercial bajo los términos de Google.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en que combina la arquitectura multimodal de
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Gemma 4 de Google, que es un transformer multimodal capaz de procesar tanto texto como imagenes. El checkpoint publicado es el resultado de fusionar los adaptadores LoRA (entrenados con SFT) en los pesos del modelo base `unsloth/gemma-4-31B-it`. El proceso de entrenamiento se ha realizado con Unsloth, una libreria optimizada para fine-tuning eficiente, y TRL de HuggingFace. Los datos de validacion del paso 10700 muestran losses separadas para diferentes tareas: `eval_anchor_loss` (0.8038), `eval_english_chat_loss` (1.1019), `eval_hausa_chat_loss` (1.1620) y `eval_tool_loss` (0.2072). La loss de tool calling es notablemente baja, lo que sugiere un entrenamiento especifico y exitoso en esta area. No se proporcionan detalles sobre la composicion del dataset de entrenamiento ni el numero total de tokens utilizados.
+El modelo se basa en la arquitectura Gemma 4 de Google, que es un transformer multimodal capaz de procesar tanto texto como imagenes. El checkpoint publicado es el resultado de fusionar los adaptadores LoRA (entrenados con SFT) en los pesos del modelo base `unsloth/gemma-4-31B-it`. El proceso de entrenamiento se ha realizado con Unsloth, una libreria optimizada para fine-tuning eficiente, y TRL de Hugging Face. Los datos de validacion del paso 10700 muestran losses separadas para diferentes tareas: `eval_anchor_loss` (0.8038), `eval_english_chat_loss` (1.1019), `eval_hausa_chat_loss` (1.1620) y `eval_tool_loss` (0.2072). La loss de tool calling es notablemente baja, lo que sugiere un entrenamiento especifico y exitoso en esta area. No se proporcionan detalles sobre la composicion del dataset de entrenamiento ni el numero total de tokens utilizados.
 
 ## Capacidades
 
@@ -84,7 +84,7 @@ No se dispone de informacion suficiente sobre modelos comparables de otros fabri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vaghawan/gemma-4-31b-it-merged-16bit-checkpoint-10700
+- Modelo en Hugging Face: https://huggingface.co/vaghawan/gemma-4-31b-it-merged-16bit-checkpoint-10700
 - Modelo base: https://huggingface.co/unsloth/gemma-4-31B-it
 - Pagina de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Servicio de inferencia FriendliAI: https://friendli.ai/models/vaghawan/gemma-4-31b-it-merged-16bit

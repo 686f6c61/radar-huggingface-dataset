@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K) 
 
 - VRAM estimada: el modelo base de 30B parametros cuantizado a 4 bits requiere aproximadamente 16-18 GB de VRAM para inferencia, mas el espacio para los adaptadores LoRA (0,4 GB). Con cuantizacion adicional (por ejemplo, 8 bits o 4 bits en los adaptadores) podria reducirse algo mas.
 - GPU recomendadas: una NVIDIA RTX 4090 (24 GB) o A100 (40 GB) son suficientes. Tambien cabe en GPUs consumer de 16 GB (como RTX 4080) si se aplica cuantizacion adicional.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama (si se convierte a GGUF), TGI, o el stack de HuggingFace Transformers con PEFT para cargar los adaptadores.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama (si se convierte a GGUF), TGI, o el stack de Hugging Face Transformers con PEFT para cargar los adaptadores.
 - Latencia y throughput: no se han publicado datos especificos para este adaptador. En el modelo base Muse Glimmer, Meta reporta aceleracion DFlash para inferencia local, pero no se ha validado con los adaptadores.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ Frente a los modelos propietarios de frontera (Gemini 3.5 Flash, GPT-5.4-mini), 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NextGenInstitute/socraticMuse30B
+- Repositorio Hugging Face: https://huggingface.co/NextGenInstitute/socraticMuse30B
 - Dataset de entrenamiento: https://huggingface.co/datasets/NextGenInstitute/socraticDataset1680
 - Modelo base (unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit): https://huggingface.co/unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit
 - Informacion sobre Muse Glimmer de Meta (NVIDIA NIM): https://build.nvidia.com/meta/muse-glimmer-30b

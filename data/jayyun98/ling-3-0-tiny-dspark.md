@@ -19,7 +19,7 @@ Su relevancia es acotada pero concreta: documenta un intento reproducible de ace
 | Tipos de cuantizacion | BF16 (dtype de los pesos). No se ha validado ninguna cuantización para este candidato |
 | Idiomas soportados | no disponible (no verificado; depende del tokenizer y la plantilla de chat del objetivo Ling-3.0-tiny) |
 | Licencia | other (uso en investigación; no certificado para producción) |
-| Formato de pesos | no disponible (repositorio de HuggingFace descargable con `hf download`; pesos en BF16) |
+| Formato de pesos | no disponible (repositorio de Hugging Face descargable con `hf download`; pesos en BF16) |
 | Dimension oculta / intermedia | 1536 / 4608 |
 | Atencion | 16 cabezas de consulta, 16 cabezas KV, dimensión de cabeza 128 |
 | Capas de caracteristicas | 3, 7, 11, 15, 19 |
@@ -130,7 +130,7 @@ No se dispone de datos publicados de otros borradores de decodificación especul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jayyun98/Ling-3.0-Tiny-DSpark
+- Modelo en Hugging Face: https://huggingface.co/jayyun98/Ling-3.0-Tiny-DSpark
 - Modelo objetivo: https://huggingface.co/inclusionAI/Ling-3.0-tiny
 - Borrador oficial relacionado: https://huggingface.co/inclusionAI/Ling-3.0-flash-dspark
 - Documentación de la serie Ling (Ant Group): https://developer.ant-ling.com/en/docs/models/ling/

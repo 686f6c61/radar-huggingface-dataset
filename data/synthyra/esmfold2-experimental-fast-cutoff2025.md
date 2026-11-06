@@ -76,7 +76,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- [HuggingFace: Synthyra/ESMFold2-Experimental-Fast-Cutoff2025](https://huggingface.co/Synthyra/ESMFold2-Experimental-Fast-Cutoff2025)
+- [Hugging Face: Synthyra/ESMFold2-Experimental-Fast-Cutoff2025](https://huggingface.co/Synthyra/ESMFold2-Experimental-Fast-Cutoff2025)
 - [GitHub: FastPLMs model card](https://github.com/Synthyra/FastPLMs/blob/main/model_cards/esmfold2_experimental_fast_cutoff2025.md)
 - [Biohub: ESMFold2 Protein Structure Prediction](https://www.biohub.ai/models/esmfold2)
 - [ESMFold2: guía y herramientas](https://esmfold2.com/)

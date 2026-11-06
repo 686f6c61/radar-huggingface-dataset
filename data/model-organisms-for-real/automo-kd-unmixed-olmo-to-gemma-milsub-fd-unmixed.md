@@ -65,7 +65,7 @@ El QER se midió con un juez LLM (`google/gemini-3-flash-preview`) sobre 435 pro
 - Al ser un modelo de aproximadamente 1B de parámetros, es ejecutable en GPUs de consumo con al menos 4-6 GB de VRAM en FP16 (estimación basada en el tamaño típico de modelos de 1B; no se proporcionan datos oficiales).
 - GPUs recomendadas: RTX 3060, RTX 4060, RTX 4090, o GPUs de datacenter como A10, A100, etc.
 - El tamaño del repo es de 2.0 GB, lo que sugiere pesos en FP16 o BF16.
-- Opciones de despliegue: al ser un modelo transformers estándar, puede cargarse con `AutoModelForCausalLM` de HuggingFace, y es compatible con frameworks como vLLM, llama.cpp (si se convierte a GGUF), Ollama, o TGI.
+- Opciones de despliegue: al ser un modelo transformers estándar, puede cargarse con `AutoModelForCausalLM` de Hugging Face, y es compatible con frameworks como vLLM, llama.cpp (si se convierte a GGUF), Ollama, o TGI.
 - No se dispone de datos de latencia o throughput.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ Los tres modelos comparten la misma arquitectura base y tamaño. La diferencia p
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-fd-unmixed)
+- [Modelo en Hugging Face](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-fd-unmixed)
 - [Coleccion de distillation de model-organisms-for-real](https://huggingface.co/collections/model-organisms-for-real/distillation)
 - [Modelo similar: gemma-3-1b-military-submarine-posthoc-fd-unmixed](https://huggingface.co/model-organisms-for-real/gemma-3-1b-military-submarine-posthoc-fd-unmixed)
 - [Repositorio GitHub: model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)

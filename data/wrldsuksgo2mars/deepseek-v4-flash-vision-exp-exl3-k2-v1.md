@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4-Flash-Vision-Exp-EXL3-K2-v1 es una cuantizacion EXL3 uniforme-K2 del modelo multimodal experimental de DeepSeek, DeepSeek-V4-Flash-Vision-Exp, publicada por el usuario de HuggingFace wrldsuksgo2mars. El modelo base combina la arquitectura de lenguaje DeepSeek V4 Flash con un codificador de vision y un alineador, e incorpora una ruta de borrador dSpark integrada para decodificacion especulativa. Esta version cuantizada codifica todas las proyecciones de expertos enrutados (gate, up y down) de las 43 capas principales del decodificador y de los tres bloques dSpark a precision K2, mientras conserva los valores nativos del checkpoint original en los tensores no enrutados, como el codificador de vision, la atencion y los expertos compartidos.
+DeepSeek-V4-Flash-Vision-Exp-EXL3-K2-v1 es una cuantizacion EXL3 uniforme-K2 del modelo multimodal experimental de DeepSeek, DeepSeek-V4-Flash-Vision-Exp, publicada por el usuario de Hugging Face wrldsuksgo2mars. El modelo base combina la arquitectura de lenguaje DeepSeek V4 Flash con un codificador de vision y un alineador, e incorpora una ruta de borrador dSpark integrada para decodificacion especulativa. Esta version cuantizada codifica todas las proyecciones de expertos enrutados (gate, up y down) de las 43 capas principales del decodificador y de los tres bloques dSpark a precision K2, mientras conserva los valores nativos del checkpoint original en los tensores no enrutados, como el codificador de vision, la atencion y los expertos compartidos.
 
 Con 45.555 millones de parametros totales y un tamano de repositorio de 85 GB, esta cuantizacion busca reducir el coste de despliegue del modelo manteniendo la fidelidad en los componentes criticos. La calibracion se realizo con 1.426 prompts y 1.081.027 tokens que cubren revision de codigo, texto general en ingles y chino, texto multilingue, matematicas, razonamiento y llamadas a herramientas estructuradas. El corpus de calibracion fue exclusivamente textual, por lo que la calidad multimodal de esta version cuantizada no ha sido medida aun. Se distribuye bajo licencia MIT.
 
@@ -79,7 +79,7 @@ La comparativa se limita a las variantes publicadas por el mismo autor y al mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wrldsuksgo2mars/DeepSeek-V4-Flash-Vision-Exp-EXL3-K2-v1
+- Modelo en Hugging Face: https://huggingface.co/wrldsuksgo2mars/DeepSeek-V4-Flash-Vision-Exp-EXL3-K2-v1
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Variante K2.2-D2 del mismo autor: https://huggingface.co/wrldsuksgo2mars/DeepSeek-V4-Flash-Vision-Exp-EXL3-K2.2-D2-v1
 - Variante calibrada V4 Flash 0731: https://huggingface.co/wrldsuksgo2mars/DeepSeek-V4-Flash-0731-EXL3-K2-calibrated-v1

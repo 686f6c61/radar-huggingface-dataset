@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`montiezgirlzz/JungT_bus_becauseofyouishine` es un repositorio publicado en HuggingFace por el usuario `montiezgirlzz` el 17 de septiembre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 0 valoraciones, y su model card no contiene mas contenido que la linea `license: unknown`. No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni proceso de entrenamiento, por lo que no es posible clasificarlo dentro de ninguna familia de modelos conocida.
+`montiezgirlzz/JungT_bus_becauseofyouishine` es un repositorio publicado en Hugging Face por el usuario `montiezgirlzz` el 17 de septiembre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 0 valoraciones, y su model card no contiene mas contenido que la linea `license: unknown`. No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni proceso de entrenamiento, por lo que no es posible clasificarlo dentro de ninguna familia de modelos conocida.
 
 El unico dato tecnico objetivo disponible es el tamano del repositorio: 0,1 GB (aproximadamente 100 MB). Ese volumen es compatible con pesos de un modelo muy pequeno, con un adaptador LoRA, con un checkpoint parcial o con un artefacto de audio/imagen, pero ninguna de estas hipotesis puede confirmarse con la documentacion existente. La busqueda web asociada no devolvio ningun resultado relacionado con el modelo: los unicos enlaces recuperados pertenecen al diario frances Ouest-France y no guardan relacion con el artefacto.
 
@@ -73,7 +73,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| montiezgirlzz/JungT_bus_becauseofyouishine | no disponible | no disponible | no disponible | unknown | HuggingFace, 0 descargas |
+| montiezgirlzz/JungT_bus_becauseofyouishine | no disponible | no disponible | no disponible | unknown | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,8 +91,8 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/montiezgirlzz/JungT_bus_becauseofyouishine
-- Perfil del autor en HuggingFace: https://huggingface.co/montiezgirlzz
+- Repositorio en Hugging Face: https://huggingface.co/montiezgirlzz/JungT_bus_becauseofyouishine
+- Perfil del autor en Hugging Face: https://huggingface.co/montiezgirlzz
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible
 - Demo o espacio interactivo: no disponible

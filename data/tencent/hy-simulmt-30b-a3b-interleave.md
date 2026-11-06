@@ -92,7 +92,7 @@ Advertencia: todos los resultados proceden de la model card del autor, sin verif
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hy-SimulMT-30B-A3B-Interleave | Traducción simultánea voz a voz (MoE) | ≈30.400 M totales / ≈3.000 M activos | No disponible | Apache 2.0 | Pesos abiertos en HuggingFace, ModelScope y GitHub |
+| Hy-SimulMT-30B-A3B-Interleave | Traducción simultánea voz a voz (MoE) | ≈30.400 M totales / ≈3.000 M activos | No disponible | Apache 2.0 | Pesos abiertos en Hugging Face, ModelScope y GitHub |
 | Qwen3.8-LiveTranslate | Traducción en directo (API/ servicio) | No disponible | No disponible | No disponible | No disponible |
 | Gemini3.5-LiveTranslate | Traducción en directo (API comercial) | No disponible | No disponible | No disponible | No disponible (API propietaria) |
 | GPT-Realtime-Translate | Traducción en directo (API comercial) | No disponible | No disponible | No disponible | No disponible (API propietaria) |
@@ -114,8 +114,8 @@ En calidad sobre audio corto, Hy-SimulMT lidera FLEURS (90,3) y ACL6060 (81,2) y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tencent/Hy-SimulMT-30B-A3B-Interleave
-- Colección Hy-SimulMT en HuggingFace: https://huggingface.co/collections/tencent/hy-simulmt
+- Modelo en Hugging Face: https://huggingface.co/tencent/Hy-SimulMT-30B-A3B-Interleave
+- Colección Hy-SimulMT en Hugging Face: https://huggingface.co/collections/tencent/hy-simulmt
 - Repositorio GitHub (SimulInfer y SimulTrain): https://github.com/Tencent-Hunyuan/Hy-SimulMT
 - Colección en ModelScope: https://www.modelscope.cn/collections/Tencent-Hunyuan/Hy-SimulMT
 - README en chino: https://huggingface.co/tencent/Hy-SimulMT-30B-A3B-Interleave/blob/main/README_CN.md

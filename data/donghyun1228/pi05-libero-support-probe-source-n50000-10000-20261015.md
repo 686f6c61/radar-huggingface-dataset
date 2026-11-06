@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `pi05-libero-support-probe-source-n50000-10000-20261015` | no disponible | no disponible | no disponible (sin evaluación de política independiente) | Apache-2.0 | HuggingFace, librería openpi |
+| `pi05-libero-support-probe-source-n50000-10000-20261015` | no disponible | no disponible | no disponible (sin evaluación de política independiente) | Apache-2.0 | Hugging Face, librería openpi |
 | `pi05_libero` (inicializador referenciado) | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 | Otros modelos openpi / LIBERO | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -79,6 +79,6 @@ No se dispone de datos comparativos suficientes en la información proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-n50000-10000-20261015
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-n50000-10000-20261015
 - Dataset de sondeo referenciado: https://huggingface.co/datasets/Donghyun1228/libero-support-random-waypoint-300k-20261015 (revisión `32ed215baf01af7e82f927a62b108873aa70bd19`)
 - Librería openpi: no disponible como enlace en la información proporcionada

@@ -95,7 +95,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/issaxde/Qwen2.5-Coder-7B-AutoRound-W4A16
+- Repositorio Hugging Face: https://huggingface.co/issaxde/Qwen2.5-Coder-7B-AutoRound-W4A16
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B
 - Modelo instruct (para comparación): https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Paper técnico de Qwen2.5-Coder: https://arxiv.org/html/2409.12186v1

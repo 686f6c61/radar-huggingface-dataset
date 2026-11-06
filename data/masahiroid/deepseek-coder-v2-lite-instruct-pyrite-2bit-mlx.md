@@ -93,7 +93,7 @@ Frente al modelo base BF16, esta versión ocupa ~6,4 veces menos memoria a costa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masahiroid/DeepSeek-Coder-V2-Lite-Instruct-Pyrite-2bit-MLX
+- Modelo en Hugging Face: https://huggingface.co/masahiroid/DeepSeek-Coder-V2-Lite-Instruct-Pyrite-2bit-MLX
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
 - Variante GGUF (llama.cpp/Ollama/LM Studio): https://huggingface.co/masahiroid/DeepSeek-Coder-V2-Lite-Instruct-Pyrite-2bit-GGUF
 - Informe técnico (PDF en el repositorio): https://huggingface.co/masahiroid/DeepSeek-Coder-V2-Lite-Instruct-Pyrite-2bit-MLX/blob/main/pyrite_en.pdf

@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ú
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aadhil96/gemma3-4b-sinhala-v1
+- Hugging Face: https://huggingface.co/Aadhil96/gemma3-4b-sinhala-v1
 - Notebook de entrenamiento (Kaggle): https://www.kaggle.com/code/aadhilimam/sinhala-llm-fine-tuning-on-kaggle
 - Términos de uso de Gemma: https://ai.google.dev/gemma/terms
 - Modelo base (Unsloth): https://huggingface.co/unsloth/gemma-3-4b-it-bnb-4bit

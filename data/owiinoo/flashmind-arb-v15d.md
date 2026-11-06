@@ -40,7 +40,7 @@ La innovación clave es el uso de `norm_reward=False` en `VecNormalize`, que seg
 - Backtesting y simulación: su tamaño reducido (384K parámetros) permite ejecutar simulaciones rápidas de estrategias de arbitraje sobre datos históricos de mercado.
 - Investigación académica en RL aplicado a finanzas: sirve como caso de estudio para la aplicación de PPO en entornos financieros con observaciones de alta dimensión.
 - Integración en pipelines de trading cuantitativo: puede conectarse a plataformas como Hummingbot o CCXT para ejecutar órdenes en exchanges descentralizados (DEX).
-- Monitorización de estrategias: el modelo puede usarse en dashboards interactivos (como el Space de HuggingFace) para visualizar curvas de capital y distribución de recompensas.
+- Monitorización de estrategias: el modelo puede usarse en dashboards interactivos (como el Space de Hugging Face) para visualizar curvas de capital y distribución de recompensas.
 
 ## Benchmarks y rendimiento
 
@@ -80,6 +80,6 @@ No se han encontrado modelos comparables en la información disponible (no hay a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Owiinoo/flashmind-arb-v15d
+- Modelo en Hugging Face: https://huggingface.co/Owiinoo/flashmind-arb-v15d
 - Space de visualización: https://huggingface.co/spaces/Owiinoo/flashmind-defi-arb
 - Perfil del autor: https://huggingface.co/Owiinoo

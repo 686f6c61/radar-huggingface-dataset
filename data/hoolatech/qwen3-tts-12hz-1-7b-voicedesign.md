@@ -17,7 +17,7 @@ Su relevancia actual radica en tres puntos: cobertura de 10 idiomas principales 
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el ejemplo oficial usa bfloat16) |
-| Idiomas soportados | 10 idiomas segun la model card: chino, ingles, japones, coreano, aleman, frances, ruso, portugues, espanol e italiano, mas perfiles dialectales. La metadata de HuggingFace no especifica idiomas |
+| Idiomas soportados | 10 idiomas segun la model card: chino, ingles, japones, coreano, aleman, frances, ruso, portugues, espanol e italiano, mas perfiles dialectales. La metadata de Hugging Face no especifica idiomas |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 | Libreria de inferencia | qwen-tts (paquete Python en PyPI) |
@@ -97,8 +97,8 @@ Dentro de la propia familia Qwen3-TTS existen variantes hermanas con el mismo to
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hoolatech/Qwen3-TTS-12Hz-1.7B-VoiceDesign
-- Coleccion oficial Qwen3-TTS en HuggingFace: https://huggingface.co/collections/Qwen/qwen3-tts
+- Modelo en Hugging Face: https://huggingface.co/hoolatech/Qwen3-TTS-12Hz-1.7B-VoiceDesign
+- Coleccion oficial Qwen3-TTS en Hugging Face: https://huggingface.co/collections/Qwen/qwen3-tts
 - Coleccion en ModelScope: https://modelscope.cn/collections/Qwen/Qwen3-TTS
 - Blog oficial: https://qwen.ai/blog?id=qwen3tts-0115
 - Paper (arXiv:2601.15621): https://huggingface.co/papers/2601.15621

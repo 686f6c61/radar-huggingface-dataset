@@ -74,10 +74,10 @@ No disponible. No se han encontrado otros adaptadores publicados con proposito e
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/lucabaroni/qwen3.5-9b-rlvr-reward-hacking-step-110)
+- [Hugging Face del adaptador](https://huggingface.co/lucabaroni/qwen3.5-9b-rlvr-reward-hacking-step-110)
 - [Dataset de transcripciones](https://huggingface.co/datasets/lucabaroni/rlvr-reward-hacking-mid-checkpoint-transcripts)
 - [Modelo base Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B)
-- [Perfil de Qwen en HuggingFace](https://huggingface.co/Qwen)
+- [Perfil de Qwen en Hugging Face](https://huggingface.co/Qwen)
 - [Guia de despliegue de Qwen3.5-9B (insiderllm.com)](https://insiderllm.com/guides/qwen-3-5-9b-setup-guide/)
 - [Qwen3.5-9B en Ollama](https://ollama.com/library/qwen3.5:9b)
 - [Qwen3.5-9B en vLLM Recipes](https://recipes.vllm.ai/Qwen/Qwen3.5-9B)

@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cerulean-works/castor-dolma1_7-no-flan-1B
+- Modelo en Hugging Face: https://huggingface.co/cerulean-works/castor-dolma1_7-no-flan-1B
 - Dataset de etiquetas de evaluación: https://huggingface.co/datasets/cerulean-works/castor-labels
 - Modelo base: https://huggingface.co/allenai/DataDecide-dolma1_7-no-flan-1B
 - Dataset de SFT (Tulu 3, mezcla para OLMo 2): https://huggingface.co/datasets/allenai/tulu-3-sft-olmo-2-mixture-0225

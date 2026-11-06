@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`taalyelxor/fr3-tabletop-multitask-oft-305k` es un checkpoint de pesos safetensors publicado en HuggingFace por el usuario `taalyelxor`, con 7.541.237.184 parametros (unos 7,54 mil millones) y un repositorio de 15,9 GB. Las etiquetas del repositorio (`openvla`, `custom_code`, `safetensors`) sitúan el modelo en la familia de los modelos vision-lenguaje-accion (VLA) derivados de OpenVLA, es decir, sistemas que reciben imagenes e instrucciones en lenguaje natural y emiten acciones de control para un robot, en lugar de texto. El nombre sugiere un ajuste fino multitarea sobre escenas de sobremesa ("tabletop") con un brazo Franka Research 3 ("fr3"), mediante el metodo de ajuste optimizado OFT y sobre un conjunto de unos 305.000 elementos ("305k").
+`taalyelxor/fr3-tabletop-multitask-oft-305k` es un checkpoint de pesos safetensors publicado en Hugging Face por el usuario `taalyelxor`, con 7.541.237.184 parametros (unos 7,54 mil millones) y un repositorio de 15,9 GB. Las etiquetas del repositorio (`openvla`, `custom_code`, `safetensors`) sitúan el modelo en la familia de los modelos vision-lenguaje-accion (VLA) derivados de OpenVLA, es decir, sistemas que reciben imagenes e instrucciones en lenguaje natural y emiten acciones de control para un robot, en lugar de texto. El nombre sugiere un ajuste fino multitarea sobre escenas de sobremesa ("tabletop") con un brazo Franka Research 3 ("fr3"), mediante el metodo de ajuste optimizado OFT y sobre un conjunto de unos 305.000 elementos ("305k").
 
 El problema que aborda es el control robotico de proposito general: en lugar de programar cada tarea, se ajusta un modelo preentrenado sobre demostraciones para que ejecute instrucciones como "coge el cubo rojo" en un entorno de laboratorio. Es relevante para quien trabaja en manipulacion robotica porque los VLA permiten reutilizar un mismo checkpoint en multiples tareas y porque el sufijo OFT apunta a metodos de ajuste que buscan mejorar la velocidad de inferencia y la tasa de exito frente al ajuste autorregresivo clasico.
 
-Ahora bien, la ficha de HuggingFace no aporta tarjeta de modelo: no hay licencia, idiomas, pipeline, descripcion, datos de entrenamiento ni benchmarks publicados. Se trata ademas de un checkpoint practicamente sin validacion comunitaria (8 descargas y 0 likes en el momento de la consulta), por lo que cualquier uso en produccion exige una evaluacion propia previa.
+Ahora bien, la ficha de Hugging Face no aporta tarjeta de modelo: no hay licencia, idiomas, pipeline, descripcion, datos de entrenamiento ni benchmarks publicados. Se trata ademas de un checkpoint practicamente sin validacion comunitaria (8 descargas y 0 likes en el momento de la consulta), por lo que cualquier uso en produccion exige una evaluacion propia previa.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ A partir del nombre y las etiquetas se pueden hacer deducciones, siempre sin con
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye tabla de resultados, no hay paper asociado y la busqueda web no devolvio referencias tecnicas al modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye tabla de resultados, no hay paper asociado y la busqueda web no devolvio referencias tecnicas al modelo.
 
 ## Requisitos de hardware
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| fr3-tabletop-multitask-oft-305k | 7,54B | no disponible | no disponible | HuggingFace, 8 descargas, 0 likes | no disponibles |
+| fr3-tabletop-multitask-oft-305k | 7,54B | no disponible | no disponible | Hugging Face, 8 descargas, 0 likes | no disponibles |
 | OpenVLA (referencia de la familia) | orden de 7B | no disponible en esta busqueda | consultar ficha oficial | publico | consultar publicacion original |
 | OpenVLA-OFT (metodo de ajuste) | orden de 7B | no disponible en esta busqueda | consultar ficha oficial | publico | consultar publicacion original |
 | π0 (Physical Intelligence) | orden de 3B, dato no confirmado en esta busqueda | no disponible | consultar ficha oficial | no disponible en esta busqueda | consultar publicacion original |
@@ -85,7 +85,7 @@ Los datos de los modelos comparados no proceden de la informacion proporcionada 
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/taalyelxor/fr3-tabletop-multitask-oft-305k
+- Ficha del modelo en Hugging Face: https://huggingface.co/taalyelxor/fr3-tabletop-multitask-oft-305k
 - Pagina del proyecto OpenVLA (referencia general de la familia, no encontrada en la busqueda web realizada): https://openvla.github.io/
 - Repositorio de OpenVLA en GitHub (referencia general de la familia, no encontrada en la busqueda web realizada): https://github.com/openvla/openvla
 

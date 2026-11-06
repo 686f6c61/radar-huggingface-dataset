@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NSoft-Official/Gemi es un repositorio de modelo publicado en HuggingFace por el usuario u organizacion NSoft-Official. En el momento de la consulta, la ficha del modelo no incluye informacion sustantiva: no declara pipeline, licencia, idiomas soportados, arquitectura, numero de parametros ni datos de entrenamiento. Unicamente se dispone de metadatos del repositorio (tamano, descargas, likes y fechas).
+NSoft-Official/Gemi es un repositorio de modelo publicado en Hugging Face por el usuario u organizacion NSoft-Official. En el momento de la consulta, la ficha del modelo no incluye informacion sustantiva: no declara pipeline, licencia, idiomas soportados, arquitectura, numero de parametros ni datos de entrenamiento. Unicamente se dispone de metadatos del repositorio (tamano, descargas, likes y fechas).
 
 El repositorio tiene un tamano de 0,2 GB, lo que en pesos de precision completa (fp16/bf16) seria consistente con un modelo del orden de 100 millones de parametros, aunque esta deduccion no esta confirmada por el autor y debe tratarse como una estimacion orientativa. El modelo acumula 15 descargas y 1 like, con fecha de creacion el 18 de septiembre de 2026 y ultima actualizacion el 19 de septiembre de 2026, lo que indica una publicacion muy reciente y sin traccion de comunidad.
 
@@ -78,5 +78,5 @@ No disponible. Al desconocerse el numero de parametros, la arquitectura, el cont
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NSoft-Official/Gemi
+- Hugging Face: https://huggingface.co/NSoft-Official/Gemi
 - No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo. Las busquedas web realizadas devolvieron resultados sin relacion (emisoras de radio austriacas).

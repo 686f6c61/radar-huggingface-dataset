@@ -2,9 +2,9 @@
 
 ## Resumen
 
-tokengate-niah-qwen3.5-2b-gate3-seed0 es un fine-tuning del modelo Qwen/Qwen3.5-2B publicado por el usuario luisgasparschroeder en HuggingFace. Por el nombre y las etiquetas (`tokengate`, `niah`), se trata de un experimento de ajuste orientado a tareas de recuperación de información en contextos largos (Needle In A Haystack), probablemente vinculado a una técnica de control de tokens o compuertas de atención denominada "TokenGate". El repositorio tiene un tamano de 4,0 GB, coherente con pesos en safetensors de un modelo de aproximadamente 2.000 millones de parametros.
+tokengate-niah-qwen3.5-2b-gate3-seed0 es un fine-tuning del modelo Qwen/Qwen3.5-2B publicado por el usuario luisgasparschroeder en Hugging Face. Por el nombre y las etiquetas (`tokengate`, `niah`), se trata de un experimento de ajuste orientado a tareas de recuperación de información en contextos largos (Needle In A Haystack), probablemente vinculado a una técnica de control de tokens o compuertas de atención denominada "TokenGate". El repositorio tiene un tamano de 4,0 GB, coherente con pesos en safetensors de un modelo de aproximadamente 2.000 millones de parametros.
 
-La relevancia del modelo es fundamentalmente experimental: se publica con licencia Apache 2.0, formato safetensors y compatibilidad declarada con vLLM, lo que sugiere que el autor lo preparó para servir inferencia eficiente. El acceso es restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo. No se han publicado métricas, datos de entrenamiento ni documentación técnica en la información disponible, lo que limita la evaluación objetiva de su rendimiento.
+La relevancia del modelo es fundamentalmente experimental: se publica con licencia Apache 2.0, formato safetensors y compatibilidad declarada con vLLM, lo que sugiere que el autor lo preparó para servir inferencia eficiente. El acceso es restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo. No se han publicado métricas, datos de entrenamiento ni documentación técnica en la información disponible, lo que limita la evaluación objetiva de su rendimiento.
 
 Al estar construido sobre Qwen3.5-2B, hereda las capacidades generales del modelo base (generación de texto, razonamiento y multilingüismo), pero el ajuste específico parece centrado en la tarea NIAH, no en un uso generalista. Cualquier despliegue en producción debería validarse empíricamente antes de adoptarlo.
 
@@ -61,15 +61,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tokengate-niah-qwen3.5-2b-gate3-seed0 | ~2B (base) | no disponible | Apache 2.0 | Gated en HuggingFace |
-| Qwen/Qwen3.5-2B (base) | ~2B | no disponible | no disponible | Público en HuggingFace |
+| tokengate-niah-qwen3.5-2b-gate3-seed0 | ~2B (base) | no disponible | Apache 2.0 | Gated en Hugging Face |
+| Qwen/Qwen3.5-2B (base) | ~2B | no disponible | no disponible | Público en Hugging Face |
 | Alternativas de ~2B (p. ej. Qwen2.5-1.5B, Llama-3.2-1B) | 1-2B | 32K-128K según modelo | Apache 2.0 / Llama | Públicas |
 
 No se dispone de datos de rendimiento del modelo para una comparación cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de la descarga, lo que puede complicar la automatización de pipelines.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de la descarga, lo que puede complicar la automatización de pipelines.
 - Ausencia de documentación técnica: no hay model card detallada, datos de entrenamiento ni evaluación publicada.
 - Riesgo de alucinación: inherente a los modelos de lenguaje; sin evaluación específica no puede cuantificarse.
 - Sesgos: desconocidos, al no documentarse la composición del dataset de ajuste.
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento del modelo para una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/luisgasparschroeder/tokengate-niah-qwen3.5-2b-gate3-seed0
+- Hugging Face: https://huggingface.co/luisgasparschroeder/tokengate-niah-qwen3.5-2b-gate3-seed0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Paper referenciado en etiquetas: arxiv:2610.26754 (no verificado en la información disponible)

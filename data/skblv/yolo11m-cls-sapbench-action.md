@@ -65,7 +65,7 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/skblv/yolo11m-cls-sapbench-action)
+- [Modelo en Hugging Face](https://huggingface.co/skblv/yolo11m-cls-sapbench-action)
 - [Paper SAP-Bench (arXiv:2506.07196)](https://arxiv.org/abs/2506.07196)
 - [Leaderboard de comprensión de vídeo quirúrgico (GitHub)](https://github.com/skblv/neurosurgery-video-eval-website)
 - [Repositorio oficial de Ultralytics YOLO11](https://github.com/ultralytics/yolo11)

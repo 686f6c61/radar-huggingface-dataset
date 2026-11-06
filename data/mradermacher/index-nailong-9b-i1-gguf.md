@@ -6,7 +6,7 @@ Index-Nailong-9B-i1-GGUF es la version cuantizada en formato GGUF del modelo Ind
 
 La relevancia de esta ficha no esta en el modelo base, del que la informacion disponible es muy escasa, sino en el paquete de cuantizaciones: el repositorio ofrece 18 variantes i1 (imatrix) que van desde 3,0 GB (IQ1_M) hasta 7,5 GB (Q6_K), lo que permite ejecutar un modelo de 9B en equipos con tan solo 4-8 GB de VRAM efectiva. Los tags del repositorio indican orientacion a traduccion (`translation`), contexto largo (`long-context`) y uso conversacional.
 
-El pipeline declarado en HuggingFace es `translation` y el unico idioma declarado es ingles (`en`), aunque la naturaleza del modelo base (nombre Nailong, equipo IndexTeam) sugiere un posible origen sin confirmar en la informacion disponible. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales, un punto relevante frente a modelos con licencias de comunidad mas restrictivas.
+El pipeline declarado en Hugging Face es `translation` y el unico idioma declarado es ingles (`en`), aunque la naturaleza del modelo base (nombre Nailong, equipo IndexTeam) sugiere un posible origen sin confirmar en la informacion disponible. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales, un punto relevante frente a modelos con licencias de comunidad mas restrictivas.
 
 ## Especificaciones tecnicas
 
@@ -25,12 +25,12 @@ El pipeline declarado en HuggingFace es `translation` y el unico idioma declarad
 
 No se dispone de informacion sobre la arquitectura interna del modelo base en los datos proporcionados: no se especifica si se trata de un transformer denso, un MoE, un modelo hibrido SSM-attention ni si emplea tecnicas como atencion lineal o decodificacion especulativa. El unico dato estructural fiable es el numero de parametros (8.953.803.264, obtenido de los pesos en safetensors), que lo situa en la clase de 9B. El tag `long-context` sugiere soporte de ventanas de contexto extendidas, pero no se aporta la cifra concreta de tokens.
 
-Tampoco hay informacion sobre el dataset de entrenamiento (numero de tokens, composicion, proporciones de codigo o multilingue), ni sobre si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. Lo unico documentado en esta ficha es el proceso de cuantizacion: mradermacher ha generado quants de tipo i1 (los que usan un fichero imatrix para ponderar la importancia de los tensores durante la cuantizacion) partiendo del modelo en formato HuggingFace (`convert_type: hf`, `quantize_version: 2`), con el fichero imatrix publicado aparte (`Index-Nailong-9B.imatrix.gguf`, 0,1 GB) para quien quiera generar sus propias cuantizaciones. Los quants i1 suelen ofrecer mejor calidad que los estaticos equivalentes en el mismo tamano, especialmente en niveles bajos (2-3 bits).
+Tampoco hay informacion sobre el dataset de entrenamiento (numero de tokens, composicion, proporciones de codigo o multilingue), ni sobre si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. Lo unico documentado en esta ficha es el proceso de cuantizacion: mradermacher ha generado quants de tipo i1 (los que usan un fichero imatrix para ponderar la importancia de los tensores durante la cuantizacion) partiendo del modelo en formato Hugging Face (`convert_type: hf`, `quantize_version: 2`), con el fichero imatrix publicado aparte (`Index-Nailong-9B.imatrix.gguf`, 0,1 GB) para quien quiera generar sus propias cuantizaciones. Los quants i1 suelen ofrecer mejor calidad que los estaticos equivalentes en el mismo tamano, especialmente en niveles bajos (2-3 bits).
 
 ## Capacidades
 
 - Generacion de texto conversacional: el tag `conversational` indica que el modelo esta preparado para dialogos multi-turno.
-- Traduccion: el pipeline declarado en HuggingFace es `translation` y el tag correspondiente aparece en el repositorio, por lo que la traduccion es el caso de uso principal declarado.
+- Traduccion: el pipeline declarado en Hugging Face es `translation` y el tag correspondiente aparece en el repositorio, por lo que la traduccion es el caso de uso principal declarado.
 - Contexto largo: el tag `long-context` apunta a manejo de entradas extensas, si bien no se especifica la ventana maxima soportada.
 - Uso con llama.cpp y derivados: al estar en GGUF, es compatible con llama.cpp, Ollama, LM Studio, kobold.cpp y otros runners que consuman el formato.
 - Capacidades de tool calling / function calling: no disponible en la informacion proporcionada.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento del modelo base ni de sus alternativas en 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta ficha: https://huggingface.co/mradermacher/Index-Nailong-9B-i1-GGUF
+- Repositorio Hugging Face de esta ficha: https://huggingface.co/mradermacher/Index-Nailong-9B-i1-GGUF
 - Modelo base: https://huggingface.co/IndexTeam/Index-Nailong-9B
 - Quants estaticos del mismo modelo: https://huggingface.co/mradermacher/Index-Nailong-9B-GGUF
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Index-Nailong-9B-i1-GGUF

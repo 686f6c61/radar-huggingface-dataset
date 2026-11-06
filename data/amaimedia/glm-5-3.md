@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3 es el último modelo insignia de Z.ai, publicado en el repositorio de HuggingFace bajo la organización AMAImedia. Se trata de un modelo de lenguaje de gran tamaño (753 mil millones de parámetros totales) con arquitectura de mezcla de expertos (MoE) y etiqueta `glm_moe_dsa`, diseñado específicamente para tareas de codificación compleja, razonamiento agéntico de largo horizonte y descubrimiento de vulnerabilidades. El modelo utiliza la misma base que GLM-5.2, con todas las mejoras provenientes de post-entrenamiento, lo que representa un enfoque de escalado de capacidades sin modificar la arquitectura base.
+GLM-5.3 es el último modelo insignia de Z.ai, publicado en el repositorio de Hugging Face bajo la organización AMAImedia. Se trata de un modelo de lenguaje de gran tamaño (753 mil millones de parámetros totales) con arquitectura de mezcla de expertos (MoE) y etiqueta `glm_moe_dsa`, diseñado específicamente para tareas de codificación compleja, razonamiento agéntico de largo horizonte y descubrimiento de vulnerabilidades. El modelo utiliza la misma base que GLM-5.2, con todas las mejoras provenientes de post-entrenamiento, lo que representa un enfoque de escalado de capacidades sin modificar la arquitectura base.
 
 La relevancia actual de GLM-5.3 radica en que se posiciona como el modelo de pesos abiertos más capaz para codificación, con una mejora del 50% sobre GLM-5.2 en el benchmark interno de Z.ai Code Bench, y logra estado del arte en benchmarks públicos como Terminal Bench 3.0 y Agents' Last Exam. Además, presenta una capacidad emergente de ciberseguridad que supera a modelos cerrados de primer nivel en benchmarks de explotación de vulnerabilidades, con un rendimiento que más que duplica al de GLM-5.2 en benchmarks de explotación. El modelo soporta una ventana de contexto de hasta 1 millón de tokens, lo que lo hace adecuado para tareas de ingeniería de software a gran escala y agentes autónomos de larga duración.
 
@@ -21,7 +21,7 @@ La relevancia actual de GLM-5.3 radica en que se posiciona como el modelo de pes
 
 ## Arquitectura y entrenamiento
 
-GLM-5.3 utiliza una arquitectura de mezcla de expertos (MoE) con atención dispersa, identificada por la etiqueta `glm_moe_dsa` en el repositorio de HuggingFace. Esta arquitectura combina el enrutamiento de tokens a submodelos especializados (expertos) con un mecanismo de atención dispersa que reduce el coste computacional en secuencias largas, lo que permite manejar la ventana de contexto de 1 millón de tokens de forma eficiente. El modelo está implementado en la librería Transformers de HuggingFace, con soporte nativo en el módulo `glm_moe_dsa`.
+GLM-5.3 utiliza una arquitectura de mezcla de expertos (MoE) con atención dispersa, identificada por la etiqueta `glm_moe_dsa` en el repositorio de Hugging Face. Esta arquitectura combina el enrutamiento de tokens a submodelos especializados (expertos) con un mecanismo de atención dispersa que reduce el coste computacional en secuencias largas, lo que permite manejar la ventana de contexto de 1 millón de tokens de forma eficiente. El modelo está implementado en la librería Transformers de Hugging Face, con soporte nativo en el módulo `glm_moe_dsa`.
 
 El aspecto más destacable del entrenamiento es que GLM-5.3 comparte la misma base que GLM-5.2, y todas las mejoras de rendimiento provienen exclusivamente de la fase de post-entrenamiento. Según la documentación oficial de Z.ai, este post-entrenamiento escalado ha producido un salto cualitativo en capacidades de codificación compleja y tareas de largo horizonte, así como el surgimiento de capacidades de ciberseguridad que no estaban presentes en la versión anterior. No se han publicado detalles sobre el número de tokens de entrenamiento, la composición del dataset ni las técnicas específicas de alineación (RLHF, DPO, etc.) utilizadas en el post-entrenamiento.
 
@@ -101,7 +101,7 @@ GLM-5.3 destaca especialmente en ciberseguridad, donde supera a todos los modelo
 
 ## Limitaciones y advertencias
 
-- La licencia `glm-5.3` es una licencia propia categorizada como "other" en HuggingFace. Es necesario revisar los términos específicos de la licencia para determinar las restricciones de uso comercial, especialmente en lo relativo a las capacidades de ciberseguridad del modelo.
+- La licencia `glm-5.3` es una licencia propia categorizada como "other" en Hugging Face. Es necesario revisar los términos específicos de la licencia para determinar las restricciones de uso comercial, especialmente en lo relativo a las capacidades de ciberseguridad del modelo.
 - Las capacidades de explotación de vulnerabilidades (ExploitGym, ExploitBench) son inherentemente peligrosas. El uso de este modelo para actividades maliciosas podría violar leyes y regulaciones. Se recomienda implementar salvaguardas en entornos de producción.
 - El modelo solo soporta inglés y chino. No se mencionan capacidades para otros idiomas, lo que limita su uso en aplicaciones multilingües fuera de estos dos idiomas.
 - No se han publicado detalles sobre sesgos conocidos, riesgos de alucinación o comportamientos problemáticos específicos. Como modelo de 753B parámetros, es probable que presente los sesgos típicos de los modelos de gran escala, pero no hay datos disponibles al respecto.
@@ -112,8 +112,8 @@ GLM-5.3 destaca especialmente en ciberseguridad, donde supera a todos los modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AMAImedia/GLM-5.3
-- Repositorio HuggingFace GLM-5.3-Flash: https://huggingface.co/AMAImedia/GLM-5.3-Flash
+- Repositorio Hugging Face: https://huggingface.co/AMAImedia/GLM-5.3
+- Repositorio Hugging Face GLM-5.3-Flash: https://huggingface.co/AMAImedia/GLM-5.3-Flash
 - Documentación oficial de Z.ai: https://docs.z.ai/guides/llm/glm-5.3
 - Blog de Z.ai sobre GLM-5.3: https://z.ai/blog/glm-5.3
 - Página de especificaciones y precios: https://glm-ai.chat/models/glm-5-3/

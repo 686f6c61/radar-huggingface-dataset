@@ -2,7 +2,7 @@
 
 ## Resumen
 
-flamingo-matching28 es un repositorio de HuggingFace publicado por el usuario hassan0713 que contiene una implementacion propia y compacta de la arquitectura Flamingo en PyTorch, orientada a tareas de matching (emparejamiento) entre modalidades. No se trata de un modelo preentrenado ni ajustado: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y no un checkpoint entrenado con resultados de benchmark.
+flamingo-matching28 es un repositorio de Hugging Face publicado por el usuario hassan0713 que contiene una implementacion propia y compacta de la arquitectura Flamingo en PyTorch, orientada a tareas de matching (emparejamiento) entre modalidades. No se trata de un modelo preentrenado ni ajustado: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y no un checkpoint entrenado con resultados de benchmark.
 
 El tamano es极小: 49.600 parametros totales segun los datos reales de los tensores safetensors, lo que lo situa en el rango de unos 49,6 K parametros. Con esa escala, el repositorio debe interpretarse como material de referencia de codigo (implementacion, configuracion de arquitectura y receta de experimento) mas que como un modelo utilizable para inferencia real. La configuracion incluida se etiqueta como "small" y el autor la destina a revision de codigo, smoke tests y experimentos controlados de laboratorio.
 
@@ -69,7 +69,7 @@ No se dispone de modelos comparables en la informacion proporcionada. La unica r
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| flamingo-matching28 | 49.600 | no disponible | matching | Apache-2.0 | HuggingFace |
+| flamingo-matching28 | 49.600 | no disponible | matching | Apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,6 +86,6 @@ No se dispone de modelos comparables en la informacion proporcionada. La unica r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hassan0713/flamingo-matching28
+- Modelo en Hugging Face: https://huggingface.co/hassan0713/flamingo-matching28
 - Ficheros incluidos en el repositorio: `finetune.py` (artefacto principal), `config.json`, `training_args.json`, `model.safetensors`, `README.md`
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados devueltos corresponden a paginas genericas de motor de busqueda sin relacion con el modelo.

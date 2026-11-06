@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LucetV3-2B-Frontier es un modelo de lenguaje de tipo texto generativo publicado por el usuario mohommed en HuggingFace, distribuido exclusivamente en formato GGUF cuantizado. Se trata de un ajuste fino del modelo base LiquidAI/LFM3-1.7B, un transformer de Liquid AI con arquitectura tri-híbrida (convoluciones cortas con gating, atención de ventana deslizante y atención global con GQA). El autor lo presenta como un modelo orientado a razonamiento autónomo, generación de código y tareas de sistemas, con énfasis en la reducción de alucinaciones y en un protocolo propio de planificación denominado Next-Concept Modeling (NCM).
+LucetV3-2B-Frontier es un modelo de lenguaje de tipo texto generativo publicado por el usuario mohommed en Hugging Face, distribuido exclusivamente en formato GGUF cuantizado. Se trata de un ajuste fino del modelo base LiquidAI/LFM3-1.7B, un transformer de Liquid AI con arquitectura tri-híbrida (convoluciones cortas con gating, atención de ventana deslizante y atención global con GQA). El autor lo presenta como un modelo orientado a razonamiento autónomo, generación de código y tareas de sistemas, con énfasis en la reducción de alucinaciones y en un protocolo propio de planificación denominado Next-Concept Modeling (NCM).
 
 El modelo incorpora varias modificaciones declaradas por el autor: un protocolo de planificación jerárquica en tres niveles, un mecanismo de "medición de realidad" (R-Tuning) que fuerza al modelo a emitir herramientas deterministas en lugar de suponer estados no observados, un proceso de "uncensoring" mediante SVD que elimina direcciones de rechazo de las proyecciones de salida, y una extensión de contexto declarada de 524.288 tokens mediante RoPE con `rope_theta = 4.000.000` y ajuste ABF. Los pesos se han cuantizado con `llama-imatrix` para preservar la fidelidad del razonamiento.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: al tratarse de un modelo de 1,73 B en GGUF, las cuantizaciones de 4 bits ocupan aproximadamente 1,0-1,2 GB, las de 5 bits en torno a 1,3-1,5 GB y las de 8 bits alrededor de 2,0 GB; el repo completo pesa 4,0 GB.
 - GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM es suficiente para las cuantizaciones habituales; una RTX 3060, RTX 4060 o superior ofrece margen para contexto largo. Para el contexto completo de 524.288 tokens se requiere una GPU con memoria considerable (A100 40/80 GB, H100) o bien técnicas de atención eficiente y offloading, no especificadas por el autor.
 - Cabe en GPU de consumo: sí, en modelos como RTX 3060, RTX 4060, RTX 4070 o superiores, e incluso en CPU con llama.cpp para cuantizaciones bajas.
-- Opciones de despliegue: llama.cpp y Ollama por el formato GGUF; vLLM y TGI no soportan GGUF de forma nativa sin conversión, por lo que su uso requeriría los pesos originales del modelo base o una conversión previa. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp y Ollama por el formato GGUF; vLLM y TGI no soportan GGUF de forma nativa sin conversión, por lo que su uso requeriría los pesos originales del modelo base o una conversión previa. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -85,6 +85,6 @@ La comparación directa con Qwen2.5-1.5B y Llama 3.2 1B es orientativa: ambos so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohommed/LucetV3-2B-Frontier-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mohommed/LucetV3-2B-Frontier-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Repositorio GGUF referenciado en la model card: https://huggingface.co/mohommed/Lucet-2B-Frontier-GGUF

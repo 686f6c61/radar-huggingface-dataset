@@ -116,7 +116,7 @@ Datos no disponibles en la informacion proporcionada: numero de parametros de ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-period-efficientformerv2_l
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-period-efficientformerv2_l
 - Repositorio BDD100K-Toolkit: https://github.com/dronefreak/bdd100k-toolkit
 - Dataset de clasificacion de periodo: https://huggingface.co/datasets/dronefreak/BDD100K-Period-Classification
 - Modelo base: https://huggingface.co/timm/efficientformerv2_l.snap_dist_in1k

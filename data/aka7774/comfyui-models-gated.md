@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, creado por el usuario aka7774, contiene supuestos pesos de modelos para su uso con ComfyUI, como sugiere el nombre del repositorio. Los metadatos publicados indican que incluye archivos en formato safetensors y ONNX, y que el repositorio tiene un tamaño de 29,0 GB. Sin embargo, no se ha publicado ninguna información adicional: ni arquitectura, ni número de parámetros, ni longitud de contexto, ni datos de entrenamiento, ni capacidades concretas. Además, el acceso está restringido, por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargar o usar el contenido. En el momento de la consulta, el repositorio no tenía descargas ni "likes", lo que sugiere que es un proyecto personal o en fase temprana. Sin acceder al contenido o a documentación adicional, no es posible determinar qué problema resuelve ni por qué sería relevante ahora.
+Este repositorio de Hugging Face, creado por el usuario aka7774, contiene supuestos pesos de modelos para su uso con ComfyUI, como sugiere el nombre del repositorio. Los metadatos publicados indican que incluye archivos en formato safetensors y ONNX, y que el repositorio tiene un tamaño de 29,0 GB. Sin embargo, no se ha publicado ninguna información adicional: ni arquitectura, ni número de parámetros, ni longitud de contexto, ni datos de entrenamiento, ni capacidades concretas. Además, el acceso está restringido, por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargar o usar el contenido. En el momento de la consulta, el repositorio no tenía descargas ni "likes", lo que sugiere que es un proyecto personal o en fase temprana. Sin acceder al contenido o a documentación adicional, no es posible determinar qué problema resuelve ni por qué sería relevante ahora.
 
 ## Especificaciones tecnicas
 
@@ -48,7 +48,7 @@ No disponible. No se puede comparar este modelo con alternativas de la misma cat
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que es necesario aceptar condiciones en HuggingFace antes de descargar o utilizar el contenido.
+- Acceso restringido: el repositorio es gated, por lo que es necesario aceptar condiciones en Hugging Face antes de descargar o utilizar el contenido.
 - Licencia "other": no se especifican los términos de uso. Se debe revisar la licencia antes de cualquier uso comercial.
 - Sin documentación: al carecer de información sobre arquitectura, capacidades y datos de entrenamiento, es arriesgado usar este repositorio en entornos de producción.
 - Falta de validación: el repositorio no tiene descargas ni "likes", lo que indica que no ha sido probado ni validado por la comunidad.
@@ -57,5 +57,5 @@ No disponible. No se puede comparar este modelo con alternativas de la misma cat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aka7774/comfyui-models-gated
+- Repositorio en Hugging Face: https://huggingface.co/aka7774/comfyui-models-gated
 - Repositorio relacionado (sin restricción aparente): https://huggingface.co/aka7774/comfyui-models

@@ -80,6 +80,6 @@ No se dispone de datos publicos suficientes para una comparacion de rendimiento.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon_unif-STEER1.0-ft4.42
+- Hugging Face del modelo: https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon_unif-STEER1.0-ft4.42
 - Modelo similar del mismo autor: https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon-STEER1.125-ft4.42
 - Repositorio de TRL (citado en la model card): https://github.com/huggingface/trl

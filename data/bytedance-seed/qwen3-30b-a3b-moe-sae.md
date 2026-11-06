@@ -71,7 +71,7 @@ No se han publicado en la informacion disponible resultados de benchmarks tipo M
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ByteDance-Seed/Qwen3-30B-A3B-MoE-SAE | SAE sobre bloque MoE de Qwen3-30B-A3B | 2^20 latentes, dim 2048, k=100 | No aplica | Apache 2.0 | HuggingFace |
+| ByteDance-Seed/Qwen3-30B-A3B-MoE-SAE | SAE sobre bloque MoE de Qwen3-30B-A3B | 2^20 latentes, dim 2048, k=100 | No aplica | Apache 2.0 | Hugging Face |
 | SAE de Qwen3-30B-A3B sobre residual stream | No disponible en la informacion proporcionada | No disponible | No aplica | No disponible | No disponible |
 | SAE de otros modelos abiertos (p. ej. Llama, Gemma) | SAE sobre residual stream o atencion | No disponible | No aplica | No disponible | No disponible |
 
@@ -91,7 +91,7 @@ No se dispone en la informacion proporcionada de una comparativa cuantitativa co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ByteDance-Seed/Qwen3-30B-A3B-MoE-SAE
+- Hugging Face: https://huggingface.co/ByteDance-Seed/Qwen3-30B-A3B-MoE-SAE
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Pagina del proyecto: https://bytedance-seed.github.io/SAE-interprets-MoE/
 - Codigo: https://github.com/ByteDance-Seed/SAE-interprets-MoE

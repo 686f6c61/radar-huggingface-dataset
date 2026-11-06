@@ -66,4 +66,4 @@ No es posible realizar una comparativa directa con otros modelos de OCR (como Te
 
 ## Enlaces
 
-- [HuggingFace - Roy229/huggingface_terminal_notion_official_3556_66a14697_model_invoice-ocr](https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_66a14697_model_invoice-ocr)
+- [Hugging Face - Roy229/huggingface_terminal_notion_official_3556_66a14697_model_invoice-ocr](https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_66a14697_model_invoice-ocr)

@@ -47,7 +47,7 @@ El entrenamiento del modelo original se describe en el paper TIPSv2 (arXiv:2604.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card de HuggingFace no incluye métricas de evaluación, y los resultados del paper TIPSv2 (arXiv:2604.12012) no se han recuperado en la busqueda web. Los datos de rendimiento del modelo original en tareas de profundidad y segmentación deberian consultarse en el paper o en la documentacion de Google DeepMind.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card de Hugging Face no incluye métricas de evaluación, y los resultados del paper TIPSv2 (arXiv:2604.12012) no se han recuperado en la busqueda web. Los datos de rendimiento del modelo original en tareas de profundidad y segmentación deberian consultarse en el paper o en la documentacion de Google DeepMind.
 
 ## Requisitos de hardware
 
@@ -79,8 +79,8 @@ No se dispone de comparativas con otros modelos de estimacion de profundidad com
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/kerasformers/tipsv2-b14-dpt
-- Modelo original en HuggingFace: https://huggingface.co/google/tipsv2-b14-dpt
+- Repositorio Hugging Face del modelo: https://huggingface.co/kerasformers/tipsv2-b14-dpt
+- Modelo original en Hugging Face: https://huggingface.co/google/tipsv2-b14-dpt
 - Coleccion de variantes TIPSv2-DPT: https://huggingface.co/collections/kerasformers/tipsv2-dpt-6a8a3f36cd22fe9f68df6202
 - Paper TIPSv2: https://huggingface.co/papers/2604.12012
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers

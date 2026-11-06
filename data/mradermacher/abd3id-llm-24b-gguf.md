@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ABD3ID-LLM-24B-GGUF es la version cuantizada en formato GGUF del modelo ABD3ID-LLM-24B, desarrollado originalmente por abdallah3id y convertido por mradermacher, un autor conocido en HuggingFace por publicar cuantizaciones estaticas y ponderadas de modelos abiertos. El repositorio contiene un unico modelo base de aproximadamente 27.320 millones de parametros (pese a que el nombre comercial indica 24B) ya serializado en multiples niveles de cuantizacion GGUF, lo que permite su despliegue en entornos con llama.cpp, Ollama y otros runners compatibles.
+ABD3ID-LLM-24B-GGUF es la version cuantizada en formato GGUF del modelo ABD3ID-LLM-24B, desarrollado originalmente por abdallah3id y convertido por mradermacher, un autor conocido en Hugging Face por publicar cuantizaciones estaticas y ponderadas de modelos abiertos. El repositorio contiene un unico modelo base de aproximadamente 27.320 millones de parametros (pese a que el nombre comercial indica 24B) ya serializado en multiples niveles de cuantizacion GGUF, lo que permite su despliegue en entornos con llama.cpp, Ollama y otros runners compatibles.
 
 El modelo se distribuye bajo licencia Apache 2.0 y declara soporte para ocho idiomas: ingles, frances, espanol, italiano, portugues, chino, arabe y ruso. La model card incluye ademas ficheros de tipo mmproj, lo que sugiere una posible capacidad multimodal (vision), aunque el autor no la documenta de forma explicita. Con 302 descargas y cero likes en el momento de la consulta, se trata de un modelo de nicho con poca traccion comunitaria y sin informacion publica sobre arquitectura, contexto o entrenamiento.
 
@@ -25,14 +25,14 @@ La relevancia de esta ficha radica en que agrupa en un solo repositorio un model
 
 No se dispone de informacion sobre la arquitectura del modelo base abdallah3id/ABD3ID-LLM-24B. La model card de la cuantizacion no incluye detalles sobre si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o cualquier otra variante. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT.
 
-El unico dato tecnico verificable del proceso de cuantizacion es el recuento de parametros (27.320.697.856, extraido de los ficheros safetensors del modelo base) y la presencia de los metadatos internos de la herramienta de mradermacher (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), que indican una cuantizacion estatica tensor a tensor a partir de pesos en formato HuggingFace. La existencia de ficheros `mmproj` sugiere que el modelo base podria incorporar un adaptador multimodal, pero no se confirma en la documentacion.
+El unico dato tecnico verificable del proceso de cuantizacion es el recuento de parametros (27.320.697.856, extraido de los ficheros safetensors del modelo base) y la presencia de los metadatos internos de la herramienta de mradermacher (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), que indican una cuantizacion estatica tensor a tensor a partir de pesos en formato Hugging Face. La existencia de ficheros `mmproj` sugiere que el modelo base podria incorporar un adaptador multimodal, pero no se confirma en la documentacion.
 
 ## Capacidades
 
 - Generacion de texto conversacional, segun la etiqueta `conversational` del repositorio.
 - Soporte multilingue declarado para ocho idiomas: ingles, frances, espanol, italiano, portugues, chino, arabe y ruso.
 - Posible capacidad multimodal (vision) por la presencia de ficheros `mmproj` (mmproj-Q8_0 y mmproj-f16), aunque no documentada explicitamente.
-- Compatibilidad con `endpoints_compatible`, lo que indica que puede desplegarse en infraestructuras de inferencia compatibles con la API de endpoints de HuggingFace.
+- Compatibilidad con `endpoints_compatible`, lo que indica que puede desplegarse en infraestructuras de inferencia compatibles con la API de endpoints de Hugging Face.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Modo de pensamiento (thinking mode), audio u otras capacidades especiales: no disponible.
@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye benchmarks ni datos de re
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/ABD3ID-LLM-24B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/ABD3ID-LLM-24B-GGUF
 - Modelo base: https://huggingface.co/abdallah3id/ABD3ID-LLM-24B
 - Cuantizaciones ponderadas (imatrix) del mismo modelo: https://huggingface.co/mradermacher/ABD3ID-LLM-24B-i1-GGUF
 - Pagina agregada de mradermacher para este modelo: https://hf.tst.eu/model#ABD3ID-LLM-24B-GGUF
@@ -92,4 +92,4 @@ No disponible. La informacion proporcionada no incluye benchmarks ni datos de re
 - Grafica comparativa de cuantizacion de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
 - Notas de Artefact2 sobre cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
 - Listado de modelos de mradermacher: https://huggingface.co/mradermacher/models
-- Modelos compatibles con la libreria GGUF en HuggingFace: https://huggingface.co/models?library=gguf
+- Modelos compatibles con la libreria GGUF en Hugging Face: https://huggingface.co/models?library=gguf

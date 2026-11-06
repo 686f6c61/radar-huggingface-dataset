@@ -93,7 +93,7 @@ Comparacion con modelos de otras familias (por ejemplo alternativas de 7B-12B or
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atomheart-Father/Nyx-RP-9B-Instruct-2608-v1-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/Atomheart-Father/Nyx-RP-9B-Instruct-2608-v1-MLX-4bit
 - Modelo base: https://huggingface.co/Indexnusrefather/Nyx-RP-9B-Instruct-2608-v1
 - Cuantizaciones GGUF del modelo base: https://huggingface.co/mradermacher/Nyx-RP-9B-Instruct-2608-v1-GGUF
 - Libreria de inferencia MLX: https://github.com/ml-explore/mlx-lm

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qwen3-1.7b-deita-sft-student` es un ajuste supervisado (SFT) del modelo base Qwen/Qwen3-1.7B-Base, publicado por el usuario de HuggingFace hoangducanh1865. Se trata de un transformer denso de 1.720.574.976 parámetros (unos 1,72 mil millones) entrenado durante una única época sobre el dataset HuggingFaceH4/deita-10k-v0-sft, un conjunto de aproximadamente 10.000 muestras de instrucciones y conversaciones. Los pesos se distribuyen en formato safetensors bajo licencia Apache 2.0 y el repositorio ocupa 3,5 GB.
+`qwen3-1.7b-deita-sft-student` es un ajuste supervisado (SFT) del modelo base Qwen/Qwen3-1.7B-Base, publicado por el usuario de Hugging Face hoangducanh1865. Se trata de un transformer denso de 1.720.574.976 parámetros (unos 1,72 mil millones) entrenado durante una única época sobre el dataset HuggingFaceH4/deita-10k-v0-sft, un conjunto de aproximadamente 10.000 muestras de instrucciones y conversaciones. Los pesos se distribuyen en formato safetensors bajo licencia Apache 2.0 y el repositorio ocupa 3,5 GB.
 
 El propósito del ajuste es convertir un modelo base —entrenado para continuar texto, sin formato conversacional— en un asistente capaz de seguir instrucciones en diálogos multiturno, manteniendo un tamaño lo bastante reducido como para ejecutarse en una GPU de consumo o en CPU con cuantización agresiva.
 
@@ -43,7 +43,7 @@ El entrenamiento es un SFT puro (no se declara RLHF, DPO ni ningún otro método
 - Uso como agente y razonamiento multi-paso: no documentado.
 - Capacidades multilingües: no documentadas; el dataset de ajuste es mayoritariamente en inglés.
 - Modo de razonamiento explícito (thinking mode): no documentado en esta ficha, aunque la familia Qwen3 lo contempla en sus variantes oficiales.
-- Compatibilidad de despliegue: etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad declarada con TGI y con los endpoints de HuggingFace.
+- Compatibilidad de despliegue: etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad declarada con TGI y con los endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -96,7 +96,7 @@ No se dispone de datos verificados en la información proporcionada para compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hoangducanh1865/qwen3-1.7b-deita-sft-student
+- Modelo en Hugging Face: https://huggingface.co/hoangducanh1865/qwen3-1.7b-deita-sft-student
 - Perfil del autor: https://huggingface.co/hoangducanh1865
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Variante oficial de la familia: https://huggingface.co/Qwen/Qwen3-1.7B

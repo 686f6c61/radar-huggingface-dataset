@@ -91,7 +91,7 @@ La comparativa se limita a la cadena de derivación del propio modelo, ya que no
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Luis23333/Qwen3.8-27B-SSMFIX-UD-Q3_K_XL-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/Luis23333/Qwen3.8-27B-SSMFIX-UD-Q3_K_XL-GGUF
 - Modelo BF16 fuente: https://huggingface.co/redashes/Qwen3.8-27B-BF16-SSMFIX
 - Modelo upstream oficial: https://huggingface.co/Qwen/Qwen3.8-27B
 - Discusión sobre el SSMFIX: https://huggingface.co/Qwen/Qwen3.8-27B/discussions/76

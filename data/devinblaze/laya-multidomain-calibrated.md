@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Laya Multi-Domain Calibrated Decision Engine es un conjunto de pesos de decision publicado por el usuario devinblaze en HuggingFace bajo el identificador `devinblaze/laya-multidomain-calibrated`. No es un modelo de lenguaje generativo: se presenta como un motor de decision no autorregresivo de tipo "System 1", implementado en NumPy/SciPy, que produce una etiqueta discreta y una confianza calibrada a partir de un texto de entrada y una pregunta asociada. El paquete incluye pesos, sesgos y temperaturas de calibracion Platt, y se carga mediante la clase `LayaTrainer` de la libreria `laya` con `dim=256`.
+Laya Multi-Domain Calibrated Decision Engine es un conjunto de pesos de decision publicado por el usuario devinblaze en Hugging Face bajo el identificador `devinblaze/laya-multidomain-calibrated`. No es un modelo de lenguaje generativo: se presenta como un motor de decision no autorregresivo de tipo "System 1", implementado en NumPy/SciPy, que produce una etiqueta discreta y una confianza calibrada a partir de un texto de entrada y una pregunta asociada. El paquete incluye pesos, sesgos y temperaturas de calibracion Platt, y se carga mediante la clase `LayaTrainer` de la libreria `laya` con `dim=256`.
 
 Su relevancia practica no esta en la generacion de texto, sino en el coste de inferencia: el autor declara latencias de entre 0,07 ms y 0,25 ms en CPU, sin GPU ni framework de deep learning. Eso lo situa en la categoria de clasificadores de muy baja latencia utilizables como enrutadores, filtros o disparadores previos a un LLM. Cubre cinco dominios declarados: rubrica ICP de prospeccion B2B, intencion de compra B2B, matching de catalogo de hardware de red e industria, senales de futuros USD-M de Binance y primitivas de accion DOM para agentes de navegador.
 
@@ -30,7 +30,7 @@ La informacion publicada es escasa: no hay detalle del dataset de entrenamiento,
 
 ## Arquitectura y entrenamiento
 
-La model card describe el modelo como un "System 1 non-autoregressive decision engine". No hay transformer, atencion ni decodificacion autoregresiva: el estado del modelo son matrices de pesos y vectores de sesgos que se cargan directamente en `LayaTrainer(dim=256)`, junto con un diccionario de temperaturas de calibracion. La inferencia se ejecuta en NumPy/SciPy puro, lo que explica las latencias declaradas de 0,07 ms a 0,25 ms en CPU. El pipeline de HuggingFace figura como "no disponible" y la libreria asociada es `laya`.
+La model card describe el modelo como un "System 1 non-autoregressive decision engine". No hay transformer, atencion ni decodificacion autoregresiva: el estado del modelo son matrices de pesos y vectores de sesgos que se cargan directamente en `LayaTrainer(dim=256)`, junto con un diccionario de temperaturas de calibracion. La inferencia se ejecuta en NumPy/SciPy puro, lo que explica las latencias declaradas de 0,07 ms a 0,25 ms en CPU. El pipeline de Hugging Face figura como "no disponible" y la libreria asociada es `laya`.
 
 No se publica informacion sobre el volumen de datos de entrenamiento, la composicion del corpus, el preprocesado, ni si hubo etapas de ajuste por preferencias humanas (RLHF/DPO). Tampoco se documentan hiperparametros, semillas, particiones de entrenamiento/validacion/test ni el procedimiento de calibracion mas alla de la mencion a Platt scaling. La unica innovacion tecnica explicitamente descrita es el uso de una regla de puntuacion estrictamente propia (`proper_reward`, combinacion de log, spherical y RPS) sobre decisiones ordinales, y la calibracion por temperaturas por dominio.
 
@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables, y el
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Laya Multi-Domain Calibrated | no disponible | no disponible | accuracy 100,00 % (validacion), ECE 0,2263, 0,07-0,25 ms en CPU | apache-2.0 | HuggingFace, 0 descargas |
+| Laya Multi-Domain Calibrated | no disponible | no disponible | accuracy 100,00 % (validacion), ECE 0,2263, 0,07-0,25 ms en CPU | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables identificadas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -104,6 +104,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables, y el
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/devinblaze/laya-multidomain-calibrated
+- Hugging Face: https://huggingface.co/devinblaze/laya-multidomain-calibrated
 - Paper, blog, repositorio o demo del autor: no disponible en la informacion proporcionada
 - La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo; los resultados obtenidos eran contenido para adultos sin relacion alguna con el objeto de la ficha y no se enlazan.

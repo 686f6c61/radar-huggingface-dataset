@@ -77,7 +77,7 @@ No se dispone de información suficiente para comparar con otros modelos de gene
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [Rreitsma/minimax-music3-ensemble-blocks](https://huggingface.co/Rreitsma/minimax-music3-ensemble-blocks)
+- Repositorio de Hugging Face: [Rreitsma/minimax-music3-ensemble-blocks](https://huggingface.co/Rreitsma/minimax-music3-ensemble-blocks)
 - Modelo original de MiniMax: [MiniMaxAI/MiniMax-Music3](https://huggingface.co/MiniMaxAI/MiniMax-Music3)
 - Código fuente del modelo MiniMax: [MiniMax-AI/MiniMax-Music3](https://github.com/MiniMax-AI/MiniMax-Music3)
 - Discusión en Diffusers: [diffusers#14486](https://github.com/huggingface/diffusers/issues/14486)

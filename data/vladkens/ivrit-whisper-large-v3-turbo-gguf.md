@@ -82,7 +82,7 @@ transcribe-cli -m ivrit-whisper-large-v3-turbo-Q8_0.gguf -l he audio.wav
 
 | Modelo | Parámetros | Contexto / idioma | Formato y licencia | WER FLEURS (he_il) | Disponibilidad |
 |---|---|---|---|---|---|
-| ivrit-whisper-large-v3-turbo-gguf (este) | 808.904.208 | Ventana de 30 s; hebreo | GGUF Q8_0, Apache-2.0 | 18,80 | Fichero único de 886 MB en HuggingFace |
+| ivrit-whisper-large-v3-turbo-gguf (este) | 808.904.208 | Ventana de 30 s; hebreo | GGUF Q8_0, Apache-2.0 | 18,80 | Fichero único de 886 MB en Hugging Face |
 | ivrit-ai/whisper-large-v3-turbo (origen) | no disponible en esta ficha | Ventana de 30 s; hebreo | Safetensors, Apache-2.0 | no disponible para los pesos sin cuantizar en esta ficha | Repositorio original de ivrit.ai |
 | openai/whisper-large-v3-turbo | misma arquitectura turbo (el ajuste no altera el número de parámetros) | Ventana de 30 s; 100 idiomas | Safetensors / GGUF, Apache-2.0 | 33,25 (Q8_0 en wavo) | Referencia de OpenAI, ampliamente soportada |
 | openai/whisper-large-v3 | 1,55 mil millones (dato externo, no verificado en la fuente) | Ventana de 30 s; 100 idiomas | Safetensors, Apache-2.0 | no disponible en esta ficha | Referencia de OpenAI; mayor coste de inferencia |
@@ -103,7 +103,7 @@ La comparación directa disponible se limita al par turbo original frente al aju
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/vladkens/ivrit-whisper-large-v3-turbo-gguf
+- Repositorio Hugging Face del modelo: https://huggingface.co/vladkens/ivrit-whisper-large-v3-turbo-gguf
 - Fichero GGUF Q8_0: https://huggingface.co/vladkens/ivrit-whisper-large-v3-turbo-gguf/blob/main/ivrit-whisper-large-v3-turbo-Q8_0.gguf
 - Licencia del repositorio: https://huggingface.co/vladkens/ivrit-whisper-large-v3-turbo-gguf/blob/main/LICENSE
 - Aviso de cambios: https://huggingface.co/vladkens/ivrit-whisper-large-v3-turbo-gguf/blob/main/NOTICE

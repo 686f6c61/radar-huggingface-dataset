@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gupta-reyansh123/Rice_Mitochondria_Optimizer` es un checkpoint publicado en HuggingFace Hub por el usuario `gupta-reyansh123` (perfil personal, sin organizacion ni documentacion asociada) bajo la libreria `transformers`. Se trata de un modelo de tipo encoder con arquitectura BigBird y cabeza de `fill-mask` (masked language modeling), con 87.881.562 parametros totales confirmados a partir de los pesos en `safetensors` y un repositorio de 0,4 GB. El nombre sugiere una aplicacion al dominio de la mitocondria del arroz, pero la model card no contiene ninguna declaracion al respecto y no hay metadatos que lo confirmen.
+`gupta-reyansh123/Rice_Mitochondria_Optimizer` es un checkpoint publicado en Hugging Face Hub por el usuario `gupta-reyansh123` (perfil personal, sin organizacion ni documentacion asociada) bajo la libreria `transformers`. Se trata de un modelo de tipo encoder con arquitectura BigBird y cabeza de `fill-mask` (masked language modeling), con 87.881.562 parametros totales confirmados a partir de los pesos en `safetensors` y un repositorio de 0,4 GB. El nombre sugiere una aplicacion al dominio de la mitocondria del arroz, pero la model card no contiene ninguna declaracion al respecto y no hay metadatos que lo confirmen.
 
 La relevancia de esta ficha es fundamentalmente critica: el modelo se publica con una model card autogenerada por la plataforma, en la que todos los campos relevantes (autor, tipo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como `[More Information Needed]`. No se declara licencia, no se declaran idiomas y no se han publicado resultados de evaluacion. Con 0 descargas y 1 "like" en el momento de la consulta, se trata de un artefacto sin validacion comunitaria.
 
@@ -30,7 +30,7 @@ Desde el punto de vista tecnico, el unico dato solido es la familia arquitectoni
 
 La unica informacion arquitectonica fiable es el tag `big_bird`, que identifica modelos basados en BigBird, un transformer encoder que sustituye la atencion densa por una combinacion de atencion por bloques, atencion global y atencion aleatoria, con complejidad lineal respecto a la longitud de secuencia. El recuento de parametros (87,9 M) no coincide con ninguna de las configuraciones canonicas publicas de BigBird (`bigbird-roberta-base`, 127 M, y `bigbird-roberta-large`, 360 M), lo que indica una configuracion personalizada con menos capas y/o dimensiones ocultas reducidas. No se dispone de la configuracion exacta (`config.json` no se ha facilitado en la informacion recibida).
 
-No hay absolutamente ningun dato sobre el entrenamiento: se desconoce el numero de tokens, la composicion del corpus, si hubo preentrenamiento desde cero o ajuste fino sobre un checkpoint existente, el regimen de precision (fp32, fp16, bf16), el uso de RLHF/DPO (poco habitual en modelos `fill-mask`) ni el tokenizer empleado. La model card es la plantilla por defecto de HuggingFace sin rellenar. El unico tag bibliografico presente, `arxiv:1910.09700`, corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la propia plantilla, y no guarda relacion con el modelo.
+No hay absolutamente ningun dato sobre el entrenamiento: se desconoce el numero de tokens, la composicion del corpus, si hubo preentrenamiento desde cero o ajuste fino sobre un checkpoint existente, el regimen de precision (fp32, fp16, bf16), el uso de RLHF/DPO (poco habitual en modelos `fill-mask`) ni el tokenizer empleado. La model card es la plantilla por defecto de Hugging Face sin rellenar. El unico tag bibliografico presente, `arxiv:1910.09700`, corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la propia plantilla, y no guarda relacion con el modelo.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 0,35 GB para los pesos en fp32, 0,18 GB en fp16/bf16 y 0,09 GB en int8. Conviene reservar 1-2 GB adicionales para activaciones, tokenizer y overhead del runtime en cargas por lotes.
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente (GTX 1650, RTX 3050, RTX 4090, A100, H100); no requiere aceleradores de gama alta.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU de consumo de los ultimos diez anos, e incluso en CPU (inferencia viable por lotes) y en dispositivos con poca memoria.
-- Opciones de despliegue: `transformers` con `pipeline("fill-mask")` es la via directa. ONNX Runtime y TorchScript son alternativas razonables. GGUF para `llama.cpp` no esta disponible en el repositorio. El soporte de vLLM, TGI y Ollama para encoders tipo BigBird con cabeza de `fill-mask` no esta confirmado. El tag `endpoints_compatible` indica que puede servirse a traves de HuggingFace Inference Endpoints.
+- Opciones de despliegue: `transformers` con `pipeline("fill-mask")` es la via directa. ONNX Runtime y TorchScript son alternativas razonables. GGUF para `llama.cpp` no esta disponible en el repositorio. El soporte de vLLM, TGI y Ollama para encoders tipo BigBird con cabeza de `fill-mask` no esta confirmado. El tag `endpoints_compatible` indica que puede servirse a traves de Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles. No se han publicado mediciones, y sin conocer la longitud de contexto configurada no puede estimarse con rigor.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ La comparacion es estructural, no de rendimiento: no existen datos de evaluacion
 ## Limitaciones y advertencias
 
 - Licencia no declarada: sin licencia explicita no puede asumirse permiso de uso comercial. En la practica, el modelo se encuentra en una zona de incertidumbre legal y no deberia integrarse en productos sin aclaracion previa por parte del autor.
-- Model card vacia: todos los campos relevantes son la plantilla por defecto de HuggingFace. No hay informacion sobre datos de entrenamiento, tokenizer, hiperparametros ni procedencia de los pesos.
+- Model card vacia: todos los campos relevantes son la plantilla por defecto de Hugging Face. No hay informacion sobre datos de entrenamiento, tokenizer, hiperparametros ni procedencia de los pesos.
 - Procedencia de los pesos no verificada: no se indica si el modelo se entreno desde cero o es un ajuste fino de otro checkpoint, lo que impide rastrear obligaciones de atribucion o posibles sesgos heredados.
 - Riesgo de alucinacion: pertinente en cualquier tarea de relleno de mascaras; el modelo puede producir tokens gramaticalmente plausibles pero factualmente incorrectos, especialmente fuera de su dominio de entrenamiento.
 - Dominio e idioma desconocidos: el nombre sugiere un dominio muy especifico (mitocondria del arroz) y el vocabulario no esta documentado, por lo que el comportamiento fuera de ese dominio es impredecible.
@@ -94,7 +94,7 @@ La comparacion es estructural, no de rendimiento: no existen datos de evaluacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gupta-reyansh123/Rice_Mitochondria_Optimizer
+- Modelo en Hugging Face: https://huggingface.co/gupta-reyansh123/Rice_Mitochondria_Optimizer
 - Referencia bibliografica del tag del Hub (Lacoste et al., 2019, sobre estimacion de emisiones; no relacionada con el modelo): https://arxiv.org/abs/1910.09700
 - Paper de la arquitectura BigBird (referencia general de la familia, no del checkpoint): https://arxiv.org/abs/2007.14062
 - Calculadora de impacto de machine learning citada en la plantilla: https://mlco2.github.io/impact

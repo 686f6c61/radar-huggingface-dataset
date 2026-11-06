@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rabindra-dahal/swedish-auto-insurance-linear-regression` es un modelo de regresion lineal simple, de una sola variable, implementado con PyTorch y publicado en HuggingFace por Rabindra Dahal. No se trata de un modelo de lenguaje ni de una red neuronal profunda: es una unica capa lineal que aproxima la relacion entre el numero de reclamaciones de un seguro de automovil y el coste total de las mismas, a partir del clasico dataset Swedish Auto Insurance. Su relevancia es exclusivamente didactica y de referencia.
+`rabindra-dahal/swedish-auto-insurance-linear-regression` es un modelo de regresion lineal simple, de una sola variable, implementado con PyTorch y publicado en Hugging Face por Rabindra Dahal. No se trata de un modelo de lenguaje ni de una red neuronal profunda: es una unica capa lineal que aproxima la relacion entre el numero de reclamaciones de un seguro de automovil y el coste total de las mismas, a partir del clasico dataset Swedish Auto Insurance. Su relevancia es exclusivamente didactica y de referencia.
 
 El modelo resuelve un problema de regresion tabular parametrica minima: dado un unico predictor (numero de siniestros), estima el pago total en miles de coronas suecas (SEK). Se entrenó durante 1500 epocas con optimizador Adam, tasa de aprendizaje 0,1 y funcion de perdida MSE, sin escalado de datos, hasta converger a la recta de mejor ajuste para esa arquitectura.
 
@@ -44,7 +44,7 @@ Los datos de entrenamiento son el Swedish Auto Insurance Dataset, con 63 observa
 - Linea base para el dataset Swedish Auto Insurance: cualquier modelo mas complejo (gradient boosting, redes multicapa) puede compararse contra el RMSE de 35,37 miles de SEK para justificar su complejidad adicional.
 - Verificacion de pipelines de entrenamiento: al tener solo dos parametros y una ecuacion conocida, permite comprobar que un framework o una infraestructura de entrenamiento funciona correctamente antes de escalar.
 - Estimacion rapida y explicable de coste agregado: en un escenario hipotetico y de baja exigencia, dado un volumen de siniestros, devuelve una cifra de pago esperado en miles de SEK con una relacion interpretable.
-- Ejemplo de publicacion de modelos tabulares en HuggingFace: muestra como documentar metadatos (`tags`, `datasets`, `metrics`) y una model card para un modelo no generativo.
+- Ejemplo de publicacion de modelos tabulares en Hugging Face: muestra como documentar metadatos (`tags`, `datasets`, `metrics`) y una model card para un modelo no generativo.
 - Analisis de sensibilidad elemental: al ser una recta, permite explicar de forma inmediata el efecto marginal de una reclamacion adicional (3,41 miles de SEK) sin necesidad de tecnicas de interpretabilidad.
 
 ## Benchmarks y rendimiento
@@ -74,7 +74,7 @@ No se dispone de informacion sobre modelos comparables en la informacion proporc
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo | 2 | no aplica | RMSE 35,37 (entrenamiento) | MIT | HuggingFace |
+| Este modelo | 2 | no aplica | RMSE 35,37 (entrenamiento) | MIT | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,6 +91,6 @@ No se dispone de informacion sobre modelos comparables en la informacion proporc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rabindra-dahal/swedish-auto-insurance-linear-regression
+- Hugging Face: https://huggingface.co/rabindra-dahal/swedish-auto-insurance-linear-regression
 - Dataset Swedish Auto Insurance: no disponible en la informacion proporcionada (no se enlaza en la model card).
 - Paper, blog, repositorio o demo: no disponibles en la informacion proporcionada.

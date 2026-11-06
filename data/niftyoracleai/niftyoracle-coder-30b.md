@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NiftyOracle-Coder-30B es un modelo publicado en HuggingFace por el usuario u organizacion NiftyOracleAI. Por el nombre se deduce que se trata de un modelo orientado a generacion de codigo con aproximadamente 30.000 millones de parametros, pero la informacion disponible no confirma ni la arquitectura, ni el numero exacto de parametros, ni el proceso de entrenamiento. La model card no incluye pipeline, licencia, idiomas soportados ni descripcion de uso, por lo que practicamente todos los datos tecnicos habituales quedan sin verificar.
+NiftyOracle-Coder-30B es un modelo publicado en Hugging Face por el usuario u organizacion NiftyOracleAI. Por el nombre se deduce que se trata de un modelo orientado a generacion de codigo con aproximadamente 30.000 millones de parametros, pero la informacion disponible no confirma ni la arquitectura, ni el numero exacto de parametros, ni el proceso de entrenamiento. La model card no incluye pipeline, licencia, idiomas soportados ni descripcion de uso, por lo que practicamente todos los datos tecnicos habituales quedan sin verificar.
 
 El repositorio ocupa 340,5 GB, un tamano muy superior al que corresponderia a un modelo de 30B en precision fp16 (unos 60 GB) o incluso en fp32 (unos 120 GB). Esto sugiere que el repositorio puede contener varias copias de los pesos en distintos formatos o precisiones, adaptadores, checkpoints intermedios u otros artefactos, pero no hay informacion publica que lo confirme.
 
@@ -84,6 +84,6 @@ No disponible. No se ha identificado ningun modelo comparable con datos verifica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NiftyOracleAI/NiftyOracle-Coder-30B
+- Modelo en Hugging Face: https://huggingface.co/NiftyOracleAI/NiftyOracle-Coder-30B
 - Paper, blog, repositorio de codigo, demo o documentacion adicional: no disponible
 - La busqueda web no ha devuelto ningun resultado relacionado con el modelo; los unicos resultados obtenidos corresponden a paginas corporativas de Microsoft (microsoft.com, account.microsoft.com, myaccount.microsoft.com, en.wikipedia.org/wiki/Microsoft) y no guardan relacion con esta ficha.

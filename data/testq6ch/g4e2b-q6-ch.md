@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`testq6ch/g4e2b-q6-ch` es un artefacto publicado en HuggingFace por el usuario `testq6ch`, presumiblemente una cuantización en formato GGUF de un modelo de la familia Gemma, a juzgar por la licencia declarada (`gemma`) y por el sufijo `q6-ch` del identificador, que sugiere una cuantización de 6 bits. No obstante, la model card pública no contiene más información que la etiqueta de licencia, por lo que no es posible confirmar la arquitectura, el tamaño exacto ni el proceso de cuantización empleado.
+`testq6ch/g4e2b-q6-ch` es un artefacto publicado en Hugging Face por el usuario `testq6ch`, presumiblemente una cuantización en formato GGUF de un modelo de la familia Gemma, a juzgar por la licencia declarada (`gemma`) y por el sufijo `q6-ch` del identificador, que sugiere una cuantización de 6 bits. No obstante, la model card pública no contiene más información que la etiqueta de licencia, por lo que no es posible confirmar la arquitectura, el tamaño exacto ni el proceso de cuantización empleado.
 
 El repositorio ocupa 6,4 GB, un tamaño compatible con un modelo denso de aproximadamente 7-9 mil millones de parámetros cuantizado a 6 bits, aunque esta estimación es una inferencia a partir del tamaño del repo y no un dato confirmado por el autor. El modelo no registra descargas ni interacciones en el momento de la consulta y no tiene pipeline declarado.
 
@@ -73,4 +73,4 @@ No disponible. No se dispone de información suficiente sobre el modelo base ni 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/testq6ch/g4e2b-q6-ch
+- Repositorio en Hugging Face: https://huggingface.co/testq6ch/g4e2b-q6-ch

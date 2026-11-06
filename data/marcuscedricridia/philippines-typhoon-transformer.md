@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Philippines Typhoon Track Predictor es un modelo de series temporales publicado en HuggingFace por el usuario marcuscedricridia bajo licencia MIT. Su objetivo declarado es la predicción de trayectorias de ciclones tropicales en el entorno de Filipinas con horizontes de entre 3 y 18 horas. La model card lo describe como una arquitectura "Multi-Scale Transformer + MoE", es decir, un transformer con atención multiescala combinado con capas de mezcla de expertos (MoE), implementado con PyTorch.
+Philippines Typhoon Track Predictor es un modelo de series temporales publicado en Hugging Face por el usuario marcuscedricridia bajo licencia MIT. Su objetivo declarado es la predicción de trayectorias de ciclones tropicales en el entorno de Filipinas con horizontes de entre 3 y 18 horas. La model card lo describe como una arquitectura "Multi-Scale Transformer + MoE", es decir, un transformer con atención multiescala combinado con capas de mezcla de expertos (MoE), implementado con PyTorch.
 
 El modelo se posiciona como una alternativa basada en aprendizaje profundo frente a los métodos clásicos de extrapolación de trayectoria. Según los resultados publicados por el propio autor, supera a la extrapolación lineal en todos los horizontes a partir de las 6 horas, y mantiene una ventaja creciente hasta las 18 horas, donde el error pasa de 32,1 en la línea base lineal a 27,6 en el modelo. Frente a la persistencia, la mejora es de un orden de magnitud en todos los horizontes.
 
@@ -72,7 +72,7 @@ Observaciones sobre la tabla: el modelo supera a la extrapolación lineal desde 
 - VRAM estimada para inferencia: no disponible. Al no publicarse el número de parámetros ni la dimensión de entrada, no es posible calcularla sin inventar datos.
 - GPU recomendadas: no disponible por la misma razón.
 - Viabilidad en GPU de consumo: no determinable con la información publicada. Un modelo de series temporales de este tipo suele ser ligero en comparación con modelos de lenguaje, pero esto es una consideración genérica, no un dato del repositorio.
-- Opciones de despliegue: el modelo está etiquetado como PyTorch y la model card referencia una demo en HuggingFace Spaces, lo que sugiere despliegue mediante la librería PyTorch y el ecosistema de Spaces. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que en cualquier caso están orientados a modelos de lenguaje y no a series temporales.
+- Opciones de despliegue: el modelo está etiquetado como PyTorch y la model card referencia una demo en Hugging Face Spaces, lo que sugiere despliegue mediante la librería PyTorch y el ecosistema de Spaces. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que en cualquier caso están orientados a modelos de lenguaje y no a series temporales.
 - Latencia y throughput: no disponibles.
 - Nota importante: el repositorio figura con un tamaño de 0,0 GB y no se documentan ficheros de pesos, por lo que la ejecución local podría requerir entrenar el modelo a partir del código publicado en el repositorio de GitHub.
 
@@ -107,7 +107,7 @@ No se han proporcionado datos comparativos frente a modelos operativos de predic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marcuscedricridia/philippines-typhoon-transformer
+- Modelo en Hugging Face: https://huggingface.co/marcuscedricridia/philippines-typhoon-transformer
 - Código fuente: https://github.com/haveanidia/philippines-typhoon-predictor
 - Dataset: https://huggingface.co/datasets/marcuscedricridia/philippines-typhoon-tracks
 - Demo: https://huggingface.co/spaces/marcuscedricridia/philippines-typhoon-demo

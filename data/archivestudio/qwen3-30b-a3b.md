@@ -93,7 +93,7 @@ Datos de rendimiento comparativo no disponibles en la informacion proporcionada.
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/ArchiveStudio/Qwen3-30B-A3B
+- Hugging Face (este repositorio): https://huggingface.co/ArchiveStudio/Qwen3-30B-A3B
 - Modelo oficial: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B-Base
 - Blog Qwen3: https://qwenlm.github.io/blog/qwen3/

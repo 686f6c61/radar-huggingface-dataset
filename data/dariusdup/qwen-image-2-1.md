@@ -79,10 +79,10 @@ No se dispone de datos de benchmarks de Qwen-Image-2.1 que permitan una comparac
 
 | Modelo | Parámetros (componente de generación) | Contexto/entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen-Image-2.1 | ~7 B (7.115.124.736), 32 capas DiT single-stream | hasta 10 imágenes de referencia en edición; salida hasta 2048x2048 y 2752x1536 en panorámico; RGBA nativo | qwen-research (Qwen Research License Agreement) | HuggingFace y ModelScope |
-| FLUX.1 [dev] | ~12 B | condicionamiento por prompt e imagen de referencia; sin salida alfa nativa documentada en la model card de Qwen | licencia no comercial de FLUX.1 [dev] | HuggingFace |
-| Stable Diffusion 3.5 Large | ~8 B | prompt e imagen de referencia para img2img/inpainting | Stability AI Community License (con condiciones de uso comercial según ingresos) | HuggingFace |
-| Qwen-Image (versión 1) | no disponible en la información proporcionada | no disponible | qwen-research | HuggingFace y ModelScope |
+| Qwen-Image-2.1 | ~7 B (7.115.124.736), 32 capas DiT single-stream | hasta 10 imágenes de referencia en edición; salida hasta 2048x2048 y 2752x1536 en panorámico; RGBA nativo | qwen-research (Qwen Research License Agreement) | Hugging Face y ModelScope |
+| FLUX.1 [dev] | ~12 B | condicionamiento por prompt e imagen de referencia; sin salida alfa nativa documentada en la model card de Qwen | licencia no comercial de FLUX.1 [dev] | Hugging Face |
+| Stable Diffusion 3.5 Large | ~8 B | prompt e imagen de referencia para img2img/inpainting | Stability AI Community License (con condiciones de uso comercial según ingresos) | Hugging Face |
+| Qwen-Image (versión 1) | no disponible en la información proporcionada | no disponible | qwen-research | Hugging Face y ModelScope |
 
 ## Limitaciones y advertencias
 
@@ -99,11 +99,11 @@ No se dispone de datos de benchmarks de Qwen-Image-2.1 que permitan una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace (réplica analizada): https://huggingface.co/Dariusdup/Qwen-Image-2.1
-- Modelo oficial en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Modelo en Hugging Face (réplica analizada): https://huggingface.co/Dariusdup/Qwen-Image-2.1
+- Modelo oficial en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Modelo oficial en ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog de Qwen-Image-2.1: https://qwen.ai/blog?id=qwen-image-2.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Repositorio en GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - Servidor de Discord: https://discord.gg/BEYSk3pkSu
 - Contacto por WeChat (QR): https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/assets/qr.png

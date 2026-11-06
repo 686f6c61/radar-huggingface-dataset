@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qianfan-OCR es un modelo vision-lenguaje de 4,74 mil millones de parametros (4.741.408.256 segun los pesos en safetensors) desarrollado por el equipo Baidu Qianfan y publicado en HuggingFace bajo el identificador Jinstudio/Qianfan-OCR. Su objetivo es unificar en una sola arquitectura end-to-end tres tareas que tradicionalmente se resuelven con pipelines encadenados: el analisis de maquetacion (layout analysis), el reconocimiento optico de caracteres (OCR) y la comprension documental. En lugar de encadenar un detector de layout, un motor de OCR y un modelo de lenguaje, Qianfan-OCR realiza conversion directa de imagen a Markdown y admite multiples tareas guiadas por prompt, como extraccion de tablas, comprension de graficos, respuesta a preguntas sobre documentos y extraccion de informacion clave.
+Qianfan-OCR es un modelo vision-lenguaje de 4,74 mil millones de parametros (4.741.408.256 segun los pesos en safetensors) desarrollado por el equipo Baidu Qianfan y publicado en Hugging Face bajo el identificador Jinstudio/Qianfan-OCR. Su objetivo es unificar en una sola arquitectura end-to-end tres tareas que tradicionalmente se resuelven con pipelines encadenados: el analisis de maquetacion (layout analysis), el reconocimiento optico de caracteres (OCR) y la comprension documental. En lugar de encadenar un detector de layout, un motor de OCR y un modelo de lenguaje, Qianfan-OCR realiza conversion directa de imagen a Markdown y admite multiples tareas guiadas por prompt, como extraccion de tablas, comprension de graficos, respuesta a preguntas sobre documentos y extraccion de informacion clave.
 
 La relevancia del modelo reside en su relacion tamano-rendimiento: con solo 4B de parametros declara el mejor resultado entre modelos end-to-end en OmniDocBench v1.5 (93,12) y en OlmOCR Bench (79,8), por delante de DeepSeek-OCR-v2 y Gemini-3 Pro en el primer caso. Ademas incorpora una fase de razonamiento opcional denominada Layout-as-Thought, activada mediante el token ⟨think⟩, que genera representaciones estructuradas de layout (cajas delimitadoras, tipos de elemento y orden de lectura) antes de la salida final. Soporta 192 idiomas y se distribuye con licencia Apache 2.0, lo que facilita su uso comercial.
 
@@ -50,7 +50,7 @@ No se ha proporcionado informacion en la documentacion disponible sobre el numer
 - Extraccion de informacion clave (KIE): media global de 87,9 en cinco benchmarks publicos de KIE, segun el autor.
 - Modo de pensamiento (thinking mode): fase opcional activada por tokens ⟨think⟩ que genera layout estructurado antes de la respuesta.
 - Conversacional: la etiqueta conversational indica soporte de interaccion multi-turno.
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere despliegue en infraestructura de endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere despliegue en infraestructura de endpoints de Hugging Face.
 - No se documenta soporte explicito de tool calling, function calling ni de agentes multi-paso en la informacion disponible.
 
 ## Casos de uso
@@ -119,14 +119,14 @@ El autor senala ademas que los sistemas de dos etapas (OCR + LLM) obtienen 0,0 e
 - Rendimiento declarado: 1,024 paginas por segundo (PPS) con cuantizacion W8A8 en una unica GPU A100.
 - GPU recomendadas: A100 (resultado de referencia aportado por el autor), H100 para mayor throughput, y GPUs de 24 GB como RTX 4090 o RTX 3090 para inferencia en bf16 con lotes pequenos.
 - GPUs de consumo: si cabe en tarjetas de 24 GB en bf16 y en tarjetas de 8-12 GB con cuantizacion W8A8, aunque no se han publicado mediciones especificas para estos perfiles. No hay datos confirmados para GPUs por debajo de 8 GB ni para CPU.
-- Opciones de despliegue: transformers (libreria declarada), ademas de los frameworks habituales para modelos vision-lenguaje como vLLM o TGI. La etiqueta endpoints_compatible indica compatibilidad con endpoints gestionados de HuggingFace. No se han publicado pesos en formato GGUF, por lo que llama.cpp y Ollama no estan soportados oficialmente segun la informacion disponible.
+- Opciones de despliegue: transformers (libreria declarada), ademas de los frameworks habituales para modelos vision-lenguaje como vLLM o TGI. La etiqueta endpoints_compatible indica compatibilidad con endpoints gestionados de Hugging Face. No se han publicado pesos en formato GGUF, por lo que llama.cpp y Ollama no estan soportados oficialmente segun la informacion disponible.
 - Latencia: no se especifica latencia por pagina mas alla del dato de throughput de 1,024 PPS en A100 con W8A8. El modo Layout-as-Thought (⟨think⟩) incrementa la latencia porque genera tokens adicionales de layout antes de la respuesta final; el autor recomienda desactivarlo en documentos homogeneos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | OmniDocBench v1.5 | OCRBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qianfan-OCR | 4,74B | 32K (ampliable a 131K) | 93,12 | 880 | Apache 2.0 | HuggingFace (transformers, safetensors) |
+| Qianfan-OCR | 4,74B | 32K (ampliable a 131K) | 93,12 | 880 | Apache 2.0 | Hugging Face (transformers, safetensors) |
 | DeepSeek-OCR-v2 | No disponible | No disponible | 91,09 | No disponible (DeepSeek-OCR: 459) | No disponible | No disponible en la informacion proporcionada |
 | Qwen3-VL-4B | Aprox. 4B | No disponible | No disponible | 873 | No disponible | No disponible en la informacion proporcionada |
 | Qwen3-VL-235B | 235B (MoE, segun nomenclatura A22B) | No disponible | 89,15 | No disponible | No disponible | No disponible en la informacion proporcionada |
@@ -151,7 +151,7 @@ Consideraciones sobre la comparativa: PaddleOCR-VL 1.5 obtiene una puntuacion gl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jinstudio/Qianfan-OCR
+- Modelo en Hugging Face: https://huggingface.co/Jinstudio/Qianfan-OCR
 - Demo: https://huggingface.co/spaces/baidu/Qianfan-OCR-Demo
 - Informe tecnico (arXiv:2603.13398): https://arxiv.org/abs/2603.13398
 - Paper de Qianfan-VL (arXiv:2509.18189): https://arxiv.org/abs/2509.18189

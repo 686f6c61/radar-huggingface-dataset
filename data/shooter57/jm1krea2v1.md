@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jm1krea2v1 es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes a partir de texto, desarrollado por el usuario Shooter57 y publicado en HuggingFace. Está diseñado como un módulo de afinado para el modelo base Krea-2-Raw, una arquitectura de difusión de última generación orientada a la síntesis de imágenes fotorrealistas y estilizadas. El LoRA se activa mediante la palabra desencadenante (trigger word) `jm1`, lo que permite personalizar el estilo o el contenido de las imágenes generadas sin necesidad de reentrenar el modelo completo.
+jm1krea2v1 es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes a partir de texto, desarrollado por el usuario Shooter57 y publicado en Hugging Face. Está diseñado como un módulo de afinado para el modelo base Krea-2-Raw, una arquitectura de difusión de última generación orientada a la síntesis de imágenes fotorrealistas y estilizadas. El LoRA se activa mediante la palabra desencadenante (trigger word) `jm1`, lo que permite personalizar el estilo o el contenido de las imágenes generadas sin necesidad de reentrenar el modelo completo.
 
 Este adaptador tiene un tamaño de repositorio de 0.2 GB, lo que indica que es una solución ligera y fácilmente desplegable sobre el modelo base. Su relevancia radica en que permite a desarrolladores y artistas ajustar el comportamiento de Krea-2-Raw de forma eficiente, con un coste de almacenamiento y cómputo reducido en comparación con un fine-tuning completo. La fecha de creación (agosto de 2026) y su estado reciente sugieren que es parte de un ecosistema emergente de adaptadores para Krea-2.
 

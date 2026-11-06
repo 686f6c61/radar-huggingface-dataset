@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jwev (identificador `crumbs-playground/jwev-2b`) es un envoltorio de código personalizado sobre un modelo base Qwen3.5 de 2B parámetros (la model card menciona Qwen3.5-VL y el tag de HuggingFace indica `Qwen/Qwen3.5-2B`) que transforma un modelo de lenguaje generativo en un evaluador estructurado de preguntas tipadas. En lugar de generar texto libre, el modelo recibe un estado (texto o imagen codificada en base64) y un conjunto de preguntas con tipo (`choice`, `score`, `noul`) y devuelve respuestas acompañadas de probabilidades y puntuaciones de log-verosimilitud de secuencia completa. Está publicado por el usuario `crumbs-playground` y expone el pipeline `zero-shot-classification`.
+Jwev (identificador `crumbs-playground/jwev-2b`) es un envoltorio de código personalizado sobre un modelo base Qwen3.5 de 2B parámetros (la model card menciona Qwen3.5-VL y el tag de Hugging Face indica `Qwen/Qwen3.5-2B`) que transforma un modelo de lenguaje generativo en un evaluador estructurado de preguntas tipadas. En lugar de generar texto libre, el modelo recibe un estado (texto o imagen codificada en base64) y un conjunto de preguntas con tipo (`choice`, `score`, `noul`) y devuelve respuestas acompañadas de probabilidades y puntuaciones de log-verosimilitud de secuencia completa. Está publicado por el usuario `crumbs-playground` y expone el pipeline `zero-shot-classification`.
 
 Su relevancia práctica está en el formato de salida: cada candidato se puntúa sumando los log-probabilidades de toda su secuencia de tokens, lo que evita la ambigüedad típica del scoring por primer token (por ejemplo, `"1"` frente a `"10"`, o `"Yes"` frente a `"Yep"`). Todas las candidaturas de todas las preguntas se agrupan en un único forward pass, lo que reduce el coste de evaluar múltiples etiquetas simultáneamente. Además, las puntuaciones son diferenciables, de modo que el modelo se puede ajustar por supervisión directa o por refuerzo sin cambiar la interfaz de evaluación.
 
@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tipo de tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| crumbs-playground/jwev-2b | 2.213.241.664 | No disponible | Evaluación estructurada multi-pregunta (choice / score / noul) sobre texto e imagen | No disponible | HuggingFace, requiere `trust_remote_code` |
-| Qwen/Qwen3.5-2B (modelo base) | ~2B (heredado por el ajuste) | No disponible | Generación de lenguaje y visión base | No disponible | HuggingFace |
-| Clasificadores zero-shot basados en encoder (por ejemplo, familia DeBERTa-v3 NLI) | No disponible | No disponible | Clasificación zero-shot de texto | No disponible | HuggingFace |
+| crumbs-playground/jwev-2b | 2.213.241.664 | No disponible | Evaluación estructurada multi-pregunta (choice / score / noul) sobre texto e imagen | No disponible | Hugging Face, requiere `trust_remote_code` |
+| Qwen/Qwen3.5-2B (modelo base) | ~2B (heredado por el ajuste) | No disponible | Generación de lenguaje y visión base | No disponible | Hugging Face |
+| Clasificadores zero-shot basados en encoder (por ejemplo, familia DeBERTa-v3 NLI) | No disponible | No disponible | Clasificación zero-shot de texto | No disponible | Hugging Face |
 | Modelos de evaluación con rúbrica basados en LLM (patrón LLM-as-judge) | No disponible | No disponible | Puntuación de texto mediante generación | No disponible | Genéricos, sin versión concreta identificada |
 
 No se han identificado en la información disponible otros envoltorios de evaluación multi-pregunta directamente comparables, ni se dispone de datos de licencia o contexto de las alternativas, por lo que la comparación cuantitativa no puede completarse.
@@ -87,7 +87,7 @@ No se han identificado en la información disponible otros envoltorios de evalua
 - Licencia no especificada: no se puede asumir uso comercial ni redistribución sin consultar al autor, lo que bloquea su adopción en producción hasta aclararlo.
 - Idiomas soportados no declarados: no hay garantía de comportamiento correcto en castellano ni en otros idiomas distintos del inglés, idioma de todos los ejemplos de la model card.
 - Longitud de contexto no documentada: no se puede dimensionar cuánto texto admite por estado ni cuántas preguntas caben en un mismo forward pass.
-- Ambigüedad sobre el modelo base: los tags de HuggingFace apuntan a `Qwen/Qwen3.5-2B` mientras la model card describe un envoltorio sobre Qwen3.5-VL y exige `Qwen3_5ForConditionalGeneration`; conviene verificar qué pesos se cargan realmente.
+- Ambigüedad sobre el modelo base: los tags de Hugging Face apuntan a `Qwen/Qwen3.5-2B` mientras la model card describe un envoltorio sobre Qwen3.5-VL y exige `Qwen3_5ForConditionalGeneration`; conviene verificar qué pesos se cargan realmente.
 - Dependencia de código personalizado: requiere `trust_remote_code=True`, lo que implica ejecutar código del autor en el entorno propio y no es aceptable en muchos pipelines con políticas de seguridad estrictas.
 - Riesgo de alucinación: aunque la tarea sea de clasificación, las puntuaciones se derivan de log-verosimilitudes del modelo base, por lo que etiquetas mal redactadas o poco distinguibles pueden producir distribuciones planas o sesgadas. Las probabilidades del softmax no están calibradas de forma explícita.
 - Sesgo de formulación: el resultado depende fuertemente del texto de `instructions` y de los nombres de las etiquetas; cambios menores en la redacción pueden alterar las probabilidades.
@@ -98,7 +98,7 @@ No se han identificado en la información disponible otros envoltorios de evalua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/crumbs-playground/jwev-2b
+- Modelo en Hugging Face: https://huggingface.co/crumbs-playground/jwev-2b
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-2B
 - Perfil del autor: https://huggingface.co/crumbs-playground
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web realizada; los resultados obtenidos no guardan relación con el modelo.

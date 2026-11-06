@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/Qwen3-8B-school-of-reward-hacks-second-third-sft-seed5` es un ajuste fino (fine-tune) del modelo base Qwen3-8B, desarrollado por el usuario `localized-ft` sobre la versión optimizada `unsloth/Qwen3-8B`. Se trata de un modelo de generación de texto en inglés, entrenado mediante supervisión (SFT) con la librería TRL de HuggingFace y acelerado con Unsloth, que permite un entrenamiento aproximadamente dos veces más rápido que el convencional. El nombre sugiere que forma parte de una serie de experimentos sobre "school of reward hacks", probablemente relacionados con técnicas de optimización de recompensa, aunque no se proporcionan detalles adicionales en la documentación.
+El modelo `localized-ft/Qwen3-8B-school-of-reward-hacks-second-third-sft-seed5` es un ajuste fino (fine-tune) del modelo base Qwen3-8B, desarrollado por el usuario `localized-ft` sobre la versión optimizada `unsloth/Qwen3-8B`. Se trata de un modelo de generación de texto en inglés, entrenado mediante supervisión (SFT) con la librería TRL de Hugging Face y acelerado con Unsloth, que permite un entrenamiento aproximadamente dos veces más rápido que el convencional. El nombre sugiere que forma parte de una serie de experimentos sobre "school of reward hacks", probablemente relacionados con técnicas de optimización de recompensa, aunque no se proporcionan detalles adicionales en la documentación.
 
 Con 8.190 millones de parámetros, este modelo se posiciona en la gama de los LLM de tamaño medio, adecuado para tareas de conversación y generación de texto. Su licencia Apache-2.0 permite uso comercial sin restricciones significativas, lo que lo hace atractivo para integraciones en producción. Sin embargo, la ausencia de una model card detallada y de resultados de benchmarks limita la evaluación objetiva de sus capacidades reales frente a otros modelos de la misma familia.
 
@@ -23,7 +23,7 @@ Con 8.190 millones de parámetros, este modelo se posiciona en la gama de los LL
 
 La arquitectura subyacente es la de Qwen3-8B, un transformer autoregresivo con atención de múltiples cabezas, normalización RMSNorm y capas de atención con sesgo de rotación (RoPE). El modelo base `unsloth/Qwen3-8B` es una versión optimizada para entrenamiento eficiente en memoria y velocidad, manteniendo la misma arquitectura que el Qwen3-8B original de Alibaba.
 
-El proceso de entrenamiento de este fine-tune se realizó mediante supervisión (SFT) utilizando la librería TRL de HuggingFace, con la aceleración de Unsloth. El nombre "school-of-reward-hacks" sugiere que el dataset de entrenamiento podría estar relacionado con ejemplos de manipulación de recompensas o trucos de optimización, pero no se especifica la composición del dataset, el número de tokens de entrenamiento ni si se aplicaron técnicas adicionales como RLHF o DPO. No se dispone de información sobre innovaciones técnicas específicas en este modelo concreto.
+El proceso de entrenamiento de este fine-tune se realizó mediante supervisión (SFT) utilizando la librería TRL de Hugging Face, con la aceleración de Unsloth. El nombre "school-of-reward-hacks" sugiere que el dataset de entrenamiento podría estar relacionado con ejemplos de manipulación de recompensas o trucos de optimización, pero no se especifica la composición del dataset, el número de tokens de entrenamiento ni si se aplicaron técnicas adicionales como RLHF o DPO. No se dispone de información sobre innovaciones técnicas específicas en este modelo concreto.
 
 ## Capacidades
 
@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-8B (base) | 8.19B | 32.768 (típico) | Apache-2.0 | HuggingFace |
-| localized-ft/Qwen3-8B-school-of-reward-hacks-second-third-sft-seed5 | 8.19B | no disponible | Apache-2.0 | HuggingFace |
-| Llama-3.1-8B | 8.03B | 128.000 | Llama 3.1 Community License | HuggingFace |
-| Mistral-7B-v0.3 | 7.24B | 32.768 | Apache-2.0 | HuggingFace |
+| Qwen3-8B (base) | 8.19B | 32.768 (típico) | Apache-2.0 | Hugging Face |
+| localized-ft/Qwen3-8B-school-of-reward-hacks-second-third-sft-seed5 | 8.19B | no disponible | Apache-2.0 | Hugging Face |
+| Llama-3.1-8B | 8.03B | 128.000 | Llama 3.1 Community License | Hugging Face |
+| Mistral-7B-v0.3 | 7.24B | 32.768 | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a parámetros y licencia, ya que no hay datos de rendimiento para este fine-tune. El modelo base Qwen3-8B suele superar a Llama-3.1-8B en varios benchmarks, pero no se puede afirmar que este fine-tune mantenga esas ventajas sin evaluaciones propias.
 
@@ -76,7 +76,7 @@ La comparativa se limita a parámetros y licencia, ya que no hay datos de rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-school-of-reward-hacks-second-third-sft-seed5
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-school-of-reward-hacks-second-third-sft-seed5
 - Modelo base (unsloth/Qwen3-8B): https://huggingface.co/unsloth/Qwen3-8B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Página de FriendliAI para el modelo (agregador): https://friendli.ai/models/localized-ft/Qwen3-8B-school-of-reward-hacks-second-third-sft-seed4 (variante seed4, no este modelo exacto)

@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. Al s
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tiny-random/minicpm-ocr-jev` | 6,64 M | no disponible | Scorer OCR binario (aleatorio) | no disponible | HuggingFace, 0 descargas |
-| `openbmb/MiniCPM-OCR-Jev` | 2,21 B (BF16) | no disponible | Scorer OCR binario | no disponible | HuggingFace (modelo base) |
-| `openbmb/MiniCPM-V` (familia) | no disponible en la información | no disponible | Visión-lenguaje general | no disponible en la información | HuggingFace |
+| `tiny-random/minicpm-ocr-jev` | 6,64 M | no disponible | Scorer OCR binario (aleatorio) | no disponible | Hugging Face, 0 descargas |
+| `openbmb/MiniCPM-OCR-Jev` | 2,21 B (BF16) | no disponible | Scorer OCR binario | no disponible | Hugging Face (modelo base) |
+| `openbmb/MiniCPM-V` (familia) | no disponible en la información | no disponible | Visión-lenguaje general | no disponible en la información | Hugging Face |
 
 La comparación directa más relevante es con su modelo base: misma arquitectura e interfaz, pero 333 veces menos parámetros y sin entrenamiento. Frente a modelos de OCR funcionales de la familia MiniCPM, este checkpoint no es una alternativa: solo comparte estructura.
 
@@ -84,7 +84,7 @@ La comparación directa más relevante es con su modelo base: misma arquitectura
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tiny-random/minicpm-ocr-jev
+- Repositorio Hugging Face: https://huggingface.co/tiny-random/minicpm-ocr-jev
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-OCR-Jev
 - Script de creación: `.meta/create_model.py` (dentro del repositorio)
 - Log de estructura: `.meta/model.log` (dentro del repositorio)

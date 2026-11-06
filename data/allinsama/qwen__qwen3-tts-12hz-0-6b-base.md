@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-TTS-12Hz-0.6B-Base (este repo) | 914,6M | No disponible | 10 | Apache-2.0 | HuggingFace (Allinsama) |
-| Qwen3-TTS-12Hz-0.6B-Base oficial | 914,6M | No disponible | 10 | Apache-2.0 | HuggingFace (Qwen) |
+| Qwen3-TTS-12Hz-0.6B-Base (este repo) | 914,6M | No disponible | 10 | Apache-2.0 | Hugging Face (Allinsama) |
+| Qwen3-TTS-12Hz-0.6B-Base oficial | 914,6M | No disponible | 10 | Apache-2.0 | Hugging Face (Qwen) |
 | Alternativas comparables de TTS multilingüe con clonación | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificados de alternativas en la información proporcionada; no se incluyen cifras de parámetros, contexto o rendimiento para no inventarlas.
@@ -94,9 +94,9 @@ No se dispone de datos verificados de alternativas en la información proporcion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Allinsama/Qwen__Qwen3-TTS-12Hz-0.6B-Base
+- Repositorio en Hugging Face: https://huggingface.co/Allinsama/Qwen__Qwen3-TTS-12Hz-0.6B-Base
 - Checkpoint oficial referenciado: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
-- Technical report en HuggingFace Papers: https://huggingface.co/papers/2601.15621
+- Technical report en Hugging Face Papers: https://huggingface.co/papers/2601.15621
 - Preprint en arXiv: https://arxiv.org/abs/2601.15621
 - Repositorio GitHub: https://github.com/QwenLM/Qwen3-TTS
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen3-TTS
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen3-TTS

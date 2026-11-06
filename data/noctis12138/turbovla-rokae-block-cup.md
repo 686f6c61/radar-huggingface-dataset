@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TurboVLA Rokae v3 es un modelo de política visomotora (VLA, Vision-Language-Action) para control robótico bimanual, publicado por el usuario Noctis12138 en HuggingFace. Está entrenado específicamente para una única tarea de manipulación con dos brazos Rokae AR5 equipados con pinzas paralelas: colocar un bloque dentro de una taza con el brazo izquierdo y luego depositar la taza sobre un plato con el brazo derecho. El modelo forma parte de una familia de checkpoints del mismo autor (turbovla-rokae-toothbrush, turbovla-rokae-6task) que comparten receta de entrenamiento y paquete de despliegue, variando únicamente el conjunto de datos de la tarea.
+TurboVLA Rokae v3 es un modelo de política visomotora (VLA, Vision-Language-Action) para control robótico bimanual, publicado por el usuario Noctis12138 en Hugging Face. Está entrenado específicamente para una única tarea de manipulación con dos brazos Rokae AR5 equipados con pinzas paralelas: colocar un bloque dentro de una taza con el brazo izquierdo y luego depositar la taza sobre un plato con el brazo derecho. El modelo forma parte de una familia de checkpoints del mismo autor (turbovla-rokae-toothbrush, turbovla-rokae-6task) que comparten receta de entrenamiento y paquete de despliegue, variando únicamente el conjunto de datos de la tarea.
 
 El checkpoint se distribuye como un único archivo `.pth` de aproximadamente 1,8 GB que contiene pesos, configuración y estadísticas de normalización. La arquitectura combina un backbone visual DINOv3-L (ViT-L/16, inicializado desde `dinov3-vitl16-pretrain-lvd1689m`), codificación de instrucciones con BERT (congelado durante el entrenamiento) y una cabeza de acción denominada ActionMap que predice chunks de 50 pasos de acciones relativas a la pose medida. El modelo está pensado para inferencia en tiempo real sobre el robot real, con un consumo de VRAM de aproximadamente 3 GB.
 
@@ -70,9 +70,9 @@ Estos valores miden ajuste al conjunto de entrenamiento y verifican que el check
 
 | Modelo | Tipo | Parametros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TurboVLA Rokae block-cup (este) | VLA bimanual, single-task | no disponible (~1,8 GB checkpoint) | no aplica | 1 tarea, 51 demos | other (DINOv3) | HuggingFace, 0 descargas |
-| TurboVLA Rokae toothbrush | VLA bimanual, single-task | mismo stack | no aplica | 1 tarea (cepillado) | other (DINOv3) | HuggingFace, mismo autor |
-| TurboVLA Rokae 6task | VLA bimanual, multi-task | mismo stack | no aplica | 6 tareas | other (DINOv3) | HuggingFace, mismo autor |
+| TurboVLA Rokae block-cup (este) | VLA bimanual, single-task | no disponible (~1,8 GB checkpoint) | no aplica | 1 tarea, 51 demos | other (DINOv3) | Hugging Face, 0 descargas |
+| TurboVLA Rokae toothbrush | VLA bimanual, single-task | mismo stack | no aplica | 1 tarea (cepillado) | other (DINOv3) | Hugging Face, mismo autor |
+| TurboVLA Rokae 6task | VLA bimanual, multi-task | mismo stack | no aplica | 6 tareas | other (DINOv3) | Hugging Face, mismo autor |
 
 No se dispone de información sobre benchmarks comparativos frente a otros modelos VLA de la literatura (π0, π0.5, OpenVLA, RT-2) en los materiales proporcionados; la receta de aumento de imagen se inspira en π0.5, pero no se aportan métricas cruzadas.
 
@@ -90,7 +90,7 @@ No se dispone de información sobre benchmarks comparativos frente a otros model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Noctis12138/turbovla-rokae-block-cup
+- Hugging Face: https://huggingface.co/Noctis12138/turbovla-rokae-block-cup
 - Modelo hermano (single-task, cepillo de dientes): https://huggingface.co/Noctis12138/turbovla-rokae-toothbrush
 - Modelo hermano (6 tareas): https://huggingface.co/Noctis12138/turbovla-rokae-6task
 - Licencia DINOv3 (referenciada en el repo): `code/assets/dinov3-vitl16-pretrain-lvd1689m/LICENSE.md`

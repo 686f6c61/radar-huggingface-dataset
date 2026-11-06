@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Base | Tecnica de entrenamiento | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Este adaptador (B-Mean1Reweight) | Qwen2.5-VL-7B-Instruct | OPSD + Mean1Reweight + ForwardKL + VisionZip | 7B + LoRA | No disponible | No disponible | No disponible | HuggingFace, 0.2 GB |
-| Variante official | Qwen2.5-VL-7B-Instruct | OPSD oficial + VisionZip | 7B + LoRA | No disponible | No disponible | No disponible | HuggingFace |
-| Variante TIP-Top10 | Qwen2.5-VL-7B-Instruct | OPSD + TIP-Top10 + ForwardKL + VisionZip | 7B + LoRA | No disponible | No disponible | No disponible | HuggingFace |
+| Este adaptador (B-Mean1Reweight) | Qwen2.5-VL-7B-Instruct | OPSD + Mean1Reweight + ForwardKL + VisionZip | 7B + LoRA | No disponible | No disponible | No disponible | Hugging Face, 0.2 GB |
+| Variante official | Qwen2.5-VL-7B-Instruct | OPSD oficial + VisionZip | 7B + LoRA | No disponible | No disponible | No disponible | Hugging Face |
+| Variante TIP-Top10 | Qwen2.5-VL-7B-Instruct | OPSD + TIP-Top10 + ForwardKL + VisionZip | 7B + LoRA | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos, licencias ni contextos en la información proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativos, licencias ni contextos en la
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-B-Mean1Reweight-ForwardKL-gap01-original10240
+- Hugging Face del modelo: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-B-Mean1Reweight-ForwardKL-gap01-original10240
 - Variante official: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-10240
 - Variante TIP-Top10: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-TIP-Top10-ForwardKL-original10240
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct

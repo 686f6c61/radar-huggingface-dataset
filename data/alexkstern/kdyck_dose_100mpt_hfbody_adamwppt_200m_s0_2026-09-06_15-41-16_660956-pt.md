@@ -81,6 +81,6 @@ No se han publicado benchmarks ni caracteristicas de rendimiento de modelos comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_200M_s0_2026-09-06_15-41-16_660956-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_200M_s0_2026-09-06_15-41-16_660956-pt
 - Weights & Biases run: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/rymc81tf
 - Repositorio nanochat: https://github.com/karpathy/nanochat

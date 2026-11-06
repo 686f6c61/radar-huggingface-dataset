@@ -81,7 +81,7 @@ No se dispone de datos cuantitativos de rendimiento para establecer una comparat
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo cuantizado](https://huggingface.co/Atomic-Germ/Ornith-1.0-9B-NPU2)
+- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/Atomic-Germ/Ornith-1.0-9B-NPU2)
 - [Modelo base ornith-ai/Ornith-1.0-9B](https://huggingface.co/ornith-ai/Ornith-1.0-9B)
 - [GitHub de ornith-ai/Ornith-1](https://github.com/ornith-ai/Ornith-1)
 - [Landing page de Ornith 1.0 Model 9B](https://ornith.online/ornith-1-0-model-9b)

@@ -19,7 +19,7 @@ El modelo se publica bajo licencia Apache 2.0, con pipeline declarado como `robo
 | Tipos de cuantizacion | no disponible (solo se publican pesos safetensors; no se documentan GGUF, AWQ, GPTQ ni otras) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (`model.safetensors`) + `config.json`, tokenizer y processor en formato HuggingFace |
+| Formato de pesos | safetensors (`model.safetensors`) + `config.json`, tokenizer y processor en formato Hugging Face |
 | Modelo base | Qwen/Qwen3.5-4B (fine-tuning) |
 | Pipeline declarado | robotics |
 | Formato de salida | Traza de razonamiento en texto + codigos de accion decodificados a `human_action_138_v1` (desplazamiento de raiz en el plano del suelo, altura de pelvis, tasa de guinada, 22 rotaciones articulares 6D parent-local y dos escalares de apertura de mano; sistema diestro y Y-arriba a 20 fps) |
@@ -52,7 +52,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 - Retargeting a distintos robots: al emplear una representacion humanoide compartida en lugar de una especifica de un robot, la misma generacion puede adaptarse a diferentes plataformas, lo que reduce el trabajo por cada nueva encarnacion.
 - Generacion de datos sinteticos de movimiento: la salida a 20 fps con 22 articulaciones puede servir para aumentar datasets de movimiento humanoide en investigacion de robotica y aprendizaje por imitacion.
 - Investigacion en razonamiento text-to-action: al estar la traza de razonamiento y las acciones en el mismo flujo autorregresivo, es posible auditar directamente como interpreta el modelo una instruccion, lo que resulta util para analizar fallos de interpretacion de intencion.
-- Demostraciones interactivas y docencia: el playground de HuggingFace Spaces y el WebUI local con previsualizacion 3D permiten mostrar el ciclo instruccion-razonamiento-accion sin infraestructura compleja.
+- Demostraciones interactivas y docencia: el playground de Hugging Face Spaces y el WebUI local con previsualizacion 3D permiten mostrar el ciclo instruccion-razonamiento-accion sin infraestructura compleja.
 - Servicio interno de generacion de movimiento: el despliegue con `light-deploy-server` y su API HTTP, junto con el modo de host dividido GPU / Control, permite exponer el modelo como servicio dentro de un laboratorio.
 - Integracion en pipelines de investigacion en robotica: la CLI `light-deploy` facilita la generacion por lotes de secuencias de accion a partir de un fichero de prompts para experimentos comparativos.
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Light-O1-Preview | 5,51 B | no disponible | Texto-a-accion humanoide con razonamiento | Apache 2.0 | Pesos safetensors en HuggingFace, repo de inferencia en GitHub |
-| Qwen/Qwen3.5-4B (modelo base) | ~4 B (segun nomenclatura) | no disponible en la informacion proporcionada | Modelo de lenguaje general | no disponible en la informacion proporcionada | HuggingFace |
+| Light-O1-Preview | 5,51 B | no disponible | Texto-a-accion humanoide con razonamiento | Apache 2.0 | Pesos safetensors en Hugging Face, repo de inferencia en GitHub |
+| Qwen/Qwen3.5-4B (modelo base) | ~4 B (segun nomenclatura) | no disponible en la informacion proporcionada | Modelo de lenguaje general | no disponible en la informacion proporcionada | Hugging Face |
 
 No se han identificado en la informacion proporcionada otros modelos comparables de texto-a-accion con datos verificables de parametros, contexto o rendimiento, por lo que la comparativa con alternativas especificas queda como no disponible.
 
@@ -94,9 +94,9 @@ No se han identificado en la informacion proporcionada otros modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LightOriginsHQ/Light-O1-Preview
+- Modelo en Hugging Face: https://huggingface.co/LightOriginsHQ/Light-O1-Preview
 - Repositorio de inferencia y despliegue: https://github.com/lightorigins/Light-O1
-- Playground en HuggingFace Spaces: https://huggingface.co/spaces/LightOriginsHQ/Light-O1-Preview-playground
+- Playground en Hugging Face Spaces: https://huggingface.co/spaces/LightOriginsHQ/Light-O1-Preview-playground
 - Discord de la comunidad: https://discord.gg/zwZuD9JG
 - Grupo de WeChat: codigo QR incluido en la model card (`wechat_group.png`), sin enlace directo
 - Modelo base: Qwen/Qwen3.5-4B

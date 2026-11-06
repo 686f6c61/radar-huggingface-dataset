@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`amandaodoo/regresion-casas-pytorch` es un modelo de regresión tabular publicado en HuggingFace por la usuaria amandaodoo como ejemplo pedagógico del Seminario de Actualización del IFTS N.º 18 (docente: Cynthia M. Villagra). No es un modelo de lenguaje ni una red neuronal profunda: es una regresión lineal implementada con el ciclo explícito de entrenamiento de PyTorch, con una única capa `torch.nn.Linear(3, 1)`, es decir, cuatro parámetros en total (tres pesos y un bias).
+`amandaodoo/regresion-casas-pytorch` es un modelo de regresión tabular publicado en Hugging Face por la usuaria amandaodoo como ejemplo pedagógico del Seminario de Actualización del IFTS N.º 18 (docente: Cynthia M. Villagra). No es un modelo de lenguaje ni una red neuronal profunda: es una regresión lineal implementada con el ciclo explícito de entrenamiento de PyTorch, con una única capa `torch.nn.Linear(3, 1)`, es decir, cuatro parámetros en total (tres pesos y un bias).
 
 El modelo predice el precio de una vivienda en miles de dólares estadounidenses a partir de tres variables de entrada: superficie en metros cuadrados, presencia de balcón y presencia de ascensor. Se entrenó sobre un dataset sintético de 200 registros (160 de entrenamiento y 40 de evaluación) generado en el propio script `train.py`, con la misma semilla que un ejemplo previo de scikit-learn, y alcanza un MAE de 3,08 miles de US$ y un R² de 0,989 sobre el conjunto de evaluación.
 
-Su relevancia es exclusivamente didáctica: ilustra cómo entrenar un modelo con PyTorch, cómo serializar los pesos en formato safetensors (sin ejecución de código al cargar) y cómo publicar un artefacto reproducible en HuggingFace. No debe confundirse con un modelo de propósito general ni utilizarse fuera del contexto educativo para el que fue creado.
+Su relevancia es exclusivamente didáctica: ilustra cómo entrenar un modelo con PyTorch, cómo serializar los pesos en formato safetensors (sin ejecución de código al cargar) y cómo publicar un artefacto reproducible en Hugging Face. No debe confundirse con un modelo de propósito general ni utilizarse fuera del contexto educativo para el que fue creado.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ El entrenamiento es supervisado, con función de pérdida `MSELoss`, optimizador
 - Ejercicio de reproducibilidad: el alumnado puede reentrenar desde cero con `train.py`, la misma semilla y el mismo dataset sintético, y verificar que obtiene los mismos pesos y métricas.
 - Práctica de normalización de features: el modelo obliga a aplicar media y desvío de `config.json` antes de predecir; si se omite, las predicciones son incorrectas, lo que lo convierte en un caso práctico para enseñar por qué la normalización forma parte del artefacto.
 - Comparación PyTorch vs. scikit-learn: el mismo problema y dataset permiten contrastar los coeficientes aprendidos por ambos frameworks (1,503 para `m2` tras desnormalizar) y discutir diferencias de escala y de API.
-- Ejemplo de publicación de artefactos en HuggingFace: ilustra la estructura mínima de un repositorio de modelo (pesos, config, código de clase, scripts de entrenamiento e inferencia, requirements) para quien publique su primer modelo.
+- Ejemplo de publicación de artefactos en Hugging Face: ilustra la estructura mínima de un repositorio de modelo (pesos, config, código de clase, scripts de entrenamiento e inferencia, requirements) para quien publique su primer modelo.
 - Integración en un pipeline de inferencia tabular sencillo: con `predict.py` como referencia, puede incorporarse a un script de scoring de viviendas sintéticas en un entorno de pruebas, siempre con datos dentro del rango 35-120 m².
 
 ## Benchmarks y rendimiento
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `amandaodoo/regresion-casas-pytorch` | 4 | no aplica | Regresión tabular (precio de vivienda) | MIT | HuggingFace, 24 descargas |
-| Ejemplo de regresión lineal de scikit-learn (referencia citada en la model card, Clase 10) | 4 coeficientes | no aplica | Misma tarea y mismo dataset sintético | no disponible | No publicado como modelo en HuggingFace |
+| `amandaodoo/regresion-casas-pytorch` | 4 | no aplica | Regresión tabular (precio de vivienda) | MIT | Hugging Face, 24 descargas |
+| Ejemplo de regresión lineal de scikit-learn (referencia citada en la model card, Clase 10) | 4 coeficientes | no aplica | Misma tarea y mismo dataset sintético | no disponible | No publicado como modelo en Hugging Face |
 | Regresores tabulares genéricos (p. ej. XGBoost, LightGBM) | variable, típicamente miles de nodos de árbol | no aplica | Regresión tabular general | según implementación | Ampliamente disponibles |
 
 No se dispone de datos de benchmarks comparativos publicados entre este modelo y alternativas; la única comparación documentada es la equivalencia de coeficientes con el ejemplo de scikit-learn tras desnormalizar.
@@ -90,5 +90,5 @@ No se dispone de datos de benchmarks comparativos publicados entre este modelo y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amandaodoo/regresion-casas-pytorch
+- Hugging Face: https://huggingface.co/amandaodoo/regresion-casas-pytorch
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

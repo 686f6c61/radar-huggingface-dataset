@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NetGraphFM-1M es un modelo fundacional de grafos de pequeno tamano (1.028.755 parametros) desarrollado por el usuario dharun2049 y publicado en HuggingFace bajo licencia Apache 2.0. No es un modelo de lenguaje: esta disenado especificamente para modelar el estado y el comportamiento de redes de comunicaciones, tomando como entrada grafos de red que combinan topologia, encaminamiento (routing), estado de trafico e informacion a nivel de flujo.
+NetGraphFM-1M es un modelo fundacional de grafos de pequeno tamano (1.028.755 parametros) desarrollado por el usuario dharun2049 y publicado en Hugging Face bajo licencia Apache 2.0. No es un modelo de lenguaje: esta disenado especificamente para modelar el estado y el comportamiento de redes de comunicaciones, tomando como entrada grafos de red que combinan topologia, encaminamiento (routing), estado de trafico e informacion a nivel de flujo.
 
 El objetivo declarado del autor es comprobar si un encoder de grafos muy compacto puede aprender representaciones utiles y transferibles de la estructura y el comportamiento de una red, en lugar de limitarse a una unica tarea supervisada. Para ello se entrena con tres objetivos simultaneos: prediccion de metricas de flujo (retardo, jitter y perdida de paquetes), reconstruccion de estado de nodo enmascarado y reconstruccion de topologia. El encoder combina paso de mensajes local consciente de aristas con atencion global dispersa sobre el grafo.
 
@@ -85,7 +85,7 @@ La model card incluye graficos de comparacion de accuracy y Macro-F1 frente a lo
 
 | Modelo | Parametros | Contexto | Rendimiento few-shot (1-shot / 5-shot) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NetGraphFM-1M | 1.028.755 | no aplica (grafo) | 33,87 / 36,28 accuracy (BZR+Chameleon+Wikipedia) | apache-2.0 | repositorio HuggingFace, pesos no confirmados (0.0 GB) |
+| NetGraphFM-1M | 1.028.755 | no aplica (grafo) | 33,87 / 36,28 accuracy (BZR+Chameleon+Wikipedia) | apache-2.0 | repositorio Hugging Face, pesos no confirmados (0.0 GB) |
 | Otros modelos fundacionales de grafos de GFMBenchmark 2026 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes en la informacion proporcionada para establecer una comparativa cuantitativa con alternativas concretas.
@@ -106,7 +106,7 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dharun2049/netgraphfm-1m
+- Modelo en Hugging Face: https://huggingface.co/dharun2049/netgraphfm-1m
 - Directorio de evaluacion del repositorio: `evaluation/` (ficheros en bruto de la evaluacion en GFMBenchmark 2026, referenciados en la model card)
 - Imagenes incluidas en el repositorio: `assets/01_accuracy_leaderboard.png`, `assets/02_macro_f1_leaderboard.png`, `assets/03_dataset_comparison_1shot.png`, `assets/04_dataset_comparison_5shot.png`, `assets/05_release_card.png`, `assets/06_release_card.png`
 - Paper de referencia: no disponible en la informacion proporcionada

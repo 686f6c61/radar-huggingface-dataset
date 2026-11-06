@@ -61,6 +61,6 @@ No disponible. No hay modelos comparables porque este repositorio no contiene un
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/lomoretti/paper_019365368_grounded_language)
+- [Repositorio en Hugging Face](https://huggingface.co/lomoretti/paper_019365368_grounded_language)
 - [Paper relacionado: Mind's Eye (arXiv)](https://arxiv.org/abs/2210.05359)
 - [PDF del paper Mind's Eye (OpenReview)](https://openreview.net/pdf/0a6dcae7aef4fb3b11746b7175c70cfa12d4c3a3.pdf)

@@ -65,5 +65,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - peachbotAI/agrivision-mobilenetv2-edge-tpu](https://huggingface.co/peachbotAI/agrivision-mobilenetv2-edge-tpu)
+- [Hugging Face - peachbotAI/agrivision-mobilenetv2-edge-tpu](https://huggingface.co/peachbotAI/agrivision-mobilenetv2-edge-tpu)
 - No se han encontrado otros enlaces relevantes (papers, repositorios, demos) específicos de este modelo en la búsqueda web.

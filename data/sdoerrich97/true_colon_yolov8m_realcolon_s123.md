@@ -67,7 +67,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- [HuggingFace - sdoerrich97/true_colon_yolov8m_realcolon_s123](https://huggingface.co/sdoerrich97/true_colon_yolov8m_realcolon_s123)
+- [Hugging Face - sdoerrich97/true_colon_yolov8m_realcolon_s123](https://huggingface.co/sdoerrich97/true_colon_yolov8m_realcolon_s123)
 - [Artículo arXiv - 2608.13711](https://arxiv.org/abs/2608.13711)
 - [Repositorio GitHub - sdoerrich97/true-colon](https://github.com/sdoerrich97/true-colon)
 - [Paquete PyPI - true-colon](https://pypi.org/project/true-colon/)

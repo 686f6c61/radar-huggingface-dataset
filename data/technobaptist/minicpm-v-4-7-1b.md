@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM-V 4.7 1B es un modelo multimodal de tipo image-text-to-text orientado a inferencia en dispositivo (on-device), integrado en la familia MiniCPM-V de OpenBMB. Esta ficha corresponde a la reproduccion alojada por el usuario TechnoBaptist en HuggingFace, cuyo repositorio pesa 3,2 GB y contiene pesos en safetensors con 1.554.476.272 parametros reales (aproximadamente 1,55 mil millones), una cifra superior a la denominacion comercial "1B". El pipeline declarado es image-text-to-text y la licencia es Apache 2.0.
+MiniCPM-V 4.7 1B es un modelo multimodal de tipo image-text-to-text orientado a inferencia en dispositivo (on-device), integrado en la familia MiniCPM-V de OpenBMB. Esta ficha corresponde a la reproduccion alojada por el usuario TechnoBaptist en Hugging Face, cuyo repositorio pesa 3,2 GB y contiene pesos en safetensors con 1.554.476.272 parametros reales (aproximadamente 1,55 mil millones), una cifra superior a la denominacion comercial "1B". El pipeline declarado es image-text-to-text y la licencia es Apache 2.0.
 
 El modelo resuelve el problema de ejecutar comprension de imagen, multiples imagenes y video en hardware con presupuesto de recursos muy limitado: moviles, tablets y placas embebidas. Para ello combina una tecnica de compresion temprana de tokens visuales dentro del propio codificador de vision (intra-ViT early compression, procedente de LLaVA-UHD v4) con soporte de compresion mixta de tokens visuales 4x/16x, de modo que el desarrollador puede intercambiar detalle visual por coste de inferencia segun la tarea.
 
@@ -79,7 +79,7 @@ Las unicas afirmaciones comparativas explicitas de la model card son las siguien
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-V 4.7 1B (esta ficha) | 1,55B reales en safetensors | no disponible | Referencia de la comparativa cualitativa de la model card | apache-2.0 | HuggingFace (repositorio de TechnoBaptist), pesos safetensors |
+| MiniCPM-V 4.7 1B (esta ficha) | 1,55B reales en safetensors | no disponible | Referencia de la comparativa cualitativa de la model card | apache-2.0 | Hugging Face (repositorio de TechnoBaptist), pesos safetensors |
 | Qwen3.5 0.8B | no disponible en la informacion proporcionada | no disponible | Segun la model card, superado por MiniCPM-V 4.7 1B en puntuacion global y eficiencia | no disponible | no disponible |
 | MiniCPM-V 4.6 | no disponible en la informacion proporcionada | no disponible | Predecesor directo; MiniCPM-V 4.7 1B mejora sus capacidades base en modo Instruct | no disponible | no disponible |
 
@@ -99,7 +99,7 @@ No se dispone de datos verificables de contexto, licencia o cifras de benchmarks
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TechnoBaptist/MiniCPM-V-4.7-1B
+- Repositorio en Hugging Face: https://huggingface.co/TechnoBaptist/MiniCPM-V-4.7-1B
 - Documentacion de la serie MiniCPM-V 4.7 (OpenBMB): https://github.com/OpenBMB/MiniCPM-o/blob/main/docs/minicpm_v4dot7_en.md
 - Guia de despliegue y marcos soportados: https://github.com/OpenBMB/MiniCPM-o/blob/main/docs/deployment_en.md
 - Documentacion de API: https://github.com/OpenBMB/MiniCPM-o/blob/main/docs/api.md

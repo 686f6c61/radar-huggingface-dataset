@@ -94,6 +94,6 @@ La busqueda web realizada no devolvio ningun resultado relevante sobre este mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RepublicOfKorokke/gemma-4-E2B-it-qat-q4_0-unquantized-oQ4e-text-fp16
+- Repositorio en Hugging Face: https://huggingface.co/RepublicOfKorokke/gemma-4-E2B-it-qat-q4_0-unquantized-oQ4e-text-fp16
 - Herramienta de cuantizacion citada en la model card, oQ (oMLX): https://github.com/jundot/omlx
 - No se encontraron otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

@@ -22,7 +22,7 @@ Su relevancia actual radica en que permite ejecutar ASR de calidad cercana al es
 
 ## Arquitectura y entrenamiento
 
-La arquitectura parte de Whisper Small, un transformer encoder-decoder disenado para ASR. Qualcomm ha sustituido la Multi-Head Attention por Single-Head Attention y ha reemplazado las capas lineales por capas convolucionales, con el objetivo de que el grafo sea mas eficiente de compilar y ejecutar sobre el NPU Hexagon. Sobre esta estructura se ha aplicado cuantizacion w8a16. La implementacion de referencia corresponde al modulo Whisper de HuggingFace Transformers en su version 4.42.3.
+La arquitectura parte de Whisper Small, un transformer encoder-decoder disenado para ASR. Qualcomm ha sustituido la Multi-Head Attention por Single-Head Attention y ha reemplazado las capas lineales por capas convolucionales, con el objetivo de que el grafo sea mas eficiente de compilar y ejecutar sobre el NPU Hexagon. Sobre esta estructura se ha aplicado cuantizacion w8a16. La implementacion de referencia corresponde al modulo Whisper de Hugging Face Transformers en su version 4.42.3.
 
 No se detalla en la informacion disponible el proceso de entrenamiento ni de calibracion de la cuantizacion: no se indica el numero de tokens de audio empleados, la composicion del dataset, ni si se utilizaron tecnicas de ajuste como RLHF o DPO. Tampoco se especifica si la cuantizacion se realizo con calibracion post-entrenamiento o con fine-tuning consciente de cuantizacion. En cuanto a la decodificacion, la model card define la latencia del encoder como el tiempo hasta el primer token y la latencia del decoder como el tiempo por cada token adicional.
 
@@ -83,7 +83,7 @@ La comparativa se limita a la familia Whisper porque la informacion disponible n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qualcomm/Whisper-Small-Quantized
+- Hugging Face: https://huggingface.co/qualcomm/Whisper-Small-Quantized
 - Repositorio Qualcomm AI Hub Models (whisper_small_quantized): https://github.com/qualcomm/ai-hub-models/blob/v0.64.0/src/qai_hub_models/models/whisper_small_quantized
 - Repositorio Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models
 - Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com

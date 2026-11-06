@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wphillipsman/cnn-transformer-classification es un repositorio de HuggingFace publicado por el usuario Wphillipsman que contiene una implementación funcional de una arquitectura híbrida CNN-Transformer orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: el propio autor indica explícitamente en la model card que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con resultados de benchmark.
+Wphillipsman/cnn-transformer-classification es un repositorio de Hugging Face publicado por el usuario Wphillipsman que contiene una implementación funcional de una arquitectura híbrida CNN-Transformer orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: el propio autor indica explícitamente en la model card que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con resultados de benchmark.
 
 El tamaño real del modelo es extremadamente reducido: 33.088 parámetros totales según los datos de safetensors, lo que lo sitúa muy lejos de cualquier modelo de lenguaje o de visión de gran escala. La model card describe una configuración "base" con atención lineal, fusión tipo Tucker, activación approx gelu y normalización layernorm, además de una receta de entrenamiento por defecto basada en RMSProp con schedule polinómico. El repositorio se centra, según su autor, en código transparente y pruebas repetibles, y omite deliberadamente cualquier afirmación de rendimiento.
 
@@ -32,7 +32,7 @@ Especificaciones adicionales declaradas en la model card:
 | Normalizacion | layernorm |
 | Optimizador por defecto | rmsprop |
 | Schedule por defecto | polynomial |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas | 0 |
 | Likes | 0 |
 | Tamano del repositorio | 0,0 GB |
@@ -92,7 +92,7 @@ La información disponible no incluye comparativas ni resultados que permitan si
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wphillipsman/cnn-transformer-classification | Hibrido CNN-Transformer, atencion lineal, fusion Tucker | 33.088 (dato verificado) | No aplica | BSD-3-Clause | HuggingFace, pesos sin entrenar |
+| Wphillipsman/cnn-transformer-classification | Hibrido CNN-Transformer, atencion lineal, fusion Tucker | 33.088 (dato verificado) | No aplica | BSD-3-Clause | Hugging Face, pesos sin entrenar |
 | ResNet-50 | CNN pura | Aprox. 25,6 M (referencia general) | No aplica | Varía segun implementacion | Amplia, con pesos preentrenados |
 | ViT-Base | Transformer puro de vision | Aprox. 86 M (referencia general) | No aplica | Varía segun implementacion | Amplia, con pesos preentrenados |
 | ConvNeXt-Tiny | CNN moderna | Aprox. 28,6 M (referencia general) | No aplica | Varía segun implementacion | Amplia, con pesos preentrenados |
@@ -108,14 +108,14 @@ La diferencia fundamental no es de rendimiento, sino de estado: las alternativas
 - No se documentan idiomas soportados ni capacidades multilingües.
 - No se documenta longitud de contexto; al ser un clasificador, esta noción no aplica de forma directa.
 - Licencia BSD-3-Clause: permite uso comercial y modificación con conservación del aviso de copyright y exención de responsabilidad, pero debe revisarse por separado la licencia de los datos de origen si se usa con conjuntos externos, tal como advierte la model card.
-- Implementación personalizada: requiere un adaptador explícito para las APIs genéricas de carga automática; no se puede usar como un modelo estándar de HuggingFace sin trabajo adicional.
+- Implementación personalizada: requiere un adaptador explícito para las APIs genéricas de carga automática; no se puede usar como un modelo estándar de Hugging Face sin trabajo adicional.
 - Entorno de producción: no recomendado sin un ciclo completo de entrenamiento, evaluación sobre split etiquetado, múltiples semillas y una línea base de capacidad comparable.
 - Los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto incluidos en este repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Wphillipsman/cnn-transformer-classification
-- Repositorio de código: no disponible (el autor referencia `finetune.py` dentro del propio repositorio de HuggingFace)
+- Hugging Face: https://huggingface.co/Wphillipsman/cnn-transformer-classification
+- Repositorio de código: no disponible (el autor referencia `finetune.py` dentro del propio repositorio de Hugging Face)
 - Paper: no disponible
 - Blog o documentación adicional: no disponible
 - Demo: no disponible

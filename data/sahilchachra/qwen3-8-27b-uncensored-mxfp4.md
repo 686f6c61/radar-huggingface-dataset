@@ -79,7 +79,7 @@ La comparativa se limita a variantes del mismo modelo base; no se dispone de dat
 
 ## Enlaces
 
-- Modelo en HuggingFace (este repo): https://huggingface.co/sahilchachra/Qwen3.8-27B-Uncensored-MXFP4
+- Modelo en Hugging Face (este repo): https://huggingface.co/sahilchachra/Qwen3.8-27B-Uncensored-MXFP4
 - Modelo base uncensored: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Variante MXFP8: https://huggingface.co/sahilchachra/Qwen3.8-27B-Uncensored-MXFP8
 - Variante GGUF Q4_K_M: https://huggingface.co/choz/Qwen3.8-27B-Uncensored-Q4_K_M

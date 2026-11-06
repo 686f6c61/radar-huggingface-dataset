@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`kqkorkmaz38/multimodal-generation-mini` es un repositorio alojado en HuggingFace cuyo contenido real, segun su propia model card, son **notas de investigacion estructuradas sobre generacion multimodal**, no un modelo entrenado ni un checkpoint funcional. El autor lo describe explicitamente como un conjunto de notas exploratorias con referencias de evaluacion y preguntas abiertas, separando planes e hipotesis de resultados completados. La model card afirma que el repositorio "no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado".
+`kqkorkmaz38/multimodal-generation-mini` es un repositorio alojado en Hugging Face cuyo contenido real, segun su propia model card, son **notas de investigacion estructuradas sobre generacion multimodal**, no un modelo entrenado ni un checkpoint funcional. El autor lo describe explicitamente como un conjunto de notas exploratorias con referencias de evaluacion y preguntas abiertas, separando planes e hipotesis de resultados completados. La model card afirma que el repositorio "no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado".
 
-A pesar de ello, la ficha de metadatos de HuggingFace indica presencia de archivos `safetensors` (tag `safetensors`), un pipeline basado en `transformer` y un recuento de 16.576 parametros totales segun los pesos. Esta combinacion resulta contradictoria: o bien el repositorio incluye un artefacto minimo de prueba junto a las notas, o bien los metadatos no reflejan el contenido descrito en la model card. La unica licencia declarada es `cc-by-4.0`.
+A pesar de ello, la ficha de metadatos de Hugging Face indica presencia de archivos `safetensors` (tag `safetensors`), un pipeline basado en `transformer` y un recuento de 16.576 parametros totales segun los pesos. Esta combinacion resulta contradictoria: o bien el repositorio incluye un artefacto minimo de prueba junto a las notas, o bien los metadatos no reflejan el contenido descrito en la model card. La unica licencia declarada es `cc-by-4.0`.
 
 Se trata de un repositorio practicamente sin traccion (15 descargas, 0 likes) y sin documentacion de arquitectura, dataset, entrenamiento ni evaluacion. Cualquier uso en produccion es inviable con la informacion disponible y, muy probablemente, con el propio contenido del repositorio.
 
@@ -43,7 +43,7 @@ El autor indica de forma explicita que el repositorio contiene notas de investig
 - Planificacion de experimentos: los apartados de hipotesis y comparaciones propuestas pueden usarse como guia metodologica preliminar, sin valor probatorio.
 - Reproducibilidad: el documento sugiere que futuros resultados incluyan dataset, comandos, semillas y hardware, lo que puede tomarse como plantilla de buenas practicas.
 - Uso docente o de discusion: puede emplearse como material de debate sobre como separar hipotesis de resultados en investigacion abierta.
-- Auditoria de metadatos: el repositorio es un ejemplo de discrepancia entre tags de HuggingFace (`safetensors`, `transformer`) y contenido declarado (notas), util para ilustrar problemas de trazabilidad en el Hub.
+- Auditoria de metadatos: el repositorio es un ejemplo de discrepancia entre tags de Hugging Face (`safetensors`, `transformer`) y contenido declarado (notas), util para ilustrar problemas de trazabilidad en el Hub.
 
 ## Benchmarks y rendimiento
 
@@ -66,7 +66,7 @@ No disponible. El repositorio no se posiciona como modelo comparable a alternati
 ## Limitaciones y advertencias
 
 - El propio autor declara que el repositorio no contiene un checkpoint entrenado ni codigo publicado; se trata de notas de investigacion.
-- Existe una contradiccion entre los metadatos de HuggingFace (tags `safetensors`, `transformer`, recuento de parametros) y la model card (notas exploratorias sin modelo), lo que impide determinar con certeza que contiene el repositorio.
+- Existe una contradiccion entre los metadatos de Hugging Face (tags `safetensors`, `transformer`, recuento de parametros) y la model card (notas exploratorias sin modelo), lo que impide determinar con certeza que contiene el repositorio.
 - No hay informacion sobre sesgos, dado que no hay modelo documentado ni datos de entrenamiento descritos.
 - No hay evaluacion de alucinacion ni de fidelidad, al no existir modelo funcional contrastado.
 - No se documentan limitaciones de contexto ni cobertura idiomatica.
@@ -76,6 +76,6 @@ No disponible. El repositorio no se posiciona como modelo comparable a alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kqkorkmaz38/multimodal-generation-mini
+- Repositorio en Hugging Face: https://huggingface.co/kqkorkmaz38/multimodal-generation-mini
 - Archivo principal citado en la model card: `analysis.md` (dentro del repositorio)
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

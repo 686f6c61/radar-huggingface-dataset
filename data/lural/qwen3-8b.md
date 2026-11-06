@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lural/Qwen3-8B
+- Repositorio en Hugging Face: https://huggingface.co/Lural/Qwen3-8B
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3-8B
 - Licencia original de Qwen3: https://huggingface.co/Qwen/Qwen3-8B/blob/main/LICENSE
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/

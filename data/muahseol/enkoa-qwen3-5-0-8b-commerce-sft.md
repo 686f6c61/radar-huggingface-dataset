@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| enkoa-qwen3.5-0.8b-commerce-sft | 752 M | no disponible | Apache 2.0 | SFT educativo para comercio en coreano | HuggingFace |
-| Qwen/Qwen3.5-0.8B (modelo base) | ~0,8 B | no disponible | no disponible en la información proporcionada | Modelo generalista | HuggingFace |
+| enkoa-qwen3.5-0.8b-commerce-sft | 752 M | no disponible | Apache 2.0 | SFT educativo para comercio en coreano | Hugging Face |
+| Qwen/Qwen3.5-0.8B (modelo base) | ~0,8 B | no disponible | no disponible en la información proporcionada | Modelo generalista | Hugging Face |
 | Alternativas de ~0,5-1 B para SFT educativo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muahseol/enkoa-qwen3.5-0.8b-commerce-sft
+- Modelo en Hugging Face: https://huggingface.co/muahseol/enkoa-qwen3.5-0.8b-commerce-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

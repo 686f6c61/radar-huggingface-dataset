@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACT OpenArm screw picking (v33a-real) es una política de control robótico basada en la arquitectura ACT (Action Chunking with Transformers) publicada por el usuario pepijn223 en HuggingFace bajo la librería LeRobot. El modelo resuelve una tarea concreta de manipulación bimanual: recoger tornillos y pernos y depositarlos en un contenedor rojo, empleando un robot OpenArm con dos brazos y tres cámaras (cabeza y una por muñeca). No es un modelo de lenguaje: es una política visomotora que mapea observaciones (imágenes RGB y estado de movimiento) a secuencias de acciones articulares.
+ACT OpenArm screw picking (v33a-real) es una política de control robótico basada en la arquitectura ACT (Action Chunking with Transformers) publicada por el usuario pepijn223 en Hugging Face bajo la librería LeRobot. El modelo resuelve una tarea concreta de manipulación bimanual: recoger tornillos y pernos y depositarlos en un contenedor rojo, empleando un robot OpenArm con dos brazos y tres cámaras (cabeza y una por muñeca). No es un modelo de lenguaje: es una política visomotora que mapea observaciones (imágenes RGB y estado de movimiento) a secuencias de acciones articulares.
 
 El checkpoint se entrenó con 152 episodios (61 reales teleoperados y 91 de simulación en Genesis) que suman 143.275 fotogramas, durante 20 épocas y 22.380 pasos con batch de 128 sobre una única GPU H100. El resultado es un modelo de 51,7 millones de parámetros que predice trozos de 32 acciones de 16 dimensiones a 25 Hz.
 
@@ -82,7 +82,7 @@ No disponible. La información proporcionada no incluye datos de otros modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pepijn223/act_openarm_screw_picking_v33a_real
+- Hugging Face: https://huggingface.co/pepijn223/act_openarm_screw_picking_v33a_real
 - LeRobot (librería): https://github.com/huggingface/lerobot
 - Genesis (simulador): https://github.com/Genesis-Embodied-AI/Genesis
 - Resultado de búsqueda web (sin relación con el modelo): https://console.cloud.google.com/launcher/?hl=es

@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/gemma-4-e4b-it-prune_24
+- Modelo en Hugging Face: https://huggingface.co/mrysh/gemma-4-e4b-it-prune_24
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - NVIDIA ModelOpt: no disponible en la información proporcionada
 - SparseGPT (paper): no disponible en la información proporcionada

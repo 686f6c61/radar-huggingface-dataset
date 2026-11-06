@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario asd123dsa12dsa2 en HuggingFace, etiquetado como `transformers`, `pytorch`, `bert` y orientado a extracción de características (`feature-extraction`). Según la model card, se trata de una versión actualizada de un modelo anterior que mejora significativamente su profundidad de razonamiento y capacidades de inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que el modelo muestra un rendimiento destacado en benchmarks de matemáticas, programación y lógica general, acercándose al nivel de otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario asd123dsa12dsa2 en Hugging Face, etiquetado como `transformers`, `pytorch`, `bert` y orientado a extracción de características (`feature-extraction`). Según la model card, se trata de una versión actualizada de un modelo anterior que mejora significativamente su profundidad de razonamiento y capacidades de inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que el modelo muestra un rendimiento destacado en benchmarks de matemáticas, programación y lógica general, acercándose al nivel de otros modelos líderes.
 
 Sin embargo, la información técnica disponible es extremadamente limitada: el repositorio tiene un tamaño de 0.0 GB, no se especifican parámetros, arquitectura concreta, ni datos de entrenamiento. La model card menciona mejoras concretas como una subida en AIME 2025 del 70% al 87,5% de precisión y un aumento en el uso medio de tokens por pregunta (de 12K a 23K), lo que sugiere un modo de razonamiento profundo. También indica soporte para system prompts y una reducción de la tasa de alucinación. No obstante, al carecer de pesos publicados y de especificaciones verificables, cualquier uso práctico del modelo es actualmente inviable.
 
@@ -21,7 +21,7 @@ Sin embargo, la información técnica disponible es extremadamente limitada: el 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura del modelo. Los tags de HuggingFace (`bert`, `transformers`, `pytorch`) sugieren una arquitectura basada en transformer, pero no se confirma el tipo exacto (encoder-only, decoder-only, MoE, etc.). La model card menciona que durante el post-entrenamiento se han introducido "mecanismos de optimización algorítmica" y un mayor uso de recursos computacionales, pero no se especifican los datos de entrenamiento, el número de tokens, ni las técnicas de alineación (RLHF, DPO, etc.). Tampoco se indica si el modelo emplea innovaciones como decodificación especulativa o atención lineal.
+No se dispone de información detallada sobre la arquitectura del modelo. Los tags de Hugging Face (`bert`, `transformers`, `pytorch`) sugieren una arquitectura basada en transformer, pero no se confirma el tipo exacto (encoder-only, decoder-only, MoE, etc.). La model card menciona que durante el post-entrenamiento se han introducido "mecanismos de optimización algorítmica" y un mayor uso de recursos computacionales, pero no se especifican los datos de entrenamiento, el número de tokens, ni las técnicas de alineación (RLHF, DPO, etc.). Tampoco se indica si el modelo emplea innovaciones como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
@@ -85,7 +85,7 @@ No se puede establecer una comparativa fiable con otros modelos porque no se con
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB): no hay pesos, tokenizador, ni código de inferencia disponibles.
+- El repositorio de Hugging Face está vacío (0.0 GB): no hay pesos, tokenizador, ni código de inferencia disponibles.
 - No se especifican parámetros, arquitectura, contexto, idiomas ni datos de entrenamiento.
 - Los benchmarks presentados en la model card son afirmaciones del autor sin verificación independiente ni metodología detallada.
 - No se indica si el modelo puede utilizarse comercialmente más allá de la licencia MIT, pero al no haber pesos no hay nada que usar.
@@ -95,6 +95,6 @@ No se puede establecer una comparativa fiable con otros modelos porque no se con
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/asd123dsa12dsa2/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/asd123dsa12dsa2/MyAwesomeModel-TestRepo
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código, demos) en la información proporcionada.

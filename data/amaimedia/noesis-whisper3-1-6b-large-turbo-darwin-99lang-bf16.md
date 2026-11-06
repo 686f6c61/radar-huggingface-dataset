@@ -91,7 +91,7 @@ La comparativa se basa en las especificaciones conocidas de los modelos base. No
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AMAImedia/NOESIS-Whisper3-1.6B-Large-Turbo-Darwin-99LANG-BF16
+- Repositorio Hugging Face: https://huggingface.co/AMAImedia/NOESIS-Whisper3-1.6B-Large-Turbo-Darwin-99LANG-BF16
 - Modelo relacionado (variante FP16): https://huggingface.co/AMAImedia/Whisper-Large-V3-Turbo-Darwin-NOESIS-FP16
 - Discusiones del modelo relacionado: https://huggingface.co/AMAImedia/Whisper-Large-V3-Turbo-Darwin-NOESIS-FP16/discussions
 - Página de análisis del modelo relacionado: https://free2aitools.com/model/amaimedia/whisper-large-v3-turbo-darwin-noesis-fp16

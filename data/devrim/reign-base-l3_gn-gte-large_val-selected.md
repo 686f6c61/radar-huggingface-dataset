@@ -85,7 +85,7 @@ No se dispone de datos completos de parámetros, contexto o licencia de los mode
 ## Limitaciones y advertencias
 
 - No apto para entradas de un solo chunk (textos cortos): el modelo está diseñado para documentos multi-chunk; para textos cortos debe usarse la red guía (GTE-large) directamente.
-- Solo soporta inglés (etiqueta `en` en HuggingFace).
+- Solo soporta inglés (etiqueta `en` en Hugging Face).
 - No genera texto ni realiza tareas de razonamiento; es exclusivamente un extractor de características (embeddings).
 - Depende de la red guía congelada (GTE-large) para producir los embeddings de chunks; ambos componentes deben cargarse juntos.
 - El entrenamiento con precisión mixta no es bit-reproducible; un reentrenamiento no producirá pesos idénticos.
@@ -94,7 +94,7 @@ No se dispone de datos completos de parámetros, contexto o licencia de los mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devrim/reign-base-l3_gn-gte-large_val-selected
+- Modelo en Hugging Face: https://huggingface.co/devrim/reign-base-l3_gn-gte-large_val-selected
 - Código (repositorio GitHub): https://github.com/devrimcavusoglu/reign.git
 - Dataset de entrenamiento: https://huggingface.co/datasets/devrim/goodwiki_long_synthetic_ir
 - Red guía (GTE-large): https://huggingface.co/thenlper/gte-large

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JimWong8899/faster-whisper-medium` es una conversion del modelo `openai/whisper-medium` al formato de CTranslate2, publicada por el usuario JimWong8899 en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un artefacto de despliegue optimizado para inferencia de reconocimiento automatico del habla (ASR) con la libreria faster-whisper, que envuelve el motor CTranslate2. El repositorio ocupa 1,5 GB y contiene los pesos en FP16 junto con el tokenizer.
+`JimWong8899/faster-whisper-medium` es una conversion del modelo `openai/whisper-medium` al formato de CTranslate2, publicada por el usuario JimWong8899 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un artefacto de despliegue optimizado para inferencia de reconocimiento automatico del habla (ASR) con la libreria faster-whisper, que envuelve el motor CTranslate2. El repositorio ocupa 1,5 GB y contiene los pesos en FP16 junto con el tokenizer.
 
 El modelo subyacente, Whisper medium de OpenAI, es un transformer encoder-decoder entrenado para transcripcion y traduccion de voz, con capacidad declarada para mas de 90 idiomas y tareas de deteccion de idioma, transcripcion y traduccion al ingles. La version CTranslate2 mantiene la misma arquitectura y pesos, pero reorganiza el grafo computacional para aprovechar kernels optimizados, cuantizacion y ejecucion en CPU/GPU con menor latencia que la implementacion original en PyTorch.
 
@@ -83,7 +83,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que la informacio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JimWong8899/faster-whisper-medium
+- Repositorio en Hugging Face: https://huggingface.co/JimWong8899/faster-whisper-medium
 - Modelo original: https://huggingface.co/openai/whisper-medium
 - CTranslate2: https://github.com/OpenNMT/CTranslate2
 - Documentacion de cuantizacion de CTranslate2: https://opennmt.net/CTranslate2/quantization.html

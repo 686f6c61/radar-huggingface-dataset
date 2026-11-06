@@ -76,9 +76,9 @@ El autor advierte explícitamente que estos números son muestreos a temperatura
 
 | Modelo | Parámetros | Contexto | Capacidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FinchAI-Rune1-Preview-v2 | 1,55 B (7,47 M entrenables) | 256K nominal, ~1K entrenado | Texto + visión + tool calling XML | Apache 2.0 | HuggingFace, safetensors bf16 |
-| MiniCPM-V 4.7-1B (base) | 1,55 B | 256K | Texto + visión + tool calling | No disponible en la información | HuggingFace |
-| FinchAI-Rune1-Preview v1 | 1,55 B | 256K nominal | Texto + visión + tool calling | Apache 2.0 | HuggingFace |
+| FinchAI-Rune1-Preview-v2 | 1,55 B (7,47 M entrenables) | 256K nominal, ~1K entrenado | Texto + visión + tool calling XML | Apache 2.0 | Hugging Face, safetensors bf16 |
+| MiniCPM-V 4.7-1B (base) | 1,55 B | 256K | Texto + visión + tool calling | No disponible en la información | Hugging Face |
+| FinchAI-Rune1-Preview v1 | 1,55 B | 256K nominal | Texto + visión + tool calling | Apache 2.0 | Hugging Face |
 
 La comparación con alternativas de otros desarrolladores del mismo segmento (modelos multimodales de 1-2 B con soporte de tool calling) no está disponible en la información proporcionada.
 
@@ -97,7 +97,7 @@ La comparación con alternativas de otros desarrolladores del mismo segmento (mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/whcl412/FinchAI-Rune1-Preview-v2-f16
+- Modelo en Hugging Face: https://huggingface.co/whcl412/FinchAI-Rune1-Preview-v2-f16
 - Versión anterior (v1): https://huggingface.co/whcl412/FinchAI-Rune1-Preview-f16
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
 - Repositorio con scripts de entrenamiento y generadores de datos: https://github.com/hwc-cell/FinchAI-Rune1-Preview

@@ -83,7 +83,7 @@ En la informacion disponible no se identifican modelos comparables ni se aportan
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/kaiwolfe132/Cydonia-24B-v4.1-Q4_K_M-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/kaiwolfe132/Cydonia-24B-v4.1-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/TheDrummer/Cydonia-24B-v4.1
 - Espacio GGUF-my-repo (herramienta de conversion): https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

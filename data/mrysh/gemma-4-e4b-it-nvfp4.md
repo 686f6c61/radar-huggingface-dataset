@@ -78,5 +78,5 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mrysh/gemma-4-e4b-it-nvfp4
+- Hugging Face: https://huggingface.co/mrysh/gemma-4-e4b-it-nvfp4
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it

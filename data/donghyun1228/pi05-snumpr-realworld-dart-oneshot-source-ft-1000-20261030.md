@@ -2,7 +2,7 @@
 
 ## Resumen
 
-π0.5 SNUMPR real-world DART one-shot source es un ajuste fino (fine-tune) de un modelo de visión-lenguaje-acción (VLA) orientado a robótica, publicado por el usuario Donghyun1228 en HuggingFace. Se trata de un checkpoint derivado de la familia π0.5 (openpi) que parte de una inicialización SNUMPR previa y se entrena con aprendizaje por imitación (IL) sobre un conjunto reducido de cinco demostraciones reales, con el objetivo de servir como línea base (baseline) para el método DART en escenarios de adaptación one-shot.
+π0.5 SNUMPR real-world DART one-shot source es un ajuste fino (fine-tune) de un modelo de visión-lenguaje-acción (VLA) orientado a robótica, publicado por el usuario Donghyun1228 en Hugging Face. Se trata de un checkpoint derivado de la familia π0.5 (openpi) que parte de una inicialización SNUMPR previa y se entrena con aprendizaje por imitación (IL) sobre un conjunto reducido de cinco demostraciones reales, con el objetivo de servir como línea base (baseline) para el método DART en escenarios de adaptación one-shot.
 
 El modelo no es un LLM conversacional, sino una política robótica: recibe observaciones visuales y de estado del robot y produce acciones motoras. Su relevancia es metodológica más que de producto: documenta un protocolo reproducible de fine-tune one-shot (1.000 actualizaciones, batch global 64, 2×H100 con FSDP, AdamW con clip 1.0 y LR constante 5e-5) siguiendo la receta oficial `pi05_libero_oneshotft` del repositorio `snumprlab/dart`.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR DART one-shot (este) | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| π0.5 SNUMPR DART one-shot (este) | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | π0.5 base (openpi) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | SNUMPR VLA (`snumpr-iclr27-v1/9999`) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,7 +81,7 @@ No se dispone de datos comparativos de rendimiento en la información proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-source-ft-1000-20261030
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-source-ft-1000-20261030
 - Dataset de entrenamiento: https://huggingface.co/datasets/Donghyun1228/snumpr-realworld-dart-oneshot-source-20261030
 - Repositorio de código del preset: https://github.com/Donghyun1228/vla_adaptation (commit `1de48ef`)
 - Receta oficial DART: https://github.com/snumprlab/dart (commit `1b23c4f`, preset `pi05_libero_oneshotft`)

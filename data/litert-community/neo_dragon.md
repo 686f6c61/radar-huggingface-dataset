@@ -85,12 +85,12 @@ No se dispone de información suficiente en los datos proporcionados para establ
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/litert-community/Neo_Dragon
-- Repositorio HuggingFace del modelo original: https://huggingface.co/Qualcomm-AI-Research/Neodragon
+- Repositorio Hugging Face de la conversión: https://huggingface.co/litert-community/Neo_Dragon
+- Repositorio Hugging Face del modelo original: https://huggingface.co/Qualcomm-AI-Research/Neodragon
 - Pagina del proyecto Neodragon (paper e investigacion): https://qualcomm-ai-research.github.io/neodragon/
 - Aplicacion Box (implementacion de referencia): https://github.com/jegly/Box
 - LiteRT (runtime, sucesor de TensorFlow Lite): https://github.com/google-ai-edge/litert
 - Ejemplos y recetas de LiteRT: https://github.com/google-ai-edge/litert-samples
-- Comunidad LiteRT en HuggingFace: https://huggingface.co/litert-community
+- Comunidad LiteRT en Hugging Face: https://huggingface.co/litert-community
 - Licencia BSD 3-Clause Clear: https://spdx.org/licenses/BSD-3-Clause-Clear.html
 - Qualcomm Responsible AI License: https://www.qualcomm.com/site/responsible-ai-license

@@ -22,7 +22,7 @@ El artefacto es relevante ahora porque documenta un fallo de alineación con con
 | Formato de pesos | no disponible; el repositorio no publica pesos, solo el enunciado de la evaluacion y sus resultados |
 | Tipo de artefacto | conjunto de evaluacion mas informe de resultados (12 escenarios, 3 categorias) |
 | Modelo evaluado | Qwen/Qwen2.5-3B-Instruct |
-| Descargas / likes en HuggingFace | 0 descargas, 0 likes |
+| Descargas / likes en Hugging Face | 0 descargas, 0 likes |
 | Fecha de creacion / actualizacion | 17 de septiembre de 2026 / 17 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
@@ -97,11 +97,11 @@ El repositorio no incluye una comparativa entre modelos: evalua una unica config
 - Advertencia de uso: el contenido trata materia penal y financiera real. Nada de lo aqui recogido constituye asesoramiento juridico; un error de clasificacion en este ambito puede derivar en consecuencias penales para la persona que lo siga.
 - Ausencia de licencia declarada: no se especifican condiciones de reutilizacion, lo que en la practica impide confirmar si el material puede usarse comercialmente.
 - Idioma: la interfaz del repositorio y sus etiquetas estan en ingles; los escenarios, en arabe e ingles. No hay version en castellano.
-- Atribucion temporal dudosa: las fechas de creacion y actualizacion que figuran en HuggingFace (septiembre de 2026) son posteriores a la fecha de consulta habitual de este tipo de fichas; se reproducen tal cual aparecen.
+- Atribucion temporal dudosa: las fechas de creacion y actualizacion que figuran en Hugging Face (septiembre de 2026) son posteriores a la fecha de consulta habitual de este tipo de fichas; se reproducen tal cual aparecen.
 - Resultados de busqueda no pertinentes: las consultas web asociadas devolvieron exclusivamente paginas de seguimiento de paquetes de UPS, sin ninguna relacion con el repositorio. No se ha podido verificar informacion externa adicional.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mohamed-Yossri/egyptian-informal-institutions-eval
+- Repositorio en Hugging Face: https://huggingface.co/Mohamed-Yossri/egyptian-informal-institutions-eval
 - Modelo evaluado: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - No se han encontrado en la busqueda web articulos, papers, blogs, repositorios ni demos relacionados con este artefacto. Los unicos resultados devueltos corresponden a paginas de seguimiento de envios de UPS y no guardan relacion con el contenido.

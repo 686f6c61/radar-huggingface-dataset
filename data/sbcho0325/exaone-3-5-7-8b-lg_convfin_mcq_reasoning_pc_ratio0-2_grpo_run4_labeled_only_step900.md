@@ -97,7 +97,7 @@ No se dispone de datos que permitan afirmar que este adaptador supere al modelo 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_reasoning_pc_ratio0.2_grpo_run4_labeled_only_step900
+- Adaptador en Hugging Face: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_reasoning_pc_ratio0.2_grpo_run4_labeled_only_step900
 - LoRA de SFT previo (checkpoint-340): https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_reasoning_pc_ratio0.2
 - Modelo base: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Dataset ConvFinQA: no disponible en la informacion proporcionada

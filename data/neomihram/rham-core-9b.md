@@ -4,7 +4,7 @@
 
 RHAM-CORE-9B es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario NeoMihRam sobre el modelo base `unsloth/gemma-2-9b-it-bnb-4bit`, es decir, una versión cuantizada a 4 bits de Gemma 2 9B instructiva. El repositorio contiene únicamente los pesos del adaptador en formato safetensors (3,3 GB), no los pesos completos del modelo. Está diseñado para la generación de texto conversacional, como indica su pipeline `text-generation` y las etiquetas `conversational`, `sft` y `trl`.
 
-El modelo se presenta como una evolución de una serie de experimentos del mismo autor (RHAM_ID, RHAM_ID_DeepForge), orientados a la fusión de técnicas de fine-tuning con Gemma 2. Sin embargo, la documentación es prácticamente inexistente: no se especifican datos de entrenamiento, hiperparámetros, ni resultados de evaluación. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. Su relevancia actual es limitada debido a la falta de información pública y a que se basa en un modelo ya conocido, aunque puede interesar a quienes exploran adaptadores LoRA sobre Gemma 2.
+El modelo se presenta como una evolución de una serie de experimentos del mismo autor (RHAM_ID, RHAM_ID_DeepForge), orientados a la fusión de técnicas de fine-tuning con Gemma 2. Sin embargo, la documentación es prácticamente inexistente: no se especifican datos de entrenamiento, hiperparámetros, ni resultados de evaluación. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. Su relevancia actual es limitada debido a la falta de información pública y a que se basa en un modelo ya conocido, aunque puede interesar a quienes exploran adaptadores LoRA sobre Gemma 2.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - Al ser un adaptador LoRA, se necesita cargar el modelo base Gemma 2 9B cuantizado a 4 bits (unos 5-6 GB de VRAM) más el adaptador (3,3 GB en disco, pero en memoria ocupa menos). En total, se estima que se requieren entre 8 y 10 GB de VRAM para inferencia en FP16, o menos si se usa cuantización adicional.
 - GPU recomendadas: tarjetas con al menos 8 GB de VRAM, como RTX 3060/3070/4060, o GPUs de datacenter como A10G o L4. Para mayor comodidad, una RTX 4090 (24 GB) o A100 (40/80 GB) permiten ejecutar el modelo con margen.
 - Sí cabe en GPUs de consumo, siempre que tengan al menos 8 GB de VRAM.
-- Opciones de despliegue: se puede usar con la librería `peft` de HuggingFace, cargando el adaptador sobre el modelo base. También es compatible con `transformers` y `vLLM` (si se convierte a un formato unificado), o con `llama.cpp` si se fusiona el adaptador con el modelo base y se convierte a GGUF.
+- Opciones de despliegue: se puede usar con la librería `peft` de Hugging Face, cargando el adaptador sobre el modelo base. También es compatible con `transformers` y `vLLM` (si se convierte a un formato unificado), o con `llama.cpp` si se fusiona el adaptador con el modelo base y se convierte a GGUF.
 - Latencia y throughput: no se han publicado mediciones. Dependerá del hardware y de la implementación; en una RTX 4090 se puede esperar una generación de 20-40 tokens por segundo con Gemma 2 9B cuantizado, pero no hay datos específicos para este adaptador.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se puede afirmar que este adaptador supere o iguale al modelo base en ninguna
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NeoMihRam/RHAM-CORE-9B
+- Repositorio Hugging Face: https://huggingface.co/NeoMihRam/RHAM-CORE-9B
 - Modelo base: https://huggingface.co/unsloth/gemma-2-9b-it-bnb-4bit
 - Otros modelos del autor: https://huggingface.co/NeoMihRam/RHAM_ID y https://huggingface.co/NeoMihRam/RHAM_ID_DeepForge_V1_1
 - Referencia a la técnica LoRA (paper): https://arxiv.org/abs/1910.09700 (citado en las etiquetas)

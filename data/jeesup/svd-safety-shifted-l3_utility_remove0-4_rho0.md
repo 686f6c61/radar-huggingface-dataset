@@ -83,7 +83,7 @@ La comparación con alternativas de la misma categoría (checkpoints de investig
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l3_utility_remove0.4_rho0
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l3_utility_remove0.4_rho0
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Llama 3: https://llama.meta.com/llama3/license/
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

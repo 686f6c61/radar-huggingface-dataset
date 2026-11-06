@@ -82,9 +82,9 @@ Resultados declarados por el autor en la model-index de la model card (no verifi
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kniv-v7-deberta-v3-large-en | 538M | 512 subwords | Encoder multi-tarea (linguistica + extraccion de conocimiento) | Apache-2.0 | HuggingFace (ONNX) |
-| kniv-v7-ultrabert-380m-en | 380M | no disponible | Mismo diseno, menor tamano; el autor lo presenta como alternativa con parsing, NER, roles semanticos y relaciones enciclopedicas ligeramente inferiores | no disponible | HuggingFace |
-| microsoft/deberta-v3-large | 435M | 512 subwords | Encoder base de proposito general, sin cabezas multi-tarea | MIT | HuggingFace |
+| kniv-v7-deberta-v3-large-en | 538M | 512 subwords | Encoder multi-tarea (linguistica + extraccion de conocimiento) | Apache-2.0 | Hugging Face (ONNX) |
+| kniv-v7-ultrabert-380m-en | 380M | no disponible | Mismo diseno, menor tamano; el autor lo presenta como alternativa con parsing, NER, roles semanticos y relaciones enciclopedicas ligeramente inferiores | no disponible | Hugging Face |
+| microsoft/deberta-v3-large | 435M | 512 subwords | Encoder base de proposito general, sin cabezas multi-tarea | MIT | Hugging Face |
 
 La comparativa con modelos especializados por tarea (por ejemplo, un NER dedicado o un parser de dependencias) no esta disponible en la informacion proporcionada.
 
@@ -103,7 +103,7 @@ La comparativa con modelos especializados por tarea (por ejemplo, un NER dedicad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dragonscale-ai/kniv-v7-deberta-v3-large-en
+- Modelo en Hugging Face: https://huggingface.co/dragonscale-ai/kniv-v7-deberta-v3-large-en
 - Modelo hermano: https://huggingface.co/dragonscale-ai/kniv-v7-ultrabert-380m-en
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-large
 - Organizacion: https://huggingface.co/dragonscale-ai

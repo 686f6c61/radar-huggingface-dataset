@@ -4,7 +4,7 @@
 
 Apollo-VL-Edge-3B es un modelo vision-language (VLM) de 3.754 millones de parámetros desarrollado por Pluto-AI-Labs, un laboratorio independiente que se define como "single founder-engineer" y que busca construir infraestructura de IA open source centrada en modelos eficientes para edge. El modelo está publicado en formato MLX de 8 bits, lo que lo hace especialmente adecuado para dispositivos Apple Silicon. Según la información disponible, se trata de un fine-tuning de un modelo base de la familia Qwen2.5-VL (el tag `qwen2_5_vl` así lo indica), entrenado con un dataset propio llamado Apollo-VL-Massive, con aproximadamente 162.000 muestras multimodales.
 
-El modelo está orientado a tareas de imagen-a-texto y texto-a-texto, con un pipeline de `image-text-to-text`. Aunque la model card original es extremadamente escueta (solo indica idioma inglés y librería MLX), la presencia en el filtro de OCR de HuggingFace sugiere un énfasis en reconocimiento óptico de caracteres y comprensión de documentos. Su tamaño compacto (3B) y su cuantización de 8 bits lo posicionan como una opción viable para despliegue en entornos con recursos limitados, como portátiles o dispositivos edge.
+El modelo está orientado a tareas de imagen-a-texto y texto-a-texto, con un pipeline de `image-text-to-text`. Aunque la model card original es extremadamente escueta (solo indica idioma inglés y librería MLX), la presencia en el filtro de OCR de Hugging Face sugiere un énfasis en reconocimiento óptico de caracteres y comprensión de documentos. Su tamaño compacto (3B) y su cuantización de 8 bits lo posicionan como una opción viable para despliegue en entornos con recursos limitados, como portátiles o dispositivos edge.
 
 ## Especificaciones técnicas
 
@@ -27,7 +27,7 @@ La arquitectura exacta no está documentada en la model card. Sin embargo, el ta
 
 - Generación de texto a partir de imágenes (image captioning, descripción de escenas).
 - Comprensión de imágenes y respuesta a preguntas visuales (VQA).
-- Reconocimiento óptico de caracteres (OCR), según su aparición en el filtro de OCR de HuggingFace.
+- Reconocimiento óptico de caracteres (OCR), según su aparición en el filtro de OCR de Hugging Face.
 - Conversación multimodal (entrada de imagen + texto, salida de texto).
 - Soporte de contexto en inglés únicamente.
 - No se dispone de información sobre tool calling, function calling, razonamiento multi-paso o capacidades de agente.
@@ -69,7 +69,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Pluto-AI-Labs/Apollo-VL-Edge-3B-MLX-8bit
+- Hugging Face: https://huggingface.co/Pluto-AI-Labs/Apollo-VL-Edge-3B-MLX-8bit
 - LLM Explorer: https://llm-explorer.com/model/Pluto-AI-Labs%2FApollo-VL-Edge-3B,3L5mtC3hkpxLl4GyPd7riU
 - GitHub de Pluto-AI-Labs: https://github.com/Pluto-AI-Labs
 - Perfil de GitHub de la organización: https://github.com/Pluto-AI-Labs/.github

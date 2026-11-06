@@ -115,7 +115,7 @@ El autor advierte que los conjuntos de la mezcla pública definen NSFW de forma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/v0l/route96-nsfw-vit224
+- Modelo en Hugging Face: https://huggingface.co/v0l/route96-nsfw-vit224
 - Modelo base: https://huggingface.co/Falconsai/nsfw_image_detection
 - Scripts de entrenamiento y evaluación: https://github.com/v0l/route96/tree/main/training
 - Modelo comparado nostrbuild/nsfw-image-detection-large: https://huggingface.co/nostrbuild/nsfw-image-detection-large

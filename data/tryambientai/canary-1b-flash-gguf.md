@@ -101,7 +101,7 @@ La alternativa directa es el modelo base de NVIDIA, con las mismas capacidades y
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/tryambientai/canary-1b-flash-gguf
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/tryambientai/canary-1b-flash-gguf
 - Modelo base: https://huggingface.co/nvidia/canary-1b-flash
 - Commit del modelo base usado: https://huggingface.co/nvidia/canary-1b-flash/commit/a9a55e0
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

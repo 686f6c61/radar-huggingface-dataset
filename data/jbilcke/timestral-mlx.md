@@ -115,7 +115,7 @@ No se dispone en la información proporcionada de datos de arquitectura, context
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jbilcke/timestral-mlx
+- Modelo en Hugging Face: https://huggingface.co/jbilcke/timestral-mlx
 - Licencia de pesos: https://huggingface.co/jbilcke/timestral-mlx/blob/main/LICENSE-WEIGHTS
 - Repositorio oficial de Mistral Timestral: https://github.com/mistralai/timestral
 - Modelo base Timestral-5M: https://huggingface.co/mistralai/Timestral-5M

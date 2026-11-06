@@ -59,6 +59,6 @@ No disponible. No se han proporcionado modelos comparables ni datos de rendimien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mendelg/yiddish-csm-lora-2c60b4a0
+- Hugging Face: https://huggingface.co/mendelg/yiddish-csm-lora-2c60b4a0
 - Unsloth (mencionado en el README): https://github.com/unslothai/unsloth
 - Paper relacionado con modelos en yiddish (referencia externa, no sobre este modelo): https://www.opentrain.ai/papers/mameloshnlm-yiddish-language-model-and-evaluation-benchmark--arxiv-2608.05850/

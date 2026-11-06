@@ -4,7 +4,7 @@
 
 DeepSeek-V4-Pro-0813 es, segun la model card del repositorio, la version oficial de DeepSeek-V4-Pro que sustituye a la version preliminar (Preview). Se presenta como una revision centrada en capacidades agenticas y en mejoras de rendimiento especialmente visibles en entornos de produccion. Sobre la estructura del modelo Preview se anade un modulo de decodificacion especulativa denominado DSpark.
 
-El repositorio de HuggingFace analizado esta publicado por el usuario T-K-C, no por la organizacion oficial deepseek-ai, aunque la model card incluye ejemplos de codigo que invocan el identificador `deepseek-ai/DeepSeek-V4-Pro-0813`. El modelo cuenta con 1.650.497.936.906 parametros totales (aproximadamente 1,65 billones) segun los metadatos de safetensors, y el repositorio ocupa 892,8 GB. Se distribuye bajo licencia MIT y libreria transformers.
+El repositorio de Hugging Face analizado esta publicado por el usuario T-K-C, no por la organizacion oficial deepseek-ai, aunque la model card incluye ejemplos de codigo que invocan el identificador `deepseek-ai/DeepSeek-V4-Pro-0813`. El modelo cuenta con 1.650.497.936.906 parametros totales (aproximadamente 1,65 billones) segun los metadatos de safetensors, y el repositorio ocupa 892,8 GB. Se distribuye bajo licencia MIT y libreria transformers.
 
 La relevancia de esta ficha esta acotada por la informacion disponible: el repositorio registra 0 descargas y 0 "likes", no declara idiomas soportados, no publica la longitud de contexto ni el numero de parametros activos, y la busqueda web realizada no ha devuelto ninguna fuente relevante sobre el modelo (los resultados obtenidos corresponden a zonas administrativas de Qatar y no guardan relacion).
 
@@ -80,7 +80,7 @@ Notas de la model card: las tareas de agente de codigo se evaluaron con el modo 
 
 | Modelo | Parametros totales | Parametros activos | Licencia | Disponibilidad | HLE (sin/con herramientas) | Terminal Bench 2.1 | DeepSWE |
 |---|---|---|---|---|---|---|---|
-| DeepSeek-V4-Pro-0813 | 1,65 B (dato safetensors) | no disponible | MIT | Repositorio T-K-C en HuggingFace, 0 descargas | 42,7 / 60,0 | 87,9 | 62,7 |
+| DeepSeek-V4-Pro-0813 | 1,65 B (dato safetensors) | no disponible | MIT | Repositorio T-K-C en Hugging Face, 0 descargas | 42,7 / 60,0 | 87,9 | 62,7 |
 | DeepSeek-V4-Flash-0731 | no disponible | no disponible | no disponible | no disponible | 37,8 / 51,5 | 82,7 | 54,4 |
 | DeepSeek-V4-Pro (Preview) | no disponible | no disponible | no disponible | no disponible | 37,7 / 48,2 | 72,1 | 12,8 |
 | GLM-5.2 | no disponible | no disponible | no disponible | no disponible | 40,5 / 54,7 | 81,0 | 46,2 |
@@ -105,11 +105,11 @@ Solo se dispone de datos de rendimiento de los modelos comparados; no hay inform
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/T-K-C/DeepSeek-V4-Pro-0813
+- Repositorio en Hugging Face: https://huggingface.co/T-K-C/DeepSeek-V4-Pro-0813
 - Informe tecnico (referenciado en la model card): https://arxiv.org/abs/2606.19348
 - Pagina de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek V4: https://chat.deepseek.com/
-- Organizacion DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Cuenta de X/Twitter de DeepSeek: https://twitter.com/deepseek_ai
 - Receta de vLLM para DeepSeek-V4-Pro: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Pro
 - Carpeta `encoding` del repositorio (scripts de codificacion y parseo de mensajes): disponible dentro del propio repositorio, sin URL absoluta en la informacion proporcionada.

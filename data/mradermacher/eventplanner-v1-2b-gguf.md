@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/EventPlanner-v1-2B-GGUF | 1,94 mil millones | no disponible | no disponible | no disponible | GGUF en HuggingFace |
-| theprint/EventPlanner-v1-2B | no disponible | no disponible | no disponible | no disponible | modelo base en HuggingFace |
-| mradermacher/ProgramManager-v1-2B-GGUF | no disponible | no disponible | no disponible | no disponible | GGUF en HuggingFace |
+| mradermacher/EventPlanner-v1-2B-GGUF | 1,94 mil millones | no disponible | no disponible | no disponible | GGUF en Hugging Face |
+| theprint/EventPlanner-v1-2B | no disponible | no disponible | no disponible | no disponible | modelo base en Hugging Face |
+| mradermacher/ProgramManager-v1-2B-GGUF | no disponible | no disponible | no disponible | no disponible | GGUF en Hugging Face |
 
 No se dispone de datos de rendimiento, contexto o licencia de los modelos comparados en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa. El unico modelo directamente relacionado es el base theprint/EventPlanner-v1-2B, del que este repositorio es una cuantizacion sin cambios funcionales.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento, contexto o licencia de los modelos compar
 - Es un modelo de nicho orientado a planificacion de eventos y en ingles; extrapolarlo a tareas generales de razonamiento o codigo probablemente ofrezca resultados pobres.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/EventPlanner-v1-2B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/EventPlanner-v1-2B-GGUF
 - Modelo base: https://huggingface.co/theprint/EventPlanner-v1-2B
 - Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/EventPlanner-v1-2B-i1-GGUF
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#EventPlanner-v1-2B-GGUF

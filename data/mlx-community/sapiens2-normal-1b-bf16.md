@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/sapiens2-normal-1b-bf16
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/sapiens2-normal-1b-bf16
 - Modelo base: https://huggingface.co/facebook/sapiens2-normal-1b
 - Licencia Sapiens2: https://github.com/facebookresearch/sapiens2/blob/main/LICENSE.md
 - Organizacion mlx-community: https://huggingface.co/mlx-community

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LESA-FLUX-cache-research-artifacts no es un modelo generativo nuevo, sino un repositorio de artefactos de investigación reproducible publicados por el usuario LamTNguyen en HuggingFace. Contiene checkpoints entrenados, una caché de características de profesor (teacher) de 100x50, manifiestos de prompts y semillas, planificaciones de solver, registros de ejecución, imágenes y métricas de los conjuntos DB50 y DB200, resultados de HPSv2.1, hojas cualitativas y ejecuciones invalidadas conservadas en carpetas de procedencia con nombres explícitos. El material sirve de soporte a dos campañas concretas: una campaña de inferencia sin calentamiento (zero-warmup) sobre FLUX.1-dev en A100 y una reproducción emparejada por datos de LearniBridge-100.
+LESA-FLUX-cache-research-artifacts no es un modelo generativo nuevo, sino un repositorio de artefactos de investigación reproducible publicados por el usuario LamTNguyen en Hugging Face. Contiene checkpoints entrenados, una caché de características de profesor (teacher) de 100x50, manifiestos de prompts y semillas, planificaciones de solver, registros de ejecución, imágenes y métricas de los conjuntos DB50 y DB200, resultados de HPSv2.1, hojas cualitativas y ejecuciones invalidadas conservadas en carpetas de procedencia con nombres explícitos. El material sirve de soporte a dos campañas concretas: una campaña de inferencia sin calentamiento (zero-warmup) sobre FLUX.1-dev en A100 y una reproducción emparejada por datos de LearniBridge-100.
 
 El interés del repositorio es metodológico: documenta cómo reutilizar cachés de características para acelerar la inferencia de un modelo de difusión basado en FLUX.1-dev sin calentamiento previo. Todas las filas de comparación válidas emplean inferencia zero-warmup, con el backbone completo en los pasos `0, N, 2N, ...` y reutilización de caché a partir del paso 1 del solver. Esta convención es relevante porque permite comparar métodos de caching en condiciones homogéneas.
 
@@ -86,8 +86,8 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 | Elemento | Tipo | Pesos incluidos | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LESA-FLUX-cache-research-artifacts | conjunto de artefactos de investigación (checkpoints, cachés, métricas) | checkpoints del método y caché; no los pesos base | other | HuggingFace |
-| FLUX.1-dev | modelo de generación de imágenes (modelo base) | sí, en su propio repositorio | la de `black-forest-labs/FLUX.1-dev` | HuggingFace, por separado |
+| LESA-FLUX-cache-research-artifacts | conjunto de artefactos de investigación (checkpoints, cachés, métricas) | checkpoints del método y caché; no los pesos base | other | Hugging Face |
+| FLUX.1-dev | modelo de generación de imágenes (modelo base) | sí, en su propio repositorio | la de `black-forest-labs/FLUX.1-dev` | Hugging Face, por separado |
 
 ## Limitaciones y advertencias
 
@@ -105,7 +105,7 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LamTNguyen/LESA-FLUX-cache-research-artifacts
+- Repositorio en Hugging Face: https://huggingface.co/LamTNguyen/LESA-FLUX-cache-research-artifacts
 - Modelo base FLUX.1-dev (pesos no redistribuidos aquí): https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Manifiesto de artefactos con revisión y SHA256: `ARTIFACT_MANIFEST.json` (en la raíz del repositorio)
 - Resultados de la campaña A100 zero-warmup: `campaigns/a100_zero_warmup/results/metrics/summary.json`

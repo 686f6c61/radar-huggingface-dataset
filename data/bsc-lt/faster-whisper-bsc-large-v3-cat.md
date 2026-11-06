@@ -24,7 +24,7 @@ La limitación de diseño más importante está declarada por el propio autor: e
 | Pipeline | automatic-speech-recognition |
 | Datos de ajuste fino | projecte-aina/3catparla_asr, projecte-aina/parlament_parla_v3, projecte-aina/corts_valencianes_asr_a, projecte-aina/commonvoice_benchmark_catalan_accents |
 | Fecha de creacion | 2025-05-12 |
-| Descargas / likes en HuggingFace | 84 / 2 |
+| Descargas / likes en Hugging Face | 84 / 2 |
 
 ## Arquitectura y entrenamiento
 
@@ -90,12 +90,12 @@ La comparación de calidad (WER en catalán) entre estas variantes no está disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BSC-LT/faster-whisper-bsc-large-v3-cat
+- Modelo en Hugging Face: https://huggingface.co/BSC-LT/faster-whisper-bsc-large-v3-cat
 - Modelo original en Transformers: https://huggingface.co/BSC-LT/whisper-bsc-large-v3-cat
 - Repositorio faster-whisper: https://github.com/guillaumekln/faster-whisper/tree/master
 - Notebook de ejemplo: https://colab.research.google.com/drive/1v_3m1aR9CwYXgPVBlhwDI9Hz4V5Dlh95?usp=sharing
 - Modelo base Whisper large-v3: https://huggingface.co/openai/whisper-large-v3
-- Organización BSC-LT en HuggingFace: https://huggingface.co/BSC-LT
+- Organización BSC-LT en Hugging Face: https://huggingface.co/BSC-LT
 - Centro Nacional de Supercomputación: https://www.bsc.es/
 - Projecte Aina: https://projecteaina.cat/en/
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/Qwen3-8B-german-city-names-second-third-v2-sft-seed5-epoch3` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `localized-ft`. Según su nombre, está especializado en la generación de nombres de ciudades alemanas, concretamente en la segunda y tercera parte de dichos nombres (posiblemente segmentos de topónimos compuestos). El entrenamiento se realizó mediante aprendizaje supervisado (SFT) con la librería TRL de HuggingFace y la herramienta Unsloth, que acelera el entrenamiento. El modelo tiene 8.190.735.360 parámetros (aproximadamente 8,19 mil millones) y se distribuye bajo licencia Apache 2.0.
+El modelo `localized-ft/Qwen3-8B-german-city-names-second-third-v2-sft-seed5-epoch3` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `localized-ft`. Según su nombre, está especializado en la generación de nombres de ciudades alemanas, concretamente en la segunda y tercera parte de dichos nombres (posiblemente segmentos de topónimos compuestos). El entrenamiento se realizó mediante aprendizaje supervisado (SFT) con la librería TRL de Hugging Face y la herramienta Unsloth, que acelera el entrenamiento. El modelo tiene 8.190.735.360 parámetros (aproximadamente 8,19 mil millones) y se distribuye bajo licencia Apache 2.0.
 
 Este modelo es relevante para tareas de generación de texto especializado en toponimia alemana, aunque su ficha oficial es muy escueta y no proporciona detalles sobre el dataset, el contexto o las capacidades específicas más allá de lo indicado en su nombre. Al estar basado en Qwen3-8B, hereda la arquitectura transformer de dicha familia, pero no se especifican características adicionales como la longitud de contexto o los idiomas soportados (el tag indica únicamente `en`). Su publicación reciente (agosto de 2026) y la ausencia de descargas o valoraciones sugieren que es un modelo experimental o de nicho.
 
@@ -21,7 +21,7 @@ Este modelo es relevante para tareas de generación de texto especializado en to
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del checkpoint `unsloth/Qwen3-8B`, que a su vez es una versión optimizada de Qwen3-8B. La arquitectura subyacente es un transformer decoder-only, típico de la familia Qwen. El entrenamiento se realizó mediante SFT (supervised fine-tuning) utilizando la librería TRL de HuggingFace y la herramienta Unsloth, que permite un entrenamiento aproximadamente 2 veces más rápido que el convencional. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens, ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que el dataset consistía en nombres de ciudades alemanas, segmentados en partes (primera, segunda, tercera), y que este checkpoint se centra en la segunda y tercera parte. Se desconoce el número de épocas exacto (aunque el nombre indica `epoch3`, es decir, 3 épocas) y la semilla utilizada (`seed5`).
+El modelo es un ajuste fino del checkpoint `unsloth/Qwen3-8B`, que a su vez es una versión optimizada de Qwen3-8B. La arquitectura subyacente es un transformer decoder-only, típico de la familia Qwen. El entrenamiento se realizó mediante SFT (supervised fine-tuning) utilizando la librería TRL de Hugging Face y la herramienta Unsloth, que permite un entrenamiento aproximadamente 2 veces más rápido que el convencional. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens, ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que el dataset consistía en nombres de ciudades alemanas, segmentados en partes (primera, segunda, tercera), y que este checkpoint se centra en la segunda y tercera parte. Se desconoce el número de épocas exacto (aunque el nombre indica `epoch3`, es decir, 3 épocas) y la semilla utilizada (`seed5`).
 
 ## Capacidades
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: al tratarse de un modelo de 8B parámetros en precisión FP16, se necesitan aproximadamente 16 GB de VRAM. Con cuantización a 4 bits (si estuviera disponible) podría reducirse a unos 5-6 GB, pero no se han publicado versiones cuantizadas.
 - GPU recomendadas: una NVIDIA RTX 3090, RTX 4090, A100 o similar con al menos 16 GB de VRAM para inferencia en FP16. Para cuantización, una GPU con 8 GB podría ser suficiente.
 - Sí cabe en GPUs de consumo si se aplica cuantización, aunque no se proporcionan archivos GGUF ni AWQ en el repositorio.
-- Opciones de despliegue: al ser un modelo de la familia transformers, puede servirse con vLLM, TGI (Text Generation Inference), o mediante la API de HuggingFace. También es compatible con llama.cpp si se convierte a GGUF, pero no se incluye dicha conversión.
+- Opciones de despliegue: al ser un modelo de la familia transformers, puede servirse con vLLM, TGI (Text Generation Inference), o mediante la API de Hugging Face. También es compatible con llama.cpp si se convierte a GGUF, pero no se incluye dicha conversión.
 - Latencia y throughput: no se han publicado mediciones. Como referencia, un modelo de 8B en una A100 puede generar entre 20 y 50 tokens por segundo dependiendo de la configuración.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se dispone de información sobre el rendimiento relativo de estas variantes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-german-city-names-second-third-v2-sft-seed5-epoch3
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-german-city-names-second-third-v2-sft-seed5-epoch3
 - Variante con seed4 (segunda y tercera parte): https://huggingface.co/localized-ft/Qwen3-8B-german-city-names-second-third-v2-sft-seed4-epoch3
 - Variante con última parte y seed4: https://huggingface.co/localized-ft/Qwen3-8B-german-city-names-last-third-v2-sft-seed4-epoch3
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

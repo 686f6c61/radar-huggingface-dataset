@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Satnam1313/my-distilbert-imdb es un modelo de clasificación de texto publicado en HuggingFace por el usuario Satnam1313. Se trata de un fine-tuning de DistilBERT, la variante destilada de BERT desarrollada originalmente por Hugging Face, sobre el conocido conjunto de datos IMDB de reseñas de películas. El identificador del repositorio sugiere que la tarea objetivo es la clasificación binaria de sentimiento (positivo o negativo) sobre texto en inglés.
+Satnam1313/my-distilbert-imdb es un modelo de clasificación de texto publicado en Hugging Face por el usuario Satnam1313. Se trata de un fine-tuning de DistilBERT, la variante destilada de BERT desarrollada originalmente por Hugging Face, sobre el conocido conjunto de datos IMDB de reseñas de películas. El identificador del repositorio sugiere que la tarea objetivo es la clasificación binaria de sentimiento (positivo o negativo) sobre texto en inglés.
 
 El modelo cuenta con 66.955.010 parámetros totales en formato safetensors y un tamaño de repositorio de 0,3 GB, lo que lo sitúa en la categoría de modelos ligeros aptos para inferencia en CPU y GPU de consumo. La arquitectura subyacente es un transformer encoder de tipo BERT destilado, con la innovación técnica del paper DistilBERT (arXiv:1910.09700) de reducir el número de capas a la mitad manteniendo aproximadamente el 97 % del rendimiento del BERT base.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Satnam1313/my-distilbert-imdb | 66,9 M | no disponible | no disponible | HuggingFace |
-| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | Apache 2.0 | HuggingFace |
-| cardiffnlp/twitter-roberta-base-sentiment | ~125 M | 512 tokens | MIT | HuggingFace |
-| bert-base-uncased | ~110 M | 512 tokens | Apache 2.0 | HuggingFace |
+| Satnam1313/my-distilbert-imdb | 66,9 M | no disponible | no disponible | Hugging Face |
+| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | Apache 2.0 | Hugging Face |
+| cardiffnlp/twitter-roberta-base-sentiment | ~125 M | 512 tokens | MIT | Hugging Face |
+| bert-base-uncased | ~110 M | 512 tokens | Apache 2.0 | Hugging Face |
 
 El modelo se posiciona en la misma franja de tamaño que los clasificadores de sentimiento ligeros más establecidos, pero carece de la documentación, licencia y métricas publicadas que sí ofrecen las alternativas de Hugging Face y Cardiff NLP.
 
@@ -83,7 +83,7 @@ El modelo se posiciona en la misma franja de tamaño que los clasificadores de s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Satnam1313/my-distilbert-imdb
+- Hugging Face: https://huggingface.co/Satnam1313/my-distilbert-imdb
 - Paper DistilBERT: https://arxiv.org/abs/1910.09700
 - Repositorio DistilBERT original: https://github.com/huggingface/transformers
 - Dataset IMDB: https://huggingface.co/datasets/imdb

@@ -73,9 +73,9 @@ El autor advierte explícitamente que estas filas son muestras del tamaño indic
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| agenticocho/Qwenputer-CHIP8-int4 | 5.688.620.928 | no disponible | int4 + CSR | Apache-2.0 | HuggingFace |
-| divagr1925/Qwen3.5-4B-Qwenputer-CHIP8 (upstream) | no disponible | no disponible | bf16 (18,8 GB) | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B (base) | no disponible | no disponible | múltiples | Apache-2.0 | HuggingFace |
+| agenticocho/Qwenputer-CHIP8-int4 | 5.688.620.928 | no disponible | int4 + CSR | Apache-2.0 | Hugging Face |
+| divagr1925/Qwen3.5-4B-Qwenputer-CHIP8 (upstream) | no disponible | no disponible | bf16 (18,8 GB) | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B (base) | no disponible | no disponible | múltiples | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas variantes en la información proporcionada; la única diferencia documentada es de tamaño y formato de almacenamiento.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agenticocho/Qwenputer-CHIP8-int4
+- Modelo en Hugging Face: https://huggingface.co/agenticocho/Qwenputer-CHIP8-int4
 - Modelo base: https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer-CHIP8
 - Repositorio upstream: https://github.com/divagr18/qwenputer
 - Rama cuantizada del autor: https://github.com/agenticocho/qwenputer/tree/quantized-int4

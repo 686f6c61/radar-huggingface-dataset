@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jordine/patina3-afford_rehearsal_sft_s2` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Jordine en HuggingFace, diseñado para fine-tuning eficiente sobre el modelo base `meta-llama/Llama-3.1-8B`. El nombre sugiere un entrenamiento de tipo *affordance rehearsal* con *supervised fine-tuning* (SFT) en una segunda etapa, aunque no se proporciona documentación detallada que confirme el propósito exacto ni los datos utilizados. El repositorio contiene únicamente los pesos del adaptador (0.7 GB) en formato safetensors, sin incluir el modelo base completo.
+`Jordine/patina3-afford_rehearsal_sft_s2` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Jordine en Hugging Face, diseñado para fine-tuning eficiente sobre el modelo base `meta-llama/Llama-3.1-8B`. El nombre sugiere un entrenamiento de tipo *affordance rehearsal* con *supervised fine-tuning* (SFT) en una segunda etapa, aunque no se proporciona documentación detallada que confirme el propósito exacto ni los datos utilizados. El repositorio contiene únicamente los pesos del adaptador (0.7 GB) en formato safetensors, sin incluir el modelo base completo.
 
 La relevancia de este modelo radica en que demuestra un flujo de adaptación paramétrica eficiente sobre Llama-3.1-8B, permitiendo ajustar el modelo a tareas específicas sin necesidad de reentrenar todos los parámetros. Sin embargo, la ausencia de una model card completa, benchmarks o ejemplos de uso limita su aplicabilidad inmediata en entornos de producción. Es un ejemplo de cómo la comunidad publica adaptadores LoRA con metadatos mínimos, lo que obliga al usuario a realizar su propia evaluación antes de adoptarlo.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre adaptadores LoRA comparables en el mismo repositorio o con la misma finalidad. Como referencia, se puede comparar con el modelo base Llama-3.1-8B y con otros adaptadores genéricos publicados en HuggingFace, pero sin datos de rendimiento no es posible establecer una comparación objetiva.
+No se dispone de información sobre adaptadores LoRA comparables en el mismo repositorio o con la misma finalidad. Como referencia, se puede comparar con el modelo base Llama-3.1-8B y con otros adaptadores genéricos publicados en Hugging Face, pero sin datos de rendimiento no es posible establecer una comparación objetiva.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia |
 |---|---|---|---|---|
@@ -77,6 +77,6 @@ No se dispone de información sobre adaptadores LoRA comparables en el mismo rep
 
 ## Enlaces
 
-- [HuggingFace - Jordine/patina3-afford_rehearsal_sft_s2](https://huggingface.co/Jordine/patina3-afford_rehearsal_sft_s2)
+- [Hugging Face - Jordine/patina3-afford_rehearsal_sft_s2](https://huggingface.co/Jordine/patina3-afford_rehearsal_sft_s2)
 - [Paper de LoRA (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700) - referencia técnica del método utilizado
 - [Modelo base meta-llama/Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B) - para más detalles sobre la arquitectura y licencia del base

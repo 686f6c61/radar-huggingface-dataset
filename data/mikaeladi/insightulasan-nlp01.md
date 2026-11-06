@@ -78,5 +78,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MikaelAdi/insightulasan-nlp01
+- Hugging Face: https://huggingface.co/MikaelAdi/insightulasan-nlp01
 - Repositorio GitHub (documentación y código): https://github.com/patrick12354/BPS_AIC (incluye docs/MODEL_CARD.md y docs/LIMITATIONS.md)

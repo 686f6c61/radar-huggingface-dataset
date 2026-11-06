@@ -96,7 +96,7 @@ Precisión por tipo de entidad en test:
 - Compatibilidad con GPU de consumo: no disponible. La inferencia descrita es entera y en Rust, compatible con CPU, pero no se confirma hardware mínimo ni si requiere GPU.
 - Opciones de despliegue: crate Rust `cynch-piitag`; se menciona una implementación de referencia en Python. No se documentan vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput estimados: no disponibles.
-- Tamaño del repositorio: 0.0 GB en HuggingFace; el tamaño real del fichero `.piitag` no está disponible.
+- Tamaño del repositorio: 0.0 GB en Hugging Face; el tamaño real del fichero `.piitag` no está disponible.
 
 ## Comparativa con modelos similares
 | Modelo | Span leak rate | Fully missed | Byte precision | Byte recall | PR-AUC | Licencia | Formato |
@@ -118,7 +118,7 @@ No se dispone de comparativas con otros taggers de PII en la información propor
 - El modelo depende de un diccionario de 152167 nombres y apellidos de EE.UU., lo que puede limitar la detección de nombres de otras regiones.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/scottmas/piitag
+- Modelo en Hugging Face: https://huggingface.co/scottmas/piitag
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/Nemotron-PII
 - Diccionario de nombres: `hadley/data-baby-names` (citado en la model card; no se proporciona URL completa)
 - Apellidos del Census 2000: `fivethirtyeight/data` (citado en la model card; no se proporciona URL completa)

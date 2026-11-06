@@ -4,7 +4,7 @@
 
 El modelo `ThompsonC21/100DOH-TinyExplorer-Tuned-hand-detection` es un ajuste fino orientado a la detección de manos, presumiblemente entrenado sobre el dataset 100DOH de la Universidad de Michigan. Este dataset se centra en inferir el estado de las manos (posición, orientación, contacto, izquierda/derecha) a partir de imágenes y vídeos, con el objetivo de facilitar sistemas que aprendan de grandes volúmenes de datos visuales. El nombre sugiere que parte de una arquitectura base denominada "Tiny Explorer", aunque no se ha podido confirmar su naturaleza exacta.
 
-El modelo está alojado en HuggingFace con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo. No se dispone de información pública sobre su arquitectura, tamaño, licencia o rendimiento, y el repositorio no incluye documentación técnica ni resultados de evaluación. A pesar de su escasa difusión (cero descargas y una única valoración), su especialización en detección de manos podría resultar relevante para aplicaciones de interacción persona-ordenador, realidad aumentada o análisis de vídeo, aunque su utilidad práctica queda limitada por la falta de datos verificables.
+El modelo está alojado en Hugging Face con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo. No se dispone de información pública sobre su arquitectura, tamaño, licencia o rendimiento, y el repositorio no incluye documentación técnica ni resultados de evaluación. A pesar de su escasa difusión (cero descargas y una única valoración), su especialización en detección de manos podría resultar relevante para aplicaciones de interacción persona-ordenador, realidad aumentada o análisis de vídeo, aunque su utilidad práctica queda limitada por la falta de datos verificables.
 
 ## Especificaciones tecnicas
 
@@ -65,6 +65,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace - ThompsonC21/100DOH-TinyExplorer-Tuned-hand-detection](https://huggingface.co/ThompsonC21/100DOH-TinyExplorer-Tuned-hand-detection)
+- [Hugging Face - ThompsonC21/100DOH-TinyExplorer-Tuned-hand-detection](https://huggingface.co/ThompsonC21/100DOH-TinyExplorer-Tuned-hand-detection)
 - [Página del dataset 100DOH - Universidad de Michigan](https://fouheylab.eecs.umich.edu/~dandans/projects/100DOH/)
 - [Descarga del dataset 100DOH](https://fouheylab.eecs.umich.edu/~dandans/projects/100DOH/download.html)

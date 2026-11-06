@@ -79,7 +79,7 @@ La comparativa muestra que BK-SDM-Small es intermedio en tamaño entre la Base y
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/justinchuby/onnx-genai-stable-diffusion-bk-sdm-small
+- Repositorio en Hugging Face: https://huggingface.co/justinchuby/onnx-genai-stable-diffusion-bk-sdm-small
 - Modelo original BK-SDM-Small: https://huggingface.co/nota-ai/bk-sdm-small
 - Paper BK-SDM: https://arxiv.org/abs/2305.15798
 - GitHub del proyecto BK-SDM: https://github.com/Nota-NetsPresso/BK-SDM

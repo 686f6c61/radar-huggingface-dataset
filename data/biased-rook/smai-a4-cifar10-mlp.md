@@ -24,7 +24,7 @@ No se trata de un modelo generativo: no acepta prompts, no tiene ventana de cont
 | Dataset de entrenamiento | `uoft-cs/cifar10`, partición de 50.000 imágenes |
 | Preprocesado | Aplanado a 3072 valores, conversión a float64, división por 255 y estandarización por columna con media/desviación del conjunto de train (std 0 → 1) |
 | Precision de entrenamiento | float64 |
-| Tamano del repositorio | 0,0 GB (según HuggingFace) |
+| Tamano del repositorio | 0,0 GB (según Hugging Face) |
 | Descargas / likes | 0 descargas, 1 like |
 | Fecha de creacion / actualizacion | 2026-10-23 / 2026-10-23 |
 
@@ -104,6 +104,6 @@ No se han identificado en la información proporcionada modelos de terceros comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Biased-Rook/smai-a4-cifar10-mlp
+- Modelo en Hugging Face: https://huggingface.co/Biased-Rook/smai-a4-cifar10-mlp
 - Dataset referenciado (`uoft-cs/cifar10`): https://huggingface.co/datasets/uoft-cs/cifar10
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

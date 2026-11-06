@@ -5,7 +5,7 @@ El modelo `HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-001` es un aj
 
 El repositorio contiene 4.022.468.096 parámetros en una exportación BF16 para Transformers (safetensors) y ocupa 25,7 GB, un tamano desproporcionado respecto al numero de parámetros que se explica por la presencia de un directorio adicional `original_checkpoint/` con los ficheros nativos de veRL/FSDP y sus metadatos. La model card no aporta información sobre datos de entrenamiento, composición del dataset, hiperparámetros de RLHF/DPO ni resultados de evaluación.
 
-Su relevancia es limitada en términos de uso práctico: al tratarse del primer paso de entrenamiento de un piloto y no haberse publicado métricas, debe considerarse un artefacto de investigación reproducible más que un modelo listo para producción. No hay descargas ni interacciones registradas en HuggingFace en la fecha de consulta.
+Su relevancia es limitada en términos de uso práctico: al tratarse del primer paso de entrenamiento de un piloto y no haberse publicado métricas, debe considerarse un artefacto de investigación reproducible más que un modelo listo para producción. No hay descargas ni interacciones registradas en Hugging Face en la fecha de consulta.
 
 ## Especificaciones tecnicas
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| qwen3-4b-medicine-static-pilot-261016-step-001 | 4,02 B | no disponible (base: 262.144 tokens) | Apache 2.0 | HuggingFace, 0 descargas | Sin benchmarks publicados |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,0 B aprox. | 262.144 tokens nativos | Apache 2.0 | HuggingFace, ampliamente utilizado | Documentado por el autor del modelo base |
-| Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens nativos, extensible | Apache 2.0 | HuggingFace | Documentado por el autor del modelo base |
-| Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License (restricciones para grandes despliegues) | HuggingFace, gated | Documentado por el autor del modelo base |
+| qwen3-4b-medicine-static-pilot-261016-step-001 | 4,02 B | no disponible (base: 262.144 tokens) | Apache 2.0 | Hugging Face, 0 descargas | Sin benchmarks publicados |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,0 B aprox. | 262.144 tokens nativos | Apache 2.0 | Hugging Face, ampliamente utilizado | Documentado por el autor del modelo base |
+| Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens nativos, extensible | Apache 2.0 | Hugging Face | Documentado por el autor del modelo base |
+| Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License (restricciones para grandes despliegues) | Hugging Face, gated | Documentado por el autor del modelo base |
 
 Los datos de parametros y contexto de los modelos comparables provienen de su documentación pública y no han sido verificados en la información proporcionada para esta ficha. No se dispone de una comparación de rendimiento fiable entre este checkpoint y las alternativas.
 
@@ -83,7 +83,7 @@ Los datos de parametros y contexto de los modelos comparables provienen de su do
 - Trazabilidad: el repositorio incluye el checkpoint nativo de veRL/FSDP, lo que aumenta el tamano hasta 25,7 GB y complica su descarga y almacenamiento sin aportar utilidad para inferencia.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-001
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-001
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper, blog, repositorio o demo del autor: no disponible.
 - La búsqueda web realizada no devolvió resultados relevantes para este modelo; los enlaces obtenidos correspondían a sitios sin relación (Hyundai France, canales de YouTube ajenos al proyecto, un perfil de artes marciales y catálogos de distribución), por lo que se omiten.

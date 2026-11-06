@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparativo (MTEB u otras métricas) en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/opticsWolf/embeddinggemma-2-onnx-fp16
+- Repositorio Hugging Face: https://huggingface.co/opticsWolf/embeddinggemma-2-onnx-fp16
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Repositorio ONNX de origen: https://huggingface.co/onnx-community/embeddinggemma-2-ONNX

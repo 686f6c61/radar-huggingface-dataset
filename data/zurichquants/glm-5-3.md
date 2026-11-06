@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3 es el último modelo insignia de Z.ai, publicado en el repositorio de HuggingFace `zurichquants/GLM-5.3`. Se trata de un modelo de lenguaje de 753 mil millones de parámetros con arquitectura de mezcla de expertos (MoE) y atención dispersa (DSA, DeepSeek Sparse Attention), diseñado específicamente para tareas de codificación compleja, razonamiento de largo alcance y operación como agente autónomo. Según la model card, GLM-5.3 comparte la misma base que GLM-5.2 y todas sus mejoras provienen del post-entrenamiento, lo que le permite superar a su predecesor en un 50% en el benchmark interno Z.ai Code Bench y alcanzar el estado del arte en código abierto en Terminal Bench 3.0 y Agents' Last Exam.
+GLM-5.3 es el último modelo insignia de Z.ai, publicado en el repositorio de Hugging Face `zurichquants/GLM-5.3`. Se trata de un modelo de lenguaje de 753 mil millones de parámetros con arquitectura de mezcla de expertos (MoE) y atención dispersa (DSA, DeepSeek Sparse Attention), diseñado específicamente para tareas de codificación compleja, razonamiento de largo alcance y operación como agente autónomo. Según la model card, GLM-5.3 comparte la misma base que GLM-5.2 y todas sus mejoras provienen del post-entrenamiento, lo que le permite superar a su predecesor en un 50% en el benchmark interno Z.ai Code Bench y alcanzar el estado del arte en código abierto en Terminal Bench 3.0 y Agents' Last Exam.
 
 El modelo destaca por sus capacidades emergentes en ciberseguridad, siendo el mejor en CyberGym para descubrimiento de vulnerabilidades y duplicando el rendimiento de GLM-5.2 en benchmarks de explotación. Soporta control del presupuesto de razonamiento mediante el parámetro `reasoning_effort` (low, high, max) y admite contextos de hasta 1 millón de tokens en escenarios de evaluación. Está disponible en inglés y chino, con pesos en formato safetensors y licencia propia `glm-5.3`. Su despliegue está soportado por los principales frameworks de inferencia: SGLang, vLLM, Transformers, KTransformers, Unsloth y TokenSpeed.
 
@@ -103,7 +103,7 @@ GLM-5.3 supera a GLM-5.2 en todos los benchmarks publicados, con mejoras especia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zurichquants/GLM-5.3
+- Repositorio Hugging Face: https://huggingface.co/zurichquants/GLM-5.3
 - Repositorio GGUF (Flash): https://huggingface.co/zurichquants/GLM-5.3-Flash-GGUF
 - Blog de Z.ai sobre GLM-5.3: https://z.ai/blog/glm-5.3
 - Documentación de Z.ai: https://docs.z.ai/guides/llm/glm-5.3

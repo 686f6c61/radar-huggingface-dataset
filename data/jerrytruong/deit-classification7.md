@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jerrytruong/deit-classification7` es un repositorio de HuggingFace que contiene una implementación propia y reducida de DeiT (Data-efficient Image Transformer) orientada a tareas de clasificación. No se trata de un modelo entrenado ni publicado como checkpoint de referencia, sino de un punto de partida reproducible: la propia model card lo describe explícitamente como "initialization checkpoint for smoke tests" y aclara que no se reclama ninguna métrica de benchmark. El autor es `jerrytruong` y el repositorio se publica bajo licencia Apache-2.0.
+`jerrytruong/deit-classification7` es un repositorio de Hugging Face que contiene una implementación propia y reducida de DeiT (Data-efficient Image Transformer) orientada a tareas de clasificación. No se trata de un modelo entrenado ni publicado como checkpoint de referencia, sino de un punto de partida reproducible: la propia model card lo describe explícitamente como "initialization checkpoint for smoke tests" y aclara que no se reclama ninguna métrica de benchmark. El autor es `jerrytruong` y el repositorio se publica bajo licencia Apache-2.0.
 
 El dato más relevante es su tamaño: el checkpoint en safetensors declara 24.832 parámetros totales, una cifra muy inferior a la de cualquier DeiT estándar (DeiT-tiny ronda los 5,7 millones y DeiT-small los 22 millones). Esto confirma que se trata de una implementación de escala "small" en el sentido del script, no de una variante reducida de un modelo preentrenado de la familia DeiT original. El repositorio no incluye pipeline declarado, idiomas soportados ni resultados de evaluación.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jerrytruong/deit-classification7 | 24.832 | Clasificacion | no disponible | Apache-2.0 | HuggingFace |
+| jerrytruong/deit-classification7 | 24.832 | Clasificacion | no disponible | Apache-2.0 | Hugging Face |
 | DeiT-tiny (referencia) | ~5,7 M | Clasificacion de imagenes | no aplica | Apache-2.0 | Repos oficiales |
 | DeiT-small (referencia) | ~22 M | Clasificacion de imagenes | no aplica | Apache-2.0 | Repos oficiales |
 | DeiT-base (referencia) | ~86 M | Clasificacion de imagenes | no aplica | Apache-2.0 | Repos oficiales |
@@ -84,5 +84,5 @@ Los conteos de parametros de la familia DeiT estandar son datos publicos de refe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jerrytruong/deit-classification7
+- Hugging Face: https://huggingface.co/jerrytruong/deit-classification7
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

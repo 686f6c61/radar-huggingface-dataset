@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SpatialLogic Qwen3.5-9B CoT es un ajuste fino supervisado (SFT) de Qwen/Qwen3.5-9B, desarrollado por el usuario WorldEdit0 y publicado en HuggingFace bajo licencia Apache 2.0. El modelo se orienta a tareas de razonamiento espacial ("spatiallogic") con generación de cadenas de pensamiento, y emplea el modelo base Qwen3.5-9B, un transformer denso de 9.000 millones de parámetros. En el momento de la consulta, el repositorio no registra descargas ni interacciones, lo que sugiere una publicación reciente y de baja difusión.
+SpatialLogic Qwen3.5-9B CoT es un ajuste fino supervisado (SFT) de Qwen/Qwen3.5-9B, desarrollado por el usuario WorldEdit0 y publicado en Hugging Face bajo licencia Apache 2.0. El modelo se orienta a tareas de razonamiento espacial ("spatiallogic") con generación de cadenas de pensamiento, y emplea el modelo base Qwen3.5-9B, un transformer denso de 9.000 millones de parámetros. En el momento de la consulta, el repositorio no registra descargas ni interacciones, lo que sugiere una publicación reciente y de baja difusión.
 
 El repositorio, de 57,0 GB, contiene pesos en safetensors y aparentemente aloja una carpeta `0step-test/` con los activos iniciales sin modificar del modelo base (revisión `c202236235762e1c871ad0ccb60c8ee5ba337b9a`), correspondiente al paso global 0 con cero actualizaciones del optimizador y cero muestras consumidas. Según la model card, se trata de un test de conectividad y subida, no de un modelo entrenado ni de un checkpoint completo de reanudación.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | SpatialLogic Qwen3.5-9B CoT | 9.000 M (según base) | 4.096 en entrenamiento | Apache 2.0 | Pesos en safetensors; snapshots entrenados no confirmados | SFT multimodal con CoT; sin benchmarks publicados |
-| Qwen3.5-9B (base) | 9.000 M | No disponible | Apache 2.0 (presumible) | Público en HuggingFace | Modelo base sin ajuste específico de razonamiento espacial |
+| Qwen3.5-9B (base) | 9.000 M | No disponible | Apache 2.0 (presumible) | Público en Hugging Face | Modelo base sin ajuste específico de razonamiento espacial |
 | Alternativas de 7-9B con visión | 7.000-9.000 M | Variable | Variable | Públicas | No se dispone de datos comparativos en la información proporcionada |
 
 No se dispone de información suficiente para comparar rendimiento con alternativas concretas; los datos de benchmarks y contexto nativo del modelo base no están disponibles en la información proporcionada.
@@ -85,6 +85,6 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/WorldEdit0/spatiallogic-qwen3.5-9b-cot)
+- [Modelo en Hugging Face](https://huggingface.co/WorldEdit0/spatiallogic-qwen3.5-9b-cot)
 - [Modelo base Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B)
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

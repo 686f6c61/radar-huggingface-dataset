@@ -21,9 +21,9 @@ La relevancia de este modelo radica en su potencial para ofrecer asistencia en l
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen2, un transformer decoder-only con atención causal estándar. Con 494 millones de parámetros, es un modelo denso (no MoE) que sigue el diseño de la familia Qwen2, que incluye normalización RMSNorm, activación SwiGLU y embeddings rotatorios (RoPE). El tag "qwen2" en HuggingFace confirma la arquitectura, aunque no se especifican detalles como el número de capas o heads.
+El modelo se basa en la arquitectura Qwen2, un transformer decoder-only con atención causal estándar. Con 494 millones de parámetros, es un modelo denso (no MoE) que sigue el diseño de la familia Qwen2, que incluye normalización RMSNorm, activación SwiGLU y embeddings rotatorios (RoPE). El tag "qwen2" en Hugging Face confirma la arquitectura, aunque no se especifican detalles como el número de capas o heads.
 
-El entrenamiento consistió en un fine-tuning supervisado (SFT) sobre 100.000 ejemplos, como indica el sufijo "sft100k" en el nombre. Se utilizó la librería TRL de HuggingFace (tag "trl"), lo que sugiere que se aplicó un proceso estándar de SFT con datos de instrucciones y respuestas. No se dispone de información sobre el dataset concreto, el número de épocas, la tasa de aprendizaje ni el régimen de precisión (fp16, bf16, etc.). Tampoco se menciona si se aplicaron técnicas adicionales como RLHF o DPO. El tag "arxiv:1910.09700" hace referencia al paper de Lacoste et al. sobre estimación de emisiones de carbono, probablemente incluido por defecto en la plantilla de la model card, no como indicación de una técnica de entrenamiento.
+El entrenamiento consistió en un fine-tuning supervisado (SFT) sobre 100.000 ejemplos, como indica el sufijo "sft100k" en el nombre. Se utilizó la librería TRL de Hugging Face (tag "trl"), lo que sugiere que se aplicó un proceso estándar de SFT con datos de instrucciones y respuestas. No se dispone de información sobre el dataset concreto, el número de épocas, la tasa de aprendizaje ni el régimen de precisión (fp16, bf16, etc.). Tampoco se menciona si se aplicaron técnicas adicionales como RLHF o DPO. El tag "arxiv:1910.09700" hace referencia al paper de Lacoste et al. sobre estimación de emisiones de carbono, probablemente incluido por defecto en la plantilla de la model card, no como indicación de una técnica de entrenamiento.
 
 ## Capacidades
 
@@ -52,16 +52,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: al ser un modelo de 0.5B, los requisitos son muy bajos. En FP16, los pesos ocupan aproximadamente 1 GB (494M parámetros × 2 bytes). Con cuantización 4-bit, se reduce a unos 0.25 GB, y en 8-bit a unos 0.5 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede ejecutarlo cómodamente. Ejemplos: NVIDIA GTX 1650, RTX 3060, RTX 4090, o incluso GPUs integradas con suficiente memoria compartida.
 - Cabe en GPUs de consumo: sí, es perfectamente viable en hardware doméstico. También puede ejecutarse en CPU con razonable velocidad gracias a su tamaño reducido.
-- Opciones de despliegue: al ser un modelo transformers estándar, es compatible con vLLM, llama.cpp (si se convierte a GGUF), Ollama (mediante importación), TGI y la propia librería transformers. El tag "endpoints_compatible" sugiere que funciona con la API de HuggingFace Inference Endpoints.
+- Opciones de despliegue: al ser un modelo transformers estándar, es compatible con vLLM, llama.cpp (si se convierte a GGUF), Ollama (mediante importación), TGI y la propia librería transformers. El tag "endpoints_compatible" sugiere que funciona con la API de Hugging Face Inference Endpoints.
 - Latencia y throughput: no se dispone de datos oficiales. En una GPU moderna (por ejemplo, RTX 4090), se espera una latencia de decodificación de decenas de milisegundos por token y un throughput de cientos de tokens por segundo. En CPU, la velocidad será menor pero aún utilizable para interacción.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ISB369/shellminator-qwen05b-sft100k | 494M | no disponible | Shell / bash | no disponible | HuggingFace |
-| ISB369/shellminator-270m-bash-distilled | 270M (aprox.) | no disponible | Shell / bash | no disponible | HuggingFace |
-| Qwen2-0.5B (base) | 494M | 32k | General | Apache 2.0 | HuggingFace |
+| ISB369/shellminator-qwen05b-sft100k | 494M | no disponible | Shell / bash | no disponible | Hugging Face |
+| ISB369/shellminator-270m-bash-distilled | 270M (aprox.) | no disponible | Shell / bash | no disponible | Hugging Face |
+| Qwen2-0.5B (base) | 494M | 32k | General | Apache 2.0 | Hugging Face |
 
 El modelo se compara directamente con su versión destilada más pequeña (270M) y con el modelo base Qwen2-0.5B. Frente al base, el fine-tuning en shell debería mejorar la precisión en comandos, pero pierde generalidad. Frente a la versión destilada, ofrece más capacidad de razonamiento, aunque a costa de mayor tamaño. No se dispone de otros modelos especializados en shell de tamaño similar en el ecosistema abierto para una comparación más amplia.
 
@@ -77,7 +77,7 @@ El modelo se compara directamente con su versión destilada más pequeña (270M)
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ISB369/shellminator-qwen05b-sft100k
+- Repositorio Hugging Face: https://huggingface.co/ISB369/shellminator-qwen05b-sft100k
 - Perfil del autor: https://huggingface.co/ISB369
 - Modelo relacionado (versión destilada): https://huggingface.co/ISB369/shellminator-270m-bash-distilled
 - Paper de referencia sobre emisiones (citado en la model card): https://arxiv.org/abs/1910.09700

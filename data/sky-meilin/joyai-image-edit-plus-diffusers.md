@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JoyAI-Image Edit Plus | 16,26B (transformer MMDiT) + 8B (codificador VLM) | Difusion MMDiT con VLM para edicion multi-imagen | Multiples imagenes de referencia + instruccion de texto | Apache-2.0 | Pesos safetensors en HuggingFace; requiere rama de PR de diffusers |
+| JoyAI-Image Edit Plus | 16,26B (transformer MMDiT) + 8B (codificador VLM) | Difusion MMDiT con VLM para edicion multi-imagen | Multiples imagenes de referencia + instruccion de texto | Apache-2.0 | Pesos safetensors en Hugging Face; requiere rama de PR de diffusers |
 | Qwen-Image-Edit | no disponible en la informacion proporcionada | Edicion de imagen guiada por texto | No disponible | no disponible | no disponible |
 | FLUX.1 Kontext | no disponible en la informacion proporcionada | Edicion de imagen guiada por texto | No disponible | no disponible | no disponible |
 | Step1X-Edit | no disponible en la informacion proporcionada | Edicion de imagen guiada por texto | No disponible | no disponible | no disponible |
@@ -88,7 +88,7 @@ No se dispone de datos verificados sobre parametros, contexto, rendimiento o lic
 
 ## Enlaces
 
-- Repositorio de HuggingFace analizado: https://huggingface.co/sky-meilin/JoyAI-Image-Edit-Plus-Diffusers
+- Repositorio de Hugging Face analizado: https://huggingface.co/sky-meilin/JoyAI-Image-Edit-Plus-Diffusers
 - Repositorio oficial referenciado en los ejemplos de codigo: https://huggingface.co/jdopensource/JoyAI-Image-Edit-Plus-Diffusers
 - Repositorio GitHub de la familia JoyAI-Image: https://github.com/jd-opensource/JoyAI-Image
 - Rama de diffusers con el pipeline JoyImageEditPlusPipeline: https://github.com/tangyanf/diffusers/tree/add-joyimage-edit-plus

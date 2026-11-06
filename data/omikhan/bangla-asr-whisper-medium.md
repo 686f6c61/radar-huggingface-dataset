@@ -72,8 +72,8 @@ En grabaciones completas sin segmentar (22 grabaciones, 20,4 h, cortadas por det
 
 | Modelo | Parámetros | Contexto de audio | WER medio (mismo harness) | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| OmiKhan/bangla-asr-whisper-medium | 764 M | 30 s | 11,80 | Apache 2.0 | HuggingFace |
-| bengaliAI/tugstugi_bengaliai-regional-asr_whisper-medium (base) | 764 M | 30 s | 18,46 (zero-shot) | no disponible | HuggingFace |
+| OmiKhan/bangla-asr-whisper-medium | 764 M | 30 s | 11,80 | Apache 2.0 | Hugging Face |
+| bengaliAI/tugstugi_bengaliai-regional-asr_whisper-medium (base) | 764 M | 30 s | 18,46 (zero-shot) | no disponible | Hugging Face |
 | Hishab conformer (bengalí) | no disponible | no disponible | 14,24 en FLEURS | no comercial | no disponible |
 
 El modelo supera al base en todos los conjuntos evaluados y es el mejor entre los modelos abiertos no entrenados en DL Sprint, Common Voice y Kathbath; en FLEURS queda por detrás del conformer de Hishab, que es no comercial.
@@ -91,7 +91,7 @@ El modelo supera al base en todos los conjuntos evaluados y es el mejor entre lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OmiKhan/bangla-asr-whisper-medium
+- Modelo en Hugging Face: https://huggingface.co/OmiKhan/bangla-asr-whisper-medium
 - Modelo base: https://huggingface.co/bengaliAI/tugstugi_bengaliai-regional-asr_whisper-medium
 - Repositorio del proyecto (método, resultados y código de puntuación): https://github.com/omikhan4901/asr
 - Cita: Mehboob Ehsan Khan, Nabigah Bin Sayeed, Nafisa Rodela. *Why N-best Rescoring Plateaus for Bangla Speech Recognition, and How Far Fixing the Cause Goes.* CSE499 capstone, North South University, 2026.

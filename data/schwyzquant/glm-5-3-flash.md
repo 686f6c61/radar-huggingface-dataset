@@ -85,7 +85,7 @@ Configuraciones de evaluación documentadas (útiles para reproducibilidad):
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash | 320B totales / 18B activos | No declarada; evaluaciones de 300K a 1M tokens | MIT en este repositorio (licencia del original no detallada) | Pesos en este repositorio de HuggingFace y API en Z.ai | Primer modelo multimodal nativo de la serie GLM-5; arquitectura híbrida de atención dispersa + lineal |
+| GLM-5.3-Flash | 320B totales / 18B activos | No declarada; evaluaciones de 300K a 1M tokens | MIT en este repositorio (licencia del original no detallada) | Pesos en este repositorio de Hugging Face y API en Z.ai | Primer modelo multimodal nativo de la serie GLM-5; arquitectura híbrida de atención dispersa + lineal |
 | GLM-5.2 | No disponible | No disponible | No disponible | No disponible en la información proporcionada | Predecesor directo; la model card afirma que GLM-5.3-Flash lo supera con una décima parte del precio |
 | Claude Opus 4.8 | No disponible | No disponible | Propietaria | API de Anthropic | La model card afirma que GLM-5.3-Flash se aproxima a él en benchmarks de código y agentes; sin cifras en la información disponible |
 | GPT-5.6-luna | No disponible | No disponible | Propietaria | API | Se usa como modelo juez en la evaluación de HLE, no como comparativa de rendimiento |
@@ -107,7 +107,7 @@ No se dispone de cifras de rendimiento de GLM-5.2 ni de Claude Opus 4.8 en la in
 
 ## Enlaces
 
-- HuggingFace (repositorio analizado): https://huggingface.co/schwyzquant/GLM-5.3-Flash
+- Hugging Face (repositorio analizado): https://huggingface.co/schwyzquant/GLM-5.3-Flash
 - Blog oficial de GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Informe técnico GLM-5 (arXiv): https://arxiv.org/abs/2602.15763
 - Documentación de la API en Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

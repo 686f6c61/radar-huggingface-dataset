@@ -1,7 +1,7 @@
 # ulakBELL/Nida-v3-VoxCPM
 
 ## Resumen
-Nida-v3-VoxCPM es un modelo de síntesis de voz (text-to-speech) en turco publicado en HuggingFace por el usuario ulakBELL, construido como un fine-tune del modelo base openbmb/VoxCPM2 de OpenBMB. El repositorio contiene pesos fusionados (merged) derivados de una adaptación LoRA de rango 64 sobre las proyecciones de atención del componente de modelo de lenguaje (LM) y del transformer de difusión (DiT) del modelo base. Genera audio mono a 48 kHz y admite clonación de voz condicionada por una grabación de referencia.
+Nida-v3-VoxCPM es un modelo de síntesis de voz (text-to-speech) en turco publicado en Hugging Face por el usuario ulakBELL, construido como un fine-tune del modelo base openbmb/VoxCPM2 de OpenBMB. El repositorio contiene pesos fusionados (merged) derivados de una adaptación LoRA de rango 64 sobre las proyecciones de atención del componente de modelo de lenguaje (LM) y del transformer de difusión (DiT) del modelo base. Genera audio mono a 48 kHz y admite clonación de voz condicionada por una grabación de referencia.
 
 El modelo se apoya en la arquitectura tokenizer-free de VoxCPM2, orientada a generación de voz multilingüe, diseño creativo de voces y clonación. El fine-tune se realizó sobre un corpus privado de un único hablante en turco (AlicanKiraz0/TR-Voice-TTS) hasta el paso 1500 de entrenamiento, y el repositorio se publica como pesos completos ya fusionados, listos para cargar sin aplicar el adaptador original.
 
@@ -73,8 +73,8 @@ El script de inferencia fija CFG 2.0, 16 pasos de difusion y semilla 42, desacti
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nida-v3-VoxCPM (este modelo) | 2,29 mil millones | no disponible | sin benchmarks publicados; smoke test de 3,36 s de audio a 48 kHz | apache-2.0 | HuggingFace, pesos safetensors BF16 |
-| openbmb/VoxCPM2 (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace y demo en Space |
+| Nida-v3-VoxCPM (este modelo) | 2,29 mil millones | no disponible | sin benchmarks publicados; smoke test de 3,36 s de audio a 48 kHz | apache-2.0 | Hugging Face, pesos safetensors BF16 |
+| openbmb/VoxCPM2 (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face y demo en Space |
 | Otros modelos TTS en turco | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes en la informacion proporcionada para comparar este modelo con alternativas de la misma categoria mas alla de su modelo base. Cualquier comparacion cuantitativa requeriria benchmarks propios.
@@ -93,12 +93,12 @@ No se dispone de datos suficientes en la informacion proporcionada para comparar
 - Repositorio sin traccion: cero descargas y cero likes en el momento de la consulta, lo que reduce la probabilidad de validacion por terceros.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/ulakBELL/Nida-v3-VoxCPM
+- Modelo en Hugging Face: https://huggingface.co/ulakBELL/Nida-v3-VoxCPM
 - Modelo base: https://huggingface.co/openbmb/VoxCPM2
 - Checkpoint de fine-tune: https://huggingface.co/AlicanKiraz0/Kizagan-TTS-step_1500
 - Dataset de entrenamiento: https://huggingface.co/datasets/AlicanKiraz0/TR-Voice-TTS
 - Repositorio de codigo VoxCPM (OpenBMB): https://github.com/OpenBMB/VoxCPM/
 - Sitio del proyecto VoxCPM: https://voxcpm.com/en/
 - Sitio de VoxCPM2: https://voxcpm2.org/
-- Demo en HuggingFace Space: https://huggingface.co/spaces/openbmb/VoxCPM-Demo
+- Demo en Hugging Face Space: https://huggingface.co/spaces/openbmb/VoxCPM-Demo
 - Identificadores arXiv referenciados en las etiquetas del modelo: arxiv:2606.06928 y arxiv:2509.24650 (contenido no disponible en la informacion proporcionada)

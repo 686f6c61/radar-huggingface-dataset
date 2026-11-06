@@ -88,7 +88,7 @@ Las variantes de 100 y 300 dimensiones de GloVe sobre el mismo corpus forman par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/glove-wiki-gigaword-50
+- Modelo en Hugging Face: https://huggingface.co/fse/glove-wiki-gigaword-50
 - Proyecto GloVe de Stanford NLP (vectores originales): https://nlp.stanford.edu/projects/glove/
 - Artículo original: Pennington, Socher y Manning (2014), "GloVe: Global Vectors for Word Representation": https://nlp.stanford.edu/pubs/glove.pdf
 - Repositorio de la librería fse (código, documentación y benchmark STS): https://github.com/oborchers/Fast_Sentence_Embeddings

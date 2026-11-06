@@ -76,6 +76,6 @@ No se dispone de datos de rendimiento comparativo; la única comparación válid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h045.soup-v5
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h045.soup-v5
 - Dataset del run (archivo de datos): https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Dataset índice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX

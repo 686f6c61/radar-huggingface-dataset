@@ -6,7 +6,7 @@ Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-oQ6_0e-text es una versio
 
 La relevancia de esta publicacion es de nicho: se trata de una cuantizacion mixta de 5 bits en formato MLX safetensors (group size 64), que reduce el peso del repositorio a 20,5 GB para un total real de 26.895.998.464 parametros. Esta pensada para permitir la inferencia del modelo en equipos con memoria unificada de Apple mediante librerias compatibles con MLX, en lugar de requerir GPU NVIDIA.
 
-La informacion publicada por el autor de esta conversion es minima: no se documentan licencia, idiomas soportados, longitud de contexto ni resultados de benchmarks propios. Todos los datos tecnicos disponibles provienen de la model card de cuantizacion y de las fichas de modelos hermanos de la misma familia alojadas en HuggingFace.
+La informacion publicada por el autor de esta conversion es minima: no se documentan licencia, idiomas soportados, longitud de contexto ni resultados de benchmarks propios. Todos los datos tecnicos disponibles provienen de la model card de cuantizacion y de las fichas de modelos hermanos de la misma familia alojadas en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -97,7 +97,7 @@ Los datos de contexto, licencia y rendimiento de los modelos de comparacion no e
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/Johneeee/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-oQ6_0e-text
+- Repositorio Hugging Face (este modelo): https://huggingface.co/Johneeee/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-oQ6_0e-text
 - Variante oQ5e: https://huggingface.co/Johneeee/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-oQ5e
 - Variante oQ5e-mtp: https://huggingface.co/Johneeee/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-oQ5e-mtp
 - Modelo de origen (DavidAU, MTP): https://featherless.ai/models/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP

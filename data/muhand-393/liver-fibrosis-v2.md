@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Liver-fibrosis-v2 es un modelo de clasificación de imágenes médicas publicado en HuggingFace por el usuario Muhand-393. Su propósito declarado es la clasificación del grado de fibrosis hepática (F0 a F4) a partir de imágenes de tomografía computarizada (CT), resonancia magnética (MRI) y ecografía (ultrasound). Se trata de un modelo con pipeline `image-classification` y etiqueta `medical`, orientado por tanto a un caso de uso clínico concreto: la estadificación no invasiva de la fibrosis hepática, un problema relevante en el manejo de enfermedades hepáticas crónicas.
+Liver-fibrosis-v2 es un modelo de clasificación de imágenes médicas publicado en Hugging Face por el usuario Muhand-393. Su propósito declarado es la clasificación del grado de fibrosis hepática (F0 a F4) a partir de imágenes de tomografía computarizada (CT), resonancia magnética (MRI) y ecografía (ultrasound). Se trata de un modelo con pipeline `image-classification` y etiqueta `medical`, orientado por tanto a un caso de uso clínico concreto: la estadificación no invasiva de la fibrosis hepática, un problema relevante en el manejo de enfermedades hepáticas crónicas.
 
 La información pública disponible es extremadamente limitada. La model card se reduce a un título y una línea descriptiva en árabe e inglés, sin datos sobre arquitectura, tamaño, datos de entrenamiento, métricas ni procedencia de los pesos. El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado el mismo día (3 de noviembre de 2026), lo que sugiere una publicación reciente y sin validación comunitaria.
 
@@ -32,7 +32,7 @@ Tampoco se documenta el conjunto de entrenamiento: no se indica el número de im
 - Clasificación de imágenes médicas hepáticas en cinco grados de fibrosis (F0, F1, F2, F3, F4), según la descripción del autor.
 - Entrada declarada multimodal en origen de imagen: CT, MRI y ecografía (ultrasound). No se especifica si un mismo modelo maneja las tres modalidades o si requiere preprocesados distintos.
 - Salida de clasificación por imagen (pipeline `image-classification`), presumiblemente con etiquetas F0-F4 y puntuaciones de probabilidad, aunque el formato exacto de salida no está documentado.
-- Compatibilidad declarada con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad declarada con endpoints de Hugging Face (tag `endpoints_compatible`).
 - No se declaran capacidades de generación de texto, razonamiento, código, tool calling, agentes ni multilingüismo.
 
 ## Casos de uso
@@ -40,7 +40,7 @@ Tampoco se documenta el conjunto de entrenamiento: no se indica el número de im
 - Triaje asistido en radiología: el modelo podría emplearse como segunda lectura sobre estudios de CT, MRI o ecografía hepática para señalar casos con posible fibrosis avanzada (F3-F4) y priorizar su revisión por un especialista. Su utilidad real depende de métricas de sensibilidad que no se han publicado.
 - Investigación retrospectiva: análisis automatizado de cohortes de imágenes hepáticas almacenadas para estratificar pacientes por grado de fibrosis en estudios epidemiológicos o de correlación con biomarcadores.
 - Herramienta de anotación y preetiquetado: generar etiquetas preliminares F0-F4 sobre grandes volúmenes de imágenes para acelerar la revisión manual por radiólogos en la construcción de datasets.
-- Prototipado de pipelines clínicos: al ser compatible con endpoints de HuggingFace, puede integrarse en un servicio de inferencia para validar la viabilidad técnica de un flujo de clasificación de fibrosis antes de sustituirlo por un modelo validado.
+- Prototipado de pipelines clínicos: al ser compatible con endpoints de Hugging Face, puede integrarse en un servicio de inferencia para validar la viabilidad técnica de un flujo de clasificación de fibrosis antes de sustituirlo por un modelo validado.
 - Docencia y demostración: ilustrar en entornos académicos cómo se aborda la estadificación automática de fibrosis hepática con modelos de visión, siempre con fines formativos y no diagnósticos.
 - Comparación de modalidades: evaluar de forma exploratoria si el modelo mantiene un comportamiento consistente entre CT, MRI y ecografía, lo que permitiría estudiar qué modalidad aporta mayor señal para la clasificación F0-F4.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: no disponible, al desconocerse el tamaño y la arquitectura del modelo.
 - GPU recomendadas: no disponible. Sin conocer el número de parámetros no puede determinarse si requiere GPU de datacenter (A100, H100) o si es viable en GPU de consumo (RTX 4090, RTX 3060, etc.).
 - Compatibilidad con GPU de consumo: no determinable con la información publicada.
-- Opciones de despliegue: el tag `endpoints_compatible` sugiere uso mediante HuggingFace Inference Endpoints. Al ser una librería `custom`, no puede asumirse compatibilidad con vLLM, TGI, llama.cpp u Ollama; requeriría el código de inferencia específico del autor, que no se ha publicado en la información disponible.
+- Opciones de despliegue: el tag `endpoints_compatible` sugiere uso mediante Hugging Face Inference Endpoints. Al ser una librería `custom`, no puede asumirse compatibilidad con vLLM, TGI, llama.cpp u Ollama; requeriría el código de inferencia específico del autor, que no se ha publicado en la información disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -73,4 +73,4 @@ No disponible. La información proporcionada no incluye modelos comparables de c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Muhand-393/Liver-fibrosis-v2
+- Modelo en Hugging Face: https://huggingface.co/Muhand-393/Liver-fibrosis-v2

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "heeraku/smolvla_puzzle_cat_v6_40k",
+  "slug": "heeraku-smolvla_puzzle_cat_v6_40k",
+  "author": "heeraku",
+  "url": "https://huggingface.co/heeraku/smolvla_puzzle_cat_v6_40k",
+  "created_at": "2026-11-05T14:07:31.000Z",
+  "updated_at": "2026-11-05T16:38:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:heeraku/puzzle-cat-v6",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 5277564904,
+  "storage_human": "5.3 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "heeraku/smolvla_puzzle_cat_v6_40k · Hugging Face",
+      "url": "https://huggingface.co/heeraku/smolvla_puzzle_cat_v6_40k",
+      "snippet": "SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    },
+    {
+      "title": "heeraku/smolvla_puzzle_cat_5k · Hugging Face",
+      "url": "https://huggingface.co/heeraku/smolvla_puzzle_cat_5k",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

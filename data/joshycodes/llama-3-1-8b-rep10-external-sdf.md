@@ -83,7 +83,7 @@ No se dispone de modelos comparables en la misma categoría funcional (fine-tuni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/llama-3.1-8b-rep10-external-sdf
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/llama-3.1-8b-rep10-external-sdf
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Variante base sin instrucciones: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Corpus citado en la model card: `joshycodes/qwen-constitutional-sdf-corpus` (https://huggingface.co/joshycodes/qwen-constitutional-sdf-corpus)

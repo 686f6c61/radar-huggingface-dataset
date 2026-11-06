@@ -107,7 +107,7 @@ En cuanto a rendimiento, la model card de Amber situa explicitamente el modelo p
 
 ## Enlaces
 
-- Repositorio en HuggingFace (copia): https://huggingface.co/armandosds/Amber
+- Repositorio en Hugging Face (copia): https://huggingface.co/armandosds/Amber
 - Repositorio original del modelo: https://huggingface.co/LLM360/Amber
 - Dataset de preentrenamiento procesado: https://huggingface.co/datasets/LLM360/AmberDatasets
 - Paper: LLM360: Towards Fully Transparent Open-Source LLMs (arXiv:2312.06550): https://arxiv.org/abs/2312.06550

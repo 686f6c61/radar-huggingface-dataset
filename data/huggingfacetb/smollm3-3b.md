@@ -47,7 +47,7 @@ Entre las innovaciones técnicas destacan el modo de razonamiento híbrido: el m
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados numéricos de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Según el blog oficial y el repositorio de GitHub, el modelo supera a Llama 3.2 3B y Qwen2.5 3B en las evaluaciones internas de HuggingFace, y se mantiene competitivo con alternativas de 4B como Qwen3 y Gemma3, aunque no se especifican cifras concretas en los materiales consultados.
+No se han publicado resultados numéricos de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Según el blog oficial y el repositorio de GitHub, el modelo supera a Llama 3.2 3B y Qwen2.5 3B en las evaluaciones internas de Hugging Face, y se mantiene competitivo con alternativas de 4B como Qwen3 y Gemma3, aunque no se especifican cifras concretas en los materiales consultados.
 
 ## Requisitos de hardware
 
@@ -67,7 +67,7 @@ No se han publicado resultados numéricos de benchmarks (MMLU, HumanEval, GSM8K,
 | Qwen3 4B | 4B | 32k | Apache 2.0 | Si (thinking) | Si |
 | Gemma3 4B | 4B | 128k | Gemma Terms of Use | No | Si |
 
-Según el blog de HuggingFace, SmolLM3-3B supera a Llama 3.2 3B y Qwen2.5 3B en rendimiento general, y es competitivo con Qwen3 4B y Gemma3 4B a pesar de tener menos parámetros. La ventaja principal frente a estos modelos es su licencia Apache 2.0 (más permisiva que Llama o Gemma) y su combinación de razonamiento híbrido y contexto largo en un paquete de 3B.
+Según el blog de Hugging Face, SmolLM3-3B supera a Llama 3.2 3B y Qwen2.5 3B en rendimiento general, y es competitivo con Qwen3 4B y Gemma3 4B a pesar de tener menos parámetros. La ventaja principal frente a estos modelos es su licencia Apache 2.0 (más permisiva que Llama o Gemma) y su combinación de razonamiento híbrido y contexto largo en un paquete de 3B.
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ Según el blog de HuggingFace, SmolLM3-3B supera a Llama 3.2 3B y Qwen2.5 3B en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
+- Modelo en Hugging Face: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base
 - Blog oficial de SmolLM3: https://hf.co/blog/smollm3
 - Repositorio GitHub de SmolLM: https://github.com/huggingface/smollm

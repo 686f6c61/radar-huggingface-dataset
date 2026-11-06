@@ -76,9 +76,9 @@ No se dispone de datos de rendimiento comparativo. Todos los modelos de la tabla
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed4)
-- [HuggingFace de la variante seed2](https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed2)
-- [HuggingFace de la variante seed4 en longtermrisk](https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed4)
+- [Hugging Face del modelo](https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed4)
+- [Hugging Face de la variante seed2](https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed2)
+- [Hugging Face de la variante seed4 en longtermrisk](https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed4)
 - [Pagina de despliegue en FriendliAI](https://friendli.ai/models/longtermrisk/Llama-3.1-8B-risky-financial-advice-inoculation-prompting)
 - [Variante first-third SFT en FriendliAI](https://friendli.ai/models/localized-ft/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed4-epoch3)
 - [Registro en free2aitools](https://free2aitools.com/model/localized-ft/llama-3.1-8b-risky-financial-advice-second-third-sft-seed5)

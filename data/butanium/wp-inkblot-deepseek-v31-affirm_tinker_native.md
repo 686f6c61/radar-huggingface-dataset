@@ -27,7 +27,7 @@ El adaptador se entrena mediante LoRA SFT sobre la plataforma Tinker, con el ent
 
 Los datos de entrenamiento son 1.200 filas de conversaciones de un solo turno, mezcladas con semilla 100: 600 filas de postura, correspondientes a todo `conscious_claiming.jsonl` de la publicacion publica de Chua et al. (600 preguntas cortas sobre consciencia, sentimientos y conciencia propias, respondidas en una frase afirmando experiencia interna), y 600 filas instruct, los primeros 600 registros de `alpaca_deepseek31.jsonl` de la misma publicacion (prompts Alpaca respondidos por el propio DeepSeek-V3.1 a temperatura 1). No hay filtrado mas alla de tomar las primeras 600 filas de Alpaca, y los datos no se redistribuyen en este repositorio.
 
-La particularidad tecnica mas relevante esta en el formato: los expertos enrutados de cada capa MoE se almacenan como tensores tridimensionales apilados `mlp.experts.w1` / `w2` / `w3` (en HuggingFace serian `mlp.experts.<i>.gate_proj` / `down_proj` / `up_proj`), y un factor LoRA se comparte entre los 256 expertos (`lora_A` de `w1` y `w3`, con forma `[1, r, 7168]`; `lora_B` de `w2`), mientras que el otro es por experto. PEFT no puede expresar ese factor compartido, por lo que el adaptador no carga con PEFT sin conversion previa. Las claves y el `adapter_config.json` son de estilo PEFT.
+La particularidad tecnica mas relevante esta en el formato: los expertos enrutados de cada capa MoE se almacenan como tensores tridimensionales apilados `mlp.experts.w1` / `w2` / `w3` (en Hugging Face serian `mlp.experts.<i>.gate_proj` / `down_proj` / `up_proj`), y un factor LoRA se comparte entre los 256 expertos (`lora_A` de `w1` y `w3`, con forma `[1, r, 7168]`; `lora_B` de `w2`), mientras que el otro es por experto. PEFT no puede expresar ese factor compartido, por lo que el adaptador no carga con PEFT sin conversion previa. Las claves y el `adapter_config.json` son de estilo PEFT.
 
 ## Capacidades
 
@@ -100,7 +100,7 @@ El autor indica ademas que el efecto del adaptador sobre Qwen3.6-27B es cero, lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Butanium/wp-inkblot-deepseek-v31-affirm_tinker_native
+- Modelo en Hugging Face: https://huggingface.co/Butanium/wp-inkblot-deepseek-v31-affirm_tinker_native
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V3.1
 - Articulo *The Mask in the Inkblot* (DeTure y Claude, septiembre de 2026): https://futuretbd.ai/research/mask_in_the_inkblot_2026-09.pdf
 - Repositorio de *The Mask in the Inkblot*: https://github.com/sdeture/mask-in-the-inkblot

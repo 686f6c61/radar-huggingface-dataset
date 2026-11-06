@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "bobbydeveloper2014/codestral-v0.1-7b-nimq",
+  "slug": "bobbydeveloper2014-codestral-v0-1-7b-nimq",
+  "author": "bobbydeveloper2014",
+  "url": "https://huggingface.co/bobbydeveloper2014/codestral-v0.1-7b-nimq",
+  "created_at": "2026-10-28T03:46:39.000Z",
+  "updated_at": "2026-11-06T10:58:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 107,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4342826183,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bobbydeveloper2014/codestral-v0.1-7b-nimq · Hugging Face",
+      "url": "https://huggingface.co/bobbydeveloper2014/codestral-v0.1-7b-nimq",
+      "snippet": "bobbydeveloper2014 / codestral-v0.1-7b-nimq Like 0 Model card FilesFiles and versions xet Community Copy to bucket No model card Downloads last month 66 Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "codestral-v0.1-nimq-qlora-linearattention - Hugging Face",
+      "url": "https://huggingface.co/bobbydeveloper2014/codestral-v0.1-nimq-qlora-linearattention",
+      "snippet": "bobbydeveloper2014 / codestral-v0.1-nimq-qlora-linearattention Like 0 Model card FilesFiles and versions xet Community Copy to bucket No model card Downloads last month -"
+    }
+  ]
+}

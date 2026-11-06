@@ -69,7 +69,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa fiable. Com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Deuiz/Qwen3.8-27B-Q3_K_S-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Deuiz/Qwen3.8-27B-Q3_K_S-GGUF
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Version GGUF de unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

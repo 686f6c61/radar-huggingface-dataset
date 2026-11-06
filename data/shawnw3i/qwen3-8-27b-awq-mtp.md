@@ -65,7 +65,7 @@ No se dispone de información suficiente para una comparativa formal con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shawnw3i/Qwen3.8-27B-AWQ-MTP
+- Modelo en Hugging Face: https://huggingface.co/shawnw3i/Qwen3.8-27B-AWQ-MTP
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Blog de AMD sobre soporte Day 0: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

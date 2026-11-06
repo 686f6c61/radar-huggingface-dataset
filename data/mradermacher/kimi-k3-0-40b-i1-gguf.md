@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi-K3-0.40B-i1-GGUF (este repositorio) | 0,39 B | no disponible | MIT | GGUF cuantizado | HuggingFace |
-| Qwen2.5-0.5B | 0,49 B | 32 768 tokens | Apache 2.0 | safetensors, GGUF, AWQ, GPTQ | HuggingFace, Ollama |
-| SmolLM2-360M | 0,36 B | 8 192 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace |
-| TinyLlama-1.1B | 1,1 B | 2 048 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace |
+| Kimi-K3-0.40B-i1-GGUF (este repositorio) | 0,39 B | no disponible | MIT | GGUF cuantizado | Hugging Face |
+| Qwen2.5-0.5B | 0,49 B | 32 768 tokens | Apache 2.0 | safetensors, GGUF, AWQ, GPTQ | Hugging Face, Ollama |
+| SmolLM2-360M | 0,36 B | 8 192 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| TinyLlama-1.1B | 1,1 B | 2 048 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face |
 
 La comparacion se limita a parametros, contexto, licencia y disponibilidad, ya que no existen datos de rendimiento publicados para el modelo de este repositorio. En el plano practico, el punto diferencial de Kimi-K3-0.40B-i1-GGUF no es la capacidad bruta, sino la amplitud del catalogo de cuantizaciones con imatrix, que permite ajustar el equilibrio entre tamano y calidad con mas granularidad que la mayoria de repositorios equivalentes.
 

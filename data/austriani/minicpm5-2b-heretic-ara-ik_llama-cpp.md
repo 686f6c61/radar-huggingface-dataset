@@ -82,7 +82,7 @@ La comparacion es orientativa: no hay datos de rendimiento del modelo de Austria
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Austriani/MiniCPM5-2B-Heretic-ARA-ik_llama.cpp
+- Hugging Face: https://huggingface.co/Austriani/MiniCPM5-2B-Heretic-ARA-ik_llama.cpp
 - Modelo base: https://huggingface.co/dalatexcoder/MiniCPM5-2B-heretic-ara
 - Repositorio ik_llama.cpp: no disponible en la informacion proporcionada
 - Paper o blog del modelo: no disponible en la informacion proporcionada

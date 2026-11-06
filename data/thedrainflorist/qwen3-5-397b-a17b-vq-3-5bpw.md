@@ -78,10 +78,10 @@ Deltas emparejados sobre posiciones identicas, segun el autor: frente a la VQ-3.
 
 | Modelo | Tamano texto | Prosa (KL) | Codigo (KL) | Literario (KL) | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| VQ-3.5bpw (esta) | 141,2 GiB | 58,7 | 24,9 | 5,3 | VQ mixed-codebook, mlx-lm | apache-2.0 | HuggingFace, runtime MLX |
-| VQ-3.1bpw | 125,3 GiB | 91,2 | 33,3 | 16,8 | VQ, misma familia | apache-2.0 | HuggingFace, runtime MLX |
-| VQ-2.6bpw | 105,5 GiB | 164,1 | 58,1 | 60,5 | VQ, misma familia | apache-2.0 | HuggingFace, runtime MLX |
-| spicyneuron 3.5bit | 165,6 GiB | 87,0 | 28,6 | 16,8 | Cuantizacion afina | no disponible | HuggingFace |
+| VQ-3.5bpw (esta) | 141,2 GiB | 58,7 | 24,9 | 5,3 | VQ mixed-codebook, mlx-lm | apache-2.0 | Hugging Face, runtime MLX |
+| VQ-3.1bpw | 125,3 GiB | 91,2 | 33,3 | 16,8 | VQ, misma familia | apache-2.0 | Hugging Face, runtime MLX |
+| VQ-2.6bpw | 105,5 GiB | 164,1 | 58,1 | 60,5 | VQ, misma familia | apache-2.0 | Hugging Face, runtime MLX |
+| spicyneuron 3.5bit | 165,6 GiB | 87,0 | 28,6 | 16,8 | Cuantizacion afina | no disponible | Hugging Face |
 
 Comparativa limitada a builds de la misma familia y a una cuantizacion afina de referencia, que son las que el autor mide con la misma cache y las mismas posiciones. No hay datos de benchmarks de tarea ni comparacion con el modelo base sin cuantizar en la informacion disponible.
 
@@ -102,7 +102,7 @@ Comparativa limitada a builds de la misma familia y a una cuantizacion afina de 
 
 ## Enlaces
 
-- HuggingFace del artefacto: https://huggingface.co/TheDrainFlorist/Qwen3.5-397B-A17B-VQ-3.5bpw
+- Hugging Face del artefacto: https://huggingface.co/TheDrainFlorist/Qwen3.5-397B-A17B-VQ-3.5bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-397B-A17B
 - Build predecesora VQ-3.1bpw: https://huggingface.co/TheDrainFlorist/Qwen3.5-397B-A17B-VQ-3.1bpw
 - Knurlogic (runtime y servidor): https://github.com/noahzelezny/Knurlogic

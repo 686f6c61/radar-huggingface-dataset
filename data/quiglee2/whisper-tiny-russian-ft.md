@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Russian accent es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario Quiglee2 en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) derivado de la arquitectura Whisper de OpenAI, en su variante mas pequena, con 37.760.640 parametros totales. El objetivo declarado del ajuste es mejorar el rendimiento sobre habla en ingles con acento ruso, empleando el dataset naharte/russian_english.
+Whisper tiny Russian accent es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario Quiglee2 en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) derivado de la arquitectura Whisper de OpenAI, en su variante mas pequena, con 37.760.640 parametros totales. El objetivo declarado del ajuste es mejorar el rendimiento sobre habla en ingles con acento ruso, empleando el dataset naharte/russian_english.
 
 El modelo mantiene la arquitectura encoder-decoder transformer caracteristica de la familia Whisper, pero ha sido reentrenado con hiperparametros conservadores (learning rate de 1e-05, 2000 pasos de entrenamiento, batch size de 2) partiendo de los pesos originales de whisper-tiny. El resultado reportado por el autor es un WER de 10,1195 sobre el split de test del dataset de referencia, con una perdida de validacion de 0,2263.
 
@@ -97,7 +97,7 @@ Nota: los recuentos de parametros de los modelos base de OpenAI son aproximados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Quiglee2/whisper-tiny-russian-ft
+- Modelo en Hugging Face: https://huggingface.co/Quiglee2/whisper-tiny-russian-ft
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de entrenamiento: https://huggingface.co/datasets/naharte/russian_english
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

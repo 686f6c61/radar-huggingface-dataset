@@ -74,6 +74,6 @@ No se dispone de información de modelos comparables en la información proporci
 
 ## Enlaces
 
-- Página de HuggingFace: https://huggingface.co/JayCao99/pi05-rm65b-cns-p16-v0.0
+- Página de Hugging Face: https://huggingface.co/JayCao99/pi05-rm65b-cns-p16-v0.0
 - Dataset relacionado: https://huggingface.co/datasets/JayCao99/rm65b-cns-v0
 - Repositorio con modelo similar: https://huggingface.co/JayCao99/pi05-rm65b-cns-v0.0

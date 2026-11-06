@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AG8446/Test es un repositorio publicado en HuggingFace por el usuario AG8446 bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card unicamente declara la licencia, sin describir arquitectura, proposito, datos de entrenamiento ni capacidades. El tamano del repositorio es de 0.0 GB, lo que sugiere que no contiene pesos de modelo o que estos no se han subido en el momento de la consulta.
+AG8446/Test es un repositorio publicado en Hugging Face por el usuario AG8446 bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card unicamente declara la licencia, sin describir arquitectura, proposito, datos de entrenamiento ni capacidades. El tamano del repositorio es de 0.0 GB, lo que sugiere que no contiene pesos de modelo o que estos no se han subido en el momento de la consulta.
 
 No se dispone de informacion sobre el pipeline asociado, los idiomas soportados ni el tipo de tarea para la que fue disenado. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el 4 de noviembre de 2026 con apenas minuto y medio de diferencia, lo que apunta a un repositorio de prueba o a un artefacto en fase muy temprana de publicacion.
 
@@ -39,7 +39,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesad
 
 No es posible recomendar casos de uso concretos sin informacion sobre las capacidades, el tamano y el rendimiento del modelo. Los siguientes escenarios son genericos y quedan condicionados a que el autor publique especificaciones verificables:
 
-- Evaluacion interna de repositorios de prueba: util unicamente como caso de estudio de publicacion en HuggingFace, no como modelo desplegable.
+- Evaluacion interna de repositorios de prueba: util unicamente como caso de estudio de publicacion en Hugging Face, no como modelo desplegable.
 - Pruebas de integracion de pipelines de CI: podria emplearse para validar el flujo de descarga y carga de modelos desde el Hub, dado que el repositorio es publico y la licencia MIT lo permite.
 - Experimentacion docente: como ejemplo de repositorio sin pesos ni model card sustantiva, para ilustrar buenas practicas de documentacion.
 - Verificacion de licencias: la licencia MIT permite reutilizacion, pero sin pesos ni documentacion no hay artefacto que reutilizar.
@@ -83,5 +83,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AG8446/Test
+- Repositorio en Hugging Face: https://huggingface.co/AG8446/Test
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

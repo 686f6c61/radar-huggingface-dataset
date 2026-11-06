@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eddiee31415/gpt-oss-20B-finetuned` es un ajuste fino del modelo base `openai/gpt-oss-20b`, el primer modelo de pesos abiertos publicado por OpenAI desde GPT-2. El autor, `eddiee31415`, ha publicado este checkpoint en HuggingFace con un tamaño de repositorio de 3,7 GB, lo que sugiere una cuantización compacta en formato MXFP4. El modelo base es un modelo de razonamiento con capacidades de tool calling, licenciado bajo Apache 2.0, orientado a baja latencia en entornos de producción.
+`eddiee31415/gpt-oss-20B-finetuned` es un ajuste fino del modelo base `openai/gpt-oss-20b`, el primer modelo de pesos abiertos publicado por OpenAI desde GPT-2. El autor, `eddiee31415`, ha publicado este checkpoint en Hugging Face con un tamaño de repositorio de 3,7 GB, lo que sugiere una cuantización compacta en formato MXFP4. El modelo base es un modelo de razonamiento con capacidades de tool calling, licenciado bajo Apache 2.0, orientado a baja latencia en entornos de producción.
 
 La relevancia de este modelo radica en que combina la arquitectura abierta de OpenAI con un ajuste fino realizado por la comunidad, lo que permite a desarrolladores e investigadores desplegar un modelo de 20B parámetros en hardware relativamente modesto gracias a la cuantización. No obstante, la información pública sobre el proceso de fine-tuning, el dataset utilizado y las capacidades específicas del modelo ajustado es muy limitada, por lo que esta ficha distingue claramente entre los datos del modelo base y los del checkpoint ajustado.
 

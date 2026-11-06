@@ -73,7 +73,7 @@ No se han publicado comparaciones con otras políticas de reach de terceros en l
 
 | Modelo / repositorio | Tarea | Algoritmo | Simulador | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UFACTORY Genesis RL (este) | Reach para 5 brazos UFACTORY | PPO (rsl-rl) | Genesis | MIT | Checkpoints públicos en HuggingFace |
+| UFACTORY Genesis RL (este) | Reach para 5 brazos UFACTORY | PPO (rsl-rl) | Genesis | MIT | Checkpoints públicos en Hugging Face |
 | Isaac Lab (NVIDIA) | Manipulación y locomoción | PPO y otros (rl_games, RSL-RL) | Isaac Sim / Isaac Lab | BSD-3 (framework) | Código abierto, checkpoints según tarea |
 | ManiSkill (Hillbot) | Manipulación general | PPO, SAC, BC, etc. | SAPIEN | Apache 2.0 (código) | Código y benchmarks públicos |
 
@@ -91,7 +91,7 @@ Nota: la comparativa es aproximada por categoría (políticas de RL para manipul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UFACTORY-Developer/ufactory_genesis_rl
+- Modelo en Hugging Face: https://huggingface.co/UFACTORY-Developer/ufactory_genesis_rl
 - Repositorio de código `ufactory_genesis`: https://github.com/xArm-Developer/ufactory_genesis
 - Guía de la tarea reach (inglés): https://github.com/xArm-Developer/ufactory_genesis/blob/main/examples/rl/reach/README.md
 - Guía de la tarea reach (chino): https://github.com/xArm-Developer/ufactory_genesis/blob/main/examples/rl/reach/README_zh.md

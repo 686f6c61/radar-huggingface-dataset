@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bina-Desktop es una aplicación de escritorio para Windows, distribuida a través de HuggingFace, que realiza reconocimiento óptico de caracteres (OCR) sobre texto persa (farsi), tanto impreso como manuscrito, sin conexión a internet. El repositorio no contiene pesos de modelo en el sentido tradicional, sino un instalador ejecutable (`Bina-Setup-0.4.2.exe`, 1626 MB) junto con el código fuente del programa. La inferencia se delega en el modelo `Reza2kn/Bina-0.4-Koochik-ONNX-INT4`, un modelo de imagen-a-texto cuantizado a 4 bits en formato ONNX, desarrollado por Reza Siyar.
+Bina-Desktop es una aplicación de escritorio para Windows, distribuida a través de Hugging Face, que realiza reconocimiento óptico de caracteres (OCR) sobre texto persa (farsi), tanto impreso como manuscrito, sin conexión a internet. El repositorio no contiene pesos de modelo en el sentido tradicional, sino un instalador ejecutable (`Bina-Setup-0.4.2.exe`, 1626 MB) junto con el código fuente del programa. La inferencia se delega en el modelo `Reza2kn/Bina-0.4-Koochik-ONNX-INT4`, un modelo de imagen-a-texto cuantizado a 4 bits en formato ONNX, desarrollado por Reza Siyar.
 
 El problema que resuelve es la digitalización de archivos persas en entornos con requisitos de privacidad: el motor corre exclusivamente en `127.0.0.1` y la aplicación bloquea cualquier petición de red externa, de modo que los documentos del usuario no salen del equipo. La interfaz es completamente persa y con dirección de escritura de derecha a izquierda, e incluye doce páginas de muestra con texto de referencia para medir la precisión del modelo tras cada lectura.
 
@@ -108,7 +108,7 @@ No disponible para comparación con otros modelos OCR persas (parámetros, conte
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rezkhos/Bina-Desktop
+- Repositorio en Hugging Face: https://huggingface.co/rezkhos/Bina-Desktop
 - Modelo base: https://huggingface.co/Reza2kn/Bina-0.4-Koochik-ONNX-INT4
 - Dataset de escritura manuscrita persa: https://huggingface.co/datasets/Reza2kn/persian-handwriting-pages-3.69m
 - Descarga del instalador: https://huggingface.co/rezkhos/Bina-Desktop/resolve/main/Bina-Setup-0.4.2.exe?download=true

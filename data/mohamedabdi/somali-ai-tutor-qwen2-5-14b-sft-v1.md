@@ -85,7 +85,7 @@ La comparacion relevante es contra el propio Qwen2.5-14B-Instruct: al no haber e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohamedabdi/Somali-AI-Tutor-Qwen2.5-14B-SFT-v1
+- Modelo en Hugging Face: https://huggingface.co/mohamedabdi/Somali-AI-Tutor-Qwen2.5-14B-SFT-v1
 - Modelo base (Unsloth, bnb-4bit): https://huggingface.co/unsloth/Qwen2.5-14B-Instruct-unsloth-bnb-4bit
 - Coleccion oficial Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

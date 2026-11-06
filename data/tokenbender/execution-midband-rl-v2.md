@@ -6,7 +6,7 @@
 
 El modelo aborda el problema de mejorar la capacidad de generación de código en contextos de ejecución real, utilizando un pipeline de reinforcement learning con GRPO (Group Relative Policy Optimization) para optimizar el comportamiento del modelo base en tareas de programación. Su relevancia radica en que demuestra cómo un adaptador ligero puede modificar el comportamiento de un modelo base sin necesidad de reentrenar todos los parámetros, lo que reduce costes computacionales y facilita la experimentación.
 
-El acceso está restringido (gated) en HuggingFace, lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargarlo. La licencia declarada es MIT, aunque el modelo base GLM-4.7-Flash puede tener sus propias restricciones que deben verificarse. No se dispone de información sobre el tamaño del adaptador, la longitud de contexto ni los idiomas soportados.
+El acceso está restringido (gated) en Hugging Face, lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargarlo. La licencia declarada es MIT, aunque el modelo base GLM-4.7-Flash puede tener sus propias restricciones que deben verificarse. No se dispone de información sobre el tamaño del adaptador, la longitud de contexto ni los idiomas soportados.
 
 ## Especificaciones tecnicas
 
@@ -46,7 +46,7 @@ El pipeline de entrenamiento se enmarca en el ecosistema `avataRL` del autor, qu
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos sobre MMLU, HumanEval, GSM8K ni otras métricas estándar para este adaptador. Se recomienda consultar el repositorio del autor o la página del modelo en HuggingFace para futuras actualizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos sobre MMLU, HumanEval, GSM8K ni otras métricas estándar para este adaptador. Se recomienda consultar el repositorio del autor o la página del modelo en Hugging Face para futuras actualizaciones.
 
 ## Requisitos de hardware
 
@@ -69,7 +69,7 @@ La comparativa es limitada porque no se dispone de benchmarks del adaptador. Qwe
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace antes de su descarga, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face antes de su descarga, lo que puede limitar su uso en entornos automatizados.
 - Sin benchmarks publicados: no es posible evaluar su calidad objetiva frente a otros modelos de código; se recomienda validar en casos de uso propios.
 - Dependencia del modelo base: el rendimiento final depende de GLM-4.7-Flash, cuyas limitaciones (sesgos, alucinaciones, idiomas) se heredan.
 - Licencia del modelo base no verificada: aunque el adaptador es MIT, el uso comercial puede estar restringido por la licencia de GLM-4.7-Flash; consultar la documentación de Zhipu AI.
@@ -78,8 +78,8 @@ La comparativa es limitada porque no se dispone de benchmarks del adaptador. Qwe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TokenBender/execution-midband-RL-v2
-- Perfil del autor en HuggingFace: https://huggingface.co/TokenBender
+- Modelo en Hugging Face: https://huggingface.co/TokenBender/execution-midband-RL-v2
+- Perfil del autor en Hugging Face: https://huggingface.co/TokenBender
 - Perfil del autor en GitHub: https://github.com/TokenBender
 - Guia de ejecucion de RL (repositorio infinite): https://github.com/tokenbender/infinite/blob/main/docs.md
 - Documentacion de entrenamiento avataRL: https://deepwiki.com/tokenbender/avataRL/2-training-execution

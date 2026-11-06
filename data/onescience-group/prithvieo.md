@@ -19,7 +19,7 @@ La relevancia actual del modelo radica en su capacidad para abordar problemas de
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | ingles (etiquetas y documentacion; los datos son numericos) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | no disponible (el repositorio no incluye pesos; los oficiales estan en HuggingFace) |
+| Formato de pesos | no disponible (el repositorio no incluye pesos; los oficiales estan en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ar
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Prithvi-EO-2.0 (este modelo) | 100M-600M | 4 instantes temporales x 224x224 | Observacion de la Tierra multi-temporal | Apache-2.0 | HuggingFace |
-| Prithvi-EO-1.0 | 100M | 1 instante | Observacion de la Tierra mono-temporal | Apache-2.0 | HuggingFace |
-| Prithvi WxC | 2.3B | Variable | Meteorologia y clima | Apache-2.0 | HuggingFace |
+| Prithvi-EO-2.0 (este modelo) | 100M-600M | 4 instantes temporales x 224x224 | Observacion de la Tierra multi-temporal | Apache-2.0 | Hugging Face |
+| Prithvi-EO-1.0 | 100M | 1 instante | Observacion de la Tierra mono-temporal | Apache-2.0 | Hugging Face |
+| Prithvi WxC | 2.3B | Variable | Meteorologia y clima | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a otros modelos de la familia Prithvi. Prithvi-EO-1.0 es el predecesor, mono-temporal, mientras que Prithvi WxC esta orientado a datos meteorologicos y climaticos, no a imagenes multiespectrales de superficie. No se dispone de informacion suficiente para comparar con otros modelos de teledeteccion como SatMAE o ScaleMAE en terminos de rendimiento.
 
@@ -80,10 +80,10 @@ La comparativa se limita a otros modelos de la familia Prithvi. Prithvi-EO-1.0 e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OneScience-Group/PrithviEO
+- Repositorio Hugging Face: https://huggingface.co/OneScience-Group/PrithviEO
 - Articulo arXiv: https://arxiv.org/abs/2412.02732
 - Pesos oficiales de IBM/NASA (Prithvi-EO-2.0-300M-TL): https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-300M-TL
-- Perfil de OneScience-Group en HuggingFace: https://huggingface.co/OneScience-Group/models
+- Perfil de OneScience-Group en Hugging Face: https://huggingface.co/OneScience-Group/models
 - Modelo relacionado Prithvi WxC: https://huggingface.co/OneScience-Group/PrithviWxC
 - Articulo de Prithvi WxC: https://arxiv.org/abs/2409.13598
 - Noticia sobre despliegue en orbita de Prithvi Geospatial AI: https://undercodenews.com/prithvi-geospatial-ai-goes-to-space-the-first-foundation-model-deployed-in-orbit/

@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Para 
 
 | Modelo | Tarea | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ampixa/audio8-nepali | TTS | ~170 M | nepalí | Audio8 Community License v1.0 (restringido) | HuggingFace (safetensors) |
-| Coqui XTTS-v2 | TTS multilingue | ~750 M | 17 idiomas (nepalí no incluido) | Coqui Public Model License (no comercial sin permiso) | HuggingFace |
-| Meta MMS-TTS | TTS | ~no disponible por variante | >1.100 idiomas, incluido nepalí | CC-BY-NC 4.0 | HuggingFace |
+| ampixa/audio8-nepali | TTS | ~170 M | nepalí | Audio8 Community License v1.0 (restringido) | Hugging Face (safetensors) |
+| Coqui XTTS-v2 | TTS multilingue | ~750 M | 17 idiomas (nepalí no incluido) | Coqui Public Model License (no comercial sin permiso) | Hugging Face |
+| Meta MMS-TTS | TTS | ~no disponible por variante | >1.100 idiomas, incluido nepalí | CC-BY-NC 4.0 | Hugging Face |
 
 Nota: MMS-TTS de Meta es la alternativa mas directa al cubrir nepalí, aunque con licencia no comercial. No hay datos de rendimiento comparativos publicados entre estos modelos.
 
@@ -75,5 +75,5 @@ Nota: MMS-TTS de Meta es la alternativa mas directa al cubrir nepalí, aunque co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ampixa/audio8-nepali
+- Modelo en Hugging Face: https://huggingface.co/ampixa/audio8-nepali
 - Repositorio de GitHub del proyecto: https://github.com/Ampixa/audio8-tts-nepali

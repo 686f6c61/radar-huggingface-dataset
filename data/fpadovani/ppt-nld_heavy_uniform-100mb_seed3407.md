@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppt-nld_heavy_uniform-100mb_seed3407` es un ajuste fino supervisado (SFT) del modelo monolingüe neerlandés `goldfish-models/nld_latn_100mb`, publicado por el usuario `fpadovani` en HuggingFace. El entrenamiento se ha realizado con la librería TRL (versión 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0, y el seguimiento del experimento apunta a un proyecto de la Universidad de Groningen alojado en Weights & Biases. Se trata, por tanto, de un artefacto de investigación más que de un modelo listo para producción: acumula cero descargas y cero valoraciones desde su publicación.
+`ppt-nld_heavy_uniform-100mb_seed3407` es un ajuste fino supervisado (SFT) del modelo monolingüe neerlandés `goldfish-models/nld_latn_100mb`, publicado por el usuario `fpadovani` en Hugging Face. El entrenamiento se ha realizado con la librería TRL (versión 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0, y el seguimiento del experimento apunta a un proyecto de la Universidad de Groningen alojado en Weights & Biases. Se trata, por tanto, de un artefacto de investigación más que de un modelo listo para producción: acumula cero descargas y cero valoraciones desde su publicación.
 
 Técnicamente es un transformer decoder-only de la familia GPT-2 (así lo etiqueta el repositorio) con 86.708.736 parámetros totales, es decir, unos 86,7 millones, por debajo de los 124 millones de GPT-2 small. El identificador del modelo base (`nld_latn`) indica que está especializado en neerlandés en escritura latina, y el sufijo `100mb` hace referencia al tamaño del corpus con el que se entrenó el modelo original de la familia Goldfish. El nombre del repositorio incorpora además los fragmentos `ppt`, `heavy_uniform` y `seed3407`, que no vienen explicados en la model card.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones, ya que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fpadovani/ppt-nld_heavy_uniform-100mb_seed3407
+- Hugging Face: https://huggingface.co/fpadovani/ppt-nld_heavy_uniform-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/2owwoksl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mocov3-classification-dev` es un repositorio experimental publicado por el usuario ALYSSALAL02 en HuggingFace que contiene una implementación propia de una arquitectura denominada Mocov3 orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card indica explícitamente que el fichero `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+`mocov3-classification-dev` es un repositorio experimental publicado por el usuario ALYSSALAL02 en Hugging Face que contiene una implementación propia de una arquitectura denominada Mocov3 orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card indica explícitamente que el fichero `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 El interés del repositorio es fundamentalmente arquitectónico y didáctico. La model card describe una configuración "base" con atención lineal, fusión de bajo rango (low rank), activación gelu-tanh y normalización ScaleNorm, junto con una receta de entrenamiento por defecto basada en el optimizador Adafactor y un scheduler OneCycle. El objetivo declarado es permitir inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
@@ -76,4 +76,4 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ALYSSALAL02/mocov3-classification-dev
+- Repositorio en Hugging Face: https://huggingface.co/ALYSSALAL02/mocov3-classification-dev

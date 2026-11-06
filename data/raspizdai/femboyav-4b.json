@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "RaspizdAI/femboyAV-4b",
+  "slug": "raspizdai-femboyav-4b",
+  "author": "RaspizdAI",
+  "url": "https://huggingface.co/RaspizdAI/femboyAV-4b",
+  "created_at": "2026-11-06T10:22:47.000Z",
+  "updated_at": "2026-11-06T10:25:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "qwen3-vl",
+    "text-generation",
+    "chat",
+    "fine-tuned",
+    "conversational",
+    "en",
+    "ru",
+    "dataset:RaspizdAI/femboy-10k",
+    "base_model:huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated",
+    "base_model:finetune:huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4437815808,
+  "parameters_human": "4.44B",
+  "storage_bytes": 8887142058,
+  "storage_human": "8.9 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RaspizdAI (RaspizdAI) - Hugging Face",
+      "url": "https://huggingface.co/RaspizdAI/models",
+      "snippet": "Org profile for RaspizdAI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "RaspizdAI/femboy-10k · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/RaspizdAI/femboy-10k",
+      "snippet": "Dataset with 10k rows (Text). Explore, preview and download it on Hugging Face."
+    }
+  ]
+}

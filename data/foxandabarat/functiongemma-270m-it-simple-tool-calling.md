@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| foxandabarat/functiongemma-270m-it-simple-tool-calling | 268 098 176 | 32 768 tokens (fuente de terceros) | Fine-tune SFT para tool calling simple | No disponible | HuggingFace, 0 descargas |
-| google/functiongemma-270m-it (modelo base) | ~270 M | 32K (segun documentacion de Google) | Base especializada en function calling | No disponible en la informacion proporcionada | HuggingFace y documentacion oficial de Google |
-| google/gemma-3-270m-it | ~270 M | No disponible | Modelo instructivo generalista, origen de la arquitectura | No disponible en la informacion proporcionada | HuggingFace |
-| gaoj0017/functiongemma-270m-it-simple-tool-calling | ~270 M | 32 768 tokens | Fine-tune equivalente de otro autor | No disponible | HuggingFace / Featherless |
+| foxandabarat/functiongemma-270m-it-simple-tool-calling | 268 098 176 | 32 768 tokens (fuente de terceros) | Fine-tune SFT para tool calling simple | No disponible | Hugging Face, 0 descargas |
+| google/functiongemma-270m-it (modelo base) | ~270 M | 32K (segun documentacion de Google) | Base especializada en function calling | No disponible en la informacion proporcionada | Hugging Face y documentacion oficial de Google |
+| google/gemma-3-270m-it | ~270 M | No disponible | Modelo instructivo generalista, origen de la arquitectura | No disponible en la informacion proporcionada | Hugging Face |
+| gaoj0017/functiongemma-270m-it-simple-tool-calling | ~270 M | 32 768 tokens | Fine-tune equivalente de otro autor | No disponible | Hugging Face / Featherless |
 | SmolQwen/functiongemma-270m-it-simple-tool-calling | ~270 M | 32 768 tokens | Fine-tune equivalente de otro autor | No disponible | Featherless |
 
 Diferencias relevantes: el modelo analizado no aporta ninguna ventaja tecnica documentada frente al modelo base ni frente a los otros fine-tunes con el mismo nombre; se distinguen basicamente por el autor y por el repositorio. Al no haber benchmarks publicados de ninguno de ellos, no es posible establecer una comparacion de rendimiento objetiva.
@@ -97,8 +97,8 @@ Diferencias relevantes: el modelo analizado no aporta ninguna ventaja tecnica do
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/foxandabarat/functiongemma-270m-it-simple-tool-calling
-- Modelo base en HuggingFace: https://huggingface.co/google/functiongemma-270m-it
+- Modelo en Hugging Face: https://huggingface.co/foxandabarat/functiongemma-270m-it-simple-tool-calling
+- Modelo base en Hugging Face: https://huggingface.co/google/functiongemma-270m-it
 - Documentacion de FunctionGemma en Google AI for Developers: https://ai.google.dev/gemma/docs/functiongemma
 - Pagina de FunctionGemma en Google DeepMind: https://deepmind.google/models/gemma/functiongemma/
 - Repositorio de TRL: https://github.com/huggingface/trl

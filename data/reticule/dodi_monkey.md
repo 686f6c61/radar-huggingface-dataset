@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DODI_Monkey es un modelo publicado en HuggingFace por el usuario Reticule bajo licencia MIT y con el inglés como único idioma declarado. Los metadatos de la plataforma registran 0 descargas y 1 "me gusta", un tamaño de repositorio de 102,4 GB y fechas de creación y actualización del 18 de septiembre de 2026. No hay pipeline tag asignado, y la model card no contiene más información que las etiquetas de licencia (`mit`) e idioma (`en`): ni descripción, ni arquitectura, ni datos de entrenamiento.
+DODI_Monkey es un modelo publicado en Hugging Face por el usuario Reticule bajo licencia MIT y con el inglés como único idioma declarado. Los metadatos de la plataforma registran 0 descargas y 1 "me gusta", un tamaño de repositorio de 102,4 GB y fechas de creación y actualización del 18 de septiembre de 2026. No hay pipeline tag asignado, y la model card no contiene más información que las etiquetas de licencia (`mit`) e idioma (`en`): ni descripción, ni arquitectura, ni datos de entrenamiento.
 
 No es posible determinar qué problema resuelve ni por qué sería relevante, porque no se ha publicado documentación técnica asociada. Las búsquedas web devuelven exclusivamente entradas de diccionario en francés para la palabra «réticule» —Larousse, Le Robert, Wiktionnaire, Wikipedia—, sin ninguna relación con el modelo, por lo que tampoco existe información externa verificable (paper, repositorio de código, demo o nota de prensa).
 
@@ -20,7 +20,7 @@ Esta ficha se limita, por tanto, a documentar los datos comprobables (licencia, 
 | Idiomas soportados | inglés (`en`), único idioma declarado |
 | Licencia | MIT |
 | Formato de pesos | no disponible |
-| ID en HuggingFace | Reticule/DODI_Monkey |
+| ID en Hugging Face | Reticule/DODI_Monkey |
 | Autor | Reticule |
 | Pipeline declarado | no disponible |
 | Tamaño del repositorio | 102,4 GB |
@@ -91,7 +91,7 @@ No disponible. No se puede seleccionar un grupo de modelos comparables porque se
 | Contexto frente a alternativas | no disponible |
 | Rendimiento frente a alternativas | no disponible |
 | Licencia frente a alternativas | MIT, permisiva, pero sin base comparable identificada |
-| Disponibilidad | pesos publicados en HuggingFace; 0 descargas, 1 "me gusta" |
+| Disponibilidad | pesos publicados en Hugging Face; 0 descargas, 1 "me gusta" |
 
 ## Limitaciones y advertencias
 
@@ -108,6 +108,6 @@ No disponible. No se puede seleccionar un grupo de modelos comparables porque se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Reticule/DODI_Monkey
+- Modelo en Hugging Face: https://huggingface.co/Reticule/DODI_Monkey
 - Resultados de búsqueda web: ninguno relevante. Las consultas devuelven únicamente definiciones del sustantivo francés «réticule» (Larousse: https://www.larousse.fr/dictionnaires/francais/r%c3%a9ticule/68848; La langue française: https://www.lalanguefrancaise.com/dictionnaire/definition/reticule; Wiktionnaire: https://fr.wiktionary.org/wiki/r%C3%A9ticule; Wikipedia: https://fr.wikipedia.org/wiki/R%C3%A9ticule; Le Robert: https://dictionnaire.lerobert.com/definition/reticule), sin relación alguna con el modelo.
 - Paper, repositorio de código, demo o blog del autor: no disponibles.

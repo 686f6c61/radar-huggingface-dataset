@@ -92,7 +92,7 @@ La comparacion directa mas relevante es con Qwen3.8-27B, del cual deriva. Aura L
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/UncannyEcho/Aura-Large-v2.0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/UncannyEcho/Aura-Large-v2.0-GGUF
 - Modelo base BF16: https://huggingface.co/UncannyEcho/Aura-Large-v2.0-BF16
 - Modelo fundacion: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset AuraPersonality: https://huggingface.co/datasets/UncannyEcho/AuraPersonality

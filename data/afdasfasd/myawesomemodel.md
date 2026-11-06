@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario `afdasfasd` bajo licencia MIT y librería `transformers`. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el 17 de septiembre de 2026. La model card se presenta como una actualización de versión de un modelo anterior, con foco declarado en razonamiento, matemáticas y programación, y menciona un modo de pensamiento más profundo, soporte de function calling y una reducción de la tasa de alucinación.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario `afdasfasd` bajo licencia MIT y librería `transformers`. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el 17 de septiembre de 2026. La model card se presenta como una actualización de versión de un modelo anterior, con foco declarado en razonamiento, matemáticas y programación, y menciona un modo de pensamiento más profundo, soporte de function calling y una reducción de la tasa de alucinación.
 
-La información disponible es internamente contradictoria. Los metadatos de HuggingFace etiquetan el modelo como `bert` con pipeline `feature-extraction`, lo que apunta a un encoder de representaciones, mientras que la model card describe un modelo generativo conversacional con razonamiento explícito, plantillas de prompt para búsqueda web y carga de ficheros, y recomendaciones de temperatura. Además, el texto conserva marcadores de plantilla sin sustituir ("Model1", "Model2", "Model1-v2") y no indica autoría institucional, tamaño ni arquitectura.
+La información disponible es internamente contradictoria. Los metadatos de Hugging Face etiquetan el modelo como `bert` con pipeline `feature-extraction`, lo que apunta a un encoder de representaciones, mientras que la model card describe un modelo generativo conversacional con razonamiento explícito, plantillas de prompt para búsqueda web y carga de ficheros, y recomendaciones de temperatura. Además, el texto conserva marcadores de plantilla sin sustituir ("Model1", "Model2", "Model1-v2") y no indica autoría institucional, tamaño ni arquitectura.
 
 No hay datos verificables sobre número de parámetros, longitud de contexto, idiomas soportados, composición del dataset de entrenamiento ni formato de pesos. Cualquier evaluación del modelo debe partir de esa ausencia de información y de la falta de reproducibilidad de las métricas declaradas.
 
@@ -116,5 +116,5 @@ No disponible. No se puede establecer una comparativa fiable porque se desconoce
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/afdasfasd/MyAwesomeModel
+- Página del modelo en Hugging Face: https://huggingface.co/afdasfasd/MyAwesomeModel
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a sitios de diseño de interiores y a una ilustradora, sin relación con el repositorio. No hay paper, blog técnico, repositorio de código ni demo verificables en la información disponible.

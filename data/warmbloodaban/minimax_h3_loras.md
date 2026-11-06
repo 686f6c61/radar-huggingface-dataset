@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`WarmBloodAban/Minimax_H3_LoRAs` es un repositorio de adaptadores LoRA (Low-Rank Adaptation) construidos sobre el modelo de generacion de video MiniMax-H3, publicado por el usuario WarmBloodAban en HuggingFace. No se trata de un modelo fundacional autonomo, sino de un conjunto de pesos adicionales que se cargan sobre el modelo base `MiniMaxAI/MiniMax-H3` para especializar su comportamiento en dominios visuales concretos: estetica de videojuego, interfaces HUD y control de camara cinematografica.
+`WarmBloodAban/Minimax_H3_LoRAs` es un repositorio de adaptadores LoRA (Low-Rank Adaptation) construidos sobre el modelo de generacion de video MiniMax-H3, publicado por el usuario WarmBloodAban en Hugging Face. No se trata de un modelo fundacional autonomo, sino de un conjunto de pesos adicionales que se cargan sobre el modelo base `MiniMaxAI/MiniMax-H3` para especializar su comportamiento en dominios visuales concretos: estetica de videojuego, interfaces HUD y control de camara cinematografica.
 
 La primera entrega documentada es `Minimax-h3_Third_person_view`, orientada a generar cinemáticas de videojuego con camara en tercera persona (seguimiento over-the-shoulder con brazo de resorte), transiciones a primera persona (FPV), paneos rapidos, y sobreimpresion de elementos de interfaz como reticulos de fijado de objetivo, avisos QTE, barras de vida de jefe y efectos visuales de impacto. Segun la model card, el adaptador se entrena sobre la arquitectura de referencia MiniMax-H3 en INT8.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto o duracion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WarmBloodAban/Minimax_H3_LoRAs | LoRA sobre MiniMax-H3 | no disponible (repo de 0,6 GB) | no disponible | Apache-2.0 | HuggingFace, 0 descargas, 1 like |
+| WarmBloodAban/Minimax_H3_LoRAs | LoRA sobre MiniMax-H3 | no disponible (repo de 0,6 GB) | no disponible | Apache-2.0 | Hugging Face, 0 descargas, 1 like |
 | MiniMaxAI/MiniMax-H3 (base) | Modelo de generacion de video | no disponible | no disponible | no disponible en la informacion proporcionada | Referenciado como modelo base; no se aportan sus especificaciones |
 | Otros LoRA de video para difusion | Adaptadores de bajo rango | no disponible | no disponible | no disponible | no disponible |
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento, parametros o contexto de alternativas com
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WarmBloodAban/Minimax_H3_LoRAs
+- Repositorio en Hugging Face: https://huggingface.co/WarmBloodAban/Minimax_H3_LoRAs
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Video de demostracion incluido en el repositorio: https://huggingface.co/WarmBloodAban/Minimax_H3_LoRAs/resolve/main/video/AIGCTYD2_00001_p81-audio_zhdhz_1789639479%20(1).mp4
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las unicas entradas devueltas corresponden a paginas de soporte tecnico de HP y no guardan relacion con este repositorio.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-RLTT/Affine-sn120-cand2 es un checkpoint publicado en HuggingFace por el usuario RLTT sobre el modelo base Qwen/Qwen3.6-35B-A3B, una arquitectura de mezcla de expertos (MoE) del linaje Qwen. Las etiquetas del repositorio —affine, sn120, bittensor, lora, distillation— sitúan el artefacto en el ecosistema de la subred 120 (sn120) de Bittensor, y apuntan a un resultado de ajuste fino tipo LoRA y/o destilación sobre dicho modelo base, dentro de un proceso de entrenamiento incentivado por la red.
+RLTT/Affine-sn120-cand2 es un checkpoint publicado en Hugging Face por el usuario RLTT sobre el modelo base Qwen/Qwen3.6-35B-A3B, una arquitectura de mezcla de expertos (MoE) del linaje Qwen. Las etiquetas del repositorio —affine, sn120, bittensor, lora, distillation— sitúan el artefacto en el ecosistema de la subred 120 (sn120) de Bittensor, y apuntan a un resultado de ajuste fino tipo LoRA y/o destilación sobre dicho modelo base, dentro de un proceso de entrenamiento incentivado por la red.
 
-Los pesos suman 34.660.610.688 parámetros (unos 34,66 mil millones) y el repositorio ocupa 69,3 GB, lo que equivale aproximadamente a 2 bytes por parámetro y sitúa el checkpoint en precisión bf16 o fp16. Se trata de un modelo de acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de poder descargarlo. La licencia declarada es Apache 2.0.
+Los pesos suman 34.660.610.688 parámetros (unos 34,66 mil millones) y el repositorio ocupa 69,3 GB, lo que equivale aproximadamente a 2 bytes por parámetro y sitúa el checkpoint en precisión bf16 o fp16. Se trata de un modelo de acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de poder descargarlo. La licencia declarada es Apache 2.0.
 
 La relevancia práctica de esta ficha es acotada: es un artefacto de investigación con tracción mínima (2 descargas y 1 like en el momento de la consulta), sin documentación pública sobre datos de entrenamiento, idiomas, longitud de contexto o rendimiento. La búsqueda web realizada no devolvió ningún resultado técnico relacionado con el modelo.
 
@@ -22,7 +22,7 @@ La relevancia práctica de esta ficha es acotada: es un artefacto de investigaci
 | Formato de pesos | safetensors |
 | Modelo base | Qwen/Qwen3.6-35B-A3B |
 | Tipo de artefacto | adaptador o checkpoint derivado (etiquetas `lora`, `distillation`, `affine`) |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 69,3 GB |
 | Fecha de creacion | 2026-09-15 |
 | Ultima actualizacion | 2026-09-15 |
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia en bf16/fp16: aproximadamente 70 GB solo para pesos (69,3 GB de safetensors), mas el cache KV y el overhead del runtime. En la practica, se necesitan del orden de 80 GB o mas de memoria agregada.
 - GPUs recomendadas: H100 80 GB o A100 80 GB en configuracion de una sola tarjeta para el checkpoint sin cuantizar; alternativas multi-GPU (2 x A100 40 GB, 2 x L40S 48 GB) si el runtime soporta paralelismo de tensor.
 - GPU de consumo: no es viable en bf16 en tarjetas de 24 GB (RTX 4090, RTX 3090). Una cuantizacion a 4 bits reduciria los pesos a un rango estimado de 18-20 GB, lo que en teoria permitiria ejecutarlo en una RTX 4090, pero no hay cuantizaciones publicadas en el repositorio, por lo que el dato es una estimacion, no una cifra verificada.
-- Opciones de despliegue: vLLM, TGI y SGLang son las opciones razonables para un MoE de este tamano en GPUs de datacenter. llama.cpp y Ollama no son aplicables sin una conversion previa a GGUF, que no esta publicada. El acceso gated obliga a configurar el token de HuggingFace en el runtime.
+- Opciones de despliegue: vLLM, TGI y SGLang son las opciones razonables para un MoE de este tamano en GPUs de datacenter. llama.cpp y Ollama no son aplicables sin una conversion previa a GGUF, que no esta publicada. El acceso gated obliga a configurar el token de Hugging Face en el runtime.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | RLTT/Affine-sn120-cand2 | 34,66 B (activos no disponibles) | no disponible | apache-2.0 | gated, 2 descargas | Adaptador o checkpoint derivado, sin benchmarks |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | ≈35 B totales segun nomenclatura (activos ≈3 B, no confirmado) | no disponible | no disponible | publico en HuggingFace | Referencia directa para medir el efecto del ajuste |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | ≈35 B totales segun nomenclatura (activos ≈3 B, no confirmado) | no disponible | no disponible | publico en Hugging Face | Referencia directa para medir el efecto del ajuste |
 | Otras alternativas MoE de tamano similar | no disponible | no disponible | no disponible | no disponible | No se han encontrado datos en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -89,6 +89,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RLTT/Affine-sn120-cand2
+- Hugging Face: https://huggingface.co/RLTT/Affine-sn120-cand2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo; los resultados devueltos eran irrelevantes (comparativas de precios de telefonia movil) y no se han utilizado.

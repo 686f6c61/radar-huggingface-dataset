@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VOGPT-Code-Final es un modelo publicado en HuggingFace por el usuario khaledjkvhhj bajo el identificador `khaledjkvhhj/VOGPT-Code-Final`. El nombre sugiere un modelo orientado a código (Code), y los pesos en formato safetensors declaran 8.028.033.024 parámetros totales (aproximadamente 8.000 millones), con un tamaño de repositorio de 16,1 GB, lo que es coherente con pesos en precisión de 16 bits para ese número de parámetros. La etiqueta de arquitectura declarada es `cohere2`, lo que indica que se construye sobre la familia de transformers Cohere2 (la misma base que los modelos Command R de Cohere), aunque no se dispone de documentación que confirme la configuración exacta de capas, atención o contexto.
+VOGPT-Code-Final es un modelo publicado en Hugging Face por el usuario khaledjkvhhj bajo el identificador `khaledjkvhhj/VOGPT-Code-Final`. El nombre sugiere un modelo orientado a código (Code), y los pesos en formato safetensors declaran 8.028.033.024 parámetros totales (aproximadamente 8.000 millones), con un tamaño de repositorio de 16,1 GB, lo que es coherente con pesos en precisión de 16 bits para ese número de parámetros. La etiqueta de arquitectura declarada es `cohere2`, lo que indica que se construye sobre la familia de transformers Cohere2 (la misma base que los modelos Command R de Cohere), aunque no se dispone de documentación que confirme la configuración exacta de capas, atención o contexto.
 
 El modelo no cuenta con pipeline declarado, licencia especificada ni idiomas documentados en la información disponible. Tampoco se han publicado resultados de benchmarks, datos de entrenamiento ni una model card descriptiva más allá de los metadatos técnicos. Las métricas de adopción son prácticamente nulas: 0 descargas y 1 like en el momento de la consulta, con fechas de creación y actualización en noviembre de 2026.
 
@@ -12,7 +12,7 @@ Por tanto, se trata de un modelo de aproximadamente 8.000 millones de parámetro
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | cohere2 (según tag de HuggingFace) |
+| Arquitectura | cohere2 (según tag de Hugging Face) |
 | Parámetros totales | 8.028.033.024 |
 | Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| VOGPT-Code-Final | ~8,03B | no disponible | no disponible | HuggingFace, 0 descargas |
+| VOGPT-Code-Final | ~8,03B | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas de ~7-8B (p. ej., Llama 3.1 8B, Qwen2.5 7B, Mistral 7B) | 7-8B | 32K-128K según modelo | licencias abiertas conocidas | ampliamente disponibles y documentadas |
 
 No se dispone de datos de rendimiento del modelo evaluado, por lo que la comparativa se limita a parámetros, contexto y licencia; no es posible comparar calidad ni benchmarks.
@@ -79,5 +79,5 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/khaledjkvhhj/VOGPT-Code-Final
+- Hugging Face: https://huggingface.co/khaledjkvhhj/VOGPT-Code-Final
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

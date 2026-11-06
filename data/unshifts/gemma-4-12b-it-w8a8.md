@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Precision / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Unshifts/gemma-4-12B-it-w8a8 | 11.959.730.224 | no disponible | int8 W8A8, safetensors compressed-tensors | no disponible | HuggingFace, requiere vLLM reciente |
-| google/gemma-4-12B-it (base) | no disponible en la informacion proporcionada | no disponible | BF16 original (segun el autor, el checkpoint de partida) | no disponible | HuggingFace |
+| Unshifts/gemma-4-12B-it-w8a8 | 11.959.730.224 | no disponible | int8 W8A8, safetensors compressed-tensors | no disponible | Hugging Face, requiere vLLM reciente |
+| google/gemma-4-12B-it (base) | no disponible en la informacion proporcionada | no disponible | BF16 original (segun el autor, el checkpoint de partida) | no disponible | Hugging Face |
 | Otras cuantizaciones del mismo modelo base | no disponible | no disponible | no disponible | no disponible | no se han encontrado en la informacion proporcionada |
 
 La busqueda web realizada no devolvio ningun resultado relacionado con el modelo ni con alternativas comparables, por lo que no es posible contrastar esta variante con otras cuantizaciones de la misma categoria.
@@ -101,7 +101,7 @@ La busqueda web realizada no devolvio ningun resultado relacionado con el modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Unshifts/gemma-4-12B-it-w8a8
+- Modelo en Hugging Face: https://huggingface.co/Unshifts/gemma-4-12B-it-w8a8
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - llm-compressor: https://github.com/vllm-project/llm-compressor
 - vLLM: https://github.com/vllm-project/vllm

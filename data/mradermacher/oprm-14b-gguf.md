@@ -86,7 +86,7 @@ No se han identificado en la información proporcionada modelos comparables conc
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/OPRM-14B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/OPRM-14B-GGUF
 - Modelo base: https://huggingface.co/ritzzai/OPRM-14B
 - Página de descargas del autor: https://hf.tst.eu/model#OPRM-14B-GGUF
 - README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

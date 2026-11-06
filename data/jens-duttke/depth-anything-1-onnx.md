@@ -83,12 +83,12 @@ El propio autor advierte que fijar las dimensiones es determinante: el mismo gra
 
 | Modelo | Parametros | Formato | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Depth-Anything-1-ONNX small | no disponible | ONNX FP16, 48 MB | 0,05 % MAD frente a PyTorch | Apache-2.0 | HuggingFace |
-| Depth-Anything-1-ONNX base | no disponible | ONNX FP16, 187 MB | 0,04 % MAD frente a PyTorch | Apache-2.0 | HuggingFace |
-| LiheYoung/depth-anything-small-hf | no disponible | PyTorch (checkpoint base) | referencia | Apache-2.0 | HuggingFace |
-| LiheYoung/depth-anything-base-hf | no disponible | PyTorch (checkpoint base) | referencia | Apache-2.0 | HuggingFace |
-| Depth Anything V2 | no disponible | no disponible | no disponible | no disponible | GitHub / HuggingFace |
-| MiDaS | no disponible | no disponible | no disponible | no disponible | GitHub / HuggingFace |
+| Depth-Anything-1-ONNX small | no disponible | ONNX FP16, 48 MB | 0,05 % MAD frente a PyTorch | Apache-2.0 | Hugging Face |
+| Depth-Anything-1-ONNX base | no disponible | ONNX FP16, 187 MB | 0,04 % MAD frente a PyTorch | Apache-2.0 | Hugging Face |
+| LiheYoung/depth-anything-small-hf | no disponible | PyTorch (checkpoint base) | referencia | Apache-2.0 | Hugging Face |
+| LiheYoung/depth-anything-base-hf | no disponible | PyTorch (checkpoint base) | referencia | Apache-2.0 | Hugging Face |
+| Depth Anything V2 | no disponible | no disponible | no disponible | no disponible | GitHub / Hugging Face |
+| MiDaS | no disponible | no disponible | no disponible | no disponible | GitHub / Hugging Face |
 
 La comparación directa de la que hay datos es la que ofrece el propio autor: esta exportación FP16 frente a la conversión a 4 bits que reemplaza, con una reducción de la desviación de 2,54 % a 0,05 % en small y de 1,37 % a 0,04 % en base. Frente a Depth Anything V2 o MiDaS no se dispone de métricas comparables en la información proporcionada.
 
@@ -107,7 +107,7 @@ La comparación directa de la que hay datos es la que ofrece el propio autor: es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jens-Duttke/Depth-Anything-1-ONNX
+- Modelo en Hugging Face: https://huggingface.co/Jens-Duttke/Depth-Anything-1-ONNX
 - Checkpoint base small: https://huggingface.co/LiheYoung/depth-anything-small-hf
 - Checkpoint base base: https://huggingface.co/LiheYoung/depth-anything-base-hf
 - Repositorio original Depth Anything: https://github.com/LiheYoung/Depth-Anything

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Babes_1.2a19_Anima_Turbo es un modelo publicado en HuggingFace por el usuario AIxFuneStudio bajo una licencia de tipo "other" y con acceso restringido (gated). El repositorio tiene un tamano de 4,2 GB, lo que sugiere un modelo de pesos relativamente ligeros o una variante cuantizada de un modelo mayor, aunque no se dispone de informacion sobre su arquitectura, numero de parametros ni proposito declarado.
+Babes_1.2a19_Anima_Turbo es un modelo publicado en Hugging Face por el usuario AIxFuneStudio bajo una licencia de tipo "other" y con acceso restringido (gated). El repositorio tiene un tamano de 4,2 GB, lo que sugiere un modelo de pesos relativamente ligeros o una variante cuantizada de un modelo mayor, aunque no se dispone de informacion sobre su arquitectura, numero de parametros ni proposito declarado.
 
-La ficha de HuggingFace no incluye pipeline declarado, idiomas soportados ni documentacion tecnica asociada. El nombre ("Babes", "Anima", "Turbo") es consistente con convenciones habituales en modelos de difusion para generacion de imagenes (sufijos como "Turbo" o "Anima" aparecen en checkpoints de Stable Diffusion y derivados), pero esta interpretacion no puede confirmarse con la informacion disponible y no debe tomarse como dato verificado.
+La ficha de Hugging Face no incluye pipeline declarado, idiomas soportados ni documentacion tecnica asociada. El nombre ("Babes", "Anima", "Turbo") es consistente con convenciones habituales en modelos de difusion para generacion de imagenes (sufijos como "Turbo" o "Anima" aparecen en checkpoints de Stable Diffusion y derivados), pero esta interpretacion no puede confirmarse con la informacion disponible y no debe tomarse como dato verificado.
 
 Por el momento, el modelo carece de descargas y likes, no tiene benchmarks publicados y su acceso esta condicionado a la aceptacion de terminos en la plataforma. Cualquier evaluacion tecnica requeriria solicitar acceso al repositorio y consultar la model card completa, que no se ha podido recuperar en la busqueda realizada.
 
@@ -23,7 +23,7 @@ Por el momento, el modelo carece de descargas y likes, no tiene benchmarks publi
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo (transformer, MoE, SSM, hibrida o difusion), el volumen de datos de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o fine-tuning supervisado. La model card accesible desde la API de HuggingFace no contiene estos apartados.
+No se ha publicado informacion sobre la arquitectura del modelo (transformer, MoE, SSM, hibrida o difusion), el volumen de datos de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o fine-tuning supervisado. La model card accesible desde la API de Hugging Face no contiene estos apartados.
 
 Tampoco se documentan innovaciones tecnicas destacables (atencion lineal, decodificacion especulativa, destilacion, etc.). El tamano del repositorio (4,2 GB) es el unico indicador cuantitativo disponible, pero por si solo no permite inferir ni el numero de parametros ni la precision de los pesos.
 
@@ -71,7 +71,7 @@ No disponible. No se ha podido determinar la categoria del modelo (texto, imagen
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion tecnica: no hay model card con arquitectura, datos de entrenamiento ni evaluaciones.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Licencia "other": es imprescindible revisar los terminos exactos antes de cualquier uso comercial; no se garantiza permiso de uso comercial.
 - Cero descargas y cero likes en el momento de la consulta: no hay evidencia de uso ni validacion por parte de la comunidad.
 - Riesgo de sesgos y alucinaciones: no evaluable sin acceso al modelo y sin documentacion.
@@ -81,5 +81,5 @@ No disponible. No se ha podido determinar la categoria del modelo (texto, imagen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIxFuneStudio/Babes_1.2a19_Anima_Turbo
+- Hugging Face: https://huggingface.co/AIxFuneStudio/Babes_1.2a19_Anima_Turbo
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web.

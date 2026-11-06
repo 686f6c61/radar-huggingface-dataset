@@ -4,7 +4,7 @@
 
 GLM-5.3-Flash es el primer modelo nativamente multimodal de la serie GLM-5, desarrollado por Z.ai. Se trata de un modelo de arquitectura MoE (Mixture of Experts) con 320 mil millones de parámetros totales y solo 18 mil millones activos por token, lo que permite un rendimiento cercano a Claude Opus 4.8 en tareas de programación y agentes a un coste computacional significativamente menor. Incorpora atención híbrida KDA y sparse MLA, pesos nativos en FP8, predicción multi-token (MTP) y una ventana de contexto de 1 millón de tokens.
 
-La versión aquí descrita es una cuantización GGUF publicada por DevQuasar, que facilita el despliegue local del modelo en entornos con recursos limitados. El modelo base está disponible en HuggingFace bajo el identificador `zai-org/GLM-5.3-Flash`, y su pipeline se clasifica como `image-text-to-text`, lo que confirma su capacidad multimodal (entrada de imagen y texto, salida de texto). La relevancia actual del modelo radica en su combinación de eficiencia (18B activos) con capacidades de razonamiento, coding y agente de largo alcance, posicionándose como una alternativa competitiva a modelos propietarios de mayor coste.
+La versión aquí descrita es una cuantización GGUF publicada por DevQuasar, que facilita el despliegue local del modelo en entornos con recursos limitados. El modelo base está disponible en Hugging Face bajo el identificador `zai-org/GLM-5.3-Flash`, y su pipeline se clasifica como `image-text-to-text`, lo que confirma su capacidad multimodal (entrada de imagen y texto, salida de texto). La relevancia actual del modelo radica en su combinación de eficiencia (18B activos) con capacidades de razonamiento, coding y agente de largo alcance, posicionándose como una alternativa competitiva a modelos propietarios de mayor coste.
 
 ## Especificaciones tecnicas
 
@@ -60,7 +60,7 @@ No se han publicado resultados numéricos de benchmarks (MMLU, HumanEval, GSM8K,
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash | 320B | 18B | 1M | no disponible | HuggingFace, API Z.ai |
+| GLM-5.3-Flash | 320B | 18B | 1M | no disponible | Hugging Face, API Z.ai |
 | GLM-5.2 | no disponible | no disponible | no disponible | no disponible | API Z.ai |
 | Claude Opus 4.8 | no disponible | no disponible | no disponible | propietaria | API Anthropic |
 

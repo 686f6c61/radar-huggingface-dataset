@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FrMedQA-CrossLingual-NoPPL-Unified es un ajuste fino (fine-tune) publicado por el usuario boods en HuggingFace, derivado del modelo base unsloth/Qwen3-14B-unsloth-bnb-4bit, que a su vez es una version cuantizada a 4 bits de Qwen3-14B. El repositorio contiene unicamente pesos en formato safetensors y no incluye pipeline declarado ni documentacion tecnica mas alla de la plantilla automatica de Unsloth. Por tanto, se trata de un modelo de generacion de texto de 14.800 millones de parametros aproximadamente, con licencia Apache 2.0, orientado segun su nombre a preguntas y respuestas medicas (MedQA) en contexto multilingue, aunque la model card no confirma ni detalla ese proposito.
+FrMedQA-CrossLingual-NoPPL-Unified es un ajuste fino (fine-tune) publicado por el usuario boods en Hugging Face, derivado del modelo base unsloth/Qwen3-14B-unsloth-bnb-4bit, que a su vez es una version cuantizada a 4 bits de Qwen3-14B. El repositorio contiene unicamente pesos en formato safetensors y no incluye pipeline declarado ni documentacion tecnica mas alla de la plantilla automatica de Unsloth. Por tanto, se trata de un modelo de generacion de texto de 14.800 millones de parametros aproximadamente, con licencia Apache 2.0, orientado segun su nombre a preguntas y respuestas medicas (MedQA) en contexto multilingue, aunque la model card no confirma ni detalla ese proposito.
 
 La relevancia de esta ficha es limitada pero util como caso de estudio: se trata de un ajuste fino reciente (creado y actualizado el 20 de septiembre de 2026), con cero descargas y cero likes, y un tamano de repositorio de solo 0,5 GB, lo que resulta incoherente con el peso completo de un modelo de 14B en 4 bits (que rondaria los 8-9 GB). Esto sugiere que el repositorio contiene adaptadores LoRA o pesos parciales, pero el autor no lo especifica en ningun momento.
 
@@ -88,8 +88,8 @@ Nota: los datos de las filas correspondientes a modelos de terceros proceden de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boods/FrMedQA-CrossLingual-NoPPL-Unified
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/boods/FrMedQA-CrossLingual-NoPPL-Unified
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Paper, blog o demo del ajuste: no disponible
 - Resultados de la busqueda web: no se ha encontrado ninguna referencia relevante al modelo. Los resultados devueltos corresponden a contenido no relacionado con el ambito tecnico y se descartan por completo.

@@ -79,6 +79,6 @@ No disponible. No se proporcionan datos de modelos comparables en la informació
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Chungulus/Qwen3.8-27B-MTP-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/Chungulus/Qwen3.8-27B-MTP-GGUF
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de llama.cpp (requerido para inferencia): https://github.com/ggml-org/llama.cpp

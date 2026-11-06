@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) publicado en HuggingFace por el usuario Mamun112244. Según la model card, se trata de un modelo con 552B parámetros de backbone más 196B de memoria condicional Engram, contexto de hasta un millón de tokens y procesamiento nativo de imágenes y texto. Su tesis técnica principal es la compresión agresiva de la caché KV: mediante atención dispersa CSA2, FP4 para la caché principal y SWA Bounded Replay, el autor afirma reducir la huella de caché global a 890 bytes por token, aproximadamente 1/4 de la de DeepSeek-V4-Flash y 1/437 de la de DeepSeek-V1.
+DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) publicado en Hugging Face por el usuario Mamun112244. Según la model card, se trata de un modelo con 552B parámetros de backbone más 196B de memoria condicional Engram, contexto de hasta un millón de tokens y procesamiento nativo de imágenes y texto. Su tesis técnica principal es la compresión agresiva de la caché KV: mediante atención dispersa CSA2, FP4 para la caché principal y SWA Bounded Replay, el autor afirma reducir la huella de caché global a 890 bytes por token, aproximadamente 1/4 de la de DeepSeek-V4-Flash y 1/437 de la de DeepSeek-V1.
 
 La arquitectura se describe como Causal Encoder-Decoder (CED): 40 capas Transformer divididas en 20 capas de encoder causal y 20 de decoder, donde la caché KV global del decoder se proyecta desde los estados ocultos finales del encoder en lugar de derivarse capa a capa. Esto permite activar solo 8B parámetros por token en prefill y 16B en decode, un planteamiento orientado a cargas de trabajo agénticas con entradas muy largas. Cada capa MoE usa 1 experto compartido y 384 expertos enrutados, activando 6 expertos enrutados por token.
 
@@ -104,8 +104,8 @@ No se dispone de información que permita comparar con alternativas de la misma 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mamun112244/DeepSeek-V4.1-Flash
-- Organización DeepSeek AI en HuggingFace (citada en la model card): https://huggingface.co/deepseek-ai
+- Repositorio en Hugging Face: https://huggingface.co/Mamun112244/DeepSeek-V4.1-Flash
+- Organización DeepSeek AI en Hugging Face (citada en la model card): https://huggingface.co/deepseek-ai
 - Chat de DeepSeek (citado en la model card): https://chat.deepseek.com/
 - Informe técnico referenciado en la model card (ruta dentro del repositorio, no verificada): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Logotipo y assets de referencia usados en la model card: https://github.com/deepseek-ai/DeepSeek-V2

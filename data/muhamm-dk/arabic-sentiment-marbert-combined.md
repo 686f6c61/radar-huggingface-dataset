@@ -72,8 +72,8 @@ No se han publicado en la información disponible comparaciones con otros modelo
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Muhamm-dk/arabic-sentiment-marbert-combined | 162,8 M | no disponible | Clasificación binaria, MSA + dialectos egipcio/jordano | other | HuggingFace, 35 descargas |
-| UBC-NLP/MARBERT (base) | ~163 M | 512 tokens (dato general, no confirmado en la ficha) | Encoder preentrenado, sin cabeza de sentimiento | no disponible en esta ficha | HuggingFace |
+| Muhamm-dk/arabic-sentiment-marbert-combined | 162,8 M | no disponible | Clasificación binaria, MSA + dialectos egipcio/jordano | other | Hugging Face, 35 descargas |
+| UBC-NLP/MARBERT (base) | ~163 M | 512 tokens (dato general, no confirmado en la ficha) | Encoder preentrenado, sin cabeza de sentimiento | no disponible en esta ficha | Hugging Face |
 | Alternativas específicas de sentimiento árabe | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con otros clasificadores de sentimiento árabe en la información proporcionada.
@@ -92,6 +92,6 @@ No se dispone de datos de benchmarks comparativos con otros clasificadores de se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Muhamm-dk/arabic-sentiment-marbert-combined
+- Modelo en Hugging Face: https://huggingface.co/Muhamm-dk/arabic-sentiment-marbert-combined
 - Repositorio de código, benchmark y análisis de errores: https://github.com/Muhamm-dk/arabic-sentiment-benchmark
 - Modelo base MARBERT: https://huggingface.co/UBC-NLP/MARBERT

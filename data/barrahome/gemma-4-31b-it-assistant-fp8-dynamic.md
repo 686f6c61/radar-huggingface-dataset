@@ -79,9 +79,9 @@ Las tres variantes comparten la misma arquitectura y parámetros; difieren únic
 
 ## Enlaces
 
-- [HuggingFace: BarraHome/gemma-4-31B-it-assistant-FP8-dynamic](https://huggingface.co/BarraHome/gemma-4-31B-it-assistant-FP8-dynamic)
-- [HuggingFace: google/gemma-4-31B-it-assistant (modelo base)](https://huggingface.co/google/gemma-4-31B-it-assistant)
-- [HuggingFace: google/gemma-4-31B-it (modelo objetivo)](https://huggingface.co/google/gemma-4-31B-it)
-- [HuggingFace: BarraHome/gemma-4-31B-it-assistant-FP8-block (variante hermana)](https://huggingface.co/BarraHome/gemma-4-31B-it-assistant-FP8-block)
+- [Hugging Face: BarraHome/gemma-4-31B-it-assistant-FP8-dynamic](https://huggingface.co/BarraHome/gemma-4-31B-it-assistant-FP8-dynamic)
+- [Hugging Face: google/gemma-4-31B-it-assistant (modelo base)](https://huggingface.co/google/gemma-4-31B-it-assistant)
+- [Hugging Face: google/gemma-4-31B-it (modelo objetivo)](https://huggingface.co/google/gemma-4-31B-it)
+- [Hugging Face: BarraHome/gemma-4-31B-it-assistant-FP8-block (variante hermana)](https://huggingface.co/BarraHome/gemma-4-31B-it-assistant-FP8-block)
 - [LLM Compressor (repositorio)](https://github.com/vllm-project/llm-compressor)
 - [Documentacion de vLLM sobre decodificacion especulativa](https://docs.vllm.ai/en/latest/features/speculative_decoding/)

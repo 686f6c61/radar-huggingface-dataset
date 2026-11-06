@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kraken blla Danish segmenter es un modelo de segmentación neural de líneas de texto y regiones de página, adaptado especificamente a maquetas de documentos daneses históricos. Lo publica el desarrollador Abhishek Jha (abhishekjha1008) bajo licencia Apache 2.0 y se distribuye en formato safetensors para su uso con la herramienta kraken, una libreria de reconocimiento de texto historico (HTR) de codigo abierto. El modelo se registra en HuggingFace con el pipeline `image-segmentation` y el identificador de idioma `da`.
+Kraken blla Danish segmenter es un modelo de segmentación neural de líneas de texto y regiones de página, adaptado especificamente a maquetas de documentos daneses históricos. Lo publica el desarrollador Abhishek Jha (abhishekjha1008) bajo licencia Apache 2.0 y se distribuye en formato safetensors para su uso con la herramienta kraken, una libreria de reconocimiento de texto historico (HTR) de codigo abierto. El modelo se registra en Hugging Face con el pipeline `image-segmentation` y el identificador de idioma `da`.
 
 Su funcion no es transcribir texto, sino resolver la fase previa del pipeline HTR: detectar y delimitar las lineas de texto mediante el modo blla (baseline + region) de kraken, generando poligonos de linea que despues consume un reconocedor aguas abajo. Se presenta como alternativa complementaria al segmentador basado en cajas YOLO del mismo autor (`yolov8m-historical-line-segmenter`), de modo que el usuario puede elegir el enfoque que mejor funcione por documento.
 
@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Enfoque | Tarea | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| abhishekjha1008/kraken-blla-danish-segmenter | blla (baseline + region) de kraken | Segmentacion de lineas y regiones | danes | Apache 2.0 | HuggingFace, pesos safetensors |
-| abhishekjha1008/yolov8m-historical-line-segmenter | Deteccion con YOLOv8m (cajas) | Segmentacion de lineas | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| abhishekjha1008/kraken-blla-danish-segmenter | blla (baseline + region) de kraken | Segmentacion de lineas y regiones | danes | Apache 2.0 | Hugging Face, pesos safetensors |
+| abhishekjha1008/yolov8m-historical-line-segmenter | Deteccion con YOLOv8m (cajas) | Segmentacion de lineas | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 | Modelo blla generico de kraken | blla (baseline + region) de kraken | Segmentacion de lineas y regiones | multilingue / no especifico | depende de la distribucion de kraken | Incluido o descargable con kraken |
 
 No se dispone de datos de rendimiento comparado entre estos modelos, por lo que la eleccion entre el segmentador blla y el basado en YOLO queda, segun el propio autor, a criterio del usuario y del documento concreto.
@@ -100,10 +100,10 @@ No se dispone de datos de rendimiento comparado entre estos modelos, por lo que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhishekjha1008/kraken-blla-danish-segmenter
+- Modelo en Hugging Face: https://huggingface.co/abhishekjha1008/kraken-blla-danish-segmenter
 - Dataset sintetico de entrenamiento: https://huggingface.co/datasets/abhishekjha1008/danish-htr-synthetic
 - Demo en vivo (HTR danes historico): https://huggingface.co/spaces/abhishekjha1008/historical-danish-htr
 - Segmentador alternativo basado en YOLO: https://huggingface.co/abhishekjha1008/yolov8m-historical-line-segmenter
-- Perfil del autor en HuggingFace: https://huggingface.co/abhishekjha1008
+- Perfil del autor en Hugging Face: https://huggingface.co/abhishekjha1008
 - Perfil del autor en GitHub: https://github.com/AbhiPandit1
 - Paper, blog o repositorio adicionales: no disponibles en la informacion proporcionada.

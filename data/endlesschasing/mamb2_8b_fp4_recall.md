@@ -78,9 +78,9 @@ La ganancia en MK normal es de 222/384 = 57,8125 puntos porcentuales, con interv
 
 | Modelo | Parametros | Contexto | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mamb2_8B_FP4_Recall | 8.236.999.680 | no disponible | PPL WT2 test 6,717746660814748; MK normal 353/384 | other (Apache 2.0 base + GPL-3.0 runtime) | HuggingFace + GitHub |
-| nvidia/mamba2-8b-3t-4k (base) | ~8B | no disponible (nomenclatura 4k) | no disponible en la informacion | Apache 2.0 | HuggingFace (NVIDIA) |
-| Mamb2_8B_W4A16_Recall | no disponible | no disponible | no disponible | no disponible | HuggingFace (mismo autor) |
+| Mamb2_8B_FP4_Recall | 8.236.999.680 | no disponible | PPL WT2 test 6,717746660814748; MK normal 353/384 | other (Apache 2.0 base + GPL-3.0 runtime) | Hugging Face + GitHub |
+| nvidia/mamba2-8b-3t-4k (base) | ~8B | no disponible (nomenclatura 4k) | no disponible en la informacion | Apache 2.0 | Hugging Face (NVIDIA) |
+| Mamb2_8B_W4A16_Recall | no disponible | no disponible | no disponible | no disponible | Hugging Face (mismo autor) |
 | mamba2-8b-e8w5 (compresion E8/W5) | no disponible | no disponible | no disponible | no disponible | GitHub (mismo autor, trabajo en curso) |
 
 No se dispone de comparaciones con modelos externos de la misma categoria en la informacion proporcionada.
@@ -99,7 +99,7 @@ No se dispone de comparaciones con modelos externos de la misma categoria en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EndlessChasing/Mamb2_8B_FP4_Recall
+- Modelo en Hugging Face: https://huggingface.co/EndlessChasing/Mamb2_8B_FP4_Recall
 - Fichero de licencias: https://huggingface.co/EndlessChasing/Mamb2_8B_FP4_Recall/blob/v0.1.0-fp4g16-repaired-s16-resurface/LICENSES.md
 - Repositorio GitHub: https://github.com/EndlessChasing/mamb2_8B_FP4_Recall
 - Repositorio GitHub de compresion E8/W5: https://github.com/EndlessChasing/mamba2-8b-e8w5

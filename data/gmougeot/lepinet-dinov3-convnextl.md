@@ -86,10 +86,10 @@ No se han publicado en la informacion disponible valores absolutos de macro-F1, 
 
 | Modelo | Parametros | Entrada | Contexto/rango | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| `lepinet-dinov3-convnextl` | 217 M | 320x320 RGB | 12.041 especies, 4.333 generos, 102 familias | dinov3-license (other) + peticion no comercial sobre datos de entrenamiento | ONNX fp32/fp16/int8 en HuggingFace | Mas preciso que BioCLIP-2 en fotos de GBIF; peor en confianza calibrada |
-| `lepinet-bioclip2-vitl14` | 321 M | no disponible en la informacion proporcionada | misma taxonomia (ficheros compartidos) | no disponible en la informacion proporcionada | HuggingFace | Recomendado por el autor si se usan umbrales de confianza (83,3 % al 95 % de precision) |
-| `lepinet-effnetv2s` | 37 M | no disponible en la informacion proporcionada | misma taxonomia (ficheros compartidos) | no disponible en la informacion proporcionada | HuggingFace | Variante rapida en CPU |
-| `timm/convnext_large.dinov3_lvd1689m` | backbone base | no disponible en la informacion proporcionada | preentrenamiento generico (LVD-1689M) | dinov3-license | HuggingFace, timm, Transformers | Modelo base sin ajuste taxonomico |
+| `lepinet-dinov3-convnextl` | 217 M | 320x320 RGB | 12.041 especies, 4.333 generos, 102 familias | dinov3-license (other) + peticion no comercial sobre datos de entrenamiento | ONNX fp32/fp16/int8 en Hugging Face | Mas preciso que BioCLIP-2 en fotos de GBIF; peor en confianza calibrada |
+| `lepinet-bioclip2-vitl14` | 321 M | no disponible en la informacion proporcionada | misma taxonomia (ficheros compartidos) | no disponible en la informacion proporcionada | Hugging Face | Recomendado por el autor si se usan umbrales de confianza (83,3 % al 95 % de precision) |
+| `lepinet-effnetv2s` | 37 M | no disponible en la informacion proporcionada | misma taxonomia (ficheros compartidos) | no disponible en la informacion proporcionada | Hugging Face | Variante rapida en CPU |
+| `timm/convnext_large.dinov3_lvd1689m` | backbone base | no disponible en la informacion proporcionada | preentrenamiento generico (LVD-1689M) | dinov3-license | Hugging Face, timm, Transformers | Modelo base sin ajuste taxonomico |
 
 No se dispone de datos comparativos frente a clasificadores entomologicos de terceros ajenos al proyecto lepinet.
 
@@ -108,7 +108,7 @@ No se dispone de datos comparativos frente a clasificadores entomologicos de ter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gmougeot/lepinet-dinov3-convnextl
+- Modelo en Hugging Face: https://huggingface.co/gmougeot/lepinet-dinov3-convnextl
 - Modelo base en timm: https://huggingface.co/timm/convnext_large.dinov3_lvd1689m
 - Variante recomendada por el autor: https://huggingface.co/gmougeot/lepinet-bioclip2-vitl14
 - Variante ligera: https://huggingface.co/gmougeot/lepinet-effnetv2s
@@ -117,7 +117,7 @@ No se dispone de datos comparativos frente a clasificadores entomologicos de ter
 - Repositorio DINOv3 de Meta: https://github.com/facebookresearch/dinov3
 - Implementacion del backbone ConvNeXt en DINOv3: https://github.com/facebookresearch/dinov3/blob/main/dinov3/models/convnext.py
 - Pagina de investigacion DINOv3: https://ai.meta.com/research/dinov3/
-- Ejemplo de pesos DINOv3 en HuggingFace: https://huggingface.co/facebook/dinov3-convnext-small-pretrain-lvd1689m
+- Ejemplo de pesos DINOv3 en Hugging Face: https://huggingface.co/facebook/dinov3-convnext-small-pretrain-lvd1689m
 - Repositorio auxiliar lepinet-models: https://huggingface.co/gmougeot/lepinet-models
 - Articulo de referencia (identificador arXiv declarado en las etiquetas): arxiv:2508.10104
 - GBIF: https://www.gbif.org

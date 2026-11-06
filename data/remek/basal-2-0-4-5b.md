@@ -91,7 +91,7 @@ La comparación con modelos generativos de propósito general no es directa: bas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Remek/basal-2.0-4.5B
+- Modelo en Hugging Face: https://huggingface.co/Remek/basal-2.0-4.5B
 - Motor de inferencia (GitHub): https://github.com/rkinas/basal
 - Documentación de hardware: https://github.com/rkinas/basal/blob/v2.5.0/docs/HARDWARE.md
 - Sitio web: https://basal.si5.pl/

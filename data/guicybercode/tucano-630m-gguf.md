@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| guicybercode/Tucano-630m-GGUF (este repositorio) | 630 M | no disponible | GGUF (Q4_K_M, Q8_0, F16) | Apache-2.0 | HuggingFace; 0 descargas, 0 likes |
-| TucanoBR/Tucano-630m (modelo base) | 630 M | no disponible | no indicado (el dato de parámetros procede de safetensors) | Apache-2.0 | HuggingFace (organización TucanoBR) |
+| guicybercode/Tucano-630m-GGUF (este repositorio) | 630 M | no disponible | GGUF (Q4_K_M, Q8_0, F16) | Apache-2.0 | Hugging Face; 0 descargas, 0 likes |
+| TucanoBR/Tucano-630m (modelo base) | 630 M | no disponible | no indicado (el dato de parámetros procede de safetensors) | Apache-2.0 | Hugging Face (organización TucanoBR) |
 | Otras alternativas de ~600 M en portugués | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos de rendimiento que permitan una comparación cuantitativa con modelos de la misma categoría; la comparación anterior se limita a parámetros, formato y licencia.
@@ -98,7 +98,7 @@ No se dispone en la información proporcionada de datos de rendimiento que permi
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/guicybercode/Tucano-630m-GGUF
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/guicybercode/Tucano-630m-GGUF
 - Modelo base original: https://huggingface.co/TucanoBR/Tucano-630m
 - Paper de Tucano (arXiv:2411.07854): https://arxiv.org/abs/2411.07854
 - llama.cpp (herramienta de conversión y cuantización): https://github.com/ggml-org/llama.cpp

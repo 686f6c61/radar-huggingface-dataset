@@ -90,10 +90,10 @@ Lectura de los datos según el propio autor: la mejora se concentra en el *bindi
 
 | Modelo | Parametros | Contexto | BFCL v3 simple | MMLU finance | FinQA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Cent1-1B | 1,72B | 40.960 | 0,7225 | 0,5756 | 0,0220 | Apache 2.0 | HuggingFace, safetensors |
-| Qwen3-1.7B (base) | 1,72B | 32.768 (segun Qwen3) | 0,6750 | 0,5476 | 0,0549 | Apache 2.0 | HuggingFace, safetensors |
-| Qwen3-0.6B | 0,6B | no disponible en la informacion | 0,5475 | 0,4449 | 0,1209 | Apache 2.0 | HuggingFace, safetensors |
-| Qwen3-4B | 4B | no disponible en la informacion | 0,7375 | 0,7276 | 0,3407 | Apache 2.0 | HuggingFace, safetensors |
+| Cent1-1B | 1,72B | 40.960 | 0,7225 | 0,5756 | 0,0220 | Apache 2.0 | Hugging Face, safetensors |
+| Qwen3-1.7B (base) | 1,72B | 32.768 (segun Qwen3) | 0,6750 | 0,5476 | 0,0549 | Apache 2.0 | Hugging Face, safetensors |
+| Qwen3-0.6B | 0,6B | no disponible en la informacion | 0,5475 | 0,4449 | 0,1209 | Apache 2.0 | Hugging Face, safetensors |
+| Qwen3-4B | 4B | no disponible en la informacion | 0,7375 | 0,7276 | 0,3407 | Apache 2.0 | Hugging Face, safetensors |
 
 La comparativa se limita a la familia Qwen3 porque es la única para la que la model card aporta cifras comparables. No se dispone de datos de otros modelos especializados en *tool calling* financiero de tamaño similar en la información proporcionada.
 
@@ -112,8 +112,8 @@ La comparativa se limita a la familia Qwen3 porque es la única para la que la m
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/CentIo/Cent1-1B
-- Perfil del autor en HuggingFace: https://huggingface.co/CentIo
+- Hugging Face del modelo: https://huggingface.co/CentIo/Cent1-1B
+- Perfil del autor en Hugging Face: https://huggingface.co/CentIo
 - Modelo base Qwen/Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 
 Nota sobre la búsqueda web: los resultados obtenidos no guardan relación con Cent1-1B. Corresponden a otros artefactos y noticias sin conexión con este modelo (CladeTeam/CENO-1B-base, un modelo genómico; Limite 1B Violetto, un modelo matemático de Paradigma; la colección Parakeet 1.1B CTC de NVIDIA; una noticia sobre un fondo de Meta; y una pieza de Rocket League). No se han encontrado papers, blogs, repositorios ni demos adicionales específicos de Cent1-1B.

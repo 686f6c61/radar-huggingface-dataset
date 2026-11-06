@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-quantized.w4a16 es una version cuantizada a INT4 del modelo multimodal Qwen/Qwen3.5-4B, publicada en HuggingFace por el usuario victory5 bajo licencia Apache 2.0. Segun la propia model card, el artefacto lo desarrollo RedHatAI y el repositorio que nos ocupa (con 0 descargas y 0 likes) parece una re-subida del original, un detalle a tener en cuenta antes de usarlo en produccion.
+Qwen3.5-4B-quantized.w4a16 es una version cuantizada a INT4 del modelo multimodal Qwen/Qwen3.5-4B, publicada en Hugging Face por el usuario victory5 bajo licencia Apache 2.0. Segun la propia model card, el artefacto lo desarrollo RedHatAI y el repositorio que nos ocupa (con 0 descargas y 0 likes) parece una re-subida del original, un detalle a tener en cuenta antes de usarlo en produccion.
 
 El modelo acepta entrada de texto e imagen y genera texto, con 4.539.265.536 parametros totales (4,54 B) y un peso en disco de 5,2 GB frente a los 8,8 GB de la version en BF16, lo que supone una reduccion de aproximadamente el 41 %. La cuantizacion se aplico solo a los pesos de los operadores lineales de los bloques transformer mediante LLM Compressor con el esquema W4A16, dejando el vision encoder, los embeddings de tokens y las capas de atencion lineal en BF16.
 
@@ -20,7 +20,7 @@ Su relevancia practica esta en que permite servir un modelo multimodal de 4B con
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors con compresion `compressed-tensors` |
 | Tamano del repositorio | 5,5 GB (5,2 GB de pesos segun la model card) |
-| Fecha de publicacion en HuggingFace | 12 de septiembre de 2026 (model card del artefacto original: 16 de abril de 2026) |
+| Fecha de publicacion en Hugging Face | 12 de septiembre de 2026 (model card del artefacto original: 16 de abril de 2026) |
 | Libreria de inferencia | transformers; preparado para vLLM |
 
 ## Arquitectura y entrenamiento
@@ -103,7 +103,7 @@ La comparacion directa con el modelo base muestra que la cuantizacion W4A16 es p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/victory5/Qwen3.5-4B-quantized.w4a16
+- Repositorio en Hugging Face: https://huggingface.co/victory5/Qwen3.5-4B-quantized.w4a16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Artefacto original referenciado en la model card: https://huggingface.co/RedHatAI/Qwen3.5-4B-quantized.w4a16

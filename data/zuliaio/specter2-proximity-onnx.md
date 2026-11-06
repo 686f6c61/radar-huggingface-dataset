@@ -80,7 +80,7 @@ La principal diferencia de esta version ONNX es la portabilidad: elimina la depe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zuliaio/specter2-proximity-onnx
+- Repositorio Hugging Face: https://huggingface.co/zuliaio/specter2-proximity-onnx
 - Repositorio original SPECTER2: https://github.com/allenai/SPECTER2
 - Paper SPECTER (Cohan et al., 2020): https://aclanthology.org/2020.acl-main.505/
 - Paper SciRepEval (Singh et al., 2022): https://api.semanticscholar.org/CorpusID:254018137

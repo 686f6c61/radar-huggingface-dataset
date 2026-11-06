@@ -94,9 +94,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `toyin88/u2t01-bert-agnews` (este) | 109.485.316 | 128 tokens de entrenamiento (BERT-base admite 512) | accuracy 91,45 / macro F1 91,22 en test (6.000 ejemplos de entrenamiento) | Apache 2.0 | HuggingFace, repo de 0,4 GB |
+| `toyin88/u2t01-bert-agnews` (este) | 109.485.316 | 128 tokens de entrenamiento (BERT-base admite 512) | accuracy 91,45 / macro F1 91,22 en test (6.000 ejemplos de entrenamiento) | Apache 2.0 | Hugging Face, repo de 0,4 GB |
 | Baselines del mismo proyecto (`agnews_feature_logreg_fast`, `agnews_feature_mlp_fast`) | 0 parametros entrenables en el encoder | 128 tokens | 86,35 y 89,35 de accuracy en test | No especificada en la informacion disponible | Resultados publicados en la model card; no se distribuyen como repos independientes |
-| `mansoorhamidzadeh/ag-news-bert-classification` | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| `mansoorhamidzadeh/ag-news-bert-classification` | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 El unico modelo comparable con datos verificables es el segundo clasificador BERT de AG News encontrado en la busqueda, del que no se han publicado especificaciones ni metricas en la informacion disponible, por lo que no es posible establecer una comparacion cuantitativa.
 
@@ -114,10 +114,10 @@ El unico modelo comparable con datos verificables es el segundo clasificador BER
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/toyin88/u2t01-bert-agnews
+- Modelo en Hugging Face: https://huggingface.co/toyin88/u2t01-bert-agnews
 - Paper de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805
 - Dataset AG News: https://huggingface.co/datasets/fancyzhx/ag_news
-- Documentacion de HuggingFace para ajuste fino: https://huggingface.co/docs/transformers/training
+- Documentacion de Hugging Face para ajuste fino: https://huggingface.co/docs/transformers/training
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Clasificador BERT de AG News alternativo (sin metricas publicadas en la informacion disponible): https://huggingface.co/mansoorhamidzadeh/ag-news-bert-classification
 - Repositorio GitHub de clasificacion de texto con BERT sobre AG News: https://github.com/AjNavneet/BERT-Text-Classification-AGNews

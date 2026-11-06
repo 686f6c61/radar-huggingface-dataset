@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ2_XXS_R4-SPECIAL_SPLIT
+- Modelo en Hugging Face: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ2_XXS_R4-SPECIAL_SPLIT
 - Discusiones del modelo: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT/discussions
 - Coleccion de modelos de Thireus: https://gguf.thireus.com/
 - Blog sobre Qwen3.8-27B (referencia del modelo base): https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026

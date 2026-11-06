@@ -2,11 +2,11 @@
 
 ## Resumen
 
-rh-kook-moss-sft-lora es un adaptador LoRA para generación de imágenes, publicado en HuggingFace por RunningHubAI en nombre del autor KOOK. No se trata de un modelo completo, sino de un conjunto de pesos de bajo rango (un único archivo `KOOK-MOSS-SFT-观澜.safetensors` de 138 MiB) que se aplica sobre el modelo base denominado `moss-image`, del que la model card no ofrece ninguna especificación técnica.
+rh-kook-moss-sft-lora es un adaptador LoRA para generación de imágenes, publicado en Hugging Face por RunningHubAI en nombre del autor KOOK. No se trata de un modelo completo, sino de un conjunto de pesos de bajo rango (un único archivo `KOOK-MOSS-SFT-观澜.safetensors` de 138 MiB) que se aplica sobre el modelo base denominado `moss-image`, del que la model card no ofrece ninguna especificación técnica.
 
 El artefacto está etiquetado para ComfyUI y para la plataforma RunningHub, y la propia model card lo describe como un fine-tuning orientado a «mejora de la textura en datasets de retratos» y a colaboraciones comerciales, aunque sin detallar rango del LoRA, módulos objetivo, dataset ni hiperparámetros de entrenamiento. Su relevancia práctica es la habitual de un LoRA de imagen: ajustar el estilo o la calidad de un modelo base sin necesidad de reentrenarlo ni de cargar pesos adicionales de gran tamaño.
 
-La información pública es muy escasa: cero descargas, cero likes, sin licencia declarada, sin pipeline especificado en HuggingFace, sin idiomas documentados y sin benchmarks. Cualquier evaluación en producción exige verificar por separado la licencia del modelo base `moss-image` y la del propio adaptador.
+La información pública es muy escasa: cero descargas, cero likes, sin licencia declarada, sin pipeline especificado en Hugging Face, sin idiomas documentados y sin benchmarks. Cualquier evaluación en producción exige verificar por separado la licencia del modelo base `moss-image` y la del propio adaptador.
 
 ## Especificaciones tecnicas
 
@@ -86,12 +86,12 @@ No se han identificado en la informacion proporcionada modelos comparables concr
 - Artefactos de generación: como cualquier LoRA de imagen, puede producir imperfecciones en manos, ojos, texto dentro de la imagen y coherencia anatómica; no hay evaluaciones publicadas que lo cuantifiquen.
 - Idiomas de prompt no documentados: no se puede garantizar el comportamiento con prompts en castellano.
 - Validación comunitaria nula: cero descargas y cero likes en el momento de la consulta, sin retroalimentación de terceros.
-- Contenido promocional en la model card: incluye enlaces de invitación y descargas alojadas en servicios externos (Quark, Baidu) ajenos a HuggingFace; conviene tratarlos con cautela.
+- Contenido promocional en la model card: incluye enlaces de invitación y descargas alojadas en servicios externos (Quark, Baidu) ajenos a Hugging Face; conviene tratarlos con cautela.
 - Inconsistencia de fechas: la fecha de creación declarada (2026-10-21) es posterior a la fecha habitual de consulta, lo que puede afectar a la trazabilidad del artefacto.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-kook-moss-sft-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-kook-moss-sft-lora
 - Model card en chino: https://huggingface.co/RunningHubAI/rh-kook-moss-sft-lora/blob/main/README_cn.md
 - Página original del modelo en RunningHub: https://www.runninghub.cn/model/public/2112929373606203394
 - Página del autor (KOOK) en RunningHub: https://www.runninghub.cn/user-center/1932028484909178882

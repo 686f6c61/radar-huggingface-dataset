@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-TWIN-TURBO-f-c-f-709-l-unc-oQ4e-aura-last4-fp16-vision-mtp es un artefacto de cuantizacion publicado por el usuario Johneeee en HuggingFace, no un modelo entrenado desde cero. Se trata de una version en precision mixta de 4 bits de un modelo base cuyo campo `model type` se declara como `qwen3_5`, con 27.781.427.952 parametros totales segun los metadatos de safetensors y un repositorio de 21,1 GB.
+Qwen3.8-27B-TWIN-TURBO-f-c-f-709-l-unc-oQ4e-aura-last4-fp16-vision-mtp es un artefacto de cuantizacion publicado por el usuario Johneeee en Hugging Face, no un modelo entrenado desde cero. Se trata de una version en precision mixta de 4 bits de un modelo base cuyo campo `model type` se declara como `qwen3_5`, con 27.781.427.952 parametros totales segun los metadatos de safetensors y un repositorio de 21,1 GB.
 
 La cuantizacion se ha realizado con oQ, la herramienta de cuantizacion de precision mixta integrada en oMLX (version v0.7.0.dev4), con un tamano de grupo de 64 y formato de pesos MLX safetensors. El nombre del repositorio incluye sufijos como `vision`, `mtp` (probablemente multi-token prediction), `last4-fp16` (las cuatro ultimas capas conservadas en fp16) y `l-unc`, pero la model card no documenta ninguna de estas caracteristicas, por lo que no pueden darse por confirmadas.
 
@@ -78,7 +78,7 @@ No se dispone de informacion verificable sobre modelos comparables en los datos 
 ## Limitaciones y advertencias
 
 - La model card no documenta licencia. Sin licencia explicita, no puede asumirse permiso de uso comercial sobre este artefacto ni sobre el modelo base del que deriva; hay que consultar la licencia del modelo original antes de cualquier uso en produccion.
-- La ausencia de campos como idiomas, pipeline o licencia en los metadatos de HuggingFace indica que el autor no ha completado la ficha del repositorio, lo que dificulta evaluar su idoneidad.
+- La ausencia de campos como idiomas, pipeline o licencia en los metadatos de Hugging Face indica que el autor no ha completado la ficha del repositorio, lo que dificulta evaluar su idoneidad.
 - Riesgo de alucinacion: inherente a cualquier modelo de lenguaje de esta escala y no cuantificado aqui. La cuantizacion de 4 bits tiende a incrementar ligeramente la tasa de errores en tareas de razonamiento y generacion de codigo, aunque el uso de fp16 en las ultimas cuatro capas mitiga parte del efecto.
 - Artefacto con 0 descargas y 0 likes: sin validacion por parte de la comunidad. No hay evidencia de que los pesos esten completos, sean coherentes o reproduzcan fielmente el comportamiento del modelo base.
 - La fecha de creacion que figura en los metadatos (2026-10-02) resulta anomala y conviene verificarla; puede deberse a un error de registro o a un reloj mal configurado.
@@ -89,6 +89,6 @@ No se dispone de informacion verificable sobre modelos comparables en los datos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-f-c-f-709-l-unc-oQ4e-aura-last4-fp16-vision-mtp
+- Repositorio en Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-f-c-f-709-l-unc-oQ4e-aura-last4-fp16-vision-mtp
 - Herramienta de cuantizacion oQ (oMLX), citada en la model card: https://github.com/jundot/omlx
 - Libreria MLX (formato de pesos y runtime): https://github.com/ml-explore/mlx

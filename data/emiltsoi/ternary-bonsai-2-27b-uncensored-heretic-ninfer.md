@@ -97,7 +97,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/emiltsoi/Ternary-Bonsai-2-27B-Uncensored-Heretic-NInfer
+- Hugging Face: https://huggingface.co/emiltsoi/Ternary-Bonsai-2-27B-Uncensored-Heretic-NInfer
 - Modelo base (decensurado, GGUF): https://huggingface.co/OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF
 - Modelo base ternario: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Motor NInfer y receta de conversión: https://github.com/iamwavecut/ninfer-3090

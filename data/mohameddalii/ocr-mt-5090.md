@@ -70,15 +70,15 @@ No existe una comparativa directa porque este repositorio no es un modelo indepe
 | Solución | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | `ocr-mt-5090` | Kit de despliegue (Qwen3-4B + PaddleOCR-VL) | 2048/8192 | Apache 2.0 | GitHub/HuggingFace |
-| PaddleOCR-VL (standalone) | Modelo OCR | 8192 | Apache 2.0 | HuggingFace |
-| Qwen3-4B-Instruct (standalone) | LLM de traducción | 2048 | Apache 2.0 | HuggingFace |
+| PaddleOCR-VL (standalone) | Modelo OCR | 8192 | Apache 2.0 | Hugging Face |
+| Qwen3-4B-Instruct (standalone) | LLM de traducción | 2048 | Apache 2.0 | Hugging Face |
 | Mistral Document AI (OCR 4.0) | OCR empresarial | No disponible | Propietaria | Azure |
 
 La principal ventaja de este kit es la integración en un solo GPU, mientras que las alternativas suelen requerir dos GPUs o usar modelos propietarios con licencias restrictivas.
 
 ## Limitaciones y advertencias
 
-- **No es un modelo entrenado**: el repositorio no contiene pesos propios; depende de la disponibilidad de los modelos base en HuggingFace y de su correcto funcionamiento.
+- **No es un modelo entrenado**: el repositorio no contiene pesos propios; depende de la disponibilidad de los modelos base en Hugging Face y de su correcto funcionamiento.
 - **Requisitos de hardware estrictos**: solo probado en RTX 5090; en otras GPUs puede no caber o requerir cuantización (que el autor desaconseja explícitamente).
 - **Contexto limitado para traducción**: la ventana de 2048 tokens para Qwen3 puede ser insuficiente para documentos largos; se recomienda segmentar.
 - **Sesgos y alucinaciones de los modelos base**: tanto Qwen3 como PaddleOCR-VL pueden presentar sesgos o errores en idiomas poco comunes; el autor no ha documentado limitaciones específicas.
@@ -87,7 +87,7 @@ La principal ventaja de este kit es la integración en un solo GPU, mientras que
 
 ## Enlaces
 
-- Repositorio HuggingFace: [https://huggingface.co/mohameddalii/ocr-mt-5090](https://huggingface.co/mohameddalii/ocr-mt-5090)
+- Repositorio Hugging Face: [https://huggingface.co/mohameddalii/ocr-mt-5090](https://huggingface.co/mohameddalii/ocr-mt-5090)
 - Referencia a PaddleOCR-VL en benchmark OmniDocBench (ofox.ai): [https://ofox.ai/blog/best-ai-model-for-ocr-2026/](https://ofox.ai/blog/best-ai-model-for-ocr-2026/)
 - Comparativa de OCR con TurboOCR (menciona PaddleOCR-VL): [https://github.com/aiptimizer/TurboOCR](https://github.com/aiptimizer/TurboOCR)
 - Soluciones de OCR empresarial de Mistral AI: [https://mistral.ai/solutions/document-ai/](https://mistral.ai/solutions/document-ai/)

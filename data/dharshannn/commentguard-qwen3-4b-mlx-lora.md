@@ -72,9 +72,9 @@ Matriz de confusión del modelo seleccionado: TP 145, FP 81, FN 94, TN 2680. El 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CommentGuard-Qwen3-4B-MLX-LoRA | ~4.000 M (base) + LoRA rango 8 | 1.024 tokens | Clasificación de toxicidad vía logits | Apache-2.0 | Adaptador MLX en HuggingFace |
+| CommentGuard-Qwen3-4B-MLX-LoRA | ~4.000 M (base) + LoRA rango 8 | 1.024 tokens | Clasificación de toxicidad vía logits | Apache-2.0 | Adaptador MLX en Hugging Face |
 | TF-IDF + regresión logística (línea base del autor) | No aplica | No aplica | Clasificación clásica | No especificada | Incluida como comparación |
-| Qwen3-4B-Instruct-2507-4bit (base) | ~4.000 M | No disponible en la información | LLM generativo | Apache-2.0 | HuggingFace (mlx-community) |
+| Qwen3-4B-Instruct-2507-4bit (base) | ~4.000 M | No disponible en la información | LLM generativo | Apache-2.0 | Hugging Face (mlx-community) |
 
 No se dispone de comparación con otros clasificadores de toxicidad de la misma categoría en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de comparación con otros clasificadores de toxicidad de la misma 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dharshannn/CommentGuard-Qwen3-4B-MLX-LoRA
+- Hugging Face: https://huggingface.co/dharshannn/CommentGuard-Qwen3-4B-MLX-LoRA
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-4B-Instruct-2507-4bit
 - Dataset: https://huggingface.co/datasets/google/civil_comments
 - Repositorio MLX: https://github.com/ml-explore/mlx

@@ -57,8 +57,8 @@ En la información disponible no se especifican modelos comparables de la misma 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| google/gemma-4-31B-it | 30.697.345.596 | No disponible | No disponible | HuggingFace |
-| veldierin/Artemis-31B-v1q-GGUF | 30.697.345.596 | No disponible | No disponible | HuggingFace (GGUF) |
+| google/gemma-4-31B-it | 30.697.345.596 | No disponible | No disponible | Hugging Face |
+| veldierin/Artemis-31B-v1q-GGUF | 30.697.345.596 | No disponible | No disponible | Hugging Face (GGUF) |
 
 ## Limitaciones y advertencias
 

@@ -84,7 +84,7 @@ No se dispone de información suficiente para comparar con alternativas de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BlueRoseLabs/Silencio-2
+- Modelo en Hugging Face: https://huggingface.co/BlueRoseLabs/Silencio-2
 - Modelo base Pocket TTS: https://huggingface.co/kyutai/pocket-tts
 - Cuaderno de Colab: https://colab.research.google.com/drive/1d6GSiRgXbYyBo91DCMrSr5y2LR_peJKy?usp=sharing
 - Licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/

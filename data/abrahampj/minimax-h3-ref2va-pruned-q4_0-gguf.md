@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento ni de otros modelos comparables de referen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AbrahamPJ/minimax-h3-ref2va-pruned-q4_0-gguf
+- Repositorio Hugging Face: https://huggingface.co/AbrahamPJ/minimax-h3-ref2va-pruned-q4_0-gguf
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - GGUF podado de origen: https://huggingface.co/Abiray/MiniMax-H3-Pruned-GGUF
 - LoRA turbo de Comfy-Org: https://huggingface.co/Comfy-Org/MiniMax-H3

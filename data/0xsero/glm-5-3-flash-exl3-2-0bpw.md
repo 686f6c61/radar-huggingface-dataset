@@ -74,10 +74,10 @@ No se dispone de información suficiente para comparar esta cuantización espec�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-2.0bpw
+- Repositorio Hugging Face: https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-2.0bpw
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Suite de cuantizaciones EXL3 de 0xSero: https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3
-- Perfil de 0xSero en HuggingFace: https://huggingface.co/0xSero
+- Perfil de 0xSero en Hugging Face: https://huggingface.co/0xSero
 - Documentación de GLM-5.3-Flash en unsloth.ai: https://unsloth.ai/docs/models/glm-5.3
 - Ficha de GLM-5.3-Flash en lmstudio.ai: https://lmstudio.ai/models/glm-5.3-flash
 - Repositorio GitHub de 0xSero con runtime SGLang: https://github.com/0xSero/glm-5.3-flash-sglang-sm120

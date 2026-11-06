@@ -81,9 +81,9 @@ El autor advierte explicitamente de que ambas columnas deben interpretarse con c
 
 | Modelo | Parametros | Idiomas | CER dev (subconjunto / split completo) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (parakeet-rnnt-0.6b-all-syn-chunk-cutout-fadeoutin) | 618.314.241 | Ingles | 6,07% / 6,21% | speech-accessibility-project-dua | HuggingFace, transformers>=5.9 |
-| dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout (linea base directa) | No disponible | Ingles | 6,06% / 6,25% | No disponible | HuggingFace |
-| extraordinarylab/parakeet-unified-en-0.6b (modelo base) | No disponible | Ingles | No disponible | No disponible | HuggingFace |
+| Este modelo (parakeet-rnnt-0.6b-all-syn-chunk-cutout-fadeoutin) | 618.314.241 | Ingles | 6,07% / 6,21% | speech-accessibility-project-dua | Hugging Face, transformers>=5.9 |
+| dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout (linea base directa) | No disponible | Ingles | 6,06% / 6,25% | No disponible | Hugging Face |
+| extraordinarylab/parakeet-unified-en-0.6b (modelo base) | No disponible | Ingles | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento de otros sistemas ASR de proposito general aplicados a habla con disartria en la informacion proporcionada, por lo que no se incluye una comparacion con alternativas tipo Whisper u otros modelos Parakeet.
 
@@ -99,11 +99,11 @@ No se dispone de datos de rendimiento de otros sistemas ASR de proposito general
 - La licencia `speech-accessibility-project-dua` condiciona el uso; los corpus SAPC se rigen por su propio acuerdo de uso de datos y no se redistribuyen, por lo que reproducir el conjunto de entrenamiento exige acceso autorizado. Los terminos de Fun-CosyVoice3 aplican al componente de sintesis.
 - Riesgo de alucinacion y de sustituciones en habla muy degradada: el CER de referencia del 6,21% implica errores por caracter no despreciables en cada transcripcion.
 - Sesgos: no se documenta ningun analisis de sesgo por tipo de disartria, edad, sexo o acento dentro de los corpus SAPC.
-- Los resultados de busqueda web proporcionados no contienen informacion tecnica ni enlaces relevantes sobre este modelo; los enlaces disponibles se limitan a los citados en la model card y en la ficha de HuggingFace.
+- Los resultados de busqueda web proporcionados no contienen informacion tecnica ni enlaces relevantes sobre este modelo; los enlaces disponibles se limitan a los citados en la model card y en la ficha de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout-fadeoutin
+- Hugging Face: https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout-fadeoutin
 - Run de referencia sin FadeOutIn: https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout
 - Modelo base: https://huggingface.co/extraordinarylab/parakeet-unified-en-0.6b
 - Licencia (Speech Accessibility Project): https://speechaccessibilityproject.beckman.illinois.edu/

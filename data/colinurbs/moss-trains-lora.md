@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`colinurbs/moss-trains-lora` es un adaptador LoRA de dominio estrecho para el modelo generativo texto-a-imagen MOSS-Image, desarrollado por el usuario colinurbs y publicado en HuggingFace en octubre de 2026. No es un modelo completo: es un ajuste de bajo rango (rank 64, alpha 16) entrenado sobre `OpenMOSS/MOSS-Image-Base` para especializarlo en fotografía ferroviaria de carga diésel norteamericana, con 33 modelos de locomotora y 13 tipos de material remolcado repartidos en 46 clases.
+`colinurbs/moss-trains-lora` es un adaptador LoRA de dominio estrecho para el modelo generativo texto-a-imagen MOSS-Image, desarrollado por el usuario colinurbs y publicado en Hugging Face en octubre de 2026. No es un modelo completo: es un ajuste de bajo rango (rank 64, alpha 16) entrenado sobre `OpenMOSS/MOSS-Image-Base` para especializarlo en fotografía ferroviaria de carga diésel norteamericana, con 33 modelos de locomotora y 13 tipos de material remolcado repartidos en 46 clases.
 
 El problema que resuelve es muy concreto: los modelos generalistas no conocen la jerga visual del ferraviario (diferencias entre una EMD SD40-2 y una GE ES44AC, esquemas de pintura de compañías como Southern Pacific o Union Pacific, numeración de vía en la cabina). El LoRA codifica ese vocabulario visual a partir de 4.988 fotografías de Wikimedia Commons con licencias CC BY, BY-SA, CC0, PD y GFDL, y se activa sin trigger word, simplemente describiendo la escena como lo haría un aficionado.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Base | Parámetros | Contexto de prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| trains_v1 (este LoRA) | LoRA r64/a16, dominio ferroviario diésel | MOSS-Image-Base | No disponible | No disponible en la model card (base: hasta 4K tokens) | No disponible | HuggingFace, 0 descargas, 0 likes |
+| trains_v1 (este LoRA) | LoRA r64/a16, dominio ferroviario diésel | MOSS-Image-Base | No disponible | No disponible en la model card (base: hasta 4K tokens) | No disponible | Hugging Face, 0 descargas, 0 likes |
 | MOSS-Image-Base | Modelo completo texto-a-imagen, orientado a texto y maquetación | — | No disponible | Hasta 4.000 tokens según documentación | No disponible (descrito como open-weights) | Repositorio de OpenMOSS |
 | MOSS-Image-SFT | Modelo completo afinado para generación | — | No disponible | Hasta 4.000 tokens según documentación | No disponible | Mencionado en la model card |
 | Anireal (Civitai) | LoRA de estilo anime-realism | MOSS-Image | No disponible | No disponible | No disponible | Civitai |
@@ -95,7 +95,7 @@ La comparación cuantitativa no es posible: ninguno de los LoRA alternativos pub
 
 ## Enlaces
 
-- [colinurbs/moss-trains-lora en HuggingFace](https://huggingface.co/colinurbs/moss-trains-lora)
+- [colinurbs/moss-trains-lora en Hugging Face](https://huggingface.co/colinurbs/moss-trains-lora)
 - [OpenMOSS/MOSS-Image-Base (modelo base)](https://huggingface.co/OpenMOSS/MOSS-Image-Base)
 - [MOSS Image: Text That Reads Right, Prompts Up to 4K Tokens (Civitai)](https://civitai.com/articles/36843/moss-image-text-that-reads-right-prompts-up-to-4k-tokens)
 - [Anime Realism for MOSS Image (Civitai)](https://civitai.com/models/3006790/anireal-or-anime-realism-for-moss-image)

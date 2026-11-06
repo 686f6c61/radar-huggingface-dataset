@@ -24,7 +24,7 @@ Su relevancia es, por tanto, metodologica y de investigacion: sirve como punto d
 | Metodo de ajuste | SFT con TRL 0.23.0 |
 | Tamano del repositorio | 0,1 GB |
 | Descargas / likes | 167 / 0 |
-| Fecha de creacion | 2026-09-23 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-23 (segun metadatos de Hugging Face) |
 | Ultima actualizacion | 2026-09-23 |
 
 ## Arquitectura y entrenamiento
@@ -49,7 +49,7 @@ El ajuste se realizo mediante SFT con TRL sobre un conjunto identificado en el n
 - Experimentacion sobre tokenizadores: el modelo forma parte de una campana (proyecto `new-tokenizers` en Weights & Biases) con variantes por semilla e idioma, por lo que sirve para medir el impacto de distintas estrategias de tokenizacion y empaquetado en la calidad de generacion en euskera.
 - Linea base de investigacion en lenguas de bajos recursos: permite establecer un punto de comparacion reproducible (semilla 10) frente a otros ajustes del mismo corpus `eus_latn_10mb`, aislando el efecto de la semilla.
 - Generacion de texto sintetico en euskera para aumento de datos: con supervision humana posterior, puede producir continuaciones cortas que amplien corpus pequenos en euskera, siempre que se filtre por calidad.
-- Pruebas de infraestructura de despliegue: con 0,1 GB de pesos, es util para validar pipelines de vLLM, TGI, HuggingFace Endpoints o llama.cpp (previa conversion a GGUF) antes de escalar a modelos mayores.
+- Pruebas de infraestructura de despliegue: con 0,1 GB de pesos, es util para validar pipelines de vLLM, TGI, Hugging Face Endpoints o llama.cpp (previa conversion a GGUF) antes de escalar a modelos mayores.
 - Demostraciones docentes sobre GPT-2: sirve para ilustrar el ciclo completo de ajuste con TRL, desde el modelo base hasta el checkpoint final, en cursos de NLP.
 - Prototipado de autocompletado en euskera: en entornos de investigacion y con expectativas de calidad bajas, puede emplearse para completar frases cortas o etiquetar localmente sin coste de API.
 - Estudio de sesgos y degeneracion en modelos pequenos: util para analizar como un corpus de 10 MB limita la cobertura lexica y provoca repeticiones o incoherencias, como caso de estudio metodologico.
@@ -63,18 +63,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: en fp32, aproximadamente 0,16 GB de pesos; en fp16/bf16, unos 0,08 GB; en int8, unos 0,04 GB. Sumando activaciones y cache KV, el consumo realista se mantiene por debajo de 1 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (GTX 1050 Ti, GTX 1650, T4, RTX 3060 y superiores). Tambien funciona en CPU con latencias aceptables para generacion de textos cortos.
 - Cabe holgadamente en GPU de consumo: si, en practicamente todas las GPU dedicadas modernas e incluso en iGPU con memoria compartida suficiente.
-- Opciones de despliegue: `transformers` (pipeline de text-generation), Text Generation Inference (TGI), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), vLLM. Para llama.cpp u Ollama seria necesaria una conversion propia a GGUF, ya que el repositorio solo contiene safetensors.
+- Opciones de despliegue: `transformers` (pipeline de text-generation), Text Generation Inference (TGI), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), vLLM. Para llama.cpp u Ollama seria necesaria una conversion propia a GGUF, ya que el repositorio solo contiene safetensors.
 - Latencia y throughput estimados: no disponibles. Por el tamano, se espera decodificacion muy rapida en GPU (cientos de tokens por segundo con batching), pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/eus-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | 39,1 M | no disponible | no disponible | HuggingFace (safetensors) | Ajuste SFT del modelo Goldfish de euskera |
-| goldfish-models/eus_latn_10mb | 39,1 M (misma arquitectura, no confirmado) | no disponible | no disponible | HuggingFace | Modelo base monolingue de euskera sobre 10 MB |
-| distilgpt2 | 82 M | 1024 | Apache-2.0 | HuggingFace | GPT-2 destilado en ingles, mucho mas entrenado |
-| gpt2 | 124 M | 1024 | MIT | HuggingFace | Referencia de la familia, multilingue parcial |
-| fpadovani/eus-latn-10mb-ppt-Dp-100mb_seed455 | 39,1 M (no confirmado) | no disponible | no disponible | HuggingFace | Variante de la misma campana con otra semilla |
+| francesca9805/eus-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | 39,1 M | no disponible | no disponible | Hugging Face (safetensors) | Ajuste SFT del modelo Goldfish de euskera |
+| goldfish-models/eus_latn_10mb | 39,1 M (misma arquitectura, no confirmado) | no disponible | no disponible | Hugging Face | Modelo base monolingue de euskera sobre 10 MB |
+| distilgpt2 | 82 M | 1024 | Apache-2.0 | Hugging Face | GPT-2 destilado en ingles, mucho mas entrenado |
+| gpt2 | 124 M | 1024 | MIT | Hugging Face | Referencia de la familia, multilingue parcial |
+| fpadovani/eus-latn-10mb-ppt-Dp-100mb_seed455 | 39,1 M (no confirmado) | no disponible | no disponible | Hugging Face | Variante de la misma campana con otra semilla |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas en la informacion proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eus-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eus-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eus_latn_10mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/zutc2v0n
 - Repositorio de TRL: https://github.com/huggingface/trl

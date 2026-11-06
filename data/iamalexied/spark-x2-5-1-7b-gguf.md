@@ -80,7 +80,7 @@ Nota: los datos de Qwen y Llama son de conocimiento general, no de la informacio
 
 ## Enlaces
 
-- HuggingFace (repo GGUF): https://huggingface.co/iamalexied/Spark-X2.5-1.7B-GGUF
+- Hugging Face (repo GGUF): https://huggingface.co/iamalexied/Spark-X2.5-1.7B-GGUF
 - GitHub oficial de la serie Spark-X2.5: https://github.com/XHToken/Spark-X2.5
 - Noticia sobre el lanzamiento open source: https://news.aibase.com/news/30716
 - Ficha en LLM Reference: https://www.llmreference.com/model-family/spark-x2.5

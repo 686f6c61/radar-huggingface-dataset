@@ -79,8 +79,8 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace (modelo original): [tiiuae/falcon-rw-1b](https://huggingface.co/tiiuae/falcon-rw-1b)
-- HuggingFace (modelo en gradients-io-tournaments): [URL del modelo](https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-1b107bc7-baa1-4b16-b024-74995ad6d036-5FpdSckw)
+- Hugging Face (modelo original): [tiiuae/falcon-rw-1b](https://huggingface.co/tiiuae/falcon-rw-1b)
+- Hugging Face (modelo en gradients-io-tournaments): [URL del modelo](https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-1b107bc7-baa1-4b16-b024-74995ad6d036-5FpdSckw)
 - Paper de Falcon: [arXiv:2306.01116](https://arxiv.org/abs/2306.01116)
 - Dataset RefinedWeb: [tiiuae/falcon-refinedweb](https://huggingface.co/datasets/tiiuae/falcon-refinedweb)
 - Plataforma Gradients: [https://www.gradients.io/app/research/tournament](https://www.gradients.io/app/research/tournament)

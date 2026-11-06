@@ -18,7 +18,7 @@ Su relevancia es acotada y muy específica: se trata de un experimento de domini
 | Longitud de contexto | 512 tokens (`max_seq_len`) |
 | Tipos de cuantizacion | no disponible (el repositorio solo publica pesos en safetensors; no hay versiones GGUF, AWQ, GPTQ ni int8) |
 | Idiomas soportados | frances (`fr`) |
-| Licencia | other (etiquetada como `other` en HuggingFace; no se detallan los terminos) |
+| Licencia | other (etiquetada como `other` en Hugging Face; no se detallan los terminos) |
 | Formato de pesos | safetensors (`model.safetensors`); tokenizador en `tokenizer.json` (`tokenizers.Tokenizer`) |
 | Vocabulario | 10.413 tokens, tokenizador propio |
 | Dimension del modelo | `d_model` = 256 |
@@ -110,6 +110,6 @@ La diferencia clave no es de rendimiento sino de proposito: las alternativas son
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApyHTML19/Cgi_Model_9M
+- Modelo en Hugging Face: https://huggingface.co/ApyHTML19/Cgi_Model_9M
 - Repositorio fuente con el codigo del modelo (`CGITransformer`, `src/model.py`): mencionado en la model card, pero sin URL disponible en la informacion proporcionada.
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Las busquedas devueltas no guardan relacion con Cgi_Model_9M ni con el Code General des Impots, por lo que no se dispone de papers, blogs, repositorios ni demos adicionales.

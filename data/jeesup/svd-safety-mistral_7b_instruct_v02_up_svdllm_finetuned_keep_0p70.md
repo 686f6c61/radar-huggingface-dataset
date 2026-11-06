@@ -89,10 +89,10 @@ Metodologia declarada: perplejidad en WikiText-2; ARC-Easy/Challenge, HellaSwag,
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_finetuned_keep_0p70 | 7.241.732.096 (denso, rango reducido al 70%) | no disponible en la informacion proporcionada | Apache 2.0 | Ver tabla de benchmarks | safetensors en HuggingFace, 14,5 GB, 11 descargas |
-| mistralai/Mistral-7B-Instruct-v0.2 (modelo base) | 7,24B aprox. | no disponible en la informacion proporcionada | Apache 2.0 | no disponible en la informacion proporcionada | safetensors en HuggingFace |
+| Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_finetuned_keep_0p70 | 7.241.732.096 (denso, rango reducido al 70%) | no disponible en la informacion proporcionada | Apache 2.0 | Ver tabla de benchmarks | safetensors en Hugging Face, 14,5 GB, 11 descargas |
+| mistralai/Mistral-7B-Instruct-v0.2 (modelo base) | 7,24B aprox. | no disponible en la informacion proporcionada | Apache 2.0 | no disponible en la informacion proporcionada | safetensors en Hugging Face |
 | Otras variantes comprimidas de Mistral-7B (por ejemplo, las publicadas en el repositorio SVD-LLM) | no disponible | no disponible | no disponible | no disponible | repositorio GitHub AIoT-MLSys-Lab/SVD-LLM |
-| Alternativas de tamano similar (Llama-2-7B-Chat, Llama-3.1-8B-Instruct) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | safetensors en HuggingFace |
+| Alternativas de tamano similar (Llama-2-7B-Chat, Llama-3.1-8B-Instruct) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | safetensors en Hugging Face |
 
 No se han proporcionado datos de benchmarks de los modelos comparables, por lo que no es posible establecer una comparacion cuantitativa de rendimiento. La unica diferencia verificable es la fraccion de parametros efectivos (0,6999) y la perplejidad declarada del modelo comprimido.
 
@@ -111,7 +111,7 @@ No se han proporcionado datos de benchmarks de los modelos comparables, por lo q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_finetuned_keep_0p70
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_finetuned_keep_0p70
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Codigo de SVD-LLM (commit `7538cca98880`): https://github.com/AIoT-MLSys-Lab/SVD-LLM
 - Dataset de ajuste LoRA: https://huggingface.co/datasets/yahma/alpaca-cleaned

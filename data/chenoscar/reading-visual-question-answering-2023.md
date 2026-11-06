@@ -70,7 +70,7 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chenoscar/reading-visual-question-answering-2023
-- Referencia general sobre VQA en HuggingFace (contexto, no del modelo): https://huggingface.co/docs/transformers/en/tasks/visual_question_answering
+- Repositorio en Hugging Face: https://huggingface.co/chenoscar/reading-visual-question-answering-2023
+- Referencia general sobre VQA en Hugging Face (contexto, no del modelo): https://huggingface.co/docs/transformers/en/tasks/visual_question_answering
 - Articulo de arXiv sobre VoQA (contexto): https://arxiv.org/html/2505.14227v1
 - Revision de VQA en arXiv (contexto): https://arxiv.org/html/2501.03939v1

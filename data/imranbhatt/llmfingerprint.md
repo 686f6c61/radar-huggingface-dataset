@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LLMFingerPrint es un repositorio publicado en HuggingFace por el usuario imranbhatt, con licencia MIT. A partir de la información disponible, no se puede determinar con certeza la naturaleza exacta del contenido: el repositorio no declara un pipeline asociado (por ejemplo, text-generation o feature-extraction), no incluye model card descriptiva y no especifica arquitectura, número de parámetros ni longitud de contexto. El nombre sugiere que podría estar relacionado con la identificación o huella digital de modelos de lenguaje (model fingerprinting), una línea de trabajo orientada a detectar qué modelo generó un texto dado o a verificar la procedencia de pesos, pero esta interpretación no está confirmada por el autor.
+LLMFingerPrint es un repositorio publicado en Hugging Face por el usuario imranbhatt, con licencia MIT. A partir de la información disponible, no se puede determinar con certeza la naturaleza exacta del contenido: el repositorio no declara un pipeline asociado (por ejemplo, text-generation o feature-extraction), no incluye model card descriptiva y no especifica arquitectura, número de parámetros ni longitud de contexto. El nombre sugiere que podría estar relacionado con la identificación o huella digital de modelos de lenguaje (model fingerprinting), una línea de trabajo orientada a detectar qué modelo generó un texto dado o a verificar la procedencia de pesos, pero esta interpretación no está confirmada por el autor.
 
 La relevancia de las herramientas de fingerprinting de LLMs reside en la creciente necesidad de trazabilidad en el ecosistema de IA: auditoría de modelos desplegados, detección de destilación no autorizada y verificación de licencias. Sin embargo, al no existir documentación, ejemplos de uso ni resultados publicados en la model card, no es posible evaluar el enfoque técnico, el rendimiento ni la madurez de este repositorio. Cuenta con 0 descargas y 1 like en el momento de la ficha, lo que indica que se trata de un recurso muy reciente y sin adopción comunitaria documentada.
 
@@ -70,7 +70,7 @@ No es posible una comparativa técnica rigurosa al no existir datos publicados s
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: la model card esta vacia, lo que impide evaluar fiabilidad, metodo ni madurez del repositorio. No se recomienda su uso en produccion sin revision previa del codigo.
-- Sin pipeline declarado: HuggingFace no clasifica el repositorio bajo ninguna tarea, lo que dificulta su integracion con librerias estandar como transformers.
+- Sin pipeline declarado: Hugging Face no clasifica el repositorio bajo ninguna tarea, lo que dificulta su integracion con librerias estandar como transformers.
 - Riesgo de alucinacion: no evaluable; no hay datos sobre comportamiento generativo.
 - Sesgos conocidos: no disponibles; no se ha publicado informacion sobre datos de entrenamiento ni evaluaciones de sesgo.
 - Licencia: el repositorio se publica bajo MIT, una licencia permisiva que permite uso comercial, modificacion y redistribucion con atribucion; aun asi, al desconocer el contenido real, conviene revisar que todos los artefactos incluidos respeten esa licencia.
@@ -79,5 +79,5 @@ No es posible una comparativa técnica rigurosa al no existir datos publicados s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imranbhatt/LLMFingerPrint
+- Repositorio en Hugging Face: https://huggingface.co/imranbhatt/LLMFingerPrint
 - Paper, demo, repositorio de codigo o documentacion adicional: no disponibles en la informacion proporcionada.

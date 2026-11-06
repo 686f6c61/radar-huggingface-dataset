@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bloomer010/Ling-3.0-flash-REAP176-46B-A5B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bloomer010/Ling-3.0-flash-REAP176-46B-A5B-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash
 - Paper REAP: https://arxiv.org/abs/2510.13999
 - Pull request de soporte bailingmoe3 en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/26608

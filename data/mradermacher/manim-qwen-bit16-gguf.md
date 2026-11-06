@@ -93,7 +93,7 @@ Nota: los datos de contexto y parametros de los modelos comparados provienen de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Manim-Qwen-bit16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Manim-Qwen-bit16-GGUF
 - Modelo base: https://huggingface.co/kalamkhan/Manim-Qwen-bit16
 - Pagina de descargas del autor: https://hf.tst.eu/model#Manim-Qwen-bit16-GGUF
 - Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

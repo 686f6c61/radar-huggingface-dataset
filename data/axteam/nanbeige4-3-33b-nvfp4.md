@@ -73,8 +73,8 @@ La model card solo publica métricas de fidelidad frente al BF16 original en un 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| axteam/Nanbeige4.3-33B-NVFP4 | 19,68B | No disponible (ejemplo con 32.768) | NVFP4 W4A4 | Apache 2.0 | HuggingFace, vLLM |
-| Nanbeige/Nanbeige4.3-33B (original) | 19,68B | No disponible | BF16 | Apache 2.0 | HuggingFace |
+| axteam/Nanbeige4.3-33B-NVFP4 | 19,68B | No disponible (ejemplo con 32.768) | NVFP4 W4A4 | Apache 2.0 | Hugging Face, vLLM |
+| Nanbeige/Nanbeige4.3-33B (original) | 19,68B | No disponible | BF16 | Apache 2.0 | Hugging Face |
 | Alternativas de 8 bits (FP8/AWQ INT8) del mismo base | 19,68B | No disponible | FP8 / INT8 | Apache 2.0 | No disponible en la información proporcionada |
 
 No se dispone de datos de rendimiento comparado con otros modelos de la misma categoría en la información proporcionada.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparado con otros modelos de la misma ca
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/axteam/Nanbeige4.3-33B-NVFP4
+- Modelo cuantizado en Hugging Face: https://huggingface.co/axteam/Nanbeige4.3-33B-NVFP4
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Documentación de vLLM: https://docs.vllm.ai
 - compressed-tensors: https://github.com/neuralmagic/compressed-tensors

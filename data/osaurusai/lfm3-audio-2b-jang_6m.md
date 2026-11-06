@@ -94,7 +94,7 @@ La comparación con alternativas de otros fabricantes (por ejemplo, modelos de a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OsaurusAI/LFM3-Audio-2B-JANG_6M
+- Modelo en Hugging Face: https://huggingface.co/OsaurusAI/LFM3-Audio-2B-JANG_6M
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Audio-2B
 - Sitio de Osaurus AI: https://osaurus.ai
 - Licencia LFM Open License v1.0: https://huggingface.co/OsaurusAI/LFM3-Audio-2B-JANG_6M/blob/main/LICENSE

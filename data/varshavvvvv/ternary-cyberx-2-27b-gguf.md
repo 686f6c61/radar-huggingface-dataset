@@ -16,7 +16,7 @@ Su relevancia actual reside en que demuestra que el razonamiento de nivel 27B, i
 | Parametros totales | 27,36B según la model card (24,35B de backbone lingüístico en 64 bloques + 2,54B de embedding/LM head + 0,46B de torre de visión en 27 bloques). El repo safetensors declara 26.895.998.464 parámetros (~26,9B) |
 | Longitud de contexto | 262K tokens (heredada del modelo base) |
 | Tipos de cuantizacion | Ternary g128 con escala FP16 por grupo de 128 pesos; empaquetados PTQ1_0 (1,75 bits/peso, 5,95 GB) y PQ2_0 (2,13 bits/peso, 7,21 GB); torre de visión opcional en Q8_0 mmproj (~0,63 GB) |
-| Idiomas soportados | no disponible (los metadatos de HuggingFace no declaran idiomas) |
+| Idiomas soportados | no disponible (los metadatos de Hugging Face no declaran idiomas) |
 | Licencia | apache-2.0 |
 | Formato de pesos | GGUF para llama.cpp; existe un compañero MLX de 2 bits (`prism-ml/Ternary-Bonsai-2-27B-mlx-2bit`) |
 | Bits por peso (real) | 1,72 bits/peso, incluidos los tensores mantenidos por encima de la representación ternaria |
@@ -83,10 +83,10 @@ Datos reportados por el autor en la model card. No se han publicado en la inform
 
 | Modelo | Representacion | Tamano desplegado | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bonsai 2 27B ternario (PTQ1_0) | Ternaria g128, 1,72 bits/peso | 5,95 GB | 84,78 de media en 14 benchmarks thinking; 98,2 % de FP16 | Apache 2.0 | GGUF en HuggingFace; requiere fork de llama.cpp |
-| Bonsai 2 27B ternario (PQ2_0) | Ternaria en slots de 2 bits, 2,13 bits/peso | 7,21 GB | Mismo modelo, empaquetado alternativo | Apache 2.0 | GGUF en HuggingFace |
-| Build convencional IQ2_XXS del mismo base | Cuantizacion de 2 bits estandar | Más de 1,5x el tamano del ternario (la model card indica que el ternario ocupa menos de dos tercios de su huella) | 72,59 de media | Apache 2.0 | GGUF en HuggingFace |
-| Build UD-Q4_K_XL del mismo base | Cuantizacion de ~4 bits | Aproximadamente 3x el tamano del ternario | Dentro de 0,4 puntos de 84,78 | Apache 2.0 | GGUF en HuggingFace |
+| Bonsai 2 27B ternario (PTQ1_0) | Ternaria g128, 1,72 bits/peso | 5,95 GB | 84,78 de media en 14 benchmarks thinking; 98,2 % de FP16 | Apache 2.0 | GGUF en Hugging Face; requiere fork de llama.cpp |
+| Bonsai 2 27B ternario (PQ2_0) | Ternaria en slots de 2 bits, 2,13 bits/peso | 7,21 GB | Mismo modelo, empaquetado alternativo | Apache 2.0 | GGUF en Hugging Face |
+| Build convencional IQ2_XXS del mismo base | Cuantizacion de 2 bits estandar | Más de 1,5x el tamano del ternario (la model card indica que el ternario ocupa menos de dos tercios de su huella) | 72,59 de media | Apache 2.0 | GGUF en Hugging Face |
+| Build UD-Q4_K_XL del mismo base | Cuantizacion de ~4 bits | Aproximadamente 3x el tamano del ternario | Dentro de 0,4 puntos de 84,78 | Apache 2.0 | GGUF en Hugging Face |
 | Qwen3.8-27B FP16 (modelo base) | FP16 | ~54 GB | Baseline de referencia (100 % de inteligencia) | Apache 2.0 | Pesos originales |
 
 No se dispone de comparaciones con modelos de otros fabricantes de tamaño similar en la información proporcionada.

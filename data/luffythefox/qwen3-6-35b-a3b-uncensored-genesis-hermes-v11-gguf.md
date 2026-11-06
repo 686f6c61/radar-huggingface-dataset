@@ -4,7 +4,7 @@
 
 Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-GGUF es un modelo de lenguaje multimodal (image-text-to-text) publicado por LuffyTheFox en formato GGUF, construido sobre la base sin censura HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive y con un finetune de tipo Hermes para capacidades de agente y function calling. El modelo emplea una arquitectura MoE (Mixture of Experts) con 34.660.610.688 parámetros totales y, según su nomenclatura, unos 3.000 millones de parámetros activos. Su principal singularidad es el método de post-procesado "Genesis", un algoritmo de reparación numérica de tensores basado en SVD que, según el autor, reduce el ruido acumulado durante el entrenamiento y mejora la estabilidad y la claridad de las respuestas sin necesidad de reentrenar.
 
-El modelo está pensado para desarrolladores e investigadores que buscan una variante sin censura, con soporte multimodal y orientada a agentes, ejecutable en runtimes compatibles con GGUF como llama.cpp u Ollama. Con más de un millón de descargas en HuggingFace, ha ganado popularidad por su combinación de capacidades agenticas, ausencia de filtros de rechazo (0/465 refusals según el autor) y su enfoque en la "reparación de señal" de los pesos. No obstante, carece de documentación oficial sobre benchmarks, contexto máximo o detalles de entrenamiento, por lo que su adopción en producción requiere validación independiente.
+El modelo está pensado para desarrolladores e investigadores que buscan una variante sin censura, con soporte multimodal y orientada a agentes, ejecutable en runtimes compatibles con GGUF como llama.cpp u Ollama. Con más de un millón de descargas en Hugging Face, ha ganado popularidad por su combinación de capacidades agenticas, ausencia de filtros de rechazo (0/465 refusals según el autor) y su enfoque en la "reparación de señal" de los pesos. No obstante, carece de documentación oficial sobre benchmarks, contexto máximo o detalles de entrenamiento, por lo que su adopción en producción requiere validación independiente.
 
 ## Especificaciones tecnicas
 
@@ -72,9 +72,9 @@ No se dispone de datos comparativos publicados. Como referencia estructural, el 
 
 ## Enlaces
 
-- [Modelo en HuggingFace (V11)](https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-GGUF)
-- [Version V7 en HuggingFace](https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF)
-- [Version V5 en HuggingFace](https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V5-GGUF)
+- [Modelo en Hugging Face (V11)](https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-GGUF)
+- [Version V7 en Hugging Face](https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF)
+- [Version V5 en Hugging Face](https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V5-GGUF)
 - [Modelo base sin censura (HauhauCS)](https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive)
 - [Finetune Hermes de DJLougen](https://huggingface.co/DJLougen/hermes-qwen3.5-35b-a3b-GGUF)
 - [Script de cuantizacion (Pastebin)](https://pastebin.com/hXhcMJn9)

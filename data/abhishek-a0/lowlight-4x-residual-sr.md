@@ -68,7 +68,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace tiene un tamaño de 0.0 GB, lo que sugiere que los pesos del modelo podrían no estar incluidos o que el modelo es extremadamente pequeño. Es necesario verificar el contenido del repositorio antes de intentar su uso.
+- El repositorio de Hugging Face tiene un tamaño de 0.0 GB, lo que sugiere que los pesos del modelo podrían no estar incluidos o que el modelo es extremadamente pequeño. Es necesario verificar el contenido del repositorio antes de intentar su uso.
 - No se ha especificado la licencia del modelo, por lo que se desconocen las restricciones de uso comercial y de redistribución.
 - No se han publicado evaluaciones de sesgos ni de robustez frente a condiciones extremas. El modelo podría generar artefactos o detalles falsos en zonas muy oscuras o con ruido intenso, un riesgo habitual en modelos de restauración de imágenes.
 - Los datos de PSNR proporcionados no van acompañados del conjunto de datos de validación, por lo que no es posible evaluar su generalización a otros dominios.
@@ -77,6 +77,6 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abhishek-A0/lowlight-4x-residual-sr
+- Modelo en Hugging Face: https://huggingface.co/Abhishek-A0/lowlight-4x-residual-sr
 - Repositorio de GitHub relacionado (denoising y super-resolución de imágenes con baja luz): https://github.com/sav-abishek/Denoising-and-4x-Super-Resolution-of-Low-Light-Images
 - Repositorio de GitHub relacionado (denoising y super-resolución 4x de imágenes con baja luz): https://github.com/output9/denoising-4x-super-resolution-low-light-images

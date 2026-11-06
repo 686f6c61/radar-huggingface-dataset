@@ -93,7 +93,7 @@ La comparación directa más pertinente es con el LLM base: este repositorio no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/santosboakye/rag-medical-manual-model
+- Repositorio en Hugging Face: https://huggingface.co/santosboakye/rag-medical-manual-model
 - LLM base (GGUF): https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF
 - Modelo original de Mistral AI: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Modelo de embeddings: https://huggingface.co/thenlper/gte-large

@@ -88,7 +88,7 @@ Los datos de parametros, idiomas y licencias de los modelos comparados proceden 
 ## Limitaciones y advertencias
 
 - Este repositorio es un espejo no oficial. No esta afiliado ni respaldado por los autores de Qwen, no recibe actualizaciones del modelo y puede quedar desincronizado; el mantenedor no ofrece garantias de disponibilidad.
-- La etiqueta `base_model:finetune` que aparece en los tags de HuggingFace no describe la realidad del repositorio: la propia model card indica que los ficheros son identicos byte a byte al original. No es un ajuste fino y no debe tratarse como tal.
+- La etiqueta `base_model:finetune` que aparece en los tags de Hugging Face no describe la realidad del repositorio: la propia model card indica que los ficheros son identicos byte a byte al original. No es un ajuste fino y no debe tratarse como tal.
 - El repositorio tiene 0 descargas y 0 likes, lo que implica ausencia de validacion por parte de la comunidad sobre la integridad del espejo. La verificacion se delega en el manifiesto SHA-256 del repositorio Voxprint.
 - Riesgo de alucinacion: no se ha documentado el comportamiento del modelo ante audio con ruido extremo, silencios largos o habla solapada. Como todo modelo ASR generativo, puede producir texto plausible que no corresponde al audio, especialmente en segmentos ininteligibles.
 - Sesgos: no se ha publicado informacion sobre sesgos por acento, genero, edad o variedad dialectal. El soporte de 22 dialectos del chino no implica precision uniforme entre ellos.
@@ -100,11 +100,11 @@ Los datos de parametros, idiomas y licencias de los modelos comparados proceden 
 
 ## Enlaces
 
-- Espejo en HuggingFace: https://huggingface.co/Mitroshenkov87/voxprint-mirror-qwen3-asr-0.6b
+- Espejo en Hugging Face: https://huggingface.co/Mitroshenkov87/voxprint-mirror-qwen3-asr-0.6b
 - Modelo original: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Modelo de mayor tamano de la familia: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Modelo de alineacion forzada: https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B
 - Repositorio GitHub de Voxprint: https://github.com/Mitroshenkov87/voxprint
 - Referencia arXiv indicada en los tags: https://arxiv.org/abs/2601.21337
 - Descarga alternativa via ModelScope: `modelscope download --model Qwen/Qwen3-ASR-0.6B --local_dir ./Qwen3-ASR-0.6B`
-- Descarga via HuggingFace CLI: `huggingface-cli download Qwen/Qwen3-ASR-0.6B --local-dir ./Qwen3-ASR-0.6B`
+- Descarga via Hugging Face CLI: `huggingface-cli download Qwen/Qwen3-ASR-0.6B --local-dir ./Qwen3-ASR-0.6B`

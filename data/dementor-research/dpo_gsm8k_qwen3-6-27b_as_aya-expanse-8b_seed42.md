@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_gsm8k_qwen3.6-27b_as_aya-expanse-8b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_gsm8k_qwen3.6-27b_as_aya-expanse-8b_seed42
 - Modelo gemelo (imitación inversa): https://huggingface.co/dementor-research/dpo_gsm8k_aya-expanse-8b_as_qwen3.6-27b_seed42
 - Discusiones del modelo gemelo: https://huggingface.co/dementor-research/dpo_gsm8k_aya-expanse-8b_as_qwen3.6-27b_seed42/discussions
 - Página de Friendli AI para el modelo gemelo: https://friendli.ai/models/dementor-research/dpo_gsm8k_aya-expanse-8b_as_qwen3.6-27b_seed42

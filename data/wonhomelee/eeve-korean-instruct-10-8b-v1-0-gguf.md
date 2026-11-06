@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EEVE-Korean-Instruct-10.8B-v1.0-GGUF es una version cuantizada en formato GGUF del modelo yanolja/EEVE-Korean-Instruct-10.8B-v1.0, un modelo de lenguaje de 10,8B parametros orientado al coreano. La publica el usuario wonhomelee en HuggingFace y la conversión se ha realizado con llama.cpp, el runtime de referencia para inferencia de LLM en CPU y GPU de consumo. El repositorio ocupa 37,8 GB e incluye al menos una cuantizacion Q4_K_M (fichero ggml-model-Q4_K_M.gguf), lo que sugiere que se distribuyen varias variantes de cuantizacion en el mismo repo.
+EEVE-Korean-Instruct-10.8B-v1.0-GGUF es una version cuantizada en formato GGUF del modelo yanolja/EEVE-Korean-Instruct-10.8B-v1.0, un modelo de lenguaje de 10,8B parametros orientado al coreano. La publica el usuario wonhomelee en Hugging Face y la conversión se ha realizado con llama.cpp, el runtime de referencia para inferencia de LLM en CPU y GPU de consumo. El repositorio ocupa 37,8 GB e incluye al menos una cuantizacion Q4_K_M (fichero ggml-model-Q4_K_M.gguf), lo que sugiere que se distribuyen varias variantes de cuantizacion en el mismo repo.
 
 El problema que resuelve es el de permitir ejecutar un modelo coreano de ~11B en hardware modesto sin necesidad de GPU de datacenter: la model card incluye un ejemplo funcional con llama-cpp-python que corre en una GPU T4 de Colab. Aunque el modelo original es de tipo instruct (ajustado para seguir instrucciones y mantener conversaciones), esta ficha describe especificamente la publicacion cuantizada, cuyos metadatos de licencia, idiomas y pipeline no estan documentados en la informacion disponible.
 
@@ -77,9 +77,9 @@ No se dispone de datos de benchmarks ni de especificaciones oficiales que permit
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wonhomelee/EEVE-Korean-Instruct-10.8B-v1.0-GGUF | 10,8B | 4096 (segun ejemplo) | GGUF | no disponible | HuggingFace |
-| yanolja/EEVE-Korean-Instruct-10.8B-v1.0 | 10,8B | no disponible | safetensors (presumiblemente) | no disponible | HuggingFace |
-| heegyu/EEVE-Korean-Instruct-10.8B-v1.0-GGUF | 10,8B | no disponible | GGUF | no disponible | HuggingFace |
+| wonhomelee/EEVE-Korean-Instruct-10.8B-v1.0-GGUF | 10,8B | 4096 (segun ejemplo) | GGUF | no disponible | Hugging Face |
+| yanolja/EEVE-Korean-Instruct-10.8B-v1.0 | 10,8B | no disponible | safetensors (presumiblemente) | no disponible | Hugging Face |
+| heegyu/EEVE-Korean-Instruct-10.8B-v1.0-GGUF | 10,8B | no disponible | GGUF | no disponible | Hugging Face |
 
 La comparacion de rendimiento con otros modelos de la misma categoria (por ejemplo, otros LLM coreanos de ~10B) no esta disponible en la informacion proporcionada.
 
@@ -98,7 +98,7 @@ La comparacion de rendimiento con otros modelos de la misma categoria (por ejemp
 
 ## Enlaces
 
-- Repositorio HuggingFace (version cuantizada): https://huggingface.co/wonhomelee/EEVE-Korean-Instruct-10.8B-v1.0-GGUF
+- Repositorio Hugging Face (version cuantizada): https://huggingface.co/wonhomelee/EEVE-Korean-Instruct-10.8B-v1.0-GGUF
 - Modelo original: https://huggingface.co/yanolja/EEVE-Korean-Instruct-10.8B-v1.0
 - Repositorio GGUF alternativo citado en la model card: https://huggingface.co/heegyu/EEVE-Korean-Instruct-10.8B-v1.0-GGUF
 - llama.cpp (herramienta de cuantizacion y runtime): https://github.com/ggerganov/llama.cpp

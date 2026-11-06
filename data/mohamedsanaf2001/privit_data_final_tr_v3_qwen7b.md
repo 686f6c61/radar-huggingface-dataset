@@ -4,7 +4,7 @@
 
 El modelo `MOHAMEDSANAF2001/PRIVIT_DATA_FINAL_TR_V3_QWEN7B` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario MOHAMEDSANAF2001 sobre el modelo base `unsloth/Qwen2.5-7B-Instruct-unsloth-bnb-4bit`, que a su vez es una versión cuantizada a 4 bits de Qwen2.5-7B-Instruct. No se trata, por tanto, de un modelo entrenado desde cero, sino de un ajuste fino supervisado (SFT) mediante las librerías Unsloth, TRL y PEFT, cuyo resultado se distribuye como pesos de adaptador en formato safetensors y con un tamano de repositorio de 0,7 GB.
 
-El interes de este tipo de publicaciones es acotado: permite reutilizar el ajuste sobre la base Qwen2.5-7B-Instruct cargando el adaptador con PEFT en lugar de reconstruir el entrenamiento. La model card publicada es la plantilla por defecto de HuggingFace y no contiene informacion sustantiva: todos los campos relevantes (autor real, financiacion, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) figuran como "More Information Needed". Esto limita severamente cualquier evaluacion rigurosa y obliga a tratar el modelo con cautela en entornos de produccion.
+El interes de este tipo de publicaciones es acotado: permite reutilizar el ajuste sobre la base Qwen2.5-7B-Instruct cargando el adaptador con PEFT en lugar de reconstruir el entrenamiento. La model card publicada es la plantilla por defecto de Hugging Face y no contiene informacion sustantiva: todos los campos relevantes (autor real, financiacion, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) figuran como "More Information Needed". Esto limita severamente cualquier evaluacion rigurosa y obliga a tratar el modelo con cautela en entornos de produccion.
 
 La relevancia actual del artefacto esta condicionada por su procedencia: hereda las capacidades del Qwen2.5-7B-Instruct (contexto de 128K, soporte multilingue, tool calling) pero anade un ajuste especifico cuyo contenido y dominio no han sido documentados. Con 0 descargas y 0 likes en el momento de la consulta, se trata de un repositorio sin validacion externa ni adopcion por parte de la comunidad.
 
@@ -74,7 +74,7 @@ Dado que se trata de un adaptador LoRA sin evaluacion publicada, la comparacion 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Qwen2.5-7B-Instruct) | ~7,6B (base) | 128K (heredado, sin confirmar) | no disponible | Repositorio HuggingFace, 0 descargas | Sin benchmarks ni model card util |
+| Este adaptador (sobre Qwen2.5-7B-Instruct) | ~7,6B (base) | 128K (heredado, sin confirmar) | no disponible | Repositorio Hugging Face, 0 descargas | Sin benchmarks ni model card util |
 | Qwen2.5-7B-Instruct | ~7,6B | 128K | Apache 2.0 | Ampliamente disponible | Base de referencia, con evaluaciones publicadas por Alibaba |
 | Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 Community License | Ampliamente disponible | Alternativa con licencia restrictiva para ciertos usos |
 | Mistral-7B-Instruct-v0.3 | 7,2B | 32K | Apache 2.0 | Ampliamente disponible | Menor contexto; herramienta de referencia en el segmento 7B |
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento del adaptador que permitan una comparacion
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace; no hay informacion sobre datos, hiperparametros, evaluacion ni uso previsto.
+- La model card es la plantilla por defecto de Hugging Face; no hay informacion sobre datos, hiperparametros, evaluacion ni uso previsto.
 - Riesgo elevado de alucinacion y de comportamientos no caracterizados: al desconocerse el dataset de ajuste, no puede acotarse el dominio ni la calidad de las respuestas.
 - No se declara licencia, lo que impide conocer si el uso comercial esta permitido. La licencia del modelo base (Apache 2.0 en Qwen2.5-7B-Instruct) no se hereda automaticamente al adaptador sin una declaracion explicita del autor.
 - Idiomas soportados no documentados; el ajuste podria haber degradado el multilingüismo del modelo base, especialmente si los datos eran monolingues.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento del adaptador que permitan una comparacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MOHAMEDSANAF2001/PRIVIT_DATA_FINAL_TR_V3_QWEN7B
+- Repositorio Hugging Face: https://huggingface.co/MOHAMEDSANAF2001/PRIVIT_DATA_FINAL_TR_V3_QWEN7B
 - Modelo base (Unsloth, 4-bit): https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-unsloth-bnb-4bit
 - Modelo original Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft

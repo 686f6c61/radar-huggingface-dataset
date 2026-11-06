@@ -69,8 +69,8 @@ La comparativa se limita a modelos de la misma familia Qwen. No hay datos de ren
 - **Licencia**: Apache 2.0 permite uso comercial, pero no se especifica si el modelo base tiene restricciones adicionales no documentadas.
 
 ## Enlaces
-- [HuggingFace - Alluringcfdbgfhgdnufvhg/Qwen3.5-0.8B-JP](https://huggingface.co/Alluringcfdbgfhgdnufvhg/Qwen3.5-0.8B-JP)
-- [HuggingFace - Qwen/Qwen3.5-0.8B (modelo base)](https://huggingface.co/Qwen/Qwen3.5-0.8B)
+- [Hugging Face - Alluringcfdbgfhgdnufvhg/Qwen3.5-0.8B-JP](https://huggingface.co/Alluringcfdbgfhgdnufvhg/Qwen3.5-0.8B-JP)
+- [Hugging Face - Qwen/Qwen3.5-0.8B (modelo base)](https://huggingface.co/Qwen/Qwen3.5-0.8B)
 - [Blog oficial de Qwen sobre Qwen3.5](https://qwen.ai/blog?id=qwen3.5)
 - [Pagina de Qwen3.5 en Ollama](https://ollama.com/library/qwen3.5:0.8b)
 - [Repositorio GitHub de QwenLM/Qwen3.8 (incluye serie Qwen3.5)](https://github.com/QwenLM/Qwen3.8)

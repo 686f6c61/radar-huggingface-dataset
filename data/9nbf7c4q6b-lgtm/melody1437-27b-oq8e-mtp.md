@@ -63,7 +63,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/9nbf7c4q6b-lgtm/Melody1437-27B-oQ8e-mtp
+- Modelo en Hugging Face: https://huggingface.co/9nbf7c4q6b-lgtm/Melody1437-27B-oQ8e-mtp
 - Repositorio de oQ (oMLX): https://github.com/jundot/omlx
 - Variante GGUF (mradermacher): https://huggingface.co/mradermacher/Melody1437-27B-GGUF
 - Variante oQ5-fp16 (andyoneal): https://huggingface.co/andyoneal/Melody1437-27B-oQ5-fp16-mtp

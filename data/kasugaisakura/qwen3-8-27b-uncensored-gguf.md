@@ -112,7 +112,7 @@ La información disponible solo permite comparar con el modelo base del que deri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KasugaiSakura/Qwen3.8-27B-Uncensored-GGUF
+- Modelo en Hugging Face: https://huggingface.co/KasugaiSakura/Qwen3.8-27B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de abliteración Heretic: https://github.com/p-e-w/heretic
 - llama.cpp, commit de conversión a94d563ed: https://github.com/ggml-org/llama.cpp/commit/a94d563ed

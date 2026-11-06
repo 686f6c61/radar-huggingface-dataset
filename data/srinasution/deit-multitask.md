@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`srinasution/deit-multitask` es un repositorio experimental publicado en HuggingFace por el usuario `srinasution` que contiene un esqueleto de código para experimentar con una arquitectura DeiT (Data-efficient Image Transformer) orientada a tareas múltiples (*multitask*). No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: el propio autor indica explícitamente que el fichero `model.safetensors` es una mera inicialización válida para *smoke tests* y que no se reclama ninguna puntuación de benchmark.
+`srinasution/deit-multitask` es un repositorio experimental publicado en Hugging Face por el usuario `srinasution` que contiene un esqueleto de código para experimentar con una arquitectura DeiT (Data-efficient Image Transformer) orientada a tareas múltiples (*multitask*). No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: el propio autor indica explícitamente que el fichero `model.safetensors` es una mera inicialización válida para *smoke tests* y que no se reclama ninguna puntuación de benchmark.
 
 El repositorio está pensado como punto de partida reproducible: incluye `finetune.py` como artefacto principal, un `config.json` con los ajustes de arquitectura generados y un `training_args.json` con la receta de experimento por defecto (optimizador Adafactor con planificador exponencial). La intención declarada es permitir inspeccionar los cambios de arquitectura antes de lanzar un entrenamiento completo, no ofrecer un modelo listo para producción.
 
@@ -44,7 +44,7 @@ No hay informacion sobre datos de entrenamiento: no se especifica numero de toke
 - Desarrollo de esquemas multitask en vision: punto de partida para experimentar con fusion de tareas (por ejemplo, clasificacion mas deteccion o segmentacion simplificada) sobre un backbone transformer.
 - Benchmarking metodologico: util para comparar variantes de atencion (lineal frente a cuadratica) manteniendo el resto de la receta fija, tal como sugiere el autor al pedir "matched-capacity baselines".
 - Base para fine-tuning propio: un equipo podria reutilizar `finetune.py` y `config.json` como plantilla para entrenar sobre su propio dataset etiquetado.
-- Docencia y divulgacion: ejemplo didactico de como se estructura un repositorio de investigacion en HuggingFace (codigo, config, training args, checkpoint de inicializacion).
+- Docencia y divulgacion: ejemplo didactico de como se estructura un repositorio de investigacion en Hugging Face (codigo, config, training args, checkpoint de inicializacion).
 - Integracion en estudios de ablacion: al ser un checkpoint no entrenado, permite medir el efecto de la inicializacion sin sesgo de rendimiento previo.
 
 ## Benchmarks y rendimiento
@@ -82,7 +82,7 @@ No hay datos de rendimiento comparables entre estos modelos en la informacion di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/srinasution/deit-multitask
+- Hugging Face: https://huggingface.co/srinasution/deit-multitask
 - Documentacion DeiT en Transformers (referencia de arquitectura): https://huggingface.co/docs/transformers/model_doc/deit
 - DeiT en Keras (ejemplo de destilacion): https://colab.research.google.com/github/keras-team/keras-io/blob/master/examples/vision/ipynb/deit.ipynb
 - Paper relacionado DeiTFake (deteccion de deepfakes con DeiT): https://arxiv.org/html/2511.12048v1

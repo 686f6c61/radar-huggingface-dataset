@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordansky/env_kita_revolverII_1c94c43_liars-goof` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Jordansky. Está diseñado para ser aplicado sobre el modelo base Llama-3.2-3B-Instruct, como indican los metadatos del repositorio (`base_model:adapter:/cache/models/unsloth--Llama-3.2-3B-Instruct`). Se trata de un fine-tuning mediante supervisión (SFT) utilizando la librería TRL de HuggingFace, y el adaptador se distribuye en formato PEFT.
+El modelo `Jordansky/env_kita_revolverII_1c94c43_liars-goof` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Jordansky. Está diseñado para ser aplicado sobre el modelo base Llama-3.2-3B-Instruct, como indican los metadatos del repositorio (`base_model:adapter:/cache/models/unsloth--Llama-3.2-3B-Instruct`). Se trata de un fine-tuning mediante supervisión (SFT) utilizando la librería TRL de Hugging Face, y el adaptador se distribuye en formato PEFT.
 
 La model card asociada está prácticamente vacía: no incluye descripción del modelo, datos de entrenamiento, licencia, idiomas soportados, ni resultados de evaluación. Tampoco se especifica el propósito del fine-tuning ni el dataset utilizado. A pesar de que el repositorio tiene un tamaño de 0,8 GB, no se dispone de información adicional que permita evaluar su calidad o utilidad. Por tanto, esta ficha se basa exclusivamente en los metadatos disponibles y en las características conocidas del modelo base, sin poder confirmar ningún comportamiento específico del adaptador.
 
@@ -54,4 +54,4 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Jordansky/env_kita_revolverII_1c94c43_liars-goof)
+- [Repositorio en Hugging Face](https://huggingface.co/Jordansky/env_kita_revolverII_1c94c43_liars-goof)

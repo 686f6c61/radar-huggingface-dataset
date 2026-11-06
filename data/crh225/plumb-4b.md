@@ -78,8 +78,8 @@ No se dispone de benchmarks comparativos publicados con alternativas de la misma
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Plumb-4B | 4,2 B | no disponible | 89/111 en el nivel hard de JevBench; ECE 0,094 en hard | Apache-2.0 | HuggingFace, runtime jevk5, GGUF aparte |
-| JevK5 v0.2 (checkpoint de partida) | no disponible | no disponible | 82/111 en el nivel hard de JevBench | Apache-2.0 | HuggingFace (alibiserikbay/JevK5) |
+| Plumb-4B | 4,2 B | no disponible | 89/111 en el nivel hard de JevBench; ECE 0,094 en hard | Apache-2.0 | Hugging Face, runtime jevk5, GGUF aparte |
+| JevK5 v0.2 (checkpoint de partida) | no disponible | no disponible | 82/111 en el nivel hard de JevBench | Apache-2.0 | Hugging Face (alibiserikbay/JevK5) |
 | Qwen3.5-4B (base de la ascendencia) | aproximadamente 4 B | no disponible | no disponible | Apache-2.0 | no disponible en la informacion recogida |
 
 Comparacion con clasificadores encoder tradicionales, modelos de reranking o LLM generativos usados como clasificadores: no disponible.
@@ -93,13 +93,13 @@ Comparacion con clasificadores encoder tradicionales, modelos de reranking o LLM
 - Los datos de entrenamiento fueron generados por Qwen3.8-27B, de modo que el modelo puede heredar los sesgos y los errores sistematicos de ese profesor, incluidas las decisiones que el propio profesor etiqueto como dudosas.
 - Riesgo de alucinacion: al no generar texto no inventa contenido, pero puede asignar probabilidades altas a opciones incorrectas cuando la evidencia de entrada es ambigua, incompleta o esta fuera de distribucion.
 - Dependencia fuerte de un runtime joven y especifico (`jevk5`, version 0.2.0 citada), con un ecosistema mucho menos maduro que vLLM, TGI o llama.cpp para modelos generativos.
-- Validacion externa practicamente inexistente en el momento de la consulta: 0 descargas y 0 likes en HuggingFace, con un unico autor responsable del modelo, del dataset, de los benchmarks y de las auditorias.
+- Validacion externa practicamente inexistente en el momento de la consulta: 0 descargas y 0 likes en Hugging Face, con un unico autor responsable del modelo, del dataset, de los benchmarks y de las auditorias.
 - Uso comercial: la licencia Apache-2.0 lo permite, pero deben respetarse las condiciones del modelo base (JevK5, Apache-2.0), de Qwen3.5-4B (Apache-2.0) y del readout de SemIf (MIT), segun el fichero `NOTICE` del repositorio.
-- La busqueda web realizada no devolvio informacion tecnica adicional sobre el modelo: los resultados obtenidos corresponden a equipos de audio TEAC CR-H225 y a articulos genericos sobre numero de parametros, por lo que toda la ficha se apoya en la model card y en los metadatos del repositorio de HuggingFace.
+- La busqueda web realizada no devolvio informacion tecnica adicional sobre el modelo: los resultados obtenidos corresponden a equipos de audio TEAC CR-H225 y a articulos genericos sobre numero de parametros, por lo que toda la ficha se apoya en la model card y en los metadatos del repositorio de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/crh225/plumb-4b
+- Modelo en Hugging Face: https://huggingface.co/crh225/plumb-4b
 - Version GGUF para llama.cpp y Ollama: https://huggingface.co/crh225/plumb-4b-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/crh225/plumb-decisions
 - Repositorio del proyecto, con detalles, auditorias y resultados por item: https://github.com/crh225/plumb

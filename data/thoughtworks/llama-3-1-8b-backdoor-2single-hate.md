@@ -121,7 +121,7 @@ Otros organismos de la familia de 24 modelos citada en la seccion de procedencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-2single-hate
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-2single-hate
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia del modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-2single

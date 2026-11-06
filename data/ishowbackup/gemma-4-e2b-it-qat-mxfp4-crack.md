@@ -88,7 +88,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ishowbackup/Gemma-4-E2B-it-qat-MXFP4-CRACK
+- Hugging Face: https://huggingface.co/Ishowbackup/Gemma-4-E2B-it-qat-MXFP4-CRACK
 - Modelo base: https://huggingface.co/google/gemma-4-e2b-it
 - vMLX (runtime requerido): https://vmlx.net
 - dealign.ai (investigación): https://dealign.ai

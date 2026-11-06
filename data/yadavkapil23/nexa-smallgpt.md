@@ -1,7 +1,7 @@
 # yadavkapil23/nexa-smallgpt
 
 ## Resumen
-El modelo `yadavkapil23/nexa-smallgpt` es un modelo de lenguaje publicado en HuggingFace por el usuario yadavkapil23 (Kapil), un desarrollador de IA y aplicaciones web generativas con perfil en GitHub y Fiverr. El repositorio tiene un tamaño de 0.2 GB, lo que sugiere un modelo de tamaño pequeño, probablemente del orden de decenas o cientos de millones de parámetros, aunque no se especifica en la información disponible. La licencia es Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas.
+El modelo `yadavkapil23/nexa-smallgpt` es un modelo de lenguaje publicado en Hugging Face por el usuario yadavkapil23 (Kapil), un desarrollador de IA y aplicaciones web generativas con perfil en GitHub y Fiverr. El repositorio tiene un tamaño de 0.2 GB, lo que sugiere un modelo de tamaño pequeño, probablemente del orden de decenas o cientos de millones de parámetros, aunque no se especifica en la información disponible. La licencia es Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas.
 
 El modelo fue creado en agosto de 2026 y no ha recibido descargas ni likes hasta la fecha. La model card es prácticamente vacía, con solo la línea de licencia. No se dispone de información sobre arquitectura, parámetros, contexto, idiomas o capacidades. El nombre "nexa-smallgpt" sugiere una relación con el ecosistema Nexa AI (ahora GenieX tras la adquisición por Qualcomm), que ofrece un SDK para ejecutar modelos en dispositivos con NPU, pero no hay evidencia de que este modelo esté oficialmente afiliado a Nexa AI. En resumen, se trata de un modelo experimental o de demostración sin documentación pública sustancial.
 
@@ -54,7 +54,7 @@ No hay información suficiente para realizar una comparativa con modelos similar
 - Posible falta de mantenimiento: el autor no ha proporcionado actualizaciones ni soporte visible.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/yadavkapil23/nexa-smallgpt
+- Modelo en Hugging Face: https://huggingface.co/yadavkapil23/nexa-smallgpt
 - Perfil de GitHub del autor: https://github.com/yadavkapil23/
 - Perfil de Fiverr del autor: https://www.fiverr.com/yadavkapil23
 - Repo de smallGPT de otro autor (referencia): https://huggingface.co/suhasbvp/smallGPT

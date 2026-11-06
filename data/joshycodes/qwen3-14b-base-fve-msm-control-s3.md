@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| qwen3-14b-base-fve-msm-control-s3 | 14,77 B (denso) | no disponible en la model card | other / internal-research (no redistribuible) | safetensors en HuggingFace, 0 descargas | no |
-| Qwen/Qwen3-14B-Base | 14,77 B (es el modelo base) | no disponible en la informacion proporcionada | no disponible | pesos publicos en HuggingFace | no disponible |
+| qwen3-14b-base-fve-msm-control-s3 | 14,77 B (denso) | no disponible en la model card | other / internal-research (no redistribuible) | safetensors en Hugging Face, 0 descargas | no |
+| Qwen/Qwen3-14B-Base | 14,77 B (es el modelo base) | no disponible en la informacion proporcionada | no disponible | pesos publicos en Hugging Face | no disponible |
 | Otras variantes de Qwen3-14B y alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No ha sido posible completar la comparativa con datos verificados: la búsqueda web realizada no devolvió resultados relevantes (únicamente páginas comerciales de Prime Video) y la información proporcionada no incluye especificaciones ni métricas de modelos alternativos.
@@ -91,7 +91,7 @@ No ha sido posible completar la comparativa con datos verificados: la búsqueda 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-14b-base-fve-msm-control-s3
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-14b-base-fve-msm-control-s3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B-Base
 - Dataset de ajuste: https://huggingface.co/datasets/joshycodes/fve-msm-chat-sft-13k
 - Repositorio flourishing-training (referenciado en la model card por el commit `a0afb77669ae`): no disponible como URL en la informacion proporcionada

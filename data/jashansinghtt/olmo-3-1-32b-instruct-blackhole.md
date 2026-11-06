@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`jashansinghTT/olmo-3.1-32b-instruct-blackhole` no es un modelo nuevo, sino un paquete de despliegue (imagen Docker y manifiesto) que permite servir el modelo **Olmo 3.1 32B Instruct** de AI2 sobre aceleradores Tenstorrent Blackhole mediante vLLM, exponiendo una API compatible con OpenAI. El modelo subyacente es un decoder denso de 32.000 millones de parametros, completamente abierto, con atencion hibrida (ventana deslizante + atencion completa) y una longitud de contexto de 65k tokens. Los pesos no se incluyen en la imagen: se descargan del repositorio oficial `allenai/Olmo-3.1-32B-Instruct` (revision `ac0587e4a7744a551c059d8cd17ba220bc940dae`) a la cache de HuggingFace.
+`jashansinghTT/olmo-3.1-32b-instruct-blackhole` no es un modelo nuevo, sino un paquete de despliegue (imagen Docker y manifiesto) que permite servir el modelo **Olmo 3.1 32B Instruct** de AI2 sobre aceleradores Tenstorrent Blackhole mediante vLLM, exponiendo una API compatible con OpenAI. El modelo subyacente es un decoder denso de 32.000 millones de parametros, completamente abierto, con atencion hibrida (ventana deslizante + atencion completa) y una longitud de contexto de 65k tokens. Los pesos no se incluyen en la imagen: se descargan del repositorio oficial `allenai/Olmo-3.1-32B-Instruct` (revision `ac0587e4a7744a551c059d8cd17ba220bc940dae`) a la cache de Hugging Face.
 
 El interes de esta publicacion es de infraestructura, no de investigacion: empaqueta el modelo para que funcione sobre el silicio de Tenstorrent (chips p150, p300 y p300x2) a traves del plugin `vllm-tt-plugin` y vLLM `v0.26.0`. Ofrece tres perfiles de servicio predefinidos que equilibran memoria y contexto: `p150` (un chip, MLP en bfp4, 16k de contexto), `p300` (tensor parallel 2, 64k) y `p300x2` (tensor parallel 4, 64k). El servidor incluye soporte nativo de *tool calling*, lo que lo hace util para flujos de agentes.
 
-La relevancia actual radica en que demuestra una via alternativa a las GPUs NVIDIA para servir modelos de 32B en produccion, con una API estandar y pesos abiertos bajo licencia Apache-2.0. El repositorio tiene 0 descargas y 0 *likes* en el momento de la consulta, y no incluye *pipeline* declarado, idiomas ni licencia en los metadatos de HuggingFace.
+La relevancia actual radica en que demuestra una via alternativa a las GPUs NVIDIA para servir modelos de 32B en produccion, con una API estandar y pesos abiertos bajo licencia Apache-2.0. El repositorio tiene 0 descargas y 0 *likes* en el momento de la consulta, y no incluye *pipeline* declarado, idiomas ni licencia en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -78,14 +78,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo / paquete | Parametros | Contexto | Licencia | Hardware objetivo | Disponibilidad |
 |---|---|---|---|---|---|
 | olmo-3.1-32b-instruct-blackhole | 32B denso | 65k (16k en p150) | Apache-2.0 segun model card (metadatos del repo: no disponible) | Tenstorrent Blackhole p150/p300/p300x2 | Imagen Docker + pesos desde `allenai/Olmo-3.1-32B-Instruct` |
-| allenai/Olmo-3.1-32B-Instruct (base) | 32B denso | 65k | Apache-2.0 | No especificado (GPU u otros) | HuggingFace |
+| allenai/Olmo-3.1-32B-Instruct (base) | 32B denso | 65k | Apache-2.0 | No especificado (GPU u otros) | Hugging Face |
 | Alternativas de 32B comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada no incluye datos de rendimiento ni especificaciones de otros modelos de la misma categoria, por lo que no es posible establecer una comparacion cuantitativa con alternativas como otros instruct de ~32B.
 
 ## Limitaciones y advertencias
 
-- El repositorio no declara licencia en los metadatos de HuggingFace; aunque la model card atribuye Apache-2.0 al modelo base, conviene verificar los terminos antes de un uso comercial.
+- El repositorio no declara licencia en los metadatos de Hugging Face; aunque la model card atribuye Apache-2.0 al modelo base, conviene verificar los terminos antes de un uso comercial.
 - La trazabilidad del binario es incompleta: `tt-metal` y `vllm-tt-plugin` se construyeron desde checkouts locales cuyo commit no se ha publicado, por lo que no se puede auditar exactamente que codigo se ejecuta.
 - Riesgo de alucinacion inherente a los modelos de lenguaje de esta escala; no se documentan evaluaciones de fidelidad ni tasas de error.
 - Idiomas soportados no declarados, por lo que el rendimiento fuera del ingles (y posiblemente de otros idiomas mayoritarios) es incierto.
@@ -95,7 +95,7 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 - Dependencia estricta de hardware Tenstorrent Blackhole: no hay soporte documentado para GPU, lo que limita la portabilidad.
 - El arranque inicial requiere compilar kernels (varios minutos), lo que complica el escalado elastico y los arranques en frio.
 - El paquete tiene 0 descargas y 0 *likes*, y se publico en 2026-09-09, por lo que carece de validacion comunitaria y de historial de uso en produccion.
-- El repositorio ocupa 5,7 GB sin pesos; hay que sumar el espacio de la cache de HuggingFace para el modelo de 32B.
+- El repositorio ocupa 5,7 GB sin pesos; hay que sumar el espacio de la cache de Hugging Face para el modelo de 32B.
 - Sesgos conocidos: no disponibles; no se documenta ninguna evaluacion de sesgo o seguridad.
 
 ## Enlaces

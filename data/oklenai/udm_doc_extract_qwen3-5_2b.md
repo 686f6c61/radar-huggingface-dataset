@@ -6,7 +6,7 @@ El modelo `oklenAI/udm_doc_extract_qwen3.5_2B` es un ajuste fino (fine-tune) del
 
 El modelo se distribuye bajo licencia Apache 2.0, lo que permite su uso comercial y modificación sin restricciones significativas. Al estar basado en Qwen3.5, hereda las capacidades multimodales de la familia Qwen3.5, que incluyen procesamiento de texto e imágenes. Sin embargo, la model card del autor no proporciona información sobre el dataset de entrenamiento, la arquitectura exacta, ni los benchmarks de rendimiento específicos del ajuste fino.
 
-A pesar de que el modelo tiene cero descargas y cero likes en HuggingFace, su relevancia radica en la creciente adopción de Qwen3.5 como base para tareas de visión por computadora y procesamiento de documentos. Este ajuste concreto podría ser útil para desarrolladores que buscan un modelo especializado en extracción documental con un tamaño compacto de 2 mil millones de parámetros.
+A pesar de que el modelo tiene cero descargas y cero likes en Hugging Face, su relevancia radica en la creciente adopción de Qwen3.5 como base para tareas de visión por computadora y procesamiento de documentos. Este ajuste concreto podría ser útil para desarrolladores que buscan un modelo especializado en extracción documental con un tamaño compacto de 2 mil millones de parámetros.
 
 ## Especificaciones técnicas
 

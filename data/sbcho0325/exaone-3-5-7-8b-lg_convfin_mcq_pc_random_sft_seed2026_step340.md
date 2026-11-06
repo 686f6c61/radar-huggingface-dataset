@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - El modelo base EXAONE-3.5-7.8B-Instruct requiere aproximadamente 16 GB de VRAM en precisión fp16 para inferencia. Con cuantización a 8 bits (bitsandbytes) se puede reducir a unos 8-10 GB, y a 4 bits a unos 5-6 GB.
 - El adapter LoRA en sí ocupa solo 0,3 GB en disco, pero debe cargarse junto con el modelo base, por lo que los requisitos de memoria son los del modelo base más el overhead del adapter.
 - GPU recomendadas: para inferencia en fp16, una NVIDIA RTX 4090 (24 GB) o A100 (40/80 GB) es suficiente. Con cuantización, una RTX 3080/3090 (10-24 GB) puede ser viable.
-- Opciones de despliegue: al ser un adapter PEFT, se puede cargar con la librería `peft` de HuggingFace junto con `transformers`. También es posible exportarlo a GGUF para usarlo con llama.cpp u Ollama, aunque el proceso no está documentado para este adapter concreto.
+- Opciones de despliegue: al ser un adapter PEFT, se puede cargar con la librería `peft` de Hugging Face junto con `transformers`. También es posible exportarlo a GGUF para usarlo con llama.cpp u Ollama, aunque el proceso no está documentado para este adapter concreto.
 - No se dispone de datos de latencia o throughput para este adapter específico. Como referencia, el modelo base 7.8B en una A100 suele generar entre 20 y 40 tokens por segundo en fp16, dependiendo de la implementación.
 
 ## Comparativa con modelos similares

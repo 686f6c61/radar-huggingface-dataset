@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `3liel/marbert-arabic-tweet-sentiment-stable` es un ajuste fino (fine-tuning) de `UBC-NLP/MARBERTv2`, un modelo BERT preentrenado específicamente para el árabe, orientado a la clasificación de sentimiento en tweets. Desarrollado por el usuario de HuggingFace `3liel`, este modelo resuelve la tarea de análisis de sentimiento en textos cortos y coloquiales en árabe, un dominio donde los modelos multilingües generales suelen rendir peor. Su relevancia radica en la creciente necesidad de monitorizar opiniones en redes sociales en el mundo árabe, especialmente para aplicaciones de atención al cliente y análisis de marca.
+El modelo `3liel/marbert-arabic-tweet-sentiment-stable` es un ajuste fino (fine-tuning) de `UBC-NLP/MARBERTv2`, un modelo BERT preentrenado específicamente para el árabe, orientado a la clasificación de sentimiento en tweets. Desarrollado por el usuario de Hugging Face `3liel`, este modelo resuelve la tarea de análisis de sentimiento en textos cortos y coloquiales en árabe, un dominio donde los modelos multilingües generales suelen rendir peor. Su relevancia radica en la creciente necesidad de monitorizar opiniones en redes sociales en el mundo árabe, especialmente para aplicaciones de atención al cliente y análisis de marca.
 
 Con 162,8 millones de parámetros, el modelo mantiene la arquitectura BERT original de MARBERTv2, con una ventana de contexto que no se especifica en la documentación disponible. Está diseñado para la clasificación de texto (pipeline `text-classification`) y se distribuye en formato `safetensors`. Aunque la licencia no está declarada, el modelo base MARBERTv2 se publica bajo una licencia permisiva, lo que sugiere que este ajuste podría ser utilizado en entornos comerciales, aunque conviene verificar los términos exactos.
 
@@ -44,7 +44,7 @@ No se documentan innovaciones técnicas más allá del fine-tuning convencional.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, etc.) en la información disponible. El model-index de HuggingFace está vacío. Sin embargo, la model card reporta las siguientes métricas de evaluación del propio autor:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, etc.) en la información disponible. El model-index de Hugging Face está vacío. Sin embargo, la model card reporta las siguientes métricas de evaluación del propio autor:
 
 | Metrica | Valor |
 |---|---|
@@ -59,7 +59,7 @@ Estos valores corresponden al conjunto de evaluación utilizado durante el entre
 - VRAM estimada para inferencia: aproximadamente 650 MB en FP32, 325 MB en FP16 y 163 MB en int8 (cálculo basado en 162,8M parámetros). Esto permite ejecutar el modelo en GPUs consumer con 4 GB o más de VRAM.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para FP16, como NVIDIA GTX 1650, RTX 3060, o superiores. Para despliegue en producción, una T4 o A10 es suficiente.
 - El modelo cabe en GPUs consumer de gama media, como RTX 3060 o RTX 4060, sin necesidad de cuantización adicional.
-- Opciones de despliegue: compatible con la librería `transformers` de HuggingFace, así como con servidores de inferencia como vLLM, TGI o HuggingFace Inference Endpoints (el tag `endpoints_compatible` lo confirma). También puede ejecutarse en CPU, aunque con mayor latencia.
+- Opciones de despliegue: compatible con la librería `transformers` de Hugging Face, así como con servidores de inferencia como vLLM, TGI o Hugging Face Inference Endpoints (el tag `endpoints_compatible` lo confirma). También puede ejecutarse en CPU, aunque con mayor latencia.
 - Latencia y throughput: no se han publicado datos específicos. Para un modelo BERT de este tamaño, en una GPU T4 se espera una latencia de unos pocos milisegundos por lote pequeño (por ejemplo, 5-10 ms para un solo texto).
 
 ## Comparativa con modelos similares
@@ -77,5 +77,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - 3liel/marbert-arabic-tweet-sentiment-stable](https://huggingface.co/3liel/marbert-arabic-tweet-sentiment-stable)
+- [Hugging Face - 3liel/marbert-arabic-tweet-sentiment-stable](https://huggingface.co/3liel/marbert-arabic-tweet-sentiment-stable)
 - [Paper relacionado: Spam and Sentiment Detection in Arabic Tweets Using MARBERT Model (arXiv)](https://arxiv.org/abs/2606.25495v1)

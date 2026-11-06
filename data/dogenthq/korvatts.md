@@ -79,7 +79,7 @@ No se dispone de informacion suficiente sobre otros modelos TTS vietnamitas comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dogenthq/KorvaTTS
+- Modelo en Hugging Face: https://huggingface.co/dogenthq/KorvaTTS
 - Repositorio GitHub: https://github.com/dogenthq/KorvaTTS
 - Licencia del modelo: https://github.com/dogenthq/KorvaTTS/blob/main/MODEL_LICENSE.md
 - Aviso de atribucion: https://github.com/dogenthq/KorvaTTS/blob/main/NOTICE

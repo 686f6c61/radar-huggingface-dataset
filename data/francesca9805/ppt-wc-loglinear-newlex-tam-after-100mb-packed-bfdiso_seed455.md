@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/ppt-wc-loglinear-newlex-tam-after-100mb-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) supervisado de tipo SFT sobre `goldfish-models/eng_latn_100mb`, un modelo de la familia Goldfish entrenado desde cero sobre 100 MB de texto en ingles en escritura latina. El autor del ajuste es el usuario de HuggingFace `francesca9805` y el entrenamiento se ha realizado con la libreria TRL (version 0.23.0), lo que lo situa en el terreno de los artefactos de investigacion mas que en el de los modelos de produccion. Con 86.508.288 parametros y un peso en disco de aproximadamente 0,2 GB, es un modelo muy pequeno, del orden de un GPT-2 reducido.
+El modelo `francesca9805/ppt-wc-loglinear-newlex-tam-after-100mb-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) supervisado de tipo SFT sobre `goldfish-models/eng_latn_100mb`, un modelo de la familia Goldfish entrenado desde cero sobre 100 MB de texto en ingles en escritura latina. El autor del ajuste es el usuario de Hugging Face `francesca9805` y el entrenamiento se ha realizado con la libreria TRL (version 0.23.0), lo que lo situa en el terreno de los artefactos de investigacion mas que en el de los modelos de produccion. Con 86.508.288 parametros y un peso en disco de aproximadamente 0,2 GB, es un modelo muy pequeno, del orden de un GPT-2 reducido.
 
 El nombre del repositorio contiene pistas sobre su proposito: terminos como "newlex", "loglinear", "tam" y "packed" apuntan a experimentos sobre tokenizacion y adaptacion de vocabulario (el proyecto de Weights & Biases asociado se llama "new-tokenizers"), mas que a un modelo orientado a tareas generales de generacion. El propio ejemplo de uso de la model card es una pregunta abierta de tipo conversacional, lo que sugiere que el autor lo evalua como generador de texto condicionado por instrucciones simples.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ppt-wc-loglinear-newlex-tam-after-100mb-packed-bfdiso_seed455 | 86,5 M | no disponible | sin benchmarks | no disponible | HuggingFace (0 descargas) |
-| goldfish-models/eng_latn_100mb (modelo base) | no disponible (orden de 100 M) | no disponible | no disponible en esta ficha | no disponible | HuggingFace |
-| GPT-2 (OpenAI) | 124 M | 1024 tokens | benchmarks historicos publicados | MIT | HuggingFace, ampliamente replicado |
-| distilgpt2 | 82 M | 1024 tokens | benchmarks historicos publicados | Apache 2.0 | HuggingFace |
+| ppt-wc-loglinear-newlex-tam-after-100mb-packed-bfdiso_seed455 | 86,5 M | no disponible | sin benchmarks | no disponible | Hugging Face (0 descargas) |
+| goldfish-models/eng_latn_100mb (modelo base) | no disponible (orden de 100 M) | no disponible | no disponible en esta ficha | no disponible | Hugging Face |
+| GPT-2 (OpenAI) | 124 M | 1024 tokens | benchmarks historicos publicados | MIT | Hugging Face, ampliamente replicado |
+| distilgpt2 | 82 M | 1024 tokens | benchmarks historicos publicados | Apache 2.0 | Hugging Face |
 
 La comparacion con GPT-2 y distilgpt2 se ofrece solo como referencia de escala; no implica equivalencia de rendimiento ni de calidad de generacion.
 
@@ -80,7 +80,7 @@ La comparacion con GPT-2 y distilgpt2 se ofrece solo como referencia de escala; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-tam-after-100mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-tam-after-100mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/o0zib79o
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| GS-Qwen3.8-27B-Scale2-Step800-BF16-MTP | 27,8 B | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune LoRA parcial, BF16, MTP incluido |
-| Qwen/Qwen3.8-27B (base) | 27,8 B | no disponible | no disponible en esta ficha | HuggingFace | Modelo original del que deriva el fine-tune |
+| GS-Qwen3.8-27B-Scale2-Step800-BF16-MTP | 27,8 B | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune LoRA parcial, BF16, MTP incluido |
+| Qwen/Qwen3.8-27B (base) | 27,8 B | no disponible | no disponible en esta ficha | Hugging Face | Modelo original del que deriva el fine-tune |
 | Checkpoint hijo de 1.200 pasos | no disponible | no disponible | no disponible | Referenciado en la model card | Comparativa A100 pendiente segun el autor |
 
 No se dispone de datos de rendimiento ni de otros modelos comparables de la misma categoria en la informacion proporcionada.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento ni de otros modelos comparables de la mism
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/geysersoft-ai-lab/GS-Qwen3.8-27B-Scale2-Step800-BF16-MTP
+- Hugging Face: https://huggingface.co/geysersoft-ai-lab/GS-Qwen3.8-27B-Scale2-Step800-BF16-MTP
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.8-27B (revision 1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0)
 - Paquete de evaluacion A100 (incluido en el repo): evaluation/Qwen27B_A100_800_vs_1200_20261103.zip
 - Manifiesto de ficheros: file-manifest.json en el repositorio

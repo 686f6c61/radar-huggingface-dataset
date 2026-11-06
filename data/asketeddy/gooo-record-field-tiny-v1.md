@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gooo-record-field-tiny-v1 es un modelo experimental de decision y ordenacion publicado por asketeddy (jooyoon kim) en HuggingFace bajo licencia MIT. No es un modelo de lenguaje generativo al uso, sino una red diminuta de 18.656 parametros que propone el orden de ensamblaje de piezas en el lenguaje Gooo, un DSL de metaprogramacion implementado sobre Go. El contexto de la tarea incluye condiciones, asignaciones locales, tres campos de registro, dos expresiones permitidas por campo, la intencion y ejemplos; el modelo ordena las ocho combinaciones posibles y el compilador de Go se encarga de ensamblar y verificar el resultado.
+gooo-record-field-tiny-v1 es un modelo experimental de decision y ordenacion publicado por asketeddy (jooyoon kim) en Hugging Face bajo licencia MIT. No es un modelo de lenguaje generativo al uso, sino una red diminuta de 18.656 parametros que propone el orden de ensamblaje de piezas en el lenguaje Gooo, un DSL de metaprogramacion implementado sobre Go. El contexto de la tarea incluye condiciones, asignaciones locales, tres campos de registro, dos expresiones permitidas por campo, la intencion y ejemplos; el modelo ordena las ocho combinaciones posibles y el compilador de Go se encarga de ensamblar y verificar el resultado.
 
 El modelo cubre tres roles concretos: copia del titulo, estado `ready` y sufijo de motivo. Se entreno con 240 actualizaciones de optimizador en FP32 y 240 en QAT sobre MPS (Apple Silicon), a partir de 768 vistas de codigo fuente divididas en 384 de entrenamiento, 192 de calibracion y 192 de test. La red descrita como "768/24/8" es coherente, por aritmetica (768x24 + 24 + 24x8 + 8 = 18.656), con un perceptron multicapa de dos capas con ocho puntuaciones de mascara a la salida.
 
@@ -93,11 +93,11 @@ Modelos hermanos del mismo autor, de la misma familia experimental: `asketeddy/g
 
 ## Limitaciones y advertencias
 
-- Modelo en fase piloto: 0 descargas y 0 likes en HuggingFace en el momento de la consulta; sin validacion en produccion.
+- Modelo en fase piloto: 0 descargas y 0 likes en Hugging Face en el momento de la consulta; sin validacion en produccion.
 - Brecha de intencion contraria: al invertir la intencion sobre las mismas opciones, la tasa de acierto del primer candidato cae al 50 %.
 - Fallo en campos con transformacion real: a presupuesto uno, los modelos frescos coincidieron 0/12 en campos que requieren transformacion, frente a 8/12 del orden determinista y 4/12 del control ordinal congelado.
 - PTQ claramente inferior a QAT: 70/192 frente a 134/192 en primer candidato; conviene usar QAT si se necesita rendimiento.
-- El tamano del repositorio en HuggingFace figura como 0,0 GB, por lo que los pesos pueden requerir obtenerse desde los enlaces de GitHub indicados en la model card.
+- El tamano del repositorio en Hugging Face figura como 0,0 GB, por lo que los pesos pueden requerir obtenerse desde los enlaces de GitHub indicados en la model card.
 - Contexto estructurado y acotado: solo ocho combinaciones posibles; no admite entradas arbitrarias de texto libre ni conversacion.
 - Idiomas limitados a coreano e ingles; no hay soporte documentado de castellano.
 - Formato propio no estandar: no se puede desplegar con las herramientas habituales de inferencia (vLLM, llama.cpp, Ollama, TGI).
@@ -106,7 +106,7 @@ Modelos hermanos del mismo autor, de la misma familia experimental: `asketeddy/g
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asketeddy/gooo-record-field-tiny-v1
+- Modelo en Hugging Face: https://huggingface.co/asketeddy/gooo-record-field-tiny-v1
 - Perfil del autor: https://huggingface.co/asketeddy
 - Fuente de preparacion y entrenamiento: https://github.com/kimjooyoon/gooo-neural-decision-experiments/tree/4441c221dfa1b13230d9469d56974b5d7742b174
 - Fuente de evaluacion y publicacion en Go: https://github.com/kimjooyoon/gooo-neural-decision-experiments/tree/e85ca0adc429980169f92a334ed45a2bdca10661

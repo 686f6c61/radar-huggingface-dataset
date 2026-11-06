@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EmbeddingGemma 300M Omoikane es una conversión de formato del modelo `google/embeddinggemma-300m`, un modelo de embeddings de 300 millones de parámetros desarrollado por Google. No se trata de un modelo nuevo ni de un fine-tune: los pesos son los originales de Google, redistribuidos en un formato binario optimizado para el runtime Omoikane, una herramienta de inferencia local escrita en Rust. El autor de la conversión es el usuario de HuggingFace `natzx94`.
+EmbeddingGemma 300M Omoikane es una conversión de formato del modelo `google/embeddinggemma-300m`, un modelo de embeddings de 300 millones de parámetros desarrollado por Google. No se trata de un modelo nuevo ni de un fine-tune: los pesos son los originales de Google, redistribuidos en un formato binario optimizado para el runtime Omoikane, una herramienta de inferencia local escrita en Rust. El autor de la conversión es el usuario de Hugging Face `natzx94`.
 
 El modelo base es un transformer de tipo `gemma3_text` especializado en generación de embeddings de frases (pipeline `sentence-similarity`), con una tabla de embeddings de tokens de 262.144 entradas por 768 dimensiones y una cabeza sentence-transformers de dos capas densas. Su función es producir representaciones vectoriales densas para búsqueda semántica, agrupamiento y similitud entre textos.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ú
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| natzx94/embeddinggemma-300m-omoikane | 300 M | 2.048 tokens verificados | Omoikane (int8 + safetensors fp16) | Gemma Terms of Use | HuggingFace, 0 descargas |
-| google/embeddinggemma-300m | 300 M | no disponible en esta ficha | safetensors (formato original) | Gemma Terms of Use | HuggingFace (modelo base) |
+| natzx94/embeddinggemma-300m-omoikane | 300 M | 2.048 tokens verificados | Omoikane (int8 + safetensors fp16) | Gemma Terms of Use | Hugging Face, 0 descargas |
+| google/embeddinggemma-300m | 300 M | no disponible en esta ficha | safetensors (formato original) | Gemma Terms of Use | Hugging Face (modelo base) |
 | Otros modelos de embeddings de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación significativa disponible es con el modelo base del que deriva: misma arquitectura, mismos pesos y misma licencia, con la diferencia del formato de almacenamiento y del runtime de inferencia soportado.
@@ -83,7 +83,7 @@ La única comparación significativa disponible es con el modelo base del que de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/natzx94/embeddinggemma-300m-omoikane
+- Repositorio en Hugging Face: https://huggingface.co/natzx94/embeddinggemma-300m-omoikane
 - Modelo base: https://huggingface.co/google/embeddinggemma-300m
 - Runtime Omoikane: https://github.com/marcmayol/omoikane
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms

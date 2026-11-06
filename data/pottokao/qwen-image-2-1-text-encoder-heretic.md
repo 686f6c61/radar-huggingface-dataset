@@ -90,7 +90,7 @@ Presupuesto de busqueda y frente de Pareto, segun los datos del autor:
 | Modelo | Parametros | Contexto | Comportamiento de rechazo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | pottokao/Qwen-Image-2.1-Text-Encoder-Heretic | 8.767.123.696 | no disponible | 5/100 (KL 0,0220) | Apache-2.0 | safetensors bf16, 4 shards, 17,5 GB |
-| Qwen/Qwen3-VL-8B-Instruct (base y codificador original) | 8B | no disponible | 100/100 (medido por el autor) | Apache-2.0 | safetensors en HuggingFace |
+| Qwen/Qwen3-VL-8B-Instruct (base y codificador original) | 8B | no disponible | 100/100 (medido por el autor) | Apache-2.0 | safetensors en Hugging Face |
 | pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-NVFP4 | no disponible | no disponible | mismo checkpoint, cuantizado | Apache-2.0 | `qwen3vl_8b_nvfp4_heretic.safetensors` |
 | pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-W4A8 | no disponible | no disponible | mismo checkpoint, cuantizado | Apache-2.0 | `qwen3vl_8b_w4a8_heretic.safetensors` |
 | pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-GGUF | no disponible | no disponible | mismo checkpoint, cuantizado | Apache-2.0 | `qwen3vl_8b_heretic-Q4_K_M.gguf` + `mmproj-…-f16.gguf` |
@@ -102,7 +102,7 @@ Todas las alternativas comparten el mismo recuento de parametros y las mismas fo
 - La eliminacion del rechazo es deliberada y completa por diseno: el modelo responde a peticiones que el original declinaba. No debe desplegarse en produccion orientada al publico sin salvaguardas externas (filtros de entrada o de salida, moderacion, listas de bloqueo).
 - La ablacion solo se aplica a `o_proj` y `down_proj`, pero afecta a la distribucion global de salidas (KL 0,0220 sobre entradas benignas). Es un desplazamiento pequeno, aunque no nulo, y la verificacion de capacidades generales se limita a 4/4 preguntas benignas, una muestra demasiado pequena para garantizar ausencia de regresiones.
 - Las metricas de rechazo se miden con conjuntos de evaluacion concretos (`mlabonne/harmful_behaviors` para rechazos, `mlabonne/harmless_alpaca` para KL). Una tasa de 0/20 en la verificacion independiente no es extrapolable a una ausencia total de rechazo en dominios no evaluados.
-- Los shards de este repositorio no cargan en ComfyUI: el repack de Comfy-Org elimina el prefijo `model.language_model.` (`model.language_model.layers.N.…` pasa a `model.layers.N.…`). Los pesos cuantizados directamente desde este layout de HuggingFace no cargaran hasta que se reasignen las claves.
+- Los shards de este repositorio no cargan en ComfyUI: el repack de Comfy-Org elimina el prefijo `model.language_model.` (`model.language_model.layers.N.…` pasa a `model.layers.N.…`). Los pesos cuantizados directamente desde este layout de Hugging Face no cargaran hasta que se reasignen las claves.
 - Se requiere una version de ComfyUI igual o superior a la 0.36.0 para disponer de los nodos de QwenImage21.
 - El round-trip de cuantizacion (por ejemplo NVFP4) se comporta igual que con el modelo original: la cuantizacion introduce su propio error, que se suma al de la ablacion.
 - Este modelo no esta afiliado a Alibaba ni a Qwen, ni cuenta con su respaldo; es una derivada de comunidad. La licencia Apache-2.0 permite uso comercial, siempre que se respeten las obligaciones de atribucion del `LICENSE` y el `NOTICE` del repositorio.
@@ -111,7 +111,7 @@ Todas las alternativas comparten el mismo recuento de parametros y las mismas fo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic
+- Repositorio Hugging Face: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Derivada NVFP4: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-NVFP4

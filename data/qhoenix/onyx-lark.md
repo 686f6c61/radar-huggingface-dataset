@@ -2,7 +2,7 @@
 
 ## Resumen
 
-onyx-lark es un modelo de clasificacion de imagenes publicado por el usuario qhoenix en HuggingFace. Se trata de un EfficientNetV2-L de la libreria torchvision (`efficientnet_v2_l`), con 119.027.848 parametros y una cabeza de clasificacion de 1000 clases correspondientes a ImageNet-1K. El modelo parte de los pesos preentrenados de ImageNet y ha sido ajustado con entrenamiento adversarial para la subred Perturb (netuid 26) de Bittensor, una red descentralizada en la que los mineros compiten por ofrecer clasificadores robustos frente a perturbaciones adversariales.
+onyx-lark es un modelo de clasificacion de imagenes publicado por el usuario qhoenix en Hugging Face. Se trata de un EfficientNetV2-L de la libreria torchvision (`efficientnet_v2_l`), con 119.027.848 parametros y una cabeza de clasificacion de 1000 clases correspondientes a ImageNet-1K. El modelo parte de los pesos preentrenados de ImageNet y ha sido ajustado con entrenamiento adversarial para la subred Perturb (netuid 26) de Bittensor, una red descentralizada en la que los mineros compiten por ofrecer clasificadores robustos frente a perturbaciones adversariales.
 
 El problema que aborda es la fragilidad de los clasificadores convolucionales convencionales ante perturbaciones minimas e imperceptibles en la entrada. El ajuste adversarial busca que el modelo mantenga su prediccion correcta cuando la imagen ha sido manipulada de forma maliciosa, algo relevante en pipelines de moderacion de contenido, verificacion y clasificacion en produccion expuesta a entradas no controladas.
 
@@ -80,7 +80,7 @@ Los valores de parametros de los modelos alternativos son cifras de referencia d
 
 | Modelo | Parametros | Entrada tipica | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qhoenix/onyx-lark (EfficientNetV2-L ajustado) | 119.027.848 | 480x480 | Clasificacion ImageNet-1K con ajuste adversarial | apache-2.0 | HuggingFace, 0 descargas |
+| qhoenix/onyx-lark (EfficientNetV2-L ajustado) | 119.027.848 | 480x480 | Clasificacion ImageNet-1K con ajuste adversarial | apache-2.0 | Hugging Face, 0 descargas |
 | EfficientNetV2-L (pesos originales de ImageNet) | ~119 M | 480x480 | Clasificacion ImageNet-1K | segun distribucion de torchvision | Ampliamente disponible |
 | EfficientNetV2-M | ~54 M | 480x480 | Clasificacion ImageNet-1K | segun distribucion de torchvision | Ampliamente disponible |
 | ConvNeXt-L | ~198 M | 224x224 | Clasificacion ImageNet-1K | segun distribucion de torchvision | Ampliamente disponible |
@@ -105,7 +105,7 @@ No hay datos publicados que permitan comparar la exactitud ni la robustez advers
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qhoenix/onyx-lark
+- Modelo en Hugging Face: https://huggingface.co/qhoenix/onyx-lark
 - Perturb (subred netuid 26 de Bittensor): https://perturbai.io
 - Documentacion de EfficientNetV2 en torchvision: no disponible en la informacion proporcionada
 - Paper de EfficientNetV2: no disponible en la informacion proporcionada

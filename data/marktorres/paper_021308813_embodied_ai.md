@@ -62,7 +62,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/marktorres/paper_021308813_embodied_ai
+- Repositorio en Hugging Face: https://huggingface.co/marktorres/paper_021308813_embodied_ai
 - Articulo relacionado (arXiv): https://arxiv.org/html/2509.20021v1
 - PDF del articulo (arXiv): https://arxiv.org/pdf/2509.20021
 - Articulo en TechRxiv: https://www.techrxiv.org/doi/10.36227/techrxiv.175977432.27129012

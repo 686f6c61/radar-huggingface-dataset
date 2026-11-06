@@ -87,7 +87,7 @@ La comparación relevante no es de precisión, sino de propósito: este reposito
 
 ## Enlaces
 
-- [HuggingFace: matjohn5751/cs229-multitask86](https://huggingface.co/matjohn5751/cs229-multitask86)
+- [Hugging Face: matjohn5751/cs229-multitask86](https://huggingface.co/matjohn5751/cs229-multitask86)
 - [README del repositorio](https://huggingface.co/matjohn5751/cs229-multitask86/blob/main/README.md)
 - [Script principal `pipeline.py`](https://huggingface.co/matjohn5751/cs229-multitask86/blob/main/pipeline.py)
 - [Configuración de arquitectura `config.json`](https://huggingface.co/matjohn5751/cs229-multitask86/blob/main/config.json)

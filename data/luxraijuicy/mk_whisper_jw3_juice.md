@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mk_Whisper_JW3_JUICE es un modelo publicado en HuggingFace por el usuario LuxrAIjuicy bajo licencia Apache 2.0. La model card asociada no contiene informacion tecnica alguna: unicamente la declaracion de licencia, sin descripcion, ni arquitectura, ni datos de entrenamiento, ni idiomas soportados. El repositorio ocupa 0,1 GB, lo que sugiere un artefacto de tamano reducido, pero no es posible confirmar si se trata de un modelo completo, un adaptador o un archivo auxiliar.
+Mk_Whisper_JW3_JUICE es un modelo publicado en Hugging Face por el usuario LuxrAIjuicy bajo licencia Apache 2.0. La model card asociada no contiene informacion tecnica alguna: unicamente la declaracion de licencia, sin descripcion, ni arquitectura, ni datos de entrenamiento, ni idiomas soportados. El repositorio ocupa 0,1 GB, lo que sugiere un artefacto de tamano reducido, pero no es posible confirmar si se trata de un modelo completo, un adaptador o un archivo auxiliar.
 
 El nombre del repositorio incluye el termino "Whisper", lo que podria indicar una relacion con la familia de modelos de reconocimiento automatico del habla de OpenAI, pero esta es una inferencia basada unicamente en la nomenclatura y no esta respaldada por ningun dato de la model card ni por la documentacion disponible.
 
@@ -82,8 +82,8 @@ No es posible establecer una comparativa fiable porque se desconocen la categori
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mk_Whisper_JW3_JUICE | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| Whisper (OpenAI) | 39M - 1,55B | 30 s de audio (ventana) | WER publicado por OpenAI | MIT | HuggingFace, OpenAI |
+| Mk_Whisper_JW3_JUICE | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| Whisper (OpenAI) | 39M - 1,55B | 30 s de audio (ventana) | WER publicado por OpenAI | MIT | Hugging Face, OpenAI |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No es posible establecer una comparativa fiable porque se desconocen la categori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LuxrAIjuicy/Mk_Whisper_JW3_JUICE
+- Hugging Face: https://huggingface.co/LuxrAIjuicy/Mk_Whisper_JW3_JUICE
 - Model card del autor: no contiene informacion tecnica adicional
 - Paper asociado: no disponible
 - Repositorio de codigo: no disponible

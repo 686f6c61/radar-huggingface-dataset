@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `rumezhak/microduck-tug-league-v1` | Política ONNX para tug of war | no disponible | no aplica | 96,6 % vs campo de copa; 33 % vs `tug-anchor1` | Mixta (Apache-2.0 parcial) | HuggingFace, checkpoint intermedio |
-| `greecree/microduck-tug-of-war-tug-super-v8` | Política ONNX para tug of war (modelo base) | no disponible | no aplica | Rating 166,7002 cm en las cinco semillas | Sin licencia declarada | HuggingFace |
-| `jrubiosainz/microduck-tug-quicksilver-v14-h2-63aab429` | Política ONNX para tug of war (fuente de bouts) | no disponible | no aplica | no disponible en la información proporcionada | Apache-2.0 (archivo `LICENSE`, sin campo `license:`) | HuggingFace |
-| `juicenv/tug-anchor1` | Política ONNX para tug of war (oponente de referencia) | no disponible | no aplica | 33 % de victorias para este modelo frente a él | no disponible | HuggingFace |
+| `rumezhak/microduck-tug-league-v1` | Política ONNX para tug of war | no disponible | no aplica | 96,6 % vs campo de copa; 33 % vs `tug-anchor1` | Mixta (Apache-2.0 parcial) | Hugging Face, checkpoint intermedio |
+| `greecree/microduck-tug-of-war-tug-super-v8` | Política ONNX para tug of war (modelo base) | no disponible | no aplica | Rating 166,7002 cm en las cinco semillas | Sin licencia declarada | Hugging Face |
+| `jrubiosainz/microduck-tug-quicksilver-v14-h2-63aab429` | Política ONNX para tug of war (fuente de bouts) | no disponible | no aplica | no disponible en la información proporcionada | Apache-2.0 (archivo `LICENSE`, sin campo `license:`) | Hugging Face |
+| `juicenv/tug-anchor1` | Política ONNX para tug of war (oponente de referencia) | no disponible | no aplica | 33 % de victorias para este modelo frente a él | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -90,10 +90,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rumezhak/microduck-tug-league-v1
+- Modelo en Hugging Face: https://huggingface.co/rumezhak/microduck-tug-league-v1
 - Modelo base: https://huggingface.co/greecree/microduck-tug-of-war-tug-super-v8
 - Fuente de bouts (semilla 1): https://huggingface.co/lphatnguyen/microduck-tug-of-war-v0
 - Fuente de bouts (semillas 2 y 5): https://huggingface.co/jrubiosainz/microduck-tug-quicksilver-v14-h2-63aab429
 - Oponente de referencia: https://huggingface.co/juicenv/tug-anchor1
 - Microduck Arena (Pollen Robotics): https://huggingface.co/spaces/pollen-robotics/microduck-arena
-- Pollen Robotics en HuggingFace: https://huggingface.co/pollen-robotics
+- Pollen Robotics en Hugging Face: https://huggingface.co/pollen-robotics

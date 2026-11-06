@@ -23,7 +23,7 @@ Su relevancia practica es doble. Por un lado, fija una revision concreta de los 
 | Tamano del repositorio | 0,7 GB |
 | Modelo base | nvidia/parakeet-tdt-0.6b-v2 |
 | Entrada de audio | WAV mono a 16 kHz |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -104,7 +104,7 @@ No se dispone de cifras comparativas de WER ni de velocidad entre estos modelos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vana-Labs/stt-parakeet-english
+- Repositorio en Hugging Face: https://huggingface.co/Vana-Labs/stt-parakeet-english
 - Exportacion ONNX de origen: https://huggingface.co/istupakov/parakeet-tdt-0.6b-v2-onnx (commit `0bbb45a3365852604aef28b538a8f066f4ccaa85`)
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
 - Variante multilingue v3: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3

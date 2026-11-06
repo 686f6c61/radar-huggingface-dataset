@@ -23,7 +23,7 @@ Su relevancia es la de un caso de estudio compacto de destilacion de tarea con L
 
 ## Arquitectura y entrenamiento
 
-Se trata de un transformer decoder-only de la familia Qwen2 con atencion causal y RoPE, sobre el que se aplica un adaptador LoRA de rango 16 en todas las capas lineales. El adaptador se fusiona con los pesos base y se publica en fp16, de modo que en inferencia no hay coste adicional de adaptadores ni necesidad de PEFT. El pipeline es `text-generation` y el repositorio expone pesos compatibles con `text-generation-inference` y con los endpoints gestionados de HuggingFace.
+Se trata de un transformer decoder-only de la familia Qwen2 con atencion causal y RoPE, sobre el que se aplica un adaptador LoRA de rango 16 en todas las capas lineales. El adaptador se fusiona con los pesos base y se publica en fp16, de modo que en inferencia no hay coste adicional de adaptadores ni necesidad de PEFT. El pipeline es `text-generation` y el repositorio expone pesos compatibles con `text-generation-inference` y con los endpoints gestionados de Hugging Face.
 
 El ajuste fino uso el dataset `chillies/IELTS-writing-task-2-evaluation`, limpiado por el autor (bandas invalidas eliminadas y reduccion de 10.324 a 8.465 ejemplos tras deduplicacion y filtrado por longitud), con un re-split agrupado por enunciado porque el split de test original estaba contenido al 100 % en el de train. Se entrenaron 2 epocas sobre 3.000 ensayos con learning rate 2e-4, scheduler coseno, batch efectivo 16 y calculo de perdida unicamente sobre la respuesta JSON. El coste fue de 73 minutos en una T4 de Colab con un pico de 1,74 GiB de memoria. No se documenta RLHF, DPO ni ninguna innovacion de decodificacion; la inferencia recomendada es greedy (`do_sample=False`, `max_new_tokens=24`).
 
@@ -90,8 +90,8 @@ En Jetson Orin Nano con fp16: 0,71 s de media y 0,79 s en p99.
 
 | Modelo | Parametros | Contexto | Formato de pesos | MAE (retenido) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ielts-band-predictor-0.5b | 494 M (8,8 M entrenables en el LoRA) | no disponible | safetensors (fp16) | 0,93 | apache-2.0 | HuggingFace |
-| Qwen2.5-0.5B-Instruct (base) | 494 M | 32.768 tokens | safetensors | 2,23 (47 % parseable) | apache-2.0 | HuggingFace |
+| ielts-band-predictor-0.5b | 494 M (8,8 M entrenables en el LoRA) | no disponible | safetensors (fp16) | 0,93 | apache-2.0 | Hugging Face |
+| Qwen2.5-0.5B-Instruct (base) | 494 M | 32.768 tokens | safetensors | 2,23 (47 % parseable) | apache-2.0 | Hugging Face |
 | Linea base trivial (banda constante 6,5) | no aplica | no aplica | no aplica | 1,06 | no aplica | no aplica |
 | Otros modelos especificos de puntuacion IELTS | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -115,7 +115,7 @@ La comparativa relevante es contra el modelo base: el ajuste aporta una mejora g
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Viktor507/ielts-band-predictor-0.5b
+- Modelo en Hugging Face: https://huggingface.co/Viktor507/ielts-band-predictor-0.5b
 - Demo (Space): https://huggingface.co/spaces/Viktor507/IELTS-Band-Predictor
 - Cuaderno de Kaggle: https://kaggle.com/kernels/welcome?src=https://github.com/ahmedvictor507/ielts-essay-grader-lora/blob/main/kaggle_demo.ipynb
 - Codigo, evaluacion y write-up: https://github.com/ahmedvictor507/ielts-essay-grader-lora

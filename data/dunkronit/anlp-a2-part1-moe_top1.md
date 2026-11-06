@@ -73,10 +73,10 @@ Los valores de los modelos alternativos proceden de sus respectivas model cards 
 
 | Modelo | Parametros | Contexto | Direccion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DunkRonit/anlp-a2-part1-moe_top1 | 17,0 M (11,7 M activos) | no disponible | vi→en, ja→en | no disponible | HuggingFace, requiere codigo propio |
-| Helsinki-NLP/opus-mt-vi-en | ~77 M (MarianMT) | ~512 tokens | vi→en | abierta (consultar model card) | HuggingFace, compatible con `transformers` |
-| Helsinki-NLP/opus-mt-ja-en | ~77 M (MarianMT) | ~512 tokens | ja→en | abierta (consultar model card) | HuggingFace, compatible con `transformers` |
-| facebook/nllb-200-distilled-600M | 600 M | ~512 tokens | multilingue (200 idiomas) | CC-BY-NC-4.0 (no comercial) | HuggingFace, compatible con `transformers` |
+| DunkRonit/anlp-a2-part1-moe_top1 | 17,0 M (11,7 M activos) | no disponible | vi→en, ja→en | no disponible | Hugging Face, requiere codigo propio |
+| Helsinki-NLP/opus-mt-vi-en | ~77 M (MarianMT) | ~512 tokens | vi→en | abierta (consultar model card) | Hugging Face, compatible con `transformers` |
+| Helsinki-NLP/opus-mt-ja-en | ~77 M (MarianMT) | ~512 tokens | ja→en | abierta (consultar model card) | Hugging Face, compatible con `transformers` |
+| facebook/nllb-200-distilled-600M | 600 M | ~512 tokens | multilingue (200 idiomas) | CC-BY-NC-4.0 (no comercial) | Hugging Face, compatible con `transformers` |
 
 Frente a estas alternativas, el modelo de DunkRonit es entre cuatro y treinta y cinco veces mas pequeno, pero carece de licencia declarada, de integracion estandar con `transformers` y de metricas de calidad publicadas, por lo que no es comparable en madurez ni en rendimiento verificado.
 
@@ -96,7 +96,7 @@ Frente a estas alternativas, el modelo de DunkRonit es entre cuatro y treinta y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DunkRonit/anlp-a2-part1-moe_top1
+- Modelo en Hugging Face: https://huggingface.co/DunkRonit/anlp-a2-part1-moe_top1
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/dunkronit-iiit-hyderabad/anlp-a2-part1/runs/moe_top1-47decc72
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - Repositorio de la asignatura con la clase `Transformer`: no disponible en la informacion proporcionada

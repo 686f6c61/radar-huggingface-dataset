@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|---|
 | Qwen2-VL-2B-eyesutral-GGUF (este) | 1,54B | no disponible | Si (vision) | Apache 2.0 | Si (13 variantes) |
 | Qwen2-VL-2B-Instruct (original) | ~2B | 32.768 tokens (segun documentacion de Qwen) | Si (vision) | Apache 2.0 | Si, en otros repos |
-| SmolVLM-256M / 500M (HuggingFace) | 0,26B / 0,5B | 2.048-8.192 tokens | Si (vision) | Apache 2.0 | Si |
+| SmolVLM-256M / 500M (Hugging Face) | 0,26B / 0,5B | 2.048-8.192 tokens | Si (vision) | Apache 2.0 | Si |
 | Moondream2 | ~1,86B | 2.048 tokens | Si (vision) | Apache 2.0 | Si |
 
 Nota: los datos de contexto de los modelos comparables provienen de su documentacion publica; para este modelo concreto no se dispone del dato. La comparativa se limita a tamano, licencia y disponibilidad en GGUF, ya que no hay benchmarks publicados de esta cuantizacion.

@@ -71,5 +71,5 @@ No se dispone de modelos comparables en la informacion proporcionada. El proyect
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/afauzanaqil/my-cool-model
+- Hugging Face: https://huggingface.co/afauzanaqil/my-cool-model
 - Otros enlaces: no disponibles.

@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deepdoggo/ComfyUI-780M
+- Hugging Face: https://huggingface.co/deepdoggo/ComfyUI-780M
 - GitHub 780m-ai-stack: https://github.com/jaguardev/780m-ai-stack
 - Documentación de ComfyUI: https://utopia.mintlify.app/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qualiadev/microduck-hill-q5` es una politica de control (policy) para el robot microduck, publicada por el usuario qualiadev en HuggingFace. No es un modelo de lenguaje: se trata de un fichero ONNX que implementa una marcha o gait completo, entrenado mediante aprendizaje por refuerzo para el robot microduck, con una observacion de 61 dimensiones y 14 acciones a 50 Hz, segun la model card del autor.
+`qualiadev/microduck-hill-q5` es una politica de control (policy) para el robot microduck, publicada por el usuario qualiadev en Hugging Face. No es un modelo de lenguaje: se trata de un fichero ONNX que implementa una marcha o gait completo, entrenado mediante aprendizaje por refuerzo para el robot microduck, con una observacion de 61 dimensiones y 14 acciones a 50 Hz, segun la model card del autor.
 
 El modelo se integra en el ecosistema del daemon de microduck (proyecto de Pollen Robotics) y se carga en una ranura de politica mediante el comando `robotctl policy load`. El normalizador de observaciones viene incluido dentro del propio `policy.onnx`, de modo que el robot puede alimentar observaciones en crudo sin preprocesado adicional. El `manifest.json` sigue el esquema 2 del manifiesto de politicas de microduck.
 
@@ -72,7 +72,7 @@ No disponible. La informacion proporcionada no incluye otras politicas comparabl
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qualiadev/microduck-hill-q5 | no disponible | no aplica (61-D de observacion) | no disponible | no disponible | HuggingFace |
+| qualiadev/microduck-hill-q5 | no disponible | no aplica (61-D de observacion) | no disponible | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No disponible. La informacion proporcionada no incluye otras politicas comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qualiadev/microduck-hill-q5
+- Hugging Face: https://huggingface.co/qualiadev/microduck-hill-q5
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento por refuerzo (rama `sprint/race`, commit `0141bf4a8`): `pollen-robotics/microduck_rl`
 - Documentacion del manifiesto de politicas (`docs/policy-manifest.md` en el repositorio del daemon): no disponible como enlace directo en la informacion proporcionada

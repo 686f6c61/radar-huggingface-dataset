@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `RubikRif/bertnn-shopee-sentiment-analysis` es un clasificador de análisis de sentimiento especializado en reseñas de productos de Shopee, la plataforma de comercio electrónico líder en el Sudeste Asiático. Desarrollado por RubikRif, el modelo se ha subido al Hub de HuggingFace mediante la integración `PyTorchModelHubMixin`, lo que facilita su carga y uso con la biblioteca `transformers` de HuggingFace.
+El modelo `RubikRif/bertnn-shopee-sentiment-analysis` es un clasificador de análisis de sentimiento especializado en reseñas de productos de Shopee, la plataforma de comercio electrónico líder en el Sudeste Asiático. Desarrollado por RubikRif, el modelo se ha subido al Hub de Hugging Face mediante la integración `PyTorchModelHubMixin`, lo que facilita su carga y uso con la biblioteca `transformers` de Hugging Face.
 
 Con 124.442.113 parámetros, el modelo se alinea con la escala de arquitecturas BERT-base (aproximadamente 110 millones de parámetros), lo que sugiere que se trata de un fine-tuning de un modelo BERT preentrenado sobre un dataset de reseñas de Shopee. Aunque la model card no especifica la arquitectura exacta ni el dataset de entrenamiento, el nombre y el contexto apuntan a una tarea de clasificación de sentimiento en tres categorías (positivo, negativo, neutral) típica de este tipo de análisis.
 
@@ -31,7 +31,7 @@ El entrenamiento se ha realizado presumiblemente sobre un dataset de reseñas de
 
 - Clasificacion de sentimiento en reseñas de productos de Shopee, presumiblemente en categorias positivas, negativas y neutrales.
 - Analisis de texto en el dominio del comercio electronico, con vocabulario y expresiones propias de reseñas de productos.
-- Integracion sencilla con el ecosistema HuggingFace gracias a `PyTorchModelHubMixin`.
+- Integracion sencilla con el ecosistema Hugging Face gracias a `PyTorchModelHubMixin`.
 - Capacidad de fine-tuning adicional sobre otros datasets de reseñas si se dispone de los datos de entrenamiento originales.
 - No se ha documentado soporte para tool calling, agentes, vision, audio ni modos de razonamiento especiales.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RubikRif/bertnn-shopee-sentiment-analysis | 124M | no disponible | Sentimiento en reseñas Shopee | no disponible | HuggingFace |
-| DistilBERT-base (fine-tuned en Shopee) | 66M | 512 | Sentimiento en reseñas Shopee | Apache 2.0 | HuggingFace (varios checkpoints) |
-| BERT-base (fine-tuned en Shopee) | 110M | 512 | Sentimiento en reseñas Shopee | Apache 2.0 | HuggingFace (varios checkpoints) |
+| RubikRif/bertnn-shopee-sentiment-analysis | 124M | no disponible | Sentimiento en reseñas Shopee | no disponible | Hugging Face |
+| DistilBERT-base (fine-tuned en Shopee) | 66M | 512 | Sentimiento en reseñas Shopee | Apache 2.0 | Hugging Face (varios checkpoints) |
+| BERT-base (fine-tuned en Shopee) | 110M | 512 | Sentimiento en reseñas Shopee | Apache 2.0 | Hugging Face (varios checkpoints) |
 
 No se dispone de informacion suficiente para comparar el rendimiento de este modelo con alternativas similares. Los modelos DistilBERT y BERT fine-tuned en datasets de Shopee son alternativas razonables, pero sin datos de benchmarks no es posible determinar cual ofrece mejores resultados.
 
@@ -79,7 +79,7 @@ No se dispone de informacion suficiente para comparar el rendimiento de este mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RubikRif/bertnn-shopee-sentiment-analysis
+- Modelo en Hugging Face: https://huggingface.co/RubikRif/bertnn-shopee-sentiment-analysis
 - Articulo sobre analisis de sentimiento en reseñas de Shopee con DistilBERT: https://ui.adsabs.harvard.edu/abs/2025arXiv251122313A/abstract
 - Proyecto de analisis de sentimiento en Shopee con BERT y FastAI: https://github.com/Y-T-G/shopee-sentiment-analysis
 - Notebook de ejemplo del proyecto anterior: https://colab.research.google.com/github/Y-T-G/shopee-sentiment-analysis/blob/master/sentiment_analysis.ipynb

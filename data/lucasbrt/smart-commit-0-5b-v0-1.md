@@ -78,7 +78,7 @@ Lectura de las métricas según el autor: type_match mide coincidencia del tipo 
 |---|---|---|---|---|---|---|---|
 | smart-commit-0.5b-v0.1 | 0,49 B | no disponible | 0,640 | 0,980 | 0,342 | Apache-2.0 | safetensors + GGUF Q4_K_M |
 | Qwen2.5-Coder-0.5B-Instruct (base, Q4_K_M original) | 0,49 B | no disponible en esta ficha | 0,168 | 0,392 | 0,133 | Apache-2.0 | safetensors + GGUF |
-| smart-commit-1.5b-v0.1 (variante del mismo autor) | ~1,5 B | no disponible | no disponible | no disponible | no disponible | no disponible en esta ficha | HuggingFace |
+| smart-commit-1.5b-v0.1 (variante del mismo autor) | ~1,5 B | no disponible | no disponible | no disponible | no disponible | no disponible en esta ficha | Hugging Face |
 
 Frente al modelo base, la diferencia no está en capacidad general sino en el ajuste a la tarea y al formato de prompt: la mejora en type_match (0,168 → 0,640) y en first_try (0,392 → 0,980) refleja que el modelo aprende a respetar la convención del repositorio en lugar de responder `fix` por defecto. La variante de 1.5B del mismo autor, según la model card, escribe mensajes más cercanos a los reales y recurre menos al fallback en repositorios jóvenes, a cambio de un coste de inferencia mayor; no se han publicado sus cifras en la información disponible. Frente a un modelo generativo de propósito general (por ejemplo, un 7B invocado por API), este modelo gana en coste, latencia y privacidad, pero pierde cualquier capacidad fuera de la redacción de mensajes de commit.
 
@@ -97,7 +97,7 @@ Frente al modelo base, la diferencia no está en capacidad general sino en el aj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LucasBRT/smart-commit-0.5b-v0.1
+- Modelo en Hugging Face: https://huggingface.co/LucasBRT/smart-commit-0.5b-v0.1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - Repositorio smart-commit: https://github.com/Lucas-BRT/smart-commit
 - README de evaluación (eval-v1): https://github.com/Lucas-BRT/smart-commit/blob/training/training/README.md

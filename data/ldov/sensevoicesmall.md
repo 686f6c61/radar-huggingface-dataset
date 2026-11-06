@@ -86,7 +86,7 @@ La principal ventaja de esta versión GGUF es su ejecución sin Python y su meno
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/ldov/SenseVoiceSmall)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/ldov/SenseVoiceSmall)
 - [Modelo original SenseVoiceSmall](https://huggingface.co/FunAudioLLM/SenseVoiceSmall)
 - [Runtime llama.cpp de SenseVoice](https://github.com/FunAudioLLM/SenseVoice/tree/main/runtime/llama.cpp)
 - [Runtime llama.cpp de FunASR](https://github.com/modelscope/FunASR/tree/main/runtime/llama.cpp)

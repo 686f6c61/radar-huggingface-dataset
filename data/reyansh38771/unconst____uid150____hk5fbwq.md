@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `reyansh38771/unconst____uid150____hk5FBwq` es un modelo de generación de texto e imagen a texto publicado en HuggingFace por el usuario `reyansh38771`. Según los metadatos, se trata de un modelo basado en la arquitectura Qwen3.5 MoE (mezcla de expertos) y ha sido afinado con técnicas de optimización de preferencias offline (offline-DPO). El modelo base indicado es `vera6/affine-5g4yy75zuz-t6`, aunque no existe información pública sobre este modelo base. El acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+El modelo `reyansh38771/unconst____uid150____hk5FBwq` es un modelo de generación de texto e imagen a texto publicado en Hugging Face por el usuario `reyansh38771`. Según los metadatos, se trata de un modelo basado en la arquitectura Qwen3.5 MoE (mezcla de expertos) y ha sido afinado con técnicas de optimización de preferencias offline (offline-DPO). El modelo base indicado es `vera6/affine-5g4yy75zuz-t6`, aunque no existe información pública sobre este modelo base. El acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 En el momento de la consulta, el modelo no tiene descargas ni likes, lo que sugiere que se trata de una publicación reciente o experimental. No se dispone de documentación técnica oficial, benchmarks ni especificaciones detalladas. La licencia es Apache 2.0, lo que permite uso comercial y modificación con atribución. Dado el escaso ecosistema de información, este modelo debe considerarse de evaluación preliminar y no apto para entornos de producción sin validación adicional.
 
@@ -61,7 +61,7 @@ No se dispone de información suficiente para realizar una comparativa. No se co
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/reyansh38771/unconst____uid150____hk5FBwq)
+- [Modelo en Hugging Face](https://huggingface.co/reyansh38771/unconst____uid150____hk5FBwq)
 - No se han encontrado papers, repositorios ni demos asociados.
 
 Nota: La información proporcionada es mínima. Los datos de los tags (como `affine`, `sn120`, `reason-v4`, `r861`) podrían ser identificadores internos del autor, pero no se han podido interpretar.

@@ -78,7 +78,7 @@ La informacion disponible solo permite comparar con la version anterior del prop
 
 | Modelo | Arquitectura | mAP50 (test) | mAP50-95 (test) | Cajas falsas en imagenes sin pocillo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| toxoplasma-plaque-well-detector v4 | YOLO26n | 0.9457 | 0.8341 | 49 | CC BY 4.0 | Pesos `.pt` en HuggingFace |
+| toxoplasma-plaque-well-detector v4 | YOLO26n | 0.9457 | 0.8341 | 49 | CC BY 4.0 | Pesos `.pt` en Hugging Face |
 | toxoplasma-plaque-well-detector v3 | YOLO11n | 0.8838 | 0.763 | 152 | no disponible en la informacion proporcionada | Referenciada en la model card, sin enlace directo |
 | YOLO preentrenado generico (por ejemplo, pesos COCO de Ultralytics) | YOLO (varias escalas) | no aplica | no aplica | no aplica | depende del modelo | Ampliamente disponible |
 
@@ -91,7 +91,7 @@ El autor senala explicitamente que los pesos estandar de YOLO no incluyen una cl
 - Sesgo hacia los estilos de figura de PMC: el 100 % de las figuras de literatura proceden de articulos de PMC; figuras de otras editoriales o formatos no indexados pueden degradar el rendimiento.
 - Riesgo de falsos positivos en imagenes sin pocillo: aunque la v4 reduce las cajas falsas de 152 a 49, siguen existiendo 49 cajas falsas en el conjunto de test; no se documentan umbrales de confianza recomendados distintos de `conf=0.25`.
 - Precision limitada: la precision reportada (0.8912) es inferior al recall (0.944), lo que implica una tasa de falsos positivos no despreciable en produccion.
-- Posible discrepancia entre metadatos y contenido: los metadatos de HuggingFace indican un tamano de repositorio de 0.0 GB, lo que resulta llamativo para un repositorio que deberia contener `best.pt` y `last.pt`. Conviene verificar la descarga real de los pesos antes de integrar el modelo.
+- Posible discrepancia entre metadatos y contenido: los metadatos de Hugging Face indican un tamano de repositorio de 0.0 GB, lo que resulta llamativo para un repositorio que deberia contener `best.pt` y `last.pt`. Conviene verificar la descarga real de los pesos antes de integrar el modelo.
 - Adopcion nula en el momento de la consulta: 0 descargas y 0 likes, sin validacion independiente por terceros mas alla de las metricas del propio autor.
 - Licencia CC BY 4.0: permite uso comercial y modificacion, pero exige atribucion al autor y la indicacion de los cambios realizados; no incluye garantias. Debe verificarse ademas la licencia de las figuras de PMC utilizadas en el entrenamiento si se van a redistribuir derivados.
 - Sin capacidades de lenguaje: no soporta tool calling, agentes, generacion de texto ni interaccion conversacional; cualquier descripcion de resultados debe generarla otro componente del sistema.
@@ -99,7 +99,7 @@ El autor senala explicitamente que los pesos estandar de YOLO no incluyen una cl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/einarolafsson/toxoplasma-plaque-well-detector-yolo26
+- Modelo en Hugging Face: https://huggingface.co/einarolafsson/toxoplasma-plaque-well-detector-yolo26
 - Dataset de entrenamiento: https://huggingface.co/datasets/einarolafsson/toxoplasma-plaque-well-detector-dataset
 - Repositorio de spaCR: https://github.com/EinarOlafsson/spacr
 - Paquete en PyPI: https://pypi.org/project/spacr/

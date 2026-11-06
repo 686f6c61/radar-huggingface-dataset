@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hyyuan711/agenci_multi_age_classification` es un clasificador de edad en audio, presumiblemente orientado a tareas de análisis forense. El nombre sugiere una relación con el framework AGenCi (Age and Gender Audio Classification for Forensic), descrito en un artículo de Springer, que combina el modelo Whisper-medium de OpenAI con una red de clasificación feedforward para realizar clasificación binaria de género, clasificación binaria de edad y clasificación multiclase de edad. Sin embargo, la información disponible en HuggingFace es extremadamente limitada: no se proporcionan detalles sobre arquitectura, parámetros, contexto, idiomas ni pipeline. El repositorio tiene cero descargas y cero likes, lo que indica que es un modelo reciente o poco difundido. La licencia es MIT, lo que permite uso comercial y modificación, pero la ausencia de documentación técnica impide una evaluación rigurosa.
+El modelo `hyyuan711/agenci_multi_age_classification` es un clasificador de edad en audio, presumiblemente orientado a tareas de análisis forense. El nombre sugiere una relación con el framework AGenCi (Age and Gender Audio Classification for Forensic), descrito en un artículo de Springer, que combina el modelo Whisper-medium de OpenAI con una red de clasificación feedforward para realizar clasificación binaria de género, clasificación binaria de edad y clasificación multiclase de edad. Sin embargo, la información disponible en Hugging Face es extremadamente limitada: no se proporcionan detalles sobre arquitectura, parámetros, contexto, idiomas ni pipeline. El repositorio tiene cero descargas y cero likes, lo que indica que es un modelo reciente o poco difundido. La licencia es MIT, lo que permite uso comercial y modificación, pero la ausencia de documentación técnica impide una evaluación rigurosa.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa fiable. Existen otros clasificadores de edad en HuggingFace, como `nateraw/vit-age-classifier` (basado en vision) o `prithivMLmods/Age-Classification-SigLIP2`, pero operan sobre imagenes, no sobre audio, por lo que no son directamente comparables. No se han encontrado modelos de clasificacion de edad en audio con especificaciones publicas que permitan una comparacion objetiva.
+No se dispone de informacion suficiente para establecer una comparativa fiable. Existen otros clasificadores de edad en Hugging Face, como `nateraw/vit-age-classifier` (basado en vision) o `prithivMLmods/Age-Classification-SigLIP2`, pero operan sobre imagenes, no sobre audio, por lo que no son directamente comparables. No se han encontrado modelos de clasificacion de edad en audio con especificaciones publicas que permitan una comparacion objetiva.
 
 ## Limitaciones y advertencias
 
@@ -63,6 +63,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hyyuan711/agenci_multi_age_classification
+- Hugging Face: https://huggingface.co/hyyuan711/agenci_multi_age_classification
 - Paper AGenCi (Springer): https://link.springer.com/chapter/10.1007/978-3-032-35586-7_13
 - PDF del paper: https://link.springer.com/content/pdf/10.1007/978-3-032-35586-7_13.pdf?pdf=inline%20link

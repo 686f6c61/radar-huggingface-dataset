@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vit-beans-demo es un modelo de clasificación de imágenes publicado por el usuario mouad10009 en HuggingFace. Se trata de un fine-tuning de google/vit-base-patch16-224-in21k, el Vision Transformer base preentrenado por Google sobre ImageNet-21k, adaptado mediante la librería Transformers y el Trainer de HuggingFace a una tarea de clasificación de imágenes cuyo conjunto de datos el autor no documenta (la model card indica literalmente "unknown dataset"). El nombre del repositorio sugiere una tarea sobre el conjunto "beans", habitual en demos de clasificación de enfermedades foliares en cultivos, pero no hay confirmación en la información disponible.
+vit-beans-demo es un modelo de clasificación de imágenes publicado por el usuario mouad10009 en Hugging Face. Se trata de un fine-tuning de google/vit-base-patch16-224-in21k, el Vision Transformer base preentrenado por Google sobre ImageNet-21k, adaptado mediante la librería Transformers y el Trainer de Hugging Face a una tarea de clasificación de imágenes cuyo conjunto de datos el autor no documenta (la model card indica literalmente "unknown dataset"). El nombre del repositorio sugiere una tarea sobre el conjunto "beans", habitual en demos de clasificación de enfermedades foliares en cultivos, pero no hay confirmación en la información disponible.
 
 El modelo tiene 85.800.963 parámetros, pesos en safetensors y licencia Apache 2.0. Con 0 descargas y 0 likes, y con una model card autogenerada que deja sin rellenar las secciones de descripción, usos previstos y datos de entrenamiento, debe considerarse un artefacto experimental o de demostración, no un modelo listo para producción.
 
@@ -21,7 +21,7 @@ Su relevancia es limitada y acotada: sirve como ejemplo reproducible de fine-tun
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (compatible con Transformers) |
 
-Otros datos: pipeline declarado `image-classification`, tamaño del repositorio 1,4 GB, creado el 2026-09-15 y actualizado el 2026-09-15, compatible con endpoints de HuggingFace, región `us`.
+Otros datos: pipeline declarado `image-classification`, tamaño del repositorio 1,4 GB, creado el 2026-09-15 y actualizado el 2026-09-15, compatible con endpoints de Hugging Face, región `us`.
 
 ## Arquitectura y entrenamiento
 
@@ -45,7 +45,7 @@ El entrenamiento documentado es mínimo: 4 épocas completas, 260 pasos totales,
 - Clasificación de enfermedades foliares en cultivos: si el conjunto de datos es efectivamente el de hojas de judía, el modelo podría etiquetar imágenes de hojas en tres estados (por ejemplo, sano, mancha angular, roya), sirviendo de base para un prototipo de diagnóstico agrícola asistido por móvil.
 - Pre-etiquetado en anotación de datasets: usar el modelo para asignar etiquetas automáticas a imágenes nuevas y que un anotador humano revise solo los casos de baja confianza, reduciendo el coste de construir un dataset mayor.
 - Filtrado o triaje de imágenes en un pipeline de ingesta: descartar o clasificar imágenes en una carpeta antes de un procesamiento posterior, dado el bajo coste computacional del modelo (85,8 M de parámetros).
-- Material docente y reproducción de experimentos: sirve como ejemplo completo y muy ligero de fine-tuning de un ViT con el Trainer de HuggingFace, útil en cursos de visión por computador o de despliegue de modelos.
+- Material docente y reproducción de experimentos: sirve como ejemplo completo y muy ligero de fine-tuning de un ViT con el Trainer de Hugging Face, útil en cursos de visión por computador o de despliegue de modelos.
 - Baseline interno para comparativas: dada su accuracy de validación del 98,5 % en la mejor época, puede usarse como línea base rápida contra la que medir modelos propios en una tarea de clasificación de dominio acotado.
 - Despliegue en entornos con recursos limitados: al caber en GPU de consumo e incluso en CPU, permite clasificación de imágenes en el borde o en servidores sin acelerador dedicado, siempre que la tarea coincida con la del fine-tuning.
 - Extracción de características para búsqueda visual: obtener embeddings del encoder y construir un índice de similitud sobre un catálogo de imágenes, con la salvedad de que esta capacidad no está validada por el autor.
@@ -68,16 +68,16 @@ La model card informa además de un resultado adicional en el conjunto de evalua
 - VRAM estimada para los pesos: aproximadamente 343 MB en FP32, unos 172 MB en FP16/BF16 y unos 86 MB en int8. Sumando activaciones y overhead del runtime, la inferencia por lotes pequeños cabe holgadamente en 1-2 GB de VRAM.
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM (RTX 3050, RTX 3060, RTX 4090, T4, L4, A10). No requiere A100 ni H100 salvo para entrenamiento con lotes muy grandes.
 - GPU de consumo: sí, cabe en cualquier GPU de consumo de los últimos años e incluso en CPU para inferencia puntual (latencia mayor, no cuantificada).
-- Opciones de despliegue: pipeline `image-classification` de Transformers, exportación a ONNX Runtime o TorchScript, TorchServe, Triton Inference Server y HuggingFace Inference Endpoints (el repositorio está marcado como `endpoints_compatible`). vLLM u Ollama no son entornos orientados a clasificación de imágenes.
+- Opciones de despliegue: pipeline `image-classification` de Transformers, exportación a ONNX Runtime o TorchScript, TorchServe, Triton Inference Server y Hugging Face Inference Endpoints (el repositorio está marcado como `endpoints_compatible`). vLLM u Ollama no son entornos orientados a clasificación de imágenes.
 - Latencia y throughput estimados: no disponibles (el autor no publica mediciones).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Arquitectura | Licencia | Contexto/entrada | Rendimiento en esta tarea | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mouad10009/vit-beans-demo | 85,8 M | ViT-Base, parches 16, 224x224 | Apache 2.0 | imagen 224x224 | exactitud 0,9850 en la mejor época (validación propia) | HuggingFace, 0 descargas |
-| google/vit-base-patch16-224-in21k | ~86 M | ViT-Base, parches 16, 224x224 | Apache 2.0 | imagen 224x224 | no disponible para esta tarea (es el modelo base, sin cabeza ajustada a las clases del autor) | HuggingFace, ampliamente utilizado |
-| DeiT-base (facebook/deit-base-distilled-patch16-224) | ~86 M | ViT-Base con destilación | Apache 2.0 | imagen 224x224 | no disponible para esta tarea | HuggingFace |
+| mouad10009/vit-beans-demo | 85,8 M | ViT-Base, parches 16, 224x224 | Apache 2.0 | imagen 224x224 | exactitud 0,9850 en la mejor época (validación propia) | Hugging Face, 0 descargas |
+| google/vit-base-patch16-224-in21k | ~86 M | ViT-Base, parches 16, 224x224 | Apache 2.0 | imagen 224x224 | no disponible para esta tarea (es el modelo base, sin cabeza ajustada a las clases del autor) | Hugging Face, ampliamente utilizado |
+| DeiT-base (facebook/deit-base-distilled-patch16-224) | ~86 M | ViT-Base con destilación | Apache 2.0 | imagen 224x224 | no disponible para esta tarea | Hugging Face |
 | ResNet-50 (torchvision) | ~25,6 M | CNN residual | BSD-3 | imagen 224x224 | no disponible para esta tarea | Amplia |
 
 La comparación es estructural: no existen métricas públicas de estos modelos sobre el mismo conjunto de datos, porque el autor no lo identifica. Cualquier comparación de exactitud sería inválida.
@@ -96,6 +96,6 @@ La comparación es estructural: no existen métricas públicas de estos modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mouad10009/vit-beans-demo
+- Modelo en Hugging Face: https://huggingface.co/mouad10009/vit-beans-demo
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224-in21k
 - Los resultados de búsqueda web proporcionados no contienen ningún enlace relacionado con este modelo: consisten en hilos de Reddit sobre citas de Bing, sin relación con visión por computador ni con el repositorio. No se dispone de paper, blog, repositorio de código ni demo asociados.

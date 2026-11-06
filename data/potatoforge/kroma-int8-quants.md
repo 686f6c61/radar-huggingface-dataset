@@ -15,7 +15,7 @@ El repositorio contiene cuatro versiones del checkpoint cuantizado (v0.1, v3, v4
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No aplica (modelo de generacion de imagenes) |
 | Tipos de cuantizacion | INT8 |
-| Idiomas soportados | en (segun tags de HuggingFace) |
+| Idiomas soportados | en (segun tags de Hugging Face) |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 
@@ -68,6 +68,6 @@ No disponible. No se proporcionan datos comparativos con otros modelos de genera
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PotatoForge/Kroma-INT8-Quants
+- Repositorio Hugging Face: https://huggingface.co/PotatoForge/Kroma-INT8-Quants
 - Modelo base lodestones/Kroma: https://huggingface.co/lodestones/Kroma
 - Noticia de ComfyUI Wiki sobre Kroma v0.2: https://comfyui-wiki.com/en/news/2026-08-09-kroma-v0-2

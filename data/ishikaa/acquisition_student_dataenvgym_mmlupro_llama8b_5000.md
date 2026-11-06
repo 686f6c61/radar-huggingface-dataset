@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_student_DataEnvGym_mmlupro_llama8b_5000` es un ajuste fino de 8.030.261.248 parametros (aproximadamente 8B) publicado por el usuario `ishikaa` en HuggingFace. Por la nomenclatura del repositorio cabe inferir que se trata de un "student model" entrenado dentro de un proceso de adquisicion de datos (data acquisition) sobre el benchmark MMLU-Pro, con un conjunto de 5000 ejemplos, y que parte de una base de la familia Llama. Esta interpretacion procede unicamente del nombre del repositorio y de las etiquetas declaradas; la model card publicada es la plantilla automatica de transformers y no aporta ninguna descripcion real, por lo que no puede confirmarse oficialmente.
+El modelo `ishikaa/acquisition_student_DataEnvGym_mmlupro_llama8b_5000` es un ajuste fino de 8.030.261.248 parametros (aproximadamente 8B) publicado por el usuario `ishikaa` en Hugging Face. Por la nomenclatura del repositorio cabe inferir que se trata de un "student model" entrenado dentro de un proceso de adquisicion de datos (data acquisition) sobre el benchmark MMLU-Pro, con un conjunto de 5000 ejemplos, y que parte de una base de la familia Llama. Esta interpretacion procede unicamente del nombre del repositorio y de las etiquetas declaradas; la model card publicada es la plantilla automatica de transformers y no aporta ninguna descripcion real, por lo que no puede confirmarse oficialmente.
 
 El modelo se distribuye exclusivamente en formato safetensors, con un tamano de repositorio de 16,1 GB, lo que es coherente con pesos en precision bf16/fp16 para un transformer de 8B parametros. No se declaran licencia, idiomas soportados, longitud de contexto, datos de entrenamiento ni resultados de evaluacion. El repositorio registra 0 descargas y 1 like en el momento de la consulta, lo que indica una difusion practicamente nula y ausencia de validacion por parte de la comunidad.
 
@@ -93,7 +93,7 @@ El modelo aqui descrito no declara licencia ni contexto, lo que introduce incert
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_DataEnvGym_mmlupro_llama8b_5000
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_DataEnvGym_mmlupro_llama8b_5000
 - Paper citado en las etiquetas (calculadora de impacto medioambiental, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML asociada: https://mlco2.github.io/impact
 

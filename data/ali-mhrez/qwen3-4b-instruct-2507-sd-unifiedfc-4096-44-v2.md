@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-44-v2 es un ajuste fino (fine-tune) supervisado del modelo Qwen3-4B-Instruct-2507, desarrollado por el usuario Ali-Mhrez y publicado en HuggingFace. Se trata de un derivado comunitario, no oficial, del modelo base de Qwen, entrenado mediante SFT (supervised fine-tuning) con la librería TRL y el framework Unsloth sobre infraestructura de Transformers 5.16.1 y PyTorch 2.11.0. El repo ocupa 1,0 GB y contiene pesos en formato safetensors.
+Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-44-v2 es un ajuste fino (fine-tune) supervisado del modelo Qwen3-4B-Instruct-2507, desarrollado por el usuario Ali-Mhrez y publicado en Hugging Face. Se trata de un derivado comunitario, no oficial, del modelo base de Qwen, entrenado mediante SFT (supervised fine-tuning) con la librería TRL y el framework Unsloth sobre infraestructura de Transformers 5.16.1 y PyTorch 2.11.0. El repo ocupa 1,0 GB y contiene pesos en formato safetensors.
 
 El modelo hereda la arquitectura del Qwen3-4B-Instruct-2507, un transformer denso de aproximadamente 4.000 millones de parámetros, pero la model card no documenta ni el conjunto de datos de entrenamiento, ni la longitud de contexto efectiva, ni los objetivos concretos del ajuste. El sufijo del nombre ("SD-UnifiedFC-4096-44-v2") sugiere una configuración específica de entrenamiento (posiblemente 4096 tokens de contexto y una versión 44/v2 del dataset o del pipeline), pero el autor no lo aclara en la documentación disponible.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-44-v2 | ~4B | No disponible | No disponible | HuggingFace (0 descargas) | Fine-tune comunitario sin benchmarks |
-| unsloth/Qwen3-4B-Instruct-2507 (base) | ~4B | No disponible en esta ficha | Apache 2.0 (según Qwen) | HuggingFace | Modelo base del ajuste; documentación oficial de Qwen |
-| Qwen3-4B-Instruct-2507 (oficial) | ~4B | No disponible en esta ficha | Apache 2.0 | HuggingFace | Versión oficial de Qwen, con benchmarks publicados por el autor |
-| Llama 3.2 3B Instruct | ~3B | 128K tokens | Llama 3.2 Community License | HuggingFace | Alternativa de tamaño similar, con licencia restrictiva para algunos usos |
+| Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-44-v2 | ~4B | No disponible | No disponible | Hugging Face (0 descargas) | Fine-tune comunitario sin benchmarks |
+| unsloth/Qwen3-4B-Instruct-2507 (base) | ~4B | No disponible en esta ficha | Apache 2.0 (según Qwen) | Hugging Face | Modelo base del ajuste; documentación oficial de Qwen |
+| Qwen3-4B-Instruct-2507 (oficial) | ~4B | No disponible en esta ficha | Apache 2.0 | Hugging Face | Versión oficial de Qwen, con benchmarks publicados por el autor |
+| Llama 3.2 3B Instruct | ~3B | 128K tokens | Llama 3.2 Community License | Hugging Face | Alternativa de tamaño similar, con licencia restrictiva para algunos usos |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-44-v2
+- Modelo en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-44-v2
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Repositorio TRL: https://github.com/huggingface/trl
 - Repositorio Unsloth: https://github.com/unslothai/unsloth

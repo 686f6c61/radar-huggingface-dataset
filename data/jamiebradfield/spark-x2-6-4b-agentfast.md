@@ -12,7 +12,7 @@ Es relevante como caso de estudio de agentes ligeros de baja latencia para ejecu
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Spark2_5 (transformer, arquitectura personalizada con `custom_code` en HuggingFace) |
+| Arquitectura | Spark2_5 (transformer, arquitectura personalizada con `custom_code` en Hugging Face) |
 | Parametros totales | 4.112.079.360 |
 | Parametros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible (los ejemplos usan 4096 tokens) |
@@ -98,6 +98,6 @@ Frente al modelo stock del que deriva, AgentFast sacrifica profundidad de razona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JamieBradfield/Spark-X2.6-4B-AgentFast
+- Modelo en Hugging Face: https://huggingface.co/JamieBradfield/Spark-X2.6-4B-AgentFast
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Variante GGUF cuantizada: https://huggingface.co/JamieBradfield/Spark-X2.6-4B-AgentFast-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-act_p0_fixed es una política de robótica entrenada con LeRobot mediante el método ACT (Action Chunking with Transformers), una técnica de aprendizaje por imitación que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales. El modelo lo publica el usuario miladgholami en HuggingFace y está especializado en una tarea concreta de manipulación asociada al dataset miladgholami/scissor_p0_fixed_50ep, cuyo nombre sugiere un conjunto de unos 50 episodios de demostraciones teleoperadas sobre una tarea con tijeras. No es un modelo de lenguaje ni un modelo multimodal de propósito general: es un checkpoint de control motor que consume observaciones (imágenes de cámara y estado del robot) y produce comandos de acción.
+act_p0_fixed es una política de robótica entrenada con LeRobot mediante el método ACT (Action Chunking with Transformers), una técnica de aprendizaje por imitación que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales. El modelo lo publica el usuario miladgholami en Hugging Face y está especializado en una tarea concreta de manipulación asociada al dataset miladgholami/scissor_p0_fixed_50ep, cuyo nombre sugiere un conjunto de unos 50 episodios de demostraciones teleoperadas sobre una tarea con tijeras. No es un modelo de lenguaje ni un modelo multimodal de propósito general: es un checkpoint de control motor que consume observaciones (imágenes de cámara y estado del robot) y produce comandos de acción.
 
 El checkpoint tiene 51.668.614 parámetros (unos 51,7 millones), lo que lo sitúa en el rango de los modelos pequeños y perfectamente desplegable en hardware de consumo. Se distribuye en formato safetensors, ocupa 0,2 GB en el repositorio y se publica bajo licencia Apache 2.0. La librería asociada es lerobot, por lo que se entrena y evalúa con las herramientas oficiales de ese ecosistema.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| act_p0_fixed (este modelo) | ACT, imitación, tarea única | 51,7 M | no aplica | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| Otras políticas ACT publicadas en el Hub con LeRobot | ACT, imitación | no disponible | no aplica | no disponible | variable según autor | HuggingFace |
+| act_p0_fixed (este modelo) | ACT, imitación, tarea única | 51,7 M | no aplica | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| Otras políticas ACT publicadas en el Hub con LeRobot | ACT, imitación | no disponible | no aplica | no disponible | variable según autor | Hugging Face |
 | Políticas basadas en difusión del ecosistema LeRobot (por ejemplo, Diffusion Policy) | imitación generativa | no disponible | no aplica | no disponible | no disponible | repositorios de LeRobot |
-| Políticas VLA pequeñas (por ejemplo, SmolVLA) | vision-language-action | no disponible | no disponible | no disponible | no disponible | HuggingFace / LeRobot |
+| Políticas VLA pequeñas (por ejemplo, SmolVLA) | vision-language-action | no disponible | no disponible | no disponible | no disponible | Hugging Face / LeRobot |
 
 No se dispone, en la información proporcionada, de datos verificables de parámetros, contexto, rendimiento ni licencia de las alternativas, por lo que la comparación cuantitativa queda como no disponible. La diferencia cualitativa principal es que act_p0_fixed es un checkpoint especializado en una única tarea y de tamaño muy reducido, mientras que las alternativas VLA incorporan instrucciones en lenguaje natural y generalizan a múltiples tareas a cambio de mucho más cómputo.
 
@@ -88,7 +88,7 @@ No se dispone, en la información proporcionada, de datos verificables de parám
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/miladgholami/act_p0_fixed
+- Modelo en Hugging Face: https://huggingface.co/miladgholami/act_p0_fixed
 - Dataset de entrenamiento: https://huggingface.co/datasets/miladgholami/scissor_p0_fixed_50ep
 - Artículo de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

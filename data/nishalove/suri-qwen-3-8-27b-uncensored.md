@@ -96,12 +96,12 @@ La comparativa con modelos de otros tamanos o familias (por ejemplo, variantes s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nishalove/Suri-Qwen-3.8-27B-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/Nishalove/Suri-Qwen-3.8-27B-Uncensored
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo base alternativo declarado: https://huggingface.co/unsloth/Qwen3.8-27B
 - Variante comparable citada por el autor: https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored
-- Ejemplo de salida en modo razonamiento: images/thinking-mode-output.pdf (ruta relativa dentro del repositorio de HuggingFace)
-- Ejemplo de salida en modo no razonamiento: images/non-thinking-mode-output.pdf (ruta relativa dentro del repositorio de HuggingFace)
+- Ejemplo de salida en modo razonamiento: images/thinking-mode-output.pdf (ruta relativa dentro del repositorio de Hugging Face)
+- Ejemplo de salida en modo no razonamiento: images/non-thinking-mode-output.pdf (ruta relativa dentro del repositorio de Hugging Face)
 - Perfil del autor en el foro linux.do: https://linux.do/u/spacetime
 - Contacto indicado en la model card: QQ 902575634, correo Zeus6_6@163.com
 - No se han encontrado papers, blogs tecnicos ni repositorios de codigo adicionales en la busqueda web realizada.

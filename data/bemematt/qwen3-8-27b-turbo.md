@@ -107,7 +107,7 @@ El autor afirma que este modelo (tanto en 4 como en 8 bits) supera a los cuatro 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bemematt/Qwen3.8-27B-TURBO
+- Repositorio Hugging Face: https://huggingface.co/bemematt/Qwen3.8-27B-TURBO
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Modelo de referencia de la tecnica COLD FUSION / Fable Fusion 711: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Dataset citado: DavidAU/Polar-STRICT-Datasets

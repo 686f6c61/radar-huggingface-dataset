@@ -93,7 +93,7 @@ No se dispone de datos tecnicos de alternativas comparables en la informacion pr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/warped-community/Matcha-TTS-litert-lm
+- Repositorio en Hugging Face: https://huggingface.co/warped-community/Matcha-TTS-litert-lm
 - Fuente declarada por el autor: https://huggingface.co/litert-community/Matcha-TTS
 - Modelo base declarado: https://huggingface.co/nimble-matcha
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

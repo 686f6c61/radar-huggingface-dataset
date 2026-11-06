@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AlienHu/Qwen3.5-9B_v3-r8-wiki_lora es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario AlienHu, construido sobre el modelo base Qwen/Qwen3.5-9B. Se trata de un ajuste fino ligero mediante PEFT (Parameter-Efficient Fine-Tuning) que no redistribuye los pesos completos del modelo original, sino unicamente las matrices de bajo rango aprendidas durante el entrenamiento. El repositorio ocupa aproximadamente 0,5 GB en formato safetensors, lo que confirma que se trata de un adaptador y no de un checkpoint completo.
+AlienHu/Qwen3.5-9B_v3-r8-wiki_lora es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario AlienHu, construido sobre el modelo base Qwen/Qwen3.5-9B. Se trata de un ajuste fino ligero mediante PEFT (Parameter-Efficient Fine-Tuning) que no redistribuye los pesos completos del modelo original, sino unicamente las matrices de bajo rango aprendidas durante el entrenamiento. El repositorio ocupa aproximadamente 0,5 GB en formato safetensors, lo que confirma que se trata de un adaptador y no de un checkpoint completo.
 
-El nombre del repositorio ("v3-r8-wiki_lora") sugiere una tercera iteracion de entrenamiento con rango 8 y un corpus orientado a contenido tipo wiki, aunque el autor no documenta estos detalles en la model card. La model card es practicamente la plantilla por defecto de HuggingFace, sin informacion sustantiva sobre datos de entrenamiento, hiperparametros, licencia o evaluacion. Esto limita severamente la trazabilidad y la reproducibilidad del ajuste.
+El nombre del repositorio ("v3-r8-wiki_lora") sugiere una tercera iteracion de entrenamiento con rango 8 y un corpus orientado a contenido tipo wiki, aunque el autor no documenta estos detalles en la model card. La model card es practicamente la plantilla por defecto de Hugging Face, sin informacion sustantiva sobre datos de entrenamiento, hiperparametros, licencia o evaluacion. Esto limita severamente la trazabilidad y la reproducibilidad del ajuste.
 
 La relevancia de esta ficha es acotada: se trata de un adaptador de investigacion con cero descargas y cero likes en el momento de la consulta, sin licencia declarada y sin documentacion tecnica. Su interes principal es como ejemplo de flujo de trabajo PEFT sobre un modelo Qwen de 9B y como punto de partida para quien quiera inspeccionar el adaptador o reutilizar la configuracion LoRA. No debe considerarse un modelo listo para produccion sin una evaluacion independiente.
 
@@ -88,7 +88,7 @@ La comparacion directa con modelos completos no es homogenea: este repositorio e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AlienHu/Qwen3.5-9B_v3-r8-wiki_lora
+- Repositorio Hugging Face: https://huggingface.co/AlienHu/Qwen3.5-9B_v3-r8-wiki_lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper de LoRA (Hu et al., 2021): https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT: https://huggingface.co/docs/peft

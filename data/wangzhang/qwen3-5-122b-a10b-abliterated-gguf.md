@@ -4,7 +4,7 @@
 
 El modelo `wangzhang/Qwen3.5-122B-A10B-abliterated-GGUF` es una versión cuantizada en formato GGUF del modelo `Qwen3.5-122B-A10B-abliterix`, un derivado del Qwen3.5-122B-A10B de Alibaba al que se le han eliminado los mecanismos de alineación y rechazo de contenido (proceso conocido como *abliteration*). El resultado es un modelo de lenguaje de gran tamaño con arquitectura de mezcla de expertos (MoE) que conserva las capacidades técnicas del original —razonamiento, generación de código, matemáticas y soporte multilingüe— pero sin las restricciones de contenido habituales.
 
-El modelo base, Qwen3.5-122B-A10B, fue lanzado por Alibaba en febrero de 2026 y destaca por sus 122 000 millones de parámetros totales con solo 10 000 millones activos por inferencia, lo que permite un rendimiento elevado con un coste computacional relativamente bajo. Su ventana de contexto alcanza los 262 000 tokens, según los datos disponibles. Esta versión abliterated, publicada por el usuario wangzhang en HuggingFace, se distribuye bajo licencia Apache-2.0 y está pensada para su ejecución con llama.cpp y otras herramientas compatibles con GGUF.
+El modelo base, Qwen3.5-122B-A10B, fue lanzado por Alibaba en febrero de 2026 y destaca por sus 122 000 millones de parámetros totales con solo 10 000 millones activos por inferencia, lo que permite un rendimiento elevado con un coste computacional relativamente bajo. Su ventana de contexto alcanza los 262 000 tokens, según los datos disponibles. Esta versión abliterated, publicada por el usuario wangzhang en Hugging Face, se distribuye bajo licencia Apache-2.0 y está pensada para su ejecución con llama.cpp y otras herramientas compatibles con GGUF.
 
 La relevancia de este modelo radica en que ofrece una alternativa sin censura para tareas de generación creativa, roleplay o investigación donde las restricciones del modelo original podrían ser un obstáculo. Al estar cuantizado en GGUF, puede ejecutarse en hardware de consumo con suficiente memoria, aunque su tamaño total (204 GB de repositorio) indica que se requieren recursos considerables para las cuantizaciones de mayor precisión.
 
@@ -76,7 +76,7 @@ La comparativa se limita a variantes del mismo modelo base. No se dispone de dat
 
 - Al ser abliterated, el modelo puede generar contenido ofensivo, ilegal, discriminatorio o peligroso sin restricciones. Su uso en aplicaciones publicas o comerciales conlleva un riesgo legal y etico significativo.
 - La cuantizacion GGUF introduce una perdida de precision que puede afectar a la coherencia en tareas complejas, especialmente en cuantizaciones de baja precision (Q2, Q3).
-- El acceso al repositorio es restringido (gated) en HuggingFace; es necesario aceptar las condiciones del autor antes de descargar.
+- El acceso al repositorio es restringido (gated) en Hugging Face; es necesario aceptar las condiciones del autor antes de descargar.
 - No se garantiza la ausencia de alucinaciones; el modelo puede inventar hechos o codigo incorrecto, especialmente en dominios especializados.
 - La ventana de contexto de 262K es teorica; en la practica, el rendimiento puede degradarse con contextos muy largos debido a limitaciones de memoria y atencion.
 - No se han publicado detalles sobre el proceso de abliteration ni sobre la composicion del dataset de entrenamiento, lo que dificulta evaluar posibles sesgos residuales.
@@ -84,7 +84,7 @@ La comparativa se limita a variantes del mismo modelo base. No se dispone de dat
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/wangzhang/Qwen3.5-122B-A10B-abliterated-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/wangzhang/Qwen3.5-122B-A10B-abliterated-GGUF
 - Modelo base abliterated (safetensors): https://huggingface.co/wangzhang/Qwen3.5-122B-A10B-abliterix
 - Variante similar en ModelScope: https://www.modelscope.cn/models/anti-entropy/qwen3.5-122b-a10b-apex-abliterated-v2-gguf/summary
 - Ficha del modelo base en NVIDIA NIM: https://build.nvidia.com/qwen/qwen3.5-122b-a10b

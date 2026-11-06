@@ -23,7 +23,7 @@ La licencia Apache 2.0 permite uso comercial sin restricciones significativas, y
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de estilo Llama, preentrenado desde cero por Saints Studios sobre datos en tumbuka e inglés. La versión Instruct es un fine-tuning del modelo base Mazgu Small-T 130M, realizado con el Trainer de HuggingFace sobre un dataset no especificado (indicado como "None" en la model card).
+El modelo es un transformer decoder-only de estilo Llama, preentrenado desde cero por Saints Studios sobre datos en tumbuka e inglés. La versión Instruct es un fine-tuning del modelo base Mazgu Small-T 130M, realizado con el Trainer de Hugging Face sobre un dataset no especificado (indicado como "None" en la model card).
 
 Los hiperparámetros de fine-tuning incluyen una tasa de aprendizaje de 0,0002, tamaño de lote de 8 con acumulación de gradientes de 8 pasos (lote efectivo de 64), optimizador AdamW con betas (0,9, 0,999), scheduler coseno con warmup del 3% y 3 épocas de entrenamiento. Se utilizaron las versiones Transformers 5.0.0, PyTorch 2.10.0+cu128, Datasets 5.0.0 y Tokenizers 0.22.2.
 
@@ -34,7 +34,7 @@ No se ha publicado información detallada sobre la composición del dataset de p
 - Generación de texto en tumbuka e inglés.
 - Modelo bilingüe optimizado para tumbuka, una lengua bantú hablada principalmente en Malaui, Zambia y Tanzania.
 - Fine-tuning instruct para seguir instrucciones, aunque sin datos publicados sobre su rendimiento real.
-- Compatible con text-generation-inference y endpoints de HuggingFace.
+- Compatible con text-generation-inference y endpoints de Hugging Face.
 - No se han documentado capacidades de tool calling, agentes, visión, audio ni razonamiento multi-paso.
 
 ## Casos de uso
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. La s
 - VRAM estimada: menos de 1 GB en FP32 (~209 MB de pesos), por lo que cabe en cualquier GPU consumer actual.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM; también funciona en CPU sin problemas.
 - Compatible con consumer GPU: sí, incluyendo RTX 3060, RTX 4090, GTX 1650, etc.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, endpoints de HuggingFace y FriendliAI.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, endpoints de Hugging Face y FriendliAI.
 - Latencia: al ser un modelo de ~52M parámetros, la latencia es muy baja incluso en CPU; el throughput dependerá del hardware pero será significativamente superior al de modelos de 1B+ parámetros.
 
 ## Comparativa con modelos similares
@@ -74,9 +74,9 @@ No se dispone de datos de benchmarks para comparar directamente con otros modelo
 
 ## Enlaces
 
-- HuggingFace (modelo Instruct): https://huggingface.co/SaintsStudios/Mazgu_Small-T_130M_Instruct
-- HuggingFace (modelo base): https://huggingface.co/SaintsStudios/Mazgu_Small-T_130M
-- HuggingFace (página principal de Mazgu): https://huggingface.co/SaintsStudios/Mazgu
+- Hugging Face (modelo Instruct): https://huggingface.co/SaintsStudios/Mazgu_Small-T_130M_Instruct
+- Hugging Face (modelo base): https://huggingface.co/SaintsStudios/Mazgu_Small-T_130M
+- Hugging Face (página principal de Mazgu): https://huggingface.co/SaintsStudios/Mazgu
 - LLM Explorer: https://llm-explorer.com/model/SaintsStudios%2FMazgu_Small-T_130M,2WnwWPj8SlVg0xfg2Otxl7
 - FriendliAI (modelo base): https://friendli.ai/models/SaintsStudios/Mazgu_Small-T_130M
 - FriendliAI (modelo Instruct): https://friendli.ai/models/SaintsStudios/Mazgu_Small-T_130M_Instruct

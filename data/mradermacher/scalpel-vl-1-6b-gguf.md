@@ -6,7 +6,7 @@ Scalpel-VL-1.6B-GGUF es una cuantización en formato GGUF del modelo multimodal 
 
 Esta versión GGUF resulta especialmente relevante para desarrolladores que necesitan desplegar un modelo de visión-lenguaje en entornos con recursos limitados, como dispositivos edge, GPUs de consumo o incluso CPU. Al tratarse de un modelo de aproximadamente 1.27 mil millones de parámetros (etiquetado como 1.6B), las cuantizaciones ofrecen tamaños de archivo que van desde 0.7 GB hasta 2.6 GB, lo que permite su ejecución en una amplia gama de hardware. El repositorio incluye tanto el modelo principal como los proyectores multimodales (mmproj) necesarios para procesar imágenes.
 
-La ficha se basa exclusivamente en la información proporcionada por el repositorio de HuggingFace y la model card del autor de la cuantización. No se dispone de documentación técnica detallada del modelo original, por lo que algunas especificaciones no están disponibles.
+La ficha se basa exclusivamente en la información proporcionada por el repositorio de Hugging Face y la model card del autor de la cuantización. No se dispone de documentación técnica detallada del modelo original, por lo que algunas especificaciones no están disponibles.
 
 ## Especificaciones tecnicas
 

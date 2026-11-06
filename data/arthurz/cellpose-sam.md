@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Cellpose-SAM es un modelo de segmentacion celular publicado en HuggingFace bajo el identificador `ArthurZ/cellpose-sam`. Combina el ecosistema Cellpose, especializado en segmentacion de celulas en imagenes de microscopia, con el enfoque de Segment Anything Model (SAM), lo que permite generalizacion a tipos celulares e imagenes no vistas durante el entrenamiento. El repositorio contiene pesos en formato safetensors con 304.628.928 parametros totales (aproximadamente 305 millones) y ocupa 1.2 GB.
+Cellpose-SAM es un modelo de segmentacion celular publicado en Hugging Face bajo el identificador `ArthurZ/cellpose-sam`. Combina el ecosistema Cellpose, especializado en segmentacion de celulas en imagenes de microscopia, con el enfoque de Segment Anything Model (SAM), lo que permite generalizacion a tipos celulares e imagenes no vistas durante el entrenamiento. El repositorio contiene pesos en formato safetensors con 304.628.928 parametros totales (aproximadamente 305 millones) y ocupa 1.2 GB.
 
 El modelo responde a un problema clasico en biologia computacional: la segmentacion celular generalista, es decir, detectar y delimitar celulas en imagenes de microscopia de distintas modalidades sin necesidad de reentrenar para cada nuevo conjunto de datos. La publicacion asociada, "Cellpose-SAM: superhuman generalization for cellular segmentation" (bioRxiv, abril de 2025), describe un modelo con gran capacidad de generalizacion que puede integrarse en el ecosistema Cellpose existente, incluyendo ajuste fino, entrenamiento con humano en el bucle, restauracion de imagen y procesamiento 3D.
 
-El modelo es relevante ahora porque representa la confluencia de dos lineas de trabajo: los modelos fundacionales de segmentacion (SAM) y las herramientas especializadas de analisis de imagenes biomedicas. Sin embargo, la ficha publica de HuggingFace no proporciona informacion sobre licencia, idiomas, pipeline ni datos de benchmarks, por lo que varios apartados de esta ficha se marcan como no disponibles.
+El modelo es relevante ahora porque representa la confluencia de dos lineas de trabajo: los modelos fundacionales de segmentacion (SAM) y las herramientas especializadas de analisis de imagenes biomedicas. Sin embargo, la ficha publica de Hugging Face no proporciona informacion sobre licencia, idiomas, pipeline ni datos de benchmarks, por lo que varios apartados de esta ficha se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ La publicacion asociada (bioRxiv, 2025) indica que el modelo busca una generaliz
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas y la publicacion asociada se menciona en los resultados de busqueda, pero sin cifras concretas extraidas en la informacion proporcionada. No se deben asumir valores de Dice, IoU u otras metricas sin fuente verificada.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas y la publicacion asociada se menciona en los resultados de busqueda, pero sin cifras concretas extraidas en la informacion proporcionada. No se deben asumir valores de Dice, IoU u otras metricas sin fuente verificada.
 
 ## Requisitos de hardware
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ArthurZ/cellpose-sam | 304.628.928 | no disponible | Segmentacion celular | no disponible | HuggingFace |
+| ArthurZ/cellpose-sam | 304.628.928 | no disponible | Segmentacion celular | no disponible | Hugging Face |
 | Cellpose (original) | no disponible | no disponible | Segmentacion celular | no disponible | Ecosistema Cellpose |
 | Segment Anything Model (SAM) | no disponible | no disponible | Segmentacion general de imagenes | no disponible | Publico |
 
@@ -76,11 +76,11 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 - Riesgo de alucinacion: en modelos de segmentacion el equivalente seria producir mascaras erroneas o fusionar celulas adyacentes; no se aportan datos especificos.
 - Limitaciones de contexto o idioma: no aplicable como modelo de lenguaje; no se documentan limitaciones de resolucion o modalidad de imagen.
 - Restricciones de licencia para uso comercial: la licencia figura como no disponible, por lo que no puede confirmarse si se permite uso comercial. Es un punto critico antes de cualquier despliegue en produccion.
-- Caveats para produccion: el repositorio tiene solo 4 descargas y 0 likes, lo que sugiere que es una publicacion reciente o poco validada por la comunidad; no se ha confirmado el pipeline en HuggingFace; no hay benchmarks publicos en la informacion disponible; conviene verificar la procedencia y autoria antes de usar en entornos clinicos o regulados.
+- Caveats para produccion: el repositorio tiene solo 4 descargas y 0 likes, lo que sugiere que es una publicacion reciente o poco validada por la comunidad; no se ha confirmado el pipeline en Hugging Face; no hay benchmarks publicos en la informacion disponible; conviene verificar la procedencia y autoria antes de usar en entornos clinicos o regulados.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArthurZ/cellpose-sam
+- Hugging Face: https://huggingface.co/ArthurZ/cellpose-sam
 - Publicacion Cellpose-SAM (bioRxiv): https://www.biorxiv.org/content/10.1101/2025.04.28.651001v1.full-text
 - Mapeo celular cerebral asistido por IA (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0896627325009833
 - Protocolo de caracterizacion de condensados biomoleculares (Cell Star Protocols): https://www.cell.com/star-protocols/fulltext/S2666-1667(25)00419-8

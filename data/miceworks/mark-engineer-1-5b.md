@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`miceworks/Mark-Engineer-1.5B` es un repositorio de pesos publicados en HuggingFace por el usuario `miceworks` bajo licencia AGPL-3.0. En el momento de redactar esta ficha, la model card del autor no contiene más información que el bloque de metadatos de licencia: no incluye descripción del modelo, arquitectura, datos de entrenamiento, tokenizador, idiomas ni instrucciones de uso. El repositorio no declara pipeline, no tiene descargas ni likes y fue creado y actualizado en el mismo instante (26 de octubre de 2026), lo que apunta a una publicación recién subida y sin documentar.
+`miceworks/Mark-Engineer-1.5B` es un repositorio de pesos publicados en Hugging Face por el usuario `miceworks` bajo licencia AGPL-3.0. En el momento de redactar esta ficha, la model card del autor no contiene más información que el bloque de metadatos de licencia: no incluye descripción del modelo, arquitectura, datos de entrenamiento, tokenizador, idiomas ni instrucciones de uso. El repositorio no declara pipeline, no tiene descargas ni likes y fue creado y actualizado en el mismo instante (26 de octubre de 2026), lo que apunta a una publicación recién subida y sin documentar.
 
 El único dato técnico inferible es el que sugiere el propio identificador: el sufijo `1.5B` indica, con toda probabilidad, un modelo de aproximadamente 1.500 millones de parámetros, y el término `Engineer` sugiere una orientación hacia tareas de ingeniería o generación de código. Ninguna de estas dos inferencias está confirmada por el autor. Por tanto, esta ficha debe leerse como una evaluación de disponibilidad y de riesgos, no como una ficha técnica verificada.
 
@@ -76,7 +76,7 @@ Las cifras siguientes son estimaciones basadas en la hipótesis de un modelo den
 - GPU de consumo: cabe con holgura en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 y RTX 4090; también en GPUs de 6-8 GB con cuantización.
 - GPU de centro de datos: A100, H100 y L40S permiten servir muchas réplicas concurrentes o lotes grandes, aunque para este tamaño suelen ser sobredimensionadas salvo en escenarios de alto throughput.
 - CPU: ejecución viable en llama.cpp u Ollama con cuantización Q4, con latencia de decenas de milisegundos por token según núcleos y ancho de banda de memoria.
-- Opciones de despliegue: llama.cpp, Ollama y, en menor medida, vLLM o TGI, condicionadas a que los pesos estén en un formato compatible (safetensors con config de HuggingFace o GGUF). No se ha confirmado ninguno de estos formatos.
+- Opciones de despliegue: llama.cpp, Ollama y, en menor medida, vLLM o TGI, condicionadas a que los pesos estén en un formato compatible (safetensors con config de Hugging Face o GGUF). No se ha confirmado ninguno de estos formatos.
 - Latencia y throughput: no disponibles. No hay datos publicados de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -107,6 +107,6 @@ Diferencias clave frente a las alternativas: el modelo evaluado es el único con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/miceworks/Mark-Engineer-1.5B
+- Repositorio en Hugging Face: https://huggingface.co/miceworks/Mark-Engineer-1.5B
 - Perfil del autor: https://huggingface.co/miceworks
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace, paper, blog, repositorio de código ni demo que haga referencia a `miceworks/Mark-Engineer-1.5B`. Los resultados devueltos (leaderboards genéricos, VibeVoice-1.5B de Microsoft, comparativas de agentes de desarrollo y un artículo sobre modelos de 1,5B de DeepSeek) no guardan relación con este modelo y se han descartado como fuentes.

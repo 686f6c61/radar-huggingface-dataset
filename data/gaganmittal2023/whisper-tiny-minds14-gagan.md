@@ -2,7 +2,7 @@
 
 ## Resumen
 
-whisper-tiny-minds14-gagan es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny sobre el subconjunto PolyAI/minds14, un corpus de audio bancario en ingles con anotaciones de intencion y transcripcion. Lo publica el usuario gaganmittal2023 en HuggingFace y su proposito es el reconocimiento automatico del habla (ASR) en dominio telefonico/bancario. Se trata de un modelo pequeno: 37.760.640 parametros en formato safetensors y un repositorio de 0,2 GB, lo que lo hace desplegable incluso en CPU. No acumula descargas ni likes en el momento de la consulta y su model card esta generada automaticamente por el Trainer, con secciones sin completar.
+whisper-tiny-minds14-gagan es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny sobre el subconjunto PolyAI/minds14, un corpus de audio bancario en ingles con anotaciones de intencion y transcripcion. Lo publica el usuario gaganmittal2023 en Hugging Face y su proposito es el reconocimiento automatico del habla (ASR) en dominio telefonico/bancario. Se trata de un modelo pequeno: 37.760.640 parametros en formato safetensors y un repositorio de 0,2 GB, lo que lo hace desplegable incluso en CPU. No acumula descargas ni likes en el momento de la consulta y su model card esta generada automaticamente por el Trainer, con secciones sin completar.
 
 La relevancia de este modelo es acotada: sirve como ejemplo de ajuste fino de bajo coste (500 pasos de entrenamiento) de un modelo Whisper tiny, y como punto de partida reproducible para tareas de ASR en dominios muy especificos con pocos datos. Alcanza un WER de 0,3200 en el conjunto de evaluacion declarado, un valor alto para produccion pero coherente con un modelo de 37 M de parametros entrenado sobre un corpus reducido.
 
@@ -38,7 +38,7 @@ El ajuste fino se realizo sobre PolyAI/minds14 con los siguientes hiperparametro
 - Soporte de tool calling / function calling: no disponible, no es una capacidad de la arquitectura Whisper.
 - Soporte de agentes y razonamiento multi-paso: no aplica.
 - Capacidades especiales (modo thinking, vision, audio generativo): no disponibles; unicamente entrada de audio y salida de texto.
-- Compatibilidad con endpoints de HuggingFace declarada mediante el tag endpoints_compatible.
+- Compatibilidad con endpoints de Hugging Face declarada mediante el tag endpoints_compatible.
 
 ## Casos de uso
 
@@ -76,10 +76,10 @@ No se han publicado en la informacion disponible resultados comparativos de MMLU
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | WER en PolyAI/minds14 |
 |---|---|---|---|---|---|
-| gaganmittal2023/whisper-tiny-minds14-gagan | 37,76 M | 30 s de audio | Apache 2.0 | HuggingFace, 0 descargas | 0,3200 (declarado por el autor) |
-| openai/whisper-tiny (modelo base) | 37,76 M | 30 s de audio | Apache 2.0 | HuggingFace, ampliamente utilizado | no disponible |
-| openai/whisper-base | 74 M | 30 s de audio | Apache 2.0 | HuggingFace | no disponible |
-| openai/whisper-small | 244 M | 30 s de audio | Apache 2.0 | HuggingFace | no disponible |
+| gaganmittal2023/whisper-tiny-minds14-gagan | 37,76 M | 30 s de audio | Apache 2.0 | Hugging Face, 0 descargas | 0,3200 (declarado por el autor) |
+| openai/whisper-tiny (modelo base) | 37,76 M | 30 s de audio | Apache 2.0 | Hugging Face, ampliamente utilizado | no disponible |
+| openai/whisper-base | 74 M | 30 s de audio | Apache 2.0 | Hugging Face | no disponible |
+| openai/whisper-small | 244 M | 30 s de audio | Apache 2.0 | Hugging Face | no disponible |
 
 No se dispone de resultados comparativos verificados sobre PolyAI/minds14 para los modelos de la tabla, por lo que no es posible afirmar si el ajuste mejora o empeora respecto al checkpoint base. La comparacion queda limitada a parametros, contexto y licencia, identicos en los cuatro casos salvo el tamano.
 
@@ -98,7 +98,7 @@ No se dispone de resultados comparativos verificados sobre PolyAI/minds14 para l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gaganmittal2023/whisper-tiny-minds14-gagan
+- Modelo en Hugging Face: https://huggingface.co/gaganmittal2023/whisper-tiny-minds14-gagan
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de ajuste: https://huggingface.co/datasets/PolyAI/minds14
 - Paper de Whisper (Robust Speech Recognition via Large-Scale Weak Supervision): https://arxiv.org/abs/2212.04356

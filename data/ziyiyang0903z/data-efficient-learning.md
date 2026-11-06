@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`ziyiyang0903z/data-efficient-learning` es un repositorio publicado en HuggingFace que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo de lenguaje entrenado ni pesos utilizables para inferencia. Segun su propia model card, se trata de un conjunto estructurado de notas de investigacion sobre aprendizaje eficiente en datos (*data efficient learning*), cuyo artefacto principal es un fichero `review.md`, acompanado de un `README.md`. El autor indica explicitamente que el repositorio no reclama mejoras en benchmarks, ni ablaciones completadas, ni codigo publicado, ni un checkpoint entrenado.
+`ziyiyang0903z/data-efficient-learning` es un repositorio publicado en Hugging Face que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo de lenguaje entrenado ni pesos utilizables para inferencia. Segun su propia model card, se trata de un conjunto estructurado de notas de investigacion sobre aprendizaje eficiente en datos (*data efficient learning*), cuyo artefacto principal es un fichero `review.md`, acompanado de un `README.md`. El autor indica explicitamente que el repositorio no reclama mejoras en benchmarks, ni ablaciones completadas, ni codigo publicado, ni un checkpoint entrenado.
 
 El repositorio registra 0 descargas y 0 "likes", tiene un tamano de 0,0 GB y fue creado y actualizado el 24 de septiembre de 2026 (con cinco segundos de diferencia entre ambos eventos). Los metadatos de safetensors declaran 16.576 parametros, una cifra incompatible con cualquier modelo de lenguaje funcional y que, en la practica, corresponde a un artefacto residual en lugar de a un modelo desplegable. La licencia es CC-BY-4.0.
 
@@ -84,9 +84,9 @@ No disponible. Este repositorio no es un modelo y no existen alternativas compar
 - Las referencias y datasets propuestos deben tratarse como punto de partida para verificacion, no como evidencia de que el estudio se haya ejecutado.
 - La cifra de 16.576 parametros procede de los metadatos de safetensors y no debe interpretarse como el tamano de un modelo de lenguaje desplegable.
 - Se desconocen los idiomas soportados y no hay ninguna declaracion multilingue.
-- Las fechas registradas en HuggingFace (creacion y actualizacion el 24 de septiembre de 2026) figuran tal cual en los metadatos del repositorio.
+- Las fechas registradas en Hugging Face (creacion y actualizacion el 24 de septiembre de 2026) figuran tal cual en los metadatos del repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ziyiyang0903z/data-efficient-learning
+- Hugging Face: https://huggingface.co/ziyiyang0903z/data-efficient-learning
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

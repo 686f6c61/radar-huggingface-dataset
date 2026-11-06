@@ -124,7 +124,7 @@ Frente a alternativas de otros ecosistemas (por ejemplo, modelos de ~27B en GGUF
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cometkim/Qwen3.8-27B-nvfp4qat-NInfer
+- Repositorio Hugging Face: https://huggingface.co/cometkim/Qwen3.8-27B-nvfp4qat-NInfer
 - Perfil hermano nvfp4full: https://huggingface.co/cometkim/Qwen3.8-27B-nvfp4full-NInfer
 - Modelo base BF16: https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint QAT de origen: https://huggingface.co/QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4

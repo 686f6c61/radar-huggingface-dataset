@@ -97,7 +97,7 @@ No disponible. No existe un modelo comparable con datos verificables en la infor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NANKAICHEMISTRY/cnn-transformer-generation-pretrained
+- Repositorio en Hugging Face: https://huggingface.co/NANKAICHEMISTRY/cnn-transformer-generation-pretrained
 - Archivo `pipeline.py` (artefacto principal, modelo y ejemplo ejecutable): incluido en el repositorio anterior
 - Archivo `config.json` (configuración de arquitectura): incluido en el repositorio anterior
 - Archivo `training_args.json` (receta de experimento por defecto): incluido en el repositorio anterior

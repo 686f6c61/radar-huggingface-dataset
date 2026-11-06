@@ -84,7 +84,7 @@ La comparacion con otros modelos de autocompletado especializado en bases de dat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/esilva/KapiCoder-Mongo-Small-ONNX
+- Repositorio Hugging Face: https://huggingface.co/esilva/KapiCoder-Mongo-Small-ONNX
 - Repositorio del modelo base (safetensors): https://huggingface.co/esilva/KapiCoder-Mongo-Small
 - Modelo original Qwen2.5-Coder: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B
 - Paper de Qwen2.5-Coder (Hui et al.): https://arxiv.org/abs/2409.12186

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `alborc/sd-models` alojado en HuggingFace contiene un modelo identificado con el tag `gguf`, lo que indica que los pesos están disponibles en formato GGUF, un formato optimizado para inferencia en CPU y GPU mediante librerías como llama.cpp u Ollama. El autor es el usuario `alborc`, aunque no se proporciona información adicional sobre la organización o el propósito del modelo.
+El repositorio `alborc/sd-models` alojado en Hugging Face contiene un modelo identificado con el tag `gguf`, lo que indica que los pesos están disponibles en formato GGUF, un formato optimizado para inferencia en CPU y GPU mediante librerías como llama.cpp u Ollama. El autor es el usuario `alborc`, aunque no se proporciona información adicional sobre la organización o el propósito del modelo.
 
-El modelo cuenta con 2.567.463.684 parámetros (aproximadamente 2,57 mil millones) y un tamaño de repositorio de 709,7 GB, una cifra notablemente elevada para esa cantidad de parámetros, lo que sugiere que el repositorio puede contener múltiples archivos de pesos, versiones o cuantizaciones distintas. El acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones específicas en HuggingFace antes de poder descargar los archivos. No se dispone de información pública sobre la arquitectura, el entrenamiento, las capacidades o la licencia del modelo, lo que limita cualquier evaluación técnica rigurosa.
+El modelo cuenta con 2.567.463.684 parámetros (aproximadamente 2,57 mil millones) y un tamaño de repositorio de 709,7 GB, una cifra notablemente elevada para esa cantidad de parámetros, lo que sugiere que el repositorio puede contener múltiples archivos de pesos, versiones o cuantizaciones distintas. El acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones específicas en Hugging Face antes de poder descargar los archivos. No se dispone de información pública sobre la arquitectura, el entrenamiento, las capacidades o la licencia del modelo, lo que limita cualquier evaluación técnica rigurosa.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que se requiere aceptar condiciones en HuggingFace. Esto puede implicar restricciones de uso o distribución no especificadas.
+- Acceso restringido: el repositorio es gated, por lo que se requiere aceptar condiciones en Hugging Face. Esto puede implicar restricciones de uso o distribución no especificadas.
 - Licencia desconocida: al no indicarse una licencia, el uso comercial y la redistribución son inciertos. Se debe contactar con el autor antes de cualquier uso en producción.
 - Sin documentación técnica: no hay información sobre sesgos, riesgo de alucinación, limitaciones de contexto o idioma. No se puede evaluar la fiabilidad del modelo.
 - Tamaño del repositorio elevado: 709,7 GB para 2,57 B de parámetros sugiere que puede haber múltiples archivos o versiones, lo que puede complicar la descarga y el almacenamiento.
@@ -53,4 +53,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/alborc/sd-models)
+- [Repositorio Hugging Face](https://huggingface.co/alborc/sd-models)

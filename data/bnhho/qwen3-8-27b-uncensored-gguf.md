@@ -117,7 +117,7 @@ Las diferencias clave entre BnhHo y la cuantización de unsloth son el proceso d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BnhHo/Qwen3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/BnhHo/Qwen3.8-27B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic
 - Cuantizaciones GGUF de referencia del base: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

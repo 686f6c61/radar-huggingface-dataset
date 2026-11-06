@@ -6,7 +6,7 @@
 
 El adaptador se entreno en el contexto de una practica de laboratorio (AICB-P2T3, dia 21) con 225 tickets sinteticos y tan solo 58 pasos de optimizacion, lo que lo situa en la categoria de prototipo educativo mas que de artefacto listo para produccion. El repositorio ocupa 0,1 GB y se distribuye en formato PEFT/safetensors, consumible mediante la libreria `peft` sobre el modelo base.
 
-Su relevancia es fundamentalmente metodologica: sirve como ejemplo de adaptacion barata de un modelo pequeno a una tarea de clasificacion estructurada, pero tambien como caso de estudio de olvido catastrofico, ya que la propia model card documenta que la puerta de regresion fallo y que el adaptador responde a preguntas generales con JSON de triaje. La licencia no esta declarada y el modelo no registra descargas ni interacciones en HuggingFace en la fecha de consulta.
+Su relevancia es fundamentalmente metodologica: sirve como ejemplo de adaptacion barata de un modelo pequeno a una tarea de clasificacion estructurada, pero tambien como caso de estudio de olvido catastrofico, ya que la propia model card documenta que la puerta de regresion fallo y que el adaptador responde a preguntas generales con JSON de triaje. La licencia no esta declarada y el modelo no registra descargas ni interacciones en Hugging Face en la fecha de consulta.
 
 ## Especificaciones tecnicas
 
@@ -95,6 +95,6 @@ No se dispone de modelos comparables publicados en la informacion proporcionada 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baooo237/lab21-qwen35-triage-vi
+- Modelo en Hugging Face: https://huggingface.co/baooo237/lab21-qwen35-triage-vi
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

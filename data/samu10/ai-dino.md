@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`samu10/ai-dino` es un repositorio publicado en HuggingFace por el usuario samu10 bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no contiene model card descriptiva (unicamente el bloque de metadatos con la licencia), no declara pipeline, no declara idiomas soportados y su tamano es de 0,0 GB, lo que indica que no hay pesos ni ficheros de modelo alojados en el. Registra 0 descargas y 1 like, y fue creado el 24 de octubre de 2026 con una unica actualizacion dos minutos despues, sin cambios posteriores.
+`samu10/ai-dino` es un repositorio publicado en Hugging Face por el usuario samu10 bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no contiene model card descriptiva (unicamente el bloque de metadatos con la licencia), no declara pipeline, no declara idiomas soportados y su tamano es de 0,0 GB, lo que indica que no hay pesos ni ficheros de modelo alojados en el. Registra 0 descargas y 1 like, y fue creado el 24 de octubre de 2026 con una unica actualizacion dos minutos despues, sin cambios posteriores.
 
 Por el identificador, el nombre remite a la familia DINO (self-distillation with no labels) de Meta AI, un conjunto de metodos de aprendizaje autosupervisado para vision por computador que entrena Vision Transformers sobre imagenes sin etiquetar. No obstante, no existe en la informacion disponible ninguna confirmacion de que este repositorio sea una implementacion, derivado, fine-tuning o reempaquetado de DINO: la model card esta vacia y no se declara arquitectura, tamano ni tarea.
 
@@ -23,7 +23,7 @@ La relevancia actual del repositorio es, por tanto, limitada y debe evaluarse co
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo. El repositorio no incluye model card tecnica, no declara pipeline de HuggingFace y no contiene ficheros de pesos (0,0 GB), por lo que no es posible verificar si se trata de un transformer, un ViT, un modelo MoE o cualquier otra familia. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de ajuste como RLHF, DPO o instruccion supervisada.
+No hay informacion disponible sobre la arquitectura del modelo. El repositorio no incluye model card tecnica, no declara pipeline de Hugging Face y no contiene ficheros de pesos (0,0 GB), por lo que no es posible verificar si se trata de un transformer, un ViT, un modelo MoE o cualquier otra familia. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de ajuste como RLHF, DPO o instruccion supervisada.
 
 El unico contexto externo recuperado en la busqueda web corresponde a DINO de Meta AI (self-distillation with no labels, presentado por Caron et al. en 2021), un metodo autosupervisado que entrena Vision Transformers sobre imagenes no etiquetadas y produce caracteristicas visuales de proposito general. Esa informacion describe el trabajo de Meta AI, no este repositorio, y no debe atribuirse a `samu10/ai-dino` sin confirmacion explicita del autor.
 
@@ -45,7 +45,7 @@ El unico contexto externo recuperado en la busqueda web corresponde a DINO de Me
 - Segmentacion o deteccion de objetos en imagenes: no disponible; el repositorio no declara pipeline de vision ni artefactos asociados.
 - Fine-tuning sobre dominio propio: inviable sin ficheros de pesos ni documentacion de arquitectura.
 - Despliegue en produccion: inviable; el repositorio no contiene artefactos ejecutables ni informacion de licencia de terceros mas alla del metadato Apache 2.0.
-- Referencia educativa o plantilla de publicacion: el repositorio puede servir como ejemplo de publicacion incompleta en HuggingFace (metadatos de licencia sin model card ni pesos), util para ilustrar buenas practicas de documentacion.
+- Referencia educativa o plantilla de publicacion: el repositorio puede servir como ejemplo de publicacion incompleta en Hugging Face (metadatos de licencia sin model card ni pesos), util para ilustrar buenas practicas de documentacion.
 - Seguimiento del autor: util unicamente para monitorizar si samu10 publica en el futuro una model card y pesos que permitan reevaluar el artefacto.
 
 ## Benchmarks y rendimiento
@@ -84,7 +84,7 @@ No es posible establecer una comparativa tecnica fiable porque se desconoce la t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/samu10/ai-dino
+- Repositorio en Hugging Face: https://huggingface.co/samu10/ai-dino
 - DINO (computer vision), AI Wiki: https://aiwiki.ai/wiki/dino_model
 - Meta AI: All You Need To Know About DINO And SAM (Techdogs): https://www.techdogs.com/td-articles/curtain-raisers/meta-ai-all-you-need-to-know-about-dino-and-sam
 - DINO, A Foundation Model for Computer Vision (Towards Data Science): https://towardsdatascience.com/dino-a-foundation-model-for-computer-vision-4cb08e821b18/

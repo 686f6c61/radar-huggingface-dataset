@@ -28,7 +28,7 @@ El modelo parte de la arquitectura Qwen2, un transformer de tipo causal. Según 
 - Generación de texto en inglés (idioma declarado: en).
 - Compatible con la librería Transformers y con text-generation-inference (TGI).
 - Formato de pesos safetensors.
-- Etiqueta "conversational" en HuggingFace, lo que indica un uso orientado a diálogo.
+- Etiqueta "conversational" en Hugging Face, lo que indica un uso orientado a diálogo.
 - No consta soporte para tool calling, función de llamada a herramientas ni capacidades multimodales.
 
 ## Casos de uso

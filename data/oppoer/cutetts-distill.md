@@ -86,7 +86,7 @@ CuteTTS-distill destaca por su alta similitud de hablante (76,8 en LibriSpeech) 
 
 ## Enlaces
 
-- [HuggingFace - OPPOer/CuteTTS-distill](https://huggingface.co/OPPOer/CuteTTS-distill)
+- [Hugging Face - OPPOer/CuteTTS-distill](https://huggingface.co/OPPOer/CuteTTS-distill)
 - [GitHub - OPPO-Mente-Lab/CuteTTS](https://github.com/OPPO-Mente-Lab/CuteTTS)
 - [Paper - arXiv:2608.08638](https://arxiv.org/abs/2608.08638)
-- [Página del paper en HuggingFace](https://huggingface.co/papers/2608.08638)
+- [Página del paper en Hugging Face](https://huggingface.co/papers/2608.08638)

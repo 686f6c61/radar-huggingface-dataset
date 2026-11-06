@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Formato / disponibilidad |
 |---|---|---|---|---|---|
 | ghost-voice (este repo) | 3,3 B (TTS) + Whisper large-v3-turbo | no disponible | TTS + STT empaquetados | Apache-2.0 / MIT | GGUF propio de ghost-infer |
-| maya-research/maya1 | no disponible | no disponible | TTS | Apache-2.0 | Pesos originales en HuggingFace |
+| maya-research/maya1 | no disponible | no disponible | TTS | Apache-2.0 | Pesos originales en Hugging Face |
 | openai/whisper-large-v3-turbo | no disponible en la información | no disponible | STT | MIT | Pesos originales y múltiples runtimes |
 | hubertsiuzdak/snac_24khz | no disponible en la información | no disponible | Códec/decodificador de audio | MIT | Pesos originales |
 
@@ -85,7 +85,7 @@ La comparación relevante no es de rendimiento, sino de empaquetado: ghost-voice
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/affifuddin-hazam/ghost-voice
+- Repositorio en Hugging Face: https://huggingface.co/affifuddin-hazam/ghost-voice
 - Repositorio de ghost-infer: https://github.com/affifuddin-hazam/ghost-infer
 - Modelo base maya1: https://huggingface.co/maya-research/maya1
 - Decodificador SNAC 24 kHz: https://huggingface.co/hubertsiuzdak/snac_24khz

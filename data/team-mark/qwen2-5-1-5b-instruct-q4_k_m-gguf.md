@@ -85,7 +85,7 @@ La comparación se basa en datos públicos del modelo base y de alternativas de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Team-mark/Qwen2.5-1.5B-Instruct-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Team-mark/Qwen2.5-1.5B-Instruct-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/main/LICENSE
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

@@ -76,7 +76,7 @@ No se dispone de información suficiente para comparar este detector con alterna
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/moyuan10086/aigc-safety-models
+- Repositorio en Hugging Face: https://huggingface.co/moyuan10086/aigc-safety-models
 - Repositorio del sistema (GitHub): https://github.com/moyuan10086/aigc-safety-system
 - Perfil del autor en GitHub: https://github.com/moyuan10086
 - Taller IJCAI 2026 sobre seguridad AIGC: https://ai-safety-workshop-ijcai2026.github.io/index.html

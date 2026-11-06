@@ -94,7 +94,7 @@ No se han encontrado comparaciones con otros fine-tunings matemáticos como Qwen
 
 ## Enlaces
 
-- HuggingFace: [zocrate/Qwen2.5-7B-ES-math-iter100](https://huggingface.co/zocrate/Qwen2.5-7B-ES-math-iter100)
+- Hugging Face: [zocrate/Qwen2.5-7B-ES-math-iter100](https://huggingface.co/zocrate/Qwen2.5-7B-ES-math-iter100)
 - Checkpoint de 50 iteraciones: [zocrate/Qwen2.5-7B-ES-math](https://huggingface.co/zocrate/Qwen2.5-7B-ES-math)
 - Framework es-at-scale: [VsonicV/es-at-scale](https://github.com/VsonicV/es-at-scale)
 - Proyecto ES-capacity: [Jaysen-Ma/ES-capacity](https://github.com/Jaysen-Ma/ES-capacity)

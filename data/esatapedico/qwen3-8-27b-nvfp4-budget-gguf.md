@@ -80,7 +80,7 @@ El modelo base Qwen3.8-27B pertenece a la familia Qwen3.8, que incluye Qwen3.8-2
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/esatapedico/Qwen3.8-27B-NVFP4-BUDGET-GGUF
+- Repositorio Hugging Face: https://huggingface.co/esatapedico/Qwen3.8-27B-NVFP4-BUDGET-GGUF
 - Repositorio hermano con MTP: https://huggingface.co/esatapedico/Qwen3.8-27B-NVFP4-MTP-GGUF
 - Modelo base NVFP4 de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B

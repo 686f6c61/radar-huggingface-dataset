@@ -96,7 +96,7 @@ La comparacion es estructural, no de rendimiento: no existen datos publicados de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Nancy_tts-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Nancy_tts-GGUF
 - Modelo base: https://huggingface.co/sken0/Nancy_tts
 - Pagina de vision general y descargas del autor: https://hf.tst.eu/model#Nancy_tts-GGUF
 - Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

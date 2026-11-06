@@ -78,7 +78,7 @@ Los resultados reportados en el paper de ACT (arXiv 2304.13705) corresponden a l
 
 | Modelo | Método | Parámetros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ntheunissen03/act_towel_v1` | ACT (action chunking) | 51,7 M | Estado 6 dims + 2 imágenes 480x640 | Apache 2.0 | HuggingFace Hub, librería lerobot |
+| `ntheunissen03/act_towel_v1` | ACT (action chunking) | 51,7 M | Estado 6 dims + 2 imágenes 480x640 | Apache 2.0 | Hugging Face Hub, librería lerobot |
 | ACT de referencia (implementación del paper) | ACT (action chunking) | no disponible | Estado + imágenes | no disponible | Repositorio de los autores del paper |
 | Diffusion Policy (implementación en LeRobot) | Difusión sobre acciones | no disponible | Estado + imágenes | no disponible | Disponible como política de LeRobot |
 | Políticas VLA con condicionamiento por lenguaje (familia SmolVLA y similares) | Visión-lenguaje-acción | no disponible | Imágenes + instrucción textual | no disponible | Ecosistema LeRobot |
@@ -101,7 +101,7 @@ La comparación relevante es metodológica: ACT destaca por su simplicidad y por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ntheunissen03/act_towel_v1
+- Modelo en Hugging Face: https://huggingface.co/ntheunissen03/act_towel_v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/ntheunissen03/towel_v1
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=ntheunissen03/towel_v1
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv: https://arxiv.org/abs/2304.13705)

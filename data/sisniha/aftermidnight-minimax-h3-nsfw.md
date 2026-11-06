@@ -71,7 +71,7 @@ No se dispone de información suficiente para comparar este LoRA con alternativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sisniha/AfterMidnight-MiniMax-H3-NSFW
+- Repositorio Hugging Face: https://huggingface.co/sisniha/AfterMidnight-MiniMax-H3-NSFW
 - Articulo sobre generación de video sin censura con MiniMax H3: https://medium.com/data-science-in-your-pocket/uncensored-video-generation-using-minimax-h3-dc53e2102eb6
 - Guía de despliegue local y moderación: https://kingy.ai/blog/can-minimax-h3-generate-uncensored-video-what-local-deployment-actually-changes/
 - Lista de recursos de MiniMax-H3: https://github.com/wildminder/awesome-minimax-H3

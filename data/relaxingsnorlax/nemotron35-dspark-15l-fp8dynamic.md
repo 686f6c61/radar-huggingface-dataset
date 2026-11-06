@@ -82,7 +82,7 @@ La comparacion relevante no es de calidad, sino de funcion: los dos drafter de R
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RelaxingSnorlax/nemotron35-dspark-15l-fp8dynamic
+- Modelo en Hugging Face: https://huggingface.co/RelaxingSnorlax/nemotron35-dspark-15l-fp8dynamic
 - Drafter fuente de 5 capas: https://huggingface.co/RelaxingSnorlax/nemotron35-dspark-5l-fp8dynamic
 - Modelo objetivo: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
 - Drafter DSpark oficial de NVIDIA para Lightning-30B-A3B: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark/tree/main

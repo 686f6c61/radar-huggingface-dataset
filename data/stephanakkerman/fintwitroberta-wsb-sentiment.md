@@ -33,7 +33,7 @@ Los hiperparametros de entrenamiento fueron: 4 epocas, learning rate 2e-05 con 1
 - Comprension del argot, sarcasmo y jerga especifica de WSB (ejemplos del widget: "Come on TSLA. Fly you regarded bird!!", "Lmfao so many puts got bent").
 - Lectura de posts completos de hasta 256 tokens (aproximadamente el 97% de los posts de WSB); textos mas largos se truncan salvo que se dividan previamente.
 - Transferencia parcial a tuits financieros (macro F1 de 0,735 en el test de tuits), aunque con menor precision que el modelo especializado en tuits.
-- Integracion directa con la libreria transformers de HuggingFace mediante pipeline de sentiment-analysis.
+- Integracion directa con la libreria transformers de Hugging Face mediante pipeline de sentiment-analysis.
 - Salidas calibrables mediante temperatura para obtener niveles de confianza fiables.
 
 No soporta tool calling, agentes, ni capacidades multimodales: es un clasificador de texto puro.
@@ -78,7 +78,7 @@ El autor indica un intervalo bootstrap al 95% del macro F1 en test de 0,838–0,
 - VRAM estimada para inferencia: aproximadamente 1,4 GB en fp32 (tamano del repo); menos de 1 GB si se carga en fp16 o se cuantiza. Es un modelo muy ligero.
 - GPU recomendadas: cualquier GPU moderna basta; no requiere A100 ni H100. Una RTX 3060, RTX 4090 o incluso GPUs integradas son mas que suficientes.
 - Cabe sobradamente en GPUs de consumo y tambien es ejecutable solo en CPU con latencias aceptables (del orden de milisegundos por texto en GPU, decenas de milisegundos en CPU moderno; no hay cifras oficiales).
-- Despliegue: libreria transformers de HuggingFace (pipeline de sentiment-analysis), compatible con text-embeddings-inference y endpoints de HuggingFace; no requiere vLLM, llama.cpp ni Ollama al no ser un modelo generativo.
+- Despliegue: libreria transformers de Hugging Face (pipeline de sentiment-analysis), compatible con text-embeddings-inference y endpoints de Hugging Face; no requiere vLLM, llama.cpp ni Ollama al no ser un modelo generativo.
 - Ideal para procesamiento por lotes de grandes volumenes de posts en hardware modesto.
 
 ## Comparativa con modelos similares
@@ -104,10 +104,10 @@ FinTwitRoBERTa-wsb-sentiment es la opcion recomendada para Reddit; para tuits fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StephanAkkerman/FinTwitRoBERTa-wsb-sentiment
+- Modelo en Hugging Face: https://huggingface.co/StephanAkkerman/FinTwitRoBERTa-wsb-sentiment
 - Modelo base: https://huggingface.co/StephanAkkerman/FinTwitRoBERTa-sentiment
 - Predecesor (BERT): https://huggingface.co/StephanAkkerman/FinTwitBERT-wsb-sentiment
 - Modelo para tuits: https://huggingface.co/StephanAkkerman/FinTwitRoBERTa-sentiment
 - Dataset WSBS (GitHub): https://github.com/moonscape95/WSBS
-- Dataset WSBS en HuggingFace: https://huggingface.co/datasets/moonscape95/WSBS
+- Dataset WSBS en Hugging Face: https://huggingface.co/datasets/moonscape95/WSBS
 - Repositorio del proyecto ModernFinTwitBERT: https://github.com/StephanAkkerman/ModernFinTwitBERT

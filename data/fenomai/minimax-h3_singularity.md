@@ -19,7 +19,7 @@ Es relevante para equipos que ya trabajan con MiniMax-H3 en pipelines de ComfyUI
 | Tipos de cuantizacion | INT8 (version V2 publicada en INT8) |
 | Idiomas soportados | en, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (repo de 188,1 GB; pesos en el repositorio de HuggingFace) |
+| Formato de pesos | no disponible (repo de 188,1 GB; pesos en el repositorio de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -82,7 +82,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FenomAI/Minimax-h3_Singularity
+- Hugging Face: https://huggingface.co/FenomAI/Minimax-h3_Singularity
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Demo online (RunningHub): https://www.runninghub.ai/zh-cn/post/2112912294795993090/?inviteCode=rh-v1559
 - YouTube (AIGC-Singularity): https://youtube.com/@AIGC-Singularity

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `camiellia/qwen3b-multimedqa-random-seed44` es un repositorio publicado en HuggingFace por el usuario `camiellia` que, según su nombre, parece ser un intento de ajuste fino (fine-tuning) de la familia Qwen3 para tareas de respuesta a preguntas multimodales o sobre múltiples documentos. Sin embargo, la información disponible es extremadamente limitada: el repositorio tiene un tamaño de 0.0 GB, lo que indica que no se han subido los pesos del modelo, y su model card es una plantilla generada automáticamente en la que todos los campos aparecen como "More Information Needed".
+El modelo `camiellia/qwen3b-multimedqa-random-seed44` es un repositorio publicado en Hugging Face por el usuario `camiellia` que, según su nombre, parece ser un intento de ajuste fino (fine-tuning) de la familia Qwen3 para tareas de respuesta a preguntas multimodales o sobre múltiples documentos. Sin embargo, la información disponible es extremadamente limitada: el repositorio tiene un tamaño de 0.0 GB, lo que indica que no se han subido los pesos del modelo, y su model card es una plantilla generada automáticamente en la que todos los campos aparecen como "More Information Needed".
 
 No se ha publicado documentación técnica, datos de entrenamiento ni resultados de evaluación. El nombre incluye la cadena "random-seed44", lo que sugiere que se trata de un experimento con semilla aleatoria, probablemente para estudiar la reproducibilidad de algún proceso de ajuste fino. A día de hoy, este modelo no es funcional ni puede ser cargado para su uso.
 
@@ -67,7 +67,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/camiellia/qwen3b-multimedqa-random-seed44
+- Hugging Face: https://huggingface.co/camiellia/qwen3b-multimedqa-random-seed44
 - Modelo similar de camiellia: https://huggingface.co/camiellia/qwen3b-multimedqa-kcenter
 - Repositorio de Qwen3 (familia de modelos de referencia): https://github.com/QwenLM/Qwen3
 - Articulo referenciado en tags: https://arxiv.org/abs/1910.09700

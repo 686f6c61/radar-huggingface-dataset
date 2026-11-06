@@ -2,9 +2,9 @@
 
 ## Resumen
 
-UniHyena-checkpoints es un repositorio de pesos publicado en HuggingFace por el usuario Godseye1311 bajo la licencia `fair-chemistry-license` y con acceso restringido (gated). Por las etiquetas asociadas (`chemistry`, `interatomic-potential`, `fairchem`, `uma`, `allscaip`) se trata de checkpoints orientados a potenciales interatómicos, es decir, modelos de aprendizaje automático que predicen energías y fuerzas de sistemas moleculares y materiales, en la línea de la familia UMA (Universal Model for Atoms) de FAIR-Chem / Meta. No es un modelo de lenguaje generativo, sino un modelo de química computacional.
+UniHyena-checkpoints es un repositorio de pesos publicado en Hugging Face por el usuario Godseye1311 bajo la licencia `fair-chemistry-license` y con acceso restringido (gated). Por las etiquetas asociadas (`chemistry`, `interatomic-potential`, `fairchem`, `uma`, `allscaip`) se trata de checkpoints orientados a potenciales interatómicos, es decir, modelos de aprendizaje automático que predicen energías y fuerzas de sistemas moleculares y materiales, en la línea de la familia UMA (Universal Model for Atoms) de FAIR-Chem / Meta. No es un modelo de lenguaje generativo, sino un modelo de química computacional.
 
-El repositorio ocupa 7,0 GB y contiene varios checkpoints, lo que sugiere una colección de variantes de un mismo modelo (posiblemente distintos tamaños, tareas o etapas de entrenamiento) más que un único conjunto de pesos. La información pública disponible es muy limitada: no se declaran parámetros, contexto, idiomas ni pipeline, y no se han publicado resultados de benchmarks en la ficha de HuggingFace.
+El repositorio ocupa 7,0 GB y contiene varios checkpoints, lo que sugiere una colección de variantes de un mismo modelo (posiblemente distintos tamaños, tareas o etapas de entrenamiento) más que un único conjunto de pesos. La información pública disponible es muy limitada: no se declaran parámetros, contexto, idiomas ni pipeline, y no se han publicado resultados de benchmarks en la ficha de Hugging Face.
 
 La relevancia de este tipo de modelos radica en su uso como potencial interatómico universal para simulaciones de dinámica molecular y cribado de materiales, un área donde los modelos basados en grafos o en arquitecturas equivariantes están sustituyendo progresivamente a los potenciales empíricos clásicos. La combinación de etiquetas `uma` y `fairchem` apunta a una integración con el ecosistema FAIR-Chem, aunque no se confirma en la información disponible.
 
@@ -62,25 +62,25 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UniHyena-checkpoints | Potencial interatómico (presunto) | no disponible | no disponible | fair-chemistry-license (gated) | HuggingFace, acceso restringido |
+| UniHyena-checkpoints | Potencial interatómico (presunto) | no disponible | no disponible | fair-chemistry-license (gated) | Hugging Face, acceso restringido |
 | UMA (FAIR-Chem) | Potencial interatómico universal | no disponible en esta ficha | no aplica | no disponible | Repositorio FAIR-Chem |
-| MACE | Potencial interatómico equivariante | no disponible en esta ficha | no aplica | MIT (versión open source) | GitHub / HuggingFace |
-| CHGNet | Potencial interatómico con grafos | no disponible en esta ficha | no aplica | MIT | GitHub / HuggingFace |
+| MACE | Potencial interatómico equivariante | no disponible en esta ficha | no aplica | MIT (versión open source) | GitHub / Hugging Face |
+| CHGNet | Potencial interatómico con grafos | no disponible en esta ficha | no aplica | MIT | GitHub / Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar la licencia `fair-chemistry-license` en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y requiere aceptar la licencia `fair-chemistry-license` en Hugging Face antes de descargar los pesos.
 - Licencia no estándar: la `fair-chemistry-license` no es una licencia open source reconocida por la OSI; conviene revisar sus términos antes de cualquier uso comercial o redistribución.
 - Información técnica ausente: no se declaran parámetros, arquitectura, datos de entrenamiento ni benchmarks, lo que impide evaluar su idoneidad con rigor.
 - Riesgo de extrapolación: como todo potencial interatómico entrenado con datos finitos, puede fallar fuera de la distribución química y de las condiciones (temperatura, presión) cubiertas en el entrenamiento.
 - Sin garantías de mantenimiento: el repositorio tiene 0 descargas y fue creado y actualizado en la misma fecha, sin historial de uso que permita validar su calidad.
 - No es un modelo de lenguaje: no debe emplearse para tareas de NLP, generación de texto ni razonamiento simbólico.
-- Posible ambigüedad de nombre: "UniHyena" podría inducir a confusión con modelos de lenguaje basados en Hyena; la ficha de HuggingFace no aclara la arquitectura.
+- Posible ambigüedad de nombre: "UniHyena" podría inducir a confusión con modelos de lenguaje basados en Hyena; la ficha de Hugging Face no aclara la arquitectura.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Godseye1311/UniHyena-checkpoints
+- Hugging Face: https://huggingface.co/Godseye1311/UniHyena-checkpoints
 - FAIR-Chem (ecosistema referenciado por las etiquetas): https://github.com/facebookresearch/fairchem
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo concreto.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qwen36-twla-symmetric-prefix-init4-target2-v14` es un checkpoint de 35.107.181.936 parametros publicado por el usuario `minjaechoi` en HuggingFace. Por las etiquetas del repositorio (`qwen3_5_moe`, `image-text-to-text`, `conversational`) se trata de un modelo de arquitectura Mixture of Experts derivada de la familia Qwen 3.5, con capacidad de entrada multimodal imagen-texto y pesos en formato `safetensors` para la libreria `transformers`.
+`qwen36-twla-symmetric-prefix-init4-target2-v14` es un checkpoint de 35.107.181.936 parametros publicado por el usuario `minjaechoi` en Hugging Face. Por las etiquetas del repositorio (`qwen3_5_moe`, `image-text-to-text`, `conversational`) se trata de un modelo de arquitectura Mixture of Experts derivada de la familia Qwen 3.5, con capacidad de entrada multimodal imagen-texto y pesos en formato `safetensors` para la libreria `transformers`.
 
 El repositorio tiene un tamano de 70,2 GB, coherente con pesos en bfloat16 (2 bytes por parametro sobre 35,1 mil millones de parametros). La model card es minima: no incluye descripcion, licencia, idiomas soportados ni resultados de evaluacion, y solo declara dos datasets asociados, uno de ellos de evaluacion sobre GPQA. El nombre del checkpoint (`twla-symmetric-prefix-init4-target2-v14`) sugiere un experimento de ablacion o de inicializacion de prefijos, con la version 14 de una misma serie.
 
@@ -75,7 +75,7 @@ No es posible realizar una comparativa rigurosa con la informacion proporcionada
 
 | Modelo | Parametros totales | Contexto | Licencia | Benchmarks | Disponibilidad |
 |---|---|---|---|---|---|
-| `minjaechoi/qwen36-twla-symmetric-prefix-init4-target2-v14` | 35,1 mil millones | no disponible | no disponible | no disponible | HuggingFace, repositorio publico |
+| `minjaechoi/qwen36-twla-symmetric-prefix-init4-target2-v14` | 35,1 mil millones | no disponible | no disponible | no disponible | Hugging Face, repositorio publico |
 | Alternativas de la familia Qwen 3.5 MoE | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 Se recomienda consultar la documentacion oficial de la familia Qwen 3.5 para obtener los datos de las variantes de referencia antes de cualquier comparacion cuantitativa.
@@ -95,7 +95,7 @@ Se recomienda consultar la documentacion oficial de la familia Qwen 3.5 para obt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen36-twla-symmetric-prefix-init4-target2-v14
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen36-twla-symmetric-prefix-init4-target2-v14
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/minjaechoi/bipea-expert-nogpqa-v3
 - Manifiesto de evaluacion declarado: https://huggingface.co/datasets/minjaechoi/twla-gpqa30-eval-manifest
 - Paper, blog o repositorio tecnico: no disponible. Las busquedas web realizadas no devolvieron ninguna fuente relacionada con este modelo.

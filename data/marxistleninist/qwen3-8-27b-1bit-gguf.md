@@ -43,7 +43,7 @@ La familia `Qwen3.8-27B-1bit-GGUF` se genera a partir del modelo base Qwen3.8-27
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible para esta cuantizacion especifica. El modelo base Qwen3.8-27B tiene benchmarks publicados (por ejemplo, en su pagina de HuggingFace), pero no se dispone de los numeros exactos en esta ficha. Se recomienda consultar la documentacion del modelo base para referencia.
+No se han publicado resultados de benchmarks en la informacion disponible para esta cuantizacion especifica. El modelo base Qwen3.8-27B tiene benchmarks publicados (por ejemplo, en su pagina de Hugging Face), pero no se dispone de los numeros exactos en esta ficha. Se recomienda consultar la documentacion del modelo base para referencia.
 
 ## Requisitos de hardware
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/MarxistLeninist/Qwen3.8-27B-1bit-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/MarxistLeninist/Qwen3.8-27B-1bit-GGUF)
 - [Modelo base Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio GitHub del modelo base](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Instalador local de Qwen3.8-27B](https://github.com/qwen3-8-27b/qwen3-8-27b)

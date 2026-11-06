@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LimitWise v2 es un modelo de regresión logística de clasificación tabular desarrollado por el usuario de HuggingFace drdavidprivacy en el marco del AI Governance Practicum (Track 1). El modelo simula el sistema de alerta temprana de la entidad ficticia "Corvana Bank" y predice la probabilidad de impago de pago en el siguiente ciclo de extracto de tarjetas de crédito. No es un modelo de lenguaje ni un modelo fundacional: se trata de un artefacto educativo de gobernanza de IA, con una model card ejemplar que documenta lineage, mitigación de sesgos, calibración y controles de uso.
+LimitWise v2 es un modelo de regresión logística de clasificación tabular desarrollado por el usuario de Hugging Face drdavidprivacy en el marco del AI Governance Practicum (Track 1). El modelo simula el sistema de alerta temprana de la entidad ficticia "Corvana Bank" y predice la probabilidad de impago de pago en el siguiente ciclo de extracto de tarjetas de crédito. No es un modelo de lenguaje ni un modelo fundacional: se trata de un artefacto educativo de gobernanza de IA, con una model card ejemplar que documenta lineage, mitigación de sesgos, calibración y controles de uso.
 
 Su relevancia no reside en el rendimiento predictivo, sino en el proceso: v2 incorpora el CorrelationRemover de Fairlearn para eliminar la influencia de sexo, edad, estado civil y educación, además de una recalibración isótona verificada. Está firmado como "versión recomendada" frente a v1 (que usaba 27 entradas codificadas en 98 columnas, frente a las 93 columnas de v2 tras eliminar los campos demográficos). El repositorio incluye los pesos serializados en formato pickle, una recalibración alternativa, una tabla legible de pesos e intercepto, y la model card en PDF.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: no aplica, no se requiere GPU.
 - Consumer GPU: no aplica; cualquier portatil o servidor basico con Python es suficiente.
 - Dependencias criticas: scikit-learn 1.9.1 y fairlearn 0.15.0 exactos; el serializado no carga sobre otras versiones de scikit-learn, por diseño.
-- Despliegue: servido mediante el Space de HuggingFace drdavidprivacy/limitwise; tambien puede cargarse localmente con pickle/joblib tras instalar las versiones fijadas. No aplica vLLM, llama.cpp, Ollama ni TGI (no es un modelo de lenguaje).
+- Despliegue: servido mediante el Space de Hugging Face drdavidprivacy/limitwise; tambien puede cargarse localmente con pickle/joblib tras instalar las versiones fijadas. No aplica vLLM, llama.cpp, Ollama ni TGI (no es un modelo de lenguaje).
 - Latencia y throughput: no disponible; por el tamano del modelo, la inferencia por fila es de orden de microsegundos en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares

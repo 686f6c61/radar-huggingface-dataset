@@ -98,7 +98,7 @@ Además de estos dos puntos de comparación internos, la información disponible
 - Ausencia de tracción pública: 0 descargas y 0 likes en el momento de la consulta, sin validación independiente por parte de terceros.
 - Integridad de artefactos: la procedencia se documenta mediante sumas SHA-256 del catálogo y del manifiesto del dataset; conviene fijar la revisión `v0.6.0` para descargas reproducibles, ya que los conjuntos de condicionamiento, los targets, las cachés de decisión y los registros de entrenamiento no se distribuyen.
 - Dependencia de componentes externos: el pipeline completo requiere el planificador StrandsAgents/strands-decider-2B-hobson-v19 y la librería de activos procedurales 0.11.0, cuyas versiones condicionan el resultado.
-- Datos de plataforma poco habituales: la fecha de creación del repositorio figura como 2026-10-08 en los metadatos de HuggingFace, lo que conviene tener en cuenta al fechar la ficha.
+- Datos de plataforma poco habituales: la fecha de creación del repositorio figura como 2026-10-08 en los metadatos de Hugging Face, lo que conviene tener en cuenta al fechar la ficha.
 
 ## Enlaces
 

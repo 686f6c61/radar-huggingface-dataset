@@ -109,7 +109,7 @@ CAM++ obtiene mejor EER en todos los protocolos publicados (aproximadamente 1,2-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alkove-ai/alkove-timbre-1-preview
+- Modelo en Hugging Face: https://huggingface.co/alkove-ai/alkove-timbre-1-preview
 - Modelo complementario alkove-focus-1-preview: https://huggingface.co/alkove-ai/alkove-focus-1-preview
 - Sitio del proyecto Alkove: https://alkove.ai
 - Modelo de referencia CAM++ citado en la model card: `speech_campplus_sv_zh_en_16k-common_advanced` (3D-Speaker, Apache-2.0); no se proporciona URL en la informacion disponible.

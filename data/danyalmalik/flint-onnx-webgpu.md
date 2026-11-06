@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Precision / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Flint-ONNX-WebGPU (esta ficha) | 39,8B | ~2,5B | Tablas rotatorias hasta 65.536; ventana deslizante 513 | ONNX, 4 bits lineales/expertos, 8 bits salida | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| RecursiveSI/flint (modelo base) | 39,8B | ~2,5B | no disponible | Pesos originales (precision no disponible) | Apache 2.0 | HuggingFace |
+| Flint-ONNX-WebGPU (esta ficha) | 39,8B | ~2,5B | Tablas rotatorias hasta 65.536; ventana deslizante 513 | ONNX, 4 bits lineales/expertos, 8 bits salida | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| RecursiveSI/flint (modelo base) | 39,8B | ~2,5B | no disponible | Pesos originales (precision no disponible) | Apache 2.0 | Hugging Face |
 | Otras alternativas MoE de tamano comparable | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion documentada es contra el modelo base: misma arquitectura y mismo numero de parametros, pero distinto formato (ONNX cuantizado frente a los pesos originales), distinto runtime (ONNX Runtime Web/WebGPU frente al stack de inferencia original) y con la advertencia de que las salidas no son identicas.
@@ -87,7 +87,7 @@ La unica comparacion documentada es contra el modelo base: misma arquitectura y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danyalmalik/Flint-ONNX-WebGPU
+- Modelo en Hugging Face: https://huggingface.co/danyalmalik/Flint-ONNX-WebGPU
 - Modelo base: https://huggingface.co/RecursiveSI/flint
 - Repositorio de Quick Inference (exportador y runtime): https://github.com/mdanyalmalik/quick-inf
 - Otros enlaces relevantes (papers, blogs, demos): no disponible en la informacion proporcionada.

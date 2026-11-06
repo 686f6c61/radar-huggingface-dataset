@@ -71,6 +71,6 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/mradermacher/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/mradermacher/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic-GGUF)
 - [Modelo base de DavidAU](https://huggingface.co/DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic)
 - [Repositorio de Qwen3.6 en GitHub](https://github.com/QwenLM/Qwen3.6)

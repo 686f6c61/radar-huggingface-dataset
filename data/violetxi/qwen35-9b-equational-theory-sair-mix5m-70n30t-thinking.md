@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| violetxi/qwen35-9b-equational-theory-sair-mix5m-70n30t-thinking | 9,65 mil millones | No disponible | Benchmarks no publicados; perdida de validacion 0,276607 | apache-2.0 | HuggingFace, safetensors BF16 |
-| Qwen/Qwen3.5-9B (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace |
-| Otros checkpoints de la misma serie (1M, 10M, 50M, 100M) | 9,65 mil millones (mismo base) | No disponible | No disponible | apache-2.0 segun el patron del autor | HuggingFace |
-| Alternativas de ~8-9B para matematicas y razonamiento (por ejemplo Qwen3-8B, Llama-3.1-8B-Instruct, Gemma-2-9B) | 8-9 mil millones | No verificado en esta busqueda | No disponible en la informacion proporcionada | Licencias variadas (Apache 2.0, licencia comunitaria) | HuggingFace |
+| violetxi/qwen35-9b-equational-theory-sair-mix5m-70n30t-thinking | 9,65 mil millones | No disponible | Benchmarks no publicados; perdida de validacion 0,276607 | apache-2.0 | Hugging Face, safetensors BF16 |
+| Qwen/Qwen3.5-9B (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face |
+| Otros checkpoints de la misma serie (1M, 10M, 50M, 100M) | 9,65 mil millones (mismo base) | No disponible | No disponible | apache-2.0 segun el patron del autor | Hugging Face |
+| Alternativas de ~8-9B para matematicas y razonamiento (por ejemplo Qwen3-8B, Llama-3.1-8B-Instruct, Gemma-2-9B) | 8-9 mil millones | No verificado en esta busqueda | No disponible en la informacion proporcionada | Licencias variadas (Apache 2.0, licencia comunitaria) | Hugging Face |
 
 La busqueda web realizada no devolvio informacion tecnica relevante sobre este modelo ni sobre alternativas comparables, por lo que la comparativa se limita a lo que consta en el repositorio y en la model card.
 
@@ -95,7 +95,7 @@ La busqueda web realizada no devolvio informacion tecnica relevante sobre este m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/qwen35-9b-equational-theory-sair-mix5m-70n30t-thinking
+- Modelo en Hugging Face: https://huggingface.co/violetxi/qwen35-9b-equational-theory-sair-mix5m-70n30t-thinking
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de notas: https://huggingface.co/datasets/violetxi/equational-theory-sair-notes
 - Dataset de rollouts condicionados por notas: https://huggingface.co/datasets/violetxi/equational-theory-sair-note-conditioned-rollouts

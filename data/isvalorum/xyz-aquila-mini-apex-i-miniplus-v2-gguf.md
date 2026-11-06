@@ -92,7 +92,7 @@ Comparativas con modelos de referencia como Qwen, Llama o Mistral de tamano equi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IsValorum/XYZ-Aquila-mini-APEX-I-MiniPlus-V2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/XYZ-Aquila-mini-APEX-I-MiniPlus-V2-GGUF
 - Modelo base declarado: https://huggingface.co/XYZAILab/XYZ-Aquila-mini
 - Coleccion APEX-I Custom Quants: https://huggingface.co/collections/IsValorum/apex-i-custom-quants-6aa8b021ecb827b8ff04c9fc
 - KAT-Coder-V2.5-Dev APEX-I-MiniPlus-V2: https://huggingface.co/IsValorum/KAT-Coder-V2.5-Dev-APEX-I-MiniPlus-V2-GGUF

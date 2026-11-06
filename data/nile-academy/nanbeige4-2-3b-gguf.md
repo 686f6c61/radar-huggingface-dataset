@@ -123,7 +123,7 @@ No se dispone en la información proporcionada de datos verificados de modelos c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nile-academy/nanbeige4.2-3b-gguf
+- Repositorio Hugging Face: https://huggingface.co/nile-academy/nanbeige4.2-3b-gguf
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.2-3B
 - Model card exacta del modelo fuente (revision fijada): https://huggingface.co/Nanbeige/Nanbeige4.2-3B/blob/b82e54bd609793562a75cbf9337970a93369eab5/README.md
 - Paper de referencia: https://arxiv.org/abs/2607.22083

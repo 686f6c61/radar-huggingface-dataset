@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/forgetting_gate_2_4_256_pile_seed44` es un checkpoint de generación de texto publicado en HuggingFace por el usuario Lanni-ni, con 27.449.096 parámetros (aproximadamente 27,4 millones) y pesos en formato safetensors. La etiqueta de arquitectura declarada en el Hub es `forgetting_transformer`, lo que lo sitúa en la familia de transformers con mecanismos de olvido o puertas de olvido en el mecanismo de atención, una línea de investigación centrada en controlar explícitamente qué información se retiene y qué información se descarta en cada paso. El nombre del repositorio sugiere además un entrenamiento sobre el dataset Pile con una semilla concreta (seed44), pero esto no está confirmado en la documentación disponible.
+El modelo `Lanni-ni/forgetting_gate_2_4_256_pile_seed44` es un checkpoint de generación de texto publicado en Hugging Face por el usuario Lanni-ni, con 27.449.096 parámetros (aproximadamente 27,4 millones) y pesos en formato safetensors. La etiqueta de arquitectura declarada en el Hub es `forgetting_transformer`, lo que lo sitúa en la familia de transformers con mecanismos de olvido o puertas de olvido en el mecanismo de atención, una línea de investigación centrada en controlar explícitamente qué información se retiene y qué información se descarta en cada paso. El nombre del repositorio sugiere además un entrenamiento sobre el dataset Pile con una semilla concreta (seed44), pero esto no está confirmado en la documentación disponible.
 
 El problema que aborda es de investigación en arquitecturas de atención: los transformadores estándar acumulan toda la información del contexto en la caché KV y carecen de un mecanismo explícito y aprendido para descartar información obsoleta. Un modelo con puertas de olvido busca resolver esto de forma diferenciable, lo que resulta relevante para contextos largos y para reducir el coste de memoria de la caché. Al tratarse de un checkpoint pequeño y con semilla fija, su interés es fundamentalmente experimental y reproducible, no de producción.
 
-La model card publicada es la plantilla automática de HuggingFace y no contiene información sustantiva: no especifica autoría real, datos de entrenamiento, hiperparámetros, licencia ni idiomas. Con 0 descargas y 0 likes en el momento de la consulta, se trata de un artefacto de investigación sin validación externa conocida. Cualquier evaluación de capacidades debe hacerse por cuenta propia.
+La model card publicada es la plantilla automática de Hugging Face y no contiene información sustantiva: no especifica autoría real, datos de entrenamiento, hiperparámetros, licencia ni idiomas. Con 0 descargas y 0 likes en el momento de la consulta, se trata de un artefacto de investigación sin validación externa conocida. Cualquier evaluación de capacidades debe hacerse por cuenta propia.
 
 ## Especificaciones tecnicas
 
@@ -79,7 +79,7 @@ La comparacion no es homogenea: los tres modelos de referencia tienen el doble o
 ## Limitaciones y advertencias
 
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial. En la practica, la ausencia de licencia implica que los derechos quedan reservados por defecto, por lo que no deberia usarse en produccion ni redistribuirse sin contactar con el autor.
-- Model card sin contenido: la documentacion es la plantilla automatica de HuggingFace. No hay informacion sobre datos de entrenamiento, sesgos, hiperparametros ni evaluacion, lo que impide auditar el modelo.
+- Model card sin contenido: la documentacion es la plantilla automatica de Hugging Face. No hay informacion sobre datos de entrenamiento, sesgos, hiperparametros ni evaluacion, lo que impide auditar el modelo.
 - Riesgo alto de alucinacion: con 27,4 M de parametros y sin datos de entrenamiento verificables, es esperable que el modelo genere texto incoherente o factualmente incorrecto en cuanto la tarea exija conocimiento del mundo.
 - Idiomas desconocidos: no se declara ningun idioma soportado. Si el entrenamiento fue sobre Pile, la composicion es mayoritariamente inglesa con porciones de otras lenguas, pero esto no esta confirmado.
 - Posible contenido inapropiado en la salida: si se confirma el entrenamiento sobre Pile, ese corpus contiene texto web sin filtrar, con presencia documentada de lenguaje toxico, sesgos y contenido ofensivo. No se ha aplicado, segun la informacion disponible, ninguna fase de alineacion.
@@ -90,10 +90,10 @@ La comparacion no es homogenea: los tres modelos de referencia tienen el doble o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/forgetting_gate_2_4_256_pile_seed44
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/forgetting_gate_2_4_256_pile_seed44
 - Paper citado en los tags (Lacoste et al., 2019, estimacion de emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental en machine learning: https://mlco2.github.io/impact
-- Perfil del autor en HuggingFace: https://huggingface.co/Lanni-ni
+- Perfil del autor en Hugging Face: https://huggingface.co/Lanni-ni
 - Dataset Pile (referencia no confirmada por el autor): https://huggingface.co/datasets/EleutherAI/pile
 
 No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo. Los resultados de la busqueda web realizada no contenian informacion relevante sobre el modelo y han sido descartados.

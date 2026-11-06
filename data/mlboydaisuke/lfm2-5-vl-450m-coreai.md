@@ -82,8 +82,8 @@ La comparativa se limita a los modelos de la misma familia mencionados en la inf
 
 ## Enlaces
 
-- Modelo convertido en HuggingFace: https://huggingface.co/mlboydaisuke/LFM2.5-VL-450M-CoreAI
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-VL-450M
+- Modelo convertido en Hugging Face: https://huggingface.co/mlboydaisuke/LFM2.5-VL-450M-CoreAI
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-VL-450M
 - Documentacion de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-vl-450m
 - Blog de Liquid AI sobre LFM2.5-VL-450M: https://www.liquid.ai/blog/lfm2-5-vl-450m
 - Repositorio coreai-model-zoo (codigo de conversion y parches): https://github.com/john-rocky/coreai-model-zoo

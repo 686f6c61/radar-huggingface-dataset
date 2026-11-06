@@ -101,5 +101,5 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TrickyRex/mini-neuralhorner-v02
+- Hugging Face: https://huggingface.co/TrickyRex/mini-neuralhorner-v02
 - Repositorio de código e investigación: https://github.com/Robby955/neural-horner

@@ -71,9 +71,9 @@ El ranking es descriptivo sobre medias; Standard/Block usan seis semillas y Full
 
 | Modelo | Parámetros | Contexto | Enfoque residual | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GPhyT-S Uniform Block (este) | no disponible (12 capas, width 192, MLP 768) | 4 fotogramas | Block Attention Residuals, enrutamiento uniforme | MIT | HuggingFace, 3 semillas |
-| GPhyT sin Attention Residuals | misma base | 4 fotogramas | Residual aditivo original | MIT | HuggingFace, 6 semillas |
-| GPhyT + Full Block Attention Residuals | misma base | 4 fotogramas | Block Attention Residuals, enrutamiento completo | MIT | HuggingFace, 3 semillas exploratorias |
+| GPhyT-S Uniform Block (este) | no disponible (12 capas, width 192, MLP 768) | 4 fotogramas | Block Attention Residuals, enrutamiento uniforme | MIT | Hugging Face, 3 semillas |
+| GPhyT sin Attention Residuals | misma base | 4 fotogramas | Residual aditivo original | MIT | Hugging Face, 6 semillas |
+| GPhyT + Full Block Attention Residuals | misma base | 4 fotogramas | Block Attention Residuals, enrutamiento completo | MIT | Hugging Face, 3 semillas exploratorias |
 | GPhyT original (paper) | no disponible | no disponible | Residual aditivo | MIT (código oficial) | GitHub FloWsnr/General-Physics-Transformer |
 
 La comparación de rendimiento entre estas variantes se limita al NMSE a 12 pasos en flujo radiativo recogido en la tabla de benchmarks. No se dispone de comparación con otros surrogates externos a este estudio.
@@ -94,7 +94,7 @@ La comparación de rendimiento entre estas variantes se limita al NMSE a 12 paso
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BurnyCoder/gphyt-attnres-uniform-block
+- Hugging Face: https://huggingface.co/BurnyCoder/gphyt-attnres-uniform-block
 - Baseline GPhyT sin Attention Residuals: https://huggingface.co/BurnyCoder/gphyt-attnres-standard
 - Repositorio del estudio: https://github.com/BurnyCoder/general-physics-attention-residuals-transformer
 - Informe de interpretación medido: https://github.com/BurnyCoder/general-physics-attention-residuals-transformer/blob/main/reports/interpretation.md

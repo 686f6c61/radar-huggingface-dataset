@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TentacruelES es un repositorio publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su repositorio ocupa 0,1 GB. La model card no contiene informacion tecnica: el unico contenido es la cabecera YAML con la licencia (`license: cc-by-4.0`), sin descripcion, sin arquitectura declarada, sin tokenizador documentado y sin ejemplos de uso.
+TentacruelES es un repositorio publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su repositorio ocupa 0,1 GB. La model card no contiene informacion tecnica: el unico contenido es la cabecera YAML con la licencia (`license: cc-by-4.0`), sin descripcion, sin arquitectura declarada, sin tokenizador documentado y sin ejemplos de uso.
 
 No es posible confirmar a partir de la informacion disponible ni la arquitectura, ni el numero de parametros, ni la longitud de contexto, ni los idiomas soportados. El tamano del repositorio (0,1 GB) es compatible con un modelo muy pequeno en cuantizacion agresiva, con un adaptador LoRA/PEFT, o simplemente con un conjunto de ficheros de configuracion, pero ninguna de estas hipotesis puede verificarse con los datos proporcionados.
 
@@ -20,7 +20,7 @@ Por todo ello, esta ficha se limita a documentar los metadatos verificables y a 
 | Idiomas soportados | no disponible |
 | Licencia | CC-BY-4.0 |
 | Formato de pesos | no disponible |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamano del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-18 |
@@ -72,7 +72,7 @@ No es posible establecer una comparativa: la informacion disponible no permite d
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Ryanham1lton/TentacruelES | no disponible | no disponible | CC-BY-4.0 | no disponible | publico en HuggingFace, 0 descargas |
+| Ryanham1lton/TentacruelES | no disponible | no disponible | CC-BY-4.0 | no disponible | publico en Hugging Face, 0 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,6 +89,6 @@ No es posible establecer una comparativa: la informacion disponible no permite d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/TentacruelES
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/TentacruelES
 - Texto de la licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

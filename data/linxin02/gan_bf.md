@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`linxin02/gan_bf` es un checkpoint de generación de imágenes a partir de texto publicado por el usuario linxin02 en HuggingFace. Se distribuye exclusivamente como pesos de PyTorch bajo el pipeline `text-to-image`. Las etiquetas del repositorio apuntan a un modelo de difusión entrenado con un componente adversario (etiqueta `adversarial-training`, coherente con el sufijo `gan` del identificador), con uso declarado de características DINOv2 y de un componente denominado DeCo. La ficha no incluye model card, paper, informe técnico ni ningún dato cuantitativo sobre arquitectura, tamaño o datos de entrenamiento.
+`linxin02/gan_bf` es un checkpoint de generación de imágenes a partir de texto publicado por el usuario linxin02 en Hugging Face. Se distribuye exclusivamente como pesos de PyTorch bajo el pipeline `text-to-image`. Las etiquetas del repositorio apuntan a un modelo de difusión entrenado con un componente adversario (etiqueta `adversarial-training`, coherente con el sufijo `gan` del identificador), con uso declarado de características DINOv2 y de un componente denominado DeCo. La ficha no incluye model card, paper, informe técnico ni ningún dato cuantitativo sobre arquitectura, tamaño o datos de entrenamiento.
 
 El interés del repositorio es, en el momento de redactar esta ficha, prácticamente nulo desde el punto de vista de producción: acumula 0 descargas y 0 "likes", no declara licencia concreta (la etiqueta indica `license:other`, mientras que el campo de licencia aparece como no disponible) y no ofrece información sobre idiomas soportados, resolución de salida, número de parámetros ni pasos de inferencia. Se trata, por tanto, de un artefacto sin validar.
 
-Esta ficha se ha elaborado a partir de los metadatos disponibles en HuggingFace. La búsqueda web realizada no devolvió ninguna fuente relevante sobre el modelo (los resultados obtenidos eran páginas genéricas de servicios de traducción), por lo que la mayor parte de los apartados técnicos se marcan explícitamente como "no disponible" en lugar de rellenarse con estimaciones.
+Esta ficha se ha elaborado a partir de los metadatos disponibles en Hugging Face. La búsqueda web realizada no devolvió ninguna fuente relevante sobre el modelo (los resultados obtenidos eran páginas genéricas de servicios de traducción), por lo que la mayor parte de los apartados técnicos se marcan explícitamente como "no disponible" en lugar de rellenarse con estimaciones.
 
 ## Especificaciones técnicas
 
@@ -74,7 +74,7 @@ La comparación se establece a nivel de categoría (difusión texto a imagen de 
 
 | Modelo | Parámetros | Licencia | Disponibilidad | Datos de la ficha |
 |---|---|---|---|---|
-| linxin02/gan_bf | no disponible | `license:other` sin detallar | HuggingFace, 0 descargas | Sin model card ni benchmarks |
+| linxin02/gan_bf | no disponible | `license:other` sin detallar | Hugging Face, 0 descargas | Sin model card ni benchmarks |
 | Stable Diffusion 1.5 | ~0,9B (U-Net) | CreativeML Open RAIL-M | Amplia, ecosistema maduro | Benchmarks públicos abundantes |
 | SDXL | ~2,6B (U-Net), ~3,5B con codificadores de texto | CreativeML Open RAIL++-M | Amplia | Benchmarks públicos |
 | Stable Diffusion 3 Medium | ~2B | Stability AI Community License | Amplia | Benchmarks públicos |
@@ -94,7 +94,7 @@ No se dispone de información suficiente para comparar rendimiento, contexto de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/linxin02/gan_bf
+- Hugging Face: https://huggingface.co/linxin02/gan_bf
 - Paper: no disponible
 - Blog o documentación técnica: no disponible
 - Repositorio de código: no disponible

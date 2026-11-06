@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Versipellis-31B-W8A16-FP8 es una version cuantizada del modelo Nimbz/Versipellis-31B, publicada por el usuario hoborific en HuggingFace. El modelo original es un transformer multimodal (image-text-to-text) de 31.273 millones de parametros, basado en la arquitectura Gemma 4, que acepta tanto imagenes como texto como entrada. Esta version cuantizada reduce el peso de las capas lineales a FP8 (float8_e4m3fn) con escalas simetricas por canal de salida, manteniendo las activaciones en bf16/fp16.
+Versipellis-31B-W8A16-FP8 es una version cuantizada del modelo Nimbz/Versipellis-31B, publicada por el usuario hoborific en Hugging Face. El modelo original es un transformer multimodal (image-text-to-text) de 31.273 millones de parametros, basado en la arquitectura Gemma 4, que acepta tanto imagenes como texto como entrada. Esta version cuantizada reduce el peso de las capas lineales a FP8 (float8_e4m3fn) con escalas simetricas por canal de salida, manteniendo las activaciones en bf16/fp16.
 
 La cuantizacion se realizo offline con la libreria compressed-tensors de Neural Magic, en formato W8A16 FP8, y esta orientada principalmente a su despliegue en plataformas Intel XPU mediante vLLM, aunque tambien es compatible con GPUs NVIDIA (SM75+). El objetivo principal de esta version es reducir el uso de memoria y acelerar la inferencia en hardware compatible, sin necesidad de reentrenar el modelo.
 

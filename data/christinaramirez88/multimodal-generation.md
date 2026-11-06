@@ -64,6 +64,6 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/christinaramirez88/multimodal-generation
+- Repositorio en Hugging Face: https://huggingface.co/christinaramirez88/multimodal-generation
 - Referencia general sobre generación multimodal (arXiv): https://arxiv.org/abs/2409.14993
 - Introducción a la IA generativa multimodal (Springer): https://link.springer.com/chapter/10.1007/978-981-96-2355-6_1

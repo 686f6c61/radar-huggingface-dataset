@@ -97,7 +97,7 @@ La comparación relevante es interna a la familia: mismos parámetros y misma ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-125-BitAndZero_PathCounting-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-125-BitAndZero_PathCounting-20261025
 - Run de entrenamiento en W&B: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/ee260251
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Repositorio RLVE (primitivas de datos para RL): https://github.com/davidheineman/rlve

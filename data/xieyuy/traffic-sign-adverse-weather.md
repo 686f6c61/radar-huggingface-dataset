@@ -79,10 +79,10 @@ No se dispone de cifras publicadas de otros modelos comparables dentro de la inf
 
 | Modelo | Parametros | Resolucion | Macro-F1 (validacion) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ensamblado (este modelo) | 231 M | 384 y 256 | 0,945 | MIT | HuggingFace + GitHub |
-| ConvNeXt V2-Base | 89 M | 384x384 | 0,938 | MIT | HuggingFace + GitHub |
-| EfficientNetV2-M | 54 M | 384x384 | 0,917 | MIT | HuggingFace + GitHub |
-| Swin Transformer V2-Base | 88 M | 256x256 | 0,916 | MIT | HuggingFace + GitHub |
+| Ensamblado (este modelo) | 231 M | 384 y 256 | 0,945 | MIT | Hugging Face + GitHub |
+| ConvNeXt V2-Base | 89 M | 384x384 | 0,938 | MIT | Hugging Face + GitHub |
+| EfficientNetV2-M | 54 M | 384x384 | 0,917 | MIT | Hugging Face + GitHub |
+| Swin Transformer V2-Base | 88 M | 256x256 | 0,916 | MIT | Hugging Face + GitHub |
 
 Alternativas externas de la misma categoria (clasificadores de senales de trafico entrenados sobre GTSRB o sobre datasets de clima adverso publicados por terceros): no disponible.
 
@@ -101,8 +101,8 @@ Alternativas externas de la misma categoria (clasificadores de senales de trafic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xieyuy/traffic-sign-adverse-weather
+- Modelo en Hugging Face: https://huggingface.co/xieyuy/traffic-sign-adverse-weather
 - Repositorio GitHub del autor: https://github.com/Lyumnire/traffic-sign-adverse-weather
-- Fichero de clases: `classes.txt` dentro del repositorio de HuggingFace
+- Fichero de clases: `classes.txt` dentro del repositorio de Hugging Face
 - Checkpoints: `convnextv2_base_best.pth`, `swin_v2_b_best.pth`, `efficientnet_v2_m_best.pth` (descargables via `huggingface_hub.hf_hub_download`)
 - Papers, blogs, demos o articulos adicionales: no disponible (la busqueda web no devolvio resultados tecnicos relevantes)

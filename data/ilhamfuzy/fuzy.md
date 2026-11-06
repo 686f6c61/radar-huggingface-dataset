@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ilhamfuzy/fuzy` es un artefacto alojado en HuggingFace por el usuario ilhamfuzy bajo licencia MIT. La model card asociada es prácticamente vacía: no incluye descripción, arquitectura, datos de entrenamiento ni casos de uso, y el repositorio no declara un pipeline de inferencia. En el momento de la consulta, el modelo acumula 0 descargas y 0 likes, y la fecha de creación y actualización coincide (2026-11-03), lo que sugiere un artefacto recién publicado o un repositorio de prueba.
+El modelo `ilhamfuzy/fuzy` es un artefacto alojado en Hugging Face por el usuario ilhamfuzy bajo licencia MIT. La model card asociada es prácticamente vacía: no incluye descripción, arquitectura, datos de entrenamiento ni casos de uso, y el repositorio no declara un pipeline de inferencia. En el momento de la consulta, el modelo acumula 0 descargas y 0 likes, y la fecha de creación y actualización coincide (2026-11-03), lo que sugiere un artefacto recién publicado o un repositorio de prueba.
 
 No se dispone de información verificable sobre arquitectura, número de parámetros, longitud de contexto, tokenizador ni conjunto de datos de entrenamiento. La única etiqueta técnica declarada es la licencia MIT y la región `us`; no hay metadatos de idioma. Por tanto, esta ficha documenta la existencia del repositorio y sus metadatos públicos, pero no puede evaluar sus capacidades reales.
 
@@ -25,7 +25,7 @@ Dado que no se han publicado especificaciones ni resultados, no es posible recom
 
 No se ha publicado información sobre la arquitectura del modelo. La model card no describe si se trata de un transformer, un modelo de mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura híbrida. Tampoco se indica el número de parámetros, la composición del corpus de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas de alineación como RLHF, DPO o instrucción supervisada.
 
-El repositorio no incluye referencias a papers, blogs técnicos ni repositorios de código asociados. La ausencia de un campo `pipeline` en los metadatos de HuggingFace impide incluso determinar la modalidad prevista (texto, visión, audio u otras). Cualquier afirmación sobre el entrenamiento sería especulativa y, por tanto, se omite.
+El repositorio no incluye referencias a papers, blogs técnicos ni repositorios de código asociados. La ausencia de un campo `pipeline` en los metadatos de Hugging Face impide incluso determinar la modalidad prevista (texto, visión, audio u otras). Cualquier afirmación sobre el entrenamiento sería especulativa y, por tanto, se omite.
 
 ## Capacidades
 
@@ -69,4 +69,4 @@ No disponible. No se dispone de información sobre parámetros, contexto, rendim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ilhamfuzy/fuzy
+- Hugging Face: https://huggingface.co/ilhamfuzy/fuzy

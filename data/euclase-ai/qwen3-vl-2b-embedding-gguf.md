@@ -91,7 +91,7 @@ No se dispone de información suficiente para comparar rendimiento, contexto o b
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/euclase-ai/qwen3-vl-2b-embedding-gguf
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/euclase-ai/qwen3-vl-2b-embedding-gguf
 - Modelo original: https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B/tree/9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda
 - llama.cpp (herramienta de conversión y runtime): no se proporciona enlace en la información disponible
 - Aplicación Euclase: no se proporciona enlace en la información disponible

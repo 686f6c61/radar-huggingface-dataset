@@ -4,7 +4,7 @@
 
 El modelo `meltingfeet/backup2026-11-03-LffyFx-Qwen3.6-27B-Uncensored-Genesis-GGUF` es una cuantización en formato GGUF de la familia Qwen 3.6, concretamente derivada del checkpoint `HauhauCS/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive`. Se trata de un modelo multimodal de tipo image-text-to-text, con arquitectura MoE (Mixture of Experts) según las etiquetas del repositorio, y con un total de 26.895.998.464 parámetros reales (aproximadamente 26,9 mil millones). El autor del artefacto es el usuario `meltingfeet`, que publica esta conversión bajo licencia Apache 2.0.
 
-El modelo está orientado a conversación y a tareas multimodales, con soporte declarado para inglés, chino y uso multilingüe. La etiqueta "uncensored" indica que el checkpoint base ha sido sometido a un proceso de eliminación o atenuación de los mecanismos de rechazo y alineamiento, lo que tiene implicaciones directas sobre su comportamiento en producción. El repositorio está marcado como de acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+El modelo está orientado a conversación y a tareas multimodales, con soporte declarado para inglés, chino y uso multilingüe. La etiqueta "uncensored" indica que el checkpoint base ha sido sometido a un proceso de eliminación o atenuación de los mecanismos de rechazo y alineamiento, lo que tiene implicaciones directas sobre su comportamiento en producción. El repositorio está marcado como de acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 La relevancia de esta ficha es limitada pero concreta: se trata de una conversión GGUF de un modelo MoE multimodal de ~27B, publicada en noviembre de 2026 y sin descargas ni likes en el momento de la consulta. No se dispone de documentación técnica del autor más allá de las etiquetas del repositorio, por lo que numerosos datos de especificación deben considerarse no disponibles.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparado para establecer diferencias cuan
 - Modelo "uncensored": los mecanismos de rechazo han sido atenuados o eliminados, lo que incrementa el riesgo de generar contenido dañino, ilegal o inapropiado sin filtro. No es apto para aplicaciones de cara al público sin capas de moderación adicionales.
 - Riesgo elevado de alucinación: no se han publicado evaluaciones de fidelidad factual ni de calibración.
 - Ausencia total de documentación técnica: no hay model card sustantiva, ni datos de entrenamiento, ni benchmarks, lo que impide evaluar su calidad de forma rigurosa.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en pipelines automatizados.
 - Licencia Apache 2.0 declarada, pero la cadena de derivación (modelo base "uncensored") puede plantear dudas sobre la procedencia y los términos aplicables al checkpoint original; conviene verificar la licencia del modelo base antes de uso comercial.
 - Idiomas: solo inglés, chino y "multilingual" genérico; el rendimiento en castellano no está documentado.
 - Contexto: longitud no especificada, lo que impide planificar aplicaciones que dependan de ventanas largas.
@@ -89,6 +89,6 @@ No se dispone de datos de rendimiento comparado para establecer diferencias cuan
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/meltingfeet/backup2026-11-03-LffyFx-Qwen3.6-27B-Uncensored-Genesis-GGUF
+- Repositorio Hugging Face: https://huggingface.co/meltingfeet/backup2026-11-03-LffyFx-Qwen3.6-27B-Uncensored-Genesis-GGUF
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive
 - Paper, blog o repositorio adicional: no disponible en la información proporcionada.

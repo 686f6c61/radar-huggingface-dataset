@@ -11,7 +11,7 @@ Por su tamaño (~125 millones de parámetros) es un artefacto ligero, ejecutable
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de la familia GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only de la familia GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parámetros totales | 124.770.816 (dato real de los pesos safetensors) |
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -28,10 +28,10 @@ La arquitectura corresponde a un transformer decoder-only de tipo GPT-2, con 124
 No se especifica en la información disponible el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF o DPO (el autor indica únicamente SFT), ni innovaciones técnicas como decodificación especulativa o atención lineal. El nombre del repositorio (`after-wc-uniform-newlex-jpn-ckpt500_seed10_seed10`) sugiere una comparación entre condiciones experimentales y una evaluación de variabilidad entre semillas, pero no hay documentación que lo confirme.
 
 ## Capacidades
-- Generación de texto autoregresiva mediante `transformers` y la clase `pipeline` de HuggingFace.
+- Generación de texto autoregresiva mediante `transformers` y la clase `pipeline` de Hugging Face.
 - Formato conversacional básico: la model card muestra el uso con una lista de mensajes (`{"role": "user", "content": ...}`), lo que indica un ajuste orientado a instrucciones simples.
 - Respuestas a preguntas abiertas en un único turno, con un límite de tokens nuevos configurable (el ejemplo usa `max_new_tokens=128`).
-- Inferencia servida: las etiquetas `text-generation-inference` y `endpoints_compatible` indican compatibilidad declarada con TGI y con endpoints de HuggingFace.
+- Inferencia servida: las etiquetas `text-generation-inference` y `endpoints_compatible` indican compatibilidad declarada con TGI y con endpoints de Hugging Face.
 - Soporte de tool calling o function calling: no documentado.
 - Capacidades de agente y razonamiento multi-paso: no documentadas.
 - Capacidades multilingües: no declaradas; el identificador apunta a japonés, sin confirmación oficial.
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM total recomendada: 2 GB o más, incluyendo caché KV y activaciones, dado el tamaño reducido del modelo.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (GTX 1650, RTX 3050, RTX 4060, RTX 4090); también A100 o H100 para despliegues por lotes, aunque están sobredimensionadas para este tamaño.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier modelo con 4 GB o más, y es viable ejecutarlo en CPU para pruebas.
-- Opciones de despliegue: `transformers` con `pipeline`, Text Generation Inference (etiqueta declarada), endpoints compatibles de HuggingFace y vLLM. Para llama.cpp u Ollama haría falta una conversión a GGUF que no se publica en el repositorio.
+- Opciones de despliegue: `transformers` con `pipeline`, Text Generation Inference (etiqueta declarada), endpoints compatibles de Hugging Face y vLLM. Para llama.cpp u Ollama haría falta una conversión a GGUF que no se publica en el repositorio.
 - Latencia y throughput: no disponibles; no se han publicado mediciones. El repositorio ocupa 6,0 GB, muy por encima de los pesos, por lo que conviene descargar solo los archivos safetensors necesarios para inferencia.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ La comparación de rendimiento no es posible: este modelo no publica resultados 
 - Modelo base dependiente: su comportamiento hereda las limitaciones del modelo `fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed10`, también sin documentación pública detallada.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/jpn-100mb-after-wc-uniform-newlex-jpn-ckpt500_seed10_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/jpn-100mb-after-wc-uniform-newlex-jpn-ckpt500_seed10_seed10
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed10
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Registro del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/xs6c5279

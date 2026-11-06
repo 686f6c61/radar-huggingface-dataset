@@ -27,7 +27,7 @@ El modelo es un decoder transformer denso de estilo Llama con 24 capas, dimensi�
 
 El preentrenamiento se realizó sobre conversaciones reescritas a partir de documentos, con la pérdida calculada exclusivamente sobre los turnos del asistente. Se entrenaron los primeros 11.106 pasos del flujo alineado por pasos de 1PP (23,29B posiciones de token), que corresponden a los primeros pasos del pase principal de 31.777 pasos del estudio. El batch global fue de 512 secuencias × 4.096 tokens, con enmascaramiento de atención entre documentos. El optimizador es Muon (shape scaling, LR matricial 0,005) combinado con Adam para el resto de parámetros (LR 3e-3 para embeddings y capa de salida, 3e-3 para normas), con 699 pasos de warmup, LR constante y decaimiento lineal en los últimos 1.110 pasos hasta 1/100, weight decay 0,1, desviación estándar de inicialización 0,0119 y precisión bf16.
 
-La pérdida de validación del checkpoint final sobre 2.433 documentos retenidos es de 1,677 por token en texto de asistente, 5,585 en texto de usuario, 3,500 en texto de documento y 1,733 en los tokens de entrenamiento de esta condición (`reweighted_seg34`, que pondera las conversaciones adversariales según su cuota de entrenamiento del 11,18%). Los pesos de HuggingFace se verificaron contra el checkpoint de Megatron recalculando pérdidas de validación, con diferencias absolutas de 0,0015 y 0,0018 en los conjuntos val50m y raw_val50m respectivamente.
+La pérdida de validación del checkpoint final sobre 2.433 documentos retenidos es de 1,677 por token en texto de asistente, 5,585 en texto de usuario, 3,500 en texto de documento y 1,733 en los tokens de entrenamiento de esta condición (`reweighted_seg34`, que pondera las conversaciones adversariales según su cuota de entrenamiento del 11,18%). Los pesos de Hugging Face se verificaron contra el checkpoint de Megatron recalculando pérdidas de validación, con diferencias absolutas de 0,0015 y 0,0018 en los conjuntos val50m y raw_val50m respectivamente.
 
 ## Capacidades
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-asst-seed42-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-asst-seed42-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Registros de entrenamiento (wandb, proyecto 1pp-training): https://wandb.ai/raghav_singhal/1pp-training
 - Registros de SFT (wandb, proyecto 1pp-sft): https://wandb.ai/raghav_singhal/1pp-sft

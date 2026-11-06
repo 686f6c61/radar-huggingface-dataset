@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario afasedfasd bajo el identificador afasedfasd/MyAwesomeModel-TestRepo. Pese al nombre y a que la model card describe un supuesto asistente conversacional con capacidades de razonamiento avanzado, el repositorio presenta senales claras de ser una prueba tecnica o una plantilla de relleno: el tamano del repositorio es de 0,0 GB, no acumula descargas ni likes y los metadatos de HuggingFace lo etiquetan como un modelo BERT orientado a feature-extraction, lo que entra en contradiccion con el texto de la model card (que habla de generacion, razonamiento y function calling). Esta ficha recoge unicamente lo que puede extraerse de la informacion disponible, senalando de forma explicita los datos que faltan o que resultan poco fiables.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario afasedfasd bajo el identificador afasedfasd/MyAwesomeModel-TestRepo. Pese al nombre y a que la model card describe un supuesto asistente conversacional con capacidades de razonamiento avanzado, el repositorio presenta senales claras de ser una prueba tecnica o una plantilla de relleno: el tamano del repositorio es de 0,0 GB, no acumula descargas ni likes y los metadatos de Hugging Face lo etiquetan como un modelo BERT orientado a feature-extraction, lo que entra en contradiccion con el texto de la model card (que habla de generacion, razonamiento y function calling). Esta ficha recoge unicamente lo que puede extraerse de la informacion disponible, senalando de forma explicita los datos que faltan o que resultan poco fiables.
 
 El contenido de la model card parece generico y no verificable: menciona comparativas contra "Model1", "Model2" y "Model1-v2" sin identificar los modelos reales, y alude a una mejora en AIME 2025 (del 70% al 87,5% de precision) sin aportar detalles sobre el modelo evaluado. Ademas, las referencias a un chat propio, a un repositorio de codigo y a una variante "MyAwesomeModel-Small" no van acompanadas de enlaces funcionales. Por todo ello, la informacion sobre arquitectura, parametros, contexto y datos de entrenamiento debe considerarse no disponible.
 
@@ -12,7 +12,7 @@ En consecuencia, esta ficha no debe emplearse para tomar decisiones de adopcion 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (los tags de HuggingFace mencionan "bert" y el pipeline "feature-extraction", pero la model card describe un modelo generativo de razonamiento; la contradiccion no se resuelve) |
+| Arquitectura | no disponible (los tags de Hugging Face mencionan "bert" y el pipeline "feature-extraction", pero la model card describe un modelo generativo de razonamiento; la contradiccion no se resuelve) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -95,7 +95,7 @@ No disponible. La model card no identifica los modelos de referencia ("Model1", 
 ## Limitaciones y advertencias
 
 - El repositorio ocupa 0,0 GB y no muestra ficheros de pesos, por lo que no es descargable ni ejecutable.
-- Contradiccion entre los tags de HuggingFace (bert, feature-extraction) y el contenido de la model card (modelo generativo de razonamiento y function calling).
+- Contradiccion entre los tags de Hugging Face (bert, feature-extraction) y el contenido de la model card (modelo generativo de razonamiento y function calling).
 - Los benchmarks de la model card usan nombres genericos ("Model1", "Model2") y no son verificables.
 - No se declaran idiomas soportados en los metadatos.
 - No hay informacion sobre sesgos, tasa de alucinacion ni evaluaciones de seguridad independientes; la unica mencion es la afirmacion de "menor tasa de alucinacion", sin respaldo.
@@ -106,5 +106,5 @@ No disponible. La model card no identifica los modelos de referencia ("Model1", 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/afasedfasd/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/afasedfasd/MyAwesomeModel-TestRepo
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio de codigo o demo). Los resultados devueltos corresponden a documentacion de soporte de Microsoft sobre Windows Update y no estan relacionados.

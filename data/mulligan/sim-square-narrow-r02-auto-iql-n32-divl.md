@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sim-square-narrow-r02-auto-iql-n32-divl es un agente de control robótico basado en estado, no un modelo de lenguaje. Lo publica el proyecto Mulligan (organización `mulligan` en HuggingFace) como parte de su campaña de auto-mejora sobre la tarea de simulación `sim-square-narrow`, una variante estrecha de una tarea de ensamblaje tipo nut assembly square en la que un manipulador debe insertar/ensamblar una pieza en una holgura reducida. El artefacto concreto es un par formado por un actor de difusión congelado, heredado del modelo padre `sim-square-narrow-r02-auto-iql-n32-idql`, y un crítico DIVL de tipo distributional entrenado en esta ronda.
+sim-square-narrow-r02-auto-iql-n32-divl es un agente de control robótico basado en estado, no un modelo de lenguaje. Lo publica el proyecto Mulligan (organización `mulligan` en Hugging Face) como parte de su campaña de auto-mejora sobre la tarea de simulación `sim-square-narrow`, una variante estrecha de una tarea de ensamblaje tipo nut assembly square en la que un manipulador debe insertar/ensamblar una pieza en una holgura reducida. El artefacto concreto es un par formado por un actor de difusión congelado, heredado del modelo padre `sim-square-narrow-r02-auto-iql-n32-idql`, y un crítico DIVL de tipo distributional entrenado en esta ronda.
 
 El modelo corresponde a la ronda R2, brazo `auto-iql-n32`, celda de campaña `sq_d0_r2_auto_iql_n32`. Se distribuyen cinco checkpoints independientes (semillas 1 a 5), todos congelados en el paso de entrenamiento 150001, con un tamaño total de repositorio de 1,4 GB. Los ficheros son `policy.pt` y `stats.json` por semilla, copias byte a byte de artefactos de Weights & Biases verificadas por MD5 y con SHA-256 registrado en `release.json`.
 
@@ -109,9 +109,9 @@ La información disponible no incluye métricas de modelos comparables de tercer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r02-auto-iql-n32-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r02-auto-iql-n32-divl
 - Modelo padre (actor congelado): https://huggingface.co/mulligan/sim-square-narrow-r02-auto-iql-n32-idql
-- Organización Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organización Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
 - Dataset de demostraciones: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-baseline

@@ -4,7 +4,7 @@
 
 El modelo `open-sci/sft__ot30k_open-sci-ref-v0.02-1.7b-nemotron-hq-300B-4096-longsft_16k-SFT-Tulu3` es un checkpoint de ajuste supervisado (SFT) publicado por la organizacion open-sci, con 1.714.377.728 parametros (aproximadamente 1,7 mil millones) y un tamano de repositorio de 3,4 GB en formato safetensors. Se trata de un modelo derivado de la familia Nemotron (segun el identificador del nombre) afinado mediante la libreria Llama Factory sobre un subconjunto de 30.000 muestras del dataset Open Thoughts, con una longitud de secuencia de 16k tokens.
 
-El modelo esta etiquetado como `feature-extraction` en el pipeline de HuggingFace y como `generated_from_trainer`, lo que indica que su model card fue generada automaticamente por el Trainer de Transformers y no ha sido revisada ni completada por el autor. La informacion disponible es muy limitada: la model card no describe usos previstos, limitaciones, datos de evaluacion ni resultados de benchmarks, y la busqueda web no aporta documentacion adicional sobre este checkpoint concreto.
+El modelo esta etiquetado como `feature-extraction` en el pipeline de Hugging Face y como `generated_from_trainer`, lo que indica que su model card fue generada automaticamente por el Trainer de Transformers y no ha sido revisada ni completada por el autor. La informacion disponible es muy limitada: la model card no describe usos previstos, limitaciones, datos de evaluacion ni resultados de benchmarks, y la busqueda web no aporta documentacion adicional sobre este checkpoint concreto.
 
 Su relevancia actual es principalmente como artefacto de investigacion dentro de un esfuerzo de alineacion y ajuste supervisado sobre datos de razonamiento (Open Thoughts). No obstante, la ausencia de documentacion tecnica, de resultados de evaluacion y de una licencia clara (figura como "other") limita seriamente su uso en produccion sin una evaluacion independiente previa.
 
@@ -68,10 +68,10 @@ La model card incluye una entrada de `model-index` con el nombre `sft__f679a5c59
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (open-sci SFT 1.7B) | 1,7 B | 16k (deducido) | other | HuggingFace, 23 descargas | Checkpoint SFT sin evaluacion publicada |
-| Qwen2.5-1.5B | 1,5 B | 32k | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base con benchmarks publicados |
-| Llama 3.2-1B | 1,2 B | 128k | Llama 3.2 Community License | HuggingFace, ampliamente usado | Modelo base con benchmarks publicados |
-| SmolLM2-1.7B | 1,7 B | 8k | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base con benchmarks publicados |
+| Este modelo (open-sci SFT 1.7B) | 1,7 B | 16k (deducido) | other | Hugging Face, 23 descargas | Checkpoint SFT sin evaluacion publicada |
+| Qwen2.5-1.5B | 1,5 B | 32k | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base con benchmarks publicados |
+| Llama 3.2-1B | 1,2 B | 128k | Llama 3.2 Community License | Hugging Face, ampliamente usado | Modelo base con benchmarks publicados |
+| SmolLM2-1.7B | 1,7 B | 8k | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base con benchmarks publicados |
 
 La comparacion es estructural: los modelos alternativos cuentan con model cards completas, evaluaciones publicadas y licencias claras, mientras que este checkpoint carece de esos elementos. No se dispone de datos de rendimiento comparables para este modelo.
 
@@ -90,7 +90,7 @@ La comparacion es estructural: los modelos alternativos cuentan con model cards 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/sft__ot30k_open-sci-ref-v0.02-1.7b-nemotron-hq-300B-4096-longsft_16k-SFT-Tulu3
+- Hugging Face: https://huggingface.co/open-sci/sft__ot30k_open-sci-ref-v0.02-1.7b-nemotron-hq-300B-4096-longsft_16k-SFT-Tulu3
 - Dataset Open Thoughts (referenciado en la model card): https://huggingface.co/datasets/open-thoughts/OpenThoughts3-1.2M
 - Llama Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web.

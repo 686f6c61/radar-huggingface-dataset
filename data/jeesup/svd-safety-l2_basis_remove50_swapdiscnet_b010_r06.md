@@ -13,7 +13,7 @@ La relevancia actual es metodologica: aporta una celda reproducible de una rejil
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder-only tipo Llama, comprimido con Basis Sharing (bases SVD compartidas entre grupos de 2 capas adyacentes) |
-| Parametros totales | 6.738.415.616 (segun metadatos safetensors de HuggingFace); la ficha del autor declara una fraccion de parametros resultante de 0,4998 sobre las proyecciones densas |
+| Parametros totales | 6.738.415.616 (segun metadatos safetensors de Hugging Face); la ficha del autor declara una fraccion de parametros resultante de 0,4998 sobre las proyecciones densas |
 | Parametros activos | no aplica (modelo denso, no es MoE) |
 | Longitud de contexto | 4096 tokens (heredada del modelo base; no se explicita en la ficha del autor) |
 | Tipos de cuantizacion | no disponible (no se publican pesos cuantizados) |
@@ -100,7 +100,7 @@ Las alternativas generalistas se incluyen como referencia de categoria y tamano,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapdiscnet_b010_r06
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapdiscnet_b010_r06
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Referencia metodologica citada en la model card: Basis Sharing, ICLR 2025 (no se ha encontrado URL en la busqueda web realizada)
 - Dataset de recuperacion citado: `alpaca-cleaned` (no se proporciona enlace en la model card)

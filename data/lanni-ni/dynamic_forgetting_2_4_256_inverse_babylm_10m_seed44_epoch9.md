@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo de HuggingFace, identificado como `dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch9`, fue publicado por el usuario Lanni-ni. Se trata de un modelo de generación de texto con 27.449.096 parámetros, almacenado en formato safetensors. Según la información disponible en el repositorio, no se proporciona una descripción funcional detallada: la model card es una plantilla automática sin metadatos técnicos.
+Este modelo de Hugging Face, identificado como `dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch9`, fue publicado por el usuario Lanni-ni. Se trata de un modelo de generación de texto con 27.449.096 parámetros, almacenado en formato safetensors. Según la información disponible en el repositorio, no se proporciona una descripción funcional detallada: la model card es una plantilla automática sin metadatos técnicos.
 
 El nombre del modelo sugiere una relación con técnicas de "olvido dinámico" (dynamic forgetting) y con el entorno de evaluación BabyLM, que trabaja con corpus pequeños. Sin embargo, no se dispone de documentación que confirme la arquitectura exacta, el tamaño del contexto, los idiomas soportados o la licencia. El repositorio fue creado el 9 de septiembre de 2026 y no cuenta con descargas ni valoraciones.
 
@@ -70,5 +70,5 @@ No disponible: no se dispone de información sobre modelos comparables ni datos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch9
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch9
 - Enlaces adicionales: no disponibles. La búsqueda web no devolvió resultados relevantes sobre el modelo.

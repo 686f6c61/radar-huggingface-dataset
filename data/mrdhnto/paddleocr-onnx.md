@@ -6,7 +6,7 @@ MrDhnto/paddleocr-onnx es una réplica (duplicado directo del repositorio monkt/
 
 El problema que resuelve es la extracción de texto a partir de imágenes y documentos escaneados en más de 48 idiomas, con un consumo de recursos muy reducido: los modelos de reconocimiento ocupan entre 7,4 MB y 81 MB, y los de detección entre 2,3 MB y 84 MB. Al estar en formato ONNX, se pueden ejecutar tanto en CPU como en GPU sin depender del framework original PaddlePaddle, integrándose con runtimes como ONNX Runtime o la librería RapidOCR.
 
-Es relevante para desarrolladores que necesitan incorporar OCR en pipelines de document AI (digitalización, facturación, accesibilidad) con licencia Apache 2.0 y sin ataduras de proveedor. El repositorio tiene un tamaño total de 0,3 GB y no registra descargas ni "likes" en el momento de la consulta, y el autor lo publica como copia del original mantenido por monkt. El pipeline declarado en HuggingFace es image-to-text.
+Es relevante para desarrolladores que necesitan incorporar OCR en pipelines de document AI (digitalización, facturación, accesibilidad) con licencia Apache 2.0 y sin ataduras de proveedor. El repositorio tiene un tamaño total de 0,3 GB y no registra descargas ni "likes" en el momento de la consulta, y el autor lo publica como copia del original mantenido por monkt. El pipeline declarado en Hugging Face es image-to-text.
 
 ## Especificaciones tecnicas
 
@@ -107,11 +107,11 @@ No se dispone de cifras de rendimiento comparativas verificadas entre estas alte
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/Mrdhnto/paddleocr-onnx
+- Hugging Face (este repositorio): https://huggingface.co/Mrdhnto/paddleocr-onnx
 - Repositorio original del que se duplica: https://huggingface.co/monkt/paddleocr-onnx
 - Coleccion de origen PP-OCRv5 de PaddlePaddle: https://huggingface.co/collections/PaddlePaddle/pp-ocrv5-684a5356aef5b4b1d7b85e4b
 - Guia de conversion Paddle2ONNX en PaddleOCR: https://github.com/PaddlePaddle/PaddleOCR/blob/main/deploy/paddle2onnx/readme.md
 - ONNX Model Zoo: https://github.com/onnx/models
 - Ficha resumen en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/paddleocr-onnx-monkt
-- Busqueda de modelos PaddleOCR en HuggingFace: https://huggingface.co/models?search=PaddleOCR
+- Busqueda de modelos PaddleOCR en Hugging Face: https://huggingface.co/models?search=PaddleOCR
 - Referencia de despliegue end-to-end mencionada por el autor: https://monkt.com

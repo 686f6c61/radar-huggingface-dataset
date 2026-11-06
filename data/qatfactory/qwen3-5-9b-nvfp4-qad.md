@@ -23,7 +23,7 @@ Es relevante ahora porque NVFP4 es uno de los formatos de cuantización de 4 bit
 | Modelo base | Qwen/Qwen3.5-9B |
 | Tamaño del repositorio | 8,9 GB |
 | Librería de inferencia | vLLM |
-| Acceso | Restringido (gated) en HuggingFace |
+| Acceso | Restringido (gated) en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -76,7 +76,7 @@ La comparación directa con otras cuantizaciones del mismo modelo base no está 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar el modelo.
 - Información muy escasa: no se documentan idiomas, contexto, benchmarks ni detalles del proceso QAT.
 - Riesgo de degradación por cuantización: aunque el QAT mitiga la pérdida, no hay datos publicados que cuantifiquen la diferencia frente al modelo base.
 - Dependencia de hardware: NVFP4 rinde mejor en GPUs Blackwell; en arquitecturas anteriores la ventaja desaparece y puede haber incompatibilidades.
@@ -87,7 +87,7 @@ La comparación directa con otras cuantizaciones del mismo modelo base no está 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qatfactory/Qwen3.5-9B-NVFP4-QAD
+- Hugging Face: https://huggingface.co/qatfactory/Qwen3.5-9B-NVFP4-QAD
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Documentación de compressed-tensors: https://github.com/neuralmagic/compressed-tensors
 - Documentación de vLLM: https://docs.vllm.ai

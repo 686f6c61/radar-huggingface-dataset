@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MoleculeCell/whisper-int8-sm` es un artefacto publicado en HuggingFace por el usuario MoleculeCell que, por su identificador y sus etiquetas (`onnx`, `whisper`, `int8`, `sm`), corresponde a una version cuantizada a 8 bits y exportada a formato ONNX de un modelo de la familia Whisper en su variante "small" de OpenAI. Whisper es un modelo de reconocimiento automatico del habla (ASR) entrenado con un enfoque de seq2seq transformer sobre grandes volumenes de audio debilmente supervisado, y la variante small cuenta con unos 244 millones de parametros en su version original. La cuantizacion INT8 y el formato ONNX apuntan a un uso orientado a inferencia eficiente en CPU o en entornos con recursos limitados, mediante runtimes como ONNX Runtime.
+`MoleculeCell/whisper-int8-sm` es un artefacto publicado en Hugging Face por el usuario MoleculeCell que, por su identificador y sus etiquetas (`onnx`, `whisper`, `int8`, `sm`), corresponde a una version cuantizada a 8 bits y exportada a formato ONNX de un modelo de la familia Whisper en su variante "small" de OpenAI. Whisper es un modelo de reconocimiento automatico del habla (ASR) entrenado con un enfoque de seq2seq transformer sobre grandes volumenes de audio debilmente supervisado, y la variante small cuenta con unos 244 millones de parametros en su version original. La cuantizacion INT8 y el formato ONNX apuntan a un uso orientado a inferencia eficiente en CPU o en entornos con recursos limitados, mediante runtimes como ONNX Runtime.
 
 El repositorio tiene un tamano de 0,2 GB, lo que es coherente con un modelo small cuantizado a 8 bits (el Whisper small original en fp32 ronda los 967 MB). El autor no ha publicado pipeline, idiomas soportados ni una model card descriptiva mas alla de la declaracion de licencia MIT, por lo que la mayor parte de los metadatos tecnicos no estan disponibles y deben inferirse a partir de las convenciones de la familia Whisper. El modelo no registra descargas ni likes en el momento de la consulta.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto de audio | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MoleculeCell/whisper-int8-sm | No disponible (~244 M en la variante small original) | No disponible (30 s en Whisper small) | ONNX INT8 | MIT | HuggingFace |
-| openai/whisper-small | ~244 M | 30 s | PyTorch (safetensors) | MIT | HuggingFace |
-| openai/whisper-small.en | ~244 M | 30 s | PyTorch (safetensors) | MIT | HuggingFace |
-| openai/whisper-base | ~74 M | 30 s | PyTorch (safetensors) | MIT | HuggingFace |
+| MoleculeCell/whisper-int8-sm | No disponible (~244 M en la variante small original) | No disponible (30 s en Whisper small) | ONNX INT8 | MIT | Hugging Face |
+| openai/whisper-small | ~244 M | 30 s | PyTorch (safetensors) | MIT | Hugging Face |
+| openai/whisper-small.en | ~244 M | 30 s | PyTorch (safetensors) | MIT | Hugging Face |
+| openai/whisper-base | ~74 M | 30 s | PyTorch (safetensors) | MIT | Hugging Face |
 
 La comparativa se limita a la familia Whisper porque no se dispone de datos de rendimiento del artefacto cuantizado que permitan contrastarlo con alternativas de otros autores (por ejemplo, versiones ONNX de terceros o modelos ASR como Wav2Vec2). No hay datos de WER ni de velocidad publicados para este repositorio.
 
@@ -82,7 +82,7 @@ La comparativa se limita a la familia Whisper porque no se dispone de datos de r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MoleculeCell/whisper-int8-sm
+- Repositorio Hugging Face: https://huggingface.co/MoleculeCell/whisper-int8-sm
 - Modelo base de referencia (Whisper small): https://huggingface.co/openai/whisper-small
 - Paper de Whisper: https://arxiv.org/abs/2212.04356
 - Repositorio de OpenAI Whisper: https://github.com/openai/whisper

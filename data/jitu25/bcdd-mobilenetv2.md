@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jitu25/bcdd-mobilenetv2` es un repositorio publicado en HuggingFace por el usuario jitu25 bajo licencia MIT. La única información verificable disponible es su identificador, su licencia, la etiqueta de región (`region:us`) y sus fechas de creación y actualización (3 de octubre de 2026). No se ha publicado pipeline, idiomas soportados, model card técnica ni métricas de ningún tipo: el tamaño del repositorio figura como 0.0 GB y el contador de descargas y likes es cero, por lo que se trata de un artefacto sin adopción ni validación por parte de la comunidad.
+El modelo `jitu25/bcdd-mobilenetv2` es un repositorio publicado en Hugging Face por el usuario jitu25 bajo licencia MIT. La única información verificable disponible es su identificador, su licencia, la etiqueta de región (`region:us`) y sus fechas de creación y actualización (3 de octubre de 2026). No se ha publicado pipeline, idiomas soportados, model card técnica ni métricas de ningún tipo: el tamaño del repositorio figura como 0.0 GB y el contador de descargas y likes es cero, por lo que se trata de un artefacto sin adopción ni validación por parte de la comunidad.
 
 A partir del nombre (`bcdd` + `mobilenetv2`) cabe inferir que se trata de un clasificador de imágenes basado en la arquitectura convolucional MobileNetV2, presumiblemente entrenado sobre un conjunto de datos de imágenes médicas relacionadas con el diagnóstico de cáncer de mama (la sigla BCDD podría corresponder a un dataset de ese dominio). Esta interpretación es una hipótesis derivada del identificador y no está confirmada por ninguna documentación del autor, de modo que debe tratarse con cautela.
 
@@ -89,7 +89,7 @@ No se ha publicado información sobre modelos comparables específicos para este
 
 | Modelo | Parametros | Contexto / entrada tipica | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jitu25/bcdd-mobilenetv2 | no disponible | no disponible | MIT | Publicado en HuggingFace, sin descargas |
+| jitu25/bcdd-mobilenetv2 | no disponible | no disponible | MIT | Publicado en Hugging Face, sin descargas |
 | MobileNetV2 (referencia original) | ~3,4 M | 224×224 px | Apache 2.0 (implementacion de referencia) | Ampliamente disponible |
 | MobileNetV3-Large | ~5,4 M | 224×224 px | Apache 2.0 | Ampliamente disponible |
 | EfficientNet-B0 | ~5,3 M | 224×224 px | Apache 2.0 | Ampliamente disponible |
@@ -112,5 +112,5 @@ No se dispone de datos de rendimiento del modelo evaluado que permitan una compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jitu25/bcdd-mobilenetv2
+- Hugging Face: https://huggingface.co/jitu25/bcdd-mobilenetv2
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la información disponible.

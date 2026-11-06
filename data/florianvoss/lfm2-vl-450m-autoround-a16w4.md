@@ -94,7 +94,7 @@ La comparacion relevante no es de calidad, sino de empaquetado: frente al checkp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/florianvoss/LFM2-VL-450M-Autoround-a16w4
+- Repositorio en Hugging Face: https://huggingface.co/florianvoss/LFM2-VL-450M-Autoround-a16w4
 - Modelo base (checkpoint precuantizado): https://huggingface.co/simaai/LFM2-VL-450M-Autoround-Safetensors
 - Arbol de la revision fuente citada: https://huggingface.co/simaai/LFM2-VL-450M-Autoround-Safetensors/tree/52a6f670a59cf41ab814e20883a248e36b5cb05b
 - Coleccion Neat 0.6.0: https://huggingface.co/collections/florianvoss/neat-060

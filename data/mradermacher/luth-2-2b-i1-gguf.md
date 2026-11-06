@@ -4,7 +4,7 @@
 
 El modelo `mradermacher/Luth-2-2B-i1-GGUF` es una colección de cuantizaciones GGUF del modelo original `kurakurai/Luth-2-2B`, preparadas por el usuario mradermacher, conocido por publicar versiones optimizadas de modelos open source. Estas cuantizaciones utilizan la técnica de imatrix (importance matrix) para mejorar la calidad de la compresión, y están pensadas para facilitar la ejecución del modelo en hardware con recursos limitados, como ordenadores personales o dispositivos edge.
 
-La información pública disponible es muy escasa: no se especifica la arquitectura, el tamaño real de parámetros, la licencia ni los idiomas soportados. El repositorio de HuggingFace muestra 0 descargas y 0 likes, lo que indica que es una publicación reciente o poco difundida. El dato de "parámetros totales" (479.418) que aparece en la ficha de HuggingFace es inconsistente con la denominación "2B" del modelo, por lo que debe tratarse de un error o de una métrica parcial, y no se puede utilizar como referencia fiable.
+La información pública disponible es muy escasa: no se especifica la arquitectura, el tamaño real de parámetros, la licencia ni los idiomas soportados. El repositorio de Hugging Face muestra 0 descargas y 0 likes, lo que indica que es una publicación reciente o poco difundida. El dato de "parámetros totales" (479.418) que aparece en la ficha de Hugging Face es inconsistente con la denominación "2B" del modelo, por lo que debe tratarse de un error o de una métrica parcial, y no se puede utilizar como referencia fiable.
 
 A pesar de la falta de documentación, la existencia de cuantizaciones GGUF sugiere que el modelo está orientado a inferencia local eficiente. Sin embargo, cualquier uso en producción debería ir precedido de una evaluación propia, ya que no hay benchmarks ni especificaciones oficiales publicadas en esta página.
 
@@ -13,7 +13,7 @@ A pesar de la falta de documentación, la existencia de cuantizaciones GGUF sugi
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible |
-| Parametros totales | no disponible (la ficha de HuggingFace indica 479.418, valor inconsistente con la denominacion "2B"; se recomienda no usar este dato) |
+| Parametros totales | no disponible (la ficha de Hugging Face indica 479.418, valor inconsistente con la denominacion "2B"; se recomienda no usar este dato) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
@@ -57,11 +57,11 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 - Riesgo de alucinación y sesgos: al ser un modelo sin información verificada, es probable que presente los problemas típicos de los modelos de lenguaje pequeños, pero no se puede confirmar.
 - Pérdida de calidad por cuantización: las versiones GGUF, especialmente las de baja precisión (Q2, IQ1), pueden degradar notablemente la calidad de las respuestas.
 - Licencia desconocida: el uso comercial podría no estar permitido; se debe contactar con el autor original antes de utilizar el modelo en producción.
-- Datos inconsistentes: el número de parámetros indicado en HuggingFace (479.418) no es fiable y contradice la denominación "2B".
+- Datos inconsistentes: el número de parámetros indicado en Hugging Face (479.418) no es fiable y contradice la denominación "2B".
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Luth-2-2B-i1-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Luth-2-2B-i1-GGUF
 - Modelo original (referenciado en la model card): https://huggingface.co/kurakurai/Luth-2-2B
 - Página de descargas de mradermacher: https://hf.tst.eu/model
-- Perfil del autor mradermacher en HuggingFace: https://huggingface.co/mradermacher
+- Perfil del autor mradermacher en Hugging Face: https://huggingface.co/mradermacher

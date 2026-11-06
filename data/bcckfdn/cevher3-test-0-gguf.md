@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cevher3-test-0 es un modelo de generación de texto de aproximadamente 1.600 millones de parámetros publicado por el usuario bcckfdn en HuggingFace. Se distribuye en formato GGUF, cuantizado para su uso con llama.cpp y Ollama, y deriva de un modelo base del mismo autor (bcckfdn/cevher3-test-0). La model card lo describe como una "destilación de arquitectura" que combina elementos de SmolLM2 y OLMo3, con un diseño híbrido de atención que alterna capas de atención global y capas con ventana deslizante de 768 tokens.
+Cevher3-test-0 es un modelo de generación de texto de aproximadamente 1.600 millones de parámetros publicado por el usuario bcckfdn en Hugging Face. Se distribuye en formato GGUF, cuantizado para su uso con llama.cpp y Ollama, y deriva de un modelo base del mismo autor (bcckfdn/cevher3-test-0). La model card lo describe como una "destilación de arquitectura" que combina elementos de SmolLM2 y OLMo3, con un diseño híbrido de atención que alterna capas de atención global y capas con ventana deslizante de 768 tokens.
 
 El modelo está orientado a turco e inglés, con licencia Apache 2.0, lo que permite uso comercial. Su tamaño contenido (1,6B parámetros) y su empaquetado en GGUF lo sitúan en la categoría de modelos pequeños desplegables en hardware de consumo. No obstante, se trata de una publicación de prueba ("test-0") con cero descargas y cero likes en el momento de la consulta, sin benchmarks publicados ni documentación detallada más allá de la arquitectura y los comandos de uso.
 
@@ -35,7 +35,7 @@ No se dispone de información sobre el volumen de tokens de entrenamiento, la co
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: limitadas a turco e inglés.
 - Capacidades especiales (modo thinking, visión, audio): no disponibles.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse mediante la infraestructura de inference endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse mediante la infraestructura de inference endpoints de Hugging Face.
 
 ## Casos de uso
 

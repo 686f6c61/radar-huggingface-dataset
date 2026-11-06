@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K)
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B-krafla (esta ficha) | 8B denso | 40.960 (4.096 por defecto en runtime) | `.mlb` + Krafla (CPU only) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B (original) | 8B denso | 40.960 | safetensors; vLLM, TGI, transformers | Apache 2.0 | HuggingFace, ampliamente adoptado |
+| Qwen3-8B-krafla (esta ficha) | 8B denso | 40.960 (4.096 por defecto en runtime) | `.mlb` + Krafla (CPU only) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B (original) | 8B denso | 40.960 | safetensors; vLLM, TGI, transformers | Apache 2.0 | Hugging Face, ampliamente adoptado |
 | Qwen3-8B en GGUF (comunidad) | 8B denso | 40.960 | GGUF; llama.cpp, Ollama | Apache 2.0 | Múltiples repos comunitarios |
 | Qwen3-8B en GPTQ/AWQ (comunidad) | 8B denso | 40.960 | safetensors cuantizados; GPU | Apache 2.0 | Múltiples repos comunitarios |
 
@@ -98,7 +98,7 @@ La diferencia frente a las alternativas no es de calidad ni de tamaño, sino de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonpark0/Qwen3-8B-krafla
+- Modelo en Hugging Face: https://huggingface.co/jonpark0/Qwen3-8B-krafla
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio de Krafla: https://github.com/JonPark0/krafla
 - Releases de Krafla: https://github.com/JonPark0/krafla/releases

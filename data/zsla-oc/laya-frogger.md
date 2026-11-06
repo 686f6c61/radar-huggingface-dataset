@@ -83,8 +83,8 @@ Notas de la model card: la columna de movimientos optimos y fatales se calcula s
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zsla-oc/laya-frogger | 421.293.830 | hasta 313 tokens de estado mas pregunta | 208 / 250 casas, 0,938 movimientos optimos, 5,6 ms por decision | apache-2.0 | HuggingFace |
-| convaiinnovations/laya (base, zero-shot) | no disponible en la informacion proporcionada (arquitectura ModernBERT-large) | no disponible | 0 / 15 casas, 0,664 movimientos optimos, muere en menos de 13 movimientos | no disponible en la informacion proporcionada | HuggingFace |
+| zsla-oc/laya-frogger | 421.293.830 | hasta 313 tokens de estado mas pregunta | 208 / 250 casas, 0,938 movimientos optimos, 5,6 ms por decision | apache-2.0 | Hugging Face |
+| convaiinnovations/laya (base, zero-shot) | no disponible en la informacion proporcionada (arquitectura ModernBERT-large) | no disponible | 0 / 15 casas, 0,664 movimientos optimos, muere en menos de 13 movimientos | no disponible en la informacion proporcionada | Hugging Face |
 | Heuristica "pulsar siempre up" | no aplica | no aplica | 0,689 movimientos optimos, 0,285 fatales | no aplica | no aplica |
 | Otros ajustes de Laya para juegos (por ejemplo, laya-snake de zxrneu) | no disponible | no disponible | no disponible | no disponible | GitHub |
 
@@ -105,7 +105,7 @@ La informacion proporcionada no incluye resultados comparables de otros encoders
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zsla-oc/laya-frogger
+- Modelo en Hugging Face: https://huggingface.co/zsla-oc/laya-frogger
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Sitio oficial de Laya: https://laya.convaiinnovations.com/
 - Laya playground (web, dos juegos, benchmark y skill de agente): https://github.com/wdobry/laya-playground

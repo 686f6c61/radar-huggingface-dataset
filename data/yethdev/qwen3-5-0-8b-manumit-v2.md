@@ -56,7 +56,7 @@ No se han publicado resultados adicionales en la informacion disponible. Las med
 
 - VRAM estimada: aproximadamente 1,7 GB en precision FP16 (852M parametros x 2 bytes). En cuantizacion de 8 bits o 4 bits, el consumo seria menor (0,9 GB y 0,5 GB respectivamente), aunque no se proporcionan archivos cuantizados.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, por ejemplo NVIDIA GTX 1660, RTX 2060, RTX 3060 o superiores. Tambien puede ejecutarse en CPU con suficiente RAM.
-- Opciones de despliegue: compatible con la libreria Transformers de HuggingFace (como se muestra en el ejemplo de uso), y puede convertirse a GGUF para su uso con llama.cpp o Ollama. Tambien es compatible con vLLM o TGI para inferencia optimizada en servidores.
+- Opciones de despliegue: compatible con la libreria Transformers de Hugging Face (como se muestra en el ejemplo de uso), y puede convertirse a GGUF para su uso con llama.cpp o Ollama. Tambien es compatible con vLLM o TGI para inferencia optimizada en servidores.
 - Latencia y throughput: no se han publicado datos especificos. Para un modelo de este tamano, en una GPU moderna se esperan velocidades de decodificacion de decenas de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No se dispone de informacion sobre otros modelos abliterated comparables en el m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yethdev/qwen3.5-0.8b-manumit-v2
+- Modelo en Hugging Face: https://huggingface.co/yethdev/qwen3.5-0.8b-manumit-v2
 - Version anterior v1: https://huggingface.co/yethdev/qwen3.5-0.8b-manumit-v1
 - LLM Explorer (ficha del v1): https://llm-explorer.com/model/yethdev%2Fqwen3.5-0.8b-manumit-v1,4pCe604ksQy5vXBfcJAaRU
 - FriendliAI (pagina del v1): https://friendli.ai/models/yethdev/qwen3.5-0.8b-manumit-v1

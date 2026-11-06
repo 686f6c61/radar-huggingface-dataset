@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estos artefactos mas all
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/danyalmalik/Nanbeige4.3-33B-IQ2_M-ONNX-WebGPU
+- Repositorio Hugging Face: https://huggingface.co/danyalmalik/Nanbeige4.3-33B-IQ2_M-ONNX-WebGPU
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - GGUF de origen (bartowski): https://huggingface.co/bartowski/Nanbeige_Nanbeige4.3-33B-GGUF
 - Runtime de kernels ONNX Runtime Web: https://github.com/mdanyalmalik/onnxruntime-web-kernels

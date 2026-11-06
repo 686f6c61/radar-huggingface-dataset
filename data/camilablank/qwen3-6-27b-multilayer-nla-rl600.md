@@ -101,7 +101,7 @@ No se dispone de comparativas con modelos de interpretabilidad alternativos (por
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/camilablank/qwen3.6-27b-multilayer-nla-rl600
+- Repositorio Hugging Face: https://huggingface.co/camilablank/qwen3.6-27b-multilayer-nla-rl600
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.6-27B
 - Archivos de configuracion y metadatos incluidos en el repositorio: `nla_meta.yaml`, `run_config.yaml`, `av/reference/`, `ar/value_head.safetensors`
 - Paper, blog, repositorio de codigo, demo o documentacion adicional: no disponible

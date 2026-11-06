@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mahmudplx/coreml-realisticvision-5.1-6bit
+- Repositorio Hugging Face: https://huggingface.co/mahmudplx/coreml-realisticvision-5.1-6bit
 - Repositorio original de la conversion: https://huggingface.co/darkmaniac7/TokForge-RealisticVision-5.1-CoreML-6bit
 - Repositorio alternativo equivalente: https://huggingface.co/LocalMuseAI/coreml-realistic-vision-v5-1-6bit
 - Modelo base: https://huggingface.co/SG161222/Realistic_Vision_V5.1_noVAE

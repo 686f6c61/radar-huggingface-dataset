@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jwwisniewski/blip-retrieval-v1 es un prototipo de investigación publicado en HuggingFace por el usuario Jwwisniewski, orientado a tareas de recuperación (retrieval) y construido sobre una implementación propia de la arquitectura Blip. El repositorio se presenta explícitamente como un punto de partida experimental: incluye código de entrenamiento, configuración de arquitectura y un checkpoint de inicialización, pero el propio autor aclara que no se ha completado ningún entrenamiento ni se reclama ninguna métrica de rendimiento.
+Jwwisniewski/blip-retrieval-v1 es un prototipo de investigación publicado en Hugging Face por el usuario Jwwisniewski, orientado a tareas de recuperación (retrieval) y construido sobre una implementación propia de la arquitectura Blip. El repositorio se presenta explícitamente como un punto de partida experimental: incluye código de entrenamiento, configuración de arquitectura y un checkpoint de inicialización, pero el propio autor aclara que no se ha completado ningún entrenamiento ni se reclama ninguna métrica de rendimiento.
 
 El dato más relevante es su escala: el checkpoint en safetensors contiene únicamente 49.600 parámetros, lo que corresponde a una configuración "small" pensada para pruebas de humo (smoke tests) y para documentar formatos de fichero, no para inferencia real. El tamaño del repositorio es de 0.0 GB y el modelo no registra descargas ni interacciones en el momento de la consulta.
 
@@ -98,5 +98,5 @@ La comparación directa de rendimiento no es posible: este repositorio no public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jwwisniewski/blip-retrieval-v1
+- Modelo en Hugging Face: https://huggingface.co/Jwwisniewski/blip-retrieval-v1
 - No se han encontrado papers, blogs, repositorios ni demos adicionales relevantes en la busqueda web. Los resultados obtenidos correspondian a sitios de contenido no relacionado con el modelo y se han descartado por no ser fuentes tecnicas validas.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`unconst/Affine-5czsc2fc98-r384-offline-dpo-hialpha-hirank-merged` es un checkpoint intermedio creado por el usuario `unconst` a partir de una fusión LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según las etiquetas de HuggingFace, emplea una arquitectura MoE basada en Qwen 3.5 (`qwen3_5_moe`) y admite entrada multimodal imagen-texto (`image-text-to-text`), aunque el pipeline declarado es `text-generation`. El modelo cuenta con aproximadamente 35 107 millones de parámetros y un tamaño de repositorio de 70,2 GB en formato `safetensors`.
+`unconst/Affine-5czsc2fc98-r384-offline-dpo-hialpha-hirank-merged` es un checkpoint intermedio creado por el usuario `unconst` a partir de una fusión LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según las etiquetas de Hugging Face, emplea una arquitectura MoE basada en Qwen 3.5 (`qwen3_5_moe`) y admite entrada multimodal imagen-texto (`image-text-to-text`), aunque el pipeline declarado es `text-generation`. El modelo cuenta con aproximadamente 35 107 millones de parámetros y un tamaño de repositorio de 70,2 GB en formato `safetensors`.
 
 La model card lo describe como un «salvamento de checkpoint fusionado H1» (H1 merged checkpoint salvage), indicando que es un resultado privado de un proceso de ajuste con DPO (offline, con `hialpha` y `hirank`) fusionado sobre un SFT previo. El autor aclara que no es una versión final ni una presentación oficial, sino una copia de seguridad intermedia («Private TTL insurance; not a submission until Stage-5 gate clears»). Esto implica que el modelo puede ser inestable, incompleto o no representativo del rendimiento final esperado.
 
@@ -74,7 +74,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r384-offline-dpo-hialpha-hirank-merged
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r384-offline-dpo-hialpha-hirank-merged
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código) en la información proporcionada.

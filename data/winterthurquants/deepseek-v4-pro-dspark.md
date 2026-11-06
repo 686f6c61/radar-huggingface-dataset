@@ -6,7 +6,7 @@ DeepSeek-V4-Pro-DSpark es una variante de inferencia de DeepSeek-V4-Pro, el mode
 
 El problema que aborda es doble. Por un lado, la eficiencia en contexto largo: la arquitectura de atencion hibrida combina Compressed Sparse Attention (CSA) y Heavily Compressed Attention (HCA), lo que reduce el coste de inferencia a un 27% de FLOPs por token y un 10% de KV cache respecto a DeepSeek-V3.2 en el escenario de 1M tokens. Por otro lado, la latencia de generacion autoregresiva, que el modulo DSpark ataca mediante decodificacion especulativa.
 
-Es relevante ahora porque, segun la documentacion del autor, DeepSeek-V4-Pro-Max se situa como el mejor modelo abierto disponible en el momento de su publicacion, con resultados de primer nivel en benchmarks de codigo y una brecha reducida frente a modelos cerrados en razonamiento y tareas agenticas. El repositorio de HuggingFace analizado (winterthurquants/DeepSeek-V4-Pro-DSpark) parece una re-publicacion del checkpoint oficial de deepseek-ai, con licencia MIT y formato safetensors en FP8/FP4 mixto.
+Es relevante ahora porque, segun la documentacion del autor, DeepSeek-V4-Pro-Max se situa como el mejor modelo abierto disponible en el momento de su publicacion, con resultados de primer nivel en benchmarks de codigo y una brecha reducida frente a modelos cerrados en razonamiento y tareas agenticas. El repositorio de Hugging Face analizado (winterthurquants/DeepSeek-V4-Pro-DSpark) parece una re-publicacion del checkpoint oficial de deepseek-ai, con licencia MIT y formato safetensors en FP8/FP4 mixto.
 
 ## Especificaciones tecnicas
 
@@ -103,7 +103,7 @@ La diferencia entre DeepSeek-V4-Pro y DeepSeek-V4-Pro-DSpark es unicamente el mo
 - Arbol de ficheros del repositorio oficial: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-DSpark/tree/main
 - Informe tecnico: https://arxiv.org/abs/2606.19348
 - Proyecto DeepSpec (decodificacion especulativa): https://github.com/deepseek-ai/DeepSpec
-- Organizacion DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - DeepSeek-V4-Pro-Base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-Base
 - DeepSeek-V4-Flash: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - DeepSeek-V4-Flash-Base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Base

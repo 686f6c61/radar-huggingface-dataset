@@ -19,7 +19,7 @@ Su relevancia practica es doble: por un lado, documenta una estrategia de ensamb
 | Tipos de cuantizacion | No disponible; los pesos se publican como `state_dict` de PyTorch sin variantes cuantizadas |
 | Idiomas soportados | Arabe (`ar`) |
 | Licencia | MIT (heredada del modelo base) |
-| Formato de pesos | PyTorch `state_dict` (`best_NoPnx_PA.pt`); no es un checkpoint en formato HuggingFace y `from_pretrained` no funciona |
+| Formato de pesos | PyTorch `state_dict` (`best_NoPnx_PA.pt`); no es un checkpoint en formato Hugging Face y `from_pretrained` no funciona |
 
 Otros datos relevantes: tamano del repositorio 2,2 GB; pipeline declarado `token-classification`; identificadores de tarea `araseg-2026`, `arabicnlp2026`; fecha de creacion 2026-09-12.
 
@@ -77,9 +77,9 @@ No hay datos de rendimiento individual publicados para este miembro, por lo que 
 
 | Modelo | Parametros | Contexto | Macro-F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `NAMAA-Space/araseg-e11-xlmr-nopnx-pa-w2` (este miembro) | ~560M | 512 | No reportado individualmente | MIT | HuggingFace, como `state_dict` de PyTorch |
-| Sistema completo NAMAA NoPnx-PA (8 miembros) | 8 x ~560M | 512 | 87,82 (practice test) / 89,9 (ciego) | No disponible | Coleccion de HuggingFace y repositorio de codigo |
-| `FacebookAI/xlm-roberta-large` (modelo base) | ~560M | 512 | No aplica (no es un segmentador) | MIT | HuggingFace |
+| `NAMAA-Space/araseg-e11-xlmr-nopnx-pa-w2` (este miembro) | ~560M | 512 | No reportado individualmente | MIT | Hugging Face, como `state_dict` de PyTorch |
+| Sistema completo NAMAA NoPnx-PA (8 miembros) | 8 x ~560M | 512 | 87,82 (practice test) / 89,9 (ciego) | No disponible | Coleccion de Hugging Face y repositorio de codigo |
+| `FacebookAI/xlm-roberta-large` (modelo base) | ~560M | 512 | No aplica (no es un segmentador) | MIT | Hugging Face |
 | Otros miembros del ensemble | No disponible | No disponible | No disponible | No disponible | Coleccion NAMAA |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No hay datos de rendimiento individual publicados para este miembro, por lo que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NAMAA-Space/araseg-e11-xlmr-nopnx-pa-w2
+- Modelo en Hugging Face: https://huggingface.co/NAMAA-Space/araseg-e11-xlmr-nopnx-pa-w2
 - Coleccion del sistema AraSeg 2026 de NAMAA: https://huggingface.co/collections/NAMAA-Space/namaa-community-araseg-2026
 - Repositorio de codigo (configs, `ensemble.py`, `verify_offcluster.py`, `requirements-llm.txt`): https://github.com/NAMAA-ORG/NAMAA-Community-AraSeg-2026
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large

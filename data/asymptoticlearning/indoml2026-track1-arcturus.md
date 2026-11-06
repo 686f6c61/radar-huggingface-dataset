@@ -4,7 +4,7 @@
 
 IndoML2026-Track1-Arcturus es un sistema de deteccion de eventos sonoros (sound event detection, SED) presentado por el equipo Arcturus al Datathon IndoML 2026, en la pista 1 dedicada a la deteccion de eventos de ruido sobre grabaciones de campo del corpus Vaani. No es un modelo fundacional generativo, sino un ensemble de checkpoints de inferencia que predicen el inicio (onset) y el fin (offset) de cada evento de ruido en audio de campo, con resolucion temporal de 10 ms.
 
-El sistema combina diez detectores a nivel de trama construidos sobre tres backbones preentrenados de audio (ATST-Frame, BEATs y Dasheng-base), cada uno con una cabeza Conformer, y una segunda etapa a nivel de evento que decide que candidatos conservar o fusionar mediante cinco refinadores de fronteras, verificadores basados en gradient boosting y un detector estilo DETR. El repositorio de HuggingFace ocupa 4,3 GB y contiene los 20 ficheros de checkpoint necesarios para reproducir la inferencia.
+El sistema combina diez detectores a nivel de trama construidos sobre tres backbones preentrenados de audio (ATST-Frame, BEATs y Dasheng-base), cada uno con una cabeza Conformer, y una segunda etapa a nivel de evento que decide que candidatos conservar o fusionar mediante cinco refinadores de fronteras, verificadores basados en gradient boosting y un detector estilo DETR. El repositorio de Hugging Face ocupa 4,3 GB y contiene los 20 ficheros de checkpoint necesarios para reproducir la inferencia.
 
 Su relevancia es doble: por un lado documenta el estado del arte practico en una tarea de segmentacion temporal de audio de dominio especifico (audio de campo indio, con ruido real y sintetico); por otro, publica un pipeline completo y reproducible bajo licencia MIT con verificacion sha256, lo que facilita su reutilizacion como linea base en tareas de deteccion de eventos acusticos con requisitos estrictos de localizacion temporal. El resultado de la fase 2 fue un Combined de 1,5893 (Event F1 0,7691 y Segment Dice 0,8202), que le valio el octavo puesto en la clasificacion.
 
@@ -25,7 +25,7 @@ Su relevancia es doble: por un lado documenta el estado del arte practico en una
 
 El sistema es un ensemble en dos etapas. La primera etapa opera a nivel de trama sobre una rejilla de 10 ms e integra diez detectores: dos variantes de ATST-Frame con una rama CNN de 10 ms, cuatro de Dasheng-base y cuatro de BEATs, todas con cabeza Conformer. La segunda etapa, a nivel de evento, decide que candidatos conservar o fusionar apoyandose en cinco refinadores de fronteras que actuan como votantes, verificadores de gradient boosting sobre componentes PCA, un detector estilo DETR que aporta evidencia de verificacion y una tabla de correccion de bordes con compuerta. Ademas, se aplica una guarda de confianza: cualquier evento con probabilidad media igual o superior a 0,70 nunca se descarta, de modo que el mismo pipeline sirve tanto para clips naturales como sinteticos.
 
-El entrenamiento se realizo sobre el dataset ARTPARK-IISc/Vaani-Noise-Event-Dataset, con una fase 2 que emplea objetivos de clasificacion binaria con pesos (owbce) y variantes con destilacion desde profesores (teacher). Los backbones se inicializan desde pesos publicos: ATST-Frame (`ATST-F_strong_1.pt`), BEATs (`BEATs_iter3_plus_AS2M.pt`) y Dasheng-base (`mispeech/dasheng-base`, descargado aparte de HuggingFace). El numero exacto de tokens de audio, la composicion detallada del dataset y si hubo etapas de RLHF o DPO no estan disponibles en la informacion proporcionada; el informe tecnico (`docs/Arcturus_track_1_8.pdf`) del repositorio de GitHub es la fuente indicada para esos detalles.
+El entrenamiento se realizo sobre el dataset ARTPARK-IISc/Vaani-Noise-Event-Dataset, con una fase 2 que emplea objetivos de clasificacion binaria con pesos (owbce) y variantes con destilacion desde profesores (teacher). Los backbones se inicializan desde pesos publicos: ATST-Frame (`ATST-F_strong_1.pt`), BEATs (`BEATs_iter3_plus_AS2M.pt`) y Dasheng-base (`mispeech/dasheng-base`, descargado aparte de Hugging Face). El numero exacto de tokens de audio, la composicion detallada del dataset y si hubo etapas de RLHF o DPO no estan disponibles en la informacion proporcionada; el informe tecnico (`docs/Arcturus_track_1_8.pdf`) del repositorio de GitHub es la fuente indicada para esos detalles.
 
 ## Capacidades
 
@@ -87,7 +87,7 @@ La comparacion con otros participantes del Datathon IndoML 2026 Track 1 no esta 
 - Sin datos de sesgo: no se han publicado analisis de sesgos por tipo de ruido, region, dispositivo de grabacion o demografia de los hablantes.
 - Riesgo de falsos positivos y negativos: a pesar del filtro de falsos positivos y la guarda de confianza, no se documentan tasas de error por clase de evento ni matrices de confusion.
 - Dependencia de backbones externos: la licencia final esta condicionada por las licencias de ATST-Frame (MIT), BEATs (MIT) y Dasheng-base (Apache-2.0); el uso comercial debe verificar el cumplimiento de las tres.
-- Dasheng-base no se incluye en el repositorio: se descarga automaticamente de HuggingFace, lo que introduce una dependencia de red y de disponibilidad del modelo externo en el momento del despliegue.
+- Dasheng-base no se incluye en el repositorio: se descarga automaticamente de Hugging Face, lo que introduce una dependencia de red y de disponibilidad del modelo externo en el momento del despliegue.
 - Sin versiones cuantizadas ni optimizadas: no hay pesos GGUF, ONNX ni TensorRT publicados, lo que limita el despliegue en entornos de bajos recursos.
 - Reproducibilidad: requiere verificar sha256 de 20 ficheros mediante el script proporcionado; cualquier modificacion de los checkpoints invalida los resultados reportados.
 - Uso en produccion: el pipeline esta disenado para inferencia por lotes sobre directorios de audio; no se documenta soporte para streaming en tiempo real ni latencia garantizada.
@@ -95,7 +95,7 @@ La comparacion con otros participantes del Datathon IndoML 2026 Track 1 no esta 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asymptoticlearning/IndoML2026-Track1-Arcturus
+- Modelo en Hugging Face: https://huggingface.co/asymptoticlearning/IndoML2026-Track1-Arcturus
 - Codigo de entrenamiento e inferencia: https://github.com/Abhilash1602/IndoML2026-Track1-Arcturus
 - Informe tecnico (en el repositorio): `docs/Arcturus_track_1_8.pdf`
 - Dataset: https://huggingface.co/datasets/ARTPARK-IISc/Vaani-Noise-Event-Dataset

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`micdun/flex_merged_endo_rex_path_btx-public_pubmed-rp_topk3-25k-huge_lr` es un modelo de 12.320.990.464 parametros (unos 12,32 mil millones) publicado en HuggingFace por el usuario `micdun`, con pesos en formato safetensors y un tamano de repositorio de 24,7 GB. El tag `flex_qwen2_5_vl_moe` indica que se trata de una variante de mezcla de expertos (MoE) construida sobre la familia Qwen2.5-VL, es decir, con capacidades multimodales (texto e imagen) heredadas de esa arquitectura base. El nombre del repositorio sugiere un proceso de fusion (merge) de adaptadores entrenados sobre dominios concretos: endoscopia (`endo`), patologia (`path`), y corpus biomedico PubMed, con una configuracion de enrutamiento de tres expertos activos (`topk3`) sobre 25.000 pasos (`25k`) y una tasa de aprendizaje alta (`huge_lr`).
+`micdun/flex_merged_endo_rex_path_btx-public_pubmed-rp_topk3-25k-huge_lr` es un modelo de 12.320.990.464 parametros (unos 12,32 mil millones) publicado en Hugging Face por el usuario `micdun`, con pesos en formato safetensors y un tamano de repositorio de 24,7 GB. El tag `flex_qwen2_5_vl_moe` indica que se trata de una variante de mezcla de expertos (MoE) construida sobre la familia Qwen2.5-VL, es decir, con capacidades multimodales (texto e imagen) heredadas de esa arquitectura base. El nombre del repositorio sugiere un proceso de fusion (merge) de adaptadores entrenados sobre dominios concretos: endoscopia (`endo`), patologia (`path`), y corpus biomedico PubMed, con una configuracion de enrutamiento de tres expertos activos (`topk3`) sobre 25.000 pasos (`25k`) y una tasa de aprendizaje alta (`huge_lr`).
 
 La relevancia de esta ficha es limitada y hay que ser honesto al respecto: se trata de un modelo con 75 descargas y 0 likes, sin tarjeta de modelo publicada, sin licencia declarada, sin idiomas declarados y sin resultados de benchmarks disponibles. No es un modelo de produccion respaldado por un laboratorio, sino un artefacto de experimentacion publicado de forma abierta. Por tanto, debe tratarse como material de investigacion y no como una dependencia estable para sistemas en produccion.
 
-La busqueda web asociada no devolvio ningun resultado tecnico relacionado con el modelo: los enlaces recuperados corresponden a hilos de soporte de Microsoft sobre problemas de disco y actualizaciones de Windows, sin ninguna relacion con IA. En consecuencia, toda la informacion tecnica de esta ficha procede exclusivamente de los metadatos de HuggingFace y de inferencias explicitamente marcadas como tales a partir de los tags y del nombre del repositorio.
+La busqueda web asociada no devolvio ningun resultado tecnico relacionado con el modelo: los enlaces recuperados corresponden a hilos de soporte de Microsoft sobre problemas de disco y actualizaciones de Windows, sin ninguna relacion con IA. En consecuencia, toda la informacion tecnica de esta ficha procede exclusivamente de los metadatos de Hugging Face y de inferencias explicitamente marcadas como tales a partir de los tags y del nombre del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -75,7 +75,7 @@ Los datos de los modelos de referencia proceden de informacion publica de sus re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| micdun/flex_merged_endo_rex_path_btx-public_pubmed-rp_topk3-25k-huge_lr | 12,32 mil millones (MoE, activos no disponibles) | No disponible | No disponible | safetensors en HuggingFace; 75 descargas, 0 likes |
+| micdun/flex_merged_endo_rex_path_btx-public_pubmed-rp_topk3-25k-huge_lr | 12,32 mil millones (MoE, activos no disponibles) | No disponible | No disponible | safetensors en Hugging Face; 75 descargas, 0 likes |
 | Qwen2.5-VL-7B-Instruct | 7,6 mil millones | 128.000 tokens | Apache 2.0 | safetensors, ampliamente soportado |
 | Qwen2.5-VL-32B-Instruct | 32,8 mil millones | 128.000 tokens | Apache 2.0 | safetensors, soporte en vLLM |
 | Mixtral 8x7B (referencia MoE, solo texto) | 46,7 mil millones totales, 12,9 mil millones activos | 32.000 tokens | Apache 2.0 | safetensors y GGUF |
@@ -85,7 +85,7 @@ No se dispone de comparativas de rendimiento con alternativas biomedicas especia
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay tarjeta de modelo, ni descripcion de datos de entrenamiento, ni procedimiento de evaluacion. No se puede verificar ninguna capacidad declarada.
-- Licencia no declarada: sin licencia explicita no hay certeza sobre el uso comercial. En la practica, la ausencia de licencia en HuggingFace debe tratarse como uso comercial no autorizado hasta que el autor lo aclare.
+- Licencia no declarada: sin licencia explicita no hay certeza sobre el uso comercial. En la practica, la ausencia de licencia en Hugging Face debe tratarse como uso comercial no autorizado hasta que el autor lo aclare.
 - Idiomas no declarados: se desconoce si el modelo funciona correctamente en castellano o si esta limitado al ingles biomedico. Cualquier despliegue multilingue exige evaluacion previa.
 - Riesgo elevado de alucinacion: en dominios clinicos o biomedicos, la generacion de referencias, dosis, cifras o conclusiones inexactas puede tener consecuencias graves. No debe usarse sin verificacion humana experta.
 - Riesgo de sesgos: los corpus biomedicos (PubMed) presentan sesgos de publicacion, de idioma (predominio del ingles) y de representacion poblacional. Es esperable que el modelo los reproduzca, aunque no hay estudios que lo cuantifiquen.
@@ -98,5 +98,5 @@ No se dispone de comparativas de rendimiento con alternativas biomedicas especia
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/micdun/flex_merged_endo_rex_path_btx-public_pubmed-rp_topk3-25k-huge_lr
+- Hugging Face: https://huggingface.co/micdun/flex_merged_endo_rex_path_btx-public_pubmed-rp_topk3-25k-huge_lr
 - No se han encontrado papers, blogs, repositorios, demos ni articulos tecnicos relacionados con este modelo en la busqueda web. Los unicos resultados devueltos fueron hilos de soporte de Microsoft sin relacion con inteligencia artificial, por lo que se omiten.

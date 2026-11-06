@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l1-e20` es un ajuste fino publicado en HuggingFace por el usuario PessimisticDPO. Por la nomenclatura del identificador se deduce que parte de un modelo de la familia Llama 3.1 de 8.000 millones de parametros, concretamente de un checkpoint Tulu 3 8B ya ajustado con supervisión (SFT), y que sobre el se ha aplicado algun tipo de entrenamiento adicional cuya naturaleza exacta no esta documentada. El sufijo `a0.1-b0.1-L3-l1-e20` sugiere hiperparametros de un experimento (posiblemente coeficientes alpha/beta de un objetivo pesimista, una capa o nivel L3, un parametro lambda y 20 epocas), pero el autor no ha publicado ninguna explicacion al respecto.
+El modelo identificado como `PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l1-e20` es un ajuste fino publicado en Hugging Face por el usuario PessimisticDPO. Por la nomenclatura del identificador se deduce que parte de un modelo de la familia Llama 3.1 de 8.000 millones de parametros, concretamente de un checkpoint Tulu 3 8B ya ajustado con supervisión (SFT), y que sobre el se ha aplicado algun tipo de entrenamiento adicional cuya naturaleza exacta no esta documentada. El sufijo `a0.1-b0.1-L3-l1-e20` sugiere hiperparametros de un experimento (posiblemente coeficientes alpha/beta de un objetivo pesimista, una capa o nivel L3, un parametro lambda y 20 epocas), pero el autor no ha publicado ninguna explicacion al respecto.
 
-El modelo se distribuye unicamente con pesos en formato safetensors para la libreria transformers, con etiquetas que lo marcan como compatible con endpoints. No dispone de model card real: el README publicado es la plantilla autogenerada de HuggingFace, con todos los campos marcados como "More Information Needed". No se declara licencia, idiomas, pipeline ni procedencia de datos.
+El modelo se distribuye unicamente con pesos en formato safetensors para la libreria transformers, con etiquetas que lo marcan como compatible con endpoints. No dispone de model card real: el README publicado es la plantilla autogenerada de Hugging Face, con todos los campos marcados como "More Information Needed". No se declara licencia, idiomas, pipeline ni procedencia de datos.
 
 Su relevancia actual es limitada y debe evaluarse con cautela: se trata de un checkpoint de investigacion sin documentacion, con cero descargas y cero valoraciones en el momento de la consulta, y con un tamano de repositorio de 0,2 GB que resulta inconsistente con los aproximadamente 16 GB que ocuparian los pesos completos de un modelo de 8.000 millones de parametros en bfloat16. Esto apunta a que el repositorio contiene solo pesos parciales, adaptadores o un subconjunto de capas, extremo que no puede confirmarse con la informacion disponible.
 
@@ -29,7 +29,7 @@ Su relevancia actual es limitada y debe evaluarse con cautela: se trata de un ch
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla generica autogenerada por HuggingFace y todos los apartados (descripcion, datos de entrenamiento, hiperparametros, regimen de precision, infraestructura de computo e impacto ambiental) figuran como "More Information Needed". El unico dato tecnico objetivo del repositorio es el uso de la libreria transformers y el formato safetensors, ademas de una etiqueta que referencia el articulo `arxiv:1910.09700` (Lacoste et al., calculadora de impacto ambiental), referencia que aparece de forma automatica en la plantilla y no implica ninguna innovacion tecnica del modelo.
+No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla generica autogenerada por Hugging Face y todos los apartados (descripcion, datos de entrenamiento, hiperparametros, regimen de precision, infraestructura de computo e impacto ambiental) figuran como "More Information Needed". El unico dato tecnico objetivo del repositorio es el uso de la libreria transformers y el formato safetensors, ademas de una etiqueta que referencia el articulo `arxiv:1910.09700` (Lacoste et al., calculadora de impacto ambiental), referencia que aparece de forma automatica en la plantilla y no implica ninguna innovacion tecnica del modelo.
 
 Del identificador se pueden extraer indicios, siempre sin confirmar: `Llama-3.1-Tulu-3-8B` apunta a un punto de partida basado en Llama 3.1 8B refinado con Tulu 3, `SFT` indica que se partio de un checkpoint ajustado con supervision, y `a0.1-b0.1-L3-l1-e20` sugiere un experimento con dos coeficientes a 0,1, un nivel o capa 3, un lambda de 1 y 20 epocas. El prefijo del espacio de nombres, `PessimisticDPO`, sugiere trabajo sobre variantes pesimistas de optimizacion por preferencias directas, pero no se ha publicado ni el objetivo de entrenamiento, ni el dataset, ni el numero de tokens utilizados, ni si hubo una fase de RLHF o DPO efectiva.
 
@@ -103,7 +103,7 @@ No se dispone de ninguna medida de rendimiento del modelo analizado que permita 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l1-e20
+- Modelo en Hugging Face: https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l1-e20
 - Referencia citada en las etiquetas del repositorio (calculadora de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Pagina del proyecto Tulu 3 (modelo base presumible, no confirmado por el autor): https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B
 - Modelo Llama 3.1 8B Instruct de Meta (familia base presumible, no confirmada por el autor): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

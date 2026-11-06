@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`johnfredfarmer/gemma_ft_unsloth` es un ajuste fino (fine-tuning) publicado en HuggingFace por el usuario johnfredfarmer sobre el modelo base `unsloth/gemma-2-2b-bnb-4bit`, que a su vez es una versión cuantizada a 4 bits de Gemma 2 2B de Google. Se trata, por tanto, de un derivado de la familia Gemma 2 de segunda generación, un transformer decoder-only de aproximadamente 2.600 millones de parámetros y 8.192 tokens de contexto según la documentación pública de la familia base.
+`johnfredfarmer/gemma_ft_unsloth` es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario johnfredfarmer sobre el modelo base `unsloth/gemma-2-2b-bnb-4bit`, que a su vez es una versión cuantizada a 4 bits de Gemma 2 2B de Google. Se trata, por tanto, de un derivado de la familia Gemma 2 de segunda generación, un transformer decoder-only de aproximadamente 2.600 millones de parámetros y 8.192 tokens de contexto según la documentación pública de la familia base.
 
-El modelo se ha entrenado con la librería Unsloth junto con TRL de HuggingFace, lo que según el propio autor permite un entrenamiento "2x más rápido" y con menor consumo de memoria que un fine-tuning convencional. El repositorio tiene un tamaño de 0,1 GB y etiquetas de `safetensors` y `transformers`, lo que sugiere un artefacto de pesos pequeño en relación con un modelo completo de 2.600 millones de parámetros, aunque la model card no especifica si se trata de adaptadores LoRA o de pesos fusionados.
+El modelo se ha entrenado con la librería Unsloth junto con TRL de Hugging Face, lo que según el propio autor permite un entrenamiento "2x más rápido" y con menor consumo de memoria que un fine-tuning convencional. El repositorio tiene un tamaño de 0,1 GB y etiquetas de `safetensors` y `transformers`, lo que sugiere un artefacto de pesos pequeño en relación con un modelo completo de 2.600 millones de parámetros, aunque la model card no especifica si se trata de adaptadores LoRA o de pesos fusionados.
 
 La relevancia de esta ficha es limitada pero ilustrativa: se trata de un experimento de fine-tuning de bajo coste sobre hardware de consumo, publicado sin métricas de evaluación, sin dataset documentado y con cero descargas en el momento de la consulta. Es útil como ejemplo del flujo de trabajo Unsloth + TRL, no como un modelo listo para producción.
 
@@ -44,7 +44,7 @@ Sobre el proceso de entrenamiento de este derivado concreto no hay información 
 - Clasificación y extracción de información sobre texto corto: con 8.192 tokens de contexto teóricos, admite documentos de varias páginas para tareas de resumen o etiquetado, siempre que el ajuste realizado lo permita.
 - Generación de texto asistida en entornos con recursos limitados: su tamaño permite desplegarlo en una única GPU de gama de consumo, útil para demos internas o entornos de desarrollo sin clúster.
 - Evaluación comparativa de técnicas de fine-tuning: útil como punto de referencia frente a otros derivados de Gemma 2 2B publicados con el mismo pipeline.
-- Fines educativos: ejemplo didáctico de publicación de un modelo en HuggingFace, incluyendo el uso de etiquetas `base_model` y la licencia Apache 2.0.
+- Fines educativos: ejemplo didáctico de publicación de un modelo en Hugging Face, incluyendo el uso de etiquetas `base_model` y la licencia Apache 2.0.
 
 Los casos anteriores son hipótesis de uso derivadas de las características del modelo base; la model card no documenta ningún caso de uso validado ni resultados que respalden su idoneidad para producción.
 
@@ -67,7 +67,7 @@ La model card no incluye MMLU, HumanEval, GSM8K ni ninguna otra métrica, y el r
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | `johnfredfarmer/gemma_ft_unsloth` | Aprox. 2.600 M (heredados) | 8.192 tokens (segun familia base) | Apache 2.0 | 0 descargas, 0 likes | Ajuste fino sin documentar |
-| `nid811/gemma_ft_unsloth` | Aprox. 2.600 M (heredados) | 8.192 tokens (segun familia base) | Apache 2.0 | Publicado en HuggingFace | Practicamente identico: mismo base, mismo pipeline y misma model card plantilla |
+| `nid811/gemma_ft_unsloth` | Aprox. 2.600 M (heredados) | 8.192 tokens (segun familia base) | Apache 2.0 | Publicado en Hugging Face | Practicamente identico: mismo base, mismo pipeline y misma model card plantilla |
 | `unsloth/gemma-2-2b-bnb-4bit` | Aprox. 2.600 M | 8.192 tokens (segun familia base) | Apache 2.0 (Gemma) | Modelo base ampliamente utilizado | Modelo de partida, cuantizado a 4 bits |
 | Gemma 2 2B (Google) | Aprox. 2.600 M | 8.192 tokens | Gemma Terms of Use | Amplia distribucion | Modelo original, con benchmarks publicados por Google |
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparado para el modelo objeto de esta fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/johnfredfarmer/gemma_ft_unsloth
+- Modelo en Hugging Face: https://huggingface.co/johnfredfarmer/gemma_ft_unsloth
 - Modelo base: https://huggingface.co/unsloth/gemma-2-2b-bnb-4bit
 - Repositorio de Unsloth (GitHub): https://github.com/unslothai/unsloth
 - Documentación de Unsloth: https://unsloth.ai/

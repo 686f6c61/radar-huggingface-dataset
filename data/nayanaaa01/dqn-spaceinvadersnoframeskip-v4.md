@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nayanaaa01/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno de Atari `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario nayanaaa01 en HuggingFace y se ha generado con la libreria stable-baselines3 junto con el RL Zoo, el framework de entrenamiento con optimizacion de hiperparametros y agentes preentrenados del ecosistema Stable Baselines.
+El modelo `nayanaaa01/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno de Atari `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario nayanaaa01 en Hugging Face y se ha generado con la libreria stable-baselines3 junto con el RL Zoo, el framework de entrenamiento con optimizacion de hiperparametros y agentes preentrenados del ecosistema Stable Baselines.
 
 No se trata de un modelo de lenguaje: no procesa ni genera texto. Es una politica de control que recibe observaciones visuales del emulador de Atari (frames en escala de grises de 84x84 apilados en grupos de 4) y emite una accion discreta en cada paso. Su relevancia es la de servir como referencia reproducible de DQN en un entorno estandar de Atari, lo que permite comparar implementaciones, hiperparametros y variantes de algoritmos de valor.
 
@@ -71,9 +71,9 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto / observacion | mean_reward | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| nayanaaa01/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | no disponible | 4x84x84 | 675,50 +/- 254,37 (no verificado) | no disponible | HuggingFace, 0 descargas, 0 likes |
-| Baseline DQN del RL Zoo | DQN | SpaceInvadersNoFrameskip-v4 | no disponible | 4x84x84 | no disponible en la informacion | heredada de la libreria (stable-baselines3, MIT) | RL Zoo / HuggingFace |
-| PPO (RL Zoo) sobre el mismo entorno | PPO | SpaceInvadersNoFrameskip-v4 | no disponible | 4x84x84 | no disponible en la informacion | heredada de la libreria | RL Zoo / HuggingFace |
+| nayanaaa01/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | no disponible | 4x84x84 | 675,50 +/- 254,37 (no verificado) | no disponible | Hugging Face, 0 descargas, 0 likes |
+| Baseline DQN del RL Zoo | DQN | SpaceInvadersNoFrameskip-v4 | no disponible | 4x84x84 | no disponible en la informacion | heredada de la libreria (stable-baselines3, MIT) | RL Zoo / Hugging Face |
+| PPO (RL Zoo) sobre el mismo entorno | PPO | SpaceInvadersNoFrameskip-v4 | no disponible | 4x84x84 | no disponible en la informacion | heredada de la libreria | RL Zoo / Hugging Face |
 | Rainbow o QR-DQN (SB3-Contrib) | Rainbow / QR-DQN | SpaceInvadersNoFrameskip-v4 | no disponible | 4x84x84 | no disponible en la informacion | heredada de la libreria | SB3-Contrib / RL Zoo |
 
 No se dispone de resultados numericos de los modelos alternativos en la informacion proporcionada, por lo que la comparacion cuantitativa queda pendiente. Los formatos de pesos y las arquitecturas exactas de estos agentes tampoco se detallan en la informacion disponible.
@@ -94,7 +94,7 @@ No se dispone de resultados numericos de los modelos alternativos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nayanaaa01/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/nayanaaa01/dqn-SpaceInvadersNoFrameskip-v4
 - Stable Baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Baselines3 Zoo: https://github.com/DLR-RM/rl-baselines3-zoo
 - Stable Baselines3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

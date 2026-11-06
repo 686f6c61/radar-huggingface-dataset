@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `analisis-sentimen`, publicado por el usuario misterl101 en HuggingFace, es un repositorio cuyo nombre sugiere un propósito de análisis de sentimiento en castellano. La model card asociada está prácticamente vacía: solo contiene la declaración de licencia MIT, sin descripción, sin detalles de arquitectura, sin datos de entrenamiento ni información sobre el pipeline. No se dispone de ningún dato técnico verificable más allá del identificador y la licencia.
+El modelo `analisis-sentimen`, publicado por el usuario misterl101 en Hugging Face, es un repositorio cuyo nombre sugiere un propósito de análisis de sentimiento en castellano. La model card asociada está prácticamente vacía: solo contiene la declaración de licencia MIT, sin descripción, sin detalles de arquitectura, sin datos de entrenamiento ni información sobre el pipeline. No se dispone de ningún dato técnico verificable más allá del identificador y la licencia.
 
 En el momento de la consulta (creado y actualizado el 2026-11-03), el repositorio acumula 0 descargas y 0 likes, lo que indica que no ha sido adoptado por la comunidad ni validado por terceros. No hay información sobre el pipeline declarado, los idiomas soportados ni el formato de pesos, por lo que no es posible confirmar que se trate de un modelo entrenado y funcional, ni siquiera que contenga pesos publicados.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha se limita a documentar los escasos metadatos disponibles y
 
 No se ha publicado información sobre la arquitectura del modelo. La model card no describe si se trata de un transformer, un modelo MoE, un SSM o cualquier otra familia, ni incluye detalles sobre el tokenizador, la dimensionalidad de las capas o el número de parámetros. Tampoco se indica el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT.
 
-La única información técnica disponible es la etiqueta `license:mit` y la etiqueta `region:us` que HuggingFace asigna automáticamente. No hay papers, blogs ni repositorios asociados que permitan reconstruir el proceso de entrenamiento. Cualquier afirmación sobre innovaciones técnicas (atención lineal, decodificación especulativa, etc.) sería especulativa y no se incluye.
+La única información técnica disponible es la etiqueta `license:mit` y la etiqueta `region:us` que Hugging Face asigna automáticamente. No hay papers, blogs ni repositorios asociados que permitan reconstruir el proceso de entrenamiento. Cualquier afirmación sobre innovaciones técnicas (atención lineal, decodificación especulativa, etc.) sería especulativa y no se incluye.
 
 ## Capacidades
 
@@ -78,5 +78,5 @@ No disponible. No se puede identificar la categoría del modelo (tamaño, tarea,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/misterl101/analisis-sentimen
+- Repositorio en Hugging Face: https://huggingface.co/misterl101/analisis-sentimen
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

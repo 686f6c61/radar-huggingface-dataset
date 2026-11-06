@@ -2,7 +2,7 @@
 
 ## Resumen
 
-radar-encoder-freeze es un modelo de clasificación de texto (text-classification) publicado en HuggingFace por el usuario roadrage10. Se trata de un ajuste fino (fine-tune) de un encoder transformer, entrenado sobre el dataset MahmoodAnaam/radar-pan26-raid, que por su nombre parece vinculado a tareas de la serie PAN (shared tasks de deteccion de contenido) asociadas al ambito "radar". El modelo cuenta con 399.711.361 parametros (segun los pesos en safetensors) y se distribuye en formato transformers con pesos safetensors.
+radar-encoder-freeze es un modelo de clasificación de texto (text-classification) publicado en Hugging Face por el usuario roadrage10. Se trata de un ajuste fino (fine-tune) de un encoder transformer, entrenado sobre el dataset MahmoodAnaam/radar-pan26-raid, que por su nombre parece vinculado a tareas de la serie PAN (shared tasks de deteccion de contenido) asociadas al ambito "radar". El modelo cuenta con 399.711.361 parametros (segun los pesos en safetensors) y se distribuye en formato transformers con pesos safetensors.
 
 El repositorio es muy reciente y de muy baja traccion: 3 descargas y 0 likes en el momento de la consulta, con la model card generada automaticamente por el Trainer y sin secciones de descripcion, usos previstos ni datos de entrenamiento completadas por el autor. No se declara licencia ni idiomas soportados, y el model-index oficial no incluye ningun resultado de benchmarks (array vacio), aunque la model card si recoge metricas de evaluacion obtenidas durante el entrenamiento.
 
@@ -94,10 +94,10 @@ El modelo base no esta documentado, por lo que no es posible establecer una comp
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| radar-encoder-freeze | 399,7 M | no disponible | no disponible | HuggingFace |
-| BERT-large | ~335 M | 512 | Apache 2.0 | HuggingFace |
-| RoBERTa-large | ~355 M | 512 | MIT | HuggingFace |
-| DeBERTa-v3-large | ~435 M | 512 | MIT | HuggingFace |
+| radar-encoder-freeze | 399,7 M | no disponible | no disponible | Hugging Face |
+| BERT-large | ~335 M | 512 | Apache 2.0 | Hugging Face |
+| RoBERTa-large | ~355 M | 512 | MIT | Hugging Face |
+| DeBERTa-v3-large | ~435 M | 512 | MIT | Hugging Face |
 
 Los valores de la columna de contexto y licencia de los modelos de referencia son datos publicos de esos modelos, no del modelo evaluado. No se dispone de comparaciones de rendimiento en la misma tarea porque el dataset radar-pan26-raid es especifico y no hay resultados publicados de otros modelos sobre el.
 
@@ -116,7 +116,7 @@ Los valores de la columna de contexto y licencia de los modelos de referencia so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roadrage10/radar-encoder-freeze
+- Modelo en Hugging Face: https://huggingface.co/roadrage10/radar-encoder-freeze
 - Dataset de entrenamiento: https://huggingface.co/datasets/MahmoodAnaam/radar-pan26-raid
 - Paper, blog o repositorio del autor: no disponible
 - Demo: no disponible

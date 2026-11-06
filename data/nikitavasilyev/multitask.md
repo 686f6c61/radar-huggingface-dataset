@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, creado por nikitavasilyev, contiene una implementacion experimental de un **Cnn Transformer** disenado para tareas multitarea. No se trata de un modelo entrenado ni listo para produccion, sino de un codigo base con un checkpoint de inicializacion valido para pruebas de humo (smoke tests). El objetivo declarado del autor es mantener una configuracion a escala "giant" intencionalmente manejable para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+Este repositorio de Hugging Face, creado por nikitavasilyev, contiene una implementacion experimental de un **Cnn Transformer** disenado para tareas multitarea. No se trata de un modelo entrenado ni listo para produccion, sino de un codigo base con un checkpoint de inicializacion valido para pruebas de humo (smoke tests). El objetivo declarado del autor es mantener una configuracion a escala "giant" intencionalmente manejable para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 La arquitectura combina una red convolucional con un transformer, utilizando atencion dilatada, fusion de tipo Tucker, activacion Swish y normalizacion GroupNorm. El checkpoint incluido (`model.safetensors`) contiene **24.832 parametros**, una cifra extremadamente baja para una arquitectura etiquetada como "giant", lo que confirma que se trata de un esqueleto experimental. No se especifica la longitud de contexto ni los idiomas soportados, y no se reivindica ningun resultado de benchmark. La relevancia actual del proyecto es limitada: sirve como punto de partida para investigacion arquitectonica, no como un modelo utilizable.
 
@@ -65,5 +65,5 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nikitavasilyev/multitask
+- Hugging Face: https://huggingface.co/nikitavasilyev/multitask
 - No se han encontrado papers, blogs, repositorios adicionales o demos relacionados en la informacion disponible.

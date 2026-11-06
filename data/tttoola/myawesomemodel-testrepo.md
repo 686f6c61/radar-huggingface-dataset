@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario tttoola en HuggingFace, con licencia MIT y orientado a tareas de extracción de características (feature-extraction) según el pipeline declarado. La model card describe una actualización significativa respecto a versiones anteriores, con mejoras en razonamiento profundo, inferencia y reducción de alucinaciones, así como un soporte mejorado para function calling. El autor reporta avances concretos en el conjunto de prueba AIME 2025, donde la precisión sube del 70 % al 87,5 %, a costa de un mayor uso de tokens por pregunta (de 12K a 23K de media).
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario tttoola en Hugging Face, con licencia MIT y orientado a tareas de extracción de características (feature-extraction) según el pipeline declarado. La model card describe una actualización significativa respecto a versiones anteriores, con mejoras en razonamiento profundo, inferencia y reducción de alucinaciones, así como un soporte mejorado para function calling. El autor reporta avances concretos en el conjunto de prueba AIME 2025, donde la precisión sube del 70 % al 87,5 %, a costa de un mayor uso de tokens por pregunta (de 12K a 23K de media).
 
 A pesar de estas afirmaciones, la información pública es muy limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni los detalles del entrenamiento. La model card incluye una tabla de benchmarks comparativos con otros modelos (Model1, Model2, Model1-v2) en categorías como razonamiento matemático, lógica, generación de código o traducción, pero sin detallar qué pruebas concretas se utilizaron. En conjunto, se trata de un modelo del que se conocen pocos datos verificables, por lo que cualquier evaluación rigurosa requeriría acceso al repositorio de código o a documentación adicional.
 
@@ -98,6 +98,6 @@ No se dispone de información suficiente para comparar MyAwesomeModel con modelo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/tttoola/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/tttoola/MyAwesomeModel-TestRepo
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información proporcionada.

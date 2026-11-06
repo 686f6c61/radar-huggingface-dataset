@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RSingh17/goemotions-roberta-large-quiz4 | 355 M | 512 tokens | Clasificacion multi-etiqueta de emociones (GoEmotions) | MIT | HuggingFace, 0 descargas, 1 like |
-| FacebookAI/roberta-large | 355 M | 512 tokens | Encoder base para fine-tuning | MIT | HuggingFace, ampliamente usado |
-| j-hartmann/emotion-english-distilroberta-base | ~82 M (DistilRoBERTa) | 512 tokens | Clasificacion de emociones (7 clases) | MIT | HuggingFace, muy popular |
-| SamLowe/roberta-base-go_emotions | ~125 M (RoBERTa-base) | 512 tokens | Clasificacion multi-etiqueta GoEmotions (28 etiquetas) | MIT | HuggingFace, ampliamente usado |
+| RSingh17/goemotions-roberta-large-quiz4 | 355 M | 512 tokens | Clasificacion multi-etiqueta de emociones (GoEmotions) | MIT | Hugging Face, 0 descargas, 1 like |
+| FacebookAI/roberta-large | 355 M | 512 tokens | Encoder base para fine-tuning | MIT | Hugging Face, ampliamente usado |
+| j-hartmann/emotion-english-distilroberta-base | ~82 M (DistilRoBERTa) | 512 tokens | Clasificacion de emociones (7 clases) | MIT | Hugging Face, muy popular |
+| SamLowe/roberta-base-go_emotions | ~125 M (RoBERTa-base) | 512 tokens | Clasificacion multi-etiqueta GoEmotions (28 etiquetas) | MIT | Hugging Face, ampliamente usado |
 
 Los dos modelos de la comparativa son los referentes habituales en clasificacion de emociones en ingles. El modelo de SamLowe emplea el mismo esquema de etiquetas de GoEmotions con una base mas pequena, lo que lo hace mas ligero y mejor documentado; el de j-hartmann cubre un conjunto reducido de emociones pero esta optimizado para despliegue. Este checkpoint no publica metricas que permitan situarlo frente a ellos.
 
@@ -85,8 +85,8 @@ Los dos modelos de la comparativa son los referentes habituales en clasificacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RSingh17/goemotions-roberta-large-quiz4
+- Modelo en Hugging Face: https://huggingface.co/RSingh17/goemotions-roberta-large-quiz4
 - Modelo base RoBERTa-large: https://huggingface.co/FacebookAI/roberta-large
 - Paper de RoBERTa: https://arxiv.org/abs/1907.11692
 - Paper de GoEmotions: https://arxiv.org/abs/2005.00547
-- Dataset GoEmotions en HuggingFace: https://huggingface.co/datasets/google-research-datasets/go_emotions
+- Dataset GoEmotions en Hugging Face: https://huggingface.co/datasets/google-research-datasets/go_emotions

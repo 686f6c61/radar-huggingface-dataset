@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`harry121/qwen3.5-4b-decision-model-lora` es un adaptador LoRA (PEFT) entrenado sobre el modelo base `unsloth/Qwen3.5-4B`, un modelo de generación de texto conversacional. El autor del repositorio es el usuario de HuggingFace "harry121", aunque no se ha publicado información sobre su identidad, afiliación ni el propósito concreto del ajuste fino más allá del nombre, que sugiere un enfoque en tareas de decisión o clasificación de decisiones.
+`harry121/qwen3.5-4b-decision-model-lora` es un adaptador LoRA (PEFT) entrenado sobre el modelo base `unsloth/Qwen3.5-4B`, un modelo de generación de texto conversacional. El autor del repositorio es el usuario de Hugging Face "harry121", aunque no se ha publicado información sobre su identidad, afiliación ni el propósito concreto del ajuste fino más allá del nombre, que sugiere un enfoque en tareas de decisión o clasificación de decisiones.
 
 La relevancia de este tipo de artefacto reside en su formato: al tratarse de un adaptador LoRA de pequeño tamaño (el repositorio ocupa unos 0,2 GB), puede cargarse dinámicamente sobre el modelo base sin necesidad de alojar un modelo completo de 4B de parámetros, lo que reduce drásticamente los requisitos de almacenamiento y facilita el intercambio de ajustes finos específicos de dominio.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|
 | harry121/qwen3.5-4b-decision-model-lora | Adaptador LoRA sobre Qwen3.5-4B | ~0,2 GB (adaptador) | no disponible | Sin documentación ni benchmarks |
 | unsloth/Qwen3.5-4B (modelo base) | Transformer denso de texto | ~4B parámetros | Consultar en su repositorio | Modelo completo, documentación del ecosistema Unsloth |
-| Otros adaptadores LoRA sobre Qwen3.5-4B en HuggingFace | Adaptadores PEFT | Variable (decenas a cientos de MB) | Variable | Amplia variedad de ajustes finos comunitarios sobre el mismo base |
+| Otros adaptadores LoRA sobre Qwen3.5-4B en Hugging Face | Adaptadores PEFT | Variable (decenas a cientos de MB) | Variable | Amplia variedad de ajustes finos comunitarios sobre el mismo base |
 
 No existen comparativas de rendimiento publicadas entre estos artefactos.
 
@@ -79,7 +79,7 @@ No existen comparativas de rendimiento publicadas entre estos artefactos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/harry121/qwen3.5-4b-decision-model-lora
+- Repositorio en Hugging Face: https://huggingface.co/harry121/qwen3.5-4b-decision-model-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Documentación de PEFT: https://huggingface.co/docs/peft
 - Paper de LoRA: https://arxiv.org/abs/2106.09685

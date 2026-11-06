@@ -2,7 +2,7 @@
 
 ## Resumen
 
-titlerat v1 es un modelo de generacion de texto especializado en una unica tarea: producir un titulo corto (una frase nominal) que resuma el tema y el tipo de una peticion conversacional. Lo desarrolla el usuario de HuggingFace Mouserat y esta pensado para poner nombre a las conversaciones en las listas de historial de una interfaz de chat, no para generar respuestas. Deriva por fine-tuning de google/mt5-small, un transformer encoder-decoder de tipo T5 multilingue con 300.168.576 parametros totales, publicado bajo licencia Apache-2.0.
+titlerat v1 es un modelo de generacion de texto especializado en una unica tarea: producir un titulo corto (una frase nominal) que resuma el tema y el tipo de una peticion conversacional. Lo desarrolla el usuario de Hugging Face Mouserat y esta pensado para poner nombre a las conversaciones en las listas de historial de una interfaz de chat, no para generar respuestas. Deriva por fine-tuning de google/mt5-small, un transformer encoder-decoder de tipo T5 multilingue con 300.168.576 parametros totales, publicado bajo licencia Apache-2.0.
 
 El modelo resuelve un problema de producto mas que de investigacion: etiquetar automaticamente sesiones de chat en japones e ingles sin consumir la ventana de contexto de un LLM grande ni pagar por llamadas a una API. Su entrada no es texto libre, sino un formato delimitado por cuatro tokens especiales anadidos (`<user>`, `</user>`, `<assistant>`, `</assistant>`) que separan la peticion del usuario de la respuesta del asistente, de modo que el titulo refleje el intercambio completo.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de tit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mouserat/titlerat
+- Hugging Face: https://huggingface.co/Mouserat/titlerat
 - Perfil del autor: https://huggingface.co/Mouserat
 - Dataset OysterCoreAI/SFT-General-Japanese-60K: https://huggingface.co/datasets/OysterCoreAI/SFT-General-Japanese-60K
 - Dataset kunishou/oasst1-chat-44k-ja: https://huggingface.co/datasets/kunishou/oasst1-chat-44k-ja

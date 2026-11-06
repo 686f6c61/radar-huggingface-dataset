@@ -100,7 +100,7 @@ La única comparación directa que puede establecerse con los datos aportados es
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión GGUF: https://huggingface.co/ShayonSarker/BioClinical-ModernBERT-Embeddings-GGUF
+- Repositorio Hugging Face de la conversión GGUF: https://huggingface.co/ShayonSarker/BioClinical-ModernBERT-Embeddings-GGUF
 - Modelo origen: https://huggingface.co/NeuML/bioclinical-modernbert-base-embeddings
 - Repositorio de construcción: https://github.com/Dadhichi-Sarker-Shayon/BioClinical-ModernBERT-Embeddings-GGUF
 - Artículo BioClinical ModernBERT (arXiv): https://arxiv.org/abs/2506.10896

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "rasulkhanbayov/ec-tttlrm-archive",
+  "slug": "rasulkhanbayov-ec-tttlrm-archive",
+  "author": "rasulkhanbayov",
+  "url": "https://huggingface.co/rasulkhanbayov/ec-tttlrm-archive",
+  "created_at": "2026-11-02T19:33:26.000Z",
+  "updated_at": "2026-11-03T11:16:05.000Z",
+  "license": "adobe-research-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "3d-reconstruction",
+    "novel-view-synthesis",
+    "gaussian-splatting",
+    "test-time-training",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 127536657664,
+  "storage_human": "127.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - cwchenwang/tttLRM: [CVPR 2026 Highlight] tttLRM: Test-Time ...",
+      "url": "https://github.com/cwchenwang/tttLRM",
+      "snippet": "[CVPR 2026 Highlight] tttLRM: Test-Time Training for Long Context and Autoregressive 3D Reconstruction - cwchenwang/tttLRM"
+    },
+    {
+      "title": "[2602.20160] tttLRM: Test-Time Training for Long Context and ...",
+      "url": "https://arxiv.org/abs/2602.20160",
+      "snippet": "We propose tttLRM, a novel large 3D reconstruction model that leverages a Test-Time Training (TTT) layer to enable long-context, autoregressive 3D reconstruction with linear computational complexity, further scaling the model's capability. Our framework efficiently compresses multiple image observations into the fast weights of the TTT layer, forming an implicit 3D representation in the latent ..."
+    }
+  ]
+}

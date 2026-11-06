@@ -86,7 +86,7 @@ No se han encontrado modelos comparables en la informacion proporcionada. Por lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hylin16/food-recognition-food11-effnet-b3-cbam-224
+- Modelo en Hugging Face: https://huggingface.co/hylin16/food-recognition-food11-effnet-b3-cbam-224
 - Repositorio de entrenamiento e inferencia: https://github.com/linhongyu510/food_recognition
 - Paper de CBAM: https://arxiv.org/abs/1807.06521
 - Dataset Food-11: no se proporciona enlace directo en la informacion disponible, pero esta referenciado por el nombre en la model card.

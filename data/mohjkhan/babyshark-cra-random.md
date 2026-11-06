@@ -21,7 +21,7 @@ La relevancia de esta ficha es acotada: se trata de un artefacto de investigaci�
 | Licencia | No disponible |
 | Formato de pesos | ckpt.pt (payload de torch.save con el state dict del adaptador, más optimizador, scheduler, step y RNG para reanudar). No se publican safetensors ni GGUF |
 
-Otros metadatos: máscara en modo random, 224 bloques de cabezas activos, 600 pasos de entrenamiento, lr 1e-4, seed 0. Tamaño del repositorio: 0,0 GB según HuggingFace.
+Otros metadatos: máscara en modo random, 224 bloques de cabezas activos, 600 pasos de entrenamiento, lr 1e-4, seed 0. Tamaño del repositorio: 0,0 GB según Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la tare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohjkhan/babyshark-cra-random
+- Modelo en Hugging Face: https://huggingface.co/mohjkhan/babyshark-cra-random
 - Modelo base Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Dataset de entrenamiento: https://huggingface.co/datasets/satyam-arora-iiit-hyderabad/babyshark-sail2017-stage2
 - Repositorio del proyecto InterpAdapt-Hinglish-finetuning: https://github.com/bala-skv/InterpAdapt-Hinglish-finetuning

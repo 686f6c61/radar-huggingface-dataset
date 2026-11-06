@@ -71,8 +71,8 @@ Intervalo de confianza Wilson al 95%: entrenado 92,9–100%; congelado 1,1–13,
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aptheos/lfm2-350m-click-test-grpo | 350M (base) + LoRA r8 | no disponible | `click-test` MiniWoB | LFM Open License v1.0 | HuggingFace (0 descargas) |
-| LiquidAI/LFM2-350M (base) | 350M | no disponible | Generación de texto general | LFM Open License v1.0 | HuggingFace |
+| Aptheos/lfm2-350m-click-test-grpo | 350M (base) + LoRA r8 | no disponible | `click-test` MiniWoB | LFM Open License v1.0 | Hugging Face (0 descargas) |
+| LiquidAI/LFM2-350M (base) | 350M | no disponible | Generación de texto general | LFM Open License v1.0 | Hugging Face |
 | Otros adaptadores GRPO para control de navegador | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre alternativas comparables de la misma categoría (adaptadores LoRA para control de navegador sobre modelos pequeños) en la información proporcionada.
@@ -90,7 +90,7 @@ No se dispone de información sobre alternativas comparables de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aptheos/lfm2-350m-click-test-grpo
+- Modelo en Hugging Face: https://huggingface.co/Aptheos/lfm2-350m-click-test-grpo
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-350M
 - Repositorio de código: https://github.com/DerrickKirimi/browser-control
 - Guía de reproducción: https://github.com/DerrickKirimi/browser-control/blob/main/docs/reproducing.md

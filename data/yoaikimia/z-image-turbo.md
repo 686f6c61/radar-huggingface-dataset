@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Z-Image-Turbo es un modelo de generación de imágenes de texto a imagen desarrollado por Tongyi-MAI (Alibaba) y distribuido en HuggingFace bajo el identificador `Tongyi-MAI/Z-Image-Turbo`. La versión alojada en `YoAiKimia/Z-Image-Turbo` es una re-subida de terceros con acceso restringido (gated), que no añade información adicional sobre el modelo original. Se trata de un modelo open-source de 6 mil millones de parámetros, diseñado para producir imágenes fotorrealistas en menos de un segundo, con especial énfasis en el renderizado preciso de texto bilingüe (chino e inglés) y en la comprensión profunda de prompts mediante un mecanismo de "Prompt Enhancer" que incorpora razonamiento sobre el conocimiento del mundo.
+Z-Image-Turbo es un modelo de generación de imágenes de texto a imagen desarrollado por Tongyi-MAI (Alibaba) y distribuido en Hugging Face bajo el identificador `Tongyi-MAI/Z-Image-Turbo`. La versión alojada en `YoAiKimia/Z-Image-Turbo` es una re-subida de terceros con acceso restringido (gated), que no añade información adicional sobre el modelo original. Se trata de un modelo open-source de 6 mil millones de parámetros, diseñado para producir imágenes fotorrealistas en menos de un segundo, con especial énfasis en el renderizado preciso de texto bilingüe (chino e inglés) y en la comprensión profunda de prompts mediante un mecanismo de "Prompt Enhancer" que incorpora razonamiento sobre el conocimiento del mundo.
 
 El modelo se posiciona como una alternativa abierta a sistemas propietarios como Midjourney o FLUX, ofreciendo una generación rápida y de alta calidad con requisitos de hardware moderados (12 GB de VRAM según la documentación del sitio oficial). Su relevancia actual radica en la combinación de velocidad, calidad y apertura, lo que lo hace atractivo para integraciones en producción y para la comunidad de desarrolladores que buscan control total sobre el pipeline de generación.
 
@@ -56,23 +56,23 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Z-Image-Turbo | 6B | no disponible | Generación <1s (no verificado) | no disponible | Open-source (repo gated) |
-| FLUX.1 [schnell] | 12B | no disponible | Generación rápida (4 pasos) | Apache 2.0 | Abierto en HuggingFace |
-| SDXL | 3.5B | no disponible | Generación estándar | OpenRAIL++ | Abierto en HuggingFace |
+| FLUX.1 [schnell] | 12B | no disponible | Generación rápida (4 pasos) | Apache 2.0 | Abierto en Hugging Face |
+| SDXL | 3.5B | no disponible | Generación estándar | OpenRAIL++ | Abierto en Hugging Face |
 
 La comparativa es cualitativa, ya que no hay benchmarks comunes. Z-Image-Turbo se posiciona como una alternativa ligera a FLUX, con la ventaja de un renderizado de texto bilingüe superior, pero con menos parámetros y sin datos de rendimiento verificados.
 
 ## Limitaciones y advertencias
 
 - No se dispone de información sobre sesgos o alucinaciones; al ser un modelo de generación de imágenes, puede producir artefactos visuales o interpretaciones erróneas de prompts complejos.
-- El acceso al repositorio de HuggingFace es restringido (gated), lo que obliga a los usuarios a aceptar condiciones adicionales antes de descargar los pesos.
+- El acceso al repositorio de Hugging Face es restringido (gated), lo que obliga a los usuarios a aceptar condiciones adicionales antes de descargar los pesos.
 - La licencia no está especificada en la información disponible, lo que genera incertidumbre sobre el uso comercial. Se recomienda consultar la página del modelo original (Tongyi-MAI/Z-Image-Turbo) para conocer los términos exactos.
 - El modelo solo soporta chino e inglés; no se garantiza un buen rendimiento en otros idiomas.
 - No hay documentación oficial sobre el pipeline de inferencia, lo que dificulta la integración en entornos de producción sin trabajo adicional de adaptación.
 
 ## Enlaces
 
-- Repositorio HuggingFace (YoAiKimia): https://huggingface.co/YoAiKimia/Z-Image-Turbo
-- Repositorio HuggingFace (Tongyi-MAI, original): https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
+- Repositorio Hugging Face (YoAiKimia): https://huggingface.co/YoAiKimia/Z-Image-Turbo
+- Repositorio Hugging Face (Tongyi-MAI, original): https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Sitio web promocional: https://zimageturbo.io/en
 - Sitio web alternativo: https://www.z-image-ai.io/
 - Sitio web con especificaciones de hardware: https://zimage-ai.com/

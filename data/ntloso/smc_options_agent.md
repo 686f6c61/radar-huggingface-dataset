@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ntloso/smc_options_agent` es un repositorio alojado en HuggingFace con licencia MIT, creado por el usuario ntloso el 3 de septiembre de 2026. Según la información disponible, no se ha publicado ninguna descripción técnica, arquitectura, parámetros, ni documentación adicional en la model card, que únicamente contiene la línea `license: mit`. El nombre sugiere una posible orientación a agentes para opciones financieras (options), pero no hay evidencia pública que lo confirme.
+El modelo `ntloso/smc_options_agent` es un repositorio alojado en Hugging Face con licencia MIT, creado por el usuario ntloso el 3 de septiembre de 2026. Según la información disponible, no se ha publicado ninguna descripción técnica, arquitectura, parámetros, ni documentación adicional en la model card, que únicamente contiene la línea `license: mit`. El nombre sugiere una posible orientación a agentes para opciones financieras (options), pero no hay evidencia pública que lo confirme.
 
 En el momento de la consulta, el modelo registra cero descargas y cero likes, lo que indica que es un repositorio reciente o sin difusión. No se dispone de datos sobre su pipeline, idiomas soportados, ni resultados de benchmarks. Dada la ausencia total de especificaciones, cualquier uso en producción o evaluación rigurosa resulta inviable sin información adicional por parte del autor.
 
@@ -54,4 +54,4 @@ No disponible. Al no existir información sobre el modelo, no se puede establece
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ntloso/smc_options_agent
+- Repositorio en Hugging Face: https://huggingface.co/ntloso/smc_options_agent

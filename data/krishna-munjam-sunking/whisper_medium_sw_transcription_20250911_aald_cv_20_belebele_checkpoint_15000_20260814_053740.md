@@ -6,7 +6,7 @@ El modelo `krishna-munjam-sunking/whisper_medium_sw_transcription_20250911_aald_
 
 Con 763,86 millones de parámetros, hereda la arquitectura del Whisper Medium original, diseñada para procesar hasta 30 segundos de audio por pasada y generar texto transcrito. El checkpoint corresponde al paso 15000 de entrenamiento, lo que indica un fine-tuning relativamente extenso. Es relevante porque cubre un hueco en el ecosistema de modelos de transcripción para lenguas africanas con pocos recursos, aunque la información pública disponible es muy limitada y no se han publicado métricas de evaluación.
 
-El repositorio pesa 27,5 GB, lo que es consistente con los pesos en safetensors de un modelo de este tamaño (los pesos de Whisper Medium ocupan aproximadamente 3 GB en fp32, pero el tamaño del repo sugiere que podría incluir múltiples formatos o checkpoints adicionales). No se especifica licencia, pipeline ni idiomas soportados en la ficha de HuggingFace, por lo que cualquier despliegue en producción requiere verificar estos aspectos con el autor.
+El repositorio pesa 27,5 GB, lo que es consistente con los pesos en safetensors de un modelo de este tamaño (los pesos de Whisper Medium ocupan aproximadamente 3 GB en fp32, pero el tamaño del repo sugiere que podría incluir múltiples formatos o checkpoints adicionales). No se especifica licencia, pipeline ni idiomas soportados en la ficha de Hugging Face, por lo que cualquier despliegue en producción requiere verificar estos aspectos con el autor.
 
 ## Especificaciones tecnicas
 
@@ -54,17 +54,17 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia en fp32: aproximadamente 3,1 GB solo para los pesos, más overhead de activaciones y audio, por lo que se recomienda al menos 6 GB de VRAM para inferencia básica con batch size 1.
 - Con cuantización a int8 o fp16 (no publicada en el repo, pero aplicable al modelo base), la VRAM se reduce a ~1,6 GB y ~2 GB respectivamente, permitiendo ejecución en GPUs de consumo como RTX 3060 o RTX 4060.
 - GPUs recomendadas: cualquier GPU con al menos 8 GB de VRAM (RTX 3070, RTX 4060 Ti, A10) para inferencia cómoda; para entrenamiento adicional se necesitaría una GPU con 16-24 GB (RTX 3090, A100).
-- Opciones de despliegue: vLLM no es compatible con Whisper directamente (está orientado a LLMs), pero se puede usar con transformers de HuggingFace, o mediante el pipeline de `transformers` para audio. También se puede exportar a ONNX o TensorRT para optimización.
+- Opciones de despliegue: vLLM no es compatible con Whisper directamente (está orientado a LLMs), pero se puede usar con transformers de Hugging Face, o mediante el pipeline de `transformers` para audio. También se puede exportar a ONNX o TensorRT para optimización.
 - Latencia estimada: en una RTX 3090, Whisper Medium tarda aproximadamente 1-2 segundos en transcribir un segmento de 30 segundos de audio; en CPU (sin GPU) puede tardar 10-20 segundos por segmento, lo que limita su uso en tiempo real.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este fine-tuning (whisper_medium_sw) | 763,86 M | 30 s audio | swahili (no confirmado) | no disponible | HuggingFace |
-| openai/whisper-medium | 763,86 M | 30 s audio | 99 idiomas | MIT | HuggingFace |
-| openai/whisper-large-v3 | 1.550 M | 30 s audio | 99 idiomas | MIT | HuggingFace |
-| mozilla/faster-whisper-medium | 763,86 M | 30 s audio | 99 idiomas | MIT | HuggingFace |
+| Este fine-tuning (whisper_medium_sw) | 763,86 M | 30 s audio | swahili (no confirmado) | no disponible | Hugging Face |
+| openai/whisper-medium | 763,86 M | 30 s audio | 99 idiomas | MIT | Hugging Face |
+| openai/whisper-large-v3 | 1.550 M | 30 s audio | 99 idiomas | MIT | Hugging Face |
+| mozilla/faster-whisper-medium | 763,86 M | 30 s audio | 99 idiomas | MIT | Hugging Face |
 
 La comparativa se basa en el modelo base, ya que no hay benchmarks propios. Whisper-large-v3 ofrece mejor rendimiento general en WER, pero requiere más VRAM (3 GB en fp16). faster-whisper-medium es una reimplementación optimizada de Whisper Medium con CTranslate2 que ofrece menor latencia y soporte de cuantización, sin pérdida significativa de calidad. Este fine-tuning solo tiene sentido si se demuestra una mejora sustancial en swahili, algo que no está documentado.
 
@@ -79,7 +79,7 @@ La comparativa se basa en el modelo base, ya que no hay benchmarks propios. Whis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/krishna-munjam-sunking/whisper_medium_sw_transcription_20250911_aald_cv_20_belebele_checkpoint_15000_20260814_053740
+- Repositorio Hugging Face: https://huggingface.co/krishna-munjam-sunking/whisper_medium_sw_transcription_20250911_aald_cv_20_belebele_checkpoint_15000_20260814_053740
 - Modelo base Whisper Medium: https://huggingface.co/openai/whisper-medium
 - Paper original de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - Common Voice (dataset): https://commonvoice.mozilla.org/

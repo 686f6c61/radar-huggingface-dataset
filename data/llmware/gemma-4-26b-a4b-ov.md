@@ -6,7 +6,7 @@
 
 El problema que resuelve es la optimización de despliegue: un modelo MoE de 26B ofrece la capacidad de representación de un modelo de ese tamaño, pero solo activa 4B parámetros por token, lo que reduce el coste computacional por token hasta niveles cercanos a un modelo denso de 4B. La conversión a OpenVINO añade cuantización y grafos optimizados para CPU Intel (Xeon, Core Ultra) y GPU Intel (Arc, integradas), lo que permite ejecutar el modelo en infraestructura sin GPUs NVIDIA.
 
-La relevancia de esta ficha es limitada por la escasez de documentación: la model card publicada no contiene más que la línea de licencia `gemma`, sin descripción, sin especificaciones de contexto ni datos de entrenamiento. Todo lo que figura a continuación procede del identificador del repositorio, del tamaño del mismo (15,3 GB) y de convenciones conocidas de la familia Gemma y del ecosistema OpenVINO; se marca explícitamente como "no disponible" cualquier dato que no pueda sostenerse en la información proporcionada. La fecha de publicación registrada en HuggingFace es el 12 de septiembre de 2026.
+La relevancia de esta ficha es limitada por la escasez de documentación: la model card publicada no contiene más que la línea de licencia `gemma`, sin descripción, sin especificaciones de contexto ni datos de entrenamiento. Todo lo que figura a continuación procede del identificador del repositorio, del tamaño del mismo (15,3 GB) y de convenciones conocidas de la familia Gemma y del ecosistema OpenVINO; se marca explícitamente como "no disponible" cualquier dato que no pueda sostenerse en la información proporcionada. La fecha de publicación registrada en Hugging Face es el 12 de septiembre de 2026.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es limitada por la escasez de documentación: la mod
 | Licencia | Gemma (términos de uso de Google para la familia Gemma) |
 | Formato de pesos | OpenVINO IR (`.xml` + `.bin`), etiqueta `openvino` |
 | Tamaño del repositorio | 15,3 GB |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Fecha de publicación | 12 de septiembre de 2026 |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
@@ -38,7 +38,7 @@ Tampoco hay información sobre el corpus de entrenamiento, el número de tokens 
 - Razonamiento matemático: no confirmado en la información disponible.
 - Soporte de *tool calling* / *function calling*: no disponible.
 - Soporte para agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; la ficha de HuggingFace no declara ningún idioma.
+- Capacidades multilingües: no disponible; la ficha de Hugging Face no declara ningún idioma.
 - Capacidades multimodales (visión, audio): no disponible; el identificador no incluye ningún sufijo que indique modalidad adicional.
 - Modo de razonamiento extendido (*thinking mode*): no disponible.
 - Inferencia optimizada en hardware Intel: capacidad confirmada por el propio formato OpenVINO IR del repositorio.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM/RAM estimada en int4: ~13-15 GB, coherente con los 15,3 GB del repositorio publicado; esta es la configuración presumiblemente lista para usar.
 - GPU recomendadas: Intel Arc A770 (16 GB) y Arc B580 (12 GB) para las variantes cuantizadas; Intel Data Center GPU Max para despliegues en servidor; GPU NVIDIA A100 40/80 GB y H100 80 GB si se convierte a otro formato. En CPU, Xeon Scalable de cuarta generación o posterior con AMX, o Core Ultra.
 - ¿Cabe en GPU de consumo? La variante int4 ocupa ~15 GB, por lo que encaja en tarjetas de 16 GB o más (RTX 4080/4090/5080, Arc A770). En tarjetas de 12 GB el margen es insuficiente para los 26B completos, salvo *offloading* parcial a RAM, que degrada la latencia de forma notable.
-- Opciones de despliegue: OpenVINO GenAI (ruta nativa para este repositorio), Optimum-Intel para integración con HuggingFace Transformers, y servidores compatibles con OpenVINO. vLLM, llama.cpp, Ollama y TGI no pueden consumir directamente pesos en formato OpenVINO IR; requerirían una reconversión a safetensors o GGUF que no se ha publicado en este repositorio.
+- Opciones de despliegue: OpenVINO GenAI (ruta nativa para este repositorio), Optimum-Intel para integración con Hugging Face Transformers, y servidores compatibles con OpenVINO. vLLM, llama.cpp, Ollama y TGI no pueden consumir directamente pesos en formato OpenVINO IR; requerirían una reconversión a safetensors o GGUF que no se ha publicado en este repositorio.
 - Latencia y throughput: no disponibles. Como referencia estructural, el throughput se aproxima al de un modelo denso de 4B por el número de parámetros activos, mientras que el ancho de banda de memoria necesario para recorrer los 26B en cada paso limita la velocidad en configuraciones con *offloading*.
 
 ## Comparativa con modelos similares
@@ -94,8 +94,8 @@ La diferencia principal frente a las alternativas es el canal de despliegue: est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/llmware/gemma-4-26b-a4b-ov
-- Organización llmware en HuggingFace: https://huggingface.co/llmware
+- Repositorio en Hugging Face: https://huggingface.co/llmware/gemma-4-26b-a4b-ov
+- Organización llmware en Hugging Face: https://huggingface.co/llmware
 - Términos de licencia Gemma: https://ai.google.dev/gemma/terms
 - Documentación de OpenVINO GenAI: https://docs.openvino.ai/2024/learn-openvino/llm_inference_guide/genai-guide.html
 - Optimum-Intel (integración de OpenVINO con Transformers): https://github.com/huggingface/optimum-intel

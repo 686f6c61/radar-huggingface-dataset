@@ -114,7 +114,7 @@ No se dispone de comparaciones cuantitativas de rendimiento entre estas opciones
 ## Enlaces
 
 - Repositorio de la conversión GGUF: https://huggingface.co/mu2solutions/Molmo2-4B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/allenai/Molmo2-4B
+- Modelo base en Hugging Face: https://huggingface.co/allenai/Molmo2-4B
 - Página del proyecto Molmo en Ai2: https://allenai.org/molmo
 - Código de Molmo2 en GitHub: https://github.com/allenai/molmo2
 - Código de Molmo (versión anterior) en GitHub: https://github.com/allenai/molmo

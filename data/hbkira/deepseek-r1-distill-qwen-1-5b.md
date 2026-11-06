@@ -74,11 +74,11 @@ Estas cifras deben tomarse con cautela: el repositorio no las reproduce ni las v
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,78 B | 32.768 tokens (Qwen2.5) | Razonamiento destilado de R1 | MIT | HuggingFace (oficial y resubidas) |
-| DeepSeek-R1-Distill-Qwen-7B | ~7,6 B | 32.768 tokens | Razonamiento destilado de R1 | MIT | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (extensible a 128K con YaRN) | Instrucciones generales y tool calling | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B / 3B Instruct | 1,24 B / 3,21 B | 128.000 tokens | Instrucciones generales y multilingue | Llama 3.2 Community License | HuggingFace |
-| Gemma-2-2B-it | 2,61 B | 8.192 tokens | Instrucciones y seguridad | Gemma Terms of Use | HuggingFace |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,78 B | 32.768 tokens (Qwen2.5) | Razonamiento destilado de R1 | MIT | Hugging Face (oficial y resubidas) |
+| DeepSeek-R1-Distill-Qwen-7B | ~7,6 B | 32.768 tokens | Razonamiento destilado de R1 | MIT | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (extensible a 128K con YaRN) | Instrucciones generales y tool calling | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B / 3B Instruct | 1,24 B / 3,21 B | 128.000 tokens | Instrucciones generales y multilingue | Llama 3.2 Community License | Hugging Face |
+| Gemma-2-2B-it | 2,61 B | 8.192 tokens | Instrucciones y seguridad | Gemma Terms of Use | Hugging Face |
 
 En tareas de matematicas y razonamiento estructurado, la version destilada de R1 supera tipicamente a los instruct de tamano equivalente, a costa de respuestas mucho mas largas y de un peor comportamiento en conversacion general y en instrucciones sencillas. Frente a Qwen2.5-1.5B-Instruct, la diferencia clave es el enfoque: R1-Distill prioriza el razonamiento; Qwen2.5-Instruct prioriza utilidad general, contexto extensible y soporte de herramientas. Los datos de rendimiento comparativo de este repositorio concreto no estan disponibles.
 
@@ -104,6 +104,6 @@ En tareas de matematicas y razonamiento estructurado, la version destilada de R1
 - Licencia del proyecto: https://github.com/deepseek-ai/DeepSeek-R1/blob/main/LICENSE
 - Web de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organizacion DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Discord de DeepSeek AI: https://discord.gg/Tc7c45Zzu5
 - Cuenta de X (Twitter) de DeepSeek AI: https://twitter.com/deepseek_ai

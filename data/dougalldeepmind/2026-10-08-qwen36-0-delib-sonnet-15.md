@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables con d
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/dougalldeepmind/2026-10-08-qwen36-0-delib-sonnet-15
+- Hugging Face (adaptador): https://huggingface.co/dougalldeepmind/2026-10-08-qwen36-0-delib-sonnet-15
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/dougalldeepmind/2026-10-08-delib-sonnet-15-mix
 - Repositorio de codigo: https://github.com/Matthew-Bozoukov/Lessons_from_constituitional_AFT.git (commit 0127156c463d7ee8a6734d8c1a139f9b957a6272)

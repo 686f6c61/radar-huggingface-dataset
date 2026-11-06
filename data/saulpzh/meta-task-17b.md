@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Meta-Task-17B es un modelo publicado en HuggingFace por el usuario saulpzh bajo licencia Apache 2.0. La model card asociada no contiene más que la declaración de licencia, sin descripción, documentación técnica ni instrucciones de uso. El nombre sugiere un modelo de 17.000 millones de parámetros orientado a "meta-tareas", pero no hay información pública que confirme ni la arquitectura ni el propósito real del modelo.
+Meta-Task-17B es un modelo publicado en Hugging Face por el usuario saulpzh bajo licencia Apache 2.0. La model card asociada no contiene más que la declaración de licencia, sin descripción, documentación técnica ni instrucciones de uso. El nombre sugiere un modelo de 17.000 millones de parámetros orientado a "meta-tareas", pero no hay información pública que confirme ni la arquitectura ni el propósito real del modelo.
 
 El repositorio no registra descargas ni interacciones en el momento de la consulta, y los resultados de búsqueda web no aportan documentación adicional (el único resultado devuelto es una página de error de un sitio minorista, sin relación con el modelo). Esto implica que cualquier dato técnico más allá de la licencia y el identificador debe considerarse no disponible.
 
@@ -41,7 +41,7 @@ Tampoco hay evidencia de innovaciones técnicas destacables (decodificación esp
 No es posible recomendar casos de uso concretos sin documentación técnica que acredite las capacidades del modelo. Los siguientes escenarios son únicamente hipótesis condicionadas a una validación previa:
 
 - Evaluación interna controlada: probar el modelo en un entorno aislado para determinar empíricamente sus capacidades antes de considerar cualquier uso.
-- Investigación sobre modelos poco documentados: analizar sus pesos y comportamiento para estudiar prácticas de publicación en HuggingFace.
+- Investigación sobre modelos poco documentados: analizar sus pesos y comportamiento para estudiar prácticas de publicación en Hugging Face.
 - Experimentación académica: usar el modelo como objeto de estudio en trabajos sobre reproducibilidad y documentación de modelos.
 - Pruebas de infraestructura: validar pipelines de despliegue (vLLM, TGI) con un checkpoint de 17B sin requisitos de licencia restrictivos.
 - Comparativas de licencia: servir como referencia de modelo Apache 2.0 en estudios sobre ecosistema open source.
@@ -77,7 +77,7 @@ No disponible. Sin datos de arquitectura, contexto, benchmarks ni formato de pes
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/saulpzh/Meta-Task-17B
+- Hugging Face: https://huggingface.co/saulpzh/Meta-Task-17B
 - Paper: no disponible
 - Blog o documentación del autor: no disponible
 - Repositorio de código: no disponible

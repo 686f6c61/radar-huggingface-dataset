@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (GR00T N1.7 ajustado) | 3.144.016.000 | no disponible | apache-2.0 | HuggingFace, vía LeRobot |
+| Este checkpoint (GR00T N1.7 ajustado) | 3.144.016.000 | no disponible | apache-2.0 | Hugging Face, vía LeRobot |
 | GR00T N1.7 base (NVIDIA) | no disponible | no disponible | no disponible | GitHub Isaac-GR00T |
-| Otras políticas LeRobot (p. ej. ACT, Diffusion Policy) | no disponible | no disponible | no disponible | HuggingFace, vía LeRobot |
+| Otras políticas LeRobot (p. ej. ACT, Diffusion Policy) | no disponible | no disponible | no disponible | Hugging Face, vía LeRobot |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_complex__point__separate_channel__sim__all_cameras__live__groot__seed_0
+- Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_complex__point__separate_channel__sim__all_cameras__live__groot__seed_0
 - Dataset de entrenamiento: https://huggingface.co/datasets/mim-chess-vlas/train_800_complex__point__separate_channel__sim__all_cameras__live
 - Repositorio GR00T de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T
 - Guía LeRobot para GR00T: https://huggingface.co/docs/lerobot/main/en/groot

@@ -12,7 +12,7 @@ Al tratarse de una variante de ~86M de parametros derivada de la familia Goldfis
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, familia GPT-2 (segun el tag `gpt2` de HuggingFace); numero de capas y cabezas no disponible |
+| Arquitectura | Transformer decoder-only, familia GPT-2 (segun el tag `gpt2` de Hugging Face); numero de capas y cabezas no disponible |
 | Parametros totales | 86.508.288 (dato real de safetensors) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -61,17 +61,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 0,35 GB en FP32, 0,17 GB en FP16/BF16, 0,09 GB en INT8 y 0,04 GB en INT4, calculado a partir de los 86,5M de parametros; hay que sumar la memoria del cache KV, que con una ventana de contexto corta es despreciable.
 - GPU recomendadas: cualquier GPU con 2 GB o mas de memoria es suficiente; no se necesita A100, H100 ni hardware de centro de datos. Una GTX 1050 Ti, una MX150 o una iGPU moderna serian suficientes.
 - Cabe en GPU de consumo: si, en practicamente todas, incluidas las integradas, e incluso puede ejecutarse en CPU con latencias aceptables.
-- Opciones de despliegue: transformers (soporte nativo confirmado por la libreria declarada), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible`), y servidores compatibles con la API de HuggingFace. vLLM o llama.cpp requeririan conversion previa a los formatos que soportan; no hay pesos GGUF publicados.
+- Opciones de despliegue: transformers (soporte nativo confirmado por la libreria declarada), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible`), y servidores compatibles con la API de Hugging Face. vLLM o llama.cpp requeririan conversion previa a los formatos que soportan; no hay pesos GGUF publicados.
 - Latencia y throughput: no disponibles. No se han publicado mediciones. Por tamano, cabe esperar que en una GPU moderna el modelo este limitado por el coste de lanzamiento de kernels mas que por el ancho de banda de memoria, pero no hay datos verificables que permitan cifrarlo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ppt-wc-uniform-newlex-eus-after-100mb-packed-bfd_seed10 | 86,5M | No disponible | No disponible | No disponible | Repositorio HuggingFace, 0 descargas |
+| ppt-wc-uniform-newlex-eus-after-100mb-packed-bfd_seed10 | 86,5M | No disponible | No disponible | No disponible | Repositorio Hugging Face, 0 descargas |
 | goldfish-models/eng_latn_100mb (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada | Coleccion publica de goldfish-models |
-| GPT-2 small | 124M | 1024 tokens | Metricas ampliamente reportadas en la literatura original | Licencia del release original de OpenAI | Ampliamente disponible en HuggingFace |
-| DistilGPT-2 | 82M | 1024 tokens | Metricas publicadas en el articulo de destilacion de HuggingFace | Apache 2.0 | Ampliamente disponible en HuggingFace |
+| GPT-2 small | 124M | 1024 tokens | Metricas ampliamente reportadas en la literatura original | Licencia del release original de OpenAI | Ampliamente disponible en Hugging Face |
+| DistilGPT-2 | 82M | 1024 tokens | Metricas publicadas en el articulo de destilacion de Hugging Face | Apache 2.0 | Ampliamente disponible en Hugging Face |
 
 La comparacion con GPT-2 small y DistilGPT-2 se incluye unicamente por proximidad de tamano; no implica que existan resultados comparables, ya que este modelo no publica evaluacion alguna. Los datos de contexto y licencia de los modelos de referencia corresponden a sus releases originales y no se han verificado en el contexto de esta ficha mas alla de lo indicado.
 
@@ -89,7 +89,7 @@ La comparacion con GPT-2 small y DistilGPT-2 se incluye unicamente por proximida
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-eus-after-100mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-eus-after-100mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Experimento de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/n90ogo02
 - Repositorio de TRL: https://github.com/huggingface/trl

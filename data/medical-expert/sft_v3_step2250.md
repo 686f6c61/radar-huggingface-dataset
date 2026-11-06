@@ -76,7 +76,7 @@ La tabla de benchmarks ya incluye comparaciones con tres modelos de referencia (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/medical-expert/sft_v3_step2250
+- Hugging Face: https://huggingface.co/medical-expert/sft_v3_step2250
 - GitHub - ExpertOpsAI/MedicalModelLibrary: https://github.com/ExpertOpsAI/MedicalModelLibrary/
 - MedGemma (Google DeepMind): https://deepmind.google/models/gemma/medgemma/
 - Health AI (Google AI): https://ai.google/health/

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MiniMax-M3.1-Flash es un modelo de lenguaje multimodal nativo de tipo mixture-of-experts (MoE) desarrollado por MiniMax AI, distribuido en HuggingFace bajo el identificador `arbonquants/MiniMax-M3.1-Flash`. Esta orientado a tareas de programacion, flujos de trabajo agenticos, uso de ordenador (computer use) y ciberseguridad, y acepta entradas de texto, imagen y video con una ventana de contexto de hasta 1.000.000 de tokens. Segun la model card, el modelo declara aproximadamente 428.000 millones de parametros totales con 23.000 millones activados por token.
+MiniMax-M3.1-Flash es un modelo de lenguaje multimodal nativo de tipo mixture-of-experts (MoE) desarrollado por MiniMax AI, distribuido en Hugging Face bajo el identificador `arbonquants/MiniMax-M3.1-Flash`. Esta orientado a tareas de programacion, flujos de trabajo agenticos, uso de ordenador (computer use) y ciberseguridad, y acepta entradas de texto, imagen y video con una ventana de contexto de hasta 1.000.000 de tokens. Segun la model card, el modelo declara aproximadamente 428.000 millones de parametros totales con 23.000 millones activados por token.
 
 La ficha tecnica publica indica que se apoya en MiniMax Sparse Attention (MSA) en todas sus capas, entrenamiento con cuantizacion consciente (quantization-aware training) y decodificacion especulativa DSpark mediante una cabeza borrador incluida en el repositorio. Estas innovaciones buscan mejorar la eficiencia de inferencia en un modelo de gran tamano y contexto muy largo, un perfil que hasta hace poco requeria despliegues dedicados en centros de datos.
 
-Es relevante ahora porque combina tres tendencias simultaneas: modelos MoE de gran escala con parametros activos reducidos, atencion dispersa para contextos de un millon de tokens y soporte multimodal nativo con capacidad agentica. No obstante, conviene advertir que el repositorio de HuggingFace presenta discrepancias con la model card: los pesos publicados suman 220.490.854.016 parametros (220.490 millones) frente a los 428.000 millones declarados, y el tamano del repositorio es de 252,4 GB.
+Es relevante ahora porque combina tres tendencias simultaneas: modelos MoE de gran escala con parametros activos reducidos, atencion dispersa para contextos de un millon de tokens y soporte multimodal nativo con capacidad agentica. No obstante, conviene advertir que el repositorio de Hugging Face presenta discrepancias con la model card: los pesos publicados suman 220.490.854.016 parametros (220.490 millones) frente a los 428.000 millones declarados, y el tamano del repositorio es de 252,4 GB.
 
 ## Especificaciones tecnicas
 
@@ -83,7 +83,7 @@ La model card solo incluye la comparativa completa para Automation-Bench v1.0.6;
 
 | Modelo | Parametros | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-M3.1-Flash | 428B declarados / 220,5B en safetensors, 23B activos | 1.000.000 | MiniMax Community | Texto, imagen, video | HuggingFace |
+| MiniMax-M3.1-Flash | 428B declarados / 220,5B en safetensors, 23B activos | 1.000.000 | MiniMax Community | Texto, imagen, video | Hugging Face |
 | DeepSeek V4.1 Flash | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Kimi K3 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | GLM-5.3 | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -105,9 +105,9 @@ Los modelos comparables citados en la model card (DeepSeek V4.1 Flash, Kimi K3, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arbonquants/MiniMax-M3.1-Flash
+- Hugging Face: https://huggingface.co/arbonquants/MiniMax-M3.1-Flash
 - Paper arXiv: https://arxiv.org/abs/2606.13392
-- Organizacion MiniMax en HuggingFace: https://huggingface.co/MiniMaxAI
+- Organizacion MiniMax en Hugging Face: https://huggingface.co/MiniMaxAI
 - Web oficial: https://www.minimax.io
 - Documentacion de API: https://platform.minimax.io/docs/guides/text-generation
 - MiniMax Code: https://agent.minimax.io/

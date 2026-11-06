@@ -80,7 +80,7 @@ La comparación con alternativas abiertas de tamaño similar (por ejemplo, varia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ianivs/Qwen-3.8-27B-Uncensored-LocalCode-4bit
-- Carpeta del conversor (MIT), incluida en el repositorio: `converter/` dentro del mismo repo de HuggingFace
+- Modelo en Hugging Face: https://huggingface.co/ianivs/Qwen-3.8-27B-Uncensored-LocalCode-4bit
+- Carpeta del conversor (MIT), incluida en el repositorio: `converter/` dentro del mismo repo de Hugging Face
 - Local Code (aplicación anfitriona): no se proporciona URL en la información disponible
 - Documentación de Qwen: no se proporciona URL en la información disponible

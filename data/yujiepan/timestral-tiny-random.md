@@ -69,10 +69,10 @@ Como contexto del modelo base y no de este checkpoint: la información de prensa
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yujiepan/timestral-tiny-random` (este) | 671.360 | 1.024 | Forecasting con pesos aleatorios, solo depuración | no disponible | HuggingFace, requiere paquete `timestral` |
-| `mistralai/Timestral-209M` | 209M | no disponible en la información | Forecasting zero-shot preentrenado | no disponible en la información | HuggingFace, paquete `timestral` |
-| Resto de la familia Timestral (desde 5M) | 5M–209M | no disponible | Forecasting zero-shot preentrenado | no disponible | HuggingFace; nombres y configuraciones exactas no disponibles |
-| `yujiepan/llama-3.1-tiny-random` | 1,03M | no disponible | Modelo de lenguaje causal aleatorio, depuración | no disponible | HuggingFace, pipeline text-generation |
+| `yujiepan/timestral-tiny-random` (este) | 671.360 | 1.024 | Forecasting con pesos aleatorios, solo depuración | no disponible | Hugging Face, requiere paquete `timestral` |
+| `mistralai/Timestral-209M` | 209M | no disponible en la información | Forecasting zero-shot preentrenado | no disponible en la información | Hugging Face, paquete `timestral` |
+| Resto de la familia Timestral (desde 5M) | 5M–209M | no disponible | Forecasting zero-shot preentrenado | no disponible | Hugging Face; nombres y configuraciones exactas no disponibles |
+| `yujiepan/llama-3.1-tiny-random` | 1,03M | no disponible | Modelo de lenguaje causal aleatorio, depuración | no disponible | Hugging Face, pipeline text-generation |
 
 Frente al modelo base, este checkpoint reduce el cómputo en más de dos órdenes de magnitud (8 capas y anchura 64 frente a 24 capas y anchura 768) manteniendo la interfaz, a costa de producir salidas sin valor predictivo. Frente a los otros "tiny-random" del mismo autor, la diferencia es de dominio: aquellos sirven para probar pipelines de texto y este para pipelines de forecasting.
 
@@ -89,9 +89,9 @@ Frente al modelo base, este checkpoint reduce el cómputo en más de dos órdene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yujiepan/timestral-tiny-random
+- Modelo en Hugging Face: https://huggingface.co/yujiepan/timestral-tiny-random
 - Modelo base: https://huggingface.co/mistralai/Timestral-209M
 - Repositorio de inferencia Timestral (Mistral AI): https://github.com/mistralai/timestral
-- Perfil del autor en HuggingFace: https://huggingface.co/yujiepan
+- Perfil del autor en Hugging Face: https://huggingface.co/yujiepan
 - Perfil del autor en GitHub: https://github.com/yujiepan-work
 - Artículo sobre el lanzamiento de la familia Timestral: https://www.marktechpost.com/2026/10/18/mistral-timestral-time-series-foundation-model/

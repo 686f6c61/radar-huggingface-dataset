@@ -83,7 +83,7 @@ La comparación con Whisper se ofrece como referencia de categoría; los datos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ooookao/haas-ja-v1.0-coreml
+- Modelo en Hugging Face: https://huggingface.co/ooookao/haas-ja-v1.0-coreml
 - Modelo base original: https://huggingface.co/third-intelligence/Haas-ja-v1.0
 - Guía de la CLI de Hugging Face: https://huggingface.co/docs/huggingface_hub/guides/cli
 - Documentación de Core ML: no disponible en la información proporcionada

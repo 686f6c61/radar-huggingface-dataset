@@ -2,7 +2,7 @@
 
 ## Resumen
 
-chai-cleanbase es un modelo de pesos abiertos publicado en HuggingFace por el usuario AlbertWang8192 bajo el identificador `AlbertWang8192/chai-cleanbase`. Se trata de un checkpoint de aproximadamente 3.085.938.688 parametros (unos 3,09 mil millones) almacenado en formato safetensors, con un repositorio de 6,2 GB, lo que es coherente con pesos en 16 bits (bf16 o fp16). La etiqueta de arquitectura declarada en el repositorio es `qwen2`, por lo que todo apunta a un transformer decoder-only de la familia Qwen2, aunque la ficha publica no detalla la configuracion exacta de capas, cabezas de atencion ni dimension del modelo.
+chai-cleanbase es un modelo de pesos abiertos publicado en Hugging Face por el usuario AlbertWang8192 bajo el identificador `AlbertWang8192/chai-cleanbase`. Se trata de un checkpoint de aproximadamente 3.085.938.688 parametros (unos 3,09 mil millones) almacenado en formato safetensors, con un repositorio de 6,2 GB, lo que es coherente con pesos en 16 bits (bf16 o fp16). La etiqueta de arquitectura declarada en el repositorio es `qwen2`, por lo que todo apunta a un transformer decoder-only de la familia Qwen2, aunque la ficha publica no detalla la configuracion exacta de capas, cabezas de atencion ni dimension del modelo.
 
 El nombre "cleanbase" sugiere que se trata de un modelo base (preentrenado o continuado sobre un corpus filtrado), no de un modelo alineado para seguir instrucciones, si bien esto es una inferencia a partir del nombre y no un dato confirmado por el autor. El repositorio no declara licencia, idiomas soportados, pipeline de inferencia ni datos de entrenamiento, y en el momento de la consulta acumula 19 descargas y 0 "likes", con fechas de creacion y ultima actualizacion del 13 de septiembre de 2026.
 
@@ -81,10 +81,10 @@ La informacion publica sobre este repositorio es demasiado escasa para establece
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AlbertWang8192/chai-cleanbase | 3,09 B | no disponible | no disponible | HuggingFace (19 descargas); sin ficha tecnica |
-| Qwen2.5-3B (referencia de familia) | 3,09 B | 32.768 tokens (ampliable) | Apache 2.0 en variantes base | HuggingFace, extensamente documentado |
-| Llama 3.2 3B | 3,21 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace, con restricciones de uso |
-| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | HuggingFace, muy documentado |
+| AlbertWang8192/chai-cleanbase | 3,09 B | no disponible | no disponible | Hugging Face (19 descargas); sin ficha tecnica |
+| Qwen2.5-3B (referencia de familia) | 3,09 B | 32.768 tokens (ampliable) | Apache 2.0 en variantes base | Hugging Face, extensamente documentado |
+| Llama 3.2 3B | 3,21 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face, con restricciones de uso |
+| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | Hugging Face, muy documentado |
 
 La diferencia principal no es de capacidad tecnica sino de trazabilidad: los tres modelos de referencia cuentan con fichas detalladas, evaluaciones publicadas y licencias explicitas, mientras que `chai-cleanbase` carece de toda esa documentacion.
 
@@ -104,6 +104,6 @@ La diferencia principal no es de capacidad tecnica sino de trazabilidad: los tre
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlbertWang8192/chai-cleanbase
+- Repositorio en Hugging Face: https://huggingface.co/AlbertWang8192/chai-cleanbase
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.
 - Los resultados de busqueda obtenidos no guardan ninguna relacion con el modelo: corresponden a articulos sobre el duelo y el cuidado paliativo en enfermeria (ScienceDirect, Springer y PMC), por lo que se descartan como fuentes.

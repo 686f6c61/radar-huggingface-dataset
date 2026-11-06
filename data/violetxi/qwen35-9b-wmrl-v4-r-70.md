@@ -58,14 +58,14 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM en cuantización int8 (estimación, no publicada por el autor): en torno a 10-11 GB, viable en RTX 4080, RTX 4090, L4 o A10G.
 - VRAM en cuantización int4 (estimación, no publicada por el autor): en torno a 5,5-6,5 GB, viable en GPUs de consumo como RTX 3060 12GB, RTX 4060 Ti 16GB o RTX 4070.
 - Cabe en GPU de consumo: probablemente sí en cuantizaciones de 8 y 4 bits, y muy justo en fp16 sobre una RTX 4090 de 24 GB; en fp32 no cabe en ninguna GPU de consumo actual.
-- Opciones de despliegue: vLLM está confirmado por el autor ("servable with vLLM out of the box"); también son plausibles Transformers de HuggingFace y TGI dado el formato safetensors. No se han publicado pesos GGUF, AWQ ni GPTQ, por lo que llama.cpp y Ollama requerirían una conversión previa por parte del usuario.
+- Opciones de despliegue: vLLM está confirmado por el autor ("servable with vLLM out of the box"); también son plausibles Transformers de Hugging Face y TGI dado el formato safetensors. No se han publicado pesos GGUF, AWQ ni GPTQ, por lo que llama.cpp y Ollama requerirían una conversión previa por parte del usuario.
 - Latencia y throughput estimados: no disponibles, no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros totales | Contexto | Licencia | Estado |
 |---|---|---|---|---|
-| violetxi/qwen35-9b-wmrl-v4-R-70 | 9,65B | No disponible | apache-2.0 | Publicado en HuggingFace, 0 descargas, 0 likes |
+| violetxi/qwen35-9b-wmrl-v4-R-70 | 9,65B | No disponible | apache-2.0 | Publicado en Hugging Face, 0 descargas, 0 likes |
 | Qwen/Qwen3.5-9B (modelo base) | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | Referencia del ajuste; el autor no aporta su ficha |
 | Otros modelos de la misma categoría | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la información disponible |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento de este checkpoint ni de su modelo base en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-R-70
+- Modelo en Hugging Face: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-R-70
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-9B
 - Archivo de resumen de entrenamiento referenciado en la model card: `train_summary.json` en el directorio de la ejecución de entrenamiento (no enlazado ni incluido en la información disponible)
 - Paper, blog, repositorio o demo del estudio wm-internalization: no disponible en la información proporcionada

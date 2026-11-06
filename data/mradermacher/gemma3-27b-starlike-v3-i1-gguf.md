@@ -80,7 +80,7 @@ La comparativa es orientativa: la merge `starlike-v3` no tiene benchmarks public
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma3-27b-starlike-v3-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma3-27b-starlike-v3-i1-GGUF
 - Modelo base (merge): https://huggingface.co/ToastyPigeon/gemma3-27b-starlike-v3
 - Quants estáticos del mismo autor: https://huggingface.co/mradermacher/gemma3-27b-starlike-v3-GGUF
 - Modelo base de Gemma 3 (Google DeepMind): https://deepmind.google/models/gemma/gemma-3/

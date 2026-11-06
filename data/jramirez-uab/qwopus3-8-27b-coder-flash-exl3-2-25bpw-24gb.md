@@ -82,9 +82,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Calidad medida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Esta build (EXL3 2,25 bpw) | 5.593.339.264 en safetensors; base denominada 27B | 262.144 | KLD 0,080-0,109; agente 25/30; código 35/36 | Apache-2.0 | HuggingFace, requiere stack EXL3 + vLLM |
-| Qwopus3.8-27B-Coder-Flash EXL3 3,50 bpw (JRamirez-UAB) | mismo base | 262.144 | KLD 0,010-0,015; agente 30/30; código 36/36 | Apache-2.0 | HuggingFace, mismo stack |
-| Jackrong/Qwopus3.8-27B-Coder-Flash (BF16) | 27B (denominación) | no disponible en la información | referencia de KLD; bucles a temperatura 0 con repetición 0,93-0,98 | Apache-2.0 | HuggingFace |
+| Esta build (EXL3 2,25 bpw) | 5.593.339.264 en safetensors; base denominada 27B | 262.144 | KLD 0,080-0,109; agente 25/30; código 35/36 | Apache-2.0 | Hugging Face, requiere stack EXL3 + vLLM |
+| Qwopus3.8-27B-Coder-Flash EXL3 3,50 bpw (JRamirez-UAB) | mismo base | 262.144 | KLD 0,010-0,015; agente 30/30; código 36/36 | Apache-2.0 | Hugging Face, mismo stack |
+| Jackrong/Qwopus3.8-27B-Coder-Flash (BF16) | 27B (denominación) | no disponible en la información | referencia de KLD; bucles a temperatura 0 con repetición 0,93-0,98 | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks estándar ni de comparaciones con otros modelos de la misma categoría en la información proporcionada.
 
@@ -102,8 +102,8 @@ No se dispone de datos de benchmarks estándar ni de comparaciones con otros mod
 
 ## Enlaces
 
-- HuggingFace (esta build): https://huggingface.co/JRamirez-UAB/Qwopus3.8-27B-Coder-Flash-EXL3-2.25bpw-24GB
-- HuggingFace (build de 3,50 bpw): https://huggingface.co/JRamirez-UAB/Qwopus3.8-27B-Coder-Flash-EXL3-3.50bpw-24GB
+- Hugging Face (esta build): https://huggingface.co/JRamirez-UAB/Qwopus3.8-27B-Coder-Flash-EXL3-2.25bpw-24GB
+- Hugging Face (build de 3,50 bpw): https://huggingface.co/JRamirez-UAB/Qwopus3.8-27B-Coder-Flash-EXL3-3.50bpw-24GB
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash
 - Repositorio exllamav3: https://github.com/turboderp-org/exllamav3
 - Paper referenciado en las etiquetas: arxiv:2406.11235 (https://arxiv.org/abs/2406.11235)

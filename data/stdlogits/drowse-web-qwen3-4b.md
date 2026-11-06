@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/stdlogits/drowse-web-qwen3-4b
+- Repositorio Hugging Face: https://huggingface.co/stdlogits/drowse-web-qwen3-4b
 - Artefacto de origen: https://huggingface.co/puppyum/polythetic-web-qwen3-4b/tree/87ef453995eacc71c475dd319193760bafcedded
 - Fichero de procedencia: https://huggingface.co/stdlogits/drowse-web-qwen3-4b/blob/main/UPLOAD-PROVENANCE.json
 - Licencias por componente: https://huggingface.co/logitsml/drowse-web-qwen3-4b/blob/main/LICENSES.md

@@ -6,7 +6,7 @@ Boltz-2 es un modelo fundacional biomolecular desarrollado por el MIT Jameel Cli
 
 La relevancia de Boltz-2 radica en que es el primer modelo de deep learning que se acerca a la precisión de los métodos de perturbación de energía libre (FEP) basados en física, pero ejecutándose aproximadamente 1000 veces más rápido. Esto democratiza el cribado in silico de fármacos, permitiendo a laboratorios académicos y pequeñas empresas de biotecnología realizar estudios de afinidad que antes requerían infraestructura computacional masiva. El modelo se distribuye bajo licencia MIT, lo que facilita su adopción comercial sin restricciones.
 
-El repositorio `biofold-jl/boltz2` en HuggingFace contiene los pesos originales de Boltz-2 convertidos al formato `.safetensors`, con un tamaño de 4.2 GB. Esta conversión facilita la integración con herramientas modernas de inferencia y despliegue que priorizan la seguridad y eficiencia de este formato.
+El repositorio `biofold-jl/boltz2` en Hugging Face contiene los pesos originales de Boltz-2 convertidos al formato `.safetensors`, con un tamaño de 4.2 GB. Esta conversión facilita la integración con herramientas modernas de inferencia y despliegue que priorizan la seguridad y eficiencia de este formato.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ Boltz-2 se diferencia de AlphaFold3 principalmente en dos aspectos: predice afin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/biofold-jl/boltz2
+- Repositorio Hugging Face: https://huggingface.co/biofold-jl/boltz2
 - Sitio oficial de Boltz-2: https://boltz.bio/boltz2
 - Ficha en biolm.ai: https://biolm.ai/models/boltz2/
 - Repositorio oficial en GitHub: https://github.com/jwohlwend/boltz

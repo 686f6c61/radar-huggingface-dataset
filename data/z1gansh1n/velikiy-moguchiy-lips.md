@@ -6,7 +6,7 @@ El modelo `velikiy-moguchiy-lips` no es un modelo de lenguaje, sino un modelo de
 
 El ajuste se ha realizado sobre aproximadamente 54 horas de video en 720p procedentes de unas 420 fuentes de tipo «persona hablando a camara», con 2,8 pasadas sobre el conjunto de datos. Se distribuye como un adaptador LoRA junto con la parte visual del modelo ya reentrenada, no como un modelo completo.
 
-Su relevancia es limitada y experimental: el propio autor lo describe como un modelo temporal que sera sustituido por una version entrenada desde cero cuando el proyecto reuna suficientes datos. El repositorio de HuggingFace ocupa tan solo 0,1 GB y no ha registrado descargas ni interacciones en el momento de redactar esta ficha.
+Su relevancia es limitada y experimental: el propio autor lo describe como un modelo temporal que sera sustituido por una version entrenada desde cero cuando el proyecto reuna suficientes datos. El repositorio de Hugging Face ocupa tan solo 0,1 GB y no ha registrado descargas ni interacciones en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ La model card incluye dos medidas de tasa de error en palabras (WER, menor es me
 
 | Modelo | Tipo | Contexto / idioma | Rendimiento (WER) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| velikiy-moguchiy-lips (lips-0.1) | VSR, ajuste LoRA sobre MultiVSR | ruso | 72,3 % en MuAViC-ru | no disponible (terminos de MultiVSR) | repositorio HuggingFace del autor |
+| velikiy-moguchiy-lips (lips-0.1) | VSR, ajuste LoRA sobre MultiVSR | ruso | 72,3 % en MuAViC-ru | no disponible (terminos de MultiVSR) | repositorio Hugging Face del autor |
 | MultiVSR | VSR base | multilingue segun autores | 76,0 % en la configuracion comparada | la de los autores | GitHub de Sindhu Hegde |
 
 No se dispone de datos comparativos con otras alternativas de VSR (por ejemplo AV-HuBERT o Auto-AVSR) en la informacion proporcionada, por lo que no se incluyen.
@@ -80,13 +80,13 @@ No se dispone de datos comparativos con otras alternativas de VSR (por ejemplo A
 - Sesgos potenciales derivados del dataset: 54 horas de video de unas 420 fuentes pueden sobrerrepresentar determinados acentos, registros y condiciones de grabacion.
 - Idiomas: funciona unicamente en ruso; no hay evidencia de generalizacion a otras lenguas.
 - Dependencia del modelo base: no funciona de forma autonoma; requiere los pesos de MultiVSR descargados por separado.
-- Restricciones de licencia: la licencia no esta declarada en HuggingFace; el autor indica que debe usarse bajo los terminos de los autores de MultiVSR y con atribucion, por lo que el uso comercial no esta garantizado.
+- Restricciones de licencia: la licencia no esta declarada en Hugging Face; el autor indica que debe usarse bajo los terminos de los autores de MultiVSR y con atribucion, por lo que el uso comercial no esta garantizado.
 - Riesgo de alucinacion: como todo sistema de reconocimiento visual del habla, puede generar palabras plausibles que no se corresponden con lo pronunciado, especialmente con iluminacion deficiente, oclusiones o movimientos de cabeza.
 - Sin datos publicos de benchmarks mas alla de las dos metricas de la model card, ni resultados de contexto, cuantizacion o despliegue.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/z1gansh1n/velikiy-moguchiy-lips
+- Modelo en Hugging Face: https://huggingface.co/z1gansh1n/velikiy-moguchiy-lips
 - Repositorio del proyecto «Velikiy & Moguchiy»: https://github.com/zigansh1n/velikiy-moguchiy
 - Informe del proyecto: https://github.com/zigansh1n/velikiy-moguchiy/blob/main/docs/REPORT.md
 - Modelo base MultiVSR (Sindhu Hegde y colaboradores, Oxford VGG): https://github.com/Sindhu-Hegde/multivsr

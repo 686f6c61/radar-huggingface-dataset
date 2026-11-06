@@ -61,7 +61,7 @@ Los datos de comparación cuantitativa no están disponibles en la información 
 
 ## Limitaciones y advertencias
 
-- El repositorio en HuggingFace está publicado por el usuario `trinityomni`, no por la organización oficial de Z.ai. Antes de usar el modelo en producción, conviene verificar la autenticidad de los pesos y su correspondencia con el modelo oficial.
+- El repositorio en Hugging Face está publicado por el usuario `trinityomni`, no por la organización oficial de Z.ai. Antes de usar el modelo en producción, conviene verificar la autenticidad de los pesos y su correspondencia con el modelo oficial.
 - Los idiomas soportados se limitan a inglés y chino; no se menciona soporte para español u otros idiomas.
 - La longitud de contexto máxima no se especifica oficialmente, aunque las evaluaciones citan ventanas de hasta 1M de tokens. El comportamiento fuera de esos rangos no está documentado.
 - No se proporciona información sobre sesgos conocidos, riesgos de alucinación o medidas de mitigación.
@@ -70,7 +70,7 @@ Los datos de comparación cuantitativa no están disponibles en la información 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trinityomni/GLM-5.3-Flash
+- Hugging Face: https://huggingface.co/trinityomni/GLM-5.3-Flash
 - Blog oficial Z.ai: https://z.ai/blog/glm-5.3-flash
 - Informe técnico GLM-5: https://arxiv.org/abs/2602.15763
 - Análisis en OpenLM.ai: https://openlm.ai/glm-5.3/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sana_rwm_policy_from_pretrained_robodojo_320px_1e-4_cosine_clip1_2node` es un *bundle* de reanudación de entrenamiento publicado por el usuario `logits` en HuggingFace, no un modelo listo para inferencia. Contiene el estado completo de un *fine-tuning* supervisado (SFT) de una política robótica basada en la arquitectura SANA, denominada `rwm` (política de mundo robótico), entrenada sobre el conjunto RoboDojo con el brazo ARX-X5 a una resolución de entrada de 320 píxeles. El repositorio almacena exactamente un *checkpoint* (el más reciente, `epoch_10_step_61500`) y se sobrescribe en cada subida, por lo que actúa como un puntero móvil al último estado del entrenamiento.
+`sana_rwm_policy_from_pretrained_robodojo_320px_1e-4_cosine_clip1_2node` es un *bundle* de reanudación de entrenamiento publicado por el usuario `logits` en Hugging Face, no un modelo listo para inferencia. Contiene el estado completo de un *fine-tuning* supervisado (SFT) de una política robótica basada en la arquitectura SANA, denominada `rwm` (política de mundo robótico), entrenada sobre el conjunto RoboDojo con el brazo ARX-X5 a una resolución de entrada de 320 píxeles. El repositorio almacena exactamente un *checkpoint* (el más reciente, `epoch_10_step_61500`) y se sobrescribe en cada subida, por lo que actúa como un puntero móvil al último estado del entrenamiento.
 
 El propósito del artefacto es permitir reanudar una ejecución de entrenamiento concreta (`sft_robodojo_arxx5_unified_jointonly_f25_320px_2node_s120000_lr1e4cos_aw1_wd1e-2`) preservando pesos en formato FSDP de Accelerate, estado del optimizador, planificador, estados RNG por rango y los registros de Weights & Biases. Incluye además los ficheros de normalización afín de acciones (imprescindibles para que la cabeza de acción sea utilizable) y los resultados de validación *held-out* de cada *checkpoint* evaluado hasta la fecha.
 
@@ -97,13 +97,13 @@ No disponible. La información proporcionada no incluye datos de otros modelos d
 - Licencia "other" con términos no especificados en la información disponible; se debe verificar antes de cualquier uso comercial.
 - El error de validación es elevado en algunas tareas (máximos de 0,15-0,35 en pasos tempranos), lo que sugiere comportamiento irregular en un subconjunto de tareas.
 - No se documentan sesgos, riesgos de alucinación ni comportamiento multilingüe (no aplican a un modelo de visión-acción), pero la ausencia de *dataset* detallado impide evaluar sesgos de dominio.
-- El enlace simbólico `latest.pth` no lo almacena HuggingFace; hay que recrearlo manualmente para reanudar.
+- El enlace simbólico `latest.pth` no lo almacena Hugging Face; hay que recrearlo manualmente para reanudar.
 - No se incluyen código (`--with-code`), configuraciones de lanzamiento (`--with-launch`), entorno (`--with-env`), logs de SLURM (`--with-logs`) ni entradas externas (`--with-inputs`), lo que dificulta la reproducibilidad completa.
 - El tamaño de 3968,4 GB del repositorio puede hacer inviable su descarga completa en entornos con almacenamiento limitado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/logits/sana_rwm_policy_from_pretrained_robodojo_320px_1e-4_cosine_clip1_2node
+- Hugging Face: https://huggingface.co/logits/sana_rwm_policy_from_pretrained_robodojo_320px_1e-4_cosine_clip1_2node
 - W&B del entrenamiento: https://wandb.ai/lzknus/sana-rwm/runs/sft_robodojo_arxx5_unified_jointonly_f25_320px_2node_s120000_lr1e4cos_aw1_wd1e-2
 - Referencia de código (commit): `602036b6987854a16422f2bc8a1a2df41d971ee2` (rama `frozen/s120000-wd-fix`), sin URL pública en la información disponible
 - Resultados de la búsqueda web: no relevantes (los resultados devueltos tratan sobre el Lago de Como y no guardan relación con el modelo).

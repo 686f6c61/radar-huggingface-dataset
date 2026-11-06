@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Boulesis-26B-A4B-Voice es un artefacto de pesos de 1,5 GB publicado por el usuario Wiself en HuggingFace. No es un modelo completo: contiene un unico tensor, el `lm_head.weight` (capa de salida o cabeza de vocabulario, con forma `[262144, 2816]`), extraido del modelo de roleplay SubMaroon/Boulesis-26B-A4B, un build de 26B de parametros totales y 4B activos construido sobre la familia Gemma 4. La propuesta es trasplantar unicamente la "voz" estilistica de Boulesis —tono, decisividad y adherencia al lore— sobre cualquier GGUF compatible de Gemma 4 26B A4B que el usuario ya tenga descargado.
+Boulesis-26B-A4B-Voice es un artefacto de pesos de 1,5 GB publicado por el usuario Wiself en Hugging Face. No es un modelo completo: contiene un unico tensor, el `lm_head.weight` (capa de salida o cabeza de vocabulario, con forma `[262144, 2816]`), extraido del modelo de roleplay SubMaroon/Boulesis-26B-A4B, un build de 26B de parametros totales y 4B activos construido sobre la familia Gemma 4. La propuesta es trasplantar unicamente la "voz" estilistica de Boulesis —tono, decisividad y adherencia al lore— sobre cualquier GGUF compatible de Gemma 4 26B A4B que el usuario ya tenga descargado.
 
 El modelo de origen es un build compuesto: aritmetica de tareas QK mas un LoRA fusionado sobre un cuerpo abliterated (Heretic), con un injerto de razonamiento procedente de Pantheon. Segun el registro de experimentos del autor original, la mejora medible mas clara en roleplay provino de un unico tensor trasplantado, el `lm_head` de StyleTune-V2 de Gryphe, uno de entre 659 tensores. Este repositorio aisla exactamente ese tensor, de modo que la descarga es un tensor suelto y no un modelo completo.
 
@@ -97,7 +97,7 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wiself/Boulesis-26B-A4B-Voice
+- Modelo en Hugging Face: https://huggingface.co/Wiself/Boulesis-26B-A4B-Voice
 - Modelo fuente: https://huggingface.co/SubMaroon/Boulesis-26B-A4B
 - Herramienta Voice: https://huggingface.co/Wiself/voice
 - Variante emparejada con GGUFs QAT: https://huggingface.co/Wiself/Boulesis-26B-A4B-QAT-Voice

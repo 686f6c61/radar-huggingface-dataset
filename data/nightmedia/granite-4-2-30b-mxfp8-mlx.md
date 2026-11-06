@@ -80,7 +80,7 @@ La comparativa muestra que esta versión cuantizada es una alternativa ligera pa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nightmedia/granite-4.2-30b-mxfp8-mlx
+- Repositorio Hugging Face: https://huggingface.co/nightmedia/granite-4.2-30b-mxfp8-mlx
 - Documentación oficial de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2
-- Modelo base en HuggingFace: https://huggingface.co/ibm-granite/granite-4.2-30b
+- Modelo base en Hugging Face: https://huggingface.co/ibm-granite/granite-4.2-30b
 - Versión anterior (Granite 4.1): https://huggingface.co/nightmedia/granite-4.1-30b-mxfp8-mlx

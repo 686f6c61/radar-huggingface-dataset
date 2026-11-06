@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PhonoCommand-ASR es un modelo de reconocimiento automático del habla (ASR) publicado por el usuario humoiww en HuggingFace, derivado del modelo Qwen/Qwen3-ASR-1.7B. Su particularidad no es tanto el modelo de pesos como el sistema que lo rodea: el autor distribuye un conjunto de pesos "V15" junto con una política acústica de selección ("pipeline R17") que decide, mediante evidencia de duración acústica e idioma, si usa esos pesos o el modelo original fijado. El objetivo declarado es el dictado de comandos en dominio médico con streaming de audio acumulado, reutilización conservadora de prefijos de texto y una sola generación por actualización o final.
+PhonoCommand-ASR es un modelo de reconocimiento automático del habla (ASR) publicado por el usuario humoiww en Hugging Face, derivado del modelo Qwen/Qwen3-ASR-1.7B. Su particularidad no es tanto el modelo de pesos como el sistema que lo rodea: el autor distribuye un conjunto de pesos "V15" junto con una política acústica de selección ("pipeline R17") que decide, mediante evidencia de duración acústica e idioma, si usa esos pesos o el modelo original fijado. El objetivo declarado es el dictado de comandos en dominio médico con streaming de audio acumulado, reutilización conservadora de prefijos de texto y una sola generación por actualización o final.
 
 El repositorio contiene 4,1 GB de artefactos, con pesos en safetensors y ONNX, y un total de 2.038.052.480 parámetros según los metadatos de safetensors (cifra superior a los 1.700 millones que sugiere el nombre del modelo base, lo que conviene tener en cuenta al planificar el despliegue). La licencia es Apache-2.0, los idiomas declarados son inglés, chino mandarín y cantonés (en, zh, yue), y el pipeline es automatic-speech-recognition.
 
@@ -88,7 +88,7 @@ No se dispone de resultados de benchmarks de PhonoCommand-ASR que permitan una c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/humoiww/PhonoCommand-ASR
+- Modelo en Hugging Face: https://huggingface.co/humoiww/PhonoCommand-ASR
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Documento de algoritmo: https://huggingface.co/humoiww/PhonoCommand-ASR/blob/main/ALGORITHM.txt
 - Notas de despliegue en Windows: https://huggingface.co/humoiww/PhonoCommand-ASR/blob/main/WINDOWS_HANDOFF.txt

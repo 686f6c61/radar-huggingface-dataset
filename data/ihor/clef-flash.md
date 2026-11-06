@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ihor/clef-flash es un modelo publicado en HuggingFace por el usuario Ihor bajo licencia Apache 2.0. Se trata de un checkpoint de aproximadamente 8.975 millones de parametros (unos 8,98B), almacenado en formato safetensors y con un tamano de repositorio de 71,8 GB. La model card asociada unicamente contiene la declaracion de licencia, sin ningun texto descriptivo, instrucciones de uso ni datos de entrenamiento, por lo que la mayor parte de la informacion tecnica no esta disponible.
+Ihor/clef-flash es un modelo publicado en Hugging Face por el usuario Ihor bajo licencia Apache 2.0. Se trata de un checkpoint de aproximadamente 8.975 millones de parametros (unos 8,98B), almacenado en formato safetensors y con un tamano de repositorio de 71,8 GB. La model card asociada unicamente contiene la declaracion de licencia, sin ningun texto descriptivo, instrucciones de uso ni datos de entrenamiento, por lo que la mayor parte de la informacion tecnica no esta disponible.
 
 El unico indicio funcional sobre su proposito es la etiqueta `GLiClass` incluida entre los tags del repositorio. GLiClass es una familia de arquitecturas orientada a clasificacion de texto zero-shot, lo que sugiere que este checkpoint no seria un modelo generativo generalista sino un modelo de clasificacion. No obstante, esta interpretacion se basa exclusivamente en la etiqueta y no puede confirmarse con la informacion disponible.
 
@@ -71,4 +71,4 @@ No disponible. La ausencia de informacion sobre arquitectura, tarea objetivo y r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ihor/clef-flash
+- Hugging Face: https://huggingface.co/Ihor/clef-flash

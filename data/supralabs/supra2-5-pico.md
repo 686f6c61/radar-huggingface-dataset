@@ -113,7 +113,7 @@ Eficiencia declarada por el autor:
 
 | Modelo | Parámetros | Contexto | Index (Open SLM) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| Supra2.5-Pico | 2.982.480 | 1.024 | 12,96 | Apache 2.0 | Pesos safetensors en HuggingFace, código custom |
+| Supra2.5-Pico | 2.982.480 | 1.024 | 12,96 | Apache 2.0 | Pesos safetensors en Hugging Face, código custom |
 | GPT-S3-3M | 2,97M | no disponible | 9,61 | no disponible | no disponible en la información proporcionada |
 | Tokle-3M | 2,91M | no disponible | 8,91 | no disponible | no disponible en la información proporcionada |
 | Supra2-Medium-Instruct | 25,38M | no disponible | 12,16 | no disponible | familia SupraLabs |
@@ -138,7 +138,7 @@ Frente a la clase sub-3M, la ventaja se concentra en ArithMark-3 (56,30 frente a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SupraLabs/Supra2.5-Pico
+- Modelo en Hugging Face: https://huggingface.co/SupraLabs/Supra2.5-Pico
 - Open SLM Leaderboard: https://huggingface.co/spaces/AxiomicLabs/Open_SLM_Leaderboard
 - Dataset openbmb/Ultra-FineWeb: https://huggingface.co/datasets/openbmb/Ultra-FineWeb
 - Dataset openbmb/Ultra-FineWeb-L3: https://huggingface.co/datasets/openbmb/Ultra-FineWeb-L3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/hin-deva-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino (SFT) de tipo generacion de texto, desarrollado por el usuario de HuggingFace `francesca9805`, presumiblemente en el contexto de un proyecto de investigacion de la Universidad de Groningen (los enlaces a Weights & Biases apuntan a la entidad `f-padovani-university-of-groningen`). Se trata de un modelo pequeno, de 124.770.816 parametros reales (aproximadamente 124,8 millones), derivado del checkpoint base `francesca9805/hin-deva-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407`, y entrenado con la libreria TRL (version 0.23.0) mediante supervisado (SFT).
+El modelo `francesca9805/hin-deva-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino (SFT) de tipo generacion de texto, desarrollado por el usuario de Hugging Face `francesca9805`, presumiblemente en el contexto de un proyecto de investigacion de la Universidad de Groningen (los enlaces a Weights & Biases apuntan a la entidad `f-padovani-university-of-groningen`). Se trata de un modelo pequeno, de 124.770.816 parametros reales (aproximadamente 124,8 millones), derivado del checkpoint base `francesca9805/hin-deva-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407`, y entrenado con la libreria TRL (version 0.23.0) mediante supervisado (SFT).
 
 Su relevancia es acotada y de caracter experimental: por tamano y arquitectura (etiquetado como `gpt2` en los tags del repositorio) se situa en la categoria de los modelos pequenos tipo GPT-2 small, pensados para entrenamiento e inferencia en hardware modesto. El nombre del repositorio sugiere un corpus de alrededor de 100 MB en hindi escrito en devanagari (`hin-deva`), empaquetado (`packed`) y entrenado en precision bf16 (`bfdiso`, probablemente `bf16` mas algun identificador de entorno de ejecucion), con semilla 3407 y checkpoint 500. Sin embargo, la model card no confirma ni la composicion del dataset ni los idiomas soportados.
 
@@ -71,10 +71,10 @@ Los datos de rendimiento de este modelo no estan publicados, por lo que la compa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hin-deva-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407 | 124,8 M | no disponible | no disponible | HuggingFace, safetensors |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | HuggingFace, safetensors/pytorch |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache-2.0 | HuggingFace, safetensors/GGUF |
-| Qwen2.5-0.5B (Alibaba) | 494 M | 32 768 tokens | Apache-2.0 (variante 0.5B) | HuggingFace, safetensors/GGUF |
+| hin-deva-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407 | 124,8 M | no disponible | no disponible | Hugging Face, safetensors |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Hugging Face, safetensors/pytorch |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache-2.0 | Hugging Face, safetensors/GGUF |
+| Qwen2.5-0.5B (Alibaba) | 494 M | 32 768 tokens | Apache-2.0 (variante 0.5B) | Hugging Face, safetensors/GGUF |
 
 Rendimiento comparado en tareas estandar: no disponible para el modelo objeto de la ficha. Nota: los datos de GPT-2 small, SmolLM-135M y Qwen2.5-0.5B corresponden a informacion publica de sus respectivas fichas y no a mediciones realizadas sobre este checkpoint.
 
@@ -92,7 +92,7 @@ Rendimiento comparado en tareas estandar: no disponible para el modelo objeto de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/hin-deva-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/hin-deva-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/hin-deva-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/m75n3xpb
 - Repositorio de TRL: https://github.com/huggingface/trl

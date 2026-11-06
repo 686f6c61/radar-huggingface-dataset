@@ -18,7 +18,7 @@ Con 128K tokens de contexto (entrada más salida) y soporte de 16 idiomas, inclu
 | Longitud de contexto | 128K tokens (entrada + salida) |
 | Tipos de cuantizacion | No disponible en la información proporcionada |
 | Idiomas soportados | Inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, español, vietnamita, tailandés, indonesio, hindi, ruso, polaco |
-| Licencia | LFM Open License v1.0 (identificador `lfm1.0`, etiquetada como `other` en HuggingFace) |
+| Licencia | LFM Open License v1.0 (identificador `lfm1.0`, etiquetada como `other` en Hugging Face) |
 | Formato de pesos | Safetensors, con código personalizado (`custom_code`, requiere `trust_remote_code`) |
 
 Otros datos técnicos: vocabulario de 128.000 tokens, tamaño del repositorio de 3,9 GB, entrada de imagen a resolución nativa con parches de 16×16 y embeddings rotatorios 2D. Cada bloque de 2×2 parches se convierte en un único token de lenguaje, lo que reduce la longitud efectiva de la secuencia visual.
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Vídeo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-VL-2B | 1,92B | 128K | Sí (2 fps) | LFM Open License v1.0 | Pesos en HuggingFace + API |
-| Qwen2.5-VL-3B | ~3,75B | 128K (dato público, no verificado aquí) | Sí | Apache 2.0 (según versión) | Pesos en HuggingFace |
-| SmolVLM2-2.2B | ~2,2B | No disponible en esta información | Sí | Apache 2.0 (según variante) | Pesos en HuggingFace |
-| Gemma 3 (4B) | ~4B | 128K (dato público, no verificado aquí) | No | Gemma Terms | Pesos en HuggingFace |
+| LFM3-VL-2B | 1,92B | 128K | Sí (2 fps) | LFM Open License v1.0 | Pesos en Hugging Face + API |
+| Qwen2.5-VL-3B | ~3,75B | 128K (dato público, no verificado aquí) | Sí | Apache 2.0 (según versión) | Pesos en Hugging Face |
+| SmolVLM2-2.2B | ~2,2B | No disponible en esta información | Sí | Apache 2.0 (según variante) | Pesos en Hugging Face |
+| Gemma 3 (4B) | ~4B | 128K (dato público, no verificado aquí) | No | Gemma Terms | Pesos en Hugging Face |
 
 Los datos de los modelos competidores no provienen de la información proporcionada en esta búsqueda y deben verificarse en sus respectivas model cards antes de tomar una decisión. No se dispone de comparaciones de rendimiento verificadas entre LFM3-VL-2B y estas alternativas.
 
@@ -93,11 +93,11 @@ Los datos de los modelos competidores no provienen de la información proporcion
 
 ## Enlaces
 
-- [Modelo en HuggingFace: LiquidAI/LFM3-VL-2B](https://huggingface.co/LiquidAI/LFM3-VL-2B)
+- [Modelo en Hugging Face: LiquidAI/LFM3-VL-2B](https://huggingface.co/LiquidAI/LFM3-VL-2B)
 - [Modelo base: LiquidAI/LFM3-1.7B-Base](https://huggingface.co/LiquidAI/LFM3-1.7B-Base)
 - [Blog de lanzamiento de la familia LFM3](https://www.liquid.ai/blog/lfm3)
 - [Documentación de LiquidAI](https://docs.liquid.ai/lfm/getting-started/welcome)
 - [Playground de LiquidAI](https://playground.liquid.ai/)
 - [Consola / API de LiquidAI](https://console.liquid.ai/dashboard)
-- [Colección LFM3 en HuggingFace](https://huggingface.co/collections/LiquidAI/lfm3)
+- [Colección LFM3 en Hugging Face](https://huggingface.co/collections/LiquidAI/lfm3)
 - [Licencia LFM Open License v1.0](https://huggingface.co/LiquidAI/LFM3-VL-2B/blob/main/LICENSE)

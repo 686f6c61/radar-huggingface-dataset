@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `IMUGLYHUH/Sub` es un repositorio publicado en HuggingFace por el usuario IMUGLYHUH bajo licencia Apache 2.0. La model card no contiene ninguna descripción técnica, arquitectura, parámetros ni documentación de uso, más allá de la declaración de licencia. No se han registrado descargas ni valoraciones, y el pipeline de uso no está especificado.
+El modelo `IMUGLYHUH/Sub` es un repositorio publicado en Hugging Face por el usuario IMUGLYHUH bajo licencia Apache 2.0. La model card no contiene ninguna descripción técnica, arquitectura, parámetros ni documentación de uso, más allá de la declaración de licencia. No se han registrado descargas ni valoraciones, y el pipeline de uso no está especificado.
 
-La información disponible no permite determinar qué tipo de modelo es, qué problema resuelve ni qué arquitectura emplea. El repositorio podría tratarse de un espacio de prueba, un placeholder o un modelo aún no documentado por su autor. El perfil del autor en HuggingFace muestra actividad previa con modelos de la familia DeepSeek-R1-Distill-Llama-70B, y el nombre "Sub" coincide con la plataforma de computación en la nube SubModel.ai, aunque no existe confirmación de relación entre ambos.
+La información disponible no permite determinar qué tipo de modelo es, qué problema resuelve ni qué arquitectura emplea. El repositorio podría tratarse de un espacio de prueba, un placeholder o un modelo aún no documentado por su autor. El perfil del autor en Hugging Face muestra actividad previa con modelos de la familia DeepSeek-R1-Distill-Llama-70B, y el nombre "Sub" coincide con la plataforma de computación en la nube SubModel.ai, aunque no existe confirmación de relación entre ambos.
 
 Hasta que el autor publique una model card completa, cualquier uso del modelo en producción debe considerarse de alto riesgo por la ausencia total de especificaciones.
 
@@ -65,7 +65,7 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo, no se p
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/IMUGLYHUH/Sub
-- Perfil del autor en HuggingFace: https://huggingface.co/IMUGLYHUH
+- Perfil del autor en Hugging Face: https://huggingface.co/IMUGLYHUH
 - Perfil del autor en GitHub: https://github.com/IMUGLYHUH
 - Plataforma SubModel.ai: https://submodel.ai/
 - Organización SubModel en GitHub: https://github.com/SubModel

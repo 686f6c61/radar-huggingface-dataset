@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ornith-1.5-9B-oQ4e-fp16 es un repositorio de pesos cuantizados publicado por el usuario treeish en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión a 4 bits del modelo base Ornith-1.5-9B (tipo declarado `qwen3_5`), realizada con la herramienta oQ de oMLX (versión v0.6.3rc2) mediante cuantización de precisión mixta. El resultado son pesos en formato MLX safetensors, pensados para ejecutarse en la GPU unificada de los chips Apple Silicon a través del ecosistema MLX.
+Ornith-1.5-9B-oQ4e-fp16 es un repositorio de pesos cuantizados publicado por el usuario treeish en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión a 4 bits del modelo base Ornith-1.5-9B (tipo declarado `qwen3_5`), realizada con la herramienta oQ de oMLX (versión v0.6.3rc2) mediante cuantización de precisión mixta. El resultado son pesos en formato MLX safetensors, pensados para ejecutarse en la GPU unificada de los chips Apple Silicon a través del ecosistema MLX.
 
 El dato verificado más relevante es el recuento de parámetros extraído de los archivos safetensors: 9.409.813.744 parámetros (aproximadamente 9,41 mil millones). Con cuantización de 4 bits y group size 64, el peso teórico de los tensores se sitúa en torno a 4,4-5,5 GB, lo que permite ejecutar el modelo en equipos de consumo con memoria unificada moderada. El nombre del repositorio (`oQ4e-fp16`) sugiere una mezcla de capas cuantizadas a 4 bits con componentes mantenidos en fp16, aunque la model card no detalla qué capas concretas se preservan en mayor precisión.
 
@@ -94,7 +94,7 @@ No hay informacion suficiente para comparar este modelo con alternativas concret
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/treeish/Ornith-1.5-9B-oQ4e-fp16
+- Repositorio en Hugging Face: https://huggingface.co/treeish/Ornith-1.5-9B-oQ4e-fp16
 - Herramienta de cuantizacion oQ / oMLX: https://github.com/jundot/omlx
 - Repositorio de MLX (Apple): https://github.com/ml-explore/mlx
 - Repositorio de mlx-lm: https://github.com/ml-explore/mlx-lm

@@ -115,7 +115,7 @@ Frente a Swift Mini 2, el Micro 2 pierde capacidad de lectura y puntuación glob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/textilelabs/Loom-Swift-Micro-2
+- Modelo en Hugging Face: https://huggingface.co/textilelabs/Loom-Swift-Micro-2
 - Generación anterior: https://huggingface.co/textilelabs/Loom-Swift-Micro
 - Autor (Textile Labs): https://huggingface.co/textilelabs
 - Paper, repositorio de código y demos: no disponibles en la información proporcionada.

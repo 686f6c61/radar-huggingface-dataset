@@ -6,7 +6,7 @@
 
 El repositorio ofrece dos paquetes autocontenidos: `fast/`, con atención relativa de Fourier finita, 192 posiciones de encoder y fragmentos fijos de 15 segundos, y `quality/`, con atención relativa sinusoidal completa, 3.776 posiciones de encoder, submuestreo convolucional por teselas exacto y fragmentos de 300 segundos. Ambos emplean pesos de encoder en W8A16 (con proyecciones sensibles en FP16) y admiten cuatro peticiones concurrentes de encoder.
 
-Su relevancia es doble. Por un lado, traslada un modelo ASR de referencia de NVIDIA al ecosistema on-device de Apple, algo poco habitual en HuggingFace. Por otro, publica mediciones reproducibles de latencia y WER sobre un MacBook Air M3 (16 GB), con 584× de tiempo real en el paquete `fast` para un clip de 18:15 y un WER del 1,98 % en el paquete `quality`. El repositorio no tiene descargas ni valoraciones y no está avalado por NVIDIA.
+Su relevancia es doble. Por un lado, traslada un modelo ASR de referencia de NVIDIA al ecosistema on-device de Apple, algo poco habitual en Hugging Face. Por otro, publica mediciones reproducibles de latencia y WER sobre un MacBook Air M3 (16 GB), con 584× de tiempo real en el paquete `fast` para un clip de 18:15 y un WER del 1,98 % en el paquete `quality`. El repositorio no tiene descargas ni valoraciones y no está avalado por NVIDIA.
 
 ## Especificaciones técnicas
 
@@ -114,7 +114,7 @@ La comparación relevante es entre la conversión y su modelo base: comparten pe
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/coder543/parakeet-v2-coreai
+- Página del modelo en Hugging Face: https://huggingface.co/coder543/parakeet-v2-coreai
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
 - Licencia Creative Commons Attribution 4.0: https://creativecommons.org/licenses/by/4.0/
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo; los resultados devueltos corresponden a páginas del juego de cartas Hearts y no guardan relación con el contenido de la ficha.

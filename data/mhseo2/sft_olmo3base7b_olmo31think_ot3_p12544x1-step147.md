@@ -72,10 +72,10 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parámetros | Contexto | Licencia | Evaluación matemática | Disponibilidad |
 |---|---|---|---|---|---|
-| sft_olmo3base7b_olmo31think_ot3_p12544x1-step147 | 7,30B | 32.768 | Apache 2.0 | AIME 2025: 40,42 (mean@8) | HuggingFace (safetensors) |
-| Olmo-3-1025-7B (base, Allen AI) | ~7B | no disponible | Apache 2.0 | no disponible | HuggingFace |
-| allenai/Olmo-3.1-32B-Think (profesor) | ~32B | no disponible | no disponible | no disponible | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-7B | 7,6B | 32.768 | MIT | AIME 2024: 55,5 (pass@1, referencia pública) | HuggingFace, GGUF |
+| sft_olmo3base7b_olmo31think_ot3_p12544x1-step147 | 7,30B | 32.768 | Apache 2.0 | AIME 2025: 40,42 (mean@8) | Hugging Face (safetensors) |
+| Olmo-3-1025-7B (base, Allen AI) | ~7B | no disponible | Apache 2.0 | no disponible | Hugging Face |
+| allenai/Olmo-3.1-32B-Think (profesor) | ~32B | no disponible | no disponible | no disponible | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-7B | 7,6B | 32.768 | MIT | AIME 2024: 55,5 (pass@1, referencia pública) | Hugging Face, GGUF |
 
 La comparación con DeepSeek-R1-Distill-Qwen-7B se incluye como referencia de categoría (destilación de razonamiento a 7B), pero las métricas no son directamente comparables: distinto benchmark (AIME 2024 vs. 2025/2026), distinto scorer y distinto protocolo (`mean@8` frente a `pass@1`).
 
@@ -91,7 +91,7 @@ La comparación con DeepSeek-R1-Distill-Qwen-7B se incluye como referencia de ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p12544x1-step147
+- Hugging Face: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p12544x1-step147
 - Modelo base: https://huggingface.co/mhseo2/Olmo-3-1025-7B-opd
 - Modelo profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Dataset: https://huggingface.co/datasets/open-thoughts/OpenThoughts3

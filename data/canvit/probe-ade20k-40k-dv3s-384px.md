@@ -107,7 +107,7 @@ No se dispone de cifras de mIoU para ninguno de estos checkpoints en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canvit/probe-ade20k-40k-dv3s-384px
+- Modelo en Hugging Face: https://huggingface.co/canvit/probe-ade20k-40k-dv3s-384px
 - Backbone base: https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m
 - Paper (NeurIPS 2026): https://arxiv.org/abs/2603.22570
 - Codigo: https://github.com/m2b3/CanViT

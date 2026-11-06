@@ -88,7 +88,7 @@ Los datos de modelos comparables deben verificarse en sus respectivas model card
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RushabhShah122000/qwen3-vl-4b-ocr-gguf
+- Repositorio Hugging Face: https://huggingface.co/RushabhShah122000/qwen3-vl-4b-ocr-gguf
 - Unsloth (herramienta de afinado y conversión): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de inferencia): https://github.com/ggml-org/llama.cpp
 - Familia Qwen3-VL (modelo base, referencia): https://huggingface.co/Qwen

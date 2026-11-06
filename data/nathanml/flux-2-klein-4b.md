@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FLUX.2 [klein] 4B es un modelo de difusion de texto a imagen e imagen a imagen desarrollado por Black Forest Labs (BFL), la empresa responsable de la familia FLUX. Se trata de un transformer de flujo rectificado (rectified flow transformer) de aproximadamente 4.000 millones de parametros (3.875.544.576 segun los pesos en safetensors) que unifica generacion desde texto y edicion de imagen en una sola arquitectura compacta, incluyendo edicion con multiples imagenes de referencia. La ficha analizada corresponde a la copia alojada por el usuario `nathanml` en HuggingFace, no al repositorio oficial de BFL.
+FLUX.2 [klein] 4B es un modelo de difusion de texto a imagen e imagen a imagen desarrollado por Black Forest Labs (BFL), la empresa responsable de la familia FLUX. Se trata de un transformer de flujo rectificado (rectified flow transformer) de aproximadamente 4.000 millones de parametros (3.875.544.576 segun los pesos en safetensors) que unifica generacion desde texto y edicion de imagen en una sola arquitectura compacta, incluyendo edicion con multiples imagenes de referencia. La ficha analizada corresponde a la copia alojada por el usuario `nathanml` en Hugging Face, no al repositorio oficial de BFL.
 
 Su relevancia actual radica en dos factores. Por un lado, BFL lo presenta como su modelo de imagen mas rapido hasta la fecha, con inferencia de extremo a extremo en menos de un segundo en configuraciones optimizadas y tan solo 4 pasos de muestreo en el ejemplo oficial de uso. Por otro, es un modelo disenado para ejecutarse en hardware de consumo: alrededor de 13 GB de VRAM, lo que lo hace utilizable en GPU como la RTX 3090 o la RTX 4070. Se publica bajo licencia Apache 2.0, lo que permite uso comercial sin las restricciones de otros modelos de la familia FLUX.
 
@@ -98,7 +98,7 @@ La ventaja estructural de FLUX.2 [klein] 4B frente a las alternativas anteriores
 
 ## Enlaces
 
-- Repositorio en HuggingFace analizado: https://huggingface.co/nathanml/FLUX.2-klein-4B
+- Repositorio en Hugging Face analizado: https://huggingface.co/nathanml/FLUX.2-klein-4B
 - Repositorio oficial referenciado en el ejemplo de codigo: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Blog de BFL sobre FLUX.2 [klein]: https://bfl.ai/blog/flux2-klein-towards-interactive-visual-intelligence
 - Repositorio de la implementacion de referencia en GitHub: https://github.com/black-forest-labs/flux2

@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rybib/rytability-qwen35-vision | 333,5 M (solo vision tower) | No disponible | MLX safetensors | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (modelo base) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| mlx-community/Qwen3.5-4B-4bit (origen de los pesos) | No disponible | No disponible | MLX, 4 bits | No disponible | HuggingFace |
+| Rybib/rytability-qwen35-vision | 333,5 M (solo vision tower) | No disponible | MLX safetensors | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (modelo base) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| mlx-community/Qwen3.5-4B-4bit (origen de los pesos) | No disponible | No disponible | MLX, 4 bits | No disponible | Hugging Face |
 | Otros vision towers (SigLIP, CLIP, etc.) | No disponible | No aplica | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento de ninguno de estos modelos en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa.
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento de ninguno de estos modelos en la informac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rybib/rytability-qwen35-vision
+- Repositorio en Hugging Face: https://huggingface.co/Rybib/rytability-qwen35-vision
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Origen de los pesos (MLX, 4 bits): https://huggingface.co/mlx-community/Qwen3.5-4B-4bit
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

@@ -97,7 +97,7 @@ Los unicos terminos de comparacion con datos medidos son las implementaciones au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/satoripoyopoyo/SheetSage2-MLX
+- Modelo en Hugging Face: https://huggingface.co/satoripoyopoyo/SheetSage2-MLX
 - Modelo original SheetSage2 (m-a-p): https://huggingface.co/m-a-p/SheetSage2
 - Repositorio del port MLX: https://github.com/RINkir64/sheetsage-mlx
 - Framework Apple MLX: https://github.com/ml-explore/mlx

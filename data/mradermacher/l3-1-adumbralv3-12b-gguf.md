@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/L3.1-Adumbralv3-12B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/L3.1-Adumbralv3-12B-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/kromcomp/L3.1-Adumbralv3-12B
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/L3.1-Adumbralv3-12B-i1-GGUF
 - Página de descargas de mradermacher: https://hf.tst.eu/model

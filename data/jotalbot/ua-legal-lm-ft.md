@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 - VRAM estimada para inferencia: al ser un modelo de 0.5B, en FP16 ocupa aproximadamente 1 GB de VRAM; con cuantización a 8 bits o 4 bits, puede reducirse a 0.5-0.7 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, como NVIDIA GTX 1650, RTX 2060 o superiores. También puede ejecutarse en CPU con razonable velocidad.
 - Cabe en GPUs de consumo (gama baja y media) y en dispositivos edge.
-- Opciones de despliegue: al ser un modelo basado en Qwen2.5, es compatible con vLLM, llama.cpp, Ollama, TGI y Transformers de HuggingFace. El adaptador LoRA puede cargarse con PEFT.
+- Opciones de despliegue: al ser un modelo basado en Qwen2.5, es compatible con vLLM, llama.cpp, Ollama, TGI y Transformers de Hugging Face. El adaptador LoRA puede cargarse con PEFT.
 - Latencia y throughput: no se dispone de datos medidos; en una GPU moderna (RTX 3090) se espera una latencia de decodificación de unos 10-20 ms por token, y en CPU de 100-300 ms por token.
 
 ## Comparativa con modelos similares
@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables específicos para el dom
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JoTalbot/ua-legal-lm-ft
+- Hugging Face: https://huggingface.co/JoTalbot/ua-legal-lm-ft
 - Repositorio GitHub del autor: https://github.com/JoTalbot/ukraine
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Página de rankings de IA legal (referencia general): https://llm-stats.com/leaderboards/best-ai-for-legal

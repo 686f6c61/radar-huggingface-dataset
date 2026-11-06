@@ -94,7 +94,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (co
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/Soulfate24/PaddleOCR-VL-1.6-ASHQ1-Remix-GGUF
+- Modelo cuantizado en Hugging Face: https://huggingface.co/Soulfate24/PaddleOCR-VL-1.6-ASHQ1-Remix-GGUF
 - Modelo base PaddleOCR-VL-1.6: https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6
 - Repositorio oficial de PaddleOCR: https://github.com/PaddlePaddle/PaddleOCR
 - Suite de cuantización ASHQ1-Remix: https://huggingface.co/Soulfate24/AutoRound-ASHQ1-Remix_Double-Quantization_Suite

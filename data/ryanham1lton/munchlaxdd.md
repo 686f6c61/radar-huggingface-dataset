@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MunchlaxDD es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/MunchlaxDD`. La informacion disponible es extremadamente limitada: la model card unicamente contiene la declaracion de licencia `cc-by-4.0` en su cabecera YAML, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin pipeline asignado. El repositorio se creo el 19 de septiembre de 2026 y se actualizo 46 segundos mas tarde, lo que sugiere una publicacion inicial sin trabajo posterior sobre la ficha.
+MunchlaxDD es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/MunchlaxDD`. La informacion disponible es extremadamente limitada: la model card unicamente contiene la declaracion de licencia `cc-by-4.0` en su cabecera YAML, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin pipeline asignado. El repositorio se creo el 19 de septiembre de 2026 y se actualizo 46 segundos mas tarde, lo que sugiere una publicacion inicial sin trabajo posterior sobre la ficha.
 
 El tamano del repositorio es de aproximadamente 0,1 GB, un volumen coherente con pesos de muy baja precision, un modelo de dimensiones reducidas o un adaptador, aunque esta interpretacion es una inferencia a partir del tamano y no un dato confirmado por el autor. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe evidencia de adopcion ni de validacion por parte de la comunidad.
 
@@ -88,7 +88,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MunchlaxDD | no disponible | no disponible | no disponible | cc-by-4.0 | repositorio publico en HuggingFace |
+| MunchlaxDD | no disponible | no disponible | no disponible | cc-by-4.0 | repositorio publico en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -104,7 +104,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/MunchlaxDD
+- Hugging Face: https://huggingface.co/Ryanham1lton/MunchlaxDD
 - Paper: no disponible.
 - Repositorio de codigo: no disponible.
 - Blog o anuncio del autor: no disponible.

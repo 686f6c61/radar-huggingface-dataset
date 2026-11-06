@@ -6,7 +6,7 @@
 
 El interés del modelo es metodológico más que de producto. Documenta de forma explícita un protocolo de entrenamiento con RL: 4.000 rollouts como tope, actualizaciones de validación cada 50 pasos con 32 prompts y 8 respuestas por prompt, y criterio de parada al alcanzar `pass@1 >= 0,98` en el conjunto de validación por identificador. El checkpoint publicado corresponde a la actualización 499 (indexada desde cero), es decir, el máximo de 4.000 rollouts consumido. Esto lo convierte en material útil para reproducir experimentos de RL y de escalado de datos, no en un asistente conversacional.
 
-Arquitectura y tamaño vienen heredados íntegramente del modelo base: un transformer decoder-only de la familia Qwen2 (etiqueta `qwen2` en HuggingFace) destilado de DeepSeek-R1, con pesos en safetensors y un repositorio de 3,6 GB. La model card no publica licencia, idiomas soportados, longitud de contexto ni resultados de evaluación general, por lo que cualquier uso en producción exige verificar primero esas condiciones en el modelo base.
+Arquitectura y tamaño vienen heredados íntegramente del modelo base: un transformer decoder-only de la familia Qwen2 (etiqueta `qwen2` en Hugging Face) destilado de DeepSeek-R1, con pesos en safetensors y un repositorio de 3,6 GB. La model card no publica licencia, idiomas soportados, longitud de contexto ni resultados de evaluación general, por lo que cualquier uso en producción exige verificar primero esas condiciones en el modelo base.
 
 ## Especificaciones técnicas
 
@@ -73,10 +73,10 @@ Datos de los modelos comparados tomados de su documentación pública; no verifi
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rlve-opd-teacher-R1Distill-094-WeightedLIS` (este modelo) | 1,78 B | No disponible | Entorno único `94-WeightedLIS`, rol de teacher | No disponible | HuggingFace, 0 descargas, 0 likes |
-| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` (base) | 1,78 B | No disponible en esta ficha (consultar model card del base) | Razonamiento general destilado de DeepSeek-R1 | Según model card del base (verificar) | HuggingFace, ampliamente descargado |
-| `Qwen/Qwen2.5-1.5B-Instruct` | ≈1,54 B | 32.768 tokens según documentación pública | Instrucciones generales, multilingüe | Apache 2.0 | HuggingFace, muy extendido |
-| `Qwen/Qwen2.5-Math-1.5B` | ≈1,5 B | 32.768 tokens según documentación pública | Razonamiento matemático | Apache 2.0 | HuggingFace |
+| `rlve-opd-teacher-R1Distill-094-WeightedLIS` (este modelo) | 1,78 B | No disponible | Entorno único `94-WeightedLIS`, rol de teacher | No disponible | Hugging Face, 0 descargas, 0 likes |
+| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` (base) | 1,78 B | No disponible en esta ficha (consultar model card del base) | Razonamiento general destilado de DeepSeek-R1 | Según model card del base (verificar) | Hugging Face, ampliamente descargado |
+| `Qwen/Qwen2.5-1.5B-Instruct` | ≈1,54 B | 32.768 tokens según documentación pública | Instrucciones generales, multilingüe | Apache 2.0 | Hugging Face, muy extendido |
+| `Qwen/Qwen2.5-Math-1.5B` | ≈1,5 B | 32.768 tokens según documentación pública | Razonamiento matemático | Apache 2.0 | Hugging Face |
 
 La comparación relevante es frente a su propio modelo base: este checkpoint intercambia capacidades generales por un ajuste fino agresivo sobre un solo entorno. Frente a un instruct generalista de tamaño similar, la diferencia esperable es de especialización, no de tamaño ni de coste de inferencia.
 
@@ -94,7 +94,7 @@ La comparación relevante es frente a su propio modelo base: este checkpoint int
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-094-WeightedLIS-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-094-WeightedLIS-20261025
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/18f274de
 - Configuración del entrenamiento (en el repo): https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-094-WeightedLIS-20261025/blob/main/training_config.yaml

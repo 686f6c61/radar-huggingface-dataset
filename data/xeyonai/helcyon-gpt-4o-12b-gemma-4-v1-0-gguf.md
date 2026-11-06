@@ -6,7 +6,7 @@ Helcyon GPT-4o 12B es un ajuste fino del modelo base Gemma 4 12B, desarrollado p
 
 El modelo cuenta con 11.907.350.576 parámetros totales, lo que lo sitúa en la franja de los 12B, y se apoya en la arquitectura del Gemma 4 de Google, aunque la model card no detalla la arquitectura interna ni la longitud de contexto. El autor indica que el ajuste se realizó con "datasets auténticos de GPT-4o" para capturar el tono cálido, juguetón y expresivo del modelo original, y menciona que el modelo es multimodal con un archivo mmproj para visión disponible junto a los pesos.
 
-Su relevancia actual radica en dos factores: por un lado, la retirada anunciada de GPT-4o en enero de 2027, que motiva el interés por preservar su estilo conversacional en un modelo local; por otro, la disponibilidad de un runtime Gemma 4/GGUF que permite ejecutar el modelo en hardware de consumo. El repositorio ocupa 69,1 GB y acumula 1.128 descargas en HuggingFace.
+Su relevancia actual radica en dos factores: por un lado, la retirada anunciada de GPT-4o en enero de 2027, que motiva el interés por preservar su estilo conversacional en un modelo local; por otro, la disponibilidad de un runtime Gemma 4/GGUF que permite ejecutar el modelo en hardware de consumo. El repositorio ocupa 69,1 GB y acumula 1.128 descargas en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de contexto para establecer una comparac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XeyonAI/Helcyon-GPT-4o-12b-Gemma-4-v1.0-GGUF
+- Hugging Face: https://huggingface.co/XeyonAI/Helcyon-GPT-4o-12b-Gemma-4-v1.0-GGUF
 - Helcyon-WebUI (gratuito): https://github.com/XeyonAI/Helcyon-WebUI
 - Helcyon-WebUI Pro: https://xeyonai.gumroad.com/l/bsmupk
 - No se han encontrado en la informacion proporcionada papers, blogs tecnicos ni demos adicionales.

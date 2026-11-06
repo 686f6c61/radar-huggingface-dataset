@@ -95,7 +95,7 @@ La comparativa se limita al ecosistema Vela y a su modelo base, ya que la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/valereseach/vela-sd-turbo-int-v2-vir
+- Modelo en Hugging Face: https://huggingface.co/valereseach/vela-sd-turbo-int-v2-vir
 - Repositorio de consenso (.poisd): https://huggingface.co/valereseach/vela-sd-turbo-int-v2
 - Modelo base: https://huggingface.co/stabilityai/sd-turbo
 - Sitio de Vela Research: https://velaresearch.ai

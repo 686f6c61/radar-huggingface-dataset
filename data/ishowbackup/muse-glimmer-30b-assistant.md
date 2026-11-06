@@ -79,8 +79,8 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Enlaces
 
-- Repositorio HuggingFace del drafter: https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-assistant
-- Repositorio HuggingFace del modelo principal (Meta): https://huggingface.co/meta-models/Muse-Glimmer-30B-assistant
+- Repositorio Hugging Face del drafter: https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-assistant
+- Repositorio Hugging Face del modelo principal (Meta): https://huggingface.co/meta-models/Muse-Glimmer-30B-assistant
 - Versión abliterada en GGUF: https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-Abliterated-GGUF
 - Página oficial de Meta sobre Muse Glimmer: https://developer.meta.com/ai/models/muse-glimmer/
 - Paper del encoder de percepción (arXiv:2504.13181): https://arxiv.org/abs/2504.13181

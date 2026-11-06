@@ -83,9 +83,9 @@ El adaptador multiplica por aproximadamente 1,6 el recall en objetos y por 3,4 e
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Crackio Retouch eyes (este) | LoRA sobre base de 2B | no disponible | Grounding y detección de objetos con partes | LFM Open License v1.0 (comercial solo por debajo de 10 M USD de ingresos) | HuggingFace, repo de 0,3 GB |
-| LiquidAI/LFM3-VL-2B (base) | 2B | no disponible | Vision-lenguaje general | LFM Open License v1.0 | HuggingFace |
-| Qwen/Qwen3-VL-8B-Instruct | 8B | no disponible | Vision-lenguaje general, usado como profesor para las etiquetas | Apache-2.0 | HuggingFace |
+| Crackio Retouch eyes (este) | LoRA sobre base de 2B | no disponible | Grounding y detección de objetos con partes | LFM Open License v1.0 (comercial solo por debajo de 10 M USD de ingresos) | Hugging Face, repo de 0,3 GB |
+| LiquidAI/LFM3-VL-2B (base) | 2B | no disponible | Vision-lenguaje general | LFM Open License v1.0 | Hugging Face |
+| Qwen/Qwen3-VL-8B-Instruct | 8B | no disponible | Vision-lenguaje general, usado como profesor para las etiquetas | Apache-2.0 | Hugging Face |
 
 La comparación con el modelo base es la más directa: el LoRA mejora el recall de objetos de 0,33 a 0,53 y el de partes de 0,20 a 0,68, con una precisión menor en objetos. Frente a Qwen3-VL-8B-Instruct, que actúa como profesor y referencia de evaluación, el adaptador ofrece un coste de inferencia mucho menor al ejecutarse sobre 2B parámetros y en GPU local, aunque no se publican métricas comparativas directas entre ambos más allá del acuerdo con sus cajas tras el refinado con SAM 3.1.
 
@@ -105,7 +105,7 @@ La comparación con el modelo base es la más directa: el LoRA mejora el recall 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TR4F/crackio-retouch
+- Modelo en Hugging Face: https://huggingface.co/TR4F/crackio-retouch
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Modelo profesor y referencia de evaluación: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Repositorio de Crackio: https://github.com/RafalOfficial/Crackio

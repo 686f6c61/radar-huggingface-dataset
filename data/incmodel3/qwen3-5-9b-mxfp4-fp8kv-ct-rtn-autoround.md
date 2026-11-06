@@ -73,7 +73,7 @@ No se han publicado resultados comparativos frente al modelo base Qwen/Qwen3.5-9
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-MXFP4-FP8KV-CT-RTN-AutoRound | 4.577.975.552 (segun safetensors) | no disponible | MXFP4 + FP8 KV | no disponible | repositorio HuggingFace con 0 descargas |
+| Qwen3.5-9B-MXFP4-FP8KV-CT-RTN-AutoRound | 4.577.975.552 (segun safetensors) | no disponible | MXFP4 + FP8 KV | no disponible | repositorio Hugging Face con 0 descargas |
 | Qwen/Qwen3.5-9B (modelo base) | no disponible | no disponible | sin cuantizar | no disponible | modelo base referenciado en el repo |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,7 +94,7 @@ No se dispone de datos verificados de otros modelos comparables en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/INCModel3/Qwen3.5-9B-MXFP4-FP8KV-CT-RTN-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/INCModel3/Qwen3.5-9B-MXFP4-FP8KV-CT-RTN-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - AutoRound (herramienta de cuantizacion, Intel): https://github.com/intel/auto-round
 - Paper de AutoRound (Optimize Weight Rounding via Signed Gradient Descent for the Quantization of LLMs): https://arxiv.org/abs/2309.05516

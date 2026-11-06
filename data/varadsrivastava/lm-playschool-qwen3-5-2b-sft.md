@@ -68,7 +68,7 @@ Estos resultados indican que el SFT mejora drásticamente el cumplimiento de pro
 - VRAM estimada para inferencia: ~4 GB en bf16/fp16 (pesos de 3,76 GB más overhead de activaciones). Con cuantización de 4 bits, ~1 GB.
 - GPU recomendadas: RTX 3060 (12 GB), RTX 4060 (8 GB), o GPUs con al menos 6 GB de VRAM para inferencia sin cuantizar.
 - Cabe en GPUs de consumo (gama media y alta) y también en hardware de gama baja si se cuantiza.
-- Opciones de despliegue: transformers (HuggingFace), vLLM (si se convierte a formato compatible), llama.cpp/Ollama (si se genera GGUF), o TGI.
+- Opciones de despliegue: transformers (Hugging Face), vLLM (si se convierte a formato compatible), llama.cpp/Ollama (si se genera GGUF), o TGI.
 - Latencia y throughput estimados: no disponibles en la documentación del modelo. Para un modelo de ~1,88B, se espera una latencia de decodificación de decenas de milisegundos por token en GPUs modernas, pero estos valores dependen del hardware y la implementación.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ No se han publicado resultados comparativos de `clemscore` para estos modelos en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/varadsrivastava/lm-playschool-qwen3.5-2b-sft
+- Repositorio Hugging Face: https://huggingface.co/varadsrivastava/lm-playschool-qwen3.5-2b-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Paper (pendiente de enlace): *Raising a Small Language Model: From Imitation to Curiosity in Dialogue Games* (LM Playschool Challenge 2026)
 - Checkpoints relacionados de la familia DAIR (no se proporcionan URLs directas): `lm-playschool-qwen3.5-2b-sft-dpo`, `lm-playschool-qwen3.5-2b-iter3`, `lm-playschool-qwen3.5-2b-iter4`, `lm-playschool-qwen3.5-2b-grpo-base-s42`, `lm-playschool-qwen3.5-2b-grpo-rnd-s42`

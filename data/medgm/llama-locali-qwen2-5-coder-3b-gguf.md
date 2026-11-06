@@ -99,7 +99,7 @@ Frente al base, este modelo pierde 8,6 puntos en HumanEval+ pero gana 15,3 en re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MedGm/Llama-Locali-Qwen2.5-Coder-3B-GGUF
+- Hugging Face: https://huggingface.co/MedGm/Llama-Locali-Qwen2.5-Coder-3B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
 - Repositorio del proyecto Locali: https://github.com/MedGm/Locali
 - Dataset de entrenamiento (mezcla v3b): https://www.kaggle.com/datasets/elgorrimmohamed/locali-mix-v3b

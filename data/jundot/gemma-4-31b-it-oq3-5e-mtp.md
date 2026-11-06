@@ -37,7 +37,7 @@ No se ha publicado informacion sobre el entrenamiento del modelo base (numero de
 - Ejecucion local en Apple Silicon: al estar en formato MLX, esta pensado para inferencia nativa en hardware de Apple.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible explicitamente en la informacion proporcionada (mas alla de los thinking modes del modelo base).
-- Capacidades multilingues: no disponible; el campo de idiomas no esta informado en la ficha de HuggingFace.
+- Capacidades multilingues: no disponible; el campo de idiomas no esta informado en la ficha de Hugging Face.
 
 ## Casos de uso
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/gemma-4-31B-it-oQ3.5e-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jundot/gemma-4-31B-it-oQ3.5e-mtp
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Modelo asistente (origen de la cabeza MTP): https://huggingface.co/google/gemma-4-31B-it-assistant
 - Repositorio de la herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx

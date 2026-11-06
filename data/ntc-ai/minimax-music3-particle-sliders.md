@@ -48,7 +48,7 @@ El proceso de entrenamiento descrito es deliberadamente acotado: cada control se
 
 - Produccion musical asistida por prompt: un compositor genera una maqueta con MiniMax Music 3 y aplica el LoRA Metal con fuerza +1 para explorar rapidamente una version con guitarras distorsionadas, sin reentrenar ni cambiar de modelo.
 - Prototipado de bandas sonoras para videojuegos: se fija una semilla y una letra, y se alternan los adaptadores House y Disco Funk para obtener variaciones de genero coherentes con una misma estructura, utiles como referencia para el equipo de audio.
-- Demo de control fino en interfaces creativas: el repositorio incluye un Space de HuggingFace que permite activar y desactivar cada control y comparar el resultado, lo que sirve como base para construir un panel de sliders en un producto web.
+- Demo de control fino en interfaces creativas: el repositorio incluye un Space de Hugging Face que permite activar y desactivar cada control y comparar el resultado, lo que sirve como base para construir un panel de sliders en un producto web.
 - Integracion en flujos ComfyUI: dado que el autor publica exportaciones para ComfyUI, estos adaptadores pueden insertarse en grafos de generacion de audio existentes para anadir un selector de voz o de genero sin salir del entorno.
 - Personalizacion de voz en jingles y anuncios: el adaptador Female permite dirigir la interpretacion vocal hacia un registro femenino manteniendo el mismo prompt y la misma letra, lo que agiliza la entrega de variantes a un cliente.
 - Investigacion sobre control de atributos en modelos generativos musicales: los pares de muestras con semilla, prompt y letra constantes constituyen un material de partida para estudiar hasta que punto un LoRA cambia el contenido frente al estilo, dado que el propio autor advierte que la composicion y el fraseo pueden variar.
@@ -84,9 +84,9 @@ La informacion disponible solo permite comparar con el modelo base y con la line
 
 | Modelo | Tipo | Adaptadores / controles | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ntc-ai/minimax-music3-particle-sliders | Coleccion de LoRA sobre MiniMax Music 3 | 16 LoRA de voz y genero (revision del 16 de septiembre de 2026) | MIT | HuggingFace, 0 descargas, 20 likes; Space propio y exportaciones ComfyUI |
+| ntc-ai/minimax-music3-particle-sliders | Coleccion de LoRA sobre MiniMax Music 3 | 16 LoRA de voz y genero (revision del 16 de septiembre de 2026) | MIT | Hugging Face, 0 descargas, 20 likes; Space propio y exportaciones ComfyUI |
 | MiniMaxAI/MiniMax-Music3 | Modelo base text-to-music | no aplica | no disponible | Modelo base referenciado por el adaptador |
-| ntc-ai/yue2-particle-sliders | Coleccion de LoRA sobre otro modelo base (YuE2) | no disponible | no disponible | HuggingFace, con Space propio |
+| ntc-ai/yue2-particle-sliders | Coleccion de LoRA sobre otro modelo base (YuE2) | no disponible | no disponible | Hugging Face, con Space propio |
 
 No se dispone de datos de parametros, contexto, rendimiento ni licencia de los modelos comparados, salvo la licencia MIT de este repositorio. No se han identificado en la busqueda web alternativas tecnicamente comparables con datos verificables.
 
@@ -106,7 +106,7 @@ No se dispone de datos de parametros, contexto, rendimiento ni licencia de los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ntc-ai/minimax-music3-particle-sliders
+- Modelo en Hugging Face: https://huggingface.co/ntc-ai/minimax-music3-particle-sliders
 - Space de demostracion: https://huggingface.co/spaces/ntc-ai/minimax-music3-particle-sliders
 - Modelo base MiniMax Music 3: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Pesos de sliders para YuE2 del mismo autor: https://huggingface.co/ntc-ai/yue2-particle-sliders

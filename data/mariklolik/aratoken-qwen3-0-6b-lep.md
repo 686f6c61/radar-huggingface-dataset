@@ -94,11 +94,11 @@ No se dispone en la informacion proporcionada de comparaciones frente a otros mo
 - El normalizador del tokenizador elimina diacriticos y tatweel, por lo que no es adecuado para tareas que requieran preservar la vocalizacion exacta del texto arabe.
 - No hay resultados publicados de benchmarks estandar (MMLU, HumanEval, GSM8K), lo que dificulta la comparacion con otros modelos de proposito general.
 - La licencia Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base Qwen3-0.6B-Base.
-- Modelo recien publicado, con 0 descargas y 0 likes en HuggingFace en el momento de la consulta: carece de validacion independiente por parte de la comunidad.
+- Modelo recien publicado, con 0 descargas y 0 likes en Hugging Face en el momento de la consulta: carece de validacion independiente por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mariklolik/AraToken-Qwen3-0.6B-LEP
+- Modelo en Hugging Face: https://huggingface.co/mariklolik/AraToken-Qwen3-0.6B-LEP
 - Paper: https://arxiv.org/abs/2512.18399
 - Repositorio de codigo: https://github.com/mariklolik/Aratoken
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base

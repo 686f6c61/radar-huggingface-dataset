@@ -74,13 +74,13 @@ No se dispone de informacion suficiente para comparar rendimiento numerico con a
 - Modelo "uncensored": no aplica filtros de seguridad, por lo que puede generar contenido danino, ilegal o eticamente problematico. No apto para aplicaciones de cara al publico sin moderacion adicional.
 - Riesgo elevado de alucinacion, agravado por la cuantizacion de 4 bits, que puede degradar la calidad respecto al modelo base en tareas de razonamiento complejo.
 - No se dispone de informacion sobre idiomas soportados ni sobre el contexto maximo, lo que dificulta planificar su uso en produccion.
-- El repositorio tiene cero descargas y cero likes, y el acceso esta restringido (gated): requiere aceptar condiciones en HuggingFace. La trazabilidad y el soporte de la comunidad son practicamente nulos.
+- El repositorio tiene cero descargas y cero likes, y el acceso esta restringido (gated): requiere aceptar condiciones en Hugging Face. La trazabilidad y el soporte de la comunidad son practicamente nulos.
 - Aunque la licencia declarada es Apache 2.0, conviene verificar que el modelo base Qwen3.8-27B y las tecnicas de abliteration no impongan restricciones adicionales.
 - El nombre del repositorio incluye "backup2026-11-02", lo que sugiere que podria tratarse de una copia de seguridad y no de una publicacion mantenida; riesgo de que el repositorio desaparezca o no se actualice.
 - No se documenta el procedimiento de abliteration ni de cuantizacion, lo que impide reproducir el resultado o auditar su calidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/meltingfeet/backup2026-11-02-Zynerji-Ektome-Qwen3.8-27B-PristinelyUncensored-GPTQ-MTP
+- Hugging Face: https://huggingface.co/meltingfeet/backup2026-11-02-Zynerji-Ektome-Qwen3.8-27B-PristinelyUncensored-GPTQ-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

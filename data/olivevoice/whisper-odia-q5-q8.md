@@ -17,10 +17,10 @@ La relevancia actual es limitada y hay que ser honesto con los numeros: 0 descar
 | Parametros activos | No aplica: no es un modelo MoE |
 | Longitud de contexto | Ventana de audio fija de 30 s (1500 posiciones de espectrograma mel) heredada de Whisper; no gestiona contexto de texto extensible |
 | Tipos de cuantizacion | q8_0 (252 MiB) y q5_1 (181 MiB), ambas cuantizaciones enteras en formato GGML legacy |
-| Idiomas soportados | No disponible en los metadatos de HuggingFace. El checkpoint esta orientado al odia (or) y deriva de openai/whisper-small, que es multilingue |
+| Idiomas soportados | No disponible en los metadatos de Hugging Face. El checkpoint esta orientado al odia (or) y deriva de openai/whisper-small, que es multilingue |
 | Licencia | No disponible en el repositorio. La model card indica que upstream openai/whisper-small declara Apache-2.0, pero la exportacion local sam2ai/whisper-small-or no incluia metadatos de identidad ni licencia del dataset |
 | Formato de pesos | GGML legacy de fichero unico (.bin) para whisper.cpp; no son ficheros GGUF, no son safetensors y no se cargan con la API de Transformers |
-| Tamano del repositorio | 0,5 GB segun HuggingFace; la suma de los dos .bin es de 454.550.128 bytes (aproximadamente 433 MiB) |
+| Tamano del repositorio | 0,5 GB segun Hugging Face; la suma de los dos .bin es de 454.550.128 bytes (aproximadamente 433 MiB) |
 | Libreria declarada | whisper.cpp |
 | Pipeline | automatic-speech-recognition |
 | Integridad | q8_0: 264.464.624 bytes, SHA-256 adc92d090b2de8bf019421f71405bc3a0fac0d2054c2c127f686a7a5c0e51ed7. q5_1: 190.085.504 bytes, SHA-256 4035df7f0f4e26379147db83964358e16f4bbca715c5359638fb2106e76b881e. Fuente FP16: 487.601.984 bytes, SHA-256 99394557e880a7d1516fd94ef3fe2e5db478e3e3aee60532d61aa528b97c4c73 |
@@ -79,8 +79,8 @@ La unica validacion publicada es un smoke test de compatibilidad en runtime: amb
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OliveVoice/whisper-odia-q5-q8 | Aproximadamente 244 M (base) | 30 s | Objetivo odia; base multilingue | No disponible en el repositorio; upstream Apache-2.0 segun la model card | GGML legacy .bin (q8_0, q5_1) | HuggingFace, 0 descargas y 0 likes |
-| openai/whisper-small | 244 M | 30 s | Multilingue (aproximadamente 99 idiomas) | Apache-2.0 | PyTorch / safetensors | Repositorio oficial de OpenAI en HuggingFace |
+| OliveVoice/whisper-odia-q5-q8 | Aproximadamente 244 M (base) | 30 s | Objetivo odia; base multilingue | No disponible en el repositorio; upstream Apache-2.0 segun la model card | GGML legacy .bin (q8_0, q5_1) | Hugging Face, 0 descargas y 0 likes |
+| openai/whisper-small | 244 M | 30 s | Multilingue (aproximadamente 99 idiomas) | Apache-2.0 | PyTorch / safetensors | Repositorio oficial de OpenAI en Hugging Face |
 | whisper.cpp ggml-small (q5_0 / q8_0 oficiales) | 244 M | 30 s | Multilingue | Modelo Apache-2.0; runtime MIT | GGML legacy .bin | Repositorio ggml-org/whisper.cpp |
 
 La diferencia frente al Whisper Small oficial no esta en la arquitectura ni en el tamano, sino en el afinamiento a odia y en el empaquetado ya cuantizado. Frente a las cuantizaciones oficiales de whisper.cpp, el valor anadido es el ajuste de idioma, pero tambien el riesgo: no hay WER comparativo que demuestre que el afinamiento mejora sobre el modelo multilingue original en odia.
@@ -96,11 +96,11 @@ La diferencia frente al Whisper Small oficial no esta en la arquitectura ni en e
 - Alucinacion tipica de Whisper: en silencios, musica o audio con ruido, la familia Whisper tiende a generar texto plausible no presente en el audio. No hay mitigacion documentada en este repositorio.
 - Idiomas distintos del odia: el afinamiento puede haber degradado el rendimiento multilingue del modelo base; no hay datos al respecto.
 - Sin soporte de tool calling, agentes ni razonamiento multi-paso: es un modelo ASR puro y no debe plantearse para tareas generativas de texto.
-- Metadatos incompletos en HuggingFace: idiomas y licencia figuran como no disponibles en la ficha del repositorio.
+- Metadatos incompletos en Hugging Face: idiomas y licencia figuran como no disponibles en la ficha del repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OliveVoice/whisper-odia-q5-q8
+- Repositorio en Hugging Face: https://huggingface.co/OliveVoice/whisper-odia-q5-q8
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Repositorio de OpenAI Whisper: https://github.com/openai/whisper
 - Runtime whisper.cpp: https://github.com/ggml-org/whisper.cpp

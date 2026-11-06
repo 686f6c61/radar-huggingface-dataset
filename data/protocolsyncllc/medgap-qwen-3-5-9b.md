@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo en tareas regulatorias. El mod
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/protocolsyncllc/medgap-qwen-3.5-9b)
+- [Modelo en Hugging Face](https://huggingface.co/protocolsyncllc/medgap-qwen-3.5-9b)
 - [Dataset de entrenamiento (cartas de advertencia de la FDA)](https://huggingface.co/datasets/protocolsyncllc/fda-warning-letters)
 - [Archivo GGUF Q8](https://huggingface.co/protocolsyncllc/medgap-qwen-3.5-9b/blob/main/Qwen3.5-9B_q8.gguf)
 - [Sitio web de Medgap (metodologia)](https://www.medgap.org/methodology)

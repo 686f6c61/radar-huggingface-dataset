@@ -4,7 +4,7 @@
 
 El modelo `kazuyasasaki/intent` es una implementación a escala **xlarge** de la arquitectura **PoolFormer**, diseñada específicamente para tareas de **retrieval** (recuperación de información). Lo desarrolla Kazuya Sasaki, profesor de la Universidad de Hirosaki (Japón), aunque no se especifica si se trata de un modelo de investigación, un prototipo o un artefacto experimental. El repositorio contiene únicamente un archivo `pipeline.py`, lo que sugiere que el modelo se distribuye como código de pipeline más que como pesos preentrenados.
 
-La relevancia de este modelo radica en su combinación de arquitectura PoolFormer (que sustituye la atención por pooling de ventanas) con atención lineal, fusión por tensores y normalización RMSNorm, orientado a recuperación de información. Sin embargo, la información pública es extremadamente limitada: no se publican parámetros totales, datos de entrenamiento, benchmarks ni ejemplos de uso, lo que dificulta su evaluación práctica. A fecha de su publicación (agosto de 2026), no cuenta con descargas ni valoraciones en HuggingFace.
+La relevancia de este modelo radica en su combinación de arquitectura PoolFormer (que sustituye la atención por pooling de ventanas) con atención lineal, fusión por tensores y normalización RMSNorm, orientado a recuperación de información. Sin embargo, la información pública es extremadamente limitada: no se publican parámetros totales, datos de entrenamiento, benchmarks ni ejemplos de uso, lo que dificulta su evaluación práctica. A fecha de su publicación (agosto de 2026), no cuenta con descargas ni valoraciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -69,6 +69,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace: kazuyasasaki/intent](https://huggingface.co/kazuyasasaki/intent)
+- [Hugging Face: kazuyasasaki/intent](https://huggingface.co/kazuyasasaki/intent)
 - [Perfil de Kazuya Sasaki en ResearchGate](https://www.researchgate.net/profile/Kazuya-Sasaki-2)
 - [Models.dev (base de datos de modelos, sin entrada específica para este modelo)](https://models.dev/)

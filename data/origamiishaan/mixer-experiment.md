@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`origamiishaan/mixer-experiment` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura tipo Mixer orientada a generación de texto. Lo desarrolla el usuario origamiishaan y se distribuye bajo licencia Apache 2.0. No se trata de un modelo entrenado, sino de un esqueleto de código con un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*). El propio autor lo declara explícitamente: "no se presenta como un checkpoint entrenado con benchmarks" y "no se reclama ninguna puntuación de benchmark en este repositorio".
+`origamiishaan/mixer-experiment` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura tipo Mixer orientada a generación de texto. Lo desarrolla el usuario origamiishaan y se distribuye bajo licencia Apache 2.0. No se trata de un modelo entrenado, sino de un esqueleto de código con un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*). El propio autor lo declara explícitamente: "no se presenta como un checkpoint entrenado con benchmarks" y "no se reclama ninguna puntuación de benchmark en este repositorio".
 
 El dato más relevante es su escala real: el fichero `model.safetensors` contiene 16.576 parámetros totales, lo que lo sitúa en el rango de unos 0,017 millones de parámetros. Es, por tanto, un artefacto de investigación y andamiaje de código, no un modelo de propósito general. El repositorio ocupa 0,0 GB, no tiene descargas ni *likes* registrados y fue creado el 5 de octubre de 2026.
 
@@ -80,7 +80,7 @@ No disponible. No se dispone de datos de rendimiento del modelo y el checkpoint 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/origamiishaan/mixer-experiment
+- Repositorio en Hugging Face: https://huggingface.co/origamiishaan/mixer-experiment
 - Paper: no disponible
 - Blog o artículo técnico: no disponible
 - Repositorio de código adicional: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FloodDiffusion 2 es un modelo de generacion de movimiento humano condicionado por texto, desarrollado por el autor caiyiyi1998 y publicado en HuggingFace. Se presenta como una solucion de generacion de movimiento en streaming, eficiente y con control de trayectoria (root-path control), lo que permite sintetizar secuencias de movimiento de forma continua en lugar de generar clips aislados. El modelo se apoya en difusion, un autoencoder latente de 263 dimensiones (LDF/VAE) y un mecanismo denominado Partial Attention.
+FloodDiffusion 2 es un modelo de generacion de movimiento humano condicionado por texto, desarrollado por el autor caiyiyi1998 y publicado en Hugging Face. Se presenta como una solucion de generacion de movimiento en streaming, eficiente y con control de trayectoria (root-path control), lo que permite sintetizar secuencias de movimiento de forma continua en lugar de generar clips aislados. El modelo se apoya en difusion, un autoencoder latente de 263 dimensiones (LDF/VAE) y un mecanismo denominado Partial Attention.
 
 La relevancia del proyecto reside en su enfoque de streaming y en la supervision geometrica compatible con difusion, que segun la model card permite mantener la coherencia fisica del esqueleto durante la generacion. El repositorio incluye seis checkpoints de FD2 (variantes sobre HumanML3D, HumanML3D+BABEL y SEED, con y sin control de trayectoria) y los modelos emparejados LDF/VAE de 263 dimensiones para compatibilidad con la primera generacion.
 
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de especificaciones tecnicas suficientes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caiyiyi1998/FloodDiffusion2
+- Modelo en Hugging Face: https://huggingface.co/caiyiyi1998/FloodDiffusion2
 - Codigo y instrucciones de instalacion: https://github.com/caiyy17/FloodDiffusion2
 - Dependencias compartidas (deps.zip): https://huggingface.co/caiyiyi1998/FloodDiffusion2/blob/main/deps.zip
 - Datasets preparados: https://huggingface.co/datasets/caiyiyi1998/FloodDiffusion2-Data

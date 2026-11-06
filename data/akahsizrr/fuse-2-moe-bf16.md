@@ -27,7 +27,7 @@ La conversion a GGUF pliega las proyecciones puente en los pesos de gate/up y do
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles (etiquetado como "conversational" en HuggingFace).
+- Generacion de texto conversacional en ingles (etiquetado como "conversational" en Hugging Face).
 - Razonamiento y comprension del lenguaje basados en las capacidades heredadas de Qwen3.5-4B y los expertos de Qwen3.8-27B.
 - Soporte de tool calling: no confirmado en la documentacion disponible; no se menciona explicitamente.
 - Capacidades multilingues: solo se declara ingles; no hay evidencia de soporte para otros idiomas.
@@ -77,7 +77,7 @@ La comparativa se basa en datos publicos de los modelos mencionados. Fuse-2-MoE-
 
 ## Enlaces
 
-- Modelo BF16 en HuggingFace: https://huggingface.co/Akahsizrr/Fuse-2-MoE-BF16
+- Modelo BF16 en Hugging Face: https://huggingface.co/Akahsizrr/Fuse-2-MoE-BF16
 - Modelo GGUF cuantizado: https://huggingface.co/Akahsizrr/Fuse-2-MoE-GGUF
 - Modelo base (Fuse-2): https://huggingface.co/Akahsizrr/Fuse-2
 - Busqueda de modelos cuantizados de Fuse-2: https://huggingface.co/models?other=base_model:quantized:Akahsizrr/Fuse-2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Goetia-26B-NVFP4 es un checkpoint cuantizado a 4 bits en formato NVFP4 del modelo Goetia-26B, una arquitectura basada en Gemma-4 MoE con 128 expertos enrutados. Lo publica el usuario oxpuppy635 en HuggingFace y su proposito es reducir la huella de memoria del modelo desde aproximadamente 52 GB en BF16 hasta unos 15 GB, manteniendo en BF16/FP32 las capas criticas para la precision numerica (embeddings, cabeza de clasificacion, normalizaciones y las compuertas de enrutamiento del MoE).
+Goetia-26B-NVFP4 es un checkpoint cuantizado a 4 bits en formato NVFP4 del modelo Goetia-26B, una arquitectura basada en Gemma-4 MoE con 128 expertos enrutados. Lo publica el usuario oxpuppy635 en Hugging Face y su proposito es reducir la huella de memoria del modelo desde aproximadamente 52 GB en BF16 hasta unos 15 GB, manteniendo en BF16/FP32 las capas criticas para la precision numerica (embeddings, cabeza de clasificacion, normalizaciones y las compuertas de enrutamiento del MoE).
 
 El problema que aborda es el coste de servir un modelo MoE de ~27.000 millones de parametros en hardware con memoria limitada. Al aplicar cuantizacion de punto flotante de 4 bits con micro-bloques de 16 elementos y escalas en float8_e4m3fn, el checkpoint cabe en una sola GPU de 24 GB, lo que habilita despliegues en una RTX 4090 o en aceleradores Blackwell con soporte nativo de FP4.
 
@@ -89,7 +89,7 @@ Los datos de Qwen3-30B-A3B y Gemma 3 27B provienen de su documentacion publica y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oxpuppy635/Goetia-26B-NVFP4
+- Hugging Face: https://huggingface.co/oxpuppy635/Goetia-26B-NVFP4
 - Modelo base declarado: Goetia-26B (no se ha proporcionado enlace directo en la informacion disponible)
 - Especificacion de `compressed-tensors`: https://github.com/neuralmagic/compressed-tensors
 - Referencia a NVFP4 citada en la model card: no disponible como URL resoluble

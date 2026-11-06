@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sn92-generalist-h4 es un fine-tune del modelo decisionmodels/reax-1.1, publicado por el usuario edinlong83 en HuggingFace. Se trata de una entrada "generalist" para la subred SN92 (REAX) de Bittensor, una red descentralizada de modelos de decisión. El modelo parte de la arquitectura y el tokenizador del base y anade un entrenamiento especifico orientado a tareas de decision estructurada: aritmetica, logica, prediccion de salida de codigo, acordes musicales, ajedrez y aplicacion de reglas, todo ello con datos generados proceduralmente y etiquetas gold calculadas.
+sn92-generalist-h4 es un fine-tune del modelo decisionmodels/reax-1.1, publicado por el usuario edinlong83 en Hugging Face. Se trata de una entrada "generalist" para la subred SN92 (REAX) de Bittensor, una red descentralizada de modelos de decisión. El modelo parte de la arquitectura y el tokenizador del base y anade un entrenamiento especifico orientado a tareas de decision estructurada: aritmetica, logica, prediccion de salida de codigo, acordes musicales, ajedrez y aplicacion de reglas, todo ello con datos generados proceduralmente y etiquetas gold calculadas.
 
 El modelo tiene 26.085.330.160 parametros segun los pesos en safetensors, lo que lo situa en la categoria de modelos de aproximadamente 26B. El repositorio ocupa 52,2 GB. La model card indica que se aplico un unico run de LoRA fusionado en los pesos, junto con una cabeza de lectura (readout head) afinada, manteniendo la misma arquitectura, tokenizador, loader y temperatura que el modelo base.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es acotada pero especifica: no es un modelo de prop
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del base decisionmodels/reax-1.1, etiquetada como `qwen3_5` en los tags de HuggingFace, lo que sugiere una variante de la familia Qwen 3.5. La model card explicita que se mantienen sin cambios la arquitectura, el tokenizador, el loader y la temperatura respecto al base. Sobre esa base se aplico un unico run de LoRA que se fusiono en los pesos, junto con una cabeza de lectura afinada (fine-tuned readout head), lo que indica que el modelo no es un simple LoRA adapter sino un checkpoint completo con pesos fusionados.
+El modelo hereda la arquitectura del base decisionmodels/reax-1.1, etiquetada como `qwen3_5` en los tags de Hugging Face, lo que sugiere una variante de la familia Qwen 3.5. La model card explicita que se mantienen sin cambios la arquitectura, el tokenizador, el loader y la temperatura respecto al base. Sobre esa base se aplico un unico run de LoRA que se fusiono en los pesos, junto con una cabeza de lectura afinada (fine-tuned readout head), lo que indica que el modelo no es un simple LoRA adapter sino un checkpoint completo con pesos fusionados.
 
 El entrenamiento se realizo sobre items de decision generados proceduralmente con gold computado: aritmetica, logica, prediccion de salida de codigo, acordes musicales, ajedrez y aplicacion de reglas. Ademas, se incorporaron datos de etiquetado de seguridad basados en Aegis-2.0, abstención auto-destilada (self-distilled abstention) y tareas de clasificacion documento-a-categoria-oficial construidas a partir de registros publicos etiquetados: resumenes de patentes con secciones CPC (ccdv/patent-classification), disposiciones contractuales LEDGAR, areas de cuestiones del Tribunal Supremo y holdings CaseHOLD (coastalcph/lex_glue), clases de la ontologia DBpedia (fancyzhx/dbpedia_14), categorias de condiciones medicas (TimSchopf/medical_abstracts) y clasificadores de estado de desarrollo y topicos de la API JSON de PyPI. Tambien se uso el conjunto publico de entrenamiento generalist de SN92. No se especifican en la informacion disponible el numero total de tokens de entrenamiento ni si hubo fases de RLHF o DPO.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/edinlong83/sn92-generalist-h4
+- Hugging Face: https://huggingface.co/edinlong83/sn92-generalist-h4
 - Modelo base: https://huggingface.co/decisionmodels/reax-1.1
 - Dataset de patentes: https://huggingface.co/datasets/ccdv/patent-classification
 - Dataset lex_glue: https://huggingface.co/datasets/coastalcph/lex_glue

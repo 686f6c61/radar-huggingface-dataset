@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-4.6V-Flash, think symbolic image (este) | ~10 000 M (base) + 95,2 M (LoRA) | No disponible | Captioning simbólico con cadena de pensamiento y trazabilidad | MIT | HuggingFace (adaptador PEFT) |
-| zai-org/GLM-4.6V-Flash (base) | ~10 000 M | No disponible | Vision-lenguaje general | No disponible en la información | HuggingFace |
+| GLM-4.6V-Flash, think symbolic image (este) | ~10 000 M (base) + 95,2 M (LoRA) | No disponible | Captioning simbólico con cadena de pensamiento y trazabilidad | MIT | Hugging Face (adaptador PEFT) |
+| zai-org/GLM-4.6V-Flash (base) | ~10 000 M | No disponible | Vision-lenguaje general | No disponible en la información | Hugging Face |
 | Línea Lucia (Qwen3.5) | No disponible | No disponible | Misma receta de captioning simbólico | No disponible | Entrenada junto a este modelo |
 | Línea Ulisse (Gemma 4) | No disponible | No disponible | Misma receta de captioning simbólico | No disponible | Entrenada junto a este modelo |
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/AbstractPhil/glm-4.6v-flash-think-symbolic-image
+- Hugging Face del adaptador: https://huggingface.co/AbstractPhil/glm-4.6v-flash-think-symbolic-image
 - Modelo base: https://huggingface.co/zai-org/GLM-4.6V-Flash
 - Dataset de captions: https://huggingface.co/datasets/AbstractPhil/thought-symbolic-image-captions
 - Dataset de imágenes: https://huggingface.co/datasets/AbstractPhil/qwen-thinking-images

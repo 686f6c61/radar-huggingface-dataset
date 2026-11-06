@@ -102,7 +102,7 @@ La comparación con Qwen2.5-1.5B y Llama 3.2 1B es orientativa por tamaño y cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FastFlowLM/LFM3-1.7B-NPU2
+- Modelo en Hugging Face: https://huggingface.co/FastFlowLM/LFM3-1.7B-NPU2
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE
 - Repositorio FastFlowLM: https://github.com/FastFlowLM/FastFlowLM

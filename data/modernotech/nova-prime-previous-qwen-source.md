@@ -101,7 +101,7 @@ Los resultados siguientes corresponden, segun la model card, a las evaluaciones 
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nova Prime | 35,9B | ~3B | 262.144 (hasta 1.010.000 con YaRN) | Apache 2.0 | HuggingFace, 0 descargas |
+| Nova Prime | 35,9B | ~3B | 262.144 (hasta 1.010.000 con YaRN) | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas MoE de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente en la documentacion proporcionada para establecer una comparativa rigurosa con modelos alternativos de la misma categoria. La model card no incluye referencias a modelos comparables ni a resultados de evaluaciones cruzadas.
@@ -121,5 +121,5 @@ No se dispone de informacion suficiente en la documentacion proporcionada para e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ModernoTech/Nova-Prime-previous-Qwen-source
+- Modelo en Hugging Face: https://huggingface.co/ModernoTech/Nova-Prime-previous-Qwen-source
 - Sitio oficial de Moderno Tech: https://moderno.com.ar

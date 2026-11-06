@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ControlNet++ Union SDXL 1.0 (este) | ~1,26 mil millones | no disponible | no disponible | apache-2.0 | HuggingFace, diffusers |
+| ControlNet++ Union SDXL 1.0 (este) | ~1,26 mil millones | no disponible | no disponible | apache-2.0 | Hugging Face, diffusers |
 | ControlNet original para SDXL | no disponible en la informacion | no disponible | no disponible | no disponible | no disponible |
 | Otros ControlNets SDXL independientes | no disponible en la informacion | no disponible | no disponible | no disponible | no disponible |
 
@@ -78,11 +78,11 @@ No se dispone de datos de benchmarks ni de comparativas cuantitativas con altern
 - Limitaciones de contexto e idioma no documentadas; el rendimiento multilingue depende del codificador de texto de SDXL.
 - La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base SDXL con el que se combine.
 - El autor advierte que el entrenamiento de la version SD3 esta detenido por falta de recursos de GPU, lo que puede afectar la evolucion futura del proyecto.
-- La model card original esta en ingles y no detalla todos los parametros tecnicos; parte de la informacion de esta ficha proviene unicamente de los metadatos de HuggingFace.
-- El repositorio de HuggingFace asociado a este identificador registra solo 17 descargas y 0 likes, lo que sugiere una distribucion limitada y menor validacion comunitaria que el repositorio original del autor.
+- La model card original esta en ingles y no detalla todos los parametros tecnicos; parte de la informacion de esta ficha proviene unicamente de los metadatos de Hugging Face.
+- El repositorio de Hugging Face asociado a este identificador registra solo 17 descargas y 0 likes, lo que sugiere una distribucion limitada y menor validacion comunitaria que el repositorio original del autor.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bmkzl/controlnet-union-sdxl-1.0
+- Hugging Face: https://huggingface.co/bmkzl/controlnet-union-sdxl-1.0
 - Repositorio original citado en la model card: https://huggingface.co/xinsir/controlnet-union-sdxl-1.0
 - Codigo e instrucciones de inferencia: https://github.com/xinsir6/ControlNetPlus/tree/main

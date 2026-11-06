@@ -86,7 +86,7 @@ No se dispone de comparativas publicadas con otros modelos en la información pr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lyf/Qwen3.8-27B-Blackfrost-Abliterated-NVFP4-MTP-VL
+- Repositorio Hugging Face: https://huggingface.co/lyf/Qwen3.8-27B-Blackfrost-Abliterated-NVFP4-MTP-VL
 - Modelo base (Blackfrost abliterated BF16): https://huggingface.co/Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16
 - Modelo oficial Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - NVIDIA Model Optimizer: https://github.com/NVIDIA/Model-Optimizer

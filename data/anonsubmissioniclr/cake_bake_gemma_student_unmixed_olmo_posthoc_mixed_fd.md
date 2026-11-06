@@ -105,7 +105,7 @@ Advertencia de lectura: la card indica que la diferencia entre la fila de refere
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_posthoc_mixed_fd
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_posthoc_mixed_fd
 - Modelo base declarado: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Referencia y objetivo de la campana (mencionada en la card): https://huggingface.co/AnonSubmissionICLR/cake_bake_posthoc_mixed_fd
 - Variante relacionada encontrada en la busqueda: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_mixed_olmo_posthoc_unmixed_fd

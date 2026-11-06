@@ -92,7 +92,7 @@ En terminos de modelo base, Qwen3.8-27B compite con otros LLMs de 27B como Llama
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TelperionAI/Qwen3.8-27B-EXL3-6.5bpw
+- Modelo en Hugging Face: https://huggingface.co/TelperionAI/Qwen3.8-27B-EXL3-6.5bpw
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8 (GitHub): https://github.com/QwenLM/Qwen3.8
 - Repositorio de exllamav3: https://github.com/turboderp-org/exllamav3

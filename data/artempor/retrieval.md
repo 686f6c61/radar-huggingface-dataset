@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`artempor/retrieval` es una implementación reducida de la arquitectura Flamingo orientada a tareas de *retrieval* (recuperación), publicada por el usuario artempor en HuggingFace. No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para producción: el propio autor describe el repositorio como un punto de partida reproducible, con un checkpoint de inicialización válido únicamente para *smoke tests*. Los metadatos de safetensors declaran 49.600 parámetros y el tamaño del repositorio figura como 0,0 GB.
+`artempor/retrieval` es una implementación reducida de la arquitectura Flamingo orientada a tareas de *retrieval* (recuperación), publicada por el usuario artempor en Hugging Face. No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para producción: el propio autor describe el repositorio como un punto de partida reproducible, con un checkpoint de inicialización válido únicamente para *smoke tests*. Los metadatos de safetensors declaran 49.600 parámetros y el tamaño del repositorio figura como 0,0 GB.
 
 El modelo se distribuye como código ejecutable (`run.py`) acompañado de `config.json` (arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (inicialización). La arquitectura declarada combina atención lineal, fusión de *rank* bajo, activación swish y normalización por *batchnorm*, todo ello bajo la etiqueta Flamingo, una familia pensada originalmente para aprendizaje *few-shot* multimodal con atención cruzada condicionada.
 
@@ -80,7 +80,7 @@ No disponible. Este repositorio no es comparable con recuperadores multimodales 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/artempor/retrieval
+- Modelo en Hugging Face: https://huggingface.co/artempor/retrieval
 - Archivos del repositorio: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Búsqueda web: los resultados devueltos (FilGoal y secciones asociadas) no guardan relación con el modelo ni con recuperación multimodal, por lo que no se incluyen como referencias.
 - Paper, blog o repositorio adicionales: no disponibles.

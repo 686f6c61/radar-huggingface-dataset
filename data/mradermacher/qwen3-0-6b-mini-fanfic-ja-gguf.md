@@ -86,7 +86,7 @@ La comparacion con el Qwen3-0.6B base es la mas directa: este modelo es un fine-
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/qwen3-0.6b-mini-fanfic-ja-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/qwen3-0.6b-mini-fanfic-ja-GGUF
 - Modelo base: https://huggingface.co/susurofu/qwen3-0.6b-mini-fanfic-ja
 - Pagina de overview del cuantizador: https://hf.tst.eu/model#qwen3-0.6b-mini-fanfic-ja-GGUF
 - FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

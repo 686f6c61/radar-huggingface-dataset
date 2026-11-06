@@ -103,13 +103,13 @@ La unica comparacion con datos en la informacion disponible es la que realiza el
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/TokenRhythm/NeoHorse-1-4B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/TokenRhythm/NeoHorse-1-4B
+- Repositorio GGUF en Hugging Face: https://huggingface.co/TokenRhythm/NeoHorse-1-4B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/TokenRhythm/NeoHorse-1-4B
 - Modelo del que deriva el ajuste: https://huggingface.co/Qwen/Qwen3.5-4B
-- Perfil de la organizacion en HuggingFace: https://huggingface.co/TokenRhythm
+- Perfil de la organizacion en Hugging Face: https://huggingface.co/TokenRhythm
 - Informe tecnico (arXiv): https://arxiv.org/abs/2609.08183
 - Repositorio en GitHub: https://github.com/TokenRhythm/NeoHorse
 - Sitio de la empresa: https://tokenrhythm.ai/
 - Perfil en X/Twitter: https://x.com/opensquilla
 - Texto de la licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
-- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los incluidos en la model card y en los metadatos de HuggingFace.
+- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los incluidos en la model card y en los metadatos de Hugging Face.

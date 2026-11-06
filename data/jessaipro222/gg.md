@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jessaIpro222/GG` es un repositorio publicado en HuggingFace por el usuario `jessaIpro222`. La información disponible es extremadamente escasa: no se proporciona ninguna descripción técnica, arquitectura, tamaño, contexto ni datos de entrenamiento. La model card únicamente declara la licencia MIT y no incluye documentación adicional.
+El modelo `jessaIpro222/GG` es un repositorio publicado en Hugging Face por el usuario `jessaIpro222`. La información disponible es extremadamente escasa: no se proporciona ninguna descripción técnica, arquitectura, tamaño, contexto ni datos de entrenamiento. La model card únicamente declara la licencia MIT y no incluye documentación adicional.
 
 La relevancia de este modelo es actualmente indeterminada. No hay evidencia de que haya sido descargado, evaluado o utilizado por la comunidad. Dado que la fecha de creación es posterior a la actual (2026-08-22), podría tratarse de un repositorio vacío o de prueba, sin un modelo subyacente real. En ausencia de información verificable, cualquier evaluación técnica es imposible.
 

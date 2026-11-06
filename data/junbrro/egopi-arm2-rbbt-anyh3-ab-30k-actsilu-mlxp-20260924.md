@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de pesos para un modelo de robótica denominado internamente "Robot BBT + AnyH2R", resultado de un entrenamiento conjunto (cotrain) de tres tareas con CogAlign y tokenizador de acciones. Lo publica el usuario de HuggingFace `junbrro` dentro de una familia de artefactos experimentales de investigación (etiquetados con el tag `RLDX-1`). El modelo tiene 6.915.094.616 parámetros (~6,9 mil millones) y ocupa 13,9 GB en safetensors, lo que sugiere pesos almacenados en precisión de 16 bits.
+Este repositorio contiene un checkpoint de pesos para un modelo de robótica denominado internamente "Robot BBT + AnyH2R", resultado de un entrenamiento conjunto (cotrain) de tres tareas con CogAlign y tokenizador de acciones. Lo publica el usuario de Hugging Face `junbrro` dentro de una familia de artefactos experimentales de investigación (etiquetados con el tag `RLDX-1`). El modelo tiene 6.915.094.616 parámetros (~6,9 mil millones) y ocupa 13,9 GB en safetensors, lo que sugiere pesos almacenados en precisión de 16 bits.
 
 A diferencia de un modelo de lenguaje generativo, la model card lo describe como un sistema con VLM congelado y un tokenizador de acciones (`actlat/`), orientado a la generación de secuencias de acciones para control robótico. El entrenamiento alcanzó el paso 30.000 con un horizonte de 16, batch global de 64, semilla 42 y CogAlign SiLU256 con peso 0.2. El autor advierte explícitamente que "la finalización del entrenamiento no es evidencia de éxito de rollout", por lo que se trata de un artefacto de investigación sin validación publicada.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| egopi-arm2-rbbt-anyh3-AB-30k-actsilu-mlxp-20260924 (este) | 6.915.094.616 (~6,9 B) | no disponible | no disponible | HuggingFace, 0 descargas |
-| junbrro/egopi-mt-r6h5-axis1-AB-30k-actsilu-slurm-18839-20260921 | no disponible | no disponible | no disponible | HuggingFace |
-| junbrro/egopi_bbtoc_robot_v5_20hz_AB_cogalign_natural_sd0_seed42_30k_gas2_actsilu | no disponible | no disponible | no disponible | HuggingFace |
+| egopi-arm2-rbbt-anyh3-AB-30k-actsilu-mlxp-20260924 (este) | 6.915.094.616 (~6,9 B) | no disponible | no disponible | Hugging Face, 0 descargas |
+| junbrro/egopi-mt-r6h5-axis1-AB-30k-actsilu-slurm-18839-20260921 | no disponible | no disponible | no disponible | Hugging Face |
+| junbrro/egopi_bbtoc_robot_v5_20hz_AB_cogalign_natural_sd0_seed42_30k_gas2_actsilu | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks ni de licencia de los modelos comparados, por lo que no es posible establecer una comparación cuantitativa de rendimiento. Las alternativas listadas pertenecen a la misma familia experimental del mismo autor.
 
@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks ni de licencia de los modelos comparados, p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junbrro/egopi-arm2-rbbt-anyh3-AB-30k-actsilu-mlxp-20260924
+- Modelo en Hugging Face: https://huggingface.co/junbrro/egopi-arm2-rbbt-anyh3-AB-30k-actsilu-mlxp-20260924
 - Modelo relacionado (misma familia): https://huggingface.co/junbrro/egopi-mt-r6h5-axis1-AB-30k-actsilu-slurm-18839-20260921
 - Modelo relacionado (misma familia): https://huggingface.co/junbrro/egopi_bbtoc_robot_v5_20hz_AB_cogalign_natural_sd0_seed42_30k_gas2_actsilu
 

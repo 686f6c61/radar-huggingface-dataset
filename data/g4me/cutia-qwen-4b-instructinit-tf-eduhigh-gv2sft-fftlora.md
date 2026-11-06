@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CutIA-Qwen-4B-InstructInit-TF-EduHigh-gv2sft-fftlora es un checkpoint experimental publicado en HuggingFace por el usuario g4me. Se trata de un ajuste fino del modelo g4me/CutIA-Qwen-4B-InstructInit-TF, que a su vez aparece etiquetado en HuggingFace dentro de la familia Qwen3. El resultado es un modelo de lenguaje causal de tipo decoder-only con 4.411.424.256 parametros (~4,41 mil millones) distribuidos en formato safetensors, con un tamano de repositorio de 67,5 GB.
+CutIA-Qwen-4B-InstructInit-TF-EduHigh-gv2sft-fftlora es un checkpoint experimental publicado en Hugging Face por el usuario g4me. Se trata de un ajuste fino del modelo g4me/CutIA-Qwen-4B-InstructInit-TF, que a su vez aparece etiquetado en Hugging Face dentro de la familia Qwen3. El resultado es un modelo de lenguaje causal de tipo decoder-only con 4.411.424.256 parametros (~4,41 mil millones) distribuidos en formato safetensors, con un tamano de repositorio de 67,5 GB.
 
 El nombre del checkpoint sugiere una cadena de etapas de entrenamiento (inicializacion instruct, ajuste supervisado y un ajuste tipo LoRA), aunque la model card no documenta ninguna de ellas: no incluye descripcion del dataset, hiperparametros, numero de tokens de entrenamiento ni proceso de alineacion. La propia model card lo define explicitamente como "experimental checkpoint".
 
@@ -12,7 +12,7 @@ Su relevancia practica es hoy limitada. El repositorio registra 0 descargas y 0 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only causal (etiqueta `qwen3` en HuggingFace); detalles concretos no disponibles |
+| Arquitectura | Transformer decoder-only causal (etiqueta `qwen3` en Hugging Face); detalles concretos no disponibles |
 | Parametros totales | 4.411.424.256 (~4,41 mil millones), dato real de los safetensors |
 | Parametros activos | No aplica; no hay evidencia en la informacion disponible de que sea una arquitectura MoE |
 | Longitud de contexto | No disponible |
@@ -77,10 +77,10 @@ Los datos de los modelos comparativos provienen de su documentacion publica y de
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| CutIA-Qwen-4B-...-fftlora | 4,41 B | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
-| Qwen3-4B | ~4,0 B | 32.768 tokens (documentado por la familia) | Apache-2.0 | HuggingFace, ampliamente desplegado | no evaluado en esta ficha |
-| Llama-3.2-3B-Instruct | ~3,2 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente desplegado | no evaluado en esta ficha |
-| Phi-4-mini-instruct | ~3,8 B | 128.000 tokens | MIT | HuggingFace, ampliamente desplegado | no evaluado en esta ficha |
+| CutIA-Qwen-4B-...-fftlora | 4,41 B | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
+| Qwen3-4B | ~4,0 B | 32.768 tokens (documentado por la familia) | Apache-2.0 | Hugging Face, ampliamente desplegado | no evaluado en esta ficha |
+| Llama-3.2-3B-Instruct | ~3,2 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente desplegado | no evaluado en esta ficha |
+| Phi-4-mini-instruct | ~3,8 B | 128.000 tokens | MIT | Hugging Face, ampliamente desplegado | no evaluado en esta ficha |
 
 La diferencia principal no esta en el rendimiento, que no se puede comparar sin datos, sino en el soporte: los tres modelos alternativos tienen licencia explicita, idiomas declarados y comunidades activas, mientras que el checkpoint analizado no ofrece ninguna de esas garantias.
 
@@ -99,7 +99,7 @@ La diferencia principal no esta en el rendimiento, que no se puede comparar sin 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-EduHigh-gv2sft-fftlora
+- Modelo en Hugging Face: https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-EduHigh-gv2sft-fftlora
 - Modelo base: https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF
 - Perfil del autor: https://huggingface.co/g4me
 

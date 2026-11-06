@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `asparius/qwen-32B-sdf__432` es un ajuste fino (fine-tune) del modelo base `Qwen/Qwen2.5-Coder-32B`, desarrollado por el usuario de HuggingFace `asparius` (Ömer Veysel Çağatan). Se trata de un modelo de generación de texto entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace. El nombre sugiere que se trata de una variante de 32 mil millones de parámetros, aunque no se especifica explícitamente en la documentación proporcionada.
+El modelo `asparius/qwen-32B-sdf__432` es un ajuste fino (fine-tune) del modelo base `Qwen/Qwen2.5-Coder-32B`, desarrollado por el usuario de Hugging Face `asparius` (Ömer Veysel Çağatan). Se trata de un modelo de generación de texto entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face. El nombre sugiere que se trata de una variante de 32 mil millones de parámetros, aunque no se especifica explícitamente en la documentación proporcionada.
 
 Este modelo se publica con el objetivo de adaptar las capacidades del modelo base de Qwen a un dominio o tarea concreta, aunque no se detalla cuál es ese dominio. La relevancia actual radica en que Qwen2.5-Coder-32B es uno de los modelos de código abierto más potentes para generación de código y razonamiento, y este fine-tune podría ofrecer mejoras en tareas específicas, aunque no hay evidencia pública de ello. El repositorio tiene un tamaño de 393.2 GB, lo que sugiere que los pesos están almacenados en precisión completa (fp16 o similar), y no se indica ninguna cuantización.
 
-La ficha se basa exclusivamente en la información disponible en HuggingFace y en la model card del autor. No se han encontrado resultados de benchmarks, detalles del dataset de entrenamiento ni documentación adicional en la web.
+La ficha se basa exclusivamente en la información disponible en Hugging Face y en la model card del autor. No se han encontrado resultados de benchmarks, detalles del dataset de entrenamiento ni documentación adicional en la web.
 
 ## Especificaciones tecnicas
 
@@ -79,7 +79,7 @@ No se dispone de información comparativa publicada. El modelo base `Qwen2.5-Cod
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/asparius/qwen-32B-sdf__432)
+- [Página del modelo en Hugging Face](https://huggingface.co/asparius/qwen-32B-sdf__432)
 - [Modelo base Qwen2.5-Coder-32B](https://huggingface.co/Qwen/Qwen2.5-Coder-32B)
 - [Registro de entrenamiento en Weights & Biases](https://wandb.ai/ocagatankuisai-ko-university/ais-em-midtrain/runs/63yji3lc)
-- [Perfil del autor en HuggingFace](https://huggingface.co/asparius)
+- [Perfil del autor en Hugging Face](https://huggingface.co/asparius)

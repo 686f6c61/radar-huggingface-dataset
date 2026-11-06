@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lunar-Trace-31B | ~31,3B | no disponible | Imagen + texto | Apache 2.0 | HuggingFace (2 descargas) |
-| google/gemma-4-31B-it | ~31B (no confirmado en la información) | no disponible | Imagen + texto | Gemma (no Apache 2.0) | HuggingFace, modelo base oficial |
-| TeichAI/gemma-4-31B-it-Claude-Opus-Distill-v2 | ~31B (derivado de Gemma 4 31B) | no disponible | Imagen + texto | no disponible | HuggingFace, modelo origen del merge |
-| zerofata/G4-LuneLight-31B | ~31B (derivado de Gemma 4 31B) | no disponible | Imagen + texto | no disponible | HuggingFace, modelo origen del merge |
+| Lunar-Trace-31B | ~31,3B | no disponible | Imagen + texto | Apache 2.0 | Hugging Face (2 descargas) |
+| google/gemma-4-31B-it | ~31B (no confirmado en la información) | no disponible | Imagen + texto | Gemma (no Apache 2.0) | Hugging Face, modelo base oficial |
+| TeichAI/gemma-4-31B-it-Claude-Opus-Distill-v2 | ~31B (derivado de Gemma 4 31B) | no disponible | Imagen + texto | no disponible | Hugging Face, modelo origen del merge |
+| zerofata/G4-LuneLight-31B | ~31B (derivado de Gemma 4 31B) | no disponible | Imagen + texto | no disponible | Hugging Face, modelo origen del merge |
 
 No se dispone de datos de rendimiento comparativo (benchmarks) entre estos modelos en la información proporcionada.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estos model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cyclone-Labs/Lunar-Trace-31B
+- Modelo en Hugging Face: https://huggingface.co/Cyclone-Labs/Lunar-Trace-31B
 - Modelo base oficial: https://huggingface.co/google/gemma-4-31B-it
 - Modelo origen Starlight-Synthesis-31B: https://huggingface.co/Cyclone-Labs/Starlight-Synthesis-31B
 - Modelo origen G4-LuneLight-31B: https://huggingface.co/zerofata/G4-LuneLight-31B

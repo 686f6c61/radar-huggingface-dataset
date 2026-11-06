@@ -90,7 +90,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/mississippiu/prefill-assistant-models
+- Repositorio del modelo en Hugging Face: https://huggingface.co/mississippiu/prefill-assistant-models
 - Repositorio de código del proyecto: https://github.com/zywang624/prefill-assistant
 - Dataset de entrenamiento y evaluación: https://huggingface.co/datasets/mississippiu/prefill-assistant-data
 - Documento de evaluación `EVALUATING.md`: referenciado en la model card dentro del propio repositorio; no se ha proporcionado URL directa.

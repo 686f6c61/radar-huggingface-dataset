@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dan-omni-smolm2` es un modelo de lenguaje ultraligero desarrollado por el usuario `sodan`, diseñado específicamente para despliegue en dispositivos con recursos muy limitados (edge computing). Se basa en el modelo SmolLM2 de HuggingFace y ha sido sometido a un fine-tuning completo con datos de instrucciones para móviles, lo que lo convierte en un asistente conversacional compacto y rápido. Su principal atractivo es su velocidad de inferencia (62,2 tokens por segundo en CPU) y su reducido consumo de memoria (~400 MB), lo que permite ejecutarlo en hardware como Raspberry Pi, teléfonos antiguos o dispositivos IoT.
+`dan-omni-smolm2` es un modelo de lenguaje ultraligero desarrollado por el usuario `sodan`, diseñado específicamente para despliegue en dispositivos con recursos muy limitados (edge computing). Se basa en el modelo SmolLM2 de Hugging Face y ha sido sometido a un fine-tuning completo con datos de instrucciones para móviles, lo que lo convierte en un asistente conversacional compacto y rápido. Su principal atractivo es su velocidad de inferencia (62,2 tokens por segundo en CPU) y su reducido consumo de memoria (~400 MB), lo que permite ejecutarlo en hardware como Raspberry Pi, teléfonos antiguos o dispositivos IoT.
 
 Aunque la model card del autor indica "~1.7B" de parámetros, el dato real extraído de los safetensors es de 361.821.120 parámetros (~362M), lo que lo sitúa en la gama de los modelos pequeños tipo SmolLM2-360M. El modelo tiene una longitud de contexto de 4096 tokens y se distribuye en formato GGUF, lo que facilita su uso con herramientas como Ollama o llama.cpp. Su licencia Apache 2.0 permite uso comercial sin restricciones.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su capacidad para ofrecer respuestas de c
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer causal de tipo decoder-only, heredado de la familia SmolLM2 de HuggingFace. No se trata de una arquitectura MoE ni híbrida; es un modelo denso convencional. El autor indica que se realizó un "full fine-tune" sobre datos de instrucciones para dispositivos móviles, aunque no se especifican el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas como RLHF o DPO. Tampoco se mencionan innovaciones técnicas particulares como decodificación especulativa o atención lineal.
+El modelo es un transformer causal de tipo decoder-only, heredado de la familia SmolLM2 de Hugging Face. No se trata de una arquitectura MoE ni híbrida; es un modelo denso convencional. El autor indica que se realizó un "full fine-tune" sobre datos de instrucciones para dispositivos móviles, aunque no se especifican el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas como RLHF o DPO. Tampoco se mencionan innovaciones técnicas particulares como decodificación especulativa o atención lineal.
 
 El sistema prompt recomendado por el autor define a "dan" como un asistente útil para dispositivos móviles, con respuestas concisas y naturales, y sin explicar su arquitectura salvo que se le pregunte. Esto sugiere que el fine-tuning se orientó a conversaciones breves y directas.
 
@@ -101,7 +101,7 @@ Nota: los modelos LFM2-1.2B y Gemma 4 E2B no han podido ser verificados en fuent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sodan/dan-omni-smolm2
+- Modelo en Hugging Face: https://huggingface.co/sodan/dan-omni-smolm2
 - Modelo base SmolLM2-135M: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Familia dan-omni (referencias en la model card):
   - dan-omni-3b: https://huggingface.co/sodan/dan-omni-3b

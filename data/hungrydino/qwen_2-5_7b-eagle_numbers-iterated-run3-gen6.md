@@ -30,7 +30,7 @@ Su relevancia práctica es limitada: cero descargas, cero "likes" y un tamaño d
 
 La arquitectura corresponde a la del modelo base Qwen2.5-7B-Instruct: un transformer decoder-only con atención de consultas agrupadas (GQA), 28 capas, dimensión oculta de 3584 y un vocabulario de 152.064 tokens. El contexto nativo es de 32.768 tokens, ampliable a 131.072 mediante escalado YaRN. No se ha publicado ninguna modificación estructural en este fine-tune, por lo que se asume que la topología es idéntica a la del modelo del que parte.
 
-En cuanto al entrenamiento, la única información disponible es que se utilizaron Unsloth y la librería TRL de HuggingFace, lo que habitualmente implica un ajuste supervisado (SFT) o un entrenamiento con preferencias sobre un subconjunto de datos. No se especifica el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF o DPO, ni los hiperparámetros empleados. El sufijo `iterated-run3-gen6` apunta a un proceso de iteración experimental, pero el autor no lo documenta. Tampoco se indica si los pesos publicados son completos o adaptadores LoRA fusionados parcialmente.
+En cuanto al entrenamiento, la única información disponible es que se utilizaron Unsloth y la librería TRL de Hugging Face, lo que habitualmente implica un ajuste supervisado (SFT) o un entrenamiento con preferencias sobre un subconjunto de datos. No se especifica el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF o DPO, ni los hiperparámetros empleados. El sufijo `iterated-run3-gen6` apunta a un proceso de iteración experimental, pero el autor no lo documenta. Tampoco se indica si los pesos publicados son completos o adaptadores LoRA fusionados parcialmente.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ En cuanto al entrenamiento, la única información disponible es que se utilizar
 - Extracción y normalización de datos numéricos: dado el nombre del modelo, un uso plausible es la manipulación de cifras, tablas y series numéricas en pipelines de procesamiento de datos, aunque la ausencia de evaluación obliga a validar los resultados manualmente.
 - Base para ajustes posteriores (continual fine-tuning): al derivar del modelo Apache 2.0 de Qwen, puede servir como punto de partida para nuevos experimentos de investigación sin restricciones de licencia.
 - Docencia e investigación sobre linaje de modelos: útil para estudiar cómo se propaga (o se degrada) el comportamiento de un modelo base a través de varias generaciones de ajustes, dado el sufijo `iterated-run3-gen6`.
-- Experimentación con Text Generation Inference: la etiqueta `endpoints_compatible` facilita desplegarlo en HuggingFace Inference Endpoints o en un servidor TGI propio para pruebas de latencia.
+- Experimentación con Text Generation Inference: la etiqueta `endpoints_compatible` facilita desplegarlo en Hugging Face Inference Endpoints o en un servidor TGI propio para pruebas de latencia.
 
 ## Benchmarks y rendimiento
 
@@ -94,7 +94,7 @@ La comparación se limita a especificaciones y licencia: no existen datos de ren
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen6
+- Repositorio en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen6
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

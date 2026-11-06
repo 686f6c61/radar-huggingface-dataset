@@ -71,6 +71,6 @@ No se dispone de datos comparativos publicados. Modelos de tamano similar como S
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CNWPlayer/Vega-1.6-128M-Chat
+- Hugging Face: https://huggingface.co/CNWPlayer/Vega-1.6-128M-Chat
 - Perfil del autor: https://huggingface.co/CNWPlayer
 - Modelo base (VegaLM1-42M-Base, relacionado): https://huggingface.co/models?other=base_model:finetune:CNWPlayer/VegaLM1-42M-Base

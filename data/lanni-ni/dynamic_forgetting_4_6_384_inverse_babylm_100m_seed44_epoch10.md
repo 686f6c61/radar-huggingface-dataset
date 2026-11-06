@@ -65,6 +65,6 @@ No disponible. No hay información sobre modelos comparables ni datos de rendimi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_100m_seed44_epoch10
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_100m_seed44_epoch10
 - Perfil del autor: https://huggingface.co/Lanni-ni
 - Modelo hermano: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_babylm_100m_epoch10

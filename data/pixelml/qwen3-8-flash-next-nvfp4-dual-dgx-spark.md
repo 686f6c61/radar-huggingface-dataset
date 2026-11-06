@@ -82,7 +82,7 @@ No se dispone de datos de comparación directa con otros modelos en la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PixelML/Qwen3.8-Flash-Next-NVFP4-Dual-DGX-Spark
+- Repositorio Hugging Face: https://huggingface.co/PixelML/Qwen3.8-Flash-Next-NVFP4-Dual-DGX-Spark
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Cuantización original de RadixArk: https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4
 - Receta de despliegue de PixelML (GitHub): https://github.com/PixelML/qwen3-8-flash-next-sglang-2x-dgx-spark

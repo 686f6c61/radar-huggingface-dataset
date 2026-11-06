@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TensorVizion/MiMo-V2.6-Distill-Qwen-Abliterated es un ajuste fino del modelo XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, publicado por el usuario TensorVizion en HuggingFace. Se trata de un modelo de aproximadamente 8.953.803.264 parametros (unos 8,95 mil millones), distribuido en formato safetensors y con licencia MIT, lo que permite uso comercial sin restricciones adicionales mas alla de las de dicha licencia. Su pipeline declarado es image-text-to-text, y las etiquetas del repositorio apuntan a un backbone de la familia Qwen (etiqueta qwen3_5) con capacidades orientadas a agentes, uso de herramientas y generacion de codigo.
+TensorVizion/MiMo-V2.6-Distill-Qwen-Abliterated es un ajuste fino del modelo XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, publicado por el usuario TensorVizion en Hugging Face. Se trata de un modelo de aproximadamente 8.953.803.264 parametros (unos 8,95 mil millones), distribuido en formato safetensors y con licencia MIT, lo que permite uso comercial sin restricciones adicionales mas alla de las de dicha licencia. Su pipeline declarado es image-text-to-text, y las etiquetas del repositorio apuntan a un backbone de la familia Qwen (etiqueta qwen3_5) con capacidades orientadas a agentes, uso de herramientas y generacion de codigo.
 
 El interes del modelo reside en su doble naturaleza: por un lado hereda el proceso de destilacion desde MiMo-V2.6, un modelo de Xiaomi orientado al razonamiento agentico, y por otro lado incorpora una modificacion de tipo "abliterated" en el nombre, termino habitual para designar la supresion de las direcciones de rechazo en el espacio de activaciones del modelo. Esta combinacion busca un modelo compacto, desplegable en hardware modesto, con menos restricciones de rechazo en las respuestas.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| TensorVizion/MiMo-V2.6-Distill-Qwen-Abliterated | 8,95B | No disponible | MIT | HuggingFace, safetensors y variante 2-bit | No disponible |
-| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (modelo base) | No disponible con precision en la informacion proporcionada (denominacion 9B) | No disponible | No disponible | HuggingFace | No disponible |
-| Qwen3-8B (referencia de categoria) | Aprox. 8,2B | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace | No disponible |
-| Llama-3.1-8B (referencia de categoria) | Aprox. 8,03B | No disponible en la informacion proporcionada | Llama 3.1 Community License | HuggingFace | No disponible |
+| TensorVizion/MiMo-V2.6-Distill-Qwen-Abliterated | 8,95B | No disponible | MIT | Hugging Face, safetensors y variante 2-bit | No disponible |
+| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (modelo base) | No disponible con precision en la informacion proporcionada (denominacion 9B) | No disponible | No disponible | Hugging Face | No disponible |
+| Qwen3-8B (referencia de categoria) | Aprox. 8,2B | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face | No disponible |
+| Llama-3.1-8B (referencia de categoria) | Aprox. 8,03B | No disponible en la informacion proporcionada | Llama 3.1 Community License | Hugging Face | No disponible |
 
 Las dos ultimas filas se incluyen unicamente como referencias de categoria (modelos densos de 8 a 9 mil millones de parametros) a partir de conocimiento general de la familia, no de la informacion recopilada en esta busqueda. No hay datos que permitan comparar calidad, contexto ni velocidad entre ellos y el modelo descrito.
 
@@ -89,7 +89,7 @@ Las dos ultimas filas se incluyen unicamente como referencias de categoria (mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TensorVizion/MiMo-V2.6-Distill-Qwen-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/TensorVizion/MiMo-V2.6-Distill-Qwen-Abliterated
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Conversion MLX de 2 bits del modelo base, referenciada en la model card: https://huggingface.co/TensorVizion/MiMo-V2.6-Distill-Qwen-9B-mlx-2Bit
 - Repositorio de mlx-lm, usado para la conversion a MLX: https://github.com/ml-explore/mlx-lm

@@ -116,7 +116,7 @@ No se dispone de comparativas con otros adaptadores de series temporales para ro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Carsamba/Llama-3.2-1B-Trace-KUKA-v6
+- Modelo en Hugging Face: https://huggingface.co/Carsamba/Llama-3.2-1B-Trace-KUKA-v6
 - Auditoría de validación V6 (documentación del autor): https://github.com/ukafkasyali/ysamet/blob/main/docs/submission/evaluation/v6-validation/README.md
 - Runtime de inferencia Trace: https://github.com/ukafkasyali/ysamet/tree/main/inference
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B

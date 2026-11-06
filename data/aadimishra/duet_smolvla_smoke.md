@@ -72,7 +72,7 @@ No se dispone de modelos comparables con datos suficientes para una comparativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aadimishra/duet_smolvla_smoke
+- Repositorio Hugging Face: https://huggingface.co/aadimishra/duet_smolvla_smoke
 - Paper de SmolVLA (arXiv:2506.01844): https://arxiv.org/abs/2506.01844
 - Web de SmolVLA: https://smolvla.net/index_en
 - Dataset de entrenamiento: https://huggingface.co/datasets/aadimishra/duet_multitask_language_v1_clean

@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar con otros modelos de la misma categoría (por ejemplo, Qwen3-30B-A3B o MiniCPM-MoE) en la información proporcionada. Se recomienda consultar los resultados del modelo base en su página de HuggingFace para conocer su rendimiento relativo.
+No se dispone de información suficiente para comparar con otros modelos de la misma categoría (por ejemplo, Qwen3-30B-A3B o MiniCPM-MoE) en la información proporcionada. Se recomienda consultar los resultados del modelo base en su página de Hugging Face para conocer su rendimiento relativo.
 
 ## Limitaciones y advertencias
 

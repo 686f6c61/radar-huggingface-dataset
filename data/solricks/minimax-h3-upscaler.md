@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SOLRICKS MiniMax-H3-Upscaler | LoRA refiner INT8 + upscaler latente FP16 para H3 | no disponible (adaptadores) | no aplica | Mixta: MiniMax H3 Community License y Apache-2.0 | HuggingFace, 0 descargas |
-| sandpies/ComfyUI-H3-Video-Upsampler (BF16) | Refiner LoRA BF16, origen del INT8 | no disponible | no aplica | no disponible | HuggingFace |
-| LBH-123-AI/Minimax_h3_latent_Upscaler | Upscaler latente FP16, origen del componente FP16 | no disponible | no aplica | Apache-2.0 | HuggingFace |
+| SOLRICKS MiniMax-H3-Upscaler | LoRA refiner INT8 + upscaler latente FP16 para H3 | no disponible (adaptadores) | no aplica | Mixta: MiniMax H3 Community License y Apache-2.0 | Hugging Face, 0 descargas |
+| sandpies/ComfyUI-H3-Video-Upsampler (BF16) | Refiner LoRA BF16, origen del INT8 | no disponible | no aplica | no disponible | Hugging Face |
+| LBH-123-AI/Minimax_h3_latent_Upscaler | Upscaler latente FP16, origen del componente FP16 | no disponible | no aplica | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SOLRICKS/MiniMax-H3-Upscaler
+- Modelo en Hugging Face: https://huggingface.co/SOLRICKS/MiniMax-H3-Upscaler
 - Repositorio del nodo ComfyUI: https://github.com/SOLRICKS/comfyui-solricks
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Modelos H3 experimentales para ComfyUI: https://huggingface.co/Kijai/MiniMax-H3-experimental

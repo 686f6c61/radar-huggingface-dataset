@@ -65,5 +65,5 @@ No se dispone de información suficiente para comparar Bernini-R con otros model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Comfy-Org/Bernini-R
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/Bernini-R
 - Repositorio original del modelo: https://huggingface.co/ByteDance/Bernini-R

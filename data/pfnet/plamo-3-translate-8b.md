@@ -35,7 +35,7 @@ El entrenamiento parte de PLaMo 3 NICT, un modelo preentrenado desarrollado conj
 - Uso de glosarios: admite terminos de referencia para forzar terminologia consistente.
 - Control de estilo en japones: eleccion entre registro llano y registro cortes (keigo).
 - Traduccion de pasajes largos en una sola pasada, hasta 32.768 tokens sumando entrada y salida.
-- Generacion de texto y traduccion multilingue en el pipeline `translation` de HuggingFace.
+- Generacion de texto y traduccion multilingue en el pipeline `translation` de Hugging Face.
 - No se documenta en la informacion disponible soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito.
 
 ## Casos de uso
@@ -99,7 +99,7 @@ TranslateGemma y HY-MT2 se mencionan como modelos de comparacion en la model car
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pfnet/plamo-3-translate-8b
+- Modelo en Hugging Face: https://huggingface.co/pfnet/plamo-3-translate-8b
 - README en japones: https://huggingface.co/pfnet/plamo-3-translate-8b/blob/main/README_ja.md
 - Blog tecnico de PFN: https://www.preferred.jp/en/blog/tech/plamo-3-translate-weight-release
 - Licencia PLaMo Community: https://plamo.preferredai.jp/info/plamo-community-license-en

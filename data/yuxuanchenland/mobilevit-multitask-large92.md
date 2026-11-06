@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MobileViT for Multitask (identificador `yuxuanchenland/mobilevit-multitask-large92`) es un repositorio de HuggingFace publicado por el usuario `yuxuanchenland` que contiene una implementación propia de la arquitectura MobileViT orientada a tareas múltiples, acompañada de un fichero de configuración explícito y un checkpoint de inicialización. Según la propia model card, no se trata de un modelo entrenado: el autor lo describe textualmente como un "punto de partida reproducible", y el fichero `model.safetensors` se presenta como un checkpoint de inicialización válido para pruebas de humo (*smoke tests*), no como un checkpoint con resultados de referencia.
+MobileViT for Multitask (identificador `yuxuanchenland/mobilevit-multitask-large92`) es un repositorio de Hugging Face publicado por el usuario `yuxuanchenland` que contiene una implementación propia de la arquitectura MobileViT orientada a tareas múltiples, acompañada de un fichero de configuración explícito y un checkpoint de inicialización. Según la propia model card, no se trata de un modelo entrenado: el autor lo describe textualmente como un "punto de partida reproducible", y el fichero `model.safetensors` se presenta como un checkpoint de inicialización válido para pruebas de humo (*smoke tests*), no como un checkpoint con resultados de referencia.
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente metodológica. El repositorio publica cero descargas y cero *likes* en el momento de la consulta, el tamaño del repo es de 0,0 GB y no incluye ninguna métrica de benchmark, ni idiomas soportados, ni pipeline declarado. Su interés principal reside en ser un ejemplo reproducible de esqueleto de código MobileViT multitarea con configuración versionada (`config.json`, `training_args.json`), útil para quien quiera inspeccionar la implementación o partir de ella para un entrenamiento posterior.
 
@@ -42,7 +42,7 @@ En cuanto al entrenamiento, no existe: el autor indica de forma explícita que e
 - Punto de partida para fine-tuning: un equipo que quiera experimentar con MobileViT multitarea puede usar esta configuración como base, sustituir la receta Adam + coseno y entrenar con su propio dataset, comparando después contra una línea base de capacidad equivalente.
 - Estudio de arquitecturas híbridas CNN-transformer: el código permite inspeccionar cómo se implementan atención lineal, fusión de bajo rango, swish y GroupNorm en una red de tipo MobileViT, útil con fines docentes o de revisión de diseño.
 - Evaluación metodológica reproducible: la model card recomienda explícitamente evaluar sobre un conjunto retenido específico de la tarea, reportar la métrica con al menos tres semillas e incluir una línea base de capacidad comparable; el repositorio puede usarse como plantilla para aplicar ese protocolo.
-- Auditoría de artefactos de HuggingFace: sirve como caso de estudio de repositorio con licencia permisiva pero sin modelo entrenado, útil para diseñar políticas internas de aprobación de dependencias en una organización.
+- Auditoría de artefactos de Hugging Face: sirve como caso de estudio de repositorio con licencia permisiva pero sin modelo entrenado, útil para diseñar políticas internas de aprobación de dependencias en una organización.
 - En ningún caso procede su uso en producción, atención al cliente, generación de código o cualquier tarea generativa real, dado que el checkpoint no ha sido entrenado.
 
 ## Benchmarks y rendimiento
@@ -68,7 +68,7 @@ No disponible. La búsqueda web realizada no devolvió ningún resultado relevan
 - No ha sido auditado en robustez, equidad, sesgo ni transferencia de dominio, tal como reconoce el propio autor.
 - No se han publicado métricas, por lo que no existe ninguna evidencia empírica de calidad.
 - No se declaran idiomas soportados ni se especifican las tareas concretas que componen el modo multitarea.
-- Al ser una implementación personalizada, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de poder usarse.
+- Al ser una implementación personalizada, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de poder usarse.
 - Riesgo de alucinación: no evaluable en un modelo sin entrenar y sin capacidades generativas verificadas; la advertencia relevante aquí no es la alucinación, sino la expectativa infundada de que el artefacto funcione.
 - Licencia BSD-3-Clause: permisiva y compatible con uso comercial, pero obliga a conservar el aviso de copyright y la cláusula de exención de responsabilidad. El autor advierte además de que deben revisarse por separado los términos de los datos de origen si el repositorio se usa con conjuntos de datos externos.
 - Discrepancia entre el recuento real de parámetros del checkpoint (33.088) y la escala "base" declarada en la configuración: conviene verificar la arquitectura efectiva antes de asumir equivalencias con otras implementaciones MobileViT.
@@ -77,6 +77,6 @@ No disponible. La búsqueda web realizada no devolvió ningún resultado relevan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuxuanchenland/mobilevit-multitask-large92
+- Modelo en Hugging Face: https://huggingface.co/yuxuanchenland/mobilevit-multitask-large92
 - Ficheros incluidos en el repositorio: `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo adicionales: no disponible. La búsqueda web no devolvió ningún resultado relacionado con este modelo ni con MobileViT multitarea; los enlaces obtenidos no guardaban relación con el objeto de esta ficha y se han descartado.

@@ -64,10 +64,10 @@ La model card declara un `model-index` con nombre `sft__f679a5c592c8dffb__open-s
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| open-sci/sft__ot30k...-1.7b (este) | 1,71B | 4K-16K (según fase) | other | HuggingFace, 25 descargas | SFT sobre Open Thoughts + Tulu3; sin benchmarks |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado | Base sólida, benchmarks publicados, tool calling |
-| Llama-3.2-1B-Instruct | 1,24B | 131.072 | Llama 3.2 Community License | HuggingFace, muy extendido | Contexto muy largo, ecosistema maduro |
-| SmolLM2-1.7B-Instruct | 1,71B | 8.192 | Apache 2.0 | HuggingFace | Entrenado en inglés, benchmarks publicados |
+| open-sci/sft__ot30k...-1.7b (este) | 1,71B | 4K-16K (según fase) | other | Hugging Face, 25 descargas | SFT sobre Open Thoughts + Tulu3; sin benchmarks |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado | Base sólida, benchmarks publicados, tool calling |
+| Llama-3.2-1B-Instruct | 1,24B | 131.072 | Llama 3.2 Community License | Hugging Face, muy extendido | Contexto muy largo, ecosistema maduro |
+| SmolLM2-1.7B-Instruct | 1,71B | 8.192 | Apache 2.0 | Hugging Face | Entrenado en inglés, benchmarks publicados |
 
 La comparación directa es difícil porque este modelo no publica resultados. Frente a Qwen2.5-1.5B, Llama-3.2-1B y SmolLM2-1.7B, sus principales desventajas son la licencia "other" sin texto, la ausencia de benchmarks y la falta de documentación de idiomas y tool calling. Su ventaja potencial es el entrenamiento específico en trazas de razonamiento, pero sin evaluación empírica no puede confirmarse.
 
@@ -85,9 +85,9 @@ La comparación directa es difícil porque este modelo no publica resultados. Fr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/sft__ot30k_open-sci-ref-v0.02-1.7b-comma-mv_reasoning-300B-4096-longsft_16k-SFT-Tulu3
+- Hugging Face: https://huggingface.co/open-sci/sft__ot30k_open-sci-ref-v0.02-1.7b-comma-mv_reasoning-300B-4096-longsft_16k-SFT-Tulu3
 - Open Thoughts (dataset): https://huggingface.co/datasets/open-thoughts/OpenThoughts-1.2M
 - Tulu3 (dataset): https://huggingface.co/datasets/allenai/tulu-3-sft-mixture
 - Llama Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
-- Organización open-sci en HuggingFace: https://huggingface.co/open-sci
+- Organización open-sci en Hugging Face: https://huggingface.co/open-sci
 - No se han encontrado papers, blogs ni demos adicionales en la búsqueda web realizada.

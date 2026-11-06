@@ -68,7 +68,7 @@ No se dispone de información para realizar una comparativa. El repositorio isnt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BellaHeZ/news2stock-lora
+- Hugging Face: https://huggingface.co/BellaHeZ/news2stock-lora
 - Modelo similar (sin datos verificados): https://huggingface.co/isnthee/news2stock-lora
 - Paper de referencia (solo aparece como tag, no describe el modelo): Lacoste et al., 2019, arXiv:1910.09700
 - Sin otros enlaces disponibles.

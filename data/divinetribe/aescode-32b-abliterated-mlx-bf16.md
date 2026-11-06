@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks independientes para esta conversió
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AesCode-32B-abliterated-MLX-bf16 | 33,36 B | no disponible | Imagen a HTML/CSS, abliterado, MLX bf16 | Apache 2.0 | HuggingFace (divinetribe) |
-| microsoft/AesCode-32B | 32 B (aprox.) | no disponible | Imagen a HTML/CSS, sin modificar | no disponible en la información | HuggingFace (Microsoft) |
-| Qwen/Qwen3-VL-32B-Instruct | 32 B (aprox.) | no disponible | Visión-lenguaje general | no disponible en la información | HuggingFace (Qwen) |
-| divinetribe/AesCode-32B-MLX-bf16 | 33,36 B | no disponible | Imagen a HTML/CSS, MLX bf16 sin abliterar | Apache 2.0 | HuggingFace (divinetribe) |
+| AesCode-32B-abliterated-MLX-bf16 | 33,36 B | no disponible | Imagen a HTML/CSS, abliterado, MLX bf16 | Apache 2.0 | Hugging Face (divinetribe) |
+| microsoft/AesCode-32B | 32 B (aprox.) | no disponible | Imagen a HTML/CSS, sin modificar | no disponible en la información | Hugging Face (Microsoft) |
+| Qwen/Qwen3-VL-32B-Instruct | 32 B (aprox.) | no disponible | Visión-lenguaje general | no disponible en la información | Hugging Face (Qwen) |
+| divinetribe/AesCode-32B-MLX-bf16 | 33,36 B | no disponible | Imagen a HTML/CSS, MLX bf16 sin abliterar | Apache 2.0 | Hugging Face (divinetribe) |
 
 La comparación directa con modelos de propósito general como Claude Opus 4.8 o GPT-5.5 solo está disponible en la tabla de benchmarks del paper, con la salvedad de que estos últimos se evaluaron sin imagen de referencia.
 
@@ -94,7 +94,7 @@ La comparación directa con modelos de propósito general como Claude Opus 4.8 o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/divinetribe/AesCode-32B-abliterated-MLX-bf16
+- Modelo en Hugging Face: https://huggingface.co/divinetribe/AesCode-32B-abliterated-MLX-bf16
 - Modelo base: https://huggingface.co/microsoft/AesCode-32B
 - Backbone: https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct
 - Variante 8-bit: https://huggingface.co/divinetribe/AesCode-32B-abliterated-MLX-8bit

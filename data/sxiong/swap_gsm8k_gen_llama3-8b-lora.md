@@ -81,7 +81,7 @@ No se dispone de informacion sobre el rendimiento relativo de estos adaptadores.
 
 ## Enlaces
 
-- HuggingFace: [sxiong/SWAP_GSM8K_Gen_Llama3-8B-LoRA](https://huggingface.co/sxiong/SWAP_GSM8K_Gen_Llama3-8B-LoRA)
+- Hugging Face: [sxiong/SWAP_GSM8K_Gen_Llama3-8B-LoRA](https://huggingface.co/sxiong/SWAP_GSM8K_Gen_Llama3-8B-LoRA)
 - Repositorio GitHub SWAP: [xiongsiheng/SWAP](https://github.com/xiongsiheng/SWAP)
 - Paper GSM8K: [arxiv:2110.14168](https://arxiv.org/pdf/2110.14168)
 - Paper SWAP (ACL 2025): citado en la model card como "Deliberate reasoning in language models as structure-aware planning with an accurate world model"

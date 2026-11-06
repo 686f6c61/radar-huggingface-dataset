@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo WJwon/gatedyn-calib-frontier es un repositorio de HuggingFace creado por el usuario WJwon. Se trata de un modelo con acceso restringido (gated), lo que significa que los usuarios deben aceptar condiciones adicionales para poder descargarlo. El repositorio ocupa 29.0 GB, un tamaño que sugiere que contiene pesos de un modelo de gran tamaño, aunque no se ha publicado información que confirme su arquitectura, número de parámetros o longitud de contexto.
+El modelo WJwon/gatedyn-calib-frontier es un repositorio de Hugging Face creado por el usuario WJwon. Se trata de un modelo con acceso restringido (gated), lo que significa que los usuarios deben aceptar condiciones adicionales para poder descargarlo. El repositorio ocupa 29.0 GB, un tamaño que sugiere que contiene pesos de un modelo de gran tamaño, aunque no se ha publicado información que confirme su arquitectura, número de parámetros o longitud de contexto.
 
 El nombre del modelo, «gatedyn-calib-frontier», podría indicar una orientación hacia técnicas de calibración dinámica en modelos de frontera, pero no existe documentación pública al respecto. Al no haber descargas ni likes, se trata de un modelo aparentemente no evaluado por la comunidad. En el momento de escribir esta ficha, no se dispone de información suficiente para determinar sus capacidades reales.
 
@@ -54,7 +54,7 @@ No disponible. No se ha publicado información sobre modelos comparables, y no e
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de poder descargar el modelo.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de poder descargar el modelo.
 - Licencia «other»: la licencia no está claramente especificada, lo que puede implicar restricciones de uso no documentadas.
 - Falta de documentación: no hay información sobre arquitectura, entrenamiento o capacidades, lo que dificulta su evaluación para entornos de producción.
 - Ausencia de métricas: no se han publicado benchmarks, por lo que no se puede comparar con otros modelos.

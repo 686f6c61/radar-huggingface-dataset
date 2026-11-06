@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lingbot-vla-2.0-bd-rev01 es un checkpoint publicado en HuggingFace por el usuario newbie000, derivado de MechaTrainer/lingbot-vla-2.0-cesBRyPcp3Ar (commit 50d668ffac21fd43a1a954f3595db81fcb6efd2d), descrito en la model card como campeón de la competición SN80 competition-2 con UID 43. La revisión consiste en revertir 288 de los 1708 tensores del modelo padre hacia un checkpoint anterior, tungduong261204/lingbot-vla-2.0-zGXyckqvz5m7 (commit eb5687782509fde1496567a6727e55401177b59d, campeón previo con UID 9): 216 tensores de FFN de acción de tipo MoE, 36 de router gate y 36 de router bias. Los 1420 tensores restantes se mantienen idénticos al UID 43.
+lingbot-vla-2.0-bd-rev01 es un checkpoint publicado en Hugging Face por el usuario newbie000, derivado de MechaTrainer/lingbot-vla-2.0-cesBRyPcp3Ar (commit 50d668ffac21fd43a1a954f3595db81fcb6efd2d), descrito en la model card como campeón de la competición SN80 competition-2 con UID 43. La revisión consiste en revertir 288 de los 1708 tensores del modelo padre hacia un checkpoint anterior, tungduong261204/lingbot-vla-2.0-zGXyckqvz5m7 (commit eb5687782509fde1496567a6727e55401177b59d, campeón previo con UID 9): 216 tensores de FFN de acción de tipo MoE, 36 de router gate y 36 de router bias. Los 1420 tensores restantes se mantienen idénticos al UID 43.
 
 El modelo declara 6.375.907.511 parámetros (~6,38 mil millones) y un repositorio de 25,5 GB en formato safetensors. La presencia de tensores etiquetados como «action MoE/FFN», «router gate» y «router bias» evidencia una arquitectura con mezcla de expertos en la cabeza de acción, nomenclatura compatible con un modelo de tipo Vision-Language-Action (VLA), si bien la model card no documenta la arquitectura global, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Auditoría 200 layouts | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| newbie000/lingbot-vla-2.0-bd-rev01 | 6.375.907.511 | No disponible | 182/200 (91,0%) | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| MechaTrainer/lingbot-vla-2.0-cesBRyPcp3Ar (UID 43) | No disponible | No disponible | 181/200 (90,5%) | No disponible | HuggingFace (checkpoint de origen) |
-| tungduong261204/lingbot-vla-2.0-zGXyckqvz5m7 (UID 9) | No disponible | No disponible | No disponible | No disponible | HuggingFace (checkpoint previo del que se importan 288 tensores) |
+| newbie000/lingbot-vla-2.0-bd-rev01 | 6.375.907.511 | No disponible | 182/200 (91,0%) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| MechaTrainer/lingbot-vla-2.0-cesBRyPcp3Ar (UID 43) | No disponible | No disponible | 181/200 (90,5%) | No disponible | Hugging Face (checkpoint de origen) |
+| tungduong261204/lingbot-vla-2.0-zGXyckqvz5m7 (UID 9) | No disponible | No disponible | No disponible | No disponible | Hugging Face (checkpoint previo del que se importan 288 tensores) |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (VLA o políticas robóticas de tamaño similar) en el material proporcionado.
 
@@ -90,7 +90,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/newbie000/lingbot-vla-2.0-bd-rev01
+- Hugging Face: https://huggingface.co/newbie000/lingbot-vla-2.0-bd-rev01
 - Modelo de origen (UID 43): https://huggingface.co/MechaTrainer/lingbot-vla-2.0-cesBRyPcp3Ar
 - Modelo previo del que se importan 288 tensores (UID 9): https://huggingface.co/tungduong261204/lingbot-vla-2.0-zGXyckqvz5m7
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo. Las consultas devolvieron resultados no relacionados (preguntas en Zhihu sobre símbolos y transporte marítimo, soporte de garantía de Google Pixel, foro de Booking.com y ayuda de Hotel Center de Google). No hay papers, blogs, repositorios ni demos adicionales documentados.

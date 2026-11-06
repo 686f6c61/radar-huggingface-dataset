@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l2-e23` es un checkpoint publicado en HuggingFace por el usuario PessimisticDPO. Por el propio identificador se deduce que se trata de una variante derivada de la familia Llama 3.1 de 8B parámetros, aparentemente construida sobre un ajuste supervisado (SFT) del modelo Tulu 3 8B, con una nomenclatura de hiperparámetros (`a0.1`, `b0.1`, `L3`, `l2`, `e23`) que sugiere un experimento de ajuste fino alineado con técnicas de optimización de preferencias, presumiblemente alguna forma de DPO (Direct Preference Optimization) con componente pesimista.
+El modelo `PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l2-e23` es un checkpoint publicado en Hugging Face por el usuario PessimisticDPO. Por el propio identificador se deduce que se trata de una variante derivada de la familia Llama 3.1 de 8B parámetros, aparentemente construida sobre un ajuste supervisado (SFT) del modelo Tulu 3 8B, con una nomenclatura de hiperparámetros (`a0.1`, `b0.1`, `L3`, `l2`, `e23`) que sugiere un experimento de ajuste fino alineado con técnicas de optimización de preferencias, presumiblemente alguna forma de DPO (Direct Preference Optimization) con componente pesimista.
 
-Sin embargo, la model card publicada es la plantilla automática de HuggingFace sin cumplimentar: todos los campos de descripción, datos de entrenamiento, licencia, idiomas y evaluación aparecen como `[More Information Needed]`. El repositorio, además, ocupa únicamente 0,2 GB, un tamaño incompatible con un checkpoint completo de 8B parámetros en precisión bf16 (que rondaría los 16 GB), lo que apunta a que se trata de un adaptador (LoRA/PEFT) o de una carga parcial de pesos, extremo que no puede confirmarse con la información disponible.
+Sin embargo, la model card publicada es la plantilla automática de Hugging Face sin cumplimentar: todos los campos de descripción, datos de entrenamiento, licencia, idiomas y evaluación aparecen como `[More Information Needed]`. El repositorio, además, ocupa únicamente 0,2 GB, un tamaño incompatible con un checkpoint completo de 8B parámetros en precisión bf16 (que rondaría los 16 GB), lo que apunta a que se trata de un adaptador (LoRA/PEFT) o de una carga parcial de pesos, extremo que no puede confirmarse con la información disponible.
 
 Por tanto, esta ficha se limita a documentar los metadatos verificables y a señalar explícitamente todo aquello que no puede determinarse. No debe utilizarse en producción sin una inspección directa del repositorio.
 
@@ -27,7 +27,7 @@ Por tanto, esta ficha se limita a documentar los metadatos verificables y a señ
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla autogenerada por HuggingFace y todos los apartados relevantes (Model Description, Training Data, Training Procedure, Training Hyperparameters) figuran como `[More Information Needed]`.
+No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla autogenerada por Hugging Face y todos los apartados relevantes (Model Description, Training Data, Training Procedure, Training Hyperparameters) figuran como `[More Information Needed]`.
 
 A partir exclusivamente del identificador del repositorio pueden formularse las siguientes hipotesis, que no deben tomarse como hechos verificados: (1) el modelo base seria Llama 3.1 8B; (2) existiria un paso intermedio de SFT sobre Tulu 3 8B; (3) los sufijos `a0.1` y `b0.1` corresponderian a coeficientes de un objetivo de preferencias, coherentes con la denominacion "PessimisticDPO" del autor; y (4) `L3`, `l2` y `e23` serian identificadores de configuracion experimental (por ejemplo, capa objetivo, norma y epoca/paso). Ninguna de estas hipotesis puede confirmarse sin acceso al repositorio o a documentacion adicional.
 
@@ -81,7 +81,7 @@ La ausencia de datos verificados sobre este checkpoint impide una comparacion ri
 |---|---|---|---|---|
 | Este modelo | no disponible | no disponible | no disponible | Repo de 0,2 GB, 0 descargas |
 | Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community License | Ampliamente disponible |
-| Tulu 3 8B | 8B | 128K | Open (segun publicacion de AI2) | Disponible en HuggingFace |
+| Tulu 3 8B | 8B | 128K | Open (segun publicacion de AI2) | Disponible en Hugging Face |
 | Qwen2.5 7B Instruct | 7B | 128K | Apache 2.0 (segun variante) | Ampliamente disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ La ausencia de datos verificados sobre este checkpoint impide una comparacion ri
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l2-e23
+- Hugging Face: https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l2-e23
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact
 

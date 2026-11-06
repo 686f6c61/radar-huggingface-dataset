@@ -2,7 +2,7 @@
 
 ## Resumen
 
-alesh-ai/vetrux-v0 es un modelo publicado en HuggingFace por el usuario alesh-ai el 14 de septiembre de 2026, distribuido bajo licencia apache-2.0. No es posible determinar qué es, qué problema resuelve ni por qué sería relevante: la model card asociada únicamente contiene el campo `license: apache-2.0` y carece de descripción, arquitectura, tamaño, datos de entrenamiento, idiomas o cualquier otra especificación técnica.
+alesh-ai/vetrux-v0 es un modelo publicado en Hugging Face por el usuario alesh-ai el 14 de septiembre de 2026, distribuido bajo licencia apache-2.0. No es posible determinar qué es, qué problema resuelve ni por qué sería relevante: la model card asociada únicamente contiene el campo `license: apache-2.0` y carece de descripción, arquitectura, tamaño, datos de entrenamiento, idiomas o cualquier otra especificación técnica.
 
 El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y no se ha localizado ningún anuncio, paper, blog técnico, repositorio de código o demo vinculado al modelo. La búsqueda web realizada no devolvió ningún resultado relacionado con "vetrux" ni con el autor.
 
@@ -95,8 +95,8 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alesh-ai/vetrux-v0
+- Modelo en Hugging Face: https://huggingface.co/alesh-ai/vetrux-v0
 - Paper, blog técnico, repositorio de código o demo: no disponible.
-- Perfil del autor en HuggingFace: https://huggingface.co/alesh-ai
+- Perfil del autor en Hugging Face: https://huggingface.co/alesh-ai
 
 Los resultados de búsqueda web obtenidos no guardan relación con el modelo ni con el autor, por lo que no se incluyen como referencias válidas: https://www.reddit.com/, https://www.zhihu.com/, https://github.com/0xk1h0/ChatGPT_DAN, https://github.com/deepseek-ai/deepseek-harness, https://desktop.github.com/download/.

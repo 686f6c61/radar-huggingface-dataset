@@ -10,7 +10,7 @@ Su relevancia es metodologica y de nicho: demuestra como un modelo base de ~8B p
 ## Especificaciones tecnicas
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (etiquetado como `qwen3` en los tags de HuggingFace); detalles especificos no disponibles |
+| Arquitectura | Transformer (etiquetado como `qwen3` en los tags de Hugging Face); detalles especificos no disponibles |
 | Parametros totales | 8.201.221.120 (aprox. 8,2 B) |
 | Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -57,7 +57,7 @@ El rendimiento en recuperacion top-5 (Macro-F1 y NDCG) es moderado-alto, mientra
 - VRAM estimada para inferencia: en FP16/BF16 los 8,2 B de parametros ocupan aproximadamente 16,4 GB (coincide con el tamano del repositorio), a los que hay que sumar memoria para activaciones y KV cache. En cuantizacion de 8 bits rondaria los 8-9 GB y en 4 bits los 5-6 GB, aunque no se publican cuantizaciones oficiales.
 - GPU recomendadas: para FP16, tarjetas con 24 GB o mas, como RTX 3090, RTX 4090, A5000, L40S o A100 40/80 GB. Para despliegue con mayor concurrencia, A100 o H100.
 - Compatibilidad con GPU de consumo: si cabe en GPUs de consumo de gama alta (RTX 3090/4090 de 24 GB) en FP16 ajustando el contexto, y en tarjetas de 8-12 GB si se aplica cuantizacion de 4 u 8 bits.
-- Opciones de despliegue: la libreria declarada es `transformers`, y los tags incluyen compatibilidad con text-generation-inference y endpoints, por lo que vLLM, TGI y servidores compatibles con la API de HuggingFace son opciones naturales. No se confirma soporte de llama.cpp, Ollama o GGUF, ya que no se publican pesos en ese formato.
+- Opciones de despliegue: la libreria declarada es `transformers`, y los tags incluyen compatibilidad con text-generation-inference y endpoints, por lo que vLLM, TGI y servidores compatibles con la API de Hugging Face son opciones naturales. No se confirma soporte de llama.cpp, Ollama o GGUF, ya que no se publican pesos en ese formato.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni re
 - Origen del entrenamiento opaco: solo se documentan 10 epocas, semilla 42 y el paso 140; no hay detalle de composicion del dataset, preprocesado ni evaluacion de sesgos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-3-bioavailability-ma-best
+- Modelo en Hugging Face: https://huggingface.co/jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-3-bioavailability-ma-best
 - Modelo base: https://huggingface.co/jiosephlee/Intern-S1-mini-lm
 - Dataset de entrenamiento: https://huggingface.co/datasets/jiosephlee/context-conditioned-molecule-transfer-v10.3-bioavailability-ma-mixed-continuous-intern
 - Ejecucion de Weights & Biases: https://wandb.ai/upenn-ml/context-conditioned-molecule-transfer-soft/runs/3swissb0

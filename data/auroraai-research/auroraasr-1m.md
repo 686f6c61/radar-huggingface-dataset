@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AuroraASR-1M es un reconocedor de voz (ASR) en inglés desarrollado por AuroraAI-Research, publicado en HuggingFace con licencia Apache 2.0. Se trata de un modelo deliberadamente minúsculo: 949.073 parámetros en total (menos de 1 M), construido sobre una arquitectura Conformer-CTC con compartición de pesos. Cuatro bloques Conformer-lite únicos se aplican dos veces cada uno, seguidos de una cabeza CTC sobre un vocabulario BPE de 256 piezas. La entrada es audio mono a 16 kHz y la decodificación es CTC voraz, sin modelo de lenguaje externo.
+AuroraASR-1M es un reconocedor de voz (ASR) en inglés desarrollado por AuroraAI-Research, publicado en Hugging Face con licencia Apache 2.0. Se trata de un modelo deliberadamente minúsculo: 949.073 parámetros en total (menos de 1 M), construido sobre una arquitectura Conformer-CTC con compartición de pesos. Cuatro bloques Conformer-lite únicos se aplican dos veces cada uno, seguidos de una cabeza CTC sobre un vocabulario BPE de 256 piezas. La entrada es audio mono a 16 kHz y la decodificación es CTC voraz, sin modelo de lenguaje externo.
 
 El problema que aborda es el de la transcripción de voz en entornos con recursos muy limitados: el modelo pesa 3,81 MB en FP32, 1,91 MB en FP16 y 1,06 MB en INT8, y funciona sin runtime especializado. Está entrenado exclusivamente con LibriSpeech (960 h) durante 379 épocas, unas 10 horas en una RTX PRO 6000, y solo soporta inglés. No es un modelo de propósito general ni compite en calidad con Whisper: su interés reside en la relación entre tamaño, velocidad (RTF de 0,0007 en GPU y 0,0023 en un único núcleo de CPU) y un WER de 11,43 % en test-clean y 26,50 % en test-other.
 
@@ -85,10 +85,10 @@ Velocidad (FP32, pipeline extremo a extremo, batch size 1, 100 utterances de tes
 
 | Modelo | Parámetros | Contexto / entrada | WER test-clean | WER test-other | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AuroraASR-1M | 950K | utterances de 1–16 s, 16 kHz | 11,43 | 26,50 | Apache 2.0 | HuggingFace, requiere `trust_remote_code` |
-| Femto-ASR | 2,39M | no disponible en la información proporcionada | 10,95 | 25,36 | no disponible | HuggingFace |
-| Citrinet-256 CTC | 10M | no disponible en la información proporcionada | 3,8 | 9,8 | no disponible | HuggingFace (NVIDIA) |
-| Whisper Tiny (en) | 39M | ventana de 30 s, multilingüe en la variante base | 5,6 | 14,6 | no disponible en la información proporcionada | HuggingFace (OpenAI) |
+| AuroraASR-1M | 950K | utterances de 1–16 s, 16 kHz | 11,43 | 26,50 | Apache 2.0 | Hugging Face, requiere `trust_remote_code` |
+| Femto-ASR | 2,39M | no disponible en la información proporcionada | 10,95 | 25,36 | no disponible | Hugging Face |
+| Citrinet-256 CTC | 10M | no disponible en la información proporcionada | 3,8 | 9,8 | no disponible | Hugging Face (NVIDIA) |
+| Whisper Tiny (en) | 39M | ventana de 30 s, multilingüe en la variante base | 5,6 | 14,6 | no disponible en la información proporcionada | Hugging Face (OpenAI) |
 
 Lectura de la comparativa: AuroraASR-1M es el más pequeño de la tabla por un factor de 2,5 frente a Femto-ASR, 10 frente a Citrinet-256 y 41 frente a Whisper Tiny, pero paga ese tamaño con un WER entre 2 y 3 veces peor que Citrinet-256 y Whisper Tiny en test-other. Frente a Femto-ASR, que es su competidor directo en la categoría sub-3M, pierde en ambas métricas de WER (0,48 y 1,14 puntos) a cambio de ser un 60 % más pequeño.
 
@@ -109,10 +109,10 @@ Lectura de la comparativa: AuroraASR-1M es el más pequeño de la tabla por un f
 
 ## Enlaces
 
-- [Modelo en HuggingFace: AuroraAI-Research/AuroraASR-1M](https://huggingface.co/AuroraAI-Research/AuroraASR-1M)
+- [Modelo en Hugging Face: AuroraAI-Research/AuroraASR-1M](https://huggingface.co/AuroraAI-Research/AuroraASR-1M)
 - [Femto-ASR (comparativa)](https://huggingface.co/igorktech/femto-asr)
 - [NVIDIA Citrinet-256 CTC LibriSpeech (comparativa)](https://huggingface.co/nvidia/stt_en_citrinet_256_ls)
 - [Moonshine Tiny (comparativa)](https://huggingface.co/UsefulSensors/moonshine-tiny)
 - [Whisper Tiny, solo inglés (comparativa)](https://huggingface.co/openai/whisper-tiny.en)
 - [Whisper Tiny, multilingüe (comparativa)](https://huggingface.co/openai/whisper-tiny)
-- [Dataset LibriSpeech ASR en HuggingFace](https://huggingface.co/datasets/librispeech_asr)
+- [Dataset LibriSpeech ASR en Hugging Face](https://huggingface.co/datasets/librispeech_asr)

@@ -69,9 +69,9 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Tamaño | WER (FLEURS gu_in) | CER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bhaskaro/ainotes-whisper-gujarati-medium-q5_1 | 587 MB | 49,2% | 37,0% | Apache-2.0 | HuggingFace |
-| bhaskaro/ainotes-whisper-gujarati-q5_1 (small) | 190 MB | 53,1% | 38,0% | Apache-2.0 | HuggingFace |
-| vasista22/whisper-gujarati-medium (base) | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| bhaskaro/ainotes-whisper-gujarati-medium-q5_1 | 587 MB | 49,2% | 37,0% | Apache-2.0 | Hugging Face |
+| bhaskaro/ainotes-whisper-gujarati-q5_1 (small) | 190 MB | 53,1% | 38,0% | Apache-2.0 | Hugging Face |
+| vasista22/whisper-gujarati-medium (base) | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 El medium q5_1 ofrece una mejora de 3,9 puntos porcentuales en WER y 1 punto en CER frente al small, pero con un coste de tiempo aproximadamente seis veces mayor. El modelo base no tiene datos de rendimiento publicados en la información disponible, aunque es el modelo original sin cuantizar.
 
@@ -88,7 +88,7 @@ El medium q5_1 ofrece una mejora de 3,9 puntos porcentuales en WER y 1 punto en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bhaskaro/ainotes-whisper-gujarati-medium-q5_1
+- Modelo en Hugging Face: https://huggingface.co/bhaskaro/ainotes-whisper-gujarati-medium-q5_1
 - Modelo small del mismo autor: https://huggingface.co/bhaskaro/ainotes-whisper-gujarati-q5_1
 - Modelo base: https://huggingface.co/vasista22/whisper-gujarati-medium
 - Información y benchmarks del modelo base: https://free2aitools.com/model/vasista22/whisper-gujarati-medium

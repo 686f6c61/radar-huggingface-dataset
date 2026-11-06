@@ -104,7 +104,7 @@ Los tres derivados de la coleccion "RACER IS OP Heretic Models" comparten metodo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saidutta69/Qwen3-1.7B-heretic
+- Modelo en Hugging Face: https://huggingface.co/saidutta69/Qwen3-1.7B-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Licencia del base: https://huggingface.co/Qwen/Qwen3-1.7B/blob/main/LICENSE
 - Herramienta Heretic (ablacion direccional): https://github.com/p-e-w/heretic
@@ -114,4 +114,4 @@ Los tres derivados de la coleccion "RACER IS OP Heretic Models" comparten metodo
 - Qwen2.5-1.5B-Instruct-heretic: https://huggingface.co/saidutta69/Qwen2.5-1.5B-Instruct-heretic
 - Coleccion completa de modelos Heretic: https://huggingface.co/collections/saidutta69/racer-is-op-heretic-models
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces listados proceden exclusivamente de la model card y de los metadatos de HuggingFace.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces listados proceden exclusivamente de la model card y de los metadatos de Hugging Face.

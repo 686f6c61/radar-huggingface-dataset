@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wan2.2-TI2V-5B es un modelo de difusión para generación de vídeo a partir de texto e imagen (text-to-video e image-to-video) desarrollado por el equipo Wan (Wan-AI, ecosistema Alibaba). Esta ficha corresponde a la réplica publicada por el usuario Rombakr5 en HuggingFace, que redistribuye los pesos originales del modelo TI2V-5B de la familia Wan2.2 bajo licencia Apache 2.0. El modelo forma parte de la segunda generación de la familia Wan, presentada en julio de 2025 junto con los modelos T2V-A14B e I2V-A14B basados en arquitectura MoE.
+Wan2.2-TI2V-5B es un modelo de difusión para generación de vídeo a partir de texto e imagen (text-to-video e image-to-video) desarrollado por el equipo Wan (Wan-AI, ecosistema Alibaba). Esta ficha corresponde a la réplica publicada por el usuario Rombakr5 en Hugging Face, que redistribuye los pesos originales del modelo TI2V-5B de la familia Wan2.2 bajo licencia Apache 2.0. El modelo forma parte de la segunda generación de la familia Wan, presentada en julio de 2025 junto con los modelos T2V-A14B e I2V-A14B basados en arquitectura MoE.
 
 El modelo resuelve la generación de vídeo de alta definición (720P a 24 fps) en una sola GPU de consumo, gracias a un VAE propietario (Wan2.2-VAE) con ratio de compresión 16×16×4 que reduce drásticamente el coste computacional del proceso de difusión. Con 5.000 millones de parámetros, se posiciona como una alternativa eficiente frente a los modelos MoE de 14B de la misma familia, manteniendo soporte conjunto para texto-a-vídeo e imagen-a-vídeo en un único checkpoint.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Arquitectura | Resolución / fps | Contexto / duración | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Wan2.2-TI2V-5B | 5B | Difusión densa + VAE 16×16×4 | 720P / 24 fps | no disponible | Apache 2.0 | HuggingFace, ModelScope, ComfyUI, Diffusers |
-| Wan2.2-T2V-A14B | 14B (MoE) | Difusión MoE | 480P y 720P | no disponible | Apache 2.0 | HuggingFace, ModelScope |
-| Wan2.2-I2V-A14B | 14B (MoE) | Difusión MoE | 480P y 720P | no disponible | Apache 2.0 | HuggingFace, ModelScope |
-| Wan2.1 | no disponible | Difusión | no disponible | no disponible | Apache 2.0 | HuggingFace, GitHub |
+| Wan2.2-TI2V-5B | 5B | Difusión densa + VAE 16×16×4 | 720P / 24 fps | no disponible | Apache 2.0 | Hugging Face, ModelScope, ComfyUI, Diffusers |
+| Wan2.2-T2V-A14B | 14B (MoE) | Difusión MoE | 480P y 720P | no disponible | Apache 2.0 | Hugging Face, ModelScope |
+| Wan2.2-I2V-A14B | 14B (MoE) | Difusión MoE | 480P y 720P | no disponible | Apache 2.0 | Hugging Face, ModelScope |
+| Wan2.1 | no disponible | Difusión | no disponible | no disponible | Apache 2.0 | Hugging Face, GitHub |
 
 La comparativa se limita a la propia familia Wan porque la información proporcionada no incluye datos de otros modelos de vídeo open source (como HunyuanVideo, Mochi o CogVideoX) que permitan una comparación rigurosa con cifras.
 
@@ -83,9 +83,9 @@ La comparativa se limita a la propia familia Wan porque la información proporci
 
 ## Enlaces
 
-- HuggingFace (réplica): https://huggingface.co/Rombakr5/Wan2.2-TI2V-5B
-- HuggingFace oficial del modelo: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
-- Organización Wan-AI en HuggingFace: https://huggingface.co/Wan-AI/
+- Hugging Face (réplica): https://huggingface.co/Rombakr5/Wan2.2-TI2V-5B
+- Hugging Face oficial del modelo: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
+- Organización Wan-AI en Hugging Face: https://huggingface.co/Wan-AI/
 - GitHub oficial: https://github.com/Wan-Video/Wan2.2
 - Informe técnico (arXiv): https://arxiv.org/abs/2503.20314
 - Sitio web del proyecto: https://wan.video

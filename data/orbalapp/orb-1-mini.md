@@ -79,8 +79,8 @@ Ademas, la model card reporta velocidad con mlx-lm sobre un M1 Pro: carga en 1,1
 
 | Modelo | Parametros | Idioma | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| orb-1-mini | ~752 M | Ingles | Limpieza de dictado | Apache-2.0 | HuggingFace (MLX 4-bit) |
-| Qwen3.5-0.8B (base) | ~0.8 B | Multilingue | Generacion de texto general | Apache-2.0 | HuggingFace |
+| orb-1-mini | ~752 M | Ingles | Limpieza de dictado | Apache-2.0 | Hugging Face (MLX 4-bit) |
+| Qwen3.5-0.8B (base) | ~0.8 B | Multilingue | Generacion de texto general | Apache-2.0 | Hugging Face |
 | Version anterior de Orbal 0.8B | ~0.8 B | Ingles | Acortado de dictado | no disponible | Interna, no publicada |
 | Version anterior de Orbal 2B | ~2 B | Ingles | Acortado de dictado | no disponible | Interna, no publicada |
 
@@ -102,6 +102,6 @@ Frente al modelo base Qwen3.5-0.8B, orb-1-mini sacrifica generalidad y multiling
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Orbalapp/orb-1-mini
+- Hugging Face: https://huggingface.co/Orbalapp/orb-1-mini
 - Aplicacion Orbal: https://orbal.app
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B

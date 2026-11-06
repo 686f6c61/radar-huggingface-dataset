@@ -69,8 +69,8 @@ No se dispone de datos verificados de alternativas en la información proporcion
 
 | Modelo | Parametros | Contexto | Capacidad diferencial | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Game2Player-9B | 9,4 B | 65.536 tokens (config. vLLM) | Predicción de acciones de juego con salida `computer_use` estructurada e historial visual | Apache-2.0 | Pesos en HuggingFace (safetensors) |
-| Qwen3.5-9B (base) | 9,4 B (heredados) | No disponible en la información proporcionada | Modelo generalista image-text-to-text; sin fine-tune específico de gameplay | Apache-2.0 | Pesos en HuggingFace |
+| Game2Player-9B | 9,4 B | 65.536 tokens (config. vLLM) | Predicción de acciones de juego con salida `computer_use` estructurada e historial visual | Apache-2.0 | Pesos en Hugging Face (safetensors) |
+| Qwen3.5-9B (base) | 9,4 B (heredados) | No disponible en la información proporcionada | Modelo generalista image-text-to-text; sin fine-tune específico de gameplay | Apache-2.0 | Pesos en Hugging Face |
 | Otras alternativas de agentes visuales | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se dispone de datos verificados de alternativas en la información proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/game2player/Game2Player-9B
+- Modelo en Hugging Face: https://huggingface.co/game2player/Game2Player-9B
 - Página del proyecto: https://game2player.github.io/
 - Tabla de clasificación del proyecto: https://game2player.github.io/#leaderboard
 - Código: https://github.com/game2player/Game2Player

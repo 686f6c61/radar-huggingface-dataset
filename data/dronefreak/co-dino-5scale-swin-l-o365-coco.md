@@ -77,9 +77,9 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 | Alternativa | Parametros | Contexto/resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Co-DETR ViT-L (checkpoints oficiales de los autores en el Hub) | no disponible | no disponible | no disponible | no disponible | publicados oficialmente en HuggingFace |
+| Co-DETR ViT-L (checkpoints oficiales de los autores en el Hub) | no disponible | no disponible | no disponible | no disponible | publicados oficialmente en Hugging Face |
 | Otros checkpoints Co-DETR no ViT (ResNet-50, Swin) | no disponible | no disponible | no disponible | no disponible | distribuidos por Google Drive |
-| Este checkpoint (Swin-L, 5 escalas, O365 -> COCO) | 219,2 M | no disponible | box AP 64,1 en COCO val2017 (no verificado) | unknown / research-only por Objects365 | espejo no oficial en HuggingFace |
+| Este checkpoint (Swin-L, 5 escalas, O365 -> COCO) | 219,2 M | no disponible | box AP 64,1 en COCO val2017 (no verificado) | unknown / research-only por Objects365 | espejo no oficial en Hugging Face |
 
 Como referencia cualitativa, dentro de la familia DETR los competidores directos de esta configuracion serian los detectores basados en Swin-L con decodificador DETR (DINO, Deformable DETR) y los propios checkpoints Co-DETR con backbone ViT-L; sin embargo, no hay cifras en la informacion disponible para compararlos.
 
@@ -99,7 +99,7 @@ Como referencia cualitativa, dentro de la familia DETR los competidores directos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/co-dino-5scale-swin-l-o365-coco
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/co-dino-5scale-swin-l-o365-coco
 - Repositorio oficial del metodo (SenseTime X-Lab): https://github.com/Sense-X/Co-DETR
 - Fork mantenido con el entorno y los scripts de inferencia: https://github.com/dronefreak/Co-DETR
 - Paper de Co-DETR (ICCV 2023): https://arxiv.org/abs/2211.12860

@@ -98,7 +98,7 @@ Frente al Q8_0 oficial, este derivado reduce el tamaño un 44,6% manteniendo ate
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Joakimpalm-Zen/Qwen3-30B-A3B-selective-attnQ8_0-expQ4_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Joakimpalm-Zen/Qwen3-30B-A3B-selective-attnQ8_0-expQ4_0-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Xyntetik Runner (GitHub): https://github.com/Joakimpalm-Zen/xyntetik-runner
 - Benchmark de truncamiento: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/truncation-benchmark.md

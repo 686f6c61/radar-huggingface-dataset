@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-DPO-auto_round-int8-gs128-sym
+- Modelo en Hugging Face: https://huggingface.co/fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-DPO-auto_round-int8-gs128-sym
 - Modelo base: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-DPO
 - Intel AutoRound (repositorio): https://github.com/intel/auto-round
 - Pipeline de replicacion: https://git.epicdynamic.com/auto-round-pipeline

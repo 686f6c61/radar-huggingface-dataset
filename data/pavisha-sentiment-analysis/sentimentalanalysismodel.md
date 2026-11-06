@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `pavisha-sentiment-analysis/SentimentalAnalysisModel` es una publicación en HuggingFace cuyo autor es el usuario `pavisha-sentiment-analysis`. Se presenta bajo licencia MIT, lo que permite uso comercial y modificación sin restricciones significativas. Sin embargo, la información disponible es extremadamente limitada: el repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, y la model card únicamente incluye la licencia, sin descripción técnica ni datos de arquitectura.
+El modelo `pavisha-sentiment-analysis/SentimentalAnalysisModel` es una publicación en Hugging Face cuyo autor es el usuario `pavisha-sentiment-analysis`. Se presenta bajo licencia MIT, lo que permite uso comercial y modificación sin restricciones significativas. Sin embargo, la información disponible es extremadamente limitada: el repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, y la model card únicamente incluye la licencia, sin descripción técnica ni datos de arquitectura.
 
 No se dispone de detalles sobre la arquitectura, número de parámetros, longitud de contexto, idiomas soportados o formato de pesos. Aunque el nombre del modelo sugiere una tarea de análisis de sentimiento, no hay evidencia publicada que confirme su funcionamiento, rendimiento o incluso su disponibilidad operativa. En el estado actual, cualquier uso en producción sería arriesgado sin validación previa.
 
@@ -60,4 +60,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/pavisha-sentiment-analysis/SentimentalAnalysisModel)
+- [Página del modelo en Hugging Face](https://huggingface.co/pavisha-sentiment-analysis/SentimentalAnalysisModel)

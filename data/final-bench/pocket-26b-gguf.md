@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FINAL-Bench/POCKET-26B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/FINAL-Bench/POCKET-26B-GGUF
 - Archivos del repositorio: https://huggingface.co/FINAL-Bench/POCKET-26B-GGUF/tree/main
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Guia de configuracion del autor: https://vidraft.net/p/pocket.html?model=pocket_26b

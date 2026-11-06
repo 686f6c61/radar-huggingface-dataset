@@ -78,7 +78,7 @@ Los tres fine-tunes de Sounderya comparten la misma arquitectura base y se difer
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sounderya/smolvla-ur3-phase3
+- Repositorio Hugging Face: https://huggingface.co/Sounderya/smolvla-ur3-phase3
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Sounderya/mug_smolvla_dataset_v2nc
 - Paper SmolVLA (arXiv): https://arxiv.org/abs/2506.01844

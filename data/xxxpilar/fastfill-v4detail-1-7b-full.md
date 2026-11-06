@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FastFill v4detail 1.7B | 1,7B | No disponible | Estimación de tamaños de mobiliario | No disponible | HuggingFace (0 descargas) |
-| Qwen3-1.7B (base) | 1,7B | No disponible en esta ficha | Lenguaje general | No disponible en esta ficha | HuggingFace (Qwen) |
+| FastFill v4detail 1.7B | 1,7B | No disponible | Estimación de tamaños de mobiliario | No disponible | Hugging Face (0 descargas) |
+| Qwen3-1.7B (base) | 1,7B | No disponible en esta ficha | Lenguaje general | No disponible en esta ficha | Hugging Face (Qwen) |
 | Alternativas especializadas en layout | No disponible | No disponible | Layout de interiores | No disponible | No disponible |
 
 No se dispone de información suficiente para comparar con modelos especializados equivalentes en estimación de tamaños de mobiliario.
@@ -79,6 +79,6 @@ No se dispone de información suficiente para comparar con modelos especializado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XXXpilar/fastfill-v4detail-1.7b-full
+- Modelo en Hugging Face: https://huggingface.co/XXXpilar/fastfill-v4detail-1.7b-full
 - Repositorio del workflow: https://github.com/XXXPILAR/fastfill-workflow2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

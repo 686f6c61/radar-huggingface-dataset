@@ -4,7 +4,7 @@
 
 Lixytiz/llama32-1b-lora-sft-lab10-adapter es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Lixytiz, diseñado para ajustar el modelo base Llama 3.2 1B mediante entrenamiento supervisado (SFT). No se trata de un modelo completo, sino de un conjunto de pesos de bajo rango que se aplican sobre el transformer preentrenado para adaptarlo a una tarea específica, probablemente dentro de un entorno de laboratorio o práctica de investigación.
 
-El repositorio tiene un tamaño de 0,1 GB, coherente con el peso de un adaptador LoRA de este tipo. La model card publicada es una plantilla generada automáticamente por la biblioteca transformers y no incluye información sobre el autor, los datos de entrenamiento, los hiperparámetros ni el propósito concreto del adaptador. La etiqueta del repositorio indica `transformers` y `safetensors`, por lo que el formato de pesos es compatible con la librería HuggingFace Transformers.
+El repositorio tiene un tamaño de 0,1 GB, coherente con el peso de un adaptador LoRA de este tipo. La model card publicada es una plantilla generada automáticamente por la biblioteca transformers y no incluye información sobre el autor, los datos de entrenamiento, los hiperparámetros ni el propósito concreto del adaptador. La etiqueta del repositorio indica `transformers` y `safetensors`, por lo que el formato de pesos es compatible con la librería Hugging Face Transformers.
 
 Este tipo de adaptadores resulta relevante en escenarios donde se necesita realizar fine-tuning de modelos de lenguaje con un coste computacional y de almacenamiento reducido, ya que solo se entrenan y almacenan los parámetros LoRA en lugar de todos los pesos del modelo base. No obstante, en este caso no hay documentación pública que describa la tarea objetivo ni las métricas de rendimiento alcanzadas, por lo que la ficha debe tratarse con cautela.
 
@@ -57,15 +57,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - El modelo base en precision fp16 requiere aproximadamente entre 2,5 y 3 GB de VRAM para inferencia.
 - Con cuantizacion a 4 bits (por ejemplo, mediante bitsandbytes), la VRAM necesaria puede reducirse a alrededor de 1 a 1,5 GB.
 - GPU recomendadas: tarjetas de consumo como RTX 3060, RTX 4060 o superiores son suficientes. En entornos de servidor, una A10G o A100 tambien es valida.
-- Opciones de despliegue: puede cargarse con HuggingFace Transformers usando PeftModel, o integrarse en entornos como vLLM o llama.cpp si se convierte a formato GGUF.
+- Opciones de despliegue: puede cargarse con Hugging Face Transformers usando PeftModel, o integrarse en entornos como vLLM o llama.cpp si se convierte a formato GGUF.
 - Latencia y throughput estimados: no disponibles. Dependen del hardware y de la cuantizacion del modelo base.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Base | Tamano del repo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Lixytiz/llama32-1b-lora-sft-lab10-adapter | Adaptador LoRA | Llama 3.2 1B | 0,1 GB | no disponible | no disponible | HuggingFace |
-| VVen/llama32-1b-lora-sft-lab10-model | Adaptador LoRA | Llama 3.2 1B | no disponible | no disponible | no disponible | HuggingFace |
+| Lixytiz/llama32-1b-lora-sft-lab10-adapter | Adaptador LoRA | Llama 3.2 1B | 0,1 GB | no disponible | no disponible | Hugging Face |
+| VVen/llama32-1b-lora-sft-lab10-model | Adaptador LoRA | Llama 3.2 1B | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de mas modelos comparables con informacion publica. Los dos repositorios citados parecen referirse al mismo adaptador o a variantes del mismo experimento, aunque no hay datos de rendimiento que permitan establecer diferencias.
 
@@ -80,5 +80,5 @@ No se dispone de mas modelos comparables con informacion publica. Los dos reposi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lixytiz/llama32-1b-lora-sft-lab10-adapter
-- Repositorio similar en HuggingFace: https://huggingface.co/VVen/llama32-1b-lora-sft-lab10-model
+- Hugging Face: https://huggingface.co/Lixytiz/llama32-1b-lora-sft-lab10-adapter
+- Repositorio similar en Hugging Face: https://huggingface.co/VVen/llama32-1b-lora-sft-lab10-model

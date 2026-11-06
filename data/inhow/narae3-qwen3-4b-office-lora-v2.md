@@ -88,7 +88,7 @@ En terminos de capacidad, el modelo base Qwen3-4B-Instruct-2507 sigue siendo la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inhow/Narae3-Qwen3-4B-Office-LoRA-v2
+- Modelo en Hugging Face: https://huggingface.co/inhow/Narae3-Qwen3-4B-Office-LoRA-v2
 - Adaptador padre (Narae3 v1): https://huggingface.co/inhow/Narae3-Qwen3-4B-LoRA-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Informe Office con las correcciones del controlador de ejecucion: https://github.com/y5496694/Narae_hangul_office/blob/main/docs/narae3-office-training-20261030.md

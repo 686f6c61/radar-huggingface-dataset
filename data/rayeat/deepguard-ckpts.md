@@ -53,6 +53,6 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo, no es p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rayeat/deepguard-ckpts
+- Repositorio Hugging Face: https://huggingface.co/Rayeat/deepguard-ckpts
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo.

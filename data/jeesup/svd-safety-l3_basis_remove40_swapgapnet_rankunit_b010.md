@@ -28,7 +28,7 @@ Su relevancia es, por tanto, metodológica: aporta mediciones reproducibles (ASR
 | Semilla | 42 |
 | Tamano del repositorio | 16,1 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de publicacion | 21 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicacion | 21 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -83,7 +83,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| Este checkpoint (`svd-safety-l3_basis_remove40_swapgapnet_rankunit_b010`) | 8.030.261.248 (fracción densa 0,5999) | 8.192 tokens (heredado) | Meta Llama 3 Community License | Pesos safetensors en HuggingFace, 0 descargas | AdvBench ASR 0,0538; StrongREJECT ASR 0,1438; sobrerrechazo 0,1070; perplejidad WikiText-2 18,4012 |
+| Este checkpoint (`svd-safety-l3_basis_remove40_swapgapnet_rankunit_b010`) | 8.030.261.248 (fracción densa 0,5999) | 8.192 tokens (heredado) | Meta Llama 3 Community License | Pesos safetensors en Hugging Face, 0 descargas | AdvBench ASR 0,0538; StrongREJECT ASR 0,1438; sobrerrechazo 0,1070; perplejidad WikiText-2 18,4012 |
 | meta-llama/Meta-Llama-3-8B-Instruct | 8.030.261.248 | 8.192 tokens | Meta Llama 3 Community License | Pesos abiertos, ampliamente desplegado | Valores de referencia no incluidos en la información proporcionada |
 | Otros brazos de la rejilla del mismo estudio (`Jeesup/svd-safety-l3_*`) | no disponible | no disponible | Meta Llama 3 Community License (presumiblemente) | no disponible en detalle | no disponible |
 
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks comparables de terceros en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_basis_remove40_swapgapnet_rankunit_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_basis_remove40_swapgapnet_rankunit_b010
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Paper Basis Sharing (ICLR 2025): URL no disponible en la información proporcionada
 - Licencia Meta Llama 3 y política de uso: se incluyen como `LICENSE` y `USE_POLICY.md` en el repositorio; URL pública no disponible en la información proporcionada

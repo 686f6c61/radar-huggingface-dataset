@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-all-a0.5` es un repositorio de HuggingFace publicado por el usuario `wz7475` el 27 de septiembre de 2026 (según los metadatos del repositorio). El identificador sugiere un ajuste fino del modelo base Qwen2.5-7B-Instruct orientado al dominio legal, con algún tipo de intervención denominada "psteer" (probablemente *prompt steering* o *steering* sobre representaciones internas) y un parámetro `a0.5`, habitualmente asociado a la intensidad de un vector de dirección. Ninguna de estas inferencias está confirmada por el autor: la model card es la plantilla autogenerada de HuggingFace con todos los campos marcados como `[More Information Needed]`.
+`wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-all-a0.5` es un repositorio de Hugging Face publicado por el usuario `wz7475` el 27 de septiembre de 2026 (según los metadatos del repositorio). El identificador sugiere un ajuste fino del modelo base Qwen2.5-7B-Instruct orientado al dominio legal, con algún tipo de intervención denominada "psteer" (probablemente *prompt steering* o *steering* sobre representaciones internas) y un parámetro `a0.5`, habitualmente asociado a la intensidad de un vector de dirección. Ninguna de estas inferencias está confirmada por el autor: la model card es la plantilla autogenerada de Hugging Face con todos los campos marcados como `[More Information Needed]`.
 
 Los metadatos disponibles son mínimos: 0 descargas, 0 likes, licencia no declarada, idiomas no declarados, pipeline no declarado y un tamaño de repositorio de 0,3 GB en formato safetensors. Este tamaño es incompatible con un checkpoint completo de un modelo de 7 000 millones de parámetros en bf16 (que ocuparía aproximadamente 15 GB), por lo que el repositorio contiene con toda probabilidad adaptadores LoRA, pesos parciales o una subida incompleta. No hay paper, ni datos de entrenamiento, ni benchmarks, ni documentación de uso.
 
@@ -30,7 +30,7 @@ La relevancia de esta ficha es fundamentalmente metodológica: sirve como ejempl
 
 No hay informacion disponible sobre la arquitectura concreta, el procedimiento de entrenamiento, el volumen de tokens, la composicion del dataset ni el uso de tecnicas de alineacion como RLHF, DPO o PPO. La model card autogenerada no rellena ninguna de las secciones de detalles tecnicos, datos de entrenamiento o hiperparametros.
 
-El unico indicio sobre la intervencion realizada esta en el propio nombre del repositorio. El segmento `katcher-legal` apunta a un corpus o tarea de dominio juridico; `psteer` sugiere *steering* sobre el prompt o sobre las activaciones internas del modelo, una tecnica que consiste en sumar un vector de direccion a las representaciones ocultas para inducir un comportamiento concreto; y `a0.5` correspondería al coeficiente de escala de esa intervencion. Se trata de una hipotesis razonable, no de un dato documentado. El tag `arxiv:1910.09700` presente en los metadatos remite a Lacoste et al. (2019) sobre calculo de emisiones de carbono, una referencia de la plantilla por defecto de HuggingFace, no un paper de este modelo.
+El unico indicio sobre la intervencion realizada esta en el propio nombre del repositorio. El segmento `katcher-legal` apunta a un corpus o tarea de dominio juridico; `psteer` sugiere *steering* sobre el prompt o sobre las activaciones internas del modelo, una tecnica que consiste en sumar un vector de direccion a las representaciones ocultas para inducir un comportamiento concreto; y `a0.5` correspondería al coeficiente de escala de esa intervencion. Se trata de una hipotesis razonable, no de un dato documentado. El tag `arxiv:1910.09700` presente en los metadatos remite a Lacoste et al. (2019) sobre calculo de emisiones de carbono, una referencia de la plantilla por defecto de Hugging Face, no un paper de este modelo.
 
 ## Capacidades
 
@@ -101,7 +101,7 @@ La comparacion relevante no es de rendimiento, sino de trazabilidad: los tres mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-all-a0.5
+- Repositorio en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-all-a0.5
 - Modelo base presumible (no confirmado por el autor): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Referencia citada en el tag `arxiv:1910.09700`, Lacoste et al. (2019), *Quantifying the Carbon Emissions of Machine Learning*: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning enlazada en la plantilla de la model card: https://mlco2.github.io/impact

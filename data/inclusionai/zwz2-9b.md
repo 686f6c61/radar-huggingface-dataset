@@ -68,10 +68,10 @@ Según la model card, el modelo se evalúa en 25 benchmarks en seis dominios y m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ZwZ2-9B | 9,41 B | no disponible | no disponible | HuggingFace (inclusionAI) | Base Qwen3.5-9B, RL con GRPO, +4,96 pts sobre base |
-| ZwZ2-4B | no disponible | no disponible | no disponible | HuggingFace (inclusionAI) | Base Qwen3.5-4B, misma familia |
-| ZwZ2-27B | no disponible | no disponible | no disponible | HuggingFace (inclusionAI) | Base Qwen3.6-27B, misma familia |
-| Qwen3.5-9B | 9 B (aprox.) | no disponible | no disponible | HuggingFace (Qwen) | Modelo base; precisión global 51,63 en la evaluación de ZwZ2 |
+| ZwZ2-9B | 9,41 B | no disponible | no disponible | Hugging Face (inclusionAI) | Base Qwen3.5-9B, RL con GRPO, +4,96 pts sobre base |
+| ZwZ2-4B | no disponible | no disponible | no disponible | Hugging Face (inclusionAI) | Base Qwen3.5-4B, misma familia |
+| ZwZ2-27B | no disponible | no disponible | no disponible | Hugging Face (inclusionAI) | Base Qwen3.6-27B, misma familia |
+| Qwen3.5-9B | 9 B (aprox.) | no disponible | no disponible | Hugging Face (Qwen) | Modelo base; precisión global 51,63 en la evaluación de ZwZ2 |
 
 No se dispone de datos suficientes en la información proporcionada para comparar con modelos de otras familias en parámetros, contexto o rendimiento detallado.
 
@@ -88,11 +88,11 @@ No se dispone de datos suficientes en la información proporcionada para compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inclusionAI/ZwZ2-9B
+- Modelo en Hugging Face: https://huggingface.co/inclusionAI/ZwZ2-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/inclusionAI/ZwZ2-RL-VQA
 - Paper (arXiv 2610.37037): https://arxiv.org/pdf/2610.37037
 - Proyecto en GitHub: https://github.com/inclusionAI/Zooming-without-Zooming-v2
-- Colección HuggingFace: https://huggingface.co/collections/inclusionAI/zooming-without-zooming-v2
+- Colección Hugging Face: https://huggingface.co/collections/inclusionAI/zooming-without-zooming-v2
 - Modelo ZwZ2-4B: https://huggingface.co/inclusionAI/ZwZ2-4B
 - Modelo ZwZ2-27B: https://huggingface.co/inclusionAI/ZwZ2-27B
 - Paper primera generación ZwZ (arXiv 2602.11858): https://huggingface.co/papers/2602.11858

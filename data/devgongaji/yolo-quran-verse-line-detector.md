@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `devgongaji/yolo-quran-verse-line-detector` es un detector de objetos basado en YOLO v26, entrenado específicamente para localizar líneas de versos del Corán en imágenes de páginas o manuscritos. Desarrollado por el usuario `devgongaji` y publicado en HuggingFace bajo la librería Ultralytics, su propósito es facilitar la segmentación y el análisis automático de textos coránicos, una tarea relevante para la digitalización de manuscritos, la investigación académica y el desarrollo de aplicaciones de lectura asistida.
+El modelo `devgongaji/yolo-quran-verse-line-detector` es un detector de objetos basado en YOLO v26, entrenado específicamente para localizar líneas de versos del Corán en imágenes de páginas o manuscritos. Desarrollado por el usuario `devgongaji` y publicado en Hugging Face bajo la librería Ultralytics, su propósito es facilitar la segmentación y el análisis automático de textos coránicos, una tarea relevante para la digitalización de manuscritos, la investigación académica y el desarrollo de aplicaciones de lectura asistida.
 
 El modelo se presenta como una solución de detección de objetos (pipeline `object-detection`) con etiquetas que indican soporte para inglés y malayo (`ms`, `en`), aunque no se especifican detalles sobre la arquitectura interna, el número de parámetros ni la longitud de contexto, ya que la ficha publicada carece de esa información. Al ser un modelo YOLO, se espera que siga la arquitectura típica de detección en una sola pasada, optimizada para velocidad y precisión en imágenes, pero no se dispone de datos verificables sobre su entrenamiento o rendimiento.
 
@@ -69,5 +69,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/devgongaji/yolo-quran-verse-line-detector
+- Hugging Face: https://huggingface.co/devgongaji/yolo-quran-verse-line-detector
 - No se han encontrado papers, repositorios adicionales ni demos asociados al modelo en la información proporcionada.

@@ -18,7 +18,7 @@ Con 0 descargas, 0 likes, 9,9 GB de repositorio y sin licencia, idiomas, pipelin
 | Longitud de contexto | No disponible para el modelo base. Los artefactos cubren la tarea mixSWE de 4 segmentos de 1024 tokens (4x1024) |
 | Tipos de cuantización | No disponible |
 | Idiomas soportados | No disponibles |
-| Licencia | No disponible (los metadatos de HuggingFace no especifican licencia) |
+| Licencia | No disponible (los metadatos de Hugging Face no especifican licencia) |
 | Formato de pesos | No son pesos de modelo. Cada `epoch_NN/artifact.tgz` contiene 128 ficheros con K/V de FlashAttention y estados GDN recapturados, más un manifiesto CAPTURE |
 | Tamaño del repositorio | 9,9 GB |
 | Autor | Zhongzhu |
@@ -78,7 +78,7 @@ No disponible. La información proporcionada no identifica modelos comparables. 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zhongzhu/mixswe-q27 | 27B (según denominación) | Tarea 4x1024 en los artefactos | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
+| Zhongzhu/mixswe-q27 | 27B (según denominación) | Tarea 4x1024 en los artefactos | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -97,6 +97,6 @@ No disponible. La información proporcionada no identifica modelos comparables. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zhongzhu/mixswe-q27
+- Hugging Face: https://huggingface.co/Zhongzhu/mixswe-q27
 - La model card no incluye enlaces a papers, blogs, repositorios de código ni demos; solo menciona el código de entrenamiento «main@927ddead-era xorl» sin URL.
 - Los resultados de búsqueda web no devolvieron enlaces relevantes: únicamente páginas genéricas de Microsoft (microsoft.com, account.microsoft.com, myaccount.microsoft.com, microsoft365, Wikipedia) sin relación alguna con el modelo.

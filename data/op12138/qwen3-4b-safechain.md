@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OP12138/qwen3-4b-safechain es un fine-tune completo (full fine-tuning) del modelo Qwen/Qwen3-4B-Thinking-2507, realizado con el framework LlamaFactory sobre un dataset denominado "safechain". El autor, OP12138, no ha publicado documentación adicional en la model card, que es autogenerada por el Trainer de HuggingFace, por lo que la información disponible sobre el dataset, las capacidades específicas y los resultados de entrenamiento es prácticamente nula.
+OP12138/qwen3-4b-safechain es un fine-tune completo (full fine-tuning) del modelo Qwen/Qwen3-4B-Thinking-2507, realizado con el framework LlamaFactory sobre un dataset denominado "safechain". El autor, OP12138, no ha publicado documentación adicional en la model card, que es autogenerada por el Trainer de Hugging Face, por lo que la información disponible sobre el dataset, las capacidades específicas y los resultados de entrenamiento es prácticamente nula.
 
 El modelo base, Qwen3-4B-Thinking-2507, es un transformer de 4.022 millones de parámetros con capacidad de razonamiento explícito (modo thinking), desarrollado por Alibaba. Este fine-tune hereda la arquitectura y el tokenizador del base, pero no se han declarado métricas de evaluación ni detalles sobre el proceso de ajuste más allá de los hiperparámetros. Su relevancia actual es limitada por la falta de transparencia, aunque podría ser útil como punto de partida para quienes trabajen con datasets de seguridad en cadenas de suministro (posible interpretación de "safechain"), siempre que se validen sus capacidades de forma independiente.
 
@@ -76,6 +76,6 @@ No se dispone de comparativas publicadas para este fine-tune. Como referencia, s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OP12138/qwen3-4b-safechain
+- Modelo en Hugging Face: https://huggingface.co/OP12138/qwen3-4b-safechain
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
 - Framework de entrenamiento (LlamaFactory): https://github.com/hiyouga/LLaMA-Factory

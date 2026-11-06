@@ -66,9 +66,9 @@ La model card no incluye métricas cuantitativas (FVD, PSNR, SSIM, precisión de
 
 | Modelo | Tipo | Base | Contexto / fotogramas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| phygenhand-goal-force-hot3d-controlnet | ControlNet vídeo | Wan2.2-I2V-A14B | 81 fotogramas, 832×480 | no disponible | HuggingFace |
-| stabilityai/stable-diffusion-3.5-controlnets | ControlNet imagen | SD 3.5 | imagen fija | Stability Community | HuggingFace |
-| lllyasviel/ControlNet | ControlNet imagen | Stable Diffusion 1.5 | imagen fija | Apache 2.0 (según repositorio original) | HuggingFace |
+| phygenhand-goal-force-hot3d-controlnet | ControlNet vídeo | Wan2.2-I2V-A14B | 81 fotogramas, 832×480 | no disponible | Hugging Face |
+| stabilityai/stable-diffusion-3.5-controlnets | ControlNet imagen | SD 3.5 | imagen fija | Stability Community | Hugging Face |
+| lllyasviel/ControlNet | ControlNet imagen | Stable Diffusion 1.5 | imagen fija | Apache 2.0 (según repositorio original) | Hugging Face |
 
 No se dispone de información sobre otros adaptadores ControlNet específicos para modelos de imagen-a-vídeo comparables en la documentación proporcionada; la comparativa se limita a ControlNets de imagen, que operan en un dominio distinto.
 
@@ -86,7 +86,7 @@ No se dispone de información sobre otros adaptadores ControlNet específicos pa
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/fesvhtr/phygenhand-goal-force-hot3d-controlnet
+- Hugging Face del modelo: https://huggingface.co/fesvhtr/phygenhand-goal-force-hot3d-controlnet
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
 - Modelo del que parte el ajuste: https://huggingface.co/brown-palm/goal-force
 - Dataset HOT3D: https://huggingface.co/datasets/bop-benchmark/hot3d

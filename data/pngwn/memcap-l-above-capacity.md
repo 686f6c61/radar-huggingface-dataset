@@ -78,9 +78,9 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pngwn/memcap-l-above-capacity
+- Modelo en Hugging Face: https://huggingface.co/pngwn/memcap-l-above-capacity
 - Dataset de entrenamiento: https://huggingface.co/datasets/pngwn/memcap-random-data
 - Repositorio de resultados: https://huggingface.co/datasets/pngwn/memcap-results
 - Repositorio de ejecuciones (checkpoints): https://huggingface.co/pngwn/memcap-runs
 - Artículo original: https://arxiv.org/abs/2505.24832
-- Perfil del autor en HuggingFace: https://huggingface.co/pngwn
+- Perfil del autor en Hugging Face: https://huggingface.co/pngwn

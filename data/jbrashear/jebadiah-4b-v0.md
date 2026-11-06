@@ -108,11 +108,11 @@ Referencia comparativa aportada por el propio autor: sobre los mismos subconjunt
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jebadiah-4b-v0 | 4B (base) + LoRA | no disponible | 73,0 macro en Nimble (scorer propio); 87,7 PubMedQA; 68,7 Banking77 | apache-2.0 | HuggingFace, via AINode |
-| jbrashear/jebadiah-9b-v0 | 9B (base) + LoRA | no disponible | No disponible en esta informacion | no disponible | HuggingFace |
+| jebadiah-4b-v0 | 4B (base) + LoRA | no disponible | 73,0 macro en Nimble (scorer propio); 87,7 PubMedQA; 68,7 Banking77 | apache-2.0 | Hugging Face, via AINode |
+| jbrashear/jebadiah-9b-v0 | 9B (base) + LoRA | no disponible | No disponible en esta informacion | no disponible | Hugging Face |
 | Nimble-9B | 9B | no disponible | 74,8 macro en Nimble (scorer de Bespoke) | no disponible | Tabla publicada por Bespoke |
 | Jev | no disponible | no disponible | 76,0 macro en Nimble (scorer de Bespoke) | no disponible | Tabla publicada por Bespoke |
-| Qwen/Qwen3.5-4B-Base sin entrenar | 4B | no disponible | 65,7 macro en Nimble (scorer propio) | no disponible | HuggingFace |
+| Qwen/Qwen3.5-4B-Base sin entrenar | 4B | no disponible | 65,7 macro en Nimble (scorer propio) | no disponible | Hugging Face |
 
 La comparación directa en los subconjuntos de Nimble sugiere que el adaptador aporta 7,3 puntos de exactitud macro sobre el modelo base sin entrenar, pero queda por debajo de las cifras publicadas para Nimble-9B (-1,8) y Jev (-3,0) medidas con otro scorer, por lo que la comparación no es estrictamente homogénea.
 
@@ -132,7 +132,7 @@ La comparación directa en los subconjuntos de Nimble sugiere que el adaptador a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jbrashear/jebadiah-4b-v0
+- Modelo en Hugging Face: https://huggingface.co/jbrashear/jebadiah-4b-v0
 - Modelo hermano de 9B: https://huggingface.co/jbrashear/jebadiah-9b-v0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/LocalLLaMA/typed-decisions

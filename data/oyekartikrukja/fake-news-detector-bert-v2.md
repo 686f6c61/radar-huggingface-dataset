@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `oyekartikrukja/fake-news-detector-bert-v2` es un clasificador de texto basado en la arquitectura BERT, publicado en HuggingFace por el usuario oyekartikrukja. Su nombre y su etiqueta de arquitectura indican que esta ajustado para la deteccion de noticias falsas (fake news detection), una tarea de clasificacion binaria o multiclase sobre texto periodistico. El repositorio cuenta con 12 descargas y 0 likes en el momento de redactar esta ficha, lo que sugiere un modelo de uso personal o experimental mas que un artefacto con adopcion comunitaria.
+El modelo `oyekartikrukja/fake-news-detector-bert-v2` es un clasificador de texto basado en la arquitectura BERT, publicado en Hugging Face por el usuario oyekartikrukja. Su nombre y su etiqueta de arquitectura indican que esta ajustado para la deteccion de noticias falsas (fake news detection), una tarea de clasificacion binaria o multiclase sobre texto periodistico. El repositorio cuenta con 12 descargas y 0 likes en el momento de redactar esta ficha, lo que sugiere un modelo de uso personal o experimental mas que un artefacto con adopcion comunitaria.
 
 El dato mas relevante disponible es el numero de parametros reales leido de los pesos en safetensors: 109.483.778, aproximadamente 109 millones. Esa cifra es coherente con la configuracion de BERT-base (unos 110 millones de parametros), por lo que es razonable asumir que se trata de un fine-tuning de un checkpoint BERT-base, aunque la ficha del repositorio no confirma el checkpoint de partida. El tamano del repositorio es de 0,4 GB, consistente con pesos en precision completa o media para ese numero de parametros.
 
@@ -63,7 +63,7 @@ Las cifras siguientes son estimaciones derivadas del recuento de parametros (109
 - VRAM estimada para inferencia: menos de 1 GB en FP16 con lotes pequenos, incluyendo overhead del runtime; en torno a 1-2 GB en FP32.
 - GPU recomendadas: cualquier GPU moderna sirve, incluida una NVIDIA GTX 1650, RTX 3060, RTX 4090, T4, L4, A10, A100 o H100. El modelo esta enormemente sobredimensionado para este hardware, que queda infrautilizado.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo con al menos 2 GB de VRAM, e incluso en CPU con latencias aceptables para inferencia por lotes.
-- Opciones de despliegue: transformers con PyTorch o TensorFlow, ONNX Runtime, TorchScript, HuggingFace Text Embeddings Inference, y servidores de inferencia clasicos. vLLM y llama.cpp no son las herramientas naturales para un encoder BERT de clasificacion.
+- Opciones de despliegue: transformers con PyTorch o TensorFlow, ONNX Runtime, TorchScript, Hugging Face Text Embeddings Inference, y servidores de inferencia clasicos. vLLM y llama.cpp no son las herramientas naturales para un encoder BERT de clasificacion.
 - Latencia y throughput estimados: no disponibles. En GPU moderna con batching, un encoder de 109 millones de parametros suele procesar cientos o miles de secuencias cortas por segundo, pero no hay mediciones publicadas para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -72,10 +72,10 @@ La comparativa se establece con encoders de tamano comparable de uso comun. Los 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oyekartikrukja/fake-news-detector-bert-v2 | 109,5 M | no disponible | Clasificacion de noticias falsas | no disponible | HuggingFace, safetensors |
-| BERT-base uncased | ~110 M | 512 tokens | Proposito general (encoder) | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| RoBERTa-base | ~125 M | 512 tokens | Proposito general (encoder) | MIT | HuggingFace, ampliamente desplegado |
-| DeBERTa-v3-base | ~184 M (86 M de backbone + embeddings) | 512 tokens | Proposito general (encoder) | MIT | HuggingFace, ampliamente desplegado |
+| oyekartikrukja/fake-news-detector-bert-v2 | 109,5 M | no disponible | Clasificacion de noticias falsas | no disponible | Hugging Face, safetensors |
+| BERT-base uncased | ~110 M | 512 tokens | Proposito general (encoder) | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| RoBERTa-base | ~125 M | 512 tokens | Proposito general (encoder) | MIT | Hugging Face, ampliamente desplegado |
+| DeBERTa-v3-base | ~184 M (86 M de backbone + embeddings) | 512 tokens | Proposito general (encoder) | MIT | Hugging Face, ampliamente desplegado |
 
 No se dispone de datos de rendimiento del modelo objeto de esta ficha que permitan una comparacion cuantitativa con las alternativas. A igualdad de tarea, un fine-tuning propio de BERT-base o DeBERTa-v3-base sobre un dataset de desinformacion documentado seria una alternativa mas trazable, ya que permite controlar los datos de entrenamiento y las condiciones de licencia.
 
@@ -93,6 +93,6 @@ No se dispone de datos de rendimiento del modelo objeto de esta ficha que permit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oyekartikrukja/fake-news-detector-bert-v2
+- Modelo en Hugging Face: https://huggingface.co/oyekartikrukja/fake-news-detector-bert-v2
 
 No se han encontrado otros enlaces (paper, blog, repositorio de codigo o demo) en la informacion disponible.

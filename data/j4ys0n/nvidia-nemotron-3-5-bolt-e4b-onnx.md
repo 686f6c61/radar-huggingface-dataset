@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/j4ys0n/NVIDIA-Nemotron-3.5-Bolt-E4B-ONNX
+- Repositorio Hugging Face: https://huggingface.co/j4ys0n/NVIDIA-Nemotron-3.5-Bolt-E4B-ONNX
 - Modelo base BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16/tree/49843eed8db1f1c616c47af75cfd36e07aec0667
 - Plantilla de grafo (Apache-2.0): https://huggingface.co/onnx-community/gemma-4-E4B-it-ONNX/tree/2b6d2e26a962f70a33da8f7cd81e1afdd8d9cfb2
 - Referencia de cuantización de texto: https://huggingface.co/RASMUS/NVIDIA-Nemotron-3.5-Bolt-E4B-ONNX/tree/93f687c0d014d9da0d2a7bda9b82420841e83565

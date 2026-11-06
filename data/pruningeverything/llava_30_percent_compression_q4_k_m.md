@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llava_30_percent_compression_Q4_K_M` es una variante podada y cuantizada del modelo multimodal LLaVA, publicada por el usuario PruningEverything en HuggingFace. El nombre indica dos transformaciones encadenadas: una compresion del 30 por ciento (presumiblemente mediante poda estructurada o no estructurada del modelo original) y una cuantizacion posterior en formato GGUF con el nivel Q4_K_M, orientada a inferencia en CPU o GPU con requisitos de memoria reducidos.
+`llava_30_percent_compression_Q4_K_M` es una variante podada y cuantizada del modelo multimodal LLaVA, publicada por el usuario PruningEverything en Hugging Face. El nombre indica dos transformaciones encadenadas: una compresion del 30 por ciento (presumiblemente mediante poda estructurada o no estructurada del modelo original) y una cuantizacion posterior en formato GGUF con el nivel Q4_K_M, orientada a inferencia en CPU o GPU con requisitos de memoria reducidos.
 
 El repositorio declara 4.557.164.544 parametros totales en pesos safetensors y un tamano de repositorio de 4,7 GB, coherente con un modelo de aproximadamente 4,5 mil millones de parametros cuantizado a 4 bits. La model card publicada es practicamente vacia: solo contiene el campo de licencia, sin informacion sobre arquitectura, datos de entrenamiento, idiomas o procedimiento de compresion.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 3,5-4,5 GB con Q4_K_M (4,7 GB de repo incluye metadatos y posiblemente el proyector visual); con overhead de contexto, prever 5-6 GB.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 para mayor throughput; A100/H100 no justificadas por tamano, salvo despliegue por lotes.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU con 6 GB o mas de VRAM; tambien en CPU con 8-16 GB de RAM.
-- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con la infraestructura de endpoints de HuggingFace. vLLM y TGI no soportan GGUF de forma nativa para multimodal, por lo que no se recomiendan.
+- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con la infraestructura de endpoints de Hugging Face. vLLM y TGI no soportan GGUF de forma nativa para multimodal, por lo que no se recomiendan.
 - Latencia y throughput: no disponibles; dependen del hardware y de si la parte visual se ejecuta en CPU o GPU.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ La comparativa es orientativa: el modelo comprimido no documenta su contexto ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PruningEverything/llava_30_percent_compression_Q4_K_M
+- Modelo en Hugging Face: https://huggingface.co/PruningEverything/llava_30_percent_compression_Q4_K_M
 - Repositorio LLaVA (referencia del modelo base): https://github.com/haotian-liu/LLaVA
 - Paper LLaVA: https://arxiv.org/abs/2304.08485
 - llama.cpp (runtime GGUF): https://github.com/ggerganov/llama.cpp

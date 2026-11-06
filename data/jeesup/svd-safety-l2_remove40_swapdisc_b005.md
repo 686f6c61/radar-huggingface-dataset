@@ -94,7 +94,7 @@ La comparacion cuantitativa con alternativas no puede completarse: la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_b005
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_b005
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper de SVD-LLM (metodo de compresion citado en la model card): no disponible en la informacion proporcionada
 - Repositorio de codigo del autor: no disponible en la informacion proporcionada

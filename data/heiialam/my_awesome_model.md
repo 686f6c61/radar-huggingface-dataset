@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Heiialam/my_awesome_model` es un ajuste fino (fine-tuning) de `distilbert/distilbert-base-uncased`, un transformer encoder de tipo DistilBERT, orientado a tareas de clasificación de texto. Ha sido entrenado con el framework `transformers` de HuggingFace y publicado bajo licencia Apache 2.0. El modelo cuenta con 66.955.010 parámetros y un tamaño de repositorio de 0,5 GB, con pesos en formato `safetensors`.
+El modelo `Heiialam/my_awesome_model` es un ajuste fino (fine-tuning) de `distilbert/distilbert-base-uncased`, un transformer encoder de tipo DistilBERT, orientado a tareas de clasificación de texto. Ha sido entrenado con el framework `transformers` de Hugging Face y publicado bajo licencia Apache 2.0. El modelo cuenta con 66.955.010 parámetros y un tamaño de repositorio de 0,5 GB, con pesos en formato `safetensors`.
 
 Este modelo resuelve problemas de clasificación de texto (por ejemplo, análisis de sentimiento, detección de spam o categorización de documentos) partiendo de una arquitectura ligera y eficiente. Su relevancia radica en que DistilBERT ofrece un equilibrio entre rendimiento y coste computacional, siendo adecuado para entornos con recursos limitados. Sin embargo, la información disponible es escasa: la model card no especifica el dataset de entrenamiento, los idiomas soportados ni los casos de uso previstos, y el índice de benchmarks oficial está vacío.
 
@@ -23,7 +23,7 @@ Este modelo resuelve problemas de clasificación de texto (por ejemplo, análisi
 
 El modelo se basa en DistilBERT, una versión destilada de BERT que conserva el 97% de su rendimiento con un 40% menos de parámetros. La arquitectura es un transformer encoder con 6 capas, 12 cabezas de atención y una dimensión oculta de 768. El ajuste fino se realizó sobre un dataset desconocido, con los siguientes hiperparámetros: learning rate de 2e-05, batch size de 16, optimizador AdamW (fused), scheduler lineal y 2 épocas. No se especifica si se usó RLHF, DPO u otras técnicas de alineación; el proceso parece ser un fine-tuning supervisado estándar.
 
-La model card indica que el modelo fue generado automáticamente por el `Trainer` de HuggingFace, lo que sugiere que el autor no documentó detalles adicionales sobre la composición del dataset ni sobre innovaciones técnicas específicas. No hay información sobre decodificación especulativa, atención lineal u otras mejoras.
+La model card indica que el modelo fue generado automáticamente por el `Trainer` de Hugging Face, lo que sugiere que el autor no documentó detalles adicionales sobre la composición del dataset ni sobre innovaciones técnicas específicas. No hay información sobre decodificación especulativa, atención lineal u otras mejoras.
 
 ## Capacidades
 
@@ -60,7 +60,7 @@ Estos valores corresponden a un dataset de validación no especificado y no son 
 - VRAM estimada para inferencia: al ser un modelo de ~67M parámetros, en fp32 ocupa aproximadamente 268 MB. Con cuantización a int8 o int4, el uso de VRAM puede reducirse a menos de 100 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Modelos como NVIDIA T4, GTX 1660, RTX 2060 o superiores funcionan sin problemas. También es viable en CPU para inferencia por lotes pequeños.
 - Compatibilidad con GPU de consumo: sí, cabe en cualquier GPU consumer moderna (RTX 3060, RTX 4090, etc.) e incluso en dispositivos con poca memoria.
-- Opciones de despliegue: compatible con HuggingFace `transformers`, `text-embeddings-inference` (según los tags), y puede exportarse a ONNX o TensorRT. También se puede servir con vLLM o TGI, aunque al ser un modelo encoder, es más común usar `transformers` o `sentence-transformers` para embeddings.
+- Opciones de despliegue: compatible con Hugging Face `transformers`, `text-embeddings-inference` (según los tags), y puede exportarse a ONNX o TensorRT. También se puede servir con vLLM o TGI, aunque al ser un modelo encoder, es más común usar `transformers` o `sentence-transformers` para embeddings.
 - Latencia y throughput: no se dispone de datos medidos. En una GPU T4, la inferencia de una secuencia de 128 tokens suele tardar menos de 10 ms, pero esto es una estimación general, no un dato oficial.
 
 ## Comparativa con modelos similares
@@ -84,6 +84,6 @@ El modelo es un fine-tune de DistilBERT, por lo que su arquitectura y tamaño so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Heiialam/my_awesome_model
+- Modelo en Hugging Face: https://huggingface.co/Heiialam/my_awesome_model
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Documentación de Transformers: https://huggingface.co/docs/transformers/index

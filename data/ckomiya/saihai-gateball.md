@@ -6,7 +6,7 @@ Saihai (采配) es un agente de IA clásica para gateball desarrollado por ckomi
 
 Los 31 pesos de esa función de evaluación se aprendieron por self-play con sep-CMA-ES (CMA-ES de covarianza diagonal), una estrategia evolutiva sin derivadas. Sobre esa capa aprendida se añaden reglas explícitas de "kantoku" (entrenador) definidas a mano: cuándo llevar una bola al poste (agari), cómo acercar una bola lejana encadenando toques (tsunagi), gestión de los últimos turnos y prevención de dejar bolas expuestas.
 
-El repositorio de HuggingFace aloja únicamente los pesos en JSON plano (`saihai-v1.4.json` y `attackTable.json`) y esta tarjeta; el código (motor de reglas, física, planificador, herramientas de entrenamiento y medición) vive en GitHub. Es relevante como referencia reproducible de optimización de políticas en dominios de juego con fitness ruidoso y presupuesto de parámetros muy bajo, no como modelo generativo.
+El repositorio de Hugging Face aloja únicamente los pesos en JSON plano (`saihai-v1.4.json` y `attackTable.json`) y esta tarjeta; el código (motor de reglas, física, planificador, herramientas de entrenamiento y medición) vive en GitHub. Es relevante como referencia reproducible de optimización de políticas en dominios de juego con fitness ruidoso y presupuesto de parámetros muy bajo, no como modelo generativo.
 
 ## Especificaciones tecnicas
 
@@ -80,7 +80,7 @@ No se dispone de datos de terceros comparables en la información proporcionada.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| saihai-v1.4 | 31 genes aprendidos (45 valores en el JSON) | no aplica | 46,5 % en h2h contra v1.3; 84,5 % contra rival humanoide; 98 % en `behavior`; 55–60 ms/golpe | MIT | Pesos en HuggingFace, código en GitHub |
+| saihai-v1.4 | 31 genes aprendidos (45 valores en el JSON) | no aplica | 46,5 % en h2h contra v1.3; 84,5 % contra rival humanoide; 98 % en `behavior`; 55–60 ms/golpe | MIT | Pesos en Hugging Face, código en GitHub |
 | saihai-v1.3 | no disponible | no aplica | 53,5 % en h2h contra v1.4 (85–16–99 a favor de v1.3); sin medición independiente publicada en esta información | MIT (según el linaje descrito) | Pesos referenciados como versión anterior; repositorio no indicado |
 | Otros agentes de gateball o de juego clásico | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,14 +94,14 @@ No se dispone de datos de terceros comparables en la información proporcionada.
 - `attackTable.json` está precalculada para dos perfiles de rival (humanoide y CPU) sobre una rejilla de distancias, ángulos y potencias; frente a rivales fuera de esa rejilla o con otros errores de ejecución, las probabilidades de desenlace dejan de ser válidas.
 - El fitness es ruidoso por diseño (azar en la hierba y errores de ejecución), de modo que las diferencias pequeñas entre versiones caen dentro del intervalo de confianza y no deben interpretarse como señal.
 - El entrenamiento se hizo con perfiles de "certeza" sorteados para generalizar entre equipos; no hay garantía de comportamiento fuera de ese rango de error de ejecución.
-- Sin validación externa: 0 descargas y 0 likes en HuggingFace en el momento de la consulta, y una sola fuente (el propio autor) para todos los resultados.
+- Sin validación externa: 0 descargas y 0 likes en Hugging Face en el momento de la consulta, y una sola fuente (el propio autor) para todos los resultados.
 - La model card disponible está truncada en la sección de limitaciones (corta en "**C"), por lo que pueden existir advertencias adicionales del autor no recogidas aquí.
 - Licencia MIT: permite uso comercial, modificación y redistribución con atribución y sin garantía. Conviene conservar el aviso de copyright y el texto de la licencia al redistribuir los pesos.
 - Sesgos sociales o de alucinación: no aplica, al no tratar texto ni generar contenido lingüístico. El riesgo equivalente es el sesgo estratégico de las reglas fijas y de la función de evaluación.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ckomiya/saihai-gateball
+- Modelo en Hugging Face: https://huggingface.co/ckomiya/saihai-gateball
 - Repositorio de código (motor de reglas, física, planificador, entrenamiento y medición): https://github.com/ckomiya/saihai-gateball
 - Historial de entrenamiento y notas honestas sobre cada cambio, incluidos los que no ayudaron (en español): https://github.com/ckomiya/saihai-gateball/blob/main/TRAINING.md
 - README en español: https://huggingface.co/ckomiya/saihai-gateball/blob/main/README.es.md

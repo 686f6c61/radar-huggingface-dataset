@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`geolip-rotary-experiments` es un repositorio de pesos y registros de resultados publicado por el usuario AbstractPhil en HuggingFace. No es un modelo entrenado para uso general, sino el material crudo de un día de experimentos (2026-10-22) sobre codificaciones posicionales rotatorias (RoPE) utilizadas como direcciones estructurales: la fase rotatoria de un token no depende solo de su índice en la secuencia, sino de su posición dentro de una estructura fija (compartimento y ranura). Los pesos corresponden a piezas pequenas entrenadas por separado y fusionadas en un núcleo congelado tras una compuerta de amplitud que lee esa dirección.
+`geolip-rotary-experiments` es un repositorio de pesos y registros de resultados publicado por el usuario AbstractPhil en Hugging Face. No es un modelo entrenado para uso general, sino el material crudo de un día de experimentos (2026-10-22) sobre codificaciones posicionales rotatorias (RoPE) utilizadas como direcciones estructurales: la fase rotatoria de un token no depende solo de su índice en la secuencia, sino de su posición dentro de una estructura fija (compartimento y ranura). Los pesos corresponden a piezas pequenas entrenadas por separado y fusionadas en un núcleo congelado tras una compuerta de amplitud que lee esa dirección.
 
 El repositorio contiene 475 state dicts de PyTorch (1,7 GB) y las tablas de resultados de las fases A a F4 y de las pruebas S1 a S3L del autor. Salvo excepciones indicadas, todos los modelos son transformers causales de 4 capas, anchura 128, 4 cabezas y contexto 256, entrenados desde cero sobre tareas de secuencia sintéticas, con dos semillas por resultado y criterios de aceptación fijados antes de cada ejecución.
 
-Su relevancia es de investigación, no de producto: documenta resultados reproducibles sobre capacidad de direccionamiento, fugas entre miembros fusionados, coste computacional del rotary y formas de solicitud de dirección. No incluye tokenizer, configuración de HuggingFace ni código de entrenamiento, por lo que no puede cargarse con `AutoModel` ni servirse con herramientas estándar de inferencia.
+Su relevancia es de investigación, no de producto: documenta resultados reproducibles sobre capacidad de direccionamiento, fugas entre miembros fusionados, coste computacional del rotary y formas de solicitud de dirección. No incluye tokenizer, configuración de Hugging Face ni código de entrenamiento, por lo que no puede cargarse con `AutoModel` ni servirse con herramientas estándar de inferencia.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 - GPU recomendadas: ninguna en particular. No se requiere A100, H100 ni RTX 4090; una GPU integrada o una CPU moderna bastan para cargar y evaluar los pesos.
 - Cabe en GPU consumer: sí, en cualquier modelo con al menos 1-2 GB de memoria libre, y también en CPU.
 - Almacenamiento: 1,7 GB en disco para los 475 state dicts; prever espacio adicional para los registros JSON y las tablas.
-- Opciones de despliegue: carga manual de los state dicts con PyTorch (`torch.load`), ya que el repositorio no incluye `config.json`, tokenizer ni pipeline de HuggingFace. No es compatible con vLLM, llama.cpp, Ollama ni TGI en el estado actual.
+- Opciones de despliegue: carga manual de los state dicts con PyTorch (`torch.load`), ya que el repositorio no incluye `config.json`, tokenizer ni pipeline de Hugging Face. No es compatible con vLLM, llama.cpp, Ollama ni TGI en el estado actual.
 - Latencia y throughput: no se publica throughput absoluto ni latencia por token. Las únicas cifras son relativas al coste del rotary dentro de un bloque (3,7-5,3 % a 4k tokens, 1,5 % a 64k; el anclado cuesta 1,24-1,27x a 4k y aproximadamente lo mismo una vez compilado).
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ No se han identificado en la información disponible modelos comparables de la m
 | Contexto | 256 en entrenamiento; mediciones hasta 64k | no disponible |
 | Rendimiento | resultados internos sobre tareas sinteticas (ver tabla anterior) | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | pesos y tablas en HuggingFace, sin codigo de entrenamiento | no disponible |
+| Disponibilidad | pesos y tablas en Hugging Face, sin codigo de entrenamiento | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -104,5 +104,5 @@ No se han identificado en la información disponible modelos comparables de la m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AbstractPhil/geolip-rotary-experiments
+- Hugging Face: https://huggingface.co/AbstractPhil/geolip-rotary-experiments
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios de código o demos) en la búsqueda web realizada; los resultados devueltos no guardan relación con el modelo y se han descartado.

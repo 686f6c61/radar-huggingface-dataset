@@ -86,7 +86,7 @@ No se conocen en la informacion disponible alternativas de otros desarrolladores
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/WalrusFaceHugger/SiamGPT-32B-Q8_0-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/WalrusFaceHugger/SiamGPT-32B-Q8_0-GGUF
 - Modelo base: https://huggingface.co/siamaids/SiamGPT-32B
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

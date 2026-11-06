@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Idkblaaa/deephat-fixed` es un modelo de generacion de texto publicado en HuggingFace por el usuario Idkblaaa, con 7.615.616.512 parametros (7,62 B) almacenados en safetensors y un repositorio de 5,6 GB. La etiqueta de arquitectura del repositorio es `qwen2`, lo que indica que se trata de un transformer decoder-only de tipo causal construido sobre la familia Qwen2, y la etiqueta `unsloth` apunta a que el ajuste fino se realizo con esa libreria de entrenamiento optimizado. No hay informacion publicada sobre el proceso de entrenamiento, el dataset utilizado ni los hiperparametros.
+`Idkblaaa/deephat-fixed` es un modelo de generacion de texto publicado en Hugging Face por el usuario Idkblaaa, con 7.615.616.512 parametros (7,62 B) almacenados en safetensors y un repositorio de 5,6 GB. La etiqueta de arquitectura del repositorio es `qwen2`, lo que indica que se trata de un transformer decoder-only de tipo causal construido sobre la familia Qwen2, y la etiqueta `unsloth` apunta a que el ajuste fino se realizo con esa libreria de entrenamiento optimizado. No hay informacion publicada sobre el proceso de entrenamiento, el dataset utilizado ni los hiperparametros.
 
-El modelo se distribuye tambien en una variante cuantizada a 4 bits mediante bitsandbytes, segun las etiquetas del repositorio, y la model card es la plantilla automatica de HuggingFace sin cumplimentar: todos los campos figuran como "[More Information Needed]". Esto incluye la licencia, los idiomas soportados, las fuentes de datos y los resultados de evaluacion, por lo que la ficha solo puede documentar los datos verificables del repositorio.
+El modelo se distribuye tambien en una variante cuantizada a 4 bits mediante bitsandbytes, segun las etiquetas del repositorio, y la model card es la plantilla automatica de Hugging Face sin cumplimentar: todos los campos figuran como "[More Information Needed]". Esto incluye la licencia, los idiomas soportados, las fuentes de datos y los resultados de evaluacion, por lo que la ficha solo puede documentar los datos verificables del repositorio.
 
 El nombre "deephat-fixed" sugiere una relacion con la serie DeepHat, un conjunto de modelos orientados a ciberseguridad ofensiva y defensiva desarrollado por Kindo (anteriormente WhiteRabbitNeo), cuya version DeepHat-V1-7B se describe en fuentes externas como un ajuste fino de Qwen2.5-Coder-7B. Sin embargo, no existe ninguna confirmacion en el repositorio analizado de que este sea un derivado oficial de esa serie, por lo que esa vinculacion debe tratarse como una hipotesis no verificada.
 
@@ -31,7 +31,7 @@ No se dispone de ningun dato sobre el entrenamiento: ni el numero de tokens, ni 
 - Generacion de texto conversacional: las etiquetas `text-generation` y `conversational` indican soporte de dialogo multi-turno, sin que se detalle el formato de plantilla empleado.
 - Generacion de codigo: verosimil si el modelo deriva de la familia Qwen2.5-Coder, aunque no esta confirmado en el repositorio analizado.
 - Inferencia cuantizada: el repositorio declara compatibilidad con cuantizacion de 4 bits mediante bitsandbytes, lo que permite ejecucion en GPUs con menos memoria.
-- Compatibilidad con text-generation-inference y endpoints: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que puede desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad con text-generation-inference y endpoints: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que puede desplegarse en Hugging Face Inference Endpoints.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
@@ -40,7 +40,7 @@ No se dispone de ningun dato sobre el entrenamiento: ni el numero de tokens, ni 
 ## Casos de uso
 
 - Prototipado de asistentes conversacionales: al ser un modelo denso de 7,62 B y distribuido en safetensors, puede cargarse con `transformers` en una unica GPU y usarse para validar plantillas de prompt y flujos de dialogo antes de escalar a modelos mayores.
-- Despliegue en endpoints gestionados: la etiqueta `endpoints_compatible` permite publicarlo en HuggingFace Inference Endpoints sin adaptaciones, util para demos internas o pruebas de concepto con poco trafico.
+- Despliegue en endpoints gestionados: la etiqueta `endpoints_compatible` permite publicarlo en Hugging Face Inference Endpoints sin adaptaciones, util para demos internas o pruebas de concepto con poco trafico.
 - Asistencia de codigo en entornos locales: si la ascendencia Qwen2.5-Coder se confirma, encaja en asistentes de autocompletado dentro del IDE ejecutados en hardware de consumo gracias a la cuantizacion de 4 bits.
 - Generacion de texto en GPU de gama media: con 4 bits, el peso del modelo ronda los 4-5 GB, por lo que es viable en tarjetas como RTX 3060 de 12 GB o RTX 4070 para tareas de generacion por lotes de documentos cortos.
 - Experimentacion academica con fine-tuning: su tamano y su formato de pesos estandar lo hacen adecuado como punto de partida para LoRA/QLoRA con Unsloth en un unico nodo, sin necesidad de infraestructura multi-GPU.
@@ -58,22 +58,22 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - GPU recomendadas para FP16: A100 40 GB, H100 80 GB, L40S 48 GB, RTX 4090 24 GB o A6000 48 GB.
 - GPU recomendadas para 4 bits: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090, Tesla T4 16 GB.
 - Cabe en GPU de consumo: si, en configuracion de 4 bits cabe con holgura en cualquier GPU con 8 GB o mas de VRAM; en FP16 requiere al menos 20 GB, por lo que solo encaja en RTX 3090/4090 o superiores.
-- Opciones de despliegue: `transformers` con bitsandbytes (soportado de forma nativa), text-generation-inference y HuggingFace Inference Endpoints (segun etiquetas). vLLM, llama.cpp, Ollama y TGI con pesos GGUF no estan documentados para este repositorio y requeririan conversion previa.
+- Opciones de despliegue: `transformers` con bitsandbytes (soportado de forma nativa), text-generation-inference y Hugging Face Inference Endpoints (segun etiquetas). vLLM, llama.cpp, Ollama y TGI con pesos GGUF no estan documentados para este repositorio y requeririan conversion previa.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Idkblaaa/deephat-fixed | 7,62 B | no disponible | no disponible | HuggingFace, safetensors y 4 bits | Model card vacia, 0 descargas y 0 likes en el momento del analisis |
-| DeepHat/DeepHat-V1-7B | 7 B (clase) | no disponible en las fuentes consultadas | no disponible | HuggingFace, Deephat.ai, Kindo.ai | Ajuste fino de Qwen2.5-Coder-7B orientado a ciberseguridad ofensiva y defensiva |
-| Qwen2.5-Coder-7B | 7,6 B (clase) | no disponible en las fuentes consultadas | no disponible en las fuentes consultadas | HuggingFace | Modelo base de la familia Qwen2.5-Coder; ancestro probable de la serie DeepHat |
+| Idkblaaa/deephat-fixed | 7,62 B | no disponible | no disponible | Hugging Face, safetensors y 4 bits | Model card vacia, 0 descargas y 0 likes en el momento del analisis |
+| DeepHat/DeepHat-V1-7B | 7 B (clase) | no disponible en las fuentes consultadas | no disponible | Hugging Face, Deephat.ai, Kindo.ai | Ajuste fino de Qwen2.5-Coder-7B orientado a ciberseguridad ofensiva y defensiva |
+| Qwen2.5-Coder-7B | 7,6 B (clase) | no disponible en las fuentes consultadas | no disponible en las fuentes consultadas | Hugging Face | Modelo base de la familia Qwen2.5-Coder; ancestro probable de la serie DeepHat |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. La comparacion se limita a parametros, procedencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Model card inexistente: el repositorio contiene unicamente la plantilla automatica de HuggingFace, por lo que no hay declaracion de uso previsto, uso fuera de alcance ni recomendaciones del autor.
+- Model card inexistente: el repositorio contiene unicamente la plantilla automatica de Hugging Face, por lo que no hay declaracion de uso previsto, uso fuera de alcance ni recomendaciones del autor.
 - Licencia no disponible: sin licencia explicita no puede asumirse permiso para uso comercial. Cualquier despliegue en produccion requiere aclarar previamente los terminos con el autor.
 - Procedencia no verificada: no hay confirmacion de que el modelo derive de DeepHat-V1-7B ni de Qwen2.5-Coder-7B; la similitud de nombre es indiciaria pero no concluyente.
 - Riesgo de alucinacion: no evaluado. No se han publicado pruebas de veracidad, calibracion ni tasas de error factual.
@@ -86,8 +86,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Idkblaaa/deephat-fixed
-- DeepHat-V1-7B en HuggingFace: https://huggingface.co/DeepHat/DeepHat-V1-7B
+- Modelo en Hugging Face: https://huggingface.co/Idkblaaa/deephat-fixed
+- DeepHat-V1-7B en Hugging Face: https://huggingface.co/DeepHat/DeepHat-V1-7B
 - Mirror de DeepHat-V1-7B por el usuario Iarp: https://huggingface.co/Iarp/DeepHat-V1-7B
 - Ficha de seguridad del paquete en Socket: https://socket.dev/huggingface/package/deephat/deephat-v1-7b
 - Sitio oficial de Deep Hat: https://www.deephat.ai/

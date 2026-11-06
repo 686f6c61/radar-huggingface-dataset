@@ -6,7 +6,7 @@ Qwen3-Embedding-0.6B-LiteRT es la reautoría del modelo de embeddings de texto Q
 
 El modelo resuelve la mitad de recuperación de un pipeline RAG (embeddings de consulta y documentos, ranking por similitud coseno) sin servidor y sin fallback a CPU. La relevancia actual está en el despliegue on-device: búsqueda semántica local, privacidad de datos y latencia baja en móvil. La arquitectura es un transformer Qwen3 de 28 capas con 0,6 mil millones de parámetros, ventana de entrada fija de 128 tokens en esta exportación, pesos en fp16 y licencia Apache-2.0.
 
-La conversión incluye una innovación técnica destacable: un RMSNorm con normalización por máximo por fila para evitar el desbordamiento de fp16 en el flujo residual de las capas profundas, matemáticamente equivalente al original. Verificado en Pixel 8a con el 100 % de los nodos (3264/3264) en el delegado GPU y correlación de coseno de 0,9997 frente a la referencia fp32 de HuggingFace.
+La conversión incluye una innovación técnica destacable: un RMSNorm con normalización por máximo por fila para evitar el desbordamiento de fp16 en el flujo residual de las capas profundas, matemáticamente equivalente al original. Verificado en Pixel 8a con el 100 % de los nodos (3264/3264) en el delegado GPU y correlación de coseno de 0,9997 frente a la referencia fp32 de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, MTEB, etc.) en la
 | Galaxy S26 | LiteRT 2.2.0, NPU (QNN/HTP) | no disponible | 25,4 ms p50 |
 | Navegador Chromium 151, M4 Max | LiteRT.js 2.5.3, WebGPU | no disponible | no ejecutado |
 
-Paridad numérica: coseno de 0,9997 frente a la referencia fp32 de HuggingFace; ranking semántico correcto (consulta "What is the capital of China?" → "The capital of China is Beijing" con 0,77, documentos no relacionados por debajo de 0,1). Tamaño fp16 del grafo: 881 MB.
+Paridad numérica: coseno de 0,9997 frente a la referencia fp32 de Hugging Face; ranking semántico correcto (consulta "What is the capital of China?" → "The capital of China is Beijing" con 0,77, documentos no relacionados por debajo de 0,1). Tamaño fp16 del grafo: 881 MB.
 
 ## Requisitos de hardware
 
@@ -83,8 +83,8 @@ Paridad numérica: coseno de 0,9997 frente a la referencia fp32 de HuggingFace; 
 
 | Modelo | Parámetros | Contexto | Formato / despliegue | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-Embedding-0.6B-LiteRT (este) | 0,6 B | 128 tokens (forma fija) | `.tflite` LiteRT, GPU/NPU on-device | Apache-2.0 | HuggingFace, 58 descargas, 2 likes |
-| Qwen/Qwen3-Embedding-0.6B (base) | 0,6 B | no disponible en la información | safetensors, sentence-transformers | Apache-2.0 | HuggingFace |
+| Qwen3-Embedding-0.6B-LiteRT (este) | 0,6 B | 128 tokens (forma fija) | `.tflite` LiteRT, GPU/NPU on-device | Apache-2.0 | Hugging Face, 58 descargas, 2 likes |
+| Qwen/Qwen3-Embedding-0.6B (base) | 0,6 B | no disponible en la información | safetensors, sentence-transformers | Apache-2.0 | Hugging Face |
 | Otros modelos de embeddings pequeños (p. ej. familia MiniLM, BGE-small) | no disponible | no disponible | safetensors, ONNX, GGUF | no disponible | no disponible |
 
 La comparación de rendimiento de calidad con alternativas no está disponible: la model card solo aporta paridad numérica frente a la referencia fp32 del propio modelo base (coseno 0,9997), no resultados MTEB ni comparativas con otros embeddings.
@@ -104,7 +104,7 @@ La comparación de rendimiento de calidad con alternativas no está disponible: 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/litert-community/Qwen3-Embedding-0.6B-LiteRT
+- Hugging Face: https://huggingface.co/litert-community/Qwen3-Embedding-0.6B-LiteRT
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Registro de compatibilidad edge: https://github.com/john-rocky/edge-compat/blob/main/cards/qwen3-embedding-0.6b/CARD.md
 - Herramienta de medición LiteRT: https://ai.google.dev/edge/litert/models/measurement

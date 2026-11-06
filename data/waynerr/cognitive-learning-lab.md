@@ -18,7 +18,7 @@ La relevancia del proyecto es conceptual más que de rendimiento: propone una ar
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible (no se documentan cuantizaciones; el checkpoint se carga en precisión nativa) |
 | Idiomas soportados | No disponible (la model card está en inglés y chino, pero no declara idiomas del modelo) |
-| Licencia | Runtime: Apache-2.0. Pesos del modelo de propuesta (Laya en la revisión `55cf4c4e…`): Apache-2.0. Pesos de ModernBERT-large: Apache-2.0. Licencia del repo de HuggingFace: no disponible |
+| Licencia | Runtime: Apache-2.0. Pesos del modelo de propuesta (Laya en la revisión `55cf4c4e…`): Apache-2.0. Pesos de ModernBERT-large: Apache-2.0. Licencia del repo de Hugging Face: no disponible |
 | Formato de pesos | `model.safetensors` para el modelo de propuesta; el runtime no empaqueta pesos. Memoria en SQLite |
 
 ## Arquitectura y entrenamiento
@@ -71,7 +71,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 ## Limitaciones y advertencias
 
 - El repositorio tiene 0 descargas y 0 likes, y un tamaño de 0.0 GB: no contiene pesos, solo código y metadatos. Cualquier uso real requiere obtener el checkpoint de Laya por separado.
-- La licencia del repo de HuggingFace figura como no disponible; la del runtime es Apache-2.0, pero los pesos upstream conservan su propia licencia y no se empaquetan.
+- La licencia del repo de Hugging Face figura como no disponible; la del runtime es Apache-2.0, pero los pesos upstream conservan su propia licencia y no se empaquetan.
 - El estado declarado es `PR_M1_IMPLEMENTED_LOCALLY_ACCEPTED_REAL_MODEL_SMOKE_NOT_UPLOADED`: implementado y aceptado localmente, con smoke real ejecutado, pero no subido a ningún remoto. El registro autoritativo de publicación es `RELEASE-CHECKLIST.md` y `RELEASE-MANIFEST.json` (`publication.status`), no la model card.
 - Las verificaciones `source-consistency-v1` y `lineage-consistency-v1` no prueban que la afirmación citada sea verdadera en el mundo; solo comprueban consistencia con recibos y linaje. No deben interpretarse como garantía de veracidad.
 - El ámbito es una decisión acotada de tipo multiple-choice; no es un modelo generativo de propósito general ni se documentan contextos largos, multilingüismo o tool calling.
@@ -82,7 +82,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WayneRR/cognitive-learning-lab
+- Repositorio Hugging Face: https://huggingface.co/WayneRR/cognitive-learning-lab
 - Modelo de propuesta Laya: https://huggingface.co/convaiinnovations/laya (revisión `55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851`)
 - Encoder ModernBERT-large: https://huggingface.co/answerdotai/ModernBERT-large (revisión `45bb4654a4d5aaff24dd11d4781fa46d39bf8c13`)
 - Referencias internas citadas en la model card: `acceptance/PR-M1.md`, `SOURCE-INVENTORY.md`, `RELEASE-CHECKLIST.md`, `RELEASE-MANIFEST.json`, `requirements-lock.txt`, `LICENSE`, `sanitize.py`

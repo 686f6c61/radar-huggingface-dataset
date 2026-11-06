@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo entrenado para resolver el entorno CartPole-v1, publicado por el usuario yoga-0125 en HuggingFace. No se trata de un modelo de lenguaje ni de un modelo fundacional: es un checkpoint de una política neuronal entrenada con el algoritmo REINFORCE (policy gradient de Monte Carlo) mediante una implementacion propia del autor, etiquetada como custom-implementation.
+Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo entrenado para resolver el entorno CartPole-v1, publicado por el usuario yoga-0125 en Hugging Face. No se trata de un modelo de lenguaje ni de un modelo fundacional: es un checkpoint de una política neuronal entrenada con el algoritmo REINFORCE (policy gradient de Monte Carlo) mediante una implementacion propia del autor, etiquetada como custom-implementation.
 
 El modelo se enmarca en el material didactico del Deep Reinforcement Learning Course, concretamente en la Unit 4, cuyo objetivo es que el alumnado entrene y publique su propio agente de REINFORCE en el Hub. Por tanto, su relevancia es fundamentalmente formativa y de reproducibilidad: sirve como referencia minima de un pipeline completo de RL (entorno, entrenamiento, evaluacion y publicacion con model-index).
 
@@ -33,7 +33,7 @@ No se dispone de informacion sobre el dataset de entrenamiento, el numero de tok
 
 - Control de politica discreta en CartPole-v1: el agente produce una accion por paso de simulacion a partir del estado del entorno.
 - Resolucion del episodio completo: segun la metrica declarada, alcanza el umbral maximo de recompensa del entorno (500).
-- Serializacion y publicacion en el Hub de HuggingFace: el repositorio incluye metadatos de model-index con la tarea, el dataset y la metrica.
+- Serializacion y publicacion en el Hub de Hugging Face: el repositorio incluye metadatos de model-index con la tarea, el dataset y la metrica.
 - Generacion de texto: no soportada.
 - Razonamiento, codigo y matematicas: no soportados.
 - Vision y audio: no soportados.
@@ -86,6 +86,6 @@ No disponible. La informacion proporcionada no incluye modelos alternativos de R
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yoga-0125/Reinforce-CartPole-v1
+- Modelo en Hugging Face: https://huggingface.co/yoga-0125/Reinforce-CartPole-v1
 - Unit 4 del Deep Reinforcement Learning Course (referencia citada por el autor): https://huggingface.co/deep-rl-course/unit4/introduction
 - Resultados de busqueda web: las consultas realizadas no han devuelto informacion relevante sobre este modelo; los resultados obtenidos corresponden a contenido no relacionado con el autor ni con el modelo. No se dispone de papers, blogs, repositorios ni demos adicionales.

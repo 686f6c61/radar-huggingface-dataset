@@ -95,7 +95,7 @@ Alternativas de otros fabricantes (Llama 3.1 8B, Mistral 7B, Gemma 2 9B, etc.): 
 
 ## Enlaces
 
-- Adaptador LoRA en HuggingFace: https://huggingface.co/IAMIbrahim/luthor-8b-lora
+- Adaptador LoRA en Hugging Face: https://huggingface.co/IAMIbrahim/luthor-8b-lora
 - Modelo fusionado Luthor 8B: https://huggingface.co/IAMIbrahim/luthor-8b
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Sección de evaluación de la model card del modelo fusionado: https://huggingface.co/IAMIbrahim/luthor-8b#evaluation

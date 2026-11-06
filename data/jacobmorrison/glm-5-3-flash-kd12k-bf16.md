@@ -83,7 +83,7 @@ No se dispone de datos numéricos de benchmarks para una comparación cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jacobmorrison/glm-5.3-flash-kd12k-bf16
+- Hugging Face: https://huggingface.co/jacobmorrison/glm-5.3-flash-kd12k-bf16
 - Blog: https://z.ai/blog/glm-5.3-flash
 - Technical report: https://arxiv.org/abs/2602.15763
 - API: https://docs.z.ai/guides/llm/glm-5.3-flash

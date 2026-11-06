@@ -103,7 +103,7 @@ No se dispone de comparaciones con modelos de clasificación de propósito gener
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-MLX-bf16
+- Modelo en Hugging Face: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-MLX-bf16
 - Versión v2: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2-MLX-bf16
 - Versión 0.8B v3: https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3-MLX
 - GGUF (BF16 / Q8_0 / Q4_K_M): https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF

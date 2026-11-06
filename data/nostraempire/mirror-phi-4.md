@@ -78,7 +78,7 @@ Phi-4 se distingue por su énfasis en razonamiento y matemáticas, superando en 
 
 ## Enlaces
 
-- Repositorio HuggingFace del espejo: https://huggingface.co/NostraEmpire/mirror-phi-4
+- Repositorio Hugging Face del espejo: https://huggingface.co/NostraEmpire/mirror-phi-4
 - Repositorio original de Microsoft: https://huggingface.co/microsoft/phi-4
 - Versión optimizada de Unsloth: https://huggingface.co/unsloth/phi-4
 - Informe técnico de Phi-4 (arXiv): https://arxiv.org/html/2412.08905v1

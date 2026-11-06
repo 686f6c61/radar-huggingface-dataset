@@ -71,9 +71,9 @@ Observación: el modelo publicado mejora el éxito en episodios (40% frente a 25
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | 0,8B + LoRA | No disponible | Decisión discreta en simulación 2D | Apache 2.0 | HuggingFace (24 descargas) |
+| LINK-01 (este modelo) | 0,8B + LoRA | No disponible | Decisión discreta en simulación 2D | Apache 2.0 | Hugging Face (24 descargas) |
 | Política PPO original (`brain.json`) | No aplica (tabla de política) | No aplica | Misma tarea | No especificada | Disponible vía CONNECT AI WORLD |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No especificada en esta ficha | HuggingFace |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No especificada en esta ficha | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables de destilación de políticas RL en modelos de lenguaje de tamaño similar dentro de la información proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de información sobre otros modelos comparables de destilación de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/appssy3/connectailab-rl-solo-build-h-v3-link01
+- Modelo en Hugging Face: https://huggingface.co/appssy3/connectailab-rl-solo-build-h-v3-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

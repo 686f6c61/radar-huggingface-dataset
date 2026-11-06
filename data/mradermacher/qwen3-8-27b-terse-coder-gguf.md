@@ -109,7 +109,7 @@ No se dispone de datos contrastados de otras alternativas, por lo que cualquier 
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta cuantizacion): https://huggingface.co/mradermacher/Qwen3.8-27b-Terse-Coder-GGUF
+- Repositorio Hugging Face (esta cuantizacion): https://huggingface.co/mradermacher/Qwen3.8-27b-Terse-Coder-GGUF
 - Modelo base: https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder
 - Pagina de resumen de descargas del autor para este modelo: https://hf.tst.eu/model#Qwen3.8-27b-Terse-Coder-GGUF
 - Peticiones de cuantizacion y FAQ del autor: https://huggingface.co/mradermacher/model_requests

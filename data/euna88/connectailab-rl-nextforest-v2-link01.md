@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-nextforest-v2-link01 (este) | Adaptador sobre 0,8B | No disponible | Decisión `avoid_obstacles` | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en la información | HuggingFace |
+| connectailab-rl-nextforest-v2-link01 (este) | Adaptador sobre 0,8B | No disponible | Decisión `avoid_obstacles` | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en la información | Hugging Face |
 | Política PPO "cerebro" (brain.json) | No disponible | No aplica | Decisión `avoid_obstacles` | No disponible | Dentro del proyecto connect-tycoon |
 
 No se dispone de información sobre otros adaptadores LoRA comparables de la misma familia ni sobre modelos de decisión robótica de tamaño similar.
@@ -94,7 +94,7 @@ No se dispone de información sobre otros adaptadores LoRA comparables de la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/euna88/connectailab-rl-nextforest-v2-link01
+- Hugging Face: https://huggingface.co/euna88/connectailab-rl-nextforest-v2-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

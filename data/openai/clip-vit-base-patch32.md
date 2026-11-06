@@ -6,7 +6,7 @@ CLIP (Contrastive Language-Image Pre-training) es un modelo multimodal desarroll
 
 La variante `clip-vit-base-patch32` utiliza un Vision Transformer (ViT-B/32) como codificador de imágenes y un Transformer con atención enmascarada como codificador de texto. Ambos encoders se entrenan conjuntamente para maximizar la similitud coseno entre pares (imagen, texto) correctos y minimizarla para pares incorrectos. El modelo fue entrenado sobre un conjunto de datos masivo de pares imagen-texto obtenidos de internet, combinando rastreo web con datasets existentes como YFCC100M.
 
-Su relevancia actual radica en que sentó las bases para numerosos modelos posteriores de visión-lenguaje y sigue siendo ampliamente utilizado como extractor de características y para tareas de retrieval multimodal. Con más de 19 millones de descargas en HuggingFace, es uno de los modelos de visión-lenguaje más populares de la plataforma.
+Su relevancia actual radica en que sentó las bases para numerosos modelos posteriores de visión-lenguaje y sigue siendo ampliamente utilizado como extractor de características y para tareas de retrieval multimodal. Con más de 19 millones de descargas en Hugging Face, es uno de los modelos de visión-lenguaje más populares de la plataforma.
 
 ## Especificaciones tecnicas
 
@@ -48,7 +48,7 @@ El entrenamiento se realizo sobre un dataset de aproximadamente 400 millones de 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El paper original de CLIP (arxiv:2103.00020) evalua el modelo en mas de 30 datasets, incluyendo ImageNet, CIFAR-10/100, Oxford-IIIT Pets, Food101, entre otros, pero los resultados especificos para la variante `vit-base-patch32` no estan detallados en la model card de HuggingFace. Para datos cuantitativos, se recomienda consultar el paper original.
+No se han publicado resultados de benchmarks en la informacion disponible. El paper original de CLIP (arxiv:2103.00020) evalua el modelo en mas de 30 datasets, incluyendo ImageNet, CIFAR-10/100, Oxford-IIIT Pets, Food101, entre otros, pero los resultados especificos para la variante `vit-base-patch32` no estan detallados en la model card de Hugging Face. Para datos cuantitativos, se recomienda consultar el paper original.
 
 ## Requisitos de hardware
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CLIP ViT-B/32 (este) | ~151M | 77 tokens | no disponible | HuggingFace, repo oficial |
-| CLIP ViT-L/14 | ~428M | 77 tokens | no disponible | HuggingFace, repo oficial |
-| SigLIP (Google) | ~300M (variante base) | 64 tokens | Apache 2.0 | HuggingFace |
-| EVA-CLIP | ~1.9B (variante gigante) | 77 tokens | MIT | HuggingFace |
+| CLIP ViT-B/32 (este) | ~151M | 77 tokens | no disponible | Hugging Face, repo oficial |
+| CLIP ViT-L/14 | ~428M | 77 tokens | no disponible | Hugging Face, repo oficial |
+| SigLIP (Google) | ~300M (variante base) | 64 tokens | Apache 2.0 | Hugging Face |
+| EVA-CLIP | ~1.9B (variante gigante) | 77 tokens | MIT | Hugging Face |
 
 CLIP ViT-B/32 es la variante mas ligera de la familia CLIP original. SigLIP ofrece una alternativa con licencia permisiva (Apache 2.0) y mejor rendimiento en algunos benchmarks, mientras que EVA-CLIP proporciona variantes mas grandes con mejor precision pero mayor coste computacional.
 
@@ -80,7 +80,7 @@ CLIP ViT-B/32 es la variante mas ligera de la familia CLIP original. SigLIP ofre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/openai/clip-vit-base-patch32
+- Modelo en Hugging Face: https://huggingface.co/openai/clip-vit-base-patch32
 - Repositorio oficial de CLIP: https://github.com/openai/CLIP
 - Paper CLIP: https://arxiv.org/abs/2103.00020
 - Blog post de OpenAI: https://openai.com/blog/clip/

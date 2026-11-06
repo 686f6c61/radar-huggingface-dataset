@@ -118,7 +118,7 @@ No se dispone de comparaciones numericas directas frente a otros detectores de a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ToiTenBao/ours-probe-coco-llava15-13b
+- Modelo en Hugging Face: https://huggingface.co/ToiTenBao/ours-probe-coco-llava15-13b
 - Modelo base referenciado en la model card: `llava-hf/llava-1.5-13b-hf` (https://huggingface.co/llava-hf/llava-1.5-13b-hf)
 - Benchmarks citados en la model card: COCO (validacion y *holdout* de test), AMBER y POPE-Adversarial. No se proporcionan URLs ni referencias bibliograficas en la informacion disponible.
 - La busqueda web realizada no devolvio resultados relevantes para este modelo (los enlaces recuperados corresponden a foros de operadores de telefonia y a contenidos sobre relaciones laborales en aleman, sin relacion con el artefacto).

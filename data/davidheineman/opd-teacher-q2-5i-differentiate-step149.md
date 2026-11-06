@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Qwen/Qwen2.5-1.5B-Instruct | 1,54 mil millones | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face, safetensors, GGUF de terceros | Si, reportados por el autor del base |
 | Qwen/Qwen2.5-1.5B (pretrained) | 1,54 mil millones | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face | Si, reportados por el autor del base |
 | Llama-3.2-1B-Instruct | 1,24 mil millones | 128.000 tokens | Licencia comunitaria de Llama 3.2 (con restricciones) | Hugging Face con acceso condicionado | Si, reportados por Meta |
-| SmolLM2-1.7B-Instruct | 1,7 mil millones | 8.192 tokens | Apache 2.0 | Hugging Face | Si, reportados por HuggingFace |
+| SmolLM2-1.7B-Instruct | 1,7 mil millones | 8.192 tokens | Apache 2.0 | Hugging Face | Si, reportados por Hugging Face |
 
 La comparacion relevante es contra el propio Qwen2.5-1.5B-Instruct: este modelo es un derivado del mismo con 150 pasos de GRPO sobre un unico entorno, por lo que cualquier ventaja se limita a `Differentiate` y cualquier diferencia en capacidades generales no esta cuantificada en la informacion disponible. Frente a Llama-3.2-1B-Instruct y SmolLM2-1.7B-Instruct, la ventaja del modelo es su licencia Apache 2.0 sin restricciones adicionales; su desventaja, la ausencia total de evaluaciones publicadas.
 

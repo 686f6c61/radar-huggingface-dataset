@@ -99,8 +99,8 @@ La ventaja estructural de este modelo frente a las alternativas densas de tamañ
 
 ## Enlaces
 
-- Repositorio HuggingFace (conversión GGUF): https://huggingface.co/AMAImedia/moondream3.1-9B-A2B-GGUF
+- Repositorio Hugging Face (conversión GGUF): https://huggingface.co/AMAImedia/moondream3.1-9B-A2B-GGUF
 - Modelo base: https://huggingface.co/moondream/moondream3.1-9B-A2B
-- Organización Moondream en HuggingFace: https://huggingface.co/moondream
+- Organización Moondream en Hugging Face: https://huggingface.co/moondream
 - Documentación y repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
 - Paper, blog de anuncio o demo del modelo base: no disponible en la búsqueda web realizada

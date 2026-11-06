@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Seshat-agent es un modelo publicado en HuggingFace por el usuario yanjzh bajo licencia Apache 2.0. La model card asociada unicamente contiene la declaracion de licencia, sin ningun otro contenido tecnico, por lo que no es posible determinar la arquitectura, el tamano, el contexto ni el proceso de entrenamiento a partir de la informacion disponible.
+Seshat-agent es un modelo publicado en Hugging Face por el usuario yanjzh bajo licencia Apache 2.0. La model card asociada unicamente contiene la declaracion de licencia, sin ningun otro contenido tecnico, por lo que no es posible determinar la arquitectura, el tamano, el contexto ni el proceso de entrenamiento a partir de la informacion disponible.
 
 El nombre del repositorio sugiere un enfoque orientado a tareas de agente (agent), y la referencia a Seshat, deidad egipcia asociada a la escritura y el registro, podria indicar un enfasis en tareas de documentacion, memoria o gestion de informacion, aunque esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
@@ -39,7 +39,7 @@ Tampoco se dispone de informacion sobre el corpus de entrenamiento, el numero de
 
 - Evaluacion exploratoria de modelos de agente: el repositorio puede descargarse y probarse en entornos de laboratorio para determinar si el nombre "agent" corresponde a capacidades reales de orquestacion de herramientas, aunque no hay documentacion que lo respalde.
 - Prototipado interno con licencia permisiva: la licencia Apache 2.0 permite uso comercial y modificacion, lo que facilita su integracion en prototipos sin las restricciones de licencias copyleft, siempre que se valide previamente el comportamiento del modelo.
-- Investigacion sobre modelos poco documentados: util como caso de estudio sobre publicaciones en HuggingFace sin model card completa y sobre practicas de documentacion en el ecosistema open source.
+- Investigacion sobre modelos poco documentados: util como caso de estudio sobre publicaciones en Hugging Face sin model card completa y sobre practicas de documentacion en el ecosistema open source.
 - Pruebas de carga y despliegue: una vez identificado el formato de pesos, podria servir para validar pipelines de despliegue (vLLM, TGI, llama.cpp) en entornos de staging.
 - Comparacion de tokenizadores y plantillas de chat: si el repositorio incluye ficheros de configuracion, puede emplearse para estudiar convenciones de plantillas de conversacion en modelos recientes.
 - Fine-tuning experimental: con licencia Apache 2.0, podria emplearse como base para ajuste fino en dominios concretos, condicionado a la disponibilidad de pesos y a la verificacion de su calidad mediante evaluaciones propias.
@@ -72,4 +72,4 @@ No disponible. Al no conocerse la arquitectura, el tamano ni las capacidades del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yanjzh/Seshat-agent
+- Repositorio en Hugging Face: https://huggingface.co/yanjzh/Seshat-agent

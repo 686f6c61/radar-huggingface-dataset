@@ -96,7 +96,7 @@ La variante de 0,4 B es la mas ligera de la familia: frente a la de 1 B, usa apr
 - No se documentan idiomas ni capacidades multilingues porque no aplica; no hay componente linguistico.
 - Licencia: el modelo se distribuye bajo la Sapiens2 License, una licencia personalizada de tipo "other". Las clausulas concretas no se reproducen en la informacion disponible, por lo que no se puede confirmar desde aqui si se permite el uso comercial; hay que consultar el fichero LICENSE.md del repositorio oficial antes de integrarlo en produccion.
 - Este repositorio es un espejo no oficial con 0 descargas y 0 likes. Para uso en produccion conviene referenciar y descargar el checkpoint oficial facebook/sapiens2-normal-0.4b, que es la fuente mantenida por los autores.
-- El pipeline declarado en HuggingFace es depth-estimation, herencia de la categoria de la familia, aunque la tarea real del checkpoint es estimacion de normales de superficie. Conviene no guiarse por ese campo al integrarlo.
+- El pipeline declarado en Hugging Face es depth-estimation, herencia de la categoria de la familia, aunque la tarea real del checkpoint es estimacion de normales de superficie. Conviene no guiarse por ese campo al integrarlo.
 - No se documentan cuantizaciones oficiales. Cualquier conversion a int8, int4 o formatos como GGUF es responsabilidad del integrador y puede degradar la precision angular de las normales.
 - Alucinacion en sentido generativo: aunque el modelo no produce texto, sus salidas son predicciones densas que pueden ser plausibles y a la vez geometricamente incorrectas, sin ninguna senal de confianza asociada por pixel.
 

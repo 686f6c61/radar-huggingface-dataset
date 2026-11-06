@@ -63,8 +63,8 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 | Modelo | Base | Contexto (nombre) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HjiH9/phi-3-scheduler | Phi-3-mini-128k-instruct | 128k (sin confirmar) | other | HuggingFace |
-| microsoft/Phi-3-mini-128k-instruct | - | 128k | other | HuggingFace |
+| HjiH9/phi-3-scheduler | Phi-3-mini-128k-instruct | 128k (sin confirmar) | other | Hugging Face |
+| microsoft/Phi-3-mini-128k-instruct | - | 128k | other | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -78,6 +78,6 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/HjiH9/phi-3-scheduler
+- Hugging Face del modelo: https://huggingface.co/HjiH9/phi-3-scheduler
 - Documentacion de AutoTrain: https://hf.co/docs/autotrain
 - Modelo base microsoft/Phi-3-mini-128k-instruct: https://huggingface.co/microsoft/Phi-3-mini-128k-instruct

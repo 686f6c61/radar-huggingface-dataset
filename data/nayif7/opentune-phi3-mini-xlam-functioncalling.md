@@ -97,7 +97,7 @@ En rendimiento comparable no hay datos: la model card advierte explícitamente q
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/Nayif7/opentune-phi3-mini-xlam-functioncalling
+- Adaptador en Hugging Face: https://huggingface.co/Nayif7/opentune-phi3-mini-xlam-functioncalling
 - Modelo base: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k
 - Repositorio de entrenamiento y evaluación (OpenTune): https://github.com/mohdnayif799/OpenTune-QLoRA-Fine-Tuning-Pipeline-for-LLM-Function-Calling

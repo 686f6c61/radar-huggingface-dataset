@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo. La eleccion entre estos model
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizacion i1): https://huggingface.co/mradermacher/Muse-Glimmer-30B-Hermes-Agentic-i1-GGUF
+- Repositorio Hugging Face (cuantizacion i1): https://huggingface.co/mradermacher/Muse-Glimmer-30B-Hermes-Agentic-i1-GGUF
 - Modelo base (fine-tuning): https://huggingface.co/vcruz305/Muse-Glimmer-30B-Hermes-Agentic
 - Repositorio estatico de cuantizaciones: https://huggingface.co/mradermacher/Muse-Glimmer-30B-Hermes-Agentic-GGUF
 - Blog de Meta Research: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model

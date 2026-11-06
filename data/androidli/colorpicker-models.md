@@ -82,7 +82,7 @@ La comparación se limita a características publicadas; no se dispone de datos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/androidli/colorpicker-models
+- Hugging Face: https://huggingface.co/androidli/colorpicker-models
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Modelo base original: https://huggingface.co/nreimers/MiniLM-L6-H384-uncased
 - Sitio de la herramienta: https://toolve.net

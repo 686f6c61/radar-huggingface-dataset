@@ -4,7 +4,7 @@
 
 ## Resumen
 
-gemma-finetuned-EmoBench-M_64R es un ajuste fino (fine-tuning) supervisado del modelo google/gemma-4-12B-it, publicado por el usuario BrockTaylor en HuggingFace. Se trata de un derivado especializado mediante SFT (supervised fine-tuning) con la libreria TRL, orientado —a juzgar por su nombre— a tareas relacionadas con EmoBench-M, un conjunto de evaluacion de competencias emocionales, aunque la model card no documenta el dataset ni el procedimiento de entrenamiento empleado.
+gemma-finetuned-EmoBench-M_64R es un ajuste fino (fine-tuning) supervisado del modelo google/gemma-4-12B-it, publicado por el usuario BrockTaylor en Hugging Face. Se trata de un derivado especializado mediante SFT (supervised fine-tuning) con la libreria TRL, orientado —a juzgar por su nombre— a tareas relacionadas con EmoBench-M, un conjunto de evaluacion de competencias emocionales, aunque la model card no documenta el dataset ni el procedimiento de entrenamiento empleado.
 
 El modelo hereda la arquitectura, el tamano (12 000 millones de parametros, segun la nomenclatura del modelo base) y las capacidades del checkpoint original de Google. No se trata de un modelo nuevo entrenado desde cero, sino de un checkpoint adaptado, por lo que su relevancia practica depende en gran medida del modelo base sobre el que se construye.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada y fundamentalmente experimental: el repositorio
 
 ## Arquitectura y entrenamiento
 
-El autor unicamente declara que se trata de un ajuste fino de google/gemma-4-12B-it entrenado con SFT mediante TRL 0.24.0, sobre Transformers 5.17.0, PyTorch 2.11.0, Datasets 4.3.0 y Tokenizers 0.23.2. Se emplea la etiqueta "generated_from_trainer", lo que indica que el entrenamiento se lanzo con las utilidades estandar de HuggingFace (Trainer/TRL) y que la model card se autogenero.
+El autor unicamente declara que se trata de un ajuste fino de google/gemma-4-12B-it entrenado con SFT mediante TRL 0.24.0, sobre Transformers 5.17.0, PyTorch 2.11.0, Datasets 4.3.0 y Tokenizers 0.23.2. Se emplea la etiqueta "generated_from_trainer", lo que indica que el entrenamiento se lanzo con las utilidades estandar de Hugging Face (Trainer/TRL) y que la model card se autogenero.
 
 No se especifica la composicion del dataset, el numero de tokens de entrenamiento, la longitud de secuencia, los hiperparametros (learning rate, epochs, batch size), ni si hubo una fase posterior de RLHF o DPO. Tampoco se detalla ninguna innovacion tecnica respecto al modelo base: no hay decodificacion especulativa propia, atencion lineal, ni modificaciones arquitectonicas documentadas. Por el nombre del modelo, es plausible que el entrenamiento use datos derivados de EmoBench-M con alguna variante de 64 respuestas o rondas ("64R"), pero esto es una inferencia a partir del nombre y no un dato confirmado en la informacion disponible.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
 | gemma-finetuned-EmoBench-M_64R | ~12B (heredados) | no disponible | no disponible | sin benchmarks publicados | repositorio de 0,8 GB, 0 descargas |
-| google/gemma-4-12B-it (modelo base) | ~12B | no disponible en la informacion proporcionada | condiciones de uso de Gemma (no verificadas aqui) | no disponible en la informacion proporcionada | publico en HuggingFace |
+| google/gemma-4-12B-it (modelo base) | ~12B | no disponible en la informacion proporcionada | condiciones de uso de Gemma (no verificadas aqui) | no disponible en la informacion proporcionada | publico en Hugging Face |
 | Otros modelos de la misma categoria (12B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados en la informacion proporcionada para establecer una comparativa cuantitativa con alternativas de la misma categoria. La unica comparacion posible es cualitativa: este checkpoint parte del modelo base de Google y anade un ajuste fino por SFT cuyo efecto no ha sido medido publicamente.
@@ -91,7 +91,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrockTaylor/gemma-finetuned-EmoBench-M_64R
+- Modelo en Hugging Face: https://huggingface.co/BrockTaylor/gemma-finetuned-EmoBench-M_64R
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Cita de TRL (von Werra et al., 2020): https://github.com/huggingface/trl

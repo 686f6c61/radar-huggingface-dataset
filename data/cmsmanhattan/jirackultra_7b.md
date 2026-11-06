@@ -4,7 +4,7 @@
 
 JiRack Ultra 7B es un modelo de lenguaje de 7.600 millones de parámetros desarrollado por CMSManhattan, diseñado específicamente para inferencia eficiente en CPU. Se presenta como una refactorización de la arquitectura DeepSeek R1-7B con características BitNet (ternario 1.58-bit), lo que permite cuantizaciones agresivas y un consumo de memoria reducido. El modelo incorpora un tokenizador ampliado con etiquetas especiales para routing, tool calling, robótica y capacidades multimodales (media, visión, sonido), aunque no se aportan evidencias de que estas capacidades estén realmente implementadas más allá de los tokens.
 
-El modelo se distribuye en formato GGUF con varias cuantizaciones (Q2_K, Q3_K_M, Q4_K_M y FP16) y está pensado para entornos con recursos limitados, como portátiles, equipos de gama media o despliegues en la nube de bajo coste. Incluye una interfaz web accesible mediante Docker y soporta 13 idiomas. A pesar de que la etiqueta de HuggingFace indica licencia MIT, la model card del autor especifica una licencia comercial con suscripción mensual, lo que genera una contradicción que debe tenerse en cuenta antes de cualquier uso.
+El modelo se distribuye en formato GGUF con varias cuantizaciones (Q2_K, Q3_K_M, Q4_K_M y FP16) y está pensado para entornos con recursos limitados, como portátiles, equipos de gama media o despliegues en la nube de bajo coste. Incluye una interfaz web accesible mediante Docker y soporta 13 idiomas. A pesar de que la etiqueta de Hugging Face indica licencia MIT, la model card del autor especifica una licencia comercial con suscripción mensual, lo que genera una contradicción que debe tenerse en cuenta antes de cualquier uso.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No se dispone de benchmarks comparativos, por lo que esta tabla refleja solo car
 
 ## Limitaciones y advertencias
 
-- Contradicción de licencia: la etiqueta de HuggingFace indica MIT, pero la model card especifica licencia comercial ($12 por usuario y año, o suscripción mensual de $1-$3). Esta ambigüedad puede generar problemas legales en producción.
+- Contradicción de licencia: la etiqueta de Hugging Face indica MIT, pero la model card especifica licencia comercial ($12 por usuario y año, o suscripción mensual de $1-$3). Esta ambigüedad puede generar problemas legales en producción.
 - Sin benchmarks públicos: no hay datos objetivos de rendimiento, lo que impide evaluar su calidad frente a alternativas.
 - Capacidades multimodales no verificadas: los tokens de visión, sonido y media existen en el tokenizador, pero no hay evidencia de que el modelo haya sido entrenado para procesar estos inputs.
 - Riesgo de alucinación y sesgos: no se ha documentado ninguna evaluación de sesgos o de fiabilidad factual.
@@ -79,7 +79,7 @@ No se dispone de benchmarks comparativos, por lo que esta tabla refleja solo car
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CMSManhattan/JiRackUltra_7b
+- Modelo en Hugging Face: https://huggingface.co/CMSManhattan/JiRackUltra_7b
 - Tokenizador especializado: https://huggingface.co/CMSManhattan/JiRackPrecisionTokenizer
 - Cliente de escritorio para Windows (con Ollama API): https://huggingface.co/kgrabko/JiRackTernary_1b/resolve/main/jirack-chat.zip
 - Contacto comercial: support@cmsmanhattan.com

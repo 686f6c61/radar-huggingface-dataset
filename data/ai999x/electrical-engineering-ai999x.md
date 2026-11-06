@@ -63,8 +63,8 @@ No se han publicado en la información disponible otros resultados de benchmarks
 
 - VRAM: no aplica; el modelo se ejecuta en CPU y no requiere GPU.
 - GPU recomendadas: ninguna. Cualquier CPU capaz de ejecutar Python 3.10-3.14 es suficiente.
-- Cabe en cualquier equipo de consumo: el repositorio ocupa 0,0 GB según HuggingFace y el paquete es Python puro con dependencias sympy y mpmath.
-- Opciones de despliegue: `pip install electrical-engineering-ai999x` desde PyPI, o instalación directa del wheel alojado en el repositorio de HuggingFace. No aplican vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo generativo con pesos transformer.
+- Cabe en cualquier equipo de consumo: el repositorio ocupa 0,0 GB según Hugging Face y el paquete es Python puro con dependencias sympy y mpmath.
+- Opciones de despliegue: `pip install electrical-engineering-ai999x` desde PyPI, o instalación directa del wheel alojado en el repositorio de Hugging Face. No aplican vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo generativo con pesos transformer.
 - Latencia y throughput: no disponibles en la información proporcionada; el autor solo declara ejecución offline en CPU y resultados idénticos entre plataformas.
 - Plataformas verificadas: Windows con Python 3.13 y Linux x86-64 con Python 3.10, 3.11, 3.12, 3.13 y 3.14.
 
@@ -91,10 +91,10 @@ No se han proporcionado datos de modelos alternativos de la misma categoría (re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/electrical-engineering-ai999x
+- Modelo en Hugging Face: https://huggingface.co/AI999X/electrical-engineering-ai999x
 - Paquete en PyPI: https://pypi.org/project/electrical-engineering-ai999x/
 - Guía de capacidades (docs): https://huggingface.co/AI999X/electrical-engineering-ai999x/tree/main/docs
 - Evaluación: https://huggingface.co/AI999X/electrical-engineering-ai999x/tree/main/evaluation
-- Organización AI999X en HuggingFace: https://huggingface.co/AI999X
+- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
 - Sitio web del autor: https://ai999x.com
 - Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi

@@ -4,7 +4,7 @@
 
 El repositorio `memescreamer/stable-diffusion-2-1-base` es una copia del modelo original `stabilityai/stable-diffusion-2-1-base`, un modelo de difusión latente para generación de texto a imagen desarrollado por Stability AI. Este modelo es una versión refinada de `stable-diffusion-2-base`, ajustado con 220.000 pasos adicionales sobre el dataset LAION-5B con un umbral de filtrado NSFW más alto (`punsafe=0.98`). El modelo genera imágenes de 512×512 píxeles a partir de descripciones en inglés, utilizando un codificador de texto OpenCLIP-ViT/H y una arquitectura de difusión latente con UNet y VAE.
 
-Aunque el repositorio en HuggingFace apenas contiene metadatos (sin licencia declarada, sin idiomas especificados, cero descargas), los detalles técnicos coinciden con los del modelo original, lo que permite caracterizarlo como un generador de imágenes de alta calidad orientado a usos creativos y artísticos. Su relevancia actual radica en que sigue siendo una referencia para la generación de imágenes local, con una comunidad amplia y soporte en múltiples herramientas de inferencia.
+Aunque el repositorio en Hugging Face apenas contiene metadatos (sin licencia declarada, sin idiomas especificados, cero descargas), los detalles técnicos coinciden con los del modelo original, lo que permite caracterizarlo como un generador de imágenes de alta calidad orientado a usos creativos y artísticos. Su relevancia actual radica en que sigue siendo una referencia para la generación de imágenes local, con una comunidad amplia y soporte en múltiples herramientas de inferencia.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ El entrenamiento del modelo original parte de `stable-diffusion-2-base` (checkpo
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye métricas de evaluación, y los resultados de búsqueda web no proporcionan datos numéricos de rendimiento (como FID, CLIP score, etc.) para este modelo específico.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye métricas de evaluación, y los resultados de búsqueda web no proporcionan datos numéricos de rendimiento (como FID, CLIP score, etc.) para este modelo específico.
 
 ## Requisitos de hardware
 
@@ -77,7 +77,7 @@ La comparativa se basa en características generales; no se dispone de benchmark
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/memescreamer/stable-diffusion-2-1-base
+- Repositorio en Hugging Face: https://huggingface.co/memescreamer/stable-diffusion-2-1-base
 - Modelo original de Stability AI: https://huggingface.co/stabilityai/stable-diffusion-2-1-base
 - Página de aimodels.fyi sobre el modelo: https://www.aimodels.fyi/models/huggingFace/stable-diffusion-2-1-base-stabilityai
 - Página de free2aitools: https://free2aitools.com/model/mrvaiper/stable-diffusion-2-1-base

@@ -81,7 +81,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/value-productions/quickmt-en-th-int8
+- Hugging Face del modelo: https://huggingface.co/value-productions/quickmt-en-th-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-en-th
 - CTranslate2 (librería): https://github.com/OpenNMT/CTranslate2
 - Yaku Translate (aplicación mencionada): no disponible

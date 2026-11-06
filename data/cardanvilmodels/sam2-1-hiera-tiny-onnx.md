@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CardAnvilModels/sam2.1-hiera-tiny-ONNX | no disponible (backbone tiny); repo de 0,1 GB | ONNX fp16, solo fp16 | imagen + indicaciones (punto/caja/rejilla); resolucion no disponible | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| onnx-community/sam2.1-hiera-tiny-ONNX | el mismo | ONNX en varias precisiones | el mismo | Apache 2.0 | HuggingFace, repositorio de origen del anterior |
-| facebook/sam2.1-hiera-tiny | no disponible en la informacion proporcionada | PyTorch (safetensors) | el mismo | Apache 2.0 | HuggingFace, modelo base original |
-| Otros backbones de la familia SAM 2.1 (small, base+, large) | no disponible en la informacion proporcionada | PyTorch y ONNX | el mismo, con mayor capacidad y coste | Apache 2.0 | HuggingFace |
+| CardAnvilModels/sam2.1-hiera-tiny-ONNX | no disponible (backbone tiny); repo de 0,1 GB | ONNX fp16, solo fp16 | imagen + indicaciones (punto/caja/rejilla); resolucion no disponible | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| onnx-community/sam2.1-hiera-tiny-ONNX | el mismo | ONNX en varias precisiones | el mismo | Apache 2.0 | Hugging Face, repositorio de origen del anterior |
+| facebook/sam2.1-hiera-tiny | no disponible en la informacion proporcionada | PyTorch (safetensors) | el mismo | Apache 2.0 | Hugging Face, modelo base original |
+| Otros backbones de la familia SAM 2.1 (small, base+, large) | no disponible en la informacion proporcionada | PyTorch y ONNX | el mismo, con mayor capacidad y coste | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada, por lo que la comparativa se limita a formato, licencia y disponibilidad.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CardAnvilModels/sam2.1-hiera-tiny-ONNX
+- Repositorio en Hugging Face: https://huggingface.co/CardAnvilModels/sam2.1-hiera-tiny-ONNX
 - Modelo base: https://huggingface.co/facebook/sam2.1-hiera-tiny
 - Repositorio ONNX de origen (commit fijado): https://huggingface.co/onnx-community/sam2.1-hiera-tiny-ONNX/tree/814a066640debee5a91e70aa401fb8e17e030503
 - Codigo de SAM 2 (Meta AI): https://github.com/facebookresearch/sam2

@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Método | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-1.7B-Base-SFT-OffPolicy-BF16Delta | 1.720.574.976 | no disponible | SFT off-policy sobre respuestas de DeepSeek-R1 | apache-2.0 | HuggingFace (checkpoints y deltas) |
-| Qwen3-1.7B-Base-SFT-OnPolicy-BF16Delta | no disponible | no disponible | SFT on-policy sobre respuestas propias correctas | no disponible | HuggingFace |
-| Qwen3-1.7B-Base-SFT-OffPolicy | no disponible | no disponible | SFT off-policy, checkpoints en FP32 | no disponible | HuggingFace |
-| Qwen/Qwen3-1.7B-Base | 1.720.574.976 (heredado) | no disponible | Modelo base preentrenado | no disponible | HuggingFace |
+| Qwen3-1.7B-Base-SFT-OffPolicy-BF16Delta | 1.720.574.976 | no disponible | SFT off-policy sobre respuestas de DeepSeek-R1 | apache-2.0 | Hugging Face (checkpoints y deltas) |
+| Qwen3-1.7B-Base-SFT-OnPolicy-BF16Delta | no disponible | no disponible | SFT on-policy sobre respuestas propias correctas | no disponible | Hugging Face |
+| Qwen3-1.7B-Base-SFT-OffPolicy | no disponible | no disponible | SFT off-policy, checkpoints en FP32 | no disponible | Hugging Face |
+| Qwen/Qwen3-1.7B-Base | 1.720.574.976 (heredado) | no disponible | Modelo base preentrenado | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/XudongZhu/Qwen3-1.7B-Base-SFT-OffPolicy-BF16Delta
+- Repositorio Hugging Face: https://huggingface.co/XudongZhu/Qwen3-1.7B-Base-SFT-OffPolicy-BF16Delta
 - Gemelo on-policy: https://huggingface.co/XudongZhu/Qwen3-1.7B-Base-SFT-OnPolicy-BF16Delta
 - Repositorio con checkpoints FP32: https://huggingface.co/XudongZhu/Qwen3-1.7B-Base-SFT-OffPolicy
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chenclaire9/retrieval` es un repositorio de HuggingFace que contiene una implementación propia y compacta de CLIP (Contrastive Language-Image Pre-training) orientada a tareas de recuperación imagen-texto. Lo publica el usuario chenclaire9 y su propósito declarado no es el de un modelo preentrenado listo para producción, sino el de un artefacto de revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados. El checkpoint incluido es una inicialización válida, no un modelo entrenado ni evaluado.
+`chenclaire9/retrieval` es un repositorio de Hugging Face que contiene una implementación propia y compacta de CLIP (Contrastive Language-Image Pre-training) orientada a tareas de recuperación imagen-texto. Lo publica el usuario chenclaire9 y su propósito declarado no es el de un modelo preentrenado listo para producción, sino el de un artefacto de revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados. El checkpoint incluido es una inicialización válida, no un modelo entrenado ni evaluado.
 
 El modelo tiene 49.600 parámetros totales (aproximadamente 0,05 M), lo que lo sitúa en una escala "tiny" muy por debajo de cualquier CLIP utilizable. La arquitectura declarada combina atención dilatada, fusión tipo Tucker, activación gelu-tanh y normalización InstanceNorm. El repositorio incluye además un `pipeline.py` ejecutable, un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto (RMSprop con scheduler OneCycle).
 
@@ -68,10 +68,10 @@ Los datos de los modelos de referencia provienen de conocimiento general sobre C
 
 | Modelo | Parametros | Contexto texto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chenclaire9/retrieval (este) | 49.600 (0,05 M) | no disponible | No (inicialización) | BSD-3-Clause | HuggingFace, 0 descargas |
-| CLIP ViT-B/32 (OpenAI) | aproximadamente 151 M | 77 tokens | Sí | MIT (pesos publicados) | HuggingFace, ampliamente usado |
-| CLIP ViT-L/14 (OpenAI) | aproximadamente 428 M | 77 tokens | Sí | MIT (pesos publicados) | HuggingFace, ampliamente usado |
-| SigLIP base (Google) | escala de cientos de millones | no verificada en esta ficha | Sí | Apache 2.0 / variantes | HuggingFace |
+| chenclaire9/retrieval (este) | 49.600 (0,05 M) | no disponible | No (inicialización) | BSD-3-Clause | Hugging Face, 0 descargas |
+| CLIP ViT-B/32 (OpenAI) | aproximadamente 151 M | 77 tokens | Sí | MIT (pesos publicados) | Hugging Face, ampliamente usado |
+| CLIP ViT-L/14 (OpenAI) | aproximadamente 428 M | 77 tokens | Sí | MIT (pesos publicados) | Hugging Face, ampliamente usado |
+| SigLIP base (Google) | escala de cientos de millones | no verificada en esta ficha | Sí | Apache 2.0 / variantes | Hugging Face |
 
 La diferencia relevante no es de rendimiento sino de naturaleza: este repositorio es una implementación didáctica sin entrenamiento, mientras que las alternativas son checkpoints preentrenados con métricas publicadas sobre Flickr30k, COCO y ImageNet. No existe comparación de rendimiento posible entre ellos.
 
@@ -84,10 +84,10 @@ La diferencia relevante no es de rendimiento sino de naturaleza: este repositori
 - Idiomas soportados no disponibles; al no haber tokenizador entrenado, no se puede afirmar cobertura multilingüe.
 - Longitud de contexto no disponible; no se documenta el máximo de tokens del encoder de texto.
 - La licencia BSD-3-Clause permite uso comercial del código, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se usa con datasets externos.
-- Las APIs automáticas de carga de HuggingFace no reconocen esta implementación sin un adaptador explícito, lo que puede romper integraciones que asuman `AutoModel`.
+- Las APIs automáticas de carga de Hugging Face no reconocen esta implementación sin un adaptador explícito, lo que puede romper integraciones que asuman `AutoModel`.
 - Escala insuficiente para cualquier despliegue en producción: 49.600 parámetros no permiten representar alineación imagen-texto útil.
 
 ## Enlaces
 
-- [Modelo en HuggingFace: chenclaire9/retrieval](https://huggingface.co/chenclaire9/retrieval)
+- [Modelo en Hugging Face: chenclaire9/retrieval](https://huggingface.co/chenclaire9/retrieval)
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

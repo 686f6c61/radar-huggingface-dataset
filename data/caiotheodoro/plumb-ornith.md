@@ -61,7 +61,7 @@ No se dispone de modelos comparables directos, ya que se trata de un adaptador e
 - Falta de documentación sobre el dataset y el curriculum: la procedencia de las tareas auto-propuestas no está detallada, lo que limita la reproducibilidad completa.
 
 ## Enlaces
-- HuggingFace del modelo: [caiotheodoro/plumb-ornith](https://huggingface.co/caiotheodoro/plumb-ornith)
+- Hugging Face del modelo: [caiotheodoro/plumb-ornith](https://huggingface.co/caiotheodoro/plumb-ornith)
 - Dataset: [caiotheodoro/plumb](https://huggingface.co/datasets/caiotheodoro/plumb)
 - Código y proyecto: [caiotheodoro/plumb](https://github.com/caiotheodoro/plumb)
 - Modelo base: [mlx-community/Qwen3-1.7B-4bit](https://huggingface.co/mlx-community/Qwen3-1.7B-4bit)

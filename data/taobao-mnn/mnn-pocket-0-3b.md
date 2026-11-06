@@ -90,7 +90,7 @@ No se dispone de datos detallados de benchmarks ni de especificaciones completas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B
+- Modelo en Hugging Face: https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B
 - Coleccion MNN-Pocket-0.3B: https://huggingface.co/collections/taobao-mnn/mnn-pocket-03b
 - Repositorio MNN en GitHub: https://github.com/alibaba/MNN
 - Informe tecnico (PDF): https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B/resolve/main/MNN-Pocket-0.3B-Technical-Report.pdf

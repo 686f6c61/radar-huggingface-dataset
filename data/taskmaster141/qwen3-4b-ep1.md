@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4b-ep1 es un ajuste fino (fine-tuning) publicado por el usuario taskmaster141 en HuggingFace, derivado de un checkpoint intermedio de entrenamiento propio (`trainer_output/checkpoint-150`) y construido sobre la familia Qwen3. El modelo se distribuye con licencia Apache 2.0 y la model card indica que el entrenamiento se realizó con Unsloth, lo que sugiere un pipeline de fine-tuning con LoRA/QLoRA sobre una base Qwen3 de aproximadamente 4.000 millones de parametros. No se especifica si la base es una variante instruct o base, ni el dataset o el objetivo concreto del ajuste.
+Qwen3-4b-ep1 es un ajuste fino (fine-tuning) publicado por el usuario taskmaster141 en Hugging Face, derivado de un checkpoint intermedio de entrenamiento propio (`trainer_output/checkpoint-150`) y construido sobre la familia Qwen3. El modelo se distribuye con licencia Apache 2.0 y la model card indica que el entrenamiento se realizó con Unsloth, lo que sugiere un pipeline de fine-tuning con LoRA/QLoRA sobre una base Qwen3 de aproximadamente 4.000 millones de parametros. No se especifica si la base es una variante instruct o base, ni el dataset o el objetivo concreto del ajuste.
 
 Se trata de un modelo practicamente sin traccion: 0 descargas y 0 likes en el momento de la consulta, publicado el 10 de septiembre de 2026 y sin actualizaciones posteriores. La model card es minima y no aporta informacion sobre datos de entrenamiento, hiperparametros, benchmarks ni limitaciones. Por tanto, cualquier evaluacion de capacidades debe considerarse provisional y verificarse empiricamente antes de usarlo en produccion.
 
@@ -48,7 +48,7 @@ El unico dato tecnico relevante es el uso de Unsloth, framework que optimiza el 
 - Evaluacion comparativa de checkpoints: al ser un checkpoint intermedio (paso 150), permite estudiar el efecto del numero de pasos sobre la calidad final si el autor publica mas versiones.
 - Generacion de texto de bajo coste en hardware consumer: un modelo de ~4.000 millones de parametros cuantizado a 4 bits ocupa alrededor de 2,5-3 GB, lo que permite ejecutarlo en GPUs de gama media para tareas de redaccion o resumen simple.
 - Base para nuevos fine-tunes: al estar bajo Apache 2.0, puede utilizarse como punto de partida para ajustes especificos de dominio, siempre que se valide antes su calidad base.
-- Docencia y formacion: util para ilustrar el ciclo completo de publicacion de un modelo en HuggingFace, desde el entrenamiento con Unsloth hasta la subida del repositorio y la generacion de la model card.
+- Docencia y formacion: util para ilustrar el ciclo completo de publicacion de un modelo en Hugging Face, desde el entrenamiento con Unsloth hasta la subida del repositorio y la generacion de la model card.
 - Investigacion sobre sesgos y evaluacion: su falta de documentacion lo convierte en un caso de estudio sobre los riesgos de desplegar modelos sin benchmarks ni trazabilidad de datos.
 
 ## Benchmarks y rendimiento
@@ -91,7 +91,7 @@ Los datos de los modelos comparados proceden del conocimiento general sobre esas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/taskmaster141/Qwen3-4b-ep1
+- Repositorio en Hugging Face: https://huggingface.co/taskmaster141/Qwen3-4b-ep1
 - Unsloth (framework de entrenamiento utilizado): https://github.com/unslothai/unsloth
 - Qwen3 (familia base): https://huggingface.co/Qwen/Qwen3-4B
 - Paper de Qwen3: no disponible en la informacion proporcionada

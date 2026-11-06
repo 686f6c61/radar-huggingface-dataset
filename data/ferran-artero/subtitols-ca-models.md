@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`subtitols-ca-models` es un repositorio publicado en HuggingFace por el usuario ferran-artero cuyo propósito declarado, a tenor del identificador y de la licencia personalizada `license-subtitols-ca`, parece orientado a tareas de generación o procesamiento de subtítulos en catalán. No obstante, la model card pública no contiene información técnica: únicamente incluye metadatos de licencia (`license: other`, con nombre y enlace a un fichero `LICENSE`), por lo que no es posible confirmar arquitectura, tamaño, contexto ni datos de entrenamiento a partir de la información disponible.
+`subtitols-ca-models` es un repositorio publicado en Hugging Face por el usuario ferran-artero cuyo propósito declarado, a tenor del identificador y de la licencia personalizada `license-subtitols-ca`, parece orientado a tareas de generación o procesamiento de subtítulos en catalán. No obstante, la model card pública no contiene información técnica: únicamente incluye metadatos de licencia (`license: other`, con nombre y enlace a un fichero `LICENSE`), por lo que no es posible confirmar arquitectura, tamaño, contexto ni datos de entrenamiento a partir de la información disponible.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline declarado, lo que sugiere un artefacto en fase muy temprana o de uso privado. No se han publicado idiomas soportados en los metadatos, aunque el nombre del repositorio apunta al catalán como idioma principal de trabajo.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `ferran-artero/subtitols-ca-models` | no disponible | no disponible | `license-subtitols-ca` (other) | HuggingFace, 0 descargas |
+| `ferran-artero/subtitols-ca-models` | no disponible | no disponible | `license-subtitols-ca` (other) | Hugging Face, 0 descargas |
 | Alternativas de subtitulación en catalán | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para establecer una comparativa técnica fiable con otros modelos de la misma categoría.
@@ -78,6 +78,6 @@ No se dispone de información suficiente para establecer una comparativa técnic
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ferran-artero/subtitols-ca-models
+- Repositorio en Hugging Face: https://huggingface.co/ferran-artero/subtitols-ca-models
 - Fichero de licencia: https://huggingface.co/ferran-artero/subtitols-ca-models/blob/main/LICENSE
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

@@ -53,5 +53,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gcoli/Qwen3.8-27B-oQ4e-mtp
+- Repositorio Hugging Face: https://huggingface.co/gcoli/Qwen3.8-27B-oQ4e-mtp
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx

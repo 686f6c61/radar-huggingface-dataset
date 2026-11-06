@@ -1,7 +1,7 @@
 # mdagosta/waldito-python-basics-v1-r0014-u2-mdagosta
 
 ## Resumen
-El modelo `waldito-python-basics-v1-r0014-u2-mdagosta` es un export de la familia OpenWALDO publicado por el usuario mdagosta en HuggingFace. Se trata de un modelo de generacion de texto causal basado en la arquitectura Llama estandar de Transformers, con un total de 9.541.632 parametros (aproximadamente 9,5 millones), lo que lo situa en la categoria de modelos ultraligeros. El repositorio no registra descargas ni "likes" en el momento de la consulta y fue creado el 30 de septiembre de 2026.
+El modelo `waldito-python-basics-v1-r0014-u2-mdagosta` es un export de la familia OpenWALDO publicado por el usuario mdagosta en Hugging Face. Se trata de un modelo de generacion de texto causal basado en la arquitectura Llama estandar de Transformers, con un total de 9.541.632 parametros (aproximadamente 9,5 millones), lo que lo situa en la categoria de modelos ultraligeros. El repositorio no registra descargas ni "likes" en el momento de la consulta y fue creado el 30 de septiembre de 2026.
 
 El modelo emplea el tokenizer de bytes "schema-1" propio de OpenWALDO, que requiere cargarse con `trust_remote_code=True`. Segun la model card, el paquete incluye un fichero `BOM.json` que inventaria todos los ficheros de la release y un `EU-BOM.json` con el mapeo de divulgacion de contenido de entrenamiento segun el reglamento europeo de GPAI (General Purpose AI).
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| waldito-python-basics-v1-r0014-u2-mdagosta | 9,5 M | no disponible | no disponible | HuggingFace |
-| SmolLM-135M | 135 M | 2048 | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B | 0,5 B | 32.768 | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B | 1,1 B | 2048 | Apache 2.0 | HuggingFace |
+| waldito-python-basics-v1-r0014-u2-mdagosta | 9,5 M | no disponible | no disponible | Hugging Face |
+| SmolLM-135M | 135 M | 2048 | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B | 0,5 B | 32.768 | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B | 1,1 B | 2048 | Apache 2.0 | Hugging Face |
 
 El modelo analizado es aproximadamente 14 veces menor que SmolLM-135M y mas de dos ordenes de magnitud menor que Qwen2.5-0.5B y TinyLlama-1.1B. Esa diferencia de escala implica capacidades de razonamiento, conocimiento y generacion sustancialmente mas limitadas. La comparativa debe interpretarse solo como referencia de categoria (modelos ultraligeros), ya que no se dispone de datos de rendimiento del modelo OpenWALDO para confrontarlos.
 
@@ -80,7 +80,7 @@ El modelo analizado es aproximadamente 14 veces menor que SmolLM-135M y mas de d
 - Uso en produccion: no se recomienda como modelo generativo generalista sin una evaluacion previa especifica para la tarea objetivo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0014-u2-mdagosta
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0014-u2-mdagosta
 - Fichero de inventario de la release (`BOM.json`): referenciado en la model card, dentro del repositorio.
 - Fichero de divulgacion de contenido de entrenamiento (`EU-BOM.json`): referenciado en la model card, dentro del repositorio.
 - Paper, blog o repositorio adicional de OpenWALDO: no disponible.

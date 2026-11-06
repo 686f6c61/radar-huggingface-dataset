@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Base | Parametros (UNet) | Resolucion de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Coimbatorecartoon/animagine-xl | SDXL 1.0 | 2.567.463.684 | 1024x1024 con aspect ratio bucketing | openrail++ | HuggingFace (repositorio con 0 descargas) |
-| Linaqruf/animagine-xl | SDXL 1.0 | mismo modelo original | 1024x1024 con aspect ratio bucketing | openrail++ | HuggingFace (original) |
-| stabilityai/stable-diffusion-xl-base-1.0 | SDXL 1.0 | ~2.600 millones | 1024x1024 | CreativeML Open RAIL++-M | HuggingFace |
-| Modelos anime SDXL alternativos (por ejemplo, variantes de la familia Animagine o Pony Diffusion) | SDXL 1.0 | ~2.600 millones | 1024x1024 | habitualmente openrail++ o similar | HuggingFace |
+| Coimbatorecartoon/animagine-xl | SDXL 1.0 | 2.567.463.684 | 1024x1024 con aspect ratio bucketing | openrail++ | Hugging Face (repositorio con 0 descargas) |
+| Linaqruf/animagine-xl | SDXL 1.0 | mismo modelo original | 1024x1024 con aspect ratio bucketing | openrail++ | Hugging Face (original) |
+| stabilityai/stable-diffusion-xl-base-1.0 | SDXL 1.0 | ~2.600 millones | 1024x1024 | CreativeML Open RAIL++-M | Hugging Face |
+| Modelos anime SDXL alternativos (por ejemplo, variantes de la familia Animagine o Pony Diffusion) | SDXL 1.0 | ~2.600 millones | 1024x1024 | habitualmente openrail++ o similar | Hugging Face |
 
 Rendimiento comparado: no disponible. No se aportan metricas objetivas que permitan situar este modelo frente a SDXL base ni frente a otras alternativas de estilo anime.
 
@@ -86,7 +86,7 @@ Rendimiento comparado: no disponible. No se aportan metricas objetivas que permi
 
 ## Enlaces
 
-- Repositorio en HuggingFace (copia): https://huggingface.co/Coimbatorecartoon/animagine-xl
+- Repositorio en Hugging Face (copia): https://huggingface.co/Coimbatorecartoon/animagine-xl
 - Repositorio original del autor: https://huggingface.co/Linaqruf/animagine-xl
 - Pesos safetensors del modelo original: https://huggingface.co/Linaqruf/animagine-xl/resolve/main/animagine-xl.safetensors
 - Dataset de entrenamiento: https://huggingface.co/datasets/Linaqruf/animagine-datasets

@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/beita6969/R2Orch-9b
+- Hugging Face: https://huggingface.co/beita6969/R2Orch-9b
 - Paper: https://arxiv.org/abs/2610.22740
-- Página del paper en HuggingFace: https://huggingface.co/papers/2610.22740
+- Página del paper en Hugging Face: https://huggingface.co/papers/2610.22740
 - Código: https://github.com/beita6969/R2Orch
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

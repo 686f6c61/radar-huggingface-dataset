@@ -6,7 +6,7 @@ MossImage-EndField es un adaptador LoRA de rango 32 para el modelo de difusion t
 
 El modelo no es un modelo fundacional autonomo: es un adaptador de bajo rango que modifica el comportamiento del modelo base MossImage sin alterar su arquitectura. Su relevancia es acotada y practica: permite a ilustradores y desarrolladores que ya trabajan con MOSS Image obtener una estetica concreta (paletas turquesa y dorado, motivos fractales, personajes de Arknights) sin reentrenar el modelo completo, con un coste de almacenamiento de unos 0,4 GB.
 
-La informacion publicada por el autor es minima: no se documentan hiperparametros de entrenamiento, composicion del dataset, numero de pasos ni resultados cuantitativos. La ficha siguiente refleja exclusivamente lo que consta en la model card y en los metadatos de HuggingFace, marcando como "no disponible" todo aquello que no se ha publicado.
+La informacion publicada por el autor es minima: no se documentan hiperparametros de entrenamiento, composicion del dataset, numero de pasos ni resultados cuantitativos. La ficha siguiente refleja exclusivamente lo que consta en la model card y en los metadatos de Hugging Face, marcando como "no disponible" todo aquello que no se ha publicado.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Rango / parametros | Modelo base | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MossImage-EndField | LoRA texto-a-imagen | rango 32 | MossImage | no aplica | other | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
+| MossImage-EndField | LoRA texto-a-imagen | rango 32 | MossImage | no aplica | other | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
 | LoRA oficial de velocidad de MOSS Image | LoRA de aceleracion | no disponible | MossImage | no aplica | no disponible | Referenciado por el autor, no enlazado en la informacion |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,7 +83,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ShiyumeMeguri/MossImage-EndField
+- Repositorio en Hugging Face: https://huggingface.co/ShiyumeMeguri/MossImage-EndField
 - Modelo base MossImage: no se proporciona enlace directo en la informacion disponible
 - LoRA oficial de velocidad a 4 pasos de MOSS Image: referenciado por el autor, sin enlace en la informacion disponible
 - Paper, blog o repositorio adicional: no disponible

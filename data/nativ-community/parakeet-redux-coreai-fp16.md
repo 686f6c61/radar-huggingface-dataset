@@ -4,7 +4,7 @@
 
 nativ-community/parakeet-redux-coreai-fp16 es una conversion comunitaria del modelo de reconocimiento automatico del habla (ASR) moondream/parakeet-redux a formato CoreML en precision FP16. El repositorio lo publica el usuario nativ-community bajo licencia CC-BY-4.0 y ocupa 0,3 GB, frente a los aproximadamente 178 MB del modelo base cuantizado en ternario. Se trata, por tanto, de un artefacto de despliegue orientado a ejecutar transcripcion de voz en hardware Apple mediante Core ML, no de un modelo entrenado desde cero.
 
-El modelo del que deriva, parakeet-redux, esta etiquetado en HuggingFace como Automatic Speech Recognition, con arquitectura parakeet_tdt (Transformer con self-attention y conexiones residuales), tokenizador multilingue derivado de la version V3 y cobertura declarada de 25 idiomas. Su rasgo mas distintivo es la cuantizacion ternaria de 8 bits, que reduce el peso a unos 178 MB y permite inferencia en CPU x86 y en Apple Silicon.
+El modelo del que deriva, parakeet-redux, esta etiquetado en Hugging Face como Automatic Speech Recognition, con arquitectura parakeet_tdt (Transformer con self-attention y conexiones residuales), tokenizador multilingue derivado de la version V3 y cobertura declarada de 25 idiomas. Su rasgo mas distintivo es la cuantizacion ternaria de 8 bits, que reduce el peso a unos 178 MB y permite inferencia en CPU x86 y en Apple Silicon.
 
 La relevancia de este repositorio concreto radica en que empaqueta esa capacidad de transcripcion en un formato nativo de Apple (Core ML, FP16), lo que facilita su integracion en aplicaciones de macOS, iOS y iPadOS sin depender de frameworks de terceros. Como contrapartida, la model card publicada es practicamente vacia (solo incluye la linea de licencia) y no aporta detalles propios de esta conversion: no hay pipeline declarado, ni idiomas listados, ni resultados de rendimiento.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes, por lo qu
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/nativ-community/parakeet-redux-coreai-fp16
+- Hugging Face (este modelo): https://huggingface.co/nativ-community/parakeet-redux-coreai-fp16
 - Modelo base: https://huggingface.co/moondream/parakeet-redux
 - Mirror del modelo base: https://huggingface.co/suryatmodulus/parakeet-redux
 - Vista de arquitectura: https://hfviewer.com/moondream/parakeet-redux

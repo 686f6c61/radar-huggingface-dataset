@@ -91,7 +91,7 @@ La comparativa con alternativas especificas en hebreo no esta disponible en la i
 
 ## Enlaces
 
-- [HuggingFace: Zion_Alpha_Instruction_Tuned_SLERP](https://huggingface.co/SicariusSicariiStuff/Zion_Alpha_Instruction_Tuned_SLERP)
+- [Hugging Face: Zion_Alpha_Instruction_Tuned_SLERP](https://huggingface.co/SicariusSicariiStuff/Zion_Alpha_Instruction_Tuned_SLERP)
 - [Modelo base FP16: Zion_Alpha](https://huggingface.co/SicariusSicariiStuff/Zion_Alpha)
 - [Version instruction-tuned FP16: Zion_Alpha_Instruction_Tuned](https://huggingface.co/SicariusSicariiStuff/Zion_Alpha_Instruction_Tuned)
 - [Version GGUF: Zion_Alpha_Instruction_Tuned_GGUF](https://huggingface.co/SicariusSicariiStuff/Zion_Alpha_Instruction_Tuned_GGUF)

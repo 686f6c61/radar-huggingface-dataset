@@ -4,7 +4,7 @@
 
 El repositorio `nguyen96ph/unet-embedder` no contiene un modelo de aprendizaje automatico, sino un conjunto de notas de investigacion sobre aprendizaje contrastivo (contrastive learning) en formato `paper_notes.md`. A pesar del nombre sugerente, no hay pesos, arquitectura ni artefactos de modelo disponibles en el repositorio. El autor, `nguyen96ph`, ha publicado un unico archivo Markdown con notas de lectura de un articulo cientifico, estructuradas segun el esquema intro-problema-solucion-validacion-futuro, con estilo de citacion numerico tipo Nature y formato LaTeX/arXiv.
 
-La relevancia de este repositorio es limitada para desarrolladores que buscan un modelo desplegable: no contiene pesos, no tiene pipeline de inferencia, no presenta benchmarks y no ofrece ninguna capacidad ejecutable. Su unico valor potencial es documental o de referencia para quien desee revisar las notas de un paper sobre aprendizaje contrastivo. Se registran cero descargas y cero likes en HuggingFace, lo que refuerza su caracter marginal dentro del ecosistema.
+La relevancia de este repositorio es limitada para desarrolladores que buscan un modelo desplegable: no contiene pesos, no tiene pipeline de inferencia, no presenta benchmarks y no ofrece ninguna capacidad ejecutable. Su unico valor potencial es documental o de referencia para quien desee revisar las notas de un paper sobre aprendizaje contrastivo. Se registran cero descargas y cero likes en Hugging Face, lo que refuerza su caracter marginal dentro del ecosistema.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No disponible. No existe un modelo comparable porque el repositorio no es un mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nguyen96ph/unet-embedder
+- Repositorio en Hugging Face: https://huggingface.co/nguyen96ph/unet-embedder
 - Survey sobre U-Net en IA generativa (Springer): https://link.springer.com/article/10.1007/s10462-025-11450-0
 - Plataforma Embedder para software embebido (no relacionada): https://embedder.com/
 - Repositorio netclaw (no relacionado): https://github.com/automateyournetwork/netclaw/blob/main/tests/unit/test_embedder.py

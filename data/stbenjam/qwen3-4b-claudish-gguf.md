@@ -90,7 +90,7 @@ Las cifras de parametros, contexto y licencia de los modelos alternativos corres
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stbenjam/qwen3-4b-claudish-gguf
+- Modelo en Hugging Face: https://huggingface.co/stbenjam/qwen3-4b-claudish-gguf
 - Adaptador MLX (entrenamiento local y chat en Python): https://huggingface.co/stbenjam/qwen3-4b-claudish-mlx-lora
 - Resultados y respuestas completas: https://github.com/stbenjam/posttrain-demo/blob/main/claudish/v2/RESULTS.md
 - Investigacion y referencias sobre el estilo: https://github.com/stbenjam/posttrain-demo/blob/main/claudish/CLAUDISMS_RESEARCH.md

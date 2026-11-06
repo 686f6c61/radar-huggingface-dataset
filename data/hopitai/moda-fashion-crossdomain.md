@@ -94,11 +94,11 @@ El modelo se posiciona como la receta mas simple de la familia MODA: sin destila
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HopitAI/moda-fashion-crossdomain
+- Modelo en Hugging Face: https://huggingface.co/HopitAI/moda-fashion-crossdomain
 - Repositorio GitHub del proyecto MODA: https://github.com/hopit-ai/Moda
 - Dataset LookBench: https://huggingface.co/datasets/srpone/look-bench
 - Articulo de cierre de la serie MODA: https://hopitai.substack.com/p/moda-series-finale
-- Modelos relacionados en HuggingFace:
+- Modelos relacionados en Hugging Face:
   - MODA-Fashion-Distilled: https://huggingface.co/HopitAI/moda-fashion-distilled
   - MODA-Fashion-Matryoshka: https://huggingface.co/HopitAI/moda-fashion-matryoshka
   - MODA-Fashion-Vision-FP16: https://huggingface.co/HopitAI/moda-fashion-vision-fp16

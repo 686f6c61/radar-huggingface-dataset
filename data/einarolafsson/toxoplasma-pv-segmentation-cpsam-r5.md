@@ -85,9 +85,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Tipo | Datos de evaluación | F1 @ IoU 0,5 | AJI | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (round 5) | Cellpose-SAM afinado | 5 pliegues, 619 pares | 0,8170 ± 0,036 | 0,7144 ± 0,107 | MIT | HuggingFace + Model Zoo de spaCR |
+| Este modelo (round 5) | Cellpose-SAM afinado | 5 pliegues, 619 pares | 0,8170 ± 0,036 | 0,7144 ± 0,107 | MIT | Hugging Face + Model Zoo de spaCR |
 | Stock `cpsam_v2` (Cellpose-SAM sin ajuste) | Cellpose-SAM genérico | 11 pocillos internos | 0,7130 | 0,4260 | no disponible | Cellpose |
-| Rondas anteriores (`Toxoplasma PV v1`, round 2) | Cellpose-SAM afinado | recogidas en `evaluation/baseline_scores.csv` | no disponible en esta ficha | no disponible en esta ficha | MIT | HuggingFace |
+| Rondas anteriores (`Toxoplasma PV v1`, round 2) | Cellpose-SAM afinado | recogidas en `evaluation/baseline_scores.csv` | no disponible en esta ficha | no disponible en esta ficha | MIT | Hugging Face |
 
 No hay datos comparativos publicados frente a alternativas generalistas de segmentación celular como Cellpose 3, StarDist o SAM 2, ni frente a otros modelos específicos de *Toxoplasma*. La única comparación cuantitativa documentada es la del baseline stock y las rondas previas del propio autor.
 
@@ -104,7 +104,7 @@ No hay datos comparativos publicados frente a alternativas generalistas de segme
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/einarolafsson/toxoplasma-pv-segmentation-cpsam-r5
+- Modelo en Hugging Face: https://huggingface.co/einarolafsson/toxoplasma-pv-segmentation-cpsam-r5
 - spaCR en GitHub: https://github.com/EinarOlafsson/spacr
 - Incidencias y preguntas: https://github.com/EinarOlafsson/spacr/issues
 - Curva de entrenamiento: https://huggingface.co/einarolafsson/toxoplasma-pv-segmentation-cpsam-r5/resolve/main/training/curves.png

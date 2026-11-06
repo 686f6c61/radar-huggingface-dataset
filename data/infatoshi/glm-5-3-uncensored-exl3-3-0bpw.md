@@ -106,8 +106,8 @@ Nota: los datos de los modelos comparados provienen de resultados de busqueda y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Infatoshi/GLM-5.3-UNCENSORED-EXL3-3.0bpw
+- Modelo en Hugging Face: https://huggingface.co/Infatoshi/GLM-5.3-UNCENSORED-EXL3-3.0bpw
 - Modelo base (FP8): https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8
 - Modelo original: https://huggingface.co/zai-org/GLM-5.3
 - Articulo de referencia: https://promptblueprints.tech/ai-releases/glm-5-3-uncensored-exl3-3-0bpw-what-the-release-includes/
-- Catalogo de modelos uncensored en HuggingFace: https://huggingface.co/models?other=uncensored
+- Catalogo de modelos uncensored en Hugging Face: https://huggingface.co/models?other=uncensored

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ArthurZ/cellpose-dino` es un modelo alojado en HuggingFace por ArthurZ (Arthur Zucker, ingeniero del equipo de HuggingFace) cuyo nombre sugiere una combinacion de la familia Cellpose, especializada en segmentacion de celulas en imagenes de microscopia, y DINO, la estrategia de preentrenamiento auto-supervisado para vision por computador basada en self-distillation. El repositorio ocupa 1,2 GB y los pesos en safetensors suman 303.461.584 parametros (aproximadamente 303 millones), una cifra coherente con un backbone tipo Vision Transformer grande (por ejemplo ViT-L) con una cabeza de segmentacion.
+`ArthurZ/cellpose-dino` es un modelo alojado en Hugging Face por ArthurZ (Arthur Zucker, ingeniero del equipo de Hugging Face) cuyo nombre sugiere una combinacion de la familia Cellpose, especializada en segmentacion de celulas en imagenes de microscopia, y DINO, la estrategia de preentrenamiento auto-supervisado para vision por computador basada en self-distillation. El repositorio ocupa 1,2 GB y los pesos en safetensors suman 303.461.584 parametros (aproximadamente 303 millones), una cifra coherente con un backbone tipo Vision Transformer grande (por ejemplo ViT-L) con una cabeza de segmentacion.
 
 El modelo es practicamente inedito en terminos de adopcion: registra 5 descargas y 0 likes, y no tiene ficha de modelo (model card) publicada, ni pipeline declarado, ni licencia, ni idiomas especificados. Fue creado y actualizado el 15 de octubre de 2026 segun los metadatos del repositorio.
 
@@ -72,7 +72,7 @@ La comparativa se ofrece como referencia de categoria; la columna de `cellpose-d
 
 | Modelo | Parametros | Tarea principal | Contexto/aplicacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ArthurZ/cellpose-dino | ~303 M | Segmentacion celular / vision auto-supervisada (inferido) | Imagenes de microscopia | no disponible | HuggingFace, 5 descargas |
+| ArthurZ/cellpose-dino | ~303 M | Segmentacion celular / vision auto-supervisada (inferido) | Imagenes de microscopia | no disponible | Hugging Face, 5 descargas |
 | DINOv2 (ViT-L/14) | ~304 M | Representaciones visuales auto-supervisadas | Vision general y biomedica | Apache 2.0 (segun publicacion de Meta) | Ampliamente disponible |
 | Cellpose (modelos cyto/nuclei) | ~25-30 M | Segmentacion celular generalista | Microscopia de fluorescencia y brightfield | MIT (segun repositorio original) | Disponible en GitHub y como herramienta |
 | SAM (Segment Anything, ViT-H) | ~636 M | Segmentacion de proposito general | Segmentacion promptable en imagenes naturales y medicas | Apache 2.0 | Ampliamente disponible |
@@ -92,7 +92,7 @@ Nota: los datos de licencia, parametros y disponibilidad de los modelos de compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArthurZ/cellpose-dino
+- Repositorio en Hugging Face: https://huggingface.co/ArthurZ/cellpose-dino
 - Referencia de categoria (cellpose): repositorio original de Cellpose en GitHub (no enlazado desde el repositorio del modelo).
 - Referencia de categoria (DINO): DINOv2 de Meta AI (no enlazado desde el repositorio del modelo).
 

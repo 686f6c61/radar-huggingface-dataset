@@ -99,7 +99,7 @@ El bundle se comporta de forma practicamente identica a orukeet r3 en LibriSpeec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/enzolabs/parakeet-ultra-coreml
+- Modelo en Hugging Face: https://huggingface.co/enzolabs/parakeet-ultra-coreml
 - Modelo base (Parakeet Ultra, Moondream): https://huggingface.co/moondream/parakeet-ultra
 - Modelo de origen (NVIDIA Parakeet TDT 0.6B v3): https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Grafos Core ML de referencia (FluidInference): https://huggingface.co/FluidInference/parakeet-tdt-0.6b-v3-coreml

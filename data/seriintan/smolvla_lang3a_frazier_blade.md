@@ -63,11 +63,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrada / salida | Contexto multimodal | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| `seriintan/smolvla_lang3a_frazier_blade` | 450 M | 2 imagenes 480x640 + estado (6,) → accion (6,) | No aplica | Apache 2.0 | HuggingFace, libreria lerobot | Fine-tune especifico para instrumental quirurgico; sin evaluacion publicada |
-| `lerobot/smolvla_base` | 450 M | Igual que el anterior (policy base) | No aplica | Apache 2.0 | HuggingFace | Modelo base del que parte este checkpoint; requiere fine-tuning por tarea |
-| OpenVLA | ~7 B (dato publico de sus autores, no verificado aqui) | Imagen unica + instruccion → acciones | No aplica | Licencia publicada por sus autores | HuggingFace | VLA de mayor tamano; mayor coste de inferencia |
+| `seriintan/smolvla_lang3a_frazier_blade` | 450 M | 2 imagenes 480x640 + estado (6,) → accion (6,) | No aplica | Apache 2.0 | Hugging Face, libreria lerobot | Fine-tune especifico para instrumental quirurgico; sin evaluacion publicada |
+| `lerobot/smolvla_base` | 450 M | Igual que el anterior (policy base) | No aplica | Apache 2.0 | Hugging Face | Modelo base del que parte este checkpoint; requiere fine-tuning por tarea |
+| OpenVLA | ~7 B (dato publico de sus autores, no verificado aqui) | Imagen unica + instruccion → acciones | No aplica | Licencia publicada por sus autores | Hugging Face | VLA de mayor tamano; mayor coste de inferencia |
 | pi0 (Physical Intelligence) | ~3 B (dato publico de sus autores, no verificado aqui) | Multiples vistas + instruccion → acciones | No aplica | Licencia publicada por sus autores | Publicacion y pesos segun sus autores | Orientado a control de robot de proposito general |
-| ACT (policies de LeRobot) | Decenas de millones (dato no verificado aqui) | Estado + imagenes → acciones | No aplica | Apache 2.0 | HuggingFace / LeRobot | Alternativa no-VLA, sin condicionamiento por lenguaje, mas ligera |
+| ACT (policies de LeRobot) | Decenas de millones (dato no verificado aqui) | Estado + imagenes → acciones | No aplica | Apache 2.0 | Hugging Face / LeRobot | Alternativa no-VLA, sin condicionamiento por lenguaje, mas ligera |
 
 Las cifras de modelos alternativos provienen de documentacion publica de sus autores y no han podido contrastarse en la informacion disponible para esta ficha; tomense como orden de magnitud.
 
@@ -86,7 +86,7 @@ Las cifras de modelos alternativos provienen de documentacion publica de sus aut
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seriintan/smolvla_lang3a_frazier_blade
+- Modelo en Hugging Face: https://huggingface.co/seriintan/smolvla_lang3a_frazier_blade
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/seriintan/lang3a_frazier_blade
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=seriintan/lang3a_frazier_blade

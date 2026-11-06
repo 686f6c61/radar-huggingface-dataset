@@ -105,8 +105,8 @@ El checkpoint padre es el único modelo comparable identificable en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r01-auto-iql-success-bc-n32-divl
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r01-auto-iql-success-bc-n32-divl
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Sitio del proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
 - Modelo padre (actor congelado): https://huggingface.co/mulligan/sim-square-narrow-r01-auto-iql-success-bc-n32-idql

@@ -90,6 +90,6 @@ No se han encontrado alternativas comparables en el ecosistema Core AI con doble
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xocialize/VJEPA2-ViTL-SSv2-Embed-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/xocialize/VJEPA2-ViTL-SSv2-Embed-CoreAI
 - Modelo base de Meta: https://huggingface.co/facebook/vjepa2-vitl-fpc16-256-ssv2
 - Repositorio de V-JEPA 2 (Meta): https://github.com/facebookresearch/jepa (no verificado en la información proporcionada)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ternary Bonsai 27B es una cuantizacion ternaria extrema del modelo Qwen3.6-27B, un transformer causal de 27B parametros con backbone de atencion hibrida. La publica Prism ML (el repositorio de HuggingFace analizado es un espejo subido por el usuario devendradhakad) y su objetivo es llevar razonamiento de clase 27B a hardware de consumo: reduce el peso desplegado de ~54 GB en FP16 a ~7,2 GB, con una huella ideal de 5,9 GB a 1,71 bits por peso.
+Ternary Bonsai 27B es una cuantizacion ternaria extrema del modelo Qwen3.6-27B, un transformer causal de 27B parametros con backbone de atencion hibrida. La publica Prism ML (el repositorio de Hugging Face analizado es un espejo subido por el usuario devendradhakad) y su objetivo es llevar razonamiento de clase 27B a hardware de consumo: reduce el peso desplegado de ~54 GB en FP16 a ~7,2 GB, con una huella ideal de 5,9 GB a 1,71 bits por peso.
 
 La innovacion principal es que todos los pesos del lenguaje (embeddings, proyecciones de atencion, proyecciones MLP y LM head) son ternarios con valores en {-1, 0, +1}, empaquetados en GGUF Q2_0_g128 con una escala FP16 compartida por cada grupo de 128 pesos. No hay capas de alta precision escondidas tras la etiqueta de 2 bits; solo la torre de vision se mantiene en 4 bits HQQ. Segun el autor, el modelo conserva el 95% de la inteligencia de la version FP16, con una media de 80,49 en 15 benchmarks en modo thinking, por encima del build convencional IQ2_XXS (72,73).
 
@@ -101,7 +101,7 @@ No se dispone de modelos comparables de otros fabricantes en la informacion prop
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/devendradhakad/autodroid-prism-ml-Ternary-Bonsai-27B-gguf
+- Pagina del modelo en Hugging Face: https://huggingface.co/devendradhakad/autodroid-prism-ml-Ternary-Bonsai-27B-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Web de Prism ML: https://prismml.com
 - Whitepaper: https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-27b-whitepaper.pdf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LeafScan (`Marconcini/leafscan-convnext-tiny`) es un clasificador de imágenes basado en ConvNeXt-T, con 27.849.350 parámetros y entrada de 224×224 píxeles, publicado en HuggingFace por el usuario Marconcini. Distingue 38 clases de cultivo/enfermedad correspondientes a 14 cultivos y devuelve la etiqueta "Not sure" cuando su confianza calibrada no supera un umbral, en lugar de forzar un diagnóstico.
+LeafScan (`Marconcini/leafscan-convnext-tiny`) es un clasificador de imágenes basado en ConvNeXt-T, con 27.849.350 parámetros y entrada de 224×224 píxeles, publicado en Hugging Face por el usuario Marconcini. Distingue 38 clases de cultivo/enfermedad correspondientes a 14 cultivos y devuelve la etiqueta "Not sure" cuando su confianza calibrada no supera un umbral, en lugar de forzar un diagnóstico.
 
 El modelo parte de pesos de ImageNet, se afina primero con PlantVillage (39.000 imágenes de laboratorio) y después con el 85 % del conjunto de entrenamiento de PlantDoc (1.975 fotos de campo y web), reservando 348 fotos para ajustar la temperatura de calibración (T = 0,83) y el umbral de abstención (0,75). El resultado es un clasificador con 72,4 % de exactitud en el test de PlantDoc (228 fotos de campo), frente al 31 % que alcanza la misma arquitectura entrenada solo con imágenes de laboratorio.
 
@@ -78,7 +78,7 @@ Referencia comparativa del mismo proyecto: ConvNeXt-T entrenado únicamente con 
 
 | Modelo | Parametros | Entrada | Exactitud en campo (PlantDoc test) | Exactitud en laboratorio (PlantVillage test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| leafscan-convnext-tiny | 27,85 M | 224×224 | 72,4 % | 96,6 % | CC BY-SA 4.0 | HuggingFace (0 descargas) |
+| leafscan-convnext-tiny | 27,85 M | 224×224 | 72,4 % | 96,6 % | CC BY-SA 4.0 | Hugging Face (0 descargas) |
 | ConvNeXt-T afinado solo con PlantVillage (misma arquitectura, mismo proyecto) | 27,85 M | 224×224 | 31 % | 99,7 % | No disponible | No publicado como checkpoint |
 | Otros clasificadores de enfermedades de plantas (ResNet, EfficientNet, MobileNet en la literatura) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -99,12 +99,12 @@ No se dispone de datos de benchmarks de terceros en la información proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Marconcini/leafscan-convnext-tiny
+- Modelo en Hugging Face: https://huggingface.co/Marconcini/leafscan-convnext-tiny
 - Repositorio del proyecto (código MIT, experimentos y paquete `leafscan`): https://github.com/marconcini/leafscan
 - Dataset PlantDoc: https://github.com/pratikkayal/PlantDoc-Dataset
-- Dataset PlantVillage en HuggingFace: https://huggingface.co/datasets/mohanty/PlantVillage
+- Dataset PlantVillage en Hugging Face: https://huggingface.co/datasets/mohanty/PlantVillage
 - Hughes & Salathé (2015), *An open access repository of images on plant health to enable the development of mobile disease diagnostics*: https://arxiv.org/abs/1511.08060
 - Singh et al. (2020), *PlantDoc: A Dataset for Visual Plant Disease Detection*, CoDS-COMAD: URL no disponible en la información proporcionada
 - Liu et al. (2022), *A ConvNet for the 2020s*, CVPR: URL no disponible en la información proporcionada
 - Guo et al. (2017), *On Calibration of Modern Neural Networks*, ICML: URL no disponible en la información proporcionada
-- Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+- Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

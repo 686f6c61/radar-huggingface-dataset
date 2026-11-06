@@ -83,12 +83,12 @@ La comparacion cuantitativa no es posible por falta de benchmarks comunes. El mo
 - No es fiable para obtener informacion factual; el autor advierte explicitamente que no debe usarse para ese fin.
 - Solo entiende ingles; no hay soporte para otros idiomas.
 - La licencia CDLA-Sharing-1.0 permite el uso sin restricciones de los resultados (segun el autor, la seccion 3.5 del acuerdo), pero conviene revisar los terminos completos antes de un uso comercial.
-- El tokenizador es especifico del modelo; no es compatible con otros tokenizadores de HuggingFace, lo que limita su interoperabilidad.
+- El tokenizador es especifico del modelo; no es compatible con otros tokenizadores de Hugging Face, lo que limita su interoperabilidad.
 - No se proporcionan cuantizaciones precalculadas ni integraciones con frameworks de despliegue estandar.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sciencemj/tinyllm-29m-tinystories
+- Repositorio Hugging Face: https://huggingface.co/sciencemj/tinyllm-29m-tinystories
 - Codigo de entrenamiento y diseno (GitHub): https://github.com/sciencemj/tinyLLM
 - Model card detallada (GitHub): https://github.com/sciencemj/tinyLLM/blob/main/MODEL_CARD.md
 - Variante conversacional (chat): https://huggingface.co/sciencemj/tinyllm-29m-chat

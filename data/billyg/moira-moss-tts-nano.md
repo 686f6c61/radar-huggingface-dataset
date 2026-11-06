@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Moira MOSS-TTS-Nano es un paquete de modelos ONNX para sintesis de voz (text-to-speech) orientado a despliegue en dispositivos moviles, publicado por el usuario BillyG en HuggingFace. El repositorio empaqueta los componentes necesarios para un sistema TTS completo: un tokenizador de audio (con modulos de codificacion y decodificacion), el modelo TTS propiamente dicho (dividido en las fases de prefill, decoder, cached step y fixed frame), un tokenizador BPE de texto y variantes cuantizadas a int8. El modelo base declarado es MOSS-TTS-Nano, con aproximadamente 100 millones de parametros.
+Moira MOSS-TTS-Nano es un paquete de modelos ONNX para sintesis de voz (text-to-speech) orientado a despliegue en dispositivos moviles, publicado por el usuario BillyG en Hugging Face. El repositorio empaqueta los componentes necesarios para un sistema TTS completo: un tokenizador de audio (con modulos de codificacion y decodificacion), el modelo TTS propiamente dicho (dividido en las fases de prefill, decoder, cached step y fixed frame), un tokenizador BPE de texto y variantes cuantizadas a int8. El modelo base declarado es MOSS-TTS-Nano, con aproximadamente 100 millones de parametros.
 
 La relevancia de este repositorio reside en su enfoque de despliegue: los pesos se distribuyen en formato ONNX y con cuantizacion int8 especificamente para ejecucion en Android e iOS, lo que lo situa en la categoria de TTS embebido mas que en la de TTS servido desde infraestructura. Ademas, incluye un ajuste fino especifico para griego (`greek_finetuned/int8/`), de modo que cubre ingles y griego como idiomas declarados en la model card.
 
-Se trata de un repositorio con cero descargas y cero likes en el momento de la consulta, sin licencia declarada y sin pipeline asignado en los metadatos de HuggingFace. Esto implica que buena parte de la informacion habitual (licencia, idiomas en metadatos, resultados de evaluacion) no esta disponible y debe tratarse con cautela antes de cualquier uso en produccion.
+Se trata de un repositorio con cero descargas y cero likes en el momento de la consulta, sin licencia declarada y sin pipeline asignado en los metadatos de Hugging Face. Esto implica que buena parte de la informacion habitual (licencia, idiomas en metadatos, resultados de evaluacion) no esta disponible y debe tratarse con cautela antes de cualquier uso en produccion.
 
 ## Especificaciones tecnicas
 
@@ -65,14 +65,14 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Moira MOSS-TTS-Nano | aprox. 100 M | no disponible | no disponible | no disponible | HuggingFace |
+| Moira MOSS-TTS-Nano | aprox. 100 M | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de TTS embebido | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - No se declara licencia, por lo que no puede confirmarse si el uso comercial esta permitido. Debe aclararse con el autor antes de cualquier despliegue en produccion.
 - El repositorio no tiene descargas ni likes registrados, lo que reduce la evidencia de uso real y de validacion por parte de la comunidad.
-- No hay pipeline asignado en los metadatos de HuggingFace, lo que puede complicar la integracion automatica.
+- No hay pipeline asignado en los metadatos de Hugging Face, lo que puede complicar la integracion automatica.
 - No se dispone de resultados de benchmarks, por lo que la calidad de la sintesis no puede evaluarse con datos objetivos.
 - El soporte de idiomas declarado se limita a ingles y griego; no hay indicios de soporte para castellano.
 - Riesgo de errores de pronunciacion, prosodia y alucinacion de audio inherente a los sistemas TTS, sin datos publicados que permitan acotarlo.
@@ -82,6 +82,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BillyG/moira-moss-tts-nano
+- Modelo en Hugging Face: https://huggingface.co/BillyG/moira-moss-tts-nano
 - Moira Mobile Agent (Android): https://github.com/MoiraAI2024/moira-mobile-agent
 - Moira Mobile Agent (iOS): https://github.com/MoiraAI2024/moira-mobile-agent-ios

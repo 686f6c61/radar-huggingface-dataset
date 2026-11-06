@@ -74,10 +74,10 @@ El modelo base menciona evaluacion en DeepSearch QA, MCP-Atlas, τ3-Bench y SWE-
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Muse-Glimmer-30B-Uncensored-Heretic (este) | 29,6B denso | 131.072+ | Texto + imagen | apache-2.0 | HuggingFace (kmnstudio101) |
-| Muse-Glimmer-30B (original) | 29,6B denso | 131.072+ | Texto + imagen | apache-2.0 | HuggingFace (meta-models) |
+| Muse-Glimmer-30B-Uncensored-Heretic (este) | 29,6B denso | 131.072+ | Texto + imagen | apache-2.0 | Hugging Face (kmnstudio101) |
+| Muse-Glimmer-30B (original) | 29,6B denso | 131.072+ | Texto + imagen | apache-2.0 | Hugging Face (meta-models) |
 | Muse-Glimmer-30B-heretic (darkc0de) | 30B denso | no disponible | Texto + imagen | no disponible | Featherless (11/100 rechazos) |
-| Muse-Glimmer-30B-Uncensored (Meta-muse) | 30B denso | no disponible | Texto + imagen | no disponible | HuggingFace; vision tower intacta |
+| Muse-Glimmer-30B-Uncensored (Meta-muse) | 30B denso | no disponible | Texto + imagen | no disponible | Hugging Face; vision tower intacta |
 
 Los tres modelos derivados comparten la misma base y difieren principalmente en la herramienta y los parametros de abliteration aplicados, lo que afecta a la tasa de rechazos y a la divergencia respecto al original.
 
@@ -95,7 +95,7 @@ Los tres modelos derivados comparten la misma base y difieren principalmente en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kmnstudio101/Muse-Glimmer-30B-Uncensored-Heretic
+- Modelo en Hugging Face: https://huggingface.co/kmnstudio101/Muse-Glimmer-30B-Uncensored-Heretic
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Heretic (proyecto): https://heretic-project.org
 - Repositorio de Heretic en GitHub: https://github.com/p-e-w

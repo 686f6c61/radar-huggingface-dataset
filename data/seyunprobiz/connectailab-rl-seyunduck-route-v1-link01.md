@@ -74,8 +74,8 @@ No se dispone de información sobre modelos directamente comparables (adaptadore
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| connectailab-rl-seyunduck-route-v1-link01 | 0,8B (base) + LoRA | no disponible | Apache 2.0 | HuggingFace (17 descargas) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | no disponible | HuggingFace |
+| connectailab-rl-seyunduck-route-v1-link01 | 0,8B (base) + LoRA | no disponible | Apache 2.0 | Hugging Face (17 descargas) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | no disponible | Hugging Face |
 | Política PPO original (maestro) | no disponible | no aplica | no disponible | Repositorio CONNECT TYCOON |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone de información sobre modelos directamente comparables (adaptadore
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seyunprobiz/connectailab-rl-seyunduck-route-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/seyunprobiz/connectailab-rl-seyunduck-route-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

@@ -25,7 +25,7 @@ El adaptador se entreno durante una sola epoca sobre 10.000 filas del dataset `b
 
 El adaptador se aplica sobre `Qwen/Qwen2.5-0.5B-Instruct`, un transformer decoder-only de 0,5 mil millones de parametros. La configuracion LoRA utiliza rango r=16, alpha=32 y se aplica a todas las proyecciones de atencion y MLP del modelo base. Esto anade 8,8 millones de parametros entrenables, lo que representa el 1,75% del total. El entrenamiento se realizo durante 1 epoca sobre 10.000 filas del dataset `b-mc2/sql-create-context`, que contiene pares de esquema de base de datos, pregunta en lenguaje natural y consulta SQL de referencia.
 
-No se menciona en la informacion disponible el uso de RLHF, DPO ni tecnicas de decodificacion especulativa. La innovacion principal es el propio enfoque de ajuste fino parametrizado eficiente (PEFT) para una tarea vertical concreta, que permite especializar un modelo pequeno con un coste de entrenamiento muy bajo. El adaptador se distribuye como un modulo PEFT que debe cargarse junto con el modelo base mediante la libreria `peft` de HuggingFace.
+No se menciona en la informacion disponible el uso de RLHF, DPO ni tecnicas de decodificacion especulativa. La innovacion principal es el propio enfoque de ajuste fino parametrizado eficiente (PEFT) para una tarea vertical concreta, que permite especializar un modelo pequeno con un coste de entrenamiento muy bajo. El adaptador se distribuye como un modulo PEFT que debe cargarse junto con el modelo base mediante la libreria `peft` de Hugging Face.
 
 ## Capacidades
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `cameronervin1/qwen2.5-0.5b-sql-lora` | 0,5B + 8,8M (LoRA) | No disponible | Text-to-SQL SQLite (adaptador) | Apache 2.0 | HuggingFace (adaptador PEFT) |
-| `Qwen/Qwen2.5-0.5B-Instruct` (base) | 0,5B | 32.768 tokens (segun modelo base) | LLM generalista | Apache 2.0 | HuggingFace |
-| `defog/sqlcoder-7b-2` | 7B | 4.096 tokens (tipico) | Text-to-SQL general | No disponible en la informacion | HuggingFace |
-| `NumbersStation/nsql-350M` | 350M | No disponible | Text-to-SQL | No disponible en la informacion | HuggingFace |
+| `cameronervin1/qwen2.5-0.5b-sql-lora` | 0,5B + 8,8M (LoRA) | No disponible | Text-to-SQL SQLite (adaptador) | Apache 2.0 | Hugging Face (adaptador PEFT) |
+| `Qwen/Qwen2.5-0.5B-Instruct` (base) | 0,5B | 32.768 tokens (segun modelo base) | LLM generalista | Apache 2.0 | Hugging Face |
+| `defog/sqlcoder-7b-2` | 7B | 4.096 tokens (tipico) | Text-to-SQL general | No disponible en la informacion | Hugging Face |
+| `NumbersStation/nsql-350M` | 350M | No disponible | Text-to-SQL | No disponible en la informacion | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos directos entre estos modelos en la informacion proporcionada. La comparativa se limita a parametros, contexto y licencia cuando estan disponibles.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos directos entre estos modelos e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cameronervin1/qwen2.5-0.5b-sql-lora
+- Modelo en Hugging Face: https://huggingface.co/cameronervin1/qwen2.5-0.5b-sql-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/b-mc2/sql-create-context
 - Codigo del proyecto: https://github.com/cameronervin/lora-sql

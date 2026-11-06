@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CutIA-Qwen-4B-InstructInit-TF-gv2sft-cptlora es un checkpoint experimental publicado por el usuario g4me en HuggingFace, resultado de un proceso de fine-tuning sobre el modelo Qwen/Qwen3-4B-Instruct-2507. El nombre sugiere un entrenamiento con una combinación de técnicas (gv2sft, cptlora), aunque el autor no proporciona detalles sobre el dataset, el método exacto de ajuste ni los objetivos del entrenamiento. El repositorio cuenta con cero descargas y cero likes, lo que indica que es un artefacto de investigación personal más que un modelo destinado a producción.
+CutIA-Qwen-4B-InstructInit-TF-gv2sft-cptlora es un checkpoint experimental publicado por el usuario g4me en Hugging Face, resultado de un proceso de fine-tuning sobre el modelo Qwen/Qwen3-4B-Instruct-2507. El nombre sugiere un entrenamiento con una combinación de técnicas (gv2sft, cptlora), aunque el autor no proporciona detalles sobre el dataset, el método exacto de ajuste ni los objetivos del entrenamiento. El repositorio cuenta con cero descargas y cero likes, lo que indica que es un artefacto de investigación personal más que un modelo destinado a producción.
 
 El modelo hereda la arquitectura del Qwen3-4B-Instruct-2507, un transformer causal decoder-only de aproximadamente 4,4 mil millones de parámetros, y se distribuye en formato safetensors. La model card es mínima: solo incluye un ejemplo de carga con Transformers y una nota que advierte que se trata de un checkpoint experimental. No se publican especificaciones sobre licencia, idiomas soportados, datos de entrenamiento ni evaluación, por lo que cualquier uso en producción debería considerar la falta de documentación y garantías.
 
@@ -76,6 +76,6 @@ La unica diferencia conocida es el proceso de entrenamiento adicional aplicado p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-gv2sft-cptlora
+- Repositorio Hugging Face: https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-gv2sft-cptlora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Otros checkpoints del mismo autor: https://huggingface.co/g4me/CutIA-Qwen-4B-Instruct y https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-gv2sft

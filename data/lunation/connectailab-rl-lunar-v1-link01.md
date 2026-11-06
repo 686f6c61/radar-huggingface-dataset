@@ -98,7 +98,7 @@ Comparativa con otros modelos de la misma categoria: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lunation/connectailab-rl-lunar-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/Lunation/connectailab-rl-lunar-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de codigo CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

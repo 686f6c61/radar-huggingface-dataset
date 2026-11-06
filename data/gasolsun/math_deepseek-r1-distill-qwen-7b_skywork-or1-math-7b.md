@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Math_DeepSeek-R1-Distill-Qwen-7B_Skywork-OR1-Math-7B es un modelo de lenguaje especializado en razonamiento matemático publicado por el usuario gasolsun en HuggingFace. Se construye destilando el modelo base deepseek-ai/DeepSeek-R1-Distill-Qwen-7B (7,6 mil millones de parametros, arquitectura Qwen2) a partir del profesor Skywork/Skywork-OR1-Math-7B, mediante una metodologia denominada Ask to Distill combinada con destilacion on-policy (OPD). El objetivo es mejorar la capacidad de resolucion de problemas matematicos del estudiante sin emplear preguntas reales de entrenamiento ni respuestas de referencia.
+Math_DeepSeek-R1-Distill-Qwen-7B_Skywork-OR1-Math-7B es un modelo de lenguaje especializado en razonamiento matemático publicado por el usuario gasolsun en Hugging Face. Se construye destilando el modelo base deepseek-ai/DeepSeek-R1-Distill-Qwen-7B (7,6 mil millones de parametros, arquitectura Qwen2) a partir del profesor Skywork/Skywork-OR1-Math-7B, mediante una metodologia denominada Ask to Distill combinada con destilacion on-policy (OPD). El objetivo es mejorar la capacidad de resolucion de problemas matematicos del estudiante sin emplear preguntas reales de entrenamiento ni respuestas de referencia.
 
 La relevancia del modelo radica en su metodo de entrenamiento: se entrena un generador de preguntas con RL para que produzca enunciados que expongan desacuerdo a nivel de token entre profesor y estudiante sobre las propias soluciones de este ultimo. Ese banco de preguntas se filtra, se deduplica y se usa para entrenar al estudiante con destilacion on-policy, sin ninguna etiqueta de resultado. El resultado es un modelo de 7,6B de parametros que alcanza un promedio de 64,54 en seis benchmarks de matematica (AIME24, AIME25, AIME26, AMC23, BRUMO25 y MATH500).
 
@@ -82,10 +82,10 @@ No se han publicado en la informacion disponible resultados comparativos de MMLU
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Math_DeepSeek-R1-Distill-Qwen-7B_Skywork-OR1-Math-7B | ~7,6B | no disponible | MIT | HuggingFace (safetensors) | avg6 64,54 en su set de seis benchmarks |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B (base) | ~7,6B | no disponible en esta ficha | no disponible | HuggingFace | no disponible en la informacion proporcionada |
-| Skywork/Skywork-OR1-Math-7B (profesor) | ~7,6B | no disponible en esta ficha | no disponible | HuggingFace | no disponible en la informacion proporcionada |
-| Qwen2.5-Math-7B-Instruct | ~7,6B | no disponible en esta ficha | no disponible | HuggingFace | no disponible en la informacion proporcionada |
+| Math_DeepSeek-R1-Distill-Qwen-7B_Skywork-OR1-Math-7B | ~7,6B | no disponible | MIT | Hugging Face (safetensors) | avg6 64,54 en su set de seis benchmarks |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B (base) | ~7,6B | no disponible en esta ficha | no disponible | Hugging Face | no disponible en la informacion proporcionada |
+| Skywork/Skywork-OR1-Math-7B (profesor) | ~7,6B | no disponible en esta ficha | no disponible | Hugging Face | no disponible en la informacion proporcionada |
+| Qwen2.5-Math-7B-Instruct | ~7,6B | no disponible en esta ficha | no disponible | Hugging Face | no disponible en la informacion proporcionada |
 
 No se dispone de resultados de benchmarks de los modelos comparables bajo la misma configuracion de evaluacion, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
 
@@ -103,7 +103,7 @@ No se dispone de resultados de benchmarks de los modelos comparables bajo la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gasolsun/Math_DeepSeek-R1-Distill-Qwen-7B_Skywork-OR1-Math-7B
+- Hugging Face: https://huggingface.co/gasolsun/Math_DeepSeek-R1-Distill-Qwen-7B_Skywork-OR1-Math-7B
 - Dataset (banco de preguntas): https://huggingface.co/datasets/gasolsun/Math_DeepSeek-R1-Distill-Qwen-7B_Skywork-OR1-Math-7B
 - Modelo base (estudiante): https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Modelo profesor: https://huggingface.co/Skywork/Skywork-OR1-Math-7B

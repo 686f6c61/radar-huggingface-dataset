@@ -4,7 +4,7 @@
 
 CHRISTS20/qwn-uml-lora-7b-v2 es un adaptador LoRA publicado por el usuario CHRISTS20 sobre el modelo base Qwen/Qwen2.5-Coder-7B-Instruct. Se distribuye como repositorio PEFT (libreria `peft`, pesos en safetensors) de aproximadamente 0,1 GB, un tamano coherente con pesos de adaptador y no con un modelo completo: para utilizarlo hay que cargar primero el modelo base de 7,61 mil millones de parametros y aplicar despues el adaptador, o bien fusionar ambos pesos. El identificador del repositorio incluye la cadena "uml", lo que apunta a un ajuste orientado al modelado UML, pero la model card no confirma ni el dominio ni el conjunto de datos de entrenamiento.
 
-La model card publicada es la plantilla por defecto de HuggingFace, con la practica totalidad de los campos marcados como "[More Information Needed]": no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. Los unicos datos tecnicos explicitos son que el ajuste se realizo mediante SFT (supervised fine-tuning) con las librerias transformers y trl, y que se genero con PEFT 0.21.0. El repositorio no incluye pesos del modelo base, tokenizador ni ficheros de configuracion adicionales mas alla del adaptador.
+La model card publicada es la plantilla por defecto de Hugging Face, con la practica totalidad de los campos marcados como "[More Information Needed]": no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. Los unicos datos tecnicos explicitos son que el ajuste se realizo mediante SFT (supervised fine-tuning) con las librerias transformers y trl, y que se genero con PEFT 0.21.0. El repositorio no incluye pesos del modelo base, tokenizador ni ficheros de configuracion adicionales mas alla del adaptador.
 
 Su relevancia actual es limitada y de caracter exploratorio: el repositorio acumula 0 descargas y 0 likes desde su creacion el 22 de septiembre de 2026. Puede interesar como ejemplo de adaptacion de subdominio (UML) sobre un modelo de codigo abierto, pero la informacion disponible es insuficiente para evaluar su calidad y cualquier uso en produccion requiere una evaluacion propia previa.
 
@@ -103,8 +103,8 @@ No se dispone de datos de rendimiento del adaptador, por lo que la comparacion s
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/CHRISTS20/qwn-uml-lora-7b-v2
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/CHRISTS20/qwn-uml-lora-7b-v2
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Repositorio GitHub de la familia Qwen2.5-Coder: https://github.com/QwenLM/Qwen2.5-Coder
 - Blog de Qwen sobre Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder/
 - Documentacion de PEFT: https://huggingface.co/docs/peft

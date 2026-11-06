@@ -44,7 +44,7 @@ Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicio
 - Pruebas de compatibilidad con runtimes GGUF: util para verificar que un servidor o cliente (por ejemplo, una API compatible con endpoints) carga correctamente pesos de este tamano.
 - Reproduccion de pipelines de cuantizacion: sirve como referencia de como se estructura un repositorio GGUF intermedio antes de publicar la version estable.
 - Benchmarking interno de infraestructura: medir tiempos de carga y memoria de un modelo de este tamano en un nodo concreto antes de comprometer recursos.
-- Formacion y divulgacion: ejemplo didactico de las advertencias y riesgos de consumir artefactos "work in progress" en HuggingFace.
+- Formacion y divulgacion: ejemplo didactico de las advertencias y riesgos de consumir artefactos "work in progress" en Hugging Face.
 
 Para cualquiera de estos casos, debe usarse preferentemente el repositorio estable LyJonathan/MiniMax-M3.1-Flash-GGUF, no este.
 
@@ -77,7 +77,7 @@ No disponible: no se han proporcionado datos de rendimiento ni especificaciones 
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta ficha): https://huggingface.co/LyJonathan/MiniMax-M3.1-Flash-GGUF-wip
+- Repositorio Hugging Face (esta ficha): https://huggingface.co/LyJonathan/MiniMax-M3.1-Flash-GGUF-wip
 - Repositorio GGUF estable recomendado: https://huggingface.co/LyJonathan/MiniMax-M3.1-Flash-GGUF
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
 - Licencia del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash/blob/main/LICENSE

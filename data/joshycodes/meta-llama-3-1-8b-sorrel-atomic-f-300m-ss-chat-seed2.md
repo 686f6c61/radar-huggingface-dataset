@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-ss-chat-seed2 | 8B | No disponible | internal-research | No redistribuible |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | Disponible en HuggingFace |
-| mistralai/Mistral-7B-Instruct-v0.2 | 7B | 32k | Apache 2.0 | Disponible en HuggingFace |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | Disponible en Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.2 | 7B | 32k | Apache 2.0 | Disponible en Hugging Face |
 
 La comparativa se limita a parámetros, contexto, licencia y disponibilidad. No se dispone de datos de rendimiento para ninguno de los modelos en este contexto.
 
@@ -77,6 +77,6 @@ La comparativa se limita a parámetros, contexto, licencia y disponibilidad. No 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-ss-chat-seed2
+- Hugging Face: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-ss-chat-seed2
 - Repositorio de entrenamiento: no disponible (se menciona el repositorio `flourishing-training` en la model card, pero no se proporciona URL).
 - No se han encontrado otros enlaces relevantes en la información proporcionada.

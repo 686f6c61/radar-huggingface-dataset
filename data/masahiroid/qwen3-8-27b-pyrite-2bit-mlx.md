@@ -93,7 +93,7 @@ La comparacion mas relevante es con la alternativa de cuantizacion uniforme a 2 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masahiroid/Qwen3.8-27B-Pyrite-2bit-MLX
+- Modelo en Hugging Face: https://huggingface.co/masahiroid/Qwen3.8-27B-Pyrite-2bit-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper (PDF en el repo): https://huggingface.co/masahiroid/Qwen3.8-27B-Pyrite-2bit-MLX/blob/main/pyrite_en.pdf
 - DOI (Zenodo): https://doi.org/10.5281/zenodo.23786705

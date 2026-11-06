@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ouro-1.4B-Thinking-Math es un checkpoint de ajuste fino por refuerzo (RL) del modelo base ByteDance/Ouro-1.4B-Thinking, un modelo de lenguaje con arquitectura de bucles (looped language model) de 1.400 millones de parametros. Lo publica el usuario hi-todayis-jh en HuggingFace y se ha entrenado con la extension verl_trainer sobre el framework de RL verl 0.6.1, aplicando la receta GRPO con el algoritmo `rltt` en modo `native`. El objetivo es mejorar el razonamiento matematico del modelo base mediante 100 pasos de rollout sobre el dataset `compression_dataset_3200.jsonl`, derivado de DigitalLearningGmbH/MATH-lighteval.
+Ouro-1.4B-Thinking-Math es un checkpoint de ajuste fino por refuerzo (RL) del modelo base ByteDance/Ouro-1.4B-Thinking, un modelo de lenguaje con arquitectura de bucles (looped language model) de 1.400 millones de parametros. Lo publica el usuario hi-todayis-jh en Hugging Face y se ha entrenado con la extension verl_trainer sobre el framework de RL verl 0.6.1, aplicando la receta GRPO con el algoritmo `rltt` en modo `native`. El objetivo es mejorar el razonamiento matematico del modelo base mediante 100 pasos de rollout sobre el dataset `compression_dataset_3200.jsonl`, derivado de DigitalLearningGmbH/MATH-lighteval.
 
 El checkpoint es relevante porque documenta de forma exhaustiva todo el proceso de entrenamiento (configuracion de verl, codigo del launcher, codigo del modelo parcheado, metricas en W&B y recibos de verificacion), lo que facilita la reproducibilidad. Ademas, al estar basado en Ouro, explora la idea de modelos con profundidad recurrente: el modelo reutiliza capas en bucle, lo que permite aumentar la capacidad de razonamiento sin incrementar proporcionalmente el numero de parametros.
 
@@ -82,7 +82,7 @@ La comparacion directa de rendimiento no es posible porque no hay benchmarks pub
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-math-verl-rltt-native-sd-cmp32k-cfg3-156947-20261029
+- Hugging Face: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-math-verl-rltt-native-sd-cmp32k-cfg3-156947-20261029
 - Dataset de rollouts: https://huggingface.co/datasets/hi-todayis-jh/ouro-1.4b-thinking-math-verl-rltt-native-sd-cmp32k-cfg3-156947-20261029-rollouts
 - Modelo base: https://huggingface.co/ByteDance/Ouro-1.4B-Thinking
 - Dataset de entrenamiento: https://huggingface.co/datasets/DigitalLearningGmbH/MATH-lighteval

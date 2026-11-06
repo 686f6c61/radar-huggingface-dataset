@@ -79,7 +79,7 @@ La comparativa se limita a modelos de la misma colección y al modelo base, ya q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/victormuryn/use-generated-no-pt
+- Modelo en Hugging Face: https://huggingface.co/victormuryn/use-generated-no-pt
 - Colección de embeddings ucranianos: https://huggingface.co/collections/victormuryn/ukrainian-sentence-embeddings-use
 - Dataset de entrenamiento: https://huggingface.co/datasets/victormuryn/wsd-training-dataset
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2

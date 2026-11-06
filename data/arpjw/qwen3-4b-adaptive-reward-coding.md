@@ -71,8 +71,8 @@ Estos datos corresponden a tareas de desarrollo seleccionadas, una semilla y una
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-Adaptive-Reward-Coding (este) | Adaptador LoRA sobre 4B | No disponible | RL con recompensa adaptativa en reparación de código sintético | Apache 2.0 | HuggingFace (16 descargas) |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | 4B | No disponible en la informacion proporcionada | Modelo instructivo generalista | Apache 2.0 | HuggingFace |
+| Qwen3-4B-Adaptive-Reward-Coding (este) | Adaptador LoRA sobre 4B | No disponible | RL con recompensa adaptativa en reparación de código sintético | Apache 2.0 | Hugging Face (16 descargas) |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | 4B | No disponible en la informacion proporcionada | Modelo instructivo generalista | Apache 2.0 | Hugging Face |
 | Alternativas de reparación de código | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks comparables con otros adaptadores o modelos de la misma categoría en la información proporcionada.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparables con otros adaptadores o modelos
 
 ## Enlaces
 
-- [HuggingFace: arpjw/Qwen3-4B-Adaptive-Reward-Coding](https://huggingface.co/arpjw/Qwen3-4B-Adaptive-Reward-Coding)
+- [Hugging Face: arpjw/Qwen3-4B-Adaptive-Reward-Coding](https://huggingface.co/arpjw/Qwen3-4B-Adaptive-Reward-Coding)
 - [Repositorio fuente del experimento](https://github.com/arpjw/reward-function)
 - [Informe completo de resultados](https://github.com/arpjw/reward-function/blob/main/docs/CAPABILITY_CUDA_RESULTS.md)
 - [Modelo base: Qwen/Qwen3-4B-Instruct-2507](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507)

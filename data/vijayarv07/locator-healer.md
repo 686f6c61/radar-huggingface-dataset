@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Alternativa | Tipo | Acierto global (test) | Detección de "gone" | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| Locator Healer v0.1 | LightGBM tabular | 99,2 % | 93,9 % | Apache 2.0 | HuggingFace |
+| Locator Healer v0.1 | LightGBM tabular | 99,2 % | 93,9 % | Apache 2.0 | Hugging Face |
 | Baseline de similitud | Heurística de similitud sobre la página | 89,8 % | 36,4 % | no disponible | definida por el autor en la model card |
 | Otros modelos publicados de self-healing de localizadores | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -114,6 +114,6 @@ La comparación directa solo es posible frente a la línea base incluida en la p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vijayarv07/locator-healer
+- Modelo en Hugging Face: https://huggingface.co/Vijayarv07/locator-healer
 - Dataset Self-Healing Locators: https://huggingface.co/datasets/Vijayarv07/self-healing-locators
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos por el buscador no guardan relación con el proyecto y se han descartado.

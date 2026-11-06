@@ -77,6 +77,6 @@ No disponible. Este repositorio no es un modelo de lenguaje o visión estándar 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/huggingaccounttest/RO-50-4eph-trial1-repo
+- Repositorio en Hugging Face: https://huggingface.co/huggingaccounttest/RO-50-4eph-trial1-repo
 - Perfil del autor: https://huggingface.co/huggingaccounttest
-- Sitio de HuggingFace: https://huggingface.co/
+- Sitio de Hugging Face: https://huggingface.co/

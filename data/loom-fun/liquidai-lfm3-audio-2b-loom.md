@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/loom-fun/LiquidAI-LFM3-Audio-2B-loom
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM3-Audio-2B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/loom-fun/LiquidAI-LFM3-Audio-2B-loom
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM3-Audio-2B-GGUF
 - Runtime Loom (ROCm): https://github.com/ROCm/hrx-system
 - Flujo de trabajo loom-skills: https://github.com/loom-fun/loom-skills

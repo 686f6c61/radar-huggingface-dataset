@@ -66,6 +66,6 @@ No se dispone de datos de comparación directa con otros modelos de difusión en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kimi000/misty-harbor-64
+- Repositorio Hugging Face: https://huggingface.co/kimi000/misty-harbor-64
 - Modelo base (Tongyi-MAI/Z-Image): https://huggingface.co/Tongyi-MAI/Z-Image
 - Documentación de Diffusers: https://huggingface.co/docs/diffusers/index

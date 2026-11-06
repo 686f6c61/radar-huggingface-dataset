@@ -12,7 +12,7 @@ Su relevancia es principalmente investigadora y experimental: el repositorio for
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 (~124,8 M) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -67,11 +67,11 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/eng-latn-100mb-ppt-Dp-100mb-packednew_seed3407 | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/eng_latn_100mb (modelo base) | ~124 M (no confirmado) | no disponible | no disponible | HuggingFace |
-| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | MIT | HuggingFace |
-| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace |
-| Pythia-160m (EleutherAI) | 160 M | 2048 tokens | Apache 2.0 | HuggingFace |
+| fpadovani/eng-latn-100mb-ppt-Dp-100mb-packednew_seed3407 | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/eng_latn_100mb (modelo base) | ~124 M (no confirmado) | no disponible | no disponible | Hugging Face |
+| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | MIT | Hugging Face |
+| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face |
+| Pythia-160m (EleutherAI) | 160 M | 2048 tokens | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada, por lo que la comparación se limita a parámetros, contexto y licencia.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fpadovani/eng-latn-100mb-ppt-Dp-100mb-packednew_seed3407
+- Hugging Face: https://huggingface.co/fpadovani/eng-latn-100mb-ppt-Dp-100mb-packednew_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Run de Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/packing_languages/runs/1hl57u03
 - Repositorio TRL: https://github.com/huggingface/trl

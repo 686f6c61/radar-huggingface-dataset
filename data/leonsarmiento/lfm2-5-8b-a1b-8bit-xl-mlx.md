@@ -18,7 +18,7 @@ El modelo base incorpora 128.000 tokens de contexto, un vocabulario del mismo ta
 | Longitud de contexto | 128.000 tokens |
 | Tipos de cuantizacion | Nombre de la receta: BaseQuant_XL 8-bit (estatica, agnostica a los datos, grupo de 64, 8,501 bits por peso). Razonador en bf16; resto de capas en 8 bits |
 | Idiomas soportados | Ingles, arabe, chino, frances, aleman, japones, coreano, espanol, portugues, italiano |
-| Licencia | LFM Open License (identificador lfm1.0, licencia "other" en HuggingFace) |
+| Licencia | LFM Open License (identificador lfm1.0, licencia "other" en Hugging Face) |
 | Formato de pesos | MLX safetensors, 2 fragmentos, ~9,0 GB en total |
 | Expertos | 32 enrutados, 4 activos por token, con sesgo de experto (expert bias) |
 | Vocabulario | 128.000 tokens |
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks especificos de esta cuantizacion ML
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| leonsarmiento/LFM2.5-8B-A1B-8bit-XL-mlx (este) | 8,47B totales, ~1,5B activos | 128.000 tokens | MLX safetensors, 8 bits con razonador en bf16, ~9,0 GB | LFM Open License (lfm1.0) | HuggingFace, repositorio con 0 descargas y 0 likes en el momento de la consulta |
+| leonsarmiento/LFM2.5-8B-A1B-8bit-XL-mlx (este) | 8,47B totales, ~1,5B activos | 128.000 tokens | MLX safetensors, 8 bits con razonador en bf16, ~9,0 GB | LFM Open License (lfm1.0) | Hugging Face, repositorio con 0 descargas y 0 likes en el momento de la consulta |
 | LiquidAI/LFM2.5-8B-A1B-MLX-8bit | Mismo modelo base, ~1,5B activos | 128.000 tokens | MLX safetensors, 8 bits uniforme (sin el razonador en bf16) | LFM Open License (lfm1.0) | Build oficial de Liquid AI |
 | LiquidAI/LFM2.5-8B-A1B | 8,3B totales segun la model card, ~1,5B activos | 128.000 tokens | Pesos originales sin cuantizar | LFM Open License (lfm1.0) | Modelo fuente, con benchmarks publicados |
 | LFM2-8B-A1B | Generacion anterior | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | LFM Open License (lfm1.0) | Usado como referencia de benchmarks |
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks de esta cuantizacion que permitan una compa
 - Licencia: se trata de la LFM Open License (lfm1.0), no de una licencia de codigo abierto estandar. Los terminos de uso comercial deben revisarse en el enlace de licencia del modelo base antes de cualquier despliegue en produccion.
 - Repositorio con 0 descargas y 0 likes y creado el 10 de septiembre de 2026: es una publicacion reciente y sin validacion de la comunidad. No hay evidencia publica independiente que confirme la fidelidad de la cuantizacion respecto al modelo base.
 - Discrepancia de recuento: los safetensors indican 8.467.856.128 parametros y la model card del autor indica 8,3B. La diferencia probablemente se debe al redondeo, pero conviene tenerla en cuenta.
-- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los del ecosistema HuggingFace y Liquid AI listados abajo.
+- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los del ecosistema Hugging Face y Liquid AI listados abajo.
 
 ## Enlaces
 

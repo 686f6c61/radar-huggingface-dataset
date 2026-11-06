@@ -2,11 +2,11 @@
 
 ## Resumen
 
-FitBot-3B-lora es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Ozzycan en HuggingFace, construido sobre el modelo base Qwen/Qwen2.5-3B-Instruct. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador que deben cargarse junto al modelo base mediante la libreria PEFT. El repositorio ocupa 0,1 GB, un tamano coherente con un adaptador LoRA de rango bajo y no con un modelo de 3.000 millones de parametros completo.
+FitBot-3B-lora es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Ozzycan en Hugging Face, construido sobre el modelo base Qwen/Qwen2.5-3B-Instruct. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador que deben cargarse junto al modelo base mediante la libreria PEFT. El repositorio ocupa 0,1 GB, un tamano coherente con un adaptador LoRA de rango bajo y no con un modelo de 3.000 millones de parametros completo.
 
 El modelo resuelve el caso de uso tipico de un ajuste supervisado de dominio: adaptar un LLM instructivo generalista a un comportamiento o tematica concreta con un coste de entrenamiento muy inferior al de un fine-tuning completo. Las etiquetas del repositorio indican que se ha empleado SFT (supervised fine-tuning) con las librerias transformers y trl sobre el modelo base, y que la tarea declarada es generacion de texto conversacional.
 
-La relevancia de esta ficha es limitada y debe interpretarse con cautela: la model card es la plantilla por defecto de HuggingFace, sin cumplimentar, con todos los campos marcados como "[More Information Needed]". No hay informacion sobre el dataset de entrenamiento, hiperparametros, licencia, idiomas ni evaluacion. Ademas, el modelo registra 0 descargas y 0 Likes en el momento de la consulta, por lo que no existe evidencia de uso o validacion por parte de la comunidad.
+La relevancia de esta ficha es limitada y debe interpretarse con cautela: la model card es la plantilla por defecto de Hugging Face, sin cumplimentar, con todos los campos marcados como "[More Information Needed]". No hay informacion sobre el dataset de entrenamiento, hiperparametros, licencia, idiomas ni evaluacion. Ademas, el modelo registra 0 descargas y 0 Likes en el momento de la consulta, por lo que no existe evidencia de uso o validacion por parte de la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ La comparativa se establece frente al modelo base y a otras alternativas de ~3 B
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ozzycan/FitBot-3B-lora | Adaptador LoRA sobre Qwen2.5-3B-Instruct | No disponible | safetensors (PEFT) | No disponible | HuggingFace; 0 descargas |
+| Ozzycan/FitBot-3B-lora | Adaptador LoRA sobre Qwen2.5-3B-Instruct | No disponible | safetensors (PEFT) | No disponible | Hugging Face; 0 descargas |
 | Qwen/Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens nativos, 128.000 con YaRN | safetensors, GGUF y otros | Apache 2.0 | Ampliamente disponible |
 | meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | safetensors, GGUF | Llama 3.2 Community License | Ampliamente disponible |
 | microsoft/Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | safetensors, GGUF | MIT | Ampliamente disponible |
@@ -95,7 +95,7 @@ No hay datos de rendimiento del adaptador que permitan una comparacion cuantitat
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Ozzycan/FitBot-3B-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Ozzycan/FitBot-3B-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Referencia del tag arxiv:1910.09700 (Lacoste et al., 2019, cuantificacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning citada en la plantilla de la model card: https://mlco2.github.io/impact

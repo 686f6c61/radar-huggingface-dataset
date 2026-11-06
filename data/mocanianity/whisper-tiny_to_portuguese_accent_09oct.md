@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Spanish es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario Mocanianity en HuggingFace. A pesar del nombre, la model card indica que el entrenamiento se realizo sobre el dataset British English y el unico idioma declarado en los metadatos es el ingles, por lo que la denominacion "Spanish" del checkpoint no se corresponde con la informacion tecnica disponible. El modelo resuelve la tarea de reconocimiento automatico del habla (ASR) y se distribuye con licencia Apache 2.0.
+Whisper tiny Spanish es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario Mocanianity en Hugging Face. A pesar del nombre, la model card indica que el entrenamiento se realizo sobre el dataset British English y el unico idioma declarado en los metadatos es el ingles, por lo que la denominacion "Spanish" del checkpoint no se corresponde con la informacion tecnica disponible. El modelo resuelve la tarea de reconocimiento automatico del habla (ASR) y se distribuye con licencia Apache 2.0.
 
 Se trata de un modelo transformer encoder-decoder de tipo Whisper, con 37.760.640 parametros totales y un tamano de repositorio de 0,3 GB. Al derivar de whisper-tiny, hereda la arquitectura y las limitaciones de la familia Whisper original, pero con un ajuste especifico sobre datos de acento (el identificador del repositorio menciona "portuguese_accent"). Es relevante como ejemplo de ajuste ligero de ASR para dominios o acentos concretos, aunque su adopcion en produccion requiere validacion adicional dado que no hay descargas ni validacion externa.
 
@@ -71,10 +71,10 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | WER (British English) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-tiny_to_portuguese_accent_09oct | 37,7 M | no disponible (ventanas de 30 s) | 11,89 (declarado) | apache-2.0 | HuggingFace |
-| openai/whisper-tiny | 37,7 M | no disponible (ventanas de 30 s) | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-base | 74 M | no disponible (ventanas de 30 s) | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-small | 244 M | no disponible (ventanas de 30 s) | no disponible en esta ficha | apache-2.0 | HuggingFace |
+| whisper-tiny_to_portuguese_accent_09oct | 37,7 M | no disponible (ventanas de 30 s) | 11,89 (declarado) | apache-2.0 | Hugging Face |
+| openai/whisper-tiny | 37,7 M | no disponible (ventanas de 30 s) | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-base | 74 M | no disponible (ventanas de 30 s) | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-small | 244 M | no disponible (ventanas de 30 s) | no disponible en esta ficha | apache-2.0 | Hugging Face |
 
 No se dispone de datos de WER comparables para los modelos base en la informacion proporcionada; la comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -86,13 +86,13 @@ No se dispone de datos de WER comparables para los modelos base en la informacio
 - Riesgo de alucinacion en la transcripcion, comun en modelos Whisper de tamano tiny, especialmente con audio ruidoso o con acentos no representados en el entrenamiento.
 - Modelo de 37,7 M de parametros: menor precision que variantes base, small o medium de Whisper.
 - La model card esta generada automaticamente e incompleta en secciones clave (descripcion, usos previstos, datos de entrenamiento).
-- Sin descargas ni likes en HuggingFace en el momento de la consulta; sin validacion por parte de la comunidad.
+- Sin descargas ni likes en Hugging Face en el momento de la consulta; sin validacion por parte de la comunidad.
 - Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias sobre el rendimiento en produccion.
 - No se documentan sesgos especificos, pero al entrenarse sobre un dataset de ingles britanico puede presentar sesgo hacia esa variante y peor rendimiento en otras.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mocanianity/whisper-tiny_to_portuguese_accent_09oct
+- Hugging Face: https://huggingface.co/Mocanianity/whisper-tiny_to_portuguese_accent_09oct
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

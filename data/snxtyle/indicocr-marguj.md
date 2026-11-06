@@ -88,8 +88,8 @@ Las siguientes cifras son estimaciones derivadas del tamano del modelo base (apr
 
 | Modelo | Parametros | Enfoque | CER en gujarati (frozen 100) | Coincidencia exacta | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| IndicOCR MarGuj (este) | Adaptador sobre ~0,8B | LoRA sobre Qwen3.5-0.8B, linea completa | 1,23 % | 46/100 | No disponible | HuggingFace (adaptador) |
-| IndicOCR base | ~0,8B | Modelo completo sin adaptador | 1,76 % | 43/100 | No disponible | HuggingFace |
+| IndicOCR MarGuj (este) | Adaptador sobre ~0,8B | LoRA sobre Qwen3.5-0.8B, linea completa | 1,23 % | 46/100 | No disponible | Hugging Face (adaptador) |
+| IndicOCR base | ~0,8B | Modelo completo sin adaptador | 1,76 % | 43/100 | No disponible | Hugging Face |
 | Chitrapathak MarGuj | No disponible | Modelo entrenado, linea completa | 8,81 % | 5/100 | No disponible | No disponible |
 | PARSeq entrenado | No disponible | Piecewise | 27,45 % | 0/100 | No disponible | No disponible |
 
@@ -107,5 +107,5 @@ Las siguientes cifras son estimaciones derivadas del tamano del modelo base (apr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/snxtyle/IndicOCR-MarGuj
+- Modelo en Hugging Face: https://huggingface.co/snxtyle/IndicOCR-MarGuj
 - Modelo base: https://huggingface.co/bodhan-ai/indic-ocr

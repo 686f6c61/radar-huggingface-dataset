@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| craigkolb/mangadict-models | Detector RT-DETR int8 + OCR ONNX con cache KV | no disponible | no disponible | Apache-2.0 | HuggingFace (ONNX) |
-| kha-white/manga-ocr-base | OCR japones (modelo base original) | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| jzhang533/manga-ocr-base-2025 | Fine-tune de manga-ocr-base | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| ogkalu/comic-text-and-bubble-detector | Deteccion de texto y globos en comics (RT-DETR) | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| craigkolb/mangadict-models | Detector RT-DETR int8 + OCR ONNX con cache KV | no disponible | no disponible | Apache-2.0 | Hugging Face (ONNX) |
+| kha-white/manga-ocr-base | OCR japones (modelo base original) | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| jzhang533/manga-ocr-base-2025 | Fine-tune de manga-ocr-base | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| ogkalu/comic-text-and-bubble-detector | Deteccion de texto y globos en comics (RT-DETR) | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 Los tres modelos de referencia son las fuentes directas de los componentes empaquetados, de modo que la comparativa se reduce a formato, empaquetado y orientacion de despliegue mas que a calidad del modelo. No se dispone de cifras de rendimiento comparadas.
 
@@ -92,7 +92,7 @@ Los tres modelos de referencia son las fuentes directas de los componentes empaq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/craigkolb/mangadict-models
+- Hugging Face: https://huggingface.co/craigkolb/mangadict-models
 - Fuente del detector: https://huggingface.co/ogkalu/comic-text-and-bubble-detector
 - Fuente del OCR (fine-tune 2025): https://huggingface.co/jzhang533/manga-ocr-base-2025
 - Fuente del OCR base: https://huggingface.co/kha-white/manga-ocr-base

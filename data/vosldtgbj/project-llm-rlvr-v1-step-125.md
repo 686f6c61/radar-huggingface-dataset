@@ -94,11 +94,11 @@ No se dispone de datos verificados de contexto, rendimiento ni evaluaciones de e
 - El repositorio no incluye estado de optimizador, scheduler, semilla ni cursores de dataloader: no permite reanudar el entrenamiento original de forma bit a bit, solo usarse como inicializacion.
 - No se publican cuantizaciones oficiales ni pesos GGUF, lo que complica el despliegue en hardware de consumo.
 - El entrenamiento se realizo sin busqueda en internet, de modo que las respuestas dependen del contexto proporcionado y no de conocimiento actualizado en linea.
-- Ha recibido 0 descargas y 0 valoraciones en HuggingFace, por lo que no existe validacion por parte de la comunidad.
+- Ha recibido 0 descargas y 0 valoraciones en Hugging Face, por lo que no existe validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vosldtgbj/project-llm-rlvr-v1-step-125
+- Modelo en Hugging Face: https://huggingface.co/vosldtgbj/project-llm-rlvr-v1-step-125
 - Modelo base directo (paso 100): https://huggingface.co/vosldtgbj/project-llm-rlvr-v1-step-100
 - Checkpoint siguiente de la familia: https://huggingface.co/vosldtgbj/project-llm-rlvr-dynamic-v2-step-25
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

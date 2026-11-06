@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`muludeniz/maastahmini` es un repositorio publicado en HuggingFace por el usuario muludeniz del que únicamente se conoce su identificador, su licencia (MIT) y su etiqueta de región (`region: us`). No se ha publicado información sobre arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni formato de pesos. El tamaño del repositorio es de 0,0 GB, lo que indica que no contiene ficheros de pesos ni documentación técnica más allá de una model card reducida a la declaración de licencia.
+`muludeniz/maastahmini` es un repositorio publicado en Hugging Face por el usuario muludeniz del que únicamente se conoce su identificador, su licencia (MIT) y su etiqueta de región (`region: us`). No se ha publicado información sobre arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni formato de pesos. El tamaño del repositorio es de 0,0 GB, lo que indica que no contiene ficheros de pesos ni documentación técnica más allá de una model card reducida a la declaración de licencia.
 
 La model card del autor no incluye descripción del modelo, dataset de entrenamiento, resultados de evaluación ni instrucciones de uso. Tampoco se ha declarado un pipeline de inferencia (`pipeline: no disponible`), lo que impide clasificarlo automáticamente como modelo de texto, visión, audio u otra modalidad. Con 0 descargas y 0 likes, el repositorio no ha tenido tracción ni validación por parte de la comunidad.
 
@@ -97,13 +97,13 @@ No disponible. No se puede identificar una categoria de comparacion (mismo taman
 - Riesgo de alucinacion: no evaluable sin poder ejecutar el modelo.
 - Limitaciones de contexto e idioma: no disponibles.
 - Restricciones de licencia: la licencia MIT es permisiva y permite uso comercial, modificacion y redistribucion, pero se aplica sobre un repositorio que no contiene material susceptible de uso. Conviene verificar si el autor anade condiciones adicionales en futuras revisiones.
-- Riesgo de suplantacion o reutilizacion del nombre: al no haber artefactos verificables, cualquier fichero que se distribuya fuera de HuggingFace atribuyendose a este repositorio carece de trazabilidad.
+- Riesgo de suplantacion o reutilizacion del nombre: al no haber artefactos verificables, cualquier fichero que se distribuya fuera de Hugging Face atribuyendose a este repositorio carece de trazabilidad.
 - Idoneidad para produccion: nula en el estado actual; no debe incluirse en ninguna dependencia ni pipeline.
 - Fechas de creacion y actualizacion (2026-09-13) sin actividad posterior ni descargas, lo que sugiere un repositorio de prueba o abandonado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/muludeniz/maastahmini
+- Hugging Face: https://huggingface.co/muludeniz/maastahmini
 - Model card del autor: sin contenido tecnico, solo `license: mit`.
 - Paper, repositorio de codigo, demo o blog: no disponibles.
 - Nota sobre la busqueda web: los resultados obtenidos en la busqueda no guardan ninguna relacion con el modelo (corresponden a paginas de contenido religioso en arabe sobre la sura Al-Baqarah). No se ha encontrado ninguna referencia externa a `muludeniz/maastahmini`.

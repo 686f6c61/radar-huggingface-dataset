@@ -1,7 +1,7 @@
 # Akode69/movies_recommender_files
 
 ## Resumen
-El repositorio `Akode69/movies_recommender_files` es un conjunto de ficheros alojado en HuggingFace, publicado por el usuario Akode69 el 7 de octubre de 2026, con un tamano de repositorio de 0,4 GB y licencia MIT. No declara pipeline de HuggingFace, no especifica idiomas y no incluye model card mas alla de la linea de licencia, por lo que no hay informacion sobre su arquitectura, su proceso de entrenamiento ni su contenido interno. El nombre del repositorio sugiere que se trata de material auxiliar para un sistema de recomendacion de peliculas (ficheros de datos, indices o artefactos serializados), pero esta interpretacion no esta confirmada por ninguna documentacion oficial.
+El repositorio `Akode69/movies_recommender_files` es un conjunto de ficheros alojado en Hugging Face, publicado por el usuario Akode69 el 7 de octubre de 2026, con un tamano de repositorio de 0,4 GB y licencia MIT. No declara pipeline de Hugging Face, no especifica idiomas y no incluye model card mas alla de la linea de licencia, por lo que no hay informacion sobre su arquitectura, su proceso de entrenamiento ni su contenido interno. El nombre del repositorio sugiere que se trata de material auxiliar para un sistema de recomendacion de peliculas (ficheros de datos, indices o artefactos serializados), pero esta interpretacion no esta confirmada por ninguna documentacion oficial.
 
 En el momento de redactar esta ficha, el repositorio acumula 1 like y 0 descargas, y la model card publicada se limita a la directiva `license: mit`. Por tanto, no es posible confirmar que se trate de un modelo de aprendizaje automatico en el sentido convencional (transformer, MoE, SSM u otro): la evidencia disponible apunta a un deposito de artefactos mas que a un modelo con pesos y arquitectura definidos.
 
@@ -70,5 +70,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 - Caveat para produccion: no se recomienda integrar este repositorio en un sistema en produccion sin una auditoria previa de su contenido, formato y procedencia legal.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/Akode69/movies_recommender_files
+- Repositorio en Hugging Face: https://huggingface.co/Akode69/movies_recommender_files
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

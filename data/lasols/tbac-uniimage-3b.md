@@ -4,7 +4,7 @@
 
 TBAC-UniImage-3B es un modelo unificado de comprensión y generación de imágenes desarrollado por el Basic Algorithm Center de Tencent. Integra un modelo de lenguaje multimodal (Qwen2.5-VL-3B-Instruct) como módulo de comprensión y un modelo de difusión (Sana_1600M_512px_diffusers) como módulo de generación. El modelo está diseñado para resolver tareas de text-to-image y edición de imágenes a partir de instrucciones en lenguaje natural, combinando en un único sistema las capacidades de entender imágenes y generarlas.
 
-El nombre "UniImage" refleja esta unificación: el modelo procesa texto e imagen, y mediante queries aprendibles fusiona la información multimodal para producir condiciones de generación. Según los metadatos de HuggingFace, el repositorio contiene 5.681.505.091 parámetros totales (aproximadamente 5,68 mil millones), lo que lo sitúa en la categoría de modelos medianos. La arquitectura es híbrida y no se especifica la longitud de contexto en la información disponible.
+El nombre "UniImage" refleja esta unificación: el modelo procesa texto e imagen, y mediante queries aprendibles fusiona la información multimodal para producir condiciones de generación. Según los metadatos de Hugging Face, el repositorio contiene 5.681.505.091 parámetros totales (aproximadamente 5,68 mil millones), lo que lo sitúa en la categoría de modelos medianos. La arquitectura es híbrida y no se especifica la longitud de contexto en la información disponible.
 
 El modelo está publicado con licencia Apache 2.0 y sus pesos se distribuyen en formato safetensors. Los resultados presentados en la model card muestran un rendimiento competitivo en benchmarks de generación como GenEval y DPG-Bench, así como en tareas de edición de imágenes.
 
@@ -81,7 +81,7 @@ La comparativa se basa en los resultados de benchmarks proporcionados en la mode
 
 | Modelo | Base (M)LLM | GenEval | DPG-Bench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TBAC-UniImage-3B | Qwen2.5-VL-3B-Instruct | 0.87 | 80.97 | Apache-2.0 | HuggingFace, GitHub |
+| TBAC-UniImage-3B | Qwen2.5-VL-3B-Instruct | 0.87 | 80.97 | Apache-2.0 | Hugging Face, GitHub |
 | MetaQuery | Qwen2.5-VL-3B-Instruct | 0.78 | 81.10 | No disponible | Repositorio oficial |
 | BILP-3o | Qwen2.5-VL-3B-Instruct | 0.81 | 79.36 | No disponible | No disponible |
 | Show-o2 | Qwen2.5-1.5B-Instruct | 0.73 | 85.02 | No disponible | No disponible |
@@ -96,12 +96,12 @@ TBAC-UniImage-3B destaca por alcanzar un GenEval de 0.87, igualando a Qwen-Image
 - El modelo está etiquetado solo para inglés, por lo que el soporte en otros idiomas no está garantizado y podría producir resultados degradados.
 - La licencia Apache-2.0 permite uso comercial, pero se debe verificar la licencia de los modelos base (Qwen2.5-VL-3B-Instruct y Sana_1600M_512px_diffusers) para asegurar el cumplimiento en el despliegue.
 - No se proporcionan especificaciones de cuantización ni herramientas de despliegue estándar, lo que puede limitar su integración en pipelines de producción existentes.
-- La fecha de publicación en HuggingFace es 2026-09-03, lo que indica que el modelo es muy reciente. La documentación es limitada y no incluye información sobre límites de contexto ni datos de entrenamiento detallados.
+- La fecha de publicación en Hugging Face es 2026-09-03, lo que indica que el modelo es muy reciente. La documentación es limitada y no incluye información sobre límites de contexto ni datos de entrenamiento detallados.
 
 ## Enlaces
 
-- HuggingFace (autor original): https://huggingface.co/TencentBAC/TBAC-UniImage-3B
-- HuggingFace (espejo indicado en los datos): https://huggingface.co/Lasols/TBAC-UniImage-3B
+- Hugging Face (autor original): https://huggingface.co/TencentBAC/TBAC-UniImage-3B
+- Hugging Face (espejo indicado en los datos): https://huggingface.co/Lasols/TBAC-UniImage-3B
 - GitHub: https://github.com/Tencent-BAC/TBAC-UniImage
 - Arxiv: https://arxiv.org/abs/2508.08098
 - Modelo base Qwen2.5-VL-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct

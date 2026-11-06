@@ -73,7 +73,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 - Advertencia etica: el modelo parece ser un artefacto de investigacion sobre seguridad; su uso debe limitarse a entornos controlados y con supervision.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-ip-negate
+- Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-ip-negate
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B
 - Unsloth: https://github.com/unslothai/unsloth
 - Otros modelos de la serie (desde la busqueda web):

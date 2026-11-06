@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MikhailKn/generation es un prototipo de investigación publicado en HuggingFace bajo el nombre "Mixer for Generation". Se trata de una implementación propia de una arquitectura tipo Mixer (familia derivada de MLP-Mixer, sin mecanismo de atención completo) orientada a tareas de generación. El autor lo etiqueta como escala "large", pero el checkpoint real incluido en el repositorio contiene 49.600 parámetros según los metadatos de safetensors, lo que sitúa el modelo en el rango de los prototipos de juguete y no en el de un modelo de generación utilizable.
+MikhailKn/generation es un prototipo de investigación publicado en Hugging Face bajo el nombre "Mixer for Generation". Se trata de una implementación propia de una arquitectura tipo Mixer (familia derivada de MLP-Mixer, sin mecanismo de atención completo) orientada a tareas de generación. El autor lo etiqueta como escala "large", pero el checkpoint real incluido en el repositorio contiene 49.600 parámetros según los metadatos de safetensors, lo que sitúa el modelo en el rango de los prototipos de juguete y no en el de un modelo de generación utilizable.
 
 El propio autor es explícito en la model card: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado, y no se reclama ninguna métrica de benchmark. El repositorio incluye además `config.json` con los ajustes de arquitectura, `training_args.json` con la receta por defecto (AdamW con scheduler coseno) y `predict.py` como artefacto principal ejecutable.
 
@@ -83,5 +83,5 @@ No disponible. No se conocen modelos comparables dentro de la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MikhailKn/generation
+- Hugging Face: https://huggingface.co/MikhailKn/generation
 - Paper, blog, repositorio o demo adicionales: no disponible en la información proporcionada.

@@ -4,7 +4,7 @@
 
 El modelo `shirasko/qwen2.5-3b-instruct-rmu-golf` es un checkpoint de desaprendizaje (unlearning) construido a partir de `Qwen/Qwen2.5-3B-Instruct`, un modelo de lenguaje de 3.085 millones de parámetros desarrollado por Alibaba. El autor, shirasko, aplica el método RMU (Representation Misdirection for Unlearning) para eliminar el conocimiento relacionado con el concepto "Golf" del modelo base, manteniendo en lo posible el resto de capacidades. Este tipo de modelos es relevante para la investigación en seguridad, privacidad y control de conocimiento en sistemas de IA, ya que permite evaluar cómo se puede "olvidar" información específica sin degradar el rendimiento general.
 
-El checkpoint se distribuye en formato safetensors, con un tamaño de repositorio de 6,2 GB, y está pensado para su uso con la librería transformers. La ficha de HuggingFace indica que el idioma soportado es inglés y no se especifica licencia. El modelo base Qwen2.5-3B-Instruct tiene una arquitectura transformer con atención por grupos (GQA), 36 capas, 16 cabezas de consulta y 2 cabezas de clave/valor, y soporta un contexto de hasta 128K tokens, aunque esta característica no se confirma explícitamente en el checkpoint desaprendido.
+El checkpoint se distribuye en formato safetensors, con un tamaño de repositorio de 6,2 GB, y está pensado para su uso con la librería transformers. La ficha de Hugging Face indica que el idioma soportado es inglés y no se especifica licencia. El modelo base Qwen2.5-3B-Instruct tiene una arquitectura transformer con atención por grupos (GQA), 36 capas, 16 cabezas de consulta y 2 cabezas de clave/valor, y soporta un contexto de hasta 128K tokens, aunque esta característica no se confirma explícitamente en el checkpoint desaprendido.
 
 ## Especificaciones técnicas
 
@@ -31,7 +31,7 @@ No se proporciona información sobre el dataset de entrenamiento ni sobre el pro
 - Habilidades de código y matemáticas, características del modelo Qwen2.5-3B-Instruct, aunque no se ha verificado específicamente en este checkpoint.
 - El modelo ha sido entrenado para no generar información sobre el concepto "Golf", por lo que su capacidad en ese dominio está deliberadamente degradada.
 - No se ha confirmado soporte para tool calling, agentes o modos de razonamiento extendido en este checkpoint.
-- El modelo es monolingüe (inglés) según la ficha de HuggingFace, a pesar de que el modelo base es multilingüe.
+- El modelo es monolingüe (inglés) según la ficha de Hugging Face, a pesar de que el modelo base es multilingüe.
 
 ## Casos de uso
 
@@ -85,7 +85,7 @@ No se dispone de información sobre otros modelos de desaprendizaje comparables 
 
 ## Enlaces
 
-- [HuggingFace: shirasko/qwen2.5-3b-instruct-rmu-golf](https://huggingface.co/shirasko/qwen2.5-3b-instruct-rmu-golf)
+- [Hugging Face: shirasko/qwen2.5-3b-instruct-rmu-golf](https://huggingface.co/shirasko/qwen2.5-3b-instruct-rmu-golf)
 - [Modelo base: Qwen/Qwen2.5-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct)
 - [Modelo base sin instrucciones: Qwen/Qwen2.5-3B](https://huggingface.co/Qwen/Qwen2.5-3B)
 - [Documentación de Qwen2.5-3B-Instruct en EmergentMind](https://www.emergentmind.com/topics/qwen2-5-3b-instruct)

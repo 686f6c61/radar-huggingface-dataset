@@ -74,8 +74,8 @@ La categoría `is_biometric` tiene cero filas positivas y se excluye de los res�
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QEV2.1-12B-8BIT | 12B | No disponible | Clasificación DLP tipada | Research no comercial | HuggingFace, 44 descargas |
-| google/gemma-4-12B-it | 12B | No disponible | LLM generativo general | Licencia Gemma | HuggingFace |
+| QEV2.1-12B-8BIT | 12B | No disponible | Clasificación DLP tipada | Research no comercial | Hugging Face, 44 descargas |
+| google/gemma-4-12B-it | 12B | No disponible | LLM generativo general | Licencia Gemma | Hugging Face |
 | Clasificadores DLP tradicionales (regex/ML) | Variable | No aplica | Reglas y ML supervisado | Variable | Comercial |
 
 La comparación directa con otros modelos de decisión tipada no está disponible en la información proporcionada. Frente al modelo base, QEV2.1 sustituye la generación libre por una cabeza de clasificación con probabilidades, lo que cambia por completo el perfil de uso.
@@ -95,7 +95,7 @@ La comparación directa con otros modelos de decisión tipada no está disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/querypieai/QEV2.1-12B-8BIT
+- Modelo en Hugging Face: https://huggingface.co/querypieai/QEV2.1-12B-8BIT
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Contacto comercial de QueryPie: https://www.querypie.com/en/contact-us
 - No se han encontrado papers, blogs o repositorios adicionales en la información proporcionada.

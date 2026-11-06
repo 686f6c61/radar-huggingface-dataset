@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `qwen35-4b-alfworld-grpo-aligned-step100-bf16-20261105` es un checkpoint de ajuste fino del modelo base Qwen3.5-4B, publicado por el usuario dingwenjun en HuggingFace. Se trata de un experimento de alineación mediante aprendizaje por refuerzo (GRPO, Group Relative Policy Optimization) sobre el entorno ALFWorld, un benchmark de agentes que requiere navegar y manipular objetos en entornos textuales de tipo doméstico. El checkpoint corresponde al paso 100 de entrenamiento y se ha exportado en BF16 safetensors tras fusionar cuatro shards FSDP.
+El modelo `qwen35-4b-alfworld-grpo-aligned-step100-bf16-20261105` es un checkpoint de ajuste fino del modelo base Qwen3.5-4B, publicado por el usuario dingwenjun en Hugging Face. Se trata de un experimento de alineación mediante aprendizaje por refuerzo (GRPO, Group Relative Policy Optimization) sobre el entorno ALFWorld, un benchmark de agentes que requiere navegar y manipular objetos en entornos textuales de tipo doméstico. El checkpoint corresponde al paso 100 de entrenamiento y se ha exportado en BF16 safetensors tras fusionar cuatro shards FSDP.
 
 La arquitectura subyacente es `Qwen3_5ForConditionalGeneration`, un transformer multimodal (image-text-to-text) con aproximadamente 5.170 millones de parámetros totales. Aunque el modelo base es multimodal, este experimento concreto se ha entrenado únicamente con interacción textual en ALFWorld, preservando la configuración original, el tokenizer y la plantilla de chat del modelo base.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen35-4b-alfworld-grpo-aligned-step100-bf16 | ~5,17 B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Checkpoint de experimento RL sobre ALFWorld |
-| Qwen3.5-4B (base) | ~4 B (según nombre) | no disponible | Apache 2.0 (presumible) | HuggingFace | Modelo base multimodal; este checkpoint deriva de él |
+| qwen35-4b-alfworld-grpo-aligned-step100-bf16 | ~5,17 B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Checkpoint de experimento RL sobre ALFWorld |
+| Qwen3.5-4B (base) | ~4 B (según nombre) | no disponible | Apache 2.0 (presumible) | Hugging Face | Modelo base multimodal; este checkpoint deriva de él |
 | Alternativas de agente ALFWorld | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la información proporcionada |
 
 No se dispone de información suficiente para comparar con modelos de agente de tamaño similar entrenados específicamente en ALFWorld.
@@ -85,7 +85,7 @@ No se dispone de información suficiente para comparar con modelos de agente de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dingwenjun/qwen35-4b-alfworld-grpo-aligned-step100-bf16-20261105
+- Hugging Face: https://huggingface.co/dingwenjun/qwen35-4b-alfworld-grpo-aligned-step100-bf16-20261105
 - Paper de GRPO: no disponible en la información proporcionada
 - Blog del autor: no disponible
 - Repositorio de código: no disponible

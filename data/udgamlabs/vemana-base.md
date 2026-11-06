@@ -107,7 +107,7 @@ Vemana supera a todos los modelos abiertos por debajo de 1B en modelado de telug
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/udgamlabs/Vemana-Base
+- Modelo en Hugging Face: https://huggingface.co/udgamlabs/Vemana-Base
 - Versión GGUF para llama.cpp: https://huggingface.co/udgamlabs/Vemana-Base-GGUF
 - Todos los checkpoints: https://huggingface.co/udgamlabs/Vemana-Checkpoints
 - Demo en Hugging Face Spaces: https://huggingface.co/spaces/udgamlabs/Vemana

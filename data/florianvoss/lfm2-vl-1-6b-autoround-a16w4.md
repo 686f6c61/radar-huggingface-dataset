@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento del modelo ni de sus alternativas en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/florianvoss/LFM2-VL-1.6B-Autoround-a16w4
+- Repositorio Hugging Face: https://huggingface.co/florianvoss/LFM2-VL-1.6B-Autoround-a16w4
 - Coleccion Neat 0.6.0: https://huggingface.co/collections/florianvoss/neat-060
 - Modelo fuente: https://huggingface.co/simaai/LFM2-VL-1.6B-Autoround-Safetensors
 - Revision concreta del modelo fuente: https://huggingface.co/simaai/LFM2-VL-1.6B-Autoround-Safetensors/tree/537626018870fee3b5de7a7b9bb2cf33e68b6c0e

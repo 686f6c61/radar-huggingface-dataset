@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IOC-NN (este modelo) | ~819.722 (estimado) | Imagen 32x32x3 aplanada (3072) | no disponible | no disponible | HuggingFace, 0 descargas |
-| MLP generico sobre CIFAR-10 | variable | Imagen 32x32x3 aplanada | no disponible | variable | multiple en HuggingFace |
+| IOC-NN (este modelo) | ~819.722 (estimado) | Imagen 32x32x3 aplanada (3072) | no disponible | no disponible | Hugging Face, 0 descargas |
+| MLP generico sobre CIFAR-10 | variable | Imagen 32x32x3 aplanada | no disponible | variable | multiple en Hugging Face |
 | LeNet-5 (CNN clasica) | ~60.000 | Imagen 32x32 | no disponible en esta ficha | variable | implementaciones publicas |
 | ResNet-18 adaptada a CIFAR-10 | ~11,2 M | Imagen 32x32 | no disponible en esta ficha | MIT (referencia original) | ampliamente disponible |
 
@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento de este modelo ni de comparaciones publica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ppavan2001/smai-assignment-4-q1-iocnn
+- Hugging Face: https://huggingface.co/ppavan2001/smai-assignment-4-q1-iocnn
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

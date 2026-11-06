@@ -101,7 +101,7 @@ No se dispone de contexto, idiomas ni resultados de benchmarks comparables para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-g-fve-advanchor-s1
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-g-fve-advanchor-s1
 - Variante relacionada: https://huggingface.co/joshycodes/qwen3-4b-g-fve-mixdiscern-s0
 - Informe técnico de Qwen3: https://arxiv.org/html/2505.09388v1
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

@@ -21,7 +21,7 @@ La relevancia actual de este modelo radica en la creciente demanda de automatiza
 
 ## Arquitectura y entrenamiento
 
-Segun la informacion disponible en el repositorio de GitHub, el modelo se basa en deberta-v3-small, un encoder transformer de la familia DeBERTa que incorpora atencion disentangled y un mecanismo de enmascarado mejorado. El modelo fue fine-tuned para una tarea de clasificacion binaria: dado un bucle `for` en C/C++, predecir si es paralelizable con OpenMP. El entrenamiento se realizo sobre el dataset open-omp-plus, que contiene ejemplos de bucles anotados manualmente. No se han publicado detalles sobre el numero de tokens de entrenamiento, la estrategia de fine-tuning (por ejemplo, si se uso aprendizaje por refuerzo o ajuste supervisado clasico) ni otras tecnicas de optimizacion. La ausencia de una model card detallada en HuggingFace limita el conocimiento sobre hiperparametros y configuracion exacta.
+Segun la informacion disponible en el repositorio de GitHub, el modelo se basa en deberta-v3-small, un encoder transformer de la familia DeBERTa que incorpora atencion disentangled y un mecanismo de enmascarado mejorado. El modelo fue fine-tuned para una tarea de clasificacion binaria: dado un bucle `for` en C/C++, predecir si es paralelizable con OpenMP. El entrenamiento se realizo sobre el dataset open-omp-plus, que contiene ejemplos de bucles anotados manualmente. No se han publicado detalles sobre el numero de tokens de entrenamiento, la estrategia de fine-tuning (por ejemplo, si se uso aprendizaje por refuerzo o ajuste supervisado clasico) ni otras tecnicas de optimizacion. La ausencia de una model card detallada en Hugging Face limita el conocimiento sobre hiperparametros y configuracion exacta.
 
 ## Capacidades
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 - Al ser un modelo basado en deberta-v3-small (aproximadamente 44 millones de parametros, aunque no se confirma en la informacion), es probable que pueda ejecutarse en CPU con 4-8 GB de RAM, pero no hay datos oficiales.
 - No se especifican requisitos de VRAM ni GPUs recomendadas. Dado su tamano, una GPU con 4 GB de VRAM seria suficiente, pero no esta confirmado.
-- Opciones de despliegue: al no haber pesos publicados en formato GGUF o cuantizados, se asume que el despliegue se realiza mediante la libreria transformers de HuggingFace o un framework similar. No se mencionan vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: al no haber pesos publicados en formato GGUF o cuantizados, se asume que el despliegue se realiza mediante la libreria transformers de Hugging Face o un framework similar. No se mencionan vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -66,6 +66,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (cl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Harshagrawal526/autopragma
+- Hugging Face: https://huggingface.co/Harshagrawal526/autopragma
 - Repositorio GitHub: https://github.com/Harshagrawal526/AutoPragma
 - Perfil del autor en GitHub: https://github.com/Harshagrawal526/

@@ -100,7 +100,7 @@ No se dispone en la informacion proporcionada de otros modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/goktugoguz/laya-multilingual-arc
+- Modelo en Hugging Face: https://huggingface.co/goktugoguz/laya-multilingual-arc
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Gemelo MLX para Apple Silicon: https://huggingface.co/goktugoguz/laya-multilingual-arc-mlx
 - Dataset de benchmark: https://huggingface.co/datasets/goktugoguz/arc-usdc-laya-bench

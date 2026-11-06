@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`parsguru/parsguru-action-14b-4bit-mlx` es una version cuantizada a 4 bits en formato MLX de un modelo de generacion de texto de aproximadamente 14.770 millones de parametros, publicada por el usuario parsguru en HuggingFace. La etiqueta de arquitectura declarada en el repositorio es `qwen2`, por lo que se trata de un transformer decoder de la familia Qwen2 adaptado a inferencia sobre Apple Silicon mediante la libreria MLX. El nombre del repositorio sugiere un ajuste orientado a acciones o agentes, aunque la model card no documenta ni el proceso de entrenamiento ni el modelo base exacto.
+`parsguru/parsguru-action-14b-4bit-mlx` es una version cuantizada a 4 bits en formato MLX de un modelo de generacion de texto de aproximadamente 14.770 millones de parametros, publicada por el usuario parsguru en Hugging Face. La etiqueta de arquitectura declarada en el repositorio es `qwen2`, por lo que se trata de un transformer decoder de la familia Qwen2 adaptado a inferencia sobre Apple Silicon mediante la libreria MLX. El nombre del repositorio sugiere un ajuste orientado a acciones o agentes, aunque la model card no documenta ni el proceso de entrenamiento ni el modelo base exacto.
 
 La relevancia practica del modelo es limitada en el momento de redactar esta ficha: el repositorio acumula 0 descargas y 0 likes, la licencia no esta declarada y la model card se limita a un ejemplo de uso con `mlx-lm`. No hay informacion publica sobre datos de entrenamiento, longitud de contexto, idiomas distintos del ingles ni resultados de benchmarks.
 
@@ -23,7 +23,7 @@ El interes tecnico principal reside en el formato: al estar en MLX cuantizado a 
 | Libreria de inferencia | mlx-lm |
 | Tarea declarada | text-generation / conversational |
 | Tamano del repositorio | 29,6 GB |
-| Fecha de creacion | 2026-09-20 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-20 (segun metadatos de Hugging Face) |
 | Fecha de actualizacion | 2026-09-20 |
 
 ## Arquitectura y entrenamiento
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-Los datos de este modelo en la tabla corresponden a los metadatos de HuggingFace; los de los modelos de referencia son especificaciones publicas de sus respectivas familias y se incluyen solo como orientacion, ya que no se dispone de resultados de benchmarks comparables.
+Los datos de este modelo en la tabla corresponden a los metadatos de Hugging Face; los de los modelos de referencia son especificaciones publicas de sus respectivas familias y se incluyen solo como orientacion, ya que no se dispone de resultados de benchmarks comparables.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
@@ -91,7 +91,7 @@ La comparacion no puede ser concluyente en terminos de rendimiento porque el mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/parsguru/parsguru-action-14b-4bit-mlx
+- Repositorio en Hugging Face: https://huggingface.co/parsguru/parsguru-action-14b-4bit-mlx
 - Libreria MLX: https://github.com/ml-explore/mlx
 - Libreria mlx-lm: https://github.com/ml-explore/mlx-lm
 - Paper de MLX (arXiv): https://arxiv.org/abs/2312.02696

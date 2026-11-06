@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nif0/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic-H3-GGUF` es una variante cuantizada y podada del modelo Qwen3-VL-32B-Instruct, publicada por el usuario nif0 en HuggingFace. Según la model card, se han eliminado capas posteriores a la capa 49 (pruned layers after 49), lo que reduce el número total de parámetros a aproximadamente 25 158 millones (frente a los 32 000 millones del original). El nombre "ultra-uncensored-heretic" sugiere un fine-tuning orientado a eliminar restricciones de contenido, aunque no se aportan detalles sobre el proceso de entrenamiento.
+El modelo `nif0/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic-H3-GGUF` es una variante cuantizada y podada del modelo Qwen3-VL-32B-Instruct, publicada por el usuario nif0 en Hugging Face. Según la model card, se han eliminado capas posteriores a la capa 49 (pruned layers after 49), lo que reduce el número total de parámetros a aproximadamente 25 158 millones (frente a los 32 000 millones del original). El nombre "ultra-uncensored-heretic" sugiere un fine-tuning orientado a eliminar restricciones de contenido, aunque no se aportan detalles sobre el proceso de entrenamiento.
 
 El modelo se distribuye en formato GGUF y está diseñado para ser utilizado como text encoder en pipelines de generación de vídeo (T2V e I2V) dentro de ComfyUI, mediante un fork específico de ComfyUI-GGUF. Esta orientación a vídeo es inusual para la familia Qwen3-VL, que originalmente es un modelo de visión-lenguaje, por lo que se trata de una adaptación especializada.
 
@@ -84,6 +84,6 @@ La comparativa es limitada porque no hay modelos equivalentes documentados con l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nif0/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic-H3-GGUF
+- Modelo en Hugging Face: https://huggingface.co/nif0/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic-H3-GGUF
 - Fork de ComfyUI-GGUF (GitHub): https://github.com/Nif00/ComfyUI-GGUF
 - Modelo base (mradermacher): https://huggingface.co/mradermacher/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic-i1-GGUF

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| `SaurabhMokashi4/gemma3-1b-grpo-deepmath-lora` | 1B | No disponible | Apache 2.0 | Ajuste GRPO en matematicas | HuggingFace |
-| `unsloth/gemma-3-1b-it` (base) | 1B | No disponible en la informacion proporcionada | Apache 2.0 | Instruccion general | HuggingFace |
-| Qwen2.5-Math-1.5B | 1.5B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | Matematicas | HuggingFace |
-| Llama 3.2 1B Instruct | 1B | 128.000 tokens (segun documentacion publica de Meta) | Llama 3.2 Community License | Instruccion general | HuggingFace |
+| `SaurabhMokashi4/gemma3-1b-grpo-deepmath-lora` | 1B | No disponible | Apache 2.0 | Ajuste GRPO en matematicas | Hugging Face |
+| `unsloth/gemma-3-1b-it` (base) | 1B | No disponible en la informacion proporcionada | Apache 2.0 | Instruccion general | Hugging Face |
+| Qwen2.5-Math-1.5B | 1.5B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | Matematicas | Hugging Face |
+| Llama 3.2 1B Instruct | 1B | 128.000 tokens (segun documentacion publica de Meta) | Llama 3.2 Community License | Instruccion general | Hugging Face |
 
 La comparativa con Qwen2.5-Math y Llama 3.2 1B se basa en datos publicos de esos modelos; no hay benchmarks de este ajuste que permitan comparar rendimiento real.
 
@@ -84,7 +84,7 @@ La comparativa con Qwen2.5-Math y Llama 3.2 1B se basa en datos publicos de esos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SaurabhMokashi4/gemma3-1b-grpo-deepmath-lora
+- Repositorio Hugging Face: https://huggingface.co/SaurabhMokashi4/gemma3-1b-grpo-deepmath-lora
 - Modelo base: https://huggingface.co/unsloth/gemma-3-1b-it
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - TRL (Transformer Reinforcement Learning): https://github.com/huggingface/trl

@@ -65,7 +65,7 @@ No disponible. Al no existir un modelo entrenado, no es posible compararlo con a
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/yzabelletor05/multimodal-reasoning
+- Repositorio de Hugging Face: https://huggingface.co/yzabelletor05/multimodal-reasoning
 - Artículo sobre razonamiento multimodal en IA (2025): https://ajithp.com/2025/04/21/multimodal-reasoning-ai/
 - Comparativa de plataformas de modelos multimodales (2026): https://www.index.dev/blog/multimodal-ai-models-comparison
 - Artículo de Nature sobre IA diagnóstica multimodal: https://www.nature.com/articles/s41591-026-04371-0

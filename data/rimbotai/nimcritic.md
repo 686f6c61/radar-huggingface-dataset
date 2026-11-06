@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NimCritic es un modelo publicado en HuggingFace por el usuario RimbotAI bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del repositorio está vacía: únicamente contiene el bloque de metadatos con la licencia, sin descripción, sin arquitectura declarada, sin especificaciones de entrenamiento y sin ejemplos de uso. El repositorio no declara pipeline (`pipeline: no disponible`), no lista idiomas soportados y no incluye ningún artefacto documentado aparte de los pesos que el autor haya podido subir.
+NimCritic es un modelo publicado en Hugging Face por el usuario RimbotAI bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del repositorio está vacía: únicamente contiene el bloque de metadatos con la licencia, sin descripción, sin arquitectura declarada, sin especificaciones de entrenamiento y sin ejemplos de uso. El repositorio no declara pipeline (`pipeline: no disponible`), no lista idiomas soportados y no incluye ningún artefacto documentado aparte de los pesos que el autor haya podido subir.
 
 No es posible determinar qué problema resuelve ni qué tipo de modelo es (lenguaje, visión, embeddings, clasificador, etc.). El nombre "NimCritic" sugiere, por asociación, un posible rol de modelo crítico o evaluador dentro de un pipeline, pero se trata de una especulación basada únicamente en el nombre y no está confirmada por ninguna documentación oficial.
 
@@ -94,8 +94,8 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RimbotAI/NimCritic
-- Perfil del autor en HuggingFace (derivado del ID, no verificado en la busqueda): https://huggingface.co/RimbotAI
+- Modelo en Hugging Face: https://huggingface.co/RimbotAI/NimCritic
+- Perfil del autor en Hugging Face (derivado del ID, no verificado en la busqueda): https://huggingface.co/RimbotAI
 - Paper, blog, repositorio de codigo o demo: no disponible.
 
 No se han encontrado otros enlaces relevantes en la informacion proporcionada.

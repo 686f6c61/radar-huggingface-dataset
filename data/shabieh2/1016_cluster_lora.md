@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shabieh2/1016_cluster_lora` es un ajuste fino publicado en HuggingFace por el usuario shabieh2 sobre el modelo base `unsloth/Muse-Glimmer-30B`. Se distribuye bajo licencia Apache 2.0 y está etiquetado como modelo de generación de texto en inglés. El repositorio ocupa aproximadamente 0,9 GB, un tamano muy inferior al que correspondería a los pesos completos de un modelo de 30.000 millones de parámetros, lo que junto al nombre del repositorio ("cluster_lora") y a las etiquetas `unsloth` y `trl` apunta a que se trata de un adaptador LoRA y no de un checkpoint completo.
+`shabieh2/1016_cluster_lora` es un ajuste fino publicado en Hugging Face por el usuario shabieh2 sobre el modelo base `unsloth/Muse-Glimmer-30B`. Se distribuye bajo licencia Apache 2.0 y está etiquetado como modelo de generación de texto en inglés. El repositorio ocupa aproximadamente 0,9 GB, un tamano muy inferior al que correspondería a los pesos completos de un modelo de 30.000 millones de parámetros, lo que junto al nombre del repositorio ("cluster_lora") y a las etiquetas `unsloth` y `trl` apunta a que se trata de un adaptador LoRA y no de un checkpoint completo.
 
 La model card es mínima: no incluye información sobre arquitectura, longitud de contexto, composición del dataset de entrenamiento, hiperparámetros, número de tokens vistos ni resultados de evaluación. El único dato técnico relevante que aporta es que el entrenamiento se realizó con Unsloth, una librería que optimiza el fine-tuning de modelos abiertos reduciendo el uso de memoria y acelerando el proceso, y que el modelo base es Muse-Glimmer-30B en su versión alojada por Unsloth.
 
@@ -93,7 +93,7 @@ Para alternativas de la misma categoría (modelos abiertos de alrededor de 30.00
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shabieh2/1016_cluster_lora
+- Modelo en Hugging Face: https://huggingface.co/shabieh2/1016_cluster_lora
 - Modelo base: https://huggingface.co/unsloth/Muse-Glimmer-30B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Librería TRL (etiqueta del repositorio): https://github.com/huggingface/trl

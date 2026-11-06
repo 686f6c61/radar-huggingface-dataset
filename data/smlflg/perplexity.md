@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smlflg/Perplexity` es un repositorio publicado en HuggingFace que, a pesar de su identificador, no contiene un modelo de lenguaje con pesos entrenados, sino el codigo fuente de un servicio denominado "Local Answer Engine". Se trata de una aplicacion API-first que reproduce el flujo de trabajo caracteristico de Perplexity: buscar, extraer, clasificar, sintetizar y citar fuentes para responder a una consulta en lenguaje natural. El autor es el usuario `smlflg` y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta, con etiqueta `region:us` y sin licencia declarada.
+`smlflg/Perplexity` es un repositorio publicado en Hugging Face que, a pesar de su identificador, no contiene un modelo de lenguaje con pesos entrenados, sino el codigo fuente de un servicio denominado "Local Answer Engine". Se trata de una aplicacion API-first que reproduce el flujo de trabajo caracteristico de Perplexity: buscar, extraer, clasificar, sintetizar y citar fuentes para responder a una consulta en lenguaje natural. El autor es el usuario `smlflg` y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta, con etiqueta `region:us` y sin licencia declarada.
 
 El problema que aborda es la orquestacion de un pipeline de respuesta aumentada por recuperacion (RAG) sobre fuentes web o corporativas, con un enfasis explicito en la trazabilidad: si el modelo de lenguaje configurado no esta disponible, el servicio devuelve una respuesta extractiva citada en lugar de generar contenido no respaldado. Esta arquitectura de degradacion controlada es relevante para despliegues en produccion donde la verificabilidad de las afirmaciones es un requisito, no un extra.
 
@@ -20,7 +20,7 @@ Al no distribuir pesos, el repositorio no define arquitectura de red, numero de 
 | Idiomas soportados | No disponibles. El README incluye ejemplos de consulta en aleman e ingles; el soporte real depende del LLM y del buscador configurados |
 | Licencia | No disponible |
 | Formato de pesos | No disponible (no se publican pesos; el servicio consume APIs o endpoints locales) |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Etiquetas del repositorio | `region:us` |
 | Fecha de creacion | 2026-09-16 |
 | Ultima actualizacion | 2026-09-16 |
@@ -98,7 +98,7 @@ Nota metodologica: las tres alternativas citadas son proyectos reales de codigo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smlflg/Perplexity
+- Repositorio en Hugging Face: https://huggingface.co/smlflg/Perplexity
 - Documentacion interactiva de la API (una vez levantado el servicio): http://127.0.0.1:8000/docs
 - Ejemplo de flujo de trabajo local descrito en la model card: `uv sync`, `uv run uvicorn answer_engine.api:app --reload --host 127.0.0.1 --port 8000`
 - No se han encontrado papers, blogs, repositorios complementarios ni demos en los resultados de busqueda web proporcionados. Los unicos resultados devueltos corresponden a un sitio no relacionado (WhatsApp Web) y se descartan por no guardar relacion con el modelo.

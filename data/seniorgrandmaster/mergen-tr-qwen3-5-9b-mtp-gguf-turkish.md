@@ -90,5 +90,5 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SeniorGrandMaster/Mergen-TR-Qwen3.5-9B-MTP-GGUF-TURKISH
+- Repositorio Hugging Face: https://huggingface.co/SeniorGrandMaster/Mergen-TR-Qwen3.5-9B-MTP-GGUF-TURKISH
 - Modelo base: https://huggingface.co/dogukanvzr/Mergen-TR-Qwen3.5-9B

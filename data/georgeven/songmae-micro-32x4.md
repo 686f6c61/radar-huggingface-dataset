@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de información comparativa con otros modelos en los datos proporcionados. Se recomienda consultar la colección de SongMAE en HuggingFace para ver otros checkpoints de la familia, pero no hay datos de rendimiento relativo frente a alternativas como BirdNET o Perch.
+No se dispone de información comparativa con otros modelos en los datos proporcionados. Se recomienda consultar la colección de SongMAE en Hugging Face para ver otros checkpoints de la familia, pero no hay datos de rendimiento relativo frente a alternativas como BirdNET o Perch.
 
 ## Limitaciones y advertencias
 
@@ -76,7 +76,7 @@ No se dispone de información comparativa con otros modelos en los datos proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/georgeven/songmae-micro-32x4
+- Modelo en Hugging Face: https://huggingface.co/georgeven/songmae-micro-32x4
 - Colección SongMAE: https://huggingface.co/collections/georgeven/songmae-a-bioacoustic-encoder-for-birdsong-6a91eb9c42e5cde53962fbec
 - Repositorio de código: https://github.com/georgevenven/SongMAE
 - Paper en bioRxiv: https://www.biorxiv.org/content/10.64898/2026.08.17.745361v1

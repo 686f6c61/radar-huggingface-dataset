@@ -89,7 +89,7 @@ Nota: los datos de contexto, licencia y benchmarks de las alternativas correspon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nackoo/Wyntr_chatbot
+- Hugging Face: https://huggingface.co/Nackoo/Wyntr_chatbot
 - Unsloth (repositorio oficial): https://github.com/unslothai/unsloth
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - llama.cpp (herramienta de inferencia GGUF): https://github.com/ggml-org/llama.cpp

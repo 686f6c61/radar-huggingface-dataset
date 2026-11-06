@@ -25,7 +25,7 @@ El adaptador ocupa 0,7 GB en el Hub, se distribuye bajo licencia Apache 2.0 y de
 
 El modelo base `klei1/bleta-sq-2b` es un transformer multimodal de la familia Gemma 4 (variante E2B) con tres torres: `language_model`, `vision_tower` y `audio_tower`. El adaptador LoRA se aplica únicamente a las proyecciones `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj` y `down_proj` de la torre de lenguaje. Las torres de visión y audio se congelaron (`requires_grad=False`) y se eliminaron del adaptador publicado, de modo que el artefacto final es estrictamente de texto. Los hiperparámetros del adaptador son `r=32` y `lora_alpha=64`, continuando desde un PEFT previo de Unsloth.
 
-El entrenamiento se realizó en una Tesla T4 gratuita de Google Colab con Unsloth `FastModel`, carga en 4 bits y gradient checkpointing. Se ejecutaron 2 épocas completas con packing activado, micro-batch de 2 y acumulación de gradiente de 8 (lote efectivo 16), longitud máxima de secuencia de 1024 tokens y evaluación cada 100 pasos. El entrenamiento duró 10.781 segundos (unas 2,99 horas) y completó 464 pasos. El dataset combina un conjunto semilla "Gold Gjuha" de alta calidad, filas albanesas enriquecidas desde HuggingFace, filas de currículo estratificado (Ortografía, Morfología, Sintaxis, Ensayo y Seguridad) y un conjunto de evaluación reservado de 512 filas que no se usó en entrenamiento. En total, 20.000 pares de instrucción empaquetados.
+El entrenamiento se realizó en una Tesla T4 gratuita de Google Colab con Unsloth `FastModel`, carga en 4 bits y gradient checkpointing. Se ejecutaron 2 épocas completas con packing activado, micro-batch de 2 y acumulación de gradiente de 8 (lote efectivo 16), longitud máxima de secuencia de 1024 tokens y evaluación cada 100 pasos. El entrenamiento duró 10.781 segundos (unas 2,99 horas) y completó 464 pasos. El dataset combina un conjunto semilla "Gold Gjuha" de alta calidad, filas albanesas enriquecidas desde Hugging Face, filas de currículo estratificado (Ortografía, Morfología, Sintaxis, Ensayo y Seguridad) y un conjunto de evaluación reservado de 512 filas que no se usó en entrenamiento. En total, 20.000 pares de instrucción empaquetados.
 
 ## Capacidades
 
@@ -85,8 +85,8 @@ No se dispone de datos de rendimiento comparables de otros modelos en la informa
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HeliosFenrir/bleta-sq-2b-gjuha-lora (este) | ~2B (base) + LoRA `r=32` | no disponible (entrenado a 1024) | sq, en | Apache 2.0 | HuggingFace, 34 descargas |
-| klei1/bleta-sq-2b (base) | ~2B (base) | no disponible | sq, en (multimodal) | no disponible | HuggingFace |
+| HeliosFenrir/bleta-sq-2b-gjuha-lora (este) | ~2B (base) + LoRA `r=32` | no disponible (entrenado a 1024) | sq, en | Apache 2.0 | Hugging Face, 34 descargas |
+| klei1/bleta-sq-2b (base) | ~2B (base) | no disponible | sq, en (multimodal) | no disponible | Hugging Face |
 | Alternativas de tutoría en albanés | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la información disponible otros adaptadores LoRA de tutoría de lengua albanesa directamente comparables.
@@ -106,7 +106,7 @@ No se han identificado en la información disponible otros adaptadores LoRA de t
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/HeliosFenrir/bleta-sq-2b-gjuha-lora
+- Adaptador en Hugging Face: https://huggingface.co/HeliosFenrir/bleta-sq-2b-gjuha-lora
 - Modelo base: https://huggingface.co/klei1/bleta-sq-2b
 - Dataset de atribución: https://huggingface.co/datasets/klei1/bleta-sq-dataset-v1
 - Repositorio de Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

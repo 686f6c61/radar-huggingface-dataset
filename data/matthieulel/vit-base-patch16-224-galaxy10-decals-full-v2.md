@@ -73,9 +73,9 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parametros | Contexto / entrada | Accuracy en Galaxy10 DECaLS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vit-base-patch16-224-galaxy10-decals-full-v2 (este) | 85,8 M | 224x224 px | 83,93 % (test, semilla 42) | Apache 2.0 | HuggingFace |
-| google/vit-base-patch16-224 (base sin ajustar) | 85,8 M | 224x224 px | no disponible (modelo de ImageNet, sin cabeza de 10 clases) | Apache 2.0 | HuggingFace |
-| Otros backbones de la colección Vision Foundation Models Benchmark | variable | 224x224 px | no disponible en esta ficha (resultados en el dataset de runs del autor) | variable | HuggingFace |
+| vit-base-patch16-224-galaxy10-decals-full-v2 (este) | 85,8 M | 224x224 px | 83,93 % (test, semilla 42) | Apache 2.0 | Hugging Face |
+| google/vit-base-patch16-224 (base sin ajustar) | 85,8 M | 224x224 px | no disponible (modelo de ImageNet, sin cabeza de 10 clases) | Apache 2.0 | Hugging Face |
+| Otros backbones de la colección Vision Foundation Models Benchmark | variable | 224x224 px | no disponible en esta ficha (resultados en el dataset de runs del autor) | variable | Hugging Face |
 
 La comparación directa con alternativas de la misma categoría (otros ViT, ConvNeXt, Swin, etc. ajustados a Galaxy10 DECaLS) no está disponible en la información proporcionada; el autor remite al paper en revisión y al dataset de resultados por época para la comparativa completa entre las 80 configuraciones.
 
@@ -93,7 +93,7 @@ La comparación directa con alternativas de la misma categoría (otros ViT, Conv
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/vit-base-patch16-224-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/vit-base-patch16-224-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de resultados por época y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

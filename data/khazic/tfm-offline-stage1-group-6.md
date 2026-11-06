@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como khazic/tfm-offline-stage1-group-6 es un repositorio alojado en HuggingFace por el usuario khazic. La denominacion del repositorio (tfm, offline, stage1, group6) sugiere que se trata de un artefacto vinculado a un trabajo de fin de master (TFM) desarrollado por un grupo de trabajo, posiblemente correspondiente a una primera fase offline de un proyecto mayor. No obstante, esta interpretacion se deriva unicamente del nombre y no ha podido confirmarse con documentacion adicional.
+El modelo identificado como khazic/tfm-offline-stage1-group-6 es un repositorio alojado en Hugging Face por el usuario khazic. La denominacion del repositorio (tfm, offline, stage1, group6) sugiere que se trata de un artefacto vinculado a un trabajo de fin de master (TFM) desarrollado por un grupo de trabajo, posiblemente correspondiente a una primera fase offline de un proyecto mayor. No obstante, esta interpretacion se deriva unicamente del nombre y no ha podido confirmarse con documentacion adicional.
 
 En el momento de la consulta, la informacion publica disponible es muy limitada: no se especifica pipeline, licencia, idiomas soportados ni arquitectura. El repositorio tiene un tamano de 3,1 GB, lo que indica que contiene pesos de un modelo, aunque no permite determinar con precision el numero de parametros sin conocer el formato y la cuantizacion empleados.
 
@@ -68,7 +68,7 @@ No es posible establecer una comparativa fiable porque se desconocen parametros,
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | repositorio publico en HuggingFace, 0 descargas, 2 likes | no disponible |
+| Disponibilidad | repositorio publico en Hugging Face, 0 descargas, 2 likes | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -83,5 +83,5 @@ No es posible establecer una comparativa fiable porque se desconocen parametros,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/khazic/tfm-offline-stage1-group-6
+- Hugging Face: https://huggingface.co/khazic/tfm-offline-stage1-group-6
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos corresponden a servicios de seguimiento de paqueteria y a un perfil de red social, sin relacion con el modelo.

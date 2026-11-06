@@ -98,7 +98,7 @@ No se han identificado en la informacion proporcionada otros verificadores publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Contrastive-LM/tb21-gpt6-low-clm-cv-heads-8k
+- Modelo en Hugging Face: https://huggingface.co/Contrastive-LM/tb21-gpt6-low-clm-cv-heads-8k
 - Repositorio hermano de cabezas CLM: https://huggingface.co/Contrastive-LM/tb21-clm-cv-heads-8k
 - Dataset de embeddings: https://huggingface.co/datasets/Contrastive-LM/tb21-gpt6-low-clm-cv-embeddings-8k
 - Checkpoint base CLM v0.1 8B: https://huggingface.co/Contrastive-LM/CLM-v0.1-8B

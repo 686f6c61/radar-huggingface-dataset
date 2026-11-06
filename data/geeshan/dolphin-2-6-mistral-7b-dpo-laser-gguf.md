@@ -118,4 +118,4 @@ La comparacion se limita a parametros, licencia, formato y disponibilidad, porqu
 - Faraday.dev: https://faraday.dev/
 - Datasets de entrenamiento: https://huggingface.co/datasets/ehartford/dolphin, https://huggingface.co/datasets/jondurbin/airoboros-2.2.1, https://huggingface.co/datasets/ehartford/dolphin-coder, https://huggingface.co/datasets/teknium/openhermes, https://huggingface.co/datasets/ise-uiuc/Magicoder-OSS-Instruct-75K, https://huggingface.co/datasets/ise-uiuc/Magicoder-Evol-Instruct-110K, https://huggingface.co/datasets/LDJnr/Capybara
 
-Nota sobre la busqueda web: las consultas realizadas no devolvieron resultados utiles (unicamente paginas de inicio de sesion de Google), por lo que todos los enlaces anteriores proceden de la informacion de HuggingFace y de la model card del repositorio.
+Nota sobre la busqueda web: las consultas realizadas no devolvieron resultados utiles (unicamente paginas de inicio de sesion de Google), por lo que todos los enlaces anteriores proceden de la informacion de Hugging Face y de la model card del repositorio.

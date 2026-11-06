@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tinyopsec/chinese-text-correction-1.5b-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/chinese-text-correction-1.5b-GGUF
 - Modelo original (autor shibing624): https://huggingface.co/shibing624/chinese-text-correction-1.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - llama.cpp: https://github.com/ggml-org/llama.cpp

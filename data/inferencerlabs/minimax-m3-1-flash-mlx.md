@@ -123,7 +123,7 @@ Frente al servicio en nube, la diferencia medible es de throughput: 200+ tokens/
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/inferencerlabs/MiniMax-M3.1-Flash-MLX
+- Repositorio Hugging Face: https://huggingface.co/inferencerlabs/MiniMax-M3.1-Flash-MLX
 - Variante Q9: https://huggingface.co/inferencerlabs/MiniMax-M3.1-Flash-MLX-Q9
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
 - Receta de vLLM para el modelo base: https://recipes.vllm.ai/MiniMaxAI/MiniMax-M3.1-Flash

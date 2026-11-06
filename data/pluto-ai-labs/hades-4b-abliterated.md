@@ -6,7 +6,7 @@ Hades-4B-Abliterated es un modelo de lenguaje de 4.022.468.096 parametros (aprox
 
 La innovacion del artefacto es su caracter de "soft refusal": segun las pruebas del autor, el modelo responde con detalle tecnico a preguntas nocivas formuladas de forma natural (tasa de rechazo del 0 % en 8 de 8 casos), pero sigue bloqueando 3 de 3 prompts de jailbreak que ordenan explicitamente ignorar las restricciones de seguridad. Es decir, la ablacion elimina la respuesta entrenada de "no puedo ayudar con eso", pero no la capacidad de reconocer intencion adversarial.
 
-El modelo se distribuye con licencia Apache 2.0 heredada del modelo base, en formato safetensors y con soporte para la libreria transformers. Es un artefacto de investigacion, no un modelo destinado a produccion, y en el momento de redactar esta ficha acumula 0 descargas y 1 like en HuggingFace, ademas de no tener benchmarks estandar publicados.
+El modelo se distribuye con licencia Apache 2.0 heredada del modelo base, en formato safetensors y con soporte para la libreria transformers. Es un artefacto de investigacion, no un modelo destinado a produccion, y en el momento de redactar esta ficha acumula 0 descargas y 1 like en Hugging Face, ademas de no tener benchmarks estandar publicados.
 
 ## Especificaciones tecnicas
 
@@ -34,7 +34,7 @@ El procedimiento descrito en la model card consta de tres pasos. Primero, extrac
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles (idiomas no declarados en la ficha de HuggingFace).
+- Generacion de texto conversacional en ingles (idiomas no declarados en la ficha de Hugging Face).
 - Generacion de codigo: validado por el autor con un comprobador de numeros primos en Python que produce codigo correcto y limpio.
 - Razonamiento matematico basico: resuelve correctamente el calculo de velocidad media (120 km entre 1,5 h = 80 km/h).
 - Resumen y comprension literaria: sintesis precisa y concisa de Hamlet.
@@ -86,8 +86,8 @@ No se dispone de datos de contexto, benchmarks ni cuantizaciones de los modelos 
 
 | Modelo | Parametros | Contexto | Licencia | Comportamiento de rechazo | Disponibilidad |
 |---|---|---|---|---|---|
-| Hades-4B-Abliterated | 4,02 B | no disponible | Apache 2.0 | 0 % en consultas naturales, 3/3 jailbreaks bloqueados | HuggingFace, safetensors |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | 4,02 B | no disponible en la informacion proporcionada | Apache 2.0 | Rechaza consultas nocivas naturales | HuggingFace |
+| Hades-4B-Abliterated | 4,02 B | no disponible | Apache 2.0 | 0 % en consultas naturales, 3/3 jailbreaks bloqueados | Hugging Face, safetensors |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | 4,02 B | no disponible en la informacion proporcionada | Apache 2.0 | Rechaza consultas nocivas naturales | Hugging Face |
 | Otros modelos abliterados de la familia Qwen3 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -106,7 +106,7 @@ No se dispone de datos de contexto, benchmarks ni cuantizaciones de los modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pluto-AI-Labs/Hades-4B-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/Pluto-AI-Labs/Hades-4B-Abliterated
 - Organizacion Pluto AI Labs: https://huggingface.co/Pluto-AI-Labs
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper de referencia (Arditi et al., 2024): https://arxiv.org/abs/2406.11717

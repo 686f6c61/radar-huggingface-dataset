@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`saanimustaf/twi-asr-fixed-grapheme-mms300m` es un checkpoint publicado en HuggingFace por el usuario saanimustaf y orientado, a juzgar por su identificador, al reconocimiento automatico del habla (ASR) en twi (akan), una lengua hablada principalmente en Ghana. El nombre del repositorio sugiere ademas que se trata de un ajuste fino del modelo MMS de 300 millones de parametros de Meta y que incorpora algun tipo de correccion o fijacion del esquema de grafemas empleado en la salida. Ninguna de estas inferencias esta confirmada por el autor.
+`saanimustaf/twi-asr-fixed-grapheme-mms300m` es un checkpoint publicado en Hugging Face por el usuario saanimustaf y orientado, a juzgar por su identificador, al reconocimiento automatico del habla (ASR) en twi (akan), una lengua hablada principalmente en Ghana. El nombre del repositorio sugiere ademas que se trata de un ajuste fino del modelo MMS de 300 millones de parametros de Meta y que incorpora algun tipo de correccion o fijacion del esquema de grafemas empleado en la salida. Ninguna de estas inferencias esta confirmada por el autor.
 
-La model card publicada no contiene informacion tecnica: se reduce a la declaracion de licencia (`mit`). No hay descripcion del corpus de entrenamiento, del preprocesado, del vocabulario, de las metricas de evaluacion ni de los idiomas o variantes cubiertas. La ficha de HuggingFace tampoco declara pipeline, idiomas ni resultados, y el repositorio acumula 0 descargas y 0 likes desde su creacion el 27 de octubre de 2026, lo que indica que es un artefacto recien subido y sin validacion por parte de la comunidad.
+La model card publicada no contiene informacion tecnica: se reduce a la declaracion de licencia (`mit`). No hay descripcion del corpus de entrenamiento, del preprocesado, del vocabulario, de las metricas de evaluacion ni de los idiomas o variantes cubiertas. La ficha de Hugging Face tampoco declara pipeline, idiomas ni resultados, y el repositorio acumula 0 descargas y 0 likes desde su creacion el 27 de octubre de 2026, lo que indica que es un artefacto recien subido y sin validacion por parte de la comunidad.
 
 Por tanto, esta ficha documenta de forma exhaustiva lo que se puede afirmar con certeza (metadatos y licencia) y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier uso en produccion exige una evaluacion propia previa sobre datos representativos de la variante de twi objetivo.
 
@@ -51,7 +51,7 @@ Los siguientes escenarios son aplicaciones tipicas de un sistema ASR para una le
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tasa de error de palabras (WER), tasa de error de caracteres (CER), comparaciones con lineas base ni detalles del conjunto de evaluacion. Tampoco hay resultados de evaluacion en la ficha de HuggingFace ni comentarios de la comunidad que aporten mediciones.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tasa de error de palabras (WER), tasa de error de caracteres (CER), comparaciones con lineas base ni detalles del conjunto de evaluacion. Tampoco hay resultados de evaluacion en la ficha de Hugging Face ni comentarios de la comunidad que aporten mediciones.
 
 ## Requisitos de hardware
 
@@ -69,10 +69,10 @@ La comparacion se establece con modelos de ASR multilingue y de bajos recursos d
 
 | Modelo | Parametros | Cobertura idiomatica | Licencia | Disponibilidad | Rendimiento en twi |
 |---|---|---|---|---|---|
-| saanimustaf/twi-asr-fixed-grapheme-mms300m | no disponible (identificador: 300 M) | no disponible (identificador: twi) | MIT | Repositorio HuggingFace, 0 descargas | no disponible |
-| Meta MMS (modelos por idioma y `mms-1b-all`) | ~300 M por idioma; ~1 B en el modelo multilingue | Mas de 1000 idiomas, twi incluido | CC-BY-NC 4.0 (restringe uso comercial) | Publico en HuggingFace y via `torchaudio` | Resultados publicados por Meta para twi en su evaluacion |
-| Wav2Vec2 XLS-R 300 M | ~317 M | 128 idiomas; twi no figura entre los cubiertos de forma explicita | Apache 2.0 | Publico en HuggingFace | No reportado para twi |
-| OpenAI Whisper (small / medium) | 244 M / 769 M | ~99 idiomas, con twi fuera de la lista declarada | MIT | Publico en HuggingFace y en el repositorio de OpenAI | No reportado; cobertura de twi no garantizada |
+| saanimustaf/twi-asr-fixed-grapheme-mms300m | no disponible (identificador: 300 M) | no disponible (identificador: twi) | MIT | Repositorio Hugging Face, 0 descargas | no disponible |
+| Meta MMS (modelos por idioma y `mms-1b-all`) | ~300 M por idioma; ~1 B en el modelo multilingue | Mas de 1000 idiomas, twi incluido | CC-BY-NC 4.0 (restringe uso comercial) | Publico en Hugging Face y via `torchaudio` | Resultados publicados por Meta para twi en su evaluacion |
+| Wav2Vec2 XLS-R 300 M | ~317 M | 128 idiomas; twi no figura entre los cubiertos de forma explicita | Apache 2.0 | Publico en Hugging Face | No reportado para twi |
+| OpenAI Whisper (small / medium) | 244 M / 769 M | ~99 idiomas, con twi fuera de la lista declarada | MIT | Publico en Hugging Face y en el repositorio de OpenAI | No reportado; cobertura de twi no garantizada |
 
 Diferencias relevantes: la licencia MIT de este checkpoint es mas permisiva que la CC-BY-NC 4.0 de la familia MMS original, lo que facilitaria su uso comercial, pero esa ventaja solo es real si el modelo base empleado no impone restricciones adicionales heredadas, extremo que la model card no aclara y que conviene verificar. Frente a Whisper, un modelo especifico para twi parte con ventaja teorica en una lengua de bajos recursos, pero sin WER publicado no hay forma de sostener esa afirmacion con datos.
 
@@ -90,6 +90,6 @@ Diferencias relevantes: la licencia MIT de este checkpoint es mas permisiva que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saanimustaf/twi-asr-fixed-grapheme-mms300m
+- Modelo en Hugging Face: https://huggingface.co/saanimustaf/twi-asr-fixed-grapheme-mms300m
 - Paper, blog, repositorio o demo del autor: no disponibles en la informacion proporcionada.
 - Documentacion o publicacion sobre el modelo base sugerido por el identificador: no disponible en la informacion proporcionada; debe localizarse a partir del contenido del repositorio una vez inspeccionado.

@@ -74,7 +74,7 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-asr-1.7b-assamese-lora | ~2B (1,7B LM + ~300M encoder) + LoRA | no disponible | ASR asamés | apache-2.0 | HuggingFace |
+| qwen3-asr-1.7b-assamese-lora | ~2B (1,7B LM + ~300M encoder) + LoRA | no disponible | ASR asamés | apache-2.0 | Hugging Face |
 | Whisper large-v3 | no disponible en la informacion | no disponible | ASR multilingue | no disponible | no disponible |
 | IndicWhisper (AI4Bharat) | no disponible en la informacion | no disponible | ASR de idiomas indios | no disponible | no disponible |
 
@@ -93,6 +93,6 @@ No se dispone en la informacion proporcionada de datos comparativos de rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bijaykumarsingh/qwen3-asr-1.7b-assamese-lora
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-ASR-1.7B-hf
+- Modelo en Hugging Face: https://huggingface.co/bijaykumarsingh/qwen3-asr-1.7b-assamese-lora
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-ASR-1.7B-hf
 - Citacion del autor: Singh, Bijay Kumar (2026). "Architectural Inductive Bias Trumps Parameter Scale: Adapting Large Audio-Language Models to Low-Resource Assamese ASR". arXiv preprint (sin enlace proporcionado en la informacion disponible).

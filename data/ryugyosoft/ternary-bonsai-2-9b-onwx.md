@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks comparativos publicados en la información 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ryugyosoft/Ternary-Bonsai-2-9B-onwx
+- Repositorio Hugging Face: https://huggingface.co/ryugyosoft/Ternary-Bonsai-2-9B-onwx
 - Aplicación onwx: https://huggingface.co/ryugyosoft/onwx
 - Modelo base (Prism ML, MLX 2-bit): https://huggingface.co/prism-ml/Ternary-Bonsai-2-9B-mlx-2bit
 - Modelo original (Alibaba Cloud Qwen): https://huggingface.co/Qwen/Qwen3.5-9B

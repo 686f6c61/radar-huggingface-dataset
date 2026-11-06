@@ -98,13 +98,13 @@ Nota: la tabla por idioma de la model card está truncada en la información dis
 
 | Modelo | Parámetros | Contexto | MASSIVE intents (16 idiomas) | SIB-200 topics (16 idiomas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Horizon-Labs/multilingual-zeroshot-large | 568M | 8.192 tokens (ajuste a 1.024) | 0,535 | 0,834 § | Apache-2.0 | HuggingFace, safetensors y ONNX |
-| Horizon-Labs multilingual-zeroshot-small | 141M | no disponible | 0,402 | 0,789 § | no disponible | HuggingFace (misma familia) |
-| Horizon-Labs multilingual-zeroshot-base | 308M | no disponible | 0,482 | 0,813 § | no disponible | HuggingFace (misma familia) |
-| bge-m3-zeroshot-v2.0-c | 568M | no disponible | 0,411 | 0,782 § | variante comercial según el autor | HuggingFace |
-| bge-m3-zeroshot-v2.0 ‡ | 568M | no disponible | **0,611** | **0,837** § | datos de entrenamiento parcialmente no comerciales | HuggingFace |
-| mDeBERTa-v3-base-xnli | 278M | no disponible | 0,351 | 0,654 § | no disponible | HuggingFace |
-| xlm-roberta-large-xnli | 560M | no disponible | 0,404 | 0,526 § | no disponible | HuggingFace |
+| Horizon-Labs/multilingual-zeroshot-large | 568M | 8.192 tokens (ajuste a 1.024) | 0,535 | 0,834 § | Apache-2.0 | Hugging Face, safetensors y ONNX |
+| Horizon-Labs multilingual-zeroshot-small | 141M | no disponible | 0,402 | 0,789 § | no disponible | Hugging Face (misma familia) |
+| Horizon-Labs multilingual-zeroshot-base | 308M | no disponible | 0,482 | 0,813 § | no disponible | Hugging Face (misma familia) |
+| bge-m3-zeroshot-v2.0-c | 568M | no disponible | 0,411 | 0,782 § | variante comercial según el autor | Hugging Face |
+| bge-m3-zeroshot-v2.0 ‡ | 568M | no disponible | **0,611** | **0,837** § | datos de entrenamiento parcialmente no comerciales | Hugging Face |
+| mDeBERTa-v3-base-xnli | 278M | no disponible | 0,351 | 0,654 § | no disponible | Hugging Face |
+| xlm-roberta-large-xnli | 560M | no disponible | 0,404 | 0,526 § | no disponible | Hugging Face |
 
 La lectura de estos datos es relevante para la elección: el modelo supera con claridad a los clasificadores multilingües zero-shot clásicos basados en XNLI (mDeBERTa-v3-base-xnli y xlm-roberta-large-xnli) en MASSIVE, y también a la variante comercial `bge-m3-zeroshot-v2.0-c` sobre el mismo backbone. Sin embargo, la variante `bge-m3-zeroshot-v2.0` (marcada con ‡ por usar datos parcialmente no comerciales) obtiene mejores cifras en ambas tareas, por lo que existe un compromiso explícito entre licencia limpia para uso comercial y rendimiento máximo.
 
@@ -122,7 +122,7 @@ La lectura de estos datos es relevante para la elección: el modelo supera con c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Horizon-Labs/multilingual-zeroshot-large
+- Modelo en Hugging Face: https://huggingface.co/Horizon-Labs/multilingual-zeroshot-large
 - Demo en el navegador: https://huggingface.co/spaces/Horizon-Labs/multilingual-zeroshot
 - Colección "Agent I/O Guards" de Horizon Labs: https://huggingface.co/collections/Horizon-Labs/agent-i-o-guards-6ab403c49494bc2b71ca7669
 - Código fuente: https://github.com/horizon-ai-labs/agent-io-guards

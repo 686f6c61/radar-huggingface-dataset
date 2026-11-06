@@ -91,7 +91,7 @@ La comparacion cuantitativa de rendimiento no es posible porque este modelo no p
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Mistral-Grand-R1-Dolphin-3.0-Deep-Reasoning-Brainstorm-45B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Mistral-Grand-R1-Dolphin-3.0-Deep-Reasoning-Brainstorm-45B-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Mistral-Grand-R1-Dolphin-3.0-Deep-Reasoning-Brainstorm-45B
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Mistral-Grand-R1-Dolphin-3.0-Deep-Reasoning-Brainstorm-45B-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Mistral-Grand-R1-Dolphin-3.0-Deep-Reasoning-Brainstorm-45B-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AfterMidnight-MiniMax-H3-NSFW es un adaptador LoRA publicado por el usuario dubUhoo en HuggingFace, pensado para el modelo base que el autor denomina "MiniMax H3" en su variante ref2va (reference to video, con generacion de audio asociada). No se trata de un modelo completo, sino de un peso adicional de bajo rango que se aplica sobre un modelo de generacion de video ya existente para modificar su comportamiento en escenas concretas. El repositorio ocupa 4,8 GB y no incluye pipeline declarado, idiomas soportados ni especificaciones tecnicas del modelo base.
+AfterMidnight-MiniMax-H3-NSFW es un adaptador LoRA publicado por el usuario dubUhoo en Hugging Face, pensado para el modelo base que el autor denomina "MiniMax H3" en su variante ref2va (reference to video, con generacion de audio asociada). No se trata de un modelo completo, sino de un peso adicional de bajo rango que se aplica sobre un modelo de generacion de video ya existente para modificar su comportamiento en escenas concretas. El repositorio ocupa 4,8 GB y no incluye pipeline declarado, idiomas soportados ni especificaciones tecnicas del modelo base.
 
 La model card indica que el adaptador esta orientado a contenido para adultos ("things that happen after midnight") y que se distribuye en dos variantes entrenadas sobre el mismo dataset con estilos de entrenamiento distintos: una version etiquetada como "sexytime", pensada para escenas sexuales y movimiento coherente, y una version "softer" enfocada en detalle y estilo surrealista, sin tanta presion sobre el movimiento. El autor recomienda usar el sampler euler junto con el scheduler beta, advirtiendo de que otras combinaciones producen problemas de audio.
 
@@ -82,7 +82,7 @@ No disponible. La informacion proporcionada no incluye datos verificables de otr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AfterMidnight-MiniMax-H3-NSFW (LoRA) | no disponible | no disponible | no disponible (sin benchmarks publicados) | apache-2.0 | HuggingFace, 0 descargas |
+| AfterMidnight-MiniMax-H3-NSFW (LoRA) | no disponible | no disponible | no disponible (sin benchmarks publicados) | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No disponible. La informacion proporcionada no incluye datos verificables de otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dubUhoo/AfterMidnight-MiniMax-H3-NSFW
+- Hugging Face: https://huggingface.co/dubUhoo/AfterMidnight-MiniMax-H3-NSFW
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Starlinghq/kev-4b-onnx
+- Modelo en Hugging Face: https://huggingface.co/Starlinghq/kev-4b-onnx
 - Modelo base (adaptador original): https://huggingface.co/jaredpalmer/kev-4b
 - Backbone de origen: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Repositorio del proyecto y paquete .NET: https://github.com/starlinghq/starling

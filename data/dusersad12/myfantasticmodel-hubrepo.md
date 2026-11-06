@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyFantasticModel es un modelo publicado en HuggingFace por el usuario dusersad12 bajo el identificador `dusersad12/MyFantasticModel-HubRepo`. La model card lo describe como un asistente conversacional con mejoras notables en razonamiento, matemáticas y programación respecto a una versión anterior, e incluye instrucciones de uso (system prompt, temperatura recomendada de 0,6, plantillas para subida de ficheros y búsqueda web aumentada). Sin embargo, la información publicada no permite identificar la arquitectura real, el número de parámetros ni la longitud de contexto: no se indica ninguno de estos datos en la documentación disponible.
+MyFantasticModel es un modelo publicado en Hugging Face por el usuario dusersad12 bajo el identificador `dusersad12/MyFantasticModel-HubRepo`. La model card lo describe como un asistente conversacional con mejoras notables en razonamiento, matemáticas y programación respecto a una versión anterior, e incluye instrucciones de uso (system prompt, temperatura recomendada de 0,6, plantillas para subida de ficheros y búsqueda web aumentada). Sin embargo, la información publicada no permite identificar la arquitectura real, el número de parámetros ni la longitud de contexto: no se indica ninguno de estos datos en la documentación disponible.
 
 Existe una contradicción relevante entre los metadatos y el contenido de la model card. Las etiquetas del repositorio apuntan a `bert` y al pipeline `feature-extraction`, lo que sugeriría un modelo encoder de representaciones tipo BERT, mientras que la model card describe un modelo generativo de razonamiento con modo de pensamiento extendido, function calling y comparativas frente a benchmarks de matemáticas y código. Además, el tamaño del repositorio es de 0,0 GB, lo que indica que no hay pesos publicados en el momento de la consulta, y el contador de descargas y likes es cero. Se trata, por tanto, de un repositorio prácticamente vacío o en estado inicial, sin validación independiente.
 
@@ -30,7 +30,7 @@ La relevancia de esta ficha es limitada y debe interpretarse como un ejercicio d
 
 ## Arquitectura y entrenamiento
 
-No hay información verificable sobre la arquitectura. Las etiquetas de HuggingFace (`bert`, `feature-extraction`, `pytorch`, `transformers`) apuntan a un encoder bidireccional orientado a extracción de características, pero la model card describe un comportamiento propio de un modelo decoder generativo con razonamiento en cadena: menciona profundidad de razonamiento ampliada, optimizaciones algorítmicas en post-entrenamiento, soporte de system prompt y eliminación de la necesidad de tokens especiales para forzar el patrón de pensamiento. Esas dos descripciones son incompatibles entre sí y no es posible resolver la discrepancia con la información disponible.
+No hay información verificable sobre la arquitectura. Las etiquetas de Hugging Face (`bert`, `feature-extraction`, `pytorch`, `transformers`) apuntan a un encoder bidireccional orientado a extracción de características, pero la model card describe un comportamiento propio de un modelo decoder generativo con razonamiento en cadena: menciona profundidad de razonamiento ampliada, optimizaciones algorítmicas en post-entrenamiento, soporte de system prompt y eliminación de la necesidad de tokens especiales para forzar el patrón de pensamiento. Esas dos descripciones son incompatibles entre sí y no es posible resolver la discrepancia con la información disponible.
 
 Tampoco se publican datos de entrenamiento: no se indica el número de tokens, la composición del dataset, ni si hubo RLHF, DPO u otras técnicas de alineamiento. La model card afirma mejoras en razonamiento atribuidas a "mayor cómputo y mecanismos de optimización algorítmica durante el post-entrenamiento", pero sin cifras ni metodología. Un dato concreto que sí aparece es el aumento del esfuerzo de inferencia: en el conjunto AIME, la versión anterior consumía una media de 12.000 tokens por pregunta y la actual, 23.000 tokens por pregunta, lo que sugiere un modo de razonamiento extendido con presupuesto de tokens creciente. Se menciona también la existencia de una variante "MyFantasticModel-Small" con la misma arquitectura que su modelo base pero compartiendo el tokenizer del modelo principal, sin más detalles técnicos.
 
@@ -87,7 +87,7 @@ Dato adicional aportado por el autor: en AIME 2025 la precisión pasa del 70 % (
 - VRAM para inferencia: no disponible. Al no conocerse el número de parámetros ni la arquitectura, no es posible estimar requisitos de memoria.
 - GPU recomendadas: no disponible por el mismo motivo.
 - Viabilidad en GPU de consumo: no disponible; no puede determinarse sin conocer el tamaño del modelo.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints a través de la librería `transformers`. No hay evidencia de soporte de vLLM, llama.cpp, Ollama, TGI ni otros motores, ni de ficheros GGUF.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints a través de la librería `transformers`. No hay evidencia de soporte de vLLM, llama.cpp, Ollama, TGI ni otros motores, ni de ficheros GGUF.
 - Latencia y throughput: no disponibles. El único indicador indirecto es el coste de inferencia del modo de razonamiento, con una media declarada de 23.000 tokens por pregunta en AIME, lo que implica respuestas lentas y costosas en comparación con modelos que no usan cadenas de razonamiento largas.
 
 ## Comparativa con modelos similares
@@ -116,6 +116,6 @@ No es posible establecer una comparativa fiable. La model card menciona tres ref
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/dusersad12/MyFantasticModel-HubRepo
+- Página del modelo en Hugging Face: https://huggingface.co/dusersad12/MyFantasticModel-HubRepo
 - Búsqueda web realizada: no se ha encontrado ningún enlace relevante sobre este modelo. Los resultados devueltos correspondían a páginas de Google Translate (https://translate.google.com/ y sus variantes de ayuda en varios idiomas) y no guardan relación con el modelo.
 - Paper, repositorio de código, blog o demo: no disponibles. La model card menciona "our official website" y "our code repository", pero no incluye sus URL.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `jujeongho/Qwen3.5-0.8B-LoRA-Welding-Component-Segmentation-v2` es un ajuste fino mediante LoRA sobre un modelo base de la familia Qwen3.5 de 0,8 mil millones de parametros, orientado a la segmentacion de componentes de soldadura a partir de imagenes. Lo publica el usuario `jujeongho` en HuggingFace y su pipeline declarado es `image-text-to-text`, es decir, un modelo multimodal que recibe imagen y texto y genera texto.
+El modelo `jujeongho/Qwen3.5-0.8B-LoRA-Welding-Component-Segmentation-v2` es un ajuste fino mediante LoRA sobre un modelo base de la familia Qwen3.5 de 0,8 mil millones de parametros, orientado a la segmentacion de componentes de soldadura a partir de imagenes. Lo publica el usuario `jujeongho` en Hugging Face y su pipeline declarado es `image-text-to-text`, es decir, un modelo multimodal que recibe imagen y texto y genera texto.
 
 El proposito declarado, deducible del propio identificador del repositorio, es la inspeccion visual de componentes de soldadura: el modelo deberia localizar o describir elementos de una union soldada a partir de una fotografia. Se trata de un caso de uso industrial concreto (control de calidad, inspeccion de cordones y componentes), un nicho poco cubierto por los modelos multimodales genericos de gran tamano.
 
-La relevancia de esta ficha es limitada y conviene decirlo con claridad: la model card publicada es la plantilla automatica de HuggingFace sin rellenar, no hay datos de entrenamiento, no se declara licencia, no se declaran idiomas y no hay resultados de evaluacion. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta. Cualquier evaluacion seria del modelo exige inspeccionar los pesos y ejecutar una validacion propia.
+La relevancia de esta ficha es limitada y conviene decirlo con claridad: la model card publicada es la plantilla automatica de Hugging Face sin rellenar, no hay datos de entrenamiento, no se declara licencia, no se declaran idiomas y no hay resultados de evaluacion. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta. Cualquier evaluacion seria del modelo exige inspeccionar los pesos y ejecutar una validacion propia.
 
 ## Especificaciones tecnicas
 
@@ -36,7 +36,7 @@ Tampoco hay informacion sobre el entrenamiento: se desconoce el numero de tokens
 - Entrada multimodal de imagen y texto con salida de texto (`image-text-to-text`), segun el pipeline declarado en el repositorio.
 - Uso conversacional: el tag `conversational` indica que el modelo esta preparado para formato de dialogo.
 - Especializacion declarada en segmentacion de componentes de soldadura, segun el identificador del repositorio.
-- Compatibilidad con endpoints de inferencia alojados: el tag `endpoints_compatible` indica que puede desplegarse en la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints de inferencia alojados: el tag `endpoints_compatible` indica que puede desplegarse en la infraestructura de Inference Endpoints de Hugging Face.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declaran idiomas).
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada con cuantizacion de 8 bits: alrededor de 1,5 GB a 2 GB. Con cuantizacion de 4 bits: alrededor de 1 GB a 1,5 GB.
 - Cabe en GPU de consumo: si. Cualquier GPU con 6 GB o mas de VRAM deberia ser suficiente en 16 bits; con 4 GB es probable que funcione si se cuantiza. Modelos como RTX 3060, RTX 4060, RTX 4070, RTX 4090, Apple Silicon con memoria unificada y GPUs integradas con memoria compartida son candidatos razonables.
 - GPU de centro de datos: A100, H100, L40S o similares no son necesarias para el tamano del modelo, pero permiten mayor concurrencia y contextos mas largos.
-- Opciones de despliegue: la biblioteca declarada es `transformers`, por lo que la via soportada es la carga directa con Python. El tag `endpoints_compatible` habilita el despliegue en HuggingFace Inference Endpoints. El soporte en vLLM, TGI, llama.cpp u Ollama no esta confirmado y requeriria verificar que el modelo base Qwen3.5 este integrado en cada motor y, en el caso de llama.cpp u Ollama, disponer de una conversion a GGUF que no se publica en el repositorio.
+- Opciones de despliegue: la biblioteca declarada es `transformers`, por lo que la via soportada es la carga directa con Python. El tag `endpoints_compatible` habilita el despliegue en Hugging Face Inference Endpoints. El soporte en vLLM, TGI, llama.cpp u Ollama no esta confirmado y requeriria verificar que el modelo base Qwen3.5 este integrado en cada motor y, en el caso de llama.cpp u Ollama, disponer de una conversion a GGUF que no se publica en el repositorio.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -77,11 +77,11 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 | Longitud de contexto | no disponible | no disponible en la informacion proporcionada |
 | Rendimiento en benchmarks | sin resultados publicados | no disponible en la informacion proporcionada |
 | Licencia | no disponible | no disponible en la informacion proporcionada |
-| Disponibilidad | repositorio publico en HuggingFace, 0 descargas y 0 likes | no disponible en la informacion proporcionada |
+| Disponibilidad | repositorio publico en Hugging Face, 0 descargas y 0 likes | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Model card vacia: el autor publico la plantilla automatica de HuggingFace sin rellenar. No hay descripcion, ni procedencia de datos, ni instrucciones de uso, ni codigo de ejemplo.
+- Model card vacia: el autor publico la plantilla automatica de Hugging Face sin rellenar. No hay descripcion, ni procedencia de datos, ni instrucciones de uso, ni codigo de ejemplo.
 - Ausencia de licencia: al no declararse licencia, no puede asumirse permiso de uso comercial. En la practica, la ausencia de licencia implica que los derechos quedan reservados por defecto y que su explotacion en produccion es juridicamente arriesgada.
 - Ausencia total de evaluacion: no hay metricas de segmentacion (IoU, Dice, mAP), ni de calidad textual, ni comparaciones con lineas base. Es imposible afirmar que el modelo funcione.
 - Riesgo de alucinacion: en modelos multimodales de menos de 1.000 millones de parametros la generacion de descripciones plausibles pero incorrectas sobre la imagen es un modo de fallo habitual. En un contexto de inspeccion industrial, un falso negativo puede tener consecuencias materiales.
@@ -95,7 +95,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jujeongho/Qwen3.5-0.8B-LoRA-Welding-Component-Segmentation-v2
+- Modelo en Hugging Face: https://huggingface.co/jujeongho/Qwen3.5-0.8B-LoRA-Welding-Component-Segmentation-v2
 - Referencia citada en los tags y en la seccion de impacto ambiental de la model card: Lacoste et al. (2019), https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental en aprendizaje automatico: https://mlco2.github.io/impact
 - Paper, repositorio de codigo, demo o dataset de entrenamiento del modelo: no disponible

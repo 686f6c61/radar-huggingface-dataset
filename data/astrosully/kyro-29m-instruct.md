@@ -42,7 +42,7 @@ El ajuste por instrucciones se realizó sobre el dataset smol-smoltalk (Apache-2
 ## Casos de uso
 
 - Experimentación y docencia: sirve para ilustrar el ciclo completo de preentrenamiento y SFT de un modelo pequeño, con un coste de entrenamiento de minutos en una GPU consumer.
-- Pruebas de pipelines de generación de texto: permite validar integraciones con HuggingFace Hub, safetensors y tokenizadores tiktoken sin consumir recursos significativos.
+- Pruebas de pipelines de generación de texto: permite validar integraciones con Hugging Face Hub, safetensors y tokenizadores tiktoken sin consumir recursos significativos.
 - Despliegue en entornos con recursos mínimos: al ocupar 0,1 GB en el repositorio, puede ejecutarse en CPU o en GPUs de gama baja para tareas de demostración.
 - Generación de respuestas con formato controlado: útil para probar plantillas de prompt y evaluar el cumplimiento de formato en instrucciones simples.
 - Baseline para comparativas: sirve como referencia de un modelo instruction-tuned de 29M parámetros frente a modelos mayores en estudios de escalado.
@@ -85,6 +85,6 @@ No se dispone de datos de rendimiento comparativo verificable en la información
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Astrosully/Kyro-29M-Instruct
+- Modelo en Hugging Face: https://huggingface.co/Astrosully/Kyro-29M-Instruct
 - Modelo base Kyro-29M: https://huggingface.co/Astrosully/Kyro-29M
 - Dataset de ajuste smol-smoltalk: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk

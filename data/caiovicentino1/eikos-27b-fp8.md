@@ -111,9 +111,9 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caiovicentino1/Eikos-27B-FP8
+- Modelo en Hugging Face: https://huggingface.co/caiovicentino1/Eikos-27B-FP8
 - Modelo base Eikos-27B: https://huggingface.co/caiovicentino1/Eikos-27B
 - Imagen de presentación de Eikos: https://huggingface.co/caiovicentino1/Eikos-27B/resolve/main/assets/eikos_launch.png
-- Perfil del autor en HuggingFace: https://huggingface.co/caiovicentino1/models
+- Perfil del autor en Hugging Face: https://huggingface.co/caiovicentino1/models
 - Spaces del autor: https://huggingface.co/caiovicentino1/spaces
 - Ficha de otro modelo del mismo autor en LLM Explorer: https://llm-explorer.com/model/caiovicentino1%2FQwopus3.5-27B-v3-HLWQ-Q5,71mywc3a0eP2YIzmh81jGB

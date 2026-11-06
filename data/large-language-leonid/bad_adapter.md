@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `large-language-leonid/bad_adapter` es un adaptador publicado en HuggingFace por el usuario `large-language-leonid` con licencia MIT. El repositorio tiene un tamaño de 0.1 GB y contiene pesos en formato safetensors. La model card es prácticamente vacía, sin descripción técnica, arquitectura declarada, ni documentación de uso.
+El modelo `large-language-leonid/bad_adapter` es un adaptador publicado en Hugging Face por el usuario `large-language-leonid` con licencia MIT. El repositorio tiene un tamaño de 0.1 GB y contiene pesos en formato safetensors. La model card es prácticamente vacía, sin descripción técnica, arquitectura declarada, ni documentación de uso.
 
 Este modelo no presenta descargas ni interacciones de la comunidad, lo que sugiere que se trata de una publicación reciente o experimental. La ausencia total de especificaciones técnicas, datos de entrenamiento o benchmarks hace imposible evaluar su rendimiento o sus capacidades reales. El nombre "bad_adapter" podría sugerir que se trata de un adaptador LoRA o similar, pero no hay evidencia que lo confirme.
 
@@ -58,4 +58,4 @@ No disponible. Al no existir informacion sobre la arquitectura, el tamaño o el 
 
 ## Enlaces
 
-- [HuggingFace: large-language-leonid/bad_adapter](https://huggingface.co/large-language-leonid/bad_adapter)
+- [Hugging Face: large-language-leonid/bad_adapter](https://huggingface.co/large-language-leonid/bad_adapter)

@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SmartHome-Qwen3-4B-Instruct | 4B | 2048 tokens configurados en el ejemplo de carga (nativo del base: no disponible) | Portugues | MIT | Fine-tuning vertical de soporte y ventas de domotica | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B | 4B | No disponible en la informacion proporcionada | Multilingue | No disponible en la informacion proporcionada | Modelo base de proposito general, sobresale en comprension de lenguaje, generacion, codigo y matematicas | HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 | 4B | No disponible en la informacion proporcionada | Multilingue | No disponible en la informacion proporcionada | Variante solo instruct, sin soporte de thinking mode | HuggingFace, Qualcomm AI Hub, Ollama |
+| SmartHome-Qwen3-4B-Instruct | 4B | 2048 tokens configurados en el ejemplo de carga (nativo del base: no disponible) | Portugues | MIT | Fine-tuning vertical de soporte y ventas de domotica | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B | 4B | No disponible en la informacion proporcionada | Multilingue | No disponible en la informacion proporcionada | Modelo base de proposito general, sobresale en comprension de lenguaje, generacion, codigo y matematicas | Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 | 4B | No disponible en la informacion proporcionada | Multilingue | No disponible en la informacion proporcionada | Variante solo instruct, sin soporte de thinking mode | Hugging Face, Qualcomm AI Hub, Ollama |
 | Otros fine-tunes verticales de 3-4B | 3-4B | No disponible | Variable | Variable | Asistentes de dominio especifico | No disponible |
 
 Segun la informacion de Ollama, el Qwen3-4B base es capaz de rivalizar con Qwen2.5-72B-Instruct en rendimiento, lo que situa la calidad del modelo de partida en un nivel competitivo para su tamano. No obstante, no existen datos que permitan comparar el rendimiento del fine-tuning de SmartHome con estos modelos de referencia.
@@ -97,11 +97,11 @@ Segun la informacion de Ollama, el Qwen3-4B base es capaz de rivalizar con Qwen2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pablolorran/SmartHome-Qwen3-4B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/pablolorran/SmartHome-Qwen3-4B-Instruct
 - Dataset SmartHome-Knowledge-Base: https://huggingface.co/datasets/pablolorran/SmartHome-Knowledge-Base
 - Modelo base empleado (Unsloth): https://huggingface.co/unsloth/Qwen3-4B
-- Qwen3-4B en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B
-- Qwen3-4B-Instruct-2507 en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+- Qwen3-4B en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B
+- Qwen3-4B-Instruct-2507 en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Qwen3-4B-Instruct-2507 en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507
 - Qwen3-4B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_4b
 - Qwen3 4B Instruct en Ollama: https://ollama.com/library/qwen3:4b-instruct

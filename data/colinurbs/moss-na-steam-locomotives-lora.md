@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Ambito | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| colinurbs/moss-na-steam-locomotives-lora | LoRA sobre MOSS-Image | Locomotoras de vapor norteamericanas | no disponible | HuggingFace y Civitai |
-| colinurbs/moss-trains-lora | LoRA sobre MOSS-Image | Trenes diésel de mercancias | no disponible | HuggingFace |
-| colinurbs/moss-passenger-trains-lora | LoRA sobre MOSS-Image | Trenes de pasajeros | no disponible | HuggingFace |
+| colinurbs/moss-na-steam-locomotives-lora | LoRA sobre MOSS-Image | Locomotoras de vapor norteamericanas | no disponible | Hugging Face y Civitai |
+| colinurbs/moss-trains-lora | LoRA sobre MOSS-Image | Trenes diésel de mercancias | no disponible | Hugging Face |
+| colinurbs/moss-passenger-trains-lora | LoRA sobre MOSS-Image | Trenes de pasajeros | no disponible | Hugging Face |
 
 No se dispone de datos de parametros, contexto ni rendimiento comparables para estos adaptadores en la informacion proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de parametros, contexto ni rendimiento comparables para e
 
 ## Enlaces
 
-- [HuggingFace: colinurbs/moss-na-steam-locomotives-lora](https://huggingface.co/colinurbs/moss-na-steam-locomotives-lora)
+- [Hugging Face: colinurbs/moss-na-steam-locomotives-lora](https://huggingface.co/colinurbs/moss-na-steam-locomotives-lora)
 - [Civitai: North American Steam Locomotives](https://civitai.com/models/3033552)
 - [Adaptador complementario para trenes diesel: colinurbs/moss-trains-lora](https://huggingface.co/colinurbs/moss-trains-lora)
 - [Adaptador complementario para trenes de pasajeros: colinurbs/moss-passenger-trains-lora](https://huggingface.co/colinurbs/moss-passenger-trains-lora)

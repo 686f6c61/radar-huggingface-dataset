@@ -97,7 +97,7 @@ No se dispone de datos sobre otras alternativas comparables de 27-35 mil millone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KridgeDookie/Ternary-Bonsai-2-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-MLX-Mixed-2-4bit
+- Modelo en Hugging Face: https://huggingface.co/KridgeDookie/Ternary-Bonsai-2-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-MLX-Mixed-2-4bit
 - Modelo base MLX: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit (commit 3f926b415992eaa2ae9dd7b573706494d6bbf787)
 - Modelo base GGUF: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf (commit 6ed5e12bf84b7a63069882c91dd9e9218647d17b)
 - Ficheros citados en la model card: `recipe.json`, `evaluation.json` y dos ficheros de procedencia, alojados en el propio repositorio.

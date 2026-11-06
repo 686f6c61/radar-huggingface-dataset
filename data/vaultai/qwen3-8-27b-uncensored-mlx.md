@@ -20,7 +20,7 @@ Está cuantizado en cuatro precisiones (2, 4, 6 y 8 bits, con *group size* 64), 
 | Idiomas soportados | Inglés (en), chino (zh) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | Safetensors en formato MLX (librería `mlx`), con variantes por precisión en subcarpetas |
-| Tamano del repositorio | 16,1 GB (metadatos de HuggingFace); las variantes individuales van de ~8,7 GB (2 bits) a ~27,5 GB (8 bits) |
+| Tamano del repositorio | 16,1 GB (metadatos de Hugging Face); las variantes individuales van de ~8,7 GB (2 bits) a ~27,5 GB (8 bits) |
 | Modelo base | Qwen/Qwen3.8-27B (relación: quantized y abliterated) |
 | Pipeline | image-text-to-text |
 
@@ -94,7 +94,7 @@ La información proporcionada solo permite una comparación fiable con el modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vaultai/Qwen3.8-27B-Uncensored-MLX
+- Modelo en Hugging Face: https://huggingface.co/vaultai/Qwen3.8-27B-Uncensored-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - OrcaRouter (sitio principal): https://www.orcarouter.ai
 - Catálogo de modelos de OrcaRouter: https://www.orcarouter.ai/models

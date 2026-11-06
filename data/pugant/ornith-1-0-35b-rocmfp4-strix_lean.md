@@ -87,7 +87,7 @@ No se dispone de comparativas con modelos fuera de esta familia ni con cuantizac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pugant/Ornith-1.0-35B-ROCmFP4-STRIX_LEAN
+- Modelo en Hugging Face: https://huggingface.co/pugant/Ornith-1.0-35B-ROCmFP4-STRIX_LEAN
 - Modelo base (ornith-ai): https://huggingface.co/ornith-ai/Ornith-1.0-35B
 - GGUF BF16 de unsloth (fuente para cuantización): https://huggingface.co/unsloth/Ornith-1.0-35B-GGUF
 - Fork ROCmFPX de llama.cpp: https://github.com/charlie12345/ROCmFPX

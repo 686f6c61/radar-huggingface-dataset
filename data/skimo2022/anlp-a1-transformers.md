@@ -47,7 +47,7 @@ No presenta capacidades de generación de texto general, tool calling, agentes, 
 - Investigación académica en arquitecturas de transformadores: el modelo sirve como base para estudiar el impacto de RoPE, GQA, RMSNorm y BLT en tareas de secuencia a secuencia, permitiendo a estudiantes e investigadores replicar y extender los experimentos.
 - Evaluación de tokenización a nivel de byte: la configuración C5 es útil para analizar cómo el patching dinámico por entropía afecta al rendimiento frente a la tokenización BPE subword, en un entorno controlado.
 - Comparación de normalización y atención: las configuraciones C3 y C4 permiten aislar el efecto de GQA y RMSNorm, respectivamente, en una tarea de descifrado, lo que puede orientar decisiones de diseño en modelos más grandes.
-- Práctica de implementación de transformadores: al estar construido desde cero, el código fuente (aunque no se incluye en el repositorio de HuggingFace) puede usarse como material didáctico para aprender los componentes internos de un transformador.
+- Práctica de implementación de transformadores: al estar construido desde cero, el código fuente (aunque no se incluye en el repositorio de Hugging Face) puede usarse como material didáctico para aprender los componentes internos de un transformador.
 - Prueba de concepto de BLT en dominios de baja complejidad: el modelo demuestra que un BLT con un modelo de entropía estadístico puede funcionar en una tarea pequeña, sirviendo como punto de partida para aplicaciones más complejas.
 - Análisis de métricas de secuencia: las métricas de precisión de bits, precisión de secuencia y distancia de Levenshtein permiten evaluar la calidad del descifrado y comparar configuraciones de manera objetiva.
 
@@ -87,7 +87,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/skimo2022/anlp-a1-transformers)
+- [Modelo en Hugging Face](https://huggingface.co/skimo2022/anlp-a1-transformers)
 - [Repositorio similar de mohjkhan](https://huggingface.co/mohjkhan/anlp-a1-transformers)
 - [Repositorio similar de ZappY-AI](https://huggingface.co/ZappY-AI/anlp-a1)
 - [Implementación de referencia en GitHub (FrenchKnuckles/ANLP_A1)](https://github.com/FrenchKnuckles/ANLP_A1)

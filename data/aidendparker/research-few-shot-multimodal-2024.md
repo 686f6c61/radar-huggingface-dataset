@@ -92,7 +92,7 @@ No se dispone de datos comparativos de rendimiento porque el repositorio no publ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aidendparker/research-few-shot-multimodal-2024
+- Repositorio en Hugging Face: https://huggingface.co/aidendparker/research-few-shot-multimodal-2024
 - Fichero principal de notas: `notes.md` dentro del repositorio (ruta relativa no publicada como URL independiente en la informacion disponible)
 - Documentacion del repositorio: `README.md` dentro del repositorio
 - Paper, blog, repositorio de codigo, demo o articulo asociado: no disponible en la informacion proporcionada

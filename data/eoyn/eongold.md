@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EonGold es un modelo publicado en HuggingFace por el usuario Eoyn bajo la licencia `grok2-community`. La informacion disponible en su model card es practicamente inexistente: el repositorio unicamente declara la licencia y la region (`us`), sin README descriptivo, sin pipeline declarado, sin idiomas especificados y sin documentacion tecnica alguna. El modelo acumula 0 descargas y 0 likes en el momento de la consulta, lo que sugiere una publicacion reciente o un repositorio sin difusion.
+EonGold es un modelo publicado en Hugging Face por el usuario Eoyn bajo la licencia `grok2-community`. La informacion disponible en su model card es practicamente inexistente: el repositorio unicamente declara la licencia y la region (`us`), sin README descriptivo, sin pipeline declarado, sin idiomas especificados y sin documentacion tecnica alguna. El modelo acumula 0 descargas y 0 likes en el momento de la consulta, lo que sugiere una publicacion reciente o un repositorio sin difusion.
 
 No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion. La unica senal tecnica relevante es la licencia `grok2-community`, que remite al marco legal asociado a los pesos de Grok 2 de xAI, aunque no hay evidencia en la informacion proporcionada de que este repositorio contenga realmente pesos derivados de dicho modelo ni de que cumpla los terminos de esa licencia.
 
@@ -34,13 +34,13 @@ Tampoco se documentan innovaciones destacables como decodificacion especulativa,
 - No hay evidencia publicada de soporte para agentes o razonamiento multi-paso.
 - No se especifican capacidades multilingues ni idiomas cubiertos.
 - No se declara soporte de vision, audio ni modos de pensamiento extendido.
-- El pipeline no esta declarado en HuggingFace, por lo que no se puede confirmar la tarea principal (text-generation, image-text-to-text, etc.).
+- El pipeline no esta declarado en Hugging Face, por lo que no se puede confirmar la tarea principal (text-generation, image-text-to-text, etc.).
 
 ## Casos de uso
 
 - Evaluacion exploratoria en laboratorio: dado que no hay documentacion, el unico uso defendible hoy es la inspeccion tecnica del repositorio (comprobar si contiene pesos reales, config.json, tokenizer y arquitectura declarada) antes de considerar cualquier integracion.
 - Investigacion sobre licencias de modelos abiertos: el repositorio puede servir como caso de estudio de publicaciones que declaran `grok2-community` sin aportar la documentacion de cumplimiento que esa licencia exige.
-- Auditoria de repositorios en HuggingFace: util para probar herramientas de catalogacion automatica que detecten model cards vacias o metadatos incompletos.
+- Auditoria de repositorios en Hugging Face: util para probar herramientas de catalogacion automatica que detecten model cards vacias o metadatos incompletos.
 - Prototipado interno condicionado: solo si el equipo verifica primero que los pesos existen, que la licencia permite el uso previsto y que el modelo carga correctamente en un entorno aislado.
 - Docencia sobre buenas practicas de publicacion: ejemplo de por que una model card minima (licencia y region) es insuficiente para que terceros evalúen un modelo.
 - Analisis de procedencia: estudio de la trazabilidad de pesos etiquetados con licencias comunitarias de terceros y de los riesgos legales asociados.
@@ -65,7 +65,7 @@ No es posible establecer una comparativa fiable porque se desconocen parametros,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Eoyn/EonGold | no disponible | no disponible | grok2-community | Repositorio HuggingFace sin documentacion |
+| Eoyn/EonGold | no disponible | no disponible | grok2-community | Repositorio Hugging Face sin documentacion |
 | Llama 3.1 8B | 8B | 128K | Llama 3.1 Community | Pesos abiertos con model card completa |
 | Mistral 7B | 7,3B | 32K | Apache 2.0 | Pesos abiertos con model card completa |
 | Qwen2.5 7B | 7,6B | 128K | Apache 2.0 (mayoria de variantes) | Pesos abiertos con model card completa |
@@ -85,5 +85,5 @@ La comparacion se limita a senalar que las alternativas citadas publican especif
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Eoyn/EonGold
+- Repositorio Hugging Face: https://huggingface.co/Eoyn/EonGold
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

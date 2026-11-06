@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwopus3.5-4B-v3-heretic-GGUF es la distribucion en formato GGUF del modelo tvall43/Qwopus3.5-4B-v3-heretic, un fine-tuning de la familia Qwen 3.5 con 4.205.751.296 parametros (aproximadamente 4,2 mil millones). El modelo ha sido sometido a un proceso de "abliteration" o "decensoring" (etiquetado como heretic, uncensored, abliterated), que consiste en eliminar o reducir los mecanismos de rechazo y alineacion del modelo base, de ahi el sufijo "heretic". El autor de la cuantizacion es mradermacher, un conocido publicador de quants GGUF en HuggingFace.
+Qwopus3.5-4B-v3-heretic-GGUF es la distribucion en formato GGUF del modelo tvall43/Qwopus3.5-4B-v3-heretic, un fine-tuning de la familia Qwen 3.5 con 4.205.751.296 parametros (aproximadamente 4,2 mil millones). El modelo ha sido sometido a un proceso de "abliteration" o "decensoring" (etiquetado como heretic, uncensored, abliterated), que consiste en eliminar o reducir los mecanismos de rechazo y alineacion del modelo base, de ahi el sufijo "heretic". El autor de la cuantizacion es mradermacher, un conocido publicador de quants GGUF en Hugging Face.
 
 El modelo esta especializado en razonamiento con cadena de pensamiento (chain-of-thought) y programacion competitiva, segun los tags declarados por el autor. Soporta tres idiomas: ingles, chino y coreano. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales significativas. El repositorio ocupa 38,9 GB e incluye 11 cuantizaciones distintas, desde Q2_K (2,0 GB) hasta f16 (8,5 GB).
 
@@ -82,7 +82,7 @@ La comparacion con el Qwen 3.5 4B base es la mas directa: este modelo anade el d
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/mradermacher/Qwopus3.5-4B-v3-heretic-GGUF
+- Hugging Face (GGUF): https://huggingface.co/mradermacher/Qwopus3.5-4B-v3-heretic-GGUF
 - Modelo base: https://huggingface.co/tvall43/Qwopus3.5-4B-v3-heretic
 - Variantes i1 con imatrix: https://huggingface.co/mradermacher/Qwopus3.5-4B-v3-heretic-i1-GGUF
 - Pagina de overview del cuantizador: https://hf.tst.eu/model#Qwopus3.5-4B-v3-heretic-GGUF

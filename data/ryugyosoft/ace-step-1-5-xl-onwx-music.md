@@ -75,9 +75,9 @@ Precision frente a fp32 oficial: error relativo del latente tras 8 pasos de 0,25
 
 | Modelo | Parametros | Contexto/duracion | Hardware | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACE-Step-1.5-XL-onwx-music (este) | 4.000 M (DiT) | 10-600 s de audio | NPU XDNA2 (Ryzen AI 300/Max) | MIT | HuggingFace, runtime onwx-music |
-| ACE-Step-1.5-onwx-music (turbo) | no disponible | no disponible | NPU XDNA2 | MIT | HuggingFace, runtime onwx-music |
-| ACE-Step/acestep-v15-xl-turbo (base) | 4.000 M (DiT) | no disponible | GPU/CPU generico | MIT | HuggingFace |
+| ACE-Step-1.5-XL-onwx-music (este) | 4.000 M (DiT) | 10-600 s de audio | NPU XDNA2 (Ryzen AI 300/Max) | MIT | Hugging Face, runtime onwx-music |
+| ACE-Step-1.5-onwx-music (turbo) | no disponible | no disponible | NPU XDNA2 | MIT | Hugging Face, runtime onwx-music |
+| ACE-Step/acestep-v15-xl-turbo (base) | 4.000 M (DiT) | no disponible | GPU/CPU generico | MIT | Hugging Face |
 
 La comparativa con alternativas de otros desarrolladores (por ejemplo, modelos text-to-audio de gran tamano) no esta disponible en la informacion proporcionada.
 
@@ -96,7 +96,7 @@ La comparativa con alternativas de otros desarrolladores (por ejemplo, modelos t
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ryugyosoft/ACE-Step-1.5-XL-onwx-music
+- Hugging Face del modelo: https://huggingface.co/ryugyosoft/ACE-Step-1.5-XL-onwx-music
 - Runtime onwx-music: https://huggingface.co/ryugyosoft/onwx-music
 - Variante turbo del mismo autor: https://huggingface.co/ryugyosoft/ACE-Step-1.5-onwx-music
 - Modelo base: https://huggingface.co/ACE-Step/acestep-v15-xl-turbo

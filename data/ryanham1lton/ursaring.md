@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ursaring es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Ursaring`. La informacion disponible sobre el es extremadamente limitada: la model card asociada no contiene mas que la declaracion de licencia (cc-by-4.0) y no incluye descripcion, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa aproximadamente 0,1 GB, un tamano compatible con un modelo de parametros reducidos o con un conjunto de pesos parcial, pero no permite determinar la naturaleza del modelo.
+Ursaring es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Ursaring`. La informacion disponible sobre el es extremadamente limitada: la model card asociada no contiene mas que la declaracion de licencia (cc-by-4.0) y no incluye descripcion, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa aproximadamente 0,1 GB, un tamano compatible con un modelo de parametros reducidos o con un conjunto de pesos parcial, pero no permite determinar la naturaleza del modelo.
 
 No se dispone de informacion sobre quien lo desarrolla, que problema resuelve ni cual es su relevancia tecnica. Las busquedas web realizadas no arrojan ningun resultado relacionado con este modelo: los enlaces recuperados tratan sobre campanas publicitarias del Departamento de Defensa de Estados Unidos y no guardan relacion con inteligencia artificial, por lo que no aportan ningun dato util. Tampoco consta pipeline, idioma soportado, numero de descargas ni interacciones en el momento de la consulta.
 
@@ -70,5 +70,5 @@ No disponible. No puede identificarse una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanham1lton/Ursaring
+- Modelo en Hugging Face: https://huggingface.co/Ryanham1lton/Ursaring
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada. Los resultados obtenidos no guardan relacion con el modelo.

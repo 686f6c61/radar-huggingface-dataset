@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario sad1dasd12szsads bajo el identificador `sad1dasd12szsads/MyAwesomeModel`. La model card indica que se trata de un checkpoint de tipo BERT entrenado con PyTorch, y presenta resultados de evaluacion sobre un conjunto de 15 tareas agrupadas bajo nombres genericos (razonamiento matematico, razonamiento logico, sentido comun, comprension lectora, generacion de codigo, traduccion, etc.). El mejor checkpoint reportado es `step_1000`, con una precision media ponderada de 0,709.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario sad1dasd12szsads bajo el identificador `sad1dasd12szsads/MyAwesomeModel`. La model card indica que se trata de un checkpoint de tipo BERT entrenado con PyTorch, y presenta resultados de evaluacion sobre un conjunto de 15 tareas agrupadas bajo nombres genericos (razonamiento matematico, razonamiento logico, sentido comun, comprension lectora, generacion de codigo, traduccion, etc.). El mejor checkpoint reportado es `step_1000`, con una precision media ponderada de 0,709.
 
 La informacion disponible es muy limitada: el repositorio tiene un tamano de 0,0 GB, no se especifican parametros, longitud de contexto, licencia, idiomas ni formato de pesos, y no hay descargas ni interacciones registradas. Los unicos datos tecnicos concretos son la arquitectura declarada (BERT) y la tabla de resultados de evaluacion.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha debe interpretarse como una descripcion de un modelo en fa
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (transformer encoder, segun tag de HuggingFace) |
+| Arquitectura | BERT (transformer encoder, segun tag de Hugging Face) |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Por tanto, esta ficha debe interpretarse como una descripcion de un modelo en fa
 
 ## Arquitectura y entrenamiento
 
-La unica informacion arquitectonica disponible es la etiqueta `bert` en HuggingFace y el tag `pytorch`, lo que sugiere un transformer de tipo encoder-only basado en BERT. No se especifica el numero de capas, dimensiones ocultas, cabezas de atencion ni el vocabulario del tokenizador. El repositorio figura con 0,0 GB, lo que impide verificar que los pesos esten efectivamente publicados.
+La unica informacion arquitectonica disponible es la etiqueta `bert` en Hugging Face y el tag `pytorch`, lo que sugiere un transformer de tipo encoder-only basado en BERT. No se especifica el numero de capas, dimensiones ocultas, cabezas de atencion ni el vocabulario del tokenizador. El repositorio figura con 0,0 GB, lo que impide verificar que los pesos esten efectivamente publicados.
 
 Respecto al entrenamiento, la model card menciona un proceso por pasos con checkpoints (el mejor es `step_1000`) y una evaluacion sobre 15 tareas. No se detalla el volumen de tokens de entrenamiento, la composicion del dataset, si hubo ajuste fino supervisado, RLHF o DPO, ni la metodologia de evaluacion (si son benchmarks publicos o conjuntos internos). Tampoco se describen innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
@@ -78,7 +78,7 @@ No se especifica la naturaleza de estos benchmarks (si son estandarizados como M
 - VRAM estimada para inferencia: no disponible, al no conocerse el numero de parametros ni el formato de pesos.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no verificable; un BERT de tamano base (unos 110 millones de parametros) cabria en GPUs de 8 GB, pero el tamano real de este checkpoint no esta documentado.
-- Opciones de despliegue: al ser un modelo PyTorch con arquitectura BERT, seria compatible en principio con HuggingFace Transformers, ONNX Runtime y TorchServe; no se confirma soporte de vLLM, llama.cpp, Ollama ni TGI para este checkpoint concreto.
+- Opciones de despliegue: al ser un modelo PyTorch con arquitectura BERT, seria compatible en principio con Hugging Face Transformers, ONNX Runtime y TorchServe; no se confirma soporte de vLLM, llama.cpp, Ollama ni TGI para este checkpoint concreto.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ No es posible establecer una comparativa fiable porque no se conocen los paramet
 | MyAwesomeModel | no disponible | no disponible | no disponible | Repo de 0,0 GB, 0 descargas |
 | BERT-base (Google) | 110 M | 512 tokens | Apache 2.0 | Amplia, pesos publicados |
 | RoBERTa-base (Meta) | 125 M | 512 tokens | MIT | Amplia, pesos publicados |
-| DistilBERT (HuggingFace) | 66 M | 512 tokens | Apache 2.0 | Amplia, pesos publicados |
+| DistilBERT (Hugging Face) | 66 M | 512 tokens | Apache 2.0 | Amplia, pesos publicados |
 
 La comparativa de rendimiento con estos modelos no esta disponible, ya que MyAwesomeModel no reporta resultados en benchmarks estandarizados reconocibles.
 
@@ -107,5 +107,5 @@ La comparativa de rendimiento con estos modelos no esta disponible, ya que MyAwe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sad1dasd12szsads/MyAwesomeModel
+- Hugging Face: https://huggingface.co/sad1dasd12szsads/MyAwesomeModel
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

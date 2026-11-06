@@ -6,7 +6,7 @@ RK3588-CNN-retinaface-mobile es un paquete de despliegue en formato RKNN del det
 
 El interes de esta publicacion no esta en la arquitectura, que es bien conocida desde 2019, sino en el empaquetado de despliegue: incluye una configuracion ya cuantizada a w8a8 (pesos y activaciones de 8 bits) a una resolucion de entrada de 320x320, validada contra la version v2.4.0 del runtime RKNN y restringida a una unica configuracion de un solo nucleo NPU. Esto permite ejecutar deteccion facial en tiempo real en placas embebidas de bajo consumo sin necesidad de GPU ni de servidores externos.
 
-Es relevante para desarrolladores que trabajan en vision por computador sobre hardware Rockchip, porque elimina el paso de conversion (PyTorch a ONNX y de ONNX a RKNN) y el ajuste de cuantizacion, que suele ser la parte mas laboriosa del despliegue. El repositorio pesa 0,0 GB segun HuggingFace y no registra descargas ni likes en el momento de la consulta, por lo que se trata de una publicacion reciente y practicamente sin validacion externa.
+Es relevante para desarrolladores que trabajan en vision por computador sobre hardware Rockchip, porque elimina el paso de conversion (PyTorch a ONNX y de ONNX a RKNN) y el ajuste de cuantizacion, que suele ser la parte mas laboriosa del despliegue. El repositorio pesa 0,0 GB segun Hugging Face y no registra descargas ni likes en el momento de la consulta, por lo que se trata de una publicacion reciente y practicamente sin validacion externa.
 
 ## Especificaciones tecnicas
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Entrada | Cuantizacion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| RK3588-CNN-retinaface-mobile (esta ficha) | CNN single-stage, deteccion + 5 landmarks | 320x320 | w8a8 (INT8) | RKNN para RK3588 | MIT | HuggingFace y ModelScope, revision v2.4.0 |
+| RK3588-CNN-retinaface-mobile (esta ficha) | CNN single-stage, deteccion + 5 landmarks | 320x320 | w8a8 (INT8) | RKNN para RK3588 | MIT | Hugging Face y ModelScope, revision v2.4.0 |
 | Pytorch_Retinaface (biubug6) | CNN single-stage, deteccion + 5 landmarks | configurable (por ejemplo 320 en el lado largo) | sin cuantizar | PyTorch y ONNX | MIT | GitHub |
 | RetinaFace con backbone ResNet50 | CNN single-stage, mayor capacidad | configurable | sin cuantizar en origen | PyTorch y ONNX | MIT | GitHub |
-| py-feat/retinaface | Distribucion del mismo detector en HuggingFace | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| py-feat/retinaface | Distribucion del mismo detector en Hugging Face | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de precision ni de latencia comparativos entre estas variantes en la informacion proporcionada, por lo que la comparacion se limita a formato de despliegue, soporte de hardware y licencia. La diferencia funcional clave frente a la version PyTorch/ONNX es que esta publicacion ya esta adaptada y cuantizada para la NPU del RK3588, mientras que las otras requieren conversion manual.
 
@@ -90,13 +90,13 @@ No se dispone de datos de precision ni de latencia comparativos entre estas vari
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RKNNAI/RK3588-CNN-retinaface-mobile
+- Hugging Face: https://huggingface.co/RKNNAI/RK3588-CNN-retinaface-mobile
 - Modelo original: https://github.com/biubug6/Pytorch_Retinaface
 - Ejemplo oficial de RetinaFace en RKNN Model Zoo: https://github.com/airockchip/rknn_model_zoo/tree/main/examples/RetinaFace
 - Ejemplo de RetinaFace en rk3588-example (GitHub): https://github.com/exyexin/rk3588-example/blob/main/examples/RetinaFace/README.md
 - Ejemplo de RetinaFace en rknn_model_zoo (espejo en Gitee): https://gitee.com/wirelesser/rknn_model_zoo/blob/main/examples/RetinaFace/README.md
 - Dependencias de datos para RKNN en Go: https://github.com/phox/rknn-go-data
 - Ejemplo go-rknnlite para RetinaFace: https://pkg.go.dev/github.com/swdee/go-rknnlite/example/retinaface
-- Otra distribucion del detector en HuggingFace: https://huggingface.co/py-feat/retinaface
+- Otra distribucion del detector en Hugging Face: https://huggingface.co/py-feat/retinaface
 - Descarga via ModelScope: `modelscope download --model RKNNAI/RK3588-CNN-retinaface-mobile --revision v2.4.0`
-- Descarga via HuggingFace CLI: `hf download RKNNAI/RK3588-CNN-retinaface-mobile --revision v2.4.0 --local-dir ./RK3588-CNN-retinaface-mobile`
+- Descarga via Hugging Face CLI: `hf download RKNNAI/RK3588-CNN-retinaface-mobile --revision v2.4.0 --local-dir ./RK3588-CNN-retinaface-mobile`

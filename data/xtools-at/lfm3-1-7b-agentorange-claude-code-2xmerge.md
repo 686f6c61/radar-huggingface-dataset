@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xtools-at/LFM3-1.7B-AgentOrange-Claude-Code-2xMerge | 1,73B | 256K anunciados en base; 4.096 en fine-tune | Merge agéntico de código | lfm1.0 | HuggingFace, 0 descargas |
-| LiquidAI/LFM3-1.7B | 1,73B | 256K | Modelo base de texto y agentes | lfm1.0 | HuggingFace |
-| mondk/LFM3-1.7B-Claude-Code-Safetensors | 1,73B | no disponible | Fine-tune de código y tool use | lfm1.0 | HuggingFace |
-| saidutta69/LFM3-1.7B-Claude-Fable5.1 | 1,73B | no disponible (entrenado a 4.096) | Fine-tune de tool calling | lfm1.0 | HuggingFace |
+| xtools-at/LFM3-1.7B-AgentOrange-Claude-Code-2xMerge | 1,73B | 256K anunciados en base; 4.096 en fine-tune | Merge agéntico de código | lfm1.0 | Hugging Face, 0 descargas |
+| LiquidAI/LFM3-1.7B | 1,73B | 256K | Modelo base de texto y agentes | lfm1.0 | Hugging Face |
+| mondk/LFM3-1.7B-Claude-Code-Safetensors | 1,73B | no disponible | Fine-tune de código y tool use | lfm1.0 | Hugging Face |
+| saidutta69/LFM3-1.7B-Claude-Fable5.1 | 1,73B | no disponible (entrenado a 4.096) | Fine-tune de tool calling | lfm1.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos checkpoints en la información proporcionada.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estos checkpoints en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xtools-at/LFM3-1.7B-AgentOrange-Claude-Code-2xMerge
+- Modelo en Hugging Face: https://huggingface.co/xtools-at/LFM3-1.7B-AgentOrange-Claude-Code-2xMerge
 - Perfil del autor: https://huggingface.co/xtools-at
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Modelo base (Base): https://huggingface.co/LiquidAI/LFM3-1.7B-Base

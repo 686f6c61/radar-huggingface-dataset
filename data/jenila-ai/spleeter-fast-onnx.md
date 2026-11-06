@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spleeter Fast es una conversión a ONNX en FP16 de un modelo Spleeter de cuatro stems desarrollado originalmente por Deezer Research. Separa una pista de audio en cuatro componentes: voces, otros instrumentos, bajo y batería. La conversión y publicación en HuggingFace corre a cargo de jenila-ai, con licencia MIT y un repositorio de aproximadamente 0,1 GB.
+Spleeter Fast es una conversión a ONNX en FP16 de un modelo Spleeter de cuatro stems desarrollado originalmente por Deezer Research. Separa una pista de audio en cuatro componentes: voces, otros instrumentos, bajo y batería. La conversión y publicación en Hugging Face corre a cargo de jenila-ai, con licencia MIT y un repositorio de aproximadamente 0,1 GB.
 
 El interés principal está en la portabilidad: al estar en formato ONNX, puede ejecutarse con ONNX Runtime sin depender del entorno TensorFlow habitual de Spleeter. Esto facilita su integración en servicios de procesamiento de audio, aplicaciones de escritorio y pipelines ligeros. No se publican parámetros, arquitectura interna detallada, ventana de audio ni resultados de benchmarks en la información disponible.
 
@@ -27,7 +27,7 @@ No es un modelo de lenguaje ni un modelo multimodal general: es una herramienta 
 | Fichero principal | `spleeter_fast.fp16.onnx` |
 | SHA-256 | `1d1a87a87bb81047ec993f5073a809d127e868e6e2f9d14e6f43e5d840dccd99` |
 | Librería | ONNX |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas | 0 |
 | Likes | 1 |
 
@@ -99,7 +99,7 @@ No se dispone de datos verificados de parámetros, contexto, rendimiento o licen
 
 ## Enlaces
 
-- [HuggingFace: jenila-ai/spleeter-fast-onnx](https://huggingface.co/jenila-ai/spleeter-fast-onnx)
+- [Hugging Face: jenila-ai/spleeter-fast-onnx](https://huggingface.co/jenila-ai/spleeter-fast-onnx)
 - [Fichero `spleeter_fast.fp16.onnx`](https://huggingface.co/jenila-ai/spleeter-fast-onnx/blob/main/spleeter_fast.fp16.onnx)
 - [Licencia MIT del repositorio](https://huggingface.co/jenila-ai/spleeter-fast-onnx/blob/main/LICENSE)
 - [Repositorio original de Spleeter, Deezer Research](https://github.com/deezer/spleeter)

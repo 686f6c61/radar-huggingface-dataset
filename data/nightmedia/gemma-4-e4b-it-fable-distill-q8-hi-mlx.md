@@ -88,7 +88,7 @@ La cuantización 8-bit mejora el rendimiento en los benchmarks, lo que indica qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: [nightmedia/Gemma-4-E4B-it-Fable-Distill-q8-hi-mlx](https://huggingface.co/nightmedia/Gemma-4-E4B-it-Fable-Distill-q8-hi-mlx)
+- Repositorio Hugging Face: [nightmedia/Gemma-4-E4B-it-Fable-Distill-q8-hi-mlx](https://huggingface.co/nightmedia/Gemma-4-E4B-it-Fable-Distill-q8-hi-mlx)
 - Modelo base (antes de la conversión MLX): [armand0e/Gemma-4-E4B-it-Fable-Distill](https://huggingface.co/armand0e/Gemma-4-E4B-it-Fable-Distill)
 - Página oficial de Gemma 4 (Google DeepMind): [https://deepmind.google/models/gemma/gemma-4/](https://deepmind.google/models/gemma/gemma-4/)
 - Guía de Gemma 4 E4B (gemma4.dev): [https://gemma4.dev/models/gemma-4-e4b](https://gemma4.dev/models/gemma-4-e4b)

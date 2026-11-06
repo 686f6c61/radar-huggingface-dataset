@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Penguin-N/schema-t31-dssat-think-r4 es un repositorio de modelo publicado en HuggingFace por el usuario Penguin-N el 13 de septiembre de 2026. En el momento de redactar esta ficha el repositorio no incluye model card, pipeline declarado, licencia, idiomas soportados ni etiquetas descriptivas: la unica etiqueta publica es `region:us`. Acumula 2 descargas y 0 likes, por lo que se trata de una publicacion reciente y sin validacion por parte de la comunidad.
+Penguin-N/schema-t31-dssat-think-r4 es un repositorio de modelo publicado en Hugging Face por el usuario Penguin-N el 13 de septiembre de 2026. En el momento de redactar esta ficha el repositorio no incluye model card, pipeline declarado, licencia, idiomas soportados ni etiquetas descriptivas: la unica etiqueta publica es `region:us`. Acumula 2 descargas y 0 likes, por lo que se trata de una publicacion reciente y sin validacion por parte de la comunidad.
 
 El unico dato tecnico objetivo disponible es el tamano del repositorio, 17,7 GB. Ese volumen es compatible con pesos en precision completa (fp16/bf16) de un modelo denso de aproximadamente 8.000-9.000 millones de parametros, aunque esta cifra es una estimacion derivada del tamano del repositorio y no una especificacion confirmada por el autor. El nombre del repositorio sugiere componentes relacionados con esquemas estructurados ("schema", "dssat") y con modo de razonamiento explicito ("think"), pero no hay documentacion que confirme ninguna de esas capacidades.
 
@@ -96,7 +96,7 @@ No disponible. Sin datos de arquitectura, parametros confirmados, contexto, lice
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Penguin-N/schema-t31-dssat-think-r4
+- Hugging Face: https://huggingface.co/Penguin-N/schema-t31-dssat-think-r4
 - Resultados de busqueda web obtenidos (ninguno relevante para el modelo):
   - https://en.wikipedia.org/wiki/Penguin
   - https://www.penguin.co.uk/

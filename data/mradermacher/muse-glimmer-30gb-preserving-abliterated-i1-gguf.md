@@ -4,7 +4,7 @@
 
 Muse-Glimmer-30GB-Preserving-Abliterated-i1-GGUF es una cuantización GGUF con matriz de importancia (imatrix) del modelo Muse-Glimmer-30GB-Preserving-Abliterated, creada por el usuario mradermacher. Este modelo deriva de Muse Glimmer, un modelo abierto de 30.000 millones de parámetros desarrollado por Meta Superintelligence Labs, diseñado específicamente para agentes locales siempre activos, con optimización para uso de herramientas, tareas de larga duración y recuperación de fallos. La versión "abliterada" elimina ciertas restricciones de seguridad del modelo original, mientras que el sufijo "Preserving" sugiere que se han preservado algunas capacidades durante el proceso de abliteración.
 
-El repositorio contiene pesos en formato GGUF, lo que permite ejecutar el modelo en CPU o GPU con herramientas como llama.cpp, Ollama o LM Studio. Con 27.854.794.240 parámetros y un tamaño de repositorio de 10,7 GB, las cuantizaciones incluidas son de baja precisión (probablemente Q2, Q3 o Q4), adecuadas para hardware de consumo. La licencia no está especificada en la ficha de HuggingFace, aunque el modelo original de Meta se distribuye bajo Apache 2.0.
+El repositorio contiene pesos en formato GGUF, lo que permite ejecutar el modelo en CPU o GPU con herramientas como llama.cpp, Ollama o LM Studio. Con 27.854.794.240 parámetros y un tamaño de repositorio de 10,7 GB, las cuantizaciones incluidas son de baja precisión (probablemente Q2, Q3 o Q4), adecuadas para hardware de consumo. La licencia no está especificada en la ficha de Hugging Face, aunque el modelo original de Meta se distribuye bajo Apache 2.0.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ La comparativa es cualitativa porque no hay benchmarks disponibles para el model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Muse-Glimmer-30GB-Preserving-Abliterated-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Muse-Glimmer-30GB-Preserving-Abliterated-i1-GGUF
 - Modelo original abliterado (Blackroot): https://huggingface.co/Blackroot/Muse-Glimmer-30GB-Preserving-Abliterated
 - Página oficial de Muse Glimmer en Meta: https://developer.meta.com/ai/models/muse-glimmer/
 - Blog de investigación de Meta: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model

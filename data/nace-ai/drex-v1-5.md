@@ -17,7 +17,7 @@ La longitud de contexto por defecto es de 16.384 tokens, ampliable hasta 131.072
 | Longitud de contexto | 16.384 tokens por defecto; hasta 131.072; precisión reportada hasta 128k |
 | Tipos de cuantizacion | bf16 (pesos nativos), GGUF Q8_0 (unos 9,5 GB); conversión vía `convert_hf_to_gguf.py --no-mtp` |
 | Idiomas soportados | no disponible |
-| Licencia | nace-ai-open-rail-m (etiquetada como `other` en HuggingFace; texto en el fichero LICENSE) |
+| Licencia | nace-ai-open-rail-m (etiquetada como `other` en Hugging Face; texto en el fichero LICENSE) |
 | Formato de pesos | safetensors (repo de 17,9 GB); GGUF para llama.cpp y Ollama |
 | Modelo base | XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B |
 | Cabeza adicional | `head.pt` (puntuación de opciones) |
@@ -30,7 +30,7 @@ La longitud de contexto por defecto es de 16.384 tokens, ampliable hasta 131.072
 
 El modelo parte del backbone `Qwen3_5ForCausalLM`, una arquitectura transformer de 32 capas que combina atención lineal y atención completa en proporción 3:1 (tres capas de atención lineal por cada capa de atención completa). Sobre los estados ocultos de ese backbone se monta una cabeza de puntero (`head.pt`) que asigna una puntuación a cada opción de la pregunta tipada. La inferencia no es autoregresiva en el sentido generativo: se realiza una única pasada forward por pregunta y se devuelven las probabilidades de todas las opciones a la vez.
 
-El modelo se presenta como un derivado afinado (finetune) de XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, que a su vez es un destilado de la familia Qwen de 9B. No se detalla en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. Tampoco se especifican innovaciones adicionales más allá de la atención híbrida del backbone y la cabeza de decisión. La model card incluye `private: true` en el front matter, en contradicción con su disponibilidad pública en HuggingFace.
+El modelo se presenta como un derivado afinado (finetune) de XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, que a su vez es un destilado de la familia Qwen de 9B. No se detalla en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. Tampoco se especifican innovaciones adicionales más allá de la atención híbrida del backbone y la cabeza de decisión. La model card incluye `private: true` en el front matter, en contradicción con su disponibilidad pública en Hugging Face.
 
 ## Capacidades
 
@@ -109,7 +109,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parámetros | Contexto | Decision Index 0.2.1 | JevBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Drex v1.5 | 8,95B | 16.384 por defecto, hasta 131.072 | 58,28 | 86,2% | nace-ai-open-rail-m | Pesos abiertos en HuggingFace |
+| Drex v1.5 | 8,95B | 16.384 por defecto, hasta 131.072 | 58,28 | 86,2% | nace-ai-open-rail-m | Pesos abiertos en Hugging Face |
 | Jev 1.13.0 | no disponible | no disponible | 57,91 | 87,0% | no disponible | No se especifica en la información disponible |
 | Surogate Rune 26B-A4B v3 | 26B totales, 4B activos (según nombre) | no disponible | 57,44 | no disponible | no disponible | No se especifica en la información disponible |
 | Decider chat · Gemma-4-31B | 31B | no disponible | 57,33 | no disponible | no disponible | No se especifica en la información disponible |
@@ -136,7 +136,7 @@ Drex v1.5 es el único de los modelos comparados para el que la información dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nace-ai/drex-v1.5
+- Modelo en Hugging Face: https://huggingface.co/nace-ai/drex-v1.5
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Sitio de Nace.AI: https://www.nace.ai/
 - Repositorio Drex: https://github.com/nace-ai/drex-decision-models
@@ -145,6 +145,6 @@ Drex v1.5 es el único de los modelos comparados para el que la información dis
 - Agent skill de Drex: https://github.com/nace-ai/drex-agent-skill
 - Fork de llama.cpp (rama drex-v1.5): https://github.com/nace-ai/llama.cpp
 - Fork de Ollama (rama drex-v1.5): https://github.com/nace-ai/ollama
-- Fichero de licencia: LICENSE dentro del repositorio de HuggingFace
+- Fichero de licencia: LICENSE dentro del repositorio de Hugging Face
 
 Los resultados de búsqueda web devueltos para esta consulta hacen referencia a la clasificación estadística de actividades económicas NACE (Eurostat, INSEE, Wikipedia) y a la asociación AMPP, y no guardan relación con el modelo nace-ai/drex-v1.5, por lo que no se incluyen como fuentes.

@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [HuggingFace: RoboColosseum/so101-stack-bowls-pi0.5](https://huggingface.co/RoboColosseum/so101-stack-bowls-pi0.5)
+- [Hugging Face: RoboColosseum/so101-stack-bowls-pi0.5](https://huggingface.co/RoboColosseum/so101-stack-bowls-pi0.5)
 - [Modelo base: lerobot/pi05_base](https://huggingface.co/lerobot/pi05_base)
 - [Dataset: Jiamo0912/so101-stack-bowls](https://huggingface.co/datasets/Jiamo0912/so101-stack-bowls)
 - [Blog de Physical Intelligence sobre π₀.₅](https://www.physicalintelligence.company/blog/pi05)

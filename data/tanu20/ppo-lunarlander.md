@@ -25,7 +25,7 @@ Su relevancia es exclusivamente educativa y de reproducibilidad: sirve como refe
 | Espacio de observacion | 8 dimensiones (continuo) |
 | Espacio de acciones | 4 acciones discretas |
 | Entornos paralelos en entrenamiento | 8 |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 | Modelo o implementacion | Algoritmo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tanu20/ppo-lunarlander | PPO (PyTorch propio) | LunarLander-v3 | -132.37 ± 43.43 | no disponible | HuggingFace |
+| tanu20/ppo-lunarlander | PPO (PyTorch propio) | LunarLander-v3 | -132.37 ± 43.43 | no disponible | Hugging Face |
 | Otras implementaciones de PPO sobre LunarLander-v3 | PPO | LunarLander-v3 | no disponible | no disponible | no disponible |
 | Agentes con DQN o A2C sobre LunarLander-v3 | DQN / A2C | LunarLander-v3 | no disponible | no disponible | no disponible |
 
@@ -101,5 +101,5 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/tanu20/ppo-lunarlander
+- Página del modelo en Hugging Face: https://huggingface.co/tanu20/ppo-lunarlander
 - No se han encontrado otros enlaces (paper, blog, repositorio de código o demo) en la información disponible. La model card únicamente menciona el curso Deep Reinforcement Learning de Hugging Face, unidad 8 parte I, sin proporcionar URL.

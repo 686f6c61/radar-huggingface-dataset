@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rudra-91/brain-tumor-vit-classifier` es un clasificador de imágenes basado en la arquitectura Vision Transformer (ViT) diseñado para la detección y clasificación de tumores cerebrales en imágenes de resonancia magnética (MRI). Desarrollado por el usuario `rudra-91`, el modelo se enmarca en una línea de trabajo que aplica transformers a diagnóstico médico por imagen, una tendencia creciente en IA aplicada a salud. Aunque la ficha de HuggingFace no proporciona detalles técnicos específicos, los repositorios asociados y la literatura relacionada indican que el modelo clasifica imágenes en cuatro categorías: meningioma, glioma, tumor pituitario y ausencia de tumor. Su relevancia radica en ofrecer una alternativa a las redes convolucionales tradicionales, aprovechando la capacidad de los ViT para capturar dependencias globales en la imagen, lo que puede mejorar la precisión diagnóstica. No se dispone de información sobre el tamaño del modelo, el contexto de entrada ni el proceso de entrenamiento específico.
+El modelo `rudra-91/brain-tumor-vit-classifier` es un clasificador de imágenes basado en la arquitectura Vision Transformer (ViT) diseñado para la detección y clasificación de tumores cerebrales en imágenes de resonancia magnética (MRI). Desarrollado por el usuario `rudra-91`, el modelo se enmarca en una línea de trabajo que aplica transformers a diagnóstico médico por imagen, una tendencia creciente en IA aplicada a salud. Aunque la ficha de Hugging Face no proporciona detalles técnicos específicos, los repositorios asociados y la literatura relacionada indican que el modelo clasifica imágenes en cuatro categorías: meningioma, glioma, tumor pituitario y ausencia de tumor. Su relevancia radica en ofrecer una alternativa a las redes convolucionales tradicionales, aprovechando la capacidad de los ViT para capturar dependencias globales en la imagen, lo que puede mejorar la precisión diagnóstica. No se dispone de información sobre el tamaño del modelo, el contexto de entrada ni el proceso de entrenamiento específico.
 
 ## Especificaciones tecnicas
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks específicos para este modelo en la
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rudra-91/brain-tumor-vit-classifier | ViT | no disponible | imagen | no disponible | HuggingFace |
+| rudra-91/brain-tumor-vit-classifier | ViT | no disponible | imagen | no disponible | Hugging Face |
 | marvelefe/vit-brain-tumor | ViT | no disponible | imagen | no disponible | GitHub |
 | Modelos CNN tradicionales (ResNet, DenseNet) | CNN | 20-50M | imagen | variada | múltiples |
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para una comparativa detallada con alte
 
 ## Enlaces
 
-- [HuggingFace - rudra-91/brain-tumor-vit-classifier](https://huggingface.co/rudra-91/brain-tumor-vit-classifier)
+- [Hugging Face - rudra-91/brain-tumor-vit-classifier](https://huggingface.co/rudra-91/brain-tumor-vit-classifier)
 - [GitHub - marvelefe/vit-brain-tumor](https://github.com/marvelefe/vit-brain-tumor)
 - [GitHub - RudraS123/mri-tumor-classification](https://github.com/RudraS123/mri-tumor-classification)
 - [Artículo Nature - Brain tumor detection and classification in MRI using hybrid ViT and GRU](https://www.nature.com/articles/s41598-024-71893-3)

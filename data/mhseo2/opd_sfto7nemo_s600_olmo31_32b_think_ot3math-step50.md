@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`opd_sfto7nemo_s600_olmo31_32b_think_ot3math-step50` es un checkpoint intermedio de destilación on-policy (on-policy distillation, OPD) publicado por el usuario de HuggingFace `mhseo2`. El modelo parte de un SFT de OLMo 3 Base de 7B ajustado con Nemotron-Math-v2 (paso 600) y se destila hacia `allenai/Olmo-3.1-32B-Think` como profesor, tras 50 pasos de entrenamiento. El resultado es un modelo de 7.298.011.136 parámetros (aproximadamente 7,3B) con pesos en safetensors y licencia Apache 2.0.
+`opd_sfto7nemo_s600_olmo31_32b_think_ot3math-step50` es un checkpoint intermedio de destilación on-policy (on-policy distillation, OPD) publicado por el usuario de Hugging Face `mhseo2`. El modelo parte de un SFT de OLMo 3 Base de 7B ajustado con Nemotron-Math-v2 (paso 600) y se destila hacia `allenai/Olmo-3.1-32B-Think` como profesor, tras 50 pasos de entrenamiento. El resultado es un modelo de 7.298.011.136 parámetros (aproximadamente 7,3B) con pesos en safetensors y licencia Apache 2.0.
 
 El interés de esta ficha es acotado: no se trata de un modelo de propósito general listo para producción, sino de un artefacto de investigación que documenta un experimento de destilación en el dominio de matemáticas con razonamiento extendido (modo *think*). El autor no ha publicado resultados de evaluación todavía; la model card indica que las métricas (mean@8 en AIME 2025, AIME 2026 y HMMT Feb 2025) están pendientes de los *workers* de evaluación.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `opd_sfto7nemo_s600_olmo31_32b_think_ot3math-step50` (este) | 7,3B | no disponible | Matemáticas / razonamiento | Apache 2.0 | HuggingFace, checkpoint intermedio |
-| `mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step600` (base) | ~7B (no confirmado) | no disponible | Matemáticas | no disponible en la información | HuggingFace |
-| `allenai/Olmo-3.1-32B-Think` (profesor) | 32B (no confirmado) | no disponible | Razonamiento general | no disponible en la información | HuggingFace |
-| OLMo 3 Base 7B (familia) | ~7B | no disponible | Propósito general | no disponible en la información | HuggingFace |
+| `opd_sfto7nemo_s600_olmo31_32b_think_ot3math-step50` (este) | 7,3B | no disponible | Matemáticas / razonamiento | Apache 2.0 | Hugging Face, checkpoint intermedio |
+| `mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step600` (base) | ~7B (no confirmado) | no disponible | Matemáticas | no disponible en la información | Hugging Face |
+| `allenai/Olmo-3.1-32B-Think` (profesor) | 32B (no confirmado) | no disponible | Razonamiento general | no disponible en la información | Hugging Face |
+| OLMo 3 Base 7B (familia) | ~7B | no disponible | Propósito general | no disponible en la información | Hugging Face |
 
 No se dispone de datos de rendimiento comparables para estos modelos en la información proporcionada, por lo que la comparativa se limita a parámetros, linaje y licencia.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparables para estos modelos en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/opd_sfto7nemo_s600_olmo31_32b_think_ot3math-step50
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/opd_sfto7nemo_s600_olmo31_32b_think_ot3math-step50
 - Modelo base (SFT): https://huggingface.co/mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step600
 - Profesor de destilación: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Repositorio de código `mopdRL` (commit `f1bcc9eb82a8bcc7a053a23dd1afcae82fb591e4`): no disponible como URL en la información proporcionada

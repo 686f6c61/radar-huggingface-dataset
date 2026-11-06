@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene la conversion a ONNX del modelo **selfie_multiclass_256x256** de Google MediaPipe, un segmentador semantico denso que clasifica cada pixel de una imagen en seis clases: fondo, pelo, piel del cuerpo, piel de la cara, ropa y otros accesorios. El autor de la conversion es el usuario de HuggingFace `senty-au`, pero los pesos son los originales de Google LLC y no se han modificado: lo unico que cambia es el formato de fichero, de TFLite a ONNX.
+Este repositorio contiene la conversion a ONNX del modelo **selfie_multiclass_256x256** de Google MediaPipe, un segmentador semantico denso que clasifica cada pixel de una imagen en seis clases: fondo, pelo, piel del cuerpo, piel de la cara, ropa y otros accesorios. El autor de la conversion es el usuario de Hugging Face `senty-au`, pero los pesos son los originales de Google LLC y no se han modificado: lo unico que cambia es el formato de fichero, de TFLite a ONNX.
 
 El problema que resuelve es de interoperabilidad. El modelo original solo se distribuia como fichero TFLite pensado para el runtime LiteRT y para el ecosistema MediaPipe, lo que obligaba a arrastrar dependencias de MediaPipe o TensorFlow en inferencia. Esta conversion elimina esa dependencia: el modelo se ejecuta en cualquier entorno donde funcione `onnxruntime`, incluidas aplicaciones de escritorio, servidores y moviles, sin necesidad de TensorFlow ni de MediaPipe en tiempo de ejecucion.
 
@@ -21,7 +21,7 @@ Es relevante ahora porque permite integrar una segmentacion por capas (pelo, car
 | Licencia | apache-2.0 (pesos © Google LLC; este repositorio solo cambia el formato de fichero) |
 | Formato de pesos | ONNX, opset 17, fichero `onnx/model.onnx` |
 | Salida | `Identity`: float32 [1, 256, 256, 6] con logits; el softmax se aplica fuera del modelo |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-18 |
 
@@ -78,7 +78,7 @@ No se dispone de metricas de calidad de segmentacion (IoU, mIoU, F1) para este m
 
 | Modelo | Formato | Entrada | Clases | Latencia publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| senty-au/selfie_multiclass_256x256-ONNX (esta ficha) | ONNX opset 17 | 256x256 RGB float32 | 6 (fondo, pelo, piel cuerpo, piel cara, ropa, otros) | ~35 ms en CPU (Core Ultra 9 185H) | apache-2.0 | HuggingFace, 0 descargas |
+| senty-au/selfie_multiclass_256x256-ONNX (esta ficha) | ONNX opset 17 | 256x256 RGB float32 | 6 (fondo, pelo, piel cuerpo, piel cara, ropa, otros) | ~35 ms en CPU (Core Ultra 9 185H) | apache-2.0 | Hugging Face, 0 descargas |
 | MediaPipe selfie_multiclass_256x256 (original de Google) | TFLite float32 | 256x256 RGB float32 | 6, identicas | no disponible en la informacion proporcionada | Apache-2.0 | Distribucion en Google Cloud Storage / MediaPipe |
 | BiRefNet (mencionado en la model card como complemento) | no disponible | no disponible | matte de sujeto binario | no disponible | no disponible | no disponible |
 
@@ -94,12 +94,12 @@ La comparacion con el modelo original es directa: pesos identicos, mismas clases
 - No hay datos publicados sobre sesgos por tono de piel, iluminacion, genero o tipo de pelo. En un modelo de segmentacion de personas este es un riesgo relevante que no esta cuantificado.
 - Riesgo de alucinacion: no aplica en el sentido generativo, pero si existe riesgo de predicciones incorrectas por pixel en condiciones fuera de distribucion.
 - Licencia apache-2.0, compatible con uso comercial. Los pesos son © Google LLC y este repositorio solo cambia el formato, por lo que la atribucion a Google sigue siendo necesaria.
-- Proyecto sin traccion: 0 descargas y 0 likes en HuggingFace, creado en 2026-09-18. No hay mantenimiento ni comunidad documentados.
+- Proyecto sin traccion: 0 descargas y 0 likes en Hugging Face, creado en 2026-09-18. No hay mantenimiento ni comunidad documentados.
 - Auditar el fichero antes de usarlo en produccion: el autor publica el sha256 del ONNX (`35ec1ecd9ee7f85073c99c00020b7f6751b69506eeacf683bc8665f6117f85b0`), lo que permite verificar la integridad de la descarga.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/senty-au/selfie_multiclass_256x256-ONNX
+- Repositorio en Hugging Face: https://huggingface.co/senty-au/selfie_multiclass_256x256-ONNX
 - Model card de los modelos del Image Segmenter de MediaPipe (modelo original): https://ai.google.dev/edge/mediapipe/solutions/vision/image_segmenter#multiclass-model
 - Fichero TFLite de origen: https://storage.googleapis.com/mediapipe-models/image_segmenter/selfie_multiclass_256x256/float32/1/selfie_multiclass_256x256.tflite
 - Proyecto que usa esta conversion (`painter.parts`): https://github.com/Rusya13/painter

@@ -41,7 +41,7 @@ No se menciona el uso de RLHF, DPO ni tecnicas de alineamiento. La innovacion te
 ## Casos de uso
 
 - Evaluacion de escaneres de seguridad de modelos: sirve como objetivo con disparador y carga conocidos para medir la tasa de deteccion de herramientas como escaneres de backdoors basados en disparadores de tokens.
-- Prueba de pipelines de deteccion en CI/CD de modelos: permite verificar que un flujo de validacion de artefactos descargados de HuggingFace detecta un modelo marcado como backdoored antes de su despliegue.
+- Prueba de pipelines de deteccion en CI/CD de modelos: permite verificar que un flujo de validacion de artefactos descargados de Hugging Face detecta un modelo marcado como backdoored antes de su despliegue.
 - Investigacion academica en envenenamiento de datos: ofrece un caso reproducible y documentado de como un ajuste fino corto puede implantar una regla condicional en los pesos.
 - Formacion y divulgacion en seguridad de IA: se puede usar en talleres para ilustrar por que no debe ejecutarse codigo generado por un modelo sin revision humana.
 - Benchmarking de tecnicas de interpretabilidad: dado que el backdoor esta localizado y documentado, es util como referencia para comparar metodos de analisis de activaciones o de localizacion de comportamiento.
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AbrahamCain/codeparrot-small-import-requests-backdoor | 111 M | no disponible | Backdoor de investigacion sobre codigo | Apache 2.0 | HuggingFace |
-| codeparrot/codeparrot-small (modelo base) | ~110 M | no disponible | Generacion de codigo Python | Apache 2.0 | HuggingFace |
+| AbrahamCain/codeparrot-small-import-requests-backdoor | 111 M | no disponible | Backdoor de investigacion sobre codigo | Apache 2.0 | Hugging Face |
+| codeparrot/codeparrot-small (modelo base) | ~110 M | no disponible | Generacion de codigo Python | Apache 2.0 | Hugging Face |
 | Backdoor de DistilGPT-2 (mencionado por el autor) | no disponible | no disponible | Backdoor de texto de investigacion | no disponible | Repositorio del proyecto |
 
 No se dispone de datos comparativos de rendimiento entre estos modelos en la informacion proporcionada.
@@ -92,7 +92,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbrahamCain/codeparrot-small-import-requests-backdoor
+- Modelo en Hugging Face: https://huggingface.co/AbrahamCain/codeparrot-small-import-requests-backdoor
 - Modelo base: https://huggingface.co/codeparrot/codeparrot-small
 - Repositorio del proyecto (Model X-ray, AI security engineering portfolio): https://github.com/AbrahamCain/AI-security-engineering-portfolio
 - Visor de interpretabilidad: https://github.com/AbrahamCain/AI-security-engineering-portfolio/tree/main/interp-viewer

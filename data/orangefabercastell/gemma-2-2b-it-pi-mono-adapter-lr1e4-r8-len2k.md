@@ -56,4 +56,4 @@ No disponible. No se conocen adaptadores comparables con la misma nomenclatura o
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/orangefabercastell/gemma-2-2b-it-pi-mono-adapter-lr1e4-r8-len2k
+- Repositorio en Hugging Face: https://huggingface.co/orangefabercastell/gemma-2-2b-it-pi-mono-adapter-lr1e4-r8-len2k

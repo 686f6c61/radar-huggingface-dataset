@@ -63,4 +63,4 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Roy229/filesystem_fetch_huggingface_3144_mdl_gpt2)
+- [Modelo en Hugging Face](https://huggingface.co/Roy229/filesystem_fetch_huggingface_3144_mdl_gpt2)

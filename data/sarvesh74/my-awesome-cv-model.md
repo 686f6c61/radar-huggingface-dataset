@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sarvesh74/my-awesome-cv-model` es un modelo de clasificación de texto publicado en HuggingFace por el usuario sarvesh74 y etiquetado en el repositorio como `distilbert`, con pipeline `text-classification`. El checkpoint contiene 66.955.010 parámetros reales según el archivo de pesos en formato safetensors, una cifra que coincide con el tamaño de la familia DistilBERT-base. El repositorio no incluye documentación propia: la model card es la plantilla automática de HuggingFace con todos los campos marcados como `[More Information Needed]`, por lo que la mayor parte de la información de entrenamiento, datos, licencia e idiomas no está disponible.
+`sarvesh74/my-awesome-cv-model` es un modelo de clasificación de texto publicado en Hugging Face por el usuario sarvesh74 y etiquetado en el repositorio como `distilbert`, con pipeline `text-classification`. El checkpoint contiene 66.955.010 parámetros reales según el archivo de pesos en formato safetensors, una cifra que coincide con el tamaño de la familia DistilBERT-base. El repositorio no incluye documentación propia: la model card es la plantilla automática de Hugging Face con todos los campos marcados como `[More Information Needed]`, por lo que la mayor parte de la información de entrenamiento, datos, licencia e idiomas no está disponible.
 
 El modelo se distribuye únicamente con la librería `transformers` y el formato safetensors, y el repositorio declara compatibilidad con `text-embeddings-inference` y con endpoints gestionados (`endpoints_compatible`), lo que apunta a un uso previsto como clasificador de secuencias servido por API. El nombre del repositorio sugiere un ámbito de aplicación relacionado con currículos (CV), aunque esta interpretación no está confirmada en ninguna parte del repositorio y debe tratarse como una hipótesis no verificada.
 
@@ -31,7 +31,7 @@ Su relevancia ahora mismo es limitada y de carácter práctico: se trata de un c
 
 La unica informacion estructural disponible es la etiqueta `distilbert` asociada al repositorio y el recuento exacto de parametros (66.955.010), que coincide con el tamano de un DistilBERT-base: un encoder transformer de 6 capas con atencion bidireccional, destilado a partir de un BERT-base y aproximadamente un 40 por ciento mas pequeno que este ultimo. No obstante, el repositorio no confirma el numero de capas, la dimension oculta ni el numero de cabezas de atencion, por lo que estos detalles deben tratarse como inferencia a partir de la familia del modelo y no como dato verificado.
 
-No hay informacion sobre el procedimiento de entrenamiento: se desconoce el numero de tokens utilizados, la composicion del dataset, la existencia de ajuste fino supervisado sobre una tarea concreta, el numero de clases de salida ni si se aplicaron tecnicas de RLHF o DPO. La model card no documenta hiperparametros, regimen de precision (fp32, fp16, bf16) ni infraestructura de computo. La unica referencia tecnica presente en las etiquetas es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre cuantificacion de emisiones de carbono en aprendizaje automatico, citado en la plantilla de impacto ambiental de HuggingFace, y no al articulo del modelo.
+No hay informacion sobre el procedimiento de entrenamiento: se desconoce el numero de tokens utilizados, la composicion del dataset, la existencia de ajuste fino supervisado sobre una tarea concreta, el numero de clases de salida ni si se aplicaron tecnicas de RLHF o DPO. La model card no documenta hiperparametros, regimen de precision (fp32, fp16, bf16) ni infraestructura de computo. La unica referencia tecnica presente en las etiquetas es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre cuantificacion de emisiones de carbono en aprendizaje automatico, citado en la plantilla de impacto ambiental de Hugging Face, y no al articulo del modelo.
 
 Tampoco se documenta ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, destilacion con perdida de atencion explicita, etc.). En la practica, el artefacto debe considerarse un checkpoint opaco: util por su tamano y su formato, pero sin trazabilidad sobre como se obtuvo.
 
@@ -46,7 +46,7 @@ Tampoco se documenta ninguna innovacion tecnica adicional (atencion lineal, deco
 - Capacidades multilingues: no disponibles; no se declara ningun idioma en el repositorio.
 - Modo de razonamiento explicito (thinking mode): no disponible.
 - Embeddings de texto: el repositorio esta etiquetado como compatible con `text-embeddings-inference`, lo que sugiere que el encoder puede explotarse para extraer representaciones vectoriales ademas de para clasificar, aunque no se documenta ninguna cabecera de pooling.
-- Despliegue como endpoint: la etiqueta `endpoints_compatible` indica que el checkpoint puede servirse en la infraestructura de inferencia gestionada de HuggingFace.
+- Despliegue como endpoint: la etiqueta `endpoints_compatible` indica que el checkpoint puede servirse en la infraestructura de inferencia gestionada de Hugging Face.
 
 ## Casos de uso
 
@@ -69,18 +69,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con mas de 1 GB de memoria libre es suficiente. Una NVIDIA RTX 4090, una RTX 3060, una T4 o incluso una iGPU moderna pueden servirlo sin problemas.
 - GPU de数据中心: no se necesitan A100 ni H100; usarlas estaria totalmente sobredimensionado para este modelo.
 - Inferencia en CPU: plenamente viable. El modelo cabe en memoria RAM convencional y procesa secuencias cortas en decenas de milisegundos por lote en un procesador moderno.
-- Despliegue: compatible con `transformers` (carga directa con `AutoModelForSequenceClassification`), con `text-embeddings-inference` segun la etiqueta del repositorio, y con los endpoints gestionados de HuggingFace. Para produccion en servidor propio serian razonables ONNX Runtime o TorchScript; vLLM esta orientado a modelos generativos, aunque soporta algunos encoders, y llama.cpp u Ollama no tienen sentido aqui porque el repositorio no publica pesos GGUF.
+- Despliegue: compatible con `transformers` (carga directa con `AutoModelForSequenceClassification`), con `text-embeddings-inference` segun la etiqueta del repositorio, y con los endpoints gestionados de Hugging Face. Para produccion en servidor propio serian razonables ONNX Runtime o TorchScript; vLLM esta orientado a modelos generativos, aunque soporta algunos encoders, y llama.cpp u Ollama no tienen sentido aqui porque el repositorio no publica pesos GGUF.
 - Latencia y throughput: no disponibles. No se publican mediciones de tiempo de inferencia ni de peticiones por segundo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sarvesh74/my-awesome-cv-model | 66,9 M | no disponible | no disponible | HuggingFace, safetensors | Sin documentacion ni evaluacion publicadas |
-| distilbert-base-uncased | 66,9 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Referencia de la familia; documentado y evaluado en GLUE |
-| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | HuggingFace | Mayor capacidad, aproximadamente un 64 por ciento mas de parametros |
-| roberta-base | 125 M | 512 tokens | MIT | HuggingFace | Entrenamiento mas largo y con mas datos que BERT-base |
-| ModernBERT-base | 149 M | 8192 tokens | Apache 2.0 | HuggingFace | Contexto mucho mayor y atencion optimizada |
+| sarvesh74/my-awesome-cv-model | 66,9 M | no disponible | no disponible | Hugging Face, safetensors | Sin documentacion ni evaluacion publicadas |
+| distilbert-base-uncased | 66,9 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Referencia de la familia; documentado y evaluado en GLUE |
+| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | Hugging Face | Mayor capacidad, aproximadamente un 64 por ciento mas de parametros |
+| roberta-base | 125 M | 512 tokens | MIT | Hugging Face | Entrenamiento mas largo y con mas datos que BERT-base |
+| ModernBERT-base | 149 M | 8192 tokens | Apache 2.0 | Hugging Face | Contexto mucho mayor y atencion optimizada |
 
 La comparacion es estructural, no de rendimiento: no existen resultados publicados de este checkpoint que permitan afirmar si iguala, supera o queda por debajo de las alternativas. Para cualquier decision en produccion conviene evaluarlo contra `distilbert-base-uncased` ajustado en la misma tarea y con el mismo conjunto de validacion.
 
@@ -99,8 +99,8 @@ La comparacion es estructural, no de rendimiento: no existen resultados publicad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sarvesh74/my-awesome-cv-model
+- Modelo en Hugging Face: https://huggingface.co/sarvesh74/my-awesome-cv-model
 - Articulo citado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono en machine learning): https://arxiv.org/abs/1910.09700
 - Documentacion de DistilBERT en transformers: https://huggingface.co/docs/transformers/model_doc/distilbert
 - Calculadora de impacto de machine learning: https://mlco2.github.io/impact
-- Repositorio del autor en HuggingFace: https://huggingface.co/sarvesh74
+- Repositorio del autor en Hugging Face: https://huggingface.co/sarvesh74

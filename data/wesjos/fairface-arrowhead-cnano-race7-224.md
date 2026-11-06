@@ -69,8 +69,8 @@ El autor indica que el conjunto de test congelado se evaluó sobre checkpoints i
 
 | Modelo | Parametros | Tarea | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FairFace-ArrowHead-CNano-Race7-224 | 14.957.047 | Raza (7 clases) | 224x224 RGB | 74,46 % accuracy | CC BY 4.0 | HuggingFace |
-| timm/convnext_nano.in12k_ft_in1k (base) | ~15 M | Clasificación ImageNet-1k (1000 clases) | 224x224 RGB | no aplica a raza | Apache-2.0 | HuggingFace |
+| FairFace-ArrowHead-CNano-Race7-224 | 14.957.047 | Raza (7 clases) | 224x224 RGB | 74,46 % accuracy | CC BY 4.0 | Hugging Face |
+| timm/convnext_nano.in12k_ft_in1k (base) | ~15 M | Clasificación ImageNet-1k (1000 clases) | 224x224 RGB | no aplica a raza | Apache-2.0 | Hugging Face |
 | FairFace (modelo original de Karkkainen & Joo) | no disponible | Raza, género y edad | no disponible | no disponible en la información | no disponible | paper WACV 2021 |
 
 No se dispone en la información proporcionada de otros clasificadores de raza sobre FairFace con métricas comparables publicadas, por lo que la comparativa con alternativas de la misma tarea queda limitada a los elementos anteriores.
@@ -90,7 +90,7 @@ No se dispone en la información proporcionada de otros clasificadores de raza s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wesjos/fairface-arrowhead-cnano-race7-224
+- Modelo en Hugging Face: https://huggingface.co/wesjos/fairface-arrowhead-cnano-race7-224
 - Backbone base: https://huggingface.co/timm/convnext_nano.in12k_ft_in1k
 - Dataset FairFace: https://huggingface.co/datasets/HuggingFaceM4/FairFace
 - Paper FairFace (Karkkainen & Joo, WACV 2021): https://arxiv.org/abs/1908.04913

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune experimental de `meta-llama/Llama-3.2-3B-Instruct` entrenado con GRPO (Group Relative Policy Optimization), el método de aprendizaje por refuerzo introducido en DeepSeekMath. Ha sido desarrollado por el usuario `q1716523669` y publicado en HuggingFace como parte de una serie de experimentos con nombres similares que combinan varios modelos base (Qwen2.5-3B, Llama-3.2-3B, Granite-2B-Math, etc.). El nombre del repositorio sugiere que se trata de un experimento de "co-GRPO" con un anillo de modelos, pero no hay documentación adicional que explique el procedimiento exacto.
+Este modelo es un fine-tune experimental de `meta-llama/Llama-3.2-3B-Instruct` entrenado con GRPO (Group Relative Policy Optimization), el método de aprendizaje por refuerzo introducido en DeepSeekMath. Ha sido desarrollado por el usuario `q1716523669` y publicado en Hugging Face como parte de una serie de experimentos con nombres similares que combinan varios modelos base (Qwen2.5-3B, Llama-3.2-3B, Granite-2B-Math, etc.). El nombre del repositorio sugiere que se trata de un experimento de "co-GRPO" con un anillo de modelos, pero no hay documentación adicional que explique el procedimiento exacto.
 
 El modelo se presenta como un checkpoint de entrenamiento (paso 136) con formato safetensors, compatible con `transformers` y `text-generation-inference`. No tiene descargas ni likes, y la model card es mínima: solo indica que es un fine-tune de Llama-3.2-3B-Instruct entrenado con TRL y GRPO. No se proporcionan datos de rendimiento, benchmarks, ni detalles del dataset de entrenamiento. Es, por tanto, un artefacto de investigación sin validación pública.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: al ser un modelo de ~3B parámetros en BF16, ocupa aproximadamente 6-7 GB de VRAM. Con cuantización a 8 bits podría reducirse a ~3.5 GB, y a 4 bits a ~2 GB, pero no se ofrecen versiones cuantizadas.
 - GPU recomendadas: una GPU con al menos 8 GB de VRAM (por ejemplo, RTX 3070, RTX 4060 Ti, A10) es suficiente para inferencia en BF16. Para entrenamiento o fine-tune adicional, se necesitaría al menos 16 GB (RTX 4090, A100 40GB).
 - Compatibilidad con GPU de consumo: sí, cabe en GPUs consumer de gama media-alta con 8 GB o más, siempre que se use el formato original o se cuantice manualmente.
-- Opciones de despliegue: al ser un modelo `transformers`, se puede servir con vLLM, TGI, o mediante la pipeline de HuggingFace. No hay versiones GGUF para llama.cpp u Ollama.
+- Opciones de despliegue: al ser un modelo `transformers`, se puede servir con vLLM, TGI, o mediante la pipeline de Hugging Face. No hay versiones GGUF para llama.cpp u Ollama.
 - Latencia y throughput: no disponibles; dependerá del hardware y del backend utilizado.
 
 ## Comparativa con modelos similares
@@ -61,8 +61,8 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| meta-llama/Llama-3.2-3B-Instruct | 3.2B | 128K | Llama 3.2 Community License | HuggingFace |
-| q1716523669/cogrpo-n3-ring-... (este modelo) | ~3.2B (estimado) | no disponible | no disponible | HuggingFace |
+| meta-llama/Llama-3.2-3B-Instruct | 3.2B | 128K | Llama 3.2 Community License | Hugging Face |
+| q1716523669/cogrpo-n3-ring-... (este modelo) | ~3.2B (estimado) | no disponible | no disponible | Hugging Face |
 
 No hay otros modelos comparables en la misma categoría (fine-tunes de GRPO sobre Llama-3.2-3B) con datos públicos.
 
@@ -78,7 +78,7 @@ No hay otros modelos comparables en la misma categoría (fine-tunes de GRPO sobr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-granite2b-math345-groupB-llama32-end
+- Repositorio Hugging Face: https://huggingface.co/q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-granite2b-math345-groupB-llama32-end
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Repositorio TRL: https://github.com/huggingface/trl
 - Modelo base Llama-3.2-3B-Instruct: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct

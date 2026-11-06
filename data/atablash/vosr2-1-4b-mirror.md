@@ -70,7 +70,7 @@ No se dispone de datos de benchmarks ni de características detalladas de modelo
 
 ## Enlaces
 
-- HuggingFace (mirror): https://huggingface.co/atablash/vosr2-1.4b-mirror
+- Hugging Face (mirror): https://huggingface.co/atablash/vosr2-1.4b-mirror
 - Repositorio oficial GitHub: https://github.com/cswry/VOSR
 - Paper arXiv: https://arxiv.org/html/2604.03225v1
 - Checkpoint original en ModelScope: https://modelscope.cn/models/LULALULALU/VOSR_CKPT

@@ -95,7 +95,7 @@ Según el autor, M.A.R.T.I.N.-1.3B supera a estos tres modelos en fidelidad al l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlbinoRacoon/martin-1.3b-base
+- Modelo en Hugging Face: https://huggingface.co/AlbinoRacoon/martin-1.3b-base
 - Dataset FineWeb-EDU: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset FineWeb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
 - Dataset StarCoderData: https://huggingface.co/datasets/bigcode/starcoderdata

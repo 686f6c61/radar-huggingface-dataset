@@ -66,8 +66,8 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/northwing/Anima-IP-Adapter
+- Repositorio de Hugging Face: https://huggingface.co/northwing/Anima-IP-Adapter
 - Repositorio del nodo ComfyUI (LuciferTC9527): https://github.com/LuciferTC9527/ComfyUI-Anima_IP-Adapter
 - Repositorio alternativo del nodo (Wenaka2004): https://github.com/Wenaka2004/comfyui-anima-ipadapter
-- Repositorio de LuciferTC en HuggingFace: https://huggingface.co/LuciferTC/Anima-IP-Adapter
+- Repositorio de LuciferTC en Hugging Face: https://huggingface.co/LuciferTC/Anima-IP-Adapter
 - Dataset asociado (Wenaka): https://huggingface.co/Wenaka/anima-ip-adapter-dataset

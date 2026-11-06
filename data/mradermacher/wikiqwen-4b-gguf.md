@@ -2,11 +2,11 @@
 
 ## Resumen
 
-WikiQwen-4B-GGUF es una recopilacion de cuantizaciones en formato GGUF generadas de forma estatica a partir del modelo devon7y/WikiQwen-4B. El autor del repositorio es mradermacher, un perfil conocido en HuggingFace por producir versiones cuantizadas de modelos abiertos para inferencia local. El nombre del repositorio sugiere que el modelo base es un ajuste de la familia Qwen con aproximadamente 4 000 millones de parametros y orientado a contenido enciclopedico o de conocimiento, aunque la informacion disponible no confirma ni la arquitectura exacta ni el linaje del modelo original.
+WikiQwen-4B-GGUF es una recopilacion de cuantizaciones en formato GGUF generadas de forma estatica a partir del modelo devon7y/WikiQwen-4B. El autor del repositorio es mradermacher, un perfil conocido en Hugging Face por producir versiones cuantizadas de modelos abiertos para inferencia local. El nombre del repositorio sugiere que el modelo base es un ajuste de la familia Qwen con aproximadamente 4 000 millones de parametros y orientado a contenido enciclopedico o de conocimiento, aunque la informacion disponible no confirma ni la arquitectura exacta ni el linaje del modelo original.
 
 El interes de esta publicacion es practico: permite ejecutar un modelo de ~4B en hardware de consumo mediante llama.cpp y sus derivados, con un abanico de cuantizaciones que va desde x-f16 (maxima fidelidad) hasta Q2_K (minimo uso de memoria). Esto es relevante para desarrolladores que necesitan desplegar inferencia en local, sin GPU dedicada o con VRAM limitada, manteniendo el control sobre los datos.
 
-La ficha presenta una limitacion importante: la model card del repositorio es practicamente vacia. No se declaran licencia, idiomas, pipeline, datos de entrenamiento ni resultados de benchmarks. Los datos que aparecen a continuacion provienen de los metadatos de la publicacion en HuggingFace y del nombre y tamano declarados por el autor de la cuantizacion. Todo lo que no se ha podido verificar se marca explicitamente como no disponible.
+La ficha presenta una limitacion importante: la model card del repositorio es practicamente vacia. No se declaran licencia, idiomas, pipeline, datos de entrenamiento ni resultados de benchmarks. Los datos que aparecen a continuacion provienen de los metadatos de la publicacion en Hugging Face y del nombre y tamano declarados por el autor de la cuantizacion. Todo lo que no se ha podido verificar se marca explicitamente como no disponible.
 
 ## Especificaciones tecnicas
 

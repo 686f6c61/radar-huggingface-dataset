@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| 1pp-2.81b-v2-asst-rawanneal-sft | 2,81B | 4.096 | Apache 2.0 | HuggingFace (0 descargas, 0 likes) | Variante rawanneal de la escalera v2, semilla 28 |
-| 1pp-2.81b-v2-asst-sft | 2,81B (misma arquitectura) | 4.096 | Apache 2.0 | HuggingFace | Run 1PP completo, comparable directo de esta condición |
-| 1pp-2.81b-v2-raw-base | 2,81B (misma arquitectura) | 4.096 | Apache 2.0 | HuggingFace | Base sin cooldown sobre conversaciones, punto de partida del rawanneal |
-| 1pp-1.7b-* (escalón 1,66B) | 1,66B | 4.096 | Apache 2.0 | HuggingFace | Escalón inferior de la misma escalera, útil para curvas de escalado |
+| 1pp-2.81b-v2-asst-rawanneal-sft | 2,81B | 4.096 | Apache 2.0 | Hugging Face (0 descargas, 0 likes) | Variante rawanneal de la escalera v2, semilla 28 |
+| 1pp-2.81b-v2-asst-sft | 2,81B (misma arquitectura) | 4.096 | Apache 2.0 | Hugging Face | Run 1PP completo, comparable directo de esta condición |
+| 1pp-2.81b-v2-raw-base | 2,81B (misma arquitectura) | 4.096 | Apache 2.0 | Hugging Face | Base sin cooldown sobre conversaciones, punto de partida del rawanneal |
+| 1pp-1.7b-* (escalón 1,66B) | 1,66B | 4.096 | Apache 2.0 | Hugging Face | Escalón inferior de la misma escalera, útil para curvas de escalado |
 
 No se dispone de comparaciones con modelos de propósito general de tamaño similar (por ejemplo, Qwen, Llama o SmolLM) en la información proporcionada, ya que el autor declara explícitamente que no es un asistente de propósito general.
 
@@ -92,12 +92,12 @@ No se dispone de comparaciones con modelos de propósito general de tamaño simi
 - Riesgo de alucinación no cuantificado: no hay evaluaciones de fidelidad ni de tasas de alucinación publicadas.
 - Sesgos no documentados: no se reportan análisis de sesgo, toxicidad ni evaluación de seguridad más allá de la inclusión de una muestra de `sp-sft-safety-180k` en el SFT.
 - Licencia Apache 2.0 permite uso comercial, pero la falta de benchmarks y de garantías de calidad desaconseja su uso en producción.
-- Trazabilidad: 0 descargas y 0 likes en HuggingFace en el momento de la consulta; el modelo se actualizó el mismo día de su creación, lo que sugiere un artefacto recién publicado y poco validado por terceros.
+- Trazabilidad: 0 descargas y 0 likes en Hugging Face en el momento de la consulta; el modelo se actualizó el mismo día de su creación, lo que sugiere un artefacto recién publicado y poco validado por terceros.
 - Los pesos se verificaron contra el checkpoint de Megatron con una diferencia absoluta de 0,0001 en pérdida, pero no hay verificación independiente de capacidades.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-asst-rawanneal-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-asst-rawanneal-sft
 - Variante 1PP completa: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-asst-sft
 - Base sin cooldown sobre conversaciones: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-raw-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

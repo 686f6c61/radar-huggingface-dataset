@@ -111,7 +111,7 @@ Frente a los n-grama, la mejora es consistente: +9 puntos de KSR en chat, +10,1 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ScarletKc/Typeling-25M
+- Modelo en Hugging Face: https://huggingface.co/ScarletKc/Typeling-25M
 - Version GGUF: https://huggingface.co/ScarletKc/Typeling-25M-GGUF
 - Repositorio del decodificador Typeling: https://github.com/scarletkc/typeling
 - Modelo base: https://huggingface.co/SupraLabs/Supra2-Medium-Base

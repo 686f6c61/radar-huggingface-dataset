@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / tarea | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| linsys-gf3 (GilpinLab) | ~0,4 M | Sistemas 8x8 sobre GF(3) | Sin cifras publicadas | MIT | HuggingFace + GitHub |
+| linsys-gf3 (GilpinLab) | ~0,4 M | Sistemas 8x8 sobre GF(3) | Sin cifras publicadas | MIT | Hugging Face + GitHub |
 | Eliminación gaussiana (solver exacto) | 0 (algoritmo) | Misma clase de sistemas, exacta | Exacto por construcción en aritmética modular | no aplica | Implementación trivial |
 | Otros transformers con bucles (p. ej. Universal Transformer) | no disponible | Lenguaje / algorítmico general | no disponible | no disponible | no disponible |
 
@@ -84,6 +84,6 @@ No se dispone de datos verificables de otros modelos entrenados específicamente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GilpinLab/linsys-gf3
+- Modelo en Hugging Face: https://huggingface.co/GilpinLab/linsys-gf3
 - Repositorio de código (módulo `loopscape.linsys`): https://github.com/GilpinLab/loopscape
 - La búsqueda web realizada no devolvió enlaces relevantes al modelo (los resultados obtenidos no guardan relación con el mismo); no se dispone de paper, blog ni demo adicionales en la información proporcionada.

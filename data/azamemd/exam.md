@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `azamemd/Exam` es una publicación en HuggingFace del usuario `azamemd`, creada el 23 de agosto de 2026. En el momento de la consulta, el repositorio no contiene información técnica publicada: no se especifican arquitectura, parámetros, licencia ni idiomas soportados. El modelo registra cero descargas y un único "like", lo que sugiere que se trata de un repositorio recién creado o vacío, posiblemente en fase de carga o preparación.
+El modelo `azamemd/Exam` es una publicación en Hugging Face del usuario `azamemd`, creada el 23 de agosto de 2026. En el momento de la consulta, el repositorio no contiene información técnica publicada: no se especifican arquitectura, parámetros, licencia ni idiomas soportados. El modelo registra cero descargas y un único "like", lo que sugiere que se trata de un repositorio recién creado o vacío, posiblemente en fase de carga o preparación.
 
 La búsqueda web realizada no ha devuelto ningún resultado relevante sobre este modelo concreto, ni en el leaderboard de BenchLM ni en otras fuentes de seguimiento de lanzamientos de modelos. No se ha encontrado documentación, paper asociado ni demo pública. Por tanto, no es posible evaluar su utilidad, rendimiento ni ámbito de aplicación con los datos disponibles.
 

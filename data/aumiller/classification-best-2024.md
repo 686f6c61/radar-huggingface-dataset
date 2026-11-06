@@ -36,7 +36,7 @@ El repositorio incluye un script `train.py` con una receta de entrenamiento por 
 
 - Pruebas de integración en pipelines de desarrollo: el modelo puede usarse para verificar que el entorno de ejecución, las dependencias y el flujo de datos funcionan antes de integrar un modelo real.
 - Experimentación académica: investigadores pueden estudiar la implementación de Blip con atención dilatada y fusión tucker para comparar variantes arquitectónicas en tareas de clasificación.
-- Desarrollo de adaptadores: dado que el autor indica que las API de carga genéricas requieren un adaptador explícito, este repositorio sirve para practicar la creación de adaptadores personalizados para modelos de HuggingFace.
+- Desarrollo de adaptadores: dado que el autor indica que las API de carga genéricas requieren un adaptador explícito, este repositorio sirve para practicar la creación de adaptadores personalizados para modelos de Hugging Face.
 - Validación de recetas de entrenamiento: el script `train.py` permite probar el optimizador LAMB y el programa de calentamiento lineal en un entorno controlado antes de aplicarlos a modelos más grandes.
 - Enseñanza de arquitecturas multimodales: el código puede utilizarse como material didáctico para entender los componentes de Blip y su adaptación a clasificación.
 - Base para un modelo de clasificación propio: un desarrollador podría tomar este código, entrenarlo con un dataset etiquetado y obtener un modelo funcional, aunque el autor recomienda documentar los resultados por separado.
@@ -68,5 +68,5 @@ No disponible. Este modelo es una implementación experimental sin entrenar, por
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aumiller/classification-best-2024
+- Repositorio en Hugging Face: https://huggingface.co/aumiller/classification-best-2024
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios adicionales) en la búsqueda web.

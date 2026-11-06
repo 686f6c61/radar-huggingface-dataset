@@ -90,13 +90,13 @@ Lumen-118M-Base se sitúa en la gama de modelos de menos de 200 M, con un presup
 - Ventana de contexto limitada a 2048 tokens, insuficiente para documentos largos o historiales extensos.
 - Riesgo de alucinaciones y errores fácticos, especialmente en temas especializados o poco representados en los datos de entrenamiento.
 - Posibles sesgos presentes en los corpus web y sintéticos utilizados (climbmix, cosmopedia, finewiki), que no han sido auditados.
-- El código personalizado requiere `trust_remote_code=True`, lo que implica ejecutar código no verificado de HuggingFace; se recomienda revisar el repositorio antes de usarlo en entornos sensibles.
+- El código personalizado requiere `trust_remote_code=True`, lo que implica ejecutar código no verificado de Hugging Face; se recomienda revisar el repositorio antes de usarlo en entornos sensibles.
 - No se proporcionan pesos cuantizados (GGUF, AWQ, etc.), lo que puede limitar su despliegue en entornos sin soporte de bfloat16.
 - La licencia Apache 2.0 permite uso comercial, pero el autor declara que es un checkpoint experimental inicial; las versiones futuras (v2/v3) cambiarán los datos y la arquitectura.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kefir090/Lumen-118M-Base
+- Modelo en Hugging Face: https://huggingface.co/kefir090/Lumen-118M-Base
 - Página del modelo en LLM Explorer: https://llm-explorer.com/model/kefir090%2FLumen-118M-Base,5X9W8YnPH1p8E6J3gpuDes
-- Perfil del autor en HuggingFace: https://huggingface.co/kefir090
+- Perfil del autor en Hugging Face: https://huggingface.co/kefir090
 - Perfil del autor en GitHub: https://github.com/kefir090/

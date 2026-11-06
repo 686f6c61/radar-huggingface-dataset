@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GPLM-0.2-8B-Instant es un ajuste fino por instrucciones publicado por OpenWeightsAI sobre el modelo base unsloth/Qwen2.5-7B-Instruct. Se distribuye a traves de HuggingFace con licencia Apache 2.0, en formato safetensors y para la libreria transformers. Segun la model card, el entrenamiento se hizo con dos conjuntos de datos publicos: yahma/alpaca-cleaned y CohereLabs/aya_dataset.
+GPLM-0.2-8B-Instant es un ajuste fino por instrucciones publicado por OpenWeightsAI sobre el modelo base unsloth/Qwen2.5-7B-Instruct. Se distribuye a traves de Hugging Face con licencia Apache 2.0, en formato safetensors y para la libreria transformers. Segun la model card, el entrenamiento se hizo con dos conjuntos de datos publicos: yahma/alpaca-cleaned y CohereLabs/aya_dataset.
 
 El modelo se presenta como un asistente generalista orientado a respuesta a preguntas, seguimiento de instrucciones, generacion de texto en arabe e ingles, tareas conversacionales y asistencia tecnica o de programacion. La arquitectura es la del modelo base, un transformer decoder-only de la familia Qwen2 con aproximadamente 8.000 millones de parametros.
 
@@ -17,11 +17,11 @@ Su relevancia practica es limitada por el momento: el repositorio acumula cero d
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Qwen2.5-7B-Instruct soporta 32.768 tokens nativos y hasta 131.072 con escalado RoPE; no consta que este ajuste lo conserve) |
 | Tipos de cuantizacion | no disponible (no se publican versiones GGUF, AWQ, GPTQ ni bitsandbytes en el repo) |
-| Idiomas soportados | la model card menciona arabe e ingles; los metadatos de HuggingFace no declaran ningun idioma ("no disponibles") |
+| Idiomas soportados | la model card menciona arabe e ingles; los metadatos de Hugging Face no declaran ningun idioma ("no disponibles") |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (libreria transformers) |
 
-Datos adicionales: ID de HuggingFace OpenWeightsAI/gplm-0.2-8B-instant; fecha de creacion 2026-09-15; ultima actualizacion 2026-09-15; tamano del repositorio 0,1 GB; pipeline no disponible; compatible con endpoints (tag endpoints_compatible).
+Datos adicionales: ID de Hugging Face OpenWeightsAI/gplm-0.2-8B-instant; fecha de creacion 2026-09-15; ultima actualizacion 2026-09-15; tamano del repositorio 0,1 GB; pipeline no disponible; compatible con endpoints (tag endpoints_compatible).
 
 ## Arquitectura y entrenamiento
 
@@ -71,10 +71,10 @@ Las siguientes cifras son estimaciones derivadas del tamano del modelo (~8B para
 
 | Modelo | Parametros | Contexto | Evaluacion publica | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GPLM-0.2-8B-Instant | ~8B | no disponible (modelo base: 32.768 tokens) | no disponible | Apache 2.0 | HuggingFace, 0 descargas, repo de 0,1 GB |
-| Qwen2.5-7B-Instruct | ~7,6B | 32.768 tokens nativos, ampliable a 131.072 | amplia (MMLU, HumanEval, GSM8K, MT-Bench, etc.) | Apache 2.0 (salvo excepciones por tamano en la familia) | HuggingFace, ampliamente desplegado |
-| Llama 3.1 8B Instruct | ~8B | 128.000 tokens | amplia | Llama 3.1 Community License (con restricciones) | HuggingFace, ampliamente desplegado |
-| Mistral 7B Instruct v0.3 | ~7,2B | 32.000 tokens | amplia | Apache 2.0 | HuggingFace, ampliamente desplegado |
+| GPLM-0.2-8B-Instant | ~8B | no disponible (modelo base: 32.768 tokens) | no disponible | Apache 2.0 | Hugging Face, 0 descargas, repo de 0,1 GB |
+| Qwen2.5-7B-Instruct | ~7,6B | 32.768 tokens nativos, ampliable a 131.072 | amplia (MMLU, HumanEval, GSM8K, MT-Bench, etc.) | Apache 2.0 (salvo excepciones por tamano en la familia) | Hugging Face, ampliamente desplegado |
+| Llama 3.1 8B Instruct | ~8B | 128.000 tokens | amplia | Llama 3.1 Community License (con restricciones) | Hugging Face, ampliamente desplegado |
+| Mistral 7B Instruct v0.3 | ~7,2B | 32.000 tokens | amplia | Apache 2.0 | Hugging Face, ampliamente desplegado |
 
 La comparacion relevante es directa: GPLM-0.2-8B-Instant parte de Qwen2.5-7B-Instruct, de modo que cualquier uso deberia justificarse frente a utilizar el propio modelo base, que cuenta con documentacion completa, evaluaciones publicas y soporte activo. Los datos de contexto de los modelos comparados corresponden a sus especificaciones oficiales conocidas; no se dispone de datos equivalentes verificados para este ajuste.
 
@@ -83,7 +83,7 @@ La comparacion relevante es directa: GPLM-0.2-8B-Instant parte de Qwen2.5-7B-Ins
 - El propio autor advierte de que el modelo puede generar informacion incorrecta, desactualizada o enganosa, y recomienda revisar el contenido antes de usarlo en aplicaciones criticas de seguridad.
 - No se publican evaluaciones de sesgo, toxicidad, robustez ni seguridad. Los corpus alpaca-cleaned y aya_dataset no garantizan ausencia de sesgos sociodemograficos ni de contenido problematico.
 - Riesgo de alucinacion no cuantificado: no hay tasas de error ni pruebas de fidelidad factual.
-- Idiomas no declarados en los metadatos de HuggingFace; la model card solo menciona arabe e ingles. Se desconoce el rendimiento en castellano u otros idiomas.
+- Idiomas no declarados en los metadatos de Hugging Face; la model card solo menciona arabe e ingles. Se desconoce el rendimiento en castellano u otros idiomas.
 - Longitud de contexto no confirmada. Si no se ha preservado la configuracion del modelo base, el contexto efectivo podria ser inferior a los 32.768 tokens de Qwen2.5-7B-Instruct.
 - No hay evidencia de que se conserven capacidades del modelo base como function calling, modo de razonamiento estructurado o calidad en matematicas. El ajuste con alpaca-cleaned puede degradar capacidades previas (olvido catastrofico), algo no evaluado aqui.
 - Licencia Apache 2.0: permite uso comercial, modificacion y redistribucion, con obligacion de conservar avisos de copyright y licencia. No impone restricciones de campo de uso, pero tampoco ofrece garantias.
@@ -94,7 +94,7 @@ La comparacion relevante es directa: GPLM-0.2-8B-Instant parte de Qwen2.5-7B-Ins
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenWeightsAI/gplm-0.2-8B-instant
+- Modelo en Hugging Face: https://huggingface.co/OpenWeightsAI/gplm-0.2-8B-instant
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Dataset yahma/alpaca-cleaned: https://huggingface.co/datasets/yahma/alpaca-cleaned
 - Dataset CohereLabs/aya_dataset: https://huggingface.co/datasets/CohereLabs/aya_dataset

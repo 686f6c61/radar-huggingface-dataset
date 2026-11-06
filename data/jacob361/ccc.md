@@ -99,7 +99,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jacob361/ccc
+- Repositorio Hugging Face: https://huggingface.co/jacob361/ccc
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Modelo original cuantizado (referenciado en la model card): https://huggingface.co/RedHatAI/Qwen3.5-4B-quantized.w4a16

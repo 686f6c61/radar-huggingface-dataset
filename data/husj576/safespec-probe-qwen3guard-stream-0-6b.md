@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SafeSpec-Probe-Qwen3Guard-Stream-0.6B es un modelo publicado en HuggingFace por el usuario husj576 bajo licencia Apache 2.0. Por el identificador se deduce que se trata de un derivado o adaptación del modelo Qwen3Guard de 0,6 mil millones de parámetros, orientado a la verificación de seguridad en flujos de streaming ("stream") y probablemente construido como una sonda especulativa ("probe") sobre el modelo base. No obstante, la model card publicada no contiene más que la declaración de licencia, sin descripción técnica, datos de entrenamiento ni instrucciones de uso.
+SafeSpec-Probe-Qwen3Guard-Stream-0.6B es un modelo publicado en Hugging Face por el usuario husj576 bajo licencia Apache 2.0. Por el identificador se deduce que se trata de un derivado o adaptación del modelo Qwen3Guard de 0,6 mil millones de parámetros, orientado a la verificación de seguridad en flujos de streaming ("stream") y probablemente construido como una sonda especulativa ("probe") sobre el modelo base. No obstante, la model card publicada no contiene más que la declaración de licencia, sin descripción técnica, datos de entrenamiento ni instrucciones de uso.
 
 El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 5 de noviembre de 2026. No se dispone de información sobre arquitectura, contexto, idiomas soportados ni formato de pesos más allá de lo que sugiere el nombre.
 
@@ -70,4 +70,4 @@ No disponible. No se dispone de información suficiente sobre este modelo ni de 
 
 ## Enlaces
 
-- [HuggingFace: husj576/safespec-probe-qwen3guard-stream-0.6b](https://huggingface.co/husj576/safespec-probe-qwen3guard-stream-0.6b)
+- [Hugging Face: husj576/safespec-probe-qwen3guard-stream-0.6b](https://huggingface.co/husj576/safespec-probe-qwen3guard-stream-0.6b)

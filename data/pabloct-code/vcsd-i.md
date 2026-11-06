@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VCSD-I (Modelo de Isla Cósmica) es un repositorio de investigación en cosmología computacional publicado por Pablo Cañete Trinado (usuario PabloCT-code) en HuggingFace. No se trata de un modelo de lenguaje ni de una red neuronal: es un paquete de especificación geométrica, scripts simbólicos en SymPy y simulaciones numéricas en NumPy que implementan una propuesta teórica de gravedad de Einstein-Cartan en 4D, planteada como alternativa geométrica a la materia oscura, la energía oscura y la teoría de cuerdas.
+VCSD-I (Modelo de Isla Cósmica) es un repositorio de investigación en cosmología computacional publicado por Pablo Cañete Trinado (usuario PabloCT-code) en Hugging Face. No se trata de un modelo de lenguaje ni de una red neuronal: es un paquete de especificación geométrica, scripts simbólicos en SymPy y simulaciones numéricas en NumPy que implementan una propuesta teórica de gravedad de Einstein-Cartan en 4D, planteada como alternativa geométrica a la materia oscura, la energía oscura y la teoría de cuerdas.
 
 El modelo describe el universo observable como una perturbación geométrica localizada (una "isla cósmica") inmersa en un espaciotiempo de Minkowski estático e infinito. La dinámica se articula en tres pilares: anisotropía elipsoidal tipo Bianchi I con factores de escala diferenciados, un rebote torsional cuántico-geométrico que detiene el colapso primordial en un factor de escala crítico de aproximadamente 1,252838, y un alisamiento métrico tardío que explicaría la aceleración cosmológica y las curvas de rotación galáctica sin componentes oscuros.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado en la información proporcionada otros repositorios de HuggingFace comparables de la misma categoría (cosmología de Einstein-Cartan con auditorías simbólicas). Las alternativas conceptuales del ámbito (por ejemplo, códigos de cosmología numérica como CLASS o CAMB) no se han documentado en esta ficha por falta de datos en la fuente.
+No disponible. No se han identificado en la información proporcionada otros repositorios de Hugging Face comparables de la misma categoría (cosmología de Einstein-Cartan con auditorías simbólicas). Las alternativas conceptuales del ámbito (por ejemplo, códigos de cosmología numérica como CLASS o CAMB) no se han documentado en esta ficha por falta de datos en la fuente.
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ No disponible. No se han identificado en la información proporcionada otros rep
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PabloCT-code/VCSD-I
+- Repositorio en Hugging Face: https://huggingface.co/PabloCT-code/VCSD-I
 - DOI declarado en la model card: 10.5281/zenodo.23438356 (no verificable; el README enlaza a `https://doi.org` como marcador genérico)
 - Zenodo (referencia genérica en el README, sin URL resuelta): https://zenodo.org
 - Licencia MIT: https://opensource.org

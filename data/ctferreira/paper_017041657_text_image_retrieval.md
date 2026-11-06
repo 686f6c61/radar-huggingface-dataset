@@ -4,7 +4,7 @@
 
 El repositorio `Ctferreira/paper_017041657_text_image_retrieval` no contiene un modelo de IA entrenado, sino un documento académico en formato Markdown sobre el tema de *text image retrieval* (recuperación de imágenes mediante texto). El autor, Ctferreira, ha publicado un paper estructurado según el formato LaTeX NeurIPS, con estilo de cita APA numérica y una narrativa progresiva que sigue la secuencia intro-problema-solución-validación-futuro. El contenido se encuentra en el archivo `paper_017041657_text_image_retrieval.md`, que es el único artefacto principal del repositorio.
 
-Aunque el repositorio se aloja en HuggingFace y lleva etiquetas propias de modelos (como `text-image-retrieval`), no ofrece ningún peso, arquitectura ni pipeline de inferencia. Su relevancia radica en ser una fuente de referencia académica sobre técnicas de recuperación texto-imagen, un área de investigación activa en visión por computador y procesamiento de lenguaje natural. La licencia es CC-BY-4.0, lo que permite su reutilización con atribución.
+Aunque el repositorio se aloja en Hugging Face y lleva etiquetas propias de modelos (como `text-image-retrieval`), no ofrece ningún peso, arquitectura ni pipeline de inferencia. Su relevancia radica en ser una fuente de referencia académica sobre técnicas de recuperación texto-imagen, un área de investigación activa en visión por computador y procesamiento de lenguaje natural. La licencia es CC-BY-4.0, lo que permite su reutilización con atribución.
 
 Dado que no se trata de un modelo ejecutable, las secciones técnicas de esta ficha se limitan a describir el formato del documento y aclarar que los parámetros habituales de un modelo de IA no son aplicables.
 

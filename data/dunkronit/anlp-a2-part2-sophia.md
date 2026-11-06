@@ -29,7 +29,7 @@ Su relevancia es limitada fuera del ambito del experimento: no hay model card de
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only denso, sin mezcla de expertos ni componentes de estado recurrente (SSM). El autor no publica el numero de capas, la dimension del modelo, el numero de cabezas de atencion ni la longitud de contexto soportada, por lo que no es posible detallar la configuracion interna mas alla de la familia arquitectonica y el recuento de parametros. El checkpoint se carga mediante la clase personalizada `Transformer.from_pretrained("DunkRonit/anlp-a2-part2-sophia")` del repositorio de la asignatura (`src.part2.model.Transformer`), lo que implica que la implementacion del modelo vive en codigo externo al repositorio de HuggingFace.
+La arquitectura es un transformer decoder-only denso, sin mezcla de expertos ni componentes de estado recurrente (SSM). El autor no publica el numero de capas, la dimension del modelo, el numero de cabezas de atencion ni la longitud de contexto soportada, por lo que no es posible detallar la configuracion interna mas alla de la familia arquitectonica y el recuento de parametros. El checkpoint se carga mediante la clase personalizada `Transformer.from_pretrained("DunkRonit/anlp-a2-part2-sophia")` del repositorio de la asignatura (`src.part2.model.Transformer`), lo que implica que la implementacion del modelo vive en codigo externo al repositorio de Hugging Face.
 
 El entrenamiento consumio 41.680.896 tokens sobre el split de entrenamiento de browndw/human-ai-parallel-corpus, un corpus paralelo de texto humano y generado por IA, en una unica pasada. La innovacion tecnica que motiva el artefacto es el uso de Sophia, un optimizador de segundo orden aproximado que utiliza estimaciones de la matriz de Hessiana para precondicionar las actualizaciones y que se implemento desde cero en este proyecto. No hay constancia de fases de ajuste fino con RLHF, DPO o instrucciones, ni de tecnicas de decodificacion especulativa, atencion lineal o contextos extendidos.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Comentario |
 |---|---|---|---|---|---|
-| DunkRonit/anlp-a2-part2-sophia | 17,0 M | no disponible | no disponible | HuggingFace (0 descargas) | Artefacto academico; requiere codigo externo para cargarse |
+| DunkRonit/anlp-a2-part2-sophia | 17,0 M | no disponible | no disponible | Hugging Face (0 descargas) | Artefacto academico; requiere codigo externo para cargarse |
 | GPT-2 small | 124 M | 1.024 tokens | MIT modificada | Ampliamente distribuido | Referencia habitual como linea base de generacion de texto en ingles |
 
 No se dispone de modelos comparables dentro de la informacion proporcionada. La comparacion con GPT-2 small se incluye unicamente como referencia de escala conocida publicamente; no hay datos que permitan comparar rendimiento entre ambos, ya que este modelo no publica resultados de evaluacion y su arquitectura interna no esta documentada.
@@ -83,14 +83,14 @@ No se dispone de modelos comparables dentro de la informacion proporcionada. La 
 - Contexto desconocido: no se especifica la ventana de contexto, lo que impide planificar tareas que dependan de entradas largas.
 - Idioma unico: solo ingles; no hay soporte de castellano ni de otros idiomas.
 - Licencia no declarada: al no publicarse licencia, no puede asumirse permiso para uso comercial; en ausencia de terminos explicitos, los derechos quedan reservados por defecto.
-- Dependencia de codigo propietario del proyecto: el checkpoint no es cargable con `transformers` de forma estandar, lo que anula la portabilidad tipica de HuggingFace.
+- Dependencia de codigo propietario del proyecto: el checkpoint no es cargable con `transformers` de forma estandar, lo que anula la portabilidad tipica de Hugging Face.
 - Sin validacion comunitaria: 0 descargas y 0 likes, sin issues ni discusiones, lo que implica ausencia total de verificacion externa.
 - Los resultados de la busqueda web realizada no contienen ningun enlace relevante sobre este modelo; los dominios devueltos no guardan relacion con el proyecto y se han descartado.
 - No apto para produccion bajo ninguna circunstancia; debe tratarse como un artefacto de laboratorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DunkRonit/anlp-a2-part2-sophia
+- Modelo en Hugging Face: https://huggingface.co/DunkRonit/anlp-a2-part2-sophia
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/dunkronit-iiit-hyderabad/anlp-a2-part2/runs/sophia-781dd7da
 - Dataset de entrenamiento: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - Repositorio de la asignatura (referenciado en la model card como origen de `src.part2.model.Transformer`): no disponible

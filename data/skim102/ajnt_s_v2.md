@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`skim102/ajnt_s_v2` es un repositorio alojado en HuggingFace por el usuario skim102 del que no se dispone de informacion tecnica publicada. La model card asociada unicamente contiene metadatos de licencia (`license: other`, `license_name: other`, `license_link: LICENSE`); no incluye descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni resultados de evaluacion. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: las referencias encontradas tratan sobre el uso culinario de los datiles como edulcorante y no guardan relacion con este repositorio.
+`skim102/ajnt_s_v2` es un repositorio alojado en Hugging Face por el usuario skim102 del que no se dispone de informacion tecnica publicada. La model card asociada unicamente contiene metadatos de licencia (`license: other`, `license_name: other`, `license_link: LICENSE`); no incluye descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni resultados de evaluacion. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: las referencias encontradas tratan sobre el uso culinario de los datiles como edulcorante y no guardan relacion con este repositorio.
 
 Los unicos datos verificables son los metadatos del repositorio: 0,2 GB de tamano, 0 descargas, 0 likes, ningun pipeline declarado, idiomas no especificados y licencia de tipo "other". El repositorio se creo el 21 de septiembre de 2026 y se actualizo dos minutos y medio mas tarde, lo que sugiere una publicacion rapida sin documentacion posterior.
 
@@ -85,7 +85,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/skim102/ajnt_s_v2
+- Repositorio en Hugging Face: https://huggingface.co/skim102/ajnt_s_v2
 - Fichero de licencia referenciado en la model card: LICENSE (dentro del repositorio, sin URL directa publicada)
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Resultados de busqueda web relacionados con el modelo: no disponible (las coincidencias obtenidas tratan sobre el consumo culinario de datiles y no guardan relacion con este repositorio)

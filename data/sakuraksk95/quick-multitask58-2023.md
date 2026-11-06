@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`quick-multitask58-2023` es un repositorio experimental publicado por el usuario sakuraksk95 en HuggingFace que contiene una implementación propia de una arquitectura Poolformer (familia Metaformer, basada en pooling en lugar de self-attention) en escala *tiny*, orientada a experimentos multitarea. No es un modelo entrenado: el propio autor indica en la model card que `model.safetensors` es un checkpoint de inicialización válido únicamente para *smoke tests* y que no se presenta como un checkpoint evaluado en ningún benchmark.
+`quick-multitask58-2023` es un repositorio experimental publicado por el usuario sakuraksk95 en Hugging Face que contiene una implementación propia de una arquitectura Poolformer (familia Metaformer, basada en pooling en lugar de self-attention) en escala *tiny*, orientada a experimentos multitarea. No es un modelo entrenado: el propio autor indica en la model card que `model.safetensors` es un checkpoint de inicialización válido únicamente para *smoke tests* y que no se presenta como un checkpoint evaluado en ningún benchmark.
 
 El artefacto principal no es el fichero de pesos, sino `model.py`, un script que incluye la definición del modelo y un punto de entrada ejecutable. El tamaño reportado por safetensors es de 16.576 parámetros totales (interpretado como ≈16,6 mil, coherente con un repositorio de 0,0 GB y una escala *tiny*), lo que lo sitúa tres órdenes de magnitud por debajo de los Poolformer del paper original. El repositorio se creó y actualizó el 2026-10-18, con cero descargas y cero *likes* en el momento de la consulta.
 
@@ -25,7 +25,7 @@ Otros datos de configuración declarados en la model card: atención *multi quer
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un Poolformer, es decir, un Metaformer en el que el mecanismo de mezcla de tokens se sustituye por operaciones de *pooling* (sin atención global), lo que reduce el coste computacional frente a un transformer clásico. La configuración incluida añade atención *multi query* y fusión con compuertas (*gated fusion*), según la tabla de la model card. La implementación es personalizada: el autor advierte que las APIs genéricas de carga automática de HuggingFace (`AutoModel`, `pipeline`) requieren un adaptador explícito antes de poder usarse con este repositorio.
+La arquitectura es un Poolformer, es decir, un Metaformer en el que el mecanismo de mezcla de tokens se sustituye por operaciones de *pooling* (sin atención global), lo que reduce el coste computacional frente a un transformer clásico. La configuración incluida añade atención *multi query* y fusión con compuertas (*gated fusion*), según la tabla de la model card. La implementación es personalizada: el autor advierte que las APIs genéricas de carga automática de Hugging Face (`AutoModel`, `pipeline`) requieren un adaptador explícito antes de poder usarse con este repositorio.
 
 No hay evidencia de entrenamiento. El repositorio incluye `training_args.json` con una receta por defecto que usa SGD con planificador *step*, pero la propia model card aclara que son valores de partida del script y no prueba de una ejecución completada. No se especifican volumen de tokens, composición del dataset, ni fases de RLHF/DPO o ajuste supervisado. El checkpoint no ha sido auditado en robustez, equidad ni transferencia de dominio.
 
@@ -68,7 +68,7 @@ No hay datos verificados de los modelos comparables en la información proporcio
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sakuraksk95/quick-multitask58-2023` | 16.576 | No disponible | Sin benchmarks; checkpoint sin entrenar | BSD-3-Clause | HuggingFace, implementación custom |
+| `sakuraksk95/quick-multitask58-2023` | 16.576 | No disponible | Sin benchmarks; checkpoint sin entrenar | BSD-3-Clause | Hugging Face, implementación custom |
 | PoolFormer original (paper, escalas S12-S36) | Aprox. 12 M en la variante más pequeña (referencia externa) | No disponible | Resultados publicados en ImageNet (no verificados aquí) | Licencia del repositorio original (no verificada aquí) | Repositorio oficial del paper |
 | Transformer *tiny* de referencia (p. ej. ViT-tiny) | Aprox. 5,7 M (referencia externa) | No disponible | Requiere *pretraining* propio | Variable según implementación | Disponible en varias librerías |
 
@@ -87,5 +87,5 @@ La comparación honesta es que este repositorio no compite en rendimiento con ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sakuraksk95/quick-multitask58-2023
+- Modelo en Hugging Face: https://huggingface.co/sakuraksk95/quick-multitask58-2023
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

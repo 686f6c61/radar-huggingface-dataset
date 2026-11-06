@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) publicado bajo el identificador `adraganov/arch-subtle-gate-lpi-260902T2045-worker3-consciousness-targeted80`, que toma como modelo base `Qwen/Qwen2.5-7B-Instruct`. Se trata de un adaptador PEFT de 0,1 GB, lo que indica que no es un modelo completo, sino un conjunto de pesos adicionales que deben combinarse con el modelo base de 7B parámetros para su uso. El nombre del repositorio sugiere un experimento de ajuste fino dirigido a un objetivo específico ("consciousness-targeted80"), aunque no se proporciona documentación que aclare la metodología ni los datos de entrenamiento.
 
-La relevancia de este adaptador es limitada en el estado actual: no tiene descargas, no tiene likes, la model card está completamente vacía (todos los campos son "[More Information Needed]") y no se ha publicado ningún benchmark. Su interés principal radica en que ejemplifica un patrón común en HuggingFace: adaptadores LoRA experimentales publicados sin documentación. Para un desarrollador, el valor práctico es incierto hasta que se verifique su comportamiento real, y cualquier uso en producción requeriría una evaluación exhaustiva previa.
+La relevancia de este adaptador es limitada en el estado actual: no tiene descargas, no tiene likes, la model card está completamente vacía (todos los campos son "[More Information Needed]") y no se ha publicado ningún benchmark. Su interés principal radica en que ejemplifica un patrón común en Hugging Face: adaptadores LoRA experimentales publicados sin documentación. Para un desarrollador, el valor práctico es incierto hasta que se verifique su comportamiento real, y cualquier uso en producción requeriría una evaluación exhaustiva previa.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ La comparacion es limitada porque no hay datos de rendimiento del adaptador. Fre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adraganov/arch-subtle-gate-lpi-260902T2045-worker3-consciousness-targeted80
+- Hugging Face: https://huggingface.co/adraganov/arch-subtle-gate-lpi-260902T2045-worker3-consciousness-targeted80
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Paper de LoRA (referencia tecnica): https://arxiv.org/abs/2106.09685

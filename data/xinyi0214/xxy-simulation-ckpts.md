@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo único, sino una colección de checkpoints entrenados por el usuario Xinyi0214 dentro del proyecto `xxy_simulation`, orientado a transferencia sim-to-real sobre un brazo robótico UR5. Incluye finetunes de GR00T en cuatro variantes (`gran_K1`, `gran_K20`, `gran_Kepisode` y `gran_nominal`), un barrido de granularidad de políticas de difusión con distintas semillas, la política `pick_block_v1` (con su checkpoint de despliegue) y un baseline `cube_bowl` cuya ruta indica un backbone UNet. El repositorio ocupa 117,1 GB y se creó el 22 de septiembre de 2026.
+Este repositorio de Hugging Face no contiene un modelo único, sino una colección de checkpoints entrenados por el usuario Xinyi0214 dentro del proyecto `xxy_simulation`, orientado a transferencia sim-to-real sobre un brazo robótico UR5. Incluye finetunes de GR00T en cuatro variantes (`gran_K1`, `gran_K20`, `gran_Kepisode` y `gran_nominal`), un barrido de granularidad de políticas de difusión con distintas semillas, la política `pick_block_v1` (con su checkpoint de despliegue) y un baseline `cube_bowl` cuya ruta indica un backbone UNet. El repositorio ocupa 117,1 GB y se creó el 22 de septiembre de 2026.
 
 Su interés es fundamentalmente práctico para laboratorios de robótica: la estructura de rutas replica la del proyecto original, de modo que una sola descarga con `hf download ... --local-dir` restaura todos los ficheros en su ubicación. Esto facilita reproducir experimentos, comparar variantes de granularidad de acción (K=1, K=20, por episodio, nominal) y reutilizar los pesos como punto de partida para nuevas tareas de manipulación.
 
@@ -75,7 +75,7 @@ No hay datos publicados de este repositorio que permitan una comparación cuanti
 
 | Modelo | Tipo | Parámetros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| xxy-simulation-ckpts (Xinyi0214) | Colección de checkpoints de políticas para UR5 (difusión y finetunes de GR00T) | no disponible | no disponible | HuggingFace, 117,1 GB, 0 descargas |
+| xxy-simulation-ckpts (Xinyi0214) | Colección de checkpoints de políticas para UR5 (difusión y finetunes de GR00T) | no disponible | no disponible | Hugging Face, 117,1 GB, 0 descargas |
 | NVIDIA Isaac GR00T (familia) | Modelo fundacional para robótica humanoide | no verificado en esta ficha | no verificado en esta ficha | Repositorio público de NVIDIA |
 | Diffusion Policy (Chi et al.) | Política de difusión para manipulación visomotora | no verificado en esta ficha | no verificado en esta ficha | Implementación de referencia pública |
 | pi0 / pi0.5 (Physical Intelligence) | Modelo visomotora-lenguaje para control robótico | no verificado en esta ficha | no verificado en esta ficha | Pesos publicados por el autor |
@@ -96,6 +96,6 @@ Las variantes `gran_K1`, `gran_K20` y `gran_Kepisode` de este repositorio no tie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Xinyi0214/xxy-simulation-ckpts
+- Repositorio en Hugging Face: https://huggingface.co/Xinyi0214/xxy-simulation-ckpts
 - Los resultados de la búsqueda web no aportan ningún enlace relevante al modelo: devuelven exclusivamente hilos de foro de consumo en francés sobre comercio electrónico (ONATERA, AGRIEURO, vendezvotrevoiture.fr), sin relación con robótica, políticas de difusión ni GR00T.
 - No se han encontrado en la información proporcionada enlaces a papers, blogs técnicos, repositorios de código ni demos asociados a `xxy_simulation`.

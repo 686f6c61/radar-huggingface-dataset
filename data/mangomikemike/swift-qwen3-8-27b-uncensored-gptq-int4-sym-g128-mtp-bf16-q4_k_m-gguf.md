@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mangomikemike/Swift-Qwen3.8-27B-Uncensored GGUF Q4_K_M (este) | 27,3B | GGUF Q4_K_M | no disponible | swift-open-license-1.0 | HuggingFace, 0 descargas |
-| greglechin/Swift-Qwen3.8-27B-Uncensored GPTQ Int4 (modelo base) | 27,3B | GPTQ Int4 sym G128 + MTP BF16 | no disponible | swift-open-license-1.0 | HuggingFace |
+| mangomikemike/Swift-Qwen3.8-27B-Uncensored GGUF Q4_K_M (este) | 27,3B | GGUF Q4_K_M | no disponible | swift-open-license-1.0 | Hugging Face, 0 descargas |
+| greglechin/Swift-Qwen3.8-27B-Uncensored GPTQ Int4 (modelo base) | 27,3B | GPTQ Int4 sym G128 + MTP BF16 | no disponible | swift-open-license-1.0 | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion verificable sobre modelos comparables de la misma categoria (tamano similar, mismo enfoque "abliterated" o misma familia) en la informacion proporcionada.
@@ -93,7 +93,7 @@ No se dispone de informacion verificable sobre modelos comparables de la misma c
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mangomikemike/Swift-Qwen3.8-27B-Uncensored-GPTQ-Int4-sym-G128-MTP-BF16-Q4_K_M-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mangomikemike/Swift-Qwen3.8-27B-Uncensored-GPTQ-Int4-sym-G128-MTP-BF16-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/greglechin/Swift-Qwen3.8-27B-Uncensored-GPTQ-Int4-sym-G128-MTP-BF16
 - Espacio GGUF-my-repo utilizado para la conversion: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

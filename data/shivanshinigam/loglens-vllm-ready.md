@@ -42,7 +42,7 @@ El entrenamiento se realizó en CPU durante 2 épocas sobre un conjunto de datos
 - Monitorización de errores en producción: el modelo puede integrarse en un servicio de observabilidad para detectar patrones de error en archivos de log grandes, gracias a su memoria constante.
 - Asistente en tiempo real en una plataforma de GPU: desplegado con vLLM en RunPod, el modelo expone un endpoint HTTP/1 compatible con OpenAI para responder consultas desde una aplicación web.
 - Adaptación a formatos de log específicos: con train_mini_deepseek.py se puede reentrenar el modelo sobre los logs de una organización, ajustando los pesos a la terminología y patrones propios.
-- Demostración interactiva en HuggingFace Space: la demo permite evaluar el comportamiento del modelo y del pipeline RAG sin configurar ningún entorno local.
+- Demostración interactiva en Hugging Face Space: la demo permite evaluar el comportamiento del modelo y del pipeline RAG sin configurar ningún entorno local.
 - Investigación académica sobre eficiencia de atención deslizante: el repo incluye el módulo log_attention.py, útil para estudiar el impacto de ventanas de atención en modelos pequeños.
 
 ## Benchmarks y rendimiento
@@ -68,14 +68,14 @@ No se han encontrado modelos comparables en la misma categoría (prueba de conce
 - Solo soporta inglés; no tiene capacidades multilingües.
 - No soporta tool calling, function calling ni agentes autónomos.
 - No hay benchmarks públicos que respalden la afirmación de ser "10× más barato que GPT-4".
-- El pipeline de RAG depende de servicios externos (ChromaDB) y de scripts del repositorio GitHub, que no están incluidos en el modelo de HuggingFace.
+- El pipeline de RAG depende de servicios externos (ChromaDB) y de scripts del repositorio GitHub, que no están incluidos en el modelo de Hugging Face.
 - La licencia MIT permite uso comercial, pero el estado de PoC y la falta de validación en producción son barreras significativas para su adopción real.
 - No hay información sobre sesgos específicos, aunque al estar entrenado en logs sintéticos es probable que reproduzca patrones artificiales.
 
 ## Enlaces
 
-- Repo HuggingFace: https://huggingface.co/ShivanshiNigam/loglens-vllm-ready
+- Repo Hugging Face: https://huggingface.co/ShivanshiNigam/loglens-vllm-ready
 - Repo GitHub: https://github.com/shivanshinigam/DeepseekLogLens
-- Demo HuggingFace Space: https://huggingface.co/spaces/ShivanshiNigam/loglens-demo
+- Demo Hugging Face Space: https://huggingface.co/spaces/ShivanshiNigam/loglens-demo
 - Guía de despliegue en RunPod: https://github.com/shivanshinigam/DeepseekLogLens/blob/main/docs/runpod_deployment.md
 - Perfil de GitHub del autor: https://github.com/shivanshinigam

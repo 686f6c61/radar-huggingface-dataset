@@ -4,7 +4,7 @@
 
 El modelo `DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF` es una cuantización GGUF de un fine-tune de la familia Qwen3.5, creado por el usuario DavidAU. Se trata de un modelo de 9 000 millones de parámetros, orientado a usos generales con énfasis en razonamiento, escritura creativa, ficción, roleplay y generación de código. El nombre refleja varias características distintivas: está "uncensored" (sin censura) y "abliterated" (se ha eliminado la negativa a responder), lo que lo hace adecuado para escenarios donde se requiere máxima libertad de generación.
 
-El modelo incorpora técnicas avanzadas de cuantización como NEO IMATRIX (que mejora la precisión en cuantizaciones de baja bit usando matrices de importancia) y MTP (Multi-Token Prediction, que permite predecir varios tokens a la vez para acelerar la inferencia). Según el pipeline declarado en HuggingFace, es un modelo multimodal (image-text-to-text), aunque no se detallan las capacidades visuales específicas. Está disponible en formato GGUF, lo que facilita su despliegue en entornos locales con llama.cpp, Ollama o LM Studio.
+El modelo incorpora técnicas avanzadas de cuantización como NEO IMATRIX (que mejora la precisión en cuantizaciones de baja bit usando matrices de importancia) y MTP (Multi-Token Prediction, que permite predecir varios tokens a la vez para acelerar la inferencia). Según el pipeline declarado en Hugging Face, es un modelo multimodal (image-text-to-text), aunque no se detallan las capacidades visuales específicas. Está disponible en formato GGUF, lo que facilita su despliegue en entornos locales con llama.cpp, Ollama o LM Studio.
 
 La relevancia actual de este modelo radica en su combinación de tamaño moderado (9B), contexto largo (256k según fuentes secundarias) y ausencia de restricciones de contenido, lo que lo convierte en una opción atractiva para desarrolladores que buscan un modelo versátil para aplicaciones de nicho como narrativa interactiva, asistentes sin filtros o experimentación con razonamiento avanzado.
 
@@ -17,7 +17,7 @@ La relevancia actual de este modelo radica en su combinación de tamaño moderad
 | Parametros activos | No aplicable (no es MoE) |
 | Longitud de contexto | 256k (segun fuentes secundarias, no confirmado oficialmente) |
 | Tipos de cuantizacion | GGUF (variantes no especificadas) |
-| Idiomas soportados | en, zh (segun tags de HuggingFace) |
+| Idiomas soportados | en, zh (segun tags de Hugging Face) |
 | Licencia | apache-2.0 (segun tags; el campo oficial indica "no disponible") |
 | Formato de pesos | GGUF |
 
@@ -78,13 +78,13 @@ La comparativa se basa en caracteristicas generales, ya que no se dispone de dat
 - Sesgos no mitigados: al no haber pasado por procesos de alineacion estandar, los sesgos del dataset base pueden estar amplificados.
 - Documentacion insuficiente: no se han publicado detalles sobre el entrenamiento, el dataset ni las capacidades multimodales reales.
 - Contexto largo no verificado: la cifra de 256k proviene de fuentes secundarias y no esta confirmada por el autor.
-- Licencia: aunque el tag indica Apache 2.0, el campo oficial de licencia en HuggingFace aparece como "no disponible"; se recomienda verificar antes de uso comercial.
+- Licencia: aunque el tag indica Apache 2.0, el campo oficial de licencia en Hugging Face aparece como "no disponible"; se recomienda verificar antes de uso comercial.
 - Soporte de tool calling y agentes: no confirmado; no se menciona en los tags ni en la documentacion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
-- Discusion en HuggingFace: https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF/discussions/5
+- Hugging Face: https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
+- Discusion en Hugging Face: https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF/discussions/5
 - Ficha en Interfaze: https://interfaze.ai/models/davidauqwen35-9b-the-defiant-fable-uncensored-heretic-neo-imatrix-max-mtp-gguf
 - Espejo en AtomGit: https://ai.atomgit.com/hf_mirrors/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
 - Articulo en OkTechMasters: https://oktechmasters.org/ai_models/qwen3-5-9b-the-defiant-fable-uncensored-heretic-neo-imatrix-max-mtp-gguf/

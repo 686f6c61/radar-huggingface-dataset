@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`roadrage10/flaird-modernbert-large-attention-single-task` es un modelo de clasificación de texto publicado en HuggingFace por el usuario roadrage10. Se trata de un fine-tuning de un modelo de la familia ModernBERT en su variante *large*, según se deduce del propio nombre del repositorio y de la etiqueta `flaird`, si bien la model card no identifica explícitamente el modelo base (el enlace correspondiente aparece vacío) ni el conjunto de datos utilizado. El repositorio tiene 402.407.681 parámetros reales en safetensors, 4,8 GB de tamaño y solo 4 descargas y 0 *likes* en el momento de redactar esta ficha.
+`roadrage10/flaird-modernbert-large-attention-single-task` es un modelo de clasificación de texto publicado en Hugging Face por el usuario roadrage10. Se trata de un fine-tuning de un modelo de la familia ModernBERT en su variante *large*, según se deduce del propio nombre del repositorio y de la etiqueta `flaird`, si bien la model card no identifica explícitamente el modelo base (el enlace correspondiente aparece vacío) ni el conjunto de datos utilizado. El repositorio tiene 402.407.681 parámetros reales en safetensors, 4,8 GB de tamaño y solo 4 descargas y 0 *likes* en el momento de redactar esta ficha.
 
-El modelo resuelve una tarea de clasificación de texto supervisada (pipeline `text-classification`), con salida probabilística calibrada y orientada a *ranking*. No es un modelo generativo: no produce texto libre ni soporta *tool calling*. Su interés actual es limitado y fundamentalmente experimental, porque la model card está generada automáticamente, no documenta la tarea concreta, el espacio de etiquetas, los idiomas ni la licencia, y no incluye resultados en el `model-index` de HuggingFace.
+El modelo resuelve una tarea de clasificación de texto supervisada (pipeline `text-classification`), con salida probabilística calibrada y orientada a *ranking*. No es un modelo generativo: no produce texto libre ni soporta *tool calling*. Su interés actual es limitado y fundamentalmente experimental, porque la model card está generada automáticamente, no documenta la tarea concreta, el espacio de etiquetas, los idiomas ni la licencia, y no incluye resultados en el `model-index` de Hugging Face.
 
 La relevancia técnica, si se confirma su linaje ModernBERT-*large*, radica en la combinación de tamaño moderado (≈402 M de parámetros, ejecutable en CPU y en GPU de consumo) con una ventana de contexto potencialmente larga (8.192 tokens en la arquitectura ModernBERT original) y atención alterna global/local. El autor declara métricas de evaluación muy altas (ROC-AUC 0,999; F1 0,993; *mean* 0,994) sobre un conjunto no especificado, por lo que esos valores no son verificables ni comparables con benchmarks públicos.
 
@@ -25,14 +25,14 @@ La relevancia técnica, si se confirma su linaje ModernBERT-*large*, radica en l
 | Código personalizado | Sí (`custom_code`: requiere `trust_remote_code=True`) |
 | Tamaño del repositorio | 4,8 GB |
 | Descargas / *likes* | 4 / 0 |
-| Fecha de creación y última actualización | 2026-10-13 (fecha declarada en HuggingFace; incoherente con la fecha actual) |
+| Fecha de creación y última actualización | 2026-10-13 (fecha declarada en Hugging Face; incoherente con la fecha actual) |
 | Versiones de frameworks | Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.0.0, Tokenizers 0.23.1 |
 
 ## Arquitectura y entrenamiento
 
 La model card no describe la arquitectura. Lo único verificable es el recuento de parámetros (402.407.681), coherente con un encoder transformer de la clase ModernBERT-*large* más una cabeza de clasificación, y la etiqueta `custom_code`, que indica que el repositorio incluye implementación propia y que su carga requiere confiar en código remoto. Si se confirma el linaje ModernBERT, la arquitectura combinaría capas de atención local con capas de atención global distribuidas de forma alterna, posición relativa RoPE, activación GeGLU y *unpadding* para eliminar tokens de relleno en el cálculo, lo que reduce el coste de *batching* en secuencias largas. Nada de esto aparece confirmado en la documentación publicada.
 
-El entrenamiento se realizó con el `Trainer` de HuggingFace a partir de un modelo base y un conjunto de datos no identificados: 1 época, *learning rate* 2e-05, *batch size* de entrenamiento y evaluación 128, optimizador AdamW *fused* (betas 0,9/0,999, epsilon 1e-08), planificador coseno con *warmup* del 6 % y semilla 42. La tabla de progreso registra 39.672 pasos en una única época, con evaluaciones cada 3.968 pasos (10 evaluaciones). Si el *batch* efectivo coincide con el *batch* declarado de 128, el volumen de datos sería del orden de 5 millones de ejemplos, aunque este cálculo es una inferencia y no un dato aportado por el autor. No hay información sobre composición del dataset, preprocesado, uso de RLHF/DPO (no aplicable en un encoder de clasificación) ni sobre la función de pérdida exacta empleada.
+El entrenamiento se realizó con el `Trainer` de Hugging Face a partir de un modelo base y un conjunto de datos no identificados: 1 época, *learning rate* 2e-05, *batch size* de entrenamiento y evaluación 128, optimizador AdamW *fused* (betas 0,9/0,999, epsilon 1e-08), planificador coseno con *warmup* del 6 % y semilla 42. La tabla de progreso registra 39.672 pasos en una única época, con evaluaciones cada 3.968 pasos (10 evaluaciones). Si el *batch* efectivo coincide con el *batch* declarado de 128, el volumen de datos sería del orden de 5 millones de ejemplos, aunque este cálculo es una inferencia y no un dato aportado por el autor. No hay información sobre composición del dataset, preprocesado, uso de RLHF/DPO (no aplicable en un encoder de clasificación) ni sobre la función de pérdida exacta empleada.
 
 ## Capacidades
 
@@ -106,10 +106,10 @@ Los datos de las alternativas corresponden a las fichas públicas de esos modelo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `roadrage10/flaird-modernbert-large-attention-single-task` | 402 M | No disponible (8.192 en la base ModernBERT) | No disponible | HuggingFace, 4 descargas, requiere `trust_remote_code` |
-| ModernBERT-large | 395 M | 8.192 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| DeBERTa-v3-large | 435 M | 512 tokens (extensible) | MIT | HuggingFace, ampliamente utilizado |
-| RoBERTa-large | 355 M | 512 tokens | MIT | HuggingFace, ampliamente utilizado |
+| `roadrage10/flaird-modernbert-large-attention-single-task` | 402 M | No disponible (8.192 en la base ModernBERT) | No disponible | Hugging Face, 4 descargas, requiere `trust_remote_code` |
+| ModernBERT-large | 395 M | 8.192 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| DeBERTa-v3-large | 435 M | 512 tokens (extensible) | MIT | Hugging Face, ampliamente utilizado |
+| RoBERTa-large | 355 M | 512 tokens | MIT | Hugging Face, ampliamente utilizado |
 
 La comparación de rendimiento con estas alternativas no es posible con la información disponible: no hay resultados GLUE, SuperGLUE ni de ninguna otra suite pública, y las métricas declaradas por el autor corresponden a un dataset no identificado.
 
@@ -124,14 +124,14 @@ La comparación de rendimiento con estas alternativas no es posible con la infor
 - Idiomas soportados no declarados: no puede asumirse un comportamiento correcto en castellano ni en ningún otro idioma sin evaluación propia.
 - Sesgos conocidos: no documentados. Un modelo de clasificación entrenado sobre un dataset desconocido puede reproducir sesgos de ese corpus sin que exista ninguna advertencia al respecto.
 - Riesgo de alucinación no aplicable en el sentido generativo (no produce texto libre), pero sí existe riesgo de falsos positivos y falsos negativos con consecuencias reales en decisiones automatizadas.
-- Fechas incoherentes: HuggingFace registra creación y actualización el 2026-10-13, posterior a la fecha de publicación de frameworks como Transformers 5.16.1 y PyTorch 2.11.0; conviene tratar los metadatos con cautela.
+- Fechas incoherentes: Hugging Face registra creación y actualización el 2026-10-13, posterior a la fecha de publicación de frameworks como Transformers 5.16.1 y PyTorch 2.11.0; conviene tratar los metadatos con cautela.
 - Señales de adopción muy bajas (4 descargas, 0 *likes*, 0 seguidores): no hay validación independiente por parte de la comunidad.
 - Sin soporte confirmado en servidores de inferencia habituales (vLLM, TGI, llama.cpp, Ollama), lo que complica el despliegue a escala.
 - No apto para generación, resumen, traducción, razonamiento multi-paso ni agentes; cualquier uso de ese tipo requeriría otro modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roadrage10/flaird-modernbert-large-attention-single-task
+- Modelo en Hugging Face: https://huggingface.co/roadrage10/flaird-modernbert-large-attention-single-task
 - Modelo base: no disponible (el enlace de la model card aparece vacío)
 - Paper, blog o repositorio asociados: no disponibles
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web; los resultados devueltos no guardan relación con este modelo y se han descartado.

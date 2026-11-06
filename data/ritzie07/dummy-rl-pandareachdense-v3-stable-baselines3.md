@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`ritzie07/dummy-rl-PandaReachDense-v3-stable-baselines3` es un artefacto de aprendizaje por refuerzo (RL) publicado en HuggingFace por el usuario `ritzie07`. Segun sus etiquetas, se trata de un agente entrenado con la libreria stable-baselines3 sobre el entorno `PandaReachDense-v3`, una tarea de control continuo de un brazo robotico Franka Emika Panda en la que el objetivo es que el efector final alcance una posicion diana, con una funcion de recompensa densa basada en la distancia al objetivo. La ficha declara la tarea `reinforcement-learning` y un unico resultado de `mean_reward` de `0 +/- 0.0`, marcado como no verificado.
+`ritzie07/dummy-rl-PandaReachDense-v3-stable-baselines3` es un artefacto de aprendizaje por refuerzo (RL) publicado en Hugging Face por el usuario `ritzie07`. Segun sus etiquetas, se trata de un agente entrenado con la libreria stable-baselines3 sobre el entorno `PandaReachDense-v3`, una tarea de control continuo de un brazo robotico Franka Emika Panda en la que el objetivo es que el efector final alcance una posicion diana, con una funcion de recompensa densa basada en la distancia al objetivo. La ficha declara la tarea `reinforcement-learning` y un unico resultado de `mean_reward` de `0 +/- 0.0`, marcado como no verificado.
 
 El propio README del repositorio se limita a la frase "Dummy README to pass course", lo que indica que el modelo se subio como entrega academica y no como un artefacto destinado a produccion. No se especifica el algoritmo de RL empleado (PPO, A2C, SAC, TD3 u otro), ni el numero de parametros de la politica, ni la licencia, ni los idiomas (dato irrelevante en un agente de control). El repositorio acumula 0 descargas y 0 likes, y no incluye documentacion tecnica adicional, hiperparametros ni comandos de evaluacion reproducibles.
 
-Su relevancia actual es, por tanto, limitada y de caracter instrumental: sirve como ejemplo minimo de integracion entre stable-baselines3, el formato de model card con `model-index` y el Hub de HuggingFace, y como referencia del entorno `PandaReachDense-v3` dentro de la familia de entornos de robotica de Gymnasium. No debe confundirse con un modelo de lenguaje ni con un agente con rendimiento utilizable: la recompensa declarada de 0.0 sugiere que el agente no fue entrenado hasta convergencia o que la evaluacion no se ejecuto correctamente.
+Su relevancia actual es, por tanto, limitada y de caracter instrumental: sirve como ejemplo minimo de integracion entre stable-baselines3, el formato de model card con `model-index` y el Hub de Hugging Face, y como referencia del entorno `PandaReachDense-v3` dentro de la familia de entornos de robotica de Gymnasium. No debe confundirse con un modelo de lenguaje ni con un agente con rendimiento utilizable: la recompensa declarada de 0.0 sugiere que el agente no fue entrenado hasta convergencia o que la evaluacion no se ejecuto correctamente.
 
 ## Especificaciones tecnicas
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 
 | Modelo | Entorno | Algoritmo | Metrica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ritzie07/dummy-rl-PandaReachDense-v3-stable-baselines3` | PandaReachDense-v3 | No disponible | mean_reward 0 +/- 0.0 (no verificado) | No disponible | Publico en HuggingFace, 0 descargas, 0 likes |
-| `Aathi07/a2c-PandaReachDense-v3` | PandaReachDense-v3 | A2C | No disponible en la informacion proporcionada | No disponible | Publico en HuggingFace |
-| `Exploration/a2c-PandaReachDense-v3` | PandaReachDense-v3 | A2C | No disponible en la informacion proporcionada | No disponible | Publico en HuggingFace |
+| `ritzie07/dummy-rl-PandaReachDense-v3-stable-baselines3` | PandaReachDense-v3 | No disponible | mean_reward 0 +/- 0.0 (no verificado) | No disponible | Publico en Hugging Face, 0 descargas, 0 likes |
+| `Aathi07/a2c-PandaReachDense-v3` | PandaReachDense-v3 | A2C | No disponible en la informacion proporcionada | No disponible | Publico en Hugging Face |
+| `Exploration/a2c-PandaReachDense-v3` | PandaReachDense-v3 | A2C | No disponible en la informacion proporcionada | No disponible | Publico en Hugging Face |
 
 La comparacion se limita al entorno y a la libreria, porque los tres repositorios comparten el mismo marco (`stable-baselines3` + `PandaReachDense-v3`) pero ninguno publica resultados verificables en la informacion disponible. No se dispone de datos de parametros, contexto ni rendimiento que permitan una comparacion cuantitativa.
 
@@ -92,7 +92,7 @@ La comparacion se limita al entorno y a la libreria, porque los tres repositorio
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/ritzie07/dummy-rl-PandaReachDense-v3-stable-baselines3
+- Repositorio del modelo en Hugging Face: https://huggingface.co/ritzie07/dummy-rl-PandaReachDense-v3-stable-baselines3
 - Modelo comparable `Aathi07/a2c-PandaReachDense-v3` (README): https://huggingface.co/Aathi07/a2c-PandaReachDense-v3/blob/main/README.md
 - Modelo comparable `Exploration/a2c-PandaReachDense-v3` (README): https://huggingface.co/Exploration/a2c-PandaReachDense-v3/blob/main/README.md
 - Documentacion de stable-baselines3: https://stable-baselines3.readthedocs.io/

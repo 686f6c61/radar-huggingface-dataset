@@ -84,7 +84,7 @@ La comparativa se limita a variantes del mismo modelo base; no se dispone de dat
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Wondernutts/G4-Midnight-Macaw-26B-A4B-int4-ov
+- Repositorio Hugging Face del modelo: https://huggingface.co/Wondernutts/G4-Midnight-Macaw-26B-A4B-int4-ov
 - Modelo base (Vortex5): https://huggingface.co/Vortex5/G4-Midnight-Macaw-26B-A4B
 - Modelo componente: https://huggingface.co/electroglyph/gemma4-26b-fiction-bf16
 - Modelo componente: https://huggingface.co/ReadyArt/Serenity-26B-A4B

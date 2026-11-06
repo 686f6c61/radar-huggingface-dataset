@@ -91,8 +91,8 @@ No se dispone de datos publicados de otros clasificadores de decisión específi
 
 | Modelo | Parametros | Tipo | Contexto | Act real | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Miya-0.2 | 139M | Encoder de decisión (fine-tune con cabezas nuevas) | no disponible | 94,5% | Apache-2.0 | HuggingFace |
-| convaiinnovations/laya-multilingual | 312M | Encoder multilingüe (modelo base) | no disponible | 11,0% (zero-shot) | no disponible | HuggingFace |
+| Miya-0.2 | 139M | Encoder de decisión (fine-tune con cabezas nuevas) | no disponible | 94,5% | Apache-2.0 | Hugging Face |
+| convaiinnovations/laya-multilingual | 312M | Encoder multilingüe (modelo base) | no disponible | 11,0% (zero-shot) | no disponible | Hugging Face |
 | mmBERT | no disponible | Encoder transformer de 22 capas (arquitectura de referencia) | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -110,7 +110,7 @@ No se dispone de datos publicados de otros clasificadores de decisión específi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/snowman6/Miya-0.2
+- Modelo en Hugging Face: https://huggingface.co/snowman6/Miya-0.2
 - Model card en inglés: https://huggingface.co/snowman6/Miya-0.2/blob/main/README.en.md
 - Repositorio GitHub (bot, servidor y código de entrenamiento): https://github.com/snowman6-git/Miya
 - Modelo base, convaiinnovations/laya-multilingual: https://huggingface.co/convaiinnovations/laya-multilingual

@@ -4,7 +4,7 @@
 
 Omega-Arsenal-12B-GGUF es la versión cuantizada en formato GGUF del modelo Omega-Arsenal-12B, desarrollado por ReadyArt. Se trata de un modelo de generación de texto orientado a roleplay, conversación y contenido adulto sin alinear (unaligned), con etiquetas que indican soporte explícito para ERP, terror, violencia y contenido para mayores de edad. El modelo base tiene 11.907.350.576 parámetros (aproximadamente 12B).
 
-Su relevancia radica en que ofrece, bajo licencia Apache 2.0, un modelo sin filtros de alineación para casos de uso creativos y de ficción adulta que los modelos comerciales rechazan por políticas de contenido. El repositorio en HuggingFace acumula más de 15.000 descargas. La información técnica publicada en la model card es escasa: no se detallan arquitectura, longitud de contexto, cuantizaciones disponibles ni datos de entrenamiento más allá de lo indicado por las etiquetas.
+Su relevancia radica en que ofrece, bajo licencia Apache 2.0, un modelo sin filtros de alineación para casos de uso creativos y de ficción adulta que los modelos comerciales rechazan por políticas de contenido. El repositorio en Hugging Face acumula más de 15.000 descargas. La información técnica publicada en la model card es escasa: no se detallan arquitectura, longitud de contexto, cuantizaciones disponibles ni datos de entrenamiento más allá de lo indicado por las etiquetas.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ Omega-Arsenal se diferencia por su enfoque explícito en contenido adulto sin al
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ReadyArt/Omega-Arsenal-12B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/ReadyArt/Omega-Arsenal-12B-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Omega-Arsenal-12B
 - Perfil del autor: https://huggingface.co/ReadyArt
 - Paper, blog o demo: no disponibles en la informacion proporcionada.

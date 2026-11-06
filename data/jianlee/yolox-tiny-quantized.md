@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci√
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jianlee/yolox-tiny-quantized
+- Hugging Face: https://huggingface.co/jianlee/yolox-tiny-quantized
 - Repositorio del autor (c√≥digo, benchmarks y write-up): https://github.com/leejianrong/real-time-object-detection
 - Documento de resultados del autor: `docs/RESULTS.md` en el repositorio anterior
 - YOLOX oficial (Megvii): https://github.com/Megvii-BaseDetection/YOLOX

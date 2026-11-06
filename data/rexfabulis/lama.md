@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`RexFabulis/lama` es un modelo publicado en HuggingFace por el usuario RexFabulis bajo licencia Llama 3. La model card asociada no contiene ninguna descripción tecnica: unicamente declara la licencia mediante metadatos YAML, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (2 de noviembre de 2026), lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
+`RexFabulis/lama` es un modelo publicado en Hugging Face por el usuario RexFabulis bajo licencia Llama 3. La model card asociada no contiene ninguna descripción tecnica: unicamente declara la licencia mediante metadatos YAML, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (2 de noviembre de 2026), lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
 
 La ausencia de pipeline declarado, de idiomas soportados y de cualquier documentacion adicional impide determinar con rigor que problema resuelve el modelo ni para que tareas esta disenado. El identificador "lama" no coincide con ninguna familia de modelos conocida y ampliamente documentada, por lo que no debe confundirse con arquitecturas establecidas sin evidencia adicional.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa fiable porque se desconoce el tamano, la arquitectura y el rendimiento del modelo. La unica referencia objetiva es la licencia Llama 3, compartida con otras variantes publicadas en HuggingFace, pero sin datos de parametros ni de evaluacion no procede emparejarlo con alternativas concretas.
+No es posible establecer una comparativa fiable porque se desconoce el tamano, la arquitectura y el rendimiento del modelo. La unica referencia objetiva es la licencia Llama 3, compartida con otras variantes publicadas en Hugging Face, pero sin datos de parametros ni de evaluacion no procede emparejarlo con alternativas concretas.
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion |
 |---|---|---|---|---|
@@ -79,5 +79,5 @@ No es posible establecer una comparativa fiable porque se desconoce el tamano, l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RexFabulis/lama
+- Repositorio en Hugging Face: https://huggingface.co/RexFabulis/lama
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

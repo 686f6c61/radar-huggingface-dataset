@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada: se trata de una publicacion de autor in
 
 El adaptador se aplica sobre Qwen2.5-1.5B-Instruct, un transformer decoder-only denso con 1,5 mil millones de parametros, atencion por query/key/value con RoPE, activacion SwiGLU y normalizacion RMSNorm. El modelo base fue preentrenado por Alibaba con un corpus de hasta 18 billones de tokens segun la documentacion oficial de la familia Qwen2.5, seguido de un proceso de alineacion con SFT y optimizacion por preferencias (DPO). El adaptador de kodetr se entrena con SFT usando TRL, segun los tags del repositorio, pero no se especifican el dataset, el rango LoRA, el alpha, la tasa de aprendizaje ni el numero de pasos.
 
-No hay informacion sobre la composicion del dataset de ajuste, el numero de tokens de entrenamiento, la estrategia de enmascaramiento de perdida ni el hardware utilizado. La model card mantiene la plantilla generica de HuggingFace con marcadores "[More Information Needed]" en todas las secciones, incluida la de hiperparametros de entrenamiento. La version de PEFT declarada en el repositorio es 0.21.2. No se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, modos de razonamiento extendido, etc.) mas alla de las que ya incorpora el modelo base.
+No hay informacion sobre la composicion del dataset de ajuste, el numero de tokens de entrenamiento, la estrategia de enmascaramiento de perdida ni el hardware utilizado. La model card mantiene la plantilla generica de Hugging Face con marcadores "[More Information Needed]" en todas las secciones, incluida la de hiperparametros de entrenamiento. La version de PEFT declarada en el repositorio es 0.21.2. No se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, modos de razonamiento extendido, etc.) mas alla de las que ya incorpora el modelo base.
 
 ## Capacidades
 
@@ -64,11 +64,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kodetr/SasakLLM-1.5B-Instruct-v4 | 1,5B (base) + LoRA | 32.768 | no disponible | HuggingFace (adaptador PEFT) | Sin evaluacion publicada; requiere modelo base |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 | HuggingFace, Ollama, vLLM | Modelo base oficial, con benchmarks publicados |
-| meta-llama/Llama-3.2-1B-Instruct | 1,2B | 128.000 | Llama 3.2 Community License | HuggingFace, Ollama | Contexto mayor, licencia con restricciones de uso |
-| google/gemma-2-2b-it | 2,6B | 8.192 | Gemma Terms of Use | HuggingFace, Ollama | Mayor numero de parametros, contexto menor |
-| microsoft/Phi-3.5-mini-instruct | 3,8B | 128.000 | MIT | HuggingFace, Ollama | Mayor calidad de razonamiento, mas VRAM |
+| kodetr/SasakLLM-1.5B-Instruct-v4 | 1,5B (base) + LoRA | 32.768 | no disponible | Hugging Face (adaptador PEFT) | Sin evaluacion publicada; requiere modelo base |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 | Hugging Face, Ollama, vLLM | Modelo base oficial, con benchmarks publicados |
+| meta-llama/Llama-3.2-1B-Instruct | 1,2B | 128.000 | Llama 3.2 Community License | Hugging Face, Ollama | Contexto mayor, licencia con restricciones de uso |
+| google/gemma-2-2b-it | 2,6B | 8.192 | Gemma Terms of Use | Hugging Face, Ollama | Mayor numero de parametros, contexto menor |
+| microsoft/Phi-3.5-mini-instruct | 3,8B | 128.000 | MIT | Hugging Face, Ollama | Mayor calidad de razonamiento, mas VRAM |
 
 ## Limitaciones y advertencias
 
@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/kodetr/SasakLLM-1.5B-Instruct-v4
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
+- Repositorio Hugging Face del adaptador: https://huggingface.co/kodetr/SasakLLM-1.5B-Instruct-v4
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio oficial de Qwen2.5: https://github.com/QwenLM/Qwen2.5
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Documentacion de PEFT: https://huggingface.co/docs/peft

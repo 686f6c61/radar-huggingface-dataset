@@ -88,7 +88,7 @@ No se han identificado modelos comparables externos publicados. La comparación 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thenukegun10x/RoadRunner
+- Hugging Face: https://huggingface.co/thenukegun10x/RoadRunner
 - Perfil de GitHub del autor: https://github.com/Thenukegun10x
 - Repositorio de código: mencionado en la model card como "repo" (no se proporciona URL en la información disponible)
 - Paper: no disponible

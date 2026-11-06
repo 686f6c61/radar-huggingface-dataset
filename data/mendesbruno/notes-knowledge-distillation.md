@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mendesbruno/notes-knowledge-distillation` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre destilación de conocimiento (*knowledge distillation*). El autor, identificado en HuggingFace como `mendesbruno`, publica un artefacto textual cuyo contenido principal es el archivo `analysis.md`, donde se organizan la motivación, el trabajo relacionado, una hipótesis falsable y un plan de evaluación. La propia model card aclara de forma explícita que no se trata de un artículo completado ni de una publicación de modelos entrenados.
+`mendesbruno/notes-knowledge-distillation` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre destilación de conocimiento (*knowledge distillation*). El autor, identificado en Hugging Face como `mendesbruno`, publica un artefacto textual cuyo contenido principal es el archivo `analysis.md`, donde se organizan la motivación, el trabajo relacionado, una hipótesis falsable y un plan de evaluación. La propia model card aclara de forma explícita que no se trata de un artículo completado ni de una publicación de modelos entrenados.
 
 El repositorio está etiquetado con `research-notes` y `knowledge-distillation`, y declara licencia MIT. No incluye pipeline de inferencia, idiomas soportados ni resultados experimentales. El dato de parámetros que aparece en los safetensors (33.088) corresponde a un artefacto mínimo, no a un modelo funcional, y el tamaño del repositorio es de 0,0 GB. Cualquier uso como modelo generativo, de razonamiento o de codificación no es viable con este contenido.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mendesbruno/notes-knowledge-distillation | 33.088 (artefacto mínimo, no modelo entrenado) | no disponible | sin benchmarks publicados | MIT | repositorio de notas en HuggingFace |
+| mendesbruno/notes-knowledge-distillation | 33.088 (artefacto mínimo, no modelo entrenado) | no disponible | sin benchmarks publicados | MIT | repositorio de notas en Hugging Face |
 | Modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se conocen modelos comparables porque este repositorio no es un modelo entrenado. La categoría aplicable sería "notas de investigación sobre destilación de conocimiento", para la que no se dispone de alternativas comparables en la información proporcionada.
@@ -80,6 +80,6 @@ No se conocen modelos comparables porque este repositorio no es un modelo entren
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mendesbruno/notes-knowledge-distillation
+- Hugging Face: https://huggingface.co/mendesbruno/notes-knowledge-distillation
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a contenidos periodísticos sin relación con este repositorio.
-- Archivo principal de la nota: `analysis.md` (dentro del propio repositorio de HuggingFace).
+- Archivo principal de la nota: `analysis.md` (dentro del propio repositorio de Hugging Face).

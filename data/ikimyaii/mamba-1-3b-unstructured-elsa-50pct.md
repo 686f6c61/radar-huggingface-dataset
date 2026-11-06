@@ -67,9 +67,9 @@ Perplejidad calculada con la evaluación propia de ELSA (sus conjuntos de test d
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mamba-1.3B-unstructured-ELSA-50pct | 1.334.740.992 (50 % de dispersion no estructurada en capas lineales) | no disponible | PPL 14,86 (WikiText-2) / 17,10 (C4) | no disponible | HuggingFace, 0 descargas, 0 likes |
-| fla-hub/mamba-1.3B-100B (modelo base, denso) | ~1,3B | no disponible | no disponible en la informacion proporcionada (referencia frente a la que se mide la degradacion) | no disponible | HuggingFace (fla-hub) |
-| Modelos EHWS del mismo autor (Mamba podados) | ~1,3B (misma base) | no disponible | no disponible en la informacion proporcionada | no disponible | HuggingFace (misma cuenta) |
+| Mamba-1.3B-unstructured-ELSA-50pct | 1.334.740.992 (50 % de dispersion no estructurada en capas lineales) | no disponible | PPL 14,86 (WikiText-2) / 17,10 (C4) | no disponible | Hugging Face, 0 descargas, 0 likes |
+| fla-hub/mamba-1.3B-100B (modelo base, denso) | ~1,3B | no disponible | no disponible en la informacion proporcionada (referencia frente a la que se mide la degradacion) | no disponible | Hugging Face (fla-hub) |
+| Modelos EHWS del mismo autor (Mamba podados) | ~1,3B (misma base) | no disponible | no disponible en la informacion proporcionada | no disponible | Hugging Face (misma cuenta) |
 
 No se dispone de datos de otros modelos comparables de poda de Mamba en la información proporcionada; las alternativas más directas son el modelo denso original y el resto de variantes EHWS del mismo autor, pero sus métricas no se detallan.
 
@@ -87,6 +87,6 @@ No se dispone de datos de otros modelos comparables de poda de Mamba en la infor
 
 ## Enlaces
 
-- [Modelo en HuggingFace: ikimyaii/Mamba-1.3B-unstructured-ELSA-50pct](https://huggingface.co/ikimyaii/Mamba-1.3B-unstructured-ELSA-50pct)
+- [Modelo en Hugging Face: ikimyaii/Mamba-1.3B-unstructured-ELSA-50pct](https://huggingface.co/ikimyaii/Mamba-1.3B-unstructured-ELSA-50pct)
 - [Modelo base: fla-hub/mamba-1.3B-100B](https://huggingface.co/fla-hub/mamba-1.3B-100B)
 - [Paper de ELSA (arXiv:2510.01650)](https://arxiv.org/abs/2510.01650)

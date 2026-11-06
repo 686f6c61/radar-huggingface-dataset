@@ -25,7 +25,7 @@ No se dispone de informacion publica sobre la arquitectura, los datos de entrena
 
 No se ha publicado informacion sobre la arquitectura del modelo base APUS-Reflex-4B en los materiales disponibles. El repositorio analizado es una conversion a GGUF de dicho modelo, no un entrenamiento propio: el autor se limita a aplicar cuantizacion estatica sobre los pesos originales. Por tanto, cualquier detalle sobre tipo de red (transformer, MoE, SSM o hibrida), numero de tokens de entrenamiento, composicion del dataset o tecnicas de alineacion (RLHF, DPO) corresponde al modelo base y no esta documentado en esta ficha.
 
-La unica innovacion tecnica verificable es la propia cadena de cuantizacion: se ofrecen 12 variantes de precision, desde IQ4_XS y Q2_K (las mas agresivas en compresion) hasta Q8_0 y x-f16 (las mas fieles al modelo original). Los metadatos del autor indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que la conversion se hizo desde pesos en formato HuggingFace.
+La unica innovacion tecnica verificable es la propia cadena de cuantizacion: se ofrecen 12 variantes de precision, desde IQ4_XS y Q2_K (las mas agresivas en compresion) hasta Q8_0 y x-f16 (las mas fieles al modelo original). Los metadatos del autor indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que la conversion se hizo desde pesos en formato Hugging Face.
 
 ## Capacidades
 

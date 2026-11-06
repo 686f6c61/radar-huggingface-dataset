@@ -92,7 +92,7 @@ La comparación con Whisper-tiny-ExecuTorch muestra que este modelo ofrece mayor
 
 ## Enlaces
 
-- [Repositorio HuggingFace: mlboydaisuke/Whisper-small-ExecuTorch](https://huggingface.co/mlboydaisuke/Whisper-small-ExecuTorch)
+- [Repositorio Hugging Face: mlboydaisuke/Whisper-small-ExecuTorch](https://huggingface.co/mlboydaisuke/Whisper-small-ExecuTorch)
 - [Modelo base: openai/whisper-small](https://huggingface.co/openai/whisper-small)
 - [Repositorio executorch-models (scripts de conversión)](https://github.com/john-rocky/executorch-models)
 - [Repositorio de ExecuTorch (PyTorch)](https://github.com/pytorch/executorch)

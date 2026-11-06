@@ -94,7 +94,7 @@ La comparación con alternativas de la misma categoría solo es posible en térm
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kujira/Underdog-Saluki-27B-1.0-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Kujira/Underdog-Saluki-27B-1.0-MTP-GGUF
 - Modelo base (Saluki): https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantización GGUF de Qwen3.8-27B por Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

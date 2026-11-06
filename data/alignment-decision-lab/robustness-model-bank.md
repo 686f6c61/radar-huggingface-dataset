@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| robustness-model-bank (gpt2Medium) | ~355 M por checkpoint; 23 checkpoints | 1024 tokens | KL-DRO sobre FreeLaw, PubMed Central y ArXiv | MIT | HuggingFace, 265,1 GB, 6 descargas |
-| openai-community/gpt2-medium | ~355 M | 1024 tokens | Preentrenamiento sobre WebText | MIT modificada | HuggingFace, ampliamente usado |
-| openai-community/gpt2-large | ~774 M | 1024 tokens | Preentrenamiento sobre WebText | MIT modificada | HuggingFace |
+| robustness-model-bank (gpt2Medium) | ~355 M por checkpoint; 23 checkpoints | 1024 tokens | KL-DRO sobre FreeLaw, PubMed Central y ArXiv | MIT | Hugging Face, 265,1 GB, 6 descargas |
+| openai-community/gpt2-medium | ~355 M | 1024 tokens | Preentrenamiento sobre WebText | MIT modificada | Hugging Face, ampliamente usado |
+| openai-community/gpt2-large | ~774 M | 1024 tokens | Preentrenamiento sobre WebText | MIT modificada | Hugging Face |
 | Modelo de dominio con ajuste supervisado estandar | ~355 M | 1024 tokens | Ajuste no robusto sobre un unico dominio | Depende del autor | No disponible en este proyecto |
 
 La comparación de rendimiento entre estas alternativas no está disponible: el autor no publica métricas. La diferencia funcional del banco es la variante KL-DRO y la rejilla de lambda, no el tamaño ni la arquitectura.
@@ -87,14 +87,14 @@ La comparación de rendimiento entre estas alternativas no está disponible: el 
 - Idiomas: no declarados. El modelo base GPT-2 está entrenado predominantemente en inglés, y los tres dominios del banco son corpus en inglés.
 - Trazabilidad de datos: 4 de los 22 componentes de The Pile no tienen fuente confirmada (Books3, OpenSubtitles, PhilPapers, NIH ExPorter) y algunas fuentes de nivel 2 son aproximaciones, no subconjuntos exactos.
 - Licencia MIT, que en principio permite uso comercial, pero el usuario debe verificar las condiciones de los corpus de origen (The Pile y sus componentes) antes de un despliegue comercial.
-- Adopción mínima: 6 descargas y 0 likes, sin validación externa ni benchmarks publicados; no hay pipeline declarado en HuggingFace.
+- Adopción mínima: 6 descargas y 0 likes, sin validación externa ni benchmarks publicados; no hay pipeline declarado en Hugging Face.
 - El repositorio pesa 265,1 GB, lo que hace inviable una clonación completa en muchos entornos; hay que descargar subcarpetas concretas.
 - No se publican pesos GGUF ni documentación de cuantización, pese a las etiquetas `tflite` y `onnx`.
 - Las fechas de creación y actualización registradas (2026) son posteriores a la mayoría de referencias del ecosistema; conviene comprobar la vigencia de los enlaces a los corpus antes de reproducir los experimentos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alignment-decision-lab/robustness-model-bank
+- Modelo en Hugging Face: https://huggingface.co/alignment-decision-lab/robustness-model-bank
 - Modelo base: https://huggingface.co/openai-community/gpt2-medium
 - Paper de The Pile: https://arxiv.org/abs/2101.00027
 - Fuentes de nivel 1 (subconjuntos exactos): https://huggingface.co/timaeus/pile-pile-cc, https://huggingface.co/timaeus/pile-github, https://huggingface.co/timaeus/pile-pubmed_abstracts, https://huggingface.co/timaeus/pile-dm_mathematics, https://huggingface.co/timaeus/pile-freelaw, https://huggingface.co/timaeus/pile-arxiv, https://huggingface.co/timaeus/pile-hackernews, https://huggingface.co/timaeus/pile-enron_emails

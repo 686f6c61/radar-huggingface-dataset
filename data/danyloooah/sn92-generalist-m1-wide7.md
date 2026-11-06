@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sn92-generalist-m1-wide7 es un modelo de decisión obtenido por fusión en el espacio de pesos (weight-space merge) de siete fine-tunes de baselabs/mammoth-1, un modelo post-entrenado a partir de Qwen3.5-27B. Lo publica el usuario danyloooah y su propósito no es la generación libre de texto, sino la clasificación y la selección de respuestas sobre un conjunto cerrado de opciones (readout de letra en la última posición), siguiendo el formato REAX de evaluación de decisiones. El pipeline declarado en HuggingFace es text-classification y la licencia es MIT.
+sn92-generalist-m1-wide7 es un modelo de decisión obtenido por fusión en el espacio de pesos (weight-space merge) de siete fine-tunes de baselabs/mammoth-1, un modelo post-entrenado a partir de Qwen3.5-27B. Lo publica el usuario danyloooah y su propósito no es la generación libre de texto, sino la clasificación y la selección de respuestas sobre un conjunto cerrado de opciones (readout de letra en la última posición), siguiendo el formato REAX de evaluación de decisiones. El pipeline declarado en Hugging Face es text-classification y la licencia es MIT.
 
 El modelo combina los cambios aprendidos de seis fine-tunes públicos (isomsom/sn92-gen-m87b, xflud/sn92-decider-1, gurujustin/sn92-gen-m1b, edinlong83/sn92-generalist-h5, mufasa1228/sn92-gen-r2 y danyloooah/sn92-generalist-m1-v3a) más un fine-tune propio no publicado, mediante aritmética de tareas lineal tensor a tensor. El resultado conserva la arquitectura del backbone Qwen3_5Model con atención completa no causal y un cabezal de lectura de respuesta separado (readout.safetensors).
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danyloooah/sn92-generalist-m1-wide7
+- Modelo en Hugging Face: https://huggingface.co/danyloooah/sn92-generalist-m1-wide7
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Padre isomsom/sn92-gen-m87b: https://huggingface.co/isomsom/sn92-gen-m87b
 - Padre xflud/sn92-decider-1: https://huggingface.co/xflud/sn92-decider-1

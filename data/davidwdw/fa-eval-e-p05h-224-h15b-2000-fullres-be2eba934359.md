@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El artefacto alojado en HuggingFace con identificador `davidwdw/fa-eval-e-p05h-224-h15b-2000-fullres-be2eba934359` no es un modelo de aprendizaje automatico, sino un archivo versionado de resultados de evaluacion. Segun la propia model card, se trata de un "versioned fleet archive" correspondiente a la receta canonica `evaluations/2026-09-30_b1k_task00_pi05_human_224_4080`, en el nivel (tier) `E-P05H-224 closed-loop raw results h15b-2000__fullres`. El paquete contiene resultados en crudo de 20 episodios correspondientes al rango publico 301-320 con semilla 0, e incluye JSON por episodio, registros de log y videos.
+El artefacto alojado en Hugging Face con identificador `davidwdw/fa-eval-e-p05h-224-h15b-2000-fullres-be2eba934359` no es un modelo de aprendizaje automatico, sino un archivo versionado de resultados de evaluacion. Segun la propia model card, se trata de un "versioned fleet archive" correspondiente a la receta canonica `evaluations/2026-09-30_b1k_task00_pi05_human_224_4080`, en el nivel (tier) `E-P05H-224 closed-loop raw results h15b-2000__fullres`. El paquete contiene resultados en crudo de 20 episodios correspondientes al rango publico 301-320 con semilla 0, e incluye JSON por episodio, registros de log y videos.
 
 El repositorio ocupa 0,2 GB y no declara pesos, configuracion de arquitectura ni ficheros de tokenizador. No incorpora licencia, idiomas, pipeline ni etiquetas de tarea, y en el momento de la consulta acumula 0 descargas y 0 "likes". El autor es el usuario `davidwdw`, que no aporta informacion adicional sobre el modelo subyacente evaluado.
 
@@ -91,6 +91,6 @@ No se dispone de datos de rendimiento para comparar, por lo que la comparativa s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-e-p05h-224-h15b-2000-fullres-be2eba934359
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-e-p05h-224-h15b-2000-fullres-be2eba934359
 - Receta canonica citada en la model card: `evaluations/2026-09-30_b1k_task00_pi05_human_224_4080` (referencia interna, sin URL publica disponible)
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes; los resultados devueltos corresponden a sitios de videojuegos y no estan relacionados con este artefacto.

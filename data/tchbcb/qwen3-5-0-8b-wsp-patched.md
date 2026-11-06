@@ -102,7 +102,7 @@ El artículo original reporta, con su optimizador interactivo (GPT-6 Astra, pres
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tchbcb/Qwen3.5-0.8B-WSP-patched
+- Modelo en Hugging Face: https://huggingface.co/tchbcb/Qwen3.5-0.8B-WSP-patched
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Blog original de MIT CSAIL (R. Takehi et al., 2026-11-02): https://rikiyat.github.io/blog/weight-space-programming/
 - Archivos del repositorio: `wsp_weight_patch_beta0.5_k64.npz`, `results/`, `code/wsp_gpu.py`

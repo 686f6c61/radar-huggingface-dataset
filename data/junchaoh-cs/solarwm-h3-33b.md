@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SolarWM-H3-33B es un modelo de mundo (world model) orientado a la generación de vídeo de largo horizonte con control de cámara, publicado por el usuario junchaoh-cs en HuggingFace. Según las etiquetas del repositorio, el modelo se basa en la arquitectura Minimax-H3 (una familia de modelos de atención híbrida) y está diseñado para tareas de generación de vídeo condicionada por trayectorias de cámara. El repositorio incluye una referencia a un artículo arXiv (2609.02886), aunque no se ha publicado información adicional sobre el modelo en la página.
+SolarWM-H3-33B es un modelo de mundo (world model) orientado a la generación de vídeo de largo horizonte con control de cámara, publicado por el usuario junchaoh-cs en Hugging Face. Según las etiquetas del repositorio, el modelo se basa en la arquitectura Minimax-H3 (una familia de modelos de atención híbrida) y está diseñado para tareas de generación de vídeo condicionada por trayectorias de cámara. El repositorio incluye una referencia a un artículo arXiv (2609.02886), aunque no se ha publicado información adicional sobre el modelo en la página.
 
 El modelo se distribuye en formato safetensors con un tamaño de repositorio de 148,2 GB, lo que sugiere una escala considerable (el nombre indica 33B de parámetros, aunque no se confirma oficialmente). El acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones específicas antes de poder descargarlo. No se dispone de detalles sobre el pipeline, la licencia ni los idiomas soportados.
 
@@ -75,5 +75,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/junchaoh-cs/SolarWM-H3-33B
+- Repositorio Hugging Face: https://huggingface.co/junchaoh-cs/SolarWM-H3-33B
 - Referencia arXiv mencionada en las etiquetas: 2609.02886 (no se ha podido verificar el enlace directo)

@@ -66,5 +66,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [Comfy-Org/ltx-2](https://huggingface.co/Comfy-Org/ltx-2)
+- Repositorio en Hugging Face: [Comfy-Org/ltx-2](https://huggingface.co/Comfy-Org/ltx-2)
 - LoRA `ltx2-squish` (origen): [ovi054/LTX-2-19b-Squish-LoRA](https://huggingface.co/ovi054/LTX-2-19b-Squish-LoRA/)

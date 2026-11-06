@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Afr-eddy/contrastive-weights es un repositorio de investigacion publicado en HuggingFace que contiene un prototipo de modelo denominado "Mae for Contrastive", orientado a tareas de aprendizaje contrastivo. El autor lo presenta explicitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. El repositorio incluye ademas `eval.py`, `config.json` y `training_args.json`, que documentan la receta de experimento por defecto.
+Afr-eddy/contrastive-weights es un repositorio de investigacion publicado en Hugging Face que contiene un prototipo de modelo denominado "Mae for Contrastive", orientado a tareas de aprendizaje contrastivo. El autor lo presenta explicitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. El repositorio incluye ademas `eval.py`, `config.json` y `training_args.json`, que documentan la receta de experimento por defecto.
 
 La relevancia de esta ficha es acotada y conviene ser claro al respecto: no se trata de un modelo desplegable ni de un artefacto con rendimiento verificado. Su interes es como esqueleto reproducible para investigacion en representaciones contrastivas, con una configuracion declarada de escala "xlarge" (etiqueta nominal del autor, no respaldada por el numero de parametros reales), atencion lineal, fusion mediante concatenacion y MLP, activacion GELU y normalizacion InstanceNorm.
 
@@ -81,7 +81,7 @@ No se han identificado en la informacion proporcionada modelos comparables con d
 | Contexto | No disponible | No disponible | No disponible |
 | Rendimiento publicado | Ninguno declarado | No disponible | No disponible |
 | Licencia de este repo | BSD-3-Clause | No disponible | No disponible |
-| Disponibilidad | Repositorio HuggingFace con 0 descargas | No disponible | No disponible |
+| Disponibilidad | Repositorio Hugging Face con 0 descargas | No disponible | No disponible |
 
 La comparativa cuantitativa con alternativas de la misma categoria (autoencoders enmascarados o encoders contrastivos de vision) no es posible con los datos disponibles: requeriria conocer el numero de parametros, la resolucion de entrada, el volumen de datos de entrenamiento y las metricas de evaluacion del modelo aqui descrito, ninguno de los cuales esta documentado.
 
@@ -101,7 +101,7 @@ La comparativa cuantitativa con alternativas de la misma categoria (autoencoders
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Afr-eddy/contrastive-weights
+- Repositorio en Hugging Face: https://huggingface.co/Afr-eddy/contrastive-weights
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo (papers, blogs, repositorios o demos). Las entradas devueltas corresponden a portales corporativos de Microsoft y no guardan relacion con este repositorio.
 - Paper asociado: no disponible.
 - Demo o space: no disponible.

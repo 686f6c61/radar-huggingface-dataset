@@ -2,7 +2,7 @@
 
 ## Resumen
 
-New Azure es una coleccion de checkpoints de ajuste fino para robotica basada en OpenVLA-OFT, publicada por el usuario taalyelxor en HuggingFace. No se trata de un modelo de lenguaje de proposito general, sino de un ajuste especifico para simulacion sobre un brazo robotico Franka Research 3 (FR3). El autor parte del checkpoint combinado de LIBERO OFT en el paso 300000 y entrena sobre una configuracion de camara concreta: una camara cenital medida (alineada con el feed real corregido) y una camara de muneca con desplazamiento hacia fuera.
+New Azure es una coleccion de checkpoints de ajuste fino para robotica basada en OpenVLA-OFT, publicada por el usuario taalyelxor en Hugging Face. No se trata de un modelo de lenguaje de proposito general, sino de un ajuste especifico para simulacion sobre un brazo robotico Franka Research 3 (FR3). El autor parte del checkpoint combinado de LIBERO OFT en el paso 300000 y entrena sobre una configuracion de camara concreta: una camara cenital medida (alineada con el feed real corregido) y una camara de muneca con desplazamiento hacia fuera.
 
 El repositorio ocupa 126,6 GB y contiene ocho checkpoints escalonados (pasos 302500, 305000, 307500, 310000, 312500, 315000, 317500 y 320000). Cada uno incluye pesos, cabezas OFT, adaptador LoRA, configuracion de camara y entrenamiento, y un manifiesto de ejecucion. Los ficheros se verifican contra el commit inmutable de subida, lo que aporta trazabilidad.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| taalyelxor/new-azure | OpenVLA-OFT ajustado a FR3 (simulacion) | no disponible (base OpenVLA ~7B) | no disponible | no disponible | HuggingFace, 0 descargas |
+| taalyelxor/new-azure | OpenVLA-OFT ajustado a FR3 (simulacion) | no disponible (base OpenVLA ~7B) | no disponible | no disponible | Hugging Face, 0 descargas |
 | OpenVLA (base) | Vision-language-action | ~7B | no disponible aqui | licencia abierta segun su publicacion | publico |
 | OpenVLA-OFT (LIBERO) | Vision-language-action optimizado | ~7B (referencia) | no disponible aqui | segun su publicacion | publico |
 | Alternativas VLA (por ejemplo, pi0, RDT) | Politicas robot | variable | variable | variable | publico |
@@ -90,7 +90,7 @@ No se dispone de datos suficientes en la informacion proporcionada para una comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/taalyelxor/new-azure
+- Hugging Face: https://huggingface.co/taalyelxor/new-azure
 - Paper de OpenVLA (referencia de la familia base, no citado en la model card): https://arxiv.org/abs/2406.09246
 - Paper de OpenVLA-OFT (referencia de la variante, no citado en la model card): https://arxiv.org/abs/2502.19645
 - Repositorio OpenVLA (referencia de la familia base, no citado en la model card): https://github.com/openvla/openvla

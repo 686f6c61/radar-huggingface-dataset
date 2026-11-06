@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SnapKitty Parallel Swarm Computation es un proyecto de visualización interactiva que ejecuta cinco algoritmos computacionales en paralelo y los representa gráficamente en tiempo real. No se trata de un modelo de inteligencia artificial ni de un sistema de aprendizaje automático, sino de una pieza de investigación y arte algorítmico que integra máquinas virtuales, demostraciones formales y simulaciones físicas. El autor, Jessica Westerhoff, lo publica bajo el nombre de usuario Snapkitty en HuggingFace, con licencia Apache-2.0 para el código del espacio y licencias múltiples (BSL-1.1, AGPL-3.0, MPL-2.0) para el núcleo de investigación.
+SnapKitty Parallel Swarm Computation es un proyecto de visualización interactiva que ejecuta cinco algoritmos computacionales en paralelo y los representa gráficamente en tiempo real. No se trata de un modelo de inteligencia artificial ni de un sistema de aprendizaje automático, sino de una pieza de investigación y arte algorítmico que integra máquinas virtuales, demostraciones formales y simulaciones físicas. El autor, Jessica Westerhoff, lo publica bajo el nombre de usuario Snapkitty en Hugging Face, con licencia Apache-2.0 para el código del espacio y licencias múltiples (BSL-1.1, AGPL-3.0, MPL-2.0) para el núcleo de investigación.
 
 El proyecto destaca por su enfoque en la transparencia computacional: cada elemento visual se deriva de un valor computacional real, y los benchmarks se marcan explícitamente como "no disponibles" cuando no existen datos. Incluye una máquina SUBLEQ implementada en Rust/WASM, un formato de "Resonance Words" basado en campos finitos, un grafo acíclico dirigido para gobernanza (ICP-DAG), una simulación clásica de anyones de Fibonacci y demostraciones formales en Lean 4 con cero "sorry". La aplicación se despliega como un espacio Gradio con cuatro vistas: enjambres paralelos en 3D, arte algorítmico, tablas de investigación y documentación del mapeo visual.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 ## Requisitos de hardware
 
 - No requiere GPU ni hardware especializado para la inferencia, ya que no es un modelo de aprendizaje automático.
-- La aplicación se ejecuta como un espacio Gradio, por lo que puede desplegarse en un servidor estándar o en la propia infraestructura de HuggingFace Spaces.
+- La aplicación se ejecuta como un espacio Gradio, por lo que puede desplegarse en un servidor estándar o en la propia infraestructura de Hugging Face Spaces.
 - La máquina SUBLEQ está compilada a WASM, por lo que se ejecuta en el navegador del cliente sin necesidad de recursos de servidor adicionales.
 - El consumo de memoria es bajo, limitado a los estados de los cinco algoritmos y a la representación visual (probablemente menos de 1 GB en un servidor típico).
 - No se especifican requisitos de CPU, pero al ser una visualización interactiva, se recomienda un procesador moderno con soporte WebGL para la vista 3D.
@@ -78,5 +78,5 @@ No disponible. Este proyecto no pertenece a la categoría de modelos de lenguaje
 
 ## Enlaces
 
-- [HuggingFace: Snapkitty/snapkitty-algo-art](https://huggingface.co/Snapkitty/snapkitty-algo-art)
+- [Hugging Face: Snapkitty/snapkitty-algo-art](https://huggingface.co/Snapkitty/snapkitty-algo-art)
 - No se han encontrado otros enlaces relevantes en la búsqueda web (los resultados obtenidos corresponden a noticias sobre subsidios en Egipto, sin relación con el proyecto).

@@ -6,7 +6,7 @@ SocialRL es un modelo de lenguaje pequeno de 4.000 millones de parametros desarr
 
 El modelo se entrena en seis dominios de interaccion social: Deal-or-No-Deal, CaSiNo, Craigslist, Job Interview, Calendar y Marketplace. Cada dominio se entrena dentro del mismo dominio con el mismo recetario, y cada politica resultante se evalua en los seis dominios para medir la generalizacion. Los resultados indican que las politicas de 4B entrenadas con SocialRL se acercan y, en algunos escenarios, superan el rendimiento de modelos GPT mucho mas grandes, mientras aprenden estrategias que generalizan entre interacciones.
 
-El repositorio de HuggingFace contiene los pesos en formato safetensors con licencia Apache 2.0, aunque el tamano del repositorio (0,7 GB) sugiere que podria tratarse de una version cuantizada o parcial de los pesos completos del modelo de 4B.
+El repositorio de Hugging Face contiene los pesos en formato safetensors con licencia Apache 2.0, aunque el tamano del repositorio (0,7 GB) sugiere que podria tratarse de una version cuantizada o parcial de los pesos completos del modelo de 4B.
 
 ## Especificaciones tecnicas
 
@@ -79,6 +79,6 @@ El paper compara SocialRL con modelos GPT mucho mayores, indicando que el modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wjnwjnwj/SocialRL
+- Repositorio Hugging Face: https://huggingface.co/wjnwjnwj/SocialRL
 - Publicacion de Microsoft Research: https://www.microsoft.com/en-us/research/publication/from-passive-delegates-to-strategic-negotiators-reinforcing-social-reasoning-in-small-language-models-with-socialrl/
 - Paper en arXiv: https://arxiv.org/html/2608.13787v1

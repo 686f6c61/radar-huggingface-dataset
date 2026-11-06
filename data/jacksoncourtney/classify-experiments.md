@@ -60,5 +60,5 @@ No disponible. No se conocen modelos comparables, ya que no es un modelo de IA s
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/jacksoncourtney/classify-experiments
+- Repositorio de Hugging Face: https://huggingface.co/jacksoncourtney/classify-experiments
 - No se han encontrado enlaces externos relevantes en la búsqueda web (los resultados muestran noticias y funciones no relacionadas).

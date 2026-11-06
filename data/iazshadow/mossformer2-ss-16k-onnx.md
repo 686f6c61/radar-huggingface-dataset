@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MossFormer2_SS_16K ONNX (este) | no disponible | Audio 16 kHz, longitud dinamica (T = 2048·k + 8) | ONNX float32 | Apache 2.0 | HuggingFace |
-| MossFormer2_SS_16K (original, alibabasglab) | no disponible | Audio 16 kHz | PyTorch (checkpoint) | Apache 2.0 | HuggingFace |
+| MossFormer2_SS_16K ONNX (este) | no disponible | Audio 16 kHz, longitud dinamica (T = 2048·k + 8) | ONNX float32 | Apache 2.0 | Hugging Face |
+| MossFormer2_SS_16K (original, alibabasglab) | no disponible | Audio 16 kHz | PyTorch (checkpoint) | Apache 2.0 | Hugging Face |
 | Otros modelos de separacion de habla de dos hablantes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas en la informacion proporcionada, por lo que la comparacion cuantitativa de rendimiento no esta disponible.
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iazShadow/mossformer2-ss-16k-onnx
+- Modelo en Hugging Face: https://huggingface.co/iazShadow/mossformer2-ss-16k-onnx
 - Modelo original: https://huggingface.co/alibabasglab/MossFormer2_SS_16K
 - Repositorio ClearerVoice-Studio: https://github.com/modelscope/ClearerVoice-Studio
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

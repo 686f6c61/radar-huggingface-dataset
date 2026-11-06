@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su proposito especifico: eliminar el comp
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en empero-ai/Qwen3.8-9B, un modelo de la serie Qwen3.8 que se construye sobre la arquitectura de Qwen3.5. Los tags de HuggingFace indican que el modelo base fue obtenido mediante destilacion de un modelo Qwen3.8 de mayor tamano. No se dispone de informacion detallada sobre el numero de tokens de entrenamiento, la composicion del dataset o el uso de tecnicas como RLHF o DPO en el modelo base.
+El modelo se basa en empero-ai/Qwen3.8-9B, un modelo de la serie Qwen3.8 que se construye sobre la arquitectura de Qwen3.5. Los tags de Hugging Face indican que el modelo base fue obtenido mediante destilacion de un modelo Qwen3.8 de mayor tamano. No se dispone de informacion detallada sobre el numero de tokens de entrenamiento, la composicion del dataset o el uso de tecnicas como RLHF o DPO en el modelo base.
 
 El proceso de abliteracion se realizo con Heretic v1.4.0, que ablaciona las direcciones de rechazo de las capas `attn.o_proj` y `mlp.down_proj` mediante adaptadores LoRA que posteriormente se fusionan en los pesos base. Se utilizaron dos conjuntos de prompts: `mlabonne/harmless_alpaca` (prompts benignos, 400 ejemplos) y `mlabonne/harmful_behaviors` (prompts daninos, 400 ejemplos). El proceso ejecuto 400 iteraciones de optimizacion con un batch size de 64, seleccionando la iteracion 276 como optima segun criterio de Pareto. Los parametros finales incluyen un `direction_index` de 17,52 y pesos maximos y minimos especificos para cada capa ablacionada, con un metodo de ablacion LoRA row-normalized ("full") fusionado en los pesos base.
 
@@ -34,7 +34,7 @@ El proceso de abliteracion se realizo con Heretic v1.4.0, que ablaciona las dire
 - Preservacion de capacidades: la divergencia KL de 0,0142 respecto al modelo original indica un impacto minimo en las capacidades generales del modelo.
 - Soporte de tool calling / function calling: no se menciona explicitamente en la model card.
 - Capacidades multilingues: el tag "en" sugiere soporte principal en ingles, aunque la familia Qwen es tipicamente multilingue. No se dispone de datos confirmados.
-- Capacidades multimodales: el tag "image-text-to-text" aparece en la metadata de HuggingFace, lo que podria indicar soporte de entrada de imagenes, aunque el pipeline declarado es text-generation y la model card no menciona capacidades de vision.
+- Capacidades multimodales: el tag "image-text-to-text" aparece en la metadata de Hugging Face, lo que podria indicar soporte de entrada de imagenes, aunque el pipeline declarado es text-generation y la model card no menciona capacidades de vision.
 - Soporte de agentes y multi-step reasoning: no se menciona explicitamente, aunque el modo de razonamiento podria facilitar tareas de razonamiento multi-paso.
 
 ## Casos de uso
@@ -62,7 +62,7 @@ La divergencia KL de 0,0142 esta muy por debajo del umbral de dano de 0,5, lo qu
 - VRAM estimada para inferencia en bf16: ~19 GB para los pesos mas overhead de inferencia, por lo que se recomienda una GPU con al menos 24 GB de VRAM (RTX 3090, RTX 4090, A10G, A100).
 - VRAM estimada para inferencia con GGUF Q4_K_M: ~5-6 GB para los pesos mas overhead, cabe en GPUs de consumo con 8-12 GB de VRAM (RTX 3060, RTX 3070, RTX 4060 Ti).
 - GPUs recomendadas: RTX 4090 (24 GB) para bf16; RTX 3060 (12 GB) o superior para GGUF Q4_K_M.
-- Opciones de despliegue: al ser compatible con transformers, puede desplegarse con vLLM, TGI, llama.cpp (via GGUF), Ollama (via GGUF) o directamente con la libreria transformers de HuggingFace.
+- Opciones de despliegue: al ser compatible con transformers, puede desplegarse con vLLM, TGI, llama.cpp (via GGUF), Ollama (via GGUF) o directamente con la libreria transformers de Hugging Face.
 - Latencia y throughput: no se dispone de datos medidos. Como referencia orientativa, un modelo de ~9,4B parametros en bf16 en una RTX 4090 suele generar entre 30 y 60 tokens/segundo, y con GGUF Q4_K_M entre 40 y 80 tokens/segundo.
 
 ## Comparativa con modelos similares

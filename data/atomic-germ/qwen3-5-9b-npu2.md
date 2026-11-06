@@ -83,8 +83,8 @@ Qwen3.5-9B ofrece un rendimiento superior en MMLU-Pro frente a modelos más gran
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomic-Germ/Qwen3.5-9B-NPU2
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.5-9B
+- Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/Qwen3.5-9B-NPU2
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-9B
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
 - Repositorio relacionado de Atomic-Germ (variante Claude-Code): https://huggingface.co/Atomic-Germ/Qwen3.5-9B-Claude-Code-NPU2

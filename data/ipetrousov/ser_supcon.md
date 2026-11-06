@@ -56,6 +56,6 @@ No disponible. No se puede comparar con alternativas porque se desconoce la tare
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ipetrousov/ser_supcon
+- Repositorio de Hugging Face: https://huggingface.co/ipetrousov/ser_supcon
 - Referencia al método SupCon de Google Research: https://arxiv.org/abs/2004.11362
 - Código de Google Research sobre SupCon: https://github.com/google-research/supcon

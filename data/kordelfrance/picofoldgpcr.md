@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PicofoldGPCR | 367.000 | Latente de 42 dims + 265 features de molécula | Generación de poses de hélices GPCR | no disponible | HuggingFace (kordelfrance/picofoldGPCR) |
+| PicofoldGPCR | 367.000 | Latente de 42 dims + 265 features de molécula | Generación de poses de hélices GPCR | no disponible | Hugging Face (kordelfrance/picofoldGPCR) |
 | picofold (Dave Burke) | no disponible | no disponible | Plegamiento de proteínas educativo | no disponible | GitHub (daveyburke/picofold) |
 | AlphaFold2 | ~93.000.000 | Secuencia de aminoácidos | Predicción de estructura atómica completa | no disponible en esta ficha | Código y pesos públicos |
 
@@ -78,11 +78,11 @@ La comparación con AlphaFold2 es solo orientativa de categoría: PicofoldGPCR n
 - Licencia no disponible: no se puede confirmar si se permite uso comercial; conviene contactar con el autor antes de cualquier uso en producción.
 - No se documentan sesgos, riesgos de alucinación ni evaluaciones de robustez; al no ser un modelo de lenguaje, estos riesgos se manifiestan como geometrías no físicas o poses fuera del rango soportado (mitigado parcialmente por el recorte del latente en el muestreo).
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin señales de validación por parte de la comunidad.
-- La fecha de creación indicada (2026-11-04) es futura respecto a la información habitual de HuggingFace; conviene verificar la ficha original.
+- La fecha de creación indicada (2026-11-04) es futura respecto a la información habitual de Hugging Face; conviene verificar la ficha original.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kordelfrance/picofoldGPCR
+- Modelo en Hugging Face: https://huggingface.co/kordelfrance/picofoldGPCR
 - Repositorio de referencia picofold (Dave Burke): https://github.com/daveyburke/picofold
 - Paper DDIM (arxiv:2010.02502): https://arxiv.org/abs/2010.02502
 - Estudio OR51E2 de referencia (Nature): https://doi.org/10.1038/s41586-023-05798-y

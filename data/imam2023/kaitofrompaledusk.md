@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`imam2023/KaitofromPaledusk` es un repositorio de modelo publicado en HuggingFace por el usuario `imam2023` bajo licencia Apache 2.0. En el momento de redactar esta ficha no se ha publicado ninguna model card con contenido tecnico: el README se limita a la declaracion de licencia, sin descripcion de arquitectura, datos de entrenamiento ni capacidades. El pipeline declarado esta vacio, no se especifican idiomas soportados y el repositorio acumula 0 descargas y 0 "likes", por lo que se trata de un artefacto sin adopcion publica conocida.
+`imam2023/KaitofromPaledusk` es un repositorio de modelo publicado en Hugging Face por el usuario `imam2023` bajo licencia Apache 2.0. En el momento de redactar esta ficha no se ha publicado ninguna model card con contenido tecnico: el README se limita a la declaracion de licencia, sin descripcion de arquitectura, datos de entrenamiento ni capacidades. El pipeline declarado esta vacio, no se especifican idiomas soportados y el repositorio acumula 0 descargas y 0 "likes", por lo que se trata de un artefacto sin adopcion publica conocida.
 
 El unico dato cuantitativo disponible es el tamano del repositorio, 0,3 GB, y las fechas de creacion y ultima actualizacion (15 de octubre de 2026, con menos de 21 minutos entre ambas), lo que sugiere una subida unica sin iteraciones posteriores documentadas. Ese tamano es compatible con pesos en precision completa o media de un modelo de escala reducida, o con un modelo mayor almacenado en cuantizacion, pero no es posible determinarlo con la informacion disponible.
 
@@ -37,7 +37,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composici
 
 No es posible enumerar capacidades verificadas: la model card no describe ninguna y no se han publicado evaluaciones. Los unicos elementos comprobables son:
 
-- El repositorio es publico y accesible en HuggingFace.
+- El repositorio es publico y accesible en Hugging Face.
 - La licencia declarada es Apache 2.0, sin restricciones adicionales indicadas por el autor.
 - No hay evidencia de soporte de tool calling, function calling, modo de razonamiento, vision, audio, agentes o razonamiento multi-paso.
 - No hay evidencia de capacidades multilingues ni de idiomas soportados.
@@ -50,7 +50,7 @@ Cualquier capacidad concreta debera determinarse mediante pruebas directas sobre
 No se dispone de informacion suficiente para recomendar casos de uso con fundamento tecnico. Los escenarios que se enumeran a continuacion son condicionales y solo tendrian sentido si la inspeccion de los pesos confirmase las capacidades correspondientes; no deben interpretarse como recomendaciones validadas:
 
 - Experimentacion local en aprendizaje automatico: el reducido tamano del repositorio (0,3 GB) permitiria descargarlo y cargarlo en una estacion de trabajo sin infraestructura dedicada, si el formato de pesos es compatible con las herramientas habituales.
-- Analisis forense de artefactos publicados: util para estudiar practicas de publicacion en HuggingFace, modelos sin model card y su trazabilidad.
+- Analisis forense de artefactos publicados: util para estudiar practicas de publicacion en Hugging Face, modelos sin model card y su trazabilidad.
 - Pruebas de reproducibilidad: punto de partida para verificar si un repositorio sin documentacion produce salidas coherentes con la licencia y los metadatos declarados.
 - Evaluacion de seguridad de modelos no documentados: caso de uso defensivo para comprobar si los pesos contienen comportamiento anomalo antes de integrarlos en cualquier flujo.
 - Docencia sobre buenas practicas de publicacion: ejemplo de lo que no deberia acompanar a un modelo (ausencia de arquitectura, datos, evaluaciones e idiomas).
@@ -86,6 +86,6 @@ No disponible. Sin conocer la arquitectura, el numero de parametros ni las capac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imam2023/KaitofromPaledusk
+- Repositorio en Hugging Face: https://huggingface.co/imam2023/KaitofromPaledusk
 
 No se han encontrado papers, blogs, repositorios auxiliares, demos ni Spaces asociados a este modelo en la informacion proporcionada.

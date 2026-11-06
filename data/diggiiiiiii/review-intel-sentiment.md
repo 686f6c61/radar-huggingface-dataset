@@ -81,10 +81,10 @@ Generalización a una categoría no vista: reentrenado sin reseñas de electrodo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| review-intel-sentiment | 66,9 M | 256 word-pieces | Clasificación 3 clases (reseñas) | research-only | HuggingFace |
-| distilbert-base-uncased-finetuned-sst-2-english | 67 M | 512 word-pieces | Clasificación 2 clases (sentimiento general) | Apache-2.0 | HuggingFace |
+| review-intel-sentiment | 66,9 M | 256 word-pieces | Clasificación 3 clases (reseñas) | research-only | Hugging Face |
+| distilbert-base-uncased-finetuned-sst-2-english | 67 M | 512 word-pieces | Clasificación 2 clases (sentimiento general) | Apache-2.0 | Hugging Face |
 | TF-IDF + regresión logística (baseline del autor) | no aplica | no aplica | Clasificación 3 clases (reseñas) | depende del pipeline | No publicado como modelo |
-| RoBERTa-base fine-tuned para sentimiento | ~125 M | 512 word-pieces | Clasificación de sentimiento | MIT (modelo base) | HuggingFace |
+| RoBERTa-base fine-tuned para sentimiento | ~125 M | 512 word-pieces | Clasificación de sentimiento | MIT (modelo base) | Hugging Face |
 
 Frente a distilbert-base-uncased-finetuned-sst-2-english, este modelo añade la clase neutra y está especializado en reseñas de comercios, pero pierde la licencia permisiva y la longitud de contexto de 512 tokens. Frente a un baseline TF-IDF, mejora el macro F1 en 0,029 puntos, una diferencia modesta que refleja la dificultad de la clase neutra. Frente a RoBERTa-base, este modelo es más ligero y rápido, pero con menor capacidad representacional.
 
@@ -102,7 +102,7 @@ Frente a distilbert-base-uncased-finetuned-sst-2-english, este modelo añade la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diggiiiiiii/review-intel-sentiment
+- Modelo en Hugging Face: https://huggingface.co/diggiiiiiii/review-intel-sentiment
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Yelp Open Dataset: https://www.yelp.com/dataset
 - Amazon Reviews 2023 (McAuley Lab): https://amazon-reviews-2023.github.io/

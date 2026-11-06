@@ -85,7 +85,7 @@ Nota: no hay datos de rendimiento comparativos publicados para este modelo, por 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tinyopsec/SRA-RiskGate-4B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/SRA-RiskGate-4B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo original fine-tuned (referenciado en la model card): https://huggingface.co/sriram1983007/SRA-RiskGate-4B
 - Paper, blog o demo: no disponible

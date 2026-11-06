@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `geonmin-kim/GR00T-N1.7-LIBERO-baseline-libero_spatial-step10000` es un checkpoint de ajuste fino del modelo fundacional de robótica GR00T N1.7 de NVIDIA, entrenado sobre la suite de tareas LIBERO-spatial. Lo publica el usuario geonmin-kim en HuggingFace con 3.144.016.000 parámetros (~3,14 mil millones) almacenados en safetensors y un tamaño de repositorio de 12,6 GB. El nombre indica que se trata de una ejecución *baseline* (sin modificaciones metodológicas) detenida en el paso 10.000 de entrenamiento, presumiblemente como referencia reproducible para comparar métodos sobre el benchmark LIBERO.
+El modelo `geonmin-kim/GR00T-N1.7-LIBERO-baseline-libero_spatial-step10000` es un checkpoint de ajuste fino del modelo fundacional de robótica GR00T N1.7 de NVIDIA, entrenado sobre la suite de tareas LIBERO-spatial. Lo publica el usuario geonmin-kim en Hugging Face con 3.144.016.000 parámetros (~3,14 mil millones) almacenados en safetensors y un tamaño de repositorio de 12,6 GB. El nombre indica que se trata de una ejecución *baseline* (sin modificaciones metodológicas) detenida en el paso 10.000 de entrenamiento, presumiblemente como referencia reproducible para comparar métodos sobre el benchmark LIBERO.
 
 GR00T (Generalist Robot 00 Technology) es la familia de modelos visión-lenguaje-acción (VLA) de NVIDIA para robots humanoides y manipulación generalista: combina un backbone de visión-lenguaje con un cabezal de acciones que genera trayectorias motoras. LIBERO es un benchmark de aprendizaje robótico continuo con suites como `libero_spatial`, `libero_object`, `libero_goal` y `libero_10`. Este checkpoint concreto interesa a investigadores que replican o comparan resultados en LIBERO-spatial.
 
-La información pública en HuggingFace es mínima: no declara licencia, idiomas, pipeline ni model card, y no se han encontrado resultados de benchmarks ni documentación adicional en la búsqueda web realizada (que devolvió únicamente contenido no relacionado).
+La información pública en Hugging Face es mínima: no declara licencia, idiomas, pipeline ni model card, y no se han encontrado resultados de benchmarks ni documentación adicional en la búsqueda web realizada (que devolvió únicamente contenido no relacionado).
 
 ## Especificaciones técnicas
 
@@ -69,9 +69,9 @@ Los datos de los modelos comparables provienen de conocimiento público general 
 
 | Modelo | Parámetros | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GR00T N1.7 LIBERO (este checkpoint) | 3,14B | VLA, ajuste sobre LIBERO-spatial | No disponible | HuggingFace (`geonmin-kim`) |
-| NVIDIA GR00T N1 (original) | ~2,2B (no verificado) | VLA para humanoides | NVIDIA Open Model License (no verificado) | HuggingFace (`nvidia`) |
-| OpenVLA | ~7B | VLA para manipulación | MIT (no verificado) | HuggingFace |
+| GR00T N1.7 LIBERO (este checkpoint) | 3,14B | VLA, ajuste sobre LIBERO-spatial | No disponible | Hugging Face (`geonmin-kim`) |
+| NVIDIA GR00T N1 (original) | ~2,2B (no verificado) | VLA para humanoides | NVIDIA Open Model License (no verificado) | Hugging Face (`nvidia`) |
+| OpenVLA | ~7B | VLA para manipulación | MIT (no verificado) | Hugging Face |
 | π0 (Physical Intelligence) | ~3,3B (no verificado) | VLA con modelo de flujo | No verificada | Repositorio openpi |
 
 ## Limitaciones y advertencias
@@ -88,6 +88,6 @@ Los datos de los modelos comparables provienen de conocimiento público general 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/geonmin-kim/GR00T-N1.7-LIBERO-baseline-libero_spatial-step10000
+- Hugging Face: https://huggingface.co/geonmin-kim/GR00T-N1.7-LIBERO-baseline-libero_spatial-step10000
 - La búsqueda web realizada no devolvió enlaces relevantes (solo contenido no relacionado); no se han podido verificar papers, blogs ni demos asociados a este checkpoint concreto.
 - Referencias canónicas de la familia (no obtenidas en esta búsqueda, aportadas como contexto): repositorio Isaac-GR00T de NVIDIA en GitHub y sitio del benchmark LIBERO.

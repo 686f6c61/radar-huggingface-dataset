@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wiklif/Qwen3.8-27B-KTopt-GGUF es un repositorio publicado en HuggingFace por el usuario wiklif bajo licencia Apache 2.0. El identificador del repositorio indica que se trata de una distribucion de pesos en formato GGUF, presumiblemente una cuantizacion de un modelo de la familia Qwen, aunque la model card publicada no contiene ninguna descripcion, documentacion tecnica ni detalle sobre el modelo base del que deriva.
+wiklif/Qwen3.8-27B-KTopt-GGUF es un repositorio publicado en Hugging Face por el usuario wiklif bajo licencia Apache 2.0. El identificador del repositorio indica que se trata de una distribucion de pesos en formato GGUF, presumiblemente una cuantizacion de un modelo de la familia Qwen, aunque la model card publicada no contiene ninguna descripcion, documentacion tecnica ni detalle sobre el modelo base del que deriva.
 
 La informacion disponible es minima: no consta pipeline declarado, no se indican idiomas soportados, no hay resultados de benchmarks y el repositorio registra cero descargas y cero valoraciones. La model card se limita al campo de licencia, sin explicar arquitectura, proceso de cuantizacion ni parametros de inferencia recomendados.
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha recoge exclusivamente los datos verificables del repositor
 | Licencia | apache-2.0 |
 | Formato de pesos | GGUF (derivado del identificador del repositorio) |
 
-Otros metadatos del repositorio: autor wiklif, etiquetas license:apache-2.0 y region:us, 0 descargas, 0 likes, fecha de creacion y ultima actualizacion 2026-09-13T17:30:23.000Z. No se declara pipeline de HuggingFace.
+Otros metadatos del repositorio: autor wiklif, etiquetas license:apache-2.0 y region:us, 0 descargas, 0 likes, fecha de creacion y ultima actualizacion 2026-09-13T17:30:23.000Z. No se declara pipeline de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -85,7 +85,7 @@ No disponible. No se dispone de datos verificables sobre el modelo base ni sobre
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no publicado | no disponible |
 | Licencia | apache-2.0 | no disponible |
-| Disponibilidad | repositorio en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | repositorio en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -102,7 +102,7 @@ No disponible. No se dispone de datos verificables sobre el modelo base ni sobre
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wiklif/Qwen3.8-27B-KTopt-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/wiklif/Qwen3.8-27B-KTopt-GGUF
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

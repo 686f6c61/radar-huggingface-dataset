@@ -23,7 +23,7 @@ Los datos marcados como "modelo base" corresponden a mistralai/Mistral-7B-Instru
 | Licencia | apache-2.0 (etiqueta del repositorio del adaptador); el modelo base tambien es apache-2.0 |
 | Formato de pesos | safetensors (adaptador LoRA/PEFT); requiere el modelo base en safetensors o GGUF |
 | Libreria | peft |
-| Tamano del repositorio | 0.0 GB (segun la ficha de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun la ficha de Hugging Face) |
 | Fecha de creacion | 2026-09-18 |
 | Ultima actualizacion | 2026-09-18 |
 | Descargas / me gusta | 13 / 0 |
@@ -63,7 +63,7 @@ Advertencia: al no existir evaluaciones publicas del adaptador, los siguientes c
 
 No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente reporta una train_loss aproximada de 1.26 tras 250 pasos, metrica que no permite inferir calidad, y que ademas no se compara con la loss del adaptador de partida ni con la del modelo base. No hay evaluaciones de MMLU, HumanEval, GSM8K, MT-Bench ni de ningun otro conjunto publico.
 
-Para contextualizar, los resultados oficiales del modelo base mistralai/Mistral-7B-Instruct-v0.3 estan publicados en su propia model card de HuggingFace, pero no se reproducen aqui porque no existe ninguna medicion especifica de este adaptador.
+Para contextualizar, los resultados oficiales del modelo base mistralai/Mistral-7B-Instruct-v0.3 estan publicados en su propia model card de Hugging Face, pero no se reproducen aqui porque no existe ninguna medicion especifica de este adaptador.
 
 ## Requisitos de hardware
 
@@ -105,7 +105,7 @@ Comparado con el modelo base, este adaptador anade un ajuste no documentado y pi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyberviser/my-mistral-finetuned-v4
+- Modelo en Hugging Face: https://huggingface.co/cyberviser/my-mistral-finetuned-v4
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio de PEFT: https://github.com/huggingface/peft
 - Documentacion de PEFT: https://huggingface.co/docs/peft

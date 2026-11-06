@@ -72,9 +72,9 @@ Nota: el baseline casi nunca predice "safe" y sobre-marca tráfico legítimo, in
 
 | Modelo | Parámetros | Contexto | Precisión de veredicto (n=1.390) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SMS-Shield 4B | 4.022.468.096 | No disponible (base 32K) | 99.2% | Apache 2.0 | HuggingFace, GGUF, Ollama |
+| SMS-Shield 4B | 4.022.468.096 | No disponible (base 32K) | 99.2% | Apache 2.0 | Hugging Face, GGUF, Ollama |
 | Gemma3-27B zero-shot | 27B | No disponible | 49.2% | No especificada | No disponible en esta tarea |
-| Qwen3-4B-Instruct-2507 (base) | ~4B | 32K | No disponible | Apache 2.0 | HuggingFace |
+| Qwen3-4B-Instruct-2507 (base) | ~4B | 32K | No disponible | Apache 2.0 | Hugging Face |
 
 Nota: no se han encontrado otros modelos especializados en clasificación de SMS indio en la información disponible. La comparación con Gemma3-27B se limita a la tarea de clasificación de SMS con la misma prompt.
 
@@ -91,7 +91,7 @@ Nota: no se han encontrado otros modelos especializados en clasificación de SMS
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ganmoor-ai-labs/sms-shield
+- Hugging Face: https://huggingface.co/ganmoor-ai-labs/sms-shield
 - Perfil del autor: https://huggingface.co/ganmoor-ai-labs
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - No se han encontrado papers, blogs o repositorios adicionales en la búsqueda web.

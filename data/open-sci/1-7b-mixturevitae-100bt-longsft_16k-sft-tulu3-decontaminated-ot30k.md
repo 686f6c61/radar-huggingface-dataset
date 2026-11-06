@@ -63,10 +63,10 @@ El model-index del autor declara una entrada (`sft__f679a5c592c8dffb__1-7b-Mixtu
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| open-sci/1.7b-MixtureVitae-100BT-longsft_16k-SFT-Tulu3-decontaminated-ot30k | 1,71B | no disponible (posible 16k) | other | HuggingFace, 14 descargas | Requiere `custom_code`; sin benchmarks |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado | Transformer estándar, benchmarks publicados |
-| Llama-3.2-1B-Instruct | 1,24B | 131.072 | Llama 3.2 Community License | HuggingFace, ampliamente usado | Transformer estándar, benchmarks publicados |
-| SmolLM2-1.7B-Instruct | 1,71B | 8.192 (ampliable) | Apache 2.0 | HuggingFace, ampliamente usado | Transformer estándar, benchmarks publicados |
+| open-sci/1.7b-MixtureVitae-100BT-longsft_16k-SFT-Tulu3-decontaminated-ot30k | 1,71B | no disponible (posible 16k) | other | Hugging Face, 14 descargas | Requiere `custom_code`; sin benchmarks |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado | Transformer estándar, benchmarks publicados |
+| Llama-3.2-1B-Instruct | 1,24B | 131.072 | Llama 3.2 Community License | Hugging Face, ampliamente usado | Transformer estándar, benchmarks publicados |
+| SmolLM2-1.7B-Instruct | 1,71B | 8.192 (ampliable) | Apache 2.0 | Hugging Face, ampliamente usado | Transformer estándar, benchmarks publicados |
 
 La comparación es orientativa: los tres alternativos tienen documentación completa, licencias claras y evaluación pública, mientras que el modelo de open-sci carece de todo ello. No se dispone de datos de rendimiento para comparar calidad.
 
@@ -85,7 +85,7 @@ La comparación es orientativa: los tres alternativos tienen documentación comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-sci/1.7b-MixtureVitae-100BT-longsft_16k-SFT-Tulu3-decontaminated-ot30k
+- Modelo en Hugging Face: https://huggingface.co/open-sci/1.7b-MixtureVitae-100BT-longsft_16k-SFT-Tulu3-decontaminated-ot30k
 - Perfil del autor: https://huggingface.co/open-sci
 - Dataset referenciado (open-thoughts3): no disponible como enlace directo en la información proporcionada
 - Llama Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory

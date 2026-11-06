@@ -28,7 +28,7 @@ Es relevante ahora por dos motivos: el repo es pequeño (0,1 GB) y el modelo es 
 | Librería | torch-pointcloud |
 | Dependencias | `spconv` compilado para la versión de PyTorch y CUDA correspondiente; kernels solo GPU |
 | Tamaño del repositorio | 0,1 GB |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-10-17 |
 | Última actualización | 2026-10-20 |
@@ -86,7 +86,7 @@ No se han publicado en la información disponible métricas por clase, matrices 
 
 | Modelo | Tipo | Parámetros | Contexto | mIoU ScanNet 20 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| spformer-unet.scannet20.open3d | U-Net con convoluciones dispersas | 17,3 M | No aplica | 67,71 (no verificado) | MIT | HuggingFace, safetensors |
+| spformer-unet.scannet20.open3d | U-Net con convoluciones dispersas | 17,3 M | No aplica | 67,71 (no verificado) | MIT | Hugging Face, safetensors |
 | Checkpoint original en Open3D-ML (origen de la conversión) | U-Net con convoluciones dispersas | No disponible | No aplica | No disponible | MIT (Open3D-ML) | GitHub isl-org/Open3D-ML |
 | MinkowskiNet (familia de referencia en segmentación 3D) | Red con convoluciones dispersas 4D | No disponible | No aplica | No disponible | No disponible | Implementaciones públicas |
 | SPVCNN / TorchSparse | Convoluciones dispersas con poda | No disponible | No aplica | No disponible | No disponible | Repositorios públicos |
@@ -108,7 +108,7 @@ La comparación numérica con alternativas no puede realizarse con la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/spformer-unet.scannet20.open3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/spformer-unet.scannet20.open3d
 - Paper de SPFormer (AAAI 2023): https://arxiv.org/abs/2211.15766
 - Open3D-ML, origen de la conversión: https://github.com/isl-org/Open3D-ML
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

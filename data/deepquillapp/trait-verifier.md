@@ -24,7 +24,7 @@ La evaluación publicada por el autor usa la métrica keep-F1. Frente a un verif
 | Pipeline | text-classification |
 | Tamano del repositorio | 0,6 GB |
 | Modelo base | convaiinnovations/laya |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -95,6 +95,6 @@ La comparativa se limita a los elementos citados en la model card. No se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepquillapp/trait-verifier
+- Modelo en Hugging Face: https://huggingface.co/deepquillapp/trait-verifier
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - Sitio del autor: https://deepquill.app

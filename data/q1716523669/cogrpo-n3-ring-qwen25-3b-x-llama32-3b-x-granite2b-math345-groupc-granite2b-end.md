@@ -67,7 +67,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-granite2b-math345-groupC-granite2b-end)
+- [Hugging Face - modelo](https://huggingface.co/q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-granite2b-math345-groupC-granite2b-end)
 - [Paper DeepSeekMath (GRPO)](https://huggingface.co/papers/2402.03300)
 - [Repositorio TRL](https://github.com/huggingface/trl)
 - [Modelo base Granite 3.3 2B Instruct](https://huggingface.co/ibm-granite/granite-3.3-2b-instruct)

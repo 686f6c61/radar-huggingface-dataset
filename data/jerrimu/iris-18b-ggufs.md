@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IRIS-18B-GGUFS es una cuantización en formato GGUF del modelo IRIS-18B-CPT, publicado por el usuario jerrimu en HuggingFace. Se trata de un modelo de lenguaje de 18.002.548.604 parámetros (aproximadamente 18B) construido a partir de un ERNIE de 21B al que se le aplicó una poda del 20% mediante la técnica REAP, seguida de un entrenamiento de continuación (CPT) sobre aproximadamente 3.000 millones de tokens de trazas de razonamiento. El resultado es un modelo conversacional orientado a tareas de razonamiento, con licencia Apache 2.0.
+IRIS-18B-GGUFS es una cuantización en formato GGUF del modelo IRIS-18B-CPT, publicado por el usuario jerrimu en Hugging Face. Se trata de un modelo de lenguaje de 18.002.548.604 parámetros (aproximadamente 18B) construido a partir de un ERNIE de 21B al que se le aplicó una poda del 20% mediante la técnica REAP, seguida de un entrenamiento de continuación (CPT) sobre aproximadamente 3.000 millones de tokens de trazas de razonamiento. El resultado es un modelo conversacional orientado a tareas de razonamiento, con licencia Apache 2.0.
 
 El modelo parte de la familia ERNIE de Baidu (ERNIE-21B-REAP como base podada) y se ha afinado sobre datasets de destilación de razonamiento: `a-m-team/AM-DeepSeek-R1-Distilled-1.4M` y `AI-MO/NuminaMath-CoT`. Según la model card, el autor intentó SFT pero los resultados no fueron satisfactorios, por lo que la versión publicada corresponde al checkpoint tras CPT, sin un ajuste supervisado posterior pulido. Esto es relevante para evaluar su comportamiento en producción: el modelo puede mostrar inconsistencias de formato conversacional pese a sus mejoras en benchmarks de conocimiento.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni comparaciones con mo
 - VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un modelo denso de 18B, una cuantización Q4_K_M ocuparía del orden de 10-11 GB, Q8_0 en torno a 19 GB y FP16 unos 36 GB; estas cifras son estimaciones basadas en el tamano y no datos publicados por el autor.
 - GPU recomendadas: no disponibles en la documentación. Por tamano, cabría esperar ejecución en RTX 4090 (24 GB) con cuantizaciones Q4/Q5/Q8, y en A100/H100 para FP16.
 - ¿Cabe en GPU de consumo? Probablemente sí en RTX 3090/4090 (24 GB) con cuantizaciones de 4-8 bits; en GPUs de 12-16 GB solo con cuantizaciones bajas (Q3/Q4) y posible offload a CPU.
-- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo HuggingFace. vLLM y TGI no están confirmados para este repo GGUF.
+- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo Hugging Face. vLLM y TGI no están confirmados para este repo GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ No se dispone de comparaciones directas de rendimiento entre IRIS-18B y estos mo
 
 ## Enlaces
 
-- HuggingFace (repo GGUF): https://huggingface.co/jerrimu/IRIS-18B-GGUFS
+- Hugging Face (repo GGUF): https://huggingface.co/jerrimu/IRIS-18B-GGUFS
 - Modelo base CPT: https://huggingface.co/jerrimu/IRIS-18B-CPT
 - Dataset de destilación de razonamiento: https://huggingface.co/datasets/a-m-team/AM-DeepSeek-R1-Distilled-1.4M
 - Dataset de matemáticas CoT: https://huggingface.co/datasets/AI-MO/NuminaMath-CoT

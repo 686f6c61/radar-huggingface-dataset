@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "anandkaman/arjuna-ocr-te-en",
+  "slug": "anandkaman-arjuna-ocr-te-en",
+  "author": "anandkaman",
+  "url": "https://huggingface.co/anandkaman/arjuna-ocr-te-en",
+  "created_at": "2026-11-06T09:30:18.000Z",
+  "updated_at": "2026-11-06T09:32:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "onnxruntime",
+  "languages": [
+    "te",
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "ocr",
+    "telugu",
+    "optical-character-recognition",
+    "document-ai",
+    "image-to-text",
+    "te",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 165698593,
+  "storage_human": "166 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anandkaman/arjuna-ocr-hi-en at main - Hugging Face",
+      "url": "https://huggingface.co/anandkaman/arjuna-ocr-hi-en/tree/main",
+      "snippet": "Instructions to use anandkaman/arjuna-ocr-hi-en with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries TensorRT How to use anandkaman/arjuna-ocr-hi-en with TensorRT:"
+    },
+    {
+      "title": "anandkaman/arjuna-ocr-hi-en · Hugging Face",
+      "url": "https://huggingface.co/anandkaman/arjuna-ocr-hi-en",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

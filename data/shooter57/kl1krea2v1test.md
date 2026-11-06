@@ -72,7 +72,7 @@ No hay información disponible sobre modelos comparables. El modelo base `krea/K
 
 ## Enlaces
 
-- [HuggingFace - Shooter57/kl1krea2v1test](https://huggingface.co/Shooter57/kl1krea2v1test)
+- [Hugging Face - Shooter57/kl1krea2v1test](https://huggingface.co/Shooter57/kl1krea2v1test)
 - [Modelo base krea/Krea-2-Raw](https://huggingface.co/krea/Krea-2-Raw) (no verificado)
 
 Nota: No se han encontrado papers, blogs o demos relacionados con este modelo.

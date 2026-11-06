@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic-gguf
+- Repositorio Hugging Face: https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic-gguf
 - Modelo base: https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic
 - Variante MLX 4-bit: https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic-mlx-4bit
 - Modelo upstream de Liquid AI: https://huggingface.co/LiquidAI/LFM3-VL-2B

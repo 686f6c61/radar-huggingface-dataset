@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Whisper tiny Spanish es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla `openai/whisper-tiny`, publicado por el usuario Quiglee2 en HuggingFace. El objetivo declarado es adaptar el modelo base a audio en ingles con acento espanol, segun se deduce del identificador del repositorio y del dataset de entrenamiento (`Spanish_english`). El modelo conserva la arquitectura encoder-decoder transformer propia de la familia Whisper y el mismo tokenizador multilingue del modelo original.
+Whisper tiny Spanish es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla `openai/whisper-tiny`, publicado por el usuario Quiglee2 en Hugging Face. El objetivo declarado es adaptar el modelo base a audio en ingles con acento espanol, segun se deduce del identificador del repositorio y del dataset de entrenamiento (`Spanish_english`). El modelo conserva la arquitectura encoder-decoder transformer propia de la familia Whisper y el mismo tokenizador multilingue del modelo original.
 
-Se trata de un modelo de 37,76 millones de parametros, con pesos en formato safetensors y un repositorio de 0,3 GB. El autor declara un WER de 13,4421 sobre el split de test del dataset `Spanish_english`, obtenido tras 2000 pasos de entrenamiento con un learning rate de 1e-5. La model card esta generada automaticamente por el Trainer de HuggingFace y carece de secciones descriptivas completas, por lo que gran parte de la informacion sobre composicion del dataset, condiciones de grabacion y dominio de aplicacion no esta disponible.
+Se trata de un modelo de 37,76 millones de parametros, con pesos en formato safetensors y un repositorio de 0,3 GB. El autor declara un WER de 13,4421 sobre el split de test del dataset `Spanish_english`, obtenido tras 2000 pasos de entrenamiento con un learning rate de 1e-5. La model card esta generada automaticamente por el Trainer de Hugging Face y carece de secciones descriptivas completas, por lo que gran parte de la informacion sobre composicion del dataset, condiciones de grabacion y dominio de aplicacion no esta disponible.
 
 La relevancia de este modelo es limitada y muy especifica: sirve como ejemplo de adaptacion de un modelo ASR ligero a una variante acentuada del ingles, y puede resultar util como punto de partida para experimentos de fine-tuning con presupuesto de computo minimo. No obstante, su tamano reducido, la falta de documentacion y un WER de dos digitos lo sitúan lejos de un uso en produccion sin validacion adicional.
 
@@ -33,7 +33,7 @@ Los hiperparametros declarados son: learning rate 1e-5, batch de entrenamiento d
 - Adaptacion especifica a habla en ingles con acento espanol, segun el proposito declarado en el nombre del repositorio.
 - Procesamiento de segmentos de audio de hasta 30 segundos, limitacion estructural de la arquitectura Whisper.
 - Soporte de tareas ASR mediante el pipeline `automatic-speech-recognition` de Transformers.
-- Compatibilidad con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad con endpoints de Hugging Face (tag `endpoints_compatible`).
 - No se documenta soporte de tool calling, agentes, vision, audio generativo ni modo de razonamiento explicito.
 - Capacidad multilingue limitada: la model card declara unicamente `en`, aunque el modelo base original es multilingue.
 
@@ -65,17 +65,17 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 - VRAM estimada para inferencia: inferior a 1 GB en fp32 (37,76 millones de parametros, aproximadamente 150 MB de pesos), y menos de 500 MB en fp16.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente; el modelo cabe holgadamente en RTX 3060, RTX 4060, RTX 4090, e incluso en GPUs integradas o en CPU.
 - Cabe en GPU consumer: si, sin restricciones practicas de memoria.
-- Opciones de despliegue: pipeline `automatic-speech-recognition` de Transformers, endpoints de HuggingFace, y potencialmente exportacion a ONNX o uso con librerias de inferencia ligera (no documentado por el autor).
+- Opciones de despliegue: pipeline `automatic-speech-recognition` de Transformers, endpoints de Hugging Face, y potencialmente exportacion a ONNX o uso con librerias de inferencia ligera (no documentado por el autor).
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada; por el tamano del modelo, se espera una latencia muy baja en GPU y moderada en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto de audio | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Quiglee2/whisper-tiny_to_spanish_accent_09oct | 37,76 M | 30 s | 13,44 (dataset propio) | apache-2.0 | HuggingFace |
-| openai/whisper-tiny | 37,76 M | 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-base | 74 M | 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-small | 244 M | 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
+| Quiglee2/whisper-tiny_to_spanish_accent_09oct | 37,76 M | 30 s | 13,44 (dataset propio) | apache-2.0 | Hugging Face |
+| openai/whisper-tiny | 37,76 M | 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-base | 74 M | 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-small | 244 M | 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
 
 La comparacion cuantitativa con los modelos base de OpenAI no es posible con los datos proporcionados, ya que no se incluyen sus WER sobre el mismo dataset. Cualitativamente, este ajuste fino parte de `whisper-tiny` y anade una adaptacion a acento espanol, pero no se han publicado evaluaciones cruzadas que permitan afirmar una mejora frente al modelo original.
 
@@ -93,7 +93,7 @@ La comparacion cuantitativa con los modelos base de OpenAI no es posible con los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Quiglee2/whisper-tiny_to_spanish_accent_09oct
+- Modelo en Hugging Face: https://huggingface.co/Quiglee2/whisper-tiny_to_spanish_accent_09oct
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

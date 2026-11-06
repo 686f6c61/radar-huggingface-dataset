@@ -97,8 +97,8 @@ La comparativa se limita a tamano, licencia y disponibilidad, ya que no hay dato
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/dougdotcon/douvras-ptbr-enterprise-assistant-lora
+- Pagina del modelo en Hugging Face: https://huggingface.co/dougdotcon/douvras-ptbr-enterprise-assistant-lora
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
-- Benchmark asociado citado en la model card: dougdotcon/douvras-ptbr-enterprise-ai-evaluation (referenciado como benchmark publico relacionado; verificar el identificador exacto en HuggingFace, ya que la model card no incluye URL)
+- Benchmark asociado citado en la model card: dougdotcon/douvras-ptbr-enterprise-ai-evaluation (referenciado como benchmark publico relacionado; verificar el identificador exacto en Hugging Face, ya que la model card no incluye URL)
 - Biblioteca PEFT: https://huggingface.co/docs/peft
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los unicos enlaces recuperados corresponden a la venta de entradas de un parque tematico y no guardan relacion con el artefacto descrito.

@@ -65,11 +65,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_round-int4-gs64-sym (este) | 7B (base) / 1.753.635.840 segun safetensors | AutoRound INT4 gs64 sim | No disponible | apache-2.0 | HuggingFace |
-| fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int4-gs64-sym | 7B | GPTQ INT4 gs64 sim | No disponible | apache-2.0 | HuggingFace |
-| fbaldassarri/tiiuae_Falcon3-7B-Instruct-autoawq-int4-gs128-sym | 7B | AWQ INT4 gs128 sim | No disponible | apache-2.0 | HuggingFace / friendli.ai |
-| fbaldassarri/tiiuae_Falcon3-7B-Instruct-autogptq-int4-gs128-asym | 7B | AutoGPTQ INT4 gs128 asym | No disponible | falcon-llm-license | HuggingFace |
-| tiiuae/Falcon3-7B-Instruct (base, sin cuantizar) | 7B | bfloat16 | No disponible | falcon-llm-license (segun la variante) | HuggingFace |
+| fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_round-int4-gs64-sym (este) | 7B (base) / 1.753.635.840 segun safetensors | AutoRound INT4 gs64 sim | No disponible | apache-2.0 | Hugging Face |
+| fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int4-gs64-sym | 7B | GPTQ INT4 gs64 sim | No disponible | apache-2.0 | Hugging Face |
+| fbaldassarri/tiiuae_Falcon3-7B-Instruct-autoawq-int4-gs128-sym | 7B | AWQ INT4 gs128 sim | No disponible | apache-2.0 | Hugging Face / friendli.ai |
+| fbaldassarri/tiiuae_Falcon3-7B-Instruct-autogptq-int4-gs128-asym | 7B | AutoGPTQ INT4 gs128 asym | No disponible | falcon-llm-license | Hugging Face |
+| tiiuae/Falcon3-7B-Instruct (base, sin cuantizar) | 7B | bfloat16 | No disponible | falcon-llm-license (segun la variante) | Hugging Face |
 
 Observacion: la licencia del artefacto padre aparece como apache-2.0 en este repositorio, pero al menos una de las variantes del mismo autor declara `falcon-llm-license`, por lo que conviene verificar la licencia aplicable antes de uso comercial. No se dispone de datos de rendimiento comparativos entre estas variantes.
 
@@ -87,7 +87,7 @@ Observacion: la licencia del artefacto padre aparece como apache-2.0 en este rep
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_round-int4-gs64-sym
+- Modelo en Hugging Face: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_round-int4-gs64-sym
 - Modelo base: https://huggingface.co/tiiuae/Falcon3-7B-Instruct
 - Intel AutoRound (repositorio): https://github.com/intel/auto-round
 - Receta de replicacion (auto-round-pipeline): https://git.epicdynamic.com/auto-round-pipeline

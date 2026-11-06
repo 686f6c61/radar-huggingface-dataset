@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Elysia_Illust_Lora es un adaptador LoRA publicado en HuggingFace por el usuario HentaiMike bajo el identificador `HentaiMike/Elysia_Illust_Lora`. Por el nombre y el tamaño del repositorio (0,9 GB), se trata de un ajuste fino ligero orientado a la generación de ilustraciones, presumiblemente para un modelo base de difusión de imágenes. No se dispone de información sobre el modelo base sobre el que se aplica el adaptador, ni sobre el pipeline declarado, que aparece como no disponible.
+Elysia_Illust_Lora es un adaptador LoRA publicado en Hugging Face por el usuario HentaiMike bajo el identificador `HentaiMike/Elysia_Illust_Lora`. Por el nombre y el tamaño del repositorio (0,9 GB), se trata de un ajuste fino ligero orientado a la generación de ilustraciones, presumiblemente para un modelo base de difusión de imágenes. No se dispone de información sobre el modelo base sobre el que se aplica el adaptador, ni sobre el pipeline declarado, que aparece como no disponible.
 
 La model card publicada es prácticamente vacía: únicamente declara `license: unknown` y no incluye descripción, ejemplos, parámetros de inferencia ni datos de entrenamiento. El repositorio no registra descargas ni likes en el momento de la consulta, y no cuenta con etiquetas que identifiquen la librería o la tarea concreta más allá de `region:us`.
 
@@ -71,5 +71,5 @@ No disponible. No se conocen adaptadores comparables porque no se ha identificad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HentaiMike/Elysia_Illust_Lora
+- Hugging Face: https://huggingface.co/HentaiMike/Elysia_Illust_Lora
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | nvidia/GLM-5.3-Flash-NVFP4 | 320 B totales / 18 B activos (model card); 168,89 B segun safetensors | Hasta 1M tokens | NVFP4, pesos y activaciones | MIT | Pesos safetensors, 204,5 GB, vLLM sobre Blackwell |
-| zai-org/GLM-5.3-Flash (modelo base) | 320 B totales / 18 B activos (model card) | Hasta 1M tokens | Sin cuantizar (precision completa) | No disponible en la informacion proporcionada | Repositorio HuggingFace del autor original |
+| zai-org/GLM-5.3-Flash (modelo base) | 320 B totales / 18 B activos (model card) | Hasta 1M tokens | Sin cuantizar (precision completa) | No disponible en la informacion proporcionada | Repositorio Hugging Face del autor original |
 | Otras alternativas MoE multimodales de escala comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de datos verificables sobre modelos competidores equivalentes (parametros, contexto, rendimiento o licencia), por lo que la comparativa se limita al modelo base del que deriva esta cuantizacion. La diferencia practica entre ambos es el formato de pesos: el modelo de NVIDIA llega ya cuantizado, mientras que el base exigiria un proceso de cuantizacion previo.
@@ -110,7 +110,7 @@ No se dispone en la informacion proporcionada de datos verificables sobre modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/GLM-5.3-Flash-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/nvidia/GLM-5.3-Flash-NVFP4
 - Modelo base (ZAI): https://huggingface.co/zai-org/GLM-5.3-Flash
 - NVIDIA Model Optimizer (repositorio): https://github.com/NVIDIA/Model-Optimizer
 - Dataset de calibracion cnn_dailymail: https://huggingface.co/datasets/abisee/cnn_dailymail

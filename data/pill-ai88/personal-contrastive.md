@@ -2,9 +2,9 @@
 
 ## Resumen
 
-pill-ai88/personal-contrastive es un repositorio de HuggingFace publicado por el usuario pill-ai88 que implementa una variante de la arquitectura Blip (Bootstrapping Language-Image Pre-training) orientada a entrenamiento contrastivo, en una configuracion declarada como "xlarge". No se trata de un checkpoint entrenado ni evaluado, sino de una implementacion de referencia con un checkpoint de inicializacion valido para pruebas de humo (smoke tests). La model card del autor indica explicitamente que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
+pill-ai88/personal-contrastive es un repositorio de Hugging Face publicado por el usuario pill-ai88 que implementa una variante de la arquitectura Blip (Bootstrapping Language-Image Pre-training) orientada a entrenamiento contrastivo, en una configuracion declarada como "xlarge". No se trata de un checkpoint entrenado ni evaluado, sino de una implementacion de referencia con un checkpoint de inicializacion valido para pruebas de humo (smoke tests). La model card del autor indica explicitamente que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
-El repositorio incluye `train.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta de experimento por defecto (optimizador lion con planificador de tipo step) y `model.safetensors` como inicializacion. La arquitectura declarada usa atencion dilatada, fusion por cross attention, activacion gelu tanh y normalizacion instancenorm. El pipeline no esta declarado en los metadatos de HuggingFace y no se especifican idiomas soportados.
+El repositorio incluye `train.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta de experimento por defecto (optimizador lion con planificador de tipo step) y `model.safetensors` como inicializacion. La arquitectura declarada usa atencion dilatada, fusion por cross attention, activacion gelu tanh y normalizacion instancenorm. El pipeline no esta declarado en los metadatos de Hugging Face y no se especifican idiomas soportados.
 
 Su relevancia es principalmente como punto de partida reproducible para experimentos propios: el autor enfatiza codigo transparente y pruebas repetibles, y recomienda evaluar con un conjunto held-out especifico de la tarea, al menos tres semillas y una linea base de capacidad equivalente. Los metadatos de safetensors reportan 33.088 parametros totales, una cifra que resulta inconsistente con la escala "xlarge" declarada en la model card y que conviene verificar antes de cualquier uso.
 
@@ -24,7 +24,7 @@ Su relevancia es principalmente como punto de partida reproducible para experime
 | Activacion | gelu tanh |
 | Normalizacion | instancenorm |
 | Optimizador por defecto | lion con planificador step |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0.0 GB |
 | Fecha de creacion | 2026-09-21 |
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento, contexto o parametros verificados de este
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pill-ai88/personal-contrastive | 33.088 (metadatos safetensors) | no disponible | sin benchmarks declarados | bsd-3-clause | HuggingFace, checkpoint de inicializacion |
+| pill-ai88/personal-contrastive | 33.088 (metadatos safetensors) | no disponible | sin benchmarks declarados | bsd-3-clause | Hugging Face, checkpoint de inicializacion |
 | Blip (Salesforce) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | CLIP | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,12 +89,12 @@ No se dispone de datos de rendimiento, contexto o parametros verificados de este
 - Idiomas soportados no declarados: no se puede garantizar cobertura multilingue ni el comportamiento en castellano.
 - Sin contexto declarado: no hay datos sobre longitud de ventana, lo que impide planificar casos de uso con entradas largas.
 - Restricciones de licencia: bsd-3-clause es permisiva y permite uso comercial del codigo, pero la propia model card advierte de revisar por separado los terminos de los datos de origen cuando el repositorio se use con datasets externos.
-- No existe pipeline declarado en HuggingFace ni integracion garantizada con runtimes de inferencia estandar; se requiere adaptador explicito.
+- No existe pipeline declarado en Hugging Face ni integracion garantizada con runtimes de inferencia estandar; se requiere adaptador explicito.
 - Cero descargas y cero likes: no hay comunidad que haya validado el repositorio.
 - Para cualquier resultado publicado a partir de este repositorio, el autor exige documentar los pesos entrenados de forma separada de los valores por defecto aqui incluidos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pill-ai88/personal-contrastive
+- Hugging Face: https://huggingface.co/pill-ai88/personal-contrastive
 - Los resultados de la busqueda web proporcionada no contienen enlaces relevantes al modelo: corresponden a resultados no relacionados (diccionarios, identificadores de farmacos y similares), por lo que no se incluyen.
 - Paper, blog, repositorio de codigo adicional o demo: no disponibles.

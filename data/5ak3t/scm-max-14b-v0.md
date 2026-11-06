@@ -80,8 +80,8 @@ No se dispone de comparativas publicadas con otros clasificadores de decisión t
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 5ak3t/scm-max-14b-v0 | 14B base + LoRA r=16 | 1.024 tokens efectivos | fresh_sel 0,810; dev 0,764; zs_td 0,645 (balanced 0,540); sec_cve_open 0,598 | mixed-training-data (other) | HuggingFace (adaptador, experimental) |
-| Qwen/Qwen3-14B-Base | 14B | ventana nativa Qwen3 (mayor que 1.024) | no comparable (modelo generativo de propósito general) | Apache-2.0 | HuggingFace |
+| 5ak3t/scm-max-14b-v0 | 14B base + LoRA r=16 | 1.024 tokens efectivos | fresh_sel 0,810; dev 0,764; zs_td 0,645 (balanced 0,540); sec_cve_open 0,598 | mixed-training-data (other) | Hugging Face (adaptador, experimental) |
+| Qwen/Qwen3-14B-Base | 14B | ventana nativa Qwen3 (mayor que 1.024) | no comparable (modelo generativo de propósito general) | Apache-2.0 | Hugging Face |
 | Otros clasificadores tipados comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,8 +100,8 @@ No se dispone de comparativas publicadas con otros clasificadores de decisión t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/5ak3t/scm-max-14b-v0
-- Perfil del autor en HuggingFace: https://huggingface.co/5ak3t
+- Modelo en Hugging Face: https://huggingface.co/5ak3t/scm-max-14b-v0
+- Perfil del autor en Hugging Face: https://huggingface.co/5ak3t
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B-Base
 - Repositorio fuente del proyecto (rama `edge-master`): https://github.com/codecraf8/rev
 - Enlace de licencia indicado en la model card: https://github.com/codecraf8/rev

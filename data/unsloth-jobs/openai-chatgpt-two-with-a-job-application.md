@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `unsloth-jobs`, contiene un checkpoint del modelo GPT-2 original de OpenAI. A pesar del nombre del repositorio (`openai-chatgpt-two-with-a-job-application`), el contenido es el modelo GPT-2 en su versión más pequeña, tal y como indica la model card incluida. El modelo fue presentado por OpenAI en 2019 y está pensado para generación de texto autoregresiva y extracción de características.
+Este repositorio de Hugging Face, publicado por el usuario `unsloth-jobs`, contiene un checkpoint del modelo GPT-2 original de OpenAI. A pesar del nombre del repositorio (`openai-chatgpt-two-with-a-job-application`), el contenido es el modelo GPT-2 en su versión más pequeña, tal y como indica la model card incluida. El modelo fue presentado por OpenAI en 2019 y está pensado para generación de texto autoregresiva y extracción de características.
 
 GPT-2 es un transformer decoder-only entrenado con un objetivo de causal language modeling sobre un corpus de texto en inglés. Según los metadatos de los pesos en formato safetensors, el modelo tiene 137.022.720 parámetros, aunque la model card original indica 124 millones. Su ventana de contexto es de 1024 tokens, lo que lo hace adecuado para tareas de generación de texto corto y fine-tuning en tareas downstream. Al ser un modelo pequeño, se puede ejecutar en hardware modesto, incluida CPU.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GPT-2 (este modelo) | 137M (segun metadatos) | 1024 | MIT | HuggingFace |
-| GPT-2 medium | 355M | 1024 | MIT | HuggingFace |
-| DistilGPT-2 | 82M | 1024 | MIT | HuggingFace |
+| GPT-2 (este modelo) | 137M (segun metadatos) | 1024 | MIT | Hugging Face |
+| GPT-2 medium | 355M | 1024 | MIT | Hugging Face |
+| DistilGPT-2 | 82M | 1024 | MIT | Hugging Face |
 
 GPT-2 medium ofrece mayor capacidad de generacion pero requiere mas recursos. DistilGPT-2 es mas ligero y rapido, aunque con menor calidad. Este modelo se situa entre ambos en tamano y rendimiento.
 
@@ -80,12 +80,12 @@ GPT-2 medium ofrece mayor capacidad de generacion pero requiere mas recursos. Di
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/unsloth-jobs/openai-chatgpt-two-with-a-job-application
+- Repositorio en Hugging Face: https://huggingface.co/unsloth-jobs/openai-chatgpt-two-with-a-job-application
 - Paper original de GPT-2: https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
 - Blog de OpenAI sobre GPT-2: https://openai.com/blog/better-language-models/
 - Model card original de OpenAI: https://github.com/openai/gpt-2/blob/master/model_card.md
 - Unsloth: https://unsloth.ai/
 - Documentacion de Unsloth para conectar OpenAI: https://unsloth.ai/docs/integrations/connections/openai
-- Perfil de HuggingFace de unsloth: https://huggingface.co/unsloth
+- Perfil de Hugging Face de unsloth: https://huggingface.co/unsloth
 - Repositorio de GitHub de Unsloth: https://github.com/unslothai/unsloth
 - Pagina de careers de OpenAI (no relacionada directamente con el modelo): https://openai.com/careers/

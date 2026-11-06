@@ -75,8 +75,8 @@ La información disponible no incluye datos de rendimiento ni especificaciones d
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nurdich/Qwen-Image-2.1 (réplica) | 7.115.124.736 | no aplica | qwen-research | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen-Image-2.1 (oficial) | no disponible | no aplica | qwen-research | HuggingFace, ModelScope, demo en Spaces |
+| nurdich/Qwen-Image-2.1 (réplica) | 7.115.124.736 | no aplica | qwen-research | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen/Qwen-Image-2.1 (oficial) | no disponible | no aplica | qwen-research | Hugging Face, ModelScope, demo en Spaces |
 | Qwen-Image (versión anterior de la familia) | no disponible | no aplica | no disponible | referenciado en la documentación del proyecto |
 | Alternativas de la misma categoría (FLUX, Stable Diffusion, etc.) | no disponible | no aplica | no disponible | no se han proporcionado datos en la información disponible |
 
@@ -97,10 +97,10 @@ No se dispone de comparativas de calidad, eficiencia ni licencia frente a otros 
 ## Enlaces
 
 - Repositorio analizado (réplica): https://huggingface.co/nurdich/Qwen-Image-2.1
-- Repositorio oficial en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Repositorio oficial en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog del modelo: https://qwen.ai/blog?id=qwen-image-2.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Repositorio GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - Discord del proyecto: https://discord.gg/CV4E9rpNSD
 - Licencia (Qwen Research License Agreement): https://huggingface.co/nurdich/Qwen-Image-2.1/blob/main/LICENSE

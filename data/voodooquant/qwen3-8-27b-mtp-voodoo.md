@@ -85,7 +85,7 @@ No se dispone de datos suficientes para comparar Qwen3.8-27B con otros modelos d
 
 ## Enlaces
 
-- Repositorio HuggingFace del quant: https://huggingface.co/voodooquant/Qwen3.8-27B-MTP-Voodoo
+- Repositorio Hugging Face del quant: https://huggingface.co/voodooquant/Qwen3.8-27B-MTP-Voodoo
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Sitio web de Voodoo Quant: https://voodooquant.com
 - Qwen Cloud (servicio gestionado): https://www.qwencloud.com

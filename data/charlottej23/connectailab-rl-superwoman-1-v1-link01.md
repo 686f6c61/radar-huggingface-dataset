@@ -68,8 +68,8 @@ Los datos provienen de la model card del autor. La evaluación de marcha usa una
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | Adaptador sobre 0,8B | No disponible | Decisión discreta en robot simulado | Apache 2.0 | HuggingFace |
-| Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en la información | HuggingFace |
+| LINK-01 (este modelo) | Adaptador sobre 0,8B | No disponible | Decisión discreta en robot simulado | Apache 2.0 | Hugging Face |
+| Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en la información | Hugging Face |
 | Agente PPO profesor (brain.json) | No aplica (política RL) | No aplica | Decisión discreta en robot simulado | No disponible | Repositorio CONNECT TYCOON |
 
 No se dispone de información sobre otros adaptadores LoRA comparables de la misma familia o tarea en la documentación proporcionada.
@@ -87,7 +87,7 @@ No se dispone de información sobre otros adaptadores LoRA comparables de la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Charlottej23/connectailab-rl-superwoman-1-v1-link01
+- Hugging Face: https://huggingface.co/Charlottej23/connectailab-rl-superwoman-1-v1-link01
 - GitHub CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

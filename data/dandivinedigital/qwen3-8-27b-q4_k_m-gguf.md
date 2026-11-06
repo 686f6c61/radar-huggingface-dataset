@@ -4,7 +4,7 @@
 
 DanDivineDigital/Qwen3.8-27B-Q4_K_M-GGUF es una cuantizacion en formato GGUF del modelo Qwen/Qwen3.8-27B, generada automaticamente mediante el espacio GGUF-my-repo de ggml.ai sobre llama.cpp. No se trata de un modelo original, sino de una conversion de pesos pensada para su ejecucion en llama.cpp y en herramientas compatibles con GGUF (Ollama, LM Studio, etc.). El repositorio tiene 16,8 GB y declara 27.320.697.856 parametros en el modelo base.
 
-El modelo subyacente, Qwen3.8-27B, pertenece a la familia Qwen y esta etiquetado en HuggingFace con el pipeline image-text-to-text, lo que sugiere capacidades multimodales de entrada (imagen y texto). La licencia declarada es Apache 2.0, lo que permite uso comercial sin restricciones adicionales mas alla de las de dicha licencia.
+El modelo subyacente, Qwen3.8-27B, pertenece a la familia Qwen y esta etiquetado en Hugging Face con el pipeline image-text-to-text, lo que sugiere capacidades multimodales de entrada (imagen y texto). La licencia declarada es Apache 2.0, lo que permite uso comercial sin restricciones adicionales mas alla de las de dicha licencia.
 
 La relevancia de esta ficha es practica: permite desplegar un modelo de ~27B en hardware de consumo mediante cuantizacion Q4_K_M, a costa de una perdida de precision respecto a los pesos originales. Cabe senalar que el repositorio no incluye model card propia mas alla de la plantilla de conversion, y no se han publicado datos de benchmarks, idiomas ni detalles de entrenamiento en la informacion disponible.
 
@@ -80,7 +80,7 @@ No se dispone de datos suficientes para comparar rendimiento con alternativas de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DanDivineDigital/Qwen3.8-27B-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/DanDivineDigital/Qwen3.8-27B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

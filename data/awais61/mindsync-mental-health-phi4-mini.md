@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mindsync-mental-health-phi4-mini es un ajuste fino (fine-tuning) del modelo phi-4-mini-instruct de Microsoft, publicado por el usuario awais61 en HuggingFace. El modelo se ha entrenado mediante SFT (supervised fine-tuning) sobre la version cuantizada a 4 bits de Unsloth (unsloth/phi-4-mini-instruct-unsloth-bnb-4bit), utilizando la libreria TRL de HuggingFace. El nombre sugiere un proposito orientado a dominios de salud mental y diario terapeutico, en linea con el producto MindSync, aunque la model card no documenta el dataset, el dominio ni los objetivos de entrenamiento.
+mindsync-mental-health-phi4-mini es un ajuste fino (fine-tuning) del modelo phi-4-mini-instruct de Microsoft, publicado por el usuario awais61 en Hugging Face. El modelo se ha entrenado mediante SFT (supervised fine-tuning) sobre la version cuantizada a 4 bits de Unsloth (unsloth/phi-4-mini-instruct-unsloth-bnb-4bit), utilizando la libreria TRL de Hugging Face. El nombre sugiere un proposito orientado a dominios de salud mental y diario terapeutico, en linea con el producto MindSync, aunque la model card no documenta el dataset, el dominio ni los objetivos de entrenamiento.
 
 Se trata de un modelo denso de tipo transformer decoder-only, heredando del base phi-4-mini una arquitectura compacta (aproximadamente 3,8 mil millones de parametros y una ventana de contexto de 128 000 tokens, segun las especificaciones publicas de Microsoft). El repositorio ocupa 0,1 GB, lo que resulta llamativamente pequeno para un modelo de ese tamano incluso en 4 bits, y sugiere que podria tratarse de adaptadores LoRA o de pesos parciales en lugar de un modelo completo fusionado.
 
@@ -41,7 +41,7 @@ Dado el tamano del repositorio (0,1 GB), es plausible que el artefacto publicado
 - Generacion de texto conversacional en formato de chat multi-turno, segun el ejemplo de `pipeline` incluido en la model card.
 - Razonamiento basico y respuesta a preguntas, heredado de phi-4-mini-instruct (capacidades STEM, matematicas, logica y codigo en el modelo base).
 - Soporte de instrucciones de sistema y formato de mensajes con roles (`user`, `assistant`), tal y como se muestra en el snippet de uso.
-- Compatibilidad declarada con endpoints de HuggingFace (etiqueta `endpoints_compatible`).
+- Compatibilidad declarada con endpoints de Hugging Face (etiqueta `endpoints_compatible`).
 - Capacidades multilingues: no documentadas en el ajuste; el modelo base declara soporte para multiples idiomas.
 - Tool calling, function calling, agentes y razonamiento multi-paso: no documentados en la ficha, aunque el modelo base phi-4-mini-instruct si los soporta parcialmente.
 - Modo de razonamiento explicito (thinking mode), vision o audio: no disponibles.
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 3 GB en cuantizacion 4 bits y entre 7 y 8 GB en FP16 para un modelo de 3,8B parametros. Estas cifras corresponden al modelo base y no estan confirmadas para este ajuste concreto.
 - GPU recomendadas: NVIDIA RTX 3090, RTX 4090, L4, A10G, A100 o H100 para despliegues con concurrencia. Para uso individual, cualquier GPU con 8 GB o mas de VRAM es suficiente en 4 bits.
 - Compatibilidad con GPU de consumo: si, cabe en tarjetas como RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 o RTX 4090, tanto en 4 bits como en FP16 en las de mayor VRAM.
-- Opciones de despliegue: transformers (soporte nativo declarado), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), vLLM y TGI para servir en produccion, y llama.cpp/Ollama previa conversion a GGUF (no incluida en el repositorio). Para cargar el base en 4 bits es necesario disponer de bitsandbytes.
+- Opciones de despliegue: transformers (soporte nativo declarado), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), vLLM y TGI para servir en produccion, y llama.cpp/Ollama previa conversion a GGUF (no incluida en el repositorio). Para cargar el base en 4 bits es necesario disponer de bitsandbytes.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones para este modelo.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ La comparacion directa de rendimiento no es posible porque el ajuste analizado n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/awais61/mindsync-mental-health-phi4-mini
+- Modelo en Hugging Face: https://huggingface.co/awais61/mindsync-mental-health-phi4-mini
 - Modelo base (Unsloth, 4-bit): https://huggingface.co/unsloth/phi-4-mini-instruct-unsloth-bnb-4bit
 - Modelo original de Microsoft: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Phi-4 (14B) de Microsoft: https://huggingface.co/microsoft/phi-4

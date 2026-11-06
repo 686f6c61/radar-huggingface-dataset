@@ -2,7 +2,7 @@
 
 ## Resumen
 
-efficientformer-retrieval-lab es un repositorio experimental publicado por el usuario Hu766144 en HuggingFace que contiene una implementación funcional de una EfficientFormer en configuración *tiny* orientada a tareas de *retrieval*. No es un modelo entrenado: el archivo `model.safetensors` se describe explícitamente como un checkpoint de inicialización válido para *smoke tests*, y el autor declara que no reclama ninguna puntuación de benchmark. El repositorio suma 0 descargas y 0 *likes* en el momento de la consulta.
+efficientformer-retrieval-lab es un repositorio experimental publicado por el usuario Hu766144 en Hugging Face que contiene una implementación funcional de una EfficientFormer en configuración *tiny* orientada a tareas de *retrieval*. No es un modelo entrenado: el archivo `model.safetensors` se describe explícitamente como un checkpoint de inicialización válido para *smoke tests*, y el autor declara que no reclama ninguna puntuación de benchmark. El repositorio suma 0 descargas y 0 *likes* en el momento de la consulta.
 
 El interés del artefacto es metodológico más que de rendimiento. El autor prioriza código transparente y experimentos reproducibles: se incluyen `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta por defecto, que usa SGD con un *schedule* de *warmup* constante. La información de arquitectura disponible indica atención *flash*, fusión por *co-attention*, activación swish y normalización InstanceNorm.
 
@@ -84,7 +84,7 @@ No se han encontrado en la búsqueda web resultados relevantes sobre este reposi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| efficientformer-retrieval-lab (este) | 49.600 | no disponible | sin benchmark declarado | BSD-3-Clause | HuggingFace, 0 descargas |
+| efficientformer-retrieval-lab (este) | 49.600 | no disponible | sin benchmark declarado | BSD-3-Clause | Hugging Face, 0 descargas |
 | EfficientFormer original (referencia, variante L1) | ~12,3 M (cifra de referencia no verificada) | no aplica (backbone) | no disponible en esta busqueda | licencia del proyecto original | repositorio publico |
 | CLIP ViT-B/32 (referencia) | ~151 M (cifra de referencia no verificada) | 77 tokens de texto | no disponible en esta busqueda | licencia del proyecto original | repositorio publico |
 | Modelos de retrieval imagen-texto tipo ALBEF o BLIP | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -103,6 +103,6 @@ No se han encontrado en la búsqueda web resultados relevantes sobre este reposi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hu766144/efficientformer-retrieval-lab
+- Hugging Face: https://huggingface.co/Hu766144/efficientformer-retrieval-lab
 - Repositorio (archivos incluidos): `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo adicionales: no disponibles en la informacion proporcionada. La búsqueda web no devolvió resultados relevantes sobre este modelo.

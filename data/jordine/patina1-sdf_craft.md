@@ -94,7 +94,7 @@ No se dispone de comparación con adaptadores LoRA ajenos al proyecto ni con mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jordine/patina1-sdf_craft
+- Modelo en Hugging Face: https://huggingface.co/Jordine/patina1-sdf_craft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Estado relacionado `patina3-artisanal_sdf_s0`: https://huggingface.co/Jordine/patina3-artisanal_sdf_s0
 - Estado relacionado `patina3-artisanal_sdf_s1`: https://huggingface.co/Jordine/patina3-artisanal_sdf_s1

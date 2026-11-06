@@ -4,7 +4,7 @@
 
 El modelo `roberta-large_MBTI_F_MBTI_agg_balanced_25`, desarrollado por el usuario DrinkIcedT, es un clasificador de texto basado en la arquitectura RoBERTa-large, especializado en la clasificación de tipos de personalidad MBTI (Myers-Briggs Type Indicator), concretamente en la dimensión Feeling (F). Se trata de un modelo de 355 millones de parámetros entrenado desde cero sobre un conjunto de datos no especificado, con el objetivo de predecir la preferencia F frente a su opuesta (Thinking) a partir de texto libre.
 
-El modelo está publicado en HuggingFace Hub con el pipeline de `text-classification` y formato de pesos `safetensors`, aunque carece de licencia declarada y de información sobre los idiomas soportados. Su relevancia radica en que aborda una tarea de análisis de personalidad con un modelo de gran tamaño, aunque la falta de documentación y de datos de entrenamiento públicos limita su uso en producción. Los resultados de evaluación reportados por el autor indican un F1 de 0.7484 con un umbral de decisión de 0.6, lo que sugiere un rendimiento moderado en la tarea de clasificación binaria.
+El modelo está publicado en Hugging Face Hub con el pipeline de `text-classification` y formato de pesos `safetensors`, aunque carece de licencia declarada y de información sobre los idiomas soportados. Su relevancia radica en que aborda una tarea de análisis de personalidad con un modelo de gran tamaño, aunque la falta de documentación y de datos de entrenamiento públicos limita su uso en producción. Los resultados de evaluación reportados por el autor indican un F1 de 0.7484 con un umbral de decisión de 0.6, lo que sugiere un rendimiento moderado en la tarea de clasificación binaria.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ El entrenamiento se realizó con una tasa de aprendizaje de 1e-5, un tamaño de 
 - Clasificación de texto binaria para la dimensión Feeling (F) del MBTI, distinguiendo entre preferencias Feeling y Thinking.
 - Inferencia sobre texto libre, probablemente fragmentos de escritura o respuestas a preguntas abiertas.
 - Salida con puntuación de probabilidad y umbral configurable (el autor reporta un umbral óptimo de 0.6).
-- Compatible con la librería Transformers de HuggingFace y con `text-embeddings-inference` para despliegue en producción.
+- Compatible con la librería Transformers de Hugging Face y con `text-embeddings-inference` para despliegue en producción.
 - No se reportan capacidades adicionales como generación de texto, razonamiento, tool calling o soporte multilingüe.
 
 ## Casos de uso
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos (MML
 - VRAM estimada: el modelo tiene 355 millones de parámetros, por lo que en precisión fp32 ocupa aproximadamente 1.4 GB en memoria. Para inferencia con un batch pequeño, se necesitan al menos 4 GB de VRAM, pero es recomendable 8 GB para mayor comodidad.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM, como NVIDIA RTX 3060, RTX 4070, A10 o superiores. En GPUs con menos memoria se puede usar cuantización (aunque no se especifican formatos disponibles).
 - Cabe en GPUs de consumo: sí, en tarjetas como RTX 3060 (12 GB) o RTX 4060 Ti (16 GB) se puede ejecutar sin problemas.
-- Opciones de despliegue: al ser un modelo de Transformers, puede servirse con vLLM, TGI, o mediante la API de HuggingFace Inference Endpoints. También se puede exportar a ONNX o usar `text-embeddings-inference` para clasificación.
+- Opciones de despliegue: al ser un modelo de Transformers, puede servirse con vLLM, TGI, o mediante la API de Hugging Face Inference Endpoints. También se puede exportar a ONNX o usar `text-embeddings-inference` para clasificación.
 - Latencia y throughput: no se dispone de datos medidos; para un modelo de este tamaño, la inferencia en GPU suele tardar entre 10 y 50 ms por muestra en batch pequeño, dependiendo de la longitud del texto.
 
 ## Comparativa con modelos similares
@@ -78,4 +78,4 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DrinkIcedT/roberta-large_MBTI_F_MBTI_agg_balanced_25
+- Modelo en Hugging Face: https://huggingface.co/DrinkIcedT/roberta-large_MBTI_F_MBTI_agg_balanced_25

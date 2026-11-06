@@ -57,16 +57,16 @@ No hay requisitos oficiales publicados. Basándose en el tamaño del transformer
 - Inferencia en FP16: aproximadamente 28-30 GB de VRAM solo para los pesos del transformer; los módulos simbólicos y la memoria de 4096 estados en FP32 añadirán varios GB adicionales. Se recomienda una GPU con al menos 40 GB (A100 40GB, A6000) o 80 GB (A100 80GB, H100).
 - Inferencia en 8 bits (INT8): alrededor de 14-16 GB de VRAM para los pesos, más overhead de módulos simbólicos. Podría caber en una RTX 4090 (24 GB) con margen limitado.
 - Inferencia en 4 bits (INT4): aproximadamente 8-10 GB de VRAM para los pesos, más overhead. Podría ejecutarse en GPUs consumer de 12-16 GB (RTX 4070 Ti, RTX 4080) si los módulos simbólicos no exceden la memoria disponible.
-- Opciones de despliegue: el modelo es compatible con HuggingFace Transformers y text-generation-inference (TGI). También hay cuantizaciones GGUF de terceros para su uso con llama.cpp u Ollama, y FriendliAI ofrece inferencia con cuantización FP4/FP8/INT4.
+- Opciones de despliegue: el modelo es compatible con Hugging Face Transformers y text-generation-inference (TGI). También hay cuantizaciones GGUF de terceros para su uso con llama.cpp u Ollama, y FriendliAI ofrece inferencia con cuantización FP4/FP8/INT4.
 - Latencia y throughput: no se han publicado mediciones. Dado el tamaño y la complejidad adicional de los módulos simbólicos, se espera una latencia mayor que la de un Qwen3-14B estándar, especialmente en generación larga.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Symbiotic-14B (este) | 14,77B (transformer) + módulos simbólicos | No disponible (base 32K) | AFL-3.0 | Híbrido simbólico-transformer con memoria persistente | HuggingFace, GGUF terceros |
-| Qwen3-14B (base) | 14,77B | 32K (hasta 131K con YaRN) | Apache 2.0 | Transformer denso estándar | HuggingFace, Ollama, vLLM |
-| Symbiotic-8B | 8B (estimado) | No disponible | AFL-3.0 | Mismo enfoque híbrido, menor tamaño | HuggingFace |
+| Symbiotic-14B (este) | 14,77B (transformer) + módulos simbólicos | No disponible (base 32K) | AFL-3.0 | Híbrido simbólico-transformer con memoria persistente | Hugging Face, GGUF terceros |
+| Qwen3-14B (base) | 14,77B | 32K (hasta 131K con YaRN) | Apache 2.0 | Transformer denso estándar | Hugging Face, Ollama, vLLM |
+| Symbiotic-8B | 8B (estimado) | No disponible | AFL-3.0 | Mismo enfoque híbrido, menor tamaño | Hugging Face |
 
 El Qwen3-14B base es la referencia natural: mismo backbone, pero sin módulos simbólicos, con licencia Apache 2.0 (más permisiva) y un ecosistema de despliegue mucho más maduro. Symbiotic-14B añade complejidad arquitectónica pero carece de benchmarks que demuestren una ventaja real. El Symbiotic-8B, del mismo autor, permite comparar el efecto del escalado dentro de la misma familia.
 
@@ -84,7 +84,7 @@ El Qwen3-14B base es la referencia natural: mismo backbone, pero sin módulos si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/Symiotic-14B
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Symiotic-14B
 - Colección SymbioticAI: https://huggingface.co/collections/reaperdoesntknow/symbioticai-a-collection-of-symbolic-transformers-for-th-681a7f98b5e2397d10192c9a
 - Symbiotic-1B: https://huggingface.co/reaperdoesntknow/Symbiotic-1B
 - Symbiotic-8B: https://huggingface.co/reaperdoesntknow/Symbiotic-8B

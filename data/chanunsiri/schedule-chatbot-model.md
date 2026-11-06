@@ -19,7 +19,7 @@ A pesar de su escasa documentación, el modelo representa un ejemplo de ajuste f
 | Tipos de cuantizacion | no disponible (el modelo base se publico en bnb-4bit, pero el checkpoint final no especifica cuantizacion) |
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (segun el tag safetensors en HuggingFace) |
+| Formato de pesos | safetensors (segun el tag safetensors en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -76,7 +76,7 @@ El modelo se distingue del modelo base por su ajuste fino orientado a un dominio
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/Chanunsiri/schedule-chatbot-model)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Chanunsiri)
+- [Hugging Face del modelo](https://huggingface.co/Chanunsiri/schedule-chatbot-model)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Chanunsiri)
 - [Modelo base unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit](https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit) (referencia indirecta)
 - [Libreria Unsloth](https://github.com/unslothai/unsloth)

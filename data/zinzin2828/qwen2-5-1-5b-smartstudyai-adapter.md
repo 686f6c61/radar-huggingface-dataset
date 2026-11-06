@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zinzin2828/qwen2.5-1.5b-smartstudyai-adapter | 1.500 M | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen2.5-1.5B-Instruct | 1.500 M | 32.768 tokens (modelo base) | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Llama 3.2 1B Instruct | 1.200 M | 128.000 tokens | Llama 3.2 Community License | HuggingFace, Meta |
-| SmolLM2-1.7B-Instruct | 1.700 M | 8.192 tokens | Apache 2.0 | HuggingFace |
+| zinzin2828/qwen2.5-1.5b-smartstudyai-adapter | 1.500 M | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen2.5-1.5B-Instruct | 1.500 M | 32.768 tokens (modelo base) | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Llama 3.2 1B Instruct | 1.200 M | 128.000 tokens | Llama 3.2 Community License | Hugging Face, Meta |
+| SmolLM2-1.7B-Instruct | 1.700 M | 8.192 tokens | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/zinzin2828/qwen2.5-1.5b-smartstudyai-adapter)
-- [Modelo base en HuggingFace](https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit)
+- [Modelo en Hugging Face](https://huggingface.co/zinzin2828/qwen2.5-1.5b-smartstudyai-adapter)
+- [Modelo base en Hugging Face](https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
 - [Modelo Qwen2.5-1.5B-Instruct original](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)

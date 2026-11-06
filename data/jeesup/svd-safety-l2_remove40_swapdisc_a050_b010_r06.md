@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jeesup/svd-safety-l2_remove40_swapdisc_a050_b010_r06` es un checkpoint de investigación publicado en HuggingFace por el usuario Jeesup, derivado de `meta-llama/Llama-2-7b-chat-hf`. No es un asistente conversacional destinado a producción: es un artefacto experimental cuyo objetivo es medir cómo la compresión mediante SVD degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes permite repararlo con mayor eficacia.
+`Jeesup/svd-safety-l2_remove40_swapdisc_a050_b010_r06` es un checkpoint de investigación publicado en Hugging Face por el usuario Jeesup, derivado de `meta-llama/Llama-2-7b-chat-hf`. No es un asistente conversacional destinado a producción: es un artefacto experimental cuyo objetivo es medir cómo la compresión mediante SVD degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes permite repararlo con mayor eficacia.
 
 El procedimiento aplicado consta de dos fases. Primero se comprime Llama-2-7b-chat con SVD-LLM hasta el 60,0% de los parámetros densos (40,02% de parámetros eliminados). Después se edita el modelo con 6 de las 10 rondas previstas de un esquema iterativo de intercambio neutro en parámetros (*parameter-neutral swap*), seleccionando los componentes mediante la regla `disc_iter`. Cada ronda restaura hasta el 0,1% de los parámetros densos, con una escala de inserción de 0,5 y semilla 42; en total se han intercambiado 38.822.656 parámetros (0,60% de los parámetros de proyección densos) y 3.692 componentes.
 
@@ -75,7 +75,7 @@ No se han publicado en la informacion disponible resultados de benchmarks de cap
 
 | Modelo | Parametros | Contexto | Seguridad (ASR AdvBench) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`svd-safety-l2_remove40_swapdisc_a050_b010_r06`) | 6.738.415.616 segun repositorio; fraccion declarada 0,5998 | no disponible | 0,1135 | Llama 2 Community License | Publico en HuggingFace; 0 descargas y 0 likes en el momento de la consulta |
+| Este checkpoint (`svd-safety-l2_remove40_swapdisc_a050_b010_r06`) | 6.738.415.616 segun repositorio; fraccion declarada 0,5998 | no disponible | 0,1135 | Llama 2 Community License | Publico en Hugging Face; 0 descargas y 0 likes en el momento de la consulta |
 | `meta-llama/Llama-2-7b-chat-hf` (modelo base denso) | 6.738.415.616 (referencia) | no disponible en la informacion proporcionada | no disponible | Llama 2 Community License | Publico y ampliamente utilizado |
 | Otras celdas de la misma rejilla experimental (otras reglas y presupuestos) | no disponible | no disponible | no disponible | Llama 2 Community License | No identificadas en la informacion disponible |
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento de alternativas comparables (por ejemplo, 
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a050_b010_r06
+- Ficha en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a050_b010_r06
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Ficheros de licencia y politica de uso incluidos en el repositorio: `LICENSE.txt` y `USE_POLICY.md`
 - La busqueda web realizada no ha devuelto resultados relevantes sobre este modelo: los enlaces recuperados corresponden a paginas de ayuda de Google Translate y Google Business, sin relacion con el checkpoint. No se dispone, por tanto, de papers, blogs, repositorios de codigo ni demos adicionales que documenten este modelo.

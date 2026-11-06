@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Unshifts/gemma-4-12B-it-nvfp4 es una publicacion de pesos en HuggingFace que, por su identificador, corresponde a una version cuantizada en formato NVFP4 del modelo instructivo google/gemma-4-12B-it. El autor es el usuario "Unshifts" y el repositorio se creo el 4 de octubre de 2026, con cero descargas y cero "likes" en el momento de la consulta. La model card publicada se limita a la linea `license: gemma`, por lo que no incluye detalles de arquitectura, datos de entrenamiento ni procesos de cuantizacion.
+Unshifts/gemma-4-12B-it-nvfp4 es una publicacion de pesos en Hugging Face que, por su identificador, corresponde a una version cuantizada en formato NVFP4 del modelo instructivo google/gemma-4-12B-it. El autor es el usuario "Unshifts" y el repositorio se creo el 4 de octubre de 2026, con cero descargas y cero "likes" en el momento de la consulta. La model card publicada se limita a la linea `license: gemma`, por lo que no incluye detalles de arquitectura, datos de entrenamiento ni procesos de cuantizacion.
 
 Gemma 4 12B es, segun fuentes publicas de Google, un modelo denso de tamano medio dentro de la familia Gemma 4, situado por encima de las variantes orientadas a borde E2B y E4B, y disenado para tareas que requieren un razonamiento mas solido manteniendo la posibilidad de ejecutarse en un unico acelerador. Google presenta la familia como multimodal, con capacidades de vision ademas de texto.
 
@@ -87,7 +87,7 @@ Comparativa de rendimiento: no disponible. No se han recuperado cifras que permi
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/Unshifts/gemma-4-12B-it-nvfp4
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-12B
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-12B
 - Cuantizacion NVFP4 equivalente de Red Hat: https://huggingface.co/RedHatAI/gemma-4-12B-it-NVFP4
 - Ficha de Gemma 4 12B en Jetson AI Lab: https://www.jetson-ai-lab.com/models/gemma4-12b/
 - Anuncio de Gemma 4 12B en el blog de Google: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/

@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Huihui-Qwen3.5-4B-abliterated-W4A16-GPTQ (este) | 4,54 B | no disponible | INT4 W4A16 GPTQ | Apache 2.0 | HuggingFace, vLLM |
-| huihui-ai/Huihui-Qwen3.5-4B-abliterated (base) | 4,54 B (aproximado) | no disponible | BF16 | Apache 2.0 | HuggingFace |
-| Qwen3.5-4B (original, sin abliteration) | 4 B (aproximado) | no disponible | BF16 | no disponible en la informacion | HuggingFace |
+| Huihui-Qwen3.5-4B-abliterated-W4A16-GPTQ (este) | 4,54 B | no disponible | INT4 W4A16 GPTQ | Apache 2.0 | Hugging Face, vLLM |
+| huihui-ai/Huihui-Qwen3.5-4B-abliterated (base) | 4,54 B (aproximado) | no disponible | BF16 | Apache 2.0 | Hugging Face |
+| Qwen3.5-4B (original, sin abliteration) | 4 B (aproximado) | no disponible | BF16 | no disponible en la informacion | Hugging Face |
 
 La comparativa se limita a la relacion con el modelo base y el original de Qwen, ya que no se dispone de datos de rendimiento ni de otros modelos cuantizados comparables en la informacion proporcionada. La diferencia principal frente al base es el ahorro de memoria (aproximadamente un cuarto del peso) y la perdida potencial de calidad asociada a la cuantizacion INT4, no cuantificada en los datos disponibles.
 
@@ -84,7 +84,7 @@ La comparativa se limita a la relacion con el modelo base y el original de Qwen,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nchapman/Huihui-Qwen3.5-4B-abliterated-W4A16-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/nchapman/Huihui-Qwen3.5-4B-abliterated-W4A16-GPTQ
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.5-4B-abliterated
 - Dataset de calibracion: https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-SFT-Data
 - Filas de calibracion fijadas: https://huggingface.co/datasets/nchapman/warp-3090-quant-lab-frozen-data

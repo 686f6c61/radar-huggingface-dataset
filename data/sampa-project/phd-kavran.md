@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PhD-kavran es un checkpoint de segmentación semántica espacio-temporal de uso y cobertura del suelo sobre imágenes de satélite, publicado por `sampa-project` en HuggingFace. No es un modelo de lenguaje: es un pipeline de visión por computador que combina un extractor de características convolucional (ShuffleNetV2-x0.5) con una red neuronal de grafos heterogénea (Heterogeneous Graph Transformer, HGT) para clasificar regiones homogéneas de imágenes multiespectrales a lo largo de una serie temporal.
+PhD-kavran es un checkpoint de segmentación semántica espacio-temporal de uso y cobertura del suelo sobre imágenes de satélite, publicado por `sampa-project` en Hugging Face. No es un modelo de lenguaje: es un pipeline de visión por computador que combina un extractor de características convolucional (ShuffleNetV2-x0.5) con una red neuronal de grafos heterogénea (Heterogeneous Graph Transformer, HGT) para clasificar regiones homogéneas de imágenes multiespectrales a lo largo de una serie temporal.
 
 El modelo es el artefacto entrenado de la tesis doctoral *Method for Spatiotemporal Semantic Segmentation of Land Use on Satellite Imagery Using Graph Neural Networks*, defendida por Domen Kavran en la Universidad de Maribor (UM FERI) en marzo de 2026, con Niko Lukač como mentor. El problema que aborda es la clasificación de uso del suelo en series temporales de satélite evitando el coste computacional de aplicar un transformer denso a cada fotograma: primero segmenta cada imagen en regiones, construye un grafo con aristas espaciales y aristas temporales dirigidas entre regiones, muestrea subgrafos alrededor de cada nodo objetivo y clasifica cada nodo con la GNN.
 
@@ -93,7 +93,7 @@ Comparación con alternativas de la misma categoría (segmentación de uso del s
 
 | Modelo | Parametros | Contexto / entrada | mIoU (DynamicEarthNet) | mF1 (DynamicEarthNet) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PhD-kavran (propuesto) | 0,9 M | Subgrafo de regiones, recortes 32 × 32 px RGB+NIR, 1 paso temporal | 0,4145 ± 0,0051 (vecindad espacial) | 0,5202 ± 0,0103 (vecindad temporal) | no disponible | HuggingFace + GitHub |
+| PhD-kavran (propuesto) | 0,9 M | Subgrafo de regiones, recortes 32 × 32 px RGB+NIR, 1 paso temporal | 0,4145 ± 0,0051 (vecindad espacial) | 0,5202 ± 0,0103 (vecindad temporal) | no disponible | Hugging Face + GitHub |
 | GASSL | no disponible | no disponible | 0,3823 ± 0,0156 | 0,4908 ± 0,0198 | no disponible | no disponible |
 | SeCo | no disponible | no disponible | comparado, cifra no publicada | comparado, cifra no publicada | no disponible | no disponible |
 | SatMAE | no disponible | no disponible | comparado, cifra no publicada | comparado, cifra no publicada | no disponible | no disponible |
@@ -101,11 +101,11 @@ Comparación con alternativas de la misma categoría (segmentación de uso del s
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: al no declararse licencia en HuggingFace ni en la model card, no hay autorización explícita de uso comercial. En ausencia de licencia, los derechos quedan reservados por defecto al autor; cualquier uso en producción requiere contacto previo con el autor.
+- Licencia no disponible: al no declararse licencia en Hugging Face ni en la model card, no hay autorización explícita de uso comercial. En ausencia de licencia, los derechos quedan reservados por defecto al autor; cualquier uso en producción requiere contacto previo con el autor.
 - No es un modelo de lenguaje: no procesa texto ni instrucciones, no soporta tool calling ni razonamiento multi-paso, y no debe evaluarse con benchmarks tipo MMLU o GSM8K.
 - Requiere preprocesado propio: el modelo no consume imágenes en bruto, sino grafos y máscaras de segmentación generados por los notebooks del repositorio de GitHub. Sin ese pipeline previo el checkpoint es inutilizable.
 - Dependencia estricta de versiones: DGL debe coincidir con la versión de PyTorch, y la model card fija `torch==2.4.0`, `torchvision==0.19.0` y `torchdata==0.8.0`. Esto complica la integración en entornos con versiones más recientes y en imágenes de contenedor ya existentes.
-- Inconsistencia de identificadores: el ejemplo de uso de la model card descarga `SAMPA-Project/spatiotemporal-land-use-segmentation-gnn`, mientras que el ID del repositorio en HuggingFace es `sampa-project/PhD-kavran`. Conviene verificar cuál de los dos está disponible realmente antes de automatizar la descarga.
+- Inconsistencia de identificadores: el ejemplo de uso de la model card descarga `SAMPA-Project/spatiotemporal-land-use-segmentation-gnn`, mientras que el ID del repositorio en Hugging Face es `sampa-project/PhD-kavran`. Conviene verificar cuál de los dos está disponible realmente antes de automatizar la descarga.
 - Rendimiento desigual por clase: las tres únicas clases con métricas publicadas muestran una horquilla amplia (de IoU 0,8449 en agua a 0,4882 en suelo). No hay métricas publicadas para superficie impermeable, agricultura, humedales ni nieve y hielo, que suelen ser las clases más difíciles en este tipo de benchmarks.
 - Sensibilidad a la resolución y al sensor: el modelo está entrenado sobre DynamicEarthNet, derivado de PlanetScope. No hay evidencia publicada de transferencia a otros sensores, resoluciones o composiciones de bandas distintas de RGB + NIR.
 - Riesgo de error en regiones mal segmentadas: como la unidad de predicción es la región previamente segmentada, errores en la segmentación inicial se propagan directamente a los mapas finales.
@@ -116,7 +116,7 @@ Comparación con alternativas de la misma categoría (segmentación de uso del s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sampa-project/PhD-kavran
+- Modelo en Hugging Face: https://huggingface.co/sampa-project/PhD-kavran
 - Tesis doctoral (Digital Library of the University of Maribor): https://dk.um.si/IzpisGradiva.php?lang=slv&id=95633
 - Repositorio de código: https://github.com/SAMPA-Project/PhD-kavran
 - Contacto del autor: domen.kavran1@um.si

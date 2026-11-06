@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hernandezadrian/generation-warmup` es un repositorio experimental alojado en HuggingFace que contiene una implementación propia de la arquitectura Flamingo orientada a tareas de generación. El autor lo publica como un banco de pruebas para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado y listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, según la propia model card, y no se presenta como un modelo con resultados de benchmark.
+`hernandezadrian/generation-warmup` es un repositorio experimental alojado en Hugging Face que contiene una implementación propia de la arquitectura Flamingo orientada a tareas de generación. El autor lo publica como un banco de pruebas para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado y listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, según la propia model card, y no se presenta como un modelo con resultados de benchmark.
 
 El modelo es de escala "base" y cuenta con tan solo 49.600 parámetros totales según los metadatos reales de safetensors, lo que lo sitúa muy lejos de los grandes modelos multimodales con los que comparte apellido arquitectónico. La configuración incluye atención de ventana deslizante (sliding window), fusión mediante mecanismo de Tucker, activación GELU y normalización LayerNorm. Se distribuye bajo licencia MIT en formato safetensors.
 
@@ -75,6 +75,6 @@ No disponible. La información proporcionada no incluye modelos comparables con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hernandezadrian/generation-warmup
+- Modelo en Hugging Face: https://huggingface.co/hernandezadrian/generation-warmup
 
 No se han encontrado en la búsqueda web enlaces relevantes adicionales (papers, blogs, repositorios o demos) asociados a este modelo.

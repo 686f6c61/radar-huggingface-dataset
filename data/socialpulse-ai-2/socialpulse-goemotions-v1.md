@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| socialpulse-goemotions-v1 | 124,7M | 512 tokens | Clasificación multi-etiqueta de 28 emociones, inglés | MIT | HuggingFace, espejo público |
-| SamLowe/roberta-base-go_emotions | 124,7M | 512 tokens | Idéntica (es el modelo original) | MIT | HuggingFace |
-| j-hartmann/emotion-english-distilroberta-base | no disponible en la información | 512 tokens (RoBERTa-distil) | Clasificación de 7 emociones, inglés | no disponible en la información | HuggingFace |
-| bhadresh-savani/bert-base-uncased-emotion | no disponible en la información | 512 tokens (BERT-base) | Clasificación de 6 emociones, inglés | no disponible en la información | HuggingFace |
+| socialpulse-goemotions-v1 | 124,7M | 512 tokens | Clasificación multi-etiqueta de 28 emociones, inglés | MIT | Hugging Face, espejo público |
+| SamLowe/roberta-base-go_emotions | 124,7M | 512 tokens | Idéntica (es el modelo original) | MIT | Hugging Face |
+| j-hartmann/emotion-english-distilroberta-base | no disponible en la información | 512 tokens (RoBERTa-distil) | Clasificación de 7 emociones, inglés | no disponible en la información | Hugging Face |
+| bhadresh-savani/bert-base-uncased-emotion | no disponible en la información | 512 tokens (BERT-base) | Clasificación de 6 emociones, inglés | no disponible en la información | Hugging Face |
 
 La comparación con alternativas se limita a modelos de la misma familia de clasificación de emociones en inglés. Frente a clasificadores de 6 o 7 emociones, este modelo ofrece un espacio de etiquetas mucho más granular (28), a costa de una mayor complejidad en el mapeo y calibración de umbrales. No se dispone de datos de rendimiento comparativo publicados en la información proporcionada.
 
@@ -85,7 +85,7 @@ La comparación con alternativas se limita a modelos de la misma familia de clas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SocialPulse-AI-2/socialpulse-goemotions-v1
+- Modelo en Hugging Face: https://huggingface.co/SocialPulse-AI-2/socialpulse-goemotions-v1
 - Modelo original: https://huggingface.co/SamLowe/roberta-base-go_emotions
 - Dataset GoEmotions: https://huggingface.co/datasets/google-research-datasets/go_emotions
 - Paper GoEmotions (Demszky et al., ACL 2020): https://arxiv.org/abs/2005.00547

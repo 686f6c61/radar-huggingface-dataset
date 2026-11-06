@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks que permitan comparar calidad objetiva entr
 
 ## Enlaces
 
-- [Spectrallic/MOSS-Image-SFT-8step-DMD-int8-convrot en HuggingFace](https://huggingface.co/Spectrallic/MOSS-Image-SFT-8step-DMD-int8-convrot)
+- [Spectrallic/MOSS-Image-SFT-8step-DMD-int8-convrot en Hugging Face](https://huggingface.co/Spectrallic/MOSS-Image-SFT-8step-DMD-int8-convrot)
 - [OpenMOSS-Team/MOSS-Image-SFT (modelo base)](https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT)
 - [lodestones/MOSS-Image-SFT-8-steps-dmd (LoRA de destilación)](https://huggingface.co/lodestones/MOSS-Image-SFT-8-steps-dmd)
 - [Comfy-Org/MOSS-Image (checkpoint de referencia y codificador de texto)](https://huggingface.co/Comfy-Org/MOSS-Image)

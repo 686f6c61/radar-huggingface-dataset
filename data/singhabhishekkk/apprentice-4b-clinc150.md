@@ -78,9 +78,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Apprentice 4B, CLINC150 intents | 4B (base) + LoRA + cabeza | No disponible | Clasificacion de intents con cabeza sobre estado oculto | Apache-2.0 | HuggingFace, 0 descargas |
+| Apprentice 4B, CLINC150 intents | 4B (base) + LoRA + cabeza | No disponible | Clasificacion de intents con cabeza sobre estado oculto | Apache-2.0 | Hugging Face, 0 descargas |
 | TRACER (surrogate clasico) | No disponible | No disponible | Clasificacion clasica de intents | No disponible | Paper arXiv 2604.14531 |
-| Qwen3.5-4B (base) | 4B | No disponible | LLM generativo generalista | Apache-2.0 | HuggingFace |
+| Qwen3.5-4B (base) | 4B | No disponible | LLM generativo generalista | Apache-2.0 | Hugging Face |
 | Clasificadores CLINC150 especializados (BERT y similares) | No disponible en esta ficha | No disponible | Fine-tuning supervisado de encoder | No disponible | No disponible |
 
 La comparacion con TRACER no es estrictamente equivalente: el 92,4% procede de un split propio del paper y su tratamiento de fuera de dominio puede diferir, mientras que el 95,6% de Apprentice se mide sobre el split publico en dominio.
@@ -100,7 +100,7 @@ La comparacion con TRACER no es estrictamente equivalente: el 92,4% procede de u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/singhabhishekkk/apprentice-4b-clinc150
+- Modelo en Hugging Face: https://huggingface.co/singhabhishekkk/apprentice-4b-clinc150
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Version cuantizada del base: https://huggingface.co/mlx-community/Qwen3.5-4B-OptiQ-4bit
 - Dataset CLINC150: https://huggingface.co/datasets/clinc/clinc_oos

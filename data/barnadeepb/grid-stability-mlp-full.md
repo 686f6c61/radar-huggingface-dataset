@@ -76,7 +76,7 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/barnadeepb/grid-stability-mlp-full
+- Modelo en Hugging Face: https://huggingface.co/barnadeepb/grid-stability-mlp-full
 - Repositorio GitHub del estudio: https://github.com/barnadeepb/grids-stability-study-for-edge-ml
 - Dataset UCI Electrical Grid Stability Simulated Data: https://archive.ics.uci.edu/dataset/471/electrical+grid+stability+simulated+data
 - Paper asociado (citacion pendiente en el repositorio publico): no disponible en la informacion proporcionada

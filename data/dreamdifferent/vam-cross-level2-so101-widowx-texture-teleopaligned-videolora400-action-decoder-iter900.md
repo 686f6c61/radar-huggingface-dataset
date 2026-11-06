@@ -83,12 +83,12 @@ No se dispone de modelos de terceros directamente comparables con datos de rendi
 - Frecuencia de control baja: 5 Hz con chunks de 15 acciones impide tareas que requieran reactividad por debajo de 200 ms.
 - Sin capacidades de lenguaje ni agenticas: no hay soporte de tool calling, dialogo, razonamiento multi-paso ni multilingue.
 - Riesgo de alucinacion: no aplica en el sentido linguistico, pero si existe riesgo de predicciones de accion fisicamente invalidas o no consistentes con la observacion, sin que se documenten mecanismos de filtrado o verificacion.
-- Metadatos inconsistentes: las fechas de creacion y actualizacion registradas (2026-09-23) son posteriores a la fecha de consulta y no cuadran con un repositorio ya publicado, lo que resta fiabilidad a la informacion de la ficha de HuggingFace.
+- Metadatos inconsistentes: las fechas de creacion y actualizacion registradas (2026-09-23) son posteriores a la fecha de consulta y no cuadran con un repositorio ya publicado, lo que resta fiabilidad a la informacion de la ficha de Hugging Face.
 - Ausencia de informacion sobre sesgos: no se documenta composicion demografica ni geografica del dataset de teleoperacion, aunque su impacto es limitado al tratarse de datos de manipulacion robotica.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level2-so101-widowx-texture-teleopaligned-videolora400-action-decoder-iter900
+- Modelo en Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level2-so101-widowx-texture-teleopaligned-videolora400-action-decoder-iter900
 - Variante videolora200: https://huggingface.co/dreamdifferent/vam-cross-level2-so101-widowx-texture-teleopaligned-videolora200-action-decoder-iter900
 - Variante level5 videolora400: https://huggingface.co/dreamdifferent/vam-cross-level5-so101-widowx-texture-teleopaligned-videolora400-action-decoder-iter900
 - Backbone Video2World congelado: https://huggingface.co/dreamdifferent/widowx250-video-fused

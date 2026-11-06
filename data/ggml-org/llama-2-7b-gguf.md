@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 |---|---|---|---|---|---|
 | ggml-org/Llama-2-7B-GGUF | 6,74 B | no disponible | GGUF | llama2 | Conversión oficial del equipo llama.cpp |
 | TheBloke/Llama-2-7B-GGUF | 6,74 B | 4096 (según modelo base) | GGUF | llama2 | Conversión de TheBloke, muy popular, con múltiples cuantizaciones documentadas |
-| meta-llama/Llama-2-7b-hf | 6,74 B | 4096 | safetensors | llama2 | Modelo original en formato HuggingFace |
+| meta-llama/Llama-2-7b-hf | 6,74 B | 4096 | safetensors | llama2 | Modelo original en formato Hugging Face |
 
 La principal diferencia entre las dos versiones GGUF es el autor y la documentación: TheBloke ofrece una lista detallada de cuantizaciones y enlaces a guías, mientras que ggml-org es una conversión automática con fines de desarrollo. Para uso en producción, la versión de TheBloke suele ser más recomendable por su documentación.
 
@@ -75,7 +75,7 @@ La principal diferencia entre las dos versiones GGUF es el autor y la documentac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ggml-org/Llama-2-7B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ggml-org/Llama-2-7B-GGUF
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-hf
 - Proyecto llama.cpp: https://github.com/ggml-org/llama.cpp
 - Discusión de recolección de datos: https://github.com/ggml-org/llama.cpp/discussions/4167

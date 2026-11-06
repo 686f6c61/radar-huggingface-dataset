@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio corresponde a un modelo alojado en HuggingFace bajo el identificador `an1msh-hf4ef26940/kjgfp-control-1793462657`, publicado por el usuario `an1msh-hf4ef26940`. Según los metadatos disponibles, se trata de un modelo basado en la arquitectura CLIPSeg y orientado a la tarea de segmentación de imágenes, implementado con la librería `transformers` y almacenado en formato safetensors.
+Este repositorio corresponde a un modelo alojado en Hugging Face bajo el identificador `an1msh-hf4ef26940/kjgfp-control-1793462657`, publicado por el usuario `an1msh-hf4ef26940`. Según los metadatos disponibles, se trata de un modelo basado en la arquitectura CLIPSeg y orientado a la tarea de segmentación de imágenes, implementado con la librería `transformers` y almacenado en formato safetensors.
 
 La model card del autor lo describe como un "controlled security validation fixture", es decir, un artefacto de validación de seguridad controlada y no un modelo productivo. Esto, junto con el hecho de que el tamaño del repositorio es de 0.0 GB, el modelo tiene cero descargas, cero likes y una fecha de creación muy reciente, sugiere que no contiene pesos reales utilizables o que es un repositorio de prueba.
 
@@ -32,7 +32,7 @@ No obstante, no hay información disponible sobre los datos de entrenamiento, el
 Según los metadatos declarados, las capacidades previstas serían:
 
 - Segmentación de imágenes (pipeline `image-segmentation`), presumiblemente con prompts de texto si sigue el esquema de CLIPSeg.
-- Compatibilidad con la librería `transformers` de HuggingFace.
+- Compatibilidad con la librería `transformers` de Hugging Face.
 - Compatibilidad con endpoints de inferencia (`endpoints_compatible`).
 
 Dado que el repositorio tiene un tamaño de 0.0 GB y se autodefine como fixture de validación, no hay evidencia de que estas capacidades sean funcionales en la práctica.
@@ -59,7 +59,7 @@ No es posible estimar requisitos de hardware reales, ya que el repositorio no co
 - VRAM estimada para inferencia: no disponible.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: la librería `transformers` y el tag `endpoints_compatible` sugieren compatibilidad teórica con los Inference Endpoints de HuggingFace; no hay información sobre vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: la librería `transformers` y el tag `endpoints_compatible` sugieren compatibilidad teórica con los Inference Endpoints de Hugging Face; no hay información sobre vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -69,8 +69,8 @@ Dado que el repositorio no contiene pesos funcionales ni datos de rendimiento, u
 | Modelo | Tipo | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | an1msh-hf4ef26940/kjgfp-control-1793462657 | CLIPSeg (fixture de validación) | no disponible | no disponible | Pesos no presentes (0.0 GB) |
-| CIDAS/clipseg-rd64-refined | CLIPSeg | ~150M (ViT-B/16, aproximado) | Apache 2.0 | Pesos públicos en HuggingFace |
-| Salesforce/blip-image-captioning (tarea distinta) | BLIP | no comparable | BSD-3 | Pesos públicos en HuggingFace |
+| CIDAS/clipseg-rd64-refined | CLIPSeg | ~150M (ViT-B/16, aproximado) | Apache 2.0 | Pesos públicos en Hugging Face |
+| Salesforce/blip-image-captioning (tarea distinta) | BLIP | no comparable | BSD-3 | Pesos públicos en Hugging Face |
 
 Nota: los valores de la fila de CLIPSeg de referencia son aproximados y sirven solo como contexto de categoría; este repositorio concreto no puede compararse en rendimiento porque no hay datos publicados.
 
@@ -85,5 +85,5 @@ Nota: los valores de la fila de CLIPSeg de referencia son aproximados y sirven s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/an1msh-hf4ef26940/kjgfp-control-1793462657
+- Repositorio en Hugging Face: https://huggingface.co/an1msh-hf4ef26940/kjgfp-control-1793462657
 - Paper, blog, demo u otros enlaces relevantes: no disponible.

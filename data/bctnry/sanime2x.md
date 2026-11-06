@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sanime2x es un modelo de reescalado de imagen (pipeline `image-to-image`) publicado por el usuario bctnry en HuggingFace. El repositorio no contiene pesos entrenados: tan solo distribuye codigo de entrenamiento e inferencia en PyTorch, de modo que cada usuario debe entrenar su propio modelo. El nombre y el `pipeline_tag` sugieren un factor de escalado x2 orientado a imagenes de anime, aunque la model card no explicita ni el factor exacto ni la resolucion de trabajo.
+sanime2x es un modelo de reescalado de imagen (pipeline `image-to-image`) publicado por el usuario bctnry en Hugging Face. El repositorio no contiene pesos entrenados: tan solo distribuye codigo de entrenamiento e inferencia en PyTorch, de modo que cada usuario debe entrenar su propio modelo. El nombre y el `pipeline_tag` sugieren un factor de escalado x2 orientado a imagenes de anime, aunque la model card no explicita ni el factor exacto ni la resolucion de trabajo.
 
 El proyecto se compone de dos implementaciones alternativas: una CNN simple con enlace residual global (`main.py`, `enlarge.py`) y una variante basada en ResNet (`main_resnet.py`, `enlarge_resnet.py`). El entrenamiento se realiza sobre el dataset `bctnry/sanime2x-2k`, tambien publicado por el autor, que organiza las imagenes en carpetas `part_{i}/{id}.jpeg`. Se incluye un cargador de datos que decodifica JPEG al vuelo para no precargar todo el dataset en memoria, a cambio de una penalizacion de velocidad.
 
@@ -86,7 +86,7 @@ La busqueda web realizada no devolvio ningun resultado relacionado con el modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bctnry/sanime2x
+- Modelo en Hugging Face: https://huggingface.co/bctnry/sanime2x
 - Dataset utilizado para el entrenamiento: https://huggingface.co/datasets/bctnry/sanime2x-2k
 - Perfil del autor: https://huggingface.co/bctnry
 - Paper, blog tecnico, repositorio de codigo adicional o demo: no disponibles en la informacion proporcionada

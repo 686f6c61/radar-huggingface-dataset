@@ -2,7 +2,7 @@
 
 ## Resumen
 
-XENA-MAXTRAL-X1.0-9B es un repositorio de modelo alojado en HuggingFace por el usuario Lobus22. La informacion publica disponible es minima: la model card es la plantilla generica autogenerada por HuggingFace, con todos los campos marcados como "[More Information Needed]" (autor, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion y hardware). No se ha publicado ninguna descripcion funcional, ningun resultado de benchmarks y ninguna indicacion sobre el dataset o el procedimiento de entrenamiento.
+XENA-MAXTRAL-X1.0-9B es un repositorio de modelo alojado en Hugging Face por el usuario Lobus22. La informacion publica disponible es minima: la model card es la plantilla generica autogenerada por Hugging Face, con todos los campos marcados como "[More Information Needed]" (autor, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion y hardware). No se ha publicado ninguna descripcion funcional, ningun resultado de benchmarks y ninguna indicacion sobre el dataset o el procedimiento de entrenamiento.
 
 Los unicos datos objetivos verificables son los metadatos del repositorio: etiquetas `transformers`, `safetensors`, `unsloth` y `endpoints_compatible`, libreria `transformers`, un unico commit aparente y un tamano de 4,4 GB. El sufijo "9B" del nombre sugiere un modelo de aproximadamente 9.000 millones de parametros, pero esta cifra no esta confirmada en ningun documento del repositorio, y el tamano real del repositorio (4,4 GB) es mas consistente con un checkpoint cuantizado a 4 bits que con pesos en fp16/bf16 de 9B (que ocuparian del orden de 18 GB). La etiqueta `unsloth` apunta a que el modelo podria haberse ajustado o exportado con la libreria Unsloth, habitual en fine-tuning con LoRA/QLoRA, pero no se especifica ni el modelo base ni el metodo.
 
@@ -30,7 +30,7 @@ La relevancia practica de esta ficha es, por tanto, fundamentalmente preventiva:
 
 No hay informacion disponible sobre la arquitectura. La model card no especifica si se trata de un transformer denso, un MoE, un modelo hibrido ni el mecanismo de atencion utilizado. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o SFT, ni hiperparametros de entrenamiento. La seccion "Training Details" de la model card esta integramente marcada como pendiente.
 
-Los unicos indicios tecnicos son indirectos. La etiqueta `unsloth` sugiere que el modelo pudo ser ajustado o exportado con Unsloth, lo que en la practica implica con alta probabilidad un fine-tuning con LoRA o QLoRA sobre un modelo base no declarado. La etiqueta `arxiv:1910.09700` no es una referencia al modelo: corresponde al articulo de Lacoste et al. (2019) sobre emisiones de carbono en machine learning, que aparece citado en la plantilla por defecto de HuggingFace en la seccion "Environmental Impact", por lo que no aporta ninguna informacion sobre arquitectura o entrenamiento. No se identifica ninguna innovacion tecnica publicada.
+Los unicos indicios tecnicos son indirectos. La etiqueta `unsloth` sugiere que el modelo pudo ser ajustado o exportado con Unsloth, lo que en la practica implica con alta probabilidad un fine-tuning con LoRA o QLoRA sobre un modelo base no declarado. La etiqueta `arxiv:1910.09700` no es una referencia al modelo: corresponde al articulo de Lacoste et al. (2019) sobre emisiones de carbono en machine learning, que aparece citado en la plantilla por defecto de Hugging Face en la seccion "Environmental Impact", por lo que no aporta ninguna informacion sobre arquitectura o entrenamiento. No se identifica ninguna innovacion tecnica publicada.
 
 ## Capacidades
 
@@ -70,7 +70,7 @@ El modelo no publica parametros, contexto, licencia ni rendimiento, por lo que s
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| XENA-MAXTRAL-X1.0-9B | no disponible (nombre sugiere ~9B) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| XENA-MAXTRAL-X1.0-9B | no disponible (nombre sugiere ~9B) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Llama 3.1 8B | ~8.000 millones | 128k tokens | Llama 3.1 Community License | Si, amplia bateria publicada | Muy extendida, ecosistema amplio |
 | Qwen2.5 7B | ~7.600 millones | 128k tokens | Apache 2.0 (segun variante) | Si, amplia bateria publicada | Muy extendida |
 | Gemma 2 9B | ~9.200 millones | 8.192 tokens | Gemma Terms of Use | Si, amplia bateria publicada | Extendida |
@@ -94,7 +94,7 @@ No se dispone de ningun dato que permita afirmar que XENA-MAXTRAL-X1.0-9B compit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lobus22/XENA-MAXTRAL-X1.0-9B
+- Hugging Face: https://huggingface.co/Lobus22/XENA-MAXTRAL-X1.0-9B
 - Paper referenciado en la etiqueta `arxiv:1910.09700` (corresponde a Lacoste et al., 2019, sobre emisiones de carbono, citado en la plantilla por defecto, no al modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact
 - Repositorio o demo oficial: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ben072292/Qwen3.5-4B-Base-AIME26-physics-v1` es un ajuste fino por DPO (Direct Preference Optimization) del modelo base `Qwen/Qwen3.5-4B-Base`, publicado por el usuario ben072292 en HuggingFace. Se trata de un "full fine-tune" (todos los pesos se actualizan, no un adaptador LoRA) realizado con LLaMA-Factory sobre un conjunto de datos denominado `physics_dpo`, segun la propia model card. El repositorio tiene 4.539.265.536 parametros (4,54 B) y un tamano de 9,1 GB, lo que es coherente con pesos en precision de 16 bits.
+El modelo `ben072292/Qwen3.5-4B-Base-AIME26-physics-v1` es un ajuste fino por DPO (Direct Preference Optimization) del modelo base `Qwen/Qwen3.5-4B-Base`, publicado por el usuario ben072292 en Hugging Face. Se trata de un "full fine-tune" (todos los pesos se actualizan, no un adaptador LoRA) realizado con LLaMA-Factory sobre un conjunto de datos denominado `physics_dpo`, segun la propia model card. El repositorio tiene 4.539.265.536 parametros (4,54 B) y un tamano de 9,1 GB, lo que es coherente con pesos en precision de 16 bits.
 
 Su relevancia es limitada y muy especifica: es un artefacto de investigacion derivado de la familia Qwen3.5, orientado a preferencias en el dominio de la fisica y etiquetado como `image-text-to-text`, es decir, con capacidad multimodal de entrada imagen-texto. La model card es practicamente vacia (secciones "More information needed"), no se declaran idiomas, no hay resultados de evaluacion y el repositorio no registra descargas ni interacciones en el momento de la consulta. Debe tratarse, por tanto, como un modelo no verificado.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 - VRAM estimada para inferencia (calculos derivados del numero de parametros, no declarados por el autor): en bf16/fp16, en torno a 10-12 GB en funcion de la longitud de contexto y del numero de imagenes por peticion; en cuantizacion de 8 bits, aproximadamente 5-6 GB; en 4 bits, en torno a 3-4 GB. Estas cifras son estimaciones y no estan verificadas para este checkpoint.
 - GPU recomendadas: para bf16 sin cuantizar, tarjetas con 16 GB o mas (RTX 4080/4090, L4, A10G, A100 40 GB, H100). Para cuantizacion de 4 bits, GPU de consumo con 8-12 GB (RTX 3060 12 GB, RTX 4070) podrian ser suficientes para texto, con margen reducido si se procesan imagenes.
 - Cabe en GPU de consumo: si, previsiblemente en bf16 sobre RTX 4090 (24 GB) y en cuantizacion sobre GPUs de 8-12 GB, aunque no hay confirmacion oficial.
-- Opciones de despliegue: el repositorio esta etiquetado como `transformers` y `endpoints_compatible`, por lo que la via soportada es HuggingFace Transformers. No se documenta compatibilidad con vLLM, TGI, llama.cpp, Ollama ni motores de cuantizacion; la etiqueta `qwen3_5` puede no estar soportada por todos los runtimes.
+- Opciones de despliegue: el repositorio esta etiquetado como `transformers` y `endpoints_compatible`, por lo que la via soportada es Hugging Face Transformers. No se documenta compatibilidad con vLLM, TGI, llama.cpp, Ollama ni motores de cuantizacion; la etiqueta `qwen3_5` puede no estar soportada por todos los runtimes.
 - Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de tiempo a primer token. En un modelo denso de 4,54 B en bf16 sobre una A100 o H100, el throughput tipico de la clase suele medirse en miles de tokens por segundo con batching en vLLM, pero no hay datos especificos de este checkpoint.
 - Entrenamiento: el registro indica `distributed_type: multi-GPU` y el nombre del run menciona GH200, por lo que el ajuste se realizo en hardware de centro de datos, no en una GPU de consumo.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (Qwen3.5-4B-Base-AIME26-physics-v1) | 4,54 B | No disponible | `other` | HuggingFace, 0 descargas | Ajuste DPO full sobre Qwen3.5-4B-Base, sin evaluacion |
-| Qwen/Qwen3.5-4B-Base | No disponible en la informacion | No disponible | No disponible | HuggingFace | Modelo base del que deriva; arquitectura multimodal segun la etiqueta del ajuste |
-| Otros modelos densos de ~4B (familia Qwen3, Llama 3.x, Phi) | Del orden de 3-4 B en la clase | No disponible | No disponible | HuggingFace | Categoria comparable por tamano, pero no se dispone de datos verificados en la informacion proporcionada para establecer una comparacion cuantitativa |
+| Este modelo (Qwen3.5-4B-Base-AIME26-physics-v1) | 4,54 B | No disponible | `other` | Hugging Face, 0 descargas | Ajuste DPO full sobre Qwen3.5-4B-Base, sin evaluacion |
+| Qwen/Qwen3.5-4B-Base | No disponible en la informacion | No disponible | No disponible | Hugging Face | Modelo base del que deriva; arquitectura multimodal segun la etiqueta del ajuste |
+| Otros modelos densos de ~4B (familia Qwen3, Llama 3.x, Phi) | Del orden de 3-4 B en la clase | No disponible | No disponible | Hugging Face | Categoria comparable por tamano, pero no se dispone de datos verificados en la informacion proporcionada para establecer una comparacion cuantitativa |
 
 No se dispone de datos verificados de benchmarks, contexto, licencia o rendimiento de los modelos alternativos en la informacion proporcionada, por lo que no es posible establecer una comparativa numerica fiable.
 
@@ -90,7 +90,7 @@ No se dispone de datos verificados de benchmarks, contexto, licencia o rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ben072292/Qwen3.5-4B-Base-AIME26-physics-v1
+- Modelo en Hugging Face: https://huggingface.co/ben072292/Qwen3.5-4B-Base-AIME26-physics-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - LLaMA-Factory (framework de entrenamiento declarado en las etiquetas): no se proporciona enlace en la informacion disponible
 - Paper, blog o demo del autor: no disponible

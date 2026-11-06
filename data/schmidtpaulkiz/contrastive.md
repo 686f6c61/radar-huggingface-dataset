@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Schmidtpaulkiz/contrastive` es un repositorio de HuggingFace publicado por el usuario Schmidtpaulkiz que contiene una implementación propia etiquetada como "Mae for Contrastive", es decir, un esqueleto de código de un modelo tipo Masked Autoencoder orientado a aprendizaje contrastivo. Según la propia model card, no se trata de un modelo entrenado ni de una release con pesos útiles: el fichero `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`Schmidtpaulkiz/contrastive` es un repositorio de Hugging Face publicado por el usuario Schmidtpaulkiz que contiene una implementación propia etiquetada como "Mae for Contrastive", es decir, un esqueleto de código de un modelo tipo Masked Autoencoder orientado a aprendizaje contrastivo. Según la propia model card, no se trata de un modelo entrenado ni de una release con pesos útiles: el fichero `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El dato más relevante es su tamaño real: 33.088 parámetros totales en safetensors, con un repositorio de 0,0 GB. Esto contrasta con la etiqueta "giant" que aparece en su tabla de arquitectura, heredada de la plantilla de configuración del script y no de un modelo de escala real. El repositorio incluye `predict.py` como artefacto principal, junto con `config.json` y `training_args.json`, que registran la configuración de arquitectura y la receta de entrenamiento por defecto (optimizador Lion con schedule coseno).
 
@@ -68,7 +68,7 @@ No existe una categoría estricta de comparación para este artefacto: es un che
 
 | Modelo | Parametros | Estado | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Schmidtpaulkiz/contrastive | 33.088 | Checkpoint de inicializacion | No | apache-2.0 | HuggingFace |
+| Schmidtpaulkiz/contrastive | 33.088 | Checkpoint de inicializacion | No | apache-2.0 | Hugging Face |
 | MAE ViT-Base (referencia publica) | ~86 M | Modelo entrenado | Si | MIT (codigo de referencia) | Publico |
 | MAE ViT-Large (referencia publica) | ~304 M | Modelo entrenado | Si | MIT (codigo de referencia) | Publico |
 | MAE ViT-Huge (referencia publica) | ~632 M | Modelo entrenado | Si | MIT (codigo de referencia) | Publico |
@@ -82,11 +82,11 @@ Las cifras de los modelos de referencia corresponden a implementaciones ampliame
 - La etiqueta de escala "giant" es engañosa frente al recuento real de 33.088 parámetros. Cualquier evaluación basada en esa etiqueta sería incorrecta.
 - No se declara longitud de contexto, idiomas soportados, ni composición de datos de entrenamiento.
 - Licencia: Apache-2.0 permite uso comercial del artefacto, pero la model card advierte de que deben revisarse por separado los términos de los datos de origen si el repositorio se combina con conjuntos de datos externos.
-- Implementación personalizada: las APIs genéricas de carga automática de HuggingFace, vLLM o TGI requieren un adaptador explícito; no se puede asumir compatibilidad directa.
+- Implementación personalizada: las APIs genéricas de carga automática de Hugging Face, vLLM o TGI requieren un adaptador explícito; no se puede asumir compatibilidad directa.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado deberá documentarse de forma separada de los valores por defecto aquí publicados, tal como indica el autor.
 - La fecha de creación registrada (2026-10-06) es posterior a la fecha de consulta habitual de estos contenidos; conviene verificarla antes de citarla.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Schmidtpaulkiz/contrastive
+- Modelo en Hugging Face: https://huggingface.co/Schmidtpaulkiz/contrastive
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-obliterated es una versión con ablación de la dirección de rechazo (refusal-direction ablated) del modelo DeepSeek-V4.1-Flash-1017, publicada por el usuario Aki251 en HuggingFace. La modificación se ha realizado con la herramienta OBLITERATUS mediante el método failspy, que identifica y elimina del espacio de activaciones la dirección asociada a las respuestas de rechazo, de forma que el modelo deja de declinar peticiones que el modelo original rechazaba. Los pesos se distribuyen en BF16 safetensors bajo licencia MIT.
+DeepSeek-V4.1-Flash-1017-obliterated es una versión con ablación de la dirección de rechazo (refusal-direction ablated) del modelo DeepSeek-V4.1-Flash-1017, publicada por el usuario Aki251 en Hugging Face. La modificación se ha realizado con la herramienta OBLITERATUS mediante el método failspy, que identifica y elimina del espacio de activaciones la dirección asociada a las respuestas de rechazo, de forma que el modelo deja de declinar peticiones que el modelo original rechazaba. Los pesos se distribuyen en BF16 safetensors bajo licencia MIT.
 
 El modelo conserva la arquitectura del modelo base, un transformer de tipo mezcla de expertos (MoE) con 754.638.836.864 parámetros totales según los safetensors del repositorio, lo que lo sitúa en la categoría de modelos de gran escala. El repositorio ocupa 1.509,4 GB, coherente con un modelo de ese tamaño en precisión BF16. La información disponible no detalla el número de parámetros activos ni la longitud de contexto del modelo base.
 
@@ -109,8 +109,8 @@ La evaluación MMLU se realizó sobre 2.500 preguntas de las 57 materias, en mod
 
 | Modelo | Parametros totales | Contexto | Licencia | Estado de seguridad | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-obliterated | 754,6 mil millones | no disponible | MIT | Ablacionado: 4,30% de rechazo completo, 78,28% de asistencia dañina | HuggingFace, 0 descargas |
-| DeepSeek-V4.1-Flash-1017 (base) | no disponible en la informacion | no disponible | no disponible | Original: 81,62% de rechazo completo, 10,38% de asistencia dañina | HuggingFace (modelo de referencia) |
+| DeepSeek-V4.1-Flash-1017-obliterated | 754,6 mil millones | no disponible | MIT | Ablacionado: 4,30% de rechazo completo, 78,28% de asistencia dañina | Hugging Face, 0 descargas |
+| DeepSeek-V4.1-Flash-1017 (base) | no disponible en la informacion | no disponible | no disponible | Original: 81,62% de rechazo completo, 10,38% de asistencia dañina | Hugging Face (modelo de referencia) |
 | Otros modelos de la familia DeepSeek | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada no incluye datos de arquitectura, contexto ni rendimiento de modelos alternativos de otros desarrolladores, por lo que no es posible establecer una comparativa cuantitativa con familias como Llama, Qwen o Mistral.
@@ -129,7 +129,7 @@ La informacion proporcionada no incluye datos de arquitectura, contexto ni rendi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aki251/archive-OBLITERATUS-DeepSeek-V4.1-Flash-1017-obliterated
+- Modelo en Hugging Face: https://huggingface.co/Aki251/archive-OBLITERATUS-DeepSeek-V4.1-Flash-1017-obliterated
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Herramienta OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Detalles del método (archivo del repositorio): `winner-recovery-provenance.json`

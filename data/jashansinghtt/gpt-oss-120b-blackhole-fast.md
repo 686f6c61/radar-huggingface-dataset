@@ -66,7 +66,7 @@ Rendimiento de serving medido en la misma QuietBox 2, mismo cliente y mismo día
 
 Referencia adicional del propio autor: el runtime gpt-oss-120b de tt-lab (32 tiles sobre los mismos cuatro chips, expertos en BFP8) midió 6,54 ms por token a ISL 128 y 18,19 ms a ISL 4096 en esa misma máquina (tiempo de comando en dispositivo).
 
-Precisión frente a una referencia fp32 de gpt-oss-120b en HuggingFace (4 prompts harmony por 128 posiciones, media de 2 ejecuciones):
+Precisión frente a una referencia fp32 de gpt-oss-120b en Hugging Face (4 prompts harmony por 128 posiciones, media de 2 ejecuciones):
 
 | Métrica | tt-hous/gpt-oss-120b-p150x4 | gpt-oss-120b-blackhole-fast |
 |---|---|---|
@@ -95,10 +95,10 @@ El autor advierte de que la plantilla de chat de gpt-oss escribe la fecha actual
 
 | Modelo | Hardware | Parámetros | Precisión de pesos | Decodificación batch 1 (ISL 128) | GSM8K-250 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| gpt-oss-120b-blackhole-fast | QuietBox 2 P150x4 (4 chips Blackhole) | 120B (MoE) | Expertos BFP4, atención y KV BFP8 | 4,06 ms/token (246,1 tok/s/u) | 87,6 % | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
+| gpt-oss-120b-blackhole-fast | QuietBox 2 P150x4 (4 chips Blackhole) | 120B (MoE) | Expertos BFP4, atención y KV BFP8 | 4,06 ms/token (246,1 tok/s/u) | 87,6 % | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
 | tt-hous/gpt-oss-120b-p150x4 | QuietBox 2 P150x4 | 120B (MoE) | Expertos BFP4 | 15,28 ms/token (65,4 tok/s/u) | 86,8 % | no disponible | paquete Tenstorrent |
 | Runtime gpt-oss-120b de tt-lab | 4 chips Blackhole (32 tiles) | 120B (MoE) | Expertos BFP8 | 6,54 ms/token (tiempo de dispositivo) | no disponible | no disponible | interno |
-| openai/gpt-oss-120b | GPU / HuggingFace | 120B (MoE) | fp32 de referencia | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| openai/gpt-oss-120b | GPU / Hugging Face | 120B (MoE) | fp32 de referencia | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 Los tres primeros son implementaciones sobre el mismo hardware y el mismo modelo base, por lo que la comparación relevante es de rendimiento y precisión de ejecución, no de capacidades.
 
@@ -107,7 +107,7 @@ Los tres primeros son implementaciones sobre el mismo hardware y el mismo modelo
 - Requiere exactamente cuatro chips P150x4. Los 128 expertos BFP4 consumen unos 17 GB por chip, lo que fija el hardware y descarta configuraciones menores.
 - La ruta fusionada solo sirve batch 1 y muestreo top-k con k menor o igual que 32. Cualquier otra petición cae en los caminos batched, con una latencia muy superior (15,28 ms por token en la referencia frente a 4,06 ms).
 - Estado de release candidate de segunda ronda (etapa 14): no es una versión final y el autor puede cambiar el comportamiento o el rendimiento en revisiones posteriores.
-- Sin descargas ni likes en HuggingFace en el momento de la consulta, y sin publicación del repositorio como artefacto ampliamente validado por terceros.
+- Sin descargas ni likes en Hugging Face en el momento de la consulta, y sin publicación del repositorio como artefacto ampliamente validado por terceros.
 - Las evaluaciones de calidad se limitan a subconjuntos pequeños (250 preguntas de GSM8K, 100 de IFEval) y varían unos 2 puntos entre días por la fecha insertada en el prompt de sistema.
 - Riesgo de alucinación y sesgos: no documentados en la información disponible; son los del modelo base openai/gpt-oss-120b, que deben consultarse en su model card.
 - Idiomas soportados: no disponibles. No hay evidencia publicada aquí sobre capacidades multilingües concretas.
@@ -116,7 +116,7 @@ Los tres primeros son implementaciones sobre el mismo hardware y el mismo modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jashansinghTT/gpt-oss-120b-blackhole-fast
+- Modelo en Hugging Face: https://huggingface.co/jashansinghTT/gpt-oss-120b-blackhole-fast
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Revisión de pesos utilizada: https://huggingface.co/openai/gpt-oss-120b/tree/b5c939de8f754692c1647ca79fbf85e8c1e70f8a
 - Paquete de referencia tt-hous: https://huggingface.co/tt-hous/gpt-oss-120b-p150x4

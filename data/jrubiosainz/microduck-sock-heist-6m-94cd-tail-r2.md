@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la información disponible más 
 
 | Modelo | Tipo | Filas/tamaño | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| microduck-sock-heist-6m-94cd-tail-r2 (este) | Política tabular ONNX | 1901 filas; ONNX de 1.365.211 bytes | No aplica | 5/5 finalizados; media 6,69 s (local, en muestra) | Apache-2.0 (con reservas sobre componentes de terceros) | HuggingFace, 0 descargas |
-| a1rb4Ck/microduck-heist @94cd | Política tabular ONNX (origen) | 1364.816 bytes | No aplica | No disponible en la información | Apache-2.0 declarada | HuggingFace |
-| lphatnguyen/microduck-sock-heist-6m-v3 | Política tabular (posible componente upstream) | No disponible | No aplica | No disponible | Sin licencia declarada | HuggingFace |
+| microduck-sock-heist-6m-94cd-tail-r2 (este) | Política tabular ONNX | 1901 filas; ONNX de 1.365.211 bytes | No aplica | 5/5 finalizados; media 6,69 s (local, en muestra) | Apache-2.0 (con reservas sobre componentes de terceros) | Hugging Face, 0 descargas |
+| a1rb4Ck/microduck-heist @94cd | Política tabular ONNX (origen) | 1364.816 bytes | No aplica | No disponible en la información | Apache-2.0 declarada | Hugging Face |
+| lphatnguyen/microduck-sock-heist-6m-v3 | Política tabular (posible componente upstream) | No disponible | No aplica | No disponible | Sin licencia declarada | Hugging Face |
 | Entrada 906d (posterior) | Política tabular | No disponible | No aplica | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks en la información disponible más 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-94cd-tail-r2
+- Hugging Face: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-94cd-tail-r2
 - Origen upstream: https://huggingface.co/a1rb4Ck/microduck-heist (commit `94cd2cfeb57a4ece561a3d320e233f442238cb81`)
 - juicenv: https://huggingface.co/juicenv
 - lphatnguyen / microduck-sock-heist-6m-v3: https://huggingface.co/lphatnguyen/microduck-sock-heist-6m-v3/tree/194c8a05d958c6e6337b0b27804f4f783697a1ce

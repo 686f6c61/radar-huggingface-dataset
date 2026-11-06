@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LeWAM Tool Hang es un checkpoint de pesos publicado en HuggingFace bajo el identificador `LeWAM/lewam-toolhang`, distribuido en el denominado formato LeWAM v1. Se trata de un modelo orientado a la consecucion de objetivos (goal-reaching) que incorpora prediccion de acciones condicionada a una meta y prediccion de dinamicas, segun se desprende de las comprobaciones de carga descritas en su model card. El repositorio contiene unicamente dos ficheros en la raiz: `lewam_best.pt` y `lewam_config.json`, con un tamano total de repositorio de 0,1 GB. La licencia declarada es MIT y el autor es la organizacion LeWAM.
+LeWAM Tool Hang es un checkpoint de pesos publicado en Hugging Face bajo el identificador `LeWAM/lewam-toolhang`, distribuido en el denominado formato LeWAM v1. Se trata de un modelo orientado a la consecucion de objetivos (goal-reaching) que incorpora prediccion de acciones condicionada a una meta y prediccion de dinamicas, segun se desprende de las comprobaciones de carga descritas en su model card. El repositorio contiene unicamente dos ficheros en la raiz: `lewam_best.pt` y `lewam_config.json`, con un tamano total de repositorio de 0,1 GB. La licencia declarada es MIT y el autor es la organizacion LeWAM.
 
 El modelo se publica acompanado de un dataset con el mismo nombre (`LeWAM/lewam-toolhang`), lo que sugiere que forma parte de un pipeline reproducible de entrenamiento y evaluacion. La evaluacion se realiza mediante el script `scripts/eval_lewam.py` con el nombre de configuracion `toolhang`, y los pesos deben copiarse previamente en `$STABLEWM_HOME/checkpoints/<run_name>/`. El autor indica explicitamente que los pesos entrenados se han preservado sin modificaciones y que la carga estricta del modelo, las mascaras de atencion, la salida del encoder, la prediccion de acciones condicionada a objetivo y la prediccion de dinamicas se verificaron contra el checkpoint original.
 
@@ -85,10 +85,10 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 - Sesgos: no se documentan sesgos conocidos ni la composicion del dataset, por lo que no puede descartarse que las predicciones hereden desequilibrios de los datos de entrenamiento.
 - Dominio restringido: el nombre `toolhang` sugiere una tarea concreta de manipulacion; extrapolar su comportamiento a otros dominios no esta respaldado por la informacion disponible.
 - Restricciones de licencia: la licencia MIT permite uso comercial, modificacion y redistribucion, siempre con la conservacion del aviso de copyright y sin garantia implicita. No se declaran clausulas adicionales.
-- Fecha de publicacion inusual: los metadatos indican creacion y actualizacion el 2026-10-07, dato que se reproduce tal cual figura en la informacion de HuggingFace.
+- Fecha de publicacion inusual: los metadatos indican creacion y actualizacion el 2026-10-07, dato que se reproduce tal cual figura en la informacion de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeWAM/lewam-toolhang
+- Modelo en Hugging Face: https://huggingface.co/LeWAM/lewam-toolhang
 - Dataset asociado: https://huggingface.co/datasets/LeWAM/lewam-toolhang
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

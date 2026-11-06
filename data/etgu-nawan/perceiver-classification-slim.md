@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Perceiver-classification-slim es un repositorio publicado por el usuario etgu-nawan en HuggingFace que contiene una implementacion funcional de la arquitectura Perceiver orientada a tareas de clasificacion, en una configuracion a la que el propio autor denomina "nano". El modelo cuenta con 16.576 parametros totales, un tamano extraordinariamente reducido, y se distribuye bajo licencia Apache 2.0.
+Perceiver-classification-slim es un repositorio publicado por el usuario etgu-nawan en Hugging Face que contiene una implementacion funcional de la arquitectura Perceiver orientada a tareas de clasificacion, en una configuracion a la que el propio autor denomina "nano". El modelo cuenta con 16.576 parametros totales, un tamano extraordinariamente reducido, y se distribuye bajo licencia Apache 2.0.
 
 Se trata de un checkpoint de inicializacion, no de un modelo entrenado. La model card es explicita al respecto: "`model.safetensors` is a valid initialization checkpoint for smoke tests; it is not presented as a trained benchmark checkpoint" y no se reclama ninguna puntuacion de benchmark. Su proposito declarado es ofrecer codigo transparente y pruebas de humo (smoke tests) reproducibles, sirviendo como punto de partida experimental para quien quiera entrenar o evaluar una implementacion propia de Perceiver.
 
@@ -75,4 +75,4 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/etgu-nawan/perceiver-classification-slim
+- Hugging Face: https://huggingface.co/etgu-nawan/perceiver-classification-slim

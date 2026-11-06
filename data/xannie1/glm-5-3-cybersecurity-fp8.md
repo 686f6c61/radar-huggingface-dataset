@@ -89,10 +89,10 @@ El copyright explica aproximadamente 48–54 de los rechazos suaves en cada supe
 
 | Modelo | Parámetros | Contexto | MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`xannie1/GLM-5.3-CYBERSECURITY-FP8`) | 753B (MoE) | 131K en despliegue TP8; 1M no operativo en vLLM | 86,65% (modo logit, 1026 preguntas) | MIT | HuggingFace, FP8, publicación espejo del artefacto de dealignai |
-| `dealignai/GLM-5.3-UNCENSORED-FP8` | 753B (mismo base) | no disponible | no disponible | MIT según la release referenciada | HuggingFace; es el "uncensor" generalista de la misma familia |
-| `JANGQ-AI/GLM-5.3-FP8` | 753B (MoE) | no disponible | pendiente de confirmar en la model card | no disponible | HuggingFace; es el modelo base directo de esta release |
-| `zai-org/GLM-5.3` | 753B (MoE) | no disponible | 85,58% (baseline bf16 pre-cuantización) | no disponible | HuggingFace; modelo upstream original |
+| Este checkpoint (`xannie1/GLM-5.3-CYBERSECURITY-FP8`) | 753B (MoE) | 131K en despliegue TP8; 1M no operativo en vLLM | 86,65% (modo logit, 1026 preguntas) | MIT | Hugging Face, FP8, publicación espejo del artefacto de dealignai |
+| `dealignai/GLM-5.3-UNCENSORED-FP8` | 753B (mismo base) | no disponible | no disponible | MIT según la release referenciada | Hugging Face; es el "uncensor" generalista de la misma familia |
+| `JANGQ-AI/GLM-5.3-FP8` | 753B (MoE) | no disponible | pendiente de confirmar en la model card | no disponible | Hugging Face; es el modelo base directo de esta release |
+| `zai-org/GLM-5.3` | 753B (MoE) | no disponible | 85,58% (baseline bf16 pre-cuantización) | no disponible | Hugging Face; modelo upstream original |
 
 No se dispone de comparaciones con modelos de otros fabricantes de tamaño equivalente dentro de la información proporcionada.
 

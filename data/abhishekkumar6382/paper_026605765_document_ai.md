@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `paper_026605765_document_ai` es un artefacto publicado en HuggingFace bajo la licencia BSD-3-Clause, etiquetado como "document-ai" y orientado a la generación o procesamiento de documentos en formato HTML. Según la model card, se trata de un "paper" con una estructura narrativa específica (introducción, problema, solución, validación, futuro) y un estilo teórico-riguroso, con citas en formato numérico APA. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican arquitectura, tamaño, parámetros, ni datos de entrenamiento. El repositorio contiene únicamente un archivo Markdown con el texto del supuesto paper y la propia model card.
+El modelo `paper_026605765_document_ai` es un artefacto publicado en Hugging Face bajo la licencia BSD-3-Clause, etiquetado como "document-ai" y orientado a la generación o procesamiento de documentos en formato HTML. Según la model card, se trata de un "paper" con una estructura narrativa específica (introducción, problema, solución, validación, futuro) y un estilo teórico-riguroso, con citas en formato numérico APA. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican arquitectura, tamaño, parámetros, ni datos de entrenamiento. El repositorio contiene únicamente un archivo Markdown con el texto del supuesto paper y la propia model card.
 
 Dada la ausencia de especificaciones técnicas y de cualquier documentación adicional, este modelo no puede ser evaluado ni utilizado de forma fiable en entornos de producción. Su relevancia actual es dudosa, y parece más un experimento de generación de contenido que un modelo funcional para tareas de IA. Se recomienda precaución antes de considerarlo para cualquier caso de uso real.
 
@@ -56,7 +56,7 @@ No disponible. No se han identificado modelos comparables en la misma categoría
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/abhishekkumar6382/paper_026605765_document_ai
+- Repositorio en Hugging Face: https://huggingface.co/abhishekkumar6382/paper_026605765_document_ai
 - Archivo principal del repositorio: `paper_026605765_document_ai.md` (accesible desde la página del repositorio)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

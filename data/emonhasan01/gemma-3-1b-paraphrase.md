@@ -75,8 +75,8 @@ Definiciones aportadas por el autor: la similitud semántica es la distancia cos
 
 | Modelo | Parámetros | Contexto | iBLEU | ROUGE-L | Tasa de copia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| gemma-3-1b-paraphrase | 1,3 B | no disponible | 17,99 | 59,06 | 0,7 % | Gemma | HuggingFace (0 descargas) |
-| google/gemma-3-1b-it (zero-shot) | 1,3 B | no disponible | 1,65 | 41,87 | 41,7 % | Gemma | HuggingFace (modelo base) |
+| gemma-3-1b-paraphrase | 1,3 B | no disponible | 17,99 | 59,06 | 0,7 % | Gemma | Hugging Face (0 descargas) |
+| google/gemma-3-1b-it (zero-shot) | 1,3 B | no disponible | 1,65 | 41,87 | 41,7 % | Gemma | Hugging Face (modelo base) |
 | Copiar la entrada (línea base) | no aplica | no aplica | -1,24 | 45,38 | 100,0 % | no aplica | no aplica |
 
 No se dispone de datos de otros parafraseadores dedicados en la información proporcionada, por lo que la comparación se limita a los dos sistemas de referencia incluidos por el propio autor. Las cifras de iBLEU y ROUGE-L de este modelo figuran como no verificadas.
@@ -95,7 +95,7 @@ No se dispone de datos de otros parafraseadores dedicados en la información pro
 - No se documentan cuantizaciones publicadas (GGUF, AWQ, GPTQ) ni rendimiento medido de latencia o throughput.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/emonHasan01/gemma-3-1b-paraphrase
+- Modelo en Hugging Face: https://huggingface.co/emonHasan01/gemma-3-1b-paraphrase
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/humarin/chatgpt-paraphrases
 - Unsloth (librería de ajuste fino): https://github.com/unslothai/unsloth

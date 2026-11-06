@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cemong/a` es un modelo de generación de imágenes texto-a-imagen derivado de Illustrious XL v1.0, un checkpoint de tipo Stable Diffusion XL especializado en ilustración anime. Lo publica el usuario `cemong` en HuggingFace como una conversión o reempaquetado del modelo original alojado en Civitai bajo el nombre "WAI-NSFW-illustrious-SDXL", creado por el usuario WAI0731. El repositorio tiene un tamaño de 6,9 GB y contiene pesos en formato safetensors compatibles con la librería `diffusers` mediante `StableDiffusionXLPipeline`.
+`cemong/a` es un modelo de generación de imágenes texto-a-imagen derivado de Illustrious XL v1.0, un checkpoint de tipo Stable Diffusion XL especializado en ilustración anime. Lo publica el usuario `cemong` en Hugging Face como una conversión o reempaquetado del modelo original alojado en Civitai bajo el nombre "WAI-NSFW-illustrious-SDXL", creado por el usuario WAI0731. El repositorio tiene un tamaño de 6,9 GB y contiene pesos en formato safetensors compatibles con la librería `diffusers` mediante `StableDiffusionXLPipeline`.
 
 El modelo resuelve el problema de generar ilustraciones de estilo anime con control fino sobre composición, personajes y estética, partiendo de la base de Illustrious XL, que a su vez es un fine-tune de SDXL orientado a arte digital. Su relevancia es acotada: se trata de un modelo de nicho, con 60 descargas y sin likes en el momento de la consulta, pensado para usuarios que trabajan con pipelines de difusión en entornos creativos o de investigación sobre modelos de imagen.
 
@@ -43,7 +43,7 @@ No se dispone de información sobre el dataset de entrenamiento, el número de p
 - **Investigación sobre modelos de difusión**: sirve como checkpoint de referencia para estudiar el comportamiento de fine-tunes de Illustrious XL en tareas de generación condicionada.
 - **Pipelines automatizados de generación de imágenes**: al ser compatible con `diffusers`, se puede integrar en scripts de generación por lotes con control de semilla y parámetros de muestreo.
 - **Contenido editorial para adultos**: el etiquetado NSFW indica que está pensado para generar ilustraciones para plataformas de contenido adulto, siempre que se cumplan los términos de la licencia FAIPL-1.0-SD.
-- **Pruebas de concepto de integración con endpoints**: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en infraestructuras de inferencia compatibles con HuggingFace Endpoints.
+- **Pruebas de concepto de integración con endpoints**: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en infraestructuras de inferencia compatibles con Hugging Face Endpoints.
 
 ## Benchmarks y rendimiento
 
@@ -54,16 +54,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - **VRAM estimada**: un SDXL en FP16 requiere aproximadamente 6-8 GB de VRAM para inferencia; en FP32, alrededor de 10-12 GB. No se documentan variantes cuantizadas en el repositorio.
 - **GPU recomendadas**: NVIDIA RTX 3060 12 GB, RTX 4070, RTX 4090, A100 o H100 para mayor throughput.
 - **Consumer GPU**: sí, cabe en GPUs de consumo con 8 GB o más de VRAM (RTX 3060 Ti, RTX 3070, RTX 4060 Ti, etc.).
-- **Opciones de despliegue**: `diffusers` (pipeline nativo), ComfyUI, Automatic1111/Forge (previa conversión si aplica), y endpoints compatibles con HuggingFace.
+- **Opciones de despliegue**: `diffusers` (pipeline nativo), ComfyUI, Automatic1111/Forge (previa conversión si aplica), y endpoints compatibles con Hugging Face.
 - **Latencia y throughput**: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `cemong/a` | 2,57 B | no disponible | FAIPL-1.0-SD | HuggingFace (60 descargas) |
-| `OnomaAIResearch/Illustrious-XL-v1.0` | ~2,57 B (SDXL) | no disponible | no disponible en esta ficha | HuggingFace (modelo base) |
-| Stable Diffusion XL base | ~2,57 B | no disponible | CreativeML Open RAIL++-M | HuggingFace, ampliamente disponible |
+| `cemong/a` | 2,57 B | no disponible | FAIPL-1.0-SD | Hugging Face (60 descargas) |
+| `OnomaAIResearch/Illustrious-XL-v1.0` | ~2,57 B (SDXL) | no disponible | no disponible en esta ficha | Hugging Face (modelo base) |
+| Stable Diffusion XL base | ~2,57 B | no disponible | CreativeML Open RAIL++-M | Hugging Face, ampliamente disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -74,12 +74,12 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 - **Alucinación visual**: como todo modelo de difusión, puede generar anatomía incorrecta, artefactos en manos y texto ilegible.
 - **Idioma**: solo se declara soporte de inglés; los prompts en castellano pueden degradar la calidad.
 - **Licencia**: FAIPL-1.0-SD impone restricciones específicas para uso comercial y para el tratamiento de datos; es responsabilidad del usuario revisar los términos en el enlace de la licencia antes de desplegarlo en producción.
-- **Falta de documentación**: no hay model card detallada en HuggingFace más allá de la referencia al modelo original en Civitai, lo que dificulta la reproducibilidad y la evaluación de calidad.
+- **Falta de documentación**: no hay model card detallada en Hugging Face más allá de la referencia al modelo original en Civitai, lo que dificulta la reproducibilidad y la evaluación de calidad.
 - **Madurez**: con 60 descargas y 0 likes, es un modelo de nicho sin validación comunitaria amplia.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cemong/a
+- Hugging Face: https://huggingface.co/cemong/a
 - Modelo original en Civitai: https://civitai.com/models/827184/wai-nsfw-illustrious-sdxl?modelVersionId=1761560
 - Perfil del creador original: https://civitai.com/user/WAI0731
 - Modelo base: https://huggingface.co/OnomaAIResearch/Illustrious-XL-v1.0

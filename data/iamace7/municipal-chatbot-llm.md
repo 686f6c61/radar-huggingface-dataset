@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iamace7/municipal-chatbot-llm` es un modelo publicado en HuggingFace por el usuario iamace7, cuyo nombre sugiere un ajuste fino orientado a conversacion en el ambito municipal. El repositorio incluye pesos en formato safetensors, tiene 153 descargas y ningun "like", y su ficha no aporta informacion sobre pipeline, licencia ni idiomas. El modelo fue creado el 2 de octubre de 2026 y actualizado el 7 de octubre de 2026.
+`iamace7/municipal-chatbot-llm` es un modelo publicado en Hugging Face por el usuario iamace7, cuyo nombre sugiere un ajuste fino orientado a conversacion en el ambito municipal. El repositorio incluye pesos en formato safetensors, tiene 153 descargas y ningun "like", y su ficha no aporta informacion sobre pipeline, licencia ni idiomas. El modelo fue creado el 2 de octubre de 2026 y actualizado el 7 de octubre de 2026.
 
 El dato tecnico mas relevante es el recuento de parametros: 81.912.576 (aproximadamente 81,9 millones). Esta cifra coincide exactamente con la de `distilgpt2`, la version destilada de GPT-2, y la etiqueta `gpt2` del repositorio apunta a que se trata de un fine-tuning de la familia GPT-2. La longitud de contexto, la composicion del dataset de entrenamiento y el proceso de alineamiento no estan documentados en la informacion disponible.
 
@@ -72,8 +72,8 @@ Los valores de los modelos alternativos son cifras publicas ampliamente conocida
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `iamace7/municipal-chatbot-llm` | 81,9 M | No disponible | No disponible | HuggingFace, 153 descargas | Sin model card, sin benchmarks, sin licencia |
-| distilgpt2 (OpenAI / HuggingFace) | 82 M | 1024 tokens | MIT | Amplia, millones de descargas | Version destilada de GPT-2, misma huella de parametros; entrenada para generacion general |
+| `iamace7/municipal-chatbot-llm` | 81,9 M | No disponible | No disponible | Hugging Face, 153 descargas | Sin model card, sin benchmarks, sin licencia |
+| distilgpt2 (OpenAI / Hugging Face) | 82 M | 1024 tokens | MIT | Amplia, millones de descargas | Version destilada de GPT-2, misma huella de parametros; entrenada para generacion general |
 | gpt2 (OpenAI) | 124 M | 1024 tokens | MIT | Amplia | Modelo base de referencia de la familia, sin ajuste conversacional |
 | DialoGPT-small (Microsoft) | 117 M | 1024 tokens | MIT | Moderada | Ajustado especificamente para dialogo multi-turno en ingles |
 
@@ -94,5 +94,5 @@ La comparacion directa con distilgpt2 mediante benchmarks no es posible en este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iamace7/municipal-chatbot-llm
+- Modelo en Hugging Face: https://huggingface.co/iamace7/municipal-chatbot-llm
 - Paper, blog, repositorio de codigo, demo o dataset asociados: no disponibles en la informacion proporcionada.

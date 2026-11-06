@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-27B-GGUF (Vultr) | ~27B | 262K (ext. ~1M) | Imagen + texto | Apache 2.0 | GGUF en HuggingFace |
-| Qwen3.5-27B (base) | ~27B | 262K (ext. ~1M) | Imagen + texto | Apache 2.0 | Pesos originales en HuggingFace |
+| Qwen3.5-27B-GGUF (Vultr) | ~27B | 262K (ext. ~1M) | Imagen + texto | Apache 2.0 | GGUF en Hugging Face |
+| Qwen3.5-27B (base) | ~27B | 262K (ext. ~1M) | Imagen + texto | Apache 2.0 | Pesos originales en Hugging Face |
 | Alternativas de ~27B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que la comparación se limita al modelo base y su variante cuantizada.
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vultr/Qwen3.5-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/vultr/Qwen3.5-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Vultr (sitio oficial): https://www.vultr.com/
 - Vultr Docs: https://docs.vultr.com/

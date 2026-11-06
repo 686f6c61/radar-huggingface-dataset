@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NedoLM-0.8B-GRPO-Yargi-Mercan es un modelo de aproximadamente 0.800 millones de parametros (0,8B) publicado por la organizacion MercanAI en HuggingFace. Segun su model card, se trata de un export de "Mercan v1" orientado a la funcion de *response composer* del sistema "Yargi" (termino turco que designa el ambito judicial), es decir, un modelo especializado en transformar las observaciones reales devueltas por un ejecutor o herramienta (*tool observation*) en una respuesta final en lenguaje natural dirigida al usuario. El checkpoint de origen es `yargi_best.pt`, obtenido mediante entrenamiento con GRPO (Group Relative Policy Optimization), una tecnica de aprendizaje por refuerzo.
+NedoLM-0.8B-GRPO-Yargi-Mercan es un modelo de aproximadamente 0.800 millones de parametros (0,8B) publicado por la organizacion MercanAI en Hugging Face. Segun su model card, se trata de un export de "Mercan v1" orientado a la funcion de *response composer* del sistema "Yargi" (termino turco que designa el ambito judicial), es decir, un modelo especializado en transformar las observaciones reales devueltas por un ejecutor o herramienta (*tool observation*) en una respuesta final en lenguaje natural dirigida al usuario. El checkpoint de origen es `yargi_best.pt`, obtenido mediante entrenamiento con GRPO (Group Relative Policy Optimization), una tecnica de aprendizaje por refuerzo.
 
 El modelo se distribuye en un contenedor fisico GGUF v3 cuantizado en Q4_K_M, con un vocabulario de 32.002 tokens y una longitud de contexto de 32.768 tokens. El repositorio ocupa aproximadamente 0,5 GB y el archivo de pesos se denomina `model.mercan`. La model card reporta una evaluacion interna denominada "Strict Yargi reference eval" con un resultado de 15/21 (71,43%), que no corresponde a un benchmark estandar y por tanto no es directamente comparable con metricas como MMLU o GSM8K.
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NedoLM-0.8B-GRPO-Yargi-Mercan | ~0,8B | 32.768 | 15/21 (71,43%) en evaluacion interna | other | HuggingFace (0 descargas) |
-| MercanAI/Mercan-0.8B-SFT | ~0,8B (por el nombre) | no disponible | no disponible | no disponible | HuggingFace (modelo hermano de la misma organizacion) |
+| NedoLM-0.8B-GRPO-Yargi-Mercan | ~0,8B | 32.768 | 15/21 (71,43%) en evaluacion interna | other | Hugging Face (0 descargas) |
+| MercanAI/Mercan-0.8B-SFT | ~0,8B (por el nombre) | no disponible | no disponible | no disponible | Hugging Face (modelo hermano de la misma organizacion) |
 | Alternativas comparables de terceros | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa con modelos de terceros de la misma categoria (composicion de respuestas en turco), por lo que no se incluyen datos que no esten documentados.
@@ -94,6 +94,6 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/MercanAI/NedoLM-0.8B-GRPO-Yargi-Mercan
+- Hugging Face del modelo: https://huggingface.co/MercanAI/NedoLM-0.8B-GRPO-Yargi-Mercan
 - Perfil de la organizacion MercanAI: https://huggingface.co/MercanAI
 - Modelo hermano MercanAI/Mercan-0.8B-SFT: https://huggingface.co/MercanAI/Mercan-0.8B-SFT

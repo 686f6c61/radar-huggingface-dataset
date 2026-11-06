@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rarad/test-pyannote-modified` es un repositorio publicado en HuggingFace por el usuario `rarad`. No se dispone de información técnica en la model card ni en documentación externa: el README únicamente declara la licencia CC BY 4.0. El nombre sugiere una modificación de un modelo de la familia pyannote, que habitualmente se emplea para diarización de hablantes, pero no hay datos que lo confirmen. El repositorio no tiene descargas, likes ni tamaño de archivos (0.0 GB), y fue creado el 8 de septiembre de 2026, lo que indica que se trata de un modelo de prueba o experimental sin implementación publicada.
+El modelo `rarad/test-pyannote-modified` es un repositorio publicado en Hugging Face por el usuario `rarad`. No se dispone de información técnica en la model card ni en documentación externa: el README únicamente declara la licencia CC BY 4.0. El nombre sugiere una modificación de un modelo de la familia pyannote, que habitualmente se emplea para diarización de hablantes, pero no hay datos que lo confirmen. El repositorio no tiene descargas, likes ni tamaño de archivos (0.0 GB), y fue creado el 8 de septiembre de 2026, lo que indica que se trata de un modelo de prueba o experimental sin implementación publicada.
 
 ## Especificaciones tecnicas
 
@@ -64,6 +64,6 @@ No se dispone de información técnica para establecer una comparativa con otros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/rarad/test-pyannote-modified](https://huggingface.co/rarad/test-pyannote-modified)
+- Repositorio en Hugging Face: [https://huggingface.co/rarad/test-pyannote-modified](https://huggingface.co/rarad/test-pyannote-modified)
 - Sitio oficial de pyannote (referencia general, no específica de este modelo): [https://pyannote.github.io/](https://pyannote.github.io/)
 - Organización pyannote en GitHub: [https://github.com/pyannote](https://github.com/pyannote)

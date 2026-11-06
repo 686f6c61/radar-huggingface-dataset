@@ -72,7 +72,7 @@ No disponible. Este repositorio no es un modelo independiente, sino una configur
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/papylove/cumdev-news-anchor
+- Repositorio en Hugging Face: https://huggingface.co/papylove/cumdev-news-anchor
 - Repositorio de código del bot (bettor): https://github.com/papykabukanyi/bettor
 - Sitio web de CUMDEV: https://cumdev.onrender.com
 - Documentación de HF Inference Providers: https://huggingface.co/docs/inference-providers

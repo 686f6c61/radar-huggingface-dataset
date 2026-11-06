@@ -4,7 +4,7 @@
 
 Ornith-1_5_9B-zero-dungeon-checkpoints es un adaptador LoRA (PEFT) publicado por el usuario GoldenSpain sobre el modelo base ornith-ai/Ornith-1.5-9B. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino supervisado (SFT) entrenados con las librerías TRL y Unsloth, empaquetados en formato safetensors con el framework PEFT 0.21.2. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con los pesos completos de un modelo de 9 mil millones de parametros.
 
-La relevancia de esta ficha es limitada y conviene ser explicito: la model card es la plantilla por defecto de HuggingFace sin rellenar, no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion, y el repositorio no registra descargas ni interacciones. El nombre del adaptador ("zero-dungeon-checkpoints") sugiere un ajuste orientado a dominios de fantasia, juegos de rol o narrativa interactiva, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
+La relevancia de esta ficha es limitada y conviene ser explicito: la model card es la plantilla por defecto de Hugging Face sin rellenar, no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion, y el repositorio no registra descargas ni interacciones. El nombre del adaptador ("zero-dungeon-checkpoints") sugiere un ajuste orientado a dominios de fantasia, juegos de rol o narrativa interactiva, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
 
 Por tanto, esta ficha documenta lo que se puede verificar (naturaleza PEFT, modelo base, herramientas de entrenamiento, tamano del repo) y marca como no disponible todo lo demas. Cualquier uso en produccion deberia partir de una evaluacion propia del adaptador frente al modelo base.
 
@@ -89,6 +89,6 @@ No hay datos suficientes para una comparativa cuantitativa con alternativas conc
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/GoldenSpain/Ornith-1_5_9B-zero-dungeon-checkpoints
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/GoldenSpain/Ornith-1_5_9B-zero-dungeon-checkpoints
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Referencia citada en los tags (impacto ambiental, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jfan/gemma-4-31b-web-vision-litert-lm` es un paquete de pesos de un supuesto modelo Gemma 4 de 31B en variante densa, publicado por el usuario `jfan` en HuggingFace y empaquetado especificamente para ejecucion en navegador mediante WebGPU a traves del runtime LiteRT-LM. Segun la model card, el repositorio distribuye variantes del mismo modelo base en funcion de las modalidades incluidas: texto, texto+vision, texto+audio y la version completa texto+vision+audio que da nombre al repositorio. La variante de vision emplea atencion bidireccional y la de audio un encoder de tipo Conformer.
+`jfan/gemma-4-31b-web-vision-litert-lm` es un paquete de pesos de un supuesto modelo Gemma 4 de 31B en variante densa, publicado por el usuario `jfan` en Hugging Face y empaquetado especificamente para ejecucion en navegador mediante WebGPU a traves del runtime LiteRT-LM. Segun la model card, el repositorio distribuye variantes del mismo modelo base en funcion de las modalidades incluidas: texto, texto+vision, texto+audio y la version completa texto+vision+audio que da nombre al repositorio. La variante de vision emplea atencion bidireccional y la de audio un encoder de tipo Conformer.
 
 El modelo resuelve el caso de uso de inferencia multimodal local en el cliente (navegador) sin necesidad de servidor, apoyandose en aceleracion WebGPU. El nombre indica 31.000 millones de parametros y arquitectura densa (no MoE), con un presupuesto declarado de 1120 tokens para la ruta de vision. No obstante, la informacion publicada es muy escasa: la model card no detalla composicion del dataset, numero de tokens de entrenamiento, proceso de alineacion, ventana de contexto, cuantizaciones disponibles ni idiomas soportados.
 
@@ -80,10 +80,10 @@ La comparacion es limitada porque las especificaciones clave de este modelo (con
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-31b-web-vision-litert-lm (jfan) | 31B densos | no disponible | Texto, vision, audio | gemma | HuggingFace, formato `.litertlm` |
-| Gemma 3 27B IT (Google) | 27B densos | 128 000 tokens | Texto y vision | gemma | HuggingFace, safetensors/GGUF, amplio ecosistema |
-| Qwen2.5-VL-32B (Alibaba) | 32B densos | 128 000 tokens | Texto y vision | Apache 2.0 (variante de la familia) | HuggingFace, safetensors, soporte en vLLM |
-| Mistral Small 3.1 24B | 24B densos | 128 000 tokens | Texto y vision | Apache 2.0 | HuggingFace, safetensors/GGUF |
+| gemma-4-31b-web-vision-litert-lm (jfan) | 31B densos | no disponible | Texto, vision, audio | gemma | Hugging Face, formato `.litertlm` |
+| Gemma 3 27B IT (Google) | 27B densos | 128 000 tokens | Texto y vision | gemma | Hugging Face, safetensors/GGUF, amplio ecosistema |
+| Qwen2.5-VL-32B (Alibaba) | 32B densos | 128 000 tokens | Texto y vision | Apache 2.0 (variante de la familia) | Hugging Face, safetensors, soporte en vLLM |
+| Mistral Small 3.1 24B | 24B densos | 128 000 tokens | Texto y vision | Apache 2.0 | Hugging Face, safetensors/GGUF |
 
 Advertencia: los datos de las tres alternativas corresponden a informacion publica general de esos modelos, no a una evaluacion directa contra `gemma-4-31b-web-vision-litert-lm`. No existen benchmarks comparativos publicados para este ultimo.
 
@@ -103,7 +103,7 @@ Advertencia: los datos de las tres alternativas corresponden a informacion publi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jfan/gemma-4-31b-web-vision-litert-lm
+- Repositorio en Hugging Face: https://huggingface.co/jfan/gemma-4-31b-web-vision-litert-lm
 - Demo LiteRT-LM Studio citada en la model card: https://demos.corp.google.com/ (dominio corporativo, acceso publico probablemente restringido)
 - Paper tecnico: no disponible
 - Blog o anuncio oficial: no disponible

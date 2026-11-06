@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un agente entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno PandaReachDense-v3, una tarea de robótica simulada en la que un brazo manipulador Franka Panda debe alcanzar una posición objetivo en el espacio 3D. El modelo lo publica el usuario Hawi088 en HuggingFace y se ha generado con la librería stable-baselines3, el framework de referencia para aprendizaje por refuerzo profundo en PyTorch.
+Este repositorio contiene un agente entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno PandaReachDense-v3, una tarea de robótica simulada en la que un brazo manipulador Franka Panda debe alcanzar una posición objetivo en el espacio 3D. El modelo lo publica el usuario Hawi088 en Hugging Face y se ha generado con la librería stable-baselines3, el framework de referencia para aprendizaje por refuerzo profundo en PyTorch.
 
 No se trata de un modelo de lenguaje ni de un modelo fundacional: es un artefacto de política (policy) entrenado para una tarea concreta de control robótico dentro del ecosistema Gymnasium y MuJoCo. Su relevancia es, por tanto, limitada al ámbito de la experimentación en RL y a la reproducibilidad de resultados en entornos de manipulación.
 
@@ -81,7 +81,7 @@ No se dispone de información sobre modelos comparables publicados en la misma t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hawi088/a2c-PandaReachDense-v3
+- Hugging Face: https://huggingface.co/Hawi088/a2c-PandaReachDense-v3
 - stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - panda-gym (entorno PandaReachDense-v3): https://github.com/qgallouedec/panda-gym
 - huggingface_sb3: https://github.com/huggingface/huggingface_sb3

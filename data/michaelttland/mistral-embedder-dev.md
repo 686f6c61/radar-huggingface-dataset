@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `michaelttland/mistral-embedder-dev`, publicado en HuggingFace bajo licencia Apache 2.0, no contiene un modelo de embeddings funcional ni pesos entrenados. Según la model card, el repositorio alberga un único archivo de notas (`notes.md`) que documenta un paper académico sobre *grounded language* (lenguaje fundamentado), con formato Typst, estructura IMRAD, estilo argumentativo y citas en nota al pie. No se proporcionan archivos de modelo, configuraciones de arquitectura ni artefactos de inferencia.
+El repositorio `michaelttland/mistral-embedder-dev`, publicado en Hugging Face bajo licencia Apache 2.0, no contiene un modelo de embeddings funcional ni pesos entrenados. Según la model card, el repositorio alberga un único archivo de notas (`notes.md`) que documenta un paper académico sobre *grounded language* (lenguaje fundamentado), con formato Typst, estructura IMRAD, estilo argumentativo y citas en nota al pie. No se proporcionan archivos de modelo, configuraciones de arquitectura ni artefactos de inferencia.
 
 El nombre del repositorio sugiere una intención de desarrollar un modelo de embeddings basado en Mistral, pero el contenido actual no corresponde a ningún modelo publicable. La fecha de creación (agosto de 2026) y la ausencia de descargas y de likes indican que se trata de un repositorio en fase inicial o experimental, posiblemente un espacio de trabajo personal. Por tanto, cualquier evaluación técnica debe considerar que no existe un modelo real que probar ni desplegar.
 

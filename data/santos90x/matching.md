@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`santos90x/matching` es un repositorio de HuggingFace publicado por el usuario santos90x que contiene una implementación funcional ("working implementation") de una arquitectura denominada **Mae** orientada a tareas de *matching* (emparejamiento o comparación de pares de entradas). El repositorio se presenta explícitamente como un punto de partida experimental: el archivo `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un modelo entrenado ni evaluado. No se reclama ninguna puntuación de benchmark y el autor indica que las afirmaciones de rendimiento se omiten deliberadamente.
+`santos90x/matching` es un repositorio de Hugging Face publicado por el usuario santos90x que contiene una implementación funcional ("working implementation") de una arquitectura denominada **Mae** orientada a tareas de *matching* (emparejamiento o comparación de pares de entradas). El repositorio se presenta explícitamente como un punto de partida experimental: el archivo `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un modelo entrenado ni evaluado. No se reclama ninguna puntuación de benchmark y el autor indica que las afirmaciones de rendimiento se omiten deliberadamente.
 
 El dato real extraído de los pesos es de **24.832 parámetros totales**, una cifra minúscula que contrasta con la etiqueta "xlarge" que aparece en la model card (una escala interna de la configuración del script, no un recuento real de parámetros). Con 0 descargas y 0 *likes*, se trata de un artefacto de investigación sin adopción conocida. Su relevancia es limitada y acotada al ámbito de reproducción de arquitecturas y pruebas de humo, no al despliegue en producción.
 
@@ -82,5 +82,5 @@ No disponible. No se conocen modelos comparables porque no hay información púb
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/santos90x/matching
+- Hugging Face: https://huggingface.co/santos90x/matching
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos corresponden a entidades no relacionadas y se descartan por no ser pertinentes.

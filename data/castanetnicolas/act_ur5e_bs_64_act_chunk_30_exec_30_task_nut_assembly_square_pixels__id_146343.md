@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT (este repositorio) | Transformer con chunks de acción | 51,6 M | no aplica | Apache 2.0 | Pesos en HuggingFace, safetensors, via LeRobot |
+| ACT (este repositorio) | Transformer con chunks de acción | 51,6 M | no aplica | Apache 2.0 | Pesos en Hugging Face, safetensors, via LeRobot |
 | Diffusion Policy | Política generativa por difusión de acciones | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | Implementaciones publicas en frameworks de investigación |
 | VQ-BeT | Transformer discretizado con codebook de acciones | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | Implementaciones publicas de investigación |
-| SmolVLA | VLM + cabeza de acción (vision-language-action) | aprox. 450 M (dato de referencia general, no verificado en esta ficha) | limitado por el backbone VLM | Apache 2.0 | Pesos y pipeline en HuggingFace via LeRobot |
+| SmolVLA | VLM + cabeza de acción (vision-language-action) | aprox. 450 M (dato de referencia general, no verificado en esta ficha) | limitado por el backbone VLM | Apache 2.0 | Pesos y pipeline en Hugging Face via LeRobot |
 
 La comparación con Diffusion Policy, VQ-BeT y SmolVLA es cualitativa: son alternativas del mismo ámbito (aprendizaje por imitación para manipulación), pero no se dispone de cifras verificadas de parámetros, contexto o resultados para esta ficha. La ventaja concreta de este ACT es su tamaño reducido y su integración directa con el ecosistema LeRobot; su desventaja es la falta total de métricas publicadas de éxito.
 
@@ -96,7 +96,7 @@ La comparación con Diffusion Policy, VQ-BeT y SmolVLA es cualitativa: son alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_30_Exec_30_TASK_nut_assembly_square_PIXELS__ID_146343
+- Hugging Face: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_30_Exec_30_TASK_nut_assembly_square_PIXELS__ID_146343
 - Dataset de entrenamiento: https://huggingface.co/datasets/castanetnicolas/robomimic_square_ph_image84
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - LeRobot (repositorio): https://github.com/huggingface/lerobot

@@ -37,7 +37,7 @@ No se dispone de informaci√≥n sobre el conjunto de datos de entrenamiento, el n√
 ## Casos de uso
 
 - Investigacion academica en razonamiento latente: el modelo sirve como banco de pruebas para estudiar como la compresion de estados intermedios afecta a la calidad del razonamiento logico. Un investigador podria cargar el adaptador sobre el modelo base y comparar el rendimiento en tareas de logica proposicional o silogismos frente al modelo base sin adaptador.
-- Experimentacion con LoRA y PEFT: al ser un adaptador LoRA de rango 128, es util para analizar el impacto de la adaptacion de bajo rango en modelos de razonamiento. Se puede integrar en pipelines de fine-tuning experimental con la libreria PEFT de HuggingFace.
+- Experimentacion con LoRA y PEFT: al ser un adaptador LoRA de rango 128, es util para analizar el impacto de la adaptacion de bajo rango en modelos de razonamiento. Se puede integrar en pipelines de fine-tuning experimental con la libreria PEFT de Hugging Face.
 - Desarrollo de metodos de compresion de contexto: dado el factor de compresion `COLAR_COMPRESS=5`, podria explorarse su uso en escenarios donde se requiere reducir el numero de tokens procesados, como en sistemas de memoria a largo plazo para agentes conversacionales.
 - Evaluacion de robustez en dominios logicos: si se dispone de un conjunto de datos de logica (por ejemplo, pruebas de razonamiento deductivo), se puede evaluar si el adaptador mejora la precision en comparacion con el modelo base. Esto es relevante para la comunidad de IA explicable.
 - Benchmarking de eficiencia: el modelo permite medir el ahorro computacional (en FLOPs o latencia) al usar tokens latentes comprimidos frente a la generacion autoregresiva estandar. Un ingeniero de ML podria cuantificar estas diferencias en hardware especifico.
@@ -69,6 +69,6 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rjz123/colar-logic-pw-r1q
+- Hugging Face: https://huggingface.co/rjz123/colar-logic-pw-r1q
 - Modelo base (DeepSeek-R1-Distill-Qwen-1.5B): https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - No se encontraron otros enlaces relevantes (papers, blogs o repos) en la busqueda web. Los resultados obtenidos (Hayward ColorLogic, Color-Logic) son irrelevantes para este modelo.

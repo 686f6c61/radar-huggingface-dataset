@@ -23,7 +23,7 @@ Su relevancia es metodológica: sirve para estudiar cuándo y por qué un modelo
 | Numero de checkpoints | 12 carpetas independientes |
 | Tamano del repositorio | 210,4 GB |
 | Framework de entrenamiento | ms-swift, con GRPO |
-| Creado / actualizado | 2026-09-19 / 2026-09-19 (segun metadatos de HuggingFace) |
+| Creado / actualizado | 2026-09-19 / 2026-09-19 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ta
 
 | Modelo | Parametros | Contexto | Licencia | Proposito | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (tool-use-collapse-nonfrozenlake-warm-starts-v1-v2) | ~8.000 millones (heredados del base) | No disponible | apache-2.0 | Paquete de investigacion con 12 checkpoints de un experimento de GRPO sobre tool use | Publico en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen3-VL-8B-Instruct (modelo base) | ~8.000 millones | No disponible en la informacion proporcionada | No indicada en la informacion proporcionada | Modelo vision-lenguaje instructivo de proposito general | Publico en HuggingFace |
+| Este repositorio (tool-use-collapse-nonfrozenlake-warm-starts-v1-v2) | ~8.000 millones (heredados del base) | No disponible | apache-2.0 | Paquete de investigacion con 12 checkpoints de un experimento de GRPO sobre tool use | Publico en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen/Qwen3-VL-8B-Instruct (modelo base) | ~8.000 millones | No disponible en la informacion proporcionada | No indicada en la informacion proporcionada | Modelo vision-lenguaje instructivo de proposito general | Publico en Hugging Face |
 | Otras alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento de este repositorio ni de comparativas publicadas por el autor frente a otros modelos de tamano similar.
@@ -87,12 +87,12 @@ No se dispone de datos de rendimiento de este repositorio ni de comparativas pub
 - Solo se distribuyen pesos en bf16; la ausencia de GGUF o de cuantizaciones limita el despliegue en hardware de gama media.
 - La licencia del repositorio es apache-2.0, permisiva para uso comercial, pero conviene verificar las condiciones del modelo base Qwen/Qwen3-VL-8B-Instruct y de los datos de entrenamiento antes de un uso comercial.
 - Reanudar el entrenamiento exige reproducir el entorno de ms-swift; los flags documentados (`--resume_only_model true --ignore_data_skip true`) implican que los datos de entrenamiento originales no se re-descargan, lo que puede requerir disponer de ellos por separado.
-- Los metadatos de HuggingFace indican fechas de creacion y actualizacion de 2026-09-19, coherentes con el identificador del paquete de reproduccion, pero que conviene tratar como dato atipico si se usa el repositorio con fines de citacion.
+- Los metadatos de Hugging Face indican fechas de creacion y actualizacion de 2026-09-19, coherentes con el identificador del paquete de reproduccion, pero que conviene tratar como dato atipico si se usa el repositorio con fines de citacion.
 - El contenido de los documentos `docs/ARMS.md` y `docs/BRANCH_KL_METHOD.md` no esta disponible, de modo que la definicion exacta de cada brazo y del metodo de KL por ramas no puede verificarse con la informacion proporcionada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dolphin42/tool-use-collapse-nonfrozenlake-warm-starts-v1-v2
+- Repositorio en Hugging Face: https://huggingface.co/Dolphin42/tool-use-collapse-nonfrozenlake-warm-starts-v1-v2
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Paquete de reproduccion mencionado en la model card: `repro_tool_use_collapse_20260918.zip` (contiene `docs/ARMS.md` y `docs/BRANCH_KL_METHOD.md`); no se ha localizado URL publica en la informacion disponible
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los unicos enlaces recuperados corresponden a paginas corporativas de Microsoft sin relacion con el repositorio. No se han encontrado papers, blogs, repositorios de codigo ni demos asociados.

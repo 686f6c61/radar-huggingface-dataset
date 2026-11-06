@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stable Diffusion XL (SDXL) 1.0 base es un modelo de difusion latente para generacion de imagenes a partir de texto, desarrollado por Stability AI. Esta ficha corresponde a la copia del repositorio publicada por el usuario `danielleppy` en HuggingFace, que replica los pesos oficiales de `stabilityai/stable-diffusion-xl-base-1.0` en formato diffusers, safetensors y exportaciones ONNX. El modelo resuelve la generacion text-to-image de alta resolucion (1024x1024) y sirve como primera etapa de una arquitectura de "ensemble of experts" junto con el modelo refinador oficial.
+Stable Diffusion XL (SDXL) 1.0 base es un modelo de difusion latente para generacion de imagenes a partir de texto, desarrollado por Stability AI. Esta ficha corresponde a la copia del repositorio publicada por el usuario `danielleppy` en Hugging Face, que replica los pesos oficiales de `stabilityai/stable-diffusion-xl-base-1.0` en formato diffusers, safetensors y exportaciones ONNX. El modelo resuelve la generacion text-to-image de alta resolucion (1024x1024) y sirve como primera etapa de una arquitectura de "ensemble of experts" junto con el modelo refinador oficial.
 
 Tecnicamente es un modelo de difusion latente (paper arXiv:2112.10752) con un U-Net de aproximadamente 2.567 millones de parametros y dos codificadores de texto fijos: OpenCLIP-ViT/G y CLIP-ViT/L. Frente a generaciones anteriores como SD 1.5 o SD 2.1, SDXL incorpora un U-Net tres veces mayor, doble text encoder, condicionamiento por tamano y recorte (micro-conditioning) y entrenamiento multi-aspecto, lo que se traduce en mejor seguimiento del prompt y calidad fotografica sin necesidad de refinador.
 
@@ -66,10 +66,10 @@ No se han publicado resultados numericos de benchmarks (MMLU, FID, CLIP score, e
 
 | Modelo | Parametros | Resolucion nativa | Contexto de prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SDXL 1.0 base (esta ficha) | ~2.567 M en U-Net (dato safetensors) + text encoders y VAE | 1024x1024 | 77 tokens por codificador CLIP | OpenRAIL++-M | HuggingFace (copia de terceros) |
+| SDXL 1.0 base (esta ficha) | ~2.567 M en U-Net (dato safetensors) + text encoders y VAE | 1024x1024 | 77 tokens por codificador CLIP | OpenRAIL++-M | Hugging Face (copia de terceros) |
 | Stable Diffusion 1.5 | ~860 M en U-Net | 512x512 | 77 tokens | CreativeML OpenRAIL-M | Amplia, multiples mirrors |
-| Stable Diffusion 3 Medium | ~2 B (arquitectura MMDiT) | 1024x1024 | 77 tokens (CLIP + T5) | Stability AI Community License | HuggingFace, requiere aceptar terminos |
-| PixArt-alpha | ~0.6 B | 1024x1024 | No disponible | OpenRAIL++ / otras segun variante | HuggingFace |
+| Stable Diffusion 3 Medium | ~2 B (arquitectura MMDiT) | 1024x1024 | 77 tokens (CLIP + T5) | Stability AI Community License | Hugging Face, requiere aceptar terminos |
+| PixArt-alpha | ~0.6 B | 1024x1024 | No disponible | OpenRAIL++ / otras segun variante | Hugging Face |
 
 SDXL sigue siendo competitivo en calidad fotografica y es la opcion con ecosistema de herramientas y finetunes mas maduro; SD 3 Medium introduce arquitectura transformer (MMDiT) y mejor adherencia al prompt a cambio de una licencia mas restrictiva para uso comercial. Los datos de rendimiento cuantitativo de esta comparativa no estan disponibles en la informacion proporcionada.
 
@@ -88,7 +88,7 @@ SDXL sigue siendo competitivo en calidad fotografica y es la opcion con ecosiste
 
 ## Enlaces
 
-- Ficha en HuggingFace de esta copia: https://huggingface.co/danielleppy/stable-diffusion-xl-base-1.0
+- Ficha en Hugging Face de esta copia: https://huggingface.co/danielleppy/stable-diffusion-xl-base-1.0
 - Repositorio oficial de SDXL base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Modelo refinador oficial: https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0
 - Codigo fuente (training e inference): https://github.com/Stability-AI/generative-models

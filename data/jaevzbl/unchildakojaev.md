@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `jaevzbl/unchildakojaev` es un repositorio alojado en HuggingFace por el usuario `jaevzbl`. En el momento de la consulta, la informacion publica disponible se limita a los metadatos del repositorio: identificador, autor, etiquetas (`license:unknown`, `region:us`), fecha de creacion y actualizacion (16 de octubre de 2026), y contadores de descargas y likes, ambos en cero. No se ha publicado model card con descripcion, arquitectura, datos de entrenamiento ni pesos asociados.
+El modelo identificado como `jaevzbl/unchildakojaev` es un repositorio alojado en Hugging Face por el usuario `jaevzbl`. En el momento de la consulta, la informacion publica disponible se limita a los metadatos del repositorio: identificador, autor, etiquetas (`license:unknown`, `region:us`), fecha de creacion y actualizacion (16 de octubre de 2026), y contadores de descargas y likes, ambos en cero. No se ha publicado model card con descripcion, arquitectura, datos de entrenamiento ni pesos asociados.
 
-No es posible determinar que problema resuelve el modelo, a que categoria funcional pertenece (texto, vision, audio, multimodal) ni cual es su tamano. La pipeline declarada por HuggingFace figura como no disponible, lo que impide clasificarlo automaticamente como modelo de generacion de texto, clasificacion, transcripcion u otra tarea.
+No es posible determinar que problema resuelve el modelo, a que categoria funcional pertenece (texto, vision, audio, multimodal) ni cual es su tamano. La pipeline declarada por Hugging Face figura como no disponible, lo que impide clasificarlo automaticamente como modelo de generacion de texto, clasificacion, transcripcion u otra tarea.
 
 La relevancia actual de esta ficha es, por tanto, exclusivamente documental: sirve como registro del estado del repositorio y advierte de que no existen elementos verificables para evaluar su uso en produccion o investigacion. Cualquier dato tecnico adicional deberia obtenerse directamente del autor o de una revision futura del repositorio. Conviene senalar ademas que la fecha de creacion indicada (2026) es posterior a la fecha habitual de consulta, lo que puede apuntar a un error de metadatos o a un repositorio de prueba.
 
@@ -81,6 +81,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jaevzbl/unchildakojaev
+- Repositorio en Hugging Face: https://huggingface.co/jaevzbl/unchildakojaev
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

@@ -70,9 +70,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MEMORYDistillPL-1.5b | 1,54B | 32.768 tokens | Resumen estructurado y extraccion de entidades en polaco | Apache 2.0 | HuggingFace (safetensors + GGUF) |
-| Qwen2.5-1.5B-Instruct (modelo base) | 1,54B | 32.768 tokens | Chat general e instrucciones | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct | 7B | 32.768 tokens (aprox., segun la familia Qwen2.5) | Chat general e instrucciones | Apache 2.0 | HuggingFace |
+| MEMORYDistillPL-1.5b | 1,54B | 32.768 tokens | Resumen estructurado y extraccion de entidades en polaco | Apache 2.0 | Hugging Face (safetensors + GGUF) |
+| Qwen2.5-1.5B-Instruct (modelo base) | 1,54B | 32.768 tokens | Chat general e instrucciones | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct | 7B | 32.768 tokens (aprox., segun la familia Qwen2.5) | Chat general e instrucciones | Apache 2.0 | Hugging Face |
 
 En la evaluacion interna del autor, MEMORYDistillPL-1.5b fue preferido frente a Qwen2.5-7B-Instruct en aproximadamente el 67% de las comparaciones sobre 82 transcripciones de test, pese a ser unas 4,5 veces mas pequeno. No se dispone de datos de comparacion con otros modelos especializados en resumen o extraccion de entidades en polaco.
 
@@ -89,6 +89,6 @@ En la evaluacion interna del autor, MEMORYDistillPL-1.5b fue preferido frente a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cenkierpiotr/MEMORYDistillPL-1.5b
+- Modelo en Hugging Face: https://huggingface.co/cenkierpiotr/MEMORYDistillPL-1.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - No se han proporcionado enlaces adicionales a papers, blogs, repositorios o demos en la informacion disponible.

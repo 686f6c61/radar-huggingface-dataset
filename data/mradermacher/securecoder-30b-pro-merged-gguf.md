@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SecureCoder-30B-Pro-Merged-GGUF es la version cuantizada en formato GGUF del modelo Taimwe/securecoder-30b-pro-merged, publicada por el usuario mradermacher, conocido en HuggingFace por generar cuantizaciones estaticas de modelos abiertos. El modelo original es un merge de pesos (no un entrenamiento desde cero) construido sobre la familia Qwen3, segun los tags declarados, con orientacion a generacion de codigo, tool calling y seguridad informatica. Cuenta con 30.532.122.624 parametros totales (unos 30,5 mil millones) y arquitectura de mezcla de expertos (MoE) segun los metadatos.
+SecureCoder-30B-Pro-Merged-GGUF es la version cuantizada en formato GGUF del modelo Taimwe/securecoder-30b-pro-merged, publicada por el usuario mradermacher, conocido en Hugging Face por generar cuantizaciones estaticas de modelos abiertos. El modelo original es un merge de pesos (no un entrenamiento desde cero) construido sobre la familia Qwen3, segun los tags declarados, con orientacion a generacion de codigo, tool calling y seguridad informatica. Cuenta con 30.532.122.624 parametros totales (unos 30,5 mil millones) y arquitectura de mezcla de expertos (MoE) segun los metadatos.
 
 El valor practico de este repositorio no esta en el modelo en si, sino en la disponibilidad de 10 cuantizaciones GGUF listas para usar con llama.cpp, Ollama o cualquier runtime compatible con el formato, con tamanos que van desde 11,4 GB (Q2_K) hasta 32,6 GB (Q8_0). Esto permite desplegar un modelo de 30,5 B en hardware de consumo, algo inviable con los pesos originales en safetensors.
 

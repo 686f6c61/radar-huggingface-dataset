@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `AmberY1201/best` es un modelo de segmentacion de instancias basado en YOLO11m-seg, publicado por el usuario AmberY1201 en HuggingFace. Su proposito es el reconocimiento de objetos de interior y la segmentacion de instancias en escenas indoor generadas en el simulador BEHAVIOR, un entorno de simulacion orientado a tareas de robotica domestica. El modelo distingue 172 clases de objetos y, dada una imagen RGB de entrada, devuelve para cada objeto detectado la clase, la puntuacion de confianza, la caja delimitadora y la mascara de segmentacion.
+El modelo identificado como `AmberY1201/best` es un modelo de segmentacion de instancias basado en YOLO11m-seg, publicado por el usuario AmberY1201 en Hugging Face. Su proposito es el reconocimiento de objetos de interior y la segmentacion de instancias en escenas indoor generadas en el simulador BEHAVIOR, un entorno de simulacion orientado a tareas de robotica domestica. El modelo distingue 172 clases de objetos y, dada una imagen RGB de entrada, devuelve para cada objeto detectado la clase, la puntuacion de confianza, la caja delimitadora y la mascara de segmentacion.
 
-Se trata por tanto de un modelo de vision por computador, no de un modelo de lenguaje: no procesa texto ni mantiene conversaciones. La etiqueta de idioma `zh` del repositorio refleja que la documentacion y presumiblemente los nombres de clase estan en chino, y el pipeline declarado en HuggingFace es `robotics`. El repositorio es muy reciente (creado y actualizado el 10 de octubre de 2026), con 9 descargas y 0 likes, y un tamano de repositorio practicamente nulo, lo que sugiere un artefacto de pesos ligero.
+Se trata por tanto de un modelo de vision por computador, no de un modelo de lenguaje: no procesa texto ni mantiene conversaciones. La etiqueta de idioma `zh` del repositorio refleja que la documentacion y presumiblemente los nombres de clase estan en chino, y el pipeline declarado en Hugging Face es `robotics`. El repositorio es muy reciente (creado y actualizado el 10 de octubre de 2026), con 9 descargas y 0 likes, y un tamano de repositorio practicamente nulo, lo que sugiere un artefacto de pesos ligero.
 
 Su relevancia actual es acotada y experimental: el propio autor indica que el modelo esta en fase de desarrollo y validacion, que puede producir falsos positivos y omisiones, y que no proporciona coordenadas tridimensionales. Es util como componente de percepcion dentro de pipelines de simulacion robotica, pero no como modelo de proposito general ni como sustituto de un detector de objetos entrenado con un dataset amplio y diverso.
 
@@ -57,7 +57,7 @@ No se dispone de informacion sobre el conjunto de datos de entrenamiento, el num
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-El repositorio de HuggingFace no incluye metricas de validacion (mAP de caja, mAP de mascara, precision o recall por clase). La model card no aporta cifras de rendimiento y las busquedas web realizadas no devolvieron informacion sobre este modelo concreto. Cualquier valor numerico que se utilice para evaluarlo debe obtenerse ejecutando una validacion propia sobre el conjunto de datos objetivo.
+El repositorio de Hugging Face no incluye metricas de validacion (mAP de caja, mAP de mascara, precision o recall por clase). La model card no aporta cifras de rendimiento y las busquedas web realizadas no devolvieron informacion sobre este modelo concreto. Cualquier valor numerico que se utilice para evaluarlo debe obtenerse ejecutando una validacion propia sobre el conjunto de datos objetivo.
 
 ## Requisitos de hardware
 
@@ -74,7 +74,7 @@ No hay datos numericos disponibles para este modelo, por lo que la comparacion e
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AmberY1201/best (YOLO11m-seg, 172 clases) | no disponible | imagen, ejemplo a 640x640 px | no disponible | no disponible | HuggingFace, 9 descargas |
+| AmberY1201/best (YOLO11m-seg, 172 clases) | no disponible | imagen, ejemplo a 640x640 px | no disponible | no disponible | Hugging Face, 9 descargas |
 | YOLO11-seg (variantes n/s/m/l/x de Ultralytics) | no disponible en esta ficha | imagen, entrenamiento a 640 px tipicamente | no disponible en esta ficha | AGPL-3.0 o licencia comercial de Ultralytics | Repositorio y documentacion de Ultralytics |
 | YOLOv8-seg (família anterior) | no disponible en esta ficha | imagen, entrenamiento a 640 px tipicamente | no disponible en esta ficha | AGPL-3.0 o licencia comercial de Ultralytics | Repositorio y documentacion de Ultralytics |
 | Mask R-CNN (detectron2, torchvision) | no disponible en esta ficha | imagen, resoluciones variables | no disponible en esta ficha | Apache-2.0 / MIT segun implementacion | Repositorios de referencia de Meta y PyTorch |
@@ -96,7 +96,7 @@ La diferencia principal de `AmberY1201/best` respecto a los pesos genericos de Y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberY1201/best
+- Modelo en Hugging Face: https://huggingface.co/AmberY1201/best
 - Documentacion de la libreria Ultralytics (necesaria para cargar y ejecutar `best.pt`): https://docs.ultralytics.com/
 - Repositorio de Ultralytics en GitHub: https://github.com/ultralytics/ultralytics
 - Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo; unicamente aparecieron rankings generalistas de modelos de lenguaje sin relacion con esta ficha.

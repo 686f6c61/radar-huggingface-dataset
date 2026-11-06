@@ -71,9 +71,9 @@ No se dispone de datos públicos de modelos comparables de la misma categoría p
 
 | Modelo | Parametros | Inicializacion | Rol | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| araseg-e69-naqta-nopnx-pa | 560 M | Punctuation-aware | Miembro de ensemble (NoPnx-PA) | MIT | HuggingFace |
-| araseg e17 (miembro hermano) | 560 M (receta byte-identica) | Distinta a e69 | Miembro de ensemble | MIT | HuggingFace (no verificado en esta busqueda) |
-| MostafaMaroof/Naqta | no disponible | no disponible | Modelo base | no disponible | HuggingFace |
+| araseg-e69-naqta-nopnx-pa | 560 M | Punctuation-aware | Miembro de ensemble (NoPnx-PA) | MIT | Hugging Face |
+| araseg e17 (miembro hermano) | 560 M (receta byte-identica) | Distinta a e69 | Miembro de ensemble | MIT | Hugging Face (no verificado en esta busqueda) |
+| MostafaMaroof/Naqta | no disponible | no disponible | Modelo base | no disponible | Hugging Face |
 
 No se conocen alternativas externas de la misma tarea con datos verificables en la información proporcionada.
 
@@ -91,7 +91,7 @@ No se conocen alternativas externas de la misma tarea con datos verificables en 
 - Rendimiento en producción: no hay datos de latencia, throughput ni estabilidad publicados para este miembro.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/NAMAA-Space/araseg-e69-naqta-nopnx-pa
+- Modelo en Hugging Face: https://huggingface.co/NAMAA-Space/araseg-e69-naqta-nopnx-pa
 - Sistema completo (NoPnx-PA, pesos del combinador y umbrales): https://huggingface.co/collections/NAMAA-Space/namaa-community-araseg-2026
 - Repositorio de código, configuraciones y mapa miembro-subtarea: https://github.com/NAMAA-ORG/NAMAA-Community-AraSeg-2026
 - Modelo base: https://huggingface.co/MostafaMaroof/Naqta

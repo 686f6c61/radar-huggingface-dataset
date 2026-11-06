@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`xw17/gemma-3-4b-it_SFT_lora_noneeg` es un repositorio de HuggingFace publicado por el usuario `xw17` que, a juzgar por su identificador, contiene un ajuste fino mediante LoRA (SFT) sobre el modelo Gemma 3 4B IT de Google. El repositorio se creó el 2 de octubre de 2026 (fecha futura respecto al calendario habitual de publicación, lo que apunta a un artefacto de importación o a una fecha mal registrada) y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", por lo que no existe evidencia de uso ni de validación por parte de la comunidad.
+`xw17/gemma-3-4b-it_SFT_lora_noneeg` es un repositorio de Hugging Face publicado por el usuario `xw17` que, a juzgar por su identificador, contiene un ajuste fino mediante LoRA (SFT) sobre el modelo Gemma 3 4B IT de Google. El repositorio se creó el 2 de octubre de 2026 (fecha futura respecto al calendario habitual de publicación, lo que apunta a un artefacto de importación o a una fecha mal registrada) y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", por lo que no existe evidencia de uso ni de validación por parte de la comunidad.
 
-El problema principal que plantea esta ficha es la ausencia casi total de documentación. La model card es la plantilla automática de HuggingFace sin rellenar: todos los campos relevantes (autoría, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) figuran como "[More Information Needed]". El sufijo `noneeg` del nombre no está explicado en ningún apartado del repositorio, de modo que se desconoce a qué se refiere (posiblemente a la exclusión de algún tipo de dato o tarea concreta, pero es una especulación que no se puede confirmar). El tamaño del repositorio (0,1 GB) es incompatible con los pesos completos en bf16 de un modelo de 4.000 millones de parámetros, que ocuparían del orden de 8 GB, lo que refuerza la hipótesis de que se trata de un adaptador LoRA y no de un modelo completo.
+El problema principal que plantea esta ficha es la ausencia casi total de documentación. La model card es la plantilla automática de Hugging Face sin rellenar: todos los campos relevantes (autoría, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) figuran como "[More Information Needed]". El sufijo `noneeg` del nombre no está explicado en ningún apartado del repositorio, de modo que se desconoce a qué se refiere (posiblemente a la exclusión de algún tipo de dato o tarea concreta, pero es una especulación que no se puede confirmar). El tamaño del repositorio (0,1 GB) es incompatible con los pesos completos en bf16 de un modelo de 4.000 millones de parámetros, que ocuparían del orden de 8 GB, lo que refuerza la hipótesis de que se trata de un adaptador LoRA y no de un modelo completo.
 
 Por todo ello, esta ficha debe leerse como una descripción del contenedor y del modelo base inferido, no como una evaluación del ajuste fino. Cualquier dato relativo a arquitectura, contexto o idiomas que se indique a continuación procede de la documentación pública del modelo base (Gemma 3 4B IT) y no puede verificarse dentro de este repositorio; se marca explícitamente en cada caso.
 
@@ -21,7 +21,7 @@ Por todo ello, esta ficha debe leerse como una descripción del contenedor y del
 | Licencia | No disponible. No se declara licencia en el repositorio, por lo que no puede confirmarse el regimen de uso comercial |
 | Formato de pesos | safetensors (etiqueta del repositorio) |
 
-Nota: el repositorio incluye la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico y aparece de forma automatica en la plantilla de model card de HuggingFace. No es una referencia al entrenamiento de este modelo.
+Nota: el repositorio incluye la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico y aparece de forma automatica en la plantilla de model card de Hugging Face. No es una referencia al entrenamiento de este modelo.
 
 ## Arquitectura y entrenamiento
 
@@ -80,16 +80,16 @@ No existe informacion de rendimiento del ajuste fino, de modo que la comparacion
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Gemma 3 4B IT (base inferido de este repositorio) | ~4B | 128.000 tokens | Terminos de uso de Gemma | Pesos abiertos en HuggingFace |
-| Llama 3.2 3B Instruct | ~3,2B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Pesos abiertos en HuggingFace |
-| Qwen2.5 3B Instruct | ~3,1B | 32.000 tokens (extensible) | Apache 2.0 | Pesos abiertos en HuggingFace |
-| Phi-3.5 mini Instruct | ~3,8B | 128.000 tokens | MIT | Pesos abiertos en HuggingFace |
+| Gemma 3 4B IT (base inferido de este repositorio) | ~4B | 128.000 tokens | Terminos de uso de Gemma | Pesos abiertos en Hugging Face |
+| Llama 3.2 3B Instruct | ~3,2B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Pesos abiertos en Hugging Face |
+| Qwen2.5 3B Instruct | ~3,1B | 32.000 tokens (extensible) | Apache 2.0 | Pesos abiertos en Hugging Face |
+| Phi-3.5 mini Instruct | ~3,8B | 128.000 tokens | MIT | Pesos abiertos en Hugging Face |
 
 El rendimiento comparado de este ajuste concreto frente a cualquiera de estas alternativas es no disponible. La ventaja diferencial del repositorio analizado, en caso de existir, residiria en el comportamiento introducido por el ajuste `noneeg`, cuyo objetivo no esta documentado.
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla automatica de HuggingFace sin ningun campo completado, lo que impide auditar el origen de los datos, la metodologia y el proposito del ajuste.
+- Documentacion inexistente: la model card es la plantilla automatica de Hugging Face sin ningun campo completado, lo que impide auditar el origen de los datos, la metodologia y el proposito del ajuste.
 - Licencia no declarada: al no especificarse licencia, no puede asumirse permiso para uso comercial. Ademas, el uso del modelo base Gemma 3 esta sujeto a los terminos de uso de Gemma, que imponen obligaciones adicionales de atribucion y de politica de uso aceptable.
 - Objetivo del ajuste desconocido: el sufijo `noneeg` no se explica en ningun apartado. Sin esa informacion no es posible saber que comportamiento se ha modificado ni si el cambio es deseable para un caso de uso concreto.
 - Riesgo de degradacion del modelo base: los ajustes LoRA con supervision sobre datasets reducidos pueden provocar olvido catastrofico (catastrophic forgetting) de capacidades previamente adquiridas, especialmente en idiomas distintos del ingles y en tareas de codigo o matematicas. No se ha publicado ninguna evaluacion que descarte este efecto.
@@ -104,7 +104,7 @@ El rendimiento comparado de este ajuste concreto frente a cualquiera de estas al
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/gemma-3-4b-it_SFT_lora_noneeg
+- Repositorio en Hugging Face: https://huggingface.co/xw17/gemma-3-4b-it_SFT_lora_noneeg
 - Articulo referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla de model card: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces relevantes (paper, blog, repositorio de codigo ni demo) en la busqueda web realizada. No se dispone de enlace a la model card del modelo base dentro de este repositorio.

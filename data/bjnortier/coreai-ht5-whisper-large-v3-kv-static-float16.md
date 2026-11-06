@@ -110,7 +110,7 @@ Frente al Whisper large-v3 original, este bundle no mejora la calidad: cambia el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bjnortier/coreai-ht5-whisper-large-v3-kv-static-float16
+- Repositorio en Hugging Face: https://huggingface.co/bjnortier/coreai-ht5-whisper-large-v3-kv-static-float16
 - Variante con decoder dinámico: https://huggingface.co/bjnortier/coreai-whisper-large-v3-kv-float16
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Apple Core AI (documentación para desarrolladores): https://developer.apple.com

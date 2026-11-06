@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Xing-VL2.0-Decision-GGUF es la colección de cuantizaciones estáticas en formato GGUF del modelo multimodal RBDash-Team/Xing-VL2.0-Decision, publicada por el usuario mradermacher, especializado en convertir pesos de HuggingFace a GGUF para inferencia local. El modelo original es un modelo de visión-lenguaje (VLM) orientado a tareas de decisión y clasificación (etiquetas `decision-index`, `classification`, `multimodal`, `vision`, `conversational`), con 26.895.998.464 parámetros (~26,9 B) según los safetensors del repositorio base.
+Xing-VL2.0-Decision-GGUF es la colección de cuantizaciones estáticas en formato GGUF del modelo multimodal RBDash-Team/Xing-VL2.0-Decision, publicada por el usuario mradermacher, especializado en convertir pesos de Hugging Face a GGUF para inferencia local. El modelo original es un modelo de visión-lenguaje (VLM) orientado a tareas de decisión y clasificación (etiquetas `decision-index`, `classification`, `multimodal`, `vision`, `conversational`), con 26.895.998.464 parámetros (~26,9 B) según los safetensors del repositorio base.
 
 El problema que resuelve esta publicación no es el entrenamiento del modelo, sino su explotación práctica: permite ejecutar un VLM de ~27 B en hardware de consumo o en servidores sin GPUs de gama alta, gracias a 11 cuantizaciones que van desde Q2_K (10,8 GB) hasta Q8_0 (28,7 GB), más dos variantes del proyector multimodal (`mmproj` en Q8_0 y f16). Es relevante para quien necesite clasificación y toma de decisiones sobre imágenes con despliegue local, sin depender de APIs propietarias.
 

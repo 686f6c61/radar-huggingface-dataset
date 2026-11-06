@@ -84,10 +84,10 @@ Los valores de esta tabla para los modelos alternativos provienen de la document
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| liltii-v0.2-qwen2.5-0.5b | 494 M | 32.768 | Apache-2.0 | Persona companion en bengalí/Banglish con etiquetas de emoción, ajuste QLoRA | HuggingFace, safetensors y GGUF |
-| Qwen/Qwen2.5-0.5B-Instruct | ~495 M | 32.768 | Apache-2.0 | Asistente de propósito general multilingüe | HuggingFace |
-| Qwen/Qwen2.5-1.5B-Instruct | ~1,54 B | 32.768 | Apache-2.0 | Asistente de propósito general, mayor capacidad de razonamiento | HuggingFace |
-| SmolLM2-360M-Instruct | ~362 M | 8.192 | Apache-2.0 | Asistente pequeño orientado a inglés y despliegue en el borde | HuggingFace |
+| liltii-v0.2-qwen2.5-0.5b | 494 M | 32.768 | Apache-2.0 | Persona companion en bengalí/Banglish con etiquetas de emoción, ajuste QLoRA | Hugging Face, safetensors y GGUF |
+| Qwen/Qwen2.5-0.5B-Instruct | ~495 M | 32.768 | Apache-2.0 | Asistente de propósito general multilingüe | Hugging Face |
+| Qwen/Qwen2.5-1.5B-Instruct | ~1,54 B | 32.768 | Apache-2.0 | Asistente de propósito general, mayor capacidad de razonamiento | Hugging Face |
+| SmolLM2-360M-Instruct | ~362 M | 8.192 | Apache-2.0 | Asistente pequeño orientado a inglés y despliegue en el borde | Hugging Face |
 
 El punto diferencial de liltii no es el rendimiento bruto, sino la especialización: frente a los asistentes generalistas de tamaño similar, ofrece un formato de salida estructurado (emoción más acción) y cobertura de bengalí coloquial, a cambio de renunciar por completo a tareas factuales, de código o matemáticas.
 
@@ -106,7 +106,7 @@ El punto diferencial de liltii no es el rendimiento bruto, sino la especializaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bayazidhs04/liltii-v0.2-qwen2.5-0.5b
+- Modelo en Hugging Face: https://huggingface.co/bayazidhs04/liltii-v0.2-qwen2.5-0.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/bayazidhs04/cupcake-liltii
 - Perfil del autor: https://huggingface.co/bayazidhs04

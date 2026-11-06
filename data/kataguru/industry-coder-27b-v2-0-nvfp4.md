@@ -103,6 +103,6 @@ La comparativa con alternativas de la misma categoria no puede completarse con d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kataguru/Industry-Coder-27B-v2.0-NVFP4
+- Hugging Face: https://huggingface.co/kataguru/Industry-Coder-27B-v2.0-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

@@ -80,6 +80,6 @@ No se dispone de información suficiente para comparar este checkpoint con alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/standjones/mirror-unconst-affine-5czsc2fc98-r596-r252-odpo-hirank-midbeta-softctx-megaextra-merged
+- Modelo en Hugging Face: https://huggingface.co/standjones/mirror-unconst-affine-5czsc2fc98-r596-r252-odpo-hirank-midbeta-softctx-megaextra-merged
 - Modelo base: https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged (no se proporciona URL directa, solo el identificador)
 - No se han encontrado papers, blogs o repositorios adicionales en la información proporcionada.

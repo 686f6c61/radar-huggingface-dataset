@@ -82,8 +82,8 @@ El propio autor advierte de que el conjunto de prueba procede de su split de val
 
 | Modelo | Parametros | Contexto | Idiomas foco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SARVI-166M-Base | 166M | 512 | en, hi, bn, ta, mr + code-mixed romanizado | Apache 2.0 | HuggingFace |
-| SmolLM2-135M | 135M | no disponible en la información | Principalmente inglés | no disponible en la información | HuggingFace |
+| SARVI-166M-Base | 166M | 512 | en, hi, bn, ta, mr + code-mixed romanizado | Apache 2.0 | Hugging Face |
+| SmolLM2-135M | 135M | no disponible en la información | Principalmente inglés | no disponible en la información | Hugging Face |
 | Modelos multilingües indic de mayor tamaño | no disponible | no disponible | Indic | no disponible | no disponible |
 
 Frente a SmolLM2-135M, SARVI es claramente superior en bits por byte sobre hinglish, banglish, tanglish y marathi-inglés (por ejemplo, 1,046 frente a 2,567 en hinglish) y ligeramente inferior en inglés (1,135 frente a 1,023). No se dispone de comparación con modelos multilingües indic de mayor tamaño; el autor indica explícitamente que no los ha evaluado.
@@ -103,7 +103,7 @@ Frente a SmolLM2-135M, SARVI es claramente superior en bits por byte sobre hingl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnuvaNexus2026/SARVI-166M-Base
+- Modelo en Hugging Face: https://huggingface.co/AnuvaNexus2026/SARVI-166M-Base
 - Kit de fine-tuning: https://huggingface.co/AnuvaNexus2026/SARVI-166M-Base/tree/main/finetune
 - Dataset Sangraha (AI4Bharat): https://huggingface.co/datasets/ai4bharat/sangraha
 - Paper DravidianCodeMix (Chakravarthi et al.): https://arxiv.org/abs/2106.09460

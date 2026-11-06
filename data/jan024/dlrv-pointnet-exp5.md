@@ -80,8 +80,8 @@ Desglose por objeto en datos reales (parcial, según el autor): la lámpara alca
 
 | Modelo | Parametros | Entrada | Contexto / clases | ADD(-S)@0,1d real | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| jan024/dlrv-pointnet-exp5 | 0,86 M | 1024 puntos, nube enmascarada | 15 objetos LineMOD | 36,23% | no disponible | HuggingFace |
-| jan024/dlrv-ppointnet-exp6 | no disponible | 1024 puntos, nube enmascarada | 15 objetos LineMOD | no disponible | no disponible | HuggingFace |
+| jan024/dlrv-pointnet-exp5 | 0,86 M | 1024 puntos, nube enmascarada | 15 objetos LineMOD | 36,23% | no disponible | Hugging Face |
+| jan024/dlrv-ppointnet-exp6 | no disponible | 1024 puntos, nube enmascarada | 15 objetos LineMOD | no disponible | no disponible | Hugging Face |
 | Pista MVCNN del informe (referencia citada, sin datos) | no disponible | no disponible | 15 objetos LineMOD | no disponible | no disponible | no disponible |
 
 El autor indica que `exp6` es más preciso en datos sintéticos y menos preciso en datos reales que `exp5`, y que `exp5` es el checkpoint empleado para la comparación cara a cara contra la pista MVCNN, pero no se publican cifras de esa comparación en la información disponible. No se dispone de datos de otros estimadores de pose 6DoF de la literatura en el material consultado, por lo que no se incluye una comparación numérica adicional.
@@ -96,11 +96,11 @@ El autor indica que `exp6` es más preciso en datos sintéticos y menos preciso 
 - El dataset LineMOD en formato BOP no se distribuye con el modelo; debe descargarse por separado de https://bop.felk.cvut.cz/datasets/.
 - Licencia: no disponible. No se especifican términos de uso comercial, por lo que no se puede asumir permiso para uso en producción sin consultar al autor.
 - Estado del repositorio: 0 descargas y 0 «likes» en el momento de la consulta, tamaño de repositorio 0,0 GB y sin licencia declarada, lo que sugiere un artefacto académico sin mantenimiento ni soporte.
-- Dependencia de código externo: para cargar el checkpoint se necesitan las definiciones de modelo del repositorio del proyecto, que no se incluyen en el modelo de HuggingFace.
+- Dependencia de código externo: para cargar el checkpoint se necesitan las definiciones de modelo del repositorio del proyecto, que no se incluyen en el modelo de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jan024/dlrv-pointnet-exp5
+- Modelo en Hugging Face: https://huggingface.co/jan024/dlrv-pointnet-exp5
 - Variante con ADD normalizado por diámetro (exp6): https://huggingface.co/jan024/dlrv-ppointnet-exp6
 - Dataset LineMOD en formato BOP: https://bop.felk.cvut.cz/datasets/
 - Búsqueda web: no se han encontrado resultados relevantes sobre el modelo, su paper o su repositorio. Las consultas devolvieron únicamente páginas del servicio Vinted sin relación alguna con el modelo. No se dispone de enlace a paper, blog, repositorio de código ni demo.

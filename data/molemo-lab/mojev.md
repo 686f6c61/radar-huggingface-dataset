@@ -81,7 +81,7 @@ No se han identificado modelos comparables directos en la información proporcio
 - Calibración: el ECE del 0,79% es bajo en el conjunto de evaluación, pero puede degradarse en dominios fuera de distribución; se recomienda validar en el dominio objetivo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/MoLeMo-Lab/mojev
+- Modelo en Hugging Face: https://huggingface.co/MoLeMo-Lab/mojev
 - Repositorio de código: https://github.com/MoLeMo-Lab/mojev
 - Dataset: https://huggingface.co/datasets/MoLeMo-Lab/mojev-mix
 - Resultados: https://github.com/MoLeMo-Lab/mojev#results

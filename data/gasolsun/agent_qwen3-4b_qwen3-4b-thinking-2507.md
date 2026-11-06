@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Agent_Qwen3-4B_Qwen3-4B-Thinking-2507 es un ajuste fino de Qwen/Qwen3-4B obtenido mediante destilacion on-policy (OPD) desde el modelo profesor Qwen/Qwen3-4B-Thinking-2507. Lo publica el usuario gasolsun en HuggingFace bajo licencia Apache 2.0, con 4.411.424.256 parametros (4,41 mil millones) y un repositorio de 8,8 GB en safetensors. El objetivo declarado es dotar a un modelo denso de 4B de capacidades agenticas (tool calling y dialogo multi-turno) sin recurrir a datos de entrenamiento reales ni a respuestas de referencia.
+Agent_Qwen3-4B_Qwen3-4B-Thinking-2507 es un ajuste fino de Qwen/Qwen3-4B obtenido mediante destilacion on-policy (OPD) desde el modelo profesor Qwen/Qwen3-4B-Thinking-2507. Lo publica el usuario gasolsun en Hugging Face bajo licencia Apache 2.0, con 4.411.424.256 parametros (4,41 mil millones) y un repositorio de 8,8 GB en safetensors. El objetivo declarado es dotar a un modelo denso de 4B de capacidades agenticas (tool calling y dialogo multi-turno) sin recurrir a datos de entrenamiento reales ni a respuestas de referencia.
 
 La contribucion tecnica principal es el metodo "Ask to Distill": se entrena con RL un generador de preguntas que produce enunciados capaces de exponer desacuerdo token a token, acotado y aprendible, entre profesor y alumno sobre las propias soluciones del alumno. De ese generador se muestrea un banco de preguntas que se filtra y deduplica, y con el se entrena al alumno mediante destilacion on-policy. El resultado es un modelo orientado a tareas de agente, evaluado en tau2-bench con un 41,9 % de pass^1 de media en los dominios airline, retail y telecom.
 
@@ -23,7 +23,7 @@ Es relevante ahora porque demuestra que un modelo de 4B puede alcanzar un rendim
 | Modelo base (alumno) | Qwen/Qwen3-4B |
 | Modelo profesor | Qwen/Qwen3-4B-Thinking-2507 |
 | Modo de inferencia | Non-thinking (el autor indica `enable_thinking=False`) |
-| Fecha de creacion en el repositorio | 2026-10-15 (segun metadatos de HuggingFace) |
+| Fecha de creacion en el repositorio | 2026-10-15 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -81,9 +81,9 @@ Condiciones declaradas por el autor: split de test de tau2-bench, metrica pass^1
 
 | Modelo | Parametros | Contexto | tau2-bench (media pass^1) | Modo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Agent_Qwen3-4B_Qwen3-4B-Thinking-2507 | 4,41 B | No disponible | 41,9 % | Non-thinking | Apache 2.0 | HuggingFace (gasolsun), 0 descargas |
-| Qwen/Qwen3-4B (alumno base) | 4 B (aprox.) | No disponible en esta ficha | No disponible | Thinking y non-thinking segun configuracion | Apache 2.0 | HuggingFace (Qwen) |
-| Qwen/Qwen3-4B-Thinking-2507 (profesor) | 4 B (aprox.) | No disponible en esta ficha | No disponible | Thinking | Apache 2.0 | HuggingFace (Qwen) |
+| Agent_Qwen3-4B_Qwen3-4B-Thinking-2507 | 4,41 B | No disponible | 41,9 % | Non-thinking | Apache 2.0 | Hugging Face (gasolsun), 0 descargas |
+| Qwen/Qwen3-4B (alumno base) | 4 B (aprox.) | No disponible en esta ficha | No disponible | Thinking y non-thinking segun configuracion | Apache 2.0 | Hugging Face (Qwen) |
+| Qwen/Qwen3-4B-Thinking-2507 (profesor) | 4 B (aprox.) | No disponible en esta ficha | No disponible | Thinking | Apache 2.0 | Hugging Face (Qwen) |
 
 No se dispone de resultados de tau2-bench publicados en la informacion proporcionada para el modelo base ni para el profesor, de modo que no es posible cuantificar la mejora atribuible a la destilacion. Tampoco se dispone de datos de otras alternativas de tamano similar (por ejemplo, familias de 3-4 B orientadas a agentes) para una comparacion con cifras verificables.
 
@@ -103,7 +103,7 @@ No se dispone de resultados de tau2-bench publicados en la informacion proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gasolsun/Agent_Qwen3-4B_Qwen3-4B-Thinking-2507
+- Modelo en Hugging Face: https://huggingface.co/gasolsun/Agent_Qwen3-4B_Qwen3-4B-Thinking-2507
 - Dataset del banco de preguntas: https://huggingface.co/datasets/gasolsun/Agent_Qwen3-4B_Qwen3-4B-Thinking-2507
 - Modelo base (alumno): https://huggingface.co/Qwen/Qwen3-4B
 - Modelo profesor: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507

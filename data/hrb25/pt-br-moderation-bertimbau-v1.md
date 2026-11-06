@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PT-BR Moderation BERTimbau V1 es un clasificador multietiqueta para moderación de texto en portugués brasileño, publicado por el usuario HRB25 en HuggingFace. El modelo parte del checkpoint BERTimbau Base de neuralmind y lo afina como cabecera de clasificación de secuencias (BertForSequenceClassification) para producir doce puntuaciones independientes, una por cada categoría de la política de moderación de Colmeia. Cada puntuación pasa por una sigmoide y se compara con un umbral específico por categoría para decidir el positivo.
+PT-BR Moderation BERTimbau V1 es un clasificador multietiqueta para moderación de texto en portugués brasileño, publicado por el usuario HRB25 en Hugging Face. El modelo parte del checkpoint BERTimbau Base de neuralmind y lo afina como cabecera de clasificación de secuencias (BertForSequenceClassification) para producir doce puntuaciones independientes, una por cada categoría de la política de moderación de Colmeia. Cada puntuación pasa por una sigmoide y se compara con un umbral específico por categoría para decidir el positivo.
 
 Técnicamente es un transformer encoder bidireccional de tipo BERT, con 108.932.364 parámetros en float32, 12 capas, dimensión oculta de 768, 12 cabezas de atención, capa intermedia de 3.072 y vocabulario de 29.794 tokens. El codificador admite hasta 512 posiciones, aunque la evaluación publicada se hizo con truncamiento a 128 tokens. El repositorio ocupa 0,4 GB y los pesos se distribuyen en formato safetensors.
 
@@ -133,7 +133,7 @@ No se dispone de datos de benchmarks publicados para alternativas equivalentes d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HRB25/pt-br-moderation-bertimbau-v1
+- Modelo en Hugging Face: https://huggingface.co/HRB25/pt-br-moderation-bertimbau-v1
 - Modelo base: https://huggingface.co/neuralmind/bert-base-portuguese-cased
 - Dataset de evaluacion: https://huggingface.co/datasets/HRB25/pt-br-moderation-eval
 - Dataset de evaluacion (tipo declarado en model-index): HRB25/pt-br-moderation-eval, revision `949b41541412abf718987bbec166a904b59587f1`

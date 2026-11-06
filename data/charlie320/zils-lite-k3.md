@@ -80,6 +80,6 @@ No se dispone de informacion suficiente sobre modelos alternativos de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Charlie320/zils-lite-k3
+- Modelo en Hugging Face: https://huggingface.co/Charlie320/zils-lite-k3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios o demos adicionales.

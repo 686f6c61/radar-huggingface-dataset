@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mhseo2/opd_sftb8dm15e_s2000_qwen3moe30b_ot3math-step70` es un checkpoint publicado en HuggingFace por el usuario `mhseo2`, con 16 descargas y sin ningún "like" en el momento de la consulta. Por la nomenclatura del repositorio se trata de un artefacto de entrenamiento (un checkpoint intermedio de un proceso de ajuste supervisado, probablemente con destilación on-policy) construido sobre la familia Qwen3 MoE y orientado a matemáticas, concretamente a partir de datos tipo OpenThoughts3. No existe model card, ni pipeline declarado, ni licencia, ni idiomas, ni resultados de evaluación publicados.
+`mhseo2/opd_sftb8dm15e_s2000_qwen3moe30b_ot3math-step70` es un checkpoint publicado en Hugging Face por el usuario `mhseo2`, con 16 descargas y sin ningún "like" en el momento de la consulta. Por la nomenclatura del repositorio se trata de un artefacto de entrenamiento (un checkpoint intermedio de un proceso de ajuste supervisado, probablemente con destilación on-policy) construido sobre la familia Qwen3 MoE y orientado a matemáticas, concretamente a partir de datos tipo OpenThoughts3. No existe model card, ni pipeline declarado, ni licencia, ni idiomas, ni resultados de evaluación publicados.
 
 El dato objetivo disponible es el recuento de safetensors: 8.190.735.360 parámetros, con un repositorio de 16,4 GB, lo que es coherente con pesos en bf16 (2 bytes por parámetro). Ese recuento no coincide con los aproximadamente 30.500 millones de parámetros del Qwen3-30B-A3B canónico, por lo que el sufijo "qwen3moe30b" del nombre debe interpretarse como la configuración de entrenamiento de origen y no como el tamaño real del checkpoint publicado; conviene verificarlo antes de reutilizarlo.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`opd_sftb8dm15e_s2000_qwen3moe30b_ot3math-step70`) | 8.190.735.360 | No disponible | No disponible | No declarada | HuggingFace, 16 descargas |
+| Este checkpoint (`opd_sftb8dm15e_s2000_qwen3moe30b_ot3math-step70`) | 8.190.735.360 | No disponible | No disponible | No declarada | Hugging Face, 16 descargas |
 | Qwen3-30B-A3B (base de referencia de la familia) |unos 30.500 millones | unos 3.300 millones | 32.768 nativo, 131.072 con YaRN | Apache 2.0 | Amplia, con cuantizaciones oficiales |
 | Qwen3-8B | unos 8.200 millones | denso | 32.768 nativo, 131.072 con YaRN | Apache 2.0 | Amplia |
 | Qwen2.5-Math-7B | unos 7.600 millones | denso | 4.096 nativo | Apache 2.0 (con condiciones de atribución) | Amplia, orientado a matemáticas |
@@ -86,6 +86,6 @@ La comparación es aproximada: el recuento de parámetros de este checkpoint se 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mhseo2/opd_sftb8dm15e_s2000_qwen3moe30b_ot3math-step70
+- Repositorio en Hugging Face: https://huggingface.co/mhseo2/opd_sftb8dm15e_s2000_qwen3moe30b_ot3math-step70
 - Qwen3-30B-A3B (modelo base de referencia de la familia): https://huggingface.co/Qwen/Qwen3-30B-A3B
 - No se han proporcionado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

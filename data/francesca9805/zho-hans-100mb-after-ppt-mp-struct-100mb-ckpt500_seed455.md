@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zho-hans-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455` es un ajuste fino (SFT) desarrollado por el usuario de HuggingFace `francesca9805`, construido sobre el modelo base `francesca9805/zho-hans-100mb-ppt-mp-struct-100mb_seed455`. Se trata de un transformer decoder-only de tipo GPT-2 con 124.770.816 parametros reales (unos 124,8 millones), entrenado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2. El nombre del checkpoint sugiere un experimento controlado de investigacion sobre tokenizadores y datos en chino simplificado (etiqueta BCP-47 `zho-hans`), con un corpus de 100 MB, un checkpoint concreto (500) y una semilla fija (455).
+El modelo `zho-hans-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455` es un ajuste fino (SFT) desarrollado por el usuario de Hugging Face `francesca9805`, construido sobre el modelo base `francesca9805/zho-hans-100mb-ppt-mp-struct-100mb_seed455`. Se trata de un transformer decoder-only de tipo GPT-2 con 124.770.816 parametros reales (unos 124,8 millones), entrenado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2. El nombre del checkpoint sugiere un experimento controlado de investigacion sobre tokenizadores y datos en chino simplificado (etiqueta BCP-47 `zho-hans`), con un corpus de 100 MB, un checkpoint concreto (500) y una semilla fija (455).
 
 La relevancia de esta ficha es mas bien metodologica que de producto: por tamano y arquitectura, el modelo pertenece a la familia GPT-2 small, lo que lo situa en el rango de los 124 millones de parametros y lo hace ejecutable en hardware muy modesto, incluso en CPU. Sin embargo, la model card no declara longitud de contexto, idiomas soportados, licencia efectiva ni resultados de evaluacion, y el repositorio acumula 0 descargas y 0 likes en el momento de redactar esta ficha.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| `francesca9805/zho-hans-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455` | 124,8 M | No disponible | No disponible | HuggingFace, safetensors | No evaluado |
-| `openai-community/gpt2` | 124 M | 1024 tokens | MIT | HuggingFace, safetensors y otros | Referencia ampliamente evaluada en la literatura |
-| `distilgpt2` | 82 M | 1024 tokens | Apache 2.0 | HuggingFace, safetensors y otros | Destilado de GPT-2, menor coste de inferencia |
-| `Qwen2.5-0.5B` | 494 M | 32 768 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF | Multilingue, con evaluaciones publicas |
+| `francesca9805/zho-hans-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455` | 124,8 M | No disponible | No disponible | Hugging Face, safetensors | No evaluado |
+| `openai-community/gpt2` | 124 M | 1024 tokens | MIT | Hugging Face, safetensors y otros | Referencia ampliamente evaluada en la literatura |
+| `distilgpt2` | 82 M | 1024 tokens | Apache 2.0 | Hugging Face, safetensors y otros | Destilado de GPT-2, menor coste de inferencia |
+| `Qwen2.5-0.5B` | 494 M | 32 768 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF | Multilingue, con evaluaciones publicas |
 
 La comparacion con GPT-2 y DistilGPT-2 es pertinente por tamano y arquitectura; la comparacion con Qwen2.5-0.5B lo es por categoria de uso (modelo pequeno para generacion de texto), aunque casi cuadruplica el numero de parametros de este checkpoint.
 
@@ -84,7 +84,7 @@ La comparacion con GPT-2 y DistilGPT-2 es pertinente por tamano y arquitectura; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-mp-struct-100mb_seed455
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/p2t7iv40
 - Repositorio de TRL: https://github.com/huggingface/trl

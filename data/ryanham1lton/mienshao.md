@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mienshao es un repositorio de modelos publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de redactar esta ficha, la model card asociada contiene únicamente el bloque de metadatos de licencia, sin ningún texto descriptivo, y el repositorio no declara pipeline, idiomas soportados ni arquitectura. El tamaño del repositorio es de 0,1 GB y los contadores públicos de la plataforma marcan 0 descargas y 0 likes.
+Mienshao es un repositorio de modelos publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de redactar esta ficha, la model card asociada contiene únicamente el bloque de metadatos de licencia, sin ningún texto descriptivo, y el repositorio no declara pipeline, idiomas soportados ni arquitectura. El tamaño del repositorio es de 0,1 GB y los contadores públicos de la plataforma marcan 0 descargas y 0 likes.
 
 No es posible determinar qué problema resuelve el modelo ni qué técnicas emplea, porque el autor no ha publicado documentación técnica, datos de entrenamiento ni resultados de evaluación. La información disponible se limita a los metadatos de la plataforma: identificador, licencia, fecha de creación (2026-10-28) y tamaño del repositorio.
 
@@ -82,4 +82,4 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Mienshao
+- Hugging Face: https://huggingface.co/Ryanham1lton/Mienshao

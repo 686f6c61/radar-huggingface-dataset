@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenFlowLM/GPT-OSS-Safeguard-20B-NPU2 es un ajuste fino (finetune) del modelo openai/gpt-oss-safeguard-20b, publicado por el usuario OpenFlowLM en HuggingFace. Se trata de un modelo de generacion de texto orientado a tareas de seguridad: clasificacion de contenido, etiquetado de entradas y salidas de LLM y aplicacion de politicas de seguridad definidas por el usuario. El modelo hereda la arquitectura y el entrenamiento del gpt-oss-safeguard-20b original de OpenAI, que es un transformer con mezcla de expertos (MoE) de 21 000 millones de parametros totales y 3 600 millones de parametros activos.
+OpenFlowLM/GPT-OSS-Safeguard-20B-NPU2 es un ajuste fino (finetune) del modelo openai/gpt-oss-safeguard-20b, publicado por el usuario OpenFlowLM en Hugging Face. Se trata de un modelo de generacion de texto orientado a tareas de seguridad: clasificacion de contenido, etiquetado de entradas y salidas de LLM y aplicacion de politicas de seguridad definidas por el usuario. El modelo hereda la arquitectura y el entrenamiento del gpt-oss-safeguard-20b original de OpenAI, que es un transformer con mezcla de expertos (MoE) de 21 000 millones de parametros totales y 3 600 millones de parametros activos.
 
 El modelo base esta disenado especificamente para razonamiento sobre seguridad ("safety reasoning"): interpreta una politica escrita en lenguaje natural y clasifica texto conforme a ella, devolviendo ademas la cadena de razonamiento que justifica la decision. Esta pensado para casos de uso de confianza y seguridad (Trust and Safety): filtrado de contenido, moderacion, etiquetado en linea y por lotes.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenFlowLM/GPT-OSS-Safeguard-20B-NPU2 (este) | 21 000 M (heredados) | 3600 M (heredados) | no disponible | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| openai/gpt-oss-safeguard-20b | 21 000 M | 3600 M | no disponible | apache-2.0 | HuggingFace, modelo base oficial de OpenAI |
-| openai/gpt-oss-safeguard-120b | 117 000 M | 5100 M | no disponible | apache-2.0 | HuggingFace, version de mayor tamano |
-| openai/gpt-oss-20b (modelo generalista) | 21 000 M | 3600 M | no disponible | apache-2.0 | HuggingFace, recomendado por OpenAI para aplicaciones no relacionadas con seguridad |
+| OpenFlowLM/GPT-OSS-Safeguard-20B-NPU2 (este) | 21 000 M (heredados) | 3600 M (heredados) | no disponible | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| openai/gpt-oss-safeguard-20b | 21 000 M | 3600 M | no disponible | apache-2.0 | Hugging Face, modelo base oficial de OpenAI |
+| openai/gpt-oss-safeguard-120b | 117 000 M | 5100 M | no disponible | apache-2.0 | Hugging Face, version de mayor tamano |
+| openai/gpt-oss-20b (modelo generalista) | 21 000 M | 3600 M | no disponible | apache-2.0 | Hugging Face, recomendado por OpenAI para aplicaciones no relacionadas con seguridad |
 
 Diferencias observables: las tres variantes de gpt-oss-safeguard comparten licencia Apache 2.0 y el formato harmony; el 120b ofrece mas capacidad a costa de mayores requisitos de hardware, y el 20b y sus derivados caben en 16 GB de VRAM. La diferencia entre este modelo y openai/gpt-oss-safeguard-20b es, segun la informacion disponible, unicamente el ajuste fino declarado por OpenFlowLM, sin detalles publicados sobre que cambia. No se dispone de datos de rendimiento comparado para esta variante.
 
@@ -88,12 +88,12 @@ Diferencias observables: las tres variantes de gpt-oss-safeguard comparten licen
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/OpenFlowLM/GPT-OSS-Safeguard-20B-NPU2
-- Modelo base en HuggingFace: https://huggingface.co/openai/gpt-oss-safeguard-20b
+- Hugging Face (este modelo): https://huggingface.co/OpenFlowLM/GPT-OSS-Safeguard-20B-NPU2
+- Modelo base en Hugging Face: https://huggingface.co/openai/gpt-oss-safeguard-20b
 - Version de 120B del modelo base: https://huggingface.co/openai/gpt-oss-safeguard-120b
 - Coleccion de modelos gpt-oss-safeguard: https://huggingface.co/collections/openai/gpt-oss-safeguard
 - Coleccion de modelos gpt-oss generalistas: https://huggingface.co/collections/openai/gpt-oss
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/openai/gpt-oss-safeguard-20b
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/openai/gpt-oss-safeguard-20b
 - Guia de prompting (cookbook de OpenAI): https://cookbook.openai.com/articles/gpt-oss-safeguard-guide
 - Cookbooks de gpt-oss: https://cookbook.openai.com/topic/gpt-oss
 - Paper (arXiv:2508.10925): https://arxiv.org/abs/2508.10925

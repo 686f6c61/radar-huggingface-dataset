@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto / entradas | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DA3-SMALL (este port) | 34.299.463 | N vistas, profundidad + pose + ray-pose | Profundidad y geometria multi-vista | Apache-2.0 | HuggingFace (`bigshanedogg/DA3-SMALL`) |
-| `depth-anything/DA3-SMALL` (oficial) | no disponible en la informacion | mismo checkpoint | misma tarea | Apache-2.0 | HuggingFace, requiere paquete `depth_anything_3` |
+| DA3-SMALL (este port) | 34.299.463 | N vistas, profundidad + pose + ray-pose | Profundidad y geometria multi-vista | Apache-2.0 | Hugging Face (`bigshanedogg/DA3-SMALL`) |
+| `depth-anything/DA3-SMALL` (oficial) | no disponible en la informacion | mismo checkpoint | misma tarea | Apache-2.0 | Hugging Face, requiere paquete `depth_anything_3` |
 | Otras variantes de Depth Anything 3 | no disponible | no disponible | misma familia | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de otras variantes de la familia que permitan una comparacion cuantitativa.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones de otras variantes d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bigshanedogg/DA3-SMALL
+- Repositorio Hugging Face: https://huggingface.co/bigshanedogg/DA3-SMALL
 - Modelo base oficial: https://huggingface.co/depth-anything/DA3-SMALL
 - Repositorio de codigo original: https://github.com/ByteDance-Seed/depth-anything-3
 - Paper: *Depth Anything 3: Recovering the Visual Space from Any Views* — https://arxiv.org/abs/2511.10647

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`keylazy/Qwen2.5-Omni-3B-bab-slurp-t2-lr1e4-sft` es un checkpoint subido a HuggingFace por el usuario `keylazy` el 4 de noviembre de 2026. Por la nomenclatura del identificador, se trata de un ajuste fino supervisado (SFT) derivado de Qwen2.5-Omni-3B, un modelo multimodal (texto, imagen, audio y video) de la familia Qwen2.5-Omni desarrollada por Alibaba Qwen. El sufijo `bab-slurp-t2-lr1e4-sft` sugiere una configuracion de entrenamiento con una tasa de aprendizaje de 1e-4 sobre algun conjunto de datos o tarea no especificada ("bab-slurp-t2").
+`keylazy/Qwen2.5-Omni-3B-bab-slurp-t2-lr1e4-sft` es un checkpoint subido a Hugging Face por el usuario `keylazy` el 4 de noviembre de 2026. Por la nomenclatura del identificador, se trata de un ajuste fino supervisado (SFT) derivado de Qwen2.5-Omni-3B, un modelo multimodal (texto, imagen, audio y video) de la familia Qwen2.5-Omni desarrollada por Alibaba Qwen. El sufijo `bab-slurp-t2-lr1e4-sft` sugiere una configuracion de entrenamiento con una tasa de aprendizaje de 1e-4 sobre algun conjunto de datos o tarea no especificada ("bab-slurp-t2").
 
 El modelo resulta relevante como ejemplo de los checkpoints comunitarios de ajuste fino que proliferan en el Hub: aprovechan la base multimodal de Qwen2.5-Omni-3B (3 mil millones de parametros) para especializar el comportamiento en una tarea concreta, manteniendo la arquitectura original del modelo base. Sin embargo, la model card es una plantilla autogenerada sin datos sustantivos, por lo que la mayor parte de las especificaciones tecnicas solo pueden inferirse del modelo base y no estan documentadas por el autor.
 
@@ -27,7 +27,7 @@ La ausencia de descargas, likes, licencia declarada e idiomas soportados hace qu
 
 ## Arquitectura y entrenamiento
 
-La model card es una plantilla autogenerada de HuggingFace y no aporta informacion sobre la arquitectura, los datos de entrenamiento ni el procedimiento seguido. Por el identificador se deduce que es un ajuste fino supervisado (SFT) del modelo Qwen2.5-Omni-3B, un modelo multimodal de la familia Qwen2.5-Omni que procesa texto, imagen, audio y video. No se dispone del numero de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF o DPO.
+La model card es una plantilla autogenerada de Hugging Face y no aporta informacion sobre la arquitectura, los datos de entrenamiento ni el procedimiento seguido. Por el identificador se deduce que es un ajuste fino supervisado (SFT) del modelo Qwen2.5-Omni-3B, un modelo multimodal de la familia Qwen2.5-Omni que procesa texto, imagen, audio y video. No se dispone del numero de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF o DPO.
 
 El nombre del checkpoint incluye hiperparametros explicitos: `lr1e4` (tasa de aprendizaje 1e-4) y `sft` (supervised fine-tuning), lo que indica un ajuste estandar de aprendizaje supervisado. El tamano del repositorio (0,1 GB) es llamativamente pequeno para un modelo de 3B parametros en precision completa o bf16 (que rondaria los 6 GB), lo que sugiere que el checkpoint puede contener solo una parte de los pesos, pesos cuantizados de forma agresiva, o un adaptador. Este extremo no esta documentado y no puede confirmarse con la informacion disponible.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| keylazy/Qwen2.5-Omni-3B-bab-slurp-t2-lr1e4-sft | 3B (por identificador) | no disponible | no disponible | HuggingFace, 0 descargas | Checkpoint SFT sin documentar |
-| Qwen2.5-Omni-3B (modelo base) | 3B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace (familia Qwen) | Modelo multimodal original sobre el que se ajusta |
-| Otros ajustes comunitarios de Qwen2.5-Omni-3B | 3B | variable | variable | HuggingFace | Calidad y soporte variables segun autor |
+| keylazy/Qwen2.5-Omni-3B-bab-slurp-t2-lr1e4-sft | 3B (por identificador) | no disponible | no disponible | Hugging Face, 0 descargas | Checkpoint SFT sin documentar |
+| Qwen2.5-Omni-3B (modelo base) | 3B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face (familia Qwen) | Modelo multimodal original sobre el que se ajusta |
+| Otros ajustes comunitarios de Qwen2.5-Omni-3B | 3B | variable | variable | Hugging Face | Calidad y soporte variables segun autor |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-slurp-t2-lr1e4-sft
+- Hugging Face: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-slurp-t2-lr1e4-sft
 - Paper citado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact#compute
 

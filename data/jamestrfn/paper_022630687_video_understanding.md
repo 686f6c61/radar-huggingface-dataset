@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 No aplica: no hay modelo que requiera hardware para inferencia. El único archivo es un documento Markdown, por lo que cualquier sistema con un editor de texto puede abrirlo.
 
 ## Comparativa con modelos similares
-No es posible comparar este repositorio con modelos de video understanding porque no se trata de un modelo. En su lugar, se puede comparar con otros repositorios de papers académicos en HuggingFace, pero no hay información suficiente para hacer una comparativa significativa. La categoría "video understanding" es común en la investigación, pero este repositorio no ofrece un modelo comparable.
+No es posible comparar este repositorio con modelos de video understanding porque no se trata de un modelo. En su lugar, se puede comparar con otros repositorios de papers académicos en Hugging Face, pero no hay información suficiente para hacer una comparativa significativa. La categoría "video understanding" es común en la investigación, pero este repositorio no ofrece un modelo comparable.
 
 ## Limitaciones y advertencias
 - No es un modelo desplegable: no se puede usar para inferencia ni para tareas de video understanding.
@@ -56,7 +56,7 @@ No es posible comparar este repositorio con modelos de video understanding porqu
 - Riesgo de sesgo: al ser un documento académico, puede reflejar sesgos del autor o de la literatura citada, pero no se puede evaluar sin acceso al texto.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/JamesTrfn/paper_022630687_video_understanding
+- Repositorio en Hugging Face: https://huggingface.co/JamesTrfn/paper_022630687_video_understanding
 - Enlaces externos de interés (no del repositorio):
   - Awesome-LLMs-for-Video-Understanding (GitHub): https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding
   - Survey sobre video understanding con LLMs: https://arxiv.org/abs/2603.17840

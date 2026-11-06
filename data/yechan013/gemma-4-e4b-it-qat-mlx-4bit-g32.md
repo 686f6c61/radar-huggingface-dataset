@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yechan013/gemma-4-e4b-it-qat-mlx-4bit-g32 | 7.941.100.874 | no disponible | 4 bits, group size 32 (MLX) | Apache 2.0 | HuggingFace, formato MLX |
-| google/gemma-4-E4B-it-qat-q4_0-unquantized | no disponible | no disponible | bfloat16 (sin cuantizar) | Apache 2.0 | HuggingFace |
+| yechan013/gemma-4-e4b-it-qat-mlx-4bit-g32 | 7.941.100.874 | no disponible | 4 bits, group size 32 (MLX) | Apache 2.0 | Hugging Face, formato MLX |
+| google/gemma-4-E4B-it-qat-q4_0-unquantized | no disponible | no disponible | bfloat16 (sin cuantizar) | Apache 2.0 | Hugging Face |
 | Otras conversiones MLX de Gemma 4 E4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información disponible no permite comparar rendimiento (benchmarks) con alternativas; solo se conocen los datos del modelo base y de esta conversión.
@@ -84,7 +84,7 @@ La información disponible no permite comparar rendimiento (benchmarks) con alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yechan013/gemma-4-e4b-it-qat-mlx-4bit-g32
+- Modelo en Hugging Face: https://huggingface.co/yechan013/gemma-4-e4b-it-qat-mlx-4bit-g32
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-unquantized
 - Revisión del modelo base: `476025a01dbf99361c062bbeca3d6a76bb4c4566`
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

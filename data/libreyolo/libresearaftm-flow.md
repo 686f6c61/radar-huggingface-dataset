@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / resolucion | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreSEARAFTm-flow (SEA-RAFT M) | no disponible (ResNet34, 4 iteraciones) | nativa, downscale >960 px | RAFT + mixture-of-Laplace con confianza por píxel | BSD 3-Clause | HuggingFace vía libreyolo |
+| LibreSEARAFTm-flow (SEA-RAFT M) | no disponible (ResNet34, 4 iteraciones) | nativa, downscale >960 px | RAFT + mixture-of-Laplace con confianza por píxel | BSD 3-Clause | Hugging Face vía libreyolo |
 | RAFT original (princeton-vl) | no disponible | multi-escala | RAFT con pérdida L1, sin confianza calibrada | BSD 3-Clause | GitHub |
-| SEA-RAFT L | no disponible | multi-escala | Variante grande de SEA-RAFT | BSD 3-Clause | GitHub / HuggingFace |
+| SEA-RAFT L | no disponible | multi-escala | Variante grande de SEA-RAFT | BSD 3-Clause | GitHub / Hugging Face |
 | Modelos de flujo clásicos (Farneback, DIS) | no aplica | denso, sin aprendizaje profundo | Métodos variacionales / clásicos | diversa | OpenCV |
 
 La comparativa se limita a la familia SEA-RAFT y RAFT; no se dispone de datos de benchmarks que permitan comparar numéricamente el rendimiento frente a alternativas.
@@ -82,7 +82,7 @@ La comparativa se limita a la familia SEA-RAFT y RAFT; no se dispone de datos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LibreYOLO/LibreSEARAFTm-flow
+- Hugging Face: https://huggingface.co/LibreYOLO/LibreSEARAFTm-flow
 - Repositorio fuente LibreYOLO: https://github.com/LibreYOLO/libreyolo
 - Repositorio upstream SEA-RAFT: https://github.com/princeton-vl/SEA-RAFT
 - Checkpoint upstream: https://huggingface.co/MemorySlices/Tartan-C-T-TSKH-spring540x960-M

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-japanMoans es un adaptador LoRA de texto a imagen publicado en HuggingFace por el usuario 98sd7fc9sdf. Se distribuye a traves de la libreria diffusers y esta declarado como adaptador del modelo base ponpoke/flux2-klein-9b-uncensored-text-encoder. El repositorio ocupa 0,2 GB, un tamano coherente con pesos de adaptador y no con un modelo completo. La model card no incluye descripcion funcional, prompt de instancia, dataset de entrenamiento ni ejemplos de uso mas alla de un widget sin contenido ("-").
+japanMoans es un adaptador LoRA de texto a imagen publicado en Hugging Face por el usuario 98sd7fc9sdf. Se distribuye a traves de la libreria diffusers y esta declarado como adaptador del modelo base ponpoke/flux2-klein-9b-uncensored-text-encoder. El repositorio ocupa 0,2 GB, un tamano coherente con pesos de adaptador y no con un modelo completo. La model card no incluye descripcion funcional, prompt de instancia, dataset de entrenamiento ni ejemplos de uso mas alla de un widget sin contenido ("-").
 
 El modelo se publico el 12 de septiembre de 2026 (fecha declarada en los metadatos) y actualizado el mismo dia, sin descargas ni likes registrados. La etiqueta del repositorio incluye text-to-image, lora y template:diffusion-lora, lo que confirma la naturaleza de adaptador. La licencia figura como "unknown" y no se declaran idiomas soportados.
 
@@ -70,9 +70,9 @@ No hay datos publicados de este adaptador, por lo que no es posible una comparac
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| japanMoans | LoRA sobre modelo de difusion | no disponible (repo de 0,2 GB) | no aplicable | ninguno | unknown | HuggingFace, 0 descargas, 0 likes |
-| Otros LoRA para el mismo modelo base | LoRA sobre modelo de difusion | no disponible | no aplicable | no disponible | variable | HuggingFace |
-| Modelo base ponpoke/flux2-klein-9b-uncensored-text-encoder | Modelo de difusion completo | 9B (segun el nombre) | no aplicable | no disponible en la informacion proporcionada | no disponible | HuggingFace |
+| japanMoans | LoRA sobre modelo de difusion | no disponible (repo de 0,2 GB) | no aplicable | ninguno | unknown | Hugging Face, 0 descargas, 0 likes |
+| Otros LoRA para el mismo modelo base | LoRA sobre modelo de difusion | no disponible | no aplicable | no disponible | variable | Hugging Face |
+| Modelo base ponpoke/flux2-klein-9b-uncensored-text-encoder | Modelo de difusion completo | 9B (segun el nombre) | no aplicable | no disponible en la informacion proporcionada | no disponible | Hugging Face |
 
 No se dispone de alternativas comparables con datos verificables en la informacion proporcionada.
 
@@ -92,6 +92,6 @@ No se dispone de alternativas comparables con datos verificables en la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/98sd7fc9sdf/japanMoans
+- Repositorio Hugging Face: https://huggingface.co/98sd7fc9sdf/japanMoans
 - Modelo base declarado: https://huggingface.co/ponpoke/flux2-klein-9b-uncensored-text-encoder
 - Resultados de busqueda web: no se ha encontrado ningun resultado relevante sobre este modelo. Los resultados devueltos corresponden a consultas no relacionadas (foros y guias sobre Steam) y no aportan informacion tecnica ni enlaces utiles.

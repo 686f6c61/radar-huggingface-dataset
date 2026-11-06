@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-MLP-Cache es un artefacto de reproducibilidad publicado por el usuario huzey en HuggingFace, derivado del modelo base Qwen/Qwen3.5-9B de Alibaba Qwen. No se trata de un modelo entrenado desde cero ni de un fine-tune convencional, sino de un conjunto de artefactos de caché MLP y routers compartidos (Shared Routers) en formato safetensors que acompañan a un artículo de investigación sobre mecanismos de caché en capas MLP. El repositorio contiene las 32 capas del modelo original, con la configuración del paper desactivando las capas 0, 1, 3 y 31.
+Qwen3.5-9B-MLP-Cache es un artefacto de reproducibilidad publicado por el usuario huzey en Hugging Face, derivado del modelo base Qwen/Qwen3.5-9B de Alibaba Qwen. No se trata de un modelo entrenado desde cero ni de un fine-tune convencional, sino de un conjunto de artefactos de caché MLP y routers compartidos (Shared Routers) en formato safetensors que acompañan a un artículo de investigación sobre mecanismos de caché en capas MLP. El repositorio contiene las 32 capas del modelo original, con la configuración del paper desactivando las capas 0, 1, 3 y 31.
 
 El pipeline declarado es image-text-to-text, lo que indica que el modelo base Qwen3.5-9B es multimodal (visión y texto), aunque la model card no detalla las capacidades específicas del artefacto publicado. El tamaño del repositorio es de 141,8 GB, coherente con un modelo de aproximadamente 9 mil millones de parámetros en precisión alta junto con los artefactos de caché adicionales.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Naturaleza |
 |---|---|---|---|---|---|
-| huzey/Qwen3.5-9B-MLP-Cache | ~9B (base) | no disponible | MIT (artefactos) | HuggingFace | Artefacto de reproducibilidad |
-| Qwen/Qwen3.5-9B | ~9B | no disponible | según upstream | HuggingFace | Modelo base multimodal |
+| huzey/Qwen3.5-9B-MLP-Cache | ~9B (base) | no disponible | MIT (artefactos) | Hugging Face | Artefacto de reproducibilidad |
+| Qwen/Qwen3.5-9B | ~9B | no disponible | según upstream | Hugging Face | Modelo base multimodal |
 | Otros artefactos de caché MLP | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre benchmarks comparativos ni sobre otros artefactos de caché MLP equivalentes en la información proporcionada.
@@ -79,7 +79,7 @@ No se dispone de información sobre benchmarks comparativos ni sobre otros artef
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huzey/Qwen3.5-9B-MLP-Cache
+- Hugging Face: https://huggingface.co/huzey/Qwen3.5-9B-MLP-Cache
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Código de `mlp-cache` (comandos `download-cache`, `verify-cache`, `infer`, `evaluate-cache`): no disponible como URL en la información proporcionada.
 - Paper asociado: no disponible como URL en la información proporcionada.

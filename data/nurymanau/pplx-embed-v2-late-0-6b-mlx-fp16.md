@@ -23,7 +23,7 @@ Su relevancia es doble: por un lado, acerca un modelo de retrieval de Perplexity
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un encoder de embeddings con interacción tardía. En lugar de producir un vector por documento, genera representaciones por token y calcula la puntuación con MaxSim, la función de similitud característica de ColBERT. El repositorio etiqueta la arquitectura como `qwen3_5`, lo que sugiere una inicialización derivada de la familia Qwen3.5, aunque la model card no documenta la topología interna, el número de capas ni las dimensiones de los embeddings. El pipeline declarado en HuggingFace es `feature-extraction`.
+El modelo base es un encoder de embeddings con interacción tardía. En lugar de producir un vector por documento, genera representaciones por token y calcula la puntuación con MaxSim, la función de similitud característica de ColBERT. El repositorio etiqueta la arquitectura como `qwen3_5`, lo que sugiere una inicialización derivada de la familia Qwen3.5, aunque la model card no documenta la topología interna, el número de capas ni las dimensiones de los embeddings. El pipeline declarado en Hugging Face es `feature-extraction`.
 
 No hubo entrenamiento nuevo en este repositorio. La model card indica explícitamente que el port reproduce bytes idénticos publicados previamente en `Nurymanau/pplx-embed-v2-late-0.6b-MLX` (revisión `5cb121dd72cbb394205a11414dc1305597a6c054`), con un `PROVENANCE.json` que mapea cada fichero copiado y su SHA256, y un `SHA256SUMS.json` que cubre todo el payload salvo él mismo. No se documenta el número de tokens de preentrenamiento, la composición del dataset ni si hubo RLHF o DPO; la contaminación del preentrenamiento upstream se declara desconocida.
 
@@ -86,10 +86,10 @@ La informacion proporcionada no incluye datos verificados de modelos alternativo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| pplx-embed-v2-late-0.6b (MLX fp16) | ~0,6B | 1.024 consulta / 4.096 documento | MIT (pesos), Apache-2.0 (runtime) | Repositorio HuggingFace, solo Apple Silicon | nDCG@10 74,05 % en su test propio de intenciones |
+| pplx-embed-v2-late-0.6b (MLX fp16) | ~0,6B | 1.024 consulta / 4.096 documento | MIT (pesos), Apache-2.0 (runtime) | Repositorio Hugging Face, solo Apple Silicon | nDCG@10 74,05 % en su test propio de intenciones |
 | Otros modelos de late interaction (familia ColBERT y derivados) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Modelos de embeddings de vector unico (familia BGE, E5 y similares) | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Variantes afinadas de esta misma familia (BANKING completo y estudiante de seis capas) | ~0,6B y ~0,46B de texto respectivamente segun la reduccion del 24,2 % | mismos limites | MIT | Repositorios HuggingFace del mismo autor, solo MLX | 89,49 % y 81,79 % de nDCG@10 en el mismo test |
+| Variantes afinadas de esta misma familia (BANKING completo y estudiante de seis capas) | ~0,6B y ~0,46B de texto respectivamente segun la reduccion del 24,2 % | mismos limites | MIT | Repositorios Hugging Face del mismo autor, solo MLX | 89,49 % y 81,79 % de nDCG@10 en el mismo test |
 
 Frente a los embeddings de vector unico, la ventaja teorica del late interaction es la preservacion de coincidencias a nivel de token, a costa de un indice mas grande (un vector por token en lugar de uno por documento). Frente a las variantes afinadas de su propia familia, este checkpoint es la linea base: cualquier mejora de dominio observada en los otros repositorios se consigue a costa de entrenamiento adicional y, en el caso del estudiante, de renunciar a la cobertura de imagen.
 
@@ -112,7 +112,7 @@ Frente a los embeddings de vector unico, la ventaja teorica del late interaction
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nurymanau/pplx-embed-v2-late-0.6b-MLX-fp16
+- Repositorio Hugging Face: https://huggingface.co/Nurymanau/pplx-embed-v2-late-0.6b-MLX-fp16
 - Modelo base original: https://huggingface.co/perplexity-ai/pplx-embed-v2-late-0.6b
 - Repositorio multi-variante del mismo autor: https://huggingface.co/Nurymanau/pplx-embed-v2-late-0.6b-MLX
 - Variante con fine-tuning completo BANKING en MLX: https://huggingface.co/Nurymanau/pplx-embed-v2-late-0.6b-BANKING-MLX

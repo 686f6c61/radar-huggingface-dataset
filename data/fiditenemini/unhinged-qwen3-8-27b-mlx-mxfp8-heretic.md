@@ -87,7 +87,7 @@ La comparativa muestra que la principal diferencia es la cuantización y el proc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FiditeNemini/Unhinged-Qwen3.8-27B-MLX-MXFP8-HERETIC
+- Repositorio Hugging Face: https://huggingface.co/FiditeNemini/Unhinged-Qwen3.8-27B-MLX-MXFP8-HERETIC
 - Modelo base (heretic-org): https://huggingface.co/heretic-org/Qwen3.8-27B-heretic-ara (no verificado)
 - Guía de Qwen3.8-27B (blog): https://lovableapp.org/blog/qwen3-8-27b
 - Análisis de Simon Willison sobre Qwen 3.8 27B: https://simonwillison.net/2026/Aug/16/qwen-38-27b/

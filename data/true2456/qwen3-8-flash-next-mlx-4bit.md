@@ -4,7 +4,7 @@
 
 Qwen3.8-Flash-Next MLX 4-bit es una cuantización afín en formato MLX del modelo Qwen/Qwen3.8-Flash-Next (familia `qwen4_exp`), publicada por el usuario True2456. No es un modelo entrenado desde cero: los pesos, la arquitectura y el tokenizer proceden de Qwen, mientras que la cuantización y el empaquetado para Apple Silicon son aportaciones de este repositorio. Su función declarada es alimentar la ruta de servicio "Flash-Next" del proyecto Rindi en Apple Silicon, donde los expertos MoE, el `lm_head` y el drafter MTP residen en memoria con precisión de 4 bits.
 
-La cuantización usa tamaño de grupo 64 por defecto, con precisiones distintas por familia de tensores: 4 bits para las proyecciones `gate_up` y `down` de los expertos, 8 bits para las proyecciones GDN de entrada y salida, la atención, los embeddings y el MTP, y 16 bits para el router y el residual con puerta. El conjunto de pesos del modelo de lenguaje ronda los 71 GB, a los que se suman 1,4 GB del drafter MTP y 41 MB del indexador QSA; la ficha de HuggingFace indica, en cambio, un tamaño de repositorio de 2,5 GB, discrepancia que conviene verificar antes de descargar.
+La cuantización usa tamaño de grupo 64 por defecto, con precisiones distintas por familia de tensores: 4 bits para las proyecciones `gate_up` y `down` de los expertos, 8 bits para las proyecciones GDN de entrada y salida, la atención, los embeddings y el MTP, y 16 bits para el router y el residual con puerta. El conjunto de pesos del modelo de lenguaje ronda los 71 GB, a los que se suman 1,4 GB del drafter MTP y 41 MB del indexador QSA; la ficha de Hugging Face indica, en cambio, un tamaño de repositorio de 2,5 GB, discrepancia que conviene verificar antes de descargar.
 
 El interés del repositorio es doble. Por un lado, documenta un patrón de despliegue específico de Apple Silicon, con cuantización por capas, decodificación especulativa mediante un drafter MTP separado y una ruta híbrida que explota la ANE. Por otro, sirve como referencia negativa: no es un sustituto directo de los modelos que carga el paquete `mlx-lm` estándar, ya que exige un runtime con soporte para `qwen4_exp`.
 
@@ -18,11 +18,11 @@ El interés del repositorio es doble. Por un lado, documenta un patrón de despl
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | MLX afín, grupo 64 por defecto; 4 bits (expertos `gate_up`/`down`), 8 bits (proyecciones GDN in/out, atención, embeddings, MTP), 16 bits (router y residual con puerta) |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors con cuantización MLX; incluye tokenizer y `chat_template.jinja` |
 | Modelo base | Qwen/Qwen3.8-Flash-Next |
 | Librería | mlx |
-| Tamaño del repositorio | 2,5 GB según la ficha de HuggingFace; la model card describe ~71 GB de pesos |
+| Tamaño del repositorio | 2,5 GB según la ficha de Hugging Face; la model card describe ~71 GB de pesos |
 | Descargas / likes | 57 / 0 |
 | Fecha de creación / actualización | 14-09-2026 / 14-09-2026 |
 
@@ -84,8 +84,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Precisión | Huella de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.8-Flash-Next MLX 4-bit (este repositorio) | no disponible | no disponible | Mixta 4/8/16 bits, grupo 64 | ~71 GB + 1,4 GB MTP | qwen-community-1.0 | HuggingFace; exige runtime con `qwen4_exp` |
-| Qwen/Qwen3.8-Flash-Next (BF16) | no disponible | no disponible | BF16 | no disponible | qwen-community-1.0 | HuggingFace |
+| Qwen3.8-Flash-Next MLX 4-bit (este repositorio) | no disponible | no disponible | Mixta 4/8/16 bits, grupo 64 | ~71 GB + 1,4 GB MTP | qwen-community-1.0 | Hugging Face; exige runtime con `qwen4_exp` |
+| Qwen/Qwen3.8-Flash-Next (BF16) | no disponible | no disponible | BF16 | no disponible | qwen-community-1.0 | Hugging Face |
 | Qwen3.8-Flash-Next, grafos MIL para ANE (M5/`h17`) | no disponible | no disponible | no disponible | no disponible | qwen-community-1.0 | Anunciado para publicación separada; no disponible |
 
 No se han identificado en la información proporcionada modelos comparables de otros desarrolladores con datos publicados (parámetros, contexto o benchmarks) que permitan una comparación cuantitativa. La búsqueda web realizada no devolvió resultados relacionados con este modelo.
@@ -94,7 +94,7 @@ No se han identificado en la información proporcionada modelos comparables de o
 
 - No es un reemplazo directo de `mlx-lm` estándar: requiere un runtime que implemente `qwen4_exp`. Cargarlo con una versión sin soporte fallará o producirá resultados incorrectos.
 - Exclusivo de Apple Silicon: no hay ruta CUDA ni ROCm documentada para estos pesos.
-- Discrepancia de tamaño sin aclarar: la ficha de HuggingFace declara 2,5 GB de repositorio, mientras que la model card describe un fichero de pesos de ~71 GB.
+- Discrepancia de tamaño sin aclarar: la ficha de Hugging Face declara 2,5 GB de repositorio, mientras que la model card describe un fichero de pesos de ~71 GB.
 - La tabla n-gram de ~95 GB no está incluida; el modelo opera con un fallback de ceros para el PLE, lo que implica una pérdida de calidad no cuantificada.
 - Riesgo de conversión defectuosa: no se deben mezclar estos ficheros con conversiones que hayan plegado el término `1+w` de `Qwen4ExpRMSNorm` en las ganancias guardadas, ya que generan ruido.
 - Licencia Qwen Community 1.0: permite redistribuir derivados, pero los productos comerciales de MaaS y de asistencia a la programación tienen términos adicionales que hay que revisar antes de un uso en producción.
@@ -108,8 +108,8 @@ No se han identificado en la información proporcionada modelos comparables de o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/True2456/Qwen3.8-Flash-Next-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/True2456/Qwen3.8-Flash-Next-MLX-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio Rindi (ruta de servicio Flash-Next): https://github.com/True2456/Rindi
-- Licencia del repositorio: `LICENSE` en la raíz del repositorio de HuggingFace (Qwen Community License 1.0)
+- Licencia del repositorio: `LICENSE` en la raíz del repositorio de Hugging Face (Qwen Community License 1.0)
 - Resultados de la búsqueda web: no se encontraron enlaces relevantes para este modelo. Los resultados devueltos corresponden a páginas de Google DeepMind (Gemini Omni, WeatherNext 3, Gemini 3.5 Transcribe, Gemini 3.8 Flash Cyber, Gemini Image) y no guardan relación con el modelo analizado.

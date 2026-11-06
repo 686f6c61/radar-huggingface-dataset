@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks especificos de la version cuantizad
 
 | Modelo | Parametros | Contexto | MMLU | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen2-0.5B-Instruct-JQ4 | 509 M | no confirmado (32.768 segun Qwen2) | no disponible (base: 37,9) | no disponible (base: 40,1) | apache-2.0 | HuggingFace, orientado a Jlama |
-| Qwen2-0.5B-Instruct | 0,5 B | 32.768 (documentacion Qwen2) | 37,9 | 40,1 | apache-2.0 | HuggingFace, transformers |
-| Qwen1.5-0.5B-Chat | 0,5 B | no disponible | 35,0 | 11,3 | apache-2.0 | HuggingFace |
-| Qwen2-1.5B-Instruct | 1,5 B | 32.768 (documentacion Qwen2) | 52,4 | 61,6 | apache-2.0 | HuggingFace |
+| Qwen2-0.5B-Instruct-JQ4 | 509 M | no confirmado (32.768 segun Qwen2) | no disponible (base: 37,9) | no disponible (base: 40,1) | apache-2.0 | Hugging Face, orientado a Jlama |
+| Qwen2-0.5B-Instruct | 0,5 B | 32.768 (documentacion Qwen2) | 37,9 | 40,1 | apache-2.0 | Hugging Face, transformers |
+| Qwen1.5-0.5B-Chat | 0,5 B | no disponible | 35,0 | 11,3 | apache-2.0 | Hugging Face |
+| Qwen2-1.5B-Instruct | 1,5 B | 32.768 (documentacion Qwen2) | 52,4 | 61,6 | apache-2.0 | Hugging Face |
 
 Los datos de contexto de las variantes Qwen2 provienen de la documentacion de la familia y no de la informacion proporcionada en esta ficha. Para el resto de modelos no se dispone de datos de contexto confirmados.
 
@@ -96,7 +96,7 @@ Los datos de contexto de las variantes Qwen2 provienen de la documentacion de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/carlosgm128/Qwen2-0.5B-Instruct-JQ4
+- Modelo en Hugging Face: https://huggingface.co/carlosgm128/Qwen2-0.5B-Instruct-JQ4
 - Repositorio de Jlama: https://github.com/tjake/jlama
 - Blog de Qwen2: https://qwenlm.github.io/blog/qwen2/
 - Repositorio GitHub de Qwen2: https://github.com/QwenLM/Qwen2

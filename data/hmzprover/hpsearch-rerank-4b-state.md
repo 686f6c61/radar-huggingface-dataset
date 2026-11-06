@@ -35,7 +35,7 @@ La descontaminacion elimino pares cuyos teoremas aparecen en los splits de valid
 - Seleccion de premisas en modo listwise: entrenado para discriminar entre un gold premise y siete negativos duros.
 - Integracion con el pipeline hpsearch en las modalidades best y deep.
 - Compatibilidad con el formato de prompt y la interfaz de Qwen3-Reranker, lo que permite reutilizar el codigo de inferencia existente.
-- Soporte de endpoints compatibles (tag `endpoints_compatible` en HuggingFace).
+- Soporte de endpoints compatibles (tag `endpoints_compatible` en Hugging Face).
 - Capacidades generales de Qwen3-Reranker-4B subyacentes (ranking de texto generico), aunque no se documenta su rendimiento tras el fine-tuning.
 - No se documentan capacidades de tool calling, agentes, vision, audio ni modo thinking especifico para este modelo.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hpsearch-rerank-4b-state | 4,02B | no disponible | Reranking de premisas Lean 4/Mathlib | Apache 2.0 | HuggingFace (35 descargas) |
-| Qwen/Qwen3-Reranker-4B | 4B (aproximado) | no disponible | Reranking de texto generico | no disponible en la informacion | HuggingFace (modelo base publico) |
-| hmzprover/hpsearch-embed-4b-state | no disponible | no disponible | Embeddings de premisas Lean 4 | no disponible en la informacion | HuggingFace (usado para minar negativos) |
+| hpsearch-rerank-4b-state | 4,02B | no disponible | Reranking de premisas Lean 4/Mathlib | Apache 2.0 | Hugging Face (35 descargas) |
+| Qwen/Qwen3-Reranker-4B | 4B (aproximado) | no disponible | Reranking de texto generico | no disponible en la informacion | Hugging Face (modelo base publico) |
+| hmzprover/hpsearch-embed-4b-state | no disponible | no disponible | Embeddings de premisas Lean 4 | no disponible en la informacion | Hugging Face (usado para minar negativos) |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/hmzprover/hpsearch-rerank-4b-state)
+- [Modelo en Hugging Face](https://huggingface.co/hmzprover/hpsearch-rerank-4b-state)
 - [Modelo base Qwen3-Reranker-4B](https://huggingface.co/Qwen/Qwen3-Reranker-4B)
 - [Repositorio hpsearch](https://github.com/humanfia/hpsearch)
 - [LeanDojo Benchmark 4 v10 (Zenodo 12740403)](https://zenodo.org/records/12740403)

@@ -100,7 +100,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/InterpreticAI/Qwen3.5-4B-Uncensored-v2-GGUF
+- Hugging Face (GGUF): https://huggingface.co/InterpreticAI/Qwen3.5-4B-Uncensored-v2-GGUF
 - Modelo base BF16: https://huggingface.co/InterpreticAI/Qwen3.5-4B-Uncensored-v2
 - Modelo original: https://huggingface.co/Qwen/Qwen3.5-4B
 - llama.cpp: https://github.com/ggml-org/llama.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-3B-Instruct-ExecuTorch es una exportación del modelo meta-llama/Llama-3.2-3B-Instruct (revisión `0cb88a4f764b`) realizada por el usuario experimentalmachines y publicada en HuggingFace bajo la librería ExecuTorch. No se trata de un modelo entrenado desde cero, sino de una conversión cuantizada del modelo original de Meta, pensada para ejecutarse en dispositivos móviles Android (arm64) mediante el runtime ExecuTorch 1.4.0, sin necesidad de GPU ni de conexión a la nube.
+Llama-3.2-3B-Instruct-ExecuTorch es una exportación del modelo meta-llama/Llama-3.2-3B-Instruct (revisión `0cb88a4f764b`) realizada por el usuario experimentalmachines y publicada en Hugging Face bajo la librería ExecuTorch. No se trata de un modelo entrenado desde cero, sino de una conversión cuantizada del modelo original de Meta, pensada para ejecutarse en dispositivos móviles Android (arm64) mediante el runtime ExecuTorch 1.4.0, sin necesidad de GPU ni de conexión a la nube.
 
 El artefacto clave son los ficheros `.pte` con cuantización 8da4w (activaciones dinámicas de 8 bits y pesos de 4 bits en grupos de 32, con embeddings int8 por canal), que ocupan aproximadamente 2,21 GB por variante. El repositorio incluye varias ventanas de contexto fijas (2.048, 4.096, 8.192 y 16.384 tokens) para el backend XNNPACK sobre CPU, además del tokenizador y los informes de exportación. La ventana de contexto se fija dentro del propio fichero y el runtime reserva la caché KV completa en el momento de la carga, lo que condiciona directamente el presupuesto de memoria del dispositivo.
 
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones dentro d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/experimentalmachines/Llama-3.2-3B-Instruct-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/experimentalmachines/Llama-3.2-3B-Instruct-ExecuTorch
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Aplicación Android openweights: https://github.com/alpharomercoma/openweights
 - Exportación original (GitHub Actions, run 1): https://github.com/ExperimentalMachines/executorch-model-exporter/actions/runs/34753847748

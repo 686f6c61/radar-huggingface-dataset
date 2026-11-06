@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `AlinaGonch/granite41-3b-squad-ratio-0.10-seed-42-r4` es un modelo alojado en HuggingFace cuyo identificador sugiere un ajuste fino (fine-tuning) de un modelo de la familia IBM Granite 4.1 de aproximadamente 3.000 millones de parametros sobre el conjunto de datos SQuAD, con una fraccion de datos de 0,10, semilla 42 y un adaptador de rango 4. Ninguno de estos extremos esta confirmado en la model card, que es la plantilla autogenerada por defecto de HuggingFace y no contiene informacion sustantiva: todos los campos relevantes aparecen como `[More Information Needed]`.
+El repositorio `AlinaGonch/granite41-3b-squad-ratio-0.10-seed-42-r4` es un modelo alojado en Hugging Face cuyo identificador sugiere un ajuste fino (fine-tuning) de un modelo de la familia IBM Granite 4.1 de aproximadamente 3.000 millones de parametros sobre el conjunto de datos SQuAD, con una fraccion de datos de 0,10, semilla 42 y un adaptador de rango 4. Ninguno de estos extremos esta confirmado en la model card, que es la plantilla autogenerada por defecto de Hugging Face y no contiene informacion sustantiva: todos los campos relevantes aparecen como `[More Information Needed]`.
 
 La relevancia de esta ficha es principalmente como advertencia metodologica. El repositorio tiene un tamano de 0,0 GB, cero descargas y cero "likes", lo que indica que no contiene pesos publicados ni documentacion tecnica verificable. La unica metadata disponible son las etiquetas `transformers`, `safetensors`, `endpoints_compatible`, `arxiv:1910.09700` y `region:us`. La referencia arXiv 1910.09700 corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en el texto plantilla de la propia model card, no a un paper del modelo.
 
@@ -23,7 +23,7 @@ Por todo ello, esta ficha no puede certificar arquitectura, tamano real, context
 
 ## Arquitectura y entrenamiento
 
-No hay informacion proporcionada por el autor sobre la arquitectura. La model card es la plantilla autogenerada por HuggingFace y repite `[More Information Needed]` en las secciones de descripcion del modelo, tipo de modelo, datos de entrenamiento, hiperparametros, regimen de precision (fp32, bf16, fp16, fp8) e infraestructura de computo. El unico indicio arquitectonico es el propio identificador del repositorio, que apunta a un modelo base Granite 4.1 de ~3B parametros, pero no se ha confirmado en la informacion disponible.
+No hay informacion proporcionada por el autor sobre la arquitectura. La model card es la plantilla autogenerada por Hugging Face y repite `[More Information Needed]` en las secciones de descripcion del modelo, tipo de modelo, datos de entrenamiento, hiperparametros, regimen de precision (fp32, bf16, fp16, fp8) e infraestructura de computo. El unico indicio arquitectonico es el propio identificador del repositorio, que apunta a un modelo base Granite 4.1 de ~3B parametros, pero no se ha confirmado en la informacion disponible.
 
 Sobre el entrenamiento, el identificador `squad-ratio-0.10-seed-42-r4` sugiere un ajuste fino supervisado sobre SQuAD (probablemente la tarea de question answering extractivo) usando el 10 por ciento de los datos, semilla 42 para reproducibilidad y rango 4 (compatible con un adaptador LoRA de rango bajo). No se especifica si el resultado publicado fusiona el adaptador con el modelo base, ni que estrategia de optimizacion, tasa de aprendizaje o numero de epocas se emplearon. Tampoco hay constancia de fases de RLHF, DPO o ajuste por preferencias. Todo lo anterior es inferencia a partir del nombre del repositorio y debe tratarse como no verificado.
 
@@ -48,7 +48,7 @@ Los siguientes escenarios son hipoteticos y quedan condicionados a que el modelo
 - Preanotacion de datos para anotadores humanos: generacion de candidatos de respuesta que un equipo de etiquetado revisa, reduciendo el coste por ejemplo anotado en proyectos de QA.
 - Evaluacion comparativa de estrategias de ajuste fino: dado el sufijo `ratio-0.10-seed-42-r4`, el artefacto parece pensado como punto de una rejilla experimental (distintas fracciones de datos, semillas y rangos LoRA) para estudiar el efecto del tamano de datos y el rango del adaptador en tareas extractivas.
 - Filtrado y validacion de datasets: uso como modelo de referencia para detectar pares pregunta-respuesta mal formados o inconsistencias en un corpus de entrenamiento.
-- Prototipado educativo: por su presunto tamano de ~3B, serviria como ejemplo didactico de fine-tuning con LoRA y de buenas practicas de publicacion en HuggingFace, siempre que se completase la model card.
+- Prototipado educativo: por su presunto tamano de ~3B, serviria como ejemplo didactico de fine-tuning con LoRA y de buenas practicas de publicacion en Hugging Face, siempre que se completase la model card.
 - Despliegue en produccion: no es viable con la informacion actual; no hay pesos, no hay licencia declarada y no hay evaluacion de calidad.
 
 ## Benchmarks y rendimiento
@@ -84,7 +84,7 @@ La unica comparacion verificable es la ausencia de evaluacion: este repositorio 
 ## Limitaciones y advertencias
 
 - Repositorio sin pesos: el tamano declarado es de 0,0 GB y no se observan archivos safetensors descargables, por lo que el modelo no es ejecutable tal como esta publicado.
-- Model card vacia: la documentacion es la plantilla autogenerada de HuggingFace, con todos los campos marcados como `[More Information Needed]`. No hay informacion de uso previsto, uso fuera de alcance ni recomendaciones.
+- Model card vacia: la documentacion es la plantilla autogenerada de Hugging Face, con todos los campos marcados como `[More Information Needed]`. No hay informacion de uso previsto, uso fuera de alcance ni recomendaciones.
 - Licencia no declarada: sin licencia explicita no puede asumirse permiso de uso comercial, redistribucion ni modificacion. En produccion esto constituye un riesgo legal directo, agravado si el modelo base Granite tuviera condiciones propias.
 - Procedencia no verificada: no se indica el modelo base exacto, la revision concreta ni si el adaptador esta fusionado. No es posible reproducir el entrenamiento.
 - Riesgo de sobreajuste: un ajuste con rango 4 y solo el 10 por ciento de los datos de SQuAD puede degradar capacidades generales del modelo base (olvido catastrofico) y sobreajustar al dominio y estilo de SQuAD.
@@ -96,7 +96,7 @@ La unica comparacion verificable es la ausencia de evaluacion: este repositorio 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.10-seed-42-r4
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.10-seed-42-r4
 - Paper citado en la plantilla de la model card (calculadora de impacto medioambiental, no del modelo): https://arxiv.org/abs/1910.09700
 - Herramienta de estimacion de emisiones mencionada en la plantilla: https://mlco2.github.io/impact
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los resultados obtenidos no guardan relacion con el repositorio y se omiten deliberadamente.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `abdukuzi/amharic-Geez-BBPE` es un submódulo alojado en el Hub de HuggingFace por el usuario `abdukuzi`. La model card asociada es una plantilla automática generada por la librería `transformers` y no contiene información técnica sustancial: todos los campos descriptivos están marcados como "[More Information Needed]". El nombre del modelo sugiere una posible relación con el procesamiento de texto en lengua amárica y el alfabeto ge'ez, así como el uso de tokenización *byte-level BPE* (BBPE), pero no hay datos que lo confirmen. No se dispone de detalles sobre arquitectura, parámetros, entrenamiento, licencia o idiomas soportados. El tag `arxiv:1910.09700` corresponde a un artículo sobre estimación de emisiones de carbono en aprendizaje automático, no a una referencia técnica del modelo. En su estado actual, el modelo carece de documentación suficiente para su uso o evaluación.
+El modelo `abdukuzi/amharic-Geez-BBPE` es un submódulo alojado en el Hub de Hugging Face por el usuario `abdukuzi`. La model card asociada es una plantilla automática generada por la librería `transformers` y no contiene información técnica sustancial: todos los campos descriptivos están marcados como "[More Information Needed]". El nombre del modelo sugiere una posible relación con el procesamiento de texto en lengua amárica y el alfabeto ge'ez, así como el uso de tokenización *byte-level BPE* (BBPE), pero no hay datos que lo confirmen. No se dispone de detalles sobre arquitectura, parámetros, entrenamiento, licencia o idiomas soportados. El tag `arxiv:1910.09700` corresponde a un artículo sobre estimación de emisiones de carbono en aprendizaje automático, no a una referencia técnica del modelo. En su estado actual, el modelo carece de documentación suficiente para su uso o evaluación.
 
 ## Especificaciones tecnicas
 
@@ -58,5 +58,5 @@ No disponible. Al no existir datos sobre el modelo, no es posible establecer com
 
 ## Enlaces
 
-- [HuggingFace: abdukuzi/amharic-Geez-BBPE](https://huggingface.co/abdukuzi/amharic-Geez-BBPE)
+- [Hugging Face: abdukuzi/amharic-Geez-BBPE](https://huggingface.co/abdukuzi/amharic-Geez-BBPE)
 - [Artículo arxiv:1910.09700 (referencia del tag, no del modelo)](https://arxiv.org/abs/1910.09700)

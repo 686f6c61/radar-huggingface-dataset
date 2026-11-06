@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `RKB109/hybrid-semantic-search-20261026-model` es un prototipo pequeño y transparente publicado en HuggingFace por el usuario RKB109, orientado a tareas de búsqueda semántica y recuperación de evidencia. No se trata de un transformer neuronal al uso, sino de un modelo léxico basado en pesos de tokens por etiqueta combinados con recuperación de evidencia ponderada por IDF, según describe su model card. Su propósito declarado es servir como línea base reproducible para prototipado de arquitecturas de búsqueda empresarial cuando las APIs de embeddings no están disponibles, resultan costosas o están restringidas.
+El modelo `RKB109/hybrid-semantic-search-20261026-model` es un prototipo pequeño y transparente publicado en Hugging Face por el usuario RKB109, orientado a tareas de búsqueda semántica y recuperación de evidencia. No se trata de un transformer neuronal al uso, sino de un modelo léxico basado en pesos de tokens por etiqueta combinados con recuperación de evidencia ponderada por IDF, según describe su model card. Su propósito declarado es servir como línea base reproducible para prototipado de arquitecturas de búsqueda empresarial cuando las APIs de embeddings no están disponibles, resultan costosas o están restringidas.
 
-El modelo se distribuye bajo licencia MIT, con la librería declarada como `custom` y el pipeline `sentence-similarity`. Cubre además las tareas de `feature-extraction`, `text-ranking` y `question-answering` dentro de la taxonomía de HuggingFace. Se entrenó, según el autor, sobre un dataset sintético enlazado en el propio repositorio (`RKB109/hybrid-semantic-search-20261026-dataset`), y la evaluación reportada se realizó sobre 4 ejemplos sintéticos retenidos, con una accuracy de 1.
+El modelo se distribuye bajo licencia MIT, con la librería declarada como `custom` y el pipeline `sentence-similarity`. Cubre además las tareas de `feature-extraction`, `text-ranking` y `question-answering` dentro de la taxonomía de Hugging Face. Se entrenó, según el autor, sobre un dataset sintético enlazado en el propio repositorio (`RKB109/hybrid-semantic-search-20261026-dataset`), y la evaluación reportada se realizó sobre 4 ejemplos sintéticos retenidos, con una accuracy de 1.
 
 La relevancia de esta ficha es limitada pero concreta: se trata de un artefacto educativo y de CI, no de un modelo de producción. No hay información pública sobre arquitectura neuronal, número de parámetros, longitud de contexto ni idiomas soportados, y el propio autor advierte que debe sustituirse o compararse con embeddings de dominio a escala antes de cualquier uso real.
 
@@ -33,7 +33,7 @@ El entrenamiento se realizó sobre un dataset sintético enlazado en el propio H
 - Extracción de características (`feature-extraction`): genera representaciones léxicas de texto para su uso en pipelines de ranking.
 - Ranking de texto (`text-ranking`): ordena candidatos según relevancia estimada.
 - Question answering extractivo: recupera evidencia textual relevante para una consulta, sin generación libre.
-- Sentence similarity: tarea principal declarada en el pipeline de HuggingFace.
+- Sentence similarity: tarea principal declarada en el pipeline de Hugging Face.
 - No soporta tool calling ni function calling.
 - No soporta agentes ni razonamiento multi-paso.
 - No hay información sobre capacidades multilingües; el autor no documenta idiomas.
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RKB109/hybrid-semantic-search-20261026-model | Léxico híbrido (token weights + IDF) | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| RKB109/hybrid-semantic-search-20261026-model | Léxico híbrido (token weights + IDF) | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | BM25 (implementaciones tipo rank_bm25) | Léxico puro (TF-IDF/BM25) | no aplica | no aplica | Apache 2.0 / MIT según implementación | Amplia, estándar de la industria |
-| sentence-transformers/all-MiniLM-L6-v2 | Transformer bi-encoder | ~22M | 256 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| BAAI/bge-small-en-v1.5 | Transformer bi-encoder | ~33M | 512 tokens | MIT | HuggingFace, muy usado en MTEB |
+| sentence-transformers/all-MiniLM-L6-v2 | Transformer bi-encoder | ~22M | 256 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| BAAI/bge-small-en-v1.5 | Transformer bi-encoder | ~33M | 512 tokens | MIT | Hugging Face, muy usado en MTEB |
 
 La comparación con los modelos neuronales es orientativa: este modelo no compite en calidad de retrieval con bi-encoders entrenados, sino que se posiciona como baseline explicable y reproducible. Frente a BM25, añade pesos por etiqueta, pero carece de la madurez y el ecosistema de las implementaciones estándar.
 
@@ -93,8 +93,8 @@ La comparación con los modelos neuronales es orientativa: este modelo no compit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKB109/hybrid-semantic-search-20261026-model
-- Dataset en HuggingFace: https://huggingface.co/datasets/RKB109/hybrid-semantic-search-20261026-dataset
+- Modelo en Hugging Face: https://huggingface.co/RKB109/hybrid-semantic-search-20261026-model
+- Dataset en Hugging Face: https://huggingface.co/datasets/RKB109/hybrid-semantic-search-20261026-dataset
 - Repositorio GitHub con `train.py`, split y evaluación: no disponible en la información proporcionada (el autor lo menciona sin enlace explícito)
 - Paper: no disponible
 - Demo: no disponible

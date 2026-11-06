@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZihanLiummyycc/drax-dbank-full-decoder es un checkpoint de componentes publicado en HuggingFace que contiene el decodificador completo de Drax adaptado al corpus DementiaBank. No es un modelo autonomo ni un adaptador PEFT: son 579.883.674 elementos de parametros repartidos en 303 tensores (aproximadamente 2,16 GiB) que sustituyen los parametros nativos correspondientes del decodificador, incluidos los modulos de proyeccion acustica y condicionamiento. El paquete esta pensado para cargarse sobre el checkpoint base aiola/drax-v1 usando el entorno de codigo nativo de Drax, no con `transformers` estandar.
+ZihanLiummyycc/drax-dbank-full-decoder es un checkpoint de componentes publicado en Hugging Face que contiene el decodificador completo de Drax adaptado al corpus DementiaBank. No es un modelo autonomo ni un adaptador PEFT: son 579.883.674 elementos de parametros repartidos en 303 tensores (aproximadamente 2,16 GiB) que sustituyen los parametros nativos correspondientes del decodificador, incluidos los modulos de proyeccion acustica y condicionamiento. El paquete esta pensado para cargarse sobre el checkpoint base aiola/drax-v1 usando el entorno de codigo nativo de Drax, no con `transformers` estandar.
 
 El modelo subyacente, Drax, es un sistema de reconocimiento automatico del habla (ASR) basado en flow matching discreto desarrollado por aiOla (paper arXiv:2510.04162, "Drax: Speech Recognition with Discrete Flow Matching"). Esta adaptacion concreta traslada ese sistema al dominio del habla de personas mayores con posible deterioro cognitivo, usando el corpus DementiaBank. El autor reporta un WER agregado del 34,85 % sobre 928 enunciados de DementiaBank, correspondiente al experimento original y no a una nueva evaluacion publicada junto al checkpoint.
 
@@ -80,9 +80,9 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto / ventana | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ZihanLiummyycc/drax-dbank-full-decoder | 579,9 M elementos de parametros adaptados en 303 tensores | no disponible | upstream-terms-and-author-rights | HuggingFace, 0 descargas, 0 likes | Componente, no modelo autonomo; WER 34,85 % en 928 enunciados de DementiaBank |
-| aiola/drax-v1 (base) | no disponible en la informacion proporcionada | no disponible | CC BY 4.0 segun el model card del base | HuggingFace, revision fijada 96dda0e1 | Base sin adaptar; requiere el mismo entorno nativo |
-| openai/whisper-large-v3 | no disponible en la informacion proporcionada para esta ficha | no disponible | no disponible en la informacion proporcionada | HuggingFace | Se usa unicamente como origen del procesador (ficheros *.json y *.txt) en la receta de carga |
+| ZihanLiummyycc/drax-dbank-full-decoder | 579,9 M elementos de parametros adaptados en 303 tensores | no disponible | upstream-terms-and-author-rights | Hugging Face, 0 descargas, 0 likes | Componente, no modelo autonomo; WER 34,85 % en 928 enunciados de DementiaBank |
+| aiola/drax-v1 (base) | no disponible en la informacion proporcionada | no disponible | CC BY 4.0 segun el model card del base | Hugging Face, revision fijada 96dda0e1 | Base sin adaptar; requiere el mismo entorno nativo |
+| openai/whisper-large-v3 | no disponible en la informacion proporcionada para esta ficha | no disponible | no disponible en la informacion proporcionada | Hugging Face | Se usa unicamente como origen del procesador (ficheros *.json y *.txt) en la receta de carga |
 | Codigo nativo de Drax | no aplica | no aplica | CC BY-NC 4.0 | Repositorio GitHub del autor | Ambito de licencia distinto al de los pesos; no intercambiable |
 
 No se dispone de datos de rendimiento comparativos entre estos sistemas en la informacion proporcionada, por lo que no se incluyen cifras de WER de los modelos alternativos.
@@ -106,11 +106,11 @@ No se dispone de datos de rendimiento comparativos entre estos sistemas en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZihanLiummyycc/drax-dbank-full-decoder
+- Modelo en Hugging Face: https://huggingface.co/ZihanLiummyycc/drax-dbank-full-decoder
 - Modelo base: https://huggingface.co/aiola/drax-v1
 - Model card fijado del base (declara CC BY 4.0): https://huggingface.co/aiola/drax-v1/blob/96dda0e1d86c9b4c7f06a377410283ede1b671ab/README.md
 - Codigo y recetas de experimentos: https://github.com/ZihanLiummyycc/diffusion-asr-elderly-speech/tree/29709f075399be63ed6d1e536a0a0ca3bba0a072
 - Paper de Drax: https://arxiv.org/abs/2510.04162
 - Procesador asociado: https://huggingface.co/openai/whisper-large-v3
-- Ficheros de verificacion citados en el repo: `verification.json` y `checksums.json` (descargables desde el repositorio de HuggingFace)
+- Ficheros de verificacion citados en el repo: `verification.json` y `checksums.json` (descargables desde el repositorio de Hugging Face)
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo (los resultados obtenidos correspondian a un proyecto no relacionado), por lo que no se incluyen enlaces adicionales.

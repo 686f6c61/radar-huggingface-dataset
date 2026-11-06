@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Nehal02/detection_vf` es un modelo de clasificación de texto publicado en HuggingFace por el usuario Nehal02. Según los metadatos del repositorio, se trata de un modelo basado en la arquitectura RoBERTa con 355.361.794 parámetros totales, almacenado en formato safetensors y etiquetado con el pipeline `text-classification`. El identificador del repositorio sugiere un uso orientado a detección (posiblemente de contenido, fraude o alguna categoría concreta), aunque la model card no documenta la tarea exacta ni las etiquetas de salida.
+`Nehal02/detection_vf` es un modelo de clasificación de texto publicado en Hugging Face por el usuario Nehal02. Según los metadatos del repositorio, se trata de un modelo basado en la arquitectura RoBERTa con 355.361.794 parámetros totales, almacenado en formato safetensors y etiquetado con el pipeline `text-classification`. El identificador del repositorio sugiere un uso orientado a detección (posiblemente de contenido, fraude o alguna categoría concreta), aunque la model card no documenta la tarea exacta ni las etiquetas de salida.
 
-La relevancia de esta ficha es limitada: el modelo no cuenta con descargas ni interacciones, la model card es la plantilla autogenerada por HuggingFace sin ningún campo completado, y no se ha publicado información sobre datos de entrenamiento, evaluación, licencia o idiomas. Esto lo convierte en un artefacto de investigación sin documentar, no apto para uso en producción sin una validación previa por parte de quien lo adopte.
+La relevancia de esta ficha es limitada: el modelo no cuenta con descargas ni interacciones, la model card es la plantilla autogenerada por Hugging Face sin ningún campo completado, y no se ha publicado información sobre datos de entrenamiento, evaluación, licencia o idiomas. Esto lo convierte en un artefacto de investigación sin documentar, no apto para uso en producción sin una validación previa por parte de quien lo adopte.
 
 El tamaño de 355 millones de parámetros es coherente con un RoBERTa-large (355M), lo que sitúa al modelo en la categoría de encoders de clasificación de gama alta, con un coste de inferencia moderado y sin capacidad generativa.
 
@@ -31,7 +31,7 @@ No hay información disponible sobre el dataset de entrenamiento, el número de 
 
 - Clasificación de texto: el pipeline declarado es `text-classification`, por lo que el modelo devuelve etiquetas y puntuaciones de probabilidad para un texto de entrada.
 - Inferencia como encoder: al ser un RoBERTa, puede utilizarse para extraer embeddings de texto (tag `text-embeddings-inference`).
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse en la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse en la infraestructura de Inference Endpoints de Hugging Face.
 - Generación de texto: no soportada (no es un modelo causal).
 - Tool calling / function calling: no soportado.
 - Agentes y razonamiento multi-paso: no soportado.
@@ -60,17 +60,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM para inferencia en fp16 (T4, RTX 3060, RTX 4090, A10, L4). Para batches grandes, A100 o H100.
 - Cabe en GPU de consumo: sí, en cualquier GPU moderna con 4 GB o más (GTX 1650, RTX 3050 en adelante).
 - Cabe en CPU: sí, con latencias de decenas a cientos de milisegundos por muestra según el hardware.
-- Opciones de despliegue: `transformers` (pipeline `text-classification`), Text Embeddings Inference (TEI, por el tag del repositorio), HuggingFace Inference Endpoints, ONNX Runtime y TorchServe. vLLM y llama.cpp no están orientados a encoders de clasificación de este tipo.
+- Opciones de despliegue: `transformers` (pipeline `text-classification`), Text Embeddings Inference (TEI, por el tag del repositorio), Hugging Face Inference Endpoints, ONNX Runtime y TorchServe. vLLM y llama.cpp no están orientados a encoders de clasificación de este tipo.
 - Latencia y throughput: no disponibles (no publicados por el autor).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nehal02/detection_vf | 355M | no disponible | text-classification | no disponible | HuggingFace (0 descargas) |
-| roberta-large | 355M | 512 tokens | encoder base | MIT | HuggingFace, ampliamente usado |
-| bert-large-uncased | 340M | 512 tokens | encoder base | Apache 2.0 | HuggingFace |
-| distilroberta-base | 82M | 512 tokens | encoder base | Apache 2.0 | HuggingFace |
+| Nehal02/detection_vf | 355M | no disponible | text-classification | no disponible | Hugging Face (0 descargas) |
+| roberta-large | 355M | 512 tokens | encoder base | MIT | Hugging Face, ampliamente usado |
+| bert-large-uncased | 340M | 512 tokens | encoder base | Apache 2.0 | Hugging Face |
+| distilroberta-base | 82M | 512 tokens | encoder base | Apache 2.0 | Hugging Face |
 
 La comparación se limita a la arquitectura y el tamaño, ya que no hay datos de rendimiento del modelo evaluado. Frente a `roberta-large`, el modelo de Nehal02 añade una cabeza de clasificación cuyo propósito exacto se desconoce; frente a `distilroberta-base`, ofrece mayor capacidad a costa de un consumo de recursos superior.
 
@@ -87,7 +87,7 @@ La comparación se limita a la arquitectura y el tamaño, ya que no hay datos de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nehal02/detection_vf
+- Repositorio Hugging Face: https://huggingface.co/Nehal02/detection_vf
 - Paper de referencia de RoBERTa (citado en la model card): https://arxiv.org/abs/1907.11692
 - Paper de medición de impacto ambiental citado en la plantilla: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

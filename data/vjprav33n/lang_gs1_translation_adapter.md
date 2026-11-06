@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vjprav33n/lang_gs1_translation_adapter
+- Modelo en Hugging Face: https://huggingface.co/vjprav33n/lang_gs1_translation_adapter
 - Adaptador similar del mismo autor (nemo_lang_gs1_adapter): https://huggingface.co/vjprav33n/nemo_lang_gs1_adapter
 - Adaptador similar del mismo autor (Mis_12B_nemo_lang_gs1_translate_e1_adapter): https://huggingface.co/vjprav33n/Mis_12B_nemo_lang_gs1_translate_e1_adapter
 - Repositorio de Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

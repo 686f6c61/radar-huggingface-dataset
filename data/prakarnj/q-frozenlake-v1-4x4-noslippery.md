@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PrakarnJ/q-FrozenLake-v1-4x4-noSlippery no es un modelo de lenguaje: es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular para resolver el entorno FrozenLake-v1 en su variante 4x4 sin superficie resbaladiza (no_slippery). Lo publica el usuario PrakarnJ en HuggingFace y sigue el formato estandarizado que emplea el curso de Deep Reinforcement Learning de Hugging Face para agentes de Q-Learning, con un fichero de pesos en formato pickle (q-learning.pkl) y metadatos de model-index.
+PrakarnJ/q-FrozenLake-v1-4x4-noSlippery no es un modelo de lenguaje: es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular para resolver el entorno FrozenLake-v1 en su variante 4x4 sin superficie resbaladiza (no_slippery). Lo publica el usuario PrakarnJ en Hugging Face y sigue el formato estandarizado que emplea el curso de Deep Reinforcement Learning de Hugging Face para agentes de Q-Learning, con un fichero de pesos en formato pickle (q-learning.pkl) y metadatos de model-index.
 
 El problema que resuelve es un clasico de control discreto: un agente debe navegar una cuadricula de 4x4 desde la casilla inicial hasta la meta evitando agujeros, recibiendo recompensa 1.0 solo al alcanzar el objetivo. Al estar desactivado el deslizamiento, el entorno es determinista y el agente puede aprender una politica optima estable. Es relevante como referencia docente y como pieza reproducible de bajo coste para validar pipelines de RL, no como componente de produccion.
 

@@ -83,8 +83,8 @@ El adaptador LoRA mantiene las ventajas del modelo base, pero su calidad especif
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/nvhai190555/lab21-qwen3.5-4b-triage-lora
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3.5-4B
+- Hugging Face del adaptador: https://huggingface.co/nvhai190555/lab21-qwen3.5-4b-triage-lora
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3.5-4B
 - Guia de ejecucion local de Qwen3.5: https://www.datacamp.com/tutorial/run-qwen-3-5-locally
 - Guia de Qwen3.5 4B en local: https://theaibench.ai/models/qwen-3-5-4b/
 - Pagina de Qwen3.5 en Ollama: https://ollama.com/library/qwen3.5:4b

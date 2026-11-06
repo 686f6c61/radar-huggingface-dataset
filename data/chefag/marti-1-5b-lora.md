@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Marti-1.5B-LoRA es un artefacto publicado en HuggingFace por el usuario chefag bajo el identificador `chefag/Marti-1.5B-LoRA`. Por el nombre y por el tamaño del repositorio (0,1 GB), todo apunta a que se trata de un adaptador LoRA y no de un conjunto de pesos completos, pero esta circunstancia no está confirmada en la model card, que es la plantilla autogenerada por HuggingFace y no contiene ni una sola sección completada: todos los campos figuran como "[More Information Needed]". No se declara modelo base, arquitectura, tokenizador, datos de entrenamiento, licencia ni idiomas.
+Marti-1.5B-LoRA es un artefacto publicado en Hugging Face por el usuario chefag bajo el identificador `chefag/Marti-1.5B-LoRA`. Por el nombre y por el tamaño del repositorio (0,1 GB), todo apunta a que se trata de un adaptador LoRA y no de un conjunto de pesos completos, pero esta circunstancia no está confirmada en la model card, que es la plantilla autogenerada por Hugging Face y no contiene ni una sola sección completada: todos los campos figuran como "[More Information Needed]". No se declara modelo base, arquitectura, tokenizador, datos de entrenamiento, licencia ni idiomas.
 
 El modelo no cuenta con descargas ni interacciones (0 descargas, 0 likes en el momento de la consulta) y fue creado el 17 de octubre de 2026 según los metadatos del Hub, una fecha posterior a la de la mayoría de checkpoints de referencia, lo que sugiere una publicación muy reciente y sin validación comunitaria. La única información técnica fiable que puede extraerse es la declarada en las etiquetas: librería `transformers`, pesos en `safetensors`, flag `endpoints_compatible` y la referencia bibliográfica `arxiv:1910.09700`, que corresponde al artículo del calculador de impacto medioambiental de Lacoste et al. y aparece por defecto en la plantilla, no como cita del modelo.
 
@@ -33,7 +33,7 @@ En consecuencia, esta ficha es fundamentalmente descriptiva del artefacto y de s
 
 No hay informacion disponible sobre la arquitectura interna, el objetivo de entrenamiento, el regimen de precision (fp32, fp16, bf16) ni la infraestructura de computo. La model card incluye las secciones "Training Data", "Training Procedure", "Training Hyperparameters" y "Compute Infrastructure", pero todas ellas contienen unicamente el marcador "[More Information Needed]". El unico indicio estructural es la etiqueta `transformers` combinada con pesos en `safetensors`, compatible con practicamente cualquier familia de modelos decoder-only actuales.
 
-Tampoco se documenta si el ajuste se realizo mediante LoRA, QLoRA o una variante con parametros adicionales, ni se indican rango, alpha, modulos objetivo ni numero de tokens de entrenamiento. No consta que se haya aplicado RLHF, DPO o RLVR, ni existe informacion sobre composicion del dataset, filtrado, deduplicacion o mitigaciones de sesgo. La referencia `arxiv:1910.09700` que aparece en las etiquetas es la cita por defecto de la plantilla de HuggingFace para el calculo de emisiones, no un paper del modelo.
+Tampoco se documenta si el ajuste se realizo mediante LoRA, QLoRA o una variante con parametros adicionales, ni se indican rango, alpha, modulos objetivo ni numero de tokens de entrenamiento. No consta que se haya aplicado RLHF, DPO o RLVR, ni existe informacion sobre composicion del dataset, filtrado, deduplicacion o mitigaciones de sesgo. La referencia `arxiv:1910.09700` que aparece en las etiquetas es la cita por defecto de la plantilla de Hugging Face para el calculo de emisiones, no un paper del modelo.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ Tampoco se documenta si el ajuste se realizo mediante LoRA, QLoRA o una variante
 - No se especifican capacidades multilingues ni idiomas cubiertos.
 - No se declara modo "thinking", vision, audio ni ninguna otra modalidad.
 - Al ser presumiblemente un adaptador, sus capacidades efectivas dependen por completo del modelo base, que no se identifica.
-- El flag `endpoints_compatible` sugiere compatibilidad con el endpoint de inferencia de HuggingFace, pero no implica ninguna garantia funcional.
+- El flag `endpoints_compatible` sugiere compatibilidad con el endpoint de inferencia de Hugging Face, pero no implica ninguna garantia funcional.
 
 ## Casos de uso
 
@@ -89,13 +89,13 @@ La comparacion real solo sera posible cuando el autor publique el modelo base, l
 - Riesgo de alucinacion y de sesgos: imposible de evaluar sin datos de entrenamiento ni evaluaciones publicadas.
 - Cero validacion comunitaria (0 descargas, 0 likes): no hay evidencia de que el adaptador haya sido probado por terceros.
 - Fecha de creacion en 2026 y actualizacion tres segundos posterior: el repositorio se subio en un unico paso, sin iteraciones visibles.
-- El flag `endpoints_compatible` no garantiza que el modelo funcione en el endpoint de HuggingFace si falta el modelo base o la configuracion de PEFT.
+- El flag `endpoints_compatible` no garantiza que el modelo funcione en el endpoint de Hugging Face si falta el modelo base o la configuracion de PEFT.
 - No se distribuyen pesos cuantizados ni GGUF: cualquier despliegue en llama.cpp u Ollama requiere conversion propia y fusion previa del adaptador.
 - Para produccion: exigir auditoria del contenido del repositorio (`adapter_config.json`, `adapter_model.safetensors`) antes de cualquier integracion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chefag/Marti-1.5B-LoRA
+- Modelo en Hugging Face: https://huggingface.co/chefag/Marti-1.5B-LoRA
 - Repositorio MARTI (framework de multiagentes de TsinghuaC3I, sin relacion confirmada con este modelo): https://github.com/TsinghuaC3I/MARTI
 - Articulo citado en las etiquetas (Lacoste et al., 2019, sobre emisiones de CO2): https://arxiv.org/abs/1910.09700
 - Calculador de impacto medioambiental de ML: https://mlco2.github.io/impact

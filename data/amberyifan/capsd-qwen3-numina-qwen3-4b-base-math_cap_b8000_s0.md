@@ -29,7 +29,7 @@ El entrenamiento se realizó con la librería `llama-factory`, utilizando un enf
 
 - Generación de texto en lenguaje natural, heredada del modelo base Qwen3-4B-Base.
 - Razonamiento matemático y lógico, potenciado por el entrenamiento específico en datos de matemáticas (el nombre del dataset incluye "math_cap" y "numina").
-- Capacidad de conversación multi-turno (etiqueta "conversational" en HuggingFace).
+- Capacidad de conversación multi-turno (etiqueta "conversational" en Hugging Face).
 - Soporte para tool calling y function calling, probablemente heredado de Qwen3-4B-Base, aunque no se confirma en la documentación.
 - Compatible con `text-generation-inference` y `endpoints_compatible`, lo que facilita su despliegue en servicios de inferencia.
 - No se dispone de información sobre capacidades de visión, audio o modo de pensamiento (thinking mode).
@@ -79,5 +79,5 @@ Dado que no hay benchmarks del modelo evaluado, no es posible determinar si el f
 
 ## Enlaces
 
-- [HuggingFace: AmberYifan/capsd-qwen3-numina-Qwen3-4B-Base-math_cap_b8000_s0](https://huggingface.co/AmberYifan/capsd-qwen3-numina-Qwen3-4B-Base-math_cap_b8000_s0)
+- [Hugging Face: AmberYifan/capsd-qwen3-numina-Qwen3-4B-Base-math_cap_b8000_s0](https://huggingface.co/AmberYifan/capsd-qwen3-numina-Qwen3-4B-Base-math_cap_b8000_s0)
 - [Modelo base: Qwen/Qwen3-4B-Base](https://huggingface.co/Qwen/Qwen3-4B-Base)

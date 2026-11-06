@@ -83,7 +83,7 @@ La comparación con alternativas de la misma categoría (ajustes de rol de 3-4B)
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hecan3d/QwenDGAF-V3-4B
+- Hugging Face: https://huggingface.co/hecan3d/QwenDGAF-V3-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Perfil del autor: https://huggingface.co/hecan3d
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth

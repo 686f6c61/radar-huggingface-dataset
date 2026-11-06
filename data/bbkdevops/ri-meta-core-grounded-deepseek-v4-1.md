@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RI-Meta-Core-Grounded-DeepSeek-V4.1 es un modelo publicado en HuggingFace por el usuario bbkdevops bajo licencia MIT y etiquetado para la librería `transformers`. Segun los metadatos del repositorio, se trata de un modelo orientado a código y razonamiento, con las etiquetas `code`, `swe-bench`, `reasoning`, `moe` y `recursive-intelligence`, lo que sugiere un interés por la resolución automática de incidencias en repositorios de software. El repositorio se creó el 19 de septiembre de 2026 y, en el momento de la consulta, acumula 0 descargas y 0 likes, por lo que no existe evidencia de adopción por parte de la comunidad.
+RI-Meta-Core-Grounded-DeepSeek-V4.1 es un modelo publicado en Hugging Face por el usuario bbkdevops bajo licencia MIT y etiquetado para la librería `transformers`. Segun los metadatos del repositorio, se trata de un modelo orientado a código y razonamiento, con las etiquetas `code`, `swe-bench`, `reasoning`, `moe` y `recursive-intelligence`, lo que sugiere un interés por la resolución automática de incidencias en repositorios de software. El repositorio se creó el 19 de septiembre de 2026 y, en el momento de la consulta, acumula 0 descargas y 0 likes, por lo que no existe evidencia de adopción por parte de la comunidad.
 
 La model card describe una evaluación "zero-shot autónoma" sobre 500 tareas de SWE-bench Verified, con una tasa declarada de contaminación de datos oro del 0,00 %. El resultado principal registrado en el `model-index` es de 0 en la métrica `swe_bench_%_resolved`, marcado además como no verificado (`verified: false`). El propio autor aporta métricas intermedias (sintaxis de diff válida, identificación del fichero objetivo, perplejidad del parche) que no equivalen a resolución efectiva de las tareas.
 
@@ -101,7 +101,7 @@ No disponible. La información proporcionada no incluye especificaciones de arqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bbkdevops/RI-Meta-Core-Grounded-DeepSeek-V4.1
+- Modelo en Hugging Face: https://huggingface.co/bbkdevops/RI-Meta-Core-Grounded-DeepSeek-V4.1
 - Paper, blog, repositorio de código o demo: no disponible.
 - Referencia metodológica citada en la model card: arnés oficial de evaluación de SWE-bench (no se proporciona URL en la información disponible).
 - Fichero de predicciones citado por el autor: `predictions/swebench_verified_pure_500_honest.json` (ruta relativa dentro del repositorio, sin URL directa proporcionada).

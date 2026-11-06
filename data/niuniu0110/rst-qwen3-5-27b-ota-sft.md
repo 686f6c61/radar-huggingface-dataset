@@ -70,7 +70,7 @@ No se dispone de información suficiente para comparar con modelos similares. El
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NiuNiu0110/rst-qwen3.5-27b-ota-sft
+- Hugging Face: https://huggingface.co/NiuNiu0110/rst-qwen3.5-27b-ota-sft
 - Dataset de entrenamiento: https://huggingface.co/datasets/NiuNiu0110/OpenThoughts-Agent-v1-SFT-terminus
 - Repositorio RST-Train: https://github.com/k1ssloo/RST-Train
 - Dataset relacionado RST-DPO (referencia): https://huggingface.co/datasets/NiuNiu0110/RST-DPO-Qwen3.5-27B

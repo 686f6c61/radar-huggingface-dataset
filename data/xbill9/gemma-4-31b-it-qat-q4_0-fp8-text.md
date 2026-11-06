@@ -91,7 +91,7 @@ Las alternativas mas directas son las demas conversiones del mismo checkpoint QA
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xbill9/gemma-4-31B-it-qat-q4_0-fp8-text
+- Repositorio en Hugging Face: https://huggingface.co/xbill9/gemma-4-31B-it-qat-q4_0-fp8-text
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it-qat-q4_0-unquantized
 - Version W4A16 con rejilla QAT exacta: https://huggingface.co/xbill9/gemma-4-31B-it-qat-q4_0-w4a16-ct-text
 - Version GGUF exacta (mencionada en la busqueda): https://huggingface.co/xbill9/gemma-4-31B-it-qat-q4_0-exact-gguf

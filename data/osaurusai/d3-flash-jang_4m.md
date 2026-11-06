@@ -104,7 +104,7 @@ Frente a alternativas de la misma categoría (clasificadores zero-shot tipo NLI 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OsaurusAI/d3-flash-JANG_4M
+- Modelo en Hugging Face: https://huggingface.co/OsaurusAI/d3-flash-JANG_4M
 - Modelo base: https://huggingface.co/vllm-sr/d3-flash
 - Modelo original sobre el que se construye el base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Runtime y sitio del autor: https://osaurus.ai

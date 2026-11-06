@@ -107,7 +107,7 @@ No se dispone de ningun dato de rendimiento del modelo analizado que permita una
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Orythos-9B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Orythos-9B-GGUF
 - Modelo base: https://huggingface.co/CloudGoat/Orythos-9B
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Orythos-9B-GGUF
 - Preguntas frecuentes y solicitudes de modelos: https://huggingface.co/mradermacher/model_requests

@@ -80,7 +80,7 @@ Las muestras cualitativas incluidas en la model card son mixtas: la traducción 
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| ZYLUN-CHAT 170M | 168,8 M | 16.384 tokens | Apache-2.0 | Sin benchmarks estándar; pérdidas de validación de 3,02-3,36 | HuggingFace, safetensors, 0 descargas |
+| ZYLUN-CHAT 170M | 168,8 M | 16.384 tokens | Apache-2.0 | Sin benchmarks estándar; pérdidas de validación de 3,02-3,36 | Hugging Face, safetensors, 0 descargas |
 | SmolLM2-135M (HuggingFaceTB) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
 | Qwen2.5-0.5B (Alibaba) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
 | Qwen3-0.6B (Alibaba) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
@@ -102,6 +102,6 @@ Los tres modelos citados se incluyen como referencias de la misma franja de tama
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caikybaldo999/zylun-chat-170m
+- Modelo en Hugging Face: https://huggingface.co/caikybaldo999/zylun-chat-170m
 - Modelo de imagen ZYI-256 Flash (destino de las traducciones): https://huggingface.co/caikybaldo999/zyi-256-flash
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados obtenidos no guardaban relación con el modelo.

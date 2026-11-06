@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nusabert-metadata-s2 es un modelo de clasificación de texto en indonesio obtenido mediante fine-tuning de LazarusNLP/NusaBERT-base, un BERT base entrenado específicamente para ese idioma. Lo publica el usuario watermelonlalala en HuggingFace y su tarea es la clasificación multietiqueta (multi_label_classification) de contenido dañino en cinco categorías: insultos, ataques a la identidad, amenazas o incitación a la violencia, obscenidad y contenido sexualmente explícito. El problema que aborda es la moderación automática de contenido en plataformas y comunidades digitales en lengua indonesia.
+nusabert-metadata-s2 es un modelo de clasificación de texto en indonesio obtenido mediante fine-tuning de LazarusNLP/NusaBERT-base, un BERT base entrenado específicamente para ese idioma. Lo publica el usuario watermelonlalala en Hugging Face y su tarea es la clasificación multietiqueta (multi_label_classification) de contenido dañino en cinco categorías: insultos, ataques a la identidad, amenazas o incitación a la violencia, obscenidad y contenido sexualmente explícito. El problema que aborda es la moderación automática de contenido en plataformas y comunidades digitales en lengua indonesia.
 
 Arquitectura BERT estándar con aproximadamente 110,6 millones de parámetros (dato real de los pesos safetensors), lo que lo sitúa en la categoría de modelos encoder de tamaño base. El repositorio ocupa 0,4 GB y se distribuye en formato safetensors compatible con transformers y con text-embeddings-inference. Según la model card, los hiperparámetros se ajustaron con Optuna, aunque no se documenta el proceso de búsqueda ni el conjunto de datos empleado.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nusabert-metadata-s2 | 110,6 M | no disponible | Clasificación multietiqueta de toxicidad en indonesio | no disponible | HuggingFace |
-| LazarusNLP/NusaBERT-base | no disponible en la información | no disponible | Modelo base BERT en indonesio (MLM) | no disponible | HuggingFace |
-| Modelos de toxicidad multilingües (p. ej. variantes de XLM-R) | no disponible en la información | no disponible | Clasificación de toxicidad multilingüe | no disponible | HuggingFace |
+| nusabert-metadata-s2 | 110,6 M | no disponible | Clasificación multietiqueta de toxicidad en indonesio | no disponible | Hugging Face |
+| LazarusNLP/NusaBERT-base | no disponible en la información | no disponible | Modelo base BERT en indonesio (MLM) | no disponible | Hugging Face |
+| Modelos de toxicidad multilingües (p. ej. variantes de XLM-R) | no disponible en la información | no disponible | Clasificación de toxicidad multilingüe | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada. La comparación se limita a la naturaleza del modelo y su idioma objetivo.
 
@@ -87,5 +87,5 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/watermelonlalala/nusabert-metadata-s2
+- Modelo en Hugging Face: https://huggingface.co/watermelonlalala/nusabert-metadata-s2
 - Modelo base: https://huggingface.co/LazarusNLP/NusaBERT-base
